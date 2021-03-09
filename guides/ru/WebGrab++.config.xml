@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<settings>
+    
+  <filename>guide.xml</filename>
+  <mode></mode>
+  <postprocess grab="y" run="n">rex</postprocess>
+  <user-agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36 Edg/79.0.309.71</user-agent>
+  <logging>off</logging>
+  <retry time-out="5">4</retry>
+  <timespan>0</timespan>
+  <update>f</update>
+
+  <channel update="i" site="tv.yandex.ru" site_id="213##323" xmltv_id="2x2.ru">2x2</channel>
+  <channel update="i" site="tv.yandex.ru" site_id="213##920" xmltv_id="ParamountComedy.ru">Paramount Comedy</channel>
+
+</settings>
