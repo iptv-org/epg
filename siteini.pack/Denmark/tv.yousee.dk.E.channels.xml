@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<site generator-info-name="WebGrab+Plus/w MDB &amp; REX Postprocess -- version V2.1.11.1 -- Jan van Straaten" site="tv.yousee.dk">
+  <channels>
+    <channel update="i" site="tv.yousee.dk.E" site_id="1##https://i.c.dk/tvicons/dr1_logo_small_seapp.png" xmltv_id="DR1">DR1</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="2##https://i.c.dk/tvicons/dr2_logo_small_seapp.png" xmltv_id="DR2">DR2</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="3##https://s.c.dk/tvlab/tvicons/tv_2_danmark_1561386635_logo_small_seapp.png" xmltv_id="TV 2 L">TV 2 L</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="4##https://s.c.dk/tvlab/tvicons/tv_2_zulu_1561388266_logo_small_seapp.png" xmltv_id="Zulu">Zulu</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="5##https://s.c.dk/tvlab/tvicons/tv_2_charlie_1561113235_logo_small_seapp.png" xmltv_id="Charli">Charli</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="7##https://i.c.dk/tvicons/tv3_logo_small_seapp.png" xmltv_id="TV3">TV3</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="8##https://i.c.dk/tvicons/tv3plus_logo_small_seapp.png" xmltv_id="TV3plus">TV3plus</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="9##https://i.c.dk/tvicons/kanal_4_logo_small_seapp.png" xmltv_id="Kanal4">Kanal4</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="10##https://i.c.dk/tvicons/kanal_5_logo_small_seapp.png" xmltv_id="Kanal5">Kanal5</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="11##https://s.c.dk/tvlab/tvicons/infokanalen_1551692316_logo_small_seapp.png" xmltv_id="Infoka">Infoka</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="12##https://i.c.dk/tvicons/tv3_puls_logo_small_seapp.png" xmltv_id="3Puls">3Puls</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="13##https://i.c.dk/tvicons/db13_dk4_small_seapp.png" xmltv_id="dk4">dk4</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="14##https://i.c.dk/tvicons/db14_yousee_trailerkanal_small_seapp.png" xmltv_id="YouSee">YouSee</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="15##http://cloud.yousee.tv/static/img/logos/Seapp_Small_Kanal5.png" xmltv_id="Kanal 5 HD">Kanal 5 HD</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="16##https://i.c.dk/tvicons/dr3_logo_small_seapp.png" xmltv_id="DR3">DR3</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="17##https://i.c.dk/tvicons/6eren_logo_small_seapp.png" xmltv_id="6eren">6eren</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="18##https://i.c.dk/tvicons/nickelodeon_logo_small_seapp.png" xmltv_id="Nickel">Nickel</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="19##https://i.c.dk/tvicons/db19_disney_channel_small_seapp.png" xmltv_id="Disney">Disney</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="20##https://i.c.dk/tvicons/cartoon_network_logo_small_seapp.png" xmltv_id="Cartoo">Cartoo</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="21##https://s.c.dk/tvlab/tvicons/disney_xd_1551268122_logo_small_seapp.png" xmltv_id="DisnXD">DisnXD</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="23##https://s.c.dk/tvlab/tvicons/nat_geo_wild_hd_1548988607_logo_small_seapp.png" xmltv_id="NGWild">NGWild</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="24##https://i.c.dk/tvicons/eurosport_1_logo_small_seapp.png" xmltv_id="EuroSp">EuroSp</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="25##https://s.c.dk/tvlab/tvicons/tv3_sport_1551959450_logo_small_seapp.png" xmltv_id="3Sport">3Sport</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="26##https://i.c.dk/tvicons/tv3_max_logo_small_seapp.png" xmltv_id="3Sp2">3Sp2</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="27##https://s.c.dk/tvlab/tvicons/haip_test_2_1545062029_logo_small_seapp.png" xmltv_id="DR1MP4">DR1MP4</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="28##https://s.c.dk/tvlab/tvicons/haip_test_1_1545062325_logo_small_seapp.png" xmltv_id="DR1UHD">DR1UHD</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="29##https://i.c.dk/tvicons/db29_mtv_live_hd_small_seapp.png" xmltv_id="MTVLHD">MTVLHD</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="30##https://s.c.dk/tvlab/tvicons/discovery_channel_1569317172_logo_small_seapp.png" xmltv_id="Discov">Discov</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="31##https://s.c.dk/tvlab/tvicons/animal_planet_1548111751_logo_small_seapp.png" xmltv_id="Animal">Animal</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="32##https://i.c.dk/tvicons/national_geographic_logo_small_seapp.png" xmltv_id="NatGeo">NatGeo</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="33##https://i.c.dk/tvicons/dr1_syn_logo_small_seapp.png" xmltv_id="DR1Syn">DR1Syn</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="34##https://i.c.dk/tvicons/dr2_syn_logo_small_seapp.png" xmltv_id="DR2Syn">DR2Syn</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="35##https://i.c.dk/tvicons/dr3_syn_logo_small_seapp.png" xmltv_id="DR3Syn">DR3Syn</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="37##https://i.c.dk/tvicons/db37_vh1_small_seapp.png" xmltv_id="VH1">VH1</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="38##https://s.c.dk/tvlab/tvicons/tv_2_news_1561387407_logo_small_seapp.png" xmltv_id="2News">2News</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="40##https://s.c.dk/tvlab/tvicons/bbc_brit_1551095645_logo_small_seapp.png" xmltv_id="BBC B">BBC B</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="41##https://i.c.dk/tvicons/bbc_world_logo_small_seapp.png" xmltv_id="BBC W">BBC W</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="42##https://i.c.dk/tvicons/db42_cnn_small_seapp.png" xmltv_id="CNN">CNN</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="43##https://i.c.dk/tvicons/db43_bbc_hd_small_seapp.png" xmltv_id="BBC HD">BBC HD</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="44##https://i.c.dk/tvicons/tv4_logo_small_seapp.png" xmltv_id="TV4">TV4</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="45##https://i.c.dk/tvicons/svt1_logo_small_seapp.png" xmltv_id="SVT1">SVT1</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="46##https://i.c.dk/tvicons/svt2_logo_small_seapp.png" xmltv_id="SVT2">SVT2</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="47##https://i.c.dk/tvicons/nrk2_logo_small_seapp.png" xmltv_id="NRK2">NRK2</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="48##https://i.c.dk/tvicons/nrk1_logo_small_seapp.png" xmltv_id="NRK1">NRK1</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="49##https://i.c.dk/tvicons/tv_2_norge_logo_small_seapp.png" xmltv_id="Norge2">Norge2</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="50##https://s.c.dk/tvlab/tvicons/24nordjyske_1567427611_logo_small_seapp.png" xmltv_id="24Nord">24Nord</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="51##https://i.c.dk/tvicons/ard_logo_small_seapp.png" xmltv_id="ARD">ARD</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="52##https://i.c.dk/tvicons/zdf_logo_small_seapp.png" xmltv_id="ZDF">ZDF</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="53##https://i.c.dk/tvicons/ndr_logo_small_seapp.png" xmltv_id="NDR">NDR</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="54##https://s.c.dk/tvlab/tvicons/rtl_1552565909_logo_small_seapp.png" xmltv_id="RTL">RTL</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="55##https://i.c.dk/tvicons/db55_sat1_small_seapp.png" xmltv_id="Sat1">Sat1</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="56##https://i.c.dk/tvicons/db56_pro7_small_seapp.png" xmltv_id="Pro7">Pro7</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="57##https://s.c.dk/tvlab/tvicons/vox_1551964667_logo_small_seapp.png" xmltv_id="VOX">VOX</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="59##https://s.c.dk/tvlab/tvicons/tlc_1552006983_logo_small_seapp.png" xmltv_id="TLC">TLC</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="61##https://i.c.dk/tvicons/db61_tlc_hd_danmark_small_seapp.png" xmltv_id="RTL2">RTL2</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="62##https://i.c.dk/tvicons/db62_tnt_small_seapp.png" xmltv_id="MDR">MDR</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="63##http://cloud.yousee.tv/static/img/logos/Seapp_Small_Nickelodeon_HD.png" xmltv_id="Nickelodeon HD">Nickelodeon HD</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="64##https://i.c.dk/tvicons/6eren_hd_logo_small_seapp.png" xmltv_id="6rn HD">6rn HD</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="65##https://i.c.dk/tvicons/db65_lokalt_program_small_seapp.png" xmltv_id="Lokal">Lokal</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="66##https://i.c.dk/tvicons/lokalt_program_logo_small_seapp.png" xmltv_id="Lokal2">Lokal2</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="67##http://cloud.yousee.tv/static/img/logos/Seapp_Small_KanalSport.png" xmltv_id="Kanal Sport">Kanal Sport</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="68##https://i.c.dk/tvicons/db68_prvekanal_small_seapp.png" xmltv_id="ProveK">ProveK</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="69##https://i.c.dk/tvicons/db69_zdf_hd_small_seapp.png" xmltv_id="ZDF HD">ZDF HD</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="70##https://s.c.dk/tvlab/tvicons/dr_ultra_1551268938_logo_small_seapp.png" xmltv_id="Ultra">Ultra</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="71##https://i.c.dk/tvicons/db71_outdoor_hd_small_seapp.png" xmltv_id="OutDHD">OutDHD</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="72##https://s.c.dk/tvlab/tvicons/tv_2_fri_1561386282_logo_small_seapp.png" xmltv_id="2Fri">2Fri</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="73##https://i.c.dk/tvicons/euronews_logo_small_seapp.png" xmltv_id="EuNews">EuNews</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="75##https://i.c.dk/tvicons/ekstrakanalen_logo_small_seapp.png" xmltv_id="Ekstra">Ekstra</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="76##https://i.c.dk/tvicons/event_hd_logo_small_seapp.png" xmltv_id="EventHD">EventHD</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="77##https://i.c.dk/tvicons/db77_canalplus_first_small_seapp.png" xmltv_id="L info">L info</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="78##https://s.c.dk/tvlab/tvicons/paramount_network_1545143313_logo_small_seapp.png" xmltv_id="Paramount">Paramount</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="79##https://s.c.dk/tvlab/tvicons/tv_2_sport_hd_1561387981_logo_small_seapp.png" xmltv_id="2Sport">2Sport</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="80##https://s.c.dk/tvlab/tvicons/paramount_network_1548764524_logo_small_seapp.png" xmltv_id="ComeHD">ComeHD</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="82##https://i.c.dk/tvicons/db82_esportstv_small_seapp.png" xmltv_id="eSport">eSport</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="83##https://i.c.dk/tvicons/db83_lokal_info_small_seapp.png" xmltv_id="LinfHD">LinfHD</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="84##https://i.c.dk/tvicons/history_hd_logo_small_seapp.png" xmltv_id="HisCHD">HisCHD</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="85##https://s.c.dk/tvlab/tvicons/haip_test_3_1554217632_logo_small_seapp.png" xmltv_id="4K prg">4K prg</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="86##https://s.c.dk/tvlab/tvicons/haip_test_4_1554217965_logo_small_seapp.png" xmltv_id="4K prg2">4K prg2</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="87##" xmltv_id="Paramo">Paramo</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="88##" xmltv_id="Ny Kanal">Ny Kanal</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="89##https://i.c.dk/tvicons/nicktoons_logo_small_seapp.png" xmltv_id="Nicktoons">Nicktoons</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="90##https://i.c.dk/tvicons/drksyn_logo_small_seapp.png" xmltv_id="DRKSyn">DRKSyn</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="91##https://i.c.dk/tvicons/bbc_earth_logo_small_seapp.png" xmltv_id="BBC E">BBC E</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="92##https://i.c.dk/tvicons/db92_bbc_lifestyle_small_seapp.png" xmltv_id="BBC L">BBC L</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="93##https://i.c.dk/tvicons/nickelodeon_junior_logo_small_seapp.png" xmltv_id="NickJr">NickJr</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="94##https://s.c.dk/tvlab/tvicons/cnbc_1551266850_logo_small_seapp.png" xmltv_id="CNBC">CNBC</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="95##https://i.c.dk/tvicons/db95_viasat_nature_crime_small_seapp.png" xmltv_id="Via NC">Via NC</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="96##https://i.c.dk/tvicons/hbo_fl_logo_small_seapp.png" xmltv_id="HBO_FL">HBO_FL</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="97##https://i.c.dk/tvicons/dansk_filmskat_flow_logo_small_seapp.png" xmltv_id="DKF_FL">DKF_FL</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="98##https://i.c.dk/tvicons/db98_canal8_sport_small_seapp.png" xmltv_id="Canal8">Canal8</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="99##https://i.c.dk/tvicons/db99_canal9_small_seapp.png" xmltv_id="Canal9">Canal9</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="101##https://i.c.dk/tvicons/discovery_science_logo_small_seapp.png" xmltv_id="Scienc">Scienc</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="102##https://s.c.dk/tvlab/tvicons/min_bio_tv_logo_small_seapp.png" xmltv_id="MBIOFL">MBIOFL</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="103##https://i.c.dk/tvicons/db103_eurosport_360_1_small_seapp.png" xmltv_id="Eu36M1">Eu36M1</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="104##https://i.c.dk/tvicons/db104_eurosport_360_2_small_seapp.png" xmltv_id="Eu36M2">Eu36M2</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="105##https://i.c.dk/tvicons/db105_eurosport_360_3_small_seapp.png" xmltv_id="Eu36M3">Eu36M3</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="106##https://i.c.dk/tvicons/db106_eurosport_360_4_small_seapp.png" xmltv_id="Eu36M4">Eu36M4</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="107##https://i.c.dk/tvicons/db107_eurosport_360_5_small_seapp.png" xmltv_id="Eu36M5">Eu36M5</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="108##https://i.c.dk/tvicons/db108_eurosport_360_6_small_seapp.png" xmltv_id="Eu36M6">Eu36M6</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="109##https://i.c.dk/tvicons/db109_eurosport_360_7_small_seapp.png" xmltv_id="Eu36M7">Eu36M7</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="110##https://i.c.dk/tvicons/db110_mtv_rocks_small_seapp.png" xmltv_id="MTVRoc">MTVRoc</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="111##https://i.c.dk/tvicons/db111_mtv_dance_small_seapp.png" xmltv_id="MTVDan">MTVDan</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="112##https://i.c.dk/tvicons/mtv_hits_logo_small_seapp.png" xmltv_id="MTVhit">MTVhit</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="113##https://i.c.dk/tvicons/vh1_classic_logo_small_seapp.png" xmltv_id="VH1Cla">VH1Cla</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="114##https://i.c.dk/tvicons/trt1_avrupa_logo_small_seapp.png" xmltv_id="TRT1">TRT1</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="116##https://i.c.dk/tvicons/db116_cbs_reality_small_seapp.png" xmltv_id="Realit">Realit</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="117##https://i.c.dk/tvicons/db117_travel_channel_small_seapp.png" xmltv_id="Travel">Travel</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="118##http://cloud.yousee.tv/static/img/logos/Seapp_Small_Star!.png" xmltv_id="Star!">Star!</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="119##https://s.c.dk/tvlab/tvicons/sport_live_1562928601_logo_small_seapp.png" xmltv_id="Dantot">Dantot</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="120##https://i.c.dk/tvicons/db120_nat_geo_wild_small_seapp.png" xmltv_id="WildHD">WildHD</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="122##https://s.c.dk/tvlab/tvicons/motors_tv_1543427179_logo_small_seapp.png" xmltv_id="Motors">Motors</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="123##https://i.c.dk/tvicons/mtv_logo_small_seapp.png" xmltv_id="MTV">MTV</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="124##http://cloud.yousee.tv/static/img/logos/Seapp_Small_DisneyHD.png" xmltv_id="Disney Channel HD">Disney Channel HD</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="125##https://i.c.dk/tvicons/arte_logo_small_seapp.png" xmltv_id="Arte">Arte</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="126##https://i.c.dk/tvicons/mezzo_logo_small_seapp.png" xmltv_id="Mezzo">Mezzo</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="127##http://cloud.yousee.tv/static/img/logos/seapp_small_kanalsport.png" xmltv_id="Kanal Sport HD">Kanal Sport HD</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="128##https://i.c.dk/tvicons/tv5_monde_logo_small_seapp.png" xmltv_id="TV 5">TV 5</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="130##https://i.c.dk/tvicons/viasat_history_logo_small_seapp.png" xmltv_id="Histor">Histor</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="131##https://i.c.dk/tvicons/viasat_explore_logo_small_seapp.png" xmltv_id="Explor">Explor</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="132##https://s.c.dk/tvlab/tvicons/h2_1566558235_logo_small_seapp.png" xmltv_id="H2">H2</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="133##https://i.c.dk/tvicons/eurosport_danmark_logo_small_seapp.png" xmltv_id="EuSpDK">EuSpDK</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="134##https://i.c.dk/tvicons/viasat_hits_logo_small_seapp.png" xmltv_id="VHits">VHits</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="135##https://i.c.dk/tvicons/db135_viasat_series_small_seapp.png" xmltv_id="VSeries">VSeries</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="136##https://i.c.dk/tvicons/viasat_film_premiere_logo_small_seapp.png" xmltv_id="V Film">V Film</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="138##https://i.c.dk/tvicons/db138_viasat_golf_small_seapp.png" xmltv_id="GolfHD">GolfHD</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="139##http://cloud.yousee.tv/static/img/logos/Seapp_Small_ESPNClassic.png" xmltv_id="ESPN Classic Europe">ESPN Classic Europe</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="140##http://cloud.yousee.tv/static/img/logos/Seapp_Small_Eurosport2.png" xmltv_id="Eurosport 2">Eurosport 2</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="141##http://cloud.yousee.tv/static/img/logos/small_espnamerica.png" xmltv_id="ESPN America">ESPN America</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="142##https://i.c.dk/tvicons/db142_viasat_comedy_small_seapp.png" xmltv_id="Comedy">Comedy</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="143##https://i.c.dk/tvicons/bloomberg_logo_small_seapp.png" xmltv_id="Bloom">Bloom</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="145##http://cloud.yousee.tv/static/img/logos/Seapp_Small_TV3Sport1.png" xmltv_id="TV3 Sport 1 HD">TV3 Sport 1 HD</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="146##http://cloud.yousee.tv/static/img/logos/Seapp_Small_Canal9.png" xmltv_id="Canal 9 HD">Canal 9 HD</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="149##https://i.c.dk/tvicons/investigation_discovery_logo_small_seapp.png" xmltv_id="ID">ID</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="150##http://cloud.yousee.tv/static/img/logos/Seapp_Small_CmoreEmotion.png" xmltv_id="C More Emotion">C More Emotion</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="152##https://i.c.dk/tvicons/db152_c_more_tennis_small_seapp.png" xmltv_id="C Ten">C Ten</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="154##https://s.c.dk/tvlab/tvicons/c_more_first_hd_1550834819_logo_small_seapp.png" xmltv_id="C F HD">C F HD</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="155##https://i.c.dk/tvicons/db155_c_more_first_small_seapp.png" xmltv_id="C Frst">C Frst</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="156##https://i.c.dk/tvicons/db156_c_more_hits_small_seapp.png" xmltv_id="C Hits">C Hits</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="157##https://i.c.dk/tvicons/db157_c_more_kids_small_seapp.png" xmltv_id="C Kids">C Kids</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="158##https://i.c.dk/tvicons/db158_c_more_series_small_seapp.png" xmltv_id="C Seri">C Seri</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="159##https://i.c.dk/tvicons/db159_c_more_star_small_seapp.png" xmltv_id="C Star">C Star</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="160##https://i.c.dk/tvicons/folketinget_logo_small_seapp.png" xmltv_id="Tinget">Tinget</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="161##https://i.c.dk/tvicons/db161_c_more_hits_hd_small_seapp.png" xmltv_id="C Hits HD">C Hits HD</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="162##https://s.c.dk/tvlab/tvicons/boomerang_1551102986_logo_small_seapp.png" xmltv_id="Boomrg">Boomrg</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="163##https://i.c.dk/tvicons/db163_yousee_premiere_small_seapp.png" xmltv_id="YSPrem">YSPrem</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="164##https://i.c.dk/tvicons/dansk_filmskat_flow_logo_small_seapp.png" xmltv_id="DKFILM">DKFILM</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="165##https://i.c.dk/tvicons/min_bio_logo_small_seapp.png" xmltv_id="MINBIO">MINBIO</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="166##" xmltv_id="HBOVOD">HBOVOD</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="170##http://cloud.yousee.tv/static/img/logos/" xmltv_id="Toon Disney">Toon Disney</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="172##https://s.c.dk/tvlab/tvicons/tv3plus_1552041159_logo_small_seapp.png" xmltv_id="TV3plus HD">TV3plus HD</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="173##https://i.c.dk/tvicons/db173_eurosport_2_hd_small_seapp.png" xmltv_id="Eurosport 2 HD">Eurosport 2 HD</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="174##https://s.c.dk/tvlab/tvicons/disney_junior_1549889193_logo_small_seapp.png" xmltv_id="DisnJr">DisnJr</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="175##http://cloud.yousee.tv/static/img/logos/seapp_small_silverhd.png" xmltv_id="Silver HD">Silver HD</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="177##http://cloud.yousee.tv/static/img/logos/Seapp_Small_ViasatFilmDrama.png" xmltv_id="TV1000 Drama">TV1000 Drama</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="180##https://i.c.dk/tvicons/db180_viasat_film_action_small_seapp.png" xmltv_id="Action">Action</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="181##https://i.c.dk/tvicons/db181_viasat_fim_classic_small_seapp.png" xmltv_id="Classic">Classic</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="182##http://cloud.yousee.tv/static/img/logos/AB_small.png" xmltv_id="Viasat Film Drama">Viasat Film Drama</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="183##https://i.c.dk/tvicons/db183_viasat_film_family_small_seapp.png" xmltv_id="Family">Family</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="184##https://i.c.dk/tvicons/viasat_film_logo_small_seapp.png" xmltv_id="Film">Film</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="185##https://i.c.dk/tvicons/db185_nordic_small_seapp.png" xmltv_id="Nordic">Nordic</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="187##https://i.c.dk/tvicons/db187_al_jazeera_english_small_seapp.png" xmltv_id="Al Eng">Al Eng</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="188##https://i.c.dk/tvicons/db188_jordan_tv_small_seapp.png" xmltv_id="Jordan">Jordan</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="189##https://s.c.dk/tvlab/tvicons/kurdisk_tv_1553767503_logo_small_seapp.png" xmltv_id="Kurdis">Kurdis</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="190##https://i.c.dk/tvicons/db190_sudan_tv_small_seapp.png" xmltv_id="Sudan">Sudan</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="195##https://i.c.dk/tvicons/db195_3sat_small_seapp.png" xmltv_id="3Sat">3Sat</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="200##https://i.c.dk/tvicons/db200_france_2_small_seapp.png" xmltv_id="Franc2">Franc2</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="202##https://i.c.dk/tvicons/db202_raiuno_small_seapp.png" xmltv_id="RaiUno">RaiUno</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="204##https://i.c.dk/tvicons/db204_tve_small_seapp.png" xmltv_id="TVE">TVE</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="210##https://i.c.dk/tvicons/db210_tv_pol_small_seapp.png" xmltv_id="TV Pol">TV Pol</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="211##https://i.c.dk/tvicons/db211_polsa2_small_seapp.png" xmltv_id="Polsa2">Polsa2</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="215##https://i.c.dk/tvicons/db215_rtk_1_small_seapp.png" xmltv_id="RTK 1">RTK 1</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="216##https://s.c.dk/tvlab/tvicons/hayat_plus_1551689549_logo_small_seapp.png" xmltv_id="Hayat">Hayat</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="217##https://i.c.dk/tvicons/db217_bht_1_small_seapp.png" xmltv_id="BHT 1">BHT 1</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="218##https://i.c.dk/tvicons/db218_hrt1_small_seapp.png" xmltv_id="HRT1">HRT1</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="219##https://s.c.dk/tvlab/tvicons/pink_plus_1551874855_logo_small_seapp.png" xmltv_id="Pinkplus">Pinkplus</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="220##https://i.c.dk/tvicons/db220_rtssat_small_seapp.png" xmltv_id="RTSsat">RTSsat</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="221##https://i.c.dk/tvicons/db221_rtcg_small_seapp.png" xmltv_id="RTCG">RTCG</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="222##https://i.c.dk/tvicons/netflix_logo_small_seapp.png" xmltv_id="Netflix">Netflix</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="223##https://i.c.dk/tvicons/hbo_barker_logo_small_seapp.png" xmltv_id="HBO_BK">HBO_BK</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="224##https://s.c.dk/tvlab/tvicons/c_more_1551101282_logo_small_seapp.png" xmltv_id="CMORE_BK">CMORE_BK</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="225##https://i.c.dk/tvicons/db225_mezopotamya_tv_small_seapp.png" xmltv_id="Me TV">Me TV</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="226##https://i.c.dk/tvicons/min_bio_barker_logo_small_seapp.png" xmltv_id="Min Bio BK">Min Bio BK</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="227##https://s.c.dk/tvlab/tvicons/dansk_filmskat_1552045454_logo_small_seapp.png" xmltv_id="DK Film BK">DK Film BK</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="228##https://i.c.dk/tvicons/viasat_film__serier_barker_logo_small_seapp.png" xmltv_id="ViFiSe_BK">ViFiSe_BK</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="229##https://i.c.dk/tvicons/blockbuster_barker_logo_small_seapp.png" xmltv_id="Blockbuster BK">Blockbuster BK</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="230##https://i.c.dk/tvicons/db230_trt_small_seapp.png" xmltv_id="TRT">TRT</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="231##https://i.c.dk/tvicons/db231_euro_star_small_seapp.png" xmltv_id="EuStar">EuStar</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="232##https://i.c.dk/tvicons/db232_kanal7_small_seapp.png" xmltv_id="Kanal7">Kanal7</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="233##https://i.c.dk/tvicons/db233_euro_d_small_seapp.png" xmltv_id="Euro D">Euro D</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="234##https://i.c.dk/tvicons/db234_tgrt_eu_small_seapp.png" xmltv_id="TGRT">TGRT</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="235##https://i.c.dk/tvicons/db235_lig_tv_small_seapp.png" xmltv_id="Lig TV">Lig TV</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="236##https://i.c.dk/tvicons/db236_showtv_small_seapp.png" xmltv_id="ShowTV">ShowTV</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="237##https://i.c.dk/tvicons/db237_trkmax_small_seapp.png" xmltv_id="beINMO">beINMO</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="238##https://i.c.dk/tvicons/db238_stv_small_seapp.png" xmltv_id="STV">STV</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="239##https://i.c.dk/tvicons/db239_atv_small_seapp.png" xmltv_id="ATV">ATV</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="240##https://i.c.dk/tvicons/db240_kral_tv_small_seapp.png" xmltv_id="Kral TV">Kral TV</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="241##https://i.c.dk/tvicons/radio_barker_logo_small_seapp.png" xmltv_id="Radio_BK">Radio_BK</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="242##https://i.c.dk/tvicons/yousee_film_og_serier_barker_logo_small_seapp.png" xmltv_id="YouSee Film og Serier BK">YouSee Film og Serier BK</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="243##https://i.c.dk/tvicons/paramount_barker_logo_small_seapp.png" xmltv_id="Paramount BK">Paramount BK</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="244##https://i.c.dk/tvicons/youtube_barker_logo_small_seapp.png" xmltv_id="YouTube BK">YouTube BK</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="245##https://i.c.dk/tvicons/disney_channels_xtra_barker_logo_small_seapp.png" xmltv_id="DISXTR_BK">DISXTR_BK</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="246##https://i.c.dk/tvicons/nickplus_barker_logo_small_seapp.png" xmltv_id="NIC_BK">NIC_BK</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="247##https://i.c.dk/tvicons/natgeoplus_barker_logo_small_seapp.png" xmltv_id="NAT_BK">NAT_BK</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="248##https://s.c.dk/tvlab/tvicons/foxplus_1541772208_logo_small_seapp.png" xmltv_id="FOX_BK">FOX_BK</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="249##https://s.c.dk/tvlab/tvicons/nordisk_film_plus_1541677180_logo_small_seapp.png" xmltv_id="NORFLM_BK">NORFLM_BK</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="250##https://i.c.dk/tvicons/mbc_logo_small_seapp.png" xmltv_id="MBC">MBC</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="251##https://i.c.dk/tvicons/db251_al_jazeera_small_seapp.png" xmltv_id="Al Jaz">Al Jaz</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="252##https://i.c.dk/tvicons/db252_edtv_small_seapp.png" xmltv_id="EDTV">EDTV</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="253##https://i.c.dk/tvicons/db253_al_masriyah_small_seapp.png" xmltv_id="AlMasr">AlMasr</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="254##https://i.c.dk/tvicons/db254_al_aoula_small_seapp.png" xmltv_id="AlAoul">AlAoul</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="255##https://i.c.dk/tvicons/db255_art_movies_small_seapp.png" xmltv_id="ART Sp">ART Sp</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="256##https://i.c.dk/tvicons/db256_al_spo_small_seapp.png" xmltv_id="Al Jazeera Sport">Al Jazeera Sport</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="257##https://s.c.dk/tvlab/tvicons/iqraa_1551692482_logo_small_seapp.png" xmltv_id="Iqraa">Iqraa</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="258##https://i.c.dk/tvicons/db258_abu_dhabi_tv_small_seapp.png" xmltv_id="AbuDTV">AbuDTV</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="260##" xmltv_id="HBO">HBO</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="264##https://s.c.dk/tvlab/tvicons/xee_1546952014_logo_small_seapp.png" xmltv_id="XEE">XEE</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="265##https://s.c.dk/tvlab/tvicons/nordisk_film_tv_1552898309_logo_small_seapp.png" xmltv_id="NORFLM">NORFLM</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="266##https://s.c.dk/tvlab/tvicons/myzen_tv_1561466214_logo_small_seapp.png" xmltv_id="MY_ZEN">MY_ZEN</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="267##https://s.c.dk/tvlab/tvicons/xee_1559040292_logo_small_seapp.png" xmltv_id="Xee_BK">Xee_BK</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="269##https://s.c.dk/tvlab/tvicons/tv_2_sportx_1571148800_logo_small_seapp.png" xmltv_id="tv2sportx">tv2sportx</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="270##https://i.c.dk/tvicons/db270_sony_max_small_seapp.png" xmltv_id="DRVOD_BK">DRVOD_BK</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="271##https://i.c.dk/tvicons/db271_set_small_seapp.png" xmltv_id="SET">SET</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="272##https://i.c.dk/tvicons/db272_aag_small_seapp.png" xmltv_id="AAG">AAG</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="273##https://i.c.dk/tvicons/db273_geo_tv_small_seapp.png" xmltv_id="Geo">Geo</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="274##https://i.c.dk/tvicons/db274_star_go_small_seapp.png" xmltv_id="StarGo">StarGo</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="275##https://i.c.dk/tvicons/db275_star_pi_small_seapp.png" xmltv_id="StarPl">StarPl</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="276##https://i.c.dk/tvicons/db276_cctv_4_small_seapp.png" xmltv_id="CCTV 4">CCTV 4</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="277##https://i.c.dk/tvicons/db277_sony_max_small_seapp.png" xmltv_id="MAX">MAX</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="278##https://i.c.dk/tvicons/db278_geo_news_small_seapp.png" xmltv_id="GeoNws">GeoNws</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="280##https://s.c.dk/tvlab/tvicons/thai_tv_global_network_1570547223_logo_small_seapp.png" xmltv_id="ThaiTV">ThaiTV</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="290##https://s.c.dk/tvlab/tvicons/viasat_ultra_hd_1561549522_logo_small_seapp.png" xmltv_id="VIAUHD">VIAUHD</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="311##https://i.c.dk/tvicons/db311_tv2nord_small_seapp.png" xmltv_id="TV2Nor">TV2Nor</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="312##https://i.c.dk/tvicons/tv_mid_logo_small_seapp.png" xmltv_id="TV Mid">TV Mid</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="313##https://i.c.dk/tvicons/db313_tv2_oj_small_seapp.png" xmltv_id="TV2OJy">TV2OJy</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="314##https://i.c.dk/tvicons/db314_tv_syd_small_seapp.png" xmltv_id="TV Syd">TV Syd</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="315##https://s.c.dk/tvlab/tvicons/tv_fyn_1551958223_logo_small_seapp.png" xmltv_id="TV Fyn">TV Fyn</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="316##https://s.c.dk/tvlab/tvicons/tv_st_1554817314_logo_small_seapp.png" xmltv_id="TV2OSj">TV2OSj</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="317##https://i.c.dk/tvicons/db317_lorry_small_seapp.png" xmltv_id="Lorry">Lorry</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="318##https://i.c.dk/tvicons/db318_tv2bor_small_seapp.png" xmltv_id="TV2Bor">TV2Bor</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="323##https://s.c.dk/tvlab/tvicons/tv_2_stjylland_1562854842_logo_small_seapp.png" xmltv_id="TV 2 J">TV 2 J</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="324##https://s.c.dk/tvlab/tvicons/tv_2_syd_1563360535_logo_small_seapp.png" xmltv_id="TV 2 S">TV 2 S</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="325##https://s.c.dk/tvlab/tvicons/tv_2_fyn_1563360858_logo_small_seapp.png" xmltv_id="TV 2 F">TV 2 F</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="326##https://s.c.dk/tvlab/tvicons/tv_2_bornholm_1563361473_logo_small_seapp.png" xmltv_id="TV 2 B">TV 2 B</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="327##https://s.c.dk/tvlab/tvicons/tv_2_midtvest_1563360868_logo_small_seapp.png" xmltv_id="TV 2 M">TV 2 M</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="328##https://s.c.dk/tvlab/tvicons/tv_2_nord_1563361286_logo_small_seapp.png" xmltv_id="TV 2 N">TV 2 N</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="329##https://s.c.dk/tvlab/tvicons/tv_2_st_1552550133_logo_small_seapp.png" xmltv_id="TV 2 O">TV 2 O</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="366##https://s.c.dk/tvlab/tvicons/hustler_tv_1551691804_logo_small_seapp.png" xmltv_id="HUSTtv">HUSTtv</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="367##https://i.c.dk/tvicons/db367_blue_hustler_small_seapp.png" xmltv_id="Blue H">Blue H</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="400##https://s.c.dk/tvlab/tvicons/hjrring_af_infokanal_1553766541_logo_small_seapp.png" xmltv_id="HAS">HAS</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="411##https://s.c.dk/tvlab/tvicons/kanalen_nord_1553766692_logo_small_seapp.png" xmltv_id="Nord">Nord</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="412##https://i.c.dk/tvicons/db412_kanalen_midtvest_small_seapp.png" xmltv_id="Midt-V">Midt-V</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="413##https://i.c.dk/tvicons/db413_kanal_stjylland_small_seapp.png" xmltv_id="Ostjyl">Ostjyl</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="414##https://i.c.dk/tvicons/db414_kanal_syd_small_seapp.png" xmltv_id="Syd">Syd</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="415##https://i.c.dk/tvicons/db415_fynbo_tv_small_seapp.png" xmltv_id="Fyn">Fyn</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="416##https://s.c.dk/tvlab/tvicons/kanalen_st_1553774481_logo_small_seapp.png" xmltv_id="Ost">Ost</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="417##https://i.c.dk/tvicons/db417_kanal_hovedstaden_small_seapp.png" xmltv_id="Hoved">Hoved</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="418##https://i.c.dk/tvicons/db418_kanalen_bornholm_small_seapp.png" xmltv_id="Bornho">Bornho</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="503##" xmltv_id="DR HD">DR HD</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="504##https://i.c.dk/tvicons/dr_k_logo_small_seapp.png" xmltv_id="DR K">DR K</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="505##https://s.c.dk/tvlab/tvicons/dr_ramasjang_1551682141_logo_small_seapp.png" xmltv_id="DR Ram">DR Ram</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="889##http://cloud.yousee.tv/static/img/logos/small_drupdate.png" xmltv_id="DR Update">DR Update</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="940##" xmltv_id="P1 DR">P1 DR</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="941##" xmltv_id="P4 Kobenhavn DR">P4 Kobenhavn DR</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="942##" xmltv_id="P3 DR">P3 DR</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="943##" xmltv_id="RADIO4">RADIO4</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="944##" xmltv_id="P6 Beat DR">P6 Beat DR</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="945##" xmltv_id="R Klassisk Dansk">R Klassisk Dansk</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="946##" xmltv_id="Pop FM Dansk">Pop FM Dansk</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="947##" xmltv_id="NOVA fm">NOVA fm</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="948##" xmltv_id="P7 Mix DR">P7 Mix DR</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="949##" xmltv_id="SR-P2  Svensk">SR-P2  Svensk</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="950##" xmltv_id="P8 Jazz DR">P8 Jazz DR</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="951##" xmltv_id="The Voice">The Voice</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="952##" xmltv_id="NDR Kultur Tysk">NDR Kultur Tysk</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="953##" xmltv_id="P2 Klassisk  DR">P2 Klassisk  DR</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="954##" xmltv_id="NDR 1 Tysk">NDR 1 Tysk</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="955##" xmltv_id="P5 DR">P5 DR</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="956##" xmltv_id="Schleswig-Holstein  Tysk">Schleswig-Holstein  Tysk</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="958##" xmltv_id="Radio 100">Radio 100</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="975##" xmltv_id="Radio 100">Radio 100</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="980##" xmltv_id="P4 Sjælland DR">P4 Sjælland DR</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="981##" xmltv_id="P4 Fyn DR">P4 Fyn DR</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="982##" xmltv_id="P4 Syd DR">P4 Syd DR</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="983##" xmltv_id="P4 Trekanten DR">P4 Trekanten DR</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="984##" xmltv_id="P4 Midt &amp; Vest DR">P4 Midt &amp; Vest DR</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="985##" xmltv_id="P4 Ostjylland DR">P4 Ostjylland DR</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="986##" xmltv_id="P4 Nordjylland DR">P4 Nordjylland DR</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="987##" xmltv_id="P4 Nordvestsjælland DR">P4 Nordvestsjælland DR</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="988##" xmltv_id="P4 Esbjerg DR">P4 Esbjerg DR</channel>
+    <channel update="i" site="tv.yousee.dk.E" site_id="989##" xmltv_id="P4 Bornholm DR">P4 Bornholm DR</channel>
+  </channels>
+</site>

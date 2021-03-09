@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<site generator-info-name="WebGrab+Plus version 1.1.0 -- Jan van Straaten" site="radioaustralia.net.au">
+  <!--schedules in utc, adapt the timezone in radionaustralia.net.au.ini to fit your local times-->
+  <channels>
+    <channel update="i" site="radioaustralia.net.au" site_id="asia" xmltv_id="Asia">Asia</channel>
+    <channel update="i" site="radioaustralia.net.au" site_id="pacific" xmltv_id="Pacific">Pacific</channel>
+    <channel update="i" site="radioaustralia.net.au" site_id="vietnamse" xmltv_id="Vietnamese">Vietnamese</channel>
+    <channel update="i" site="radioaustralia.net.au" site_id="chinese" xmltv_id="Chinese">Chinese</channel>
+    <channel update="i" site="radioaustralia.net.au" site_id="french" xmltv_id="French">French</channel>
+    <channel update="i" site="radioaustralia.net.au" site_id="burmese" xmltv_id="Burmese">Burmese</channel>
+    <channel update="i" site="radioaustralia.net.au" site_id="khmer" xmltv_id="Khmer">Khmer</channel>
+    <channel update="i" site="radioaustralia.net.au" site_id="indonesian" xmltv_id="Indonesian">Indonesian</channel>
+  </channels>
+</site>

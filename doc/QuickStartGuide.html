@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Quick Start</title>
+
+<style>
+
+body {   
+	height: 100%; 
+   margin: 0 auto;
+   padding: 0;
+   font-family: Verdana,Tahoma;
+}
+
+
+h1 {
+	color: #FFFFFF;
+	font-style: italic;
+	text-align: center;
+	text-decoration: underline;
+}
+
+h2 {
+	color: #005a8c;
+	text-decoration: underline;
+}
+
+#body-outer
+{
+	background-color: #dae7ee;
+   display: table;
+   height: 100%;
+   margin: 0 auto;
+   overflow: hidden;
+   position: relative;
+   width: 1000px;
+}
+
+#header
+{
+	background-color: #005a8c;
+	margin: 0 auto;
+	overflow: hidden;
+   position: relative;
+	height: 100px;
+}
+
+#body
+{
+	margin: 20px;
+}
+</style>
+
+</head>
+<body>
+
+<div id="body-outer">
+
+<div id="header">
+<h1>WebGrab+Plus Quick start guide</h1>
+</div>
+<div id="body">
+<h2>What is WebGrab+Plus</h2>
+<p>
+WebGrab+Plus is a generic webgrab tool that can grab tv listings from websites and create a xmltv file for it. This xmltv file can be fed to a PVR/EPG system to visualize the tv listing.</br>
+Because WebGrab+Plus itself is generic, it will need to know how to grab a specific website. This info is packed into siteini files.
+For every supported website, such a file will exist. On a website you have multiple tv channels. To know what channels are available for a specific siteini (website), you can look into the accompanying .channels.xml file. This file contains a list of channels that can be used. All those files can be found in the siteini.pack folder.</br>
+Currently WebGrab+Plus is only a command line tool. So no GUI (Graphic User Interface) is available.
+</p>
+<p>A list of all features can be found <a href="http://webgrabplus.com/features">on our website</a></p>
+
+
+<h2>How to use</h2>
+
+<ol>
+<li>Find the config file (WebGrab++.config.xml) and open it with a simple text editor.</li>
+<li>Locate the dummy &lt;channel&gt; line at the end of the file</li>
+<li>Now look inside the siteini.pack folder and find the channels you want to grab (inside the .channels.xml files)</li>
+<li>Replace the dummy &lt;channel&gt; line with the channel(s) you want to grab</li>
+<li>Run WebGrab+Plus</li>
+<li>You should get a xmltv file called guide.xml file with the tv listings of your channels</li>
+<li>For more information about the configuration file, see <a href="http://webgrabplus.com/documentation/configuration/webgrabconfigxml">on our website</a></li>
+<li>To feed the generate xmltv file into you EPG/PVR system you can follow <a href="http://www.webgrabplus.com/documentation/interact-your-pvr-software">examples on our site</a></li>
+</ol>
+
+
+<h2>Usefull links:</h2>
+<p>
+<a href="http://webgrabplus.com">Homepage</a><br/>
+<a href="http://webgrabplus.com/documentation">Online documentation</a><br/>
+<a href="http://webgrabplus.com/forum">Online forum</a><br/>
+<a href="http://webgrabplus.com/faq">Online FAQ</a><br/>
+</p>
+
+</div>
+</div>
+
+</body>
+</html>
+

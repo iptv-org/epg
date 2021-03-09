@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<site generator-info-name="WebGrab+Plus/w MDB &amp; REX Postprocess -- version V1.56.24 -- Jan van Straaten" site="claro.com">
+  <channels>
+    <channel update="i" site="claro.com.co" site_id="395" xmltv_id="CANAL CLARO">CANAL CLARO</channel>
+    <channel update="i" site="claro.com.co" site_id="984" xmltv_id="CANAL CLARO HD">CANAL CLARO HD</channel>
+    <channel update="i" site="claro.com.co" site_id="401" xmltv_id="CANAL UNO">CANAL UNO</channel>
+    <channel update="i" site="claro.com.co" site_id="394" xmltv_id="CANAL CARACOL">CANAL CARACOL</channel>
+    <channel update="i" site="claro.com.co" site_id="421" xmltv_id="DIA TV">DIA TV</channel>
+    <channel update="i" site="claro.com.co" site_id="399" xmltv_id="CANAL RCN">CANAL RCN</channel>
+    <channel update="i" site="claro.com.co" site_id="497" xmltv_id="EL TIEMPO TELEVISION">EL TIEMPO TELEVISION</channel>
+    <channel update="i" site="claro.com.co" site_id="606" xmltv_id="VMAS-TV">VMAS-TV</channel>
+    <channel update="i" site="claro.com.co" site_id="412" xmltv_id="CITY TV">CITY TV</channel>
+    <channel update="i" site="claro.com.co" site_id="398" xmltv_id="CANAL INSTITUCIONAL">CANAL INSTITUCIONAL</channel>
+    <channel update="i" site="claro.com.co" site_id="393" xmltv_id="CANAL CAPITAL">CANAL CAPITAL</channel>
+    <channel update="i" site="claro.com.co" site_id="580" xmltv_id="TELEANTIOQUIA">TELEANTIOQUIA</channel>
+    <channel update="i" site="claro.com.co" site_id="582" xmltv_id="TELECARIBE">TELECARIBE</channel>
+    <channel update="i" site="claro.com.co" site_id="585" xmltv_id="TELEPACIFICO">TELEPACIFICO</channel>
+    <channel update="i" site="claro.com.co" site_id="392" xmltv_id="CANAL 13">CANAL 13</channel>
+    <channel update="i" site="claro.com.co" site_id="591" xmltv_id="TRO">TRO</channel>
+    <channel update="i" site="claro.com.co" site_id="581" xmltv_id="TELECAFE">TELECAFE</channel>
+    <channel update="i" site="claro.com.co" site_id="397" xmltv_id="CANAL DEL CONGRESO">CANAL DEL CONGRESO</channel>
+    <channel update="i" site="claro.com.co" site_id="417" xmltv_id="COSMOVISION">COSMOVISION</channel>
+    <channel update="i" site="claro.com.co" site_id="611" xmltv_id="ZOOM TV">ZOOM TV</channel>
+    <channel update="i" site="claro.com.co" site_id="570" xmltv_id="SENAL COLOMBIA">SENAL COLOMBIA</channel>
+    <channel update="i" site="claro.com.co" site_id="544" xmltv_id="MTV">MTV</channel>
+    <channel update="i" site="claro.com.co" site_id="527" xmltv_id="CLARO MUSICA LADO A">CLARO MUSICA LADO A</channel>
+    <channel update="i" site="claro.com.co" site_id="526" xmltv_id="CLARO MUSICA LADO B">CLARO MUSICA LADO B</channel>
+    <channel update="i" site="claro.com.co" site_id="604" xmltv_id="VH1">VH1</channel>
+    <channel update="i" site="claro.com.co" site_id="523" xmltv_id="HTV">HTV</channel>
+    <channel update="i" site="claro.com.co" site_id="566" xmltv_id="RADIOLA TV">RADIOLA TV</channel>
+    <channel update="i" site="claro.com.co" site_id="545" xmltv_id="MTV HITS">MTV HITS</channel>
+    <channel update="i" site="claro.com.co" site_id="605" xmltv_id="VH1 CLASSIC">VH1 CLASSIC</channel>
+    <channel update="i" site="claro.com.co" site_id="583" xmltv_id="TELEHIT">TELEHIT</channel>
+    <channel update="i" site="claro.com.co" site_id="568" xmltv_id="RITMOSON">RITMOSON</channel>
+    <channel update="i" site="claro.com.co" site_id="427" xmltv_id="DISCOVERY KIDS">DISCOVERY KIDS</channel>
+    <channel update="i" site="claro.com.co" site_id="432" xmltv_id="DISNEY XD">DISNEY XD</channel>
+    <channel update="i" site="claro.com.co" site_id="404" xmltv_id="CARTOON NETWORK">CARTOON NETWORK</channel>
+    <channel update="i" site="claro.com.co" site_id="430" xmltv_id="DISNEY CHANNEL">DISNEY CHANNEL</channel>
+    <channel update="i" site="claro.com.co" site_id="431" xmltv_id="DISNEY JUNIOR">DISNEY JUNIOR</channel>
+    <channel update="i" site="claro.com.co" site_id="552" xmltv_id="NICKELODEON">NICKELODEON</channel>
+    <channel update="i" site="claro.com.co" site_id="387" xmltv_id="BABY TV">BABY TV</channel>
+    <channel update="i" site="claro.com.co" site_id="551" xmltv_id="NICK JR">NICK JR</channel>
+    <channel update="i" site="claro.com.co" site_id="390" xmltv_id="BOOMERANG">BOOMERANG</channel>
+    <channel update="i" site="claro.com.co" site_id="682" xmltv_id="TOONCAST">TOONCAST</channel>
+    <channel update="i" site="claro.com.co" site_id="423" xmltv_id="DISCOVERY CHANNEL">DISCOVERY CHANNEL</channel>
+    <channel update="i" site="claro.com.co" site_id="428" xmltv_id="DISCOVERY SCIENCE">DISCOVERY SCIENCE</channel>
+    <channel update="i" site="claro.com.co" site_id="587" xmltv_id="TLC">TLC</channel>
+    <channel update="i" site="claro.com.co" site_id="424" xmltv_id="DISCOVERY CIVILIZATION">DISCOVERY CIVILIZATION</channel>
+    <channel update="i" site="claro.com.co" site_id="382" xmltv_id="ANIMAL PLANET">ANIMAL PLANET</channel>
+    <channel update="i" site="claro.com.co" site_id="521" xmltv_id="HISTORY CHANNEL">HISTORY CHANNEL</channel>
+    <channel update="i" site="claro.com.co" site_id="894" xmltv_id="H2">H2</channel>
+    <channel update="i" site="claro.com.co" site_id="429" xmltv_id="DISCOVERY TURBO">DISCOVERY TURBO</channel>
+    <channel update="i" site="claro.com.co" site_id="610" xmltv_id="WOBI">WOBI</channel>
+    <channel update="i" site="claro.com.co" site_id="550" xmltv_id="NATIONAL GEOGRAPHIC">NATIONAL GEOGRAPHIC</channel>
+    <channel update="i" site="claro.com.co" site_id="548" xmltv_id="NAT GEO WILD">NAT GEO WILD</channel>
+    <channel update="i" site="claro.com.co" site_id="593" xmltv_id="TV AGRO">TV AGRO</channel>
+    <channel update="i" site="claro.com.co" site_id="987" xmltv_id="TV AGRO HD">TV AGRO HD</channel>
+    <channel update="i" site="claro.com.co" site_id="425" xmltv_id="DISCOVERY HOME &amp; HEALTH">DISCOVERY HOME &amp; HEALTH</channel>
+    <channel update="i" site="claro.com.co" site_id="485" xmltv_id="EL GOURMET">EL GOURMET</channel>
+    <channel update="i" site="claro.com.co" site_id="862" xmltv_id="MUNDO FOX">MUNDO FOX</channel>
+    <channel update="i" site="claro.com.co" site_id="405" xmltv_id="MAS CHIC">MAS CHIC</channel>
+    <channel update="i" site="claro.com.co" site_id="510" xmltv_id="GLITZ">GLITZ</channel>
+    <channel update="i" site="claro.com.co" site_id="484" xmltv_id="E! ENTERTAINMENT">E! ENTERTAINMENT</channel>
+    <channel update="i" site="claro.com.co" site_id="893" xmltv_id="LIFETIME">LIFETIME</channel>
+    <channel update="i" site="claro.com.co" site_id="592" xmltv_id="TRU TV">TRU TV</channel>
+    <channel update="i" site="claro.com.co" site_id="681" xmltv_id="TRU TV HD">TRU TV HD</channel>
+    <channel update="i" site="claro.com.co" site_id="396" xmltv_id="CANAL DE LAS ESTRELLAS">CANAL DE LAS ESTRELLAS</channel>
+    <channel update="i" site="claro.com.co" site_id="584" xmltv_id="TL NOVELAS">TL NOVELAS</channel>
+    <channel update="i" site="claro.com.co" site_id="652" xmltv_id="VE PLUS TV">VE PLUS TV</channel>
+    <channel update="i" site="claro.com.co" site_id="386" xmltv_id="AZMUNDO">AZMUNDO</channel>
+    <channel update="i" site="claro.com.co" site_id="859" xmltv_id="RCN TELENOVELAS">RCN TELENOVELAS</channel>
+    <channel update="i" site="claro.com.co" site_id="697" xmltv_id="TELEMUNDO">TELEMUNDO</channel>
+    <channel update="i" site="claro.com.co" site_id="555" xmltv_id="PASIONES">PASIONES</channel>
+    <channel update="i" site="claro.com.co" site_id="504" xmltv_id="FOX NEWS">FOX NEWS</channel>
+    <channel update="i" site="claro.com.co" site_id="946" xmltv_id="HEADLINE NEWS">HEADLINE NEWS</channel>
+    <channel update="i" site="claro.com.co" site_id="414" xmltv_id="CNN INTERNACIONAL">CNN INTERNACIONAL</channel>
+    <channel update="i" site="claro.com.co" site_id="413" xmltv_id="CNN EN ESPANOL">CNN EN ESPANOL</channel>
+    <channel update="i" site="claro.com.co" site_id="389" xmltv_id="BLOOMBERG">BLOOMBERG</channel>
+    <channel update="i" site="claro.com.co" site_id="419" xmltv_id="DATA IFX">DATA IFX</channel>
+    <channel update="i" site="claro.com.co" site_id="950" xmltv_id="EURONEWS">EURONEWS</channel>
+    <channel update="i" site="claro.com.co" site_id="554" xmltv_id="NTN 24">NTN 24</channel>
+    <channel update="i" site="claro.com.co" site_id="391" xmltv_id="CABLE NOTICIAS">CABLE NOTICIAS</channel>
+    <channel update="i" site="claro.com.co" site_id="596" xmltv_id="TVE">TVE</channel>
+    <channel update="i" site="claro.com.co" site_id="567" xmltv_id="RAI">RAI</channel>
+    <channel update="i" site="claro.com.co" site_id="595" xmltv_id="TV5">TV5</channel>
+    <channel update="i" site="claro.com.co" site_id="388" xmltv_id="BBC WORLD">BBC WORLD</channel>
+    <channel update="i" site="claro.com.co" site_id="483" xmltv_id="DW-TV">DW-TV</channel>
+    <channel update="i" site="claro.com.co" site_id="947" xmltv_id="DW AMERICA">DW AMERICA</channel>
+    <channel update="i" site="claro.com.co" site_id="383" xmltv_id="ANTENA 3">ANTENA 3</channel>
+    <channel update="i" site="claro.com.co" site_id="403" xmltv_id="CARACOL INTERNACIONAL">CARACOL INTERNACIONAL</channel>
+    <channel update="i" site="claro.com.co" site_id="594" xmltv_id="NUESTRA TELE">NUESTRA TELE</channel>
+    <channel update="i" site="claro.com.co" site_id="948" xmltv_id="ARIRANG">ARIRANG</channel>
+    <channel update="i" site="claro.com.co" site_id="945" xmltv_id="\tALJAZEERA\t ">\tALJAZEERA\t </channel>
+    <channel update="i" site="claro.com.co" site_id="602" xmltv_id="CLARO SPORTS COLOMBIA">CLARO SPORTS COLOMBIA</channel>
+    <channel update="i" site="claro.com.co" site_id="867" xmltv_id="CLARO SPORTS">CLARO SPORTS</channel>
+    <channel update="i" site="claro.com.co" site_id="940" xmltv_id="GOLF CHANNEL">GOLF CHANNEL</channel>
+    <channel update="i" site="claro.com.co" site_id="494" xmltv_id="ESPN">ESPN</channel>
+    <channel update="i" site="claro.com.co" site_id="495" xmltv_id="ESPN 2">ESPN 2</channel>
+    <channel update="i" site="claro.com.co" site_id="647" xmltv_id="ESPN3">ESPN3</channel>
+    <channel update="i" site="claro.com.co" site_id="506" xmltv_id="FOX SPORTS">FOX SPORTS</channel>
+    <channel update="i" site="claro.com.co" site_id="701" xmltv_id="FOX SPORTS 2">FOX SPORTS 2</channel>
+    <channel update="i" site="claro.com.co" site_id="651" xmltv_id="FOX SPORTS 3">FOX SPORTS 3</channel>
+    <channel update="i" site="claro.com.co" site_id="511" xmltv_id="GOL TV">GOL TV</channel>
+    <channel update="i" site="claro.com.co" site_id="597" xmltv_id="TYC SPORTS">TYC SPORTS</channel>
+    <channel update="i" site="claro.com.co" site_id="828" xmltv_id="WIN SPORTS">WIN SPORTS</channel>
+    <channel update="i" site="claro.com.co" site_id="608" xmltv_id="WARNER CHANNEL">WARNER CHANNEL</channel>
+    <channel update="i" site="claro.com.co" site_id="384" xmltv_id="AXN">AXN</channel>
+    <channel update="i" site="claro.com.co" site_id="571" xmltv_id="SONY">SONY</channel>
+    <channel update="i" site="claro.com.co" site_id="528" xmltv_id="ID">ID</channel>
+    <channel update="i" site="claro.com.co" site_id="505" xmltv_id="FOX SERIES">FOX SERIES</channel>
+    <channel update="i" site="claro.com.co" site_id="598" xmltv_id="UNIVERSAL CHANNEL">UNIVERSAL CHANNEL</channel>
+    <channel update="i" site="claro.com.co" site_id="509" xmltv_id="FX">FX</channel>
+    <channel update="i" site="claro.com.co" site_id="502" xmltv_id="FOX LIFE">FOX LIFE</channel>
+    <channel update="i" site="claro.com.co" site_id="380" xmltv_id="A&amp;E">A&amp;E</channel>
+    <channel update="i" site="claro.com.co" site_id="524" xmltv_id="TNT SERIES">TNT SERIES</channel>
+    <channel update="i" site="claro.com.co" site_id="578" xmltv_id="TBS">TBS</channel>
+    <channel update="i" site="claro.com.co" site_id="702" xmltv_id="COMEDY CENTRAL">COMEDY CENTRAL</channel>
+    <channel update="i" site="claro.com.co" site_id="557" xmltv_id="PPV-01">PPV-01</channel>
+    <channel update="i" site="claro.com.co" site_id="621" xmltv_id="PPV-02">PPV-02</channel>
+    <channel update="i" site="claro.com.co" site_id="622" xmltv_id="PPV-03">PPV-03</channel>
+    <channel update="i" site="claro.com.co" site_id="626" xmltv_id="PENTHOUSE">PENTHOUSE</channel>
+    <channel update="i" site="claro.com.co" site_id="564" xmltv_id="BRAZZERS">BRAZZERS</channel>
+    <channel update="i" site="claro.com.co" site_id="565" xmltv_id="SEXTREME">SEXTREME</channel>
+    <channel update="i" site="claro.com.co" site_id="556" xmltv_id="PLAYBOY">PLAYBOY</channel>
+    <channel update="i" site="claro.com.co" site_id="899" xmltv_id="PLAYBOY HD">PLAYBOY HD</channel>
+    <channel update="i" site="claro.com.co" site_id="601" xmltv_id="VENUS">VENUS</channel>
+    <channel update="i" site="claro.com.co" site_id="589" xmltv_id="TNT">TNT</channel>
+    <channel update="i" site="claro.com.co" site_id="586" xmltv_id="THE FILM ZONE">THE FILM ZONE</channel>
+    <channel update="i" site="claro.com.co" site_id="577" xmltv_id="STUDIO UNIVERSAL">STUDIO UNIVERSAL</channel>
+    <channel update="i" site="claro.com.co" site_id="574" xmltv_id="SPACE">SPACE</channel>
+    <channel update="i" site="claro.com.co" site_id="525" xmltv_id="ISAT">ISAT</channel>
+    <channel update="i" site="claro.com.co" site_id="532" xmltv_id="AMC">AMC</channel>
+    <channel update="i" site="claro.com.co" site_id="839" xmltv_id="CINEMAX OESTE">CINEMAX OESTE</channel>
+    <channel update="i" site="claro.com.co" site_id="513" xmltv_id="GOLDEN">GOLDEN</channel>
+    <channel update="i" site="claro.com.co" site_id="547" xmltv_id="MULTIPREMIER">MULTIPREMIER</channel>
+    <channel update="i" site="claro.com.co" site_id="408" xmltv_id="CINE LATINO">CINE LATINO</channel>
+    <channel update="i" site="claro.com.co" site_id="498" xmltv_id="EUROCHANNEL">EUROCHANNEL</channel>
+    <channel update="i" site="claro.com.co" site_id="420" xmltv_id="DE PELICULA">DE PELICULA</channel>
+    <channel update="i" site="claro.com.co" site_id="409" xmltv_id="CINEMA +">CINEMA +</channel>
+    <channel update="i" site="claro.com.co" site_id="407" xmltv_id="CINECANAL OESTE">CINECANAL OESTE</channel>
+    <channel update="i" site="claro.com.co" site_id="812" xmltv_id="CINEMA DINAMITA">CINEMA DINAMITA</channel>
+    <channel update="i" site="claro.com.co" site_id="637" xmltv_id="TCM">TCM</channel>
+    <channel update="i" site="claro.com.co" site_id="937" xmltv_id="PARAMOUNT">PARAMOUNT</channel>
+    <channel update="i" site="claro.com.co" site_id="985" xmltv_id="CLARO CINEMA">CLARO CINEMA</channel>
+    <channel update="i" site="claro.com.co" site_id="515" xmltv_id="HBO ESTE">HBO ESTE</channel>
+    <channel update="i" site="claro.com.co" site_id="518" xmltv_id="HBO PLUS ESTE">HBO PLUS ESTE</channel>
+    <channel update="i" site="claro.com.co" site_id="617" xmltv_id="MAX">MAX</channel>
+    <channel update="i" site="claro.com.co" site_id="516" xmltv_id="HBO FAMILY ESTE">HBO FAMILY ESTE</channel>
+    <channel update="i" site="claro.com.co" site_id="520" xmltv_id="HBO SIGNATURE">HBO SIGNATURE</channel>
+    <channel update="i" site="claro.com.co" site_id="519" xmltv_id="HBO PLUS OESTE">HBO PLUS OESTE</channel>
+    <channel update="i" site="claro.com.co" site_id="799" xmltv_id="MAX PRIME ESTE">MAX PRIME ESTE</channel>
+    <channel update="i" site="claro.com.co" site_id="840" xmltv_id="MAX PRIME OESTE">MAX PRIME OESTE</channel>
+    <channel update="i" site="claro.com.co" site_id="514" xmltv_id="HBO 2">HBO 2</channel>
+    <channel update="i" site="claro.com.co" site_id="916" xmltv_id="MAX SD">MAX SD</channel>
+    <channel update="i" site="claro.com.co" site_id="542" xmltv_id="FOX+1ES">FOX+1ES</channel>
+    <channel update="i" site="claro.com.co" site_id="543" xmltv_id="FOX+1OE">FOX+1OE</channel>
+    <channel update="i" site="claro.com.co" site_id="537" xmltv_id="FOX+FAE">FOX+FAE</channel>
+    <channel update="i" site="claro.com.co" site_id="539" xmltv_id="FOX MOVIES">FOX MOVIES</channel>
+    <channel update="i" site="claro.com.co" site_id="538" xmltv_id="FOX+FAO">FOX+FAO</channel>
+    <channel update="i" site="claro.com.co" site_id="536" xmltv_id="FOX CLASSICS">FOX CLASSICS</channel>
+    <channel update="i" site="claro.com.co" site_id="535" xmltv_id="FOX+ACT">FOX+ACT</channel>
+    <channel update="i" site="claro.com.co" site_id="540" xmltv_id="FOX CINEMA">FOX CINEMA</channel>
+    <channel update="i" site="claro.com.co" site_id="935" xmltv_id="FOX+COM">FOX+COM</channel>
+    <channel update="i" site="claro.com.co" site_id="449" xmltv_id="NEW AGE">NEW AGE</channel>
+    <channel update="i" site="claro.com.co" site_id="448" xmltv_id="PURO AMOR">PURO AMOR</channel>
+    <channel update="i" site="claro.com.co" site_id="450" xmltv_id="ROCK EN ESPANOL">ROCK EN ESPANOL</channel>
+    <channel update="i" site="claro.com.co" site_id="434" xmltv_id="FIESTA TROPICAL">FIESTA TROPICAL</channel>
+    <channel update="i" site="claro.com.co" site_id="452" xmltv_id="POWER HITS">POWER HITS</channel>
+    <channel update="i" site="claro.com.co" site_id="453" xmltv_id="MARIACHI">MARIACHI</channel>
+    <channel update="i" site="claro.com.co" site_id="451" xmltv_id="MEXICANA">MEXICANA</channel>
+    <channel update="i" site="claro.com.co" site_id="463" xmltv_id="DE LAS AMERICAS">DE LAS AMERICAS</channel>
+    <channel update="i" site="claro.com.co" site_id="462" xmltv_id="DEL CARIBE">DEL CARIBE</channel>
+    <channel update="i" site="claro.com.co" site_id="459" xmltv_id="SINFONICA">SINFONICA</channel>
+    <channel update="i" site="claro.com.co" site_id="458" xmltv_id="WORLD BEAT">WORLD BEAT</channel>
+    <channel update="i" site="claro.com.co" site_id="444" xmltv_id="LATIN JAZZ">LATIN JAZZ</channel>
+    <channel update="i" site="claro.com.co" site_id="436" xmltv_id="BRASIL POP">BRASIL POP</channel>
+    <channel update="i" site="claro.com.co" site_id="476" xmltv_id="JAZZ">JAZZ</channel>
+    <channel update="i" site="claro.com.co" site_id="433" xmltv_id="LOVE SONGS">LOVE SONGS</channel>
+    <channel update="i" site="claro.com.co" site_id="437" xmltv_id="CLASSIC ROCK">CLASSIC ROCK</channel>
+    <channel update="i" site="claro.com.co" site_id="481" xmltv_id="70S HITS">70S HITS</channel>
+    <channel update="i" site="claro.com.co" site_id="482" xmltv_id="80S HITS">80S HITS</channel>
+    <channel update="i" site="claro.com.co" site_id="479" xmltv_id="90S HITS">90S HITS</channel>
+    <channel update="i" site="claro.com.co" site_id="439" xmltv_id="THE HIT LIST">THE HIT LIST</channel>
+    <channel update="i" site="claro.com.co" site_id="480" xmltv_id="HARD ROCK">HARD ROCK</channel>
+    <channel update="i" site="claro.com.co" site_id="457" xmltv_id="TANGO">TANGO</channel>
+    <channel update="i" site="claro.com.co" site_id="441" xmltv_id="R&amp;B CLASSICS">R&amp;B CLASSICS</channel>
+    <channel update="i" site="claro.com.co" site_id="442" xmltv_id="SILVER SCREEN">SILVER SCREEN</channel>
+    <channel update="i" site="claro.com.co" site_id="438" xmltv_id="REGGAE">REGGAE</channel>
+    <channel update="i" site="claro.com.co" site_id="440" xmltv_id="RIVIERA DISCOTHEQUE">RIVIERA DISCOTHEQUE</channel>
+    <channel update="i" site="claro.com.co" site_id="465" xmltv_id="LOUNGE">LOUNGE</channel>
+    <channel update="i" site="claro.com.co" site_id="461" xmltv_id="ROCK &amp; ROLL">ROCK &amp; ROLL</channel>
+    <channel update="i" site="claro.com.co" site_id="435" xmltv_id="BE-TWEEN">BE-TWEEN</channel>
+    <channel update="i" site="claro.com.co" site_id="456" xmltv_id="INOLVIDABLE">INOLVIDABLE</channel>
+    <channel update="i" site="claro.com.co" site_id="443" xmltv_id="INSTRUMENTAL">INSTRUMENTAL</channel>
+    <channel update="i" site="claro.com.co" site_id="454" xmltv_id="OPERA">OPERA</channel>
+    <channel update="i" site="claro.com.co" site_id="478" xmltv_id="ALTERNATIVA">ALTERNATIVA</channel>
+    <channel update="i" site="claro.com.co" site_id="460" xmltv_id="ITALIANA">ITALIANA</channel>
+    <channel update="i" site="claro.com.co" site_id="466" xmltv_id="BLUES">BLUES</channel>
+    <channel update="i" site="claro.com.co" site_id="446" xmltv_id="MUSICA BRASILEIRA">MUSICA BRASILEIRA</channel>
+    <channel update="i" site="claro.com.co" site_id="445" xmltv_id="VINTAGE">VINTAGE</channel>
+    <channel update="i" site="claro.com.co" site_id="447" xmltv_id="CARNAVAL BRASILEIRO">CARNAVAL BRASILEIRO</channel>
+    <channel update="i" site="claro.com.co" site_id="455" xmltv_id="BIG BAND SWING">BIG BAND SWING</channel>
+    <channel update="i" site="claro.com.co" site_id="464" xmltv_id="GLOBAL GRUV">GLOBAL GRUV</channel>
+    <channel update="i" site="claro.com.co" site_id="467" xmltv_id="CLASICA">CLASICA</channel>
+    <channel update="i" site="claro.com.co" site_id="474" xmltv_id="U.K. HITS">U.K. HITS</channel>
+    <channel update="i" site="claro.com.co" site_id="468" xmltv_id="CONTEMPORANEA">CONTEMPORANEA</channel>
+    <channel update="i" site="claro.com.co" site_id="471" xmltv_id="SALSA">SALSA</channel>
+    <channel update="i" site="claro.com.co" site_id="475" xmltv_id="PIANO">PIANO</channel>
+    <channel update="i" site="claro.com.co" site_id="469" xmltv_id="URBANO">URBANO</channel>
+    <channel update="i" site="claro.com.co" site_id="470" xmltv_id="NEW WAVE">NEW WAVE</channel>
+    <channel update="i" site="claro.com.co" site_id="472" xmltv_id="RETRO DISCO">RETRO DISCO</channel>
+    <channel update="i" site="claro.com.co" site_id="473" xmltv_id="LATINA">LATINA</channel>
+    <channel update="i" site="claro.com.co" site_id="477" xmltv_id="ROMANCERO LATINO">ROMANCERO LATINO</channel>
+    <channel update="i" site="claro.com.co" site_id="490" xmltv_id="EMISORA LA FM">EMISORA LA FM</channel>
+    <channel update="i" site="claro.com.co" site_id="491" xmltv_id="EMISORA LA W">EMISORA LA W</channel>
+    <channel update="i" site="claro.com.co" site_id="489" xmltv_id="EMISORA LA BASICA RCN">EMISORA LA BASICA RCN</channel>
+    <channel update="i" site="claro.com.co" site_id="488" xmltv_id="EMISORA LA BASICA CARACOL">EMISORA LA BASICA CARACOL</channel>
+    <channel update="i" site="claro.com.co" site_id="487" xmltv_id="EMISORA CANDELA STEREO">EMISORA CANDELA STEREO</channel>
+    <channel update="i" site="claro.com.co" site_id="492" xmltv_id="EMISORA VIBRA BOGOTA">EMISORA VIBRA BOGOTA</channel>
+    <channel update="i" site="claro.com.co" site_id="500" xmltv_id="EWTN">EWTN</channel>
+    <channel update="i" site="claro.com.co" site_id="486" xmltv_id="EL SEMBRADOR">EL SEMBRADOR</channel>
+    <channel update="i" site="claro.com.co" site_id="418" xmltv_id="CRISTOVISION">CRISTOVISION</channel>
+    <channel update="i" site="claro.com.co" site_id="579" xmltv_id="TELEAMIGA">TELEAMIGA</channel>
+    <channel update="i" site="claro.com.co" site_id="493" xmltv_id="ENLACE">ENLACE</channel>
+    <channel update="i" site="claro.com.co" site_id="422" xmltv_id="DIA TV HD">DIA TV HD</channel>
+    <channel update="i" site="claro.com.co" site_id="402" xmltv_id="CARACOL HD">CARACOL HD</channel>
+    <channel update="i" site="claro.com.co" site_id="400" xmltv_id="RCN HD">RCN HD</channel>
+    <channel update="i" site="claro.com.co" site_id="959" xmltv_id="CANAL INSTITUCIONAL HD">CANAL INSTITUCIONAL HD</channel>
+    <channel update="i" site="claro.com.co" site_id="958" xmltv_id="SENAL COLOMBIA HD">SENAL COLOMBIA HD</channel>
+    <channel update="i" site="claro.com.co" site_id="960" xmltv_id="CANAL UNO HD">CANAL UNO HD</channel>
+    <channel update="i" site="claro.com.co" site_id="993" xmltv_id="MTV HD">MTV HD</channel>
+    <channel update="i" site="claro.com.co" site_id="748" xmltv_id="VH1 HD">VH1 HD</channel>
+    <channel update="i" site="claro.com.co" site_id="649" xmltv_id="MTV LIVE HD">MTV LIVE HD</channel>
+    <channel update="i" site="claro.com.co" site_id="415" xmltv_id="CONCERT CHANNEL HD">CONCERT CHANNEL HD</channel>
+    <channel update="i" site="claro.com.co" site_id="813" xmltv_id="DISCOVERY KIDS HD">DISCOVERY KIDS HD</channel>
+    <channel update="i" site="claro.com.co" site_id="995" xmltv_id="CARTOON NETWORK HD">CARTOON NETWORK HD</channel>
+    <channel update="i" site="claro.com.co" site_id="855" xmltv_id="DISNEY HD">DISNEY HD</channel>
+    <channel update="i" site="claro.com.co" site_id="650" xmltv_id="NICK HD">NICK HD</channel>
+    <channel update="i" site="claro.com.co" site_id="996" xmltv_id="NICKELODEON HD">NICKELODEON HD</channel>
+    <channel update="i" site="claro.com.co" site_id="426" xmltv_id="DISC. HD THEATER">DISC. HD THEATER</channel>
+    <channel update="i" site="claro.com.co" site_id="588" xmltv_id="DISCOVERY WORLD HD">DISCOVERY WORLD HD</channel>
+    <channel update="i" site="claro.com.co" site_id="957" xmltv_id="DISCOVERY CHANNEL HD">DISCOVERY CHANNEL HD</channel>
+    <channel update="i" site="claro.com.co" site_id="977" xmltv_id="ANIMAL PLANET HD">ANIMAL PLANET HD</channel>
+    <channel update="i" site="claro.com.co" site_id="522" xmltv_id="HISTORY CHANNEL HD">HISTORY CHANNEL HD</channel>
+    <channel update="i" site="claro.com.co" site_id="900" xmltv_id="NATGEO HD">NATGEO HD</channel>
+    <channel update="i" site="claro.com.co" site_id="549" xmltv_id="NAT GEO WILD HD">NAT GEO WILD HD</channel>
+    <channel update="i" site="claro.com.co" site_id="670" xmltv_id="DISCOVERY HOME &amp; HEALTH HD">DISCOVERY HOME &amp; HEALTH HD</channel>
+    <channel update="i" site="claro.com.co" site_id="997" xmltv_id="EL GOURMET HD">EL GOURMET HD</channel>
+    <channel update="i" site="claro.com.co" site_id="979" xmltv_id="MUNDO FOX HD">MUNDO FOX HD</channel>
+    <channel update="i" site="claro.com.co" site_id="644" xmltv_id="BBC HD">BBC HD</channel>
+    <channel update="i" site="claro.com.co" site_id="902" xmltv_id="HOLA! TV HD">HOLA! TV HD</channel>
+    <channel update="i" site="claro.com.co" site_id="965" xmltv_id="MASCHIC HD">MASCHIC HD</channel>
+    <channel update="i" site="claro.com.co" site_id="1000" xmltv_id="AZ MUNDO HD">AZ MUNDO HD</channel>
+    <channel update="i" site="claro.com.co" site_id="954" xmltv_id="PASIONES HD">PASIONES HD</channel>
+    <channel update="i" site="claro.com.co" site_id="999" xmltv_id="CABLENOTICIAS HD">CABLENOTICIAS HD</channel>
+    <channel update="i" site="claro.com.co" site_id="603" xmltv_id="CLARO SPORTS COLOMBIA HD">CLARO SPORTS COLOMBIA HD</channel>
+    <channel update="i" site="claro.com.co" site_id="885" xmltv_id="CLARO SPORTS HD">CLARO SPORTS HD</channel>
+    <channel update="i" site="claro.com.co" site_id="941" xmltv_id="GOLF CHANNEL HD">GOLF CHANNEL HD</channel>
+    <channel update="i" site="claro.com.co" site_id="952" xmltv_id="UFC HD">UFC HD</channel>
+    <channel update="i" site="claro.com.co" site_id="998" xmltv_id="ESPN HD">ESPN HD</channel>
+    <channel update="i" site="claro.com.co" site_id="496" xmltv_id="ESPN+">ESPN+</channel>
+    <channel update="i" site="claro.com.co" site_id="648" xmltv_id="ESPN3 HD">ESPN3 HD</channel>
+    <channel update="i" site="claro.com.co" site_id="508" xmltv_id="FOX SPORTS HD">FOX SPORTS HD</channel>
+    <channel update="i" site="claro.com.co" site_id="888" xmltv_id="FOX SPORTS 2 HD">FOX SPORTS 2 HD</channel>
+    <channel update="i" site="claro.com.co" site_id="858" xmltv_id="FOX SPORTS 3 HD">FOX SPORTS 3 HD</channel>
+    <channel update="i" site="claro.com.co" site_id="956" xmltv_id="GOLTV HD">GOLTV HD</channel>
+    <channel update="i" site="claro.com.co" site_id="898" xmltv_id="TYC HD">TYC HD</channel>
+    <channel update="i" site="claro.com.co" site_id="953" xmltv_id="WIN SPORTS HD">WIN SPORTS HD</channel>
+    <channel update="i" site="claro.com.co" site_id="609" xmltv_id="WARNER CHANNEL HD">WARNER CHANNEL HD</channel>
+    <channel update="i" site="claro.com.co" site_id="385" xmltv_id="AXN HD">AXN HD</channel>
+    <channel update="i" site="claro.com.co" site_id="572" xmltv_id="SONY HD">SONY HD</channel>
+    <channel update="i" site="claro.com.co" site_id="672" xmltv_id="ID HD">ID HD</channel>
+    <channel update="i" site="claro.com.co" site_id="503" xmltv_id="FOX HD">FOX HD</channel>
+    <channel update="i" site="claro.com.co" site_id="599" xmltv_id="UNIVERSAL HD">UNIVERSAL HD</channel>
+    <channel update="i" site="claro.com.co" site_id="901" xmltv_id="SUNDANCE CHANNEL HD">SUNDANCE CHANNEL HD</channel>
+    <channel update="i" site="claro.com.co" site_id="856" xmltv_id="FX HD">FX HD</channel>
+    <channel update="i" site="claro.com.co" site_id="381" xmltv_id="A&amp;E MUNDO HD">A&amp;E MUNDO HD</channel>
+    <channel update="i" site="claro.com.co" site_id="994" xmltv_id="TNT SERIES HD">TNT SERIES HD</channel>
+    <channel update="i" site="claro.com.co" site_id="646" xmltv_id="COMEDY CENTRAL HD">COMEDY CENTRAL HD</channel>
+    <channel update="i" site="claro.com.co" site_id="590" xmltv_id="TNT HD">TNT HD</channel>
+    <channel update="i" site="claro.com.co" site_id="832" xmltv_id="THE FILM ZONE HD">THE FILM ZONE HD</channel>
+    <channel update="i" site="claro.com.co" site_id="575" xmltv_id="SPACE HD">SPACE HD</channel>
+    <channel update="i" site="claro.com.co" site_id="533" xmltv_id="AMC HD">AMC HD</channel>
+    <channel update="i" site="claro.com.co" site_id="821" xmltv_id="DHE HD">DHE HD</channel>
+    <channel update="i" site="claro.com.co" site_id="978" xmltv_id="GOLDEN PREMIER HD">GOLDEN PREMIER HD</channel>
+    <channel update="i" site="claro.com.co" site_id="512" xmltv_id="GOLDEN HD">GOLDEN HD</channel>
+    <channel update="i" site="claro.com.co" site_id="406" xmltv_id="CINE CANAL HD">CINE CANAL HD</channel>
+    <channel update="i" site="claro.com.co" site_id="955" xmltv_id="PARAMOUNT HD">PARAMOUNT HD</channel>
+    <channel update="i" site="claro.com.co" site_id="517" xmltv_id="HBO HD">HBO HD</channel>
+    <channel update="i" site="claro.com.co" site_id="529" xmltv_id="MAX UP HD">MAX UP HD</channel>
+    <channel update="i" site="claro.com.co" site_id="915" xmltv_id="HBO PLUS HD">HBO PLUS HD</channel>
+    <channel update="i" site="claro.com.co" site_id="961" xmltv_id="HBO 2 HD">HBO 2 HD</channel>
+    <channel update="i" site="claro.com.co" site_id="963" xmltv_id="HBO FAMILY HD">HBO FAMILY HD</channel>
+    <channel update="i" site="claro.com.co" site_id="964" xmltv_id="HBO SIGNATURE HD">HBO SIGNATURE HD</channel>
+    <channel update="i" site="claro.com.co" site_id="962" xmltv_id="MAX PRIME HD">MAX PRIME HD</channel>
+    <channel update="i" site="claro.com.co" site_id="541" xmltv_id="FOX HD">FOX HD</channel>
+    <channel update="i" site="claro.com.co" site_id="831" xmltv_id="FOX FAMILY HD">FOX FAMILY HD</channel>
+    <channel update="i" site="claro.com.co" site_id="860" xmltv_id="FOX MOVIES HD">FOX MOVIES HD</channel>
+    <channel update="i" site="claro.com.co" site_id="890" xmltv_id="FOX ACTION HD">FOX ACTION HD</channel>
+    <channel update="i" site="claro.com.co" site_id="936" xmltv_id="FOX COMEDY HD">FOX COMEDY HD</channel>
+  </channels>
+</site>

@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<site generator-info-name="WebGrab+Plus/w MDB &amp; REX Postprocess -- version 1.1.1/53.17 -- Jan van Straaten" site="teve.ba">
+  <channels>
+    <channel update="i" site="teve.ba" site_id="bht1.ba" xmltv_id="BHT1">BHT1</channel>
+    <channel update="i" site="teve.ba" site_id="al-jazeera-balkans.info" xmltv_id="AJ Balkans">AJ Balkans</channel>
+    <channel update="i" site="teve.ba" site_id="atv.ba" xmltv_id="ATV">ATV</channel>
+    <channel update="i" site="teve.ba" site_id="bel-kanal.ba" xmltv_id="BEL kanal">BEL kanal</channel>
+    <channel update="i" site="teve.ba" site_id="bn.ba" xmltv_id="BN">BN</channel>
+    <channel update="i" site="teve.ba" site_id="bn-sat.ba" xmltv_id="BN SAT">BN SAT</channel>
+    <channel update="i" site="teve.ba" site_id="behar-tv.ba" xmltv_id="Behar TV">Behar TV</channel>
+    <channel update="i" site="teve.ba" site_id="ftv.ba" xmltv_id="FTV">FTV</channel>
+    <channel update="i" site="teve.ba" site_id="hayat-plus.ba" xmltv_id="Hayat Plus">Hayat Plus</channel>
+    <channel update="i" site="teve.ba" site_id="hayat-tv.ba" xmltv_id="Hayat TV">Hayat TV</channel>
+    <channel update="i" site="teve.ba" site_id="ntv-ic.ba" xmltv_id="NTV IC">NTV IC</channel>
+    <channel update="i" site="teve.ba" site_id="obn.ba" xmltv_id="OBN">OBN</channel>
+    <channel update="i" site="teve.ba" site_id="pink-bih.ba" xmltv_id="PINK BH">PINK BH</channel>
+    <channel update="i" site="teve.ba" site_id="rtrs.ba" xmltv_id="RTRS">RTRS</channel>
+    <channel update="i" site="teve.ba" site_id="rtv-hit.ba" xmltv_id="RTV HIT">RTV HIT</channel>
+    <channel update="i" site="teve.ba" site_id="rtv-slon.ba" xmltv_id="RTV Slon">RTV Slon</channel>
+    <channel update="i" site="teve.ba" site_id="rtvtk.ba" xmltv_id="RTVTK">RTVTK</channel>
+    <channel update="i" site="teve.ba" site_id="tv-kiss.ba" xmltv_id="TV KISS">TV KISS</channel>
+    <channel update="i" site="teve.ba" site_id="tv1.ba" xmltv_id="TV1">TV1</channel>
+    <channel update="i" site="teve.ba" site_id="tv-istocno-sarajevo.ba" xmltv_id="TVIS">TVIS</channel>
+    <channel update="i" site="teve.ba" site_id="tv-sarajevo.ba" xmltv_id="TVSA">TVSA</channel>
+    <channel update="i" site="teve.ba" site_id="cmc.music" xmltv_id="CMC">CMC</channel>
+    <channel update="i" site="teve.ba" site_id="doma-tv.hr" xmltv_id="Doma TV">Doma TV</channel>
+    <channel update="i" site="teve.ba" site_id="hrt-plus.hr" xmltv_id="HRT PLUS">HRT PLUS</channel>
+    <channel update="i" site="teve.ba" site_id="htv1.hr" xmltv_id="HTV1">HTV1</channel>
+    <channel update="i" site="teve.ba" site_id="htv2.hr" xmltv_id="HTV2">HTV2</channel>
+    <channel update="i" site="teve.ba" site_id="otv.hr" xmltv_id="JabukaTV">JabukaTV</channel>
+    <channel update="i" site="teve.ba" site_id="kanal-ri.hr" xmltv_id="Kanal-Ri">Kanal-Ri</channel>
+    <channel update="i" site="teve.ba" site_id="kapital-network.hr" xmltv_id="KapitalNet">KapitalNet</channel>
+    <channel update="i" site="teve.ba" site_id="nova.hr" xmltv_id="NOVA TV">NOVA TV</channel>
+    <channel update="i" site="teve.ba" site_id="net.hr" xmltv_id="NeT">NeT</channel>
+    <channel update="i" site="teve.ba" site_id="ostv.hr" xmltv_id="OSTV">OSTV</channel>
+    <channel update="i" site="teve.ba" site_id="ritv.hr" xmltv_id="RITV">RITV</channel>
+    <channel update="i" site="teve.ba" site_id="rtl.hr" xmltv_id="RTL">RTL</channel>
+    <channel update="i" site="teve.ba" site_id="rtl-plus.hr" xmltv_id="RTL+">RTL+</channel>
+    <channel update="i" site="teve.ba" site_id="rtl2.hr" xmltv_id="RTL2">RTL2</channel>
+    <channel update="i" site="teve.ba" site_id="sbtv.hr" xmltv_id="SBTV">SBTV</channel>
+    <channel update="i" site="teve.ba" site_id="slavonska-tv.hr" xmltv_id="Slavonska TV">Slavonska TV</channel>
+    <channel update="i" site="teve.ba" site_id="splitska-tv.hr" xmltv_id="Splitska TV">Splitska TV</channel>
+    <channel update="i" site="teve.ba" site_id="sportklub-plus-hr.sport" xmltv_id="SportKlub+.hr">SportKlub+.hr</channel>
+    <channel update="i" site="teve.ba" site_id="sportklub-hr.sport" xmltv_id="SportKlub.hr">SportKlub.hr</channel>
+    <channel update="i" site="teve.ba" site_id="sportska-televizija.hr" xmltv_id="Sportska Televizija">Sportska Televizija</channel>
+    <channel update="i" site="teve.ba" site_id="tv-arena-sport-1-hr.sport" xmltv_id="TV Arena Sport 1.hr">TV Arena Sport 1.hr</channel>
+    <channel update="i" site="teve.ba" site_id="tv-arena-sport-2-hr.sport" xmltv_id="TV Arena Sport 2.hr">TV Arena Sport 2.hr</channel>
+    <channel update="i" site="teve.ba" site_id="nit.hr" xmltv_id="TV Istra">TV Istra</channel>
+    <channel update="i" site="teve.ba" site_id="tv-jadran.hr" xmltv_id="TV Jadran">TV Jadran</channel>
+    <channel update="i" site="teve.ba" site_id="tv-nova.hr" xmltv_id="TV NOVA">TV NOVA</channel>
+    <channel update="i" site="teve.ba" site_id="vox-tv.hr" xmltv_id="VOX TV">VOX TV</channel>
+    <channel update="i" site="teve.ba" site_id="varazdinska-tv.hr" xmltv_id="VaraÅ¾dinska TV">VaraÅ¾dinska TV</channel>
+    <channel update="i" site="teve.ba" site_id="vinkovacka-tv.hr" xmltv_id="VinkovaÄka TV">VinkovaÄka TV</channel>
+    <channel update="i" site="teve.ba" site_id="z1.hr" xmltv_id="Z1">Z1</channel>
+    <channel update="i" site="teve.ba" site_id="cakovec.hr" xmltv_id="ÄŒakovec">ÄŒakovec</channel>
+    <channel update="i" site="teve.ba" site_id="avala.sr" xmltv_id="Avala">Avala</channel>
+    <channel update="i" site="teve.ba" site_id="b92.sr" xmltv_id="B92">B92</channel>
+    <channel update="i" site="teve.ba" site_id="b92-info-kanal.sr" xmltv_id="B92 Info kanal">B92 Info kanal</channel>
+    <channel update="i" site="teve.ba" site_id="cinemania.sr" xmltv_id="Cinemania">Cinemania</channel>
+    <channel update="i" site="teve.ba" site_id="enter-tv.sr" xmltv_id="EnterTV">EnterTV</channel>
+    <channel update="i" site="teve.ba" site_id="eurosport-rs.sport" xmltv_id="Eurosport.rs">Eurosport.rs</channel>
+    <channel update="i" site="teve.ba" site_id="film-plus.sr" xmltv_id="Film+">Film+</channel>
+    <channel update="i" site="teve.ba" site_id="tvgalaksija32.sr" xmltv_id="Galaksija32">Galaksija32</channel>
+    <channel update="i" site="teve.ba" site_id="happytv.sr" xmltv_id="HappyTV">HappyTV</channel>
+    <channel update="i" site="teve.ba" site_id="kopernikus.sr" xmltv_id="Kopernikus">Kopernikus</channel>
+    <channel update="i" site="teve.ba" site_id="metropolis.sr" xmltv_id="Metropolis">Metropolis</channel>
+    <channel update="i" site="teve.ba" site_id="pink.sr" xmltv_id="PINK">PINK</channel>
+    <channel update="i" site="teve.ba" site_id="pink-m.cg" xmltv_id="PINK M">PINK M</channel>
+    <channel update="i" site="teve.ba" site_id="pink-plus.sr" xmltv_id="PINK PLUS">PINK PLUS</channel>
+    <channel update="i" site="teve.ba" site_id="palma-plus.sr" xmltv_id="Palma Plus">Palma Plus</channel>
+    <channel update="i" site="teve.ba" site_id="panonija.sr" xmltv_id="Panonija">Panonija</channel>
+    <channel update="i" site="teve.ba" site_id="pink-kids.toons" xmltv_id="Pink Kids">Pink Kids</channel>
+    <channel update="i" site="teve.ba" site_id="prva-srpska-tv.sr" xmltv_id="Prva">Prva</channel>
+    <channel update="i" site="teve.ba" site_id="vojvodina-1.sr" xmltv_id="RT Vojvodina 1">RT Vojvodina 1</channel>
+    <channel update="i" site="teve.ba" site_id="vojvodina-2.sr" xmltv_id="RT Vojvodina 2">RT Vojvodina 2</channel>
+    <channel update="i" site="teve.ba" site_id="rts-sat.sr" xmltv_id="RTS SAT">RTS SAT</channel>
+    <channel update="i" site="teve.ba" site_id="rts1.sr" xmltv_id="RTS1">RTS1</channel>
+    <channel update="i" site="teve.ba" site_id="rts2.sr" xmltv_id="RTS2">RTS2</channel>
+    <channel update="i" site="teve.ba" site_id="sos.sr" xmltv_id="SOS">SOS</channel>
+    <channel update="i" site="teve.ba" site_id="studio-b-yu.sr" xmltv_id="Studio B">Studio B</channel>
+    <channel update="i" site="teve.ba" site_id="svet-plus.sr" xmltv_id="Svet Plus">Svet Plus</channel>
+    <channel update="i" site="teve.ba" site_id="tv-arena-sport-1.sport" xmltv_id="TV Arena Sport 1">TV Arena Sport 1</channel>
+    <channel update="i" site="teve.ba" site_id="tv-arena-sport-2.sport" xmltv_id="TV Arena Sport 2">TV Arena Sport 2</channel>
+    <channel update="i" site="teve.ba" site_id="tv-arena-sport-3.sport" xmltv_id="TV Arena Sport 3">TV Arena Sport 3</channel>
+    <channel update="i" site="teve.ba" site_id="tv-arena-sport-4.sport" xmltv_id="TV Arena Sport 4">TV Arena Sport 4</channel>
+    <channel update="i" site="teve.ba" site_id="tv-duga-sat.sr" xmltv_id="TV Duga">TV Duga</channel>
+    <channel update="i" site="teve.ba" site_id="tv-pink-si.si" xmltv_id="TV Pink SI">TV Pink SI</channel>
+    <channel update="i" site="teve.ba" site_id="ultra-tv.sr" xmltv_id="TV Ultra">TV Ultra</channel>
+    <channel update="i" site="teve.ba" site_id="kanal-a.si" xmltv_id="KANAL A">KANAL A</channel>
+    <channel update="i" site="teve.ba" site_id="koper.si" xmltv_id="Koper">Koper</channel>
+    <channel update="i" site="teve.ba" site_id="maribor.si" xmltv_id="Maribor">Maribor</channel>
+    <channel update="i" site="teve.ba" site_id="pop-biro.si" xmltv_id="POP Biro">POP Biro</channel>
+    <channel update="i" site="teve.ba" site_id="pop-tv.si" xmltv_id="POP TV">POP TV</channel>
+    <channel update="i" site="teve.ba" site_id="rts-si.si" xmltv_id="RTS.si">RTS.si</channel>
+    <channel update="i" site="teve.ba" site_id="slo1.si" xmltv_id="SLO1">SLO1</channel>
+    <channel update="i" site="teve.ba" site_id="slo2.si" xmltv_id="SLO2">SLO2</channel>
+    <channel update="i" site="teve.ba" site_id="slo3.si" xmltv_id="SLO3">SLO3</channel>
+    <channel update="i" site="teve.ba" site_id="tv3.si" xmltv_id="TV3">TV3</channel>
+    <channel update="i" site="teve.ba" site_id="atlas.cg" xmltv_id="ATLAS">ATLAS</channel>
+    <channel update="i" site="teve.ba" site_id="rtvin.cg" xmltv_id="IN Televizija">IN Televizija</channel>
+    <channel update="i" site="teve.ba" site_id="tvcg-sat.cg" xmltv_id="TVCG SAT">TVCG SAT</channel>
+    <channel update="i" site="teve.ba" site_id="tvcg1.cg" xmltv_id="TVCG1">TVCG1</channel>
+    <channel update="i" site="teve.ba" site_id="tvcg2.cg" xmltv_id="TVCG2">TVCG2</channel>
+    <channel update="i" site="teve.ba" site_id="ard.de" xmltv_id="ARD">ARD</channel>
+    <channel update="i" site="teve.ba" site_id="arte.de" xmltv_id="ARTE">ARTE</channel>
+    <channel update="i" site="teve.ba" site_id="discovery-animal.doc" xmltv_id="Animal Planet">Animal Planet</channel>
+    <channel update="i" site="teve.ba" site_id="babytv.toons" xmltv_id="BabyTV">BabyTV</channel>
+    <channel update="i" site="teve.ba" site_id="balkanika.music" xmltv_id="Balkanika">Balkanika</channel>
+    <channel update="i" site="teve.ba" site_id="cnn.info" xmltv_id="CNN">CNN</channel>
+    <channel update="i" site="teve.ba" site_id="cartoon-network.toons" xmltv_id="Cartoon Network">Cartoon Network</channel>
+    <channel update="i" site="teve.ba" site_id="dmsat.music" xmltv_id="DMSAT">DMSAT</channel>
+    <channel update="i" site="teve.ba" site_id="discovery-europe.doc" xmltv_id="Discovery Channel">Discovery Channel</channel>
+    <channel update="i" site="teve.ba" site_id="discovery-science.doc" xmltv_id="Discovery Science">Discovery Science</channel>
+    <channel update="i" site="teve.ba" site_id="discovery-travel.doc" xmltv_id="Discovery Travel">Discovery Travel</channel>
+    <channel update="i" site="teve.ba" site_id="disney-channel.toons" xmltv_id="Disney">Disney</channel>
+    <channel update="i" site="teve.ba" site_id="entertainment.sat" xmltv_id="E!">E!</channel>
+    <channel update="i" site="teve.ba" site_id="espn-america.sport" xmltv_id="ESPN America">ESPN America</channel>
+    <channel update="i" site="teve.ba" site_id="eurosport-2-rs.sport" xmltv_id="Eurosport 2.rs">Eurosport 2.rs</channel>
+    <channel update="i" site="teve.ba" site_id="eurosport-hd.sport" xmltv_id="Eurosport HD">Eurosport HD</channel>
+    <channel update="i" site="teve.ba" site_id="extreme-sports.sport" xmltv_id="Extreme Sports">Extreme Sports</channel>
+    <channel update="i" site="teve.ba" site_id="fox-crime.movie" xmltv_id="FOX Crime">FOX Crime</channel>
+    <channel update="i" site="teve.ba" site_id="fox-life.movie" xmltv_id="FOX Life">FOX Life</channel>
+    <channel update="i" site="teve.ba" site_id="fashion-tv.sat" xmltv_id="Fashion">Fashion</channel>
+    <channel update="i" site="teve.ba" site_id="hbo.movie" xmltv_id="HBO">HBO</channel>
+    <channel update="i" site="teve.ba" site_id="hbo-comedy.movie" xmltv_id="HBO Comedy">HBO Comedy</channel>
+    <channel update="i" site="teve.ba" site_id="hustler-tv.porn" xmltv_id="HUSTLER TV">HUSTLER TV</channel>
+    <channel update="i" site="teve.ba" site_id="history-channel.doc" xmltv_id="History Channel">History Channel</channel>
+    <channel update="i" site="teve.ba" site_id="jimjam.toons" xmltv_id="JimJam">JimJam</channel>
+    <channel update="i" site="teve.ba" site_id="kika.toons" xmltv_id="KiKa">KiKa</channel>
+    <channel update="i" site="teve.ba" site_id="mtv-adria.music" xmltv_id="MTV Adria">MTV Adria</channel>
+    <channel update="i" site="teve.ba" site_id="mezzo.music" xmltv_id="Mezzo">Mezzo</channel>
+    <channel update="i" site="teve.ba" site_id="motors.sport" xmltv_id="Motors">Motors</channel>
+    <channel update="i" site="teve.ba" site_id="national-geographic-hd.doc" xmltv_id="NG HD">NG HD</channel>
+    <channel update="i" site="teve.ba" site_id="national-geographic-wild.doc" xmltv_id="NG Wild">NG Wild</channel>
+    <channel update="i" site="teve.ba" site_id="national-geographic.doc" xmltv_id="National Geo.">National Geo.</channel>
+    <channel update="i" site="teve.ba" site_id="pro-7.de" xmltv_id="PRO 7">PRO 7</channel>
+    <channel update="i" site="teve.ba" site_id="rai-1.it" xmltv_id="RAI 1">RAI 1</channel>
+    <channel update="i" site="teve.ba" site_id="rtl-2.de" xmltv_id="RTL.de 2">RTL.de 2</channel>
+    <channel update="i" site="teve.ba" site_id="sat-1.de" xmltv_id="SAT 1">SAT 1</channel>
+    <channel update="i" site="teve.ba" site_id="super-rtl.toons" xmltv_id="SUPER RTL">SUPER RTL</channel>
+    <channel update="i" site="teve.ba" site_id="scifi.movie" xmltv_id="SciFi">SciFi</channel>
+    <channel update="i" site="teve.ba" site_id="trt-turk.sat" xmltv_id="TRT Turk">TRT Turk</channel>
+    <channel update="i" site="teve.ba" site_id="tv1000-balkan.movie" xmltv_id="TV1000 Balkan">TV1000 Balkan</channel>
+    <channel update="i" site="teve.ba" site_id="tve.es" xmltv_id="TVE">TVE</channel>
+    <channel update="i" site="teve.ba" site_id="hallmark.movie" xmltv_id="Universal">Universal</channel>
+    <channel update="i" site="teve.ba" site_id="viva.music" xmltv_id="VIVA">VIVA</channel>
+    <channel update="i" site="teve.ba" site_id="vox.de" xmltv_id="VOX">VOX</channel>
+    <channel update="i" site="teve.ba" site_id="viasat-explorer.doc" xmltv_id="Viasat Explorer">Viasat Explorer</channel>
+    <channel update="i" site="teve.ba" site_id="viasat-history.doc" xmltv_id="Viasat History">Viasat History</channel>
+    <channel update="i" site="teve.ba" site_id="zdf.sat" xmltv_id="ZDF">ZDF</channel>
+    <channel update="i" site="teve.ba" site_id="zone-reality.doc" xmltv_id="Zone Reality">Zone Reality</channel>
+    <channel update="i" site="teve.ba" site_id="axn.movie" xmltv_id="AXN">AXN</channel>
+    <channel update="i" site="teve.ba" site_id="boomerang.toons" xmltv_id="Boomerang">Boomerang</channel>
+    <channel update="i" site="teve.ba" site_id="doq.doc" xmltv_id="DOQ">DOQ</channel>
+    <channel update="i" site="teve.ba" site_id="discovery-hd.doc" xmltv_id="Discovery HD">Discovery HD</channel>
+    <channel update="i" site="teve.ba" site_id="investigation-discovery.doc" xmltv_id="Discovery ID">Discovery ID</channel>
+    <channel update="i" site="teve.ba" site_id="free-x-tv.porn" xmltv_id="Free-X TV">Free-X TV</channel>
+    <channel update="i" site="teve.ba" site_id="golf-plus.sport" xmltv_id="Golf+">Golf+</channel>
+    <channel update="i" site="teve.ba" site_id="history-channel-hd.doc" xmltv_id="History Channel HD">History Channel HD</channel>
+    <channel update="i" site="teve.ba" site_id="kabel-1.de" xmltv_id="Kabel 1">Kabel 1</channel>
+    <channel update="i" site="teve.ba" site_id="mgm-channel.movie" xmltv_id="MGM Channel">MGM Channel</channel>
+    <channel update="i" site="teve.ba" site_id="mtv-dance.music" xmltv_id="MTV Dance">MTV Dance</channel>
+    <channel update="i" site="teve.ba" site_id="mtv-hits.music" xmltv_id="MTV Hits">MTV Hits</channel>
+    <channel update="i" site="teve.ba" site_id="pink-extra.sr" xmltv_id="PINK EXTRA">PINK EXTRA</channel>
+    <channel update="i" site="teve.ba" site_id="playboy-tv.porn" xmltv_id="PlayboyTV">PlayboyTV</channel>
+    <channel update="i" site="teve.ba" site_id="rtl.de.de" xmltv_id="RTL.de">RTL.de</channel>
+    <channel update="i" site="teve.ba" site_id="sportklub-plus-rs.sport" xmltv_id="Sport Klub+.rs">Sport Klub+.rs</channel>
+    <channel update="i" site="teve.ba" site_id="sport-klub.sport" xmltv_id="Sport Klub.rs">Sport Klub.rs</channel>
+    <channel update="i" site="teve.ba" site_id="tcm.movie" xmltv_id="TCM">TCM</channel>
+    <channel update="i" site="teve.ba" site_id="tv5-monde.sat" xmltv_id="TV5Monde">TV5Monde</channel>
+    <channel update="i" site="teve.ba" site_id="vh1-europe.music" xmltv_id="VH1 Europe">VH1 Europe</channel>
+    <channel update="i" site="teve.ba" site_id="vh1-classic-europe.music" xmltv_id="VH1 classic Europe">VH1 classic Europe</channel>
+    <channel update="i" site="teve.ba" site_id="viasat-nature.doc" xmltv_id="Viasat Nature">Viasat Nature</channel>
+    <channel update="i" site="teve.ba" site_id="zone-romantica.movie" xmltv_id="Zone Romantica">Zone Romantica</channel>
+    <channel update="i" site="teve.ba" site_id="bloomberg.info" xmltv_id="Bloomberg">Bloomberg</channel>
+    <channel update="i" site="teve.ba" site_id="cnbc.info" xmltv_id="CNBC">CNBC</channel>
+    <channel update="i" site="teve.ba" site_id="minimax.toons" xmltv_id="Minimax">Minimax</channel>
+    <channel update="i" site="teve.ba" site_id="tiji.toons" xmltv_id="Tiji">Tiji</channel>
+    <channel update="i" site="teve.ba" site_id="bbc-world.info" xmltv_id="BBC World">BBC World</channel>
+    <channel update="i" site="teve.ba" site_id="da-vinci-learning.doc" xmltv_id="Da Vinci Learning">Da Vinci Learning</channel>
+    <channel update="i" site="teve.ba" site_id="dorcel.porn" xmltv_id="Dorcel">Dorcel</channel>
+    <channel update="i" site="teve.ba" site_id="espn-classic.sport" xmltv_id="ESPN Classic">ESPN Classic</channel>
+    <channel update="i" site="teve.ba" site_id="mtv-two.music" xmltv_id="MTV Rocks">MTV Rocks</channel>
+    <channel update="i" site="teve.ba" site_id="private-spice.porn" xmltv_id="Private Spice">Private Spice</channel>
+    <channel update="i" site="teve.ba" site_id="russia-today.info" xmltv_id="Russia Today">Russia Today</channel>
+    <channel update="i" site="teve.ba" site_id="travel-channel.doc" xmltv_id="Travel">Travel</channel>
+    <channel update="i" site="teve.ba" site_id="3sat.de" xmltv_id="3SAT">3SAT</channel>
+    <channel update="i" site="teve.ba" site_id="bbc-prime.sat" xmltv_id="BBC Entertainment">BBC Entertainment</channel>
+    <channel update="i" site="teve.ba" site_id="natgeo-music.music" xmltv_id="NatGeo Music">NatGeo Music</channel>
+    <channel update="i" site="teve.ba" site_id="rai-2.it" xmltv_id="RAI 2">RAI 2</channel>
+    <channel update="i" site="teve.ba" site_id="rai-3.it" xmltv_id="RAI 3">RAI 3</channel>
+    <channel update="i" site="teve.ba" site_id="kanal-d.toons" xmltv_id="Kanal D">Kanal D</channel>
+    <channel update="i" site="teve.ba" site_id="rai-sport.sport" xmltv_id="RAI Sport">RAI Sport</channel>
+    <channel update="i" site="teve.ba" site_id="dsf.sport" xmltv_id="Sport 1.de">Sport 1.de</channel>
+    <channel update="i" site="teve.ba" site_id="free-x-tv2.porn" xmltv_id="XTSY">XTSY</channel>
+    <channel update="i" site="teve.ba" site_id="adult-channel.porn" xmltv_id="Adult Channel">Adult Channel</channel>
+    <channel update="i" site="teve.ba" site_id="cinestar-tv.movie" xmltv_id="CineStar TV">CineStar TV</channel>
+    <channel update="i" site="teve.ba" site_id="cinemax.movie" xmltv_id="Cinemax">Cinemax</channel>
+    <channel update="i" site="teve.ba" site_id="cinemax-2.movie" xmltv_id="Cinemax 2">Cinemax 2</channel>
+    <channel update="i" site="teve.ba" site_id="cinestar-action-thriller.movie" xmltv_id="Cinestar Action &amp;Thriller">Cinestar Action &amp;Thriller</channel>
+    <channel update="i" site="teve.ba" site_id="eurosport2-uk.sport" xmltv_id="Eurosport 2.uk">Eurosport 2.uk</channel>
+    <channel update="i" site="teve.ba" site_id="eurosport-uk.sport" xmltv_id="Eurosport.uk">Eurosport.uk</channel>
+    <channel update="i" site="teve.ba" site_id="klasiktv.movie" xmltv_id="KlasikTV">KlasikTV</channel>
+    <channel update="i" site="teve.ba" site_id="mtv.de.music" xmltv_id="MTV.de">MTV.de</channel>
+    <channel update="i" site="teve.ba" site_id="nickelodeon.toons" xmltv_id="Nickelodeon">Nickelodeon</channel>
+    <channel update="i" site="teve.ba" site_id="orf1.sat" xmltv_id="ORF1">ORF1</channel>
+    <channel update="i" site="teve.ba" site_id="canal-plus-action.movie" xmltv_id="Canal+ Action">Canal+ Action</channel>
+    <channel update="i" site="teve.ba" site_id="canal-plus-comedy.movie" xmltv_id="Canal+ Comedy">Canal+ Comedy</channel>
+    <channel update="i" site="teve.ba" site_id="canal-plus-drama.movie" xmltv_id="Canal+ Drama">Canal+ Drama</channel>
+    <channel update="i" site="teve.ba" site_id="canal-plus-first.movie" xmltv_id="Canal+ First">Canal+ First</channel>
+    <channel update="i" site="teve.ba" site_id="canal-plus-hits.movie" xmltv_id="Canal+ Hits">Canal+ Hits</channel>
+    <channel update="i" site="teve.ba" site_id="viasat-tv1000.se.movie" xmltv_id="Viasat TV1000.se">Viasat TV1000.se</channel>
+    <channel update="i" site="teve.ba" site_id="mtv-base.music" xmltv_id="MTV Base">MTV Base</channel>
+    <channel update="i" site="teve.ba" site_id="mtv.music" xmltv_id="MTV Europe">MTV Europe</channel>
+    <channel update="i" site="teve.ba" site_id="mtv-uk.music" xmltv_id="MTV uk">MTV uk</channel>
+    <channel update="i" site="teve.ba" site_id="vh1-classic-uk.music" xmltv_id="VH1 classic uk">VH1 classic uk</channel>
+    <channel update="i" site="teve.ba" site_id="vh1-uk.music" xmltv_id="VH1 uk">VH1 uk</channel>
+    <channel update="i" site="teve.ba" site_id="aljazeera-sport-3.sport" xmltv_id="Aljazeera Sport 3">Aljazeera Sport 3</channel>
+    <channel update="i" site="teve.ba" site_id="canal-plus-barca.sport" xmltv_id="Canal+ Barca">Canal+ Barca</channel>
+    <channel update="i" site="teve.ba" site_id="canal-plus-deporte.es.sport" xmltv_id="Canal+ Deporte.es">Canal+ Deporte.es</channel>
+    <channel update="i" site="teve.ba" site_id="canal-plus-futbol.sport" xmltv_id="Canal+ Futbol.es">Canal+ Futbol.es</channel>
+    <channel update="i" site="teve.ba" site_id="canal-plus-sport.sport" xmltv_id="Canal+ Sport 1">Canal+ Sport 1</channel>
+    <channel update="i" site="teve.ba" site_id="canal-plus-sport2.sport" xmltv_id="Canal+ Sport 2.se">Canal+ Sport 2.se</channel>
+    <channel update="i" site="teve.ba" site_id="eurosport.sport" xmltv_id="Eurosport">Eurosport</channel>
+    <channel update="i" site="teve.ba" site_id="eurosport2.sport" xmltv_id="Eurosport 2">Eurosport 2</channel>
+    <channel update="i" site="teve.ba" site_id="eurosport2.de.sport" xmltv_id="Eurosport 2.de">Eurosport 2.de</channel>
+    <channel update="i" site="teve.ba" site_id="eurosport2.fr.sport" xmltv_id="Eurosport 2.fr">Eurosport 2.fr</channel>
+    <channel update="i" site="teve.ba" site_id="eurosport.de.sport" xmltv_id="Eurosport.de">Eurosport.de</channel>
+    <channel update="i" site="teve.ba" site_id="eurosport.fr.sport" xmltv_id="Eurosport.fr">Eurosport.fr</channel>
+    <channel update="i" site="teve.ba" site_id="megasport.sport" xmltv_id="Megasport">Megasport</channel>
+    <channel update="i" site="teve.ba" site_id="orf-sportplus.sport" xmltv_id="ORF Sport Plus">ORF Sport Plus</channel>
+    <channel update="i" site="teve.ba" site_id="playtv-italia.sport" xmltv_id="PlayTV Italia">PlayTV Italia</channel>
+    <channel update="i" site="teve.ba" site_id="real-madrid-tv.es.sport" xmltv_id="Real Madrid TV.es">Real Madrid TV.es</channel>
+    <channel update="i" site="teve.ba" site_id="sportmania.es.sport" xmltv_id="Sportmania.es">Sportmania.es</channel>
+    <channel update="i" site="teve.ba" site_id="tw1.sport" xmltv_id="TW1">TW1</channel>
+    <channel update="i" site="teve.ba" site_id="discovery-civilization.doc" xmltv_id="Discovery World">Discovery World</channel>
+    <channel update="i" site="teve.ba" site_id="viasat-explorer.se.doc" xmltv_id="Viasat explorer.se">Viasat explorer.se</channel>
+    <channel update="i" site="teve.ba" site_id="viasat-history.se.doc" xmltv_id="Viasat history.se">Viasat history.se</channel>
+    <channel update="i" site="teve.ba" site_id="reality-tv-uk.doc" xmltv_id="Zone Reality uk">Zone Reality uk</channel>
+    <channel update="i" site="teve.ba" site_id="cartoon-network-pl.toons" xmltv_id="Cartoon Network.pl">Cartoon Network.pl</channel>
+    <channel update="i" site="teve.ba" site_id="jetix.toons" xmltv_id="Disney XD">Disney XD</channel>
+    <channel update="i" site="teve.ba" site_id="orlando-kids.toons" xmltv_id="Orlando Kids">Orlando Kids</channel>
+    <channel update="i" site="teve.ba" site_id="spice.porn" xmltv_id="Spice">Spice</channel>
+  </channels>
+</site>

@@ -1,0 +1,62 @@
+How to change the region setting for hagah.com.br.ini
+1. The 'standard' region abreviation in Brasil used in hagah.com.br are:
+
+Acre - ac
+Alagoas - al
+Amapá - ap
+Amazonas - am
+Bahia - ba
+Ceará - ce
+Goiás - go
+Espírito Santo - es
+Maranhão - ma
+Mato Grosso - mt
+Mato Grosso do Sul - ms
+Minas Gerais - mg
+Pará - pa
+Paraíba - pb
+Paraná - pr
+Pernambuco - pe
+Piauí - pi
+Rio de Janeiro - rj
+Rio Grande do Norte - rn
+Rio Grande do Sul - rs
+Rondônia - ro
+Roraima - rr
+São Paulo - sp
+Santa Catarina - sc
+Sergipe - se
+Tocantins - to
+Federal District, Distrito Federal - df
+
+2. hagah.com.br.ini and haga.com.br.channels.xml as downloaded from the webgrabplus website is configured for Rio de Janeiro - rj
+
+3. To change the region , change the value rj in uf=rj in 
+url_index{url()|http://www.|hagah.com.br/tv/|subpage|?uf=rj&limit=0}
+a few lines below **      #####  CHANNEL FILE CREATION
+into the region abreviation for your region as given above
+
+4. remove the first * from all the lines below 
+**      #####  CHANNEL FILE CREATION
+Save 
+
+5. add one channel to your webgrab++.config.xml e.g.
+<channel update="i" site="hagah.com.br" site_id="axn" xmltv_id="AXN">AXN</channel>
+
+6. Change the timezone setting in hagah.com.br.ini if necessary . 
+(in the line that starts with site
+The available timezones for Brazil are
+timezone=Brazil/DeNoronha   UTC-02:00
+timezone=Brazil/East   UTC-03:00
+timezone=Brazil/West   UTC-04:00
+timezone=Brazil/Acre   UTC-05:00
+
+7. This will create a hagah.com.br.channels.xml file containing all locally available channels for your region.
+
+8. Revert step 4 !!
+
+9. Select any channels from this file and copy to webgrab++.config.xml
+
+Done  
+
+enjoy   Jan

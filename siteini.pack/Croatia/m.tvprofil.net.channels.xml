@@ -1,0 +1,497 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<site generator-info-name="WebGrab+Plus/w MDB &amp; REX Postprocess -- version 1.1.1/55.27 -- Jan van Straaten" site="m.tvprofil.net">
+  <channels>
+    <channel update="i" site="m.tvprofil.net" site_id="htv1" xmltv_id="HTV1">HTV1</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="htv2" xmltv_id="HTV2">HTV2</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="rtl" xmltv_id="RTL">RTL</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="nova" xmltv_id="NOVA TV">NOVA TV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="htv3" xmltv_id="HTV3">HTV3</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="htv4" xmltv_id="HTV4">HTV4</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="rtl2" xmltv_id="RTL2">RTL2</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="doma-tv" xmltv_id="Doma TV">Doma TV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="sportska-televizija" xmltv_id="SPTV">SPTV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="rtl-kockica" xmltv_id="RTL Kockica">RTL Kockica</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="rtl-crime" xmltv_id="RTL Crime">RTL Crime</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="rtl-living" xmltv_id="RTL Living">RTL Living</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="rtl-passion" xmltv_id="RTL Passion">RTL Passion</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="fulltv" xmltv_id="FullTV">FullTV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="jabukatv" xmltv_id="JabukaTV">JabukaTV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="kanal-ri" xmltv_id="Kanal-Ri">Kanal-Ri</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="net" xmltv_id="MrežaZG">MrežaZG</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="tv-dalmacija" xmltv_id="MrezaST">MrezaST</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="ostv" xmltv_id="Osječka TV">Osječka TV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="ritv" xmltv_id="RITV">RITV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="sbtv" xmltv_id="SBTV">SBTV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="slavonska-tv" xmltv_id="Slavonska TV">Slavonska TV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="cakovec" xmltv_id="SrceTV">SrceTV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="tv-istra" xmltv_id="TV Istra">TV Istra</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="tv-jadran" xmltv_id="TV Jadran">TV Jadran</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="tv-nova" xmltv_id="TV NOVA">TV NOVA</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="tv-sibenik" xmltv_id="TV Šibenik">TV Šibenik</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="varazdinska-tv" xmltv_id="Varaždinska TV">Varaždinska TV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="vinkovacka-tv" xmltv_id="Vinkovačka TV">Vinkovačka TV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="vox-tv" xmltv_id="VOX TV">VOX TV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="z1" xmltv_id="Z1">Z1</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="tv4r" xmltv_id="TV4R">TV4R</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="kanal5-tv" xmltv_id="Kanal5 TV">Kanal5 TV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="zdrava-televizija" xmltv_id="Zdrava televizija">Zdrava televizija</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="dubrovacka-tv" xmltv_id="DUTV">DUTV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="poljoprivredna-tv" xmltv_id="Poljoprivredna TV">Poljoprivredna TV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="slo1" xmltv_id="SLO1">SLO1</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="slo2" xmltv_id="SLO2">SLO2</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="slo3" xmltv_id="SLO3">SLO3</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="kanal-a" xmltv_id="KANAL A">KANAL A</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pop-tv" xmltv_id="POP TV">POP TV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pop-kino" xmltv_id="KINO">KINO</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pop-brio" xmltv_id="BRIO">BRIO</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pop-oto" xmltv_id="OTO">OTO</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="tv3-medias" xmltv_id="TV3 Medias">TV3 Medias</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="koper" xmltv_id="Koper">Koper</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="maribor" xmltv_id="Maribor">Maribor</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="rts-si" xmltv_id="RTS.si">RTS.si</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="vas-kanal" xmltv_id="Vaš kanal">Vaš kanal</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="tv-arena" xmltv_id="TV Arena">TV Arena</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="tv-idea" xmltv_id="TV Idea">TV Idea</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="planettv" xmltv_id="PlanetTV">PlanetTV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="vtv-studio" xmltv_id="VTV">VTV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="tv-veseljak" xmltv_id="TV Veseljak">TV Veseljak</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="net-tv" xmltv_id="Net TV">Net TV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="tv-celje" xmltv_id="TV Celje">TV Celje</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="televizija-as" xmltv_id="TV AS">TV AS</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="bk-tv" xmltv_id="BK TV">BK TV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="gea-tv" xmltv_id="GEA TV">GEA TV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="euroturist-tv" xmltv_id="Euroturist TV">Euroturist TV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="gold-tv" xmltv_id="Gold TV">Gold TV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="entertainment" xmltv_id="E">E</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="fine-living" xmltv_id="FLN">FLN</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="fashion-tv" xmltv_id="Fashion">Fashion</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="24kitchen" xmltv_id="24Kitchen">24Kitchen</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="rtr-planeta" xmltv_id="RTR Planeta">RTR Planeta</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="ginx" xmltv_id="Ginx">Ginx</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="comedy-central-extra" xmltv_id="Comedy C. Extra">Comedy C. Extra</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="comedy-central-us" xmltv_id="Comedy Central">Comedy Central</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="tv5monde-asia" xmltv_id="TV5Monde Asia">TV5Monde Asia</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="ftv" xmltv_id="FTV">FTV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pink-bih" xmltv_id="PINK BH">PINK BH</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="obn" xmltv_id="OBN">OBN</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="bht1" xmltv_id="BHT1">BHT1</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="bn" xmltv_id="BN">BN</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="bn-sat" xmltv_id="BN SAT">BN SAT</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="hayat-tv" xmltv_id="Hayat TV">Hayat TV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="hayat-plus" xmltv_id="Hayat Plus">Hayat Plus</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="rtrs" xmltv_id="RTRS">RTRS</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="rtrs-plus" xmltv_id="RTRS PLUS">RTRS PLUS</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="atv" xmltv_id="ATV">ATV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="bel-kanal" xmltv_id="BEL kanal">BEL kanal</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="behar-tv" xmltv_id="Behar TV">Behar TV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="hema-tv" xmltv_id="HEMA TV">HEMA TV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="in-televizija" xmltv_id="IN Televizija">IN Televizija</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="tv1" xmltv_id="TV1">TV1</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="tv1-mreza" xmltv_id="TV1 Mreža">TV1 Mreža</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="ntv-ic" xmltv_id="NTV IC">NTV IC</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="ntv-jasmin" xmltv_id="NTV Jasmin">NTV Jasmin</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="rtv-hit" xmltv_id="RTV HIT">RTV HIT</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="rtv-slon" xmltv_id="RTV Slon">RTV Slon</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="rtvtk" xmltv_id="RTVTK">RTVTK</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="rtv-usk" xmltv_id="RTV USK">RTV USK</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="rtv-ze" xmltv_id="RTV ZE">RTV ZE</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="rtv-vogosca" xmltv_id="RTV Vogošća">RTV Vogošća</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="tv-kiss" xmltv_id="TV Kiss">TV Kiss</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="tv-istocno-sarajevo" xmltv_id="TVIS">TVIS</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="tv-sarajevo" xmltv_id="TVSA">TVSA</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="kanal-3-prnjavor" xmltv_id="K3">K3</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="vikom" xmltv_id="Vikom">Vikom</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="face-tv" xmltv_id="FACE TV">FACE TV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="elta-tv" xmltv_id="Elta 1 HD">Elta 1 HD</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="elta-2" xmltv_id="Elta 2">Elta 2</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="mtv-igman" xmltv_id="MTV Igman">MTV Igman</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="bdc-tv" xmltv_id="BDC TV">BDC TV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="otv-valentino" xmltv_id="OTV Valentino">OTV Valentino</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="televizija-alfa" xmltv_id="TV Alfa">TV Alfa</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="rtv-bostel" xmltv_id="RTV Bostel">RTV Bostel</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="slobomir" xmltv_id="Slobomir">Slobomir</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="htv-oscar-c" xmltv_id="HTV Oscar C">HTV Oscar C</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="osm-tv" xmltv_id="OSM TV">OSM TV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="tv-visoko" xmltv_id="TV Visoko">TV Visoko</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="tv-arena-bijeljina" xmltv_id="TV Arena Bijeljina">TV Arena Bijeljina</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="kanal-6" xmltv_id="Kanal 6">Kanal 6</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="program-plus" xmltv_id="Program plus">Program plus</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="a1-hd" xmltv_id="A1 HD">A1 HD</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="ntv-101" xmltv_id="NTV 101">NTV 101</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="herceg-tv" xmltv_id="Herceg TV">Herceg TV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="city-tv" xmltv_id="City TV">City TV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="mtv-adria" xmltv_id="MTV Adria">MTV Adria</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="cmc" xmltv_id="CMC">CMC</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="jugoton-tv" xmltv_id="Jugoton TV">Jugoton TV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="hayat-music" xmltv_id="Hayat Music">Hayat Music</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="hayat-folk" xmltv_id="Hayat Folk">Hayat Folk</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="mtv.de" xmltv_id="MTV.de">MTV.de</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="vh1-uk" xmltv_id="VH1 uk">VH1 uk</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="vh1-classic-uk" xmltv_id="VH1 classic uk">VH1 classic uk</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="vh1-europe" xmltv_id="VH1 Europe">VH1 Europe</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="vh1-classic-europe" xmltv_id="VH1 classic Europe">VH1 classic Europe</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="viva" xmltv_id="VIVA">VIVA</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="mtv-uk" xmltv_id="MTV uk">MTV uk</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="mtv-hits" xmltv_id="MTV Hits">MTV Hits</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="mtv-two" xmltv_id="MTV Rocks">MTV Rocks</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="mtv-base" xmltv_id="MTV Base">MTV Base</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="mtv-dance" xmltv_id="MTV Dance">MTV Dance</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="mezzo" xmltv_id="Mezzo">Mezzo</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="dmsat" xmltv_id="DMSAT">DMSAT</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="balkanika" xmltv_id="Balkanika">Balkanika</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="kanal1" xmltv_id="Kanal1">Kanal1</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="k-cn-music" xmltv_id="K::CN 2 Music">K::CN 2 Music</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="trace-urban" xmltv_id="Trace Urban">Trace Urban</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="bn-music" xmltv_id="BN music">BN music</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="deluxe-music" xmltv_id="Deluxe Music">Deluxe Music</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pink-koncert" xmltv_id="Pink Koncert">Pink Koncert</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="grand-narodna-tv" xmltv_id="Grand Narodna TV">Grand Narodna TV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="mezzo-live-hd" xmltv_id="Mezzo Live HD">Mezzo Live HD</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="iconcerts-hd" xmltv_id="iConcerts HD">iConcerts HD</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="izvorna-tv" xmltv_id="Izvorna TV">Izvorna TV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="dmc" xmltv_id="DMC">DMC</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="brava" xmltv_id="Brava">Brava</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="rts1" xmltv_id="RTS1">RTS1</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="rts2" xmltv_id="RTS2">RTS2</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="b92" xmltv_id="B92">B92</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="prva-srpska-tv" xmltv_id="Prva">Prva</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="prva-plus" xmltv_id="Prva Plus">Prva Plus</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pink" xmltv_id="PINK">PINK</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pink-2" xmltv_id="PINK 2">PINK 2</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pink-3" xmltv_id="PINK 3 Info">PINK 3 Info</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="nova-televizija" xmltv_id="Nova">Nova</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="rts-sat" xmltv_id="RTS SAT">RTS SAT</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="rts-digital" xmltv_id="RTS 3">RTS 3</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="b92-info-kanal" xmltv_id="B92 Info kanal">B92 Info kanal</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="happytv" xmltv_id="HappyTV">HappyTV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="kopernikus" xmltv_id="Kopernikus">Kopernikus</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="panonija" xmltv_id="Panonija">Panonija</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pink-extra" xmltv_id="PINK EXTRA">PINK EXTRA</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pink-plus" xmltv_id="PINK PLUS">PINK PLUS</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pink-family" xmltv_id="PINK Family">PINK Family</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pink-world" xmltv_id="PINK World">PINK World</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pink-zabava" xmltv_id="PINK Zabava">PINK Zabava</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pink-soap" xmltv_id="Pink Soap">Pink Soap</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pink-reality" xmltv_id="Pink Reality">Pink Reality</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pink-fashion" xmltv_id="Pink Fashion">Pink Fashion</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="vojvodina-1" xmltv_id="RT Vojvodina 1">RT Vojvodina 1</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="vojvodina-2" xmltv_id="RT Vojvodina 2">RT Vojvodina 2</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="sos" xmltv_id="SOS">SOS</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="studio-b-yu" xmltv_id="Studio B">Studio B</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="svet-plus" xmltv_id="Svet Plus">Svet Plus</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="tv-duga-sat" xmltv_id="TV Duga">TV Duga</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="ultra-tv" xmltv_id="TV Ultra">TV Ultra</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="kanal-9" xmltv_id="Kanal 9">Kanal 9</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="novi-pazar" xmltv_id="Novi Pazar">Novi Pazar</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="ktv-zrenjanin" xmltv_id="KTV Zrenjanin">KTV Zrenjanin</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="niska-televizija" xmltv_id="NTV">NTV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="televizija-best" xmltv_id="Televizija BEST">Televizija BEST</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pink-comedy" xmltv_id="Pink Comedy">Pink Comedy</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="tv-artvizija" xmltv_id="TV ARTvizija">TV ARTvizija</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pink-kuvar" xmltv_id="Pink Kuvar">Pink Kuvar</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pink-parada" xmltv_id="Pink Parada">Pink Parada</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pink-serije" xmltv_id="Pink Serije">Pink Serije</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pink-show" xmltv_id="Pink Show">Pink Show</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pink-style" xmltv_id="Pink Style">Pink Style</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="belle-amie" xmltv_id="Belle Amie">Belle Amie</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pink-world-cinema" xmltv_id="Pink World Cinema">Pink World Cinema</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="yu-eco" xmltv_id="YU eco">YU eco</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="vtv-valjevo" xmltv_id="VTV Valjevo">VTV Valjevo</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="tv-most" xmltv_id="TV Most">TV Most</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="moja-tv" xmltv_id="Moja TV">Moja TV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="tms" xmltv_id="TMS">TMS</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="tv-arena-sport-1-hr" xmltv_id="Arena Sport 1.hr">Arena Sport 1.hr</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="tv-arena-sport-2-hr" xmltv_id="Arena Sport 2.hr">Arena Sport 2.hr</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="tv-arena-sport-3-hr" xmltv_id="Arena Sport 3.hr">Arena Sport 3.hr</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="arena-sport-4-hr" xmltv_id="Arena Sport 4.hr">Arena Sport 4.hr</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="arena-sport-5-hr" xmltv_id="Arena Sport 5.hr">Arena Sport 5.hr</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="eurosport" xmltv_id="Eurosport">Eurosport</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="eurosport2" xmltv_id="Eurosport 2">Eurosport 2</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="eurosport-hd" xmltv_id="Eurosport HD">Eurosport HD</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="tv-arena-sport-1" xmltv_id="Arena Sport 1">Arena Sport 1</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="tv-arena-sport-2" xmltv_id="Arena Sport 2">Arena Sport 2</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="tv-arena-sport-3" xmltv_id="Arena Sport 3">Arena Sport 3</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="tv-arena-sport-4" xmltv_id="Arena Sport 4">Arena Sport 4</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="arena-sport-5" xmltv_id="Arena Sport 5">Arena Sport 5</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="arena-sport-1-ba" xmltv_id="Arena Sport 1 BiH">Arena Sport 1 BiH</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="sportklub-hr" xmltv_id="SK1.hr">SK1.hr</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="sportklub-plus-hr" xmltv_id="SK2.hr">SK2.hr</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="sport-klub" xmltv_id="SK1.rs">SK1.rs</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="sportklub-plus-rs" xmltv_id="SK2.rs">SK2.rs</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="sportklub-plus-prime-srbija" xmltv_id="SK3">SK3</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="sport-klub-4" xmltv_id="SK4">SK4</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="sport-klub-5" xmltv_id="SK5">SK5</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="sport-klub-6" xmltv_id="SK6">SK6</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="golf-klub" xmltv_id="SK Golf">SK Golf</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="sport-klub-hd" xmltv_id="SK HD">SK HD</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="espn" xmltv_id="ESPN">ESPN</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="espn2" xmltv_id="ESPN2">ESPN2</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="espn-uk" xmltv_id="ESPN UK">ESPN UK</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="eurosport-uk" xmltv_id="Eurosport.uk">Eurosport.uk</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="eurosport2-uk" xmltv_id="Eurosport 2.uk">Eurosport 2.uk</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="eurosport2.de" xmltv_id="Eurosport 2.de">Eurosport 2.de</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="eurosport.fr" xmltv_id="Eurosport.fr">Eurosport.fr</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="eurosport2.fr" xmltv_id="Eurosport 2.fr">Eurosport 2.fr</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="rai-sport" xmltv_id="RAI Sport 1">RAI Sport 1</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="rai-sport-2" xmltv_id="RAI Sport 2">RAI Sport 2</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="extreme-sports" xmltv_id="Extreme Sports">Extreme Sports</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="orf-sportplus" xmltv_id="ORF Sport Plus">ORF Sport Plus</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="dsf" xmltv_id="Sport 1.de">Sport 1.de</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="motors" xmltv_id="Motors">Motors</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="fightchannel" xmltv_id="Fight Channel">Fight Channel</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="sport-tv-1" xmltv_id="ŠTV1">ŠTV1</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="sport-tv-2" xmltv_id="ŠTV2">ŠTV2</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="stv3" xmltv_id="ŠTV3">ŠTV3</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="sport-klub-si" xmltv_id="SK1.si">SK1.si</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="sport-klub-plus-si" xmltv_id="SK2.si">SK2.si</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="sk1-me" xmltv_id="SK1.me">SK1.me</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="fishing-hunting" xmltv_id="Fishing&amp;Hunting">Fishing&amp;Hunting</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="kreator-tv" xmltv_id="KreatorTV">KreatorTV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="sport-1-hu" xmltv_id="Sport 1.hu">Sport 1.hu</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="bein-sport-1" xmltv_id="beIN Sport 1">beIN Sport 1</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="bein-sport-2" xmltv_id="beIN n Sport 2">beIN n Sport 2</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="bein-sport-3" xmltv_id="beIN Sport 3">beIN Sport 3</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="fight-sports" xmltv_id="Fight Sports">Fight Sports</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="sky-sports-1" xmltv_id="Sky Sports 1">Sky Sports 1</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="sky-sports-2" xmltv_id="Sky Sports 2">Sky Sports 2</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="sky-sports-3" xmltv_id="Sky Sports 3">Sky Sports 3</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="sky-sports-4" xmltv_id="Sky Sports 4">Sky Sports 4</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="sky-sports-5" xmltv_id="Sky Sports 5">Sky Sports 5</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="sky-sports-f1" xmltv_id="Sky Sports F1">Sky Sports F1</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="chasse-peche" xmltv_id="Chasse &amp; Pêche">Chasse &amp; Pêche</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="tvcg1" xmltv_id="TVCG1">TVCG1</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="tvcg2" xmltv_id="TVCG2">TVCG2</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="prva-tv-cg" xmltv_id="Prva TV CG">Prva TV CG</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="tvcg-sat" xmltv_id="TVCG SAT">TVCG SAT</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="atlas" xmltv_id="ATLAS">ATLAS</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pink-m" xmltv_id="PINK M">PINK M</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="montena" xmltv_id="Montena">Montena</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="rtv-budva" xmltv_id="RTV Budva">RTV Budva</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="ard" xmltv_id="DasErste">DasErste</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="rtl.de" xmltv_id="RTL.de">RTL.de</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="zdf" xmltv_id="ZDF">ZDF</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pro-7" xmltv_id="PRO 7">PRO 7</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="sat-1" xmltv_id="Sat.1">Sat.1</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="rtl-2" xmltv_id="RTL II">RTL II</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="kabel-1" xmltv_id="Kabel 1">Kabel 1</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="vox" xmltv_id="VOX">VOX</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="arte-de" xmltv_id="ARTE.de">ARTE.de</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="3sat" xmltv_id="3SAT">3SAT</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="wdr" xmltv_id="WDR">WDR</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="bayern3" xmltv_id="Bayerischen Fern">Bayerischen Fern</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="ndr" xmltv_id="NDR">NDR</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="hr3" xmltv_id="HR Fernsehen">HR Fernsehen</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="swr" xmltv_id="SWR">SWR</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="mdr" xmltv_id="MDR">MDR</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="sr" xmltv_id="SR">SR</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="radiobremen" xmltv_id="RadioBremen">RadioBremen</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="n-tv" xmltv_id="N-TV">N-TV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="phoenix" xmltv_id="Phoenix">Phoenix</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="zdfinfo" xmltv_id="ZDFinfo">ZDFinfo</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="anixe-hd" xmltv_id="Anixe HD">Anixe HD</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="comedy-central-de" xmltv_id="Comedy Central.de">Comedy Central.de</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="rt-nitro" xmltv_id="RTL Nitro">RTL Nitro</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="zdfneo" xmltv_id="ZDFneo">ZDFneo</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="sixx" xmltv_id="Sixx">Sixx</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="sat-1-gold" xmltv_id="SAT 1 Gold">SAT 1 Gold</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="prosieben-maxx" xmltv_id="Pro7 MAXX">Pro7 MAXX</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="zdfkultur" xmltv_id="ZDFkultur">ZDFkultur</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="rai-1" xmltv_id="RAI 1">RAI 1</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="rai-2" xmltv_id="RAI 2">RAI 2</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="rai-3" xmltv_id="RAI 3">RAI 3</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="rete-4" xmltv_id="Rete 4">Rete 4</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="canale-5" xmltv_id="Canale 5">Canale 5</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="italia-1" xmltv_id="Italia 1">Italia 1</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="italia-2" xmltv_id="Italia 2">Italia 2</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="la5" xmltv_id="La5">La5</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="la7" xmltv_id="La7">La7</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="la7d" xmltv_id="La7d">La7d</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="iris" xmltv_id="Iris">Iris</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="boing" xmltv_id="Boing">Boing</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="mediaset-extra" xmltv_id="Mediaset Extra">Mediaset Extra</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="top-crime" xmltv_id="Top Crime">Top Crime</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="radio-italia-tv" xmltv_id="Radio Italia TV">Radio Italia TV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="tgcom24" xmltv_id="TGCOM24">TGCOM24</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="mtv-italia" xmltv_id="MTV Italia">MTV Italia</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="nuvolari" xmltv_id="Nuvolari">Nuvolari</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="dmax" xmltv_id="DMAX">DMAX</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="rai-storia" xmltv_id="RAI Storia">RAI Storia</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="real-time" xmltv_id="real time">real time</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="rai-movie" xmltv_id="RAI Movie">RAI Movie</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="rai-5" xmltv_id="RAI 5">RAI 5</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="rai-4" xmltv_id="RAI 4">RAI 4</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="mediaset-italia" xmltv_id="Mediaset Italia">Mediaset Italia</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="fox-sports" xmltv_id="FOX Sports">FOX Sports</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="premium-sport" xmltv_id="Premium Sport">Premium Sport</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="teledeporte" xmltv_id="TeleDeporte">TeleDeporte</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="telemadrid" xmltv_id="TeleMadrid">TeleMadrid</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="tve" xmltv_id="TVE">TVE</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="antena3" xmltv_id="Antena3">Antena3</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="neox" xmltv_id="neox">neox</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="antena-nova" xmltv_id="Antena.nova">Antena.nova</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="m1" xmltv_id="m1">m1</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="m2" xmltv_id="m2">m2</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="tv2.hu" xmltv_id="TV2.hu">TV2.hu</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="duna-tv" xmltv_id="Duna TV">Duna TV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="duna-world" xmltv_id="Duna World">Duna World</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="rtl-klub" xmltv_id="RTL Klub">RTL Klub</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="story4" xmltv_id="Story4">Story4</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="fem3" xmltv_id="FEM3">FEM3</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pro4" xmltv_id="PRO4">PRO4</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="tv6" xmltv_id="TV6">TV6</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="viasat3" xmltv_id="Viasat3">Viasat3</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="cooltv" xmltv_id="CoolTV">CoolTV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="m3" xmltv_id="m3">m3</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="m4" xmltv_id="m4">m4</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="babytv" xmltv_id="BabyTV">BabyTV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="boomerang" xmltv_id="Boomerang">Boomerang</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="cartoon-network" xmltv_id="Cartoon Network">Cartoon Network</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="disney-channel" xmltv_id="Disney">Disney</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="jetix" xmltv_id="Disney XD">Disney XD</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="jimjam" xmltv_id="JimJam">JimJam</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="kika" xmltv_id="KiKa">KiKa</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="minimax" xmltv_id="Minimax">Minimax</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="minitv" xmltv_id="MiniTV">MiniTV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="nickelodeon" xmltv_id="Nickelodeon">Nickelodeon</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="orlando-kids" xmltv_id="Orlando Kids">Orlando Kids</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pink-kids" xmltv_id="Pink Kids">Pink Kids</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pink-super-kids" xmltv_id="Pink Super Kids">Pink Super Kids</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="super-rtl" xmltv_id="SUPER RTL">SUPER RTL</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="tiji" xmltv_id="Tiji">Tiji</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="disney-junior" xmltv_id="Disney Junior">Disney Junior</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="ducktv" xmltv_id="DuckTV">DuckTV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="ok-bambino" xmltv_id="OK Bambino">OK Bambino</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="nick-jr" xmltv_id="Nick Jr">Nick Jr</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="hayatovci" xmltv_id="Hayatovci">Hayatovci</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="klasiktv" xmltv_id="KlasikTV">KlasikTV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="kinotv" xmltv_id="KinoTV">KinoTV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="axn" xmltv_id="AXN">AXN</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="axn-spin" xmltv_id="AXN Spin">AXN Spin</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="cbs-drama" xmltv_id="CBS Drama">CBS Drama</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="cbs-reality" xmltv_id="CBS Reality">CBS Reality</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="fox" xmltv_id="FOX">FOX</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="fox-life" xmltv_id="FOX Life">FOX Life</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="fox-crime" xmltv_id="FOX Crime">FOX Crime</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="fox-movies" xmltv_id="FOX Movies">FOX Movies</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="hbo" xmltv_id="HBO">HBO</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="hbo-comedy" xmltv_id="HBO Comedy">HBO Comedy</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="cinemax" xmltv_id="Cinemax">Cinemax</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="cinemax-2" xmltv_id="Cinemax 2">Cinemax 2</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="cinestar-tv" xmltv_id="CineStar TV">CineStar TV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="cinestar-action-thriller" xmltv_id="CineStar A&amp;T">CineStar A&amp;T</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="cinestar-premiere" xmltv_id="CineStar Prem. 1">CineStar Prem. 1</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="cinestar-premiere-2" xmltv_id="CineStar Prem. 2">CineStar Prem. 2</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="cinestar-tv-rs" xmltv_id="CineStar TV.rs">CineStar TV.rs</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="cinestar-action-thriller-rs" xmltv_id="CineStar A&amp;T.rs">CineStar A&amp;T.rs</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="tv1000-balkan" xmltv_id="TV 1000">TV 1000</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="scifi" xmltv_id="SciFi">SciFi</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="amc" xmltv_id="AMC">AMC</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="universal-channel" xmltv_id="Universal">Universal</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="cinemania" xmltv_id="Cinemania">Cinemania</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="cinema-tv" xmltv_id="Cinema TV">Cinema TV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pink-film" xmltv_id="PINK Film">PINK Film</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pink-premium" xmltv_id="Pink Premium">Pink Premium</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pink-movies" xmltv_id="Pink Movies">Pink Movies</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pink-movies-2" xmltv_id="Pink Romance">Pink Romance</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pink-movies-3" xmltv_id="Pink SciFi &amp; Fantasy">Pink SciFi &amp; Fantasy</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pink-action" xmltv_id="Pink Action">Pink Action</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pink-action-2" xmltv_id="Pink Thriller">Pink Thriller</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pink-action-3" xmltv_id="Pink Crime &amp; Mystery">Pink Crime &amp; Mystery</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pink-classic" xmltv_id="Pink Classic">Pink Classic</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pink-horror" xmltv_id="Pink Horror">Pink Horror</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pink-western" xmltv_id="Pink Western">Pink Western</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="eurochannel" xmltv_id="Eurochannel">Eurochannel</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="fox-si" xmltv_id="FOX.si">FOX.si</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="fox-movies-si" xmltv_id="FOX Movies.si">FOX Movies.si</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="fox-life-si" xmltv_id="FOX Life.si">FOX Life.si</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="m1-film" xmltv_id="M1 FILM">M1 FILM</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="m1-film-mk" xmltv_id="M1 Film.mk">M1 Film.mk</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="m1-gold-mk" xmltv_id="M1 Gold.mk">M1 Gold.mk</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="m1-gold" xmltv_id="M1 Gold">M1 Gold</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="mrt1" xmltv_id="MRT1">MRT1</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="mrt2" xmltv_id="MRT2">MRT2</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="sitel" xmltv_id="Sitel">Sitel</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="sitel-3" xmltv_id="Sitel 3">Sitel 3</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="kanal5" xmltv_id="Kanal5">Kanal5</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="kanal5-plus" xmltv_id="Kanal5 plus">Kanal5 plus</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="telma" xmltv_id="Telma">Telma</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="alfa-tv" xmltv_id="ALFA TV">ALFA TV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="alsat-m" xmltv_id="ALSAT-M">ALSAT-M</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="tera-tv" xmltv_id="Tera TV">Tera TV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="kiss" xmltv_id="KISS">KISS</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="nasa-tv" xmltv_id="Naša TV">Naša TV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="mtm" xmltv_id="MTM">MTM</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="tv-orbis-bitola" xmltv_id="Orbis">Orbis</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="24vesti" xmltv_id="24Vesti">24Vesti</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="tv-sonce" xmltv_id="TV Sonce">TV Sonce</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="tv-m" xmltv_id="TV M">TV M</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="tv-iris-makedonia" xmltv_id="TV Iris">TV Iris</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="kanal8" xmltv_id="Kanal8">Kanal8</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="televizioni-koha" xmltv_id="TV Koha">TV Koha</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="sky-net" xmltv_id="Sky Net">Sky Net</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="tv-edo" xmltv_id="TV Edo">TV Edo</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="discovery-europe" xmltv_id="Discovery Channel">Discovery Channel</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="discovery-science" xmltv_id="Discovery Science">Discovery Science</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="discovery-tlc" xmltv_id="Discovery TLC">Discovery TLC</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="discovery-civilization" xmltv_id="Discovery World">Discovery World</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="investigation-discovery" xmltv_id="Discovery ID">Discovery ID</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="investigation-discovery-xtra" xmltv_id="ID Xtra">ID Xtra</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="discovery-animal" xmltv_id="Animal Planet">Animal Planet</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="national-geographic" xmltv_id="National Geo">National Geo</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="national-geographic-hd" xmltv_id="National Geo. HD">National Geo. HD</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="national-geographic-wild" xmltv_id="Nat Geo Wild">Nat Geo Wild</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="history-channel" xmltv_id="History Channel">History Channel</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="history-channel-2" xmltv_id="History 2">History 2</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="viasat-history" xmltv_id="Viasat History">Viasat History</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="viasat-explorer" xmltv_id="Viasat Explorer">Viasat Explorer</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="viasat-nature" xmltv_id="Viasat Nature">Viasat Nature</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="viasat-explorer.se" xmltv_id="Viasat explorer.se">Viasat explorer.se</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="viasat-history.se" xmltv_id="Viasat history.se">Viasat history.se</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="da-vinci-learning" xmltv_id="Da Vinci Learning">Da Vinci Learning</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="da-vinci-u" xmltv_id="Da Vinci U">Da Vinci U</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="rt-documentary" xmltv_id="RT Documentary">RT Documentary</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="rtg-tv" xmltv_id="RTG TV">RTG TV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="travel-channel" xmltv_id="Travel">Travel</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="crime-investigation" xmltv_id="Crime&amp;Investigation">Crime&amp;Investigation</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="nautical-channel" xmltv_id="Nautical Channel">Nautical Channel</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="outdoor-channel" xmltv_id="Outdoor Channel">Outdoor Channel</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="the-food-network" xmltv_id="Food Network">Food Network</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="club-tv" xmltv_id="CLUB TV">CLUB TV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pink-pedia" xmltv_id="Pink Pedia">Pink Pedia</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="docubox-hd" xmltv_id="DocuBox HD">DocuBox HD</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="rtv21" xmltv_id="RTV21">RTV21</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="21-junior" xmltv_id="21 Junior">21 Junior</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="21-mix" xmltv_id="21 Mix">21 Mix</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="adult-channel" xmltv_id="Adult Channel">Adult Channel</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="blue-hustler" xmltv_id="Blue Hustler">Blue Hustler</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="private-spice" xmltv_id="Brazzers TV">Brazzers TV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="dorcel" xmltv_id="Dorcel">Dorcel</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="hustler-tv" xmltv_id="HUSTLER TV">HUSTLER TV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="hustler-hd" xmltv_id="HUSTLER HD">HUSTLER HD</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="playboy-tv" xmltv_id="PlayboyTV">PlayboyTV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="private-tv" xmltv_id="Private TV">Private TV</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pink-erotic-1" xmltv_id="Pink Erotic 1">Pink Erotic 1</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pink-erotic-2" xmltv_id="Pink Erotic 2">Pink Erotic 2</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pink-erotic-3" xmltv_id="Pink Erotic 3">Pink Erotic 3</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pink-erotic-4" xmltv_id="Pink Erotic 4">Pink Erotic 4</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pink-erotic-5" xmltv_id="Pink Erotic 5">Pink Erotic 5</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pink-erotic-6" xmltv_id="Pink Erotic 6">Pink Erotic 6</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pink-erotic-7" xmltv_id="Pink Erotic 7">Pink Erotic 7</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="pink-erotic-8" xmltv_id="Pink Erotic 8">Pink Erotic 8</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="n1" xmltv_id="N1">N1</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="euronews" xmltv_id="EuroNews">EuroNews</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="russia-today" xmltv_id="Russia Today">Russia Today</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="rossija24" xmltv_id="Rusija 24">Rusija 24</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="al-jazeera-balkans" xmltv_id="Al Jazeera Balkans">Al Jazeera Balkans</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="al-jazeera" xmltv_id="Al Jazeera">Al Jazeera</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="cnn" xmltv_id="CNN">CNN</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="cnbc" xmltv_id="CNBC">CNBC</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="bbc-world" xmltv_id="BBC World">BBC World</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="bloomberg" xmltv_id="Bloomberg">Bloomberg</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="deutchewelle" xmltv_id="DW">DW</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="france24" xmltv_id="France24">France24</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="skynews" xmltv_id="SkyNews">SkyNews</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="cctv-news" xmltv_id="CCTV NEWS">CCTV NEWS</channel>
+    <channel update="i" site="m.tvprofil.net" site_id="24-sata" xmltv_id="24 Sata">24 Sata</channel>
+  </channels>
+</site>

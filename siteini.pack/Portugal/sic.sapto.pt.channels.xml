@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<site generator-info-name="WebGrab+Plus/w MDB &amp; REX Postprocess -- version V1.56.24 -- Jan van Straaten" site="sic.sapto.pt">
+  <channels>
+    <channel update="i" site="sic.sapto.pt" site_id="gen" xmltv_id="SIC">SIC</channel>
+    <channel update="i" site="sic.sapto.pt" site_id="not" xmltv_id="SIC Notícias">SIC Notícias</channel>
+    <channel update="i" site="sic.sapto.pt" site_id="rad" xmltv_id="SIC Radical">SIC Radical</channel>
+    <channel update="i" site="sic.sapto.pt" site_id="mul" xmltv_id="SIC Mulher">SIC Mulher</channel>
+    <channel update="i" site="sic.sapto.pt" site_id="kid" xmltv_id="SIC K">SIC K</channel>
+    <channel update="i" site="sic.sapto.pt" site_id="car" xmltv_id="SIC Caras">SIC Caras</channel>
+    <channel update="i" site="sic.sapto.pt" site_id="int" xmltv_id="SIC Internacional">SIC Internacional</channel>
+  </channels>
+</site>

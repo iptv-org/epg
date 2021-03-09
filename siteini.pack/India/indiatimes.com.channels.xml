@@ -1,0 +1,461 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<site generator-info-name="WebGrab+Plus/w MDB &amp; REX Postprocess -- version V1.56.27 -- Jan van Straaten" site="indiatimes.com">
+  <channels>
+    <channel update="i" site="indiatimes.com" site_id="Discovery%20Channel" xmltv_id="Discovery Channel">Discovery Channel</channel>
+    <channel update="i" site="indiatimes.com" site_id="Discovery%20Channel%20HD" xmltv_id="Discovery Channel HD">Discovery Channel HD</channel>
+    <channel update="i" site="indiatimes.com" site_id="Discovery%20Tamil" xmltv_id="Discovery Tamil">Discovery Tamil</channel>
+    <channel update="i" site="indiatimes.com" site_id="TLC" xmltv_id="TLC">TLC</channel>
+    <channel update="i" site="indiatimes.com" site_id="Star%20Plus" xmltv_id="Star Plus">Star Plus</channel>
+    <channel update="i" site="indiatimes.com" site_id="Colors" xmltv_id="Colors">Colors</channel>
+    <channel update="i" site="indiatimes.com" site_id="Zee%20TV" xmltv_id="Zee TV">Zee TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Life%20OK" xmltv_id="Life OK">Life OK</channel>
+    <channel update="i" site="indiatimes.com" site_id="Sun%20TV" xmltv_id="Sun TV">Sun TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="SAB" xmltv_id="SAB">SAB</channel>
+    <channel update="i" site="indiatimes.com" site_id="SET" xmltv_id="SET">SET</channel>
+    <channel update="i" site="indiatimes.com" site_id="Star%20Gold" xmltv_id="Star Gold">Star Gold</channel>
+    <channel update="i" site="indiatimes.com" site_id="SET%20MAX" xmltv_id="SET MAX">SET MAX</channel>
+    <channel update="i" site="indiatimes.com" site_id="Zee%20Cinema" xmltv_id="Zee Cinema">Zee Cinema</channel>
+    <channel update="i" site="indiatimes.com" site_id="Nick" xmltv_id="Nick">Nick</channel>
+    <channel update="i" site="indiatimes.com" site_id="Movies%20OK" xmltv_id="Movies OK">Movies OK</channel>
+    <channel update="i" site="indiatimes.com" site_id="Cartoon%20Network" xmltv_id="Cartoon Network">Cartoon Network</channel>
+    <channel update="i" site="indiatimes.com" site_id="Star%20Sports%203" xmltv_id="Star Sports 3">Star Sports 3</channel>
+    <channel update="i" site="indiatimes.com" site_id="Zee%20Marathi" xmltv_id="Zee Marathi">Zee Marathi</channel>
+    <channel update="i" site="indiatimes.com" site_id="Star%20Jalsha" xmltv_id="Star Jalsha">Star Jalsha</channel>
+    <channel update="i" site="indiatimes.com" site_id="Maa%20TV" xmltv_id="Maa TV">Maa TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Gemini%20TV" xmltv_id="Gemini TV">Gemini TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="POGO" xmltv_id="POGO">POGO</channel>
+    <channel update="i" site="indiatimes.com" site_id="Hungama" xmltv_id="Hungama">Hungama</channel>
+    <channel update="i" site="indiatimes.com" site_id="Disney%20Channel" xmltv_id="Disney Channel">Disney Channel</channel>
+    <channel update="i" site="indiatimes.com" site_id="Zee%20Telugu" xmltv_id="Zee Telugu">Zee Telugu</channel>
+    <channel update="i" site="indiatimes.com" site_id="Star%20Utsav" xmltv_id="Star Utsav">Star Utsav</channel>
+    <channel update="i" site="indiatimes.com" site_id="Star%20Vijay" xmltv_id="Star Vijay">Star Vijay</channel>
+    <channel update="i" site="indiatimes.com" site_id="Zee%20Anmol" xmltv_id="Zee Anmol">Zee Anmol</channel>
+    <channel update="i" site="indiatimes.com" site_id="And%20Pictures" xmltv_id="And Pictures">And Pictures</channel>
+    <channel update="i" site="indiatimes.com" site_id="KTV" xmltv_id="KTV">KTV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Star%20Sports%201" xmltv_id="Star Sports 1">Star Sports 1</channel>
+    <channel update="i" site="indiatimes.com" site_id="UTV%20Movies" xmltv_id="UTV Movies">UTV Movies</channel>
+    <channel update="i" site="indiatimes.com" site_id="Zee%20Bangla" xmltv_id="Zee Bangla">Zee Bangla</channel>
+    <channel update="i" site="indiatimes.com" site_id="Udaya%20TV" xmltv_id="Udaya TV">Udaya TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="UTV%20Action" xmltv_id="UTV Action">UTV Action</channel>
+    <channel update="i" site="indiatimes.com" site_id="B4U%20Movies" xmltv_id="B4U Movies">B4U Movies</channel>
+    <channel update="i" site="indiatimes.com" site_id="Star%20Pravah" xmltv_id="Star Pravah">Star Pravah</channel>
+    <channel update="i" site="indiatimes.com" site_id="Asianet" xmltv_id="Asianet">Asianet</channel>
+    <channel update="i" site="indiatimes.com" site_id="Colors%20Marathi" xmltv_id="Colors Marathi">Colors Marathi</channel>
+    <channel update="i" site="indiatimes.com" site_id="MAX%202" xmltv_id="MAX 2">MAX 2</channel>
+    <channel update="i" site="indiatimes.com" site_id="Aaj%20Tak" xmltv_id="Aaj Tak">Aaj Tak</channel>
+    <channel update="i" site="indiatimes.com" site_id="Gemini%20Movies" xmltv_id="Gemini Movies">Gemini Movies</channel>
+    <channel update="i" site="indiatimes.com" site_id="Zee%20Classic" xmltv_id="Zee Classic">Zee Classic</channel>
+    <channel update="i" site="indiatimes.com" site_id="BIG%20MAGIC" xmltv_id="BIG MAGIC">BIG MAGIC</channel>
+    <channel update="i" site="indiatimes.com" site_id="Colors%20Kannada" xmltv_id="Colors Kannada">Colors Kannada</channel>
+    <channel update="i" site="indiatimes.com" site_id="MIX" xmltv_id="MIX">MIX</channel>
+    <channel update="i" site="indiatimes.com" site_id="CHANNEL%20V" xmltv_id="CHANNEL V">CHANNEL V</channel>
+    <channel update="i" site="indiatimes.com" site_id="Asianet%20Suvarna" xmltv_id="Asianet Suvarna">Asianet Suvarna</channel>
+    <channel update="i" site="indiatimes.com" site_id="ABP%20News" xmltv_id="ABP News">ABP News</channel>
+    <channel update="i" site="indiatimes.com" site_id="Zee%20Talkies" xmltv_id="Zee Talkies">Zee Talkies</channel>
+    <channel update="i" site="indiatimes.com" site_id="India%20TV" xmltv_id="India TV">India TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Ten%201" xmltv_id="Ten 1">Ten 1</channel>
+    <channel update="i" site="indiatimes.com" site_id="Discovery%20Channel" xmltv_id="Discovery Channel">Discovery Channel</channel>
+    <channel update="i" site="indiatimes.com" site_id="Rishtey" xmltv_id="Rishtey">Rishtey</channel>
+    <channel update="i" site="indiatimes.com" site_id="Maa%20Movies" xmltv_id="Maa Movies">Maa Movies</channel>
+    <channel update="i" site="indiatimes.com" site_id="DD1" xmltv_id="DD1">DD1</channel>
+    <channel update="i" site="indiatimes.com" site_id="9XM" xmltv_id="9XM">9XM</channel>
+    <channel update="i" site="indiatimes.com" site_id="Bindass" xmltv_id="Bindass">Bindass</channel>
+    <channel update="i" site="indiatimes.com" site_id="Zee%20News" xmltv_id="Zee News">Zee News</channel>
+    <channel update="i" site="indiatimes.com" site_id="Cinema%20TV" xmltv_id="Cinema TV">Cinema TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Sonic" xmltv_id="Sonic">Sonic</channel>
+    <channel update="i" site="indiatimes.com" site_id="India%20News" xmltv_id="India News">India News</channel>
+    <channel update="i" site="indiatimes.com" site_id="MTV" xmltv_id="MTV">MTV</channel>
+    <channel update="i" site="indiatimes.com" site_id="ABP%20Majha" xmltv_id="ABP Majha">ABP Majha</channel>
+    <channel update="i" site="indiatimes.com" site_id="National%20Geographic%20Channel" xmltv_id="National Geographic Channel">National Geographic Channel</channel>
+    <channel update="i" site="indiatimes.com" site_id="B4U%20Music" xmltv_id="B4U Music">B4U Music</channel>
+    <channel update="i" site="indiatimes.com" site_id="Sun%20Music" xmltv_id="Sun Music">Sun Music</channel>
+    <channel update="i" site="indiatimes.com" site_id="9X%20Jalwa" xmltv_id="9X Jalwa">9X Jalwa</channel>
+    <channel update="i" site="indiatimes.com" site_id="Kalaignar%20TV" xmltv_id="Kalaignar TV">Kalaignar TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Udaya%20Movies" xmltv_id="Udaya Movies">Udaya Movies</channel>
+    <channel update="i" site="indiatimes.com" site_id="Zee%20Kannada" xmltv_id="Zee Kannada">Zee Kannada</channel>
+    <channel update="i" site="indiatimes.com" site_id="Pal" xmltv_id="Pal">Pal</channel>
+    <channel update="i" site="indiatimes.com" site_id="Enter%2010" xmltv_id="Enter 10">Enter 10</channel>
+    <channel update="i" site="indiatimes.com" site_id="Zindagi" xmltv_id="Zindagi">Zindagi</channel>
+    <channel update="i" site="indiatimes.com" site_id="Mastiii" xmltv_id="Mastiii">Mastiii</channel>
+    <channel update="i" site="indiatimes.com" site_id="Colors%20Bangla" xmltv_id="Colors Bangla">Colors Bangla</channel>
+    <channel update="i" site="indiatimes.com" site_id="News24" xmltv_id="News24">News24</channel>
+    <channel update="i" site="indiatimes.com" site_id="Polimer%20TV" xmltv_id="Polimer TV">Polimer TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Raj%20TV" xmltv_id="Raj TV">Raj TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Dangal" xmltv_id="Dangal">Dangal</channel>
+    <channel update="i" site="indiatimes.com" site_id="Disney%20XD" xmltv_id="Disney XD">Disney XD</channel>
+    <channel update="i" site="indiatimes.com" site_id="Jalsha%20Movies" xmltv_id="Jalsha Movies">Jalsha Movies</channel>
+    <channel update="i" site="indiatimes.com" site_id="Zee%20Tamil" xmltv_id="Zee Tamil">Zee Tamil</channel>
+    <channel update="i" site="indiatimes.com" site_id="PTC%20Punjabi" xmltv_id="PTC Punjabi">PTC Punjabi</channel>
+    <channel update="i" site="indiatimes.com" site_id="IBN7" xmltv_id="IBN7">IBN7</channel>
+    <channel update="i" site="indiatimes.com" site_id="Jaya%20TV" xmltv_id="Jaya TV">Jaya TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Star%20Movies" xmltv_id="Star Movies">Star Movies</channel>
+    <channel update="i" site="indiatimes.com" site_id="History%20TV18" xmltv_id="History TV18">History TV18</channel>
+    <channel update="i" site="indiatimes.com" site_id="Adithya%20TV" xmltv_id="Adithya TV">Adithya TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Animal%20Planet" xmltv_id="Animal Planet">Animal Planet</channel>
+    <channel update="i" site="indiatimes.com" site_id="Chutti%20TV" xmltv_id="Chutti TV">Chutti TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Zee%2024Taas" xmltv_id="Zee 24Taas">Zee 24Taas</channel>
+    <channel update="i" site="indiatimes.com" site_id="Zee%20Action" xmltv_id="Zee Action">Zee Action</channel>
+    <channel update="i" site="indiatimes.com" site_id="ABP%20Ananda" xmltv_id="ABP Ananda">ABP Ananda</channel>
+    <channel update="i" site="indiatimes.com" site_id="IBN%20Lokmat" xmltv_id="IBN Lokmat">IBN Lokmat</channel>
+    <channel update="i" site="indiatimes.com" site_id="NDTV%20India" xmltv_id="NDTV India">NDTV India</channel>
+    <channel update="i" site="indiatimes.com" site_id="Surya%20TV" xmltv_id="Surya TV">Surya TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Isai%20Aruvi" xmltv_id="Isai Aruvi">Isai Aruvi</channel>
+    <channel update="i" site="indiatimes.com" site_id="J%20Movies" xmltv_id="J Movies">J Movies</channel>
+    <channel update="i" site="indiatimes.com" site_id="NTV" xmltv_id="NTV">NTV</channel>
+    <channel update="i" site="indiatimes.com" site_id="TV9%20Kannada" xmltv_id="TV9 Kannada">TV9 Kannada</channel>
+    <channel update="i" site="indiatimes.com" site_id="Gemini%20Comedy" xmltv_id="Gemini Comedy">Gemini Comedy</channel>
+    <channel update="i" site="indiatimes.com" site_id="M%20Tunes" xmltv_id="M Tunes">M Tunes</channel>
+    <channel update="i" site="indiatimes.com" site_id="Mazhavil%20Manorama" xmltv_id="Mazhavil Manorama">Mazhavil Manorama</channel>
+    <channel update="i" site="indiatimes.com" site_id="SIX" xmltv_id="SIX">SIX</channel>
+    <channel update="i" site="indiatimes.com" site_id="ZING" xmltv_id="ZING">ZING</channel>
+    <channel update="i" site="indiatimes.com" site_id="Zoom" xmltv_id="Zoom">Zoom</channel>
+    <channel update="i" site="indiatimes.com" site_id="Tez" xmltv_id="Tez">Tez</channel>
+    <channel update="i" site="indiatimes.com" site_id="Dabangg%20TV" xmltv_id="Dabangg TV">Dabangg TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Aakash%20Aath" xmltv_id="Aakash Aath">Aakash Aath</channel>
+    <channel update="i" site="indiatimes.com" site_id="Maa%20Gold" xmltv_id="Maa Gold">Maa Gold</channel>
+    <channel update="i" site="indiatimes.com" site_id="Sirippoli" xmltv_id="Sirippoli">Sirippoli</channel>
+    <channel update="i" site="indiatimes.com" site_id="Discovery%20Kids" xmltv_id="Discovery Kids">Discovery Kids</channel>
+    <channel update="i" site="indiatimes.com" site_id="E24" xmltv_id="E24">E24</channel>
+    <channel update="i" site="indiatimes.com" site_id="Gemini%20Music" xmltv_id="Gemini Music">Gemini Music</channel>
+    <channel update="i" site="indiatimes.com" site_id="Mi%20Marathi" xmltv_id="Mi Marathi">Mi Marathi</channel>
+    <channel update="i" site="indiatimes.com" site_id="Movies%20Now" xmltv_id="Movies Now">Movies Now</channel>
+    <channel update="i" site="indiatimes.com" site_id="Suvarna%20Plus" xmltv_id="Suvarna Plus">Suvarna Plus</channel>
+    <channel update="i" site="indiatimes.com" site_id="Sahara%20One" xmltv_id="Sahara One">Sahara One</channel>
+    <channel update="i" site="indiatimes.com" site_id="TV9%20Marathi" xmltv_id="TV9 Marathi">TV9 Marathi</channel>
+    <channel update="i" site="indiatimes.com" site_id="Bhakti%20TV" xmltv_id="Bhakti TV">Bhakti TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Filmy" xmltv_id="Filmy">Filmy</channel>
+    <channel update="i" site="indiatimes.com" site_id="HBO" xmltv_id="HBO">HBO</channel>
+    <channel update="i" site="indiatimes.com" site_id="Jaya%20Plus" xmltv_id="Jaya Plus">Jaya Plus</channel>
+    <channel update="i" site="indiatimes.com" site_id="Maa%20Music" xmltv_id="Maa Music">Maa Music</channel>
+    <channel update="i" site="indiatimes.com" site_id="MH1" xmltv_id="MH1">MH1</channel>
+    <channel update="i" site="indiatimes.com" site_id="Ten%203" xmltv_id="Ten 3">Ten 3</channel>
+    <channel update="i" site="indiatimes.com" site_id="Thanthi%20TV" xmltv_id="Thanthi TV">Thanthi TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="9X%20Tashan" xmltv_id="9X Tashan">9X Tashan</channel>
+    <channel update="i" site="indiatimes.com" site_id="Jaya%20Max" xmltv_id="Jaya Max">Jaya Max</channel>
+    <channel update="i" site="indiatimes.com" site_id="Kolkata%20TV" xmltv_id="Kolkata TV">Kolkata TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Music%20India" xmltv_id="Music India">Music India</channel>
+    <channel update="i" site="indiatimes.com" site_id="Nat%20Geo%20Wild" xmltv_id="Nat Geo Wild">Nat Geo Wild</channel>
+    <channel update="i" site="indiatimes.com" site_id="Puthiya%20Thalaimurai" xmltv_id="Puthiya Thalaimurai">Puthiya Thalaimurai</channel>
+    <channel update="i" site="indiatimes.com" site_id="Sarthak%20TV" xmltv_id="Sarthak TV">Sarthak TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Udaya%20Music" xmltv_id="Udaya Music">Udaya Music</channel>
+    <channel update="i" site="indiatimes.com" site_id="DD%20News" xmltv_id="DD News">DD News</channel>
+    <channel update="i" site="indiatimes.com" site_id="ETV%20Andhra%20Pradesh" xmltv_id="ETV Andhra Pradesh">ETV Andhra Pradesh</channel>
+    <channel update="i" site="indiatimes.com" site_id="Kasthuri%20TV" xmltv_id="Kasthuri TV">Kasthuri TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Live%20India%20TV" xmltv_id="Live India TV">Live India TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Mahuaa%20TV" xmltv_id="Mahuaa TV">Mahuaa TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="SET%20PIX" xmltv_id="SET PIX">SET PIX</channel>
+    <channel update="i" site="indiatimes.com" site_id="Star%20Sports%202" xmltv_id="Star Sports 2">Star Sports 2</channel>
+    <channel update="i" site="indiatimes.com" site_id="Sun%20News" xmltv_id="Sun News">Sun News</channel>
+    <channel update="i" site="indiatimes.com" site_id="Tarang%20TV" xmltv_id="Tarang TV">Tarang TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="WB" xmltv_id="WB">WB</channel>
+    <channel update="i" site="indiatimes.com" site_id="Zee%20Bangla%20Cinema" xmltv_id="Zee Bangla Cinema">Zee Bangla Cinema</channel>
+    <channel update="i" site="indiatimes.com" site_id="Z%20ETC%20Bollywood" xmltv_id="Z ETC Bollywood">Z ETC Bollywood</channel>
+    <channel update="i" site="indiatimes.com" site_id="Zee%2024%20Ghanta" xmltv_id="Zee 24 Ghanta">Zee 24 Ghanta</channel>
+    <channel update="i" site="indiatimes.com" site_id="Colors%20Gujarati" xmltv_id="Colors Gujarati">Colors Gujarati</channel>
+    <channel update="i" site="indiatimes.com" site_id="Fox%20Life" xmltv_id="Fox Life">Fox Life</channel>
+    <channel update="i" site="indiatimes.com" site_id="Kiran%20TV" xmltv_id="Kiran TV">Kiran TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Maiboli" xmltv_id="Maiboli">Maiboli</channel>
+    <channel update="i" site="indiatimes.com" site_id="Mega%20TV" xmltv_id="Mega TV">Mega TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="PTC%20Chakde" xmltv_id="PTC Chakde">PTC Chakde</channel>
+    <channel update="i" site="indiatimes.com" site_id="Sony%20AATH" xmltv_id="Sony AATH">Sony AATH</channel>
+    <channel update="i" site="indiatimes.com" site_id="Sun%20Life" xmltv_id="Sun Life">Sun Life</channel>
+    <channel update="i" site="indiatimes.com" site_id="TV9%20Gujarati" xmltv_id="TV9 Gujarati">TV9 Gujarati</channel>
+    <channel update="i" site="indiatimes.com" site_id="Udaya%20Comedy" xmltv_id="Udaya Comedy">Udaya Comedy</channel>
+    <channel update="i" site="indiatimes.com" site_id="Bindass%20Play" xmltv_id="Bindass Play">Bindass Play</channel>
+    <channel update="i" site="indiatimes.com" site_id="Asianet%20Movies" xmltv_id="Asianet Movies">Asianet Movies</channel>
+    <channel update="i" site="indiatimes.com" site_id="Discovery%20Science" xmltv_id="Discovery Science">Discovery Science</channel>
+    <channel update="i" site="indiatimes.com" site_id="Gemini%20Life" xmltv_id="Gemini Life">Gemini Life</channel>
+    <channel update="i" site="indiatimes.com" site_id="Kairali%20TV" xmltv_id="Kairali TV">Kairali TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Kushi%20TV" xmltv_id="Kushi TV">Kushi TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="OTV" xmltv_id="OTV">OTV</channel>
+    <channel update="i" site="indiatimes.com" site_id="MH%20One%20Shraddha" xmltv_id="MH One Shraddha">MH One Shraddha</channel>
+    <channel update="i" site="indiatimes.com" site_id="T%20News" xmltv_id="T News">T News</channel>
+    <channel update="i" site="indiatimes.com" site_id="Sangeet%20Bangla" xmltv_id="Sangeet Bangla">Sangeet Bangla</channel>
+    <channel update="i" site="indiatimes.com" site_id="Suvarna%20News" xmltv_id="Suvarna News">Suvarna News</channel>
+    <channel update="i" site="indiatimes.com" site_id="9X%20Jhakaas" xmltv_id="9X Jhakaas">9X Jhakaas</channel>
+    <channel update="i" site="indiatimes.com" site_id="Asianet%20Plus" xmltv_id="Asianet Plus">Asianet Plus</channel>
+    <channel update="i" site="indiatimes.com" site_id="DD%20Bangla" xmltv_id="DD Bangla">DD Bangla</channel>
+    <channel update="i" site="indiatimes.com" site_id="DD%20Punjabi" xmltv_id="DD Punjabi">DD Punjabi</channel>
+    <channel update="i" site="indiatimes.com" site_id="DD%20Sahyadri" xmltv_id="DD Sahyadri">DD Sahyadri</channel>
+    <channel update="i" site="indiatimes.com" site_id="Discovery%20Tamil" xmltv_id="Discovery Tamil">Discovery Tamil</channel>
+    <channel update="i" site="indiatimes.com" site_id="Murasu" xmltv_id="Murasu">Murasu</channel>
+    <channel update="i" site="indiatimes.com" site_id="News%20Express" xmltv_id="News Express">News Express</channel>
+    <channel update="i" site="indiatimes.com" site_id="R%20Plus%20News" xmltv_id="R Plus News">R Plus News</channel>
+    <channel update="i" site="indiatimes.com" site_id="Saam%20TV" xmltv_id="Saam TV">Saam TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Star%20Sports%204" xmltv_id="Star Sports 4">Star Sports 4</channel>
+    <channel update="i" site="indiatimes.com" site_id="Ten%202" xmltv_id="Ten 2">Ten 2</channel>
+    <channel update="i" site="indiatimes.com" site_id="Living%20Foodz" xmltv_id="Living Foodz">Living Foodz</channel>
+    <channel update="i" site="indiatimes.com" site_id="Zee%20Q" xmltv_id="Zee Q">Zee Q</channel>
+    <channel update="i" site="indiatimes.com" site_id="Captain%20TV" xmltv_id="Captain TV">Captain TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Chintu%20TV" xmltv_id="Chintu TV">Chintu TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Awaaz" xmltv_id="Awaaz">Awaaz</channel>
+    <channel update="i" site="indiatimes.com" site_id="DD%20Podhigai" xmltv_id="DD Podhigai">DD Podhigai</channel>
+    <channel update="i" site="indiatimes.com" site_id="Disney%20Junior" xmltv_id="Disney Junior">Disney Junior</channel>
+    <channel update="i" site="indiatimes.com" site_id="Music%20Xpress" xmltv_id="Music Xpress">Music Xpress</channel>
+    <channel update="i" site="indiatimes.com" site_id="Seithigal%2024x7" xmltv_id="Seithigal 24x7">Seithigal 24x7</channel>
+    <channel update="i" site="indiatimes.com" site_id="Star%20World" xmltv_id="Star World">Star World</channel>
+    <channel update="i" site="indiatimes.com" site_id="TLC" xmltv_id="TLC">TLC</channel>
+    <channel update="i" site="indiatimes.com" site_id="Nick%20Junior" xmltv_id="Nick Junior">Nick Junior</channel>
+    <channel update="i" site="indiatimes.com" site_id="Asianet%20News" xmltv_id="Asianet News">Asianet News</channel>
+    <channel update="i" site="indiatimes.com" site_id="AXN" xmltv_id="AXN">AXN</channel>
+    <channel update="i" site="indiatimes.com" site_id="Food%20Food" xmltv_id="Food Food">Food Food</channel>
+    <channel update="i" site="indiatimes.com" site_id="FX" xmltv_id="FX">FX</channel>
+    <channel update="i" site="indiatimes.com" site_id="Jai%20Maharashtra" xmltv_id="Jai Maharashtra">Jai Maharashtra</channel>
+    <channel update="i" site="indiatimes.com" site_id="Kochu%20TV" xmltv_id="Kochu TV">Kochu TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Manorama%20News" xmltv_id="Manorama News">Manorama News</channel>
+    <channel update="i" site="indiatimes.com" site_id="MBC%20TV" xmltv_id="MBC TV">MBC TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Mega%20Musiq" xmltv_id="Mega Musiq">Mega Musiq</channel>
+    <channel update="i" site="indiatimes.com" site_id="PTC%20News" xmltv_id="PTC News">PTC News</channel>
+    <channel update="i" site="indiatimes.com" site_id="Star%20Movies%20Action" xmltv_id="Star Movies Action">Star Movies Action</channel>
+    <channel update="i" site="indiatimes.com" site_id="Zee%20Business" xmltv_id="Zee Business">Zee Business</channel>
+    <channel update="i" site="indiatimes.com" site_id="Zee%20Madhya%20Pradesh%20Chhattisgarh" xmltv_id="Zee Madhya Pradesh Chhattisgarh">Zee Madhya Pradesh Chhattisgarh</channel>
+    <channel update="i" site="indiatimes.com" site_id="Zee%20Studio" xmltv_id="Zee Studio">Zee Studio</channel>
+    <channel update="i" site="indiatimes.com" site_id="Makkal%20TV" xmltv_id="Makkal TV">Makkal TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Ruposhi%20Bangla%20TV" xmltv_id="Ruposhi Bangla TV">Ruposhi Bangla TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Amrita%20TV" xmltv_id="Amrita TV">Amrita TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="CNBC%20TV18" xmltv_id="CNBC TV18">CNBC TV18</channel>
+    <channel update="i" site="indiatimes.com" site_id="DD%20Chandana" xmltv_id="DD Chandana">DD Chandana</channel>
+    <channel update="i" site="indiatimes.com" site_id="DD%20Girnar" xmltv_id="DD Girnar">DD Girnar</channel>
+    <channel update="i" site="indiatimes.com" site_id="DD%20India" xmltv_id="DD India">DD India</channel>
+    <channel update="i" site="indiatimes.com" site_id="DD%20Sapthagiri" xmltv_id="DD Sapthagiri">DD Sapthagiri</channel>
+    <channel update="i" site="indiatimes.com" site_id="DD%20Sports" xmltv_id="DD Sports">DD Sports</channel>
+    <channel update="i" site="indiatimes.com" site_id="Colors%20Oriya" xmltv_id="Colors Oriya">Colors Oriya</channel>
+    <channel update="i" site="indiatimes.com" site_id="ETV%20Rajasthan" xmltv_id="ETV Rajasthan">ETV Rajasthan</channel>
+    <channel update="i" site="indiatimes.com" site_id="ID" xmltv_id="ID">ID</channel>
+    <channel update="i" site="indiatimes.com" site_id="NDTV%20Good%20Times" xmltv_id="NDTV Good Times">NDTV Good Times</channel>
+    <channel update="i" site="indiatimes.com" site_id="Polimer%20Kannada" xmltv_id="Polimer Kannada">Polimer Kannada</channel>
+    <channel update="i" site="indiatimes.com" site_id="Prarthana%20TV" xmltv_id="Prarthana TV">Prarthana TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Raj%20Musix" xmltv_id="Raj Musix">Raj Musix</channel>
+    <channel update="i" site="indiatimes.com" site_id="Raj%20Musix%20Kannada" xmltv_id="Raj Musix Kannada">Raj Musix Kannada</channel>
+    <channel update="i" site="indiatimes.com" site_id="Sakshi%20TV" xmltv_id="Sakshi TV">Sakshi TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Sandesh%20News" xmltv_id="Sandesh News">Sandesh News</channel>
+    <channel update="i" site="indiatimes.com" site_id="Sangeet%20Bhojpuri" xmltv_id="Sangeet Bhojpuri">Sangeet Bhojpuri</channel>
+    <channel update="i" site="indiatimes.com" site_id="Times%20Now" xmltv_id="Times Now">Times Now</channel>
+    <channel update="i" site="indiatimes.com" site_id="Zee%20Salaam" xmltv_id="Zee Salaam">Zee Salaam</channel>
+    <channel update="i" site="indiatimes.com" site_id="India%2024x7" xmltv_id="India 24x7">India 24x7</channel>
+    <channel update="i" site="indiatimes.com" site_id="Bansal%20News" xmltv_id="Bansal News">Bansal News</channel>
+    <channel update="i" site="indiatimes.com" site_id="ETV%20Bihar" xmltv_id="ETV Bihar">ETV Bihar</channel>
+    <channel update="i" site="indiatimes.com" site_id="Janasri%20News" xmltv_id="Janasri News">Janasri News</channel>
+    <channel update="i" site="indiatimes.com" site_id="News%20Live" xmltv_id="News Live">News Live</channel>
+    <channel update="i" site="indiatimes.com" site_id="Raj%20Digital%20Plus" xmltv_id="Raj Digital Plus">Raj Digital Plus</channel>
+    <channel update="i" site="indiatimes.com" site_id="Big%20Ganga" xmltv_id="Big Ganga">Big Ganga</channel>
+    <channel update="i" site="indiatimes.com" site_id="CNN%20News18" xmltv_id="CNN News18">CNN News18</channel>
+    <channel update="i" site="indiatimes.com" site_id="DD%20Bharati" xmltv_id="DD Bharati">DD Bharati</channel>
+    <channel update="i" site="indiatimes.com" site_id="DD%20Malyalam" xmltv_id="DD Malyalam">DD Malyalam</channel>
+    <channel update="i" site="indiatimes.com" site_id="Delhi%20Aajtak" xmltv_id="Delhi Aajtak">Delhi Aajtak</channel>
+    <channel update="i" site="indiatimes.com" site_id="ET%20Now" xmltv_id="ET Now">ET Now</channel>
+    <channel update="i" site="indiatimes.com" site_id="ETV%20Madhyapradesh" xmltv_id="ETV Madhyapradesh">ETV Madhyapradesh</channel>
+    <channel update="i" site="indiatimes.com" site_id="ETV%20Urdu" xmltv_id="ETV Urdu">ETV Urdu</channel>
+    <channel update="i" site="indiatimes.com" site_id="ETV%20Uttar%20Pradesh" xmltv_id="ETV Uttar Pradesh">ETV Uttar Pradesh</channel>
+    <channel update="i" site="indiatimes.com" site_id="Gemini%20News" xmltv_id="Gemini News">Gemini News</channel>
+    <channel update="i" site="indiatimes.com" site_id="INDIA%20TODAY" xmltv_id="INDIA TODAY">INDIA TODAY</channel>
+    <channel update="i" site="indiatimes.com" site_id="HMTV" xmltv_id="HMTV">HMTV</channel>
+    <channel update="i" site="indiatimes.com" site_id="I%20News" xmltv_id="I News">I News</channel>
+    <channel update="i" site="indiatimes.com" site_id="India%20News%20Haryana" xmltv_id="India News Haryana">India News Haryana</channel>
+    <channel update="i" site="indiatimes.com" site_id="Kasthuri%20Newz%2024" xmltv_id="Kasthuri Newz 24">Kasthuri Newz 24</channel>
+    <channel update="i" site="indiatimes.com" site_id="Loksabha%20TV" xmltv_id="Loksabha TV">Loksabha TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Mahuaa%20Plus" xmltv_id="Mahuaa Plus">Mahuaa Plus</channel>
+    <channel update="i" site="indiatimes.com" site_id="Mathrubhumi%20News" xmltv_id="Mathrubhumi News">Mathrubhumi News</channel>
+    <channel update="i" site="indiatimes.com" site_id="Peppers%20TV" xmltv_id="Peppers TV">Peppers TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Rang" xmltv_id="Rang">Rang</channel>
+    <channel update="i" site="indiatimes.com" site_id="Romedy%20Now" xmltv_id="Romedy Now">Romedy Now</channel>
+    <channel update="i" site="indiatimes.com" site_id="Sadhna" xmltv_id="Sadhna">Sadhna</channel>
+    <channel update="i" site="indiatimes.com" site_id="Samay%20MP%20Chhattisgarh" xmltv_id="Samay MP Chhattisgarh">Samay MP Chhattisgarh</channel>
+    <channel update="i" site="indiatimes.com" site_id="Surya%20Music" xmltv_id="Surya Music">Surya Music</channel>
+    <channel update="i" site="indiatimes.com" site_id="Star%20Gold%20HD" xmltv_id="Star Gold HD">Star Gold HD</channel>
+    <channel update="i" site="indiatimes.com" site_id="Asianet%20Sitara" xmltv_id="Asianet Sitara">Asianet Sitara</channel>
+    <channel update="i" site="indiatimes.com" site_id="MTV%20International" xmltv_id="MTV International">MTV International</channel>
+    <channel update="i" site="indiatimes.com" site_id="Al%20Jazeera" xmltv_id="Al Jazeera">Al Jazeera</channel>
+    <channel update="i" site="indiatimes.com" site_id="CNN%20International" xmltv_id="CNN International">CNN International</channel>
+    <channel update="i" site="indiatimes.com" site_id="Eenadu%20TV" xmltv_id="Eenadu TV">Eenadu TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="WOA%20DW%20GERMAN" xmltv_id="WOA DW GERMAN">WOA DW GERMAN</channel>
+    <channel update="i" site="indiatimes.com" site_id="France%2024" xmltv_id="France 24">France 24</channel>
+    <channel update="i" site="indiatimes.com" site_id="Baby%20TV" xmltv_id="Baby TV">Baby TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Nat%20Geo%20Music" xmltv_id="Nat Geo Music">Nat Geo Music</channel>
+    <channel update="i" site="indiatimes.com" site_id="Nat%20Geo%20People" xmltv_id="Nat Geo People">Nat Geo People</channel>
+    <channel update="i" site="indiatimes.com" site_id="Nat%20Geo%20People%20HD" xmltv_id="Nat Geo People HD">Nat Geo People HD</channel>
+    <channel update="i" site="indiatimes.com" site_id="Neo%20Prime" xmltv_id="Neo Prime">Neo Prime</channel>
+    <channel update="i" site="indiatimes.com" site_id="Nat%20Geo%20Wild%20HD" xmltv_id="Nat Geo Wild HD">Nat Geo Wild HD</channel>
+    <channel update="i" site="indiatimes.com" site_id="HBO%20Hits" xmltv_id="HBO Hits">HBO Hits</channel>
+    <channel update="i" site="indiatimes.com" site_id="Zee%20Cinema%20HD" xmltv_id="Zee Cinema HD">Zee Cinema HD</channel>
+    <channel update="i" site="indiatimes.com" site_id="Zee%20Cafe" xmltv_id="Zee Cafe">Zee Cafe</channel>
+    <channel update="i" site="indiatimes.com" site_id="NDTV%20Profit%20Prime" xmltv_id="NDTV Profit Prime">NDTV Profit Prime</channel>
+    <channel update="i" site="indiatimes.com" site_id="NDTV%2024x7" xmltv_id="NDTV 24x7">NDTV 24x7</channel>
+    <channel update="i" site="indiatimes.com" site_id="Star%20Plus%20HD" xmltv_id="Star Plus HD">Star Plus HD</channel>
+    <channel update="i" site="indiatimes.com" site_id="Star%20Sports%20HD%202" xmltv_id="Star Sports HD 2">Star Sports HD 2</channel>
+    <channel update="i" site="indiatimes.com" site_id="BBC%20India" xmltv_id="BBC India">BBC India</channel>
+    <channel update="i" site="indiatimes.com" site_id="Discovery%20Channel%20HD" xmltv_id="Discovery Channel HD">Discovery Channel HD</channel>
+    <channel update="i" site="indiatimes.com" site_id="GOD%20TV" xmltv_id="GOD TV">GOD TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="National%20Geographic%20Channel%20HD" xmltv_id="National Geographic Channel HD">National Geographic Channel HD</channel>
+    <channel update="i" site="indiatimes.com" site_id="Comedy%20Central" xmltv_id="Comedy Central">Comedy Central</channel>
+    <channel update="i" site="indiatimes.com" site_id="Kairali%20We" xmltv_id="Kairali We">Kairali We</channel>
+    <channel update="i" site="indiatimes.com" site_id="Neo%20Sports" xmltv_id="Neo Sports">Neo Sports</channel>
+    <channel update="i" site="indiatimes.com" site_id="TV9%20Telugu%20News" xmltv_id="TV9 Telugu News">TV9 Telugu News</channel>
+    <channel update="i" site="indiatimes.com" site_id="Discovery%20Turbo" xmltv_id="Discovery Turbo">Discovery Turbo</channel>
+    <channel update="i" site="indiatimes.com" site_id="Trace%20Urban%20HD" xmltv_id="Trace Urban HD">Trace Urban HD</channel>
+    <channel update="i" site="indiatimes.com" site_id="Vh1" xmltv_id="Vh1">Vh1</channel>
+    <channel update="i" site="indiatimes.com" site_id="TV5%20Monde%20Asia" xmltv_id="TV5 Monde Asia">TV5 Monde Asia</channel>
+    <channel update="i" site="indiatimes.com" site_id="Vasanth%20TV" xmltv_id="Vasanth TV">Vasanth TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Zee%20Variasi" xmltv_id="Zee Variasi">Zee Variasi</channel>
+    <channel update="i" site="indiatimes.com" site_id="Aastha" xmltv_id="Aastha">Aastha</channel>
+    <channel update="i" site="indiatimes.com" site_id="DD%20Oriya" xmltv_id="DD Oriya">DD Oriya</channel>
+    <channel update="i" site="indiatimes.com" site_id="Star%20Movies%20HD" xmltv_id="Star Movies HD">Star Movies HD</channel>
+    <channel update="i" site="indiatimes.com" site_id="SVBC" xmltv_id="SVBC">SVBC</channel>
+    <channel update="i" site="indiatimes.com" site_id="Star%20Sports%20HD%201" xmltv_id="Star Sports HD 1">Star Sports HD 1</channel>
+    <channel update="i" site="indiatimes.com" site_id="India%20Talkies" xmltv_id="India Talkies">India Talkies</channel>
+    <channel update="i" site="indiatimes.com" site_id="Zee%20Studio%20HD" xmltv_id="Zee Studio HD">Zee Studio HD</channel>
+    <channel update="i" site="indiatimes.com" site_id="SET%20HD" xmltv_id="SET HD">SET HD</channel>
+    <channel update="i" site="indiatimes.com" site_id="Jaihind%20TV" xmltv_id="Jaihind TV">Jaihind TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="3ABN" xmltv_id="3ABN">3ABN</channel>
+    <channel update="i" site="indiatimes.com" site_id="Mega%2024" xmltv_id="Mega 24">Mega 24</channel>
+    <channel update="i" site="indiatimes.com" site_id="DD%20Urdu" xmltv_id="DD Urdu">DD Urdu</channel>
+    <channel update="i" site="indiatimes.com" site_id="DD%20Kashir" xmltv_id="DD Kashir">DD Kashir</channel>
+    <channel update="i" site="indiatimes.com" site_id="Bloomberg%20TV%20India" xmltv_id="Bloomberg TV India">Bloomberg TV India</channel>
+    <channel update="i" site="indiatimes.com" site_id="Ten%201%20HD" xmltv_id="Ten 1 HD">Ten 1 HD</channel>
+    <channel update="i" site="indiatimes.com" site_id="Sanskar" xmltv_id="Sanskar">Sanskar</channel>
+    <channel update="i" site="indiatimes.com" site_id="Jeevan%20TV" xmltv_id="Jeevan TV">Jeevan TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="TV5%20Telugu" xmltv_id="TV5 Telugu">TV5 Telugu</channel>
+    <channel update="i" site="indiatimes.com" site_id="Zee%20Punjab%20Haryana%20Himachal" xmltv_id="Zee Punjab Haryana Himachal">Zee Punjab Haryana Himachal</channel>
+    <channel update="i" site="indiatimes.com" site_id="CNBC%20Bajar" xmltv_id="CNBC Bajar">CNBC Bajar</channel>
+    <channel update="i" site="indiatimes.com" site_id="Animax" xmltv_id="Animax">Animax</channel>
+    <channel update="i" site="indiatimes.com" site_id="ABN%20Telugu%20News" xmltv_id="ABN Telugu News">ABN Telugu News</channel>
+    <channel update="i" site="indiatimes.com" site_id="Topper" xmltv_id="Topper">Topper</channel>
+    <channel update="i" site="indiatimes.com" site_id="FTV" xmltv_id="FTV">FTV</channel>
+    <channel update="i" site="indiatimes.com" site_id="SIX%20HD" xmltv_id="SIX HD">SIX HD</channel>
+    <channel update="i" site="indiatimes.com" site_id="TCM" xmltv_id="TCM">TCM</channel>
+    <channel update="i" site="indiatimes.com" site_id="Australia%20Plus" xmltv_id="Australia Plus">Australia Plus</channel>
+    <channel update="i" site="indiatimes.com" site_id="9x" xmltv_id="9x">9x</channel>
+    <channel update="i" site="indiatimes.com" site_id="Care%20World" xmltv_id="Care World">Care World</channel>
+    <channel update="i" site="indiatimes.com" site_id="Kairali%20People" xmltv_id="Kairali People">Kairali People</channel>
+    <channel update="i" site="indiatimes.com" site_id="Vanitha%20TV" xmltv_id="Vanitha TV">Vanitha TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Subhavaartha" xmltv_id="Subhavaartha">Subhavaartha</channel>
+    <channel update="i" site="indiatimes.com" site_id="Shalom%20TV" xmltv_id="Shalom TV">Shalom TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="P7News" xmltv_id="P7News">P7News</channel>
+    <channel update="i" site="indiatimes.com" site_id="Indiavision" xmltv_id="Indiavision">Indiavision</channel>
+    <channel update="i" site="indiatimes.com" site_id="Angel%20TV" xmltv_id="Angel TV">Angel TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Vissa%20TV" xmltv_id="Vissa TV">Vissa TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Colors%20HD" xmltv_id="Colors HD">Colors HD</channel>
+    <channel update="i" site="indiatimes.com" site_id="Mahuaa%20News" xmltv_id="Mahuaa News">Mahuaa News</channel>
+    <channel update="i" site="indiatimes.com" site_id="Powervision" xmltv_id="Powervision">Powervision</channel>
+    <channel update="i" site="indiatimes.com" site_id="Firangi" xmltv_id="Firangi">Firangi</channel>
+    <channel update="i" site="indiatimes.com" site_id="Star%20World%20Premiere%20HD" xmltv_id="Star World Premiere HD">Star World Premiere HD</channel>
+    <channel update="i" site="indiatimes.com" site_id="Udaya%20Varthegalu" xmltv_id="Udaya Varthegalu">Udaya Varthegalu</channel>
+    <channel update="i" site="indiatimes.com" site_id="Samay%20National" xmltv_id="Samay National">Samay National</channel>
+    <channel update="i" site="indiatimes.com" site_id="Trace%20Sport%20Stars%20HD" xmltv_id="Trace Sport Stars HD">Trace Sport Stars HD</channel>
+    <channel update="i" site="indiatimes.com" site_id="Travel%20XP" xmltv_id="Travel XP">Travel XP</channel>
+    <channel update="i" site="indiatimes.com" site_id="Nepal%201" xmltv_id="Nepal 1">Nepal 1</channel>
+    <channel update="i" site="indiatimes.com" site_id="Star%20World%20HD" xmltv_id="Star World HD">Star World HD</channel>
+    <channel update="i" site="indiatimes.com" site_id="NewsX" xmltv_id="NewsX">NewsX</channel>
+    <channel update="i" site="indiatimes.com" site_id="Aastha%20Bhajan" xmltv_id="Aastha Bhajan">Aastha Bhajan</channel>
+    <channel update="i" site="indiatimes.com" site_id="Zee%20TV%20HD" xmltv_id="Zee TV HD">Zee TV HD</channel>
+    <channel update="i" site="indiatimes.com" site_id="Sri%20Sankara" xmltv_id="Sri Sankara">Sri Sankara</channel>
+    <channel update="i" site="indiatimes.com" site_id="CNBC%20TV18%20Prime%20HD" xmltv_id="CNBC TV18 Prime HD">CNBC TV18 Prime HD</channel>
+    <channel update="i" site="indiatimes.com" site_id="Imayam%20TV" xmltv_id="Imayam TV">Imayam TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Gyandarshan" xmltv_id="Gyandarshan">Gyandarshan</channel>
+    <channel update="i" site="indiatimes.com" site_id="Aradana%20TV" xmltv_id="Aradana TV">Aradana TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Chardikla%20Time%20TV" xmltv_id="Chardikla Time TV">Chardikla Time TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Life%20OK%20HD" xmltv_id="Life OK HD">Life OK HD</channel>
+    <channel update="i" site="indiatimes.com" site_id="Kappa%20TV" xmltv_id="Kappa TV">Kappa TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="IBC24" xmltv_id="IBC24">IBC24</channel>
+    <channel update="i" site="indiatimes.com" site_id="Tamilan%20TV" xmltv_id="Tamilan TV">Tamilan TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Moon%20TV" xmltv_id="Moon TV">Moon TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Athmeeya%20Yathra%20TV" xmltv_id="Athmeeya Yathra TV">Athmeeya Yathra TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="NHK%20World" xmltv_id="NHK World">NHK World</channel>
+    <channel update="i" site="indiatimes.com" site_id="Samay%20UP%20Uttrakhand" xmltv_id="Samay UP Uttrakhand">Samay UP Uttrakhand</channel>
+    <channel update="i" site="indiatimes.com" site_id="Sahara%20Samay%20Mah%20Guj" xmltv_id="Sahara Samay Mah Guj">Sahara Samay Mah Guj</channel>
+    <channel update="i" site="indiatimes.com" site_id="Tarang%20Music" xmltv_id="Tarang Music">Tarang Music</channel>
+    <channel update="i" site="indiatimes.com" site_id="TV1" xmltv_id="TV1">TV1</channel>
+    <channel update="i" site="indiatimes.com" site_id="Mangal%20Kalash%20TV" xmltv_id="Mangal Kalash TV">Mangal Kalash TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Shop%20CJ" xmltv_id="Shop CJ">Shop CJ</channel>
+    <channel update="i" site="indiatimes.com" site_id="Darshan%2024" xmltv_id="Darshan 24">Darshan 24</channel>
+    <channel update="i" site="indiatimes.com" site_id="DD%20North%20East" xmltv_id="DD North East">DD North East</channel>
+    <channel update="i" site="indiatimes.com" site_id="Satsang" xmltv_id="Satsang">Satsang</channel>
+    <channel update="i" site="indiatimes.com" site_id="Raj%20News%2024x7" xmltv_id="Raj News 24x7">Raj News 24x7</channel>
+    <channel update="i" site="indiatimes.com" site_id="Total%20TV" xmltv_id="Total TV">Total TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Paras%20TV" xmltv_id="Paras TV">Paras TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Tara%20Muzik" xmltv_id="Tara Muzik">Tara Muzik</channel>
+    <channel update="i" site="indiatimes.com" site_id="Shubh%20Sandesh" xmltv_id="Shubh Sandesh">Shubh Sandesh</channel>
+    <channel update="i" site="indiatimes.com" site_id="Arihant" xmltv_id="Arihant">Arihant</channel>
+    <channel update="i" site="indiatimes.com" site_id="Samay%20Bihar%20Jharkhand" xmltv_id="Samay Bihar Jharkhand">Samay Bihar Jharkhand</channel>
+    <channel update="i" site="indiatimes.com" site_id="WIN%20TV" xmltv_id="WIN TV">WIN TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Channel%20One" xmltv_id="Channel One">Channel One</channel>
+    <channel update="i" site="indiatimes.com" site_id="Disha%20TV" xmltv_id="Disha TV">Disha TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Ten%20TV%20Telugu%20News" xmltv_id="Ten TV Telugu News">Ten TV Telugu News</channel>
+    <channel update="i" site="indiatimes.com" site_id="Chithiram" xmltv_id="Chithiram">Chithiram</channel>
+    <channel update="i" site="indiatimes.com" site_id="Jan%20TV" xmltv_id="Jan TV">Jan TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Adhyatma%20TV" xmltv_id="Adhyatma TV">Adhyatma TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="MH1%20News" xmltv_id="MH1 News">MH1 News</channel>
+    <channel update="i" site="indiatimes.com" site_id="Sobhagya%20Mithila%20TV" xmltv_id="Sobhagya Mithila TV">Sobhagya Mithila TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="RT" xmltv_id="RT">RT</channel>
+    <channel update="i" site="indiatimes.com" site_id="DY365" xmltv_id="DY365">DY365</channel>
+    <channel update="i" site="indiatimes.com" site_id="KTV%20HD" xmltv_id="KTV HD">KTV HD</channel>
+    <channel update="i" site="indiatimes.com" site_id="History%20TV18%20HD" xmltv_id="History TV18 HD">History TV18 HD</channel>
+    <channel update="i" site="indiatimes.com" site_id="Yes%20Indiavision" xmltv_id="Yes Indiavision">Yes Indiavision</channel>
+    <channel update="i" site="indiatimes.com" site_id="Sudarshan%20News" xmltv_id="Sudarshan News">Sudarshan News</channel>
+    <channel update="i" site="indiatimes.com" site_id="Ishwar%20TV" xmltv_id="Ishwar TV">Ishwar TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Aalami%20Samay" xmltv_id="Aalami Samay">Aalami Samay</channel>
+    <channel update="i" site="indiatimes.com" site_id="Gyandarshan%202" xmltv_id="Gyandarshan 2">Gyandarshan 2</channel>
+    <channel update="i" site="indiatimes.com" site_id="Dhoom%20Music" xmltv_id="Dhoom Music">Dhoom Music</channel>
+    <channel update="i" site="indiatimes.com" site_id="Sathiyam%20TV" xmltv_id="Sathiyam TV">Sathiyam TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="HBO%20Hits%20HD" xmltv_id="HBO Hits HD">HBO Hits HD</channel>
+    <channel update="i" site="indiatimes.com" site_id="Sun%20TV%20HD" xmltv_id="Sun TV HD">Sun TV HD</channel>
+    <channel update="i" site="indiatimes.com" site_id="Peace%20of%20Mind" xmltv_id="Peace of Mind">Peace of Mind</channel>
+    <channel update="i" site="indiatimes.com" site_id="Fox%20Life%20HD" xmltv_id="Fox Life HD">Fox Life HD</channel>
+    <channel update="i" site="indiatimes.com" site_id="9XO" xmltv_id="9XO">9XO</channel>
+    <channel update="i" site="indiatimes.com" site_id="Lemon%20News" xmltv_id="Lemon News">Lemon News</channel>
+    <channel update="i" site="indiatimes.com" site_id="Khoj%20India" xmltv_id="Khoj India">Khoj India</channel>
+    <channel update="i" site="indiatimes.com" site_id="M%20Tunes%20HD" xmltv_id="M Tunes HD">M Tunes HD</channel>
+    <channel update="i" site="indiatimes.com" site_id="Anjan%20TV" xmltv_id="Anjan TV">Anjan TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Pratidin%20Time" xmltv_id="Pratidin Time">Pratidin Time</channel>
+    <channel update="i" site="indiatimes.com" site_id="Jano%20Duniya" xmltv_id="Jano Duniya">Jano Duniya</channel>
+    <channel update="i" site="indiatimes.com" site_id="Tara%20News" xmltv_id="Tara News">Tara News</channel>
+    <channel update="i" site="indiatimes.com" site_id="MediaOne" xmltv_id="MediaOne">MediaOne</channel>
+    <channel update="i" site="indiatimes.com" site_id="India%20News%20Rajasthan" xmltv_id="India News Rajasthan">India News Rajasthan</channel>
+    <channel update="i" site="indiatimes.com" site_id="Soham%20TV" xmltv_id="Soham TV">Soham TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Channel%20UFX" xmltv_id="Channel UFX">Channel UFX</channel>
+    <channel update="i" site="indiatimes.com" site_id="Kaumudy%20TV" xmltv_id="Kaumudy TV">Kaumudy TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="TV24" xmltv_id="TV24">TV24</channel>
+    <channel update="i" site="indiatimes.com" site_id="Shalini%20Plus" xmltv_id="Shalini Plus">Shalini Plus</channel>
+    <channel update="i" site="indiatimes.com" site_id="Lotus%20News" xmltv_id="Lotus News">Lotus News</channel>
+    <channel update="i" site="indiatimes.com" site_id="Y%20Plus" xmltv_id="Y Plus">Y Plus</channel>
+    <channel update="i" site="indiatimes.com" site_id="Sada%20Channel" xmltv_id="Sada Channel">Sada Channel</channel>
+    <channel update="i" site="indiatimes.com" site_id="Jinvani%20TV" xmltv_id="Jinvani TV">Jinvani TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Mahaa%20TV" xmltv_id="Mahaa TV">Mahaa TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Gemini%20TV%20HD" xmltv_id="Gemini TV HD">Gemini TV HD</channel>
+    <channel update="i" site="indiatimes.com" site_id="Oscar%20Movies" xmltv_id="Oscar Movies">Oscar Movies</channel>
+    <channel update="i" site="indiatimes.com" site_id="Reporter" xmltv_id="Reporter">Reporter</channel>
+    <channel update="i" site="indiatimes.com" site_id="Sristi%20TV" xmltv_id="Sristi TV">Sristi TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Travel%20XP%20HD" xmltv_id="Travel XP HD">Travel XP HD</channel>
+    <channel update="i" site="indiatimes.com" site_id="Sun%20Music%20HD" xmltv_id="Sun Music HD">Sun Music HD</channel>
+    <channel update="i" site="indiatimes.com" site_id="Baby%20TV%20HD" xmltv_id="Baby TV HD">Baby TV HD</channel>
+    <channel update="i" site="indiatimes.com" site_id="SMBC%20Insight" xmltv_id="SMBC Insight">SMBC Insight</channel>
+    <channel update="i" site="indiatimes.com" site_id="Salvation" xmltv_id="Salvation">Salvation</channel>
+    <channel update="i" site="indiatimes.com" site_id="Bindass%20Play%20HD" xmltv_id="Bindass Play HD">Bindass Play HD</channel>
+    <channel update="i" site="indiatimes.com" site_id="Bhakti%20Sagar" xmltv_id="Bhakti Sagar">Bhakti Sagar</channel>
+    <channel update="i" site="indiatimes.com" site_id="Chirithira" xmltv_id="Chirithira">Chirithira</channel>
+    <channel update="i" site="indiatimes.com" site_id="Gemini%20Action" xmltv_id="Gemini Action">Gemini Action</channel>
+    <channel update="i" site="indiatimes.com" site_id="7S%20Music" xmltv_id="7S Music">7S Music</channel>
+    <channel update="i" site="indiatimes.com" site_id="4%20Real%20News" xmltv_id="4 Real News">4 Real News</channel>
+    <channel update="i" site="indiatimes.com" site_id="Super%20TV" xmltv_id="Super TV">Super TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="Janta%20TV" xmltv_id="Janta TV">Janta TV</channel>
+    <channel update="i" site="indiatimes.com" site_id="News%20Nation" xmltv_id="News Nation">News Nation</channel>
+    <channel update="i" site="indiatimes.com" site_id="India%20News%20UP" xmltv_id="India News UP">India News UP</channel>
+    <channel update="i" site="indiatimes.com" site_id="NewsTime%2024x7" xmltv_id="NewsTime 24x7">NewsTime 24x7</channel>
+    <channel update="i" site="indiatimes.com" site_id="Raj%20Musix%20Malayalam" xmltv_id="Raj Musix Malayalam">Raj Musix Malayalam</channel>
+    <channel update="i" site="indiatimes.com" site_id="DD%20Madhya%20Pradesh" xmltv_id="DD Madhya Pradesh">DD Madhya Pradesh</channel>
+    <channel update="i" site="indiatimes.com" site_id="NTV%20Bangladesh" xmltv_id="NTV Bangladesh">NTV Bangladesh</channel>
+    <channel update="i" site="indiatimes.com" site_id="Pearls%20Haryana%20Express" xmltv_id="Pearls Haryana Express">Pearls Haryana Express</channel>
+    <channel update="i" site="indiatimes.com" site_id="Lord%20Buddha" xmltv_id="Lord Buddha">Lord Buddha</channel>
+    <channel update="i" site="indiatimes.com" site_id="SET%20PIX%20HD" xmltv_id="SET PIX HD">SET PIX HD</channel>
+    <channel update="i" site="indiatimes.com" site_id="DD%20Bihar" xmltv_id="DD Bihar">DD Bihar</channel>
+    <channel update="i" site="indiatimes.com" site_id="Ten%20Cricket%20HD" xmltv_id="Ten Cricket HD">Ten Cricket HD</channel>
+    <channel update="i" site="indiatimes.com" site_id="Kanak%20News" xmltv_id="Kanak News">Kanak News</channel>
+    <channel update="i" site="indiatimes.com" site_id="Nat%20Geo%20Music%20HD" xmltv_id="Nat Geo Music HD">Nat Geo Music HD</channel>
+    <channel update="i" site="indiatimes.com" site_id="The%20EPIC%20Channel" xmltv_id="The EPIC Channel">The EPIC Channel</channel>
+    <channel update="i" site="indiatimes.com" site_id="Animal%20Planet%20HD%20World" xmltv_id="Animal Planet HD World">Animal Planet HD World</channel>
+    <channel update="i" site="indiatimes.com" site_id="Movies%20Now%20HD" xmltv_id="Movies Now HD">Movies Now HD</channel>
+    <channel update="i" site="indiatimes.com" site_id="Home%20Shop%2018" xmltv_id="Home Shop 18">Home Shop 18</channel>
+    <channel update="i" site="indiatimes.com" site_id="Sun%20Action" xmltv_id="Sun Action">Sun Action</channel>
+    <channel update="i" site="indiatimes.com" site_id="And%20TV" xmltv_id="And TV">And TV</channel>
+  </channels>
+</site>

@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<site generator-info-name="WebGrab+Plus/w MDB &amp; REX Postprocess -- version 1.55.13/0.02 -- Jan van Straaten" site="tv.burrp.com">
+  <channels>
+    <channel update="i" site="tv.burrp.com" site_id="star-movies/59" xmltv_id="Star Movies">Star Movies</channel>
+    <channel update="i" site="tv.burrp.com" site_id="hbo/8" xmltv_id="HBO">HBO</channel>
+    <channel update="i" site="tv.burrp.com" site_id="discovery-channel/46" xmltv_id="Discovery Channel">Discovery Channel</channel>
+    <channel update="i" site="tv.burrp.com" site_id="sony-max/51" xmltv_id="Sony MAX">Sony MAX</channel>
+    <channel update="i" site="tv.burrp.com" site_id="zee-studio/63" xmltv_id="Zee Studio">Zee Studio</channel>
+    <channel update="i" site="tv.burrp.com" site_id="sony-pix/53" xmltv_id="Sony PIX">Sony PIX</channel>
+    <channel update="i" site="tv.burrp.com" site_id="sony-entertainment-tv/78" xmltv_id="Sony Entertainment TV">Sony Entertainment TV</channel>
+    <channel update="i" site="tv.burrp.com" site_id="national-geographic-channel/71" xmltv_id="National Geographic Channel">National Geographic Channel</channel>
+    <channel update="i" site="tv.burrp.com" site_id="axn/1" xmltv_id="AXN">AXN</channel>
+    <channel update="i" site="tv.burrp.com" site_id="star-gold/64" xmltv_id="Star Gold">Star Gold</channel>
+    <channel update="i" site="tv.burrp.com" site_id="colors/66" xmltv_id="Colors">Colors</channel>
+    <channel update="i" site="tv.burrp.com" site_id="star-plus/29" xmltv_id="Star Plus">Star Plus</channel>
+    <channel update="i" site="tv.burrp.com" site_id="star-world/23" xmltv_id="Star World">Star World</channel>
+    <channel update="i" site="tv.burrp.com" site_id="movies-now/207" xmltv_id="Movies Now">Movies Now</channel>
+    <channel update="i" site="tv.burrp.com" site_id="zee-cinema/4" xmltv_id="Zee Cinema">Zee Cinema</channel>
+    <channel update="i" site="tv.burrp.com" site_id="ten-sports/105" xmltv_id="Ten Sports">Ten Sports</channel>
+    <channel update="i" site="tv.burrp.com" site_id="utv-action/73" xmltv_id="UTV Action">UTV Action</channel>
+    <channel update="i" site="tv.burrp.com" site_id="zee-tv/32" xmltv_id="ZEE TV">ZEE TV</channel>
+    <channel update="i" site="tv.burrp.com" site_id="utv-movies/76" xmltv_id="UTV Movies">UTV Movies</channel>
+    <channel update="i" site="tv.burrp.com" site_id="star-sports-4/101" xmltv_id="Star Sports 4">Star Sports 4</channel>
+    <channel update="i" site="tv.burrp.com" site_id="wb/99" xmltv_id="WB">WB</channel>
+    <channel update="i" site="tv.burrp.com" site_id="star-sports-1/102" xmltv_id="Star Sports 1">Star Sports 1</channel>
+    <channel update="i" site="tv.burrp.com" site_id="tlc/61" xmltv_id="TLC">TLC</channel>
+    <channel update="i" site="tv.burrp.com" site_id="zee-cafe/65" xmltv_id="Zee Cafe">Zee Cafe</channel>
+    <channel update="i" site="tv.burrp.com" site_id="mtv/9" xmltv_id="MTV">MTV</channel>
+    <channel update="i" site="tv.burrp.com" site_id="cartoon-network/3" xmltv_id="Cartoon Network">Cartoon Network</channel>
+    <channel update="i" site="tv.burrp.com" site_id="world-movies/74" xmltv_id="World Movies">World Movies</channel>
+    <channel update="i" site="tv.burrp.com" site_id="star-sports-3/103" xmltv_id="Star Sports 3">Star Sports 3</channel>
+    <channel update="i" site="tv.burrp.com" site_id="sony-sab/77" xmltv_id="Sony SAB">Sony SAB</channel>
+    <channel update="i" site="tv.burrp.com" site_id="fox-life/83" xmltv_id="Fox Life">Fox Life</channel>
+    <channel update="i" site="tv.burrp.com" site_id="zoom/20" xmltv_id="Zoom">Zoom</channel>
+    <channel update="i" site="tv.burrp.com" site_id="animal-planet/45" xmltv_id="Animal Planet">Animal Planet</channel>
+    <channel update="i" site="tv.burrp.com" site_id="channel-[v]/81" xmltv_id="Channel [V]">Channel [V]</channel>
+    <channel update="i" site="tv.burrp.com" site_id="filmy/82" xmltv_id="FILMY">FILMY</channel>
+    <channel update="i" site="tv.burrp.com" site_id="pogo/58" xmltv_id="POGO">POGO</channel>
+    <channel update="i" site="tv.burrp.com" site_id="ndtv-good-times/98" xmltv_id="NDTV Good Times">NDTV Good Times</channel>
+    <channel update="i" site="tv.burrp.com" site_id="disney-channel/93" xmltv_id="Disney Channel">Disney Channel</channel>
+    <channel update="i" site="tv.burrp.com" site_id="b4u-movies/88" xmltv_id="B4U Movies">B4U Movies</channel>
+    <channel update="i" site="tv.burrp.com" site_id="discovery-science/172" xmltv_id="Discovery Science">Discovery Science</channel>
+    <channel update="i" site="tv.burrp.com" site_id="bindass/75" xmltv_id="Bindass">Bindass</channel>
+    <channel update="i" site="tv.burrp.com" site_id="ten-action/154" xmltv_id="Ten Action">Ten Action</channel>
+    <channel update="i" site="tv.burrp.com" site_id="vh1/80" xmltv_id="Vh1">Vh1</channel>
+    <channel update="i" site="tv.burrp.com" site_id="ndtv-24x7/158" xmltv_id="NDTV 24X7">NDTV 24X7</channel>
+    <channel update="i" site="tv.burrp.com" site_id="neo-prime/100" xmltv_id="Neo Prime">Neo Prime</channel>
+    <channel update="i" site="tv.burrp.com" site_id="mgm/95" xmltv_id="MGM">MGM</channel>
+    <channel update="i" site="tv.burrp.com" site_id="neo-sports/49" xmltv_id="Neo Sports">Neo Sports</channel>
+    <channel update="i" site="tv.burrp.com" site_id="national-geographic-channel-hd/181" xmltv_id="National Geographic Channel HD">National Geographic Channel HD</channel>
+    <channel update="i" site="tv.burrp.com" site_id="ten-cricket/186" xmltv_id="Ten Cricket">Ten Cricket</channel>
+    <channel update="i" site="tv.burrp.com" site_id="sahara-one/89" xmltv_id="Sahara One">Sahara One</channel>
+    <channel update="i" site="tv.burrp.com" site_id="history-tv-18/265" xmltv_id="History Tv 18">History Tv 18</channel>
+    <channel update="i" site="tv.burrp.com" site_id="cnbc-tv18/106" xmltv_id="CNBC TV18">CNBC TV18</channel>
+    <channel update="i" site="tv.burrp.com" site_id="movies-ok/270" xmltv_id="Movies Ok">Movies Ok</channel>
+    <channel update="i" site="tv.burrp.com" site_id="disney-xd/96" xmltv_id="Disney XD">Disney XD</channel>
+    <channel update="i" site="tv.burrp.com" site_id="bbc-world-news/85" xmltv_id="BBC World News">BBC World News</channel>
+    <channel update="i" site="tv.burrp.com" site_id="zee-classic/92" xmltv_id="Zee Classic">Zee Classic</channel>
+    <channel update="i" site="tv.burrp.com" site_id="life-ok/259" xmltv_id="Life Ok">Life Ok</channel>
+    <channel update="i" site="tv.burrp.com" site_id="cnn-ibn/50" xmltv_id="CNN-IBN">CNN-IBN</channel>
+    <channel update="i" site="tv.burrp.com" site_id="star-utsav/30" xmltv_id="Star Utsav">Star Utsav</channel>
+    <channel update="i" site="tv.burrp.com" site_id="9x/84" xmltv_id="9X">9X</channel>
+    <channel update="i" site="tv.burrp.com" site_id="zee-action/90" xmltv_id="Zee Action">Zee Action</channel>
+    <channel update="i" site="tv.burrp.com" site_id="discovery-turbo/171" xmltv_id="Discovery Turbo">Discovery Turbo</channel>
+    <channel update="i" site="tv.burrp.com" site_id="star-movies-action/284" xmltv_id="Star Movies Action">Star Movies Action</channel>
+    <channel update="i" site="tv.burrp.com" site_id="times-now/127" xmltv_id="Times Now">Times Now</channel>
+    <channel update="i" site="tv.burrp.com" site_id="nickelodeon/79" xmltv_id="Nickelodeon">Nickelodeon</channel>
+    <channel update="i" site="tv.burrp.com" site_id="ndtv-profit/159" xmltv_id="NDTV Profit">NDTV Profit</channel>
+    <channel update="i" site="tv.burrp.com" site_id="cnbc-awaaz/110" xmltv_id="CNBC AWAAZ">CNBC AWAAZ</channel>
+    <channel update="i" site="tv.burrp.com" site_id="hungama-tv/130" xmltv_id="Hungama TV">Hungama TV</channel>
+    <channel update="i" site="tv.burrp.com" site_id="9xm/104" xmltv_id="9XM">9XM</channel>
+    <channel update="i" site="tv.burrp.com" site_id="dd-national/174" xmltv_id="DD National">DD National</channel>
+    <channel update="i" site="tv.burrp.com" site_id="ndtv-india/160" xmltv_id="NDTV India">NDTV India</channel>
+    <channel update="i" site="tv.burrp.com" site_id="fox-crime/168" xmltv_id="Fox Crime">Fox Crime</channel>
+    <channel update="i" site="tv.burrp.com" site_id="zee-premier/91" xmltv_id="Zee Premier">Zee Premier</channel>
+    <channel update="i" site="tv.burrp.com" site_id="cnn/86" xmltv_id="CNN">CNN</channel>
+    <channel update="i" site="tv.burrp.com" site_id="nat-geo-wild/180" xmltv_id="Nat Geo Wild">Nat Geo Wild</channel>
+    <channel update="i" site="tv.burrp.com" site_id="sun-tv/152" xmltv_id="Sun Tv">Sun Tv</channel>
+    <channel update="i" site="tv.burrp.com" site_id="discovery-hd/182" xmltv_id="Discovery HD">Discovery HD</channel>
+    <channel update="i" site="tv.burrp.com" site_id="comedy-central/267" xmltv_id="Comedy Central">Comedy Central</channel>
+    <channel update="i" site="tv.burrp.com" site_id="nat-geo-people/173" xmltv_id="Nat Geo People">Nat Geo People</channel>
+    <channel update="i" site="tv.burrp.com" site_id="b4u-music/87" xmltv_id="B4U Music">B4U Music</channel>
+    <channel update="i" site="tv.burrp.com" site_id="&amp;-pictures/385" xmltv_id="&amp; Pictures">&amp; Pictures</channel>
+    <channel update="i" site="tv.burrp.com" site_id="sony-six/282" xmltv_id="Sony Six">Sony Six</channel>
+    <channel update="i" site="tv.burrp.com" site_id="ktv/162" xmltv_id="KTV">KTV</channel>
+    <channel update="i" site="tv.burrp.com" site_id="ftv/7" xmltv_id="FTV">FTV</channel>
+    <channel update="i" site="tv.burrp.com" site_id="star-movies-hd/245" xmltv_id="Star Movies HD">Star Movies HD</channel>
+    <channel update="i" site="tv.burrp.com" site_id="fx/169" xmltv_id="FX">FX</channel>
+    <channel update="i" site="tv.burrp.com" site_id="asianet/153" xmltv_id="Asianet">Asianet</channel>
+    <channel update="i" site="tv.burrp.com" site_id="star-vijay/164" xmltv_id="Star Vijay">Star Vijay</channel>
+    <channel update="i" site="tv.burrp.com" site_id="ibn-7/111" xmltv_id="IBN 7">IBN 7</channel>
+    <channel update="i" site="tv.burrp.com" site_id="zee-talkies/132" xmltv_id="Zee Talkies">Zee Talkies</channel>
+    <channel update="i" site="tv.burrp.com" site_id="gemini-tv/137" xmltv_id="Gemini Tv">Gemini Tv</channel>
+    <channel update="i" site="tv.burrp.com" site_id="big-cbs-prime/213" xmltv_id="Big CBS Prime">Big CBS Prime</channel>
+    <channel update="i" site="tv.burrp.com" site_id="surya-tv/136" xmltv_id="Surya Tv">Surya Tv</channel>
+    <channel update="i" site="tv.burrp.com" site_id="cinema-tv/280" xmltv_id="Cinema TV">Cinema TV</channel>
+    <channel update="i" site="tv.burrp.com" site_id="zee-trendz/94" xmltv_id="Zee Trendz">Zee Trendz</channel>
+    <channel update="i" site="tv.burrp.com" site_id="animax/57" xmltv_id="Animax">Animax</channel>
+    <channel update="i" site="tv.burrp.com" site_id="gemini-movies/185" xmltv_id="Gemini Movies">Gemini Movies</channel>
+    <channel update="i" site="tv.burrp.com" site_id="big-cbs-love/219" xmltv_id="Big CBS Love">Big CBS Love</channel>
+    <channel update="i" site="tv.burrp.com" site_id="star-sports-2/513" xmltv_id="Star Sports 2">Star Sports 2</channel>
+    <channel update="i" site="tv.burrp.com" site_id="zing/109" xmltv_id="Zing">Zing</channel>
+    <channel update="i" site="tv.burrp.com" site_id="z-etc/113" xmltv_id="Z etc">Z etc</channel>
+    <channel update="i" site="tv.burrp.com" site_id="star-gold-hd/243" xmltv_id="Star Gold HD">Star Gold HD</channel>
+    <channel update="i" site="tv.burrp.com" site_id="zee-marathi/133" xmltv_id="Zee Marathi">Zee Marathi</channel>
+    <channel update="i" site="tv.burrp.com" site_id="jaya-tv/147" xmltv_id="Jaya Tv">Jaya Tv</channel>
+    <channel update="i" site="tv.burrp.com" site_id="asianet-plus/157" xmltv_id="Asianet Plus">Asianet Plus</channel>
+    <channel update="i" site="tv.burrp.com" site_id="kalaignar-tv/189" xmltv_id="Kalaignar Tv">Kalaignar Tv</channel>
+    <channel update="i" site="tv.burrp.com" site_id="kiran-tv/145" xmltv_id="Kiran Tv">Kiran Tv</channel>
+    <channel update="i" site="tv.burrp.com" site_id="etv/120" xmltv_id="Etv">Etv</channel>
+    <channel update="i" site="tv.burrp.com" site_id="zee-smile/155" xmltv_id="Zee Smile">Zee Smile</channel>
+    <channel update="i" site="tv.burrp.com" site_id="star-world-hd/241" xmltv_id="Star World HD">Star World HD</channel>
+    <channel update="i" site="tv.burrp.com" site_id="romedy-now/482" xmltv_id="Romedy Now">Romedy Now</channel>
+    <channel update="i" site="tv.burrp.com" site_id="dd-sports/176" xmltv_id="DD Sports">DD Sports</channel>
+    <channel update="i" site="tv.burrp.com" site_id="aaj-tak/290" xmltv_id="Aaj Tak">Aaj Tak</channel>
+    <channel update="i" site="tv.burrp.com" site_id="raj-tv/144" xmltv_id="Raj Tv">Raj Tv</channel>
+    <channel update="i" site="tv.burrp.com" site_id="hbo-hits/285" xmltv_id="HBO Hits">HBO Hits</channel>
+    <channel update="i" site="tv.burrp.com" site_id="sony-mix/296" xmltv_id="Sony Mix">Sony Mix</channel>
+    <channel update="i" site="tv.burrp.com" site_id="star-plus-hd/239" xmltv_id="Star Plus HD">Star Plus HD</channel>
+    <channel update="i" site="tv.burrp.com" site_id="food-food/251" xmltv_id="Food Food">Food Food</channel>
+    <channel update="i" site="tv.burrp.com" site_id="bindass-play/253" xmltv_id="Bindass Play">Bindass Play</channel>
+    <channel update="i" site="tv.burrp.com" site_id="etv-marathi/117" xmltv_id="Etv Marathi">Etv Marathi</channel>
+    <channel update="i" site="tv.burrp.com" site_id="hbo-defined/286" xmltv_id="HBO Defined">HBO Defined</channel>
+    <channel update="i" site="tv.burrp.com" site_id="star-pravah/131" xmltv_id="Star Pravah">Star Pravah</channel>
+    <channel update="i" site="tv.burrp.com" site_id="india-talkies/199" xmltv_id="India Talkies">India Talkies</channel>
+    <channel update="i" site="tv.burrp.com" site_id="asianet-movies/271" xmltv_id="Asianet Movies">Asianet Movies</channel>
+    <channel update="i" site="tv.burrp.com" site_id="star-jalsha/119" xmltv_id="Star Jalsha">Star Jalsha</channel>
+    <channel update="i" site="tv.burrp.com" site_id="dd-india/178" xmltv_id="DD India">DD India</channel>
+    <channel update="i" site="tv.burrp.com" site_id="travel-xp/211" xmltv_id="Travel XP">Travel XP</channel>
+    <channel update="i" site="tv.burrp.com" site_id="udaya-movies/140" xmltv_id="Udaya Movies">Udaya Movies</channel>
+    <channel update="i" site="tv.burrp.com" site_id="mi-marathi/114" xmltv_id="Mi Marathi">Mi Marathi</channel>
+    <channel update="i" site="tv.burrp.com" site_id="homeshop-18/128" xmltv_id="HomeShop 18">HomeShop 18</channel>
+    <channel update="i" site="tv.burrp.com" site_id="ibn-lokmat/108" xmltv_id="IBN Lokmat">IBN Lokmat</channel>
+    <channel update="i" site="tv.burrp.com" site_id="maa-movies/231" xmltv_id="Maa Movies">Maa Movies</channel>
+    <channel update="i" site="tv.burrp.com" site_id="dd-news/175" xmltv_id="DD News">DD News</channel>
+    <channel update="i" site="tv.burrp.com" site_id="ten-hd/314" xmltv_id="Ten HD">Ten HD</channel>
+    <channel update="i" site="tv.burrp.com" site_id="dd-bharati/177" xmltv_id="DD Bharati">DD Bharati</channel>
+    <channel update="i" site="tv.burrp.com" site_id="maa-tv/247" xmltv_id="Maa Tv">Maa Tv</channel>
+    <channel update="i" site="tv.burrp.com" site_id="udaya/134" xmltv_id="Udaya">Udaya</channel>
+    <channel update="i" site="tv.burrp.com" site_id="asianet-news/166" xmltv_id="Asianet News">Asianet News</channel>
+    <channel update="i" site="tv.burrp.com" site_id="discovery-kids/291" xmltv_id="Discovery Kids">Discovery Kids</channel>
+    <channel update="i" site="tv.burrp.com" site_id="raj-digital-plus/161" xmltv_id="Raj Digital Plus">Raj Digital Plus</channel>
+    <channel update="i" site="tv.burrp.com" site_id="jaya-movie/221" xmltv_id="Jaya Movie">Jaya Movie</channel>
+    <channel update="i" site="tv.burrp.com" site_id="etv-gujarati/122" xmltv_id="Etv Gujarati">Etv Gujarati</channel>
+    <channel update="i" site="tv.burrp.com" site_id="etv-kannada/124" xmltv_id="Etv Kannada">Etv Kannada</channel>
+    <channel update="i" site="tv.burrp.com" site_id="amrita-tv/205" xmltv_id="Amrita Tv">Amrita Tv</channel>
+    <channel update="i" site="tv.burrp.com" site_id="music-india/203" xmltv_id="Music India">Music India</channel>
+    <channel update="i" site="tv.burrp.com" site_id="etv-bangla/115" xmltv_id="Etv Bangla">Etv Bangla</channel>
+    <channel update="i" site="tv.burrp.com" site_id="chutti-tv/112" xmltv_id="Chutti TV">Chutti TV</channel>
+    <channel update="i" site="tv.burrp.com" site_id="mastiii/237" xmltv_id="Mastiii">Mastiii</channel>
+    <channel update="i" site="tv.burrp.com" site_id="discovery-tamil/364" xmltv_id="Discovery Tamil">Discovery Tamil</channel>
+    <channel update="i" site="tv.burrp.com" site_id="jaya-plus/148" xmltv_id="Jaya Plus">Jaya Plus</channel>
+    <channel update="i" site="tv.burrp.com" site_id="etv-2/121" xmltv_id="Etv 2">Etv 2</channel>
+    <channel update="i" site="tv.burrp.com" site_id="kairali-tv/197" xmltv_id="Kairali Tv">Kairali Tv</channel>
+    <channel update="i" site="tv.burrp.com" site_id="dabangg-tv/297" xmltv_id="Dabangg TV">Dabangg TV</channel>
+    <channel update="i" site="tv.burrp.com" site_id="big-magic/357" xmltv_id="Big Magic">Big Magic</channel>
+    <channel update="i" site="tv.burrp.com" site_id="jaya-max/149" xmltv_id="Jaya Max">Jaya Max</channel>
+    <channel update="i" site="tv.burrp.com" site_id="newsx/129" xmltv_id="NewsX">NewsX</channel>
+    <channel update="i" site="tv.burrp.com" site_id="movies-now-hd/518" xmltv_id="Movies Now HD">Movies Now HD</channel>
+    <channel update="i" site="tv.burrp.com" site_id="dd-urdu/179" xmltv_id="DD Urdu">DD Urdu</channel>
+    <channel update="i" site="tv.burrp.com" site_id="australia-network/187" xmltv_id="Australia Network">Australia Network</channel>
+    <channel update="i" site="tv.burrp.com" site_id="zee-news/287" xmltv_id="Zee News">Zee News</channel>
+    <channel update="i" site="tv.burrp.com" site_id="sonic/293" xmltv_id="Sonic">Sonic</channel>
+    <channel update="i" site="tv.burrp.com" site_id="zee-telugu/292" xmltv_id="Zee Telugu">Zee Telugu</channel>
+    <channel update="i" site="tv.burrp.com" site_id="zee-khana-khazana/209" xmltv_id="Zee Khana Khazana">Zee Khana Khazana</channel>
+    <channel update="i" site="tv.burrp.com" site_id="zee-business/2" xmltv_id="Zee Business">Zee Business</channel>
+    <channel update="i" site="tv.burrp.com" site_id="raj-musix/163" xmltv_id="Raj Musix">Raj Musix</channel>
+    <channel update="i" site="tv.burrp.com" site_id="gemini-music/139" xmltv_id="Gemini Music">Gemini Music</channel>
+    <channel update="i" site="tv.burrp.com" site_id="sony-six-hd/496" xmltv_id="Sony Six HD">Sony Six HD</channel>
+    <channel update="i" site="tv.burrp.com" site_id="e-24/184" xmltv_id="E 24">E 24</channel>
+    <channel update="i" site="tv.burrp.com" site_id="india-tv/423" xmltv_id="India TV">India TV</channel>
+    <channel update="i" site="tv.burrp.com" site_id="nick-junior/294" xmltv_id="Nick Junior">Nick Junior</channel>
+    <channel update="i" site="tv.burrp.com" site_id="etv-urdu/125" xmltv_id="Etv Urdu">Etv Urdu</channel>
+    <channel update="i" site="tv.burrp.com" site_id="sun-music/308" xmltv_id="Sun Music">Sun Music</channel>
+    <channel update="i" site="tv.burrp.com" site_id="headlines-today/289" xmltv_id="Headlines Today">Headlines Today</channel>
+    <channel update="i" site="tv.burrp.com" site_id="9x-jalwa/277" xmltv_id="9X Jalwa">9X Jalwa</channel>
+    <channel update="i" site="tv.burrp.com" site_id="kalaignar-isai-aruvi/193" xmltv_id="Kalaignar Isai Aruvi">Kalaignar Isai Aruvi</channel>
+    <channel update="i" site="tv.burrp.com" site_id="etv-oriya/6" xmltv_id="Etv Oriya">Etv Oriya</channel>
+    <channel update="i" site="tv.burrp.com" site_id="etv-rajasthan/44" xmltv_id="Etv Rajasthan">Etv Rajasthan</channel>
+    <channel update="i" site="tv.burrp.com" site_id="maa-music/235" xmltv_id="Maa Music">Maa Music</channel>
+    <channel update="i" site="tv.burrp.com" site_id="udaya-comedy/142" xmltv_id="Udaya Comedy">Udaya Comedy</channel>
+    <channel update="i" site="tv.burrp.com" site_id="firangi/255" xmltv_id="Firangi">Firangi</channel>
+    <channel update="i" site="tv.burrp.com" site_id="maa-gold/274" xmltv_id="Maa Gold">Maa Gold</channel>
+    <channel update="i" site="tv.burrp.com" site_id="zee-tv-hd/438" xmltv_id="Zee TV HD">Zee TV HD</channel>
+    <channel update="i" site="tv.burrp.com" site_id="kalaignar-sirippoli/191" xmltv_id="Kalaignar Sirippoli">Kalaignar Sirippoli</channel>
+    <channel update="i" site="tv.burrp.com" site_id="india-news/281" xmltv_id="India News">India News</channel>
+    <channel update="i" site="tv.burrp.com" site_id="sony-tv-hd/506" xmltv_id="Sony TV HD">Sony TV HD</channel>
+    <channel update="i" site="tv.burrp.com" site_id="etv-bihar/116" xmltv_id="Etv Bihar">Etv Bihar</channel>
+    <channel update="i" site="tv.burrp.com" site_id="adithya-tv/299" xmltv_id="Adithya TV">Adithya TV</channel>
+    <channel update="i" site="tv.burrp.com" site_id="news-24/329" xmltv_id="News 24">News 24</channel>
+    <channel update="i" site="tv.burrp.com" site_id="life-ok-hd/358" xmltv_id="Life Ok HD">Life Ok HD</channel>
+    <channel update="i" site="tv.burrp.com" site_id="polimer-tv/352" xmltv_id="Polimer Tv">Polimer Tv</channel>
+    <channel update="i" site="tv.burrp.com" site_id="kushi-tv/151" xmltv_id="Kushi Tv">Kushi Tv</channel>
+    <channel update="i" site="tv.burrp.com" site_id="big-rtl-thrill/288" xmltv_id="BIG RTL Thrill">BIG RTL Thrill</channel>
+    <channel update="i" site="tv.burrp.com" site_id="ten-golf/269" xmltv_id="Ten Golf">Ten Golf</channel>
+    <channel update="i" site="tv.burrp.com" site_id="etv-up/126" xmltv_id="Etv UP">Etv UP</channel>
+    <channel update="i" site="tv.burrp.com" site_id="nat-geo-music/217" xmltv_id="Nat Geo Music">Nat Geo Music</channel>
+    <channel update="i" site="tv.burrp.com" site_id="9xo/295" xmltv_id="9xO">9xO</channel>
+    <channel update="i" site="tv.burrp.com" site_id="angel-tv/156" xmltv_id="Angel Tv">Angel Tv</channel>
+    <channel update="i" site="tv.burrp.com" site_id="mtunes/339" xmltv_id="Mtunes">Mtunes</channel>
+    <channel update="i" site="tv.burrp.com" site_id="star-world-premier-hd/515" xmltv_id="Star World Premier HD">Star World Premier HD</channel>
+    <channel update="i" site="tv.burrp.com" site_id="zee-kannada/272" xmltv_id="Zee Kannada">Zee Kannada</channel>
+    <channel update="i" site="tv.burrp.com" site_id="mtunes-hd/331" xmltv_id="Mtunes HD">Mtunes HD</channel>
+    <channel update="i" site="tv.burrp.com" site_id="dhoom-music/318" xmltv_id="Dhoom Music">Dhoom Music</channel>
+    <channel update="i" site="tv.burrp.com" site_id="zeeq/273" xmltv_id="ZeeQ">ZeeQ</channel>
+    <channel update="i" site="tv.burrp.com" site_id="sangeet-bangla/229" xmltv_id="Sangeet Bangla">Sangeet Bangla</channel>
+    <channel update="i" site="tv.burrp.com" site_id="etv-mp/118" xmltv_id="Etv MP">Etv MP</channel>
+    <channel update="i" site="tv.burrp.com" site_id="zee-bangla/489" xmltv_id="Zee Bangla">Zee Bangla</channel>
+    <channel update="i" site="tv.burrp.com" site_id="fox-life-hd/504" xmltv_id="Fox Life HD">Fox Life HD</channel>
+    <channel update="i" site="tv.burrp.com" site_id="music-xpress/365" xmltv_id="Music Xpress">Music Xpress</channel>
+    <channel update="i" site="tv.burrp.com" site_id="9x-jhakaas/276" xmltv_id="9X Jhakaas">9X Jhakaas</channel>
+    <channel update="i" site="tv.burrp.com" site_id="nat-geo-people-hd/498" xmltv_id="Nat Geo People HD">Nat Geo People HD</channel>
+    <channel update="i" site="tv.burrp.com" site_id="asianet-suvarna/165" xmltv_id="Asianet Suvarna">Asianet Suvarna</channel>
+    <channel update="i" site="tv.burrp.com" site_id="kochu-tv/278" xmltv_id="Kochu Tv">Kochu Tv</channel>
+    <channel update="i" site="tv.burrp.com" site_id="indiavision/261" xmltv_id="Indiavision">Indiavision</channel>
+    <channel update="i" site="tv.burrp.com" site_id="mahuaa-tv/507" xmltv_id="Mahuaa Tv">Mahuaa Tv</channel>
+    <channel update="i" site="tv.burrp.com" site_id="kalaignar-chithiram/215" xmltv_id="Kalaignar Chithiram">Kalaignar Chithiram</channel>
+    <channel update="i" site="tv.burrp.com" site_id="jeevan-tv/279" xmltv_id="Jeevan Tv">Jeevan Tv</channel>
+    <channel update="i" site="tv.burrp.com" site_id="mathrubhumi-news/334" xmltv_id="Mathrubhumi News">Mathrubhumi News</channel>
+    <channel update="i" site="tv.burrp.com" site_id="9x-tashan/371" xmltv_id="9X Tashan">9X Tashan</channel>
+    <channel update="i" site="tv.burrp.com" site_id="chintu-tv/150" xmltv_id="Chintu Tv">Chintu Tv</channel>
+    <channel update="i" site="tv.burrp.com" site_id="sun-news/309" xmltv_id="Sun News">Sun News</channel>
+    <channel update="i" site="tv.burrp.com" site_id="ss-music/373" xmltv_id="SS Music">SS Music</channel>
+    <channel update="i" site="tv.burrp.com" site_id="ptc-chak-de/354" xmltv_id="PTC Chak De">PTC Chak De</channel>
+    <channel update="i" site="tv.burrp.com" site_id="news-express/335" xmltv_id="News Express">News Express</channel>
+    <channel update="i" site="tv.burrp.com" site_id="mega-tv/499" xmltv_id="Mega TV">Mega TV</channel>
+    <channel update="i" site="tv.burrp.com" site_id="dhamaal-tv/298" xmltv_id="Dhamaal TV">Dhamaal TV</channel>
+    <channel update="i" site="tv.burrp.com" site_id="akash-bangla/322" xmltv_id="Akash Bangla">Akash Bangla</channel>
+    <channel update="i" site="tv.burrp.com" site_id="udaya-music/310" xmltv_id="Udaya Music">Udaya Music</channel>
+    <channel update="i" site="tv.burrp.com" site_id="tez/283" xmltv_id="Tez">Tez</channel>
+    <channel update="i" site="tv.burrp.com" site_id="orissa-tv/349" xmltv_id="Orissa Tv">Orissa Tv</channel>
+    <channel update="i" site="tv.burrp.com" site_id="sangeet-bhojpuri/227" xmltv_id="Sangeet Bhojpuri">Sangeet Bhojpuri</channel>
+    <channel update="i" site="tv.burrp.com" site_id="baby-tv/315" xmltv_id="Baby TV">Baby TV</channel>
+    <channel update="i" site="tv.burrp.com" site_id="suvarna-plus/460" xmltv_id="Suvarna Plus">Suvarna Plus</channel>
+    <channel update="i" site="tv.burrp.com" site_id="samaya-tv/351" xmltv_id="Samaya TV">Samaya TV</channel>
+    <channel update="i" site="tv.burrp.com" site_id="saam-tv/350" xmltv_id="Saam TV">Saam TV</channel>
+    <channel update="i" site="tv.burrp.com" site_id="zee-24-ghanta/302" xmltv_id="Zee 24 Ghanta">Zee 24 Ghanta</channel>
+    <channel update="i" site="tv.burrp.com" site_id="abn-telugu-news/378" xmltv_id="ABN Telugu News">ABN Telugu News</channel>
+    <channel update="i" site="tv.burrp.com" site_id="imayam-tv/263" xmltv_id="Imayam Tv">Imayam Tv</channel>
+    <channel update="i" site="tv.burrp.com" site_id="topper-tv/341" xmltv_id="Topper TV">Topper TV</channel>
+    <channel update="i" site="tv.burrp.com" site_id="god-tv/369" xmltv_id="God Tv">God Tv</channel>
+    <channel update="i" site="tv.burrp.com" site_id="suvarna-news-24x7/348" xmltv_id="Suvarna News 24x7">Suvarna News 24x7</channel>
+    <channel update="i" site="tv.burrp.com" site_id="tv9-kannada/425" xmltv_id="TV9 Kannada">TV9 Kannada</channel>
+    <channel update="i" site="tv.burrp.com" site_id="zee-24-taas/301" xmltv_id="Zee 24 Taas">Zee 24 Taas</channel>
+    <channel update="i" site="tv.burrp.com" site_id="ruposhi-bangla/490" xmltv_id="Ruposhi Bangla">Ruposhi Bangla</channel>
+    <channel update="i" site="tv.burrp.com" site_id="dilli-aaj-tak/303" xmltv_id="Dilli Aaj Tak">Dilli Aaj Tak</channel>
+    <channel update="i" site="tv.burrp.com" site_id="kasthuri-tv/500" xmltv_id="Kasthuri TV">Kasthuri TV</channel>
+    <channel update="i" site="tv.burrp.com" site_id="gemini-tv-hd/497" xmltv_id="Gemini Tv HD">Gemini Tv HD</channel>
+    <channel update="i" site="tv.burrp.com" site_id="ktv-hd/502" xmltv_id="Ktv HD">Ktv HD</channel>
+    <channel update="i" site="tv.burrp.com" site_id="kairali-people-tv/387" xmltv_id="Kairali People TV">Kairali People TV</channel>
+    <channel update="i" site="tv.burrp.com" site_id="raj-news-24x7/346" xmltv_id="Raj News 24x7">Raj News 24x7</channel>
+    <channel update="i" site="tv.burrp.com" site_id="zee-24-gantalu/305" xmltv_id="Zee 24 Gantalu">Zee 24 Gantalu</channel>
+    <channel update="i" site="tv.burrp.com" site_id="news-time/363" xmltv_id="News Time">News Time</channel>
+    <channel update="i" site="tv.burrp.com" site_id="tarang-music/319" xmltv_id="Tarang Music">Tarang Music</channel>
+    <channel update="i" site="tv.burrp.com" site_id="zee-punjab-haryana-himachal/304" xmltv_id="Zee Punjab Haryana Himachal">Zee Punjab Haryana Himachal</channel>
+    <channel update="i" site="tv.burrp.com" site_id="aalami-sahara/336" xmltv_id="Aalami Sahara">Aalami Sahara</channel>
+    <channel update="i" site="tv.burrp.com" site_id="ptc-news/353" xmltv_id="PTC News">PTC News</channel>
+    <channel update="i" site="tv.burrp.com" site_id="sun-tv-hd/508" xmltv_id="Sun Tv HD">Sun Tv HD</channel>
+    <channel update="i" site="tv.burrp.com" site_id="captain-news/317" xmltv_id="Captain News">Captain News</channel>
+    <channel update="i" site="tv.burrp.com" site_id="channel-10/342" xmltv_id="Channel 10">Channel 10</channel>
+    <channel update="i" site="tv.burrp.com" site_id="janasri-news/300" xmltv_id="Janasri News">Janasri News</channel>
+    <channel update="i" site="tv.burrp.com" site_id="dy-365/340" xmltv_id="DY 365">DY 365</channel>
+    <channel update="i" site="tv.burrp.com" site_id="zee-news-up/307" xmltv_id="Zee News UP">Zee News UP</channel>
+    <channel update="i" site="tv.burrp.com" site_id="khushboo-tv/437" xmltv_id="Khushboo Tv">Khushboo Tv</channel>
+    <channel update="i" site="tv.burrp.com" site_id="seithigal/311" xmltv_id="Seithigal">Seithigal</channel>
+    <channel update="i" site="tv.burrp.com" site_id="cnbc-tv18-prime-hd/516" xmltv_id="CNBC TV18 Prime HD">CNBC TV18 Prime HD</channel>
+    <channel update="i" site="tv.burrp.com" site_id="kolkata-tv/512" xmltv_id="Kolkata TV">Kolkata TV</channel>
+    <channel update="i" site="tv.burrp.com" site_id="anjan-tv/376" xmltv_id="Anjan Tv">Anjan Tv</channel>
+    <channel update="i" site="tv.burrp.com" site_id="udaya-news/313" xmltv_id="Udaya News">Udaya News</channel>
+    <channel update="i" site="tv.burrp.com" site_id="divya-tv/345" xmltv_id="Divya Tv">Divya Tv</channel>
+    <channel update="i" site="tv.burrp.com" site_id="mega-musiq/360" xmltv_id="Mega Musiq">Mega Musiq</channel>
+    <channel update="i" site="tv.burrp.com" site_id="bhakti-tv/386" xmltv_id="Bhakti TV">Bhakti TV</channel>
+    <channel update="i" site="tv.burrp.com" site_id="sony-max-2/523" xmltv_id="Sony Max 2">Sony Max 2</channel>
+    <channel update="i" site="tv.burrp.com" site_id="mahuaa-news/330" xmltv_id="Mahuaa News">Mahuaa News</channel>
+    <channel update="i" site="tv.burrp.com" site_id="raj-music-karnataka/481" xmltv_id="Raj Music Karnataka">Raj Music Karnataka</channel>
+    <channel update="i" site="tv.burrp.com" site_id="sada-channel/356" xmltv_id="Sada Channel">Sada Channel</channel>
+    <channel update="i" site="tv.burrp.com" site_id="sony-pal/522" xmltv_id="Sony Pal">Sony Pal</channel>
+    <channel update="i" site="tv.burrp.com" site_id="adhyatma-tv/347" xmltv_id="Adhyatma TV">Adhyatma TV</channel>
+    <channel update="i" site="tv.burrp.com" site_id="v6-news/384" xmltv_id="V6 News">V6 News</channel>
+    <channel update="i" site="tv.burrp.com" site_id="chirithira/381" xmltv_id="Chirithira">Chirithira</channel>
+    <channel update="i" site="tv.burrp.com" site_id="a2z-news/383" xmltv_id="A2Z News">A2Z News</channel>
+    <channel update="i" site="tv.burrp.com" site_id="mh1-news/332" xmltv_id="MH1 News">MH1 News</channel>
+    <channel update="i" site="tv.burrp.com" site_id="zindagi/520" xmltv_id="Zindagi">Zindagi</channel>
+    <channel update="i" site="tv.burrp.com" site_id="kalaignar-murasu/505" xmltv_id="Kalaignar Murasu">Kalaignar Murasu</channel>
+    <channel update="i" site="tv.burrp.com" site_id="ishwar-tv/324" xmltv_id="Ishwar Tv">Ishwar Tv</channel>
+    <channel update="i" site="tv.burrp.com" site_id="sandesh-news-dnn/361" xmltv_id="Sandesh News DNN">Sandesh News DNN</channel>
+    <channel update="i" site="tv.burrp.com" site_id="aseervatham-tv/321" xmltv_id="Aseervatham TV">Aseervatham TV</channel>
+    <channel update="i" site="tv.burrp.com" site_id="my-tv/333" xmltv_id="MY TV">MY TV</channel>
+    <channel update="i" site="tv.burrp.com" site_id="focus-tv/368" xmltv_id="Focus Tv">Focus Tv</channel>
+    <channel update="i" site="tv.burrp.com" site_id="bizz-news/323" xmltv_id="Bizz News">Bizz News</channel>
+    <channel update="i" site="tv.burrp.com" site_id="om-bangla/362" xmltv_id="Om Bangla">Om Bangla</channel>
+    <channel update="i" site="tv.burrp.com" site_id="arihant-tv/337" xmltv_id="Arihant Tv">Arihant Tv</channel>
+    <channel update="i" site="tv.burrp.com" site_id="sahara-up/511" xmltv_id="Sahara UP">Sahara UP</channel>
+    <channel update="i" site="tv.burrp.com" site_id="zee-variasi/501" xmltv_id="Zee Variasi">Zee Variasi</channel>
+    <channel update="i" site="tv.burrp.com" site_id="bansal-news/316" xmltv_id="Bansal News">Bansal News</channel>
+    <channel update="i" site="tv.burrp.com" site_id="jan-tv/344" xmltv_id="Jan TV">Jan TV</channel>
+    <channel update="i" site="tv.burrp.com" site_id="sea-news/382" xmltv_id="Sea News">Sea News</channel>
+    <channel update="i" site="tv.burrp.com" site_id="makkal-tv/249" xmltv_id="Makkal Tv">Makkal Tv</channel>
+    <channel update="i" site="tv.burrp.com" site_id="soham-tv/355" xmltv_id="Soham TV">Soham TV</channel>
+    <channel update="i" site="tv.burrp.com" site_id="zee-24-ghante-mp/306" xmltv_id="Zee 24 Ghante MP">Zee 24 Ghante MP</channel>
+    <channel update="i" site="tv.burrp.com" site_id="7-s-music/379" xmltv_id="7 S Music">7 S Music</channel>
+    <channel update="i" site="tv.burrp.com" site_id="cnbc-bajar/519" xmltv_id="CNBC Bajar">CNBC Bajar</channel>
+    <channel update="i" site="tv.burrp.com" site_id="epic/524" xmltv_id="EPIC">EPIC</channel>
+    <channel update="i" site="tv.burrp.com" site_id="zee-sangam/509" xmltv_id="Zee Sangam">Zee Sangam</channel>
+    <channel update="i" site="tv.burrp.com" site_id="lemon-news/338" xmltv_id="Lemon News">Lemon News</channel>
+    <channel update="i" site="tv.burrp.com" site_id="studio-n/370" xmltv_id="Studio N">Studio N</channel>
+    <channel update="i" site="tv.burrp.com" site_id="zee-phh/503" xmltv_id="Zee PHH">Zee PHH</channel>
+    <channel update="i" site="tv.burrp.com" site_id="gnn-news/359" xmltv_id="GNN News">GNN News</channel>
+    <channel update="i" site="tv.burrp.com" site_id="raj-musix-telugu/418" xmltv_id="Raj Musix Telugu">Raj Musix Telugu</channel>
+    <channel update="i" site="tv.burrp.com" site_id="rishtey/521" xmltv_id="Rishtey">Rishtey</channel>
+    <channel update="i" site="tv.burrp.com" site_id="discovery-id/526" xmltv_id="Discovery ID">Discovery ID</channel>
+    <channel update="i" site="tv.burrp.com" site_id="raj-news-malyalam/419" xmltv_id="Raj News Malyalam">Raj News Malyalam</channel>
+    <channel update="i" site="tv.burrp.com" site_id="reporter-tv/542" xmltv_id="Reporter TV">Reporter TV</channel>
+    <channel update="i" site="tv.burrp.com" site_id="jaihind-tv/537" xmltv_id="Jaihind TV">Jaihind TV</channel>
+    <channel update="i" site="tv.burrp.com" site_id="epic-hd/534" xmltv_id="Epic HD">Epic HD</channel>
+    <channel update="i" site="tv.burrp.com" site_id="jalsha-movies/531" xmltv_id="Jalsha Movies">Jalsha Movies</channel>
+    <channel update="i" site="tv.burrp.com" site_id="colors-hd/527" xmltv_id="Colors HD">Colors HD</channel>
+    <channel update="i" site="tv.burrp.com" site_id="mtv-indies/553" xmltv_id="Mtv Indies">Mtv Indies</channel>
+    <channel update="i" site="tv.burrp.com" site_id="zee-salaam/541" xmltv_id="Zee Salaam">Zee Salaam</channel>
+    <channel update="i" site="tv.burrp.com" site_id="kairali-we-tv/536" xmltv_id="Kairali We TV">Kairali We TV</channel>
+    <channel update="i" site="tv.burrp.com" site_id="disney-junior/533" xmltv_id="Disney Junior">Disney Junior</channel>
+    <channel update="i" site="tv.burrp.com" site_id="star-sports-hd-2/530" xmltv_id="Star Sports HD 2">Star Sports HD 2</channel>
+    <channel update="i" site="tv.burrp.com" site_id="history-tv-hd/555" xmltv_id="History TV HD">History TV HD</channel>
+    <channel update="i" site="tv.burrp.com" site_id="zee-studio-hd/552" xmltv_id="Zee Studio HD">Zee Studio HD</channel>
+    <channel update="i" site="tv.burrp.com" site_id="jain-tv/538" xmltv_id="Jain TV">Jain TV</channel>
+    <channel update="i" site="tv.burrp.com" site_id="vanitha-tv/535" xmltv_id="Vanitha TV">Vanitha TV</channel>
+    <channel update="i" site="tv.burrp.com" site_id="zee-cinema-hd/532" xmltv_id="Zee Cinema HD">Zee Cinema HD</channel>
+    <channel update="i" site="tv.burrp.com" site_id="star-sports-hd-1/529" xmltv_id="Star Sports HD 1">Star Sports HD 1</channel>
+    <channel update="i" site="tv.burrp.com" site_id="aryan/375" xmltv_id="Aryan">Aryan</channel>
+    <channel update="i" site="tv.burrp.com" site_id="travel-xp-hd/554" xmltv_id="Travel XP HD">Travel XP HD</channel>
+  </channels>
+</site>

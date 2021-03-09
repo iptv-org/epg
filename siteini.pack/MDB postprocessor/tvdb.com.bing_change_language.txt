@@ -1,0 +1,45 @@
+
+Language 
+Language customization of tvdb.com.bing.ini
+
+This tvdb ini is a variant of tvdb.com.ini. It uses Bing as primary search engine which improves the matching result for series with very simple titles , like 'friends' or 'cops' 
+It also allows the language preference of the matching in thetvdb. It will then look for series data for that prefered language first . Also it will automatically revert to English if nothing is available for that language. (Which happens a lot!!)
+To set the prefered language, do the following:
+
+1. Open for editing tvdb.com.bing.ini .
+2. Have a look at the table below, it gives the language codes of the available languages in thetvdb. 
+Remember the tow letter code for your language. e.g sv for Swedisch
+The language number is not relevant here.
+3. Locate this line:
+mdb_temp_4.modify {addend|'mdb_temp_1'/all/en####} * change this line to set your prefered language!!
+And change en#### into sv#### for Swedisch
+4. Save tvdb.com.bing.ini , obtionally with another name , like tvdb.com.bing_sv.ini to distinguis it from the original.
+In that case also change the filename in mdb.config
+
+That's all!!
+
+thetvdb available languages and their codes:
+
+English  7  en  
+Svenska  8  sv  
+Norsk  9  no  
+Dansk  10  da  
+Suomeksi  11  fi  
+Nederlands  13  nl  
+Deutsch  14  de  
+Italiano  15  it  
+Español  16  es  
+Français  17  fr  
+Polski  18  pl  
+Magyar  19  hu  
+Greek  20  el  
+Turkish  21  tr  
+Russian  22  ru  
+Hebrew  24  he  
+Japanese  25  ja  
+Portuguese  26  pt  
+Chinese  27  zh  
+Czech  28  cs  
+Slovenian  30  sl  
+Croatian  31  hr  
+Korean  32  ko  

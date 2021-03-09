@@ -1,0 +1,69 @@
+
+To change espndeportes.com.ini for your location/region do the following:
+
+1. make a copy of espndeportes.com.ini in the same folder as the original and name this copy	espndeportes.com.yourcountry.ini 
+e.g. for Mexico :
+  espndeportes.com.mexico.ini
+
+2. open this in a text editor (e.g. notepad or notepad++)
+
+3. replace 	your-country in the line :
+url_index{url|http://espn.go.com/sports/tvlistings/deportes/schedule?date=|urldate|&network=|channel|&country=your-country}
+with one of the possible countries as listed in 4.
+e.g. for Mexico :
+url_index{url|http://espn.go.com/sports/tvlistings/deportes/schedule?date=|urldate|&network=|channel|&country=mexico}
+
+4. possible countries:
+(warning not all of the countries seem to be implemented by espndeportes.com at the time of writing 112/10/2014 they are marked with ?? at the start of the line)
+
+??		use : united_states if your country is Estados Unidos		
+		use : mexico if your country is México		
+		use : argentina if your country is Argentina		
+		use : bolivia if your country is Bolivia		
+		use : chile if your country is Chile		
+		use : colombia if your country is Colombia		
+		use : ecuador if your country is Ecuador		
+		use : paraguay if your country is Paraguay		
+		use : peru if your country is Perú		
+		use : uruguay if your country is Uruguay		
+		use : venezuela if your country is Venezuela		
+??		use : falkland_islands_(malvinas) if your country is Islas Malvinas			
+		use : costa_rica if your country is Costa Rica		
+		use : el_salvador if your country is El Salvador		
+		use : guatemala if your country is Guatemala		
+		use : honduras if your country is Honduras		
+		use : nicaragua if your country is Nicaragua		
+		use : panama if your country is Panamá		
+		use : dominican_republic if your country is Republica Dominicana		
+		use : aruba if your country is Aruba		
+		use : bonaire if your country is Bonaire		
+		use : curacao if your country is Curacao		
+		use : Resto_del_Caribe if your country is Resto Del Caribe
+		
+5. Remove the first character * from the 2 lines near the bottom of the file starting with :
+
+*index_site_channel.scrub  
+and 
+*index_site_id.scrub 
+
+Save this ini file.
+
+6. Add the following line in WebGrab++.config.xml
+
+<channel update="i" site="espndeportes.com.your-country" site_id="178" xmltv_id="ESPN-HD">ESPN-HD</channel>
+
+e.g. for mexico it should be :
+<channel update="i" site="espndeportes.com.mexico" site_id="178" xmltv_id="ESPN-HD">ESPN-HD</channel>
+
+save this config file
+
+7. run WG++
+A file named espndeportes.com.your-country.xml (in case of mexico espndeportes.com.mexico.xml) is created with the available channels for your country.
+
+8. Add any of the channels listed in the file created in 7. in WebGrab++.config.xml replacing the one mentioned in 6.
+
+9. Undo the change done in 5. (re-add the removed * characters) and save the changes
+
+10. Done. You can run WG++ to get an epg. You might need to change other elements in the config file. Read http://www.webgrabplus.com/documentation/configuration
+
+Enjoy     Jan van Straaten

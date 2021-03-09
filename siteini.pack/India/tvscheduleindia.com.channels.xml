@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<site generator-info-name="WebGrab+Plus/w MDB &amp; REX Postprocess -- version V1.56.12 -- Jan van Straaten" site="tvscheduleindia.com">
+  <channels>
+    <channel update="i" site="tvscheduleindia.com" site_id="%26-Pictures" xmltv_id="&amp; Pictures">&amp; Pictures</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Asianet-Movies" xmltv_id="Asianet Movies">Asianet Movies</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="B4U-Movies" xmltv_id="B4U Movies">B4U Movies</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Cinema-TV" xmltv_id="Cinema TV">Cinema TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="FILMY" xmltv_id="FILMY">FILMY</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Gemini-Action-Movies" xmltv_id="Gemini Action Movies">Gemini Action Movies</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Gemini-Movies" xmltv_id="Gemini Movies">Gemini Movies</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="HBO" xmltv_id="HBO">HBO</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="HBO-Defined" xmltv_id="HBO Defined">HBO Defined</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="HBO-Hits" xmltv_id="HBO Hits">HBO Hits</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="India-Talkies" xmltv_id="India Talkies">India Talkies</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Jalsha-Movies" xmltv_id="Jalsha Movies">Jalsha Movies</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Jaya-Movie" xmltv_id="Jaya Movie">Jaya Movie</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Kiran-Tv" xmltv_id="Kiran Tv">Kiran Tv</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="KTV" xmltv_id="KTV">KTV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Ktv-HD" xmltv_id="Ktv HD">Ktv HD</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Maa-Movies" xmltv_id="Maa Movies">Maa Movies</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Maha-Movie" xmltv_id="Maha Movie">Maha Movie</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="MN%2B-HD" xmltv_id="MN+ HD">MN+ HD</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Movie-House" xmltv_id="Movie House">Movie House</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Movies-Now" xmltv_id="Movies Now">Movies Now</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Movies-Ok" xmltv_id="Movies Ok">Movies Ok</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Raj-Digital-Plus" xmltv_id="Raj Digital Plus">Raj Digital Plus</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Romedy-Now" xmltv_id="Romedy Now">Romedy Now</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Sony-MAX" xmltv_id="Sony MAX">Sony MAX</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Sony-PIX" xmltv_id="Sony PIX">Sony PIX</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Star-Gold" xmltv_id="Star Gold">Star Gold</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Star-Gold-HD" xmltv_id="Star Gold HD">Star Gold HD</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Star-Movies" xmltv_id="Star Movies">Star Movies</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Star-Movies-Action" xmltv_id="Star Movies Action">Star Movies Action</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Star-Movies-HD" xmltv_id="Star Movies HD">Star Movies HD</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Star-Movies-Select-HD" xmltv_id="Star Movies Select HD">Star Movies Select HD</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Udaya-Movies" xmltv_id="Udaya Movies">Udaya Movies</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="UTV-Action" xmltv_id="UTV Action">UTV Action</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="UTV-Movies" xmltv_id="UTV Movies">UTV Movies</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="WB" xmltv_id="WB">WB</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="WOW-Cinema" xmltv_id="WOW Cinema">WOW Cinema</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Zee-Action" xmltv_id="Zee Action">Zee Action</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Zee-Cinema" xmltv_id="Zee Cinema">Zee Cinema</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Zee-Cinema-HD" xmltv_id="Zee Cinema HD">Zee Cinema HD</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Zee-Classic" xmltv_id="Zee Classic">Zee Classic</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Zee-Studio" xmltv_id="Zee Studio">Zee Studio</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Zee-Studio-HD" xmltv_id="Zee Studio HD">Zee Studio HD</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Zee-Talkies" xmltv_id="Zee Talkies">Zee Talkies</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Enterr-10" xmltv_id="Enterr 10">Enterr 10</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Gemini-Life" xmltv_id="Gemini Life">Gemini Life</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="7-S-Music" xmltv_id="7 S Music">7 S Music</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="9X-Jalwa" xmltv_id="9X Jalwa">9X Jalwa</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="9X-Jhakaas" xmltv_id="9X Jhakaas">9X Jhakaas</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="9X-Tashan" xmltv_id="9X Tashan">9X Tashan</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="9XM" xmltv_id="9XM">9XM</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="9xO" xmltv_id="9xO">9xO</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="B4U-Music" xmltv_id="B4U Music">B4U Music</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Dhoom-Music" xmltv_id="Dhoom Music">Dhoom Music</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Gemini-Music" xmltv_id="Gemini Music">Gemini Music</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Insync" xmltv_id="Insync">Insync</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Kalaignar-Isai-Aruvi" xmltv_id="Kalaignar Isai Aruvi">Kalaignar Isai Aruvi</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Kalaignar-Murasu" xmltv_id="Kalaignar Murasu">Kalaignar Murasu</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Maa-Music" xmltv_id="Maa Music">Maa Music</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Manoranjan-Music" xmltv_id="Manoranjan Music">Manoranjan Music</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Mastiii" xmltv_id="Mastiii">Mastiii</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Mega-Musiq" xmltv_id="Mega Musiq">Mega Musiq</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Mh1-Music" xmltv_id="Mh1 Music">Mh1 Music</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Mtunes" xmltv_id="Mtunes">Mtunes</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Mtunes-HD" xmltv_id="Mtunes HD">Mtunes HD</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="MTV" xmltv_id="MTV">MTV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Mtv-Indies" xmltv_id="Mtv Indies">Mtv Indies</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Music-India" xmltv_id="Music India">Music India</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Music-Xpress" xmltv_id="Music Xpress">Music Xpress</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Nat-Geo-Music" xmltv_id="Nat Geo Music">Nat Geo Music</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="PTC-Chak-De" xmltv_id="PTC Chak De">PTC Chak De</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Raj-Music-Karnataka" xmltv_id="Raj Music Karnataka">Raj Music Karnataka</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Raj-Musix" xmltv_id="Raj Musix">Raj Musix</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Raj-Musix-Telugu" xmltv_id="Raj Musix Telugu">Raj Musix Telugu</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Sangeet-Bangla" xmltv_id="Sangeet Bangla">Sangeet Bangla</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Sangeet-Bhojpuri" xmltv_id="Sangeet Bhojpuri">Sangeet Bhojpuri</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Sony-Mix" xmltv_id="Sony Mix">Sony Mix</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="SS-Music" xmltv_id="SS Music">SS Music</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Sun-Music" xmltv_id="Sun Music">Sun Music</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Tara-Muzik" xmltv_id="Tara Muzik">Tara Muzik</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Tarang-Music" xmltv_id="Tarang Music">Tarang Music</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Udaya-Music" xmltv_id="Udaya Music">Udaya Music</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Vh1" xmltv_id="Vh1">Vh1</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Z-etc" xmltv_id="Z etc">Z etc</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="%26tv" xmltv_id="&amp;tv">&amp;tv</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="%26TV-HD" xmltv_id="&amp;TV HD">&amp;TV HD</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Akash-Bangla" xmltv_id="Akash Bangla">Akash Bangla</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Amrita-Tv" xmltv_id="Amrita Tv">Amrita Tv</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Anjan-Tv" xmltv_id="Anjan Tv">Anjan Tv</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Arirang" xmltv_id="Arirang">Arirang</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Asianet" xmltv_id="Asianet">Asianet</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Asianet-HD" xmltv_id="Asianet HD">Asianet HD</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Asianet-Plus" xmltv_id="Asianet Plus">Asianet Plus</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Asianet-Suvarna" xmltv_id="Asianet Suvarna">Asianet Suvarna</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Australia-Plus" xmltv_id="Australia Plus">Australia Plus</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="AXN" xmltv_id="AXN">AXN</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Big-Magic" xmltv_id="Big Magic">Big Magic</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Big-Magic-Ganga" xmltv_id="Big Magic Ganga">Big Magic Ganga</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="BIG-RTL-Thrill" xmltv_id="BIG RTL Thrill">BIG RTL Thrill</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Bindass" xmltv_id="Bindass">Bindass</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Bindass-Play" xmltv_id="Bindass Play">Bindass Play</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Channel-%5BV%5D" xmltv_id="Channel [V]">Channel [V]</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Chardikla-Time-TV" xmltv_id="Chardikla Time TV">Chardikla Time TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Colors" xmltv_id="Colors">Colors</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Colors-Bangla" xmltv_id="Colors Bangla">Colors Bangla</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Colors-Gujarati" xmltv_id="Colors Gujarati">Colors Gujarati</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Colors-HD" xmltv_id="Colors HD">Colors HD</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Colors-Infinity" xmltv_id="Colors Infinity">Colors Infinity</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Colors-Infinity-HD" xmltv_id="Colors Infinity HD">Colors Infinity HD</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Colors-Kannada" xmltv_id="Colors Kannada">Colors Kannada</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Colors-Marathi" xmltv_id="Colors Marathi">Colors Marathi</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Colors-Oriya" xmltv_id="Colors Oriya">Colors Oriya</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Dabangg-TV" xmltv_id="Dabangg TV">Dabangg TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Dangal-TV" xmltv_id="Dangal TV">Dangal TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="DD-Bangla" xmltv_id="DD Bangla">DD Bangla</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="DD-Bharati" xmltv_id="DD Bharati">DD Bharati</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="DD-Chandana" xmltv_id="DD Chandana">DD Chandana</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="DD-Girnar" xmltv_id="DD Girnar">DD Girnar</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="DD-India" xmltv_id="DD India">DD India</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="DD-Madhya-Pradesh" xmltv_id="DD Madhya Pradesh">DD Madhya Pradesh</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="DD-Malayalam" xmltv_id="DD Malayalam">DD Malayalam</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="DD-National" xmltv_id="DD National">DD National</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="DD-Punjabi" xmltv_id="DD Punjabi">DD Punjabi</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="DD-Sahyadri" xmltv_id="DD Sahyadri">DD Sahyadri</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="DD-Saptagiri" xmltv_id="DD Saptagiri">DD Saptagiri</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="DD-Urdu" xmltv_id="DD Urdu">DD Urdu</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="DD-Uttar-Pradesh" xmltv_id="DD Uttar Pradesh">DD Uttar Pradesh</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Dhamaal-TV" xmltv_id="Dhamaal TV">Dhamaal TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Dheeran-TV" xmltv_id="Dheeran TV">Dheeran TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Dillagi-TV" xmltv_id="Dillagi TV">Dillagi TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="DY-365" xmltv_id="DY 365">DY 365</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="E-24" xmltv_id="E 24">E 24</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Epic-HD" xmltv_id="Epic HD">Epic HD</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Etv" xmltv_id="Etv">Etv</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Etv-Bihar-Jharkhand" xmltv_id="Etv Bihar Jharkhand">Etv Bihar Jharkhand</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Etv-MP-Chhattisgarh" xmltv_id="Etv MP Chhattisgarh">Etv MP Chhattisgarh</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Etv-Rajasthan" xmltv_id="Etv Rajasthan">Etv Rajasthan</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Etv-UP" xmltv_id="Etv UP">Etv UP</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Firangi" xmltv_id="Firangi">Firangi</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Fox-Life" xmltv_id="Fox Life">Fox Life</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Fox-Life-HD" xmltv_id="Fox Life HD">Fox Life HD</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="FX" xmltv_id="FX">FX</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="FX-HD" xmltv_id="FX HD">FX HD</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Gemini-Tv" xmltv_id="Gemini Tv">Gemini Tv</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Gemini-Tv-HD" xmltv_id="Gemini Tv HD">Gemini Tv HD</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Imayam-Tv" xmltv_id="Imayam Tv">Imayam Tv</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Jan-TV" xmltv_id="Jan TV">Jan TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Jaya-Max" xmltv_id="Jaya Max">Jaya Max</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Jaya-Plus" xmltv_id="Jaya Plus">Jaya Plus</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Jaya-Tv" xmltv_id="Jaya Tv">Jaya Tv</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Jeevan-Tv" xmltv_id="Jeevan Tv">Jeevan Tv</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Kairali-Tv" xmltv_id="Kairali Tv">Kairali Tv</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Kairali-We-TV" xmltv_id="Kairali We TV">Kairali We TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Kalaignar-Chithiram" xmltv_id="Kalaignar Chithiram">Kalaignar Chithiram</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Kalaignar-Sirippoli" xmltv_id="Kalaignar Sirippoli">Kalaignar Sirippoli</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Kalaignar-Tv" xmltv_id="Kalaignar Tv">Kalaignar Tv</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Kasthuri-TV" xmltv_id="Kasthuri TV">Kasthuri TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Khushboo-Tv" xmltv_id="Khushboo Tv">Khushboo Tv</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Life-Ok" xmltv_id="Life Ok">Life Ok</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Life-Ok-HD" xmltv_id="Life Ok HD">Life Ok HD</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Maa-Gold" xmltv_id="Maa Gold">Maa Gold</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Maa-Tv" xmltv_id="Maa Tv">Maa Tv</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Mahuaa-Tv" xmltv_id="Mahuaa Tv">Mahuaa Tv</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Maiboli-Tv" xmltv_id="Maiboli Tv">Maiboli Tv</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Makkal-Tv" xmltv_id="Makkal Tv">Makkal Tv</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Mazhavil-Manorama" xmltv_id="Mazhavil Manorama">Mazhavil Manorama</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Mega-TV" xmltv_id="Mega TV">Mega TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Mi-Marathi" xmltv_id="Mi Marathi">Mi Marathi</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Nepal-One" xmltv_id="Nepal One">Nepal One</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Om-Bangla" xmltv_id="Om Bangla">Om Bangla</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Polimer-Tv" xmltv_id="Polimer Tv">Polimer Tv</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Raj-Tv" xmltv_id="Raj Tv">Raj Tv</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Rishtey" xmltv_id="Rishtey">Rishtey</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Ruposhi-Bangla" xmltv_id="Ruposhi Bangla">Ruposhi Bangla</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Saam-TV" xmltv_id="Saam TV">Saam TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Sada-Channel" xmltv_id="Sada Channel">Sada Channel</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Sahara-One" xmltv_id="Sahara One">Sahara One</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Shakthi-TV" xmltv_id="Shakthi TV">Shakthi TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Shubhsandesh-TV" xmltv_id="Shubhsandesh TV">Shubhsandesh TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Sony-Entertainment-TV" xmltv_id="Sony Entertainment TV">Sony Entertainment TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Sony-Pal" xmltv_id="Sony Pal">Sony Pal</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Sony-SAB" xmltv_id="Sony SAB">Sony SAB</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Sony-TV-HD" xmltv_id="Sony TV HD">Sony TV HD</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Star-Jalsha" xmltv_id="Star Jalsha">Star Jalsha</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Star-Plus" xmltv_id="Star Plus">Star Plus</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Star-Plus-HD" xmltv_id="Star Plus HD">Star Plus HD</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Star-Pravah" xmltv_id="Star Pravah">Star Pravah</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Star-Utsav" xmltv_id="Star Utsav">Star Utsav</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Star-Vijay" xmltv_id="Star Vijay">Star Vijay</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Star-World" xmltv_id="Star World">Star World</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Star-World-HD" xmltv_id="Star World HD">Star World HD</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Star-World-Premier-HD" xmltv_id="Star World Premier HD">Star World Premier HD</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Sun-Tv" xmltv_id="Sun Tv">Sun Tv</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Sun-Tv-HD" xmltv_id="Sun Tv HD">Sun Tv HD</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Surya-Tv" xmltv_id="Surya Tv">Surya Tv</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Suvarna-Plus" xmltv_id="Suvarna Plus">Suvarna Plus</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Taaza-TV" xmltv_id="Taaza TV">Taaza TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="TV-1" xmltv_id="TV 1">TV 1</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="TV5-Monde" xmltv_id="TV5 Monde">TV5 Monde</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Udaya" xmltv_id="Udaya">Udaya</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Vanitha-TV" xmltv_id="Vanitha TV">Vanitha TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Yes-Indiavision" xmltv_id="Yes Indiavision">Yes Indiavision</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Zee-Bangla" xmltv_id="Zee Bangla">Zee Bangla</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Zee-Cafe" xmltv_id="Zee Cafe">Zee Cafe</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Zee-Cafe-HD" xmltv_id="Zee Cafe HD">Zee Cafe HD</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Zee-Kannada" xmltv_id="Zee Kannada">Zee Kannada</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Zee-Marathi" xmltv_id="Zee Marathi">Zee Marathi</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Zee-Salaam" xmltv_id="Zee Salaam">Zee Salaam</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Zee-Smile" xmltv_id="Zee Smile">Zee Smile</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Zee-Tamil" xmltv_id="Zee Tamil">Zee Tamil</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Zee-Telugu" xmltv_id="Zee Telugu">Zee Telugu</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="ZEE-TV" xmltv_id="ZEE TV">ZEE TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Zee-TV-HD" xmltv_id="Zee TV HD">Zee TV HD</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Zee-Variasi" xmltv_id="Zee Variasi">Zee Variasi</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="ZETC-Punjabi" xmltv_id="ZETC Punjabi">ZETC Punjabi</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Zindagi" xmltv_id="Zindagi">Zindagi</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Zing" xmltv_id="Zing">Zing</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Zoom" xmltv_id="Zoom">Zoom</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Etv-News-Urdu" xmltv_id="Etv News Urdu">Etv News Urdu</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Mahuaa-Plus" xmltv_id="Mahuaa Plus">Mahuaa Plus</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Aastha" xmltv_id="Aastha">Aastha</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Aastha-Bhajan" xmltv_id="Aastha Bhajan">Aastha Bhajan</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Adhyatma-TV" xmltv_id="Adhyatma TV">Adhyatma TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Ali-Channel" xmltv_id="Ali Channel">Ali Channel</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Angel-Tv" xmltv_id="Angel Tv">Angel Tv</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Aradana-TV" xmltv_id="Aradana TV">Aradana TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Arihant-Tv" xmltv_id="Arihant Tv">Arihant Tv</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Aseervatham-TV" xmltv_id="Aseervatham TV">Aseervatham TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Bhakti-TV" xmltv_id="Bhakti TV">Bhakti TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Darshan-24" xmltv_id="Darshan 24">Darshan 24</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Divya-Tv" xmltv_id="Divya Tv">Divya Tv</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="God-Tv" xmltv_id="God Tv">God Tv</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Ishwar-Tv" xmltv_id="Ishwar Tv">Ishwar Tv</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Lord-Buddha-TV" xmltv_id="Lord Buddha TV">Lord Buddha TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Mh1-Shraddha" xmltv_id="Mh1 Shraddha">Mh1 Shraddha</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="MY-TV" xmltv_id="MY TV">MY TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Paras-Tv" xmltv_id="Paras Tv">Paras Tv</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Sanatan-TV" xmltv_id="Sanatan TV">Sanatan TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Sanskar" xmltv_id="Sanskar">Sanskar</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Satsang-TV" xmltv_id="Satsang TV">Satsang TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Soham-TV" xmltv_id="Soham TV">Soham TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="SVBC" xmltv_id="SVBC">SVBC</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Zee-Jagran" xmltv_id="Zee Jagran">Zee Jagran</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Adithya-TV" xmltv_id="Adithya TV">Adithya TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Animax" xmltv_id="Animax">Animax</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Baby-TV" xmltv_id="Baby TV">Baby TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Cartoon-Network" xmltv_id="Cartoon Network">Cartoon Network</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Chintu-Tv" xmltv_id="Chintu Tv">Chintu Tv</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Chutti-TV" xmltv_id="Chutti TV">Chutti TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Discovery-Kids" xmltv_id="Discovery Kids">Discovery Kids</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Disney-Channel" xmltv_id="Disney Channel">Disney Channel</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Disney-Junior" xmltv_id="Disney Junior">Disney Junior</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Disney-XD" xmltv_id="Disney XD">Disney XD</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Hungama-TV" xmltv_id="Hungama TV">Hungama TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Kochu-Tv" xmltv_id="Kochu Tv">Kochu Tv</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Kushi-Tv" xmltv_id="Kushi Tv">Kushi Tv</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Nick-Junior" xmltv_id="Nick Junior">Nick Junior</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Nickelodeon" xmltv_id="Nickelodeon">Nickelodeon</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="POGO" xmltv_id="POGO">POGO</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Sonic" xmltv_id="Sonic">Sonic</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Topper-TV" xmltv_id="Topper TV">Topper TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="ZeeQ" xmltv_id="ZeeQ">ZeeQ</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Animal-Planet" xmltv_id="Animal Planet">Animal Planet</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Animal-Planet-HD-World" xmltv_id="Animal Planet HD World">Animal Planet HD World</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Discovery-Channel" xmltv_id="Discovery Channel">Discovery Channel</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Discovery-HD" xmltv_id="Discovery HD">Discovery HD</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Discovery-Science" xmltv_id="Discovery Science">Discovery Science</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Discovery-Tamil" xmltv_id="Discovery Tamil">Discovery Tamil</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Discovery-Turbo" xmltv_id="Discovery Turbo">Discovery Turbo</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="History-Tv-18" xmltv_id="History Tv 18">History Tv 18</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="History-TV-HD" xmltv_id="History TV HD">History TV HD</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Nat-Geo-People" xmltv_id="Nat Geo People">Nat Geo People</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Nat-Geo-People-HD" xmltv_id="Nat Geo People HD">Nat Geo People HD</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Nat-Geo-Wild" xmltv_id="Nat Geo Wild">Nat Geo Wild</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="National-Geographic-Channel" xmltv_id="National Geographic Channel">National Geographic Channel</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="National-Geographic-Channel-HD" xmltv_id="National Geographic Channel HD">National Geographic Channel HD</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Travel-XP-HD" xmltv_id="Travel XP HD">Travel XP HD</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="FTV" xmltv_id="FTV">FTV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="FTV-HD" xmltv_id="FTV HD">FTV HD</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="HomeShop-18" xmltv_id="HomeShop 18">HomeShop 18</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="NDTV-Good-Times" xmltv_id="NDTV Good Times">NDTV Good Times</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="TLC" xmltv_id="TLC">TLC</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="TLC-HD" xmltv_id="TLC HD">TLC HD</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Travel-XP-SD" xmltv_id="Travel XP SD">Travel XP SD</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="6TV" xmltv_id="6TV">6TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="7sea" xmltv_id="7sea">7sea</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="A2Z-News" xmltv_id="A2Z News">A2Z News</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Aaj-Tak" xmltv_id="Aaj Tak">Aaj Tak</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Aalami-Sahara" xmltv_id="Aalami Sahara">Aalami Sahara</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="ABN-Andhra-Jyothi" xmltv_id="ABN Andhra Jyothi">ABN Andhra Jyothi</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="ABP-Ananda" xmltv_id="ABP Ananda">ABP Ananda</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="ABP-Majha" xmltv_id="ABP Majha">ABP Majha</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="ABP-News" xmltv_id="ABP News">ABP News</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Aljazeera" xmltv_id="Aljazeera">Aljazeera</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Aryan" xmltv_id="Aryan">Aryan</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Asianet-News" xmltv_id="Asianet News">Asianet News</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Bansal-News" xmltv_id="Bansal News">Bansal News</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="BBC-World-News" xmltv_id="BBC World News">BBC World News</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Bizz-News" xmltv_id="Bizz News">Bizz News</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Captain-News" xmltv_id="Captain News">Captain News</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Channel-10" xmltv_id="Channel 10">Channel 10</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Channel-2" xmltv_id="Channel 2">Channel 2</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Channel-NewsAsia" xmltv_id="Channel NewsAsia">Channel NewsAsia</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="CNBC-AWAAZ" xmltv_id="CNBC AWAAZ">CNBC AWAAZ</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="CNBC-Bajar" xmltv_id="CNBC Bajar">CNBC Bajar</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="CNBC-TV18" xmltv_id="CNBC TV18">CNBC TV18</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="CNBC-TV18-Prime-HD" xmltv_id="CNBC TV18 Prime HD">CNBC TV18 Prime HD</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="CNN" xmltv_id="CNN">CNN</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="CNN-IBN" xmltv_id="CNN-IBN">CNN-IBN</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="CTVN-AKD-Plus" xmltv_id="CTVN AKD Plus">CTVN AKD Plus</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Day-And-Night" xmltv_id="Day And Night">Day And Night</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="DD-News" xmltv_id="DD News">DD News</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="DD-Rajasthan" xmltv_id="DD Rajasthan">DD Rajasthan</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="DD-Rajya-Sabha" xmltv_id="DD Rajya Sabha">DD Rajya Sabha</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Dilli-Aaj-Tak" xmltv_id="Dilli Aaj Tak">Dilli Aaj Tak</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Disha-TV" xmltv_id="Disha TV">Disha TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="DW-TV" xmltv_id="DW TV">DW TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="ET-Now" xmltv_id="ET Now">ET Now</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Etv-2" xmltv_id="Etv 2">Etv 2</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Etv-Haryana-%26-HP-News" xmltv_id="Etv Haryana &amp; HP News">Etv Haryana &amp; HP News</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="ETV-News-Bangla" xmltv_id="ETV News Bangla">ETV News Bangla</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="ETV-News-Gujarati" xmltv_id="ETV News Gujarati">ETV News Gujarati</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="ETV-News-Kannada" xmltv_id="ETV News Kannada">ETV News Kannada</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="First-India-News" xmltv_id="First India News">First India News</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Focus-Tv" xmltv_id="Focus Tv">Focus Tv</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Gemini-News" xmltv_id="Gemini News">Gemini News</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="GNN-News" xmltv_id="GNN News">GNN News</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="HM-TV" xmltv_id="HM TV">HM TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="IBN-7" xmltv_id="IBN 7">IBN 7</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="IBN-Lokmat" xmltv_id="IBN Lokmat">IBN Lokmat</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="India-24x7" xmltv_id="India 24x7">India 24x7</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="India-News" xmltv_id="India News">India News</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="India-News-Haryana" xmltv_id="India News Haryana">India News Haryana</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="India-News-Rajasthan" xmltv_id="India News Rajasthan">India News Rajasthan</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="India-News-UP" xmltv_id="India News UP">India News UP</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="India-Today" xmltv_id="India Today">India Today</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="India-TV" xmltv_id="India TV">India TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Indiavision" xmltv_id="Indiavision">Indiavision</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Jaihind-TV" xmltv_id="Jaihind TV">Jaihind TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Jain-TV" xmltv_id="Jain TV">Jain TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Janasri-News" xmltv_id="Janasri News">Janasri News</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Janta-TV" xmltv_id="Janta TV">Janta TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Kairali-People-TV" xmltv_id="Kairali People TV">Kairali People TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Kanak-TV" xmltv_id="Kanak TV">Kanak TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Kaumudy-TV" xmltv_id="Kaumudy TV">Kaumudy TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Khabrain-Abhi-Tak" xmltv_id="Khabrain Abhi Tak">Khabrain Abhi Tak</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Khoj-India" xmltv_id="Khoj India">Khoj India</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Kolkata-TV" xmltv_id="Kolkata TV">Kolkata TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Lemon-News" xmltv_id="Lemon News">Lemon News</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Live-India" xmltv_id="Live India">Live India</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Lok-Sabha-TV" xmltv_id="Lok Sabha TV">Lok Sabha TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Mahaa-News" xmltv_id="Mahaa News">Mahaa News</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Mahuaa-News" xmltv_id="Mahuaa News">Mahuaa News</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Manorama-News" xmltv_id="Manorama News">Manorama News</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Mathrubhumi-News" xmltv_id="Mathrubhumi News">Mathrubhumi News</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Maurya-TV" xmltv_id="Maurya TV">Maurya TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="MBC" xmltv_id="MBC">MBC</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="MH1-News" xmltv_id="MH1 News">MH1 News</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Munsif-TV" xmltv_id="Munsif TV">Munsif TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="NDTV-24X7" xmltv_id="NDTV 24X7">NDTV 24X7</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="NDTV-India" xmltv_id="NDTV India">NDTV India</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="NDTV-Profit" xmltv_id="NDTV Profit">NDTV Profit</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="News-24" xmltv_id="News 24">News 24</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="News-Express" xmltv_id="News Express">News Express</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="News-Time" xmltv_id="News Time">News Time</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="News-Time-Assam" xmltv_id="News Time Assam">News Time Assam</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="News11" xmltv_id="News11">News11</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="News9" xmltv_id="News9">News9</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="NewsX" xmltv_id="NewsX">NewsX</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Orissa-Tv" xmltv_id="Orissa Tv">Orissa Tv</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="P7News" xmltv_id="P7News">P7News</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="PTC-News" xmltv_id="PTC News">PTC News</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="R-Plus" xmltv_id="R Plus">R Plus</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Raj-News-24x7" xmltv_id="Raj News 24x7">Raj News 24x7</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Raj-News-Malyalam" xmltv_id="Raj News Malyalam">Raj News Malyalam</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Reporter-TV" xmltv_id="Reporter TV">Reporter TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Russia-Today" xmltv_id="Russia Today">Russia Today</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Sadhna-News-MP-CG" xmltv_id="Sadhna News MP CG">Sadhna News MP CG</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Sadhna-News-UP-UK" xmltv_id="Sadhna News UP UK">Sadhna News UP UK</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Sahara-UP" xmltv_id="Sahara UP">Sahara UP</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Sakshi-TV" xmltv_id="Sakshi TV">Sakshi TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Samachar-Plus-UP" xmltv_id="Samachar Plus UP">Samachar Plus UP</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Samaya-TV" xmltv_id="Samaya TV">Samaya TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Sandesh-News-DNN" xmltv_id="Sandesh News DNN">Sandesh News DNN</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Sea-News" xmltv_id="Sea News">Sea News</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Seithigal" xmltv_id="Seithigal">Seithigal</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Studio-N" xmltv_id="Studio N">Studio N</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="STV-Haryana-News" xmltv_id="STV Haryana News">STV Haryana News</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Sudarshan-TV" xmltv_id="Sudarshan TV">Sudarshan TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Sun-News" xmltv_id="Sun News">Sun News</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Suvarna-News-24x7" xmltv_id="Suvarna News 24x7">Suvarna News 24x7</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="T-News" xmltv_id="T News">T News</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Tez" xmltv_id="Tez">Tez</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Thanthi-TV" xmltv_id="Thanthi TV">Thanthi TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Times-Now" xmltv_id="Times Now">Times Now</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Total-TV" xmltv_id="Total TV">Total TV</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="TV24" xmltv_id="TV24">TV24</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="TV5-News" xmltv_id="TV5 News">TV5 News</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="TV9-Gujarati" xmltv_id="TV9 Gujarati">TV9 Gujarati</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="TV9-Kannada" xmltv_id="TV9 Kannada">TV9 Kannada</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="TV9-Maharashtra" xmltv_id="TV9 Maharashtra">TV9 Maharashtra</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="TV9-Telugu-News" xmltv_id="TV9 Telugu News">TV9 Telugu News</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Udaya-News" xmltv_id="Udaya News">Udaya News</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="V6-News" xmltv_id="V6 News">V6 News</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Voice-of-Nation" xmltv_id="Voice of Nation">Voice of Nation</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="VTV-Gujarati" xmltv_id="VTV Gujarati">VTV Gujarati</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Zee-24-Gantalu" xmltv_id="Zee 24 Gantalu">Zee 24 Gantalu</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Zee-24-Ghanta" xmltv_id="Zee 24 Ghanta">Zee 24 Ghanta</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Zee-24-Ghante-MP" xmltv_id="Zee 24 Ghante MP">Zee 24 Ghante MP</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Zee-24-Taas" xmltv_id="Zee 24 Taas">Zee 24 Taas</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Zee-Business" xmltv_id="Zee Business">Zee Business</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Zee-News" xmltv_id="Zee News">Zee News</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Zee-News-UP" xmltv_id="Zee News UP">Zee News UP</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Zee-Punjab-Haryana-Himachal" xmltv_id="Zee Punjab Haryana Himachal">Zee Punjab Haryana Himachal</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="DD-Sports" xmltv_id="DD Sports">DD Sports</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Neo-Prime" xmltv_id="Neo Prime">Neo Prime</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Neo-Sports" xmltv_id="Neo Sports">Neo Sports</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Sony-ESPN" xmltv_id="Sony ESPN">Sony ESPN</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Sony-ESPN-HD" xmltv_id="Sony ESPN HD">Sony ESPN HD</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Sony-Six" xmltv_id="Sony Six">Sony Six</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Sony-Six-HD" xmltv_id="Sony Six HD">Sony Six HD</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Star-Sports-1" xmltv_id="Star Sports 1">Star Sports 1</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Star-Sports-2" xmltv_id="Star Sports 2">Star Sports 2</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Star-Sports-3" xmltv_id="Star Sports 3">Star Sports 3</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Star-Sports-4" xmltv_id="Star Sports 4">Star Sports 4</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Star-Sports-HD-1" xmltv_id="Star Sports HD 1">Star Sports HD 1</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Star-Sports-HD-2" xmltv_id="Star Sports HD 2">Star Sports HD 2</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Star-Sports-HD-3" xmltv_id="Star Sports HD 3">Star Sports HD 3</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Star-Sports-HD-4" xmltv_id="Star Sports HD 4">Star Sports HD 4</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Ten-Action" xmltv_id="Ten Action">Ten Action</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Ten-Cricket" xmltv_id="Ten Cricket">Ten Cricket</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Ten-Golf-HD" xmltv_id="Ten Golf HD">Ten Golf HD</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Ten-HD" xmltv_id="Ten HD">Ten HD</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Ten-Sports" xmltv_id="Ten Sports">Ten Sports</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Chirithira" xmltv_id="Chirithira">Chirithira</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Comedy-Central" xmltv_id="Comedy Central">Comedy Central</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Udaya-Comedy" xmltv_id="Udaya Comedy">Udaya Comedy</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Food-Food" xmltv_id="Food Food">Food Food</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Living-Foodz" xmltv_id="Living Foodz">Living Foodz</channel>
+    <channel update="i" site="tvscheduleindia.com" site_id="Care-World" xmltv_id="Care World">Care World</channel>
+  </channels>
+</site>

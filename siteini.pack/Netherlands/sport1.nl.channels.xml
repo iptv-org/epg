@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<site generator-info-name="WebGrab+Plus version 1.0.8 Beta -- Jan van Straaten" site="sport1.nl">
+  <channels>
+    <channel update="i" site="sport1.nl" site_id="logoLive" xmltv_id="Sport1HD.nl">Sport1 HD</channel>
+    <channel update="i" site="sport1.nl" site_id="logoGolf" xmltv_id="Sport1Golf.nl">Sport1 Golf</channel>
+    <channel update="i" site="sport1.nl" site_id="logoTennis" xmltv_id="Sport1Tennis.nl">Sport1 Tennis</channel>
+    <channel update="i" site="sport1.nl" site_id="logoExtra1" xmltv_id="Sport1Extra.nl">Sport1 Extra</channel>
+    <channel update="i" site="sport1.nl" site_id="logoExtra2" xmltv_id="Sport1Extra2.nl">Sport1 Extra 2</channel>
+    <channel update="i" site="sport1.nl" site_id="logoExtra3" xmltv_id="Sport1Extra3.nl">Sport1 Extra 3</channel>
+    <channel update="i" site="sport1.nl" site_id="logoLive" xmltv_id="Sport1live.nl">Sport1 Live</channel>
+  </channels>
+</site>

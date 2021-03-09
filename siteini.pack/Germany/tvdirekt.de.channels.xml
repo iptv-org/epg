@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<site generator-info-name="WebGrab+Plus/w MDB &amp; REX Postprocess -- version V3.0.2.2 -- Jan van Straaten" site="tvdirekt.de">
+  <channels>
+    <channel update="i" site="tvdirekt.de" site_id="5/das-erste" xmltv_id="Das Erste">Das Erste</channel>
+    <channel update="i" site="tvdirekt.de" site_id="129/zdf" xmltv_id="ZDF">ZDF</channel>
+    <channel update="i" site="tvdirekt.de" site_id="86/rtl" xmltv_id="RTL">RTL</channel>
+    <channel update="i" site="tvdirekt.de" site_id="92/sat-1" xmltv_id="SAT.1">SAT.1</channel>
+    <channel update="i" site="tvdirekt.de" site_id="79/prosieben" xmltv_id="ProSieben">ProSieben</channel>
+    <channel update="i" site="tvdirekt.de" site_id="87/rtl-zwei" xmltv_id="RTL Zwei">RTL Zwei</channel>
+    <channel update="i" site="tvdirekt.de" site_id="126/vox" xmltv_id="VOX">VOX</channel>
+    <channel update="i" site="tvdirekt.de" site_id="51/kabel-eins" xmltv_id="Kabel eins">Kabel eins</channel>
+    <channel update="i" site="tvdirekt.de" site_id="118/tele-5" xmltv_id="TELE 5">TELE 5</channel>
+    <channel update="i" site="tvdirekt.de" site_id="6/arte" xmltv_id="ARTE">ARTE</channel>
+    <channel update="i" site="tvdirekt.de" site_id="1/3sat" xmltv_id="3sat">3sat</channel>
+    <channel update="i" site="tvdirekt.de" site_id="113/super-rtl" xmltv_id="Super RTL">Super RTL</channel>
+    <channel update="i" site="tvdirekt.de" site_id="127/wdr" xmltv_id="WDR">WDR</channel>
+    <channel update="i" site="tvdirekt.de" site_id="67/ndr" xmltv_id="NDR">NDR</channel>
+    <channel update="i" site="tvdirekt.de" site_id="12/br" xmltv_id="BR">BR</channel>
+    <channel update="i" site="tvdirekt.de" site_id="90/swr-bw" xmltv_id="SWR BW">SWR BW</channel>
+    <channel update="i" site="tvdirekt.de" site_id="49/hr" xmltv_id="HR">HR</channel>
+    <channel update="i" site="tvdirekt.de" site_id="55/mdr" xmltv_id="MDR">MDR</channel>
+    <channel update="i" site="tvdirekt.de" site_id="83/rbb" xmltv_id="RBB">RBB</channel>
+    <channel update="i" site="tvdirekt.de" site_id="172/swr-rp" xmltv_id="SWR RP">SWR RP</channel>
+    <channel update="i" site="tvdirekt.de" site_id="2/ard-alpha" xmltv_id="ARD ALPHA">ARD ALPHA</channel>
+    <channel update="i" site="tvdirekt.de" site_id="111/spreekanal" xmltv_id="Spreekanal">Spreekanal</channel>
+    <channel update="i" site="tvdirekt.de" site_id="58/muenchen-tv" xmltv_id="München TV">München TV</channel>
+    <channel update="i" site="tvdirekt.de" site_id="117/tide-tv" xmltv_id="Tide TV">Tide TV</channel>
+    <channel update="i" site="tvdirekt.de" site_id="123/tv-berlin" xmltv_id="TV Berlin">TV Berlin</channel>
+    <channel update="i" site="tvdirekt.de" site_id="39/franken-tv" xmltv_id="Franken TV">Franken TV</channel>
+    <channel update="i" site="tvdirekt.de" site_id="148/hamburg-1" xmltv_id="Hamburg 1">Hamburg 1</channel>
+    <channel update="i" site="tvdirekt.de" site_id="131/zdfneo" xmltv_id="ZDFneo">ZDFneo</channel>
+    <channel update="i" site="tvdirekt.de" site_id="133/sixx" xmltv_id="sixx">sixx</channel>
+    <channel update="i" site="tvdirekt.de" site_id="153/prosieben-maxx" xmltv_id="ProSieben Maxx">ProSieben Maxx</channel>
+    <channel update="i" site="tvdirekt.de" site_id="142/nitro" xmltv_id="NITRO">NITRO</channel>
+    <channel update="i" site="tvdirekt.de" site_id="179/rtl-plus" xmltv_id="RTL plus">RTL plus</channel>
+    <channel update="i" site="tvdirekt.de" site_id="151/sat-1-gold" xmltv_id="SAT.1 Gold">SAT.1 Gold</channel>
+    <channel update="i" site="tvdirekt.de" site_id="4/anixe-hd" xmltv_id="Anixe HD">Anixe HD</channel>
+    <channel update="i" site="tvdirekt.de" site_id="64/nick" xmltv_id="NICK">NICK</channel>
+    <channel update="i" site="tvdirekt.de" site_id="54/kika" xmltv_id="KiKa">KiKa</channel>
+    <channel update="i" site="tvdirekt.de" site_id="180/toggo-plus" xmltv_id="Toggo Plus">Toggo Plus</channel>
+    <channel update="i" site="tvdirekt.de" site_id="23/comedy-central" xmltv_id="Comedy Central">Comedy Central</channel>
+    <channel update="i" site="tvdirekt.de" site_id="183/kabel-1-doku" xmltv_id="Kabel 1 Doku">Kabel 1 Doku</channel>
+    <channel update="i" site="tvdirekt.de" site_id="186/n24-doku" xmltv_id="N24 Doku">N24 Doku</channel>
+    <channel update="i" site="tvdirekt.de" site_id="25/disney-channel" xmltv_id="Disney Channel">Disney Channel</channel>
+    <channel update="i" site="tvdirekt.de" site_id="182/zee-one" xmltv_id="Zee One">Zee One</channel>
+    <channel update="i" site="tvdirekt.de" site_id="77/phoenix" xmltv_id="Phoenix">Phoenix</channel>
+    <channel update="i" site="tvdirekt.de" site_id="30/dmax" xmltv_id="DMAX">DMAX</channel>
+    <channel update="i" site="tvdirekt.de" site_id="60/welt" xmltv_id="WELT">WELT</channel>
+    <channel update="i" site="tvdirekt.de" site_id="38/one" xmltv_id="ONE">ONE</channel>
+    <channel update="i" site="tvdirekt.de" site_id="68/n-tv" xmltv_id="N-TV">N-TV</channel>
+    <channel update="i" site="tvdirekt.de" site_id="14/bbc-world" xmltv_id="BBC World">BBC World</channel>
+    <channel update="i" site="tvdirekt.de" site_id="37/tagesschau24" xmltv_id="Tagesschau24">Tagesschau24</channel>
+    <channel update="i" site="tvdirekt.de" site_id="35/euronews" xmltv_id="Euronews">Euronews</channel>
+    <channel update="i" site="tvdirekt.de" site_id="130/zdfinfo" xmltv_id="ZDFinfo">ZDFinfo</channel>
+    <channel update="i" site="tvdirekt.de" site_id="34/dw-english" xmltv_id="DW English">DW English</channel>
+    <channel update="i" site="tvdirekt.de" site_id="22/cnn" xmltv_id="CNN">CNN</channel>
+    <channel update="i" site="tvdirekt.de" site_id="16/bibel-tv" xmltv_id="Bibel TV">Bibel TV</channel>
+    <channel update="i" site="tvdirekt.de" site_id="48/hse24" xmltv_id="HSE24">HSE24</channel>
+    <channel update="i" site="tvdirekt.de" site_id="81/qvc" xmltv_id="QVC">QVC</channel>
+    <channel update="i" site="tvdirekt.de" site_id="109/sonnenklar-tv" xmltv_id="Sonnenklar TV">Sonnenklar TV</channel>
+    <channel update="i" site="tvdirekt.de" site_id="190/welt-der-wunder" xmltv_id="Welt der Wunder">Welt der Wunder</channel>
+    <channel update="i" site="tvdirekt.de" site_id="191/home-garden-tv" xmltv_id="Home &amp; Garden TV">Home &amp; Garden TV</channel>
+    <channel update="i" site="tvdirekt.de" site_id="213/health-tv" xmltv_id="Health TV">Health TV</channel>
+    <channel update="i" site="tvdirekt.de" site_id="214/voxup" xmltv_id="VOXup">VOXup</channel>
+    <channel update="i" site="tvdirekt.de" site_id="71/orf-1" xmltv_id="ORF 1">ORF 1</channel>
+    <channel update="i" site="tvdirekt.de" site_id="72/orf-2" xmltv_id="ORF 2">ORF 2</channel>
+    <channel update="i" site="tvdirekt.de" site_id="137/orf-3" xmltv_id="ORF 3">ORF 3</channel>
+    <channel update="i" site="tvdirekt.de" site_id="135/servus-tv" xmltv_id="Servus TV">Servus TV</channel>
+    <channel update="i" site="tvdirekt.de" site_id="7/atv" xmltv_id="ATV">ATV</channel>
+    <channel update="i" site="tvdirekt.de" site_id="138/atv-2" xmltv_id="ATV 2">ATV 2</channel>
+    <channel update="i" site="tvdirekt.de" site_id="80/puls-4" xmltv_id="Puls 4">Puls 4</channel>
+    <channel update="i" site="tvdirekt.de" site_id="32/srf-1" xmltv_id="SRF 1">SRF 1</channel>
+    <channel update="i" site="tvdirekt.de" site_id="144/srf-2" xmltv_id="SRF 2">SRF 2</channel>
+    <channel update="i" site="tvdirekt.de" site_id="145/france-2" xmltv_id="France 2">France 2</channel>
+    <channel update="i" site="tvdirekt.de" site_id="42/france-3" xmltv_id="France 3">France 3</channel>
+    <channel update="i" site="tvdirekt.de" site_id="15/bbc-entertainment" xmltv_id="BBC Entertainment">BBC Entertainment</channel>
+    <channel update="i" site="tvdirekt.de" site_id="96/sky-cinema-premieren" xmltv_id="Sky Cinema Premieren">Sky Cinema Premieren</channel>
+    <channel update="i" site="tvdirekt.de" site_id="98/sky-cinema-premieren-24" xmltv_id="Sky Cinema Premieren +24">Sky Cinema Premieren +24</channel>
+    <channel update="i" site="tvdirekt.de" site_id="99/sky-cinema-best-of" xmltv_id="Sky Cinema Best Of">Sky Cinema Best Of</channel>
+    <channel update="i" site="tvdirekt.de" site_id="94/sky-cinema-action" xmltv_id="Sky Cinema Action">Sky Cinema Action</channel>
+    <channel update="i" site="tvdirekt.de" site_id="100/sky-cinema-fun" xmltv_id="Sky Cinema Fun">Sky Cinema Fun</channel>
+    <channel update="i" site="tvdirekt.de" site_id="220/sky-cinema-thriller-hd" xmltv_id="Sky Cinema Thriller HD">Sky Cinema Thriller HD</channel>
+    <channel update="i" site="tvdirekt.de" site_id="103/sky-cinema-classics" xmltv_id="Sky Cinema Classics">Sky Cinema Classics</channel>
+    <channel update="i" site="tvdirekt.de" site_id="184/sky-cinema-family" xmltv_id="Sky Cinema Family">Sky Cinema Family</channel>
+    <channel update="i" site="tvdirekt.de" site_id="185/sky-one" xmltv_id="Sky One">Sky One</channel>
+    <channel update="i" site="tvdirekt.de" site_id="102/sky-krimi" xmltv_id="Sky Krimi">Sky Krimi</channel>
+    <channel update="i" site="tvdirekt.de" site_id="95/sky-fussball-bundesliga" xmltv_id="Sky Fußball Bundesliga">Sky Fußball Bundesliga</channel>
+    <channel update="i" site="tvdirekt.de" site_id="104/sky-sport-1" xmltv_id="Sky Sport 1">Sky Sport 1</channel>
+    <channel update="i" site="tvdirekt.de" site_id="105/sky-sport-2" xmltv_id="Sky Sport 2">Sky Sport 2</channel>
+    <channel update="i" site="tvdirekt.de" site_id="106/sky-sport-austria" xmltv_id="Sky Sport Austria">Sky Sport Austria</channel>
+    <channel update="i" site="tvdirekt.de" site_id="188/sky-sport-news-hd" xmltv_id="Sky Sport News HD">Sky Sport News HD</channel>
+    <channel update="i" site="tvdirekt.de" site_id="136/tnt-film" xmltv_id="TNT Film">TNT Film</channel>
+    <channel update="i" site="tvdirekt.de" site_id="173/tnt-comedy" xmltv_id="TNT Comedy">TNT Comedy</channel>
+    <channel update="i" site="tvdirekt.de" site_id="52/kabel-eins-classics" xmltv_id="Kabel eins Classics">Kabel eins Classics</channel>
+    <channel update="i" site="tvdirekt.de" site_id="41/fox" xmltv_id="FOX">FOX</channel>
+    <channel update="i" site="tvdirekt.de" site_id="120/tnt-serie" xmltv_id="TNT Serie">TNT Serie</channel>
+    <channel update="i" site="tvdirekt.de" site_id="88/rtl-crime" xmltv_id="RTL Crime">RTL Crime</channel>
+    <channel update="i" site="tvdirekt.de" site_id="162/sky-atlantic-hd" xmltv_id="Sky Atlantic HD">Sky Atlantic HD</channel>
+    <channel update="i" site="tvdirekt.de" site_id="53/kinowelt" xmltv_id="Kinowelt">Kinowelt</channel>
+    <channel update="i" site="tvdirekt.de" site_id="9/sony-axn" xmltv_id="Sony AXN">Sony AXN</channel>
+    <channel update="i" site="tvdirekt.de" site_id="170/crime-investigation" xmltv_id="Crime + Investigation">Crime + Investigation</channel>
+    <channel update="i" site="tvdirekt.de" site_id="112/13th-street" xmltv_id="13th Street">13th Street</channel>
+    <channel update="i" site="tvdirekt.de" site_id="75/syfy" xmltv_id="Syfy">Syfy</channel>
+    <channel update="i" site="tvdirekt.de" site_id="164/universal-tv" xmltv_id="Universal TV">Universal TV</channel>
+    <channel update="i" site="tvdirekt.de" site_id="73/animal-planet" xmltv_id="Animal Planet">Animal Planet</channel>
+    <channel update="i" site="tvdirekt.de" site_id="62/national-geographic" xmltv_id="National Geographic">National Geographic</channel>
+    <channel update="i" site="tvdirekt.de" site_id="149/national-geograpic-wild" xmltv_id="National Geograpic Wild">National Geograpic Wild</channel>
+    <channel update="i" site="tvdirekt.de" site_id="27/discovery-channel" xmltv_id="Discovery Channel">Discovery Channel</channel>
+    <channel update="i" site="tvdirekt.de" site_id="128/spiegel-tv-wissen" xmltv_id="Spiegel TV Wissen">Spiegel TV Wissen</channel>
+    <channel update="i" site="tvdirekt.de" site_id="152/spiegel-geschichte" xmltv_id="Spiegel Geschichte">Spiegel Geschichte</channel>
+    <channel update="i" site="tvdirekt.de" site_id="47/history" xmltv_id="History">History</channel>
+    <channel update="i" site="tvdirekt.de" site_id="174/planet" xmltv_id="Planet">Planet</channel>
+    <channel update="i" site="tvdirekt.de" site_id="178/disney-junior" xmltv_id="Disney Junior">Disney Junior</channel>
+    <channel update="i" site="tvdirekt.de" site_id="50/junior" xmltv_id="Junior">Junior</channel>
+    <channel update="i" site="tvdirekt.de" site_id="175/boomerang" xmltv_id="Boomerang">Boomerang</channel>
+    <channel update="i" site="tvdirekt.de" site_id="150/sat-1-emotions" xmltv_id="SAT.1 emotions">SAT.1 emotions</channel>
+    <channel update="i" site="tvdirekt.de" site_id="134/rtl-passion" xmltv_id="RTL Passion">RTL Passion</channel>
+    <channel update="i" site="tvdirekt.de" site_id="45/heimatkanal" xmltv_id="Heimatkanal">Heimatkanal</channel>
+    <channel update="i" site="tvdirekt.de" site_id="155/tlc" xmltv_id="TLC">TLC</channel>
+    <channel update="i" site="tvdirekt.de" site_id="93/silverline" xmltv_id="Silverline">Silverline</channel>
+    <channel update="i" site="tvdirekt.de" site_id="57/mtv" xmltv_id="MTV">MTV</channel>
+    <channel update="i" site="tvdirekt.de" site_id="21/stingray-classica" xmltv_id="Stingray Classica">Stingray Classica</channel>
+    <channel update="i" site="tvdirekt.de" site_id="157/prosieben-fun" xmltv_id="ProSieben Fun">ProSieben Fun</channel>
+    <channel update="i" site="tvdirekt.de" site_id="158/romance-tv" xmltv_id="Romance TV">Romance TV</channel>
+    <channel update="i" site="tvdirekt.de" site_id="159/rtl-living" xmltv_id="RTL Living">RTL Living</channel>
+    <channel update="i" site="tvdirekt.de" site_id="156/cartoon-network" xmltv_id="Cartoon Network">Cartoon Network</channel>
+    <channel update="i" site="tvdirekt.de" site_id="44/goldstar-tv" xmltv_id="Goldstar TV">Goldstar TV</channel>
+    <channel update="i" site="tvdirekt.de" site_id="176/e" xmltv_id="E!">E!</channel>
+    <channel update="i" site="tvdirekt.de" site_id="74/playboy-tv" xmltv_id="Playboy TV">Playboy TV</channel>
+    <channel update="i" site="tvdirekt.de" site_id="18/beate-uhse-tv" xmltv_id="Beate Uhse TV">Beate Uhse TV</channel>
+    <channel update="i" site="tvdirekt.de" site_id="209/sky-cinema-special-hd" xmltv_id="Sky Cinema Special HD">Sky Cinema Special HD</channel>
+    <channel update="i" site="tvdirekt.de" site_id="212/sony-channel" xmltv_id="Sony Channel">Sony Channel</channel>
+    <channel update="i" site="tvdirekt.de" site_id="36/eurosport-1" xmltv_id="Eurosport 1">Eurosport 1</channel>
+    <channel update="i" site="tvdirekt.de" site_id="33/sport1" xmltv_id="Sport1">Sport1</channel>
+    <channel update="i" site="tvdirekt.de" site_id="177/sport1" xmltv_id="Sport1+">Sport1+</channel>
+    <channel update="i" site="tvdirekt.de" site_id="143/eurosport-2" xmltv_id="Eurosport 2">Eurosport 2</channel>
+    <channel update="i" site="tvdirekt.de" site_id="139/orf-sport" xmltv_id="ORF Sport +">ORF Sport +</channel>
+    <channel update="i" site="tvdirekt.de" site_id="189/esports1" xmltv_id="eSPORTS1">eSPORTS1</channel>
+    <channel update="i" site="tvdirekt.de" site_id="208/sportdigital-fussball" xmltv_id="Sportdigital Fußball">Sportdigital Fußball</channel>
+  </channels>
+</site>

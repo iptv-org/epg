@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site generator-info-name="WebGrab+Plus/w MDB &amp; REX Postprocess -- version V2.1.5 -- Jan van Straaten" site="tv.nu">
+  <channels>
+    <channel update="i" site="tv.nu" site_id="svt1" xmltv_id="SVT1">SVT1</channel>
+    <channel update="i" site="tv.nu" site_id="svt2" xmltv_id="SVT2">SVT2</channel>
+    <channel update="i" site="tv.nu" site_id="tv3" xmltv_id="TV3">TV3</channel>
+    <channel update="i" site="tv.nu" site_id="tv4" xmltv_id="TV4">TV4</channel>
+    <channel update="i" site="tv.nu" site_id="kanal-5" xmltv_id="Kanal 5">Kanal 5</channel>
+    <channel update="i" site="tv.nu" site_id="tv6" xmltv_id="TV6">TV6</channel>
+    <channel update="i" site="tv.nu" site_id="sjuan" xmltv_id="Sjuan">Sjuan</channel>
+    <channel update="i" site="tv.nu" site_id="tv8" xmltv_id="TV8">TV8</channel>
+    <channel update="i" site="tv.nu" site_id="kanal-9" xmltv_id="Kanal 9">Kanal 9</channel>
+    <channel update="i" site="tv.nu" site_id="tv10" xmltv_id="TV10">TV10</channel>
+    <channel update="i" site="tv.nu" site_id="kanal-11" xmltv_id="Kanal 11">Kanal 11</channel>
+    <channel update="i" site="tv.nu" site_id="tv12" xmltv_id="TV12">TV12</channel>
+    <channel update="i" site="tv.nu" site_id="fox" xmltv_id="FOX">FOX</channel>
+    <channel update="i" site="tv.nu" site_id="discovery-channel" xmltv_id="Discovery Channel">Discovery Channel</channel>
+    <channel update="i" site="tv.nu" site_id="eurosport-1" xmltv_id="Eurosport 1">Eurosport 1</channel>
+    <channel update="i" site="tv.nu" site_id="mtv" xmltv_id="MTV">MTV</channel>
+    <channel update="i" site="tv.nu" site_id="kunskapskanalen" xmltv_id="Kunskapskanalen">Kunskapskanalen</channel>
+    <channel update="i" site="tv.nu" site_id="svt24" xmltv_id="SVT24">SVT24</channel>
+    <channel update="i" site="tv.nu" site_id="tv4-fakta" xmltv_id="TV4 Fakta">TV4 Fakta</channel>
+    <channel update="i" site="tv.nu" site_id="c-more-first" xmltv_id="C More First">C More First</channel>
+    <channel update="i" site="tv.nu" site_id="c-more-hits" xmltv_id="C More Hits">C More Hits</channel>
+    <channel update="i" site="tv.nu" site_id="tlc" xmltv_id="TLC">TLC</channel>
+    <channel update="i" site="tv.nu" site_id="bbc-brit" xmltv_id="BBC Brit">BBC Brit</channel>
+    <channel update="i" site="tv.nu" site_id="paramount-network" xmltv_id="Paramount Network">Paramount Network</channel>
+    <channel update="i" site="tv.nu" site_id="tnt" xmltv_id="TNT">TNT</channel>
+    <channel update="i" site="tv.nu" site_id="viasat-film-action" xmltv_id="Viasat Film Action">Viasat Film Action</channel>
+    <channel update="i" site="tv.nu" site_id="viasat-film-premiere" xmltv_id="Viasat Film Premiere">Viasat Film Premiere</channel>
+    <channel update="i" site="tv.nu" site_id="svt1-hd" xmltv_id="SVT1 HD">SVT1 HD</channel>
+    <channel update="i" site="tv.nu" site_id="svt2-hd" xmltv_id="SVT2 HD">SVT2 HD</channel>
+    <channel update="i" site="tv.nu" site_id="kanal-5-hd" xmltv_id="Kanal 5 HD">Kanal 5 HD</channel>
+    <channel update="i" site="tv.nu" site_id="tv3-hd" xmltv_id="TV3 HD">TV3 HD</channel>
+    <channel update="i" site="tv.nu" site_id="eurosport-2" xmltv_id="Eurosport 2">Eurosport 2</channel>
+    <channel update="i" site="tv.nu" site_id="c-more-series" xmltv_id="C More Series">C More Series</channel>
+    <channel update="i" site="tv.nu" site_id="c-more-fotboll" xmltv_id="C More Fotboll">C More Fotboll</channel>
+    <channel update="i" site="tv.nu" site_id="c-more-hockey" xmltv_id="C More Hockey">C More Hockey</channel>
+    <channel update="i" site="tv.nu" site_id="sportkanalen" xmltv_id="Sportkanalen">Sportkanalen</channel>
+    <channel update="i" site="tv.nu" site_id="c-more-live" xmltv_id="C More Live">C More Live</channel>
+    <channel update="i" site="tv.nu" site_id="c-more-live-2" xmltv_id="C More Live 2">C More Live 2</channel>
+    <channel update="i" site="tv.nu" site_id="c-more-live-3" xmltv_id="C More Live 3">C More Live 3</channel>
+    <channel update="i" site="tv.nu" site_id="c-more-live-4" xmltv_id="C More Live 4">C More Live 4</channel>
+    <channel update="i" site="tv.nu" site_id="c-more-live-5" xmltv_id="C More Live 5">C More Live 5</channel>
+    <channel update="i" site="tv.nu" site_id="sf-kanalen" xmltv_id="SF Kanalen">SF Kanalen</channel>
+    <channel update="i" site="tv.nu" site_id="viasat-film-hits" xmltv_id="Viasat Film Hits">Viasat Film Hits</channel>
+    <channel update="i" site="tv.nu" site_id="viasat-film-family" xmltv_id="Viasat Film Family">Viasat Film Family</channel>
+    <channel update="i" site="tv.nu" site_id="viasat-series" xmltv_id="Viasat Series">Viasat Series</channel>
+    <channel update="i" site="tv.nu" site_id="viasat-film-action-hd" xmltv_id="Viasat Film Action HD">Viasat Film Action HD</channel>
+    <channel update="i" site="tv.nu" site_id="viasat-series-hd" xmltv_id="Viasat Series HD">Viasat Series HD</channel>
+    <channel update="i" site="tv.nu" site_id="viasat-sport" xmltv_id="Viasat Sport">Viasat Sport</channel>
+    <channel update="i" site="tv.nu" site_id="viasat-fotboll" xmltv_id="Viasat Fotboll">Viasat Fotboll</channel>
+    <channel update="i" site="tv.nu" site_id="viasat-hockey" xmltv_id="Viasat Hockey">Viasat Hockey</channel>
+    <channel update="i" site="tv.nu" site_id="viasat-motor" xmltv_id="Viasat Motor">Viasat Motor</channel>
+    <channel update="i" site="tv.nu" site_id="viasat-motor-hd" xmltv_id="Viasat Motor HD">Viasat Motor HD</channel>
+    <channel update="i" site="tv.nu" site_id="viasat-fotboll-hd" xmltv_id="Viasat Fotboll HD">Viasat Fotboll HD</channel>
+    <channel update="i" site="tv.nu" site_id="viasat-golf" xmltv_id="Viasat Golf">Viasat Golf</channel>
+    <channel update="i" site="tv.nu" site_id="tv4-film" xmltv_id="TV4 Film">TV4 Film</channel>
+    <channel update="i" site="tv.nu" site_id="tv4-hd" xmltv_id="TV4 HD">TV4 HD</channel>
+    <channel update="i" site="tv.nu" site_id="tv4-guld" xmltv_id="TV4 Guld">TV4 Guld</channel>
+    <channel update="i" site="tv.nu" site_id="viasat-nature" xmltv_id="Viasat Nature">Viasat Nature</channel>
+    <channel update="i" site="tv.nu" site_id="vh1" xmltv_id="VH1">VH1</channel>
+    <channel update="i" site="tv.nu" site_id="bbc-world-news" xmltv_id="BBC World News">BBC World News</channel>
+    <channel update="i" site="tv.nu" site_id="cnn" xmltv_id="CNN">CNN</channel>
+    <channel update="i" site="tv.nu" site_id="animal-planet-hd" xmltv_id="Animal Planet HD">Animal Planet HD</channel>
+    <channel update="i" site="tv.nu" site_id="nicktoons" xmltv_id="Nicktoons">Nicktoons</channel>
+    <channel update="i" site="tv.nu" site_id="nick-jr-lang-tabla" xmltv_id="Nick JR (lång tablå)">Nick JR (lång tablå)</channel>
+    <channel update="i" site="tv.nu" site_id="nick-jr" xmltv_id="Nick JR">Nick JR</channel>
+    <channel update="i" site="tv.nu" site_id="cartoon-network" xmltv_id="Cartoon Network">Cartoon Network</channel>
+    <channel update="i" site="tv.nu" site_id="disney-xd" xmltv_id="Disney XD">Disney XD</channel>
+    <channel update="i" site="tv.nu" site_id="disney-channel" xmltv_id="Disney Channel">Disney Channel</channel>
+    <channel update="i" site="tv.nu" site_id="nickelodeon" xmltv_id="Nickelodeon">Nickelodeon</channel>
+    <channel update="i" site="tv.nu" site_id="travel-channel" xmltv_id="Travel Channel">Travel Channel</channel>
+    <channel update="i" site="tv.nu" site_id="discovery-science" xmltv_id="Discovery Science">Discovery Science</channel>
+    <channel update="i" site="tv.nu" site_id="discovery-world" xmltv_id="Discovery World">Discovery World</channel>
+    <channel update="i" site="tv.nu" site_id="investigation-discovery" xmltv_id="Investigation Discovery">Investigation Discovery</channel>
+    <channel update="i" site="tv.nu" site_id="viasat-history" xmltv_id="Viasat History">Viasat History</channel>
+    <channel update="i" site="tv.nu" site_id="viasat-explore" xmltv_id="Viasat Explore">Viasat Explore</channel>
+    <channel update="i" site="tv.nu" site_id="mtv-live-hd" xmltv_id="MTV Live HD">MTV Live HD</channel>
+    <channel update="i" site="tv.nu" site_id="dr1" xmltv_id="DR1">DR1</channel>
+    <channel update="i" site="tv.nu" site_id="nrk1" xmltv_id="NRK1">NRK1</channel>
+    <channel update="i" site="tv.nu" site_id="nrk2" xmltv_id="NRK2">NRK2</channel>
+    <channel update="i" site="tv.nu" site_id="tv2-norge" xmltv_id="TV2 (Norge)">TV2 (Norge)</channel>
+    <channel update="i" site="tv.nu" site_id="3sat" xmltv_id="3sat">3sat</channel>
+    <channel update="i" site="tv.nu" site_id="das-erste" xmltv_id="Das Erste">Das Erste</channel>
+    <channel update="i" site="tv.nu" site_id="rai-1" xmltv_id="Rai 1">Rai 1</channel>
+    <channel update="i" site="tv.nu" site_id="cbs-reality" xmltv_id="CBS Reality">CBS Reality</channel>
+    <channel update="i" site="tv.nu" site_id="rai-2" xmltv_id="Rai 2">Rai 2</channel>
+    <channel update="i" site="tv.nu" site_id="disney-junior" xmltv_id="Disney Junior">Disney Junior</channel>
+    <channel update="i" site="tv.nu" site_id="pink-plus" xmltv_id="Pink Plus">Pink Plus</channel>
+    <channel update="i" site="tv.nu" site_id="mtv-rocks" xmltv_id="MTV Rocks">MTV Rocks</channel>
+    <channel update="i" site="tv.nu" site_id="sky-news" xmltv_id="Sky News">Sky News</channel>
+    <channel update="i" site="tv.nu" site_id="viasat-film-premiere-hd" xmltv_id="Viasat Film Premiere HD">Viasat Film Premiere HD</channel>
+    <channel update="i" site="tv.nu" site_id="tv-polonia" xmltv_id="TV Polonia">TV Polonia</channel>
+    <channel update="i" site="tv.nu" site_id="tv-finland" xmltv_id="TV Finland">TV Finland</channel>
+    <channel update="i" site="tv.nu" site_id="mezzo" xmltv_id="Mezzo">Mezzo</channel>
+    <channel update="i" site="tv.nu" site_id="cnbc" xmltv_id="CNBC">CNBC</channel>
+    <channel update="i" site="tv.nu" site_id="axess-tv" xmltv_id="Axess TV">Axess TV</channel>
+    <channel update="i" site="tv.nu" site_id="euro-news" xmltv_id="Euro News">Euro News</channel>
+    <channel update="i" site="tv.nu" site_id="bbc-earth" xmltv_id="BBC Earth">BBC Earth</channel>
+    <channel update="i" site="tv.nu" site_id="national-geographic-hd" xmltv_id="National Geographic HD">National Geographic HD</channel>
+    <channel update="i" site="tv.nu" site_id="nat-geo-wild" xmltv_id="Nat Geo Wild">Nat Geo Wild</channel>
+    <channel update="i" site="tv.nu" site_id="boomerang" xmltv_id="Boomerang">Boomerang</channel>
+    <channel update="i" site="tv.nu" site_id="kanal-10" xmltv_id="Kanal 10">Kanal 10</channel>
+    <channel update="i" site="tv.nu" site_id="c-more-sport-sf-kanalen" xmltv_id="C More Sport SF-Kanalen">C More Sport SF-Kanalen</channel>
+    <channel update="i" site="tv.nu" site_id="eurosport-1-hd" xmltv_id="Eurosport 1 HD">Eurosport 1 HD</channel>
+    <channel update="i" site="tv.nu" site_id="nat-geo-wild-hd" xmltv_id="Nat Geo Wild HD">Nat Geo Wild HD</channel>
+    <channel update="i" site="tv.nu" site_id="outtv" xmltv_id="OUTtv">OUTtv</channel>
+    <channel update="i" site="tv.nu" site_id="c-more-series-hd" xmltv_id="C More Series HD">C More Series HD</channel>
+    <channel update="i" site="tv.nu" site_id="high-tv-3d" xmltv_id="High TV 3D">High TV 3D</channel>
+    <channel update="i" site="tv.nu" site_id="c-more-first-hd" xmltv_id="C More First HD">C More First HD</channel>
+    <channel update="i" site="tv.nu" site_id="c-more-hits-hd" xmltv_id="C More Hits HD">C More Hits HD</channel>
+    <channel update="i" site="tv.nu" site_id="fuel-tv" xmltv_id="FUEL TV">FUEL TV</channel>
+    <channel update="i" site="tv.nu" site_id="wild-tv-hd" xmltv_id="Wild TV HD">Wild TV HD</channel>
+    <channel update="i" site="tv.nu" site_id="mtv-dance" xmltv_id="MTV Dance">MTV Dance</channel>
+    <channel update="i" site="tv.nu" site_id="tv6-hd" xmltv_id="TV6 HD">TV6 HD</channel>
+    <channel update="i" site="tv.nu" site_id="viasat-sport-hd" xmltv_id="Viasat Sport HD">Viasat Sport HD</channel>
+    <channel update="i" site="tv.nu" site_id="ftv" xmltv_id="FTV">FTV</channel>
+    <channel update="i" site="tv.nu" site_id="mezzo-live-hd" xmltv_id="Mezzo Live HD">Mezzo Live HD</channel>
+    <channel update="i" site="tv.nu" site_id="discovery-hd-showcase" xmltv_id="Discovery HD Showcase">Discovery HD Showcase</channel>
+    <channel update="i" site="tv.nu" site_id="dr2" xmltv_id="DR2">DR2</channel>
+    <channel update="i" site="tv.nu" site_id="animal-planet" xmltv_id="Animal Planet">Animal Planet</channel>
+    <channel update="i" site="tv.nu" site_id="h2" xmltv_id="H2">H2</channel>
+    <channel update="i" site="tv.nu" site_id="tv3-danmark" xmltv_id="TV3 Danmark">TV3 Danmark</channel>
+    <channel update="i" site="tv.nu" site_id="arte" xmltv_id="ARTE">ARTE</channel>
+    <channel update="i" site="tv.nu" site_id="dr-ultra" xmltv_id="DR Ultra">DR Ultra</channel>
+    <channel update="i" site="tv.nu" site_id="dr-k" xmltv_id="DR K">DR K</channel>
+    <channel update="i" site="tv.nu" site_id="3-plus-danmark" xmltv_id="3 Plus Danmark">3 Plus Danmark</channel>
+    <channel update="i" site="tv.nu" site_id="dr3" xmltv_id="DR3">DR3</channel>
+    <channel update="i" site="tv.nu" site_id="dr-ramasjang" xmltv_id="DR Ramasjang">DR Ramasjang</channel>
+    <channel update="i" site="tv.nu" site_id="tv2" xmltv_id="TV2">TV2</channel>
+    <channel update="i" site="tv.nu" site_id="tv3-norge" xmltv_id="TV3 Norge">TV3 Norge</channel>
+    <channel update="i" site="tv.nu" site_id="viasat-4" xmltv_id="Viasat 4">Viasat 4</channel>
+    <channel update="i" site="tv.nu" site_id="nrk3" xmltv_id="NRK3">NRK3</channel>
+    <channel update="i" site="tv.nu" site_id="yle-tv2" xmltv_id="Yle TV2">Yle TV2</channel>
+    <channel update="i" site="tv.nu" site_id="viasat-hockey-hd" xmltv_id="Viasat Hockey HD">Viasat Hockey HD</channel>
+    <channel update="i" site="tv.nu" site_id="mtv3" xmltv_id="MTV3">MTV3</channel>
+    <channel update="i" site="tv.nu" site_id="disney-junior-lang-tabla" xmltv_id="Disney Junior (lång tablå)">Disney Junior (lång tablå)</channel>
+    <channel update="i" site="tv.nu" site_id="nelonen" xmltv_id="Nelonen">Nelonen</channel>
+    <channel update="i" site="tv.nu" site_id="fox-hd" xmltv_id="FOX HD">FOX HD</channel>
+    <channel update="i" site="tv.nu" site_id="yle-tv1" xmltv_id="Yle TV1">Yle TV1</channel>
+    <channel update="i" site="tv.nu" site_id="yle-teema-fem" xmltv_id="Yle Teema &amp; Fem">Yle Teema &amp; Fem</channel>
+    <channel update="i" site="tv.nu" site_id="rtl" xmltv_id="RTL">RTL</channel>
+    <channel update="i" site="tv.nu" site_id="vox" xmltv_id="VOX">VOX</channel>
+    <channel update="i" site="tv.nu" site_id="zdf" xmltv_id="ZDF">ZDF</channel>
+    <channel update="i" site="tv.nu" site_id="prosieben" xmltv_id="ProSieben">ProSieben</channel>
+    <channel update="i" site="tv.nu" site_id="ginx-esports-tv" xmltv_id="GINX eSports TV">GINX eSports TV</channel>
+    <channel update="i" site="tv.nu" site_id="nhk-world-europe" xmltv_id="NHK World Europe">NHK World Europe</channel>
+    <channel update="i" site="tv.nu" site_id="horse-country-tv" xmltv_id="Horse &amp; Country TV">Horse &amp; Country TV</channel>
+    <channel update="i" site="tv.nu" site_id="vh1-classic-europe" xmltv_id="VH1 Classic Europe">VH1 Classic Europe</channel>
+    <channel update="i" site="tv.nu" site_id="nautical-channel" xmltv_id="Nautical Channel">Nautical Channel</channel>
+    <channel update="i" site="tv.nu" site_id="barnkanalen" xmltv_id="Barnkanalen">Barnkanalen</channel>
+    <channel update="i" site="tv.nu" site_id="national-geographic" xmltv_id="National Geographic">National Geographic</channel>
+    <channel update="i" site="tv.nu" site_id="national-geographic-hd-113" xmltv_id="National Geographic HD">National Geographic HD</channel>
+    <channel update="i" site="tv.nu" site_id="tv-chile-internacional" xmltv_id="TV Chile Internacional">TV Chile Internacional</channel>
+    <channel update="i" site="tv.nu" site_id="history-hd" xmltv_id="History HD">History HD</channel>
+    <channel update="i" site="tv.nu" site_id="hrt1" xmltv_id="HRT1">HRT1</channel>
+    <channel update="i" site="tv.nu" site_id="extreme-sports-channel" xmltv_id="Extreme Sports Channel">Extreme Sports Channel</channel>
+    <channel update="i" site="tv.nu" site_id="super-rtl" xmltv_id="Super RTL">Super RTL</channel>
+    <channel update="i" site="tv.nu" site_id="france-2" xmltv_id="France 2">France 2</channel>
+    <channel update="i" site="tv.nu" site_id="history-uk" xmltv_id="History (UK)">History (UK)</channel>
+    <channel update="i" site="tv.nu" site_id="mtv-hits" xmltv_id="MTV Hits">MTV Hits</channel>
+    <channel update="i" site="tv.nu" site_id="tv5-monde-europe" xmltv_id="TV5 Monde Europe">TV5 Monde Europe</channel>
+    <channel update="i" site="tv.nu" site_id="tve-internacional" xmltv_id="TVE Internacional">TVE Internacional</channel>
+    <channel update="i" site="tv.nu" site_id="e" xmltv_id="E!">E!</channel>
+    <channel update="i" site="tv.nu" site_id="god-tv" xmltv_id="GOD TV">GOD TV</channel>
+    <channel update="i" site="tv.nu" site_id="outdoor-channel-hd" xmltv_id="Outdoor Channel HD">Outdoor Channel HD</channel>
+    <channel update="i" site="tv.nu" site_id="al-jazeera-english" xmltv_id="Al Jazeera English">Al Jazeera English</channel>
+    <channel update="i" site="tv.nu" site_id="channel-one-russia-worldwide-network" xmltv_id="Channel One Russia Worldwide Network">Channel One Russia Worldwide Network</channel>
+    <channel update="i" site="tv.nu" site_id="disney-channel-hd" xmltv_id="Disney Channel HD">Disney Channel HD</channel>
+    <channel update="i" site="tv.nu" site_id="travel-channel-hd" xmltv_id="Travel Channel HD">Travel Channel HD</channel>
+    <channel update="i" site="tv.nu" site_id="france-24-english-hd" xmltv_id="France 24 English HD">France 24 English HD</channel>
+    <channel update="i" site="tv.nu" site_id="kanal-9-hd" xmltv_id="Kanal 9 HD">Kanal 9 HD</channel>
+    <channel update="i" site="tv.nu" site_id="bbc-earth-hd" xmltv_id="BBC Earth HD">BBC Earth HD</channel>
+    <channel update="i" site="tv.nu" site_id="bloomberg-tv-hd" xmltv_id="Bloomberg TV HD">Bloomberg TV HD</channel>
+    <channel update="i" site="tv.nu" site_id="bbc-brit-hd" xmltv_id="BBC Brit HD">BBC Brit HD</channel>
+    <channel update="i" site="tv.nu" site_id="tv12-hd" xmltv_id="TV12 HD">TV12 HD</channel>
+    <channel update="i" site="tv.nu" site_id="h2-hd" xmltv_id="H2 HD">H2 HD</channel>
+    <channel update="i" site="tv.nu" site_id="eurosport-2-hd" xmltv_id="Eurosport 2 HD">Eurosport 2 HD</channel>
+    <channel update="i" site="tv.nu" site_id="viasat-golf-hd" xmltv_id="Viasat Golf HD">Viasat Golf HD</channel>
+    <channel update="i" site="tv.nu" site_id="discovery-channel-hd" xmltv_id="Discovery Channel HD">Discovery Channel HD</channel>
+    <channel update="i" site="tv.nu" site_id="c-more-golf" xmltv_id="C More Golf">C More Golf</channel>
+    <channel update="i" site="tv.nu" site_id="c-more-golf-hd" xmltv_id="C More Golf HD">C More Golf HD</channel>
+    <channel update="i" site="tv.nu" site_id="c-more-live-hd" xmltv_id="C More Live HD">C More Live HD</channel>
+    <channel update="i" site="tv.nu" site_id="c-more-live-2-hd" xmltv_id="C More Live 2 HD">C More Live 2 HD</channel>
+    <channel update="i" site="tv.nu" site_id="c-more-live-3-hd" xmltv_id="C More Live 3 HD">C More Live 3 HD</channel>
+    <channel update="i" site="tv.nu" site_id="c-more-live-4-hd" xmltv_id="C More Live 4 HD">C More Live 4 HD</channel>
+    <channel update="i" site="tv.nu" site_id="c-more-live-5-hd" xmltv_id="C More Live 5 HD">C More Live 5 HD</channel>
+    <channel update="i" site="tv.nu" site_id="c-more-hockey-hd" xmltv_id="C More Hockey HD">C More Hockey HD</channel>
+    <channel update="i" site="tv.nu" site_id="c-more-fotboll-hd" xmltv_id="C More Fotboll HD">C More Fotboll HD</channel>
+    <channel update="i" site="tv.nu" site_id="tv3-sport-hd" xmltv_id="TV3 Sport HD">TV3 Sport HD</channel>
+    <channel update="i" site="tv.nu" site_id="ftv-hd" xmltv_id="FTV HD">FTV HD</channel>
+    <channel update="i" site="tv.nu" site_id="motorvision-tv" xmltv_id="Motorvision TV">Motorvision TV</channel>
+    <channel update="i" site="tv.nu" site_id="fight-sports" xmltv_id="Fight Sports">Fight Sports</channel>
+    <channel update="i" site="tv.nu" site_id="barnkanalen-hd" xmltv_id="Barnkanalen HD">Barnkanalen HD</channel>
+    <channel update="i" site="tv.nu" site_id="kunskapskanalen-hd" xmltv_id="Kunskapskanalen HD">Kunskapskanalen HD</channel>
+    <channel update="i" site="tv.nu" site_id="svt24-hd" xmltv_id="SVT24 HD">SVT24 HD</channel>
+    <channel update="i" site="tv.nu" site_id="viasat-film-hits-hd" xmltv_id="Viasat Film Hits HD">Viasat Film Hits HD</channel>
+    <channel update="i" site="tv.nu" site_id="kanal-11-hd" xmltv_id="Kanal 11 HD">Kanal 11 HD</channel>
+    <channel update="i" site="tv.nu" site_id="trace-urban-hd" xmltv_id="Trace Urban HD">Trace Urban HD</channel>
+    <channel update="i" site="tv.nu" site_id="tlc-hd" xmltv_id="TLC HD">TLC HD</channel>
+    <channel update="i" site="tv.nu" site_id="rtl-ii" xmltv_id="RTL II">RTL II</channel>
+    <channel update="i" site="tv.nu" site_id="esportstv-hd" xmltv_id="eSportsTV HD">eSportsTV HD</channel>
+    <channel update="i" site="tv.nu" site_id="viasat-sport-premium" xmltv_id="Viasat Sport Premium">Viasat Sport Premium</channel>
+    <channel update="i" site="tv.nu" site_id="viasat-sport-premium-hd" xmltv_id="Viasat Sport Premium HD">Viasat Sport Premium HD</channel>
+    <channel update="i" site="tv.nu" site_id="c-more-stars" xmltv_id="C More Stars">C More Stars</channel>
+    <channel update="i" site="tv.nu" site_id="c-more-stars-hd" xmltv_id="C More Stars HD">C More Stars HD</channel>
+    <channel update="i" site="tv.nu" site_id="viasat-ultra-hd" xmltv_id="Viasat Ultra HD">Viasat Ultra HD</channel>
+    <channel update="i" site="tv.nu" site_id="dmax" xmltv_id="DMAX">DMAX</channel>
+    <channel update="i" site="tv.nu" site_id="history-hd-30216" xmltv_id="History HD">History HD</channel>
+    <channel update="i" site="tv.nu" site_id="dw" xmltv_id="DW">DW</channel>
+    <channel update="i" site="tv.nu" site_id="china-global-television-network" xmltv_id="China Global Television Network">China Global Television Network</channel>
+    <channel update="i" site="tv.nu" site_id="china-global-television-network-9-documentary" xmltv_id="China Global Television Network 9 Documentary">China Global Television Network 9 Documentary</channel>
+    <channel update="i" site="tv.nu" site_id="kanal-4" xmltv_id="Kanal 4">Kanal 4</channel>
+    <channel update="i" site="tv.nu" site_id="mtv-hd" xmltv_id="MTV HD">MTV HD</channel>
+    <channel update="i" site="tv.nu" site_id="nfl-network-hd" xmltv_id="NFL Network HD">NFL Network HD</channel>
+    <channel update="i" site="tv.nu" site_id="nfl-network" xmltv_id="NFL Network">NFL Network</channel>
+    <channel update="i" site="tv.nu" site_id="fuel-tv-hd" xmltv_id="Fuel TV HD">Fuel TV HD</channel>
+    <channel update="i" site="tv.nu" site_id="viasat-explore-hd" xmltv_id="Viasat Explore HD">Viasat Explore HD</channel>
+    <channel update="i" site="tv.nu" site_id="paramount-network-hd" xmltv_id="Paramount Network HD">Paramount Network HD</channel>
+    <channel update="i" site="tv.nu" site_id="nickelodeon-hd-30217" xmltv_id="Nickelodeon HD">Nickelodeon HD</channel>
+    <channel update="i" site="tv.nu" site_id="nick-jr-hd" xmltv_id="Nick Jr. HD">Nick Jr. HD</channel>
+    <channel update="i" site="tv.nu" site_id="viasat-nature-hd" xmltv_id="Viasat Nature HD">Viasat Nature HD</channel>
+    <channel update="i" site="tv.nu" site_id="viasat-history-hd" xmltv_id="Viasat History HD">Viasat History HD</channel>
+    <channel update="i" site="tv.nu" site_id="nrk-super-nrk3-hd" xmltv_id="NRK Super / NRK3 HD">NRK Super / NRK3 HD</channel>
+    <channel update="i" site="tv.nu" site_id="expressen-tv" xmltv_id="Expressen TV">Expressen TV</channel>
+    <channel update="i" site="tv.nu" site_id="brazzers-tv-plus" xmltv_id="BraZZers TV Plus">BraZZers TV Plus</channel>
+    <channel update="i" site="tv.nu" site_id="playboy-tv-europe" xmltv_id="Playboy TV Europe">Playboy TV Europe</channel>
+    <channel update="i" site="tv.nu" site_id="hustler-tv" xmltv_id="Hustler TV">Hustler TV</channel>
+    <channel update="i" site="tv.nu" site_id="adult-channel-nightly" xmltv_id="Adult Channel Nightly">Adult Channel Nightly</channel>
+    <channel update="i" site="tv.nu" site_id="adult-channel" xmltv_id="Adult Channel">Adult Channel</channel>
+    <channel update="i" site="tv.nu" site_id="penthouse-hd-1" xmltv_id="Penthouse HD 1">Penthouse HD 1</channel>
+    <channel update="i" site="tv.nu" site_id="penthouse-hd-2" xmltv_id="Penthouse HD 2">Penthouse HD 2</channel>
+    <channel update="i" site="tv.nu" site_id="sjuan-hd" xmltv_id="Sjuan HD">Sjuan HD</channel>
+    <channel update="i" site="tv.nu" site_id="tv8-hd" xmltv_id="TV8 HD">TV8 HD</channel>
+    <channel update="i" site="tv.nu" site_id="tv10-hd" xmltv_id="TV10 HD">TV10 HD</channel>
+    <channel update="i" site="tv.nu" site_id="atg-live" xmltv_id="ATG Live">ATG Live</channel>
+    <channel update="i" site="tv.nu" site_id="kanal-5-danmark" xmltv_id="Kanal 5 Danmark">Kanal 5 Danmark</channel>
+    <channel update="i" site="tv.nu" site_id="djazz-hd" xmltv_id="Djazz HD">Djazz HD</channel>
+    <channel update="i" site="tv.nu" site_id="stingray-brava-hd" xmltv_id="Stingray Brava HD">Stingray Brava HD</channel>
+  </channels>
+</site>

@@ -1,0 +1,42 @@
+﻿How to create a channel.xml for a specific country
+
+1. Goto http://m.dstv.com/?locale=en and in the top right corner click on the flag and select your country.Some countries ask for preferred language,select it.
+
+2. Create a cookie file and name it m.dstv.com.cookies.txt.place it in the same directory as your webgrab++config.xml file.If you dont know how see here..
+   http://www.webgrabplus.com/documentation/configuration/cookie
+
+3. Open the m.dstv.com.ini file and scroll to the bottom to the channels.xml creation section and enable only this section..
+   **      #####  BOUQUET FILE CREATION (only to create the xxx-channel.xml file)
+
+4.  Add this channel to your webgrab++config.xml..
+    <channel update="i" site="m.dstv.com" site_id="" xmltv_id="dummy">dummy</channel>
+
+5. Run webgrab,you will see a message about a irregular cookie file,you can ignore it.
+
+6. Open the m.dstv.com.channels.xml and you will some something like below..
+   <channel update="i" site="m.dstv.com" site_id="449a4511-4f4d-40fb-8668-3ac42f5537fc,41349b85-add9-47a6-9851-3a723f791bd5,3db2aaed-4660-48c8-86dd-c3a907a43aa7,5c11dc59-603e-4bbb-a3c9-66520c0a0a44,050ab866-70d9-4fe4-    a9b3-516fbf634010,483465ab-8d65-4ef5-93c1-ca205c1f5e72,6ca1bc1b-435f-48d3-8e34-b615df09b341,f0a46e79-666b-4d42-b3e7-45836cafa86b,b8ff3564-52dc-40c3-a465-e8661d4e96cd,2cb22a04-347f-4fb7-9fdc-94ea259f2598,36bac017-022f-493f-9610-9af1a7f2e4b2,40cf320d-8718-4dfb-88a7-16929e269c1b,485ebada-91fd-4a78-8ba5-889db749b0bc" xmltv_id="All Bouquet Id">All Bouquet Id</channel>
+  </channels>
+
+7.copy everything in the site_id="xxx" to the subpage.format {list|xxxx},replace the comma's between the group id's with a |(easiest way is use a editor like notepad++ and use the replace feature).it should look like below.The actual group numbers may be different depending on the country you have choosen.
+  subpage.format {list|449a4511-4f4d-40fb-8668-3ac42f5537fc|41349b85-add9-47a6-9851-3a723f791bd5,3db2aaed-4660-48c8-86dd-c3a907a43aa7|5c11dc59-603e-4bbb-a3c9-66520c0a0a44|050ab866-70d9-4fe4-a9b3-516fbf634010|483465ab-8d65-4ef5-93c1-ca205c1f5e72|6ca1bc1b-435f-48d3-8e34-b615df09b341|f0a46e79-666b-4d42-b3e7-45836cafa86b|b8ff3564-52dc-40c3-a465-e8661d4e96cd|2cb22a04-347f-4fb7-9fdc-94ea259f2598|36bac017-022f-493f-9610-9af1a7f2e4b2|40cf320d-8718-4dfb-88a7-16929e269c1b,485ebada-91fd-4a78-8ba5-889db749b0bc}
+
+8. NOTE:the above string is broken up becasue of the length but it is one continious string.
+
+9.disable the 
+     **      #####  BOUQUET FILE CREATION (only to create the xxx-channel.xml file)
+  and enable this section
+  **      #####  CHANNEL FILE CREATION (only to create the xxx-channel.xml file)
+
+10. Run webgrab and you should have a m.dstv.com.channels.xml file created with the channels for the country you have chosen.
+
+11. To create a channels.xml for a different country repeat the process above.DO NOT FORGET TO CREATE A NEW COOKIE FILE FOR THE NEW COUNTRY,THIS IS A IMPORNANT STEP!!.
+
+12. The cookie file is not needed to grab epg data from the site.It is only needed to create a country channels.xml file.
+
+13. After creating a channels.xml file you should rename it if you are going to create another channels.xml file for another country as it will be overwritten.
+    rename it to something like m.dstv.com_country-name.xml,example m.dstv.com_nigeria.xml.
+
+14. Disable the   **      #####  CHANNEL FILE CREATION (only to create the xxx-channel.xml file).
+
+15.Your done.
+   

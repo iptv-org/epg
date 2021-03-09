@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<site generator-info-name="WebGrab+Plus/w MDB &amp; REX Postprocess -- version  V3.0.0.0 -- build 3 -- Jan van Straaten" site="mtel.ba">
+  <channels>
+    <channel update="i" site="mtel.ba" site_id="353##000" xmltv_id="m:SAT Info">m:SAT Info</channel>
+    <channel update="i" site="mtel.ba" site_id="11##001" xmltv_id="RTRS">RTRS</channel>
+    <channel update="i" site="mtel.ba" site_id="12##002" xmltv_id="BN TV">BN TV</channel>
+    <channel update="i" site="mtel.ba" site_id="338##003" xmltv_id="Superstar TV HD">Superstar TV HD</channel>
+    <channel update="i" site="mtel.ba" site_id="288##004" xmltv_id="Pink BH">Pink BH</channel>
+    <channel update="i" site="mtel.ba" site_id="358##005" xmltv_id="Prva">Prva</channel>
+    <channel update="i" site="mtel.ba" site_id="293##006" xmltv_id="Superstar TV">Superstar TV</channel>
+    <channel update="i" site="mtel.ba" site_id="309##007" xmltv_id="RTS Svet HD">RTS Svet HD</channel>
+    <channel update="i" site="mtel.ba" site_id="309##008" xmltv_id="RTS Svet HD">RTS Svet HD</channel>
+    <channel update="i" site="mtel.ba" site_id="310##009" xmltv_id="RTS 1 HD">RTS 1 HD</channel>
+    <channel update="i" site="mtel.ba" site_id="311##010" xmltv_id="RTS 2 HD">RTS 2 HD</channel>
+    <channel update="i" site="mtel.ba" site_id="4##011" xmltv_id="Pink">Pink</channel>
+    <channel update="i" site="mtel.ba" site_id="20##012" xmltv_id="RTS 2">RTS 2</channel>
+    <channel update="i" site="mtel.ba" site_id="389##013" xmltv_id="RTS 3">RTS 3</channel>
+    <channel update="i" site="mtel.ba" site_id="21##014" xmltv_id="RTS Nauka HD">RTS Nauka HD</channel>
+    <channel update="i" site="mtel.ba" site_id="355##015" xmltv_id="Studio B">Studio B</channel>
+    <channel update="i" site="mtel.ba" site_id="46##016" xmltv_id="RTS Drama">RTS Drama</channel>
+    <channel update="i" site="mtel.ba" site_id="48##017" xmltv_id="RTS  Kolo">RTS  Kolo</channel>
+    <channel update="i" site="mtel.ba" site_id="105##018" xmltv_id="Star TV">Star TV</channel>
+    <channel update="i" site="mtel.ba" site_id="411##019" xmltv_id="K1">K1</channel>
+    <channel update="i" site="mtel.ba" site_id="410##020" xmltv_id="TV DR">TV DR</channel>
+    <channel update="i" site="mtel.ba" site_id="409##021" xmltv_id="Kazbuka">Kazbuka</channel>
+    <channel update="i" site="mtel.ba" site_id="341##022" xmltv_id="Kitchen TV HD">Kitchen TV HD</channel>
+    <channel update="i" site="mtel.ba" site_id="340##023" xmltv_id="Agro TV HD">Agro TV HD</channel>
+    <channel update="i" site="mtel.ba" site_id="405##024" xmltv_id="Dexy TV HD">Dexy TV HD</channel>
+    <channel update="i" site="mtel.ba" site_id="387##025" xmltv_id="Dečija TV">Dečija TV</channel>
+    <channel update="i" site="mtel.ba" site_id="339##026" xmltv_id="Arena Sport 1 HD BiH">Arena Sport 1 HD BiH</channel>
+    <channel update="i" site="mtel.ba" site_id="290##027" xmltv_id="RAS TV">RAS TV</channel>
+    <channel update="i" site="mtel.ba" site_id="76##028" xmltv_id="Arena Sport 4 HD">Arena Sport 4 HD</channel>
+    <channel update="i" site="mtel.ba" site_id="290##029" xmltv_id="RAS TV">RAS TV</channel>
+    <channel update="i" site="mtel.ba" site_id="359##030" xmltv_id="B92">B92</channel>
+    <channel update="i" site="mtel.ba" site_id="398##031" xmltv_id="NBA TV HD">NBA TV HD</channel>
+    <channel update="i" site="mtel.ba" site_id="80##032" xmltv_id="Eurosport 2 HD">Eurosport 2 HD</channel>
+    <channel update="i" site="mtel.ba" site_id="80##033" xmltv_id="Eurosport 2 HD">Eurosport 2 HD</channel>
+    <channel update="i" site="mtel.ba" site_id="315##034" xmltv_id="SOS Kanal Plus">SOS Kanal Plus</channel>
+    <channel update="i" site="mtel.ba" site_id="93##035" xmltv_id="Hema TV">Hema TV</channel>
+    <channel update="i" site="mtel.ba" site_id="288##036" xmltv_id="Pink BH">Pink BH</channel>
+    <channel update="i" site="mtel.ba" site_id="37##037" xmltv_id="FACE TV">FACE TV</channel>
+    <channel update="i" site="mtel.ba" site_id="192##038" xmltv_id="BN Music">BN Music</channel>
+    <channel update="i" site="mtel.ba" site_id="354##039" xmltv_id="Hram TV">Hram TV</channel>
+    <channel update="i" site="mtel.ba" site_id="94##040" xmltv_id="Nickelodeon">Nickelodeon</channel>
+    <channel update="i" site="mtel.ba" site_id="89##041" xmltv_id="Minimax">Minimax</channel>
+    <channel update="i" site="mtel.ba" site_id="304##042" xmltv_id="Nickelodeon Junior">Nickelodeon Junior</channel>
+    <channel update="i" site="mtel.ba" site_id="316##043" xmltv_id="Duck TV">Duck TV</channel>
+    <channel update="i" site="mtel.ba" site_id="271##044" xmltv_id="Jim Jam">Jim Jam</channel>
+    <channel update="i" site="mtel.ba" site_id="91##045" xmltv_id="Pink Super Kids">Pink Super Kids</channel>
+    <channel update="i" site="mtel.ba" site_id="87##046" xmltv_id="Boomerang">Boomerang</channel>
+    <channel update="i" site="mtel.ba" site_id="84##047" xmltv_id="Cartoon Network">Cartoon Network</channel>
+    <channel update="i" site="mtel.ba" site_id="390##048" xmltv_id="TV Nikšić">TV Nikšić</channel>
+    <channel update="i" site="mtel.ba" site_id="350##049" xmltv_id="RTV SLO 1">RTV SLO 1</channel>
+    <channel update="i" site="mtel.ba" site_id="345##050" xmltv_id="Cinestar TV 1">Cinestar TV 1</channel>
+    <channel update="i" site="mtel.ba" site_id="347##051" xmltv_id="Cinestar Action &amp; Thriller">Cinestar Action &amp; Thriller</channel>
+    <channel update="i" site="mtel.ba" site_id="348##052" xmltv_id="Cinestar Fantasy">Cinestar Fantasy</channel>
+    <channel update="i" site="mtel.ba" site_id="346##053" xmltv_id="Cinestar Comedy &amp; Family">Cinestar Comedy &amp; Family</channel>
+    <channel update="i" site="mtel.ba" site_id="283##054" xmltv_id="BHT HD">BHT HD</channel>
+    <channel update="i" site="mtel.ba" site_id="289##055" xmltv_id="BN HD">BN HD</channel>
+    <channel update="i" site="mtel.ba" site_id="131##056" xmltv_id="Pink Action">Pink Action</channel>
+    <channel update="i" site="mtel.ba" site_id="228##057" xmltv_id="AL Jazeera Ba-lkans HD">AL Jazeera Ba-lkans HD</channel>
+    <channel update="i" site="mtel.ba" site_id="136##058" xmltv_id="Pink Crime &amp; Mystery">Pink Crime &amp; Mystery</channel>
+    <channel update="i" site="mtel.ba" site_id="146##059" xmltv_id="Pink Comedy">Pink Comedy</channel>
+    <channel update="i" site="mtel.ba" site_id="391##060" xmltv_id="TDC">TDC</channel>
+    <channel update="i" site="mtel.ba" site_id="263##061" xmltv_id="Hayat HD">Hayat HD</channel>
+    <channel update="i" site="mtel.ba" site_id="143##062" xmltv_id="Pink Romance">Pink Romance</channel>
+    <channel update="i" site="mtel.ba" site_id="149##063" xmltv_id="Pink Sci-Fi &amp; Fantasy">Pink Sci-Fi &amp; Fantasy</channel>
+    <channel update="i" site="mtel.ba" site_id="159##064" xmltv_id="Pink Horror">Pink Horror</channel>
+    <channel update="i" site="mtel.ba" site_id="129##065" xmltv_id="Pink World Cinema">Pink World Cinema</channel>
+    <channel update="i" site="mtel.ba" site_id="164##066" xmltv_id="Pink Film">Pink Film</channel>
+    <channel update="i" site="mtel.ba" site_id="107##067" xmltv_id="TV 1000">TV 1000</channel>
+    <channel update="i" site="mtel.ba" site_id="272##068" xmltv_id="AMC">AMC</channel>
+    <channel update="i" site="mtel.ba" site_id="110##069" xmltv_id="AXN">AXN</channel>
+    <channel update="i" site="mtel.ba" site_id="265##070" xmltv_id="NTV Arena">NTV Arena</channel>
+    <channel update="i" site="mtel.ba" site_id="282##071" xmltv_id="Epic Drama">Epic Drama</channel>
+    <channel update="i" site="mtel.ba" site_id="305##072" xmltv_id="Sci Fi">Sci Fi</channel>
+    <channel update="i" site="mtel.ba" site_id="242##073" xmltv_id="tß1">tß1</channel>
+    <channel update="i" site="mtel.ba" site_id="90##074" xmltv_id="TV Prijedor">TV Prijedor</channel>
+    <channel update="i" site="mtel.ba" site_id="262##075" xmltv_id="BDC TV">BDC TV</channel>
+    <channel update="i" site="mtel.ba" site_id="96##076" xmltv_id="NTV 101">NTV 101</channel>
+    <channel update="i" site="mtel.ba" site_id="269##077" xmltv_id="IN TV">IN TV</channel>
+    <channel update="i" site="mtel.ba" site_id="291##078" xmltv_id="ONE">ONE</channel>
+    <channel update="i" site="mtel.ba" site_id="81##079" xmltv_id="RTV KD">RTV KD</channel>
+    <channel update="i" site="mtel.ba" site_id="262##080" xmltv_id="BDC TV">BDC TV</channel>
+    <channel update="i" site="mtel.ba" site_id="291##081" xmltv_id="ONE">ONE</channel>
+    <channel update="i" site="mtel.ba" site_id="292##082" xmltv_id="Info Plus">Info Plus</channel>
+    <channel update="i" site="mtel.ba" site_id="356##083" xmltv_id="Izvorna TV">Izvorna TV</channel>
+    <channel update="i" site="mtel.ba" site_id="115##084" xmltv_id="Cinemax 2 HD">Cinemax 2 HD</channel>
+    <channel update="i" site="mtel.ba" site_id="286##085" xmltv_id="Filmbox Premium">Filmbox Premium</channel>
+    <channel update="i" site="mtel.ba" site_id="122##086" xmltv_id="Filmbox Plus">Filmbox Plus</channel>
+    <channel update="i" site="mtel.ba" site_id="120##087" xmltv_id="Filmbox Extra">Filmbox Extra</channel>
+    <channel update="i" site="mtel.ba" site_id="124##088" xmltv_id="Filmbox Arthouse">Filmbox Arthouse</channel>
+    <channel update="i" site="mtel.ba" site_id="152##090" xmltv_id="Pink Family">Pink Family</channel>
+    <channel update="i" site="mtel.ba" site_id="165##091" xmltv_id="Pink Serije">Pink Serije</channel>
+    <channel update="i" site="mtel.ba" site_id="321##092" xmltv_id="Film Klub Extra">Film Klub Extra</channel>
+    <channel update="i" site="mtel.ba" site_id="322##093" xmltv_id="Prva Life">Prva Life</channel>
+    <channel update="i" site="mtel.ba" site_id="323##094" xmltv_id="Prva Files">Prva Files</channel>
+    <channel update="i" site="mtel.ba" site_id="324##095" xmltv_id="Prva Kick">Prva Kick</channel>
+    <channel update="i" site="mtel.ba" site_id="325##096" xmltv_id="Prva World">Prva World</channel>
+    <channel update="i" site="mtel.ba" site_id="313##097" xmltv_id="Prva MAX">Prva MAX</channel>
+    <channel update="i" site="mtel.ba" site_id="52##100" xmltv_id="ARENA SPORT SRB">ARENA SPORT SRB</channel>
+    <channel update="i" site="mtel.ba" site_id="53##101" xmltv_id="ARENA SPORT">ARENA SPORT</channel>
+    <channel update="i" site="mtel.ba" site_id="54##102" xmltv_id="Arena Sport 2">Arena Sport 2</channel>
+    <channel update="i" site="mtel.ba" site_id="55##103" xmltv_id="Arena Sport 3">Arena Sport 3</channel>
+    <channel update="i" site="mtel.ba" site_id="56##104" xmltv_id="Arena Sport 4">Arena Sport 4</channel>
+    <channel update="i" site="mtel.ba" site_id="388##105" xmltv_id="RTS Poletarac">RTS Poletarac</channel>
+    <channel update="i" site="mtel.ba" site_id="398##106" xmltv_id="NBA TV HD">NBA TV HD</channel>
+    <channel update="i" site="mtel.ba" site_id="59##107" xmltv_id="Eurosport 2">Eurosport 2</channel>
+    <channel update="i" site="mtel.ba" site_id="385##108" xmltv_id="RTV 2">RTV 2</channel>
+    <channel update="i" site="mtel.ba" site_id="400##109" xmltv_id="Zvezda TV HD">Zvezda TV HD</channel>
+    <channel update="i" site="mtel.ba" site_id="328##110" xmltv_id="BTV">BTV</channel>
+    <channel update="i" site="mtel.ba" site_id="329##111" xmltv_id="Al Jazeera">Al Jazeera</channel>
+    <channel update="i" site="mtel.ba" site_id="343##112" xmltv_id="BN">BN</channel>
+    <channel update="i" site="mtel.ba" site_id="330##113" xmltv_id="TV Hram">TV Hram</channel>
+    <channel update="i" site="mtel.ba" site_id="64##114" xmltv_id="SPORTKLUB 5">SPORTKLUB 5</channel>
+    <channel update="i" site="mtel.ba" site_id="65##115" xmltv_id="SPORTKLUB 6">SPORTKLUB 6</channel>
+    <channel update="i" site="mtel.ba" site_id="386##116" xmltv_id="BK">BK</channel>
+    <channel update="i" site="mtel.ba" site_id="402##117" xmltv_id="TV Mreža Most">TV Mreža Most</channel>
+    <channel update="i" site="mtel.ba" site_id="390##118" xmltv_id="TV Nikšić">TV Nikšić</channel>
+    <channel update="i" site="mtel.ba" site_id="331##119" xmltv_id="Koreni">Koreni</channel>
+    <channel update="i" site="mtel.ba" site_id="1##12" xmltv_id="Pink Family">Pink Family</channel>
+    <channel update="i" site="mtel.ba" site_id="183##120" xmltv_id="OK Kanal">OK Kanal</channel>
+    <channel update="i" site="mtel.ba" site_id="332##121" xmltv_id="Travel Channel">Travel Channel</channel>
+    <channel update="i" site="mtel.ba" site_id="127##122" xmltv_id="TLC">TLC</channel>
+    <channel update="i" site="mtel.ba" site_id="221##123" xmltv_id="Pink Reality">Pink Reality</channel>
+    <channel update="i" site="mtel.ba" site_id="69##124" xmltv_id="Trace Sport Stars">Trace Sport Stars</channel>
+    <channel update="i" site="mtel.ba" site_id="270##125" xmltv_id="Extreme Sports">Extreme Sports</channel>
+    <channel update="i" site="mtel.ba" site_id="123##130" xmltv_id="Discovery Channel">Discovery Channel</channel>
+    <channel update="i" site="mtel.ba" site_id="333##131" xmltv_id="BBC Earth">BBC Earth</channel>
+    <channel update="i" site="mtel.ba" site_id="125##132" xmltv_id="Animal Planet">Animal Planet</channel>
+    <channel update="i" site="mtel.ba" site_id="119##133" xmltv_id="National Geographic">National Geographic</channel>
+    <channel update="i" site="mtel.ba" site_id="121##134" xmltv_id="National Geographic Wild">National Geographic Wild</channel>
+    <channel update="i" site="mtel.ba" site_id="406##135" xmltv_id="Arena Esport HD">Arena Esport HD</channel>
+    <channel update="i" site="mtel.ba" site_id="138##136" xmltv_id="Viasat History">Viasat History</channel>
+    <channel update="i" site="mtel.ba" site_id="137##137" xmltv_id="Viasat Explore">Viasat Explore</channel>
+    <channel update="i" site="mtel.ba" site_id="135##138" xmltv_id="Viasat Nature">Viasat Nature</channel>
+    <channel update="i" site="mtel.ba" site_id="383##139" xmltv_id="TV Partizan">TV Partizan</channel>
+    <channel update="i" site="mtel.ba" site_id="344##140" xmltv_id="Docubox">Docubox</channel>
+    <channel update="i" site="mtel.ba" site_id="307##141" xmltv_id="Outdoor">Outdoor</channel>
+    <channel update="i" site="mtel.ba" site_id="295##142" xmltv_id="ID HD">ID HD</channel>
+    <channel update="i" site="mtel.ba" site_id="274##143" xmltv_id="CBS Reality">CBS Reality</channel>
+    <channel update="i" site="mtel.ba" site_id="132##144" xmltv_id="Discovery Showcase HD">Discovery Showcase HD</channel>
+    <channel update="i" site="mtel.ba" site_id="98##145" xmltv_id="Da Vinci Learning">Da Vinci Learning</channel>
+    <channel update="i" site="mtel.ba" site_id="227##146" xmltv_id="English Club TV">English Club TV</channel>
+    <channel update="i" site="mtel.ba" site_id="294##150" xmltv_id="National Geographic HD">National Geographic HD</channel>
+    <channel update="i" site="mtel.ba" site_id="162##151" xmltv_id="Fashion">Fashion</channel>
+    <channel update="i" site="mtel.ba" site_id="155##152" xmltv_id="Pink Kuvar">Pink Kuvar</channel>
+    <channel update="i" site="mtel.ba" site_id="296##153" xmltv_id="Gametoon">Gametoon</channel>
+    <channel update="i" site="mtel.ba" site_id="220##154" xmltv_id="LOL">LOL</channel>
+    <channel update="i" site="mtel.ba" site_id="35##155" xmltv_id="HAYAT TV">HAYAT TV</channel>
+    <channel update="i" site="mtel.ba" site_id="83##156" xmltv_id="HAYAT PLUS">HAYAT PLUS</channel>
+    <channel update="i" site="mtel.ba" site_id="100##157" xmltv_id="HAYATOVCI">HAYATOVCI</channel>
+    <channel update="i" site="mtel.ba" site_id="223##158" xmltv_id="HAYAT FOLK">HAYAT FOLK</channel>
+    <channel update="i" site="mtel.ba" site_id="222##159" xmltv_id="HAYAT MUSIC">HAYAT MUSIC</channel>
+    <channel update="i" site="mtel.ba" site_id="171##160" xmltv_id="VH1">VH1</channel>
+    <channel update="i" site="mtel.ba" site_id="174##161" xmltv_id="Pink Music">Pink Music</channel>
+    <channel update="i" site="mtel.ba" site_id="224##162" xmltv_id="Pink&amp;Roll">Pink&amp;Roll</channel>
+    <channel update="i" site="mtel.ba" site_id="224##163" xmltv_id="Pink&amp;Roll">Pink&amp;Roll</channel>
+    <channel update="i" site="mtel.ba" site_id="199##164" xmltv_id="DM SAT">DM SAT</channel>
+    <channel update="i" site="mtel.ba" site_id="334##165" xmltv_id="MTV Europe">MTV Europe</channel>
+    <channel update="i" site="mtel.ba" site_id="334##166" xmltv_id="MTV Europe">MTV Europe</channel>
+    <channel update="i" site="mtel.ba" site_id="297##167" xmltv_id="MTV Dance International">MTV Dance International</channel>
+    <channel update="i" site="mtel.ba" site_id="298##168" xmltv_id="MTV Rocks International">MTV Rocks International</channel>
+    <channel update="i" site="mtel.ba" site_id="226##169" xmltv_id="VH1 Classic">VH1 Classic</channel>
+    <channel update="i" site="mtel.ba" site_id="229##170" xmltv_id="Jeka Muzzik">Jeka Muzzik</channel>
+    <channel update="i" site="mtel.ba" site_id="229##171" xmltv_id="Jeka Muzzik">Jeka Muzzik</channel>
+    <channel update="i" site="mtel.ba" site_id="393##172" xmltv_id="TV D+">TV D+</channel>
+    <channel update="i" site="mtel.ba" site_id="201##173" xmltv_id="RTR PLANETA">RTR PLANETA</channel>
+    <channel update="i" site="mtel.ba" site_id="196##175" xmltv_id="CNN">CNN</channel>
+    <channel update="i" site="mtel.ba" site_id="335##176" xmltv_id="Euronews">Euronews</channel>
+    <channel update="i" site="mtel.ba" site_id="336##177" xmltv_id="DW English">DW English</channel>
+    <channel update="i" site="mtel.ba" site_id="198##178" xmltv_id="RT NEWS TV">RT NEWS TV</channel>
+    <channel update="i" site="mtel.ba" site_id="204##179" xmltv_id="France 24">France 24</channel>
+    <channel update="i" site="mtel.ba" site_id="67##180" xmltv_id="Fight Network">Fight Network</channel>
+    <channel update="i" site="mtel.ba" site_id="69##181" xmltv_id="Trace Sport Stars">Trace Sport Stars</channel>
+    <channel update="i" site="mtel.ba" site_id="270##182" xmltv_id="Extreme Sports">Extreme Sports</channel>
+    <channel update="i" site="mtel.ba" site_id="299##183" xmltv_id="Motorvision">Motorvision</channel>
+    <channel update="i" site="mtel.ba" site_id="394##185" xmltv_id="Zadruga 1">Zadruga 1</channel>
+    <channel update="i" site="mtel.ba" site_id="395##186" xmltv_id="Zadruga 2">Zadruga 2</channel>
+    <channel update="i" site="mtel.ba" site_id="396##187" xmltv_id="Zadruga 3">Zadruga 3</channel>
+    <channel update="i" site="mtel.ba" site_id="397##188" xmltv_id="Zadruga 4">Zadruga 4</channel>
+    <channel update="i" site="mtel.ba" site_id="170##190" xmltv_id="Dorcel">Dorcel</channel>
+    <channel update="i" site="mtel.ba" site_id="300##191" xmltv_id="Brazzers TV">Brazzers TV</channel>
+    <channel update="i" site="mtel.ba" site_id="301##192" xmltv_id="Balkan Hot">Balkan Hot</channel>
+    <channel update="i" site="mtel.ba" site_id="302##193" xmltv_id="Balkan Hot 2">Balkan Hot 2</channel>
+    <channel update="i" site="mtel.ba" site_id="303##194" xmltv_id="Erotic">Erotic</channel>
+    <channel update="i" site="mtel.ba" site_id="352##195" xmltv_id="Erotic 2">Erotic 2</channel>
+    <channel update="i" site="mtel.ba" site_id="173##196" xmltv_id="HUSTLER">HUSTLER</channel>
+    <channel update="i" site="mtel.ba" site_id="388##200" xmltv_id="RTS Poletarac">RTS Poletarac</channel>
+    <channel update="i" site="mtel.ba" site_id="387##201" xmltv_id="Dečija TV">Dečija TV</channel>
+    <channel update="i" site="mtel.ba" site_id="84##202" xmltv_id="Cartoon Network">Cartoon Network</channel>
+    <channel update="i" site="mtel.ba" site_id="85##203" xmltv_id="BABY TV">BABY TV</channel>
+    <channel update="i" site="mtel.ba" site_id="87##204" xmltv_id="Boomerang">Boomerang</channel>
+    <channel update="i" site="mtel.ba" site_id="89##205" xmltv_id="Minimax">Minimax</channel>
+    <channel update="i" site="mtel.ba" site_id="91##206" xmltv_id="Pink Super Kids">Pink Super Kids</channel>
+    <channel update="i" site="mtel.ba" site_id="92##207" xmltv_id="Pink Kids">Pink Kids</channel>
+    <channel update="i" site="mtel.ba" site_id="94##208" xmltv_id="Nickelodeon">Nickelodeon</channel>
+    <channel update="i" site="mtel.ba" site_id="95##209" xmltv_id="NICK JR.">NICK JR.</channel>
+    <channel update="i" site="mtel.ba" site_id="97##210" xmltv_id="RTL KOCKICA">RTL KOCKICA</channel>
+    <channel update="i" site="mtel.ba" site_id="98##211" xmltv_id="Da Vinci Learning">Da Vinci Learning</channel>
+    <channel update="i" site="mtel.ba" site_id="399##212" xmltv_id="Tropik TV HD">Tropik TV HD</channel>
+    <channel update="i" site="mtel.ba" site_id="100##213" xmltv_id="HAYATOVCI">HAYATOVCI</channel>
+    <channel update="i" site="mtel.ba" site_id="271##214" xmltv_id="Jim Jam">Jim Jam</channel>
+    <channel update="i" site="mtel.ba" site_id="405##215" xmltv_id="Dexy TV HD">Dexy TV HD</channel>
+    <channel update="i" site="mtel.ba" site_id="409##216" xmltv_id="Kazbuka">Kazbuka</channel>
+    <channel update="i" site="mtel.ba" site_id="285##217" xmltv_id="Gametoon HD">Gametoon HD</channel>
+    <channel update="i" site="mtel.ba" site_id="405##24" xmltv_id="Dexy TV HD">Dexy TV HD</channel>
+    <channel update="i" site="mtel.ba" site_id="206##258" xmltv_id="Bravo Music">Bravo Music</channel>
+    <channel update="i" site="mtel.ba" site_id="107##300" xmltv_id="TV 1000">TV 1000</channel>
+    <channel update="i" site="mtel.ba" site_id="345##301" xmltv_id="Cinestar TV 1">Cinestar TV 1</channel>
+    <channel update="i" site="mtel.ba" site_id="347##302" xmltv_id="Cinestar Action &amp; Thriller">Cinestar Action &amp; Thriller</channel>
+    <channel update="i" site="mtel.ba" site_id="348##303" xmltv_id="Cinestar Fantasy">Cinestar Fantasy</channel>
+    <channel update="i" site="mtel.ba" site_id="346##304" xmltv_id="Cinestar Comedy &amp; Family">Cinestar Comedy &amp; Family</channel>
+    <channel update="i" site="mtel.ba" site_id="116##305" xmltv_id="FOX LIFE">FOX LIFE</channel>
+    <channel update="i" site="mtel.ba" site_id="116##306" xmltv_id="FOX LIFE">FOX LIFE</channel>
+    <channel update="i" site="mtel.ba" site_id="117##307" xmltv_id="FOX CRIME">FOX CRIME</channel>
+    <channel update="i" site="mtel.ba" site_id="110##308" xmltv_id="AXN">AXN</channel>
+    <channel update="i" site="mtel.ba" site_id="112##309" xmltv_id="AXN Spin">AXN Spin</channel>
+    <channel update="i" site="mtel.ba" site_id="131##310" xmltv_id="Pink Action">Pink Action</channel>
+    <channel update="i" site="mtel.ba" site_id="164##311" xmltv_id="Pink Film">Pink Film</channel>
+    <channel update="i" site="mtel.ba" site_id="126##312" xmltv_id="Pink Premium">Pink Premium</channel>
+    <channel update="i" site="mtel.ba" site_id="133##313" xmltv_id="Pink Thriller">Pink Thriller</channel>
+    <channel update="i" site="mtel.ba" site_id="146##314" xmltv_id="Pink Comedy">Pink Comedy</channel>
+    <channel update="i" site="mtel.ba" site_id="143##315" xmltv_id="Pink Romance">Pink Romance</channel>
+    <channel update="i" site="mtel.ba" site_id="149##316" xmltv_id="Pink Sci-Fi &amp; Fantasy">Pink Sci-Fi &amp; Fantasy</channel>
+    <channel update="i" site="mtel.ba" site_id="145##317" xmltv_id="Pink Movies">Pink Movies</channel>
+    <channel update="i" site="mtel.ba" site_id="136##318" xmltv_id="Pink Crime &amp; Mystery">Pink Crime &amp; Mystery</channel>
+    <channel update="i" site="mtel.ba" site_id="165##319" xmltv_id="Pink Serije">Pink Serije</channel>
+    <channel update="i" site="mtel.ba" site_id="129##320" xmltv_id="Pink World Cinema">Pink World Cinema</channel>
+    <channel update="i" site="mtel.ba" site_id="152##321" xmltv_id="Pink Family">Pink Family</channel>
+    <channel update="i" site="mtel.ba" site_id="161##322" xmltv_id="Pink Soap">Pink Soap</channel>
+    <channel update="i" site="mtel.ba" site_id="154##323" xmltv_id="Pink Western">Pink Western</channel>
+    <channel update="i" site="mtel.ba" site_id="159##324" xmltv_id="Pink Horror">Pink Horror</channel>
+    <channel update="i" site="mtel.ba" site_id="156##326" xmltv_id="Pink Classic">Pink Classic</channel>
+    <channel update="i" site="mtel.ba" site_id="120##329" xmltv_id="Filmbox Extra">Filmbox Extra</channel>
+    <channel update="i" site="mtel.ba" site_id="122##330" xmltv_id="Filmbox Plus">Filmbox Plus</channel>
+    <channel update="i" site="mtel.ba" site_id="124##331" xmltv_id="Filmbox Arthouse">Filmbox Arthouse</channel>
+    <channel update="i" site="mtel.ba" site_id="286##332" xmltv_id="Filmbox Premium">Filmbox Premium</channel>
+    <channel update="i" site="mtel.ba" site_id="171##333" xmltv_id="VH1">VH1</channel>
+    <channel update="i" site="mtel.ba" site_id="403##334" xmltv_id="Klasik TV">Klasik TV</channel>
+    <channel update="i" site="mtel.ba" site_id="391##335" xmltv_id="TDC">TDC</channel>
+    <channel update="i" site="mtel.ba" site_id="165##336" xmltv_id="Pink Serije">Pink Serije</channel>
+    <channel update="i" site="mtel.ba" site_id="272##337" xmltv_id="AMC">AMC</channel>
+    <channel update="i" site="mtel.ba" site_id="282##339" xmltv_id="Epic Drama">Epic Drama</channel>
+    <channel update="i" site="mtel.ba" site_id="363##340" xmltv_id="Prva Life">Prva Life</channel>
+    <channel update="i" site="mtel.ba" site_id="364##341" xmltv_id="Prva Files">Prva Files</channel>
+    <channel update="i" site="mtel.ba" site_id="362##342" xmltv_id="Prva Kick">Prva Kick</channel>
+    <channel update="i" site="mtel.ba" site_id="361##343" xmltv_id="Prva World">Prva World</channel>
+    <channel update="i" site="mtel.ba" site_id="101##350" xmltv_id="HBO">HBO</channel>
+    <channel update="i" site="mtel.ba" site_id="102##351" xmltv_id="HBO 2">HBO 2</channel>
+    <channel update="i" site="mtel.ba" site_id="103##352" xmltv_id="HBO 3">HBO 3</channel>
+    <channel update="i" site="mtel.ba" site_id="104##353" xmltv_id="CINEMAX">CINEMAX</channel>
+    <channel update="i" site="mtel.ba" site_id="106##354" xmltv_id="CINEMAX 2">CINEMAX 2</channel>
+    <channel update="i" site="mtel.ba" site_id="108##355" xmltv_id="HBO HD">HBO HD</channel>
+    <channel update="i" site="mtel.ba" site_id="109##356" xmltv_id="HBO 2 HD">HBO 2 HD</channel>
+    <channel update="i" site="mtel.ba" site_id="111##357" xmltv_id="HBO 3 HD">HBO 3 HD</channel>
+    <channel update="i" site="mtel.ba" site_id="113##358" xmltv_id="Cinemax HD">Cinemax HD</channel>
+    <channel update="i" site="mtel.ba" site_id="115##359" xmltv_id="Cinemax 2 HD">Cinemax 2 HD</channel>
+    <channel update="i" site="mtel.ba" site_id="118##400" xmltv_id="HISTORY">HISTORY</channel>
+    <channel update="i" site="mtel.ba" site_id="119##401" xmltv_id="National Geographic">National Geographic</channel>
+    <channel update="i" site="mtel.ba" site_id="121##402" xmltv_id="National Geographic Wild">National Geographic Wild</channel>
+    <channel update="i" site="mtel.ba" site_id="123##403" xmltv_id="Discovery Channel">Discovery Channel</channel>
+    <channel update="i" site="mtel.ba" site_id="125##404" xmltv_id="Animal Planet">Animal Planet</channel>
+    <channel update="i" site="mtel.ba" site_id="127##405" xmltv_id="TLC">TLC</channel>
+    <channel update="i" site="mtel.ba" site_id="128##406" xmltv_id="Investigation Discovery">Investigation Discovery</channel>
+    <channel update="i" site="mtel.ba" site_id="130##407" xmltv_id="Investigation Discovery HD">Investigation Discovery HD</channel>
+    <channel update="i" site="mtel.ba" site_id="132##408" xmltv_id="Discovery Showcase HD">Discovery Showcase HD</channel>
+    <channel update="i" site="mtel.ba" site_id="134##409" xmltv_id="History2">History2</channel>
+    <channel update="i" site="mtel.ba" site_id="135##410" xmltv_id="Viasat Nature">Viasat Nature</channel>
+    <channel update="i" site="mtel.ba" site_id="137##411" xmltv_id="Viasat Explore">Viasat Explore</channel>
+    <channel update="i" site="mtel.ba" site_id="138##412" xmltv_id="Viasat History">Viasat History</channel>
+    <channel update="i" site="mtel.ba" site_id="412##413" xmltv_id="Viasat Nature HD">Viasat Nature HD</channel>
+    <channel update="i" site="mtel.ba" site_id="140##414" xmltv_id="Docubox HD">Docubox HD</channel>
+    <channel update="i" site="mtel.ba" site_id="227##415" xmltv_id="English Club TV">English Club TV</channel>
+    <channel update="i" site="mtel.ba" site_id="142##416" xmltv_id="PINK PEDIA">PINK PEDIA</channel>
+    <channel update="i" site="mtel.ba" site_id="274##417" xmltv_id="CBS Reality">CBS Reality</channel>
+    <channel update="i" site="mtel.ba" site_id="275##418" xmltv_id="Outdoor channel">Outdoor channel</channel>
+    <channel update="i" site="mtel.ba" site_id="404##419" xmltv_id="DOX TV">DOX TV</channel>
+    <channel update="i" site="mtel.ba" site_id="87##46" xmltv_id="Boomerang">Boomerang</channel>
+    <channel update="i" site="mtel.ba" site_id="147##501" xmltv_id="Agro TV">Agro TV</channel>
+    <channel update="i" site="mtel.ba" site_id="148##502" xmltv_id="Kitchen TV">Kitchen TV</channel>
+    <channel update="i" site="mtel.ba" site_id="150##503" xmltv_id="Pink Style">Pink Style</channel>
+    <channel update="i" site="mtel.ba" site_id="162##504" xmltv_id="Fashion">Fashion</channel>
+    <channel update="i" site="mtel.ba" site_id="153##505" xmltv_id="24 Kitchen">24 Kitchen</channel>
+    <channel update="i" site="mtel.ba" site_id="155##506" xmltv_id="Pink Kuvar">Pink Kuvar</channel>
+    <channel update="i" site="mtel.ba" site_id="280##507" xmltv_id="TV Zdravlje">TV Zdravlje</channel>
+    <channel update="i" site="mtel.ba" site_id="158##508" xmltv_id="RTL Living">RTL Living</channel>
+    <channel update="i" site="mtel.ba" site_id="160##509" xmltv_id="Travel">Travel</channel>
+    <channel update="i" site="mtel.ba" site_id="162##510" xmltv_id="Fashion">Fashion</channel>
+    <channel update="i" site="mtel.ba" site_id="166##511" xmltv_id="Fashionbox">Fashionbox</channel>
+    <channel update="i" site="mtel.ba" site_id="401##512" xmltv_id="Turizam+ TV">Turizam+ TV</channel>
+    <channel update="i" site="mtel.ba" site_id="408##513" xmltv_id="Balkan Trip">Balkan Trip</channel>
+    <channel update="i" site="mtel.ba" site_id="410##514" xmltv_id="TV DR">TV DR</channel>
+    <channel update="i" site="mtel.ba" site_id="145##55" xmltv_id="Pink Movies">Pink Movies</channel>
+    <channel update="i" site="mtel.ba" site_id="15##56" xmltv_id="BHT">BHT</channel>
+    <channel update="i" site="mtel.ba" site_id="334##600" xmltv_id="MTV Europe">MTV Europe</channel>
+    <channel update="i" site="mtel.ba" site_id="168##601" xmltv_id="MTV Hits International">MTV Hits International</channel>
+    <channel update="i" site="mtel.ba" site_id="169##602" xmltv_id="360 Tune Box">360 Tune Box</channel>
+    <channel update="i" site="mtel.ba" site_id="171##603" xmltv_id="VH1">VH1</channel>
+    <channel update="i" site="mtel.ba" site_id="226##604" xmltv_id="VH1 Classic">VH1 Classic</channel>
+    <channel update="i" site="mtel.ba" site_id="224##605" xmltv_id="Pink&amp;Roll">Pink&amp;Roll</channel>
+    <channel update="i" site="mtel.ba" site_id="183##606" xmltv_id="OK Kanal">OK Kanal</channel>
+    <channel update="i" site="mtel.ba" site_id="267##607" xmltv_id="Muzzik">Muzzik</channel>
+    <channel update="i" site="mtel.ba" site_id="231##608" xmltv_id="C&amp;C Muzzik">C&amp;C Muzzik</channel>
+    <channel update="i" site="mtel.ba" site_id="230##609" xmltv_id="R&amp;R Muzzik">R&amp;R Muzzik</channel>
+    <channel update="i" site="mtel.ba" site_id="232##610" xmltv_id="WW Muzzik">WW Muzzik</channel>
+    <channel update="i" site="mtel.ba" site_id="174##611" xmltv_id="Pink Music">Pink Music</channel>
+    <channel update="i" site="mtel.ba" site_id="176##612" xmltv_id="Pink Music 2">Pink Music 2</channel>
+    <channel update="i" site="mtel.ba" site_id="178##613" xmltv_id="PINK KONCERT">PINK KONCERT</channel>
+    <channel update="i" site="mtel.ba" site_id="180##614" xmltv_id="PINK HITS">PINK HITS</channel>
+    <channel update="i" site="mtel.ba" site_id="185##615" xmltv_id="Pink Hits 2">Pink Hits 2</channel>
+    <channel update="i" site="mtel.ba" site_id="187##616" xmltv_id="Kontakt TV">Kontakt TV</channel>
+    <channel update="i" site="mtel.ba" site_id="190##617" xmltv_id="HiFi Music">HiFi Music</channel>
+    <channel update="i" site="mtel.ba" site_id="407##618" xmltv_id="Toxic TV">Toxic TV</channel>
+    <channel update="i" site="mtel.ba" site_id="411##619" xmltv_id="K1">K1</channel>
+    <channel update="i" site="mtel.ba" site_id="192##625" xmltv_id="BN Music">BN Music</channel>
+    <channel update="i" site="mtel.ba" site_id="229##626" xmltv_id="Jeka Muzzik">Jeka Muzzik</channel>
+    <channel update="i" site="mtel.ba" site_id="199##627" xmltv_id="DM SAT">DM SAT</channel>
+    <channel update="i" site="mtel.ba" site_id="203##628" xmltv_id="PINK FOLK 2">PINK FOLK 2</channel>
+    <channel update="i" site="mtel.ba" site_id="206##629" xmltv_id="Bravo Music">Bravo Music</channel>
+    <channel update="i" site="mtel.ba" site_id="208##630" xmltv_id="City Play">City Play</channel>
+    <channel update="i" site="mtel.ba" site_id="209##631" xmltv_id="Pink Folk">Pink Folk</channel>
+    <channel update="i" site="mtel.ba" site_id="210##632" xmltv_id="K:CN 3">K:CN 3</channel>
+    <channel update="i" site="mtel.ba" site_id="211##633" xmltv_id="K:CN 2 Music">K:CN 2 Music</channel>
+    <channel update="i" site="mtel.ba" site_id="212##634" xmltv_id="Vikom Music">Vikom Music</channel>
+    <channel update="i" site="mtel.ba" site_id="264##645" xmltv_id="Mezzo Tv">Mezzo Tv</channel>
+    <channel update="i" site="mtel.ba" site_id="213##646" xmltv_id="Mezzo Live HD">Mezzo Live HD</channel>
+    <channel update="i" site="mtel.ba" site_id="222##647" xmltv_id="HAYAT MUSIC">HAYAT MUSIC</channel>
+    <channel update="i" site="mtel.ba" site_id="223##648" xmltv_id="HAYAT FOLK">HAYAT FOLK</channel>
+    <channel update="i" site="mtel.ba" site_id="393##649" xmltv_id="TV D+">TV D+</channel>
+    <channel update="i" site="mtel.ba" site_id="365##650" xmltv_id="EG Melody">EG Melody</channel>
+    <channel update="i" site="mtel.ba" site_id="366##651" xmltv_id="Pop Melody">Pop Melody</channel>
+    <channel update="i" site="mtel.ba" site_id="367##652" xmltv_id="EX YU Melody">EX YU Melody</channel>
+    <channel update="i" site="mtel.ba" site_id="368##653" xmltv_id="Folk Melody">Folk Melody</channel>
+    <channel update="i" site="mtel.ba" site_id="369##654" xmltv_id="Hits Melody">Hits Melody</channel>
+    <channel update="i" site="mtel.ba" site_id="370##655" xmltv_id="Amari">Amari</channel>
+    <channel update="i" site="mtel.ba" site_id="220##656" xmltv_id="LOL">LOL</channel>
+    <channel update="i" site="mtel.ba" site_id="215##657" xmltv_id="PINK WORLD">PINK WORLD</channel>
+    <channel update="i" site="mtel.ba" site_id="216##658" xmltv_id="PINK SHOW">PINK SHOW</channel>
+    <channel update="i" site="mtel.ba" site_id="217##659" xmltv_id="PINK PLUS">PINK PLUS</channel>
+    <channel update="i" site="mtel.ba" site_id="218##660" xmltv_id="PINK EXTRA">PINK EXTRA</channel>
+    <channel update="i" site="mtel.ba" site_id="222##661" xmltv_id="HAYAT MUSIC">HAYAT MUSIC</channel>
+    <channel update="i" site="mtel.ba" site_id="223##662" xmltv_id="HAYAT FOLK">HAYAT FOLK</channel>
+    <channel update="i" site="mtel.ba" site_id="349##663" xmltv_id="Melos TV">Melos TV</channel>
+    <channel update="i" site="mtel.ba" site_id="221##664" xmltv_id="Pink Reality">Pink Reality</channel>
+    <channel update="i" site="mtel.ba" site_id="371##665" xmltv_id="Happy Reality 1">Happy Reality 1</channel>
+    <channel update="i" site="mtel.ba" site_id="372##666" xmltv_id="Happy Reality 2">Happy Reality 2</channel>
+    <channel update="i" site="mtel.ba" site_id="394##667" xmltv_id="Zadruga 1">Zadruga 1</channel>
+    <channel update="i" site="mtel.ba" site_id="395##668" xmltv_id="Zadruga 2">Zadruga 2</channel>
+    <channel update="i" site="mtel.ba" site_id="396##669" xmltv_id="Zadruga 3">Zadruga 3</channel>
+    <channel update="i" site="mtel.ba" site_id="397##670" xmltv_id="Zadruga 4">Zadruga 4</channel>
+    <channel update="i" site="mtel.ba" site_id="10##7" xmltv_id="Viasat History HD/ Nature HD">Viasat History HD/ Nature HD</channel>
+    <channel update="i" site="mtel.ba" site_id="108##80" xmltv_id="HBO HD">HBO HD</channel>
+    <channel update="i" site="mtel.ba" site_id="194##801" xmltv_id="PRO 7">PRO 7</channel>
+    <channel update="i" site="mtel.ba" site_id="195##802" xmltv_id="RUSSIA 24">RUSSIA 24</channel>
+    <channel update="i" site="mtel.ba" site_id="196##803" xmltv_id="CNN">CNN</channel>
+    <channel update="i" site="mtel.ba" site_id="198##804" xmltv_id="RT NEWS TV">RT NEWS TV</channel>
+    <channel update="i" site="mtel.ba" site_id="351##805" xmltv_id="SAT.1">SAT.1</channel>
+    <channel update="i" site="mtel.ba" site_id="201##806" xmltv_id="RTR PLANETA">RTR PLANETA</channel>
+    <channel update="i" site="mtel.ba" site_id="202##807" xmltv_id="DEUTSCHE WELLE">DEUTSCHE WELLE</channel>
+    <channel update="i" site="mtel.ba" site_id="204##808" xmltv_id="France 24">France 24</channel>
+    <channel update="i" site="mtel.ba" site_id="207##809" xmltv_id="CGTN">CGTN</channel>
+    <channel update="i" site="mtel.ba" site_id="109##81" xmltv_id="HBO 2 HD">HBO 2 HD</channel>
+    <channel update="i" site="mtel.ba" site_id="281##810" xmltv_id="BVN">BVN</channel>
+    <channel update="i" site="mtel.ba" site_id="207##812" xmltv_id="CGTN">CGTN</channel>
+    <channel update="i" site="mtel.ba" site_id="111##82" xmltv_id="HBO 3 HD">HBO 3 HD</channel>
+    <channel update="i" site="mtel.ba" site_id="113##83" xmltv_id="Cinemax HD">Cinemax HD</channel>
+    <channel update="i" site="mtel.ba" site_id="115##84" xmltv_id="Cinemax 2 HD">Cinemax 2 HD</channel>
+    <channel update="i" site="mtel.ba" site_id="170##901" xmltv_id="Dorcel">Dorcel</channel>
+    <channel update="i" site="mtel.ba" site_id="172##902" xmltv_id="PRIVATE TV">PRIVATE TV</channel>
+    <channel update="i" site="mtel.ba" site_id="173##903" xmltv_id="HUSTLER">HUSTLER</channel>
+    <channel update="i" site="mtel.ba" site_id="175##904" xmltv_id="EROX HD">EROX HD</channel>
+    <channel update="i" site="mtel.ba" site_id="177##905" xmltv_id="EROXXX HD">EROXXX HD</channel>
+    <channel update="i" site="mtel.ba" site_id="179##906" xmltv_id="Pink Erotic">Pink Erotic</channel>
+    <channel update="i" site="mtel.ba" site_id="181##907" xmltv_id="Pink Erotic 2">Pink Erotic 2</channel>
+    <channel update="i" site="mtel.ba" site_id="182##908" xmltv_id="Pink Erotic 3">Pink Erotic 3</channel>
+    <channel update="i" site="mtel.ba" site_id="184##909" xmltv_id="Pink Erotic 4">Pink Erotic 4</channel>
+    <channel update="i" site="mtel.ba" site_id="186##910" xmltv_id="Pink Erotic 5">Pink Erotic 5</channel>
+    <channel update="i" site="mtel.ba" site_id="188##911" xmltv_id="Pink Erotic 6">Pink Erotic 6</channel>
+    <channel update="i" site="mtel.ba" site_id="189##912" xmltv_id="Pink Erotic 7">Pink Erotic 7</channel>
+    <channel update="i" site="mtel.ba" site_id="191##913" xmltv_id="Pink Erotic 8">Pink Erotic 8</channel>
+    <channel update="i" site="mtel.ba" site_id="373##914" xmltv_id="Babes TV">Babes TV</channel>
+    <channel update="i" site="mtel.ba" site_id="374##915" xmltv_id="Realty Kings">Realty Kings</channel>
+    <channel update="i" site="mtel.ba" site_id="375##916" xmltv_id="Bang U">Bang U</channel>
+    <channel update="i" site="mtel.ba" site_id="376##917" xmltv_id="Adult 1">Adult 1</channel>
+    <channel update="i" site="mtel.ba" site_id="377##918" xmltv_id="Adult 2">Adult 2</channel>
+    <channel update="i" site="mtel.ba" site_id="378##919" xmltv_id="Adult 3">Adult 3</channel>
+    <channel update="i" site="mtel.ba" site_id="379##920" xmltv_id="Adult 4">Adult 4</channel>
+    <channel update="i" site="mtel.ba" site_id="380##921" xmltv_id="Adult 5">Adult 5</channel>
+    <channel update="i" site="mtel.ba" site_id="381##922" xmltv_id="Adult 6">Adult 6</channel>
+    <channel update="i" site="mtel.ba" site_id="382##923" xmltv_id="Adult 7">Adult 7</channel>
+  </channels>
+</site>

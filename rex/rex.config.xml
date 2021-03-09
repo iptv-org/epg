@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Configuration file for the REX (Re-arrange and Edit Xmltv) postprocessor of WebGrab+Plus
+by Jan van Straaten
+Version 4 Januari 2020 Postprocess V2.0.9
+- added xmltv attributes processing for the elements to expand in 'Content and Values' section
+- added all Webgrab+Plus xmltv elements are now supported
+  WebGrab+Plus Version V3.0.0 or higher 
+Version 3 April 2019 Postprocess v2.0.8
+- added optional 'source_file' variable in >filename
+- added optional operations of the elements to expand in 'Content and Values' section
+  WebGrab+Plus Version V2.1.9 or higher-->
+
+<!--This configuration file can be made fully functional, change the settings to your own needs as explained and save it in the rex sub-folder of the 
+WebGrab+Plus homefolder as rex.config.xl-->
+
+<!--  Introduction:
+  The purpose of this post-processor is to re-arrange and edit the xmltv file created by the grabber section of WebGrab+Plus.
+  This can be useful or necessary if the EPG viewer of the PVR/Media-Centre used, or the xmltv importer it uses, does not support all the xmltv elements 
+  in the xmltv file created by WG++ or simply because of some users wishes. 
+  It can:
+  - Move the content of xmltv elements to other xmltv elements
+  - Merge the content of several xmltv elements 
+  - Add comments/prefix/postfix text
+  - Remove or create xmltv elements   
+  E.g.: If the PVR doesn't support import of credit elements (actors, directors etc.) it can add the content of them to the description and remove the 
+  original credit elements which are useless.
+  Or, it can move the episode data to the beginning or end of the subtitle element
+  Etc. .. 
+  This file (rex.config.xml), is stored in the REX postprocess home folder. By default, that is a subfolder named rex of the WebGrab+Plus home folder 
+  (default C:\Users\username\AppData\Local\WebGrab+Plus)  
+  Remark: This post-processor is only fully effective if the xmltv input has a 'clean' xmltv structure in which the data is properly allocated to the elements.
+  If that is the case depends on the EPG source site and the design of the SiteIni file . Some of the (e.g. customized) SiteIni files produce xmltv data that 
+  targets certain PVR/Media-Centre requirements already. In these cases this postprocessor is less effective/useful.-->
+
+<settings>
+  <!--xmltv file : 
+The xmltv target file in which the updated data will be merged with the grabbed EPG.
+Because of the incremental nature of the grabbing process this file must be different (name and/or path) from the target file of the grabbing as <filename>, 
+specified in WebGrab++.config.xml . Specify path (obtional) + filename. Path can be specified absolute, like 
+<filename>C:\Users\username\AppData\Local\WebGrab+Plus\rex\guide.xml</filename> or relative to the path of this config file (rex.config.xml), 
+like (if guide.xml is in the same folder as the config file) : <filename>guide.xml</filename> !! 
+It may contain a variable 'source_file' that will take the value of the xmltv source file (without .xml) plus text elements:
+e.g <filename>final_'source_file'_1.xml</filename> will result in final_guide_1.xml if source_file is guide.xml-->
+  <filename>guide.xml</filename>
+
+  <!-- Configuration of the elements:-->
+  <![CDATA[
+1. Content and Values:
+  This is best explained in a step by step fashion:
+  Suppose you want to move the actors to the end of the description. You then specify:
+  <desc>'description'\n'actor'</desc>
+  The result is the existing 'description', followed by, on a newline, the actor(s) separated by the standard WG++ element separator |.
+  The result:  
+    <desc>This is the original description.
+    Michael Douglas|Kim Basinger</desc>  
+  
+  You probably don't like the | as separator between the actors, so you specify another separator like this:
+  <desc>'description'\n'actor(, )'</desc>
+  The result:  
+    <desc>This is the original description.
+    Michael Douglas, Kim Basinger</desc>  
+  
+  You can make this prettier by adding some text to the actors addition:
+  <desc>'description'\nActors: 'actor(, )'.</desc>
+  The result:  
+    <desc>This is the original description.
+    Actors: Michael Douglas, Kim Basinger.</desc>
+  
+  A small problem: Suppose the source xmltv show doesn't have any actors, then the result would be not so pretty: 
+    <desc>This is the original description.
+    Actors: .</desc> 
+  
+  To avoid that, the added text can be linked to the element it must be added to, like this:
+  <desc>'description'{\nActors: 'actor(, )'.}</desc>
+  Result with actors:  
+    <desc>This is the original description.
+    Actors: Michael Douglas, Kim Basinger.</desc>
+  And without actors:  
+    <desc>This is the original description.</desc>
+  
+  An example with some more elements:
+  <desc>'description'{\n\tYear of production: 'productiondate'.}{\n\tProducer: 'producer(, )'.}{\n\tActors: 'actor(, )'.}</desc>
+  Result:  
+    <desc>This is the original description.
+        Year of production: 2002.
+        Producer: Steven Spielberg.
+        Actors: Michael Douglas, Kim Basinger.</desc>
+	  
+  And another one:
+  <sub-title>{Episode: 'episode'\t}'subtitle'</sub-title>
+  Result:  
+    <sub-title>Episode: 3.2/12.1    The original subtitle</sub-title>
+  
+  You can also remove elements (but not the title!) from the xmltv listing by specifying an empty element, like this:
+  <actor></actor> or simply <actor />
+  This will remove all <actor> elements
+  And this:
+  <credits />
+  Will remove the <credits> element, including all its child elements like <actor> , <producer> etc. 
+
+Additional options :
+  
+** Operations : optionally to do certain operations on the element value to expand e.g:
+  These operations must be specified within the ' ' characters that specify the elementname, enclosed by [] and separated by a ,  e.g. 
+  <desc>{Summary: 'description[cleanup(style=upper), max_chars=500]'}{\nActors: 'actor(, )'}</desc>
+  supported operations : 
+   - cleanup with style and tags arguments, 
+   - max_chars, max_words and max_sentences to limit the content data of the expanded element.
+   
+** Xmltv Attributes in content to expand: If the source xmltv element has an attribute, like lang="en" or role="rolename" (in actor) or system="US",
+  it is possible to add it to the expanded content by add /a (for attribute value only) or /a+ (for attributename and value) to the element name.
+  This /a or /a+ addition must be added directly after the element name, like 'actor/a' or combined with a custom separator, 'actor/a(, )' 
+  or combined with an operation 'country/a(/)[cleanup(style=lower)]'
+  Example (assuming the actors role values are provided in the source xmltv file):
+  <desc>'description'{\n\tYear of production: 'productiondate',}{ Rating: 'rating/a+'.}{\n\tProducer: 'producer(, )'.}{\n\tActors: 'actor/a+(, )'.}</desc>
+  
+  Result:
+    <desc>This is the original description.
+        Year of production: 2002, Rating TV-14(system=US).
+        Producer: Steven Spielberg.
+        Actors: Michael Douglas(role=The carpenter), Kim Basinger(role=Mary).</desc>
+  
+Summary of Content/Values:
+1. Syntax
+<xmltv-element-name optional-attribute="attribute-value">content</xmltv-element-name>
+  - the content of the xmltv-target elements can be specified by means of a mixture of text and element-values.
+  - content can be left empty to remove the xmltv element (except the element <title>)
+  - the element-values must be entered by their (wg++) element-name enclosed by ' '
+  - optionally, element values can be processed by means of certain operations, 
+  E.g. 'description[cleanup(style=upper), max_sentences=2]' 
+  - optionally, element xmltv attribute values can be added to the content by adding /a (only attribute value) or /a+ (value + attributename) to the 'elementname'
+  - multiple value elements (like actor) will be converted to single value elements if the xmltv-target element is a single value element, like <desc>. 
+  The individual values will be listed with a (standard WG++ internal element separator character) | as separator unless another separator is specified as follows:
+'element-name(separator-string)' e.g. 'actor(, )' or with attribute 'actor/a(, )'
+  - text and element-names can be linked together by enclosing them by {}. This will ensure that, when the element in it is empty, everything between the {} is
+  ignored. E.g. {\nProduced in : ('productiondate')} 
+  - the text in the xmltv-target elements may contain the following simple formatting :
+    - \n or \r to force a newline
+    - \t to add a tab
+    
+2. The allowed xmltv-target elements (the ones in the target file specified above) are :
+- IMPORTANT! : any of the next listed xmltv-target elements that is specified in this allocation specification, replaces the existing xmltv element and 
+its content!  
+2.1 'Full' function , these can be added, changed and removed  
+  <title> <sub-title> <desc> <star-rating> <director> <actor> <category> <episode> <icon> 
+  <review> (=optional new xmltv element)
+2.2 'Remove/Keep' only, cannot be added, changed, only removed or kept as 'is'
+  <date> <producer> <writer> <presenter> <composer> <commentator> <rating> <aspect> <quality> <url> <country>
+  
+3. Supported element-names (from the existing xmltv listing, name definitions as in Appendix E of the documentation) to be used as content to expand:
+  'title' 'description' 'starrating' 'subtitle' 'productiondate' 'category' 'director' 'actor' 'presenter' 'writer' 'composer' 'producer' 'commentator' 'rating' 
+  'episode' 'showicon' 'review' 'subtitles' 'premiere' 'previously-shown' 'aspect' 'quality' 'country' 'url'
+
+4. Attributes
+  - for each of the xmltv-elements the following attribute can be specified
+    (if not specified, the existing one, if present in the xmltv, will be used) :
+      - lang   for <title> and <desc> , default : no attribute
+      - system   for <star-rating> , default : no attribute
+      - type  for <review> , default: type="text" 
+  - Existing xmltv attribute values can be added to expanded content. (see above)
+ ]]>
+  <!-- examples-->
+  <sub-title>{Episode: 'episode' }'subtitle'</sub-title>
+  <desc>'description[max_words=100]'{\n\t¤ Produced in: 'productiondate'. }{¤ Category: 'category(, )'. }{\n\t¤ Actors: 'actor/a+(, )'}{\n\t¤ Director: 'director(, )'}{\n\t¤ Presenter: 'presenter(, )'}</desc>
+  <credits></credits>
+  <episode-num></episode-num>
+  <date></date>
+  <category></category>
+  <review>{Ratings: 'rating(, )'.}</review>
+  <rating></rating>
+</settings>

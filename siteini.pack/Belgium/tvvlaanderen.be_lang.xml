@@ -1,0 +1,762 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<site generator-info-name="WebGrab+Plus/w MDB &amp; REX Postprocess -- version V2.1.1.2 -- Jan van Straaten" site="tvvlaanderen.be">
+  <channels>
+  <!--to get the correct xmltv lang attribute, change lang="nl" to the correct value -->
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1790975744" xmltv_id="één HD">één HD</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1790975808" xmltv_id="Canvas HD">Canvas HD</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1791046592" xmltv_id="VTM HD">VTM HD</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1791046080" xmltv_id="VIER HD">VIER HD</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1791031936" xmltv_id="Q2 HD">Q2 HD</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1791046144" xmltv_id="VIJF">VIJF</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1791046208" xmltv_id="Vitaya">Vitaya</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1791000960" xmltv_id="CAZ">CAZ</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1791859136" xmltv_id="ZES">ZES</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1791850752" xmltv_id="Kadet">Kadet</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1790984192" xmltv_id="vtmKzoom / Kanaal Z">vtmKzoom / Kanaal Z</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1790975872" xmltv_id="Ketnet / één+ / Canvas+">Ketnet / één+ / Canvas+</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1791001024" xmltv_id="Evenaar">Evenaar</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1791001280" xmltv_id="Infokanaal">Infokanaal</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1791608704" xmltv_id="NPO 1 HD">NPO 1 HD</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1791608768" xmltv_id="NPO 2 HD">NPO 2 HD</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1791608832" xmltv_id="NPO 3 HD">NPO 3 HD</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="592297856" xmltv_id="Film Europe HD">Film Europe HD</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1790974912" xmltv_id="E! Entertainment">E! Entertainment</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1791745472" xmltv_id="Fox BE">Fox BE</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1790975552" xmltv_id="History HD">History HD</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1791001920" xmltv_id="Discovery HD Showcase">Discovery HD Showcase</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1790975360" xmltv_id="Discovery">Discovery</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1790991936" xmltv_id="NatGeo HD">NatGeo HD</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1790972096" xmltv_id="Food Network HD">Food Network HD</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1790993664" xmltv_id="Travel Channel HD">Travel Channel HD</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1790988352" xmltv_id="ID">ID</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="592298944" xmltv_id="UP NETWORK">UP NETWORK</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1791742848" xmltv_id="Fine Living HD">Fine Living HD</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1790981248" xmltv_id="the QYOU HD">the QYOU HD</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1790969984" xmltv_id="Animal Planet">Animal Planet</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1790991808" xmltv_id="NatGeo Wild HD">NatGeo Wild HD</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1791006336" xmltv_id="Outdoor Channel HD">Outdoor Channel HD</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="592273280" xmltv_id="Fishing and Hunting">Fishing and Hunting</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1791006016" xmltv_id="ONS">ONS</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1791850432" xmltv_id="Nick Jr.">Nick Jr.</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1790987392" xmltv_id="Cartoon Network">Cartoon Network</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1790987328" xmltv_id="Boomerang">Boomerang</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1790973248" xmltv_id="Disney XD HD (06u-18u)">Disney XD HD (06u-18u)</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1791610240" xmltv_id="Disney Channel">Disney Channel</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1790975168" xmltv_id="Nickelodeon / Spike">Nickelodeon / Spike</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1790988928" xmltv_id="duck tv">duck tv</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1790990784" xmltv_id="Jim Jam">Jim Jam</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="1790979072" xmltv_id="Stingray iConcerts">Stingray iConcerts</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1791856064" xmltv_id="192TV">192TV</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1790974784" xmltv_id="MTV NL">MTV NL</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="1790979008" xmltv_id="MTV Music">MTV Music</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="1790991296" xmltv_id="MTV Dance">MTV Dance</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="1790991424" xmltv_id="MTV Rocks">MTV Rocks</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="1790991360" xmltv_id="MTV Hits">MTV Hits</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="1790994560" xmltv_id="VH-1">VH-1</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="1790994624" xmltv_id="VH-1 Classic">VH-1 Classic</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="6016" xmltv_id="Retro Music TV">Retro Music TV</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="742415040" xmltv_id="Mezzo HD">Mezzo HD</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="1790971328" xmltv_id="Stingray Brava HD">Stingray Brava HD</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="591403264" xmltv_id="Unitel Classica HD">Unitel Classica HD</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1790979200" xmltv_id="TV Oranje">TV Oranje</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="1791867200" xmltv_id="Insight TV UHD">Insight TV UHD</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="1791867136" xmltv_id="Insight TV HD">Insight TV HD</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="743047872" xmltv_id="France 2 HD">France 2 HD</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1791866944" xmltv_id="TVO (Oost-Vlaanderen)">TVO (Oost-Vlaanderen)</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1791867008" xmltv_id="ATV (Antwerpen)">ATV (Antwerpen)</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1791867072" xmltv_id="TVL (Limburg)">TVL (Limburg)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="1791004864" xmltv_id="(18+) Leo TV (22-06)">(18+) Leo TV (22-06)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="1791002560" xmltv_id="(18+) Brazzers TV (22-05)">(18+) Brazzers TV (22-05)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="1791004608" xmltv_id="(18+) Hustler TV">(18+) Hustler TV</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="1791855552" xmltv_id="(18+) Penthouse 1 HD">(18+) Penthouse 1 HD</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="592284672" xmltv_id="(18+) Penthouse 2 HD">(18+) Penthouse 2 HD</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="1790979520" xmltv_id="(18+) VividTV">(18+) VividTV</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="1790967936" xmltv_id="(18+) Reality Kings">(18+) Reality Kings</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="1791004928" xmltv_id="(18+) Man-X (24-06)">(18+) Man-X (24-06)</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1790981760" xmltv_id="Eurosport 1 HD">Eurosport 1 HD</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1791731008" xmltv_id="Eurosport 2 BE">Eurosport 2 BE</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="1790971456" xmltv_id="EDGEsport HD">EDGEsport HD</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="1791612480" xmltv_id="motorsport.tv HD">motorsport.tv HD</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="1791005248" xmltv_id="AutoMotorSport HD">AutoMotorSport HD</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="1791005312" xmltv_id="Nautical Channel HD">Nautical Channel HD</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1791859200" xmltv_id="esportsTV HD">esportsTV HD</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="1791850688" xmltv_id="NHK World HD">NHK World HD</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="1790981440" xmltv_id="BBC World News HD">BBC World News HD</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="1790968768" xmltv_id="CNN International">CNN International</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="1790989248" xmltv_id="Euronews (Français)">Euronews (Français)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="1920" xmltv_id="Sky News">Sky News</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="1791612992" xmltv_id="France 24 Eng">France 24 Eng</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="1790969664" xmltv_id="France 24 Fr">France 24 Fr</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="256" xmltv_id="CNEWS HD">CNEWS HD</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="1790968000" xmltv_id="Al Jazeera English HD">Al Jazeera English HD</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="1792" xmltv_id="Russia Today HD">Russia Today HD</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="1790968192" xmltv_id="CNBC">CNBC</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="742392256" xmltv_id="BFM TV (13)">BFM TV (13)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="1791613440" xmltv_id="Bloomberg Europe">Bloomberg Europe</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="742392384" xmltv_id="TV5MONDE HD (F,B,CH)">TV5MONDE HD (F,B,CH)</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="1791613632" xmltv_id="TV5MONDE Europe">TV5MONDE Europe</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1790968640" xmltv_id="BVN">BVN</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="1791693504" xmltv_id="ARD-Das Erste">ARD-Das Erste</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="420156160" xmltv_id="ZDF">ZDF</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1790976576" xmltv_id="TV Noord">TV Noord</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1790976896" xmltv_id="Omroep Zeeland">Omroep Zeeland</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1790977152" xmltv_id="L1MBURG">L1MBURG</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1790976832" xmltv_id="Omroep Brabant">Omroep Brabant</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1790976512" xmltv_id="TV Gelderland">TV Gelderland</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1790976448" xmltv_id="Omrop Fryslan">Omrop Fryslan</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1790976640" xmltv_id="TV Oost">TV Oost</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1790977024" xmltv_id="TV Drenthe">TV Drenthe</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="419431168" xmltv_id="Das Erste HD">Das Erste HD</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="1790976128" xmltv_id="ZDF HD">ZDF HD</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="420077248" xmltv_id="3sat HD">3sat HD</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="420077312" xmltv_id="Sat.1">Sat.1</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="420153664" xmltv_id="SAT.1 Gold Austria">SAT.1 Gold Austria</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="886848" xmltv_id="Family TV">Family TV</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="1790968128" xmltv_id="RTL Television">RTL Television</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="1790976256" xmltv_id="RTL 2">RTL 2</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="420077568" xmltv_id="NITRO">NITRO</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="887232" xmltv_id="RTLplus">RTLplus</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="419436928" xmltv_id="ProSieben">ProSieben</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="419431616" xmltv_id="ProSieben MAXX Austria">ProSieben MAXX Austria</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="1790975488" xmltv_id="Vox">Vox</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="420077824" xmltv_id="Sixx">Sixx</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="419446848" xmltv_id="Kabel eins">Kabel eins</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="1791615360" xmltv_id="DMAX">DMAX</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="420320768" xmltv_id="N24 Doku">N24 Doku</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="420321024" xmltv_id="Kabel 1 Doku Austria">Kabel 1 Doku Austria</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="419431680" xmltv_id="Tele 5">Tele 5</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="419438912" xmltv_id="Arte HD">Arte HD</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="420078144" xmltv_id="ONE HD">ONE HD</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="419432768" xmltv_id="ZDF_neo HD">ZDF_neo HD</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="907328" xmltv_id="Euronews Deutsch">Euronews Deutsch</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="419433024" xmltv_id="ZDFinfo HD">ZDFinfo HD</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="420078464" xmltv_id="ARD ALPHA">ARD ALPHA</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="420078528" xmltv_id="Phoenix HD">Phoenix HD</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="420078592" xmltv_id="Tagesschau 24 HD">Tagesschau 24 HD</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="420078656" xmltv_id="N24">N24</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="1791616128" xmltv_id="N-TV">N-TV</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="419443904" xmltv_id="Servus TV HD Deutschland">Servus TV HD Deutschland</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="419444096" xmltv_id="Eurosport 1 Deutschland">Eurosport 1 Deutschland</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="419432064" xmltv_id="Sport Eins Deutschland">Sport Eins Deutschland</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="1344" xmltv_id="DW-TV (Deutsche Welle)">DW-TV (Deutsche Welle)</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="1600" xmltv_id="Anixe HD">Anixe HD</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="420153408" xmltv_id="Disney Channel DE">Disney Channel DE</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="419447040" xmltv_id="Nick / Comedy">Nick / Comedy</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="1790978176" xmltv_id="Super RTL">Super RTL</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="419442752" xmltv_id="KiKA HD">KiKA HD</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="13888" xmltv_id="RiC">RiC</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="891008" xmltv_id="OE24.TV">OE24.TV</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="419526528" xmltv_id="ORF 2 Europe">ORF 2 Europe</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="419444864" xmltv_id="WDR HD Köln">WDR HD Köln</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="419444672" xmltv_id="WDR HD Duisburg">WDR HD Duisburg</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="419444544" xmltv_id="WDR HD Bonn">WDR HD Bonn</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="419444416" xmltv_id="WDR HD Aachen">WDR HD Aachen</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="419444480" xmltv_id="WDR HD Bielefeld">WDR HD Bielefeld</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="419444608" xmltv_id="WDR HD Dortmund">WDR HD Dortmund</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="419444736" xmltv_id="WDR HD Düsseldorf">WDR HD Düsseldorf</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="419444800" xmltv_id="WDR HD Essen">WDR HD Essen</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="419445056" xmltv_id="WDR HD Wuppertal">WDR HD Wuppertal</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="419444928" xmltv_id="WDR HD Münster">WDR HD Münster</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="419444992" xmltv_id="WDR HD Siegen">WDR HD Siegen</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="12416" xmltv_id="R9 Österreich HD">R9 Österreich HD</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="420080256" xmltv_id="rbb Brandenburg HD">rbb Brandenburg HD</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="419443968" xmltv_id="rbb Berlin HD">rbb Berlin HD</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="419444160" xmltv_id="SWR BW HD">SWR BW HD</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="420156736" xmltv_id="SWR RP HD">SWR RP HD</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="420139584" xmltv_id="SR Fernsehen HD">SR Fernsehen HD</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="419445120" xmltv_id="BR Nord HD">BR Nord HD</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="419445184" xmltv_id="BR HD">BR HD</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="419445248" xmltv_id="NDR FS NDS HD">NDR FS NDS HD</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="419445312" xmltv_id="NDR FS MV HD">NDR FS MV HD</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="419445376" xmltv_id="NDR FS SH HD">NDR FS SH HD</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="419445440" xmltv_id="NDR FS HH HD">NDR FS HH HD</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="419445504" xmltv_id="MDR Sachsen HD">MDR Sachsen HD</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="419445568" xmltv_id="MDR S-Anhalt HD">MDR S-Anhalt HD</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="419445632" xmltv_id="MDR Thüringen HD">MDR Thüringen HD</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="419445696" xmltv_id="hr-fernsehen HD">hr-fernsehen HD</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="11456" xmltv_id="intv (na 18u)">intv (na 18u)</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="11520" xmltv_id="RFO (na 18u)">RFO (na 18u)</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="11584" xmltv_id="Munchen TV">Munchen TV</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="11072" xmltv_id="TV Mittelrhein">TV Mittelrhein</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="15360" xmltv_id="Rhein Main TV">Rhein Main TV</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="15488" xmltv_id="Ulm-Allgau">Ulm-Allgau</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="15680" xmltv_id="Franken Fernsehen">Franken Fernsehen</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="724288" xmltv_id="Hitradio OE3">Hitradio OE3</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="419446144" xmltv_id="Comedy Central / VIVA">Comedy Central / VIVA</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="419446208" xmltv_id="Radio Bremen TV">Radio Bremen TV</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="15872" xmltv_id="Go TV">Go TV</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="15936" xmltv_id="Melodie Express">Melodie Express</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="419446400" xmltv_id="TLC Deutschland">TLC Deutschland</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="16064" xmltv_id="Folx TV">Folx TV</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="16128" xmltv_id="Deutsches Musik Fernsehen">Deutsches Musik Fernsehen</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="419446592" xmltv_id="Deluxe Music">Deluxe Music</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="16256" xmltv_id="Sparhandy">Sparhandy</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="740928" xmltv_id="Bundesrat">Bundesrat</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="724352" xmltv_id="LT1">LT1</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="740864" xmltv_id="Equi 8">Equi 8</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="741056" xmltv_id="Regio TV">Regio TV</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="740992" xmltv_id="Parlamentsfernsehen">Parlamentsfernsehen</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="890688" xmltv_id="H2D">H2D</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="419440640" xmltv_id="RTL Austria">RTL Austria</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="10624" xmltv_id="RTL Nitro Austria">RTL Nitro Austria</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="1790978496" xmltv_id="Sat 1 Osterreich">Sat 1 Osterreich</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="1790984320" xmltv_id="Pro Sieben Osterreich">Pro Sieben Osterreich</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="419447168" xmltv_id="Comedy Central / Viva Austria">Comedy Central / Viva Austria</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="774272" xmltv_id="Sky Sport News HD">Sky Sport News HD</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="16896" xmltv_id="MeinTVshop">MeinTVshop</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="901120" xmltv_id="Health.TV">Health.TV</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="420085952" xmltv_id="HSE24 HD">HSE24 HD</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="419458304" xmltv_id="QVC HD Germany">QVC HD Germany</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="17088" xmltv_id="Juwelo HD">Juwelo HD</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="907712" xmltv_id="EO TV">EO TV</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="17344" xmltv_id="CGTN News">CGTN News</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="17408" xmltv_id="CGTN 9 Documentary">CGTN 9 Documentary</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="895296" xmltv_id="CCTV 4 HD (13)">CCTV 4 HD (13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="895168" xmltv_id="CGTN Documentary HD">CGTN Documentary HD</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="17472" xmltv_id="LCP HD">LCP HD</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="1791673536" xmltv_id="LCI HD">LCI HD</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="17536" xmltv_id="M6 Boutique &amp; Co">M6 Boutique &amp; Co</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="17600" xmltv_id="Arirang TV">Arirang TV</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="17664" xmltv_id="RTL Tele Letzebuerg">RTL Tele Letzebuerg</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="17728" xmltv_id="Chamber TV">Chamber TV</channel>
+    <channel update="i" lang="es" site="tvvlaanderen.be" site_id="1790985024" xmltv_id="TVE International">TVE International</channel>
+    <channel update="i" lang="es" site="tvvlaanderen.be" site_id="17280" xmltv_id="Canal 24 Horas">Canal 24 Horas</channel>
+    <channel update="i" lang="es" site="tvvlaanderen.be" site_id="18048" xmltv_id="Telesur HD">Telesur HD</channel>
+    <channel update="i" lang="es" site="tvvlaanderen.be" site_id="789248" xmltv_id="TV Record">TV Record</channel>
+    <channel update="i" lang="es" site="tvvlaanderen.be" site_id="17856" xmltv_id="Cubavision Internacional">Cubavision Internacional</channel>
+    <channel update="i" lang="es" site="tvvlaanderen.be" site_id="17920" xmltv_id="LTC La tiena en Casa">LTC La tiena en Casa</channel>
+    <channel update="i" lang="es" site="tvvlaanderen.be" site_id="884288" xmltv_id="RT Espanol HD">RT Espanol HD</channel>
+    <channel update="i" lang="es" site="tvvlaanderen.be" site_id="17984" xmltv_id="Aragón">Aragón</channel>
+    <channel update="i" lang="es" site="tvvlaanderen.be" site_id="18112" xmltv_id="TV Galicia">TV Galicia</channel>
+    <channel update="i" lang="es" site="tvvlaanderen.be" site_id="18240" xmltv_id="Canal Sur Andalucia">Canal Sur Andalucia</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="895488" xmltv_id="Multithek HbbTV">Multithek HbbTV</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="18304" xmltv_id="i24 News Français">i24 News Français</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="18432" xmltv_id="TRWAM">TRWAM</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="18496" xmltv_id="TV 8">TV 8</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="899584" xmltv_id="213 HD">213 HD</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="873216" xmltv_id="REBEL">REBEL</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="65088" xmltv_id="Ocko">Ocko</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="892288" xmltv_id="CT 24 HD">CT 24 HD</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="18560" xmltv_id="Noe TV">Noe TV</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="18624" xmltv_id="Slagr TV">Slagr TV</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="3456" xmltv_id="TA3 HD">TA3 HD</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="18688" xmltv_id="TV Lux">TV Lux</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="18816" xmltv_id="Regionalni TV">Regionalni TV</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="18880" xmltv_id="SonLife Broadcasting Network">SonLife Broadcasting Network</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="19008" xmltv_id="GOD Europe">GOD Europe</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="419449472" xmltv_id="Bibel TV HD">Bibel TV HD</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="19136" xmltv_id="K-TV Fernsehen">K-TV Fernsehen</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="19200" xmltv_id="EWTN katholisches TV">EWTN katholisches TV</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="706944" xmltv_id="sonnenklar.TV HD">sonnenklar.TV HD</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="27712" xmltv_id="Astro TV">Astro TV</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="27776" xmltv_id="Juwelo TV">Juwelo TV</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="27840" xmltv_id="HSE24 Extra">HSE24 Extra</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="419458368" xmltv_id="1-2-3.TV HD">1-2-3.TV HD</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="28032" xmltv_id="Channel 21 Shop">Channel 21 Shop</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="28096" xmltv_id="Beauty TV">Beauty TV</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="888640" xmltv_id="Zee One HD">Zee One HD</channel>
+    <channel update="i" lang="tr" site="tvvlaanderen.be" site_id="419458560" xmltv_id="TRT Turk">TRT Turk</channel>
+    <channel update="i" lang="ru" site="tvvlaanderen.be" site_id="888704" xmltv_id="R1 (Russia)">R1 (Russia)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="896768" xmltv_id="TRT World HD">TRT World HD</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="906560" xmltv_id="Test E">Test E</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="420154048" xmltv_id="Eurosport 2 DE (Monitor)">Eurosport 2 DE (Monitor)</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="420153984" xmltv_id="AXN Deutschland (monitor)">AXN Deutschland (monitor)</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="420153728" xmltv_id="kabel eins classics (monitor)">kabel eins classics (monitor)</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="420153792" xmltv_id="Planet (monitor)">Planet (monitor)</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="1791691520" xmltv_id="Sportdigital.tv (monitor)">Sportdigital.tv (monitor)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="784192" xmltv_id="SES UHD Demo Channel">SES UHD Demo Channel</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="784256" xmltv_id="UHD1 by ASTRA">UHD1 by ASTRA</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="784320" xmltv_id="PEARL TV UHD">PEARL TV UHD</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="784448" xmltv_id="Fashion 4K">Fashion 4K</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="888768" xmltv_id="NRJ UHD">NRJ UHD</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="784576" xmltv_id="ASTRA UHD DEMO 1">ASTRA UHD DEMO 1</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="895424" xmltv_id="HLG Tests UHD">HLG Tests UHD</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="891712" xmltv_id="Hotbird 4K1 (13)">Hotbird 4K1 (13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="891200" xmltv_id="Fashion TV UHD (13)">Fashion TV UHD (13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="776448" xmltv_id="Clubbing TV 4K 360 (13)">Clubbing TV 4K 360 (13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="892992" xmltv_id="Astra Ultra HD Demo 1">Astra Ultra HD Demo 1</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="893056" xmltv_id="Astra Ultra HD Demo 2">Astra Ultra HD Demo 2</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="895744" xmltv_id="Travel XP 4K">Travel XP 4K</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="893184" xmltv_id="SES UHD Demo2">SES UHD Demo2</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="706816" xmltv_id="Voice of America (VOA)">Voice of America (VOA)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="896512" xmltv_id="VOA TV 2">VOA TV 2</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="896448" xmltv_id="Reteconomy">Reteconomy</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="742424384" xmltv_id="La Une HD (13)">La Une HD (13)</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="742462592" xmltv_id="La Deux (13)">La Deux (13)</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="1791043840" xmltv_id="RTL-TVi HD (13)">RTL-TVi HD (13)</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="1791034240" xmltv_id="Club RTL / Kidz RTL (13)">Club RTL / Kidz RTL (13)</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="1791042560" xmltv_id="Plug RTL (13)">Plug RTL (13)</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="742462720" xmltv_id="La Trois (13)">La Trois (13)</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="1791006912" xmltv_id="AB 3">AB 3</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="1791000768" xmltv_id="TF 1 HD">TF 1 HD</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="1791008896" xmltv_id="France 3">France 3</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="1791008960" xmltv_id="France 4">France 4</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="1791009088" xmltv_id="France 5">France 5</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="1791009152" xmltv_id="France Ô">France Ô</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="1791007488" xmltv_id="TV Breizh HD">TV Breizh HD</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="1791008128" xmltv_id="Comédie+ HD">Comédie+ HD</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="1791009600" xmltv_id="Elle Girl HD">Elle Girl HD</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="1791011264" xmltv_id="NT 1">NT 1</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="1791006848" xmltv_id="AB1">AB1</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="1791008448" xmltv_id="Disney Channel HD">Disney Channel HD</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="1791008512" xmltv_id="Disney Channel+1 HD">Disney Channel+1 HD</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="1791008384" xmltv_id="Disney XD HD">Disney XD HD</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="1791624768" xmltv_id="Disney Junior HD">Disney Junior HD</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="1790996032" xmltv_id="Boomerang HD">Boomerang HD</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="1791008064" xmltv_id="Cartoon Network HD France">Cartoon Network HD France</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="1791009280" xmltv_id="Gulli">Gulli</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="1790996096" xmltv_id="Nickelodeon HD(+)">Nickelodeon HD(+)</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="1791012160" xmltv_id="TiJi HD">TiJi HD</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="1791007552" xmltv_id="Canal J HD">Canal J HD</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="1791011968" xmltv_id="Télétoon+ HD">Télétoon+ HD</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="1791012032" xmltv_id="Télétoon+1 HD">Télétoon+1 HD</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="1791011328" xmltv_id="Piwi+ HD">Piwi+ HD</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="1791010176" xmltv_id="Mangas">Mangas</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="1791011904" xmltv_id="TCM HD France">TCM HD France</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="1791007168" xmltv_id="Action HD">Action HD</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="1791007808" xmltv_id="Crime District">Crime District</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="1791008640" xmltv_id="Science &amp; Vie TV HD">Science &amp; Vie TV HD</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="1791011392" xmltv_id="Planéte+ HD">Planéte+ HD</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="1791009344" xmltv_id="Histoire HD">Histoire HD</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="1791011840" xmltv_id="Toute l'Histoire">Toute l'Histoire</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="1791012224" xmltv_id="Trek HD">Trek HD</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="1791007232" xmltv_id="Animaux HD">Animaux HD</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="1791012288" xmltv_id="Ushuaia TV HD">Ushuaia TV HD</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="41408" xmltv_id="Golf Channel France">Golf Channel France</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="1791011008" xmltv_id="National Geographic FR HD">National Geographic FR HD</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="1791011072" xmltv_id="NatGeo Wild HD (FR)">NatGeo Wild HD (FR)</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="1791007680" xmltv_id="Chasse et Pêche">Chasse et Pêche</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="1791012800" xmltv_id="(18+) XXL">(18+) XXL</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="658752" xmltv_id="(18+) Hustler HD">(18+) Hustler HD</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="1791012928" xmltv_id="(18+) Redlight HD">(18+) Redlight HD</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="39296" xmltv_id="(18+) Private tv">(18+) Private tv</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="6272" xmltv_id="VRT Radio 1">VRT Radio 1</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="6784" xmltv_id="VRT Radio 2">VRT Radio 2</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1790974464" xmltv_id="MNM">MNM</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1790974528" xmltv_id="Studio Brussel">Studio Brussel</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1790974144" xmltv_id="Klara">Klara</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="5376" xmltv_id="QMusic">QMusic</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="37632" xmltv_id="Joe">Joe</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="45696" xmltv_id="Nostalgie">Nostalgie</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="13376" xmltv_id="Classic FM">Classic FM</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="5632" xmltv_id="BNR Nieuwsradio">BNR Nieuwsradio</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1790973120" xmltv_id="Sky Radio">Sky Radio</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="5504" xmltv_id="Radio 10">Radio 10</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1790969856" xmltv_id="Radio 538">Radio 538</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="5888" xmltv_id="Veronica Radio">Veronica Radio</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="40768" xmltv_id="RTL Radio">RTL Radio</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="13184" xmltv_id="L1 Radio">L1 Radio</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1790973760" xmltv_id="FunX">FunX</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="5568" xmltv_id="Arrow Classic Rock">Arrow Classic Rock</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="11328" xmltv_id="100% NL">100% NL</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="4864" xmltv_id="NPO Radio 1">NPO Radio 1</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="4928" xmltv_id="NPO Radio 2">NPO Radio 2</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="4992" xmltv_id="NPO 3FM">NPO 3FM</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="5056" xmltv_id="NPO Radio 4">NPO Radio 4</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="5120" xmltv_id="NPO Radio 5">NPO Radio 5</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="5696" xmltv_id="Slam!">Slam!</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="880960" xmltv_id="COUNTRY JZ">COUNTRY JZ</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="881024" xmltv_id="COUNTRY SV">COUNTRY SV</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="41920" xmltv_id="Country Radio">Country Radio</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="41984" xmltv_id="Beat JM">Beat JM</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="42048" xmltv_id="Radio Beat">Radio Beat</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1790980480" xmltv_id="Radio Gelderland">Radio Gelderland</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="1790980416" xmltv_id="Radio Oost">Radio Oost</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="42304" xmltv_id="BBC World Service">BBC World Service</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="714176" xmltv_id="Jazz Radio">Jazz Radio</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="880704" xmltv_id="CRo JAZZ">CRo JAZZ</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="880576" xmltv_id="CRo RADIO WAVE">CRo RADIO WAVE</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="42560" xmltv_id="CRo Radiozurnal">CRo Radiozurnal</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="743488" xmltv_id="RF">RF</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="419473152" xmltv_id="RTL">RTL</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="42816" xmltv_id="RTL 2 FR">RTL 2 FR</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="42880" xmltv_id="Fun Radio">Fun Radio</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="42944" xmltv_id="Radio Classique">Radio Classique</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="43008" xmltv_id="NRJ">NRJ</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="43072" xmltv_id="Europe 1">Europe 1</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="43328" xmltv_id="Virgin Radio FR">Virgin Radio FR</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="43392" xmltv_id="Sky Rock">Sky Rock</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="64384" xmltv_id="Nova">Nova</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="43840" xmltv_id="RFM">RFM</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="43648" xmltv_id="Cherie FM">Cherie FM</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="43712" xmltv_id="France Culture">France Culture</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="43776" xmltv_id="France Info">France Info</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="43904" xmltv_id="France Inter">France Inter</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="43968" xmltv_id="France Musique">France Musique</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="44288" xmltv_id="France Bleu IDF">France Bleu IDF</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="44544" xmltv_id="CRo Radio Praha">CRo Radio Praha</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="44608" xmltv_id="RFI Int">RFI Int</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="44672" xmltv_id="RMC Info">RMC Info</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="44736" xmltv_id="Rire &amp; Chansons">Rire &amp; Chansons</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="44800" xmltv_id="Mc Doualiya">Mc Doualiya</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="44928" xmltv_id="TSF Jazz">TSF Jazz</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="45184" xmltv_id="BFM Business Radio">BFM Business Radio</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="45248" xmltv_id="Mouv">Mouv</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="45312" xmltv_id="Radio FG">Radio FG</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="45376" xmltv_id="Contact FM">Contact FM</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="42688" xmltv_id="BBC Arabic Radio">BBC Arabic Radio</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="45440" xmltv_id="Oui FM">Oui FM</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="45504" xmltv_id="Radio Notre Dame">Radio Notre Dame</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="45568" xmltv_id="Beur FM">Beur FM</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="45632" xmltv_id="Sud Radio">Sud Radio</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="1790970240" xmltv_id="Nostalgie (FR)">Nostalgie (FR)</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="37568" xmltv_id="La premiere">La premiere</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="44864" xmltv_id="VivaCite">VivaCite</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="43136" xmltv_id="Musiq 3">Musiq 3</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="38720" xmltv_id="Classic21">Classic21</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="38272" xmltv_id="Pure FM">Pure FM</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="38592" xmltv_id="Bel RTL">Bel RTL</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="37824" xmltv_id="Mint">Mint</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="38848" xmltv_id="Radio Contact">Radio Contact</channel>
+    <channel update="i" lang="es" site="tvvlaanderen.be" site_id="28352" xmltv_id="RNE Radio Nacional">RNE Radio Nacional</channel>
+    <channel update="i" lang="es" site="tvvlaanderen.be" site_id="28416" xmltv_id="RNE Radio Clasica">RNE Radio Clasica</channel>
+    <channel update="i" lang="es" site="tvvlaanderen.be" site_id="28480" xmltv_id="RNE Radio 3">RNE Radio 3</channel>
+    <channel update="i" lang="es" site="tvvlaanderen.be" site_id="28544" xmltv_id="RNE Radio 4">RNE Radio 4</channel>
+    <channel update="i" lang="es" site="tvvlaanderen.be" site_id="28608" xmltv_id="RNE Radio 5 Todo Noticias">RNE Radio 5 Todo Noticias</channel>
+    <channel update="i" lang="es" site="tvvlaanderen.be" site_id="28672" xmltv_id="RNE Radio Exterior">RNE Radio Exterior</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="28736" xmltv_id="FIP">FIP</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="28800" xmltv_id="RTL Radio Letzebuerg">RTL Radio Letzebuerg</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="28864" xmltv_id="Radio 100">Radio 100</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="28928" xmltv_id="Antenne Bayern">Antenne Bayern</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="28992" xmltv_id="NDR Blue">NDR Blue</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="29056" xmltv_id="Bayern1">Bayern1</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="29120" xmltv_id="Bayern2Radio">Bayern2Radio</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="29184" xmltv_id="Bayern3">Bayern3</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="29248" xmltv_id="Bayern4Klassik">Bayern4Klassik</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="29312" xmltv_id="B5Aktuell">B5Aktuell</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="29376" xmltv_id="BAYERN plus">BAYERN plus</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="29440" xmltv_id="On3 Radio">On3 Radio</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="897024" xmltv_id="DR Dokumente &amp; Debatten">DR Dokumente &amp; Debatten</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="29504" xmltv_id="hr1">hr1</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="29568" xmltv_id="hr2">hr2</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="29632" xmltv_id="hr3">hr3</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="29696" xmltv_id="hr4">hr4</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="29760" xmltv_id="You FM">You FM</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="29824" xmltv_id="hr-info">hr-info</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="48576" xmltv_id="MDR Jump">MDR Jump</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="48640" xmltv_id="MDR 1 Sachsen">MDR 1 Sachsen</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="48704" xmltv_id="MDR1 S-Anhalt">MDR1 S-Anhalt</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="48768" xmltv_id="MDR1 Thuringen">MDR1 Thuringen</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="48832" xmltv_id="MDR Figaro">MDR Figaro</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="48896" xmltv_id="MDR Info">MDR Info</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="48960" xmltv_id="NDR Kultur">NDR Kultur</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="49024" xmltv_id="NDR Info">NDR Info</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="49088" xmltv_id="N-Joy">N-Joy</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="49152" xmltv_id="NDR 90.3">NDR 90.3</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="49216" xmltv_id="NDR 1 Radio MV">NDR 1 Radio MV</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="49280" xmltv_id="NDR 1 Radio Niedersachsen">NDR 1 Radio Niedersachsen</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="49344" xmltv_id="NDR Info Spezial">NDR Info Spezial</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="49408" xmltv_id="NDR 1 Welle Nord">NDR 1 Welle Nord</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="49472" xmltv_id="Info Radio">Info Radio</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="49536" xmltv_id="kulturradio">kulturradio</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="49600" xmltv_id="Antenne Brandenburg">Antenne Brandenburg</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="49664" xmltv_id="Radio Berlin 88.8">Radio Berlin 88.8</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="49728" xmltv_id="SR3 (Saarlandwelle)">SR3 (Saarlandwelle)</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="49792" xmltv_id="SPUTNIK">SPUTNIK</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="49856" xmltv_id="SR1 (Europawelle)">SR1 (Europawelle)</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="49920" xmltv_id="SR2 (Kulturradio)">SR2 (Kulturradio)</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="896960" xmltv_id="NDR Plus">NDR Plus</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="49984" xmltv_id="SWR1 BW">SWR1 BW</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="50048" xmltv_id="SWR1 RP">SWR1 RP</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="50112" xmltv_id="SWR2 BW">SWR2 BW</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="50176" xmltv_id="SWR3">SWR3</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="50240" xmltv_id="SWR4 BW">SWR4 BW</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="50304" xmltv_id="SWR4 RP">SWR4 RP</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="50368" xmltv_id="DAS DING">DAS DING</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="50432" xmltv_id="SWR Aktuell">SWR Aktuell</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="50496" xmltv_id="Eins Live">Eins Live</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="50560" xmltv_id="WDR 2 Koln">WDR 2 Koln</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="1790974656" xmltv_id="WDR 3">WDR 3</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="50688" xmltv_id="WDR 4">WDR 4</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="50752" xmltv_id="WDR 5">WDR 5</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="50816" xmltv_id="WDR Cosmo">WDR Cosmo</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="50880" xmltv_id="Eins Live diggi">Eins Live diggi</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="50944" xmltv_id="Kiraka">Kiraka</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="51008" xmltv_id="ERF Radio">ERF Radio</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="51072" xmltv_id="Deutschlandfunk Kultur">Deutschlandfunk Kultur</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="1790975232" xmltv_id="Deutschlandfunk">Deutschlandfunk</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="51200" xmltv_id="Radio U1 Tirol">Radio U1 Tirol</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="51264" xmltv_id="OE1 DD">OE1 DD</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="51328" xmltv_id="OE1">OE1</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="51392" xmltv_id="OE2B">OE2B</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="51456" xmltv_id="OE2K">OE2K</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="51520" xmltv_id="OE2N">OE2N</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="51584" xmltv_id="OE2O">OE2O</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="51648" xmltv_id="OE2S">OE2S</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="51712" xmltv_id="OE2ST">OE2ST</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="51776" xmltv_id="OE2T">OE2T</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="51840" xmltv_id="OE2V">OE2V</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="51904" xmltv_id="OE2W">OE2W</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="51968" xmltv_id="OE3">OE3</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="52032" xmltv_id="FM4">FM4</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="52096" xmltv_id="Rockantenne">Rockantenne</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="52160" xmltv_id="Radio Maria">Radio Maria</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="52224" xmltv_id="Hit Radio FFH">Hit Radio FFH</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="887104" xmltv_id="Radio Lebensquelle">Radio Lebensquelle</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="52352" xmltv_id="Harmony FM">Harmony FM</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="52416" xmltv_id="Sunshine Live">Sunshine Live</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="52480" xmltv_id="Inselradio">Inselradio</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="52544" xmltv_id="Planet Radio">Planet Radio</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="52608" xmltv_id="Klassik Radio">Klassik Radio</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="52672" xmltv_id="Nordwestradio">Nordwestradio</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="52736" xmltv_id="Radio neue Hoffnung">Radio neue Hoffnung</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="52800" xmltv_id="Radio Horeb">Radio Horeb</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="52864" xmltv_id="Radio Paloma">Radio Paloma</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="52928" xmltv_id="Fritz">Fritz</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="52992" xmltv_id="Deutschlandfunk Nova">Deutschlandfunk Nova</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="53056" xmltv_id="Radio Freundes-Dienst">Radio Freundes-Dienst</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="53120" xmltv_id="B5 Plus">B5 Plus</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="53184" xmltv_id="Bremen Eins">Bremen Eins</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="53248" xmltv_id="Bremen Vier">Bremen Vier</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="53312" xmltv_id="Domradio">Domradio</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="53376" xmltv_id="FFN Digital">FFN Digital</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="8256" xmltv_id="BBC Radio 1 (28)">BBC Radio 1 (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="53504" xmltv_id="BBC 1 Xtra (28)">BBC 1 Xtra (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="9472" xmltv_id="BBC Radio 2 (28)">BBC Radio 2 (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="9536" xmltv_id="BBC Radio 3 (28)">BBC Radio 3 (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="10176" xmltv_id="BBC Radio 4 (28)">BBC Radio 4 (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="53760" xmltv_id="BBC Radio Five Live (28)">BBC Radio Five Live (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="53824" xmltv_id="BBC Radio Five Live Sport (28)">BBC Radio Five Live Sport (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="53888" xmltv_id="BBC Radio 6 Music (28)">BBC Radio 6 Music (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="53952" xmltv_id="BBC Radio 4 Extra (28)">BBC Radio 4 Extra (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="54016" xmltv_id="BBC London (28)">BBC London (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="54080" xmltv_id="Capital FM (28)">Capital FM (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="54144" xmltv_id="Absolute Classic Rock  (28)">Absolute Classic Rock  (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="54208" xmltv_id="Classic FM (28)">Classic FM (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="54272" xmltv_id="Gold (28)">Gold (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="54336" xmltv_id="Absolute Radio (28)">Absolute Radio (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="54400" xmltv_id="Jazz FM (28)">Jazz FM (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="54464" xmltv_id="talkSPORT (28)">talkSPORT (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="54528" xmltv_id="Planet Rock (28)">Planet Rock (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="54592" xmltv_id="Capital Xtra (28)">Capital Xtra (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="54656" xmltv_id="Smooth (28)">Smooth (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="54720" xmltv_id="Radio X (28)">Radio X (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="891136" xmltv_id="WRN English (28)">WRN English (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="776256" xmltv_id="Absolute 70s (28)">Absolute 70s (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="54784" xmltv_id="Absolute 80s (28)">Absolute 80s (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="54848" xmltv_id="Absolute 90s (28)">Absolute 90s (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="776320" xmltv_id="BFBS Radio (28)">BFBS Radio (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="892032" xmltv_id="Euronews English HD (13)">Euronews English HD (13)</channel>
+    <channel update="i" lang="it" site="tvvlaanderen.be" site_id="1790971776" xmltv_id="Rai 1 (13)">Rai 1 (13)</channel>
+    <channel update="i" lang="it" site="tvvlaanderen.be" site_id="3904" xmltv_id="Rai 2 (13)">Rai 2 (13)</channel>
+    <channel update="i" lang="it" site="tvvlaanderen.be" site_id="419485440" xmltv_id="Rai 3 (13)">Rai 3 (13)</channel>
+    <channel update="i" lang="it" site="tvvlaanderen.be" site_id="886080" xmltv_id="Rai News 24">Rai News 24</channel>
+    <channel update="i" lang="it" site="tvvlaanderen.be" site_id="885056" xmltv_id="Marcopolo (13)">Marcopolo (13)</channel>
+    <channel update="i" lang="it" site="tvvlaanderen.be" site_id="55232" xmltv_id="Radio Italia TV (13)">Radio Italia TV (13)</channel>
+    <channel update="i" lang="it" site="tvvlaanderen.be" site_id="672512" xmltv_id="RTL 102.5 HD (13)">RTL 102.5 HD (13)</channel>
+    <channel update="i" lang="it" site="tvvlaanderen.be" site_id="895616" xmltv_id="Radio freccia TV HD (13)">Radio freccia TV HD (13)</channel>
+    <channel update="i" lang="it" site="tvvlaanderen.be" site_id="55424" xmltv_id="Rai Storia (13)">Rai Storia (13)</channel>
+    <channel update="i" lang="it" site="tvvlaanderen.be" site_id="55488" xmltv_id="Rai Scuola (13)">Rai Scuola (13)</channel>
+    <channel update="i" lang="it" site="tvvlaanderen.be" site_id="892096" xmltv_id="Pescare &amp; Cacciare TV (13)">Pescare &amp; Cacciare TV (13)</channel>
+    <channel update="i" lang="it" site="tvvlaanderen.be" site_id="672832" xmltv_id="TgCom24 (13)">TgCom24 (13)</channel>
+    <channel update="i" lang="it" site="tvvlaanderen.be" site_id="900160" xmltv_id="Alice (13)">Alice (13)</channel>
+    <channel update="i" lang="it" site="tvvlaanderen.be" site_id="55744" xmltv_id="Rai Sport (13)">Rai Sport (13)</channel>
+    <channel update="i" lang="it" site="tvvlaanderen.be" site_id="883264" xmltv_id="TRC (13)">TRC (13)</channel>
+    <channel update="i" lang="it" site="tvvlaanderen.be" site_id="883648" xmltv_id="TRM (13)">TRM (13)</channel>
+    <channel update="i" lang="it" site="tvvlaanderen.be" site_id="55104" xmltv_id="Rai News 24 (13)">Rai News 24 (13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="55808" xmltv_id="Supertennis HD (13)">Supertennis HD (13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="55872" xmltv_id="SRF Info HD (13)">SRF Info HD (13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="883712" xmltv_id="Eska TV (13)">Eska TV (13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="883840" xmltv_id="Polo TV (13)">Polo TV (13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="55936" xmltv_id="RTR Planeta (13)">RTR Planeta (13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="673216" xmltv_id="Fishing TV (13)">Fishing TV (13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="885120" xmltv_id="Muzik TV (13)">Muzik TV (13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="56128" xmltv_id="Discovery Real Time (13)">Discovery Real Time (13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="56192" xmltv_id="RT Doc HD (13)">RT Doc HD (13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="885184" xmltv_id="ORT International (13)">ORT International (13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="673472" xmltv_id="RTP International (13)">RTP International (13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="709632" xmltv_id="4 Fun TV (13)">4 Fun TV (13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="56384" xmltv_id="RadioNorba TV (13)">RadioNorba TV (13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="673664" xmltv_id="TV Romania International (13)">TV Romania International (13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="706752" xmltv_id="4 Fun Dance">4 Fun Dance</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="709504" xmltv_id="4FUN Hits (13)">4FUN Hits (13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="673728" xmltv_id="Tele 5 polska (13)">Tele 5 polska (13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="897536" xmltv_id="CNBC (13)">CNBC (13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="896640" xmltv_id="Fashion (13)">Fashion (13)</channel>
+    <channel update="i" lang="it" site="tvvlaanderen.be" site_id="900608" xmltv_id="Euronews (Italiano)">Euronews (Italiano)</channel>
+    <channel update="i" lang="it" site="tvvlaanderen.be" site_id="895872" xmltv_id="Stars TV (13)">Stars TV (13)</channel>
+    <channel update="i" lang="it" site="tvvlaanderen.be" site_id="900224" xmltv_id="UnireSat HD">UnireSat HD</channel>
+    <channel update="i" lang="it" site="tvvlaanderen.be" site_id="895680" xmltv_id="Rai Gulp (13)">Rai Gulp (13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="45888" xmltv_id="TVS-TV Silesia (13)">TVS-TV Silesia (13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="45952" xmltv_id="Class Horse TV(13)">Class Horse TV(13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="46016" xmltv_id="TV Moda(13)">TV Moda(13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="46080" xmltv_id="BBC Arabic (13)">BBC Arabic (13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="886144" xmltv_id="ERT World (13)">ERT World (13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="46144" xmltv_id="KBS World HD (13)">KBS World HD (13)</channel>
+    <channel update="i" lang="de" site="tvvlaanderen.be" site_id="1791014016" xmltv_id="Arte HD (13)">Arte HD (13)</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="46272" xmltv_id="Al Aoula Inter 1 (13)">Al Aoula Inter 1 (13)</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="46336" xmltv_id="2M Monde (13)">2M Monde (13)</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="46400" xmltv_id="Arriadia 3 (13)">Arriadia 3 (13)</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="46464" xmltv_id="Arrabiaa 4 (13)">Arrabiaa 4 (13)</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="46528" xmltv_id="Al Maghribiyah 5 (13)">Al Maghribiyah 5 (13)</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="46592" xmltv_id="Al Masriyah (13)">Al Masriyah (13)</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="46656" xmltv_id="VOX Music TV (13)">VOX Music TV (13)</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="46720" xmltv_id="Medi 1 Sat (13)">Medi 1 Sat (13)</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="46848" xmltv_id="Al Jaz. Mubasher (13)">Al Jaz. Mubasher (13)</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="709440" xmltv_id="TVP Info HD (13)">TVP Info HD (13)</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="46912" xmltv_id="Al Jaz. Documentary (13)">Al Jaz. Documentary (13)</channel>
+    <channel update="i" lang="fr" site="tvvlaanderen.be" site_id="899072" xmltv_id="i24 News Francais HD">i24 News Francais HD</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="895808" xmltv_id="Wine TV (13)">Wine TV (13)</channel>
+    <channel update="i" lang="it" site="tvvlaanderen.be" site_id="894400" xmltv_id="Fight Network Italia (13)">Fight Network Italia (13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="675008" xmltv_id="Abu Dhabi TV (13)">Abu Dhabi TV (13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="47040" xmltv_id="Abu Dhabi Sports (13)">Abu Dhabi Sports (13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="47104" xmltv_id="Dubai TV (13)">Dubai TV (13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="47168" xmltv_id="Dubai Sports 3 (13)">Dubai Sports 3 (13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="47232" xmltv_id="Sama Dubai (13)">Sama Dubai (13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="47296" xmltv_id="Sharqiya (13)">Sharqiya (13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="717824" xmltv_id="RADIOUNO (13)">RADIOUNO (13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="717888" xmltv_id="RADIODUE (13)">RADIODUE (13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="717952" xmltv_id="RADIOTRE (13)">RADIOTRE (13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="712192" xmltv_id="BBC Persian (13)">BBC Persian (13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="47360" xmltv_id="Al Arabiya (13)">Al Arabiya (13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="47424" xmltv_id="Tunis 7 (13)">Tunis 7 (13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="47488" xmltv_id="Canal Algerie (13)">Canal Algerie (13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="47552" xmltv_id="CCTV 4 (13)">CCTV 4 (13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="892736" xmltv_id="Power TV (13)">Power TV (13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="47680" xmltv_id="VTV 4 (13)">VTV 4 (13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="47744" xmltv_id="Arirang TV (13)">Arirang TV (13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="47808" xmltv_id="Thai TV Global Network  (13)">Thai TV Global Network  (13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="899008" xmltv_id="i24 News English HD (13)">i24 News English HD (13)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="888512" xmltv_id="Manoto HD (13)">Manoto HD (13)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="1791708096" xmltv_id="BBC One SD (28)">BBC One SD (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="1791708160" xmltv_id="BBC Two HD (28)">BBC Two HD (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="1791015936" xmltv_id="BBC Four HD (Evenings) (28)">BBC Four HD (Evenings) (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="48192" xmltv_id="ITV HD (28)">ITV HD (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="48256" xmltv_id="ITV +1 (28)">ITV +1 (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="48320" xmltv_id="ITV 2 (28)">ITV 2 (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="48384" xmltv_id="ITV 2 +1 (28)">ITV 2 +1 (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="48448" xmltv_id="ITV 3 (28)">ITV 3 (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="48512" xmltv_id="ITV 3 +1 (28)">ITV 3 +1 (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="38912" xmltv_id="ITV 4 (28)">ITV 4 (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="38976" xmltv_id="ITV4 +1 (28)">ITV4 +1 (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="38784" xmltv_id="ITV Be (28)">ITV Be (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="38656" xmltv_id="ITV Be +1 (28)">ITV Be +1 (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="38400" xmltv_id="Channel 4 HD (28)">Channel 4 HD (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="38464" xmltv_id="Channel 4 +1 (28)">Channel 4 +1 (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="37312" xmltv_id="More 4 (28)">More 4 (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="37376" xmltv_id="More 4 +1 (28)">More 4 +1 (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="36928" xmltv_id="E4 UK (28)">E4 UK (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="35264" xmltv_id="E4 +1 (28)">E4 +1 (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="36864" xmltv_id="4Seven (28)">4Seven (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="36224" xmltv_id="Film Four (28)">Film Four (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="36288" xmltv_id="Film Four +1 (28)">Film Four +1 (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="891584" xmltv_id="Rishtey Cineplex (28)">Rishtey Cineplex (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="37888" xmltv_id="Channel 5 HD (28)">Channel 5 HD (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="37952" xmltv_id="Channel 5+1 (28)">Channel 5+1 (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="38080" xmltv_id="My5 (28)">My5 (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="38144" xmltv_id="5 USA (28)">5 USA (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="37696" xmltv_id="5 USA+1 (28)">5 USA+1 (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="907008" xmltv_id="Dave (28)">Dave (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="37760" xmltv_id="5* (28)">5* (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="37184" xmltv_id="5* +1 (28)">5* +1 (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="906944" xmltv_id="Home (28)">Home (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="882752" xmltv_id="Really (28)">Really (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="882816" xmltv_id="Yesterday (28)">Yesterday (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="789888" xmltv_id="PBS America (28)">PBS America (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="896896" xmltv_id="Bloomberg HD (28)">Bloomberg HD (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="897600" xmltv_id="CNBC UK (28)">CNBC UK (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="907200" xmltv_id="Food Network (28)">Food Network (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="35904" xmltv_id="Food Network+1 (28)">Food Network+1 (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="907264" xmltv_id="Travel Channel (28)">Travel Channel (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="36032" xmltv_id="Travel Channel +1 (28)">Travel Channel +1 (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="901312" xmltv_id="Euronews English (28)">Euronews English (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="38016" xmltv_id="Spike (28)">Spike (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="889216" xmltv_id="Bike UK (28)">Bike UK (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="35328" xmltv_id="Pick TV (28)">Pick TV (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="35392" xmltv_id="Pick TV +1 (28)">Pick TV +1 (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="35456" xmltv_id="Challenge (28)">Challenge (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="35520" xmltv_id="Challenge+1 (28)">Challenge+1 (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="906880" xmltv_id="Forces TV (28)">Forces TV (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="1790987456" xmltv_id="CBS Reality (28)">CBS Reality (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="35648" xmltv_id="CBS Reality +1 (28)">CBS Reality +1 (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="35712" xmltv_id="CBS Action (28)">CBS Action (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="35776" xmltv_id="CBS Drama (28)">CBS Drama (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="882688" xmltv_id="Drama (28)">Drama (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="34176" xmltv_id="True Drama (28)">True Drama (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="885696" xmltv_id="True Crime (28)">True Crime (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="885952" xmltv_id="True Crime +1 (28)">True Crime +1 (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="36736" xmltv_id="True Entertainment (28)">True Entertainment (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="906048" xmltv_id="Quest (28)">Quest (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="906176" xmltv_id="Quest Red (28)">Quest Red (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="885824" xmltv_id="Talking Pictures (28)">Talking Pictures (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="36096" xmltv_id="Horror Channel (28)">Horror Channel (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="36160" xmltv_id="Horror Channel+1 (28)">Horror Channel+1 (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="36352" xmltv_id="True Movies (28)">True Movies (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="36416" xmltv_id="True Movies 2 (28)">True Movies 2 (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="36480" xmltv_id="Movies4Men (28)">Movies4Men (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="36544" xmltv_id="Movies4Men +1 (28)">Movies4Men +1 (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="891264" xmltv_id="ROK TV (28)">ROK TV (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="34240" xmltv_id="CBBC HD (28)">CBBC HD (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="34304" xmltv_id="CBeebies HD (28)">CBeebies HD (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="34368" xmltv_id="CITV U.K. (28)">CITV U.K. (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="34432" xmltv_id="Kix (28)">Kix (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="34496" xmltv_id="Pop (28)">Pop (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="33536" xmltv_id="Kix+1 (28)">Kix+1 (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="33600" xmltv_id="Pop +1 (28)">Pop +1 (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="33664" xmltv_id="Tiny Pop (28)">Tiny Pop (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="33728" xmltv_id="Tiny Pop +1 (28)">Tiny Pop +1 (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="33856" xmltv_id="S4C Digidol (28)">S4C Digidol (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="784960" xmltv_id="Your TV International  (28)">Your TV International  (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="33920" xmltv_id="Viva U.K. (28)">Viva U.K. (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="741504" xmltv_id="The Box UK (28)">The Box UK (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="741824" xmltv_id="VOX Africa (28)">VOX Africa (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="887360" xmltv_id="S4C HD (28)">S4C HD (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="1790970752" xmltv_id="Horse &amp; Country (28)">Horse &amp; Country (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="33088" xmltv_id="BBC Parliament (28)">BBC Parliament (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="32640" xmltv_id="BBC News HD (28)">BBC News HD (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="32704" xmltv_id="BBC Alba (28)">BBC Alba (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="891072" xmltv_id="Blaze (28)">Blaze (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="32768" xmltv_id="Vintage TV (28)">Vintage TV (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="32832" xmltv_id="Scuzz (28)">Scuzz (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="32896" xmltv_id="The Vault (28)">The Vault (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="741696" xmltv_id="Kiss TV (28)">Kiss TV (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="32128" xmltv_id="NOW Music (28)">NOW Music (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="32192" xmltv_id="Clubland TV (28)">Clubland TV (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="883136" xmltv_id="Keep it Country (28)">Keep it Country (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="897152" xmltv_id="4Music (28)">4Music (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="901824" xmltv_id="Times Now - India (28)">Times Now - India (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="32256" xmltv_id="BET U.K. (28)">BET U.K. (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="32384" xmltv_id="Channel AKA (28)">Channel AKA (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="31936" xmltv_id="Chart Show TV (28)">Chart Show TV (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="32000" xmltv_id="Box Upfront (28)">Box Upfront (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="681344" xmltv_id="Chilled TV (28)">Chilled TV (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="902016" xmltv_id="Flava (28)">Flava (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="31680" xmltv_id="Magic (28)">Magic (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="31808" xmltv_id="Brit Asia TV (28)">Brit Asia TV (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="895552" xmltv_id="Bangla TV (28)">Bangla TV (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="897216" xmltv_id="Colors Viacom 18 (28)">Colors Viacom 18 (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="784896" xmltv_id="TV Record HD UK  (28)">TV Record HD UK  (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="30528" xmltv_id="BEN (28)">BEN (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="741632" xmltv_id="Box Hits! (28)">Box Hits! (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="30656" xmltv_id="Front Runner (28)">Front Runner (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="30720" xmltv_id="ABN TV (28)">ABN TV (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="30784" xmltv_id="PTV Prime (28)">PTV Prime (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="900288" xmltv_id="Arirang HD (28)">Arirang HD (28)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="30912" xmltv_id="Geo Tez (28)">Geo Tez (28)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="30976" xmltv_id="Aastha TV International (28)">Aastha TV International (28)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="741568" xmltv_id="Kerrang (28)">Kerrang (28)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="907136" xmltv_id="Geo TV (28)">Geo TV (28)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="31104" xmltv_id="Geo News (28)">Geo News (28)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="31296" xmltv_id="Rishtey TV(28)">Rishtey TV(28)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="31360" xmltv_id="Takbeer TV (28)">Takbeer TV (28)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="31424" xmltv_id="Channel S (28)">Channel S (28)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="30464" xmltv_id="Hidayat TV (28)">Hidayat TV (28)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="30400" xmltv_id="Abu Dhabi TV (28)">Abu Dhabi TV (28)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="897728" xmltv_id="TVC News (28)">TVC News (28)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="31872" xmltv_id="Gay Network (28)">Gay Network (28)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="897792" xmltv_id="News 18 India (28)">News 18 India (28)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="1791854080" xmltv_id="CNN International HD (28)">CNN International HD (28)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="789952" xmltv_id="CGTN (28)">CGTN (28)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="30272" xmltv_id="PCNE (28)">PCNE (28)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="30208" xmltv_id="CNC World (28)">CNC World (28)</channel>
+    <channel update="i" lang="en" site="tvvlaanderen.be" site_id="30144" xmltv_id="NHK World HD (28)">NHK World HD (28)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="790016" xmltv_id="RT HD (28)">RT HD (28)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="896576" xmltv_id="TRT World (28)">TRT World (28)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="897344" xmltv_id="Showcase (28)">Showcase (28)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="901760" xmltv_id="Front Runner 2 (28)">Front Runner 2 (28)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="29952" xmltv_id="QVC (28)">QVC (28)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="887040" xmltv_id="Best Direct (28)">Best Direct (28)</channel>
+    <channel update="i" lang="" site="tvvlaanderen.be" site_id="907072" xmltv_id="JML Direct (28)">JML Direct (28)</channel>
+    <channel update="i" lang="nl" site="tvvlaanderen.be" site_id="29888" xmltv_id="BBC Red Button (28)">BBC Red Button (28)</channel>
+  </channels>
+</site>

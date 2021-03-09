@@ -1,0 +1,434 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<site generator-info-name="WebGrab+Plus/w MDB &amp; REX Postprocess -- version V2.1.10.0 -- Jan van Straaten" site="freeview.com.au">
+  <channels>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0222" xmltv_id="CatchAll - ABC COMEDY/ABC KIDS NSW">CatchAll - ABC COMEDY/ABC KIDS NSW</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0224" xmltv_id="CatchAll - ABC ME">CatchAll - ABC ME</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0480" xmltv_id="CatchAll - 9HD">CatchAll - 9HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0305" xmltv_id="CatchAll - NITV">CatchAll - NITV</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0303" xmltv_id="CatchAll - SBS VICELAND HD">CatchAll - SBS VICELAND HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0220" xmltv_id="CatchAll - ABC NEWS">CatchAll - ABC NEWS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0406" xmltv_id="CatchAll - 9Go!">CatchAll - 9Go!</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0502:0528" xmltv_id="CatchAll - RACING.COM">CatchAll - RACING.COM</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0304" xmltv_id="CatchAll - SBS Food">CatchAll - SBS Food</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0301" xmltv_id="CatchAll - SBS">CatchAll - SBS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0307" xmltv_id="CatchAll - SBS World Movies Sydney">CatchAll - SBS World Movies Sydney</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0221" xmltv_id="NSW - Sydney - ABC">NSW - Sydney - ABC</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0222" xmltv_id="NSW - Sydney - ABC COMEDY/ABC KIDS NSW">NSW - Sydney - ABC COMEDY/ABC KIDS NSW</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0224" xmltv_id="NSW - Sydney - ABC ME">NSW - Sydney - ABC ME</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0480" xmltv_id="NSW - Sydney - 9HD">NSW - Sydney - 9HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0420:0424" xmltv_id="NSW - Sydney - 9Life">NSW - Sydney - 9Life</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0502:0522" xmltv_id="NSW - Sydney - 7TWO">NSW - Sydney - 7TWO</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0502:0525" xmltv_id="NSW - Sydney - 7flix">NSW - Sydney - 7flix</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0502:0527" xmltv_id="NSW - Sydney - 7food network Sydney">NSW - Sydney - 7food network Sydney</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1014:0602:0621" xmltv_id="NSW - Sydney - 10 Bold">NSW - Sydney - 10 Bold</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1014:0602:0625" xmltv_id="NSW - Sydney - TEN">NSW - Sydney - TEN</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1014:0602:0628" xmltv_id="NSW - Sydney - 10 Peach">NSW - Sydney - 10 Peach</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0305" xmltv_id="NSW - Sydney - NITV">NSW - Sydney - NITV</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0303" xmltv_id="NSW - Sydney - SBS VICELAND HD">NSW - Sydney - SBS VICELAND HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0220" xmltv_id="NSW - Sydney - ABC NEWS">NSW - Sydney - ABC NEWS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0406" xmltv_id="NSW - Sydney - 9Go!">NSW - Sydney - 9Go!</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0420:0421" xmltv_id="NSW - Sydney - Channel 9">NSW - Sydney - Channel 9</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0420:0427" xmltv_id="NSW - Sydney - 9Gem">NSW - Sydney - 9Gem</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0420:0428" xmltv_id="NSW - Sydney - 9Go!">NSW - Sydney - 9Go!</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0502:0520" xmltv_id="NSW - Sydney - Seven">NSW - Sydney - Seven</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0502:0523" xmltv_id="NSW - Sydney - 7mate">NSW - Sydney - 7mate</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0502:0528" xmltv_id="NSW - Sydney - RACING.COM">NSW - Sydney - RACING.COM</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0304" xmltv_id="NSW - Sydney - SBS Food">NSW - Sydney - SBS Food</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0301" xmltv_id="NSW - Sydney - SBS">NSW - Sydney - SBS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0307" xmltv_id="NSW - Sydney - SBS World Movies Sydney">NSW - Sydney - SBS World Movies Sydney</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0222" xmltv_id="NSW - Newcastle - ABC COMEDY/ABC KIDS NSW">NSW - Newcastle - ABC COMEDY/ABC KIDS NSW</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0224" xmltv_id="NSW - Newcastle - ABC ME">NSW - Newcastle - ABC ME</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0480" xmltv_id="NSW - Newcastle - 9HD">NSW - Newcastle - 9HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0305" xmltv_id="NSW - Newcastle - NITV">NSW - Newcastle - NITV</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0303" xmltv_id="NSW - Newcastle - SBS VICELAND HD">NSW - Newcastle - SBS VICELAND HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0220" xmltv_id="NSW - Newcastle - ABC NEWS">NSW - Newcastle - ABC NEWS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0406" xmltv_id="NSW - Newcastle - 9Go!">NSW - Newcastle - 9Go!</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0502:0528" xmltv_id="NSW - Newcastle - RACING.COM">NSW - Newcastle - RACING.COM</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0304" xmltv_id="NSW - Newcastle - SBS Food">NSW - Newcastle - SBS Food</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0301" xmltv_id="NSW - Newcastle - SBS">NSW - Newcastle - SBS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0307" xmltv_id="NSW - Newcastle - SBS World Movies Sydney">NSW - Newcastle - SBS World Movies Sydney</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0222" xmltv_id="NSW - Tare - ABC COMEDY/ABC KIDS NSW">NSW - Tare - ABC COMEDY/ABC KIDS NSW</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0224" xmltv_id="NSW - Tare - ABC ME">NSW - Tare - ABC ME</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0480" xmltv_id="NSW - Tare - 9HD">NSW - Tare - 9HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0305" xmltv_id="NSW - Tare - NITV">NSW - Tare - NITV</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0303" xmltv_id="NSW - Tare - SBS VICELAND HD">NSW - Tare - SBS VICELAND HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0220" xmltv_id="NSW - Tare - ABC NEWS">NSW - Tare - ABC NEWS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0406" xmltv_id="NSW - Tare - 9Go!">NSW - Tare - 9Go!</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0502:0528" xmltv_id="NSW - Tare - RACING.COM">NSW - Tare - RACING.COM</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0304" xmltv_id="NSW - Tare - SBS Food">NSW - Tare - SBS Food</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0301" xmltv_id="NSW - Tare - SBS">NSW - Tare - SBS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0307" xmltv_id="NSW - Tare - SBS World Movies Sydney">NSW - Tare - SBS World Movies Sydney</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0222" xmltv_id="NSW - Tamworth - ABC COMEDY/ABC KIDS NSW">NSW - Tamworth - ABC COMEDY/ABC KIDS NSW</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0224" xmltv_id="NSW - Tamworth - ABC ME">NSW - Tamworth - ABC ME</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0480" xmltv_id="NSW - Tamworth - 9HD">NSW - Tamworth - 9HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0305" xmltv_id="NSW - Tamworth - NITV">NSW - Tamworth - NITV</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0303" xmltv_id="NSW - Tamworth - SBS VICELAND HD">NSW - Tamworth - SBS VICELAND HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0220" xmltv_id="NSW - Tamworth - ABC NEWS">NSW - Tamworth - ABC NEWS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0406" xmltv_id="NSW - Tamworth - 9Go!">NSW - Tamworth - 9Go!</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0502:0528" xmltv_id="NSW - Tamworth - RACING.COM">NSW - Tamworth - RACING.COM</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0304" xmltv_id="NSW - Tamworth - SBS Food">NSW - Tamworth - SBS Food</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0301" xmltv_id="NSW - Tamworth - SBS">NSW - Tamworth - SBS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0307" xmltv_id="NSW - Tamworth - SBS World Movies Sydney">NSW - Tamworth - SBS World Movies Sydney</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0222" xmltv_id="NSW - Orange, Dubbo, Wagga - ABC COMEDY/ABC KIDS NSW">NSW - Orange, Dubbo, Wagga - ABC COMEDY/ABC KIDS NSW</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0224" xmltv_id="NSW - Orange, Dubbo, Wagga - ABC ME">NSW - Orange, Dubbo, Wagga - ABC ME</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0480" xmltv_id="NSW - Orange, Dubbo, Wagga - 9HD">NSW - Orange, Dubbo, Wagga - 9HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0305" xmltv_id="NSW - Orange, Dubbo, Wagga - NITV">NSW - Orange, Dubbo, Wagga - NITV</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0303" xmltv_id="NSW - Orange, Dubbo, Wagga - SBS VICELAND HD">NSW - Orange, Dubbo, Wagga - SBS VICELAND HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0220" xmltv_id="NSW - Orange, Dubbo, Wagga - ABC NEWS">NSW - Orange, Dubbo, Wagga - ABC NEWS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0406" xmltv_id="NSW - Orange, Dubbo, Wagga - 9Go!">NSW - Orange, Dubbo, Wagga - 9Go!</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0502:0528" xmltv_id="NSW - Orange, Dubbo, Wagga - RACING.COM">NSW - Orange, Dubbo, Wagga - RACING.COM</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0304" xmltv_id="NSW - Orange, Dubbo, Wagga - SBS Food">NSW - Orange, Dubbo, Wagga - SBS Food</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0301" xmltv_id="NSW - Orange, Dubbo, Wagga - SBS">NSW - Orange, Dubbo, Wagga - SBS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0307" xmltv_id="NSW - Orange, Dubbo, Wagga - SBS World Movies Sydney">NSW - Orange, Dubbo, Wagga - SBS World Movies Sydney</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0222" xmltv_id="NSW - Northern Rivers - ABC COMEDY/ABC KIDS NSW">NSW - Northern Rivers - ABC COMEDY/ABC KIDS NSW</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0224" xmltv_id="NSW - Northern Rivers - ABC ME">NSW - Northern Rivers - ABC ME</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0480" xmltv_id="NSW - Northern Rivers - 9HD">NSW - Northern Rivers - 9HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0305" xmltv_id="NSW - Northern Rivers - NITV">NSW - Northern Rivers - NITV</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0303" xmltv_id="NSW - Northern Rivers - SBS VICELAND HD">NSW - Northern Rivers - SBS VICELAND HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0220" xmltv_id="NSW - Northern Rivers - ABC NEWS">NSW - Northern Rivers - ABC NEWS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0406" xmltv_id="NSW - Northern Rivers - 9Go!">NSW - Northern Rivers - 9Go!</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0502:0528" xmltv_id="NSW - Northern Rivers - RACING.COM">NSW - Northern Rivers - RACING.COM</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0304" xmltv_id="NSW - Northern Rivers - SBS Food">NSW - Northern Rivers - SBS Food</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0301" xmltv_id="NSW - Northern Rivers - SBS">NSW - Northern Rivers - SBS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0307" xmltv_id="NSW - Northern Rivers - SBS World Movies Sydney">NSW - Northern Rivers - SBS World Movies Sydney</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0222" xmltv_id="NSW - Wollongong - ABC COMEDY/ABC KIDS NSW">NSW - Wollongong - ABC COMEDY/ABC KIDS NSW</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0224" xmltv_id="NSW - Wollongong - ABC ME">NSW - Wollongong - ABC ME</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0480" xmltv_id="NSW - Wollongong - 9HD">NSW - Wollongong - 9HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0305" xmltv_id="NSW - Wollongong - NITV">NSW - Wollongong - NITV</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0303" xmltv_id="NSW - Wollongong - SBS VICELAND HD">NSW - Wollongong - SBS VICELAND HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0220" xmltv_id="NSW - Wollongong - ABC NEWS">NSW - Wollongong - ABC NEWS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0406" xmltv_id="NSW - Wollongong - 9Go!">NSW - Wollongong - 9Go!</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0502:0528" xmltv_id="NSW - Wollongong - RACING.COM">NSW - Wollongong - RACING.COM</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0304" xmltv_id="NSW - Wollongong - SBS Food">NSW - Wollongong - SBS Food</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0301" xmltv_id="NSW - Wollongong - SBS">NSW - Wollongong - SBS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0307" xmltv_id="NSW - Wollongong - SBS World Movies Sydney">NSW - Wollongong - SBS World Movies Sydney</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0211:0211" xmltv_id="NSW - Canberra - ABC">NSW - Canberra - ABC</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0222" xmltv_id="NSW - Canberra - ABC COMEDY/ABC KIDS NSW">NSW - Canberra - ABC COMEDY/ABC KIDS NSW</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0224" xmltv_id="NSW - Canberra - ABC ME">NSW - Canberra - ABC ME</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0480" xmltv_id="NSW - Canberra - 9HD">NSW - Canberra - 9HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0305" xmltv_id="NSW - Canberra - NITV">NSW - Canberra - NITV</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0303" xmltv_id="NSW - Canberra - SBS VICELAND HD">NSW - Canberra - SBS VICELAND HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0220" xmltv_id="NSW - Canberra - ABC NEWS">NSW - Canberra - ABC NEWS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0406" xmltv_id="NSW - Canberra - 9Go!">NSW - Canberra - 9Go!</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0502:0528" xmltv_id="NSW - Canberra - RACING.COM">NSW - Canberra - RACING.COM</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0304" xmltv_id="NSW - Canberra - SBS Food">NSW - Canberra - SBS Food</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0301" xmltv_id="NSW - Canberra - SBS">NSW - Canberra - SBS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0307" xmltv_id="NSW - Canberra - SBS World Movies Sydney">NSW - Canberra - SBS World Movies Sydney</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0222" xmltv_id="NT - Regional - ABC COMEDY/ABC KIDS NSW">NT - Regional - ABC COMEDY/ABC KIDS NSW</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0224" xmltv_id="NT - Regional - ABC ME">NT - Regional - ABC ME</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0480" xmltv_id="NT - Regional - 9HD">NT - Regional - 9HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0305" xmltv_id="NT - Regional - NITV">NT - Regional - NITV</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0303" xmltv_id="NT - Regional - SBS VICELAND HD">NT - Regional - SBS VICELAND HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0220" xmltv_id="NT - Regional - ABC NEWS">NT - Regional - ABC NEWS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0406" xmltv_id="NT - Regional - 9Go!">NT - Regional - 9Go!</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0502:0528" xmltv_id="NT - Regional - RACING.COM">NT - Regional - RACING.COM</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0304" xmltv_id="NT - Regional - SBS Food">NT - Regional - SBS Food</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0301" xmltv_id="NT - Regional - SBS">NT - Regional - SBS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0307" xmltv_id="NT - Regional - SBS World Movies Sydney">NT - Regional - SBS World Movies Sydney</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0222" xmltv_id="VIC - Albury - ABC COMEDY/ABC KIDS NSW">VIC - Albury - ABC COMEDY/ABC KIDS NSW</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0224" xmltv_id="VIC - Albury - ABC ME">VIC - Albury - ABC ME</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0480" xmltv_id="VIC - Albury - 9HD">VIC - Albury - 9HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0305" xmltv_id="VIC - Albury - NITV">VIC - Albury - NITV</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0303" xmltv_id="VIC - Albury - SBS VICELAND HD">VIC - Albury - SBS VICELAND HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0220" xmltv_id="VIC - Albury - ABC NEWS">VIC - Albury - ABC NEWS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0406" xmltv_id="VIC - Albury - 9Go!">VIC - Albury - 9Go!</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0502:0528" xmltv_id="VIC - Albury - RACING.COM">VIC - Albury - RACING.COM</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0304" xmltv_id="VIC - Albury - SBS Food">VIC - Albury - SBS Food</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0301" xmltv_id="VIC - Albury - SBS">VIC - Albury - SBS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0307" xmltv_id="VIC - Albury - SBS World Movies Sydney">VIC - Albury - SBS World Movies Sydney</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0222" xmltv_id="VIC - Shepparton - ABC COMEDY/ABC KIDS NSW">VIC - Shepparton - ABC COMEDY/ABC KIDS NSW</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0224" xmltv_id="VIC - Shepparton - ABC ME">VIC - Shepparton - ABC ME</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0480" xmltv_id="VIC - Shepparton - 9HD">VIC - Shepparton - 9HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0305" xmltv_id="VIC - Shepparton - NITV">VIC - Shepparton - NITV</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0303" xmltv_id="VIC - Shepparton - SBS VICELAND HD">VIC - Shepparton - SBS VICELAND HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0220" xmltv_id="VIC - Shepparton - ABC NEWS">VIC - Shepparton - ABC NEWS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0406" xmltv_id="VIC - Shepparton - 9Go!">VIC - Shepparton - 9Go!</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0502:0528" xmltv_id="VIC - Shepparton - RACING.COM">VIC - Shepparton - RACING.COM</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0304" xmltv_id="VIC - Shepparton - SBS Food">VIC - Shepparton - SBS Food</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0301" xmltv_id="VIC - Shepparton - SBS">VIC - Shepparton - SBS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0307" xmltv_id="VIC - Shepparton - SBS World Movies Sydney">VIC - Shepparton - SBS World Movies Sydney</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0222" xmltv_id="VIC - Bendigo - ABC COMEDY/ABC KIDS NSW">VIC - Bendigo - ABC COMEDY/ABC KIDS NSW</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0224" xmltv_id="VIC - Bendigo - ABC ME">VIC - Bendigo - ABC ME</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0480" xmltv_id="VIC - Bendigo - 9HD">VIC - Bendigo - 9HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0305" xmltv_id="VIC - Bendigo - NITV">VIC - Bendigo - NITV</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0303" xmltv_id="VIC - Bendigo - SBS VICELAND HD">VIC - Bendigo - SBS VICELAND HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0220" xmltv_id="VIC - Bendigo - ABC NEWS">VIC - Bendigo - ABC NEWS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0406" xmltv_id="VIC - Bendigo - 9Go!">VIC - Bendigo - 9Go!</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0502:0528" xmltv_id="VIC - Bendigo - RACING.COM">VIC - Bendigo - RACING.COM</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0304" xmltv_id="VIC - Bendigo - SBS Food">VIC - Bendigo - SBS Food</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0301" xmltv_id="VIC - Bendigo - SBS">VIC - Bendigo - SBS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0307" xmltv_id="VIC - Bendigo - SBS World Movies Sydney">VIC - Bendigo - SBS World Movies Sydney</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0222" xmltv_id="VIC - Melbourne - ABC COMEDY/ABC KIDS NSW">VIC - Melbourne - ABC COMEDY/ABC KIDS NSW</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0224" xmltv_id="VIC - Melbourne - ABC ME">VIC - Melbourne - ABC ME</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0231:0231" xmltv_id="VIC - Melbourne - ABC">VIC - Melbourne - ABC</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0480" xmltv_id="VIC - Melbourne - 9HD">VIC - Melbourne - 9HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0430:0433" xmltv_id="VIC - Melbourne - 9Life">VIC - Melbourne - 9Life</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0430:0436" xmltv_id="VIC - Melbourne - 9Gem">VIC - Melbourne - 9Gem</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0430:0437" xmltv_id="VIC - Melbourne - 9Go!">VIC - Melbourne - 9Go!</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0503:0530" xmltv_id="VIC - Melbourne - Seven">VIC - Melbourne - Seven</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0503:0537" xmltv_id="VIC - Melbourne - 7food network Melbourne">VIC - Melbourne - 7food network Melbourne</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1014:0603:0638" xmltv_id="VIC - Melbourne - 10 Peach">VIC - Melbourne - 10 Peach</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0305" xmltv_id="VIC - Melbourne - NITV">VIC - Melbourne - NITV</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0303" xmltv_id="VIC - Melbourne - SBS VICELAND HD">VIC - Melbourne - SBS VICELAND HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0220" xmltv_id="VIC - Melbourne - ABC NEWS">VIC - Melbourne - ABC NEWS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0406" xmltv_id="VIC - Melbourne - 9Go!">VIC - Melbourne - 9Go!</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0430:0430" xmltv_id="VIC - Melbourne - Channel 9">VIC - Melbourne - Channel 9</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0502:0528" xmltv_id="VIC - Melbourne - RACING.COM">VIC - Melbourne - RACING.COM</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0503:0532" xmltv_id="VIC - Melbourne - 7TWO">VIC - Melbourne - 7TWO</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0503:0533" xmltv_id="VIC - Melbourne - 7mate">VIC - Melbourne - 7mate</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0503:0535" xmltv_id="VIC - Melbourne - 7flix">VIC - Melbourne - 7flix</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1014:0603:0631" xmltv_id="VIC - Melbourne - 10 Bold">VIC - Melbourne - 10 Bold</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1014:0603:0635" xmltv_id="VIC - Melbourne - TEN">VIC - Melbourne - TEN</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0304" xmltv_id="VIC - Melbourne - SBS Food">VIC - Melbourne - SBS Food</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0301" xmltv_id="VIC - Melbourne - SBS">VIC - Melbourne - SBS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0307" xmltv_id="VIC - Melbourne - SBS World Movies Sydney">VIC - Melbourne - SBS World Movies Sydney</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0222" xmltv_id="VIC - Ballarat - ABC COMEDY/ABC KIDS NSW">VIC - Ballarat - ABC COMEDY/ABC KIDS NSW</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0224" xmltv_id="VIC - Ballarat - ABC ME">VIC - Ballarat - ABC ME</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0480" xmltv_id="VIC - Ballarat - 9HD">VIC - Ballarat - 9HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0305" xmltv_id="VIC - Ballarat - NITV">VIC - Ballarat - NITV</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0303" xmltv_id="VIC - Ballarat - SBS VICELAND HD">VIC - Ballarat - SBS VICELAND HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0220" xmltv_id="VIC - Ballarat - ABC NEWS">VIC - Ballarat - ABC NEWS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0406" xmltv_id="VIC - Ballarat - 9Go!">VIC - Ballarat - 9Go!</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0502:0528" xmltv_id="VIC - Ballarat - RACING.COM">VIC - Ballarat - RACING.COM</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0304" xmltv_id="VIC - Ballarat - SBS Food">VIC - Ballarat - SBS Food</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0301" xmltv_id="VIC - Ballarat - SBS">VIC - Ballarat - SBS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0307" xmltv_id="VIC - Ballarat - SBS World Movies Sydney">VIC - Ballarat - SBS World Movies Sydney</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0222" xmltv_id="VIC - Gippsland - ABC COMEDY/ABC KIDS NSW">VIC - Gippsland - ABC COMEDY/ABC KIDS NSW</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0224" xmltv_id="VIC - Gippsland - ABC ME">VIC - Gippsland - ABC ME</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0480" xmltv_id="VIC - Gippsland - 9HD">VIC - Gippsland - 9HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0305" xmltv_id="VIC - Gippsland - NITV">VIC - Gippsland - NITV</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0303" xmltv_id="VIC - Gippsland - SBS VICELAND HD">VIC - Gippsland - SBS VICELAND HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0220" xmltv_id="VIC - Gippsland - ABC NEWS">VIC - Gippsland - ABC NEWS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0406" xmltv_id="VIC - Gippsland - 9Go!">VIC - Gippsland - 9Go!</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0502:0528" xmltv_id="VIC - Gippsland - RACING.COM">VIC - Gippsland - RACING.COM</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0304" xmltv_id="VIC - Gippsland - SBS Food">VIC - Gippsland - SBS Food</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0301" xmltv_id="VIC - Gippsland - SBS">VIC - Gippsland - SBS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0307" xmltv_id="VIC - Gippsland - SBS World Movies Sydney">VIC - Gippsland - SBS World Movies Sydney</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:040B" xmltv_id="QLD - Brisbane - 9Go!">QLD - Brisbane - 9Go!</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0222" xmltv_id="QLD - Brisbane - ABC COMEDY/ABC KIDS NSW">QLD - Brisbane - ABC COMEDY/ABC KIDS NSW</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0224" xmltv_id="QLD - Brisbane - ABC ME">QLD - Brisbane - ABC ME</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0241:0241" xmltv_id="QLD - Brisbane - ABC">QLD - Brisbane - ABC</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0407" xmltv_id="QLD - Brisbane - 9Life">QLD - Brisbane - 9Life</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0480" xmltv_id="QLD - Brisbane - 9HD">QLD - Brisbane - 9HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0504:0542" xmltv_id="QLD - Brisbane - 7TWO">QLD - Brisbane - 7TWO</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0504:0545" xmltv_id="QLD - Brisbane - 7flix">QLD - Brisbane - 7flix</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1014:0604:0645" xmltv_id="QLD - Brisbane - TEN">QLD - Brisbane - TEN</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1014:0604:0648" xmltv_id="QLD - Brisbane - 10 Peach">QLD - Brisbane - 10 Peach</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0305" xmltv_id="QLD - Brisbane - NITV">QLD - Brisbane - NITV</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0303" xmltv_id="QLD - Brisbane - SBS VICELAND HD">QLD - Brisbane - SBS VICELAND HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:040A" xmltv_id="QLD - Brisbane - 9Gem">QLD - Brisbane - 9Gem</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0220" xmltv_id="QLD - Brisbane - ABC NEWS">QLD - Brisbane - ABC NEWS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0401" xmltv_id="QLD - Brisbane - Channel 9">QLD - Brisbane - Channel 9</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0406" xmltv_id="QLD - Brisbane - 9Go!">QLD - Brisbane - 9Go!</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0502:0528" xmltv_id="QLD - Brisbane - RACING.COM">QLD - Brisbane - RACING.COM</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0504:0540" xmltv_id="QLD - Brisbane - Seven">QLD - Brisbane - Seven</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0504:0543" xmltv_id="QLD - Brisbane - 7mate">QLD - Brisbane - 7mate</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0504:0547" xmltv_id="QLD - Brisbane - 7food network Brisbane">QLD - Brisbane - 7food network Brisbane</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1014:0604:0641" xmltv_id="QLD - Brisbane - 10 Bold">QLD - Brisbane - 10 Bold</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0304" xmltv_id="QLD - Brisbane - SBS Food">QLD - Brisbane - SBS Food</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0301" xmltv_id="QLD - Brisbane - SBS">QLD - Brisbane - SBS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0307" xmltv_id="QLD - Brisbane - SBS World Movies Sydney">QLD - Brisbane - SBS World Movies Sydney</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0222" xmltv_id="QLD - Goldcoast - ABC COMEDY/ABC KIDS NSW">QLD - Goldcoast - ABC COMEDY/ABC KIDS NSW</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0224" xmltv_id="QLD - Goldcoast - ABC ME">QLD - Goldcoast - ABC ME</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0480" xmltv_id="QLD - Goldcoast - 9HD">QLD - Goldcoast - 9HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0305" xmltv_id="QLD - Goldcoast - NITV">QLD - Goldcoast - NITV</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0303" xmltv_id="QLD - Goldcoast - SBS VICELAND HD">QLD - Goldcoast - SBS VICELAND HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0220" xmltv_id="QLD - Goldcoast - ABC NEWS">QLD - Goldcoast - ABC NEWS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0406" xmltv_id="QLD - Goldcoast - 9Go!">QLD - Goldcoast - 9Go!</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0502:0528" xmltv_id="QLD - Goldcoast - RACING.COM">QLD - Goldcoast - RACING.COM</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0507:0570" xmltv_id="QLD - Goldcoast - Seven">QLD - Goldcoast - Seven</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0304" xmltv_id="QLD - Goldcoast - SBS Food">QLD - Goldcoast - SBS Food</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0301" xmltv_id="QLD - Goldcoast - SBS">QLD - Goldcoast - SBS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0307" xmltv_id="QLD - Goldcoast - SBS World Movies Sydney">QLD - Goldcoast - SBS World Movies Sydney</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0222" xmltv_id="QLD - Toowoomba - ABC COMEDY/ABC KIDS NSW">QLD - Toowoomba - ABC COMEDY/ABC KIDS NSW</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0224" xmltv_id="QLD - Toowoomba - ABC ME">QLD - Toowoomba - ABC ME</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0480" xmltv_id="QLD - Toowoomba - 9HD">QLD - Toowoomba - 9HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0960:0970" xmltv_id="QLD - Toowoomba - Seven">QLD - Toowoomba - Seven</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0960:0972" xmltv_id="QLD - Toowoomba - 7TWO">QLD - Toowoomba - 7TWO</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0305" xmltv_id="QLD - Toowoomba - NITV">QLD - Toowoomba - NITV</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0303" xmltv_id="QLD - Toowoomba - SBS VICELAND HD">QLD - Toowoomba - SBS VICELAND HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0220" xmltv_id="QLD - Toowoomba - ABC NEWS">QLD - Toowoomba - ABC NEWS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0406" xmltv_id="QLD - Toowoomba - 9Go!">QLD - Toowoomba - 9Go!</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0502:0528" xmltv_id="QLD - Toowoomba - RACING.COM">QLD - Toowoomba - RACING.COM</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0960:0973" xmltv_id="QLD - Toowoomba - 7mate">QLD - Toowoomba - 7mate</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0304" xmltv_id="QLD - Toowoomba - SBS Food">QLD - Toowoomba - SBS Food</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0301" xmltv_id="QLD - Toowoomba - SBS">QLD - Toowoomba - SBS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0307" xmltv_id="QLD - Toowoomba - SBS World Movies Sydney">QLD - Toowoomba - SBS World Movies Sydney</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0222" xmltv_id="QLD - Maryborough - ABC COMEDY/ABC KIDS NSW">QLD - Maryborough - ABC COMEDY/ABC KIDS NSW</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0224" xmltv_id="QLD - Maryborough - ABC ME">QLD - Maryborough - ABC ME</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0480" xmltv_id="QLD - Maryborough - 9HD">QLD - Maryborough - 9HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0900:0915" xmltv_id="QLD - Maryborough - 7flix">QLD - Maryborough - 7flix</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0950:0962" xmltv_id="QLD - Maryborough - 7TWO">QLD - Maryborough - 7TWO</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0305" xmltv_id="QLD - Maryborough - NITV">QLD - Maryborough - NITV</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0303" xmltv_id="QLD - Maryborough - SBS VICELAND HD">QLD - Maryborough - SBS VICELAND HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0220" xmltv_id="QLD - Maryborough - ABC NEWS">QLD - Maryborough - ABC NEWS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0406" xmltv_id="QLD - Maryborough - 9Go!">QLD - Maryborough - 9Go!</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0502:0528" xmltv_id="QLD - Maryborough - RACING.COM">QLD - Maryborough - RACING.COM</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0950:0960" xmltv_id="QLD - Maryborough - Seven">QLD - Maryborough - Seven</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0950:0963" xmltv_id="QLD - Maryborough - 7mate">QLD - Maryborough - 7mate</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0304" xmltv_id="QLD - Maryborough - SBS Food">QLD - Maryborough - SBS Food</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0301" xmltv_id="QLD - Maryborough - SBS">QLD - Maryborough - SBS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0307" xmltv_id="QLD - Maryborough - SBS World Movies Sydney">QLD - Maryborough - SBS World Movies Sydney</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0222" xmltv_id="QLD - Widebay - ABC COMEDY/ABC KIDS NSW">QLD - Widebay - ABC COMEDY/ABC KIDS NSW</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0224" xmltv_id="QLD - Widebay - ABC ME">QLD - Widebay - ABC ME</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0480" xmltv_id="QLD - Widebay - 9HD">QLD - Widebay - 9HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0940:0950" xmltv_id="QLD - Widebay - Seven">QLD - Widebay - Seven</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0940:0952" xmltv_id="QLD - Widebay - 7TWO">QLD - Widebay - 7TWO</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0305" xmltv_id="QLD - Widebay - NITV">QLD - Widebay - NITV</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0303" xmltv_id="QLD - Widebay - SBS VICELAND HD">QLD - Widebay - SBS VICELAND HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0220" xmltv_id="QLD - Widebay - ABC NEWS">QLD - Widebay - ABC NEWS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0406" xmltv_id="QLD - Widebay - 9Go!">QLD - Widebay - 9Go!</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0502:0528" xmltv_id="QLD - Widebay - RACING.COM">QLD - Widebay - RACING.COM</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0940:0953" xmltv_id="QLD - Widebay - 7mate">QLD - Widebay - 7mate</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0304" xmltv_id="QLD - Widebay - SBS Food">QLD - Widebay - SBS Food</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0301" xmltv_id="QLD - Widebay - SBS">QLD - Widebay - SBS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0307" xmltv_id="QLD - Widebay - SBS World Movies Sydney">QLD - Widebay - SBS World Movies Sydney</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0222" xmltv_id="QLD - Rockhampton - ABC COMEDY/ABC KIDS NSW">QLD - Rockhampton - ABC COMEDY/ABC KIDS NSW</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0224" xmltv_id="QLD - Rockhampton - ABC ME">QLD - Rockhampton - ABC ME</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0480" xmltv_id="QLD - Rockhampton - 9HD">QLD - Rockhampton - 9HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0930:0942" xmltv_id="QLD - Rockhampton - 7TWO">QLD - Rockhampton - 7TWO</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0305" xmltv_id="QLD - Rockhampton - NITV">QLD - Rockhampton - NITV</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0303" xmltv_id="QLD - Rockhampton - SBS VICELAND HD">QLD - Rockhampton - SBS VICELAND HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0220" xmltv_id="QLD - Rockhampton - ABC NEWS">QLD - Rockhampton - ABC NEWS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0406" xmltv_id="QLD - Rockhampton - 9Go!">QLD - Rockhampton - 9Go!</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0502:0528" xmltv_id="QLD - Rockhampton - RACING.COM">QLD - Rockhampton - RACING.COM</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0930:0940" xmltv_id="QLD - Rockhampton - Seven">QLD - Rockhampton - Seven</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0930:0943" xmltv_id="QLD - Rockhampton - 7mate">QLD - Rockhampton - 7mate</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0304" xmltv_id="QLD - Rockhampton - SBS Food">QLD - Rockhampton - SBS Food</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0301" xmltv_id="QLD - Rockhampton - SBS">QLD - Rockhampton - SBS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0307" xmltv_id="QLD - Rockhampton - SBS World Movies Sydney">QLD - Rockhampton - SBS World Movies Sydney</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0222" xmltv_id="QLD - Mackay - ABC COMEDY/ABC KIDS NSW">QLD - Mackay - ABC COMEDY/ABC KIDS NSW</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0224" xmltv_id="QLD - Mackay - ABC ME">QLD - Mackay - ABC ME</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0480" xmltv_id="QLD - Mackay - 9HD">QLD - Mackay - 9HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0305" xmltv_id="QLD - Mackay - NITV">QLD - Mackay - NITV</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0303" xmltv_id="QLD - Mackay - SBS VICELAND HD">QLD - Mackay - SBS VICELAND HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0220" xmltv_id="QLD - Mackay - ABC NEWS">QLD - Mackay - ABC NEWS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0406" xmltv_id="QLD - Mackay - 9Go!">QLD - Mackay - 9Go!</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0502:0528" xmltv_id="QLD - Mackay - RACING.COM">QLD - Mackay - RACING.COM</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0920:0930" xmltv_id="QLD - Mackay - Seven">QLD - Mackay - Seven</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0920:0932" xmltv_id="QLD - Mackay - 7TWO">QLD - Mackay - 7TWO</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0920:0933" xmltv_id="QLD - Mackay - 7mate">QLD - Mackay - 7mate</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0304" xmltv_id="QLD - Mackay - SBS Food">QLD - Mackay - SBS Food</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0301" xmltv_id="QLD - Mackay - SBS">QLD - Mackay - SBS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0307" xmltv_id="QLD - Mackay - SBS World Movies Sydney">QLD - Mackay - SBS World Movies Sydney</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0222" xmltv_id="QLD - Townsville - ABC COMEDY/ABC KIDS NSW">QLD - Townsville - ABC COMEDY/ABC KIDS NSW</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0224" xmltv_id="QLD - Townsville - ABC ME">QLD - Townsville - ABC ME</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0480" xmltv_id="QLD - Townsville - 9HD">QLD - Townsville - 9HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0910:0920" xmltv_id="QLD - Townsville - Seven">QLD - Townsville - Seven</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0910:0923" xmltv_id="QLD - Townsville - 7mate">QLD - Townsville - 7mate</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0305" xmltv_id="QLD - Townsville - NITV">QLD - Townsville - NITV</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0303" xmltv_id="QLD - Townsville - SBS VICELAND HD">QLD - Townsville - SBS VICELAND HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0220" xmltv_id="QLD - Townsville - ABC NEWS">QLD - Townsville - ABC NEWS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0406" xmltv_id="QLD - Townsville - 9Go!">QLD - Townsville - 9Go!</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0502:0528" xmltv_id="QLD - Townsville - RACING.COM">QLD - Townsville - RACING.COM</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0910:0922" xmltv_id="QLD - Townsville - 7TWO">QLD - Townsville - 7TWO</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0304" xmltv_id="QLD - Townsville - SBS Food">QLD - Townsville - SBS Food</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0301" xmltv_id="QLD - Townsville - SBS">QLD - Townsville - SBS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0307" xmltv_id="QLD - Townsville - SBS World Movies Sydney">QLD - Townsville - SBS World Movies Sydney</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0222" xmltv_id="QLD - Cairns - ABC COMEDY/ABC KIDS NSW">QLD - Cairns - ABC COMEDY/ABC KIDS NSW</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0224" xmltv_id="QLD - Cairns - ABC ME">QLD - Cairns - ABC ME</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0480" xmltv_id="QLD - Cairns - 9HD">QLD - Cairns - 9HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0900:0910" xmltv_id="QLD - Cairns - Seven">QLD - Cairns - Seven</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0900:0913" xmltv_id="QLD - Cairns - 7mate">QLD - Cairns - 7mate</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0305" xmltv_id="QLD - Cairns - NITV">QLD - Cairns - NITV</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0303" xmltv_id="QLD - Cairns - SBS VICELAND HD">QLD - Cairns - SBS VICELAND HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0220" xmltv_id="QLD - Cairns - ABC NEWS">QLD - Cairns - ABC NEWS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0406" xmltv_id="QLD - Cairns - 9Go!">QLD - Cairns - 9Go!</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0502:0528" xmltv_id="QLD - Cairns - RACING.COM">QLD - Cairns - RACING.COM</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0900:0912" xmltv_id="QLD - Cairns - 7TWO">QLD - Cairns - 7TWO</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0304" xmltv_id="QLD - Cairns - SBS Food">QLD - Cairns - SBS Food</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0301" xmltv_id="QLD - Cairns - SBS">QLD - Cairns - SBS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0307" xmltv_id="QLD - Cairns - SBS World Movies Sydney">QLD - Cairns - SBS World Movies Sydney</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0222" xmltv_id="SA - Adelaide - ABC COMEDY/ABC KIDS NSW">SA - Adelaide - ABC COMEDY/ABC KIDS NSW</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0224" xmltv_id="SA - Adelaide - ABC ME">SA - Adelaide - ABC ME</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0251:0251" xmltv_id="SA - Adelaide - ABC">SA - Adelaide - ABC</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0480" xmltv_id="SA - Adelaide - 9HD">SA - Adelaide - 9HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0450:0457" xmltv_id="SA - Adelaide - 9Gem">SA - Adelaide - 9Gem</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0450:0458" xmltv_id="SA - Adelaide - 9Go!">SA - Adelaide - 9Go!</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1014:0605:0658" xmltv_id="SA - Adelaide - 10 Peach">SA - Adelaide - 10 Peach</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0305" xmltv_id="SA - Adelaide - NITV">SA - Adelaide - NITV</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0303" xmltv_id="SA - Adelaide - SBS VICELAND HD">SA - Adelaide - SBS VICELAND HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0220" xmltv_id="SA - Adelaide - ABC NEWS">SA - Adelaide - ABC NEWS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0406" xmltv_id="SA - Adelaide - 9Go!">SA - Adelaide - 9Go!</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0450:0451" xmltv_id="SA - Adelaide - Channel 9">SA - Adelaide - Channel 9</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0450:0454" xmltv_id="SA - Adelaide - 9Life">SA - Adelaide - 9Life</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0502:0528" xmltv_id="SA - Adelaide - RACING.COM">SA - Adelaide - RACING.COM</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0505:0550" xmltv_id="SA - Adelaide - Seven">SA - Adelaide - Seven</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0505:0552" xmltv_id="SA - Adelaide - 7TWO">SA - Adelaide - 7TWO</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0505:0553" xmltv_id="SA - Adelaide - 7mate">SA - Adelaide - 7mate</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0505:0555" xmltv_id="SA - Adelaide - 7flix">SA - Adelaide - 7flix</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1014:0605:0651" xmltv_id="SA - Adelaide - 10 Bold">SA - Adelaide - 10 Bold</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1014:0605:0655" xmltv_id="SA - Adelaide - TEN">SA - Adelaide - TEN</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0304" xmltv_id="SA - Adelaide - SBS Food">SA - Adelaide - SBS Food</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0301" xmltv_id="SA - Adelaide - SBS">SA - Adelaide - SBS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0307" xmltv_id="SA - Adelaide - SBS World Movies Sydney">SA - Adelaide - SBS World Movies Sydney</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0222" xmltv_id="SA - Regional - ABC COMEDY/ABC KIDS NSW">SA - Regional - ABC COMEDY/ABC KIDS NSW</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0224" xmltv_id="SA - Regional - ABC ME">SA - Regional - ABC ME</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0480" xmltv_id="SA - Regional - 9HD">SA - Regional - 9HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0305" xmltv_id="SA - Regional - NITV">SA - Regional - NITV</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0303" xmltv_id="SA - Regional - SBS VICELAND HD">SA - Regional - SBS VICELAND HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0220" xmltv_id="SA - Regional - ABC NEWS">SA - Regional - ABC NEWS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0406" xmltv_id="SA - Regional - 9Go!">SA - Regional - 9Go!</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0502:0528" xmltv_id="SA - Regional - RACING.COM">SA - Regional - RACING.COM</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0304" xmltv_id="SA - Regional - SBS Food">SA - Regional - SBS Food</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0301" xmltv_id="SA - Regional - SBS">SA - Regional - SBS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0307" xmltv_id="SA - Regional - SBS World Movies Sydney">SA - Regional - SBS World Movies Sydney</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0222" xmltv_id="WA - Perth - ABC COMEDY/ABC KIDS NSW">WA - Perth - ABC COMEDY/ABC KIDS NSW</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0224" xmltv_id="WA - Perth - ABC ME">WA - Perth - ABC ME</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0480" xmltv_id="WA - Perth - 9HD">WA - Perth - 9HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0460:0464" xmltv_id="WA - Perth - 9Life">WA - Perth - 9Life</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0460:0467" xmltv_id="WA - Perth - 9Gem">WA - Perth - 9Gem</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0506:0560" xmltv_id="WA - Perth - Seven">WA - Perth - Seven</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1014:0607:0681" xmltv_id="WA - Perth - 10 Bold">WA - Perth - 10 Bold</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1014:0607:0688" xmltv_id="WA - Perth - 10 Peach">WA - Perth - 10 Peach</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0305" xmltv_id="WA - Perth - NITV">WA - Perth - NITV</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0303" xmltv_id="WA - Perth - SBS VICELAND HD">WA - Perth - SBS VICELAND HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3201:0261:02E1" xmltv_id="WA - Perth - ABC">WA - Perth - ABC</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0220" xmltv_id="WA - Perth - ABC NEWS">WA - Perth - ABC NEWS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0406" xmltv_id="WA - Perth - 9Go!">WA - Perth - 9Go!</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0460:0461" xmltv_id="WA - Perth - Channel 9">WA - Perth - Channel 9</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0460:0468" xmltv_id="WA - Perth - 9Go!">WA - Perth - 9Go!</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0502:0528" xmltv_id="WA - Perth - RACING.COM">WA - Perth - RACING.COM</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0506:0562" xmltv_id="WA - Perth - 7TWO">WA - Perth - 7TWO</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0506:0563" xmltv_id="WA - Perth - 7mate">WA - Perth - 7mate</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0506:0565" xmltv_id="WA - Perth - 7flix">WA - Perth - 7flix</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1014:0607:0685" xmltv_id="WA - Perth - TEN">WA - Perth - TEN</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0304" xmltv_id="WA - Perth - SBS Food">WA - Perth - SBS Food</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0301" xmltv_id="WA - Perth - SBS">WA - Perth - SBS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0307" xmltv_id="WA - Perth - SBS World Movies Sydney">WA - Perth - SBS World Movies Sydney</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0222" xmltv_id="WA - REGIONAL WA - ABC COMEDY/ABC KIDS NSW">WA - REGIONAL WA - ABC COMEDY/ABC KIDS NSW</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0224" xmltv_id="WA - REGIONAL WA - ABC ME">WA - REGIONAL WA - ABC ME</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0480" xmltv_id="WA - REGIONAL WA - 9HD">WA - REGIONAL WA - 9HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0305" xmltv_id="WA - REGIONAL WA - NITV">WA - REGIONAL WA - NITV</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0303" xmltv_id="WA - REGIONAL WA - SBS VICELAND HD">WA - REGIONAL WA - SBS VICELAND HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0220" xmltv_id="WA - REGIONAL WA - ABC NEWS">WA - REGIONAL WA - ABC NEWS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0406" xmltv_id="WA - REGIONAL WA - 9Go!">WA - REGIONAL WA - 9Go!</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0502:0528" xmltv_id="WA - REGIONAL WA - RACING.COM">WA - REGIONAL WA - RACING.COM</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0304" xmltv_id="WA - REGIONAL WA - SBS Food">WA - REGIONAL WA - SBS Food</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0301" xmltv_id="WA - REGIONAL WA - SBS">WA - REGIONAL WA - SBS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0307" xmltv_id="WA - REGIONAL WA - SBS World Movies Sydney">WA - REGIONAL WA - SBS World Movies Sydney</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0222" xmltv_id="TAS - Hobart - ABC COMEDY/ABC KIDS NSW">TAS - Hobart - ABC COMEDY/ABC KIDS NSW</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0224" xmltv_id="TAS - Hobart - ABC ME">TAS - Hobart - ABC ME</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0271:0271" xmltv_id="TAS - Hobart - ABC">TAS - Hobart - ABC</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0480" xmltv_id="TAS - Hobart - 9HD">TAS - Hobart - 9HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0305" xmltv_id="TAS - Hobart - NITV">TAS - Hobart - NITV</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0303" xmltv_id="TAS - Hobart - SBS VICELAND HD">TAS - Hobart - SBS VICELAND HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0220" xmltv_id="TAS - Hobart - ABC NEWS">TAS - Hobart - ABC NEWS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0406" xmltv_id="TAS - Hobart - 9Go!">TAS - Hobart - 9Go!</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0502:0528" xmltv_id="TAS - Hobart - RACING.COM">TAS - Hobart - RACING.COM</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0304" xmltv_id="TAS - Hobart - SBS Food">TAS - Hobart - SBS Food</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0301" xmltv_id="TAS - Hobart - SBS">TAS - Hobart - SBS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0307" xmltv_id="TAS - Hobart - SBS World Movies Sydney">TAS - Hobart - SBS World Movies Sydney</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0222" xmltv_id="TAS - Launceston - ABC COMEDY/ABC KIDS NSW">TAS - Launceston - ABC COMEDY/ABC KIDS NSW</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0224" xmltv_id="TAS - Launceston - ABC ME">TAS - Launceston - ABC ME</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0480" xmltv_id="TAS - Launceston - 9HD">TAS - Launceston - 9HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0305" xmltv_id="TAS - Launceston - NITV">TAS - Launceston - NITV</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0303" xmltv_id="TAS - Launceston - SBS VICELAND HD">TAS - Launceston - SBS VICELAND HD</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1010:0221:0220" xmltv_id="TAS - Launceston - ABC NEWS">TAS - Launceston - ABC NEWS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1012:0400:0406" xmltv_id="TAS - Launceston - 9Go!">TAS - Launceston - 9Go!</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="1013:0502:0528" xmltv_id="TAS - Launceston - RACING.COM">TAS - Launceston - RACING.COM</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0304" xmltv_id="TAS - Launceston - SBS Food">TAS - Launceston - SBS Food</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0301" xmltv_id="TAS - Launceston - SBS">TAS - Launceston - SBS</channel>
+    <channel update="i" site="freeview.com.au.EK" site_id="3202:0300:0307" xmltv_id="TAS - Launceston - SBS World Movies Sydney">TAS - Launceston - SBS World Movies Sydney</channel>
+  </channels>
+</site>

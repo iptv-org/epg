@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<site generator-info-name="WebGrab+Plus/w MDB &amp; REX Postprocess -- version 1.1.1/53.17 -- Jan van Straaten" site="tv-media.at">
+  <channels>
+    <channel update="i" site="tv-media.at" site_id="ORF1" xmltv_id="ORF eins">ORF eins</channel>
+    <channel update="i" site="tv-media.at" site_id="ORF2" xmltv_id="ORF zwei">ORF zwei</channel>
+    <channel update="i" site="tv-media.at" site_id="ATV" xmltv_id="ATV">ATV</channel>
+    <channel update="i" site="tv-media.at" site_id="PULS4" xmltv_id="PULS 4">PULS 4</channel>
+    <channel update="i" site="tv-media.at" site_id="SERVUSTV" xmltv_id="SERVUS TV">SERVUS TV</channel>
+    <channel update="i" site="tv-media.at" site_id="ORF3" xmltv_id="ORF III">ORF III</channel>
+    <channel update="i" site="tv-media.at" site_id="ATV2" xmltv_id="ATV 2">ATV 2</channel>
+    <channel update="i" site="tv-media.at" site_id="RTL" xmltv_id="RTL">RTL</channel>
+    <channel update="i" site="tv-media.at" site_id="SAT1" xmltv_id="SAT.1">SAT.1</channel>
+    <channel update="i" site="tv-media.at" site_id="PRO7" xmltv_id="PRO 7">PRO 7</channel>
+    <channel update="i" site="tv-media.at" site_id="ARD" xmltv_id="ARD">ARD</channel>
+    <channel update="i" site="tv-media.at" site_id="ZDF" xmltv_id="ZDF">ZDF</channel>
+    <channel update="i" site="tv-media.at" site_id="3SAT" xmltv_id="3SAT">3SAT</channel>
+    <channel update="i" site="tv-media.at" site_id="ARTE" xmltv_id="ARTE">ARTE</channel>
+    <channel update="i" site="tv-media.at" site_id="BAYERN3" xmltv_id="BAYERN \/ BR">BAYERN \/ BR</channel>
+    <channel update="i" site="tv-media.at" site_id="VOX" xmltv_id="VOX">VOX</channel>
+    <channel update="i" site="tv-media.at" site_id="RTL2" xmltv_id="RTL 2">RTL 2</channel>
+    <channel update="i" site="tv-media.at" site_id="KAKA" xmltv_id="KABEL 1">KABEL 1</channel>
+    <channel update="i" site="tv-media.at" site_id="TELE5" xmltv_id="TELE 5">TELE 5</channel>
+    <channel update="i" site="tv-media.at" site_id="SRTL" xmltv_id="SUPER RTL">SUPER RTL</channel>
+    <channel update="i" site="tv-media.at" site_id="DMAX" xmltv_id="DMAX">DMAX</channel>
+    <channel update="i" site="tv-media.at" site_id="RTLNITRO" xmltv_id="RTL NITRO">RTL NITRO</channel>
+    <channel update="i" site="tv-media.at" site_id="NICK" xmltv_id="NICK\/COMEDY CENTRAL">NICK\/COMEDY CENTRAL</channel>
+    <channel update="i" site="tv-media.at" site_id="ANIXEHD" xmltv_id="ANIXE">ANIXE</channel>
+    <channel update="i" site="tv-media.at" site_id="KIKA" xmltv_id="KIKA">KIKA</channel>
+    <channel update="i" site="tv-media.at" site_id="SW3.BW" xmltv_id="SWR">SWR</channel>
+    <channel update="i" site="tv-media.at" site_id="WEST3" xmltv_id="WDR">WDR</channel>
+    <channel update="i" site="tv-media.at" site_id="NORD3" xmltv_id="NDR">NDR</channel>
+    <channel update="i" site="tv-media.at" site_id="MDR" xmltv_id="MDR">MDR</channel>
+    <channel update="i" site="tv-media.at" site_id="HESSEN3" xmltv_id="HESSEN">HESSEN</channel>
+    <channel update="i" site="tv-media.at" site_id="ALPHA" xmltv_id="ARD ALPHA">ARD ALPHA</channel>
+    <channel update="i" site="tv-media.at" site_id="RBB" xmltv_id="RBB">RBB</channel>
+    <channel update="i" site="tv-media.at" site_id="FESTIVAL" xmltv_id="EINS FESTIVAL">EINS FESTIVAL</channel>
+    <channel update="i" site="tv-media.at" site_id="EINSPLUS" xmltv_id="EINS PLUS">EINS PLUS</channel>
+    <channel update="i" site="tv-media.at" site_id="Kultur" xmltv_id="Kultur">Kultur</channel>
+    <channel update="i" site="tv-media.at" site_id="ZDFNEO" xmltv_id="ZDF NEO">ZDF NEO</channel>
+    <channel update="i" site="tv-media.at" site_id="INFO" xmltv_id="ZDF INFO">ZDF INFO</channel>
+    <channel update="i" site="tv-media.at" site_id="ZDFKULTUR" xmltv_id="ZDF KULTUR">ZDF KULTUR</channel>
+    <channel update="i" site="tv-media.at" site_id="SAT1GOLD" xmltv_id="Sat.1 Gold">Sat.1 Gold</channel>
+    <channel update="i" site="tv-media.at" site_id="SIXX.AU" xmltv_id="SIXX AUSTRIA">SIXX AUSTRIA</channel>
+    <channel update="i" site="tv-media.at" site_id="PRO7MAXX" xmltv_id="PRO 7 maxx">PRO 7 maxx</channel>
+    <channel update="i" site="tv-media.at" site_id="DISNEY" xmltv_id="DISNEY CHANNEL">DISNEY CHANNEL</channel>
+    <channel update="i" site="tv-media.at" site_id="DRS" xmltv_id="SF1">SF1</channel>
+    <channel update="i" site="tv-media.at" site_id="SF2" xmltv_id="SF2">SF2</channel>
+    <channel update="i" site="tv-media.at" site_id="EXTRA" xmltv_id="TAGESSCHAU 24">TAGESSCHAU 24</channel>
+    <channel update="i" site="tv-media.at" site_id="ORFSPORT" xmltv_id="ORF SPORT PLUS">ORF SPORT PLUS</channel>
+    <channel update="i" site="tv-media.at" site_id="SPORT1DE" xmltv_id="SPORT 1">SPORT 1</channel>
+    <channel update="i" site="tv-media.at" site_id="BBCENTER" xmltv_id="BBC ENTERTAINMENT">BBC ENTERTAINMENT</channel>
+    <channel update="i" site="tv-media.at" site_id="RAI1" xmltv_id="RAI">RAI</channel>
+    <channel update="i" site="tv-media.at" site_id="TV5" xmltv_id="TV5 MONDE">TV5 MONDE</channel>
+    <channel update="i" site="tv-media.at" site_id="TRT" xmltv_id="TRT">TRT</channel>
+    <channel update="i" site="tv-media.at" site_id="NTV" xmltv_id="NTV">NTV</channel>
+    <channel update="i" site="tv-media.at" site_id="N24" xmltv_id="N 24">N 24</channel>
+    <channel update="i" site="tv-media.at" site_id="PHOENIX" xmltv_id="PHOENIX">PHOENIX</channel>
+    <channel update="i" site="tv-media.at" site_id="CNN" xmltv_id="CNN">CNN</channel>
+    <channel update="i" site="tv-media.at" site_id="CNBCPANEURO" xmltv_id="CNBC">CNBC</channel>
+    <channel update="i" site="tv-media.at" site_id="SKYKRIMI" xmltv_id="SKY KRIMI">SKY KRIMI</channel>
+    <channel update="i" site="tv-media.at" site_id="PREMFOX" xmltv_id="FOX">FOX</channel>
+    <channel update="i" site="tv-media.at" site_id="TNTSERIE" xmltv_id="TNT SERIE">TNT SERIE</channel>
+    <channel update="i" site="tv-media.at" site_id="SCIFI" xmltv_id="SYFY">SYFY</channel>
+    <channel update="i" site="tv-media.at" site_id="UNIVERSAL" xmltv_id="UNIVERSAL">UNIVERSAL</channel>
+    <channel update="i" site="tv-media.at" site_id="RTLCRIME" xmltv_id="RTL CRIME">RTL CRIME</channel>
+    <channel update="i" site="tv-media.at" site_id="PASSION" xmltv_id="RTL PASSION">RTL PASSION</channel>
+    <channel update="i" site="tv-media.at" site_id="HEIMAT" xmltv_id="HEIMATKANAL">HEIMATKANAL</channel>
+    <channel update="i" site="tv-media.at" site_id="STREET" xmltv_id="13TH STREET">13TH STREET</channel>
+    <channel update="i" site="tv-media.at" site_id="SPIEGELGESCH" xmltv_id="SPIEGEL GESCHICHTE">SPIEGEL GESCHICHTE</channel>
+    <channel update="i" site="tv-media.at" site_id="PRO7FUN" xmltv_id="PRO 7 FUN">PRO 7 FUN</channel>
+    <channel update="i" site="tv-media.at" site_id="GLITZ" xmltv_id="TNT GLITZ">TNT GLITZ</channel>
+    <channel update="i" site="tv-media.at" site_id="JUKEBOX" xmltv_id="JUKEBOX">JUKEBOX</channel>
+    <channel update="i" site="tv-media.at" site_id="CLASSICHDDE" xmltv_id="UNITEL CLASSICA">UNITEL CLASSICA</channel>
+    <channel update="i" site="tv-media.at" site_id="GOLDSTAR" xmltv_id="GOLD STAR TV">GOLD STAR TV</channel>
+    <channel update="i" site="tv-media.at" site_id="JUNIOR" xmltv_id="Junior">Junior</channel>
+    <channel update="i" site="tv-media.at" site_id="PLAYHOUSE" xmltv_id="DISNEY JUNIOR \/ Playhouse">DISNEY JUNIOR \/ Playhouse</channel>
+    <channel update="i" site="tv-media.at" site_id="DISNEYXD" xmltv_id="DISNEY XD">DISNEY XD</channel>
+    <channel update="i" site="tv-media.at" site_id="MOTORVISION" xmltv_id="MOTOR VISION TV">MOTOR VISION TV</channel>
+    <channel update="i" site="tv-media.at" site_id="HISTORY" xmltv_id="HISTORY HD">HISTORY HD</channel>
+    <channel update="i" site="tv-media.at" site_id="NATGEO" xmltv_id="NATIONAL GEOGRAPHIC">NATIONAL GEOGRAPHIC</channel>
+    <channel update="i" site="tv-media.at" site_id="NATGEOWILDDE" xmltv_id="NAT GEO WILD">NAT GEO WILD</channel>
+    <channel update="i" site="tv-media.at" site_id="TNTFILM" xmltv_id="TNT FILM">TNT FILM</channel>
+    <channel update="i" site="tv-media.at" site_id="AXN" xmltv_id="AXN ACTION">AXN ACTION</channel>
+    <channel update="i" site="tv-media.at" site_id="EENTERDE" xmltv_id="E! ENTERTAINMENT">E! ENTERTAINMENT</channel>
+    <channel update="i" site="tv-media.at" site_id="SAT1EMOTION" xmltv_id="SAT 1. EMOTIONS">SAT 1. EMOTIONS</channel>
+    <channel update="i" site="tv-media.at" site_id="KINOWELT" xmltv_id="KINOWELT">KINOWELT</channel>
+    <channel update="i" site="tv-media.at" site_id="K1CLASSIC" xmltv_id="KABEL 1 CLASSICS">KABEL 1 CLASSICS</channel>
+    <channel update="i" site="tv-media.at" site_id="BIOGRAPHY" xmltv_id="BIOGRAPHY CHANNEL">BIOGRAPHY CHANNEL</channel>
+    <channel update="i" site="tv-media.at" site_id="ROMANCETV" xmltv_id="ROMANCE TV">ROMANCE TV</channel>
+    <channel update="i" site="tv-media.at" site_id="RTLLIVING" xmltv_id="RTL LIVING">RTL LIVING</channel>
+    <channel update="i" site="tv-media.at" site_id="NICKPRE" xmltv_id="NICK TOONS">NICK TOONS</channel>
+    <channel update="i" site="tv-media.at" site_id="ANIMAX" xmltv_id="ANIMAX">ANIMAX</channel>
+    <channel update="i" site="tv-media.at" site_id="BOOMERANG" xmltv_id="BOOMERANG">BOOMERANG</channel>
+    <channel update="i" site="tv-media.at" site_id="CARTOONDE" xmltv_id="CARTOON NETWORK">CARTOON NETWORK</channel>
+    <channel update="i" site="tv-media.at" site_id="EUROSP" xmltv_id="EURO SPORT">EURO SPORT</channel>
+    <channel update="i" site="tv-media.at" site_id="EUROSP2" xmltv_id="EUROSPORT 2">EUROSPORT 2</channel>
+    <channel update="i" site="tv-media.at" site_id="MTV" xmltv_id="MTV">MTV</channel>
+    <channel update="i" site="tv-media.at" site_id="MTHD" xmltv_id="MTV LIVE HD">MTV LIVE HD</channel>
+    <channel update="i" site="tv-media.at" site_id="SKYCINEMA" xmltv_id="SKY CINEMA">SKY CINEMA</channel>
+    <channel update="i" site="tv-media.at" site_id="SKYCINEMA24" xmltv_id="SKY CINEMA +24">SKY CINEMA +24</channel>
+    <channel update="i" site="tv-media.at" site_id="SKYCINEMAHITS" xmltv_id="SKY HITS">SKY HITS</channel>
+    <channel update="i" site="tv-media.at" site_id="SKYACTION" xmltv_id="SKY ACTION">SKY ACTION</channel>
+    <channel update="i" site="tv-media.at" site_id="SKYNOSTALGIE" xmltv_id="SKY NOSTALGIE">SKY NOSTALGIE</channel>
+    <channel update="i" site="tv-media.at" site_id="SKYCOMEDY" xmltv_id="SKY COMEDY">SKY COMEDY</channel>
+    <channel update="i" site="tv-media.at" site_id="SKYEMOTION" xmltv_id="SKY EMOTION">SKY EMOTION</channel>
+    <channel update="i" site="tv-media.at" site_id="SKYATLANTIK" xmltv_id="SKY ATLANTIC HD">SKY ATLANTIC HD</channel>
+    <channel update="i" site="tv-media.at" site_id="DISCINEMAG" xmltv_id="DISNEY CINEMAGIC">DISNEY CINEMAGIC</channel>
+    <channel update="i" site="tv-media.at" site_id="MGM" xmltv_id="MGM">MGM</channel>
+    <channel update="i" site="tv-media.at" site_id="SKYSPOAUSTRIA" xmltv_id="SKY SPORT AUSTRIA">SKY SPORT AUSTRIA</channel>
+    <channel update="i" site="tv-media.at" site_id="SKYSPO1" xmltv_id="SKY SPORT 1">SKY SPORT 1</channel>
+    <channel update="i" site="tv-media.at" site_id="SKYSPO2" xmltv_id="SKY SPORT 2">SKY SPORT 2</channel>
+    <channel update="i" site="tv-media.at" site_id="SKYBULI" xmltv_id="SKY BUNDESLIGA">SKY BUNDESLIGA</channel>
+    <channel update="i" site="tv-media.at" site_id="SPORT1PLUS" xmltv_id="SPORT 1 PLUS HD">SPORT 1 PLUS HD</channel>
+    <channel update="i" site="tv-media.at" site_id="SKYSPONEWS" xmltv_id="SKY SPORT NEWS HD">SKY SPORT NEWS HD</channel>
+    <channel update="i" site="tv-media.at" site_id="SKY3D" xmltv_id="SKY 3D">SKY 3D</channel>
+    <channel update="i" site="tv-media.at" site_id="SPORT1USHD" xmltv_id="SPORT 1 US HD">SPORT 1 US HD</channel>
+    <channel update="i" site="tv-media.at" site_id="AUTOMOTORSPORT" xmltv_id="Auto Motor Sport">Auto Motor Sport</channel>
+    <channel update="i" site="tv-media.at" site_id="GOTV" xmltv_id="GO TV">GO TV</channel>
+    <channel update="i" site="tv-media.at" site_id="OKTO" xmltv_id="OKTO">OKTO</channel>
+    <channel update="i" site="tv-media.at" site_id="W24" xmltv_id="W24">W24</channel>
+    <channel update="i" site="tv-media.at" site_id="VIVA" xmltv_id="VIVA">VIVA</channel>
+    <channel update="i" site="tv-media.at" site_id="QVC" xmltv_id="QVC">QVC</channel>
+    <channel update="i" site="tv-media.at" site_id="HOT" xmltv_id="HSE 24">HSE 24</channel>
+    <channel update="i" site="tv-media.at" site_id="ANIMALPLANET" xmltv_id="Animal Planet">Animal Planet</channel>
+    <channel update="i" site="tv-media.at" site_id="PLAN" xmltv_id="Planet TV">Planet TV</channel>
+    <channel update="i" site="tv-media.at" site_id="GUTELAUNETV" xmltv_id="GUTE LAUNE TV">GUTE LAUNE TV</channel>
+    <channel update="i" site="tv-media.at" site_id="BONGUSTO" xmltv_id="BONGUSTO HD">BONGUSTO HD</channel>
+  </channels>
+</site>

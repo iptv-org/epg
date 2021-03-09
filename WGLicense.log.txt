@@ -1,0 +1,30 @@
+﻿[        ] WebGrab++ license request and update log
+[        ] 2021/03/09 22:37
+[        ] 
+[Warning ] No License request in WebGrab++.config.xml
+[  Info  ] Consider to add a license request , like this:
+[  Info  ] <license wg-username="your username" registered-email="your email" password="optional password"/>
+[  Info  ] The program will run with performance settings : 'default'
+[  Info  ] License check .. done
+[        ] 
+[        ] Actual settings of the various licenses (may change from time to time) :
+[        ] 
+[        ]                   default           donator_license   donator           registered_user   un_registrd_user  developer         
+[        ] channels/ini      20                250               50                30                20                1000              
+[        ] channels total    20                250               50                30                20                1000              
+[        ] siteinis          2                 15                10                3                 2                 100               
+[        ] decryption keys   without userkey   enabled           enabled           enabled           without userkey   enabled           
+[        ] decryption mode   legacy (V2)       new (V3) & (V2)   new (V3) & (V2)   legacy (V2)       legacy (V2)       new (V3) & (V2)   
+[        ] index only        yes               no                no                no                yes               no                
+[        ] postprocess MDB   disabled          enabled           enabled           disabled          disabled          enabled           
+[        ] postprocess REX   disabled          enabled           enabled           enabled           disabled          enabled           
+[        ] debug             False             False             False             False             False             True              
+[        ] show details *    ttd               full              full              ttsd              ttd               full              
+[        ] update mode       force             all               all               light             force             all               
+[        ] channel delay     4 secs            0 secs            0 secs            2 secs            4 secs            0 secs            
+[        ] index delay       4 secs            0 secs            0 secs            4 secs            4 secs            0 secs            
+[        ] show delay        2 secs            0 secs            0 secs            1 secs            2 secs            0 secs            
+[        ] 
+[        ] * showdetails : 'tt = times & title, 's' = subtitle, 'd' = description
+[        ] 
+[        ] license update interval time : 168 hours

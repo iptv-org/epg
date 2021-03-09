@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<site generator-info-name="WebGrab+Plus/w MDB &amp; REX Postprocess -- version  V1.57 -- Jan van Straaten" site="tangotv.lu">
+  <channels>
+    <channel update="i" site="tangotv.lu" site_id="110950" xmltv_id="RTL Lux">RTL Lux</channel>
+    <channel update="i" site="tangotv.lu" site_id="110951" xmltv_id="RTL den2">RTL den2</channel>
+    <channel update="i" site="tangotv.lu" site_id="110902" xmltv_id="TF1">TF1</channel>
+    <channel update="i" site="tangotv.lu" site_id="110893" xmltv_id="France2">France2</channel>
+    <channel update="i" site="tangotv.lu" site_id="110894" xmltv_id="France3">France3</channel>
+    <channel update="i" site="tangotv.lu" site_id="110956" xmltv_id="M6">M6</channel>
+    <channel update="i" site="tangotv.lu" site_id="110889" xmltv_id="AB3">AB3</channel>
+    <channel update="i" site="tangotv.lu" site_id="110890" xmltv_id="BBC W">BBC W</channel>
+    <channel update="i" site="tangotv.lu" site_id="110891" xmltv_id="Fr 24">Fr 24</channel>
+    <channel update="i" site="tangotv.lu" site_id="110892" xmltv_id="ENewsE">ENewsE</channel>
+    <channel update="i" site="tangotv.lu" site_id="110895" xmltv_id="TV5">TV5</channel>
+    <channel update="i" site="tangotv.lu" site_id="110896" xmltv_id="WldfHD">WldfHD</channel>
+    <channel update="i" site="tangotv.lu" site_id="110897" xmltv_id="ARD">ARD</channel>
+    <channel update="i" site="tangotv.lu" site_id="110898" xmltv_id="RAI1">RAI1</channel>
+    <channel update="i" site="tangotv.lu" site_id="110899" xmltv_id="RAI2">RAI2</channel>
+    <channel update="i" site="tangotv.lu" site_id="110900" xmltv_id="RAI3">RAI3</channel>
+    <channel update="i" site="tangotv.lu" site_id="110901" xmltv_id="ZDF">ZDF</channel>
+    <channel update="i" site="tangotv.lu" site_id="110903" xmltv_id="CNN">CNN</channel>
+    <channel update="i" site="tangotv.lu" site_id="110904" xmltv_id="TVE">TVE</channel>
+    <channel update="i" site="tangotv.lu" site_id="110905" xmltv_id="Action">Action</channel>
+    <channel update="i" site="tangotv.lu" site_id="110906" xmltv_id="LCI">LCI</channel>
+    <channel update="i" site="tangotv.lu" site_id="110907" xmltv_id="La Une">La Une</channel>
+    <channel update="i" site="tangotv.lu" site_id="110908" xmltv_id="La Deux">La Deux</channel>
+    <channel update="i" site="tangotv.lu" site_id="110909" xmltv_id="Baby F">Baby F</channel>
+    <channel update="i" site="tangotv.lu" site_id="110910" xmltv_id="RFMTV">RFMTV</channel>
+    <channel update="i" site="tangotv.lu" site_id="110911" xmltv_id="DisneyC">DisneyC</channel>
+    <channel update="i" site="tangotv.lu" site_id="110912" xmltv_id="DisnJrF">DisnJrF</channel>
+    <channel update="i" site="tangotv.lu" site_id="110913" xmltv_id="DisneyF">DisneyF</channel>
+    <channel update="i" site="tangotv.lu" site_id="110914" xmltv_id="Tiji">Tiji</channel>
+    <channel update="i" site="tangotv.lu" site_id="110916" xmltv_id="Mangas">Mangas</channel>
+    <channel update="i" site="tangotv.lu" site_id="110917" xmltv_id="Ushuaia">Ushuaia</channel>
+    <channel update="i" site="tangotv.lu" site_id="110918" xmltv_id="NGC F">NGC F</channel>
+    <channel update="i" site="tangotv.lu" site_id="110919" xmltv_id="Animx">Animx</channel>
+    <channel update="i" site="tangotv.lu" site_id="110921" xmltv_id="Histoire">Histoire</channel>
+    <channel update="i" site="tangotv.lu" site_id="110922" xmltv_id="Moteurs">Moteurs</channel>
+    <channel update="i" site="tangotv.lu" site_id="110923" xmltv_id="Breizh">Breizh</channel>
+    <channel update="i" site="tangotv.lu" site_id="110925" xmltv_id="Mediaset">Mediaset</channel>
+    <channel update="i" site="tangotv.lu" site_id="110926" xmltv_id="RAINews">RAINews</channel>
+    <channel update="i" site="tangotv.lu" site_id="110927" xmltv_id="Canal J">Canal J</channel>
+    <channel update="i" site="tangotv.lu" site_id="110928" xmltv_id="France4">France4</channel>
+    <channel update="i" site="tangotv.lu" site_id="110929" xmltv_id="France5">France5</channel>
+    <channel update="i" site="tangotv.lu" site_id="110930" xmltv_id="DisnXDf">DisnXDf</channel>
+    <channel update="i" site="tangotv.lu" site_id="110931" xmltv_id="AB4">AB4</channel>
+    <channel update="i" site="tangotv.lu" site_id="110932" xmltv_id="RTL-TVI">RTL-TVI</channel>
+    <channel update="i" site="tangotv.lu" site_id="110933" xmltv_id="Plug RTL">Plug RTL</channel>
+    <channel update="i" site="tangotv.lu" site_id="110934" xmltv_id="SunF HD">SunF HD</channel>
+    <channel update="i" site="tangotv.lu" site_id="110935" xmltv_id="11pl01F">11pl01F</channel>
+    <channel update="i" site="tangotv.lu" site_id="110936" xmltv_id="11pl02F">11pl02F</channel>
+    <channel update="i" site="tangotv.lu" site_id="110937" xmltv_id="11pl03F">11pl03F</channel>
+    <channel update="i" site="tangotv.lu" site_id="110938" xmltv_id="11pl04F">11pl04F</channel>
+    <channel update="i" site="tangotv.lu" site_id="110939" xmltv_id="11pl05F">11pl05F</channel>
+    <channel update="i" site="tangotv.lu" site_id="110940" xmltv_id="11pl06F">11pl06F</channel>
+    <channel update="i" site="tangotv.lu" site_id="110941" xmltv_id="11pl07F">11pl07F</channel>
+    <channel update="i" site="tangotv.lu" site_id="110942" xmltv_id="11pl08F">11pl08F</channel>
+    <channel update="i" site="tangotv.lu" site_id="110943" xmltv_id="11pl09F">11pl09F</channel>
+    <channel update="i" site="tangotv.lu" site_id="110945" xmltv_id="Bloomb">Bloomb</channel>
+    <channel update="i" site="tangotv.lu" site_id="110946" xmltv_id="TREK">TREK</channel>
+    <channel update="i" site="tangotv.lu" site_id="110947" xmltv_id="ClubRTL">ClubRTL</channel>
+    <channel update="i" site="tangotv.lu" site_id="110948" xmltv_id="Voyage">Voyage</channel>
+    <channel update="i" site="tangotv.lu" site_id="110952" xmltv_id="RTL 4">RTL 4</channel>
+    <channel update="i" site="tangotv.lu" site_id="110953" xmltv_id="RTL 5">RTL 5</channel>
+    <channel update="i" site="tangotv.lu" site_id="110954" xmltv_id="RTL 7">RTL 7</channel>
+    <channel update="i" site="tangotv.lu" site_id="110955" xmltv_id="RTL 8">RTL 8</channel>
+    <channel update="i" site="tangotv.lu" site_id="110957" xmltv_id="W9">W9</channel>
+    <channel update="i" site="tangotv.lu" site_id="110959" xmltv_id="FranceO">FranceO</channel>
+    <channel update="i" site="tangotv.lu" site_id="110960" xmltv_id="RTL TV">RTL TV</channel>
+    <channel update="i" site="tangotv.lu" site_id="110961" xmltv_id="PRO 7">PRO 7</channel>
+    <channel update="i" site="tangotv.lu" site_id="110962" xmltv_id="SAT 1">SAT 1</channel>
+    <channel update="i" site="tangotv.lu" site_id="110963" xmltv_id="RTL 2">RTL 2</channel>
+    <channel update="i" site="tangotv.lu" site_id="110964" xmltv_id="VOX">VOX</channel>
+    <channel update="i" site="tangotv.lu" site_id="110965" xmltv_id="Kabel1">Kabel1</channel>
+    <channel update="i" site="tangotv.lu" site_id="110966" xmltv_id="SuperRTL">SuperRTL</channel>
+    <channel update="i" site="tangotv.lu" site_id="110967" xmltv_id="N TV">N TV</channel>
+    <channel update="i" site="tangotv.lu" site_id="110968" xmltv_id="N 24">N 24</channel>
+    <channel update="i" site="tangotv.lu" site_id="110969" xmltv_id="Tele 5">Tele 5</channel>
+    <channel update="i" site="tangotv.lu" site_id="110970" xmltv_id="3sat">3sat</channel>
+    <channel update="i" site="tangotv.lu" site_id="110971" xmltv_id="KiKa">KiKa</channel>
+    <channel update="i" site="tangotv.lu" site_id="110972" xmltv_id="Phoenix">Phoenix</channel>
+    <channel update="i" site="tangotv.lu" site_id="110973" xmltv_id="SR">SR</channel>
+    <channel update="i" site="tangotv.lu" site_id="110974" xmltv_id="WDR">WDR</channel>
+    <channel update="i" site="tangotv.lu" site_id="110975" xmltv_id="BR">BR</channel>
+    <channel update="i" site="tangotv.lu" site_id="110976" xmltv_id="SWF">SWF</channel>
+    <channel update="i" site="tangotv.lu" site_id="110977" xmltv_id="RBB">RBB</channel>
+    <channel update="i" site="tangotv.lu" site_id="110978" xmltv_id="RB TV">RB TV</channel>
+    <channel update="i" site="tangotv.lu" site_id="110979" xmltv_id="HR">HR</channel>
+    <channel update="i" site="tangotv.lu" site_id="110980" xmltv_id="ZDF Neo">ZDF Neo</channel>
+    <channel update="i" site="tangotv.lu" site_id="110981" xmltv_id="ZDF Info">ZDF Info</channel>
+    <channel update="i" site="tangotv.lu" site_id="110982" xmltv_id="ZDF Kult">ZDF Kult</channel>
+    <channel update="i" site="tangotv.lu" site_id="110983" xmltv_id="T 24">T 24</channel>
+    <channel update="i" site="tangotv.lu" site_id="110984" xmltv_id="Eins F">Eins F</channel>
+    <channel update="i" site="tangotv.lu" site_id="110985" xmltv_id="Eins Plus">Eins Plus</channel>
+    <channel update="i" site="tangotv.lu" site_id="110986" xmltv_id="BR Alpha">BR Alpha</channel>
+    <channel update="i" site="tangotv.lu" site_id="110987" xmltv_id="NDR">NDR</channel>
+    <channel update="i" site="tangotv.lu" site_id="110988" xmltv_id="MDR">MDR</channel>
+    <channel update="i" site="tangotv.lu" site_id="110989" xmltv_id="arte DE">arte DE</channel>
+    <channel update="i" site="tangotv.lu" site_id="110990" xmltv_id="arte FR">arte FR</channel>
+    <channel update="i" site="tangotv.lu" site_id="110991" xmltv_id="RTP i">RTP i</channel>
+    <channel update="i" site="tangotv.lu" site_id="110992" xmltv_id="C24H">C24H</channel>
+    <channel update="i" site="tangotv.lu" site_id="110993" xmltv_id="DW TV">DW TV</channel>
+    <channel update="i" site="tangotv.lu" site_id="110994" xmltv_id="RAI Scuol">RAI Scuol</channel>
+    <channel update="i" site="tangotv.lu" site_id="110995" xmltv_id="RAI Stori">RAI Stori</channel>
+    <channel update="i" site="tangotv.lu" site_id="110996" xmltv_id="MTV Eu">MTV Eu</channel>
+    <channel update="i" site="tangotv.lu" site_id="110998" xmltv_id="Bibel">Bibel</channel>
+    <channel update="i" site="tangotv.lu" site_id="110999" xmltv_id="Fr24 EN">Fr24 EN</channel>
+    <channel update="i" site="tangotv.lu" site_id="111000" xmltv_id="NUDOK">NUDOK</channel>
+    <channel update="i" site="tangotv.lu" site_id="111001" xmltv_id="Chamber">Chamber</channel>
+    <channel update="i" site="tangotv.lu" site_id="111002" xmltv_id="SIXX">SIXX</channel>
+    <channel update="i" site="tangotv.lu" site_id="111003" xmltv_id="DisCh DE">DisCh DE</channel>
+    <channel update="i" site="tangotv.lu" site_id="111004" xmltv_id="Dis Jr DE">Dis Jr DE</channel>
+    <channel update="i" site="tangotv.lu" site_id="111005" xmltv_id="Dis XD DE">Dis XD DE</channel>
+    <channel update="i" site="tangotv.lu" site_id="111006" xmltv_id="Dis Cin D">Dis Cin D</channel>
+    <channel update="i" site="tangotv.lu" site_id="111007" xmltv_id="Fash1">Fash1</channel>
+    <channel update="i" site="tangotv.lu" site_id="111009" xmltv_id="CNBC">CNBC</channel>
+    <channel update="i" site="tangotv.lu" site_id="232620" xmltv_id="Baby P">Baby P</channel>
+    <channel update="i" site="tangotv.lu" site_id="868154" xmltv_id="Xtrm">Xtrm</channel>
+    <channel update="i" site="tangotv.lu" site_id="868155" xmltv_id="Une HD">Une HD</channel>
+    <channel update="i" site="tangotv.lu" site_id="868156" xmltv_id="Deux HD">Deux HD</channel>
+    <channel update="i" site="tangotv.lu" site_id="868157" xmltv_id="MezzoHD">MezzoHD</channel>
+    <channel update="i" site="tangotv.lu" site_id="868158" xmltv_id="RTL HD">RTL HD</channel>
+    <channel update="i" site="tangotv.lu" site_id="868159" xmltv_id="CLUB HD">CLUB HD</channel>
+    <channel update="i" site="tangotv.lu" site_id="868160" xmltv_id="PLUG HD">PLUG HD</channel>
+    <channel update="i" site="tangotv.lu" site_id="868161" xmltv_id="11plHDF">11plHDF</channel>
+    <channel update="i" site="tangotv.lu" site_id="868162" xmltv_id="Ush HD">Ush HD</channel>
+    <channel update="i" site="tangotv.lu" site_id="868163" xmltv_id="Fra2HD">Fra2HD</channel>
+    <channel update="i" site="tangotv.lu" site_id="868164" xmltv_id="DisnHD">DisnHD</channel>
+    <channel update="i" site="tangotv.lu" site_id="868166" xmltv_id="SunF">SunF</channel>
+    <channel update="i" site="tangotv.lu" site_id="879605" xmltv_id="TF1HD">TF1HD</channel>
+    <channel update="i" site="tangotv.lu" site_id="1130060" xmltv_id="13Rue">13Rue</channel>
+    <channel update="i" site="tangotv.lu" site_id="1130061" xmltv_id="E! Fr">E! Fr</channel>
+    <channel update="i" site="tangotv.lu" site_id="1130062" xmltv_id="SyFy F">SyFy F</channel>
+    <channel update="i" site="tangotv.lu" site_id="1130063" xmltv_id="SICint">SICint</channel>
+    <channel update="i" site="tangotv.lu" site_id="1130064" xmltv_id="TVRec">TVRec</channel>
+    <channel update="i" site="tangotv.lu" site_id="1130065" xmltv_id="SICnot">SICnot</channel>
+    <channel update="i" site="tangotv.lu" site_id="1160237" xmltv_id="TVIint">TVIint</channel>
+    <channel update="i" site="tangotv.lu" site_id="3277623" xmltv_id="CartNF">CartNF</channel>
+    <channel update="i" site="tangotv.lu" site_id="3277624" xmltv_id="TCMF">TCMF</channel>
+    <channel update="i" site="tangotv.lu" site_id="3277625" xmltv_id="Boom F">Boom F</channel>
+    <channel update="i" site="tangotv.lu" site_id="3277626" xmltv_id="Passie">Passie</channel>
+    <channel update="i" site="tangotv.lu" site_id="3277627" xmltv_id="DorcelX">DorcelX</channel>
+    <channel update="i" site="tangotv.lu" site_id="3277628" xmltv_id="Pink">Pink</channel>
+    <channel update="i" site="tangotv.lu" site_id="3277629" xmltv_id="PentHD1">PentHD1</channel>
+    <channel update="i" site="tangotv.lu" site_id="3277630" xmltv_id="11pl2HDF">11pl2HDF</channel>
+    <channel update="i" site="tangotv.lu" site_id="3277631" xmltv_id="11pl3HDF">11pl3HDF</channel>
+    <channel update="i" site="tangotv.lu" site_id="3277632" xmltv_id="NgcfHD">NgcfHD</channel>
+    <channel update="i" site="tangotv.lu" site_id="3277634" xmltv_id="ARD HD">ARD HD</channel>
+    <channel update="i" site="tangotv.lu" site_id="3277635" xmltv_id="ZDF HD">ZDF HD</channel>
+    <channel update="i" site="tangotv.lu" site_id="3277636" xmltv_id="RTL TV HD">RTL TV HD</channel>
+    <channel update="i" site="tangotv.lu" site_id="3277637" xmltv_id="Pro 7 HD">Pro 7 HD</channel>
+    <channel update="i" site="tangotv.lu" site_id="3300182" xmltv_id="Jazeera">Jazeera</channel>
+    <channel update="i" site="tangotv.lu" site_id="3969912" xmltv_id="La Trois">La Trois</channel>
+    <channel update="i" site="tangotv.lu" site_id="4368981" xmltv_id="Trois HD">Trois HD</channel>
+    <channel update="i" site="tangotv.lu" site_id="4368982" xmltv_id="TMC">TMC</channel>
+    <channel update="i" site="tangotv.lu" site_id="4799984" xmltv_id="BenTV">BenTV</channel>
+    <channel update="i" site="tangotv.lu" site_id="4799985" xmltv_id="TVI Ficca">TVI Ficca</channel>
+    <channel update="i" site="tangotv.lu" site_id="4799986" xmltv_id="D8">D8</channel>
+    <channel update="i" site="tangotv.lu" site_id="4799987" xmltv_id="D17">D17</channel>
+    <channel update="i" site="tangotv.lu" site_id="4799988" xmltv_id="iTele">iTele</channel>
+    <channel update="i" site="tangotv.lu" site_id="6769428" xmltv_id="Porto Canal">Porto Canal</channel>
+    <channel update="i" site="tangotv.lu" site_id="6902382" xmltv_id="WldnHD">WldnHD</channel>
+    <channel update="i" site="tangotv.lu" site_id="6902383" xmltv_id="ESN1F">ESN1F</channel>
+    <channel update="i" site="tangotv.lu" site_id="6902384" xmltv_id="ESN2F">ESN2F</channel>
+    <channel update="i" site="tangotv.lu" site_id="6902385" xmltv_id="ESN1FHD">ESN1FHD</channel>
+    <channel update="i" site="tangotv.lu" site_id="6902386" xmltv_id="ESN2FHD">ESN2FHD</channel>
+    <channel update="i" site="tangotv.lu" site_id="6902387" xmltv_id="M6HD">M6HD</channel>
+    <channel update="i" site="tangotv.lu" site_id="6902388" xmltv_id="W9HD">W9HD</channel>
+    <channel update="i" site="tangotv.lu" site_id="6902389" xmltv_id="TMCHD">TMCHD</channel>
+    <channel update="i" site="tangotv.lu" site_id="7807373" xmltv_id="BFMTVHD">BFMTVHD</channel>
+    <channel update="i" site="tangotv.lu" site_id="7807374" xmltv_id="SCVIETV">SCVIETV</channel>
+    <channel update="i" site="tangotv.lu" site_id="7807375" xmltv_id="GloboInt">GloboInt</channel>
+    <channel update="i" site="tangotv.lu" site_id="7807376" xmltv_id="SportingT">SportingT</channel>
+    <channel update="i" site="tangotv.lu" site_id="7944919" xmltv_id="Fashion">Fashion</channel>
+  </channels>
+</site>

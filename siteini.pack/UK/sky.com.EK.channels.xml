@@ -1,0 +1,522 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<site generator-info-name="WebGrab+Plus/w MDB &amp; REX Postprocess -- version V3.0.0.23 -- Jan van Straaten" site="sky.com">
+  <channels>
+    <channel update="i" site="sky.com.EK" site_id="4101##1758" xmltv_id="4Music">4Music</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3150" xmltv_id="4seven">4seven</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3022" xmltv_id="5 USA">5 USA</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3028" xmltv_id="5SELECT">5SELECT</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3023" xmltv_id="5STAR">5STAR</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3024" xmltv_id="5STAR+1">5STAR+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3027" xmltv_id="5USA+1">5USA+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3822" xmltv_id="92 News">92 News</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1104" xmltv_id="A1TV">A1TV</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3255" xmltv_id="AAJ TAK">AAJ TAK</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3594" xmltv_id="Aastha">Aastha</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5416" xmltv_id="ABP News">ABP News</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2901" xmltv_id="Absolute">Absolute</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4373" xmltv_id="Absolute 80s">Absolute 80s</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4372" xmltv_id="Absolute 90s">Absolute 90s</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3209" xmltv_id="Abu Dhabi TV">Abu Dhabi TV</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4195" xmltv_id="Adult Channel">Adult Channel</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##6765" xmltv_id="Ahlebait TV">Ahlebait TV</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3701" xmltv_id="Ahlulbayt TV">Ahlulbayt TV</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5087" xmltv_id="Akaal Channel">Akaal Channel</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3107" xmltv_id="Al Jazeera Eng">Al Jazeera Eng</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1023" xmltv_id="Al Jazeera HD">Al Jazeera HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3825" xmltv_id="alibi HD">alibi HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2630" xmltv_id="alibi+1">alibi+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2402" xmltv_id="Animal Planet">Animal Planet</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1352" xmltv_id="Animal Plnt+1">Animal Plnt+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3813" xmltv_id="AnimalPlnt HD">AnimalPlnt HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1066" xmltv_id="Arirang TV HD">Arirang TV HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5040" xmltv_id="Arise News">Arise News</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4265" xmltv_id="ARY Family">ARY Family</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##6753" xmltv_id="ATN Bangla UK">ATN Bangla UK</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5703" xmltv_id="B4U Movies">B4U Movies</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5708" xmltv_id="B4U Music">B4U Music</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3400" xmltv_id="Babenation">Babenation</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4197" xmltv_id="babes&amp;brazzers">babes&amp;brazzers</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3645" xmltv_id="BabyTV">BabyTV</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2127" xmltv_id="BBC 6 Music">BBC 6 Music</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2012" xmltv_id="BBC ALBA">BBC ALBA</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2120" xmltv_id="BBC Asian">BBC Asian</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2021" xmltv_id="BBC Cymru 2">BBC Cymru 2</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2018" xmltv_id="BBC Four">BBC Four</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2086" xmltv_id="BBC Four HD">BBC Four HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2011" xmltv_id="BBC NEWS">BBC NEWS</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2085" xmltv_id="BBC NEWS HD">BBC NEWS HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2074" xmltv_id="BBC One CI">BBC One CI</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2105" xmltv_id="BBC One E Mid">BBC One E Mid</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2106" xmltv_id="BBC One East E">BBC One East E</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2073" xmltv_id="BBC One East W">BBC One East W</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2076" xmltv_id="BBC One HD">BBC One HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2002" xmltv_id="BBC One Lon">BBC One Lon</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2102" xmltv_id="BBC One N West">BBC One N West</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2155" xmltv_id="BBC One NE&amp;C">BBC One NE&amp;C</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2005" xmltv_id="BBC One NI">BBC One NI</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2081" xmltv_id="BBC One NI HD">BBC One NI HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2156" xmltv_id="BBC One Oxford">BBC One Oxford</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2152" xmltv_id="BBC One S East">BBC One S East</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2154" xmltv_id="BBC One S West">BBC One S West</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2004" xmltv_id="BBC One Scot">BBC One Scot</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2082" xmltv_id="BBC One ScotHD">BBC One ScotHD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2153" xmltv_id="BBC One South">BBC One South</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2101" xmltv_id="BBC One W Mid">BBC One W Mid</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2083" xmltv_id="BBC One Wal HD">BBC One Wal HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2003" xmltv_id="BBC One Wales">BBC One Wales</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2151" xmltv_id="BBC One West">BBC One West</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2103" xmltv_id="BBC One Yk&amp;Li">BBC One Yk&amp;Li</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2104" xmltv_id="BBC One Yorks">BBC One Yorks</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2072" xmltv_id="BBC Parliament">BBC Parliament</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2123" xmltv_id="BBC R Cymru">BBC R Cymru</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2124" xmltv_id="BBC R Foyle">BBC R Foyle</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2129" xmltv_id="BBC R n Gael">BBC R n Gael</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2117" xmltv_id="BBC R Scot.">BBC R Scot.</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2119" xmltv_id="BBC R Ulster">BBC R Ulster</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2118" xmltv_id="BBC R Wales">BBC R Wales</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2111" xmltv_id="BBC R1">BBC R1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2126" xmltv_id="BBC R1X">BBC R1X</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2112" xmltv_id="BBC R2">BBC R2</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2113" xmltv_id="BBC R3">BBC R3</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2128" xmltv_id="BBC R4 Ex">BBC R4 Ex</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2114" xmltv_id="BBC R4 FM">BBC R4 FM</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2115" xmltv_id="BBC R4 LW">BBC R4 LW</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2026" xmltv_id="BBC R5L">BBC R5L</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2034" xmltv_id="BBC R5SX">BBC R5SX</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2051" xmltv_id="BBC RB 1">BBC RB 1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2130" xmltv_id="BBC RLondon">BBC RLondon</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1137" xmltv_id="BBC Scotland">BBC Scotland</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2006" xmltv_id="BBC Two">BBC Two</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2075" xmltv_id="BBC Two HD">BBC Two HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2017" xmltv_id="BBC Two NI">BBC Two NI</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3015" xmltv_id="BBC Two Wal HD">BBC Two Wal HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2015" xmltv_id="BBC Two Wales">BBC Two Wales</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2122" xmltv_id="BBC WS">BBC WS</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1138" xmltv_id="BBCScotlandHD">BBCScotlandHD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3208" xmltv_id="BEN">BEN</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4100" xmltv_id="Best Direct">Best Direct</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3719" xmltv_id="BET:BlackEntTv">BET:BlackEntTv</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3371" xmltv_id="BFBS Radio">BFBS Radio</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1065" xmltv_id="BLAZE">BLAZE</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1074" xmltv_id="Bloomberg HD">Bloomberg HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4030" xmltv_id="Boomerang HD">Boomerang HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5603" xmltv_id="Boomerang+1">Boomerang+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1350" xmltv_id="Box Hits">Box Hits</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3417" xmltv_id="BoxNation">BoxNation</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3653" xmltv_id="Brit Asia TV">Brit Asia TV</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5417" xmltv_id="British Muslim">British Muslim</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##8025" xmltv_id="Browse Shop">Browse Shop</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3661" xmltv_id="BT Sport 1">BT Sport 1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3625" xmltv_id="BT Sport 1 HD">BT Sport 1 HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3663" xmltv_id="BT Sport 2">BT Sport 2</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3627" xmltv_id="BT Sport 2 HD">BT Sport 2 HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5032" xmltv_id="BT Sport 3">BT Sport 3</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3629" xmltv_id="BT Sport 3 HD">BT Sport 3 HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3141" xmltv_id="BT Sport//ESPN">BT Sport//ESPN</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1218" xmltv_id="BTSBoxOffWWE">BTSBoxOffWWE</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4040" xmltv_id="BTSpt//ESPNHD">BTSpt//ESPNHD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##6014" xmltv_id="BTSptBoxOffHD">BTSptBoxOffHD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2908" xmltv_id="Capital">Capital</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2971" xmltv_id="Capital XTRA">Capital XTRA</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4077" xmltv_id="Cartoon Net HD">Cartoon Net HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5601" xmltv_id="Cartoon Netwrk">Cartoon Netwrk</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1371" xmltv_id="Cartoonito">Cartoonito</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2020" xmltv_id="CBBC">CBBC</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2078" xmltv_id="CBBC HD">CBBC HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2019" xmltv_id="CBeebies">CBeebies</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2088" xmltv_id="CBeebies HD">CBeebies HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3617" xmltv_id="CBS Drama">CBS Drama</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4610" xmltv_id="CBS Justice">CBS Justice</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3352" xmltv_id="CBS Reality">CBS Reality</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3602" xmltv_id="CBS Reality+1">CBS Reality+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1206" xmltv_id="Celebration TV">Celebration TV</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3211" xmltv_id="CGTN">CGTN</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1048" xmltv_id="CGTN HD">CGTN HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2202" xmltv_id="Challenge">Challenge</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4332" xmltv_id="Challenge+1">Challenge+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1621" xmltv_id="Channel 4">Channel 4</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4075" xmltv_id="Channel 4 HD">Channel 4 HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1670" xmltv_id="Channel 4+1">Channel 4+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5359" xmltv_id="Channel 44">Channel 44</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1800" xmltv_id="Channel 5">Channel 5</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4058" xmltv_id="Channel 5 HD">Channel 5 HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1839" xmltv_id="Channel 5+1">Channel 5+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3687" xmltv_id="Channel 7">Channel 7</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5520" xmltv_id="Channels 24">Channels 24</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3815" xmltv_id="CHSTV">CHSTV</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##6273" xmltv_id="CITV">CITV</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3470" xmltv_id="Classic FM">Classic FM</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4371" xmltv_id="Classic Rock">Classic Rock</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4192" xmltv_id="Climax">Climax</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2507" xmltv_id="Club MTV">Club MTV</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4505" xmltv_id="Clubland TV">Clubland TV</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5610" xmltv_id="CN+1">CN+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3611" xmltv_id="CNBC">CNBC</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1088" xmltv_id="CNBC HD">CNBC HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5602" xmltv_id="CNN">CNN</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1019" xmltv_id="CNN HD">CNN HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1372" xmltv_id="COLORS HD">COLORS HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1105" xmltv_id="ColorsCineplex">ColorsCineplex</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3916" xmltv_id="ColorsRishtey">ColorsRishtey</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3802" xmltv_id="ComedyCent+1">ComedyCent+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4056" xmltv_id="ComedyCentHD">ComedyCentHD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2510" xmltv_id="ComedyCentral">ComedyCentral</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1813" xmltv_id="ComedyXtra">ComedyXtra</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3607" xmltv_id="ComedyXtra+1">ComedyXtra+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3012" xmltv_id="Craft Extra">Craft Extra</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1245" xmltv_id="Create&amp;CraftHD">Create&amp;CraftHD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4088" xmltv_id="Crime+Inv HD">Crime+Inv HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3620" xmltv_id="Crime+Inv+1">Crime+Inv+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3583" xmltv_id="Cruise Channel">Cruise Channel</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1018" xmltv_id="Cruise1st.tv">Cruise1st.tv</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3809" xmltv_id="Dave HD">Dave HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2320" xmltv_id="Dave ja vu">Dave ja vu</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5541" xmltv_id="DAYSTAR HD">DAYSTAR HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4152" xmltv_id="Desi Radio">Desi Radio</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2407" xmltv_id="Disc.History">Disc.History</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3760" xmltv_id="Disc.History+1">Disc.History+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1351" xmltv_id="Disc.Sci+1">Disc.Sci+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2406" xmltv_id="Disc.Science">Disc.Science</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2409" xmltv_id="Disc.Turbo">Disc.Turbo</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5245" xmltv_id="Disc.Turbo+1">Disc.Turbo+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4003" xmltv_id="Discovery HD">Discovery HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4548" xmltv_id="Discovery Shed">Discovery Shed</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2404" xmltv_id="Discovery+1">Discovery+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4071" xmltv_id="Disney Chnl HD">Disney Chnl HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1882" xmltv_id="Disney Chnl+1">Disney Chnl+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4073" xmltv_id="Disney Jnr HD">Disney Jnr HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1890" xmltv_id="Disney Junior+">Disney Junior+</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4070" xmltv_id="Disney XD HD">Disney XD HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1844" xmltv_id="Disney XD+1">Disney XD+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3618" xmltv_id="DMAX">DMAX</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1865" xmltv_id="DMAX+1">DMAX+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2612" xmltv_id="Drama">Drama</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1081" xmltv_id="Drama+1">Drama+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1191" xmltv_id="Dunamis TV">Dunamis TV</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1038" xmltv_id="Dunya News">Dunya News</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4028" xmltv_id="E! HD">E! HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4076" xmltv_id="E4 HD">E4 HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3300" xmltv_id="E4+1">E4+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2302" xmltv_id="Eden">Eden</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2307" xmltv_id="Eden+1">Eden+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3111" xmltv_id="Eman Channel">Eman Channel</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4604" xmltv_id="Euronews">Euronews</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4004" xmltv_id="Eurosport 1 HD">Eurosport 1 HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4009" xmltv_id="Eurosport 2 HD">Eurosport 2 HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3117" xmltv_id="EWTN Catholic">EWTN Catholic</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5354" xmltv_id="Faith UK">Faith UK</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4404" xmltv_id="Faith World TV">Faith World TV</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4044" xmltv_id="Film4 HD">Film4 HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1629" xmltv_id="Film4+1">Film4+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3590" xmltv_id="Food Network">Food Network</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3592" xmltv_id="Food Netwrk+1">Food Netwrk+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1227" xmltv_id="Foodxp">Foodxp</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5415" xmltv_id="Forces TV">Forces TV</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4023" xmltv_id="FOX HD">FOX HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1791" xmltv_id="FOX+1">FOX+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1121" xmltv_id="FRANCE 24 HD">FRANCE 24 HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1150" xmltv_id="FreeSports HD">FreeSports HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3010" xmltv_id="Gems TV">Gems TV</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4402" xmltv_id="GEO Kahani">GEO Kahani</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4407" xmltv_id="GEO News">GEO News</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4110" xmltv_id="GEO TV">GEO TV</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4538" xmltv_id="Get Lucky TV">Get Lucky TV</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1830" xmltv_id="GINXeSportsTV">GINXeSportsTV</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4156" xmltv_id="GN Radio">GN Radio</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3105" xmltv_id="GOD Channel">GOD Channel</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2903" xmltv_id="Gold">Gold</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##6513" xmltv_id="GOLD HD">GOLD HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2703" xmltv_id="GOLD+1">GOLD+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1188" xmltv_id="Good News TV">Good News TV</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2909" xmltv_id="Heart">Heart</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2928" xmltv_id="Heart 80s">Heart 80s</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1083" xmltv_id="Heart 90s">Heart 90s</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2920" xmltv_id="Heart Dance">Heart Dance</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2301" xmltv_id="HGTV">HGTV</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2309" xmltv_id="HGTV+1">HGTV+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4549" xmltv_id="Hidayat TV">Hidayat TV</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3580" xmltv_id="High Street TV 1">High Street TV 1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5706" xmltv_id="High Street TV 2">High Street TV 2</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5212" xmltv_id="High Street TV 3">High Street TV 3</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3404" xmltv_id="High Street TV 4">High Street TV 4</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1130" xmltv_id="High Street TV 5">High Street TV 5</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1004" xmltv_id="Hillsong">Hillsong</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4086" xmltv_id="History HD">History HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1891" xmltv_id="History+1">History+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1879" xmltv_id="History2">History2</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5562" xmltv_id="Hits Radio">Hits Radio</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3357" xmltv_id="Hochanda">Hochanda</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2408" xmltv_id="Home &amp; Health">Home &amp; Health</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2410" xmltv_id="HomeHealth+1">HomeHealth+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4502" xmltv_id="horror ch+1">horror ch+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3605" xmltv_id="horror channel">horror channel</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5205" xmltv_id="HUM EUROPE">HUM EUROPE</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1069" xmltv_id="HUM Masala">HUM Masala</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1134" xmltv_id="HUM News">HUM News</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2413" xmltv_id="ID">ID</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5452" xmltv_id="ID+1">ID+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5740" xmltv_id="Ideal Extra">Ideal Extra</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1244" xmltv_id="Ideal World HD">Ideal World HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3219" xmltv_id="Inspiration TV">Inspiration TV</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4461" xmltv_id="iON TV">iON TV</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3914" xmltv_id="IQRA BANGLA">IQRA BANGLA</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##6754" xmltv_id="IQRA TV">IQRA TV</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1114" xmltv_id="Iran Int'l HD">Iran Int'l HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5211" xmltv_id="Islam Ch Urdu">Islam Ch Urdu</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3214" xmltv_id="Islam Channel">Islam Channel</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4403" xmltv_id="Islam TV">Islam TV</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##6000" xmltv_id="ITV">ITV</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##6504" xmltv_id="ITV HD">ITV HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##6155" xmltv_id="ITV+1">ITV+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##6532" xmltv_id="ITV2 HD">ITV2 HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##6241" xmltv_id="ITV2+1">ITV2+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##6533" xmltv_id="ITV3 HD">ITV3 HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##6261" xmltv_id="ITV3+1">ITV3+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##6534" xmltv_id="ITV4 HD">ITV4 HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##6274" xmltv_id="ITV4+1">ITV4+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##6508" xmltv_id="ITVBe">ITVBe</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1014" xmltv_id="ITVBe+1">ITVBe+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4376" xmltv_id="Jazz FM">Jazz FM</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3354" xmltv_id="JewelleryMaker">JewelleryMaker</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5761" xmltv_id="JML Direct">JML Direct</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3753" xmltv_id="Kanshi TV">Kanshi TV</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1853" xmltv_id="Kerrang!">Kerrang!</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3383" xmltv_id="Khushkhabri">Khushkhabri</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3776" xmltv_id="KICC TV">KICC TV</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3656" xmltv_id="Kiss">Kiss</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1858" xmltv_id="KISS">KISS</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1056" xmltv_id="KTV">KTV</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1015" xmltv_id="LaLigaTV HD">LaLigaTV HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2926" xmltv_id="LBC">LBC</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1205" xmltv_id="LBC News">LBC News</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3845" xmltv_id="LFCTV HD">LFCTV HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4320" xmltv_id="Lifetime">Lifetime</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1133" xmltv_id="Live 360">Live 360</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5090" xmltv_id="London Live">London Live</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1228" xmltv_id="LoveWorld HD">LoveWorld HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4460" xmltv_id="Madani Chnl">Madani Chnl</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1877" xmltv_id="Magic">Magic</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3401" xmltv_id="MATV National">MATV National</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4536" xmltv_id="Meet the Babes">Meet the Babes</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4043" xmltv_id="More4 HD">More4 HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3310" xmltv_id="More4+1">More4+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4420" xmltv_id="Movies 24">Movies 24</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4421" xmltv_id="Movies 24+">Movies 24+</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3201" xmltv_id="mta-muslim tv">mta-muslim tv</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3831" xmltv_id="MTV HD">MTV HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2509" xmltv_id="MTV 80s">MTV 80s</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2508" xmltv_id="MTV BASE">MTV BASE</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2506" xmltv_id="MTV HITS">MTV HITS</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2512" xmltv_id="MTV MUSIC">MTV MUSIC</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3508" xmltv_id="MTV MUSIC+1">MTV MUSIC+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2511" xmltv_id="MTV OMG">MTV OMG</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2503" xmltv_id="MTV ROCKS">MTV ROCKS</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2515" xmltv_id="MTV+1">MTV+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1003" xmltv_id="MUTV HD">MUTV HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3731" xmltv_id="mytv">mytv</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4031" xmltv_id="Nat Geo HD">Nat Geo HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1847" xmltv_id="Nat Geo Wild">Nat Geo Wild</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1822" xmltv_id="Nat Geo+1">Nat Geo+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4025" xmltv_id="NatGeoWild HD">NatGeoWild HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1821" xmltv_id="NDTV 24x7">NDTV 24x7</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1026" xmltv_id="New Vision TV">New Vision TV</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5521" xmltv_id="News18">News18</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3616" xmltv_id="Newstalk">Newstalk</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3147" xmltv_id="NHK World HD">NHK World HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4039" xmltv_id="Nick Jr. HD">Nick Jr. HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4340" xmltv_id="Nick Jr.Too">Nick Jr.Too</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5089" xmltv_id="Nick Jr+1">Nick Jr+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4069" xmltv_id="NickelodeonHD">NickelodeonHD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1845" xmltv_id="Nickelodeon+1">Nickelodeon+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1849" xmltv_id="Nicktoons">Nicktoons</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3715" xmltv_id="Noor TV">Noor TV</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3403" xmltv_id="NOW 70s">NOW 70s</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4541" xmltv_id="NOW 80s">NOW 80s</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3682" xmltv_id="NOW 90s">NOW 90s</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4540" xmltv_id="NTV">NTV</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1047" xmltv_id="OUTtv">OUTtv</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3363" xmltv_id="Panjab Radio">Panjab Radio</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1036" xmltv_id="Paramount">Paramount</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1082" xmltv_id="Paramount+1">Paramount+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3800" xmltv_id="PaversShoes.tv">PaversShoes.tv</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5500" xmltv_id="PBS America">PBS America</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3258" xmltv_id="PCNE Chinese">PCNE Chinese</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1832" xmltv_id="Pick">Pick</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1836" xmltv_id="Pick+1">Pick+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3475" xmltv_id="Planet Rock">Planet Rock</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3750" xmltv_id="POP">POP</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4262" xmltv_id="POP Max">POP Max</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4263" xmltv_id="POP Max+1">POP Max+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4216" xmltv_id="POP+1">POP+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5153" xmltv_id="Premier 1 HD">Premier 1 HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1634" xmltv_id="Premier 2 HD">Premier 2 HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1129" xmltv_id="Primal Living">Primal Living</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3415" xmltv_id="Psychic Today">Psychic Today</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5715" xmltv_id="PTC PUNJABI">PTC PUNJABI</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3646" xmltv_id="PTV Global">PTV Global</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##6761" xmltv_id="QUEST">QUEST</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1128" xmltv_id="QUEST HD">QUEST HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2411" xmltv_id="Quest Red">Quest Red</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4547" xmltv_id="Quest Red+1">Quest Red+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3621" xmltv_id="QUEST+1">QUEST+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5907" xmltv_id="QVC">QVC</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4105" xmltv_id="QVC Beauty">QVC Beauty</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3359" xmltv_id="QVC Extra">QVC Extra</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4410" xmltv_id="QVC Style">QVC Style</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3636" xmltv_id="Racing TV">Racing TV</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5272" xmltv_id="Racing TV HD">Racing TV HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2904" xmltv_id="Radio X">Radio X</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2325" xmltv_id="Really">Really</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3414" xmltv_id="Record TV HD">Record TV HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1234" xmltv_id="Republic Bharat">Republic Bharat</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3116" xmltv_id="revelation">revelation</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3542" xmltv_id="ROK">ROK</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3213" xmltv_id="RT">RT</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5314" xmltv_id="RT HD">RT HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1262" xmltv_id="RTÉ 2FM">RTÉ 2FM</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1264" xmltv_id="RTÉ Lyric fm">RTÉ Lyric fm</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1263" xmltv_id="RTÉ R na G">RTÉ R na G</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1261" xmltv_id="RTÉ Radio 1">RTÉ Radio 1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5701" xmltv_id="S4C">S4C</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2296" xmltv_id="S4C HD">S4C HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3722" xmltv_id="Samaa">Samaa</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3355" xmltv_id="Sangat">Sangat</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1100" xmltv_id="Sanskar">Sanskar</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1101" xmltv_id="Scala Radio">Scala Radio</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3206" xmltv_id="Showcase">Showcase</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3650" xmltv_id="Sikh Channel">Sikh Channel</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1001" xmltv_id="Sky Action">Sky Action</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4014" xmltv_id="Sky Action HD">Sky Action HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4063" xmltv_id="Sky Arts HD">Sky Arts HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4053" xmltv_id="Sky Atlantic HD">Sky Atlantic HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1413" xmltv_id="Sky Atlantic+1">Sky Atlantic+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1143" xmltv_id="Sky Comedy HD">Sky Comedy HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1002" xmltv_id="Sky Comedy Cinema">Sky Comedy Cinema</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1212" xmltv_id="Sky Crime HD">Sky Crime HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4330" xmltv_id="Sky Crime+1">Sky Crime+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1838" xmltv_id="Sky Disney">Sky Disney</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4013" xmltv_id="Sky Disney HD">Sky Disney HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1816" xmltv_id="Sky Drama">Sky Drama</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4016" xmltv_id="Sky Drama HD">Sky Drama HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1808" xmltv_id="Sky Family">Sky Family</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4018" xmltv_id="Sky Family HD">Sky Family HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1815" xmltv_id="Sky Greats">Sky Greats</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4015" xmltv_id="Sky Greats HD">Sky Greats HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1814" xmltv_id="Sky Hits">Sky Hits</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4033" xmltv_id="Sky Hits HD">Sky Hits HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4050" xmltv_id="Sky News HD">Sky News HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4061" xmltv_id="Sky One HD">Sky One HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1403" xmltv_id="Sky One+1">Sky One+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1823" xmltv_id="Sky Prem+1">Sky Prem+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1409" xmltv_id="Sky Premiere">Sky Premiere</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4017" xmltv_id="Sky ScFi/HorHD">Sky ScFi/HorHD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1807" xmltv_id="Sky SciFi/Horror">Sky SciFi/Horror</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1322" xmltv_id="Sky Sp Golf">Sky Sp Golf</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1811" xmltv_id="Sky Superhero">Sky Superhero</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1818" xmltv_id="Sky Thriller">Sky Thriller</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4062" xmltv_id="Sky Thriller HD">Sky Thriller HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1833" xmltv_id="Sky Two">Sky Two</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4066" xmltv_id="Sky Witness HD">Sky Witness HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2205" xmltv_id="Sky Witness+1">Sky Witness+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4645" xmltv_id="SkyNewsArabia">SkyNewsArabia</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4021" xmltv_id="SkyPremiereHD">SkyPremiereHD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1333" xmltv_id="SkySp Action">SkySp Action</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4022" xmltv_id="SkySp ActionHD">SkySp ActionHD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3839" xmltv_id="SkySp Arena">SkySp Arena</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3940" xmltv_id="SkySp ArenaHD">SkySp ArenaHD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1302" xmltv_id="SkySp Cricket">SkySp Cricket</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1306" xmltv_id="SkySp F1">SkySp F1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3835" xmltv_id="SkySp F1 HD">SkySp F1 HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3838" xmltv_id="SkySp F'ball">SkySp F'ball</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3939" xmltv_id="SkySp F'ball HD">SkySp F'ball HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4026" xmltv_id="SkySp Golf HD">SkySp Golf HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4090" xmltv_id="SkySp Mix HD">SkySp Mix HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4049" xmltv_id="SkySp News HD">SkySp News HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1303" xmltv_id="SkySp PL">SkySp PL</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4010" xmltv_id="SkySp PL HD">SkySp PL HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1354" xmltv_id="SkySp Racing">SkySp Racing</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4032" xmltv_id="SkySp Racing HD">SkySp Racing HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1034" xmltv_id="SkySpBoxOff">SkySpBoxOff</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1035" xmltv_id="SkySpBoxOffHD">SkySpBoxOffHD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4081" xmltv_id="SkySpCricketHD">SkySpCricketHD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1301" xmltv_id="SkySpMainEv">SkySpMainEv</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4002" xmltv_id="SkySpMainEvHD">SkySpMainEvHD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4020" xmltv_id="SkySuperheroHD">SkySuperheroHD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1089" xmltv_id="Smithsonian">Smithsonian</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5135" xmltv_id="Smithsonian HD">Smithsonian HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2917" xmltv_id="Smooth">Smooth</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3392" xmltv_id="SonLife">SonLife</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3708" xmltv_id="Sony Action">Sony Action</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3721" xmltv_id="Sony Action+1">Sony Action+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4266" xmltv_id="Sony Channel">Sony Channel</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5338" xmltv_id="Sony Channel+1">Sony Channel+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3643" xmltv_id="Sony Classic">Sony Classic</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3751" xmltv_id="Sony Classic+1">Sony Classic+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3358" xmltv_id="Sony Crime">Sony Crime</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4046" xmltv_id="SONY MAX HD">SONY MAX HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5431" xmltv_id="SONY MAX 2">SONY MAX 2</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3709" xmltv_id="Sony Movies">Sony Movies</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3771" xmltv_id="Sony Movies+1">Sony Movies+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3631" xmltv_id="SONY SAB">SONY SAB</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4045" xmltv_id="SONY TV HD">SONY TV HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4933" xmltv_id="Spotlight TV">Spotlight TV</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3608" xmltv_id="Star Bharat">Star Bharat</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4047" xmltv_id="Star GOLD HD">Star GOLD HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5300" xmltv_id="Star Plus HD">Star Plus HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3603" xmltv_id="Starz TV">Starz TV</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5615" xmltv_id="Studio 66 2">Studio 66 2</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3530" xmltv_id="Studio 66 3">Studio 66 3</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3368" xmltv_id="Sukh Sagar">Sukh Sagar</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4074" xmltv_id="SYFY HD">SYFY HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2513" xmltv_id="SYFY+1">SYFY+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4408" xmltv_id="Takbeer TV">Takbeer TV</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5252" xmltv_id="TalkingPictures">TalkingPictures</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2902" xmltv_id="talkSPORT">talkSPORT</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3109" xmltv_id="TBN UK">TBN UK</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5605" xmltv_id="TCM Movies">TCM Movies</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5275" xmltv_id="TCM Movies+1">TCM Movies+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1268" xmltv_id="Television X">Television X</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3805" xmltv_id="Thane">Thane</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1802" xmltv_id="The Box">The Box</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3780" xmltv_id="Tiny Pop">Tiny Pop</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4261" xmltv_id="Tiny Pop+1">Tiny Pop+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1033" xmltv_id="TJC">TJC</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3812" xmltv_id="TLC HD">TLC HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5451" xmltv_id="TLC+1">TLC+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1872" xmltv_id="Together">Together</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4215" xmltv_id="Trace Latina">Trace Latina</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3505" xmltv_id="Trace Urban">Trace Urban</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3935" xmltv_id="Trace Vault">Trace Vault</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5607" xmltv_id="Travel Channel">Travel Channel</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1226" xmltv_id="Travelxp">Travelxp</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5071" xmltv_id="TRT World">TRT World</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5237" xmltv_id="TRT World HD">TRT World HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5426" xmltv_id="TV One">TV One</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3632" xmltv_id="TV Warehouse">TV Warehouse</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##5882" xmltv_id="TVC News">TVC News</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3587" xmltv_id="TVX 40+">TVX 40+</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3586" xmltv_id="TVX Bangers">TVX Bangers</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4155" xmltv_id="TWR">TWR</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2862" xmltv_id="UCB Ireland">UCB Ireland</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3720" xmltv_id="Venus TV">Venus TV</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1827" xmltv_id="VICE">VICE</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1148" xmltv_id="Virgin Radio">Virgin Radio</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3108" xmltv_id="Vox Africa">Vox Africa</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3810" xmltv_id="W HD">W HD</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2616" xmltv_id="W+1">W+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3205" xmltv_id="Word Network">Word Network</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4158" xmltv_id="WRN Europe">WRN Europe</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##4191" xmltv_id="Xpanded TV">Xpanded TV</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##3421" xmltv_id="Xpanded TV2">Xpanded TV2</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1031" xmltv_id="XXX Big&amp;Bouncy">XXX Big&amp;Bouncy</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1028" xmltv_id="XXX College">XXX College</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1029" xmltv_id="XXX Girl Girl">XXX Girl Girl</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1754" xmltv_id="XXX Mums">XXX Mums</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1030" xmltv_id="XXXpublicpikups">XXXpublicpikups</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##1058" xmltv_id="YANGA!">YANGA!</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2305" xmltv_id="YESTERDAY">YESTERDAY</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2615" xmltv_id="YESTERDAY+1">YESTERDAY+1</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2608" xmltv_id="Zee Cinema">Zee Cinema</channel>
+    <channel update="i" site="sky.com.EK" site_id="4101##2607" xmltv_id="Zee TV">Zee TV</channel>
+  </channels>
+</site>

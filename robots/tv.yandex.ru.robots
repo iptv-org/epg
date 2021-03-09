@@ -1,0 +1,12 @@
+﻿User-agent: *
+Disallow: /*/search$
+Disallow: /search$
+Disallow: /*/search?*text
+Disallow: /search?*text
+Disallow: /*/my/favorites
+Disallow: /my/favorites
+Clean-param: eventId /program/*
+Clean-param: eventId /*/program/*
+Sitemap: https://tv.yandex.ru/sitemap.xml
+Host: https://tv.yandex.ru
+

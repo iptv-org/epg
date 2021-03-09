@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site generator-info-name="WebGrab+Plus/w MDB &amp; REX Postprocess -- version V2.0.6 -- Jan van Straaten" site="zdf.de">
+  <channels>
+    <channel update="i" site="zdf.de" site_id="ZDF" xmltv_id="ZDF">ZDF</channel>
+    <channel update="i" site="zdf.de" site_id="ZDFinfo" xmltv_id="ZDFinfo">ZDFinfo</channel>
+    <channel update="i" site="zdf.de" site_id="ZDFneo" xmltv_id="ZDFneo">ZDFneo</channel>
+    <channel update="i" site="zdf.de" site_id="3sat" xmltv_id="3sat">3sat</channel>
+    <channel update="i" site="zdf.de" site_id="KI.KA" xmltv_id="KI.KA">KI.KA</channel>
+    <channel update="i" site="zdf.de" site_id="PHOENIX" xmltv_id="PHOENIX">PHOENIX</channel>
+    <channel update="i" site="zdf.de" site_id="arte" xmltv_id="arte">arte</channel>
+  </channels>
+</site>

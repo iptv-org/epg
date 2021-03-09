@@ -1,0 +1,1095 @@
+Changelog WebGrab+Plus
+
+16/06/2020
+Version 3.1
+---------------------------------------------------------------------------------------------
+- (3.0.3.5) new     : WG.common.azure.dll V1.5.1 with encrypted connection string
+            fixed   : the mess with all the azure references and nuget packages
+- (3.0.3.4) changed : WG_Azure.dll is now an included project WG.common.azure.dll
+                        also revert to the code of WG_Azure.dll version 1.3
+            fixed   : missing ssl statement in GrabHtmlPage: ServicePointManager.ServerCertificateValidationCallback = Validator;
+- (3.0.3.3) changed : using WG_Azure version 1.4 that uses the azureconfiguration manager and the azure access data in app.config
+- (3.0.3.2) fixed   : grabexe for subdetail was not yet implemented
+            improved: grabexe speedup, will no longer write to console, only response.txt file
+            improved: path setting of the response file 
+- (3.0.3.1) fixed   : conditional urldate in postback error 
+
+09/05/2020
+Version 3.0.3 beta
+---------------------------------------------------------------------------------------------
+- (3.0.2.4) fixed   : urldate in postback expanded always to urldate day 0
+- (3.0.2.3) added   : custom license data file will deleted 30 days after being expired
+            added   : the response.txt data file used with grabexe will be deleted after being read
+- (3.0.2.2) added   : custom license handling
+            changed : default values of license update interval 1 day (was 14 days), hwupdate interval 1 hour (was 1 day)
+- (3.0.2.1) added   : the option to specify header value contenttype 'null' to overwrite the default value 'application/x-www-form-urlencode' 
+            update  : new tzdatabase based on tzdata2019c
+
+15/04/2020
+Version 3.0.2 beta (codebase 3.0.1.1)
+---------------------------------------------------------------------------------------------
+    12/04/2020 3.0.2 beta prerelease (send to jose Rodriguez for evaluation) based on code 3.0.1.1
+- (3.0.1.1) fixed   : license_option_enabled has wrong default value 'false' now 'true' (this caused disabling of license checks unless use of 'force')
+            changed : a new more relaxed version of hwid creation and matching
+            added   : azure hwid data created with previous versions of hwid will be replaced by the new values 
+            added   : license 'h' (besides license 'f' for force) will force a hwid update in case of the hw_update status , e.g. >f,h</license> for both
+    - Postprocess 2.11	
+            fixed   : wrong seriesrun conditional in line 279
+
+05/04/2020
+Version 3.0.1 beta (= codebase 3.0.0.25)
+---------------------------------------------------------------------------------------------
+- (3.0.0.25) added  : default security protocol setting Tls Tls11 Tls12 Tls13 and Ssl3 , which probably avoids using the site {securityprotcol=value}
+- (3.0.0.24) added  : security protcol setting of the http request/response by means of a sitei site {securityprotocol=value} setting  
+- (3.0.0.23)
+    - Postprocess 2.10	
+            fixed   : bug in xmltv parsing of country
+            improved: in all html pages \n replaced by \r to allow easy regex matching
+            improved: block of operations in mdb that are already done on the same element value
+23/03/2020
+Version 3.0.0 build 2 (= source code 3.0.0.22) --- 
+---------------------------------------------------------------------------------------------
+- (3.0.0.22) fixed  : decryption key was erased due to a remaining test line
+            improved: license update on_off option, update is default off, was on
+
+21/03/2020 
+Version 3.0.0 (= source code  3.0.0.21) ---> use obfuscar
+---------------------------------------------------------------------------------------------
+- (3.0.0.21) fixed  : subpage was not properly expanded in postdata in case method POST_BACK
+             fixed  : crash when no decrypt key is present in config
+- (3.0.0.20) added  : license_on_off check enables to disable or enable license check for usersnames starting with certain chars
+             fixed  : bug in config when no license or decrypt key element in config file
+             changed: benefit set when no or false password change to default (same as unregistered user)
+- (3.0.0.19) fixed  : the previous fix created a new error condition 
+             added  : in license a check of a license_on_off azure file to enable or disable license check
+             added  : optional password handling for license
+             added  : force license in config to override license update interval
+- (3.0.0.18) fixed  : a few rare conditions for which the headerlists returned errors or false values
+- (3.0.0.17) changed: the option to use an executable external grabber uses a data file 'response.txt' as interface, replacing the console interface
+- (3.0.0.16) fixed  : and another error in new code for headerlists (3.0.0.13 - 14 - 15)
+
+
+             added  : a dummy hot_cookies.txt file is created if loadcookie=hot_cookies.txt and that file doesn't exist yet
+- (3.0.0.15) fixed  : another error in new code for headerlists (3.0.0.13 - 14)
+- (3.0.0.14) fixed  : error in new code for headerlists (3.0.0.13)
+             fixed  : crash when two headers with the same headername are specified, the last occuring will be kept (overwrite)
+- (3.0.0.13) fixed  : allocation of headersets without a headerlist crash because headerindex > number of headersets
+             added  : 'channel' in url_index operations in postback expands to config_site_id 
+           improved : creation of headerlist, new code in 'static private Dictionary<int, string[]> HeaderSets(ChannelToUpdate chan , int page)'
+- (3.0.0.12) fixed  : the combination of subpage and postback
+           improved : headersets & headerlists for user in subpages and postback
+             added  : in license : create a backup of a azure user file before saving the update
+             added  : in license : use backup of azure user file if file is corrupt
+             added  : option to specify and use multiple url_index with an operation, the index pages will be merged into one
+- (3.0.0.11) fixed  : a condition that the second request in postback has no headers specified
+           improved : use default http header values when siteini value is 'blank'
+- (3.0.0.10) added  : WG++ version update check and warning
+             fixed  : headerset builder missing customheader name in header 2 and following
+           improved : in scope postback and in url_index.modify 'urldate' and 'subpage' are default expanded to 'urldate_formatted' and 'subpage_formatted'
+             fixed  : a condition that a channel doesn't exist and grabbing with subpages created an exception
+- (3.0.0.9)  added  : external grabengine option for html pages , specify url|exepath arg_1 .. arg_n}
+             added  : new readonly elements urldate_formatted and subpage_formatted
+- (3.0.0.8)  fixed  : a very rare condition that a show is added to the xmltv without a title -- added title="??"
+         completed  : expansion of variables for the second url of POST_BACK with method sequence
+- (3.0.0.7)  added  : option to specify the request method sequence for POST_BACK e.g. POST_BACK(POST,GET)
+        - Postprocess 2.09	REX
+             added  : xmltv attributes can be added in to rex target elements
+- (3.0.0.6)  added  : license benefit set value debug 'false' for 'donator_license' can be overruled by a debug attribute in the config logging element
+             fixed  : exception logging blocked when unknown timezone or request for a list of all timezones  in siteini
+        - Postprocess 2.09	REX
+             added  : epg elements 'country', 'url', 'subtitles', 'premiere' and 'previously-shown'
+- (3.0.0.5)  added  : benefit set value index_only effect
+- (3.0.0.4)  fixed  : license accepted an email mismatch 
+- (3.0.0.3)  added  : all benefit value effects on options and performance except channels_siteini
+             added  : windows & linux path for local license file
+- (3.0.0.2) changed : statistic upload permanently disabled
+             added  : license benefit set values effect imolemented for postprocess, decryption, debug, channels_total
+- (3.0.0.1)  added  : license option (license.cs)
+             added  : azure access dll
+             added  : 'new' mode decryption in addition of the existing 'legacy' mode              
+
+dd/MM/yyyy : not yet public
+Version 2.1.12	---> don't forget dotrefiner
+---------------------------------------------------------------------------------------------
+- (2.1.11.3) fixed  : argument 'alloc' in scrubstring caused the cleared the actual scrub values
+             fixed  : auto channellist removed all leading * not just only the first 
+- (2.1.11.2) fixed	: in new grabengine the option to specify a different url for the second request (POST) in case POST_BACK
+		  optimized	: header expansion of the postdata header of the second request in case of POST_BACK
+		     added	: the option to specify headersets for multi urlindex'es
+			changed	: headersets are now specified with urlindex.headers {list|} also for subpages 
+					: (subpage.headers {list|} remains possible for compatiblity)
+			 added	: the option to do channel list creation in POST_BACK
+			cleanup : a lot of code warnings
+- (2.1.11.1) fixed	: new grabengine missing postback boolean
+			 fixed	: incorrect error message "subpage headerlist value : must be an integer!!" with the default subpageheaderlist
+
+04/09/2019
+Version 2.1.11   ---> use dotrefiner
+---------------------------------------------------------------------------------------------
+- (2.1.10.3) added	: check and log of subpage headerlist values errors (only integers, no 0, not > number of headers sets)
+			 added	: default subpage headerlist  {list|} which ignores all header sets except the first one
+			 fixed	: bug in url file mode , must start with // or file:// (was \\)
+- (2.1.10.2) added	: option to use a global element in a subpage.format {list|'global_element'}
+- (2.1.10.1) new	: grabengine overhaul, completely rewritten	. 
+						It solves the problem of save and reload of cookies, e.g. in method POST-BACK 
+			 new	: temporary re-introduction of grabengine as sitedependant element 
+			 added	: new grabengine supports 'Brotli' compressed stream decompression
+			 fixed	: method=POST wan not overwritten when later method with other value	
+			 fixed	: if no headers specified , always take the defaults
+			 
+10/07/2019
+Version 2.1.10   ---> use dotrefiner
+---------------------------------------------------------------------------------------------
+- (2.1.9.4) fixed	: crash when no headers are specified
+			added	: header-set log
+	- Postprocess 2.08	REX
+			fixed	: operations max_char, max_words not properly implemented
+- (2.1.9.3) fixed	: crash when no subpage header list is specified
+			fixed	: logging of exceptions shows meaningfull stacktrace
+- (2.1.9.2) fixed	: incorrect string composr for datetime calculations due to adding >> to input value (see 2.1.9.1)
+			added	: different headers sets for subpages, (unfinished? -needs more testing)			
+- (2.1.9.1) fixed	: converting to other timezone inverted the timespan used to correct the time
+			added	: nesting of 'if' operation(s) within a 'loop' operation
+			added	: nesting of 'loop' operation(s) as part of an 'if' operation
+			added	: 'else' operation als part of 'if' 
+			added   : boolean operators & (and) | (or) ^ (xor) and ! (not) to be used in RPN style boolean preconditional expressions
+			added	: 'if' operation to enable multiple scrubstrings under the same condition
+			fixed	: operation calculate, added inputvalue>> to start of operation string if not there
+			fixed	: removed logging of special operation of config_timespan_days
+			changed	: all (5) projects of WG++ are targetted to .net 4.7.2 (prepared for possible move to .net core)
+
+11/04/2019
+Version V2.1.9  ---> use dotrefiner
+---------------------------------------------------------------------------------------------
+- fixed		the use of confuserEx caused crashes on the LINUX distro, .net 4.7 not fully supported
+- added		use of dotrefiner
+
+31/03/2019
+Version V2.1.8  ---> use confuser before distribution!!!
+---------------------------------------------------------------------------------------------
+- (2.1.7.1)	changed	: timespan definitions and implementation --integers are minutes, decimals are hours
+			added	: 'legacy' mode for timespan, if swminversion < 2.1.7.1 legacy mode
+			added	: special timespan handling of 'config_timespan_days' , converts to days as default
+			fixed	: regex pattern for encrypt message , handles the normal date variants
+			changed	: decryption is based on new init vector, same as SiteIni_Encrypt
+	- Postprocess 2.07	REX
+			fixed	: elements containing certain string values (used as placeholder for control chars)
+						were 'pruned'
+			added	: <file-name> in rex.config can contain a variable 'source_file' that will take the 
+						value of the xmltv source file (without .xml) plus text elements:
+						e.g <filename>rex_'source_file'_1.xml</filename>
+			added	: the option to do certain operations on the element value to expand e.g:
+						<desc>{Sunmary: 'description[cleanup(style=upper), max_chars=500]'}{\nActors: 'actor(, )'}</desc>
+						supported operation : cleanup with style and tags aruments, max_chars, max_words and max_sentences
+						
+
+14/03/2019
+Version V2.1.7 ---> possibly V3.0? (based on V2.1.5)
+---------------------------------------------------------------------------------------------
+- (2.1.6.7) added	: handles siteini encryption with expiry date set
+- (2.1.6.6) improved: title match procedure removes any attributes added to the title value
+			fixed	: method SOAP
+			fixed	: method POST_BACK
+			update	: decryption following SiteIni_Encrypt V1.2 rules (leaves site {..} lines unencrypted)
+			added	: control elements from site{} line : episodesystem, subtitlestype and ratingsystem, these can be
+						expanded to its value by 'site_episodesystem' , 'site_subtitlestype' and 'site:ratingsystem'
+			added	: siteini scrubstrings before site {} are blocked
+- (2.1.6.5) improved: only first channel in config for a site that has a channellist request
+						will get the attribute update set to "c", the other get "" (none)
+- (2.1.6.4) added	: channellist creation through <channel update="c" in config
+- (2.1.6.3) added   : siteini decryption
+			added	: config element decryptkey
+- (2.1.6.2) fixed   : timespan h:m was treated as d:h in some cases
+			improved: timespan input value decimal hours will convert to h:m or d:h:m
+			fixed   : strange timezone parsing issue
+			update  : new tzdatabase based on tzdata2018i
+- (2.1.6.1) update  : new tzdatabase based on tzdata2018g
+
+		 >	Version 2.1.6 (Unfinished, cannot be published, kept on hold! )
+		|	---------------------------------------------------------------------------------
+		|	- (2.1.5.6) added	: method REST
+		|	- (2.1.5.5) work in progress
+		|	- (2.1.5.4) work in progress
+		|	- (2.1.5.3) linux test evaluation version
+		|	- (2.1.5.2) work in progress
+		|	- (2.1.5.1) fixed   : show.Programme.Titles.First() not expanded to its value
+		|	- (2.1.5.1) fixed   : bug in cleanup style=roman2arabicnumeral
+		|	- Postprocess 2.0.6:
+		|		- (2.1.5.6) added          : method REST
+		|		- (2.1.5.5) added          : condition to prevent that unselected shows are procesed with 
+		|										allocation/presentation setting that erase them because missing mdb elements
+		|		- (2.1.5.4) fixed          : allocation/presentation for category
+		|		- (2.1.5.2) added          : all xmtv elements processed in update xmltv
+		|		- (2.1.5.2) fixed          : a few errors in evaluate content of rexconfig
+		|		- (2.1.5.1) added          : expand primarysearch headers for mdb_variable_element, x_title, x_subtitle 
+		|										and x_productiondate
+		|		- (2.1.5.1) in progress    : implement allocation /presentation to use attributes and attribute matching
+		|
+28/09/2017
+Version V2.1.5
+---------------------------------------------------------------------------------------------
+- (2.1.4.1) fixed    : index_title is selected if detail_title fails with no value
+- (2.1.4.1) fixed    : url_mdb_p7 and url_mdb_p8 were missing in ScrubOperations
+- Postprocess 2.06: 
+	- in progress    : implementing the xmltv attributes , using the xmltv class
+	- fixed          : matching with totals (St, Et and Pt) in xmltv episode-num failed
+	- optimized      : scrub of the mdbepisodenumlist
+	- fixed          : due to operations done several times in the various scopes 
+			elements can get multiple duplicate values
+
+19/09/2017
+Version V2.1.4
+---------------------------------------------------------------------------------------------
+- (2.1.3.2) update   : new tzdatabase based on tzdata2017b (again)
+- (2.1.3.2) fixed    : set(type=run) error in path composition in linux
+- (2.1.3.1) fixed    : previous elements were not properly implemented in class Times
+
+30/08/2017
+Version V2.1.3
+---------------------------------------------------------------------------------------------
+- (2.1.2.1) fixed    : episode values having chars like - , : etc not matched with correct pattern
+- (2.1.2.1) changed  : upgrade to .NET Framework 4.7
+
+26/08/2017
+Version V2.1.2
+---------------------------------------------------------------------------------------------
+- (2.1.1.3) improved : set(type=run) accepts absolute and relative executable file locations
+- (2.1.1.3) fixed    : global temp elements no longer overwritten with empty values in subsequent scopes
+- (2.1.1.3) improved : xmltv attribute name and value extraction (no false names , value may contain ())
+- (2.1.1.3) fixed    : incomplete debug logging for calculate format conversion operations
+- (2.1.1.3) improved : set(type=run) looks for the exe to run in the siteini folders
+- (2.1.1.2) fixed    : country element without value no longer created if only lang attribute
+- (2.1.1.1) improved : episode pattern matching values St, Et and Pt are now included in the evaluation
+- (2.1.1.1) fixed    : incorrect error logging episode pattern matching
+- (2.1.1.1) fixed    : incomplete debug logging for cleanup operations
+
+09/08/2017
+Version V2.1.1
+---------------------------------------------------------------------------------------------
+- (2.1.0.5) fixed    : removed index_title from xmltv output if detail/subdetail_title available
+- (2.1.0.4) fixed    : bug in UrlsShow composition causing exception
+- (2.1.0.3) added    : preload url for showdetails + support for headers
+- (2.1.0.2) fixed    : bug in ParseElementAttributes()
+- (2.1.0.2) improved : element/attribute composition of starrating  , video and rating/icon
+- (2.1.0.1) added    : full support of xmltv attributes
+- (2.1.0.1) improved : xmltv.dll 
+- (2.1.0.1) added    : general site dependent parameter 'langoverrule' which value overrules the lang 
+                component of cultureinfo as default lang attribute value.
+- (2.1.0.1) added    : log warning if siteini is in channelfile creation mode
+- (2.1.0.1) added    : log warning if siteini contains active debug arguments
+
+19/06/2017
+Version V2.1
+---------------------------------------------------------------------------------------------
+- Full version release, same source as V2.0.7 beta
+
+02/06/2017
+Version V2.0.7
+---------------------------------------------------------------------------------------------
+- (2.0.6.1) added     : cleanup(style=roman2arabicnumeral) Converts roman numerals into arabic
+- (2.0.6.2) Postprocess 2.05: 
+	- fixed : starratingvotes was not properly implemented (missing as mdb value)
+- (2.0.6.3) improved  : start and stop time handling from mixed index and detail pages
+
+14/05/2017
+Version V2.0.6
+---------------------------------------------------------------------------------------------
+- added     : the option to keep epg data for a number of past days, using the new 
+              <timespan attribute 'keeppastdays' in the config file
+- added     : <timespan attribute 'oneshowonly' to specify the time of the oneshowonly update mode
+              (The old way of specifying this <timespan>3 9:30</timespan> is maintained)
+			  example <timespan keeppastdays="2" oneshowonly="9:30">3</timespan>
+- fixed     : config <mode>d</mode> , the path of the output xmltv file was not properly composed.
+
+
+02/04/2017
+Version V2.0.5
+---------------------------------------------------------------------------------------------
+- update    : new tzdatabase based on tzdata2017b
+- added     : element list only debugging mode : element.modify {(debug)}
+- added     : urldate type weekdayname longer than 7 days
+
+23/03/2017
+Version V2.0.4
+---------------------------------------------------------------------------------------------
+- fixed     : exception during subdetailurlheader composition.
+
+17/03/2017
+Version V2.0.3
+---------------------------------------------------------------------------------------------
+- fixed		: exception while grabbing robots data due to missing dummy headers (required since V2.0.2)
+- Postprocess 2.04: 
+	- added		: log of output file written succesfully in MDB and REX
+	- added		: log warnings of irregular mdb.config and rex.config allocation specifications
+
+06/03/2017
+Version V2.0.2
+----------------------------------------------------------------------------------------------
+- fixed		: an exception occured with hour value 24 while parsing to a datetime
+- added		: header and element expansion support for preload url
+- improved	: console logging of c,r,g updates
+- Postprocess 2.03: 
+	- changed	: headers in dictionary (needed because of preload headers)
+	- fixed		: wrong error report when wrong mdinitype 		
+
+19/02/2017
+Version V2.0.1
+----------------------------------------------------------------------------------------------
+- fixed     : fix global_temp_x.scrub
+- fixed     : fix global_temp_x.modify in datalogo
+
+12/02/2017
+Version V2.0 (same as Beta 1.57.1)
+----------------------------------------------------------------------------------------------
+- update	: new installer
+
+Old style installer
+Run patchexe.bat 'as administrator' will update your (windows) WebGrab+Plus V1.1.1 to the latest build.
+Linux users can use the included WebGrab+Plus.exe and xmltv.dll to replace it manually with the one in use.
+
+Beta 1.57.1
+- fixed		: cleanup(style=htmlencodespecialchar) to encode the whole range and not only above char 160.
+- improved	: logging of episode pattern handling
+- fixed		: remove significance of spaces and uppercase in episode pattern handling
+- added		: bitwise calculations shift right and shift left, operators 'shiftr' and 'shiftl' resp
+- added		: base64decode output format : string (default) and decimal, specified in cleanup as (style=base64decode,dec) or (style=base64decode,decimal)
+- update    : new tzdatabase based on tzdata2016g
+- update    : new tzdatabase based on tzdata2016h
+- update    : new tzdatabase based on tzdata2016i
+- fixed		: incremental update process failed (always (c)) if indexstart was only determined by a modify
+
+03/08/2016
+Version V1.57.0 (same as Beta 56.29)
+----------------------------------------------------------------------------------------------
+
+Beta 56.29
+- update    : update the V2 version schema
+- fixed     : when duration or stop without a date component is specified 
+              the date of the next start- and stoptime is sometimes 1 day off
+- improved	: calculate(timezone=timezone_id) uses start or stop pattern when the element is any start or stop
+- improved	: error and warning logging of calculate(timezone=timezone_id)
+
+Beta 56.28
+- changed   : date time calculation result uses the cultinfo from the siteini (not the currentculture) 
+- added     : default episodesystem "onscreen" if episode pattern is used and no system defined in siteini
+- update    : new tzdatabase based on tzdata2016f
+- fixed     : extracting preconditionals when episide pattern has multiple patterns
+
+Beta 56.27
+- fixed     : index_episode was processed while applying episode pattern to (detail-) or (subdetail_)episode
+- fixed     : error that rejected a episode pattern that matched the one element minimum requirement
+- Postprocess 2.02:
+    - fixed     : a movie show that was also selected and matched as serie will not be updated in the target xmltv
+                  because it's already updated as serie
+    - fixed     : a serie show in ldb will be ignored for a movie
+    - fixed     : a movie match with the same showid as a serie in ldb will be saved as a separate entry
+    - improved  : logging of select (re)added in logfile and console
+
+Beta 56.26
+- improved  : datetime patterns in start and stop also supported for scrub and modify.
+- added     : episodenum pattern support in scrub and modify
+- update    : new tzdatabase based on tzdata2016e
+- improved  : description will remain empty if composed of multi empty elements (was a single .)
+- Postprocess 2.01:
+    - added     : attribute lang support for subtitle and mdb-subtitle in REX
+    - fixed     : when both episode-title and episode-num are in mustmatch 
+                  the mustnum is decreased by 1 to allow matching if only one of the two is matched
+
+Beta 56.25
+- added     : cleanup style htmlencodespecialchar and style htmldecodespecialchar
+- improved  : cleanup converts html character entities (like &auml;) to the actual char by default
+- added     : time pattern without date component
+- fixed     : calculate 'indexof' @ , small bug that removed the first and last char of the inputstring
+- added     : WG.common.xmltv containing (among others) episodenum class to validate and convert episodenum values.
+- Postprocess 2.0:
+    - MDB part:
+        - added    : scopes, 3 levels; primarysearch, match and getelements
+        - added    : for series, mustmatch of episode-num implemented, allows series episode matching with episede numbers;
+        - added    : two new elements : episodenumlist and episodetitlelist
+                that will contain all episodenums or episodetitles for the serie under inspection
+        - added    : in mdb.config the element <episodenum_pattern> to describe the episodenumber format of the xmltv input.
+        - added    : default settings for select and match in mdb.config
+        . added    : MdbIniType in MdbIni to verify if a mdbini is of type "movie" or "serie"
+
+Beta 56.24
+- Postprocess 1.15:
+        - added    : muti charset support (for primary search and mdbsite)
+
+Beta 56.23
+- fixed     : time pattern for nextstart was not properly implemented
+- fixed     : in calculate, format=date,"formatstring", formatstring containing space was not properly implemented
+- fixed     : correct error handling on page download fail
+- fixed     : command select crashes if 'whathow' cannot be split in 'what' and 'how'
+- fixed     : Time pattern handling for nextstart fixed
+- fixed     : subpage calculations 64-bit
+- fixed     : channel update with ' in the channelId
+- added     : cleanup(style=base64decode), will decode a base64 encoded string
+- added     : calculate(format=chartodec), will a character to a decimal value (padding with 0's until 3 digits, ma.255). If the element is longer that 1 char, it will concatenate all converted chars into one long string.
+- Postprocess 1.14:
+        - fixed     : retry run with series mdbini's failed due to leftover mdb_episode_id from previous first run
+        - fixed     : mdb run fails (no config settins available)
+
+Beta 56.22
+- update    : new tzdatabase based on tzdata2016c
+- fixed     : escaped config entries are causing problems
+
+Beta 56.21
+- added     : file:// now supports relative paths (relative from the siteini file)
+- fix       : combi-channel fails if update=incremental
+- fix       : a channel update value of "" means None and not Undefined
+- update    : new tzdatabase based on tzdata2016b
+
+Beta 56.20
+- fixed     : failing incremental update on mode when xmltv_id contained a backslash
+
+Beta 56.19
+- fixed     : empty <update> resulted in no grabbing
+- fixed     : adding better logging when identical revisions were found in the siteini header
+
+Beta 56.18
+- fixed     : broken incremental update
+- fixed     : same_as broken after new config implementation (channel grouping)
+- added        : extra config validation
+
+Beta 56.17
+- added        : calculate(timezone=timezone_id) Converts a time into another timezone
+- added        : calculate(format=timespan,hours)|t1 t2 -} t1 and t2 times in decimal Unix, Java or ticks time format
+- fixed        : date calculation if stop from detail (next date more than 1 day later)
+
+Beta 56.16
+- removed    : wget is no longer supported
+- added        : <filename> can now be a relative path (seen from the WebGrab++.config.xml file)
+- added        : channel grouping with <channels>
+- changed    : Searching for siteini's now in fixed locations, WGHome (commandline or default), subfolder siteini.user and siteini.user
+- Postprocess 1.13:
+        - changed    : Searching for mdbini's now in fixed locations, WGHome(commandline or default) subfolder MDB, subfolder siteini.user 
+        and siteini.user
+        - added     : <filename> & <ldbfilename> can now be a relative path (seen from the mdb.config.xml file)
+        - added     : <filename> can now be a relative path (seen from the rex.config.xml file)
+
+Beta 56.15
+- update    : new tzdatabase based on tzdata2016a
+- Postprocess 1.12:
+        - fix : matchoptionals in series didn't work because the episode_id was not yet available
+
+Beta 56.14
+- fix        : crash during removing overlapping shows
+- fix        : crash during cleanup(style=name)
+- fix        : timespan calculations with integer values 
+
+Beta 56.12
+- fix        : crash when no index_start or index_stop scrub was defined
+- Postproces 1.11: 
+        - mdb_title will also be scrubbed if not in mustmatch list
+        - Elementnames show_id and episode_id replaced by mdb_show_id and mdb_episode_id for mdbini's  SWMinVersion below 56.12
+        - improved unselect options (accepts tags)
+        - added mdb_temp_7 .. 9
+        - allow loop {(each ..)}
+        - IMdbElements added
+Beta 56.11
+- fix        : bug introduced in 56.10 (invalid "time parsing error")
+- improved    : better recovery of guide data when error occurs during grabbing
+Beta 56.10
+- fix         : invalid "time parsing error"
+- change    : now modifies, should not change the number of multi elements
+            : just clear and remove(type=elements) should change that
+- improved     : MDB 'mustcontain' and 'unselect'
+Beta 56.09
+- improved    : total timings 
+- improved    : datetime pattern, stoppattern doesn't default to startpattern anymore
+- fix         : wrong channel numbering during logging (+ refactor the code)
+Beta 56.08
+- fix         : global_ issues in datelogo and postdata scrubs
+- added     : xmltv time logging
+- added     : times logging after string to time converge
+- change     : in split titles to improve title matching
+Beta 56.07
+- PostProcess V1.10: logging improved, XPath bug fixed, mdb_production date improved
+- update       : change some logging
+- fix        : in SelectNodes , PostProcess, Xpath. Added Utils XPathEscapeDoubleQuotes
+- fix        : in removeduplicates, keeplast
+- fix        : HTTP header Accept default value to */*
+Beta 56.06
+- make cookie file reader more robust (now lines without expires are accepted)
+- adding global_temp_1 -> global_temp_9
+- speedup slow StringBuilder parts
+Beta 56.05
+- bug fixed: fixing failing siteini header parsing
+Beta 56.04
+Beta 56.03
+-  same as 56.02, but now correct binary file
+Beta 56.02
+- bug fixed: file:\\ changed to the correct file:// URI. (local file failing on mono/linux)
+Beta 56.01
+- bug fixed in times with pattern that mixed up month and day
+- added , command sort, sorting by datetime, e.g. sort(descending,datetime)
+
+28/09/2015
+Version V1.1.1/55 (same as Beta 55.27)
+------------------------------------------------------------------------------------------------
+From Beta 55.27
+    - PostProcess V1.9: added mdb-category
+    - bug fixed: issue on Mono with PostProcess (MDB and REX) during removing of elements
+    - improved: Date/Time Pattern to take into account the sites Culture info
+From Beta 55.26
+    - added: xmltv elements url (= program url) and country
+    - added: argument pattern= to specify a non standard start and/or stop time result from scrub.
+    - bug fixed: problem with include and/or exclude arguments in scrub
+    - ProgramInfo: add initialization check
+    - Logger: don't log to file, if no file was set
+    - bug fixed: error on cleanup/keeplast, when no info is found
+    - added: static ProgramInfo class. Contains info (author, fullname, co-author, ...)
+    - move some common stuff to WG.Common
+    - adjust minor logging
+    - An interface can never have attributes on its properties. So declare them on the real classes
+    - fix manifest issues (after renaming)
+    - rename namespaces + move logger to its own namespace
+    - Move LogSpecial() out of Log class
+    - move RandomWord to Utils class
+    - adding ideabox.txt file
+    - change Logger into Log
+    - only set in one place, the log file path
+    - moving IElements and co, to a separate file
+    - adding temp_7,temp_8 and temp_9 (thanks IElements) ?
+    - make advantage of IElements where possible
+    - Solves times without start.scrub, accepts datetime string of syntax 'dateTtime'
+    - add comment to notify a "bug"
+From Beta 55.25
+    - changed: grouping elements (internal data structure)
+    - bug fixed: AddScope bug with index_showsplit inside an already existing scope
+From Beta 55.24
+    - bug fixed: subdetails got copied from previous show, when no subdetail page was grabbed
+From Beta 55.23
+    - bug fixed: wget correct lowercase function call (fails on linux)
+    - bug fixed: partial fix for | edit
+    - changed: clear tmp index page, because it is not collected by the GC (reduce memory footprint)
+    - changed: adding out of memory info during exception 
+From Beta 55.22
+    - bug fixed: crash when no user-agent was defined (introduced in Beta 55.21)
+    - changed: try to reduce the memory footprint (especially with very large index pages)
+From Beta 55.21
+    - added: profiler (only for developers)
+    - changed: util class now fully static
+    - changed: logger also more static
+    - changed: Remove \r and \n from user-agent, because this is an invalid value on linux.
+    - changed: Use also the encoder type for reading directly from a file:\\
+    - changed: only read the stream if it is not a redirect (speed up during redirections)
+From Beta 55.20
+    - changed: small fix bug  (but important)
+From Beta 55.19
+    - changed: speedup unidecode
+    - changed: speedup title matching + fix memory bug
+From Beta 55.18
+    - bug fixed: crash on logger in WebGrab.Grab.FetchHtmlPage (introduced in 55.16)
+From Beta 55.17
+    - bug fixed: formatted date not always correct done (now invariant culture output)
+From Beta 55.16
+    - added: new logger instance
+    - changed: speedup splitindex parsing
+    - changed: MDB fix crash on invalid ID
+    - changed: made productiondate detection more robust
+    - changed: some other minor fixes
+From Beta 55.15 (first build from repo)
+    - bug fixed: "!?!?!" should be also "!??!"
+    - bug fixed: "!??!" replaced with "|" during output now
+From Beta 55.14
+    - PostProcess
+        - bug fixed: allows one letter subtitles in MDB 
+From Beta 55.13
+        - added    : command set: element.modify {set(opt args)|expression_1}
+                    will set element to the value of expression_1 irrespective of the current value of element
+        - bug fixed: the date of the next start was not properly determined
+        - added    : numeric datetimes values (e.g UNIX and Ticks) in start and stop are now supported
+        - added    : the datetimeformat in calculate format=time,datetimeformat accept a space if entered between "" , like format=time,"yyyy/MM/dd HH:mm"
+        - bug fixed: headers for urlshow was identical to those for urlsubdetail.
+From Beta 55.12
+    - improved: loading cookies into the htpp request rejects non valid cookies
+From Beta 55.11
+    - bug fixed: logging of shows added in case of times from showdetail page was inaccurate
+    - changed : scope splitindex allows operations with the absence of index_showsplit.modify 
+    - changed : index_showsplit.modify gets scope=splitindex automatically
+    - changed : de base date for urldate.format changed to site date (was computer date)
+    - added   : error handling and logging of cultureinfo entry in siteini
+    - bug fixed: stop time with date component not always properly implemented
+    - bug fixed: unit test firstshow  failed
+    - bug fixed: basic unittest stop time not properly saved 
+    - first evaluation version with the new 'times' class
+    - details of this class:
+    -- allows a date component in start and stop
+    -- possible time input combinations:
+        start only 
+        start with date only
+        start and stop 
+        start with date and stop
+        start and date both with date
+        start and duration
+        start with date and duration
+        all the combinations above from the detail show 
+            (these 'mode' have reduced functionality elsewhere, no incremental grabbing and no 'oneshow-only' debugging)
+        date from index_page with all the combinations above without date component
+        start from index show (with or without date) and stop from detail show 
+        start from index show (with or without date) and duration from detail show     
+    -- allows duration in minutes besides the HH:mm 
+    -- allows duration in dd:HH:mm (recommended, enables > 24h)
+    -- improved globalisation of datetime formats
+    -- automatic timeoverlap detection and correction
+    - improved: the addition of 55.11.2 now also works if the an error occurred during grabbing
+    - added   : if the index_page fails to grab the existing xmltv data will be restored and the update process will be interrupted.
+    - changed : the bug fixed in beta 55.7 that corrected the error that shows were blocked that happened on the day before of the user timezone 
+                into shows being blocked that are actually already past, is now changed that all shows are blocked that took place on the day before the actual day in the tvguide timezone.
+    - added   : logging of the .net version and the mono version
+From Beta 55.10
+    - MDB/REX postprocess V1.8
+        - bug fixed: in REX : runtime error if description end with ()
+        - improved : in REX : expand logged a warning if the input string is ""
+        from Eval 55.10.2
+    - bug fixed: introduced through the changes made in 5.10.1 in scrub type url composing the headstring and the scrubresult
+        from Eval 55.10.1
+    - improved: scrub results for empty values , for single, multi and regex, are properly passed.
+From Beta 55.9
+    - MDB postprocess V 1.7
+        - improved : new matching algoritme for serie location in the local DB. Now finds the best matching serie episode rather than 
+          the first one that passes the matching criteria.
+From Beta 55.8
+    - bug fixed: update mode in XmlSource was implemented on basis of local times instead of guide-site times
+From Beta 55.7
+    - improved : statistics upload error handling when webgrabplus.com is unavailable.
+    - bug fixed: shows were blocked that have showtimes before local time instead of before guide-site time
+    - MDB postprocess V 1.6
+    - added: log and console warning if a match cannot be added to the local mdb file because of a conflicting show
+From Beta 55.6
+    - bug fixed: the 'improvement' in calculate in 55.3 causes errors. Reverted
+From Beta 55.5
+    - bug fixed: the combination of certain escape values resulted in a mix up
+From Beta 55.4
+    - bug fixed: in method POSTBACK VIEWSTATE value was kept in header postdata for subsequent channels
+From Beta 55.3
+    - improved : calculate returns "" if input is ""
+    - bug fixed: sort called for the wrong 'getelement' variant
+    - bug fixed: introduced with beta 55.1, spaces in some preconditionals where removed
+From Beta 55.2
+    - added    : for operation 'select' the operator can be negated with the addition 'not' in front of it 
+From Beta 55.1
+    - added    : argument keeplast or keepfirst (default) in cleanup removeduplicates
+
+07/08/2014
+Version V1.1.1/54  (= assembly version 1.1.1.5407  = evaluation version 1.54.07)
+--------------------------------------------------------------------------------------------------------
+    - bug fixed: when the config calls a non existend siteini loading empty.ini was not properly implemented
+    - bug fixed: argument value 'minimum=' was not properly implemented in MDBpostprocessor
+    - update   : new tzdatabase based on tzdata2014e
+    - changed  : default max value in each loop is length source element with a limit of 10000
+    - improved : unmatched timezone now logs al timezones sorted with coming DST date
+    - added    : timezone query  , (add ? to timezone name in ini), lists timezone details in log file
+    - bug fixed: not fully working debug switch in loops
+    - bug fixed: index_variable_element in each loop didn't work
+    - improved : parsing and error handling maxdays
+From Evaluatie V1.1.1.54.4.1
+    - bug fixed: replace type regex did not accept #### as new string (that was internally used)
+From Evaluatie V1.1.1.54.3.7
+    - improved : logging and error handling loops
+From Evaluatie V1.1.1.54.3.6
+    - added    : 'foreach' loop first implementatie 
+                    e.g loop {(debug each 'index_temp_6' in 'index_actor' max=15)|end}
+From Evaluatie V1.1.1.54.3.5
+    - changed  : loop condition is now executed as real precondition, condition false -- loop not executed
+    - improved : loop debug logging
+From Evaluatie V1.1.1.54.3.4
+    - added    : config mode switch ~ , as in <mode>#~</mode> to switch off the 3 seconds wait at the end of a run
+From Evaluatie V1.1.1.54.3.3
+    - added    : forgotten arguments for command sort  (descending ascending string integer) added to argument and preconditional ectraction
+From Evaluatie V1.1.1.54.3.2
+    - bug fixed: error in the new argument extraction corrected
+    - improved : MinSWversion check syntax check 
+From Evaluatie V1.1.1.54.3.1
+    - bug fixed: the order of the arguments in an operation created problems when the preconditional was not the first after debug
+    - improved : the overall internal extraction of preconditionals and other arguments in operations
+    - bug fixed: small typo in log  "pdate"  changed in "update"
+    - bug fixed: datetime globalization error in // indexpage overlaps ? (date MM/dd/yyyy cannot parse in dd/MM/yyyy)
+    - bug fixed: preconditionals ~~ and == were not properly implemented
+    - Postprocess V1.5
+            - added url headers 
+From Evaluation 1.54.2.1
+    - bug fixed: a conditional string between [] is considered a wildcard even if it is no * or ?
+    - bug fixed: request header host cannot be empty, condition added
+    - added    : loadcookie=cookiefilename,domain    domain=* will disable domain filter
+    - bug fixed: request header referer was not used in method GET
+    - added    : request header host
+
+26/05/2014
+Version V1.1.1/53  (= assembly version 1.1.1.5317  = evaluation version 1.53.17)
+--------------------------------------------------------------------------------------------------------
+From Beta 53.17
+    - added    : the default timezone=UTC+00:00 or WET
+    - improved : cookie syntax testing now done only for relevant cookies
+    - improved : the config credential were not expanded in the headers
+    - bug fixed: lang attribute for titleoriginal was not properly passed to xmltv in case of index_titleoriginal and subdetail_titleoriginal
+    - added    : the option to grab multiple subdetail pages
+    - improved : loadcookie (accepts empty cookie values plus generally more robust due to syntax checking)
+    - improved : firstshow=now skips all shows before fist dayjump as intended
+    - improved : shows that are fully scheduled in the dst transitions period are skipped
+    - changed  : title check actual index_title with (detail_)title now uses titlematchlev , (previously just a simple trim and lowercase)
+    - changed  : allow a space at the the beginning of a valid siteini line
+    - added    : in class TimeZones Dst cutoverDates DateTime.Kind handling
+    - added    : TimeZones classes IsDst and InTransition
+    - fixed    : TimeZones classes GetCutoverWindows, GetOffsets, ConvertToLocal and ConvertToUtc for the Dst cutoverDates DateTime.Kind parameter
+    - added    : Dst Transition period handling for transitions from standard to dst
+    - removed  : all debug additions from 1.53.15.13
+    - added    : embedded tzdata handling
+    - added    : tzdata is accepted from a single file, or if single file not exist a tzdata folder or 
+                    if tzdata folder not exist the embedded tzdata
+    - debug    : the timezones classes used are listed in the logfile to trace the linux error
+    - bug fixed: error in converttolocal in  timezones.cs (double adding of the offset)
+    - changed  : forward looking dst addapted to the timezones classes
+    - changed  : converttotime in utils is now independent from the system timezone
+    - added    : more logging of the tz addition
+    - changed  : location of the tzdata to the .exe loaction
+    - added    : error logging , try  catch in the TimeZones constructor to locate the Linux failure.
+    - added    : tzdata base, must be located in homefolder/tzdata
+    - added    : the timezone in the siteini will accept timezone names from a tzdata base.
+                    consequently the dst changes reflect the changes at the transmitter side
+    - changed  : logging and console text more standardised, mostly lower case
+    - added    : debug.n, n specifies the show index number in the indexshowslit result. Limits the debug logging to show[n] only.
+    - bug fixed: xmltv_id and channelname accept " in value
+    - added    : xmltv_id and channelname values cannot contain both ' and " during channelfile creation, then " is replaced by ¨.
+            PostProcess version 1.4
+            - improved : A channel excluded from MDB processing will now get the REX presentation update
+    - bug fixed: cleanup style=name fails when last char is a space
+    - added    : Statistic upload to the site:  # in mode of config to disable, ## to test it
+    - bug fixed: regex in substring, replace and remove with {} in it were interpreted as scrubstrings
+    - bug fixed: headers were only expanded once , therefore subsequent shows got the same headers. This of course is a problem when the headers contains variables.
+    - bug fixed: error if all channels from a site in the config have an empty update argument. This error was introduced with the new config class in 53.13.2 
+    - bug fixed: urlshow.header postdata was not properly parsed
+    - improved : speed of the auto siteini locator
+From Beta 53.15
+    - bug fixed: cookie expiration correction didn't work properly after 53.14.3
+From Evaluatie 1.53.14.3
+    - changed  : read cookie ignores non standard 'undefined' added by the FireBug cookie exporter.
+From Evaluatie 1.53.14.2
+    - bug fixed: auto siteini file locator didn't work properly with revision 0 of a siteini
+From Evaluatie 1.53.14.1
+    - added       : auto siteini file locator
+From Beta 53.14
+    - bug fixed: in REX missing element icon
+    - bug fixed: in REX missing instance of mdbscrub
+From Evaluatie 1.53.13.5
+    - added    : HttpWebrequestHeader expect experiment:
+                    specify as     url_index.headers {expect=100-continue=false} or 
+                                url_index.headers {expect=100-continue=true} or
+                                url_index.headers {expect=100-continue}  (also true)
+From Evaluatie 1.53.13.4
+    - bug fixed: update mode for all channels was not properly implemented
+From Evaluatie 1.53.13.3
+    - improved : warning when credentials are not in the config
+    - added    : icon
+From Evaluatie 1.53.13.2
+    - updated  : new config class based on xml classes rather then datatables
+    - added    : config element <credentials user="username" password="userpassword>site_id</credentials>
+    - added    : 'config_credentals_user' and 'config_user_password' can be expanded for element index_variable_element
+From Evaluatie 1.53.13.1
+    - changed  : SHA256 encoder, the first solution didn't seem correct
+From Beta 53.13
+    - bug fixed: in header expand : postdata was not stored on the right place
+From Evaluation 1.53.12.4
+    - added    : style sha256encode, md5encode and  base256encode 
+    - added    : all headers expand containing vars variable_ and temp_ elements
+From Evaluation 1.53.12.3
+    - added    : header allowautoredirect
+From Evaluation 1.53.12.1
+    - added    : test of response.statuscode 302
+From Beta 53.12
+    - added    : robots check disabled for http://localhost in urlshow and urlsubdetail
+    - improved : error handling robots check
+From Beta 53.11
+    - bug fixed: index_pages were not added up in case of subpage list
+From Beta 53.10
+    - added    : robots check disabled for http://localhost in urlindex
+From Beta 53.9
+    - bug fixed: index_pages were saved double! Don't use 53.8!!
+From Beta 53.8
+    - bug fixed: runtime error when postback without subpage 
+    - added    : new version numbering
+    - improved : operations if keepindexpage
+    - bug fixed: subpage list start value was always 0
+From Beta 53.7
+    - added    : style argument values jsondecode in cleanup(style=jsondecode)
+    - added    : step, count and startvalue in subpage accept variables ('index_variable_element and index_temp')
+    - added    : support for subpage in POSTBACK
+    - added    : argument format in subpage number and list, specifies the number format of the output
+    - improved : sort_by can now be given a value without a scrubstring, only an operation
+    - bug fixed: removed false time component from showdate  
+    - added    : style argument values unidecode and uniencode in cleanup(style=unidecode)
+From Beta 53.6
+    - bug fixed: site_id scrubstring was not correctly read in siteini
+    - added    : argument span in cleanup(removeduplicates span=2) , limits the search for duplicates to 2 shows after the one being investigated
+From Beta 53.5
+    - added    : timeformat of computer if time error in start time
+    - bug fixed: double scrub of site_id and site_channel
+    - bug fixed: robotscheck didn't handle commented lines (starting with #) properly   
+From Beta 53.4
+    - added    : create the foder for the xmlyv  target if not exist
+    - bug fixed: select in MDB postprocess didn't count the selected shows properly
+From Beta 53.3
+    - improved : compressed response stream handling , will decompress also whithout server notification
+    - added    : scope postback : to allow modification of url in the postback scrub section
+From Beta 53.2
+    -changed   : postprocessor Version update to 1.3 :   
+        - added    : version check
+        - changed  : serie and movie selection do not exclude each other anymore
+    - bug fixed: index_variable_element initiated to "" i.s.o. null (regression error wrt build 51)
+    - improved : regex without a matchgroup definition now result the top ungrouped match
+    - bug fixed: crash with timeoffset channel due to channged error handling introduced in build 52
+    - changed  : relaxed the message if no robots data was found.
+    - added    : cleanup type htmlencodespecialchars; converts chars > 127 into the html char sequence for it
+From Beta 53.1
+    - changed  
+        - added    : the mdb postprocessor is now able to extract series details 
+        - improved : xmltv attributes handling
+        - improved : allocation handling
+        - added    : xmltv target elements icon and episode-num for the mdb postproceesor 
+        - added    : in mdbpostprocessor a extra grab layer for the series details
+        - added    : in mdbposrprocessor two extra url´s (p7 and p8)
+        - added    : in mdbpostprocessor expand of episode_id
+    - improved : operation select more robust
+
+10/11/2013
+Version 1.1.1/52
+--------------------------------------------------------------------------------------------------------
+- changed  : the index_variable_element is saved and kept throughout any following scrub and operation untill updated
+- added    : cleanup(style=regex) adds all escapes to regex meta chars 
+- added    : regex in scrub accepts 'index_variable_element' as component
+- bug fixed: the bug fixed :remove and replace accepts 'real' \ characters specified as \\ was not properly implemented
+- bug fixed: index_duration was not properly formatted to the culture info used inside the program
+- added    : log of OsVersion
+- bug fixed: Mono runtime error wrt XPathstring containing /
+- bug fixed: httpwebresponse was not closed
+- changed  : httpwebrequest header accept-encoding= "gzip, deflate" is no longer default
+- improved : timespan calcuations
+- bug fixed: regex scrub accepts a \| as a 'real' |
+- added    : remove and replace accepts 'real' \ characters specified as \\
+- improved : unicode character sequence in cleanup handles also \\n, \\r and \\t
+- added    : default default httpwebrequest headers accept-encoding, pargma and cache-control
+- added    : timespan calculation
+- bug fixed: trimmed regex scrub elements from leading and trailing |
+- added    : support for SOAP web services (required for Schedules Direct EPG service)
+- bug fixed: the captures in regex scrub were not added together.
+- added    : url header credentials
+- improved : urlshow and urlsubdetail will be empty "" if the grab part doesn't return a value
+- added    : grab a local file in the indexpage with url_index {url|\\computername\path\filename}
+- added    : servicepoint experiments in grab
+- added    : cleanup arguments type=urlencode en urldecode
+- bug fixed: Regex scrub was not enabled for single value scrubstring element like title
+- improved : Regex Operations remove and replace using index and length of the relevant match
+- added    : httpwebrequest method POST_BACK for url_index
+- added    : suppages in channellist creation
+- added    : index_variable_element accepts 'config_timespan_days'
+- added    : url header 'customheader'
+- added    : the max value in a loop may contain an element name 
+
+04/08/2013
+Version V1.1.1/51
+--------------------------------------------------------------------------------------------------------
+- added    : url header 'accept'
+- bug fixed: some conditional arguments were disabled by the automatic addition of the scope
+- bug fixed: datenumber urldate was not properly calculated (timezone problem)
+- changed  : support for half hour timezone
+- changed  : forward looking dst mode is now default. To switch back to old style mode=f
+- bug fixed: in setting the scope.range when the first ( char occurs without a | char. (As in cleanup tags) 
+- bug fixed: in GetInsertMode when only one channel and a show needs to be inserted before the none existing second channel
+- added (experimental) : Regex Operations and Regex scrub
+
+10/06/2013
+Version V1.1.1/50
+--------------------------------------------------------------------------------------------------------
+- improved : robots exclusion handling, now following the 'Cosa Brazil' agreements.
+- added    : site {allowlastdayoverflow} allows the last day to overflow into the next morning.
+- bug fixed: in setting the scope.range when the first ( char occurs after the | char.     
+- bug fixed: cookie expires value calculation crashes when expires value > max datetime value (9999 31/12 23.59.59)
+- added    : bitwise calculations 'and' 'or' 'xor' and 'not'
+- bug fixed: In MDB postprocess runtime error if no ldb path is specified
+- added    : in urldate format datenumber, the offset can now be specified in decimal hours 5.5 or timespan 5:30
+- bug fixed: in titlematch that forced an unnecessary update if the title ends with a number
+- bug fixed: error in postdata extraction if no subpagelist is listed in the siteini
+- MDB & REX: xmltv elements videoaspect, videoquality, presenter, writer, producer, composer and commentator added 
+    as elements that can be removed from the xmltv file
+- MDB & REX: added xmltv elements videoaspect and videoquality as source element
+- bug fixed: endless loop in scrub.result()
+- bug fixed: that was introduced in /49 which disabled channel file creation
+- bug fixed: in showicon .modify that was handled as .scrub
+- added    : minSWversion check of siteini 
+- changed  : console heading
+- solved   : cookie expiry with a decimal point as in chrome cookie export
+
+15/04/2013
+Version V1.1.1/49
+--------------------------------------------------------------------------------------------------------
+- added: postdata accepts 'subpage' as value to expand. This enables subpages defined by postdata.
+- added: subpage list accepts 'index_variable_element' as value to expand
+- added: new feature sort, enables to sort multi value elements for a part of its value 
+- credits and channel elements in xmltv follow the xmltv standard
+- bug fixed : forward looking dst switch didn't work properly for the 'spring' switch.
+- added: new option in operations with indices,  operators: start (optional)length/(optional)repeat
+    works for commands substring, remove and replace.
+- url subpage list builder with variable 
+    subpage.format {list(step=21600 count=3)|'index_variable_element'}
+- bug fixed in calculate:  syntax like : element.modify {calculate(format=date,unix)}
+
+10/03/2013
+Version V1.1.1/48
+--------------------------------------------------------------------------------------------------------
+- changed : xpath selection strings that handles char ' correctly
+- improved : xpath selection string with better efficiency
+- bug fixed : in subpage introduced in build 46
+- Updated Postprocessor constructor.  Included controlled errorhandling in case of missing mdb and rex folder and config files.
+
+24/02/2013
+Version V1.1.1/47
+--------------------------------------------------------------------------------------------------------
+- bug fixed : the cleanup(tags= ) introduced in 1.1.1/46 crashed in the postprocessor
+
+23/02/2013
+Version V1.1.1/46
+--------------------------------------------------------------------------------------------------------
+- bug fixed : order of xmltv elements in outputfile conform xmltv specification
+- added : {cleanup(removeduplicates=type, matchingquality link="elementname""elementname")}
+- bug fixed : added missing < an > as word separator char in extractproductiondate
+- added : {cleanup(tags="string1""string2)} , removes the string between string1 and string2 including these
+- added : switched to titlematchlev() in postprocess for subtitlematch
+- loadcookie : cookies with a 'zero' expiry are now passed to the output cookie file
+
+11/02/2013 
+Version V1.1.1/45
+--------------------------------------------------------------------------------------------------------
+- added command select in operations
+- fixed small bug in loop end counter
+- major update of the MDB postprocessor to allow series grabbing in thetvdb.com and the series in IMDb.com
+- added alloc attribute for index_site_id and index_site_channel to specify the target xml element in the channel file
+
+19/01/2013
+Version V1.1.1/44
+--------------------------------------------------------------------------------------------------------
+- MDB postprocessor replace | in the grabbed pages in !?!?! 
+- fixed small bug in addscope
+
+09/01/2013
+Version V1.1.1/43
+--------------------------------------------------------------------------------------------------------
+- added in MDB postprocessor the possibility to add the mdb-showid to the xmltv output
+
+04/01/2013
+Version V1.1.1/42
+--------------------------------------------------------------------------------------------------------
+- added explicit SSL support in the default grabengine (https and ftps). Needed for LINUX.
+- improved WGet grabengine, without the need for wget.bat, SSL support through --no-check-certificate
+
+02/01/2013
+Version V1.1.1/41
+--------------------------------------------------------------------------------------------------------
+- removed bug, introduced in V1.1.1/39, in grab of subdetail page if from index_urlsubdetail
+
+30/12/2012
+Version V1.1.1/40
+--------------------------------------------------------------------------------------------------------
+- header contenttype implemented for method Get
+- changed the replacement of the char | in the html page from !??! in !?!?!
+    (!??! is also used as escape char for | , this replaces it back to | in operations)
+
+17/12/2012
+Version V1.1.1/39
+--------------------------------------------------------------------------------------------------------
+- Added the possibility to scrub urlsubdetail from the detail page and grab this subdetail page
+- Added an automatic xmltv repair for corrupted input files
+
+30/11/2012
+Version V1.1.1/38
+--------------------------------------------------------------------------------------------------------
+- Change in site argument value in the header of the channel-list file. 
+Now equal to the url value of the general site dependant data of the siteini.
+
+30/11/2012
+Version V1.1.1/37
+--------------------------------------------------------------------------------------------------------
+- added element index_titleoriginal
+- added ftp file download
+
+26/11/2012
+version V1.1.1/36
+--------------------------------------------------------------------------------------------------------
+- improved nextday handling when stoptime is scrubbed
+
+23/11/2012
+version V1.1.1/35
+--------------------------------------------------------------------------------------------------------
+- do not use build 1.1.1/34 !!
+- removed stupid error in urlbuilder in V1.1.1/34
+
+23/11/2012
+version V1.1.1/34
+--------------------------------------------------------------------------------------------------------
+- added expand for index_urlsubdetail
+- remove bug in composition of the description
+
+11/11/2012
+version V1.1.1/33
+--------------------------------------------------------------------------------------------------------
+- improved escape handling in calculate @ and #
+
+10/11/2012
+version V1.1.1/32
+--------------------------------------------------------------------------------------------------------
+- removed bug in nextday jump when a show is already determined as invalid
+
+06/11/2012
+version V1.1.1/31
+--------------------------------------------------------------------------------------------------------
+- improved loadcookie handling: -- ignores session cookie -- channel update canceled if loadcookie fails
+
+01/11/2012
+version V1.1.1/30
+--------------------------------------------------------------------------------------------------------
+- corrected bug in path of home folder when entered as command line parameter
+
+20/10/2012
+version V1.1.1/29
+--------------------------------------------------------------------------------------------------------
+- spaces and tabs allowed in urldate and subpage
+
+19/10/2012
+version V1.1.1/28
+--------------------------------------------------------------------------------------------------------
+- removed bug xmltv output of composer and commenter node
+
+18/10/2012
+version V1.1.1/27
+--------------------------------------------------------------------------------------------------------
+- added cleanup(removeduplicates=type,matchfactor) type: equal, name, title  matchfactor: 0 to 100
+- added element commentator : all prefixes, multi xmltv
+- improved  cleanup(style=name)
+
+10/10/2012
+This version V1.1.1/26
+--------------------------------------------------------------------------------------------------------
+- forward looking dst change optional, has own <mode>f in config
+- added site attribute compression , possible values gzip and deflate, to decompress compressed webpages
+
+06/10/2012
+This version V1.1.1/25
+--------------------------------------------------------------------------------------------------------
+- small bug fixed in composition of element description
+
+05/10/2012
+This version V1.1.1/24
+--------------------------------------------------------------------------------------------------------
+Adds :
+- wild cards in conditional expressions , like "ab[*]ef" and "ab[?]ef"
+- 'daylight time saving' changes now looks ahead 
+- chars " and ' in calculate count # and index-of @, must be entered as \" and \'
+
+26/09/2012
+This version V1.1.1/23
+--------------------------------------------------------------------------------------------------------
+Adds :
+- stop or duration can also be scrubbed from the show detail page
+- site control 'nopageoverlap' indicates that the site doesn't list overlapping shows on subsequent index pages (disables auto removal)
+- site control 'skip' as in config file, overrules the setting of the config
+- some minor bug fixing

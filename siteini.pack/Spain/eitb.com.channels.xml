@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<site generator-info-name="WebGrab+Plus version 1.1.0 -- Jan van Straaten" site="eitb.com">
+  <channels>
+    <channel update="i" site="eitb.com" site_id="1/emisoras/ETB-1" xmltv_id="ETB 1">ETB 1</channel>
+	  <channel update="i" site="eitb.com" site_id="2/emisoras/ETB-2" xmltv_id="ETB 2">ETB 2</channel>
+	  <channel update="i" site="eitb.com" site_id="3/emisoras/ETB-3" xmltv_id="ETB 3">ETB 3</channel>
+	  <channel update="i" site="eitb.com" site_id="5/emisoras/CANALVASCO" xmltv_id="CANAL VASCO">CANAL VASCO</channel>
+	  <channel update="i" site="eitb.com" site_id="6/emisoras/ETBKTDT" xmltv_id="ETB K">ETB K</channel>
+	  <channel update="i" site="eitb.com" site_id="8/emisoras/SAT2SATELITE" xmltv_id="ETBSAT">ETBSAT</channel>
+  </channels>
+</site>

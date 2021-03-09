@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+  
+  <!--Needed (?) in the config:
+  <retry time-out="10" channel-delay="5" index-delay="1" show-delay="1">4</retry> -->
+
+<site generator-info-name="WebGrab+Plus version 1.0.7 Beta -- Jan van Straaten" site="telerama.fr.willy">
+  <channels>
+    <channel update="i" site="telerama.fr.willy" site_id="13e-rue,2" xmltv_id="13e Rue">13e Rue</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="2be,108" xmltv_id="2Be">2Be</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="2m-monde,340" xmltv_id="2M Monde">2M Monde</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="3a-telesud,449" xmltv_id="3A Telesud">3A Telesud</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="3sat,3" xmltv_id="3SAT">3SAT</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="ab-1,5" xmltv_id="AB 1">AB 1</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="ab-3,254" xmltv_id="AB 3">AB 3</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="ab-4,303" xmltv_id="AB 4">AB 4</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="action,10" xmltv_id="Action">Action</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="a-la-carte,98" xmltv_id="A la carte">A la carte</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="a-la-carte-1,100" xmltv_id="A la carte 1">A la carte 1</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="a-la-carte-10,257" xmltv_id="A la carte 10">A la carte 10</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="a-la-carte-11,258" xmltv_id="A la carte 11">A la carte 11</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="a-la-carte-2,101" xmltv_id="A la carte 2">A la carte 2</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="a-la-carte-3,102" xmltv_id="A la carte 3">A la carte 3</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="a-la-carte-4,103" xmltv_id="A la carte 4">A la carte 4</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="a-la-carte-5,104" xmltv_id="A la carte 5">A la carte 5</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="a-la-carte-6,105" xmltv_id="A la carte 6">A la carte 6</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="a-la-carte-7,106" xmltv_id="A la carte 7">A la carte 7</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="a-la-carte-8,107" xmltv_id="A la carte 8">A la carte 8</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="a-la-carte-9,99" xmltv_id="A la carte 9">A la carte 9</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="a-la-carte-cine,523" xmltv_id="A la carte (Ciné+)">A la carte (Ciné+)</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="al-jazeera-english,525" xmltv_id="Al Jazeera English">Al Jazeera English</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="alsace-20,524" xmltv_id="Alsace 20">Alsace 20</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="animaux,12" xmltv_id="Animaux">Animaux</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="ard,13" xmltv_id="ARD">ARD</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="arte,111" xmltv_id="Arte">Arte</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="arte-belgique,516" xmltv_id="Arte Belgique">Arte Belgique</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="babyfirst,663" xmltv_id="BabyFirst">BabyFirst</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="baby-tv,483" xmltv_id="Baby TV">Baby TV</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="bbc-1,16" xmltv_id="BBC 1">BBC 1</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="bbc-2,17" xmltv_id="BBC 2">BBC 2</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="bbc-entertainment,18" xmltv_id="BBC Entertainment">BBC Entertainment</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="bbc-world-news,19" xmltv_id="BBC World News">BBC World News</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="be-1,29" xmltv_id="BE 1">BE 1</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="be-cine,417" xmltv_id="Be Ciné">Be Ciné</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="belgacom-11,469" xmltv_id="Belgacom 11">Belgacom 11</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="be-series,418" xmltv_id="Be Séries">Be Séries</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="be-sport-1,413" xmltv_id="Be Sport 1">Be Sport 1</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="be-sport-2" xmltv_id="Be Sport 2">Be Sport 2</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="bfm-tv,481" xmltv_id="BFM TV">BFM TV</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="bloomberg-uk-europe,410" xmltv_id="Bloomberg UK-Europe">Bloomberg UK-Europe</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="boing,924" xmltv_id="Boing">Boing</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="boomerang,321" xmltv_id="Boomerang">Boomerang</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="brava-hdtv,835" xmltv_id="Brava HDTV">Brava HDTV</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="canal,34" xmltv_id="Canal+">Canal+</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="canal-32,534" xmltv_id="Canal 32">Canal 32</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="canal-cinema,33" xmltv_id="Canal+ Cinéma">Canal+ Cinéma</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="canal-decale,30" xmltv_id="Canal+ Décalé">Canal+ Décalé</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="canal-family,657" xmltv_id="Canal+ Family">Canal+ Family</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="canal-horizons,227" xmltv_id="Canal Horizons">Canal Horizons</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="canal-horizons-cinema,278" xmltv_id="Canal Horizons Cinéma">Canal Horizons Cinéma</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="canal-j,32" xmltv_id="Canal J">Canal J</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="canal-partage-tnt-ile-de-france,703" xmltv_id="Canal partagé TNT Ile-de-France">Canal partagé TNT Ile-de-France</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="canal-polynesie,461" xmltv_id="Canal+ Polynésie">Canal+ Polynésie</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="canal-sport,35" xmltv_id="Canal+ Sport">Canal+ Sport</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="cap-24,700" xmltv_id="Cap 24">Cap 24</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="cartoon-network,36" xmltv_id="Cartoon Network">Cartoon Network</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="cbs-reality,411" xmltv_id="CBS Reality">CBS Reality</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="cctv-news,318" xmltv_id="CCTV News">CCTV News</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="chasse-et-peche,38" xmltv_id="Chasse et pêche">Chasse et pêche</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="cinecinema-classic,287" xmltv_id="Cinecinema Classic">Cinecinema Classic</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="cinecinema-classic-belgique,437" xmltv_id="Cinecinema Classic Belgique">Cinecinema Classic Belgique</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="cinecinema-club285" xmltv_id="Cinecinema Club">Cinecinema Club</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="cinecinema-emotion,283" xmltv_id="Cinecinema Emotion">Cinecinema Emotion</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="cinecinema-famiz,401" xmltv_id="Cinecinema Famiz">Cinecinema Famiz</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="cinecinema-frisson,284" xmltv_id="Cinecinema Frisson">Cinecinema Frisson</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="cinecinema-frisson-afrique,280" xmltv_id="Cinécinéma Frisson Afrique">Cinécinéma Frisson Afrique</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="cinecinema-premier,282" xmltv_id="Cinecinema Premier">Cinecinema Premier</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="cinecinema-premier-belgique,294" xmltv_id="Cinecinema Premier Belgique">Cinecinema Premier Belgique</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="cinecinema-star,543" xmltv_id="Cinecinema Star">Cinecinema Star</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="cinecinema-star-afrique,279" xmltv_id="Cinécinéma Star Afrique">Cinécinéma Star Afrique</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="cine-first,687" xmltv_id="Ciné First">Ciné First</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="cine-fx,288" xmltv_id="Ciné FX">Ciné FX</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="cine-polar,289" xmltv_id="Ciné Polar">Ciné Polar</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="clermont-1ere,536" xmltv_id="Clermont 1ere">Clermont 1ere</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="club-rtl,50" xmltv_id="Club RTL">Club RTL</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="cnbc-europe,51" xmltv_id="CNBC Europe">CNBC Europe</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="cnbc-europe-nat-geo,52" xmltv_id="CNBC Europe + Nat Geo">CNBC Europe + Nat Geo</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="cnn,53" xmltv_id="CNN">CNN</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="comedie,54" xmltv_id="Comédie">Comédie</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="cuisine-tv,239" xmltv_id="Cuisine.Tv">Cuisine.Tv</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="daring,558" xmltv_id="Daring !">Daring !</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="demain-tv,57" xmltv_id="Demain TV">Demain TV</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="deutsche-welle,61" xmltv_id="Deutsche Welle">Deutsche Welle</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="direct-8,445" xmltv_id="Direct 8">Direct 8</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="direct-star,458" xmltv_id="Direct Star">Direct Star</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="discovery-channel,400" xmltv_id="Discovery Channel">Discovery Channel</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="discovery-hd-showcase,887" xmltv_id="Discovery HD Showcase">Discovery HD Showcase</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="disney-channel,58" xmltv_id="Disney Channel">Disney Channel</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="disney-channel-1,299" xmltv_id="Disney Channel +1">Disney Channel +1</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="disney-cinemagic,652" xmltv_id="Disney Cinémagic">Disney Cinémagic</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="disney-cinemagic-1,654" xmltv_id="Disney Cinémagic +1">Disney Cinémagic +1</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="disney-cinemagic-hd,686" xmltv_id="Disney Cinémagic HD">Disney Cinémagic HD</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="disney-xd,79" xmltv_id="Disney XD">Disney XD</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="dorcel-tv,560" xmltv_id="Dorcel TV">Dorcel TV</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="een,23" xmltv_id="één">één</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="e-entertainment,405" xmltv_id="E ! Entertainment">E ! Entertainment</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="encyclopedia,63" xmltv_id="Encyclopedia">Encyclopedia</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="equidia,64" xmltv_id="Equidia">Equidia</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="equidia-life,1146" xmltv_id="Equidia-life">Equidia-life</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="escales,67" xmltv_id="Escales">Escales</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="espn,69" xmltv_id="ESPN">ESPN</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="espn-america,520" xmltv_id="ESPN America">ESPN America</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="espn-classic,272" xmltv_id="ESPN Classic">ESPN Classic</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="etb-1,71" xmltv_id="ETB 1">ETB 1</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="etb-2,72" xmltv_id="ETB 2">ETB 2</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="euronews,140" xmltv_id="Euronews">Euronews</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="eurosport,76" xmltv_id="Eurosport">Eurosport</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="eurosport-2,439" xmltv_id="Eurosport 2">Eurosport 2</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="extreme-sports-channel,253" xmltv_id="Extreme Sports Channel">Extreme Sports Channel</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="france-2,4" xmltv_id="France 2">France 2</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="france-24,529" xmltv_id="France 24">France 24</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="france-3,80" xmltv_id="France 3">France 3</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="france-3-alpes,655" xmltv_id="France 3 Alpes">France 3 Alpes</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="france-3-alsace,249" xmltv_id="France 3 Alsace">France 3 Alsace</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="france-3-aquitaine,304" xmltv_id="France 3 Aquitaine">France 3 Aquitaine</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="france-3-auvergne,649" xmltv_id="France 3 Auvergne">France 3 Auvergne</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="france-3-basse-normandie,647" xmltv_id="France 3 Basse-Normandie">France 3 Basse-Normandie</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="france-3-bourgogne,636" xmltv_id="France 3 Bourgogne">France 3 Bourgogne</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="france-3-bretagne,634" xmltv_id="France 3 Bretagne">France 3 Bretagne</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="france-3-centre,306" xmltv_id="France 3 Centre">France 3 Centre</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="france-3-champagne-ardenne,641" xmltv_id="France 3 Champagne-Ardenne">France 3 Champagne-Ardenne</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="france-3-corse-via-stella,308" xmltv_id="France 3 Corse via Stella">France 3 Corse via Stella</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="france-3-cote-d-azur,642" xmltv_id="France 3 Côte d'Azur">France 3 Côte d'Azur</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="france-3-franche-comte,637" xmltv_id="France 3 Franche-Comté">France 3 Franche-Comté</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="france-3-haute-normandie,646" xmltv_id="France 3 Haute-Normandie">France 3 Haute-Normandie</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="france-3-languedoc-roussillon,650" xmltv_id="France 3 Languedoc-Roussillon">France 3 Languedoc-Roussillon</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="france-3-limousin,638" xmltv_id="France 3 Limousin">France 3 Limousin</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="france-3-lorraine,640" xmltv_id="France 3 Lorraine">France 3 Lorraine</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="france-3-midi-pyrenees,651" xmltv_id="France 3 Midi-Pyrénées">France 3 Midi-Pyrénées</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="france-3-nord-pas-de-calais,644" xmltv_id="France 3 Nord Pas-de-Calais">France 3 Nord Pas-de-Calais</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="france-3-paris-ile-de-france,313" xmltv_id="France 3 Paris Ile-de-France">France 3 Paris Ile-de-France</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="france-3-pays-de-loire,635" xmltv_id="France 3 Pays de Loire">France 3 Pays de Loire</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="france-3-picardie,645" xmltv_id="France 3 Picardie">France 3 Picardie</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="france-3-poitou-charentes,639" xmltv_id="France 3 Poitou-Charentes">France 3 Poitou-Charentes</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="france-3-provence-alpes,643" xmltv_id="France 3 Provence Alpes">France 3 Provence Alpes</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="france-3-rhone-alpes,648" xmltv_id="France 3 Rhône-Alpes">France 3 Rhône-Alpes</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="france-4,78" xmltv_id="France 4">France 4</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="france-5,47" xmltv_id="France 5">France 5</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="france-o,160" xmltv_id="France Ô">France Ô</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="game-one,87" xmltv_id="Game One">Game One</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="guadeloupe-1ere,329" xmltv_id="Guadeloupe 1ère">Guadeloupe 1ère</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="gulli,482" xmltv_id="Gulli">Gulli</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="guyane-1ere,260" xmltv_id="Guyane 1ère">Guyane 1ère</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="histoire,88" xmltv_id="Histoire">Histoire</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="hustler-tv,416" xmltv_id="Hustler TV">Hustler TV</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="i-concerts-hd,816" xmltv_id="i-Concerts HD">i-Concerts HD</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="idf1,701" xmltv_id="IDF1">IDF1</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="info-sport,94" xmltv_id="Info sport">Info sport</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="i-tele,226" xmltv_id="i Télé">i Télé</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="jimmy,96" xmltv_id="Jimmy">Jimmy</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="june,403" xmltv_id="June">June</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="ketnet-canvas,24" xmltv_id="Ketnet-Canvas">Ketnet-Canvas</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="kto,110" xmltv_id="KTO">KTO</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="la-chaine-meteo,124" xmltv_id="La Chaîne Météo">La Chaîne Météo</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="la-chaine-parlementaire,234" xmltv_id="La Chaîne parlementaire">La Chaîne parlementaire</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="la-deux,187" xmltv_id="La Deux">La Deux</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="la-trois,892" xmltv_id="La Trois">La Trois</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="la-une,164" xmltv_id="La Une">La Une</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="lci-la-chaine-info,112" xmltv_id="LCI - La Chaîne Info">LCI - La Chaîne Info</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="lcm,492" xmltv_id="LCM">LCM</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="l-equipe-tv,65" xmltv_id="L'Equipe TV">L'Equipe TV</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="liberty-tv,315" xmltv_id="Liberty TV">Liberty TV</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="lm-tv-sarthe,535" xmltv_id="LM TV Sarthe">LM TV Sarthe</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="m6,118" xmltv_id="M6">M6</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="m6-boutique-co,184" xmltv_id="M6 Boutique &amp; Co">M6 Boutique &amp; Co</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="m6-music-black,432" xmltv_id="M6 Music Black">M6 Music Black</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="m6-music-club,747" xmltv_id="M6 Music Club">M6 Music Club</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="m6-music-hits,453" xmltv_id="M6 Music Hits">M6 Music Hits</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="ma-chaine-sport,675" xmltv_id="Ma chaîne sport">Ma chaîne sport</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="mangas,6" xmltv_id="Mangas">Mangas</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="man-x,683" xmltv_id="Man-X">Man-X</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="martinique-1ere,328" xmltv_id="Martinique 1ère">Martinique 1ère</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="mcm,121" xmltv_id="MCM">MCM</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="mcm-pop,241" xmltv_id="MCM Pop">MCM Pop</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="mcm-top,343" xmltv_id="MCM Top">MCM Top</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="mezzo,125" xmltv_id="Mezzo">Mezzo</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="mezzo-live-hd,907" xmltv_id="Mezzo Live HD">Mezzo Live HD</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="mirabelle-tv,1045" xmltv_id="Mirabelle TV">Mirabelle TV</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="moteurs,15" xmltv_id="Moteurs">Moteurs</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="motors-tv,237" xmltv_id="Motors TV">Motors TV</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="mtv,128" xmltv_id="MTV">MTV</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="mtv-base,263" xmltv_id="MTV Base">MTV Base</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="mtv-base-france,685" xmltv_id="MTV Base France">MTV Base France</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="mtv-hd,735" xmltv_id="MTV HD">MTV HD</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="mtv-hits,262" xmltv_id="MTV Hits">MTV Hits</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="mtv-idol,486" xmltv_id="MTV Idol">MTV Idol</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="mtv-pulse,487" xmltv_id="MTV Pulse">MTV Pulse</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="mtv-rocks,264" xmltv_id="MTV Rocks">MTV Rocks</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="nantes-7,450" xmltv_id="Nantes 7">Nantes 7</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="national-geographic,243" xmltv_id="National Geographic">National Geographic</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="national-geographic-hd,508" xmltv_id="National Geographic HD">National Geographic HD</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="national-geographic-wild,719" xmltv_id="National Geographic Wild">National Geographic Wild</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="nickelodeon,473" xmltv_id="Nickelodéon">Nickelodéon</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="nickelodeon-junior,888" xmltv_id="Nickelodeon Junior">Nickelodeon Junior</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="nouvelle-caledonie-1ere,240" xmltv_id="Nouvelle-Calédonie 1ère">Nouvelle-Calédonie 1ère</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="nrj-12,44" xmltv_id="NRJ 12">NRJ 12</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="nrj-hits,605" xmltv_id="NRJ Hits">NRJ Hits</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="nrj-paris,702" xmltv_id="NRJ Paris">NRJ Paris</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="nt-1,446" xmltv_id="NT 1">NT 1</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="ol-tv-olympique-lyonnais,463" xmltv_id="OL TV - Olympique lyonnais">OL TV - Olympique lyonnais</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="omtv,334" xmltv_id="OMtv">OMtv</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="onzeo,517" xmltv_id="Onzéo">Onzéo</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="orange-cinechoc,732" xmltv_id="Orange Cinéchoc">Orange Cinéchoc</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="orange-cine-geants,734" xmltv_id="Orange Ciné Géants">Orange Ciné Géants</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="orange-cinehappy,731" xmltv_id="Orange Cinéhappy">Orange Cinéhappy</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="orange-cinemax,730" xmltv_id="Orange Cinémax">Orange Cinémax</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="orange-cinemax-hd,744" xmltv_id="Orange Cinémax HD">Orange Cinémax HD</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="orange-cinenovo,733" xmltv_id="Orange Cinénovo">Orange Cinénovo</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="orange-sport,716" xmltv_id="Orange Sport">Orange Sport</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="orf-1,143" xmltv_id="ORF 1">ORF 1</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="paris-premiere,145" xmltv_id="Paris Première">Paris Première</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="pink-tv,406" xmltv_id="Pink TV">Pink TV</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="piwi,344" xmltv_id="Piwi">Piwi</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="planete,147" xmltv_id="Planète">Planète</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="planete-justice,662" xmltv_id="Planète Justice">Planète Justice</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="planete-no-limit,402" xmltv_id="Planète No Limit">Planète No Limit</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="planete-thalassa,302" xmltv_id="Planète Thalassa">Planète Thalassa</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="playboy-tv,470" xmltv_id="Playboy TV">Playboy TV</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="playhouse-disney,300" xmltv_id="Playhouse Disney">Playhouse Disney</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="plug-rtl,377" xmltv_id="Plug RTL">Plug RTL</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="polynesie-1ere,459" xmltv_id="Polynésie 1ère">Polynésie 1ère</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="private-spice,475" xmltv_id="Private Spice">Private Spice</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="pro-7,152" xmltv_id="Pro 7">Pro 7</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="rai-due,154" xmltv_id="Rai Due">Rai Due</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="rai-tre,155" xmltv_id="Rai Tre">Rai Tre</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="rai-uno,156" xmltv_id="Rai Uno">Rai Uno</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="real-madrid-tv,478" xmltv_id="Real Madrid TV">Real Madrid TV</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="reunion-1ere,245" xmltv_id="Réunion 1ère">Réunion 1ère</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="rsi-la-1,200" xmltv_id="RSI LA 1">RSI LA 1</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="rsi-la-2,201" xmltv_id="RSI LA 2">RSI LA 2</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="rtl-9,115" xmltv_id="RTL 9">RTL 9</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="rtl-television,166" xmltv_id="RTL Télévision">RTL Télévision</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="rtl-tvi,168" xmltv_id="RTL TVI">RTL TVI</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="rtpi,169" xmltv_id="RTPI">RTPI</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="sat-1,172" xmltv_id="Sat 1">Sat 1</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="seasons,173" xmltv_id="Seasons">Seasons</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="serie-club,49" xmltv_id="Série club">Série club</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="sf-1,59" xmltv_id="SF 1">SF 1</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="sf-2,174" xmltv_id="SF 2">SF 2</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="shorts-tv,633" xmltv_id="Shorts TV">Shorts TV</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="sport,8" xmltv_id="Sport+">Sport+</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="stylia,142" xmltv_id="Stylia">Stylia</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="sundance-channel,833" xmltv_id="Sundance Channel">Sundance Channel</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="sundance-channel-hd,834" xmltv_id="Sundance Channel HD">Sundance Channel HD</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="supersport-3,420" xmltv_id="Supersport 3">Supersport 3</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="swr,182" xmltv_id="SWR">SWR</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="syfy-universal,479" xmltv_id="Syfy Universal">Syfy Universal</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="tcm,185" xmltv_id="TCM">TCM</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="tcm-mixte,186" xmltv_id="TCM Mixte">TCM Mixte</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="telemaison,522" xmltv_id="TéléMaison">TéléMaison</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="tele-melody,265" xmltv_id="Télé Mélody">Télé Mélody</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="tele-nantes,491" xmltv_id="Télé Nantes">Télé Nantes</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="teletoon-tps,197" xmltv_id="TéléToon TPS">TéléToon TPS</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="teletoon-tps-1,293" xmltv_id="TéléToon TPS +1">TéléToon TPS +1</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="tele-toulouse,198" xmltv_id="Télé Toulouse">Télé Toulouse</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="telif,409" xmltv_id="TELIF">TELIF</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="tempo-guadeloupe,244" xmltv_id="Tempo Guadeloupe">Tempo Guadeloupe</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="tempo-nouvelle-caledonie,246" xmltv_id="Tempo Nouvelle-Calédonie">Tempo Nouvelle-Calédonie</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="tempo-polynesie,460" xmltv_id="Tempo Polynésie">Tempo Polynésie</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="tempo-reunion,247" xmltv_id="Tempo Réunion">Tempo Réunion</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="teva,191" xmltv_id="Téva">Téva</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="tf1,192" xmltv_id="TF1">TF1</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="tf6,228" xmltv_id="TF6">TF6</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="the-poker-channel,563" xmltv_id="The Poker Channel">The Poker Channel</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="tiji,229" xmltv_id="TIJI">TIJI</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="tlm-tele-lyon-metropole,116" xmltv_id="TLM - Télé Lyon Métropole">TLM - Télé Lyon Métropole</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="tmc,195" xmltv_id="TMC">TMC</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="toute-l-histoire,7" xmltv_id="Toute l'histoire">Toute l'histoire</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="tps-star,242" xmltv_id="TPS Star">TPS Star</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="trace-urban,325" xmltv_id="Trace Urban">Trace Urban</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="tsr-1,202" xmltv_id="TSR 1">TSR 1</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="tsr-2,183" xmltv_id="TSR 2">TSR 2</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="tv1-nederland-1,89" xmltv_id="TV1 - Nederland 1">TV1 - Nederland 1</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="tv2-nederland-2,90" xmltv_id="TV2 - Nederland 2">TV2 - Nederland 2</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="tv3-nederland-3,91" xmltv_id="TV3 - Nederland 3">TV3 - Nederland 3</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="tv5monde,205" xmltv_id="TV5MONDE">TV5MONDE</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="tv5monde-afrique,233" xmltv_id="TV5MONDE Afrique">TV5MONDE Afrique</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="tv5monde-asie,231" xmltv_id="TV5MONDE Asie">TV5MONDE Asie</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="tv5monde-europe,232" xmltv_id="TV5MONDE Europe">TV5MONDE Europe</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="tv7-bordeaux,273" xmltv_id="TV7 Bordeaux">TV7 Bordeaux</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="tv8-mont-blanc,421" xmltv_id="TV8 Mont-Blanc">TV8 Mont-Blanc</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="tvbreizh,225" xmltv_id="TvBreizh">TvBreizh</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="tve,208" xmltv_id="TVE">TVE</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="tve-1,206" xmltv_id="TVE 1">TVE 1</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="tve-2,207" xmltv_id="TVE 2">TVE 2</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="tv-rennes,539" xmltv_id="TV Rennes">TV Rennes</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="tv-tours,540" xmltv_id="TV Tours">TV Tours</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="txingudi,507" xmltv_id="Txingudi">Txingudi</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="ushuaia-tv,451" xmltv_id="Ushuaia TV">Ushuaia TV</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="vh1,210" xmltv_id="VH1">VH1</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="vh1-classic,690" xmltv_id="VH1 Classic">VH1 Classic</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="vijf-tv,691" xmltv_id="Vijf TV">Vijf TV</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="vivolta,659" xmltv_id="Vivolta">Vivolta</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="voyage,212" xmltv_id="Voyage">Voyage</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="vt4,214" xmltv_id="VT4">VT4</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="vtm,215" xmltv_id="VTM">VTM</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="w9,119" xmltv_id="W9">W9</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="wdr,217" xmltv_id="WDR">WDR</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="xxl,218" xmltv_id="XXL">XXL</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="yacht-sail,415" xmltv_id="Yacht and Sail">Yacht &amp; Sail</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="zdf,219" xmltv_id="ZDF">ZDF</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="zee-cinema,527" xmltv_id="Zee Cinéma">Zee Cinéma</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="zee-tv,526" xmltv_id="Zee TV">Zee TV</channel>
+    <channel update="i" site="telerama.fr.willy" site_id="zone-reality-belgique,514" xmltv_id="Zone Reality Belgique">Zone Reality Belgique</channel>
+  </channels>
+</site>

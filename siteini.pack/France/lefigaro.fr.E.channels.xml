@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<site generator-info-name="WebGrab+Plus/w MDB &amp; REX Postprocess -- version  V3.0.0.0 -- Jan van Straaten" site="lefigaro.fr">
+  <channels>
+    <channel update="i" site="lefigaro.fr.E" site_id="1##TF1" xmltv_id="TF1">TF1</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="2##France 2" xmltv_id="France 2">France 2</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="3##France 3" xmltv_id="France 3">France 3</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="16##Canal +" xmltv_id="Canal +">Canal +</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="69##France 5" xmltv_id="France 5">France 5</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="13##M6" xmltv_id="M6">M6</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="14##Arte" xmltv_id="Arte">Arte</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="1032##C8" xmltv_id="C8">C8</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="322##W9" xmltv_id="W9">W9</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="70##TMC" xmltv_id="TMC">TMC</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="318##TFX" xmltv_id="TFX">TFX</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="320##NRJ 12" xmltv_id="NRJ 12">NRJ 12</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="315##Public Senat - LCP AN" xmltv_id="Public Senat - LCP AN">Public Senat - LCP AN</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="321##France 4" xmltv_id="France 4">France 4</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="363##BFM TV" xmltv_id="BFM TV">BFM TV</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="179##CNews" xmltv_id="CNews">CNews</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="1033##CStar" xmltv_id="CStar">CStar</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="361##Gulli" xmltv_id="Gulli">Gulli</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="344##France Ô" xmltv_id="France Ô">France Ô</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="1045##TF1 Séries Films" xmltv_id="TF1 Séries Films">TF1 Séries Films</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="1046##L'Equipe" xmltv_id="L'Equipe">L'Equipe</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="1047##6TER" xmltv_id="6TER">6TER</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="1048##RMC Story" xmltv_id="RMC Story">RMC Story</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="1049##RMC Découverte" xmltv_id="RMC Découverte">RMC Découverte</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="1050##Chérie 25" xmltv_id="Chérie 25">Chérie 25</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="155##LCI" xmltv_id="LCI">LCI</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="1579##FRANCEINFO" xmltv_id="FRANCEINFO">FRANCEINFO</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="74##13e Rue" xmltv_id="13e Rue">13e Rue</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="59##AB1" xmltv_id="AB1">AB1</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="63##Action" xmltv_id="Action">Action</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="282##Canal + Cinéma" xmltv_id="Canal + Cinéma">Canal + Cinéma</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="314##Canal + Décalé" xmltv_id="Canal + Décalé">Canal + Décalé</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="445##Canal + Family" xmltv_id="Canal + Family">Canal + Family</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="1117##Canal + Séries" xmltv_id="Canal + Séries">Canal + Séries</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="244##Ciné + Classic" xmltv_id="Ciné + Classic">Ciné + Classic</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="646##Ciné + Club" xmltv_id="Ciné + Club">Ciné + Club</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="240##Ciné + Émotion" xmltv_id="Ciné + Émotion">Ciné + Émotion</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="291##Ciné + Famiz" xmltv_id="Ciné + Famiz">Ciné + Famiz</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="241##Ciné + Frisson" xmltv_id="Ciné + Frisson">Ciné + Frisson</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="239##Ciné + Premier" xmltv_id="Ciné + Premier">Ciné + Premier</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="304##E!" xmltv_id="E!">E!</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="611##OCS Choc" xmltv_id="OCS Choc">OCS Choc</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="1125##OCS City" xmltv_id="OCS City">OCS City</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="613##OCS Geants" xmltv_id="OCS Geants">OCS Geants</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="609##OCS Max" xmltv_id="OCS Max">OCS Max</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="1116##Paramount Channel" xmltv_id="Paramount Channel">Paramount Channel</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="31##RTL 9" xmltv_id="RTL 9">RTL 9</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="34##Serie Club" xmltv_id="Serie Club">Serie Club</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="362##Syfy" xmltv_id="Syfy">Syfy</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="172##TCM Cinéma" xmltv_id="TCM Cinéma">TCM Cinéma</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="48##Teva" xmltv_id="Teva">Teva</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="199##TV Breizh" xmltv_id="TV Breizh">TV Breizh</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="138##AB Moteurs" xmltv_id="AB Moteurs">AB Moteurs</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="984##Bein Sports 1" xmltv_id="Bein Sports 1">Bein Sports 1</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="1016##Bein Sports 2" xmltv_id="Bein Sports 2">Bein Sports 2</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="1172##Bein Sports 3" xmltv_id="Bein Sports 3">Bein Sports 3</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="284##Canal + Sport" xmltv_id="Canal + Sport">Canal + Sport</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="1723##ALTICE STUDIO" xmltv_id="ALTICE STUDIO">ALTICE STUDIO</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="1727##POLAR +" xmltv_id="POLAR +">POLAR +</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="1200##DISNEY CINEMA" xmltv_id="DISNEY CINEMA">DISNEY CINEMA</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="884##Equidia" xmltv_id="Equidia">Equidia</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="83##Eurosport 1" xmltv_id="Eurosport 1">Eurosport 1</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="323##Eurosport 2" xmltv_id="Eurosport 2">Eurosport 2</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="230##Extreme Channel Sport" xmltv_id="Extreme Channel Sport">Extreme Channel Sport</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="997##Girondins TV" xmltv_id="Girondins TV">Girondins TV</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="1015##Golf +" xmltv_id="Golf +">Golf +</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="861##Golf Channel" xmltv_id="Golf Channel">Golf Channel</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="180##Info Sport" xmltv_id="Info Sport">Info Sport</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="584##RMC Sport Access 2" xmltv_id="RMC Sport Access 2">RMC Sport Access 2</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="1378##RMC SPORT 4" xmltv_id="RMC SPORT 4">RMC SPORT 4</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="1578##RMC Sport Access 1" xmltv_id="RMC Sport Access 1">RMC Sport Access 1</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="1575##RMC Sport News" xmltv_id="RMC Sport News">RMC Sport News</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="664##RMC Sport Access 3" xmltv_id="RMC Sport Access 3">RMC Sport Access 3</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="225##Motors TV" xmltv_id="Motors TV">Motors TV</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="911##Nautical Channel" xmltv_id="Nautical Channel">Nautical Channel</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="423##OLTV" xmltv_id="OLTV">OLTV</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="439##OMTV" xmltv_id="OMTV">OMTV</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="1130##Onzeo" xmltv_id="Onzeo">Onzeo</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="1195##TREK" xmltv_id="TREK">TREK</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="550##Baby TV" xmltv_id="Baby TV">Baby TV</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="766##Boing" xmltv_id="Boing">Boing</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="269##Boomerang" xmltv_id="Boomerang">Boomerang</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="87##Canal J" xmltv_id="Canal J">Canal J</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="93##Cartoon network" xmltv_id="Cartoon network">Cartoon network</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="64##Disney Channel" xmltv_id="Disney Channel">Disney Channel</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="261##Disney Channel +1" xmltv_id="Disney Channel +1">Disney Channel +1</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="871##Disney Junior" xmltv_id="Disney Junior">Disney Junior</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="658##Disney XD" xmltv_id="Disney XD">Disney XD</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="1110##Gong base" xmltv_id="Gong base">Gong base</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="88##Mangas" xmltv_id="Mangas">Mangas</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="377##Nickelodeon" xmltv_id="Nickelodeon">Nickelodeon</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="761##Nickelodeon Junior" xmltv_id="Nickelodeon Junior">Nickelodeon Junior</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="279##Piwi +" xmltv_id="Piwi +">Piwi +</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="90##Teletoon" xmltv_id="Teletoon">Teletoon</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="212##Tiji" xmltv_id="Tiji">Tiji</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="1580##ELLE GIRL" xmltv_id="ELLE GIRL">ELLE GIRL</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="178##Game One" xmltv_id="Game One">Game One</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="1139##J-One" xmltv_id="J-One">J-One</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="862##Lucky Jack TV" xmltv_id="Lucky Jack TV">Lucky Jack TV</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="619##Nolife" xmltv_id="Nolife">Nolife</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="557##iConcerts HD" xmltv_id="iConcerts HD">iConcerts HD</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="115##M6 Music" xmltv_id="M6 Music">M6 Music</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="85##MCM" xmltv_id="MCM">MCM</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="278##MCM Top" xmltv_id="MCM Top">MCM Top</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="381##Melody" xmltv_id="Melody">Melody</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="86##Mezzo" xmltv_id="Mezzo">Mezzo</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="96##MTV" xmltv_id="MTV">MTV</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="933##Mezzo Live HD" xmltv_id="Mezzo Live HD">Mezzo Live HD</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="396##MTV Hits" xmltv_id="MTV Hits">MTV Hits</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="427##NRJ Hits" xmltv_id="NRJ Hits">NRJ Hits</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="845##Trace Urban" xmltv_id="Trace Urban">Trace Urban</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="157##VH1" xmltv_id="VH1">VH1</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="399##VH1 Classic" xmltv_id="VH1 Classic">VH1 Classic</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="89##Animaux" xmltv_id="Animaux">Animaux</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="127##Chasse &amp; Pêche" xmltv_id="Chasse &amp; Pêche">Chasse &amp; Pêche</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="73##Comédie +" xmltv_id="Comédie +">Comédie +</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="175##Demain" xmltv_id="Demain">Demain</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="292##Discovery Channel" xmltv_id="Discovery Channel">Discovery Channel</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="1035##Discovery Science" xmltv_id="Discovery Science">Discovery Science</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="219##Fashion TV" xmltv_id="Fashion TV">Fashion TV</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="79##Histoire" xmltv_id="Histoire">Histoire</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="221##KTO" xmltv_id="KTO">KTO</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="408##Luxe TV" xmltv_id="Luxe TV">Luxe TV</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="1722##MY CUISINE" xmltv_id="MY CUISINE">MY CUISINE</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="858##M6 Boutique &amp; Co" xmltv_id="M6 Boutique &amp; Co">M6 Boutique &amp; Co</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="753##MCE TV" xmltv_id="MCE TV">MCE TV</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="228##National Geographic Channel" xmltv_id="National Geographic Channel">National Geographic Channel</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="637##National Geographic Wild" xmltv_id="National Geographic Wild">National Geographic Wild</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="22##Paris Première" xmltv_id="Paris Première">Paris Première</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="21##Planète +" xmltv_id="Planète +">Planète +</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="446##Planète + Crime Investigation" xmltv_id="Planète + Crime Investigation">Planète + Crime Investigation</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="414##Planète + Action &amp; Expérience" xmltv_id="Planète + Action &amp; Expérience">Planète + Action &amp; Expérience</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="82##Seasons +" xmltv_id="Seasons +">Seasons +</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="748##Sundance Channel" xmltv_id="Sundance Channel">Sundance Channel</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="255##Toute l'Histoire" xmltv_id="Toute l'Histoire">Toute l'Histoire</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="345##Ushuaia TV" xmltv_id="Ushuaia TV">Ushuaia TV</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="463##Vivolta" xmltv_id="Vivolta">Vivolta</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="71##Voyage" xmltv_id="Voyage">Voyage</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="1199##SCIENCE &amp; VIE TV" xmltv_id="SCIENCE &amp; VIE TV">SCIENCE &amp; VIE TV</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="693##WEO" xmltv_id="WEO">WEO</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="406##Al Jazeera English" xmltv_id="Al Jazeera English">Al Jazeera English</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="118##BBC World" xmltv_id="BBC World">BBC World</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="186##Bloomberg TV" xmltv_id="Bloomberg TV">Bloomberg TV</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="198##CNBC" xmltv_id="CNBC">CNBC</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="171##CNN International" xmltv_id="CNN International">CNN International</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="174##Euronews" xmltv_id="Euronews">Euronews</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="419##France 24" xmltv_id="France 24">France 24</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="1123##I24News" xmltv_id="I24News">I24News</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="182##La Chaîne Météo" xmltv_id="La Chaîne Météo">La Chaîne Météo</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="699##LCP 24/24" xmltv_id="LCP 24/24">LCP 24/24</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="651##Public Senat 24/24" xmltv_id="Public Senat 24/24">Public Senat 24/24</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="561##Sky News" xmltv_id="Sky News">Sky News</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="27##TV5 Monde" xmltv_id="TV5 Monde">TV5 Monde</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="1663##BFM PARIS" xmltv_id="BFM PARIS">BFM PARIS</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="148##VTM" xmltv_id="VTM">VTM</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="229##AB3" xmltv_id="AB3">AB3</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="336##2M Maroc" xmltv_id="2M Maroc">2M Maroc</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="1005##3 SAT" xmltv_id="3 SAT">3 SAT</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="1006##ARD" xmltv_id="ARD">ARD</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="119##BBC Entertainment" xmltv_id="BBC Entertainment">BBC Entertainment</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="798##GRAND LILLE TV" xmltv_id="GRAND LILLE TV">GRAND LILLE TV</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="129##BBC1" xmltv_id="BBC1">BBC1</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="298##BE 1" xmltv_id="BE 1">BE 1</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="67##CLUB RTL" xmltv_id="CLUB RTL">CLUB RTL</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="990##ITV 1 LONDON" xmltv_id="ITV 1 LONDON">ITV 1 LONDON</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="42##La Deux" xmltv_id="La Deux">La Deux</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="717##La Trois" xmltv_id="La Trois">La Trois</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="24##La Une" xmltv_id="La Une">La Une</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="747##NHK World" xmltv_id="NHK World">NHK World</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="281##PLUG RTL" xmltv_id="PLUG RTL">PLUG RTL</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="1009##PRO 7" xmltv_id="PRO 7">PRO 7</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="120##Rai 1" xmltv_id="Rai 1">Rai 1</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="143##Rai 2" xmltv_id="Rai 2">Rai 2</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="144##Rai 3" xmltv_id="Rai 3">Rai 3</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="1068##RTL" xmltv_id="RTL">RTL</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="19##RTL TVI" xmltv_id="RTL TVI">RTL TVI</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="122##RTPI" xmltv_id="RTPI">RTPI</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="968##RTS 1" xmltv_id="RTS 1">RTS 1</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="967##RTS 2" xmltv_id="RTS 2">RTS 2</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="1011##SAT 1" xmltv_id="SAT 1">SAT 1</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="1101##SWR" xmltv_id="SWR">SWR</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="193##TVE 1" xmltv_id="TVE 1">TVE 1</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="123##TVE Internationale" xmltv_id="TVE Internationale">TVE Internationale</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="1014##ZDF" xmltv_id="ZDF">ZDF</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="1269##NEW_DEUTSCHE WELLE TV" xmltv_id="NEW_DEUTSCHE WELLE TV">NEW_DEUTSCHE WELLE TV</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="1380##A+" xmltv_id="A+">A+</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="425##Brazzers TV" xmltv_id="Brazzers TV">Brazzers TV</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="401##DORCEL TV" xmltv_id="DORCEL TV">DORCEL TV</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="426##Hustler" xmltv_id="Hustler">Hustler</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="444##PINK X" xmltv_id="PINK X">PINK X</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="258##Playboy TV" xmltv_id="Playboy TV">Playboy TV</channel>
+    <channel update="i" site="lefigaro.fr.E" site_id="55##XXL" xmltv_id="XXL">XXL</channel>
+  </channels>
+</site>

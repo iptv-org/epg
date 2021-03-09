@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<site generator-info-name="WebGrab+Plus/w MDB &amp; REX Postprocess -- version V3.0.0.21 -- Jan van Straaten" site="telemach.ba">
+  <channels>
+    <channel update="i" site="epg.telemach.ba.E" site_id="199##/2017/09/01/15/07/10/stb_fhd_n1_bih_hd_480x270.png" xmltv_id="N1 HD (BH)">N1 HD (BH)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="198##/2017/09/01/15/07/04/stb_fhd_bht_1_480x270.png" xmltv_id="BHT 1">BHT 1</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="465##/2017/09/01/15/32/40/stb_fhd_bht_1_480x270.png" xmltv_id="BHT 1 HD">BHT 1 HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="31##/2017/09/01/15/11/06/stb_fhd_rtrs_480x270.png" xmltv_id="RTRS">RTRS</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="640##/2018/10/09/11/28/14/nova_bh_tv_480x270.png" xmltv_id="Nova BH HD">Nova BH HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="678##/2020/03/02/00/21/02/stb_fhd_nova_s_480x270.png" xmltv_id="NOVA S HD">NOVA S HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="534##/2017/09/01/14/36/58/stb_fhd_hayat_480x270.png" xmltv_id="Hayat">Hayat</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="748##/2019/12/03/23/48/53/o_kanal_xl.png" xmltv_id="O Kanal HD">O Kanal HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="471##/2017/09/01/15/19/47/stb_fhd_face_hd_480x270.png" xmltv_id="Face HD">Face HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="657##/2018/10/25/15/39/53/aljazeerab_hd_480x270.png" xmltv_id="Al Jazeera Balkans HD">Al Jazeera Balkans HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="655##/2018/10/25/15/52/43/tv_sarajevo_hd_480x270.png" xmltv_id="TV Sarajevo HD (BH)">TV Sarajevo HD (BH)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="197##/2017/09/01/15/07/03/stb_fhd_alfa_tv_480x270.png" xmltv_id="Alfa (Sarajevo)">Alfa (Sarajevo)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="30##/2017/09/01/15/10/51/stb_fhd_obn_480x270.png" xmltv_id="OBN">OBN</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="449##/2017/09/01/15/27/59/stb_fhd_bn_480x270.png" xmltv_id="BN">BN</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="469##/2019/07/02/13/16/26/xl_logo_transparentbck.png" xmltv_id="RTVHB">RTVHB</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="743##/2019/12/03/15/03/03/stb_fhd_hrt_1_xl.png" xmltv_id="HRT 1 HD">HRT 1 HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="744##/2019/12/03/16/38/16/stb_fhd_hrt_2_xl.png" xmltv_id="HRT 2 HD">HRT 2 HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="393##/2017/09/01/15/34/18/stb_fhd_hrt_3_480x270.png" xmltv_id="HRT 3">HRT 3</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="394##/2017/09/01/15/34/36/stb_fhd_hrt_4_480x270.png" xmltv_id="HRT 4">HRT 4</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="587##/2018/10/23/15/05/31/1.png" xmltv_id="Pink BH">Pink BH</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="746##/2019/12/03/15/58/33/stb_fhd_nova_hd.png" xmltv_id="Nova HR HD">Nova HR HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="747##/2019/12/03/16/05/19/stb_fhd_rtl_xl.png" xmltv_id="RTL HR HD">RTL HR HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="745##/2019/12/03/15/51/01/stb_fhd_rtl_2_xl.png" xmltv_id="RTL 2 HR HD">RTL 2 HR HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="737##/2019/10/21/15/26/02/p5.png" xmltv_id="Prva (SR)">Prva (SR)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="7##/2017/09/01/15/03/24/stb_fhd_prva_plus_480x270.png" xmltv_id="Prva plus">Prva plus</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="4##/2020/03/04/13/53/39/b92_384x216.png" xmltv_id="B92">B92</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="468##/2017/09/01/15/18/45/stb_fhd_tv_vogosca_480x270.png" xmltv_id="TV Vogošća">TV Vogošća</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="656##/2018/10/25/15/36/32/rtvzenica_hd_480x270.png" xmltv_id="RTV Zenica HD">RTV Zenica HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="475##/2017/09/01/15/25/31/stb_fhd_kanal_6_480x270.png" xmltv_id="Kanal 6">Kanal 6</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="474##/2017/09/01/15/24/01/stb_fhd_oscar_c_480x270.png" xmltv_id="HTV Oscar C">HTV Oscar C</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="32##/2018/07/02/16/09/20/atv_480x270.png" xmltv_id="Alternativna TV">Alternativna TV</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="470##/2017/09/01/15/19/19/stb_fhd_osm_tv_480x270.png" xmltv_id="OSM">OSM</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="541##/2017/09/01/15/48/40/stb_fhd_posavina_tv_480x270.png" xmltv_id="Posavina TV">Posavina TV</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="483##/2017/09/01/15/30/05/stb_fhd_city_tv_480x270.png" xmltv_id="City TV">City TV</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="476##/2017/09/01/15/26/37/stb_fhd_ntv_ic_kakanj_480x270.png" xmltv_id="NTV IC Kakanj">NTV IC Kakanj</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="486##/2017/09/01/15/31/36/stb_fhd_mtv_igman_480x270.png" xmltv_id="MTV Igman">MTV Igman</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="552##/2017/09/01/15/26/37/stb_fhd_televizija_5_480x270.png" xmltv_id="TV5 (BH)">TV5 (BH)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="489##/2017/09/01/15/26/15/stb_fhd_laudato_tv_480x270.png" xmltv_id="Laudato TV">Laudato TV</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="482##/2017/09/01/15/30/00/stb_fhd_rtv_hit_480x270.png" xmltv_id="RTV HIT">RTV HIT</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="481##/2017/09/01/15/29/51/stb_fhd_rtv_tk_480x270.png" xmltv_id="RTV TK">RTV TK</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="651##/2018/10/25/15/43/52/rtv_sana_384x216.png" xmltv_id="RTV Sana">RTV Sana</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="480##/2017/09/01/15/29/25/stb_fhd_tv_bugojno_480x270.png" xmltv_id="TV Bugojno">TV Bugojno</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="478##/2017/09/01/15/28/22/stb_fhd_tv_jasmin_480x270.png" xmltv_id="TV Jasmin">TV Jasmin</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="200##/2017/09/01/15/07/20/stb_fhd_tv_hema_480x270.png" xmltv_id="Televizija Hema">Televizija Hema</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="484##/2017/09/01/15/30/09/stb_fhd_rtv_jablanica_480x270.png" xmltv_id="RTV Jablanica">RTV Jablanica</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="485##/2017/09/01/15/30/35/stb_fhd_tv_lukavac_480x270.png" xmltv_id="TV Lukavac">TV Lukavac</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="479##/2019/10/22/16/06/16/480_transparent.png" xmltv_id="RTV Visoko">RTV Visoko</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="33##/2017/09/01/15/11/33/stb_fhd_federalna_tv_480x270.png" xmltv_id="Federalna TV">Federalna TV</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="652##/2018/10/30/17/01/37/bir_480x270_1.png" xmltv_id="RTV BIR">RTV BIR</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="37##/2017/09/01/15/12/36/stb_fhd_rtcg_sat_480x270.png" xmltv_id="RTCG Sat">RTCG Sat</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="265##/2017/09/01/15/30/52/stb_fhd_slo_1_480x270.png" xmltv_id="SLO 1">SLO 1</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="492##/2017/09/01/15/27/48/stb_fhd_z1_480x270.png" xmltv_id="Z1">Z1</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="399##/2017/09/01/15/22/59/stb_fhd_rtl_living_480x270.png" xmltv_id="RTL Living">RTL Living</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="448##/2017/09/01/15/27/38/stb_fhd_n1_hr_hd_480x270.png" xmltv_id="N1 HD (HR)">N1 HD (HR)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="178##/2017/09/01/14/59/50/stb_fhd_pink_plus_480x270.png" xmltv_id="Pink Plus">Pink Plus</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="176##/2017/09/01/14/58/31/stb_fhd_pink_extra_480x270.png" xmltv_id="Pink Extra">Pink Extra</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="24##/2017/09/01/15/09/27/stb_fhd_kcn_1_480x270.png" xmltv_id="K::CN 1">K::CN 1</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="1##/2017/09/01/15/01/01/stb_fhd_n1_srb_hd_480x270.png" xmltv_id="N1 HD (SR)">N1 HD (SR)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="560##/2017/11/28/12/23/19/prva_worldd_384x216.png" xmltv_id="Prva World">Prva World</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="559##/2017/11/28/12/18/46/prva_kick_480x270.png" xmltv_id="Prva Kick">Prva Kick</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="5##/2017/09/01/15/01/43/stb_fhd_happy_tv_480x270.png" xmltv_id="Happy">Happy</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="667##/2018/12/17/16/59/54/brainz_hd_480x270.png" xmltv_id="Brainz HD">Brainz HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="653##/2018/10/25/15/47/29/rtrs_plus_480x270.png" xmltv_id="RTRS Plus">RTRS Plus</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="299##/2017/09/01/15/36/09/stb_fhd_hayat_plus_480x270.png" xmltv_id="Hayat Plus">Hayat Plus</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="402##/2017/09/01/15/24/03/stb_fhd_otv_valentino_480x270.png" xmltv_id="OTV Valentino">OTV Valentino</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="675##/2019/02/14/14/09/22/xl_480x270.png" xmltv_id="Izvorna TV">Izvorna TV</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="38##/2020/03/04/09/43/44/stb_fhd_light_480x270.png" xmltv_id="FOX (INT)">FOX (INT)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="39##/2018/03/16/15/43/50/fox_life_160x90.png" xmltv_id="FOX Life (INT)">FOX Life (INT)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="40##/2017/09/01/15/12/42/stb_fhd_fox_crime_480x270.png" xmltv_id="FOX Crime (INT)">FOX Crime (INT)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="41##/2018/03/16/15/52/48/fox_movies_160x90.png" xmltv_id="FOX Movies (INT)">FOX Movies (INT)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="283##/2018/01/15/11/00/38/cinestar_288x162.png" xmltv_id="CineStar TV (HR)">CineStar TV (HR)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="462##/2018/01/15/11/09/16/cinestar_action_288x162.png" xmltv_id="CineStar TV Action (HR)">CineStar TV Action (HR)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="49##/2019/03/21/10/24/50/xl_480x270.png" xmltv_id="CineStar TV Fantasy HD">CineStar TV Fantasy HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="44##/2020/02/27/11/38/14/stb_fhd_tv1000_480x270.png" xmltv_id="TV1000">TV1000</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="42##/2017/09/01/15/12/55/stb_fhd_axn_480x270.png" xmltv_id="AXN">AXN</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="43##/2017/09/01/15/13/48/stb_fhd_diva_480x270.png" xmltv_id="Diva">Diva</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="46##/2019/06/06/14/57/09/ccx_480x270px.png" xmltv_id="Comedy Central Extra">Comedy Central Extra</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="493##/2017/09/01/15/27/56/stb_fhd_cinema_tv_480x270.png" xmltv_id="Cinema TV">Cinema TV</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="55##/2017/09/01/14/53/29/stb_fhd_axn_spin_480x270.png" xmltv_id="AXN Spin">AXN Spin</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="580##/2019/03/21/10/43/33/xl_480x270.png" xmltv_id="CineStar TV Comedy &amp; Family HD">CineStar TV Comedy &amp; Family HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="773##/2020/01/28/13/46/46/cinestar_2_hd_300x168.png" xmltv_id="CineStar TV 2 HD">CineStar TV 2 HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="581##/2018/08/24/17/28/21/pink_western_480x270.png" xmltv_id="Pink Western">Pink Western</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="175##/2017/09/01/14/58/09/stb_fhd_pink_action_480x270.png" xmltv_id="Pink Action">Pink Action</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="45##/2017/09/01/15/16/01/stb_fhd_amc_hd_480x270.png" xmltv_id="AMC HD (INT)">AMC HD (INT)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="576##/2018/07/12/14/23/35/1.png" xmltv_id="SCI FI HD">SCI FI HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="561##/2017/12/01/18/38/39/pikaboo_288x162.png" xmltv_id="Pikaboo HD">Pikaboo HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="572##/2020/03/03/10/51/58/stb_fhd_light_480x270.png" xmltv_id="Vavoom HD">Vavoom HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="87##/2017/09/01/15/04/47/stb_fhd_minimax_480x270.png" xmltv_id="Minimax">Minimax</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="574##/2018/04/16/14/06/39/nickelodeon_160x90.png" xmltv_id="Nickelodeon (HR)">Nickelodeon (HR)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="491##/2017/09/01/15/27/23/stb_fhd_rtl_kockica_480x270.png" xmltv_id="RTL Kockica">RTL Kockica</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="741##/2019/10/30/13/01/29/disney_junior_300x168.png" xmltv_id="Disney Junior">Disney Junior</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="90##/2017/09/01/15/06/19/stb_fhd_disney_channel_480x270.png" xmltv_id="Disney Channel">Disney Channel</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="91##/2017/09/01/15/07/12/stb_fhd_cartoon_network_480x270.png" xmltv_id="Cartoon Network">Cartoon Network</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="494##/2017/09/01/15/28/43/stb_fhd_hayatovci_480x270.png" xmltv_id="Hayatovci">Hayatovci</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="306##/2017/09/01/15/37/54/stb_fhd_super_rtl_480x270.png" xmltv_id="Super RTL">Super RTL</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="96##/2017/09/01/15/10/57/stb_fhd_baby_tv_480x270.png" xmltv_id="BabyTV">BabyTV</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="93##/2017/09/01/15/09/08/stb_fhd_boomerang_480x270.png" xmltv_id="Boomerang">Boomerang</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="289##/2017/09/01/15/32/28/stb_fhd_jim_jam_480x270.png" xmltv_id="Jim Jam">Jim Jam</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="94##/2017/09/01/15/09/46/stb_fhd_nick_jr_480x270.png" xmltv_id="Nick Jr.">Nick Jr.</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="92##/2017/09/01/15/08/24/stb_fhd_pink_kids_480x270.png" xmltv_id="Pink Kids">Pink Kids</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="776##/2020/01/29/14/14/42/3.png" xmltv_id="Discovery Channel HD">Discovery Channel HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="102##/2019/01/23/14/08/16/animal_planet_480x270.png" xmltv_id="Animal Planet">Animal Planet</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="97##/2017/09/01/15/11/28/stb_fhd_national_geographic_480x270.png" xmltv_id="National Geographic">National Geographic</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="100##/2020/02/27/11/41/42/stb_fhd_viasat_explore_480x270.png" xmltv_id="Viasat Explorer">Viasat Explorer</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="731##/2019/10/08/15/52/35/viasat_history_hd_480x270.png" xmltv_id="Viasat History HD">Viasat History HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="103##/2020/02/27/11/44/20/stb_fhd_viasat_nature_480x270.png" xmltv_id="Viasat Nature">Viasat Nature</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="194##/2017/09/01/15/06/34/stb_fhd_24kitchen_480x270.png" xmltv_id="24Kitchen (INT)">24Kitchen (INT)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="193##/2017/09/01/15/06/17/stb_fhd_history_480x270.png" xmltv_id="History">History</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="106##/2017/09/01/14/31/27/stb_fhd_cbs_reality_480x270.png" xmltv_id="CBS Reality">CBS Reality</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="285##/2017/09/01/15/32/11/stb_fhd_travel_channel_480x270.png" xmltv_id="Travel Channel">Travel Channel</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="119##/2017/09/01/14/39/13/stb_fhd_tlc_480x270.png" xmltv_id="TLC">TLC</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="319##/2017/09/01/15/22/04/stb_fhd_fashion_tv_480x270.png" xmltv_id="FTV TV">FTV TV</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="101##/2017/09/01/15/13/28/stb_fhd_lov_i_ribolov_480x270.png" xmltv_id="Lov i Ribolov">Lov i Ribolov</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="105##/2017/11/17/17/33/52/investigation_discovery_384x216.png" xmltv_id="ID">ID</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="540##/2019/02/12/10/51/33/nat_geo_wild_288x162.png" xmltv_id="Nat Geo Wild">Nat Geo Wild</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="116##/2018/10/09/16/21/40/crime_and_investigation_480x270.png" xmltv_id="Crime &amp; Investigation">Crime &amp; Investigation</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="120##/2017/09/01/14/39/27/stb_fhd_e_480x270.png" xmltv_id="E! Entertainment">E! Entertainment</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="774##/2020/01/28/14/01/56/hgtv_300x168.png" xmltv_id="Home and Garden TV">Home and Garden TV</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="127##/2017/09/01/14/40/13/stb_fhd_trace_sports_480x270.png" xmltv_id="Trace Sport Stars HD">Trace Sport Stars HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="113##/2019/09/29/23/03/07/outdoor_channel_288x162.png" xmltv_id="Outdoor Channel">Outdoor Channel</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="728##/2019/12/02/15/59/49/nova_sport_300x168.png" xmltv_id="Nova Sport HD">Nova Sport HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="557##/2017/09/13/23/27/30/sk_1_hd_480x270.png" xmltv_id="SK 1 HD (BIH)">SK 1 HD (BIH)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="67##/2017/09/01/14/55/59/stb_fhd_sk2_hd_480x270.png" xmltv_id="SK 2 HD (SR)">SK 2 HD (SR)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="68##/2017/09/01/14/56/06/stb_fhd_sk3_hd_480x270.png" xmltv_id="SK 3 HD (SR)">SK 3 HD (SR)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="69##/2017/09/01/14/56/08/stb_fhd_sk4_480x270.png" xmltv_id="SK 4 (SR)">SK 4 (SR)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="70##/2017/09/01/14/56/17/stb_fhd_sk5_480x270.png" xmltv_id="SK 5 (SR)">SK 5 (SR)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="71##/2017/09/01/14/56/39/stb_fhd_sk6_480x270.png" xmltv_id="SK 6 (SR)">SK 6 (SR)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="74##/2018/03/15/15/48/42/sk_7_288x162.png" xmltv_id="SK 7 (SR)">SK 7 (SR)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="75##/2018/03/15/15/49/09/sk_8_300x168.png" xmltv_id="SK 8 (SR)">SK 8 (SR)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="76##/2018/03/15/15/49/48/sk_9_300x168.png" xmltv_id="SK 9 (SR)">SK 9 (SR)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="77##/2018/03/15/15/50/17/sk_10_300x168.png" xmltv_id="SK 10 (SR)">SK 10 (SR)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="456##/2017/09/01/15/30/39/stb_fhd_sk_1_480x270.png" xmltv_id="SK 1 (HR)">SK 1 (HR)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="644##/2018/10/17/09/04/19/sk_4k_480x270.png" xmltv_id="SK 4K">SK 4K</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="18##/2017/09/01/15/07/49/stb_fhd_sk_hd_480x270.png" xmltv_id="SK HD">SK HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="73##/2017/09/01/14/57/16/stb_fhd_sk_golf_hd_480x270.png" xmltv_id="SK Golf HD">SK Golf HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="72##/2017/09/01/14/57/08/stb_fhd_fight_channel_480x270.png" xmltv_id="Fight Channel">Fight Channel</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="687##/2019/04/25/16/01/43/logo_sport_klub_esports_480x270.png" xmltv_id="SK Esports">SK Esports</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="498##/2019/04/16/15/10/07/a1_480x270.png" xmltv_id="Arena Sport 1 (BH)">Arena Sport 1 (BH)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="499##/2019/04/16/15/11/08/a1_480x270.png" xmltv_id="Arena Sport 1 (HR)">Arena Sport 1 (HR)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="500##/2019/04/16/15/11/30/a1_384x216.png" xmltv_id="Arena Sport 1 (SR)">Arena Sport 1 (SR)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="501##/2019/04/16/15/12/19/a2_480x270.png" xmltv_id="Arena Sport 2">Arena Sport 2</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="502##/2019/04/16/15/13/09/a3_480x270.png" xmltv_id="Arena Sport 3">Arena Sport 3</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="503##/2019/04/16/15/13/32/a4_480x270.png" xmltv_id="Arena Sport 4">Arena Sport 4</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="84##/2017/09/01/15/03/08/stb_fhd_eurosport_1_hd_480x270.png" xmltv_id="Eurosport 1 HD">Eurosport 1 HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="85##/2017/09/01/15/03/32/stb_fhd_eurosport_2_hd_480x270.png" xmltv_id="Eurosport 2 HD">Eurosport 2 HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="81##/2017/09/01/15/02/16/stb_fhd_extreme_sports_channel_480x270.png" xmltv_id="Extreme Sports">Extreme Sports</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="82##/2018/10/09/16/17/57/motorvision_480x270.png" xmltv_id="Motorvision TV HD">Motorvision TV HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="278##/2017/09/01/15/31/46/stb_fhd_grand_480x270.png" xmltv_id="Grand International">Grand International</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="129##/2017/09/01/14/40/32/stb_fhd_grand_2_480x270.png" xmltv_id="Grand narodna televizija 2">Grand narodna televizija 2</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="10##/2017/09/01/15/05/35/stb_fhd_idj_tv_hd_480x270.png" xmltv_id="IDJTV HD">IDJTV HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="132##/2017/09/01/14/41/45/stb_fhd_dm_sat_480x270.png" xmltv_id="DM Sat">DM Sat</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="131##/2017/09/01/14/41/26/stb_fhd_cmc_480x270.png" xmltv_id="CMC">CMC</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="201##/2017/09/01/15/07/34/stb_fhd_bn_music_480x270.png" xmltv_id="BN Music HD">BN Music HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="130##/2017/09/01/14/41/11/stb_fhd_pink_music_480x270.png" xmltv_id="Pink Music">Pink Music</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="324##/2017/09/01/15/22/38/stb_fhd_kcn_music_480x270.png" xmltv_id="K::CN Music 2">K::CN Music 2</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="495##/2017/09/01/15/29/08/stb_fhd_hayat_folk_480x270.png" xmltv_id="Hayat Folk">Hayat Folk</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="496##/2017/09/01/15/29/27/stb_fhd_hayat_music_480x270.png" xmltv_id="Hayat Music">Hayat Music</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="134##/2017/09/01/14/42/11/stb_fhd_vh1_480x270.png" xmltv_id="VH1 Europe">VH1 Europe</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="133##/2017/09/01/14/41/58/stb_fhd_mtv_480x270.png" xmltv_id="MTV">MTV</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="444##/2017/07/21/16/07/01/kcn_3_480x270.png" xmltv_id="K::CN Svet +3 (W2)">K::CN Svet +3 (W2)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="409##/2017/09/01/15/26/36/stb_fhd_tv_balkanika_480x270.png" xmltv_id="Balkanika">Balkanika</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="139##/2017/09/01/14/43/08/stb_fhd_vh1_classic_480x270.png" xmltv_id="VH1 Classic">VH1 Classic</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="138##/2017/09/01/14/42/54/stb_fhd_mtv_dance_480x270.png" xmltv_id="MTV Dance">MTV Dance</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="137##/2017/09/01/14/42/46/stb_fhd_mtv_hits_480x270.png" xmltv_id="MTV Hits">MTV Hits</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="136##/2017/09/01/14/42/39/stb_fhd_mtv_rocks_480x270.png" xmltv_id="MTV Rocks">MTV Rocks</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="140##/2017/09/01/14/43/20/stb_fhd_mezzo_480x270.png" xmltv_id="Mezzo">Mezzo</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="654##/2018/10/25/15/48/17/sevdah_480x270.png" xmltv_id="Sevdah TV">Sevdah TV</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="153##/2017/09/01/14/47/34/stb_fhd_rtl_480x270.png" xmltv_id="RTL (DE)">RTL (DE)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="304##/2017/09/01/15/37/48/stb_fhd_pro_7_480x270.png" xmltv_id="Pro7">Pro7</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="313##/2017/09/01/15/21/01/stb_fhd_vox_480x270.png" xmltv_id="VOX">VOX</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="143##/2017/09/01/14/44/37/stb_fhd_cnn_480x270.png" xmltv_id="CNN">CNN</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="144##/2017/09/01/14/45/11/stb_fhd_bbc_world_480x270.png" xmltv_id="BBC World News">BBC World News</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="147##/2017/09/01/14/45/52/stb_fhd_bloomberg_480x270.png" xmltv_id="Bloomberg">Bloomberg</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="150##/2017/09/01/14/46/35/stb_fhd_rai_1_480x270.png" xmltv_id="Rai Uno">Rai Uno</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="156##/2017/09/01/14/49/01/stb_fhd_tv5_monde_480x270.png" xmltv_id="TV5 Monde">TV5 Monde</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="461##/2017/09/01/15/31/44/stb_fhd_trt_avaz_480x270.png" xmltv_id="TRT Avaz">TRT Avaz</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="146##/2018/04/18/14/36/07/euronews_160x90.png" xmltv_id="EuroNews">EuroNews</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="145##/2017/09/01/14/45/33/stb_fhd_russia_today_480x270.png" xmltv_id="Russia Today">Russia Today</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="154##/2017/09/01/14/47/45/stb_fhd_deutche_welle_480x270.png" xmltv_id="Deutsche Welle">Deutsche Welle</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="305##/2017/09/01/15/37/50/stb_fhd_rtl_2_480x270.png" xmltv_id="RTL 2 (DE)">RTL 2 (DE)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="658##/2018/10/25/15/49/40/ntv_480x270.png" xmltv_id="NTV">NTV</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="183##/2017/09/01/15/03/45/stb_fhd_dorcel_hd_480x270.png" xmltv_id="Dorcel HD">Dorcel HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="182##/2017/09/01/15/03/24/stb_fhd_hustler_tv_480x270.png" xmltv_id="Hustler">Hustler</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="180##/2017/09/01/15/02/15/stb_fhd_brazzers_tv_480x270.png" xmltv_id="Brazzers TV Europe">Brazzers TV Europe</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="181##/2017/09/01/15/02/52/stb_fhd_dusk_480x270.png" xmltv_id="Dusk!">Dusk!</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="497##/2017/09/01/15/29/34/stb_fhd_playboy_tv_480x270.png" xmltv_id="Playboy TV">Playboy TV</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="466##/2017/09/01/15/32/58/stb_fhd_hayat_hd_480x270.png" xmltv_id="Hayat HD">Hayat HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="57##/2018/03/16/15/41/57/fox_life_hd_160x90.png" xmltv_id="FOX Life HD (INT)">FOX Life HD (INT)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="58##/2017/09/01/14/54/50/stb_fhd_fox_crime_hd_480x270.png" xmltv_id="FOX Crime HD (INT)">FOX Crime HD (INT)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="56##/2017/09/01/14/53/36/stb_fhd_fox_hd_480x270.png" xmltv_id="FOX HD (INT)">FOX HD (INT)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="59##/2018/03/16/15/50/12/fox_movies_hd_160x90.png" xmltv_id="FOX Movies HD (INT)">FOX Movies HD (INT)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="65##/2017/09/01/14/55/45/stb_fhd_shorts_hd_480x270.png" xmltv_id="SHORTSTV HD">SHORTSTV HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="563##/2020/02/27/11/37/25/stb_fhd_epic_drama_480x270.png" xmltv_id="Epic Drama HD">Epic Drama HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="646##/2019/04/16/15/10/45/a1_480x270.png" xmltv_id="Arena Sport 1 HD (BH)">Arena Sport 1 HD (BH)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="647##/2019/04/16/15/11/55/a2_480x270.png" xmltv_id="Arena Sport 2 HD (BH)">Arena Sport 2 HD (BH)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="648##/2019/04/16/15/12/41/a3_288x162.png" xmltv_id="Arena Sport 3 HD (BH)">Arena Sport 3 HD (BH)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="649##/2019/04/16/15/13/57/a4_480x270.png" xmltv_id="Arena Sport 4 HD (BH)">Arena Sport 4 HD (BH)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="95##/2017/09/01/15/10/13/stb_fhd_nickelodeon_hd_480x270.png" xmltv_id="Nickelodeon HD">Nickelodeon HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="17##/2019/01/23/14/08/51/animal_planet_hd_480x270.png" xmltv_id="Animal Planet HD">Animal Planet HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="107##/2017/09/01/14/32/35/stb_fhd_national_geographic_hd_480x270.png" xmltv_id="National Geographic HD">National Geographic HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="118##/2017/09/01/14/39/04/stb_fhd_24kitchen_hd_480x270.png" xmltv_id="24Kitchen HD (INT)">24Kitchen HD (INT)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="112##/2017/09/01/14/37/16/stb_fhd_bbc_earth_480x270.png" xmltv_id="BBC Earth HD">BBC Earth HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="111##/2019/02/12/10/50/58/nat_geo_wild_hd_480x270.png" xmltv_id="Nat Geo Wild HD">Nat Geo Wild HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="99##/2017/09/01/15/12/41/stb_fhd_history_hd_480x270.png" xmltv_id="History HD">History HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="115##/2019/08/21/16/42/08/history_2_hd_480x270.png" xmltv_id="History 2 HD">History 2 HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="125##/2017/09/01/14/40/00/stb_fhd_travel_channel_hd_480x270.png" xmltv_id="Travel Channel HD">Travel Channel HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="121##/2017/09/01/14/39/39/stb_fhd_fashion_tv_480x270.png" xmltv_id="FTV TV HD">FTV TV HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="128##/2017/09/01/14/40/14/stb_fhd_the_qyou_hd_480x270.png" xmltv_id="Qyou HD">Qyou HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="141##/2017/09/01/14/43/39/stb_fhd_mtv_live_hd_480x270.png" xmltv_id="MTV Live HD">MTV Live HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="135##/2017/09/01/14/42/27/stb_fhd_trace_urban_hd_480x270.png" xmltv_id="Trace Urban HD">Trace Urban HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="142##/2017/09/01/14/44/06/stb_fhd_iconcerts_hd_480x270.png" xmltv_id="iConcerts HD">iConcerts HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="184##/2017/09/01/15/03/56/stb_fhd_hustler_tv_hd_480x270.png" xmltv_id="Hustler HD">Hustler HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="60##/2017/09/01/14/55/13/stb_fhd_hbo_hd_480x270.png" xmltv_id="HBO HD">HBO HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="61##/2017/09/01/14/55/19/stb_fhd_hbo_2_hd_480x270.png" xmltv_id="HBO 2 HD">HBO 2 HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="62##/2017/09/01/14/55/28/stb_fhd_hbo3_hd_480x270.png" xmltv_id="HBO 3 HD">HBO 3 HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="63##/2017/09/01/14/55/30/stb_fhd_cinemax_hd_480x270.png" xmltv_id="Cinemax HD">Cinemax HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="64##/2017/09/01/14/55/44/stb_fhd_cinemax_2_hd_480x270.png" xmltv_id="Cinemax 2 HD">Cinemax 2 HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="51##/2020/02/05/15/51/24/cinestar_premiere_1_hd_480x270.png" xmltv_id="CineStar TV Premiere 1 HD">CineStar TV Premiere 1 HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="52##/2020/02/05/15/52/06/cinestar_premiere_2_hd_300x168.png" xmltv_id="CineStar TV Premiere 2 HD">CineStar TV Premiere 2 HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="568##/2018/02/28/16/03/51/pink_comedy_480x270.png" xmltv_id="Pink Comedy">Pink Comedy</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="566##/2018/02/28/16/00/56/pink_romance_288x162.png" xmltv_id="Pink Romance">Pink Romance</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="690##/2019/05/30/16/41/09/pink_world_cinema_480x270.png" xmltv_id="Pink World Cinema">Pink World Cinema</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="704##/2019/05/30/17/08/25/pink_classic_480x270.png" xmltv_id="Pink Classic">Pink Classic</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="694##/2019/05/30/16/54/33/pink_serije_480x270.png" xmltv_id="Pink Serije">Pink Serije</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="810##/2020/02/24/13/19/38/2.png" xmltv_id="Pink Premium HD">Pink Premium HD</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="173##/2017/09/01/14/57/44/stb_fhd_pink_movies_480x270.png" xmltv_id="Pink Movies">Pink Movies</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="174##/2017/09/01/14/58/01/stb_fhd_pink_film_480x270.png" xmltv_id="Pink Film">Pink Film</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="567##/2018/02/28/16/02/21/pink_thriller_480x270.png" xmltv_id="Pink Thriller">Pink Thriller</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="659##/2018/10/25/16/37/28/pink_crime_mistery_480x270.png" xmltv_id="Pink Crime &amp; Mystery">Pink Crime &amp; Mystery</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="583##/2018/08/26/23/34/38/pink_soap_480x270.png" xmltv_id="Pink Soap">Pink Soap</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="584##/2018/08/26/23/39/11/pink_scifi_and_fantasy_480x270.png" xmltv_id="Pink Sci-Fi &amp; Fantasy">Pink Sci-Fi &amp; Fantasy</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="582##/2018/08/26/23/31/07/pink_horror_480x270.png" xmltv_id="Pink Horror">Pink Horror</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="47##/2017/09/01/15/18/05/stb_fhd_pink_family_480x270.png" xmltv_id="Pink Family">Pink Family</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="695##/2019/05/30/16/56/14/pink_pedia_480x270.png" xmltv_id="Pink Pedia">Pink Pedia</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="691##/2019/05/30/16/47/57/pink_super_kids_480x270.png" xmltv_id="Pink super kids">Pink super kids</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="362##/2017/09/01/15/20/25/stb_fhd_pink_zabava_480x270.png" xmltv_id="Pink Zabava">Pink Zabava</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="363##/2017/09/01/15/21/56/stb_fhd_pink_world_480x270.png" xmltv_id="Pink World">Pink World</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="364##/2017/09/01/15/23/06/stb_fhd_pink_reality_480x270.png" xmltv_id="Pink Reality">Pink Reality</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="693##/2019/05/30/16/52/30/pink_show_480x270.png" xmltv_id="Pink Show">Pink Show</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="692##/2019/05/30/16/50/10/pink_style_300x168.png" xmltv_id="Pink Style">Pink Style</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="703##/2019/05/30/17/07/47/pink_fashion_480x270.png" xmltv_id="Pink Fashion">Pink Fashion</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="698##/2019/05/30/17/03/28/pink_kuvar_480x270.png" xmltv_id="Pink Kuvar">Pink Kuvar</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="706##/2019/05/30/17/15/01/pink_haha_480x270.png" xmltv_id="Ha ha">Ha ha</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="705##/2019/05/30/17/14/12/pink_lol_384x216.png" xmltv_id="Lol">Lol</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="365##/2017/09/01/15/23/51/stb_fhd_pink_bravo_480x270.png" xmltv_id="Bravo Music">Bravo Music</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="361##/2017/09/01/15/34/36/stb_fhd_pink_folk_480x270.png" xmltv_id="Pink Folk">Pink Folk</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="702##/2019/05/30/17/07/08/pink_folk_2_480x270.png" xmltv_id="Pink Folk 2">Pink Folk 2</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="697##/2019/05/30/17/02/52/pink_music_2_300x168.png" xmltv_id="Pink Music 2">Pink Music 2</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="701##/2019/05/30/17/06/29/pink_hits_1_480x270.png" xmltv_id="Pink Hits">Pink Hits</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="700##/2019/05/30/17/05/15/pink_hits_2_480x270.png" xmltv_id="Pink Hits 2">Pink Hits 2</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="696##/2019/05/30/16/59/07/pink_n_roll_384x216.png" xmltv_id="Pink n roll">Pink n roll</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="699##/2019/05/30/17/04/31/pink_koncert_480x270.png" xmltv_id="Pink Koncert">Pink Koncert</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="707##/2019/05/30/17/15/36/pink_city_play_480x270.png" xmltv_id="City Play">City Play</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="733##/2019/10/10/13/52/01/zadruga_live_1_480x270.png" xmltv_id="Zadruga Live 1">Zadruga Live 1</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="734##/2019/10/10/13/54/55/zadruga_live_2_384x216.png" xmltv_id="Zadruga Live 2">Zadruga Live 2</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="735##/2019/10/10/13/56/36/zadruga_live_3_480x270.png" xmltv_id="Zadruga Live 3">Zadruga Live 3</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="736##/2019/10/10/13/58/20/zadruga_live_4_480x270.png" xmltv_id="Zadruga Live 4">Zadruga Live 4</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="504##/2017/09/01/15/31/49/stb_fhd_telematch_info_kanal_480x270.png" xmltv_id="Telemach Info kanal (BH)">Telemach Info kanal (BH)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="510##/2019/01/29/11/45/43/xl_bh_radio_480x270.png" xmltv_id="Radio BHT 1">Radio BHT 1</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="511##/2017/09/01/15/34/20/stb_fhd_radio_fbih_480x270.png" xmltv_id="Radio FBIH">Radio FBIH</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="512##/2017/09/01/15/34/53/stb_fhd_radio_rtrs_480x270.png" xmltv_id="Radio RTRS">Radio RTRS</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="515##/2017/09/01/15/36/10/stb_fhd_radio_sa_480x270.png" xmltv_id="Radio SA">Radio SA</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="507##/2017/09/01/15/33/13/stb_fhd_radio_m_480x270.png" xmltv_id="Music Radio M">Music Radio M</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="508##/2017/09/01/15/33/47/stb_fhd_radio_kalman_480x270.png" xmltv_id="Radio Kalman">Radio Kalman</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="509##/2019/01/28/13/37/32/xl_rsg_480x270.png" xmltv_id="Radio Stari Grad">Radio Stari Grad</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="531##/2017/09/01/15/26/18/stb_fhd_radio_antena_sarajevo_480x270.png" xmltv_id="Radio Antena (Sarajevo)">Radio Antena (Sarajevo)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="513##/2017/09/01/15/35/11/stb_fhd_radio_8_480x270.png" xmltv_id="Radio 8">Radio 8</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="532##/2017/09/01/15/26/26/stb_fhd_radio_mix_480x270.png" xmltv_id="Radio Mix">Radio Mix</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="521##/2017/09/01/15/37/42/stb_fhd_radio_ask_480x270.png" xmltv_id="Radio ASK">Radio ASK</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="516##/2017/09/01/15/36/26/stb_fhd_radio_nes_480x270.png" xmltv_id="Radio NES">Radio NES</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="525##/2017/09/01/15/23/20/stb_fhd_radio_zenica_480x270.png" xmltv_id="Radio Zenica">Radio Zenica</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="526##/2017/09/01/15/24/05/stb_fhd_radio_zenit_480x270.png" xmltv_id="Radio Zenit">Radio Zenit</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="514##/2017/09/01/15/36/00/stb_fhd_radio_otvorena_mreza_480x270.png" xmltv_id="Radio Otvorena Mreža">Radio Otvorena Mreža</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="522##/2019/01/29/11/45/08/xl_radio_dobre_vibracije_480x270.png" xmltv_id="Radio Dobre Vibracije">Radio Dobre Vibracije</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="518##/2019/01/28/13/34/41/xl_radio_kiss_480x270.png" xmltv_id="Radio Kiss">Radio Kiss</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="520##/2017/09/01/15/36/59/stb_fhd_radio_bir_480x270.png" xmltv_id="Radio BIR">Radio BIR</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="432##/2017/09/01/15/34/33/stb_fhd_radio_mir_480x270.png" xmltv_id="Radio Mir">Radio Mir</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="433##/2017/09/01/15/34/59/stb_fhd_radio_marija_480x270.png" xmltv_id="Radio Marija">Radio Marija</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="428##/2017/09/01/15/33/40/stb_fhd_radio_hrt_1_480x270.png" xmltv_id="Radio HRT 1 (W2)">Radio HRT 1 (W2)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="429##/2017/09/01/15/33/56/stb_fhd_radio_hrt_2_480x270.png" xmltv_id="Radio HRT 2 (W2)">Radio HRT 2 (W2)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="530##/2017/09/01/15/25/58/stb_fhd_radio_antena_zg_480x270.png" xmltv_id="Radio Antena (Zagreb)">Radio Antena (Zagreb)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="527##/2017/09/01/15/24/40/stb_fhd_radio_dalmacija_480x270.png" xmltv_id="Radio Dalmacija">Radio Dalmacija</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="529##/2017/09/01/15/25/19/stb_fhd_otvoreni_radio_480x270.png" xmltv_id="Radio Otvoreni">Radio Otvoreni</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="218##/2017/09/01/15/12/15/stb_fhd_play_radio_480x270.png" xmltv_id="Play Radio">Play Radio</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="215##/2017/09/01/15/11/05/stb_fhd_radio_s2_480x270.png" xmltv_id="Radio S2">Radio S2</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="213##/2017/09/01/15/10/14/stb_fhd_radio_studio_b_480x270.png" xmltv_id="Radio Studio B">Radio Studio B</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="417##/2017/09/01/15/30/22/stb_fhd_radio_slovenija_1_prvi_480x270.png" xmltv_id="Radio Slovenija 1 - PRVI">Radio Slovenija 1 - PRVI</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="661##/2019/01/28/13/36/00/xl_radio_breza_480x270.png" xmltv_id="Radio Breza">Radio Breza</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="662##/2019/01/28/13/32/18/xl_radio_obican_480x270.png" xmltv_id="Radio Obican">Radio Obican</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="209##/2017/09/01/15/09/06/stb_fhd_radio_naxi_480x270.png" xmltv_id="Radio Naxi">Radio Naxi</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="660##/2019/01/28/13/48/46/xl_narodni_480x270.png" xmltv_id="Radio Narodni">Radio Narodni</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="224##/2017/09/01/15/13/24/stb_fhd_total_hits_balkan_480x270.png" xmltv_id="Stingray Music Total Hits Balkan">Stingray Music Total Hits Balkan</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="223##/2017/09/01/15/13/18/stb_fhd_balkan_retro_hits_480x270.png" xmltv_id="Stingray Music Balkan Retro Hits">Stingray Music Balkan Retro Hits</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="226##/2017/09/01/14/47/32/stb_fhd_60s_480x270.png" xmltv_id="Stingray Music 60s">Stingray Music 60s</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="227##/2019/04/12/10/24/21/xl_soho_70s_480x270.png" xmltv_id="Stingray Music Soho '70s">Stingray Music Soho '70s</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="228##/2017/09/01/14/47/45/stb_fhd_80s_480x270.png" xmltv_id="Stingray Music 80s">Stingray Music 80s</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="229##/2017/09/01/14/47/55/stb_fhd_90s_480x270.png" xmltv_id="Stingray Music 90s">Stingray Music 90s</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="230##/2017/09/01/14/48/06/stb_fhd_2000s_480x270.png" xmltv_id="Stingray Music 2000s">Stingray Music 2000s</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="231##/2017/09/01/14/48/27/stb_fhd_revival_60s_70s_480x270.png" xmltv_id="Stingray Music Revival 60s-70s">Stingray Music Revival 60s-70s</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="232##/2017/09/01/14/48/34/stb_fhd_rewind_80s_90s_480x270.png" xmltv_id="Stingray Music Rewind 80s-90s">Stingray Music Rewind 80s-90s</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="238##/2017/09/01/14/49/37/stb_fhd_total_hits_uk_480x270.png" xmltv_id="Stingray Music Total Hits UK">Stingray Music Total Hits UK</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="237##/2017/09/01/14/49/37/stb_fhd_silk_love_songs_480x270.png" xmltv_id="Stingray Music Silk (Love Songs)">Stingray Music Silk (Love Songs)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="249##/2017/09/01/14/52/02/stb_fhd_urban_480x270.png" xmltv_id="Stingray Music Urban">Stingray Music Urban</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="236##/2017/09/01/14/49/30/stb_fhd_freedom_480x270.png" xmltv_id="Stingray Music Freedom">Stingray Music Freedom</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="235##/2017/09/01/14/49/26/stb_fhd_drive_480x270.png" xmltv_id="Stingray Music Drive">Stingray Music Drive</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="234##/2017/09/01/14/49/19/stb_fhd_all_day_party_480x270.png" xmltv_id="Stingray Music All Day Party">Stingray Music All Day Party</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="243##/2017/09/01/14/50/30/stb_fhd_groove_disco_funk_480x270.png" xmltv_id="Stingray Music Groove (Disco &amp; Funk)">Stingray Music Groove (Disco &amp; Funk)</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="242##/2017/09/01/14/50/09/stb_fhd_dancefloor_fillers_480x270.png" xmltv_id="Stingray Music Dancefloor Fillers">Stingray Music Dancefloor Fillers</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="244##/2017/09/01/14/51/18/stb_fhd_hip_hop_480x270.png" xmltv_id="Stingray Music Hip Hop">Stingray Music Hip Hop</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="233##/2017/09/01/14/48/52/stb_fhd_rock_n_roll_480x270.png" xmltv_id="Stingray Music Rock'n'Roll">Stingray Music Rock'n'Roll</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="247##/2017/09/01/14/51/40/stb_fhd_rock_anthems_480x270.png" xmltv_id="Stingray Music Rock Anthems">Stingray Music Rock Anthems</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="248##/2017/09/01/14/51/53/stb_fhd_rock_alternative_480x270.png" xmltv_id="Stingray Music Rock Alternative">Stingray Music Rock Alternative</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="245##/2017/09/01/14/51/24/stb_fhd_rock_of_ages_480x270.png" xmltv_id="Stingray Music Rock of Ages">Stingray Music Rock of Ages</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="246##/2017/09/01/14/51/35/stb_fhd_headbangers_480x270.png" xmltv_id="Stingray Music Headbangers">Stingray Music Headbangers</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="261##/2019/04/12/10/22/54/xl_country_480x270.png" xmltv_id="Stingray Music Country">Stingray Music Country</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="239##/2017/09/01/14/49/46/stb_fhd_bass_breaks_and_beats_480x270.png" xmltv_id="Stingray Music Bass Breaks and Beats">Stingray Music Bass Breaks and Beats</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="241##/2017/09/01/14/50/06/stb_fhd_rnb_soul_480x270.png" xmltv_id="Stingray Music Classic R'n'B and Soul">Stingray Music Classic R'n'B and Soul</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="255##/2019/04/12/10/23/21/xl_deep_blues_480x270.png" xmltv_id="Stingray Music Deep Blues">Stingray Music Deep Blues</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="250##/2017/09/01/14/52/10/stb_fhd_cool_jazz_480x270.png" xmltv_id="Stingray Music Cool Jazz">Stingray Music Cool Jazz</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="251##/2017/09/01/14/52/14/stb_fhd_jazz_classics_480x270.png" xmltv_id="Stingray Music Jazz Classics">Stingray Music Jazz Classics</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="260##/2017/09/01/14/53/58/stb_fhd_chansons_480x270.png" xmltv_id="Stingray Music Chansons">Stingray Music Chansons</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="259##/2019/04/12/10/23/52/xl_girl_power_480x270.png" xmltv_id="Stingray Music Girl Power!">Stingray Music Girl Power!</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="258##/2017/09/01/14/53/23/stb_fhd_la_vita_e_bella_480x270.png" xmltv_id="Stingray Music La Vita è Bella">Stingray Music La Vita è Bella</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="263##/2017/09/01/14/54/23/stb_fhd_turk_muzigi_480x270.png" xmltv_id="Stingray Music Türk Müzigi">Stingray Music Türk Müzigi</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="262##/2019/04/12/10/20/36/xl_arabian_nights_480x270.png" xmltv_id="Stingray Music Arabian Nights">Stingray Music Arabian Nights</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="225##/2019/04/12/10/22/08/xl_balkan_music_gipsy_480x270.png" xmltv_id="Stingray Music Balkan Music / Gipsy">Stingray Music Balkan Music / Gipsy</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="264##/2017/09/01/14/54/55/stb_fhd_world_carnival_480x270.png" xmltv_id="Stingray Music World Carnival">Stingray Music World Carnival</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="256##/2017/09/01/14/52/50/stb_fhd_classical_calm_480x270.png" xmltv_id="Stingray Music Classical Calm">Stingray Music Classical Calm</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="257##/2017/09/01/14/52/56/stb_fhd_classical_greats_480x270.png" xmltv_id="Stingray Music Classical Greats">Stingray Music Classical Greats</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="253##/2017/09/01/14/52/27/stb_fhd_jammin_480x270.png" xmltv_id="Stingray Music Jammin'">Stingray Music Jammin'</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="254##/2017/09/01/14/52/36/stb_fhd_cocktail_lounge_480x270.png" xmltv_id="Stingray Music Cocktail Lounge">Stingray Music Cocktail Lounge</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="240##/2017/09/01/14/49/53/stb_fhd_chillout_480x270.png" xmltv_id="Stingray Music Chillout">Stingray Music Chillout</channel>
+    <channel update="i" site="epg.telemach.ba.E" site_id="252##/2017/09/01/14/52/18/stb_fhd_the_spa_480x270.png" xmltv_id="Stingray Music The Spa">Stingray Music The Spa</channel>
+  </channels>
+</site>

@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<site generator-info-name="WebGrab+Plus/w MDB &amp; REX Postprocess -- version V1.56.24 -- Jan van Straaten" site="tvguide.dk">
+  <channels>
+    <channel update="i" site="tvguide.dk" site_id="0" xmltv_id="Dansk TV">Dansk TV</channel>
+    <channel update="i" site="tvguide.dk" site_id="DR1" xmltv_id="DR1">DR1</channel>
+    <channel update="i" site="tvguide.dk" site_id="TV2" xmltv_id="TV2">TV2</channel>
+    <channel update="i" site="tvguide.dk" site_id="TV3" xmltv_id="TV3">TV3</channel>
+    <channel update="i" site="tvguide.dk" site_id="6%27eren" xmltv_id="6'eren">6'eren</channel>
+    <channel update="i" site="tvguide.dk" site_id="ID" xmltv_id="Investigation Discovery">Investigation Discovery</channel>
+    <channel update="i" site="tvguide.dk" site_id="7eren" xmltv_id="7'eren">7'eren</channel>
+    <channel update="i" site="tvguide.dk" site_id="Canal9" xmltv_id="Canal9">Canal9</channel>
+    <channel update="i" site="tvguide.dk" site_id="DR2" xmltv_id="DR2">DR2</channel>
+    <channel update="i" site="tvguide.dk" site_id="DR3" xmltv_id="DR3">DR3</channel>
+    <channel update="i" site="tvguide.dk" site_id="DRK" xmltv_id="DRK">DRK</channel>
+    <channel update="i" site="tvguide.dk" site_id="DR+Ultra" xmltv_id="DR Ultra">DR Ultra</channel>
+    <channel update="i" site="tvguide.dk" site_id="DRRAMA" xmltv_id="DRRAMA">DRRAMA</channel>
+    <channel update="i" site="tvguide.dk" site_id="TV2+Zulu" xmltv_id="TV2 Zulu">TV2 Zulu</channel>
+    <channel update="i" site="tvguide.dk" site_id="TV2+FRI" xmltv_id="TV2 Fri">TV2 Fri</channel>
+    <channel update="i" site="tvguide.dk" site_id="TV3plus" xmltv_id="TV3+">TV3+</channel>
+    <channel update="i" site="tvguide.dk" site_id="Kanal+5" xmltv_id="Kanal 5">Kanal 5</channel>
+    <channel update="i" site="tvguide.dk" site_id="TV3+Puls" xmltv_id="TV3 Puls">TV3 Puls</channel>
+    <channel update="i" site="tvguide.dk" site_id="Kanal+4" xmltv_id="Kanal 4">Kanal 4</channel>
+    <channel update="i" site="tvguide.dk" site_id="TV2+Charlie" xmltv_id="TV2 Charlie">TV2 Charlie</channel>
+    <channel update="i" site="tvguide.dk" site_id="DK4" xmltv_id="DK4">DK4</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Kids" xmltv_id="C More Kids">C More Kids</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+First" xmltv_id="C More First">C More First</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Action" xmltv_id="C More Action">C More Action</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Hits" xmltv_id="C More Hits">C More Hits</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Emotion" xmltv_id="C More Emotion">C More Emotion</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Series" xmltv_id="C More Series">C More Series</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Series+HD" xmltv_id="C More Series HD">C More Series HD</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+First+HD" xmltv_id="C More First HD">C More First HD</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Hits+HD" xmltv_id="C More Hits HD">C More Hits HD</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Hits+for+Boxer" xmltv_id="C More Hits for Boxer">C More Hits for Boxer</channel>
+    <channel update="i" site="tvguide.dk" site_id="SF-kanalen" xmltv_id="SF-kanalen">SF-kanalen</channel>
+    <channel update="i" site="tvguide.dk" site_id="Viasat+Film+Classic" xmltv_id="Viasat Film Classic">Viasat Film Classic</channel>
+    <channel update="i" site="tvguide.dk" site_id="Viasat+Film+Family" xmltv_id="Viasat Film Family">Viasat Film Family</channel>
+    <channel update="i" site="tvguide.dk" site_id="Viasat+Film+Action" xmltv_id="Viasat Film Action">Viasat Film Action</channel>
+    <channel update="i" site="tvguide.dk" site_id="Viasat+Film+comedy" xmltv_id="Viasat Film comedy">Viasat Film comedy</channel>
+    <channel update="i" site="tvguide.dk" site_id="Viasat+Film" xmltv_id="Viasat Film">Viasat Film</channel>
+    <channel update="i" site="tvguide.dk" site_id="Viasat+Film+Drama" xmltv_id="Viasat Film Drama">Viasat Film Drama</channel>
+    <channel update="i" site="tvguide.dk" site_id="TV2+Film" xmltv_id="TV2 Film">TV2 Film</channel>
+    <channel update="i" site="tvguide.dk" site_id="tcm" xmltv_id="TCM">TCM</channel>
+    <channel update="i" site="tvguide.dk" site_id="canal8+sport" xmltv_id="Canal8 sport">Canal8 sport</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Sport+HD" xmltv_id="C More Sport HD">C More Sport HD</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Extreme" xmltv_id="C More Extreme">C More Extreme</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Tennis" xmltv_id="C More Tennis">C More Tennis</channel>
+    <channel update="i" site="tvguide.dk" site_id="TV2+Sport" xmltv_id="TV2 Sport">TV2 Sport</channel>
+    <channel update="i" site="tvguide.dk" site_id="Eurosport+2" xmltv_id="Eurosport 2">Eurosport 2</channel>
+    <channel update="i" site="tvguide.dk" site_id="Viasat+Golf" xmltv_id="Viasat Golf">Viasat Golf</channel>
+    <channel update="i" site="tvguide.dk" site_id="TV3+Sport+1" xmltv_id="TV3 Sport 1">TV3 Sport 1</channel>
+    <channel update="i" site="tvguide.dk" site_id="TV3+Sport+2" xmltv_id="TV3 Sport 2">TV3 Sport 2</channel>
+    <channel update="i" site="tvguide.dk" site_id="Eurosport" xmltv_id="Eurosport">Eurosport</channel>
+    <channel update="i" site="tvguide.dk" site_id="Animal+Planet" xmltv_id="Animal Planet">Animal Planet</channel>
+    <channel update="i" site="tvguide.dk" site_id="National+Geographic" xmltv_id="National Geographic">National Geographic</channel>
+    <channel update="i" site="tvguide.dk" site_id="Viasat+Explorer" xmltv_id="Viasat Explorer">Viasat Explorer</channel>
+    <channel update="i" site="tvguide.dk" site_id="Viasat+Nature%26%2347%3BCrime" xmltv_id="Viasat Nature/Crime">Viasat Nature/Crime</channel>
+    <channel update="i" site="tvguide.dk" site_id="Viasat+History" xmltv_id="Viasat History">Viasat History</channel>
+    <channel update="i" site="tvguide.dk" site_id="Discovery+Civilisation" xmltv_id="Discovery Civilisation">Discovery Civilisation</channel>
+    <channel update="i" site="tvguide.dk" site_id="Discovery+Science" xmltv_id="Discovery Science">Discovery Science</channel>
+    <channel update="i" site="tvguide.dk" site_id="TLC" xmltv_id="TLC">TLC</channel>
+    <channel update="i" site="tvguide.dk" site_id="Discovery+Channel" xmltv_id="Discovery Channel">Discovery Channel</channel>
+    <channel update="i" site="tvguide.dk" site_id="BBC+Entertainment" xmltv_id="BBC Entertainment">BBC Entertainment</channel>
+    <channel update="i" site="tvguide.dk" site_id="Cartoon+Network" xmltv_id="Cartoon Network">Cartoon Network</channel>
+    <channel update="i" site="tvguide.dk" site_id="MTV" xmltv_id="MTV">MTV</channel>
+    <channel update="i" site="tvguide.dk" site_id="TV2+News" xmltv_id="TV2 News">TV2 News</channel>
+    <channel update="i" site="tvguide.dk" site_id="BBC+World" xmltv_id="BBC World">BBC World</channel>
+    <channel update="i" site="tvguide.dk" site_id="Channel4" xmltv_id="Channel4">Channel4</channel>
+    <channel update="i" site="tvguide.dk" site_id="E4" xmltv_id="E4">E4</channel>
+    <channel update="i" site="tvguide.dk" site_id="More4" xmltv_id="More4">More4</channel>
+    <channel update="i" site="tvguide.dk" site_id="Film4" xmltv_id="Film4">Film4</channel>
+    <channel update="i" site="tvguide.dk" site_id="4Music" xmltv_id="4Music">4Music</channel>
+    <channel update="i" site="tvguide.dk" site_id="bbc+one+london" xmltv_id="BBC One London">BBC One London</channel>
+    <channel update="i" site="tvguide.dk" site_id="bbc+one+cambridgeshire" xmltv_id="BBC One Cambridgeshire">BBC One Cambridgeshire</channel>
+    <channel update="i" site="tvguide.dk" site_id="bbc+one+islands" xmltv_id="BBC One Islands">BBC One Islands</channel>
+    <channel update="i" site="tvguide.dk" site_id="bbc+one+north+west" xmltv_id="BBC One West">BBC One West</channel>
+    <channel update="i" site="tvguide.dk" site_id="bbc+one+north+east+cumbria" xmltv_id="BBC One North East Cumbria">BBC One North East Cumbria</channel>
+    <channel update="i" site="tvguide.dk" site_id="bbc+one+east" xmltv_id="BBC One East">BBC One East</channel>
+    <channel update="i" site="tvguide.dk" site_id="bbc+one+east+midlands" xmltv_id="BBC One East Midlands">BBC One East Midlands</channel>
+    <channel update="i" site="tvguide.dk" site_id="bbc+one+hd" xmltv_id="BBC One HD">BBC One HD</channel>
+    <channel update="i" site="tvguide.dk" site_id="bbc+one+northern+ireland" xmltv_id="BBC One Northern Ireland">BBC One Northern Ireland</channel>
+    <channel update="i" site="tvguide.dk" site_id="bbc+one+oxfordshire" xmltv_id="BBC One Oxfordshire">BBC One Oxfordshire</channel>
+    <channel update="i" site="tvguide.dk" site_id="bbc+one+scotland" xmltv_id="BBC One Scotland">BBC One Scotland</channel>
+    <channel update="i" site="tvguide.dk" site_id="bbc+one+south" xmltv_id="BBC One South">BBC One South</channel>
+    <channel update="i" site="tvguide.dk" site_id="bbc+one+south+east" xmltv_id="BBC One South East">BBC One South East</channel>
+    <channel update="i" site="tvguide.dk" site_id="bbc+one+wales" xmltv_id="BBC One Wales">BBC One Wales</channel>
+    <channel update="i" site="tvguide.dk" site_id="bbc+one+west" xmltv_id="BBC One West">BBC One West</channel>
+    <channel update="i" site="tvguide.dk" site_id="bbc+one+west+midlands" xmltv_id="BBC One West Midlands">BBC One West Midlands</channel>
+    <channel update="i" site="tvguide.dk" site_id="bbc+one+yorkshire" xmltv_id="BBC One Yorkshire">BBC One Yorkshire</channel>
+    <channel update="i" site="tvguide.dk" site_id="bbc+one+south+west" xmltv_id="BBC One South West">BBC One South West</channel>
+    <channel update="i" site="tvguide.dk" site_id="bbc+two+uk" xmltv_id="BBC Two">BBC Two</channel>
+    <channel update="i" site="tvguide.dk" site_id="bbc+two+wales+an" xmltv_id="BBC Two Wales (Analogue)">BBC Two Wales (Analogue)</channel>
+    <channel update="i" site="tvguide.dk" site_id="bbc+two+wales" xmltv_id="BBC Two wales">BBC Two wales</channel>
+    <channel update="i" site="tvguide.dk" site_id="bbc+two+scotland" xmltv_id="BBC Two Scotland">BBC Two Scotland</channel>
+    <channel update="i" site="tvguide.dk" site_id="bbc+two+northern+ireland+an" xmltv_id="BBC Two Northern Ireland (Analogue)">BBC Two Northern Ireland (Analogue)</channel>
+    <channel update="i" site="tvguide.dk" site_id="bbc+two+northern+ireland" xmltv_id="BBC Two Northern Ireland">BBC Two Northern Ireland</channel>
+    <channel update="i" site="tvguide.dk" site_id="bbc+three+uk" xmltv_id="BBC Three">BBC Three</channel>
+    <channel update="i" site="tvguide.dk" site_id="bbc+four" xmltv_id="BBC Four">BBC Four</channel>
+    <channel update="i" site="tvguide.dk" site_id="bbc+hd+uk" xmltv_id="BBC HD">BBC HD</channel>
+    <channel update="i" site="tvguide.dk" site_id="bbc+news+uk" xmltv_id="BBC News">BBC News</channel>
+    <channel update="i" site="tvguide.dk" site_id="bbc+parliament+uk" xmltv_id="BBC Two Parliament">BBC Two Parliament</channel>
+    <channel update="i" site="tvguide.dk" site_id="bbc+alba+uk" xmltv_id="BBC Alba">BBC Alba</channel>
+    <channel update="i" site="tvguide.dk" site_id="cbbc+uk" xmltv_id="CBBC">CBBC</channel>
+    <channel update="i" site="tvguide.dk" site_id="cbeebies+uk" xmltv_id="Cbeebies">Cbeebies</channel>
+    <channel update="i" site="tvguide.dk" site_id="Bio+uk" xmltv_id="Bio">Bio</channel>
+    <channel update="i" site="tvguide.dk" site_id="Challenge+TV+uk" xmltv_id="Challenge TV">Challenge TV</channel>
+    <channel update="i" site="tvguide.dk" site_id="Chelsea+TV+uk" xmltv_id="Chelsea TV">Chelsea TV</channel>
+    <channel update="i" site="tvguide.dk" site_id="Crime+and+Investigation+uk" xmltv_id="Crime and Investigation">Crime and Investigation</channel>
+    <channel update="i" site="tvguide.dk" site_id="Crime+and+Investigation+HD+uk" xmltv_id="Crime and Investigation HD">Crime and Investigation HD</channel>
+    <channel update="i" site="tvguide.dk" site_id="History+HD+uk" xmltv_id="History HD">History HD</channel>
+    <channel update="i" site="tvguide.dk" site_id="MGM+HD+uk" xmltv_id="MGM HD">MGM HD</channel>
+    <channel update="i" site="tvguide.dk" site_id="Military+History+uk" xmltv_id="Military History">Military History</channel>
+    <channel update="i" site="tvguide.dk" site_id="Nat+Geo+Wild+HD+uk" xmltv_id="Nat Geo Wild HD">Nat Geo Wild HD</channel>
+    <channel update="i" site="tvguide.dk" site_id="National+Geographic+HD+uk" xmltv_id="National Geographic HD">National Geographic HD</channel>
+    <channel update="i" site="tvguide.dk" site_id="Pick+TV+uk" xmltv_id="Pick TV">Pick TV</channel>
+    <channel update="i" site="tvguide.dk" site_id="Sky+3D+uk" xmltv_id="Sky 3D">Sky 3D</channel>
+    <channel update="i" site="tvguide.dk" site_id="Sky+Arts+1+HD+uk" xmltv_id="Sky Arts 1 HD">Sky Arts 1 HD</channel>
+    <channel update="i" site="tvguide.dk" site_id="Sky+Arts+2+HD+uk" xmltv_id="Sky Arts 2 HD">Sky Arts 2 HD</channel>
+    <channel update="i" site="tvguide.dk" site_id="Sky+Atlantic+HD+uk" xmltv_id="Sky Atlantic HD">Sky Atlantic HD</channel>
+    <channel update="i" site="tvguide.dk" site_id="Sky+Living+It+uk" xmltv_id="Sky Living It">Sky Living It</channel>
+    <channel update="i" site="tvguide.dk" site_id="Sky+Living+HD+uk" xmltv_id="Sky Living HD">Sky Living HD</channel>
+    <channel update="i" site="tvguide.dk" site_id="Sky+Movies+Action+&amp;+Adventur+uk" xmltv_id="Sky Movies Action &amp; Adventure">Sky Movies Action &amp; Adventure</channel>
+    <channel update="i" site="tvguide.dk" site_id="Sky+Movies+Box+Office+HD1+uk" xmltv_id="Sky Movies Box Office HD 1">Sky Movies Box Office HD 1</channel>
+    <channel update="i" site="tvguide.dk" site_id="Sky+Movies+Classics+HD+uk" xmltv_id="Sky Movies Classics HD">Sky Movies Classics HD</channel>
+    <channel update="i" site="tvguide.dk" site_id="Sky+Movies+Comedy+HD+uk" xmltv_id="Sky Movies Comedy HD">Sky Movies Comedy HD</channel>
+    <channel update="i" site="tvguide.dk" site_id="Sky+Movies+Crime+&amp;+Thriller+uk" xmltv_id="Sky Movies Crime &amp; Thriller">Sky Movies Crime &amp; Thriller</channel>
+    <channel update="i" site="tvguide.dk" site_id="Sky+Movies+Drama+&amp;+Romance+uk" xmltv_id="Sky Movies Drama &amp; Romance">Sky Movies Drama &amp; Romance</channel>
+    <channel update="i" site="tvguide.dk" site_id="Sky+Movies+Family+HD+uk" xmltv_id="Sky Movies Family HD">Sky Movies Family HD</channel>
+    <channel update="i" site="tvguide.dk" site_id="Sky+Movies+Indie+HD+uk" xmltv_id="Sky Movies Indie HD">Sky Movies Indie HD</channel>
+    <channel update="i" site="tvguide.dk" site_id="Sky+Movies+Modern+Greats+HD+uk" xmltv_id="Sky Movies Modern Greats HD">Sky Movies Modern Greats HD</channel>
+    <channel update="i" site="tvguide.dk" site_id="Sky+Movies+Premiere+HD+uk" xmltv_id="Sky Movies Premiere HD">Sky Movies Premiere HD</channel>
+    <channel update="i" site="tvguide.dk" site_id="Sky+Movies+Sci-Fi+Horror+HD+uk" xmltv_id="Sky Movies Sci-Fi Horror HD">Sky Movies Sci-Fi Horror HD</channel>
+    <channel update="i" site="tvguide.dk" site_id="Sky+Movies+Showcase+HD+uk" xmltv_id="Sky Movies Showcase HD">Sky Movies Showcase HD</channel>
+    <channel update="i" site="tvguide.dk" site_id="Sky+News+HD+uk" xmltv_id="Sky News HD">Sky News HD</channel>
+    <channel update="i" site="tvguide.dk" site_id="Sky+Sports+1+HD+uk" xmltv_id="Sky Sports 1 HD">Sky Sports 1 HD</channel>
+    <channel update="i" site="tvguide.dk" site_id="Sky+Sports+2+HD+uk" xmltv_id="Sky Sports 2 HD">Sky Sports 2 HD</channel>
+    <channel update="i" site="tvguide.dk" site_id="Sky+Sports+3+HD+uk" xmltv_id="Sky Sports 3 HD">Sky Sports 3 HD</channel>
+    <channel update="i" site="tvguide.dk" site_id="Sky+Sports+4+HD+uk" xmltv_id="Sky Sports 4 HD">Sky Sports 4 HD</channel>
+    <channel update="i" site="tvguide.dk" site_id="Sky+Sports+F1+HD+uk" xmltv_id="Sky Sports F1 HD">Sky Sports F1 HD</channel>
+    <channel update="i" site="tvguide.dk" site_id="Sky+Sports+News+HD+uk" xmltv_id="Sky Sports News HD">Sky Sports News HD</channel>
+    <channel update="i" site="tvguide.dk" site_id="Sky1+HD+uk" xmltv_id="Sky1 HD">Sky1 HD</channel>
+    <channel update="i" site="tvguide.dk" site_id="Sky2+uk" xmltv_id="Sky2">Sky2</channel>
+    <channel update="i" site="tvguide.dk" site_id="TV4SPORTSE" xmltv_id="TV4 Sport">TV4 Sport</channel>
+    <channel update="i" site="tvguide.dk" site_id="TV4GULDSE" xmltv_id="TV4 Glud">TV4 Glud</channel>
+    <channel update="i" site="tvguide.dk" site_id="TV4KOMEDISE" xmltv_id="TV4 Komedi">TV4 Komedi</channel>
+    <channel update="i" site="tvguide.dk" site_id="Discovery+Channel+se" xmltv_id="Discovery">Discovery</channel>
+    <channel update="i" site="tvguide.dk" site_id="dschdse" xmltv_id="Discovery HD">Discovery HD</channel>
+    <channel update="i" site="tvguide.dk" site_id="discovery+worldse" xmltv_id="Discovery World">Discovery World</channel>
+    <channel update="i" site="tvguide.dk" site_id="discovery+sciencese" xmltv_id="Discovery Science">Discovery Science</channel>
+    <channel update="i" site="tvguide.dk" site_id="TV3SE" xmltv_id="TV3">TV3</channel>
+    <channel update="i" site="tvguide.dk" site_id="TV6SE" xmltv_id="TV6">TV6</channel>
+    <channel update="i" site="tvguide.dk" site_id="TV8SE" xmltv_id="TV8">TV8</channel>
+    <channel update="i" site="tvguide.dk" site_id="VIASATSPORTSE" xmltv_id="Viasat Sport">Viasat Sport</channel>
+    <channel update="i" site="tvguide.dk" site_id="VIASATFOTBOLLSE" xmltv_id="Viasat Fotboll">Viasat Fotboll</channel>
+    <channel update="i" site="tvguide.dk" site_id="VIASATHOCKEYSE" xmltv_id="Viasat Hockey">Viasat Hockey</channel>
+    <channel update="i" site="tvguide.dk" site_id="VIASATGOLFSE" xmltv_id="Viasat Golf">Viasat Golf</channel>
+    <channel update="i" site="tvguide.dk" site_id="VIASATMOTORSE" xmltv_id="Viasat Motor">Viasat Motor</channel>
+    <channel update="i" site="tvguide.dk" site_id="viasat+film+se" xmltv_id="Viasat Film">Viasat Film</channel>
+    <channel update="i" site="tvguide.dk" site_id="viasat+film+action+se" xmltv_id="Viasat Film Action">Viasat Film Action</channel>
+    <channel update="i" site="tvguide.dk" site_id="viasat+film+classic+se" xmltv_id="Viasat Film Classic">Viasat Film Classic</channel>
+    <channel update="i" site="tvguide.dk" site_id="viasat+film+drama+se" xmltv_id="Viasat Film Drama">Viasat Film Drama</channel>
+    <channel update="i" site="tvguide.dk" site_id="viasat+film+family+se" xmltv_id="Viasat Film Family">Viasat Film Family</channel>
+    <channel update="i" site="tvguide.dk" site_id="viasat+film+nordic+se" xmltv_id="Viasat Film Nordic">Viasat Film Nordic</channel>
+    <channel update="i" site="tvguide.dk" site_id="VIASATHISTORYSE" xmltv_id="Viasat History">Viasat History</channel>
+    <channel update="i" site="tvguide.dk" site_id="VIASATNATURECRIMESE" xmltv_id="Viasat Nature Crime">Viasat Nature Crime</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Series+HD+SE" xmltv_id="C more series hd">C more series hd</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+First+SE" xmltv_id="C more first">C more first</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Hits+SE" xmltv_id="C more hits">C more hits</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Action+SE" xmltv_id="C more action">C more action</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Emotion+SE" xmltv_id="C more emotion">C more emotion</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Series+SE" xmltv_id="C more series">C more series</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Sport+HD+SE" xmltv_id="C more sport hd">C more sport hd</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Sport+SE" xmltv_id="C more sport">C more sport</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Hockey+SE" xmltv_id="C more hockey">C more hockey</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Hockey-1+SE" xmltv_id="C more hockey-1">C more hockey-1</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Live+2+SE" xmltv_id="C more live 2">C more live 2</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Live+3+SE" xmltv_id="C more live 3">C more live 3</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Live+4+SE" xmltv_id="C more live 4">C more live 4</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Live+SE" xmltv_id="C more live">C more live</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Live+HD+SE" xmltv_id="C more live hd">C more live hd</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Kids+SE" xmltv_id="C more kids">C more kids</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Tennis+SE" xmltv_id="C more tennis">C more tennis</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Extreme+SE" xmltv_id="C more extreme">C more extreme</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+First+HD+SE" xmltv_id="C more first hd">C more first hd</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Hits+HD+SE" xmltv_id="C more hits hd">C more hits hd</channel>
+    <channel update="i" site="tvguide.dk" site_id="SF-kanalen+SE" xmltv_id="Sf-kanalen">Sf-kanalen</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Hits+%28Boxer%29+SE" xmltv_id="C more hits (boxer)">C more hits (boxer)</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+HD+%28Boxer%29+SE" xmltv_id="C more hd (boxer)">C more hd (boxer)</channel>
+    <channel update="i" site="tvguide.dk" site_id="EUROSPORTSE" xmltv_id="Eurosport">Eurosport</channel>
+    <channel update="i" site="tvguide.dk" site_id="EUROSPORT2SE" xmltv_id="Eurosport2">Eurosport2</channel>
+    <channel update="i" site="tvguide.dk" site_id="TV4+Fakta" xmltv_id="TV4 Fakta">TV4 Fakta</channel>
+    <channel update="i" site="tvguide.dk" site_id="TV4+Film" xmltv_id="TV4 Film">TV4 Film</channel>
+    <channel update="i" site="tvguide.dk" site_id="TV4" xmltv_id="TV4">TV4</channel>
+    <channel update="i" site="tvguide.dk" site_id="SVT1" xmltv_id="SVT1">SVT1</channel>
+    <channel update="i" site="tvguide.dk" site_id="SVT2" xmltv_id="SVT2">SVT2</channel>
+    <channel update="i" site="tvguide.dk" site_id="SVTWORLD" xmltv_id="SVT World">SVT World</channel>
+    <channel update="i" site="tvguide.dk" site_id="SVT+Barnkanalen" xmltv_id="SVT Barnkanalen">SVT Barnkanalen</channel>
+    <channel update="i" site="tvguide.dk" site_id="SVT24" xmltv_id="SVT24">SVT24</channel>
+    <channel update="i" site="tvguide.dk" site_id="AXN" xmltv_id="AXN">AXN</channel>
+    <channel update="i" site="tvguide.dk" site_id="WDR" xmltv_id="WDR">WDR</channel>
+    <channel update="i" site="tvguide.dk" site_id="Das+Erste" xmltv_id="Das Erste">Das Erste</channel>
+    <channel update="i" site="tvguide.dk" site_id="Einsfestival" xmltv_id="Einsfestival">Einsfestival</channel>
+    <channel update="i" site="tvguide.dk" site_id="Phonenix" xmltv_id="Phonenix">Phonenix</channel>
+    <channel update="i" site="tvguide.dk" site_id="RBB" xmltv_id="RBB">RBB</channel>
+    <channel update="i" site="tvguide.dk" site_id="viva" xmltv_id="viva">viva</channel>
+    <channel update="i" site="tvguide.dk" site_id="Mtv+de" xmltv_id="MTV">MTV</channel>
+    <channel update="i" site="tvguide.dk" site_id="nickelodeon+de" xmltv_id="Nickelodeon">Nickelodeon</channel>
+    <channel update="i" site="tvguide.dk" site_id="Nick+Toons+de" xmltv_id="Nick Toons">Nick Toons</channel>
+    <channel update="i" site="tvguide.dk" site_id="Nick+jr+de" xmltv_id="Nick Jr">Nick Jr</channel>
+    <channel update="i" site="tvguide.dk" site_id="Sat+1" xmltv_id="Sat 1">Sat 1</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Aitio+FI" xmltv_id="C more aitio">C more aitio</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Series+%28Antenni%29+FI" xmltv_id="C more series (antenni)">C more series (antenni)</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Urheilu+HD+FI" xmltv_id="C more urheilu hd">C more urheilu hd</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Premier+HD+FI" xmltv_id="C more premier hd">C more premier hd</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Series+HD+FI" xmltv_id="C more series hd">C more series hd</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+First+FI" xmltv_id="C more first">C more first</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Hits+FI" xmltv_id="C more hits">C more hits</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Action+FI" xmltv_id="C more action">C more action</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Emotion+FI" xmltv_id="C more emotion">C more emotion</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Series+FI" xmltv_id="C more series">C more series</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Sport+HD+FI" xmltv_id="C more sport hd">C more sport hd</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Sport+FI" xmltv_id="C more sport">C more sport</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Kids+FI" xmltv_id="C more kids">C more kids</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Tennis+FI" xmltv_id="C more tennis">C more tennis</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Extreme+FI" xmltv_id="C more extreme">C more extreme</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+First+HD+FI" xmltv_id="C more first hd">C more first hd</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Hits+HD+FI" xmltv_id="C more hits hd">C more hits hd</channel>
+    <channel update="i" site="tvguide.dk" site_id="SF-kanalen+FI" xmltv_id="Sf-kanalen">Sf-kanalen</channel>
+    <channel update="i" site="tvguide.dk" site_id="tv1000+pl" xmltv_id="Tv1000">Tv1000</channel>
+    <channel update="i" site="tvguide.dk" site_id="viasat+explorer+pl" xmltv_id="Viasat explorer">Viasat explorer</channel>
+    <channel update="i" site="tvguide.dk" site_id="viasat+history+pl" xmltv_id="Viasat history">Viasat history</channel>
+    <channel update="i" site="tvguide.dk" site_id="viasat+nature+cee+pl" xmltv_id="Viasat nature cee">Viasat nature cee</channel>
+    <channel update="i" site="tvguide.dk" site_id="tvp+1" xmltv_id="TVP 1">TVP 1</channel>
+    <channel update="i" site="tvguide.dk" site_id="tvp+2" xmltv_id="TVP 2">TVP 2</channel>
+    <channel update="i" site="tvguide.dk" site_id="tvp+hd" xmltv_id="TVP HD">TVP HD</channel>
+    <channel update="i" site="tvguide.dk" site_id="tvp+info" xmltv_id="TVP Info">TVP Info</channel>
+    <channel update="i" site="tvguide.dk" site_id="tvp+polonia" xmltv_id="TVP Polonia">TVP Polonia</channel>
+    <channel update="i" site="tvguide.dk" site_id="tvp+sport" xmltv_id="TVP Sport">TVP Sport</channel>
+    <channel update="i" site="tvguide.dk" site_id="tvp+kultura" xmltv_id="TVP Kultura">TVP Kultura</channel>
+    <channel update="i" site="tvguide.dk" site_id="tvp+historia" xmltv_id="TVP Historia">TVP Historia</channel>
+    <channel update="i" site="tvguide.dk" site_id="tvp+seriale" xmltv_id="TVP Seriale">TVP Seriale</channel>
+    <channel update="i" site="tvguide.dk" site_id="TVP+Gdansk" xmltv_id="TVP Gdansk">TVP Gdansk</channel>
+    <channel update="i" site="tvguide.dk" site_id="TVP+Katowice" xmltv_id="TVP Katowice">TVP Katowice</channel>
+    <channel update="i" site="tvguide.dk" site_id="TVP+Kielce" xmltv_id="TVP Kielce">TVP Kielce</channel>
+    <channel update="i" site="tvguide.dk" site_id="TVP+Lublin" xmltv_id="TVP Lublin">TVP Lublin</channel>
+    <channel update="i" site="tvguide.dk" site_id="TVP+Olsztyn" xmltv_id="TVP Olsztyn">TVP Olsztyn</channel>
+    <channel update="i" site="tvguide.dk" site_id="TVP+Opole" xmltv_id="TVP Opole">TVP Opole</channel>
+    <channel update="i" site="tvguide.dk" site_id="TVP+Poznan" xmltv_id="TVP Poznan">TVP Poznan</channel>
+    <channel update="i" site="tvguide.dk" site_id="TVP+Szczecin" xmltv_id="TVP Szczecin">TVP Szczecin</channel>
+    <channel update="i" site="tvguide.dk" site_id="TVP+Warszawa" xmltv_id="TVP Warszawa">TVP Warszawa</channel>
+    <channel update="i" site="tvguide.dk" site_id="TVP+Wroclaw" xmltv_id="TVP Wroclaw">TVP Wroclaw</channel>
+    <channel update="i" site="tvguide.dk" site_id="cartoon+network+pl" xmltv_id="Cartoon network">Cartoon network</channel>
+    <channel update="i" site="tvguide.dk" site_id="MTV+Poland" xmltv_id="MTV">MTV</channel>
+    <channel update="i" site="tvguide.dk" site_id="tv3+es" xmltv_id="Tv3">Tv3</channel>
+    <channel update="i" site="tvguide.dk" site_id="3plus+es" xmltv_id="3plus">3plus</channel>
+    <channel update="i" site="tvguide.dk" site_id="viasat+sport+baltic+es" xmltv_id="Viasat sport baltic">Viasat sport baltic</channel>
+    <channel update="i" site="tvguide.dk" site_id="viasat+hockey+es" xmltv_id="Viasat hockey">Viasat hockey</channel>
+    <channel update="i" site="tvguide.dk" site_id="viasat+golf+es" xmltv_id="Viasat golf">Viasat golf</channel>
+    <channel update="i" site="tvguide.dk" site_id="tv1000+premium+es" xmltv_id="Tv1000 premium">Tv1000 premium</channel>
+    <channel update="i" site="tvguide.dk" site_id="tv1000+east+es" xmltv_id="Tv1000 east">Tv1000 east</channel>
+    <channel update="i" site="tvguide.dk" site_id="tv1000+action+east+es" xmltv_id="Tv1000 action east">Tv1000 action east</channel>
+    <channel update="i" site="tvguide.dk" site_id="tv1000+kino+es" xmltv_id="Tv1000 kino">Tv1000 kino</channel>
+    <channel update="i" site="tvguide.dk" site_id="viasat+explorer+es" xmltv_id="Viasat explorer">Viasat explorer</channel>
+    <channel update="i" site="tvguide.dk" site_id="viasat+history+es" xmltv_id="Viasat history">Viasat history</channel>
+    <channel update="i" site="tvguide.dk" site_id="viasat+premier+league+hd+sweden+es" xmltv_id="Viasat premier league hd sweden">Viasat premier league hd sweden</channel>
+    <channel update="i" site="tvguide.dk" site_id="viasat+explorer+cr" xmltv_id="Viasat explorer">Viasat explorer</channel>
+    <channel update="i" site="tvguide.dk" site_id="viasat+history+cr" xmltv_id="Viasat history">Viasat history</channel>
+    <channel update="i" site="tvguide.dk" site_id="tv1000+balkan+cr" xmltv_id="Tv1000 balkan">Tv1000 balkan</channel>
+    <channel update="i" site="tvguide.dk" site_id="viasat+nature+cee+cr" xmltv_id="Viasat nature cee">Viasat nature cee</channel>
+    <channel update="i" site="tvguide.dk" site_id="viasat3+hu" xmltv_id="Viasat3">Viasat3</channel>
+    <channel update="i" site="tvguide.dk" site_id="viasat+explorer+hu" xmltv_id="Viasat explorer">Viasat explorer</channel>
+    <channel update="i" site="tvguide.dk" site_id="viasat+history+hu" xmltv_id="Viasat history">Viasat history</channel>
+    <channel update="i" site="tvguide.dk" site_id="viasat+nature+cee+hu" xmltv_id="Viasat nature cee">Viasat nature cee</channel>
+    <channel update="i" site="tvguide.dk" site_id="tv3+lv" xmltv_id="Tv3">Tv3</channel>
+    <channel update="i" site="tvguide.dk" site_id="tv6+lv" xmltv_id="Tv6">Tv6</channel>
+    <channel update="i" site="tvguide.dk" site_id="viasat+sport+baltic+lv" xmltv_id="Viasat sport baltic">Viasat sport baltic</channel>
+    <channel update="i" site="tvguide.dk" site_id="viasat+premier+league+hd+sweden+lv" xmltv_id="Viasat premier league hd sweden">Viasat premier league hd sweden</channel>
+    <channel update="i" site="tvguide.dk" site_id="viasat+hockey+lv" xmltv_id="Viasat hockey">Viasat hockey</channel>
+    <channel update="i" site="tvguide.dk" site_id="viasat+golf+lv" xmltv_id="Viasat golf">Viasat golf</channel>
+    <channel update="i" site="tvguide.dk" site_id="tv1000+premium+lv" xmltv_id="Tv1000 premium">Tv1000 premium</channel>
+    <channel update="i" site="tvguide.dk" site_id="tv1000+east+lv" xmltv_id="Tv1000 east">Tv1000 east</channel>
+    <channel update="i" site="tvguide.dk" site_id="tv1000+action+east+lv" xmltv_id="Tv1000 action east">Tv1000 action east</channel>
+    <channel update="i" site="tvguide.dk" site_id="tv1000+kino+lv" xmltv_id="Tv1000 kino">Tv1000 kino</channel>
+    <channel update="i" site="tvguide.dk" site_id="viasat+explorer+lv" xmltv_id="Viasat explorer">Viasat explorer</channel>
+    <channel update="i" site="tvguide.dk" site_id="viasat+history+lv" xmltv_id="Viasat history">Viasat history</channel>
+    <channel update="i" site="tvguide.dk" site_id="viasat+nature+cee+lv" xmltv_id="Viasat nature cee">Viasat nature cee</channel>
+    <channel update="i" site="tvguide.dk" site_id="tv3+no" xmltv_id="Tv3">Tv3</channel>
+    <channel update="i" site="tvguide.dk" site_id="viasat+4+no" xmltv_id="Viasat 4">Viasat 4</channel>
+    <channel update="i" site="tvguide.dk" site_id="viasat+sport+no" xmltv_id="Viasat sport">Viasat sport</channel>
+    <channel update="i" site="tvguide.dk" site_id="viasat+fotball+no" xmltv_id="Viasat fotball">Viasat fotball</channel>
+    <channel update="i" site="tvguide.dk" site_id="viasat+golf+no" xmltv_id="Viasat golf">Viasat golf</channel>
+    <channel update="i" site="tvguide.dk" site_id="viasat+hockey+no" xmltv_id="Viasat hockey">Viasat hockey</channel>
+    <channel update="i" site="tvguide.dk" site_id="viasat+motor+hd+sweden+no" xmltv_id="Viasat motor hd sweden">Viasat motor hd sweden</channel>
+    <channel update="i" site="tvguide.dk" site_id="tv1000+no" xmltv_id="Tv1000">Tv1000</channel>
+    <channel update="i" site="tvguide.dk" site_id="tv1000+action+no" xmltv_id="Tv1000 action">Tv1000 action</channel>
+    <channel update="i" site="tvguide.dk" site_id="tv1000+classic+no" xmltv_id="Tv1000 classic">Tv1000 classic</channel>
+    <channel update="i" site="tvguide.dk" site_id="tv1000+drama+no" xmltv_id="Tv1000 drama">Tv1000 drama</channel>
+    <channel update="i" site="tvguide.dk" site_id="tv1000+family+no" xmltv_id="Tv1000 family">Tv1000 family</channel>
+    <channel update="i" site="tvguide.dk" site_id="tv1000+nordic+no" xmltv_id="Tv1000 nordic">Tv1000 nordic</channel>
+    <channel update="i" site="tvguide.dk" site_id="viasat+explorer+no" xmltv_id="Viasat explorer">Viasat explorer</channel>
+    <channel update="i" site="tvguide.dk" site_id="viasat+history+no" xmltv_id="Viasat history">Viasat history</channel>
+    <channel update="i" site="tvguide.dk" site_id="viasat+nature+crime+no" xmltv_id="Viasat nature crime">Viasat nature crime</channel>
+    <channel update="i" site="tvguide.dk" site_id="TV2+Norge" xmltv_id="TV2">TV2</channel>
+    <channel update="i" site="tvguide.dk" site_id="NRK1" xmltv_id="NRK1">NRK1</channel>
+    <channel update="i" site="tvguide.dk" site_id="NRK2" xmltv_id="NRK2">NRK2</channel>
+    <channel update="i" site="tvguide.dk" site_id="NRK3" xmltv_id="NRK3">NRK3</channel>
+    <channel update="i" site="tvguide.dk" site_id="NRK+Super+TV" xmltv_id="NRK Super TV">NRK Super TV</channel>
+    <channel update="i" site="tvguide.dk" site_id="TV2+Norge+Nyhetskanalen" xmltv_id="TV2 Nyhetskanalen">TV2 Nyhetskanalen</channel>
+    <channel update="i" site="tvguide.dk" site_id="TV2+Norge+Zebra" xmltv_id="TV2 Zebra">TV2 Zebra</channel>
+    <channel update="i" site="tvguide.dk" site_id="TV2+Norge+Filmkanalen" xmltv_id="TV2 Filmkanalen">TV2 Filmkanalen</channel>
+    <channel update="i" site="tvguide.dk" site_id="TV2+Norge+Sport" xmltv_id="TV2 Sport">TV2 Sport</channel>
+    <channel update="i" site="tvguide.dk" site_id="CANAL9+NO" xmltv_id="Canal9">Canal9</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Series+HD+NO" xmltv_id="C more series hd">C more series hd</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+First+NO" xmltv_id="C more first">C more first</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Hits+NO" xmltv_id="C more hits">C more hits</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Action+NO" xmltv_id="C more action">C more action</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Emotion+NO" xmltv_id="C more emotion">C more emotion</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Series+NO" xmltv_id="C more series">C more series</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Sport+HD+NO" xmltv_id="C more sport hd">C more sport hd</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Fotball+NO" xmltv_id="C more fotball">C more fotball</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Hockey+NO" xmltv_id="C more hockey">C more hockey</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Live+2+NO" xmltv_id="C more live 2">C more live 2</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Live+3+NO" xmltv_id="C more live 3">C more live 3</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Live+4+NO" xmltv_id="C more live 4">C more live 4</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Live+NO" xmltv_id="C more live">C more live</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Live+HD+NO" xmltv_id="C more live hd">C more live hd</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Kids+NO" xmltv_id="C more kids">C more kids</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Tennis+NO" xmltv_id="C more tennis">C more tennis</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Extreme+NO" xmltv_id="C more extreme">C more extreme</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+First+HD+NO" xmltv_id="C more first hd">C more first hd</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Hits+HD+NO" xmltv_id="C more hits hd">C more hits hd</channel>
+    <channel update="i" site="tvguide.dk" site_id="SF-kanalen+NO" xmltv_id="Sf-kanalen">Sf-kanalen</channel>
+    <channel update="i" site="tvguide.dk" site_id="C+More+Hits+%28Boxer%29+NO" xmltv_id="C more hits (boxer)">C more hits (boxer)</channel>
+    <channel update="i" site="tvguide.dk" site_id="tv1000+balkan+ro" xmltv_id="Tv1000 balkan">Tv1000 balkan</channel>
+    <channel update="i" site="tvguide.dk" site_id="viasat+explorer+ro" xmltv_id="Viasat explorer">Viasat explorer</channel>
+    <channel update="i" site="tvguide.dk" site_id="viasat+nature+cee+ro" xmltv_id="Viasat nature cee">Viasat nature cee</channel>
+    <channel update="i" site="tvguide.dk" site_id="BBC+One+CH" xmltv_id="BBC One">BBC One</channel>
+    <channel update="i" site="tvguide.dk" site_id="BBC+Two+CH" xmltv_id="BBC Two">BBC Two</channel>
+    <channel update="i" site="tvguide.dk" site_id="BBC+Three+CH" xmltv_id="BBC Three">BBC Three</channel>
+    <channel update="i" site="tvguide.dk" site_id="BBC+Four+CH" xmltv_id="BBC Four">BBC Four</channel>
+    <channel update="i" site="tvguide.dk" site_id="BBC+HD+CH" xmltv_id="BBC HD">BBC HD</channel>
+    <channel update="i" site="tvguide.dk" site_id="BBC+Parliament+CH" xmltv_id="BBC Parliament">BBC Parliament</channel>
+    <channel update="i" site="tvguide.dk" site_id="BBC+Cbeebies+CH" xmltv_id="BBC Cbeebies">BBC Cbeebies</channel>
+    <channel update="i" site="tvguide.dk" site_id="ITV3+CH" xmltv_id="ITV3">ITV3</channel>
+    <channel update="i" site="tvguide.dk" site_id="la1" xmltv_id="La1">La1</channel>
+    <channel update="i" site="tvguide.dk" site_id="la2+es" xmltv_id="La2">La2</channel>
+    <channel update="i" site="tvguide.dk" site_id="teledeporte+es" xmltv_id="Teledeporte">Teledeporte</channel>
+    <channel update="i" site="tvguide.dk" site_id="Clan+TVE+ES" xmltv_id="Clan TVE">Clan TVE</channel>
+    <channel update="i" site="tvguide.dk" site_id="TVE+HD+ES" xmltv_id="TVE HD">TVE HD</channel>
+    <channel update="i" site="tvguide.dk" site_id="24+Horas+ES" xmltv_id="24 Horas">24 Horas</channel>
+    <channel update="i" site="tvguide.dk" site_id="TVE+Internatiional+ES" xmltv_id="TVE Internatiional">TVE Internatiional</channel>
+    <channel update="i" site="tvguide.dk" site_id="la 1 cataluna" xmltv_id="La 1 Cataluna">La 1 Cataluna</channel>
+    <channel update="i" site="tvguide.dk" site_id="la 2 cataluna" xmltv_id="La 2 Cataluna">La 2 Cataluna</channel>
+    <channel update="i" site="tvguide.dk" site_id="tve internacional america I" xmltv_id="TVE Internacional America I">TVE Internacional America I</channel>
+    <channel update="i" site="tvguide.dk" site_id="tve internacional america II" xmltv_id="TVE Internacional America II">TVE Internacional America II</channel>
+    <channel update="i" site="tvguide.dk" site_id="tve internacional asia-oceanÃ­a" xmltv_id="TVE Internacional Asia/Oceania">TVE Internacional Asia/Oceania</channel>
+    <channel update="i" site="tvguide.dk" site_id="LaSexta+ES" xmltv_id="LaSexta">LaSexta</channel>
+    <channel update="i" site="tvguide.dk" site_id="xplora" xmltv_id="Xplora">Xplora</channel>
+    <channel update="i" site="tvguide.dk" site_id="todo cine" xmltv_id="Todo Cine">Todo Cine</channel>
+    <channel update="i" site="tvguide.dk" site_id="Telecinco+es" xmltv_id="Telecinco">Telecinco</channel>
+    <channel update="i" site="tvguide.dk" site_id="Cuatro+es" xmltv_id="Cuatro">Cuatro</channel>
+    <channel update="i" site="tvguide.dk" site_id="fdf telecinco" xmltv_id="FDF Telecinco">FDF Telecinco</channel>
+    <channel update="i" site="tvguide.dk" site_id="la siete" xmltv_id="La Siete">La Siete</channel>
+    <channel update="i" site="tvguide.dk" site_id="boing" xmltv_id="Boing">Boing</channel>
+    <channel update="i" site="tvguide.dk" site_id="divinity" xmltv_id="Divinity">Divinity</channel>
+    <channel update="i" site="tvguide.dk" site_id="energy" xmltv_id="Energy">Energy</channel>
+    <channel update="i" site="tvguide.dk" site_id="nueve" xmltv_id="Nueve">Nueve</channel>
+    <channel update="i" site="tvguide.dk" site_id="Libertad+Digital+TV+es" xmltv_id="Libertad Digital TV">Libertad Digital TV</channel>
+    <channel update="i" site="tvguide.dk" site_id="AXN+es" xmltv_id="AXN">AXN</channel>
+    <channel update="i" site="tvguide.dk" site_id="Hispan+tv+es" xmltv_id="Hispan tv">Hispan tv</channel>
+    <channel update="i" site="tvguide.dk" site_id="La+Otra+ES" xmltv_id="La Otra">La Otra</channel>
+    <channel update="i" site="tvguide.dk" site_id="Telemadrid+ES" xmltv_id="Telemadrid">Telemadrid</channel>
+    <channel update="i" site="tvguide.dk" site_id="ETB+Sat+ES" xmltv_id="ETB Sat">ETB Sat</channel>
+    <channel update="i" site="tvguide.dk" site_id="ETB1" xmltv_id="ETB1">ETB1</channel>
+    <channel update="i" site="tvguide.dk" site_id="ETB2" xmltv_id="ETB2">ETB2</channel>
+    <channel update="i" site="tvguide.dk" site_id="ETB3" xmltv_id="ETB3">ETB3</channel>
+    <channel update="i" site="tvguide.dk" site_id="canal vasco" xmltv_id="Canal Vasco">Canal Vasco</channel>
+    <channel update="i" site="tvguide.dk" site_id="ETB K" xmltv_id="ETB K">ETB K</channel>
+    <channel update="i" site="tvguide.dk" site_id="Andalucia TV ES" xmltv_id="Andalucia TV">Andalucia TV</channel>
+    <channel update="i" site="tvguide.dk" site_id="TVG" xmltv_id="TVG">TVG</channel>
+    <channel update="i" site="tvguide.dk" site_id="TVG 2" xmltv_id="TVG 2">TVG 2</channel>
+    <channel update="i" site="tvguide.dk" site_id="Canal+Parlamento+ES" xmltv_id="Canal Parlamento">Canal Parlamento</channel>
+    <channel update="i" site="tvguide.dk" site_id="Discovery+Max+ES" xmltv_id="Discovery Max">Discovery Max</channel>
+  </channels>
+</site>

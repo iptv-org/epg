@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<site generator-info-name="WebGrab+Plus/w MDB &amp; REX Postprocess -- version V2.1.5 -- Jan van Straaten" site="laguidatv.it">
+  <channels>
+    <channel update="i" site="laguidatv.it" site_id="action" xmltv_id="Action">Action</channel>
+    <channel update="i" site="laguidatv.it" site_id="bbc-knowledge" xmltv_id="BBC Knowledge">BBC Knowledge</channel>
+    <channel update="i" site="laguidatv.it" site_id="canale-5" xmltv_id="Canale 5">Canale 5</channel>
+    <channel update="i" site="laguidatv.it" site_id="discovery-world" xmltv_id="Discovery World">Discovery World</channel>
+    <channel update="i" site="laguidatv.it" site_id="dmax" xmltv_id="Dmax">Dmax</channel>
+    <channel update="i" site="laguidatv.it" site_id="focus-tv" xmltv_id="Focus TV">Focus TV</channel>
+    <channel update="i" site="laguidatv.it" site_id="fox-sports-plus" xmltv_id="Fox Sports plus">Fox Sports plus</channel>
+    <channel update="i" site="laguidatv.it" site_id="italia-1" xmltv_id="Italia 1">Italia 1</channel>
+    <channel update="i" site="laguidatv.it" site_id="italia-2" xmltv_id="Italia 2">Italia 2</channel>
+    <channel update="i" site="laguidatv.it" site_id="joi" xmltv_id="Joi">Joi</channel>
+    <channel update="i" site="laguidatv.it" site_id="mediaset-extra" xmltv_id="Mediaset Extra">Mediaset Extra</channel>
+    <channel update="i" site="laguidatv.it" site_id="mya" xmltv_id="Mya">Mya</channel>
+    <channel update="i" site="laguidatv.it" site_id="premium-calcio" xmltv_id="Premium Calcio">Premium Calcio</channel>
+    <channel update="i" site="laguidatv.it" site_id="premium-cinema" xmltv_id="Premium Cinema">Premium Cinema</channel>
+    <channel update="i" site="laguidatv.it" site_id="premium-cinema-comedy" xmltv_id="Premium Cinema Comedy">Premium Cinema Comedy</channel>
+    <channel update="i" site="laguidatv.it" site_id="premium-cinema-emotion" xmltv_id="Premium Cinema Emotion">Premium Cinema Emotion</channel>
+    <channel update="i" site="laguidatv.it" site_id="premium-cinema-energy" xmltv_id="Premium Cinema Energy">Premium Cinema Energy</channel>
+    <channel update="i" site="laguidatv.it" site_id="premium-crime" xmltv_id="Premium Crime">Premium Crime</channel>
+    <channel update="i" site="laguidatv.it" site_id="rai-1" xmltv_id="Rai 1">Rai 1</channel>
+    <channel update="i" site="laguidatv.it" site_id="rai-2" xmltv_id="Rai 2">Rai 2</channel>
+    <channel update="i" site="laguidatv.it" site_id="rai-3" xmltv_id="Rai 3">Rai 3</channel>
+    <channel update="i" site="laguidatv.it" site_id="rai-4" xmltv_id="Rai 4">Rai 4</channel>
+    <channel update="i" site="laguidatv.it" site_id="rai-5" xmltv_id="Rai 5">Rai 5</channel>
+    <channel update="i" site="laguidatv.it" site_id="rai-euronews" xmltv_id="Rai EuroNews">Rai EuroNews</channel>
+    <channel update="i" site="laguidatv.it" site_id="rai-gulp" xmltv_id="Rai Gulp">Rai Gulp</channel>
+    <channel update="i" site="laguidatv.it" site_id="rai-movie" xmltv_id="Rai Movie">Rai Movie</channel>
+    <channel update="i" site="laguidatv.it" site_id="rai-news-24" xmltv_id="Rai News 24">Rai News 24</channel>
+    <channel update="i" site="laguidatv.it" site_id="rai-premium" xmltv_id="Rai Premium">Rai Premium</channel>
+    <channel update="i" site="laguidatv.it" site_id="rai-scuola" xmltv_id="Rai Scuola">Rai Scuola</channel>
+    <channel update="i" site="laguidatv.it" site_id="rai-sport-1" xmltv_id="Rai Sport 1">Rai Sport 1</channel>
+    <channel update="i" site="laguidatv.it" site_id="rai-sport-2" xmltv_id="Rai Sport 2">Rai Sport 2</channel>
+    <channel update="i" site="laguidatv.it" site_id="rai-storia" xmltv_id="Rai Storia">Rai Storia</channel>
+    <channel update="i" site="laguidatv.it" site_id="rai-yoyo" xmltv_id="Rai Yoyo">Rai Yoyo</channel>
+    <channel update="i" site="laguidatv.it" site_id="rete-4" xmltv_id="Rete 4">Rete 4</channel>
+    <channel update="i" site="laguidatv.it" site_id="studio-universal" xmltv_id="Studio Universal">Studio Universal</channel>
+    <channel update="i" site="laguidatv.it" site_id="tgcom24" xmltv_id="Tgcom24">Tgcom24</channel>
+    <channel update="i" site="laguidatv.it" site_id="animal-planet" xmltv_id="Animal Planet">Animal Planet</channel>
+    <channel update="i" site="laguidatv.it" site_id="automoto-tv" xmltv_id="Automoto TV">Automoto TV</channel>
+    <channel update="i" site="laguidatv.it" site_id="axn" xmltv_id="AXN">AXN</channel>
+    <channel update="i" site="laguidatv.it" site_id="axn-sci-fi" xmltv_id="AXN Sci-Fi">AXN Sci-Fi</channel>
+    <channel update="i" site="laguidatv.it" site_id="baby-tv" xmltv_id="Baby TV">Baby TV</channel>
+    <channel update="i" site="laguidatv.it" site_id="bike-channel" xmltv_id="Bike Channel">Bike Channel</channel>
+    <channel update="i" site="laguidatv.it" site_id="bloomberg" xmltv_id="Bloomberg">Bloomberg</channel>
+    <channel update="i" site="laguidatv.it" site_id="boing" xmltv_id="Boing">Boing</channel>
+    <channel update="i" site="laguidatv.it" site_id="boomerang" xmltv_id="Boomerang">Boomerang</channel>
+    <channel update="i" site="laguidatv.it" site_id="caccia-e-pesca" xmltv_id="Caccia e Pesca">Caccia e Pesca</channel>
+    <channel update="i" site="laguidatv.it" site_id="cartoon-network" xmltv_id="Cartoon Network">Cartoon Network</channel>
+    <channel update="i" site="laguidatv.it" site_id="cartoonito" xmltv_id="Cartoonito">Cartoonito</channel>
+    <channel update="i" site="laguidatv.it" site_id="ci-crime-investigation" xmltv_id="CI Crime+Investigation">CI Crime+Investigation</channel>
+    <channel update="i" site="laguidatv.it" site_id="cielo" xmltv_id="Cielo">Cielo</channel>
+    <channel update="i" site="laguidatv.it" site_id="class-horse-tv" xmltv_id="Class Horse TV">Class Horse TV</channel>
+    <channel update="i" site="laguidatv.it" site_id="class-cnbc" xmltv_id="Class-Cnbc">Class-Cnbc</channel>
+    <channel update="i" site="laguidatv.it" site_id="classica" xmltv_id="Classica">Classica</channel>
+    <channel update="i" site="laguidatv.it" site_id="cnbc" xmltv_id="CNBC">CNBC</channel>
+    <channel update="i" site="laguidatv.it" site_id="cnn-intl" xmltv_id="CNN Intl">CNN Intl</channel>
+    <channel update="i" site="laguidatv.it" site_id="comedy-central" xmltv_id="Comedy Central">Comedy Central</channel>
+    <channel update="i" site="laguidatv.it" site_id="dea-junior" xmltv_id="DeA Junior">DeA Junior</channel>
+    <channel update="i" site="laguidatv.it" site_id="deakids" xmltv_id="DeAKids">DeAKids</channel>
+    <channel update="i" site="laguidatv.it" site_id="deejay-tv" xmltv_id="Deejay TV">Deejay TV</channel>
+    <channel update="i" site="laguidatv.it" site_id="discovery-channel" xmltv_id="Discovery Channel">Discovery Channel</channel>
+    <channel update="i" site="laguidatv.it" site_id="discovery-science" xmltv_id="Discovery Science">Discovery Science</channel>
+    <channel update="i" site="laguidatv.it" site_id="discovery-travel-living" xmltv_id="Discovery Travel &amp; Living">Discovery Travel &amp; Living</channel>
+    <channel update="i" site="laguidatv.it" site_id="disney-channel" xmltv_id="Disney Channel">Disney Channel</channel>
+    <channel update="i" site="laguidatv.it" site_id="disney-in-english" xmltv_id="Disney in English">Disney in English</channel>
+    <channel update="i" site="laguidatv.it" site_id="disney-junior" xmltv_id="Disney Junior">Disney Junior</channel>
+    <channel update="i" site="laguidatv.it" site_id="disney-xd" xmltv_id="Disney XD">Disney XD</channel>
+    <channel update="i" site="laguidatv.it" site_id="diva-universal" xmltv_id="Diva Universal">Diva Universal</channel>
+    <channel update="i" site="laguidatv.it" site_id="doctors-life" xmltv_id="Doctor's Life">Doctor's Life</channel>
+    <channel update="i" site="laguidatv.it" site_id="dove-tv" xmltv_id="Dove TV">Dove TV</channel>
+    <channel update="i" site="laguidatv.it" site_id="euronews" xmltv_id="Euronews">Euronews</channel>
+    <channel update="i" site="laguidatv.it" site_id="eurosport" xmltv_id="Eurosport">Eurosport</channel>
+    <channel update="i" site="laguidatv.it" site_id="eurosport-2" xmltv_id="Eurosport 2">Eurosport 2</channel>
+    <channel update="i" site="laguidatv.it" site_id="explora" xmltv_id="eXplora">eXplora</channel>
+    <channel update="i" site="laguidatv.it" site_id="fox" xmltv_id="Fox">Fox</channel>
+    <channel update="i" site="laguidatv.it" site_id="fox-animation" xmltv_id="Fox Animation">Fox Animation</channel>
+    <channel update="i" site="laguidatv.it" site_id="fox-business" xmltv_id="Fox Business">Fox Business</channel>
+    <channel update="i" site="laguidatv.it" site_id="fox-comedy" xmltv_id="Fox Comedy">Fox Comedy</channel>
+    <channel update="i" site="laguidatv.it" site_id="fox-crime" xmltv_id="Fox Crime">Fox Crime</channel>
+    <channel update="i" site="laguidatv.it" site_id="fox-life" xmltv_id="Fox Life">Fox Life</channel>
+    <channel update="i" site="laguidatv.it" site_id="fox-news" xmltv_id="Fox News">Fox News</channel>
+    <channel update="i" site="laguidatv.it" site_id="fox-sports" xmltv_id="Fox Sports">Fox Sports</channel>
+    <channel update="i" site="laguidatv.it" site_id="fox-sports-2" xmltv_id="Fox Sports 2">Fox Sports 2</channel>
+    <channel update="i" site="laguidatv.it" site_id="france-24" xmltv_id="France 24">France 24</channel>
+    <channel update="i" site="laguidatv.it" site_id="france-24-english" xmltv_id="France 24 English">France 24 English</channel>
+    <channel update="i" site="laguidatv.it" site_id="frisbee" xmltv_id="Frisbee">Frisbee</channel>
+    <channel update="i" site="laguidatv.it" site_id="gambero-rosso" xmltv_id="Gambero Rosso">Gambero Rosso</channel>
+    <channel update="i" site="laguidatv.it" site_id="giallo" xmltv_id="Giallo">Giallo</channel>
+    <channel update="i" site="laguidatv.it" site_id="hip-hop-tv" xmltv_id="Hip Hop TV">Hip Hop TV</channel>
+    <channel update="i" site="laguidatv.it" site_id="history-channel" xmltv_id="History Channel">History Channel</channel>
+    <channel update="i" site="laguidatv.it" site_id="horror-channel" xmltv_id="Horror Channel">Horror Channel</channel>
+    <channel update="i" site="laguidatv.it" site_id="i24news" xmltv_id="I24news">I24news</channel>
+    <channel update="i" site="laguidatv.it" site_id="inter-channel" xmltv_id="Inter Channel">Inter Channel</channel>
+    <channel update="i" site="laguidatv.it" site_id="iris" xmltv_id="Iris">Iris</channel>
+    <channel update="i" site="laguidatv.it" site_id="jim-jam" xmltv_id="Jim Jam">Jim Jam</channel>
+    <channel update="i" site="laguidatv.it" site_id="juventus-tv" xmltv_id="JUVENTUS tv">JUVENTUS tv</channel>
+    <channel update="i" site="laguidatv.it" site_id="k2" xmltv_id="K2">K2</channel>
+    <channel update="i" site="laguidatv.it" site_id="la-sposa" xmltv_id="La Sposa">La Sposa</channel>
+    <channel update="i" site="laguidatv.it" site_id="la3" xmltv_id="La3">La3</channel>
+    <channel update="i" site="laguidatv.it" site_id="la5" xmltv_id="La5">La5</channel>
+    <channel update="i" site="laguidatv.it" site_id="la7" xmltv_id="La7">La7</channel>
+    <channel update="i" site="laguidatv.it" site_id="la7d" xmltv_id="La7D">La7D</channel>
+    <channel update="i" site="laguidatv.it" site_id="laeffe" xmltv_id="Laeffe">Laeffe</channel>
+    <channel update="i" site="laguidatv.it" site_id="lazio-style-channel" xmltv_id="Lazio Style Channel">Lazio Style Channel</channel>
+    <channel update="i" site="laguidatv.it" site_id="lei" xmltv_id="Lei">Lei</channel>
+    <channel update="i" site="laguidatv.it" site_id="man-ga" xmltv_id="MAN-GA">MAN-GA</channel>
+    <channel update="i" site="laguidatv.it" site_id="milan-channel" xmltv_id="Milan Channel">Milan Channel</channel>
+    <channel update="i" site="laguidatv.it" site_id="mtv-classic" xmltv_id="MTV Classic">MTV Classic</channel>
+    <channel update="i" site="laguidatv.it" site_id="mtv-dance" xmltv_id="MTV Dance">MTV Dance</channel>
+    <channel update="i" site="laguidatv.it" site_id="mtv-hits" xmltv_id="MTV Hits">MTV Hits</channel>
+    <channel update="i" site="laguidatv.it" site_id="mtv-music" xmltv_id="MTV Music">MTV Music</channel>
+    <channel update="i" site="laguidatv.it" site_id="mtv-rocks" xmltv_id="MTV Rocks">MTV Rocks</channel>
+    <channel update="i" site="laguidatv.it" site_id="my-deejay" xmltv_id="My Deejay">My Deejay</channel>
+    <channel update="i" site="laguidatv.it" site_id="nat-geo-people" xmltv_id="Nat Geo People">Nat Geo People</channel>
+    <channel update="i" site="laguidatv.it" site_id="nat-geo-wild" xmltv_id="Nat Geo Wild">Nat Geo Wild</channel>
+    <channel update="i" site="laguidatv.it" site_id="national-geo" xmltv_id="National Geo">National Geo</channel>
+    <channel update="i" site="laguidatv.it" site_id="nick-junior" xmltv_id="Nick Junior">Nick Junior</channel>
+    <channel update="i" site="laguidatv.it" site_id="nickelodeon" xmltv_id="Nickelodeon">Nickelodeon</channel>
+    <channel update="i" site="laguidatv.it" site_id="pesca-e-caccia" xmltv_id="Pesca e Caccia">Pesca e Caccia</channel>
+    <channel update="i" site="laguidatv.it" site_id="pokeritalia24" xmltv_id="PokerItalia24">PokerItalia24</channel>
+    <channel update="i" site="laguidatv.it" site_id="primafila-1" xmltv_id="Primafila 1">Primafila 1</channel>
+    <channel update="i" site="laguidatv.it" site_id="primafila-10" xmltv_id="Primafila 10">Primafila 10</channel>
+    <channel update="i" site="laguidatv.it" site_id="primafila-11" xmltv_id="Primafila 11">Primafila 11</channel>
+    <channel update="i" site="laguidatv.it" site_id="primafila-12" xmltv_id="Primafila 12">Primafila 12</channel>
+    <channel update="i" site="laguidatv.it" site_id="primafila-13" xmltv_id="Primafila 13">Primafila 13</channel>
+    <channel update="i" site="laguidatv.it" site_id="primafila-14" xmltv_id="Primafila 14">Primafila 14</channel>
+    <channel update="i" site="laguidatv.it" site_id="primafila-15" xmltv_id="Primafila 15">Primafila 15</channel>
+    <channel update="i" site="laguidatv.it" site_id="primafila-16" xmltv_id="Primafila 16">Primafila 16</channel>
+    <channel update="i" site="laguidatv.it" site_id="primafila-17" xmltv_id="Primafila 17">Primafila 17</channel>
+    <channel update="i" site="laguidatv.it" site_id="primafila-18" xmltv_id="Primafila 18">Primafila 18</channel>
+    <channel update="i" site="laguidatv.it" site_id="primafila-19" xmltv_id="Primafila 19">Primafila 19</channel>
+    <channel update="i" site="laguidatv.it" site_id="primafila-2" xmltv_id="Primafila 2">Primafila 2</channel>
+    <channel update="i" site="laguidatv.it" site_id="primafila-3" xmltv_id="Primafila 3">Primafila 3</channel>
+    <channel update="i" site="laguidatv.it" site_id="primafila-4" xmltv_id="Primafila 4">Primafila 4</channel>
+    <channel update="i" site="laguidatv.it" site_id="primafila-5" xmltv_id="Primafila 5">Primafila 5</channel>
+    <channel update="i" site="laguidatv.it" site_id="primafila-6" xmltv_id="Primafila 6">Primafila 6</channel>
+    <channel update="i" site="laguidatv.it" site_id="primafila-7" xmltv_id="Primafila 7">Primafila 7</channel>
+    <channel update="i" site="laguidatv.it" site_id="primafila-8" xmltv_id="Primafila 8">Primafila 8</channel>
+    <channel update="i" site="laguidatv.it" site_id="primafila-9" xmltv_id="Primafila 9">Primafila 9</channel>
+    <channel update="i" site="laguidatv.it" site_id="qvc" xmltv_id="QVC">QVC</channel>
+    <channel update="i" site="laguidatv.it" site_id="radio-italia-tv" xmltv_id="Radio Italia Tv">Radio Italia Tv</channel>
+    <channel update="i" site="laguidatv.it" site_id="radionorba-tv" xmltv_id="Radionorba TV">Radionorba TV</channel>
+    <channel update="i" site="laguidatv.it" site_id="real-time" xmltv_id="Real Time">Real Time</channel>
+    <channel update="i" site="laguidatv.it" site_id="rock-tv" xmltv_id="Rock TV">Rock TV</channel>
+    <channel update="i" site="laguidatv.it" site_id="roma-tv" xmltv_id="Roma Tv">Roma Tv</channel>
+    <channel update="i" site="laguidatv.it" site_id="roma-uno" xmltv_id="Roma Uno">Roma Uno</channel>
+    <channel update="i" site="laguidatv.it" site_id="rt-doc" xmltv_id="RT Doc">RT Doc</channel>
+    <channel update="i" site="laguidatv.it" site_id="rtl-102-5-tv" xmltv_id="RTL 102.5 TV">RTL 102.5 TV</channel>
+    <channel update="i" site="laguidatv.it" site_id="russia-today" xmltv_id="Russia Today">Russia Today</channel>
+    <channel update="i" site="laguidatv.it" site_id="sky-3d-ch-150" xmltv_id="Sky 3D - Ch 150">Sky 3D - Ch 150</channel>
+    <channel update="i" site="laguidatv.it" site_id="sky-3d-ch-209" xmltv_id="Sky 3D - Ch 209">Sky 3D - Ch 209</channel>
+    <channel update="i" site="laguidatv.it" site_id="sky-3d-ch-321" xmltv_id="Sky 3D - Ch 321">Sky 3D - Ch 321</channel>
+    <channel update="i" site="laguidatv.it" site_id="sky-arte" xmltv_id="Sky Arte">Sky Arte</channel>
+    <channel update="i" site="laguidatv.it" site_id="sky-arte-hd-400" xmltv_id="Sky Arte HD-400">Sky Arte HD-400</channel>
+    <channel update="i" site="laguidatv.it" site_id="sky-atlantic" xmltv_id="Sky Atlantic">Sky Atlantic</channel>
+    <channel update="i" site="laguidatv.it" site_id="sky-atlantic-1992" xmltv_id="Sky Atlantic 1992">Sky Atlantic 1992</channel>
+    <channel update="i" site="laguidatv.it" site_id="sky-calcio-1" xmltv_id="Sky Calcio 1">Sky Calcio 1</channel>
+    <channel update="i" site="laguidatv.it" site_id="sky-calcio-10" xmltv_id="Sky Calcio 10">Sky Calcio 10</channel>
+    <channel update="i" site="laguidatv.it" site_id="sky-calcio-11" xmltv_id="Sky Calcio 11">Sky Calcio 11</channel>
+    <channel update="i" site="laguidatv.it" site_id="sky-calcio-12" xmltv_id="Sky Calcio 12">Sky Calcio 12</channel>
+    <channel update="i" site="laguidatv.it" site_id="sky-calcio-13" xmltv_id="Sky Calcio 13">Sky Calcio 13</channel>
+    <channel update="i" site="laguidatv.it" site_id="sky-calcio-2" xmltv_id="Sky Calcio 2">Sky Calcio 2</channel>
+    <channel update="i" site="laguidatv.it" site_id="sky-calcio-3" xmltv_id="Sky Calcio 3">Sky Calcio 3</channel>
+    <channel update="i" site="laguidatv.it" site_id="sky-calcio-4" xmltv_id="Sky Calcio 4">Sky Calcio 4</channel>
+    <channel update="i" site="laguidatv.it" site_id="sky-calcio-5" xmltv_id="Sky Calcio 5">Sky Calcio 5</channel>
+    <channel update="i" site="laguidatv.it" site_id="sky-calcio-6" xmltv_id="Sky Calcio 6">Sky Calcio 6</channel>
+    <channel update="i" site="laguidatv.it" site_id="sky-calcio-7" xmltv_id="Sky Calcio 7">Sky Calcio 7</channel>
+    <channel update="i" site="laguidatv.it" site_id="sky-calcio-8" xmltv_id="Sky Calcio 8">Sky Calcio 8</channel>
+    <channel update="i" site="laguidatv.it" site_id="sky-calcio-9" xmltv_id="Sky Calcio 9">Sky Calcio 9</channel>
+    <channel update="i" site="laguidatv.it" site_id="sky-cinema-24" xmltv_id="Sky Cinema + 24">Sky Cinema + 24</channel>
+    <channel update="i" site="laguidatv.it" site_id="sky-cinema-1" xmltv_id="Sky Cinema 1">Sky Cinema 1</channel>
+    <channel update="i" site="laguidatv.it" site_id="sky-cinema-classics" xmltv_id="Sky Cinema Classics">Sky Cinema Classics</channel>
+    <channel update="i" site="laguidatv.it" site_id="sky-cinema-comedy" xmltv_id="Sky Cinema Comedy">Sky Cinema Comedy</channel>
+    <channel update="i" site="laguidatv.it" site_id="sky-cinema-cult" xmltv_id="Sky Cinema Cult">Sky Cinema Cult</channel>
+    <channel update="i" site="laguidatv.it" site_id="sky-cinema-family" xmltv_id="Sky Cinema Family">Sky Cinema Family</channel>
+    <channel update="i" site="laguidatv.it" site_id="sky-cinema-hits" xmltv_id="Sky Cinema Hits">Sky Cinema Hits</channel>
+    <channel update="i" site="laguidatv.it" site_id="sky-cinema-max" xmltv_id="Sky Cinema Max">Sky Cinema Max</channel>
+    <channel update="i" site="laguidatv.it" site_id="sky-cinema-passion" xmltv_id="Sky Cinema Passion">Sky Cinema Passion</channel>
+    <channel update="i" site="laguidatv.it" site_id="sky-music" xmltv_id="Sky Music">Sky Music</channel>
+    <channel update="i" site="laguidatv.it" site_id="sky-news" xmltv_id="Sky News">Sky News</channel>
+    <channel update="i" site="laguidatv.it" site_id="sky-radio" xmltv_id="Sky Radio">Sky Radio</channel>
+    <channel update="i" site="laguidatv.it" site_id="sky-sport-1" xmltv_id="Sky Sport 1">Sky Sport 1</channel>
+    <channel update="i" site="laguidatv.it" site_id="sky-sport-2" xmltv_id="Sky Sport 2">Sky Sport 2</channel>
+    <channel update="i" site="laguidatv.it" site_id="sky-sport-3" xmltv_id="Sky Sport 3">Sky Sport 3</channel>
+    <channel update="i" site="laguidatv.it" site_id="sky-sport-f1" xmltv_id="Sky Sport F1">Sky Sport F1</channel>
+    <channel update="i" site="laguidatv.it" site_id="sky-sport-motogp" xmltv_id="Sky Sport MotoGP">Sky Sport MotoGP</channel>
+    <channel update="i" site="laguidatv.it" site_id="sky-sport-plus" xmltv_id="Sky Sport Plus">Sky Sport Plus</channel>
+    <channel update="i" site="laguidatv.it" site_id="sky-sport24" xmltv_id="Sky Sport24">Sky Sport24</channel>
+    <channel update="i" site="laguidatv.it" site_id="sky-supercalcio" xmltv_id="Sky Supercalcio">Sky Supercalcio</channel>
+    <channel update="i" site="laguidatv.it" site_id="sky-tg-24-meteo" xmltv_id="Sky TG 24 Meteo">Sky TG 24 Meteo</channel>
+    <channel update="i" site="laguidatv.it" site_id="sky-tg24" xmltv_id="Sky TG24">Sky TG24</channel>
+    <channel update="i" site="laguidatv.it" site_id="sky-uno" xmltv_id="Sky Uno">Sky Uno</channel>
+    <channel update="i" site="laguidatv.it" site_id="smtv-san-marino" xmltv_id="SMtv San Marino">SMtv San Marino</channel>
+    <channel update="i" site="laguidatv.it" site_id="sportitalia" xmltv_id="Sportitalia">Sportitalia</channel>
+    <channel update="i" site="laguidatv.it" site_id="super" xmltv_id="Super!">Super!</channel>
+    <channel update="i" site="laguidatv.it" site_id="supertennis" xmltv_id="SuperTennis">SuperTennis</channel>
+    <channel update="i" site="laguidatv.it" site_id="tg-norba24" xmltv_id="TG Norba24">TG Norba24</channel>
+    <channel update="i" site="laguidatv.it" site_id="tg24-eventi" xmltv_id="TG24 Eventi">TG24 Eventi</channel>
+    <channel update="i" site="laguidatv.it" site_id="tg24-primo-piano" xmltv_id="TG24 Primo Piano">TG24 Primo Piano</channel>
+    <channel update="i" site="laguidatv.it" site_id="tg24-rassegne" xmltv_id="TG24 Rassegne">TG24 Rassegne</channel>
+    <channel update="i" site="laguidatv.it" site_id="top-crime" xmltv_id="Top Crime">Top Crime</channel>
+    <channel update="i" site="laguidatv.it" site_id="tv2000" xmltv_id="TV2000">TV2000</channel>
+    <channel update="i" site="laguidatv.it" site_id="tv8" xmltv_id="TV8">TV8</channel>
+    <channel update="i" site="laguidatv.it" site_id="uniresat" xmltv_id="UnireSat">UnireSat</channel>
+  </channels>
+</site>

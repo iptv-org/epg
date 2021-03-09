@@ -1,0 +1,657 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<site generator-info-name="WebGrab+Plus/w MDB &amp; REX Postprocess -- version  V1.57 -- Jan van Straaten" site="zita.be">
+  <channels>
+    <channel update="i" site="zita.be" site_id="vtm" xmltv_id="VTM">VTM</channel>
+    <channel update="i" site="zita.be" site_id="een" xmltv_id="één">één</channel>
+    <channel update="i" site="zita.be" site_id="vt4" xmltv_id="VT4">VT4</channel>
+    <channel update="i" site="zita.be" site_id="ketnet-canvas" xmltv_id="Ketnet/Canvas">Ketnet/Canvas</channel>
+    <channel update="i" site="zita.be" site_id="2be" xmltv_id="2BE">2BE</channel>
+    <channel update="i" site="zita.be" site_id="vijftv" xmltv_id="VijfTV">VijfTV</channel>
+    <channel update="i" site="zita.be" site_id="vitaya" xmltv_id="Vitaya">Vitaya</channel>
+    <channel update="i" site="zita.be" site_id="kanaalz" xmltv_id="KanaalZ">KanaalZ</channel>
+    <channel update="i" site="zita.be" site_id="atv" xmltv_id="ATV">ATV</channel>
+    <channel update="i" site="zita.be" site_id="avs-eeklo" xmltv_id="AVS Eeklo">AVS Eeklo</channel>
+    <channel update="i" site="zita.be" site_id="avs-gent" xmltv_id="AVS Gent">AVS Gent</channel>
+    <channel update="i" site="zita.be" site_id="avs-oudenaar" xmltv_id="AVS Oudenaar.">AVS Oudenaar.</channel>
+    <channel update="i" site="zita.be" site_id="focus" xmltv_id="Focus">Focus</channel>
+    <channel update="i" site="zita.be" site_id="tv-oost-dend" xmltv_id="TV Oost Dend.">TV Oost Dend.</channel>
+    <channel update="i" site="zita.be" site_id="tv-oost-stnik" xmltv_id="TV Oost StNik.">TV Oost StNik.</channel>
+    <channel update="i" site="zita.be" site_id="ringtv" xmltv_id="Ring-TV">Ring-TV</channel>
+    <channel update="i" site="zita.be" site_id="rob" xmltv_id="ROB">ROB</channel>
+    <channel update="i" site="zita.be" site_id="rtv-geel" xmltv_id="RTV Geel">RTV Geel</channel>
+    <channel update="i" site="zita.be" site_id="rtv-herentho" xmltv_id="RTV Herentho.">RTV Herentho.</channel>
+    <channel update="i" site="zita.be" site_id="rtv-mechelen" xmltv_id="RTV Mechelen">RTV Mechelen</channel>
+    <channel update="i" site="zita.be" site_id="rtv-turnhout" xmltv_id="RTV Turnhout">RTV Turnhout</channel>
+    <channel update="i" site="zita.be" site_id="tv-brussel" xmltv_id="TV Brussel">TV Brussel</channel>
+    <channel update="i" site="zita.be" site_id="tv-limburg" xmltv_id="TV Limburg">TV Limburg</channel>
+    <channel update="i" site="zita.be" site_id="wtv" xmltv_id="WTV">WTV</channel>
+    <channel update="i" site="zita.be" site_id="infokanaal" xmltv_id="Infokanaal">Infokanaal</channel>
+    <channel update="i" site="zita.be" site_id="jim" xmltv_id="JIM">JIM</channel>
+    <channel update="i" site="zita.be" site_id="mtvnick" xmltv_id="MTV/Nick">MTV/Nick</channel>
+    <channel update="i" site="zita.be" site_id="tmf" xmltv_id="TMF">TMF</channel>
+    <channel update="i" site="zita.be" site_id="ned1" xmltv_id="Ned1">Ned1</channel>
+    <channel update="i" site="zita.be" site_id="ned2" xmltv_id="Ned2">Ned2</channel>
+    <channel update="i" site="zita.be" site_id="ned3" xmltv_id="Ned3">Ned3</channel>
+    <channel update="i" site="zita.be" site_id="bbc-1" xmltv_id="BBC 1">BBC 1</channel>
+    <channel update="i" site="zita.be" site_id="bbc-2" xmltv_id="BBC 2">BBC 2</channel>
+    <channel update="i" site="zita.be" site_id="la-une" xmltv_id="La Une">La Une</channel>
+    <channel update="i" site="zita.be" site_id="la-deux" xmltv_id="La Deux">La Deux</channel>
+    <channel update="i" site="zita.be" site_id="rtl-tvi" xmltv_id="RTL TVI">RTL TVI</channel>
+    <channel update="i" site="zita.be" site_id="club-rtl" xmltv_id="Club RTL">Club RTL</channel>
+    <channel update="i" site="zita.be" site_id="ab3" xmltv_id="AB3">AB3</channel>
+    <channel update="i" site="zita.be" site_id="tf1" xmltv_id="TF1">TF1</channel>
+    <channel update="i" site="zita.be" site_id="france-2" xmltv_id="France 2">France 2</channel>
+    <channel update="i" site="zita.be" site_id="france-3" xmltv_id="France 3">France 3</channel>
+    <channel update="i" site="zita.be" site_id="france-4" xmltv_id="France 4">France 4</channel>
+    <channel update="i" site="zita.be" site_id="france-5" xmltv_id="France 5">France 5</channel>
+    <channel update="i" site="zita.be" site_id="arte" xmltv_id="ARTE">ARTE</channel>
+    <channel update="i" site="zita.be" site_id="tv5-monde" xmltv_id="TV5 Monde">TV5 Monde</channel>
+    <channel update="i" site="zita.be" site_id="ard" xmltv_id="ARD">ARD</channel>
+    <channel update="i" site="zita.be" site_id="rai-uno" xmltv_id="Rai Uno">Rai Uno</channel>
+    <channel update="i" site="zita.be" site_id="tve" xmltv_id="TVE">TVE</channel>
+    <channel update="i" site="zita.be" site_id="eurosport" xmltv_id="Eurosport">Eurosport</channel>
+    <channel update="i" site="zita.be" site_id="eurosport-2" xmltv_id="Eurosport 2">Eurosport 2</channel>
+    <channel update="i" site="zita.be" site_id="espn-classic" xmltv_id="ESPN Classic">ESPN Classic</channel>
+    <channel update="i" site="zita.be" site_id="motors-tv" xmltv_id="Motors TV">Motors TV</channel>
+    <channel update="i" site="zita.be" site_id="extreme-sport" xmltv_id="Extreme Sport">Extreme Sport</channel>
+    <channel update="i" site="zita.be" site_id="nasn" xmltv_id="NASN">NASN</channel>
+    <channel update="i" site="zita.be" site_id="actua-tv" xmltv_id="Actua TV">Actua TV</channel>
+    <channel update="i" site="zita.be" site_id="cnn" xmltv_id="CNN">CNN</channel>
+    <channel update="i" site="zita.be" site_id="cnbc-europe" xmltv_id="CNBC Europe">CNBC Europe</channel>
+    <channel update="i" site="zita.be" site_id="bbc-world" xmltv_id="BBC World">BBC World</channel>
+    <channel update="i" site="zita.be" site_id="sky-news" xmltv_id="Sky News">Sky News</channel>
+    <channel update="i" site="zita.be" site_id="euronews" xmltv_id="Euronews">Euronews</channel>
+    <channel update="i" site="zita.be" site_id="nat-geo" xmltv_id="Nat Geo">Nat Geo</channel>
+    <channel update="i" site="zita.be" site_id="discovery" xmltv_id="Discovery">Discovery</channel>
+    <channel update="i" site="zita.be" site_id="discovery-civ" xmltv_id="Discovery Civ">Discovery Civ</channel>
+    <channel update="i" site="zita.be" site_id="discovery-tl" xmltv_id="Discovery T&amp;L">Discovery T&amp;L</channel>
+    <channel update="i" site="zita.be" site_id="discovery-sci" xmltv_id="Discovery Sci">Discovery Sci</channel>
+    <channel update="i" site="zita.be" site_id="history-channel" xmltv_id="History Channel">History Channel</channel>
+    <channel update="i" site="zita.be" site_id="animal-planet" xmltv_id="Animal Planet">Animal Planet</channel>
+    <channel update="i" site="zita.be" site_id="fashion-tv" xmltv_id="Fashion TV">Fashion TV</channel>
+    <channel update="i" site="zita.be" site_id="e" xmltv_id="E!">E!</channel>
+    <channel update="i" site="zita.be" site_id="bbc-prime" xmltv_id="BBC Prime">BBC Prime</channel>
+    <channel update="i" site="zita.be" site_id="zone-club" xmltv_id="Zone Club">Zone Club</channel>
+    <channel update="i" site="zita.be" site_id="tcm" xmltv_id="TCM">TCM</channel>
+    <channel update="i" site="zita.be" site_id="hallmark" xmltv_id="Hallmark">Hallmark</channel>
+    <channel update="i" site="zita.be" site_id="cartoontcm" xmltv_id="Cartoon/TCM">Cartoon/TCM</channel>
+    <channel update="i" site="zita.be" site_id="jetix2" xmltv_id="Jetix,2">Jetix,2</channel>
+    <channel update="i" site="zita.be" site_id="boomerang" xmltv_id="Boomerang">Boomerang</channel>
+    <channel update="i" site="zita.be" site_id="nick-jr" xmltv_id="Nick Jr.">Nick Jr.</channel>
+    <channel update="i" site="zita.be" site_id="mtv-hits" xmltv_id="MTV Hits">MTV Hits</channel>
+    <channel update="i" site="zita.be" site_id="mezzo" xmltv_id="Mezzo">Mezzo</channel>
+    <channel update="i" site="zita.be" site_id="trace-tv" xmltv_id="TRACE TV">TRACE TV</channel>
+    <channel update="i" site="zita.be" site_id="be-1" xmltv_id="Be 1">Be 1</channel>
+    <channel update="i" site="zita.be" site_id="be-cine" xmltv_id="Be Ciné">Be Ciné</channel>
+    <channel update="i" site="zita.be" site_id="be-series" xmltv_id="Be Séries">Be Séries</channel>
+    <channel update="i" site="zita.be" site_id="be-sport-1" xmltv_id="Be Sport 1">Be Sport 1</channel>
+    <channel update="i" site="zita.be" site_id="be-sport-2" xmltv_id="Be Sport 2">Be Sport 2</channel>
+    <channel update="i" site="zita.be" site_id="playboy-tv" xmltv_id="Playboy TV">Playboy TV</channel>
+    <channel update="i" site="zita.be" site_id="adult-channel" xmltv_id="Adult Channel">Adult Channel</channel>
+    <channel update="i" site="zita.be" site_id="xpassion" xmltv_id="X-Passion">X-Passion</channel>
+    <channel update="i" site="zita.be" site_id="gaypassion" xmltv_id="Gay-Passion">Gay-Passion</channel>
+    <channel update="i" site="zita.be" site_id="radio-1" xmltv_id="Radio 1">Radio 1</channel>
+    <channel update="i" site="zita.be" site_id="radio-2" xmltv_id="Radio 2">Radio 2</channel>
+    <channel update="i" site="zita.be" site_id="donna" xmltv_id="Donna">Donna</channel>
+    <channel update="i" site="zita.be" site_id="stubru" xmltv_id="StuBru">StuBru</channel>
+    <channel update="i" site="zita.be" site_id="klara" xmltv_id="Klara">Klara</channel>
+    <channel update="i" site="zita.be" site_id="klara-continuo" xmltv_id="Klara Continuo">Klara Continuo</channel>
+    <channel update="i" site="zita.be" site_id="donna-hitbits" xmltv_id="Donna Hitbits">Donna Hitbits</channel>
+    <channel update="i" site="zita.be" site_id="nieuws" xmltv_id="nieuws+">nieuws+</channel>
+    <channel update="i" site="zita.be" site_id="rvi" xmltv_id="RVI">RVI</channel>
+    <channel update="i" site="zita.be" site_id="sporza" xmltv_id="Sporza">Sporza</channel>
+    <channel update="i" site="zita.be" site_id="qmusic" xmltv_id="Q-Music">Q-Music</channel>
+    <channel update="i" site="zita.be" site_id="4fm" xmltv_id="4FM">4FM</channel>
+    <channel update="i" site="zita.be" site_id="plug-tv" xmltv_id="Plug TV">Plug TV</channel>
+    <channel update="i" site="zita.be" site_id="stelevisie" xmltv_id="S.televisie">S.televisie</channel>
+    <channel update="i" site="zita.be" site_id="lifetv" xmltv_id="Life!tv">Life!tv</channel>
+    <channel update="i" site="zita.be" site_id="tmf-party" xmltv_id="TMF Party">TMF Party</channel>
+    <channel update="i" site="zita.be" site_id="zdf" xmltv_id="ZDF">ZDF</channel>
+    <channel update="i" site="zita.be" site_id="notele" xmltv_id="notélé">notélé</channel>
+    <channel update="i" site="zita.be" site_id="la-premiere" xmltv_id="La Première">La Première</channel>
+    <channel update="i" site="zita.be" site_id="vivacite" xmltv_id="VivaCité">VivaCité</channel>
+    <channel update="i" site="zita.be" site_id="musiq3" xmltv_id="Musiq3">Musiq3</channel>
+    <channel update="i" site="zita.be" site_id="pure-fm" xmltv_id="Pure FM">Pure FM</channel>
+    <channel update="i" site="zita.be" site_id="classic21" xmltv_id="Classic21">Classic21</channel>
+    <channel update="i" site="zita.be" site_id="rtbf-intern" xmltv_id="RTBF Intern.">RTBF Intern.</channel>
+    <channel update="i" site="zita.be" site_id="radio-bembem" xmltv_id="Radio BEMBEM">Radio BEMBEM</channel>
+    <channel update="i" site="zita.be" site_id="vtm-kerst" xmltv_id="VTM Kerst">VTM Kerst</channel>
+    <channel update="i" site="zita.be" site_id="al-jazeera-int" xmltv_id="Al Jazeera Int.">Al Jazeera Int.</channel>
+    <channel update="i" site="zita.be" site_id="jetix" xmltv_id="Jetix">Jetix</channel>
+    <channel update="i" site="zita.be" site_id="prime-sport-hd" xmltv_id="Prime Sport HD">Prime Sport HD</channel>
+    <channel update="i" site="zita.be" site_id="prime-star" xmltv_id="Prime Star">Prime Star</channel>
+    <channel update="i" site="zita.be" site_id="prime-star1" xmltv_id="Prime Star+1">Prime Star+1</channel>
+    <channel update="i" site="zita.be" site_id="prime-family" xmltv_id="Prime Family">Prime Family</channel>
+    <channel update="i" site="zita.be" site_id="prime-fezz" xmltv_id="Prime Fezz">Prime Fezz</channel>
+    <channel update="i" site="zita.be" site_id="prime-series" xmltv_id="Prime Series">Prime Series</channel>
+    <channel update="i" site="zita.be" site_id="prime-star-hd" xmltv_id="Prime Star HD">Prime Star HD</channel>
+    <channel update="i" site="zita.be" site_id="gunktv" xmltv_id="GUNKtv">GUNKtv</channel>
+    <channel update="i" site="zita.be" site_id="acht" xmltv_id="Acht">Acht</channel>
+    <channel update="i" site="zita.be" site_id="13eme-rue" xmltv_id="13ème rue">13ème rue</channel>
+    <channel update="i" site="zita.be" site_id="13th-street" xmltv_id="13th Street">13th Street</channel>
+    <channel update="i" site="zita.be" site_id="2m-monde" xmltv_id="2M Monde">2M Monde</channel>
+    <channel update="i" site="zita.be" site_id="3fm" xmltv_id="3FM">3FM</channel>
+    <channel update="i" site="zita.be" site_id="ab4" xmltv_id="AB4">AB4</channel>
+    <channel update="i" site="zita.be" site_id="action" xmltv_id="ACTION">ACTION</channel>
+    <channel update="i" site="zita.be" site_id="al-aoula-europe" xmltv_id="Al Aoula Europe">Al Aoula Europe</channel>
+    <channel update="i" site="zita.be" site_id="al-jazeera-eng" xmltv_id="Al Jazeera Eng.">Al Jazeera Eng.</channel>
+    <channel update="i" site="zita.be" site_id="animal-planet-hd" xmltv_id="Animal Planet HD">Animal Planet HD</channel>
+    <channel update="i" site="zita.be" site_id="animaux" xmltv_id="Animaux">Animaux</channel>
+    <channel update="i" site="zita.be" site_id="arte-belgique" xmltv_id="Arte Belgique">Arte Belgique</channel>
+    <channel update="i" site="zita.be" site_id="bbc-3" xmltv_id="BBC 3">BBC 3</channel>
+    <channel update="i" site="zita.be" site_id="bbc-4" xmltv_id="BBC 4">BBC 4</channel>
+    <channel update="i" site="zita.be" site_id="bbc-hd" xmltv_id="BBC HD">BBC HD</channel>
+    <channel update="i" site="zita.be" site_id="bbc-entertainment" xmltv_id="BBC Entertainment">BBC Entertainment</channel>
+    <channel update="i" site="zita.be" site_id="bbc-radio-1" xmltv_id="BBC Radio 1">BBC Radio 1</channel>
+    <channel update="i" site="zita.be" site_id="bbc-radio-2" xmltv_id="BBC Radio 2">BBC Radio 2</channel>
+    <channel update="i" site="zita.be" site_id="bbc-radio-3" xmltv_id="BBC Radio 3">BBC Radio 3</channel>
+    <channel update="i" site="zita.be" site_id="bbc-world-service" xmltv_id="BBC World Service">BBC World Service</channel>
+    <channel update="i" site="zita.be" site_id="bfm-tv" xmltv_id="BFM TV">BFM TV</channel>
+    <channel update="i" site="zita.be" site_id="brf-1" xmltv_id="BRF 1">BRF 1</channel>
+    <channel update="i" site="zita.be" site_id="be-11h" xmltv_id="Be 1+1h">Be 1+1h</channel>
+    <channel update="i" site="zita.be" site_id="be-evenement" xmltv_id="Be Evénement">Be Evénement</channel>
+    <channel update="i" site="zita.be" site_id="bel-rtl" xmltv_id="Bel RTL">Bel RTL</channel>
+    <channel update="i" site="zita.be" site_id="bloomberg" xmltv_id="Bloomberg">Bloomberg</channel>
+    <channel update="i" site="zita.be" site_id="boomerang-betv" xmltv_id="Boomerang BeTV">Boomerang BeTV</channel>
+    <channel update="i" site="zita.be" site_id="cbbc" xmltv_id="CBBC">CBBC</channel>
+    <channel update="i" site="zita.be" site_id="canal-j" xmltv_id="Canal J">Canal J</channel>
+    <channel update="i" site="zita.be" site_id="canal-z" xmltv_id="Canal Z">Canal Z</channel>
+    <channel update="i" site="zita.be" site_id="ketnetcanvas" xmltv_id="Ketnet+/Canvas+">Ketnet+/Canvas+</channel>
+    <channel update="i" site="zita.be" site_id="cartoon" xmltv_id="Cartoon">Cartoon</channel>
+    <channel update="i" site="zita.be" site_id="cbeebies" xmltv_id="Cbeebies">Cbeebies</channel>
+    <channel update="i" site="zita.be" site_id="chasse-peche" xmltv_id="Chasse &amp; Pêche">Chasse &amp; Pêche</channel>
+    <channel update="i" site="zita.be" site_id="cine-fx" xmltv_id="Ciné FX">Ciné FX</channel>
+    <channel update="i" site="zita.be" site_id="cine-polar" xmltv_id="Ciné Polar">Ciné Polar</channel>
+    <channel update="i" site="zita.be" site_id="cine-cinema-cl" xmltv_id="Ciné cinéma Cl.">Ciné cinéma Cl.</channel>
+    <channel update="i" site="zita.be" site_id="cine-cinema-pre" xmltv_id="Ciné cinéma Pre.">Ciné cinéma Pre.</channel>
+    <channel update="i" site="zita.be" site_id="comedie" xmltv_id="Comédie!">Comédie!</channel>
+    <channel update="i" site="zita.be" site_id="contact" xmltv_id="Contact">Contact</channel>
+    <channel update="i" site="zita.be" site_id="r-contact-vision" xmltv_id="R. Contact Vision">R. Contact Vision</channel>
+    <channel update="i" site="zita.be" site_id="cuisinetv" xmltv_id="CUISINE.TV">CUISINE.TV</channel>
+    <channel update="i" site="zita.be" site_id="discovery-fr" xmltv_id="Discovery FR">Discovery FR</channel>
+    <channel update="i" site="zita.be" site_id="discovery-hd" xmltv_id="Discovery HD">Discovery HD</channel>
+    <channel update="i" site="zita.be" site_id="discovery-rt" xmltv_id="Discovery RT">Discovery RT</channel>
+    <channel update="i" site="zita.be" site_id="discovery-vl" xmltv_id="Discovery Vl">Discovery Vl</channel>
+    <channel update="i" site="zita.be" site_id="discovery-wo" xmltv_id="Discovery Wo">Discovery Wo</channel>
+    <channel update="i" site="zita.be" site_id="disney-cinemagic" xmltv_id="Disney Cinémagic">Disney Cinémagic</channel>
+    <channel update="i" site="zita.be" site_id="disney-cinemagic-hd" xmltv_id="Disney Cinémagic HD">Disney Cinémagic HD</channel>
+    <channel update="i" site="zita.be" site_id="disney-fr" xmltv_id="Disney FR">Disney FR</channel>
+    <channel update="i" site="zita.be" site_id="disney-playhouse" xmltv_id="Disney Playhouse">Disney Playhouse</channel>
+    <channel update="i" site="zita.be" site_id="disney-vl" xmltv_id="Disney VL">Disney VL</channel>
+    <channel update="i" site="zita.be" site_id="disney-xd-fr" xmltv_id="Disney XD FR">Disney XD FR</channel>
+    <channel update="i" site="zita.be" site_id="e-fr" xmltv_id="E! FR">E! FR</channel>
+    <channel update="i" site="zita.be" site_id="ert-world" xmltv_id="ERT World">ERT World</channel>
+    <channel update="i" site="zita.be" site_id="espn-america-betv" xmltv_id="ESPN AMERICA BeTV">ESPN AMERICA BeTV</channel>
+    <channel update="i" site="zita.be" site_id="espn-america" xmltv_id="ESPN AMERICA">ESPN AMERICA</channel>
+    <channel update="i" site="zita.be" site_id="espn-clas-fr" xmltv_id="ESPN Clas. FR">ESPN Clas. FR</channel>
+    <channel update="i" site="zita.be" site_id="exqi-cult" xmltv_id="EXQI Cult">EXQI Cult</channel>
+    <channel update="i" site="zita.be" site_id="exqi-fm" xmltv_id="EXQI FM">EXQI FM</channel>
+    <channel update="i" site="zita.be" site_id="exqi-cult-hd" xmltv_id="EXQI Cult HD">EXQI Cult HD</channel>
+    <channel update="i" site="zita.be" site_id="exqi-sport" xmltv_id="EXQI Sport">EXQI Sport</channel>
+    <channel update="i" site="zita.be" site_id="1live" xmltv_id="1LIVE">1LIVE</channel>
+    <channel update="i" site="zita.be" site_id="eurosport-2-fr" xmltv_id="Eurosport 2 FR">Eurosport 2 FR</channel>
+    <channel update="i" site="zita.be" site_id="eurosport-hd-fr" xmltv_id="Eurosport HD FR">Eurosport HD FR</channel>
+    <channel update="i" site="zita.be" site_id="eurosport-hd" xmltv_id="Eurosport HD">Eurosport HD</channel>
+    <channel update="i" site="zita.be" site_id="eurosportfr" xmltv_id="Eurosport.FR">Eurosport.FR</channel>
+    <channel update="i" site="zita.be" site_id="exqi-plus" xmltv_id="Exqi Plus">Exqi Plus</channel>
+    <channel update="i" site="zita.be" site_id="extreme-fr" xmltv_id="Extreme FR">Extreme FR</channel>
+    <channel update="i" site="zita.be" site_id="fashion-tv-fr" xmltv_id="Fashion TV FR">Fashion TV FR</channel>
+    <channel update="i" site="zita.be" site_id="prime-fezztival" xmltv_id="Prime Fezztival">Prime Fezztival</channel>
+    <channel update="i" site="zita.be" site_id="june" xmltv_id="June">June</channel>
+    <channel update="i" site="zita.be" site_id="foxlife-hd" xmltv_id="FoxLife HD">FoxLife HD</channel>
+    <channel update="i" site="zita.be" site_id="france-2-hd" xmltv_id="France 2 HD">France 2 HD</channel>
+    <channel update="i" site="zita.be" site_id="france-24" xmltv_id="France 24">France 24</channel>
+    <channel update="i" site="zita.be" site_id="france-culture" xmltv_id="France Culture">France Culture</channel>
+    <channel update="i" site="zita.be" site_id="france-international" xmltv_id="France International">France International</channel>
+    <channel update="i" site="zita.be" site_id="france-muzique" xmltv_id="France Muzique">France Muzique</channel>
+    <channel update="i" site="zita.be" site_id="france-o" xmltv_id="France Ô">France Ô</channel>
+    <channel update="i" site="zita.be" site_id="game-one" xmltv_id="Game One">Game One</channel>
+    <channel update="i" site="zita.be" site_id="gulli" xmltv_id="Gulli">Gulli</channel>
+    <channel update="i" site="zita.be" site_id="histoire" xmltv_id="Histoire">Histoire</channel>
+    <channel update="i" site="zita.be" site_id="history" xmltv_id="History">History</channel>
+    <channel update="i" site="zita.be" site_id="hustlertv" xmltv_id="HustlerTV">HustlerTV</channel>
+    <channel update="i" site="zita.be" site_id="infosport" xmltv_id="INFOSPORT">INFOSPORT</channel>
+    <channel update="i" site="zita.be" site_id="joe-fm" xmltv_id="JOE fm">JOE fm</channel>
+    <channel update="i" site="zita.be" site_id="disney-xd" xmltv_id="Disney XD">Disney XD</channel>
+    <channel update="i" site="zita.be" site_id="jimjam" xmltv_id="JimJam">JimJam</channel>
+    <channel update="i" site="zita.be" site_id="karaoke" xmltv_id="Karaoke">Karaoke</channel>
+    <channel update="i" site="zita.be" site_id="ketnetcanvas-hd" xmltv_id="Ketnet/Canvas HD">Ketnet/Canvas HD</channel>
+    <channel update="i" site="zita.be" site_id="kidsco" xmltv_id="KidsCo">KidsCo</channel>
+    <channel update="i" site="zita.be" site_id="lci" xmltv_id="LCI">LCI</channel>
+    <channel update="i" site="zita.be" site_id="lite-tv" xmltv_id="Lite TV">Lite TV</channel>
+    <channel update="i" site="zita.be" site_id="m6-music-hits" xmltv_id="M6 Music Hits">M6 Music Hits</channel>
+    <channel update="i" site="zita.be" site_id="mbc" xmltv_id="MBC">MBC</channel>
+    <channel update="i" site="zita.be" site_id="mcm-belgique" xmltv_id="MCM Belgique">MCM Belgique</channel>
+    <channel update="i" site="zita.be" site_id="mcm-pop" xmltv_id="MCM Pop">MCM Pop</channel>
+    <channel update="i" site="zita.be" site_id="mcm-top" xmltv_id="MCM Top">MCM Top</channel>
+    <channel update="i" site="zita.be" site_id="mgm-movie-ch" xmltv_id="MGM Movie Ch.">MGM Movie Ch.</channel>
+    <channel update="i" site="zita.be" site_id="mnm" xmltv_id="MNM">MNM</channel>
+    <channel update="i" site="zita.be" site_id="mnm-hits" xmltv_id="MNM Hits">MNM Hits</channel>
+    <channel update="i" site="zita.be" site_id="mtv-brand-new" xmltv_id="MTV Brand New">MTV Brand New</channel>
+    <channel update="i" site="zita.be" site_id="mtv-idol" xmltv_id="MTV Idol">MTV Idol</channel>
+    <channel update="i" site="zita.be" site_id="mtv-pulse" xmltv_id="MTV Pulse">MTV Pulse</channel>
+    <channel update="i" site="zita.be" site_id="nickmtv-bel" xmltv_id="Nick/MTV Bel.">Nick/MTV Bel.</channel>
+    <channel update="i" site="zita.be" site_id="mtvn-hd" xmltv_id="MTVN HD">MTVN HD</channel>
+    <channel update="i" site="zita.be" site_id="man-x" xmltv_id="Man-X">Man-X</channel>
+    <channel update="i" site="zita.be" site_id="mangas" xmltv_id="Mangas">Mangas</channel>
+    <channel update="i" site="zita.be" site_id="mediaset-italia" xmltv_id="Mediaset Italia">Mediaset Italia</channel>
+    <channel update="i" site="zita.be" site_id="mint" xmltv_id="Mint">Mint</channel>
+    <channel update="i" site="zita.be" site_id="abmoteurs" xmltv_id="ABMoteurs">ABMoteurs</channel>
+    <channel update="i" site="zita.be" site_id="nat-geo-fr" xmltv_id="Nat Geo FR">Nat Geo FR</channel>
+    <channel update="i" site="zita.be" site_id="nat-geo-hd" xmltv_id="Nat Geo HD">Nat Geo HD</channel>
+    <channel update="i" site="zita.be" site_id="nat-geo-hd-fr" xmltv_id="Nat Geo HD FR">Nat Geo HD FR</channel>
+    <channel update="i" site="zita.be" site_id="nat-geo-wild-fr" xmltv_id="Nat Geo Wild FR">Nat Geo Wild FR</channel>
+    <channel update="i" site="zita.be" site_id="natgeo-music" xmltv_id="NatGeo Music">NatGeo Music</channel>
+    <channel update="i" site="zita.be" site_id="nostalgie" xmltv_id="Nostalgie">Nostalgie</channel>
+    <channel update="i" site="zita.be" site_id="odyssee" xmltv_id="Odyssée">Odyssée</channel>
+    <channel update="i" site="zita.be" site_id="onze-tv" xmltv_id="Onze TV">Onze TV</channel>
+    <channel update="i" site="zita.be" site_id="planete" xmltv_id="Planète">Planète</channel>
+    <channel update="i" site="zita.be" site_id="planete-no-limit" xmltv_id="Planète No Limit">Planète No Limit</channel>
+    <channel update="i" site="zita.be" site_id="planete-thalassa" xmltv_id="Planète Thalassa">Planète Thalassa</channel>
+    <channel update="i" site="zita.be" site_id="plug-rtl" xmltv_id="Plug RTL">Plug RTL</channel>
+    <channel update="i" site="zita.be" site_id="prime-action" xmltv_id="Prime Action">Prime Action</channel>
+    <channel update="i" site="zita.be" site_id="prime-sport" xmltv_id="Prime Sport">Prime Sport</channel>
+    <channel update="i" site="zita.be" site_id="prime-sport2" xmltv_id="Prime Sport2">Prime Sport2</channel>
+    <channel update="i" site="zita.be" site_id="prosieben" xmltv_id="ProSieben">ProSieben</channel>
+    <channel update="i" site="zita.be" site_id="rai-due" xmltv_id="Rai Due">Rai Due</channel>
+    <channel update="i" site="zita.be" site_id="rai-tre" xmltv_id="Rai Tre">Rai Tre</channel>
+    <channel update="i" site="zita.be" site_id="rfi" xmltv_id="RFI">RFI</channel>
+    <channel update="i" site="zita.be" site_id="rtl-tele" xmltv_id="RTL Tele">RTL Tele</channel>
+    <channel update="i" site="zita.be" site_id="rtpi" xmltv_id="RTPi">RTPi</channel>
+    <channel update="i" site="zita.be" site_id="rv-info" xmltv_id="RV Info">RV Info</channel>
+    <channel update="i" site="zita.be" site_id="radio-1-ned" xmltv_id="Radio 1 Ned">Radio 1 Ned</channel>
+    <channel update="i" site="zita.be" site_id="radio-2-ned" xmltv_id="Radio 2 Ned">Radio 2 Ned</channel>
+    <channel update="i" site="zita.be" site_id="radio-2-antw" xmltv_id="Radio 2 Antw.">Radio 2 Antw.</channel>
+    <channel update="i" site="zita.be" site_id="radio-2-limb" xmltv_id="Radio 2 Limb.">Radio 2 Limb.</channel>
+    <channel update="i" site="zita.be" site_id="radio-2-o-vl" xmltv_id="Radio 2 O. Vl.">Radio 2 O. Vl.</channel>
+    <channel update="i" site="zita.be" site_id="radio-2-vl-br" xmltv_id="Radio 2 Vl. Br.">Radio 2 Vl. Br.</channel>
+    <channel update="i" site="zita.be" site_id="radio-2-w-vl" xmltv_id="Radio 2 W. Vl.">Radio 2 W. Vl.</channel>
+    <channel update="i" site="zita.be" site_id="radio-4-ned" xmltv_id="Radio 4 Ned">Radio 4 Ned</channel>
+    <channel update="i" site="zita.be" site_id="zone-reality" xmltv_id="Zone reality">Zone reality</channel>
+    <channel update="i" site="zita.be" site_id="stories" xmltv_id="Stories">Stories</channel>
+    <channel update="i" site="zita.be" site_id="sailing-channel" xmltv_id="Sailing Channel">Sailing Channel</channel>
+    <channel update="i" site="zita.be" site_id="sat-1" xmltv_id="Sat. 1">Sat. 1</channel>
+    <channel update="i" site="zita.be" site_id="sci-fi" xmltv_id="Sci Fi">Sci Fi</channel>
+    <channel update="i" site="zita.be" site_id="syfy-fr" xmltv_id="Syfy FR">Syfy FR</channel>
+    <channel update="i" site="zita.be" site_id="star" xmltv_id="STAR!">STAR!</channel>
+    <channel update="i" site="zita.be" site_id="studio-100-tv" xmltv_id="Studio 100 TV">Studio 100 TV</channel>
+    <channel update="i" site="zita.be" site_id="sundance-hd" xmltv_id="Sundance HD">Sundance HD</channel>
+    <channel update="i" site="zita.be" site_id="sundance-fr" xmltv_id="Sundance FR">Sundance FR</channel>
+    <channel update="i" site="zita.be" site_id="tcm-fr" xmltv_id="TCM FR">TCM FR</channel>
+    <channel update="i" site="zita.be" site_id="tf1-hd" xmltv_id="TF1 HD">TF1 HD</channel>
+    <channel update="i" site="zita.be" site_id="tlb" xmltv_id="TLB">TLB</channel>
+    <channel update="i" site="zita.be" site_id="tmf-dance" xmltv_id="TMF Dance">TMF Dance</channel>
+    <channel update="i" site="zita.be" site_id="trace-tv-fr" xmltv_id="TRACE TV FR">TRACE TV FR</channel>
+    <channel update="i" site="zita.be" site_id="trt" xmltv_id="TRT">TRT</channel>
+    <channel update="i" site="zita.be" site_id="tv-breizh" xmltv_id="TV Breizh">TV Breizh</channel>
+    <channel update="i" site="zita.be" site_id="tvp-polonia" xmltv_id="TVP Polonia">TVP Polonia</channel>
+    <channel update="i" site="zita.be" site_id="tvp-kultura" xmltv_id="TVP Kultura">TVP Kultura</channel>
+    <channel update="i" site="zita.be" site_id="the-poker-channel" xmltv_id="The Poker Channel">The Poker Channel</channel>
+    <channel update="i" site="zita.be" site_id="tiji" xmltv_id="Tiji">Tiji</channel>
+    <channel update="i" site="zita.be" site_id="top-radio" xmltv_id="Top Radio">Top Radio</channel>
+    <channel update="i" site="zita.be" site_id="toute-l-histoire" xmltv_id="toute L HISTOIRE">toute L HISTOIRE</channel>
+    <channel update="i" site="zita.be" site_id="travel-channel" xmltv_id="Travel Channel">Travel Channel</channel>
+    <channel update="i" site="zita.be" site_id="teletoon" xmltv_id="TéléTOON">TéléTOON</channel>
+    <channel update="i" site="zita.be" site_id="telemaison" xmltv_id="Télémaison">Télémaison</channel>
+    <channel update="i" site="zita.be" site_id="ushuaia-tv" xmltv_id="Ushuaïa TV">Ushuaïa TV</channel>
+    <channel update="i" site="zita.be" site_id="ushuaia-hd" xmltv_id="Ushuaïa HD">Ushuaïa HD</channel>
+    <channel update="i" site="zita.be" site_id="vivolta" xmltv_id="VIVOLTA">VIVOLTA</channel>
+    <channel update="i" site="zita.be" site_id="vtm-hd" xmltv_id="vtm HD">vtm HD</channel>
+    <channel update="i" site="zita.be" site_id="vitaliteit" xmltv_id="Vitaliteit">Vitaliteit</channel>
+    <channel update="i" site="zita.be" site_id="voyage" xmltv_id="voyage">voyage</channel>
+    <channel update="i" site="zita.be" site_id="wdr" xmltv_id="WDR">WDR</channel>
+    <channel update="i" site="zita.be" site_id="wdr-2" xmltv_id="WDR 2">WDR 2</channel>
+    <channel update="i" site="zita.be" site_id="wdr-3" xmltv_id="WDR 3">WDR 3</channel>
+    <channel update="i" site="zita.be" site_id="wdr-4" xmltv_id="WDR 4">WDR 4</channel>
+    <channel update="i" site="zita.be" site_id="wdr-5" xmltv_id="WDR 5">WDR 5</channel>
+    <channel update="i" site="zita.be" site_id="xxl" xmltv_id="XXL">XXL</channel>
+    <channel update="i" site="zita.be" site_id="itele" xmltv_id="iTélé">iTélé</channel>
+    <channel update="i" site="zita.be" site_id="vtmkzoom" xmltv_id="vtmKzoom">vtmKzoom</channel>
+    <channel update="i" site="zita.be" site_id="vtmkzoom-1" xmltv_id="vtmKzoom+">vtmKzoom+</channel>
+    <channel update="i" site="zita.be" site_id="een-1" xmltv_id="één+">één+</channel>
+    <channel update="i" site="zita.be" site_id="een-hd" xmltv_id="één HD">één HD</channel>
+    <channel update="i" site="zita.be" site_id="syfy" xmltv_id="Syfy">Syfy</channel>
+    <channel update="i" site="zita.be" site_id="telenet-3d" xmltv_id="Telenet 3D">Telenet 3D</channel>
+    <channel update="i" site="zita.be" site_id="telenet-3demo" xmltv_id="Telenet 3Demo">Telenet 3Demo</channel>
+    <channel update="i" site="zita.be" site_id="cartoon-network" xmltv_id="Cartoon Network">Cartoon Network</channel>
+    <channel update="i" site="zita.be" site_id="food-network" xmltv_id="Food Network">Food Network</channel>
+    <channel update="i" site="zita.be" site_id="pebble-tv" xmltv_id="Pebble TV">Pebble TV</channel>
+    <channel update="i" site="zita.be" site_id="rtl-sport-hd" xmltv_id="RTL Sport HD">RTL Sport HD</channel>
+    <channel update="i" site="zita.be" site_id="trace-tropical" xmltv_id="Trace Tropical">Trace Tropical</channel>
+    <channel update="i" site="zita.be" site_id="vh1" xmltv_id="VH1">VH1</channel>
+    <channel update="i" site="zita.be" site_id="playhouse-disney" xmltv_id="Playhouse Disney">Playhouse Disney</channel>
+    <channel update="i" site="zita.be" site_id="mc-class-calm" xmltv_id="MC Class. Calm">MC Class. Calm</channel>
+    <channel update="i" site="zita.be" site_id="mc-class-greats" xmltv_id="MC Class. Greats">MC Class. Greats</channel>
+    <channel update="i" site="zita.be" site_id="mc-class-orch" xmltv_id="MC Class. Orch.">MC Class. Orch.</channel>
+    <channel update="i" site="zita.be" site_id="mc-strictly-60s" xmltv_id="MC Strictly 60s">MC Strictly 60s</channel>
+    <channel update="i" site="zita.be" site_id="mc-70s" xmltv_id="MC 70s">MC 70s</channel>
+    <channel update="i" site="zita.be" site_id="mc-80s" xmltv_id="MC 80s">MC 80s</channel>
+    <channel update="i" site="zita.be" site_id="mc-90s" xmltv_id="MC 90s">MC 90s</channel>
+    <channel update="i" site="zita.be" site_id="mc-all-day-party" xmltv_id="MC All Day Party">MC All Day Party</channel>
+    <channel update="i" site="zita.be" site_id="mc-bass-breaks" xmltv_id="MC Bass, Breaks">MC Bass, Breaks</channel>
+    <channel update="i" site="zita.be" site_id="mc-belpop" xmltv_id="MC Belpop">MC Belpop</channel>
+    <channel update="i" site="zita.be" site_id="mc-blues" xmltv_id="MC Blues">MC Blues</channel>
+    <channel update="i" site="zita.be" site_id="mc-chansons" xmltv_id="MC Chansons">MC Chansons</channel>
+    <channel update="i" site="zita.be" site_id="mc-chillout" xmltv_id="MC Chillout">MC Chillout</channel>
+    <channel update="i" site="zita.be" site_id="mc-classic-rnbsoul" xmltv_id="MC Classic RnB&amp;Soul">MC Classic RnB&amp;Soul</channel>
+    <channel update="i" site="zita.be" site_id="mc-class-rock" xmltv_id="MC Class. Rock">MC Class. Rock</channel>
+    <channel update="i" site="zita.be" site_id="mc-cocktail-lou" xmltv_id="MC Cocktail Lou">MC Cocktail Lou</channel>
+    <channel update="i" site="zita.be" site_id="mc-cool-jazz" xmltv_id="MC Cool Jazz">MC Cool Jazz</channel>
+    <channel update="i" site="zita.be" site_id="mc-country" xmltv_id="MC Country">MC Country</channel>
+    <channel update="i" site="zita.be" site_id="mc-dancefloor-filler" xmltv_id="MC Dancefloor Filler">MC Dancefloor Filler</channel>
+    <channel update="i" site="zita.be" site_id="mc-drive" xmltv_id="MC Drive">MC Drive</channel>
+    <channel update="i" site="zita.be" site_id="mc-freedom" xmltv_id="MC Freedom">MC Freedom</channel>
+    <channel update="i" site="zita.be" site_id="mc-groove-discofunk" xmltv_id="MC Groove Disco&amp;Funk">MC Groove Disco&amp;Funk</channel>
+    <channel update="i" site="zita.be" site_id="mc-harder-than" xmltv_id="MC Harder Than">MC Harder Than</channel>
+    <channel update="i" site="zita.be" site_id="mc-hip-hop" xmltv_id="MC Hip Hop">MC Hip Hop</channel>
+    <channel update="i" site="zita.be" site_id="mc-indie-classics" xmltv_id="MC Indie Classics">MC Indie Classics</channel>
+    <channel update="i" site="zita.be" site_id="mc-jazz-classics" xmltv_id="MC Jazz Classics">MC Jazz Classics</channel>
+    <channel update="i" site="zita.be" site_id="mc-reggae-vibra" xmltv_id="MC Reggae Vibra">MC Reggae Vibra</channel>
+    <channel update="i" site="zita.be" site_id="mc-revival" xmltv_id="MC Revival">MC Revival</channel>
+    <channel update="i" site="zita.be" site_id="mc-rock-anthems" xmltv_id="MC Rock Anthems">MC Rock Anthems</channel>
+    <channel update="i" site="zita.be" site_id="mc-rock-roll" xmltv_id="MC Rock &amp; Roll">MC Rock &amp; Roll</channel>
+    <channel update="i" site="zita.be" site_id="mc-schlager" xmltv_id="MC Schlager">MC Schlager</channel>
+    <channel update="i" site="zita.be" site_id="mc-silk" xmltv_id="MC Silk">MC Silk</channel>
+    <channel update="i" site="zita.be" site_id="mc-the-alternative" xmltv_id="MC The Alternative">MC The Alternative</channel>
+    <channel update="i" site="zita.be" site_id="mc-total-hits-france" xmltv_id="MC Total Hits France">MC Total Hits France</channel>
+    <channel update="i" site="zita.be" site_id="mc-total-hits-german" xmltv_id="MC Total Hits German">MC Total Hits German</channel>
+    <channel update="i" site="zita.be" site_id="mc-total-hits-italy" xmltv_id="MC Total Hits Italy">MC Total Hits Italy</channel>
+    <channel update="i" site="zita.be" site_id="mc-total-hits-nordic" xmltv_id="MC Total Hits Nordic">MC Total Hits Nordic</channel>
+    <channel update="i" site="zita.be" site_id="mc-total-hits-spain" xmltv_id="MC Total Hits Spain">MC Total Hits Spain</channel>
+    <channel update="i" site="zita.be" site_id="mc-total-hits-uk" xmltv_id="MC Total Hits - UK">MC Total Hits - UK</channel>
+    <channel update="i" site="zita.be" site_id="mc-turk-muzigi" xmltv_id="MC Türk Müzigi">MC Türk Müzigi</channel>
+    <channel update="i" site="zita.be" site_id="mc-ultimate-urban" xmltv_id="MC Ultimate Urban">MC Ultimate Urban</channel>
+    <channel update="i" site="zita.be" site_id="mc-world-carniv" xmltv_id="MC World Carniv">MC World Carniv</channel>
+    <channel update="i" site="zita.be" site_id="net-5" xmltv_id="NET 5">NET 5</channel>
+    <channel update="i" site="zita.be" site_id="omroep-brabant" xmltv_id="Omroep Brabant">Omroep Brabant</channel>
+    <channel update="i" site="zita.be" site_id="rtl-4" xmltv_id="RTL 4">RTL 4</channel>
+    <channel update="i" site="zita.be" site_id="rtl-5" xmltv_id="RTL 5">RTL 5</channel>
+    <channel update="i" site="zita.be" site_id="rtl-7" xmltv_id="RTL 7">RTL 7</channel>
+    <channel update="i" site="zita.be" site_id="rtl-8" xmltv_id="RTL 8">RTL 8</channel>
+    <channel update="i" site="zita.be" site_id="sbs-6" xmltv_id="SBS 6">SBS 6</channel>
+    <channel update="i" site="zita.be" site_id="veronica" xmltv_id="Veronica">Veronica</channel>
+    <channel update="i" site="zita.be" site_id="la-deux-hd" xmltv_id="La Deux HD">La Deux HD</channel>
+    <channel update="i" site="zita.be" site_id="la-trois" xmltv_id="La Trois">La Trois</channel>
+    <channel update="i" site="zita.be" site_id="la-une-hd" xmltv_id="La Une HD">La Une HD</channel>
+    <channel update="i" site="zita.be" site_id="exqi-sport-cult-hd" xmltv_id="Exqi Sport-Cult HD">Exqi Sport-Cult HD</channel>
+    <channel update="i" site="zita.be" site_id="exqi-sport-cult" xmltv_id="Exqi Sport-Cult">Exqi Sport-Cult</channel>
+    <channel update="i" site="zita.be" site_id="be-1-hd" xmltv_id="Be 1 HD">Be 1 HD</channel>
+    <channel update="i" site="zita.be" site_id="njam" xmltv_id="Njam!">Njam!</channel>
+    <channel update="i" site="zita.be" site_id="mc-christmas" xmltv_id="MC Christmas">MC Christmas</channel>
+    <channel update="i" site="zita.be" site_id="stylia" xmltv_id="Stylia">Stylia</channel>
+    <channel update="i" site="zita.be" site_id="cctv" xmltv_id="CCTV">CCTV</channel>
+    <channel update="i" site="zita.be" site_id="mtv-rocks" xmltv_id="MTV Rocks">MTV Rocks</channel>
+    <channel update="i" site="zita.be" site_id="prime-golf" xmltv_id="Prime Golf">Prime Golf</channel>
+    <channel update="i" site="zita.be" site_id="russia-today" xmltv_id="Russia Today">Russia Today</channel>
+    <channel update="i" site="zita.be" site_id="yachtsail" xmltv_id="Yacht&amp;Sail">Yacht&amp;Sail</channel>
+    <channel update="i" site="zita.be" site_id="xite" xmltv_id="Xite">Xite</channel>
+    <channel update="i" site="zita.be" site_id="cinecinema-fr" xmltv_id="CinéCinéma Fr.">CinéCinéma Fr.</channel>
+    <channel update="i" site="zita.be" site_id="cinecinema-cl" xmltv_id="CinéCinéma Cl.">CinéCinéma Cl.</channel>
+    <channel update="i" site="zita.be" site_id="cinecinema-pre" xmltv_id="CinéCinéma Pre.">CinéCinéma Pre.</channel>
+    <channel update="i" site="zita.be" site_id="be-shop-tv" xmltv_id="BE shop TV">BE shop TV</channel>
+    <channel update="i" site="zita.be" site_id="radio-maria" xmltv_id="Radio Maria">Radio Maria</channel>
+    <channel update="i" site="zita.be" site_id="out-tv" xmltv_id="Out TV">Out TV</channel>
+    <channel update="i" site="zita.be" site_id="discovery-id" xmltv_id="Discovery ID">Discovery ID</channel>
+    <channel update="i" site="zita.be" site_id="mtv-live-hd" xmltv_id="MTV Live HD">MTV Live HD</channel>
+    <channel update="i" site="zita.be" site_id="cine-frisson" xmltv_id="Ciné+ Frisson">Ciné+ Frisson</channel>
+    <channel update="i" site="zita.be" site_id="cine-classic" xmltv_id="Ciné+ Classic">Ciné+ Classic</channel>
+    <channel update="i" site="zita.be" site_id="cine-premier" xmltv_id="Ciné+ Premier">Ciné+ Premier</channel>
+    <channel update="i" site="zita.be" site_id="comedie-1" xmltv_id="Comédie+">Comédie+</channel>
+    <channel update="i" site="zita.be" site_id="disney-junior" xmltv_id="Disney Junior">Disney Junior</channel>
+    <channel update="i" site="zita.be" site_id="infosport-1" xmltv_id="Infosport+">Infosport+</channel>
+    <channel update="i" site="zita.be" site_id="planete-1" xmltv_id="Planète+">Planète+</channel>
+    <channel update="i" site="zita.be" site_id="planete-no-limit-1" xmltv_id="Planète+ No Limit">Planète+ No Limit</channel>
+    <channel update="i" site="zita.be" site_id="planete-thalassa-1" xmltv_id="Planète+ Thalassa">Planète+ Thalassa</channel>
+    <channel update="i" site="zita.be" site_id="sporting-golf" xmltv_id="Sporting Golf">Sporting Golf</channel>
+    <channel update="i" site="zita.be" site_id="sporting-1" xmltv_id="Sporting 1">Sporting 1</channel>
+    <channel update="i" site="zita.be" site_id="sporting-hd1" xmltv_id="Sporting HD1">Sporting HD1</channel>
+    <channel update="i" site="zita.be" site_id="sporting-2" xmltv_id="Sporting 2">Sporting 2</channel>
+    <channel update="i" site="zita.be" site_id="sporting-3" xmltv_id="Sporting 3">Sporting 3</channel>
+    <channel update="i" site="zita.be" site_id="sporting-hd2" xmltv_id="Sporting HD2">Sporting HD2</channel>
+    <channel update="i" site="zita.be" site_id="trace-urban" xmltv_id="Trace Urban">Trace Urban</channel>
+    <channel update="i" site="zita.be" site_id="teletoon-1" xmltv_id="Télétoon+">Télétoon+</channel>
+    <channel update="i" site="zita.be" site_id="voo-foot" xmltv_id="VOO Foot">VOO Foot</channel>
+    <channel update="i" site="zita.be" site_id="exqi-sport-cult-1" xmltv_id="Exqi Sport-Cult.">Exqi Sport-Cult.</channel>
+    <channel update="i" site="zita.be" site_id="ment-tv" xmltv_id="MENT TV">MENT TV</channel>
+    <channel update="i" site="zita.be" site_id="nick-jr-1" xmltv_id="Nick Jr">Nick Jr</channel>
+    <channel update="i" site="zita.be" site_id="tmf-1" xmltv_id="TMF.">TMF.</channel>
+    <channel update="i" site="zita.be" site_id="mtv" xmltv_id="MTV">MTV</channel>
+    <channel update="i" site="zita.be" site_id="mtv-fr" xmltv_id="MTV FR">MTV FR</channel>
+    <channel update="i" site="zita.be" site_id="nick-jr-fr" xmltv_id="Nick Jr. FR">Nick Jr. FR</channel>
+    <channel update="i" site="zita.be" site_id="nick-toons" xmltv_id="Nick Toons">Nick Toons</channel>
+    <channel update="i" site="zita.be" site_id="nickelodeon" xmltv_id="Nickelodeon">Nickelodeon</channel>
+    <channel update="i" site="zita.be" site_id="nickelodeon-fr" xmltv_id="Nickelodeon FR">Nickelodeon FR</channel>
+    <channel update="i" site="zita.be" site_id="sporting-info" xmltv_id="Sporting Info">Sporting Info</channel>
+    <channel update="i" site="zita.be" site_id="q-music-radio" xmltv_id="Q-music radio">Q-music radio</channel>
+    <channel update="i" site="zita.be" site_id="nautical-channel-fr" xmltv_id="Nautical Channel FR">Nautical Channel FR</channel>
+    <channel update="i" site="zita.be" site_id="seasons" xmltv_id="Seasons">Seasons</channel>
+    <channel update="i" site="zita.be" site_id="sporting-4" xmltv_id="Sporting 4">Sporting 4</channel>
+    <channel update="i" site="zita.be" site_id="sporting-5" xmltv_id="Sporting 5">Sporting 5</channel>
+    <channel update="i" site="zita.be" site_id="club-fm" xmltv_id="Club FM">Club FM</channel>
+    <channel update="i" site="zita.be" site_id="club-rtl-hd" xmltv_id="Club RTL HD">Club RTL HD</channel>
+    <channel update="i" site="zita.be" site_id="ketnet" xmltv_id="Ketnet">Ketnet</channel>
+    <channel update="i" site="zita.be" site_id="rtl-tvi-hd" xmltv_id="RTL TVI HD">RTL TVI HD</channel>
+    <channel update="i" site="zita.be" site_id="sporting-6" xmltv_id="Sporting 6">Sporting 6</channel>
+    <channel update="i" site="zita.be" site_id="sporting-7" xmltv_id="Sporting 7">Sporting 7</channel>
+    <channel update="i" site="zita.be" site_id="sporting-8" xmltv_id="Sporting 8">Sporting 8</channel>
+    <channel update="i" site="zita.be" site_id="story-fm" xmltv_id="Story FM">Story FM</channel>
+    <channel update="i" site="zita.be" site_id="sundance-nl" xmltv_id="Sundance NL">Sundance NL</channel>
+    <channel update="i" site="zita.be" site_id="telenet-demo" xmltv_id="Telenet demo">Telenet demo</channel>
+    <channel update="i" site="zita.be" site_id="vox" xmltv_id="VOX">VOX</channel>
+    <channel update="i" site="zita.be" site_id="n-tv" xmltv_id="n-tv">n-tv</channel>
+    <channel update="i" site="zita.be" site_id="canvas" xmltv_id="Canvas">Canvas</channel>
+    <channel update="i" site="zita.be" site_id="canvas-hd" xmltv_id="Canvas HD">Canvas HD</channel>
+    <channel update="i" site="zita.be" site_id="tnt-hd" xmltv_id="TNT HD">TNT HD</channel>
+    <channel update="i" site="zita.be" site_id="disney-junior-fr" xmltv_id="Disney Junior FR">Disney Junior FR</channel>
+    <channel update="i" site="zita.be" site_id="ketnetop12" xmltv_id="Ketnet/OP12">Ketnet/OP12</channel>
+    <channel update="i" site="zita.be" site_id="mc-festivals" xmltv_id="MC Festivals">MC Festivals</channel>
+    <channel update="i" site="zita.be" site_id="mc-fezztival" xmltv_id="MC Fezztival">MC Fezztival</channel>
+    <channel update="i" site="zita.be" site_id="voo-foot-2" xmltv_id="VOO Foot 2">VOO Foot 2</channel>
+    <channel update="i" site="zita.be" site_id="voo-foot-3" xmltv_id="VOO Foot 3">VOO Foot 3</channel>
+    <channel update="i" site="zita.be" site_id="voo-foot-4" xmltv_id="VOO Foot 4">VOO Foot 4</channel>
+    <channel update="i" site="zita.be" site_id="voo-foot-5" xmltv_id="VOO Foot 5">VOO Foot 5</channel>
+    <channel update="i" site="zita.be" site_id="be-sport-1-hd" xmltv_id="Be Sport 1 HD">Be Sport 1 HD</channel>
+    <channel update="i" site="zita.be" site_id="voo-foot-hd" xmltv_id="VOO Foot HD">VOO Foot HD</channel>
+    <channel update="i" site="zita.be" site_id="tv-theek-flash" xmltv_id="TV-theek Flash!">TV-theek Flash!</channel>
+    <channel update="i" site="zita.be" site_id="be-cine-hd" xmltv_id="Be Ciné HD">Be Ciné HD</channel>
+    <channel update="i" site="zita.be" site_id="be-sport-3" xmltv_id="Be Sport 3">Be Sport 3</channel>
+    <channel update="i" site="zita.be" site_id="be-series-hd" xmltv_id="Be Séries HD">Be Séries HD</channel>
+    <channel update="i" site="zita.be" site_id="family-radio" xmltv_id="Family Radio">Family Radio</channel>
+    <channel update="i" site="zita.be" site_id="m6-boutique" xmltv_id="M6 Boutique">M6 Boutique</channel>
+    <channel update="i" site="zita.be" site_id="mc-hot-country" xmltv_id="MC Hot Country">MC Hot Country</channel>
+    <channel update="i" site="zita.be" site_id="mc-headbangers" xmltv_id="MC Headbangers">MC Headbangers</channel>
+    <channel update="i" site="zita.be" site_id="mc-rock-alternative" xmltv_id="MC Rock Alternative">MC Rock Alternative</channel>
+    <channel update="i" site="zita.be" site_id="vijf" xmltv_id="Vijf">Vijf</channel>
+    <channel update="i" site="zita.be" site_id="babytv" xmltv_id="BabyTV">BabyTV</channel>
+    <channel update="i" site="zita.be" site_id="blue-hustler" xmltv_id="Blue Hustler">Blue Hustler</channel>
+    <channel update="i" site="zita.be" site_id="cuisine" xmltv_id="Cuisine+">Cuisine+</channel>
+    <channel update="i" site="zita.be" site_id="high-tv-3d" xmltv_id="HIGH TV 3D">HIGH TV 3D</channel>
+    <channel update="i" site="zita.be" site_id="penthouse-hd" xmltv_id="Penthouse HD">Penthouse HD</channel>
+    <channel update="i" site="zita.be" site_id="radio-judaica" xmltv_id="Radio Judaïca">Radio Judaïca</channel>
+    <channel update="i" site="zita.be" site_id="shortstv" xmltv_id="ShortsTV">ShortsTV</channel>
+    <channel update="i" site="zita.be" site_id="shortstv-hd" xmltv_id="ShortsTV HD">ShortsTV HD</channel>
+    <channel update="i" site="zita.be" site_id="tnt" xmltv_id="TNT">TNT</channel>
+    <channel update="i" site="zita.be" site_id="trace-sports-hd" xmltv_id="TRACE SPORTS HD">TRACE SPORTS HD</channel>
+    <channel update="i" site="zita.be" site_id="the-israeli-network" xmltv_id="The Israëli Network">The Israëli Network</channel>
+    <channel update="i" site="zita.be" site_id="trace-sports" xmltv_id="TRACE SPORTS">TRACE SPORTS</channel>
+    <channel update="i" site="zita.be" site_id="maison" xmltv_id="Maison+">Maison+</channel>
+    <channel update="i" site="zita.be" site_id="vier-hd" xmltv_id="VIER HD">VIER HD</channel>
+    <channel update="i" site="zita.be" site_id="vijf-hd" xmltv_id="VIJF HD">VIJF HD</channel>
+    <channel update="i" site="zita.be" site_id="vier" xmltv_id="VIER">VIER</channel>
+    <channel update="i" site="zita.be" site_id="culture7" xmltv_id="Culture7">Culture7</channel>
+    <channel update="i" site="zita.be" site_id="culture7-hd" xmltv_id="Culture7 HD">Culture7 HD</channel>
+    <channel update="i" site="zita.be" site_id="sport10" xmltv_id="SPORT10">SPORT10</channel>
+    <channel update="i" site="zita.be" site_id="sport10-hd" xmltv_id="SPORT10 HD">SPORT10 HD</channel>
+    <channel update="i" site="zita.be" site_id="yelo-tv-channel" xmltv_id="Yelo TV-channel">Yelo TV-channel</channel>
+    <channel update="i" site="zita.be" site_id="2be-hd" xmltv_id="2BE HD">2BE HD</channel>
+    <channel update="i" site="zita.be" site_id="al-maghreb-tv" xmltv_id="Al Maghreb TV">Al Maghreb TV</channel>
+    <channel update="i" site="zita.be" site_id="bloomberg-fr" xmltv_id="Bloomberg FR">Bloomberg FR</channel>
+    <channel update="i" site="zita.be" site_id="cbs-reality" xmltv_id="CBS reality">CBS reality</channel>
+    <channel update="i" site="zita.be" site_id="bbc-one-hd" xmltv_id="BBC One HD">BBC One HD</channel>
+    <channel update="i" site="zita.be" site_id="dobbit-tv" xmltv_id="DOBBIT TV">DOBBIT TV</channel>
+    <channel update="i" site="zita.be" site_id="libelle-tv" xmltv_id="Libelle TV">Libelle TV</channel>
+    <channel update="i" site="zita.be" site_id="boing" xmltv_id="Boing">Boing</channel>
+    <channel update="i" site="zita.be" site_id="fashion-one" xmltv_id="Fashion One">Fashion One</channel>
+    <channel update="i" site="zita.be" site_id="kombat-sport" xmltv_id="Kombat Sport">Kombat Sport</channel>
+    <channel update="i" site="zita.be" site_id="lacht" xmltv_id="LACHT">LACHT</channel>
+    <channel update="i" site="zita.be" site_id="ma-chaine-sport" xmltv_id="Ma Chaîne Sport">Ma Chaîne Sport</channel>
+    <channel update="i" site="zita.be" site_id="mcs-tennis" xmltv_id="MCS Tennis">MCS Tennis</channel>
+    <channel update="i" site="zita.be" site_id="libelle" xmltv_id="Libelle">Libelle</channel>
+    <channel update="i" site="zita.be" site_id="nick-hits" xmltv_id="Nick Hits">Nick Hits</channel>
+    <channel update="i" site="zita.be" site_id="penthouse-3d" xmltv_id="Penthouse 3D">Penthouse 3D</channel>
+    <channel update="i" site="zita.be" site_id="penthouse-hd1" xmltv_id="Penthouse HD1">Penthouse HD1</channel>
+    <channel update="i" site="zita.be" site_id="penthouse-hd2" xmltv_id="Penthouse HD2">Penthouse HD2</channel>
+    <channel update="i" site="zita.be" site_id="star-tv" xmltv_id="STAR TV">STAR TV</channel>
+    <channel update="i" site="zita.be" site_id="fight-network" xmltv_id="Fight Network">Fight Network</channel>
+    <channel update="i" site="zita.be" site_id="halloween" xmltv_id="Halloween">Halloween</channel>
+    <channel update="i" site="zita.be" site_id="cultuur-7" xmltv_id="Cultuur 7">Cultuur 7</channel>
+    <channel update="i" site="zita.be" site_id="cultuur-7-hd" xmltv_id="Cultuur 7 HD">Cultuur 7 HD</channel>
+    <channel update="i" site="zita.be" site_id="just" xmltv_id="JUST">JUST</channel>
+    <channel update="i" site="zita.be" site_id="motors-tv-fr" xmltv_id="Motors TV FR">Motors TV FR</channel>
+    <channel update="i" site="zita.be" site_id="planete-action" xmltv_id="Planète+ Action">Planète+ Action</channel>
+    <channel update="i" site="zita.be" site_id="planete-crime" xmltv_id="Planète+ Crime">Planète+ Crime</channel>
+    <channel update="i" site="zita.be" site_id="plattelandstv" xmltv_id="PlattelandsTv">PlattelandsTv</channel>
+    <channel update="i" site="zita.be" site_id="rex-en-rio-info" xmltv_id="Rex en Rio Info">Rex en Rio Info</channel>
+    <channel update="i" site="zita.be" site_id="planete-ae" xmltv_id="Planète+ A&amp;E">Planète+ A&amp;E</channel>
+    <channel update="i" site="zita.be" site_id="planete-ci" xmltv_id="Planète+ C&amp;I">Planète+ C&amp;I</channel>
+    <channel update="i" site="zita.be" site_id="tmfcomedy-central" xmltv_id="TMF/Comedy Central">TMF/Comedy Central</channel>
+    <channel update="i" site="zita.be" site_id="tcm-cinema" xmltv_id="TCM Cinéma">TCM Cinéma</channel>
+    <channel update="i" site="zita.be" site_id="fo-tv" xmltv_id="F.O. TV">F.O. TV</channel>
+    <channel update="i" site="zita.be" site_id="actuatv" xmltv_id="ActuaTV">ActuaTV</channel>
+    <channel update="i" site="zita.be" site_id="trace-sport-stars-hd" xmltv_id="TRACE SPORT STARS HD">TRACE SPORT STARS HD</channel>
+    <channel update="i" site="zita.be" site_id="trace-sport-stars" xmltv_id="TRACE SPORT STARS">TRACE SPORT STARS</channel>
+    <channel update="i" site="zita.be" site_id="discovery-vl-hd" xmltv_id="Discovery Vl HD">Discovery Vl HD</channel>
+    <channel update="i" site="zita.be" site_id="mc-summer-festival" xmltv_id="MC Summer Festival">MC Summer Festival</channel>
+    <channel update="i" site="zita.be" site_id="npo-3fm" xmltv_id="NPO 3FM">NPO 3FM</channel>
+    <channel update="i" site="zita.be" site_id="npo-1" xmltv_id="NPO 1">NPO 1</channel>
+    <channel update="i" site="zita.be" site_id="npo-2" xmltv_id="NPO 2">NPO 2</channel>
+    <channel update="i" site="zita.be" site_id="npo-3" xmltv_id="NPO 3">NPO 3</channel>
+    <channel update="i" site="zita.be" site_id="npo-radio-1" xmltv_id="NPO Radio 1">NPO Radio 1</channel>
+    <channel update="i" site="zita.be" site_id="npo-radio-2" xmltv_id="NPO Radio 2">NPO Radio 2</channel>
+    <channel update="i" site="zita.be" site_id="npo-radio-4" xmltv_id="NPO Radio 4">NPO Radio 4</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="France Inter">France Inter</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="France Musique">France Musique</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="AMC">AMC</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Disney JR">Disney JR</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Play Time">Play Time</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Sporting HD3">Sporting HD3</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="RFM">RFM</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="TLC">TLC</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Prime Action HD">Prime Action HD</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Prime Family HD">Prime Family HD</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Prime Fezztival HD">Prime Fezztival HD</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Prime Series HD">Prime Series HD</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Melody">Melody</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Disney Cinema">Disney Cinema</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Disney Cinema HD">Disney Cinema HD</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Classical Calm">Classical Calm</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Classical Greats">Classical Greats</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Classical Orchestral">Classical Orchestral</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Strictly 60s">Strictly 60s</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="70s">70s</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="80s">80s</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="90s">90s</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="All Day Party">All Day Party</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Bass, Breaks &amp; Beats">Bass, Breaks &amp; Beats</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Belpop">Belpop</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Blues">Blues</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Chansons">Chansons</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Chillout">Chillout</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Christmas">Christmas</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Classic RnB &amp; Soul">Classic RnB &amp; Soul</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Classic Rock">Classic Rock</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Cocktail Lounge">Cocktail Lounge</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Cool Jazz">Cool Jazz</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Hot Country">Hot Country</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Dancefloor Fillers">Dancefloor Fillers</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Drive">Drive</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Summer Festival">Summer Festival</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Freedom">Freedom</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Groove (Disco&amp;Funk)">Groove (Disco&amp;Funk)</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Headbangers">Headbangers</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Hip Hop">Hip Hop</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Indie Classics">Indie Classics</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Jazz Classics">Jazz Classics</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Reggae Vibra">Reggae Vibra</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Revival">Revival</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Rock Anthems">Rock Anthems</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Rock n Roll">Rock n Roll</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Schlager">Schlager</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Silk">Silk</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Rock Alternative">Rock Alternative</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Total Hits - France">Total Hits - France</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Total Hits - German">Total Hits - German</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Total Hits - Italy">Total Hits - Italy</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Total Hits - Nordic">Total Hits - Nordic</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Total Hits - Spain">Total Hits - Spain</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Total Hits - UK">Total Hits - UK</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Türk Müzigi">Türk Müzigi</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Ultimate Urban">Ultimate Urban</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="World Carnival">World Carnival</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="BBC First">BBC First</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="HD1">HD1</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="HIT FM">HIT FM</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Play Sports Golf">Play Sports Golf</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Play Sports HD1">Play Sports HD1</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Play Sports HD3">Play Sports HD3</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Play Sports 4">Play Sports 4</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Play Sports 5">Play Sports 5</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Play Sports 6">Play Sports 6</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Play Sports 7">Play Sports 7</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Play Sports 8">Play Sports 8</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Play Sports HD2">Play Sports HD2</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Play Sports Info">Play Sports Info</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="PureVision">PureVision</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="FOX HD">FOX HD</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Nat Geo Wild HD">Nat Geo Wild HD</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Bel Vision">Bel Vision</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Cartoon.Network">Cartoon.Network</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Eurosport 2 HD">Eurosport 2 HD</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Nickelodeon/Spike HD">Nickelodeon/Spike HD</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="FOX">FOX</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Comedy Central">Comedy Central</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Science &amp; Vie TV">Science &amp; Vie TV</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Brava">Brava</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="evenaar">evenaar</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Eleven">Eleven</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Eleven Sports">Eleven Sports</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="VH1 Classic">VH1 Classic</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="KADET">KADET</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Play Sports HD4">Play Sports HD4</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Eleven FR">Eleven FR</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Eleven Sports FR">Eleven Sports FR</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="TOPradio">TOPradio</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="BX1">BX1</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="BRUZZ">BRUZZ</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="SundanceTV">SundanceTV</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="SundanceTV FR">SundanceTV FR</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Baby">Baby</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Boomerangtv">Boomerangtv</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Disc ID">Disc ID</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Disc science">Disc science</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Disc World">Disc World</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="DisneyXD">DisneyXD</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="E! Ent">E! Ent</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Extreme">Extreme</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="FashionOne">FashionOne</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Food">Food</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="History TV">History TV</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="JimJamTV">JimJamTV</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="AMC channel">AMC channel</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="MTV Rock">MTV Rock</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="MTV Live">MTV Live</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Mezzo TV">Mezzo TV</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Nickhits">Nickhits</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="NickToons">NickToons</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="OUTTV">OUTTV</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Travel">Travel</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="VH1 music">VH1 music</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="BBCFirst">BBCFirst</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Nat Geo Wild">Nat Geo Wild</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Q2 HD">Q2 HD</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Play Sports HD5">Play Sports HD5</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Play Sports HD6">Play Sports HD6</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Play Sports HD7">Play Sports HD7</channel>
+    <channel update="i" site="zita.be" site_id="" xmltv_id="Play Sports HD8">Play Sports HD8</channel>
+  </channels>
+</site>

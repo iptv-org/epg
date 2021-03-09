@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<site generator-info-name="WebGrab+Plus/w MDB &amp; REX Postprocess -- version V1.56.15 -- Jan van Straaten" site="tvplus.bg">
+  <channels>
+    <channel update="i" site="tvplus.bg" site_id="tvplus" xmltv_id="TVPLUS">TVPLUS</channel>
+    <channel update="i" site="tvplus.bg" site_id="fplus" xmltv_id="FPLUS">FPLUS</channel>
+    <channel update="i" site="tvplus.bg" site_id="sportplushd" xmltv_id="SPORTPLUSHD">SPORTPLUSHD</channel>
+    <channel update="i" site="tvplus.bg" site_id="comedyplus" xmltv_id="COMEDYPLUS">COMEDYPLUS</channel>
+    <channel update="i" site="tvplus.bg" site_id="cinemaplus" xmltv_id="CINEMAPLUS">CINEMAPLUS</channel>
+    <channel update="i" site="tvplus.bg" site_id="actionplus" xmltv_id="ACTIONPLUS">ACTIONPLUS</channel>
+  </channels>
+</site>

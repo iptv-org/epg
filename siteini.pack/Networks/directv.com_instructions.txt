@@ -1,0 +1,25 @@
+Jan van Straaten , 26/10/2015
+
+How to create a localised channellist file for directv.com and create the necessary cookie file to grab data from local channels
+
+Notice! The following procedure might not work with IE. We experienced problems with it which is caused by the fact that this site provides cookies in a non standard format. IE and Firefox both have problems while exporting these cookies. For firefox we were able to solve these problems with a update op WG++. (1.1.1/55.6) 
+
+1. In your browser goto https://www.directv.com/guide?lpos=Header:1
+2. Enter your zip code eg 94102 for San Francisco or 60601 for Chicago, eventually enter County if asked.
+3. Wait for the webpage to complete.
+4. Export the cookies to a file named directv.com.cookies.txt in the same folder as the config file. Follow the instructions as in http://webgrabplus.com/documentation/configuration/cookie
+5. Open directv.com.ini . Near the bottom is the section that creates channelist files
+	Enable the lines there by removing the first *
+6. Add one dummy channel in your config 
+	<channel update="i" site="directv.com" site_id="" xmltv_id="dummy">dummy</channel>
+7. run wg++
+8. If all is well you have created a channellist file for your location
+	directv.com.channels.xml
+9. Revert the actions of 5.
+
+Notice:  you will need the cookie file created in 4 also to grab guide data from these local channels.
+
+	Done
+	
+
+Jan 

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<site generator-info-name="WebGrab+Plus/w MDB &amp; REX Postprocess -- version V1.56.24 -- Jan van Straaten" site="rtve.es">
+  <channels>
+    <!-- Radio -->
+    <channel update="i" site="rtve.es" site_id="CRN_RADIO1" xmltv_id="Radio Nacional">Radio Nacional</channel>
+    <channel update="i" site="rtve.es" site_id="CRN_RADIOC" xmltv_id="Radio Clásica">Radio Clásica</channel>
+    <channel update="i" site="rtve.es" site_id="CRN_RADIO3" xmltv_id="Radio 3">Radio 3</channel>
+    <channel update="i" site="rtve.es" site_id="CRN_RADIO4" xmltv_id="Ràdio 4">Ràdio 4</channel>
+    <channel update="i" site="rtve.es" site_id="CRN_RADIO5" xmltv_id="Radio 5">Radio 5</channel>
+    <channel update="i" site="rtve.es" site_id="CRN_RADIOE" xmltv_id="Radio Exterior">Radio Exterior</channel>
+    <!-- Television -->
+    <channel update="i" site="rtve.es" site_id="CTV_LA1" xmltv_id="La 1">La 1</channel>
+    <channel update="i" site="rtve.es" site_id="CTV_LA2" xmltv_id="La 2">La 2</channel>
+    <channel update="i" site="rtve.es" site_id="CTV_C24H" xmltv_id="Canal 24H">Canal 24H</channel>
+    <channel update="i" site="rtve.es" site_id="CAD_TELEDE" xmltv_id="Teledeporte">Teledeporte</channel>
+    <channel update="i" site="rtve.es" site_id="CTV_CLANTV" xmltv_id="Clan TVE">Clan TVE</channel>
+    <channel update="i" site="rtve.es" site_id="CTV_LA1C" xmltv_id="La 1 Cataluña">La 1 Cataluña</channel>
+    <channel update="i" site="rtve.es" site_id="CTV_LA2C" xmltv_id="La 2 Cataluña">La 2 Cataluña</channel>
+    <channel update="i" site="rtve.es" site_id="CTV_TVEINT" xmltv_id="TVE Internacional Europa/África">TVE Internacional Europa/África</channel>
+    <channel update="i" site="rtve.es" site_id="CTV_TVEAM1" xmltv_id="TVE Internacional América I">TVE Internacional América I</channel>
+    <channel update="i" site="rtve.es" site_id="CTV_TVEAS1" xmltv_id="TVE Internacional Asia/Oceanía">TVE Internacional Asia/Oceanía</channel>
+    <channel update="i" site="rtve.es" site_id="CTV_TVEHD" xmltv_id="TVE HD">TVE HD</channel>
+    <channel update="i" site="rtve.es" site_id="COT_A3" xmltv_id="Antena3">Antena3</channel>
+    <channel update="i" site="rtve.es" site_id="COT_CUATRO" xmltv_id="Cuatro">Cuatro</channel>
+    <channel update="i" site="rtve.es" site_id="COT_T5" xmltv_id="Tele5">Tele5</channel>
+    <channel update="i" site="rtve.es" site_id="COT_LA6" xmltv_id="La Sexta">La Sexta</channel>
+    <channel update="i" site="rtve.es" site_id="COT_TM3" xmltv_id="Tele Madrid">Tele Madrid</channel>
+    <channel update="i" site="rtve.es" site_id="COT_CMT" xmltv_id="Castilla - La Mancha TV">Castilla - La Mancha TV</channel>
+    <channel update="i" site="rtve.es" site_id="COT_ARAGON" xmltv_id="Aragón Televisión">Aragón Televisión</channel>
+    <channel update="i" site="rtve.es" site_id="COT_ETB1" xmltv_id="ETB1">ETB1</channel>
+    <channel update="i" site="rtve.es" site_id="COT_ETB2" xmltv_id="ETB2">ETB2</channel>
+    <channel update="i" site="rtve.es" site_id="COT_CEXTRE" xmltv_id="Canal Extremadura TV">Canal Extremadura TV</channel>
+    <channel update="i" site="rtve.es" site_id="COT_CSUR" xmltv_id="Canal Sur">Canal Sur</channel>
+    <channel update="i" site="rtve.es" site_id="COT_TVCAN" xmltv_id="TV Canarias">TV Canarias</channel>
+    <channel update="i" site="rtve.es" site_id="COT_TPA" xmltv_id="TPA">TPA</channel>
+    <channel update="i" site="rtve.es" site_id="COT_C2A" xmltv_id="Canal Sur 2">Canal Sur 2</channel>
+    <channel update="i" site="rtve.es" site_id="COT_IB3" xmltv_id="IB 3">IB 3</channel>
+    <channel update="i" site="rtve.es" site_id="COT_TV3" xmltv_id="TV3">TV3</channel>
+    <channel update="i" site="rtve.es" site_id="COT_TVG" xmltv_id="TVG">TVG</channel>
+    <channel update="i" site="rtve.es" site_id="COT_NEO" xmltv_id="Antena.Neox">Antena.Neox</channel>
+    <channel update="i" site="rtve.es" site_id="COT_NOV" xmltv_id="Antena.Nova">Antena.Nova</channel>
+    <channel update="i" site="rtve.es" site_id="COT_FDF" xmltv_id="FDF Telecinco">FDF Telecinco</channel>
+    <channel update="i" site="rtve.es" site_id="COT_BOING" xmltv_id="Boing">Boing</channel>
+    <channel update="i" site="rtve.es" site_id="COT_DIVIN" xmltv_id="Divinity">Divinity</channel>
+    <channel update="i" site="rtve.es" site_id="COT_LAOTRA" xmltv_id="La Otra">La Otra</channel>
+    <channel update="i" site="rtve.es" site_id="COT_ENERG" xmltv_id="Energy">Energy</channel>
+    <channel update="i" site="rtve.es" site_id="COT_13TV" xmltv_id="13TV">13TV</channel>
+    <channel update="i" site="rtve.es" site_id="COT_DISCO" xmltv_id="Discovery Max">Discovery Max</channel>
+    <channel update="i" site="rtve.es" site_id="COT_PARAM" xmltv_id="Paramount Channel">Paramount Channel</channel>
+    <channel update="i" site="rtve.es" site_id="COT_ESPOR" xmltv_id="Esport 3">Esport 3</channel>
+    <channel update="i" site="rtve.es" site_id="COT_CYLTV" xmltv_id="CYLTV">CYLTV</channel>
+    <channel update="i" site="rtve.es" site_id="COT_INTER" xmltv_id="Intereconomía">Intereconomía</channel>
+    <channel update="i" site="rtve.es" site_id="COT_DISNE" xmltv_id="Disney Channel">Disney Channel</channel>
+  </channels>
+</site>

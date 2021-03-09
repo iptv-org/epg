@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<site generator-info-name="WebGrab+Plus/w MDB &amp; REX Postprocess -- version V3.0.0.21 -- Jan van Straaten" site="web.magentatv.de">
+  <channels>
+    <channel update="i" site="web.magentatv.E.de" site_id="373##cf416cc96a575e40e35f43c05d829efdb176bc35.png" xmltv_id="Das Erste">Das Erste</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="408##e19130e25f23d70df7f85807c6ddc1c8d62109f5.png" xmltv_id="ZDF">ZDF</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="404##faa7d82f5d52540cf25ca62acd71479093bda977.png" xmltv_id="RTL">RTL</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="381##d36b5ed6e8b046be225671f62b42f6362c55ee22.png" xmltv_id="SAT.1">SAT.1</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="374##67c3154ef4906af6324dc75cdd2ec4b8f32ba77d.png" xmltv_id="ProSieben">ProSieben</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="385##0e5b4d41d518a068a0bef830d64f848b84ac39d1.png" xmltv_id="VOX">VOX</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="405##e92cc62717350cd0378f1191c21a3512362c65a1.png" xmltv_id="kabel eins">kabel eins</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="382##c2f437c77a06daffbcaa14f5caed1b301abda6b7.png" xmltv_id="RTLZWEI">RTLZWEI</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="403##c7f7ecfb042633c1ac2d37d7d3378fab77c8a419.png" xmltv_id="Super RTL">Super RTL</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="387##7d9a501ddc07382fcfdbb0c0797916ba4e78cacd.png" xmltv_id="KiKA">KiKA</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="54##a7a97522a8f2a86910a25914b2b1814cda4bff84.png" xmltv_id="Nick/MTV+">Nick/MTV+</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="392##f0fc63107fddc5c72d70a64f90f9672710e3a3d9.png" xmltv_id="3sat">3sat</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="375##949412402d4f2ba8cf1b63ebed3223b6c652765d.png" xmltv_id="WELT">WELT</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="376##1c3073dd69376d57149afdb1791c2576724000f2.png" xmltv_id="n-tv">n-tv</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="371##0630170ba6401342025bf2ca1b1ed337e653bed5.png" xmltv_id="PHOENIX">PHOENIX</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="48##c3b39a6d69b2c7dd9b7e3e87592215b3c04be517.png" xmltv_id="Tele 5">Tele 5</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="391##9f4bcfe2464370144428eeac56b55f1cfb061109.png" xmltv_id="zdf_neo">zdf_neo</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="411##08e992f63c4d23e5d27998707b63e31abbc4cbf2.jpeg" xmltv_id="Lokal-TV">Lokal-TV</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="407##dbcae4e6fd058a2c6ca9ca2ec0a439d85ffe980b.png" xmltv_id="BR Süd">BR Süd</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="386##1f9d5388b2c17b18117e5a739f4b5ec2a1ad907d.png" xmltv_id="hr">hr</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="370##8e11c0abde6c90a68507070c73b443401a24fcff.png" xmltv_id="MDR Sachsen">MDR Sachsen</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="377##e51cf4bf577954c861c57396359f56fb3f5e7805.png" xmltv_id="NDR">NDR</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="368##cd648267d785ddb46756676b9d0b5ee806a60a7d.png" xmltv_id="Radio Bremen TV">Radio Bremen TV</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="384##3c5a2a45fa454d43b49eb1a696cafd0a4eeb1c86.png" xmltv_id="rbb Berlin">rbb Berlin</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="379##784cfb3e89c660ecf9f02bae301f40f875996af9.png" xmltv_id="SR">SR</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="398##e39bdfef94521400748451ee823311531bfcc765.png" xmltv_id="SWR BW">SWR BW</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="393##e39bdfef94521400748451ee823311531bfcc765.png" xmltv_id="SWR RP">SWR RP</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="397##8784546120200060bc84357fcafd0994d648ee40.png" xmltv_id="WDR">WDR</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="389##18f200745e93b6c9848237acaaa008ea9f520f94.png" xmltv_id="Eurosport 1">Eurosport 1</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="401##55428ca65d529b1cf67623cb017c53af5de49d89.png" xmltv_id="SPORT1">SPORT1</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="190##7596301282ecc50fe4f39bc92913fa8750e5e530.png" xmltv_id="Sky Sport News">Sky Sport News</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="394##a94bb4917f279b02cb739e788c18f38a009f95a0.png" xmltv_id="ARTE">ARTE</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="402##70b3ed315768d8799f8577aad1003e4b2758b197.png" xmltv_id="ONE">ONE</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="452##7d936048c94ca83281a61951170b5ad0da756584.png" xmltv_id="ANIXE+">ANIXE+</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="50##766e5d3738b790d93690b9a6a40e65b99cb73d6b.png" xmltv_id="Comedy Central">Comedy Central</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="27##8ddb880c89e880c0a150c17e355138b0341ed6ee.png" xmltv_id="Disney Channel">Disney Channel</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="429##f47210c8539cdcb85e4c468f83a281f6daa66b58.png" xmltv_id="DMAX">DMAX</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="3043##fb85aa4ba0f2ef491bbecdfdffd93db2207996cf.png" xmltv_id="eoTV">eoTV</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="3583##f1d655994f8af8a636f983c9d3fe1a862501766d.png" xmltv_id="HGTV">HGTV</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="396##8bbd8b6505244eadf79acc39552459c44c052ffa.png" xmltv_id="ProSieben MAXX">ProSieben MAXX</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="395##3e55a412683a498ae7e19077ea81b564bb1b271b.png" xmltv_id="NITRO">NITRO</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="542##d2cb366f4d4771054db69e751dd5589c1237923f.png" xmltv_id="RTLplus">RTLplus</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="338##c4df738dfcdc4307911328c1368b717428f234d8.png" xmltv_id="SAT.1 GOLD">SAT.1 GOLD</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="39##7705473aad92b6a66fbd0d0f845ba5a884d69989.png" xmltv_id="Servus TV">Servus TV</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="380##2dc9daa2cdf850169e75d472bd42362f60a0cd7f.png" xmltv_id="sixx">sixx</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="383##bd43973022bc8b5e4e44ecaf07cbeaaca3943fd6.png" xmltv_id="TLC">TLC</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="601##35d704a6beeecc53be277ba5e9342ddca6df5e0a.png" xmltv_id="TOGGO plus">TOGGO plus</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="3930##eece51e7d023df59eaba2d666bd7e7ea93ede81d.jpeg" xmltv_id="VOXup">VOXup</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="547##d0065176c764db3232772145bd76748d4bbb0433.png" xmltv_id="Zee.One">Zee.One</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="479##4f1286373cd3362649d2e4ae1692ab8a360bf773.png" xmltv_id="ARD-alpha">ARD-alpha</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="485##4754ecc68c5e078e80ac2d5435726b2a9b016b90.png" xmltv_id="Bibel TV">Bibel TV</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="480##947f1f59cc0a4bf3f9c5439c1b0b32dc06c652a5.png" xmltv_id="DW">DW</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="482##92eae2291650194c14e193ae749a9ad77c61b4a8.png" xmltv_id="EuroN D">EuroN D</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="487##3fc421d0d3dad934561aee97845ca8b01ec0a661.png" xmltv_id="K TV">K TV</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="573##ca3279d86270655d49eb50a361e1dcb4564bf39e.png" xmltv_id="kabel eins Doku">kabel eins Doku</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="553##bf4ce870d460dcdb3b1e573d58a14137a7d002ea.png" xmltv_id="N24 Doku">N24 Doku</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="400##2d0ef79c908ad450db7ddc28eaf7076a02e162af.png" xmltv_id="tagesschau24">tagesschau24</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="60##629f72770f72b4f816843f063e0281d9b3d355d9.png" xmltv_id="Welt der Wunder">Welt der Wunder</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="378##60641d1e04421f17dd4369382a389b0d7599b736.png" xmltv_id="ZDFinfo">ZDFinfo</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="25##d31840e010d6da58d1aeb2009b04f5a9924481c1.png" xmltv_id="Deluxe Music">Deluxe Music</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="28##6bbfebf5f02412641e1856056625855930206d43.png" xmltv_id="MTV">MTV</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="451##1ded3f4362fa9d2331c4288f2f8bcbb687972bdc.png" xmltv_id="HSE 24">HSE 24</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="446##d985b7be308774435b4e824e87857be6d01626a0.png" xmltv_id="QVC">QVC</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="486##14573aebde590f886d975d5193a26dc6065c0683.png" xmltv_id="sonnenklar.TV">sonnenklar.TV</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="454##c3cdcd87464366d4fb19ab7fa24a826a38e667bf.png" xmltv_id="BBC World">BBC World</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="399##16a240e07ff7cb46810fd32733b4c75af957318f.png" xmltv_id="CNN International">CNN International</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="616##f7a78dd42812f05d3bd360c98e09688553f04918.png" xmltv_id="Magenta Musik 1">Magenta Musik 1</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="617##f7a78dd42812f05d3bd360c98e09688553f04918.png" xmltv_id="Magenta Musik 2">Magenta Musik 2</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="618##f7a78dd42812f05d3bd360c98e09688553f04918.png" xmltv_id="Magenta Musik 3">Magenta Musik 3</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="255##668cd4d06f6981b82841f40fad42bc350babb056.png" xmltv_id="13TH STREET">13TH STREET</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="110##5e5027475bbdd81226fc98fafcb60ab8d4f8904a.png" xmltv_id="SONY AXN">SONY AXN</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="567##c9a89e0d86462498f98275af01e0aefff143c7ec.png" xmltv_id="FOX">FOX</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="157##ddde6c3032756cfafec74330f95f01e0acb04054.png" xmltv_id="kabel eins Classics">kabel eins Classics</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="137##8f80fdd4f8fe6853800aeec106062fc2ee1d5ab4.png" xmltv_id="Kinowelt TV">Kinowelt TV</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="259##f02507393ba6cfc2b3ea8ad7fe3da4d51cc43d45.png" xmltv_id="ProSieben FUN">ProSieben FUN</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="216##970021674e287d44759384a741e4fe4efdb2a8dc.png" xmltv_id="RTL Crime">RTL Crime</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="133##ea9846917902c635cd3c5b239bd2f0c5d23c0c98.png" xmltv_id="Syfy">Syfy</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="181##38bfeafffdeb65651af23919ac22cc462adf98c7.png" xmltv_id="TNT Comedy">TNT Comedy</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="184##7de5c33c2cb3f4a7569b42631ff7092d7d6c837d.png" xmltv_id="TNT Film">TNT Film</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="53##117d872e397121d7cc19f5d6bb15c38fafde1d3f.png" xmltv_id="TNT Serie">TNT Serie</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="185##1994bd733a17fbcd32d1d78dc43b28c362776f5b.png" xmltv_id="Universal TV">Universal TV</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="109##5ba6b3a95fbbbce05e3b62e45196771dbf2fe33e.png" xmltv_id="Baby TV">Baby TV</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="148##a3a2fd1ad65041c5fec95749167405df48193527.png" xmltv_id="Boomerang">Boomerang</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="126##f73ed871486bd026ffc3ff4cf5e5ac2eeaf6f746.png" xmltv_id="Cartoon Network">Cartoon Network</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="123##3f87eeb2199795e323f14229058c0e72e7959489.png" xmltv_id="Disney XD">Disney XD</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="125##659b8d9c44072c5bd8d46cb4e8d9413e6d28f206.png" xmltv_id="Disney Junior">Disney Junior</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="221##cfa3bf59d761bb21a108955f7dd919d04ef20734.png" xmltv_id="Nick Jr.">Nick Jr.</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="117##65ebe25329d441714dc70fa737e90c68c2a6e129.png" xmltv_id="BonGusto">BonGusto</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="26##454556e23e412dfb2b0048d0c43355b212e86d8b.png" xmltv_id="E! Entertainment">E! Entertainment</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="22##211dd5eb89af94c60688cb6fd5f73e080b3e6221.png" xmltv_id="Fashion TV">Fashion TV</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="661##daabe8d88933d58ca50ef01e692058fe39759627.png" xmltv_id="Heimatkanal">Heimatkanal</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="209##216eb04110df53f43f13844f878fcd6c7f0648ef.png" xmltv_id="RTL Passion">RTL Passion</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="260##26147f4735983c4f20ad71c01ba95f25b1a7ccc7.png" xmltv_id="Romance TV">Romance TV</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="227##450028f93c4db873a79e88216557b38a1450d84d.png" xmltv_id="RTL Living">RTL Living</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="224##fb8cf407e719419c47b394d4307cb3e7aa16c4ae.png" xmltv_id="SAT.1 emotions">SAT.1 emotions</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="188##2fef667c15b5e2afc1702a5e3b51388bbc402fca.png" xmltv_id="Sony Channel">Sony Channel</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="571##18ebe2c3ee90c1060da7a5498d2f7e846321271b.png" xmltv_id="wetter.com TV">wetter.com TV</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="105##cd0ca6f68c634ba2fd4ce665043f3cefdd1c1c9d.png" xmltv_id="Animal Planet">Animal Planet</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="106##98c3430141aaf756c564aedafebb36d0258f34c1.png" xmltv_id="Crime+Investigation">Crime+Investigation</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="23##6e522d9ae4b2a9a8f686281f7d3adff2d8862ee3.png" xmltv_id="Discovery">Discovery</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="153##267643eb7bc861bb7e308a303f66e5301e848db7.png" xmltv_id="GEO">GEO</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="162##90a90534ebf9dccf44ce577b0ffb22f27e729787.png" xmltv_id="HISTORY">HISTORY</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="35##c9d4a2fb172069fc67d4170738cdbbc225f079f6.png" xmltv_id="National Geographic">National Geographic</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="569##deec95134d0baec0f4030cb9c96a1f7348419c30.png" xmltv_id="National Geographic WILD">National Geographic WILD</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="45##1eb522686457257b92a5b3a812bb045b46082e81.png" xmltv_id="Planet">Planet</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="186##edb7ac2d8194c75dea9ecfc0ca00f282d79c8c35.png" xmltv_id="Spiegel TV Wissen">Spiegel TV Wissen</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="108##8ffbb0a95849b6c7af04aeaea5c2e1680c6cb0ad.png" xmltv_id="auto motor und sport">auto motor und sport</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="18##fbc41d77249de69bb35febcff1bb74dd87a3b031.png" xmltv_id="Eurosport 2">Eurosport 2</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="122##8a4a89301feb97cab4fb27fad7d48e6e73de9d9f.png" xmltv_id="Extreme Sports">Extreme Sports</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="604##5f8e264060be8ce5ce663198330f10d4b1245def.png" xmltv_id="MOTORVISION.TV">MOTORVISION.TV</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="44##074034f464715db15c5859b60b36558cac35a5e3.png" xmltv_id="SPORT1+">SPORT1+</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="191##6e4cee1ab1da1d86af73c1bfb533f11fe7711c5b.png" xmltv_id="eSPORTS1">eSPORTS1</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="194##36207a17b0a5760b3977dcf130e53ce30f09c594.png" xmltv_id="SPORTDIGITAL FUSSBALL">SPORTDIGITAL FUSSBALL</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="112##f6660e8167e19658dc0831526d326b2b12a0d78b.png" xmltv_id="Blue Hustler">Blue Hustler</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="32##35264aa89ecba0a3ceb4b0f6f4e0eae0eefb9fcf.png" xmltv_id="Lust pur">Lust pur</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="228##20a1ea07201405cae124dacf95b9b2562afce24a.png" xmltv_id="Penthouse Passion">Penthouse Passion</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="34##4df2862dc45bb8cb01501a4f14d9437059f49ded.png" xmltv_id="Playboy Europe">Playboy Europe</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="218##d410b620bddd18585b36e5f702a0677f2b45c511.png" xmltv_id="RCK TV">RCK TV</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="367##e5fcea04af5a680d5520e758c005b7be9ca5d924.png" xmltv_id="MyTeam TV - Basketball 1">MyTeam TV - Basketball 1</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="366##e5fcea04af5a680d5520e758c005b7be9ca5d924.png" xmltv_id="MyTeam TV - Basketball 2">MyTeam TV - Basketball 2</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="369##e5fcea04af5a680d5520e758c005b7be9ca5d924.png" xmltv_id="MyTeam TV - Basketball 3">MyTeam TV - Basketball 3</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="3686##e5fcea04af5a680d5520e758c005b7be9ca5d924.png" xmltv_id="MyTeam TV - Basketball 4">MyTeam TV - Basketball 4</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="633##fb460f60c024d86985aae6c228d24c1a718c26ca.jpeg" xmltv_id="Liveübertragungen der BBL-Spiele 5-9">Liveübertragungen der BBL-Spiele 5-9</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="550##ee505f5ffc43cac6118bf1efb5d832314e3ff77f.png" xmltv_id="MyTeam TV - Eishockey 1">MyTeam TV - Eishockey 1</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="548##ee505f5ffc43cac6118bf1efb5d832314e3ff77f.png" xmltv_id="MyTeam TV - Eishockey 2">MyTeam TV - Eishockey 2</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="549##ee505f5ffc43cac6118bf1efb5d832314e3ff77f.png" xmltv_id="MyTeam TV - Eishockey 3">MyTeam TV - Eishockey 3</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="648##ee505f5ffc43cac6118bf1efb5d832314e3ff77f.png" xmltv_id="MyTeam TV - Eishockey 4">MyTeam TV - Eishockey 4</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="645##ee505f5ffc43cac6118bf1efb5d832314e3ff77f.png" xmltv_id="MyTeam TV - Eishockey 5">MyTeam TV - Eishockey 5</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="647##ee505f5ffc43cac6118bf1efb5d832314e3ff77f.png" xmltv_id="MyTeam TV - Eishockey 6">MyTeam TV - Eishockey 6</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="646##ee505f5ffc43cac6118bf1efb5d832314e3ff77f.png" xmltv_id="MyTeam TV - Eishockey 7">MyTeam TV - Eishockey 7</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="3757##ee505f5ffc43cac6118bf1efb5d832314e3ff77f.png" xmltv_id="MyTeam TV - Eishockey 8">MyTeam TV - Eishockey 8</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="603##55005eca27e8c20bfb41fa842181b50721ac156f.png" xmltv_id="FC BAYERN.TV LIVE">FC BAYERN.TV LIVE</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="637##0f664836d7993cdfdf274553555e7a4623630bd8.png" xmltv_id="Sky Sport Kompakt 1">Sky Sport Kompakt 1</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="638##6fcfde8547d28ba5583ef7b3127b92656dbe983a.png" xmltv_id="Sky Sport Kompakt 2">Sky Sport Kompakt 2</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="639##68b8ecc465c483584b752c6908c2836000f059a3.png" xmltv_id="Sky Sport Kompakt 3">Sky Sport Kompakt 3</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="640##5ec4043866dd3c40a1bf5d816d5c45034d8bb125.png" xmltv_id="Sky Sport Kompakt 4">Sky Sport Kompakt 4</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="641##e4a4b87531789af9df3cc9c283a6a0451ca79169.png" xmltv_id="Sky Sport Kompakt 5">Sky Sport Kompakt 5</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="623##93cb603f667c6407d3a1a2be659144b73d3ac763.png" xmltv_id="MyTeam TV - Fußball 1">MyTeam TV - Fußball 1</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="626##93cb603f667c6407d3a1a2be659144b73d3ac763.png" xmltv_id="MyTeam TV - Fußball 2">MyTeam TV - Fußball 2</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="624##93cb603f667c6407d3a1a2be659144b73d3ac763.png" xmltv_id="MyTeam TV - Fußball 3">MyTeam TV - Fußball 3</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="625##93cb603f667c6407d3a1a2be659144b73d3ac763.png" xmltv_id="MyTeam TV - Fußball 4">MyTeam TV - Fußball 4</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="627##93cb603f667c6407d3a1a2be659144b73d3ac763.png" xmltv_id="MyTeam TV - Fußball 5">MyTeam TV - Fußball 5</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="629##93cb603f667c6407d3a1a2be659144b73d3ac763.png" xmltv_id="MyTeam TV - Fußball 6">MyTeam TV - Fußball 6</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="628##93cb603f667c6407d3a1a2be659144b73d3ac763.png" xmltv_id="MyTeam TV - Fußball 7">MyTeam TV - Fußball 7</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="620##1b231c42b567fdbd518ec42a1f499f6938a70748.jpeg" xmltv_id="Zur Zeit keine Liveübertragung, bitte besuchen Sie Kanal 330 bis 336 oder www.magentasport.de">Zur Zeit keine Liveübertragung, bitte besuchen Sie Kanal 330 bis 336 oder www.magentasport.de</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="483##dd1dbddb238bb7f39d2b067a7fe54ebc201d11b3.png" xmltv_id="T-Bom/T-Dom">T-Bom/T-Dom</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="475##92eae2291650194c14e193ae749a9ad77c61b4a8.png" xmltv_id="EuroN RUS">EuroN RUS</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="472##098c6714998abd943c85a2842032a879b2ccb87d.png" xmltv_id="Kinomir">Kinomir</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="481##e2a76c39aa3922e1c16e85b021e5b4895e31c1c4.png" xmltv_id="RTR Planeta">RTR Planeta</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="476##89b0704e1d2b74f779f7444bf40a1e15f3ccbf98.png" xmltv_id="Ost West">Ost West</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="474##04ff546a173ccadcefa0964ef84b4a639a2cfd07.png" xmltv_id="iTVN">iTVN</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="473##a0492950042ae44e2298d29b002df752d4c486ea.png" xmltv_id="TV Polonia">TV Polonia</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="136##cc7af74240e70d176aa544f1bc5138a71da1a079.png" xmltv_id="Euro D">Euro D</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="21##ac7d3b48dcb31fb67fc9da22cad4cf4675aef72f.png" xmltv_id="EURO STAR">EURO STAR</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="29##d1f86c2f46f1070b4d2c8cbd1ffa1f61d2c62b2d.png" xmltv_id="Kanal 7">Kanal 7</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="3826##4d487aa6fb685df8fc9e27b38f64d9791735e6b1.png" xmltv_id="beIN iZ">beIN iZ</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="440##7bc81823f85bb3a7f43dee1444fe4148c9397917.png" xmltv_id="beIN Movies Turk">beIN Movies Turk</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="222##67e8da1a7d50264187383e930d50409c2cc8a3b5.png" xmltv_id="CNN Türk">CNN Türk</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="236##93eddf66d4f77afdbaceb01d16a7aab393f3b133.png" xmltv_id="Power Türk TV">Power Türk TV</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="215##922ff3d59904e7ceebe76237d876bc7bb3a6116a.png" xmltv_id="Show Turk">Show Turk</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="3827##8c78522ef32a392e4e78671e013cfde23f6487a2.png" xmltv_id="Show Max">Show Max</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="439##94887be6047d7f89e747ba7a2336e3ea5b2aceb3.png" xmltv_id="TV8 Int">TV8 Int</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="121##92eae2291650194c14e193ae749a9ad77c61b4a8.png" xmltv_id="EuroN I">EuroN I</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="43##1ba8d7da925e2000b3904e1eacd38f4137de469b.png" xmltv_id="Rai Uno">Rai Uno</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="46##ec41b491e93ed2b64225a4c562f97af7271dcc4b.png" xmltv_id="Rai Due">Rai Due</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="210##3526677f16439b6e172aa5e346da151b5b57c940.png" xmltv_id="Rai Tre">Rai Tre</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="3685##6b344a2cb60a4ab0c6262c5c8242c830d904971b.png" xmltv_id="Baden TV">Baden TV</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="3749##35e2e1b57ba6a5f1ef6237c9a5e588e78b937284.png" xmltv_id="Baden TV Süd">Baden TV Süd</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="578##5d93b1337647d544546ec58ae65966c782da081f.png" xmltv_id="L-TV">L-TV</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="660##180dccef4e255e11739783c60d0288cfb9a212c7.png" xmltv_id="Regio TV">Regio TV</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="246##fb424a4697f52f56ee1b968c661b5debbe5f0060.png" xmltv_id="RNF">RNF</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="161##b60e89b7e008dfb126a4a26ebb5bda896674b39b.png" xmltv_id="a.tv">a.tv</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="448##d37488ac6d2572b3cda8b5abc35f2ef632f46d8d.png" xmltv_id="allgäu.tv">allgäu.tv</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="175##dbcae4e6fd058a2c6ca9ca2ec0a439d85ffe980b.png" xmltv_id="BR Nord">BR Nord</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="177##54473a78213a3e6d3c105a071cda873d9e90253e.png" xmltv_id="NIEDERBAYERN TV - DEG">NIEDERBAYERN TV - DEG</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="238##4da0e291ad477a84f868781751e89e3491c1f9b2.png" xmltv_id="Franken Fernsehen">Franken Fernsehen</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="173##7336910781a7700f8778e51765c090ec17698c57.png" xmltv_id="tv.ingolstadt">tv.ingolstadt</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="174##54473a78213a3e6d3c105a071cda873d9e90253e.png" xmltv_id="NIEDERBAYERN TV - LA">NIEDERBAYERN TV - LA</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="241##0c7f41025f6eb921088338aaca24116787652f0c.png" xmltv_id="münchen.tv">münchen.tv</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="141##7811d290fdadfbcaff34a4286d04ce08646ce231.png" xmltv_id="Oberpfalz TV">Oberpfalz TV</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="143##098bc21bca807e35fc390c731a05fdef04384272.png" xmltv_id="RFO">RFO</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="146##efd5a2c8992cd87d3fcc83b5b2399d12971bf89f.png" xmltv_id="SAT.1 Bayern">SAT.1 Bayern</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="154##54473a78213a3e6d3c105a071cda873d9e90253e.png" xmltv_id="NIEDERBAYERN TV - PA">NIEDERBAYERN TV - PA</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="170##e8b0f0a9705be7a5bb89e421970c102c4f409f6f.png" xmltv_id="TV Oberfranken">TV Oberfranken</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="156##483a801e97300962a1a48e2a5c0b4eb6bf017b4a.png" xmltv_id="TV Mainfranken">TV Mainfranken</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="171##36b4c7bc96decd699383f26e32769d35e262d1df.png" xmltv_id="TVA Ostbayern">TVA Ostbayern</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="649##029de89eb87aea2d6ff51b225067bab393112d51.png" xmltv_id="ALEX Berlin">ALEX Berlin</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="3284##bec65fd64ffa6cdfa875ab54288d79ca6b1420c8.png" xmltv_id="HAUPTSTADT.TV">HAUPTSTADT.TV</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="599##87aa8a42d1a650933f6299e78048a40014e1c0cb.png" xmltv_id="tv.berlin">tv.berlin</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="242##3c5a2a45fa454d43b49eb1a696cafd0a4eeb1c86.png" xmltv_id="rbb Brandenburg">rbb Brandenburg</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="100##677f684aabfc03b8110b90e5b4ea5b3ac3e5d578.png" xmltv_id="RTL HB NDS">RTL HB NDS</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="144##efd5a2c8992cd87d3fcc83b5b2399d12971bf89f.png" xmltv_id="SAT.1 NDS Bremen">SAT.1 NDS Bremen</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="244##254cb8179b6bf0b87bf6e8907d184203dbca13b3.png" xmltv_id="Hamburg 1">Hamburg 1</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="150##e51cf4bf577954c861c57396359f56fb3f5e7805.png" xmltv_id="NDR Hamburg">NDR Hamburg</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="151##e51cf4bf577954c861c57396359f56fb3f5e7805.png" xmltv_id="NDR Schleswig-Holstein">NDR Schleswig-Holstein</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="102##677f684aabfc03b8110b90e5b4ea5b3ac3e5d578.png" xmltv_id="RTL HH SH">RTL HH SH</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="142##efd5a2c8992cd87d3fcc83b5b2399d12971bf89f.png" xmltv_id="SAT.1 HH SH">SAT.1 HH SH</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="546##3598c5d50191872877e1ce108adbcc078f5bae8f.png" xmltv_id="OF-TV">OF-TV</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="2966##1115ac42b2d7f05d6f5a19a27c32824449b73da8.png" xmltv_id="Rhein-Main TV">Rhein-Main TV</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="101##677f684aabfc03b8110b90e5b4ea5b3ac3e5d578.png" xmltv_id="RTL Hessen">RTL Hessen</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="240##e51cf4bf577954c861c57396359f56fb3f5e7805.png" xmltv_id="NDR Mecklenburg-Vorpommern">NDR Mecklenburg-Vorpommern</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="3750##671acdc44b35d59a2bf5077d1fbe3c37391d5cc9.png" xmltv_id="nrwision">nrwision</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="478##677f684aabfc03b8110b90e5b4ea5b3ac3e5d578.png" xmltv_id="RTL NRW">RTL NRW</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="251##efd5a2c8992cd87d3fcc83b5b2399d12971bf89f.png" xmltv_id="SAT.1 NRW">SAT.1 NRW</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="2616##c8076164bc202b72f7b9acde25986bcfdcb440ac.png" xmltv_id="Studio 47">Studio 47</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="160##8784546120200060bc84357fcafd0994d648ee40.png" xmltv_id="WDR Aachen">WDR Aachen</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="158##8784546120200060bc84357fcafd0994d648ee40.png" xmltv_id="WDR Bielefeld">WDR Bielefeld</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="155##8784546120200060bc84357fcafd0994d648ee40.png" xmltv_id="WDR Bonn">WDR Bonn</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="172##8784546120200060bc84357fcafd0994d648ee40.png" xmltv_id="WDR Dortmund">WDR Dortmund</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="165##8784546120200060bc84357fcafd0994d648ee40.png" xmltv_id="WDR Duisburg">WDR Duisburg</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="167##8784546120200060bc84357fcafd0994d648ee40.png" xmltv_id="WDR Düsseldorf">WDR Düsseldorf</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="531##8784546120200060bc84357fcafd0994d648ee40.png" xmltv_id="WDR Essen">WDR Essen</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="239##8784546120200060bc84357fcafd0994d648ee40.png" xmltv_id="WDR Münster">WDR Münster</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="166##8784546120200060bc84357fcafd0994d648ee40.png" xmltv_id="WDR Siegen">WDR Siegen</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="249##8784546120200060bc84357fcafd0994d648ee40.png" xmltv_id="WDR Wuppertal">WDR Wuppertal</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="575##6ad8ce166f874e77dc66b44ab4b1921c0bf6b944.png" xmltv_id="DRF1">DRF1</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="3045##e315a9db459bac39d4da9afe51d562dfe79aaa26.png" xmltv_id="OK4">OK4</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="663##a30adbed633d59fea64013acc4c468cde28315d0.png" xmltv_id="OK54 Trier">OK54 Trier</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="3042##40ecd27802a1278e73a56d95d6031744ff5c17c5.png" xmltv_id="OK Weinstraße">OK Weinstraße</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="662##5772254806e510da2c5d25ae74b9dfb4d1334eda.png" xmltv_id="OK-TV Ludwigshafen">OK-TV Ludwigshafen</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="3044##45bf8230af2cd7bbf50780c6b52d5d09b5245125.png" xmltv_id="OK:TV Mainz">OK:TV Mainz</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="145##efd5a2c8992cd87d3fcc83b5b2399d12971bf89f.png" xmltv_id="SAT.1 RhlPf Hessen">SAT.1 RhlPf Hessen</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="581##d4af42cd423f03dbfe9d512e5e8c3517993e1662.png" xmltv_id="TV Mittelrhein">TV Mittelrhein</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="580##ec14b417dee22f3af18935099cfc3a8a54b4c165.png" xmltv_id="WWTV">WWTV</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="2612##5375f324b7ffcb882061a48771888ef0f6c74e73.png" xmltv_id="Chemnitz Fernsehen">Chemnitz Fernsehen</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="2611##5498e02c677ec9cb9896e8cd55d0e6a63fa8910f.png" xmltv_id="Dresden Fernsehen">Dresden Fernsehen</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="3179##8755b09d6bda3c93b0f2d453cedd0a01372982d3.png" xmltv_id="Leipzig Fernsehen">Leipzig Fernsehen</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="2610##06c7ef3c1ed3d4a9f20564979a9e137a6961b435.png" xmltv_id="TV Westsachsen">TV Westsachsen</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="147##8e11c0abde6c90a68507070c73b443401a24fcff.png" xmltv_id="MDR Sachsen-Anhalt">MDR Sachsen-Anhalt</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="3660##7290ab23481b5667b84d0d172b460aeedc3bf6ff.png" xmltv_id="altenburg.tv">altenburg.tv</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="252##8e11c0abde6c90a68507070c73b443401a24fcff.png" xmltv_id="MDR Thüringen">MDR Thüringen</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="2609##213c21c06ca633f1c31e5c6d75fbe7098809a13c.png" xmltv_id="Rennsteig.TV">Rennsteig.TV</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="3073##f2d4915f1521f2dbb445659e005ce231c10986ed.png" xmltv_id="salve.tv">salve.tv</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="576##bbef93c1455921ac522d90f6dad8ba0672451538.png" xmltv_id="Sky 1">Sky 1</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="3756##0e896a05732816967829bad2d557b73acfc250cd.png" xmltv_id="Sky Serien &amp; Shows">Sky Serien &amp; Shows</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="264##5e0f05739f0df30ff11aaf7245266e6eb26980b5.png" xmltv_id="SkyAtlantic">SkyAtlantic</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="128##c9a89e0d86462498f98275af01e0aefff143c7ec.png" xmltv_id="Fox (Sky)">Fox (Sky)</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="458##117d872e397121d7cc19f5d6bb15c38fafde1d3f.png" xmltv_id="TNT Serie (Sky)">TNT Serie (Sky)</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="461##38bfeafffdeb65651af23919ac22cc462adf98c7.png" xmltv_id="TNT Comedy (Sky)">TNT Comedy (Sky)</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="465##ea9846917902c635cd3c5b239bd2f0c5d23c0c98.png" xmltv_id="Syfy (Sky)">Syfy (Sky)</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="471##668cd4d06f6981b82841f40fad42bc350babb056.png" xmltv_id="13TH STREET (Sky)">13TH STREET (Sky)</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="462##1994bd733a17fbcd32d1d78dc43b28c362776f5b.png" xmltv_id="Universal TV (Sky)">Universal TV (Sky)</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="466##454556e23e412dfb2b0048d0c43355b212e86d8b.png" xmltv_id="E! Entertainment (Sky)">E! Entertainment (Sky)</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="470##659b8d9c44072c5bd8d46cb4e8d9413e6d28f206.png" xmltv_id="Disney Junior (Sky)">Disney Junior (Sky)</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="468##6e522d9ae4b2a9a8f686281f7d3adff2d8862ee3.png" xmltv_id="Discovery (Sky)">Discovery (Sky)</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="464##c9d4a2fb172069fc67d4170738cdbbc225f079f6.png" xmltv_id="National Geographic (Sky)">National Geographic (Sky)</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="233##deec95134d0baec0f4030cb9c96a1f7348419c30.png" xmltv_id="National Geographic WILD (Sky)">National Geographic WILD (Sky)</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="183##de43022c629f3b96e67b94d1f652e05399691dc2.png" xmltv_id="Spiegel Geschichte (Sky)">Spiegel Geschichte (Sky)</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="2860##edb7ac2d8194c75dea9ecfc0ca00f282d79c8c35.png" xmltv_id="Spiegel TV Wissen (Sky)">Spiegel TV Wissen (Sky)</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="467##90a90534ebf9dccf44ce577b0ffb22f27e729787.png" xmltv_id="HISTORY (Sky)">HISTORY (Sky)</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="201##06ef624bd286fdd4aef308618b461cc118867d01.png" xmltv_id="SkyKrimi">SkyKrimi</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="107##40e5d10666540db54a54bb2092a47faa39a52ec8.png" xmltv_id="Beate-Uhse.TV (Sky)">Beate-Uhse.TV (Sky)</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="134##daabe8d88933d58ca50ef01e692058fe39759627.png" xmltv_id="Heimatkanal (Sky)">Heimatkanal (Sky)</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="658##26147f4735983c4f20ad71c01ba95f25b1a7ccc7.png" xmltv_id="Romance TV (Sky)">Romance TV (Sky)</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="118##777dbaa3dd9b8a1c4ae8424f32efb8d8e6631d2f.png" xmltv_id="Classica (Sky)">Classica (Sky)</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="132##9735a7ac5cfcf3c56acd644069751c8c5b72bbe8.png" xmltv_id="Jukebox (Sky)">Jukebox (Sky)</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="3843##a3a2fd1ad65041c5fec95749167405df48193527.png" xmltv_id="Boomerang (Sky)">Boomerang (Sky)</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="138##ff1c1502b0acd9dc106cf1caa65e4ee69032c8a2.png" xmltv_id="Junior (Sky)">Junior (Sky)</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="195##40bfcaefcaed4d45f38f8860185772914b54898a.png" xmltv_id="Sky Cinema Premieren">Sky Cinema Premieren</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="202##679f08ee1a40e9cfa4a731f137d69ad5a3677829.png" xmltv_id="Sky Cinema Premieren +24">Sky Cinema Premieren +24</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="263##aff31dd05fc2f16705168e04f43400e6569fc47f.png" xmltv_id="Sky Cinema Best of">Sky Cinema Best of</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="4356##b218a57d11ada0f80a3eee7dc5ab8ba282f0727f.png" xmltv_id="Sky Cinema Thriller">Sky Cinema Thriller</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="40##5997a24aa3a16399ca07d69a45e8c9d956fae0ed.png" xmltv_id="Sky Cinema Action">Sky Cinema Action</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="572##6c6ec9624211f18e9c9dc136d0536bc0abb1ee25.png" xmltv_id="Sky Cinema Family">Sky Cinema Family</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="3844##5ab22bda6c19f0a28d7800c6ca7ee63d8d6007a0.png" xmltv_id="Sky Cinema Comic-Helden">Sky Cinema Comic-Helden</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="235##3cbc280c2b99658a8a1932010102bf63b5a273a7.png" xmltv_id="Sky Cinema Fun">Sky Cinema Fun</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="4357##cfd33f3d86c85365a0c496991eae294c3bae3236.jpeg" xmltv_id="Sender nicht mehr verfügbar">Sender nicht mehr verfügbar</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="200##4fd2bad9f354b43c96ecc4f483e46278149dc51c.png" xmltv_id="Sky Cinema Classics">Sky Cinema Classics</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="540##7de5c33c2cb3f4a7569b42631ff7092d7d6c837d.png" xmltv_id="TNT Film (Sky)">TNT Film (Sky)</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="539##8f80fdd4f8fe6853800aeec106062fc2ee1d5ab4.png" xmltv_id="Kinowelt TV (Sky)">Kinowelt TV (Sky)</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="42##633e60311559d17a13a1d675bc716245799bc86b.png" xmltv_id="Sky Sport Bundesliga 1">Sky Sport Bundesliga 1</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="206##9a0f96a3711db5cc8727b0d506f4e8977bb69e73.png" xmltv_id="Sky Sport Bundesliga 2">Sky Sport Bundesliga 2</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="211##25710b7aeda91291c9c20d28d84092eadd2e55fa.png" xmltv_id="Sky Sport Bundesliga 3">Sky Sport Bundesliga 3</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="199##672193318d988e2549e6195eb952110c0c666c9b.png" xmltv_id="Sky Sport Bundesliga 4">Sky Sport Bundesliga 4</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="232##3415a02e21a20c80763341236ee88802e5e36c5a.png" xmltv_id="Sky Sport Bundesliga 5">Sky Sport Bundesliga 5</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="234##e0398d2b43e7ed465f4e939b9465e52a57067314.png" xmltv_id="Sky Sport Bundesliga 6">Sky Sport Bundesliga 6</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="231##adbb10a0edfdc9a8b28d5083de1a3b2eb36b5c42.png" xmltv_id="Sky Sport Bundesliga 7">Sky Sport Bundesliga 7</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="258##20d90f66ec49e648ca9a4962fac67141c0b093fa.png" xmltv_id="Sky Sport Bundesliga 8">Sky Sport Bundesliga 8</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="219##442f97db6b29a2584b7b55e1ab07722b7f9b6252.png" xmltv_id="Sky Sport Bundesliga 9">Sky Sport Bundesliga 9</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="237##381a5567aab4ba5f57573868e76c876895cd2ffe.png" xmltv_id="Sky Sport Bundesliga 10">Sky Sport Bundesliga 10</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="31##885d4414701f7c9170094e1ae2631ba9718d2a8c.png" xmltv_id="Sky Sport 1">Sky Sport 1</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="198##2b9ce39abb588f958a49e642438a7c4aeed098a1.png" xmltv_id="Sky Sport 2">Sky Sport 2</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="192##5548a5c9e48f9898b708118f32326ba931621fea.png" xmltv_id="Sky Sport 3">Sky Sport 3</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="212##6849c0cb0b1ea7cee8c9da98c76ec8fcd7927b91.png" xmltv_id="Sky Sport 4">Sky Sport 4</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="189##e718eb5040de287d3f19700da9c6b76343f4a220.png" xmltv_id="Sky Sport 5">Sky Sport 5</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="111##5f5c948789493e564d9d5f95823ba8d7b7815b25.png" xmltv_id="Sky Sport 6">Sky Sport 6</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="114##7e30f23eaa7e8b934e1212bbca45ac985f00db7d.png" xmltv_id="Sky Sport 7">Sky Sport 7</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="113##be26b8fa92f78e700dd0658449069e5423111c0c.png" xmltv_id="Sky Sport 8">Sky Sport 8</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="127##e7fa68aa56ac79b0e4be7258f96b7761733fb6e3.png" xmltv_id="Sky Sport 9">Sky Sport 9</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="261##4a68bee10efc3f80587f84860ee3be117c986b9e.png" xmltv_id="Sky Sport 10">Sky Sport 10</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="187##4d54ba86bbd57a1fbd5ea3b0a36f4378fc9866c4.png" xmltv_id="Sky Sport 11">Sky Sport 11</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="3682##fe35a88cfc72571e04465621e92be7e642732fcb.png" xmltv_id="Sky Sport 12">Sky Sport 12</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="3689##2b4d60d286a274869253e0aa0d56997da19c1c5b.png" xmltv_id="Sky Sport 13">Sky Sport 13</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="3684##cc6d57e9375fc3b42a0b112b50c5e81a8e3f60da.png" xmltv_id="Sky Sport 14">Sky Sport 14</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="208##55f750ce5e9a976737efe9f6974aea0b67573dd3.png" xmltv_id="Sky Sport Austria 1">Sky Sport Austria 1</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="3688##af873d281bbd004eac7dbc9842a0af6d49014dee.png" xmltv_id="Sky Sport Austria 2">Sky Sport Austria 2</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="3683##b85898e025b90bb843d03e4491e9592ae5ee21d9.png" xmltv_id="Sky Sport Austria 3">Sky Sport Austria 3</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="3687##28278469439a16f3d19401fb72910dd2f961611b.png" xmltv_id="Sky Sport Austria 4">Sky Sport Austria 4</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="254##18f200745e93b6c9848237acaaa008ea9f520f94.png" xmltv_id="Eurosport 1 (Sky)">Eurosport 1 (Sky)</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="253##fbc41d77249de69bb35febcff1bb74dd87a3b031.png" xmltv_id="Eurosport 2 (Sky)">Eurosport 2 (Sky)</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="416##b4aa0e1b50ad48d6c1e1c9b4fecc69ec7874efc7.jpeg" xmltv_id="Testkanal L01">Testkanal L01</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="243##5eef67a8847013efd9f15fc08bcd32420485a36c.jpeg" xmltv_id="Testkanal L02">Testkanal L02</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="442##df42ebc24f36f2ec24b30e7c8a6464b5eafaae16.jpeg" xmltv_id="Testkanal L03">Testkanal L03</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="179##87a2778832e88ea05f7455680bf4dec3f86fc1a7.jpeg" xmltv_id="Testkanal L04">Testkanal L04</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="532##0a77e8a5b86160a8ad635592c1d4162a79177b21.jpeg" xmltv_id="Testkanal L05">Testkanal L05</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="477##6fa240b3ce016a627159c6486c1837b1ed84ad94.jpeg" xmltv_id="Testkanal L06">Testkanal L06</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="457##09b05cf210f4d54074a6b0763347e2a2299725c6.jpeg" xmltv_id="Testkanal L07">Testkanal L07</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="597##3d20322a72a6efd61fe5e75790fdd8eb341d7c31.jpeg" xmltv_id="Testkanal L08">Testkanal L08</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="598##3d20322a72a6efd61fe5e75790fdd8eb341d7c31.jpeg" xmltv_id="Testkanal L09">Testkanal L09</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="116##5907a60bfb29f7bd3d141b1dc36ab3c74d4b6e5b.png" xmltv_id="Demokanal">Demokanal</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="530##e6d0f61562cdd30d1e9a1b49d737e49a9ac50bb1.jpeg" xmltv_id="Testkanal I01">Testkanal I01</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="257##f220283f2417ab68f4771791dfd02ea551efe9ca.jpeg" xmltv_id="Testkanal I03">Testkanal I03</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="131##5907a60bfb29f7bd3d141b1dc36ab3c74d4b6e5b.png" xmltv_id="Instore TV">Instore TV</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="812##cf830b0720428bf727d793f4bb296d502c766fb7.jpeg" xmltv_id="Megathek">Megathek</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="443##09b05cf210f4d54074a6b0763347e2a2299725c6.jpeg" xmltv_id="Testkanal H01">Testkanal H01</channel>
+    <channel update="i" site="web.magentatv.E.de" site_id="413##" xmltv_id="Meine Aufnahmen">Meine Aufnahmen</channel>
+  </channels>
+</site>

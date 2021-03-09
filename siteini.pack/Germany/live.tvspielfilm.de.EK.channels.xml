@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<site generator-info-name="WebGrab+Plus/w MDB &amp; REX Postprocess -- version V2.1.11.1 -- Jan van Straaten" site="live.tvspielfilm.de">
+  <channels>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="ARD" xmltv_id="Das Erste">Das Erste</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="ZDF" xmltv_id="ZDF">ZDF</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="RTL" xmltv_id="RTL">RTL</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="SAT1" xmltv_id="SAT.1">SAT.1</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="PRO7" xmltv_id="ProSieben">ProSieben</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="K1" xmltv_id="kabel eins">kabel eins</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="RTL2" xmltv_id="RTL II">RTL II</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="VOX" xmltv_id="VOX">VOX</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="3SAT" xmltv_id="3sat">3sat</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="ARTE" xmltv_id="ARTE">ARTE</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="SERVU" xmltv_id="ServusTV">ServusTV</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="TELE5" xmltv_id="Tele 5">Tele 5</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="DMAX" xmltv_id="DMAX">DMAX</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="SIXX" xmltv_id="sixx">sixx</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="RTL-N" xmltv_id="NITRO">NITRO</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="RTLPL" xmltv_id="RTLplus">RTLplus</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="SAT1G" xmltv_id="SAT.1 Gold">SAT.1 Gold</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="PRO7M" xmltv_id="ProSieben MAXX">ProSieben MAXX</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="CC" xmltv_id="Comedy Central">Comedy Central</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="WDR-K" xmltv_id="WDR Köln">WDR Köln</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="NDR-NI" xmltv_id="NDR NI">NDR NI</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="RB-TV" xmltv_id="Radio Bremen TV">Radio Bremen TV</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="BR-S" xmltv_id="BR Süd">BR Süd</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="SWRBW" xmltv_id="SWR BW">SWR BW</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="SR" xmltv_id="SR">SR</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="HR" xmltv_id="HR">HR</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="MDR-SN" xmltv_id="MDR Sachsen">MDR Sachsen</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="RBB-B" xmltv_id="RBB Berlin">RBB Berlin</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="SPORT" xmltv_id="SPORT1">SPORT1</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="S1PLU" xmltv_id="SPORT1+">SPORT1+</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="ES1" xmltv_id="eSports1">eSports1</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="EURO" xmltv_id="Eurosport 1">Eurosport 1</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="EURO2" xmltv_id="Eurosport 2">Eurosport 2</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="EX-SP" xmltv_id="EXTREME SPORTS">EXTREME SPORTS</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="SPO-D" xmltv_id="sportdigital">sportdigital</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="DAZN" xmltv_id="DAZN">DAZN</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="SNHD" xmltv_id="Sky Sport News HD">Sky Sport News HD</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="AMS" xmltv_id="Auto Motor Sport">Auto Motor Sport</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="KIKA" xmltv_id="KiKA">KiKA</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="SUPER" xmltv_id="SUPER RTL">SUPER RTL</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="TOGGO" xmltv_id="TOGGO plus">TOGGO plus</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="RIC" xmltv_id="RiC">RiC</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="NICK" xmltv_id="nick">nick</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="FFTV" xmltv_id="Fix &amp; Foxi">Fix &amp; Foxi</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="NICKJ" xmltv_id="Nick Jr.">Nick Jr.</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="NICKT" xmltv_id="Nicktoons">Nicktoons</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="DISNE" xmltv_id="Disney Channel">Disney Channel</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="PHOEN" xmltv_id="PHOENIX">PHOENIX</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="ALPHA" xmltv_id="ARD alpha">ARD alpha</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="FES" xmltv_id="ONE">ONE</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="2NEO" xmltv_id="ZDFneo">ZDFneo</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="ZINFO" xmltv_id="ZDFinfo">ZDFinfo</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="DWTV" xmltv_id="DW (Europe)">DW (Europe)</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="ANIXE" xmltv_id="ANIXE">ANIXE</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="ZEE-1" xmltv_id="Zee.One">Zee.One</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="BIBEL" xmltv_id="Bibel TV">Bibel TV</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="KTV" xmltv_id="K-TV">K-TV</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="TLC" xmltv_id="TLC">TLC</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="WDWTV" xmltv_id="Welt der Wunder TV">Welt der Wunder TV</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="PLANE" xmltv_id="Planet">Planet</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="EOTV" xmltv_id="eoTV">eoTV</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="GUSTO" xmltv_id="Bon Gusto">Bon Gusto</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="GOLD" xmltv_id="Goldstar TV">Goldstar TV</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="HGTV" xmltv_id="Home &amp; Garden TV">Home &amp; Garden TV</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="FLN" xmltv_id="Fine Living Network">Fine Living Network</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="FOOD" xmltv_id="Food Network">Food Network</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="MAPO" xmltv_id="Marco Polo TV">Marco Polo TV</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="TRCH" xmltv_id="Travel Channel">Travel Channel</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="TRAVELXP" xmltv_id="travelxp 4K">travelxp 4K</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="HEALTH" xmltv_id="Health TV">Health TV</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="TAG24" xmltv_id="tagesschau24">tagesschau24</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="NTV" xmltv_id="n-tv">n-tv</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="WELT" xmltv_id="WELT">WELT</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="N24DOKU" xmltv_id="N24 Doku">N24 Doku</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="K1DOKU" xmltv_id="kabel eins Doku">kabel eins Doku</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="BBC" xmltv_id="BBC World News">BBC World News</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="BLM" xmltv_id="Bloomberg Europe TV">Bloomberg Europe TV</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="CNBC" xmltv_id="CNBC">CNBC</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="CNN" xmltv_id="CNN International">CNN International</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="ENGB" xmltv_id="euronews (en)">euronews (en)</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="EURON" xmltv_id="euronews (ger)">euronews (ger)</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="ALJAZ" xmltv_id="Al Jazeera">Al Jazeera</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="FR24E" xmltv_id="France 24 (engl.)">France 24 (engl.)</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="FR24F" xmltv_id="France 24 (franz.)">France 24 (franz.)</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="DATV" xmltv_id="Der Aktionär TV">Der Aktionär TV</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="NHK" xmltv_id="NHK World TV">NHK World TV</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="DMC" xmltv_id="DELUXE MUSIC">DELUXE MUSIC</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="DMF" xmltv_id="Deutsches Musik Fernsehen">Deutsches Musik Fernsehen</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="MTV" xmltv_id="MTV">MTV</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="MTV-L" xmltv_id="MTV Live HD">MTV Live HD</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="VH1" xmltv_id="VH1 Classic">VH1 Classic</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="MELODIETV" xmltv_id="Melodie TV">Melodie TV</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="QVC" xmltv_id="QVC">QVC</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="QVCP" xmltv_id="QVC2">QVC2</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="QVCBS" xmltv_id="QVC Style">QVC Style</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="HSE" xmltv_id="HSE24">HSE24</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="CH21" xmltv_id="Channel21">Channel21</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="123TV" xmltv_id="123.tv">123.tv</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="FREESHOP" xmltv_id="freenet SHOPPING">freenet SHOPPING</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="SKLAR" xmltv_id="Sonnenklar.TV">Sonnenklar.TV</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="WDR-AC" xmltv_id="WDR Aachen">WDR Aachen</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="WDR-BI" xmltv_id="WDR Bielefeld">WDR Bielefeld</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="WDR-BN" xmltv_id="WDR Bonn">WDR Bonn</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="WDR-DO" xmltv_id="WDR Dortmund">WDR Dortmund</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="WDR-DU" xmltv_id="WDR Duisburg">WDR Duisburg</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="WDR-D" xmltv_id="WDR Düsseldorf">WDR Düsseldorf</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="WDR-E" xmltv_id="WDR Essen">WDR Essen</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="WDR-MS" xmltv_id="WDR Münster">WDR Münster</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="WDR-SI" xmltv_id="WDR Siegen">WDR Siegen</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="WDR-W" xmltv_id="WDR Wuppertal">WDR Wuppertal</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="NDR-MV" xmltv_id="NDR MV">NDR MV</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="NDR-HH" xmltv_id="NDR HH">NDR HH</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="NDR-SH" xmltv_id="NDR SH">NDR SH</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="BR-N" xmltv_id="BR Nord">BR Nord</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="SWRRP" xmltv_id="SWR RP">SWR RP</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="MDR-ST" xmltv_id="MDR Sachsen-Anhalt">MDR Sachsen-Anhalt</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="MDR-TH" xmltv_id="MDR Thüringen">MDR Thüringen</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="RBB-BB" xmltv_id="RBB Brandenburg">RBB Brandenburg</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="HH1" xmltv_id="Hamburg 1">Hamburg 1</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="MUE2" xmltv_id="münchen2">münchen2</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="TVM" xmltv_id="münchen.tv">münchen.tv</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="TVB" xmltv_id="tv.berlin">tv.berlin</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="CENTE" xmltv_id="Köln.tv">Köln.tv</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="DRTV" xmltv_id="DRESDEN FERNSEHEN">DRESDEN FERNSEHEN</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="LEITV" xmltv_id="LEIPZIG FERNSEHEN">LEIPZIG FERNSEHEN</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="REGIO" xmltv_id="Regio TV">Regio TV</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="REGBS" xmltv_id="Regio TV Bodensee">Regio TV Bodensee</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="RMTV" xmltv_id="rheinmaintv">rheinmaintv</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="RNF" xmltv_id="Rhein-Neckar Fernsehen">Rhein-Neckar Fernsehen</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="SACH" xmltv_id="CHEMNITZ FERNSEHEN">CHEMNITZ FERNSEHEN</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="ATV" xmltv_id="ATV">ATV</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="ATV2" xmltv_id="ATV II">ATV II</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="ORF1" xmltv_id="ORF 1">ORF 1</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="ORF2" xmltv_id="ORF 2">ORF 2</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="ORF3" xmltv_id="ORF III">ORF III</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="ORFSP" xmltv_id="ORF SPORT +">ORF SPORT +</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="OE24TV" xmltv_id="oe24.TV">oe24.TV</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="PULS4" xmltv_id="PULS 4">PULS 4</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="SF1" xmltv_id="SRF 1">SRF 1</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="STTV" xmltv_id="STAR TV">STAR TV</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="SF2" xmltv_id="SRF zwei">SRF zwei</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="3PLUS" xmltv_id="3+">3+</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="PULS8" xmltv_id="PULS acht">PULS acht</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="NL1" xmltv_id="NPO 1">NPO 1</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="NL2" xmltv_id="NPO 2">NPO 2</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="NL3" xmltv_id="NPO 3">NPO 3</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="DR1" xmltv_id="DR1">DR1</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="BE1" xmltv_id="Belgien 1">Belgien 1</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="TV2" xmltv_id="TV2">TV2</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="TV5" xmltv_id="TV5 Monde">TV5 Monde</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="CIN" xmltv_id="Sky Cinema">Sky Cinema</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="CIN1" xmltv_id="Sky Cinema+1">Sky Cinema+1</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="CIN24" xmltv_id="Sky Cinema+24">Sky Cinema+24</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="SKY-F" xmltv_id="Sky Family">Sky Family</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="SKY-A" xmltv_id="Sky Action">Sky Action</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="SKY-C" xmltv_id="Sky Comedy">Sky Comedy</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="SKY-E" xmltv_id="Sky Emotion">Sky Emotion</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="SKY-N" xmltv_id="Sky Nostalgie">Sky Nostalgie</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="SKY-H" xmltv_id="Sky Hits HD">Sky Hits HD</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="TNT-F" xmltv_id="TNT Film">TNT Film</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="DCM" xmltv_id="Disney Cinemagic (HD)">Disney Cinemagic (HD)</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="KINOW" xmltv_id="KinoweltTV">KinoweltTV</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="SKY-S" xmltv_id="Sky select">Sky select</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="BLUM" xmltv_id="Blue Movie">Blue Movie</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="BLUM2" xmltv_id="Blue Movie 2">Blue Movie 2</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="BLUM3" xmltv_id="Blue Movie 3">Blue Movie 3</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="BULI" xmltv_id="Sky Sport Bundesliga">Sky Sport Bundesliga</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="HDSPO" xmltv_id="Sky Sport HD 1">Sky Sport HD 1</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="SHD2" xmltv_id="Sky Sport HD 2">Sky Sport HD 2</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="SPO-A" xmltv_id="Sky Sport Austria">Sky Sport Austria</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="SPUHD" xmltv_id="SKY Sport UHD">SKY Sport UHD</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="SKY1" xmltv_id="Sky 1">Sky 1</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="SKYAT" xmltv_id="Sky Atlantic HD">Sky Atlantic HD</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="SKY-K" xmltv_id="Sky Krimi">Sky Krimi</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="ARTS" xmltv_id="Sky Arts HD">Sky Arts HD</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="AXN" xmltv_id="AXN">AXN</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="UNIVE" xmltv_id="Universal Channel HD">Universal Channel HD</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="HISHD" xmltv_id="History HD">History HD</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="SP-GE" xmltv_id="Spiegel Geschichte">Spiegel Geschichte</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="MOVTV" xmltv_id="Motorvision TV">Motorvision TV</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="HDDIS" xmltv_id="Discovery HD">Discovery HD</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="N-GHD" xmltv_id="Nat Geo HD">Nat Geo HD</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="N-GW" xmltv_id="NAT GEO WILD">NAT GEO WILD</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="RTL-C" xmltv_id="RTL Crime">RTL Crime</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="13TH" xmltv_id="13th Street Universal">13th Street Universal</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="SCIFI" xmltv_id="Syfy">Syfy</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="FOX" xmltv_id="FOX">FOX</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="TNT-S" xmltv_id="TNT Serie">TNT Serie</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="TNT-C" xmltv_id="TNT Comedy">TNT Comedy</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="CRIN" xmltv_id="CRIME + INVESTIGATION">CRIME + INVESTIGATION</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="RTL-L" xmltv_id="RTL Living">RTL Living</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="PASS" xmltv_id="RTL Passion">RTL Passion</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="ROM" xmltv_id="Romance TV">Romance TV</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="HEIMA" xmltv_id="Heimatkanal">Heimatkanal</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="BOOM" xmltv_id="Boomerang">Boomerang</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="C-NET" xmltv_id="Cartoon Network">Cartoon Network</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="DXD" xmltv_id="Disney XD">Disney XD</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="DJUN" xmltv_id="Disney Junior">Disney Junior</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="JUNIO" xmltv_id="Junior">Junior</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="E!" xmltv_id="E! Entertainment">E! Entertainment</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="CLASS" xmltv_id="Classica">Classica</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="BUTV" xmltv_id="Beate-Uhse.TV">Beate-Uhse.TV</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="ADULT" xmltv_id="Adult Channel">Adult Channel</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="APLAN" xmltv_id="Animal Planet">Animal Planet</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="BBC-E" xmltv_id="BBC Entertainment">BBC Entertainment</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="DWF" xmltv_id="Wetter.com TV">Wetter.com TV</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="FATV" xmltv_id="Fashion TV">Fashion TV</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="GEO" xmltv_id="GEO Television">GEO Television</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="LAUNE" xmltv_id="Gute Laune TV">Gute Laune TV</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="JUKE" xmltv_id="Jukebox">Jukebox</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="LUSTP" xmltv_id="LUST PUR">LUST PUR</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="MEZZO" xmltv_id="Mezzo">Mezzo</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="MOTOR" xmltv_id="Motors TV">Motors TV</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="MTV-B" xmltv_id="MTV Base">MTV Base</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="MTV-D" xmltv_id="MTV Dance">MTV Dance</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="MTV-H" xmltv_id="MTV Hits">MTV Hits</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="NAUCH" xmltv_id="Nautical Channel">Nautical Channel</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="PBOY" xmltv_id="Playboy TV">Playboy TV</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="K1CLA" xmltv_id="kabel eins classics">kabel eins classics</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="SAT1E" xmltv_id="SAT.1 emotions">SAT.1 emotions</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="PRO7F" xmltv_id="ProSieben Fun">ProSieben Fun</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="NOWUS" xmltv_id="NOW US">NOW US</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="RCK" xmltv_id="RCK TV">RCK TV</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="SILVE" xmltv_id="Silverline">Silverline</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="SONY" xmltv_id="Sony Entertainment Television">Sony Entertainment Television</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="SPTVW" xmltv_id="Spiegel TV Wissen">Spiegel TV Wissen</channel>
+    <channel update="i" site="live.tvspielfilm.de.EK" site_id="TRACE" xmltv_id="Trace TV">Trace TV</channel>
+  </channels>
+</site>

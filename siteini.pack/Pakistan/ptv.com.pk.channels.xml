@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<site generator-info-name="WebGrab+Plus/w MDB &amp; REX Postprocess -- version V1.56.25 -- Jan van Straaten" site="ptv.com.pk">
+  <channels>
+    <channel update="i" site="ptv.com.pk" site_id="3" xmltv_id="PTV Home">PTV Home</channel>
+    <channel update="i" site="ptv.com.pk" site_id="1" xmltv_id="PTV World">PTV World</channel>
+    <channel update="i" site="ptv.com.pk" site_id="2" xmltv_id="PTV Soprts">PTV Soprts</channel>
+    <!--<channel update="i" site="ptv.com.pk" site_id="4" xmltv_id="PTV Global">PTV Global</channel>-->
+    <channel update="i" site="ptv.com.pk" site_id="5" xmltv_id="PTV News">PTV News</channel>
+  </channels>
+</site>

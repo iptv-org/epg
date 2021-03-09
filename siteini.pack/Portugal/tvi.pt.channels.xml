@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<site generator-info-name="WebGrab+Plus/w MDB &amp; REX Postprocess -- version V1.56.23.1 -- Jan van Straaten" site="tvi.pt">
+  <channels>
+    <channel update="i" site="tvi.pt" site_id="/programacao" xmltv_id="TVI">TVI</channel>
+    <channel update="i" site="tvi.pt" site_id="/programacao/tvi24" xmltv_id="TVI24">TVI24</channel>
+    <channel update="i" site="tvi.pt" site_id="/programacao/tvificcao" xmltv_id="TVI_FICCAO">TVI_FICCAO</channel>
+    <channel update="i" site="tvi.pt" site_id="/programacao/tvireality" xmltv_id="TVIReality">TVIReality</channel>
+    <channel update="i" site="tvi.pt" site_id="/programacao/tviafrica" xmltv_id="TVIAfrica">TVIAfrica</channel>
+    <channel update="i" site="tvi.pt" site_id="/programacao/tvii" xmltv_id="TVI_INTERNACIONAL">TVI_INTERNACIONAL</channel>
+  </channels>
+</site>

@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<site generator-info-name="WebGrab+Plus/w MDB &amp; REX Postprocess -- version V1.56.23.1 -- Jan van Straaten" site="tv.etcc.bg">
+  <channels>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Action%20Plus%20HD.xml" xmltv_id="Action Plus HD">Action Plus HD</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Alfa%20TV.xml" xmltv_id="Alfa TV">Alfa TV</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=AMC.xml" xmltv_id="AMC">AMC</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Animal%20Planet.xml" xmltv_id="Animal Planet">Animal Planet</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=ArenaSport%201.xml" xmltv_id="ArenaSport 1">ArenaSport 1</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=ArenaSport%202.xml" xmltv_id="ArenaSport 2">ArenaSport 2</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=ArenaSport%203.xml" xmltv_id="ArenaSport 3">ArenaSport 3</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=ArenaSport%204.xml" xmltv_id="ArenaSport 4">ArenaSport 4</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=AXN.xml" xmltv_id="AXN">AXN</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=B92.xml" xmltv_id="B92">B92</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Balkanika.xml" xmltv_id="Balkanika">Balkanika</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=BNT%201.xml" xmltv_id="BNT 1">BNT 1</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=BNT%202.xml" xmltv_id="BNT 2">BNT 2</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=BNT%20HD.xml" xmltv_id="BNT HD">BNT HD</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=BNT%20World.xml" xmltv_id="BNT World">BNT World</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=bTV.xml" xmltv_id="bTV">bTV</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=bTV%20HD.xml" xmltv_id="bTV HD">bTV HD</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=bTV%20Action.xml" xmltv_id="bTV Action">bTV Action</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=bTV%20Cinema.xml" xmltv_id="bTV Cinema">bTV Cinema</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=bTV%20Comedy.xml" xmltv_id="bTV Comedy">bTV Comedy</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=bTV%20Lady.xml" xmltv_id="bTV Lady">bTV Lady</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Cartoon%20Network.xml" xmltv_id="Cartoon Network">Cartoon Network</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Cinema%20Plus.xml" xmltv_id="Cinema Plus">Cinema Plus</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=City%20TV.xml" xmltv_id="City TV">City TV</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Comedy%20Central.xml" xmltv_id="Comedy Central">Comedy Central</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Comedy%20Plus.xml" xmltv_id="Comedy Plus">Comedy Plus</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Destination%20BG.xml" xmltv_id="Destination BG">Destination BG</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Diema.xml" xmltv_id="Diema">Diema</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Diema%20Family.xml" xmltv_id="Diema Family">Diema Family</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Diema%20Sport.xml" xmltv_id="Diema Sport">Diema Sport</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Diema%20Sport%202.xml" xmltv_id="Diema Sport 2">Diema Sport 2</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Discovery%20Channel.xml" xmltv_id="Discovery Channel">Discovery Channel</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Disney%20Channel.xml" xmltv_id="Disney Channel">Disney Channel</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Disney%20Junior.xml" xmltv_id="Disney Junior">Disney Junior</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=DM%20Sat.xml" xmltv_id="DM Sat">DM Sat</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=EKids.xml" xmltv_id="EKids">EKids</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Eurosport%201.xml" xmltv_id="Eurosport 1">Eurosport 1</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Eurosport%201%20HD.xml" xmltv_id="Eurosport 1 HD">Eurosport 1 HD</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Eurosport%202%20North.xml" xmltv_id="Eurosport 2 North">Eurosport 2 North</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Evrokom.xml" xmltv_id="Evrokom">Evrokom</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Fan%20TV.xml" xmltv_id="Fan TV">Fan TV</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Fen%20Folk%20TV.xml" xmltv_id="Fen Folk TV">Fen Folk TV</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Film%20Plus.xml" xmltv_id="Film Plus">Film Plus</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=FilmBox.xml" xmltv_id="FilmBox">FilmBox</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Fine%20Living%20Network.xml" xmltv_id="Fine Living Network">Fine Living Network</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Folklor%20TV.xml" xmltv_id="Folklor TV">Folklor TV</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Fox.xml" xmltv_id="Fox">Fox</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Fox%20Crime.xml" xmltv_id="Fox Crime">Fox Crime</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Fox%20Life.xml" xmltv_id="Fox Life">Fox Life</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Happy%20TV.xml" xmltv_id="Happy TV">Happy TV</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=History%20Channel.xml" xmltv_id="History Channel">History Channel</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=History%20HD.xml" xmltv_id="History HD">History HD</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Hobby%20lov.xml" xmltv_id="Hobby lov">Hobby lov</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Hobby%20TV%20HD.xml" xmltv_id="Hobby TV HD">Hobby TV HD</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Hobby%20TV.xml" xmltv_id="Hobby TV">Hobby TV</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Kanal%203.xml" xmltv_id="Kanal 3">Kanal 3</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Kino%20Nova.xml" xmltv_id="Kino Nova">Kino Nova</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Magic%20TV%20Bulgaria.xml" xmltv_id="Magic TV Bulgaria">Magic TV Bulgaria</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=MiniMax.xml" xmltv_id="MiniMax">MiniMax</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=MTV%20Hits.xml" xmltv_id="MTV Hits">MTV Hits</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=NatGeo%20Wild.xml" xmltv_id="NatGeo Wild">NatGeo Wild</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=NatGeo%20Wild%20HD.xml" xmltv_id="NatGeo Wild HD">NatGeo Wild HD</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=National%20Geographic.xml" xmltv_id="National Geographic">National Geographic</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Nickelodeon.xml" xmltv_id="Nickelodeon">Nickelodeon</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Nova%20Sport.xml" xmltv_id="Nova Sport">Nova Sport</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Nova%20TV.xml" xmltv_id="Nova TV">Nova TV</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=On%20Air.xml" xmltv_id="On Air">On Air</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Perviy%20Kanal.xml" xmltv_id="Perviy Kanal">Perviy Kanal</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Planeta%20Folk.xml" xmltv_id="Planeta Folk">Planeta Folk</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Planeta%20HD.xml" xmltv_id="Planeta HD">Planeta HD</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Planeta%20TV.xml" xmltv_id="Planeta TV">Planeta TV</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Prva%20Srpska%20Televizija.xml" xmltv_id="Prva Srpska Televizija">Prva Srpska Televizija</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Ring%20BG.xml" xmltv_id="Ring BG">Ring BG</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=RTS%201.xml" xmltv_id="RTS 1">RTS 1</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=RTS%202.xml" xmltv_id="RTS 2">RTS 2</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=RTV%201%20Vojvodina.xml" xmltv_id="RTV 1 Vojvodina">RTV 1 Vojvodina</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Skat%20TV.xml" xmltv_id="Skat TV">Skat TV</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Sport%20Plus%20HD.xml" xmltv_id="Sport Plus HD">Sport Plus HD</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Super%207.xml" xmltv_id="Super 7">Super 7</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=TCM.xml" xmltv_id="TCM">TCM</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=The%20Voice.xml" xmltv_id="The Voice">The Voice</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Tiankov%20TV.xml" xmltv_id="Tiankov TV">Tiankov TV</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=TLC.xml" xmltv_id="TLC">TLC</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=TV%207.xml" xmltv_id="TV 7">TV 7</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=TV%20Evropa.xml" xmltv_id="TV Evropa">TV Evropa</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=TV%20Plus.xml" xmltv_id="TV Plus">TV Plus</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Viasat%20Explore.xml" xmltv_id="Viasat Explore">Viasat Explore</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Viasat%20History.xml" xmltv_id="Viasat History">Viasat History</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Viasat%20Nature.xml" xmltv_id="Viasat Nature">Viasat Nature</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=24%20Vesti.xml" xmltv_id="24 Vesti">24 Vesti</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Alfa%20MK.xml" xmltv_id="Alfa MK">Alfa MK</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Alsat%20M.xml" xmltv_id="Alsat M">Alsat M</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=ERA.xml" xmltv_id="ERA">ERA</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Kanal%205.xml" xmltv_id="Kanal 5">Kanal 5</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Kanal%205+.xml" xmltv_id="Kanal 5+">Kanal 5+</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=MRT1.xml" xmltv_id="MRT1">MRT1</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=MRT2.xml" xmltv_id="MRT2">MRT2</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=MRT3.xml" xmltv_id="MRT3">MRT3</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Nasa%20TV.xml" xmltv_id="Nasa TV">Nasa TV</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Sitel.xml" xmltv_id="Sitel">Sitel</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Sitel%203.xml" xmltv_id="Sitel 3">Sitel 3</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Telma.xml" xmltv_id="Telma">Telma</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=TV%20Sonce.xml" xmltv_id="TV Sonce">TV Sonce</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=A1%20Report.xml" xmltv_id="A1 Report">A1 Report</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=ABC%20News.xml" xmltv_id="ABC News">ABC News</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Alsat-M.xml" xmltv_id="Alsat-M">Alsat-M</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Bang%20Bang.xml" xmltv_id="Bang Bang">Bang Bang</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=BCTV%20Europe.xml" xmltv_id="BCTV Europe">BCTV Europe</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Cufo%20TV.xml" xmltv_id="Cufo TV">Cufo TV</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Digi%20Gold.xml" xmltv_id="Digi Gold">Digi Gold</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Era%20TV.xml" xmltv_id="Era TV">Era TV</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=EXPLORER%20histori.xml" xmltv_id="EXPLORER histori">EXPLORER histori</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=EXPLORER%20natyra.xml" xmltv_id="EXPLORER natyra">EXPLORER natyra</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=EXPLORER%20shkence.xml" xmltv_id="EXPLORER shkence">EXPLORER shkence</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Film%20Aksion.xml" xmltv_id="Film Aksion">Film Aksion</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Film%20Autor.xml" xmltv_id="Film Autor">Film Autor</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Film%20Drame.xml" xmltv_id="Film Drame">Film Drame</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Film%20Hits.xml" xmltv_id="Film Hits">Film Hits</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Film%20Komedi.xml" xmltv_id="Film Komedi">Film Komedi</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Film%20Thriller.xml" xmltv_id="Film Thriller">Film Thriller</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Film%20Nje%20HD.xml" xmltv_id="Film Nje HD">Film Nje HD</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Film%20Dy%20HD.xml" xmltv_id="Film Dy HD">Film Dy HD</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=First%20TV.xml" xmltv_id="First TV">First TV</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Folklorit.xml" xmltv_id="Folklorit">Folklorit</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Junior%20TV.xml" xmltv_id="Junior TV">Junior TV</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Klan%20Kosova.xml" xmltv_id="Klan Kosova">Klan Kosova</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Klan%20TV%20HD.xml" xmltv_id="Klan TV HD">Klan TV HD</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=KTV.xml" xmltv_id="KTV">KTV</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=MAD%20TV.xml" xmltv_id="MAD TV">MAD TV</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Music%20AL.xml" xmltv_id="Music AL">Music AL</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=My%20Music.xml" xmltv_id="My Music">My Music</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=News%2024.xml" xmltv_id="News 24">News 24</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Ora%20News.xml" xmltv_id="Ora News">Ora News</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Plus%20HD.xml" xmltv_id="Plus HD">Plus HD</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=RTV%2021.xml" xmltv_id="RTV 21">RTV 21</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Scan%20TV.xml" xmltv_id="Scan TV">Scan TV</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Supersport%201.xml" xmltv_id="Supersport 1">Supersport 1</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Supersport%202.xml" xmltv_id="Supersport 2">Supersport 2</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Supersport%203.xml" xmltv_id="Supersport 3">Supersport 3</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Supersport%204.xml" xmltv_id="Supersport 4">Supersport 4</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Supersport%205.xml" xmltv_id="Supersport 5">Supersport 5</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Supersport%206.xml" xmltv_id="Supersport 6">Supersport 6</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Stinet.xml" xmltv_id="Stinet">Stinet</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=STV%20Folk.xml" xmltv_id="STV Folk">STV Folk</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=SuperSonic%20TV.xml" xmltv_id="SuperSonic TV">SuperSonic TV</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=T%20HD.xml" xmltv_id="T HD">T HD</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Top%20Channel%20HD.xml" xmltv_id="Top Channel HD">Top Channel HD</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Top%20News.xml" xmltv_id="Top News">Top News</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=3%20Plus.xml" xmltv_id="3 Plus">3 Plus</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=BBF.xml" xmltv_id="BBF">BBF</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=ERA%20TV.xml" xmltv_id="ERA TV">ERA TV</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Kanali%207.xml" xmltv_id="Kanali 7">Kanali 7</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Luxe%20TV.xml" xmltv_id="Luxe TV">Luxe TV</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Muse.xml" xmltv_id="Muse">Muse</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=RTV%2021%20Plus.xml" xmltv_id="RTV 21 Plus">RTV 21 Plus</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Tring%20Comedy.xml" xmltv_id="Tring Comedy">Tring Comedy</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Tring%20Fantasy.xml" xmltv_id="Tring Fantasy">Tring Fantasy</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Tring%20History.xml" xmltv_id="Tring History">Tring History</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Tring%20Super.xml" xmltv_id="Tring Super">Tring Super</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Vizion%20Plus.xml" xmltv_id="Vizion Plus">Vizion Plus</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=3+.xml" xmltv_id="3+">3+</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=3sat.xml" xmltv_id="3sat">3sat</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=ANIXE.xml" xmltv_id="ANIXE">ANIXE</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=ARTE.xml" xmltv_id="ARTE">ARTE</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=ATV%20II.xml" xmltv_id="ATV II">ATV II</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=ATV.xml" xmltv_id="ATV">ATV</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=BBC%20World%20News.xml" xmltv_id="BBC World News">BBC World News</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=BR.xml" xmltv_id="BR">BR</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=CNN%20International.xml" xmltv_id="CNN International">CNN International</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=COMEDY%20CENTRAL.xml" xmltv_id="COMEDY CENTRAL">COMEDY CENTRAL</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Das%20Erste.xml" xmltv_id="Das Erste">Das Erste</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=DELUXE%20MUSIC.xml" xmltv_id="DELUXE MUSIC">DELUXE MUSIC</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=DMAX.xml" xmltv_id="DMAX">DMAX</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=DW%20(Europe).xml" xmltv_id="DW (Europe)">DW (Europe)</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Einsfestival.xml" xmltv_id="Einsfestival">Einsfestival</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=EinsPlus.xml" xmltv_id="EinsPlus">EinsPlus</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=Eurosport.xml" xmltv_id="Eurosport">Eurosport</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=EXTREME%20SPORTS.xml" xmltv_id="EXTREME SPORTS">EXTREME SPORTS</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=FOX.xml" xmltv_id="FOX">FOX</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=HR.xml" xmltv_id="HR">HR</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=kabel%20eins.xml" xmltv_id="kabel eins">kabel eins</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=MDR.xml" xmltv_id="MDR">MDR</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=N24.xml" xmltv_id="N24">N24</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=NAT%20GEO%20WILD.xml" xmltv_id="NAT GEO WILD">NAT GEO WILD</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=NDR.xml" xmltv_id="NDR">NDR</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=n-tv.xml" xmltv_id="n-tv">n-tv</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=ORF%202.xml" xmltv_id="ORF 2">ORF 2</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=ORF%20eins.xml" xmltv_id="ORF eins">ORF eins</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=ORF%20III.xml" xmltv_id="ORF III">ORF III</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=ORF%20SPORT%20+.xml" xmltv_id="ORF SPORT +">ORF SPORT +</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=PHOENIX.xml" xmltv_id="PHOENIX">PHOENIX</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=ProSieben.xml" xmltv_id="ProSieben">ProSieben</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=RBB.xml" xmltv_id="RBB">RBB</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=RiC.xml" xmltv_id="RiC">RiC</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=RTL%20II.xml" xmltv_id="RTL II">RTL II</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=RTL%20NITRO.xml" xmltv_id="RTL NITRO">RTL NITRO</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=RTL.xml" xmltv_id="RTL">RTL</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=SAT.1%20Gold.xml" xmltv_id="SAT.1 Gold">SAT.1 Gold</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=SAT.1.xml" xmltv_id="SAT.1">SAT.1</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=ServusTV.xml" xmltv_id="ServusTV">ServusTV</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=sixx.xml" xmltv_id="sixx">sixx</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=SPORT1.xml" xmltv_id="SPORT1">SPORT1</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=SPORT1+.xml" xmltv_id="SPORT1+">SPORT1+</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=SUPER%20RTL.xml" xmltv_id="SUPER RTL">SUPER RTL</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=tagesschau%2024.xml" xmltv_id="tagesschau 24">tagesschau 24</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=TELE%205.xml" xmltv_id="TELE 5">TELE 5</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=VOX.xml" xmltv_id="VOX">VOX</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=WDR.xml" xmltv_id="WDR">WDR</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=ZDF.xml" xmltv_id="ZDF">ZDF</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=ZDFinfo.xml" xmltv_id="ZDFinfo">ZDFinfo</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=ZDFkultur.xml" xmltv_id="ZDFkultur">ZDFkultur</channel>
+    <channel update="i" site="tv.etcc.bg" site_id="epg/serviceepg.php?service=ZDFneo.xml" xmltv_id="ZDFneo">ZDFneo</channel>
+  </channels>
+</site>

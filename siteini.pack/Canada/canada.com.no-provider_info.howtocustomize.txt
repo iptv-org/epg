@@ -1,0 +1,51 @@
+canada.com.no-provider_info.howtocustomize.txt  version 3    Januari 2015
+
+How to customize canada.com.no-provider.ini revision 2:
+
+A. Introduction:
+The online tvlisting of the 'new' site canada.com is special in a few ways and therefore the siteini file to grab it with WebGrab+Plus is also special and rather different.
+
+The most important difference are:
+A1. The tvguide start and stop times are not available on the index_page! Instead they are given on the showdetail page. Grabbing these times from showdetail pages was not supported by WG++ until version 1.1.1/54. This feature is added and available in any version later than 1.1.1/55.10,  but with the restriction that incremental grabbing is not possible due to the nature of it (it needs the times for the update decision process)
+A2. The siteini file canada.com.no-provider.ini needs customization. For that it needs two id  values; a session_id , that must be copied from a cookie, and a lineup_id that can be copied from a browser response on a special url.
+A3. The following creates a customized canada.com siteini file for postal code L9H1N3 and provider Bell Fibe TV-Toronto as an example.
+
+B. Get the session_id:
+B1. With your browser go to http://www.canada.com/entertainment/television/tv-listings/index.html#
+B2. Enter your postal code e.g. L9H1N3
+B3. Choose your provider e.g. Bell Fibe TV-Toronto, ON - Digital
+B4. Click 'Continue', that will bring you the tv listing for your postal code.
+B5. Click 'Personalization', Add or remove to get the channels you want. Save the selection!
+B6. Save the cookies in the WG++ home folder as canada.com_cookies.txt
+(see online documentation .. how to do that)
+B7. Add a dummy channel to WebGrab++.config.xml  : <channel update="i" site="canada.com.no-provider" site_id="" xmltv_id="dummy">dummy</channel>
+B8. Run WG++, this will create a new cookie file canada.com_cookies.txt in which only the relevant cookies are left.
+B9. Open this cookie file and locate the line with the id , it will look like this :  
+	www.canada.com	TRUE	/	FALSE	1507312020	id	60B98B964B06A8263C3366B7E3792953
+B10. Copy the id value , 60B98B964B06A8263C3366B7E3792953 , in the example.
+B11. Rename canada.com.no-provider.ini to canada.com.L9H1N3.ini (of course instead of L9H1N3 use your postal code) Open this file canada.com.L9H1N3.ini in a text editor, e.g. notepad or notepad++
+B12. Replace #session_id# with the id value copied in B10. Be sure to replace both instances, there is one in the line that starts with url_index and another that starts with index_url_show !!
+
+C. Get the lineup_id:
+C1. In your browser go to http://tvmds.tvpassport.com/snippet/white_label/php/session.php?mode=g&session_id=#session_id# 8E0378902599B454E669028E211ACA3D. 
+Make sure to replace #session_id# with the value of the session_id found in B10 !!
+C2. Your browser should respond with something like this: {"callback":"jQuery111102747483376103626_1420548477680","lineup_id":"36625D","tz":"America\/Toronto","_":"1420548477683","session_id":"60B98B964B06A8263C3366B7E3792953"}
+C3. Copy the "lineup_id" value: 36625D in this example.
+C4. Replace #lineup_id# with the value found in 14 in canada.com.L9H1N3.ini
+
+D. Create the channellist file:
+D1. In canada.com.L9H1N3.ini remove the comment character * at the beginning of all the lines near the end of the file starting with  *index_site_channel.scrub upto the line *end_scope
+D2. Save canada.com.L9H1N3.ini
+D3. Change the channel entry in the webgrab++.config.xml :
+<channel update="i" site="canada.com.no-provider" site_id="" xmltv_id="dummy">dummy</channel> into
+<channel update="i" site="canada.com.L9H1N3" site_id="" xmltv_id="dummy">dummy</channel>
+(of course instead of L9H1N3 use your postal code)
+D4. Run WG++, this will create a channel list file canada.com.L9H1N3.channels.xml with all the channels selected in B5.
+D5. Undo the changes made in step D1 and save the changes.
+
+Done. Next you need to configure WG++ in the regular way.
+If you are not familiar with configuring WG++ , follow the instructions on the website, http://www.webgrabplus.com/documentation/configuration.
+
+The example files canada.com.L9H1N3.ini and canada.com.L9H1N3.channels.xml can be found on  http://webgrabplus.com/epg-channels in the Canada section
+
+enjoy, Jan van Straaten

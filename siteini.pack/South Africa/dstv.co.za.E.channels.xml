@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<site generator-info-name="WebGrab+Plus/w MDB &amp; REX Postprocess -- version V2.1.11.1 -- Jan van Straaten" site="dstv.co.za">
+  <channels>
+    <channel update="i" site="dstv.co.za.E" site_id="HDT" xmltv_id="M-Net HD">M-Net HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="VAM" xmltv_id="1 Magic HD">1 Magic HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="M1D" xmltv_id="M-Net Movies Premier HD">M-Net Movies Premier HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="MCH" xmltv_id="M-Net Movies Smile HD">M-Net Movies Smile HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="MAP" xmltv_id="M-Net Movies Action + HD">M-Net Movies Action + HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="SDN" xmltv_id="Sundance TV HD">Sundance TV HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="MDH" xmltv_id="M-Net Movies Action">M-Net Movies Action</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="S30" xmltv_id="M-Net Movies All Stars HD">M-Net Movies All Stars HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="SUH" xmltv_id="Studio Universal HD">Studio Universal HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="MFH" xmltv_id="M-Net City HD">M-Net City HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="V30" xmltv_id="VUZU HD">VUZU HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="UHD" xmltv_id="Universal TV HD">Universal TV HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="TEL" xmltv_id="TeleMundo English">TeleMundo English</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="B23" xmltv_id="BBC First HD">BBC First HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="B26" xmltv_id="BBC Brit HD">BBC Brit HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="DHD" xmltv_id="Discovery Channel HD">Discovery Channel HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="CC7" xmltv_id="Comedy Central">Comedy Central</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="ITH" xmltv_id="ITV Choice HD">ITV Choice HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="E26" xmltv_id="E! Entertainment HD">E! Entertainment HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="FHD" xmltv_id="FOX HD">FOX HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="FOC" xmltv_id="FOX Life">FOX Life</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="M30" xmltv_id="Ginx eSports HD">Ginx eSports HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="BHD" xmltv_id="BET">BET</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="MTV" xmltv_id="MTV">MTV</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="LTE" xmltv_id="Lifetime Entertainment">Lifetime Entertainment</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="RTK" xmltv_id="CBS Reality">CBS Reality</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="T32" xmltv_id="Discovery TLC HD">Discovery TLC HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="F32" xmltv_id="Discovery Family HD">Discovery Family HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="TND" xmltv_id="TNT Africa HD">TNT Africa HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="E03" xmltv_id="eMovies HD">eMovies HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="MZE" xmltv_id="M-Net Movies Zone HD">M-Net Movies Zone HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="E05" xmltv_id="eMovies Extra HD">eMovies Extra HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="EV1" xmltv_id="EVA">EVA</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="KHD" xmltv_id="Kyk NET HD">Kyk NET HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="K30" xmltv_id="Kyk NET &amp; Kie HD">Kyk NET &amp; Kie HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="KNM" xmltv_id="KyKNet Nou">KyKNet Nou</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="VHD" xmltv_id="VIA HD">VIA HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="IA9" xmltv_id="Africa Magic Epic">Africa Magic Epic</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="AMM" xmltv_id="Africa Magic Urban">Africa Magic Urban</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="AFM" xmltv_id="Africa Magic Family">Africa Magic Family</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="RTA" xmltv_id="Real Time">Real Time</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="SA4" xmltv_id="SABC Encore">SABC Encore</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="MOH" xmltv_id="Moja Love HD">Moja Love HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="MOS" xmltv_id="Moja Love">Moja Love</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="MZH" xmltv_id="Mzansi Magic HD">Mzansi Magic HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="W30" xmltv_id="Mzansi Wethu HD">Mzansi Wethu HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="MZB" xmltv_id="Mzansi Bioskop">Mzansi Bioskop</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="M11" xmltv_id="Zee World HD">Zee World HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="H26" xmltv_id="Star Life HD">Star Life HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="19K" xmltv_id="ROK">ROK</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="I26" xmltv_id="Crime &amp; Investigation Network HD">Crime &amp; Investigation Network HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="I32" xmltv_id="Discovery ID HD">Discovery ID HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="SHP" xmltv_id="TV Mall">TV Mall</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="BBL" xmltv_id="BBC Lifestyle">BBC Lifestyle</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="F26" xmltv_id="Food Network HD">Food Network HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="HCH" xmltv_id="The Home Channel">The Home Channel</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="FTV" xmltv_id="Fashion One">Fashion One</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="TRV" xmltv_id="Travel Channel">Travel Channel</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="WEA" xmltv_id="Peoples Weather">Peoples Weather</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="NA8" xmltv_id="National Geographic Channel">National Geographic Channel</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="NGW" xmltv_id="NatGeo Wild">NatGeo Wild</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="ETH" xmltv_id="BBC Earth HD">BBC Earth HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="H23" xmltv_id="The History Channel HD">The History Channel HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="ITV" xmltv_id="IGNITION">IGNITION</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="SPI" xmltv_id="Spice TV">Spice TV</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="B1C" xmltv_id="SABC 1 HD">SABC 1 HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="B2C" xmltv_id="SABC 2 HD">SABC 2 HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="B3C" xmltv_id="SABC 3 HD">SABC 3 HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="HDE" xmltv_id="e.TV HD">e.TV HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="E01" xmltv_id="eTV Extra HD">eTV Extra HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="B24" xmltv_id="Explora DAL">Explora DAL</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="HSI" xmltv_id="Big Brother Naija">Big Brother Naija</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="SSZ" xmltv_id="BLITZ HD">BLITZ HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="SSH" xmltv_id="SuperSport HD 1">SuperSport HD 1</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="SH2" xmltv_id="SuperSport HD 2">SuperSport HD 2</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="TS2" xmltv_id="SuperSport HD 3">SuperSport HD 3</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="SH4" xmltv_id="SuperSport HD 4">SuperSport HD 4</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="HD5" xmltv_id="SuperSport HD 5">SuperSport HD 5</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="HD6" xmltv_id="SuperSport HD 6">SuperSport HD 6</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="HD7" xmltv_id="SuperSport HD 7">SuperSport HD 7</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="MSH" xmltv_id="SuperSport HD 8">SuperSport HD 8</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="9HD" xmltv_id="SuperSport HD 9">SuperSport HD 9</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="34S" xmltv_id="SuperSport HD 10">SuperSport HD 10</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="A11" xmltv_id="SuperSport 11 HD">SuperSport 11 HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="12H" xmltv_id="SuperSport HD 12">SuperSport HD 12</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="XHD" xmltv_id="SuperSport Maximo HD">SuperSport Maximo HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="IGN" xmltv_id="TellyTrack">TellyTrack</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="STV" xmltv_id="Soweto TV">Soweto TV</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="TVB" xmltv_id="Bay TV">Bay TV</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="1KZ" xmltv_id="1 KZN">1 KZN</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="TSH" xmltv_id="Tshwane TV">Tshwane TV</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="CTV" xmltv_id="Cape Town TV">Cape Town TV</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="GAU" xmltv_id="GauTV">GauTV</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="LTV" xmltv_id="Lesotho TV">Lesotho TV</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="NTA" xmltv_id="NTA I">NTA I</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="CHD" xmltv_id="Cartoon Network HD">Cartoon Network HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="CEE" xmltv_id="Boomerang">Boomerang</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="SO8" xmltv_id="Disney Channel">Disney Channel</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="DXD" xmltv_id="Disney Channel XD">Disney Channel XD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="NIK" xmltv_id="Nickelodeon">Nickelodeon</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="CBB" xmltv_id="Cbeebies">Cbeebies</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="NJR" xmltv_id="NickJr">NickJr</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="NTO" xmltv_id="NickTOONS">NickTOONS</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="DPH" xmltv_id="Disney Junior">Disney Junior</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="JJM" xmltv_id="Jim Jam">Jim Jam</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="E06" xmltv_id="eToonz">eToonz</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="DW6" xmltv_id="PBS Kids">PBS Kids</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="E11" xmltv_id="Mindset">Mindset</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="OHD" xmltv_id="Channel O HD">Channel O HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="MZM" xmltv_id="Mzansi Music">Mzansi Music</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="CSN" xmltv_id="MTV base">MTV base</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="T26" xmltv_id="TRACE URBAN HD">TRACE URBAN HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="8GT" xmltv_id="TRACE Africa">TRACE Africa</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="MM2" xmltv_id="Sound City">Sound City</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="GOS" xmltv_id="One Gospel">One Gospel</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="DUM" xmltv_id="Dumisa">Dumisa</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="TBK" xmltv_id="FAITH">FAITH</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="DW5" xmltv_id="Day Star">Day Star</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="TB1" xmltv_id="TBN">TBN</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="EMM" xmltv_id="Emmanuel TV">Emmanuel TV</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="BB8" xmltv_id="BBC World News">BBC World News</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="CNN" xmltv_id="CNN International HD">CNN International HD</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="SKY" xmltv_id="Sky News">Sky News</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="HD2" xmltv_id="eNews Channel Africa">eNews Channel Africa</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="SAN" xmltv_id="SABC News">SABC News</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="NZD" xmltv_id="Newzroom Afrika">Newzroom Afrika</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="ALJ" xmltv_id="Al Jazeera">Al Jazeera</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="EVE" xmltv_id="Russia Today">Russia Today</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="PAR" xmltv_id="Parliamentary Service">Parliamentary Service</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="CC9" xmltv_id="CGTN News">CGTN News</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="CN8" xmltv_id="CNBC Africa">CNBC Africa</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="BLO" xmltv_id="Bloomberg Television">Bloomberg Television</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="ABC" xmltv_id="Business Day">Business Day</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="DEE" xmltv_id="NDTV 24x7">NDTV 24x7</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="RAI" xmltv_id="RAI International">RAI International</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="BVN" xmltv_id="Beste Van Nederlands">Beste Van Nederlands</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="RTP" xmltv_id="RTPI">RTPI</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="TVK" xmltv_id="TV5 Monde Afrique">TV5 Monde Afrique</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="DW4" xmltv_id="Deutsche Welle">Deutsche Welle</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="SHO" xmltv_id="CCTV 4">CCTV 4</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="SON" xmltv_id="SET Asia">SET Asia</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="B4K" xmltv_id="B4U Movies">B4U Movies</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="ZEE" xmltv_id="ZeeTV">ZeeTV</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="STP" xmltv_id="Star Plus">Star Plus</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="DOO" xmltv_id="Sun TV">Sun TV</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="STJ" xmltv_id="Star Vijay">Star Vijay</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="COL" xmltv_id="Colors">Colors</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="SMK" xmltv_id="SET Max">SET Max</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="TEP" xmltv_id="Telemundo (P)">Telemundo (P)</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="EP7" xmltv_id="EVA (P)">EVA (P)</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="SIK" xmltv_id="SIC Internacional (P)">SIC Internacional (P)</channel>
+    <channel update="i" site="dstv.co.za.E" site_id="MN1" xmltv_id="M-Net Plus 1 HD">M-Net Plus 1 HD</channel>
+  </channels>
+</site>

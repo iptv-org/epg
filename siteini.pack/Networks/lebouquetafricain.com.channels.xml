@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<site generator-info-name="WebGrab+Plus version 1.1.0 -- Jan van Straaten" site="lebouquetafricain.com">
+  <channels>
+    <!--hand edited-->
+    <channel update="i" site="lebouquetafricain.com" site_id="ortm" xmltv_id="ortm-mali">ortm-mali</channel>
+ <!--  <channel update="" site="lebouquetafricain.com" site_id="2stv" xmltv_id="2stv-senegal">2stv-senegal</channel> -->
+    <channel update="i" site="lebouquetafricain.com" site_id="crtv" xmltv_id="crtv-cameroun">crtv-cameroun</channel>
+    <channel update="i" site="lebouquetafricain.com" site_id="rts1" xmltv_id="rts1-senegal">rts1-senegal</channel>
+    <channel update="i" site="lebouquetafricain.com" site_id="tele" xmltv_id="tele-congo">tele-congo</channel>
+    <channel update="i" site="lebouquetafricain.com" site_id="tci" xmltv_id="rti-cote-ivoire">rti-cote-ivoire</channel>
+    <channel update="i" site="lebouquetafricain.com" site_id="rtb" xmltv_id="rtb-burkina-faso">rtb-burkina-faso</channel>
+  <!--  <channel update="" site="lebouquetafricain.com" site_id="ortb" xmltv_id="ortb-benin">ortb-benin</channel>-->
+    <channel update="i" site="lebouquetafricain.com" site_id="canal-2-international" xmltv_id="canal-2-international-cameroun">canal-2-international-cameroun</channel>
+    <channel update="i" site="lebouquetafricain.com" site_id="stv2" xmltv_id="stv2-cameroun">stv2-cameroun</channel>
+    <channel update="i" site="lebouquetafricain.com" site_id="africable" xmltv_id="africable-television">africable-television</channel>
+    <channel update="i" site="lebouquetafricain.com" site_id="equinoxe" xmltv_id="equinoxe-cameroun">equinoxe-cameroun</channel>
+    <channel update="i" site="lebouquetafricain.com" site_id="lcf" xmltv_id="lcf-togo">lcf-togo</channel>
+    <channel update="i" site="lebouquetafricain.com" site_id="rtg1" xmltv_id="rtg1-gabon">rtg1-gabon</channel>
+    <channel update="i" site="lebouquetafricain.com" site_id="rtg" xmltv_id="rtg-guinee">rtg-guinee</channel>
+    <channel update="i" site="lebouquetafricain.com" site_id="rtnc" xmltv_id="rtnc-congo">rtnc-congo</channel>
+    <channel update="i" site="lebouquetafricain.com" site_id="tfm" xmltv_id="tfm-senegal">tfm-senegal</channel>
+  <!-- <channel update="" site="lebouquetafricain.com" site_id="trace" xmltv_id="trace-africa">trace-africa</channel>-->
+  </channels>
+</site>

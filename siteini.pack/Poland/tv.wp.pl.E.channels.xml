@@ -1,0 +1,610 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<site generator-info-name="WebGrab+Plus/w MDB &amp; REX Postprocess -- version V2.1.11.1 -- Jan van Straaten" site="tv.wp.pl">
+  <channels>
+    <channel update="i" site="tv.wp.pl.E" site_id="756" xmltv_id="WP">WP</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="1" xmltv_id="TVP 1">TVP 1</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="2" xmltv_id="TVP 2">TVP 2</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="5" xmltv_id="POLSAT">POLSAT</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="17" xmltv_id="TVN">TVN</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="7" xmltv_id="TVN 7">TVN 7</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="18" xmltv_id="TV 4">TV 4</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="3" xmltv_id="TVP Polonia">TVP Polonia</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="268" xmltv_id="TV 6">TV 6</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="11" xmltv_id="TV Puls">TV Puls</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="343" xmltv_id="TVP Kultura">TVP Kultura</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="280" xmltv_id="PULS 2">PULS 2</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="6" xmltv_id="POLSAT 2">POLSAT 2</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="390" xmltv_id="TVP Historia">TVP Historia</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="663" xmltv_id="HISTORY2">HISTORY2</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="31" xmltv_id="TVP Info">TVP Info</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="151" xmltv_id="TVN 24">TVN 24</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="397" xmltv_id="TVN 24 Biznes i Świat">TVN 24 Biznes i Świat</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="431" xmltv_id="POLSAT News">POLSAT News</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="334" xmltv_id="POLSAT News 2">POLSAT News 2</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="333" xmltv_id="TVN Style">TVN Style</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="85" xmltv_id="Ale kino+">Ale kino+</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="497" xmltv_id="TVP Seriale">TVP Seriale</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="240" xmltv_id="TVN Fabuła">TVN Fabuła</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="4" xmltv_id="Kino Polska">Kino Polska</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="147" xmltv_id="AXN">AXN</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="188" xmltv_id="Euronews">Euronews</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="720" xmltv_id="ZOOM TV">ZOOM TV</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="708" xmltv_id="POLSAT 1">POLSAT 1</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="725" xmltv_id="Super Polsat">Super Polsat</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="640" xmltv_id="Fokus TV">Fokus TV</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="95" xmltv_id="TLC">TLC</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="76" xmltv_id="National Geographic">National Geographic</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="392" xmltv_id="National Geographic Wild">National Geographic Wild</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="513" xmltv_id="Paramount Channel HD">Paramount Channel HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="403" xmltv_id="Kino TV">Kino TV</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="387" xmltv_id="TNT">TNT</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="382" xmltv_id="FOX Comedy">FOX Comedy</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="370" xmltv_id="Comedy Central">Comedy Central</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="359" xmltv_id="Comedy Central Family">Comedy Central Family</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="631" xmltv_id="FilmBox Arthouse">FilmBox Arthouse</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="36" xmltv_id="Cinemax">Cinemax</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="386" xmltv_id="Cartoon Network">Cartoon Network</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="81" xmltv_id="MiniMini+">MiniMini+</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="495" xmltv_id="FOX">FOX</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="528" xmltv_id="AXN Spin">AXN Spin</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="367" xmltv_id="AXN Black">AXN Black</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="366" xmltv_id="AXN White">AXN White</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="294" xmltv_id="FilmBox Action">FilmBox Action</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="406" xmltv_id="FilmBox Extra HD">FilmBox Extra HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="438" xmltv_id="FilmBox Family">FilmBox Family</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="405" xmltv_id="FilmBox Premium HD">FilmBox Premium HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="14" xmltv_id="HBO">HBO</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="12" xmltv_id="HBO2">HBO2</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="385" xmltv_id="HBO3">HBO3</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="13" xmltv_id="CANAL+">CANAL+</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="559" xmltv_id="CANAL+ Seriale">CANAL+ Seriale</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="561" xmltv_id="CANAL+ 1">CANAL+ 1</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="86" xmltv_id="CANAL+ Film">CANAL+ Film</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="560" xmltv_id="CANAL+ Family">CANAL+ Family</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="679" xmltv_id="CANAL+ DOKUMENT">CANAL+ DOKUMENT</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="374" xmltv_id="TVP Sport">TVP Sport</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="39" xmltv_id="Eurosport 2">Eurosport 2</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="87" xmltv_id="CANAL+ Sport">CANAL+ Sport</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="678" xmltv_id="CANAL+ Sport 2">CANAL+ Sport 2</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="686" xmltv_id="Eleven Sports 1">Eleven Sports 1</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="687" xmltv_id="Eleven Sports 2">Eleven Sports 2</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="748" xmltv_id="Eleven Sports 3">Eleven Sports 3</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="808" xmltv_id="Eleven Sports 4">Eleven Sports 4</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="42" xmltv_id="Eurosport 1">Eurosport 1</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="279" xmltv_id="FightBox">FightBox</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="120" xmltv_id="POLSAT Sport">POLSAT Sport</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="628" xmltv_id="Motowizja">Motowizja</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="117" xmltv_id="Automoto la chaîne">Automoto la chaîne</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="378" xmltv_id="nSport+">nSport+</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="551" xmltv_id="Ginx eSports TV">Ginx eSports TV</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="620" xmltv_id="DocuBox HD">DocuBox HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="92" xmltv_id="MTV Music">MTV Music</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="10" xmltv_id="MTV Polska">MTV Polska</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="464" xmltv_id="Eska TV">Eska TV</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="782" xmltv_id="Eska TV Extra">Eska TV Extra</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="337" xmltv_id="4FUN.TV">4FUN.TV</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="480" xmltv_id="4FUN GOLD">4FUN GOLD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="139" xmltv_id="4FUN DANCE">4FUN DANCE</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="732" xmltv_id="Eska Rock TV">Eska Rock TV</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="759" xmltv_id="Music Box">Music Box</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="657" xmltv_id="Adventure">Adventure</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="716" xmltv_id="POLSAT Viasat Explore">POLSAT Viasat Explore</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="157" xmltv_id="Arte">Arte</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="512" xmltv_id="Arte HD">Arte HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="154" xmltv_id="3SAT">3SAT</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="492" xmltv_id="ATM Rozrywka">ATM Rozrywka</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="112" xmltv_id="AMC">AMC</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="369" xmltv_id="Kuchnia+">Kuchnia+</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="394" xmltv_id="HGTV">HGTV</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="440" xmltv_id="Domo+">Domo+</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="443" xmltv_id="POLSAT Café">POLSAT Café</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="145" xmltv_id="TVN Turbo">TVN Turbo</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="90" xmltv_id="Fashion TV">Fashion TV</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="442" xmltv_id="POLSAT Play">POLSAT Play</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="410" xmltv_id="BBC Lifestyle">BBC Lifestyle</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="619" xmltv_id="Active Family">Active Family</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="630" xmltv_id="TVP ABC">TVP ABC</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="706" xmltv_id="Top Kids">Top Kids</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="810" xmltv_id="wPolsce.pl">wPolsce.pl</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="160" xmltv_id="BBC World News">BBC World News</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="263" xmltv_id="Kino Polska Muzyka">Kino Polska Muzyka</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="236" xmltv_id="BBC First">BBC First</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="407" xmltv_id="BBC Brit">BBC Brit</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="408" xmltv_id="BBC CBeebies">BBC CBeebies</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="409" xmltv_id="BBC Earth">BBC Earth</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="400" xmltv_id="Da Vinci">Da Vinci</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="472" xmltv_id="Animal Planet HD">Animal Planet HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="533" xmltv_id="English Club TV">English Club TV</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="461" xmltv_id="BabyFirstTV">BabyFirstTV</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="591" xmltv_id="DocuBox">DocuBox</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="136" xmltv_id="CNBC">CNBC</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="177" xmltv_id="CNN">CNN</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="373" xmltv_id="France 24">France 24</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="581" xmltv_id="TV Republika">TV Republika</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="705" xmltv_id="13.tv">13.tv</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="746" xmltv_id="13.tv 3D">13.tv 3D</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="75" xmltv_id="13 Ulica">13 Ulica</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="152" xmltv_id="13th Street">13th Street</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="805" xmltv_id="2x2">2x2</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="621" xmltv_id="360TuneBox">360TuneBox</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="155" xmltv_id="ARD-alpha">ARD-alpha</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="158" xmltv_id="ATV">ATV</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="295" xmltv_id="Adult Channel">Adult Channel</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="718" xmltv_id="Amazing TV">Amazing TV</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="149" xmltv_id="Arirang TV">Arirang TV</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="486" xmltv_id="Baby TV">Baby TV</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="161" xmltv_id="Beate-Uhse.TV">Beate-Uhse.TV</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="319" xmltv_id="Belgia - TV1">Belgia - TV1</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="507" xmltv_id="Belsat TV">Belsat TV</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="446" xmltv_id="Blue Hustler">Blue Hustler</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="356" xmltv_id="Boomerang">Boomerang</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="451" xmltv_id="Brazzers TV Europe">Brazzers TV Europe</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="235" xmltv_id="Stingray CMusic">Stingray CMusic</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="829" xmltv_id="CANAL+ 4K Ultra HD">CANAL+ 4K Ultra HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="261" xmltv_id="Viasat History HD/Viasat Nature HD">Viasat History HD/Viasat Nature HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="681" xmltv_id="CANAL+ DOKUMENT HD">CANAL+ DOKUMENT HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="174" xmltv_id="CI POLSAT">CI POLSAT</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="683" xmltv_id="CANAL+ NOW">CANAL+ NOW</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="78" xmltv_id="CBS Action">CBS Action</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="80" xmltv_id="CBS Europa">CBS Europa</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="84" xmltv_id="CBS Reality">CBS Reality</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="517" xmltv_id="CCTV News">CCTV News</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="109" xmltv_id="CT 1">CT 1</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="110" xmltv_id="CT 2">CT 2</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="72" xmltv_id="Cartoon Network/TNT">Cartoon Network/TNT</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="415" xmltv_id="Channel One Russia">Channel One Russia</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="358" xmltv_id="Cinemax2">Cinemax2</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="501" xmltv_id="Czwórka Polskie Radio">Czwórka Polskie Radio</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="518" xmltv_id="Czwórka Polskie Radio HD">Czwórka Polskie Radio HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="450" xmltv_id="TV Trwam">TV Trwam</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="320" xmltv_id="Bibel TV">Bibel TV</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="398" xmltv_id="LOVE">LOVE</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="181" xmltv_id="DR 1">DR 1</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="182" xmltv_id="DR 2">DR 2</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="97" xmltv_id="DTX">DTX</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="184" xmltv_id="DW">DW</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="131" xmltv_id="Bloomberg (ang.)">Bloomberg (ang.)</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="769" xmltv_id="DW - DE">DW - DE</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="156" xmltv_id="Das Erste">Das Erste</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="641" xmltv_id="Disco Polo Music">Disco Polo Music</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="471" xmltv_id="Deutsches Musik Fernsehen">Deutsches Musik Fernsehen</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="67" xmltv_id="Discovery Channel">Discovery Channel</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="376" xmltv_id="Discovery Historia">Discovery Historia</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="717" xmltv_id="POLSAT Viasat History">POLSAT Viasat History</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="63" xmltv_id="Discovery Life">Discovery Life</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="763" xmltv_id="Discovery Life HD">Discovery Life HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="96" xmltv_id="Discovery Science">Discovery Science</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="414" xmltv_id="POLSAT JimJam">POLSAT JimJam</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="33" xmltv_id="Disney Junior">Disney Junior</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="346" xmltv_id="Disney Channel">Disney Channel</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="658" xmltv_id="Adventure HD">Adventure HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="74" xmltv_id="Disney XD">Disney XD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="548" xmltv_id="Food Network">Food Network</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="388" xmltv_id="E! Entertainment">E! Entertainment</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="583" xmltv_id="E! Entertainment HD">E! Entertainment HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="267" xmltv_id="EinsLive">EinsLive</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="266" xmltv_id="DMAX">DMAX</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="372" xmltv_id="Al Jazeera">Al Jazeera</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="290" xmltv_id="Animal Planet (niem.)">Animal Planet (niem.)</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="692" xmltv_id="Disney Channel HD">Disney Channel HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="773" xmltv_id="E-SPORT">E-SPORT</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="675" xmltv_id="EWTN">EWTN</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="186" xmltv_id="ONE">ONE</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="393" xmltv_id="Fightklub">Fightklub</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="35" xmltv_id="TV Okazje">TV Okazje</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="458" xmltv_id="Mango 24">Mango 24</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="224" xmltv_id="QVC">QVC</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="350" xmltv_id="Playboy TV">Playboy TV</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="714" xmltv_id="Dorcel TV">Dorcel TV</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="715" xmltv_id="Dorcel XXX">Dorcel XXX</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="719" xmltv_id="13 Ulica HD">13 Ulica HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="745" xmltv_id="13.tv HD">13.tv HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="8" xmltv_id="Polonia 1">Polonia 1</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="9" xmltv_id="POLSAT Sport Fight HD">POLSAT Sport Fight HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="15" xmltv_id="Planete+">Planete+</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="16" xmltv_id="Tele 5">Tele 5</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="19" xmltv_id="TVP 3 Białystok">TVP 3 Białystok</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="20" xmltv_id="TVP 3 Bydgoszcz">TVP 3 Bydgoszcz</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="21" xmltv_id="TVP 3 Gdańsk">TVP 3 Gdańsk</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="22" xmltv_id="TVP 3 Katowice">TVP 3 Katowice</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="23" xmltv_id="TVP 3 Kraków">TVP 3 Kraków</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="24" xmltv_id="TVP 3 Lublin">TVP 3 Lublin</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="25" xmltv_id="TVP 3 Łódź">TVP 3 Łódź</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="26" xmltv_id="TVP 3 Poznań">TVP 3 Poznań</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="27" xmltv_id="TVP 3 Rzeszów">TVP 3 Rzeszów</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="28" xmltv_id="TVP 3 Szczecin">TVP 3 Szczecin</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="29" xmltv_id="TVP 3 Warszawa">TVP 3 Warszawa</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="30" xmltv_id="TVP 3 Wrocław">TVP 3 Wrocław</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="32" xmltv_id="TOYA">TOYA</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="34" xmltv_id="TVP 3 Kielce">TVP 3 Kielce</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="37" xmltv_id="WTK">WTK</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="38" xmltv_id="POLSAT Viasat History HD">POLSAT Viasat History HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="40" xmltv_id="POLSAT Viasat Explore HD">POLSAT Viasat Explore HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="41" xmltv_id="TO!TV">TO!TV</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="62" xmltv_id="Dami Skarżysko-Kamienna">Dami Skarżysko-Kamienna</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="66" xmltv_id="Travel Channel">Travel Channel</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="69" xmltv_id="M 6">M 6</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="79" xmltv_id="Extreme Sports Channel">Extreme Sports Channel</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="88" xmltv_id="teleTOON+">teleTOON+</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="89" xmltv_id="Mezzo">Mezzo</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="99" xmltv_id="Food Network HD - EN">Food Network HD - EN</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="102" xmltv_id="France 2 - PL">France 2 - PL</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="108" xmltv_id="TVE">TVE</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="111" xmltv_id="Nova">Nova</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="113" xmltv_id="TVP 3 Opole">TVP 3 Opole</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="122" xmltv_id="RAI 1">RAI 1</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="123" xmltv_id="RAI 2">RAI 2</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="126" xmltv_id="POLSAT Music">POLSAT Music</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="128" xmltv_id="Sky News">Sky News</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="129" xmltv_id="TVP 3 Olsztyn">TVP 3 Olsztyn</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="130" xmltv_id="TVP 3 Gorzów Wielkopolski">TVP 3 Gorzów Wielkopolski</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="133" xmltv_id="Motorvision">Motorvision</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="140" xmltv_id="TTV HD">TTV HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="142" xmltv_id="MTV Rocks">MTV Rocks</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="144" xmltv_id="VH1 Classic European">VH1 Classic European</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="153" xmltv_id="Sky Comedy">Sky Comedy</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="159" xmltv_id="Private TV HD">Private TV HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="162" xmltv_id="BR">BR</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="164" xmltv_id="HGTV HD">HGTV HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="167" xmltv_id="Sky Emotion">Sky Emotion</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="173" xmltv_id="nSport+ HD">nSport+ HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="176" xmltv_id="Stingray Classica">Stingray Classica</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="179" xmltv_id="Discovery Channel (niem.)">Discovery Channel (niem.)</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="183" xmltv_id="Sport 1">Sport 1</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="187" xmltv_id="Sky Hits">Sky Hits</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="189" xmltv_id="Eurosport 1 (niem.)">Eurosport 1 (niem.)</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="190" xmltv_id="Sky Action">Sky Action</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="191" xmltv_id="Sky Cinema + 24">Sky Cinema + 24</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="193" xmltv_id="Franken Fernsehen">Franken Fernsehen</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="194" xmltv_id="Goldstar TV">Goldstar TV</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="195" xmltv_id="Heimatkanal">Heimatkanal</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="196" xmltv_id="HR">HR</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="197" xmltv_id="Hamburg 1">Hamburg 1</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="199" xmltv_id="Junior (niem.)">Junior (niem.)</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="200" xmltv_id="Kabel Eins">Kabel Eins</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="202" xmltv_id="KI.KA">KI.KA</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="203" xmltv_id="Spiegel Geschichte">Spiegel Geschichte</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="204" xmltv_id="TVP 1 HD">TVP 1 HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="205" xmltv_id="MDR">MDR</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="206" xmltv_id="MTV Germany">MTV Germany</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="208" xmltv_id="WELT">WELT</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="209" xmltv_id="NDR">NDR</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="211" xmltv_id="NPO 1">NPO 1</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="212" xmltv_id="NPO 2">NPO 2</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="213" xmltv_id="NPO 3">NPO 3</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="214" xmltv_id="n-tv">n-tv</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="215" xmltv_id="Outdoor Channel HD">Outdoor Channel HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="217" xmltv_id="ORF 1">ORF 1</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="218" xmltv_id="ORF 2">ORF 2</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="219" xmltv_id="Phoenix">Phoenix</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="221" xmltv_id="Sundance TV HD">Sundance TV HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="222" xmltv_id="myZen.tv HD">myZen.tv HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="223" xmltv_id="PRO 7">PRO 7</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="225" xmltv_id="Mezzo Live HD">Mezzo Live HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="226" xmltv_id="RTL">RTL</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="227" xmltv_id="RTLZWEI">RTLZWEI</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="228" xmltv_id="Super RTL">Super RTL</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="230" xmltv_id="SAT.1">SAT.1</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="231" xmltv_id="Syfy">Syfy</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="232" xmltv_id="FOX Comedy HD">FOX Comedy HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="233" xmltv_id="SRF 1">SRF 1</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="234" xmltv_id="SRF Zwei">SRF Zwei</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="237" xmltv_id="Cinemax HD">Cinemax HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="238" xmltv_id="POLSAT Viasat Nature HD">POLSAT Viasat Nature HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="241" xmltv_id="SWR">SWR</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="243" xmltv_id="Spreekanal">Spreekanal</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="244" xmltv_id="RTS Un">RTS Un</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="245" xmltv_id="RTS Deux">RTS Deux</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="246" xmltv_id="Ale kino+ HD">Ale kino+ HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="247" xmltv_id="TV 5 Monde Europe">TV 5 Monde Europe</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="248" xmltv_id="TV.Berlin">TV.Berlin</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="251" xmltv_id="Water Planet">Water Planet</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="252" xmltv_id="VOX">VOX</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="253" xmltv_id="WDR">WDR</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="254" xmltv_id="ZDF">ZDF</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="257" xmltv_id="Sky Krimi">Sky Krimi</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="258" xmltv_id="Sky Nostalgie">Sky Nostalgie</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="259" xmltv_id="Sky Select">Sky Select</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="260" xmltv_id="BBC Earth HD">BBC Earth HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="262" xmltv_id="Twoja Telewizja Morska">Twoja Telewizja Morska</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="269" xmltv_id="POLSAT Sport News">POLSAT Sport News</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="271" xmltv_id="ZDF Info">ZDF Info</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="272" xmltv_id="Planete+ HD">Planete+ HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="275" xmltv_id="Kuchnia+ HD">Kuchnia+ HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="276" xmltv_id="Domo+ HD">Domo+ HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="277" xmltv_id="MiniMini+ HD">MiniMini+ HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="278" xmltv_id="teleTOON+ HD">teleTOON+ HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="284" xmltv_id="dlaCiebie.tv">dlaCiebie.tv</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="285" xmltv_id="Sky Sport 1">Sky Sport 1</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="286" xmltv_id="Sky Sport 2">Sky Sport 2</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="287" xmltv_id="Sky Sport Austria">Sky Sport Austria</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="288" xmltv_id="Sky Sport HD 1">Sky Sport HD 1</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="289" xmltv_id="Discovery HD (niem.)">Discovery HD (niem.)</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="292" xmltv_id="sixx">sixx</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="293" xmltv_id="Tele 5 (niem.)">Tele 5 (niem.)</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="296" xmltv_id="Sky Fussball Bundesliga">Sky Fussball Bundesliga</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="298" xmltv_id="gotv">gotv</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="302" xmltv_id="FightBox HD">FightBox HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="304" xmltv_id="Redlight HD">Redlight HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="306" xmltv_id="HSE 24">HSE 24</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="308" xmltv_id="HISTORY HD (niem.)">HISTORY HD (niem.)</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="309" xmltv_id="MCM Top">MCM Top</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="310" xmltv_id="Novela tv">Novela tv</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="311" xmltv_id="Polskie Radio Program 1">Polskie Radio Program 1</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="312" xmltv_id="Polskie Radio Program 2">Polskie Radio Program 2</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="316" xmltv_id="TF 1">TF 1</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="325" xmltv_id="Sky Cinema + 1">Sky Cinema + 1</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="328" xmltv_id="RBB">RBB</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="329" xmltv_id="rheinmaintv">rheinmaintv</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="331" xmltv_id="RTR Planeta">RTR Planeta</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="338" xmltv_id="Red Carpet TV">Red Carpet TV</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="340" xmltv_id="RT Documentary">RT Documentary</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="344" xmltv_id="MTV Hits">MTV Hits</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="348" xmltv_id="Sky Cinema">Sky Cinema</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="349" xmltv_id="MTV Dance">MTV Dance</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="352" xmltv_id="Nitro">Nitro</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="354" xmltv_id="TRACE Urban">TRACE Urban</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="357" xmltv_id="POLSAT Sport Extra">POLSAT Sport Extra</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="363" xmltv_id="muenchen.tv">muenchen.tv</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="364" xmltv_id="NICK">NICK</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="365" xmltv_id="RNF">RNF</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="368" xmltv_id="Sportklub">Sportklub</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="375" xmltv_id="Discovery Channel HD">Discovery Channel HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="379" xmltv_id="AMC HD">AMC HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="381" xmltv_id="Superstacja">Superstacja</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="384" xmltv_id="France 24 - EN">France 24 - EN</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="391" xmltv_id="National Geographic HD">National Geographic HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="412" xmltv_id="SCI FI">SCI FI</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="416" xmltv_id="HISTORY">HISTORY</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="417" xmltv_id="TVS">TVS</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="418" xmltv_id="HISTORY HD">HISTORY HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="423" xmltv_id="ducktv">ducktv</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="424" xmltv_id="RFM TV">RFM TV</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="425" xmltv_id="POLSAT Sport HD">POLSAT Sport HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="426" xmltv_id="CANAL+ Film HD">CANAL+ Film HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="427" xmltv_id="CANAL+ Sport HD">CANAL+ Sport HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="428" xmltv_id="HBO HD">HBO HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="429" xmltv_id="Eurosport 1 HD">Eurosport 1 HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="430" xmltv_id="TVN HD">TVN HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="433" xmltv_id="Nickelodeon">Nickelodeon</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="435" xmltv_id="TVP HD">TVP HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="437" xmltv_id="Fast&amp;FunBox HD">Fast&amp;FunBox HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="439" xmltv_id="MTV Live HD">MTV Live HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="445" xmltv_id="Hustler TV">Hustler TV</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="447" xmltv_id="TVS HD">TVS HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="454" xmltv_id="Stingray Classica HD">Stingray Classica HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="459" xmltv_id="Russia Today">Russia Today</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="462" xmltv_id="Nautical Channel">Nautical Channel</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="466" xmltv_id="ID">ID</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="469" xmltv_id="MTV Europe">MTV Europe</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="470" xmltv_id="VH1">VH1</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="473" xmltv_id="National Geographic Wild HD">National Geographic Wild HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="474" xmltv_id="POLSAT HD">POLSAT HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="476" xmltv_id="Eurosport 2 HD">Eurosport 2 HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="477" xmltv_id="POLSAT Film">POLSAT Film</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="478" xmltv_id="Fashion TV HD">Fashion TV HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="489" xmltv_id="AXN HD">AXN HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="490" xmltv_id="STARS.TV HD">STARS.TV HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="493" xmltv_id="Rossija 24">Rossija 24</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="494" xmltv_id="Ginx eSports TV HD">Ginx eSports TV HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="496" xmltv_id="FOX HD">FOX HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="498" xmltv_id="Romance TV">Romance TV</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="500" xmltv_id="TVR">TVR</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="502" xmltv_id="Nick Jr.">Nick Jr.</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="503" xmltv_id="HBO2 HD">HBO2 HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="504" xmltv_id="HBO3 HD">HBO3 HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="505" xmltv_id="Cinemax2 HD">Cinemax2 HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="506" xmltv_id="CANAL+ HD">CANAL+ HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="508" xmltv_id="iTVN">iTVN</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="509" xmltv_id="Polo TV">Polo TV</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="510" xmltv_id="Das Erste HD">Das Erste HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="511" xmltv_id="ZDF HD">ZDF HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="514" xmltv_id="ONTV">ONTV</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="515" xmltv_id="Romance TV HD">Romance TV HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="516" xmltv_id="Hustler HD">Hustler HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="519" xmltv_id="Nicktoons">Nicktoons</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="524" xmltv_id="TVN Style HD">TVN Style HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="525" xmltv_id="TVN 7 HD">TVN 7 HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="526" xmltv_id="TVN Turbo HD">TVN Turbo HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="527" xmltv_id="Tele 5 HD">Tele 5 HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="530" xmltv_id="TVP 2 HD">TVP 2 HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="531" xmltv_id="POLSAT Sport Extra HD">POLSAT Sport Extra HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="537" xmltv_id="Fashion One HD">Fashion One HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="538" xmltv_id="Fashion One">Fashion One</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="539" xmltv_id="NHK World TV">NHK World TV</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="540" xmltv_id="Travel Channel HD">Travel Channel HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="541" xmltv_id="ducktv HD">ducktv HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="542" xmltv_id="STARS.TV">STARS.TV</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="544" xmltv_id="Red Carpet TV HD">Red Carpet TV HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="545" xmltv_id="Water Planet HD">Water Planet HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="546" xmltv_id="Novela tv HD">Novela tv HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="549" xmltv_id="TVN 24 HD">TVN 24 HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="552" xmltv_id="POLSAT Film HD">POLSAT Film HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="553" xmltv_id="AXN Spin HD">AXN Spin HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="557" xmltv_id="Record TV">Record TV</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="562" xmltv_id="CANAL+ Family HD">CANAL+ Family HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="563" xmltv_id="CANAL+ 1 HD">CANAL+ 1 HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="564" xmltv_id="CANAL+ Seriale HD">CANAL+ Seriale HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="568" xmltv_id="TVP Rozrywka">TVP Rozrywka</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="569" xmltv_id="Press TV">Press TV</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="570" xmltv_id="TLC HD">TLC HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="573" xmltv_id="Inspiration TV">Inspiration TV</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="574" xmltv_id="ONTV HD">ONTV HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="580" xmltv_id="Russia Today HD">Russia Today HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="582" xmltv_id="RT Documentary HD">RT Documentary HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="590" xmltv_id="TV Regionalna Lubin">TV Regionalna Lubin</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="592" xmltv_id="FashionBox HD">FashionBox HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="593" xmltv_id="TVR HD">TVR HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="594" xmltv_id="Fightklub HD">Fightklub HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="595" xmltv_id="Telewizja Pomerania">Telewizja Pomerania</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="596" xmltv_id="TVP 3">TVP 3</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="597" xmltv_id="POLSAT Romans">POLSAT Romans</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="613" xmltv_id="POLSAT Sport News HD">POLSAT Sport News HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="617" xmltv_id="TV Republika HD">TV Republika HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="618" xmltv_id="Active Family HD">Active Family HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="622" xmltv_id="Power TV">Power TV</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="623" xmltv_id="Power TV HD">Power TV HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="624" xmltv_id="English Club TV HD">English Club TV HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="625" xmltv_id="Redlight">Redlight</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="626" xmltv_id="TVP Sport HD">TVP Sport HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="627" xmltv_id="Zest TV">Zest TV</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="629" xmltv_id="Eurochannel">Eurochannel</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="632" xmltv_id="NTL Radomsko">NTL Radomsko</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="633" xmltv_id="Stopklatka TV">Stopklatka TV</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="634" xmltv_id="Stopklatka HD">Stopklatka HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="635" xmltv_id="FilmBox Arthouse HD">FilmBox Arthouse HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="636" xmltv_id="360TuneBox HD">360TuneBox HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="638" xmltv_id="ID HD">ID HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="639" xmltv_id="DTX HD">DTX HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="642" xmltv_id="VOX Music TV">VOX Music TV</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="643" xmltv_id="Motowizja HD">Motowizja HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="644" xmltv_id="TVT">TVT</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="646" xmltv_id="Kino Polska Muzyka International">Kino Polska Muzyka International</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="647" xmltv_id="Kino Polska International">Kino Polska International</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="650" xmltv_id="TV Puls HD">TV Puls HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="651" xmltv_id="POLSAT Boxing Night">POLSAT Boxing Night</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="652" xmltv_id="POLSAT Boxing Night HD">POLSAT Boxing Night HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="653" xmltv_id="Stingray DJAZZ">Stingray DJAZZ</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="656" xmltv_id="PULS 2 HD">PULS 2 HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="660" xmltv_id="Fokus TV HD">Fokus TV HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="661" xmltv_id="POLSAT Music HD">POLSAT Music HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="664" xmltv_id="HISTORY2 HD">HISTORY2 HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="666" xmltv_id="Comedy Central HD">Comedy Central HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="668" xmltv_id="KSW">KSW</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="669" xmltv_id="Lifetime">Lifetime</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="670" xmltv_id="Lifetime HD">Lifetime HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="671" xmltv_id="RTL HD">RTL HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="672" xmltv_id="BBC Brit HD">BBC Brit HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="673" xmltv_id="Folx TV">Folx TV</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="676" xmltv_id="Lubelska.tv">Lubelska.tv</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="677" xmltv_id="TVN Fabuła HD">TVN Fabuła HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="680" xmltv_id="RTL 102.5">RTL 102.5</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="682" xmltv_id="CANAL+ Sport 2 HD">CANAL+ Sport 2 HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="684" xmltv_id="Food Network HD">Food Network HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="685" xmltv_id="TV Relax">TV Relax</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="688" xmltv_id="Nat Geo People HD">Nat Geo People HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="689" xmltv_id="Nuta.TV">Nuta.TV</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="690" xmltv_id="Nuta.TV HD">Nuta.TV HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="691" xmltv_id="CBS Europa HD">CBS Europa HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="693" xmltv_id="Extreme Sports Channel HD">Extreme Sports Channel HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="694" xmltv_id="Discovery Science HD">Discovery Science HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="695" xmltv_id="POLSAT 2 HD">POLSAT 2 HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="696" xmltv_id="POLSAT Café HD">POLSAT Café HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="697" xmltv_id="POLSAT Play HD">POLSAT Play HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="698" xmltv_id="TV 4 HD">TV 4 HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="699" xmltv_id="TNT HD">TNT HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="700" xmltv_id="Cartoon Network HD">Cartoon Network HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="701" xmltv_id="Eska TV HD">Eska TV HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="702" xmltv_id="KSW HD">KSW HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="704" xmltv_id="Reality Kings TV">Reality Kings TV</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="707" xmltv_id="Top Kids HD">Top Kids HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="709" xmltv_id="TV ASTA">TV ASTA</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="712" xmltv_id="Eleven Sports 1 HD">Eleven Sports 1 HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="713" xmltv_id="Eleven Sports 2 HD">Eleven Sports 2 HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="721" xmltv_id="Nowa TV">Nowa TV</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="722" xmltv_id="ZOOM TV HD">ZOOM TV HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="723" xmltv_id="Nowa TV HD">Nowa TV HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="724" xmltv_id="TVN 24 Biznes i Świat HD">TVN 24 Biznes i Świat HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="726" xmltv_id="BBC Lifestyle HD">BBC Lifestyle HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="727" xmltv_id="Stingray Festival 4K">Stingray Festival 4K</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="730" xmltv_id="POLSAT News HD">POLSAT News HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="731" xmltv_id="iTVN USA">iTVN USA</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="733" xmltv_id="Eroxxx HD">Eroxxx HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="734" xmltv_id="Twoja.TV">Twoja.TV</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="743" xmltv_id="Erox HD">Erox HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="744" xmltv_id="Radio Silesia">Radio Silesia</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="752" xmltv_id="TVP Info HD">TVP Info HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="753" xmltv_id="METRO">METRO</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="754" xmltv_id="Bollywood HD">Bollywood HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="755" xmltv_id="Eleven Sports 3 HD">Eleven Sports 3 HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="757" xmltv_id="WP HD">WP HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="758" xmltv_id="METRO HD">METRO HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="760" xmltv_id="Music Box HD">Music Box HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="762" xmltv_id="POLSAT Sport Fight">POLSAT Sport Fight</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="764" xmltv_id="POLSAT Doku">POLSAT Doku</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="765" xmltv_id="UATV">UATV</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="766" xmltv_id="iTVN Extra International">iTVN Extra International</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="767" xmltv_id="Superstacja HD">Superstacja HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="768" xmltv_id="POLSAT Doku HD">POLSAT Doku HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="770" xmltv_id="TV ASTA HD">TV ASTA HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="771" xmltv_id="Golf Channel">Golf Channel</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="772" xmltv_id="Golf Channel HD">Golf Channel HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="774" xmltv_id="E-SPORT HD">E-SPORT HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="776" xmltv_id="MTV Polska HD">MTV Polska HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="778" xmltv_id="Super Polsat HD">Super Polsat HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="779" xmltv_id="TV 6 HD">TV 6 HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="783" xmltv_id="Eska TV Extra HD">Eska TV Extra HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="784" xmltv_id="TBN Polska">TBN Polska</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="785" xmltv_id="FunBox 4K">FunBox 4K</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="787" xmltv_id="Al Jazeera HD">Al Jazeera HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="789" xmltv_id="Stingray DJAZZ HD">Stingray DJAZZ HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="790" xmltv_id="Euronews HD">Euronews HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="791" xmltv_id="Lubelska.tv HD">Lubelska.tv HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="792" xmltv_id="Stingray iConcerts">Stingray iConcerts</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="793" xmltv_id="PROART HD">PROART HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="796" xmltv_id="Sportklub HD">Sportklub HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="797" xmltv_id="TBN Polska HD">TBN Polska HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="798" xmltv_id="tvregionalna.pl">tvregionalna.pl</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="799" xmltv_id="Eurochannel HD">Eurochannel HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="800" xmltv_id="TTV">TTV</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="801" xmltv_id="Nat Geo People">Nat Geo People</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="802" xmltv_id="Nautical Channel HD">Nautical Channel HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="803" xmltv_id="Gametoon HD">Gametoon HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="804" xmltv_id="Epic Drama HD">Epic Drama HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="807" xmltv_id="Epic Drama">Epic Drama</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="809" xmltv_id="Eleven Sports 4 HD">Eleven Sports 4 HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="811" xmltv_id="Comedy Central Family HD">Comedy Central Family HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="812" xmltv_id="Vivid RED HD">Vivid RED HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="813" xmltv_id="Vivid Touch">Vivid Touch</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="814" xmltv_id="SCI FI HD">SCI FI HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="816" xmltv_id="2x2 HD">2x2 HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="817" xmltv_id="wPolsce.pl HD">wPolsce.pl HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="818" xmltv_id="LOVE HD">LOVE HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="819" xmltv_id="SBN">SBN</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="820" xmltv_id="Da Vinci HD">Da Vinci HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="821" xmltv_id="Nicktoons HD">Nicktoons HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="822" xmltv_id="France 24 HD">France 24 HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="823" xmltv_id="TV Toruń">TV Toruń</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="824" xmltv_id="Dorcel XXX HD">Dorcel XXX HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="825" xmltv_id="Boomerang HD">Boomerang HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="826" xmltv_id="TV Okazje HD">TV Okazje HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="828" xmltv_id="Liubimoe Kino">Liubimoe Kino</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="830" xmltv_id="TVP 4K">TVP 4K</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="831" xmltv_id="CI POLSAT HD">CI POLSAT HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="832" xmltv_id="POLSAT Sport Premium 1">POLSAT Sport Premium 1</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="833" xmltv_id="POLSAT Sport Premium 2">POLSAT Sport Premium 2</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="834" xmltv_id="POLSAT Sport Premium 3">POLSAT Sport Premium 3</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="835" xmltv_id="POLSAT Sport Premium 4">POLSAT Sport Premium 4</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="836" xmltv_id="POLSAT Sport Premium 5">POLSAT Sport Premium 5</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="837" xmltv_id="POLSAT Sport Premium 6">POLSAT Sport Premium 6</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="839" xmltv_id="JAZZ HD">JAZZ HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="840" xmltv_id="POLSAT Games">POLSAT Games</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="841" xmltv_id="POLSAT Rodzina">POLSAT Rodzina</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="842" xmltv_id="Stars XXX TV">Stars XXX TV</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="843" xmltv_id="Stingray Loud HD">Stingray Loud HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="844" xmltv_id="Stingray Juicebox HD">Stingray Juicebox HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="845" xmltv_id="Travelxp HD">Travelxp HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="846" xmltv_id="France 24 - EN HD">France 24 - EN HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="847" xmltv_id="Kino Polska HD">Kino Polska HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="848" xmltv_id="Dorcel TV HD">Dorcel TV HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="849" xmltv_id="Travelxp 4K">Travelxp 4K</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="850" xmltv_id="iTVS">iTVS</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="851" xmltv_id="Kino TV HD">Kino TV HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="853" xmltv_id="Nick Jr. HD">Nick Jr. HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="854" xmltv_id="Top Kids Jr HD">Top Kids Jr HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="855" xmltv_id="Euronews FR">Euronews FR</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="856" xmltv_id="Q Polska HD">Q Polska HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="857" xmltv_id="Eleven Sports 1 4K">Eleven Sports 1 4K</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="858" xmltv_id="Stingray Retro">Stingray Retro</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="859" xmltv_id="ULTRA TV 4K">ULTRA TV 4K</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="860" xmltv_id="POLSAT News 2 HD">POLSAT News 2 HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="861" xmltv_id="POLSAT Rodzina HD">POLSAT Rodzina HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="862" xmltv_id="POLSAT Games HD">POLSAT Games HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="865" xmltv_id="TV Regio">TV Regio</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="870" xmltv_id="CANAL+ Sport 3">CANAL+ Sport 3</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="871" xmltv_id="CANAL+ Sport 4">CANAL+ Sport 4</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="872" xmltv_id="CANAL+ Sport 3 HD">CANAL+ Sport 3 HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="873" xmltv_id="CANAL+ Sport 4 HD">CANAL+ Sport 4 HD</channel>
+    <channel update="i" site="tv.wp.pl.E" site_id="941" xmltv_id="Sundance TV">Sundance TV</channel>
+  </channels>
+</site>

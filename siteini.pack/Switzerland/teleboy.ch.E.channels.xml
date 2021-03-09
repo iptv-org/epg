@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<site generator-info-name="WebGrab+Plus/w MDB &amp; REX Postprocess -- version V3.0.0.21 -- Jan van Straaten" site="teleboy.ch">
+  <channels>
+    <channel update="i" site="teleboy.ch.E" site_id="8001" xmltv_id="SRF 1">SRF 1</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8087" xmltv_id="SRF zwei">SRF zwei</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8216" xmltv_id="3+">3+</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8166" xmltv_id="SRF info">SRF info</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8004" xmltv_id="Das Erste">Das Erste</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8005" xmltv_id="ZDF">ZDF</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8034" xmltv_id="RTL">RTL</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8042" xmltv_id="ProSieben Schweiz">ProSieben Schweiz</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8031" xmltv_id="Sat.1">Sat.1</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8636" xmltv_id="TV24">TV24</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8745" xmltv_id="TV25">TV25</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8062" xmltv_id="RTLZWEI">RTLZWEI</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8053" xmltv_id="VOX">VOX</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8560" xmltv_id="4+">4+</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8574" xmltv_id="5+">5+</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8828" xmltv_id="6+">6+</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8549" xmltv_id="S1">S1</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8107" xmltv_id="Kabel Eins">Kabel Eins</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8536" xmltv_id="SWISS1">SWISS1</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8115" xmltv_id="Star TV">Star TV</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8730" xmltv_id="Puls 8">Puls 8</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8008" xmltv_id="ORF 1">ORF 1</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8009" xmltv_id="ORF 2">ORF 2</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8041" xmltv_id="Arte de">Arte de</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8028" xmltv_id="3sat">3sat</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="181" xmltv_id="Tele 5">Tele 5</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8565" xmltv_id="sixx">sixx</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8575" xmltv_id="ProSieben Maxx">ProSieben Maxx</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8566" xmltv_id="NITRO">NITRO</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="194" xmltv_id="ZDFneo">ZDFneo</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8568" xmltv_id="DMAX">DMAX</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8576" xmltv_id="Sat.1 Gold">Sat.1 Gold</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8775" xmltv_id="TLC Deutschland">TLC Deutschland</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8404" xmltv_id="ServusTV">ServusTV</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="470" xmltv_id="ARD ONE">ARD ONE</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="748" xmltv_id="RTLplus">RTLplus</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8106" xmltv_id="Super RTL">Super RTL</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="518" xmltv_id="VOXup">VOXup</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="123" xmltv_id="SWR Fernsehen BW">SWR Fernsehen BW</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="125" xmltv_id="BR Fernsehen Süd">BR Fernsehen Süd</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="186" xmltv_id="hr-fernsehen">hr-fernsehen</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="164" xmltv_id="MDR Sachsen">MDR Sachsen</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="162" xmltv_id="NDR Fernsehen">NDR Fernsehen</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="203" xmltv_id="rbb Berlin">rbb Berlin</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="501" xmltv_id="SR Fernsehen">SR Fernsehen</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="151" xmltv_id="WDR Fernsehen">WDR Fernsehen</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="476" xmltv_id="Radio Bremen TV">Radio Bremen TV</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="223" xmltv_id="tagesschau24">tagesschau24</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8020" xmltv_id="Teleclub Zoom de">Teleclub Zoom de</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8032" xmltv_id="Eurosport 1 de">Eurosport 1 de</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8700" xmltv_id="Sport1">Sport1</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="779" xmltv_id="Sky Sport News">Sky Sport News</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="211" xmltv_id="ZDFinfo">ZDFinfo</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="202" xmltv_id="Phoenix">Phoenix</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="222" xmltv_id="ARD-alpha">ARD-alpha</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8554" xmltv_id="WELT">WELT</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8567" xmltv_id="n-tv">n-tv</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="768" xmltv_id="Kabel Eins Doku">Kabel Eins Doku</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="465" xmltv_id="N24 Doku">N24 Doku</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8707" xmltv_id="Welt der Wunder TV">Welt der Wunder TV</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8067" xmltv_id="euronews de">euronews de</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8054" xmltv_id="TeleZüri">TeleZüri</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8078" xmltv_id="TeleBärn">TeleBärn</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8021" xmltv_id="Telebasel">Telebasel</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8077" xmltv_id="Tele 1">Tele 1</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8171" xmltv_id="Tele Top">Tele Top</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8076" xmltv_id="Tele M1">Tele M1</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8173" xmltv_id="TVO - das Ostschweizer Fernsehen">TVO - das Ostschweizer Fernsehen</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8174" xmltv_id="Tele Südostschweiz">Tele Südostschweiz</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8176" xmltv_id="TeleBielingue">TeleBielingue</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8181" xmltv_id="Kanal9">Kanal9</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="325" xmltv_id="Deutsche Welle de">Deutsche Welle de</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8096" xmltv_id="wetter.tv">wetter.tv</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8170" xmltv_id="Comedy Central">Comedy Central</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8552" xmltv_id="Disney Channel">Disney Channel</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8230" xmltv_id="Nick Schweiz">Nick Schweiz</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="139" xmltv_id="KiKa">KiKa</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="751" xmltv_id="TOGGO plus">TOGGO plus</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="588" xmltv_id="RiC">RiC</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="491" xmltv_id="Rocket Beans TV">Rocket Beans TV</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="749" xmltv_id="R9 Österreich">R9 Österreich</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8137" xmltv_id="MTV Schweiz">MTV Schweiz</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="299" xmltv_id="Deluxe Music">Deluxe Music</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="429" xmltv_id="Deutsches Musik Fernsehen">Deutsches Musik Fernsehen</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="305" xmltv_id="GoTV">GoTV</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="271" xmltv_id="Anixe">Anixe</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="322" xmltv_id="Bibel TV">Bibel TV</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="326" xmltv_id="K-TV">K-TV</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8093" xmltv_id="Channel 55">Channel 55</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="803" xmltv_id="Zee.One">Zee.One</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="289" xmltv_id="HSE24">HSE24</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="291" xmltv_id="HSE24 Extra">HSE24 Extra</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="292" xmltv_id="HSE24 Trend">HSE24 Trend</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="424" xmltv_id="Der Aktionär TV">Der Aktionär TV</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="388" xmltv_id="QS24">QS24</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="443" xmltv_id="Health.tv">Health.tv</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="510" xmltv_id="VISIT-X.tv">VISIT-X.tv</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="295" xmltv_id="BBC One">BBC One</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="297" xmltv_id="BBC Two">BBC Two</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="230" xmltv_id="BBC World News">BBC World News</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="399" xmltv_id="BBC Four">BBC Four</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="175" xmltv_id="CNN">CNN</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="323" xmltv_id="CNBC Europe">CNBC Europe</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="343" xmltv_id="Bloomberg">Bloomberg</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8090" xmltv_id="CNNMoney Switzerland">CNNMoney Switzerland</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="361" xmltv_id="Sky News">Sky News</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="266" xmltv_id="ITV">ITV</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="267" xmltv_id="ITV 2">ITV 2</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="268" xmltv_id="ITV 3">ITV 3</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="269" xmltv_id="ITV 4">ITV 4</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="453" xmltv_id="ITVBe">ITVBe</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="352" xmltv_id="E4">E4</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="344" xmltv_id="Channel 4">Channel 4</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8985" xmltv_id="Channel 5">Channel 5</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="304" xmltv_id="Film 4">Film 4</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="357" xmltv_id="More 4">More 4</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="393" xmltv_id="4Seven">4Seven</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="396" xmltv_id="5USA">5USA</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="394" xmltv_id="5SELECT">5SELECT</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8221" xmltv_id="France 24 en">France 24 en</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="426" xmltv_id="Deutsche Welle en">Deutsche Welle en</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="448" xmltv_id="i24NEWS en">i24NEWS en</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8080" xmltv_id="Al Jazeera en">Al Jazeera en</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="855" xmltv_id="Clubland TV">Clubland TV</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="859" xmltv_id="Now 90s">Now 90s</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="415" xmltv_id="Chart Show TV">Chart Show TV</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="457" xmltv_id="Kiss TV">Kiss TV</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="284" xmltv_id="Fashion TV">Fashion TV</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="669" xmltv_id="BBC News">BBC News</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="401" xmltv_id="BBC Parliament">BBC Parliament</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="398" xmltv_id="BBC Arabic">BBC Arabic</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="746" xmltv_id="CBBC">CBBC</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="438" xmltv_id="FreeSports">FreeSports</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="411" xmltv_id="CBeebies">CBeebies</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="495" xmltv_id="S4C">S4C</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="808" xmltv_id="Drama">Drama</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="472" xmltv_id="Paramount Network">Paramount Network</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="423" xmltv_id="Dave">Dave</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="474" xmltv_id="Pick">Pick</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="412" xmltv_id="Challenge">Challenge</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="492" xmltv_id="RT Doc">RT Doc</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="512" xmltv_id="Yesterday">Yesterday</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="809" xmltv_id="Food Network">Food Network</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="441" xmltv_id="GOD Channel">GOD Channel</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="499" xmltv_id="SONLife">SONLife</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="467" xmltv_id="NETVIET">NETVIET</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8116" xmltv_id="Travel Channel">Travel Channel</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="860" xmltv_id="NASA TV">NASA TV</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="747" xmltv_id="PBS America">PBS America</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8002" xmltv_id="RTS Un">RTS Un</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8088" xmltv_id="RTS Deux">RTS Deux</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8440" xmltv_id="TF1">TF1</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8059" xmltv_id="M6 Suisse">M6 Suisse</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8504" xmltv_id="W9">W9</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8011" xmltv_id="France 2">France 2</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8012" xmltv_id="France 3">France 3</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8214" xmltv_id="France 4">France 4</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="124" xmltv_id="France 5">France 5</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="193" xmltv_id="France Ô">France Ô</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="821" xmltv_id="Teleclub Zoom fr">Teleclub Zoom fr</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8145" xmltv_id="Léman Bleu">Léman Bleu</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8121" xmltv_id="Canal Alpha">Canal Alpha</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="92" xmltv_id="TVM3">TVM3</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8389" xmltv_id="La Télé">La Télé</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8373" xmltv_id="Rouge TV">Rouge TV</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8701" xmltv_id="6ter">6ter</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8722" xmltv_id="TMC">TMC</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8723" xmltv_id="TFX">TFX</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8995" xmltv_id="TF1 Séries Films">TF1 Séries Films</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8724" xmltv_id="C8">C8</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="172" xmltv_id="Gulli">Gulli</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="449" xmltv_id="i24NEWS fr">i24NEWS fr</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="437" xmltv_id="franceinfo">franceinfo</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="201" xmltv_id="CNEWS">CNEWS</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="585" xmltv_id="LCI">LCI</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="264" xmltv_id="KTO">KTO</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="122" xmltv_id="TV5 Monde FBS">TV5 Monde FBS</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="174" xmltv_id="BFM TV">BFM TV</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="798" xmltv_id="Booster TV">Booster TV</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8721" xmltv_id="beCuriousTV">beCuriousTV</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="650" xmltv_id="L'Équipe 21">L'Équipe 21</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8996" xmltv_id="Chérie 25">Chérie 25</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="520" xmltv_id="CSTAR">CSTAR</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8213" xmltv_id="NRJ12">NRJ12</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8998" xmltv_id="RMC Découverte">RMC Découverte</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="376" xmltv_id="RMC Story">RMC Story</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8003" xmltv_id="RSI LA 1">RSI LA 1</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8094" xmltv_id="RSI LA 2">RSI LA 2</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8167" xmltv_id="TeleTicino">TeleTicino</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8013" xmltv_id="Rai 1">Rai 1</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8014" xmltv_id="Rai 2">Rai 2</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8141" xmltv_id="Rai 3">Rai 3</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="167" xmltv_id="Rai 4">Rai 4</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8993" xmltv_id="Rai Movie">Rai Movie</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8986" xmltv_id="Rai Premium">Rai Premium</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="195" xmltv_id="Rai News 24">Rai News 24</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="178" xmltv_id="Rai Sport 1">Rai Sport 1</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="177" xmltv_id="Rai Gulp">Rai Gulp</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="633" xmltv_id="Rai Yoyo">Rai Yoyo</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="265" xmltv_id="Rai Scuola">Rai Scuola</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="180" xmltv_id="Rai Storia">Rai Storia</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8043" xmltv_id="Canale 5">Canale 5</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="765" xmltv_id="Paramount Channel Italy">Paramount Channel Italy</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8074" xmltv_id="Italia 1">Italia 1</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8987" xmltv_id="Italia 2">Italia 2</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="8102" xmltv_id="Rete 4">Rete 4</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="183" xmltv_id="La5">La5</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="119" xmltv_id="La7">La7</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="525" xmltv_id="La7d">La7d</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="126" xmltv_id="Iris">Iris</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="217" xmltv_id="Canale Italia">Canale Italia</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="189" xmltv_id="Cielo">Cielo</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="806" xmltv_id="20 Mediaset">20 Mediaset</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="417" xmltv_id="Mediaset Extra 2">Mediaset Extra 2</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="626" xmltv_id="Real Time">Real Time</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="418" xmltv_id="Class TV Moda">Class TV Moda</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="294" xmltv_id="RTL 102.5">RTL 102.5</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="766" xmltv_id="NOVE">NOVE</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="509" xmltv_id="DMAX Italia">DMAX Italia</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="805" xmltv_id="Spike Italia">Spike Italia</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="623" xmltv_id="Giallo">Giallo</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="630" xmltv_id="Focus">Focus</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="199" xmltv_id="TV8">TV8</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="498" xmltv_id="Sky TG24">Sky TG24</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="329" xmltv_id="Telepace">Telepace</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="190" xmltv_id="Boing">Boing</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="628" xmltv_id="Frisbee">Frisbee</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="627" xmltv_id="K2">K2</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="703" xmltv_id="Cartoonito">Cartoonito</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="625" xmltv_id="Super">Super</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="407" xmltv_id="BVN">BVN</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="200" xmltv_id="RTPi">RTPi</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="188" xmltv_id="TVEi">TVEi</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="641" xmltv_id="24H">24H</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="428" xmltv_id="Deutsche Welle es">Deutsche Welle es</channel>
+    <channel update="i" site="teleboy.ch.E" site_id="427" xmltv_id="Deutsche Welle ar">Deutsche Welle ar</channel>
+  </channels>
+</site>

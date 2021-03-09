@@ -1,0 +1,35 @@
+﻿<?xml version="1.0"?>
+<settings>
+   
+  <!-- This is a sample of an almost "ready to go" setup 
+	1. If required set full path for the output guide.xml 
+	2. Add correct decription key for siteini type .EK 
+	3. change your username and mail (used to register on the forum) and password (see license in forum profile) 
+	4. set timespan (number of days) it start with 0 so one week = 6 
+	5. create updated channel list setting <update>c</update> first, then set back to i or f
+	6. Below a setup to run an encrypted siteini and a regular one
+	-->
+   
+  <filename>guide.xml</filename>
+  <mode>m n</mode>
+  <postprocess grab="y" run="n">rex</postprocess>
+  <user-agent>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36 Edg/79.0.309.71</user-agent>
+
+  <decryptkey site="cyfrowypolsat.pl.EK">AABBCC</decryptkey>
+  <license wg-username="rollerbar" registered-email="rollerbar@gmail.com" password="123456" /> 
+  <!-- to update license use force, example: <license wg-username="rollerbar" registered-email="rollerbar@gmail.com" password="123456">f</license> -->	
+	
+
+  <logging>on</logging>
+  <retry time-out="80">4</retry>
+  <timespan>0</timespan>
+  <update>f</update>
+ 
+
+  
+		<channel update="i" site="cyfrowypolsat.pl.EK" site_id="ale-kino-plus-hd" xmltv_id="ale kino+ HD">ale kino+ HD</channel>
+	        <channel update="i" site="sky.de" site_id="99_sky_logo_classica" xmltv_id="Classica">Classica</channel>
+
+	
+ 
+</settings>

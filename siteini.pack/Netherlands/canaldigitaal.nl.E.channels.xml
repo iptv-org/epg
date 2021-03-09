@@ -1,0 +1,769 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<site generator-info-name="WebGrab+Plus/w MDB &amp; REX Postprocess -- version V2.1.9 -- Jan van Straaten" site="canaldigitaal.nl.E">
+  <channels>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1791608704" xmltv_id="NPO 1 HD">NPO 1 HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1791608768" xmltv_id="NPO 2 HD">NPO 2 HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1791608832" xmltv_id="NPO 3 HD">NPO 3 HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790972224" xmltv_id="RTL 4 HD">RTL 4 HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790972288" xmltv_id="RTL 5 HD">RTL 5 HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790972416" xmltv_id="SBS 6 HD">SBS 6 HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790972352" xmltv_id="RTL 7 HD">RTL 7 HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790973248" xmltv_id="Veronica / DisneyXD HD">Veronica / DisneyXD HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1791710784" xmltv_id="Net5 HD">Net5 HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790972480" xmltv_id="RTL 8 HD">RTL 8 HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790974720" xmltv_id="FOX">FOX</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790987520" xmltv_id="SBS9">SBS9</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790967872" xmltv_id="RTL Z">RTL Z</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="738688" xmltv_id="CD Info &amp; Nieuws">CD Info &amp; Nieuws</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790975744" xmltv_id="één HD">één HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790975808" xmltv_id="Canvas HD">Canvas HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790975104" xmltv_id="Comedy Central">Comedy Central</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1791001920" xmltv_id="Discovery Showcase HD">Discovery Showcase HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790991936" xmltv_id="National Geographic HD">National Geographic HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1791868224" xmltv_id="Spike">Spike</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1791002432" xmltv_id="Film 1 Premiere HD">Film 1 Premiere HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1791002816" xmltv_id="Film 1 Action">Film 1 Action</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1791002752" xmltv_id="Film 1 Family">Film 1 Family</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1791002688" xmltv_id="Film 1 Drama">Film 1 Drama</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="344833920" xmltv_id="Film Europe HD">Film Europe HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="592296192" xmltv_id="Insight TV HD">Insight TV HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="591434368" xmltv_id="Nautical Channel HD">Nautical Channel HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790968512" xmltv_id="Eurosport 1 HD (NL)">Eurosport 1 HD (NL)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790978752" xmltv_id="Eurosport 2 (NL)">Eurosport 2 (NL)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790979776" xmltv_id="FOX Sports 1 HD">FOX Sports 1 HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790979840" xmltv_id="FOX Sports 2 HD">FOX Sports 2 HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790979904" xmltv_id="FOX Sports 4 HD">FOX Sports 4 HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1791003008" xmltv_id="Ziggo Sport Select HD">Ziggo Sport Select HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790986752" xmltv_id="Ziggo Sport Voetbal">Ziggo Sport Voetbal</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1791002944" xmltv_id="Ziggo Sport Golf">Ziggo Sport Golf</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="592325056" xmltv_id="Fuel TV HD">Fuel TV HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="419467840" xmltv_id="AutoMotorSport HD">AutoMotorSport HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1791610240" xmltv_id="Disney Channel">Disney Channel</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1791868352" xmltv_id="Nickelodeon">Nickelodeon</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1791850432" xmltv_id="Nick Jr.">Nick Jr.</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790987392" xmltv_id="Cartoon Network">Cartoon Network</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790987328" xmltv_id="Boomerang">Boomerang</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790975360" xmltv_id="Discovery">Discovery</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790975424" xmltv_id="TLC">TLC</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="592306048" xmltv_id="Travelxp HD">Travelxp HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="591420864" xmltv_id="National Geographic Wild HD">National Geographic Wild HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="591399040" xmltv_id="Animal Planet">Animal Planet</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790975552" xmltv_id="History">History</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790988352" xmltv_id="ID Investigation Discovery">ID Investigation Discovery</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1791855744" xmltv_id="RTL Crime">RTL Crime</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="591403264" xmltv_id="Stingray Classica HD">Stingray Classica HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="742415040" xmltv_id="Mezzo HD">Mezzo HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1791856064" xmltv_id="192TV">192TV</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1791006016" xmltv_id="ONS">ONS</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="592161408" xmltv_id="MyZen.tv">MyZen.tv</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="591403968" xmltv_id="E! Entertainment">E! Entertainment</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="591410304" xmltv_id="the QYOU HD">the QYOU HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790988928" xmltv_id="duck tv">duck tv</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1791885824" xmltv_id="Baby TV">Baby TV</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1791855488" xmltv_id="RTL Telekids">RTL Telekids</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1791707712" xmltv_id="RTL Lounge">RTL Lounge</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790974976" xmltv_id="24Kitchen">24Kitchen</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="592273472" xmltv_id="DOCUBOX">DOCUBOX</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790975872" xmltv_id="Ketnet / één+ / Canvas+">Ketnet / één+ / Canvas+</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790974784" xmltv_id="MTV NL">MTV NL</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790971136" xmltv_id="Schlager TV">Schlager TV</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790979200" xmltv_id="TV Oranje">TV Oranje</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790977152" xmltv_id="L1MBURG">L1MBURG</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790976832" xmltv_id="Omroep Brabant">Omroep Brabant</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790976896" xmltv_id="Omroep Zeeland">Omroep Zeeland</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790976768" xmltv_id="TV West">TV West</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790976384" xmltv_id="AT5">AT5</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790976512" xmltv_id="TV Gelderland">TV Gelderland</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790977024" xmltv_id="TV Drenthe">TV Drenthe</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790976640" xmltv_id="TV Oost">TV Oost</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790976576" xmltv_id="TV Noord">TV Noord</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790976448" xmltv_id="Omrop Fryslan">Omrop Fryslan</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="591397824" xmltv_id="CNN International">CNN International</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790971584" xmltv_id="NPO Nieuws">NPO Nieuws</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="591410496" xmltv_id="BBC World News HD">BBC World News HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="774272" xmltv_id="Sky Sport News HD">Sky Sport News HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="591397248" xmltv_id="CNBC">CNBC</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="592042496" xmltv_id="Bloomberg">Bloomberg</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1920" xmltv_id="Sky News">Sky News</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="592042048" xmltv_id="France 24 (in English)">France 24 (in English)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="592279744" xmltv_id="NHK World HD">NHK World HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="591418304" xmltv_id="Euronews (Français)">Euronews (Français)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="591397056" xmltv_id="Al Jazeera English HD">Al Jazeera English HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="921472" xmltv_id="RT HD">RT HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="592273280" xmltv_id="Fishing and Hunting">Fishing and Hunting</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="343938944" xmltv_id="Retro Music TV">Retro Music TV</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="591408128" xmltv_id="Stingray iConcerts HD">Stingray iConcerts HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="591423680" xmltv_id="VH-1 Classic">VH-1 Classic</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="591423616" xmltv_id="VH-1">VH-1</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="592287616" xmltv_id="Stingray CMusic">Stingray CMusic</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1791893504" xmltv_id="TV 538">TV 538</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="591408064" xmltv_id="MTV Music 24">MTV Music 24</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790972032" xmltv_id="NPO Politiek">NPO Politiek</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1791707648" xmltv_id="NPO 1 extra">NPO 1 extra</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1791852288" xmltv_id="NPO 2 extra">NPO 2 extra</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790978688" xmltv_id="NPO Zappelin extra">NPO Zappelin extra</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790974016" xmltv_id="Omroep Flevoland">Omroep Flevoland</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790976704" xmltv_id="TV Rijnmond">TV Rijnmond</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790977088" xmltv_id="NH">NH</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790976960" xmltv_id="TV Utrecht">TV Utrecht</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="592296256" xmltv_id="Insight TV UHD">Insight TV UHD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="419431168" xmltv_id="Das Erste HD">Das Erste HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="419438720" xmltv_id="ZDF HD">ZDF HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="420077248" xmltv_id="3sat HD">3sat HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="419430720" xmltv_id="RTL Television">RTL Television</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="420077312" xmltv_id="Sat.1">Sat.1</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="419436928" xmltv_id="ProSieben">ProSieben</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="419438080" xmltv_id="VOX">VOX</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="419438848" xmltv_id="RTL 2">RTL 2</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="419438272" xmltv_id="Kabel eins">Kabel eins</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="419442688" xmltv_id="Super RTL">Super RTL</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="420077568" xmltv_id="NITRO">NITRO</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="419442752" xmltv_id="KiKa HD">KiKa HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="420078528" xmltv_id="phoenix HD">phoenix HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="420078656" xmltv_id="Welt">Welt</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="419432768" xmltv_id="zdf neo HD">zdf neo HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="420337728" xmltv_id="Euronews (Deutsch)">Euronews (Deutsch)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="419433024" xmltv_id="zdf info HD">zdf info HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="419438912" xmltv_id="arte HD">arte HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="419431680" xmltv_id="Tele 5">Tele 5</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="420153664" xmltv_id="SAT.1 Gold Austria">SAT.1 Gold Austria</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="420078720" xmltv_id="N-TV">N-TV</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="420078592" xmltv_id="Tagesschau 24 HD">Tagesschau 24 HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="419445248" xmltv_id="NDR HD">NDR HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="419444480" xmltv_id="WDR HD Köln">WDR HD Köln</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="419444160" xmltv_id="SWR BW HD">SWR BW HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="419443968" xmltv_id="RBB Berlin HD">RBB Berlin HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="419445184" xmltv_id="BR Süd HD">BR Süd HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="419445568" xmltv_id="MDR Sachsen-Anhalt HD">MDR Sachsen-Anhalt HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="420156736" xmltv_id="SWR RP HD">SWR RP HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="419445696" xmltv_id="hr-fernsehen HD">hr-fernsehen HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="912256" xmltv_id="Shop 24 Direct">Shop 24 Direct</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1600" xmltv_id="ANIXE HD">ANIXE HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="419443904" xmltv_id="Servus TV HD Deutschland">Servus TV HD Deutschland</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="420078144" xmltv_id="ONE HD">ONE HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="419526528" xmltv_id="ORF2 Europe">ORF2 Europe</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="420078464" xmltv_id="ARD-alpha HD">ARD-alpha HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="420153408" xmltv_id="Disney Channel (D)">Disney Channel (D)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="419447040" xmltv_id="Nickelodeon DE">Nickelodeon DE</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="420139584" xmltv_id="SR Fernsehen HD">SR Fernsehen HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="420077952" xmltv_id="DMAX">DMAX</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="419446400" xmltv_id="TLC Deutschland">TLC Deutschland</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="420077824" xmltv_id="Sixx">Sixx</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="419431616" xmltv_id="ProSieben MAXX Austria">ProSieben MAXX Austria</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="419446144" xmltv_id="Comedy Central (D)">Comedy Central (D)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="419446592" xmltv_id="Deluxe Music">Deluxe Music</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="420321408" xmltv_id="OE24.TV">OE24.TV</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="419444096" xmltv_id="Eurosport 1 Deutschland">Eurosport 1 Deutschland</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="419432064" xmltv_id="sport1">sport1</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="740864" xmltv_id="Equi 8">Equi 8</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="419442816" xmltv_id="R9 Österreich HD">R9 Österreich HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1344" xmltv_id="DW-TV (Deutsche Welle)">DW-TV (Deutsche Welle)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="16064" xmltv_id="Folx TV">Folx TV</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="15936" xmltv_id="Melodie TV">Melodie TV</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="16128" xmltv_id="Deutsches Musik Fernsehen">Deutsches Musik Fernsehen</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="420317632" xmltv_id="RTLplus">RTLplus</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="15872" xmltv_id="Go TV">Go TV</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="420154752" xmltv_id="LT1">LT1</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="944256" xmltv_id="HGTV (Deutschland)">HGTV (Deutschland)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="420320768" xmltv_id="N24 Doku">N24 Doku</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="420321024" xmltv_id="Kabel 1 Doku Austria">Kabel 1 Doku Austria</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="11520" xmltv_id="RFO">RFO</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="910464" xmltv_id="München TV HD">München TV HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="11072" xmltv_id="L-TV / TV Mittelrhein">L-TV / TV Mittelrhein</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="15680" xmltv_id="Franken Fernsehen HD">Franken Fernsehen HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="15488" xmltv_id="Ulm-Allgäu HD">Ulm-Allgäu HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="741056" xmltv_id="Regio TV">Regio TV</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="419446208" xmltv_id="Radio Bremen TV">Radio Bremen TV</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="419440768" xmltv_id="Super RTL (AT)">Super RTL (AT)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="419441088" xmltv_id="Sat 1 (AT)">Sat 1 (AT)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="419446912" xmltv_id="ProSieben (AT)">ProSieben (AT)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="419447104" xmltv_id="VOX Austria">VOX Austria</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="419447168" xmltv_id="Comedy Central Austria">Comedy Central Austria</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="15360" xmltv_id="Rhein Main TV">Rhein Main TV</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="17728" xmltv_id="Chamber TV HD">Chamber TV HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="743097536" xmltv_id="LCI HD">LCI HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="18304" xmltv_id="i24 News Français">i24 News Français</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="743037632" xmltv_id="TV5MONDE EUROPE">TV5MONDE EUROPE</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="742392384" xmltv_id="TV5MONDE HD (F B CH)">TV5MONDE HD (F B CH)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="17664" xmltv_id="RTL Tele Letzebuerg">RTL Tele Letzebuerg</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="921536" xmltv_id="RT France HD">RT France HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="742392256" xmltv_id="BFM TV (13)">BFM TV (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="742393664" xmltv_id="France 24 Fr HD (13)">France 24 Fr HD (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="742409280" xmltv_id="LCP HD">LCP HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="256" xmltv_id="CNEWS HD">CNEWS HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="912320" xmltv_id="Welt der Wunder">Welt der Wunder</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="18880" xmltv_id="Sonlife Broadc. Ntwk">Sonlife Broadc. Ntwk</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="19008" xmltv_id="GOD Europe">GOD Europe</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="19200" xmltv_id="EWTN katholisches TV">EWTN katholisches TV</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="419449472" xmltv_id="Bibel TV HD">Bibel TV HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="19136" xmltv_id="K-TV Fernsehen">K-TV Fernsehen</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="901120" xmltv_id="Health.TV">Health.TV</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="17280" xmltv_id="Canal 24 Horas">Canal 24 Horas</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="742409024" xmltv_id="TVE International">TVE International</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="18048" xmltv_id="Telesur HD">Telesur HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="884288" xmltv_id="RT Espanol HD">RT Espanol HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="17984" xmltv_id="ARAGON TV">ARAGON TV</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="18240" xmltv_id="Canal Sur Andalucia">Canal Sur Andalucia</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="18112" xmltv_id="TV Galicia">TV Galicia</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="17856" xmltv_id="Cubavision Internacional">Cubavision Internacional</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="922304" xmltv_id="Extremadura TV">Extremadura TV</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="726656" xmltv_id="Mont Blanc Live TV">Mont Blanc Live TV</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="912384" xmltv_id="MTV Deutschland">MTV Deutschland</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="896768" xmltv_id="TRT World HD">TRT World HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="710016" xmltv_id="France 24 (in Arabic)">France 24 (in Arabic)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="886080" xmltv_id="Rai News 24">Rai News 24</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="922944" xmltv_id="Yol TV">Yol TV</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="928000" xmltv_id="Tele Maroc">Tele Maroc</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="18432" xmltv_id="TRWAM">TRWAM</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="343951552" xmltv_id="Slagr TV">Slagr TV</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="344825216" xmltv_id="CT 24 HD">CT 24 HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="343998016" xmltv_id="Ocko">Ocko</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="343951488" xmltv_id="Noe TV HD">Noe TV HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="2457865600" xmltv_id="TA3 HD">TA3 HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="13888" xmltv_id="RiC">RiC</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="2457880640" xmltv_id="TV 8">TV 8</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="2457880832" xmltv_id="TV Lux HD">TV Lux HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="343951744" xmltv_id="regionalnitelevize.cz">regionalnitelevize.cz</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="344806144" xmltv_id="REBEL">REBEL</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="924928" xmltv_id="Power TV">Power TV</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="344841856" xmltv_id="Ocko Star">Ocko Star</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="926144" xmltv_id="RTS Svet HD">RTS Svet HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="592313600" xmltv_id="(18+) Playboy TV HD">(18+) Playboy TV HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="592284608" xmltv_id="(18+) Penthouse Gold">(18+) Penthouse Gold</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="592284672" xmltv_id="(18+) Penthouse Quickies">(18+) Penthouse Quickies</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="591396992" xmltv_id="(18+) Reality Kings">(18+) Reality Kings</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="591431616" xmltv_id="(18+) Brazzers TV (22-05)">(18+) Brazzers TV (22-05)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="591433664" xmltv_id="(18+) Hustler TV">(18+) Hustler TV</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="591408576" xmltv_id="(18+) VividTV">(18+) VividTV</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="591433920" xmltv_id="(18+) Leo TV (22-06)">(18+) Leo TV (22-06)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="742428928" xmltv_id="(18+) Man-X (00-06)">(18+) Man-X (00-06)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="17344" xmltv_id="CGTN News">CGTN News</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="17408" xmltv_id="CGTN 9 Documentary">CGTN 9 Documentary</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="895296" xmltv_id="CCTV 4 HD (13)">CCTV 4 HD (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="895168" xmltv_id="CGTN Documentary HD">CGTN Documentary HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="973568" xmltv_id="8 Kanal International">8 Kanal International</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="924672" xmltv_id="NTV Mir">NTV Mir</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="924736" xmltv_id="TV Centr International">TV Centr International</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="924800" xmltv_id="STS International">STS International</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="924864" xmltv_id="TV Rus">TV Rus</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="712960" xmltv_id="TBN Europe (13)">TBN Europe (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="713088" xmltv_id="Hilsong Channel (13)">Hilsong Channel (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="712512" xmltv_id="Daystar TV (13)">Daystar TV (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="712768" xmltv_id="S Neu Jerusalem (13)">S Neu Jerusalem (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="707328" xmltv_id="Tele Padre Pio (13)">Tele Padre Pio (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="708480" xmltv_id="Bethel Television (13)">Bethel Television (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="925056" xmltv_id="Angel TV (13)">Angel TV (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="925120" xmltv_id="KICC TV (13)">KICC TV (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="592137152" xmltv_id="BBC One HD (28)">BBC One HD (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="592137216" xmltv_id="BBC Two HD (28)">BBC Two HD (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="48192" xmltv_id="ITV HD (28)">ITV HD (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="38400" xmltv_id="Channel 4 HD (28)">Channel 4 HD (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="37888" xmltv_id="Channel 5 HD (28)">Channel 5 HD (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="591444992" xmltv_id="BBC Four HD (28)">BBC Four HD (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="32704" xmltv_id="BBC ALBA (28)">BBC ALBA (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="887360" xmltv_id="S4C HD (28)">S4C HD (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="928384" xmltv_id="BBC Scotland">BBC Scotland</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="48256" xmltv_id="ITV +1 (28)">ITV +1 (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="48320" xmltv_id="ITV 2 (28)">ITV 2 (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="48384" xmltv_id="ITV 2 +1 (28)">ITV 2 +1 (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="48448" xmltv_id="ITV 3 (28)">ITV 3 (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="48512" xmltv_id="ITV 3 +1 (28)">ITV 3 +1 (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="38912" xmltv_id="ITV 4 (28)">ITV 4 (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="38976" xmltv_id="ITV4 +1 (28)">ITV4 +1 (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="38784" xmltv_id="ITV Be (28)">ITV Be (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="38656" xmltv_id="ITV Be +1 (28)">ITV Be +1 (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="38464" xmltv_id="Channel 4 +1 (28)">Channel 4 +1 (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="37312" xmltv_id="More 4 (28)">More 4 (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="37376" xmltv_id="More 4 +1 (28)">More 4 +1 (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="36928" xmltv_id="E4 UK (28)">E4 UK (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="35264" xmltv_id="E4 +1 (28)">E4 +1 (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="36864" xmltv_id="4seven (28)">4seven (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="37952" xmltv_id="Channel 5 +1 (28)">Channel 5 +1 (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="922368" xmltv_id="UTV (Ulster) (28)">UTV (Ulster) (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="922432" xmltv_id="UTV +1 (28)">UTV +1 (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="38080" xmltv_id="5SELECT (28)">5SELECT (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="38144" xmltv_id="5 USA (28)">5 USA (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="37696" xmltv_id="5 USA +1 (28)">5 USA +1 (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="37760" xmltv_id="5STAR (28)">5STAR (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="37184" xmltv_id="5STAR +1 (28)">5STAR +1 (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="907008" xmltv_id="Dave (28)">Dave (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="891072" xmltv_id="Blaze (28)">Blaze (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="38016" xmltv_id="5Spike (28)">5Spike (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="906880" xmltv_id="Forces TV (28)">Forces TV (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="32256" xmltv_id="BET U.K. (28)">BET U.K. (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="913984" xmltv_id="Together (28)">Together (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="882816" xmltv_id="Yesterday (28)">Yesterday (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="906944" xmltv_id="Home (28)">Home (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="882752" xmltv_id="Really (28)">Really (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="906048" xmltv_id="Quest (28)">Quest (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="906368" xmltv_id="Quest+1 (28)">Quest+1 (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="906176" xmltv_id="Quest Red (28)">Quest Red (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="906304" xmltv_id="Quest Red +1 (28)">Quest Red +1 (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="4288" xmltv_id="Food Network (28)">Food Network (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="35904" xmltv_id="Food Network +1 (28)">Food Network +1 (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="907264" xmltv_id="Travel Channel (28)">Travel Channel (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="36032" xmltv_id="Travel Channel +1 (28)">Travel Channel +1 (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="927808" xmltv_id="DMAX UK">DMAX UK</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="789888" xmltv_id="PBS America (28)">PBS America (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="33088" xmltv_id="BBC Parliament (28)">BBC Parliament (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="32640" xmltv_id="BBC News HD (28)">BBC News HD (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="896896" xmltv_id="Bloomberg HD (28)">Bloomberg HD (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="897600" xmltv_id="CNBC UK (28)">CNBC UK (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="901312" xmltv_id="Euronews English (28)">Euronews English (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="927040" xmltv_id="Smithsonian Channel UK">Smithsonian Channel UK</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="928320" xmltv_id="CNBC HD">CNBC HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="789952" xmltv_id="CGTN (28)">CGTN (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="30272" xmltv_id="PCNE (28)">PCNE (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="30144" xmltv_id="NHK World HD (28)">NHK World HD (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="790016" xmltv_id="RT HD (28)">RT HD (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="896576" xmltv_id="TRT World (28)">TRT World (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="897728" xmltv_id="TVC News (28)">TVC News (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="901824" xmltv_id="Times Now - India (28)">Times Now - India (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="908800" xmltv_id="FreeSports (28)">FreeSports (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="974720" xmltv_id="Freesports HD">Freesports HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="30656" xmltv_id="Front Runner (28)">Front Runner (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="901760" xmltv_id="Showcase +1 (28)">Showcase +1 (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790970752" xmltv_id="Horse &amp; Country (28)">Horse &amp; Country (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="35328" xmltv_id="Pick TV (28)">Pick TV (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="35392" xmltv_id="Pick TV +1 (28)">Pick TV +1 (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="35456" xmltv_id="Challenge (28)">Challenge (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="35520" xmltv_id="Challenge+1 (28)">Challenge+1 (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="923520" xmltv_id="Paramount Network (28)">Paramount Network (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="914752" xmltv_id="Sony Crime (28)">Sony Crime (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="914816" xmltv_id="Sony Crime +1 (28)">Sony Crime +1 (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790987456" xmltv_id="CBS Reality (28)">CBS Reality (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="35648" xmltv_id="CBS Reality +1 (28)">CBS Reality +1 (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="35712" xmltv_id="CBS Action (28)">CBS Action (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="35776" xmltv_id="CBS Drama (28)">CBS Drama (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="882688" xmltv_id="Drama (28)">Drama (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="885952" xmltv_id="Tru TV (28)">Tru TV (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="36736" xmltv_id="True Entertainment (28)">True Entertainment (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="34176" xmltv_id="True Entertainment +1 (28)">True Entertainment +1 (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="36224" xmltv_id="Film4 (28)">Film4 (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="36288" xmltv_id="Film4 +1 (28)">Film4 +1 (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="36352" xmltv_id="True Movies (28)">True Movies (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="36416" xmltv_id="True Movies 2 (28)">True Movies 2 (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="36480" xmltv_id="Movies4Men (28)">Movies4Men (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="36544" xmltv_id="Movies4Men +1 (28)">Movies4Men +1 (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="926016" xmltv_id="Sony Movies">Sony Movies</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="926080" xmltv_id="Sony Movies +1">Sony Movies +1</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="885824" xmltv_id="Talking Pictures (28)">Talking Pictures (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="36096" xmltv_id="Horror Channel (28)">Horror Channel (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="36160" xmltv_id="Horror Channel+1 (28)">Horror Channel+1 (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="34240" xmltv_id="CBBC HD (28)">CBBC HD (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="34304" xmltv_id="CBeebies HD (28)">CBeebies HD (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="34368" xmltv_id="CITV U.K. (28)">CITV U.K. (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="34432" xmltv_id="Pop Max (28)">Pop Max (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="34496" xmltv_id="Pop (28)">Pop (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="33536" xmltv_id="Pop Max +1 (28)">Pop Max +1 (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="33600" xmltv_id="Pop +1 (28)">Pop +1 (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="33664" xmltv_id="Tiny Pop (28)">Tiny Pop (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="33728" xmltv_id="Tiny Pop +1 (28)">Tiny Pop +1 (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="33856" xmltv_id="S4C Digidol (28)">S4C Digidol (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="924032" xmltv_id="Your TV International (28)">Your TV International (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="927616" xmltv_id="Retro Movies">Retro Movies</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="741504" xmltv_id="The Box UK (28)">The Box UK (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="30720" xmltv_id="ABN TV (28)">ABN TV (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="741824" xmltv_id="VOX Africa (28)">VOX Africa (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="891264" xmltv_id="ROK TV (28)">ROK TV (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="922752" xmltv_id="YANGA! (28)">YANGA! (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="32896" xmltv_id="The Vault">The Vault</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="927872" xmltv_id="Chart Show Hits">Chart Show Hits</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="32832" xmltv_id="Chart Show TV (28)">Chart Show TV (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="922816" xmltv_id="Now 80s (28)">Now 80s (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="923008" xmltv_id="Now 90s (28)">Now 90s (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="923712" xmltv_id="Massive R&amp;B (28)">Massive R&amp;B (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="741696" xmltv_id="Kiss TV (28)">Kiss TV (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="32192" xmltv_id="Clubland TV (28)">Clubland TV (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="883136" xmltv_id="Keep it Country (28)">Keep it Country (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="784896" xmltv_id="TV Record HD UK  (28)">TV Record HD UK  (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="30528" xmltv_id="BEN (28)">BEN (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="32000" xmltv_id="Box Upfront (28)">Box Upfront (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="741632" xmltv_id="Box Hits! (28)">Box Hits! (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="31680" xmltv_id="Magic (28)">Magic (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="29952" xmltv_id="QVC (28)">QVC (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="907072" xmltv_id="JML Direct (28)">JML Direct (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="914304" xmltv_id="High Street TV 1 (28)">High Street TV 1 (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="31808" xmltv_id="Brit Asia TV (28)">Brit Asia TV (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="895552" xmltv_id="Bangla TV (28)">Bangla TV (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="900288" xmltv_id="Arirang HD (28)">Arirang HD (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="30976" xmltv_id="Aastha (28)">Aastha (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="741568" xmltv_id="Kerrang (28)">Kerrang (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="30784" xmltv_id="PTV Prime (28)">PTV Prime (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="30912" xmltv_id="Geo Tez (28)">Geo Tez (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="907136" xmltv_id="Geo TV (28)">Geo TV (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="31104" xmltv_id="Geo News (28)">Geo News (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="921792" xmltv_id="Freesat EPG (28)">Freesat EPG (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="30400" xmltv_id="Abu Dhabi TV (28)">Abu Dhabi TV (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="31360" xmltv_id="Takbeer TV (28)">Takbeer TV (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="31424" xmltv_id="Channel S (28)">Channel S (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="30464" xmltv_id="Hidayat TV (28)">Hidayat TV (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="29888" xmltv_id="BBC Red Button 1 (28)">BBC Red Button 1 (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="974336" xmltv_id="BBC Red Button HD (28)">BBC Red Button HD (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790968640" xmltv_id="BVN (13)">BVN (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="591400832" xmltv_id="Rai Uno (13)">Rai Uno (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="3904" xmltv_id="Rai Due (13)">Rai Due (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1153488640" xmltv_id="Rai Tre (13)">Rai Tre (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="885056" xmltv_id="Marcopolo (13)">Marcopolo (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="973888" xmltv_id="Automoto TV">Automoto TV</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="973952" xmltv_id="Fashion TV (13)">Fashion TV (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="895616" xmltv_id="Radio freccia TV HD (13)">Radio freccia TV HD (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="55232" xmltv_id="Radio Italia TV (13)">Radio Italia TV (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="672512" xmltv_id="RTL 102.5 HD RadioVisione (13)">RTL 102.5 HD RadioVisione (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="56384" xmltv_id="RadioNorba TV (13)">RadioNorba TV (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="900160" xmltv_id="Alice (13)">Alice (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="914112" xmltv_id="Radio Zeta Radiovisione (13)">Radio Zeta Radiovisione (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="55424" xmltv_id="Rai Storia (13)">Rai Storia (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="55488" xmltv_id="Rai Scuola (13)">Rai Scuola (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="895680" xmltv_id="Rai Gulp (13)">Rai Gulp (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="974400" xmltv_id="BFC (13)">BFC (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="55744" xmltv_id="Rai Sport (13)">Rai Sport (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="55808" xmltv_id="Supertennis HD (13)">Supertennis HD (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="55104" xmltv_id="Rai News 24 (13)">Rai News 24 (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="672832" xmltv_id="TgCom 24 (13)">TgCom 24 (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="900224" xmltv_id="UnireSat HD (13)">UnireSat HD (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="895808" xmltv_id="Wine TV (13)">Wine TV (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="926400" xmltv_id="NSL">NSL</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="673216" xmltv_id="Fishing TV (13)">Fishing TV (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="708160" xmltv_id="Archi News 24 (13)">Archi News 24 (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="707200" xmltv_id="Camera dei Deputati (13)">Camera dei Deputati (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="707136" xmltv_id="Senato Italiano (13)">Senato Italiano (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="924096" xmltv_id="RDS Social TV">RDS Social TV</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="742438016" xmltv_id="Arte HD (13)">Arte HD (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="896640" xmltv_id="Fashion One (13)">Fashion One (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="776064" xmltv_id="World Fashion Channel HD">World Fashion Channel HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="46016" xmltv_id="TV Moda (13)">TV Moda (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="899008" xmltv_id="i24 News English HD (13)">i24 News English HD (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="742144" xmltv_id="EWTN Catholic TV (13)">EWTN Catholic TV (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="56192" xmltv_id="RT Doc HD (13)">RT Doc HD (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="46144" xmltv_id="KBS World HD (13)">KBS World HD (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="885184" xmltv_id="1TVRUS Europe (13)">1TVRUS Europe (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="923904" xmltv_id="Radio Italia Rap TV (13)">Radio Italia Rap TV (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="55872" xmltv_id="SRF Info HD (13)">SRF Info HD (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="673472" xmltv_id="RTP International (13)">RTP International (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="925952" xmltv_id="Mediasport TV">Mediasport TV</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="973632" xmltv_id="RTL 102.5 Doc">RTL 102.5 Doc</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="742272" xmltv_id="Hispan TV (13)">Hispan TV (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="709760" xmltv_id="Kanali Voulis (13)">Kanali Voulis (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="709824" xmltv_id="Rik Sat (13)">Rik Sat (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="673664" xmltv_id="TV Romania Inter. (13)">TV Romania Inter. (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="706752" xmltv_id="4Fun Dance (13)">4Fun Dance (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="892736" xmltv_id="Power TV (13)">Power TV (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="709632" xmltv_id="4Fun.TV (13)">4Fun.TV (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="895872" xmltv_id="Stars TV (13)">Stars TV (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="673728" xmltv_id="Tele 5 polska (13)">Tele 5 polska (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="895936" xmltv_id="Eska Rock TV (13)">Eska Rock TV (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="46656" xmltv_id="VOX Music TV (13)">VOX Music TV (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="45888" xmltv_id="TVS-TV Silesia (13)">TVS-TV Silesia (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="896128" xmltv_id="NTL (13)">NTL (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="709440" xmltv_id="TVP Info HD (13)">TVP Info HD (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="928448" xmltv_id="Canal Yek (13)">Canal Yek (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="924224" xmltv_id="Bartar TV (13)">Bartar TV (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="902464" xmltv_id="Nuta TV (13)">Nuta TV (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="712192" xmltv_id="BBC Persian (13)">BBC Persian (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="55936" xmltv_id="RTR Planeta (13)">RTR Planeta (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="711104" xmltv_id="Russia 24 (13)">Russia 24 (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="886144" xmltv_id="ERT World (13)">ERT World (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="888512" xmltv_id="Manoto HD (13)">Manoto HD (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="892032" xmltv_id="Euronews English HD (13)">Euronews English HD (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="706816" xmltv_id="Voice of America (13)">Voice of America (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="896512" xmltv_id="VOA TV 2 (13)">VOA TV 2 (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="897536" xmltv_id="CNBC (13)">CNBC (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="899072" xmltv_id="i24 News Francais HD (13)">i24 News Francais HD (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="925888" xmltv_id="PMC (13)">PMC (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="921920" xmltv_id="NASA HDTV (13)">NASA HDTV (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="46080" xmltv_id="BBC Arabic TV (13)">BBC Arabic TV (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="46272" xmltv_id="Al Aoula Inter 1 (13)">Al Aoula Inter 1 (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="46336" xmltv_id="2M Monde (13)">2M Monde (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="46400" xmltv_id="Arriadia 3 (13)">Arriadia 3 (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="46464" xmltv_id="Arrabiaa 4 (13)">Arrabiaa 4 (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="46528" xmltv_id="Al Maghribiyah 5 (13)">Al Maghribiyah 5 (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="46592" xmltv_id="Al Masriyah (13)">Al Masriyah (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="46720" xmltv_id="Medi 1 Sat (13)">Medi 1 Sat (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="46848" xmltv_id="Al Jazeera Mubasher (13)">Al Jazeera Mubasher (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="46912" xmltv_id="Al Jazeera Documentary (13)">Al Jazeera Documentary (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="675008" xmltv_id="Abu Dhabi TV">Abu Dhabi TV</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="47040" xmltv_id="AD SPORT1 (13)">AD SPORT1 (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="742592" xmltv_id="YAS Sports (13)">YAS Sports (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="47104" xmltv_id="Dubai Al Oula (13)">Dubai Al Oula (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="47168" xmltv_id="Dubai Sports 3 HD (13)">Dubai Sports 3 HD (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="927744" xmltv_id="TRT Arabi">TRT Arabi</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="47232" xmltv_id="Sama Dubai HD (13)">Sama Dubai HD (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="47296" xmltv_id="AL SHARQIYA HD (13)">AL SHARQIYA HD (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="47360" xmltv_id="Al Arabia (13)">Al Arabia (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="47424" xmltv_id="Tunis 7 (13)">Tunis 7 (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="47488" xmltv_id="Canal Algerie (13)">Canal Algerie (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="47808" xmltv_id="Thai TV Global Network  (13)">Thai TV Global Network  (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="47552" xmltv_id="CCTV 4 (13)">CCTV 4 (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="742656" xmltv_id="CNC World (13)">CNC World (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="900608" xmltv_id="Euronews (13)">Euronews (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="900672" xmltv_id="Euronews (Greek)">Euronews (Greek)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="900736" xmltv_id="Euronews (Hungary)">Euronews (Hungary)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="900800" xmltv_id="Euronews (Russian)">Euronews (Russian)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="911168" xmltv_id="Sat.tv">Sat.tv</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="420156096" xmltv_id="ARD-Das Erste">ARD-Das Erste</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="420156160" xmltv_id="ZDF">ZDF</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="419434112" xmltv_id="3sat">3sat</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="740736" xmltv_id="NDR Fernsehen">NDR Fernsehen</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="419445120" xmltv_id="Bayerisches Fernsehen">Bayerisches Fernsehen</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="727296" xmltv_id="ANIXE SD">ANIXE SD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="888704" xmltv_id="R1 (Russia)">R1 (Russia)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="711040" xmltv_id="Russia Today">Russia Today</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="706944" xmltv_id="sonnenklar.TV HD">sonnenklar.TV HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="888640" xmltv_id="Zee One HD">Zee One HD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="789248" xmltv_id="TV Record">TV Record</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="784192" xmltv_id="SES UHD Demo Channel">SES UHD Demo Channel</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="784256" xmltv_id="UHD1 by ASTRA">UHD1 by ASTRA</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="784320" xmltv_id="PEARL TV UHD">PEARL TV UHD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="891200" xmltv_id="Fashion TV UHD (13)">Fashion TV UHD (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="784448" xmltv_id="Fashion 4K">Fashion 4K</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="921984" xmltv_id="NASA TV UHD (13)">NASA TV UHD (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="913728" xmltv_id="QVC Deutschland UHD">QVC Deutschland UHD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="891712" xmltv_id="Hotbird 4K1 (13)">Hotbird 4K1 (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="892992" xmltv_id="Astra UHD Demo">Astra UHD Demo</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="893056" xmltv_id="Astra Ultra HD Demo 2">Astra Ultra HD Demo 2</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="893184" xmltv_id="SES UHD Demo2">SES UHD Demo2</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790972672" xmltv_id="NPO Radio 1">NPO Radio 1</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1791927808" xmltv_id="NPO Radio 2">NPO Radio 2</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1791927872" xmltv_id="NPO 3FM">NPO 3FM</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1791927936" xmltv_id="NPO Radio 4">NPO Radio 4</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790972928" xmltv_id="NPO Radio 5">NPO Radio 5</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790973120" xmltv_id="Sky Radio">Sky Radio</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1791928128" xmltv_id="Radio 538">Radio 538</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="5504" xmltv_id="Radio 10">Radio 10</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="5568" xmltv_id="Arrow Classic Rock">Arrow Classic Rock</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790973696" xmltv_id="Radio Veronica">Radio Veronica</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="13376" xmltv_id="Classic FM">Classic FM</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="5952" xmltv_id="FunX">FunX</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="5696" xmltv_id="SLAM!">SLAM!</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790979136" xmltv_id="100% NL">100% NL</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="960256" xmltv_id="BNR Nieuwsradio">BNR Nieuwsradio</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="944448" xmltv_id="L1 Radio">L1 Radio</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="12672" xmltv_id="Radio Gelderland">Radio Gelderland</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="12608" xmltv_id="Radio Oost">Radio Oost</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790974080" xmltv_id="VRT Radio1">VRT Radio1</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790974592" xmltv_id="VRT Radio2">VRT Radio2</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790974464" xmltv_id="MNM">MNM</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790974528" xmltv_id="Studio Brussel">Studio Brussel</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1790974144" xmltv_id="Klara">Klara</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="42304" xmltv_id="BBC World Service">BBC World Service</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="29056" xmltv_id="Bayern 1">Bayern 1</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="29120" xmltv_id="Bayern 2">Bayern 2</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="29184" xmltv_id="BAYERN 3">BAYERN 3</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="29248" xmltv_id="Bayern4klassik">Bayern4klassik</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="29312" xmltv_id="B5 aktuell">B5 aktuell</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="29376" xmltv_id="BAYERN plus">BAYERN plus</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="29440" xmltv_id="PULS">PULS</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="29504" xmltv_id="hr1">hr1</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="29568" xmltv_id="hr2">hr2</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="29632" xmltv_id="hr3">hr3</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="29696" xmltv_id="hr4">hr4</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="29824" xmltv_id="hr-info">hr-info</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="29760" xmltv_id="YOU FM">YOU FM</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="48640" xmltv_id="MDR1 SACHSEN">MDR1 SACHSEN</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="48704" xmltv_id="MDR1 S-Anhalt">MDR1 S-Anhalt</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="48768" xmltv_id="MDR1 Thuringen">MDR1 Thuringen</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="48832" xmltv_id="NDR FIGARO">NDR FIGARO</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="48896" xmltv_id="MDR INFO">MDR INFO</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="48576" xmltv_id="MDR JUMP">MDR JUMP</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="49792" xmltv_id="SPUTNIK">SPUTNIK</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="49408" xmltv_id="NDR Welle Nord">NDR Welle Nord</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="49216" xmltv_id="NDR1 Radio MV">NDR1 Radio MV</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="49280" xmltv_id="NDR Niedersachsen">NDR Niedersachsen</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="743232" xmltv_id="NDR2">NDR2</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="49152" xmltv_id="NDR 90.3">NDR 90.3</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="48960" xmltv_id="NDR Kultur">NDR Kultur</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="49024" xmltv_id="NDR info">NDR info</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="49344" xmltv_id="NDR Info Spezial">NDR Info Spezial</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="49088" xmltv_id="N-JOY">N-JOY</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="53184" xmltv_id="Bremen Eins">Bremen Eins</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="53248" xmltv_id="Bremen Vier">Bremen Vier</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="52672" xmltv_id="Nordwestradio">Nordwestradio</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="49472" xmltv_id="Info Radio">Info Radio</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="49536" xmltv_id="kulturradio">kulturradio</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="743296" xmltv_id="radioeins">radioeins</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="49600" xmltv_id="Antenne Brandenburg">Antenne Brandenburg</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="49664" xmltv_id="88acht">88acht</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="52928" xmltv_id="Fritz">Fritz</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="49856" xmltv_id="SR1 (Europawelle)">SR1 (Europawelle)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="49920" xmltv_id="SR2 (Kulturradio)">SR2 (Kulturradio)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="49728" xmltv_id="SR3 (Saarlandwelle)">SR3 (Saarlandwelle)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="419480384" xmltv_id="SWR1 BW">SWR1 BW</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="50048" xmltv_id="SWR1 RP">SWR1 RP</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="50112" xmltv_id="SWR2">SWR2</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="50176" xmltv_id="SWR3">SWR3</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="50240" xmltv_id="SWR4 BW">SWR4 BW</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="50304" xmltv_id="SWR4 RP">SWR4 RP</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="50432" xmltv_id="SWR Aktuell">SWR Aktuell</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="50368" xmltv_id="DASDING">DASDING</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="50496" xmltv_id="1LIVE">1LIVE</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="50880" xmltv_id="1LIVE diGGi">1LIVE diGGi</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="50560" xmltv_id="WDR 2">WDR 2</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="50944" xmltv_id="Kiraka">Kiraka</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="6848" xmltv_id="WDR 3">WDR 3</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="50688" xmltv_id="WDR 4">WDR 4</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="50752" xmltv_id="WDR 5">WDR 5</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="714560" xmltv_id="WDR Event">WDR Event</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="50816" xmltv_id="WDR Cosmo">WDR Cosmo</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="743360" xmltv_id="JAM FM">JAM FM</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="51072" xmltv_id="Deutschlandfunk Kultur">Deutschlandfunk Kultur</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="7424" xmltv_id="Deutschlandfunk">Deutschlandfunk</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="52992" xmltv_id="Deutschlandfunk Nova">Deutschlandfunk Nova</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="896960" xmltv_id="NDR Plus">NDR Plus</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="28992" xmltv_id="NDR Blue">NDR Blue</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="52096" xmltv_id="Rockantenne">Rockantenne</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="40768" xmltv_id="RTL Radio">RTL Radio</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="28928" xmltv_id="ANTENNE BAYERN">ANTENNE BAYERN</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="52416" xmltv_id="sunshine live">sunshine live</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="52224" xmltv_id="HIT RADIO FFH">HIT RADIO FFH</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="53376" xmltv_id="ffn Digital">ffn Digital</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="52544" xmltv_id="planet radio">planet radio</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="52352" xmltv_id="harmony fm">harmony fm</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="52608" xmltv_id="Klassik Radio">Klassik Radio</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="897024" xmltv_id="DR Dokumente &amp; Debatten">DR Dokumente &amp; Debatten</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="887104" xmltv_id="Radio Lebensquelle">Radio Lebensquelle</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="53056" xmltv_id="Radio Freundes-Dienst">Radio Freundes-Dienst</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="724288" xmltv_id="Hitradio OE3">Hitradio OE3</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="52480" xmltv_id="Mallorca Inselradio">Mallorca Inselradio</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="52864" xmltv_id="Radio Paloma">Radio Paloma</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="743424" xmltv_id="Radio Regenbogen">Radio Regenbogen</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="944320" xmltv_id="Regenbogen 2">Regenbogen 2</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="52800" xmltv_id="Radio Horeb">Radio Horeb</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="52736" xmltv_id="Radio New Hope">Radio New Hope</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="51264" xmltv_id="OE1 DD">OE1 DD</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="28800" xmltv_id="RTL Radio Letzebuerg">RTL Radio Letzebuerg</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="28864" xmltv_id="Radio 100,7 Letzebuerg">Radio 100,7 Letzebuerg</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="42752" xmltv_id="RTL">RTL</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="42816" xmltv_id="RTL 2 (F)">RTL 2 (F)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="43776" xmltv_id="France Info">France Info</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="43904" xmltv_id="France Inter">France Inter</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="28736" xmltv_id="FIP">FIP</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="44288" xmltv_id="France Bleu">France Bleu</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="43712" xmltv_id="France Culture">France Culture</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="43968" xmltv_id="France Musique">France Musique</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="45248" xmltv_id="Le Mouv'">Le Mouv'</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="44608" xmltv_id="RFI Int">RFI Int</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="43072" xmltv_id="EUROPE 1">EUROPE 1</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="43328" xmltv_id="Virgin Radio Fr">Virgin Radio Fr</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="44672" xmltv_id="RMC INFO">RMC INFO</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="44800" xmltv_id="Mc Doualiya">Mc Doualiya</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="43008" xmltv_id="NRJ FR">NRJ FR</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="43392" xmltv_id="SKYROCK">SKYROCK</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="43648" xmltv_id="CHERIE FM">CHERIE FM</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="45376" xmltv_id="CONTACT FM">CONTACT FM</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="45440" xmltv_id="OUI FM">OUI FM</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="43840" xmltv_id="RFM">RFM</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="64384" xmltv_id="NOVA">NOVA</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="45312" xmltv_id="RADIO FG">RADIO FG</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="44736" xmltv_id="RIRE ET CHANSONS">RIRE ET CHANSONS</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="42880" xmltv_id="FUN RADIO">FUN RADIO</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1791013504" xmltv_id="Nostalgie (FR)">Nostalgie (FR)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="42944" xmltv_id="RADIO CLASSIQUE">RADIO CLASSIQUE</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="44928" xmltv_id="TSF Jazz">TSF Jazz</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="45184" xmltv_id="BFM Business Radio">BFM Business Radio</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="45568" xmltv_id="BEUR FM">BEUR FM</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="45632" xmltv_id="SUD RADIO">SUD RADIO</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="714176" xmltv_id="Jazz Radio">Jazz Radio</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="28352" xmltv_id="RNE Radio Nacional">RNE Radio Nacional</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="28480" xmltv_id="RNE Radio 3">RNE Radio 3</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="28544" xmltv_id="RNE Radio 4">RNE Radio 4</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="28608" xmltv_id="RNE Radio 5 Todo Noticias">RNE Radio 5 Todo Noticias</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="28416" xmltv_id="RNE Radio Clasica">RNE Radio Clasica</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="28672" xmltv_id="RNE Radio Exterior">RNE Radio Exterior</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="886720" xmltv_id="ERA Proto (13)">ERA Proto (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="41984" xmltv_id="Beat JM">Beat JM</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="42048" xmltv_id="Radio Beat">Radio Beat</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="880704" xmltv_id="CRo JAZZ">CRo JAZZ</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="42560" xmltv_id="CRo Radiozurnal">CRo Radiozurnal</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="44544" xmltv_id="CRo Radio Praha">CRo Radio Praha</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="886656" xmltv_id="ERA Deutero">ERA Deutero</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="886592" xmltv_id="ERA Trito">ERA Trito</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="886528" xmltv_id="ERA Sport">ERA Sport</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="886464" xmltv_id="ERA Voice of Greece">ERA Voice of Greece</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="51328" xmltv_id="OE1">OE1</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="51904" xmltv_id="OEW2">OEW2</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="51520" xmltv_id="OE2N">OE2N</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="51392" xmltv_id="OE2B">OE2B</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="51584" xmltv_id="OE2O">OE2O</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="51648" xmltv_id="OE2S">OE2S</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="51776" xmltv_id="OE2T">OE2T</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="51840" xmltv_id="OE2V">OE2V</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="51712" xmltv_id="OE2ST">OE2ST</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="51456" xmltv_id="OE2K">OE2K</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="51968" xmltv_id="OE 3">OE 3</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="52032" xmltv_id="FM4">FM4</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="51200" xmltv_id="U1 Tirol">U1 Tirol</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="52160" xmltv_id="Radio Maria">Radio Maria</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="41920" xmltv_id="Country Radio">Country Radio</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="944192" xmltv_id="Scala Radio">Scala Radio</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="8256" xmltv_id="BBC Radio 1 (28)">BBC Radio 1 (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="53504" xmltv_id="BBC 1 Xtra (28)">BBC 1 Xtra (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="9472" xmltv_id="BBC Radio 2 (28)">BBC Radio 2 (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="9536" xmltv_id="BBC Radio 3 (28)">BBC Radio 3 (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="10176" xmltv_id="BBC Radio 4 FM (28)">BBC Radio 4 FM (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="53760" xmltv_id="BBC Radio Five Live (28)">BBC Radio Five Live (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="53824" xmltv_id="BBC Radio Five Live Sport (28)">BBC Radio Five Live Sport (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="53888" xmltv_id="BBC 6 Music (28)">BBC 6 Music (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="53952" xmltv_id="BBC Radio 4 Extra (28)">BBC Radio 4 Extra (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="54016" xmltv_id="BBC London (28)">BBC London (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="54080" xmltv_id="Capital FM (28)">Capital FM (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="54528" xmltv_id="Planet Rock (28)">Planet Rock (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="54208" xmltv_id="Classic FM uk (28)">Classic FM uk (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="54272" xmltv_id="Gold (28)">Gold (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="927680" xmltv_id="Virgin Radio UK">Virgin Radio UK</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="54848" xmltv_id="Absolute 90s (28)">Absolute 90s (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="54784" xmltv_id="Absolute 80s (28)">Absolute 80s (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="776256" xmltv_id="Absolute (28)">Absolute (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="54144" xmltv_id="Absolute Classic Rock (28)">Absolute Classic Rock (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="54400" xmltv_id="Jazz FM (28)">Jazz FM (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="54464" xmltv_id="talkSPORT (28)">talkSPORT (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="776320" xmltv_id="BFBS Radio (28)">BFBS Radio (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="54592" xmltv_id="Capital Xtra (28)">Capital Xtra (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="54656" xmltv_id="Smooth (28)">Smooth (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="54720" xmltv_id="Radio X (28)">Radio X (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="891136" xmltv_id="WRN Europe (28)">WRN Europe (28)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="899904" xmltv_id="Radio Monte Carlo">Radio Monte Carlo</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="718016" xmltv_id="Rai GR Parlamento">Rai GR Parlamento</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="718208" xmltv_id="Rai Isoradio">Rai Isoradio</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="718144" xmltv_id="Rai Radio Tutta Italiana">Rai Radio Tutta Italiana</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="718080" xmltv_id="Rai Radio 5 Classica">Rai Radio 5 Classica</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="714240" xmltv_id="RFI Francais (13)">RFI Francais (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="714368" xmltv_id="Radio 2M (13)">Radio 2M (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="717824" xmltv_id="RADIOUNO (13)">RADIOUNO (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="717888" xmltv_id="RADIODUE (13)">RADIODUE (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="717952" xmltv_id="RADIOTRE (13)">RADIOTRE (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="55296" xmltv_id="RTL 102.5 (13)">RTL 102.5 (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="718464" xmltv_id="DEEJAY (13)">DEEJAY (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="718528" xmltv_id="CAPITAL (13)">CAPITAL (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="718912" xmltv_id="R.ITALIA s.m.i. (13)">R.ITALIA s.m.i. (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="720064" xmltv_id="RSI-Rete Uno (13)">RSI-Rete Uno (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="720128" xmltv_id="RSI-Rete Due (13)">RSI-Rete Due (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="720192" xmltv_id="RSI-Rete Tre (13)">RSI-Rete Tre (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="720256" xmltv_id="RTS-La 1ere (13)">RTS-La 1ere (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="720320" xmltv_id="RTS-Espace 2 (13)">RTS-Espace 2 (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="720384" xmltv_id="RTS-Couleur3 (13)">RTS-Couleur3 (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="720448" xmltv_id="RTS-Option Musique (13)">RTS-Option Musique (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="720512" xmltv_id="RSR Classique (13)">RSR Classique (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="715904" xmltv_id="SRF 1 (13)">SRF 1 (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="715968" xmltv_id="SRF 2 Kultur (13)">SRF 2 Kultur (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="716032" xmltv_id="SRF 3 (13)">SRF 3 (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="716480" xmltv_id="SRF 4 News (13)">SRF 4 News (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="716096" xmltv_id="SRF Virus (13)">SRF Virus (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="716160" xmltv_id="SRF Musikwelle (13)">SRF Musikwelle (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="716288" xmltv_id="Swiss Classic (13)">Swiss Classic (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="716352" xmltv_id="Swiss Pop (13)">Swiss Pop (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="716416" xmltv_id="Swiss Jazz (13)">Swiss Jazz (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="716224" xmltv_id="SRG-Rumantsch (13)">SRG-Rumantsch (13)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="928128" xmltv_id="TESTS7">TESTS7</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="344841792" xmltv_id="WAR (Monitor)">WAR (Monitor)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="420154048" xmltv_id="Eurosport 2 DE (Monitor)">Eurosport 2 DE (Monitor)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="742430912" xmltv_id="AB3 (Monitor)">AB3 (Monitor)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="420153984" xmltv_id="AXN Deutschland (Monitor)">AXN Deutschland (Monitor)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="420153728" xmltv_id="kabel eins CLASSICS (Monitor)">kabel eins CLASSICS (Monitor)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="420153792" xmltv_id="Planet (Monitor)">Planet (Monitor)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1791001024" xmltv_id="Eclips TV (Monitor)">Eclips TV (Monitor)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="420154112" xmltv_id="sportdigital.tv (Monitor)">sportdigital.tv (Monitor)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1791877952" xmltv_id="Eleven Sports 1 (Monitor)">Eleven Sports 1 (Monitor)</channel>
+    <channel update="i" site="canaldigitaal.nl.E" site_id="1791878016" xmltv_id="Eleven Sports 2 (Monitor)">Eleven Sports 2 (Monitor)</channel>
+  </channels>
+</site>

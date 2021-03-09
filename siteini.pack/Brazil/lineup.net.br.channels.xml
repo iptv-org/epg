@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site generator-info-name="WebGrab+Plus/w MDB &amp; REX Postprocess -- version V2.1.8 -- Jan van Straaten" site="lineup.net.br">
+  <channels>
+    <channel update="i" site="lineup.net.br" site_id="360607" xmltv_id="100% Vida">100% Vida</channel>
+    <channel update="i" site="lineup.net.br" site_id="240441" xmltv_id="1001 Noites">1001 Noites</channel>
+    <channel update="i" site="lineup.net.br" site_id="546639" xmltv_id="3ª Via TV">3ª Via TV</channel>
+    <channel update="i" site="lineup.net.br" site_id="334659" xmltv_id="98 Live">98 Live</channel>
+    <channel update="i" site="lineup.net.br" site_id="579146" xmltv_id="A&amp;E">A&amp;E</channel>
+    <channel update="i" site="lineup.net.br" site_id="813113" xmltv_id="Agro Canal">Agro Canal</channel>
+    <channel update="i" site="lineup.net.br" site_id="740722" xmltv_id="AgroBrasil TV">AgroBrasil TV</channel>
+    <channel update="i" site="lineup.net.br" site_id="599610" xmltv_id="AlJazeera">AlJazeera</channel>
+    <channel update="i" site="lineup.net.br" site_id="121723" xmltv_id="AmazonSat">AmazonSat</channel>
+    <channel update="i" site="lineup.net.br" site_id="310177" xmltv_id="AMC">AMC</channel>
+    <channel update="i" site="lineup.net.br" site_id="992823" xmltv_id="Animal Planet">Animal Planet</channel>
+    <channel update="i" site="lineup.net.br" site_id="462230" xmltv_id="Arte 1">Arte 1</channel>
+    <channel update="i" site="lineup.net.br" site_id="334752" xmltv_id="AXN">AXN</channel>
+    <channel update="i" site="lineup.net.br" site_id="367466" xmltv_id="BabyTV">BabyTV</channel>
+    <channel update="i" site="lineup.net.br" site_id="829450" xmltv_id="Bah!">Bah!</channel>
+    <channel update="i" site="lineup.net.br" site_id="807711" xmltv_id="Band">Band</channel>
+    <channel update="i" site="lineup.net.br" site_id="490881" xmltv_id="Band Amazonas">Band Amazonas</channel>
+    <channel update="i" site="lineup.net.br" site_id="302200" xmltv_id="Band Aracaju">Band Aracaju</channel>
+    <channel update="i" site="lineup.net.br" site_id="464452" xmltv_id="Band Bahia">Band Bahia</channel>
+    <channel update="i" site="lineup.net.br" site_id="991804" xmltv_id="Band Brasília">Band Brasília</channel>
+    <channel update="i" site="lineup.net.br" site_id="654486" xmltv_id="Band Campinas">Band Campinas</channel>
+    <channel update="i" site="lineup.net.br" site_id="351264" xmltv_id="Band Curitiba">Band Curitiba</channel>
+    <channel update="i" site="lineup.net.br" site_id="364733" xmltv_id="Band Maceió">Band Maceió</channel>
+    <channel update="i" site="lineup.net.br" site_id="926420" xmltv_id="Band Maranhão">Band Maranhão</channel>
+    <channel update="i" site="lineup.net.br" site_id="645520" xmltv_id="Band Minas">Band Minas</channel>
+    <channel update="i" site="lineup.net.br" site_id="458941" xmltv_id="Band Natal">Band Natal</channel>
+    <channel update="i" site="lineup.net.br" site_id="598446" xmltv_id="Band Paulista">Band Paulista</channel>
+    <channel update="i" site="lineup.net.br" site_id="248906" xmltv_id="Band Piauí">Band Piauí</channel>
+    <channel update="i" site="lineup.net.br" site_id="168389" xmltv_id="Band Rio">Band Rio</channel>
+    <channel update="i" site="lineup.net.br" site_id="520339" xmltv_id="Band RS">Band RS</channel>
+    <channel update="i" site="lineup.net.br" site_id="286037" xmltv_id="Band SP">Band SP</channel>
+    <channel update="i" site="lineup.net.br" site_id="446219" xmltv_id="Band Tocantins">Band Tocantins</channel>
+    <channel update="i" site="lineup.net.br" site_id="870015" xmltv_id="Band Vale">Band Vale</channel>
+    <channel update="i" site="lineup.net.br" site_id="936130" xmltv_id="BandNews">BandNews</channel>
+    <channel update="i" site="lineup.net.br" site_id="513338" xmltv_id="BandSports">BandSports</channel>
+    <channel update="i" site="lineup.net.br" site_id="928860" xmltv_id="BBC World News">BBC World News</channel>
+    <channel update="i" site="lineup.net.br" site_id="475069" xmltv_id="Bem Mais TV">Bem Mais TV</channel>
+    <channel update="i" site="lineup.net.br" site_id="881787" xmltv_id="BH News">BH News</channel>
+    <channel update="i" site="lineup.net.br" site_id="983734" xmltv_id="BIS">BIS</channel>
+    <channel update="i" site="lineup.net.br" site_id="332466" xmltv_id="Bloomberg">Bloomberg</channel>
+    <channel update="i" site="lineup.net.br" site_id="919450" xmltv_id="Boa Vontade TV">Boa Vontade TV</channel>
+    <channel update="i" site="lineup.net.br" site_id="258631" xmltv_id="Boas Novas">Boas Novas</channel>
+    <channel update="i" site="lineup.net.br" site_id="377972" xmltv_id="Boomerang">Boomerang</channel>
+    <channel update="i" site="lineup.net.br" site_id="876603" xmltv_id="BYU TV">BYU TV</channel>
+    <channel update="i" site="lineup.net.br" site_id="500729" xmltv_id="Campus TV">Campus TV</channel>
+    <channel update="i" site="lineup.net.br" site_id="836835" xmltv_id="Canal 25 Jundiaí">Canal 25 Jundiaí</channel>
+    <channel update="i" site="lineup.net.br" site_id="934718" xmltv_id="Canal Adulto">Canal Adulto</channel>
+    <channel update="i" site="lineup.net.br" site_id="683243" xmltv_id="Canal Brasil">Canal Brasil</channel>
+    <channel update="i" site="lineup.net.br" site_id="255643" xmltv_id="Canal Claro">Canal Claro</channel>
+    <channel update="i" site="lineup.net.br" site_id="531325" xmltv_id="Canal de São Paulo">Canal de São Paulo</channel>
+    <channel update="i" site="lineup.net.br" site_id="117143" xmltv_id="Canal do Boi">Canal do Boi</channel>
+    <channel update="i" site="lineup.net.br" site_id="516347" xmltv_id="Canal Oi">Canal Oi</channel>
+    <channel update="i" site="lineup.net.br" site_id="727633" xmltv_id="Canal Promessas">Canal Promessas</channel>
+    <channel update="i" site="lineup.net.br" site_id="786630" xmltv_id="Canal Rural">Canal Rural</channel>
+    <channel update="i" site="lineup.net.br" site_id="307251" xmltv_id="Canal Saúde">Canal Saúde</channel>
+    <channel update="i" site="lineup.net.br" site_id="630958" xmltv_id="Canal X">Canal X</channel>
+    <channel update="i" site="lineup.net.br" site_id="167601" xmltv_id="Canção Nova">Canção Nova</channel>
+    <channel update="i" site="lineup.net.br" site_id="451714" xmltv_id="Canção Nova Paulista">Canção Nova Paulista</channel>
+    <channel update="i" site="lineup.net.br" site_id="721829" xmltv_id="Cartoon Network">Cartoon Network</channel>
+    <channel update="i" site="lineup.net.br" site_id="708378" xmltv_id="CATVE">CATVE</channel>
+    <channel update="i" site="lineup.net.br" site_id="146469" xmltv_id="CCTV">CCTV</channel>
+    <channel update="i" site="lineup.net.br" site_id="609519" xmltv_id="Central TV">Central TV</channel>
+    <channel update="i" site="lineup.net.br" site_id="946892" xmltv_id="Chef TV">Chef TV</channel>
+    <channel update="i" site="lineup.net.br" site_id="217180" xmltv_id="Cine+">Cine+</channel>
+    <channel update="i" site="lineup.net.br" site_id="948716" xmltv_id="CineBrasil TV">CineBrasil TV</channel>
+    <channel update="i" site="lineup.net.br" site_id="860020" xmltv_id="Cinemax">Cinemax</channel>
+    <channel update="i" site="lineup.net.br" site_id="291898" xmltv_id="Climatempo Bio">Climatempo Bio</channel>
+    <channel update="i" site="lineup.net.br" site_id="731796" xmltv_id="CNNe">CNNe</channel>
+    <channel update="i" site="lineup.net.br" site_id="859236" xmltv_id="CNNi">CNNi</channel>
+    <channel update="i" site="lineup.net.br" site_id="499901" xmltv_id="CNT">CNT</channel>
+    <channel update="i" site="lineup.net.br" site_id="692499" xmltv_id="CNT Bahia">CNT Bahia</channel>
+    <channel update="i" site="lineup.net.br" site_id="421706" xmltv_id="CNT Curitiba">CNT Curitiba</channel>
+    <channel update="i" site="lineup.net.br" site_id="642377" xmltv_id="CNT RJ">CNT RJ</channel>
+    <channel update="i" site="lineup.net.br" site_id="145094" xmltv_id="CNT RS">CNT RS</channel>
+    <channel update="i" site="lineup.net.br" site_id="929310" xmltv_id="CNT Tropical">CNT Tropical</channel>
+    <channel update="i" site="lineup.net.br" site_id="107732" xmltv_id="CNU">CNU</channel>
+    <channel update="i" site="lineup.net.br" site_id="613354" xmltv_id="Combo Cine">Combo Cine</channel>
+    <channel update="i" site="lineup.net.br" site_id="849602" xmltv_id="Comedy Central">Comedy Central</channel>
+    <channel update="i" site="lineup.net.br" site_id="603657" xmltv_id="Conecta TV">Conecta TV</channel>
+    <channel update="i" site="lineup.net.br" site_id="928084" xmltv_id="Conexão BR">Conexão BR</channel>
+    <channel update="i" site="lineup.net.br" site_id="822273" xmltv_id="Cultura">Cultura</channel>
+    <channel update="i" site="lineup.net.br" site_id="431796" xmltv_id="Curta!">Curta!</channel>
+    <channel update="i" site="lineup.net.br" site_id="579063" xmltv_id="Discovery Channel">Discovery Channel</channel>
+    <channel update="i" site="lineup.net.br" site_id="797977" xmltv_id="Discovery Civilization">Discovery Civilization</channel>
+    <channel update="i" site="lineup.net.br" site_id="403129" xmltv_id="Discovery Home &amp; Health">Discovery Home &amp; Health</channel>
+    <channel update="i" site="lineup.net.br" site_id="140971" xmltv_id="Discovery Kids">Discovery Kids</channel>
+    <channel update="i" site="lineup.net.br" site_id="467961" xmltv_id="Discovery Science">Discovery Science</channel>
+    <channel update="i" site="lineup.net.br" site_id="505519" xmltv_id="Discovery Theater">Discovery Theater</channel>
+    <channel update="i" site="lineup.net.br" site_id="830058" xmltv_id="Discovery Turbo">Discovery Turbo</channel>
+    <channel update="i" site="lineup.net.br" site_id="733482" xmltv_id="Discovery World">Discovery World</channel>
+    <channel update="i" site="lineup.net.br" site_id="199977" xmltv_id="Disney Channel">Disney Channel</channel>
+    <channel update="i" site="lineup.net.br" site_id="170613" xmltv_id="Disney Junior">Disney Junior</channel>
+    <channel update="i" site="lineup.net.br" site_id="233631" xmltv_id="Disney XD">Disney XD</channel>
+    <channel update="i" site="lineup.net.br" site_id="115882" xmltv_id="DogTV">DogTV</channel>
+    <channel update="i" site="lineup.net.br" site_id="546867" xmltv_id="DW-Deutsch+">DW-Deutsch+</channel>
+    <channel update="i" site="lineup.net.br" site_id="395837" xmltv_id="E!">E!</channel>
+    <channel update="i" site="lineup.net.br" site_id="101328" xmltv_id="EPTV Campinas">EPTV Campinas</channel>
+    <channel update="i" site="lineup.net.br" site_id="200565" xmltv_id="EPTV Central">EPTV Central</channel>
+    <channel update="i" site="lineup.net.br" site_id="735184" xmltv_id="EPTV Ribeirão">EPTV Ribeirão</channel>
+    <channel update="i" site="lineup.net.br" site_id="352961" xmltv_id="EPTV Sul de Minas">EPTV Sul de Minas</channel>
+    <channel update="i" site="lineup.net.br" site_id="440135" xmltv_id="ESPN">ESPN</channel>
+    <channel update="i" site="lineup.net.br" site_id="978157" xmltv_id="ESPN 2">ESPN 2</channel>
+    <channel update="i" site="lineup.net.br" site_id="606133" xmltv_id="ESPN Brasil">ESPN Brasil</channel>
+    <channel update="i" site="lineup.net.br" site_id="662208" xmltv_id="ESPN Extra">ESPN Extra</channel>
+    <channel update="i" site="lineup.net.br" site_id="335258" xmltv_id="Esporte Interativo BR">Esporte Interativo BR</channel>
+    <channel update="i" site="lineup.net.br" site_id="153980" xmltv_id="Eurochannel">Eurochannel</channel>
+    <channel update="i" site="lineup.net.br" site_id="225228" xmltv_id="EuroNews">EuroNews</channel>
+    <channel update="i" site="lineup.net.br" site_id="976060" xmltv_id="EWTN">EWTN</channel>
+    <channel update="i" site="lineup.net.br" site_id="651932" xmltv_id="FashionTV Brasil">FashionTV Brasil</channel>
+    <channel update="i" site="lineup.net.br" site_id="259059" xmltv_id="FILM&amp;Arts">FILM&amp;Arts</channel>
+    <channel update="i" site="lineup.net.br" site_id="350650" xmltv_id="Fish TV">Fish TV</channel>
+    <channel update="i" site="lineup.net.br" site_id="412774" xmltv_id="Fonte TV">Fonte TV</channel>
+    <channel update="i" site="lineup.net.br" site_id="169477" xmltv_id="Food Network">Food Network</channel>
+    <channel update="i" site="lineup.net.br" site_id="112124" xmltv_id="Fox Channel">Fox Channel</channel>
+    <channel update="i" site="lineup.net.br" site_id="232263" xmltv_id="Fox News">Fox News</channel>
+    <channel update="i" site="lineup.net.br" site_id="682141" xmltv_id="FoxLife">FoxLife</channel>
+    <channel update="i" site="lineup.net.br" site_id="230127" xmltv_id="FoxSports">FoxSports</channel>
+    <channel update="i" site="lineup.net.br" site_id="110708" xmltv_id="FoxSports 2">FoxSports 2</channel>
+    <channel update="i" site="lineup.net.br" site_id="620771" xmltv_id="France 24">France 24</channel>
+    <channel update="i" site="lineup.net.br" site_id="855214" xmltv_id="FURG TV">FURG TV</channel>
+    <channel update="i" site="lineup.net.br" site_id="824292" xmltv_id="Futura">Futura</channel>
+    <channel update="i" site="lineup.net.br" site_id="656821" xmltv_id="FX">FX</channel>
+    <channel update="i" site="lineup.net.br" site_id="358372" xmltv_id="Gazeta">Gazeta</channel>
+    <channel update="i" site="lineup.net.br" site_id="774121" xmltv_id="Gazeta RN">Gazeta RN</channel>
+    <channel update="i" site="lineup.net.br" site_id="892895" xmltv_id="Gen TV">Gen TV</channel>
+    <channel update="i" site="lineup.net.br" site_id="188515" xmltv_id="Globo Brasília">Globo Brasília</channel>
+    <channel update="i" site="lineup.net.br" site_id="267846" xmltv_id="Globo Minas">Globo Minas</channel>
+    <channel update="i" site="lineup.net.br" site_id="770492" xmltv_id="Globo Nordeste">Globo Nordeste</channel>
+    <channel update="i" site="lineup.net.br" site_id="845525" xmltv_id="Globo Rio">Globo Rio</channel>
+    <channel update="i" site="lineup.net.br" site_id="511761" xmltv_id="Globo SP">Globo SP</channel>
+    <channel update="i" site="lineup.net.br" site_id="883806" xmltv_id="GloboNews">GloboNews</channel>
+    <channel update="i" site="lineup.net.br" site_id="407556" xmltv_id="Gloob ">Gloob </channel>
+    <channel update="i" site="lineup.net.br" site_id="870284" xmltv_id="Gloobinho">Gloobinho</channel>
+    <channel update="i" site="lineup.net.br" site_id="759036" xmltv_id="GNT">GNT</channel>
+    <channel update="i" site="lineup.net.br" site_id="115892" xmltv_id="Guia Vivo TV">Guia Vivo TV</channel>
+    <channel update="i" site="lineup.net.br" site_id="562988" xmltv_id="History">History</channel>
+    <channel update="i" site="lineup.net.br" site_id="543864" xmltv_id="History 2">History 2</channel>
+    <channel update="i" site="lineup.net.br" site_id="859999" xmltv_id="I.Sat">I.Sat</channel>
+    <channel update="i" site="lineup.net.br" site_id="826362" xmltv_id="ID: Investigação Discovery">ID: Investigação Discovery</channel>
+    <channel update="i" site="lineup.net.br" site_id="123355" xmltv_id="Ideal TV">Ideal TV</channel>
+    <channel update="i" site="lineup.net.br" site_id="979649" xmltv_id="Inova TV">Inova TV</channel>
+    <channel update="i" site="lineup.net.br" site_id="750659" xmltv_id="Inter TV Alto Litoral">Inter TV Alto Litoral</channel>
+    <channel update="i" site="lineup.net.br" site_id="213152" xmltv_id="Inter TV Cabugi">Inter TV Cabugi</channel>
+    <channel update="i" site="lineup.net.br" site_id="630033" xmltv_id="Inter TV dos Vales">Inter TV dos Vales</channel>
+    <channel update="i" site="lineup.net.br" site_id="358433" xmltv_id="Inter TV Grande Minas">Inter TV Grande Minas</channel>
+    <channel update="i" site="lineup.net.br" site_id="193847" xmltv_id="Inter TV Serra Mar">Inter TV Serra Mar</channel>
+    <channel update="i" site="lineup.net.br" site_id="220368" xmltv_id="ISTV">ISTV</channel>
+    <channel update="i" site="lineup.net.br" site_id="496801" xmltv_id="ITV">ITV</channel>
+    <channel update="i" site="lineup.net.br" site_id="315347" xmltv_id="L!ke">L!ke</channel>
+    <channel update="i" site="lineup.net.br" site_id="917950" xmltv_id="Life Channel">Life Channel</channel>
+    <channel update="i" site="lineup.net.br" site_id="820230" xmltv_id="Lifetime">Lifetime</channel>
+    <channel update="i" site="lineup.net.br" site_id="936324" xmltv_id="Local TV Manaus">Local TV Manaus</channel>
+    <channel update="i" site="lineup.net.br" site_id="941488" xmltv_id="Love Nature">Love Nature</channel>
+    <channel update="i" site="lineup.net.br" site_id="338368" xmltv_id="M1 Station">M1 Station</channel>
+    <channel update="i" site="lineup.net.br" site_id="429426" xmltv_id="Mais GloboSat">Mais GloboSat</channel>
+    <channel update="i" site="lineup.net.br" site_id="225722" xmltv_id="Marca TV">Marca TV</channel>
+    <channel update="i" site="lineup.net.br" site_id="792985" xmltv_id="Master TV">Master TV</channel>
+    <channel update="i" site="lineup.net.br" site_id="247452" xmltv_id="Megapix">Megapix</channel>
+    <channel update="i" site="lineup.net.br" site_id="925457" xmltv_id="MegaTV">MegaTV</channel>
+    <channel update="i" site="lineup.net.br" site_id="925660" xmltv_id="Metropole News">Metropole News</channel>
+    <channel update="i" site="lineup.net.br" site_id="425702" xmltv_id="MTV">MTV</channel>
+    <channel update="i" site="lineup.net.br" site_id="287580" xmltv_id="MTV Live HD">MTV Live HD</channel>
+    <channel update="i" site="lineup.net.br" site_id="197348" xmltv_id="Multicultura">Multicultura</channel>
+    <channel update="i" site="lineup.net.br" site_id="963870" xmltv_id="Multishow">Multishow</channel>
+    <channel update="i" site="lineup.net.br" site_id="842741" xmltv_id="MultiTV Cidades">MultiTV Cidades</channel>
+    <channel update="i" site="lineup.net.br" site_id="752812" xmltv_id="Music Box Brazil">Music Box Brazil</channel>
+    <channel update="i" site="lineup.net.br" site_id="569561" xmltv_id="NatGeo Kids">NatGeo Kids</channel>
+    <channel update="i" site="lineup.net.br" site_id="297424" xmltv_id="National Geographic">National Geographic</channel>
+    <channel update="i" site="lineup.net.br" site_id="462117" xmltv_id="National Geographic Wild">National Geographic Wild</channel>
+    <channel update="i" site="lineup.net.br" site_id="852303" xmltv_id="NET TV">NET TV</channel>
+    <channel update="i" site="lineup.net.br" site_id="663972" xmltv_id="NGT">NGT</channel>
+    <channel update="i" site="lineup.net.br" site_id="811370" xmltv_id="NHK World Japan">NHK World Japan</channel>
+    <channel update="i" site="lineup.net.br" site_id="550416" xmltv_id="Nick">Nick</channel>
+    <channel update="i" site="lineup.net.br" site_id="387462" xmltv_id="Nick Jr.">Nick Jr.</channel>
+    <channel update="i" site="lineup.net.br" site_id="792929" xmltv_id="NordesTV">NordesTV</channel>
+    <channel update="i" site="lineup.net.br" site_id="416593" xmltv_id="NSC TV Blumenau">NSC TV Blumenau</channel>
+    <channel update="i" site="lineup.net.br" site_id="347988" xmltv_id="NSC TV Centro Oeste">NSC TV Centro Oeste</channel>
+    <channel update="i" site="lineup.net.br" site_id="974352" xmltv_id="NSC TV Chapecó">NSC TV Chapecó</channel>
+    <channel update="i" site="lineup.net.br" site_id="920783" xmltv_id="NSC TV Criciúma">NSC TV Criciúma</channel>
+    <channel update="i" site="lineup.net.br" site_id="570444" xmltv_id="NSC TV Florianópolis">NSC TV Florianópolis</channel>
+    <channel update="i" site="lineup.net.br" site_id="221234" xmltv_id="NSC TV Joinville">NSC TV Joinville</channel>
+    <channel update="i" site="lineup.net.br" site_id="502509" xmltv_id="Off">Off</channel>
+    <channel update="i" site="lineup.net.br" site_id="952547" xmltv_id="Paramount Channel">Paramount Channel</channel>
+    <channel update="i" site="lineup.net.br" site_id="255112" xmltv_id="PlayboyTV">PlayboyTV</channel>
+    <channel update="i" site="lineup.net.br" site_id="610917" xmltv_id="PlayTV">PlayTV</channel>
+    <channel update="i" site="lineup.net.br" site_id="356150" xmltv_id="Plena TV">Plena TV</channel>
+    <channel update="i" site="lineup.net.br" site_id="421956" xmltv_id="Polishop TV">Polishop TV</channel>
+    <channel update="i" site="lineup.net.br" site_id="682512" xmltv_id="Ponto Jus">Ponto Jus</channel>
+    <channel update="i" site="lineup.net.br" site_id="871262" xmltv_id="Prime Box Brazil">Prime Box Brazil</channel>
+    <channel update="i" site="lineup.net.br" site_id="983955" xmltv_id="Primer TV">Primer TV</channel>
+    <channel update="i" site="lineup.net.br" site_id="597774" xmltv_id="PUC TV Goiás">PUC TV Goiás</channel>
+    <channel update="i" site="lineup.net.br" site_id="455841" xmltv_id="Rai Italia">Rai Italia</channel>
+    <channel update="i" site="lineup.net.br" site_id="353082" xmltv_id="RBA TV">RBA TV</channel>
+    <channel update="i" site="lineup.net.br" site_id="229535" xmltv_id="RBI TV">RBI TV</channel>
+    <channel update="i" site="lineup.net.br" site_id="463232" xmltv_id="RBS TV Caxias">RBS TV Caxias</channel>
+    <channel update="i" site="lineup.net.br" site_id="108100" xmltv_id="RBS TV Pelotas">RBS TV Pelotas</channel>
+    <channel update="i" site="lineup.net.br" site_id="407729" xmltv_id="RBS TV Porto Alegre">RBS TV Porto Alegre</channel>
+    <channel update="i" site="lineup.net.br" site_id="623567" xmltv_id="RBS TV Santa Maria">RBS TV Santa Maria</channel>
+    <channel update="i" site="lineup.net.br" site_id="323414" xmltv_id="RBS TV Santa Rosa">RBS TV Santa Rosa</channel>
+    <channel update="i" site="lineup.net.br" site_id="803688" xmltv_id="RCI">RCI</channel>
+    <channel update="i" site="lineup.net.br" site_id="294203" xmltv_id="RCI Minas">RCI Minas</channel>
+    <channel update="i" site="lineup.net.br" site_id="784209" xmltv_id="RCI Paraná">RCI Paraná</channel>
+    <channel update="i" site="lineup.net.br" site_id="255542" xmltv_id="RCT">RCT</channel>
+    <channel update="i" site="lineup.net.br" site_id="550433" xmltv_id="RDC TV">RDC TV</channel>
+    <channel update="i" site="lineup.net.br" site_id="760325" xmltv_id="Record News">Record News</channel>
+    <channel update="i" site="lineup.net.br" site_id="908633" xmltv_id="Record News ES">Record News ES</channel>
+    <channel update="i" site="lineup.net.br" site_id="512955" xmltv_id="Record News SC">Record News SC</channel>
+    <channel update="i" site="lineup.net.br" site_id="760178" xmltv_id="RecordTV">RecordTV</channel>
+    <channel update="i" site="lineup.net.br" site_id="560654" xmltv_id="RecordTV Belém">RecordTV Belém</channel>
+    <channel update="i" site="lineup.net.br" site_id="990797" xmltv_id="RecordTV Brasília">RecordTV Brasília</channel>
+    <channel update="i" site="lineup.net.br" site_id="652798" xmltv_id="RecordTV Goias">RecordTV Goias</channel>
+    <channel update="i" site="lineup.net.br" site_id="228299" xmltv_id="RecordTV Interior SP">RecordTV Interior SP</channel>
+    <channel update="i" site="lineup.net.br" site_id="750120" xmltv_id="RecordTV Itapoan">RecordTV Itapoan</channel>
+    <channel update="i" site="lineup.net.br" site_id="986591" xmltv_id="RecordTV Litoral-Vale">RecordTV Litoral-Vale</channel>
+    <channel update="i" site="lineup.net.br" site_id="511526" xmltv_id="RecordTV Minas">RecordTV Minas</channel>
+    <channel update="i" site="lineup.net.br" site_id="401471" xmltv_id="RecordTV Paulista">RecordTV Paulista</channel>
+    <channel update="i" site="lineup.net.br" site_id="418050" xmltv_id="RecordTV Rio">RecordTV Rio</channel>
+    <channel update="i" site="lineup.net.br" site_id="305549" xmltv_id="RecordTV RS">RecordTV RS</channel>
+    <channel update="i" site="lineup.net.br" site_id="614514" xmltv_id="Rede 21">Rede 21</channel>
+    <channel update="i" site="lineup.net.br" site_id="924118" xmltv_id="Rede Amazônica Boa Vista">Rede Amazônica Boa Vista</channel>
+    <channel update="i" site="lineup.net.br" site_id="715345" xmltv_id="Rede Amazônica Macapá">Rede Amazônica Macapá</channel>
+    <channel update="i" site="lineup.net.br" site_id="784473" xmltv_id="Rede Amazônica Manaus">Rede Amazônica Manaus</channel>
+    <channel update="i" site="lineup.net.br" site_id="813882" xmltv_id="Rede Amazônica Porto Velho">Rede Amazônica Porto Velho</channel>
+    <channel update="i" site="lineup.net.br" site_id="114476" xmltv_id="Rede Amazônica Rio Branco">Rede Amazônica Rio Branco</channel>
+    <channel update="i" site="lineup.net.br" site_id="215575" xmltv_id="Rede Benção">Rede Benção</channel>
+    <channel update="i" site="lineup.net.br" site_id="885979" xmltv_id="Rede Brasil">Rede Brasil</channel>
+    <channel update="i" site="lineup.net.br" site_id="981324" xmltv_id="Rede Brasil de Comunicação">Rede Brasil de Comunicação</channel>
+    <channel update="i" site="lineup.net.br" site_id="186540" xmltv_id="Rede Clube">Rede Clube</channel>
+    <channel update="i" site="lineup.net.br" site_id="951260" xmltv_id="Rede Cultura do Pará">Rede Cultura do Pará</channel>
+    <channel update="i" site="lineup.net.br" site_id="396786" xmltv_id="Rede Família">Rede Família</channel>
+    <channel update="i" site="lineup.net.br" site_id="688991" xmltv_id="Rede Gênesis">Rede Gênesis</channel>
+    <channel update="i" site="lineup.net.br" site_id="600511" xmltv_id="Rede Globo">Rede Globo</channel>
+    <channel update="i" site="lineup.net.br" site_id="655048" xmltv_id="Rede Gospel">Rede Gospel</channel>
+    <channel update="i" site="lineup.net.br" site_id="950938" xmltv_id="Rede Meio Norte">Rede Meio Norte</channel>
+    <channel update="i" site="lineup.net.br" site_id="981958" xmltv_id="Rede Minas">Rede Minas</channel>
+    <channel update="i" site="lineup.net.br" site_id="585842" xmltv_id="Rede Mundial">Rede Mundial</channel>
+    <channel update="i" site="lineup.net.br" site_id="556648" xmltv_id="Rede New">Rede New</channel>
+    <channel update="i" site="lineup.net.br" site_id="473569" xmltv_id="Rede Opinião">Rede Opinião</channel>
+    <channel update="i" site="lineup.net.br" site_id="573858" xmltv_id="Rede Paulista">Rede Paulista</channel>
+    <channel update="i" site="lineup.net.br" site_id="430701" xmltv_id="Rede Premium">Rede Premium</channel>
+    <channel update="i" site="lineup.net.br" site_id="909453" xmltv_id="Rede Século 21">Rede Século 21</channel>
+    <channel update="i" site="lineup.net.br" site_id="670501" xmltv_id="Rede Super">Rede Super</channel>
+    <channel update="i" site="lineup.net.br" site_id="988932" xmltv_id="Rede Super MS">Rede Super MS</channel>
+    <channel update="i" site="lineup.net.br" site_id="433397" xmltv_id="Rede Tiradentes">Rede Tiradentes</channel>
+    <channel update="i" site="lineup.net.br" site_id="103185" xmltv_id="Rede Vida">Rede Vida</channel>
+    <channel update="i" site="lineup.net.br" site_id="242657" xmltv_id="RedeTV!">RedeTV!</channel>
+    <channel update="i" site="lineup.net.br" site_id="911269" xmltv_id="RedeTV! ES">RedeTV! ES</channel>
+    <channel update="i" site="lineup.net.br" site_id="663589" xmltv_id="RedeTV! Rio">RedeTV! Rio</channel>
+    <channel update="i" site="lineup.net.br" site_id="459084" xmltv_id="RedeTV! Rondônia">RedeTV! Rondônia</channel>
+    <channel update="i" site="lineup.net.br" site_id="121999" xmltv_id="RIC TV Chapecó">RIC TV Chapecó</channel>
+    <channel update="i" site="lineup.net.br" site_id="801791" xmltv_id="RIC TV Curitiba">RIC TV Curitiba</channel>
+    <channel update="i" site="lineup.net.br" site_id="647209" xmltv_id="RIC TV Florianópolis">RIC TV Florianópolis</channel>
+    <channel update="i" site="lineup.net.br" site_id="775846" xmltv_id="RIC TV Joinville">RIC TV Joinville</channel>
+    <channel update="i" site="lineup.net.br" site_id="875282" xmltv_id="Rio TV Câmara">Rio TV Câmara</channel>
+    <channel update="i" site="lineup.net.br" site_id="312598" xmltv_id="RIT">RIT</channel>
+    <channel update="i" site="lineup.net.br" site_id="742088" xmltv_id="Roma News TV">Roma News TV</channel>
+    <channel update="i" site="lineup.net.br" site_id="415534" xmltv_id="RPC Curitiba">RPC Curitiba</channel>
+    <channel update="i" site="lineup.net.br" site_id="201563" xmltv_id="RPC Foz do Iguaçu">RPC Foz do Iguaçu</channel>
+    <channel update="i" site="lineup.net.br" site_id="782207" xmltv_id="RPC Guarapuava">RPC Guarapuava</channel>
+    <channel update="i" site="lineup.net.br" site_id="136033" xmltv_id="RPC Londrina">RPC Londrina</channel>
+    <channel update="i" site="lineup.net.br" site_id="521509" xmltv_id="RPC Maringá">RPC Maringá</channel>
+    <channel update="i" site="lineup.net.br" site_id="570199" xmltv_id="RPC Paranavaí">RPC Paranavaí</channel>
+    <channel update="i" site="lineup.net.br" site_id="409994" xmltv_id="RPC Ponta Grossa">RPC Ponta Grossa</channel>
+    <channel update="i" site="lineup.net.br" site_id="466022" xmltv_id="RSTV">RSTV</channel>
+    <channel update="i" site="lineup.net.br" site_id="910973" xmltv_id="RTPi">RTPi</channel>
+    <channel update="i" site="lineup.net.br" site_id="455496" xmltv_id="RTV Canal 10">RTV Canal 10</channel>
+    <channel update="i" site="lineup.net.br" site_id="584766" xmltv_id="Russia Today">Russia Today</channel>
+    <channel update="i" site="lineup.net.br" site_id="240820" xmltv_id="SBN - SonLife Broadcast Network">SBN - SonLife Broadcast Network</channel>
+    <channel update="i" site="lineup.net.br" site_id="302660" xmltv_id="SBT">SBT</channel>
+    <channel update="i" site="lineup.net.br" site_id="712689" xmltv_id="SBT Brasília">SBT Brasília</channel>
+    <channel update="i" site="lineup.net.br" site_id="252853" xmltv_id="SBT Central">SBT Central</channel>
+    <channel update="i" site="lineup.net.br" site_id="197672" xmltv_id="SBT Interior RJ">SBT Interior RJ</channel>
+    <channel update="i" site="lineup.net.br" site_id="385690" xmltv_id="SBT Interior SP">SBT Interior SP</channel>
+    <channel update="i" site="lineup.net.br" site_id="457146" xmltv_id="SBT MS">SBT MS</channel>
+    <channel update="i" site="lineup.net.br" site_id="368999" xmltv_id="SBT Pará">SBT Pará</channel>
+    <channel update="i" site="lineup.net.br" site_id="479124" xmltv_id="SBT Ribeirão">SBT Ribeirão</channel>
+    <channel update="i" site="lineup.net.br" site_id="848196" xmltv_id="SBT Rio">SBT Rio</channel>
+    <channel update="i" site="lineup.net.br" site_id="338788" xmltv_id="SBT Rondonópolis">SBT Rondonópolis</channel>
+    <channel update="i" site="lineup.net.br" site_id="293940" xmltv_id="SBT RS">SBT RS</channel>
+    <channel update="i" site="lineup.net.br" site_id="400281" xmltv_id="SBT Vale">SBT Vale</channel>
+    <channel update="i" site="lineup.net.br" site_id="239824" xmltv_id="SCC SBT">SCC SBT</channel>
+    <channel update="i" site="lineup.net.br" site_id="415119" xmltv_id="SescTV">SescTV</channel>
+    <channel update="i" site="lineup.net.br" site_id="313178" xmltv_id="SexPrive">SexPrive</channel>
+    <channel update="i" site="lineup.net.br" site_id="283850" xmltv_id="Sextreme">Sextreme</channel>
+    <channel update="i" site="lineup.net.br" site_id="282073" xmltv_id="SexyHot">SexyHot</channel>
+    <channel update="i" site="lineup.net.br" site_id="563923" xmltv_id="Shop Web TV">Shop Web TV</channel>
+    <channel update="i" site="lineup.net.br" site_id="806363" xmltv_id="Shoptime">Shoptime</channel>
+    <channel update="i" site="lineup.net.br" site_id="254955" xmltv_id="SIC Internacional">SIC Internacional</channel>
+    <channel update="i" site="lineup.net.br" site_id="344061" xmltv_id="SIC TV">SIC TV</channel>
+    <channel update="i" site="lineup.net.br" site_id="919521" xmltv_id="Smithsonian Channel">Smithsonian Channel</channel>
+    <channel update="i" site="lineup.net.br" site_id="538255" xmltv_id="Sony">Sony</channel>
+    <channel update="i" site="lineup.net.br" site_id="107575" xmltv_id="Space">Space</channel>
+    <channel update="i" site="lineup.net.br" site_id="811805" xmltv_id="SporTV">SporTV</channel>
+    <channel update="i" site="lineup.net.br" site_id="757057" xmltv_id="SporTV 2">SporTV 2</channel>
+    <channel update="i" site="lineup.net.br" site_id="446591" xmltv_id="SporTV 3">SporTV 3</channel>
+    <channel update="i" site="lineup.net.br" site_id="774567" xmltv_id="Stop TV">Stop TV</channel>
+    <channel update="i" site="lineup.net.br" site_id="730757" xmltv_id="Studio Universal">Studio Universal</channel>
+    <channel update="i" site="lineup.net.br" site_id="588040" xmltv_id="Sundance TV">Sundance TV</channel>
+    <channel update="i" site="lineup.net.br" site_id="841551" xmltv_id="Syfy">Syfy</channel>
+    <channel update="i" site="lineup.net.br" site_id="166897" xmltv_id="TBC">TBC</channel>
+    <channel update="i" site="lineup.net.br" site_id="568294" xmltv_id="TBS">TBS</channel>
+    <channel update="i" site="lineup.net.br" site_id="287052" xmltv_id="TCM">TCM</channel>
+    <channel update="i" site="lineup.net.br" site_id="978736" xmltv_id="Telefe Internacional">Telefe Internacional</channel>
+    <channel update="i" site="lineup.net.br" site_id="922738" xmltv_id="Telesur">Telesur</channel>
+    <channel update="i" site="lineup.net.br" site_id="118280" xmltv_id="Terra Viva">Terra Viva</channel>
+    <channel update="i" site="lineup.net.br" site_id="624632" xmltv_id="The Golf Channel">The Golf Channel</channel>
+    <channel update="i" site="lineup.net.br" site_id="587400" xmltv_id="TLC">TLC</channel>
+    <channel update="i" site="lineup.net.br" site_id="259413" xmltv_id="TNT">TNT</channel>
+    <channel update="i" site="lineup.net.br" site_id="428188" xmltv_id="TNT Séries">TNT Séries</channel>
+    <channel update="i" site="lineup.net.br" site_id="429008" xmltv_id="Tooncast">Tooncast</channel>
+    <channel update="i" site="lineup.net.br" site_id="620162" xmltv_id="TopTV">TopTV</channel>
+    <channel update="i" site="lineup.net.br" site_id="975633" xmltv_id="TopTV Pelotas">TopTV Pelotas</channel>
+    <channel update="i" site="lineup.net.br" site_id="816536" xmltv_id="Travel Box Brazil">Travel Box Brazil</channel>
+    <channel update="i" site="lineup.net.br" site_id="768991" xmltv_id="TruTV">TruTV</channel>
+    <channel update="i" site="lineup.net.br" site_id="791410" xmltv_id="TTV Carajás">TTV Carajás</channel>
+    <channel update="i" site="lineup.net.br" site_id="950542" xmltv_id="TV A Crítica">TV A Crítica</channel>
+    <channel update="i" site="lineup.net.br" site_id="452065" xmltv_id="TV AL MG">TV AL MG</channel>
+    <channel update="i" site="lineup.net.br" site_id="380884" xmltv_id="TV AL SC">TV AL SC</channel>
+    <channel update="i" site="lineup.net.br" site_id="170961" xmltv_id="TV Aldeia">TV Aldeia</channel>
+    <channel update="i" site="lineup.net.br" site_id="611837" xmltv_id="TV ALES">TV ALES</channel>
+    <channel update="i" site="lineup.net.br" site_id="960420" xmltv_id="TV ALESP">TV ALESP</channel>
+    <channel update="i" site="lineup.net.br" site_id="992315" xmltv_id="TV Alfa Minas">TV Alfa Minas</channel>
+    <channel update="i" site="lineup.net.br" site_id="161418" xmltv_id="TV Alterosa">TV Alterosa</channel>
+    <channel update="i" site="lineup.net.br" site_id="297578" xmltv_id="TV Altiora">TV Altiora</channel>
+    <channel update="i" site="lineup.net.br" site_id="611292" xmltv_id="TV Ambiental">TV Ambiental</channel>
+    <channel update="i" site="lineup.net.br" site_id="542848" xmltv_id="TV Anhanguera Goiânia">TV Anhanguera Goiânia</channel>
+    <channel update="i" site="lineup.net.br" site_id="295235" xmltv_id="TV Anhanguera Itumbiara">TV Anhanguera Itumbiara</channel>
+    <channel update="i" site="lineup.net.br" site_id="562419" xmltv_id="TV Anhanguera Palmas">TV Anhanguera Palmas</channel>
+    <channel update="i" site="lineup.net.br" site_id="427401" xmltv_id="TV Antares">TV Antares</channel>
+    <channel update="i" site="lineup.net.br" site_id="336797" xmltv_id="TV Antena 10">TV Antena 10</channel>
+    <channel update="i" site="lineup.net.br" site_id="133772" xmltv_id="TV Aparecida">TV Aparecida</channel>
+    <channel update="i" site="lineup.net.br" site_id="852915" xmltv_id="TV Aperipê">TV Aperipê</channel>
+    <channel update="i" site="lineup.net.br" site_id="525560" xmltv_id="TV Apoio">TV Apoio</channel>
+    <channel update="i" site="lineup.net.br" site_id="877374" xmltv_id="TV Arapuan">TV Arapuan</channel>
+    <channel update="i" site="lineup.net.br" site_id="890623" xmltv_id="TV Aratu">TV Aratu</channel>
+    <channel update="i" site="lineup.net.br" site_id="251713" xmltv_id="TV Araucaria">TV Araucaria</channel>
+    <channel update="i" site="lineup.net.br" site_id="687380" xmltv_id="TV Araucaria Guarapuava">TV Araucaria Guarapuava</channel>
+    <channel update="i" site="lineup.net.br" site_id="330804" xmltv_id="TV Art">TV Art</channel>
+    <channel update="i" site="lineup.net.br" site_id="890806" xmltv_id="TV Asa Branca">TV Asa Branca</channel>
+    <channel update="i" site="lineup.net.br" site_id="226072" xmltv_id="TV Assembleia CE">TV Assembleia CE</channel>
+    <channel update="i" site="lineup.net.br" site_id="586804" xmltv_id="TV Assembleia MT">TV Assembleia MT</channel>
+    <channel update="i" site="lineup.net.br" site_id="972428" xmltv_id="TV Assembléia PB">TV Assembléia PB</channel>
+    <channel update="i" site="lineup.net.br" site_id="454009" xmltv_id="TV Assembleia PI">TV Assembleia PI</channel>
+    <channel update="i" site="lineup.net.br" site_id="220876" xmltv_id="TV Assembléia PR">TV Assembléia PR</channel>
+    <channel update="i" site="lineup.net.br" site_id="266157" xmltv_id="TV Atalaia">TV Atalaia</channel>
+    <channel update="i" site="lineup.net.br" site_id="337783" xmltv_id="TV Ativa Piracicaba">TV Ativa Piracicaba</channel>
+    <channel update="i" site="lineup.net.br" site_id="517894" xmltv_id="TV Bahia">TV Bahia</channel>
+    <channel update="i" site="lineup.net.br" site_id="182281" xmltv_id="TV Baiana">TV Baiana</channel>
+    <channel update="i" site="lineup.net.br" site_id="887799" xmltv_id="TV Borborema">TV Borborema</channel>
+    <channel update="i" site="lineup.net.br" site_id="675039" xmltv_id="TV Brasil">TV Brasil</channel>
+    <channel update="i" site="lineup.net.br" site_id="355032" xmltv_id="TV Brasil 2">TV Brasil 2</channel>
+    <channel update="i" site="lineup.net.br" site_id="963862" xmltv_id="TV Brasil Esperança">TV Brasil Esperança</channel>
+    <channel update="i" site="lineup.net.br" site_id="445172" xmltv_id="TV Brasil Oeste">TV Brasil Oeste</channel>
+    <channel update="i" site="lineup.net.br" site_id="175279" xmltv_id="TV Brasília">TV Brasília</channel>
+    <channel update="i" site="lineup.net.br" site_id="458995" xmltv_id="TV Brusque">TV Brusque</channel>
+    <channel update="i" site="lineup.net.br" site_id="704583" xmltv_id="TV Cabo Branco">TV Cabo Branco</channel>
+    <channel update="i" site="lineup.net.br" site_id="903842" xmltv_id="TV Caiuá">TV Caiuá</channel>
+    <channel update="i" site="lineup.net.br" site_id="416900" xmltv_id="TV Câmara">TV Câmara</channel>
+    <channel update="i" site="lineup.net.br" site_id="389290" xmltv_id="TV Câmara Aracaju">TV Câmara Aracaju</channel>
+    <channel update="i" site="lineup.net.br" site_id="174484" xmltv_id="TV Câmara Caxias">TV Câmara Caxias</channel>
+    <channel update="i" site="lineup.net.br" site_id="555282" xmltv_id="TV Câmara Florianópolis">TV Câmara Florianópolis</channel>
+    <channel update="i" site="lineup.net.br" site_id="505655" xmltv_id="TV Câmara Guarulhos">TV Câmara Guarulhos</channel>
+    <channel update="i" site="lineup.net.br" site_id="521223" xmltv_id="TV Câmara Jahu">TV Câmara Jahu</channel>
+    <channel update="i" site="lineup.net.br" site_id="132756" xmltv_id="TV Câmara João Pessoa">TV Câmara João Pessoa</channel>
+    <channel update="i" site="lineup.net.br" site_id="975349" xmltv_id="TV Câmara Marília">TV Câmara Marília</channel>
+    <channel update="i" site="lineup.net.br" site_id="470431" xmltv_id="TV Câmara Osasco">TV Câmara Osasco</channel>
+    <channel update="i" site="lineup.net.br" site_id="347654" xmltv_id="TV Câmara Piracicaba">TV Câmara Piracicaba</channel>
+    <channel update="i" site="lineup.net.br" site_id="200961" xmltv_id="TV Câmara Salvador">TV Câmara Salvador</channel>
+    <channel update="i" site="lineup.net.br" site_id="337081" xmltv_id="TV Câmara São José dos Campos">TV Câmara São José dos Campos</channel>
+    <channel update="i" site="lineup.net.br" site_id="762847" xmltv_id="TV Câmara São Paulo">TV Câmara São Paulo</channel>
+    <channel update="i" site="lineup.net.br" site_id="204146" xmltv_id="TV Câmara Sorocaba">TV Câmara Sorocaba</channel>
+    <channel update="i" site="lineup.net.br" site_id="150801" xmltv_id="TV Campos de Minas">TV Campos de Minas</channel>
+    <channel update="i" site="lineup.net.br" site_id="965227" xmltv_id="TV Canal 4 Marília">TV Canal 4 Marília</channel>
+    <channel update="i" site="lineup.net.br" site_id="816112" xmltv_id="TV Capixaba">TV Capixaba</channel>
+    <channel update="i" site="lineup.net.br" site_id="214264" xmltv_id="TV Ceará">TV Ceará</channel>
+    <channel update="i" site="lineup.net.br" site_id="977162" xmltv_id="TV Centro América">TV Centro América</channel>
+    <channel update="i" site="lineup.net.br" site_id="508854" xmltv_id="TV Centro Minas">TV Centro Minas</channel>
+    <channel update="i" site="lineup.net.br" site_id="859294" xmltv_id="TV Cianorte">TV Cianorte</channel>
+    <channel update="i" site="lineup.net.br" site_id="162522" xmltv_id="TV Cidade - CE">TV Cidade - CE</channel>
+    <channel update="i" site="lineup.net.br" site_id="152171" xmltv_id="TV Cidade Guarapuava">TV Cidade Guarapuava</channel>
+    <channel update="i" site="lineup.net.br" site_id="710271" xmltv_id="TV Cidade Teresópolis">TV Cidade Teresópolis</channel>
+    <channel update="i" site="lineup.net.br" site_id="216838" xmltv_id="TV Cidade Verde MT">TV Cidade Verde MT</channel>
+    <channel update="i" site="lineup.net.br" site_id="879146" xmltv_id="TV Claret">TV Claret</channel>
+    <channel update="i" site="lineup.net.br" site_id="583957" xmltv_id="TV Clube PE">TV Clube PE</channel>
+    <channel update="i" site="lineup.net.br" site_id="160803" xmltv_id="TV Clube Ribeirão">TV Clube Ribeirão</channel>
+    <channel update="i" site="lineup.net.br" site_id="960920" xmltv_id="TV Clube Varginha">TV Clube Varginha</channel>
+    <channel update="i" site="lineup.net.br" site_id="270410" xmltv_id="TV Coreia">TV Coreia</channel>
+    <channel update="i" site="lineup.net.br" site_id="400591" xmltv_id="TV Correio">TV Correio</channel>
+    <channel update="i" site="lineup.net.br" site_id="791226" xmltv_id="TV Costa Norte Bertioga">TV Costa Norte Bertioga</channel>
+    <channel update="i" site="lineup.net.br" site_id="576945" xmltv_id="TV Cultura Paulista">TV Cultura Paulista</channel>
+    <channel update="i" site="lineup.net.br" site_id="771829" xmltv_id="TV Cultura Vale do Aço">TV Cultura Vale do Aço</channel>
+    <channel update="i" site="lineup.net.br" site_id="286966" xmltv_id="TV da Gente">TV da Gente</channel>
+    <channel update="i" site="lineup.net.br" site_id="298098" xmltv_id="TV Diario">TV Diario</channel>
+    <channel update="i" site="lineup.net.br" site_id="618233" xmltv_id="TV Diário Mogi das Cruzes">TV Diário Mogi das Cruzes</channel>
+    <channel update="i" site="lineup.net.br" site_id="260304" xmltv_id="TV Escola">TV Escola</channel>
+    <channel update="i" site="lineup.net.br" site_id="681399" xmltv_id="TV Evangelizar">TV Evangelizar</channel>
+    <channel update="i" site="lineup.net.br" site_id="940589" xmltv_id="TV Farol">TV Farol</channel>
+    <channel update="i" site="lineup.net.br" site_id="137440" xmltv_id="TV Feevale">TV Feevale</channel>
+    <channel update="i" site="lineup.net.br" site_id="971407" xmltv_id="TV Feliz">TV Feliz</channel>
+    <channel update="i" site="lineup.net.br" site_id="942317" xmltv_id="TV Fronteira">TV Fronteira</channel>
+    <channel update="i" site="lineup.net.br" site_id="300894" xmltv_id="TV Galega">TV Galega</channel>
+    <channel update="i" site="lineup.net.br" site_id="671081" xmltv_id="TV Gazeta AC">TV Gazeta AC</channel>
+    <channel update="i" site="lineup.net.br" site_id="510903" xmltv_id="TV Gazeta AL">TV Gazeta AL</channel>
+    <channel update="i" site="lineup.net.br" site_id="273886" xmltv_id="TV Gazeta ES">TV Gazeta ES</channel>
+    <channel update="i" site="lineup.net.br" site_id="973432" xmltv_id="TV Gazeta ES Sul">TV Gazeta ES Sul</channel>
+    <channel update="i" site="lineup.net.br" site_id="470171" xmltv_id="TV Goiânia">TV Goiânia</channel>
+    <channel update="i" site="lineup.net.br" site_id="894618" xmltv_id="TV Guará">TV Guará</channel>
+    <channel update="i" site="lineup.net.br" site_id="727078" xmltv_id="TV Horizonte">TV Horizonte</channel>
+    <channel update="i" site="lineup.net.br" site_id="946798" xmltv_id="TV Humaitá">TV Humaitá</channel>
+    <channel update="i" site="lineup.net.br" site_id="257339" xmltv_id="TV Iguaçu - Rede Massa">TV Iguaçu - Rede Massa</channel>
+    <channel update="i" site="lineup.net.br" site_id="870878" xmltv_id="TV Imaculada Conceição">TV Imaculada Conceição</channel>
+    <channel update="i" site="lineup.net.br" site_id="543576" xmltv_id="TV Imigrantes">TV Imigrantes</channel>
+    <channel update="i" site="lineup.net.br" site_id="138293" xmltv_id="TV Informativo">TV Informativo</channel>
+    <channel update="i" site="lineup.net.br" site_id="539965" xmltv_id="TV Integração Araxá">TV Integração Araxá</channel>
+    <channel update="i" site="lineup.net.br" site_id="711362" xmltv_id="TV Integração Ituiutaba">TV Integração Ituiutaba</channel>
+    <channel update="i" site="lineup.net.br" site_id="984679" xmltv_id="TV Integração Juiz de Fora">TV Integração Juiz de Fora</channel>
+    <channel update="i" site="lineup.net.br" site_id="357950" xmltv_id="TV Integração Uberaba">TV Integração Uberaba</channel>
+    <channel update="i" site="lineup.net.br" site_id="953830" xmltv_id="TV Integração Uberlândia">TV Integração Uberlândia</channel>
+    <channel update="i" site="lineup.net.br" site_id="441447" xmltv_id="TV Interativa MS">TV Interativa MS</channel>
+    <channel update="i" site="lineup.net.br" site_id="758407" xmltv_id="TV Jangadeiro">TV Jangadeiro</channel>
+    <channel update="i" site="lineup.net.br" site_id="630258" xmltv_id="TV Jockey">TV Jockey</channel>
+    <channel update="i" site="lineup.net.br" site_id="500892" xmltv_id="TV Jornal Limeira">TV Jornal Limeira</channel>
+    <channel update="i" site="lineup.net.br" site_id="981022" xmltv_id="TV Jornal Recife">TV Jornal Recife</channel>
+    <channel update="i" site="lineup.net.br" site_id="942651" xmltv_id="TV Justiça">TV Justiça</channel>
+    <channel update="i" site="lineup.net.br" site_id="481983" xmltv_id="TV Leste">TV Leste</channel>
+    <channel update="i" site="lineup.net.br" site_id="814762" xmltv_id="TV Liberal Belém">TV Liberal Belém</channel>
+    <channel update="i" site="lineup.net.br" site_id="358960" xmltv_id="TV Litoral Panorama">TV Litoral Panorama</channel>
+    <channel update="i" site="lineup.net.br" site_id="198186" xmltv_id="TV Litoral RJ">TV Litoral RJ</channel>
+    <channel update="i" site="lineup.net.br" site_id="531690" xmltv_id="TV Litoral Sul">TV Litoral Sul</channel>
+    <channel update="i" site="lineup.net.br" site_id="430086" xmltv_id="TV Manaíra">TV Manaíra</channel>
+    <channel update="i" site="lineup.net.br" site_id="711832" xmltv_id="TV Mar">TV Mar</channel>
+    <channel update="i" site="lineup.net.br" site_id="285788" xmltv_id="TV Mar Rio Grande">TV Mar Rio Grande</channel>
+    <channel update="i" site="lineup.net.br" site_id="851149" xmltv_id="TV Maringá">TV Maringá</channel>
+    <channel update="i" site="lineup.net.br" site_id="269341" xmltv_id="TV Master">TV Master</channel>
+    <channel update="i" site="lineup.net.br" site_id="516633" xmltv_id="TV Max">TV Max</channel>
+    <channel update="i" site="lineup.net.br" site_id="733195" xmltv_id="TV Meridional">TV Meridional</channel>
+    <channel update="i" site="lineup.net.br" site_id="692051" xmltv_id="TV Metropolitana">TV Metropolitana</channel>
+    <channel update="i" site="lineup.net.br" site_id="664449" xmltv_id="TV Metropolitano">TV Metropolitano</channel>
+    <channel update="i" site="lineup.net.br" site_id="282305" xmltv_id="TV Miramar">TV Miramar</channel>
+    <channel update="i" site="lineup.net.br" site_id="807234" xmltv_id="TV Mirante">TV Mirante</channel>
+    <channel update="i" site="lineup.net.br" site_id="399783" xmltv_id="TV Morena">TV Morena</channel>
+    <channel update="i" site="lineup.net.br" site_id="679163" xmltv_id="TV Mundo Maior">TV Mundo Maior</channel>
+    <channel update="i" site="lineup.net.br" site_id="379182" xmltv_id="TV Mundo Pet +">TV Mundo Pet +</channel>
+    <channel update="i" site="lineup.net.br" site_id="584353" xmltv_id="TV Natal">TV Natal</channel>
+    <channel update="i" site="lineup.net.br" site_id="646256" xmltv_id="TV Nazaré">TV Nazaré</channel>
+    <channel update="i" site="lineup.net.br" site_id="659606" xmltv_id="TV Nova">TV Nova</channel>
+    <channel update="i" site="lineup.net.br" site_id="416074" xmltv_id="TV Novo Tempo">TV Novo Tempo</channel>
+    <channel update="i" site="lineup.net.br" site_id="682321" xmltv_id="TV O Povo">TV O Povo</channel>
+    <channel update="i" site="lineup.net.br" site_id="688506" xmltv_id="TV Pajuçara">TV Pajuçara</channel>
+    <channel update="i" site="lineup.net.br" site_id="484118" xmltv_id="TV Pampa Porto Alegre">TV Pampa Porto Alegre</channel>
+    <channel update="i" site="lineup.net.br" site_id="535674" xmltv_id="TV Pampa Sul">TV Pampa Sul</channel>
+    <channel update="i" site="lineup.net.br" site_id="902404" xmltv_id="TV Pantanal">TV Pantanal</channel>
+    <channel update="i" site="lineup.net.br" site_id="809251" xmltv_id="TV Paraná Educativa">TV Paraná Educativa</channel>
+    <channel update="i" site="lineup.net.br" site_id="629556" xmltv_id="TV Paranaíba">TV Paranaíba</channel>
+    <channel update="i" site="lineup.net.br" site_id="239274" xmltv_id="TV Ponta Negra News">TV Ponta Negra News</channel>
+    <channel update="i" site="lineup.net.br" site_id="562598" xmltv_id="TV Ponta Verde">TV Ponta Verde</channel>
+    <channel update="i" site="lineup.net.br" site_id="979057" xmltv_id="TV Prevê">TV Prevê</channel>
+    <channel update="i" site="lineup.net.br" site_id="851594" xmltv_id="TV Primavera">TV Primavera</channel>
+    <channel update="i" site="lineup.net.br" site_id="781120" xmltv_id="TV Princesa">TV Princesa</channel>
+    <channel update="i" site="lineup.net.br" site_id="870962" xmltv_id="TV Pública Argentina">TV Pública Argentina</channel>
+    <channel update="i" site="lineup.net.br" site_id="970117" xmltv_id="TV Rá-Tim-Bum">TV Rá-Tim-Bum</channel>
+    <channel update="i" site="lineup.net.br" site_id="943811" xmltv_id="TV Rio Sul">TV Rio Sul</channel>
+    <channel update="i" site="lineup.net.br" site_id="874223" xmltv_id="TV Salvador">TV Salvador</channel>
+    <channel update="i" site="lineup.net.br" site_id="151779" xmltv_id="TV Santa Cecília">TV Santa Cecília</channel>
+    <channel update="i" site="lineup.net.br" site_id="997615" xmltv_id="TV Santa Cruz - Rede Bahia">TV Santa Cruz - Rede Bahia</channel>
+    <channel update="i" site="lineup.net.br" site_id="428764" xmltv_id="TV Senado">TV Senado</channel>
+    <channel update="i" site="lineup.net.br" site_id="480419" xmltv_id="TV Sergipe">TV Sergipe</channel>
+    <channel update="i" site="lineup.net.br" site_id="800890" xmltv_id="TV Serra Dourada">TV Serra Dourada</channel>
+    <channel update="i" site="lineup.net.br" site_id="445960" xmltv_id="TV Setorial">TV Setorial</channel>
+    <channel update="i" site="lineup.net.br" site_id="571318" xmltv_id="TV Sorocaba">TV Sorocaba</channel>
+    <channel update="i" site="lineup.net.br" site_id="576327" xmltv_id="TV Sucesso">TV Sucesso</channel>
+    <channel update="i" site="lineup.net.br" site_id="598519" xmltv_id="TV Supren">TV Supren</channel>
+    <channel update="i" site="lineup.net.br" site_id="448643" xmltv_id="TV Tambaú">TV Tambaú</channel>
+    <channel update="i" site="lineup.net.br" site_id="157687" xmltv_id="TV Tarobá Cascavel">TV Tarobá Cascavel</channel>
+    <channel update="i" site="lineup.net.br" site_id="802386" xmltv_id="TV Tarobá Londrina">TV Tarobá Londrina</channel>
+    <channel update="i" site="lineup.net.br" site_id="748276" xmltv_id="TV TEC Jundiaí">TV TEC Jundiaí</channel>
+    <channel update="i" site="lineup.net.br" site_id="354613" xmltv_id="TV TEM Bauru">TV TEM Bauru</channel>
+    <channel update="i" site="lineup.net.br" site_id="160119" xmltv_id="TV TEM Itapetininga">TV TEM Itapetininga</channel>
+    <channel update="i" site="lineup.net.br" site_id="721894" xmltv_id="TV TEM SJRP">TV TEM SJRP</channel>
+    <channel update="i" site="lineup.net.br" site_id="707568" xmltv_id="TV TEM Sorocaba">TV TEM Sorocaba</channel>
+    <channel update="i" site="lineup.net.br" site_id="507619" xmltv_id="TV Thathi">TV Thathi</channel>
+    <channel update="i" site="lineup.net.br" site_id="802771" xmltv_id="TV Tibagi - Rede Massa">TV Tibagi - Rede Massa</channel>
+    <channel update="i" site="lineup.net.br" site_id="292476" xmltv_id="TV Tododia">TV Tododia</channel>
+    <channel update="i" site="lineup.net.br" site_id="380164" xmltv_id="TV Transamérica">TV Transamérica</channel>
+    <channel update="i" site="lineup.net.br" site_id="696272" xmltv_id="TV Tribuna ES">TV Tribuna ES</channel>
+    <channel update="i" site="lineup.net.br" site_id="886127" xmltv_id="TV Tribuna PE">TV Tribuna PE</channel>
+    <channel update="i" site="lineup.net.br" site_id="120520" xmltv_id="TV Tribuna Santos">TV Tribuna Santos</channel>
+    <channel update="i" site="lineup.net.br" site_id="310956" xmltv_id="TV Tropical">TV Tropical</channel>
+    <channel update="i" site="lineup.net.br" site_id="620861" xmltv_id="TV UESB">TV UESB</channel>
+    <channel update="i" site="lineup.net.br" site_id="479916" xmltv_id="TV UFAM">TV UFAM</channel>
+    <channel update="i" site="lineup.net.br" site_id="487337" xmltv_id="TV UFES">TV UFES</channel>
+    <channel update="i" site="lineup.net.br" site_id="334879" xmltv_id="TV UFG">TV UFG</channel>
+    <channel update="i" site="lineup.net.br" site_id="842623" xmltv_id="TV UFPB">TV UFPB</channel>
+    <channel update="i" site="lineup.net.br" site_id="466843" xmltv_id="TV UFSC">TV UFSC</channel>
+    <channel update="i" site="lineup.net.br" site_id="291058" xmltv_id="TV Unesp">TV Unesp</channel>
+    <channel update="i" site="lineup.net.br" site_id="278313" xmltv_id="TV União">TV União</channel>
+    <channel update="i" site="lineup.net.br" site_id="230468" xmltv_id="TV UniCesumar">TV UniCesumar</channel>
+    <channel update="i" site="lineup.net.br" site_id="808499" xmltv_id="TV Unifor">TV Unifor</channel>
+    <channel update="i" site="lineup.net.br" site_id="527861" xmltv_id="TV Unisantos">TV Unisantos</channel>
+    <channel update="i" site="lineup.net.br" site_id="893903" xmltv_id="TV Univap">TV Univap</channel>
+    <channel update="i" site="lineup.net.br" site_id="427574" xmltv_id="TV Universal">TV Universal</channel>
+    <channel update="i" site="lineup.net.br" site_id="966389" xmltv_id="TV UP">TV UP</channel>
+    <channel update="i" site="lineup.net.br" site_id="731722" xmltv_id="TV Urbana">TV Urbana</channel>
+    <channel update="i" site="lineup.net.br" site_id="393000" xmltv_id="TV Vanguarda SJC">TV Vanguarda SJC</channel>
+    <channel update="i" site="lineup.net.br" site_id="787095" xmltv_id="TV Vanguarda Taubaté">TV Vanguarda Taubaté</channel>
+    <channel update="i" site="lineup.net.br" site_id="999829" xmltv_id="TV Verdade">TV Verdade</channel>
+    <channel update="i" site="lineup.net.br" site_id="501844" xmltv_id="TV Verdes Mares">TV Verdes Mares</channel>
+    <channel update="i" site="lineup.net.br" site_id="937842" xmltv_id="TV Vitória">TV Vitória</channel>
+    <channel update="i" site="lineup.net.br" site_id="288546" xmltv_id="TV5">TV5</channel>
+    <channel update="i" site="lineup.net.br" site_id="591576" xmltv_id="TV5Monde Bresil">TV5Monde Bresil</channel>
+    <channel update="i" site="lineup.net.br" site_id="743493" xmltv_id="TVB  Campinas">TVB  Campinas</channel>
+    <channel update="i" site="lineup.net.br" site_id="875707" xmltv_id="TVB Santos">TVB Santos</channel>
+    <channel update="i" site="lineup.net.br" site_id="665556" xmltv_id="TVBV">TVBV</channel>
+    <channel update="i" site="lineup.net.br" site_id="465859" xmltv_id="TVE Internacional">TVE Internacional</channel>
+    <channel update="i" site="lineup.net.br" site_id="406718" xmltv_id="TVE-AL">TVE-AL</channel>
+    <channel update="i" site="lineup.net.br" site_id="400020" xmltv_id="TVE-Bahia">TVE-Bahia</channel>
+    <channel update="i" site="lineup.net.br" site_id="182317" xmltv_id="TVE-RS">TVE-RS</channel>
+    <channel update="i" site="lineup.net.br" site_id="290396" xmltv_id="TVMS">TVMS</channel>
+    <channel update="i" site="lineup.net.br" site_id="187695" xmltv_id="TVR Sorocaba">TVR Sorocaba</channel>
+    <channel update="i" site="lineup.net.br" site_id="366316" xmltv_id="TVT">TVT</channel>
+    <channel update="i" site="lineup.net.br" site_id="871122" xmltv_id="TVU Recife">TVU Recife</channel>
+    <channel update="i" site="lineup.net.br" site_id="669540" xmltv_id="TVU RN">TVU RN</channel>
+    <channel update="i" site="lineup.net.br" site_id="353606" xmltv_id="UFPR TV">UFPR TV</channel>
+    <channel update="i" site="lineup.net.br" site_id="237508" xmltv_id="Ulbra TV">Ulbra TV</channel>
+    <channel update="i" site="lineup.net.br" site_id="739175" xmltv_id="Unisc TV">Unisc TV</channel>
+    <channel update="i" site="lineup.net.br" site_id="584660" xmltv_id="UniTV Porto Alegre">UniTV Porto Alegre</channel>
+    <channel update="i" site="lineup.net.br" site_id="504464" xmltv_id="Universal TV">Universal TV</channel>
+    <channel update="i" site="lineup.net.br" site_id="446478" xmltv_id="Univesp TV">Univesp TV</channel>
+    <channel update="i" site="lineup.net.br" site_id="885896" xmltv_id="UTV">UTV</channel>
+    <channel update="i" site="lineup.net.br" site_id="371715" xmltv_id="Venus">Venus</channel>
+    <channel update="i" site="lineup.net.br" site_id="631361" xmltv_id="VH1 HD">VH1 HD</channel>
+    <channel update="i" site="lineup.net.br" site_id="360076" xmltv_id="VH1 MegaHits">VH1 MegaHits</channel>
+    <channel update="i" site="lineup.net.br" site_id="555298" xmltv_id="Viva">Viva</channel>
+    <channel update="i" site="lineup.net.br" site_id="794137" xmltv_id="Viva Interior">Viva Interior</channel>
+    <channel update="i" site="lineup.net.br" site_id="829738" xmltv_id="VTV">VTV</channel>
+    <channel update="i" site="lineup.net.br" site_id="392407" xmltv_id="Warner Channel">Warner Channel</channel>
+    <channel update="i" site="lineup.net.br" site_id="565039" xmltv_id="Woohoo">Woohoo</channel>
+    <channel update="i" site="lineup.net.br" site_id="912195" xmltv_id="WorldNet">WorldNet</channel>
+    <channel update="i" site="lineup.net.br" site_id="925246" xmltv_id="Yeeah!">Yeeah!</channel>
+    <channel update="i" site="lineup.net.br" site_id="146876" xmltv_id="Zoomoo">Zoomoo</channel>
+  </channels>
+</site>

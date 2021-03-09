@@ -1,0 +1,67 @@
+﻿How to create a channel.xml for a specific country
+
+1. Goto http://guide.dstv.com/ and in the top right corner click on the flag and select your country.
+
+2. Create a cookie file and name it dstv.com.cookies.txt.place it in the same directory as your webgrab++config.xml file.If you dont know how see here..
+   http://www.webgrabplus.com/documentation/configuration/cookie
+
+3. Open the dstv.com.ini file and scroll to the bottom to the channels.xml creation section and enable only this section..
+   **      #####  COUNTRY CODE FILE CREATION (only to create the xxx-channel.xml file)
+
+4.  Add this channel to your webgrab++config.xml..
+    <channel update="i" site="dstv.com" site_id="" xmltv_id="dummy">dummy</channel>
+
+5. Run webgrab,you will see a message about a irregular cookie file,you can ignore it.
+
+6. Open the dstv.com.channels.xml and you will some something like below..in this case site_id="NG" is Nigeria which should be tthe same country you selected above.
+       <channel update="i" site="dstv.com" site_id="NG" xmltv_id="Country Code">Country Code</channel>
+
+7.copy this <channel...</channel> line to your webgrab++config.xml and replace the one you used above.
+
+8.disable the 
+     **      #####  BOUQUET FILE CREATION (only to create the xxx-channel.xml file)
+  section and enable this section
+     **      #####  COUNTRY BOUQUET ID FILE CREATION (only to create the xxx-channel.xml file)
+
+10. Run webgrab and open the dstv.com.channels.xml file you you should see a list of channel bouquets similar to below(list will vary depending on country,below is for Nigeria).
+  <channels>
+    <channel update="i" site="dstv.com" site_id="b8ff3564-52dc-40c3-a465-e8661d4e96cd" xmltv_id="DStv Premium">DStv Premium</channel>
+    <channel update="i" site="dstv.com" site_id="449a4511-4f4d-40fb-8668-3ac42f5537fc" xmltv_id="DStv Compact">DStv Compact</channel>
+    <channel update="i" site="dstv.com" site_id="3db2aaed-4660-48c8-86dd-c3a907a43aa7" xmltv_id="DStv Compact Plus">DStv Compact Plus</channel>
+    <channel update="i" site="dstv.com" site_id="5c11dc59-603e-4bbb-a3c9-66520c0a0a44" xmltv_id="DStv Family">DStv Family</channel>
+    <channel update="i" site="dstv.com" site_id="41349b85-add9-47a6-9851-3a723f791bd5" xmltv_id="DStv Access">DStv Access</channel>
+    <channel update="i" site="dstv.com" site_id="050ab866-70d9-4fe4-a9b3-516fbf634010" xmltv_id="DStv French Touch">DStv French Touch</channel>
+    <channel update="i" site="dstv.com" site_id="483465ab-8d65-4ef5-93c1-ca205c1f5e72" xmltv_id="DStv French+">DStv French+</channel>
+    <channel update="i" site="dstv.com" site_id="6ca1bc1b-435f-48d3-8e34-b615df09b341" xmltv_id="DStv Mobile">DStv Mobile</channel>
+    <channel update="i" site="dstv.com" site_id="f0a46e79-666b-4d42-b3e7-45836cafa86b" xmltv_id="DStv Mobile DVBH">DStv Mobile DVBH</channel>
+    <channel update="i" site="dstv.com" site_id="485ebada-91fd-4a78-8ba5-889db749b0bc" xmltv_id="Great Wall Africa">Great Wall Africa</channel>
+  </channels>    
+
+11. Copy the <channel..></channel> bouquet line you with to get the channels for to your webgrab++config.xml and replace the line you used above.
+
+12.disable the 
+     **      #####  COUNTRY BOUQUET ID FILE CREATION (only to create the xxx-channel.xml file)
+  section and enable this section
+     **      #####  CHANNEL FILE CREATION (only to create the xxx-channel.xml file)
+
+13. Run webgrab webgrab and open the dstv.com.channels.xml file and you should have a channel list for the country and channel bouquet you picked above.
+
+14. Disable the   **      #####  CHANNEL FILE CREATION (only to create the xxx-channel.xml file).
+
+15.Your done.
+
+IMPORTANT!!!!
+
+Unlike the mobile site that only need a cookie file to create a channels.xml list the full site needs a cookie file to grab epg data also.
+This means that if you create a channels.xml list for multiple countries you will only be able to grab epg data for the country that the cookie file is created for.
+
+To get around this..
+
+1. Make a copy of the ini file and name it something different.I suggest add the country name.example for nigeria..dstv.com_ng.ini
+2. Create a cookie file as described above but give it a unique name also,example...dstv.com_ng.cookies.txt
+3. Open the ini file and on the site {...} line change the cookie filename to match the unique name you gave it above,example...loadcookie=dstv.com_ng.cookies.txt
+4. Creat your channels.xml as outlined above.when you are done the resulting list site_id="xxx" will have the ini filename that you gave it in step 1.example site_id="dstv.com_ng"
+5. Your finished.This will allow multiple countries to be used as each will have their own ini and cookie file.
+
+
+   
