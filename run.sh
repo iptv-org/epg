@@ -31,8 +31,8 @@ else
     fi
 fi ;
 
-mono "$DIR/bin/WebGrab+Plus.exe" "$DIR/guides/en"
-mono "$DIR/bin/WebGrab+Plus.exe" "$DIR/guides/ru"
+mono "$DIR/bin/WebGrab+Plus.exe" "$DIR/config/en"
+mono "$DIR/bin/WebGrab+Plus.exe" "$DIR/config/ru"
 
 quit 0;
 
