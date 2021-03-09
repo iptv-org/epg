@@ -1,12 +1,5 @@
 #!/bin/bash
 
-#/**
-# * @file run.sh
-# * @brief just start WebGrab+Plus
-# * @author Francis De Paemeleere
-# * @date 31/07/2016
-# */
-
 #backup the current working dir
 WG_BCKP_DIR="$(pwd)"
 
