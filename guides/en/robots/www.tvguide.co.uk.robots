@@ -1,0 +1,48 @@
+﻿Sitemap: https://www.tvguide.co.uk/sitemaps/sitemap_shows.xml
+Sitemap: https://www.tvguide.co.uk/sitemaps/sitemap.xml
+
+User-agent: *
+Disallow: /iplayerfeeds.asp
+
+User-agent: *
+Disallow: /iphone/*
+
+User-agent: *
+Disallow: /storydetail.asp 
+
+User-agent: *
+Disallow: /search_all.asp 
+
+User-agent: *
+Disallow: /livechatlink.asp
+
+User-agent: *
+Disallow: /programmewatched.asp
+
+User-agent: *
+Disallow: /London2012Olympics.asp
+
+User-agent: *
+Disallow: /addfreeview.asp
+
+User-agent: *
+Disallow: /trailers/trailer.asp
+
+User-agent: *
+Disallow: /petproblems/Highlights-TV-Show-Multi.asp
+
+User-agent: *
+Disallow: /*ajax*
+
+User-agent: *
+Disallow: /*flash/*
+
+User-agent: *
+Disallow: /*.vcs
+
+User-agent: *
+Disallow: /*rewrite.asp
+
+
+
+

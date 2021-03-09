@@ -31,7 +31,8 @@ else
     fi
 fi ;
 
-mono "$DIR/bin/WebGrab+Plus.exe" "$DIR"
+mono "$DIR/bin/WebGrab+Plus.exe" "/Users/Arhey/Code/iptv-org/epg/guides/en"
+mono "$DIR/bin/WebGrab+Plus.exe" "/Users/Arhey/Code/iptv-org/epg/guides/ru"
 
 quit 0;
 
