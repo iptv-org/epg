@@ -38,30 +38,30 @@ async function main() {
   channels.forEach(channel => {
     const site = sites[channel.site]
     dates.forEach(date => {
-      const url = site.url({ date, channel })
-      const promise = client.get(url).catch(console.log)
-
       requests.push({
-        url,
-        site,
-        channel,
-        promise
+        url: site.url({ date, channel }),
+        channel
       })
     })
   })
 
   let programs = []
   for (let request of requests) {
-    const progs = await request.promise
+    const progs = await client
+      .get(request.url)
       .then(response => {
         const channel = request.channel
+        const site = sites[channel.site]
         console.log(`${channel.site} - ${channel.xmltv_id}`)
 
-        return request.site.parser({ channel, content: response.data })
+        return site.parser({ channel, content: response.data })
       })
       .then(utils.sleep(3000))
+      .catch(console.log)
+
     programs = programs.concat(progs)
   }
+
   const xml = utils.convertToXMLTV({ channels, programs })
   fs.writeFileSync(path.resolve(__dirname, config.filename), xml)
 }
