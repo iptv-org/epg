@@ -2,16 +2,15 @@ const fs = require('fs')
 const path = require('path')
 const convert = require('xml-js')
 const dayjs = require('dayjs')
+const glob = require('glob')
 
 const utils = {}
 utils.convertToXMLTV = function ({ channels, programs }) {
-  let output = `<?xml version="1.0" encoding="UTF-8" ?><tv>`
+  let output = '<?xml version="1.0" encoding="UTF-8" ?><tv>'
 
   for (let channel of channels) {
     output += `
-<channel id="${channel['xmltv_id']}">
-  <display-name>${channel.name}</display-name>
-</channel>`
+<channel id="${channel['xmltv_id']}"><display-name>${channel.name}</display-name></channel>`
   }
 
   for (let program of programs) {
@@ -19,14 +18,13 @@ utils.convertToXMLTV = function ({ channels, programs }) {
     const stop = dayjs(program.stop).format('YYYYMMDDHHmmss ZZ')
 
     output += `
-<programme start="${start}" stop="${stop}" channel="${program.channel}">
-  <title lang="${program.lang}">${program.title}</title>`
+<programme start="${start}" stop="${stop}" channel="${program.channel}"><title lang="${program.lang}">${program.title}</title>`
 
     if (program.category) {
       output += `<category lang="${program.lang}">${program.category}</category>`
     }
 
-    output += `</programme>`
+    output += '</programme>'
   }
 
   output += '</tv>'
@@ -34,8 +32,8 @@ utils.convertToXMLTV = function ({ channels, programs }) {
   return output
 }
 
-utils.parseConfig = function (config) {
-  const xml = fs.readFileSync(path.resolve(process.cwd(), config), {
+utils.parseConfig = function (configPath) {
+  const xml = fs.readFileSync(path.resolve(process.cwd(), configPath), {
     encoding: 'utf-8'
   })
   const result = convert.xml2js(xml)
@@ -64,6 +62,22 @@ utils.getElementText = function (name, elements) {
   const el = elements.find(el => el.name === name)
 
   return el ? el.elements.find(el => el.type === 'text').text : null
+}
+
+utils.loadSites = function (sitesPath) {
+  const sites = {}
+  glob.sync(`${sitesPath}/*.js`).forEach(function (file) {
+    const name = path.parse(file).name
+    sites[name] = require(path.resolve(file))
+  })
+
+  return sites
+}
+
+utils.sleep = function (ms) {
+  return function (x) {
+    return new Promise(resolve => setTimeout(() => resolve(x), ms))
+  }
 }
 
 module.exports = utils

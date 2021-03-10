@@ -3,6 +3,7 @@
 const fs = require('fs')
 const path = require('path')
 const axios = require('axios')
+const axiosDelayAdapter = require('axios-delay').default
 const utils = require('./utils')
 const { Command } = require('commander')
 const program = new Command()
@@ -22,61 +23,47 @@ program
 const options = program.opts()
 
 const config = utils.parseConfig(options.config)
+const sites = utils.loadSites(options.sites)
 
-return console.log(config)
+const client = axios.create({
+  adapter: axiosDelayAdapter(axios.defaults.adapter),
+  headers: { 'User-Agent': config.userAgent }
+})
 
-const sites = {
-  'tv.yandex.ru': {
-    url: function ({ date, channel }) {
-      return `https://tv.yandex.ru/channel/${channel.site_id}?date=${date.format('YYYY-MM-DD')}`
-    },
-    parser: function ({ channel, content }) {
-      const initialState = content.match(/window.__INITIAL_STATE__ = (.*);/i)[1]
-      const data = JSON.parse(initialState, null, 2)
-      const programs = data.channel.schedule.events.map(i => {
-        return {
-          title: i.title,
-          description: i.program.description,
-          start: i.start,
-          stop: i.finish,
-          lang: 'ru',
-          channel: channel['xmltv_id']
-        }
-      })
-
-      return programs
-    }
-  }
-}
-
-function main() {
+async function main() {
   const d = dayjs.utc()
   const dates = Array.from({ length: config.days }, (_, i) => d.add(i, 'd'))
   const channels = config.channels
-  const promises = []
+  const requests = []
   channels.forEach(channel => {
     const site = sites[channel.site]
     dates.forEach(date => {
       const url = site.url({ date, channel })
-      const promise = axios.get(url).then(response => {
-        return site.parser({ channel, content: response.data })
+      const promise = client.get(url).catch(console.log)
+
+      requests.push({
+        url,
+        site,
+        channel,
+        promise
       })
-
-      promises.push(promise)
     })
   })
 
-  Promise.allSettled(promises).then(results => {
-    let programs = []
-    results.forEach(result => {
-      if (result.status === 'fulfilled') {
-        programs = programs.concat(result.value)
-      }
-    })
+  let programs = []
+  for (let request of requests) {
+    const progs = await request.promise
+      .then(response => {
+        const channel = request.channel
+        console.log(`${channel.site} - ${channel.xmltv_id}`)
 
-    const xml = utils.convertToXMLTV({ channels, programs })
-    fs.writeFileSync(path.resolve(__dirname, config.filename), xml)
-  })
+        return request.site.parser({ channel, content: response.data })
+      })
+      .then(utils.sleep(3000))
+    programs = programs.concat(progs)
+  }
+  const xml = utils.convertToXMLTV({ channels, programs })
+  fs.writeFileSync(path.resolve(__dirname, config.filename), xml)
 }
 
 main()

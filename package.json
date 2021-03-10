@@ -1,15 +1,17 @@
 {
   "name": "epg",
   "scripts": {
-    "update": "./bin/epg-grabber/index.js --config=config/ru/config.xml"
+    "update": "./bin/epg-grabber/index.js --config=config/ru/config.xml --sites=config/ru/sites"
   },
   "private": true,
   "author": "Arhey",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.21.1",
+    "axios-delay": "^1.0.0-rc6",
     "commander": "^7.1.0",
     "dayjs": "^1.10.4",
+    "glob": "^7.1.6",
     "xml-js": "^1.6.11"
   }
 }
