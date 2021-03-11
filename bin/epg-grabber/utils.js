@@ -14,9 +14,9 @@ utils.convertToXMLTV = function ({ channels, programs }) {
   }
 
   for (let program of programs) {
-    const start = program.start ? dayjs(program.start).format('YYYYMMDDHHmmss ZZ') : null
-    const stop = program.stop ? dayjs(program.stop).format('YYYYMMDDHHmmss ZZ') : null
-    const title = program.title ? program.title.toString().trim().replace('&', '&amp;') : null
+    const start = program.start ? dayjs(program.start).format('YYYYMMDDHHmmss ZZ') : ''
+    const stop = program.stop ? dayjs(program.stop).format('YYYYMMDDHHmmss ZZ') : ''
+    const title = program.title ? program.title.toString().trim().replace('&', '&amp;') : ''
     const lang = program.lang ? program.lang : 'en'
 
     if (start && title) {
