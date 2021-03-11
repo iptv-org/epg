@@ -40,6 +40,7 @@ async function main() {
     dates.forEach(date => {
       requests.push({
         url: site.url({ date, channel }),
+        date,
         channel
       })
     })
@@ -54,7 +55,11 @@ async function main() {
         const site = sites[channel.site]
         console.log(`${channel.site} - ${channel.xmltv_id}`)
 
-        return site.parser({ channel, content: response.data })
+        return site.parser({
+          channel,
+          content: response.data,
+          date: request.date
+        })
       })
       .then(utils.sleep(3000))
       .catch(console.log)

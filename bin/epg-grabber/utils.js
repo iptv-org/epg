@@ -14,17 +14,21 @@ utils.convertToXMLTV = function ({ channels, programs }) {
   }
 
   for (let program of programs) {
-    const start = dayjs(program.start).format('YYYYMMDDHHmmss ZZ')
-    const stop = dayjs(program.stop).format('YYYYMMDDHHmmss ZZ')
+    const start = program.start ? dayjs(program.start).format('YYYYMMDDHHmmss ZZ') : null
+    const stop = program.stop ? dayjs(program.stop).format('YYYYMMDDHHmmss ZZ') : null
+    const title = program.title ? program.title.toString().trim().replace('&', '&amp;') : null
+    const lang = program.lang ? program.lang : 'en'
 
-    output += `
-<programme start="${start}" stop="${stop}" channel="${program.channel}"><title lang="${program.lang}">${program.title}</title>`
+    if (start && title) {
+      output += `
+  <programme start="${start}" stop="${stop}" channel="${program.channel}"><title lang="${lang}">${title}</title>`
 
-    if (program.category) {
-      output += `<category lang="${program.lang}">${program.category}</category>`
+      if (program.category) {
+        output += `<category lang="${lang}">${program.category}</category>`
+      }
+
+      output += '</programme>'
     }
-
-    output += '</programme>'
   }
 
   output += '</tv>'
