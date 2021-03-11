@@ -47,7 +47,13 @@ utils.convertToXMLTV = function ({ config, channels, programs }) {
 
     if (start && title) {
       output += `
-<programme start="${start}" stop="${stop}" channel="${program.channel}"><title lang="${lang}">${title}</title>`
+<programme start="${start}"`
+
+      if (stop) {
+        output += ` stop="${stop}"`
+      }
+
+      output += ` channel="${program.channel}"><title lang="${lang}">${title}</title>`
 
       if (description) {
         output += `<desc lang="${lang}">${description}</desc>`
