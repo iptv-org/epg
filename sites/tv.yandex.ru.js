@@ -2,7 +2,7 @@ module.exports = {
   url: function ({ date, channel }) {
     return `https://tv.yandex.ru/channel/${channel.site_id}?date=${date.format('YYYY-MM-DD')}`
   },
-  parser: function ({ channel, content }) {
+  parser: function ({ channel, content, lang }) {
     const initialState = content.match(/window.__INITIAL_STATE__ = (.*);/i)[1]
     const data = JSON.parse(initialState, null, 2)
     let programs = []
@@ -13,7 +13,7 @@ module.exports = {
           description: i.program.description,
           start: i.start,
           stop: i.finish,
-          lang: 'ru',
+          lang,
           channel: channel['xmltv_id']
         }
       })

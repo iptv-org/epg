@@ -71,7 +71,8 @@ async function main() {
           .parser({
             channel,
             content: response.data,
-            date
+            date,
+            lang: config.lang || 'en'
           })
           .filter(p => p)
 

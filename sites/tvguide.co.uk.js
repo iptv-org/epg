@@ -9,7 +9,7 @@ module.exports = {
   url: function ({ date, channel }) {
     return `https://www.tvguide.co.uk/mobile/channellisting.asp?ch=${channel.site_id}`
   },
-  parser: function ({ channel, content, date }) {
+  parser: function ({ channel, content, date, lang }) {
     const programs = []
     const dom = new JSDOM(content)
     const channelListings = dom.window.document.querySelector('#channel-listings')
@@ -42,7 +42,7 @@ module.exports = {
           description,
           start,
           stop: null,
-          lang: 'en',
+          lang,
           channel: channel['xmltv_id']
         })
       }

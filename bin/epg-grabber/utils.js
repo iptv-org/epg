@@ -83,6 +83,7 @@ utils.parseConfig = function (configPath) {
   const userAgent = this.getElementText('user-agent', settings.elements)
   const timezone = this.getElementText('timezone', settings.elements)
   const cookie = this.getElementText('cookie', settings.elements)
+  const lang = this.getElementText('lang', settings.elements)
   const channels = settings.elements
     .filter(el => el.name === 'channel')
     .map(el => {
@@ -98,7 +99,8 @@ utils.parseConfig = function (configPath) {
     userAgent,
     timezone,
     channels,
-    cookie
+    cookie,
+    lang
   }
 }
 
