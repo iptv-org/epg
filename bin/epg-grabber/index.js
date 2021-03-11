@@ -66,11 +66,13 @@ async function main() {
         const channel = request.channel
         const site = sites[channel.site]
 
-        const programs = site.parser({
-          channel,
-          content: response.data,
-          date: request.date
-        })
+        const programs = site
+          .parser({
+            channel,
+            content: response.data,
+            date: request.date
+          })
+          .filter(p => p)
 
         console.log(`  ${channel.site} - ${channel.xmltv_id} (${programs.length} programs)`)
 

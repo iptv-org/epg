@@ -33,6 +33,10 @@ module.exports = {
           .set('y', date.get('y'))
           .toString()
 
+        if (programs.length && !programs[programs.length - 1].stop) {
+          programs[programs.length - 1].stop = start
+        }
+
         programs.push({
           title,
           description,

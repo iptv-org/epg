@@ -32,6 +32,8 @@ utils.convertToXMLTV = function ({ config, channels, programs }) {
   }
 
   for (let program of programs) {
+    if (!program) continue
+
     const start = program.start
       ? dayjs.tz(program.start, config.timezone).format('YYYYMMDDHHmmss ZZ')
       : ''
