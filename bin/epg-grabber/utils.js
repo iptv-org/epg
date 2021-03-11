@@ -3,6 +3,10 @@ const path = require('path')
 const convert = require('xml-js')
 const dayjs = require('dayjs')
 const glob = require('glob')
+const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
+dayjs.extend(utc)
+dayjs.extend(timezone)
 
 const utils = {}
 utils.escapeString = function (string) {
@@ -18,7 +22,7 @@ utils.escapeString = function (string) {
     .trim()
 }
 
-utils.convertToXMLTV = function ({ channels, programs }) {
+utils.convertToXMLTV = function ({ config, channels, programs }) {
   let output = '<?xml version="1.0" encoding="UTF-8" ?><tv>'
 
   for (let channel of channels) {
@@ -28,8 +32,12 @@ utils.convertToXMLTV = function ({ channels, programs }) {
   }
 
   for (let program of programs) {
-    const start = program.start ? dayjs(program.start).format('YYYYMMDDHHmmss ZZ') : ''
-    const stop = program.stop ? dayjs(program.stop).format('YYYYMMDDHHmmss ZZ') : ''
+    const start = program.start
+      ? dayjs.tz(program.start, config.timezone).format('YYYYMMDDHHmmss ZZ')
+      : ''
+    const stop = program.stop
+      ? dayjs.tz(program.stop, config.timezone).format('YYYYMMDDHHmmss ZZ')
+      : ''
     const title = program.title ? this.escapeString(program.title) : ''
     const description = program.description ? this.escapeString(program.description) : ''
     const category = program.category ? this.escapeString(program.category) : ''
@@ -65,6 +73,7 @@ utils.parseConfig = function (configPath) {
   const filename = this.getElementText('filename', settings.elements)
   const days = this.getElementText('days', settings.elements)
   const userAgent = this.getElementText('user-agent', settings.elements)
+  const timezone = this.getElementText('timezone', settings.elements)
   const channels = settings.elements
     .filter(el => el.name === 'channel')
     .map(el => {
@@ -78,6 +87,7 @@ utils.parseConfig = function (configPath) {
     filename,
     days,
     userAgent,
+    timezone,
     channels
   }
 }

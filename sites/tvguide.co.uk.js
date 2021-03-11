@@ -26,7 +26,8 @@ module.exports = {
       const description = htmlToText(detail.innerHTML)
 
       if (time && title) {
-        const start = dayjs(time, 'h:mma')
+        const start = dayjs
+          .utc(time, 'h:mma')
           .set('D', date.get('D'))
           .set('M', date.get('M'))
           .set('y', date.get('y'))

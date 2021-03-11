@@ -9,7 +9,10 @@ const { Command } = require('commander')
 const program = new Command()
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
 dayjs.extend(utc)
+dayjs.extend(timezone)
+dayjs.tz.setDefault('UTC')
 
 program
   .version('0.1.0', '-v, --version')
@@ -73,7 +76,7 @@ async function main() {
     programs = programs.concat(progs)
   }
 
-  const xml = utils.convertToXMLTV({ channels, programs })
+  const xml = utils.convertToXMLTV({ config, channels, programs })
   utils.createDir(path.dirname(config.filename))
   utils.writeToFile(config.filename, xml)
   console.log(`File '${config.filename}' successfully updated`)
