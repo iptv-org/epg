@@ -5,26 +5,46 @@ const dayjs = require('dayjs')
 const glob = require('glob')
 
 const utils = {}
+utils.escapeString = function (string) {
+  return string
+    .toString()
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&apos;')
+    .replace(/\n|\r/g, ' ')
+    .replace(/  +/g, ' ')
+    .trim()
+}
+
 utils.convertToXMLTV = function ({ channels, programs }) {
   let output = '<?xml version="1.0" encoding="UTF-8" ?><tv>'
 
   for (let channel of channels) {
+    const displayName = this.escapeString(channel.name)
     output += `
-<channel id="${channel['xmltv_id']}"><display-name>${channel.name}</display-name></channel>`
+<channel id="${channel['xmltv_id']}"><display-name>${displayName}</display-name></channel>`
   }
 
   for (let program of programs) {
     const start = program.start ? dayjs(program.start).format('YYYYMMDDHHmmss ZZ') : ''
     const stop = program.stop ? dayjs(program.stop).format('YYYYMMDDHHmmss ZZ') : ''
-    const title = program.title ? program.title.toString().trim().replace('&', '&amp;') : ''
+    const title = program.title ? this.escapeString(program.title) : ''
+    const description = program.description ? this.escapeString(program.description) : ''
+    const category = program.category ? this.escapeString(program.category) : ''
     const lang = program.lang ? program.lang : 'en'
 
     if (start && title) {
       output += `
 <programme start="${start}" stop="${stop}" channel="${program.channel}"><title lang="${lang}">${title}</title>`
 
-      if (program.category) {
-        output += `<category lang="${lang}">${program.category}</category>`
+      if (description) {
+        output += `<desc lang="${lang}">${description}</desc>`
+      }
+
+      if (category) {
+        output += `<category lang="${lang}">${category}</category>`
       }
 
       output += '</programme>'

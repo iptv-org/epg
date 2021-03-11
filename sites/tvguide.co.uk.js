@@ -3,6 +3,7 @@ const { JSDOM } = jsdom
 const dayjs = require('dayjs')
 var customParseFormat = require('dayjs/plugin/customParseFormat')
 dayjs.extend(customParseFormat)
+const { htmlToText } = require('html-to-text')
 
 module.exports = {
   url: function ({ date, channel }) {
@@ -21,6 +22,8 @@ module.exports = {
       const title = (tr.getElementsByClassName('title')[0] || { innerHTML: '' }).innerHTML
         .toString()
         .trim()
+      const detail = tr.getElementsByClassName('detail')[0] || { innerHTML: '' }
+      const description = htmlToText(detail.innerHTML)
 
       if (time && title) {
         const start = dayjs(time, 'h:mma')
@@ -31,7 +34,7 @@ module.exports = {
 
         programs.push({
           title,
-          description: null,
+          description,
           start,
           stop: null,
           lang: 'en',
