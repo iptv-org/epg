@@ -21,7 +21,7 @@ utils.convertToXMLTV = function ({ channels, programs }) {
 
     if (start && title) {
       output += `
-  <programme start="${start}" stop="${stop}" channel="${program.channel}"><title lang="${lang}">${title}</title>`
+<programme start="${start}" stop="${stop}" channel="${program.channel}"><title lang="${lang}">${title}</title>`
 
       if (program.category) {
         output += `<category lang="${lang}">${program.category}</category>`
@@ -31,7 +31,7 @@ utils.convertToXMLTV = function ({ channels, programs }) {
     }
   }
 
-  output += '</tv>'
+  output += '\r\n</tv>'
 
   return output
 }

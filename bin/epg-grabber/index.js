@@ -77,7 +77,7 @@ async function main() {
   utils.createDir(path.dirname(config.filename))
   utils.writeToFile(config.filename, xml)
   console.log(`File '${config.filename}' successfully updated`)
-  console.log('Finish')
+  console.log('Finish\r\n')
 }
 
 main()
