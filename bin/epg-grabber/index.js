@@ -3,7 +3,8 @@
 const fs = require('fs')
 const path = require('path')
 const axios = require('axios')
-const axiosDelayAdapter = require('axios-delay').default
+const axiosCookieJarSupport = require('axios-cookiejar-support').default
+const tough = require('tough-cookie')
 const utils = require('./utils')
 const { Command } = require('commander')
 const program = new Command()
@@ -13,6 +14,10 @@ const timezone = require('dayjs/plugin/timezone')
 dayjs.extend(utc)
 dayjs.extend(timezone)
 dayjs.tz.setDefault('UTC')
+
+axiosCookieJarSupport(axios)
+
+const cookieJar = new tough.CookieJar()
 
 program
   .version('0.1.0', '-v, --version')
@@ -29,8 +34,9 @@ const config = utils.parseConfig(options.config)
 const sites = utils.loadSites(options.sites)
 
 const client = axios.create({
-  adapter: axiosDelayAdapter(axios.defaults.adapter),
-  headers: { 'User-Agent': config.userAgent }
+  headers: { 'User-Agent': config.userAgent, Cookie: config.cookie },
+  withCredentials: true,
+  jar: cookieJar
 })
 
 async function main() {
