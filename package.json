@@ -1,0 +1,17 @@
+{
+  "name": "epg",
+  "scripts": {},
+  "private": true,
+  "author": "Arhey",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "axios-delay": "^1.0.0-rc6",
+    "cheerio": "^1.0.0-rc.5",
+    "commander": "^7.1.0",
+    "dayjs": "^1.10.4",
+    "glob": "^7.1.6",
+    "jsdom": "^16.5.0",
+    "xml-js": "^1.6.11"
+  }
+}
