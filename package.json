@@ -1,8 +1,6 @@
 {
   "name": "epg",
-  "scripts": {
-    "update": "./bin/epg-grabber/index.js --config=config/en/config.xml --sites=config/en/sites"
-  },
+  "scripts": {},
   "private": true,
   "author": "Arhey",
   "license": "MIT",

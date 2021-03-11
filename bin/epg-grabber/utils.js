@@ -84,4 +84,14 @@ utils.sleep = function (ms) {
   }
 }
 
+utils.createDir = function (dir) {
+  if (!fs.existsSync(path.resolve(__dirname, dir))) {
+    fs.mkdirSync(path.resolve(__dirname, dir))
+  }
+}
+
+utils.writeToFile = function (filename, data) {
+  fs.writeFileSync(path.resolve(__dirname, filename), data)
+}
+
 module.exports = utils

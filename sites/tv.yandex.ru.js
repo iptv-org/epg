@@ -5,16 +5,19 @@ module.exports = {
   parser: function ({ channel, content }) {
     const initialState = content.match(/window.__INITIAL_STATE__ = (.*);/i)[1]
     const data = JSON.parse(initialState, null, 2)
-    const programs = data.channel.schedule.events.map(i => {
-      return {
-        title: i.title,
-        description: i.program.description,
-        start: i.start,
-        stop: i.finish,
-        lang: 'ru',
-        channel: channel['xmltv_id']
-      }
-    })
+    let programs = []
+    if (data.channel) {
+      programs = data.channel.schedule.events.map(i => {
+        return {
+          title: i.title,
+          description: i.program.description,
+          start: i.start,
+          stop: i.finish,
+          lang: 'ru',
+          channel: channel['xmltv_id']
+        }
+      })
+    }
 
     return programs
   }
