@@ -1,14 +1,66 @@
 const fs = require('fs')
 const path = require('path')
+const axios = require('axios')
+const axiosCookieJarSupport = require('axios-cookiejar-support').default
+const tough = require('tough-cookie')
 const convert = require('xml-js')
-const dayjs = require('dayjs')
 const glob = require('glob')
+const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
 dayjs.extend(utc)
 dayjs.extend(timezone)
+dayjs.tz.setDefault('UTC')
+axiosCookieJarSupport(axios)
 
 const utils = {}
+utils.loadConfig = function (file) {
+  if (!file) throw new Error('Path to [site].config.js is missing')
+  console.log(`Loading '${file}'...`)
+
+  const config = require(path.resolve(process.cwd(), file))
+
+  return Object.assign(
+    {},
+    {
+      userAgent:
+        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36 Edg/79.0.309.71',
+      days: 1,
+      cookie: '',
+      lang: 'en'
+    },
+    config
+  )
+}
+
+utils.parseChannels = function (file) {
+  if (!file) throw new Error('Path to [site].channels.xml is missing')
+  console.log(`Loading '${file}'...`)
+
+  const xml = fs.readFileSync(path.resolve(__dirname, file), {
+    encoding: 'utf-8'
+  })
+  const result = convert.xml2js(xml)
+  const site = result.elements.find(el => el.name === 'site')
+  const channels = site.elements.find(el => el.name === 'channels')
+
+  return channels.elements
+    .filter(el => el.name === 'channel')
+    .map(el => {
+      const channel = el.attributes
+      channel.name = el.elements.find(el => el.type === 'text').text
+      channel.site = channel.site || site.attributes.site
+
+      return channel
+    })
+}
+
+utils.sleep = function (ms) {
+  return function (x) {
+    return new Promise(resolve => setTimeout(() => resolve(x), ms))
+  }
+}
+
 utils.escapeString = function (string) {
   return string
     .toString()
@@ -23,31 +75,25 @@ utils.escapeString = function (string) {
 }
 
 utils.convertToXMLTV = function ({ config, channels, programs }) {
-  let output = '<?xml version="1.0" encoding="UTF-8" ?><tv>'
+  let output = `<?xml version="1.0" encoding="UTF-8" ?><tv>\r\n`
 
   for (let channel of channels) {
     const displayName = this.escapeString(channel.name)
-    output += `
-<channel id="${channel['xmltv_id']}"><display-name>${displayName}</display-name></channel>`
+    output += `<channel id="${channel['xmltv_id']}"><display-name>${displayName}</display-name></channel>\r\n`
   }
 
   for (let program of programs) {
     if (!program) continue
 
-    const start = program.start
-      ? dayjs.tz(program.start, config.timezone).format('YYYYMMDDHHmmss ZZ')
-      : ''
-    const stop = program.stop
-      ? dayjs.tz(program.stop, config.timezone).format('YYYYMMDDHHmmss ZZ')
-      : ''
+    const start = program.start ? dayjs(program.start).format('YYYYMMDDHHmmss ZZ') : ''
+    const stop = program.stop ? dayjs(program.stop).format('YYYYMMDDHHmmss ZZ') : ''
     const title = program.title ? this.escapeString(program.title) : ''
     const description = program.description ? this.escapeString(program.description) : ''
     const category = program.category ? this.escapeString(program.category) : ''
     const lang = program.lang ? program.lang : 'en'
 
     if (start && title) {
-      output += `
-<programme start="${start}"`
+      output += `<programme start="${start}"`
 
       if (stop) {
         output += ` stop="${stop}"`
@@ -63,67 +109,17 @@ utils.convertToXMLTV = function ({ config, channels, programs }) {
         output += `<category lang="${lang}">${category}</category>`
       }
 
-      output += '</programme>'
+      output += '</programme>\r\n'
     }
   }
 
-  output += '\r\n</tv>'
+  output += '</tv>'
 
   return output
 }
 
-utils.parseConfig = function (configPath) {
-  const xml = fs.readFileSync(path.resolve(process.cwd(), configPath), {
-    encoding: 'utf-8'
-  })
-  const result = convert.xml2js(xml)
-  const settings = result.elements.find(el => el.name === 'settings')
-  const filename = this.getElementText('filename', settings.elements)
-  const days = this.getElementText('days', settings.elements)
-  const userAgent = this.getElementText('user-agent', settings.elements)
-  const timezone = this.getElementText('timezone', settings.elements)
-  const cookie = this.getElementText('cookie', settings.elements)
-  const lang = this.getElementText('lang', settings.elements)
-  const channels = settings.elements
-    .filter(el => el.name === 'channel')
-    .map(el => {
-      const channel = el.attributes
-      channel.name = el.elements.find(el => el.type === 'text').text
-
-      return channel
-    })
-
-  return {
-    filename,
-    days,
-    userAgent,
-    timezone,
-    channels,
-    cookie,
-    lang
-  }
-}
-
-utils.getElementText = function (name, elements) {
-  const el = elements.find(el => el.name === name)
-
-  return el ? el.elements.find(el => el.type === 'text').text : null
-}
-
-utils.loadSites = function (sitesPath) {
-  const sites = {}
-  glob.sync(`${sitesPath}/*.js`).forEach(function (file) {
-    const name = path.parse(file).name
-    sites[name] = require(path.resolve(file))
-  })
-
-  return sites
-}
-
-utils.sleep = function (ms) {
-  return function (x) {
-    return new Promise(resolve => setTimeout(() => resolve(x), ms))
-  }
+utils.getDirectory = function (file) {
+  return path.dirname(file)
 }
 
 utils.createDir = function (dir) {
@@ -134,6 +130,21 @@ utils.createDir = function (dir) {
 
 utils.writeToFile = function (filename, data) {
   fs.writeFileSync(path.resolve(__dirname, filename), data)
+}
+
+utils.createHttpClient = function (config) {
+  return axios.create({
+    headers: {
+      'User-Agent': config.userAgent,
+      Cookie: config.cookie
+    },
+    withCredentials: true,
+    jar: new tough.CookieJar()
+  })
+}
+
+utils.getUTCDate = function () {
+  return dayjs.utc()
 }
 
 module.exports = utils

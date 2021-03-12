@@ -9,13 +9,15 @@ const { htmlToText } = require('html-to-text')
 var parse = require('parse-duration')
 
 module.exports = {
+  lang: 'fr',
+  output: '../../.gh-pages/guides/programme-tv.net.xml',
+  channels: '../../sites/programme-tv.net.channels.xml',
   url: function ({ date, channel }) {
     return `https://www.programme-tv.net/programme/chaine/${date.format('YYYY-MM-DD')}/programme-${
       channel.site_id
     }.html`
   },
   parser: function ({ channel, content, date, lang }) {
-    // console.log(content)
     const programs = []
     const dom = new JSDOM(content)
     const broadcastCards = dom.window.document.querySelectorAll('.singleBroadcastCard')
