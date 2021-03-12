@@ -11,33 +11,29 @@ program
   .option('-c, --config <config>', 'Path to [site].config.js file')
   .parse(process.argv)
 
-const options = program.opts()
-
 async function main() {
   console.log('\r\nStarting...')
 
+  const options = program.opts()
   const config = utils.loadConfig(options.config)
   const client = utils.createHttpClient(config)
   const channels = utils.parseChannels(config.channels)
+  const utcDate = utils.getUTCDate()
+  const dates = Array.from({ length: config.days }, (_, i) => utcDate.add(i, 'd'))
 
-  const d = utils.getUTCDate()
-  const dates = Array.from({ length: config.days }, (_, i) => d.add(i, 'd'))
   const queue = []
   channels.forEach(channel => {
     dates.forEach(date => {
-      queue.push({
-        url: config.url({ date, channel }),
-        date,
-        channel
-      })
+      queue.push({ date, channel })
     })
   })
 
-  console.log('Parsing:')
   let programs = []
+  console.log('Parsing:')
   for (let item of queue) {
+    const url = config.url(item)
     const progs = await client
-      .get(item.url)
+      .get(url)
       .then(response => {
         const parserOptions = Object.assign({}, item, config, { content: response.data })
         const programs = config
