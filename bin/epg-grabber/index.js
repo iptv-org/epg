@@ -50,7 +50,7 @@ async function main() {
 
         return programs
       })
-      .then(utils.sleep(3000))
+      .then(utils.sleep(config.delay))
       .catch(console.log)
 
     programs = programs.concat(progs)

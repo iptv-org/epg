@@ -30,7 +30,8 @@ utils.loadConfig = function (file) {
       days: 1,
       cookie: '',
       lang: 'en',
-      channels: channelsPath
+      channels: channelsPath,
+      delay: 3000
     },
     config
   )
