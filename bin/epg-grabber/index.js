@@ -62,7 +62,7 @@ async function main() {
   utils.writeToFile(config.output, xml)
 
   console.log(`File '${config.output}' successfully saved`)
-  console.log('Finish\r\n')
+  console.log('Finish')
 }
 
 main()

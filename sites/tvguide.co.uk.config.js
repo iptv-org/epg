@@ -1,14 +1,14 @@
 const jsdom = require('jsdom')
 const { JSDOM } = jsdom
+const { htmlToText } = require('html-to-text')
 const dayjs = require('dayjs')
 var customParseFormat = require('dayjs/plugin/customParseFormat')
 dayjs.extend(customParseFormat)
-const { htmlToText } = require('html-to-text')
 
 module.exports = {
+  site: 'tvguide.co.uk',
   lang: 'en',
   output: '../../.gh-pages/guides/tvguide.co.uk.xml',
-  channels: '../../sites/tvguide.co.uk.channels.xml',
   url: function ({ date, channel }) {
     return `https://www.tvguide.co.uk/mobile/channellisting.asp?ch=${channel.site_id}`
   },

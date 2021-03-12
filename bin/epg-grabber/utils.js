@@ -18,7 +18,9 @@ utils.loadConfig = function (file) {
   if (!file) throw new Error('Path to [site].config.js is missing')
   console.log(`Loading '${file}'...`)
 
-  const config = require(path.resolve(process.cwd(), file))
+  const configPath = path.resolve(process.cwd(), file)
+  const config = require(configPath)
+  const channelsPath = path.resolve(this.getDirectory(configPath), `${config.site}.channels.xml`)
 
   return Object.assign(
     {},
@@ -27,7 +29,8 @@ utils.loadConfig = function (file) {
         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36 Edg/79.0.309.71',
       days: 1,
       cookie: '',
-      lang: 'en'
+      lang: 'en',
+      channels: channelsPath
     },
     config
   )
