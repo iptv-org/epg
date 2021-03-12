@@ -4,7 +4,7 @@
     <channel site_id="13eme-rue-26" xmltv_id="13emeRue.fr">13ème Rue</channel>
     <channel site_id="6ter-202" xmltv_id="6ter.fr">6ter</channel>
     <channel site_id="8-mont-blanc-385" xmltv_id="8MontBlanc.fr">8 Mont-Blanc</channel>
-    <!-- <channel site_id="ab-1-31" xmltv_id="AB1.fr">AB 1</channel>
+    <channel site_id="ab-1-31" xmltv_id="AB1.fr">AB 1</channel>
     <channel site_id="ab-3-138" xmltv_id="AB3.fr">AB 3</channel>
     <channel site_id="abxplore-139" xmltv_id="ABXplore.be">ABXplore</channel>
     <channel site_id="acht-245" xmltv_id="Acht.be">Acht</channel>
@@ -16,113 +16,111 @@
     <channel site_id="aplus-international-france-383" xmltv_id="APlus.fr">A+</channel>
     <channel site_id="arte-337" xmltv_id="ArteFrancais.fr">Arte Français</channel>
     <channel site_id="automoto-89" xmltv_id="AutomotoLachaine.fr">Automoto La chaîne</channel>
-    <channel site_id="b-one-339" xmltv_id="B.One">B.One</channel>
-    <channel site_id="baby-tv-229" xmltv_id="Baby TV">Baby TV</channel>
-    <channel site_id="bbc-1-230" xmltv_id="BBC 1">BBC 1</channel>
-    <channel site_id="bbc-2-231" xmltv_id="BBC 2">BBC 2</channel>
-    <channel site_id="bbc-entertainment-194" xmltv_id="BBC Entertainment">BBC Entertainment</channel>
-    <channel site_id="bbc3-246" xmltv_id="BBC3">BBC3</channel>
-    <channel site_id="bbc4-247" xmltv_id="BBC4">BBC4</channel>
-    <channel site_id="bblack-359" xmltv_id="BBlack">BBlack</channel>
-    <channel site_id="be-1-248" xmltv_id="BE 1">BE 1</channel>
-    <channel site_id="be-cine-249" xmltv_id="Be Cine">Be Cine</channel>
-    <channel site_id="be-series-253" xmltv_id="Be Series">Be Series</channel>
-    <channel site_id="bein-sports-1-183" xmltv_id="beIN SPORTS 1">beIN SPORTS 1</channel>
-    <channel site_id="bein-sports-2-184" xmltv_id="beIN SPORTS 2">beIN SPORTS 2</channel>
-    <channel site_id="bein-sports-3-265" xmltv_id="beIN SPORTS 3">beIN SPORTS 3</channel>
-    <channel site_id="bein-sports-max-10-305" xmltv_id="beIN SPORTS MAX 10">beIN SPORTS MAX 10</channel>
-    <channel site_id="bein-sports-max-4-300" xmltv_id="beIN SPORTS MAX 4">beIN SPORTS MAX 4</channel>
-    <channel site_id="bein-sports-max-5-301" xmltv_id="beIN SPORTS MAX 5">beIN SPORTS MAX 5</channel>
-    <channel site_id="bein-sports-max-6-302" xmltv_id="beIN SPORTS MAX 6">beIN SPORTS MAX 6</channel>
-    <channel site_id="bein-sports-max-7-303" xmltv_id="beIN SPORTS MAX 7">beIN SPORTS MAX 7</channel>
-    <channel site_id="bein-sports-max-8-304" xmltv_id="beIN SPORTS MAX 8">beIN SPORTS MAX 8</channel>
-    <channel site_id="bein-sports-max-9-306" xmltv_id="beIN SPORTS MAX 9">beIN SPORTS MAX 9</channel>
-    <channel site_id="bet-299" xmltv_id="BET">BET</channel>
-    <channel site_id="bfm-business-232" xmltv_id="BFM Business">BFM Business</channel>
-    <channel site_id="bfm-grand-lille-367" xmltv_id="BFM Grand Lille">BFM Grand Lille</channel>
-    <channel site_id="bfm-lyon-metropole-364" xmltv_id="BFM Lyon Metropole">BFM Lyon Metropole</channel>
-    <channel site_id="bfm-paris-379" xmltv_id="BFM Paris">BFM Paris</channel>
+    <channel site_id="b-one-339" xmltv_id="BOneTV.cd">B-One TV</channel>
+    <channel site_id="baby-tv-229" xmltv_id="BabyTVEurope.uk">Baby TV Europe</channel>
+    <channel site_id="bbc-1-230" xmltv_id="BBCOne.uk">BBC One</channel>
+    <channel site_id="bbc-2-231" xmltv_id="BBCTwo.uk">BBC Two</channel>
+    <channel site_id="bbc-entertainment-194" xmltv_id="BBCEntertainmentEurope.uk">BBC Entertainment Europe</channel>
+    <channel site_id="bbc4-247" xmltv_id="BBCFour.uk">BBC Four</channel>
+    <channel site_id="bblack-359" xmltv_id="BblackClassik.fr">Bblack! Classik</channel>
+    <channel site_id="be-1-248" xmltv_id="Be1.be">Be 1</channel>
+    <channel site_id="be-cine-249" xmltv_id="BeCine.be">Be Ciné</channel>
+    <channel site_id="be-series-253" xmltv_id="BeSeries.be">Be Séries</channel>
+    <channel site_id="bein-sports-1-183" xmltv_id="beInSports1.qa">beIn Sports 1</channel>
+    <channel site_id="bein-sports-2-184" xmltv_id="beInSports2.qa">beIn Sports 2</channel>
+    <channel site_id="bein-sports-3-265" xmltv_id="beInSports3.qa">beIn Sports 3</channel>
+    <channel site_id="bein-sports-max-10-305" xmltv_id="beInSportsMAX10.qa">beIn Sports MAX 10</channel>
+    <channel site_id="bein-sports-max-4-300" xmltv_id="beInSportsMAX4.qa">beIn Sports MAX 4</channel>
+    <channel site_id="bein-sports-max-5-301" xmltv_id="beInSportsMAX5.qa">beIn Sports MAX 5</channel>
+    <channel site_id="bein-sports-max-6-302" xmltv_id="beInSportsMAX6.qa">beIn Sports MAX 6</channel>
+    <channel site_id="bein-sports-max-7-303" xmltv_id="beInSportsMAX7.qa">beIn Sports MAX 7</channel>
+    <channel site_id="bein-sports-max-8-304" xmltv_id="beInSportsMAX8.qa">beIn Sports MAX 8</channel>
+    <channel site_id="bein-sports-max-9-306" xmltv_id="beInSportsMAX9.qa">beIn Sports MAX 9</channel>
+    <channel site_id="bet-299" xmltv_id="BETFrance.us">BET France</channel>
+    <channel site_id="bfm-business-232" xmltv_id="BFMBusiness.fr">BFM Business</channel>
+    <channel site_id="bfm-grand-lille-367" xmltv_id="BFMGrandLille.fr">BFM Grand Lille</channel>
+    <channel site_id="bfm-lyon-metropole-364" xmltv_id="BFMLyonMetropole.fr">BFM Lyon Metropole</channel>
+    <channel site_id="bfm-paris-379" xmltv_id="BFMParis.fr">BFM Paris</channel>
     <channel site_id="bfm-tv-25" xmltv_id="BFMTV.fr">BFM TV</channel>
-    <channel site_id="boing-233" xmltv_id="Boing">Boing</channel>
-    <channel site_id="boomerang-34" xmltv_id="Boomerang">Boomerang</channel>
+    <channel site_id="boing-233" xmltv_id="BoingFrance.it">Boing France</channel>
+    <channel site_id="boomerang-34" xmltv_id="BoomerangFrance.us">Boomerang France</channel>
     <channel site_id="c8-4" xmltv_id="C8.fr">C8</channel>
-    <channel site_id="canal-32-390" xmltv_id="Canal 32">Canal 32</channel>
-    <channel site_id="canal-j-40" xmltv_id="Canal J">Canal J</channel>
-    <channel site_id="canal-partage-tnt-ile-de-france-163" xmltv_id="Canal partage TNT Ile-de-France">Canal partage TNT Ile-de-France</channel>
-    <channel site_id="canal-z-254" xmltv_id="Canal Z">Canal Z</channel>
+    <channel site_id="canal-32-390" xmltv_id="Canal32.fr">Canal 32</channel>
+    <channel site_id="canal-j-40" xmltv_id="CanalJ.fr">Canal J</channel>
+    <channel site_id="canal-partage-tnt-ile-de-france-163" xmltv_id="CanalpartageTNTIledeFrance.fr">Canal partagé TNT Ile-de-France</channel>
+    <channel site_id="canal-z-254" xmltv_id="CanalZ.be">Canal Z</channel>
     <channel site_id="canalplus-2" xmltv_id="CanalPlusFrance.fr">Canal+ France</channel>
-    <channel site_id="canalplus-cinema-35" xmltv_id="Canal+ Cinema">Canal+ Cinema</channel>
-    <channel site_id="canalplus-decale-36" xmltv_id="Canal+ Decale">Canal+ Decale</channel>
-    <channel site_id="canalplus-family-149" xmltv_id="Canal+ Family">Canal+ Family</channel>
-    <channel site_id="canalplus-series-227" xmltv_id="Canal+ Series">Canal+ Series</channel>
-    <channel site_id="canalplus-sport-37" xmltv_id="Canal+ Sport">Canal+ Sport</channel>
-    <channel site_id="canvas-234" xmltv_id="Canvas">Canvas</channel>
-    <channel site_id="cartoon-network-41" xmltv_id="Cartoon Network">Cartoon Network</channel>
-    <channel site_id="chasse-et-peche-42" xmltv_id="Chasse et peche">Chasse et peche</channel>
-    <channel site_id="cherie-25-206" xmltv_id="Cherie 25">Cherie 25</channel>
-    <channel site_id="cineplus-classic-44" xmltv_id="Cine+ Classic">Cine+ Classic</channel>
-    <channel site_id="cineplus-club-43" xmltv_id="Cine+ Club">Cine+ Club</channel>
-    <channel site_id="cineplus-emotion-45" xmltv_id="Cine+ Emotion">Cine+ Emotion</channel>
-    <channel site_id="cineplus-famiz-46" xmltv_id="Cine+ Famiz">Cine+ Famiz</channel>
-    <channel site_id="cineplus-frisson-47" xmltv_id="Cine+ Frisson">Cine+ Frisson</channel>
-    <channel site_id="cineplus-premier-3" xmltv_id="Cine+ Premier">Cine+ Premier</channel>
-    <channel site_id="club-rtl-140" xmltv_id="Club RTL">Club RTL</channel>
+    <channel site_id="canalplus-cinema-35" xmltv_id="CanalPlusCinema.fr">Canal+ Cinema</channel>
+    <channel site_id="canalplus-decale-36" xmltv_id="CanalPlusDecale.fr">Canal+ Decale</channel>
+    <channel site_id="canalplus-family-149" xmltv_id="CanalPlusFamily.fr">Canal+ Family</channel>
+    <channel site_id="canalplus-series-227" xmltv_id="CanalPlusSeries.fr">Canal+ Series</channel>
+    <channel site_id="canalplus-sport-37" xmltv_id="CanalPlusSport.fr">Canal+ Sport</channel>
+    <channel site_id="canvas-234" xmltv_id="Canvas.be">Canvas</channel>
+    <channel site_id="cartoon-network-41" xmltv_id="CartoonNetworkFrance.us">Cartoon Network France</channel>
+    <channel site_id="chasse-et-peche-42" xmltv_id="Chasseetpeche.fr">Chasse et peche</channel>
+    <channel site_id="cherie-25-206" xmltv_id="Cherie25.fr">Cherie 25</channel>
+    <channel site_id="cineplus-classic-44" xmltv_id="CinePlusClassic.fr">Ciné+ Classic</channel>
+    <channel site_id="cineplus-club-43" xmltv_id="CinePlusClub.fr">Ciné+ Club</channel>
+    <channel site_id="cineplus-emotion-45" xmltv_id="CinePlusEmotion.fr">Ciné+ Emotion</channel>
+    <channel site_id="cineplus-famiz-46" xmltv_id="CinePlusFamiz.fr">Ciné+ Famiz</channel>
+    <channel site_id="cineplus-frisson-47" xmltv_id="CinePlusFrisson.fr">Ciné+ Frisson</channel>
+    <channel site_id="cineplus-premier-3" xmltv_id="CinePlusPremier.fr">Ciné+ Premier</channel>
+    <channel site_id="club-rtl-140" xmltv_id="ClubRTL.be">Club RTL</channel>
     <channel site_id="cnews-30" xmltv_id="CNEWS.fr">CNEWS</channel>
-    <channel site_id="cnn-235" xmltv_id="CNN">CNN</channel>
-    <channel site_id="comedieplus-27" xmltv_id="Comedie+">Comedie+</channel>
-    <channel site_id="comedy-central-472" xmltv_id="Comedy Central">Comedy Central</channel>
-    <channel site_id="crime-district-363" xmltv_id="Crime District">Crime District</channel>
-    <channel site_id="cstar-28" xmltv_id="CSTAR">CSTAR</channel>
-    <channel site_id="das-erste-185" xmltv_id="Das Erste">Das Erste</channel>
-    <channel site_id="demain-tv-53" xmltv_id="Demain TV">Demain TV</channel>
-    <channel site_id="discovery-channel-54" xmltv_id="Discovery Channel">Discovery Channel</channel>
-    <channel site_id="discovery-family-399" xmltv_id="Discovery Family">Discovery Family</channel>
-    <channel site_id="discovery-science-200" xmltv_id="Discovery Science">Discovery Science</channel>
-    <channel site_id="disney-channel-57" xmltv_id="Disney Channel">Disney Channel</channel>
-    <channel site_id="disney-channel-wallonia-271" xmltv_id="Disney Channel Wallonia">Disney Channel Wallonia</channel>
-    <channel site_id="disney-cinema-153" xmltv_id="Disney Cinema">Disney Cinema</channel>
-    <channel site_id="disney-junior-166" xmltv_id="Disney Junior">Disney Junior</channel>
-    <channel site_id="disney-xd-75" xmltv_id="Disney XD">Disney XD</channel>
-    <channel site_id="e-141" xmltv_id="E !">E !</channel>
-    <channel site_id="een-264" xmltv_id="een">een</channel>
-    <channel site_id="equidia-59" xmltv_id="Equidia">Equidia</channel>
-    <channel site_id="eurochannel-236" xmltv_id="Eurochannel">Eurochannel</channel>
-    <channel site_id="euronews-62" xmltv_id="Euronews">Euronews</channel>
-    <channel site_id="eurosport-1-5" xmltv_id="Eurosport 1">Eurosport 1</channel>
-    <channel site_id="eurosport-2-63" xmltv_id="Eurosport 2">Eurosport 2</channel>
-    <channel site_id="extreme-sports-channel-65" xmltv_id="Extreme Sports Channel">Extreme Sports Channel</channel>
-    <channel site_id="fashion-tv-358" xmltv_id="Fashion TV">Fashion TV</channel>
+    <channel site_id="cnn-235" xmltv_id="CNN.us">CNN</channel>
+    <channel site_id="comedieplus-27" xmltv_id="ComediePlus.fr">Comédie+</channel>
+    <channel site_id="comedy-central-472" xmltv_id="ComedyCentralFrance.us">Comedy Central France</channel>
+    <channel site_id="crime-district-363" xmltv_id="CrimeDistrict.fr">Crime District</channel>
+    <channel site_id="cstar-28" xmltv_id="CStar.fr">CStar</channel>
+    <channel site_id="das-erste-185" xmltv_id="DasErste.de">Das Erste</channel>
+    <channel site_id="demain-tv-53" xmltv_id="DemainTV.fr">Demain TV</channel>
+    <channel site_id="discovery-channel-54" xmltv_id="DiscoveryChannelFrance.us">Discovery Channel France</channel>
+    <channel site_id="discovery-family-399" xmltv_id="DiscoveryFamily.us">Discovery Family</channel>
+    <channel site_id="discovery-science-200" xmltv_id="DiscoveryScienceFrance.us">Discovery Science France</channel>
+    <channel site_id="disney-channel-57" xmltv_id="DisneyChannelFrance.us">Disney Channel France</channel>
+    <channel site_id="disney-channel-wallonia-271" xmltv_id="DisneyChannelWallonia.us">Disney Channel Wallonia</channel>
+    <channel site_id="disney-cinema-153" xmltv_id="DisneyCinema.us">Disney Cinema</channel>
+    <channel site_id="disney-junior-166" xmltv_id="DisneyJuniorFrance.us">Disney Junior France</channel>
+    <channel site_id="e-141" xmltv_id="EFrance.us">E! France</channel>
+    <channel site_id="een-264" xmltv_id="Een.be">Één</channel>
+    <channel site_id="equidia-59" xmltv_id="Equidia.fr">Equidia</channel>
+    <channel site_id="eurochannel-236" xmltv_id="Eurochannel.us">Eurochannel</channel>
+    <channel site_id="euronews-62" xmltv_id="EuronewsFrancais.fr">Euronews Français</channel>
+    <channel site_id="eurosport-1-5" xmltv_id="Eurosport1France.fr">Eurosport 1 France</channel>
+    <channel site_id="eurosport-2-63" xmltv_id="Eurosport2France.fr">Eurosport 2 France</channel>
+    <channel site_id="extreme-sports-channel-65" xmltv_id="ExtremeSportsChannelFrance.nl">Extreme Sports Channel France</channel>
+    <channel site_id="fashion-tv-358" xmltv_id="FashionTVEurope.fr">Fashion TV Europe</channel>
     <channel site_id="france-2-6" xmltv_id="France2.fr">France 2</channel>
-    <channel site_id="france-24-142" xmltv_id="France 24">France 24</channel>
+    <channel site_id="france-24-142" xmltv_id="France24.fr">France 24</channel>
     <channel site_id="france-3-7" xmltv_id="France3.fr">France 3</channel>
-    <channel site_id="france-3-alpes-275" xmltv_id="France 3 Alpes">France 3 Alpes</channel>
-    <channel site_id="france-3-alsace-276" xmltv_id="France 3 Alsace">France 3 Alsace</channel>
-    <channel site_id="france-3-aquitaine-277" xmltv_id="France 3 Aquitaine">France 3 Aquitaine</channel>
-    <channel site_id="france-3-auvergne-278" xmltv_id="France 3 Auvergne">France 3 Auvergne</channel>
-    <channel site_id="france-3-basse-normandie-279" xmltv_id="France 3 Basse-Normandie">France 3 Basse-Normandie</channel>
-    <channel site_id="france-3-bourgogne-280" xmltv_id="France 3 Bourgogne">France 3 Bourgogne</channel>
-    <channel site_id="france-3-bretagne-281" xmltv_id="France 3 Bretagne">France 3 Bretagne</channel>
-    <channel site_id="france-3-centre-val-de-loire-282" xmltv_id="France 3 Centre-Val de Loire">France 3 Centre-Val de Loire</channel>
-    <channel site_id="france-3-champagne-ardennes-283" xmltv_id="France 3 Champagne-Ardennes">France 3 Champagne-Ardennes</channel>
-    <channel site_id="france-3-corse-via-stella-284" xmltv_id="France 3 Corse Via Stella">France 3 Corse Via Stella</channel>
-    <channel site_id="france-3-cote-dazur-285" xmltv_id="France 3 Côte d Azur">France 3 Côte d Azur</channel>
-    <channel site_id="france-3-franche-comte-286" xmltv_id="France 3 Franche-Comte">France 3 Franche-Comte</channel>
-    <channel site_id="france-3-haute-normandie-287" xmltv_id="France 3 Haute-Normandie">France 3 Haute-Normandie</channel>
-    <channel site_id="france-3-languedoc-roussillon-288" xmltv_id="France 3 Languedoc-Roussillon">France 3 Languedoc-Roussillon</channel>
-    <channel site_id="france-3-limousin-289" xmltv_id="France 3 Limousin">France 3 Limousin</channel>
-    <channel site_id="france-3-lorraine-290" xmltv_id="France 3 Lorraine">France 3 Lorraine</channel>
-    <channel site_id="france-3-midi-pyrenees-291" xmltv_id="France 3 Midi-Pyrenees">France 3 Midi-Pyrenees</channel>
-    <channel site_id="france-3-nord-pas-de-calais-292" xmltv_id="France 3 Nord Pas-de-Calais">France 3 Nord Pas-de-Calais</channel>
-    <channel site_id="france-3-paris-ile-de-france-293" xmltv_id="France 3 Paris Ile-de-France">France 3 Paris Ile-de-France</channel>
-    <channel site_id="france-3-pays-de-la-loire-294" xmltv_id="France 3 Pays de la Loire">France 3 Pays de la Loire</channel>
-    <channel site_id="france-3-picardie-295" xmltv_id="France 3 Picardie">France 3 Picardie</channel>
-    <channel site_id="france-3-poitou-charentes-296" xmltv_id="France 3 Poitou-Charentes">France 3 Poitou-Charentes</channel>
-    <channel site_id="france-3-provence-alpes-297" xmltv_id="France 3 Provence-Alpes">France 3 Provence-Alpes</channel>
-    <channel site_id="france-3-rhone-alpes-298" xmltv_id="France 3 Rhône-Alpes">France 3 Rhône-Alpes</channel>
+    <channel site_id="france-3-alpes-275" xmltv_id="France3Alpes.fr">France 3 Alpes</channel>
+    <channel site_id="france-3-alsace-276" xmltv_id="France3Alsace.fr">France 3 Alsace</channel>
+    <channel site_id="france-3-aquitaine-277" xmltv_id="France3Aquitaine.fr">France 3 Aquitaine</channel>
+    <channel site_id="france-3-auvergne-278" xmltv_id="France3Auvergne.fr">France 3 Auvergne</channel>
+    <channel site_id="france-3-basse-normandie-279" xmltv_id="France3BasseNormandie.fr">France 3 Basse-Normandie</channel>
+    <channel site_id="france-3-bourgogne-280" xmltv_id="France3Bourgogne.fr">France 3 Bourgogne</channel>
+    <channel site_id="france-3-bretagne-281" xmltv_id="France3Bretagne.fr">France 3 Bretagne</channel>
+    <channel site_id="france-3-centre-val-de-loire-282" xmltv_id="France3CentreValdeLoire.fr">France 3 Centre-Val de Loire</channel>
+    <channel site_id="france-3-champagne-ardennes-283" xmltv_id="France3ChampagneArdennes.fr">France 3 Champagne-Ardennes</channel>
+    <channel site_id="france-3-corse-via-stella-284" xmltv_id="France3CorseViaStella.fr">France 3 Corse Via Stella</channel>
+    <channel site_id="france-3-cote-dazur-285" xmltv_id="France3CotedAzur.fr">France 3 Côte d Azur</channel>
+    <channel site_id="france-3-franche-comte-286" xmltv_id="France3FrancheComte.fr">France 3 Franche-Comte</channel>
+    <channel site_id="france-3-haute-normandie-287" xmltv_id="France3HauteNormandie.fr">France 3 Haute-Normandie</channel>
+    <channel site_id="france-3-languedoc-roussillon-288" xmltv_id="France3LanguedocRoussillon.fr">France 3 Languedoc-Roussillon</channel>
+    <channel site_id="france-3-limousin-289" xmltv_id="France3Limousin.fr">France 3 Limousin</channel>
+    <channel site_id="france-3-lorraine-290" xmltv_id="France3Lorraine.fr">France 3 Lorraine</channel>
+    <channel site_id="france-3-midi-pyrenees-291" xmltv_id="France3MidiPyrenees.fr">France 3 Midi-Pyrenees</channel>
+    <channel site_id="france-3-nord-pas-de-calais-292" xmltv_id="France3NordPasdeCalais.fr">France 3 Nord Pas-de-Calais</channel>
+    <channel site_id="france-3-paris-ile-de-france-293" xmltv_id="France3ParisIledeFrance.fr">France 3 Paris Ile-de-France</channel>
+    <channel site_id="france-3-pays-de-la-loire-294" xmltv_id="France3PaysdelaLoire.fr">France 3 Pays de la Loire</channel>
+    <channel site_id="france-3-picardie-295" xmltv_id="France3Picardie.fr">France 3 Picardie</channel>
+    <channel site_id="france-3-poitou-charentes-296" xmltv_id="France3PoitouCharentes.fr">France 3 Poitou-Charentes</channel>
+    <channel site_id="france-3-provence-alpes-297" xmltv_id="France3ProvenceAlpes.fr">France 3 Provence-Alpes</channel>
+    <channel site_id="france-3-rhone-alpes-298" xmltv_id="France3RhoneAlpes.fr">France 3 Rhône-Alpes</channel>
     <channel site_id="france-4-8" xmltv_id="France4.fr">France 4</channel>
     <channel site_id="france-5-9" xmltv_id="France5.fr">France 5</channel>
-    <channel site_id="france-o-69" xmltv_id="France O">France O</channel>
-    <channel site_id="franceinfo-307" xmltv_id="Franceinfo">Franceinfo</channel>
+    <channel site_id="france-o-69" xmltv_id="FranceO.fr">France Ô</channel>
+    <channel site_id="franceinfo-307" xmltv_id="Franceinfo.fr">Franceinfo</channel>
     <channel site_id="game-one-71" xmltv_id="Game One">Game One</channel>
     <channel site_id="ginx-352" xmltv_id="Ginx">Ginx</channel>
     <channel site_id="golf-channel-354" xmltv_id="Golf Channel">Golf Channel</channel>
@@ -276,6 +274,6 @@
     <channel site_id="warner-tv-403" xmltv_id="Warner TV">Warner TV</channel>
     <channel site_id="weo-394" xmltv_id="Weo">Weo</channel>
     <channel site_id="xxl-135" xmltv_id="XXL">XXL</channel>
-    <channel site_id="zdf-193" xmltv_id="ZDF">ZDF</channel> -->
+    <channel site_id="zdf-193" xmltv_id="ZDF">ZDF</channel>
   </channels>
 </site>
