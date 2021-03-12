@@ -57,7 +57,14 @@ async function main() {
         return programs
       })
       .then(utils.sleep(config.delay))
-      .catch(console.log)
+      .catch(err => {
+        console.log(
+          `  ${item.channel.site} - ${item.channel.xmltv_id} - ${item.date.format(
+            'MMM D, YYYY'
+          )} (0 programs)`
+        )
+        console.log(`    Error: ${err.message}`)
+      })
 
     programs = programs.concat(progs)
   }
