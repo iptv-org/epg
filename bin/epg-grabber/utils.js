@@ -7,10 +7,7 @@ const convert = require('xml-js')
 const glob = require('glob')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
-const timezone = require('dayjs/plugin/timezone')
 dayjs.extend(utc)
-dayjs.extend(timezone)
-dayjs.tz.setDefault('UTC')
 axiosCookieJarSupport(axios)
 
 const utils = {}
@@ -96,8 +93,8 @@ utils.convertToXMLTV = function ({ config, channels, programs }) {
     const title = this.escapeString(program.title)
     const description = this.escapeString(program.description)
     const category = this.escapeString(program.category)
-    const start = program.start ? dayjs(program.start).format('YYYYMMDDHHmmss ZZ') : ''
-    const stop = program.stop ? dayjs(program.stop).format('YYYYMMDDHHmmss ZZ') : ''
+    const start = program.start ? dayjs.utc(program.start).format('YYYYMMDDHHmmss ZZ') : ''
+    const stop = program.stop ? dayjs.utc(program.stop).format('YYYYMMDDHHmmss ZZ') : ''
     const lang = program.lang || config.lang
 
     if (start && title) {
