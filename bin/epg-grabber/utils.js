@@ -65,7 +65,9 @@ utils.sleep = function (ms) {
   }
 }
 
-utils.escapeString = function (string) {
+utils.escapeString = function (string, defaultValue = '') {
+  if (!string) return defaultValue
+
   return string
     .toString()
     .replace(/&/g, '&amp;')
@@ -82,16 +84,18 @@ utils.convertToXMLTV = function ({ config, channels, programs }) {
   let output = `<?xml version="1.0" encoding="UTF-8" ?><tv>\r\n`
 
   for (let channel of channels) {
+    const id = this.escapeString(channel['xmltv_id'])
     const displayName = this.escapeString(channel.name)
-    output += `<channel id="${channel['xmltv_id']}"><display-name>${displayName}</display-name></channel>\r\n`
+    output += `<channel id="${id}"><display-name>${displayName}</display-name></channel>\r\n`
   }
 
   for (let program of programs) {
     if (!program) continue
 
-    const title = program.title ? this.escapeString(program.title) : ''
-    const description = program.description ? this.escapeString(program.description) : ''
-    const category = program.category ? this.escapeString(program.category) : ''
+    const channel = this.escapeString(program.channel)
+    const title = this.escapeString(program.title)
+    const description = this.escapeString(program.description)
+    const category = this.escapeString(program.category)
     const start = program.start ? dayjs(program.start).format('YYYYMMDDHHmmss ZZ') : ''
     const stop = program.stop ? dayjs(program.stop).format('YYYYMMDDHHmmss ZZ') : ''
     const lang = program.lang || config.lang
@@ -103,7 +107,7 @@ utils.convertToXMLTV = function ({ config, channels, programs }) {
         output += ` stop="${stop}"`
       }
 
-      output += ` channel="${program.channel}"><title lang="${lang}">${title}</title>`
+      output += ` channel="${channel}"><title lang="${lang}">${title}</title>`
 
       if (description) {
         output += `<desc lang="${lang}">${description}</desc>`
