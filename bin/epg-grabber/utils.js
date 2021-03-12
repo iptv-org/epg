@@ -89,12 +89,12 @@ utils.convertToXMLTV = function ({ config, channels, programs }) {
   for (let program of programs) {
     if (!program) continue
 
-    const start = program.start ? dayjs(program.start).format('YYYYMMDDHHmmss ZZ') : ''
-    const stop = program.stop ? dayjs(program.stop).format('YYYYMMDDHHmmss ZZ') : ''
     const title = program.title ? this.escapeString(program.title) : ''
     const description = program.description ? this.escapeString(program.description) : ''
     const category = program.category ? this.escapeString(program.category) : ''
-    const lang = program.lang ? program.lang : 'en'
+    const start = program.start ? dayjs(program.start).format('YYYYMMDDHHmmss ZZ') : ''
+    const stop = program.stop ? dayjs(program.stop).format('YYYYMMDDHHmmss ZZ') : ''
+    const lang = program.lang || config.lang
 
     if (start && title) {
       output += `<programme start="${start}"`

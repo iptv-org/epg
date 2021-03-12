@@ -54,11 +54,9 @@ module.exports = {
 
         programs.push({
           title,
-          lang,
           category,
           start: start.toString(),
-          stop: stop.toString(),
-          channel: channel['xmltv_id']
+          stop: stop.toString()
         })
       }
     })

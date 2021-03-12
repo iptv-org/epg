@@ -17,9 +17,7 @@ module.exports = {
           title: i.title,
           description: i.program.description,
           start: i.start,
-          stop: i.finish,
-          lang,
-          channel: channel['xmltv_id']
+          stop: i.finish
         }
       })
     }

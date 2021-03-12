@@ -40,7 +40,13 @@ async function main() {
       .get(item.url)
       .then(response => {
         const parserOptions = Object.assign({}, item, config, { content: response.data })
-        const programs = config.parser(parserOptions).filter(i => i)
+        const programs = config
+          .parser(parserOptions)
+          .filter(i => i)
+          .map(p => {
+            p.channel = item.channel.xmltv_id
+            return p
+          })
 
         console.log(
           `  ${item.channel.site} - ${item.channel.xmltv_id} - ${item.date.format(

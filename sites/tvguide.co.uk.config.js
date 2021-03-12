@@ -43,10 +43,7 @@ module.exports = {
         programs.push({
           title,
           description,
-          start,
-          stop: null,
-          lang,
-          channel: channel['xmltv_id']
+          start
         })
       }
     })
