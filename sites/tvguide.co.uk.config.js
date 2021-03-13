@@ -23,14 +23,14 @@ module.exports = {
     const rows = channelListings.querySelectorAll('table:first-of-type > tbody > tr')
 
     rows.forEach(tr => {
-      const time = (tr.getElementsByClassName('time')[0] || { innerHTML: '' }).innerHTML
+      const time = (tr.getElementsByClassName('time')[0] || { textContent: '' }).textContent
         .toString()
         .trim()
-      const title = (tr.getElementsByClassName('title')[0] || { innerHTML: '' }).innerHTML
+      const title = (tr.getElementsByClassName('title')[0] || { textContent: '' }).textContent
         .toString()
         .trim()
-      const detail = tr.getElementsByClassName('detail')[0] || { innerHTML: '' }
-      const description = htmlToText(detail.innerHTML)
+      const detail = tr.getElementsByClassName('detail')[0] || { textContent: '' }
+      const description = htmlToText(detail.textContent)
 
       if (time && title) {
         const start = dayjs
