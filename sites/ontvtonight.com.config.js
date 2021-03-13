@@ -1,12 +1,16 @@
 const jsdom = require('jsdom')
 const { JSDOM } = jsdom
 const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
 var customParseFormat = require('dayjs/plugin/customParseFormat')
+
+dayjs.extend(utc)
 dayjs.extend(customParseFormat)
 
 module.exports = {
   lang: 'en',
   site: 'ontvtonight.com',
+  channels: 'ontvtonight.com.channels.xml',
   output: '.gh-pages/guides/ontvtonight.com.xml',
   url: function ({ date, channel }) {
     return `https://www.ontvtonight.com/uk/guide/listings/channel/${
