@@ -20,7 +20,7 @@ module.exports = {
       channel.site_id
     }.html`
   },
-  parser: function ({ channel, content, date, lang }) {
+  parser: function ({ content, date }) {
     const programs = []
     const dom = new JSDOM(content)
     const broadcastCards = dom.window.document.querySelectorAll('.singleBroadcastCard')

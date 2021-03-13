@@ -8,7 +8,7 @@ module.exports = {
   url: function ({ date, channel }) {
     return `https://tv.yandex.ru/channel/${channel.site_id}?date=${date.format('YYYY-MM-DD')}`
   },
-  parser: function ({ channel, content, lang }) {
+  parser: function ({ content }) {
     const initialState = content.match(/window.__INITIAL_STATE__ = (.*);/i)
     let programs = []
     if (!initialState && !initialState[1]) return programs

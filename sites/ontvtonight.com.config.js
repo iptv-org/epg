@@ -17,7 +17,7 @@ module.exports = {
       channel.site_id
     }.html?dt=${date.format('YYYY-MM-DD')}`
   },
-  parser: function ({ channel, content, date, lang }) {
+  parser: function ({ content, date }) {
     const programs = []
     const dom = new JSDOM(content)
     const items = dom.window.document.querySelectorAll(
