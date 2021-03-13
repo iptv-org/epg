@@ -8,9 +8,10 @@ module.exports = {
     return `https://tv.yandex.ru/channel/${channel.site_id}?date=${date.format('YYYY-MM-DD')}`
   },
   parser: function ({ channel, content, lang }) {
-    const initialState = content.match(/window.__INITIAL_STATE__ = (.*);/i)[1]
-    const data = JSON.parse(initialState, null, 2)
+    const initialState = content.match(/window.__INITIAL_STATE__ = (.*);/i)
     let programs = []
+    if (initialState && initialState[1]) return programs
+    const data = JSON.parse(initialState[1], null, 2)
     if (data.channel) {
       programs = data.channel.schedule.events.map(i => {
         return {
