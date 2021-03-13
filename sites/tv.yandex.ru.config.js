@@ -2,7 +2,7 @@ module.exports = {
   lang: 'ru',
   site: 'tv.yandex.ru',
   channels: 'tv.yandex.ru.channels.xml',
-  output: '.gh-pages/guides/tv.yandex.ru.xml',
+  output: '.gh-pages/guides/tv.yandex.ru.guide.xml',
   cookie:
     'yandexuid=8747786251615498142; Expires=Tue, 11 Mar 2031 21:29:02 GMT; Domain=yandex.ru; Path=/',
   url: function ({ date, channel }) {
