@@ -12,7 +12,7 @@ module.exports = {
   lang: 'en',
   site: 'tvguide.co.uk',
   channels: 'tvguide.co.uk.channels.xml',
-  output: '.gh-pages/guides/tvguide.co.uk.xml',
+  output: '.gh-pages/guides/tvguide.co.uk.guide.xml',
   url: function ({ date, channel }) {
     return `https://www.tvguide.co.uk/mobile/channellisting.asp?ch=${channel.site_id}`
   },
