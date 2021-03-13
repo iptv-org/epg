@@ -2,8 +2,8 @@
 <site site="tv.yandex.ru">
   <channels>
     <channel site_id="1hd-99" xmltv_id="1HDMusicTelevision.ru">1 HD Music Television</channel>
-    <!-- <channel site_id="2x2-29" xmltv_id="2x2.ru">2x2</channel> -->
-    <!-- <channel site_id="360-95" xmltv_id="360deg.ru">360°</channel>
+    <channel site_id="2x2-29" xmltv_id="2x2.ru">2x2</channel>
+    <channel site_id="360-95" xmltv_id="360deg.ru">360°</channel>
     <channel site_id="365-dney-tv-470" xmltv_id="365dneyTV.ru">365 дней ТВ</channel>
     <channel site_id="7-tv-1241" xmltv_id="7TV.ru">7 TV</channel>
     <channel site_id="8-kanal-456" xmltv_id="8Kanal.ru">8 Канал</channel>
@@ -289,6 +289,6 @@
     <channel site_id="zee-tv-627" xmltv_id="ZeeTVRussia.in">Zee TV Russia</channel>
     <channel site_id="zoo-tv-477" xmltv_id="ZooTV.ru">Зоо ТВ</channel>
     <channel site_id="zoopark-509" xmltv_id="Zoopark.ru">Zooпарк</channel>
-    <channel site_id="zvezda-15" xmltv_id="Zvezda.ru">Звезда</channel> -->
+    <channel site_id="zvezda-15" xmltv_id="Zvezda.ru">Звезда</channel>
   </channels>
 </site>
