@@ -1,14 +1,13 @@
 const jsdom = require('jsdom')
 const { JSDOM } = jsdom
-const { htmlToText } = require('html-to-text')
 const dayjs = require('dayjs')
 var customParseFormat = require('dayjs/plugin/customParseFormat')
 dayjs.extend(customParseFormat)
 
 module.exports = {
-  site: 'ontvtonight.com',
   lang: 'en',
-  output: '../../.gh-pages/guides/ontvtonight.com.xml',
+  site: 'ontvtonight.com',
+  output: '.gh-pages/guides/ontvtonight.com.xml',
   url: function ({ date, channel }) {
     return `https://www.ontvtonight.com/uk/guide/listings/channel/${
       channel.site_id

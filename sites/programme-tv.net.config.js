@@ -1,6 +1,6 @@
 const jsdom = require('jsdom')
 const { JSDOM } = jsdom
-const parse = require('parse-duration')
+const parseDuration = require('parse-duration')
 const dayjs = require('dayjs')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
 const duration = require('dayjs/plugin/duration')
@@ -8,9 +8,9 @@ dayjs.extend(duration)
 dayjs.extend(customParseFormat)
 
 module.exports = {
-  site: 'programme-tv.net',
   lang: 'fr',
-  output: '../../.gh-pages/guides/programme-tv.net.xml',
+  site: 'programme-tv.net',
+  output: '.gh-pages/guides/programme-tv.net.xml',
   url: function ({ date, channel }) {
     return `https://www.programme-tv.net/programme/chaine/${date.format('YYYY-MM-DD')}/programme-${
       channel.site_id
@@ -49,7 +49,7 @@ module.exports = {
           .set('M', date.get('M'))
           .set('y', date.get('y'))
 
-        const durationInMilliseconds = parse(durationContent)
+        const durationInMilliseconds = parseDuration(durationContent)
         const stop = start.add(dayjs.duration(durationInMilliseconds))
 
         programs.push({

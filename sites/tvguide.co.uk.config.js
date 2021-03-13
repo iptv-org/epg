@@ -6,9 +6,9 @@ var customParseFormat = require('dayjs/plugin/customParseFormat')
 dayjs.extend(customParseFormat)
 
 module.exports = {
-  site: 'tvguide.co.uk',
   lang: 'en',
-  output: '../../.gh-pages/guides/tvguide.co.uk.xml',
+  site: 'tvguide.co.uk',
+  output: '.gh-pages/guides/tvguide.co.uk.xml',
   url: function ({ date, channel }) {
     return `https://www.tvguide.co.uk/mobile/channellisting.asp?ch=${channel.site_id}`
   },
