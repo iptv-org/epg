@@ -11,7 +11,7 @@ module.exports = {
   lang: 'en',
   site: 'ontvtonight.com',
   channels: 'ontvtonight.com.channels.xml',
-  output: '.gh-pages/guides/ontvtonight.com.xml',
+  output: '.gh-pages/guides/ontvtonight.com.guide.xml',
   url: function ({ date, channel }) {
     return `https://www.ontvtonight.com/uk/guide/listings/channel/${
       channel.site_id
