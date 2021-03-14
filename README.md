@@ -17,7 +17,7 @@ To load a program guide, all you need to do is copy the link to one of the guide
   </tbody>
 </table>
 
-After that, the program should appear. If this does not happen, check that the channel description has the same ID as in the guide.
+After that, the program should appear. If this does not happen, make sure the channels in the playlist have the same IDs (tvg-id) as in the guide.
 
 ## Contribution
 
