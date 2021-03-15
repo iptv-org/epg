@@ -4,7 +4,7 @@ on:
   schedule:
     - cron: '0 0 * * *'
 jobs:
-  programme-tv.net:
+  programme-tv_net:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -18,7 +18,7 @@ jobs:
         with:
           branch: gh-pages
           folder: .gh-pages
-  ontvtonight.com:
+  ontvtonight_com:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -32,7 +32,7 @@ jobs:
         with:
           branch: gh-pages
           folder: .gh-pages
-  tv.yandex.ru:
+  tv_yandex_ru:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
