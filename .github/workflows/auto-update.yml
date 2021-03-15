@@ -4,7 +4,7 @@ on:
   schedule:
     - cron: '0 0 * * *'
 jobs:
-  update-guide:
+  programme-tv.net:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -12,7 +12,35 @@ jobs:
       - name: Install Dependencies
         run: npm install
       - name: Run EPG Grabber
-        run: ./run.sh
+        run: npx epg-grabber --config=sites/programme-tv.net.config.js
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.0
+        with:
+          branch: gh-pages
+          folder: .gh-pages
+  ontvtonight.com:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.3.1
+      - name: Install Dependencies
+        run: npm install
+      - name: Run EPG Grabber
+        run: npx epg-grabber --config=sites/ontvtonight.com.config.js
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.0
+        with:
+          branch: gh-pages
+          folder: .gh-pages
+  tv.yandex.ru:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.3.1
+      - name: Install Dependencies
+        run: npm install
+      - name: Run EPG Grabber
+        run: npx epg-grabber --config=sites/tv.yandex.ru.config.js
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
