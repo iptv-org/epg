@@ -6,7 +6,8 @@ module.exports = {
   cookie:
     'yandexuid=8747786251615498142; Expires=Tue, 11 Mar 2031 21:29:02 GMT; Domain=yandex.ru; Path=/',
   url: function ({ date, channel }) {
-    return `https://tv.yandex.ru/channel/${channel.site_id}?date=${date.format('YYYY-MM-DD')}`
+    const [region, id] = channel.site_id.split('#')
+    return `https://tv.yandex.ru/${region}/channel/${id}?date=${date.format('YYYY-MM-DD')}`
   },
   parser: function ({ content }) {
     const initialState = content.match(/window.__INITIAL_STATE__ = (.*);/i)
