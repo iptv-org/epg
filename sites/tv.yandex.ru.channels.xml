@@ -2,8 +2,11 @@
 <site site="tv.yandex.ru">
   <channels>
     <channel site_id="10127#krym-24-1376" xmltv_id="Krym24.ru">Крым 24</channel>
+    <channel site_id="10262#pyatnica-international-1262" xmltv_id="PyatnicaInternational.ru">Пятница! International</channel>
     <channel site_id="11171#krik-tv-199" xmltv_id="KrikTV.ru">Крик-ТВ</channel>
     <channel site_id="162#setanta-sport-1099" xmltv_id="SetantaSportsEurasia.ie">Setanta Sports Eurasia</channel>
+    <channel site_id="163#400" xmltv_id="PervyykanalEvraziya.ru">Первый канал Евразия</channel>
+    <channel site_id="163#novoe-televidenie-1083" xmltv_id="Novoetelevidenie.kz">Новое телевидение</channel>
     <channel site_id="163#rtr-planeta-sng-784" xmltv_id="RTRPlaneta.ru">РТР-Планета</channel>
     <channel site_id="172#kuray-752" xmltv_id="Kuray.ru">Курай</channel>
     <channel site_id="172#mtvmix-664" xmltv_id="MTVmix.ru">MTVmix</channel>
@@ -11,6 +14,7 @@
     <channel site_id="192#guberniya-33-1190" xmltv_id="Guberniya33.ru">Губерния 33</channel>
     <channel site_id="193#tv-guberniya-1081" xmltv_id="TVGuberniya.ru">TV Губерния</channel>
     <channel site_id="2#47-kanal-223" xmltv_id="LenTV24.ru">ЛенТВ24</channel>
+    <channel site_id="213#11-kanal-164" xmltv_id="Nashdom.ru">Наш дом</channel>
     <channel site_id="213#1hd-99" xmltv_id="1HDMusicTelevision.ru">1 HD Music Television</channel>
     <channel site_id="213#2x2-29" xmltv_id="2x2.ru">2x2</channel>
     <channel site_id="213#360-95" xmltv_id="360deg.ru">360°</channel>
@@ -86,7 +90,7 @@
     <channel site_id="213#evraziya-175" xmltv_id="Evraziya.ru">Евразия</channel>
     <channel site_id="213#evrika-1212" xmltv_id="Eureka.ru">Eureka HD</channel>
     <channel site_id="213#evrokino-505" xmltv_id="Evrokino.ru">Еврокино</channel>
-    <channel site_id="213#evronovosti-121" xmltv_id="Euronewsporusski.fr">Euronews по-русски</channel>
+    <channel site_id="213#evronovosti-121" xmltv_id="Evronovosti.ru">Евроновости</channel>
     <channel site_id="213#extreme-sports-484" xmltv_id="ExtremeSports.nl">Extreme Sports</channel>
     <channel site_id="213#fashion-box-hd-1242" xmltv_id="FashionBoxHD.us">FashionBox HD</channel>
     <channel site_id="213#fashion-one-4k-1204" xmltv_id="FashionOneEurope.uk">Fashion One Europe 4K</channel>
@@ -161,7 +165,7 @@
     <channel site_id="213#match-futbol-3-797" xmltv_id="MatchFutbol3.ru">Матч! Футбол 3</channel>
     <channel site_id="213#match-igra-1174" xmltv_id="MatchIgra.ru">Матч! Игра</channel>
     <channel site_id="213#match-planeta-1177" xmltv_id="MatchPlaneta.ru">Матч! Планета</channel>
-    <channel site_id="213#match-tv-49" xmltv_id="Match.ru">Матч!</channel>
+    <channel site_id="213#match-tv-49" xmltv_id="MatchTV.ru">Матч ТВ</channel>
     <channel site_id="213#matur-tv-178" xmltv_id="MaturTV.ru">Матур ТВ</channel>
     <channel site_id="213#mcm-top-583" xmltv_id="MCMTopRussia.fr">MCM Top Russia</channel>
     <channel site_id="213#mezzo-600" xmltv_id="Mezzo.fr">Mezzo</channel>
@@ -169,6 +173,7 @@
     <channel site_id="213#mgm-hd-743" xmltv_id="HollywoodHD.ru">Hollywood HD</channel>
     <channel site_id="213#mir-24-98" xmltv_id="MIR24.ru">МИР 24</channel>
     <channel site_id="213#mir-54" xmltv_id="MIR.ru">МИР</channel>
+    <channel site_id="213#mir-belogorya-204" xmltv_id="MirBelogorya.ru">Мир Белогорья</channel>
     <channel site_id="213#mir-seriala-209" xmltv_id="Mirseriala.ru">Мир сериала</channel>
     <channel site_id="213#moskva-24-73" xmltv_id="Moskva24.ru">Москва-24</channel>
     <channel site_id="213#moskva-doverie-641" xmltv_id="MoskvaDoverie.ru">Москва. Доверие</channel>
@@ -181,15 +186,18 @@
     <channel site_id="213#mujskoe-kino-1145" xmltv_id="Muzhskoekino.ru">Мужское кино</channel>
     <channel site_id="213#mujskoy-412" xmltv_id="Muzhskoy.ru">Мужской</channel>
     <channel site_id="213#mult-1080" xmltv_id="MULT.ru">МУЛЬТ</channel>
+    <channel site_id="213#multimaniya-246" xmltv_id="Multilandiya.ru">Мультиландия</channel>
     <channel site_id="213#multimaniya-246" xmltv_id="Multimaniya.ru">Мультимания</channel>
     <channel site_id="213#museum-hd-1178" xmltv_id="MuseumTV.fr">Museum TV</channel>
     <channel site_id="213#musicbox-tv-634" xmltv_id="MusicBoxRussia.ru">Music Box Russia</channel>
     <channel site_id="213#muz-tv-55" xmltv_id="MUZTV.ru">МУЗ-ТВ</channel>
+    <channel site_id="213#muzsoyuz-233" xmltv_id="MuzSoyuz.ru">МузСоюз</channel>
     <channel site_id="213#muzyka-pervogo-671" xmltv_id="MuzykaPervogo.ru">Музыка Первого</channel>
     <channel site_id="213#myzentv-434" xmltv_id="myZen.tv">myZen.tv</channel>
     <channel site_id="213#nadejda-127" xmltv_id="Nadezhda.ru">Надежда</channel>
     <channel site_id="213#nano-395" xmltv_id="Nano.ru">Нано</channel>
     <channel site_id="213#nash-detektiv-1217" xmltv_id="NashDetektiv.ru">Наш Детектив</channel>
+    <channel site_id="213#nasha-sibir-91" xmltv_id="NashaSibir.ru">Наша Сибирь</channel>
     <channel site_id="213#nashe-novoe-kino-565" xmltv_id="NasheNovoeKino.ru">Наше Новое Кино</channel>
     <channel site_id="213#nastoyashchee-strashnoe-televidenie-577" xmltv_id="NST.ru">НСТ</channel>
     <channel site_id="213#nat-geo-wild-459" xmltv_id="NationalGeographicWildRussia.us">National Geographic Wild Russia</channel>
@@ -201,8 +209,11 @@
     <channel site_id="213#nick-jr-731" xmltv_id="NickJrRossiya.us">Nick Jr. Россия</channel>
     <channel site_id="213#nickelodeon-596" xmltv_id="NickelodeonRossiya.us">Nickelodeon Россия</channel>
     <channel site_id="213#nickelodeon-hd-532" xmltv_id="NickelodeonHDRossiya.us">Nickelodeon HD Россия</channel>
+    <channel site_id="213#nika-tv-129" xmltv_id="NikaTV.ru">Ника ТВ</channel>
     <channel site_id="213#nostalgiya-691" xmltv_id="Nostalgiya.ru">Ностальгия</channel>
+    <channel site_id="213#novoe-radio-1374" xmltv_id="Novoeradio.ru">Новое радио</channel>
     <channel site_id="213#novyy-mir-1220" xmltv_id="Novyymir.ru">Новый мир</channel>
+    <channel site_id="213#noyabrsk-24-172" xmltv_id="Noyabrsk24.ru">Ноябрьск 24</channel>
     <channel site_id="213#ntv-11" xmltv_id="NTV.ru">НТВ</channel>
     <channel site_id="213#ntv-pravo-92" xmltv_id="NTVPravo.ru">НТВ Право</channel>
     <channel site_id="213#ntv-serial-93" xmltv_id="NTVSerial.ru">НТВ Сериал</channel>
@@ -213,24 +224,30 @@
     <channel site_id="213#ocean-tv-71" xmltv_id="OCEANTV.ru">OCEAN-TV</channel>
     <channel site_id="213#ohota-i-rybalka-621" xmltv_id="Ohotairybalka.ru">Охота и рыбалка</channel>
     <channel site_id="213#ohotnik-i-rybolov-430" xmltv_id="OhotnikiRybolov.ru">Охотник и Рыболов</channel>
+    <channel site_id="213#ohotnik-i-rybolov-69" xmltv_id="OhotnikiRybolovInternational.ru">Охотник и Рыболов International</channel>
     <channel site_id="213#orujie-511" xmltv_id="Oruzhie.ru">Оружие</channel>
     <channel site_id="213#ostrosyujetnoe-hd-1149" xmltv_id="OstrosyuzhetnoeHD.ru">Остросюжетное HD</channel>
     <channel site_id="213#otkrytyy-mir-1199" xmltv_id="Otkrytyymir.ru">Открытый мир</channel>
+    <channel site_id="213#ots-181" xmltv_id="OTS.ru">ОТС</channel>
+    <channel site_id="213#otv-24-149" xmltv_id="OTV24.ru">ОТВ 24</channel>
     <channel site_id="213#outdoor-channel-497" xmltv_id="OutdoorChannel.us">Outdoor Channel</channel>
     <channel site_id="213#paramount-channel-1209" xmltv_id="ParamountChannelRussia.us">Paramount Channel Russia</channel>
     <channel site_id="213#paramount-comedy-733" xmltv_id="ParamountComedyRussia.us">Paramount Comedy Russia</channel>
     <channel site_id="213#pervyy-16" xmltv_id="Pervyykanal.ru">Первый</channel>
     <channel site_id="213#pervyy-meteo-404" xmltv_id="Pervyymeteo.ru">Первый метео</channel>
     <channel site_id="213#pingvin-lolo-245" xmltv_id="PingvinLolo.ru">Пингвин Лоло</channel>
+    <channel site_id="213#pobeda-1355" xmltv_id="Pobeda.ru">Победа</channel>
     <channel site_id="213#poehali-1246" xmltv_id="Poehali.ru">Поехали!</channel>
     <channel site_id="213#priklyucheniya-hd-499" xmltv_id="PriklyucheniyaHD.ru">Приключения HD</channel>
     <channel site_id="213#pro-biznes-58" xmltv_id="ProBiznes.ru">Про Бизнес</channel>
+    <channel site_id="213#prodvijenie-159" xmltv_id="Prodvizhenie.ru">Продвижение</channel>
     <channel site_id="213#prosveshchenie-658" xmltv_id="Prosveshchenie.ru">Просвещение</channel>
     <channel site_id="213#psihologiya-21-538" xmltv_id="Psihologiya21.ru">Психология 21</channel>
     <channel site_id="213#pyatnica-42" xmltv_id="Pyatnica.ru">Пятница</channel>
     <channel site_id="213#pyatyy-kanal-12" xmltv_id="Pyatyykanal.ru">Пятый канал</channel>
     <channel site_id="213#r1-1180" xmltv_id="R1.ru">R1</channel>
     <channel site_id="213#radost-moya-185" xmltv_id="RadostMoya.ru">Радость Моя</channel>
+    <channel site_id="213#ratnik-110" xmltv_id="Ratnik.ru">Ратник</channel>
     <channel site_id="213#raztv-84" xmltv_id="RazTV.ru">РазТВ</channel>
     <channel site_id="213#rbk-18" xmltv_id="RBK.ru">РБК</channel>
     <channel site_id="213#ren-30" xmltv_id="RENTV.ru">РЕН ТВ</channel>
@@ -242,6 +259,7 @@
     <channel site_id="213#rt-doc-1258" xmltv_id="RTDocumentary.ru">RT Documentary</channel>
     <channel site_id="213#rtd-82" xmltv_id="RTDnaRusskom.ru">RTД на Русском</channel>
     <channel site_id="213#rtg-international-1169" xmltv_id="RTGInternational.ru">RTG International</channel>
+    <channel site_id="213#rtv-lyubimoe-kino-559" xmltv_id="RTVLyubimoekino.ru">РТВ - Любимое кино</channel>
     <channel site_id="213#russia-today-70" xmltv_id="RT.ru">RT</channel>
     <channel site_id="213#russian-extreme-ultra-hd-1229" xmltv_id="RussianExtremeUltra.ru">Russian Extreme Ultra HD</channel>
     <channel site_id="213#russian-musicbox-177" xmltv_id="MusicBoxRussian.ru">Music Box Russian</channel>
@@ -308,12 +326,12 @@
     <channel site_id="213#vh1-classic-438" xmltv_id="VH1Classic.uk">VH1 Classic</channel>
     <channel site_id="213#vh1-european-567" xmltv_id="VH1.uk">VH1</channel>
     <channel site_id="213#viasat-explore-579" xmltv_id="ViasatExploreRussia.se">Viasat Explore Russia</channel>
-    <channel site_id="213#viasat-history-478" xmltv_id="ViasatHistoryRussian.se">Viasat History Russian</channel>
-    <channel site_id="213#viasat-nature-cee-684" xmltv_id="ViasatNatureRussian.se">Viasat Nature Russian</channel>
+    <channel site_id="213#viasat-history-478" xmltv_id="ViasatHistoryRussia.se">Viasat History Russia</channel>
+    <channel site_id="213#viasat-nature-cee-684" xmltv_id="ViasatNatureRussia.se">Viasat Nature Russia</channel>
     <channel site_id="213#viasat-sport-548" xmltv_id="ViasatSportEast.se">Viasat Sport East</channel>
-    <channel site_id="213#vip-comedy-777" xmltv_id="ViPComedyRussia.se">ViP Comedy Russian</channel>
-    <channel site_id="213#vip-megahit-778" xmltv_id="ViPMegahitRussian.se">ViP Megahit Russian</channel>
-    <channel site_id="213#vip-premiere-779" xmltv_id="ViPPremiereRussian.se">ViP Premiere Russian</channel>
+    <channel site_id="213#vip-comedy-777" xmltv_id="ViPComedyRussia.se">ViP Comedy Russia</channel>
+    <channel site_id="213#vip-megahit-778" xmltv_id="ViPMegahitRussia.se">ViP Megahit Russia</channel>
+    <channel site_id="213#vip-premiere-779" xmltv_id="ViPPremiereRussia.se">ViP Premiere Russia</channel>
     <channel site_id="213#vmeste-rf-1361" xmltv_id="VmesteRF.ru">Вместе-РФ</channel>
     <channel site_id="213#volgograd-1-139" xmltv_id="Volgograd1.ru">Волгоград 1</channel>
     <channel site_id="213#voprosy-i-otvety-501" xmltv_id="Voprosyiotvety.ru">Вопросы и ответы</channel>
@@ -331,10 +349,13 @@
     <channel site_id="213#zvezda-15" xmltv_id="Zvezda.ru">Звезда</channel>
     <channel site_id="35#kuban-24-orbita-1103" xmltv_id="Kuban24Orbita.ru">Кубань 24 Орбита</channel>
     <channel site_id="35#sochi-live-219" xmltv_id="SochiLiveHD.ru">Sochi Live HD</channel>
+    <channel site_id="38#mtv-751" xmltv_id="MTV.ru">МТВ</channel>
     <channel site_id="4#belgorod-24-803" xmltv_id="Belgorod24.ru">Белгород 24</channel>
+    <channel site_id="42#ntm-narodnoe-televidenie-mordovii-1249" xmltv_id="NTM.ru">НТМ</channel>
     <channel site_id="43#univer-tv-90" xmltv_id="UniverTV.ru">Univer TV</channel>
     <channel site_id="45#freshtv-106" xmltv_id="FreshTV.ru">FreshTV</channel>
     <channel site_id="84#tv1000-world-kino-1189" xmltv_id="TV1000WorldKino.se">TV1000 World Kino</channel>
     <channel site_id="9#lipeckoe-vremya-153" xmltv_id="Lipeckoevremya.ru">Липецкое время</channel>
+    <channel site_id="977#gtrk-krym-1074" xmltv_id="Pervyykrymskiy.ru">Первый крымский</channel>
   </channels>
 </site>
