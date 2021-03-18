@@ -13,9 +13,14 @@ module.exports = {
   channels: 'ontvtonight.com.channels.xml',
   output: '.gh-pages/guides/ontvtonight.com.guide.xml',
   url: function ({ date, channel }) {
-    return `https://www.ontvtonight.com/uk/guide/listings/channel/${
-      channel.site_id
-    }.html?dt=${date.format('YYYY-MM-DD')}`
+    const [region, id] = channel.site_id.split('#')
+    return region
+      ? `https://www.ontvtonight.com/${region}/guide/listings/channel/${id}.html?dt=${date.format(
+          'YYYY-MM-DD'
+        )}`
+      : `https://www.ontvtonight.com/guide/listings/channel/${id}.html?dt=${date.format(
+          'YYYY-MM-DD'
+        )}`
   },
   parser: function ({ content, date }) {
     const programs = []
