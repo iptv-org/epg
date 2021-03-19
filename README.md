@@ -12,6 +12,7 @@ To load a program guide, all you need to do is copy the link to one of the guide
   </thead>
   <tbody>
     <tr><td align="left" nowrap>ontvtonight.com</td><td align="right">en</td><td align="right">122</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/ontvtonight.com.guide.xml</code></td></tr>
+    <tr><td align="left" nowrap>programacion-tv.elpais.com</td><td align="right">es</td><td align="right">158</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/programacion-tv.elpais.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>programme-tv.net</td><td align="right">fr</td><td align="right">266</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/programme-tv.net.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>mediaset.it</td><td align="right">it</td><td align="right">16</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/mediaset.it.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>tv.yandex.ru</td><td align="right">ru</td><td align="right">378</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tv.yandex.ru.guide.xml</code></td></tr>
