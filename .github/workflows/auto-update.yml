@@ -19,7 +19,7 @@ jobs:
           branch: gh-pages
           folder: .gh-pages
           clean: false
-  programacion-tv.elpais.com:
+  programacion-tv_elpais_com:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
