@@ -22,6 +22,14 @@ module.exports = {
           'YYYY-MM-DD'
         )}`
   },
+  logo: function ({ content }) {
+    const dom = new JSDOM(content)
+    const img =
+      dom.window.document.querySelector('#content > div > div > div.span6 > img') ||
+      dom.window.document.querySelector('#inner-headline > div > div > div > img')
+
+    return img ? img.src : null
+  },
   parser: function ({ content, date }) {
     const programs = []
     const dom = new JSDOM(content)

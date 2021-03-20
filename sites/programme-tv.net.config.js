@@ -20,6 +20,14 @@ module.exports = {
       channel.site_id
     }.html`
   },
+  logo: function ({ content }) {
+    const dom = new JSDOM(content)
+    const img = dom.window.document.querySelector(
+      '#corps > div > div.page.channel > div.gridChannel > div.gridChannel-leftColumn > div.gridChannel-epgGrid > div.gridChannel-header > div > div > div > img'
+    )
+
+    return img ? img.dataset.src : null
+  },
   parser: function ({ content, date }) {
     const programs = []
     const dom = new JSDOM(content)

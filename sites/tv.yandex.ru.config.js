@@ -1,3 +1,7 @@
+const urlParser = require('url')
+const jsdom = require('jsdom')
+const { JSDOM } = jsdom
+
 module.exports = {
   lang: 'ru',
   site: 'tv.yandex.ru',
@@ -8,6 +12,14 @@ module.exports = {
   url: function ({ date, channel }) {
     const [region, id] = channel.site_id.split('#')
     return `https://tv.yandex.ru/${region}/channel/${id}?date=${date.format('YYYY-MM-DD')}`
+  },
+  logo: function ({ content }) {
+    const dom = new JSDOM(content)
+    const img = dom.window.document.querySelector(
+      '#mount > div > main > div > div > div.content__header > div > div.channel-header__title > figure > img'
+    )
+
+    return img ? 'https:' + img.src : null
   },
   parser: function ({ content }) {
     const initialState = content.match(/window.__INITIAL_STATE__ = (.*);/i)
