@@ -12,7 +12,7 @@ jobs:
       - name: Install Dependencies
         run: npm install
       - name: Run EPG Grabber
-        run: npx epg-grabber --config=sites/programme-tv.net.config.js
+        run: npx epg-grabber --config=sites/programme-tv.net.config.js --debug
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
