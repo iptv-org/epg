@@ -4,6 +4,21 @@ on:
   schedule:
     - cron: '0 0 * * *'
 jobs:
+  programetv_ro:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.3.1
+      - name: Install Dependencies
+        run: npm install
+      - name: Run EPG Grabber
+        run: npx epg-grabber --config=sites/programetv.ro.config.js
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.0
+        with:
+          branch: gh-pages
+          folder: .gh-pages
+          clean: false
   programtv_onet_pl:
     runs-on: ubuntu-latest
     steps:
