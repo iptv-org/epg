@@ -7,8 +7,10 @@
   "dependencies": {
     "dayjs": "^1.10.4",
     "epg-grabber": "^0.2.5",
+    "glob": "^7.1.6",
     "html-to-text": "^7.0.0",
     "jsdom": "^16.5.0",
-    "parse-duration": "^0.4.4"
+    "parse-duration": "^0.4.4",
+    "xml-js": "^1.6.11"
   }
 }
