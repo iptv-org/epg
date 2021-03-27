@@ -1,19 +1,21 @@
-name,code
+Channel Name,EPG Code (tvg-id)
 1 HD Music Television,1HDMusicTelevision.ru
-13 Ulica HD,13UlicaHD.us
 13 Ulica,13Ulica.us
+13 Ulica HD,13UlicaHD.us
 13th Street Deutschland,13thStreetDeutschland.us
 13ème Rue,13emeRue.fr
 1LIVE,1LIVE.de
 20 Mediaset,20Mediaset.it
+24 Mix Teleshop,24MixTeleshop.ro
+24 Mix Teleshop HD,24MixTeleshopHD.ro
 24 TV,24TV.tr
-2x2 HD,2x2HD.pl
 2x2,2x2.pl
 2x2,2x2.ru
+2x2 HD,2x2HD.pl
 3/24,324.es
-360 Tune Box HD,360TuneBoxHD.us
-360 Tune Box,360TuneBox.us
 360,360.tr
+360 Tune Box,360TuneBox.us
+360 Tune Box HD,360TuneBoxHD.us
 360°,360deg.ru
 365 дней ТВ,365dneyTV.ru
 3sat,3sat.de
@@ -27,8 +29,8 @@ name,code
 5Star,5Star.uk
 5USA,5USA.uk
 6ter,6ter.fr
-7 Televisión Región de Murcia,7TelevisionRegiondeMurcia.es
 7 TV,7TV.ru
+7 Televisión Región de Murcia,7TelevisionRegiondeMurcia.es
 8 Mont-Blanc,8MontBlanc.fr
 8 Канал,8Kanal.ru
 8TV,8TV.es
@@ -41,13 +43,39 @@ A2,A2.ru
 AB 1,AB1.fr
 AB 3,AB3.fr
 ABXplore,ABXplore.be
+AMC España,AMCEspana.us
+AMC HD Polska,AMCHDPolska.us
+AMC HD Romania,AMCHDRomania.us
+AMC Polska,AMCPolska.us
+AMC Romania,AMCRomania.us
+AMC Russia,AMCRussia.us
+ARD-alpha,ARDalpha.de
+ARTE Deutsch,ARTEDeutsch.fr
+ARTE Français,ARTEFrancais.fr
+ARTE HD Deutsch,ARTEHDDeutsch.fr
+ATV,ATV.at
+ATV Türkiye,ATVTurkiye.tr
+AXN Black Polska,AXNBlackPolska.us
+AXN Black România,AXNBlackRomania.us
+AXN España,AXNEspana.us
+AXN HD Polska,AXNHDPolska.us
+AXN HD Romania,AXNHDRomania.us
+AXN Polska,AXNPolska.us
+AXN Romania,AXNRomania.us
+AXN Spin HD Polska,AXNSpinHDPolska.us
+AXN Spin Polska,AXNSpinPolska.us
+AXN Spin Romania,AXNSpinRomania.us
+AXN White España,AXNWhiteEspana.us
+AXN White Polska,AXNWhitePolska.us
+AXN White România,AXNWhiteRomania.us
 Acht,Acht.be
 Action,Action.fr
-Active Family HD,ActiveFamilyHD.pl
 Active Family,ActiveFamily.pl
+Active Family HD,ActiveFamilyHD.pl
 Adult Channel,AdultChannel.uk
-Adventure HD,AdventureHD.pl
 Adventure,Adventure.pl
+Adventure HD,AdventureHD.pl
+Agro TV,AgroTV.ro
 Ahlulbayt TV,AhlulbaytTV.uk
 Ajara TV,AjaraTV.ru
 Akaal Channel,AkaalChannel.uk
@@ -55,128 +83,96 @@ Al Jazeera English,AlJazeeraEnglish.qa
 Al Jazeera HD English,AlJazeeraHDEnglish.qa
 Al Quran Al Kareem TV,AlQuranAlKareemTV.sa
 Al Sunnah Al Nabawiyah TV,AlSunnahAlNabawiyahTV.sa
-Ale Kino+ HD,AleKinoPlusHD.pl
 Ale Kino+,AleKinoPlus.pl
+Ale Kino+ HD,AleKinoPlusHD.pl
 Alem FM,AlemFM.tr
+Aleph News,AlephNews.ro
+Alfa Omega TV,AlfaOmegaTV.ro
 Alsace 20,Alsace20.fr
 Altice Studio,AlticeStudio.fr
 Amazing TV,AmazingTV.pl
-AMC España,AMCEspana.us
-AMC HD Polska,AMCHDPolska.us
-AMC Polska,AMCPolska.us
-AMC Russia,AMCRussia.us
 Amedia Hit,AmediaHit.ru
 Amedia Premium,AmediaPremium.ru
 Andalucía TV,AndaluciaTV.es
 Animal Planet Europe,AnimalPlanetEurope.us
+Animal Planet HD Europe,AnimalPlanetHDEurope.us
 Animal Planet HD Polska,AnimalPlanetHDPolska.us
 Animal Planet Россия,AnimalPlanetRossiya.us
 Animaux,Animaux.fr
+Antena 1,Antena1.ro
+Antena 1 HD,Antena1HD.ro
 Antena 3,Antena3.es
+Antena 3,Antena3.ro
+Antena 3 HD,Antena3HD.ro
+Antena International,AntenaInternational.ro
+Antena International HD,AntenaInternationalHD.ro
+Antena Stars,AntenaStars.ro
+Antena Stars HD,AntenaStarsHD.ro
 Aragón TV,AragonTV.es
-ARD-alpha,ARDalpha.de
+Arcadia TV,ArcadiaTV.ro
 Arirang TV,ArirangTV.kr
-ARTE Deutsch,ARTEDeutsch.fr
-ARTE Français,ARTEFrancais.fr
-ARTE HD Deutsch,ARTEHDDeutsch.fr
 Atreseries,Atreseries.es
-ATV Türkiye,ATVTurkiye.tr
-ATV,ATV.at
+Auto Motor und Sport,AutoMotorundSport.de
+Auto Motor und Sport HD,AutoMotorundSportHD.de
 Automoto La chaîne,AutomotoLachaine.fr
 Automoto la chaîne,Automotolachaine.fr
-AXN Black Polska,AXNBlackPolska.us
-AXN España,AXNEspana.us
-AXN HD Polska,AXNHDPolska.us
-AXN Polska,AXNPolska.us
-AXN Spin HD Polska,AXNSpinHDPolska.us
-AXN Spin Polska,AXNSpinPolska.us
-AXN White España,AXNWhiteEspana.us
-AXN White Polska,AXNWhitePolska.us
 B-One TV,BOneTV.cd
-Baba Radyo,BabaRadyo.tr
-Baby TV Europe,BabyTVEurope.uk
-BabyFirst,BabyFirst.us
-BabyTV Español,BabyTVEspanol.uk
-BabyTV Europe,BabyTVEurope.uk
-BabyTV Pусский,BabyTVPusskiy.uk
-Barça TV,BarcaTVfr.es
+B1,B1.ro
+BBC,BBC.uk
 BBC Arabic,BBCArabic.uk
 BBC Brit HD Polska,BBCBritHDPolska.uk
 BBC Brit Polska,BBCBritPolska.uk
 BBC Earth HD Polska,BBCEarthHDPolska.uk
+BBC Earth HD Romania,BBCEarthHDRomania.uk
 BBC Earth Polska,BBCEarthPolska.uk
-BBC Entertainment Europe,BBCEntertainmentEurope.uk
-BBC Entertainment,BBCEntertainment.uk
+BBC Earth Romania,BBCEarthRomania.uk
 BBC Entertainment,BBCEntertainmentEurope.uk
+BBC Entertainment,BBCEntertainment.uk
+BBC Entertainment Europe,BBCEntertainmentEurope.uk
 BBC First Polska,BBCFirstPolska.uk
 BBC First Türkiye,BBCFirstTurkiye.uk
 BBC Four,BBCFour.uk
 BBC Lifestyle HD Polska,BBCLifestyleHDPolska.uk
 BBC Lifestyle Polska,BBCLifestylePolska.uk
 BBC News,BBCNews.uk
+BBC One,BBCOne.uk
 BBC One London,BBCOneLondon.uk
 BBC One Scotland,BBCOneScotland.uk
-BBC One,BBCOne.uk
 BBC Parliament,BBCParliament.uk
 BBC Red Button 1,BBCRedButton1.uk
 BBC Two,BBCTwo.uk
-BBC World News Europe,BBCWorldNewsEurope.uk
 BBC World News,BBCWorldNews.uk
-BBC,BBC.uk
-Bblack! Classik,BblackClassik.fr
-Be 1,Be1.be
-Be Ciné,BeCine.be
-Be Mad,BeMad.es
-Be Séries,BeSeries.be
-Beate-Uhse.TV,BeateUhseTV.de
-beIn Box Office 1 Türkiye,beInBoxOffice1Turkiye.qa
-beIn Box Office 2,beInBoxOffice2.qa
-beIn Box Office 3,beInBoxOffice3.qa
-beIn Gurme,beInGurmqa.qa
-beIN H&E,beINHE.qa
-beIN İZ,beINIZ.qa
-beIN LaLiga,beINLaLiga.qa
-beIn Movies Action 2,beInMoviesAction2.qa
-beIn Movies Action,beInMoviesAction.qa
-beIn Movies Family,beInMoviesFamily.qa
-beIn Movies Premiere 2,beInMoviesPremiere2.qa
-beIn Movies Premiere,beInMoviesPremiere.qa
-beIn Movies Stars,beInMoviesStars.qa
-beIn Movies Turk,beInMoviesTurk.qa
-beIn Series Comedy,beInSeriesComedy.qa
-beIn Series Drama,beInSeriesDrama.qa
-beIn Series Sci-Fi,beInSeriesSciFi.qa
-beIn Series Vice,beInSeriesVice.qa
-beIN SPORTS 1,beINSPORTS1.qa
-beIn Sports 1,beInSports1.qa
-beIN SPORTS 2,beINSPORTS2.qa
-beIn Sports 2,beInSports2.qa
-beIN SPORTS 3,beINSPORTS3.qa
-beIn Sports 3,beInSports3.qa
-beIN SPORTS en Español,beINSPORTSenEspanol.qa
-beIn Sports MAX 10,beInSportsMAX10.qa
-beIn Sports MAX 4,beInSportsMAX4.qa
-beIn Sports MAX 5,beInSportsMAX5.qa
-beIn Sports MAX 6,beInSportsMAX6.qa
-beIn Sports MAX 7,beInSportsMAX7.qa
-beIn Sports MAX 8,beInSportsMAX8.qa
-beIn Sports MAX 9,beInSportsMAX9.qa
-beIN SPORTS,beINSPORTS.qa
-Best FM,BestFM.tr
+BBC World News Europe,BBCWorldNewsEurope.uk
+BBC World News HD Europe,BBCWorldNewsHDEurope.uk
 BET France,BETFrance.us
-betevé,beteve.es
-BeyazTV,BeyazTV.tr
 BFC,BFC.it
 BFM Business,BFMBusiness.fr
 BFM Grand Lille,BFMGrandLille.fr
 BFM Lyon,BFMLyon.fr
 BFM Paris,BFMParis.fr
 BFMTV,BFMTV.fr
+BR,BR.de
+Baba Radyo,BabaRadyo.tr
+Baby TV Europe,BabyTVEurope.uk
+BabyFirst,BabyFirst.us
+BabyTV Español,BabyTVEspanol.uk
+BabyTV Europe,BabyTVEurope.uk
+BabyTV Pусский,BabyTVPusskiy.uk
+Balkanika TV,BalkanikaTV.bg
+Barça TV,BarcaTVfr.es
+Bblack! Classik,BblackClassik.fr
+Be 1,Be1.be
+Be Ciné,BeCine.be
+Be Mad,BeMad.es
+Be Séries,BeSeries.be
+Beate-Uhse.TV,BeateUhseTV.de
+Best FM,BestFM.tr
+BeyazTV,BeyazTV.tr
 Bibel TV,BibelTV.de
 Blaze España,BlazeEspana.us
 Blaze Italia,BlazeItalia.us
-Blaze UK +1,BlazeUKPlus1.us
 Blaze UK,BlazeUK.us
+Blaze UK +1,BlazeUKPlus1.us
 Bloomberg HT,BloombergHT.us
 Bloomberg TV Europe,BloombergTVEurope.us
 Bloomberg TV UK,BloombergTVUK.us
@@ -184,54 +180,36 @@ Blue Hustler Europe,BlueHustlerEurope.us
 Boing España,BoingEspana.it
 Boing France,BoingFrance.it
 Boing Italia,BoingItalia.it
+Bollywood Film,BollywoodFilm.ro
 Bollywood HD,BollywoodHD.ru
+Bollywood TV Romania,BollywoodTVRomania.il
 Boomerang Central & Eastern Europe,BoomerangCentralEasternEurope.us
 Boomerang France,BoomerangFrance.us
 Boomerang HD Polska,BoomerangHDPolska.us
-Boomerang Italia +1,BoomerangItaliaPlus1.us
 Boomerang Italia,BoomerangItalia.us
+Boomerang Italia +1,BoomerangItaliaPlus1.us
 Boomerang Polska,BoomerangPolska.us
 Box Hits,BoxHits.uk
-BR,BR.de
 Brazzers TV Europe,BrazzersTVEurope.us
-Bridge TV Русский Хит,BridgeTVRusskiyHit.ru
 Bridge TV,BridgeTV.ru
+Bridge TV Русский Хит,BridgeTVRusskiyHit.ru
 Brit Asia TV,BritAsiaTV.uk
+Bucuresti TV,BucurestiTV.ro
 C31,C31.au
 C8,C8.fr
-Caccia,Caccia.it
-Calle 13,Calle13.us
-Canal 24 horas,Canal24horas.es
-Canal 32,Canal32.fr
-Canal Cocina,CanalCocina.es
-Canal Extremadura,CanalExtremadura.es
-Canal Hollywood España +1,CanalHollywoodEspanaPlus1.es
-Canal Hollywood España,CanalHollywoodEspana.es
-Canal J,CanalJ.fr
-Canal Panda España,CanalPandaEspana.pt
-Canal Parlamento,CanalParlamento.es
-Canal partagé TNT Ile-de-France,CanalpartageTNTIledeFrance.fr
-Canal Sur Andalucía,CanalSurAndalucia.es
-Canal Sur,CanalSur.es
-Canal Z,CanalZ.be
-CANAL+ 1 HD,CANALPlus1HD.pl
 CANAL+ 1,CANALPlus1.pl
+CANAL+ 1 HD,CANALPlus1HD.pl
 CANAL+ 4K Ultra HD,CANALPlus4KUltraHD.pl
-Canal+ Cinema,CanalPlusCinema.fr
-Canal+ Decale,CanalPlusDecale.fr
-CANAL+ Dokumenty HD,CANALPlusDokumentyHD.pl
 CANAL+ Dokumenty,CANALPlusDokumenty.pl
-CANAL+ Family HD,CANALPlusFamilyHD.pl
-Canal+ Family,CanalPlusFamily.fr
+CANAL+ Dokumenty HD,CANALPlusDokumentyHD.pl
 CANAL+ Family,CANALPlusFamily.pl
-CANAL+ Film HD,CANALPlusFilmHD.pl
+CANAL+ Family HD,CANALPlusFamilyHD.pl
 CANAL+ Film,CANALPlusFilm.pl
-Canal+ France,CanalPlusFrance.fr
+CANAL+ Film HD,CANALPlusFilmHD.pl
 CANAL+ HD Polska,CANALPlusHDPolska.pl
 CANAL+ Polska,CANALPlusPolska.pl
-CANAL+ Seriale HD,CANALPlusSerialeHD.pl
 CANAL+ Seriale,CANALPlusSeriale.pl
-Canal+ Series,CanalPlusSeries.fr
+CANAL+ Seriale HD,CANALPlusSerialeHD.pl
 CANAL+ Sport 2 HD Polska,CANALPlusSport2HDPolska.pl
 CANAL+ Sport 2 Polska,CANALPlusSport2Polska.pl
 CANAL+ Sport 3 HD Polska,CANALPlusSport3HDPolska.pl
@@ -240,24 +218,7 @@ CANAL+ Sport 4 HD Polska,CANALPlusSport4HDPolska.pl
 CANAL+ Sport 4 Polska,CANALPlusSport4Polska.pl
 CANAL+ Sport HD Polska,CANALPlusSportHDPolska.pl
 CANAL+ Sport Polska,CANALPlusSportPolska.pl
-Canal+ Sport,CanalPlusSport.fr
-Canale 5,Canale5.it
-Canvas,Canvas.be
-Caracol TV,CaracolTV.co
-Cartoon Network France,CartoonNetworkFrance.us
-Cartoon Network HD Polska,CartoonNetworkHDPolska.us
-Cartoon Network Italia +1,CartoonNetworkItaliaPlus1.us
-Cartoon Network Italia,CartoonNetworkItalia.us
-Cartoon Network Polska,CartoonNetworkPolska.us
-Cartoon Network Russia & Southeastern European,CartoonNetworkRussiaSoutheasternEuropean.us
-Cartoon Network Türkiye,CartoonNetworkTurkiye.us
-Cartoon Network/TNT Polska,CartoonNetworkTNTPolska.us
-Cartoonito Italia,CartoonitoItalia.us
-Caza y Pesca,CazayPesca.es
-Cazavisión,Cazavision.es
 CBBC,CBBC.uk
-CBeebies Polska,CBeebiesPolska.uk
-CBeebies UK,CBeebiesUK.uk
 CBS Drama UK,CBSDramaUK.us
 CBS Europa,CBSEuropa.us
 CBS HD Europa,CBSHDEuropa.us
@@ -265,13 +226,60 @@ CBS Justice UK,CBSJusticeUK.us
 CBS Reality Europe,CBSRealityEurope.us
 CBS Reality Polska,CBSRealityPolska.us
 CBS Reality UK,CBSRealityUK.us
-CGTN Español,CGTNEspanol.cn
+CBeebies Polska,CBeebiesPolska.uk
+CBeebies UK,CBeebiesUK.uk
 CGTN,CGTN.cn
+CGTN Español,CGTNEspanol.cn
+CITV,CITV.uk
+CMM,CMM.es
+CNBC,CNBC.us
+CNBC Europe,CNBCEurope.us
+CNEWS,CNEWS.fr
+CNN,CNN.us
+CNN International Europe,CNNInternationalEurope.us
+CNN Türk,CNNTurk.us
+CStar,CStar.fr
+Caccia,Caccia.it
+Calle 13,Calle13.us
+Canal 24 horas,Canal24horas.es
+Canal 32,Canal32.fr
+Canal Cocina,CanalCocina.es
+Canal Extremadura,CanalExtremadura.es
+Canal Hollywood España,CanalHollywoodEspana.es
+Canal Hollywood España +1,CanalHollywoodEspanaPlus1.es
+Canal J,CanalJ.fr
+Canal Panda España,CanalPandaEspana.pt
+Canal Parlamento,CanalParlamento.es
+Canal Sur,CanalSur.es
+Canal Sur Andalucía,CanalSurAndalucia.es
+Canal Z,CanalZ.be
+Canal partagé TNT Ile-de-France,CanalpartageTNTIledeFrance.fr
+Canal+ Cinema,CanalPlusCinema.fr
+Canal+ Decale,CanalPlusDecale.fr
+Canal+ Family,CanalPlusFamily.fr
+Canal+ France,CanalPlusFrance.fr
+Canal+ Series,CanalPlusSeries.fr
+Canal+ Sport,CanalPlusSport.fr
+Canale 5,Canale5.it
+Canvas,Canvas.be
+Caracol TV,CaracolTV.co
+Cartoon Network France,CartoonNetworkFrance.us
+Cartoon Network HD Polska,CartoonNetworkHDPolska.us
+Cartoon Network Italia,CartoonNetworkItalia.us
+Cartoon Network Italia +1,CartoonNetworkItaliaPlus1.us
+Cartoon Network Polska,CartoonNetworkPolska.us
+Cartoon Network România,CartoonNetworkRomania.us
+Cartoon Network Russia & Southeastern European,CartoonNetworkRussiaSoutheasternEuropean.us
+Cartoon Network Türkiye,CartoonNetworkTurkiye.us
+Cartoon Network/TNT Polska,CartoonNetworkTNTPolska.us
+Cartoonito Italia,CartoonitoItalia.us
+Caza y Pesca,CazayPesca.es
+Cazavisión,Cazavision.es
 Challenge UK,ChallengeUK.uk
-Channel 4 UK +1,Channel4UKPlus1.uk
 Channel 4 UK,Channel4UK.uk
-Channel 5 +1,Channel5Plus1.uk
+Channel 4 UK +1,Channel4UKPlus1.uk
 Channel 5,Channel5.uk
+Channel 5 +1,Channel5Plus1.uk
 Chasse et peche,Chasseetpeche.fr
 Cherie 25,Cherie25.fr
 Cielo,Cielo.it
@@ -287,72 +295,97 @@ Ciné+ Emotion,CinePlusEmotion.fr
 Ciné+ Famiz,CinePlusFamiz.fr
 Ciné+ Frisson,CinePlusFrisson.fr
 Ciné+ Premier,CinePlusPremier.fr
-CITV,CITV.uk
 Clan TVE,ClanTVE.es
 Class CNBC,ClassCNBC.it
 Classica HD,ClassicaHD.it
 Club MTV,ClubMTV.us
 Club RTL,ClubRTL.be
-CMM,CMM.es
-CNBC Europe,CNBCEurope.us
-CNBC,CNBC.us
-CNEWS,CNEWS.fr
-CNN International Europe,CNNInternationalEurope.us
-CNN Türk,CNNTurk.us
-CNN,CNN.us
 Comedy Central España,ComedyCentralEspana.us
 Comedy Central Family HD Polska,ComedyCentralFamilyHDPolska.us
 Comedy Central Family Polska,ComedyCentralFamilyPolska.us
 Comedy Central France,ComedyCentralFrance.us
 Comedy Central HD Polska,ComedyCentralHDPolska.us
-Comedy Central Italia +1,ComedyCentralItaliaPlus1.us
+Comedy Central HD România,ComedyCentralHDRomania.us
 Comedy Central Italia,ComedyCentralItalia.us
+Comedy Central Italia +1,ComedyCentralItaliaPlus1.us
 Comedy Central Polska,ComedyCentralPolska.us
+Comedy Central România,ComedyCentralRomania.us
 Comédie+,ComediePlus.fr
+Cool TV,CoolTV.hu
 Cosmopolitan TV España,CosmopolitanTVEspana.es
 Court TV UK,CourtTVUK.us
 Create & Craft,CreateCraft.uk
+Credo TV,CredoTV.ro
 Crime District,CrimeDistrict.fr
 Crime+Investigation Italia,CrimePlusInvestigationItalia.us
-Crime+Investigation Polsat HD,CrimePlusInvestigationPolsatHD.us
 Crime+Investigation Polsat,CrimePlusInvestigationPolsat.us
+Crime+Investigation Polsat HD,CrimePlusInvestigationPolsatHD.us
+Crime+Investigation Romania,CrimePlusInvestigationRomania.us
 Crimen+Investigación,CrimenPlusInvestigacion.us
 Cruise1st TV,Cruise1stTV.uk
-CStar,CStar.fr
 Cuatro,Cuatro.es
 Cubavisión Internacional,CubavisionInternacionales.cu
 CyLTV,CyLTV.es
-Czwórka HD,CzworkaHD.pl
 Czwórka,Czworka.pl
+Czwórka HD,CzworkaHD.pl
+DAZN 1 Italia,DAZN1Italia.uk
+DKISS,DKISS.es
+DMAX Deutschland,DMAXDeutschland.us
+DMAX España,DMAXEspana.us
+DMAX Italia,DMAXItalia.us
+DMAX Türkiye,DMAXTurkiye.us
+DMAX UK,DMAXUK.us
+DR1,DR1.dk
+DR2,DR2.dk
+DTX East Europe,DTXEastEurope.us
+DTX HD Polska,DTXHDPolska.us
+DTX Polska,DTXPolska.us
+DTX Россия,DTXRossiya.us
+DW,DW.de
+Da Vinci,DaVinci.de
 Da Vinci HD Polska,DaVinciHDPolska.de
 Da Vinci Polska,DaVinciPolska.de
-Da Vinci,DaVinci.de
 Dark,Dark.es
-Das Erste HD,DasErsteHD.de
 Das Erste,DasErste.de
-Dave ja vu (Freeview),DavejavuFreeview.uk
+Das Erste HD,DasErsteHD.de
 Dave UK,DaveUK.uk
-DAZN 1 Italia,DAZN1Italia.uk
+Dave ja vu (Freeview),DavejavuFreeview.uk
 DeA Junior,DeAJunior.it
-DeA Kids +1,DeAKidsPlus1.it
 DeA Kids,DeAKids.it
+DeA Kids +1,DeAKidsPlus1.it
 Decasa,Decasa.es
 Deejay TV,DeejayTV.it
 Demain TV,DemainTV.fr
+Deutsche Welle,DeutscheWelle.de
 Deutsche Welle English,DeutscheWelleEnglish.de
 Deutsche Welle Español,DeutscheWelleEspanol.de
-Deutsche Welle,DeutscheWelle.de
 Deutsches Musik Fernsehen,DeutschesMusikFernsehen.de
+Digi 24,Digi24.ro
+Digi 24 HD,Digi24HD.ro
+Digi Animal World,DigiAnimalWorld.ro
+Digi Animal World HD,DigiAnimalWorldHD.ro
+Digi Life HD Romania,DigiLifeHDRomania.ro
+Digi Life Romania,DigiLifeRomania.ro
+Digi Sport 1 HD Romania,DigiSport1HDRomania.ro
+Digi Sport 1 Romania,DigiSport1Romania.ro
+Digi Sport 2 HD Romania,DigiSport2HDRomania.ro
+Digi Sport 2 Romania,DigiSport2Romania.ro
+Digi Sport 3 HD Romania,DigiSport3HDRomania.ro
+Digi Sport 3 Romania,DigiSport3Romania.ro
+Digi Sport 4 Romania,DigiSport4Romania.ro
+Digi World HD Romania,DigiWorldHDRomania.ro
+Digi World Romania,DigiWorldRomania.ro
 Disco Polo Music,DiscoPoloMusic.pl
 Discovery Channel Deutschland,DiscoveryChannelDeutschland.us
-Discovery Channel en Español,DiscoveryChannelenEspanol.us
 Discovery Channel France,DiscoveryChannelFrance.us
 Discovery Channel HD Deutschland,DiscoveryChannelHDDeutschland.us
 Discovery Channel HD Polska,DiscoveryChannelHDPolska.us
-Discovery Channel Italia +1,DiscoveryChannelItaliaPlus1.us
 Discovery Channel Italia,DiscoveryChannelItalia.us
+Discovery Channel Italia +1,DiscoveryChannelItaliaPlus1.us
 Discovery Channel Polska,DiscoveryChannelPolska.us
+Discovery Channel Romania,DiscoveryChannelRomania.us
 Discovery Channel Türkiye,DiscoveryChannelTurkiye.us
+Discovery Channel en Español,DiscoveryChannelenEspanol.us
 Discovery Channel Россия,DiscoveryChannelRossiya.us
 Discovery Family,DiscoveryFamily.us
 Discovery Historia,DiscoveryHistoria.us
@@ -360,63 +393,66 @@ Discovery Life HD Polska,DiscoveryLifeHDPolska.us
 Discovery Life Polska,DiscoveryLifePolska.us
 Discovery Science France,DiscoveryScienceFrance.us
 Discovery Science HD Polska,DiscoveryScienceHDPolska.us
+Discovery Science HD Romanian,DiscoveryScienceHDRomanian.us
 Discovery Science Italia,DiscoveryScienceItalia.us
 Discovery Science Polska,DiscoverySciencePolska.us
+Discovery Science Romanian,DiscoveryScienceRomanian.us
 Discovery Science Türkiye,DiscoveryScienceTurkiye.us
 Discovery Science Россия,DiscoveryScienceRossiya.us
 Discovery Восточная Европа,DiscoveryVostochnayaEvropa.us
-Disney Channel España +1,DisneyChannelEspanaPlus1.us
 Disney Channel España,DisneyChannelEspana.us
+Disney Channel España +1,DisneyChannelEspanaPlus1.us
 Disney Channel France,DisneyChannelFrance.us
 Disney Channel HD Polska,DisneyChannelHDPolska.us
 Disney Channel Polska,DisneyChannelPolska.us
+Disney Channel Romania,DisneyChannelRomania.us
 Disney Channel Türkiye,DisneyChannelTurkiye.us
 Disney Channel Wallonia,DisneyChannelWallonia.us
 Disney Junior España,DisneyJuniorEspana.us
 Disney Junior France,DisneyJuniorFrance.us
+Disney Junior Romania & Bulgaria,DisneyJuniorRomaniaBulgaria.us
 Disney Junior Türkiye & Polska,DisneyJuniorTurkiyePolska.us
 Disney XD Polska,DisneyXDPolska.us
+Diva Romania,DivaRomania.us
 Divinity,Divinity.es
 Diyanet TV,DiyanetTV.tr
-DKISS,DKISS.es
-dlaCiebie.tv,dlaCiebietv.pl
-DMAX Deutschland,DMAXDeutschland.us
-DMAX España,DMAXEspana.us
-DMAX Italia,DMAXItalia.us
-DMAX Türkiye,DMAXTurkiye.us
-DMAX UK,DMAXUK.us
-Doctors Life,DoctorsLife.it
-DocuBox HD,DocuBoxHD.us
+Doctor's Life,DoctorsLife.it
 DocuBox,DocuBox.us
-Domo+ HD,DomoPlusHD.pl
+DocuBox HD,DocuBoxHD.us
 Domo+,DomoPlus.pl
-Dorcel TV HD,DorcelTVHD.nl
+Domo+ HD,DomoPlusHD.pl
 Dorcel TV,DorcelTV.nl
-Dorcel XXX HD,DorcelXXXHD.nl
+Dorcel TV HD,DorcelTVHD.nl
 Dorcel XXX,DorcelXXX.nl
-DR1,DR1.dk
-DR2,DR2.dk
-Drama UK +1,DramaUKPlus1.uk
+Dorcel XXX HD,DorcelXXXHD.nl
 Drama UK,DramaUK.uk
-DTX HD Polska,DTXHDPolska.us
-DTX Polska,DTXPolska.us
-DTX Россия,DTXRossiya.us
-ducktv HD,ducktvHD.sk
-ducktv,ducktv.sk
-DW,DW.de
+Drama UK +1,DramaUKPlus1.uk
+Duck TV,DuckTV.sk
+Duck TV HD,DuckTVHD.sk
+Duna,Duna.hu
+Duna World HD,DunaWorldHD.hu
 E TV,ETV.ru
 E! Europe,EEurope.us
+E! Europe HD,EEuropeHD.us
 E! France,EFrance.us
 E! HD Europe,EHDEurope.us
-E-Sport TV HD,ESportTVHD.pl
 E-Sport TV,ESportTV.pl
-E4 UK +1,E4UKPlus1.uk
+E-Sport TV HD,ESportTVHD.pl
 E4 UK,E4UK.uk
+E4 UK +1,E4UKPlus1.uk
+ETB 1,ETB1.es
+ETB 2,ETB2.es
+ETB 3,ETB3.es
+ETB 4,ETB4.es
+EWTN España,EWTNEspana.us
+EWTN Europe,EWTNEurope.us
+Echo24,Echo24.cz
+Echo24 HD,Echo24HD.cz
 El Toro TV,ElToroTV.es
 El Trece Internacional,ElTreceInternacional.ar
 Eleven Sports 1 HD Polska,ElevenSports1HDPolska.uk
-Eleven Sports 1 Polska 4K,ElevenSports1Polska4K.uk
 Eleven Sports 1 Polska,ElevenSports1Polska.uk
+Eleven Sports 1 Polska 4K,ElevenSports1Polska4K.uk
 Eleven Sports 2 HD Polska,ElevenSports2HDPolska.uk
 Eleven Sports 2 Polska,ElevenSports2Polska.uk
 Eleven Sports 3 HD Polska,ElevenSports3HDPolska.uk
@@ -424,85 +460,101 @@ Eleven Sports 3 Polska,ElevenSports3Polska.uk
 Eleven Sports 4 HD Polska,ElevenSports4HDPolska.uk
 Eleven Sports 4 Polska,ElevenSports4Polska.uk
 Eman Channel,EmanChannel.uk
+Emi TV,EmiTV.ro
+Emi TV HD,EmiTVHD.ro
 Emilia-Romagna 24,EmiliaRomagna24.it
 Energy,Energy.es
-English Club TV HD,EnglishClubTVHD.uk
 English Club TV,EnglishClubTV.uk
-Epic Drama HD,EpicDramaHD.se
+English Club TV HD,EnglishClubTVHD.uk
 Epic Drama,EpicDrama.se
+Epic Drama HD,EpicDramaHD.se
 Equidia,Equidia.fr
+Erdély TV,ErdelyTV.ro
 Erox HD,EroxHD.us
 Eroxxx HD,EroxxxHD.us
 Eska Rock TV,EskaRockTV.pl
+Eska TV,EskaTV.pl
 Eska TV Extra,EskaTVExtra.pl
 Eska TV HD,EskaTVHD.pl
-Eska TV,EskaTV.pl
 Esport3,Esport3.es
-ETB 1,ETB1.es
-ETB 2,ETB2.es
-ETB 3,ETB3.es
-ETB 4,ETB4.es
+Est TV,EstTV.ro
+Etno TV,EtnoTV.ro
 Eureka HD,Eureka.ru
-Eurochannel HD,EurochannelHD.us
 Eurochannel,Eurochannel.us
-Euronews en Español,EuronewsenEspanol.fr
+Eurochannel HD,EurochannelHD.us
 Euronews English,EuronewsEnglish.fr
 Euronews Français,EuronewsFrancais.fr
 Euronews HD English,EuronewsHDEnglish.fr
 Euronews Italiano,EuronewsItaliano.fr
+Euronews en Español,EuronewsenEspanol.fr
 Europa Plus TV,EuropaPlusTV.ru
+Eurosport 1,Eurosport1.fr
 Eurosport 1 France,Eurosport1France.fr
 Eurosport 1 Germany,Eurosport1Germany.fr
 Eurosport 1 HD Polska,Eurosport1HDPolska.fr
+Eurosport 1 HD Romania,Eurosport1HDRomania.fr
 Eurosport 1 HD Россия,Eurosport1Rossiya.fr
 Eurosport 1 Italia,Eurosport1Italia.fr
 Eurosport 1 Polska,Eurosport1Polska.fr
-Eurosport 1,Eurosport1.fr
+Eurosport 1 Romania,Eurosport1Romania.fr
+Eurosport 2,Eurosport2.fr
 Eurosport 2 España,Eurosport2Espana.fr
 Eurosport 2 France,Eurosport2France.fr
 Eurosport 2 HD Polska,Eurosport2HDPolska.fr
+Eurosport 2 HD Romania,Eurosport2HDRomania.fr
 Eurosport 2 Italia,Eurosport2Italia.fr
 Eurosport 2 Polska,Eurosport2Polska.fr
+Eurosport 2 Romania,Eurosport2Romania.fr
 Eurosport 2 Россия,Eurosport2Rossiya.fr
-Eurosport 2,Eurosport2.fr
+Eurosport 4K Romania,Eurosport4KRomania.fr
 Eurosport España,EurosportEspana.fr
 Eurosport Russia,EurosportRussia.fr
-EWTN España,EWTNEspana.us
-EWTN Europe,EWTNEurope.us
+Extreme Sports,ExtremeSports.nl
+Extreme Sports Channel,ExtremeSportsChannel.nl
 Extreme Sports Channel HD Polska,ExtremeSportsChannelHDPolska.nl
 Extreme Sports Channel Polska,ExtremeSportsChannelPolska.nl
-Extreme Sports Channel,ExtremeSportsChannel.nl
-Extreme Sports,ExtremeSports.nl
 Eén,Een.be
-Fashion One Europe 4K,FashionOneEurope.uk
+FB TV,FBTV.tr
+FDF,FDF.es
+FOX España,FOXEspana.us
 Fashion One,FashionOneEurope.uk
+Fashion One Europe 4K,FashionOneEurope.uk
 Fashion TV Europe,FashionTVEurope.fr
 Fashion TV HD Europe,FashionTVHDEurope.fr
 Fashion TV Russia,FashionTVRussia.fr
 FashionBox HD,FashionBoxHD.us
-Fast&Fun Box HD,FastFunBoxHD.us
 Fast&Fun Box,FastFunBox.us
-FB TV,FBTV.tr
-FDF,FDF.es
-FightBox HD,FightBoxHD.us
+Fast&Fun Box HD,FastFunBoxHD.us
+Favorit TV,FavoritTV.ro
 FightBox,FightBox.us
-Fightklub HD,FightklubHD.hu
+FightBox HD,FightBoxHD.us
 Fightklub,Fightklub.hu
-Film4 UK +1,Film4UKPlus1.uk
+Fightklub HD,FightklubHD.hu
+Film Café Romania,FilmCafeRomania.hu
+Film Now,FilmNow.ro
+Film Now HD,FilmNowHD.ro
+Film+,FilmPlus.ro
 Film4 UK,Film4UK.uk
+Film4 UK +1,Film4UKPlus1.uk
 FilmBox Action,FilmBoxAction.us
 FilmBox Arthouse HD Worldwide,FilmBoxArthouseHDWorldwide.us
 FilmBox Arthouse Worldwide,FilmBoxArthouseWorldwide.us
 FilmBox Extra HD Polska,FilmBoxExtraHDPolska.us
+FilmBox Extra HD Romania,FilmBoxExtraHDRomania.us
 FilmBox Family,FilmBoxFamily.us
+FilmBox Family Romania,FilmBoxFamilyRomania.us
 FilmBox HD,FilmBoxHD.us
 FilmBox Premium HD Polska,FilmBoxPremiumHDPolska.us
+FilmBox Premium Romania,FilmBoxPremiumRomania.us
+FilmBox Romania,FilmBoxRomania.us
+FilmBox Stars Romania,FilmBoxStarsRomania.us
 Focus,Focus.it
-Fokus TV HD,FokusTVHD.pl
 Fokus TV,FokusTV.pl
+Fokus TV HD,FokusTVHD.pl
 Folx TV,FolxTV.de
-Food Network HD Polska,FoodNetworkHDPolska.us
+Food Network,FoodNetwork.us
 Food Network HD,FoodNetworkHD.us
+Food Network HD Polska,FoodNetworkHDPolska.us
 Food Network Italia,FoodNetworkItalia.us
 Food Network Polska,FoodNetworkPolska.us
 Food Network Russia,FoodNetworkRussia.us
@@ -511,12 +563,11 @@ Forces TV,ForcesTV.uk
 Fox Business,FoxBusiness.us
 Fox Comedy HD Polska,FoxComedyHDPolska.us
 Fox Comedy Polska,FoxComedyPolska.us
-Fox Crime Italia +1,FoxCrimeItaliaPlus1.us
 Fox Crime Italia,FoxCrimeItalia.us
-FOX España,FOXEspana.us
+Fox Crime Italia +1,FoxCrimeItaliaPlus1.us
 Fox HD Polska,FoxHDPolska.us
-Fox Italia +1,FoxItaliaPlus1.us
 Fox Italia,FoxItalia.us
+Fox Italia +1,FoxItaliaPlus1.us
 Fox Life España,FoxLifeEspana.us
 Fox Life Russia,FoxLifeRussia.us
 Fox News,FoxNews.us
@@ -529,6 +580,7 @@ France 24 Español,France24Espanol.fr
 France 24 Français,France24Francais.fr
 France 24 HD English,France24HDEnglish.fr
 France 24 HD Français,France24HDFrancais.fr
+France 3,France3.fr
 France 3 Alpes,France3Alpes.fr
 France 3 Alsace,France3Alsace.fr
 France 3 Aquitaine,France3Aquitaine.fr
@@ -553,7 +605,6 @@ France 3 Picardie,France3Picardie.fr
 France 3 Poitou-Charentes,France3PoitouCharentes.fr
 France 3 Provence-Alpes,France3ProvenceAlpes.fr
 France 3 Rhône-Alpes,France3RhoneAlpes.fr
-France 3,France3.fr
 France 4,France4.fr
 France 5,France5.fr
 Franceinfo,Franceinfo.fr
@@ -563,128 +614,149 @@ FreshTV,FreshTV.ru
 Frisbee,Frisbee.it
 Fuel TV HD,FuelTVHD.ru
 FunBox UHD,FunBoxUHD.us
+GINX eSports TV,GINXeSportsTV.uk
+GINX eSports TV HD,GINXeSportsTVHD.uk
+GOD TV,GODTV.uk
+GOL,GOL.es
+GS TV,GSTV.tr
+Galaxy4,Galaxy4.hu
 Gambero Rosso,GamberoRosso.it
 Game One,GameOne.fr
 Gametoon HD,GametoonHD.us
 Garage TV,GarageTV.ar
 Gems TV,GemsTV.uk
 Giallo TV,GialloTV.it
-GINX eSports TV HD,GINXeSportsTVHD.uk
-GINX eSports TV,GINXeSportsTV.uk
 GlobalStarTV,GlobalStarTV.ru
+GoTV,GoTV.at
 God TV UK,GodTVUK.uk
-GOD TV,GODTV.uk
-GOL,GOL.es
 Gold TV,GoldTV.pl
 GoldStar TV,GoldStarTV.de
 Golf Channel France,GolfChannelFrance.us
 Golf Channel HD Polska,GolfChannelHDPolska.us
 Golf Channel Polska,GolfChannelPolska.us
 Golf+,GolfPlus.fr
-Gong Max,GongMax.fr
 Gong,Gong.fr
+Gong Max,GongMax.fr
 Gospel Music TV,GospelMusicTV.uk
-GoTV,GoTV.at
-GS TV,GSTV.tr
-Gulli Girl,GulliGirl.fr
 Gulli,Gulli.fr
-Habertürk TV,HaberturkTV.tr
-Halk TV,HalkTV.tr
-Hamburg 1,Hamburg1.de
+Gulli Girl,GulliGirl.fr
+H!T Music Channel,HTMusicChannel.ro
 HBO HD Polska,HBOHDPolska.us
+HBO HD Romania,HBOHDRomania.us
 HBO Polska,HBOPolska.us
+HBO Romania,HBORomania.us
+HBO2 Central Europe,HBO2CentralEurope.us
+HBO2 HD Central Europe,HBO2HDCentralEurope.us
 HBO2 HD Polska,HBO2HDPolska.us
 HBO2 Polska,HBO2Polska.us
 HBO3 HD Polska,HBO3HDPolska.us
+HBO3 HD Romania,HBO3HDRomania.us
 HBO3 Polska,HBO3Polska.us
+HBO3 Romania,HBO3Romania.us
 HD Медиа,HDMedia.ru
 HDL,HDL.ru
-Heimatkanal,Heimatkanal.de
 HGTV HD Polska,HGTVHDPolska.us
 HGTV Italia,HGTVItalia.us
 HGTV Polska,HGTVPolska.us
+HGTV Romania,HGTVRomania.us
 HGTV UK,HGTVUK.us
+HITV,HITV.ru
+HSE24,HSE24.de
+Habertürk TV,HaberturkTV.tr
+Halk TV,HalkTV.tr
+Hamburg 1,Hamburg1.de
+Happy Channel,HappyChannel.ro
+Happy Channel HD,HappyChannelHD.ro
+Heimatkanal,Heimatkanal.de
 Histoire TV,HistoireTV.fr
 Historia España,HistoriaEspana.us
 History HD Deutschland,HistoryHDDeutschland.us
 History HD Polska,HistoryHDPolska.us
+History HD România,HistoryHDRomania.us
 History Italia,HistoryItalia.us
 History Polska,HistoryPolska.us
+History România,HistoryRomania.us
 History Russia,HistoryRussia.us
 History2 HD Polska,History2HDPolska.us
-History2 Polska,History2Polska.us
 History2 HD Russia,History2HDRussia.us
+History2 Polska,History2Polska.us
 History2 Russia,History2Russia.us
-HITV,HITV.ru
 Hochanda,Hochanda.uk
 Hollywood HD,HollywoodHD.ru
-Home TV HD,HomeTVHD.pl
 Home TV,HomeTV.pl
+Home TV HD,HomeTVHD.pl
 Horror Channel UK,HorrorChannelUK.uk
 HorseTV,HorseTV.it
-hr-fernsehen,hrfernsehen.de
-HSE24,HSE24.de
 Hustler HD Europe,HustlerHDEurope.us
 Hustler TV Europe,HustlerTVEurope.us
-i24 News English,i24NewsEnglish.il
-i24 News Français,i24NewsFrancais.il
-i24news,i24news.il
 IB3,IB3.es
+IDA TV,IDATV.ro
+IDF1,IDF1.fr
+ITV,ITV.uk
+ITV +1,ITVPlus1.uk
+ITV London,ITVLondon.uk
+ITV2,ITV2.uk
+ITV2 +1,ITV2Plus1.uk
+ITV3,ITV3.uk
+ITV3 +1,ITV3Plus1.uk
+ITV4,ITV4.uk
+ITV4 +1,ITV4Plus1.uk
+ITVBe,ITVBe.uk
+ITVBe +1,ITVBePlus1.uk
 Iberalia TV,IberaliaTV.es
 Ideal Extra,IdealExtra.uk
 Ideal World,IdealWorld.uk
-IDF1,IDF1.fr
+Inedit TV,IneditTV.ro
 Infosport+,InfosportPlus.fr
 Insight TV UHD,InsightTVUHD.nl
 Insight Ultra HD,InsightUltraHD.ru
 Inspiration TV,InspirationTV.us
 Inter TV,InterTV.it
+Investigation Discovery Europe,InvestigationDiscoveryEurope.us
+Investigation Discovery HD Europe,InvestigationDiscoveryHDEurope.us
 Investigation Discovery HD Polska,InvestigationDiscoveryHDPolska.us
 Investigation Discovery Polska,InvestigationDiscoveryPolska.us
 Iris,Iris.it
 Italia 1,Italia1.it
 Italia 2,Italia2.it
-ITV +1,ITVPlus1.uk
-ITV London,ITVLondon.uk
-ITV,ITV.uk
-ITV2 +1,ITV2Plus1.uk
-ITV2,ITV2.uk
-ITV3 +1,ITV3Plus1.uk
-ITV3,ITV3.uk
-ITV4 +1,ITV4Plus1.uk
-ITV4,ITV4.uk
-ITVBe +1,ITVBePlus1.uk
-ITVBe,ITVBe.uk
-iTVS,iTVS.pl
 J-One,JOne.fr
 JAZZ HD,JAZZHD.pl
 Jewellery Maker,JewelleryMaker.uk
+JimJam Romania,JimJamRomania.uk
 JimJam Россия,JimJamRossiya.uk
 Junior,Junior.de
 K2,K2.it
+KTO,KTO.fr
 Kabel Eins Deutschland,KabelEinsDeutschland.de
 Kanal 7,Kanal7.tr
 Kanal D,KanalD.tr
+Kanal D HD,KanalDHD.tr
 Kanshi TV,KanshiTV.uk
 Ketnet,Ketnet.be
 KiKA,KiKA.de
 Kino HD Polska,KinoHDPolska.pl
-Kino Polska Muzyka,KinoPolskaMuzyka.pl
 Kino Polska,KinoPolska.pl
-Kino TV HD,KinoTVHD.us
+Kino Polska Muzyka,KinoPolskaMuzyka.pl
 Kino TV,KinoTV.us
+Kino TV HD,KinoTVHD.us
+Kiss TV,KissTV.ro
 Kral FM,KralFM.tr
 Kral Pop Radyo,KralPopRadyo.tr
-KTO,KTO.fr
-Kuchnia+ HD,KuchniaPlusHD.pl
 Kuchnia+,KuchniaPlus.pl
+Kuchnia+ HD,KuchniaPlusHD.pl
+L'Équipe,LEquipe.fr
+LCI,LCI.fr
+LCP 100%,LCP100.fr
+LMtv-Sarthe,LMtvSarthe.fr
+LOVE,LOVE.pl
+LOVE HD,LOVEHD.pl
+La 1,La1.es
 La 1 Catalunya,La1Catalunya.es
 La 1 HD,La1HD.es
-La 1,La1.es
 La 2,La2.es
 La 5,La5.it
-La 8 Burgos,La8Burgos.es
 La 8,La8.es
+La 8 Burgos,La8Burgos.es
 La Chaine Meteo,LaChaineMeteo.fr
 La Chaine parlementaire,LaChaineparlementaire.fr
 La Otra,LaOtra.es
@@ -693,58 +765,35 @@ La Une,LaUne.be
 La7,La7.it
 La7d,La7d.it
 LaF,LaF.it
-laSexta,laSexta.es
 Lazio Style Channel,LazioStyleChannel.it
-LCI,LCI.fr
-LCP 100%,LCP100.fr
 Libertad Digital TV,LibertadDigitalTV.es
 Lifetime HD Polska,LifetimeHDPolska.us
 Lifetime Polska,LifetimePolska.us
-LMtv-Sarthe,LMtvSarthe.fr
+Litoral TV,LitoralTV.ro
 London Live,LondonLive.uk
-LOVE HD,LOVEHD.pl
-LOVE,LOVE.pl
+LookSport,LookSport.ro
+LookSport 2,LookSport2.ro
+LookSport 2 HD,LookSport2HD.ro
+LookSport 3,LookSport3.ro
+LookSport 3 HD,LookSport3HD.ro
+LookSport HD,LookSportHD.ro
+LookSport+,LookSportPlus.ro
+LookSport+ HD,LookSportPlusHD.ro
+Love Nature,LoveNature.ca
 Lubelska.tv,Lubelskatv.pl
 Luxe TV,LuxeTV.lu
 Luxury,Luxury.ru
-LÉquipe,LEquipe.fr
+M1,M1.hu
+M2,M2.hu
+M4 Sport,M4Sport.hu
+M5 HD,M5HD.hu
+M6,M6.fr
 M6 Boutique,M6Boutique.fr
 M6 Music,M6Music.fr
-M6,M6.fr
-Mangas,Mangas.fr
 MCM France,MCMFrance.fr
-MCM Top Russia,MCMTopRussia.fr
 MCM Top,MCMTop.fr
+MCM Top Russia,MCMTopRussia.fr
 MDR,MDR.de
-Mediaset Extra,MediasetExtra.it
-Mega,Mega.es
-Melody,Melody.fr
-Metro HD,MetroHD.pl
-Metro,Metro.pl
-Mezzo Live HD,MezzoLiveHD.fr
-Mezzo Live,MezzoLive.fr
-Mezzo,Mezzo.fr
-Milan TV,MilanTV.it
-minikaGO,minikaGO.tr
-MiniMini+ HD,MiniMiniPlusHD.pl
-MiniMini+,MiniMiniPlus.pl
-Mirabelle TV,MirabelleTV.fr
-More4 UK +1,More4UKPlus1.uk
-More4 UK,More4UK.uk
-MotoGP,MotoGP.es
-Motorsport.tv,Motorsporttv.fr
-MotorTrend,MotorTrend.it
-Motorvision TV,MotorvisionTV.de
-Motowizja HD,MotowizjaHD.pl
-Motowizja,Motowizja.pl
-Movistar Acción,MovistarAccion.es
-Movistar Cine Español,MovistarCineEspanol.es
-Movistar Comedia,MovistarComedia.es
-Movistar Deportes,MovistarDeportes.es
-Movistar Estrenos,MovistarEstrenos.es
-Movistar F1,MovistarF1.es
-Movistar Golf,MovistarGolf.es
-Movistar Series,MovistarSeries.es
 MTV 80s,MTV80s.us
 MTV 90s,MTV90s.us
 MTV España,MTVEspana.us
@@ -755,8 +804,8 @@ MTV HD Polska,MTVHDPolska.us
 MTV Hits Europe,MTVHitsEurope.us
 MTV Hits France,MTVHitsFrance.us
 MTV Italia,MTVItalia.us
-MTV Live HD,MTVLiveHD.us
 MTV Live,MTVLive.us
+MTV Live HD,MTVLiveHD.us
 MTV Music 24,MTVMusic24.us
 MTV Music Italia,MTVMusicItalia.us
 MTV Music Polska,MTVMusicPolska.us
@@ -765,106 +814,161 @@ MTV Rocks,MTVRocks.uk
 MTV Rocks,MTVRocks.us
 MTV Russia,MTVRussia.us
 MTVmix,MTVmix.ru
+Magic TV,MagicTV.ro
+Magic TV HD,MagicTVHD.ro
+Mangas,Mangas.fr
+Mediaset Extra,MediasetExtra.it
+Mediaset Italia,MediasetItalia.it
+Medika TV,MedikaTV.ro
+Mega,Mega.es
+Melody,Melody.fr
+Metro,Metro.pl
+Metro HD,MetroHD.pl
+Mezzo,Mezzo.fr
+Mezzo Live,MezzoLive.fr
+Mezzo Live HD,MezzoLiveHD.fr
+Milan TV,MilanTV.it
+MiniMini+,MiniMiniPlus.pl
+MiniMini+ HD,MiniMiniPlusHD.pl
+Minimax Romania,MinimaxRomania.us
+Mirabelle TV,MirabelleTV.fr
+Mooz Dance,MoozDance.ro
+Mooz Dance HD,MoozDanceHD.ro
+Mooz HD,MoozHD.ro
+Mooz Hits,MoozHits.ro
+Mooz Ro!,MoozRo.ro
+More4 UK,More4UK.uk
+More4 UK +1,More4UKPlus1.uk
+MotoGP,MotoGP.es
+MotorTrend,MotorTrend.it
+Motorsport.tv,Motorsporttv.fr
+Motorvision TV,MotorvisionTV.de
+Motorvision TV HD,MotorvisionTVHD.de
+Motowizja,Motowizja.pl
+Motowizja HD,MotowizjaHD.pl
+Movistar Acción,MovistarAccion.es
+Movistar Cine Español,MovistarCineEspanol.es
+Movistar Comedia,MovistarComedia.es
+Movistar Deportes,MovistarDeportes.es
+Movistar Estrenos,MovistarEstrenos.es
+Movistar F1,MovistarF1.es
+Movistar Golf,MovistarGolf.es
+Movistar Series,MovistarSeries.es
+Museum HD,MuseumHD.fr
 Museum TV,MuseumTV.fr
 Music Box HD Ukraina,MusicBoxHDUkraina.ua
 Music Box Russia,MusicBoxRussia.ru
 Music Box Russian,MusicBoxRussian.ru
 Music Box Ukraina,MusicBoxUkraina.ua
-Mya,Mya.it
-MyZen TV HD,MyZenTVHD.fr
+Music Channel Romania,MusicChannelRomania.ro
+Muzsika TV,MuzsikaTV.hu
 MyZen TV,MyZenTV.fr
-myZen.tv,myZen.tv
-münchen.tv,munchentv.de
-n-tv,ntv.de
-Nat Geo People HD Polska,NatGeoPeopleHDPolska.us
-Nat Geo People Polska,NatGeoPeoplePolska.us
-Nat Geo Wild France,NatGeoWildFrance.us
-National Geographic España,NationalGeographicEspana.us
-National Geographic France,NationalGeographicFrance.us
-National Geographic HD Polska,NationalGeographicHDPolska.us
-National Geographic HD Russia,NationalGeographicHDRussia.us
-National Geographic Italia +1,NationalGeographicItaliaPlus1.us
-National Geographic Italia,NationalGeographicItalia.us
-National Geographic Polska,NationalGeographicPolska.us
-National Geographic Russia,NationalGeographicRussia.us
-National Geographic Türkiye,NationalGeographicTurkiye.us
-National Geographic Wild España,NationalGeographicWildEspana.us
-National Geographic Wild HD España,NationalGeographicWildHDEspana.us
-National Geographic Wild HD Polska,NationalGeographicWildHDPolska.us
-National Geographic Wild HD Russia,NationalGeographicWildHDRussia.us
-National Geographic Wild Italia +1,NationalGeographicWildItaliaPlus1.us
-National Geographic Wild Italia,NationalGeographicWildItalia.us
-National Geographic Wild Polska,NationalGeographicWildPolska.us
-National Geographic Wild Russia,NationalGeographicWildRussia.us
-National Geographic Wild Türkiye,NationalGeographicWildTurkiye.us
-Nautical Channel HD,NauticalChannelHD.it
-Nautical Channel,NauticalChannel.it
-Navarra Televisión,NavarraTelevision.es
+MyZen TV HD,MyZenTVHD.fr
+Mya,Mya.it
 NDR,NDR.de
-Neox,Neox.es
 NHK World Japan,NHKWorldJapan.jp
-Nick Jr Central & Eastern Europe,NickJrCentralEasternEurope.us
-Nick Jr España,NickJrEspana.us
-Nick Jr HD Central & Eastern Europe,NickJrHDCentralEasternEurope.us
-Nick Jr Italia +1,NickJrItaliaPlus1.us
-Nick Jr Italia,NickJrItalia.us
-Nick Jr Türkiye,NickJrTurkiye.us
-Nick Jr Россия,NickJrRossiya.us
-Nickelodeon Deutschland,NickelodeonDeutschland.us
-Nickelodeon en Español,NickelodeonenEspanol.us
-Nickelodeon France,NickelodeonFrance.us
-Nickelodeon HD Россия,NickelodeonHDRossiya.us
-Nickelodeon Italia +1,NickelodeonItaliaPlus1.us
-Nickelodeon Italia,NickelodeonItalia.us
-Nickelodeon Junior France,NickelodeonJuniorFrance.us
-Nickelodeon Polska,NickelodeonPolska.us
-Nickelodeon Türkiye,NickelodeonTurkiye.us
-Nickelodeon Wallonia,NickelodeonWallonia.us
-Nickelodeon Россия,NickelodeonRossiya.us
-NickelodeonTeen.us,NickelodeonTeen.us
-Nicktoons HD Polska,NicktoonsHDPolska.us
-Nicktoons Polska,NicktoonsPolska.us
-Nitro Deutschland,NitroDeutschland.de
-Nollywood TV,NollywoodTV.fr
-Non Stop People España,NonStopPeopleEspana.fr
-Non Stop People,NonStopPeople.fr
-Nova,Nova.cz
-Nova,Nova.es
-Nove,Nove.it
-Novela TV HD,NovelaTVHD.pl
-Novela TV,NovelaTV.pl
-Novelas TV,NovelasTV.fr
-Now 80s,Now80s.uk
-Nowa TV HD,NowaTVHD.pl
-Nowa TV,NowaTV.pl
 NPO 1,NPO1.nl
 NPO 2,NPO2.nl
 NPO 3,NPO3.nl
 NRJ 12,NRJ12.fr
 NRJ Hits,NRJHits.fr
-nSport+ HD,nSportPlusHD.pl
-nSport+,nSportPlus.pl
 NTL Radomsko,NTLRadomsko.pl
 NTV,NTV.tr
-Nuta.TV HD,NutaTVHD.pl
+Nasul TV,NasulTV.ro
+Nat Geo People HD Polska,NatGeoPeopleHDPolska.us
+Nat Geo People HD România,NatGeoPeopleHDRomania.us
+Nat Geo People Polska,NatGeoPeoplePolska.us
+Nat Geo People România,NatGeoPeopleRomania.us
+Nat Geo Wild France,NatGeoWildFrance.us
+National 24 Plus,National24Plus.ro
+National Geographic España,NationalGeographicEspana.us
+National Geographic France,NationalGeographicFrance.us
+National Geographic HD Polska,NationalGeographicHDPolska.us
+National Geographic HD România,NationalGeographicHDRomania.us
+National Geographic HD Russia,NationalGeographicHDRussia.us
+National Geographic Italia,NationalGeographicItalia.us
+National Geographic Italia +1,NationalGeographicItaliaPlus1.us
+National Geographic Polska,NationalGeographicPolska.us
+National Geographic România,NationalGeographicRomania.us
+National Geographic Russia,NationalGeographicRussia.us
+National Geographic Türkiye,NationalGeographicTurkiye.us
+National Geographic Wild España,NationalGeographicWildEspana.us
+National Geographic Wild HD España,NationalGeographicWildHDEspana.us
+National Geographic Wild HD Polska,NationalGeographicWildHDPolska.us
+National Geographic Wild HD Romania,NationalGeographicWildHDRomania.us
+National Geographic Wild HD Russia,NationalGeographicWildHDRussia.us
+National Geographic Wild Italia,NationalGeographicWildItalia.us
+National Geographic Wild Italia +1,NationalGeographicWildItaliaPlus1.us
+National Geographic Wild Polska,NationalGeographicWildPolska.us
+National Geographic Wild Romania,NationalGeographicWildRomania.us
+National Geographic Wild Russia,NationalGeographicWildRussia.us
+National Geographic Wild Türkiye,NationalGeographicWildTurkiye.us
+National TV,National TV
+Nautical Channel,NauticalChannel.it
+Nautical Channel HD,NauticalChannelHD.it
+Navarra Televisión,NavarraTelevision.es
+Neox,Neox.es
+Nick Jr Central & Eastern Europe,NickJrCentralEasternEurope.us
+Nick Jr España,NickJrEspana.us
+Nick Jr HD Central & Eastern Europe,NickJrHDCentralEasternEurope.us
+Nick Jr Italia,NickJrItalia.us
+Nick Jr Italia +1,NickJrItaliaPlus1.us
+Nick Jr România,NickJrRomania.us
+Nick Jr Türkiye,NickJrTurkiye.us
+Nick Jr Россия,NickJrRossiya.us
+Nickelodeon Deutschland,NickelodeonDeutschland.us
+Nickelodeon France,NickelodeonFrance.us
+Nickelodeon HD România,NickelodeonHDRomania.us
+Nickelodeon HD Россия,NickelodeonHDRossiya.us
+Nickelodeon Italia,NickelodeonItalia.us
+Nickelodeon Italia +1,NickelodeonItaliaPlus1.us
+Nickelodeon Junior France,NickelodeonJuniorFrance.us
+Nickelodeon Polska,NickelodeonPolska.us
+Nickelodeon România,NickelodeonRomania.us
+Nickelodeon Türkiye,NickelodeonTurkiye.us
+Nickelodeon Wallonia,NickelodeonWallonia.us
+Nickelodeon en Español,NickelodeonenEspanol.us
+Nickelodeon Россия,NickelodeonRossiya.us
+NickelodeonTeen.us,NickelodeonTeen.us
+Nicktoons HD Polska,NicktoonsHDPolska.us
+Nicktoons Polska,NicktoonsPolska.us
+Nicktoons România,NicktoonsRomania.us
+Nitro Deutschland,NitroDeutschland.de
+Nollywood TV,NollywoodTV.fr
+Non Stop People,NonStopPeople.fr
+Non Stop People España,NonStopPeopleEspana.fr
+Nova,Nova.es
+Nova,Nova.cz
+Nove,Nove.it
+Novela TV,NovelaTV.pl
+Novela TV HD,NovelaTVHD.pl
+Novelas TV,NovelasTV.fr
+Now 80's,Now80s.uk
+Nowa TV,NowaTV.pl
+Nowa TV HD,NowaTVHD.pl
 Nuta.TV,NutaTV.pl
+Nuta.TV HD,NutaTVHD.pl
 OCEAN-TV,OCEANTV.ru
 OCS Choc,OCSChoc.fr
 OCS City,OCSCity.fr
 OCS Geants,OCSGeants.fr
 OCS Max,OCSMax.fr
-Odisea,Odisea.es
-Oireachtas TV,OireachtasTV.ie
 OLTV,OLTV.fr
-Onda Algeciras Televisión,OndaAlgecirasTelevision.es
-One,One.de
-ONTV HD,ONTVHD.pl
 ONTV,ONTV.pl
-Onzéo,Onzeo.fr
+ONTV HD,ONTVHD.pl
 ORF 1,ORF1.at
 ORF 2,ORF2.at
-Outdoor Channel HD,OutdoorChannelHD.us
+Odisea,Odisea.es
+Oireachtas TV,OireachtasTV.ie
+Onda Algeciras Televisión,OndaAlgecirasTelevision.es
+One,One.de
+Onzéo,Onzeo.fr
+Orizont TV,OrizontTV.ro
 Outdoor Channel,OutdoorChannel.us
+Outdoor Channel HD,OutdoorChannelHD.us
+PBS America,PBSAmerica.us
+PBS America +1,PBSAmericaPlus1.us
+PROART HD,PROARTHD.pl
 Paramount Channel France,ParamountChannelFrance.us
 Paramount Channel HD Polska,ParamountChannelHDPolska.us
 Paramount Channel Russia,ParamountChannelRussia.us
@@ -874,8 +978,8 @@ Paramount Network Italia,ParamountNetworkItalia.us
 Paramount Network UK,ParamountNetworkUK.us
 Paris Première,ParisPremier.fr
 Partidazo,Partidazo.es
-PBS America +1,PBSAmericaPlus1.us
-PBS America,PBSAmerica.us
+Party Mix,PartyMix.ro
+Party Mix HD,PartyMixHD.ro
 Pesca,Pesca.it
 Phoenix,Phoenix.de
 Pick UK,PickUK.uk
@@ -883,9 +987,9 @@ Pink TV,PinkTV.fr
 Piwi+,PiwiPlus.fr
 Planete+ HD Polska,PlanetePlusHDPolska.fr
 Planete+ Polska,PlanetePlusPolska.fr
+Planète+,PlanetePlus.fr
 Planète+ Aventure Experience,PlanetePlusAventureExperience.fr
 Planète+ Crime Investigation,PlanetePlusCrimeInvestigation.fr
-Planète+,PlanetePlus.fr
 Play4,Play4.be
 Play5,Play5.be
 Playboy TV Europe,PlayboyTVEurope.us
@@ -893,112 +997,93 @@ Plug RTL,PlugRTL.be
 Polar+,PolarPlus.fr
 Polo TV,PoloTV.pl
 Polonia 1,Polonia1.pl
+Polsat,Polsat.pl
 Polsat 1,Polsat1.pl
-Polsat 2 HD,Polsat2HD.pl
 Polsat 2,Polsat2.pl
-Polsat Café HD,PolsatCafeHD.pl
+Polsat 2 HD,Polsat2HD.pl
 Polsat Café,PolsatCafe.pl
-Polsat Doku HD,PolsatDokuHD.pl
+Polsat Café HD,PolsatCafeHD.pl
 Polsat Doku,PolsatDoku.pl
-Polsat Film HD,PolsatFilmHD.pl
+Polsat Doku HD,PolsatDokuHD.pl
 Polsat Film,PolsatFilm.pl
-Polsat Games HD,PolsatGamesHD.pl
+Polsat Film HD,PolsatFilmHD.pl
 Polsat Games,PolsatGames.pl
+Polsat Games HD,PolsatGamesHD.pl
 Polsat HD,PolsatHD.pl
 Polsat JimJam,PolsatJimJam.pl
-Polsat Music HD,PolsatMusicHD.pl
 Polsat Music,PolsatMusic.pl
-Polsat News 2 HD,PolsatNews2HD.pl
-Polsat News 2,PolsatNews2.pl
-Polsat News HD,PolsatNewsHD.pl
+Polsat Music HD,PolsatMusicHD.pl
 Polsat News,PolsatNews.pl
-Polsat Play HD,PolsatPlayHD.pl
+Polsat News 2,PolsatNews2.pl
+Polsat News 2 HD,PolsatNews2HD.pl
+Polsat News HD,PolsatNewsHD.pl
 Polsat Play,PolsatPlay.pl
-Polsat Rodzina HD,PolsatRodzinaHD.pl
+Polsat Play HD,PolsatPlayHD.pl
 Polsat Rodzina,PolsatRodzina.pl
+Polsat Rodzina HD,PolsatRodzinaHD.pl
 Polsat Seriale,PolsatSeriale.pl
-Polsat Sport Extra HD,PolsatSportExtraHD.pl
+Polsat Sport,PolsatSport.pl
 Polsat Sport Extra,PolsatSportExtra.pl
+Polsat Sport Extra HD,PolsatSportExtraHD.pl
 Polsat Sport Fight,PolsatSportFight.pl
 Polsat Sport HD,PolsatSportHD.pl
-Polsat Sport News HD,PolsatSportNewsHD.pl
 Polsat Sport News,PolsatSportNews.pl
+Polsat Sport News HD,PolsatSportNewsHD.pl
 Polsat Sport Premium 1,PolsatSportPremium1.pl
 Polsat Sport Premium 2,PolsatSportPremium2.pl
 Polsat Sport Premium 3,PolsatSportPremium3.pl
 Polsat Sport Premium 4,PolsatSportPremium4.pl
 Polsat Sport Premium 5,PolsatSportPremium5.pl
 Polsat Sport Premium 6,PolsatSportPremium6.pl
-Polsat Sport,PolsatSport.pl
 Polsat Viasat Explore HD,PolsatViasatExploreHD.se
 Polsat Viasat History HD,PolsatViasatHistoryHD.se
 Polsat Viasat Nature HD,PolsatViasatNatureHD.se
-Polsat,Polsat.pl
 Polskie Radio Program 1,PolskieRadioProgram1.pl
 Polskie Radio Program 2,PolskieRadioProgram2.pl
 Pop,Pop.uk
 Popular TV Región de Murcia,PopularTVRegiondeMurcia.es
-Power TV HD,PowerTVHD.pl
 Power TV,PowerTV.pl
+Power TV HD,PowerTVHD.pl
 Premium Action,PremiumAction.it
-Premium Cinema 1 +24,PremiumCinema1Plus24.it
 Premium Cinema 1,PremiumCinema1.it
+Premium Cinema 1 +24,PremiumCinema1Plus24.it
 Premium Cinema 2,PremiumCinema2.it
 Premium Cinema 3,PremiumCinema3.it
 Premium Crime,PremiumCrime.it
 Premium Stories,PremiumStories.it
+Prima TV,PrimaTV.ro
+Prima TV HD,PrimaTVHD.ro
+Private TV,PrivateTV.nl
 Private TV HD,PrivateTVHD.nl
+Pro 2,Pro2.ro
+Pro 2 HD,Pro2HD.ro
+Pro Cinema HD,ProCinemaHD.ro
+Pro Gold HD,ProGoldHD.ro
+Pro TV,ProTV.ro
+Pro TV HD,ProTVHD.ro
 Pro TV Internacional,ProTVInternacional.ro
-PROART HD,PROARTHD.pl
+Pro X,ProX.ro
+Pro X HD,ProXHD.ro
 ProSieben Deutschland,ProSiebenDeutschland.de
+Profit.ro,Profitro.ro
 Proximus 11,Proximus11.be
-Puls 2 HD,Puls2HD.pl
+Publika TV,PublikaTV.md
 Puls 2,Puls2.pl
+Puls 2 HD,Puls2HD.pl
 Q Polska HD,QPolskaHD.pl
-Quest Red UK +1,QuestRedUKPlus1.us
-Quest Red UK,QuestRedUK.us
-Quest UK +1,QuestUKPlus1.us
-Quest UK,QuestUK.us
 QVC Beauty,QVCBeauty.us
 QVC Deutschland,QVCDeutschland.us
 QVC Italia,QVCItalia.us
 QVC Style,QVCStyle.us
 QVC UK,QVCUK.us
+Quest Red UK,QuestRedUK.us
+Quest Red UK +1,QuestRedUKPlus1.us
+Quest UK,QuestUK.us
+Quest UK +1,QuestUKPlus1.us
 R1,R1.ru
-Racing TV,RacingTV.uk
 RACING.COM,RACINGCOM.au
-Radio Italia TV,RadioItaliaTV.it
-Radio Monte Carlo,RadioMonteCarlo.it
-Radiofreccia,Radiofreccia.it
-Radionorba TV,RadionorbaTV.it
-Radyo Viva,RadyoViva.tr
-Rai 1,Rai1.it
-Rai 2,Rai2.it
-Rai 3,Rai3.it
-Rai 4,Rai4.it
-Rai 5,Rai5.it
-Rai Gulp,RaiGulp.it
-Rai Movie,RaiMovie.it
-Rai News 24,RaiNews24.it
-Rai Premium,RaiPremium.it
-Rai Sport,RaiSport.it
-Rai Storia,RaiStoria.it
-Rai Yoyo,RaiYoyo.it
 RBB Berlin,RBBBerlin.de
-Real Madrid TV Español,RealMadridTVEspanol.es
-Real Time Italia,RealTimeItalia.us
-Reality Kings TV,RealityKingsTV.us
-Really UK,ReallyUK.uk
-Record TV Europa,RecordTVEuropa.br
-Record TV Europa,RecordTVEuropa.pt
-Red Carpet TV HD,RedCarpetTVHD.pl
-Red Carpet TV,RedCarpetTV.pl
-Redlight HD,RedlightHD.nl
-Redlight,Redlight.nl
-Rete 4,Rete4.it
 RFM TV,RFMTV.fr
-Rhein-Main TV,RheinMainTV.de
-Rhein-Neckar Fernsehen,RheinNeckarFernsehen.de
 RMC Découverte,RMCDecouverte.fr
 RMC Sport 1,RMCSport1.fr
 RMC Sport 2,RMCSport2.fr
@@ -1020,25 +1105,26 @@ RMC Sport Live 7,RMCSportLive7.fr
 RMC Sport Live 8,RMCSportLive8.fr
 RMC Sport Live 9,RMCSportLive9.fr
 RMC Story,RMCStory.fr
-Roma TV,RomaTV.it
-Romance TV HD Polska,RomanceTVHDPolska.de
-Romance TV Polska,RomanceTVPolska.de
-RT Documentary HD,RTDocumentaryHD.ru
+RT,RT.ru
 RT Documentary,RTDocumentary.ru
+RT Documentary HD,RTDocumentaryHD.ru
 RT English,RTEnglish.ru
 RT Español,RTEspanol.ru
 RT France,RTFrance.ru
 RT HD,RTHD.ru
 RT UK,RTUK.ru
-RT,RT.ru
 RTG International,RTGInternational.ru
 RTL 102.5,RTL1025.it
 RTL 9,RTL9.lu
 RTL Deutschland,RTLDeutschland.de
+RTL Gold,RTLGold.de
 RTL HD Deutschland,RTLHDDeutschland.de
+RTL II,RTLII.de
+RTL Klub HD,RTLKlubHD.de
 RTL TVI,RTLTVI.be
 RTL Télévision,RTLTelevision.lu
 RTL Zwei,RTLZwei.de
+RTL+,RTLPlus.de
 RTP Internacional,RTPInternacional.pt
 RTS 1,RTS1.ch
 RTS 2,RTS2.ch
@@ -1047,55 +1133,99 @@ RTS Un,RTSUn.ch
 RTÉ News,RTENews.ie
 RTД на Русском,RTDnaRusskom.ru
 RU TV,RUTV.ru
+Racing TV,RacingTV.uk
+Radio Italia TV,RadioItaliaTV.it
+Radio Monte Carlo,RadioMonteCarlo.it
+Radiofreccia,Radiofreccia.it
+Radionorba TV,RadionorbaTV.it
+Radyo Viva,RadyoViva.tr
+Rai 1,Rai1.it
+Rai 2,Rai2.it
+Rai 3,Rai3.it
+Rai 4,Rai4.it
+Rai 5,Rai5.it
+Rai Gulp,RaiGulp.it
+Rai Movie,RaiMovie.it
+Rai News 24,RaiNews24.it
+Rai Premium,RaiPremium.it
+Rai Sport,RaiSport.it
+Rai Storia,RaiStoria.it
+Rai Yoyo,RaiYoyo.it
+Real Madrid TV Español,RealMadridTVEspanol.es
+Real Time Italia,RealTimeItalia.us
+Realitatea Plus,RealitateaPlus.ro
+Reality Kings TV,RealityKingsTV.us
+Really UK,ReallyUK.uk
+Record TV Europa,RecordTVEuropa.br
+Record TV Europa,RecordTVEuropa.pt
+Red Carpet TV,RedCarpetTV.pl
+Red Carpet TV HD,RedCarpetTVHD.pl
+Redlight,Redlight.nl
+Redlight HD,RedlightHD.nl
+Rete 4,Rete4.it
+Rhein-Main TV,RheinMainTV.de
+Rhein-Neckar Fernsehen,RheinNeckarFernsehen.de
+Rock TV,RockTV.ro
+Rock TV HD,RockTVHD.ro
+Roma TV,RomaTV.it
+Romance TV HD Polska,RomanceTVHDPolska.de
+Romance TV Polska,RomanceTVPolska.de
+România TV,RomaniaTV.ro
 Russian Extreme Ultra HD,RussianExtremeUltra.ru
-Russian Travel Guide HD,RussianTravelGuideHD.ru
 Russian Travel Guide,RussianTravelGuide.ru
-San Marino RTV,SanMarinoRTV.sm
-Sangat Television,SangatTelevision.uk
+Russian Travel Guide HD,RussianTravelGuideHD.ru
 SAT.1 Deutschland,SAT1Deutschland.de
 SBN International,SBNInternational.us
+SHANT Premium,SHANTPremium.am
+SONGTV Russia,SONGTVRussia.ru
+SRF 1,SRF1.ch
+SRF Zwei,SRFZwei.ch
+SWR,SWR.de
+SWR Fernsehen,SWRFernsehen.de
+San Marino RTV,SanMarinoRTV.sm
+Sangat Television,SangatTelevision.uk
+Sat. 1 Deutschland,Sat1Deutschland.de
 Sci Fi HD Polska,SciFiHDPolska.us
 Sci Fi Polska,SciFiPolska.us
 Science & Vie TV,ScienceVieTV.fr
 Seasons,Seasons.fr
 Setanta Sports 2 Eurasia,SetantaSports2Eurasia.ie
 Setanta Sports Eurasia,SetantaSportsEurasia.ie
-SHANT Premium,SHANTPremium.am
 Sheffield Live TV,SheffieldLiveTV.uk
 Shopping Quarter,ShoppingQuarter.uk
 Shot TV,ShotTV.ru
 Show Radyo,ShowRadyo.tr
 Show TV,ShowTV.tr
 Sixx Deutschland,SixxDeutschland.de
-Sky Arte HD,SkyArte.it
 Sky Arte,SkyArte.it
+Sky Arte HD,SkyArte.it
 Sky Arts,SkyArts.uk
-Sky Atlantic +1,SkyAtlanticPlus1.it
 Sky Atlantic,SkyAtlantic.it
+Sky Atlantic +1,SkyAtlanticPlus1.it
+Sky Cinema,SkyCinema.de
 Sky Cinema +24,SkyCinemaPlus24.de
-Sky Cinema Action,SkyCinemaAction.de
 Sky Cinema Action,SkyCinemaAction.it
+Sky Cinema Action,SkyCinemaAction.de
 Sky Cinema Bourne,SkyCinemaBourne.it
-Sky Cinema Comedy,SkyCinemaComedy.de
 Sky Cinema Comedy,SkyCinemaComedy.it
+Sky Cinema Comedy,SkyCinemaComedy.de
 Sky Cinema Drama,SkyCinemaDrama.it
-Sky Cinema Due +24,SkyCinemaDuePlus24.it
 Sky Cinema Due,SkyCinemaDue.it
+Sky Cinema Due +24,SkyCinemaDuePlus24.it
 Sky Cinema Family,SkyCinemaFamily.it
 Sky Cinema Hits,SkyCinemaHits.de
 Sky Cinema Nostalgie,SkyCinemaNostalgie.de
 Sky Cinema Romance,SkyCinemaRomance.it
 Sky Cinema Select,SkyCinemaSelect.uk
 Sky Cinema Suspense,SkyCinemaSuspense.it
-Sky Cinema Uno +24,SkyCinemaUnoPlus24.it
 Sky Cinema Uno,SkyCinemaUno.it
-Sky Cinema,SkyCinema.de
+Sky Cinema Uno +24,SkyCinemaUnoPlus24.it
 Sky Fußball Bundesliga,SkyFussballBundesliga.de
 Sky Krimi,SkyKrimi.de
 Sky Meteo 24,SkyMeteo24.it
+Sky News,SkyNews.uk
 Sky News Arabia,SkyNewsArabia.uk
 Sky News International,SkyNewsInternational.uk
-Sky News,SkyNews.uk
 Sky One,SkyOne.uk
 Sky Primafila 1,SkyPrimafila1.it
 Sky Primafila 10,SkyPrimafila10.it
@@ -1126,7 +1256,7 @@ Sky Sport (258),SkySport258.it
 Sky Sport 1,SkySport1.de
 Sky Sport 2,SkySport2.de
 Sky Sport 24,SkySport24.it
-Sky Sport 36 Americas Cup,SkySport36AmericasCup.it
+Sky Sport 36 America's Cup,SkySport36AmericasCup.it
 Sky Sport Arena,SkySportArena.it
 Sky Sport Austria,SkySportAustria.de
 Sky Sport F1,SkySportF1.it
@@ -1137,141 +1267,99 @@ Sky Sport NBA,SkySportNBA.it
 Sky Sport Serie A,SkySportSerieA.it
 Sky Sport Uno,SkySportUno.it
 Sky TG24,SkyTG24.it
-Sky Uno +1,SkyUnoPlus1.it
 Sky Uno,SkyUno.it
+Sky Uno +1,SkyUnoPlus1.it
 Slow Türk,SlowTurk.tr
 Smithsonian Channel UK,SmithsonianChannelUK.us
 Sochi Live HD,SochiLiveHD.ru
 Sol Música,SolMusica.es
 Somos,Somos.es
-SONGTV Russia,SONGTVRussia.ru
 SonLife Network EU,SonLifeNetworkEU.us
 Sony Channel Russia,SonyChannelRussia.us
 Sony Channel UK,SonyChannelUK.us
+Sony Movies,SonyMovies.us
 Sony Movies +1,SonyMoviesPlus1.us
 Sony Movies Action,SonyMoviesAction.us
 Sony Movies Classic,SonyMoviesClassic.us
-Sony Movies,SonyMovies.us
 Sony Sci-Fi Russia,SonySciFiRussia.us
 Sony Turbo Russia,SonyTurboRussia.us
+Sorozat+,SorozatPlus.hu
+Speranta TV,SperantaTV.us
 Spiegel Geschichte,SpiegelGeschichte.de
 Spike Italia,SpikeItalia.us
 Spike Россия,SpikeRossiya.us
 Sport 1,Sport1.de
+Sport Extra,SportExtra.ro
+Sport Extra HD,SportExtraHD.ro
 Sport Klub HD Polska,SportKlubHDPolska.hu
 Sport Klub Polska,SportKlubPolska.hu
 Spotlight TV,SpotlightTV.uk
 Spreekanal,Spreekanal.de
-SRF 1,SRF1.ch
-SRF Zwei,SRFZwei.ch
 Star TV,StarTV.tr
-Stars.TV HD,StarsTVHD.pl
 Stars.TV,StarsTV.pl
-Stingray Classica HD,StingrayClassicaHD.ca
-Stingray Classica,StingrayClassica.ca
+Stars.TV HD,StarsTVHD.pl
 Stingray CMusic,StingrayCMusic.ca
-Stingray Djazz HD,StingrayDjazzHD.ca
+Stingray Classica,StingrayClassica.ca
+Stingray Classica HD,StingrayClassicaHD.ca
 Stingray Djazz,StingrayDjazz.ca
+Stingray Djazz HD,StingrayDjazzHD.ca
 Stingray Festival 4K,StingrayFestival4K.ca
-Stingray iConcerts HD,StingrayiConcertsHD.ca
-Stingray iConcerts,StingrayiConcerts.ca
 Stingray Juicebox HD,StingrayJuiceboxHD.ca
 Stingray Loud HD,StingrayLoudHD.ca
 Stingray Retro,StingrayRetro.ca
-Stopklatka HD,StopklatkaHD.pl
+Stingray iConcerts,StingrayiConcerts.ca
+Stingray iConcerts HD,StingrayiConcertsHD.ca
 Stopklatka,Stopklatka.pl
+Stopklatka HD,StopklatkaHD.pl
+Story4,Story4.hu
 Sundance TV España,SundanceTVEspana.us
 Sundance TV Europe,SundanceTVEurope.us
 Sundance TV HD,SundanceTVHD.us
-Super Polsat HD,SuperPolsatHD.pl
 Super Polsat,SuperPolsat.pl
+Super Polsat HD,SuperPolsatHD.pl
 Super RTL Deutschland,SuperRTLDeutschland.de
 Super!,Super.it
 Super3,Super3.es
-Superstacja HD,SuperstacjaHD.pl
-Superstacja,Superstacja.pl
 SuperTennis,SuperTennis.it
-SWR Fernsehen,SWRFernsehen.de
-SWR,SWR.de
+Superstacja,Superstacja.pl
+Superstacja HD,SuperstacjaHD.pl
 Syfy Deutschland,SyfyDeutschland.us
 Syfy España,SyfyEspana.us
 Syfy France,SyfyFrance.us
 Série Club,SerieClub.fr
-Talking Pictures TV,TalkingPicturesTV.uk
-Taraftar 2,Taraftar2.tr
-Taraftar,Taraftar.tr
-Tarotéame,Taroteame.es
-TBN Polska HD,TBNPolskaHD.us
 TBN Polska,TBNPolska.us
+TBN Polska HD,TBNPolskaHD.us
 TBN UK,TBNUK.us
 TCC,TCC.uk
 TCM Cinéma,TCMCinema.us
-TCM España +1,TCMEspanaPlus1.us
 TCM España,TCMEspana.us
+TCM España +1,TCMEspanaPlus1.us
 TDK,TDK.ru
-Tele 5 HD,Tele5HD.pl
-Tele 5,Tele5.de
-Tele 5,Tele5.pl
-Telecinco,Telecinco.es
-Teledeporte,Teledeporte.es
-TeleElx,TeleElx.es
-Telemadrid,Telemadrid.es
-teleSUR,teleSUR.ve
-teleTOON+ HD Polska,teleTOONPlusHDPolska.fr
-teleTOON+ Polska,teleTOONPlusPolska.fr
-TelevisiónCanaria,TelevisionCanaria.es
-Televize RELAX,TelevizeRELAX.cz
-Telewizja 13,Telewizja13.pl
-Telewizja Pomerania,TelewizjaPomerania.pl
 TEN TV,TENTV.es
-teve2,teve2.tr
 TF 1,TF1.fr
-TF1 Séries Films,TF1SeriesFilms.fr
 TF1,TF1.fr
+TF1 Séries Films,TF1SeriesFilms.fr
 TFX,TFX.fr
 TG Norba 24,TGNorba24.it
 TG4,TG4.ie
 TGCOM24,TGCOM24.it
 TGRT Haber,TGRTHaber.tr
-Thats Humber,ThatsHumber.uk
-The Box UK,TheBoxUK.uk
-Tiji Russia,TijiRussia.fr
-Tiji,Tiji.fr
-Tiny Pop,TinyPop.uk
-Tipik,Tipik.be
 TJC,TJC.uk
 TJK TV,TJKTV.tr
 TLC HD Polska,TLCHDPolska.us
 TLC Polska,TLCPolska.us
 TLC Russia,TLCRussia.us
+TLC Rômania,TLCRomania.us
 TLC Türkiye,TLCTurkiye.us
 TMC,TMC.mc
 TNT España,TNTEspana.us
 TNT HD Polska,TNTHDPolska.us
+TNT HD Romania,TNTHDRomania.us
 TNT Polska,TNTPolska.us
-Together TV +1,TogetherTVPlus1.uk
-Together TV,TogetherTV.uk
-Toonami France,ToonamiFrance.us
-Top Crime,TopCrime.it
-Top Kids HD,TopKidsHD.pl
-Top Kids Jr HD,TopKidsJrHD.pl
-Top Kids,TopKids.pl
-Torino Channel,TorinoChannel.it
-Toute lHistoire,ToutelHistoire.fr
+TNT Romania,TNTRomania.us
 TOYA,TOYA.pl
 TPA,TPA.es
-Trace Africa,TraceAfrica.fr
-Trace Sport Stars,TraceSportStars.fr
-Trace Tropical,TraceTropical.fr
-Trace Urban,TraceUrban.fr
-Travel Channel HD Polska,TravelChannelHDPolska.us
-Travel Channel Polska,TravelChannelPolska.us
-Travel Channel Europe,TravelChannelEurope.us
-Travel+Adventure,TravelPlusAdventure.us
-Travelxp 4K Europe,Travelxp4KEurope.in
-Travelxp HD Europe,TravelxpHDEurope.in
 TRECE TV,TRECETV.es
-Trek,Trek.fr
 TRM h24,TRMh24.it
 TRT 1,TRT1.tr
 TRT 2,TRT2.tr
@@ -1285,70 +1373,74 @@ TRT Spor,TRTSpor.tr
 TRT Türk,TRTTurk.tr
 TRT World,TRTWorld.tr
 TRT Çocuk,TRTCocuk.tr
-TTV HD,TTVHD.pl
 TTV,TTV.pl
+TTV HD,TTVHD.pl
 TV 8,TV8.tr
-TV ASTA HD,TVASTAHD.pl
 TV ASTA,TVASTA.pl
-TV Breizh,TVBreizh.fr
+TV ASTA HD,TVASTAHD.pl
 TV BRICS Russian,TVBRICSRussian.ru
+TV Breizh,TVBreizh.fr
 TV Chile,TVChile.cl
 TV Colombia,TVColombia.co
 TV Dami Skarżysko,TVDamiSkarzysko.pl
 TV Mediterráneo,TVMediterraneo.es
-TV Okazje HD,TVOkazjeHD.pl
 TV Okazje,TVOkazje.pl
-TV Puls HD,TVPulsHD.pl
+TV Okazje HD,TVOkazjeHD.pl
+TV Paprika Romania,TVPaprikaRomania.hu
 TV Puls,TVPuls.pl
+TV Puls HD,TVPulsHD.pl
 TV Regio,TVRegio.pl
-TV Regionalna Lubin,TVRegionalnaLubin.pl
 TV Regionalna,TVRegionalna.pl
-TV Republika HD,TVRepublikaHD.pl
+TV Regionalna Lubin,TVRegionalnaLubin.pl
 TV Republika,TVRepublika.pl
+TV Republika HD,TVRepublikaHD.pl
+TV SudEst National,TVSudEstNational.ro
+TV SudEst Regional,TVSudEstRegional.ro
 TV Tours,TVTours.fr
 TV Trwam,TVTrwam.pl
 TV XXI,TVXXI.ru
 TV Губерния,TVGuberniya.ru
-tv.berlin,tvberlin.de
+TV1000,TV1000.se
 TV1000 Action,TV1000Action.se
 TV1000 World Kino,TV1000WorldKino.se
 TV1000 Русское кино,TV1000Russkoekino.se
-TV1000,TV1000.se
 TV2000,TV2000.va
 TV3,TV3.es
 TV3CAT,TV3CAT.es
-TV4 HD,TV4HD.pl
+TV4,TV4.hu
 TV4,TV4.pl
+TV4 HD,TV4HD.pl
 TV5Monde,TV5Monde.fr
+TV5Monde Europa,TV5MondeEuropa.fr
 TV5Monde Europe,TV5MondeEurope.fr
-TV6 HD,TV6HD.pl
 TV6,TV6.pl
+TV6 HD,TV6HD.pl
 TV7 Bordeaux,TV7Bordeaux.fr
 TV8,TV8.it
 TVE Internacional Asia,TVEInternacionalAsia.es
 TVE Internacional Europa,TVEInternacionalEuropa.es
 TVG Europa,TVGEuropa.es
-tvG2,tvG2.es
 TVMChannel,TVMChannel.ru
-TVN 7 HD,TVN7HD.pl
-TVN 7,TVN7.pl
-TVN Fabuła HD,TVNFabulaHD.pl
-TVN Fabuła,TVNFabula.pl
-TVN HD,TVNHD.pl
-TVN Style HD,TVNStyleHD.pl
-TVN Style,TVNStyle.pl
-TVN Turbo HD,TVNTurboHD.pl
-TVN Turbo,TVNTurbo.pl
 TVN,TVN.pa
-TVN24 BiS HD,TVN24BiSHD.pl
-TVN24 BiS,TVN24BiS.pl
-TVN24 HD,TVN24HD.pl
+TVN 7,TVN7.pl
+TVN 7 HD,TVN7HD.pl
+TVN Fabuła,TVNFabula.pl
+TVN Fabuła HD,TVNFabulaHD.pl
+TVN HD,TVNHD.pl
+TVN Style,TVNStyle.pl
+TVN Style HD,TVNStyleHD.pl
+TVN Turbo,TVNTurbo.pl
+TVN Turbo HD,TVNTurboHD.pl
 TVN24,TVN24.pl
+TVN24 BiS,TVN24BiS.pl
+TVN24 BiS HD,TVN24BiSHD.pl
+TVN24 HD,TVN24HD.pl
 TVNET,TVNET.tr
-TVP 1 HD,TVP1HD.pl
 TVP 1,TVP1.pl
-TVP 2 HD,TVP2HD.pl
+TVP 1 HD,TVP1HD.pl
 TVP 2,TVP2.pl
+TVP 2 HD,TVP2HD.pl
+TVP 3,TVP3.pl
 TVP 3 Białystok,TVP3Bialystok.pl
 TVP 3 Bydgoszcz,TVP3Bydgoszcz.pl
 TVP 3 Gdańsk,TVP3Gdansk.pl
@@ -1365,86 +1457,219 @@ TVP 3 Szczecin,TVP3Szczecin.pl
 TVP 3 Warszawa,TVP3Warszawa.pl
 TVP 3 Wrocław,TVP3Wroclaw.pl
 TVP 3 Łódź,TVP3Lodz.pl
-TVP 3,TVP3.pl
 TVP ABC,TVPABC.pl
 TVP HD,TVPHD.pl
 TVP Historia,TVPHistoria.pl
-TVP Info HD,TVPInfoHD.pl
 TVP Info,TVPInfo.pl
-TVP Kultura HD,TVPKulturaHD.pl
+TVP Info HD,TVPInfoHD.pl
 TVP Kultura,TVPKultura.pl
+TVP Kultura HD,TVPKulturaHD.pl
 TVP Polonia,TVPPolonia.pl
 TVP Rozrywka,TVPRozrywka.pl
 TVP Seriale,TVPSeriale.pl
-TVP Sport HD,TVPSportHD.pl
 TVP Sport,TVPSport.pl
+TVP Sport HD,TVPSportHD.pl
 TVR,TVR.fr
-TVS HD,TVSHD.pl
+TVR 1,TVR1.ro
+TVR 1 HD,TVR1HD.ro
+TVR 2,TVR2.ro
+TVR 2 HD,TVR2HD.ro
+TVR 3,TVR3.ro
+TVR Cluj,TVRCluj.ro
+TVR Craiova,TVRCraiova.ro
+TVR Iași,TVRIasi.ro
+TVR International,TVRInternational.ro
+TVR Moldova,TVRMoldova.ro
+TVR Timișoara,TVRTimisoara.ro
+TVR Târgu Mureș,TVRTarguMures.ro
 TVS,TVS.pl
+TVS HD,TVSHD.pl
 TVSUD Montpellier,TVSUDMontpellier.fr
 TVSUD Nimes,TVSUDNimes.fr
 TVT,TVT.pl
+Talking Pictures TV,TalkingPicturesTV.uk
+Taraf TV,TarafTV.ro
+Taraftar,Taraftar.tr
+Taraftar 2,Taraftar2.tr
+Tarotéame,Taroteame.es
+TeenNick România,TeenNickRomania.us
+Tele 5,Tele5.pl
+Tele 5,Tele5.de
+Tele 5 HD,Tele5HD.pl
+TeleElx,TeleElx.es
+Telecinco,Telecinco.es
+Teledeporte,Teledeporte.es
+Telekom Sport 1,TelekomSport1.ro
+Telekom Sport 1 HD,TelekomSport1HD.ro
+Telekom Sport 2,TelekomSport2.ro
+Telekom Sport 3,TelekomSport3.ro
+Telekom Sport 4,TelekomSport4.ro
+Telemadrid,Telemadrid.es
+TelevisiónCanaria,TelevisionCanaria.es
+Televize RELAX,TelevizeRELAX.cz
+Telewizja 13,Telewizja13.pl
+Telewizja Pomerania,TelewizjaPomerania.pl
+That's Humber,ThatsHumber.uk
+The Box UK,TheBoxUK.uk
+The Fishing & Hunting Channel,TheFishingHuntingChannel.hu
+The Fishing & Hunting Channel HD,TheFishingHuntingChannelHD.hu
+Tiji,Tiji.fr
+Tiji Russia,TijiRussia.fr
+Timeless Drama Channel,TimelessDramaChannel.nl
+Tiny Pop,TinyPop.uk
+Tipik,Tipik.be
+Together TV,TogetherTV.uk
+Together TV +1,TogetherTVPlus1.uk
+Toonami France,ToonamiFrance.us
+Top Crime,TopCrime.it
+Top Kids,TopKids.pl
+Top Kids HD,TopKidsHD.pl
+Top Kids Jr HD,TopKidsJrHD.pl
+Torino Channel,TorinoChannel.it
+Toute l'Histoire,ToutelHistoire.fr
+Trace Africa,TraceAfrica.fr
+Trace Caribbean,TraceCaribbean.fr
+Trace Sport Stars,TraceSportStars.fr
+Trace Sport Stars HD,TraceSportStarsHD.fr
+Trace Tropical,TraceTropical.fr
+Trace Urban,TraceUrban.fr
+Trace Urban HD,TraceUrbanHD.fr
+Travel Channel Europe,TravelChannelEurope.us
+Travel Channel HD Europe,TravelChannelHDEurope.us
+Travel Channel HD Polska,TravelChannelHDPolska.us
+Travel Channel Polska,TravelChannelPolska.us
+Travel Mix,TravelMix.ro
+Travel+Adventure,TravelPlusAdventure.us
+Travelxp 4K Europe,Travelxp4KEurope.in
+Travelxp HD Europe,TravelxpHDEurope.in
+Trek,Trek.fr
+Trinitas TV,TrinitasTV.ro
 Twoja Telewizja Morska,TwojaTelewizjaMorska.pl
 Twoja.TV,TwojaTV.pl
-téléGrenoble Isère,teleGrenobleIsere.fr
-Télénantes,Telenantes.fr
 TéléToon+,TeleToonPlus.fr
+Télénantes,Telenantes.fr
 Téva,Teva.fr
 UATV,UATV.ua
+UTV,UTV.ro
+UTV HD,UTVHD.ro
 Ultra 4K,Ultra4K.de
 Univer TV,UniverTV.ru
 Ushuaïa TV,UshuaiaTV.fr
-Ve Plus TV,VePlusTV.ve
 VH1 Classic,VH1Classic.us
 VH1 Europe,VH1Europe.us
 VH1 Italia,VH1Italia.us
 VH1 Polska,VH1Polska.us
-Viajar,Viajar.es
-Viasat Explore Russia,ViasatExploreRussia.se
-Viasat History Russia,ViasatHistoryRussia.se
-Viasat Nature Russia,ViasatNatureRussia.se
-Viasat Sport East,ViasatSportEast.se
+VOOsport World 1,VOOsportWorld1.be
+VOOsport World 2,VOOsportWorld2.be
+VTM,VTM.be
+VTM 2,VTM2.be
+VTM 3,VTM3.be
+VTV,VTV.ro
+Valea Prahovei TV,ValeaPrahoveiTV.ro
+Ve Plus TV,VePlusTV.ve
 ViP Comedy Russia,ViPComedyRussia.se
 ViP Megahit Russia,ViPMegahitRussia.se
 ViP Premiere Russia,ViPPremiereRussia.se
+Viajar,Viajar.es
+Viasat Explore Romania,ViasatExploreRomania.se
+Viasat Explore Russia,ViasatExploreRussia.se
+Viasat History Romania,ViasatHistoryRomania.se
+Viasat History Russia,ViasatHistoryRussia.se
+Viasat Nature Romania,ViasatNatureRomania.se
+Viasat Nature Russia,ViasatNatureRussia.se
+Viasat Sport East,ViasatSportEast.se
 Viral TV,ViralTV.es
 Vivid Red HD,VividRedHD.us
 Vivid Touch,VividTouch.us
-viàMoselleTV,viaMoselleTV.fr
-VOOsport World 1,VOOsportWorld1.be
-VOOsport World 2,VOOsportWorld2.be
 Vosges Télévision,VosgesTelevision.fr
 Vox Deutschland,VoxDeutschland.de
 Vox Music TV,VoxMusicTV.pl
-VTM 2,VTM2.be
-VTM 3,VTM3.be
-VTM,VTM.be
 W9,W9.fr
-Warner TV France,WarnerTVFrance.us
-Water Planet HD,WaterPlanetHD.pl
-Water Planet,WaterPlanet.pl
 WDR,WDR.de
+WTK,WTK.pl
+Warner TV France,WarnerTVFrance.us
+Water Planet,WaterPlanet.pl
+Water Planet HD,WaterPlanetHD.pl
 Welt,Welt.de
-Wirtualna Polska HD,WirtualnaPolskaHD.pl
 Wirtualna Polska,WirtualnaPolska.pl
+Wirtualna Polska HD,WirtualnaPolskaHD.pl
 World Business Channel,WorldBusinessChannel.ru
 World Fashion Channel Russia,WorldFashionChannelRussia.ru
-wPolsce.pl HD,wPolsceplHD.pl
-wPolsce.pl,wPolscepl.pl
-WTK,WTK.pl
 Wéo,Weo.fr
 XTRM,XTRM.es
 XXL,XXL.fr
-Yesterday +1,YesterdayPlus1.uk
 Yesterday,Yesterday.uk
+Yesterday +1,YesterdayPlus1.uk
+ZDF,ZDF.de
 ZDF HD,ZDFHD.de
 ZDFinfo,ZDFinfo.de
-ZDF,ZDF.de
-Zee TV Russia,ZeeTVRussia.in
-Zoom TV HD,ZoomTVHD.pl
-Zoom TV,ZoomTV.pl
-Zooпарк,Zoopark.ru
+ZDFneo,ZDFneo.de
 ZTV,ZTV.es
+ZU TV,ZUTV.ro
+ZU TV HD,ZUTVHD.ro
+Zee TV Russia,ZeeTVRussia.in
+Zoom TV,ZoomTV.pl
+Zoom TV HD,ZoomTVHD.pl
+Zooпарк,Zoopark.ru
+beIN H&E,beINHE.qa
+beIN LaLiga,beINLaLiga.qa
+beIN SPORTS,beINSPORTS.qa
+beIN SPORTS 1,beINSPORTS1.qa
+beIN SPORTS 2,beINSPORTS2.qa
+beIN SPORTS 3,beINSPORTS3.qa
+beIN SPORTS en Español,beINSPORTSenEspanol.qa
+beIN İZ,beINIZ.qa
+beIn Box Office 1 Türkiye,beInBoxOffice1Turkiye.qa
+beIn Box Office 2,beInBoxOffice2.qa
+beIn Box Office 3,beInBoxOffice3.qa
+beIn Gurme,beInGurmqa.qa
+beIn Movies Action,beInMoviesAction.qa
+beIn Movies Action 2,beInMoviesAction2.qa
+beIn Movies Family,beInMoviesFamily.qa
+beIn Movies Premiere,beInMoviesPremiere.qa
+beIn Movies Premiere 2,beInMoviesPremiere2.qa
+beIn Movies Stars,beInMoviesStars.qa
+beIn Movies Turk,beInMoviesTurk.qa
+beIn Series Comedy,beInSeriesComedy.qa
+beIn Series Drama,beInSeriesDrama.qa
+beIn Series Sci-Fi,beInSeriesSciFi.qa
+beIn Series Vice,beInSeriesVice.qa
+beIn Sports 1,beInSports1.qa
+beIn Sports 2,beInSports2.qa
+beIn Sports 3,beInSports3.qa
+beIn Sports MAX 10,beInSportsMAX10.qa
+beIn Sports MAX 4,beInSportsMAX4.qa
+beIn Sports MAX 5,beInSportsMAX5.qa
+beIn Sports MAX 6,beInSportsMAX6.qa
+beIn Sports MAX 7,beInSportsMAX7.qa
+beIn Sports MAX 8,beInSportsMAX8.qa
+beIn Sports MAX 9,beInSportsMAX9.qa
+betevé,beteve.es
+dlaCiebie.tv,dlaCiebietv.pl
+ducktv,ducktv.sk
+ducktv HD,ducktvHD.sk
+hr-fernsehen,hrfernsehen.de
+i24 News English,i24NewsEnglish.il
+i24 News Français,i24NewsFrancais.il
+i24news,i24news.il
+iTVS,iTVS.pl
+laSexta,laSexta.es
+minikaGO,minikaGO.tr
+myZen.tv,myZen.tv
+münchen.tv,munchentv.de
+n-tv,ntv.de
+nSport+,nSportPlus.pl
+nSport+ HD,nSportPlusHD.pl
+teleSUR,teleSUR.ve
+teleTOON+ HD Polska,teleTOONPlusHDPolska.fr
+teleTOON+ Polska,teleTOONPlusPolska.fr
+teve2,teve2.tr
+tv.berlin,tvberlin.de
+tvG2,tvG2.es
+téléGrenoble Isère,teleGrenobleIsere.fr
+viàMoselleTV,viaMoselleTV.fr
+wPolsce.pl,wPolscepl.pl
+wPolsce.pl HD,wPolsceplHD.pl
 Één,Een.be
 Ülke TV,UlkeTV.tr
 ČT1,CT1.cz
@@ -1455,17 +1680,17 @@ ZTV,ZTV.es
 Архыз 24,Arhyz24.ru
 Астрахань 24,Astrahan24.ru
 Афонтово,Afontovo.ru
+БСТ,BST.ru
 Балашиха ТВ,BalashihaTV.ru
 Башкортостан 24,Bashkortostan24.ru
+БелРос,BelRos.ru
 Беларусь 24,Belarus24.by
 Беларусь-24,Belarus24.by
 Белгород 24,Belgorod24.ru
-БелРос,BelRos.ru
 Белсат TV,BelsatTV.pl
 Бобер,Bober.ru
 Бокс ТВ,BoksTV.ru
 Большая Азия,BolshayaAziya.ru
-БСТ,BST.ru
 В мире животных,Vmirezhivotnyh.ru
 Ветта 24,Vetta24.ru
 Вечерняя Москва,VechernyayaMoskva.ru
@@ -1488,8 +1713,8 @@ ZTV,ZTV.es
 Евразия,Evraziya.ru
 Еврокино,Evrokino.ru
 Евроновости,Evronovosti.ru
-Еда Премиум,EdaPremium.ru
 Еда,Eda.ru
+Еда Премиум,EdaPremium.ru
 Жар Птица,ZharPtica.ru
 Жара,Zhara.ru
 Живая планета,Zhivayaplaneta.ru
@@ -1504,18 +1729,19 @@ ZTV,ZTV.es
 Иллюзион +,IllyuzionPlus.ru
 Индийское кино,Indiyskoekino.ru
 История,Istoriya.ru
+КВН ТВ,KVNTV.ru
+КХЛ,KHL.ru
 Кавказ 24,Kavkaz24.ru
 Калейдоскоп ТВ,KaleydoskopTV.ru
 Канал Disney,KanalDisney.us
 Капитан Фантастика,KapitanFantastika.ru
 Карусель,Karusel.ru
-КВН ТВ,KVNTV.ru
 Кино ТВ,KinoTV.ru
+КиноПремиумHD,KinoPremiumHD.ru
 Кинокомедия,Kinokomediya.ru
 Киномикс,Kinomiks.ru
-Кинопоказ HD-1,KinopokazHD1.ru
 Кинопоказ,Kinopokaz.ru
-КиноПремиумHD,KinoPremiumHD.ru
+Кинопоказ HD-1,KinopokazHD1.ru
 Кинопремьера,Kinopremera.ru
 Киносвидание,Kinosvidanie.ru
 Киносемья,Kinosemya.ru
@@ -1533,13 +1759,17 @@ ZTV,ZTV.es
 Культура,Kultura.ru
 Курай,Kuray.ru
 Кухня ТВ,KuhnyaTV.ru
-КХЛ,KHL.ru
 ЛДПР ТВ,LDPRTV.ru
 ЛенТВ24,LenTV24.ru
 Липецкое время,Lipeckoevremya.ru
 Любимое Кино,LyubimoeKino.ru
 Любимое.ТВ,LyubimoeTV.ru
 Ля-минор,Lyaminor.ru
+МИР,MIR.ru
+МИР 24,MIR24.ru
+МТВ,MTV.ru
+МУЗ-ТВ,MUZTV.ru
+МУЛЬТ,MULT.ru
 Малыш,Malysh.ru
 Мама,Mama.ru
 Матур ТВ,MaturTV.ru
@@ -1551,28 +1781,29 @@ ZTV,ZTV.es
 Матч! Футбол 1,MatchFutbol1.ru
 Матч! Футбол 2,MatchFutbol2.ru
 Матч! Футбол 3,MatchFutbol3.ru
-МИР 24,MIR24.ru
 Мир Белогорья,MirBelogorya.ru
 Мир сериала,Mirseriala.ru
-МИР,MIR.ru
 Москва-24,Moskva24.ru
 Москва. Доверие,MoskvaDoverie.ru
 Моя Планета,MoyaPlaneta.ru
-МТВ,MTV.ru
 Мужское кино,Muzhskoekino.ru
 Мужской,Muzhskoy.ru
-МУЗ-ТВ,MUZTV.ru
 МузСоюз,MuzSoyuz.ru
 Музыка Первого,MuzykaPervogo.ru
-МУЛЬТ,MULT.ru
 Мультиландия,Multilandiya.ru
 Мультимания,Multimaniya.ru
+НСТ,NST.ru
+НТВ,NTV.ru
+НТВ Право,NTVPravo.ru
+НТВ Сериал,NTVSerial.ru
+НТВ Стиль,NTVStil.ru
+НТМ,NTM.ru
 Надежда,Nadezhda.ru
 Нано,Nano.ru
 Наука,Nauka.ru
 Наш Детектив,NashDetektiv.ru
-Наш дом,Nashdom.ru
 Наш Кинороман,NashKinoroman.ru
+Наш дом,Nashdom.ru
 Наша Сибирь,NashaSibir.ru
 Наше Новое Кино,NasheNovoeKino.ru
 Ника ТВ,NikaTV.ru
@@ -1581,27 +1812,21 @@ ZTV,ZTV.es
 Новый мир,Novyymir.ru
 Ностальгия,Nostalgiya.ru
 Ноябрьск 24,Noyabrsk24.ru
-НСТ,NST.ru
-НТВ Право,NTVPravo.ru
-НТВ Сериал,NTVSerial.ru
-НТВ Стиль,NTVStil.ru
-НТВ,NTV.ru
-НТМ,NTM.ru
 О!,O.ru
 О2ТВ,O2TV.ru
-Оружие,Oruzhie.ru
-Остросюжетное HD,OstrosyuzhetnoeHD.ru
 ОТВ 24,OTV24.ru
-Открытый мир,Otkrytyymir.ru
 ОТР,OTR.ru
 ОТС,OTS.ru
+Оружие,Oruzhie.ru
+Остросюжетное HD,OstrosyuzhetnoeHD.ru
+Открытый мир,Otkrytyymir.ru
 Охота и рыбалка,Ohotairybalka.ru
 Охотник и Рыболов International,OhotnikiRybolovInternational.ru
-Первый канал Евразия,PervyykanalEvraziya.ru
+Первый,Pervyykanal.ru
 Первый канал,Pervyykanal.ru
+Первый канал Евразия,PervyykanalEvraziya.ru
 Первый крымский,Pervyykrymskiy.ru
 Первый метео,Pervyymeteo.ru
-Первый,Pervyykanal.ru
 Пингвин Лоло,PingvinLolo.ru
 Победа,Pobeda.ru
 Поехали!,Poehali.ru
@@ -1611,32 +1836,36 @@ ZTV,ZTV.es
 Продвижение,Prodvizhenie.ru
 Просвещение,Prosveshchenie.ru
 Психология 21,Psihologiya21.ru
-Пятница! International,PyatnicaInternational.ru
 Пятница,Pyatnica.ru
+Пятница! International,PyatnicaInternational.ru
 Пятый канал,Pyatyykanal.ru
+РБК,RBK.ru
+РЕН ТВ,RENTV.ru
+РЖД ТВ,RZhDTV.ru
+РТВ - Любимое кино,RTVLyubimoekino.ru
+РТР-Планета,RTRPlaneta.ru
 Радость Моя,RadostMoya.ru
 РазТВ,RazTV.ru
 Ратник,Ratnik.ru
-РБК,RBK.ru
 Регион 29,Region29.ru
-РЕН ТВ,RENTV.ru
 Ретро ТВ,RetroTV.ru
-РЖД ТВ,RZhDTV.ru
 Родное кино,Rodnoekino.ru
-Россия 1 HD,Rossiya1HD.ru
 Россия 1,Rossiya1.ru
+Россия 1 HD,Rossiya1HD.ru
 Россия 24,Rossiya24.ru
-РТВ - Любимое кино,RTVLyubimoekino.ru
-РТР-Планета,RTRPlaneta.ru
-Русский бестселлер,Russkiybestseller.ru
 Русский Детектив,RusskiyDetektiv.ru
 Русский Иллюзион,RusskiyIllyuzion.ru
-Русский роман,Russkiyroman.ru
 Русский Север,RusskiySever.ru
 Русский Экстрим,RusskiyEkstrim.ru
+Русский бестселлер,Russkiybestseller.ru
+Русский роман,Russkiyroman.ru
 Рыболов,Rybolov.ru
 Рыжий,Ryzhiy.ru
 С1,S1.ru
+СТРК HD,STRKHD.ru
+СТС,STS.ru
+СТС International,STSInternational.ru
+СТС Love,STSLove.ru
 Санкт-Петербург,SanktPeterburg.ru
 Сарафан,Sarafan.ru
 Смайлик ТВ,SmaylikTV.ru
@@ -1646,29 +1875,25 @@ ZTV,ZTV.es
 Старт,Start.ru
 Страна FM,StranaFM.ru
 Страшное HD,StrashnoeHD.ru
-СТРК HD,STRKHD.ru
-СТС International,STSInternational.ru
-СТС Love,STSLove.ru
-СТС,STS.ru
 Сургут 24,Surgut24.ru
-Тайны Галактики,TaynyGalaktiki.ru
-Тамыр,Tamyr.ru
-Татарстан24,Tatarstan24.ru
 ТБН,TBN.ru
 ТВ Центр,TVCentr.ru
 ТВ-3,TV3.ru
 ТВТУР,TVTUR.ru
+ТНВ,TNV.ru
+ТНВ-Планета,TNVPlaneta.ru
+ТНТ,TNT.ru
+ТНТ International,TNTInternational.ru
+ТНТ Music,TNTMusic.ru
+ТНТ4,TNT4.ru
+Тайны Галактики,TaynyGalaktiki.ru
+Тамыр,Tamyr.ru
+Татарстан24,Tatarstan24.ru
 Театр,Teatr.ru
 Телеканал 86,Telekanal86.ru
 Телекафе,Telekafe.ru
 Телепутешествия,Teleputeshestviya.ru
 Техно 24,Tehno24.ru
-ТНВ,TNV.ru
-ТНВ-Планета,TNVPlaneta.ru
-ТНТ International,TNTInternational.ru
-ТНТ Music,TNTMusic.ru
-ТНТ,TNT.ru
-ТНТ4,TNT4.ru
 Тольятти 24,Tolyatti24.ru
 Тонус,Tonus.ru
 Точка ТВ,TochkaTV.ru
@@ -1681,8 +1906,8 @@ ZTV,ZTV.es
 Футбол,Futbol.ru
 Хузур ТВ,HuzurTV.ru
 Центральное телевидение,Centralnoetelevidenie.ru
-Че,Che.ru
 ЧП.Info,ChPInfo.ru
+Че,Che.ru
 Шансон TВ,ShansonTV.ru
 Эхо TV,EhoTV.ru
 Ю,Yu.ru
