@@ -13,6 +13,7 @@ To load a program guide, all you need to do is copy the link to one of the guide
   <tbody>
     <tr><td align="left">English</td><td align="left" nowrap>ontvtonight.com</td><td align="right">122</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/ontvtonight.com.guide.xml</code></td></tr>
     <tr><td align="left">French</td><td align="left" nowrap>programme-tv.net</td><td align="right">266</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/programme-tv.net.guide.xml</code></td></tr>
+    <tr><td align="left">Greek</td><td align="left" nowrap>cosmote.gr</td><td align="right">91</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/cosmote.gr.guide.xml</code></td></tr>
     <tr><td align="left">Italian</td><td align="left" nowrap>guidatv.sky.it</td><td align="right">178</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/guidatv.sky.it.guide.xml</code></td></tr>
     <tr><td align="left">Italian</td><td align="left" nowrap>mediaset.it</td><td align="right">16</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/mediaset.it.guide.xml</code></td></tr>
     <tr><td align="left">Polish</td><td align="left" nowrap>programtv.onet.pl</td><td align="right">581</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/programtv.onet.pl.guide.xml</code></td></tr>
