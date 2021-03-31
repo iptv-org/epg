@@ -1,6 +1,8 @@
 {
   "name": "epg",
-  "scripts": {},
+  "scripts": {
+    "update-codes": "node scripts/update-codes.js"
+  },
   "private": true,
   "author": "Arhey",
   "license": "MIT",
