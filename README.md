@@ -22,6 +22,7 @@ To load a program guide, all you need to do is copy the link to one of the guide
     <tr><td align="left">Russian</td><td align="left" nowrap><a href="https://tv.yandex.ru/">tv.yandex.ru</a></td><td align="right">469</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tv.yandex.ru.guide.xml</code></td></tr>
     <tr><td align="left">Spanish</td><td align="left" nowrap><a href="https://programacion-tv.elpais.com/">programacion-tv.elpais.com</a></td><td align="right">158</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/programacion-tv.elpais.com.guide.xml</code></td></tr>
     <tr><td align="left">Turkish</td><td align="left" nowrap><a href="https://www.digiturk.com.tr/yayin-akisi">digiturk.com.tr</a></td><td align="right">106</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/digiturk.com.tr.guide.xml</code></td></tr>
+    <tr><td align="left">Ukrainian</td><td align="left" nowrap><a href="https://tvgid.ua/">tvgid.ua</a></td><td align="right">152</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tvgid.ua.guide.xml</code></td></tr>
   </tbody>
 </table>
 

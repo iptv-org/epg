@@ -4,6 +4,21 @@ on:
   schedule:
     - cron: '0 0 * * *'
 jobs:
+  tvgid_ua:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.3.1
+      - name: Install Dependencies
+        run: npm install
+      - name: Run EPG Grabber
+        run: npx epg-grabber --config=sites/tvgid.ua.config.js
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.0
+        with:
+          branch: gh-pages
+          folder: .gh-pages
+          clean: false
   m_tv_sms_cz:
     runs-on: ubuntu-latest
     steps:
