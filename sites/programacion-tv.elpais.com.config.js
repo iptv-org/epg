@@ -16,7 +16,8 @@ module.exports = {
   },
   parser: function ({ content, date, channel }) {
     const programs = []
-    const channelData = content.find(i => i.idCanal === channel.site_id)
+    const data = JSON.parse(content)
+    const channelData = data.find(i => i.idCanal === channel.site_id)
     if (!channelData) return programs
     channelData.programas.forEach(item => {
       if (item.title && item.iniDate && item.endDate) {
