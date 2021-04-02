@@ -20,9 +20,10 @@ module.exports = {
   },
   parser: function ({ content, date }) {
     const programs = []
-    if (!content.events) return programs
+    const data = JSON.parse(content)
+    if (!data.events) return programs
 
-    content.events.forEach(item => {
+    data.events.forEach(item => {
       if (item.title && item.startTime && item.endTime) {
         const start = dayjs
           .utc(item.startTime, 'HH:mm')
