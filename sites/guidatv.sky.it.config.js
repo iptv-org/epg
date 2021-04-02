@@ -18,9 +18,11 @@ module.exports = {
   },
   parser: function ({ content, date }) {
     const programs = []
-    if (!content.events) return programs
+    const data = JSON.parse(content)
+    const items = data.events
+    if (!items.length) return programs
 
-    content.events.forEach(item => {
+    items.forEach(item => {
       if (item.eventTitle && item.starttime && item.endtime) {
         programs.push({
           title: item.eventTitle,
