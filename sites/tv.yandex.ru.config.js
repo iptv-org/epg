@@ -1,4 +1,3 @@
-const urlParser = require('url')
 const jsdom = require('jsdom')
 const { JSDOM } = jsdom
 
@@ -7,8 +6,12 @@ module.exports = {
   site: 'tv.yandex.ru',
   channels: 'tv.yandex.ru.channels.xml',
   output: '.gh-pages/guides/tv.yandex.ru.guide.xml',
-  cookie:
-    'yandexuid=8747786251615498142; Expires=Tue, 11 Mar 2031 21:29:02 GMT; Domain=yandex.ru; Path=/',
+  request: {
+    headers: {
+      Cookie:
+        'yandexuid=8747786251615498142; Expires=Tue, 11 Mar 2031 21:29:02 GMT; Domain=yandex.ru; Path=/'
+    }
+  },
   url: function ({ date, channel }) {
     const [region, id] = channel.site_id.split('#')
     return `https://tv.yandex.ru/${region}/channel/${id}?date=${date.format('YYYY-MM-DD')}`
