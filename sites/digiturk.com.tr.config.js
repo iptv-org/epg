@@ -10,8 +10,9 @@ module.exports = {
   },
   parser: function ({ content, date, channel }) {
     const programs = []
-    const data = content.listings[channel.site_id]
-    if (!data) return programs
+    const data = JSON.parse(content)
+    const items = data.listings[channel.site_id]
+    if (!items.length) return programs
 
     const categories = {
       '00': 'Diğer',
@@ -35,7 +36,7 @@ module.exports = {
       F9: 'Life Style'
     }
 
-    data.forEach(item => {
+    items.forEach(item => {
       if (item.ProgramName && item.BroadcastStart && item.BroadcastEnd) {
         programs.push({
           title: item.ProgramName,
