@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site site="mi.tv">
+  <channels>
+    <channel site_id="br#a-e" xmltv_id="AEBrasil.us">A&amp;E Brasil</channel>
+    <channel site_id="br#a-e-hd" xmltv_id="AEHDBrasil.us">A&amp;E HD Brasil</channel>
+    <channel site_id="br#amc-brasil" xmltv_id="AMCBrasil.us">AMC Brasil</channel>
+    <channel site_id="br#amc-hd" xmltv_id="AMCHDBrasil.us">AMC HD Brasil</channel>
+    <channel site_id="br#axn" xmltv_id="AXNBrazil.us">AXN Brazil</channel>
+    <channel site_id="br#axn-hd" xmltv_id="AXNHDBrazil.us">AXN HD Brazil</channel>
+    <channel site_id="br#agromais-hd" xmltv_id="AgroMaisHD.br">AgroMais HD</channel>
+    <channel site_id="br#canal-agromix" xmltv_id="AgromixTV.br">Agromix TV</channel>
+    <channel site_id="br#amazon-sat" xmltv_id="AmazonSat.br">Amazon Sat</channel>
+    <channel site_id="br#amazon-sat-hd" xmltv_id="AmazonSatHD.br">Amazon Sat HD</channel>
+    <channel site_id="br#animal-planet" xmltv_id="AnimalPlanetBrasil.us">Animal Planet Brasil</channel>
+    <channel site_id="br#animal-planet-hd" xmltv_id="AnimalPlanetHDBrasil.us">Animal Planet HD Brasil</channel>
+    <channel site_id="br#arte-1" xmltv_id="Arte1.br">Arte 1</channel>
+    <channel site_id="br#arte-1-hd" xmltv_id="Arte1HD.br">Arte 1 HD</channel>
+    <channel site_id="br#bbc-news" xmltv_id="BBCWorldNewsAmericas.uk">BBC World News Americas</channel>
+    <channel site_id="br#bbc-news-hd" xmltv_id="BBCWorldNewsHDAmericas.uk">BBC World News HD Americas</channel>
+    <channel site_id="br#bh-news-tv" xmltv_id="BHNewsTV.br">BHNews TV</channel>
+    <channel site_id="br#baby-tv" xmltv_id="BabyTVBrasil.uk">BabyTV Brasil</channel>
+    <channel site_id="br#band-amazonas" xmltv_id="BandAmazonas.br">Band Amazonas</channel>
+    <channel site_id="br#band-amazonas-hd" xmltv_id="BandAmazonasHD.br">Band Amazonas HD</channel>
+    <channel site_id="br#band-bh-hd" xmltv_id="BandBHHD.br">Band BH HD</channel>
+    <channel site_id="br#band-bahia" xmltv_id="BandBahia.br">Band Bahia</channel>
+    <channel site_id="br#band-bahia-hd" xmltv_id="BandBahiaHD.br">Band Bahia HD</channel>
+    <channel site_id="br#band-belem" xmltv_id="BandBelem.br">Band Belém</channel>
+    <channel site_id="br#band-brasilia" xmltv_id="BandBrasilia.br">Band Brasília</channel>
+    <channel site_id="br#band-brasilia-hd" xmltv_id="BandBrasiliaHD.br">Band Brasília HD</channel>
+    <channel site_id="br#band-campinas" xmltv_id="BandCampinas.br">Band Campinas</channel>
+    <channel site_id="br#band-campinas-hd" xmltv_id="BandCampinasHD.br">Band Campinas HD</channel>
+    <channel site_id="br#band-curitiba" xmltv_id="BandCuritiba.br">Band Curitiba</channel>
+    <channel site_id="br#band-curitiba-hd" xmltv_id="BandCuritibaHD.br">Band Curitiba HD</channel>
+    <channel site_id="br#band-hd" xmltv_id="BandHD.br">Band HD</channel>
+    <channel site_id="br#band-maceio" xmltv_id="BandMaceio.br">Band Maceió</channel>
+    <channel site_id="br#band-maceio-hd" xmltv_id="BandMaceioHD.br">Band Maceió HD</channel>
+    <channel site_id="br#band-mato-grosso" xmltv_id="BandMatoGrosso.br">Band Mato Grosso</channel>
+    <channel site_id="br#band-mato-grosso-hd" xmltv_id="BandMatoGrossoHD.br">Band Mato Grosso HD</channel>
+    <channel site_id="br#band-minas" xmltv_id="BandMinas.br">Band Minas</channel>
+    <channel site_id="br#band-minas-hd" xmltv_id="BandMinasHD.br">Band Minas HD</channel>
+    <channel site_id="br#band-natal-hd" xmltv_id="BandNatalHD.br">Band Natal HD</channel>
+    <channel site_id="br#band-news" xmltv_id="BandNews.br">Band News</channel>
+    <channel site_id="br#bandnews-hd" xmltv_id="BandNewsHD.br">Band News HD</channel>
+    <channel site_id="br#band-piaui-hd" xmltv_id="BandPiauiHD.br">Band Piauí HD</channel>
+    <channel site_id="br#band-porto-alegre" xmltv_id="BandPortoAlegre.br">Band Porto Alegre</channel>
+    <channel site_id="br#band-rj-hd" xmltv_id="BandRJHD.br">Band RJ HD</channel>
+    <channel site_id="br#band-rio" xmltv_id="BandRio.br">Band Rio</channel>
+    <channel site_id="br#band-rio-grande-do-sul-hd" xmltv_id="BandRioGrandedoSulHD.br">Band Rio Grande do Sul HD</channel>
+    <channel site_id="br#band-roraima" xmltv_id="BandRoraima.br">Band Roraima</channel>
+    <channel site_id="br#band-roraima-hd" xmltv_id="BandRoraimaHD.br">Band Roraima HD</channel>
+    <channel site_id="br#band-tv-goiania" xmltv_id="BandTVGoiania.br">Band TV Goiânia</channel>
+    <channel site_id="br#band-tv-goiania-hd" xmltv_id="BandTVGoianiaHD.br">Band TV Goiânia HD</channel>
+    <channel site_id="br#bandsports" xmltv_id="BandSports.br">BandSports</channel>
+    <channel site_id="br#bandsports-hd" xmltv_id="BandSportsHD.br">BandSports HD</channel>
+    <channel site_id="br#bis-hd" xmltv_id="BisHD.br">Bis HD</channel>
+    <channel site_id="br#bloomberg" xmltv_id="BloombergTVBrazil.us">Bloomberg TV Brazil</channel>
+    <channel site_id="br#bloomberg-hd" xmltv_id="BloombergTVHDBrazil.us">Bloomberg TV HD Brazil</channel>
+    <channel site_id="br#boa-vontade-tv" xmltv_id="BoaVontadeTV.br">Boa Vontade TV</channel>
+    <channel site_id="br#boa-vontade-tv-hd" xmltv_id="BoaVontadeTVHD.br">Boa Vontade TV HD</channel>
+    <channel site_id="br#boomerang" xmltv_id="BoomerangBrasil.us">Boomerang Brasil</channel>
+    <channel site_id="br#boomerang-hd" xmltv_id="BoomerangHDBrasil.us">Boomerang HD Brasil</channel>
+    <channel site_id="br#cgtn" xmltv_id="CGTN.cn">CGTN</channel>
+    <channel site_id="br#cnn" xmltv_id="CNN.us">CNN</channel>
+    <channel site_id="br#cnn-brasil" xmltv_id="CNNBrasil.us">CNN Brasil</channel>
+    <channel site_id="br#cnn-international-hd" xmltv_id="CNNInternationalHDAsiaPacific.us">CNN International HD Asia Pacific</channel>
+    <channel site_id="br#cnn-en-espanol-hd" xmltv_id="CNNenEspanolHD.us">CNN en Español HD</channel>
+    <channel site_id="br#canal-brasil" xmltv_id="CanalBrasil.br">Canal Brasil</channel>
+    <channel site_id="br#canal-brasil-hd" xmltv_id="CanalBrasilHD.br">Canal Brasil HD</channel>
+    <channel site_id="br#tv-o-povo-hd" xmltv_id="CanalFDRHD.br">Canal FDR HD</channel>
+    <channel site_id="br#futura" xmltv_id="CanalFutura.br">Canal Futura</channel>
+    <channel site_id="br#futura-hd" xmltv_id="CanalFuturaHD.br">Canal Futura HD</channel>
+    <channel site_id="br#off" xmltv_id="CanalOff.br">Canal Off</channel>
+    <channel site_id="br#off-hd" xmltv_id="CanalOffHD.br">Canal Off HD</channel>
+    <channel site_id="br#canal-rural" xmltv_id="CanalRural.br">Canal Rural</channel>
+    <channel site_id="br#canal-universitario-cnu" xmltv_id="CanalUniversitariodeSaoPaulo.br">Canal Universitário de São Paulo</channel>
+    <channel site_id="br#canal-do-boi" xmltv_id="CanaldoBoi.br">Canal do Boi</channel>
+    <channel site_id="br#cartoon-network" xmltv_id="CartoonNetworkBrasil.us">Cartoon Network Brasil</channel>
+    <channel site_id="br#cartoon-network-brazil-hd" xmltv_id="CartoonNetworkHDBrasil.us">Cartoon Network HD Brasil</channel>
+    <channel site_id="br#chef-tv" xmltv_id="ChefTV.br">Chef TV</channel>
+    <channel site_id="br#cinebrasil-tv" xmltv_id="CineBrasilTV.br">Cine Brasil TV</channel>
+    <channel site_id="br#cinemax" xmltv_id="CinemaxBrasil.us">Cinemax Brasil</channel>
+    <channel site_id="br#combate" xmltv_id="Combate.br">Combate</channel>
+    <channel site_id="br#combate-hd" xmltv_id="CombateHD.br">Combate HD</channel>
+    <channel site_id="br#comedy-central" xmltv_id="ComedyCentralBrasil.us">Comedy Central Brasil</channel>
+    <channel site_id="br#comedy-central-hd" xmltv_id="ComedyCentralHDBrasil.us">Comedy Central HD Brasil</channel>
+    <channel site_id="br#conmebol-tv-1" xmltv_id="ConmebolTV1.br">Conmebol TV 1</channel>
+    <channel site_id="br#conmebol-tv-2" xmltv_id="ConmebolTV2.br">Conmebol TV 2</channel>
+    <channel site_id="br#conmebol-tv-3" xmltv_id="ConmebolTV3.br">Conmebol TV 3</channel>
+    <channel site_id="br#conmebol-tv-4" xmltv_id="ConmebolTV4.br">Conmebol TV 4</channel>
+    <channel site_id="br#curta" xmltv_id="Curta.br">Curta!</channel>
+    <channel site_id="br#curta-hd" xmltv_id="CurtaHD.br">Curta! HD</channel>
+    <channel site_id="br#deutsche-welle" xmltv_id="DWDeutschPlus.de">DW Deutsch+</channel>
+    <channel site_id="br#discovery" xmltv_id="DiscoveryChannelBrasil.us">Discovery Channel Brasil</channel>
+    <channel site_id="br#discovery-hd" xmltv_id="DiscoveryChannelHDBrasil.us">Discovery Channel HD Brasil</channel>
+    <channel site_id="br#discovery-home-health" xmltv_id="DiscoveryHomeHealthBrasil.us">Discovery Home &amp; Health Brasil</channel>
+    <channel site_id="br#discovery-home-health-hd" xmltv_id="DiscoveryHomeHealthHDBrasil.us">Discovery Home &amp; Health HD Brasil</channel>
+    <channel site_id="br#discovery-kids" xmltv_id="DiscoveryKidsBrasil.us">Discovery Kids Brasil</channel>
+    <channel site_id="br#discovery-kids-hd" xmltv_id="DiscoveryKidsHDBrasil.us">Discovery Kids HD Brasil</channel>
+    <channel site_id="br#discovery-science-hd" xmltv_id="DiscoveryScienceHDLatinoamerica.us">Discovery Science HD Latinoamérica</channel>
+    <channel site_id="br#discovery-science" xmltv_id="DiscoveryScienceLatinoamerica.us">Discovery Science Latinoamérica</channel>
+    <channel site_id="br#discovery-theater" xmltv_id="DiscoveryTheater.us">Discovery Theater</channel>
+    <channel site_id="br#discovery-turbo" xmltv_id="DiscoveryTurboBrasil.us">Discovery Turbo Brasil</channel>
+    <channel site_id="br#discovery-turbo-hd" xmltv_id="DiscoveryTurboHDBrasil.us">Discovery Turbo HD Brasil</channel>
+    <channel site_id="br#discovery-world-hd" xmltv_id="DiscoveryWorldBrasil.us">Discovery World Brasil</channel>
+    <channel site_id="br#disney" xmltv_id="DisneyChannelBrasil.us">Disney Channel Brasil</channel>
+    <channel site_id="br#disney-hd" xmltv_id="DisneyChannelHDBrasil.us">Disney Channel HD Brasil</channel>
+    <channel site_id="br#disney-junior" xmltv_id="DisneyJuniorBrasil.us">Disney Junior Brasil</channel>
+    <channel site_id="br#disney-junior-brazil-hd" xmltv_id="DisneyJuniorHDBrasil.us">Disney Junior HD Brasil</channel>
+    <channel site_id="br#disney-xd" xmltv_id="DisneyXDBrasil.us">Disney XD Brasil</channel>
+    <channel site_id="br#dogtv" xmltv_id="DogTV.us">DogTV</channel>
+    <channel site_id="br#dogtv-hd" xmltv_id="DogTVHD.us">DogTV HD</channel>
+    <channel site_id="br#e" xmltv_id="EBrasil.us">E! Brasil</channel>
+    <channel site_id="br#e-hd" xmltv_id="EHDBrasil.us">E! HD Brasil</channel>
+    <channel site_id="br#eptv-sul-de-minas-hd" xmltv_id="EPTVSuldeMinasHD.br">EPTV Sul de Minas HD</channel>
+    <channel site_id="br#espn" xmltv_id="ESPNBrasil.us">ESPN Brasil</channel>
+    <channel site_id="br#espn-extra" xmltv_id="ESPNExtraBrasil.us">ESPN Extra Brasil</channel>
+    <channel site_id="br#espn-extra-hd" xmltv_id="ESPNExtraHDBrasil.us">ESPN Extra HD Brasil</channel>
+    <channel site_id="br#espn-hd" xmltv_id="ESPNHDBrasil.us">ESPN HD Brasil</channel>
+    <channel site_id="br#espn-2" xmltv_id="ESPNSurAndina93A.br">ESPN Sur Andina (93A)</channel>
+    <channel site_id="br#eurochannel" xmltv_id="Eurochannel.us">Eurochannel</channel>
+    <channel site_id="br#fx" xmltv_id="FXBrasil.us">FX Brasil</channel>
+    <channel site_id="br#fx-hd" xmltv_id="FXHDBrasil.us">FX HD Brasil</channel>
+    <channel site_id="br#fashion-tv" xmltv_id="FashionTVBrazil.fr">FashionTV Brazil</channel>
+    <channel site_id="br#film-arts" xmltv_id="FilmArtsBrasil.ar">Film&amp;Arts Brasil</channel>
+    <channel site_id="br#film-arts-hd" xmltv_id="FilmArtsHDBrasil.ar">Film&amp;Arts HD Brasil</channel>
+    <channel site_id="br#fishtv" xmltv_id="FishTV.br">Fish TV</channel>
+    <channel site_id="br#fish-tv-hd" xmltv_id="FishTVHD.br">Fish TV HD</channel>
+    <channel site_id="br#food-network" xmltv_id="FoodNetworkBrasil.us">Food Network Brasil</channel>
+    <channel site_id="br#food-network-hd-brasil" xmltv_id="FoodNetworkHDBrasil.us">Food Network HD Brasil</channel>
+    <channel site_id="br#fox-news-channel" xmltv_id="FoxNewsChannel.us">Fox News Channel</channel>
+    <channel site_id="br#fox-sports-2" xmltv_id="FoxSports2Brasil.us">Fox Sports 2 Brasil</channel>
+    <channel site_id="br#fox-sports-2-hd" xmltv_id="FoxSports2HDBrasil.us">Fox Sports 2 HD Brasil</channel>
+    <channel site_id="br#fox-sports" xmltv_id="FoxSportsBrasil.us">Fox Sports Brasil</channel>
+    <channel site_id="br#fox-sports-hd" xmltv_id="FoxSportsHDBrasil.us">Fox Sports HD Brasil</channel>
+    <channel site_id="br#gnt" xmltv_id="GNT.br">GNT</channel>
+    <channel site_id="br#gnt-hd" xmltv_id="GNTHD.br">GNT HD</channel>
+    <channel site_id="br#globo-brasilia" xmltv_id="GloboBrasilia.br">Globo Brasília</channel>
+    <channel site_id="br#globo-brasilia-hd-1" xmltv_id="GloboBrasiliaHD.br">Globo Brasília HD</channel>
+    <channel site_id="br#globo-nordeste-hd" xmltv_id="GloboNordesteHD.br">Globo Nordeste HD</channel>
+    <channel site_id="br#globo-news" xmltv_id="GloboNews.br">GloboNews</channel>
+    <channel site_id="br#globo-news-hd" xmltv_id="GloboNewsHD.br">GloboNews HD</channel>
+    <channel site_id="br#gloob" xmltv_id="Gloob.br">Gloob</channel>
+    <channel site_id="br#gloob-hd" xmltv_id="GloobHD.br">Gloob HD</channel>
+    <channel site_id="br#gloobinho" xmltv_id="Gloobinho.br">Gloobinho</channel>
+    <channel site_id="br#gloobinho-hd" xmltv_id="GloobinhoHD.br">Gloobinho HD</channel>
+    <channel site_id="br#golf-channel-hd" xmltv_id="GolfChannelHDLatinAmerica.us">Golf Channel HD Latin America</channel>
+    <channel site_id="br#golf-channel" xmltv_id="GolfChannelLatinAmerica.us">Golf Channel Latin America</channel>
+    <channel site_id="br#hbo" xmltv_id="HBOBrasil.us">HBO Brasil</channel>
+    <channel site_id="br#hbo-family-hd" xmltv_id="HBOFamilyHDBrasil.us">HBO Family HD Brasil</channel>
+    <channel site_id="br#hbo-hd" xmltv_id="HBOHDBrasil.us">HBO HD Brasil</channel>
+    <channel site_id="br#max-1" xmltv_id="HBOMundiBrasil.us">HBO Mundi Brasil</channel>
+    <channel site_id="br#max-up-1" xmltv_id="HBOPopBrasil.us">HBO Pop Brasil</channel>
+    <channel site_id="br#max-up" xmltv_id="HBOPopBrasil.us">HBO Pop Brasil</channel>
+    <channel site_id="br#hbo-signature" xmltv_id="HBOSignatureBrasil.us">HBO Signature Brasil</channel>
+    <channel site_id="br#maxprime" xmltv_id="HBOXtremeBrasil.us">HBO Xtreme Brasil</channel>
+    <channel site_id="br#hbo2" xmltv_id="HBO2Brasil.us">HBO2 Brasil</channel>
+    <channel site_id="br#hgtv" xmltv_id="HGTVBrasil.us">HGTV Brasil</channel>
+    <channel site_id="br#hgtv-hd" xmltv_id="HGTVHDBrasil.us">HGTV HD Brasil</channel>
+    <channel site_id="br#h2" xmltv_id="History2Brasil.us">History 2 Brasil</channel>
+    <channel site_id="br#h2-hd" xmltv_id="History2HDBrasil.us">History 2 HD Brasil</channel>
+    <channel site_id="br#history-channel" xmltv_id="HistoryBrasil.us">History Brasil</channel>
+    <channel site_id="br#history-channel-hd" xmltv_id="HistoryHDBrasil.us">History HD Brasil</channel>
+    <channel site_id="br#i-sat" xmltv_id="ISat.ar">I.Sat</channel>
+    <channel site_id="br#ideal-tv" xmltv_id="IdealTV.br">Ideal TV</channel>
+    <channel site_id="br#ideal-tv-hd" xmltv_id="IdealTVHD.br">Ideal TV HD</channel>
+    <channel site_id="br#globo-natal" xmltv_id="InterTVRN.br">Inter TV RN</channel>
+    <channel site_id="br#intertv-alto-literal-hd" xmltv_id="InterTVAltoLitoralHD.br">InterTV Alto Litoral HD</channel>
+    <channel site_id="br#intertv-cabugi-hd" xmltv_id="InterTVCabugiHD.br">InterTV Cabugi HD</channel>
+    <channel site_id="br#intertv-grande-minas-hd" xmltv_id="InterTVGrandeMinasHD.br">InterTV Grande Minas HD</channel>
+    <channel site_id="br#intertv-serra-mar-hd" xmltv_id="InterTVSerraMarHD.br">InterTV Serra Mar HD</channel>
+    <channel site_id="br#investigacao-discovery" xmltv_id="InvestigacaoDiscoveryBrasil.us">Investigação Discovery Brasil</channel>
+    <channel site_id="br#investigacao-discovery-hd" xmltv_id="InvestigacaoDiscoveryHDBrasil.us">Investigação Discovery HD Brasil</channel>
+    <channel site_id="br#lifetime-brazil" xmltv_id="LifetimeBrazil.us">Lifetime Brazil</channel>
+    <channel site_id="br#lifetime-hd" xmltv_id="LifetimeHDBrazil.us">Lifetime HD Brazil</channel>
+    <channel site_id="br#loading" xmltv_id="Loading.br">Loading</channel>
+    <channel site_id="br#mtv-brasil" xmltv_id="MTVBrasil.us">MTV Brasil</channel>
+    <channel site_id="br#mtv-live-hd" xmltv_id="MTVLiveHD.us">MTV Live HD</channel>
+    <channel site_id="br#vh1-megahits" xmltv_id="MTVLiveHD.us">MTV Live HD</channel>
+    <channel site_id="br#globosat" xmltv_id="MaisnaTela.br">Mais na Tela</channel>
+    <channel site_id="br#mega-tv-brazil" xmltv_id="MegaTV.br">Mega TV</channel>
+    <channel site_id="br#mega-tvhd" xmltv_id="MegaTVHD.br">Mega TV HD</channel>
+    <channel site_id="br#megapix" xmltv_id="Megapix.br">Megapix</channel>
+    <channel site_id="br#megapix-hd" xmltv_id="MegapixHD.br">Megapix HD</channel>
+    <channel site_id="br#multishow" xmltv_id="Multishow.br">Multishow</channel>
+    <channel site_id="br#multishow-hd" xmltv_id="MultishowHD.br">Multishow HD</channel>
+    <channel site_id="br#music-box-brasil" xmltv_id="MusicBoxBrasil.br">Music Box Brasil</channel>
+    <channel site_id="br#music-box-brasil-hd" xmltv_id="MusicBoxBrasilHD.br">Music Box Brasil HD</channel>
+    <channel site_id="br#nhk-hd" xmltv_id="NHKWorldHDJapan.jp">NHK World HD Japan</channel>
+    <channel site_id="br#nhk" xmltv_id="NHKWorldJapan.jp">NHK World Japan</channel>
+    <channel site_id="br#nsc-tv-criciuma" xmltv_id="NSCTVCriciuma.br">NSC TV Criciúma</channel>
+    <channel site_id="br#nsc-tv-blumenau-hd" xmltv_id="NSCTVHDBlumenau.br">NSC TV HD Blumenau</channel>
+    <channel site_id="br#nsc-tv-chapeco-hd" xmltv_id="NSCTVHDChapeco.br">NSC TV HD Chapecó</channel>
+    <channel site_id="br#nsc-tv-florianopolis-hd" xmltv_id="NSCTVHDFlorianopolis.br">NSC TV HD Florianópolis</channel>
+    <channel site_id="br#nsc-tv-joinville-hd" xmltv_id="NSCTVHDJoinville.br">NSC TV HD Joinville</channel>
+    <channel site_id="br#nat-geo-kids" xmltv_id="NatGeoKidsBrasil.us">Nat Geo Kids Brasil</channel>
+    <channel site_id="br#nat-geo-kids-hd" xmltv_id="NatGeoKidsHDBrasil.us">Nat Geo Kids HD Brasil</channel>
+    <channel site_id="br#natgeo-wild-hd" xmltv_id="NatGeoWildHDBrasil.us">Nat Geo Wild HD Brasil</channel>
+    <channel site_id="br#national-geographic" xmltv_id="NationalGeographicBrasil.us">National Geographic Brasil</channel>
+    <channel site_id="br#national-geographic-hd" xmltv_id="NationalGeographicHDBrasil.us">National Geographic HD Brasil</channel>
+    <channel site_id="br#nick-jr" xmltv_id="NickJrBrasil.us">Nick Jr Brasil</channel>
+    <channel site_id="br#nick-jr-hd" xmltv_id="NickJrHDBrasil.us">Nick Jr HD Brasil</channel>
+    <channel site_id="br#nickelodeon" xmltv_id="NickelodeonBrasil.us">Nickelodeon Brasil</channel>
+    <channel site_id="br#nick-hd" xmltv_id="NickelodeonHDBrasil.us">Nickelodeon HD Brasil</channel>
+    <channel site_id="br#nordestv" xmltv_id="NordesTV.br">NordesTV</channel>
+    <channel site_id="br#nordestv-hd" xmltv_id="NordesTVHD.br">NordesTV HD</channel>
+    <channel site_id="br#puc-tv-goias-hd" xmltv_id="PUCTVGoiasHD.br">PUC TV Goiás HD</channel>
+    <channel site_id="br#play-tv" xmltv_id="PlayTV.br">PlayTV</channel>
+    <channel site_id="br#playboy" xmltv_id="PlayboyTVBrazil.us">Playboy TV Brazil</channel>
+    <channel site_id="br#playboy-hd" xmltv_id="PlayboyTVHDBrazil.us">Playboy TV HD Brazil</channel>
+    <channel site_id="br#ponto-jus" xmltv_id="PontoJus.br">Ponto Jus</channel>
+    <channel site_id="br#premiere-fc" xmltv_id="Premiere">Premiere</channel>
+    <channel site_id="br#premiere-10-hd" xmltv_id="Premiere10HD.br">Premiere 10 HD</channel>
+    <channel site_id="br#premiere-2" xmltv_id="Premiere2.br">Premiere 2</channel>
+    <channel site_id="br#premiere-2-hd" xmltv_id="Premiere2HD.br">Premiere 2 HD</channel>
+    <channel site_id="br#premiere-3" xmltv_id="Premiere3.br">Premiere 3</channel>
+    <channel site_id="br#premiere-3-hd" xmltv_id="Premiere3HD.br">Premiere 3 HD</channel>
+    <channel site_id="br#premiere-4" xmltv_id="Premiere4.br">Premiere 4</channel>
+    <channel site_id="br#premiere-4-hd" xmltv_id="Premiere4HD.br">Premiere 4 HD</channel>
+    <channel site_id="br#premiere-5-brazil" xmltv_id="Premiere5.br">Premiere 5</channel>
+    <channel site_id="br#premiere-5-hd" xmltv_id="Premiere5HD.br">Premiere 5 HD</channel>
+    <channel site_id="br#premiere-6" xmltv_id="Premiere6.br">Premiere 6</channel>
+    <channel site_id="br#premiere-6-hd" xmltv_id="Premiere6HD.br">Premiere 6 HD</channel>
+    <channel site_id="br#premiere-7" xmltv_id="Premiere7.br">Premiere 7</channel>
+    <channel site_id="br#premiere-7-hd" xmltv_id="Premiere7HD.br">Premiere 7 HD</channel>
+    <channel site_id="br#premiere-8" xmltv_id="Premiere8.br">Premiere 8</channel>
+    <channel site_id="br#premiere-8-hd" xmltv_id="Premiere8HD.br">Premiere 8 HD</channel>
+    <channel site_id="br#premiere-9" xmltv_id="Premiere9.br">Premiere 9</channel>
+    <channel site_id="br#premiere-9-hd" xmltv_id="Premiere9HD.br">Premiere 9 HD</channel>
+    <channel site_id="br#premiere-clubes" xmltv_id="PremiereClubes.br">Premiere Clubes</channel>
+    <channel site_id="br#premiere-clubes-hd" xmltv_id="PremiereClubesHD.br">Premiere Clubes HD</channel>
+    <channel site_id="br#prime-box-brazil" xmltv_id="PrimeBoxBrazil.br">Prime Box Brazil</channel>
+    <channel site_id="br#prime-box-brazil-hd" xmltv_id="PrimeBoxBrazilHD.br">Prime Box Brazil HD</channel>
+    <channel site_id="br#rba-tv-hd" xmltv_id="RBATVHD.br">RBA TV HD</channel>
+    <channel site_id="br#rbi" xmltv_id="RBITV.br">RBI TV</channel>
+    <channel site_id="br#rbi-hd" xmltv_id="RBITVHD.br">RBI TV HD</channel>
+    <channel site_id="br#rbs-tv-florianopolis" xmltv_id="RBSTVFlorianopolis.br">RBS TV Florianópolis</channel>
+    <channel site_id="br#rbs-tv-porto-alegre-hd" xmltv_id="RBSTVPortoAlegreHD.br">RBS TV Porto Alegre HD</channel>
+    <channel site_id="br#globo-rbs-tv-poa" xmltv_id="RBSTVRS.br">RBS TV RS</channel>
+    <channel site_id="br#rbs-tv-rio-grande-hd" xmltv_id="RBSTVRioGrandeHD.br">RBS TV Rio Grande HD</channel>
+    <channel site_id="br#rbs-tv-santa-maria-hd" xmltv_id="RBSTVSantaMariaHD.br">RBS TV Santa Maria HD</channel>
+    <channel site_id="br#ric-tv-curitiba-hd" xmltv_id="RICTVHDCuritiba.br">RIC TV HD Curitiba</channel>
+    <channel site_id="br#ric-tv-florianopolis-hd" xmltv_id="RICTVHDFlorianopolis.br">RIC TV HD Florianópolis</channel>
+    <channel site_id="br#rit" xmltv_id="RIT.br">RIT</channel>
+    <channel site_id="br#rit-hd" xmltv_id="RITHD.br">RIT HD</channel>
+    <channel site_id="br#rpc-curitiba" xmltv_id="RPCCuritiba.br">RPC Curitiba</channel>
+    <channel site_id="br#rpc-curitiba-hd" xmltv_id="RPCCuritibaHD.br">RPC Curitiba HD</channel>
+    <channel site_id="br#rpc-foz-do-iguacu-hd" xmltv_id="RPCFozdoIguacuHD.br">RPC Foz do Iguaçu HD</channel>
+    <channel site_id="br#rpc-maringa-hd" xmltv_id="RPCMaringaHD.br">RPC Maringá HD</channel>
+    <channel site_id="br#rpc-paranavai-hd" xmltv_id="RPCParanavaiHD.br">RPC Paranavaí HD</channel>
+    <channel site_id="br#rpc-ponta-grossa-hd" xmltv_id="RPCPontaGrossaHD.br">RPC Ponta Grossa HD</channel>
+    <channel site_id="br#rtpi-brasil" xmltv_id="RTPInternacional.pt">RTP Internacional</channel>
+    <channel site_id="br#rai" xmltv_id="RaiItaliaAmerica.it">Rai Italia America</channel>
+    <channel site_id="br#record-cuiaba-hd" xmltv_id="RecordCuiabaHD.br">Record Cuiabá HD</channel>
+    <channel site_id="br#record-news" xmltv_id="RecordNews.br">Record News</channel>
+    <channel site_id="br#record-news-hd" xmltv_id="RecordNewsHD.br">Record News HD</channel>
+    <channel site_id="br#record-porto-alegre-hd" xmltv_id="RecordPortoAlegreHD.br">Record Porto Alegre HD</channel>
+    <channel site_id="br#recordtv-belem" xmltv_id="RecordTVBelem.br">Record TV Belém</channel>
+    <channel site_id="br#recordtv-belem-hd" xmltv_id="RecordTVBelemHD.br">Record TV Belém HD</channel>
+    <channel site_id="br#record" xmltv_id="RecordTVBrasilia.br">Record TV Brasília</channel>
+    <channel site_id="br#record-tv-brasilia-hd" xmltv_id="RecordTVBrasiliaHD.br">Record TV Brasília HD</channel>
+    <channel site_id="br#recordtv-cuiaba" xmltv_id="RecordTVCuiaba.br">Record TV Cuiabá</channel>
+    <channel site_id="br#record-tv-goias-hd" xmltv_id="RecordTVGoiasHD.br">Record TV Goiás HD</channel>
+    <channel site_id="br#record-tv-itapoan-hd" xmltv_id="RecordTVItapoanHD.br">Record TV Itapoan HD</channel>
+    <channel site_id="br#record-tv-minas-hd" xmltv_id="RecordTVMinasHD.br">Record TV Minas HD</channel>
+    <channel site_id="br#recordtv-paulista-hd" xmltv_id="RecordTVPaulistaHD.br">Record TV Paulista HD</channel>
+    <channel site_id="br#record-tv-rs" xmltv_id="RecordTVRS.br">Record TV RS</channel>
+    <channel site_id="br#record-tv-rio-hd" xmltv_id="RecordTVRioHD.br">Record TV Rio HD</channel>
+    <channel site_id="br#recordtv-s-o-paulo-hd" xmltv_id="RecordTVSaoPauloHD.br">Record TV São Paulo HD</channel>
+    <channel site_id="br#recordtv-tocantins" xmltv_id="RecordTVTocantins.br">Record TV Tocantins</channel>
+    <channel site_id="br#rede-21-hd" xmltv_id="Rede21HD.br">Rede 21 HD</channel>
+    <channel site_id="br#globo-amazonas" xmltv_id="RedeAmazonica.br">Rede Amazônica</channel>
+    <channel site_id="br#rede-amazonica-manaus-hd" xmltv_id="RedeAmazonicaManausHD.br">Rede Amazônica Manaus HD</channel>
+    <channel site_id="br#rede-amazonica-rio-branco" xmltv_id="RedeAmazonicaRioBranco.br">Rede Amazônica Rio Branco</channel>
+    <channel site_id="br#rede-amazonica-rio-branco-hd" xmltv_id="RedeAmazonicaRioBrancoHD.br">Rede Amazônica Rio Branco HD</channel>
+    <channel site_id="br#rede-boas-novas" xmltv_id="RedeBoasNovas.br">Rede Boas Novas</channel>
+    <channel site_id="br#rede-boas-novas-hd" xmltv_id="RedeBoasNovasHD.br">Rede Boas Novas HD</channel>
+    <channel site_id="br#rede-brasil" xmltv_id="RedeBrasil.br">Rede Brasil</channel>
+    <channel site_id="br#rede-brasil-hd" xmltv_id="RedeBrasilHD.br">Rede Brasil HD</channel>
+    <channel site_id="br#cnt" xmltv_id="RedeCNT.br">Rede CNT</channel>
+    <channel site_id="br#cnt-bahia" xmltv_id="RedeCNTBahia.br">Rede CNT Bahía</channel>
+    <channel site_id="br#cnt-bahia-hd" xmltv_id="RedeCNTBahiaHD.br">Rede CNT Bahía HD</channel>
+    <channel site_id="br#cnt-hd" xmltv_id="RedeCNTHD">Rede CNT HD</channel>
+    <channel site_id="br#cnt-rio-hd" xmltv_id="RedeCNTRiodeJaneiroHD.br">Rede CNT Rio de Janeiro HD</channel>
+    <channel site_id="br#rede-difusora-hd" xmltv_id="RedeDifusoraHD.br">Rede Difusora HD</channel>
+    <channel site_id="br#rede-familia" xmltv_id="RedeFamilia.br">Rede Familia</channel>
+    <channel site_id="br#rede-familia-hd" xmltv_id="RedeFamiliaHD.br">Rede Familia HD</channel>
+    <channel site_id="br#rede-gazeta" xmltv_id="RedeGazeta.br">Rede Gazeta</channel>
+    <channel site_id="br#globo-hd" xmltv_id="RedeGloboHD.br">Rede Globo HD</channel>
+    <channel site_id="br#rede-gospel" xmltv_id="RedeGospel.br">Rede Gospel</channel>
+    <channel site_id="br#rede-gospel-hd" xmltv_id="RedeGospelHD.br">Rede Gospel HD</channel>
+    <channel site_id="br#rede-genesis" xmltv_id="RedeGenesis.br">Rede Gênesis</channel>
+    <channel site_id="br#rede-genesis-hd" xmltv_id="RedeGenesisHD.br">Rede Gênesis HD</channel>
+    <channel site_id="br#rede-massa" xmltv_id="RedeMassa.br">Rede Massa</channel>
+    <channel site_id="br#meio-norte" xmltv_id="RedeMeioNorte.br">Rede Meio Norte</channel>
+    <channel site_id="br#meio-norte-hd" xmltv_id="RedeMeioNorteHD.br">Rede Meio Norte HD</channel>
+    <channel site_id="br#rede-mercosul" xmltv_id="RedeMercosul.br">Rede Mercosul</channel>
+    <channel site_id="br#rede-mercosul-hd" xmltv_id="RedeMercosulHD.br">Rede Mercosul HD</channel>
+    <channel site_id="br#rede-minas" xmltv_id="RedeMinas.br">Rede Minas</channel>
+    <channel site_id="br#rede-minas-hd" xmltv_id="RedeMinasHD.br">Rede Minas HD</channel>
+    <channel site_id="br#rede-ngt-nova-geracao-de-televisao" xmltv_id="RedeNGT.br">Rede NGT</channel>
+    <channel site_id="br#rede-ngt-nova-geracao-de-televisao-hd" xmltv_id="RedeNGTHD.br">Rede NGT HD</channel>
+    <channel site_id="br#rede-record-maceio-hd" xmltv_id="RedeRecordMaceioHD.br">Rede Record Maceio HD</channel>
+    <channel site_id="br#rede-super" xmltv_id="RedeSuper.br">Rede Super</channel>
+    <channel site_id="br#rede-super-hd" xmltv_id="RedeSuperHD.br">Rede Super HD</channel>
+    <channel site_id="br#rede-seculo-21" xmltv_id="RedeSeculo21.br">Rede Século 21</channel>
+    <channel site_id="br#rede-seculo-21-hd" xmltv_id="RedeSeculo21HD.br">Rede Século 21 HD</channel>
+    <channel site_id="br#rede-vida" xmltv_id="RedeVida.br">Rede Vida</channel>
+    <channel site_id="br#rede-vida-belo-horizonte" xmltv_id="RedeVidaBeloHorizonte.br">Rede Vida Belo Horizonte</channel>
+    <channel site_id="br#rede-vida-belo-horizonte-hd" xmltv_id="RedeVidaBeloHorizonteHD.br">Rede Vida Belo Horizonte HD</channel>
+    <channel site_id="br#rede-vida-cascavel" xmltv_id="RedeVidaCascavel.br">Rede Vida Cascavel</channel>
+    <channel site_id="br#rede-vida-cascavel-hd" xmltv_id="RedeVidaCascavelHD.br">Rede Vida Cascavel HD</channel>
+    <channel site_id="br#rede-vida-cuiaba" xmltv_id="RedeVidaCuiaba.br">Rede Vida Cuiaba</channel>
+    <channel site_id="br#rede-vida-cuiaba-hd" xmltv_id="RedeVidaCuiabaHD.br">Rede Vida Cuiaba HD</channel>
+    <channel site_id="br#rede-vida-goiania" xmltv_id="RedeVidaGoiania.br">Rede Vida Goiania</channel>
+    <channel site_id="br#rede-vida-goiania-hd" xmltv_id="RedeVidaGoianiaHD.br">Rede Vida Goiania HD</channel>
+    <channel site_id="br#rede-vida-hd" xmltv_id="RedeVidaHD.br">Rede Vida HD</channel>
+    <channel site_id="br#rede-vida-porto-alegre" xmltv_id="RedeVidaPortoAlegre.br">Rede Vida Porto Alegre</channel>
+    <channel site_id="br#rede-vida-porto-alegre-hd" xmltv_id="RedeVidaPortoAlegreHD.br">Rede Vida Porto Alegre HD</channel>
+    <channel site_id="br#rede-vida-recife" xmltv_id="RedeVidaRecife.br">Rede Vida Recife</channel>
+    <channel site_id="br#rede-vida-recife-hd" xmltv_id="RedeVidaRecifeHD.br">Rede Vida Recife HD</channel>
+    <channel site_id="br#rede-vida-sao-luis" xmltv_id="RedeVidaSaoLuis.br">Rede Vida Sao Luis</channel>
+    <channel site_id="br#rede-vida-sao-luis-hd" xmltv_id="RedeVidaSaoLuisHD.br">Rede Vida Sao Luis HD</channel>
+    <channel site_id="br#rede-vida-vitoria" xmltv_id="RedeVidaVitoria.br">Rede Vida Vitoria</channel>
+    <channel site_id="br#rede-vida-vitoria-hd" xmltv_id="RedeVidaVitoriaHD.br">Rede Vida Vitoria HD</channel>
+    <channel site_id="br#tvci-tv-comunicacoes-interativas-ltda" xmltv_id="RededeComunicacaoInterativa.br">Rede de Comunicação Interativa</channel>
+    <channel site_id="br#rede-tv" xmltv_id="RedeTV.br">RedeTV!</channel>
+    <channel site_id="br#rede-tv-belem-hd" xmltv_id="RedeTVBelemHD.br">RedeTV! Belem HD</channel>
+    <channel site_id="br#redetv-belo-horizonte-hd" xmltv_id="RedeTVBeloHorizonteHD.br">RedeTV! Belo Horizonte HD</channel>
+    <channel site_id="br#redetv-belem" xmltv_id="RedeTVBelem.br">RedeTV! Belém</channel>
+    <channel site_id="br#redetv-fortaleza" xmltv_id="RedeTVFortaleza.br">RedeTV! Fortaleza</channel>
+    <channel site_id="br#redetv-fortaleza-hd" xmltv_id="RedeTVFortalezaHD.br">RedeTV! Fortaleza HD</channel>
+    <channel site_id="br#rede-tv" xmltv_id="RedeTVHD.br">RedeTV! HD</channel>
+    <channel site_id="br#redetv-manaus-hd" xmltv_id="RedeTVManausHD.br">RedeTV! Manaus HD</channel>
+    <channel site_id="br#redetv-natal" xmltv_id="RedeTVNatal.br">RedeTV! Natal</channel>
+    <channel site_id="br#redetv-porto-velho" xmltv_id="RedeTVPortoVelho.br">RedeTV! Porto Velho</channel>
+    <channel site_id="br#redetv-porto-velho-hd" xmltv_id="RedeTVPortoVelhoHD.br">RedeTV! Porto Velho HD</channel>
+    <channel site_id="br#redetv-recife-hd" xmltv_id="RedeTVRecifeHD.br">RedeTV! Recife HD</channel>
+    <channel site_id="br#redetv-rio-de-janeiro-hd" xmltv_id="RedeTVRiodeJaneiroHD.br">RedeTV! Rio de Janeiro HD</channel>
+    <channel site_id="br#redetv-rondonia-hd" xmltv_id="RedeTVRondoniaHD.br">RedeTV! Rôndonia HD</channel>
+    <channel site_id="br#redetv-s-o-paulo-hd" xmltv_id="RedeTVSaoPauloHD.br">RedeTV! São Paulo HD</channel>
+    <channel site_id="br#sonlife-broadcasting-network" xmltv_id="SBNInternational.us">SBN International</channel>
+    <channel site_id="br#sbt" xmltv_id="SBT.br">SBT</channel>
+    <channel site_id="br#sbt-belem-hd" xmltv_id="SBTBelemHD.br">SBT Belem HD</channel>
+    <channel site_id="br#sbt-brasilia" xmltv_id="SBTBrasilia.br">SBT Brasilia</channel>
+    <channel site_id="br#sbt-brasilia-hd" xmltv_id="SBTBrasiliaHD.br">SBT Brasília HD</channel>
+    <channel site_id="br#sbt-criciuma" xmltv_id="SBTCriciuma.br">SBT Criciuma</channel>
+    <channel site_id="br#sbt-cuiaba" xmltv_id="SBTCuiaba.br">SBT Cuiabá</channel>
+    <channel site_id="br#sbt-cuiaba-hd" xmltv_id="SBTCuiabaHD.br">SBT Cuiabá HD</channel>
+    <channel site_id="br#sbt-hd" xmltv_id="SBTHD.br">SBT HD</channel>
+    <channel site_id="br#sbt-ms-hd" xmltv_id="SBTMSHD.br">SBT MS HD</channel>
+    <channel site_id="br#sbt-maceio" xmltv_id="SBTMaceio.br">SBT Maceio</channel>
+    <channel site_id="br#sbt-para" xmltv_id="SBTPara.br">SBT Pará</channel>
+    <channel site_id="br#sbt-piaui" xmltv_id="SBTPiaui.br">SBT Piaui</channel>
+    <channel site_id="br#sbt-rs" xmltv_id="SBTRS.br">SBT RS</channel>
+    <channel site_id="br#sbt-rs-hd" xmltv_id="SBTRSHD.br">SBT RS HD</channel>
+    <channel site_id="br#sbt-rio" xmltv_id="SBTRio.br">SBT Rio</channel>
+    <channel site_id="br#sbt-rio-hd" xmltv_id="SBTRioHD.br">SBT Rio HD</channel>
+    <channel site_id="br#sbt-santa-catarina-hd" xmltv_id="SBTSantaCatarinaHD.br">SBT Santa Catarina HD</channel>
+    <channel site_id="br#sbt-sergipe" xmltv_id="SBTSergipe.br">SBT Sergipe</channel>
+    <channel site_id="br#sbt-sergipe-hd" xmltv_id="SBTSergipeHD.br">SBT Sergipe HD</channel>
+    <channel site_id="br#sbt-s-o-paulo-hd" xmltv_id="SBTSaoPauloHD.br">SBT São Paulo HD</channel>
+    <channel site_id="br#sbt-tv-ponta-verde-hd" xmltv_id="SBTTVPontaVerdeHD.br">SBT TV Ponta Verde HD</channel>
+    <channel site_id="br#sbt-tocantins" xmltv_id="SBTTocantins.br">SBT Tocantins</channel>
+    <channel site_id="br#sbt-tocantins-1" xmltv_id="SBTTocantinsHD.br">SBT Tocantins HD</channel>
+    <channel site_id="br#sbt-vitoria" xmltv_id="SBTVitoria.br">SBT Vitoria</channel>
+    <channel site_id="br#sic" xmltv_id="SIC.pt">SIC</channel>
+    <channel site_id="br#sic-tv" xmltv_id="SICTV.br">SIC TV</channel>
+    <channel site_id="br#sic-tv-hd" xmltv_id="SICTVHD.br">SIC TV HD</channel>
+    <channel site_id="br#sesctv" xmltv_id="SescTV.br">SescTV</channel>
+    <channel site_id="br#sextreme-brazil" xmltv_id="Sextreme.br">Sextreme</channel>
+    <channel site_id="br#sexy-hot" xmltv_id="SexyHot.br">Sexy Hot</channel>
+    <channel site_id="br#sexy-hot-hd" xmltv_id="SexyHotHD.br">Sexy Hot HD</channel>
+    <channel site_id="br#canal-smithsonian-hd" xmltv_id="SmithsonianChannelHDLatinAmerica.us">Smithsonian Channel HD Latin America</channel>
+    <channel site_id="br#sony" xmltv_id="SonyChannelBrasil.us">Sony Channel Brasil</channel>
+    <channel site_id="br#sony-hd" xmltv_id="SonyChannelHDBrasil.us">Sony Channel HD Brasil</channel>
+    <channel site_id="br#space" xmltv_id="SpaceBrasil.ar">Space Brasil</channel>
+    <channel site_id="br#space-hd" xmltv_id="SpaceHDBrasil.ar">Space HD Brasil</channel>
+    <channel site_id="br#sportv" xmltv_id="SporTV.br">SporTV</channel>
+    <channel site_id="br#sportv2" xmltv_id="SporTV2.br">SporTV 2</channel>
+    <channel site_id="br#sportv2-hd" xmltv_id="SporTV2HD.br">SporTV 2 HD</channel>
+    <channel site_id="br#sportv3" xmltv_id="SporTV3.br">SporTV 3</channel>
+    <channel site_id="br#sportv3-hd" xmltv_id="SporTV3HD.br">SporTV 3 HD</channel>
+    <channel site_id="br#sportv-hd" xmltv_id="SporTVHD.br">SporTV HD</channel>
+    <channel site_id="br#fox" xmltv_id="StarChannelBrasil.us">Star Channel Brasil</channel>
+    <channel site_id="br#fox-hd" xmltv_id="StarChannelHDBrasil.us">Star Channel HD Brasil</channel>
+    <channel site_id="br#fox-premium-2" xmltv_id="StarHits2Brasil.us">Star Hits 2 Brasil</channel>
+    <channel site_id="br#fox-premium-2-hd" xmltv_id="StarHits2HDBrasil.us">Star Hits 2 HD Brasil</channel>
+    <channel site_id="br#fox-premium-1" xmltv_id="StarHitsBrasil.us">Star Hits Brasil</channel>
+    <channel site_id="br#fox-premium-1-hd" xmltv_id="StarHitsHDBrasil.us">Star Hits HD Brasil</channel>
+    <channel site_id="br#fox-life" xmltv_id="StarLifeBrasil.us">Star Life Brasil</channel>
+    <channel site_id="br#fox-life-hd" xmltv_id="StarLifeHDBrasil.us">Star Life HD Brasil</channel>
+    <channel site_id="br#studio-universal" xmltv_id="StudioUniversalBrasil.us">Studio Universal Brasil</channel>
+    <channel site_id="br#studio-universal-hd" xmltv_id="StudioUniversalHDBrasil.us">Studio Universal HD Brasil</channel>
+    <channel site_id="br#sundance-hd-brasil" xmltv_id="SundanceTVHDBrasil.us">Sundance TV HD Brasil</channel>
+    <channel site_id="br#syfy" xmltv_id="SyfyBrasil.us">Syfy Brasil</channel>
+    <channel site_id="br#syfy-hd" xmltv_id="SyfyHDBrasil.br">Syfy HD Brasil</channel>
+    <channel site_id="br#tbs" xmltv_id="TBSBrasil.us">TBS Brasil</channel>
+    <channel site_id="br#tbs-hd" xmltv_id="TBSHDBrasil.us">TBS HD Brasil</channel>
+    <channel site_id="br#tcm" xmltv_id="TCMBrasil.us">TCM Brasil</channel>
+    <channel site_id="br#tlc" xmltv_id="TLCBrasil.us">TLC Brasil</channel>
+    <channel site_id="br#tlc-hd" xmltv_id="TLCHDBrasil.us">TLC HD Brasil</channel>
+    <channel site_id="br#tnt" xmltv_id="TNTBrasil.us">TNT Brasil</channel>
+    <channel site_id="br#tnt-hd" xmltv_id="TNTHDBrasil.us">TNT HD Brasil</channel>
+    <channel site_id="br#tnt-series" xmltv_id="TNTSeriesBrasil.us">TNT Series Brasil</channel>
+    <channel site_id="br#tnt-series-hd" xmltv_id="TNTSeriesHDBrasil.us">TNT Series HD Brasil</channel>
+    <channel site_id="br#esporte-interativo-1" xmltv_id="TNTSports.ar">TNT Sports</channel>
+    <channel site_id="br#tv-a-critica" xmltv_id="TVACritica.br">TV A Crítica</channel>
+    <channel site_id="br#tv-a-critica-hd" xmltv_id="TVACriticaHD.br">TV A Crítica HD</channel>
+    <channel site_id="br#tv-aldeia" xmltv_id="TVAldeia.br">TV Aldeia</channel>
+    <channel site_id="br#tv-alesp" xmltv_id="TVAlesp.br">TV Alesp</channel>
+    <channel site_id="br#tv-allamanda" xmltv_id="TVAllamanda.br">TV Allamanda</channel>
+    <channel site_id="br#tv-allamanda-hd" xmltv_id="TVAllamandaHD.br">TV Allamanda HD</channel>
+    <channel site_id="br#tv-alterosa" xmltv_id="TVAlterosa.br">TV Alterosa</channel>
+    <channel site_id="br#tv-alterosa-hd" xmltv_id="TVAlterosaHD.br">TV Alterosa HD</channel>
+    <channel site_id="br#tv-alvorada-do-sul-hd" xmltv_id="TVAlvoradadoSulHD.br">TV Alvorada do Sul HD</channel>
+    <channel site_id="br#tv-amapa" xmltv_id="TVAmapa.br">TV Amapá</channel>
+    <channel site_id="br#tv-amapa-hd" xmltv_id="TVAmapaHD.br">TV Amapá HD</channel>
+    <channel site_id="br#tv-amazonia" xmltv_id="TVAmazonia.br">TV Amazônia</channel>
+    <channel site_id="br#tv-amazonia-hd" xmltv_id="TVAmazoniaHD.br">TV Amazônia HD</channel>
+    <channel site_id="br#tv-ambiental" xmltv_id="TVAmbiental.br">TV Ambiental</channel>
+    <channel site_id="br#globo-anhanguera" xmltv_id="TVAnhanguera.br">TV Anhanguera</channel>
+    <channel site_id="br#tv-anhanguera-hd" xmltv_id="TVAnhangueraHD.br">TV Anhanguera HD</channel>
+    <channel site_id="br#tv-anhanguera-palmas" xmltv_id="TVAnhangueraPalmas.br">TV Anhanguera Palmas</channel>
+    <channel site_id="br#tv-anhanguera-palmas-hd" xmltv_id="TVAnhangueraPalmasHD.br">TV Anhanguera Palmas HD</channel>
+    <channel site_id="br#tv-antena-10" xmltv_id="TVAntena10.br">TV Antena 10</channel>
+    <channel site_id="br#tv-antena-10-hd" xmltv_id="TVAntena10HD.br">TV Antena 10 HD</channel>
+    <channel site_id="br#tv-aparecida" xmltv_id="TVAparecida.br">TV Aparecida</channel>
+    <channel site_id="br#tv-aparecida-hd" xmltv_id="TVAparecidaHD.br">TV Aparecida HD</channel>
+    <channel site_id="br#tv-aperipe" xmltv_id="TVAperipe.br">TV Aperipê</channel>
+    <channel site_id="br#tv-aperipe-hd" xmltv_id="TVAperipeHD.br">TV Aperipê HD</channel>
+    <channel site_id="br#tv-apoio-hd" xmltv_id="TVApoioHD.br">TV Apoio HD</channel>
+    <channel site_id="br#tv-arapuan" xmltv_id="TVArapuan.br">TV Arapuan</channel>
+    <channel site_id="br#tv-arapuan-hd" xmltv_id="TVArapuanHD.br">TV Arapuan HD</channel>
+    <channel site_id="br#tv-aratu" xmltv_id="TVAratu.br">TV Aratu</channel>
+    <channel site_id="br#tv-aratu-hd" xmltv_id="TVAratuHD.br">TV Aratu HD</channel>
+    <channel site_id="br#assembleia-legislativa-ceara-hd" xmltv_id="TVAssembleiaCearaHD.br">TV Assembleia Ceará HD</channel>
+    <channel site_id="br#tv-assembleia-de-minas-gerais" xmltv_id="TVAssembleiadeMinasGerais.br">TV Assembleia de Minas Gerais</channel>
+    <channel site_id="br#tv-atalaia" xmltv_id="TVAtalaia.br">TV Atalaia</channel>
+    <channel site_id="br#tv-atalaia-hd" xmltv_id="TVAtalaiaHD.br">TV Atalaia HD</channel>
+    <channel site_id="br#globo-tv-bahia" xmltv_id="TVBahia.br">TV Bahia</channel>
+    <channel site_id="br#tv-bahia-hd" xmltv_id="TVBahiaHD.br">TV Bahia HD</channel>
+    <channel site_id="br#band-s-o-luis-tv-maranh-o" xmltv_id="TVBandeirantesMaranhao.br">TV Bandeirantes Maranhão</channel>
+    <channel site_id="br#band-s-o-luis-tv-maranh-o-hd" xmltv_id="TVBandeirantesMaranhaoHD.br">TV Bandeirantes Maranhão HD</channel>
+    <channel site_id="br#tv-boa-vista" xmltv_id="TVBoaVista.br">TV Boa Vista</channel>
+    <channel site_id="br#tv-boa-vista-hd" xmltv_id="TVBoaVistaHD.br">TV Boa Vista HD</channel>
+    <channel site_id="br#tv-borborema" xmltv_id="TVBorborema.br">TV Borborema</channel>
+    <channel site_id="br#tv-brasil" xmltv_id="TVBrasil.br">TV Brasil</channel>
+    <channel site_id="br#tv-brasil-hd" xmltv_id="TVBrasilHD.br">TV Brasil HD</channel>
+    <channel site_id="br#tv-brasil-rio-de-janeiro" xmltv_id="TVBrasilRiodeJaneiro.br">TV Brasil Rio de Janeiro</channel>
+    <channel site_id="br#tv-brasil-rio-de-janeiro-hd" xmltv_id="TVBrasilRiodeJaneiroHD.br">TV Brasil Rio de Janeiro HD</channel>
+    <channel site_id="br#tv-brasil-s-o-paulo" xmltv_id="TVBrasilSaoPaulo.br">TV Brasil São Paulo</channel>
+    <channel site_id="br#tv-brasil-s-o-paulo-hd" xmltv_id="TVBrasilSaoPauloHD.br">TV Brasil São Paulo HD</channel>
+    <channel site_id="br#tv-brasilia" xmltv_id="TVBrasilia.br">TV Brasília</channel>
+    <channel site_id="br#tv-brasilia-hd" xmltv_id="TVBrasiliaHD.br">TV Brasília HD</channel>
+    <channel site_id="br#tv-cabo-branco" xmltv_id="TVCaboBranco.br">TV Cabo Branco</channel>
+    <channel site_id="br#tv-cabo-branco-hd" xmltv_id="TVCaboBrancoHD.br">TV Cabo Branco HD</channel>
+    <channel site_id="br#canc-o-nova" xmltv_id="TVCancaoNova.br">TV Canção Nova</channel>
+    <channel site_id="br#canc-o-nova-hd" xmltv_id="TVCancaoNovaHD.br">TV Canção Nova HD</channel>
+    <channel site_id="br#tv-capixaba" xmltv_id="TVCapixaba.br">TV Capixaba</channel>
+    <channel site_id="br#tv-capixaba-hd" xmltv_id="TVCapixabaHD.br">TV Capixaba HD</channel>
+    <channel site_id="br#tv-catarina-hd" xmltv_id="TVCatarinaHD.br">TV Catarina HD</channel>
+    <channel site_id="br#tv-catarina" xmltv_id="TVCatarina.br">TV Catarina?</channel>
+    <channel site_id="br#tv-ceara" xmltv_id="TVCeara.br">TV Ceará</channel>
+    <channel site_id="br#tv-ceara-hd" xmltv_id="TVCearaHD.br">TV Ceará HD</channel>
+    <channel site_id="br#tv-cei" xmltv_id="TVCei.br">TV Cei</channel>
+    <channel site_id="br#tv-centro-america-cuiaba" xmltv_id="TVCentroAmericaCuiaba.br">TV Centro América Cuiabá</channel>
+    <channel site_id="br#tv-centro-america-cuiaba-hd" xmltv_id="TVCentroAmericaCuiabaHD.br">TV Centro América Cuiabá HD</channel>
+    <channel site_id="br#tv-cidadania" xmltv_id="TVCidadania.br">TV Cidadania</channel>
+    <channel site_id="br#tv-cidade" xmltv_id="TVCidade.br">TV Cidade</channel>
+    <channel site_id="br#tv-cidade-hd" xmltv_id="TVCidadeHD.br">TV Cidade HD</channel>
+    <channel site_id="br#tv-cidade-s-o-luis-hd" xmltv_id="TVCidadeSaoLuisHD.br">TV Cidade São Luis HD</channel>
+    <channel site_id="br#tv-cidade-verde-hd" xmltv_id="TVCidadeVerdeHD.br">TV Cidade Verde HD</channel>
+    <channel site_id="br#tv-clube" xmltv_id="TVClube.br">TV Clube</channel>
+    <channel site_id="br#tv-clube-hd" xmltv_id="TVClubeHD.br">TV Clube HD</channel>
+    <channel site_id="br#tv-comunicac-es-interativas-hd" xmltv_id="TVComunicacoesInterativasHD.br">TV Comunicações Interativas HD</channel>
+    <channel site_id="br#tv-comunitaria" xmltv_id="TVComunitaria.br">TV Comunitária</channel>
+    <channel site_id="br#tv-correio" xmltv_id="TVCorreio.br">TV Correio</channel>
+    <channel site_id="br#tv-correio-hd" xmltv_id="TVCorreioHD.br">TV Correio HD</channel>
+    <channel site_id="br#cultura" xmltv_id="TVCultura.br">TV Cultura</channel>
+    <channel site_id="br#multicultura-educac-o" xmltv_id="TVCulturaEducacao.br">TV Cultura Educação</channel>
+    <channel site_id="br#cultura-hd" xmltv_id="TVCulturaHD.br">TV Cultura HD</channel>
+    <channel site_id="br#tv-camara" xmltv_id="TVCamara.br">TV Câmara</channel>
+    <channel site_id="br#tv-camara-hd" xmltv_id="TVCamaraHD.br">TV Câmara HD</channel>
+    <channel site_id="br#tv-difusora-s-o-luis" xmltv_id="TVDifusoraSaoLuis.br">TV Difusora São Luís</channel>
+    <channel site_id="br#tv-diario" xmltv_id="TVDiario.br">TV Diário</channel>
+    <channel site_id="br#tv-diario-hd" xmltv_id="TVDiarioHD.br">TV Diário HD</channel>
+    <channel site_id="br#tv-educativa" xmltv_id="TVEducativa.br">TV Educativa</channel>
+    <channel site_id="br#tv-educativa-da-bahia-hd" xmltv_id="TVEducativadaBahiaHD.br">TV Educativa da Bahia HD</channel>
+    <channel site_id="br#tv-educativa-de-porto-alegre-hd" xmltv_id="TVEducativadePortoAlegreHD.br">TV Educativa de Porto Alegre HD</channel>
+    <channel site_id="br#tv-em-tempo-hd" xmltv_id="TVEmTempoHD.br">TV Em Tempo HD</channel>
+    <channel site_id="br#tv-equinocio" xmltv_id="TVEquinocio.br">TV Equinócio</channel>
+    <channel site_id="br#tv-equinocio-hd" xmltv_id="TVEquinocioHD.br">TV Equinócio HD</channel>
+    <channel site_id="br#tv-escola" xmltv_id="TVEscola.br">TV Escola</channel>
+    <channel site_id="br#tv-feliz-hd" xmltv_id="TVFelizHD.br">TV Feliz HD</channel>
+    <channel site_id="br#gazeta-hd" xmltv_id="TVGazetaHD.br">TV Gazeta HD</channel>
+    <channel site_id="br#tv-gazeta-hd" xmltv_id="TVGazetaHD.br">TV Gazeta HD</channel>
+    <channel site_id="br#tv-gazeta-rio-branco" xmltv_id="TVGazetaRioBranco.br">TV Gazeta Rio Branco</channel>
+    <channel site_id="br#tv-gazeta-rio-branco-hd" xmltv_id="TVGazetaRioBrancoHD.br">TV Gazeta Rio Branco HD</channel>
+    <channel site_id="br#tv-gazeta-sul" xmltv_id="TVGazetaSul.br">TV Gazeta Sul</channel>
+    <channel site_id="br#globo-recife" xmltv_id="TVGloboNordeste.br">TV Globo Nordeste</channel>
+    <channel site_id="br#globo-rj" xmltv_id="TVGloboRiodeJaneiro.br">TV Globo Rio de Janeiro</channel>
+    <channel site_id="br#globo-rio-hd" xmltv_id="TVGloboRiodeJaneiroHD.br">TV Globo Rio de Janeiro HD</channel>
+    <channel site_id="br#globo-sp" xmltv_id="TVGloboSaoPaulo.br">TV Globo São Paulo</channel>
+    <channel site_id="br#globo-s-o-paulo-hd" xmltv_id="TVGloboSaoPauloHD.br">TV Globo São Paulo HD</channel>
+    <channel site_id="br#tv-guara-hd" xmltv_id="TVGuaraHD.br">TV Guará HD</channel>
+    <channel site_id="br#horizonte-tv" xmltv_id="TVHorizonte.br">TV Horizonte</channel>
+    <channel site_id="br#tv-iguacu-hd" xmltv_id="TVIguacuHD.br">TV Iguaçu HD</channel>
+    <channel site_id="br#tv-imperial" xmltv_id="TVImperial.br">TV Imperial</channel>
+    <channel site_id="br#tv-imperial-hd" xmltv_id="TVImperialHD.br">TV Imperial HD</channel>
+    <channel site_id="br#tv-integrac-o-uberlandia-hd" xmltv_id="TVIntegracaoUberlandiaHD.br">TV Integração Uberlândia HD</channel>
+    <channel site_id="br#tv-interativa" xmltv_id="TVInterativa.br">TV Interativa</channel>
+    <channel site_id="br#tv-interativa-hd" xmltv_id="TVInterativaHD.br">TV Interativa HD</channel>
+    <channel site_id="br#tv-itarare" xmltv_id="TVItarare.br">TV Itararé</channel>
+    <channel site_id="br#tv-jangadeiro" xmltv_id="TVJangadeiro.br">TV Jangadeiro</channel>
+    <channel site_id="br#tv-jangadeiro-hd" xmltv_id="TVJangadeiroHD.br">TV Jangadeiro HD</channel>
+    <channel site_id="br#tv-jornal" xmltv_id="TVJornal.br">TV Jornal</channel>
+    <channel site_id="br#tv-jornal-hd" xmltv_id="TVJornalHD.br">TV Jornal HD</channel>
+    <channel site_id="br#tv-justica-1" xmltv_id="TVJustica.br">TV Justiça</channel>
+    <channel site_id="br#globo-belem-liberal" xmltv_id="TVLiberal.br">TV Liberal</channel>
+    <channel site_id="br#tv-liberal" xmltv_id="TVLiberal.br">TV Liberal</channel>
+    <channel site_id="br#tv-liberal-hd" xmltv_id="TVLiberalHD.br">TV Liberal HD</channel>
+    <channel site_id="br#tv-ms-hd" xmltv_id="TVMSHD.br">TV MS HD</channel>
+    <channel site_id="br#tv-macapa-hd" xmltv_id="TVMacapaHD.br">TV Macapá HD</channel>
+    <channel site_id="br#tv-maior-redetv-pb" xmltv_id="TVMaior.br">TV Maior</channel>
+    <channel site_id="br#tv-manaira-hd" xmltv_id="TVManairaHD.br">TV Manaira HD</channel>
+    <channel site_id="br#tv-manaira" xmltv_id="TVManaira.br">TV Manaíra</channel>
+    <channel site_id="br#tv-mar-alagoas" xmltv_id="TVMarAlagoas.br">TV Mar Alagoas</channel>
+    <channel site_id="br#tv-maranhense-hd" xmltv_id="TVMaranhenseHD.br">TV Maranhense HD</channel>
+    <channel site_id="br#tv-meridional" xmltv_id="TVMeridional.br">TV Meridional</channel>
+    <channel site_id="br#tv-meridional-hd" xmltv_id="TVMeridionalHD.br">TV Meridional HD</channel>
+    <channel site_id="br#tv-mirante-s-o-luis-hd" xmltv_id="TVMiranteSaoLuisHD.br">TV Mirante São Luis HD</channel>
+    <channel site_id="br#tv-mirante-s-o-luis" xmltv_id="TVMiranteSaoLuis.br">TV Mirante São Luís</channel>
+    <channel site_id="br#tv-morena" xmltv_id="TVMorena.br">TV Morena</channel>
+    <channel site_id="br#tv-morena-hd" xmltv_id="TVMorenaHD.br">TV Morena HD</channel>
+    <channel site_id="br#tv-mundial" xmltv_id="TVMundial.br">TV Mundial</channel>
+    <channel site_id="br#tv-mundial-hd" xmltv_id="TVMundialHD.br">TV Mundial HD</channel>
+    <channel site_id="br#nbr" xmltv_id="TVNBR.br">TV NBR</channel>
+    <channel site_id="br#tv-novo-tempo" xmltv_id="TVNovoTempoBrasil.us">TV Novo Tempo Brasil</channel>
+    <channel site_id="br#tv-novo-tempo-hd" xmltv_id="TVNovoTempoHDBrasil.us">TV Novo Tempo HD Brasil</channel>
+    <channel site_id="br#tv-pajucara" xmltv_id="TVPajucara.br">TV Pajuçara</channel>
+    <channel site_id="br#tv-pajucara-hd" xmltv_id="TVPajucaraHD.br">TV Pajuçara HD</channel>
+    <channel site_id="br#tv-pampa-hd" xmltv_id="TVPampaHD.br">TV Pampa HD</channel>
+    <channel site_id="br#tv-pantanal" xmltv_id="TVPantanal.br">TV Pantanal</channel>
+    <channel site_id="br#tv-pantanal-hd" xmltv_id="TVPantanalHD.br">TV Pantanal HD</channel>
+    <channel site_id="br#tv-paranaiba-hd" xmltv_id="TVParanaibaHD.br">TV Paranaíba HD</channel>
+    <channel site_id="br#e-parana-hd" xmltv_id="TVParanaTurismoHD.br">TV Paraná Turismo HD</channel>
+    <channel site_id="br#tv-paraiba" xmltv_id="TVParaiba.br">TV Paraíba</channel>
+    <channel site_id="br#tv-paraiba-hd" xmltv_id="TVParaibaHD.br">TV Paraíba HD</channel>
+    <channel site_id="br#tv-ponta-negra" xmltv_id="TVPontaNegra.br">TV Ponta Negra</channel>
+    <channel site_id="br#tv-ponta-negra-hd" xmltv_id="TVPontaNegraHD.br">TV Ponta Negra HD</channel>
+    <channel site_id="br#tv-rio-branco" xmltv_id="TVRioBranco.br">TV Rio Branco</channel>
+    <channel site_id="br#tv-rio-branco-hd" xmltv_id="TVRioBrancoHD.br">TV Rio Branco HD</channel>
+    <channel site_id="br#tv-rio-sul-hd" xmltv_id="TVRioSulHD.br">TV Rio Sul HD</channel>
+    <channel site_id="br#tv-rondonia" xmltv_id="TVRondonia.br">TV Rondônia</channel>
+    <channel site_id="br#tv-rondonia-hd" xmltv_id="TVRondoniaHD.br">TV Rondônia HD</channel>
+    <channel site_id="br#tv-roraima-hd" xmltv_id="TVRoraimaHD.br">TV Roraima HD</channel>
+    <channel site_id="br#tv-ra-tim-bum-hd" xmltv_id="TVRaTimBumHD.br">TV Rá Tim Bum! HD</channel>
+    <channel site_id="br#ra-tim-bum" xmltv_id="TVRaTimBum.br">TV Rá-Tim-Bum</channel>
+    <channel site_id="br#tv-santa-cruz-hd" xmltv_id="TVSantaCruzHD.br">TV Santa Cruz HD</channel>
+    <channel site_id="br#tv-senado" xmltv_id="TVSenado.cl">TV Senado</channel>
+    <channel site_id="br#tv-senado-hd" xmltv_id="TVSenadoHD.cl">TV Senado HD</channel>
+    <channel site_id="br#tv-sergipe-hd" xmltv_id="TVSergipeHD.br">TV Sergipe HD</channel>
+    <channel site_id="br#sbt-goiania-tv-serra-dourada" xmltv_id="TVSerraDourada.br">TV Serra Dourada</channel>
+    <channel site_id="br#tv-serra-dourada-hd" xmltv_id="TVSerraDouradaHD.br">TV Serra Dourada HD</channel>
+    <channel site_id="br#tv-s-o-luis-hd" xmltv_id="TVSaoLuisHD.br">TV São Luis HD</channel>
+    <channel site_id="br#tv-s-o-luis" xmltv_id="TVSaoLuis.br">TV São Luís</channel>
+    <channel site_id="br#tv-tambau" xmltv_id="TVTambau.br">TV Tambaú</channel>
+    <channel site_id="br#tv-tambau-hd" xmltv_id="TVTambauHD.br">TV Tambaú HD</channel>
+    <channel site_id="br#tv-tribuna-1" xmltv_id="TVTribuna.br">TV Tribuna</channel>
+    <channel site_id="br#tv-tribuna-hd" xmltv_id="TVTribunaHD.br">TV Tribuna HD</channel>
+    <channel site_id="br#tv-tropical" xmltv_id="TVTropical.br">TV Tropical</channel>
+    <channel site_id="br#tv-tropical-hd" xmltv_id="TVTropicalHD.br">TV Tropical HD</channel>
+    <channel site_id="br#tv-tucuju" xmltv_id="TVTucuju.br">TV Tucuju</channel>
+    <channel site_id="br#canal-universitario-tv-ufsc" xmltv_id="TVUFSC.br">TV UFSC</channel>
+    <channel site_id="br#tv-ufsc-hd" xmltv_id="TVUFSCHD.br">TV UFSC HD</channel>
+    <channel site_id="br#tv-universidade-de-porto-alegre" xmltv_id="TVUniversidadedePortoAlegre.br">TV Universidade de Porto Alegre</channel>
+    <channel site_id="br#tv-uni-o" xmltv_id="TVUniao.br">TV União</channel>
+    <channel site_id="br#tv-uni-o-hd" xmltv_id="TVUniaoHD.br">TV União HD</channel>
+    <channel site_id="br#tv-verdes-mares-1" xmltv_id="TVVerdesMares.br">TV Verdes Mares</channel>
+    <channel site_id="br#tv-verdes-mares-cariri" xmltv_id="TVVerdesMaresCariri.br">TV Verdes Mares Cariri</channel>
+    <channel site_id="br#tv-verdes-mares-hd" xmltv_id="TVVerdesMaresHD.br">TV Verdes Mares HD</channel>
+    <channel site_id="br#tv-vitoria" xmltv_id="TVVitoria.br">TV Vitória</channel>
+    <channel site_id="br#tv-vitoria-hd" xmltv_id="TVVitoriaHD.br">TV Vitória HD</channel>
+    <channel site_id="br#tv5" xmltv_id="TV5MondeAmeriqueLatine.fr">TV5Monde Amérique Latine</channel>
+    <channel site_id="br#tve" xmltv_id="TVE.br">TVE</channel>
+    <channel site_id="br#tve-bahia" xmltv_id="TVEBahia.br">TVE Bahia</channel>
+    <channel site_id="br#tvt" xmltv_id="TVT.br">TVT</channel>
+    <channel site_id="br#tvt-hd" xmltv_id="TVTHD.br">TVT HD</channel>
+    <channel site_id="br#telecine-action" xmltv_id="TelecineAction.br">Telecine Action</channel>
+    <channel site_id="br#telecine-action-hd" xmltv_id="TelecineActionHD.br">Telecine Action HD</channel>
+    <channel site_id="br#telecine-cult" xmltv_id="TelecineCult.br">Telecine Cult</channel>
+    <channel site_id="br#telecine-cult-hd" xmltv_id="TelecineCultHD.br">Telecine Cult HD</channel>
+    <channel site_id="br#telecine-fun" xmltv_id="TelecineFun.br">Telecine Fun</channel>
+    <channel site_id="br#telecine-fun-hd" xmltv_id="TelecineFunHD.br">Telecine Fun HD</channel>
+    <channel site_id="br#telecine-pipoca" xmltv_id="TelecinePipoca.br">Telecine Pipoca</channel>
+    <channel site_id="br#telecine-pipoca-hd" xmltv_id="TelecinePipocaHD.br">Telecine Pipoca HD</channel>
+    <channel site_id="br#telecine-premium" xmltv_id="TelecinePremium.br">Telecine Premium</channel>
+    <channel site_id="br#telecine-premium-hd" xmltv_id="TelecinePremiumHD.br">Telecine Premium HD</channel>
+    <channel site_id="br#telecine-touch" xmltv_id="TelecineTouch.br">Telecine Touch</channel>
+    <channel site_id="br#telecine-touch-hd" xmltv_id="TelecineTouchHD.br">Telecine Touch HD</channel>
+    <channel site_id="br#telefe" xmltv_id="Telefe.ar">Telefe</channel>
+    <channel site_id="br#telefe-internacional" xmltv_id="TelefeInternacional.ar">Telefe Internacional</channel>
+    <channel site_id="br#terra-viva" xmltv_id="TerraViva.br">Terra Viva</channel>
+    <channel site_id="br#terra-viva-hd" xmltv_id="TerraVivaHD.br">Terra Viva HD</channel>
+    <channel site_id="br#trace-brazuca" xmltv_id="TraceBrazuca.fr">Trace Brazuca</channel>
+    <channel site_id="br#travel-box-brazil" xmltv_id="TravelBoxBrazil.br">Travel Box Brazil</channel>
+    <channel site_id="br#travel-box-brazil-hd" xmltv_id="TravelBoxBrazilHD.br">Travel Box Brazil HD</channel>
+    <channel site_id="br#universal" xmltv_id="UniversalTVBrasil.us">Universal TV Brasil</channel>
+    <channel site_id="br#universal-hd" xmltv_id="UniversalTVHDBrasil.us">Universal TV HD Brasil</channel>
+    <channel site_id="br#univesp-tv" xmltv_id="UnivespTV.br">Univesp TV</channel>
+    <channel site_id="br#vh1" xmltv_id="VH1Brasil.us">VH1 Brasil</channel>
+    <channel site_id="br#vh1-hd" xmltv_id="VH1HDBrasil.us">VH1 HD Brasil</channel>
+    <channel site_id="br#venus-tv-sd" xmltv_id="Venus.ar">Venus</channel>
+    <channel site_id="br#viva" xmltv_id="Viva.br">Viva</channel>
+    <channel site_id="br#viva-hd" xmltv_id="VivaHD.br">Viva HD</channel>
+    <channel site_id="br#warner-channel" xmltv_id="WarnerChannelBrasil.us">Warner Channel Brasil</channel>
+    <channel site_id="br#warner-channel-hd" xmltv_id="WarnerChannelHDBrasil.us">Warner Channel HD Brasil</channel>
+    <channel site_id="br#woohoo" xmltv_id="WooHoo.br">WooHoo</channel>
+    <channel site_id="br#woohoo-hd" xmltv_id="WooHooHD.br">WooHoo HD</channel>
+    <channel site_id="br#zoomoo" xmltv_id="ZooMooBrasil.nz">ZooMoo Brasil</channel>
+    <channel site_id="br#zoomoo-hd" xmltv_id="ZooMooKidsHDBrasil.nz">ZooMoo Kids HD Brasil</channel>
+    <channel site_id="br#trutv" xmltv_id="truTVBrasil.us">truTV Brasil</channel>
+    <channel site_id="br#trutv-hd" xmltv_id="truTVHDBrasil.us">truTV HD Brasil</channel>
+  </channels>
+</site>
