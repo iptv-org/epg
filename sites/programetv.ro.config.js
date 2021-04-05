@@ -1,4 +1,3 @@
-const urlParser = require('url')
 const dayjs = require('dayjs')
 const jsdom = require('jsdom')
 const { JSDOM } = jsdom
