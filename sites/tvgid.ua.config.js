@@ -1,4 +1,3 @@
-const urlParser = require('url')
 const jsdom = require('jsdom')
 const iconv = require('iconv-lite')
 const { JSDOM } = jsdom
