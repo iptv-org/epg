@@ -110,7 +110,7 @@
     <channel site_id="Doma+TV" xmltv_id="DomaTV.hr">Doma TV</channel>
     <channel site_id="Dorcel+TV" xmltv_id="DorcelTV.nl">Dorcel TV</channel>
     <channel site_id="Dorcel+XXX" xmltv_id="DorcelXXX.nl">Dorcel XXX</channel>
-    <channel site_id="ducktv" xmltv_id="DuckTV.sk">Duck TV</channel>
+    <channel site_id="ducktv" xmltv_id="DuckTVSD.sk">Duck TV SD</channel>
     <channel site_id="ducktv+plus" xmltv_id="DuckTVPlus.sk">Duck TV Plus</channel>
     <channel site_id="Duna" xmltv_id="Duna.hu">Duna</channel>
     <channel site_id="Duna+World" xmltv_id="DunaWorld.hu">Duna World</channel>
@@ -144,7 +144,7 @@
     <channel site_id="Fashion+TV+F.MEN" xmltv_id="FashionTVFMen.fr">FashionTV F-Men</channel>
     <channel site_id="FashionTV+HD" xmltv_id="FashionTVHDEurope.fr">FashionTV HD Europe</channel>
     <channel site_id="Fast%26Funbox+HD" xmltv_id="FastFunBoxHD.us">Fast&amp;Fun Box HD</channel>
-    <channel site_id="FightBox" xmltv_id="FightBox.us">FightBox</channel>
+    <channel site_id="FightBox" xmltv_id="FightBoxHD.us">FightBox HD</channel>
     <channel site_id="Film+Caf%E9" xmltv_id="FilmCafeHungary.hu">Film Café Hungary</channel>
     <channel site_id="Film+Europe" xmltv_id="FilmEurope.cz">Film Europe</channel>
     <channel site_id="Film+Europe+%2B" xmltv_id="FilmEuropePlus.cz">Film Europe +</channel>
@@ -441,15 +441,13 @@
     <channel site_id="Sony+Max" xmltv_id="SonyMaxHungary.in">Sony Max Hungary</channel>
     <channel site_id="Sony+Movie" xmltv_id="SonyMovieChannelHungary.us">Sony Movie Channel Hungary</channel>
     <channel site_id="Sorozat%2B" xmltv_id="SorozatPlus.hu">Sorozat+</channel>
-    <channel site_id="Spektrum" xmltv_id="Spektrum.cz">Spektrum</channel>
     <channel site_id="Spektrum+%28hu%29" xmltv_id="Spektrum.hu">Spektrum</channel>
-    <channel site_id="Spektrum+Home" xmltv_id="SpektrumHome.cz">Spektrum Home</channel>
     <channel site_id="Spektrum+Home+%28hu%29" xmltv_id="SpektrumHome.hu">Spektrum Home</channel>
     <channel site_id="Sport+5" xmltv_id="Sport5.cz">Sport 5</channel>
-    <channel site_id="Sport1" xmltv_id="Sport1.cz">Sport1</channel>
-    <channel site_id="Sport1+%28hu%29" xmltv_id="Sport1.hu">Sport1</channel>
-    <channel site_id="Sport2" xmltv_id="Sport2.cz">Sport2</channel>
-    <channel site_id="Sport2+%28hu%29" xmltv_id="Sport2.hu">Sport2</channel>
+    <channel site_id="Sport1" xmltv_id="Sport1Czechia.hu">Sport1 Czechia</channel>
+    <channel site_id="Sport1+%28hu%29" xmltv_id="Sport1Hungary.hu">Sport1 Hungary</channel>
+    <channel site_id="Sport2" xmltv_id="Sport2Czechia.hu">Sport2 Czechia</channel>
+    <channel site_id="Sport2+%28hu%29" xmltv_id="Sport2Hungary.hu">Sport2 Hungary</channel>
     <channel site_id="Stars+TV" xmltv_id="StarsTV.pl">Stars TV</channel>
     <channel site_id="C+Music+TV" xmltv_id="StingrayCMusic.ca">Stingray CMusic</channel>
     <channel site_id="Brava+HDTV" xmltv_id="StingrayClassica.ca">Stingray Classica</channel>
@@ -540,7 +538,6 @@
     <channel site_id="TVS" xmltv_id="TVS.pl">TVS</channel>
     <channel site_id="TVT" xmltv_id="TVT.pl">TVT</channel>
     <channel site_id="tagesschau24" xmltv_id="Tagesschau24.de">Tagesschau24</channel>
-    <channel site_id="Tele5" xmltv_id="Tele5">Tele5</channel>
     <channel site_id="Teledeporte" xmltv_id="Teledeporte.es">Teledeporte</channel>
     <channel site_id="AXN+Digi+TV" xmltv_id="Telly.cz">Telly</channel>
     <channel site_id="The+Fishing+and+Hunting" xmltv_id="TheFishingHuntingChannel.hu">The Fishing &amp; Hunting Channel</channel>
