@@ -1,6 +1,6 @@
 # EPG [beta]
 
-EPG (Electronic Program Guide) for hundreds of TV channels collected from different sources.
+EPG (Electronic Program Guide) for thousands of TV channels collected from different sources.
 
 ## Usage
 
