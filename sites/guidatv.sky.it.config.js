@@ -24,12 +24,18 @@ module.exports = {
 
     items.forEach(item => {
       if (item.eventTitle && item.starttime && item.endtime) {
+        const cover = item.content.imagesMap
+          ? item.content.imagesMap.find(i => i.key === 'cover')
+          : null
+        const icon =
+          cover && cover.img && cover.img.url ? `https://guidatv.sky.it${cover.img.url}` : null
         programs.push({
           title: item.eventTitle,
           description: item.eventSynopsis,
           category: item.content.genre.name,
           start: item.starttime,
-          stop: item.endtime
+          stop: item.endtime,
+          icon
         })
       }
     })
