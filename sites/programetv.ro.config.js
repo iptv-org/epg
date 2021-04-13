@@ -40,7 +40,8 @@ module.exports = {
           description: i.desc,
           category: i.categories[0],
           start: i.start,
-          stop: i.stop
+          stop: i.stop,
+          icon: i.icon
         }
       })
     }
