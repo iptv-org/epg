@@ -2,41 +2,30 @@
 <site site="programetv.ro">
   <channels>
     <channel site_id="24-mix-teleshop" xmltv_id="24MixTeleshop.ro">24 Mix Teleshop</channel>
-    <channel site_id="24-mix-teleshop-hd" xmltv_id="24MixTeleshopHD.ro">24 Mix Teleshop HD</channel>
     <channel site_id="3sat" xmltv_id="3sat.de">3sat</channel>
     <channel site_id="agro-tv" xmltv_id="AgroTV.ro">Agro TV</channel>
     <channel site_id="al-jazeera" xmltv_id="AlJazeeraEnglish.qa">Al Jazeera English</channel>
     <channel site_id="aleph-news" xmltv_id="AlephNews.ro">Aleph News</channel>
     <channel site_id="alfa-omega-tv" xmltv_id="AlfaOmegaTV.ro">Alfa Omega TV</channel>
     <channel site_id="amc" xmltv_id="AMCRomania.us">AMC Romania</channel>
-    <channel site_id="amc-hd" xmltv_id="AMCHDRomania.us">AMC HD Romania</channel>
     <channel site_id="animal-planet" xmltv_id="AnimalPlanetEurope.us">Animal Planet Europe</channel>
-    <channel site_id="animal-planet-hd" xmltv_id="AnimalPlanetHDEurope.us">Animal Planet HD Europe</channel>
     <channel site_id="antena-1" xmltv_id="Antena1.ro">Antena 1</channel>
-    <channel site_id="antena-1-hd" xmltv_id="Antena1HD.ro">Antena 1 HD</channel>
     <channel site_id="antena-3" xmltv_id="Antena3.ro">Antena 3</channel>
-    <channel site_id="antena-3-hd" xmltv_id="Antena3HD.ro">Antena 3 HD</channel>
     <channel site_id="antena-international" xmltv_id="AntenaInternational.ro">Antena International</channel>
-    <channel site_id="antena-international-hd" xmltv_id="AntenaInternationalHD.ro">Antena International HD</channel>
     <channel site_id="antena-stars" xmltv_id="AntenaStars.ro">Antena Stars</channel>
-    <channel site_id="antena-stars-hd" xmltv_id="AntenaStarsHD.ro">Antena Stars HD</channel>
     <channel site_id="arcadia-tv" xmltv_id="ArcadiaTV.ro">Arcadia TV</channel>
     <channel site_id="ard" xmltv_id="DasErste.de">Das Erste</channel>
     <channel site_id="arte" xmltv_id="ARTEFrancais.fr">ARTE Français</channel>
     <channel site_id="auto-motor-und-sport-channel" xmltv_id="AutoMotorundSport.de">Auto Motor und Sport</channel>
-    <channel site_id="auto-motor-und-sport-channel-hd" xmltv_id="AutoMotorundSportHD.de">Auto Motor und Sport HD</channel>
     <channel site_id="axn" xmltv_id="AXNRomania.us">AXN Romania</channel>
     <channel site_id="axn-black" xmltv_id="AXNBlackRomania.us">AXN Black România</channel>
-    <channel site_id="axn-hd" xmltv_id="AXNHDRomania.us">AXN HD Romania</channel>
     <channel site_id="axn-spin" xmltv_id="AXNSpinRomania.us">AXN Spin Romania</channel>
     <channel site_id="axn-white" xmltv_id="AXNWhiteRomania.us">AXN White România</channel>
     <channel site_id="b1-tv" xmltv_id="B1.ro">B1</channel>
     <channel site_id="babytv" xmltv_id="BabyTVEurope.uk">BabyTV Europe</channel>
     <channel site_id="balkanika-tv" xmltv_id="BalkanikaTV.bg">Balkanika TV</channel>
     <channel site_id="bbc-earth" xmltv_id="BBCEarthRomania.uk">BBC Earth Romania</channel>
-    <channel site_id="bbc-earth-hd" xmltv_id="BBCEarthHDRomania.uk">BBC Earth HD Romania</channel>
     <channel site_id="bbc-world-news" xmltv_id="BBCWorldNewsEurope.uk">BBC World News Europe</channel>
-    <channel site_id="bbc-world-news-hd" xmltv_id="BBCWorldNewsHDEurope.uk">BBC World News HD Europe</channel>
     <channel site_id="bloomberg" xmltv_id="BloombergTVEurope.us">Bloomberg TV Europe</channel>
     <channel site_id="blue-hustler" xmltv_id="BlueHustlerEurope.us">Blue Hustler Europe</channel>
     <channel site_id="bollywood-classic" xmltv_id="BollywoodTVRomania.il">Bollywood TV Romania</channel>
@@ -51,35 +40,24 @@
     <channel site_id="cgtn" xmltv_id="CGTN.cn">CGTN</channel>
     <channel site_id="cinemax" xmltv_id="CinemaxCentralEurope.us">Cinemax Central Europe</channel>
     <channel site_id="cinemax-2" xmltv_id="Cinemax2CentralEurope.us">Cinemax 2 Central Europe</channel>
-    <channel site_id="cinemax-2-hd" xmltv_id="Cinemax2HDCentralEurope.us">Cinemax 2 HD Central Europe</channel>
-    <channel site_id="cinemax-hd" xmltv_id="CinemaxHDCentralEurope.us">Cinemax HD Central Europe</channel>
     <channel site_id="club-mtv" xmltv_id="ClubMTV.us">Club MTV</channel>
     <channel site_id="cnn" xmltv_id="CNNInternationalEurope.us">CNN International Europe</channel>
     <channel site_id="comedy-central" xmltv_id="ComedyCentralRomania.us">Comedy Central România</channel>
-    <channel site_id="comedy-central-hd" xmltv_id="ComedyCentralHDRomania.us">Comedy Central HD România</channel>
     <channel site_id="cool-tv" xmltv_id="CoolTV.hu">Cool TV</channel>
     <channel site_id="credo-tv" xmltv_id="CredoTV.ro">Credo TV</channel>
     <channel site_id="crime-investigation" xmltv_id="CrimeInvestigationUK.us">Crime &amp; Investigation UK</channel>
     <channel site_id="davinci-learning" xmltv_id="DaVinci.de">Da Vinci</channel>
     <channel site_id="deutsche-welle" xmltv_id="DWEnglish.de">DW English</channel>
     <channel site_id="digi-24" xmltv_id="Digi24.ro">Digi 24</channel>
-    <channel site_id="digi-24-hd" xmltv_id="Digi24HD.ro">Digi 24 HD</channel>
     <channel site_id="digi-animal-world" xmltv_id="DigiAnimalWorld.ro">Digi Animal World</channel>
-    <channel site_id="digi-animal-world-hd" xmltv_id="DigiAnimalWorldHD.ro">Digi Animal World HD</channel>
     <channel site_id="digi-life" xmltv_id="DigiLifeRomania.ro">Digi Life Romania</channel>
-    <channel site_id="digi-life-hd" xmltv_id="DigiLifeHDRomania.ro">Digi Life HD Romania</channel>
     <channel site_id="digi-sport-1" xmltv_id="DigiSport1Romania.ro">Digi Sport 1 Romania</channel>
-    <channel site_id="digi-sport-1-hd" xmltv_id="DigiSport1HDRomania.ro">Digi Sport 1 HD Romania</channel>
     <channel site_id="digi-sport-2" xmltv_id="DigiSport2Romania.ro">Digi Sport 2 Romania</channel>
-    <channel site_id="digi-sport-2-hd" xmltv_id="DigiSport2HDRomania.ro">Digi Sport 2 HD Romania</channel>
     <channel site_id="digi-sport-3" xmltv_id="DigiSport3Romania.ro">Digi Sport 3 Romania</channel>
-    <channel site_id="digi-sport-3-hd" xmltv_id="DigiSport3HDRomania.ro">Digi Sport 3 HD Romania</channel>
     <channel site_id="digi-sport-4" xmltv_id="DigiSport4Romania.ro">Digi Sport 4 Romania</channel>
     <channel site_id="digi-world" xmltv_id="DigiWorldRomania.ro">Digi World Romania</channel>
-    <channel site_id="digi-world-hd" xmltv_id="DigiWorldHDRomania.ro">Digi World HD Romania</channel>
     <channel site_id="discovery-channel" xmltv_id="DiscoveryChannelRomania.us">Discovery Channel Romania</channel>
     <channel site_id="discovery-science" xmltv_id="DiscoveryScienceRomanian.us">Discovery Science Romanian</channel>
-    <channel site_id="discovery-science-hd" xmltv_id="DiscoveryScienceHDRomanian.us">Discovery Science HD Romanian</channel>
     <channel site_id="discovery-turbo-xtra-hd" xmltv_id="DTXEastEurope.us">DTX East Europe</channel>
     <channel site_id="disney-channel" xmltv_id="DisneyChannelRomania.us">Disney Channel Romania</channel>
     <channel site_id="disney-junior" xmltv_id="DisneyJuniorRomaniaBulgaria.us">Disney Junior Romania &amp; Bulgaria</channel>
@@ -87,13 +65,10 @@
     <channel site_id="docu-box-hd" xmltv_id="DocuBoxHD.us">DocuBox HD</channel>
     <channel site_id="dorcel-tv" xmltv_id="DorcelTV.nl">Dorcel TV</channel>
     <channel site_id="duck-tv" xmltv_id="DuckTV.sk">Duck TV</channel>
-    <channel site_id="duck-tv-hd" xmltv_id="DuckTVHD.sk">Duck TV HD</channel>
     <channel site_id="duna" xmltv_id="Duna.hu">Duna</channel>
-    <channel site_id="duna-world-hd" xmltv_id="DunaWorldHD.hu">Duna World HD</channel>
+    <channel site_id="duna-world-hd" xmltv_id="DunaWorld.hu">Duna World</channel>
     <channel site_id="e-entertainment" xmltv_id="EEurope.us">E! Europe</channel>
-    <channel site_id="e-entertainment-hd" xmltv_id="EEuropeHD.us">E! Europe HD</channel>
     <channel site_id="emi-tv" xmltv_id="EmiTV.ro">Emi TV</channel>
-    <channel site_id="emi-tv-hd" xmltv_id="EmiTVHD.ro">Emi TV HD</channel>
     <channel site_id="epic-drama" xmltv_id="EpicDrama.se">Epic Drama</channel>
     <channel site_id="erdely-tv" xmltv_id="ErdelyTV.ro">Erdély TV</channel>
     <channel site_id="erox-hd" xmltv_id="EroxHD.us">Erox HD</channel>
@@ -102,9 +77,7 @@
     <channel site_id="etno-tv" xmltv_id="EtnoTV.ro">Etno TV</channel>
     <channel site_id="euronews" xmltv_id="EuronewsEnglish.fr">Euronews English</channel>
     <channel site_id="eurosport-1" xmltv_id="Eurosport1Romania.fr">Eurosport 1 Romania</channel>
-    <channel site_id="eurosport-1-hd" xmltv_id="Eurosport1HDRomania.fr">Eurosport 1 HD Romania</channel>
     <channel site_id="eurosport-2" xmltv_id="Eurosport2Romania.fr">Eurosport 2 Romania</channel>
-    <channel site_id="eurosport-2-hd" xmltv_id="Eurosport2HDRomania.fr">Eurosport 2 HD Romania</channel>
     <channel site_id="eurosport-4k" xmltv_id="Eurosport4KRomania.fr">Eurosport 4K Romania</channel>
     <channel site_id="extreme-sports-channel" xmltv_id="ExtremeSportsChannel.nl">Extreme Sports Channel</channel>
     <channel site_id="fashion-box-hd" xmltv_id="FashionBoxHD.us">FashionBox HD</channel>
@@ -114,7 +87,6 @@
     <channel site_id="fight-box-hd" xmltv_id="FightBoxHD.us">FightBox HD</channel>
     <channel site_id="film-cafe" xmltv_id="FilmCafeRomania.hu">Film Café Romania</channel>
     <channel site_id="film-now" xmltv_id="FilmNow.ro">Film Now</channel>
-    <channel site_id="film-now-hd" xmltv_id="FilmNowHD.ro">Film Now HD</channel>
     <channel site_id="film-plus" xmltv_id="FilmPlus.ro">Film+</channel>
     <channel site_id="film4" xmltv_id="Film4UK.uk">Film4 UK</channel>
     <channel site_id="filmbox" xmltv_id="FilmBoxRomania.us">FilmBox Romania</channel>
@@ -124,110 +96,86 @@
     <channel site_id="filmbox-premium" xmltv_id="FilmBoxPremiumRomania.us">FilmBox Premium Romania</channel>
     <channel site_id="filmbox-stars" xmltv_id="FilmBoxStarsRomania.us">FilmBox Stars Romania</channel>
     <channel site_id="food-network" xmltv_id="FoodNetworkEMEA.us">Food Network EMEA</channel>
-    <channel site_id="food-network-hd" xmltv_id="FoodNetworkHDEMEA.us">Food Network HD EMEA</channel>
     <channel site_id="france-2" xmltv_id="France2.fr">France 2</channel>
     <channel site_id="france-24" xmltv_id="France24Francais.fr">France 24 Français</channel>
     <channel site_id="france-24-en" xmltv_id="France24English.fr">France 24 English</channel>
     <channel site_id="france-3" xmltv_id="France3.fr">France 3</channel>
     <channel site_id="france-5" xmltv_id="France5.fr">France 5</channel>
-    <channel site_id="fuel-tv-hd" xmltv_id="FuelTVHD.us">Fuel TV HD</channel>
+    <channel site_id="fuel-tv-hd" xmltv_id="FuelTV.us">Fuel TV</channel>
     <channel site_id="funbox-uhd" xmltv_id="FunBoxUHD.us">FunBox UHD</channel>
     <channel site_id="galaxy4" xmltv_id="Galaxy4.hu">Galaxy4</channel>
     <channel site_id="ginx-esports-tv" xmltv_id="GinxeSportsTV.uk">Ginx eSports TV</channel>
     <channel site_id="happy-channel" xmltv_id="HappyChannel.ro">Happy Channel</channel>
-    <channel site_id="happy-channel-hd" xmltv_id="HappyChannelHD.ro">Happy Channel HD</channel>
     <channel site_id="hbo" xmltv_id="HBORomania.us">HBO Romania</channel>
     <channel site_id="hbo-2" xmltv_id="HBO2CentralEurope.us">HBO2 Central Europe</channel>
-    <channel site_id="hbo-2-hd" xmltv_id="HBO2HDCentralEurope.us">HBO2 HD Central Europe</channel>
     <channel site_id="hbo-3" xmltv_id="HBO3Romania.us">HBO3 Romania</channel>
-    <channel site_id="hbo-3-hd" xmltv_id="HBO3HDRomania.us">HBO3 HD Romania</channel>
-    <channel site_id="hbo-hd" xmltv_id="HBOHDRomania.us">HBO HD Romania</channel>
     <channel site_id="hgtv" xmltv_id="HGTVRomania.us">HGTV Romania</channel>
     <channel site_id="history" xmltv_id="HistoryRomania.us">History România</channel>
-    <channel site_id="history-hd" xmltv_id="HistoryHDRomania.us">History HD România</channel>
     <channel site_id="hit-music-channel" xmltv_id="HTMusicChannelRomania.ro">H!T Music Channel Romania</channel>
     <channel site_id="hustler-hd" xmltv_id="HustlerHDEurope.us">Hustler HD Europe</channel>
     <channel site_id="hustler-tv" xmltv_id="HustlerTVEurope.us">Hustler TV Europe</channel>
     <channel site_id="id-investigation-discovery" xmltv_id="InvestigationDiscoveryEurope.us">Investigation Discovery Europe</channel>
-    <channel site_id="id-xtra-hd" xmltv_id="InvestigationDiscoveryHDEurope.us">Investigation Discovery HD Europe</channel>
     <channel site_id="ida-tv" xmltv_id="IDATV.ro">IDA TV</channel>
     <channel site_id="inedit-tv" xmltv_id="IneditTV.ro">Inedit TV</channel>
     <channel site_id="jimjam" xmltv_id="JimJamRomania.uk">JimJam Romania</channel>
     <channel site_id="kabel-1" xmltv_id="KabelEinsDeutschland.de">Kabel Eins Deutschland</channel>
     <channel site_id="kanal-d" xmltv_id="KanalD.tr">Kanal D</channel>
-    <channel site_id="kanal-d-hd" xmltv_id="KanalDHD.tr">Kanal D HD</channel>
     <channel site_id="kika" xmltv_id="KiKA.de">KiKA</channel>
     <channel site_id="kiss-tv" xmltv_id="KissTV.ro">Kiss TV</channel>
     <channel site_id="litoral-tv" xmltv_id="LitoralTV.ro">Litoral TV</channel>
     <channel site_id="look-sport" xmltv_id="LookSport.ro">LookSport</channel>
     <channel site_id="look-sport-2" xmltv_id="LookSport2.ro">LookSport 2</channel>
-    <channel site_id="look-sport-2-hd" xmltv_id="LookSport2HD.ro">LookSport 2 HD</channel>
     <channel site_id="look-sport-3" xmltv_id="LookSport3.ro">LookSport 3</channel>
-    <channel site_id="look-sport-3-hd" xmltv_id="LookSport3HD.ro">LookSport 3 HD</channel>
-    <channel site_id="look-sport-hd" xmltv_id="LookSportHD.ro">LookSport HD</channel>
     <channel site_id="look-sport-plus" xmltv_id="LookSportPlus.ro">LookSport+</channel>
-    <channel site_id="look-sport-plus-hd" xmltv_id="LookSportPlusHD.ro">LookSport+ HD</channel>
     <channel site_id="love-nature" xmltv_id="LoveNature.ca">Love Nature</channel>
     <channel site_id="luxe-tv" xmltv_id="LuxeTV.lu">Luxe TV</channel>
     <channel site_id="m1" xmltv_id="M1.hu">M1</channel>
     <channel site_id="m2" xmltv_id="M2.hu">M2</channel>
     <channel site_id="m4-sport" xmltv_id="M4Sport.hu">M4 Sport</channel>
-    <channel site_id="m5-hd" xmltv_id="M5HD.hu">M5 HD</channel>
+    <channel site_id="m5-hd" xmltv_id="M5.hu">M5</channel>
     <channel site_id="magic-tv" xmltv_id="MagicTV.ro">Magic TV</channel>
-    <channel site_id="magic-tv-hd" xmltv_id="MagicTVHD.ro">Magic TV HD</channel>
     <channel site_id="mediaset-italia" xmltv_id="MediasetItalia.it">Mediaset Italia</channel>
     <channel site_id="medika-tv" xmltv_id="MedikaTV.ro">Medika TV</channel>
     <channel site_id="mezzo" xmltv_id="Mezzo.fr">Mezzo</channel>
     <channel site_id="mezzo-live-hd" xmltv_id="MezzoLiveHD.fr">Mezzo Live HD</channel>
     <channel site_id="minimax" xmltv_id="MinimaxRomania.us">Minimax Romania</channel>
     <channel site_id="mooz-dance" xmltv_id="MoozDance.ro">Mooz Dance</channel>
-    <channel site_id="mooz-dance-hd" xmltv_id="MoozDanceHD.ro">Mooz Dance HD</channel>
-    <channel site_id="mooz-hd" xmltv_id="MoozHD.ro">Mooz HD</channel>
     <channel site_id="mooz-hits" xmltv_id="MoozHits.ro">Mooz Hits</channel>
     <channel site_id="mooz-ro" xmltv_id="MoozRo.ro">Mooz Ro!</channel>
-    <channel site_id="motorvision-hd" xmltv_id="MotorvisionTVHD.de">Motorvision TV HD</channel>
+    <channel site_id="motorvision-hd" xmltv_id="MotorvisionTV.de">Motorvision TV</channel>
     <channel site_id="mtv-80s" xmltv_id="MTV80s.us">MTV 80s</channel>
     <channel site_id="mtv-90s" xmltv_id="MTV90s.us">MTV 90s</channel>
     <channel site_id="mtv-europe" xmltv_id="MTVEurope.us">MTV Europe</channel>
     <channel site_id="mtv-hits" xmltv_id="MTVHitsEurope.us">MTV Hits Europe</channel>
     <channel site_id="mtv-live-hd" xmltv_id="MTVLiveHD.us">MTV Live HD</channel>
-    <channel site_id="museum-hd" xmltv_id="MuseumHD.fr">Museum HD</channel>
+    <channel site_id="museum-hd" xmltv_id="Museum.fr">Museum</channel>
     <channel site_id="music-channel" xmltv_id="MusicChannelRomania.ro">Music Channel Romania</channel>
     <channel site_id="muzsika-tv" xmltv_id="MuzsikaTV.hu">Muzsika TV</channel>
-    <channel site_id="myzen-hd" xmltv_id="myZenTVHD.fr">myZen TV HD</channel>
+    <channel site_id="myzen-hd" xmltv_id="myZenTV.fr">myZen TV</channel>
     <channel site_id="n-tv" xmltv_id="ntv.de">n-tv</channel>
     <channel site_id="nasul-tv" xmltv_id="NasulTV.ro">Nasul TV</channel>
     <channel site_id="nat-geo-people" xmltv_id="NatGeoPeopleRomania.us">Nat Geo People România</channel>
-    <channel site_id="nat-geo-people-hd" xmltv_id="NatGeoPeopleHDRomania.us">Nat Geo People HD România</channel>
     <channel site_id="national-24-plus" xmltv_id="National24Plus.ro">National 24 Plus</channel>
     <channel site_id="national-geographic" xmltv_id="NationalGeographicRomania.us">National Geographic România</channel>
-    <channel site_id="national-geographic-hd" xmltv_id="NationalGeographicHDRomania.us">National Geographic HD România</channel>
     <channel site_id="national-geographic-wild" xmltv_id="NationalGeographicWildRomania.us">National Geographic Wild Romania</channel>
-    <channel site_id="national-geographic-wild-hd" xmltv_id="NationalGeographicWildHDRomania.us">National Geographic Wild HD Romania</channel>
     <channel site_id="national-tv" xmltv_id="National TV">National TV</channel>
     <channel site_id="nautical-channel" xmltv_id="NauticalChannel.it">Nautical Channel</channel>
     <channel site_id="nick-jr" xmltv_id="NickJrRomania.us">Nick Jr România</channel>
     <channel site_id="nickelodeon" xmltv_id="NickelodeonRomania.us">Nickelodeon România</channel>
-    <channel site_id="nickelodeon-hd" xmltv_id="NickelodeonHDRomania.us">Nickelodeon HD România</channel>
     <channel site_id="nicktoons" xmltv_id="NicktoonsRomania.us">Nicktoons România</channel>
     <channel site_id="orizont-tv" xmltv_id="OrizontTV.ro">Orizont TV</channel>
     <channel site_id="outdoor-channel" xmltv_id="OutdoorChannel.us">Outdoor Channel</channel>
     <channel site_id="party-mix" xmltv_id="PartyMix.ro">Party Mix</channel>
-    <channel site_id="party-mix-hd" xmltv_id="PartyMixHD.ro">Party Mix HD</channel>
     <channel site_id="phoenix" xmltv_id="Phoenix.de">Phoenix</channel>
     <channel site_id="playboy-tv" xmltv_id="PlayboyTVEurope.us">Playboy TV Europe</channel>
     <channel site_id="prima-tv" xmltv_id="PrimaTV.ro">Prima TV</channel>
-    <channel site_id="prima-tv-hd" xmltv_id="PrimaTVHD.ro">Prima TV HD</channel>
     <channel site_id="private-tv" xmltv_id="PrivateTV.nl">Private TV</channel>
     <channel site_id="pro-2" xmltv_id="Pro2.ro">Pro 2</channel>
-    <channel site_id="pro-2-hd" xmltv_id="Pro2HD.ro">Pro 2 HD</channel>
     <channel site_id="pro-7" xmltv_id="ProSiebenDeutschland.de">ProSieben Deutschland</channel>
-    <channel site_id="pro-cinema-hd" xmltv_id="ProCinemaHD.ro">Pro Cinema HD</channel>
-    <channel site_id="pro-gold-hd" xmltv_id="ProGoldHD.ro">Pro Gold HD</channel>
+    <channel site_id="pro-cinema-hd" xmltv_id="ProCinema.ro">Pro Cinema</channel>
+    <channel site_id="pro-gold-hd" xmltv_id="ProGold.ro">Pro Gold</channel>
     <channel site_id="pro-tv" xmltv_id="ProTV.ro">Pro TV</channel>
-    <channel site_id="pro-tv-hd" xmltv_id="ProTVHD.ro">Pro TV HD</channel>
     <channel site_id="pro-x" xmltv_id="ProX.ro">Pro X</channel>
-    <channel site_id="pro-x-hd" xmltv_id="ProXHD.ro">Pro X HD</channel>
     <channel site_id="profit-ro" xmltv_id="Profitro.ro">Profit.ro</channel>
     <channel site_id="protv-international" xmltv_id="ProTVInternacional.ro">Pro TV Internacional</channel>
     <channel site_id="publika" xmltv_id="PublikaTV.md">Publika TV</channel>
@@ -237,13 +185,12 @@
     <channel site_id="realitatea-plus" xmltv_id="RealitateaPlus.ro">Realitatea Plus</channel>
     <channel site_id="redlight-hd" xmltv_id="RedlightHD.nl">Redlight HD</channel>
     <channel site_id="rock-tv" xmltv_id="RockTV.ro">Rock TV</channel>
-    <channel site_id="rock-tv-hd" xmltv_id="RockTVHD.ro">Rock TV HD</channel>
     <channel site_id="romania-tv" xmltv_id="RomaniaTV.ro">România TV</channel>
-    <channel site_id="rt-hd" xmltv_id="RTHD.ru">RT HD</channel>
+    <channel site_id="rt-hd" xmltv_id="RT.ru">RT</channel>
     <channel site_id="rtl" xmltv_id="RTLDeutschland.de">RTL Deutschland</channel>
     <channel site_id="rtl-gold" xmltv_id="RTLGold.de">RTL Gold</channel>
     <channel site_id="rtl-ii-hu" xmltv_id="RTLII.de">RTL II</channel>
-    <channel site_id="rtl-klub-hd" xmltv_id="RTLKlubHD.de">RTL Klub HD</channel>
+    <channel site_id="rtl-klub-hd" xmltv_id="RTLKlub.de">RTL Klub</channel>
     <channel site_id="rtl-nitro" xmltv_id="NitroDeutschland.de">Nitro Deutschland</channel>
     <channel site_id="rtl-plus" xmltv_id="RTLPlus.de">RTL+</channel>
     <channel site_id="rtl-zwei" xmltv_id="RTLZwei.de">RTL Zwei</channel>
@@ -252,7 +199,6 @@
     <channel site_id="sorozat-plusz" xmltv_id="SorozatPlus.hu">Sorozat+</channel>
     <channel site_id="speranta-tv" xmltv_id="SperantaTV.us">Speranta TV</channel>
     <channel site_id="sport-extra" xmltv_id="SportExtra.ro">Sport Extra</channel>
-    <channel site_id="sport-extra-hd" xmltv_id="SportExtraHD.ro">Sport Extra HD</channel>
     <channel site_id="stingray-classica" xmltv_id="StingrayClassica.ca">Stingray Classica</channel>
     <channel site_id="stingray-djazz" xmltv_id="StingrayDjazz.ca">Stingray Djazz</channel>
     <channel site_id="stingray-iconcerts-hd" xmltv_id="StingrayiConcerts.ca">Stingray iConcerts</channel>
@@ -262,20 +208,16 @@
     <channel site_id="tdc" xmltv_id="TimelessDramaChannel.nl">Timeless Drama Channel</channel>
     <channel site_id="teennick" xmltv_id="TeenNickRomania.us">TeenNick România</channel>
     <channel site_id="telekom-sport-1" xmltv_id="TelekomSport1.ro">Telekom Sport 1</channel>
-    <channel site_id="telekom-sport-1-hd" xmltv_id="TelekomSport1HD.ro">Telekom Sport 1 HD</channel>
     <channel site_id="telekom-sport-2" xmltv_id="TelekomSport2.ro">Telekom Sport 2</channel>
     <channel site_id="telekom-sport-3" xmltv_id="TelekomSport3.ro">Telekom Sport 3</channel>
     <channel site_id="telekom-sport-4" xmltv_id="TelekomSport4.ro">Telekom Sport 4</channel>
     <channel site_id="the-fishing-and-hunting-channel" xmltv_id="TheFishingHuntingChannel.hu">The Fishing &amp; Hunting Channel</channel>
-    <channel site_id="the-fishing-and-hunting-channel-hd" xmltv_id="TheFishingHuntingChannelHD.hu">The Fishing &amp; Hunting Channel HD</channel>
     <channel site_id="tlc" xmltv_id="TLCRomania.us">TLC Rômania</channel>
     <channel site_id="tnt" xmltv_id="TNTRomania.us">TNT Romania</channel>
-    <channel site_id="tnt-hd" xmltv_id="TNTHDRomania.us">TNT HD Romania</channel>
     <channel site_id="trace-caribbean" xmltv_id="TraceCaribbean.fr">Trace Caribbean</channel>
-    <channel site_id="trace-sport-stars" xmltv_id="TraceSportStarsHD.fr">Trace Sport Stars HD</channel>
-    <channel site_id="trace-urban-hd" xmltv_id="TraceUrbanHD.fr">Trace Urban HD</channel>
+    <channel site_id="trace-sport-stars" xmltv_id="TraceSportStars.fr">Trace Sport Stars</channel>
+    <channel site_id="trace-urban-hd" xmltv_id="TraceUrban.fr">Trace Urban</channel>
     <channel site_id="travel-channel" xmltv_id="TravelChannelEurope.us">Travel Channel Europe</channel>
-    <channel site_id="travel-channel-hd" xmltv_id="TravelChannelHDEurope.us">Travel Channel HD Europe</channel>
     <channel site_id="travel-mix" xmltv_id="TravelMix.ro">Travel Mix</channel>
     <channel site_id="trinitas-tv" xmltv_id="TrinitasTV.ro">Trinitas TV</channel>
     <channel site_id="tv-paprika" xmltv_id="TVPaprikaRomania.hu">TV Paprika Romania</channel>
@@ -287,9 +229,7 @@
     <channel site_id="tv5-monde-europe" xmltv_id="TV5MondeEurope.fr">TV5Monde Europe</channel>
     <channel site_id="tve" xmltv_id="TVEInternacionalEuropa.es">TVE Internacional Europa</channel>
     <channel site_id="tvr-1" xmltv_id="TVR1.ro">TVR 1</channel>
-    <channel site_id="tvr-1-hd" xmltv_id="TVR1HD.ro">TVR 1 HD</channel>
     <channel site_id="tvr-2" xmltv_id="TVR2.ro">TVR 2</channel>
-    <channel site_id="tvr-2-hd" xmltv_id="TVR2HD.ro">TVR 2 HD</channel>
     <channel site_id="tvr-3" xmltv_id="TVR3.ro">TVR 3</channel>
     <channel site_id="tvr-cluj" xmltv_id="TVRCluj.ro">TVR Cluj</channel>
     <channel site_id="tvr-craiova" xmltv_id="TVRCraiova.ro">TVR Craiova</channel>
@@ -299,7 +239,6 @@
     <channel site_id="tvr-targu-mures" xmltv_id="TVRTarguMures.ro">TVR Târgu Mureș</channel>
     <channel site_id="tvr-timisoara" xmltv_id="TVRTimisoara.ro">TVR Timișoara</channel>
     <channel site_id="utv" xmltv_id="UTV.ro">UTV</channel>
-    <channel site_id="utv-hd" xmltv_id="UTVHD.ro">UTV HD</channel>
     <channel site_id="valea-prahovei-tv" xmltv_id="ValeaPrahoveiTV.ro">Valea Prahovei TV</channel>
     <channel site_id="vh1" xmltv_id="VH1Europe.us">VH1 Europe</channel>
     <channel site_id="viasat-explore" xmltv_id="ViasatExploreRomania.se">Viasat Explore Romania</channel>
@@ -312,6 +251,5 @@
     <channel site_id="zdf-info" xmltv_id="ZDFinfo.de">ZDFinfo</channel>
     <channel site_id="zdf-neo" xmltv_id="ZDFneo.de">ZDFneo</channel>
     <channel site_id="zu-tv" xmltv_id="ZUTV.ro">ZU TV</channel>
-    <channel site_id="zu-tv-hd" xmltv_id="ZUTVHD.ro">ZU TV HD</channel>
   </channels>
 </site>
