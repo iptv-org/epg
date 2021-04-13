@@ -90,7 +90,7 @@
     <channel site_id="13626" xmltv_id="ATNUrdu.ca" logo="https://cdn.tvpassport.com/image/station/100x100/ary-digital.png">ATN Urdu</channel>
     <channel site_id="10246" xmltv_id="ATNZoom.ca" logo="https://cdn.tvpassport.com/image/station/100x100/atn-zoom.png">ATN Zoom</channel>
     <channel site_id="122" xmltv_id="ATVHalifax.ca" logo="https://cdn.tvpassport.com/image/station/100x100/ctv-2018.png">ATV Halifax</channel>
-    <channel site_id="32595" xmltv_id="AWEHD.us" logo="https://cdn.tvpassport.com/image/station/100x100/awelogo.png">AWE</channel>
+    <channel site_id="32595" xmltv_id="AWE.us" logo="https://cdn.tvpassport.com/image/station/100x100/awelogo.png">AWE</channel>
     <channel site_id="8875" xmltv_id="AXNLatinoamerica.us" logo="https://cdn.tvpassport.com/image/station/100x100/axn.png">AXN Latinoamérica</channel>
     <channel site_id="3972" xmltv_id="AXSTV.us" logo="https://cdn.tvpassport.com/image/station/100x100/axstv.png">AXS TV</channel>
     <channel site_id="3998" xmltv_id="AZMundo.mx" logo="https://cdn.tvpassport.com/image/station/100x100/azteca13.png">AZ Mundo</channel>
@@ -139,7 +139,7 @@
     <channel site_id="4386" xmltv_id="BETCanada.us" logo="https://cdn.tvpassport.com/image/station/100x100/bettv.png">BET Canada</channel>
     <channel site_id="6837" xmltv_id="BETHer.us" logo="https://cdn.tvpassport.com/image/station/100x100/bet-her.png">BET Her</channel>
     <channel site_id="294" xmltv_id="BNNBloomberg.ca" logo="https://cdn.tvpassport.com/image/station/100x100/bnn-2018.png">BNN Bloomberg</channel>
-    <channel site_id="4444" xmltv_id="BabyFirst.us" logo="https://cdn.tvpassport.com/image/station/100x100/babyfirst.png">BabyFirst</channel>
+    <channel site_id="4444" xmltv_id="BabyFirstTV.us" logo="https://cdn.tvpassport.com/image/station/100x100/babyfirst.png">BabyFirst TV</channel>
     <channel site_id="4499" xmltv_id="BigTenNetwork.us" logo="https://cdn.tvpassport.com/image/station/100x100/bigten-2021.png">Big Ten Network</channel>
     <channel site_id="8822" xmltv_id="BigTenNetworkOverflow1.us" logo="https://cdn.tvpassport.com/image/station/100x100/bigten-2021.png">Big Ten Network Overflow 1</channel>
     <channel site_id="8823" xmltv_id="BigTenNetworkOverflow2.us" logo="https://cdn.tvpassport.com/image/station/100x100/bigten-2021.png">Big Ten Network Overflow 2</channel>
@@ -401,7 +401,6 @@
     <channel site_id="307" xmltv_id="CanalVie.ca" logo="https://cdn.tvpassport.com/image/station/100x100/canalvie.png">Canal Vie</channel>
     <channel site_id="4561" xmltv_id="CaracolTVInternacional.co">Caracol TV Internacional</channel>
     <channel site_id="10613" xmltv_id="CartoonNetworkCanada.us" logo="https://cdn.tvpassport.com/image/station/100x100/cartoonnetwork.png">Cartoon Network Canada</channel>
-    <channel site_id="31994" xmltv_id="CartoonNetworkCanadaWest.us" logo="https://cdn.tvpassport.com/image/station/100x100/cartoonnetwork.png">Cartoon Network Canada West</channel>
     <channel site_id="5484" xmltv_id="Casa.ca" logo="https://cdn.tvpassport.com/image/station/100x100/casa.png">Casa</channel>
     <channel site_id="14202" xmltv_id="Channeli.bd" logo="https://cdn.tvpassport.com/image/station/100x100/channel-i-bangla.png">Channel i</channel>
     <channel site_id="15228" xmltv_id="Charge.us" logo="https://cdn.tvpassport.com/image/station/100x100/chargenetwork.png">Charge!</channel>
@@ -434,19 +433,19 @@
     <channel site_id="13869" xmltv_id="CitytvWoodstock.ca" logo="https://cdn.tvpassport.com/image/station/100x100/citytv.png">Citytv Woodstock</channel>
     <channel site_id="13709" xmltv_id="ColorsBangla.in" logo="https://cdn.tvpassport.com/image/station/100x100/colors_bangla.png">Colors Bangla</channel>
     <channel site_id="1212" xmltv_id="ComedyCentralWest.us" logo="https://cdn.tvpassport.com/image/station/100x100/comedycentral.png">Comedy Central West</channel>
-    <channel site_id="16811" xmltv_id="CometTV.us" logo="https://cdn.tvpassport.com/image/station/100x100/comet.png">Comet TV</channel>
-    <channel site_id="18013" xmltv_id="KDOCTV4.us" logo="https://cdn.tvpassport.com/image/station/100x100/comet.png">Comet TV (KDOC-DT4)</channel>
-    <channel site_id="6253" xmltv_id="KOMOTV2.us" logo="https://cdn.tvpassport.com/image/station/100x100/comet.png">Comet TV (KOMO-DT2)</channel>
-    <channel site_id="17953" xmltv_id="WGTQ3.us" logo="https://cdn.tvpassport.com/image/station/100x100/comet.png">Comet TV (WGTQ-DT3)</channel>
-    <channel site_id="33887" xmltv_id="WKBDTV2.us" logo="https://cdn.tvpassport.com/image/station/100x100/comet.png">Comet TV (WKBD-DT2)</channel>
-    <channel site_id="17600" xmltv_id="WNYOTV3.us" logo="https://cdn.tvpassport.com/image/station/100x100/comet.png">Comet TV (WNYO-DT3)</channel>
-    <channel site_id="9274" xmltv_id="WSMH3.us" logo="https://cdn.tvpassport.com/image/station/100x100/comet.png">Comet TV (WSMH-DT3)</channel>
-    <channel site_id="10408" xmltv_id="WSTMTV3.us" logo="https://cdn.tvpassport.com/image/station/100x100/comet.png">Comet TV (WSTM-DT3)</channel>
-    <channel site_id="17441" xmltv_id="WUHF3.us" logo="https://cdn.tvpassport.com/image/station/100x100/comet.png">Comet TV (WUHF-DT3)</channel>
+    <channel site_id="16811" xmltv_id="Comet.us" logo="https://cdn.tvpassport.com/image/station/100x100/comet.png">Comet</channel>
+    <channel site_id="18013" xmltv_id="KDOCTV4.us" logo="https://cdn.tvpassport.com/image/station/100x100/comet.png">Comet (KDOC-DT4)</channel>
+    <channel site_id="6253" xmltv_id="KOMOTV2.us" logo="https://cdn.tvpassport.com/image/station/100x100/comet.png">Comet (KOMO-DT2)</channel>
+    <channel site_id="17953" xmltv_id="WGTQ3.us" logo="https://cdn.tvpassport.com/image/station/100x100/comet.png">Comet (WGTQ-DT3)</channel>
+    <channel site_id="33887" xmltv_id="WKBDTV2.us" logo="https://cdn.tvpassport.com/image/station/100x100/comet.png">Comet (WKBD-DT2)</channel>
+    <channel site_id="17600" xmltv_id="WNYOTV3.us" logo="https://cdn.tvpassport.com/image/station/100x100/comet.png">Comet (WNYO-DT3)</channel>
+    <channel site_id="9274" xmltv_id="WSMH3.us" logo="https://cdn.tvpassport.com/image/station/100x100/comet.png">Comet (WSMH-DT3)</channel>
+    <channel site_id="10408" xmltv_id="WSTMTV3.us" logo="https://cdn.tvpassport.com/image/station/100x100/comet.png">Comet (WSTM-DT3)</channel>
+    <channel site_id="17441" xmltv_id="WUHF3.us" logo="https://cdn.tvpassport.com/image/station/100x100/comet.png">Comet (WUHF-DT3)</channel>
     <channel site_id="7406" xmltv_id="CookingChannelCanada.us" logo="https://cdn.tvpassport.com/image/station/100x100/cooking_channel.png">Cooking Channel Canada</channel>
     <channel site_id="4226" xmltv_id="CookingChannelCanada.us" logo="https://cdn.tvpassport.com/image/station/100x100/cooking_channel.png">Cooking Channel Canada</channel>
-    <channel site_id="11215" xmltv_id="KFLALD3.us">Corner Store (KFLA-DT3)</channel>
-    <channel site_id="12416" xmltv_id="WHNELD3.us">Corner Store (WHNE-LD3)</channel>
+    <channel site_id="11215" xmltv_id="KFLALD3.us">Corner Store TV (KFLA-DT3)</channel>
+    <channel site_id="12416" xmltv_id="WHNELD3.us">Corner Store TV (WHNE-LD3)</channel>
     <channel site_id="455" xmltv_id="CottageLife.ca" logo="https://cdn.tvpassport.com/image/station/100x100/cott.png">Cottage Life</channel>
     <channel site_id="11175" xmltv_id="KPXNTV2.us" logo="https://cdn.tvpassport.com/image/station/100x100/court-tv-2019.png">Court TV (KPXN-TV2)</channel>
     <channel site_id="31596" xmltv_id="KREM3.us" logo="https://cdn.tvpassport.com/image/station/100x100/court-tv-2019.png">Court TV (KREM-DT3)</channel>
@@ -521,7 +520,6 @@
     <channel site_id="13648" xmltv_id="DDUrdu.in" logo="https://cdn.tvpassport.com/image/station/100x100/atn-dd-urdu.png">DD Urdu</channel>
     <channel site_id="2034" xmltv_id="DIYNetworkCanada.us" logo="https://cdn.tvpassport.com/image/station/100x100/diy.png">DIY Network Canada</channel>
     <channel site_id="622" xmltv_id="DIYNetworkEast.us" logo="https://cdn.tvpassport.com/image/station/100x100/diy.png">DIY Network East</channel>
-    <channel site_id="11143" xmltv_id="DTour.ca" logo="https://cdn.tvpassport.com/image/station/100x100/dtour.png">DTour</channel>
     <channel site_id="161" xmltv_id="DTourEast.ca" logo="https://cdn.tvpassport.com/image/station/100x100/dtour.png">DTour East</channel>
     <channel site_id="1022" xmltv_id="DTourWest.ca" logo="https://cdn.tvpassport.com/image/station/100x100/dtour.png">DTour West</channel>
     <channel site_id="33444" xmltv_id="DWDeutschPlus.de">DW Deutsch+</channel>
@@ -568,7 +566,7 @@
     <channel site_id="11222" xmltv_id="KVCRDT3.us" logo="https://cdn.tvpassport.com/image/station/100x100/pbs.png">Empire PBS (KVCR-DT3)</channel>
     <channel site_id="11241" xmltv_id="KTBNTV4.us" logo="https://cdn.tvpassport.com/image/station/100x100/tbnenlace.png">Enlace (KTBN-DT4)</channel>
     <channel site_id="10338" xmltv_id="EsperanzaTV.us" logo="https://cdn.tvpassport.com/image/station/100x100/esperanzatv.png">Esperanza TV</channel>
-    <channel site_id="11195" xmltv_id="KRCA.us" logo="https://cdn.tvpassport.com/image/station/100x100/estrella.png">Estrella (KRCA)</channel>
+    <channel site_id="11195" xmltv_id="KRCA.us" logo="https://cdn.tvpassport.com/image/station/100x100/estrella.png">Estrella TV (KRCA)</channel>
     <channel site_id="2121" xmltv_id="EuronewsEnglish.fr" logo="https://cdn.tvpassport.com/image/station/100x100/euronews.png">Euronews English</channel>
     <channel site_id="3900" xmltv_id="EuronewsFrancais.fr" logo="https://cdn.tvpassport.com/image/station/100x100/euronews.png">Euronews Français</channel>
     <channel site_id="1168" xmltv_id="ExxxtasyTV.ca" logo="https://cdn.tvpassport.com/image/station/100x100/hustlertv.png">Exxxtasy TV</channel>
@@ -585,7 +583,6 @@
     <channel site_id="5329" xmltv_id="FaithTV.ca" logo="https://cdn.tvpassport.com/image/station/100x100/faithtv.png">FaithTV</channel>
     <channel site_id="13362" xmltv_id="KVMD6.us" logo="https://cdn.tvpassport.com/image/station/100x100/logo-myfaithusa.png">FaithTV (KVMD-DT6)</channel>
     <channel site_id="10176" xmltv_id="FamilyCHRGD.us" logo="https://cdn.tvpassport.com/image/station/100x100/familychrgd.png">Family CHRGD</channel>
-    <channel site_id="31992" xmltv_id="FamilyCHRGDWest.us" logo="https://cdn.tvpassport.com/image/station/100x100/familychrgd.png">Family CHRGD West</channel>
     <channel site_id="53" xmltv_id="FamilyChannelEast.ca" logo="https://cdn.tvpassport.com/image/station/100x100/familychannel.png">Family Channel East</channel>
     <channel site_id="1018" xmltv_id="FamilyChannelWest.ca" logo="https://cdn.tvpassport.com/image/station/100x100/familychannel.png">Family Channel West</channel>
     <channel site_id="5330" xmltv_id="FamilyJr.ca" logo="https://cdn.tvpassport.com/image/station/100x100/familyjr.png">Family Jr</channel>
@@ -715,30 +712,27 @@
     <channel site_id="9900" xmltv_id="GolfChannelCanada.us" logo="https://cdn.tvpassport.com/image/station/100x100/golf.png">Golf Channel Canada</channel>
     <channel site_id="193" xmltv_id="GolfChannelUS.us" logo="https://cdn.tvpassport.com/image/station/100x100/golf.png">Golf Channel US</channel>
     <channel site_id="14377" xmltv_id="Grit.us" logo="https://cdn.tvpassport.com/image/station/100x100/grittv.png">Grit</channel>
-    <channel site_id="2590" xmltv_id="KILM.us" logo="https://cdn.tvpassport.com/image/station/100x100/grittv.png">Grit TV (KILM)</channel>
-    <channel site_id="11177" xmltv_id="KPXNTV3.us" logo="https://cdn.tvpassport.com/image/station/100x100/grittv.png">Grit TV (KPXN-TV3)</channel>
-    <channel site_id="32528" xmltv_id="KSTW3.us" logo="https://cdn.tvpassport.com/image/station/100x100/grittv.png">Grit TV (KSTW-DT3)</channel>
-    <channel site_id="12173" xmltv_id="KWPXTV4.us" logo="https://cdn.tvpassport.com/image/station/100x100/grittv.png">Grit TV (KWPX-TV4)</channel>
-    <channel site_id="10219" xmltv_id="WADL2.us" logo="https://cdn.tvpassport.com/image/station/100x100/grittv.png">Grit TV (WADL2)</channel>
-    <channel site_id="10354" xmltv_id="WEWSTV2.us" logo="https://cdn.tvpassport.com/image/station/100x100/grittv.png">Grit TV (WEWS-DT2)</channel>
-    <channel site_id="31900" xmltv_id="WFXP2.us" logo="https://cdn.tvpassport.com/image/station/100x100/grittv.png">Grit TV (WFXP2)</channel>
-    <channel site_id="31910" xmltv_id="WKBWTV4.us" logo="https://cdn.tvpassport.com/image/station/100x100/grittv.png">Grit TV (WKBW-DT4)</channel>
-    <channel site_id="12083" xmltv_id="WPXDTV3.us" logo="https://cdn.tvpassport.com/image/station/100x100/grittv.png">Grit TV (WPXD-TV3)</channel>
-    <channel site_id="12090" xmltv_id="WPXJTV3.us" logo="https://cdn.tvpassport.com/image/station/100x100/grittv.png">Grit TV (WPXJ-TV3)</channel>
-    <channel site_id="12089" xmltv_id="WSPXTV3.us" logo="https://cdn.tvpassport.com/image/station/100x100/grittv.png">Grit TV (WSPX-TV3)</channel>
-    <channel site_id="14404" xmltv_id="WTOL3.us" logo="https://cdn.tvpassport.com/image/station/100x100/grittv.png">Grit TV (WTOL3)</channel>
-    <channel site_id="20320" xmltv_id="WVNY3.us" logo="https://cdn.tvpassport.com/image/station/100x100/grittv.png">Grit TV (WVNY-DT3)</channel>
-    <channel site_id="12032" xmltv_id="WVPXTV2.us" logo="https://cdn.tvpassport.com/image/station/100x100/grittv.png">Grit TV (WVPX-TV2)</channel>
-    <channel site_id="84" xmltv_id="HBO.us" logo="https://cdn.tvpassport.com/image/station/100x100/hbo.png">HBO</channel>
+    <channel site_id="2590" xmltv_id="KILM.us" logo="https://cdn.tvpassport.com/image/station/100x100/grittv.png">Grit (KILM)</channel>
+    <channel site_id="11177" xmltv_id="KPXNTV3.us" logo="https://cdn.tvpassport.com/image/station/100x100/grittv.png">Grit (KPXN-TV3)</channel>
+    <channel site_id="32528" xmltv_id="KSTW3.us" logo="https://cdn.tvpassport.com/image/station/100x100/grittv.png">Grit (KSTW-DT3)</channel>
+    <channel site_id="12173" xmltv_id="KWPXTV4.us" logo="https://cdn.tvpassport.com/image/station/100x100/grittv.png">Grit (KWPX-TV4)</channel>
+    <channel site_id="10219" xmltv_id="WADL2.us" logo="https://cdn.tvpassport.com/image/station/100x100/grittv.png">Grit (WADL2)</channel>
+    <channel site_id="10354" xmltv_id="WEWSTV2.us" logo="https://cdn.tvpassport.com/image/station/100x100/grittv.png">Grit (WEWS-DT2)</channel>
+    <channel site_id="31900" xmltv_id="WFXP2.us" logo="https://cdn.tvpassport.com/image/station/100x100/grittv.png">Grit (WFXP2)</channel>
+    <channel site_id="31910" xmltv_id="WKBWTV4.us" logo="https://cdn.tvpassport.com/image/station/100x100/grittv.png">Grit (WKBW-DT4)</channel>
+    <channel site_id="12083" xmltv_id="WPXDTV3.us" logo="https://cdn.tvpassport.com/image/station/100x100/grittv.png">Grit (WPXD-TV3)</channel>
+    <channel site_id="12090" xmltv_id="WPXJTV3.us" logo="https://cdn.tvpassport.com/image/station/100x100/grittv.png">Grit (WPXJ-TV3)</channel>
+    <channel site_id="12089" xmltv_id="WSPXTV3.us" logo="https://cdn.tvpassport.com/image/station/100x100/grittv.png">Grit (WSPX-TV3)</channel>
+    <channel site_id="14404" xmltv_id="WTOL3.us" logo="https://cdn.tvpassport.com/image/station/100x100/grittv.png">Grit (WTOL3)</channel>
+    <channel site_id="20320" xmltv_id="WVNY3.us" logo="https://cdn.tvpassport.com/image/station/100x100/grittv.png">Grit (WVNY-DT3)</channel>
+    <channel site_id="12032" xmltv_id="WVPXTV2.us" logo="https://cdn.tvpassport.com/image/station/100x100/grittv.png">Grit (WVPX-TV2)</channel>
     <channel site_id="292" xmltv_id="HBOCanada2West.us" logo="https://cdn.tvpassport.com/image/station/100x100/hbo.png">HBO Canada 2 West</channel>
     <channel site_id="614" xmltv_id="HBOEast.us" logo="https://cdn.tvpassport.com/image/station/100x100/hbo.png">HBO East</channel>
     <channel site_id="6424" xmltv_id="HBOWest.us" logo="https://cdn.tvpassport.com/image/station/100x100/hbo.png">HBO West</channel>
     <channel site_id="626" xmltv_id="HBO2East.us" logo="https://cdn.tvpassport.com/image/station/100x100/hbo2.png">HBO2 East</channel>
     <channel site_id="167" xmltv_id="HGTVCanada.us" logo="https://cdn.tvpassport.com/image/station/100x100/hgtv-usa.png">HGTV Canada</channel>
     <channel site_id="425" xmltv_id="HLN.us" logo="https://cdn.tvpassport.com/image/station/100x100/hln.png">HLN</channel>
-    <channel site_id="33625" xmltv_id="HLNWest.us" logo="https://cdn.tvpassport.com/image/station/100x100/hln.png">HLN West</channel>
     <channel site_id="1152" xmltv_id="HPItv.ca" logo="https://cdn.tvpassport.com/image/station/100x100/hpitv.png">HPItv</channel>
-    <channel site_id="3270" xmltv_id="HPItvAlphaNumeric.ca" logo="https://cdn.tvpassport.com/image/station/100x100/hpitv.png">HPItv Alpha Numeric</channel>
     <channel site_id="35864" xmltv_id="KCALTV4.us" logo="https://cdn.tvpassport.com/image/station/100x100/homeshop.png">HSN (KCAL-TV4)</channel>
     <channel site_id="11169" xmltv_id="KNLACD.us" logo="https://cdn.tvpassport.com/image/station/100x100/homeshop.png">HSN (KNLA)</channel>
     <channel site_id="11666" xmltv_id="KPXNTV6.us" logo="https://cdn.tvpassport.com/image/station/100x100/homeshop.png">HSN (KPXN-TV6)</channel>
@@ -749,7 +743,7 @@
     <channel site_id="11711" xmltv_id="WPXJTV6.us" logo="https://cdn.tvpassport.com/image/station/100x100/homeshop.png">HSN (WPXJ-TV6)</channel>
     <channel site_id="12319" xmltv_id="WSPXTV6.us" logo="https://cdn.tvpassport.com/image/station/100x100/homeshop.png">HSN (WSPX-TV6)</channel>
     <channel site_id="11720" xmltv_id="WVPXTV5.us" logo="https://cdn.tvpassport.com/image/station/100x100/homeshop.png">HSN (WVPX-TV5)</channel>
-    <channel site_id="12417" xmltv_id="WHNELD4.us" logo="https://cdn.tvpassport.com/image/station/100x100/hsn2.png">HSN 2 (WHNE-LD4)</channel>
+    <channel site_id="12417" xmltv_id="WHNELD4.us" logo="https://cdn.tvpassport.com/image/station/100x100/hsn2.png">HSN2 (WHNE-LD4)</channel>
     <channel site_id="13664" xmltv_id="HallaBol.ca" logo="https://cdn.tvpassport.com/image/station/100x100/hallabol.png">Halla Bol!</channel>
     <channel site_id="11173" xmltv_id="KWHYTV2.us" logo="https://cdn.tvpassport.com/image/station/100x100/heartland.png">Heartland (KWHY-DT2)</channel>
     <channel site_id="35852" xmltv_id="WHNELD12.us" logo="https://cdn.tvpassport.com/image/station/100x100/heartland.png">Heartland (WHNE-LD12)</channel>
@@ -763,7 +757,7 @@
     <channel site_id="17717" xmltv_id="WJBK4.ca" logo="https://cdn.tvpassport.com/image/station/100x100/heroesicons.png">Heroes &amp; Icons (WJBK-DT4)</channel>
     <channel site_id="34358" xmltv_id="WJRTTV5.ca" logo="https://cdn.tvpassport.com/image/station/100x100/heroesicons.png">Heroes &amp; Icons (WJRT-TV5)</channel>
     <channel site_id="33744" xmltv_id="WSEETV4.ca" logo="https://cdn.tvpassport.com/image/station/100x100/heroesicons.png">Heroes &amp; Icons (WSEE-DT4)</channel>
-    <channel site_id="11237" xmltv_id="KTBNTV2.us" logo="https://cdn.tvpassport.com/image/station/100x100/hillsong.png">Hillsong (KTBN-DT2)</channel>
+    <channel site_id="11237" xmltv_id="KTBNTV2.us" logo="https://cdn.tvpassport.com/image/station/100x100/hillsong.png">Hillsong Channel (KTBN-DT2)</channel>
     <channel site_id="345" xmltv_id="Historia.us" logo="https://cdn.tvpassport.com/image/station/100x100/historia.png">Historia</channel>
     <channel site_id="461" xmltv_id="History2Canada.us" logo="https://cdn.tvpassport.com/image/station/100x100/history-2-canada.png">History 2 Canada</channel>
     <channel site_id="164" xmltv_id="HistoryCanadaEast.us" logo="https://cdn.tvpassport.com/image/station/100x100/historycanada.png">History Canada East</channel>
@@ -776,50 +770,49 @@
     <channel site_id="10880" xmltv_id="HollywoodSuite90sMovies.ca" logo="https://cdn.tvpassport.com/image/station/100x100/hs90s.png">Hollywood Suite 90s Movies</channel>
     <channel site_id="6827" xmltv_id="HopeChannel.us" logo="https://cdn.tvpassport.com/image/station/100x100/hopechannel.png">Hope Channel</channel>
     <channel site_id="11055" xmltv_id="HumTV.pk" logo="https://cdn.tvpassport.com/image/station/100x100/hum-logo.png">Hum TV</channel>
-    <channel site_id="118" xmltv_id="CBAFT.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">ICI (CBAFT)</channel>
-    <channel site_id="3883" xmltv_id="CBEFT.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">ICI (CBEFT)</channel>
-    <channel site_id="5476" xmltv_id="SRC.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">ICI (CBFJ)</channel>
-    <channel site_id="598" xmltv_id="CBFST.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">ICI (CBFST)</channel>
-    <channel site_id="196" xmltv_id="CBFT.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">ICI (CBFT)</channel>
-    <channel site_id="2167" xmltv_id="CBGAT.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">ICI (CBGAT)</channel>
-    <channel site_id="3882" xmltv_id="CBHFT.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">ICI (CBHFT)</channel>
-    <channel site_id="287" xmltv_id="CBKFT.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">ICI (CBKFT)</channel>
-    <channel site_id="14" xmltv_id="CBLFT.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">ICI (CBLFT)</channel>
-    <channel site_id="463" xmltv_id="CBOFT.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">ICI (CBOFT)</channel>
-    <channel site_id="3980" xmltv_id="CBRFT.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">ICI (CBRFT)</channel>
-    <channel site_id="188" xmltv_id="CBUFT.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">ICI (CBUFT)</channel>
-    <channel site_id="562" xmltv_id="CBVT.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">ICI (CBVT)</channel>
-    <channel site_id="144" xmltv_id="CBWFT.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">ICI (CBWFT)</channel>
-    <channel site_id="174" xmltv_id="CBXFT.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">ICI (CBXFT)</channel>
-    <channel site_id="2170" xmltv_id="CJBR.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">ICI (CJBR)</channel>
-    <channel site_id="14060" xmltv_id="CJDGDT.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">ICI (CJDG-DT)</channel>
-    <channel site_id="14064" xmltv_id="CJDGTV3.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">ICI (CJDG-TV-3)</channel>
-    <channel site_id="14066" xmltv_id="CJDGTV4.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">ICI (CJDG-TV-4)</channel>
-    <channel site_id="1036" xmltv_id="CKRN.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">ICI (CKRN)</channel>
-    <channel site_id="2168" xmltv_id="CKRN.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">ICI (CKRN)</channel>
-    <channel site_id="14058" xmltv_id="CKRNTV3.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">ICI (CKRN-TV-3)</channel>
-    <channel site_id="499" xmltv_id="CKRT.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">ICI (CKRT)</channel>
-    <channel site_id="2169" xmltv_id="CKSH.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">ICI (CKSH)</channel>
-    <channel site_id="550" xmltv_id="CKTM.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">ICI (CKTM)</channel>
-    <channel site_id="564" xmltv_id="CKTV.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">ICI (CKTV)</channel>
-    <channel site_id="606" xmltv_id="CKTV.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">ICI (CKTV)</channel>
-    <channel site_id="11385" xmltv_id="ICITelevisionMontreal.ca" logo="https://cdn.tvpassport.com/image/station/100x100/icitv.png">ICI Television Montréal</channel>
-    <channel site_id="32134" xmltv_id="ICITelevisionQuebec.ca" logo="https://cdn.tvpassport.com/image/station/100x100/icitv.png">ICI Television Québec</channel>
-    <channel site_id="1966" xmltv_id="IFC.us" logo="https://cdn.tvpassport.com/image/station/100x100/ifc.png">IFC</channel>
-    <channel site_id="2587" xmltv_id="KPXNTV.us" logo="https://cdn.tvpassport.com/image/station/100x100/ion_2016.png">ION (KPXN)</channel>
-    <channel site_id="1276" xmltv_id="KWPXTV.us" logo="https://cdn.tvpassport.com/image/station/100x100/ion_2016.png">ION (KWPX)</channel>
-    <channel site_id="34839" xmltv_id="WCAXTV5.us" logo="https://cdn.tvpassport.com/image/station/100x100/ion_2016.png">ION (WCAX-TV5)</channel>
-    <channel site_id="17736" xmltv_id="WICUTV3.us" logo="https://cdn.tvpassport.com/image/station/100x100/ion_2016.png">ION (WICU-TV3)</channel>
-    <channel site_id="34739" xmltv_id="WILXTV4.us" logo="https://cdn.tvpassport.com/image/station/100x100/ion_2016.png">ION (WILX-TV4)</channel>
-    <channel site_id="2542" xmltv_id="WPXDTV.us" logo="https://cdn.tvpassport.com/image/station/100x100/ion_2016.png">ION (WPXD)</channel>
-    <channel site_id="2919" xmltv_id="WPXJTV.us" logo="https://cdn.tvpassport.com/image/station/100x100/ion_2016.png">ION (WPXJ)</channel>
-    <channel site_id="2842" xmltv_id="WSPXTV.us" logo="https://cdn.tvpassport.com/image/station/100x100/ion_2016.png">ION (WSPX)</channel>
-    <channel site_id="34369" xmltv_id="WTVG5.us" logo="https://cdn.tvpassport.com/image/station/100x100/ion_2016.png">ION (WTVG-DT5)</channel>
-    <channel site_id="2985" xmltv_id="WVPXTV.us" logo="https://cdn.tvpassport.com/image/station/100x100/ion_2016.png">ION (WVPX)</channel>
+    <channel site_id="118" xmltv_id="CBAFT.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">Ici Radio-Canada Télé (CBAFT)</channel>
+    <channel site_id="3883" xmltv_id="CBEFT.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">Ici Radio-Canada Télé (CBEFT)</channel>
+    <channel site_id="5476" xmltv_id="SRC.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">Ici Radio-Canada Télé (CBFJ)</channel>
+    <channel site_id="598" xmltv_id="CBFST.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">Ici Radio-Canada Télé (CBFST)</channel>
+    <channel site_id="196" xmltv_id="CBFT.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">Ici Radio-Canada Télé (CBFT)</channel>
+    <channel site_id="2167" xmltv_id="CBGAT.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">Ici Radio-Canada Télé (CBGAT)</channel>
+    <channel site_id="3882" xmltv_id="CBHFT.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">Ici Radio-Canada Télé (CBHFT)</channel>
+    <channel site_id="287" xmltv_id="CBKFT.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">Ici Radio-Canada Télé (CBKFT)</channel>
+    <channel site_id="14" xmltv_id="CBLFT.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">Ici Radio-Canada Télé (CBLFT)</channel>
+    <channel site_id="463" xmltv_id="CBOFT.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">Ici Radio-Canada Télé (CBOFT)</channel>
+    <channel site_id="3980" xmltv_id="CBRFT.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">Ici Radio-Canada Télé (CBRFT)</channel>
+    <channel site_id="188" xmltv_id="CBUFT.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">Ici Radio-Canada Télé (CBUFT)</channel>
+    <channel site_id="562" xmltv_id="CBVT.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">Ici Radio-Canada Télé (CBVT)</channel>
+    <channel site_id="144" xmltv_id="CBWFT.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">Ici Radio-Canada Télé (CBWFT)</channel>
+    <channel site_id="174" xmltv_id="CBXFT.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">Ici Radio-Canada Télé (CBXFT)</channel>
+    <channel site_id="2170" xmltv_id="CJBR.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">Ici Radio-Canada Télé (CJBR)</channel>
+    <channel site_id="14060" xmltv_id="CJDGDT.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">Ici Radio-Canada Télé (CJDG-DT)</channel>
+    <channel site_id="14064" xmltv_id="CJDGTV3.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">Ici Radio-Canada Télé (CJDG-TV-3)</channel>
+    <channel site_id="14066" xmltv_id="CJDGTV4.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">Ici Radio-Canada Télé (CJDG-TV-4)</channel>
+    <channel site_id="1036" xmltv_id="CKRN.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">Ici Radio-Canada Télé (CKRN)</channel>
+    <channel site_id="2168" xmltv_id="CKRN.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">Ici Radio-Canada Télé (CKRN)</channel>
+    <channel site_id="14058" xmltv_id="CKRNTV3.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">Ici Radio-Canada Télé (CKRN-TV-3)</channel>
+    <channel site_id="499" xmltv_id="CKRT.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">Ici Radio-Canada Télé (CKRT)</channel>
+    <channel site_id="2169" xmltv_id="CKSH.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">Ici Radio-Canada Télé (CKSH)</channel>
+    <channel site_id="550" xmltv_id="CKTM.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">Ici Radio-Canada Télé (CKTM)</channel>
+    <channel site_id="564" xmltv_id="CKTV.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">Ici Radio-Canada Télé (CKTV)</channel>
+    <channel site_id="606" xmltv_id="CKTV.ca" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">Ici Radio-Canada Télé (CKTV)</channel>
+    <channel site_id="11385" xmltv_id="ICITelevisionMontreal.ca" logo="https://cdn.tvpassport.com/image/station/100x100/icitv.png">Ici Radio-Canada Télé Montréal</channel>
+    <channel site_id="32134" xmltv_id="ICITelevisionQuebec.ca" logo="https://cdn.tvpassport.com/image/station/100x100/icitv.png">Ici Radio-Canada Télé Québec</channel>
+    <channel site_id="2587" xmltv_id="KPXNTV.us" logo="https://cdn.tvpassport.com/image/station/100x100/ion_2016.png">ION Television (KPXN)</channel>
+    <channel site_id="1276" xmltv_id="KWPXTV.us" logo="https://cdn.tvpassport.com/image/station/100x100/ion_2016.png">ION Television (KWPX)</channel>
+    <channel site_id="34839" xmltv_id="WCAXTV5.us" logo="https://cdn.tvpassport.com/image/station/100x100/ion_2016.png">ION Television (WCAX-TV5)</channel>
+    <channel site_id="17736" xmltv_id="WICUTV3.us" logo="https://cdn.tvpassport.com/image/station/100x100/ion_2016.png">ION Television (WICU-TV3)</channel>
+    <channel site_id="34739" xmltv_id="WILXTV4.us" logo="https://cdn.tvpassport.com/image/station/100x100/ion_2016.png">ION Television (WILX-TV4)</channel>
+    <channel site_id="2542" xmltv_id="WPXDTV.us" logo="https://cdn.tvpassport.com/image/station/100x100/ion_2016.png">ION Television (WPXD)</channel>
+    <channel site_id="2919" xmltv_id="WPXJTV.us" logo="https://cdn.tvpassport.com/image/station/100x100/ion_2016.png">ION Television (WPXJ)</channel>
+    <channel site_id="2842" xmltv_id="WSPXTV.us" logo="https://cdn.tvpassport.com/image/station/100x100/ion_2016.png">ION Television (WSPX)</channel>
+    <channel site_id="34369" xmltv_id="WTVG5.us" logo="https://cdn.tvpassport.com/image/station/100x100/ion_2016.png">ION Television (WTVG-DT5)</channel>
+    <channel site_id="2985" xmltv_id="WVPXTV.us" logo="https://cdn.tvpassport.com/image/station/100x100/ion_2016.png">ION Television (WVPX)</channel>
     <channel site_id="459" xmltv_id="IciARTV.ca" logo="https://cdn.tvpassport.com/image/station/100x100/ici_artv.png">Ici ARTV</channel>
     <channel site_id="10298" xmltv_id="IciExplora.ca" logo="https://cdn.tvpassport.com/image/station/100x100/explora.png">Ici Explora</channel>
     <channel site_id="8" xmltv_id="IciRDI.ca" logo="https://cdn.tvpassport.com/image/station/100x100/rdi.png">Ici RDI</channel>
-    <channel site_id="10234" xmltv_id="WLPCCD.us" logo="https://cdn.tvpassport.com/image/station/100x100/impact-network.png">Impact (WLPC-LD)</channel>
+    <channel site_id="10234" xmltv_id="WLPCCD.us" logo="https://cdn.tvpassport.com/image/station/100x100/impact-network.png">Impact Television Network (WLPC-LD)</channel>
     <channel site_id="31982" xmltv_id="IndiaToday.in">India Today</channel>
     <channel site_id="13348" xmltv_id="KHTVCD.us">Infomercials (KHTV)</channel>
     <channel site_id="13369" xmltv_id="KVMD7.us">Infomercials (KVMD-DT7)</channel>
@@ -851,10 +844,10 @@
     <channel site_id="6249" xmltv_id="KONG.us" logo="https://cdn.tvpassport.com/image/station/100x100/kong.png">KONG</channel>
     <channel site_id="13297" xmltv_id="KRCA4.ca">KRCA-DT4</channel>
     <channel site_id="13306" xmltv_id="KRCA6.ca">KRCA-DT6</channel>
-    <channel site_id="2606" xmltv_id="KSCI.ca">KSCI</channel>
+    <channel site_id="2606" xmltv_id="KSCI.us">KSCI</channel>
     <channel site_id="90" xmltv_id="KTLA.us" logo="https://cdn.tvpassport.com/image/station/100x100/ktla.png">KTLA</channel>
-    <channel site_id="2603" xmltv_id="KXLA.ca">KXLA</channel>
-    <channel site_id="11244" xmltv_id="KXLA2.ca">KXLA-DT2</channel>
+    <channel site_id="2603" xmltv_id="KXLA.us">KXLA</channel>
+    <channel site_id="11244" xmltv_id="KXLA2.us">KXLA-DT2</channel>
     <channel site_id="173" xmltv_id="KnowledgeNetwork.ca" logo="https://cdn.tvpassport.com/image/station/100x100/knowl.png">Knowledge Network</channel>
     <channel site_id="2608" xmltv_id="KVMD.us" logo="https://cdn.tvpassport.com/image/station/100x100/latv.png">LATV (KVMD)</channel>
     <channel site_id="432" xmltv_id="LCN.ca" logo="https://cdn.tvpassport.com/image/station/100x100/lcn.png">LCN</channel>
@@ -913,7 +906,7 @@
     <channel site_id="655" xmltv_id="MSNBC.us" logo="https://cdn.tvpassport.com/image/station/100x100/msnbc.png">MSNBC</channel>
     <channel site_id="414" xmltv_id="MTVCanada.us" logo="https://cdn.tvpassport.com/image/station/100x100/mtv.png">MTV Canada</channel>
     <channel site_id="478" xmltv_id="MTV2Canada.us" logo="https://cdn.tvpassport.com/image/station/100x100/mtv2.png">MTV2 Canada</channel>
-    <channel site_id="1515" xmltv_id="MTV2.ca" logo="https://cdn.tvpassport.com/image/station/100x100/mtv2.png">MTV2 East</channel>
+    <channel site_id="1515" xmltv_id="MTV2East.us" logo="https://cdn.tvpassport.com/image/station/100x100/mtv2.png">MTV2 East</channel>
     <channel site_id="14805" xmltv_id="MTV2West.us" logo="https://cdn.tvpassport.com/image/station/100x100/mtv2.png">MTV2 West</channel>
     <channel site_id="2466" xmltv_id="Makeful.ca" logo="https://cdn.tvpassport.com/image/station/100x100/makeful.png">Makeful</channel>
     <channel site_id="6981" xmltv_id="MavTV.us" logo="https://cdn.tvpassport.com/image/station/100x100/mavtv_logo.png">MavTV</channel>
@@ -1005,7 +998,6 @@
     <channel site_id="13652" xmltv_id="NDTV24x7.in" logo="https://cdn.tvpassport.com/image/station/100x100/ntd_television_logo.png">NDTV 24x7</channel>
     <channel site_id="8965" xmltv_id="NDTVGoodTimes.in" logo="https://cdn.tvpassport.com/image/station/100x100/ndtv.png">NDTV Good Times</channel>
     <channel site_id="3349" xmltv_id="NFLNetwork.us" logo="https://cdn.tvpassport.com/image/station/100x100/nfl_network.png">NFL Network</channel>
-    <channel site_id="33617" xmltv_id="NFLNetworkWest.us" logo="https://cdn.tvpassport.com/image/station/100x100/nfl_network.png">NFL Network West</channel>
     <channel site_id="6921" xmltv_id="NFLRedZone.us" logo="https://cdn.tvpassport.com/image/station/100x100/nflred.png">NFL Red Zone</channel>
     <channel site_id="2747" xmltv_id="NFLSundayTicket1.us" logo="https://cdn.tvpassport.com/image/station/100x100/nfl_sundayticket.png">NFL Sunday Ticket 1</channel>
     <channel site_id="2756" xmltv_id="NFLSundayTicket10.us" logo="https://cdn.tvpassport.com/image/station/100x100/nfl_sundayticket.png">NFL Sunday Ticket 10</channel>
@@ -1042,8 +1034,8 @@
     <channel site_id="15395" xmltv_id="NHLCenterIce8.us" logo="https://cdn.tvpassport.com/image/station/100x100/nhlcenterice.png">NHL Center Ice 8</channel>
     <channel site_id="15397" xmltv_id="NHLCenterIce9.us" logo="https://cdn.tvpassport.com/image/station/100x100/nhlcenterice.png">NHL Center Ice 9</channel>
     <channel site_id="9162" xmltv_id="NHLCenterIceExtra.us" logo="https://cdn.tvpassport.com/image/station/100x100/nhlcenterice.png">NHL Center Ice Extra</channel>
-    <channel site_id="11253" xmltv_id="NTD.us" logo="https://cdn.tvpassport.com/image/station/100x100/ntd_television_logo.png">NTD</channel>
-    <channel site_id="11254" xmltv_id="KXLA7.us" logo="https://cdn.tvpassport.com/image/station/100x100/ntd_television_logo.png">NTD (KXLA-DT7)</channel>
+    <channel site_id="11253" xmltv_id="NTDTV.us" logo="https://cdn.tvpassport.com/image/station/100x100/ntd_television_logo.png">NTD TV</channel>
+    <channel site_id="11254" xmltv_id="KXLA7.us" logo="https://cdn.tvpassport.com/image/station/100x100/ntd_television_logo.png">NTD TV (KXLA-DT7)</channel>
     <channel site_id="4228" xmltv_id="NTV.bd">NTV</channel>
     <channel site_id="475" xmltv_id="NationalGeographicCanada.us" logo="https://cdn.tvpassport.com/image/station/100x100/ngeog-copy.png">National Geographic Canada</channel>
     <channel site_id="7537" xmltv_id="NationalGeographicWild.us" logo="https://cdn.tvpassport.com/image/station/100x100/natgeowild.png">National Geographic Wild</channel>
@@ -1173,7 +1165,7 @@
     <channel site_id="242" xmltv_id="PlayboyTVUSA.us" logo="https://cdn.tvpassport.com/image/station/100x100/playboy_tv.png">Playboy TV USA</channel>
     <channel site_id="5952" xmltv_id="PlaymenTV.ca" logo="https://cdn.tvpassport.com/image/station/100x100/playmen.png">Playmen TV</channel>
     <channel site_id="10165" xmltv_id="PopEast.us" logo="https://cdn.tvpassport.com/image/station/100x100/pop.png">Pop East</channel>
-    <channel site_id="11239" xmltv_id="KTBNTV3.us" logo="https://cdn.tvpassport.com/image/station/100x100/positiv.png">PosiTiV (KTBN-DT3)</channel>
+    <channel site_id="11239" xmltv_id="KTBNTV3.us" logo="https://cdn.tvpassport.com/image/station/100x100/positiv.png">Positiv (KTBN-DT3)</channel>
     <channel site_id="32677" xmltv_id="PrimeAsiaTV.ca">Prime Asia TV</channel>
     <channel site_id="2848" xmltv_id="Prise2.ca" logo="https://cdn.tvpassport.com/image/station/100x100/prise2.png">Prise 2</channel>
     <channel site_id="3574" xmltv_id="ProSiebenSat1Welt.de">ProSiebenSat.1 Welt</channel>
@@ -1245,7 +1237,6 @@
     <channel site_id="342" xmltv_id="Savoirmedia.ca" logo="https://cdn.tvpassport.com/image/station/100x100/savoirmedia.png">Savoir média</channel>
     <channel site_id="11058" xmltv_id="SchlagerTV.nl">Schlager TV</channel>
     <channel site_id="1960" xmltv_id="Science.us" logo="https://cdn.tvpassport.com/image/station/100x100/science16.png">Science</channel>
-    <channel site_id="33612" xmltv_id="ScienceWest.us" logo="https://cdn.tvpassport.com/image/station/100x100/science16.png">Science West</channel>
     <channel site_id="16518" xmltv_id="KVMD5.us">Shop LC (KVMD-DT5)</channel>
     <channel site_id="1523" xmltv_id="ShopHQ.us" logo="https://cdn.tvpassport.com/image/station/100x100/evine.png">ShopHQ</channel>
     <channel site_id="13595" xmltv_id="KBCB2.us">ShopHQ (KBCB-DT2)</channel>
@@ -1300,7 +1291,7 @@
     <channel site_id="6083" xmltv_id="StarzEncoreEast.us" logo="https://cdn.tvpassport.com/image/station/100x100/starz-encore.png">Starz Encore East</channel>
     <channel site_id="13464" xmltv_id="StarzEncoreWest.us" logo="https://cdn.tvpassport.com/image/station/100x100/starz-encore.png">Starz Encore West</channel>
     <channel site_id="1217" xmltv_id="StarzWest.us" logo="https://cdn.tvpassport.com/image/station/100x100/starz.png">Starz West</channel>
-    <channel site_id="2770" xmltv_id="StingrayAdultAlternative.us" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Adult Alternative</channel>
+    <channel site_id="2770" xmltv_id="StingrayAdultAlternative.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Adult Alternative</channel>
     <channel site_id="2786" xmltv_id="StingrayAllDayParty.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray All Day Party!</channel>
     <channel site_id="2885" xmltv_id="StingrayAlternative.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Alternative</channel>
     <channel site_id="2808" xmltv_id="StingrayAroundtheWorld.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Around the World</channel>
@@ -1318,13 +1309,13 @@
     <channel site_id="32619" xmltv_id="StingrayClassica.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Classica</channel>
     <channel site_id="35064" xmltv_id="StingrayCountry.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Country</channel>
     <channel site_id="2779" xmltv_id="StingrayCountryClassics.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Country Classics</channel>
-    <channel site_id="2780" xmltv_id="StingrayDanceClubbin.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Dance Clubbin</channel>
+    <channel site_id="2780" xmltv_id="StingrayDanceClubbin.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Dance Clubbin&apos;</channel>
     <channel site_id="2886" xmltv_id="StingrayEasyListening.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Easy Listening</channel>
     <channel site_id="2891" xmltv_id="StingrayEclecticElectronic.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Eclectic Electronic</channel>
     <channel site_id="2900" xmltv_id="StingrayEnMarge.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray En Marge</channel>
-    <channel site_id="19998" xmltv_id="StingrayEverything80s.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Everything 80s</channel>
+    <channel site_id="19998" xmltv_id="StingrayEverything80s.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Everything 80&apos;s</channel>
     <channel site_id="34379" xmltv_id="StingrayFestival4K.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Festival 4K</channel>
-    <channel site_id="2769" xmltv_id="StingrayFlashback70s.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Flashback 70s</channel>
+    <channel site_id="2769" xmltv_id="StingrayFlashback70s.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Flashback 70&apos;s</channel>
     <channel site_id="2782" xmltv_id="StingrayFolkRoots.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Folk Roots</channel>
     <channel site_id="2784" xmltv_id="StingrayFrancoCountry.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Franco Country</channel>
     <channel site_id="2796" xmltv_id="StingrayFrancoEnergie.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Franco Energie</channel>
@@ -1340,10 +1331,10 @@
     <channel site_id="33595" xmltv_id="StingrayHits.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Hits</channel>
     <channel site_id="2897" xmltv_id="StingrayHolidayFavourites.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Holiday Favourites</channel>
     <channel site_id="5953" xmltv_id="StingrayHotCountry.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Hot Country</channel>
-    <channel site_id="18846" xmltv_id="StingrayJammin.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Jammin</channel>
+    <channel site_id="18846" xmltv_id="StingrayJammin.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Jammin&apos;</channel>
     <channel site_id="2801" xmltv_id="StingrayJazzCafe.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Jazz Café</channel>
     <channel site_id="2787" xmltv_id="StingrayJazzMastersGeantsduJazz.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Jazz Masters / Géants du Jazz</channel>
-    <channel site_id="2788" xmltv_id="StingrayJazzNowJazzdaujourdhui.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Jazz Now / Jazz daujourdhui</channel>
+    <channel site_id="2788" xmltv_id="StingrayJazzNowJazzdaujourdhui.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Jazz Now / Jazz d&apos;aujourd&apos;hui</channel>
     <channel site_id="1160" xmltv_id="StingrayJuicebox.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray-juicebox.png">Stingray Juicebox</channel>
     <channel site_id="2800" xmltv_id="StingrayJukeboxOldies.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Jukebox Oldies</channel>
     <channel site_id="14196" xmltv_id="StingrayKidsStuff.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Kids Stuff</channel>
@@ -1360,7 +1351,7 @@
     <channel site_id="16122" xmltv_id="StingrayNaturescape.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Naturescape</channel>
     <channel site_id="18841" xmltv_id="StingrayNoFences.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray No Fences</channel>
     <channel site_id="2792" xmltv_id="StingrayNostalgie.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Nostalgie</channel>
-    <channel site_id="2887" xmltv_id="StingrayNothinBut90s.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Nothin But 90s</channel>
+    <channel site_id="2887" xmltv_id="StingrayNothinBut90s.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Nothin&apos; But 90s</channel>
     <channel site_id="33597" xmltv_id="StingrayNow4K.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray-now4k.png">Stingray Now 4K</channel>
     <channel site_id="2896" xmltv_id="StingrayOperaPlus.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Opera Plus</channel>
     <channel site_id="9297" xmltv_id="StingrayOsheaga.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Osheaga</channel>
@@ -1377,12 +1368,12 @@
     <channel site_id="5954" xmltv_id="StingraySmoothJazzChristmas.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Smooth Jazz Christmas</channel>
     <channel site_id="2890" xmltv_id="StingraySoulnRB.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Souln R&amp;B</channel>
     <channel site_id="2802" xmltv_id="StingraySouvenirs.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Souvenirs</channel>
-    <channel site_id="2893" xmltv_id="StingraySwinginStandards.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Swingin Standards</channel>
+    <channel site_id="2893" xmltv_id="StingraySwinginStandards.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Swingin&apos; Standards</channel>
     <channel site_id="2807" xmltv_id="StingrayTheBeat.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray The Beat</channel>
     <channel site_id="2774" xmltv_id="StingrayTheBlues.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray The Blues</channel>
     <channel site_id="2805" xmltv_id="StingrayTheEdge.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray The Edge</channel>
     <channel site_id="2895" xmltv_id="StingrayTheSpa.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray The Spa</channel>
-    <channel site_id="10069" xmltv_id="StingrayTodaysLatinPop.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Todays Latin Pop</channel>
+    <channel site_id="10069" xmltv_id="StingrayTodaysLatinPop.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Today&apos;s Latin Pop</channel>
     <channel site_id="2793" xmltv_id="StingrayTopDetente.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Top Détente</channel>
     <channel site_id="2806" xmltv_id="StingrayTreehouse.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Treehouse</channel>
     <channel site_id="2889" xmltv_id="StingrayUrbanBeat.ca" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Urban Beat</channel>
@@ -1419,10 +1410,8 @@
     <channel site_id="10" xmltv_id="TFO.ca" logo="https://cdn.tvpassport.com/image/station/100x100/tfo.png">TFO</channel>
     <channel site_id="3418" xmltv_id="TGCOM24.it">TGCOM24</channel>
     <channel site_id="1204" xmltv_id="TLCCanada.us" logo="https://cdn.tvpassport.com/image/station/100x100/tlc.png">TLC Canada</channel>
-    <channel site_id="5406" xmltv_id="TLN.us" logo="https://cdn.tvpassport.com/image/station/100x100/totallivingnetwork.png">TLN</channel>
+    <channel site_id="5406" xmltv_id="TLN.us" logo="https://cdn.tvpassport.com/image/station/100x100/totallivingnetwork.png">Total Living Network (TLN)</channel>
     <channel site_id="82" xmltv_id="TLN.ca" logo="https://cdn.tvpassport.com/image/station/100x100/tln-copy.png">TLN</channel>
-    <channel site_id="2464" xmltv_id="TLNWest.us" logo="https://cdn.tvpassport.com/image/station/100x100/totallivingnetwork.png">TLN West</channel>
-    <channel site_id="31895" xmltv_id="TLNWest.ca" logo="https://cdn.tvpassport.com/image/station/100x100/tln-copy.png">TLN West</channel>
     <channel site_id="5580" xmltv_id="TLNenEspanol.ca" logo="https://cdn.tvpassport.com/image/station/100x100/univision.png">TLN en Espanol</channel>
     <channel site_id="2252" xmltv_id="TNTWest.us" logo="https://cdn.tvpassport.com/image/station/100x100/tnt-16.png">TNT West</channel>
     <channel site_id="19467" xmltv_id="TSN4K.ca" logo="https://cdn.tvpassport.com/image/station/100x100/tsn1-2018.png">TSN 4K</channel>
@@ -1551,7 +1540,7 @@
     <channel site_id="2602" xmltv_id="KMEXDT.us" logo="https://cdn.tvpassport.com/image/station/100x100/univision.png">UNI (KMEX)</channel>
     <channel site_id="4387" xmltv_id="KUNSTV.us" logo="https://cdn.tvpassport.com/image/station/100x100/univision.png">UNI (KUNS)</channel>
     <channel site_id="2995" xmltv_id="WQHSDT.us" logo="https://cdn.tvpassport.com/image/station/100x100/univision.png">UNI (WQHS)</channel>
-    <channel site_id="11156" xmltv_id="KIIOLD.us">US Armenia (KIIO-LD)</channel>
+    <channel site_id="11156" xmltv_id="KIIOLD.us">USArmenia TV (KIIO-LD)</channel>
     <channel site_id="2144" xmltv_id="USANetworkWest.us" logo="https://cdn.tvpassport.com/image/station/100x100/usa.png">USA Network West</channel>
     <channel site_id="3472" xmltv_id="KBTFCD.us" logo="https://cdn.tvpassport.com/image/station/100x100/unimas.png">UniMás (KBTF)</channel>
     <channel site_id="3458" xmltv_id="KPMR2.us" logo="https://cdn.tvpassport.com/image/station/100x100/unimas.png">UniMás (KPMR-DT2)</channel>
@@ -1561,7 +1550,7 @@
     <channel site_id="13625" xmltv_id="UnivisionCanada.us" logo="https://cdn.tvpassport.com/image/station/100x100/univision.png">Univisión Canada</channel>
     <channel site_id="1305" xmltv_id="UnivisionEast.us" logo="https://cdn.tvpassport.com/image/station/100x100/univision.png">Univisión East</channel>
     <channel site_id="13315" xmltv_id="KJLA6.us">VBS (KJLA-DT6)</channel>
-    <channel site_id="624" xmltv_id="VICETV.us" logo="https://cdn.tvpassport.com/image/station/100x100/viceland.png">VICE TV</channel>
+    <channel site_id="624" xmltv_id="Vice.us" logo="https://cdn.tvpassport.com/image/station/100x100/viceland.png">Vice</channel>
     <channel site_id="48" xmltv_id="VRAK.ca" logo="https://cdn.tvpassport.com/image/station/100x100/vrak.png">VRAK</channel>
     <channel site_id="31607" xmltv_id="VisionTV.ca" logo="https://cdn.tvpassport.com/image/station/100x100/vision.png">VisionTV</channel>
     <channel site_id="17" xmltv_id="VisionTVEast.ca" logo="https://cdn.tvpassport.com/image/station/100x100/vision.png">VisionTV East</channel>
@@ -1570,14 +1559,14 @@
     <channel site_id="64" xmltv_id="WNetworkEast.ca" logo="https://cdn.tvpassport.com/image/station/100x100/w-copy.png">W Network East</channel>
     <channel site_id="1023" xmltv_id="WNetworkWest.ca" logo="https://cdn.tvpassport.com/image/station/100x100/w-copy.png">W Network West</channel>
     <channel site_id="10217" xmltv_id="WADLTV.us" logo="https://cdn.tvpassport.com/image/station/100x100/wadltv.png">WADL-TV</channel>
-    <channel site_id="4756" xmltv_id="WBGUTV2.us" logo="https://cdn.tvpassport.com/image/station/100x100/pbs.png">WBGU-DT2 Kids/Encore Bowling Green</channel>
-    <channel site_id="3013" xmltv_id="WBNXTV.us" logo="https://cdn.tvpassport.com/image/station/100x100/wbnx_2018.png">WBNX Cleveland</channel>
-    <channel site_id="11130" xmltv_id="WBNXTV2.us" logo="https://cdn.tvpassport.com/image/station/100x100/cw.png">WBNX-DT2 Cleveland</channel>
+    <channel site_id="4756" xmltv_id="WBGUTV2.us" logo="https://cdn.tvpassport.com/image/station/100x100/pbs.png">WBGU-DT2</channel>
+    <channel site_id="3013" xmltv_id="WBNXTV.us" logo="https://cdn.tvpassport.com/image/station/100x100/wbnx_2018.png">WBNX</channel>
+    <channel site_id="11130" xmltv_id="WBNXTV2.us" logo="https://cdn.tvpassport.com/image/station/100x100/cw.png">WBNX-DT2</channel>
     <channel site_id="135" xmltv_id="WHDH.us" logo="https://cdn.tvpassport.com/image/station/100x100/whdh.png">WHDH</channel>
     <channel site_id="2983" xmltv_id="WLMB.us">WLMB</channel>
     <channel site_id="2997" xmltv_id="WMFDTV.us">WMFD-TV</channel>
     <channel site_id="63" xmltv_id="WPIX.us" logo="https://cdn.tvpassport.com/image/station/100x100/cw.png">WPIX</channel>
-    <channel site_id="58" xmltv_id="WSBKTV.us" logo="https://cdn.tvpassport.com/image/station/100x100/wsbk.png">WSBK (TV-38)</channel>
+    <channel site_id="58" xmltv_id="WSBKTV.us" logo="https://cdn.tvpassport.com/image/station/100x100/wsbk.png">WSBK</channel>
     <channel site_id="12091" xmltv_id="WVPXTV3.us">WVPX-TV3</channel>
     <channel site_id="14154" xmltv_id="WWENetwork.us" logo="https://cdn.tvpassport.com/image/station/100x100/wwe-network.png">WWE Network</channel>
     <channel site_id="14230" xmltv_id="WWENetworkCanada.us" logo="https://cdn.tvpassport.com/image/station/100x100/wwe-network.png">WWE Network Canada</channel>
