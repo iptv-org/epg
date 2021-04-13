@@ -20,12 +20,16 @@ module.exports = {
     items.forEach(item => {
       const start = dayjs.utc(item.listDateTime)
       const stop = start.add(item.duration, 'm')
+      const icon = item.showPicture
+        ? `https://cdn.tvpassport.com/image/show/480x720/${item.showPicture}`
+        : null
       programs.push({
         title: item.showName,
         description: item.description,
         category: item.showType,
         start: start.toString(),
-        stop: stop.toString()
+        stop: stop.toString(),
+        icon
       })
     })
 
