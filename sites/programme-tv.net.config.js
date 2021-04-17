@@ -61,14 +61,17 @@ module.exports = {
           .set('M', date.get('M'))
           .set('y', date.get('y'))
 
-        const durationInMilliseconds = parseDuration(durationContent)
-        const stop = start.add(dayjs.duration(durationInMilliseconds))
+        let stop = null
+        if (durationContent) {
+          const durationInMilliseconds = parseDuration(durationContent)
+          stop = start.add(dayjs.duration(durationInMilliseconds)).toString()
+        }
 
         programs.push({
           title,
           category,
           start: start.toString(),
-          stop: stop.toString()
+          stop
         })
       }
     })
