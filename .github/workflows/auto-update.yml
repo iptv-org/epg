@@ -14,7 +14,7 @@ jobs:
       - name: Run EPG Grabber
         run: npx epg-grabber --config=sites/tvtv.ca.config.js
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.0
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
           folder: .gh-pages
@@ -29,7 +29,7 @@ jobs:
       - name: Run EPG Grabber
         run: npx epg-grabber --config=sites/tvtv.us.config.js
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.0
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
           folder: .gh-pages
@@ -44,7 +44,7 @@ jobs:
       - name: Run EPG Grabber
         run: npx epg-grabber --config=sites/mi.tv.config.js
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.0
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
           folder: .gh-pages
@@ -59,7 +59,7 @@ jobs:
       - name: Run EPG Grabber
         run: npx epg-grabber --config=sites/meo.pt.config.js
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.0
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
           folder: .gh-pages
@@ -74,7 +74,7 @@ jobs:
       - name: Run EPG Grabber
         run: npx epg-grabber --config=sites/tvgid.ua.config.js
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.0
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
           folder: .gh-pages
@@ -89,7 +89,7 @@ jobs:
       - name: Run EPG Grabber
         run: npx epg-grabber --config=sites/m.tv.sms.cz.config.js
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.0
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
           folder: .gh-pages
@@ -104,7 +104,7 @@ jobs:
       - name: Run EPG Grabber
         run: npx epg-grabber --config=sites/cosmote.gr.config.js
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.0
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
           folder: .gh-pages
@@ -119,7 +119,7 @@ jobs:
       - name: Run EPG Grabber
         run: npx epg-grabber --config=sites/programetv.ro.config.js
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.0
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
           folder: .gh-pages
@@ -134,7 +134,7 @@ jobs:
       - name: Run EPG Grabber
         run: npx epg-grabber --config=sites/programtv.onet.pl.config.js
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.0
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
           folder: .gh-pages
@@ -149,7 +149,7 @@ jobs:
       - name: Run EPG Grabber
         run: npx epg-grabber --config=sites/digiturk.com.tr.config.js
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.0
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
           folder: .gh-pages
@@ -164,7 +164,7 @@ jobs:
       - name: Run EPG Grabber
         run: npx epg-grabber --config=sites/programme-tv.net.config.js
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.0
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
           folder: .gh-pages
@@ -179,7 +179,7 @@ jobs:
       - name: Run EPG Grabber
         run: npx epg-grabber --config=sites/programacion-tv.elpais.com.config.js
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.0
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
           folder: .gh-pages
@@ -194,7 +194,7 @@ jobs:
       - name: Run EPG Grabber
         run: npx epg-grabber --config=sites/guidatv.sky.it.config.js
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.0
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
           folder: .gh-pages
@@ -209,7 +209,7 @@ jobs:
       - name: Run EPG Grabber
         run: npx epg-grabber --config=sites/ontvtonight.com.config.js
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.0
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
           folder: .gh-pages
@@ -224,7 +224,7 @@ jobs:
       - name: Run EPG Grabber
         run: npx epg-grabber --config=sites/tv.yandex.ru.config.js
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.0
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
           folder: .gh-pages
