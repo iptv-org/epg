@@ -1,0 +1,13 @@
+name: test
+on:
+  workflow_dispatch:
+jobs:
+  programme-tv_net:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.3.1
+      - name: Install Dependencies
+        run: npm install
+      - name: Run EPG Grabber
+        run: npx epg-grabber --config=sites/programme-tv.net.config.js -d

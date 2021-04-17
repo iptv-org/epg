@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site site="programme-tv.net">
   <channels>
-    <channel site_id="13eme-rue-26" xmltv_id="13emeRue.fr">13ème Rue</channel>
+    <channel site_id="boing-233" xmltv_id="BoingFrance.it">Boing France</channel>
+    <channel site_id="boomerang-34" xmltv_id="BoomerangFrance.us">Boomerang France</channel>
+    <channel site_id="das-erste-185" xmltv_id="DasErste.de">Das Erste</channel>
+    <channel site_id="demain-tv-53" xmltv_id="DemainTV.fr">Demain TV</channel>
+    <channel site_id="france-3-limousin-289" xmltv_id="France3Limousin.fr">France 3 Limousin</channel>
+    <channel site_id="france-3-lorraine-290" xmltv_id="France3Lorraine.fr">France 3 Lorraine</channel>
+    <channel site_id="lm-tv-sarthe-376" xmltv_id="LMtvSarthe.fr">LMtv-Sarthe</channel>
+    <channel site_id="m6-12" xmltv_id="M6.fr">M6</channel>
+    <channel site_id="pink-tv-103" xmltv_id="PinkTV.fr">Pink TV</channel>
+    <channel site_id="piwiplus-104" xmltv_id="PiwiPlus.fr">Piwi+</channel>
+    <channel site_id="telenantes-373" xmltv_id="Telenantes.fr">Télénantes</channel>
+    <channel site_id="teletoonplus-131" xmltv_id="TeleToonPlus.fr">TéléToon+</channel>
+    <!-- <channel site_id="13eme-rue-26" xmltv_id="13emeRue.fr">13ème Rue</channel>
     <channel site_id="6ter-202" xmltv_id="6ter.fr">6ter</channel>
     <channel site_id="8-mont-blanc-385" xmltv_id="8MontBlanc.fr">8 Mont-Blanc</channel>
     <channel site_id="ab-1-31" xmltv_id="AB1.fr">AB 1</channel>
@@ -261,6 +273,6 @@
     <channel site_id="warner-tv-403" xmltv_id="WarnerTVFrance.us">Warner TV France</channel>
     <channel site_id="weo-394" xmltv_id="Weo.fr">Wéo</channel>
     <channel site_id="xxl-135" xmltv_id="XXL.fr">XXL</channel>
-    <channel site_id="zdf-193" xmltv_id="ZDF.de">ZDF</channel>
+    <channel site_id="zdf-193" xmltv_id="ZDF.de">ZDF</channel> -->
   </channels>
 </site>
