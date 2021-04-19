@@ -17,6 +17,8 @@ Channel Name,EPG Code (tvg-id)
 2x2,2x2.pl
 2x2,2x2.ru
 3/24,324.es
+31 канал,31kanal.kz
+34 канал,34kanal.ua
 34 телеканал,34telekanal.ua
 360,360.tr
 360 Tune Box,360TuneBox.us
@@ -105,7 +107,7 @@ Channel Name,EPG Code (tvg-id)
 6ter,6ter.fr
 7 Televisión Región de Murcia,7TelevisionRegiondeMurcia.es
 7 TV,7TV.ru
-7 канал (Одесса),7kanalOdessa.ua
+7 канал,7kanal.ua
 7D7TV,7D7TV.ru
 8 Mont-Blanc,8MontBlanc.fr
 8 Канал,8Kanal.ru
@@ -285,6 +287,7 @@ ActionMax East,ActionMaxEast.us
 ActionMax West,ActionMaxWest.us
 Active Family,ActiveFamily.pl
 Addik TV,AddikTV.ca
+ADN 40 (XHTVM-TDT),XHTVMTDT.mx
 Adult Channel,AdultChannel.uk
 Adult Swim,Adult Swim.us
 Adult Swim East,AdultSwimEast.us
@@ -509,6 +512,7 @@ AT&T SportsNet Rocky Mountain,ATTSportsNetRockyMountain.us
 AT&T SportsNet Rocky Mountain Utah,ATTSportsNetRockyMountainUtah.us
 AT&T SportsNet Rocky Mountain West,ATTSportsNetRockyMountainWest.us
 AT&T SportsNet Southwest Houston,ATTSportsNetSouthwestHouston.us
+Atameken Business,AtamekenBusiness.kz
 Atlas TV,AtlasTV.gr
 ATN Aapka Colors,ATNAapkaColors.ca
 ATN Aastha TV,ATNAasthaTV.ca
@@ -1013,6 +1017,7 @@ Canal M,CanalM.ca
 Canal Off,CanalOff.br
 Canal Once (Mexico),OM.us
 Canal Once (XEIPN),XEIPN.us
+Canal Once Nacional,CanalOnceNacional.mx
 Canal Panda España,CanalPandaEspana.pt
 Canal Panda Portugal,CanalPandaPortugal.pt
 Canal Parlamento,CanalParlamento.es
@@ -3845,11 +3850,9 @@ Junior,Junior.de
 Jurnal TV,JurnalTV.md
 Justice Central TV,JusticeCentralTV.us
 K02QM-D,K02QMD.us
-K1,K1.ua
 K11LC-D,K11LCD.us
 K18DD-D,K18DDD.us
 K2,K2.it
-K2,K2.ua
 K36DB-CD,K36DBCD.us
 K46II-D,K46IID.us
 Kabel Eins Deutschland,KabelEinsDeutschland.de
@@ -4125,6 +4128,7 @@ LX Network (WRC-TV3),WRCTV3.us
 LX Network (WTVJ-DT3),WTVJ3.us
 LX Network (WYGA-DT7),WYGACD7.us
 M1,M1.hu
+M1,M1.ua
 M2,M2.hu
 M4 Sport,M4Sport.hu
 M5,M5.hu
@@ -7382,6 +7386,7 @@ TV3,TV3.es
 TV3CAT,TV3CAT.es
 TV4,TV4.pl
 TV4,TV4.hu
+TV5,TV5.ua
 TV5 (Запорожье),TV5Zaporozhe.ua
 TV5 Québec Canada East,TV5QuebecCanadaEast.ca
 TV5 Québec Canada West,TV5QuebecCanadaWest.ca
@@ -7979,9 +7984,11 @@ ZWTV (KJLA-DT9),KJLA9.us
 ΣΚΑΪ,SKAI.gr
 Авто Плюс,AvtoPlyus.ru
 Академія,Akademiya.ua
+Алматы,Almaty.kz
 Анекдот ТВ,AnekdotTV.ru
 Арис 24,Aris24.ru
 Архыз 24,Arhyz24.ru
+Астана,Astana.kz
 Астрахань 24,Astrahan24.ru
 Афонтово,Afontovo.ru
 Балашиха ТВ,BalashihaTV.ru
@@ -8009,7 +8016,6 @@ ZWTV (KJLA-DT9),KJLA9.us
 Вінтаж,Vintazh.ua
 Віта ТБ,VitaTB.ua
 Глас,Glas.ua
-Глас (Одесса),GlasOdessa.ua
 Губерния (Самара),GuberniyaSamara.ru
 Губерния 33,Guberniya33.ru
 Дагестан,Dagestan.ru
@@ -8075,6 +8081,7 @@ ZWTV (KJLA-DT9),KJLA9.us
 Красная линия,Krasnayaliniya.ru
 Крик-ТВ,KrikTV.ru
 Крым 24,Krym24.ru
+КТК,KTK.kz
 Кто есть кто,Ktoestkto.ru
 Кубань 24 Орбита,Kuban24Orbita.ru
 Культура,Kultura.ru
@@ -8087,7 +8094,6 @@ ZWTV (KJLA-DT9),KJLA9.us
 Любимое Кино,LyubimoeKino.ru
 Любимое.ТВ,LyubimoeTV.ru
 Ля-минор,Lyaminor.ru
-М1,M1.ua
 М2,M2.ua
 Малыш,Malysh.ru
 Малятко TV,MalyatkoTV.ua
@@ -8221,6 +8227,7 @@ ZWTV (KJLA-DT9),KJLA9.us
 Спорт 2,Sport2.ua
 Старт,Start.ru
 СТБ,STB.ua
+СТВ,STV.kz
 Страна FM,StranaFM.ru
 Страшное HD,StrashnoeHD.ru
 СТРК,STRK.ru
@@ -8271,6 +8278,7 @@ ZWTV (KJLA-DT9),KJLA9.us
 Футбол,Futbol.ru
 Футбол 1,Futbol1.ua
 Футбол 2,Futbol2.ua
+Хабар 24,Habar24.kz
 Хузур ТВ,HuzurTV.ru
 Центральное телевидение,Centralnoetelevidenie.ru
 Че,Che.ru
