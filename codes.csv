@@ -1,6 +1,10 @@
 Channel Name,EPG Code (tvg-id)
 1+1,1Plus1.ua
 1+1 International,1Plus1International.ua
+10,10.au
+10 Bold,10Bold.au
+10 Peach,10Peach.au
+10 Shake,10Shake.au
 11 канал,11kanal.ua
 13 Ulica,13Ulica.us
 13th Street Deutschland,13thStreetDeutschland.us
@@ -110,6 +114,9 @@ Channel Name,EPG Code (tvg-id)
 7 TV,7TV.ru
 7 канал,7kanal.ua
 7D7TV,7D7TV.ru
+7flix,7flix.au
+7mate,7mate.au
+7two,7two.au
 8 Mont-Blanc,8MontBlanc.fr
 8 Канал,8Kanal.ru
 8 канал,8kanal.ua
@@ -117,6 +124,10 @@ Channel Name,EPG Code (tvg-id)
 9 Волна,9Volna.ru
 9 канал,9kanal.ua
 92 News UK,92NewsUK.pk
+9Gem,9Gem.au
+9Go!,9Go.au
+9Life,9Life.au
+9Rush,9Rush.au
 A Bola TV,ABolaTV.pt
 A Haber,AHaber.tr
 A Spor,ASpor.tr
@@ -263,9 +274,14 @@ ABC (WXYZ),WXYZTV.us
 ABC (WZVN),WZVNTV.us
 ABC Central,ABCCentral.us
 ABC East,ABCEast.us
+ABC ME,ABCME.au
 ABC Mountain,ABCMountain.us
+ABC News,ABCNews.au
 ABC Spark,ABCSpark.us
 ABC TV,ABCTV.cz
+ABC TV,ABCTV.au
+ABC TV Plus,ABCTVPlus.au
+ABC TV Plus / ABC Kids,ABCTVPlusABCKids.au
 ABC West,ABCWest.us
 ABP News USA,ABPNewsUSA.in
 Abu Dhabi TV,AbuDhabiTV.ae
@@ -990,17 +1006,19 @@ BYU TV (K36IQ-D2),K36IQD2.us
 C-SPAN,CSPAN.us
 C-SPAN 2,CSPAN2.us
 C-SPAN 3,CSPAN3.us
-C31,C31.au
 C8,C8.fr
 Cable 14 Hamilton,Cable14Hamilton.ca
 Caccia,Caccia.it
+Cali TV,CaliTV.co
 Calle 13,Calle13.us
 Canal 22,Canal22.mx
 Canal 22 (KWHY-TV),KWHYTV.us
 Canal 26,Canal26.ar
 Canal 32,Canal32.fr
 Canal 5 (XETV-TDT2),XETVTDT2.us
+Canal Antigua,CanalAntigua.gt
 Canal Brasil,CanalBrasil.br
+Canal Capital,CanalCapital.co
 Canal Cocina,CanalCocina.es
 Canal D,CanalD.ca
 Canal do Boi,CanaldoBoi.br
@@ -1057,6 +1075,7 @@ CANAL+ Séries,CanalPlusSeries.fr
 Canal180,Canal180.pt
 Canale 5,Canale5.it
 Canvas,Canvas.be
+Caracol,Caracol.co
 Caracol TV,CaracolTV.co
 Caracol TV Internacional,CaracolTVInternacional.co
 CaribVision,CaribVision.bb
@@ -1269,6 +1288,7 @@ CBS Reality UK,CBSRealityUK.us
 CBS Sports Network Canada,CBSSportsNetworkCanada.us
 CBS Sports Network USA,CBSSportsNetworkUSA.us
 CBS West,CBSWest.us
+CCI Channel,CCIChannel.hn
 CCTN Arabic,CCTNArabic.cn
 CCTV Español,CCTVEspanol.cn
 CCTV Français,CCTVFrancais.cn
@@ -2247,6 +2267,7 @@ CW+ Mountain,CWPlusMountain.us
 CW+ West,CWPlusWest.us
 CyLTV,CyLTV.es
 Czwórka,Czworka.pl
+Cámara de Diputadas y Diputados Televisión (CDTV),CDTV.cl
 Da Vinci,DaVinci.de
 Da Vinci Polska,DaVinciPolska.de
 DABL (K27KS-D3),K27KSD3.us
@@ -4941,7 +4962,9 @@ Nicktoons East,NicktoonsEast.us
 Nicktoons Polska,NicktoonsPolska.us
 Nicktoons România,NicktoonsRomania.us
 Nicktoons West,NicktoonsWest.us
+Nine,Nine.au
 Nitro Deutschland,NitroDeutschland.de
+NITV,NITV.au
 NJ PBS (NJTV),PBS.us
 NJ PBS (WNJB),WNJB.us
 NJ PBS (WNJN),WNJN.us
@@ -5098,6 +5121,7 @@ Pac-12 Networks,Pac12Networks.us
 Pac-12 Oregon,Pac12Oregon.us
 Pac-12 Washington,Pac12Washington.us
 PalmarèsADISQ par Stingray,PalmaresADISQparStingray.ca
+Panamericana TV,PanamericanaTV.pe
 Paramount Channel France,ParamountChannelFrance.us
 Paramount Channel Polska,ParamountChannelPolska.us
 Paramount Channel Russia,ParamountChannelRussia.us
@@ -6047,6 +6071,10 @@ Savoir média,Savoirmedia.ca
 SBN International,SBNInternational.us
 SBS,SBS.kr
 SBS (KSCI-DT2),KSCI2.us
+SBS Food,SBSFood.us
+SBS TV,SBSTV.us
+SBS Viceland,SBSViceland.us
+SBS World Movies,SBSWorldMovies.us
 SBT,SBT.br
 SBT Belem,SBTBelem.br
 SBT Brasilia,SBTBrasilia.br
@@ -6086,6 +6114,7 @@ SET International,SETInternational.tw
 Setanta Sports 2 Eurasia,SetantaSports2Eurasia.ie
 Setanta Sports Eurasia,SetantaSportsEurasia.ie
 Setanta Sports Ukraine,SetantaSportsUkraine.ie
+Seven,Seven.us
 Sextreme,Sextreme.br
 Sexy Hot,SexyHot.br
 SHANT Premium,SHANTPremium.am
@@ -6769,6 +6798,7 @@ TeenNick West,TeenNickWest.us
 Tele 5,Tele5.pl
 Tele 5,Tele5.de
 Tele N,TeleN.us
+Tele Vid,TeleVid.co
 Tele-Quebec (CIVA),CIVA.ca
 Tele-Quebec (CIVA-DT-1),CIVADT1.ca
 Tele-Quebec (CIVB),CIVB.ca
@@ -6787,6 +6817,8 @@ Tele-Quebec (CIVQ),CIVS.ca
 Tele-Quebec (CIVS),CIVS.ca
 Tele-Quebec (CIVV),CIVV.ca
 Telebimbi,Telebimbi.ca
+Telecaribe,Telecaribe.co
+Teleceiba,Teleceiba.hn
 Telecentro,Telecentro.do
 Telecinco,Telecinco.es
 Telecine Action,TelecineAction.br
@@ -6873,9 +6905,11 @@ Telemundo Este,TelemundoEste.us
 Telemundo Mountain,TelemundoMountain.us
 Telemundo Oeste,TelemundoOeste.us
 TeleNiños,TeleNinos.ca
+Telepacifico,Telepacifico.co
 Teleritmo,Teleritmo.mx
 teleSUR,teleSUR.ve
 teleTOON+ Polska,teleTOONPlusPolska.fr
+Teletrak,Teletrak.cl
 Televisa (XEWT),XEW.us
 Televisión Dominicana,TelevisionDominicana.us
 TelevisiónCanaria,TelevisionCanaria.es
@@ -7332,6 +7366,7 @@ TV Paprika Romania,TVPaprikaRomania.hu
 TV Paranaíba,TVParanaiba.br
 TV Paraná Turismo,TVParanaTurismo.br
 TV Paraíba,TVParaiba.br
+TV Perú,TVPeru.pe
 TV Polar,TVPolar.cz
 TV Ponta Negra,TVPontaNegra.br
 TV Považie,TVPovazie.sk
@@ -7630,6 +7665,7 @@ Unis Ouest,UnisOuest.ca
 Univer TV,UniverTV.ru
 Universal Kids,UniversalKids.us
 Universal TV Brasil,UniversalTVBrasil.us
+Universidad Autónoma Temuco (UATV),UATV.cl
 Univesp TV,UnivespTV.br
 Univisión (K31CT-DT9),K31CT9.us
 Univisión (KABE),KABECD.us
