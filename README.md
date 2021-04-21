@@ -15,6 +15,7 @@ To load a program guide, all you need to do is copy the link to one of the guide
     <tr><td align="left" nowrap>🇦🇷 Argentina</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/mi.tv.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇦🇺 Australia</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/ontvtonight.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇧🇾 Belarus</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tv.yandex.ru.guide.xml</code></td></tr>
+    <tr><td align="left" nowrap>🇧🇴 Bolivia</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/comteco.com.bo.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇧🇷 Brasil</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/mi.tv.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇨🇦 Canada</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tvtv.ca.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇨🇱 Chile</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/mi.tv.guide.xml</code></td></tr>
