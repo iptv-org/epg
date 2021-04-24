@@ -43,6 +43,7 @@ To load a program guide, all you need to do is copy the link to one of the guide
     <tr><td align="left" nowrap>🇺🇦 Ukraine</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tvgid.ua.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇬🇧 United Kingdom</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/ontvtonight.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇺🇸 United States</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tvtv.us.guide.xml</code></td></tr>
+    <tr><td align="left" nowrap>🇿🇲 Zambia</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/znbc.co.zm.guide.xml</code></td></tr>
   </tbody>
 </table>
 
