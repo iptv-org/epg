@@ -4,6 +4,23 @@ on:
   schedule:
     - cron: '0 0 * * *'
 jobs:
+  andorradifusio_ad:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Install Dependencies
+        run: npm install
+      - name: Run EPG Grabber
+        run: npx epg-grabber --config=sites/andorradifusio.ad.config.js
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        with:
+          branch: gh-pages
+          folder: .gh-pages
+          clean: false
   znbc_co_zm:
     runs-on: ubuntu-latest
     steps:
