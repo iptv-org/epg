@@ -36,7 +36,10 @@ module.exports = {
       const row = (item.querySelector('td > p') || { textContent: '' }).textContent
       const parts = row.split(' ')
       const time = parts.shift()
-      const title = parts.filter(str => str && /\S/.test(str)).join(' ')
+      const title = parts
+        .filter(str => str && /\S/g.test(str))
+        .map(i => i.trim())
+        .join(' ')
 
       if (!time || !title) return false
 
