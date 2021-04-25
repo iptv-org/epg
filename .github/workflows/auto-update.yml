@@ -16,7 +16,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
           folder: .gh-pages
@@ -33,7 +33,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
           folder: .gh-pages
@@ -50,7 +50,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
           folder: .gh-pages
@@ -67,7 +67,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
           folder: .gh-pages
@@ -84,7 +84,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
           folder: .gh-pages
@@ -101,7 +101,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
           folder: .gh-pages
@@ -118,7 +118,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
           folder: .gh-pages
@@ -135,7 +135,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
           folder: .gh-pages
@@ -152,7 +152,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
           folder: .gh-pages
@@ -169,7 +169,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
           folder: .gh-pages
@@ -186,7 +186,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
           folder: .gh-pages
@@ -203,7 +203,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
           folder: .gh-pages
@@ -220,7 +220,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
           folder: .gh-pages
@@ -237,7 +237,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
           folder: .gh-pages
@@ -254,7 +254,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
           folder: .gh-pages
@@ -271,7 +271,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
           folder: .gh-pages
@@ -288,7 +288,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
           folder: .gh-pages
@@ -305,7 +305,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
           folder: .gh-pages
@@ -322,7 +322,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
           folder: .gh-pages
@@ -339,7 +339,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
           folder: .gh-pages
@@ -356,7 +356,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
           folder: .gh-pages
@@ -373,7 +373,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
           folder: .gh-pages
