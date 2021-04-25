@@ -2,7 +2,7 @@ name: test
 on:
   workflow_dispatch:
 jobs:
-  andorradifusio_ad1:
+  andorradifusio_ad:
     concurrency: sync
     runs-on: ubuntu-latest
     steps:
@@ -12,25 +12,3 @@ jobs:
         run: npm install
       - name: Run EPG Grabber
         run: npx epg-grabber --config=sites/andorradifusio.ad.config.js -d
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.1
-        with:
-          branch: gh-pages
-          folder: .gh-pages
-          clean: false
-  andorradifusio_ad2:
-    concurrency: sync
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Install Dependencies
-        run: npm install
-      - name: Run EPG Grabber
-        run: npx epg-grabber --config=sites/andorradifusio.ad.config.js -d
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.1
-        with:
-          branch: gh-pages
-          folder: .gh-pages
-          clean: false
