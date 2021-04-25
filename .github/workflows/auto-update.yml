@@ -173,6 +173,7 @@ jobs:
           folder: .gh-pages
           clean: false
   tvgid_ua:
+    concurrency: sync
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
