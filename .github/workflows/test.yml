@@ -2,23 +2,18 @@ name: test
 on:
   workflow_dispatch:
 jobs:
-  hd-plus_de:
-    if: always()
+  grab:
     runs-on: ubuntu-latest
+    continue-on-error: true
+    strategy:
+      matrix:
+        site: [hd-plus.de, andorradifusio.ad]
+      fail-fast: false
+      max-parallel: 1
     steps:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Install Dependencies
         run: npm install
       - name: Run EPG Grabber
-        run: npx epg-grabber --config=sites/hd-plus.de.config.js
-  andorradifusio_ad:
-    if: always()
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Install Dependencies
-        run: npm install
-      - name: Run EPG Grabber
-        run: npx epg-grabber --config=sites/andorradifusio.ad.config.js -d
+        run: npx epg-grabber --config=sites/${{ matrix.site }}.config.js
