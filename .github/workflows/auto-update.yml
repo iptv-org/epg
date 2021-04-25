@@ -4,330 +4,45 @@ on:
   schedule:
     - cron: '0 0 * * *'
 jobs:
-  telkussa_fi:
+  grab:
     runs-on: ubuntu-latest
+    continue-on-error: true
+    strategy:
+      matrix:
+        site:
+          [
+            telkussa.fi,
+            andorradifusio.ad,
+            znbc.co.zm,
+            hd-plus.de,
+            astro.com.my,
+            comteco.com.bo,
+            albepg.com,
+            mi.tv,
+            meo.pt,
+            tvgid.ua,
+            m.tv.sms.cz,
+            cosmote.gr,
+            programetv.ro,
+            programtv.onet.pl,
+            digiturk.com.tr,
+            programme-tv.net,
+            programacion-tv.elpais.com,
+            guidatv.sky.it,
+            ontvtonight.com,
+            tv.yandex.ru,
+            tvtv.ca,
+            tvtv.us
+          ]
+      fail-fast: false
+      max-parallel: 2
     steps:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Install Dependencies
         run: npm install
       - name: Run EPG Grabber
-        run: npx epg-grabber --config=sites/telkussa.fi.config.js
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.1
-        with:
-          branch: gh-pages
-          folder: .gh-pages
-          clean: false
-  andorradifusio_ad:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Install Dependencies
-        run: npm install
-      - name: Run EPG Grabber
-        run: npx epg-grabber --config=sites/andorradifusio.ad.config.js
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.1
-        with:
-          branch: gh-pages
-          folder: .gh-pages
-          clean: false
-  znbc_co_zm:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Install Dependencies
-        run: npm install
-      - name: Run EPG Grabber
-        run: npx epg-grabber --config=sites/znbc.co.zm.config.js
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.1
-        with:
-          branch: gh-pages
-          folder: .gh-pages
-          clean: false
-  hd-plus_de:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Install Dependencies
-        run: npm install
-      - name: Run EPG Grabber
-        run: npx epg-grabber --config=sites/hd-plus.de.config.js
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.1
-        with:
-          branch: gh-pages
-          folder: .gh-pages
-          clean: false
-  astro_com_my:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Install Dependencies
-        run: npm install
-      - name: Run EPG Grabber
-        run: npx epg-grabber --config=sites/astro.com.my.config.js
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.1
-        with:
-          branch: gh-pages
-          folder: .gh-pages
-          clean: false
-  comteco_com_bo:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Install Dependencies
-        run: npm install
-      - name: Run EPG Grabber
-        run: npx epg-grabber --config=sites/comteco.com.bo.config.js
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.1
-        with:
-          branch: gh-pages
-          folder: .gh-pages
-          clean: false
-  albepg_com:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Install Dependencies
-        run: npm install
-      - name: Run EPG Grabber
-        run: npx epg-grabber --config=sites/albepg.com.config.js
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.1
-        with:
-          branch: gh-pages
-          folder: .gh-pages
-          clean: false
-  tvtv_ca:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Install Dependencies
-        run: npm install
-      - name: Run EPG Grabber
-        run: npx epg-grabber --config=sites/tvtv.ca.config.js
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.1
-        with:
-          branch: gh-pages
-          folder: .gh-pages
-          clean: false
-  tvtv_us:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Install Dependencies
-        run: npm install
-      - name: Run EPG Grabber
-        run: npx epg-grabber --config=sites/tvtv.us.config.js
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.1
-        with:
-          branch: gh-pages
-          folder: .gh-pages
-          clean: false
-  mi_tv:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Install Dependencies
-        run: npm install
-      - name: Run EPG Grabber
-        run: npx epg-grabber --config=sites/mi.tv.config.js
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.1
-        with:
-          branch: gh-pages
-          folder: .gh-pages
-          clean: false
-  meo_pt:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Install Dependencies
-        run: npm install
-      - name: Run EPG Grabber
-        run: npx epg-grabber --config=sites/meo.pt.config.js
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.1
-        with:
-          branch: gh-pages
-          folder: .gh-pages
-          clean: false
-  tvgid_ua:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Install Dependencies
-        run: npm install
-      - name: Run EPG Grabber
-        run: npx epg-grabber --config=sites/tvgid.ua.config.js
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.1
-        with:
-          branch: gh-pages
-          folder: .gh-pages
-          clean: false
-  m_tv_sms_cz:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Install Dependencies
-        run: npm install
-      - name: Run EPG Grabber
-        run: npx epg-grabber --config=sites/m.tv.sms.cz.config.js
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.1
-        with:
-          branch: gh-pages
-          folder: .gh-pages
-          clean: false
-  cosmote_gr:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Install Dependencies
-        run: npm install
-      - name: Run EPG Grabber
-        run: npx epg-grabber --config=sites/cosmote.gr.config.js
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.1
-        with:
-          branch: gh-pages
-          folder: .gh-pages
-          clean: false
-  programetv_ro:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Install Dependencies
-        run: npm install
-      - name: Run EPG Grabber
-        run: npx epg-grabber --config=sites/programetv.ro.config.js
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.1
-        with:
-          branch: gh-pages
-          folder: .gh-pages
-          clean: false
-  programtv_onet_pl:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Install Dependencies
-        run: npm install
-      - name: Run EPG Grabber
-        run: npx epg-grabber --config=sites/programtv.onet.pl.config.js
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.1
-        with:
-          branch: gh-pages
-          folder: .gh-pages
-          clean: false
-  digiturk_com_tr:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Install Dependencies
-        run: npm install
-      - name: Run EPG Grabber
-        run: npx epg-grabber --config=sites/digiturk.com.tr.config.js
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.1
-        with:
-          branch: gh-pages
-          folder: .gh-pages
-          clean: false
-  programme-tv_net:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Install Dependencies
-        run: npm install
-      - name: Run EPG Grabber
-        run: npx epg-grabber --config=sites/programme-tv.net.config.js
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.1
-        with:
-          branch: gh-pages
-          folder: .gh-pages
-          clean: false
-  programacion-tv_elpais_com:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Install Dependencies
-        run: npm install
-      - name: Run EPG Grabber
-        run: npx epg-grabber --config=sites/programacion-tv.elpais.com.config.js
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.1
-        with:
-          branch: gh-pages
-          folder: .gh-pages
-          clean: false
-  guidatv_sky_it:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Install Dependencies
-        run: npm install
-      - name: Run EPG Grabber
-        run: npx epg-grabber --config=sites/guidatv.sky.it.config.js
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.1
-        with:
-          branch: gh-pages
-          folder: .gh-pages
-          clean: false
-  ontvtonight_com:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Install Dependencies
-        run: npm install
-      - name: Run EPG Grabber
-        run: npx epg-grabber --config=sites/ontvtonight.com.config.js
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.1
-        with:
-          branch: gh-pages
-          folder: .gh-pages
-          clean: false
-  tv_yandex_ru:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Install Dependencies
-        run: npm install
-      - name: Run EPG Grabber
-        run: npx epg-grabber --config=sites/tv.yandex.ru.config.js
+        run: npx epg-grabber --config=sites/${{ matrix.site }}.config.js
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
