@@ -2,8 +2,18 @@ name: test
 on:
   workflow_dispatch:
 jobs:
+  hd-plus_de:
+    if: ${{ always() }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: npm install
+      - name: Run EPG Grabber
+        run: npx epg-grabber --config=sites/hd-plus.de.config.js
   andorradifusio_ad:
-    concurrency: sync
+    if: ${{ always() }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
