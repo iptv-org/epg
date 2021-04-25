@@ -13,8 +13,6 @@ jobs:
         run: npm install
       - name: Run EPG Grabber
         run: npx epg-grabber --config=sites/telkussa.fi.config.js
-      - name: Checkout
-        uses: actions/checkout@v2
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
@@ -30,8 +28,6 @@ jobs:
         run: npm install
       - name: Run EPG Grabber
         run: npx epg-grabber --config=sites/andorradifusio.ad.config.js
-      - name: Checkout
-        uses: actions/checkout@v2
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
@@ -47,8 +43,6 @@ jobs:
         run: npm install
       - name: Run EPG Grabber
         run: npx epg-grabber --config=sites/znbc.co.zm.config.js
-      - name: Checkout
-        uses: actions/checkout@v2
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
@@ -64,8 +58,6 @@ jobs:
         run: npm install
       - name: Run EPG Grabber
         run: npx epg-grabber --config=sites/hd-plus.de.config.js
-      - name: Checkout
-        uses: actions/checkout@v2
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
@@ -81,8 +73,6 @@ jobs:
         run: npm install
       - name: Run EPG Grabber
         run: npx epg-grabber --config=sites/astro.com.my.config.js
-      - name: Checkout
-        uses: actions/checkout@v2
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
@@ -98,8 +88,6 @@ jobs:
         run: npm install
       - name: Run EPG Grabber
         run: npx epg-grabber --config=sites/comteco.com.bo.config.js
-      - name: Checkout
-        uses: actions/checkout@v2
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
@@ -115,8 +103,6 @@ jobs:
         run: npm install
       - name: Run EPG Grabber
         run: npx epg-grabber --config=sites/albepg.com.config.js
-      - name: Checkout
-        uses: actions/checkout@v2
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
@@ -132,8 +118,6 @@ jobs:
         run: npm install
       - name: Run EPG Grabber
         run: npx epg-grabber --config=sites/tvtv.ca.config.js
-      - name: Checkout
-        uses: actions/checkout@v2
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
@@ -149,8 +133,6 @@ jobs:
         run: npm install
       - name: Run EPG Grabber
         run: npx epg-grabber --config=sites/tvtv.us.config.js
-      - name: Checkout
-        uses: actions/checkout@v2
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
@@ -166,8 +148,6 @@ jobs:
         run: npm install
       - name: Run EPG Grabber
         run: npx epg-grabber --config=sites/mi.tv.config.js
-      - name: Checkout
-        uses: actions/checkout@v2
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
@@ -183,8 +163,6 @@ jobs:
         run: npm install
       - name: Run EPG Grabber
         run: npx epg-grabber --config=sites/meo.pt.config.js
-      - name: Checkout
-        uses: actions/checkout@v2
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
@@ -200,8 +178,6 @@ jobs:
         run: npm install
       - name: Run EPG Grabber
         run: npx epg-grabber --config=sites/tvgid.ua.config.js
-      - name: Checkout
-        uses: actions/checkout@v2
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
@@ -217,8 +193,6 @@ jobs:
         run: npm install
       - name: Run EPG Grabber
         run: npx epg-grabber --config=sites/m.tv.sms.cz.config.js
-      - name: Checkout
-        uses: actions/checkout@v2
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
@@ -234,8 +208,6 @@ jobs:
         run: npm install
       - name: Run EPG Grabber
         run: npx epg-grabber --config=sites/cosmote.gr.config.js
-      - name: Checkout
-        uses: actions/checkout@v2
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
@@ -251,8 +223,6 @@ jobs:
         run: npm install
       - name: Run EPG Grabber
         run: npx epg-grabber --config=sites/programetv.ro.config.js
-      - name: Checkout
-        uses: actions/checkout@v2
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
@@ -268,8 +238,6 @@ jobs:
         run: npm install
       - name: Run EPG Grabber
         run: npx epg-grabber --config=sites/programtv.onet.pl.config.js
-      - name: Checkout
-        uses: actions/checkout@v2
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
@@ -285,8 +253,6 @@ jobs:
         run: npm install
       - name: Run EPG Grabber
         run: npx epg-grabber --config=sites/digiturk.com.tr.config.js
-      - name: Checkout
-        uses: actions/checkout@v2
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
@@ -302,8 +268,6 @@ jobs:
         run: npm install
       - name: Run EPG Grabber
         run: npx epg-grabber --config=sites/programme-tv.net.config.js
-      - name: Checkout
-        uses: actions/checkout@v2
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
@@ -319,8 +283,6 @@ jobs:
         run: npm install
       - name: Run EPG Grabber
         run: npx epg-grabber --config=sites/programacion-tv.elpais.com.config.js
-      - name: Checkout
-        uses: actions/checkout@v2
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
@@ -336,8 +298,6 @@ jobs:
         run: npm install
       - name: Run EPG Grabber
         run: npx epg-grabber --config=sites/guidatv.sky.it.config.js
-      - name: Checkout
-        uses: actions/checkout@v2
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
@@ -353,8 +313,6 @@ jobs:
         run: npm install
       - name: Run EPG Grabber
         run: npx epg-grabber --config=sites/ontvtonight.com.config.js
-      - name: Checkout
-        uses: actions/checkout@v2
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
@@ -370,8 +328,6 @@ jobs:
         run: npm install
       - name: Run EPG Grabber
         run: npx epg-grabber --config=sites/tv.yandex.ru.config.js
-      - name: Checkout
-        uses: actions/checkout@v2
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
