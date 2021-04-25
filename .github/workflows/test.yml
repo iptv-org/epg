@@ -7,9 +7,9 @@ jobs:
     continue-on-error: true
     strategy:
       matrix:
-        site: [hd-plus.de, andorradifusio.ad]
+        site: [hd-plus.de, andorradifusio.ad, znbc.co.zm]
       fail-fast: false
-      max-parallel: 1
+      max-parallel: 2
     steps:
       - name: Checkout
         uses: actions/checkout@v2
