@@ -3,6 +3,7 @@ on:
   workflow_dispatch:
 jobs:
   andorradifusio_ad1:
+    concurrency: sync
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -18,6 +19,7 @@ jobs:
           folder: .gh-pages
           clean: false
   andorradifusio_ad2:
+    concurrency: sync
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
