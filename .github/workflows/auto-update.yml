@@ -50,7 +50,6 @@ jobs:
           folder: .gh-pages
           clean: false
   hd-plus_de:
-    concurrency: sync
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -81,7 +80,6 @@ jobs:
           folder: .gh-pages
           clean: false
   comteco_com_bo:
-    concurrency: sync
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -142,7 +140,6 @@ jobs:
           folder: .gh-pages
           clean: false
   mi_tv:
-    concurrency: sync
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -173,7 +170,6 @@ jobs:
           folder: .gh-pages
           clean: false
   tvgid_ua:
-    concurrency: sync
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
