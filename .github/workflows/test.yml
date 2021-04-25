@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 jobs:
   hd-plus_de:
-    if: ${{ always() }}
+    if: always()
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -13,7 +13,7 @@ jobs:
       - name: Run EPG Grabber
         run: npx epg-grabber --config=sites/hd-plus.de.config.js
   andorradifusio_ad:
-    if: ${{ always() }}
+    if: always()
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
