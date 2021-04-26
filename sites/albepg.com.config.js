@@ -21,7 +21,7 @@ module.exports = {
     return `http://albepg.com/epg/guide.xml`
   },
   logo: function ({ channel }) {
-    return `http://albepg.com/tvlogi/${encodeURI(channel.site_id)}.png`
+    return `http://albepg.com/tvlogi/${channel.site_id}.png`
   },
   parser: function ({ content, channel, date }) {
     const results = epgParser.parse(content)
