@@ -13,9 +13,7 @@ module.exports = {
   channels: 'comteco.com.bo.channels.xml',
   output: '.gh-pages/guides/comteco.com.bo.guide.xml',
   url: function ({ channel }) {
-    return `https://comteco.com.bo/pages/canales-y-programacion-tv/paquete-oro/${encodeURI(
-      channel.site_id
-    )}`
+    return `https://comteco.com.bo/pages/canales-y-programacion-tv/paquete-oro/${channel.site_id}`
   },
   logo: function ({ content }) {
     const dom = new JSDOM(content)
