@@ -35,7 +35,7 @@ jobs:
             tvtv.us
           ]
       fail-fast: false
-      max-parallel: 3
+      max-parallel: 2
     steps:
       - name: Checkout
         uses: actions/checkout@v2
