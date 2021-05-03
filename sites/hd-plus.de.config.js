@@ -3,9 +3,11 @@ const { JSDOM } = jsdom
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
+const timezone = require('dayjs/plugin/timezone')
 
 dayjs.extend(utc)
 dayjs.extend(customParseFormat)
+dayjs.extend(timezone)
 
 module.exports = {
   lang: 'de',
@@ -33,7 +35,8 @@ module.exports = {
       const fullDate = (item.querySelector('td:nth-child(2)') || { textContent: '' }).textContent
       if (title && fullDate) {
         const time = fullDate.split(' ').pop()
-        const start = dayjs.utc(time, 'HH:mm')
+        const local = dayjs.utc(time, 'HH:mm').toString()
+        const start = dayjs.tz(local.toString(), 'Europe/Berlin').toString()
 
         if (programs.length && !programs[programs.length - 1].stop) {
           programs[programs.length - 1].stop = start
@@ -41,7 +44,7 @@ module.exports = {
 
         programs.push({
           title,
-          start: start.toString()
+          start
         })
       }
     })
