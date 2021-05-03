@@ -1,9 +1,11 @@
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
+const timezone = require('dayjs/plugin/timezone')
 
 dayjs.extend(utc)
 dayjs.extend(customParseFormat)
+dayjs.extend(timezone)
 
 module.exports = {
   lang: 'pt',
@@ -37,8 +39,10 @@ module.exports = {
 
     items.forEach(item => {
       const title = item.name
-      const start = dayjs.utc(`${item.date}/${item.timeIni}`, 'D-M-YYYY/HH:mm')
-      const stop = dayjs.utc(`${item.date}/${item.timeEnd}`, 'D-M-YYYY/HH:mm')
+      const localStart = dayjs.utc(`${item.date}/${item.timeIni}`, 'D-M-YYYY/HH:mm')
+      const start = dayjs.tz(localStart.toString(), 'Europe/Lisbon').toString()
+      const localStop = dayjs.utc(`${item.date}/${item.timeEnd}`, 'D-M-YYYY/HH:mm')
+      const stop = dayjs.tz(localStop.toString(), 'Europe/Lisbon').toString()
 
       if (title && start && stop) {
         programs.push({
