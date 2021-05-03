@@ -1,4 +1,5 @@
 const jsdom = require('jsdom')
+const iconv = require('iconv-lite')
 const { JSDOM } = jsdom
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
@@ -25,9 +26,10 @@ module.exports = {
 
     return img ? img.src : null
   },
-  parser: function ({ content, date }) {
+  parser: function ({ buffer, date }) {
     const programs = []
-    const dom = new JSDOM(content)
+    const string = iconv.decode(buffer, 'win1250')
+    const dom = new JSDOM(string)
     const items = dom.window.document.querySelectorAll('#obsah > div > div.porady > div.porad')
     items.forEach((item, i) => {
       const time = (item.querySelector('div > span') || { textContent: '' }).textContent
