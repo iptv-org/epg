@@ -29,7 +29,7 @@ module.exports = {
     const programs = []
     const dom = new JSDOM(content)
     const items = dom.window.document.querySelectorAll('#obsah > div > div.porady > div.porad')
-    items.forEach(item => {
+    items.forEach((item, i) => {
       const time = (item.querySelector('div > span') || { textContent: '' }).textContent
         .toString()
         .trim()
@@ -41,11 +41,11 @@ module.exports = {
         .trim()
 
       if (time && title) {
-        const local = dayjs
-          .utc(time, 'HH.mm')
-          .date(date.date())
-          .month(date.month())
-          .year(date.year())
+        let local = dayjs.utc(time, 'HH.mm').date(date.date()).month(date.month()).year(date.year())
+
+        if (local.hour() <= 6 && i > items.length / 2) {
+          local = local.date(local.date() + 1)
+        }
         const start = dayjs.tz(local.toString(), 'Europe/Prague').toString()
 
         if (programs.length && !programs[programs.length - 1].stop) {
