@@ -3,9 +3,11 @@ const { JSDOM } = jsdom
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 var customParseFormat = require('dayjs/plugin/customParseFormat')
+var timezone = require('dayjs/plugin/timezone')
 
 dayjs.extend(utc)
 dayjs.extend(customParseFormat)
+dayjs.extend(timezone)
 
 module.exports = {
   lang: 'cs',
@@ -39,12 +41,12 @@ module.exports = {
         .trim()
 
       if (time && title) {
-        const start = dayjs
+        const local = dayjs
           .utc(time, 'HH.mm')
-          .set('D', date.get('D'))
-          .set('M', date.get('M'))
-          .set('y', date.get('y'))
-          .toString()
+          .date(date.date())
+          .month(date.month())
+          .year(date.year())
+        const start = dayjs.tz(local.toString(), 'Europe/Prague').toString()
 
         if (programs.length && !programs[programs.length - 1].stop) {
           programs[programs.length - 1].stop = start
