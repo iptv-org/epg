@@ -10,29 +10,30 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        site: [
-            # telkussa.fi,
-            andorradifusio.ad
-            # znbc.co.zm,
-            # hd-plus.de,
-            # astro.com.my,
-            # comteco.com.bo,
-            # albepg.com,
-            # mi.tv,
-            # meo.pt,
-            # tvgid.ua,
-            # m.tv.sms.cz,
-            # cosmote.gr,
-            # programetv.ro,
-            # programtv.onet.pl,
-            # digiturk.com.tr,
-            # programme-tv.net,
-            # programacion-tv.elpais.com,
-            # guidatv.sky.it,
-            # ontvtonight.com,
-            # tv.yandex.ru,
-            # tvtv.ca,
-            # tvtv.us
+        site:
+          [
+            telkussa.fi,
+            andorradifusio.ad,
+            znbc.co.zm,
+            hd-plus.de,
+            astro.com.my,
+            comteco.com.bo,
+            albepg.com,
+            mi.tv,
+            meo.pt,
+            tvgid.ua,
+            m.tv.sms.cz,
+            cosmote.gr,
+            programetv.ro,
+            programtv.onet.pl,
+            digiturk.com.tr,
+            programme-tv.net,
+            programacion-tv.elpais.com,
+            guidatv.sky.it,
+            ontvtonight.com,
+            tv.yandex.ru,
+            tvtv.ca,
+            tvtv.us
           ]
     steps:
       - name: Checkout
