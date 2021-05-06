@@ -8,34 +8,32 @@ jobs:
     runs-on: ubuntu-latest
     continue-on-error: true
     strategy:
-      matrix:
-        site:
-          [
-            telkussa.fi,
-            andorradifusio.ad,
-            znbc.co.zm,
-            hd-plus.de,
-            astro.com.my,
-            comteco.com.bo,
-            albepg.com,
-            mi.tv,
-            meo.pt,
-            tvgid.ua,
-            m.tv.sms.cz,
-            cosmote.gr,
-            programetv.ro,
-            programtv.onet.pl,
-            digiturk.com.tr,
-            programme-tv.net,
-            programacion-tv.elpais.com,
-            guidatv.sky.it,
-            ontvtonight.com,
-            tv.yandex.ru,
-            tvtv.ca,
-            tvtv.us
-          ]
       fail-fast: false
-      max-parallel: 2
+      matrix:
+        site: [
+            telkussa.fi,
+            andorradifusio.ad
+            # znbc.co.zm,
+            # hd-plus.de,
+            # astro.com.my,
+            # comteco.com.bo,
+            # albepg.com,
+            # mi.tv,
+            # meo.pt,
+            # tvgid.ua,
+            # m.tv.sms.cz,
+            # cosmote.gr,
+            # programetv.ro,
+            # programtv.onet.pl,
+            # digiturk.com.tr,
+            # programme-tv.net,
+            # programacion-tv.elpais.com,
+            # guidatv.sky.it,
+            # ontvtonight.com,
+            # tv.yandex.ru,
+            # tvtv.ca,
+            # tvtv.us
+          ]
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -43,6 +41,19 @@ jobs:
         run: npm install
       - name: Run EPG Grabber
         run: npx epg-grabber --config=sites/${{ matrix.site }}.config.js
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: .gh-pages/guides
+          path: .gh-pages/guides/${{ matrix.site }}.guide.xml
+  deploy:
+    needs: grab
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Download Artifacts
+        uses: actions/download-artifact@v2
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
