@@ -33,7 +33,8 @@ jobs:
             ontvtonight.com,
             tv.yandex.ru,
             tvtv.ca,
-            tvtv.us
+            tvtv.us,
+            tv.lv
           ]
     steps:
       - name: Checkout
