@@ -35,6 +35,7 @@ To load a program guide, all you need to do is copy the link to one of the guide
     <tr><td align="left" nowrap>🇮🇹 Italy</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/guidatv.sky.it.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇮🇪 Ireland</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/ontvtonight.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇰🇿 Kazakhstan</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tv.yandex.ru.guide.xml</code></td></tr>
+    <tr><td align="left" nowrap>🇱🇻 Latvia</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tv.lv.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇲🇾 Malaysia</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/astro.com.my.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇲🇽 Mexico</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/mi.tv.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇵🇾 Paraguay</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/mi.tv.guide.xml</code></td></tr>
