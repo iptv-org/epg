@@ -13,10 +13,49 @@ jobs:
         run: npm install
       - name: Update Codes
         run: npm run update-codes
-      - name: Commit Changes
-        run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add .
-          git diff-index --quiet HEAD || git commit -m "[Bot] Update codes"
-          git push
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: codes.csv
+          path: codes.csv
+  pull-request:
+    needs: update
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Download codes.csv
+        uses: actions/download-artifact@v2
+        with:
+          name: codes.csv
+      - name: Generate Token
+        uses: tibdex/github-app-token@v1
+        id: generate-token
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
+      - name: Create Pull Request
+        id: pr
+        uses: peter-evans/create-pull-request@v3
+        with:
+          title: '[Bot] Update codes'
+          body: |
+            This pull request is created automatically by `update-codes` action.
+          commit-message: '[Bot] Update codes'
+          committer: GitHub <noreply@github.com>
+          branch: bot/update-codes
+          delete-branch: true
+          token: ${{ steps.generate-token.outputs.token }}
+      - name: Enable Pull Request Automerge
+        if: steps.pr.outputs.pull-request-operation == 'created'
+        uses: peter-evans/enable-pull-request-automerge@v1
+        with:
+          token: ${{ secrets.PAT }}
+          pull-request-number: ${{ steps.pr.outputs.pull-request-number }}
+          merge-method: squash
+      - name: Approve Pull Request
+        if: steps.pr.outputs.pull-request-operation == 'created'
+        uses: juliangruber/approve-pull-request-action@v1
+        with:
+          github-token: ${{ secrets.PAT }}
+          number: ${{ steps.pr.outputs.pull-request-number }}
