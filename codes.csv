@@ -25,6 +25,7 @@ Channel Name,EPG Code (tvg-id)
 2x2,2x2.pl
 2x2,2x2.ru
 3 Plus,3Plus.al
+3+,3Plus.lv
 3/24,324.es
 31 канал,31kanal.kz
 34 канал,34kanal.ua
@@ -2679,6 +2680,8 @@ Duck TV Plus,DuckTVPlus.sk
 Duck TV SD,DuckTVSD.sk
 Duna,Duna.hu
 Duna World,DunaWorld.hu
+Duo 3,Duo3.lv
+Duo 6,Duo6.lv
 Dusk!,Dusk.nl
 DW Deutsch,DWDeutsch.de
 DW Deutsch+,DWDeutschPlus.de
@@ -2984,6 +2987,8 @@ FilmBox Premium Romania,FilmBoxPremiumRomania.us
 FilmBox Romania,FilmBoxRomania.us
 FilmBox Stars Hungary,FilmBoxStarsHungary.us
 FilmBox Stars Romania,FilmBoxStarsRomania.us
+Filmzone,Filmzone.lv
+Filmzone+,FilmzonePlus.lv
 First Alert Weather (WBAY-DT2),WBAYTV2.us
 Fish TV,FishTV.br
 FIX TV,FIXTV.hu
@@ -3180,6 +3185,7 @@ Fox Italia +1,FoxItaliaPlus1.us
 Fox Life España,FoxLifeEspana.us
 Fox Life Greece,FoxLifeGreece.us
 Fox Life Hrvatska,FoxLifeHrvatska.us
+Fox Life Latvia,FoxLifeLatvia.us
 Fox Life Malaysia,FoxLifeMalaysia.us
 Fox Life Portugal,FoxLifePortugal.us
 Fox Life Regional,FoxLifeRegional.us
@@ -4112,6 +4118,8 @@ KDOC,KDOCTV.us
 Ketnet,Ketnet.be
 Kids & Teens TV,KidsTeensTV.us
 Kids Street,KidsStreet.us
+KidZone TV,KidZoneTV.ee
+Kidzone+,KidzonePlus.ee
 KiKA,KiKA.de
 Kino Barrandov,KinoBarrandov.cz
 Kino Polska,KinoPolska.pl
@@ -4344,6 +4352,7 @@ Localish (WPVI-DT2),WPVITV2.us
 Localvisão TV,LocalvisaoTV.pt
 Logo East,LogoEast.us
 Logo West,LogoWest.us
+Lolo TV,LoloTV.lv
 London Live,LondonLive.uk
 Lone Star Channel (KQRM-LP),KQRMLP.us
 Longhorn Network,LonghornNetwork.us
@@ -4355,6 +4364,8 @@ Lounge TV,LoungeTV.cz
 LOVE,LOVE.pl
 Love Nature,LoveNature.ca
 LS Times TV,LSTimesTV.ca
+LTV1,LTV1.lv
+LTV7,LTV7.lv
 Lubelska.tv,Lubelskatv.pl
 Luxe TV,LuxeTV.lu
 Luxury,Luxury.ru
@@ -4855,6 +4866,7 @@ Music Choice True Country,MusicChoiceTrueCountry.us
 Music Choice Y2K,MusicChoiceY2K.us
 MusicTop,MusicTop.ar
 Muzsika TV,MuzsikaTV.hu
+MVK,MVK.lv
 My Music,MyMusic.al
 My Network TV (WSST),WSSTTV.us
 Mya,Mya.it
@@ -4901,6 +4913,7 @@ National Geographic Hungary & Czechia,NationalGeographicHungaryCzechia.us
 National Geographic Italia,NationalGeographicItalia.us
 National Geographic Italia +1,NationalGeographicItaliaPlus1.us
 National Geographic Latinoamérica,NationalGeographicLatinoamerica.us
+National Geographic Latvija,NationalGeographicLatvija.us
 National Geographic Polska,NationalGeographicPolska.us
 National Geographic Portugal,NationalGeographicPortugal.us
 National Geographic România,NationalGeographicRomania.us
@@ -5197,6 +5210,7 @@ Nickelodeon Italia,NickelodeonItalia.us
 Nickelodeon Italia +1,NickelodeonItaliaPlus1.us
 Nickelodeon Junior France,NickelodeonJuniorFrance.us
 Nickelodeon Latinoamérica,NickelodeonLatinoamerica.us
+Nickelodeon Latvia,NickelodeonLatvia.us
 Nickelodeon Polska,NickelodeonPolska.us
 Nickelodeon România,NickelodeonRomania.us
 Nickelodeon South East Asia,NickelodeonSouthEastAsia.us
@@ -6079,6 +6093,7 @@ RCN Nuestra Tele,RCNNuestraTele.co
 RDS,RDS.ca
 RDS Info,RDSInfo.ca
 RDS2,RDS2.ca
+Re:TV,ReTV.lv
 Real Estate Channel,RealEstateChannel.ca
 Real Estate Channel (KHSC-DT2),KHSCLP2.us
 Real Madrid TV,RealMadridTV.es
@@ -6158,6 +6173,7 @@ Regio TV,RegioTV.de
 Regiony+,RegionyPlus.cz
 Regionální TV,RegionalniTV.cz
 Relax,Relax.cz
+REN TV Baltic,RENTVBaltic.ru
 Rete 4,Rete4.it
 Retro Music TV,RetroMusicTV.cz
 Retro TV,RetroTV.us
@@ -6347,6 +6363,7 @@ RU.TV,RUTV.ru
 RugbyPass TV,RugbyPassTV.uk
 Russian Extreme,RussianExtreme.ru
 Russian Travel Guide,RussianTravelGuide.ru
+Rīga TV24,RigaTV24.lv
 Saint-Pierre et Miquelon la 1ère,SaintPierreetMiquelonla1ere.fr
 Saisons Canada,SaisonsCanada.ca
 Sale Network,SaleNetwork.us
@@ -6585,6 +6602,7 @@ Sláger TV,SlagerTV.hu
 Smart LifeStyle TV,SmartLifeStyleTV.us
 Smart Lifestyle TV (KPHE-DT5),KPHELD5.us
 Smart Lifestyle TV (KPHE-DT6),KPHELD6.us
+Smartzone,Smartzone.ee
 Smile (KTBN-DT5),KTBNTV5.us
 Smile TV,SmileTV.gr
 Smile TV,SmileTV.us
@@ -6700,10 +6718,12 @@ Sport.TV3,SportTV3.pt
 Sport.TV4,SportTV4.pt
 Sport.TV5,SportTV5.pt
 Sport1,Sport1.de
+Sport1,Sport1.lt
 Sport1 Czechia,Sport1Czechia.hu
 Sport1 Hungary,Sport1Hungary.hu
 Sport2 Czechia,Sport2Czechia.hu
 Sport2 Hungary,Sport2Hungary.hu
+Sportacentrs.com,Sportacentrscom.lv
 Sportdigital,Sportdigital.de
 Sporting TV,SportingTV.pt
 Sportsman Channel,SportsmanChannel.us
@@ -7706,6 +7726,7 @@ TV Jornal,TVJornal.br
 TV Justiça,TVJustica.br
 TV Klan,TVKlan.al
 TV Koha,TVKoha.al
+TV Kurzeme,TVKurzeme.lv
 TV Land East,TVLandEast.us
 TV Land West,TVLandWest.us
 TV Levoča,TVLevoca.sk
@@ -7787,7 +7808,7 @@ TV Verdes Mares Cariri,TVVerdesMaresCariri.br
 TV Vitória,TVVitoria.br
 TV Východ,TVVychod.sk
 TV WAU,TVWAU.sk
-TV XXI,TVXXI.ru
+TV XXI,TVXXI.lv
 TV Zemplín,TVZemplin.sk
 TV Губерния,TVGuberniya.ru
 TV-4,TV4.ua
@@ -7810,7 +7831,13 @@ TV2 Séf,TV2Sef.hu
 TV2000,TV2000.va
 TV3,TV3.my
 TV3,TV3.es
+TV3,TV3.lv
 TV3,TV3.zm
+TV3 Film,TV3Film.lv
+TV3 Life,TV3Life.lv
+TV3 Mini,TV3Mini.lv
+TV3 Sport,TV3Sport.lv
+TV3 Sport 2,TV3Sport2.lv
 TV3CAT,TV3CAT.es
 TV4,TV4.pl
 TV4,TV4.hu
@@ -7826,6 +7853,7 @@ TV5Monde Amérique Latine,TV5MondeAmeriqueLatine.fr
 TV5Monde Europe,TV5MondeEurope.fr
 TV5Monde États-Unis,TV5MondeEtatsUnis.fr
 TV6,TV6.pl
+TV6,TV6.lv
 TV7,TV7.sk
 TV7,TV7.fi
 TV7 Bordeaux,TV7Bordeaux.fr
@@ -8676,6 +8704,7 @@ ZWTV (KJLA-DT9),KJLA9.us
 Россия 24,Rossiya24.ru
 РТВ - Любимое кино,RTVLyubimoekino.ru
 РТР-Планета,RTRPlaneta.ru
+РТР-Планета Балтия,RTRPlanetaBaltiya.ru
 Русский бестселлер,Russkiybestseller.ru
 Русский Детектив,RusskiyDetektiv.ru
 Русский Иллюзион,RusskiyIllyuzion.ru
@@ -8705,6 +8734,7 @@ ZWTV (KJLA-DT9),KJLA9.us
 СТС,STS.ru
 СТС International,STSInternational.ru
 СТС Love,STSLove.ru
+СТС Балтия,STSBaltiya.ru
 Сургут 24,Surgut24.ru
 Сігма,Sigma.ua
 Тайны Галактики,TaynyGalaktiki.ru
