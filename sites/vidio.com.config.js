@@ -21,33 +21,34 @@ module.exports = {
   parser({ content, date }) {
     const programs = []
     const dom = new JSDOM(content)
-    if (dom.window.document.querySelector('div.livestreaming-empty-state')) return programs
 
     const currdate = dayjs(
-        dom.window.document.querySelector('div.b-livestreaming-daily-schedule__date-label').textContent,
-        'DDDD, DD MMMM YYYY', 'id')
-    const items = dom.window.document.querySelectorAll('div.b-livestreaming-daily-schedule__item')
+        dom.window.document.querySelector('div.b-livestreaming-daily-schedule__date-label').textContent)
+    const lists = dom.window.document.querySelectorAll('div.b-livestreaming-daily-schedule__content')
+    lists.forEach(list => {
+      const listdate = currdate.add(
+        JSON.parse(list.querySelector('div.b-livestreaming-schedule__ahoy-impression').getAttribute('data-ahoy-props') || {}).schedule_day, 'day')
 
-    items.forEach(item => {
-      const title = (item.querySelector('div.b-livestreaming-daily-schedule__item-content-title') || { textContent: '' }).textContent
-      const time = (item.querySelector('b-livestreaming-daily-schedule__item-content-caption') || { textContent: '' }).textContent
-      const it_date = currdate.add(JSON.parse(item.getAttribute('data-ahoy-props') || '{}').schedule_day, 'day')
+      const items = list.querySelectorAll('div.b-livestreaming-daily-schedule__item')
+      items.forEach(item => {
+        const title = (item.querySelector('div.b-livestreaming-daily-schedule__item-content-title') || { textContent: '' }).textContent
+        const time = (item.querySelector('div.b-livestreaming-daily-schedule__item-content-caption') || { textContent: '' }).textContent
+        if (title && time) {
+          let start = dayjs(listdate.format('YYYY-MM-DD ').concat(time.substring(0,5)), 'YYYY-MM-DD HH:mm')
+          let stop = dayjs(listdate.format('YYYY-MM-DD ').concat(time.substring(8,13)), 'YYYY-MM-DD HH:mm')
+          if (start.diff(stop, 'h') < 0) {
+            stop = stop.add(1, 'day')
+          }
 
-      if (title && time) {
-        let start = dayjs(it_date.format('YYYY-MM-DD ').concat(time.substring(0,5)), 'YYYY-MM-DD HH:mm')
-        let stop = dayjs(it_date.format('YYYY-MM-DD ').concat(time.substring(8,13)), 'YYYY-MM-DD HH:mm')
-        if start.diff(stop, 'h') < 0 {
-          stop = stop.add(1, 'day')
+          if (listdate.diff(date.format('YYYY-MM-DD'), 'd') === 0) {
+            programs.push({
+              title,
+              start,
+              stop
+            })
+          }
         }
-
-        if (it_date.diff(date.format('YYYY-MM-DD'), 'd') === 0) {
-          programs.push({
-            title,
-            start,
-            stop
-          })
-        }
-      }
+      })
     })
 
     return programs
