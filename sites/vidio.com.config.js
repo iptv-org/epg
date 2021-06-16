@@ -14,7 +14,7 @@ module.exports = {
   lang: 'id',
   site: 'vidio.com',
   channels: 'vidio.com.channels.xml',
-  output: '.gh-pages/guides/vidio.com.channels.xml',
+  output: '.gh-pages/guides/vidio.com.guide.xml',
   url({ channel }) {
     return `https://www.vidio.com/live/${channel.site_id}/schedules`
   },
