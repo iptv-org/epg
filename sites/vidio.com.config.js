@@ -43,8 +43,8 @@ module.exports = {
           if (listdate.diff(date.format('YYYY-MM-DD'), 'd') === 0) {
             programs.push({
               title,
-              start,
-              stop
+              start.utc(),
+              stop.utc()
             })
           }
         }
