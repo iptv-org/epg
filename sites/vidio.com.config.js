@@ -34,8 +34,8 @@ module.exports = {
         const title = (item.querySelector('div.b-livestreaming-daily-schedule__item-content-title') || { textContent: '' }).textContent
         const time = (item.querySelector('div.b-livestreaming-daily-schedule__item-content-caption') || { textContent: '' }).textContent
         if (title && time) {
-          let start = dayjs(listdate.format('YYYY-MM-DD ').concat(time.substring(0,5)), 'YYYY-MM-DD HH:mm').utc()
-          let stop = dayjs(listdate.format('YYYY-MM-DD ').concat(time.substring(8,13)), 'YYYY-MM-DD HH:mm').utc()
+          let start = dayjs(listdate.format('YYYY-MM-DD ').concat(time.substring(0,5)), 'YYYY-MM-DD HH:mm').subtract(7, 'hour')
+          let stop = dayjs(listdate.format('YYYY-MM-DD ').concat(time.substring(8,13)), 'YYYY-MM-DD HH:mm').subtract(7, 'hour')
           if (start.diff(stop, 'h') > 0) {
             stop = stop.add(1, 'day')
           }
