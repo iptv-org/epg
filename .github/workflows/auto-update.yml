@@ -34,7 +34,8 @@ jobs:
             tv.yandex.ru,
             tvtv.ca,
             tvtv.us,
-            tv.lv
+            tv.lv,
+            vidio.com
           ]
     steps:
       - name: Checkout
