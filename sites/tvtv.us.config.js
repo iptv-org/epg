@@ -23,8 +23,12 @@ module.exports = {
       const icon = item.showPicture
         ? `https://cdn.tvpassport.com/image/show/480x720/${item.showPicture}`
         : null
+      let title = item.showName
+      if (title === "Movie") {
+        title = item.episodeTitle
+      }
       programs.push({
-        title: item.showName,
+        title: title,
         description: item.description,
         category: item.showType,
         start: start.toString(),
