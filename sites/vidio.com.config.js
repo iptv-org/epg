@@ -4,6 +4,7 @@ const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
 const timezone = require('dayjs/plugin/timezone')
+require('dayjs/locale/id')
 
 dayjs.extend(utc)
 dayjs.extend(customParseFormat)
@@ -23,8 +24,8 @@ module.exports = {
 
     const scheduleDate = dom.window.document.querySelector(
       'div.b-livestreaming-daily-schedule__date-label'
-    ).textContent
-    const currdate = dayjs(scheduleDate)
+    ).textContent.split(',')
+    const currdate = dayjs(scheduleDate[1], 'DD MMMM YYYY', 'id')
     const list = dom.window.document.querySelector(
       `#schedule-content-${currdate.format(
         'YYYYMMDD'
