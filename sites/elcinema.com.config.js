@@ -93,9 +93,9 @@ function parseStart(item, initDate) {
     .replace('صباحًا', 'AM')
     .trim()
 
-  const date = `${initDate.format('DD/MM/YYYY')} ${time}`
+  time = `${initDate.format('DD/MM/YYYY')} ${time}`
 
-  return dayjs.tz(date, 'DD/MM/YYYY HH:mm A', 'Africa/Algiers')
+  return dayjs.tz(time, 'DD/MM/YYYY H:mm A', 'Africa/Algiers')
 }
 
 function parseTitle(item) {
