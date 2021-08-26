@@ -35,7 +35,8 @@ jobs:
             tvtv.ca,
             tvtv.us,
             tv.lv,
-            vidio.com
+            vidio.com,
+            tvprofil.com
           ]
     steps:
       - name: Checkout
