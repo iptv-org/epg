@@ -38,21 +38,27 @@ module.exports = {
     items.forEach(item => {
       const title = parseTitle(item)
       const start = parseStart(item, date)
+      const stop = parseStop(item, date)
 
       if (title && start) {
-        if (programs.length && !programs[programs.length - 1].stop) {
+        if (programs.length) {
           programs[programs.length - 1].stop = start
         }
 
         programs.push({
           title,
-          start
+          start,
+          stop
         })
       }
     })
 
     return programs
   }
+}
+
+function parseStop(item, date) {
+  return date.tz('Europe/London').endOf('d')
 }
 
 function parseStart(item, date) {
