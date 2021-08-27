@@ -54,7 +54,7 @@ module.exports = {
 }
 
 function parseStop(item, date) {
-  return date.tz('Europe/Warsaw').endOf('d').add(6, 'h')
+  return date.add(1, 'd').hour(3).startOf('h')
 }
 
 function parseStart(item, date) {
