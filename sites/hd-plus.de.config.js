@@ -45,7 +45,7 @@ module.exports = {
 }
 
 function parseStop(item, date) {
-  return date.tz('Europe/Berlin').endOf('d')
+  return date.endOf('d')
 }
 
 function parseStart(item, date) {
