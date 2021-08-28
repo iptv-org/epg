@@ -31,7 +31,7 @@ module.exports = {
     items.forEach(item => {
       const title = parseTitle(item)
       const start = parseStart(item, date)
-      const stop = parseStop(item, start)
+      const stop = parseStop(item, date)
       if (programs.length) {
         programs[programs.length - 1].stop = start
       }
