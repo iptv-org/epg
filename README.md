@@ -14,7 +14,6 @@ To load a program guide, all you need to do is copy the link to one of the guide
     <tr><th align="left">Country</th><th align="left">EPG</th></tr>
   </thead>
   <tbody>
-    <tr><td align="left" nowrap>🇦🇱 Albania</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/albepg.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇩🇿 Algeria</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/elcinema.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇦🇩 Andorra</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/andorradifusio.ad.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇦🇷 Argentina</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/mi.tv.guide.xml</code></td></tr>
