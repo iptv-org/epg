@@ -14,6 +14,7 @@ To load a program guide, all you need to do is copy the link to one of the guide
     <tr><th align="left">Country</th><th align="left">EPG</th></tr>
   </thead>
   <tbody>
+    <tr><td align="left" nowrap>🇩🇿 Algeria</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/elcinema.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇦🇱 Albania</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tvprofil.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇦🇩 Andorra</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/andorradifusio.ad.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇦🇷 Argentina</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/mi.tv.guide.xml</code></td></tr>
@@ -29,6 +30,7 @@ To load a program guide, all you need to do is copy the link to one of the guide
     <tr><td align="left" nowrap>🇭🇷 Croatia</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/maxtv.hrvatskitelekom.hr.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇭🇷 Croatia</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tvprofil.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇨🇿 Czechia</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/m.tv.sms.cz.guide.xml</code></td></tr>
+    <tr><td align="left" nowrap>🇪🇬 Egypt</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/elcinema.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇸🇻 El Salvador</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/mi.tv.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇫🇮 Finland</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/telkussa.fi.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇫🇷 France</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/programme-tv.net.guide.xml</code></td></tr>
@@ -40,10 +42,16 @@ To load a program guide, all you need to do is copy the link to one of the guide
     <tr><td align="left" nowrap>🇭🇺 Hungary</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tvprofil.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇮🇹 Italy</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/guidatv.sky.it.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇮🇪 Ireland</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/ontvtonight.com.guide.xml</code></td></tr>
+    <tr><td align="left" nowrap>🇮🇷 Iran</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/elcinema.com.guide.xml</code></td></tr>
+    <tr><td align="left" nowrap>🇮🇶 Iraq</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/elcinema.com.guide.xml</code></td></tr>
+    <tr><td align="left" nowrap>🇯🇴 Jordan</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/elcinema.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇰🇿 Kazakhstan</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tv.yandex.ru.guide.xml</code></td></tr>
+    <tr><td align="left" nowrap>🇰🇼 Kuwait</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/elcinema.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇱🇻 Latvia</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tv.lv.guide.xml</code></td></tr>
+    <tr><td align="left" nowrap>🇱🇾 Libya</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/elcinema.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇲🇾 Malaysia</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/astro.com.my.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇲🇽 Mexico</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/mi.tv.guide.xml</code></td></tr>
+    <tr><td align="left" nowrap>🇲🇦 Morocco</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/elcinema.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇲🇪 Montenegro</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tvprofil.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇲🇰 North Macedonia</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tvprofil.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇵🇾 Paraguay</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/mi.tv.guide.xml</code></td></tr>
@@ -52,13 +60,17 @@ To load a program guide, all you need to do is copy the link to one of the guide
     <tr><td align="left" nowrap>🇵🇹 Portugal</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/meo.pt.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇷🇴 Romania</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/programetv.ro.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇷🇺 Russia</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tv.yandex.ru.guide.xml</code></td></tr>
+    <tr><td align="left" nowrap>🇸🇦 Saudi Arabia</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/elcinema.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇷🇸 Serbia</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/maxtv.hrvatskitelekom.hr.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇷🇸 Serbia</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tvprofil.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇸🇮 Slovenia</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tvprofil.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇪🇸 Spain</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/programacion-tv.elpais.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇸🇪 Sweden</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/telkussa.fi.guide.xml</code></td></tr>
+    <tr><td align="left" nowrap>🇸🇾 Syria</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/elcinema.com.guide.xml</code></td></tr>
+    <tr><td align="left" nowrap>🇹🇳 Tunisia</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/elcinema.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇹🇷 Turkey</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/digiturk.com.tr.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇺🇦 Ukraine</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tvgid.ua.guide.xml</code></td></tr>
+    <tr><td align="left" nowrap>🇦🇪 United Arab Emirates</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/elcinema.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇬🇧 United Kingdom</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/ontvtonight.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇺🇸 United States</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tvtv.us.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇿🇲 Zambia</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/znbc.co.zm.guide.xml</code></td></tr>
