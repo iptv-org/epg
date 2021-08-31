@@ -3,11 +3,14 @@ const iconv = require('iconv-lite')
 const { JSDOM } = jsdom
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
 
 dayjs.extend(utc)
+dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
+let PM = false
 module.exports = {
   lang: 'uk',
   site: 'tvgid.ua',
@@ -18,36 +21,50 @@ module.exports = {
   },
   parser: function ({ buffer, date }) {
     const programs = []
-    const string = iconv.decode(buffer, 'win1251')
-    const dom = new JSDOM(string)
-    const items = dom.window.document.querySelectorAll(
-      '#container > tbody > tr:nth-child(2) > td > table > tbody > tr > td > table:nth-child(2) > tbody > tr'
-    )
-
+    const items = parseItems(buffer)
     items.forEach(item => {
-      const time = (item.querySelector('td > table > tbody > tr > td.time') || { textContent: '' })
-        .textContent
-      const title = (
-        item.querySelector('td > table > tbody > tr > td.item > a') ||
-        item.querySelector('td > table > tbody > tr > td.item') || { textContent: '' }
-      ).textContent
-
-      const start = dayjs
-        .utc(time, 'HH:mm')
-        .set('D', date.get('D'))
-        .set('M', date.get('M'))
-        .set('y', date.get('y'))
-
-      if (programs.length && !programs[programs.length - 1].stop) {
+      const title = parseTitle(item)
+      let start = parseStart(item, date)
+      if (!start) return
+      if (start.hour() > 11) PM = true
+      if (start.hour() < 12 && PM) start = start.add(1, 'd')
+      const stop = parseStop(item, start)
+      if (programs.length) {
         programs[programs.length - 1].stop = start
       }
 
-      programs.push({
-        title,
-        start
-      })
+      programs.push({ title, start, stop })
     })
 
     return programs
   }
+}
+
+function parseStop(item, date) {
+  return date.hour(7)
+}
+
+function parseStart(item, date) {
+  let time = (item.querySelector('td > table > tbody > tr > td.time') || { textContent: '' })
+    .textContent
+  if (!time) return null
+  time = `${date.format('MM/DD/YYYY')} ${time}`
+
+  return dayjs.tz(time, 'MM/DD/YYYY HH:mm', 'Europe/Kiev')
+}
+
+function parseTitle(item) {
+  return (
+    item.querySelector('td > table > tbody > tr > td.item > a') ||
+    item.querySelector('td > table > tbody > tr > td.item') || { textContent: '' }
+  ).textContent
+}
+
+function parseItems(buffer) {
+  const string = iconv.decode(buffer, 'win1251')
+  const dom = new JSDOM(string)
+
+  return dom.window.document.querySelectorAll(
+    '#container > tbody > tr:nth-child(2) > td > table > tbody > tr > td > table:nth-child(2) > tbody > tr:not(:first-child)'
+  )
 }
