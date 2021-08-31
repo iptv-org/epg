@@ -51,6 +51,7 @@ jobs:
           name: .gh-pages
           path: .gh-pages/guides/${{ matrix.site }}.guide.xml
   deploy:
+    if: ${{ github.ref == 'refs/heads/master' }}
     needs: grab
     runs-on: ubuntu-latest
     steps:
@@ -58,6 +59,12 @@ jobs:
         uses: actions/checkout@v2
       - name: Download Artifacts
         uses: actions/download-artifact@v2
+      - name: Generate Token
+        uses: tibdex/github-app-token@v1
+        id: generate-token
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
@@ -65,3 +72,7 @@ jobs:
           folder: .gh-pages
           target-folder: guides
           clean: false
+          token: ${{ steps.generate-token.outputs.token }}
+          git-config-name: iptv-bot
+          git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
+          commit-message: '[Bot] Deploy to GitHub Pages'
