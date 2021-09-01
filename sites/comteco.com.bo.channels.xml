@@ -2,86 +2,84 @@
 <site site="comteco.com.bo">
   <channels>
     <channel site_id="A&amp;E Mundo" xmltv_id="AELatinoamerica.us">A&amp;E Latinoamérica</channel>
+    <channel site_id="ABYA YALA" xmltv_id="AbyaYalaTV.bo">Abya Yala TV</channel>
     <channel site_id="AMC" xmltv_id="AMCLatinAmerica.us">AMC Latin America</channel>
+    <channel site_id="Animal Planet" xmltv_id="AnimalPlanetLatinoamerica.us">Animal Planet Latinoamérica</channel>
     <channel site_id="ATB (4)" xmltv_id="ATB.bo">ATB</channel>
     <channel site_id="AXN" xmltv_id="AXNLatinoamerica.us">AXN Latinoamérica</channel>
-    <channel site_id="AZ Mundo" xmltv_id="AZMundo.mx">AZ Mundo</channel>
-    <channel site_id="ABYA YALA" xmltv_id="AbyaYalaTV.bo">Abya Yala TV</channel>
-    <channel site_id="Animal Planet" xmltv_id="AnimalPlanetLatinoamerica.us">Animal Planet Latinoamérica</channel>
+    <channel site_id="AZ Mundo" xmltv_id="AzMundo.mx">Az Mundo</channel>
     <channel site_id="Bolivia TV (7)" xmltv_id="BoliviaTV.bo">Bolivia TV</channel>
-    <channel site_id="Bolivia TV (7.2)" xmltv_id="BoliviaTV72.bo">Bolivia TV 7.2</channel>
+    <channel site_id="Bolivia TV (7.2)" xmltv_id="BoliviaTV72Deportes.bo">Bolivia TV 7.2 Deportes</channel>
     <channel site_id="Bolivision (5)" xmltv_id="Bolivision.bo">Bolivisión</channel>
-    <channel site_id="CNN" xmltv_id="CNNInternationalLatinAmerica.us">CNN International Latin America</channel>
     <channel site_id="Cadena A (36)" xmltv_id="CadenaA.bo">Cadena A</channel>
-    <channel site_id="Canal 24 horas" xmltv_id="Canal24horas.es">Canal 24 horas</channel>
-    <channel site_id="Caracol" xmltv_id="CaracolInternacional.co">Caracol Internacional</channel>
+    <channel site_id="Canal 24 horas" xmltv_id="Canal24Horas.es">Canal 24 Horas</channel>
+    <channel site_id="Caracol" xmltv_id="CaracolTVInternacional.co">Caracol TV Internacional</channel>
     <channel site_id="Cartoon Network" xmltv_id="CartoonNetworkLatinAmerica.us">Cartoon Network Latin America</channel>
-    <channel site_id="CINECANAL" xmltv_id="Cinecanal.us">Cinecanal</channel>
+    <channel site_id="CINECANAL" xmltv_id="CinecanalEste.us">Cinecanal Este</channel>
     <channel site_id="Cinemax" xmltv_id="CinemaxLatinoamerica.us">Cinemax Latinoamérica</channel>
-    <channel site_id="Cuba Vision" xmltv_id="Cubavision.cu">Cubavisión</channel>
-    <channel site_id="De Pelicula" xmltv_id="DePelicula.mx">De Pelicula</channel>
+    <channel site_id="CNN" xmltv_id="CNNInternationalLatinAmerica.us">CNN International Latin America</channel>
+    <channel site_id="Cuba Vision" xmltv_id="CubavisionInternacional.cu">Cubavisión Internacional</channel>
+    <channel site_id="De Pelicula" xmltv_id="DePelicula.mx">De Película</channel>
     <channel site_id="Discovery Chanel" xmltv_id="DiscoveryChannelLatinoamerica.us">Discovery Channel Latinoamérica</channel>
     <channel site_id="Discovery Home &amp; Health" xmltv_id="DiscoveryHomeHealthLatinoamerica.us">Discovery Home &amp; Health Latinoamérica</channel>
     <channel site_id="Discovery Kids" xmltv_id="DiscoveryKidsAmericaLatina.us">Discovery Kids América Latina</channel>
     <channel site_id="Disney Chanel" xmltv_id="DisneyChannelLatinoamerica.us">Disney Channel Latinoamérica</channel>
-    <channel site_id="Disney Junior" xmltv_id="DisneyJuniorLatinoamerica.us">Disney Junior Latinoamérica</channel>
-    <channel site_id="Disney XD" xmltv_id="DisneyXDLatinAmerica.us">Disney XD Latin America</channel>
+    <channel site_id="Disney Junior" xmltv_id="DisneyJuniorEspana.us">Disney Junior España</channel>
+    <channel site_id="Disney XD" xmltv_id="DisneyXDSur.us">Disney XD Sur</channel>
     <channel site_id="E! Entertaiment" xmltv_id="ELatinoamerica.us">E! Latinoamérica</channel>
+    <channel site_id="elgourmet" xmltv_id="ElGourmetSur.ar">El Gourmet Sur</channel>
+    <channel site_id="El Trece" xmltv_id="ElTreceInternacional.ar">El Trece Internacional</channel>
     <channel site_id="ESPN 2" xmltv_id="ESPN2AmericaLatina.us">ESPN 2 América Latina</channel>
     <channel site_id="ESPN 3" xmltv_id="ESPN3AmericaLatina.us">ESPN 3 América Latina</channel>
     <channel site_id="ESPN" xmltv_id="ESPNAmericaLatina.us">ESPN América Latina</channel>
-    <channel site_id="EWTN" xmltv_id="EWTNEspana.us">EWTN España</channel>
-    <channel site_id="elgourmet" xmltv_id="ElGourmet.ar">El Gourmet</channel>
-    <channel site_id="El Trece" xmltv_id="ElTrece.ar">El Trece</channel>
-    <channel site_id="EURONEWS" xmltv_id="EuronewsenEspanol.fr">Euronews en Español</channel>
+    <channel site_id="EURONEWS" xmltv_id="EuroNewsEspanol.fr">EuroNews Español</channel>
     <channel site_id="EUROPA EUROPA" xmltv_id="EuropaEuropa.uk">Europa Europa</channel>
-    <channel site_id="FX" xmltv_id="FXLatinoamerica.us">FX Latinoamérica</channel>
-    <channel site_id="FXM" xmltv_id="FXMLatinoamerica.us">FXM Latinoamérica</channel>
+    <channel site_id="EWTN" xmltv_id="EWTNEspanaLatinoamerica.us">EWTN España - Latinoamérica</channel>
     <channel site_id="Fox Sport 2" xmltv_id="FoxSports2LatinAmerica.us">Fox Sports 2 Latin America</channel>
     <channel site_id="Fox Sport 3" xmltv_id="FoxSports3LatinAmerica.us">Fox Sports 3 Latin America</channel>
     <channel site_id="Fox Sport" xmltv_id="FoxSportsLatinAmerica.us">Fox Sports Latin America</channel>
+    <channel site_id="FX" xmltv_id="FXSur.us">FX Sur</channel>
+    <channel site_id="FXM" xmltv_id="FXMEste.us">FXM Este</channel>
     <channel site_id="HBO" xmltv_id="HBOLatinoamerica.us">HBO Latinoamérica</channel>
-    <channel site_id="HTV" xmltv_id="HTV.us">HTV</channel>
     <channel site_id="History Chanel" xmltv_id="HistoryLatinoamerica.us">History Latinoamérica</channel>
+    <channel site_id="HTV" xmltv_id="HTV.us">HTV</channel>
     <channel site_id="ID" xmltv_id="InvestigationDiscoveryLatinoamerica.us">Investigation Discovery Latinoamérica</channel>
     <channel site_id="Canal de las Estrellas" xmltv_id="LasEstrellasLatinoamerica.mx">Las Estrellas Latinoamérica</channel>
+    <channel site_id="Clara Vision" xmltv_id="MariaPlusVision.mx">María+Visión</channel>
     <channel site_id="MTV" xmltv_id="MTVLatinoNorte.us">MTV Latino Norte</channel>
-    <channel site_id="Clara Vision" xmltv_id="MariaVision.mx">María Visión</channel>
-    <channel site_id="Mi Musica Urbana" xmltv_id="MiMusicaUrbana.us">Mi Música Urbana</channel>
-    <channel site_id="MAS CHIC" xmltv_id="MasChicLationamerica.us">Más Chic Lationamérica</channel>
+    <channel site_id="MAS CHIC" xmltv_id="MasChicLatinoamerica.us">Más Chic Latinoamérica</channel>
     <channel site_id="NatGeo Kids" xmltv_id="NatGeoKids.us">Nat Geo Kids</channel>
-    <channel site_id="Nathional Geografic" xmltv_id="NationalGeographicLatinoamerica.us">National Geographic Latinoamérica</channel>
-    <channel site_id="Nickelodeom" xmltv_id="NickelodeonLatinoamerica.us">Nickelodeon Latinoamérica</channel>
+    <channel site_id="Nathional Geografic" xmltv_id="NationalGeographicSur.us">National Geographic Sur</channel>
+    <channel site_id="Nickelodeom" xmltv_id="NickelodeonSur.us">Nickelodeon Sur</channel>
     <channel site_id="P.A.T. (42)" xmltv_id="PAT.bo">PAT</channel>
-    <channel site_id="RTP Red Nacional" xmltv_id="RTP.bo">RTP</channel>
     <channel site_id="Record" xmltv_id="RecordTVAmericas.br">Record TV Américas</channel>
     <channel site_id="Red Uno (9)" xmltv_id="RedUno.bo">Red Uno</channel>
-    <channel site_id="SBT" xmltv_id="SBT.br">SBT</channel>
-    <channel site_id="Sony" xmltv_id="SonyChannelLatinoamerica.us">Sony Channel Latinoamérica</channel>
+    <channel site_id="RTP Red Nacional" xmltv_id="RTP.bo">RTP</channel>
+    <channel site_id="SBT" xmltv_id="SBTInternacionalAmerica.br">SBT Internacional America</channel>
+    <channel site_id="Sony" xmltv_id="SonyChannelSur.us">Sony Channel Sur</channel>
     <channel site_id="Space" xmltv_id="SpaceMexico.ar">Space México</channel>
     <channel site_id="STAR" xmltv_id="StarChannelLatinAmerica.us">Star Channel Latin America</channel>
     <channel site_id="STAR LIFE" xmltv_id="StarLifeLatin.us">Star Life Latin</channel>
     <channel site_id="Studio Universal" xmltv_id="StudioUniversalAmericaLatina.us">Studio Universal América Latina</channel>
-    <channel site_id="TBS Very Funny" xmltv_id="TBSLatinoamerica.us">TBS Latinoamérica</channel>
+    <channel site_id="TBS Very Funny" xmltv_id="TBSAmericaLatina.us">TBS América Latina</channel>
     <channel site_id="TCM" xmltv_id="TCMAmericaLatina.us">TCM América Latina</channel>
+    <channel site_id="Telefe Internacional" xmltv_id="TelefeInternacional.ar">Telefe Internacional</channel>
+    <channel site_id="Telemundo" xmltv_id="TelemundoInternacional.us">Telemundo Internacional</channel>
+    <channel site_id="Telesur" xmltv_id="TelesurEnglish.ve">Telesur English</channel>
     <channel site_id="TLC" xmltv_id="TLCLatinoamerica.us">TLC Latinoamérica</channel>
-    <channel site_id="TeleNovelas" xmltv_id="TLNovelas.mx">TLNovelas</channel>
+    <channel site_id="TeleNovelas" xmltv_id="TlnovelasAmerica.mx">Tlnovelas América</channel>
     <channel site_id="TNT" xmltv_id="TNTAmericaLatina.us">TNT América Latina</channel>
     <channel site_id="TNT SERIES" xmltv_id="TNTSeriesBrasil.us">TNT Series Brasil</channel>
+    <channel site_id="Toon Cast" xmltv_id="Tooncast.us">Tooncast</channel>
     <channel site_id="TV Chile" xmltv_id="TVChile.cl">TV Chile</channel>
     <channel site_id="TV Culturas" xmltv_id="TVCulturas.bo">TV Culturas</channel>
     <channel site_id="TV Globo Internacional" xmltv_id="TVGloboInternacionalAmericas.br">TV Globo Internacional Américas</channel>
-    <channel site_id="TNP" xmltv_id="TVPeru.pe">TV Perú</channel>
+    <channel site_id="TNP" xmltv_id="TVPeruInternacional.pe">TV Perú Internacional</channel>
     <channel site_id="TVE" xmltv_id="TVEInternacionalAmerica.es">TVE Internacional América</channel>
-    <channel site_id="Telefe Internacional" xmltv_id="TelefeInternacional.ar">Telefe Internacional</channel>
-    <channel site_id="Telemundo" xmltv_id="TelemundoInternacional.us">Telemundo Internacional</channel>
-    <channel site_id="Toon Cast" xmltv_id="Tooncast.us">Tooncast</channel>
-    <channel site_id="TyC Sports" xmltv_id="TyCSports.ar">TyC Sports</channel>
-    <channel site_id="Unitel (13)" xmltv_id="Unitel.bo">Unitel</channel>
+    <channel site_id="TyC Sports" xmltv_id="TyCSportsInternacional.ar">TyC Sports Internacional</channel>
+    <channel site_id="Unitel (13)" xmltv_id="UnitelSantaCruz.bo">Unitel Santa Cruz</channel>
     <channel site_id="Universal" xmltv_id="UniversalTVAmericaLatina.us">Universal TV América Latina</channel>
-    <channel site_id="Vh1" xmltv_id="VH1Latinoamerica.us">VH1 Latinoamérica</channel>
+    <channel site_id="Vh1" xmltv_id="VH1East.us">VH1 East</channel>
     <channel site_id="Warner Channel" xmltv_id="WarnerChannelAtlanticoSur.us">Warner Channel Atlántico Sur</channel>
-    <channel site_id="XTO TV (27)" xmltv_id="XTOTV.bo">XTO TV</channel>
-    <channel site_id="Telesur" xmltv_id="teleSUREnglish.ve">teleSUR English</channel>
   </channels>
 </site>
