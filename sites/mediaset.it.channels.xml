@@ -1,21 +1,20 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <site site="mediaset.it">
   <channels>
+    <channel site_id="LB" xmltv_id="20Mediaset.it">20 Mediaset</channel>
+    <channel site_id="KB" xmltv_id="BoingItalia.it">Boing Italia</channel>
     <channel site_id="C5" xmltv_id="Canale5.it">Canale 5</channel>
+    <channel site_id="LA" xmltv_id="CartoonitoItalia.us">Cartoonito Italia</channel>
     <channel site_id="FU" xmltv_id="Focus.it">Focus</channel>
+    <channel site_id="KI" xmltv_id="Iris.it">Iris</channel>
     <channel site_id="I1" xmltv_id="Italia1.it">Italia 1</channel>
     <channel site_id="I2" xmltv_id="Italia2.it">Italia 2</channel>
     <channel site_id="KA" xmltv_id="La5.it">La 5</channel>
-    <channel site_id="KB" xmltv_id="BoingItalia.it">Boing Italia</channel>
-    <channel site_id="KD" xmltv_id="Mya.it">Mya</channel>
-    <channel site_id="KI" xmltv_id="Iris.it">Iris</channel>
     <channel site_id="KQ" xmltv_id="MediasetExtra.it">Mediaset Extra</channel>
     <channel site_id="KS" xmltv_id="PremiumAction.it">Premium Action</channel>
-    <channel site_id="LA" xmltv_id="CartoonitoItalia.us">Cartoonito Italia</channel>
-    <channel site_id="LB" xmltv_id="20Mediaset.it">20 Mediaset</channel>
     <channel site_id="LR" xmltv_id="PremiumCrime.it">Premium Crime</channel>
-    <channel site_id="LT" xmltv_id="TopCrime.it">Top Crime</channel>
     <channel site_id="R4" xmltv_id="Rete4.it">Rete 4</channel>
-    <channel site_id="TG24" xmltv_id="TGCOM24.it">TGCOM24</channel>
+    <channel site_id="TG24" xmltv_id="TGCom24.it">TGCom 24</channel>
+    <channel site_id="LT" xmltv_id="TopCrime.it">Top Crime</channel>
   </channels>
 </site>
