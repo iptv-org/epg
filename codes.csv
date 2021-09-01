@@ -7,6 +7,7 @@ Channel Name,EPG Code (tvg-id)
 10 Peach,10Peach.au
 10 Shake,10Shake.au
 11 канал,11kanal.ua
+13,13.pl
 13 Ulica,13Ulica.us
 13th Street Deutschland,13thStreetDeutschland.us
 13ème Rue,13emeRue.fr
@@ -14,18 +15,21 @@ Channel Name,EPG Code (tvg-id)
 1LIVE,1LIVE.de
 2+2,2Plus2.ua
 20 Mediaset,20Mediaset.it
-21 Junior,21Junior.rs
-21 Popullore,21Popullore.rs
+24 Kitchen Bulgaria,24KitchenBulgaria.us
+24 Kitchen Hrvatska,24KitchenHrvatska.us
 24 Kitchen Srbija,24KitchenSrbija.us
+24 Kitchen Türkiye,24KitchenTurkey.us
 24 Mix Teleshop,24MixTeleshop.ro
 24 TV,24TV.tr
 24 Канал,24Kanal.ua
 24/7 Canal de Noticias,247CanaldeNoticias.ar
 24Kitchen Portugal,24KitchenPortugal.us
+2M Monde,2MMonde.ma
 2x2,2x2.pl
 2x2,2x2.ru
 3 Plus,3Plus.al
 3+,3Plus.lv
+3+,3Plus.ch
 3/24,324.es
 31 канал,31kanal.kz
 34 канал,34kanal.ua
@@ -100,6 +104,7 @@ Channel Name,EPG Code (tvg-id)
 3ABN Proclaim (KLFB-LD3),KLFBLD3.us
 3ABN Proclaim (W50CO-DT2),W50CO2.us
 3sat,3sat.de
+4+,4Plus.ch
 4Fun Dance,4FunDance.pl
 4Fun Gold,4FunGold.pl
 4Fun Kids,4FunKids.pl
@@ -111,9 +116,11 @@ Channel Name,EPG Code (tvg-id)
 5 StarMax East,5StarMaxEast.us
 5 StarMax West,5StarMaxWest.us
 5 канал,5kanal.ua
+5+,5Plus.ch
 5+1 Concerts,5Plus1Concerts.tr
 5Star,5Star.uk
 5USA,5USA.uk
+6+,6Plus.ch
 6ter,6ter.fr
 7 Televisión Región de Murcia,7TelevisionRegiondeMurcia.es
 7 TV,7TV.ru
@@ -136,6 +143,8 @@ Channel Name,EPG Code (tvg-id)
 9Rush,9Rush.au
 A Bola TV,ABolaTV.pt
 A Haber,AHaber.tr
+A News,ANews.tr
+A Para,APara.tr
 A Spor,ASpor.tr
 A&E Brasil,AEBrasil.us
 A&E Canada,AECanada.us
@@ -147,11 +156,13 @@ A.Side TV,ASideTV.ca
 a.tv,atv.de
 A1,A1.ru
 A2,A2.ru
+A2,A2.tr
 Aaj Tak,AajTak.in
 AAN (KFMS-LD5),KFMSLD5.us
 Aapka Colors,AapkaColors.in
 AB 1,AB1.fr
 AB 3,AB3.fr
+AB3,AB3.fr
 ABC (K10PR-D),K10PRD.us
 ABC (K13PJ-D),K13PJD.us
 ABC (K19KV-D),K19KVD.us
@@ -285,7 +296,6 @@ ABC Central,ABCCentral.us
 ABC East,ABCEast.us
 ABC ME,ABCME.au
 ABC Mountain,ABCMountain.us
-ABC News,ABCNews.al
 ABC News,ABCNews.au
 ABC Spark,ABCSpark.us
 ABC TV,ABCTV.cz
@@ -294,6 +304,7 @@ ABC TV Plus,ABCTVPlus.au
 ABC TV Plus / ABC Kids,ABCTVPlusABCKids.au
 ABC West,ABCWest.us
 ABP News USA,ABPNewsUSA.in
+Abu Dhabi Drama,AbuDhabiDrama.ae
 Abu Dhabi TV,AbuDhabiTV.ae
 ABXplore,ABXplore.be
 Abya Yala TV,AbyaYalaTV.bo
@@ -311,6 +322,7 @@ Action (WOOT-DT4),WOOTLD4.us
 Action (WQXT-CD3),WQXTCD3.us
 Action (WTBS-DT5),WTBSLD5.us
 Action 24,Action24.gr
+Action+,ActionPlus.bg
 ActionMax East,ActionMaxEast.us
 ActionMax West,ActionMaxWest.us
 Active Family,ActiveFamily.pl
@@ -326,21 +338,36 @@ Adventure Czechia,AdventureCzechia.pl
 Advertising Channel,AdvertisingChannel.us
 Afro Music Channel,AfroMusicChannel.pt
 Agro TV,AgroTV.ro
+Agro TV,AgroTV.bg
 AgroMais,AgroMais.br
 Agromix TV,AgromixTV.br
 Ahlulbayt TV,AhlulbaytTV.uk
 Ajara TV,AjaraTV.ge
 AJWA TV,AjwaTV.id
 Akaal Channel,AkaalChannel.uk
+Al Aoula,AlAoula.ma
 Al Arabiya,AlArabiya.ae
+Al Dafrah TV,AlDafrahTV.ae
+Al Hayat TV,AlHayatTV.eg
+Al Jadeed TV,AlJadeedTV.lb
 Al Jazeera Arabic,AlJazeeraArabic.qa
 Al Jazeera Balkans,AlJazeeraBalkans.qa
 Al Jazeera English,AlJazeeraEnglish.qa
+Al Kahera Wal Nas,AlKaheraWalNas.eg
+Al Oula,AlOula.eg
 Al Quran Al Kareem TV,AlQuranAlKareemTV.sa
+Al Rasheed TV,AlRasheedTV.iq
 Al Resalah,AlResalah.sa
+Al Safwa,AlSafwa.ae
+Al Sharqiya,AlSharqiya.ae
 Al Sunnah Al Nabawiyah TV,AlSunnahAlNabawiyahTV.sa
+Al Youm,AlYoum.ae
+Al-Manar TV,AlManarTV.lb
 Al-Nahar,AlNahar.ca
+Al-Nahar Drama,AlNaharDrama.eg
 Al-Nahar Drama,AlNaharDrama.ca
+Al-Nahar TV,AlNaharTV.eg
+Al-Saeedah,AlSaeedah.eg
 Alabama Public TV (APT),APT.us
 Alabama Public TV (WAIQ),WAIQ.us
 Alabama Public TV (WBIQ),WBIQ.us
@@ -368,13 +395,17 @@ Alaska Public Media (K48AC),K48AC.us
 Alaska Public Media (KAKM),KAKM.us
 Alaska Public Media (KTOO),KTOOTV.us
 Alaska Public Media (KYUK),KYUKLD.us
-AlbUK TV,AlbUKTV.uk
 Ale Kino+,AleKinoPlus.pl
 Alem FM,AlemFM.tr
 Aleph News,AlephNews.ro
 Alfa Omega TV,AlfaOmegaTV.ro
+Alfa Series,AlfaSeries.ae
+Alfa Series +2,AlfaSeriesPlus2.ae
+Alfa TV,AlfaTV.bg
+Alfa TV,AlfaTV.ba
 AlfaTV,AlfaTV.fi
 Alibi Ireland,AlibiIreland.uk
+Alibi UK,AlibiUK.uk
 Aliento Vision (WDGT-DT2),WDGTLD2.us
 Aliento Vision (WMBC-DT7),WMBCTV7.us
 All Arts (WLIW-DT4),WLIWDT4.us
@@ -388,8 +419,10 @@ Almavision (WEYS-DT1),WEYSLD.us
 Almavision (WEYS-DT2),WEYSLD2.us
 Almavision (WEYS-DT3),WEYSLD3.us
 Alpha TV,AlphaTV.gr
+Alrai TV,AlraiTV.kw
 Alsace 20,Alsace20.fr
 Alsat,Alsat.mk
+Alsumaria,Alsumaria.iq
 Altice Studio,AlticeStudio.fr
 Altitude 2,Altitude2.us
 Altitude Sports,AltitudeSports.us
@@ -402,11 +435,14 @@ Amazing Facts TV (K31NF-D4),K31NFD4.us
 Amazing Facts TV (K32LO-D4),K32LOD4.us
 Amazing TV,AmazingTV.pl
 Amazon Sat,AmazonSat.br
+AMC Balkan,AMCBalkan.us
 AMC Brasil,AMCBrasil.us
 AMC Canada,AMCCanada.us
+AMC Central Europe,AMCCentralEurope.us
 AMC East,AMCEast.us
 AMC España,AMCEspana.us
 AMC Latin America,AMCLatinAmerica.us
+AMC Magyarország,AMCMagyarorszag.us
 AMC Polska,AMCPolska.us
 AMC Portugal,AMCPortugal.us
 AMC Romania,AMCRomania.us
@@ -432,6 +468,7 @@ AMGA TV (KXLA-DT10),KXLA10.us
 AMI-tv East,AMItvEast.ca
 AMI-tv West,AMItvWest.ca
 AMI-télé,AMItele.ca
+Amman TV,AmmanTV.jo
 AMP2,AMP2.us
 América TeVé (WJAN),WJANCD.us
 América TeVé (WJAN),WJANLD.us
@@ -442,6 +479,7 @@ Animal Planet Brasil,AnimalPlanetBrasil.us
 Animal Planet Canada,AnimalPlanetCanada.us
 Animal Planet East,AnimalPlanetEast.us
 Animal Planet Europe,AnimalPlanetEurope.us
+Animal Planet Germany,AnimalPlanetGermany.us
 Animal Planet Latinoamérica,AnimalPlanetLatinoamerica.us
 Animal Planet Polska,AnimalPlanetPolska.us
 Animal Planet Southeast Asia,AnimalPlanetSoutheastAsia.us
@@ -452,11 +490,13 @@ Animaux,Animaux.fr
 Animax Asia,AnimaxAsia.jp
 Anixe HD,AnixeHD.de
 ANT1,Ant1.gr
+Ant1 Europe,Ant1Europe.gr
 ANT1 Satellite,ANT1Satellite.us
 Antena 1,Antena1.ro
 Antena 3,Antena3.es
 Antena 3,Antena3.ro
 Antena 3 Internacional,Antena3Internacional.es
+Antena HD,AntenaHD.pl
 Antena International,AntenaInternational.ro
 Antena Stars,AntenaStars.ro
 Antenna TV,AntennaTV.us
@@ -521,27 +561,49 @@ Antenna TV (WTTO-DT2),WTTO2.us
 Antenna TV (WUHF-DT2),WUHF2.us
 Antenna TV/MNT (KAYU-TV2),KAYUTV2.us
 Antenna TV/MNT (WINK-DT2),WINKTV2.us
+ANTV,ANTV.id
+Apostol TV,ApostolTV.hu
 APTN East,APTNEast.ca
 APTN North,APTNNorth.ca
 APTN West,APTNWest.ca
 Aquarium Channel,AquariumChannel.ca
 Aragón TV,AragonTV.es
 Arcadia TV,ArcadiaTV.ro
+ARD Alpha,ARDAlpha.de
 ARD-alpha,ARDalpha.de
-Arena Sport 1,ArenaSport1.rs
+Arena Esport,ArenaEsport.rs
+Arena Fight,ArenaFight.rs
 Arena Sport 1,ArenaSport1.sk
-Arena Sport 2,ArenaSport2.rs
+Arena Sport 1,ArenaSport1.rs
+Arena Sport 1 BiH,ArenaSport1BiH.rs
+Arena Sport 1 Hrvatska,ArenaSport1Hrvatska.rs
+Arena Sport 1 Hrvatska Hrvatska,ArenaSport1Hrvatska.rs
+Arena Sport 10 Hrvatska,ArenaSport10Hrvatska.rs
 Arena Sport 2,ArenaSport2.sk
+Arena Sport 2,ArenaSport2.rs
+Arena Sport 2 Hrvatska,ArenaSport2Hrvatska.rs
 Arena Sport 3,ArenaSport3.rs
-Arena Sport 4,ArenaSport4.rs
+Arena Sport 3 Hrvatska,ArenaSport3Hrvatska.rs
+Arena Sport 4 Hrvatska,ArenaSport4Hrvatska.rs
+Arena Sport 5 Hrvatska,ArenaSport5Hrvatska.rs
+Arena Sport 6 Hrvatska,ArenaSport6Hrvatska.rs
+Arena Sport 7 Hrvatska,ArenaSport7Hrvatska.rs
+Arena Sport 8 Hrvatska,ArenaSport8Hrvatska.rs
+Arena Sport 9 Hrvatska,ArenaSport9Hrvatska.rs
+Arena4,Arena4.hu
 Argentinísima Satelital,ArgentinisimaSatelital.ar
 Arirang TV,ArirangTV.kr
 Arirang TV (KXLA-DT5),KXLA5.us
 Arirang TV (WMDE5),WMDE5.us
 Arirang TV (WRNN-DT3),WRNNTV3.us
+Arirang World,ArirangWorld.kr
 Arise News,AriseNews.uk
+ART Aflam 1,ARTAflam1.sa
+ART Aflam 2,ARTAflam2.sa
 ART America,ARTAmerica.sa
-Arta,Arta.rs
+ART Cinema,ARTCinema.sa
+ART Hekayat,ARTHekayat.sa
+ART Hekayat 2,ARTHekayat2.sa
 Arte 1,Arte1.br
 ARTE Deutsch,ARTEDeutsch.fr
 ARTE Français,ARTEFrancais.fr
@@ -643,10 +705,12 @@ Atreseries,Atreseries.es
 ATV,ATV.ad
 ATV,ATV.at
 ATV,ATV.hu
+ATV Avrupa,ATVAvrupa.tr
 ATV Halifax,ATVHalifax.ca
 ATV Türkiye,ATVTurkiye.tr
 ATV2,ATV2.at
 Audience Network,AudienceNetwork.us
+Aurora TV,AuroraTV.hr
 Auto Motor und Sport,AutoMotorundSport.de
 Automoto La chaîne,AutomotoLachaine.fr
 Automoto la chaîne,Automotolachaine.fr
@@ -654,10 +718,14 @@ AVA,AVA.fi
 Avis de recherche,Avisderecherche.ca
 AWE,AWE.us
 Awesome TV,AwesomeTV.my
+AXN Adria,AXNAdria.us
+AXN Black,AXNBlack.us
 AXN Black Czech Republic,AXNBlackCzechRepublic.us
 AXN Black Polska,AXNBlackPolska.us
 AXN Black România,AXNBlackRomania.us
 AXN Brazil,AXNBrazil.us
+AXN Bulgaria,AXNBulgaria.us
+AXN Central Europe,AXNCentralEurope.us
 AXN Czech Republic,AXNCzechRepublic.us
 AXN Deutschland,AXNDeutschland.us
 AXN East Asia,AXNEastAsia.us
@@ -667,8 +735,10 @@ AXN Latinoamérica,AXNLatinoamerica.us
 AXN Polska,AXNPolska.us
 AXN Portugal,AXNPortugal.us
 AXN Romania,AXNRomania.us
+AXN Spin Adria,AXNSpinAdria.us
 AXN Spin Polska,AXNSpinPolska.us
 AXN Spin Romania,AXNSpinRomania.us
+AXN White,AXNWhite.us
 AXN White Czech Republic,AXNWhiteCzechRepublic.us
 AXN White España,AXNWhiteEspana.us
 AXN White Polska,AXNWhitePolska.us
@@ -725,17 +795,21 @@ Azteca America East,AztecaAmericaEast.mx
 Azteca America West,AztecaAmericaWest.mx
 B-One TV,BOneTV.cd
 B1,B1.ro
+B1B Box,B1BBox.bg
 B4U Movies Canada,B4UMoviesCanada.in
 B4U Movies USA,B4UMoviesUSA.in
 B4U Music Canada,B4UMusicCanada.in
 B4U Music USA,B4UMusicUSA.in
+B92,B92.rs
 Baba Radyo,BabaRadyo.tr
+Baby TV Europe,BabyTVEurope.uk
 BabyFirst TV,BabyFirstTV.us
 BabyTV Asia,BabyTVAsia.uk
 BabyTV Brasil,BabyTVBrasil.uk
 BabyTV Español,BabyTVEspanol.uk
 BabyTV Europe,BabyTVEurope.uk
 BabyTV Pусский,BabyTVPusskiy.uk
+Balkan Trip,BalkanTrip.rs
 Balkanika TV,BalkanikaTV.bg
 Bally Sports Arizona,BallySportsArizona.us
 Bally Sports Arizona Extra,BallySportsArizonaExtra.us
@@ -799,16 +873,21 @@ Band Roraima,BandRoraima.br
 Bandamax,Bandamax.mx
 BandSports,BandSports.br
 Bang Bang,BangBang.al
+Barely Legal TV,BarelyLegalTV.us
 Barrandov Krimi,BarrandovKrimi.cz
 Barça TV,BarcaTVfr.es
+Bayern 3,Bayern3.de
+BBC Alba,BBCAlba.uk
 BBC America East,BBCAmericaEast.uk
 BBC America West,BBCAmericaWest.uk
 BBC Arabic,BBCArabic.uk
 BBC Brit Polska,BBCBritPolska.uk
+BBC Earth Asia,BBCEarthAsia.uk
 BBC Earth Greece,BBCEarthGreece.uk
 BBC Earth Nordic,BBCEarthNordic.uk
 BBC Earth Polska,BBCEarthPolska.uk
 BBC Earth Romania,BBCEarthRomania.uk
+BBC Earth Türkiye,BBCEarthTurkiye.uk
 BBC Entertainment Europe,BBCEntertainmentEurope.uk
 BBC First Canada,BBCFirstCanada.uk
 BBC First Polska,BBCFirstPolska.uk
@@ -819,34 +898,43 @@ BBC News,BBCNews.uk
 BBC News Arabic,BBCNewsArabic.uk
 BBC One,BBCOne.uk
 BBC One London,BBCOneLondon.uk
+BBC One Northern Ireland,BBCOneNorthernIreland.uk
 BBC One Scotland,BBCOneScotland.uk
 BBC Parliament,BBCParliament.uk
 BBC Red Button 1,BBCRedButton1.uk
 BBC Two,BBCTwo.uk
+BBC World News,BBCWorldNews.uk
 BBC World News Americas,BBCWorldNewsAmericas.uk
 BBC World News Asia Pacific,BBCWorldNewsAsiaPacific.uk
 BBC World News Europe,BBCWorldNewsEurope.uk
-BBF Music TV,BBFMusicTV.al
 Bblack! Classik,BblackClassik.fr
+BBN Türk,BBNTurk.tr
+BDC TV,BDCTV.ba
 Be 1,Be1.be
 Be Ciné,BeCine.be
 Be Mad,BeMad.es
 Be Séries,BeSeries.be
 Beate-Uhse.TV,BeateUhseTV.de
+Behar TV,BeharTV.ba
+beIN Box Office 1,beINBoxOffice1.qa
 beIN Box Office 1 Türkiye,beINBoxOffice1Turkiye.qa
 beIN Box Office 2,beINBoxOffice2.qa
 beIN Box Office 3,beINBoxOffice3.qa
+beIN Drama,beINDrama.qa
 beIN Gurme,beINGurmqa.qa
 beIN H&E,beINHE.qa
 beIN İZ,beINIZ.qa
 beIN LaLiga,beINLaLiga.qa
 beIN Movies Action,beINMoviesAction.qa
 beIN Movies Action 2,beINMoviesAction2.qa
+beIN Movies Drama 3,beINMoviesDrama3.qa
 beIN Movies Family,beINMoviesFamily.qa
 beIN Movies Premiere,beINMoviesPremiere.qa
 beIN Movies Premiere 2,beINMoviesPremiere2.qa
 beIN Movies Stars,beINMoviesStars.qa
 beIN Movies Turk,beINMoviesTurk.qa
+beIn Series 1,beInSeries1.qa
+beIn Series 2,beInSeries2.qa
 beIN Series Comedy,beINSeriesComedy.qa
 beIN Series Drama,beINSeriesDrama.qa
 beIN Series Sci-Fi,beINSeriesSciFi.qa
@@ -854,12 +942,20 @@ beIN Series Vice,beINSeriesVice.qa
 beIN Sports,beINSports.qa
 beIN Sports 1,beINSports1.qa
 beIN Sports 1 Asia,beINSports1Asia.qa
+beIN Sports 1 France,beINSports1France.qa
+beIN Sports 1 Indonesia,beINSports1Indonesia.qa
 beIN Sports 11,beINSports11.qa
 beIN Sports 12,beINSports12.qa
 beIN Sports 13,beINSports13.qa
 beIN Sports 2,beINSports2.qa
 beIN Sports 2 Asia,beINSports2Asia.qa
+beIN Sports 2 France,beINSports2France.qa
+beIN Sports 2 Indonesia,beINSports2Indonesia.qa
 beIN Sports 3,beINSports3.qa
+beIN Sports 4,beINSports4.qa
+beIN Sports 5,beINSports5.qa
+beIN Sports 6,beINSports6.qa
+beIN Sports 7,beINSports7.qa
 beIN Sports Canada,beINSportsCanada.qa
 beIN Sports en Español,beINSportsenEspanol.qa
 beIn Sports Malaysia & Singapore,beInSportsMalaysiaSingapore.qa
@@ -871,10 +967,13 @@ beIN Sports MAX 7,beINSportsMAX7.qa
 beIN Sports MAX 8,beINSportsMAX8.qa
 beIN Sports MAX 9,beINSportsMAX9.qa
 beIn Sports Max Malaysia & Singapore,beInSportsMaxMalaysiaSingapore.qa
+beIN Sports NBA,beINSportsNBA.qa
 beIN Sports USA,beINSportsUSA.qa
 Benfica TV,BenficaTV.pt
+Berita Satu News Channel,BeritaSatuNewsChannel.id
 BeritaSatu,BeritaSatu.id
 Bernama TV,BernamaTV.my
+Besmart,Besmart.id
 Best FM,BestFM.tr
 BET Canada,BETCanada.us
 BET East,BETEast.us
@@ -886,6 +985,7 @@ BET Soul,BETSoul.us
 BET West,BETWest.us
 betevé,beteve.es
 Betterlife TV (KBLN),KBLNTV.us
+Beyaz TV,BeyazTV.tr
 BeyazTV,BeyazTV.tr
 BFC,BFC.it
 BFM Business,BFMBusiness.fr
@@ -893,7 +993,11 @@ BFM Grand Lille,BFMGrandLille.fr
 BFM Lyon,BFMLyon.fr
 BFM Paris,BFMParis.fr
 BFMTV,BFMTV.fr
+BG Music Channel,BGMusicChannel.bg
+BG-DNES,BGDNES.bg
 BHNews TV,BHNewsTV.br
+BHT 1,BHT1.ba
+BHT1,BHT1.ba
 Bibel TV,BibelTV.de
 Big Ten Network,BigTenNetwork.us
 Big Ten Network Alternate,BigTenNetworkAlternate.us
@@ -902,7 +1006,9 @@ Big Ten Network Overflow 2,BigTenNetworkOverflow2.us
 Big Ten Network Overflow 3,BigTenNetworkOverflow3.us
 Big Ten Network Overflow 4,BigTenNetworkOverflow4.us
 Biggs,Biggs.pt
+Bir TV,BirTV.ba
 Bis,Bis.br
+Bit TV,BitTV.rs
 Biz-TV (K31CT),K31CT.us
 Biz-TV (KAZA-DT4),KAZA4.us
 Biz-TV (KFLA-LD4),KFLALD4.us
@@ -926,13 +1032,17 @@ Bloomberg HT,BloombergHT.us
 Bloomberg TV,BloombergTV.us
 Bloomberg TV Asia,BloombergTVAsia.us
 Bloomberg TV Brazil,BloombergTVBrazil.us
+Bloomberg TV Bulgaria,BloombergTVBulgaria.us
 Bloomberg TV Canada,BloombergTVCanada.us
 Bloomberg TV Europe,BloombergTVEurope.us
 Bloomberg TV UK,BloombergTVUK.us
 Blue Highways (K21LC-DT2),K21LCD2.us
 Blue Hustler Europe,BlueHustlerEurope.us
 BlueHighways TV,BlueHighwaysTV.us
+BN 2,BN2.ba
+BN Music,BNMusic.ba
 BN Televizija,BNTelevizija.ba
+BN TV,BNTV.ba
 BNN Bloomberg,BNNBloomberg.ca
 Boa Vontade TV,BoaVontadeTV.br
 Body in Balance Greece,BodyinBalanceGreece.uk
@@ -948,17 +1058,18 @@ Bollywood Film,BollywoodFilm.ro
 Bollywood HD,BollywoodHD.ru
 Bollywood TV Romania,BollywoodTVRomania.il
 Bolt,Bolt.ua
+Bon Gusto,BonGusto.de
 Boo,Boo.my
 Boomerang Brasil,BoomerangBrasil.us
 Boomerang Central & Eastern Europe,BoomerangCentralEasternEurope.us
 Boomerang Deutschland,BoomerangDeutschland.us
-Boomerang EMEA,BoomerangEMEA.us
 Boomerang France,BoomerangFrance.us
 Boomerang Italia,BoomerangItalia.us
 Boomerang Italia +1,BoomerangItaliaPlus1.us
 Boomerang Latin America,BoomerangLatinAmerica.us
 Boomerang Polska,BoomerangPolska.us
 Boomerang South East Asia,BoomerangSouthEastAsia.us
+Boomerang Türkiye,BoomerangTurkiye.us
 Boomerang US,BoomerangUS.us
 Bounce,Bounce.us
 Bounce (KARD-DT2),KARD2.us
@@ -1050,16 +1161,31 @@ Bounce (WXXA-TV4),BounceTV4.us
 Bounce (WXYZ-DT2),WXYZTV2.us
 Boutique TV,BoutiqueTV.ua
 Box Hits,BoxHits.uk
+Box TV,BoxTV.bg
 BR,BR.de
 BR Fernsehen Nord,BRFernsehenNord.de
+Brainz TV,BrainzTV.rs
 Bravo East,BravoEast.us
 Bravo West,BravoWest.us
 Brazzers TV,BrazzersTV.us
 Brazzers TV Europe,BrazzersTVEurope.us
 Bridge TV,BridgeTV.ru
 Bridge TV Русский Хит,BridgeTVRusskiyHit.ru
+Brio,Brio.si
 Brit Asia TV,BritAsiaTV.uk
+British Eurosport 1,BritishEurosport1.fr
+British Eurosport 2,BritishEurosport2.fr
+BT Sport 1,BTSport1.uk
+BT Sport 2,BTSport2.uk
+BT Sport 3,BTSport3.uk
+BT Sport ESPN,BTSportESPN.uk
+bTV,bTV.bg
+bTV Action,bTVAction.bg
+bTV Cinema,bTVCinema.bg
+bTV Comedy,bTVComedy.bg
+bTV Lady,bTVLady.bg
 Bucuresti TV,BucurestiTV.ro
+Bulgaria on Air,BulgariaonAir.bg
 Buzzr,Buzzr.us
 Buzzr TV (K14HC-D3),K14HCD3.us
 Buzzr TV (K28CW-D3),K28CWD3.us
@@ -1158,6 +1284,7 @@ CANAL+ 1,CanalPlus1.pl
 CANAL+ 4K Ultra HD,CanalPlus4KUltraHD.pl
 CANAL+ Cinema,CanalPlusCinema.fr
 CANAL+ Decale,CanalPlusDecale.fr
+CANAL+ Dokument,CANALPlusDokument.pl
 CANAL+ Dokumenty,CanalPlusDokumenty.pl
 CANAL+ Domo,CanalPlusDomo.pl
 CANAL+ Family,CanalPlusFamily.fr
@@ -1165,6 +1292,7 @@ CANAL+ Family,CanalPlusFamily.pl
 CANAL+ Film,CanalPlusFilm.pl
 CANAL+ France,CanalPlusFrance.fr
 CANAL+ Polska,CanalPlusPolska.pl
+CANAL+ Premium,CANALPlusPremium.pl
 CANAL+ Seriale,CanalPlusSeriale.pl
 CANAL+ Series,CanalPlusSeries.fr
 CANAL+ Sport,CanalPlusSport.fr
@@ -1172,14 +1300,17 @@ CANAL+ Sport 2 Polska,CanalPlusSport2Polska.pl
 CANAL+ Sport 3 Polska,CanalPlusSport3Polska.pl
 CANAL+ Sport 4 Polska,CanalPlusSport4Polska.pl
 CANAL+ Sport Polska,CanalPlusSportPolska.pl
+CANAL+ Sport Polska,CANALPlusSportPolska.pl
 CANAL+ Séries,CanalPlusSeries.fr
 Canal180,Canal180.pt
 Canale 5,Canale5.it
 Canvas,Canvas.be
+Capital Xtra,CapitalXtra.uk
 Caracol,Caracol.co
 Caracol Internacional,CaracolInternacional.co
 CaribVision,CaribVision.bb
 Cars.TV,CarsTV.us
+Cartoon Network Arabic,CartoonNetworkArabic.us
 Cartoon Network Asia,CartoonNetworkAsia.us
 Cartoon Network Brasil,CartoonNetworkBrasil.us
 Cartoon Network Canada,CartoonNetworkCanada.us
@@ -1199,6 +1330,7 @@ Cartoon Network Türkiye,CartoonNetworkTurkiye.us
 Cartoon Network UK,CartoonNetworkUK.us
 Cartoon Network West,CartoonNetworkWest.us
 Cartoonito Italia,CartoonitoItalia.us
+Cartoonito UK,CartoonitoUK.us
 Casa,Casa.ca
 Catholic Faith Network,CatholicFaithNetwork.us
 Caza y Pesca,CazayPesca.es
@@ -1206,6 +1338,7 @@ Cazavisión,Cazavision.es
 Caça e Pesca,CacaePesca.pt
 Caçavision,Cacavision.pt
 CBBC,CBBC.uk
+CBC,CBC.eg
 CBC,CBC.ca
 CBC (CBAT),CBAT.ca
 CBC (CBAT-2),CHMT.ca
@@ -1232,10 +1365,13 @@ CBC (CBXT),CBXT.ca
 CBC (CFYK),CFYK.ca
 CBC (CHSJ),CHSJ.ca
 CBC (CKOS),CKOS.ca
+CBC Drama,CBCDrama.eg
 CBC News Network,CBCNewsNetwork.ca
 CBC North Nunavut,CBCNorthNunavut.ca
 CBC North NWT,CBCNorthNWT.ca
 CBC North Yukon,CBCNorthYukon.ca
+CBC Sofra,CBCSofra.eg
+CBeebies Asia,CBeebiesAsia.uk
 CBeebies Polska,CBeebiesPolska.uk
 CBeebies UK,CBeebiesUK.uk
 CBN,CBN.us
@@ -1393,6 +1529,7 @@ CBS Sports Network USA,CBSSportsNetworkUSA.us
 CBS West,CBSWest.us
 CCI Channel,CCIChannel.hn
 CCTN Arabic,CCTNArabic.cn
+CCTV 4 Europe,CCTV4Europe.cn
 CCTV Español,CCTVEspanol.cn
 CCTV Français,CCTVFrancais.cn
 CCTV News,CCTVNews.cn
@@ -1404,6 +1541,7 @@ CCTV-4 Asia,CCTV4Asia.cn
 CCTV-4 Europe,CCTV4Europe.cn
 CCTV-9,CCTV9.cn
 Celestial Classic Movies,CelestialClassicMovies.hk
+Celestial Movies Indonesia,CelestialMoviesIndonesia.hk
 Celestial Movies Malaysia,CelestialMoviesMalaysia.hk
 Centroamérica TV,CentroamericaTV.us
 Cero,Cero.es
@@ -1420,6 +1558,7 @@ CGTN (KSGA-LP9),KSGALP9.us
 CGTN (KSMV-LD9),KSMVLD9.us
 CGTN (KVMD-DT9),KVMD9.us
 CGTN (WNYX-LD),WNYXLD.us
+CGTN Documentary,CGTNDocumentary.cn
 CGTN Español,CGTNEspanol.cn
 CGTN Spanish (WNYX-LD3),WNYXLD3.us
 Challenge UK,ChallengeUK.uk
@@ -1432,6 +1571,8 @@ Channel 4 UK +1,Channel4UKPlus1.uk
 Channel 5,Channel5.uk
 Channel 5 +1,Channel5Plus1.uk
 Channel i,Channeli.bd
+Channel S,ChannelS.uk
+Channel V International,ChannelVInternational.hk
 Charge!,Charge.us
 Charge! (K14JS-DT4),K14JSD4.us
 Charge! (K26GS-DT5),K26GSD2.us
@@ -1493,7 +1634,9 @@ Cherie 25,Cherie25.fr
 CHFD Thunder Bay,CHFDThunderBay.ca
 CHNU-TV,CHNUTV.ca
 Chutti TV Malaysia,ChuttiTVMalaysia.in
+Chérie 25,Cherie25.fr
 Cielo,Cielo.it
+Cima,Cima.eg
 Cine Brasil TV,CineBrasilTV.br
 Cine Mexicano,CineMexicano.us
 Cine Sony,CineSony.us
@@ -1502,11 +1645,18 @@ Cine+ Hit,CinePlusHit.ua
 Cine+ Kids,CinePlusKids.ua
 Cine+ Legend,CinePlusLegend.ua
 Cine+ Mix,CinePlusMix.ua
+CINE+ Premier,CINEPlusPremier.fr
 Cine34,Cine34.it
 Cinecanal,Cinecanal.us
 CineLatino,CineLatino.mx
 Cinema,Cinema.ru
+Cinema 1,Cinema1.ae
+Cinema 2,Cinema2.ae
+Cinema TV,CinemaTV.ba
+Cinema+,CinemaPlus.bg
+Cinemania,Cinemania.rs
 Cinemax 2 Central Europe,Cinemax2CentralEurope.us
+Cinemax Asia,CinemaxAsia.us
 Cinemax Asia +1,CinemaxAsiaPlus1.us
 Cinemax Brasil,CinemaxBrasil.us
 Cinemax Central Europe,CinemaxCentralEurope.us
@@ -1514,6 +1664,15 @@ Cinemax East,CinemaxEast.us
 Cinemax Latinoamérica,CinemaxLatinoamerica.us
 Cinemax West,CinemaxWest.us
 Cinemundo,Cinemundo.pt
+CineStar TV 1 Hrvatska,CineStarTV1Hrvatska.hr
+CineStar TV 1 Srbija,CineStarTV1Srbija.hr
+CineStar TV 2 Hrvatska,CineStarTV2Hrvatska.hr
+CineStar TV Action Hrvatska,CineStarTVActionHrvatska.hr
+CineStar TV Action Srbija,CineStarTVActionSrbija.hr
+CineStar TV Comedy,CineStarTVComedy.hr
+CineStar TV Fantasy,CineStarTVFantasy.hr
+CineStar TV Premiere 1,CineStarTVPremiere1.hr
+CineStar TV Premiere 2,CineStarTVPremiere2.hr
 Ciné+ Classic,CinePlusClassic.fr
 Ciné+ Club,CinePlusClub.fr
 Ciné+ Emotion,CinePlusEmotion.fr
@@ -1564,6 +1723,7 @@ Circle (WVUE-DT3),WVUEDT3.us
 Circle (WWOR-DT2),WWORTV2.us
 Circle (WWSB-DT2),WWSB2.us
 CITV,CITV.uk
+City TV,CityTV.bg
 Citytv,Citytv.ca
 Citytv Calgary,CKAL.ca
 Citytv Edmonton,CKEM.ca
@@ -1586,15 +1746,16 @@ CKVU-DT-2,CKVUDT2.ca
 CKVU-TV-1,CKVUTV1.ca
 Clan TVE,ClanTVE.es
 Class CNBC,ClassCNBC.it
+Class TV Moda,ClassTVModa.it
 Classic Arts Showcase,ClassicArtsShowcase.us
 Classic Arts Showcase (WEFS-DT2),WEFS2.us
 Classica HD,ClassicaHD.de
 Cleo TV,CleoTV.us
 Clic (WUEO-LD),WUEOLD.us
-Click TV,ClickTV.al
 Club MTV,ClubMTV.us
 Club RTL,ClubRTL.be
 Clubbing TV,ClubbingTV.fr
+Clubland TV,ClublandTV.uk
 CMC TV,CMCTV.hr
 CMC-TV (K03HY-D10),K03HYD10.us
 CMC-TV (KFTL-CD3),KFTLCD3.us
@@ -1617,6 +1778,7 @@ CNBC,CNBC.us
 CNBC Asia-Pacific,CNBCAsiaPacific.us
 CNBC Canada,CNBCCanada.us
 CNBC Europe,CNBCEurope.us
+CNBC US,CNBCUS.us
 CNBC West,CNBCWest.us
 CNBC World,CNBCWorld.us
 CNews,CNews.fr
@@ -1631,6 +1793,7 @@ CNN International Latin America,CNNInternationalLatinAmerica.us
 CNN International North America,CNNInternationalNorthAmerica.us
 CNN Prima News,CNNPrimaNews.us
 CNN Türk,CNNTurk.us
+CNN USA,CNNUSA.us
 CNN West,CNNWest.us
 Colors Bangla,ColorsBangla.in
 Colors Tamil,ColorsTamil.in
@@ -1641,6 +1804,7 @@ Comedy Central Brasil,ComedyCentralBrasil.us
 Comedy Central Deutschland,ComedyCentralDeutschland.us
 Comedy Central East,ComedyCentralEast.us
 Comedy Central España,ComedyCentralEspana.us
+Comedy Central Extra UK,ComedyCentralExtraUK.us
 Comedy Central Family Hungary,ComedyCentralFamilyHungary.us
 Comedy Central Family Polska,ComedyCentralFamilyPolska.us
 Comedy Central France,ComedyCentralFrance.us
@@ -1649,6 +1813,7 @@ Comedy Central Italia,ComedyCentralItalia.us
 Comedy Central Italia +1,ComedyCentralItaliaPlus1.us
 Comedy Central Polska,ComedyCentralPolska.us
 Comedy Central România,ComedyCentralRomania.us
+Comedy Central UK,ComedyCentralUK.us
 Comedy Central West,ComedyCentralWest.us
 Comedy.TV,ComedyTV.us
 Comet,Comet.us
@@ -2100,6 +2265,7 @@ Create (WVIZ-DT4),WVIZ4.us
 Create (WVTB-DT3),WVTB3.us
 Create (WXEL-DT2),WXELTV2.us
 Create (WXXI-DT3),WXXITV3.us
+Create and Craft TV,CreateandCraftTV.uk
 Create/Encore (WGCU-DT3),WGCU3.us
 CreaTV Classrooms,CreaTVClassrooms.us
 Credo TV,CredoTV.ro
@@ -2109,6 +2275,7 @@ Crime & Investigation Italia,CrimeInvestigationItalia.us
 Crime & Investigation Polsat,CrimeInvestigationPolsat.us
 Crime & Investigation UK,CrimeInvestigationUK.us
 Crime & Investigation USA,CrimeInvestigationUSA.us
+Crime + Investigation Asia,CrimePlusInvestigationAsia.us
 Crime District,CrimeDistrict.fr
 Crimen & Investigación,CrimenInvestigacion.us
 Cruise1st TV,Cruise1stTV.uk
@@ -2391,6 +2558,7 @@ CW+ West,CWPlusWest.us
 CyLTV,CyLTV.es
 Czwórka,Czworka.pl
 Cámara de Diputadas y Diputados Televisión (CDTV),CDTV.cl
+D1 TV,D1TV.hu
 Da Vinci,DaVinci.de
 Da Vinci Polska,DaVinciPolska.de
 DAAI TV,DaaiTV.id
@@ -2539,9 +2707,17 @@ Deluxe Music,DeluxeMusic.de
 Demain TV,DemainTV.fr
 Destination America,DestinationAmerica.us
 Deutsches Musik Fernsehen,DeutschesMusikFernsehen.de
+Dexy TV,DexyTV.rs
+Dečija TV,DecijaTV.rs
+Diadora TV,DiadoraTV.hr
 Die Neue Zeit TV,DieNeueZeitTV.ch
+Diema,Diema.bg
+Diema Family,DiemaFamily.bg
+Diema Sport,DiemaSport.bg
+Diema Sport 2,DiemaSport2.bg
 Digi 24,Digi24.ro
 Digi Animal World,DigiAnimalWorld.ro
+Digi Life Hungary,DigiLifeHungary.ro
 Digi Life Romania,DigiLifeRomania.ro
 Digi Sport 1 Hungary,DigiSport1Hungary.ro
 Digi Sport 1 Romania,DigiSport1Romania.ro
@@ -2549,14 +2725,15 @@ Digi Sport 1 Slovakia,DigiSport1Slovakia.ro
 Digi Sport 2 Hungary,DigiSport2Hungary.ro
 Digi Sport 2 Romania,DigiSport2Romania.ro
 Digi Sport 2 Slovakia,DigiSport2Slovakia.ro
+Digi Sport 3 Hungary,DigiSport3Hungary.ro
 Digi Sport 3 Romania,DigiSport3Romania.ro
 Digi Sport 3 Slovakia,DigiSport3Slovakia.ro
 Digi Sport 4 Romania,DigiSport4Romania.ro
+Digi World Hungary,DigiWorldHungary.ro
 Digi World Romania,DigiWorldRomania.ro
 Disco Polo Music,DiscoPoloMusic.pl
 Discovery Asia,DiscoveryAsia.us
 Discovery Channel Brasil,DiscoveryChannelBrasil.us
-Discovery Channel Bulgaria,DiscoveryChannelBulgaria.us
 Discovery Channel Canada,DiscoveryChannelCanada.us
 Discovery Channel Deutschland,DiscoveryChannelDeutschland.us
 Discovery Channel East,DiscoveryChannelEast.us
@@ -2564,14 +2741,17 @@ Discovery Channel en Español,DiscoveryChannelenEspanol.us
 Discovery Channel Europe,DiscoveryChannelEurope.us
 Discovery Channel Finland,DiscoveryChannelFinland.us
 Discovery Channel France,DiscoveryChannelFrance.us
+Discovery Channel Hungary,DiscoveryChannelHungary.us
 Discovery Channel Italia,DiscoveryChannelItalia.us
 Discovery Channel Italia +1,DiscoveryChannelItaliaPlus1.us
 Discovery Channel Latinoamérica,DiscoveryChannelLatinoamerica.us
+Discovery Channel Middle East & Africa,DiscoveryChannelMiddleEastAfrica.us
 Discovery Channel Polska,DiscoveryChannelPolska.us
 Discovery Channel Portugal,DiscoveryChannelPortugal.us
 Discovery Channel Romania,DiscoveryChannelRomania.us
 Discovery Channel Southeast Asia,DiscoveryChannelSoutheastAsia.us
 Discovery Channel Türkiye,DiscoveryChannelTurkiye.us
+Discovery Channel UK,DiscoveryChannelUK.us
 Discovery Channel Ukraine,DiscoveryChannelUkraine.us
 Discovery Channel West,DiscoveryChannelWest.us
 Discovery Channel Česko a Slovensko,DiscoveryChannelCeskoaSlovensko.us
@@ -2595,13 +2775,16 @@ Discovery Science Polska,DiscoverySciencePolska.us
 Discovery Science Romanian,DiscoveryScienceRomanian.us
 Discovery Science Southeast Asia,DiscoveryScienceSoutheastAsia.us
 Discovery Science Türkiye,DiscoveryScienceTurkiye.us
+Discovery Science UK,DiscoveryScienceUK.us
 Discovery Science Россия,DiscoveryScienceRossiya.us
 Discovery Theater,DiscoveryTheater.us
 Discovery Turbo Brasil,DiscoveryTurboBrasil.us
+Discovery Turbo UK,DiscoveryTurboUK.us
 Discovery Velocity,DiscoveryVelocity.us
 Discovery World Brasil,DiscoveryWorldBrasil.us
 Discovery Восточная Европа,DiscoveryVostochnayaEvropa.us
 Disney Channel Brasil,DisneyChannelBrasil.us
+Disney Channel Bulgaria,DisneyChannelBulgaria.us
 Disney Channel Canada East,DisneyChannelCanadaEast.us
 Disney Channel Canada West,DisneyChannelCanadaWest.us
 Disney Channel Czech Republic,DisneyChannelCzechRepublic.us
@@ -2611,6 +2794,7 @@ Disney Channel España,DisneyChannelEspana.us
 Disney Channel España +1,DisneyChannelEspanaPlus1.us
 Disney Channel France,DisneyChannelFrance.us
 Disney Channel Hungary & Czechia,DisneyChannelHungaryCzechia.us
+Disney Channel Indonesia,DisneyChannelIndonesia.us
 Disney Channel Latinoamérica,DisneyChannelLatinoamerica.us
 Disney Channel Middle East,DisneyChannelMiddleEast.us
 Disney Channel Polska,DisneyChannelPolska.us
@@ -2621,6 +2805,7 @@ Disney Channel Türkiye,DisneyChannelTurkiye.us
 Disney Channel Ukraine,DisneyChannelUkraine.us
 Disney Channel Wallonia,DisneyChannelWallonia.us
 Disney Channel West,DisneyChannelWest.us
+Disney Junior Asia,DisneyJuniorAsia.us
 Disney Junior Brasil,DisneyJuniorBrasil.us
 Disney Junior Canada,DisneyJuniorCanada.us
 Disney Junior Deutschland,DisneyJuniorDeutschland.us
@@ -2646,6 +2831,7 @@ Diva Romania,DivaRomania.us
 Divinity,Divinity.es
 DIY Network Canada,DIYNetworkCanada.us
 DIY Network East,DIYNetworkEast.us
+DIY Network USA,DIYNetworkUSA.us
 DIY Network West,DIYNetworkWest.us
 Diya TV (KAAP-LD),KAAPLD.us
 Diya TV (KBIT-DT4),KBITLD4.us
@@ -2653,6 +2839,7 @@ Diya TV (KNET-DT11),KNETCD11.us
 Diya TV (KNLA-DT3),KNLACD3.us
 Diya TV (WLVO-LD),WLVOLD.us
 Diyanet TV,DiyanetTV.tr
+DiziSmart Max,DiziSmartMax.tr
 DKISS,DKISS.es
 dlaCiebie.tv,dlaCiebietv.pl
 DM Sat,DMSat.rs
@@ -2662,35 +2849,49 @@ DMAX Italia,DMAXItalia.us
 DMAX Southeast Asia,DMAXSoutheastAsia.us
 DMAX Türkiye,DMAXTurkiye.us
 DMAX UK,DMAXUK.us
+DMC,DMC.eg
+DMC,DMC.hr
+DMC Drama,DMCDrama.eg
 Doctor's Life,DoctorsLife.it
 DocuBox,DocuBox.us
 DocuBox HD,DocuBoxHD.us
 Documentary Channel,DocumentaryChannel.ca
 DogTV,DogTV.us
+Doku TV,DokuTV.hr
 Doma TV,DomaTV.hr
 Domo+,DomoPlus.pl
 Donau TV,DonauTV.de
 Dorcel TV,DorcelTV.nl
 Dorcel XXX,DorcelXXX.nl
+Dox TV,DoxTV.cn
+Dr. Fit Channel,DrFitChannel.bg
 DR1,DR1.dk
 DR2,DR2.dk
 Drama UK,DramaUK.uk
 Drama UK +1,DramaUKPlus1.uk
 Dream 2,Dream2.eg
+Dream Türk,DreamTurk.tr
+DSTV,DSTV.bg
 DTour East,DTourEast.ca
 DTour West,DTourWest.ca
 DTX East Europe,DTXEastEurope.us
 DTX Polska,DTXPolska.us
 DTX Ukraine,DTXUkraine.us
 DTX Россия,DTXRossiya.us
+Dubai One,DubaiOne.ae
+Dubai TV,DubaiTV.ae
+Dubai Zaman,DubaiZaman.ae
+Dubrovačka TV,DubrovackaTV.hr
 Duck TV HD,DuckTVHD.sk
 Duck TV Plus,DuckTVPlus.sk
 Duck TV SD,DuckTVSD.sk
 Duna,Duna.hu
+Duna TV,DunaTV.hu
 Duna World,DunaWorld.hu
 Duo 3,Duo3.lv
 Duo 6,Duo6.lv
 Dusk!,Dusk.nl
+DUTV,DUTV.hr
 DW Deutsch,DWDeutsch.de
 DW Deutsch+,DWDeutschPlus.de
 DW English,DWEnglish.de
@@ -2701,21 +2902,27 @@ DW Español,DWEspanol.de
 E TV,ETV.ru
 E! Brasil,EBrasil.us
 E! Canada,ECanada.us
+E! Deutschland,EDeutschland.us
 E! East,EEast.us
 E! Europe,EEurope.us
 E! France,EFrance.us
 E! Latinoamérica,ELatinoamerica.us
+E! Middle East,EMiddleEast.us
 E! West,EWest.us
 E-Sport TV,ESportTV.pl
 E4 UK,E4UK.uk
 E4 UK +1,E4UKPlus1.uk
 Echo24,Echo24.cz
+Echorouk TV,EchoroukTV.dz
 Eden,Eden.uk
 EDGEsport,EDGEsport.uk
 eGG Network,eGGNetwork.my
+Eir Sport 1,EirSport1.ie
+EKids,EKids.bg
 El 33,El33.es
 El Garage TV,ElGarageTV.ar
 El Gourmet,ElGourmet.ar
+El Mehwar TV,ElMehwarTV.eg
 El Toro TV,ElToroTV.es
 El Trece,ElTrece.ar
 El Trece Internacional,ElTreceInternacional.ar
@@ -2726,8 +2933,9 @@ Eleven Sports 3 Polska,ElevenSports3Polska.uk
 Eleven Sports 4 Polska,ElevenSports4Polska.uk
 Eleven Sports USA,ElevenSportsUSA.uk
 Elle Fictions,ElleFictions.ca
-Elrodi TV,ElrodiTV.al
+Elta 1 HD,Elta1HD.ba
 Eman Channel,EmanChannel.uk
+Emarat TV,EmaratTV.ae
 Emi TV,EmiTV.ro
 Emilia-Romagna 24,EmiliaRomagna24.it
 Empire PBS (KJHP-LP3),KJHPLP3.us
@@ -2753,6 +2961,7 @@ Enlace (WTBY-TV3),WTBYTV3.us
 Enlace (WTCE-DT4),WTCETV4.us
 Enlace (WTJP-DT4),WTJPTV4.us
 ENSE (KPDF-CA3),KPDFCA3.us
+Ent,Ent.id
 Enter-фільм,Enterfilm.ua
 Epic Drama,EpicDrama.se
 Epic Drama Polska,EpicDramaPolska.se
@@ -2783,6 +2992,7 @@ ESPN,ESPN.us
 ESPN 2,ESPN2.us
 ESPN 2 (Alternate),ESPN2.us
 ESPN 2 América Latina,ESPN2AmericaLatina.us
+ESPN 2 US,ESPN2US.us
 ESPN 2 West,ESPN2West.us
 ESPN 3 América Latina,ESPN3AmericaLatina.us
 ESPN Alternate,ESPNAlternate.us
@@ -2808,6 +3018,7 @@ ESPN Sur Andina (93A),ESPNSurAndina93A.br
 ESPN U,ESPNU.us
 ESPN U West,ESPNUWest.us
 ESPN West,ESPNWest.us
+ESPNU,ESPNU.us
 Esport3,Esport3.es
 Est TV,EstTV.ro
 Estrella TV,EstrellaTV.us
@@ -2860,12 +3071,14 @@ ETTV Global,ETTVGlobal.tw
 ETTV News,ETTVNews.tw
 ETTV Super West,ETTVSuperWest.tw
 ETTV YOYO,ETTVYOYO.tw
+ETV HD,ETVHD.mn
 ETV World (WEBA-DT3),WEBATV3.us
 ETV World (WJWJ-TV3),WJWJTV3.us
 ETV World (WNEH-DT3),WNEH3.us
 ETV World (WNTV-DT3),WNTV3.us
 ETV World (WRLK-DT3),WRLKTV3.us
 EU Music,EUMusic.ua
+Euro D,EuroD.tr
 Eurochannel,Eurochannel.us
 Euronews,Euronews.fr
 Euronews (KBID-LP),KBIDLP.us
@@ -2905,6 +3118,7 @@ Eurosport 2 Turkish,Eurosport2France.fr
 Eurosport 2 Россия,Eurosport2Rossiya.fr
 Eurosport 4K Romania,Eurosport4KRomania.fr
 Eurosport Asia,EurosportAsia.fr
+Evrokom,Evrokom.bg
 EWTN (KDEO),KDEOLD.us
 EWTN auf Deutsch,EWTNaufDeutsch.us
 EWTN Canada,EWTNCanada.us
@@ -2912,15 +3126,19 @@ EWTN España,EWTNEspana.us
 EWTN Europe,EWTNEurope.us
 EWTN US,EWTNUS.us
 EWTN US (KJCS),KJCSLD.us
+Exodus TV,ExodusTV.si
 Explorer Histori,ExplorerHistori.al
 Explorer Natyra,ExplorerNatyra.al
 Explorer Shkencë,ExplorerShkence.al
 Extasy,Extasy.cz
+ExtraTV,ExtraTV.hr
 Extreme Sports Channel,ExtremeSportsChannel.nl
 Extreme Sports Channel Polska,ExtremeSportsChannelPolska.nl
 Exxxtasy TV,ExxxtasyTV.ca
 EzoTV,EzoTV.pl
 Eén,Een.be
+F+,FPlus.bg
+Face TV,FaceTV.ba
 Fairchild TV 2,FairchildTV2.ca
 Fairchild TV East,FairchildTVEast.ca
 Fairchild TV West,FairchildTVWest.ca
@@ -2931,8 +3149,8 @@ FaithTV (WRZB-LD6),WRZB6.us
 Family Channel East,FamilyChannelEast.ca
 Family Channel West,FamilyChannelWest.ca
 Family CHRGD,FamilyCHRGD.us
-Family HD,FamilyHD.al
 Family Jr,FamilyJr.ca
+Fann,Fann.ae
 Fashion One,FashionOneEurope.uk
 FashionBox HD,FashionBoxHD.us
 FashionTV Brazil,FashionTVBrazil.fr
@@ -2951,15 +3169,23 @@ Fave TV (WWJ-TV4),WWJTV4.us
 Favorit TV,FavoritTV.ro
 FB TV,FBTV.tr
 FDF,FDF.es
+Federalna TV,FederalnaTV.ba
+Fehérvár TV,FehervarTV.hu
 FEM3,FEM3.hu
+Fen Folk,FenFolk.bg
+Fen TV,FenTV.bg
 FETV,FETV.us
+Fight Channel,FightChannel.hr
+Fight Klub,FightKlub.hu
 Fight Network,FightNetwork.ca
+Fight Sports,FightSports.us
 FightBox HD,FightBoxHD.us
 Fightklub,Fightklub.hu
 Fil Am TV (KIMG-LD3),KIMGLD3.us
 Fil Am TV (KSGA-LP3),KSGALP3.us
 Fil Am TV (KSMV-LD3),KSMVLD3.us
 Filipino TV,FilipinoTV.ca
+Film 4 UK,Film4UK.uk
 Film Aksion,FilmAksion.al
 Film Café Hungary,FilmCafeHungary.hu
 Film Café Romania,FilmCafeRomania.hu
@@ -2968,16 +3194,19 @@ Film Dy HD,FilmDyHD.al
 Film Europe,FilmEurope.cz
 Film Europe +,FilmEuropePlus.cz
 Film Hits,FilmHits.al
-Film Hits +1,FilmHitsPlus1.al
+Film Klub,FilmKlub.rs
+Film Klub Extra,FilmKlubExtra.rs
 Film Komedi,FilmKomedi.al
 Film Mánia,FilmMania.hu
 Film Një HD,FilmNjeHD.al
 Film Now,FilmNow.ro
+Film Now Hungary,FilmNowHungary.ro
 Film Thriller,FilmThriller.al
 Film&Arts Brasil,FilmArtsBrasil.ar
 Film+,FilmPlus.ro
 Film+ Hungary,FilmPlusHungary.hu
 Film.Ua Drama,FilmUaDrama.ua
+Film4,Film4.hu
 Film4 UK,Film4UK.uk
 Film4 UK +1,Film4UKPlus1.uk
 Filmax,Filmax.pl
@@ -2994,15 +3223,19 @@ FilmBox Premium Czechia,FilmBoxPremiumCzechia.us
 FilmBox Premium Polska,FilmBoxPremiumPolska.us
 FilmBox Premium Romania,FilmBoxPremiumRomania.us
 FilmBox Romania,FilmBoxRomania.us
+FilmBox Stars Adria,FilmBoxStarsAdria.us
 FilmBox Stars Hungary,FilmBoxStarsHungary.us
 FilmBox Stars Romania,FilmBoxStarsRomania.us
+FilmBox Türkiye,FilmBoxTurkiye.us
 Filmzone,Filmzone.lv
 Filmzone+,FilmzonePlus.lv
 First Alert Weather (WBAY-DT2),WBAYTV2.us
 Fish TV,FishTV.br
+Fix & Foxi,FixFoxi.de
 FIX TV,FIXTV.hu
 Flix East,FlixEast.us
 Flix West,FlixWest.us
+FMN,FMN.id
 FNX (K24IC-D3),K24ICD3.us
 FNX (K31KM-D2),K31KMD2.us
 FNX (K48MN-D2),K48MND2.us
@@ -3015,7 +3248,7 @@ FNX (KVCR-DT2),KVCRDT2.us
 Focus,Focus.it
 Fokus TV,FokusTV.pl
 Folk TV,FolkTV.us
-Folk+,FolkPlus.al
+Folklor TV,FolklorTV.bg
 Folklorika,Folklorika.sk
 Folx TV,FolxTV.de
 Food Network Asia,FoodNetworkAsia.us
@@ -3170,18 +3403,24 @@ Fox (WZDX),WZDX.us
 Fox (WZTV),WZTV.us
 Fox 35 Plus (WRBW),WRBW.us
 Fox 5 Plus (WDCA),WDCA.us
+Fox Action Movies,FoxActionMovies.us
 Fox Action Movies +1,FoxActionMoviesPlus1.us
 Fox Asia,FoxAsia.us
+Fox Bulgaria,FoxBulgaria.us
 Fox Business,FoxBusiness.us
 Fox College Sports Central,FoxCollegeSportsCentral.us
 Fox College Sports East,FoxCollegeSportsEast.us
 Fox College Sports West,FoxCollegeSportsWest.us
 Fox Comedy Polska,FoxComedyPolska.us
 Fox Comedy Portugal,FoxComedyPortugal.us
+Fox Crime Adria,FoxCrimeAdria.us
+Fox Crime Asia,FoxCrimeAsia.us
 Fox Crime Hrvatska,FoxCrimeHrvatska.us
 Fox Crime Italia,FoxCrimeItalia.us
 Fox Crime Italia +1,FoxCrimeItaliaPlus1.us
 Fox Crime Portugal,FoxCrimePortugal.us
+Fox Crime Srbija,FoxCrimeSrbija.us
+Fox Crime Türkiye,FoxCrimeTurkiye.us
 Fox Deportes,FoxDeportes.us
 Fox Deutschland,FoxDeutschland.us
 Fox East,FoxEast.us
@@ -3189,22 +3428,31 @@ Fox España,FoxEspana.us
 Fox Family Movies,FoxFamilyMovies.us
 Fox Finland,FoxFinland.us
 Fox Greece,FoxGreece.us
+Fox Hrvatska,FoxHrvatska.us
+Fox Indonesia,FoxIndonesia.us
 Fox Italia,FoxItalia.us
 Fox Italia +1,FoxItaliaPlus1.us
+Fox Life Bulgaria,FoxLifeBulgaria.us
 Fox Life España,FoxLifeEspana.us
 Fox Life Greece,FoxLifeGreece.us
 Fox Life Hrvatska,FoxLifeHrvatska.us
+Fox Life Indonesia,FoxLifeIndonesia.us
 Fox Life Latvia,FoxLifeLatvia.us
 Fox Life Malaysia,FoxLifeMalaysia.us
 Fox Life Portugal,FoxLifePortugal.us
 Fox Life Regional,FoxLifeRegional.us
 Fox Life Russia,FoxLifeRussia.us
+Fox Life Srbija,FoxLifeSrbija.us
+Fox Middle East,FoxMiddleEast.us
 Fox Mountain,FoxMountain.us
 Fox Movies,FoxMovies.us
 Fox Movies Asia +1,FoxMoviesAsiaPlus1.us
 Fox Movies Hrvatska,FoxMoviesHrvatska.us
+Fox Movies Indonesia,FoxMoviesIndonesia.us
 Fox Movies Portugal,FoxMoviesPortugal.us
+Fox Movies Srbija,FoxMoviesSrbija.us
 Fox News,FoxNews.us
+Fox News Channel,FoxNewsChannel.us
 Fox News West,FoxNewsWest.us
 Fox Polska,FoxPolska.us
 Fox Portugal,FoxPortugal.us
@@ -3228,6 +3476,7 @@ Fox Türkiye,FoxTurkiye.us
 Fox West,FoxWest.us
 FPTV,FPTV.ca
 France 2,France2.fr
+France 24 Arabic,France24Arabic.fr
 France 24 English,France24English.fr
 France 24 English (K31CT-DT5),K31CT5.us
 France 24 English (KHMP),KHMPLD.us
@@ -3290,7 +3539,9 @@ FX Brasil,FXBrasil.us
 FX Canada,FXCanada.us
 FX East,FXEast.us
 FX Latinoamérica,FXLatinoamerica.us
+FX Middle East,FXMiddleEast.us
 FX Movie Channel,FXMovieChannel.us
+FX Türkiye,FXTurkiye.us
 FX West,FXWest.us
 FXM Latinoamérica,FXMLatinoamerica.us
 FXX Canada,FXXCanada.us
@@ -3301,14 +3552,17 @@ FYI West,FYIWest.us
 Galavisión Este,GalavisionEste.us
 Galavisión Oeste,GalavisionOeste.us
 Galaxy4,Galaxy4.hu
+Galicia TV Europa,GaliciaTVEuropa.es
 Gambero Rosso,GamberoRosso.it
 Game One,GameOne.fr
 Game Show Network East,GameShowNetworkEast.us
 Game Show Network West,GameShowNetworkWest.us
 Game TV,GameTV.ca
 Game+,GamePlus.ca
+GameHub,GameHub.hr
 Gametoon,Gametoon.us
 Garage TV,GarageTV.ar
+Gea TV,GeaTV.si
 GEB America,GEBAmerica.us
 GEB America (WACX-DT3),WACX3.us
 Gem Shopping Network,GemShoppingNetwork.us
@@ -3359,6 +3613,7 @@ Giallo TV,GialloTV.it
 Ginx eSports TV,GinxeSportsTV.uk
 Ginx eSports TV Canada,GinxeSportsTVCanada.uk
 Ginx eSports TV Greece,GinxeSportsTVGreece.uk
+Ginx eSports TV International,GinxeSportsTVInternational.uk
 Global (CFGC-DT),CFGCDT.ca
 Global (CFGC-DT2),CFGCDT2.ca
 Global (CFRE),CFRE.ca
@@ -3451,6 +3706,7 @@ God TV US,GodTVUS.uk
 GOL,GOL.es
 Gol TV Espanol,GolTVEspanol.us
 Gold TV,GoldTV.pl
+Gold UK,GoldUK.uk
 GoldStar TV,GoldStarTV.de
 Golf Channel Canada,GolfChannelCanada.us
 Golf Channel Czechia,GolfChannelCzechia.us
@@ -3460,6 +3716,7 @@ Golf Channel Malaysia,GolfChannelMalaysia.us
 Golf Channel Polska,GolfChannelPolska.us
 Golf Channel US,GolfChannelUS.us
 Golf+,GolfPlus.fr
+Golica TV,GolicaTV.si
 Gong,Gong.fr
 Gong Max,GongMax.fr
 Gospel Broadcasting Network,GospelBroadcastingNetwork.us
@@ -3467,6 +3724,7 @@ Gospel Broadcasting Network (K07XL),K07XLD.us
 Gospel Broadcasting Network (K26GS-DT8),K26GSD8.us
 Gospel Music TV,GospelMusicTV.uk
 GoTV,GoTV.at
+Grand TV,GrandTV.rs
 Great American Country,GreatAmericanCountry.us
 Grit,Grit.us
 Grit (K14JZ-D5),K14JZD5.us
@@ -3559,12 +3817,16 @@ Grit (WXPX-TV3),WXPXTV3.us
 Grit (WXTV-DT4),WXTVDT4.us
 GS TV,GSTV.tr
 GTV,GTV.id
+GTV,GTV.si
 Guadalupe Radio (KBEH-DT2),KBEH2.us
 Guide Us TV (WKOB-LD4),WKOBLD4.us
 Gulli,Gulli.fr
 Gulli Girl,GulliGirl.fr
+Gyöngyösi TV,GyongyosiTV.hu
 H!T Music Channel Hungary,HTMusicChannelHungary.ro
 H!T Music Channel Romania,HTMusicChannelRomania.ro
+Ha Ha,HaHa.rs
+Haber Global,HaberGlobal.tr
 Habertürk TV,HaberturkTV.tr
 HaHa TV,HaHaTV.sk
 Halk TV,HalkTV.tr
@@ -3575,17 +3837,31 @@ Hallmark Drama,HallmarkDrama.us
 Hallmark Movies & Mysteries East,HallmarkMoviesMysteriesEast.us
 Hallmark Movies & Mysteries West,HallmarkMoviesMysteriesWest.us
 Hamburg 1,Hamburg1.de
+Happy,Happy.rs
 Happy Channel,HappyChannel.ro
+Hayat,Hayat.ba
+Hayat Folk,HayatFolk.ba
+Hayat Music,HayatMusic.ba
+Hayat Plus,HayatPlus.ba
+Hayatovci,Hayatovci.ba
+HBO 2 Central Europe,HBO2CentralEurope.us
+HBO 2 East,HBO2East.us
+HBO 3 Central Europe,HBO3CentralEurope.us
+HBO Adria,HBOAdria.us
+HBO Asia,HBOAsia.us
 HBO Brasil,HBOBrasil.us
 HBO Canada 2 West,HBOCanada2West.us
 HBO Comedy East,HBOComedyEast.us
 HBO Comedy West,HBOComedyWest.us
 HBO Czechia,HBOCzechia.us
 HBO East,HBOEast.us
+HBO Family Asia,HBOFamilyAsia.us
 HBO Family Brasil,HBOFamilyBrasil.us
 HBO Family East,HBOFamilyEast.us
 HBO Family Latinoamérica,HBOFamilyLatinoamerica.us
 HBO Family West,HBOFamilyWest.us
+HBO Hits,HBOHits.us
+HBO Hungary,HBOHungary.us
 HBO Latinoamérica,HBOLatinoamerica.us
 HBO Latinoamérica East,HBOLatinoamericaEast.us
 HBO Latinoamérica West,HBOLatinoamericaWest.us
@@ -3594,6 +3870,7 @@ HBO Mundi Brasil,HBOMundiBrasil.us
 HBO Polska,HBOPolska.us
 HBO Pop Brasil,HBOPopBrasil.us
 HBO Romania,HBORomania.us
+HBO Signature Asia,HBOSignatureAsia.us
 HBO Signature Brasil,HBOSignatureBrasil.us
 HBO Signature East,HBOSignatureEast.us
 HBO Signature West,HBOSignatureWest.us
@@ -3715,6 +3992,7 @@ Hillsong Channel (WSFG-DT4),WSFGLD4.us
 Hillsong Channel (WSSF-LD4),WSSFLD4.us
 Hillsong Channel (WTCE-DT2),WTCETV2.us
 Hillsong Channel (WTJP-TV2),WTJPTV2.us
+Hispan TV,HispanTV.ir
 Histoire TV,HistoireTV.fr
 Historia,Historia.us
 Historia España,HistoriaEspana.us
@@ -3728,6 +4006,7 @@ History Canada East,HistoryCanadaEast.us
 History Canada West,HistoryCanadaWest.us
 History Deutschland,HistoryDeutschland.us
 History East,HistoryEast.us
+History en Español,HistoryenEspanol.us
 History en Español Central,HistoryenEspanolCentral.us
 History en Español East,HistoryenEspanolEast.us
 History en Español Mountain,HistoryenEspanolMountain.us
@@ -3741,8 +4020,10 @@ History România,HistoryRomania.us
 History Russia,HistoryRussia.us
 History West,HistoryWest.us
 História Portugal,HistoriaPortugal.us
+HIT TV,HITTV.hr
 HITN,HITN.us
 Hits,Hits.sg
+Hits Movies,HitsMovies.sg
 Hits Movies +1,HitsMoviesPlus1.sg
 HITV,HITV.ru
 HLN,HLN.us
@@ -3778,6 +4059,8 @@ HRT International,HRTInternational.hr
 HSE,HSE.de
 HSE Extra,HSEExtra.de
 HSE24,HSE24.de
+HSE24 Extra,HSE24Extra.de
+HSE24 Trend,HSE24Trend.de
 HSN,HSN.us
 HSN (K21CX),K21CXD.us
 HSN (K25OM-D2),K25OMD2.us
@@ -3887,10 +4170,14 @@ Ideal Extra,IdealExtra.uk
 Ideal TV,IdealTV.br
 Ideal World,IdealWorld.uk
 IDF1,IDF1.fr
+IDJ TV,IDJTV.rs
+IDX Channel,IDXChannel.id
 IFC East,IFCEast.us
 IFC West,IFCWest.us
+iFilm Arabic,iFilmArabic.ir
 Impact Television Network,ImpactTelevisionNetwork.us
 Impact Television Network (WLPC-LD),WLPCCD.us
+Imperia TV,ImperiaTV.ba
 In Demand,InDemand.us
 In Demand en Español,InDemandenEspanol.us
 In TV,InTV.al
@@ -3968,6 +4255,7 @@ Investigation Discovery Europe,InvestigationDiscoveryEurope.us
 Investigation Discovery Latinoamérica,InvestigationDiscoveryLatinoamerica.us
 Investigation Discovery Polska,InvestigationDiscoveryPolska.us
 Investigation Discovery Polska,InvestigationDiscoveryHDPolska.us
+Investigation Discovery UK,InvestigationDiscoveryUK.us
 Investigation Discovery West,InvestigationDiscoveryWest.us
 Investigação Discovery Brasil,InvestigacaoDiscoveryBrasil.us
 ION Television (K28IT-DT5),K28ITD5.us
@@ -4030,6 +4318,7 @@ ION Television Central,IONTelevisionCentral.us
 ION Television East,IONTelevisionEast.us
 ION Television Mountain,IONTelevisionMountain.us
 ION Television West,IONTelevisionWest.us
+ION TV East,IONTVEast.us
 iQIYI,iQIYI.cn
 Iran TV Network,IranTVNetwork.us
 Iris,Iris.it
@@ -4037,6 +4326,9 @@ Italia 1,Italia1.it
 Italia 2,Italia2.it
 ITV,ITV.uk
 ITV +1,ITVPlus1.uk
+ITV 2 +1,ITV2Plus1.uk
+ITV Be,ITVBe.uk
+ITV Channel TV,ITVChannelTV.uk
 ITV London,ITVLondon.uk
 ITV2,ITV2.uk
 ITV2 +1,ITV2Plus1.uk
@@ -4046,11 +4338,15 @@ ITV4,ITV4.uk
 ITV4 +1,ITV4Plus1.uk
 ITVBe,ITVBe.uk
 ITVBe +1,ITVBePlus1.uk
+iTVN Europe,iTVNEurope.pl
+iTVN Extra,iTVNExtra.pl
 iTVS,iTVS.pl
 IVC,IVC.ve
 Izaura TV,IzauraTV.hu
+Izvorna TV,IzvornaTV.ba
 J-One,JOne.fr
-Jaktv,JAKTV.id
+Jabuka TV,JabukaTV.hr
+Jak TV,JakTV.id
 Jaya Movie,JayaMovie.in
 Jaya Plus,JayaPlus.in
 Jaya TV,JayaTV.in
@@ -4086,17 +4382,19 @@ Jiangsu TV International,JiangsuTVInternational.cn
 Jihočeská televize,Jihoceskatelevize.cz
 Jim,Jim.fi
 JimJam Europe,JimJamEurope.uk
+JimJam Polsat,JimJamPolsat.uk
 JimJam Romania,JimJamRomania.uk
 JimJam Россия,JimJamRossiya.uk
 JML Direct TV,JMLDirectTV.uk
+Jocky TV,JockyTV.hu
 JOJ Cinema,JOJCinema.sk
 JOJ Family,JOJFamily.sk
 JOJ Plus,JOJPlus.sk
 Jojko,Jojko.sk
+Jolly HD,JollyHD.al
 Joytv,Joytv.ca
 Jugoton TV,JugotonTV.hr
 Junior,Junior.de
-Junior TV,JuniorTV.al
 Jurnal TV,JurnalTV.md
 Justice Central TV,JusticeCentralTV.us
 Juwelo,Juwelo.de
@@ -4108,13 +4406,21 @@ K18DD-D,K18DDD.us
 K2,K2.it
 K36DB-CD,K36DBCD.us
 K46II-D,K46IID.us
+K::CN 1,KCN1.rs
+K::CN 2 Music,KCN2Music.rs
+K::CN Svet+ 3,KCNSvetPlus3.rs
+Kabel Eins Austria,KabelEinsAustria.de
 Kabel Eins Classics,KabelEinsClassics.de
 Kabel Eins Deutschland,KabelEinsDeutschland.de
-Kanal 10,Kanal10.rs
+Kabel Eins Doku Austria,KabelEinsDokuAustria.de
+Kanal 1,Kanal1.ba
+Kanal 5,Kanal5.mk
+Kanal 6,Kanal6.ba
 Kanal 7,Kanal7.tr
+Kanal 9,Kanal9.hr
+Kanal A,KanalA.si
 Kanal D,KanalD.tr
-Kanal D Drama,KanalDDrama.tr
-Kanali 7,Kanali7.al
+Kanal Ri,KanalRi.hr
 Kanshi TV,KanshiTV.uk
 KASY-TV,KASYTV.us
 Kazakh TV,KazakhTV.kz
@@ -4130,18 +4436,25 @@ KCAL,KCALTV.us
 KCET,KCET.us
 KCNS,KCNS.us
 KDOC,KDOCTV.us
+Ketchup TV,KetchupTV.uk
 Ketnet,Ketnet.be
 Kids & Teens TV,KidsTeensTV.us
 Kids Street,KidsStreet.us
+Kids TV,KidsTV.id
 KidZone TV,KidZoneTV.ee
 Kidzone+,KidzonePlus.ee
 KiKA,KiKA.de
+Kino,Kino.si
 Kino Barrandov,KinoBarrandov.cz
+Kino Nova,KinoNova.bg
 Kino Polska,KinoPolska.pl
 Kino Polska Muzyka,KinoPolskaMuzyka.pl
 Kino TV,KinoTV.us
+Kino TV,KinoTV.hr
 Kinowelt TV,KinoweltTV.de
 Kiss TV,KissTV.ro
+Kiss TV,KissTV.uk
+Kitchen TV,KitchenTV.rs
 Kix,Kix.hk
 KJZZ (K18DR-DT6),K18DRD6.us
 KJZZ (K28IT-DT4),K28ITD4.us
@@ -4151,6 +4464,7 @@ Klan Kosova,KlanKosova.al
 Klan Macedonia,KlanMacedonia.al
 Klan Plus,KlanPlus.al
 Klape i Tambure,KlapeiTambure.hr
+Klasik TV,KlasikTV.hr
 KMPT-DT6,KMTPTV6.us
 KMTP,KMTPTV.us
 KMTP-DT2,KMTPTV2.us
@@ -4170,10 +4484,12 @@ KPVM,KPVMLD.us
 KQSL-DT,KQSL.us
 Kral FM,KralFM.tr
 Kral Pop Radyo,KralPopRadyo.tr
+Kral Pop TV,KralPopTV.tr
 KRCA-DT4,KRCA4.ca
 KRCA-DT4,KRCA4.us
 KRCA-DT6,KRCA6.ca
 KRCA-DT6,KRCA6.us
+Kreator TV,KreatorTV.hr
 KRON,KRONTV.us
 KRPV,KRPVDT.us
 KSAO-DT4,KSAOLD4.us
@@ -4193,12 +4509,17 @@ KTOO 360TV (K21AM-DT3),K21AMD3.us
 KTOO 360TV (K48AC-DT3),K48ACD3.us
 KTOO 360TV (KAKM-DT3),KAKM3.us
 KTSF,KTSF.us
+KTV Al Qurain,KTVAlQurain.kw
+KTV Khallik Bilbait,KTVKhallikBilbait.kw
+KTV Ormož,KTVOrmoz.si
 KTVK,KTVK.us
 KTVU Plus,KTVUTV.us
 Kuchnia+,KuchniaPlus.pl
 KUEN-TV (K18DR-DT5),K18DRD5.us
+Kurir TV,KurirTV.rs
 KUSI,KUSITV.us
 Kutonen,Kutonen.fi
+Kuwait TV,KuwaitTV.kw
 KVHD-LD3,KVHDLD3.us
 KWHY-DT3,KWHYTV3.us
 KWHY-DT4,KWHYTV4.us
@@ -4221,11 +4542,14 @@ La Chaine Meteo,LaChaineMeteo.fr
 La Chaine parlementaire,LaChaineparlementaire.fr
 La Chaîne Disney,LaChaineDisney.us
 La Otra,LaOtra.es
+La Sexta,LaSexta.es
 La Trois,LaTrois.be
 La Une,LaUne.be
 LA-18.8 (KUAN-LD8),KUANLD8.us
+La5,La5.it
 La7,La7.it
 La7d,La7d.it
+Laeffe,Laeffe.it
 LaF,LaF.it
 Laff,Laff.us
 Laff (K19KV-D),K19KVD3.us
@@ -4302,6 +4626,8 @@ Laff (WXXA-DT3),WXXATV3.us
 Laff (WXYZ-DT3),WXYZTV3.us
 Lala TV,LalaTV.sk
 Lale,Lale.ua
+Lana TV,LanaTV.lb
+Lana+ TV,LanaPlusTV.lb
 Las Estrellas Latinoamérica,LasEstrellasLatinoamerica.mx
 laSexta,laSexta.es
 LATV (KAJB2),KAJB2.us
@@ -4332,20 +4658,30 @@ LATV (WUTF-DT2),WUTFDT2.us
 LATV (WUVN-DT4),WUVN4.us
 LATV (WZPA-LD4),WZPALD4.us
 LATV (XHAS-DT2),XHASDT2.us
+Laudato TV,LaudatoTV.hr
 Lazio Style Channel,LazioStyleChannel.it
+LBC,LBC.sa
+LBCI,LBCI.lb
 LCI,LCI.fr
 LCN,LCN.ca
 LCP 100%,LCP100.fr
+LDC,LDC.lb
 Leafs Nation Network,LeafsNationNetwork.ca
 Leo TV,LeoTV.cz
 Leo TV Gold,LeoTVGold.cz
 Libertad Digital TV,LibertadDigitalTV.es
+Libertas TV,LibertasTV.hr
+Life,Life.id
+Life TV,LifeTV.hu
+Lifestyle & Fashion,LifestyleFashion.id
+Lifetime Asia,LifetimeAsia.us
 Lifetime Brazil,LifetimeBrazil.us
 Lifetime Canada,LifetimeCanada.us
 Lifetime East,LifetimeEast.us
 Lifetime Movies East,LifetimeMoviesEast.us
 Lifetime Movies West,LifetimeMoviesWest.us
 Lifetime Polska,LifetimePolska.us
+Lifetime Real Women,LifetimeRealWomen.us
 Lifetime Real Women East,LifetimeRealWomenEast.us
 Lifetime Real Women West,LifetimeRealWomenWest.us
 Lifetime West,LifetimeWest.us
@@ -4368,6 +4704,7 @@ Localish (WPVI-DT2),WPVITV2.us
 Localvisão TV,LocalvisaoTV.pt
 Logo East,LogoEast.us
 Logo West,LogoWest.us
+Lol,Lol.rs
 Lolo TV,LoloTV.lv
 London Live,LondonLive.uk
 Lone Star Channel (KQRM-LP),KQRMLP.us
@@ -4377,6 +4714,8 @@ LookSport 2,LookSport2.ro
 LookSport 3,LookSport3.ro
 LookSport+,LookSportPlus.ro
 Lounge TV,LoungeTV.cz
+Lov i Ribolov,LoviRibolov.rs
+Lov i ribolov,Loviribolov.rs
 LOVE,LOVE.pl
 Love Nature,LoveNature.ca
 LS Times TV,LSTimesTV.ca
@@ -4403,7 +4742,11 @@ LX Network (WTVJ-DT3),WTVJ3.us
 LX Network (WYGA-DT7),WYGACD7.us
 M1,M1.hu
 M1,M1.ua
+M1 Film,M1Film.hr
+M1 Gold,M1Gold.hr
 M2,M2.hu
+M3,M3.hu
+M4,M4.hu
 M4 Sport,M4Sport.hu
 M5,M5.hu
 M6,M6.fr
@@ -4412,6 +4755,8 @@ M6 Music,M6Music.fr
 Mad TV,MadTV.gr
 Mad Viral,MadViral.gr
 Magic TV,MagicTV.ro
+Magic TV,MagicTV.uk
+Magic TV,MagicTV.bg
 Mais na Tela,MaisnaTela.br
 Majestadtv (KWHY-DT5),KWHYTV5.us
 Makeful,Makeful.ca
@@ -4424,16 +4769,36 @@ Markíza,Markiza.sk
 Markíza International,MarkizaInternational.sk
 Marquee Sports Network,MarqueeSportsNetwork.us
 María Visión,MariaVision.mx
+María+Visión Medjugorje,MariaPlusVisionMedjugorje.mx
 MASN,MASN.us
 MASN2,MASN2.us
+Maspero Zaman,MasperoZaman.eg
 MAtv Montréal,MAtvMontreal.ca
 MAtv Québec,MAtvQuebec.ca
 MavTV,MavTV.us
 Max,Max.ca
+Max Sport 1,MaxSport1.bg
+Max Sport 2,MaxSport2.bg
+Max Sport 3,MaxSport3.bg
+Max Sport 4,MaxSport4.bg
+MAXtv Promo Kanal,MAXtvPromoKanal.hr
 Maxxi-TV,MaxxiTV.ua
+MBC,MBC.ae
+MBC 2,MBC2.ae
+MBC 3,MBC3.ae
+MBC 4,MBC4.ae
+MBC 5,MBC5.ae
+MBC Action,MBCAction.ae
 MBC America,MBCAmerica.kr
 MBC America (WKTB-CD5),WKTBCD5.us
-MBC Drama (Korean),MBCDrama.us
+MBC Bollywood,MBCBollywood.ae
+MBC Drama,MBCDrama.ae
+MBC Drama,MBCDrama.us
+MBC Drama +,MBCDramaPlus.ae
+MBC Iraq,MBCIraq.ae
+MBC Masr,MBCMasr.eg
+MBC Masr 2,MBCMasr2.ae
+MBC Max,MBCMax.ae
 MCAETv,MCAETTV.us
 MCAETv (K38JP-DT3),K38JPD3.us
 MCM France,MCMFrance.fr
@@ -4461,7 +4826,7 @@ Melody Hits,MelodyHits.eg
 Mestská televízia Ružomberok,MestskateleviziaRuzomberok.sk
 Metro,Metro.pl
 Metro (WETA-TV5),WETATV5.us
-METRO TV,METROTV.id
+Metro TV,MetroTV.id
 MeTV,MeTV.us
 MeTV (K24IB-D2),K24IBD2.us
 MeTV (K26GS-DT4),K26GSD4.us
@@ -4572,11 +4937,11 @@ MeTV (WZDX3),WZDX3.us
 MeTV (WZVN-DT2),WZVNTV2.us
 Mezzo,Mezzo.fr
 Mezzo Live HD,MezzoLiveHD.fr
-MFM,MFM.al
 MGM HD USA,MGMHDUSA.us
 MHz Worldview (WEAO-DT3),WEAO3.us
 MHz Worldview (WNVT),WNVT.us
 Mi Música Urbana,MiMusicaUrbana.us
+Miao Mi,MiaoMi.hk
 Michigan Learning Channel (WTVS-DT5),WTVS5.us
 Milan TV,MilanTV.it
 Milenio Televisión,MilenioTelevision.mx
@@ -4590,6 +4955,8 @@ Minimax Hungary,MinimaxHungary.hu
 Minimax Romania,MinimaxRomania.us
 MiniMini+,MiniMiniPlus.pl
 Mirabelle TV,MirabelleTV.fr
+Mix,Mix.eg
+Mix Bel Araby,MixBelAraby.eg
 Mixtape TV,MixtapeTV.pl
 MLB Extra Innings 1,MLBExtraInnings1.us
 MLB Extra Innings 10,MLBExtraInnings10.us
@@ -4620,6 +4987,8 @@ MLB Network,MLBNetwork.us
 MLB Strike Zone,MLBStrikeZone.us
 MMax (KDTV-DT2),KDTVDT2.us
 MN Channel (KAWE-DT6),KAWE6.us
+MNC News,MNCNews.id
+MNC Sports,MNCSports.id
 MNCTV,MNCTV.id
 MNT (K14JZ-D2),K14JZD2.us
 MNT (K22EY-D),K22EYD.us
@@ -4711,11 +5080,14 @@ MotoGP,MotoGP.es
 Motor Trend,MotorTrend.it
 Motorvision TV,MotorvisionTV.de
 Motowizja,Motowizja.pl
+Movie Generation TV,MovieGenerationTV.hr
+Movie Star,MovieStar.bg
 MovieMax East,MovieMaxEast.us
 MovieMax West,MovieMaxWest.us
 MoviePlex East,MoviePlexEast.us
 MoviePlex Mountain,MoviePlexMountain.us
 MoviePlex West,MoviePlexWest.us
+Movies 24,Movies24.uk
 Movies!,Movies.us
 Movies! (K14HC-D2),K14HCD2.us
 Movies! (K18DR-DT4),K18DRD4.us
@@ -4762,28 +5134,48 @@ Movies! (WRBW-DT2),WRBW2.us
 Movies! (WTVT-DT2),WTVT2.us
 Movies! (WTXF-DT2),WTXFTV2.us
 Movies! (WXTX-DT2),WXTX2.us
+MovieSmart Classic,MovieSmartClassic.tr
+MovieSmart Premium,MovieSmartPremium.tr
+MovieSmart Premium 2,MovieSmartPremium2.tr
+MovieSmart Türk,MovieSmartTurk.tr
 MovieTime,MovieTime.ca
 Movistar Acción,MovistarAccion.es
 Movistar Cine Español,MovistarCineEspanol.es
 Movistar Comedia,MovistarComedia.es
 Movistar Deportes,MovistarDeportes.es
+Movistar Deportes 2,MovistarDeportes2.es
 Movistar Drama,MovistarDrama.es
 Movistar Estrenos,MovistarEstrenos.es
 Movistar F1,MovistarF1.es
 Movistar Golf,MovistarGolf.es
 Movistar Series,MovistarSeries.es
+Movistar Series Xtra,MovistarSeriesXtra.es
 MOXiE (WANN-CD4),WANNCD4.us
+Mozi+,MoziPlus.hu
+Moziverzum,Moziverzum.hu
+Mreža TV,MrezaTV.hr
+Mreža TV,MrezaTV.ba
+MRT 1,MRT1.mk
+MRT 2,MRT2.mk
+MRT 3,MRT3.mk
+MRT 4,MRT4.mk
 MSG,MSG.us
 MSG Syracuse,MSGSyracuse.us
 MSG+,MSGPlus.us
 MSG+ Syracuse,MSGPlusSyracuse.us
 MSG2,MSG2.us
+MShop Signature,MShopSignature.id
+MShop Super Sale!,MShopSuperSale.id
 MSNBC,MSNBC.us
+MTV,MTV.lb
+MTV 00s,MTV00s.us
 MTV 80s,MTV80s.us
 MTV 90s,MTV90s.us
+MTV Base UK,MTVBaseUK.us
 MTV Brasil,MTVBrasil.us
 MTV Canada,MTVCanada.us
 MTV Classic East,MTVClassicEast.us
+MTV Classic UK,MTVClassicUK.us
 MTV Classic West,MTVClassicWest.us
 MTV Czech Republic,MTVCzechRepublic.us
 MTV East,MTVEast.us
@@ -4793,13 +5185,16 @@ MTV France,MTVFrance.us
 MTV Germany,MTVGermany.us
 MTV Hits Europe,MTVHitsEurope.us
 MTV Hits France,MTVHitsFrance.us
+MTV Hits UK,MTVHitsUK.us
 MTV Hungary,MTVHungary.us
+MTV Igman,MTVIgman.ba
 MTV Italia,MTVItalia.us
 MTV Latino Norte,MTVLatinoNorte.us
 MTV Live HD,MTVLiveHD.us
 MTV Music 24,MTVMusic24.us
 MTV Music Italia,MTVMusicItalia.us
 MTV Music Polska,MTVMusicPolska.us
+MTV Music UK,MTVMusicUK.us
 MTV Nordic,MTVNordic.us
 MTV Polska,MTVPolska.us
 MTV Portugal,MTVPortugal.us
@@ -4819,6 +5214,7 @@ MTV3,MTV3.fi
 MTVmix,MTVmix.ru
 Much,Much.ca
 Multishow,Multishow.br
+Musawa,Musawa.ps
 Muse,Muse.al
 Museum,Museum.fr
 Music Box Brasil,MusicBoxBrasil.br
@@ -4882,15 +5278,19 @@ Music Choice Toddler Tunes,MusicChoiceToddlerTunes.us
 Music Choice Tropicales,MusicChoiceTropicales.us
 Music Choice True Country,MusicChoiceTrueCountry.us
 Music Choice Y2K,MusicChoiceY2K.us
+Music TV,MusicTV.id
 MusicTop,MusicTop.ar
+Muslim TV,MuslimTV.id
+MUTV,MUTV.uk
 Muzsika TV,MuzsikaTV.hu
 MVK,MVK.lv
-My Music,MyMusic.al
 My Network TV (WSST),WSSTTV.us
 Mya,Mya.it
 MyDestination.TV,MyDestinationTV.us
+MyNetworkTV,MyNetworkTV.us
 MyTV,MyTV.id
 myZen TV,myZenTV.fr
+MyZen TV,MyZenTV.fr
 myZen TV 4K,myZenTV4K.fr
 Más Chic Lationamérica,MasChicLationamerica.us
 MétéoMédia,MeteoMedia.ca
@@ -4905,6 +5305,12 @@ Městská televize Trnava,MestskatelevizeTrnava.sk
 Mňam TV,MnamTV.cz
 Mňau TV,MnauTV.cz
 n-tv,ntv.de
+n-tv Austria,ntvAustria.de
+N1 Bosna i Hercegovina,N1BosnaiHercegovina.rs
+N1 Hrvatska,N1Hrvatska.rs
+N1 Srbija,N1Srbija.rs
+N24 Doku,N24Doku.de
+Narodni TV,NarodniTV.hr
 NASA TV,NASATV.us
 NASA TV (K13AV-DT6),K13AVD6.us
 NASA TV (KGEC-DT4),KGECLD4.us
@@ -4914,12 +5320,14 @@ Nasul TV,NasulTV.ro
 Nat Geo Kids,NatGeoKids.us
 Nat Geo Kids Brasil,NatGeoKidsBrasil.us
 Nat Geo Mundo,NatGeoMundo.us
+Nat Geo People,NatGeoPeople.us
 Nat Geo People Asia,NatGeoPeopleAsia.us
 Nat Geo People Polska,NatGeoPeoplePolska.us
 Nat Geo People România,NatGeoPeopleRomania.us
 National 24 Plus,National24Plus.ro
 National Geographic Asia,NationalGeographicAsia.us
 National Geographic Brasil,NationalGeographicBrasil.us
+National Geographic Bulgaria,NationalGeographicBulgaria.us
 National Geographic Canada,NationalGeographicCanada.us
 National Geographic Channel HD Europe,NationalGeographicChannelHDEurope.us
 National Geographic Deutschland,NationalGeographicDeutschland.us
@@ -4933,6 +5341,7 @@ National Geographic Italia,NationalGeographicItalia.us
 National Geographic Italia +1,NationalGeographicItaliaPlus1.us
 National Geographic Latinoamérica,NationalGeographicLatinoamerica.us
 National Geographic Latvija,NationalGeographicLatvija.us
+National Geographic Middle East,NationalGeographicMiddleEast.us
 National Geographic Polska,NationalGeographicPolska.us
 National Geographic Portugal,NationalGeographicPortugal.us
 National Geographic România,NationalGeographicRomania.us
@@ -4944,21 +5353,25 @@ National Geographic West,NationalGeographicWest.us
 National Geographic Wild,NationalGeographicWild.us
 National Geographic Wild Asia,NationalGeographicWildAsia.us
 National Geographic Wild Brasil,NationalGeographicWildBrasil.us
+National Geographic Wild Bulgaria,NationalGeographicWildBulgaria.us
 National Geographic Wild Canada,NationalGeographicWildCanada.us
 National Geographic Wild Deutschland,NationalGeographicWildDeutschland.us
 National Geographic Wild España,NationalGeographicWildEspana.us
 National Geographic Wild Europe,NationalGeographicWildEurope.us
 National Geographic Wild France,NationalGeographicWildFrance.us
+National Geographic Wild Hungary,NationalGeographicWildHungary.us
 National Geographic Wild Italia,NationalGeographicWildItalia.us
 National Geographic Wild Italia +1,NationalGeographicWildItaliaPlus1.us
 National Geographic Wild Polska,NationalGeographicWildPolska.us
 National Geographic Wild Romania,NationalGeographicWildRomania.us
 National Geographic Wild Russia,NationalGeographicWildRussia.us
 National Geographic Wild Türkiye,NationalGeographicWildTurkiye.us
+National Geographic Wild UK,NationalGeographicWildUK.us
 National TV,National TV
 Naura,Naura.my
 Nautical Channel,NauticalChannel.it
 Navarra Televisión,NavarraTelevision.es
+Naša TV,NasaTV.ba
 NBA League Pass 1,NBALeaguePass1.us
 NBA League Pass 10,NBALeaguePass10.us
 NBA League Pass 2,NBALeaguePass2.us
@@ -5120,16 +5533,19 @@ NBC Sports Washington+,NBCSportsWashingtonPlus.us
 NBC Universo East,NBCUniversoEast.us
 NBC Universo West,NBCUniversoWest.us
 NBC West,NBCWest.us
+NBCSN,NBCSN.us
 NDR Fernsehen,NDRFernsehen.de
 NDTV 24x7,NDTV24x7.in
 NDTV Good Times,NDTVGoodTimes.in
 necn,necn.us
 Nelonen,Nelonen.fi
+Neon TV,NeonTV.ba
 Neox,Neox.es
 NESN,NESN.us
 NESN Plus,NESNPlus.us
-Nesër TV,NeserTV.al
+Nessma,Nessma.tn
 Net TV,NetTV.ar
+Net TV,NetTV.si
 NET.,NET.id
 NetViet,NetViet.vn
 New Greek TV,NewGreekTV.us
@@ -5209,13 +5625,17 @@ Nick Jr Asia,NickJrAsia.us
 Nick Jr Brasil,NickJrBrasil.us
 Nick Jr Central & Eastern Europe,NickJrCentralEasternEurope.us
 Nick Jr Czechia,NickJrCzechia.us
+Nick Jr Deutschland,NickJrDeutschland.us
 Nick Jr East,NickJrEast.us
 Nick Jr España,NickJrEspana.us
 Nick Jr Europe,NickJrEurope.us
+Nick Jr Hungary,NickJrHungary.us
 Nick Jr Italia,NickJrItalia.us
 Nick Jr Italia +1,NickJrItaliaPlus1.us
 Nick Jr România,NickJrRomania.us
+Nick Jr Too UK,NickJrTooUK.us
 Nick Jr Türkiye,NickJrTurkiye.us
+Nick Jr UK,NickJrUK.us
 Nick Jr West,NickJrWest.us
 Nick Jr Россия,NickJrRossiya.us
 Nickelodeon Brasil,NickelodeonBrasil.us
@@ -5224,13 +5644,16 @@ Nickelodeon Czechia,NickelodeonCzechia.us
 Nickelodeon Deutschland,NickelodeonDeutschland.us
 Nickelodeon East,NickelodeonEast.us
 Nickelodeon en Español,NickelodeonenEspanol.us
+Nickelodeon Europe,NickelodeonEurope.us
 Nickelodeon France,NickelodeonFrance.us
 Nickelodeon Greece,NickelodeonGreece.us
+Nickelodeon HD,NickelodeonHD.us
 Nickelodeon Italia,NickelodeonItalia.us
 Nickelodeon Italia +1,NickelodeonItaliaPlus1.us
 Nickelodeon Junior France,NickelodeonJuniorFrance.us
 Nickelodeon Latinoamérica,NickelodeonLatinoamerica.us
 Nickelodeon Latvia,NickelodeonLatvia.us
+Nickelodeon Magyarország,NickelodeonMagyarorszag.us
 Nickelodeon Polska,NickelodeonPolska.us
 Nickelodeon România,NickelodeonRomania.us
 Nickelodeon South East Asia,NickelodeonSouthEastAsia.us
@@ -5241,11 +5664,18 @@ Nickelodeon Wallonia,NickelodeonWallonia.us
 Nickelodeon West,NickelodeonWest.us
 Nickelodeon Россия,NickelodeonRossiya.us
 NickMusic,NickMusic.us
+Nicktoons Adria,NicktoonsAdria.us
 Nicktoons Czechia,NicktoonsCzechia.us
+Nicktoons Deutschland,NicktoonsDeutschland.us
 Nicktoons East,NicktoonsEast.us
 Nicktoons Polska,NicktoonsPolska.us
 Nicktoons România,NicktoonsRomania.us
+NickToons UK,NickToonsUK.us
 Nicktoons West,NicktoonsWest.us
+Nile Cinema,NileCinema.eg
+Nile Comedy,NileComedy.eg
+Nile Drama,NileDrama.eg
+Nile Life,NileLife.eg
 Nine,Nine.au
 Nitro Deutschland,NitroDeutschland.de
 NITV,NITV.au
@@ -5279,23 +5709,36 @@ Noovo (CFVS-DT-1),CFVSDT1.ca
 Noovo (CJPC-DT),CJPCDT.ca
 NordesTV,NordesTV.br
 North Coast Create (KEET-DT3),KEET3.us
+Nostalgia,Nostalgia.bg
 NousTV,NousTV.ca
 Nova,Nova.cz
 Nova,Nova.es
 Nova 2,Nova2.cz
+Nova 24 TV,Nova24TV.si
 Nova Action,NovaAction.cz
+Nova BH,NovaBH.rs
 Nova Cinema,NovaCinema.cz
 Nova Gold,NovaGold.cz
 Nova International,NovaInternational.cz
+Nova M,NovaM.rs
+Nova News,NovaNews.bg
 Nova Pula,NovaPula.cz
+Nova S,NovaS.rs
+Nova Sport,NovaSport.bg
+Nova Sport,NovaSport.rs
 Nova Sport 1,NovaSport1.cz
 Nova Sport 2,NovaSport2.cz
 Nova TV,NovaTV.hr
+Nova TV,NovaTV.bg
 Nova World,NovaWorld.hr
 Nove,Nove.it
 Novela TV,NovelaTV.pl
 Novelas TV,NovelasTV.fr
+Novosadska TV,NovosadskaTV.rs
+Now 70s,Now70s.uk
 Now 80's,Now80s.uk
+Now 80s,Now80s.uk
+Now 90s,Now90s.uk
 Nowa TV,NowaTV.pl
 NPO 1,NPO1.nl
 NPO 2,NPO2.nl
@@ -5320,21 +5763,29 @@ NTD TV (WWTD-DT4),WWTDLD4.us
 NTL Radomsko,NTLRadomsko.pl
 NTV,NTV.tr
 NTV,NTV.bd
+NTV 101,NTV101.ba
+NTV Amna,NTVAmna.ba
+NTV IC,NTVIC.ba
+NTV Jasmin,NTVJasmin.ba
 NTV7,NTV7.my
 Nuestra Vision (KPVM-DT4),KPVMLD4.us
 Nuestra Vision (W21AU),W21AU.us
 Nuestra Visión (KFPB),KFPBLD.us
 Nueve,Nueve.mx
+Number 1 Türk,Number1Turk.tr
 Nusantara TV,NusantaraTV.id
+Nuta TV,NutaTV.pl
 Nuta.TV,NutaTV.pl
 NYC Gov (WNYE-DT2),WNYETV2.us
 NYC Life (WNYE-DT1),WNYETV.us
 O Channel,OChannel.id
+O Kanal,OKanal.ba
 O-TV,OTV.ua
 O2 Info,O2Info.cz
 O2 TV Fotbal,O2TVFotbal.cz
 O2 TV Sport,O2TVSport.cz
 O2 TV Tenis,O2TVTenis.cz
+OBN,OBN.ba
 Obozrevatel TV,ObozrevatelTV.ua
 Ocean TV,OceanTV.ru
 OCS Choc,OCSChoc.fr
@@ -5353,6 +5804,7 @@ Off Air (WRCF-DT4),WRCFCD4.us
 Oh!K,OhK.us
 OIK TV,OIKTV.cz
 Oireachtas TV,OireachtasTV.ie
+OK TV,OKTV.id
 Oldie Goldie (WANN-CD5),WANNCD5.us
 OLN,OLN.ca
 OLTV,OLTV.fr
@@ -5369,7 +5821,8 @@ OMNI.1 (CFMT-DT-2),CFMTDT2.ca
 OMNI.2,OMNI2.ca
 OMNI.2 (CJMT-DT-1),CJMTDT1.ca
 OMNI.2 (CJMT-DT-2),CJMTDT2.ca
-On-TV,OnTV.al
+On Drama,OnDrama.eg
+On E,OnE.eg
 Onda Algeciras Televisión,OndaAlgecirasTelevision.es
 One,One.in
 One,One.de
@@ -5398,8 +5851,23 @@ ORF Sport +,ORFSportPlus.at
 Orizont TV,OrizontTV.ro
 OShop,OShop.id
 Osjecka TV,OsjeckaTV.hr
+Osječka TV,OsjeckaTV.hr
+OSM TV,OSMTV.ba
+OSN Action,OSNAction.ae
+OSN Comedy,OSNComedy.ae
+OSN Enigma,OSNEnigma.ae
+OSN Family,OSNFamily.ae
+OSN Kids,OSNKids.ae
+OSN Movies,OSNMovies.ae
+OSN Movies First +2,OSNMoviesFirstPlus2.ae
+OSN Series,OSNSeries.ae
+OSN Series First,OSNSeriesFirst.ae
 OSN Ya Hala,OSNYaHala.ae
+OSN Ya Hala Al Oula,OSNYaHalaAlOula.ae
+OSN Ya Hala Cinema,OSNYaHalaCinema.ae
+Oto,Oto.si
 OTV,OTV.hr
+OTV Valentino,OTVValentino.ba
 Outdoor Channel,OutdoorChannel.us
 OuterMax East,OuterMaxEast.us
 OuterMax West,OuterMaxWest.us
@@ -5417,6 +5885,7 @@ Pac-12 Oregon,Pac12Oregon.us
 Pac-12 Washington,Pac12Washington.us
 PalmarèsADISQ par Stingray,PalmaresADISQparStingray.ca
 Panamericana TV,PanamericanaTV.pe
+Paramount Channel España,ParamountChannelEspana.us
 Paramount Channel France,ParamountChannelFrance.us
 Paramount Channel Polska,ParamountChannelPolska.us
 Paramount Channel Russia,ParamountChannelRussia.us
@@ -5427,6 +5896,7 @@ Paramount Network Czechia,ParamountNetworkCzechia.us
 Paramount Network East,ParamountNetworkEast.us
 Paramount Network España,ParamountNetworkEspana.us
 Paramount Network Finland,ParamountNetworkFinland.us
+Paramount Network Hungary,ParamountNetworkHungary.us
 Paramount Network Italia,ParamountNetworkItalia.us
 Paramount Network UK,ParamountNetworkUK.us
 Paramount Network West,ParamountNetworkWest.us
@@ -5821,7 +6291,6 @@ PBS12 (K48MN-D),K48MND.us
 PBS12 (KBDI),KBDITV.us
 PBS39 Extra (WYBE),WYBE.us
 PCNTV,PCNTV.us
-Peace TV English,PeaceTVEnglish.ae
 Peace TV English,PeaceTV.ae
 Peace TV English (KTAV-LD6),KTAVLD6.us
 Peace TV English (W16CC-D4),W16CCD4.us
@@ -5836,20 +6305,80 @@ Penthouse TV Canada,PenthouseTVCanada.us
 Perú Mágico,PeruMagico.pe
 Pesca,Pesca.it
 Pets.TV,PetsTV.us
+PeTV,PeTV.si
 Phoenix,Phoenix.de
 Phoenix Chinese Channel,PhoenixChineseChannel.hk
 Phoenix CNE,PhoenixCNE.hk
 Phoenix InfoNews Channel,PhoenixInfoNewsChannel.hk
 Pick,Pick.uk
 Pick UK,PickUK.uk
+Pickbox TV,PickboxTV.hr
+Pikaboo,Pikaboo.hr
+Pikaboo,Pikaboo.al
+Pikaboo 2,Pikaboo2.al
+Pink,Pink.rs
+Pink Action,PinkAction.rs
+Pink BH,PinkBH.rs
+Pink Classic,PinkClassic.rs
+Pink Comedy,PinkComedy.rs
+Pink Crime & Mystery,PinkCrimeMystery.rs
+Pink Erotic 1,PinkErotic1.rs
+Pink Erotic 2,PinkErotic2.rs
+Pink Erotic 3,PinkErotic3.rs
+Pink Erotic 4,PinkErotic4.rs
+Pink Erotic 5,PinkErotic5.rs
+Pink Erotic 6,PinkErotic6.rs
+Pink Erotic 7,PinkErotic7.rs
+Pink Erotic 8,PinkErotic8.rs
+Pink Extra,PinkExtra.rs
+Pink Family,PinkFamily.rs
+Pink Fashion,PinkFashion.rs
+Pink Film,PinkFilm.rs
+Pink Folk 1,PinkFolk1.rs
+Pink Folk 2,PinkFolk2.rs
+Pink Hits,PinkHits.rs
+Pink Horror,PinkHorror.rs
+Pink Kids,PinkKids.rs
+Pink Koncert,PinkKoncert.rs
+Pink Kuvar,PinkKuvar.rs
+Pink M,PinkM.rs
+Pink Movies,PinkMovies.rs
+Pink Music,PinkMusic.rs
+Pink Music 2,PinkMusic2.rs
+Pink n Roll,PinknRoll.rs
+Pink Parada,PinkParada.rs
+Pink Pedia,PinkPedia.rs
+Pink Plus,PinkPlus.rs
+Pink Premium,PinkPremium.rs
+Pink Reality,PinkReality.rs
+Pink Romance,PinkRomance.rs
+Pink Sci-Fi & Fantasy,PinkSciFiFantasy.rs
+Pink Serije,PinkSerije.rs
+Pink Show,PinkShow.rs
+Pink Soap,PinkSoap.rs
+Pink Srbija,PinkSrbija.rs
+Pink Style,PinkStyle.rs
+Pink Super Kids,PinkSuperKids.rs
+Pink Thriller,PinkThriller.rs
+Pink Timeout,PinkTimeout.rs
 Pink TV,PinkTV.fr
+Pink Western,PinkWestern.rs
+Pink World,PinkWorld.rs
+Pink World Cinema,PinkWorldCinema.rs
+Pink Zabava,PinkZabava.rs
 Piwi+,PiwiPlus.fr
 PixL TV,PixLTV.us
 PixL TV en Espanol,PixLTVenEspanol.us
+Planet 2,Planet2.si
+Planet Earth,PlanetEarth.bg
+Planet TV,PlanetTV.si
+Planeta Folk,PlanetaFolk.bg
+Planeta TV,PlanetaTV.bg
 Planete+ Polska,PlanetePlusPolska.fr
 Planète+,PlanetePlus.fr
 Planète+ Aventure Experience,PlanetePlusAventureExperience.fr
 Planète+ Crime Investigation,PlanetePlusCrimeInvestigation.fr
+Plava televizija,Plavatelevizija.hr
 Plava Vinkovačka,PlavaVinkovacka.hr
 Play4,Play4.be
 Play5,Play5.be
@@ -5859,14 +6388,17 @@ Playboy TV Latin America,PlayboyTVLatinAmerica.us
 Playboy TV USA,PlayboyTVUSA.us
 Playmen TV,PlaymenTV.ca
 PlayTV,PlayTV.br
+Plovdivska Pravoslavna TV,PlovdivskaPravoslavnaTV.bg
 Plug RTL,PlugRTL.be
 Polar+,PolarPlus.fr
+Poljoprivredna TV,PoljoprivrednaTV.hr
 Polo TV,PoloTV.pl
 Polonia 1,Polonia1.pl
 Polsat,Polsat.pl
 Polsat 1,Polsat1.pl
 Polsat 2,Polsat2.pl
 Polsat Café,PolsatCafe.pl
+Polsat Comedy Central Extra,PolsatComedyCentralExtra.us
 Polsat Doku,PolsatDoku.pl
 Polsat Film,PolsatFilm.pl
 Polsat Games,PolsatGames.pl
@@ -5893,6 +6425,8 @@ Polsat Viasat Nature,PolsatViasatNature.se
 Ponto Jus,PontoJus.br
 Pop,Pop.uk
 Pop East,PopEast.us
+Pop Max,PopMax.uk
+Pop TV,PopTV.si
 Pop West,PopWest.us
 Popular TV Región de Murcia,PopularTVRegiondeMurcia.es
 Pornhub TV,PornhubTV.us
@@ -5914,6 +6448,8 @@ Positiv (WTBY-TV4),WTBYTV4.us
 Positiv (WTCE-DT3),WTCETV3.us
 Positiv (WTJP-DT5),WTJPTV5.us
 Power TV,PowerTV.pl
+Power TV,PowerTV.tr
+Power Türk TV,PowerTurkTV.tr
 Praha TV,PrahaTV.cz
 Premier Sport,PremierSport.sk
 Premiere 10,Premiere10.br
@@ -5942,6 +6478,7 @@ Prima Max,PrimaMax.cz
 Prima Plus,PrimaPlus.cz
 Prima TV,PrimaTV.ro
 Prima Zoom,PrimaZoom.cz
+Prime,Prime.hu
 Prime Asia TV,PrimeAsiaTV.ca
 Prime Box Brazil,PrimeBoxBrazil.br
 Prime Time,PrimeTime.ua
@@ -5955,14 +6492,25 @@ Pro TV Internacional,ProTVInternacional.ro
 Pro X,ProX.ro
 Profit.ro,Profitro.ro
 ProSieben Deutschland,ProSiebenDeutschland.de
+ProSieben Fun,ProSiebenFun.de
 ProSieben Maxx Deutschland,ProSiebenMaxxDeutschland.de
 ProSiebenSat.1 Welt,ProSiebenSat1Welt.de
 Proximus 11,Proximus11.be
+Prva Files,PrvaFiles.rs
+Prva Kick,PrvaKick.rs
+Prva Life,PrvaLife.rs
+Prva Max,PrvaMax.rs
+Prva Plus,PrvaPlus.rs
+Prva Srpska TV,PrvaSrpskaTV.rs
+Prva TV Crna Gora,PrvaTVCrnaGora.rs
+Prva World,PrvaWorld.rs
 PTC Punjabi,PTCPunjabi.in
 Publika TV,PublikaTV.md
 PUC TV Goiás,PUCTVGoias.br
 Puls 2,Puls2.pl
 Puls 4,Puls4.at
+Puls Acht,PulsAcht.ch
+Pulse 4,Pulse4.at
 Pursuit Channel,PursuitChannel.us
 Pursuit Channel (WGUD-DT2),WGUDLD2.us
 Q Polska,QPolska.pl
@@ -6064,6 +6612,7 @@ QVC Beauty,QVCBeauty.us
 QVC Deutschland,QVCDeutschland.us
 QVC Italia,QVCItalia.us
 QVC Style,QVCStyle.us
+QVC Style Deutschland,QVCStyleDeutschland.us
 QVC UK,QVCUK.us
 QVC US,QVCUS.us
 QVC Zwei,QVCZwei.us
@@ -6081,6 +6630,7 @@ QVC3,QVC3.us
 R1,R1.ru
 Racing TV,RacingTV.uk
 Racing.com,Racingcom.au
+Radio Bremen Fernsehen,RadioBremenFernsehen.de
 Radio Italia TV,RadioItaliaTV.it
 Radio Monte Carlo,RadioMonteCarlo.it
 Radiofreccia,Radiofreccia.it
@@ -6089,6 +6639,7 @@ Radyo Viva,RadyoViva.tr
 Rai 1,Rai1.it
 Rai 2,Rai2.it
 Rai 3,Rai3.it
+Rai 3 Bis,Rai3Bis.it
 Rai 4,Rai4.it
 Rai 5,Rai5.it
 Rai Gulp,RaiGulp.it
@@ -6096,12 +6647,14 @@ Rai Italia Nord America,RaiItaliaNordAmerica.it
 Rai Movie,RaiMovie.it
 Rai News 24,RaiNews24.it
 Rai Premium,RaiPremium.it
+Rai Scuola,RaiScuola.it
 Rai Sport,RaiSport.it
 Rai Sport 1,RaiSport1.it
 Rai Sport 2,RaiSport2.it
 Rai Storia,RaiStoria.it
 Rai World Premium,RaiWorldPremium.it
 Rai Yoyo,RaiYoyo.it
+Ras TV,RasTV.rs
 Rawal TV,RawalTV.ca
 RBA TV,RBATV.br
 RBB Berlin,RBBBerlin.de
@@ -6146,6 +6699,7 @@ Record TV Tocantins,RecordTVTocantins.br
 Red Bull TV,RedBullTV.at
 Red Carpet TV,RedCarpetTV.pl
 Red Hot TV,RedHotTV.ca
+Red TV,RedTV.rs
 Red Uno,RedUno.bo
 Rede 21,Rede21.br
 Rede Amazônica,RedeAmazonica.br
@@ -6198,6 +6752,7 @@ Regiony+,RegionyPlus.cz
 Regionální TV,RegionalniTV.cz
 Relax,Relax.cz
 REN TV Baltic,RENTVBaltic.ru
+Report TV,ReportTV.al
 Rete 4,Rete4.it
 Retro Music TV,RetroMusicTV.cz
 Retro TV,RetroTV.us
@@ -6253,6 +6808,7 @@ Rev'n (WNYX-LD4),WNYXLD4.us
 Rev'n (WOOT-DT3),WOOTLD3.us
 Rev'n (WQXT-CD5),WQXTCD5.us
 Rev'n (WSWF-DT1),WSWFLD.us
+Revelation TV,RevelationTV.uk
 Revenue Frontier,RevenueFrontier.us
 Revenue Frontier (KFMS-LD4),KFMSLD4.us
 Revenue Frontier (KHSC-DT3),KHSCLP3.us
@@ -6274,6 +6830,7 @@ RIC TV Curitiba,RICTVCuritiba.br
 RIC TV Florianópolis,RICTVFlorianopolis.br
 Ride TV,RideTV.us
 Right Now TV (KVHF-LD2),KVHFLD2.us
+Ring TV,RingTV.sk
 RIT,RIT.br
 RMC Découverte,RMCDecouverte.fr
 RMC Sport 1,RMCSport1.fr
@@ -6291,6 +6848,7 @@ RMC Sport Live 7,RMCSportLive7.fr
 RMC Sport Live 8,RMCSportLive8.fr
 RMC Sport Live 9,RMCSportLive9.fr
 RMC Story,RMCStory.fr
+RNF,RNF.de
 RNN (WRNN),WRNNTV.us
 Rock TV,RockTV.ro
 Roma TV,RomaTV.it
@@ -6303,13 +6861,18 @@ Rotana Aflam,RotanaAflam.sa
 Rotana Cinema,RotanaCinema.sa
 Rotana Classic,RotanaClassic.sa
 Rotana Clip,RotanaClip.sa
+Rotana Comedy,RotanaComedy.sa
 Rotana Drama,RotanaDrama.sa
+Rotana Khalejia,RotanaKhalejia.sa
 Rotana Khalijia,RotanaKhalijia.sa
+Roya TV,RoyaTV.jo
 RPC Curitiba,RPCCuritiba.br
 RPC Foz do Iguaçu,RPCFozdoIguacu.br
 RPC Maringá,RPCMaringa.br
 RPC Paranavaí,RPCParanavai.br
 RPC Ponta Grossa,RPCPontaGrossa.br
+RSI La 1,RSILa1.ch
+RSI La 2,RSILa2.ch
 RT,RT.ru
 RT America,RTAmerica.ru
 RT America (K31CT-DT8),K31CT8.us
@@ -6324,6 +6887,7 @@ RTG HD,RTGHD.ru
 RTG International,RTGInternational.ru
 RTG TV,RTGTV.ru
 RTi,RTi.ua
+RTK 1,RTK1.rs
 RTL 102.5,RTL1025.it
 RTL 2 Hrvatska,RTL2Hrvatska.de
 RTL 4,RTL4.nl
@@ -6332,20 +6896,25 @@ RTL 9,RTL9.lu
 RTL Adria Hrvatska,RTLAdriaHrvatska.de
 RTL Crime Deutschland,RTLCrimeDeutschland.de
 RTL Crime Hrvatska,RTLCrimeHrvatska.de
+RTL Croatia World,RTLCroatiaWorld.de
 RTL Deutschland,RTLDeutschland.de
 RTL Gold,RTLGold.hu
 RTL Hrvatska,RTLHrvatska.de
 RTL II,RTLII.hu
 RTL Klub,RTLKlub.hu
+RTL Kockica,RTLKockica.de
 RTL Kockica Hrvatska,RTLKockicaHrvatska.de
 RTL Living Deutschland,RTLLivingDeutschland.de
 RTL Living Hrvatska,RTLLivingHrvatska.de
 RTL Passion Deutschland,RTLPassionDeutschland.de
 RTL Passion Hrvatska,RTLPassionHrvatska.de
+RTL Plus,RTLPlus.de
 RTL TVI,RTLTVI.be
 RTL Télévision,RTLTelevision.lu
+RTL Zwei Austria,RTLZweiAustria.de
 RTL Zwei Deutschland,RTLZweiDeutschland.de
 RTL+,RTLPlus.hu
+RTL+,RTLPlus.de
 RTM,RTM.cz
 RTM+ Liberecko,RTMPlusLiberecko.cz
 RTP,RTP.bo
@@ -6358,30 +6927,50 @@ RTP África,RTPAfrica.pt
 RTP1,RTP1.pt
 RTP2,RTP2.pt
 RTP3,RTP3.pt
+RTS 1,RTS1.rs
 RTS 1,RTS1.ch
+RTS 2,RTS2.rs
 RTS 2,RTS2.ch
+RTS 3,RTS3.rs
 RTS Deux,RTSDeux.ch
+RTS Svet,RTSSvet.rs
 RTS Un,RTSUn.ch
 RTSH 1,RTSH1.al
 RTSH 2,RTSH2.al
+RTSH 24,RTSH24.al
 RTSH 3,RTSH3.al
-RTSH Agro,RTSHAgro.al
-RTSH Femije,RTSHFemije.al
 RTSH Film,RTSHFilm.al
-RTSH Korca,RTSHKorca.al
-RTSH Muzikë,RTSHMuzike.al
+RTSH Gjirokastra,RTSHGjirokastra.al
 RTSH Plus,RTSHPlus.al
+RTSH Sat,RTSHSat.al
 RTSH Shkolle,RTSHShkolle.al
 RTSH Shqip,RTSHShqip.al
 RTSH Sport,RTSHSport.al
 RTV,RTV.id
+RTV 1,RTV1.rs
+RTV 2,RTV2.rs
+RTV Budva,RTVBudva.me
+RTV Goražde,RTVGorazde.ba
+RTV HB,RTVHB.ba
+RTV HIT,RTVHIT.ba
+RTV Pančevo,RTVPancevo.rs
+RTV Slobomir,RTVSlobomir.ba
+RTV Slon,RTVSlon.ba
+RTV Sreće,RTVSrece.rs
+RTV USK,RTVUSK.ba
+RTV Vikom,RTVVikom.ba
+RTV Visoko,RTVVisoko.ba
+RTV Vogošća,RTVVogosca.ba
+RTV Zenica,RTVZenica.ba
 RTV21,RTV21.rs
+RTV7,RTV7.ba
 RTVi Canada,RTViCanada.ru
 RTVi Europe,RTViEurope.ru
 RTVi Retro,RTViRetro.ru
 RTVi USA,RTViUSA.ru
 RTVS 1,RTVS1.sk
 RTVS 2,RTVS2.sk
+RTVTK,RTVTK.ba
 RTÉ News,RTENews.ie
 RTД,RTD.ru
 RU.TV,RUTV.ru
@@ -6389,17 +6978,30 @@ RugbyPass TV,RugbyPassTV.uk
 Russian Extreme,RussianExtreme.ru
 Russian Travel Guide,RussianTravelGuide.ru
 Rīga TV24,RigaTV24.lv
+S Sport,SSport.tr
+S Sport 2,SSport2.tr
+S1,S1.ch
+S4C,S4C.uk
+Sada El Balad,SadaElBalad.eg
+Sada El Balad 2,SadaElBalad2.eg
+Sada El Balad Drama,SadaElBaladDrama.eg
 Saint-Pierre et Miquelon la 1ère,SaintPierreetMiquelonla1ere.fr
 Saisons Canada,SaisonsCanada.ca
 Sale Network,SaleNetwork.us
 Salt + Light TV,SaltPlusLightTV.ca
+Sama Dubai,SamaDubai.ae
+Sama TV,SamaTV.sy
+Samobor TV,SamoborTV.hr
 San Marino RTV,SanMarinoRTV.sm
 Sangat Television,SangatTelevision.uk
 Saskatchewan Legislative Network,SaskatchewanLegislativeNetwork.ca
+Sat TV,SatTV.rs
 Sat.1 Deutschland,Sat1Deutschland.de
 Sat.1 Emotions,Sat1Emotions.de
 Sat.1 Gold Deutschland,Sat1GoldDeutschland.de
+Saudi TV,SaudiTV.sa
 Savoir média,Savoirmedia.ca
+SBC,SBC.sa
 SBN International,SBNInternational.us
 SBS,SBS.kr
 SBS (KSCI-DT2),KSCI2.us
@@ -6426,16 +7028,20 @@ SBT TV Ponta Verde,SBTTVPontaVerde.br
 SBT Vitoria,SBTVitoria.br
 SBTN,SBTN.us
 SBTN (KDOC-DT5),KDOCTV5.us
+SBTV,SBTV.hr
+SchauTV,SchauTV.at
 Schlager TV,SchlagerTV.nl
 Sci Fi Polska,SciFiPolska.us
 Science,Science.us
 Science & Vie TV,ScienceVieTV.fr
 Science West,ScienceWest.us
+Scifi Srbija,ScifiSrbija.us
 ScreenPix,ScreenPix.us
 ScreenPix Action,ScreenPixAction.us
 ScreenPix Voices,ScreenPixVoices.us
 ScreenPix Westerns,ScreenPixWesterns.us
 SCTV,SCTV.id
+SEA Today,SEAToday.id
 Seasons,Seasons.fr
 SEC Network,SECNetwork.us
 SEC Network Alternate,SECNetworkAlternate.us
@@ -6448,11 +7054,14 @@ SET International,SETInternational.tw
 Setanta Sports 2 Eurasia,SetantaSports2Eurasia.ie
 Setanta Sports Eurasia,SetantaSportsEurasia.ie
 Setanta Sports Ukraine,SetantaSportsUkraine.ie
+Sevdah TV,SevdahTV.ba
 Seven,Seven.us
+Sexation TV,SexationTV.si
 Sextreme,Sextreme.br
 Sexy Hot,SexyHot.br
 SF-kanalen,SFkanalen.se
 SHANT Premium,SHANTPremium.am
+Sharjah TV,SharjahTV.ae
 Sheffield Live TV,SheffieldLiveTV.uk
 Shepherd's Chapel,ShepherdsChapel.us
 Shop LC,ShopLC.us
@@ -6491,6 +7100,7 @@ Shopping Quarter,ShoppingQuarter.uk
 Shot TV,ShotTV.ru
 Show Radyo,ShowRadyo.tr
 Show TV,ShowTV.tr
+Show Türk,ShowTurk.tr
 Showcase Canada,SHOW.ca
 Showtime 2 East,Showtime2East.us
 Showtime 2 West,Showtime2West.us
@@ -6516,12 +7126,28 @@ SIC Radical,SICRadical.pt
 SIC TV,SICTV.br
 Silver Screen Classics,SilverScreenClassics.ca
 Simon,Simon.ua
+Sinema 1001,Sinema1001.tr
+Sinema 1002,Sinema1002.tr
+Sinema 2,Sinema2.tr
+Sinema Aile,SinemaAile.tr
+Sinema Aile 2,SinemaAile2.tr
+Sinema Aksiyon,SinemaAksiyon.tr
+Sinema Aksiyon 2,SinemaAksiyon2.tr
+Sinema Komedi,SinemaKomedi.tr
+Sinema Komedi 2,SinemaKomedi2.tr
+Sinema TV,SinemaTV.tr
+Sinema Yerli,SinemaYerli.tr
+Sinema Yerli 2,SinemaYerli2.tr
+SIP TV,SIPTV.si
 Sirina TV,SirinaTV.gr
+Sitel TV,SitelTV.mk
+Sixx Austria,SixxAustria.de
 Sixx Deutschland,SixxDeutschland.de
 Sjuan,Sjuan.se
 Sky Arte,SkyArte.it
 Sky Arts,SkyArts.nz
 Sky Arts,SkyArts.uk
+Sky Arts UK,SkyArtsUK.uk
 Sky Atlantic,SkyAtlantic.it
 Sky Atlantic,SkyAtlantic.de
 Sky Atlantic +1,SkyAtlanticPlus1.it
@@ -6532,14 +7158,17 @@ Sky Cinema Action,SkyCinemaAction.it
 Sky Cinema Action,SkyCinemaAction.de
 Sky Cinema Action,SkyCinemaAction.uk
 Sky Cinema Bourne,SkyCinemaBourne.it
+Sky Cinema Collection,SkyCinemaCollection.it
 Sky Cinema Comedy,SkyCinemaComedy.it
 Sky Cinema Comedy,SkyCinemaComedy.de
+Sky Cinema Comedy,SkyCinemaComedy.uk
 Sky Cinema Drama,SkyCinemaDrama.it
 Sky Cinema Drama,SkyCinemaDrama.uk
 Sky Cinema Due,SkyCinemaDue.it
 Sky Cinema Due +24,SkyCinemaDuePlus24.it
 Sky Cinema Family,SkyCinemaFamily.it
 Sky Cinema Family,SkyCinemaFamily.uk
+Sky Cinema Family,SkyCinemaFamily.de
 Sky Cinema Greats,SkyCinemaGreats.uk
 Sky Cinema Hits,SkyCinemaHits.de
 Sky Cinema Hits,SkyCinemaHits.uk
@@ -6549,11 +7178,15 @@ Sky Cinema Romance,SkyCinemaRomance.it
 Sky Cinema Sci Fi & Horror,SkyCinemaSciFiHorror.uk
 Sky Cinema Select,SkyCinemaSelect.uk
 Sky Cinema Suspense,SkyCinemaSuspense.it
+Sky Cinema Thriller,SkyCinemaThriller.de
 Sky Cinema Uno,SkyCinemaUno.it
 Sky Cinema Uno +24,SkyCinemaUnoPlus24.it
 Sky Comedy UK,SkyComedyUK.uk
 Sky Crime,SkyCrime.uk
+Sky Documentaries UK,SkyDocumentariesUK.uk
 Sky Fußball Bundesliga,SkyFussballBundesliga.de
+Sky History,SkyHistory.us
+Sky History 2,SkyHistory2.us
 Sky History2,SkyHistory2.us
 Sky Krimi,SkyKrimi.de
 Sky Link TV,SkyLinkTV.us
@@ -6564,6 +7197,7 @@ Sky News HQ,SkyNewsHQ.uk
 Sky News International,SkyNewsInternational.uk
 Sky News UK,SkyNewsUK.uk
 Sky One,SkyOne.uk
+Sky One,SkyOne.de
 Sky One UK,SkyOneUK.uk
 Sky Primafila 1,SkyPrimafila1.it
 Sky Primafila 10,SkyPrimafila10.it
@@ -6593,8 +7227,11 @@ Sky Sport (257),SkySport257.it
 Sky Sport (258),SkySport258.it
 Sky Sport 1,SkySport1.de
 Sky Sport 2,SkySport2.de
+Sky Sport 2,SkySport2.it
 Sky Sport 24,SkySport24.it
+Sky Sport 3,SkySport3.it
 Sky Sport 36 America's Cup,SkySport36AmericasCup.it
+Sky Sport 9,SkySport9.it
 Sky Sport Arena,SkySportArena.it
 Sky Sport Austria,SkySportAustria.de
 Sky Sport Austria 1,SkySportAustria1.de
@@ -6609,18 +7246,22 @@ Sky Sport NBA,SkySportNBA.it
 Sky Sport News,SkySportNews.de
 Sky Sport Serie A,SkySportSerieA.it
 Sky Sport Uno,SkySportUno.it
+Sky Sports Arena,SkySportsArena.uk
 Sky Sports Cricket,SkySportsCricket.uk
 Sky Sports F1,SkySportsF1.uk
 Sky Sports Footbal,SkySportsFootbal.uk
 Sky Sports Golf,SkySportsGolf.uk
 Sky Sports Main Event,SkySportsMainEvent.uk
+Sky Sports Mix,SkySportsMix.uk
 Sky Sports News,SkySportsNews.uk
+Sky Sports News,SkySportsNews.de
 Sky Sports Premier League UK,SkySportsPremierLeagueUK.uk
 Sky TG24,SkyTG24.it
 Sky Uno,SkyUno.it
 Sky Uno +1,SkyUnoPlus1.it
 Sky Witness UK,SkyWitnessUK.uk
 Skylink TV 4 (KRON-DT2),KRONTV2.us
+Slavonska TV,SlavonskaTV.hr
 Slice,Slice.ca
 Slovácko,Slovacko.cz
 Slow Türk,SlowTurk.tr
@@ -6628,6 +7269,7 @@ Sláger TV,SlagerTV.hu
 Smart LifeStyle TV,SmartLifeStyleTV.us
 Smart Lifestyle TV (KPHE-DT5),KPHELD5.us
 Smart Lifestyle TV (KPHE-DT6),KPHELD6.us
+Smart TV,SmartTV.ba
 Smartzone,Smartzone.ee
 Smile (KTBN-DT5),KTBNTV5.us
 Smile TV,SmileTV.gr
@@ -6657,6 +7299,7 @@ Smithsonian Channel Latin America,SmithsonianChannelLatinAmerica.us
 Smithsonian Channel UK,SmithsonianChannelUK.us
 Smithsonian Channel West,SmithsonianChannelWest.us
 SNN (WSNN-LD),WSNNLD.us
+Soccer Channel,SoccerChannel.id
 Sochi Live HD,SochiLiveHD.ru
 Sol Música,SolMusica.es
 Somos,Somos.es
@@ -6699,7 +7342,9 @@ SonLife Broadcasting Network (WWTD-DT5),WWTDLD5.us
 SonLife Broadcasting Network (WYGA-DT2),WYGACD2.us
 SonLife Broadcasting Network (WZPA-LD3),WZPALD3.us
 Sonnenklar.TV,SonnenklarTV.de
+Sony AXN,SonyAXN.de
 Sony Channel Brasil,SonyChannelBrasil.us
+Sony Channel Deutschland,SonyChannelDeutschland.us
 Sony Channel Latinoamérica,SonyChannelLatinoamerica.us
 Sony Channel Russia,SonyChannelRussia.us
 Sony Channel UK,SonyChannelUK.us
@@ -6711,6 +7356,7 @@ Sony Movies,SonyMovies.us
 Sony Movies +1,SonyMoviesPlus1.us
 Sony Movies Action,SonyMoviesAction.us
 Sony Movies Classic,SonyMoviesClassic.us
+Sony Movies UK,SonyMoviesUK.us
 Sony SAB TV,SonySABTV.in
 Sony SAB TV (KBID-DT8),KBIDLP8.us
 Sony SAB TV USA,SonySABTVUSA.in
@@ -6731,13 +7377,40 @@ Spektrum,Spektrum.hu
 Spektrum Home,SpektrumHome.hu
 Speranta TV,SperantaTV.us
 Spiegel Geschichte,SpiegelGeschichte.de
+Spiegel TV Wissen,SpiegelTVWissen.de
 Spike Italia,SpikeItalia.us
 Spike Россия,SpikeRossiya.us
+Spor Smart,SporSmart.tr
+Spor Smart 2,SporSmart2.tr
 Sport 1,Sport1.de
+Sport 1 Hungary,Sport1Hungary.hu
 Sport 1+,Sport1Plus.de
+Sport 2 Hungary,Sport2Hungary.hu
 Sport 5,Sport5.cz
 Sport Extra,SportExtra.ro
+Sport Klub 1 BiH,SportKlub1BiH.hu
+Sport Klub 1 Crna Gora,SportKlub1CrnaGora.hu
+Sport Klub 1 Hrvatska,SportKlub1Hrvatska.hu
+Sport Klub 1 Slovenija,SportKlub1Slovenija.hu
+Sport Klub 1 Srbija,SportKlub1Srbija.hu
+Sport Klub 10,SportKlub10.hu
+Sport Klub 2 Slovenija,SportKlub2Slovenija.hu
+Sport Klub 2 Srbija,SportKlub2Srbija.hu
+Sport Klub 3,SportKlub3.hu
+Sport Klub 4,SportKlub4.hu
+Sport Klub 5,SportKlub5.hu
+Sport Klub 6,SportKlub6.hu
+Sport Klub 7,SportKlub7.hu
+Sport Klub 8,SportKlub8.hu
+Sport Klub 9,SportKlub9.hu
+Sport Klub Esports,SportKlubEsports.hu
+Sport Klub Golf,SportKlubGolf.hu
+Sport Klub HD,SportKlubHD.hu
 Sport Klub Polska,SportKlubPolska.hu
+Sport Klub Start,SportKlubStart.hu
+Sport TV 1,SportTV1.pt
+Sport TV 2,SportTV2.pt
+Sport+ HD,SportPlusHD.bg
 Sport.TV+,SportTVPlus.pt
 Sport.TV1,SportTV1.pt
 Sport.TV2,SportTV2.pt
@@ -6748,11 +7421,13 @@ Sport1,Sport1.de
 Sport1,Sport1.lt
 Sport1 Czechia,Sport1Czechia.hu
 Sport1 Hungary,Sport1Hungary.hu
+Sport1+,Sport1Plus.de
 Sport2 Czechia,Sport2Czechia.hu
 Sport2 Hungary,Sport2Hungary.hu
 Sportacentrs.com,Sportacentrscom.lv
 Sportdigital,Sportdigital.de
 Sporting TV,SportingTV.pt
+Sportitalia,Sportitalia.it
 Sportsman Channel,SportsmanChannel.us
 Sportsman Channel Canada,SportsmanChannelCanada.us
 SportsMax,SportsMax.jm
@@ -6774,8 +7449,13 @@ SporTV 2,SporTV2.br
 SporTV 3,SporTV3.br
 Spotlight TV,SpotlightTV.uk
 Spreekanal,Spreekanal.de
+SPTV,SPTV.hr
+Spíler1 TV,Spiler1TV.hu
+Spíler2 TV,Spiler2TV.hu
 SR Fernsehen,SRFernsehen.de
+Sremska TV,SremskaTV.rs
 SRF 1,SRF1.ch
+SRF Info,SRFInfo.ch
 SRF zwei,SRFzwei.ch
 SSTN (KHIZ-LD6),KHIZLD6.us
 SSTN (KKYK),KKYKCD.us
@@ -6821,14 +7501,18 @@ Star Channel,StarChannel.gr
 Star Channel Brasil,StarChannelBrasil.us
 Star Channel Latin America,StarChannelLatinAmerica.us
 Star Chinese Channel,StarChineseChannel.hk
+Star Chinese Movies Legend,StarChineseMoviesLegend.hk
+Star Chinese Movies South East Asia,StarChineseMoviesSouthEastAsia.hk
 Star Cinema,StarCinema.ua
 Star Family,StarFamily.ua
 Star Hits 2 Brasil,StarHits2Brasil.us
 Star Hits Brasil,StarHitsBrasil.us
 Star Life Brasil,StarLifeBrasil.us
 Star Life Latin,StarLifeLatin.us
+Star Movies Middle East,StarMoviesMiddleEast.hk
 Star TV,StarTV.tr
 Star Vijay Malaysia,StarVijayMalaysia.hk
+Star World Middle East,StarWorldMiddleEast.hk
 Star Κεντρικής Ελλάδας,StarKentrikisElladas.gr
 Stars TV,StarsTV.pl
 Start TV,StartTV.us
@@ -6900,6 +7584,7 @@ Starz In Black West,StarzInBlackWest.us
 Starz Kids & Family East,StarzKidsFamilyEast.us
 Starz Kids & Family West,StarzKidsFamilyWest.us
 Starz West,StarzWest.us
+Stinet,Stinet.al
 Stingray Adult Alternative,StingrayAdultAlternative.ca
 Stingray All Day Party!,StingrayAllDayParty.ca
 Stingray Alt Country Americana,StingrayAltCountryAmericana.ca
@@ -6999,19 +7684,21 @@ Stingray Treehouse,StingrayTreehouse.ca
 Stingray Urban Beat,StingrayUrbanBeat.ca
 Stingray Vibe,StingrayVibe.ca
 Stingray Y2K,StingrayY2K.ca
-Stinët,Stinet.al
 Stopklatka,Stopklatka.pl
 Story4,Story4.hu
 Stredoslovenská Televízia,StredoslovenskaTelevizia.sk
+Studio B,StudioB.rs
 Studio Universal América Latina,StudioUniversalAmericaLatina.us
 Studio Universal Brasil,StudioUniversalBrasil.us
 StudioCanal,StudioCanal.fr
+STV East,STVEast.uk
 STV Folk,STVFolk.al
 Sub,Sub.fi
 Sun Music,SunMusic.in
 Sun TV,SunTV.in
 Sundance TV Brasil,SundanceTVBrasil.us
 Sundance TV East,SundanceTVEast.us
+Sundance TV Espana,SundanceTVEspana.us
 Sundance TV España,SundanceTVEspana.us
 Sundance TV Europe,SundanceTVEurope.us
 Sundance TV West,SundanceTVWest.us
@@ -7020,7 +7707,6 @@ Super Channel Heart & Home,SuperChannelHeartHome.ca
 Super Channel Vault,SuperChannelVault.ca
 Super Polsat,SuperPolsat.pl
 Super RTL Deutschland,SuperRTLDeutschland.de
-Super Sonic TV,SuperSonicTV.al
 Super TV2,SuperTV2.hu
 Super Écran 1,SuperEcran1.ca
 Super Écran 2,SuperEcran2.ca
@@ -7029,19 +7715,13 @@ Super Écran 4,SuperEcran4.ca
 Super!,Super.it
 Super3,Super3.es
 SuperOne,SuperOne.hu
-SuperSport 1,SuperSport1.al
-SuperSport 2,SuperSport2.al
-SuperSport 3,SuperSport3.al
-SuperSport 4,SuperSport4.al
-SuperSport 5,SuperSport5.al
-SuperSport 6,SuperSport6.al
-SuperSport Kosova 1,SuperSportKosova1.al
-SuperSport Kosova 2,SuperSportKosova2.al
-SuperSport Kosova 3,SuperSportKosova3.al
 Superstacja,Superstacja.pl
+Superstar 2,Superstar2.rs
+Superstar TV,SuperstarTV.rs
 SuperTennis,SuperTennis.it
 Superyacht TV,SuperyachtTV.mc
 Swagat TV,SwagatTV.us
+Swiss 1,Swiss1.ch
 SWR,SWR.de
 SWR Fernsehen,SWRFernsehen.de
 SWX Right Now (KHQ-DT2),KHQTV2.us
@@ -7053,10 +7733,11 @@ Syfy France,SyfyFrance.us
 Syfy Portugal,SyfyPortugal.us
 Syfy UK,SyfyUK.us
 Syfy West,SyfyWest.us
+Syria Drama,SyriaDrama.sy
+Syria TV,SyriaTV.tr
 Série Club,SerieClub.fr
 Séries Plus,SeriesPlus.ca
 T+E,TPlusE.ca
-T7,T7.rs
 TA-DAA!,TADAA.my
 TA3,TA3.sk
 Tagesschau24,Tagesschau24.de
@@ -7071,6 +7752,8 @@ Taraf TV,TarafTV.ro
 Taraftar,Taraftar.tr
 Taraftar 2,Taraftar2.tr
 Tarotéame,Taroteame.es
+Tawaf TV,TawafTV.id
+TAY TV,TAYTV.tr
 TBD TV (KAJB3),KAJB3.us
 TBD TV (KBCW-DT4),KBCW4.us
 TBD TV (KBFX-DT2),KBFXCD2.us
@@ -7144,8 +7827,11 @@ TCM Brasil,TCMBrasil.us
 TCM Canada,TCMCanada.us
 TCM Central & Eastern Europe,TCMCentralEasternEurope.us
 TCM Cinéma,TCMCinema.us
+TCM Espana,TCMEspana.us
 TCM España,TCMEspana.us
 TCM España +1,TCMEspanaPlus1.us
+TCM Middle East,TCMMiddleEast.us
+TCM Movies,TCMMovies.us
 TCM US,TCMUS.us
 TCT,TCT.us
 TCT (KAIL),KAIL.us
@@ -7173,6 +7859,7 @@ Teach,TEACH.us
 TeenNick East,TeenNickEast.us
 TeenNick România,TeenNickRomania.us
 TeenNick West,TeenNickWest.us
+Tele 1,Tele1.tr
 Tele 5,Tele5.de
 Tele 5,Tele5.pl
 Tele N,TeleN.us
@@ -7195,6 +7882,7 @@ Tele-Quebec (CIVQ),CIVS.ca
 Tele-Quebec (CIVS),CIVS.ca
 Tele-Quebec (CIVV),CIVV.ca
 Telebimbi,Telebimbi.ca
+TeleBärn,TeleBarn.ch
 Telecaribe,Telecaribe.co
 Teleceiba,Teleceiba.hn
 Telecentro,Telecentro.do
@@ -7205,6 +7893,12 @@ Telecine Fun,TelecineFun.br
 Telecine Pipoca,TelecinePipoca.br
 Telecine Premium,TelecinePremium.br
 Telecine Touch,TelecineTouch.br
+Teleclub Action,TeleclubAction.ch
+Teleclub Cinema,TeleclubCinema.ch
+Teleclub City,TeleclubCity.ch
+Teleclub Emotion,TeleclubEmotion.ch
+Teleclub Retro,TeleclubRetro.ch
+Teleclub Sport 1,TeleclubSport1.ch
 Teledeporte,Teledeporte.es
 TeleElx,TeleElx.es
 Telefe,Telefe.ar
@@ -7286,14 +7980,17 @@ Telemundo Oeste,TelemundoOeste.us
 TeleNiños,TeleNinos.ca
 Telepacifico,Telepacifico.co
 Teleritmo,Teleritmo.mx
-Telesport,Telesport.al
 teleSUR,teleSUR.ve
 teleSUR English,teleSUREnglish.ve
 teleTOON+ Polska,teleTOONPlusPolska.fr
 Teletrak,Teletrak.cl
+Teletutto,Teletutto.it
 Televisa (XEWT),XEW.us
 Televisión Dominicana,TelevisionDominicana.us
 TelevisiónCanaria,TelevisionCanaria.es
+Televizija 5,Televizija5.ba
+Televizija AS,TelevizijaAS.si
+Televizija Dalmacija,TelevizijaDalmacija.hr
 Telewizja 13,Telewizja13.pl
 Telewizja Pomerania,TelewizjaPomerania.pl
 TeleXitos,TeleXitos.us
@@ -7317,10 +8014,14 @@ TeleXitos (WSCV-DT2),WSCV2.us
 TeleXitos (WWDT-DT2),WWDTCD2.us
 TeleXitos (WWSI-DT2),WWSI2.us
 TeleXitos (WZDC-CD2),WZDC2.us
+TeleZüri,TeleZuri.ch
 Telly,Telly.cz
+Telma,Telma.mk
+TeN TV,TeNTV.eg
 TEN TV,TENTV.es
 Tennis Channel,TennisChannel.us
 Terra Viva,TerraViva.br
+Teve 2,Teve2.tr
 teve2,teve2.tr
 Teveo (WFUN-LD2),WFUNLD2.us
 TF1,TF1.fr
@@ -7355,6 +8056,7 @@ The Cowboy Channel,TheCowboyChannel.us
 The Cowboy Channel (WGUD-DT4),WGUDLD4.us
 The Cowboy Channel (WSFG-DT2),WSFGLD2.us
 The Cowboy Channel (WSSF-LD2),WSSFLD2.us
+The CW East,TheCWEast.us
 The Family Channel,TheFamilyChannel.us
 The Family Channel (K26CI-DT3),K26CID3.us
 The Family Channel (K32EY-DT4),K32EYD3.us
@@ -7397,6 +8099,7 @@ The Movie Channel West,TheMovieChannelWest.us
 The Movie Channel Xtra East,TheMovieChannelXtraEast.us
 The Movie Channel Xtra West,TheMovieChannelXtraWest.us
 The Rural Channel,TheRuralChannel.ca
+The Voice TV,TheVoiceTV.bg
 The Walk (KDEO-DT3),KDEOLD3.us
 The Walk (KDEO-DT6),KDEOLD6.us
 The Walk (KKPM-DT6),KKPMCD6.us
@@ -7428,6 +8131,7 @@ TheGrio (WSVN-DT2),WSVN2.us
 TheGrio (WTOG-DT3),WTOG3.us
 TheGrio (WTXF-DT3),WTXFTV3.us
 TheGrio (WVUA-CD2),WVUA2.us
+Thikrayat TV,ThikrayatTV.sa
 This TV,ThisTV.us
 This TV (K11LC-D4),K11LCD4.us
 This TV (K13AV),K13AVD5.us
@@ -7469,8 +8173,10 @@ This TV (WPGA-DT3),WPGATV3.us
 This TV (WSWF-DT4),WSWFLD4.us
 This TV (WVUA-CD),WVUA.us
 This TV (WVUA3),WVUA3.us
+Thrill,Thrill.hk
 ThrillerMax East,ThrillerMaxEast.us
 ThrillerMax West,ThrillerMaxWest.us
+Tiankov Folk,TiankovFolk.bg
 Tierra Mía TV,TierraMiaTV.ar
 Tiji,Tiji.fr
 Tiji Russia,TijiRussia.fr
@@ -7480,6 +8186,8 @@ Tip TV,TipTV.al
 Tipik,Tipik.be
 TJC,TJC.uk
 TJK TV,TJKTV.tr
+TLC Arabia,TLCArabia.us
+TLC Balkan,TLCBalkan.us
 TLC Brasil,TLCBrasil.us
 TLC Canada,TLCCanada.us
 TLC Czech,TLCCzech.us
@@ -7493,16 +8201,20 @@ TLC Russia,TLCRussia.us
 TLC Rômania,TLCRomania.us
 TLC Southeast Asia,TLCSoutheastAsia.us
 TLC Türkiye,TLCTurkiye.us
+TLC UK,TLCUK.us
 TLC West,TLCWest.us
 TLN,TLN.ca
 TLN en Espanol,TLNenEspanol.ca
 TLNovelas,TLNovelas.mx
 TMC,TMC.mc
+TMC Suisse,TMCSuisse.mc
 TNT América Latina,TNTAmericaLatina.us
 TNT Brasil,TNTBrasil.us
+TNT Comedy,TNTComedy.us
 TNT East,TNTEast.us
 TNT España,TNTEspana.us
 TNT Film,TNTFilm.us
+TNT Kids TV,TNTKidsTV.hr
 TNT Polska,TNTPolska.us
 TNT Romania,TNTRomania.us
 TNT Serie,TNTSerie.us
@@ -7512,7 +8224,9 @@ TNT West,TNTWest.us
 Today's Shopping Choice,TodaysShoppingChoice.ca
 Together TV,TogetherTV.uk
 Together TV +1,TogetherTVPlus1.uk
+Toggo Plus,ToggoPlus.de
 Toku,Toku.us
+Toon Kids,ToonKids.hr
 Toon-A-Vision,ToonAVision.ca
 Toonami France,ToonamiFrance.us
 Tooncast,Tooncast.us
@@ -7521,8 +8235,10 @@ Top Crime,TopCrime.it
 Top Kids,TopKids.pl
 Top Kids Jr,TopKidsJr.pl
 Top News,TopNews.al
+Top TV,TopTV.si
 Torino Channel,TorinoChannel.it
 Toros,Toros.es
+Toros TV,TorosTV.es
 Total Living Network (TLN),TLN.us
 Toute l'Histoire,ToutelHistoire.fr
 TPA,TPA.es
@@ -7534,14 +8250,15 @@ Trace Sport Stars,TraceSportStars.fr
 Trace Toca,TraceToca.fr
 Trace Tropical,TraceTropical.fr
 Trace Urban,TraceUrban.fr
-TRANS 7 HD,TRANS7HD.id
-TRANS TV HD,TRANSTVHD.id
+Trans 7,Trans7.id
+Trans TV,TransTV.id
 Travel Box Brazil,TravelBoxBrazil.br
 Travel Channel East,TravelChannelEast.us
 Travel Channel Europe,TravelChannelEurope.us
 Travel Channel Polska,TravelChannelPolska.us
 Travel Channel West,TravelChannelWest.us
 Travel Mix,TravelMix.ro
+Travel TV,TravelTV.bg
 Travel+Adventure,TravelPlusAdventure.us
 Travelxp 4K Europe,Travelxp4KEurope.in
 Travelxp 4K North America,Travelxp4KNorthAmerica.in
@@ -7550,15 +8267,16 @@ Travelxp HD North America,TravelxpHDNorthAmerica.in
 Trece,Trece.es
 Treehouse TV,TreehouseTV.ca
 Trek,Trek.fr
+Trend TV,TrendTV.hr
 Tri-Valley Community Television,TriValleyCommunityTelevision.us
 Tribuna Channel,TribunaChannel.xk
 Tring Action,TringAction.al
+Tring Classic,TringClassic.al
 Tring Comedy,TringComedy.al
 Tring Family,TringFamily.al
 Tring Fantasy,TringFantasy.al
 Tring History,TringHistory.al
 Tring International,TringInternational.al
-Tring Jolly,TringJolly.al
 Tring Kids,TringKids.al
 Tring Life,TringLife.al
 Tring Planet,TringPlanet.al
@@ -7567,14 +8285,14 @@ Tring Smile,TringSmile.al
 Tring Sport 1,TringSport1.al
 Tring Sport 2,TringSport2.al
 Tring Sport 3,TringSport3.al
-Tring Sport 4,TringSport4.al
-Tring Sport News,TringSportNews.al
+Tring Sport News HD,TringSportNewsHD.al
 Tring Super,TringSuper.al
 Tring Tring,TringTring.al
 Tring World,TringWorld.al
 Trinitas TV,TrinitasTV.ro
 TRM h24,TRMh24.it
 Trojka,Trojka.sk
+Tropik TV,TropikTV.ba
 TRT 1,TRT1.tr
 TRT 2,TRT2.tr
 TRT Arabi,TRTArabi.tr
@@ -7584,6 +8302,8 @@ TRT Haber,TRTHaber.tr
 TRT Kurdî,TRTKurdi.tr
 TRT Müzik,TRTMuzik.tr
 TRT Spor,TRTSpor.tr
+TRT Spor 2,TRTSpor2.tr
+TRT Turk,TRTTurk.tr
 TRT Türk,TRTTurk.tr
 TRT World,TRTWorld.tr
 TRT Çocuk,TRTCocuk.tr
@@ -7659,7 +8379,8 @@ TSN4,TSN4.ca
 TSN5,TSN5.ca
 TTV,TTV.pl
 TUDN Estados Unidos,TUDNEstadosUnidos.mx
-TV 21 Macedonia,TV21Macedonia.rs
+TV 2000,TV2000.va
+TV 4,TV4.pl
 TV 8,TV8.tr
 TV A Crítica,TVACritica.br
 TV Aldeia,TVAldeia.br
@@ -7679,6 +8400,7 @@ TV Aperipê,TVAperipe.br
 TV Apoio,TVApoio.br
 TV Arapuan,TVArapuan.br
 TV Aratu,TVAratu.br
+TV Arena,TVArena.si
 TV Assembleia Ceará,TVAssembleiaCeara.br
 TV Assembleia de Minas Gerais,TVAssembleiadeMinasGerais.br
 TV ASTA,TVASTA.pl
@@ -7686,6 +8408,7 @@ TV Atalaia,TVAtalaia.br
 TV Bahia,TVBahia.br
 TV Bandeirantes Maranhão,TVBandeirantesMaranhao.br
 TV Barrandov,TVBarrandov.cz
+TV Belle Amie,TVBelleAmie.rs
 TV Boa Vista,TVBoaVista.br
 TV Borborema,TVBorborema.br
 TV Brasil,TVBrasil.br
@@ -7718,18 +8441,24 @@ TV Cultura,TVCultura.br
 TV Cultura Educação,TVCulturaEducacao.br
 TV Culturas,TVCulturas.bo
 TV Câmara,TVCamara.br
+TV Dalmacija,TVDalmacija.hr
 TV Dami Skarżysko,TVDamiSkarzysko.pl
 TV Difusora São Luís,TVDifusoraSaoLuis.br
 TV Diário,TVDiario.br
 TV Doma,TVDoma.sk
+TV Duga+,TVDugaPlus.rs
+TV Edo,TVEdo.mk
 TV Educativa,TVEducativa.br
 TV Educativa da Bahia,TVEducativadaBahia.br
 TV Educativa de Porto Alegre,TVEducativadePortoAlegre.br
 TV Em Tempo,TVEmTempo.br
 TV Equinócio,TVEquinocio.br
 TV Escola,TVEscola.br
+TV Evropa,TVEvropa.bg
 TV Feliz,TVFeliz.br
 TV Finland,TVFinland.fi
+TV Galaksija 32,TVGalaksija32.rs
+TV Galeja,TVGaleja.si
 TV Gazeta,TVGazeta.br
 TV Gazeta Rio Branco,TVGazetaRioBranco.br
 TV Gazeta Sul,TVGazetaSul.br
@@ -7742,10 +8471,13 @@ TV Guará,TVGuara.br
 TV Guide,TVGuide.us
 TV Guide (KVHF-LD),KVHFLD.us
 TV Horizonte,TVHorizonte.br
+TV Hram,TVHram.rs
+TV Idea,TVIdea.si
 TV Iguaçu,TVIguacu.br
 TV Imperial,TVImperial.br
 TV Integração Uberlândia,TVIntegracaoUberlandia.br
 TV Interativa,TVInterativa.br
+TV Istra,TVIstra.hr
 TV Itararé,TVItarare.br
 TV Jadran,TVJadran.hr
 TV Jangadeiro,TVJangadeiro.br
@@ -7753,8 +8485,11 @@ TV Japan,TVJapan.us
 TV JOJ,TVJOJ.sk
 TV Jornal,TVJornal.br
 TV Justiça,TVJustica.br
+TV K23,TVK23.rs
+TV K3,TVK3.ba
+TV Kanal 25,TVKanal25.rs
 TV Klan,TVKlan.al
-TV Koha,TVKoha.al
+TV Koper-Capodistria,TVKoperCapodistria.si
 TV Kurzeme,TVKurzeme.lv
 TV Land East,TVLandEast.us
 TV Land West,TVLandWest.us
@@ -7767,6 +8502,7 @@ TV Maior,TVMaior.br
 TV Manaíra,TVManaira.br
 TV Mar Alagoas,TVMarAlagoas.br
 TV Maranhense,TVMaranhense.br
+TV Maribor,TVMaribor.si
 TV Mediterráneo,TVMediterraneo.es
 TV Meridional,TVMeridional.br
 TV Mirante São Luís,TVMiranteSaoLuis.br
@@ -7775,7 +8511,10 @@ TV MS,TVMS.br
 TV Mundial,TVMundial.br
 TV Natura,TVNatura.cz
 TV NBR,TVNBR.br
+TV Net,TVNet.tr
 TV Noe,TVNoe.cz
+TV Nova,TVNova.hr
+TV Novi Pazar,TVNoviPazar.rs
 TV Novo Tempo Brasil,TVNovoTempoBrasil.us
 TV Oberfranken,TVOberfranken.de
 TV Okazje,TVOkazje.pl
@@ -7804,10 +8543,12 @@ TV Republika,TVRepublika.pl
 TV RiK,TVRiK.sk
 TV Rio Branco,TVRioBranco.br
 TV Rio Sul,TVRioSul.br
+TV Rodina,TVRodina.bg
 TV Romana,TVRomana.sk
 TV Rondônia,TVRondonia.br
 TV Ružinov,TVRuzinov.sk
 TV Rá Tim Bum,TVRaTimBum.br
+TV Sabor,TVSabor.hr
 TV Santa Cruz,TVSantaCruz.br
 TV Senado,TVSenado.cl
 TV Sergipe,TVSergipe.br
@@ -7817,11 +8558,12 @@ TV Seznam,TVSeznam.cz
 TV Shenja,TVShenja.mk
 TV Slovenija 1,TVSlovenija1.si
 TV Slovenija 2,TVSlovenija2.si
+TV Slovenija 3,TVSlovenija3.si
+TV Sonce,TVSonce.mk
 TV SudEst National,TVSudEstNational.ro
 TV SudEst Regional,TVSudEstRegional.ro
 TV São Luís,TVSaoLuis.br
 TV Tambaú,TVTambau.br
-TV Tetova,TVTetova.mk
 TV Tours,TVTours.fr
 TV TOYA,TVTOYA.pl
 TV Tribuna,TVTribuna.br
@@ -7834,16 +8576,22 @@ TV União,TVUniao.br
 TV Vega,TVVega.sk
 TV Verdes Mares,TVVerdesMares.br
 TV Verdes Mares Cariri,TVVerdesMaresCariri.br
+TV Vijesti,TVVijesti.me
 TV Vitória,TVVitoria.br
 TV Východ,TVVychod.sk
 TV WAU,TVWAU.sk
 TV XXI,TVXXI.lv
+TV Zapad,TVZapad.hr
 TV Zemplín,TVZemplin.sk
+TV Šibenik,TVSibenik.hr
 TV Губерния,TVGuberniya.ru
+TV+,TVPlus.bg
 TV-4,TV4.ua
 tv.berlin,tvberlin.de
 TV1,TV1.my
+TV1,TV1.bg
 TV1,TV1.zm
+TV100,TV100.tr
 TV1000,TV1000.se
 TV1000 Action,TV1000Action.se
 TV1000 Action CEE,TV1000ActionCEE.se
@@ -7856,11 +8604,16 @@ TV1000 Русское кино,TV1000Russkoekino.se
 TV2,TV2.my
 TV2,TV2.hu
 TV2,TV2.zm
+TV2 Comedy,TV2Comedy.hu
+TV2 Kids,TV2Kids.hu
 TV2 Séf,TV2Sef.hu
 TV2000,TV2000.va
+TV24,TV24.ch
+TV25,TV25.ch
 TV3,TV3.my
 TV3,TV3.es
 TV3,TV3.lv
+TV3,TV3.si
 TV3,TV3.zm
 TV3 Film,TV3Film.lv
 TV3 Life,TV3Life.lv
@@ -7885,9 +8638,12 @@ TV6,TV6.pl
 TV6,TV6.lv
 TV7,TV7.sk
 TV7,TV7.fi
+TV7,TV7.al
 TV7 Bordeaux,TV7Bordeaux.fr
 TV8,TV8.it
+TV8,TV8.tr
 TV8 (K45IE-D),K45IED.us
+TV8.5,TV85.tr
 TV9,TV9.my
 TVA (CFCM),CFCM.ca
 TVA (CFEM),CFEM.ca
@@ -7927,6 +8683,12 @@ TVBS News,TVBSNews.tw
 TVBV,TVBV.us
 TVC,TVC.pl
 TVCG Sat,TVCGSat.me
+TVCG1,TVCG1.me
+TVCG2,TVCG2.me
+TVCine Action,TVCineAction.ru
+TVCine Edition,TVCineEdition.ru
+TVCine Emotion,TVCineEmotion.ru
+TVCine Top,TVCineTop.pt
 TVE,TVE.br
 TVE Bahia,TVEBahia.br
 TVE Internacional América,TVEInternacionalAmerica.es
@@ -7942,14 +8704,15 @@ TVI Internacional,TVIInternacional.pt
 TVI24,TVI24.pt
 TVK (Cambodian),TVK.us
 TVK2,TVK2.kr
-TVM2,TVM2.mk
 TVMChannel,TVMChannel.ru
 TVN,TVN.pl
 TVN,TVN.pa
 TVN 7,TVN7.pl
 TVN Fabuła,TVNFabula.pl
 tvN Movies,tvNMovies.kr
+tvN Movies Indonesia,tvNMoviesIndonesia.kr
 tvN Premium,tvNPremium.kr
+tvN Premium Indonesia,tvNPremiumIndonesia.kr
 TVN Style,TVNStyle.pl
 TVN Turbo,TVNTurbo.pl
 TVN24,TVN24.pl
@@ -7965,12 +8728,17 @@ TVO (CICO-DT-53),CICODT53.ca
 TVO (CICO-DT-59),CICODT59.ca
 TVO (CICO-DT-9),CICODT9.ca
 TVO (CICO-DT-92),CICODT92.ca
+tvOne,tvOne.id
+TVP 1,TVP1.pl
+TVP 2,TVP2.pl
+TVP 3 Warszawa,TVP3Warszawa.pl
 TVP ABC,TVPABC.pl
 TVP HD,TVPHD.pl
 TVP Historia,TVPHistoria.pl
 TVP Info,TVPInfo.pl
 TVP Kultura,TVPKultura.pl
 TVP Polonia,TVPPolonia.pl
+TVP Regionalna,TVPRegionalna.pl
 TVP Rozrywka,TVPRozrywka.pl
 TVP Seriale,TVPSeriale.pl
 TVP Sport,TVPSport.pl
@@ -7995,6 +8763,7 @@ TVP3 Warszawa,TVP3Warszawa.pl
 TVP3 Wrocław,TVP3Wroclaw.pl
 TVP3 Łódź,TVP3Lodz.pl
 TVR,TVR.fr
+TVR,TVR.pl
 TVR 1,TVR1.ro
 TVR 2,TVR2.ro
 TVR 3,TVR3.ro
@@ -8008,6 +8777,7 @@ TVR Târgu Mureș,TVRTarguMures.ro
 TVRI Nasional,TVRINasional.id
 TVS,TVS.my
 TVS,TVS.pl
+TVSA,TVSA.ba
 TVSUD Montpellier,TVSUDMontpellier.fr
 TVSUD Nimes,TVSUDNimes.fr
 TVT,TVT.pl
@@ -8035,6 +8805,7 @@ Twist (WTLV-DT5),WTLV5.us
 Twist (WUSA-DT4),WUSA4.us
 Twoja Telewizja Morska,TwojaTelewizjaMorska.pl
 Twoja.TV,TwojaTV.pl
+TWR United Kingdom,TWRUnitedKingdom.us
 TyC Sports,TyCSports.ar
 téléGrenoble Isère,teleGrenobleIsere.fr
 TéléMag,TeleMag.ca
@@ -8199,7 +8970,11 @@ USArmenia TV (KIIO-LD),KIIOLD.us
 USArmenia TV (KNET-DT12),KNETCD12.us
 USArmenia TV (KNLA-DT5),KNLACD5.us
 Ushuaïa TV,UshuaiaTV.fr
+UTV,UTV.iq
 UTV,UTV.ro
+UTV,UTV.uk
+UTV News,UTVNews.al
+Uçankuş TV,UcankusTV.tr
 V Film Action,VFilmAction.se
 V Film Family,VFilmFamily.se
 V Film Hits,VFilmHits.se
@@ -8212,13 +8987,20 @@ V Sport Jalkapallo,VSportJalkapallo.se
 V Sport Jääkiekko,VSportJaakiekko.se
 V1,V1.cz
 Valea Prahovei TV,ValeaPrahoveiTV.ro
+Valentino Etno,ValentinoEtno.ba
+Valentino Music,ValentinoMusic.ba
 Valu,Valu.us
+Varaždinska TV,VarazdinskaTV.hr
+Vavoom,Vavoom.ch
+Vavoom,Vavoom.rs
+Vaš kanal,Vaskanal.si
 VBS (KFUL-DT6),KFULLP6.us
 VBS (KJLA-DT6),KJLA6.us
 Ve Plus TV,VePlusTV.ve
 Venevisión Plus,VenevisionPlus.ve
 Ventura Channel (KVBC-LD8),KVBCLP8.us
 Venus,Venus.ar
+Veseljak TV,VeseljakTV.si
 VH1 Brasil,VH1Brasil.us
 VH1 Classic,VH1Classic.us
 VH1 East,VH1East.us
@@ -8228,6 +9010,8 @@ VH1 Latinoamérica,VH1Latinoamerica.us
 VH1 Polska,VH1Polska.us
 VH1 West,VH1West.us
 Viajar,Viajar.es
+Viasat 3,Viasat3.hu
+Viasat 6,Viasat6.hu
 Viasat Explore East,ViasatExploreEast.se
 Viasat Explore Romania,ViasatExploreRomania.se
 Viasat Explore Russia,ViasatExploreRussia.se
@@ -8254,12 +9038,15 @@ ViP Megahit Russia,ViPMegahitRussia.se
 ViP Premiere CEE,ViPPremiereCEE.se
 ViP Premiere Russia,ViPPremiereRussia.se
 Viral TV,ViralTV.es
+Vision Prime,VisionPrime.id
 VisionTV,VisionTV.ca
 VisionTV East,VisionTVEast.ca
 VisionTV Pacific,VisionTVPacific.ca
 Viva,Viva.br
+Vivacom Arena,VivacomArena.bg
 Vivid Red,VividRed.us
 Vivid Touch,VividTouch.us
+Vivid TV Europe,VividTVEurope.us
 Vixen,Vixen.us
 Vizion Plus,VizionPlus.al
 viàMoselleTV,viaMoselleTV.fr
@@ -8275,13 +9062,16 @@ Vox Deutschland,VoxDeutschland.de
 Vox Music TV,VoxMusicTV.pl
 VRAK,VRAK.ca
 VSU-TV,VSUTV.us
+VTK,VTK.bg
 VTM,VTM.be
 VTM 2,VTM2.be
 VTM 3,VTM3.be
 VTN (KVTH),KVTHDT.us
 VTN (KVTJ),KVTJDT.us
 VTN (KVTN),KVTNDT.us
+VTV,VTV.hr
 VTV,VTV.ro
+VTV,VTV.si
 VTV1,VTV1.vn
 VTV2,VTV2.vn
 VTV3,VTV3.vn
@@ -8289,9 +9079,12 @@ VTV4,VTV4.vn
 Východoslovenská Televízia,VychodoslovenskaTelevizia.sk
 W Network East,WNetworkEast.ca
 W Network West,WNetworkWest.ca
+W UK,WUK.uk
+W24,W24.at
 W36DO-D3,W36DOD3.us
 W46DF-D,W46DFD.us
 W9,W9.fr
+W9 Suisse,W9Suisse.fr
 WACP,WACP.us
 WACP-DT2,WACP2.us
 WACX,WACX.us
@@ -8307,6 +9100,7 @@ WARP-CD,WARPCD.us
 WARP-CD2,WARPCD2.us
 WARP-CD3,WARPCD3.us
 WARP-CD4,WARPCD4.us
+Watania 1,Watania1.tn
 WATC-DT2 TOO,WATCDT2.us
 WATC-TV 57,WATCDT.us
 Water Planet,WaterPlanet.pl
@@ -8321,7 +9115,9 @@ WBPH-DT2,WBPHTV2.us
 WBPX-TV3,WBPXTV3.us
 WDNN,WDNNCD.us
 WDR Fernsehen,WDRFernsehen.de
+WDR Fernsehen Koln,WDRFernsehenKoln.de
 We TV,WeTV.us
+We TV East,WeTVEast.us
 Weather (KPSN-LD2),KPSNLD2.us
 Weather Now,WeatherNow.us
 Weather Now (K11LC-D5),K11LCD5.us
@@ -8362,14 +9158,17 @@ WMCN44,WMCNTV.us
 WMFD-TV,WMFDTV.us
 WMFP,WMFP.us
 WMOR,WMORTV.us
+Wness TV,WnessTV.bg
 WNYN-DT4,WNYNLD4.us
 WNYN-DT5,WNYNLD5.us
+Woman,Woman.hr
 WooHoo,WooHoo.br
 World Business Channel,WorldBusinessChannel.ru
 World Fashion Channel Russia,WorldFashionChannelRussia.ru
 World Fishing Network,WorldFishingNetwork.us
 World Harvest TV,WorldHarvestTV.us
 World Harvest TV (K14JS-DT2),K14JSD2.us
+WP TV,WPTV.pl
 WPGA-TV,WPGATV.us
 WPIX,WPIX.us
 wPolsce.pl,wPolscepl.pl
@@ -8397,6 +9196,7 @@ XTRM,XTRM.es
 XXL,XXL.fr
 Y2 (WDPB-DT2),WDPB2.us
 Y2 (WHYY-DT2),WHYYTV2.us
+Yaban,Yaban.tr
 YES Network,YESNetwork.us
 Yes TV (CITS),CITS.ca
 Yes TV (CITS-DT-1),CITSDT1.ca
@@ -8455,7 +9255,11 @@ ZAK TV,ZAKTV.cz
 ZDF,ZDF.de
 ZDFinfo,ZDFinfo.de
 ZDFneo,ZDFneo.de
+Zdrava televizija,Zdravatelevizija.hr
+Zdrava TV,ZdravaTV.hr
 Zee 24 Taas,Zee24Taas.in
+Zee Aflam,ZeeAflam.in
+Zee Alwan,ZeeAlwan.in
 Zee Bangla,ZeeBangla.in
 Zee Bioskop,ZeeBioskop.in
 Zee Bollywood,ZeeBollywood.in
@@ -8471,6 +9275,7 @@ Zee TV Russia,ZeeTVRussia.in
 Zee TV UK,ZeeTVUK.in
 Zee TV USA,ZeeTVUSA.in
 Zee Zest,ZeeZest.in
+Zenebutik,Zenebutik.hu
 Zeste,Zeste.ca
 Zing USA,ZingUSA.in
 Zion TV (KCIO-DT4),KCIOLP4.us
@@ -8501,6 +9306,9 @@ ZWTV (KJLA-DT9),KJLA9.us
 Šlágr 2,Slagr2.cz
 Šlágr Premium,SlagrPremium.cz
 Šlágr TV,SlagrTV.cz
+Šport TV 1,SportTV1.si
+Šport TV 2,SportTV2.si
+Šport TV 3,SportTV3.si
 ŤukiTV,TukiTV.sk
 Αιγαίο TV,AigaioTV.gr
 Βεργίνα TV,VerginaTV.gr
@@ -8527,11 +9335,19 @@ ZWTV (KJLA-DT9),KJLA9.us
 Белгород 24,Belgorod24.ru
 БелРос,BelRos.ru
 Белсат TV,BelsatTV.pl
+БК ТВ,BKTV.rs
+БНТ 1,BNT1.bg
+БНТ 2,BNT2.bg
+БНТ 3,BNT3.bg
+БНТ 4,BNT4.bg
 Бобер,Bober.ru
 Бокс ТВ,BoksTV.ru
 Большая Азия,BolshayaAziya.ru
 БСТ,BST.ru
+БСТВ,BSTV.bg
 Буг-ТВ,BugTV.by
+БХТВ,BHTV.bg
+България 24,Blgariya24.bg
 Бігуді,Bigudi.ua
 В мире животных,Vmirezhivotnyh.ru
 Вiнтаж ТБ,VintazhTB.ua
@@ -8586,7 +9402,9 @@ ZWTV (KJLA-DT9),KJLA9.us
 К1,K1.ua
 К2,K2.ua
 Кавказ 24,Kavkaz24.ru
+Казбука ТВ,KazbukaTV.rs
 Калейдоскоп ТВ,KaleydoskopTV.ru
+Канал 8 ТВ,Kanal8TV.mk
 Канал Disney,KanalDisney.us
 Капитан Фантастика,KapitanFantastika.ru
 Карусель,Karusel.ru
@@ -8649,6 +9467,7 @@ ZWTV (KJLA-DT9),KJLA9.us
 Моя Планета,MoyaPlaneta.ru
 МТВ,MTV.ru
 МТМ,MTM.ua
+МТМ ТВ,MTMTV.mk
 Мужское кино,Muzhskoekino.ru
 Мужской,Muzhskoy.ru
 Муз-ТВ,MuzTV.ru
@@ -8678,6 +9497,7 @@ ZWTV (KJLA-DT9),KJLA9.us
 НСТ,NST.ru
 НТА,NTA.ua
 НТВ,NTV.ru
+НТВ Мир,NTVMir.ru
 НТВ Право,NTVPravo.ru
 НТВ Сериал,NTVSerial.ru
 НТВ Стиль,NTVStil.ru
@@ -8736,6 +9556,18 @@ ZWTV (KJLA-DT9),KJLA9.us
 РТВ - Любимое кино,RTVLyubimoekino.ru
 РТР-Планета,RTRPlaneta.ru
 РТР-Планета Балтия,RTRPlanetaBaltiya.ru
+РТРС,RTRS.ba
+РТРС плус,RTRSplus.ba
+РТС 1,RTS1.rs
+РТС 2,RTS2.rs
+РТС 3,RTS3.rs
+РТС Драма,RTSDrama.rs
+РТС Живот,RTSZhivot.rs
+РТС Коло,RTSKolo.rs
+РТС Музика,RTSMuzika.rs
+РТС Полетарац,RTSPoletarac.rs
+РТС Свет,RTSSvet.rs
+РТС Трезор,RTSTrezor.rs
 Русский бестселлер,Russkiybestseller.ru
 Русский Детектив,RusskiyDetektiv.ru
 Русский Иллюзион,RusskiyIllyuzion.ru
@@ -8772,6 +9604,8 @@ ZWTV (KJLA-DT9),KJLA9.us
 Тамыр,Tamyr.ru
 Татарстан24,Tatarstan24.ru
 ТБН,TBN.ru
+ТВ СКАТ,TVSKAT.bg
+ТВ СТЗ,TVSTZ.bg
 ТВ Центр,TVCentr.ru
 ТВ Центр-International,TVCentrInternational.ru
 ТВ-3,TV3.ru
@@ -8782,6 +9616,7 @@ ZWTV (KJLA-DT9),KJLA9.us
 Телеканал 86,Telekanal86.ru
 Телекафе,Telekafe.ru
 Телепутешествия,Teleputeshestviya.ru
+Тера,Tera.mk
 ТЕТ,TET.ua
 Техно 24,Tehno24.ru
 Тиса-1,Tisa1.ua
