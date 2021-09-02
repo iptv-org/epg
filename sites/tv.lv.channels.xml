@@ -1,48 +1,35 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <site site="tv.lv">
   <channels>
-    <channel site_id="3-1" xmltv_id="3Plus.lv">3+</channel>
-    <channel site_id="duo-3-latvija" xmltv_id="Duo3.lv">Duo 3</channel>
-    <channel site_id="duo-6-baltic-1" xmltv_id="Duo6.lv">Duo 6</channel>
+    <channel site_id="3-1" xmltv_id="3PlusLatvija.lv">3+ Latvija</channel>
     <channel site_id="epic-drama-cee" xmltv_id="EpicDrama.se">Epic Drama</channel>
     <channel site_id="eurosport-1" xmltv_id="Eurosport1.fr">Eurosport 1</channel>
     <channel site_id="eurosport-2" xmltv_id="Eurosport2.fr">Eurosport 2</channel>
-    <channel site_id="filmzone-1" xmltv_id="Filmzone.lv">Filmzone</channel>
-    <channel site_id="filmzone" xmltv_id="FilmzonePlus.lv">Filmzone+</channel>
-    <channel site_id="fox-life" xmltv_id="FoxLifeLatvia.us">Fox Life Latvia</channel>
     <channel site_id="history-europe" xmltv_id="HistoryEurope.us">History Europe</channel>
     <channel site_id="kidzone-latvija" xmltv_id="KidZoneTV.ee">KidZone TV</channel>
-    <channel site_id="kidzone" xmltv_id="KidzonePlus.ee">Kidzone+</channel>
     <channel site_id="lolo-tv-lv" xmltv_id="LoloTV.lv">Lolo TV</channel>
-    <channel site_id="ltv1" xmltv_id="LTV1.lv">LTV1</channel>
-    <channel site_id="ltv7" xmltv_id="LTV7.lv">LTV7</channel>
-    <channel site_id="mvk" xmltv_id="MVK.lv">MVK</channel>
-    <channel site_id="national-geographic-baltic" xmltv_id="NationalGeographicLatvija.us">National Geographic Latvija</channel>
-    <channel site_id="nickelodeon-latvia" xmltv_id="NickelodeonLatvia.us">Nickelodeon Latvia</channel>
-    <channel site_id="retv" xmltv_id="ReTV.lv">Re:TV</channel>
+    <channel site_id="ltv1" xmltv_id="LTV1.lv">LTV 1</channel>
+    <channel site_id="ltv7" xmltv_id="LTV7.lv">LTV 7</channel>
+    <channel site_id="national-geographic-baltic" xmltv_id="NationalGeographicChannelHDEurope.us">National Geographic Channel HD Europe</channel>
+    <channel site_id="nickelodeon-latvia" xmltv_id="NickelodeonDanmark.us">Nickelodeon Danmark</channel>
+    <channel site_id="pbk-1" xmltv_id="PerviykanalEuropa.ru">Perviy kanal Europa</channel>
+    <channel site_id="retv" xmltv_id="ReTV.lv">Re TV</channel>
     <channel site_id="rentv-baltic" xmltv_id="RENTVBaltic.ru">REN TV Baltic</channel>
-    <channel site_id="riga-tv24" xmltv_id="RigaTV24.lv">Rīga TV24</channel>
-    <channel site_id="smartzone-tv" xmltv_id="Smartzone.ee">Smartzone</channel>
-    <channel site_id="sport-1" xmltv_id="Sport1.lt">Sport1</channel>
-    <channel site_id="sportacentrs" xmltv_id="Sportacentrscom.lv">Sportacentrs.com</channel>
-    <channel site_id="tv-kurzeme" xmltv_id="TVKurzeme.lv">TV Kurzeme</channel>
+    <channel site_id="rtr-planeta" xmltv_id="RTRPlaneta.ru">RTR Planeta</channel>
+    <channel site_id="rtr-planeta-baltiya" xmltv_id="RTRPlanetaBaltia.ru">RTR Planeta Baltia</channel>
+    <channel site_id="sts-baltiya" xmltv_id="STSBaltic.ru">STS Baltic</channel>
+    <channel site_id="tv1000-cee" xmltv_id="TV1000East.se">TV 1000 East</channel>
+    <channel site_id="tv1000-kino" xmltv_id="TV1000RusskoeKino.se">TV 1000 Russkoe Kino</channel>
+    <channel site_id="tv3-film" xmltv_id="TV3Film.lv">TV 3 Film</channel>
+    <channel site_id="tv3-1" xmltv_id="TV3Latvija.lv">TV 3 Latvija</channel>
+    <channel site_id="tv3-life" xmltv_id="TV3Life.lv">TV 3 Life</channel>
+    <channel site_id="tv3-mini" xmltv_id="TV3Mini.lv">TV 3 Mini</channel>
+    <channel site_id="tv3-sport" xmltv_id="TV3Sport.lv">TV 3 Sport</channel>
+    <channel site_id="tv3-sport-2" xmltv_id="TV3Sport2.lv">TV 3 Sport 2</channel>
+    <channel site_id="tv6-1" xmltv_id="TV6Latvija.lv">TV 6 Latvija</channel>
     <channel site_id="tv-21" xmltv_id="TVXXI.lv">TV XXI</channel>
-    <channel site_id="tv1000-action-cee" xmltv_id="TV1000ActionCEE.se">TV1000 Action CEE</channel>
-    <channel site_id="tv1000-cee" xmltv_id="TV1000CEE.se">TV1000 CEE</channel>
-    <channel site_id="tv1000-kino" xmltv_id="TV1000Russkoekino.se">TV1000 Русское кино</channel>
-    <channel site_id="tv3-1" xmltv_id="TV3.lv">TV3</channel>
-    <channel site_id="tv3-film" xmltv_id="TV3Film.lv">TV3 Film</channel>
-    <channel site_id="tv3-life" xmltv_id="TV3Life.lv">TV3 Life</channel>
-    <channel site_id="tv3-mini" xmltv_id="TV3Mini.lv">TV3 Mini</channel>
-    <channel site_id="tv3-sport" xmltv_id="TV3Sport.lv">TV3 Sport</channel>
-    <channel site_id="tv3-sport-2" xmltv_id="TV3Sport2.lv">TV3 Sport 2</channel>
-    <channel site_id="tv6-1" xmltv_id="TV6.lv">TV6</channel>
     <channel site_id="viasat-explore-nordic" xmltv_id="ViasatExploreEast.se">Viasat Explore East</channel>
     <channel site_id="viasat-history-cee" xmltv_id="ViasatHistory.se">Viasat History</channel>
     <channel site_id="viasat-nature-cee" xmltv_id="ViasatNatureEast.se">Viasat Nature East</channel>
-    <channel site_id="pbk-1" xmltv_id="Pervyykanal.ru">Первый канал</channel>
-    <channel site_id="rtr-planeta" xmltv_id="RTRPlaneta.ru">РТР-Планета</channel>
-    <channel site_id="rtr-planeta-baltiya" xmltv_id="RTRPlanetaBaltiya.ru">РТР-Планета Балтия</channel>
-    <channel site_id="sts-baltiya" xmltv_id="STSBaltiya.ru">СТС Балтия</channel>
   </channels>
 </site>
