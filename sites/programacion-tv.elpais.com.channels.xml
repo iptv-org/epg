@@ -1,162 +1,118 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <site site="programacion-tv.elpais.com">
   <channels>
-    <channel site_id="1" xmltv_id="Telecinco.es">Telecinco</channel>
-    <channel site_id="135" xmltv_id="Odisea.es">Odisea</channel>
-    <channel site_id="139" xmltv_id="EuronewsenEspanol.fr">Euronews en Español</channel>
-    <channel site_id="146" xmltv_id="DiscoveryChannelenEspanol.us">Discovery Channel en Español</channel>
-    <channel site_id="148" xmltv_id="HistoriaEspana.us">Historia España</channel>
-    <channel site_id="151" xmltv_id="NationalGeographicEspana.us">National Geographic España</channel>
-    <channel site_id="154" xmltv_id="Eurosport1Espana.fr">Eurosport 1 España</channel>
-    <channel site_id="155" xmltv_id="BarcaTVfr.es">Barça TV</channel>
-    <channel site_id="158" xmltv_id="RealMadridTV.es">Real Madrid TV</channel>
-    <channel site_id="159" xmltv_id="MTVEspana.us">MTV España</channel>
-    <channel site_id="160" xmltv_id="MTV90s.us">MTV 90s</channel>
-    <channel site_id="161" xmltv_id="MTVHitsEurope.us">MTV Hits Europe</channel>
-    <channel site_id="165" xmltv_id="VH1Europe.us">VH1 Europe</channel>
-    <channel site_id="171" xmltv_id="SolMusica.es">Sol Música</channel>
-    <channel site_id="175" xmltv_id="DisneyChannelEspana.us">Disney Channel España</channel>
-    <channel site_id="18" xmltv_id="La1Catalunya.es">La 1 Catalunya</channel>
-    <channel site_id="183" xmltv_id="CanalCocina.es">Canal Cocina</channel>
-    <channel site_id="186" xmltv_id="CosmopolitanTVEspana.es">Cosmopolitan TV España</channel>
-    <channel site_id="188" xmltv_id="Viajar.es">Viajar</channel>
-    <channel site_id="190" xmltv_id="EWTNEspana.us">EWTN España</channel>
+    <channel site_id="551" xmltv_id="7TelevisionRegiondeMurcia.es">7 Televisión Región de Murcia</channel>
+    <channel site_id="539" xmltv_id="AljazeeraEnglish.qa">Aljazeera English</channel>
+    <channel site_id="481" xmltv_id="AMCEspana.us">AMC España</channel>
     <channel site_id="2" xmltv_id="Antena3.es">Antena 3</channel>
-    <channel site_id="200" xmltv_id="NickelodeonenEspanol.us">Nickelodeon en Español</channel>
-    <channel site_id="202" xmltv_id="FoxEspana.us">Fox España</channel>
-    <channel site_id="203" xmltv_id="CNNInternationalEurope.us">CNN International Europe</channel>
-    <channel site_id="204" xmltv_id="CNBCEurope.us">CNBC Europe</channel>
-    <channel site_id="206" xmltv_id="DWEspanol.de">DW Español</channel>
+    <channel site_id="522" xmltv_id="AragonTV.es">Aragón TV</channel>
+    <channel site_id="883" xmltv_id="Atreseries.es">Atreseries</channel>
+    <channel site_id="63" xmltv_id="AXNEspana.us">AXN España</channel>
+    <channel site_id="512" xmltv_id="AXNWhiteEspana.us">AXN White España</channel>
+    <channel site_id="573" xmltv_id="BabyTVLatinAmerica.uk">Baby TV Latin America</channel>
+    <channel site_id="155" xmltv_id="BarcaTV.es">Barça TV</channel>
     <channel site_id="208" xmltv_id="BBCWorldNewsEurope.uk">BBC World News Europe</channel>
-    <channel site_id="209" xmltv_id="TV5MondeEurope.fr">TV5Monde Europe</channel>
-    <channel site_id="242" xmltv_id="beteve.es">betevé</channel>
-    <channel site_id="243" xmltv_id="8TV.es">8TV</channel>
-    <channel site_id="291" xmltv_id="DisneyChannelEspanaPlus1.us">Disney Channel España +1</channel>
-    <channel site_id="292" xmltv_id="DisneyJuniorEspana.us">Disney Junior España</channel>
-    <channel site_id="296" xmltv_id="CMM.es">CMM</channel>
-    <channel site_id="3" xmltv_id="La1.es">La 1</channel>
-    <channel site_id="30" xmltv_id="CanalSur.es">Canal Sur</channel>
+    <channel site_id="890" xmltv_id="BeMad.es">Be Mad</channel>
+    <channel site_id="840" xmltv_id="BeInSportsenEspanol.qa">BeIn Sports en Español</channel>
+    <channel site_id="492" xmltv_id="BlazeEspana.us">Blaze España</channel>
+    <channel site_id="665" xmltv_id="BoingEspana.it">Boing España</channel>
+    <channel site_id="64" xmltv_id="Calle13.us">Calle 13</channel>
+    <channel site_id="8" xmltv_id="Canal24Horas.es">Canal 24 Horas</channel>
+    <channel site_id="183" xmltv_id="CanalCocina.es">Canal Cocina</channel>
+    <channel site_id="582" xmltv_id="CanalExtremaduraSatelite.es">Canal Extremadura Satélite</channel>
+    <channel site_id="61" xmltv_id="CanalHollywoodEspana.es">Canal Hollywood España</channel>
+    <channel site_id="698" xmltv_id="CanalPandaEspana.pt">Canal Panda España</channel>
+    <channel site_id="604" xmltv_id="CanalParlamento.es">Canal Parlamento</channel>
+    <channel site_id="30" xmltv_id="CanalSur.us">Canal Sur</channel>
     <channel site_id="31" xmltv_id="CanalSurAndalucia.es">Canal Sur Andalucía</channel>
-    <channel site_id="316" xmltv_id="TeleElx.es">TeleElx</channel>
-    <channel site_id="32" xmltv_id="AndaluciaTV.es">Andalucía TV</channel>
-    <channel site_id="324" xmltv_id="CyLTV.es">CyLTV</channel>
-    <channel site_id="33" xmltv_id="ETB1.es">ETB 1</channel>
-    <channel site_id="333" xmltv_id="MovistarGolf.es">Movistar Golf</channel>
-    <channel site_id="338" xmltv_id="Mezzo.fr">Mezzo</channel>
-    <channel site_id="34" xmltv_id="ETB2.es">ETB 2</channel>
-    <channel site_id="35" xmltv_id="ETB4.es">ETB 4</channel>
-    <channel site_id="37" xmltv_id="TVGEuropa.es">TVG Europa</channel>
-    <channel site_id="377" xmltv_id="MovistarDeportes.es">Movistar Deportes</channel>
-    <channel site_id="38" xmltv_id="Telemadrid.es">Telemadrid</channel>
-    <channel site_id="385" xmltv_id="MovistarCineEspanol.es">Movistar Cine Español</channel>
+    <channel site_id="566" xmltv_id="CaracolTVInternacional.co">Caracol TV Internacional</channel>
     <channel site_id="386" xmltv_id="CazayPesca.es">Caza y Pesca</channel>
-    <channel site_id="39" xmltv_id="LaOtra.es">La Otra</channel>
-    <channel site_id="4" xmltv_id="La2.es">La 2</channel>
-    <channel site_id="41" xmltv_id="TelevisionCanaria.es">TelevisiónCanaria</channel>
+    <channel site_id="619" xmltv_id="CGTNEspanol.cn">CGTN Español</channel>
+    <channel site_id="505" xmltv_id="ClanTVE.es">Clan TVE</channel>
+    <channel site_id="469" xmltv_id="ClubMTV.us">Club MTV</channel>
+    <channel site_id="204" xmltv_id="CNBCEurope.us">CNBC Europe</channel>
+    <channel site_id="203" xmltv_id="CNNInternationalEurope.us">CNN International Europe</channel>
+    <channel site_id="493" xmltv_id="ComedyCentralEspana.us">Comedy Central España</channel>
+    <channel site_id="186" xmltv_id="CosmopolitanTVEspana.es">Cosmopolitan TV España</channel>
+    <channel site_id="691" xmltv_id="CrimenPlusInvestigacion.us">Crimen + Investigación</channel>
+    <channel site_id="496" xmltv_id="Cuatro.es">Cuatro</channel>
+    <channel site_id="567" xmltv_id="CubavisionInternacional.cu">Cubavisión Internacional</channel>
+    <channel site_id="920" xmltv_id="Dark.es">Dark</channel>
+    <channel site_id="572" xmltv_id="Decasa.es">Decasa</channel>
+    <channel site_id="146" xmltv_id="DiscoveryenEspanol.us">Discovery en Español</channel>
+    <channel site_id="175" xmltv_id="DisneyChannelEspana.us">Disney Channel España</channel>
+    <channel site_id="292" xmltv_id="DisneyJuniorEspana.us">Disney Junior España</channel>
+    <channel site_id="697" xmltv_id="Divinity.es">Divinity</channel>
+    <channel site_id="206" xmltv_id="DWEspanol.de">DW Español</channel>
+    <channel site_id="790" xmltv_id="ElTreceInternacional.ar">El Trece Internacional</channel>
+    <channel site_id="709" xmltv_id="Energy.es">Energy</channel>
+    <channel site_id="33" xmltv_id="ETB1.es">ETB 1</channel>
+    <channel site_id="795" xmltv_id="ETB3.es">ETB 3</channel>
+    <channel site_id="139" xmltv_id="EuroNewsEspanol.fr">EuroNews Español</channel>
+    <channel site_id="154" xmltv_id="Eurosport1.fr">Eurosport 1</channel>
+    <channel site_id="491" xmltv_id="Eurosport2.fr">Eurosport 2</channel>
+    <channel site_id="190" xmltv_id="EWTNEspanaLatinoamerica.us">EWTN España - Latinoamérica</channel>
+    <channel site_id="550" xmltv_id="ExtremeSportsChannel.nl">Extreme Sports Channel</channel>
+    <channel site_id="506" xmltv_id="FactoriadeFiccion.es">Factoria de Ficción</channel>
+    <channel site_id="202" xmltv_id="FoxEspana.us">Fox España</channel>
+    <channel site_id="660" xmltv_id="FoxLifeEspana.us">Fox Life España</channel>
+    <channel site_id="608" xmltv_id="France24Espanol.fr">France 24 Español</channel>
+    <channel site_id="37" xmltv_id="GaliciaTVEuropa.es">Galicia TV Europa</channel>
+    <channel site_id="786" xmltv_id="GarageTV.ar">Garage TV</channel>
+    <channel site_id="897" xmltv_id="Gol.es">Gol</channel>
+    <channel site_id="148" xmltv_id="HistoriaEspana.us">Historia España</channel>
+    <channel site_id="792" xmltv_id="I24NewsEnglish.il">I24 News English</channel>
+    <channel site_id="654" xmltv_id="IberaliaTV.es">Iberalia TV</channel>
+    <channel site_id="510" xmltv_id="LaSexta.es">La Sexta</channel>
+    <channel site_id="338" xmltv_id="Mezzo.fr">Mezzo</channel>
+    <channel site_id="748" xmltv_id="MezzoLiveHD.fr">Mezzo Live HD</channel>
+    <channel site_id="847" xmltv_id="MovistarAccion.es">Movistar Acción</channel>
+    <channel site_id="385" xmltv_id="MovistarCineEspanol.es">Movistar Cine Español</channel>
+    <channel site_id="848" xmltv_id="MovistarComedia.es">Movistar Comedia</channel>
+    <channel site_id="377" xmltv_id="MovistarDeportes.pe">Movistar Deportes</channel>
+    <channel site_id="845" xmltv_id="MovistarEstrenos.es">Movistar Estrenos</channel>
+    <channel site_id="333" xmltv_id="MovistarGolf.es">Movistar Golf</channel>
+    <channel site_id="843" xmltv_id="MovistarSeries.es">Movistar Series</channel>
+    <channel site_id="160" xmltv_id="MTV90s.us">MTV 90s</channel>
+    <channel site_id="159" xmltv_id="MTVEspana.us">MTV España</channel>
+    <channel site_id="161" xmltv_id="MTVHitsEurope.us">MTV Hits Europe</channel>
+    <channel site_id="702" xmltv_id="MTVLiveHD.us">MTV Live HD</channel>
+    <channel site_id="627" xmltv_id="MTVMusic24.us">MTV Music 24</channel>
+    <channel site_id="151" xmltv_id="NationalGeographicEspana.us">National Geographic España</channel>
+    <channel site_id="681" xmltv_id="NationalGeographicWildEspana.us">National Geographic Wild España</channel>
+    <channel site_id="784" xmltv_id="NationalGeographicWildEspana.us">National Geographic Wild España</channel>
+    <channel site_id="508" xmltv_id="Neox.es">Neox</channel>
+    <channel site_id="687" xmltv_id="NickJrEspana.us">Nick Jr España</channel>
+    <channel site_id="200" xmltv_id="NickelodeonIberia.us">Nickelodeon Iberia</channel>
+    <channel site_id="509" xmltv_id="Nova.es">Nova</channel>
+    <channel site_id="135" xmltv_id="Odisea.es">Odisea</channel>
+    <channel site_id="716" xmltv_id="ParamountChannelEspana.us">Paramount Channel España</channel>
+    <channel site_id="570" xmltv_id="ProTVInternational.ro">Pro TV International</channel>
+    <channel site_id="158" xmltv_id="RealMadridTVEspanol.es">Real Madrid TV Español</channel>
+    <channel site_id="615" xmltv_id="RecordTVEuropa.br">Record TV Europa</channel>
+    <channel site_id="682" xmltv_id="RTEspanol.ru">RT Español</channel>
+    <channel site_id="171" xmltv_id="SolMusica.es">Sol Música</channel>
+    <channel site_id="501" xmltv_id="Somos.es">Somos</channel>
+    <channel site_id="699" xmltv_id="SundanceTVEspana.us">Sundance TV España</channel>
+    <channel site_id="520" xmltv_id="SyfyEspana.us">Syfy España</channel>
+    <channel site_id="826" xmltv_id="Taroteame.es">Tarotéame</channel>
+    <channel site_id="59" xmltv_id="TCMEspana.us">TCM España</channel>
+    <channel site_id="1" xmltv_id="Telecinco.es">Telecinco</channel>
+    <channel site_id="9" xmltv_id="Teledeporte.es">Teledeporte</channel>
+    <channel site_id="614" xmltv_id="Telesur.ve">Telesur</channel>
+    <channel site_id="577" xmltv_id="TNTEspana.us">TNT España</channel>
     <channel site_id="416" xmltv_id="TVChile.cl">TV Chile</channel>
     <channel site_id="43" xmltv_id="TV3.es">TV3</channel>
-    <channel site_id="449" xmltv_id="324.es">3/24</channel>
-    <channel site_id="468" xmltv_id="TVEInternacionalEuropa.es">TVE Internacional Europa</channel>
-    <channel site_id="469" xmltv_id="ClubMTV.us">Club MTV</channel>
     <channel site_id="47" xmltv_id="TV3CAT.es">TV3CAT</channel>
-    <channel site_id="475" xmltv_id="DMAXEspana.us">DMAX España</channel>
-    <channel site_id="481" xmltv_id="AMCEspana.us">AMC España</channel>
-    <channel site_id="491" xmltv_id="Eurosport2Espana.fr">Eurosport 2 España</channel>
-    <channel site_id="492" xmltv_id="BlazeEspana.us">Blaze España</channel>
-    <channel site_id="493" xmltv_id="ComedyCentralEspana.us">Comedy Central España</channel>
-    <channel site_id="496" xmltv_id="Cuatro.es">Cuatro</channel>
-    <channel site_id="501" xmltv_id="Somos.es">Somos</channel>
-    <channel site_id="505" xmltv_id="ClanTVE.es">Clan TVE</channel>
-    <channel site_id="506" xmltv_id="FDF.es">FDF</channel>
-    <channel site_id="508" xmltv_id="Neox.es">Neox</channel>
-    <channel site_id="509" xmltv_id="Nova.es">Nova</channel>
-    <channel site_id="510" xmltv_id="laSexta.es">laSexta</channel>
-    <channel site_id="512" xmltv_id="AXNWhiteEspana.us">AXN White España</channel>
-    <channel site_id="516" xmltv_id="ElToroTV.es">El Toro TV</channel>
-    <channel site_id="519" xmltv_id="IB3.es">IB3</channel>
-    <channel site_id="520" xmltv_id="SyfyEspana.us">Syfy España</channel>
-    <channel site_id="521" xmltv_id="TPA.es">TPA</channel>
-    <channel site_id="522" xmltv_id="AragonTV.es">Aragón TV</channel>
-    <channel site_id="539" xmltv_id="AlJazeeraEnglish.qa">Al Jazeera English</channel>
-    <channel site_id="541" xmltv_id="Super3.es">Super3</channel>
-    <channel site_id="550" xmltv_id="ExtremeSportsChannel.nl">Extreme Sports Channel</channel>
-    <channel site_id="551" xmltv_id="7TelevisionRegiondeMurcia.es">7 Televisión Región de Murcia</channel>
-    <channel site_id="566" xmltv_id="Caracol.co">Caracol</channel>
-    <channel site_id="567" xmltv_id="CubavisionInternacionales.cu">Cubavisión Internacional</channel>
-    <channel site_id="570" xmltv_id="ProTVInternacional.ro">Pro TV Internacional</channel>
-    <channel site_id="572" xmltv_id="Decasa.es">Decasa</channel>
-    <channel site_id="573" xmltv_id="BabyTVEspanol.uk">BabyTV Español</channel>
-    <channel site_id="577" xmltv_id="TNTEspana.us">TNT España</channel>
-    <channel site_id="582" xmltv_id="CanalExtremadura.es">Canal Extremadura</channel>
-    <channel site_id="59" xmltv_id="TCMEspana.us">TCM España</channel>
-    <channel site_id="603" xmltv_id="LibertadDigitalTV.es">Libertad Digital TV</channel>
-    <channel site_id="604" xmltv_id="CanalParlamento.es">Canal Parlamento</channel>
-    <channel site_id="608" xmltv_id="France24Espanol.fr">France 24 Español</channel>
-    <channel site_id="61" xmltv_id="CanalHollywoodEspana.es">Canal Hollywood España</channel>
-    <channel site_id="613" xmltv_id="TVColombia.co">TV Colombia</channel>
-    <channel site_id="614" xmltv_id="teleSUR.ve">teleSUR</channel>
-    <channel site_id="615" xmltv_id="RecordTVEuropa.br">Record TV Europa</channel>
-    <channel site_id="619" xmltv_id="CGTNEspanol.cn">CGTN Español</channel>
-    <channel site_id="627" xmltv_id="MTVMusic24.us">MTV Music 24</channel>
-    <channel site_id="628" xmltv_id="TCMEspanaPlus1.us">TCM España +1</channel>
-    <channel site_id="629" xmltv_id="ZTV.es">ZTV</channel>
-    <channel site_id="63" xmltv_id="AXNEspana.us">AXN España</channel>
-    <channel site_id="64" xmltv_id="Calle13.us">Calle 13</channel>
-    <channel site_id="643" xmltv_id="La8.es">La 8</channel>
-    <channel site_id="653" xmltv_id="VePlusTV.ve">Ve Plus TV</channel>
-    <channel site_id="654" xmltv_id="IberaliaTV.es">Iberalia TV</channel>
-    <channel site_id="656" xmltv_id="Cazavision.es">Cazavisión</channel>
-    <channel site_id="660" xmltv_id="FoxLifeEspana.us">Fox Life España</channel>
-    <channel site_id="665" xmltv_id="BoingEspana.it">Boing España</channel>
+    <channel site_id="209" xmltv_id="TV5MondeEurope.fr">TV5Monde Europe</channel>
     <channel site_id="667" xmltv_id="TVEInternacionalAsia.es">TVE Internacional Asia</channel>
-    <channel site_id="671" xmltv_id="CanalHollywoodEspanaPlus1.es">Canal Hollywood España +1</channel>
-    <channel site_id="672" xmltv_id="Esport3.es">Esport3</channel>
-    <channel site_id="68" xmltv_id="XTRM.es">XTRM</channel>
-    <channel site_id="681" xmltv_id="NationalGeographicWildEspana.us">National Geographic Wild España</channel>
-    <channel site_id="682" xmltv_id="RTEspanol.ru">RT Español</channel>
-    <channel site_id="687" xmltv_id="NickJrEspana.us">Nick Jr España</channel>
-    <channel site_id="689" xmltv_id="Trece.es">Trece</channel>
-    <channel site_id="690" xmltv_id="La1.es">La 1</channel>
-    <channel site_id="691" xmltv_id="CrimenInvestigacion.us">Crimen &amp; Investigación</channel>
-    <channel site_id="697" xmltv_id="Divinity.es">Divinity</channel>
-    <channel site_id="698" xmltv_id="CanalPandaEspana.pt">Canal Panda España</channel>
-    <channel site_id="699" xmltv_id="SundanceTVEspana.us">Sundance TV España</channel>
-    <channel site_id="702" xmltv_id="MTVLiveHD.us">MTV Live HD</channel>
-    <channel site_id="705" xmltv_id="VH1Classic.us">VH1 Classic</channel>
-    <channel site_id="709" xmltv_id="Energy.es">Energy</channel>
-    <channel site_id="716" xmltv_id="ParamountNetworkEspana.us">Paramount Network España</channel>
-    <channel site_id="748" xmltv_id="MezzoLiveHD.fr">Mezzo Live HD</channel>
-    <channel site_id="753" xmltv_id="OndaAlgecirasTelevision.es">Onda Algeciras Televisión</channel>
-    <channel site_id="754" xmltv_id="PopularTVRegiondeMurcia.es">Popular TV Región de Murcia</channel>
-    <channel site_id="771" xmltv_id="NavarraTelevision.es">Navarra Televisión</channel>
-    <channel site_id="779" xmltv_id="tvG2.es">tvG2</channel>
-    <channel site_id="784" xmltv_id="NationalGeographicWildEspana.us">National Geographic Wild España</channel>
-    <channel site_id="786" xmltv_id="GarageTV.ar">Garage TV</channel>
-    <channel site_id="790" xmltv_id="ElTreceInternacional.ar">El Trece Internacional</channel>
-    <channel site_id="792" xmltv_id="i24NewsEnglish.il">i24 News English</channel>
-    <channel site_id="795" xmltv_id="ETB3.es">ETB 3</channel>
-    <channel site_id="798" xmltv_id="MovistarF1.es">Movistar F1</channel>
-    <channel site_id="8" xmltv_id="Canal24horas.es">Canal 24 horas</channel>
-    <channel site_id="804" xmltv_id="MotoGP.es">MotoGP</channel>
-    <channel site_id="826" xmltv_id="Taroteame.es">Tarotéame</channel>
-    <channel site_id="832" xmltv_id="TVMediterraneo.es">TV Mediterráneo</channel>
-    <channel site_id="839" xmltv_id="NonStopPeopleEspana.fr">Non Stop People España</channel>
-    <channel site_id="840" xmltv_id="beINSportsenEspanol.qa">beIN Sports en Español</channel>
-    <channel site_id="841" xmltv_id="Mega.es">Mega</channel>
-    <channel site_id="843" xmltv_id="MovistarSeries.es">Movistar Series</channel>
-    <channel site_id="845" xmltv_id="MovistarEstrenos.es">Movistar Estrenos</channel>
-    <channel site_id="847" xmltv_id="MovistarAccion.es">Movistar Acción</channel>
-    <channel site_id="848" xmltv_id="MovistarComedia.es">Movistar Comedia</channel>
-    <channel site_id="870" xmltv_id="ViralTV.es">Viral TV</channel>
-    <channel site_id="872" xmltv_id="La8Burgos.es">La 8 Burgos</channel>
-    <channel site_id="882" xmltv_id="Partidazo.es">Partidazo</channel>
-    <channel site_id="883" xmltv_id="Atreseries.es">Atreseries</channel>
-    <channel site_id="889" xmltv_id="TENTV.es">TEN TV</channel>
-    <channel site_id="890" xmltv_id="BeMad.es">Be Mad</channel>
-    <channel site_id="892" xmltv_id="DKISS.es">DKISS</channel>
-    <channel site_id="895" xmltv_id="beINLaLiga.qa">beIN LaLiga</channel>
-    <channel site_id="897" xmltv_id="GOL.es">GOL</channel>
-    <channel site_id="9" xmltv_id="Teledeporte.es">Teledeporte</channel>
-    <channel site_id="920" xmltv_id="Dark.es">Dark</channel>
+    <channel site_id="468" xmltv_id="TVEInternacionalEuropa.es">TVE Internacional Europa</channel>
+    <channel site_id="3" xmltv_id="TVELa1Madrid.es">TVE La 1 Madrid</channel>
+    <channel site_id="690" xmltv_id="TVELa1Madrid.es">TVE La 1 Madrid</channel>
+    <channel site_id="4" xmltv_id="TVELa2.es">TVE La 2</channel>
+    <channel site_id="653" xmltv_id="VePlusPanregional.ve">Ve Plus Panregional</channel>
+    <channel site_id="165" xmltv_id="VH1Europe.us">VH1 Europe</channel>
+    <channel site_id="188" xmltv_id="Viajar.es">Viajar</channel>
+    <channel site_id="68" xmltv_id="Xtrm.es">Xtrm</channel>
   </channels>
 </site>

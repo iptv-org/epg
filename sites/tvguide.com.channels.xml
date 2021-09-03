@@ -2,14 +2,12 @@
 <site site="tvguide.com">
   <channels>
     <channel site_id="9100001138#9200004889" xmltv_id="AEEast.us">A&amp;E East</channel>
-    <channel site_id="9100001138#9233011874" xmltv_id="ABCEast.us">ABC East</channel>
     <channel site_id="9100001138#9233011832" xmltv_id="AMCEast.us">AMC East</channel>
     <channel site_id="9100001138#9200018479" xmltv_id="AnimalPlanetEast.us">Animal Planet East</channel>
     <channel site_id="9100001138#9200014701" xmltv_id="BBCAmericaEast.uk">BBC America East</channel>
     <channel site_id="9100001138#9233005931" xmltv_id="BETEast.us">BET East</channel>
     <channel site_id="9100001138#9200002886" xmltv_id="BravoEast.us">Bravo East</channel>
     <channel site_id="9100001138#9200004848" xmltv_id="CartoonNetworkEast.us">Cartoon Network East</channel>
-    <channel site_id="9100001138#9200018514" xmltv_id="CBSEast.us">CBS East</channel>
     <channel site_id="9100001138#9233009829" xmltv_id="CinemaxEast.us">Cinemax East</channel>
     <channel site_id="9100001138#9200012085" xmltv_id="CMTEast.us">CMT East</channel>
     <channel site_id="9100001138#9200009413" xmltv_id="CNBCUS.us">CNBC US</channel>
@@ -21,16 +19,15 @@
     <channel site_id="9100001138#9200004852" xmltv_id="DisneyXDEast.us">Disney XD East</channel>
     <channel site_id="9100001138#9200012415" xmltv_id="DIYNetworkUSA.us">DIY Network USA</channel>
     <channel site_id="9100001138#9200012343" xmltv_id="EEast.us">E! East</channel>
-    <channel site_id="9100001138#9200006937" xmltv_id="ESPN.us">ESPN</channel>
     <channel site_id="9100001138#9200012351" xmltv_id="ESPN2US.us">ESPN 2 US</channel>
     <channel site_id="9100001138#9233011637" xmltv_id="ESPNClassicUSA.us">ESPN Classic USA</channel>
+    <channel site_id="9100001138#9200006937" xmltv_id="ESPNUS.us">ESPN US</channel>
     <channel site_id="9100001138#9233011350" xmltv_id="ESPNU.us">ESPNU</channel>
     <channel site_id="9100001138#9233000217" xmltv_id="FlixEast.us">Flix East</channel>
     <channel site_id="9100001138#9233009448" xmltv_id="FoodNetworkEast.us">Food Network East</channel>
-    <channel site_id="9100001138#9233002271" xmltv_id="FoxEast.us">Fox East</channel>
     <channel site_id="9100001138#9233000410" xmltv_id="FoxNewsChannel.us">Fox News Channel</channel>
-    <channel site_id="9100001138#9233008440" xmltv_id="FoxSports1.us">Fox Sports 1</channel>
     <channel site_id="9100001138#9200006942" xmltv_id="FreeformEast.us">Freeform East</channel>
+    <channel site_id="9100001138#9233008440" xmltv_id="FS1.us">FS1</channel>
     <channel site_id="9100001138#9233000028" xmltv_id="FuseEast.us">Fuse East</channel>
     <channel site_id="9100001138#9200006932" xmltv_id="FXEast.us">FX East</channel>
     <channel site_id="9100001138#9233013967" xmltv_id="FXMovieChannel.us">FX Movie Channel</channel>
@@ -53,7 +50,6 @@
     <channel site_id="9100001138#9233015766" xmltv_id="MoreMaxEast.us">MoreMax East</channel>
     <channel site_id="9100001138#9233006803" xmltv_id="MSNBC.us">MSNBC</channel>
     <channel site_id="9100001138#9200014754" xmltv_id="MTVEast.us">MTV East</channel>
-    <channel site_id="9100001138#9233001847" xmltv_id="MyNetworkTV.us">MyNetworkTV</channel>
     <channel site_id="9100001138#9233002310" xmltv_id="NationalGeographicEast.us">National Geographic East</channel>
     <channel site_id="9100001138#9233009876" xmltv_id="NBCEast.us">NBC East</channel>
     <channel site_id="9100001138#9233000030" xmltv_id="NBCSN.us">NBCSN</channel>
@@ -77,15 +73,14 @@
     <channel site_id="9100001138#9233000403" xmltv_id="TBSEast.us">TBS East</channel>
     <channel site_id="9100001138#9200017928" xmltv_id="TCMUS.us">TCM US</channel>
     <channel site_id="9100001138#9200011857" xmltv_id="TelemundoEste.us">Telemundo Este</channel>
-    <channel site_id="9100001138#9233011398" xmltv_id="TheCWEast.us">The CW East</channel>
     <channel site_id="9100001138#9233015305" xmltv_id="TheMovieChannelEast.us">The Movie Channel East</channel>
     <channel site_id="9100001138#9233004112" xmltv_id="TLCEast.us">TLC East</channel>
     <channel site_id="9100001138#9233011830" xmltv_id="TNTEast.us">TNT East</channel>
     <channel site_id="9100001138#9233000035" xmltv_id="TravelChannelEast.us">Travel Channel East</channel>
-    <channel site_id="9100001138#9200009547" xmltv_id="truTVEast.us">truTV East</channel>
+    <channel site_id="9100001138#9200009547" xmltv_id="TruTVEast.us">Tru TV East</channel>
     <channel site_id="9100001138#9233005468" xmltv_id="TVLandEast.us">TV Land East</channel>
     <channel site_id="9100001138#9200012412" xmltv_id="TVG.us">TVG</channel>
-    <channel site_id="9100001138#9200000867" xmltv_id="UnivisionEast.us">Univisión East</channel>
+    <channel site_id="9100001138#9200000867" xmltv_id="UnivisionEste.us">Univisión Este</channel>
     <channel site_id="9100001138#9233004106" xmltv_id="USANetworkEast.us">USA Network East</channel>
     <channel site_id="9100001138#9233000037" xmltv_id="VH1East.us">VH1 East</channel>
     <channel site_id="9100001138#9200018188" xmltv_id="WeTVEast.us">We TV East</channel>

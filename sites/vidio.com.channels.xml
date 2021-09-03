@@ -1,42 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site site="vidio.com">
   <channels>
-    <channel site_id="204" xmltv_id="SCTV.id">SCTV</channel>
-    <channel site_id="205" xmltv_id="Indosiar.id">Indosiar</channel>
-    <channel site_id="665" xmltv_id="RCTI.id">RCTI</channel>
-    <channel site_id="206" xmltv_id="OChannel.id">O Channel</channel>
-    <channel site_id="7464" xmltv_id="AjwaTV.id">AJWA TV</channel>
-    <channel site_id="874" xmltv_id="KompasTV.id">Kompas TV</channel>
-    <channel site_id="6165" xmltv_id="BeritaSatu.id">BeritaSatu</channel>
-    <channel site_id="777" xmltv_id="MetroTV.id">Metro TV</channel>
-    <channel site_id="875" xmltv_id="NET.id">NET.</channel>
-    <channel site_id="733" xmltv_id="TransTV.id">Trans TV</channel>
-    <channel site_id="6441" xmltv_id="TVRINasional.id">TVRI Nasional</channel>
-    <channel site_id="734" xmltv_id="Trans7.id">Trans 7</channel>
-    <channel site_id="870" xmltv_id="MNCTV.id">MNCTV</channel>
-    <channel site_id="5415" xmltv_id="JakTV.id">Jak TV</channel>
-    <channel site_id="778" xmltv_id="GTV.id">GTV</channel>
-    <channel site_id="1561" xmltv_id="RTV.id">RTV</channel>
-    <channel site_id="5409" xmltv_id="iNews.id">iNews</channel>
-    <channel site_id="6166" xmltv_id="OShop.id">OShop</channel>
-    <channel site_id="6711" xmltv_id="MyTV.id">MyTV</channel>
-    <channel site_id="7432" xmltv_id="NusantaraTV.id">Nusantara TV</channel>
-    <channel site_id="6482" xmltv_id="DaaiTV.id">DAAI TV</channel>
-    <channel site_id="6685" xmltv_id="ChampionTV1.id">Champions TV 1</channel>
- 	  <channel site_id="6686" xmltv_id="ChampionTV2.id">Champions TV 2</channel>
-    <channel site_id="6786" xmltv_id="ChampionTV3.id">Champions TV 2</channel>
-    <channel site_id="7648" xmltv_id="FoxSportsAsia.us">Fox Sports Asia</channel>
-    <channel site_id="6299" xmltv_id="beINSports1Asia.qa">beIN Sports 1 Asia</channel>
-    <channel site_id="6317" xmltv_id="beINSports2Asia.qa">beIN Sports 2 Asia</channel>
+    <channel site_id="7150" xmltv_id="ABCTV.au">ABC TV</channel>
+    <channel site_id="7464" xmltv_id="AjwaTV.id">Ajwa TV</channel>
+    <channel site_id="6410" xmltv_id="AljazeeraEnglish.qa">Aljazeera English</channel>
+    <channel site_id="6784" xmltv_id="ArirangWorld.kr">Arirang World</channel>
+    <channel site_id="6299" xmltv_id="BeInSports1Indonesia.qa">BeIn Sports 1 Indonesia</channel>
+    <channel site_id="6317" xmltv_id="BeInSports2Indonesia.qa">BeIn Sports 2 Indonesia</channel>
+    <channel site_id="6165" xmltv_id="BeritaSatuHD.id">Berita Satu HD</channel>
+    <channel site_id="6685" xmltv_id="ChampionsTV1.id">Champions TV 1</channel>
+    <channel site_id="6686" xmltv_id="ChampionsTV2.id">Champions TV 2</channel>
+    <channel site_id="6786" xmltv_id="ChampionsTV3.id">Champions TV 3</channel>
+    <channel site_id="6411" xmltv_id="CNA.sg">CNA</channel>
+    <channel site_id="6482" xmltv_id="DaAiTV.tw">Da Ai TV</channel>
+    <channel site_id="5075" xmltv_id="DWEnglish.de">DW English</channel>
+    <channel site_id="6412" xmltv_id="EuroNewsEnglish.fr">EuroNews English</channel>
     <channel site_id="7649" xmltv_id="FoxSports2Asia.us">Fox Sports 2 Asia</channel>
     <channel site_id="7650" xmltv_id="FoxSports3Asia.us">Fox Sports 3 Asia</channel>
-    <channel site_id="6784" xmltv_id="ArirangTV.kr">Arirang TV</channel>
-    <channel site_id="6399" xmltv_id="ZeeBioskop.in">Zee Bioskop</channel>
-    <channel site_id="6411" xmltv_id="CNA.sg">CNA</channel>
-    <channel site_id="6410" xmltv_id="AlJazeeraEnglish.qa">Al Jazeera English</channel>
-    <channel site_id="6412" xmltv_id="Euronews.fr">Euronews</channel>
-    <channel site_id="5075" xmltv_id="DWEnglish.de">DW English</channel>
-    <channel site_id="7150" xmltv_id="ABCTV.au">ABC TV</channel>
+    <channel site_id="7648" xmltv_id="FoxSportsAsia.us">Fox Sports Asia</channel>
+    <channel site_id="778" xmltv_id="GTV.id">GTV</channel>
+    <channel site_id="205" xmltv_id="Indosiar.id">Indosiar</channel>
+    <channel site_id="5409" xmltv_id="INews.id">INews</channel>
+    <channel site_id="5415" xmltv_id="JakTV.id">Jak TV</channel>
+    <channel site_id="874" xmltv_id="KompasTV.id">Kompas TV</channel>
+    <channel site_id="777" xmltv_id="MetroTV.id">Metro TV</channel>
+    <channel site_id="870" xmltv_id="MNCTV.id">MNC TV</channel>
+    <channel site_id="6711" xmltv_id="MyTV.id">My TV</channel>
+    <channel site_id="875" xmltv_id="NET.id">NET</channel>
+    <channel site_id="7432" xmltv_id="Nusantara.id">Nusantara</channel>
+    <channel site_id="206" xmltv_id="OChannel.id">O Channel</channel>
+    <channel site_id="6166" xmltv_id="OShop.id">O Shop</channel>
+    <channel site_id="665" xmltv_id="RCTI.id">RCTI</channel>
+    <channel site_id="204" xmltv_id="SCTV.id">SCTV</channel>
     <channel site_id="6550" xmltv_id="SmithsonianChannelAsia.us">Smithsonian Channel Asia</channel>
+    <channel site_id="734" xmltv_id="Trans7.id">Trans 7</channel>
+    <channel site_id="733" xmltv_id="TransTV.id">Trans TV</channel>
+    <channel site_id="6441" xmltv_id="TVRINasional.id">TVRI Nasional</channel>
+    <channel site_id="6399" xmltv_id="ZeeBioskop.in">Zee Bioskop</channel>
   </channels>
 </site>

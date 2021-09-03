@@ -2,19 +2,18 @@
 <site site="mncvision.id">
   <channels>
     <channel site_id="350" xmltv_id="ABCAustraliaAsia.au">ABC Australia Asia</channel>
-    <channel site_id="331" xmltv_id="AlJazeeraEnglish.qa">Al Jazeera English</channel>
-    <channel site_id="93" xmltv_id="AlQuranAlKareemTV.sa">Al Quran Al Kareem TV</channel>
+    <channel site_id="331" xmltv_id="AljazeeraEnglish.qa">Aljazeera English</channel>
     <channel site_id="203" xmltv_id="AnimalPlanetSoutheastAsia.us">Animal Planet Southeast Asia</channel>
     <channel site_id="157" xmltv_id="AnimaxAsia.jp">Animax Asia</channel>
     <channel site_id="115" xmltv_id="ANTV.id">ANTV</channel>
     <channel site_id="351" xmltv_id="ArirangWorld.kr">Arirang World</channel>
     <channel site_id="240" xmltv_id="AsianFoodNetwork.sg">Asian Food Network</channel>
     <channel site_id="154" xmltv_id="AXNEastAsia.us">AXN East Asia</channel>
-    <channel site_id="40" xmltv_id="BabyTVAsia.uk">BabyTV Asia</channel>
+    <channel site_id="40" xmltv_id="BabyTVAsia.uk">Baby TV Asia</channel>
     <channel site_id="200" xmltv_id="BBCEarthAsia.uk">BBC Earth Asia</channel>
     <channel site_id="332" xmltv_id="BBCWorldNewsAsiaPacific.uk">BBC World News Asia Pacific</channel>
-    <channel site_id="305" xmltv_id="beINSports1Indonesia.qa">beIN Sports 1 Indonesia</channel>
-    <channel site_id="306" xmltv_id="beINSports2Indonesia.qa">beIN Sports 2 Indonesia</channel>
+    <channel site_id="305" xmltv_id="BeInSports1Indonesia.qa">BeIn Sports 1 Indonesia</channel>
+    <channel site_id="306" xmltv_id="BeInSports2Indonesia.qa">BeIn Sports 2 Indonesia</channel>
     <channel site_id="103" xmltv_id="BeritaSatuNewsChannel.id">Berita Satu News Channel</channel>
     <channel site_id="112" xmltv_id="Besmart.id">Besmart</channel>
     <channel site_id="338" xmltv_id="BloombergTVAsia.us">Bloomberg TV Asia</channel>
@@ -60,7 +59,7 @@
     <channel site_id="11" xmltv_id="HitsMovies.sg">Hits Movies</channel>
     <channel site_id="100" xmltv_id="IDXChannel.id">IDX Channel</channel>
     <channel site_id="78" xmltv_id="Indosiar.id">Indosiar</channel>
-    <channel site_id="83" xmltv_id="iNews.id">iNews</channel>
+    <channel site_id="83" xmltv_id="INews.id">INews</channel>
     <channel site_id="113" xmltv_id="JakTV.id">Jak TV</channel>
     <channel site_id="46" xmltv_id="KidsTV.id">Kids TV</channel>
     <channel site_id="161" xmltv_id="Kix.hk">Kix</channel>
@@ -68,25 +67,26 @@
     <channel site_id="91" xmltv_id="Life.id">Life</channel>
     <channel site_id="90" xmltv_id="LifestyleFashion.id">Lifestyle &amp; Fashion</channel>
     <channel site_id="167" xmltv_id="LifetimeAsia.us">Lifetime Asia</channel>
+    <channel site_id="88" xmltv_id="MShopSignature.id">M Shop Signature</channel>
+    <channel site_id="79" xmltv_id="MShopSuperSale.id">M Shop Super Sale!</channel>
     <channel site_id="107" xmltv_id="MetroTV.id">Metro TV</channel>
     <channel site_id="38" xmltv_id="MiaoMi.hk">Miao Mi</channel>
     <channel site_id="84" xmltv_id="MNCNews.id">MNC News</channel>
     <channel site_id="102" xmltv_id="MNCSports.id">MNC Sports</channel>
-    <channel site_id="82" xmltv_id="MNCTV.id">MNCTV</channel>
-    <channel site_id="88" xmltv_id="MShopSignature.id">MShop Signature</channel>
-    <channel site_id="79" xmltv_id="MShopSuperSale.id">MShop Super Sale!</channel>
+    <channel site_id="82" xmltv_id="MNCTV.id">MNC TV</channel>
     <channel site_id="111" xmltv_id="MusicTV.id">Music TV</channel>
     <channel site_id="92" xmltv_id="MuslimTV.id">Muslim TV</channel>
     <channel site_id="247" xmltv_id="NatGeoPeopleAsia.us">Nat Geo People Asia</channel>
     <channel site_id="202" xmltv_id="NationalGeographicAsia.us">National Geographic Asia</channel>
     <channel site_id="204" xmltv_id="NationalGeographicWildAsia.us">National Geographic Wild Asia</channel>
-    <channel site_id="116" xmltv_id="NET.id">NET.</channel>
+    <channel site_id="116" xmltv_id="NET.id">NET</channel>
     <channel site_id="355" xmltv_id="NHKWorldJapan.jp">NHK World Japan</channel>
     <channel site_id="354" xmltv_id="NHKWorldPremium.jp">NHK World Premium</channel>
     <channel site_id="37" xmltv_id="NickJrAsia.us">Nick Jr Asia</channel>
     <channel site_id="49" xmltv_id="NickelodeonSouthEastAsia.us">Nickelodeon South East Asia</channel>
     <channel site_id="95" xmltv_id="OKTV.id">OK TV</channel>
     <channel site_id="164" xmltv_id="One.in">One</channel>
+    <channel site_id="93" xmltv_id="QuranTV.sa">Quran TV</channel>
     <channel site_id="80" xmltv_id="RCTI.id">RCTI</channel>
     <channel site_id="89" xmltv_id="SCTV.id">SCTV</channel>
     <channel site_id="336" xmltv_id="SEAToday.id">SEA Today</channel>
@@ -98,9 +98,9 @@
     <channel site_id="248" xmltv_id="TLCSoutheastAsia.us">TLC Southeast Asia</channel>
     <channel site_id="110" xmltv_id="Trans7.id">Trans 7</channel>
     <channel site_id="87" xmltv_id="TransTV.id">Trans TV</channel>
-    <channel site_id="25" xmltv_id="tvNMoviesIndonesia.kr">tvN Movies Indonesia</channel>
-    <channel site_id="158" xmltv_id="tvNPremiumIndonesia.kr">tvN Premium Indonesia</channel>
-    <channel site_id="97" xmltv_id="tvOne.id">tvOne</channel>
+    <channel site_id="25" xmltv_id="TVNMoviesIndonesia.kr">TVN Movies Indonesia</channel>
+    <channel site_id="158" xmltv_id="TVNPremiumIndonesia.kr">TVN Premium Indonesia</channel>
+    <channel site_id="97" xmltv_id="TVOne.id">TVOne</channel>
     <channel site_id="118" xmltv_id="TVRINasional.id">TVRI Nasional</channel>
     <channel site_id="94" xmltv_id="VisionPrime.id">Vision Prime</channel>
     <channel site_id="163" xmltv_id="WarnerTVSoutheastAsia.us">Warner TV Southeast Asia</channel>
