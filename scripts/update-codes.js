@@ -3,6 +3,7 @@ const glob = require('glob')
 const path = require('path')
 const convert = require('xml-js')
 const axios = require('axios')
+const countries = require('./countries.json')
 
 async function main() {
   let codes = {}
@@ -57,7 +58,26 @@ async function main() {
     if (a.display_name.toLowerCase() > b.display_name.toLowerCase()) return 1
     return 0
   })
-  writeToFile('codes.json', convertToJSON(sorted))
+  writeToFile('.gh-pages/codes.json', convertToJSON(sorted))
+
+  const _items = {}
+  countries.forEach(country => {
+    _items[country.code] = {
+      ...country,
+      show: false,
+      channels: []
+    }
+  })
+
+  sorted.forEach(channel => {
+    const item = _items[channel.country]
+    if (item) {
+      channel.hash = `${channel.display_name}:${channel.tvg_id}`.toLowerCase()
+      item.channels.push(channel)
+    }
+  })
+  writeToFile('.gh-pages/_items.json', convertToJSON(_items))
+
   console.log('Done')
 }
 
