@@ -77,14 +77,14 @@
               >
                 <div
                   class="card-header is-shadowless is-clickable"
-                  @click="country.show = !country.show"
+                  @click="country.expanded = !country.expanded"
                 >
                   <span class="card-header-title" x-text="`${country.flag} ${country.name}`"></span>
                   <button class="card-header-icon" aria-label="more options">
                     <span class="icon">
                       <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
                         <path
-                          x-show="!country.show"
+                          x-show="!country.expanded"
                           fill="none"
                           stroke="currentColor"
                           stroke-linecap="round"
@@ -93,7 +93,7 @@
                           d="M112 184l144 144 144-144"
                         />
                         <path
-                          x-show="country.show"
+                          x-show="country.expanded"
                           fill="none"
                           stroke="currentColor"
                           stroke-linecap="round"
@@ -107,7 +107,7 @@
                 </div>
                 <div
                   class="card-content"
-                  x-show="country.show || (countryChannels.length && _query.length)"
+                  x-show="country.expanded || (countryChannels.length && _query.length)"
                 >
                   <div class="table-container">
                     <table class="table is-fullwidth">
