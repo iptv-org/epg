@@ -3,14 +3,14 @@
     "flag": "🇦🇫",
     "name": "Afghanistan",
     "code": "af",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "al": {
     "flag": "🇦🇱",
     "name": "Albania",
     "code": "al",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "3Plus.al",
@@ -417,7 +417,7 @@
     "flag": "🇩🇿",
     "name": "Algeria",
     "code": "dz",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "EchoroukTV.dz",
@@ -432,14 +432,14 @@
     "flag": "🇦🇸",
     "name": "American Samoa",
     "code": "as",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "ad": {
     "flag": "🇦🇩",
     "name": "Andorra",
     "code": "ad",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "AndorraTV.ad",
@@ -454,7 +454,7 @@
     "flag": "🇦🇴",
     "name": "Angola",
     "code": "ao",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "TPAInternacional.ao",
@@ -469,14 +469,14 @@
     "flag": "🇦🇬",
     "name": "Antigua & Barbuda",
     "code": "ag",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "ar": {
     "flag": "🇦🇷",
     "name": "Argentina",
     "code": "ar",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "AmericaTV.ar",
@@ -624,21 +624,21 @@
     "flag": "🇦🇲",
     "name": "Armenia",
     "code": "am",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "aw": {
     "flag": "🇦🇼",
     "name": "Aruba",
     "code": "aw",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "au": {
     "flag": "🇦🇺",
     "name": "Australia",
     "code": "au",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "10Bold.au",
@@ -737,7 +737,7 @@
     "flag": "🇦🇹",
     "name": "Austria",
     "code": "at",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "ATV.at",
@@ -822,28 +822,28 @@
     "flag": "🇦🇿",
     "name": "Azerbaijan",
     "code": "az",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "bs": {
     "flag": "🇧🇸",
     "name": "Bahamas",
     "code": "bs",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "bh": {
     "flag": "🇧🇭",
     "name": "Bahrain",
     "code": "bh",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "bd": {
     "flag": "🇧🇩",
     "name": "Bangladesh",
     "code": "bd",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "ATNBangla.bd",
@@ -879,7 +879,7 @@
     "flag": "🇧🇧",
     "name": "Barbados",
     "code": "bb",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "CaribVision.bb",
@@ -894,7 +894,7 @@
     "flag": "🇧🇾",
     "name": "Belarus",
     "code": "by",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "Belarus24.by",
@@ -909,7 +909,7 @@
     "flag": "🇧🇪",
     "name": "Belgium",
     "code": "be",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "Canvas.be",
@@ -1015,21 +1015,21 @@
     "flag": "🇧🇯",
     "name": "Benin",
     "code": "bj",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "bt": {
     "flag": "🇧🇹",
     "name": "Bhutan",
     "code": "bt",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "bo": {
     "flag": "🇧🇴",
     "name": "Bolivia",
     "code": "bo",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "AbyaYalaTV.bo",
@@ -1114,7 +1114,7 @@
     "flag": "🇧🇦",
     "name": "Bosnia",
     "code": "ba",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "AlfaTV.ba",
@@ -1241,14 +1241,14 @@
     "flag": "🇧🇼",
     "name": "Botswana",
     "code": "bw",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "br": {
     "flag": "🇧🇷",
     "name": "Brazil",
     "code": "br",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "AgroPlus.br",
@@ -2418,14 +2418,14 @@
     "flag": "🇧🇳",
     "name": "Brunei",
     "code": "bn",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "bg": {
     "flag": "🇧🇬",
     "name": "Bulgaria",
     "code": "bg",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "ActionPlus.bg",
@@ -2832,35 +2832,35 @@
     "flag": "🇧🇫",
     "name": "Burkina Faso",
     "code": "bf",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "bi": {
     "flag": "🇧🇮",
     "name": "Burundi",
     "code": "bi",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "kh": {
     "flag": "🇰🇭",
     "name": "Cambodia",
     "code": "kh",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "cm": {
     "flag": "🇨🇲",
     "name": "Cameroon",
     "code": "cm",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "ca": {
     "flag": "🇨🇦",
     "name": "Canada",
     "code": "ca",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "ASide.ca",
@@ -6697,7 +6697,7 @@
     "flag": "🇨🇻",
     "name": "Cape Verde",
     "code": "cv",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "TCVInternacional.cv",
@@ -6712,21 +6712,21 @@
     "flag": "🇨🇫",
     "name": "Central African Republic",
     "code": "cf",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "td": {
     "flag": "🇹🇩",
     "name": "Chad",
     "code": "td",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "cl": {
     "flag": "🇨🇱",
     "name": "Chile",
     "code": "cl",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "CDTV.cl",
@@ -6755,7 +6755,7 @@
     "flag": "🇨🇳",
     "name": "China",
     "code": "cn",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "CCTV3.cn",
@@ -6868,7 +6868,7 @@
     "flag": "🇨🇴",
     "name": "Colombia",
     "code": "co",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "CanalCapital.co",
@@ -6925,21 +6925,21 @@
     "flag": "🇰🇲",
     "name": "Comoros",
     "code": "km",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "cg": {
     "flag": "🇨🇬",
     "name": "Congo - Brazzaville",
     "code": "cg",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "cd": {
     "flag": "🇨🇩",
     "name": "Congo - Kinshasa",
     "code": "cd",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "BOneTV.cd",
@@ -6954,14 +6954,14 @@
     "flag": "🇨🇰",
     "name": "Cook Islands",
     "code": "ck",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "cr": {
     "flag": "🇨🇷",
     "name": "Costa Rica",
     "code": "cr",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "Enlace.cr",
@@ -6976,7 +6976,7 @@
     "flag": "🇭🇷",
     "name": "Croatia",
     "code": "hr",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "AuroraTV.hr",
@@ -7229,7 +7229,7 @@
     "flag": "🇨🇺",
     "name": "Cuba",
     "code": "cu",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "CubavisionInternacional.cu",
@@ -7244,21 +7244,21 @@
     "flag": "🇨🇼",
     "name": "Curaçao",
     "code": "cw",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "cy": {
     "flag": "🇨🇾",
     "name": "Cyprus",
     "code": "cy",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "cz": {
     "flag": "🇨🇿",
     "name": "Czechia",
     "code": "cz",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "BarrandovKrimi.cz",
@@ -7609,14 +7609,14 @@
     "flag": "🇨🇮",
     "name": "Côte d’Ivoire",
     "code": "ci",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "dk": {
     "flag": "🇩🇰",
     "name": "Denmark",
     "code": "dk",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "DR1.dk",
@@ -7638,14 +7638,14 @@
     "flag": "🇩🇯",
     "name": "Djibouti",
     "code": "dj",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "do": {
     "flag": "🇩🇴",
     "name": "Dominican Republic",
     "code": "do",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "Telecentro.do",
@@ -7667,7 +7667,7 @@
     "flag": "🇪🇨",
     "name": "Ecuador",
     "code": "ec",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "CanalUno.ec",
@@ -7682,7 +7682,7 @@
     "flag": "🇪🇬",
     "name": "Egypt",
     "code": "eg",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "AlHayat.eg",
@@ -7893,28 +7893,28 @@
     "flag": "🇸🇻",
     "name": "El Salvador",
     "code": "sv",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "gq": {
     "flag": "🇬🇶",
     "name": "Equatorial Guinea",
     "code": "gq",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "er": {
     "flag": "🇪🇷",
     "name": "Eritrea",
     "code": "er",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "ee": {
     "flag": "🇪🇪",
     "name": "Estonia",
     "code": "ee",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "7D7.ee",
@@ -7936,35 +7936,35 @@
     "flag": "🇸🇿",
     "name": "Eswatini",
     "code": "sz",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "et": {
     "flag": "🇪🇹",
     "name": "Ethiopia",
     "code": "et",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "fo": {
     "flag": "🇫🇴",
     "name": "Faroe Islands",
     "code": "fo",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "fj": {
     "flag": "🇫🇯",
     "name": "Fiji",
     "code": "fj",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "fi": {
     "flag": "🇫🇮",
     "name": "Finland",
     "code": "fi",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "Jim.fi",
@@ -8049,7 +8049,7 @@
     "flag": "🇫🇷",
     "name": "France",
     "code": "fr",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "6ter.fr",
@@ -9289,42 +9289,42 @@
     "flag": "🇬🇫",
     "name": "French Guiana",
     "code": "gf",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "pf": {
     "flag": "🇵🇫",
     "name": "French Polynesia",
     "code": "pf",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "tf": {
     "flag": "🇹🇫",
     "name": "French Southern Territories",
     "code": "tf",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "ga": {
     "flag": "🇬🇦",
     "name": "Gabon",
     "code": "ga",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "gm": {
     "flag": "🇬🇲",
     "name": "Gambia",
     "code": "gm",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "ge": {
     "flag": "🇬🇪",
     "name": "Georgia",
     "code": "ge",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "AjaraTV.ge",
@@ -9339,7 +9339,7 @@
     "flag": "🇩🇪",
     "name": "Germany",
     "code": "de",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "123TV.de",
@@ -10103,14 +10103,14 @@
     "flag": "🇬🇭",
     "name": "Ghana",
     "code": "gh",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "gr": {
     "flag": "🇬🇷",
     "name": "Greece",
     "code": "gr",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "4E.gr",
@@ -10447,21 +10447,21 @@
     "flag": "🇬🇵",
     "name": "Guadeloupe",
     "code": "gp",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "gu": {
     "flag": "🇬🇺",
     "name": "Guam",
     "code": "gu",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "gt": {
     "flag": "🇬🇹",
     "name": "Guatemala",
     "code": "gt",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "CanalAntigua.gt",
@@ -10476,28 +10476,28 @@
     "flag": "🇬🇳",
     "name": "Guinea",
     "code": "gn",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "gw": {
     "flag": "🇬🇼",
     "name": "Guinea-Bissau",
     "code": "gw",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "ht": {
     "flag": "🇭🇹",
     "name": "Haiti",
     "code": "ht",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "hn": {
     "flag": "🇭🇳",
     "name": "Honduras",
     "code": "hn",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "CCIChannel.hn",
@@ -10519,7 +10519,7 @@
     "flag": "🇭🇰",
     "name": "Hong Kong",
     "code": "hk",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "CelestialClassicMovies.hk",
@@ -10702,7 +10702,7 @@
     "flag": "🇭🇺",
     "name": "Hungary",
     "code": "hu",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "ApostolTV.hu",
@@ -11186,14 +11186,14 @@
     "flag": "🇮🇸",
     "name": "Iceland",
     "code": "is",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "in": {
     "flag": "🇮🇳",
     "name": "India",
     "code": "in",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "AajTak.in",
@@ -11607,7 +11607,7 @@
     "flag": "🇮🇩",
     "name": "Indonesia",
     "code": "id",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "ANTV.id",
@@ -11853,7 +11853,7 @@
     "flag": "🇮🇷",
     "name": "Iran",
     "code": "ir",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "IFilmArabic.ir",
@@ -11868,7 +11868,7 @@
     "flag": "🇮🇶",
     "name": "Iraq",
     "code": "iq",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "AlRasheedTV.iq",
@@ -11897,7 +11897,7 @@
     "flag": "🇮🇪",
     "name": "Ireland",
     "code": "ie",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "OireachtasTV.ie",
@@ -11933,7 +11933,7 @@
     "flag": "🇮🇱",
     "name": "Israel",
     "code": "il",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "I24NewsEnglish.il",
@@ -11962,7 +11962,7 @@
     "flag": "🇮🇹",
     "name": "Italy",
     "code": "it",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "20Mediaset.it",
@@ -12824,7 +12824,7 @@
     "flag": "🇯🇲",
     "name": "Jamaica",
     "code": "jm",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "SportsMax.jm",
@@ -12839,7 +12839,7 @@
     "flag": "🇯🇵",
     "name": "Japan",
     "code": "jp",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "AnimaxAsia.jp",
@@ -12868,7 +12868,7 @@
     "flag": "🇯🇴",
     "name": "Jordan",
     "code": "jo",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "AmmanTV.jo",
@@ -12890,7 +12890,7 @@
     "flag": "🇰🇿",
     "name": "Kazakhstan",
     "code": "kz",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "31Kanal.kz",
@@ -12954,28 +12954,28 @@
     "flag": "🇰🇪",
     "name": "Kenya",
     "code": "ke",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "ki": {
     "flag": "🇰🇮",
     "name": "Kiribati",
     "code": "ki",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "xk": {
     "flag": "🇽🇰",
     "name": "Kosovo",
     "code": "xk",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "kw": {
     "flag": "🇰🇼",
     "name": "Kuwait",
     "code": "kw",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "AlraiTV.kw",
@@ -13011,21 +13011,21 @@
     "flag": "🇰🇬",
     "name": "Kyrgyzstan",
     "code": "kg",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "la": {
     "flag": "🇱🇦",
     "name": "Laos",
     "code": "la",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "lv": {
     "flag": "🇱🇻",
     "name": "Latvia",
     "code": "lv",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "3PlusLatvija.lv",
@@ -13124,7 +13124,7 @@
     "flag": "🇱🇧",
     "name": "Lebanon",
     "code": "lb",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "AlJadeed.lb",
@@ -13181,42 +13181,42 @@
     "flag": "🇱🇸",
     "name": "Lesotho",
     "code": "ls",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "lr": {
     "flag": "🇱🇷",
     "name": "Liberia",
     "code": "lr",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "ly": {
     "flag": "🇱🇾",
     "name": "Libya",
     "code": "ly",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "li": {
     "flag": "🇱🇮",
     "name": "Liechtenstein",
     "code": "li",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "lt": {
     "flag": "🇱🇹",
     "name": "Lithuania",
     "code": "lt",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "lu": {
     "flag": "🇱🇺",
     "name": "Luxembourg",
     "code": "lu",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "LuxeTV.lu",
@@ -13245,28 +13245,28 @@
     "flag": "🇲🇴",
     "name": "Macao",
     "code": "mo",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "mg": {
     "flag": "🇲🇬",
     "name": "Madagascar",
     "code": "mg",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "mw": {
     "flag": "🇲🇼",
     "name": "Malawi",
     "code": "mw",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "my": {
     "flag": "🇲🇾",
     "name": "Malaysia",
     "code": "my",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "8TV.my",
@@ -13666,63 +13666,63 @@
     "flag": "🇲🇻",
     "name": "Maldives",
     "code": "mv",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "ml": {
     "flag": "🇲🇱",
     "name": "Mali",
     "code": "ml",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "mt": {
     "flag": "🇲🇹",
     "name": "Malta",
     "code": "mt",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "mh": {
     "flag": "🇲🇭",
     "name": "Marshall Islands",
     "code": "mh",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "mq": {
     "flag": "🇲🇶",
     "name": "Martinique",
     "code": "mq",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "mr": {
     "flag": "🇲🇷",
     "name": "Mauritania",
     "code": "mr",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "mu": {
     "flag": "🇲🇺",
     "name": "Mauritius",
     "code": "mu",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "yt": {
     "flag": "🇾🇹",
     "name": "Mayotte",
     "code": "yt",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "mx": {
     "flag": "🇲🇽",
     "name": "Mexico",
     "code": "mx",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "ADN40.mx",
@@ -13884,14 +13884,14 @@
     "flag": "🇫🇲",
     "name": "Micronesia",
     "code": "fm",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "md": {
     "flag": "🇲🇩",
     "name": "Moldova",
     "code": "md",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "JurnalTV.md",
@@ -13913,7 +13913,7 @@
     "flag": "🇲🇨",
     "name": "Monaco",
     "code": "mc",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "SuperyachtTV.mc",
@@ -13935,7 +13935,7 @@
     "flag": "🇲🇳",
     "name": "Mongolia",
     "code": "mn",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "ETVHD.mn",
@@ -13950,7 +13950,7 @@
     "flag": "🇲🇪",
     "name": "Montenegro",
     "code": "me",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "TVVijesti.me",
@@ -13986,7 +13986,7 @@
     "flag": "🇲🇦",
     "name": "Morocco",
     "code": "ma",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "2MMonde.ma",
@@ -14008,42 +14008,42 @@
     "flag": "🇲🇿",
     "name": "Mozambique",
     "code": "mz",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "mm": {
     "flag": "🇲🇲",
     "name": "Myanmar",
     "code": "mm",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "na": {
     "flag": "🇳🇦",
     "name": "Namibia",
     "code": "na",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "nr": {
     "flag": "🇳🇷",
     "name": "Nauru",
     "code": "nr",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "np": {
     "flag": "🇳🇵",
     "name": "Nepal",
     "code": "np",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "nl": {
     "flag": "🇳🇱",
     "name": "Netherlands",
     "code": "nl",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "BVNEuropa.nl",
@@ -14170,14 +14170,14 @@
     "flag": "🇳🇨",
     "name": "New Caledonia",
     "code": "nc",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "nz": {
     "flag": "🇳🇿",
     "name": "New Zealand",
     "code": "nz",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "ZooMooBrasil.nz",
@@ -14192,49 +14192,49 @@
     "flag": "🇳🇮",
     "name": "Nicaragua",
     "code": "ni",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "ne": {
     "flag": "🇳🇪",
     "name": "Niger",
     "code": "ne",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "ng": {
     "flag": "🇳🇬",
     "name": "Nigeria",
     "code": "ng",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "nu": {
     "flag": "🇳🇺",
     "name": "Niue",
     "code": "nu",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "nf": {
     "flag": "🇳🇫",
     "name": "Norfolk Island",
     "code": "nf",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "kp": {
     "flag": "🇰🇵",
     "name": "North Korea",
     "code": "kp",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "mk": {
     "flag": "🇲🇰",
     "name": "North Macedonia",
     "code": "mk",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "Alsat.mk",
@@ -14298,28 +14298,28 @@
     "flag": "🇲🇵",
     "name": "Northern Mariana Islands",
     "code": "mp",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "no": {
     "flag": "🇳🇴",
     "name": "Norway",
     "code": "no",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "om": {
     "flag": "🇴🇲",
     "name": "Oman",
     "code": "om",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "pk": {
     "flag": "🇵🇰",
     "name": "Pakistan",
     "code": "pk",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "92News.pk",
@@ -14362,14 +14362,14 @@
     "flag": "🇵🇼",
     "name": "Palau",
     "code": "pw",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "ps": {
     "flag": "🇵🇸",
     "name": "Palestine",
     "code": "ps",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "Musawa.ps",
@@ -14384,28 +14384,28 @@
     "flag": "🇵🇦",
     "name": "Panama",
     "code": "pa",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "pg": {
     "flag": "🇵🇬",
     "name": "Papua New Guinea",
     "code": "pg",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "py": {
     "flag": "🇵🇾",
     "name": "Paraguay",
     "code": "py",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "pe": {
     "flag": "🇵🇪",
     "name": "Peru",
     "code": "pe",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "MovistarDeportes.pe",
@@ -14441,7 +14441,7 @@
     "flag": "🇵🇭",
     "name": "Philippines",
     "code": "ph",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "GMALifeTV.ph",
@@ -14491,14 +14491,14 @@
     "flag": "🇵🇳",
     "name": "Pitcairn Islands",
     "code": "pn",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "pl": {
     "flag": "🇵🇱",
     "name": "Poland",
     "code": "pl",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "4FunDance.pl",
@@ -15234,7 +15234,7 @@
     "flag": "🇵🇹",
     "name": "Portugal",
     "code": "pt",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "ABolaTV.pt",
@@ -15536,14 +15536,14 @@
     "flag": "🇵🇷",
     "name": "Puerto Rico",
     "code": "pr",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "qa": {
     "flag": "🇶🇦",
     "name": "Qatar",
     "code": "qa",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "AljazeeraBalkans.qa",
@@ -15866,7 +15866,7 @@
     "flag": "🇷🇴",
     "name": "Romania",
     "code": "ro",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "AgroTV.ro",
@@ -16441,7 +16441,7 @@
     "flag": "🇷🇺",
     "name": "Russia",
     "code": "ru",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "1HDMusicTV.ru",
@@ -18059,28 +18059,28 @@
     "flag": "🇷🇼",
     "name": "Rwanda",
     "code": "rw",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "re": {
     "flag": "🇷🇪",
     "name": "Réunion",
     "code": "re",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "ws": {
     "flag": "🇼🇸",
     "name": "Samoa",
     "code": "ws",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "sm": {
     "flag": "🇸🇲",
     "name": "San Marino",
     "code": "sm",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "SanMarinoRTV.sm",
@@ -18095,7 +18095,7 @@
     "flag": "🇸🇦",
     "name": "Saudi Arabia",
     "code": "sa",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "AlresalahTV.sa",
@@ -18236,14 +18236,14 @@
     "flag": "🇸🇳",
     "name": "Senegal",
     "code": "sn",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "rs": {
     "flag": "🇷🇸",
     "name": "Serbia",
     "code": "rs",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "ArenaEsport.rs",
@@ -19042,21 +19042,21 @@
     "flag": "🇸🇨",
     "name": "Seychelles",
     "code": "sc",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "sl": {
     "flag": "🇸🇱",
     "name": "Sierra Leone",
     "code": "sl",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "sg": {
     "flag": "🇸🇬",
     "name": "Singapore",
     "code": "sg",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "AsianFoodNetwork.sg",
@@ -19099,7 +19099,7 @@
     "flag": "🇸🇰",
     "name": "Slovakia",
     "code": "sk",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "ArenaSport1.sk",
@@ -19352,7 +19352,7 @@
     "flag": "🇸🇮",
     "name": "Slovenia",
     "code": "si",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "Brio.si",
@@ -19472,28 +19472,28 @@
     "flag": "🇸🇧",
     "name": "Solomon Islands",
     "code": "sb",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "so": {
     "flag": "🇸🇴",
     "name": "Somalia",
     "code": "so",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "za": {
     "flag": "🇿🇦",
     "name": "South Africa",
     "code": "za",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "kr": {
     "flag": "🇰🇷",
     "name": "South Korea",
     "code": "kr",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "ArirangWorld.kr",
@@ -19571,14 +19571,14 @@
     "flag": "🇸🇸",
     "name": "South Sudan",
     "code": "ss",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "es": {
     "flag": "🇪🇸",
     "name": "Spain",
     "code": "es",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "0.es",
@@ -19992,42 +19992,42 @@
     "flag": "🇱🇰",
     "name": "Sri Lanka",
     "code": "lk",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "bl": {
     "flag": "🇧🇱",
     "name": "St. Barthélemy",
     "code": "bl",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "sh": {
     "flag": "🇸🇭",
     "name": "St. Helena",
     "code": "sh",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "mf": {
     "flag": "🇲🇫",
     "name": "St. Martin",
     "code": "mf",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "sd": {
     "flag": "🇸🇩",
     "name": "Sudan",
     "code": "sd",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "se": {
     "flag": "🇸🇪",
     "name": "Sweden",
     "code": "se",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "CMoreFirst.se",
@@ -20280,7 +20280,7 @@
     "flag": "🇨🇭",
     "name": "Switzerland",
     "code": "ch",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "DieNeueZeitTV.ch",
@@ -20330,7 +20330,7 @@
     "flag": "🇸🇾",
     "name": "Syria",
     "code": "sy",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "SamaTV.sy",
@@ -20352,14 +20352,14 @@
     "flag": "🇸🇹",
     "name": "São Tomé & Príncipe",
     "code": "st",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "tw": {
     "flag": "🇹🇼",
     "name": "Taiwan",
     "code": "tw",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "CTITVAsia.tw",
@@ -20430,63 +20430,63 @@
     "flag": "🇹🇯",
     "name": "Tajikistan",
     "code": "tj",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "tz": {
     "flag": "🇹🇿",
     "name": "Tanzania",
     "code": "tz",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "th": {
     "flag": "🇹🇭",
     "name": "Thailand",
     "code": "th",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "tl": {
     "flag": "🇹🇱",
     "name": "Timor-Leste",
     "code": "tl",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "tg": {
     "flag": "🇹🇬",
     "name": "Togo",
     "code": "tg",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "tk": {
     "flag": "🇹🇰",
     "name": "Tokelau",
     "code": "tk",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "to": {
     "flag": "🇹🇴",
     "name": "Tonga",
     "code": "to",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "tt": {
     "flag": "🇹🇹",
     "name": "Trinidad & Tobago",
     "code": "tt",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "tn": {
     "flag": "🇹🇳",
     "name": "Tunisia",
     "code": "tn",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "Nessma.tn",
@@ -20508,7 +20508,7 @@
     "flag": "🇹🇷",
     "name": "Turkey",
     "code": "tr",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "24TV.tr",
@@ -20810,35 +20810,35 @@
     "flag": "🇹🇲",
     "name": "Turkmenistan",
     "code": "tm",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "tv": {
     "flag": "🇹🇻",
     "name": "Tuvalu",
     "code": "tv",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "vi": {
     "flag": "🇻🇮",
     "name": "U.S. Virgin Islands",
     "code": "vi",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "ug": {
     "flag": "🇺🇬",
     "name": "Uganda",
     "code": "ug",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "ua": {
     "flag": "🇺🇦",
     "name": "Ukraine",
     "code": "ua",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "1Plus1.ua",
@@ -21245,7 +21245,7 @@
     "flag": "🇦🇪",
     "name": "United Arab Emirates",
     "code": "ae",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "AbuDhabiDrama.ae",
@@ -21554,7 +21554,7 @@
     "flag": "🇬🇧",
     "name": "United Kingdom",
     "code": "uk",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "4Music.uk",
@@ -22556,7 +22556,7 @@
     "flag": "🇺🇸",
     "name": "United States",
     "code": "us",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "13Ulica.us",
@@ -55870,28 +55870,28 @@
     "flag": "🇺🇾",
     "name": "Uruguay",
     "code": "uy",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "uz": {
     "flag": "🇺🇿",
     "name": "Uzbekistan",
     "code": "uz",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "vu": {
     "flag": "🇻🇺",
     "name": "Vanuatu",
     "code": "vu",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "va": {
     "flag": "🇻🇦",
     "name": "Vatican City",
     "code": "va",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "TV2000.va",
@@ -55906,7 +55906,7 @@
     "flag": "🇻🇪",
     "name": "Venezuela",
     "code": "ve",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "IVCInternacional.ve",
@@ -55942,7 +55942,7 @@
     "flag": "🇻🇳",
     "name": "Vietnam",
     "code": "vn",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "NetViet.vn",
@@ -55985,28 +55985,28 @@
     "flag": "🇼🇫",
     "name": "Wallis & Futuna",
     "code": "wf",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "eh": {
     "flag": "🇪🇭",
     "name": "Western Sahara",
     "code": "eh",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "ye": {
     "flag": "🇾🇪",
     "name": "Yemen",
     "code": "ye",
-    "show": false,
+    "expanded": false,
     "channels": []
   },
   "zm": {
     "flag": "🇿🇲",
     "name": "Zambia",
     "code": "zm",
-    "show": false,
+    "expanded": false,
     "channels": [
       {
         "tvg_id": "ZNBCTV1.zm",
@@ -56042,7 +56042,7 @@
     "flag": "🇿🇼",
     "name": "Zimbabwe",
     "code": "zw",
-    "show": false,
+    "expanded": false,
     "channels": []
   }
 }
