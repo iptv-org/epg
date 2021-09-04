@@ -6,39 +6,9 @@ const axios = require('axios')
 const countries = require('./countries.json')
 
 async function main() {
-  let codes = {}
   console.log('Starting...')
-  const files = [
-    'andorradifusio.ad',
-    'astro.com.my',
-    'comteco.com.bo',
-    'cosmote.gr',
-    'digiturk.com.tr',
-    'elcinema.com',
-    'guidatv.sky.it',
-    'hd-plus.de',
-    'm.tv.sms.cz',
-    'maxtv.hrvatskitelekom.hr',
-    'mediaset.it',
-    'meo.pt',
-    'mi.tv',
-    'mncvision.id',
-    'ontvtonight.com',
-    'programacion-tv.elpais.com',
-    'programetv.ro',
-    'programme-tv.net',
-    'programtv.onet.pl',
-    'telkussa.fi',
-    'tv.lv',
-    'tv.yandex.ru',
-    'tvgid.ua',
-    'tvguide.com',
-    'tvprofil.com',
-    'tvtv.ca',
-    'tvtv.us',
-    'vidio.com',
-    'znbc.co.zm'
-  ]
+
+  let codes = {}
   for (const filename of files) {
     const url = `https://iptv-org.github.io/epg/guides/${filename}.guide.xml`
     console.log(`Loading '${url}'...`)
@@ -96,15 +66,6 @@ function convertToJSON(arr) {
   return JSON.stringify(arr, null, 2)
 }
 
-function convertToCSV(arr) {
-  let string = 'display_name,tvg_id,country,logo\n'
-  for (const item of arr) {
-    string += `${item.display_name},${item.tvg_id},${item.country},${item.logo}\n`
-  }
-
-  return string
-}
-
 function parseChannels(file) {
   const result = convert.xml2js(file)
   const tv = result.elements.find(el => el.name === 'tv')
@@ -121,8 +82,40 @@ function parseChannels(file) {
         : null
       const country = tvg_id.split('.')[1]
 
-      return { tvg_id, logo, display_name, country }
+      return { tvg_id, display_name, logo, country }
     })
 }
+
+const files = [
+  'andorradifusio.ad',
+  'astro.com.my',
+  'comteco.com.bo',
+  'cosmote.gr',
+  'digiturk.com.tr',
+  'elcinema.com',
+  'guidatv.sky.it',
+  'hd-plus.de',
+  'm.tv.sms.cz',
+  'maxtv.hrvatskitelekom.hr',
+  'mediaset.it',
+  'meo.pt',
+  'mi.tv',
+  'mncvision.id',
+  'ontvtonight.com',
+  'programacion-tv.elpais.com',
+  'programetv.ro',
+  'programme-tv.net',
+  'programtv.onet.pl',
+  'telkussa.fi',
+  'tv.lv',
+  'tv.yandex.ru',
+  'tvgid.ua',
+  'tvguide.com',
+  'tvprofil.com',
+  'tvtv.ca',
+  'tvtv.us',
+  'vidio.com',
+  'znbc.co.zm'
+]
 
 main()
