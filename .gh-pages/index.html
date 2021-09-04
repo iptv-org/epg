@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iptv-org/epg</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
+  </head>
+  <body>
+    <div class="section">
+      <div class="container" x-data="data">
+        <div class="columns is-centered">
+          <div class="column is-9">
+            <div class="field is-grouped">
+              <div class="control is-expanded has-icons-right" :class="{ 'is-loading': isLoading }">
+                <input class="input" type="search" x-model="query" />
+                <span class="icon is-small is-right">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    style="width: 1.25rem; height: 1.25rem"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="M456.69 421.39L362.6 327.3a173.81 173.81 0 0034.84-104.58C397.44 126.38 319.06 48 222.72 48S48 126.38 48 222.72s78.38 174.72 174.72 174.72A173.81 173.81 0 00327.3 362.6l94.09 94.09a25 25 0 0035.3-35.3zM97.92 222.72a124.8 124.8 0 11124.8 124.8 124.95 124.95 0 01-124.8-124.8z"
+                    />
+                  </svg>
+                </span>
+              </div>
+            </div>
+
+            <template x-for="country in countries">
+              <div
+                class="card mb-3 is-shadowless"
+                style="border: 1px solid #dbdbdb"
+                x-data="{ 
+                  get countryChannels() { 
+                    return country.channels.filter(c => {
+                      return c.hash.includes(query.toLowerCase())
+                    })
+                  } 
+                }"
+                x-show="countryChannels.length > 0"
+              >
+                <div
+                  class="card-header is-shadowless is-clickable"
+                  @click="country.show = !country.show"
+                >
+                  <p class="card-header-title" x-text="country.name"></p>
+                  <button class="card-header-icon" aria-label="more options">
+                    <span class="icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                        <path
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="48"
+                          d="M112 184l144 144 144-144"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+                <div
+                  class="card-content"
+                  x-show="country.show || (query.length && countryChannels.length)"
+                >
+                  <table class="table is-fullwidth">
+                    <thead>
+                      <tr>
+                        <td></td>
+                        <td>Name</td>
+                        <td>TVG-ID</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <template x-for="channel in countryChannels">
+                        <tr>
+                          <td style="width: 150px; text-align: center">
+                            <img
+                              x-show="channel.logo"
+                              :src="channel.logo"
+                              style="max-width: 100px; max-height: 50px; vertical-align: middle"
+                            />
+                          </td>
+                          <td class="is-vcentered"><div x-text="channel.display_name"></div></td>
+                          <td class="is-vcentered"><code x-text="channel.tvg_id"></code></td>
+                        </tr>
+                      </template>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </template>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="countries.js"></script>
+    <script>
+      document.addEventListener('alpine:init', () => {
+        Alpine.data('data', () => ({
+          countries,
+          query: '',
+          isLoading: true,
+
+          async init() {
+            const channels = await axios
+              .get('http://iptv-org.local/epg/codes.json')
+              .then(r => r.data)
+              .catch(console.log)
+
+            channels.forEach(channel => {
+              if (this.countries[channel.country]) {
+                channel.hash = JSON.stringify(channel).toLowerCase()
+                this.countries[channel.country].channels.push(channel)
+              }
+            })
+
+            this.isLoading = false
+          }
+        }))
+      })
+    </script>
+  </body>
+</html>
