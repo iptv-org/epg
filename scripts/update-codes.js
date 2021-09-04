@@ -35,7 +35,8 @@ async function main() {
       if (a.display_name.toLowerCase() > b.display_name.toLowerCase()) return 1
       return 0
     })
-    writeToFile('codes.csv', convertToCSV(sorted))
+    writeToFile('codes.json', convertToJSON(sorted))
+    // writeToFile('codes.csv', convertToCSV(sorted))
     console.log('Done')
   })
 }
@@ -48,6 +49,10 @@ function writeToFile(filename, data) {
   }
 
   fs.writeFileSync(path.resolve(filename), data)
+}
+
+function convertToJSON(arr) {
+  return JSON.stringify(arr, null, 2)
 }
 
 function convertToCSV(arr) {
