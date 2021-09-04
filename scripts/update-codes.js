@@ -62,7 +62,7 @@ function writeToFile(filename, data) {
 }
 
 function convertToJSON(arr) {
-  return JSON.stringify(arr, null, 2)
+  return JSON.stringify(arr)
 }
 
 function parseChannels(file) {
