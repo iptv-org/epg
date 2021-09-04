@@ -5,40 +5,60 @@ const convert = require('xml-js')
 const axios = require('axios')
 
 async function main() {
-  const iptvChannels = await axios.get('https://iptv-org.github.io/iptv/channels.json').then(response => response.data).catch(console.log)
-
   let codes = {}
   console.log('Starting...')
-  glob('sites/**/*.xml', null, function (er, files) {
-    files.forEach(filename => {
-      const channels = parseChannels(filename)
-      channels.forEach(channel => {
-        if (!codes[channel.xmltv_id + channel.name]) {
-          let logo = channel.logo || ''
-          if(!logo) {
-            let ch = iptvChannels.find(ch => ch.tvg.id === channel.xmltv_id)
-            if(ch && ch.logo) logo = ch.logo
-          }
-
-          codes[channel.xmltv_id + channel.name] = {
-            display_name: channel.name,
-            tvg_id: channel.xmltv_id,
-            country: channel.xmltv_id.split('.')[1],
-            logo,
-          }
-        }
-      })
+  const files = [
+    'telkussa.fi',
+    'andorradifusio.ad',
+    'mediaset.it',
+    'znbc.co.zm',
+    'hd-plus.de',
+    'astro.com.my',
+    'comteco.com.bo',
+    'mi.tv',
+    'meo.pt',
+    'tvgid.ua',
+    'm.tv.sms.cz',
+    'cosmote.gr',
+    'programetv.ro',
+    'programtv.onet.pl',
+    'digiturk.com.tr',
+    'programme-tv.net',
+    'programacion-tv.elpais.com',
+    'guidatv.sky.it',
+    'ontvtonight.com',
+    'tv.yandex.ru',
+    'tvtv.ca',
+    'tvtv.us',
+    'tv.lv',
+    'elcinema.com',
+    'maxtv.hrvatskitelekom.hr',
+    'mncvision.id',
+    'tvguide.com',
+    'tvprofil.com'
+  ]
+  for (const filename of files) {
+    const url = `https://iptv-org.github.io/epg/guides/${filename}.guide.xml`
+    console.log(`Loading '${url}'...`)
+    const file = await axios
+      .get(url)
+      .then(r => r.data)
+      .catch(console.log)
+    const channels = parseChannels(file)
+    channels.forEach(channel => {
+      if (!codes[channel.tvg_id + channel.display_name]) {
+        codes[channel.tvg_id + channel.display_name] = channel
+      }
     })
+  }
 
-    const sorted = Object.values(codes).sort((a, b) => {
-      if (a.display_name.toLowerCase() < b.display_name.toLowerCase()) return -1
-      if (a.display_name.toLowerCase() > b.display_name.toLowerCase()) return 1
-      return 0
-    })
-    writeToFile('codes.json', convertToJSON(sorted))
-    // writeToFile('codes.csv', convertToCSV(sorted))
-    console.log('Done')
+  const sorted = Object.values(codes).sort((a, b) => {
+    if (a.display_name.toLowerCase() < b.display_name.toLowerCase()) return -1
+    if (a.display_name.toLowerCase() > b.display_name.toLowerCase()) return 1
+    return 0
   })
+  writeToFile('codes.json', convertToJSON(sorted))
+  console.log('Done')
 }
 
 function writeToFile(filename, data) {
@@ -64,22 +84,23 @@ function convertToCSV(arr) {
   return string
 }
 
-function parseChannels(filename) {
-  if (!filename) throw new Error('Path to [site].channels.xml is missing')
-  console.log(`Loading '${filename}'...`)
+function parseChannels(file) {
+  const result = convert.xml2js(file)
+  const tv = result.elements.find(el => el.name === 'tv')
 
-  const xml = fs.readFileSync(path.resolve(filename), { encoding: 'utf-8' })
-  const result = convert.xml2js(xml)
-  const site = result.elements.find(el => el.name === 'site')
-  const channels = site.elements.find(el => el.name === 'channels')
-
-  return channels.elements
+  return tv.elements
     .filter(el => el.name === 'channel')
-    .map(el => {
-      const channel = el.attributes
-      channel.name = el.elements.find(el => el.type === 'text').text
+    .map(channel => {
+      const tvg_id = (channel.attributes || { id: '' }).id
+      const logo = (channel.elements.find(el => el.name === 'icon') || { attributes: { src: '' } })
+        .attributes.src
+      const displayName = channel.elements.find(el => el.name === 'display-name')
+      const display_name = displayName
+        ? displayName.elements.find(el => el.type === 'text').text
+        : null
+      const country = tvg_id.split('.')[1]
 
-      return channel
+      return { tvg_id, logo, display_name, country }
     })
 }
 
