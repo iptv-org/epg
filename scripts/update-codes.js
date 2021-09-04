@@ -64,7 +64,7 @@ async function main() {
   countries.forEach(country => {
     _items[country.code] = {
       ...country,
-      show: false,
+      expanded: false,
       channels: []
     }
   })
