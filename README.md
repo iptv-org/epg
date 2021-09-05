@@ -83,7 +83,7 @@ To load a program guide, all you need to do is copy the link to one of the guide
 
 ## List of supported channels
 
-https://iptv-org.github.io/epg
+https://iptv-org.github.io/epg/index.html
 
 ## For Developers
 
