@@ -34,22 +34,22 @@ module.exports = {
     const broadcastCards = dom.window.document.querySelectorAll('.singleBroadcastCard')
     broadcastCards.forEach(card => {
       const hour = (
-        card.getElementsByClassName('singleBroadcastCard-hour')[0] || { textContent: '' }
+        card.getElementsByClassName('mainBroadcastCard-startingHour')[0] || { textContent: '' }
       ).textContent
         .toString()
         .trim()
       const durationContent = (
-        card.getElementsByClassName('singleBroadcastCard-durationContent')[0] || { textContent: '' }
+        card.getElementsByClassName('mainBroadcastCard-durationContent')[0] || { textContent: '' }
       ).textContent
         .toString()
         .trim()
       const title = (
-        card.getElementsByClassName('singleBroadcastCard-title')[0] || { textContent: '' }
+        card.getElementsByClassName('mainBroadcastCard-title')[0] || { textContent: '' }
       ).textContent
         .toString()
         .trim()
       const category = (
-        card.getElementsByClassName('singleBroadcastCard-genre')[0] || { textContent: '' }
+        card.getElementsByClassName('mainBroadcastCard-genre')[0] || { textContent: '' }
       ).textContent
         .toString()
         .trim()
