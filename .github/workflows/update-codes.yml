@@ -64,7 +64,7 @@ jobs:
 
             [1]: https://github.com/iptv-org/iptv/actions/runs/${{ github.run_id }}
           github_token: ${{ steps.generate-token.outputs.token }}
-      - name: Check outputs
+      - name: Check Outputs
         run: echo "Pull Request Number - ${{ steps.pr.outputs.pr_number }}"
       - name: Enable Pull Request Automerge
         uses: peter-evans/enable-pull-request-automerge@v1
@@ -78,7 +78,6 @@ jobs:
           github-token: ${{ secrets.PAT }}
           number: ${{ steps.pr.outputs.pr_number }}
   deploy:
-    if: ${{ github.ref == 'refs/heads/master' }}
     needs: pull-request
     runs-on: ubuntu-latest
     steps:
