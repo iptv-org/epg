@@ -65,6 +65,7 @@
                 class="card mb-3 is-shadowless"
                 style="border: 1px solid #dbdbdb"
                 x-data="{
+                  count: 0,
                   get countryChannels() {
                     if (!_query) return country.channels
 
@@ -74,6 +75,9 @@
                   }
                 }"
                 x-show="countryChannels.length > 0"
+                x-init="$watch('countryChannels', value => {
+                  count = value.length
+                })"
               >
                 <div
                   class="card-header is-shadowless is-clickable"
@@ -105,10 +109,7 @@
                     </span>
                   </button>
                 </div>
-                <div
-                  class="card-content"
-                  x-show="country.expanded || (countryChannels.length && _query.length)"
-                >
+                <div class="card-content" x-show="country.expanded || (count > 0 && _query.length)">
                   <div class="table-container">
                     <table class="table is-fullwidth">
                       <thead>
