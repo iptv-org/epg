@@ -31,7 +31,7 @@ module.exports = {
   parser: function ({ content, date }) {
     const programs = []
     const dom = new JSDOM(content)
-    const broadcastCards = dom.window.document.querySelectorAll('.singleBroadcastCard')
+    const broadcastCards = dom.window.document.querySelectorAll('.mainBroadcastCard')
     broadcastCards.forEach(card => {
       const hour = (
         card.getElementsByClassName('mainBroadcastCard-startingHour')[0] || { textContent: '' }
