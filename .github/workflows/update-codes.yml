@@ -39,7 +39,6 @@ jobs:
           branch: bot/update-codes
           file_pattern: .gh-pages/_items.json .gh-pages/codes.json
   pull-request:
-    if: ${{ github.ref == 'refs/heads/master' }}
     needs: update-codes
     runs-on: ubuntu-latest
     steps:
@@ -65,6 +64,8 @@ jobs:
 
             [1]: https://github.com/iptv-org/iptv/actions/runs/${{ github.run_id }}
           github_token: ${{ steps.generate-token.outputs.token }}
+      - name: Check outputs
+        run: echo "Pull Request Number - ${{ steps.pr.outputs.pr_number }}"
       - name: Enable Pull Request Automerge
         uses: peter-evans/enable-pull-request-automerge@v1
         with:
@@ -77,6 +78,7 @@ jobs:
           github-token: ${{ secrets.PAT }}
           number: ${{ steps.pr.outputs.pr_number }}
   deploy:
+    if: ${{ github.ref == 'refs/heads/master' }}
     needs: pull-request
     runs-on: ubuntu-latest
     steps:
