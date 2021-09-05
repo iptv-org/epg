@@ -9,6 +9,10 @@ EPG (Electronic Program Guide) for thousands of TV channels collected from diffe
 
 To load a program guide, all you need to do is copy the link to one of the guides from the list below and paste it into your favorite player.
 
+<details>
+<summary>Expand</summary>
+<br>
+
 <table>
   <thead>
     <tr><th align="left">Country</th><th align="left">EPG</th></tr>
@@ -77,7 +81,40 @@ To load a program guide, all you need to do is copy the link to one of the guide
   </tbody>
 </table>
 
-After that, the program should appear. If this does not happen, make sure the channels in the playlist have the same IDs (tvg-id) as in the guide. A list of all currently supported codes can be found [here](codes.csv).
+</details>
+
+## List of supported channels
+
+https://iptv-org.github.io/epg
+
+## For Developers
+
+You can also get a list of all available channels and their codes in JSON format by sending a GET request to:
+
+```
+https://iptv-org.github.io/epg/codes.json
+```
+
+If successful, you should get the following response:
+
+<details>
+<summary>Expand</summary>
+<br>
+
+```
+[
+  ...
+  {
+    "tvg_id": "CNNUSA.us",
+    "display_name": "CNN USA",
+    "logo": "https://cdn.tvpassport.com/image/station/100x100/cnn.png",
+    "country": "us"
+  },
+  ...
+]
+```
+
+</details>
 
 ## Contribution
 
