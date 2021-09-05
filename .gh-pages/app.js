@@ -10,7 +10,7 @@ document.addEventListener('alpine:init', () => {
     },
 
     async init() {
-      this.items = await fetch('_items.json')
+      this.items = await fetch('items.json')
         .then(response => response.json())
         .catch(console.log)
 

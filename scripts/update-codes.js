@@ -46,7 +46,7 @@ async function main() {
       item.channels.push(channel)
     }
   })
-  writeToFile('.gh-pages/_items.json', convertToJSON(_items))
+  writeToFile('.gh-pages/items.json', convertToJSON(_items))
 
   console.log('Done')
 }
