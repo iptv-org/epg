@@ -11,10 +11,9 @@ module.exports = {
   channels: 'tvguide.com.channels.xml',
   output: '.gh-pages/guides/tvguide.com.guide.xml',
   url: function ({ date, channel }) {
-    const localTime = date.tz('America/New_York')
     const parts = channel.site_id.split('#')
-    const start = localTime.startOf('d')
-    const duration = localTime.endOf('d').diff(start, 'm')
+    const start = date.startOf('d')
+    const duration = date.endOf('d').diff(start, 'm')
     const url = `https://cmg-prod.apigee.net/v1/xapi/tvschedules/tvguide/${
       parts[0]
     }/web?start=${start.unix()}&duration=${duration}&channelSourceIds=${parts[1]}`
