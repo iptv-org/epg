@@ -26,7 +26,7 @@ module.exports = {
   parser({ content, date }) {
     const programs = []
 
-    const items = parseItems(content)
+    const items = parseItems(content, date)
     items.forEach(item => {
       const title = parseTitle(item)
       const description = parseDescription(item)
@@ -122,8 +122,10 @@ function parseDescription(item) {
   return excerpt.replace('...اقرأ المزيد', '') + desc
 }
 
-function parseItems(content) {
+function parseItems(content, date) {
   const dom = new JSDOM(content)
+  const diff = date.diff(dayjs().startOf('d'), 'd')
+  const listNum = (diff + 1) * 2
 
-  return dom.window.document.querySelectorAll('.tvgrid > div:nth-child(2) > .padded-half')
+  return dom.window.document.querySelectorAll(`.tvgrid > div:nth-child(${listNum}) > .padded-half`)
 }
