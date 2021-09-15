@@ -109,7 +109,11 @@ If successful, you should get the following response:
     "tvg_id": "CNNUSA.us",
     "display_name": "CNN USA",
     "logo": "https://cdn.tvpassport.com/image/station/100x100/cnn.png",
-    "country": "us"
+    "country": "us",
+    "guides": [
+      "https://iptv-org.github.io/epg/guides/tvtv.us.guide.xml",
+      ...
+    ]
   },
   ...
 ]
