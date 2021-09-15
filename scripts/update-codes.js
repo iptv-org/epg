@@ -17,8 +17,11 @@ async function main() {
       .catch(console.log)
     const channels = parseChannels(file)
     channels.forEach(channel => {
-      if (!codes[channel.tvg_id + channel.display_name]) {
-        codes[channel.tvg_id + channel.display_name] = channel
+      if (!codes[channel.tvg_id]) {
+        channel.guides = [url]
+        codes[channel.tvg_id] = channel
+      } else {
+        codes[channel.tvg_id].guides.push(url)
       }
     })
   }
