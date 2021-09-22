@@ -30,6 +30,7 @@ To load a program guide, all you need to do is copy the link to one of the guide
     <tr><td align="left" nowrap>🇧🇬 Bulgaria</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tvprofil.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇨🇦 Canada</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tvtv.ca.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇨🇱 Chile</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/mi.tv.guide.xml</code></td></tr>
+    <tr><td align="left" nowrap>🇨🇳 China</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tv.cctv.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇨🇴 Colombia</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/mi.tv.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇭🇷 Croatia</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/maxtv.hrvatskitelekom.hr.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇨🇿 Czechia</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/m.tv.sms.cz.guide.xml</code></td></tr>
