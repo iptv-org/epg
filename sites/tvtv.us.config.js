@@ -1,3 +1,4 @@
+const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 
@@ -9,9 +10,19 @@ module.exports = {
   channels: 'tvtv.us.channels.xml',
   output: '.gh-pages/guides/tvtv.us.guide.xml',
   url: function ({ date, channel }) {
-    return `https://www.tvtv.us/tvm/t/tv/v4/stations/${
+    return `https://tvtv.us/tvm/t/tv/v4/stations/${
       channel.site_id
     }/listings?start=${date.format()}&end=${date.add(1, 'd').format()}`
+  },
+  logo: async function ({ channel }) {
+    return await axios
+      .get(`https://tvtv.us/tvm/t/tv/v4/stations/${channel.site_id}`)
+      .then(r =>
+        r.data && r.data.logoFilename
+          ? `https://cdn.tvpassport.com/image/station/100x100/${r.data.logoFilename}`
+          : null
+      )
+      .catch(e => console.log)
   },
   parser: function ({ content }) {
     let programs = []
@@ -24,7 +35,7 @@ module.exports = {
         ? `https://cdn.tvpassport.com/image/show/480x720/${item.showPicture}`
         : null
       let title = item.showName
-      if (title === "Movie") {
+      if (title === 'Movie') {
         title = item.episodeTitle
       }
       programs.push({

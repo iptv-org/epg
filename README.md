@@ -29,7 +29,7 @@ To load a program guide, all you need to do is copy the link to one of the guide
     <tr><td align="left" nowrap>🇧🇦 Bosnia</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tvprofil.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇧🇷 Brasil</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/mi.tv.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇧🇬 Bulgaria</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tvprofil.com.guide.xml</code></td></tr>
-    <tr><td align="left" nowrap>🇨🇦 Canada</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tvtv.ca.guide.xml</code></td></tr>
+    <tr><td align="left" nowrap>🇨🇦 Canada</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tvtv.us.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇨🇱 Chile</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/mi.tv.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇨🇳 China</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tv.cctv.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇨🇴 Colombia</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/mi.tv.guide.xml</code></td></tr>
