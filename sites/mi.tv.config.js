@@ -35,7 +35,7 @@ module.exports = {
       if (!start) return
       if (start.hour() > 11) PM = true
       if (start.hour() < 12 && PM) start = start.add(1, 'd')
-      const stop = parseStop(item, start)
+      const stop = start.add(1, 'h')
       if (programs.length) {
         programs[programs.length - 1].stop = start
       }
@@ -49,10 +49,6 @@ module.exports = {
 
     return programs
   }
-}
-
-function parseStop(item, date) {
-  return date.tz('America/Sao_Paulo').add(1, 'h')
 }
 
 function parseStart(item, date) {
