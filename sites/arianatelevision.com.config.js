@@ -10,7 +10,6 @@ dayjs.extend(utc)
 dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
-let PM = false
 module.exports = {
   lang: 'en',
   days: 7,
@@ -21,6 +20,7 @@ module.exports = {
     return `https://www.arianatelevision.com/program-schedule/`
   },
   parser({ content, date }) {
+    let PM = false
     const programs = []
     const items = parseItems(content, date)
     items.forEach(item => {
@@ -45,7 +45,7 @@ module.exports = {
 }
 
 function parseStop(item, date) {
-  return date.tz('Asia/Kabul').endOf('d').add(6, 'h')
+  return date.tz('Asia/Kabul').endOf('d').add(7, 'h')
 }
 
 function parseStart(item, date) {
