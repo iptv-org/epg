@@ -12,7 +12,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   lang: 'cs',
-  days: 7,
+  days: 3,
   site: 'm.tv.sms.cz',
   channels: 'm.tv.sms.cz.channels.xml',
   output: '.gh-pages/guides/m.tv.sms.cz.guide.xml',
