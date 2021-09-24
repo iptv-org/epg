@@ -28,7 +28,7 @@ module.exports = {
       let start = parseStart(item, date)
       if (start.hour() > 11) PM = true
       if (start.hour() < 12 && PM) start = start.add(1, 'd')
-      const stop = parseStop(item, date)
+      const stop = start.add(30, 'm')
       if (programs.length) {
         programs[programs.length - 1].stop = start
       }
@@ -42,10 +42,6 @@ module.exports = {
 
     return programs
   }
-}
-
-function parseStop(item, date) {
-  return date.tz('Asia/Kabul').endOf('d').add(7, 'h')
 }
 
 function parseStart(item, date) {
