@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site site="tv.mail.ru">
   <channels>
+    <channel site_id="1641" xmltv_id="ShantTV.am" lang="ru">Shant TV</channel>
     <channel site_id="2255" xmltv_id="ArmeniaTV.am" lang="hy">Armenia TV</channel>
     <channel site_id="2499" xmltv_id="ArmNews.am" lang="hy">ArmNews</channel>
     <channel site_id="2499" xmltv_id="ShantMusic.am" lang="hy">Shant Music</channel>
+    <channel site_id="2708" xmltv_id="ShantSerial.am" lang="hy">Shant Serial</channel>
     <channel site_id="2785" xmltv_id="21TV.am" lang="hy">21TV</channel>
     <channel site_id="2787" xmltv_id="YerkirMediaTV.am" lang="hy">Yerkir Media TV</channel>
     <channel site_id="2788" xmltv_id="KentronTV.am" lang="hy">Kentron TV</channel>
@@ -14,9 +16,10 @@
     <channel site_id="2944" xmltv_id="ATV.am" lang="hy">ATV</channel>
     <channel site_id="2947" xmltv_id="ATVHayTV.us" lang="hy">ATV Hay TV</channel>
     <channel site_id="2951" xmltv_id="ATVFilmzone.am" lang="hy">ATV Filmzone</channel>
+    <channel site_id="2953" xmltv_id="ATVTavaTV.am" lang="hy">ATV Tava TV</channel>
     <channel site_id="2967" xmltv_id="ATVKhaghaliqTV.am" lang="hy">ATV Khaghaliq TV</channel>
     <channel site_id="2968" xmltv_id="ATVKinoman.am" lang="hy">ATV Kinoman</channel>
-    <channel site_id="2969" xmltv_id="TBNRossiya.us" lang="hy">TBN Rossiya</channel>
+    <channel site_id="2969" xmltv_id="TBNArmenia.us" lang="hy">TBN Armenia</channel>
     <channel site_id="2995" xmltv_id="H1.am" lang="hy">H1</channel>
     <channel site_id="3010" xmltv_id="ATVBazmocTV.am" lang="hy">ATV Bazmoc TV</channel>
   </channels>
