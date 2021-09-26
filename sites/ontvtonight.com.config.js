@@ -9,20 +9,25 @@ dayjs.extend(utc)
 dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
+const tz = {
+  au: 'Australia/Sydney',
+  ie: 'Europe/Dublin',
+  uk: 'Europe/London'
+}
+
 module.exports = {
   lang: 'en',
+  days: 3,
   site: 'ontvtonight.com',
   channels: 'ontvtonight.com.channels.xml',
   output: '.gh-pages/guides/ontvtonight.com.guide.xml',
   url: function ({ date, channel }) {
     const [region, id] = channel.site_id.split('#')
-    return region
-      ? `https://www.ontvtonight.com/${region}/guide/listings/channel/${id}.html?dt=${date.format(
-          'YYYY-MM-DD'
-        )}`
-      : `https://www.ontvtonight.com/guide/listings/channel/${id}.html?dt=${date.format(
-          'YYYY-MM-DD'
-        )}`
+    let url = `https://www.ontvtonight.com`
+    if (region) url += `/${region}`
+    url += `/guide/listings/channel/${id}.html?dt=${date.format('YYYY-MM-DD')}`
+
+    return url
   },
   logo: function ({ content }) {
     const dom = new JSDOM(content)
@@ -32,13 +37,13 @@ module.exports = {
 
     return img ? img.src : null
   },
-  parser: function ({ content, date }) {
+  parser: function ({ content, date, channel }) {
     const programs = []
     const items = parseItems(content)
     items.forEach(item => {
       const title = parseTitle(item)
-      const start = parseStart(item, date)
-      const stop = parseStop(item, date)
+      const start = parseStart(item, date, channel)
+      const stop = start.add(1, 'h')
 
       if (title && start) {
         if (programs.length) {
@@ -57,15 +62,14 @@ module.exports = {
   }
 }
 
-function parseStop(item, date) {
-  return date.tz('Europe/London').endOf('d')
-}
+function parseStart(item, date, channel) {
+  const [region, id] = channel.site_id.split('#')
+  const timezone = region ? tz[region] : tz['uk']
 
-function parseStart(item, date) {
   let time = (item.querySelector('td:nth-child(1) > h5') || { textContent: '' }).textContent.trim()
   time = `${date.format('DD/MM/YYYY')} ${time.toUpperCase()}`
 
-  return dayjs.tz(time, 'DD/MM/YYYY H:mm A', 'Europe/London')
+  return dayjs.tz(time, 'DD/MM/YYYY H:mm A', timezone)
 }
 
 function parseTitle(item) {
