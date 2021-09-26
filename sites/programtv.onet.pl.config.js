@@ -9,14 +9,15 @@ dayjs.extend(utc)
 dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
-let PM = false
 module.exports = {
   lang: 'pl',
+  days: 3,
   site: 'programtv.onet.pl',
   channels: 'programtv.onet.pl.channels.xml',
   output: '.gh-pages/guides/programtv.onet.pl.guide.xml',
   url: function ({ date, channel }) {
-    const day = dayjs().diff(date, 'd')
+    const today = dayjs().utc().startOf('d')
+    const day = date.diff(today, 'd')
     return `https://programtv.onet.pl/program-tv/${channel.site_id}?dzien=${day}`
   },
   logo: function ({ content }) {
@@ -26,6 +27,7 @@ module.exports = {
     return img ? 'https:' + img.src : null
   },
   parser: function ({ content, date }) {
+    let PM = false
     const programs = []
     const items = parseItems(content)
     items.forEach(item => {
@@ -35,7 +37,7 @@ module.exports = {
       let start = parseStart(item, date)
       if (start.hour() > 11) PM = true
       if (start.hour() < 12 && PM) start = start.add(1, 'd')
-      const stop = parseStop(item, date)
+      const stop = start.add(1, 'h')
       if (programs.length) {
         programs[programs.length - 1].stop = start
       }
@@ -51,10 +53,6 @@ module.exports = {
 
     return programs
   }
-}
-
-function parseStop(item, date) {
-  return date.add(1, 'd').hour(3).startOf('h')
 }
 
 function parseStart(item, date) {

@@ -11,9 +11,24 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   lang: 'es',
+  days: 3,
   site: 'comteco.com.bo',
   channels: 'comteco.com.bo.channels.xml',
   output: '.gh-pages/guides/comteco.com.bo.guide.xml',
+  request: {
+    method: 'POST',
+    data: function ({ date }) {
+      const params = new URLSearchParams()
+      params.append('_method', 'POST')
+      params.append('fechaini', date.format('D/M/YYYY'))
+      params.append('fechafin', date.format('D/M/YYYY'))
+
+      return params
+    },
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    }
+  },
   url: function ({ channel }) {
     return `https://comteco.com.bo/pages/canales-y-programacion-tv/paquete-oro/${channel.site_id}`
   },
@@ -31,7 +46,7 @@ module.exports = {
     items.forEach(item => {
       const title = parseTitle(item)
       let start = parseStart(item, date)
-      const stop = parseStop(item, date)
+      const stop = start.add(30, 'm')
       if (programs.length) {
         programs[programs.length - 1].stop = start
       }
@@ -41,10 +56,6 @@ module.exports = {
 
     return programs
   }
-}
-
-function parseStop(item, date) {
-  return date.tz('America/La_Paz').endOf('d')
 }
 
 function parseStart(item, date) {
