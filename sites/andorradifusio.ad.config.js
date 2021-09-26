@@ -1,17 +1,17 @@
-const jsdom = require('jsdom')
-const { JSDOM } = jsdom
+const cheerio = require('cheerio')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
+require('dayjs/locale/ca')
 
 dayjs.extend(utc)
 dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
-let PM = false
 module.exports = {
   lang: 'ca',
+  days: 7,
   site: 'andorradifusio.ad',
   channels: 'andorradifusio.ad.channels.xml',
   output: '.gh-pages/guides/andorradifusio.ad.guide.xml',
@@ -19,14 +19,15 @@ module.exports = {
     return `https://www.andorradifusio.ad/programacio/${channel.site_id}`
   },
   parser({ content, date }) {
+    let PM = false
     const programs = []
     const items = parseItems(content, date)
     items.forEach(item => {
-      const title = parseTitle(item)
+      const title = item.title
       let start = parseStart(item, date)
       if (start.hour() > 11) PM = true
       if (start.hour() < 12 && PM) start = start.add(1, 'd')
-      const stop = parseStop(item, date)
+      const stop = start.add(1, 'h')
       if (programs.length) {
         programs[programs.length - 1].stop = start
       }
@@ -42,34 +43,25 @@ module.exports = {
   }
 }
 
-function parseStop(item, date) {
-  return date.tz('Europe/Madrid').endOf('d').add(6, 'h')
-}
-
 function parseStart(item, date) {
-  let time = (item.time || { textContent: '' }).textContent
-  time = `${date.format('MM/DD/YYYY')} ${time}`
+  time = `${date.format('MM/DD/YYYY')} ${item.time}`
 
   return dayjs.tz(time, 'MM/DD/YYYY HH:mm', 'Europe/Madrid')
 }
 
-function parseTitle(item) {
-  return (item.title || { textContent: '' }).textContent
-}
-
 function parseItems(content, date) {
+  const $ = cheerio.load(content)
+  const dayOfWeek = date.locale('ca').format('dddd').toLowerCase()
+  const column = $('.programacio-dia > h3')
+    .filter((i, el) => $(el).text().startsWith(dayOfWeek))
+    .first()
+    .parent()
   const items = []
-  const dom = new JSDOM(content)
-  const day = date.day() - 1
-  const colNum = day < 0 ? 6 : day
-  const cols = dom.window.document.querySelectorAll('.programacio-dia')
-  const col = cols[colNum]
-  const timeRows = col.querySelectorAll(`h4`)
-  const titleRows = col.querySelectorAll(`p`)
-  timeRows.forEach((time, i) => {
+  const titles = column.find(`p`).toArray()
+  column.find(`h4`).each((i, time) => {
     items.push({
-      time,
-      title: titleRows[i]
+      time: $(time).text(),
+      title: $(titles[i]).text()
     })
   })
 
