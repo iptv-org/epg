@@ -24,7 +24,6 @@ To load a program guide, all you need to do is copy the link to one of the guide
     <tr><td align="left" nowrap>🇦🇱 Albania</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tvprofil.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇦🇩 Andorra</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/andorradifusio.ad.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇦🇴 Angola</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/zap.co.ao.guide.xml</code></td></tr>
-    <tr><td align="left" nowrap>🇦🇷 Argentina</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/mi.tv.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇦🇺 Australia</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/ontvtonight.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇧🇾 Belarus</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tv.yandex.ru.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇧🇴 Bolivia</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/comteco.com.bo.guide.xml</code></td></tr>
@@ -32,19 +31,14 @@ To load a program guide, all you need to do is copy the link to one of the guide
     <tr><td align="left" nowrap>🇧🇷 Brasil</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/mi.tv.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇧🇬 Bulgaria</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tvprofil.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇨🇦 Canada</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tvtv.us.guide.xml</code></td></tr>
-    <tr><td align="left" nowrap>🇨🇱 Chile</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/mi.tv.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇨🇳 China</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tv.cctv.com.guide.xml</code></td></tr>
-    <tr><td align="left" nowrap>🇨🇴 Colombia</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/mi.tv.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇭🇷 Croatia</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/maxtv.hrvatskitelekom.hr.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇨🇿 Czechia</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/m.tv.sms.cz.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇪🇬 Egypt</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/elcinema.com.guide.xml</code></td></tr>
-    <tr><td align="left" nowrap>🇸🇻 El Salvador</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/mi.tv.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇫🇮 Finland</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/telkussa.fi.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇫🇷 France</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/programme-tv.net.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇩🇪 Germany</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/hd-plus.de.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇬🇷 Greece</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/cosmote.gr.guide.xml</code></td></tr>
-    <tr><td align="left" nowrap>🇬🇹 Guatemala</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/mi.tv.guide.xml</code></td></tr>
-    <tr><td align="left" nowrap>🇭🇳 Honduras</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/mi.tv.guide.xml</code></td></tr>
     <tr><td align="left" rowspan="2" valign="top" nowrap>🇮🇩 Indonesia</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/mncvision.id.guide.xml</code></td></tr>
     <tr><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/vidio.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇭🇺 Hungary</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tvprofil.com.guide.xml</code></td></tr>
@@ -59,12 +53,9 @@ To load a program guide, all you need to do is copy the link to one of the guide
     <tr><td align="left" nowrap>🇱🇻 Latvia</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tv.lv.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇱🇾 Libya</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/elcinema.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇲🇾 Malaysia</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/astro.com.my.guide.xml</code></td></tr>
-    <tr><td align="left" nowrap>🇲🇽 Mexico</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/mi.tv.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇲🇦 Morocco</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/elcinema.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇲🇪 Montenegro</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tvprofil.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇲🇰 North Macedonia</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tvprofil.com.guide.xml</code></td></tr>
-    <tr><td align="left" nowrap>🇵🇾 Paraguay</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/mi.tv.guide.xml</code></td></tr>
-    <tr><td align="left" nowrap>🇵🇪 Peru</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/mi.tv.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇵🇱 Poland</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/programtv.onet.pl.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇵🇹 Portugal</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/meo.pt.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇷🇴 Romania</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/programetv.ro.guide.xml</code></td></tr>

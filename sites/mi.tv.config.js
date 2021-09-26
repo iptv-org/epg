@@ -9,15 +9,16 @@ dayjs.extend(utc)
 dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
-let PM = false
 module.exports = {
   lang: 'pt',
+  days: 3,
   site: 'mi.tv',
   channels: 'mi.tv.channels.xml',
   output: '.gh-pages/guides/mi.tv.guide.xml',
   url({ date, channel }) {
     const [country, id] = channel.site_id.split('#')
-    return `https://mi.tv/${country}/async/channel/${id}/${date.format('YYYY-MM-DD')}/180`
+
+    return `https://mi.tv/${country}/async/channel/${id}/${date.format('YYYY-MM-DD')}/-180`
   },
   logo({ content }) {
     const dom = new JSDOM(content)
@@ -25,16 +26,16 @@ module.exports = {
     return img ? img.src : null
   },
   parser({ content, date }) {
+    let PM = false
     const programs = []
     const items = parseItems(content)
-
     items.forEach(item => {
       const title = parseTitle(item)
       let start = parseStart(item, date)
       if (!start) return
       if (start.hour() > 11) PM = true
       if (start.hour() < 12 && PM) start = start.add(1, 'd')
-      const stop = parseStop(item, start)
+      const stop = start.add(1, 'h')
       if (programs.length) {
         programs[programs.length - 1].stop = start
       }
@@ -48,10 +49,6 @@ module.exports = {
 
     return programs
   }
-}
-
-function parseStop(item, date) {
-  return date.endOf('d').add(6, 'h')
 }
 
 function parseStart(item, date) {
