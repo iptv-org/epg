@@ -7,7 +7,7 @@ EPG (Electronic Program Guide) for thousands of TV channels collected from diffe
 
 ## Usage
 
-To load a program guide, all you need to do is copy the link to one of the guides from the list below and paste it into your favorite player.
+To load a program guide, all you need to do is copy the link to one or more of the guides from the list below and paste it into your favorite player.
 
 <details>
 <summary>Expand</summary>
@@ -24,7 +24,8 @@ To load a program guide, all you need to do is copy the link to one of the guide
     <tr><td align="left" nowrap>🇦🇱 Albania</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tvprofil.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇦🇩 Andorra</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/andorradifusio.ad.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇦🇲 Armenia</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tv.mail.ru.guide.xml</code></td></tr>
-    <tr><td align="left" nowrap>🇦🇴 Angola</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/zap.co.ao.guide.xml</code></td></tr>
+    <tr><td align="left" rowspan="2" valign="top" nowrap>🇦🇴 Angola</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/dstv.com.guide.xml</code></td></tr>
+    <tr><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/zap.co.ao.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇦🇺 Australia</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/ontvtonight.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇧🇾 Belarus</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tv.yandex.ru.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇧🇯 Benin</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/dstv.com.guide.xml</code></td></tr>
