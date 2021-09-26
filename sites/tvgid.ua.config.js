@@ -10,9 +10,9 @@ dayjs.extend(utc)
 dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
-let PM = false
 module.exports = {
   lang: 'uk',
+  days: 3,
   site: 'tvgid.ua',
   channels: 'tvgid.ua.channels.xml',
   output: '.gh-pages/guides/tvgid.ua.guide.xml',
@@ -20,6 +20,7 @@ module.exports = {
     return `https://tvgid.ua/channels/${channel.site_id}/${date.format('DDMMYYYY')}/tmall/`
   },
   parser: function ({ buffer, date }) {
+    let PM = false
     const programs = []
     const items = parseItems(buffer)
     items.forEach(item => {
@@ -28,7 +29,7 @@ module.exports = {
       if (!start) return
       if (start.hour() > 11) PM = true
       if (start.hour() < 12 && PM) start = start.add(1, 'd')
-      const stop = parseStop(item, start)
+      const stop = start.add(1, 'h')
       if (programs.length) {
         programs[programs.length - 1].stop = start
       }
@@ -38,10 +39,6 @@ module.exports = {
 
     return programs
   }
-}
-
-function parseStop(item, date) {
-  return date.hour(7)
 }
 
 function parseStart(item, date) {
