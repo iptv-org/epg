@@ -11,12 +11,13 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   lang: 'de',
+  days: 3,
   site: 'hd-plus.de',
   channels: 'hd-plus.de.channels.xml',
   output: '.gh-pages/guides/hd-plus.de.guide.xml',
   url({ date, channel }) {
-    const now = dayjs()
-    const day = now.diff(date, 'd')
+    const today = dayjs().utc().startOf('d')
+    const day = date.diff(today, 'd')
 
     return `https://www.hd-plus.de/epg/channel/${channel.site_id}?d=${day}`
   },
@@ -32,7 +33,7 @@ module.exports = {
     items.forEach(item => {
       const title = parseTitle(item)
       let start = parseStart(item, date)
-      const stop = parseStop(item, date)
+      const stop = start.add(1, 'h')
       if (programs.length) {
         programs[programs.length - 1].stop = start
       }
@@ -42,10 +43,6 @@ module.exports = {
 
     return programs
   }
-}
-
-function parseStop(item, date) {
-  return date.endOf('d')
 }
 
 function parseStart(item, date) {
