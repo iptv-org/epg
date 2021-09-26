@@ -10,9 +10,9 @@ dayjs.extend(utc)
 dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
-let PM = false
 module.exports = {
   lang: 'cs',
+  days: 3,
   site: 'm.tv.sms.cz',
   channels: 'm.tv.sms.cz.channels.xml',
   output: '.gh-pages/guides/m.tv.sms.cz.guide.xml',
@@ -28,6 +28,7 @@ module.exports = {
     return img ? img.src : null
   },
   parser: function ({ buffer, date }) {
+    let PM = false
     const programs = []
     const items = parseItems(buffer)
     items.forEach((item, i) => {
@@ -36,7 +37,7 @@ module.exports = {
       let start = parseStart(item, date)
       if (start.hour() > 11) PM = true
       if (start.hour() < 12 && PM) start = start.add(1, 'd')
-      const stop = parseStop(item, date)
+      const stop = start.add(1, 'h')
       if (programs.length) {
         programs[programs.length - 1].stop = start
       }
@@ -51,10 +52,6 @@ module.exports = {
 
     return programs
   }
-}
-
-function parseStop(item, date) {
-  return date.tz('Europe/Prague').endOf('d').add(6, 'h')
 }
 
 function parseStart(item, date) {
