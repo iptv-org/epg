@@ -91,6 +91,7 @@ To load a program guide, all you need to do is copy the link to one or more of t
     <tr><td align="left" nowrap>🇳🇪 Niger</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/dstv.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇳🇬 Nigeria</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/dstv.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇲🇰 North Macedonia</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tvprofil.com.guide.xml</code></td></tr>
+    <tr><td align="left" nowrap>🇵🇪 Peru</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/mi.tv.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇵🇱 Poland</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/programtv.onet.pl.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇵🇹 Portugal</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/meo.pt.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇷🇴 Romania</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/programetv.ro.guide.xml</code></td></tr>
