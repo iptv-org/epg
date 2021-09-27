@@ -14,7 +14,7 @@ module.exports = {
   output: '.gh-pages/guides/mi.tv.guide.xml',
   url({ date, channel }) {
     const [country, id] = channel.site_id.split('#')
-    console.log(`https://mi.tv/${country}/async/channel/${id}/${date.format('YYYY-MM-DD')}/0`)
+
     return `https://mi.tv/${country}/async/channel/${id}/${date.format('YYYY-MM-DD')}/0`
   },
   logo({ content }) {
