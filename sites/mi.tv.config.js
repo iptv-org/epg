@@ -8,7 +8,7 @@ dayjs.extend(utc)
 dayjs.extend(customParseFormat)
 
 module.exports = {
-  days: 3,
+  days: 1,
   site: 'mi.tv',
   channels: 'mi.tv.channels.xml',
   output: '.gh-pages/guides/mi.tv.guide.xml',
