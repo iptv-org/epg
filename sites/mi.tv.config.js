@@ -2,23 +2,20 @@ const jsdom = require('jsdom')
 const { JSDOM } = jsdom
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
-const timezone = require('dayjs/plugin/timezone')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
 
 dayjs.extend(utc)
-dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
 module.exports = {
-  lang: 'pt',
-  days: 3,
+  days: 1,
   site: 'mi.tv',
   channels: 'mi.tv.channels.xml',
   output: '.gh-pages/guides/mi.tv.guide.xml',
   url({ date, channel }) {
     const [country, id] = channel.site_id.split('#')
 
-    return `https://mi.tv/${country}/async/channel/${id}/${date.format('YYYY-MM-DD')}/-180`
+    return `https://mi.tv/${country}/async/channel/${id}/${date.format('YYYY-MM-DD')}/0`
   },
   logo({ content }) {
     const dom = new JSDOM(content)
@@ -56,7 +53,7 @@ function parseStart(item, date) {
   if (!time) return null
   time = `${date.format('MM/DD/YYYY')} ${time}`
 
-  return dayjs.tz(time, 'MM/DD/YYYY HH:mm', 'America/Sao_Paulo')
+  return dayjs.utc(time, 'MM/DD/YYYY HH:mm')
 }
 
 function parseTitle(item) {

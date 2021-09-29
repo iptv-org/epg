@@ -23,6 +23,7 @@ To load a program guide, all you need to do is copy the link to one or more of t
     <tr><td align="left" nowrap>🇩🇿 Algeria</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/elcinema.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇦🇱 Albania</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tvprofil.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇦🇩 Andorra</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/andorradifusio.ad.guide.xml</code></td></tr>
+    <tr><td align="left" nowrap>🇦🇷 Argentina</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/mi.tv.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇦🇲 Armenia</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tv.mail.ru.guide.xml</code></td></tr>
     <tr><td align="left" rowspan="2" valign="top" nowrap>🇦🇴 Angola</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/dstv.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/zap.co.ao.guide.xml</code></td></tr>
@@ -41,7 +42,9 @@ To load a program guide, all you need to do is copy the link to one or more of t
     <tr><td align="left" nowrap>🇨🇻 Cape Verde</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/dstv.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇨🇫 Central African Republic</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/dstv.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇹🇩 Chad</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/dstv.com.guide.xml</code></td></tr>
+    <tr><td align="left" nowrap>🇨🇱 Chile</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/mi.tv.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇨🇳 China</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tv.cctv.com.guide.xml</code></td></tr>
+    <tr><td align="left" nowrap>🇨🇴 Colombia</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/mi.tv.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇨🇬 Congo - Brazzaville</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/dstv.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇨🇩 Congo - Kinshasa</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/dstv.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇨🇮 Côte d’Ivoire</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/dstv.com.guide.xml</code></td></tr>
@@ -49,6 +52,7 @@ To load a program guide, all you need to do is copy the link to one or more of t
     <tr><td align="left" nowrap>🇨🇿 Czechia</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/m.tv.sms.cz.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇩🇯 Djibouti</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/dstv.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇪🇬 Egypt</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/elcinema.com.guide.xml</code></td></tr>
+    <tr><td align="left" nowrap>🇸🇻 El Salvador</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/mi.tv.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇬🇶 Equatorial Guinea</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/dstv.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇪🇷 Eritrea</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/dstv.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇸🇿 Eswatini</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/dstv.com.guide.xml</code></td></tr>
@@ -60,10 +64,12 @@ To load a program guide, all you need to do is copy the link to one or more of t
     <tr><td align="left" nowrap>🇩🇪 Germany</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/hd-plus.de.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇬🇭 Ghana</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/dstv.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇬🇷 Greece</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/cosmote.gr.guide.xml</code></td></tr>
+    <tr><td align="left" nowrap>🇬🇹 Guatemala</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/mi.tv.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇬🇳 Guinea</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/dstv.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇬🇼 Guinea-Bissau</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/dstv.com.guide.xml</code></td></tr>
     <tr><td align="left" rowspan="2" valign="top" nowrap>🇮🇩 Indonesia</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/mncvision.id.guide.xml</code></td></tr>
     <tr><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/vidio.com.guide.xml</code></td></tr>
+    <tr><td align="left" nowrap>🇭🇳 Honduras</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/mi.tv.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇭🇺 Hungary</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tvprofil.com.guide.xml</code></td></tr>
     <tr><td align="left" rowspan="2" valign="top" nowrap>🇮🇹 Italy</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/guidatv.sky.it.guide.xml</code></td></tr>
     <tr><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/mediaset.it.guide.xml</code></td></tr>
@@ -84,6 +90,7 @@ To load a program guide, all you need to do is copy the link to one or more of t
     <tr><td align="left" nowrap>🇲🇱 Mali</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/dstv.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇲🇷 Mauritania</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/dstv.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇲🇺 Mauritius</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/dstv.com.guide.xml</code></td></tr>
+    <tr><td align="left" nowrap>🇲🇽 Mexico</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/mi.tv.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇲🇦 Morocco</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/elcinema.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇲🇪 Montenegro</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tvprofil.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇲🇿 Mozambique</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/dstv.com.guide.xml</code></td></tr>
@@ -91,6 +98,8 @@ To load a program guide, all you need to do is copy the link to one or more of t
     <tr><td align="left" nowrap>🇳🇪 Niger</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/dstv.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇳🇬 Nigeria</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/dstv.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇲🇰 North Macedonia</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tvprofil.com.guide.xml</code></td></tr>
+    <tr><td align="left" nowrap>🇵🇾 Paraguay</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/mi.tv.guide.xml</code></td></tr>
+    <tr><td align="left" nowrap>🇵🇪 Peru</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/mi.tv.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇵🇱 Poland</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/programtv.onet.pl.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇵🇹 Portugal</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/meo.pt.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇷🇴 Romania</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/programetv.ro.guide.xml</code></td></tr>
