@@ -20,13 +20,13 @@ To load a program guide, all you need to do is copy the link to one or more of t
   <tbody>
     <tr><td align="left" rowspan="2" valign="top" nowrap>🇦🇫 Afghanistan</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/arianaafgtv.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/arianatelevision.com.guide.xml</code></td></tr>
-    <tr><td align="left" nowrap>🇩🇿 Algeria</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/elcinema.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇦🇱 Albania</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tvprofil.com.guide.xml</code></td></tr>
+    <tr><td align="left" nowrap>🇩🇿 Algeria</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/elcinema.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇦🇩 Andorra</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/andorradifusio.ad.guide.xml</code></td></tr>
-    <tr><td align="left" nowrap>🇦🇷 Argentina</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/mi.tv.guide.xml</code></td></tr>
-    <tr><td align="left" nowrap>🇦🇲 Armenia</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tv.mail.ru.guide.xml</code></td></tr>
     <tr><td align="left" rowspan="2" valign="top" nowrap>🇦🇴 Angola</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/dstv.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/zap.co.ao.guide.xml</code></td></tr>
+    <tr><td align="left" nowrap>🇦🇷 Argentina</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/mi.tv.guide.xml</code></td></tr>
+    <tr><td align="left" nowrap>🇦🇲 Armenia</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tv.mail.ru.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇦🇺 Australia</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/ontvtonight.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇧🇾 Belarus</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tv.yandex.ru.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇧🇯 Benin</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/dstv.com.guide.xml</code></td></tr>
