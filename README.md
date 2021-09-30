@@ -29,7 +29,7 @@ To load a program guide, all you need to do is copy the link to one or more of t
     <tr><td align="left" nowrap>🇦🇲 Armenia</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tv.mail.ru.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇦🇺 Australia</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/ontvtonight.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇦🇿 Azerbaijan</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tv.mail.ru.guide.xml</code></td></tr>
-    <tr><td align="left" nowrap>🇧🇾 Belarus</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tv.yandex.ru.guide.xml</code></td></tr>
+    <tr><td align="left" nowrap>🇧🇾 Belarus</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tv.mail.ru.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇧🇯 Benin</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/dstv.com.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇧🇴 Bolivia</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/comteco.com.bo.guide.xml</code></td></tr>
     <tr><td align="left" nowrap>🇧🇦 Bosnia</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/tvprofil.com.guide.xml</code></td></tr>
