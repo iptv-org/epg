@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site site="tv.mail.ru">
   <channels>
+    <channel site_id="728" xmltv_id="RTRBelarus.by" lang="ru">RTR-Belarus</channel>
+    <channel site_id="794" xmltv_id="STV.by" lang="ru">STV</channel>
+    <channel site_id="798" xmltv_id="NTVBelarus.by" lang="ru">NTV Belarus</channel>
+    <channel site_id="902" xmltv_id="ONT.by" lang="ru">ONT</channel>
+    <channel site_id="1044" xmltv_id="BelMUZTV.by" lang="ru">BelMUZ-TV</channel>
+    <channel site_id="1164" xmltv_id="Belarus2.by" lang="ru">Belarus 2</channel>
+    <channel site_id="1294" xmltv_id="Belarus1.by" lang="ru">Belarus 1</channel>
+    <channel site_id="1384" xmltv_id="BelRos.ru" lang="ru">BelRos</channel>
+    <channel site_id="1385" xmltv_id="Belarus24.by" lang="ru">Belarus 24</channel>
     <channel site_id="1641" xmltv_id="ShantTV.am" lang="ru">Shant TV</channel>
+    <channel site_id="1694" xmltv_id="VTV.by" lang="ru">VTV</channel>
+    <channel site_id="1696" xmltv_id="Belarus3.by" lang="ru">Belarus 3</channel>
+    <channel site_id="1717" xmltv_id="8kanal.by" lang="ru">8 kanal</channel>
+    <channel site_id="1761" xmltv_id="Belarus5.by" lang="ru">Belarus 5</channel>
+    <channel site_id="1980" xmltv_id="BelBiznesChenel.by" lang="ru">BelBiznesChenel</channel>
     <channel site_id="2255" xmltv_id="ArmeniaTV.am" lang="hy">Armenia TV</channel>
+    <channel site_id="2380" xmltv_id="SvetloeTV.by" lang="ru">Svetloe TV</channel>
     <channel site_id="2499" xmltv_id="ArmNews.am" lang="hy">ArmNews</channel>
     <channel site_id="2499" xmltv_id="ShantMusic.am" lang="hy">Shant Music</channel>
     <channel site_id="2708" xmltv_id="ShantSerial.am" lang="hy">Shant Serial</channel>
+    <channel site_id="2760" xmltv_id="Belarus4.by" lang="ru">Belarus 4</channel>
     <channel site_id="2785" xmltv_id="21TV.am" lang="hy">21TV</channel>
     <channel site_id="2787" xmltv_id="YerkirMediaTV.am" lang="hy">Yerkir Media TV</channel>
     <channel site_id="2788" xmltv_id="KentronTV.am" lang="hy">Kentron TV</channel>
@@ -14,9 +30,13 @@
     <channel site_id="2800" xmltv_id="IctimaiTV.az" lang="az">Ictimai TV</channel>
     <channel site_id="2801" xmltv_id="MedeniyyetTV.az" lang="az">Medeniyyet TV</channel>
     <channel site_id="2825" xmltv_id="XezerTV.az" lang="az">Xezer TV</channel>
+    <channel site_id="2837" xmltv_id="BelsatTV.pl" lang="by">Belsat TV</channel>
+    <channel site_id="2843" xmltv_id="NasheTV.by" lang="ru">Nashe TV</channel>
     <channel site_id="2861" xmltv_id="5TV.am" lang="hy">5TV</channel>
     <channel site_id="2862" xmltv_id="NorHayastanTV.am" lang="hy">Nor Hayastan TV</channel>
     <channel site_id="2870" xmltv_id="MuzZoneTV.kz" lang="hy">MuzZone TV</channel>
+    <channel site_id="2907" xmltv_id="YaSNAeTV.by" lang="ru">YaSNAe TV</channel>
+    <channel site_id="2917" xmltv_id="Vitebsk.by" lang="ru">Vitebsk</channel>
     <channel site_id="2944" xmltv_id="ATV.am" lang="hy">ATV</channel>
     <channel site_id="2947" xmltv_id="ATVHayTV.us" lang="hy">ATV Hay TV</channel>
     <channel site_id="2951" xmltv_id="ATVFilmzone.am" lang="hy">ATV Filmzone</channel>
@@ -26,6 +46,7 @@
     <channel site_id="2969" xmltv_id="TBNArmenia.us" lang="hy">TBN Armenia</channel>
     <channel site_id="2995" xmltv_id="H1.am" lang="hy">H1</channel>
     <channel site_id="3006" xmltv_id="ARBGunes.az" lang="az">ARB Günes</channel>
+    <channel site_id="3009" xmltv_id="Varyag.by" lang="ru">Varyag</channel>
     <channel site_id="3010" xmltv_id="ATVBazmocTV.am" lang="hy">ATV Bazmoc TV</channel>
     <channel site_id="3122" xmltv_id="IdmanTV.az" lang="az">Idman TV</channel>
   </channels>
