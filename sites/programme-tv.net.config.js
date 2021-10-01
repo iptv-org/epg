@@ -1,17 +1,18 @@
-const jsdom = require('jsdom')
-const { JSDOM } = jsdom
-const parseDuration = require('parse-duration')
+const durationParser = require('parse-duration')
+const cheerio = require('cheerio')
+const srcset = require('srcset')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
-const duration = require('dayjs/plugin/duration')
+const timezone = require('dayjs/plugin/timezone')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
 
 dayjs.extend(utc)
-dayjs.extend(duration)
+dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
 module.exports = {
   lang: 'fr',
+  days: 3,
   site: 'programme-tv.net',
   channels: 'programme-tv.net.channels.xml',
   output: '.gh-pages/guides/programme-tv.net.guide.xml',
@@ -21,61 +22,63 @@ module.exports = {
     }.html`
   },
   logo: function ({ content }) {
-    const dom = new JSDOM(content)
-    const img = dom.window.document.querySelector(
-      '#corps > div > div.page.channel > div.gridChannel > div.gridChannel-leftColumn > div.gridChannel-epgGrid > div.gridChannel-header > div > div > div > img'
-    )
+    const $ = cheerio.load(content)
+    const img = $('.gridChannel-logo').first().find('img')
+    const value = img.attr('srcset') || img.data('srcset')
+    const obj = value ? srcset.parse(value).find(i => i.width === 80) : {}
 
-    return img ? img.dataset.src : null
+    return obj.url
   },
   parser: function ({ content, date }) {
     const programs = []
-    const dom = new JSDOM(content)
-    const broadcastCards = dom.window.document.querySelectorAll('.mainBroadcastCard')
-    broadcastCards.forEach(card => {
-      const hour = (
-        card.getElementsByClassName('mainBroadcastCard-startingHour')[0] || { textContent: '' }
-      ).textContent
-        .toString()
-        .trim()
-      const durationContent = (
-        card.getElementsByClassName('mainBroadcastCard-durationContent')[0] || { textContent: '' }
-      ).textContent
-        .toString()
-        .trim()
-      const title = (
-        card.getElementsByClassName('mainBroadcastCard-title')[0] || { textContent: '' }
-      ).textContent
-        .toString()
-        .trim()
-      const category = (
-        card.getElementsByClassName('mainBroadcastCard-genre')[0] || { textContent: '' }
-      ).textContent
-        .toString()
-        .trim()
+    const items = parseItems(content)
+    items.forEach(item => {
+      const $item = cheerio.load(item)
+      const title = parseTitle($item)
+      const icon = parseIcon($item)
+      const category = parseCategory($item)
+      const start = parseStart($item, date)
+      const duration = parseDuration($item)
+      const stop = start.add(duration, 'ms')
 
-      if (hour && title) {
-        const start = dayjs
-          .utc(hour.replace('h', '-'), 'HH-mm')
-          .set('D', date.get('D'))
-          .set('M', date.get('M'))
-          .set('y', date.get('y'))
-
-        let stop = null
-        if (durationContent) {
-          const durationInMilliseconds = parseDuration(durationContent)
-          stop = start.add(dayjs.duration(durationInMilliseconds)).toString()
-        }
-
-        programs.push({
-          title,
-          category,
-          start: start.toString(),
-          stop
-        })
-      }
+      programs.push({ title, icon, category, start, stop })
     })
 
     return programs
   }
+}
+
+function parseStart($item, date) {
+  let time = $item('.mainBroadcastCard-startingHour').first().text().trim()
+  time = `${date.format('MM/DD/YYYY')} ${time.replace('h', ':')}`
+
+  return dayjs.tz(time, 'MM/DD/YYYY HH:mm', 'Europe/Paris')
+}
+
+function parseDuration($item) {
+  const duration = $item('.mainBroadcastCard-durationContent').first().text().trim()
+
+  return durationParser(duration)
+}
+
+function parseIcon($item) {
+  const img = $item('.mainBroadcastCard-imageContent').first().find('img')
+  const value = img.attr('srcset') || img.data('srcset')
+  const obj = value ? srcset.parse(value).find(i => i.width === 128) : {}
+
+  return obj.url
+}
+
+function parseCategory($item) {
+  return $item('.mainBroadcastCard-genre').first().text().trim()
+}
+
+function parseTitle($item) {
+  return $item('.mainBroadcastCard-title').first().text().trim()
+}
+
+function parseItems(content) {
+  const $ = cheerio.load(content)
+
+  return $('.mainBroadcastCard').toArray()
 }
