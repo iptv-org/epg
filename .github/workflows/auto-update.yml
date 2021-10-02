@@ -60,6 +60,7 @@ jobs:
         with:
           name: .gh-pages
           path: .gh-pages/guides/${{ matrix.site }}.guide.xml
+          if-no-files-found: error
   deploy:
     if: ${{ github.ref == 'refs/heads/master' }}
     needs: grab
