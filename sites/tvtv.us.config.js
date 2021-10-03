@@ -7,8 +7,6 @@ dayjs.extend(utc)
 module.exports = {
   lang: 'en',
   site: 'tvtv.us',
-  channels: 'tvtv.us.channels.xml',
-  output: '.gh-pages/guides/tvtv.us.guide.xml',
   url: function ({ date, channel }) {
     return `https://tvtv.us/tvm/t/tv/v4/stations/${
       channel.site_id
