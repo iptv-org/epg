@@ -1,8 +1,8 @@
 name: auto-update
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 0 * * *'
+  # schedule:
+  #   - cron: '0 0 * * *'
 jobs:
   grab:
     runs-on: ubuntu-latest
@@ -10,80 +10,84 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        site:
-          [
-            andorradifusio.ad,
-            arianaafgtv.com,
-            arianatelevision.com,
-            astro.com.my,
-            comteco.com.bo,
-            cosmote.gr,
-            digiturk.com.tr,
-            dstv.com,
-            elcinema.com,
-            guidatv.sky.it,
-            hd-plus.de,
-            m.tv.sms.cz,
-            maxtv.hrvatskitelekom.hr,
-            mediaset.it,
-            meo.pt,
-            mi.tv,
-            mncvision.id,
-            ontvtonight.com,
-            programacion-tv.elpais.com,
-            programetv.ro,
-            programme-tv.net,
-            programtv.onet.pl,
-            rev.bs,
-            telkussa.fi,
-            tv.cctv.com,
-            tv.lv,
-            tv.mail.ru,
-            tv.yandex.ru,
-            tvgid.ua,
-            tvguide.com,
-            tvprofil.com,
-            tvtv.us,
-            vidio.com,
-            zap.co.ao,
-            znbc.co.zm
+        site: [
+            # andorradifusio.ad,
+            # arianaafgtv.com,
+            # arianatelevision.com,
+            # astro.com.my,
+            # comteco.com.bo,
+            # cosmote.gr,
+            # digiturk.com.tr,
+            # dstv.com,
+            # elcinema.com,
+            # guidatv.sky.it,
+            # hd-plus.de,
+            # m.tv.sms.cz,
+            # maxtv.hrvatskitelekom.hr,
+            # mediaset.it,
+            # meo.pt,
+            # mi.tv,
+            # mncvision.id,
+            # ontvtonight.com,
+            # programacion-tv.elpais.com,
+            # programetv.ro,
+            # programme-tv.net,
+            # programtv.onet.pl,
+            # rev.bs,
+            # telkussa.fi,
+            # tv.cctv.com,
+            # tv.lv,
+            # tv.mail.ru,
+            # tv.yandex.ru,
+            # tvgid.ua,
+            # tvguide.com,
+            # tvprofil.com,
+            tvtv.us
+            # vidio.com,
+            # zap.co.ao,
+            # znbc.co.zm
           ]
+        include:
+          - site: tvtv.us
+            region: _us
+          - site: tvtv.us
+            region: _ca
     steps:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Install Dependencies
         run: npm install
       - name: Run EPG Grabber
-        run: npx epg-grabber --config=sites/${{ matrix.site }}.config.js
+        run: npx epg-grabber --config=sites/${{ matrix.site }}.config.js --channels=sites/${{ matrix.site }}${{ matrix.region }}.channels.xml --output=.gh-pages/guides/${{ matrix.site }}${{ matrix.region }}.guide.xml
       - name: Upload Artifact
         uses: actions/upload-artifact@v2
         with:
           name: .gh-pages
           path: .gh-pages/guides/${{ matrix.site }}.guide.xml
           if-no-files-found: error
-  deploy:
-    if: ${{ github.ref == 'refs/heads/master' }}
-    needs: grab
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Download Artifacts
-        uses: actions/download-artifact@v2
-      - name: Generate Token
-        uses: tibdex/github-app-token@v1
-        id: generate-token
-        with:
-          app_id: ${{ secrets.APP_ID }}
-          private_key: ${{ secrets.APP_PRIVATE_KEY }}
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.1
-        with:
-          branch: gh-pages
-          folder: .gh-pages
-          target-folder: guides
-          clean: false
-          token: ${{ steps.generate-token.outputs.token }}
-          git-config-name: iptv-bot
-          git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
-          commit-message: '[Bot] Deploy to GitHub Pages'
+  # deploy:
+  #   if: ${{ github.ref == 'refs/heads/master' }}
+  #   needs: grab
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v2
+  #     - name: Download Artifacts
+  #       uses: actions/download-artifact@v2
+  #     - name: Generate Token
+  #       uses: tibdex/github-app-token@v1
+  #       id: generate-token
+  #       with:
+  #         app_id: ${{ secrets.APP_ID }}
+  #         private_key: ${{ secrets.APP_PRIVATE_KEY }}
+  #     - name: Deploy to GitHub Pages
+  #       uses: JamesIves/github-pages-deploy-action@4.1.1
+  #       with:
+  #         branch: gh-pages
+  #         folder: .gh-pages
+  #         target-folder: guides
+  #         clean: false
+  #         token: ${{ steps.generate-token.outputs.token }}
+  #         git-config-name: iptv-bot
+  #         git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
+  #         commit-message: '[Bot] Deploy to GitHub Pages'
