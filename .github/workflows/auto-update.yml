@@ -11,7 +11,7 @@ jobs:
       fail-fast: false
       matrix:
         site: [
-            # andorradifusio.ad,
+            andorradifusio.ad,
             # arianaafgtv.com,
             # arianatelevision.com,
             # astro.com.my,
@@ -63,7 +63,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: .gh-pages
-          path: .gh-pages/guides/${{ matrix.site }}.guide.xml
+          path: .gh-pages/guides/${{ matrix.site }}${{ matrix.region }}.guide.xml
           if-no-files-found: error
   # deploy:
   #   if: ${{ github.ref == 'refs/heads/master' }}
