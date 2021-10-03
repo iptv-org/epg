@@ -10,44 +10,45 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        site: [
-            andorradifusio.ad,
-            # arianaafgtv.com,
-            # arianatelevision.com,
-            # astro.com.my,
-            # comteco.com.bo,
-            # cosmote.gr,
-            # digiturk.com.tr,
-            # dstv.com,
-            # elcinema.com,
-            # guidatv.sky.it,
-            # hd-plus.de,
-            # m.tv.sms.cz,
-            # maxtv.hrvatskitelekom.hr,
-            # mediaset.it,
-            # meo.pt,
-            # mi.tv,
-            # mncvision.id,
-            # ontvtonight.com,
-            # programacion-tv.elpais.com,
-            # programetv.ro,
-            # programme-tv.net,
-            # programtv.onet.pl,
-            # rev.bs,
-            # telkussa.fi,
-            # tv.cctv.com,
-            # tv.lv,
-            # tv.mail.ru,
-            # tv.yandex.ru,
-            # tvgid.ua,
-            # tvguide.com,
-            # tvprofil.com,
-            tvtv.us
-            # vidio.com,
-            # zap.co.ao,
-            # znbc.co.zm
-          ]
+        # site: [
+        #     andorradifusio.ad,
+        #     # arianaafgtv.com,
+        #     # arianatelevision.com,
+        #     # astro.com.my,
+        #     # comteco.com.bo,
+        #     # cosmote.gr,
+        #     # digiturk.com.tr,
+        #     # dstv.com,
+        #     # elcinema.com,
+        #     # guidatv.sky.it,
+        #     # hd-plus.de,
+        #     # m.tv.sms.cz,
+        #     # maxtv.hrvatskitelekom.hr,
+        #     # mediaset.it,
+        #     # meo.pt,
+        #     # mi.tv,
+        #     # mncvision.id,
+        #     # ontvtonight.com,
+        #     # programacion-tv.elpais.com,
+        #     # programetv.ro,
+        #     # programme-tv.net,
+        #     # programtv.onet.pl,
+        #     # rev.bs,
+        #     # telkussa.fi,
+        #     # tv.cctv.com,
+        #     # tv.lv,
+        #     # tv.mail.ru,
+        #     # tv.yandex.ru,
+        #     # tvgid.ua,
+        #     # tvguide.com,
+        #     # tvprofil.com,
+        #     tvtv.us
+        #     # vidio.com,
+        #     # zap.co.ao,
+        #     # znbc.co.zm
+        #   ]
         include:
+          - site: andorradifusio.ad
           - site: tvtv.us
             region: _us
           - site: tvtv.us
