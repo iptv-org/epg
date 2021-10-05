@@ -10,11 +10,8 @@ dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
 module.exports = {
-  lang: 'ca',
   days: 7,
   site: 'andorradifusio.ad',
-  channels: 'andorradifusio.ad.channels.xml',
-  output: '.gh-pages/guides/andorradifusio.ad.guide.xml',
   url({ channel }) {
     return `https://www.andorradifusio.ad/programacio/${channel.site_id}`
   },
