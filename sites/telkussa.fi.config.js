@@ -1,10 +1,7 @@
 const dayjs = require('dayjs')
 
 module.exports = {
-  lang: 'fi',
   site: 'telkussa.fi',
-  channels: 'telkussa.fi.channels.xml',
-  output: '.gh-pages/guides/telkussa.fi.guide.xml',
   url: function ({ date, channel }) {
     return `https://telkussa.fi/API/Channel/${channel.site_id}/${date.format('YYYYMMDD')}`
   },
