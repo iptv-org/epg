@@ -16,11 +16,8 @@ const tz = {
 }
 
 module.exports = {
-  lang: 'en',
   days: 3,
   site: 'ontvtonight.com',
-  channels: 'ontvtonight.com.channels.xml',
-  output: '.gh-pages/guides/ontvtonight.com.guide.xml',
   url: function ({ date, channel }) {
     const [region, id] = channel.site_id.split('#')
     let url = `https://www.ontvtonight.com`
