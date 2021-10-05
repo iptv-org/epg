@@ -10,10 +10,7 @@ dayjs.extend(timezone)
 dayjs.extend(utc)
 
 module.exports = {
-  lang: 'ar',
   site: 'elcinema.com',
-  channels: 'elcinema.com.channels.xml',
-  output: '.gh-pages/guides/elcinema.com.guide.xml',
   url({ channel }) {
     return `https://elcinema.com/tvguide/${channel.site_id}/`
   },
