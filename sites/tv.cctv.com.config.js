@@ -1,14 +1,11 @@
 const dayjs = require('dayjs')
 
 module.exports = {
-  lang: 'cn',
+  site: 'tv.cctv.com',
   days: 3,
   request: {
     timeout: 10000
   },
-  site: 'tv.cctv.com',
-  channels: 'tv.cctv.com.channels.xml',
-  output: '.gh-pages/guides/tv.cctv.com.guide.xml',
   url({ channel, date }) {
     return `https://api.cntv.cn/epg/getEpgInfoByChannelNew?serviceId=tvcctv&c=${
       channel.site_id
