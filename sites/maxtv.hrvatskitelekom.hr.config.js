@@ -1,10 +1,7 @@
 const dayjs = require('dayjs')
 
 module.exports = {
-  lang: 'hr',
   site: 'maxtv.hrvatskitelekom.hr',
-  channels: 'maxtv.hrvatskitelekom.hr.channels.xml',
-  output: '.gh-pages/guides/maxtv.hrvatskitelekom.hr.guide.xml',
   request: {
     method: 'POST',
     data: function ({ channel, date }) {
