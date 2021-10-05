@@ -9,11 +9,8 @@ dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
 module.exports = {
-  lang: 'en',
   days: 7,
   site: 'arianaafgtv.com',
-  channels: 'arianaafgtv.com.channels.xml',
-  output: '.gh-pages/guides/arianaafgtv.com.guide.xml',
   url() {
     return `https://www.arianaafgtv.com/index.html`
   },
