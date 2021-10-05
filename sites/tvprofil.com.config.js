@@ -2,10 +2,7 @@ const cheerio = require('cheerio')
 const dayjs = require('dayjs')
 
 module.exports = {
-  lang: 'hr',
   site: 'tvprofil.com',
-  channels: 'tvprofil.com.channels.xml',
-  output: '.gh-pages/guides/tvprofil.com.guide.xml',
   request: {
     headers: {
       'x-requested-with': 'XMLHttpRequest'
