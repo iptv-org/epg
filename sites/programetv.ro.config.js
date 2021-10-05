@@ -6,10 +6,7 @@ require('dayjs/locale/ro')
 dayjs.locale('ro')
 
 module.exports = {
-  lang: 'ro',
   site: 'programetv.ro',
-  channels: 'programetv.ro.channels.xml',
-  output: '.gh-pages/guides/programetv.ro.guide.xml',
   url: function ({ date, channel }) {
     const diff = dayjs().diff(date, 'd')
     let day
