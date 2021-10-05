@@ -8,11 +8,8 @@ dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
 module.exports = {
-  lang: 'ru',
   days: 3,
   site: 'tv.mail.ru',
-  channels: 'tv.mail.ru.channels.xml',
-  output: '.gh-pages/guides/tv.mail.ru.guide.xml',
   url({ channel, date }) {
     return `https://tv.mail.ru/ajax/channel/?region_id=70&channel_id=${
       channel.site_id
