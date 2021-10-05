@@ -7,11 +7,8 @@ dayjs.extend(utc)
 dayjs.extend(customParseFormat)
 
 module.exports = {
-  lang: 'en',
   days: 3,
   site: 'dstv.com',
-  channels: 'dstv.com.channels.xml',
-  output: '.gh-pages/guides/dstv.com.guide.xml',
   request: {
     timeout: 10000
   },
