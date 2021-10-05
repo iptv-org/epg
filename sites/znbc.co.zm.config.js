@@ -11,11 +11,8 @@ dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
 module.exports = {
-  lang: 'en',
   days: 7,
   site: 'znbc.co.zm',
-  channels: 'znbc.co.zm.channels.xml',
-  output: '.gh-pages/guides/znbc.co.zm.guide.xml',
   url({ channel }) {
     return `https://www.znbc.co.zm/${channel.site_id}/`
   },
