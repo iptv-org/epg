@@ -8,10 +8,7 @@ dayjs.extend(utc)
 dayjs.extend(customParseFormat)
 
 module.exports = {
-  lang: 'el',
   site: 'cosmote.gr',
-  channels: 'cosmote.gr.channels.xml',
-  output: '.gh-pages/guides/cosmote.gr.guide.xml',
   url: function ({ date, channel }) {
     return `https://www.cosmote.gr/cosmotetv/residential/program/epg/programchannel?p_p_id=channelprogram_WAR_OTETVportlet&p_p_lifecycle=0&_channelprogram_WAR_OTETVportlet_platform=IPTV&_channelprogram_WAR_OTETVportlet_date=${date.format(
       'DD-MM-YYYY'
