@@ -6,10 +6,7 @@ dayjs.extend(utc)
 dayjs.extend(customParseFormat)
 
 module.exports = {
-  lang: 'it',
   site: 'mediaset.it',
-  channels: 'mediaset.it.channels.xml',
-  output: '.gh-pages/guides/mediaset.it.guide.xml',
   url: function ({ date, channel }) {
     return `http://www.mediaset.it/guidatv/inc/canali/${date.format('YYYYMM')}/${date.format(
       'YYYYMMDD'
