@@ -10,11 +10,8 @@ dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
 module.exports = {
-  lang: 'pl',
   days: 3,
   site: 'programtv.onet.pl',
-  channels: 'programtv.onet.pl.channels.xml',
-  output: '.gh-pages/guides/programtv.onet.pl.guide.xml',
   url: function ({ date, channel }) {
     const today = dayjs().utc().startOf('d')
     const day = date.diff(today, 'd')
