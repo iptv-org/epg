@@ -4,10 +4,7 @@ const utc = require('dayjs/plugin/utc')
 dayjs.extend(utc)
 
 module.exports = {
-  lang: 'ms',
   site: 'astro.com.my',
-  channels: 'astro.com.my.channels.xml',
-  output: '.gh-pages/guides/astro.com.my.guide.xml',
   request: {
     timeout: 10000
   },
