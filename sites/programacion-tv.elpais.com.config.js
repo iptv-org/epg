@@ -6,10 +6,7 @@ dayjs.extend(utc)
 dayjs.extend(timezone)
 
 module.exports = {
-  lang: 'es',
   site: 'programacion-tv.elpais.com',
-  channels: 'programacion-tv.elpais.com.channels.xml',
-  output: '.gh-pages/guides/programacion-tv.elpais.com.guide.xml',
   url: function ({ date }) {
     return `https://programacion-tv.elpais.com/data/parrilla_${date.format('DDMMYYYY')}.json`
   },
