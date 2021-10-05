@@ -2,10 +2,7 @@ const jsdom = require('jsdom')
 const { JSDOM } = jsdom
 
 module.exports = {
-  lang: 'ru',
   site: 'tv.yandex.ru',
-  channels: 'tv.yandex.ru.channels.xml',
-  output: '.gh-pages/guides/tv.yandex.ru.guide.xml',
   request: {
     headers: {
       Cookie:
