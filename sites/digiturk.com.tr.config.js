@@ -1,8 +1,5 @@
 module.exports = {
-  lang: 'tr',
   site: 'digiturk.com.tr',
-  channels: 'digiturk.com.tr.channels.xml',
-  output: '.gh-pages/guides/digiturk.com.tr.guide.xml',
   url: function ({ date, channel }) {
     return `https://www.digiturk.com.tr/yayin-akisi/api/program/kanal/${
       channel.site_id
