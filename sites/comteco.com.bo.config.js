@@ -10,11 +10,8 @@ dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
 module.exports = {
-  lang: 'es',
   days: 3,
   site: 'comteco.com.bo',
-  channels: 'comteco.com.bo.channels.xml',
-  output: '.gh-pages/guides/comteco.com.bo.guide.xml',
   request: {
     method: 'POST',
     data: function ({ date }) {
