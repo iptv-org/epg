@@ -8,10 +8,7 @@ dayjs.extend(customParseFormat)
 dayjs.extend(timezone)
 
 module.exports = {
-  lang: 'pt',
   site: 'meo.pt',
-  channels: 'meo.pt.channels.xml',
-  output: '.gh-pages/guides/meo.pt.guide.xml',
   request: {
     method: 'POST',
     data: function ({ channel, date }) {
