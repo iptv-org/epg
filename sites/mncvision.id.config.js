@@ -11,10 +11,7 @@ dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
 module.exports = {
-  lang: 'en',
   site: 'mncvision.id',
-  channels: 'mncvision.id.channels.xml',
-  output: '.gh-pages/guides/mncvision.id.guide.xml',
   request: {
     method: 'POST',
     data: function ({ channel, date }) {
