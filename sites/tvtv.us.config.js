@@ -5,7 +5,6 @@ const utc = require('dayjs/plugin/utc')
 dayjs.extend(utc)
 
 module.exports = {
-  lang: 'en',
   site: 'tvtv.us',
   url: function ({ date, channel }) {
     return `https://tvtv.us/tvm/t/tv/v4/stations/${
