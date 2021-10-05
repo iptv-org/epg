@@ -11,10 +11,7 @@ dayjs.extend(customParseFormat)
 dayjs.extend(timezone)
 
 module.exports = {
-  lang: 'id',
   site: 'vidio.com',
-  channels: 'vidio.com.channels.xml',
-  output: '.gh-pages/guides/vidio.com.guide.xml',
   url({ channel }) {
     return `https://www.vidio.com/live/${channel.site_id}/schedules`
   },
@@ -22,9 +19,9 @@ module.exports = {
     const programs = []
     const dom = new JSDOM(content)
 
-    const scheduleDate = dom.window.document.querySelector(
-      'div.b-livestreaming-daily-schedule__date-label'
-    ).textContent.split(',')
+    const scheduleDate = dom.window.document
+      .querySelector('div.b-livestreaming-daily-schedule__date-label')
+      .textContent.split(',')
     const currdate = dayjs(scheduleDate[1], 'DD MMMM YYYY', 'id')
     const list = dom.window.document.querySelector(
       `#schedule-content-${currdate.format(
