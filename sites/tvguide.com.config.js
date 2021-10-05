@@ -6,10 +6,7 @@ dayjs.extend(utc)
 dayjs.extend(timezone)
 
 module.exports = {
-  lang: 'en',
   site: 'tvguide.com',
-  channels: 'tvguide.com.channels.xml',
-  output: '.gh-pages/guides/tvguide.com.guide.xml',
   url: function ({ date, channel }) {
     const parts = channel.site_id.split('#')
     const start = date.startOf('d')
