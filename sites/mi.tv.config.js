@@ -10,8 +10,6 @@ dayjs.extend(customParseFormat)
 module.exports = {
   days: 1,
   site: 'mi.tv',
-  channels: 'mi.tv.channels.xml',
-  output: '.gh-pages/guides/mi.tv.guide.xml',
   url({ date, channel }) {
     const [country, id] = channel.site_id.split('#')
 
