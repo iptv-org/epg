@@ -11,6 +11,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   days: 3,
+  lang: 'pl',
   site: 'programtv.onet.pl',
   url: function ({ date, channel }) {
     const today = dayjs().utc().startOf('d')
