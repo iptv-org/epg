@@ -10,6 +10,7 @@ const convert = require('xml-js')
 program
   .option('--channels <channels>', 'Path to channels.xml file')
   .option('--output <output>', 'Path to output file', 'guide.xml')
+  .option('--days <days>', 'Number of days for which to grab the program', parseInteger, 1)
   .parse(process.argv)
 
 const options = program.opts()
@@ -32,6 +33,7 @@ async function main() {
   for (let channel of channels) {
     const configPath = `sites/${channel.site}.config.js`
     const config = require(path.resolve(configPath))
+    config.days = options.days
     await grabber
       .grab(channel, config, (item, err) => {
         console.log(
@@ -89,4 +91,8 @@ function writeToFile(filename, data) {
   }
 
   fs.writeFileSync(path.resolve(filename), data)
+}
+
+function parseInteger(val) {
+  return val ? parseInt(val) : null
 }
