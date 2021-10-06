@@ -11,7 +11,6 @@ dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
 module.exports = {
-  days: 3,
   lang: 'ua',
   site: 'tvgid.ua',
   url: function ({ date, channel }) {
