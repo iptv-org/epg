@@ -31,19 +31,21 @@ async function main() {
   for (let channel of channels) {
     const configPath = `sites/${channel.site}.config.js`
     const config = require(path.resolve(configPath))
-    await grabber.grab(channel, config, (item, err) => {
-      if (err) {
-        console.log(`    Error: ${err.message}`)
-      } else {
+    await grabber
+      .grab(channel, config, (item, err) => {
         console.log(
           `  ${item.channel.site} - ${item.channel.xmltv_id} - ${item.date.format(
             'MMM D, YYYY'
           )} (${item.programs.length} programs)`
         )
 
-        programs = programs.concat(item.programs)
-      }
-    })
+        if (err) {
+          console.log(`    Error: ${err.message}`)
+        }
+      })
+      .then(results => {
+        programs = programs.concat(results)
+      })
   }
 
   const xml = grabber.convertToXMLTV({ channels, programs })
