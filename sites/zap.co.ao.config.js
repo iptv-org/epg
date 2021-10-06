@@ -8,7 +8,6 @@ dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
 module.exports = {
-  days: 3,
   site: 'zap.co.ao',
   url: function ({ date, channel }) {
     return `https://www.zap.co.ao/_api/channels/${date.format('YYYY-M-D')}/epg.json`
