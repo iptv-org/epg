@@ -8,7 +8,6 @@ dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
 module.exports = {
-  days: 3,
   site: 'tv.mail.ru',
   url({ channel, date }) {
     return `https://tv.mail.ru/ajax/channel/?region_id=70&channel_id=${
