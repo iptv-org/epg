@@ -8,7 +8,6 @@ dayjs.extend(utc)
 dayjs.extend(customParseFormat)
 
 module.exports = {
-  days: 1,
   site: 'mi.tv',
   url({ date, channel }) {
     const [country, id] = channel.site_id.split('#')
