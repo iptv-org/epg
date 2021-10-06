@@ -16,6 +16,7 @@ const options = program.opts()
 
 async function main() {
   console.log('Starting...')
+  console.time('Done in')
 
   const buffer = {}
   const channels = parseChannels(options.channels).filter(channel => {
@@ -46,13 +47,16 @@ async function main() {
       .then(results => {
         programs = programs.concat(results)
       })
+      .catch(err => {
+        console.log(`    Error: ${err.message}`)
+      })
   }
 
   const xml = grabber.convertToXMLTV({ channels, programs })
   writeToFile(options.output, xml)
 
   console.log(`File '${options.output}' successfully saved`)
-  console.log('Finish')
+  console.timeEnd(`Done in`)
 
   return true
 }
