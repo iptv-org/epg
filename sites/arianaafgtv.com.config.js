@@ -9,7 +9,7 @@ dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
 module.exports = {
-  days: 7,
+  days: 3,
   site: 'arianaafgtv.com',
   url() {
     return `https://www.arianaafgtv.com/index.html`
