@@ -5,7 +5,7 @@ module.exports = {
   lang: 'cn',
   days: 3,
   request: {
-    timeout: 10000
+    timeout: 15000
   },
   url({ channel, date }) {
     return `https://api.cntv.cn/epg/getEpgInfoByChannelNew?serviceId=tvcctv&c=${
