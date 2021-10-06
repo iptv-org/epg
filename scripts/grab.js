@@ -17,7 +17,14 @@ const options = program.opts()
 async function main() {
   console.log('Starting...')
 
-  const channels = parseChannels(options.channels)
+  const buffer = {}
+  const channels = parseChannels(options.channels).filter(channel => {
+    if (!buffer[channel.xmltv_id]) {
+      buffer[channel.xmltv_id] = true
+      return true
+    }
+    return false
+  })
 
   console.log('Parsing:')
   let programs = []
