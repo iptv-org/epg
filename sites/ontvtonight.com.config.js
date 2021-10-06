@@ -16,7 +16,6 @@ const tz = {
 }
 
 module.exports = {
-  days: 3,
   site: 'ontvtonight.com',
   url: function ({ date, channel }) {
     const [region, id] = channel.site_id.split('#')
