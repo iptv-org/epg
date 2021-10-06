@@ -10,7 +10,6 @@ dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
 module.exports = {
-  days: 3,
   site: 'comteco.com.bo',
   request: {
     method: 'POST',
