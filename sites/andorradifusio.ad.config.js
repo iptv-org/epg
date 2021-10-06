@@ -48,7 +48,7 @@ function parseStart(item, date) {
 
 function parseItems(content, date) {
   const $ = cheerio.load(content)
-  const dayOfWeek = date.locale('ca').format('dddd').toLowerCase()
+  const dayOfWeek = dayjs(date).locale('ca').format('dddd').toLowerCase()
   const column = $('.programacio-dia > h3')
     .filter((i, el) => $(el).text().startsWith(dayOfWeek))
     .first()
