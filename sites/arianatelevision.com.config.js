@@ -11,7 +11,7 @@ dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
 module.exports = {
-  days: 7,
+  days: 3,
   site: 'arianatelevision.com',
   url() {
     return `https://www.arianatelevision.com/program-schedule/`
