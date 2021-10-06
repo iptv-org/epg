@@ -10,7 +10,6 @@ dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
 module.exports = {
-  days: 3,
   lang: 'de',
   site: 'hd-plus.de',
   url({ date, channel }) {
