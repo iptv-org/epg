@@ -11,7 +11,7 @@ dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
 module.exports = {
-  days: 7,
+  days: 3,
   site: 'znbc.co.zm',
   url({ channel }) {
     return `https://www.znbc.co.zm/${channel.site_id}/`
