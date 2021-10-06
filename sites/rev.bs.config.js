@@ -11,7 +11,6 @@ const endpoint = `https://www.rev.bs/wp-content/uploads/tv-guide/$date_$index.js
 
 module.exports = {
   site: 'rev.bs',
-  days: 3,
   url: function ({ date }) {
     return endpoint.replace('$date', date.format('YYYY-MM-DD')).replace('$index', 0)
   },
