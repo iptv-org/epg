@@ -11,7 +11,6 @@ dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
 module.exports = {
-  days: 3,
   site: 'programme-tv.net',
   url: function ({ date, channel }) {
     return `https://www.programme-tv.net/programme/chaine/${date.format('YYYY-MM-DD')}/programme-${
