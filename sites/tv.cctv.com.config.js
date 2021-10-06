@@ -2,6 +2,7 @@ const dayjs = require('dayjs')
 
 module.exports = {
   site: 'tv.cctv.com',
+  lang: 'cn',
   days: 3,
   request: {
     timeout: 10000
