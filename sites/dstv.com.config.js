@@ -7,7 +7,6 @@ dayjs.extend(utc)
 dayjs.extend(customParseFormat)
 
 module.exports = {
-  days: 3,
   site: 'dstv.com',
   request: {
     timeout: 10000
