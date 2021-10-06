@@ -31,8 +31,10 @@ async function main() {
   for (let channel of channels) {
     const configPath = `sites/${channel.site}.config.js`
     const config = require(path.resolve(configPath))
-    await grabber.grab(channel, config, result => {
-      result.on('data', function (item) {
+    await grabber.grab(channel, config, (item, err) => {
+      if (err) {
+        console.log(`    Error: ${err.message}`)
+      } else {
         console.log(
           `  ${item.channel.site} - ${item.channel.xmltv_id} - ${item.date.format(
             'MMM D, YYYY'
@@ -40,11 +42,7 @@ async function main() {
         )
 
         programs = programs.concat(item.programs)
-      })
-
-      result.on('error', function (err) {
-        console.log(`    Error: ${err.message}`)
-      })
+      }
     })
   }
 
