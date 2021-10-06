@@ -45,7 +45,7 @@ function parseItems(content, channel) {
   const channels = JSON.parse(content)
   const data = channels.find(ch => ch.id == channel.site_id)
 
-  return data.epg
+  return data ? data.epg : []
 }
 
 function parseStart(item) {
