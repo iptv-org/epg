@@ -1,8 +1,9 @@
 const glob = require('glob')
+const fs = require('fs')
 
-function list(include = [], exclude = []) {
+function list(pattern, include = [], exclude = []) {
   return new Promise(resolve => {
-    glob('channels/**/*.xml', function (err, files) {
+    glob(pattern, function (err, files) {
       if (include.length) {
         include = include.map(filename => `channels/${filename}.xml`)
         files = files.filter(filename => include.includes(filename))
@@ -18,6 +19,11 @@ function list(include = [], exclude = []) {
   })
 }
 
+function read(filename) {
+  return fs.readFileSync(filename, { encoding: 'utf8' })
+}
+
 module.exports = {
-  list
+  list,
+  read
 }
