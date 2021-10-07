@@ -7,7 +7,7 @@ const file = require('./file.js')
 async function main() {
   console.log('Starting...')
   file
-    .list([], ['us-local'])
+    .list('channels/**/*.xml', [], ['us-local'])
     .then(files => {
       files = files.map(str => str.match(/channels\/(.*).xml/i)[1])
       generateTable(files)
