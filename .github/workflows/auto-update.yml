@@ -34,7 +34,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: .gh-pages
-          path: .gh-pages/guides/${{ matrix.site }}.guide.xml
+          path: .gh-pages/guides/${{ matrix.country }}.guide.xml
           if-no-files-found: error
   deploy:
     if: ${{ github.ref == 'refs/heads/master' }}
