@@ -38,7 +38,7 @@ function generateTable(files) {
     ]
   })
 
-  fs.writeFileSync(path.resolve('./.readme/_countries.md'), table)
+  fs.writeFileSync(path.resolve('./.readme/_table.md'), table)
 }
 
 function generateHtmlTable(data, options) {
