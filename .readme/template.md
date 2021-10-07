@@ -14,7 +14,7 @@ To load a program guide, all you need to do is copy the link to one or more of t
 <br>
 
 <!-- prettier-ignore -->
-#include "./.readme/_countries.md"
+#include "./.readme/_table.md"
 
 </details>
 
