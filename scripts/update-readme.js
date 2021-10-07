@@ -26,7 +26,7 @@ function generateTable(files) {
     if (files.includes(country.code)) {
       output.push({
         country: `${country.flag}&nbsp;${country.name}`,
-        guide: `<code>https://iptv-org.github.io/epg/guides/${country.code}.epg.xml</code>`
+        guide: `<code>https://iptv-org.github.io/epg/guides/${country.code}.xml</code>`
       })
     }
   }
