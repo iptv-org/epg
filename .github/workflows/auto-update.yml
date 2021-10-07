@@ -4,13 +4,29 @@ on:
   # schedule:
   #   - cron: '0 0 * * *'
 jobs:
+  create-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.ref }}
+      - name: Create Branch
+        uses: peterjgrainger/action-create-branch@v2.0.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          branch: 'bot/auto-update'
   create-matrix:
     runs-on: ubuntu-latest
+    needs: create-branch
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+        with:
+          ref: bot/auto-update
       - name: Install Dependencies
         run: npm install
       - name: Create Matrix
@@ -26,10 +42,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+        with:
+          ref: bot/auto-update
       - name: Install Dependencies
         run: npm install
       - name: Run Grabber
-        run: node scripts/grab.js --channels=channels/${{ matrix.country }}.xml --output=.gh-pages/guides/${{ matrix.country }}.guide.xml --days=${{ matrix.days }}
+        run: node scripts/grab.js --channels=channels/${{ matrix.country }}.xml --output=.gh-pages/guides/${{ matrix.country }}.epg.xml --days=${{ matrix.days }}
       - name: Upload Artifact
         uses: actions/upload-artifact@v2
         with:
@@ -43,6 +61,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+        with:
+          ref: bot/auto-update
       - name: Download Artifacts
         uses: actions/download-artifact@v2
       - name: Generate Token
@@ -62,3 +82,85 @@ jobs:
           git-config-name: iptv-bot
           git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
           commit-message: '[Bot] Deploy to GitHub Pages'
+  update-codes:
+    runs-on: ubuntu-latest
+    needs: deploy
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: bot/auto-update
+      - name: Install Dependencies
+        run: npm install
+      - name: Update Codes
+        run: npm run update-codes
+      - name: Generate Token
+        uses: tibdex/github-app-token@v1
+        id: generate-token
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        with:
+          branch: gh-pages
+          folder: .gh-pages
+          clean: false
+          token: ${{ steps.generate-token.outputs.token }}
+          git-config-name: iptv-bot
+          git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
+          commit-message: '[Bot] Deploy to GitHub Pages'
+  update-readme:
+    runs-on: ubuntu-latest
+    needs: deploy
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: bot/auto-update
+      - name: Install Dependencies
+        run: npm install
+      - name: Update README.md
+        run: node scripts/update-readme.js
+      - name: Commit Changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: '[Bot] Update README.md'
+          commit_user_name: iptv-bot
+          commit_user_email: 84861620+iptv-bot[bot]@users.noreply.github.com
+          commit_author: 'iptv-bot[bot] <84861620+iptv-bot[bot]@users.noreply.github.com>'
+          branch: bot/auto-update
+          file_pattern: README.md
+  pull-request:
+    if: ${{ github.ref == 'refs/heads/master' }}
+    needs: update-readme
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: bot/auto-update
+      - name: Generate Token
+        uses: tibdex/github-app-token@v1
+        id: generate-token
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
+      - name: Create Pull Request
+        id: pr
+        uses: repo-sync/pull-request@v2
+        with:
+          source_branch: 'bot/auto-update'
+          destination_branch: 'master'
+          pr_title: '[Bot] Update playlists'
+          pr_body: |
+            This pull request is created by [auto-update][1] workflow.
+
+            [1]: https://github.com/iptv-org/epg/actions/runs/${{ github.run_id }}
+          github_token: ${{ steps.generate-token.outputs.token }}
+      - name: Merge Pull Request
+        uses: juliangruber/merge-pull-request-action@v1
+        with:
+          github-token: ${{ secrets.PAT }}
+          number: ${{ steps.pr.outputs.pr_number }}
+          method: squash
