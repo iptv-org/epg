@@ -1,7 +1,6 @@
 # EPG
 
 ![auto-update](https://github.com/iptv-org/epg/actions/workflows/auto-update.yml/badge.svg)
-![update-codes](https://github.com/iptv-org/epg/actions/workflows/update-codes.yml/badge.svg)
 
 EPG (Electronic Program Guide) for thousands of TV channels collected from different sources.
 
