@@ -4,67 +4,37 @@ on:
   # schedule:
   #   - cron: '0 0 * * *'
 jobs:
-  grab:
+  create-matrix:
     runs-on: ubuntu-latest
-    continue-on-error: true
-    strategy:
-      fail-fast: false
-      matrix:
-        # site: [
-        #     andorradifusio.ad,
-        #     # arianaafgtv.com,
-        #     # arianatelevision.com,
-        #     # astro.com.my,
-        #     # comteco.com.bo,
-        #     # cosmote.gr,
-        #     # digiturk.com.tr,
-        #     # dstv.com,
-        #     # elcinema.com,
-        #     # guidatv.sky.it,
-        #     # hd-plus.de,
-        #     # m.tv.sms.cz,
-        #     # maxtv.hrvatskitelekom.hr,
-        #     # mediaset.it,
-        #     # meo.pt,
-        #     # mi.tv,
-        #     # mncvision.id,
-        #     # ontvtonight.com,
-        #     # programacion-tv.elpais.com,
-        #     # programetv.ro,
-        #     # programme-tv.net,
-        #     # programtv.onet.pl,
-        #     # rev.bs,
-        #     # telkussa.fi,
-        #     # tv.cctv.com,
-        #     # tv.lv,
-        #     # tv.mail.ru,
-        #     # tv.yandex.ru,
-        #     # tvgid.ua,
-        #     # tvguide.com,
-        #     # tvprofil.com,
-        #     tvtv.us
-        #     # vidio.com,
-        #     # zap.co.ao,
-        #     # znbc.co.zm
-        #   ]
-        include:
-          - site: andorradifusio.ad
-          - site: tvtv.us
-            region: _us
-          - site: tvtv.us
-            region: _ca
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
     steps:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Install Dependencies
         run: npm install
-      - name: Run EPG Grabber
-        run: npx epg-grabber --config=sites/${{ matrix.site }}.config.js --channels=sites/${{ matrix.site }}${{ matrix.region }}.channels.xml --output=.gh-pages/guides/${{ matrix.site }}${{ matrix.region }}.guide.xml
+      - name: Create Matrix
+        id: set-matrix
+        run: node scripts/create-matrix.js
+  grab:
+    runs-on: ubuntu-latest
+    needs: create-matrix
+    continue-on-error: true
+    strategy:
+      fail-fast: false
+      matrix: ${{fromJSON(needs.create-matrix.outputs.matrix)}}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: npm install
+      - name: Run Grabber
+        run: node scripts/grab.js --channels=sites/${{ matrix.country }}.channels.xml --output=.gh-pages/guides/${{ matrix.country }}.guide.xml --days=${{ matrix.days }}
       - name: Upload Artifact
         uses: actions/upload-artifact@v2
         with:
           name: .gh-pages
-          path: .gh-pages/guides/${{ matrix.site }}${{ matrix.region }}.guide.xml
+          path: .gh-pages/guides/${{ matrix.site }}.guide.xml
           if-no-files-found: error
   # deploy:
   #   if: ${{ github.ref == 'refs/heads/master' }}
