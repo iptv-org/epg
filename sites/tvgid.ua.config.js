@@ -11,7 +11,6 @@ dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
 module.exports = {
-  lang: 'ua',
   site: 'tvgid.ua',
   url: function ({ date, channel }) {
     return `https://tvgid.ua/channels/${channel.site_id}/${date.format('DDMMYYYY')}/tmall/`
