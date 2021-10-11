@@ -2,7 +2,6 @@ const jsdom = require('jsdom')
 const { JSDOM } = jsdom
 
 module.exports = {
-  lang: 'ru',
   site: 'tv.yandex.ru',
   request: {
     headers: {
