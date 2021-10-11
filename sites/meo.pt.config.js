@@ -9,7 +9,6 @@ dayjs.extend(timezone)
 
 module.exports = {
   site: 'meo.pt',
-  lang: 'pt',
   request: {
     method: 'POST',
     data: function ({ channel, date }) {
