@@ -24,7 +24,11 @@ async function main() {
 
   console.log(`Loading '${channelsPath}'...`)
   const channelsFile = file.read(channelsPath)
-  let channels = parser.parseChannels(channelsFile)
+  let parsed = parser.parseChannels(channelsFile)
+  let channels = parsed.groups.reduce((acc, curr) => {
+    acc = acc.concat(curr.channels)
+    return acc
+  }, [])
   channels = filterChannels(channels, options)
 
   console.log('Parsing:')
