@@ -11,7 +11,6 @@ dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
 module.exports = {
-  lang: 'cz',
   site: 'm.tv.sms.cz',
   url: function ({ date, channel }) {
     return `https://m.tv.sms.cz/index.php?stanice=${channel.site_id}&cas=0&den=${date.format(
