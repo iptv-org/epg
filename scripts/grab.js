@@ -1,12 +1,11 @@
 #! /usr/bin/env node
 
 const { Command } = require('commander')
-const program = new Command()
 const grabber = require('epg-grabber')
-const path = require('path')
-const fs = require('fs')
-const convert = require('xml-js')
+const parser = require('./parser')
+const file = require('./file')
 
+const program = new Command()
 program
   .requiredOption('--site <site>', 'Site domain')
   .option('--country <country>', 'Filter channels by country ISO code')
@@ -24,14 +23,14 @@ async function main() {
   const channelsPath = `sites/${options.site}.channels.xml`
 
   console.log(`Loading '${channelsPath}'...`)
-  let channels = parseChannels(path.resolve(channelsPath))
+  const channelsFile = file.read(channelsPath)
+  let channels = parser.parseChannels(channelsFile)
   channels = filterChannels(channels, options)
 
   console.log('Parsing:')
   let programs = []
   for (let channel of channels) {
-    const configPath = path.resolve(`sites/${channel.site}.config.js`)
-    const config = require(configPath)
+    const config = file.load(`sites/${channel.site}.config.js`)
     config.days = options.days
     await grabber
       .grab(channel, config, (item, err) => {
@@ -54,15 +53,13 @@ async function main() {
   }
 
   const xml = grabber.convertToXMLTV({ channels, programs })
-  writeToFile(options.output, xml)
+  file.write(options.output, xml)
 
   console.log(`File '${options.output}' successfully saved`)
   console.timeEnd(`Done in`)
 
   return true
 }
-
-main()
 
 function filterChannels(channels, options) {
   return channels.filter(channel => {
@@ -73,41 +70,8 @@ function filterChannels(channels, options) {
   })
 }
 
-function parseChannels(filename) {
-  const xml = fs.readFileSync(path.resolve(filename), { encoding: 'utf-8' })
-  const result = convert.xml2js(xml)
-  const siteTag = result.elements.find(el => el.name === 'site')
-  const channelsTags = siteTag.elements.filter(el => el.name === 'channels')
-
-  let output = []
-
-  channelsTags.forEach(channelsTag => {
-    const channels = channelsTag.elements
-      .filter(el => el.name === 'channel')
-      .map(el => {
-        const channel = el.attributes
-        if (!el.elements) throw new Error(`Channel '${channel.xmltv_id}' has no valid name`)
-        channel.name = el.elements.find(el => el.type === 'text').text
-        channel.country = channelsTag.attributes.country
-        channel.site = siteTag.attributes.site
-
-        return channel
-      })
-    output = output.concat(channels)
-  })
-
-  return output
-}
-
-function writeToFile(filename, data) {
-  const dir = path.resolve(path.dirname(filename))
-  if (!fs.existsSync(dir)) {
-    fs.mkdirSync(dir, { recursive: true })
-  }
-
-  fs.writeFileSync(path.resolve(filename), data)
-}
-
 function parseInteger(val) {
   return val ? parseInt(val) : null
 }
+
+main()
