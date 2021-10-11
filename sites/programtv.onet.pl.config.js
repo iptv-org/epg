@@ -10,7 +10,6 @@ dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
 module.exports = {
-  lang: 'pl',
   site: 'programtv.onet.pl',
   url: function ({ date, channel }) {
     const today = dayjs().utc().startOf('d')
