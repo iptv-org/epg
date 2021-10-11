@@ -7,7 +7,10 @@ parser.parseChannels = function (xml) {
   const siteTag = result.elements.find(el => el.name === 'site')
   const channelsTags = siteTag.elements.filter(el => el.name === 'channels')
 
-  let output = []
+  const output = {
+    site: siteTag.attributes.site,
+    groups: []
+  }
 
   channelsTags.forEach(channelsTag => {
     const channels = channelsTag.elements
@@ -21,7 +24,11 @@ parser.parseChannels = function (xml) {
 
         return channel
       })
-    output = output.concat(channels)
+
+    output.groups.push({
+      country: channelsTag.attributes.country,
+      channels
+    })
   })
 
   return output
