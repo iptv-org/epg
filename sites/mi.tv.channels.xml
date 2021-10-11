@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site site="mi.tv">
+  <channels country="AR">
+    <channel lang="es" xmltv_id="247CanaldeNoticias.ar" site_id="ar#24-7-canal-de-noticias">24/7 Canal de Noticias</channel>
+    <channel lang="es" xmltv_id="A24.ar" site_id="ar#america-24">A24</channel>
+    <channel lang="es" xmltv_id="AELatinoamerica.us" site_id="ar#a-e-mundo">A&amp;E Latinoamérica</channel>
+    <channel lang="es" xmltv_id="AMCLatinAmerica.us" site_id="ar#amc">AMC Latin America</channel>
+    <channel lang="es" xmltv_id="AmericaTV.ar" site_id="ar#america-2-capital">América TV</channel>
+    <channel lang="es" xmltv_id="AnimalPlanetLatinoamerica.us" site_id="ar#animal-planet">Animal Planet Latinoamérica</channel>
+    <channel lang="es" xmltv_id="ArgentinisimaSatelital.ar" site_id="ar#argentinisima-satelital">Argentinísima Satelital</channel>
+    <channel lang="es" xmltv_id="Atrecine.es" site_id="ar#a3cine">Atrecine</channel>
+    <channel lang="es" xmltv_id="Atreseries.es" site_id="ar#atreseries">Atreseries</channel>
+    <channel lang="es" xmltv_id="AzCorazon.mx" site_id="ar#az-corazon">Az Corazón</channel>
+    <channel lang="es" xmltv_id="BabyTVLatinAmerica.uk" site_id="ar#babytv">Baby TV Latin America</channel>
+    <channel lang="es" xmltv_id="BloombergTVLatinAmerica.us" site_id="ar#bloomberg">Bloomberg TV Latin America</channel>
+    <channel lang="es" xmltv_id="C5N.ar" site_id="ar#c5n">C5N</channel>
+    <channel lang="es" xmltv_id="Canal10Cordoba.ar" site_id="ar#canal-10-de-cordoba">Canal 10 Córdoba</channel>
+    <channel lang="es" xmltv_id="Canal20VillaMaria.ar" site_id="ar#canal-c20-villa-maria">Canal 20 Villa Maria</channel>
+    <channel lang="es" xmltv_id="Canal26.ar" site_id="ar#26-tv">Canal 26</channel>
+    <channel lang="es" xmltv_id="Canal4.uy" site_id="ar#canal-4-montecarlo">Canal 4</channel>
+    <channel lang="es" xmltv_id="Canala.ar" site_id="ar#canal-a">Canal (á)</channel>
+    <channel lang="es" xmltv_id="CanaldelaCiudad.ar" site_id="ar#ciudad-abierta">Canal de la Ciudad</channel>
+    <channel lang="es" xmltv_id="CanalDHE.us" site_id="ar#dhe">Canal DHE</channel>
+    <channel lang="es" xmltv_id="CanalOrbe21.ar" site_id="ar#canal-orbe-21">Canal Orbe 21</channel>
+    <channel lang="es" xmltv_id="CanalRural.ar" site_id="ar#canal-rural">Canal Rural</channel>
+    <channel lang="es" xmltv_id="CanalU.ar" site_id="ar#cba-24n">Canal U</channel>
+    <channel lang="es" xmltv_id="CartoonNetworkArgentina.us" site_id="ar#cartoon-network">Cartoon Network Argentina</channel>
+    <channel lang="es" xmltv_id="Cinear.ar" site_id="ar#incaa-tv">Cine.ar</channel>
+    <channel lang="es" xmltv_id="CineLatino.mx" site_id="ar#cine-latino">CineLatino</channel>
+    <channel lang="es" xmltv_id="CinemaxLatinoamerica.us" site_id="ar#cinemax">Cinemax Latinoamérica</channel>
+    <channel lang="es" xmltv_id="CiudadMagazine.ar" site_id="ar#magazine">Ciudad Magazine</channel>
+    <channel lang="es" xmltv_id="CMElCanaldelaMusica.ar" site_id="ar#canal-de-la-musica">CM El Canal de la Música</channel>
+    <channel lang="es" xmltv_id="CN23.ar" site_id="ar#cn-23">CN23</channel>
+    <channel lang="es" xmltv_id="CNNChile.us" site_id="ar#cnn-chile">CNN Chile</channel>
+    <channel lang="es" xmltv_id="CNNenEspanol.us" site_id="ar#cnn-en-espanol">CNN en Español</channel>
+    <channel lang="es" xmltv_id="CNNInternationalLatinAmerica.us" site_id="ar#cnn">CNN International Latin America</channel>
+    <channel lang="es" xmltv_id="ComedyCentralLatinoamericaSur.us" site_id="ar#comedy-central">Comedy Central Latinoamérica Sur</channel>
+    <channel lang="es" xmltv_id="ConexionEducativa.ar" site_id="ar#conexion-educativa">Conexión Educativa</channel>
+    <channel lang="es" xmltv_id="ConstruirTV.ar" site_id="ar#construir">Construir TV</channel>
+    <channel lang="es" xmltv_id="CronicaTV.ar" site_id="ar#cronica">Crónica TV</channel>
+    <channel lang="es" xmltv_id="DePelicula.mx" site_id="ar#de-pelicula">De Película</channel>
+    <channel lang="es" xmltv_id="DeporTV.ar" site_id="ar#dxtv">DeporTV</channel>
+    <channel lang="es" xmltv_id="DiscoveryChannelLatinoamerica.us" site_id="ar#discovery">Discovery Channel Latinoamérica</channel>
+    <channel lang="es" xmltv_id="DiscoveryHDWorldLatinoamerica.us" site_id="ar#discovery-world-hd">Discovery HD World Latinoamérica</channel>
+    <channel lang="es" xmltv_id="DiscoveryKidsAmericaLatina.us" site_id="ar#discovery-kids">Discovery Kids América Latina</channel>
+    <channel lang="es" xmltv_id="DiscoveryScienceLatinoamerica.us" site_id="ar#discovery-science">Discovery Science Latinoamérica</channel>
+    <channel lang="es" xmltv_id="DiscoveryTheater.us" site_id="ar#discovery-hd-theater">Discovery Theater</channel>
+    <channel lang="es" xmltv_id="DiscoveryTurboAmericaLatina.us" site_id="ar#discovery-turbo">Discovery Turbo América Latina</channel>
+    <channel lang="es" xmltv_id="DisneyChannelSur.us" site_id="ar#disney">Disney Channel Sur</channel>
+    <channel lang="es" xmltv_id="DisneyJuniorSur.us" site_id="ar#disney-jr">Disney Junior Sur</channel>
+    <channel lang="es" xmltv_id="DisneyXDSur.us" site_id="ar#disney-xd">Disney XD Sur</channel>
+    <channel lang="es" xmltv_id="ELatinoamerica.us" site_id="ar#entertainment">E! Latinoamérica</channel>
+    <channel lang="es" xmltv_id="ElGourmetSur.ar" site_id="ar#el-gourmet">El Gourmet Sur</channel>
+    <channel lang="es" xmltv_id="ElNueve.ar" site_id="ar#canal-9">El Nueve</channel>
+    <channel lang="es" xmltv_id="ElTrece.ar" site_id="ar#el-trece">El Trece</channel>
+    <channel lang="es" xmltv_id="ElTreceInternacional.ar" site_id="ar#el-trece-satelital">El Trece Internacional</channel>
+    <channel lang="es" xmltv_id="Encuentro.ar" site_id="ar#encuentro">Encuentro</channel>
+    <channel lang="es" xmltv_id="ESPN2AmericaLatina.us" site_id="ar#espn-2">ESPN 2 América Latina</channel>
+    <channel lang="es" xmltv_id="ESPN3AmericaLatina.us" site_id="ar#espn-3">ESPN 3 América Latina</channel>
+    <channel lang="es" xmltv_id="ESPNAmericaLatina.us" site_id="ar#espn">ESPN América Latina</channel>
+    <channel lang="es" xmltv_id="ESPNExtraAmericaLatina.us" site_id="ar#espn-1">ESPN Extra América Latina</channel>
+    <channel lang="es" xmltv_id="EuropaEuropa.uk" site_id="ar#europa-europa">Europa Europa</channel>
+    <channel lang="es" xmltv_id="EWTNEspanaLatinoamerica.us" site_id="ar#ewtn">EWTN España - Latinoamérica</channel>
+    <channel lang="es" xmltv_id="FilmArtsAmericaLatina.ar" site_id="ar#film-arts">Film &amp; Arts América Latina</channel>
+    <channel lang="es" xmltv_id="FoodNetworkLatinoamerica.us" site_id="ar#food-network">Food Network Latinoamérica</channel>
+    <channel lang="es" xmltv_id="FoxSports2Argentina.us" site_id="ar#fox-sports-2">Fox Sports 2 Argentina</channel>
+    <channel lang="es" xmltv_id="FoxSports3LatinAmerica.us" site_id="ar#fox-sports-3">Fox Sports 3 Latin America</channel>
+    <channel lang="es" xmltv_id="FoxSportsArgentina.us" site_id="ar#fox-sports-hd">Fox Sports Argentina</channel>
+    <channel lang="es" xmltv_id="FoxSportsPremium.us" site_id="ar#fox-sports-premium">Fox Sports Premium</channel>
+    <channel lang="es" xmltv_id="France24Espanol.fr" site_id="ar#france-24-espanol">France 24 Español</channel>
+    <channel lang="es" xmltv_id="FXAndina.us" site_id="ar#fx">FX Andina</channel>
+    <channel lang="es" xmltv_id="FXMEste.us" site_id="ar#fx-movies">FXM Este</channel>
+    <channel lang="es" xmltv_id="GaliciaTVAmerica.es" site_id="ar#galicia-tv">Galicia TV América</channel>
+    <channel lang="es" xmltv_id="GarageTV.ar" site_id="ar#el-garage">Garage TV</channel>
+    <channel lang="es" xmltv_id="GlitzLatinoamerica.us" site_id="ar#glitz">Glitz Latinoamérica</channel>
+    <channel lang="es" xmltv_id="GoldenEdge.mx" site_id="ar#golden-edge">Golden Edge</channel>
+    <channel lang="es" xmltv_id="GoldenLatinoamerica.mx" site_id="ar#golden">Golden Latinoamérica</channel>
+    <channel lang="es" xmltv_id="GolfChannelLatinAmerica.us" site_id="ar#golf-channel">Golf Channel Latin America</channel>
+    <channel lang="es" xmltv_id="GolTV.us" site_id="ar#gol-tv">Gol TV</channel>
+    <channel lang="es" xmltv_id="HAPSATV.ar" site_id="ar#hapsa">HAPSATV</channel>
+    <channel lang="es" xmltv_id="HBO2Latinoamerica.us" site_id="ar#hbo-2">HBO 2 Latinoamérica</channel>
+    <channel lang="es" xmltv_id="HBOFamilyLatinoamerica.us" site_id="ar#hbo-family">HBO Family Latinoamérica</channel>
+    <channel lang="es" xmltv_id="HBOMundiLatinoamerica.us" site_id="ar#max">HBO Mundi Latinoamérica</channel>
+    <channel lang="es" xmltv_id="HBOPopLatinoamerica.us" site_id="ar#max-up">HBO Pop Latinoamérica</channel>
+    <channel lang="es" xmltv_id="HBOSignatureLatinoamerica.us" site_id="ar#hbo-signature">HBO Signature Latinoamérica</channel>
+    <channel lang="es" xmltv_id="HBOXtremeLatinoamerica.us" site_id="ar#max-prime">HBO Xtreme Latinoamérica</channel>
+    <channel lang="es" xmltv_id="HGTVLatinoamerica.us" site_id="ar#hgtv">HGTV Latinoamérica</channel>
+    <channel lang="es" xmltv_id="HispanTV.ir" site_id="ar#hispan-tv">Hispan TV</channel>
+    <channel lang="es" xmltv_id="History2Latinoamerica.us" site_id="ar#h2">History 2 Latinoamérica</channel>
+    <channel lang="es" xmltv_id="HistoryLatinoamerica.us" site_id="ar#history">History Latinoamérica</channel>
+    <channel lang="es" xmltv_id="HolaTVAmericaLatina.es" site_id="ar#hola-tv">Hola! TV América Latina</channel>
+    <channel lang="es" xmltv_id="HTV.us" site_id="ar#htv">HTV</channel>
+    <channel lang="es" xmltv_id="InvestigationDiscoverySur.us" site_id="ar#investigation-discovery">Investigation Discovery Sur</channel>
+    <channel lang="es" xmltv_id="ISat.ar" site_id="ar#i-sat">I-Sat</channel>
+    <channel lang="es" xmltv_id="IVCInternacional.ve" site_id="ar#ivc">IVC Internacional</channel>
+    <channel lang="es" xmltv_id="LifetimeLatinoamerica.us" site_id="ar#lifetime">Lifetime Latinoamérica</channel>
+    <channel lang="es" xmltv_id="LNPlus.ar" site_id="ar#la-nacion">LN+</channel>
+    <channel lang="es" xmltv_id="MasChicLatinoamerica.us" site_id="ar#mas-chic">Más Chic Latinoamérica</channel>
+    <channel lang="es" xmltv_id="Metro.ar" site_id="ar#metro">Metro</channel>
+    <channel lang="es" xmltv_id="MTVHitsEurope.us" site_id="ar#mtv-hits">MTV Hits Europe</channel>
+    <channel lang="es" xmltv_id="MTVLatinoSud.us" site_id="ar#mtv">MTV Latino Sud</channel>
+    <channel lang="es" xmltv_id="MuchArgentina.ca" site_id="ar#muchmusic">Much Argentina</channel>
+    <channel lang="es" xmltv_id="MusicTop.ar" site_id="ar#musictop">MusicTop</channel>
+    <channel lang="es" xmltv_id="NatGeoKids.us" site_id="ar#nat-geo-kids">Nat Geo Kids</channel>
+    <channel lang="es" xmltv_id="NationalGeographicCentro.us" site_id="ar#national-geographic">National Geographic Centro</channel>
+    <channel lang="es" xmltv_id="NationalGeographicWildLatin.us" site_id="ar#nat-geo-wild">National Geographic Wild Latin</channel>
+    <channel lang="es" xmltv_id="NBATVLatinAmerica.us" site_id="ar#nba-tv">NBA TV Latin America</channel>
+    <channel lang="es" xmltv_id="NetTV.ar" site_id="ar#net-tv">Net TV</channel>
+    <channel lang="es" xmltv_id="NickelodeonSur.us" site_id="ar#nickelodeon">Nickelodeon Sur</channel>
+    <channel lang="es" xmltv_id="NickJrLatinAmerica.us" site_id="ar#nick-jr">Nick Jr Latin America</channel>
+    <channel lang="es" xmltv_id="NicktoonsLatinAmerica.us" site_id="ar#nicktoons">Nicktoons Latin America</channel>
+    <channel lang="es" xmltv_id="Pakapaka.ar" site_id="ar#pakapaka">Pakapaka</channel>
+    <channel lang="es" xmltv_id="ParamountNetworkLatinAmerica.us" site_id="ar#paramount-channel">Paramount Network Latin America</channel>
+    <channel lang="es" xmltv_id="PasionesLatinoamerica.us" site_id="ar#pasiones">Pasiones Latinoamérica</channel>
+    <channel lang="es" xmltv_id="PenthouseGold.us" site_id="ar#penthouse">Penthouse Gold</channel>
+    <channel lang="es" xmltv_id="PlayboyTVLatinAmerica.us" site_id="ar#playboy">Playboy TV Latin America</channel>
+    <channel lang="es" xmltv_id="QuieroMusicaenmiIdioma.ar" site_id="ar#quiero">Quiero Musica en mi Idioma</channel>
+    <channel lang="es" xmltv_id="RaiItaliaSudAmerica.it" site_id="ar#rai">Rai Italia Sud America</channel>
+    <channel lang="es" xmltv_id="RTEspanol.ru" site_id="ar#russia-today-hd">RT Español</channel>
+    <channel lang="es" xmltv_id="SmithsonianChannelLatinAmerica.us" site_id="ar#smithsonian-channel">Smithsonian Channel Latin America</channel>
+    <channel lang="es" xmltv_id="SonyChannelAndes.us" site_id="ar#sony">Sony Channel Andes</channel>
+    <channel lang="es" xmltv_id="SpaceSur.ar" site_id="ar#space">Space Sur</channel>
+    <channel lang="es" xmltv_id="StudioUniversalArgentina.us" site_id="ar#studio-universal">Studio Universal Argentina</channel>
+    <channel lang="es" xmltv_id="TBSAmericaLatina.us" site_id="ar#tbs">TBS América Latina</channel>
+    <channel lang="es" xmltv_id="TCMArgentina.us" site_id="ar#tcm">TCM Argentina</channel>
+    <channel lang="es" xmltv_id="TecTV.ar" site_id="ar#tecnopolis">Tec TV</channel>
+    <channel lang="es" xmltv_id="TelediarioTV.ar" site_id="ar#telediario">Telediario TV</channel>
+    <channel lang="es" xmltv_id="Telefe.ar" site_id="ar#telefe">Telefe</channel>
+    <channel lang="es" xmltv_id="TelefeCordoba.ar" site_id="ar#teleocho">Telefe Córdoba</channel>
+    <channel lang="es" xmltv_id="TelefeRosario.ar" site_id="ar#telefe-rosario">Telefe Rosario</channel>
+    <channel lang="es" xmltv_id="TelefeSantaFe.ar" site_id="ar#telefe-santa-fe">Telefe Santa Fe</channel>
+    <channel lang="es" xmltv_id="TeleHit.mx" site_id="ar#telehit-lat">TeleHit</channel>
+    <channel lang="es" xmltv_id="Telemax.ar" site_id="ar#telemax">Telemax</channel>
+    <channel lang="es" xmltv_id="TelemundoInternacional.us" site_id="ar#telemundo">Telemundo Internacional</channel>
+    <channel lang="es" xmltv_id="Telesur.ve" site_id="ar#telesur">Telesur</channel>
+    <channel lang="es" xmltv_id="TLCArgentina.us" site_id="ar#discovery-tlc">TLC Argentina</channel>
+    <channel lang="es" xmltv_id="TlnovelasAmerica.mx" site_id="ar#tlnovelas">Tlnovelas América</channel>
+    <channel lang="es" xmltv_id="TN.ar" site_id="ar#tn">TN</channel>
+    <channel lang="es" xmltv_id="TNTArgentina.us" site_id="ar#tnt">TNT Argentina</channel>
+    <channel lang="es" xmltv_id="TNTSeriesArgentina.us" site_id="ar#tnt-series">TNT Series Argentina</channel>
+    <channel lang="es" xmltv_id="TNTSportsArgentina.us" site_id="ar#tnt-sports">TNT Sports Argentina</channel>
+    <channel lang="es" xmltv_id="Tooncast.us" site_id="ar#tooncast">Tooncast</channel>
+    <channel lang="es" xmltv_id="TruTVAmericaLatina.us" site_id="ar#tru-tv">Tru TV América Latina</channel>
+    <channel lang="es" xmltv_id="TurismoVisionArgentina.ar" site_id="ar#turismo-vision-argentina">Turismo Visión Argentina</channel>
+    <channel lang="es" xmltv_id="TV5MondeAmeriqueLatine.fr" site_id="ar#tv-5">TV5Monde Amérique Latine</channel>
+    <channel lang="es" xmltv_id="TVCiudad.uy" site_id="ar#teveciudad">TV Ciudad</channel>
+    <channel lang="es" xmltv_id="TVCortos.uk" site_id="ar#tv-cortos">TV Cortos</channel>
+    <channel lang="es" xmltv_id="TVEInternacionalAmerica1.es" site_id="ar#tve">TVE Internacional América 1</channel>
+    <channel lang="es" xmltv_id="TVGloboInternacionalAmericas.br" site_id="ar#tv-globo">TV Globo Internacional Américas</channel>
+    <channel lang="es" xmltv_id="TVNacionalUruguay.uy" site_id="ar#tv-nacional-uruguay">TV Nacional Uruguay</channel>
+    <channel lang="es" xmltv_id="TVPublica.ar" site_id="ar#canal-7-capital">TV Pública</channel>
+    <channel lang="es" xmltv_id="TyCSports.ar" site_id="ar#tyc-sports">TyC Sports</channel>
+    <channel lang="es" xmltv_id="TyCSports2.ar" site_id="ar#tyc-alternativa">TyC Sports 2</channel>
+    <channel lang="es" xmltv_id="UniversalTVAmericaLatina.us" site_id="ar#universal-channel">Universal TV América Latina</channel>
+    <channel lang="es" xmltv_id="UruguayNaturalTV.uy" site_id="ar#uruguay-natural-uruguay">Uruguay Natural TV</channel>
+    <channel lang="es" xmltv_id="Venus.ar" site_id="ar#venus">Venus</channel>
+    <channel lang="es" xmltv_id="Viajar.es" site_id="ar#viajar">Viajar</channel>
+    <channel lang="es" xmltv_id="Volver.ar" site_id="ar#volver">Volver</channel>
+    <channel lang="es" xmltv_id="VTV.uy" site_id="ar#vtv">VTV</channel>
+    <channel lang="es" xmltv_id="WarnerChannelAtlanticoSur.us" site_id="ar#warner-channel">Warner Channel Atlántico Sur</channel>
+    <channel lang="es" xmltv_id="ZooMooLatinoamerica.nz" site_id="ar#zoomoo">ZooMoo Latinoamérica</channel>
+  </channels>
+
+  <channels country="BR">
+    <channel lang="pt" xmltv_id="AEBrasil.us" site_id="br#a-e">A&amp;E Brasil</channel>
+    <channel lang="pt" xmltv_id="AgroPlus.br" site_id="br#agromais-hd">Agro+</channel>
+    <channel lang="pt" xmltv_id="AmazonSat.br" site_id="br#amazon-sat">Amazon Sat</channel>
+    <channel lang="pt" xmltv_id="AMCBrasil.us" site_id="br#amc-brasil">AMC Brasil</channel>
+    <channel lang="pt" xmltv_id="AnimalPlanetBrasil.us" site_id="br#animal-planet">Animal Planet Brasil</channel>
+    <channel lang="pt" xmltv_id="Arte1.br" site_id="br#arte-1">Arte 1</channel>
+    <channel lang="pt" xmltv_id="AXNBrazil.us" site_id="br#axn">AXN Brazil</channel>
+    <channel lang="pt" xmltv_id="BabyTVBrasil.uk" site_id="br#baby-tv">Baby TV Brasil</channel>
+    <channel lang="pt" xmltv_id="BandAmazonas.br" site_id="br#band-amazonas">Band Amazonas</channel>
+    <channel lang="pt" xmltv_id="BandBahia.br" site_id="br#band-bahia">Band Bahia</channel>
+    <channel lang="pt" xmltv_id="BandCuritiba.br" site_id="br#band-curitiba">Band Curitiba</channel>
+    <channel lang="pt" xmltv_id="BandNews.br" site_id="br#band-news">Band News</channel>
+    <channel lang="pt" xmltv_id="BandSports.br" site_id="br#bandsports">Band Sports</channel>
+    <channel lang="pt" xmltv_id="BBCWorldNewsAmericas.uk" site_id="br#bbc-news">BBC World News Americas</channel>
+    <channel lang="pt" xmltv_id="Bis.br" site_id="br#bis-hd">Bis</channel>
+    <channel lang="pt" xmltv_id="BloombergTVBrazil.us" site_id="br#bloomberg">Bloomberg TV Brazil</channel>
+    <channel lang="pt" xmltv_id="BoasNovas.br" site_id="br#rede-boas-novas">Boas Novas</channel>
+    <channel lang="pt" xmltv_id="BoaVontadeTV.br" site_id="br#boa-vontade-tv">Boa Vontade TV</channel>
+    <channel lang="pt" xmltv_id="BoomerangBrasil.us" site_id="br#boomerang">Boomerang Brasil</channel>
+    <channel lang="pt" xmltv_id="CanalBrasil.br" site_id="br#canal-brasil">Canal Brasil</channel>
+    <channel lang="pt" xmltv_id="CanaldoBoi.br" site_id="br#canal-do-boi">Canal do Boi</channel>
+    <channel lang="pt" xmltv_id="CanalFutura.br" site_id="br#futura">Canal Futura</channel>
+    <channel lang="pt" xmltv_id="CanalOff.br" site_id="br#off">Canal Off</channel>
+    <channel lang="pt" xmltv_id="CanalRural.br" site_id="br#canal-rural">Canal Rural</channel>
+    <channel lang="pt" xmltv_id="CanalViva.br" site_id="br#viva">Canal Viva</channel>
+    <channel lang="pt" xmltv_id="CGTN.cn" site_id="br#cgtn">CGTN</channel>
+    <channel lang="pt" xmltv_id="ChefTV.br" site_id="br#chef-tv">Chef TV</channel>
+    <channel lang="pt" xmltv_id="CineBrasilTV.br" site_id="br#cinebrasil-tv">CineBrasil TV</channel>
+    <channel lang="pt" xmltv_id="CinemaxBrasil.us" site_id="br#cinemax">Cinemax Brasil</channel>
+    <channel lang="pt" xmltv_id="CNNBrasil.us" site_id="br#cnn-brasil">CNN Brasil</channel>
+    <channel lang="pt" xmltv_id="CNNInternationalAsiaPacific.us" site_id="br#cnn-international-hd">CNN International Asia Pacific</channel>
+    <channel lang="pt" xmltv_id="Combate.br" site_id="br#combate">Combate</channel>
+    <channel lang="pt" xmltv_id="ComedyCentralBrasil.us" site_id="br#comedy-central">Comedy Central Brasil</channel>
+    <channel lang="pt" xmltv_id="ConmebolTV1.br" site_id="br#conmebol-tv-1">Conmebol TV 1</channel>
+    <channel lang="pt" xmltv_id="ConmebolTV2.br" site_id="br#conmebol-tv-2">Conmebol TV 2</channel>
+    <channel lang="pt" xmltv_id="ConmebolTV3.br" site_id="br#conmebol-tv-3">Conmebol TV 3</channel>
+    <channel lang="pt" xmltv_id="Curta.br" site_id="br#curta">Curta!</channel>
+    <channel lang="pt" xmltv_id="DiscoveryChannelBrasil.us" site_id="br#discovery">Discovery Channel Brasil</channel>
+    <channel lang="pt" xmltv_id="DiscoveryHomeHealthBrasil.us" site_id="br#discovery-home-health">Discovery Home &amp; Health Brasil</channel>
+    <channel lang="pt" xmltv_id="DiscoveryKidsBrasil.us" site_id="br#discovery-kids">Discovery Kids Brasil</channel>
+    <channel lang="pt" xmltv_id="DiscoveryTurboBrasil.us" site_id="br#discovery-turbo">Discovery Turbo Brasil</channel>
+    <channel lang="pt" xmltv_id="DiscoveryWorldBrasil.us" site_id="br#discovery-world-hd">Discovery World Brasil</channel>
+    <channel lang="pt" xmltv_id="DisneyChannelBrasil.us" site_id="br#disney">Disney Channel Brasil</channel>
+    <channel lang="pt" xmltv_id="DisneyJuniorBrasil.us" site_id="br#disney-junior">Disney Junior Brasil</channel>
+    <channel lang="pt" xmltv_id="DisneyXDBrasil.us" site_id="br#disney-xd">Disney XD Brasil</channel>
+    <channel lang="pt" xmltv_id="DogTV.us" site_id="br#dogtv">Dog TV</channel>
+    <channel lang="pt" xmltv_id="DWDeutsch.de" site_id="br#deutsche-welle">DW Deutsch</channel>
+    <channel lang="pt" xmltv_id="EBrasil.us" site_id="br#e">E! Brasil</channel>
+    <channel lang="pt" xmltv_id="EPTVSuldeMinas.br" site_id="br#eptv-sul-de-minas-hd">EPTV Sul de Minas</channel>
+    <channel lang="pt" xmltv_id="ESPN2Brasil.us" site_id="br#espn-2">ESPN 2 Brasil</channel>
+    <channel lang="pt" xmltv_id="ESPNBrasil.us" site_id="br#espn">ESPN Brasil</channel>
+    <channel lang="pt" xmltv_id="ESPNExtraBrasil.us" site_id="br#espn-extra">ESPN Extra Brasil</channel>
+    <channel lang="pt" xmltv_id="Eurochannel.us" site_id="br#eurochannel">Eurochannel</channel>
+    <channel lang="pt" xmltv_id="FashionTVBrazil.fr" site_id="br#fashion-tv">FashionTV Brazil</channel>
+    <channel lang="pt" xmltv_id="FilmArtsBrasil.ar" site_id="br#film-arts">Film &amp; Arts Brasil</channel>
+    <channel lang="pt" xmltv_id="FishTV.br" site_id="br#fishtv">Fish TV</channel>
+    <channel lang="pt" xmltv_id="FoodNetworkBrasil.us" site_id="br#food-network">Food Network Brasil</channel>
+    <channel lang="pt" xmltv_id="FoxNewsChannel.us" site_id="br#fox-news-channel">Fox News Channel</channel>
+    <channel lang="pt" xmltv_id="FoxSports2Brasil.us" site_id="br#fox-sports-2">Fox Sports 2 Brasil</channel>
+    <channel lang="pt" xmltv_id="FoxSportsBrasil.us" site_id="br#fox-sports">Fox Sports Brasil</channel>
+    <channel lang="pt" xmltv_id="FXBrasil.us" site_id="br#fx">FX Brasil</channel>
+    <channel lang="pt" xmltv_id="GloboNews.br" site_id="br#globo-news">Globo News</channel>
+    <channel lang="pt" xmltv_id="Gloob.br" site_id="br#gloob">Gloob</channel>
+    <channel lang="pt" xmltv_id="Gloobinho.br" site_id="br#gloobinho">Gloobinho</channel>
+    <channel lang="pt" xmltv_id="GNT.br" site_id="br#gnt">GNT</channel>
+    <channel lang="pt" xmltv_id="HBO2Brasil.us" site_id="br#hbo2">HBO 2 Brasil</channel>
+    <channel lang="pt" xmltv_id="HBOBrasil.us" site_id="br#hbo">HBO Brasil</channel>
+    <channel lang="pt" xmltv_id="HBOFamilyBrasil.us" site_id="br#hbo-family-hd">HBO Family Brasil</channel>
+    <channel lang="pt" xmltv_id="HBOMundiBrasil.us" site_id="br#max-1">HBO Mundi Brasil</channel>
+    <channel lang="pt" xmltv_id="HBOPopBrasil.us" site_id="br#max-up">HBO Pop Brasil</channel>
+    <channel lang="pt" xmltv_id="HBOSignatureBrasil.us" site_id="br#hbo-signature">HBO Signature Brasil</channel>
+    <channel lang="pt" xmltv_id="HBOXtremeBrasil.us" site_id="br#maxprime">HBO Xtreme Brasil</channel>
+    <channel lang="pt" xmltv_id="HGTVBrasil.us" site_id="br#hgtv">HGTV Brasil</channel>
+    <channel lang="pt" xmltv_id="History2Brasil.us" site_id="br#h2">History 2 Brasil</channel>
+    <channel lang="pt" xmltv_id="HistoryBrasil.us" site_id="br#history-channel">History Brasil</channel>
+    <channel lang="pt" xmltv_id="IdealTV.br" site_id="br#ideal-tv">Ideal TV</channel>
+    <channel lang="pt" xmltv_id="InterTVAltoLitoral.br" site_id="br#intertv-alto-literal-hd">Inter TV Alto Litoral</channel>
+    <channel lang="pt" xmltv_id="InterTVCabugi.br" site_id="br#intertv-cabugi-hd">Inter TV Cabugi</channel>
+    <channel lang="pt" xmltv_id="InterTVGrandeMinas.br" site_id="br#intertv-grande-minas-hd">Inter TV Grande Minas</channel>
+    <channel lang="pt" xmltv_id="InterTVSerramar.br" site_id="br#intertv-serra-mar-hd">Inter TV Serramar</channel>
+    <channel lang="pt" xmltv_id="InvestigacaoDiscoveryBrasil.us" site_id="br#investigacao-discovery">Investigação Discovery Brasil</channel>
+    <channel lang="pt" xmltv_id="ISatBrasil.ar" site_id="br#i-sat">I-Sat Brasil</channel>
+    <channel lang="pt" xmltv_id="LifetimeBrasil.us" site_id="br#lifetime-brazil">Lifetime Brasil</channel>
+    <channel lang="pt" xmltv_id="Loading.br" site_id="br#loading">Loading</channel>
+    <channel lang="pt" xmltv_id="MaisnaTela.br" site_id="br#globosat">Mais na Tela</channel>
+    <channel lang="pt" xmltv_id="Megapix.br" site_id="br#megapix">Megapix</channel>
+    <channel lang="pt" xmltv_id="MTVBrasil.us" site_id="br#mtv-brasil">MTV Brasil</channel>
+    <channel lang="pt" xmltv_id="MTVLiveHD.us" site_id="br#mtv-live-hd">MTV Live HD</channel>
+    <channel lang="pt" xmltv_id="Multishow.br" site_id="br#multishow">Multishow</channel>
+    <channel lang="pt" xmltv_id="MusicBoxBrazil.br" site_id="br#music-box-brasil">Music Box Brazil</channel>
+    <channel lang="pt" xmltv_id="NatGeoKidsBrasil.us" site_id="br#nat-geo-kids">Nat Geo Kids Brasil</channel>
+    <channel lang="pt" xmltv_id="NationalGeographicBrasil.us" site_id="br#national-geographic">National Geographic Brasil</channel>
+    <channel lang="pt" xmltv_id="NationalGeographicWildBrasil.us" site_id="br#natgeo-wild-hd">National Geographic Wild Brasil</channel>
+    <channel lang="pt" xmltv_id="NHKWorldJapan.jp" site_id="br#nhk">NHK World Japan</channel>
+    <channel lang="pt" xmltv_id="NickelodeonBrasil.us" site_id="br#nickelodeon">Nickelodeon Brasil</channel>
+    <channel lang="pt" xmltv_id="NickJrBrasil.us" site_id="br#nick-jr">Nick Jr Brasil</channel>
+    <channel lang="pt" xmltv_id="NSCTVBlumenau.br" site_id="br#nsc-tv-blumenau-hd">NSC TV Blumenau</channel>
+    <channel lang="pt" xmltv_id="NSCTVChapeco.br" site_id="br#nsc-tv-chapeco-hd">NSC TV Chapecó</channel>
+    <channel lang="pt" xmltv_id="NSCTVCriciuma.br" site_id="br#nsc-tv-criciuma">NSC TV Criciúma</channel>
+    <channel lang="pt" xmltv_id="NSCTVFlorianopolis.br" site_id="br#nsc-tv-florianopolis-hd">NSC TV Florianópolis</channel>
+    <channel lang="pt" xmltv_id="NSCTVJoinville.br" site_id="br#nsc-tv-joinville-hd">NSC TV Joinville</channel>
+    <channel lang="pt" xmltv_id="PlayboyTVBrazil.us" site_id="br#playboy">Playboy TV Brazil</channel>
+    <channel lang="pt" xmltv_id="PremiereClubes.br" site_id="br#premiere-clubes">Premiere Clubes</channel>
+    <channel lang="pt" xmltv_id="PrimeBoxBrazil.br" site_id="br#prime-box-brazil">Prime Box Brazil</channel>
+    <channel lang="pt" xmltv_id="RaiItaliaNordAmerica.it" site_id="br#rai">Rai Italia Nord America</channel>
+    <channel lang="pt" xmltv_id="RBATV.br" site_id="br#rba-tv-hd">RBA TV</channel>
+    <channel lang="pt" xmltv_id="RBITV.br" site_id="br#rbi">RBI TV</channel>
+    <channel lang="pt" xmltv_id="RBSTVPortoAlegre.br" site_id="br#rbs-tv-porto-alegre-hd">RBS TV Porto Alegre</channel>
+    <channel lang="pt" xmltv_id="RBSTVRS.br" site_id="br#globo-rbs-tv-poa">RBS TV RS</channel>
+    <channel lang="pt" xmltv_id="RBSTVSantaMaria.br" site_id="br#rbs-tv-santa-maria-hd">RBS TV Santa Maria</channel>
+    <channel lang="pt" xmltv_id="RecordBelem.br" site_id="br#recordtv-belem">Record Belém</channel>
+    <channel lang="pt" xmltv_id="RecordCabralia.br" site_id="br#record-cuiaba-hd">Record Cabrália</channel>
+    <channel lang="pt" xmltv_id="RecordGoias.br" site_id="br#record-tv-goias-hd">Record Goiás</channel>
+    <channel lang="pt" xmltv_id="RecordItapoan.br" site_id="br#record-tv-itapoan-hd">Record Itapoan</channel>
+    <channel lang="pt" xmltv_id="RecordMinas.br" site_id="br#record-tv-minas-hd">Record Minas</channel>
+    <channel lang="pt" xmltv_id="RecordNews.br" site_id="br#record-news">Record News</channel>
+    <channel lang="pt" xmltv_id="RecordPaulista.br" site_id="br#recordtv-paulista-hd">Record Paulista</channel>
+    <channel lang="pt" xmltv_id="RecordRio.br" site_id="br#record-tv-rio-hd">Record Rio</channel>
+    <channel lang="pt" xmltv_id="RecordSaoPaulo.br" site_id="br#recordtv-s-o-paulo-hd">Record São Paulo</channel>
+    <channel lang="pt" xmltv_id="Rede21.br" site_id="br#rede-21-hd">Rede 21</channel>
+    <channel lang="pt" xmltv_id="RedeAmazonica.br" site_id="br#globo-amazonas">Rede Amazônica</channel>
+    <channel lang="pt" xmltv_id="RedeAmazonicaManaus.br" site_id="br#rede-amazonica-manaus-hd">Rede Amazônica Manaus</channel>
+    <channel lang="pt" xmltv_id="RedeBrasil.br" site_id="br#rede-brasil">Rede Brasil</channel>
+    <channel lang="pt" xmltv_id="RedeCNTRiodeJaneiro.br" site_id="br#cnt-rio-hd">Rede CNT Rio de Janeiro</channel>
+    <channel lang="pt" xmltv_id="RedeFamilia.br" site_id="br#rede-familia">Rede Família</channel>
+    <channel lang="pt" xmltv_id="RedeGenesis.br" site_id="br#rede-genesis">Rede Gênesis</channel>
+    <channel lang="pt" xmltv_id="RedeGlobo.br" site_id="br#globo-hd">Rede Globo</channel>
+    <channel lang="pt" xmltv_id="RedeGospel.br" site_id="br#rede-gospel">Rede Gospel</channel>
+    <channel lang="pt" xmltv_id="RedeInternacionaldeTV.br" site_id="br#rit">Rede Internacional de TV</channel>
+    <channel lang="pt" xmltv_id="RedeMassa.br" site_id="br#rede-massa">Rede Massa</channel>
+    <channel lang="pt" xmltv_id="RedeMeioNorte.br" site_id="br#meio-norte">Rede Meio Norte</channel>
+    <channel lang="pt" xmltv_id="RedeMinas.br" site_id="br#rede-minas">Rede Minas</channel>
+    <channel lang="pt" xmltv_id="RedeSeculo21.br" site_id="br#rede-seculo-21">Rede Século 21</channel>
+    <channel lang="pt" xmltv_id="RedeSuper.br" site_id="br#rede-super">Rede Super</channel>
+    <channel lang="pt" xmltv_id="RedeTV.br" site_id="br#rede-tv">Rede TV!</channel>
+    <channel lang="pt" xmltv_id="RedeTVRondonia.br" site_id="br#redetv-rondonia-hd">Rede TV! Rondônia</channel>
+    <channel lang="pt" xmltv_id="RedeVida.br" site_id="br#rede-vida">Rede Vida</channel>
+    <channel lang="pt" xmltv_id="RPCTVCuritiba.br" site_id="br#rpc-curitiba">RPC TV Curitiba</channel>
+    <channel lang="pt" xmltv_id="RPCTVFozdoIguacu.br" site_id="br#rpc-foz-do-iguacu-hd">RPC TV Foz do Iguaçu</channel>
+    <channel lang="pt" xmltv_id="RPCTVMaringa.br" site_id="br#rpc-maringa-hd">RPC TV Maringá</channel>
+    <channel lang="pt" xmltv_id="RPCTVParanavai.br" site_id="br#rpc-paranavai-hd">RPC TV Paranavaí</channel>
+    <channel lang="pt" xmltv_id="RPCTVPontaGrossa.br" site_id="br#rpc-ponta-grossa-hd">RPC TV Ponta Grossa</channel>
+    <channel lang="pt" xmltv_id="RTPInternacionalAmerica.pt" site_id="br#rtpi-brasil">RTP Internacional América</channel>
+    <channel lang="pt" xmltv_id="SBNInternational.us" site_id="br#sonlife-broadcasting-network">SBN International</channel>
+    <channel lang="pt" xmltv_id="SBTMS.br" site_id="br#sbt-ms-hd">SBT MS</channel>
+    <channel lang="pt" xmltv_id="SBTNacional.br" site_id="br#sbt">SBT Nacional</channel>
+    <channel lang="pt" xmltv_id="SBTPara.br" site_id="br#sbt-para">SBT Pará</channel>
+    <channel lang="pt" xmltv_id="SBTRio.br" site_id="br#sbt-rio">SBT Rio</channel>
+    <channel lang="pt" xmltv_id="SESCTV.br" site_id="br#sesctv">SESC TV</channel>
+    <channel lang="pt" xmltv_id="Sextreme.br" site_id="br#sextreme-brazil">Sextreme</channel>
+    <channel lang="pt" xmltv_id="SexyHot.br" site_id="br#sexy-hot">Sexy Hot</channel>
+    <channel lang="pt" xmltv_id="SICInternacional.pt" site_id="br#sic">SIC Internacional</channel>
+    <channel lang="pt" xmltv_id="SICTV.br" site_id="br#sic-tv">SIC TV</channel>
+    <channel lang="pt" xmltv_id="SonyChannelBrasil.us" site_id="br#sony">Sony Channel Brasil</channel>
+    <channel lang="pt" xmltv_id="SpaceBrasil.ar" site_id="br#space">Space Brasil</channel>
+    <channel lang="pt" xmltv_id="SporTV.br" site_id="br#sportv">SporTV</channel>
+    <channel lang="pt" xmltv_id="SporTV2.br" site_id="br#sportv2">SporTV 2</channel>
+    <channel lang="pt" xmltv_id="SporTV3.br" site_id="br#sportv3">SporTV 3</channel>
+    <channel lang="pt" xmltv_id="StarChannelBrasil.us" site_id="br#fox">Star Channel Brasil</channel>
+    <channel lang="pt" xmltv_id="StarHitsBrasil.us" site_id="br#fox-premium-1">Star Hits Brasil</channel>
+    <channel lang="pt" xmltv_id="StarLifeBrasil.us" site_id="br#fox-life">Star Life Brasil</channel>
+    <channel lang="pt" xmltv_id="StudioUniversalBrasil.us" site_id="br#studio-universal">Studio Universal Brasil</channel>
+    <channel lang="pt" xmltv_id="SyfyBrasil.us" site_id="br#syfy">Syfy Brasil</channel>
+    <channel lang="pt" xmltv_id="TBSBrasil.us" site_id="br#tbs">TBS Brasil</channel>
+    <channel lang="pt" xmltv_id="TCMBrasil.us" site_id="br#tcm">TCM Brasil</channel>
+    <channel lang="pt" xmltv_id="TelecineAction.br" site_id="br#telecine-action">Telecine Action</channel>
+    <channel lang="pt" xmltv_id="TelecineCult.br" site_id="br#telecine-cult">Telecine Cult</channel>
+    <channel lang="pt" xmltv_id="TelecineFun.br" site_id="br#telecine-fun">Telecine Fun</channel>
+    <channel lang="pt" xmltv_id="TelecinePipoca.br" site_id="br#telecine-pipoca">Telecine Pipoca</channel>
+    <channel lang="pt" xmltv_id="TelecinePremium.br" site_id="br#telecine-premium">Telecine Premium</channel>
+    <channel lang="pt" xmltv_id="TelecineTouch.br" site_id="br#telecine-touch">Telecine Touch</channel>
+    <channel lang="pt" xmltv_id="TelefeInternacional.ar" site_id="br#telefe-internacional">Telefe Internacional</channel>
+    <channel lang="pt" xmltv_id="TerraViva.br" site_id="br#terra-viva">Terra Viva</channel>
+    <channel lang="pt" xmltv_id="TLCBrasil.us" site_id="br#tlc">TLC Brasil</channel>
+    <channel lang="pt" xmltv_id="TNTBrasil.us" site_id="br#tnt">TNT Brasil</channel>
+    <channel lang="pt" xmltv_id="TNTSeriesBrasil.us" site_id="br#tnt-series">TNT Series Brasil</channel>
+    <channel lang="pt" xmltv_id="TraceBrazuca.fr" site_id="br#trace-brazuca">Trace Brazuca</channel>
+    <channel lang="pt" xmltv_id="TravelBoxBrazil.br" site_id="br#travel-box-brazil">Travel Box Brazil</channel>
+    <channel lang="pt" xmltv_id="TruTVBrasil.us" site_id="br#trutv">Tru TV Brasil</channel>
+    <channel lang="pt" xmltv_id="TVACritica.br" site_id="br#tv-a-critica">TV A Crítica</channel>
+    <channel lang="pt" xmltv_id="TVALESP.br" site_id="br#tv-alesp">TV ALESP</channel>
+    <channel lang="pt" xmltv_id="TVAmapa.br" site_id="br#tv-amapa">TV Amapá</channel>
+    <channel lang="pt" xmltv_id="TVAntena10.br" site_id="br#tv-antena-10">TV Antena 10</channel>
+    <channel lang="pt" xmltv_id="TVAparecida.br" site_id="br#tv-aparecida">TV Aparecida</channel>
+    <channel lang="pt" xmltv_id="TVAratu.br" site_id="br#tv-aratu">TV Aratu</channel>
+    <channel lang="pt" xmltv_id="TVAssembleiaCeara.br" site_id="br#assembleia-legislativa-ceara-hd">TV Assembléia Ceará</channel>
+    <channel lang="pt" xmltv_id="TVAssembleiaMinasGerais.br" site_id="br#tv-assembleia-de-minas-gerais">TV Assembléia Minas Gerais</channel>
+    <channel lang="pt" xmltv_id="TVAtalaia.br" site_id="br#tv-atalaia">TV Atalaia</channel>
+    <channel lang="pt" xmltv_id="TVBahia.br" site_id="br#globo-tv-bahia">TV Bahia</channel>
+    <channel lang="pt" xmltv_id="TVBrasil.br" site_id="br#tv-brasil">TV Brasil</channel>
+    <channel lang="pt" xmltv_id="TVCaboBranco.br" site_id="br#tv-cabo-branco">TV Cabo Branco</channel>
+    <channel lang="pt" xmltv_id="TVCamara.br" site_id="br#tv-camara">TV Câmara</channel>
+    <channel lang="pt" xmltv_id="TVCancaoNova.br" site_id="br#canc-o-nova">TV Canção Nova</channel>
+    <channel lang="pt" xmltv_id="TVCapixaba.br" site_id="br#tv-capixaba">TV Capixaba</channel>
+    <channel lang="pt" xmltv_id="TVCeara.br" site_id="br#tv-ceara">TV Ceará</channel>
+    <channel lang="pt" xmltv_id="TVCentroAmericaCuiaba.br" site_id="br#tv-centro-america-cuiaba">TV Centro América Cuiabá</channel>
+    <channel lang="pt" xmltv_id="TVCidadeSaoLuiz.br" site_id="br#tv-cidade-s-o-luis-hd">TV Cidade São Luíz</channel>
+    <channel lang="pt" xmltv_id="TVClube.br" site_id="br#tv-clube">TV Clube</channel>
+    <channel lang="pt" xmltv_id="TVCorreio.br" site_id="br#tv-correio">TV Correio</channel>
+    <channel lang="pt" xmltv_id="TVCulturaNacional.br" site_id="br#cultura">TV Cultura Nacional</channel>
+    <channel lang="pt" xmltv_id="TVDiario.br" site_id="br#tv-diario">TV Diário</channel>
+    <channel lang="pt" xmltv_id="TVDifusoraSaoLuis.br" site_id="br#tv-difusora-s-o-luis">TV Difusora São Luís</channel>
+    <channel lang="pt" xmltv_id="TVE.br" site_id="br#tve">TVE</channel>
+    <channel lang="pt" xmltv_id="TVEBahia.br" site_id="br#tve-bahia">TVE Bahia</channel>
+    <channel lang="pt" xmltv_id="TVEmTempo.br" site_id="br#tv-em-tempo-hd">TV Em Tempo</channel>
+    <channel lang="pt" xmltv_id="TVEscola.br" site_id="br#tv-escola">TV Escola</channel>
+    <channel lang="pt" xmltv_id="TVGazeta.br" site_id="br#rede-gazeta">TV Gazeta</channel>
+    <channel lang="pt" xmltv_id="TVGloboBrasilia.br" site_id="br#globo-brasilia">TV Globo Brasília</channel>
+    <channel lang="pt" xmltv_id="TVGloboNordeste.br" site_id="br#globo-nordeste-hd">TV Globo Nordeste</channel>
+    <channel lang="pt" xmltv_id="TVGloboRiodeJaneiro.br" site_id="br#globo-rj">TV Globo Rio de Janeiro</channel>
+    <channel lang="pt" xmltv_id="TVGloboSaoPaulo.br" site_id="br#globo-sp">TV Globo São Paulo</channel>
+    <channel lang="pt" xmltv_id="TVGuara.br" site_id="br#tv-guara-hd">TV Guará</channel>
+    <channel lang="pt" xmltv_id="TVHorizonte.br" site_id="br#horizonte-tv">TV Horizonte</channel>
+    <channel lang="pt" xmltv_id="TVIguacu.br" site_id="br#tv-iguacu-hd">TV Iguaçu</channel>
+    <channel lang="pt" xmltv_id="TVJangadeiro.br" site_id="br#tv-jangadeiro">TV Jangadeiro</channel>
+    <channel lang="pt" xmltv_id="TVJustica.br" site_id="br#tv-justica-1">TV Justiça</channel>
+    <channel lang="pt" xmltv_id="TVLiberal.br" site_id="br#globo-belem-liberal">TV Liberal</channel>
+    <channel lang="pt" xmltv_id="TVNovoTempoBrasil.us" site_id="br#tv-novo-tempo">TV Novo Tempo Brasil</channel>
+    <channel lang="pt" xmltv_id="TVPajucara.br" site_id="br#tv-pajucara">TV Pajuçara</channel>
+    <channel lang="pt" xmltv_id="TVPampa.br" site_id="br#tv-pampa-hd">TV Pampa</channel>
+    <channel lang="pt" xmltv_id="TVParanaiba.br" site_id="br#tv-paranaiba-hd">TV Paranaíba</channel>
+    <channel lang="pt" xmltv_id="TVParanaTurismo.br" site_id="br#e-parana-hd">TV Paraná Turismo</channel>
+    <channel lang="pt" xmltv_id="TVPontaNegra.br" site_id="br#tv-ponta-negra">TV Ponta Negra</channel>
+    <channel lang="pt" xmltv_id="TVRaTimBum.br" site_id="br#ra-tim-bum">TV Rá Tim Bum</channel>
+    <channel lang="pt" xmltv_id="TVRioSul.br" site_id="br#tv-rio-sul-hd">TV Rio Sul</channel>
+    <channel lang="pt" xmltv_id="TVRondonia.br" site_id="br#tv-rondonia">TV Rondônia</channel>
+    <channel lang="pt" xmltv_id="TVSantaCruz.br" site_id="br#tv-santa-cruz-hd">TV Santa Cruz</channel>
+    <channel lang="pt" xmltv_id="TVSenado.br" site_id="br#tv-senado">TV Senado</channel>
+    <channel lang="pt" xmltv_id="TVSergipe.br" site_id="br#tv-sergipe-hd">TV Sergipe</channel>
+    <channel lang="pt" xmltv_id="TVSerraDourada.br" site_id="br#tv-serra-dourada-hd">TV Serra Dourada</channel>
+    <channel lang="pt" xmltv_id="TVT.br" site_id="br#tvt">TVT</channel>
+    <channel lang="pt" xmltv_id="TVTribuna.br" site_id="br#tv-tribuna-1">TV Tribuna</channel>
+    <channel lang="pt" xmltv_id="TVTropical.br" site_id="br#tv-tropical">TV Tropical</channel>
+    <channel lang="pt" xmltv_id="TVUniaoFortaleza.br" site_id="br#tv-uni-o">TV União Fortaleza</channel>
+    <channel lang="pt" xmltv_id="TVVerdesMares.br" site_id="br#tv-verdes-mares-1">TV Verdes Mares</channel>
+    <channel lang="pt" xmltv_id="UniversalTVBrasil.us" site_id="br#universal">Universal TV Brasil</channel>
+    <channel lang="pt" xmltv_id="UnivespTV.br" site_id="br#univesp-tv">Univesp TV</channel>
+    <channel lang="pt" xmltv_id="WarnerChannelBrasil.us" site_id="br#warner-channel">Warner Channel Brasil</channel>
+    <channel lang="pt" xmltv_id="WooHoo.br" site_id="br#woohoo">WooHoo</channel>
+    <channel lang="pt" xmltv_id="ZooMooBrasil.nz" site_id="br#zoomoo">ZooMoo Brasil</channel>
+  </channels>
+
+  <channels country="CL">
+    <channel lang="es" xmltv_id="13C.cl" site_id="cl#canal-13-c">13C</channel>
+    <channel lang="es" xmltv_id="24Horas.cl" site_id="cl#tvn-24-h">24 Horas</channel>
+    <channel lang="es" xmltv_id="AMCAndina.us" site_id="cl#amc">AMC Andina</channel>
+    <channel lang="es" xmltv_id="AmericaSports.ar" site_id="cl#america-sports">America Sports</channel>
+    <channel lang="es" xmltv_id="ARTV.cl" site_id="cl#artv">ARTV</channel>
+    <channel lang="es" xmltv_id="AzCinema.mx" site_id="cl#az-cinema">Az Cinema</channel>
+    <channel lang="es" xmltv_id="AztecaUno.mx" site_id="cl#azteca-13">Azteca Uno</channel>
+    <channel lang="es" xmltv_id="BoomerangAtlanticoSur.us" site_id="cl#boomerang-cartoon">Boomerang Atlántico Sur</channel>
+    <channel lang="es" xmltv_id="Canal13.cl" site_id="cl#canal-13">Canal 13</channel>
+    <channel lang="es" xmltv_id="Canal24Horas.es" site_id="cl#canal-24-hs-espana">Canal 24 Horas</channel>
+    <channel lang="es" xmltv_id="Canal7Jujuy.ar" site_id="cl#canal-7">Canal 7 Jujuy</channel>
+    <channel lang="es" xmltv_id="Canal9BioBioTelevision.cl" site_id="cl#canal-9-bio-bio">Canal 9 Bío-Bío Televisión</channel>
+    <channel lang="es" xmltv_id="CanaldelSur.cl" site_id="cl#canal-del-sur">Canal del Sur</channel>
+    <channel lang="es" xmltv_id="CanalEcool.cl" site_id="cl#ecool-tv">Canal Ecool</channel>
+    <channel lang="es" xmltv_id="CanalISB.cl" site_id="cl#isb-tv">Canal ISB</channel>
+    <channel lang="es" xmltv_id="CanalVasco.es" site_id="cl#canal-vasco">Canal Vasco</channel>
+    <channel lang="es" xmltv_id="CaracolTVInternacional.co" site_id="cl#caracol-internacional">Caracol TV Internacional</channel>
+    <channel lang="es" xmltv_id="CartoonNetworkChile.us" site_id="cl#cartoon-network">Cartoon Network Chile</channel>
+    <channel lang="es" xmltv_id="CCTV4America.cn" site_id="cl#cctv-4">CCTV-4 America</channel>
+    <channel lang="es" xmltv_id="CDFBasico.cl" site_id="cl#cdf-basico">CDF Básico</channel>
+    <channel lang="es" xmltv_id="CDFHD.cl" site_id="cl#cdf-hd">CDF HD</channel>
+    <channel lang="es" xmltv_id="CDFPremium.cl" site_id="cl#cdf-premium">CDF Premium</channel>
+    <channel lang="es" xmltv_id="CDOBasico.cl" site_id="cl#cdo-basico">CDO Básico</channel>
+    <channel lang="es" xmltv_id="CDOHD.cl" site_id="cl#cdo-hd">CDO HD</channel>
+    <channel lang="es" xmltv_id="CDOPremium.cl" site_id="cl#cdo-premium">CDO Premium</channel>
+    <channel lang="es" xmltv_id="ChileVision.cl" site_id="cl#chilevision">ChileVisión</channel>
+    <channel lang="es" xmltv_id="ConcertChannel.us" site_id="cl#concert-channel">Concert Channel</channel>
+    <channel lang="es" xmltv_id="DiputadosTV.ar" site_id="cl#tv-diputados">Diputados TV</channel>
+    <channel lang="es" xmltv_id="DiscoveryChannelChile.us" site_id="cl#discovery">Discovery Channel Chile</channel>
+    <channel lang="es" xmltv_id="DiscoveryKidsChile.us" site_id="cl#discovery-kids">Discovery Kids Chile</channel>
+    <channel lang="es" xmltv_id="ElGourmetNorte.ar" site_id="hn#el-gourmet">El Gourmet Norte</channel>
+    <channel lang="es" xmltv_id="Enlace.cr" site_id="cl#enlace-tbn">Enlace</channel>
+    <channel lang="es" xmltv_id="ESPN2Andino.us" site_id="cl#espn-2">ESPN 2 Andino</channel>
+    <channel lang="es" xmltv_id="ESPN3Andino.us" site_id="cl#espn-3">ESPN 3 Andino</channel>
+    <channel lang="es" xmltv_id="ESPNChile.us" site_id="cl#espn-4">ESPN Chile</channel>
+    <channel lang="es" xmltv_id="ETCTV.cl" site_id="cl#etc-tv">ETC TV</channel>
+    <channel lang="es" xmltv_id="EuroNewsEspanol.fr" site_id="cl#euronews">EuroNews Español</channel>
+    <channel lang="es" xmltv_id="FoxSports1Chile.us" site_id="cl#fox-sports-1-hd">Fox Sports 1 Chile</channel>
+    <channel lang="es" xmltv_id="FoxSports2Chile.us" site_id="cl#fox-sports-2">Fox Sports 2 Chile</channel>
+    <channel lang="es" xmltv_id="FoxSportsChile.us" site_id="cl#fox-sports">Fox Sports Chile</channel>
+    <channel lang="es" xmltv_id="France24English.fr" site_id="cl#france-24-ingles">France 24 English</channel>
+    <channel lang="es" xmltv_id="FunBox.cl" site_id="cl#funbox">FunBox</channel>
+    <channel lang="es" xmltv_id="FXChile.us" site_id="cl#fx">FX Chile</channel>
+    <channel lang="es" xmltv_id="FXMChile.us" site_id="cl#fx-movies">FXM Chile</channel>
+    <channel lang="es" xmltv_id="HBOChile.us" site_id="cl#hbo">HBO Chile</channel>
+    <channel lang="es" xmltv_id="LaRed.cl" site_id="cl#la-red">La Red</channel>
+    <channel lang="es" xmltv_id="MariaPlusVision.mx" site_id="cl#mariavision">María+Visión</channel>
+    <channel lang="es" xmltv_id="Mega.cl" site_id="cl#mega">Mega</channel>
+    <channel lang="es" xmltv_id="NationalGeographicChile.us" site_id="cl#national-geographic">National Geographic Chile</channel>
+    <channel lang="es" xmltv_id="NHKWorldPremium.jp" site_id="cl#nhk-world-premium">NHK World Premium</channel>
+    <channel lang="es" xmltv_id="RecTV.cl" site_id="cl#rec-tv">Rec TV</channel>
+    <channel lang="es" xmltv_id="RMS.mx" site_id="cl#ritmoson-latino">RMS</channel>
+    <channel lang="es" xmltv_id="SpaceChile.ar" site_id="cl#space">Space Chile</channel>
+    <channel lang="es" xmltv_id="StarActionPlus3.us" site_id="cl#fox-action">Star Action +3</channel>
+    <channel lang="es" xmltv_id="StarChannelChile.us" site_id="cl#fox">Star Channel Chile</channel>
+    <channel lang="es" xmltv_id="StarCinema.us" site_id="cl#fox-premium-cinema">Star Cinema</channel>
+    <channel lang="es" xmltv_id="StarClassics.us" site_id="cl#fox-premium-classics">Star Classics</channel>
+    <channel lang="es" xmltv_id="StarComedy.us" site_id="cl#fox-premium-comedy">Star Comedy</channel>
+    <channel lang="es" xmltv_id="StarFunPlus3.us" site_id="cl#fox-family">Star Fun +3</channel>
+    <channel lang="es" xmltv_id="StarHits.us" site_id="cl#fox-movies">Star Hits</channel>
+    <channel lang="es" xmltv_id="StarLifeChile.us" site_id="cl#fox-life">Star Life Chile</channel>
+    <channel lang="es" xmltv_id="StarSeriesPlus3.us" site_id="cl#fox-1-este">Star Series +3</channel>
+    <channel lang="es" xmltv_id="StudioUniversalChile.us" site_id="cl#studio-universal">Studio Universal Chile</channel>
+    <channel lang="es" xmltv_id="TBSAtlanticoSur.us" site_id="cl#tbs-veryfunny">TBS Atlántico Sur</channel>
+    <channel lang="es" xmltv_id="TCMAmericaLatina.us" site_id="cl#tcm">TCM América Latina</channel>
+    <channel lang="es" xmltv_id="Teletrak.cl" site_id="cl#teletrak">Teletrak</channel>
+    <channel lang="es" xmltv_id="TNTChile.us" site_id="cl#tnt">TNT Chile</channel>
+    <channel lang="es" xmltv_id="TVN.cl" site_id="ar#tvn-chile">TVN</channel>
+    <channel lang="es" xmltv_id="TVNuevoTiempo.us" site_id="cl#nuevo-tiempo">TV Nuevo Tiempo</channel>
+    <channel lang="es" xmltv_id="TVSenado.cl" site_id="cl#senado-tv">TV Senado</channel>
+    <channel lang="es" xmltv_id="TVU.bo" site_id="cl#tvu">TVU</channel>
+    <channel lang="es" xmltv_id="TyCSportsInternacional.ar" site_id="cl#tyc-sports">TyC Sports Internacional</channel>
+    <channel lang="es" xmltv_id="UCVTV.cl" site_id="cl#ucv-tv">UCV TV</channel>
+    <channel lang="es" xmltv_id="Ufrovision.cl" site_id="cl#ufrovision">Ufrovisión</channel>
+    <channel lang="es" xmltv_id="Unicable.mx" site_id="cl#unicable">Unicable</channel>
+    <channel lang="es" xmltv_id="UniversalTVChile.us" site_id="cl#universal-channel">Universal TV Chile</channel>
+    <channel lang="es" xmltv_id="ViaX.cl" site_id="cl#via-x">Vía X</channel>
+    <channel lang="es" xmltv_id="WarnerChannelPanregional.us" site_id="cl#warner">Warner Channel Panregional</channel>
+    <channel lang="es" xmltv_id="ZonaLatina.cl" site_id="cl#zona-latina">Zona Latina</channel>
+  </channels>
+
+  <channels country="CO">
+    <channel lang="es" xmltv_id="AlientoVision.us" site_id="co#aliento-vision">Aliento Vision</channel>
+    <channel lang="es" xmltv_id="AXNCentro.us" site_id="co#axn">AXN Centro</channel>
+    <channel lang="es" xmltv_id="AXNLatinoamerica.us" site_id="co#axn">AXN Latinoamérica</channel>
+    <channel lang="es" xmltv_id="AzMundo.mx" site_id="co#az-mundo-hd">Az Mundo</channel>
+    <channel lang="es" xmltv_id="Canal1.co" site_id="co#canal-uno">Canal 1</channel>
+    <channel lang="es" xmltv_id="CanalC.co" site_id="co#canal-c">Canal C</channel>
+    <channel lang="es" xmltv_id="CanalCaliTV.co" site_id="co#cali-tv">Canal CaliTV</channel>
+    <channel lang="es" xmltv_id="CanalCapital.co" site_id="co#canal-capital">Canal Capital</channel>
+    <channel lang="es" xmltv_id="CanalCartagena.co" site_id="co#canal-cartagena">Canal Cartagena</channel>
+    <channel lang="es" xmltv_id="CanalTRO.co" site_id="co#tro">Canal TRO</channel>
+    <channel lang="es" xmltv_id="CanalU.co" site_id="co#canal-u">Canal U</channel>
+    <channel lang="es" xmltv_id="CaracolTV.co" site_id="co#caracol">Caracol TV</channel>
+    <channel lang="es" xmltv_id="ComedyCentralLatinoamericaNorte.us" site_id="co#comedy-central-hd">Comedy Central Latinoamérica Norte</channel>
+    <channel lang="es" xmltv_id="Cosmovision.co" site_id="co#cosmovision">Cosmovisión</channel>
+    <channel lang="es" xmltv_id="Cristovision.co" site_id="co#cristo-vision">Cristovisión</channel>
+    <channel lang="es" xmltv_id="DiscoveryKidsColombia.us" site_id="co#discovery-kids">Discovery Kids Colombia</channel>
+    <channel lang="es" xmltv_id="EnlaceJuvenil.cr" site_id="co#enlace-juvenil">Enlace Juvenil</channel>
+    <channel lang="es" xmltv_id="FashionOneLatinAmerica.uk" site_id="co#fashion-one-hd">Fashion One Latin America</channel>
+    <channel lang="es" xmltv_id="FoxSports2LatinAmerica.us" site_id="co#fox-sports-2-hd">Fox Sports 2 Latin America</channel>
+    <channel lang="es" xmltv_id="FXNorte.us" site_id="co#fx-hd">FX Norte</channel>
+    <channel lang="es" xmltv_id="GoldenPremier.mx" site_id="co#golden-premier-hd">Golden Premier</channel>
+    <channel lang="es" xmltv_id="HBOHDLatinoamerica.us" site_id="co#hbo-hd-este">HBO HD Latinoamérica</channel>
+    <channel lang="es" xmltv_id="InvestigationDiscoveryLatinoamerica.us" site_id="co#discovery-id-hd">Investigation Discovery Latinoamérica</channel>
+    <channel lang="es" xmltv_id="MTVLive.us" site_id="co#mtv-live-hd">MTV Live</channel>
+    <channel lang="es" xmltv_id="RCNTV.co" site_id="co#canal-rcn-hd">RCN TV</channel>
+    <channel lang="es" xmltv_id="SonyChannelCentro.us" site_id="co#sony">Sony Channel Centro</channel>
+    <channel lang="es" xmltv_id="StarAction.us" site_id="co#fox-action">Star Action</channel>
+    <channel lang="es" xmltv_id="StarChannelLatinAmerica.us" site_id="co#fox">Star Channel Latin America</channel>
+    <channel lang="es" xmltv_id="StarFun.us" site_id="co#fox-family">Star Fun</channel>
+    <channel lang="es" xmltv_id="StarLifeLatin.us" site_id="co#fox-life">Star Life Latin</channel>
+    <channel lang="es" xmltv_id="StarSeries.us" site_id="co#fox-1-hd">Star Series</channel>
+    <channel lang="es" xmltv_id="SunChannel.ve" site_id="co#sun-channel">Sun Channel</channel>
+    <channel lang="es" xmltv_id="Teleantioquia.co" site_id="co#teleantioquia-hd">Teleantioquia</channel>
+    <channel lang="es" xmltv_id="Telemedellin.co" site_id="co#telemedellin-hd">Telemedellín</channel>
+    <channel lang="es" xmltv_id="TeleNostalgia.co" site_id="co#tele-nostalgia">Tele Nostalgia</channel>
+    <channel lang="es" xmltv_id="TeleVid.co" site_id="co#televid-hd">Tele Vid</channel>
+    <channel lang="es" xmltv_id="TLCLatinoamerica.us" site_id="co#discovery-tlc">TLC Latinoamérica</channel>
+    <channel lang="es" xmltv_id="TNTSeriesColombia.us" site_id="co#tnt-series">TNT Series Colombia</channel>
+    <channel lang="es" xmltv_id="TraceSportStars.fr" site_id="co#trace-sports-stars">Trace Sport Stars</channel>
+    <channel lang="es" xmltv_id="Trece.co" site_id="co#canal-tr3ce">Trece</channel>
+    <channel lang="es" xmltv_id="VePlusPanregional.ve" site_id="co#ve-plus-tv">Ve Plus Panregional</channel>
+    <channel lang="es" xmltv_id="WinSports.co" site_id="co#win-sports-hd">Win Sports</channel>
+  </channels>
+
+  <channels country="HN">
+    <channel lang="es" xmltv_id="3ABNLatino.us" site_id="hn#3abn-latino">3ABN Latino</channel>
+    <channel lang="es" xmltv_id="AlfaOmegaVision.hn" site_id="hn#alfa-omega-vision">Alfa &amp; Omega Vision</channel>
+    <channel lang="es" xmltv_id="Azteca7.mx" site_id="hn#azteca-7">Azteca 7</channel>
+    <channel lang="es" xmltv_id="Bandamax.mx" site_id="hn#bandamax">Bandamax</channel>
+    <channel lang="es" xmltv_id="BethelTV.pe" site_id="hn#bethel">Bethel TV</channel>
+    <channel lang="es" xmltv_id="Canal11.hn" site_id="hn#canal-11-sotel">Canal 11</channel>
+    <channel lang="es" xmltv_id="CCIChannel.hn" site_id="hn#cci-channel">CCI Channel</channel>
+    <channel lang="es" xmltv_id="CDMInternacional.pr" site_id="hn#cdm-cadena-de-milagros">CDM Internacional</channel>
+    <channel lang="es" xmltv_id="CinecanalOeste.us" site_id="hn#cinecanal">Cinecanal Oeste</channel>
+    <channel lang="es" xmltv_id="CubavisionInternacional.cu" site_id="hn#cubavision">Cubavisión Internacional</channel>
+    <channel lang="es" xmltv_id="DisneyChannelLatinoamerica.us" site_id="hn#disney-multicountry">Disney Channel Latinoamérica</channel>
+    <channel lang="es" xmltv_id="DTV.hn" site_id="hn#dtv">DTV</channel>
+    <channel lang="es" xmltv_id="FoxSportsLatinAmerica.us" site_id="hn#fox-sports">Fox Sports Latin America</channel>
+    <channel lang="es" xmltv_id="GolTVLatinoamerica.us" site_id="hn#gol-tv">Gol TV Latinoamérica</channel>
+    <channel lang="es" xmltv_id="HCH.hn" site_id="hn#hch-hable-como-habla">HCH</channel>
+    <channel lang="es" xmltv_id="StudioUniversalAmericaLatina.us" site_id="hn#studio-universal">Studio Universal América Latina</channel>
+    <channel lang="es" xmltv_id="Telecadena7y4.hn" site_id="hn#telecadena">Telecadena 7 y 4</channel>
+    <channel lang="es" xmltv_id="Teleceiba.hn" site_id="hn#teleceiba">Teleceiba</channel>
+    <channel lang="es" xmltv_id="Telesistema3y7.hn" site_id="hn#telesistema-hondureno">Telesistema 3 y 7</channel>
+    <channel lang="es" xmltv_id="Televicentro.hn" site_id="hn#canal-5">Televicentro</channel>
+    <channel lang="es" xmltv_id="UniversalTVAmericaLatinaOeste.us" site_id="hn#universal-channel">Universal TV América Latina Oeste</channel>
+    <channel lang="es" xmltv_id="VTV.hn" site_id="hn#vica-vtv">VTV</channel>
+  </channels>
+
+  <channels country="GT">
+    <channel lang="es" xmltv_id="Cablenoticias.co" site_id="gt#cablenoticias">Cablenoticias</channel>
+    <channel lang="es" xmltv_id="Canal3.gt" site_id="gt#canal-3-nacional">Canal 3</channel>
+    <channel lang="es" xmltv_id="CanalAntigua.gt" site_id="gt#canal-antigua">Canal Antigua</channel>
+    <channel lang="es" xmltv_id="CartoonNetworkLatinAmerica.us" site_id="gt#cartoon-network">Cartoon Network Latin America</channel>
+    <channel lang="es" xmltv_id="CinecanalEste.us" site_id="gt#cinecanal">Cinecanal Este</channel>
+    <channel lang="es" xmltv_id="DiscoveryHomeHealthLatinoamerica.us" site_id="gt#discovery-home-and-health">Discovery Home &amp; Health Latinoamérica</channel>
+    <channel lang="es" xmltv_id="DistritoComedia.mx" site_id="gt#distrito-comedia">Distrito Comedia</channel>
+    <channel lang="es" xmltv_id="Guatevision.gt" site_id="gt#guatevision">Guatevisión</channel>
+    <channel lang="es" xmltv_id="MTVLatino.us" site_id="gt#m-tv">MTV Latino</channel>
+    <channel lang="es" xmltv_id="MultiPremier.mx" site_id="gt#multipremier">MultiPremier</channel>
+    <channel lang="es" xmltv_id="NationalGeographicSur.us" site_id="gt#national-geographic">National Geographic Sur</channel>
+    <channel lang="es" xmltv_id="SonyChannelSur.us" site_id="gt#sony">Sony Channel Sur</channel>
+    <channel lang="es" xmltv_id="StarLifeSur.us" site_id="gt#fox-life">Star Life Sur</channel>
+    <channel lang="es" xmltv_id="TDNMexico.mx" site_id="gt#tdn">TDN México</channel>
+    <channel lang="es" xmltv_id="TelemicroInternacional.do" site_id="gt#telemicro">Telemicro Internacional</channel>
+    <channel lang="es" xmltv_id="Televen.ve" site_id="gt#televen">Televen</channel>
+    <channel lang="es" xmltv_id="Televisiete.gt" site_id="gt#canal-7-nacional">Televisiete</channel>
+    <channel lang="es" xmltv_id="TNTAmericaLatina.us" site_id="gt#tnt">TNT América Latina</channel>
+    <channel lang="es" xmltv_id="TVAgro.co" site_id="gt#tv-agro">TV Agro</channel>
+    <channel lang="es" xmltv_id="XTimeChannel.us" site_id="gt#x-time">XTime Channel</channel>
+  </channels>
+
+  <channels country="PE">
+    <channel lang="es" xmltv_id="ATV.pe" site_id="pe#atv">ATV</channel>
+    <channel lang="es" xmltv_id="ATVPlus.pe" site_id="pe#atv-1">ATV+</channel>
+    <channel lang="es" xmltv_id="ATVSur.pe" site_id="pe#atv-sur">ATV Sur</channel>
+    <channel lang="es" xmltv_id="BYUTV.us" site_id="pe#byutv">BYU TV</channel>
+    <channel lang="es" xmltv_id="CityTV.co" site_id="pe#citytv">City TV</channel>
+    <channel lang="es" xmltv_id="DisneyJuniorSurPlus1.us" site_id="pe#disney-jr">Disney Junior Sur +1</channel>
+    <channel lang="es" xmltv_id="DisneyXDSurPlus1.us" site_id="pe#disney-xd-multicountry">Disney XD Sur +1</channel>
+    <channel lang="es" xmltv_id="DWDeutschPlus.de" site_id="pe#deutsche-welle-amerika">DW Deutsch+</channel>
+    <channel lang="es" xmltv_id="GlobalTV.pe" site_id="pe#nex-tv">Global TV</channel>
+    <channel lang="es" xmltv_id="Latele.pe" site_id="pe#la-tele">Latele</channel>
+    <channel lang="es" xmltv_id="Latina.pe" site_id="pe#frecuencia-latina">Latina</channel>
+    <channel lang="es" xmltv_id="MasChicEstadosUnidos.us" site_id="pe#mas-chic">Más Chic Estados Unidos</channel>
+    <channel lang="es" xmltv_id="MiGenteTV.co" site_id="pe#mi-gente">Mi Gente TV</channel>
+    <channel lang="es" xmltv_id="NickelodeonHD.us" site_id="pe#nickelodeon">Nickelodeon HD</channel>
+    <channel lang="es" xmltv_id="PanamericanaTV.pe" site_id="pe#panamericana-tv">Panamericana TV</channel>
+    <channel lang="es" xmltv_id="PAT.bo" site_id="pe#pat">PAT</channel>
+    <channel lang="es" xmltv_id="RumbaTV.co" site_id="pe#rumba-tv">Rumba TV</channel>
+    <channel lang="es" xmltv_id="Telefuturo.py" site_id="pe#telefuturo">Telefuturo</channel>
+    <channel lang="es" xmltv_id="TVPeru.pe" site_id="pe#tv-peru">TV Perú</channel>
+    <channel lang="es" xmltv_id="UnitelSantaCruz.bo" site_id="pe#unitel">Unitel Santa Cruz</channel>
+    <channel lang="es" xmltv_id="WillaxTV.pe" site_id="pe#willax">Willax TV</channel>
+  </channels>
+
+  <channels country="MX">
+    <channel lang="es" xmltv_id="AMCMexico.us" site_id="mx#amc">AMC México</channel>
+    <channel lang="es" xmltv_id="BoomerangMexico.us" site_id="mx#boomerang-cartoon">Boomerang México</channel>
+    <channel lang="es" xmltv_id="Canal22MetropolitanayNacional.mx" site_id="mx#canal-22-conaculta">Canal 22 Metropolitana y Nacional</channel>
+    <channel lang="es" xmltv_id="Canal5.mx" site_id="mx#xh-gc-canal-5">Canal 5</channel>
+    <channel lang="es" xmltv_id="CartoonNetworkMexico.us" site_id="mx#cartoon-network">Cartoon Network México</channel>
+    <channel lang="es" xmltv_id="CineMexicano.mx" site_id="mx#tvc-cine-mexicano-cmc">Cine Mexicano</channel>
+    <channel lang="es" xmltv_id="DiscoveryChannelMexico.us" site_id="mx#discovery-channel">Discovery Channel México</channel>
+    <channel lang="es" xmltv_id="DisneyChannelMexico.us" site_id="mx#disney">Disney Channel México</channel>
+    <channel lang="es" xmltv_id="DisneyJuniorMexico.us" site_id="mx#disney-jr">Disney Junior México</channel>
+    <channel lang="es" xmltv_id="DisneyXDMexico.us" site_id="mx#disney-xd">Disney XD México</channel>
+    <channel lang="es" xmltv_id="ElFinancieroBloomberg.mx" site_id="mx#el-financiero-bloomberg">El Financiero Bloomberg</channel>
+    <channel lang="es" xmltv_id="ForoTV.mx" site_id="mx#canal-4-foro-tv">Foro TV</channel>
+    <channel lang="es" xmltv_id="MilenioTV.mx" site_id="mx#milenio-tv">Milenio TV</channel>
+    <channel lang="es" xmltv_id="NuMusic.mx" site_id="mx#canal-nu">Nu Music</channel>
+    <channel lang="es" xmltv_id="OnceMexico.mx" site_id="mx#xeipn-canal-11">Once México</channel>
+    <channel lang="es" xmltv_id="SpaceMexico.ar" site_id="mx#space">Space México</channel>
+    <channel lang="es" xmltv_id="StarChannelMexico.us" site_id="mx#fox">Star Channel México</channel>
+    <channel lang="es" xmltv_id="StarLifeMexico.us" site_id="mx#fox-life">Star Life México</channel>
+    <channel lang="es" xmltv_id="StudioUniversalMexico.us" site_id="mx#studio-universal">Studio Universal México</channel>
+    <channel lang="es" xmltv_id="TlnovelasMexico.mx" site_id="mx#tlnovelas">Tlnovelas México</channel>
+    <channel lang="es" xmltv_id="TNTMexico.us" site_id="mx#tnt">TNT México</channel>
+    <channel lang="es" xmltv_id="UniversalTVAmericaLatinaEste.us" site_id="sv#universal-channel">Universal TV América Latina Este</channel>
+    <channel lang="es" xmltv_id="UniversalTVMexico.us" site_id="mx#universal-channel">Universal TV México</channel>
+    <channel lang="es" xmltv_id="WarnerChannelMexico.us" site_id="mx#warner">Warner Channel México</channel>
+    <channel lang="es" xmltv_id="WOBITV.ar" site_id="mx#wobi-tv">WOBI TV</channel>
+  </channels>
+
+  <channels country="SV">
+    <channel lang="es" xmltv_id="Canal2.sv" site_id="sv#canal-2-nacional">Canal 2</channel>
+    <channel lang="es" xmltv_id="Canal4.sv" site_id="sv#canal-4-nacional">Canal 4</channel>
+    <channel lang="es" xmltv_id="Canal6.sv" site_id="sv#canal-6-nacional">Canal 6</channel>
+    <channel lang="es" xmltv_id="Canal10.sv" site_id="sv#canal-10-nacional">Canal 10</channel>
+    <channel lang="es" xmltv_id="Canal12.sv" site_id="sv#canal-12-nacional">Canal 12</channel>
+    <channel lang="es" xmltv_id="CanalClaro.cl" site_id="sv#canal-claro">Canal Claro</channel>
+    <channel lang="es" xmltv_id="Genteve.sv" site_id="sv#genteve-canal-29">Gentevé</channel>
+    <channel lang="es" xmltv_id="MegavisionCanal19.sv" site_id="sv#canal-19-nacional">Megavisión Canal 19</channel>
+    <channel lang="es" xmltv_id="MegavisionCanal21.sv" site_id="sv#canal-21-nacional">Megavisión Canal 21</channel>
+    <channel lang="es" xmltv_id="TVOCanal23.sv" site_id="sv#23-tv-oriente">TVO Canal 23</channel>
+    <channel lang="es" xmltv_id="TVX.sv" site_id="sv#canal-23-tvx">TVX</channel>
+    <channel lang="es" xmltv_id="VTVCanal35.sv" site_id="sv#vtv">VTV Canal 35</channel>
+  </channels>
+</site>
