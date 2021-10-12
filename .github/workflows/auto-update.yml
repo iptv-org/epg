@@ -156,6 +156,7 @@ jobs:
             [1]: https://github.com/iptv-org/epg/actions/runs/${{ github.run_id }}
           github_token: ${{ steps.generate-token.outputs.token }}
       - name: Merge Pull Request
+        if: ${{ steps.pr.outputs.pr_number != 0 }}
         uses: juliangruber/merge-pull-request-action@v1
         with:
           github-token: ${{ secrets.PAT }}
