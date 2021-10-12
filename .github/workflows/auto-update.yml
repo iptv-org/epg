@@ -47,7 +47,7 @@ jobs:
       - name: Install Dependencies
         run: npm install
       - name: Run Grabber
-        run: node scripts/grab.js --channels=channels/${{ matrix.country }}.xml --output=.gh-pages/guides/${{ matrix.country }}.xml --days=${{ matrix.days }}
+        run: node scripts/grab.js --site=${{ matrix.site }} --country=${{ matrix.country }} --days=2 --output=.gh-pages/guides/${{ matrix.country }}/${{ matrix.site }}.epg.xml
       - name: Upload Artifact
         uses: actions/upload-artifact@v2
         with:
