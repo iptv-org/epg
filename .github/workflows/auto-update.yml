@@ -52,7 +52,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: .gh-pages
-          path: .gh-pages/guides/${{ matrix.country }}.xml
+          path: .gh-pages/guides/${{ matrix.country }}/${{ matrix.site }}.epg.xml
           if-no-files-found: error
   deploy:
     needs: grab
