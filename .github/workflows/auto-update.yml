@@ -92,6 +92,8 @@ jobs:
           ref: bot/auto-update
       - name: Download Artifacts
         uses: actions/download-artifact@v2
+      - name: Show Files
+        run: ls
       - name: Install Dependencies
         run: npm install
       - name: Update Codes
@@ -123,6 +125,8 @@ jobs:
           ref: bot/auto-update
       - name: Download Artifacts
         uses: actions/download-artifact@v2
+      - name: Show Files
+        run: ls
       - name: Install Dependencies
         run: npm install
       - name: Update README.md
