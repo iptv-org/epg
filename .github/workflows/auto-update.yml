@@ -52,7 +52,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: .gh-pages
-          path: .gh-pages/guides/${{ matrix.country }}/${{ matrix.site }}.epg.xml
+          path: .gh-pages/guides/
           if-no-files-found: error
   deploy:
     needs: grab
@@ -75,7 +75,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
-          folder: .gh-pages
+          folder: .gh-pages/guides
           target-folder: guides
           clean: false
           token: ${{ steps.generate-token.outputs.token }}
@@ -92,8 +92,6 @@ jobs:
           ref: bot/auto-update
       - name: Download Artifacts
         uses: actions/download-artifact@v2
-      - name: Show Files
-        run: ls
       - name: Install Dependencies
         run: npm install
       - name: Update Codes
@@ -126,7 +124,7 @@ jobs:
       - name: Download Artifacts
         uses: actions/download-artifact@v2
       - name: Show Files
-        run: ls
+        run: ls .gh-pages
       - name: Install Dependencies
         run: npm install
       - name: Update README.md
