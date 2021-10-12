@@ -1,14 +1,10 @@
 const file = require('./file')
 const parser = require('./parser')
 
-const days = 2
-const includes = []
-
-file.list('sites/*.channels.xml', includes).then(files => {
+file.list('sites/*.channels.xml', ['sites/andorradifusio.ad.channels.xml']).then(files => {
   const matrix = {
     site: [],
-    country: [],
-    days: []
+    country: []
   }
 
   files.forEach(filename => {
@@ -17,7 +13,6 @@ file.list('sites/*.channels.xml', includes).then(files => {
     parsed.groups.forEach(group => {
       matrix.site.push(parsed.site)
       matrix.country.push(group.country.toLowerCase())
-      matrix.days.push(days)
     })
   })
 
