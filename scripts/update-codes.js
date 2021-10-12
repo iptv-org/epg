@@ -8,7 +8,7 @@ const file = require('./file.js')
 async function main() {
   console.log('Starting...')
 
-  const files = await file.list('.gh-pages/guides/*.xml')
+  const files = await file.list('.gh-pages/guides/**/*.xml')
 
   let codes = {}
   for (const filename of files) {
