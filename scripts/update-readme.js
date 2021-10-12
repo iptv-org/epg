@@ -30,8 +30,12 @@ async function main() {
         return b.channelCount - a.channelCount
       })
 
+      console.log(data)
+
+      console.log('Generating table...')
       const table = generateTable(data, ['Country', 'Channels', 'EPG'])
-      file.write('./.readme/_table.md', table)
+      file.write('.readme/_table.md', table)
+      console.log('Updating README.md...')
       markdownInclude.compileFiles('.readme/config.json')
     })
     .finally(() => {
