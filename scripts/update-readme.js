@@ -1,27 +1,24 @@
+const parser = require('epg-parser')
 const markdownInclude = require('markdown-include')
-const path = require('path')
-const fs = require('fs')
 const countries = require('./countries.json')
-const parser = require('./parser')
 const file = require('./file')
 
 async function main() {
   console.log('Starting...')
   file
-    .list('sites/*.channels.xml')
+    .list('.gh-pages/guides/**/*.xml')
     .then(files => {
       let data = []
       files.forEach(filename => {
-        const channelsFile = file.read(filename)
-        const parsed = parser.parseChannels(channelsFile)
-        parsed.groups.forEach(group => {
-          const country = countries.find(c => c.code === group.country.toLowerCase())
-          data.push({
-            countryFlag: country.flag,
-            countryName: country.name,
-            guideUrl: `https://iptv-org.github.io/epg/guides/${country.code}/${parsed.site}.epg.xml`,
-            channelCount: group.channels.length
-          })
+        const countryCode = filename.match(/\.gh\-pages\/guides\/(.*)\/.*/i)[1]
+        const country = countries.find(c => c.code === countryCode)
+        const epg = file.read(filename)
+        const parsed = parser.parse(epg)
+        data.push({
+          countryFlag: country.flag,
+          countryName: country.name,
+          guideUrl: filename.replace('.gh-pages', 'https://iptv-org.github.io/epg'),
+          channelCount: parsed.channels.length
         })
       })
 
@@ -35,7 +32,7 @@ async function main() {
 
       const table = generateTable(data, ['Country', 'Channels', 'EPG'])
       file.write('./.readme/_table.md', table)
-      generateReadme()
+      markdownInclude.compileFiles('.readme/config.json')
     })
     .finally(() => {
       console.log('Finish')
@@ -66,11 +63,6 @@ function generateTable(data, header) {
   output += '</table>'
 
   return output
-}
-
-function generateReadme() {
-  console.log('Generating README.md...')
-  markdownInclude.compileFiles(path.resolve('.readme/config.json'))
 }
 
 main()
