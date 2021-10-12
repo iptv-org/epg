@@ -68,7 +68,7 @@ async function main() {
 function filterChannels(channels, options) {
   return channels.filter(channel => {
     let result = true
-    if (options.country) result = channel.country === options.country
+    if (options.country) result = channel.country === options.country.toUpperCase()
     if (options.language) result = channel.lang === options.language
     return result
   })
