@@ -16,7 +16,7 @@ file.list('sites/*.channels.xml', includes).then(files => {
     const parsed = parser.parseChannels(channelsFile)
     parsed.groups.forEach(group => {
       matrix.site.push(parsed.site)
-      matrix.country.push(group.country)
+      matrix.country.push(group.country.toLowerCase())
       matrix.days.push(days)
     })
   })
