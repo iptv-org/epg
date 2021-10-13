@@ -52,7 +52,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: .gh-pages
-          path: .gh-pages/guides/
+          path: .gh-pages/
           if-no-files-found: error
   deploy:
     needs: grab
