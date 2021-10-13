@@ -22,6 +22,7 @@ module.exports = {
   parser: function ({ content, channel, date }) {
     let programs = []
     const result = parseContent(content)
+    if (!result) return programs
     const items = parseItems(result.data.program)
     items.forEach(item => {
       const $item = cheerio.load(item)
