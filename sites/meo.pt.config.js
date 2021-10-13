@@ -19,7 +19,8 @@ module.exports = {
         dateEnd: date.add(1, 'd').format('YYYY-MM-DDT00:00:00-00:00'),
         accountID: ''
       }
-    }
+    },
+    timeout: 10000
   },
   logo({ content }) {
     const data = parseContent(content)
