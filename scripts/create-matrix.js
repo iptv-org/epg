@@ -8,16 +8,17 @@ file
   ])
   .then(files => {
     const matrix = {
-      site: [],
-      country: []
+      guide: []
     }
 
     files.forEach(filename => {
       const channelsFile = file.read(filename)
       const parsed = parser.parseChannels(channelsFile)
       parsed.groups.forEach(group => {
-        matrix.site.push(parsed.site)
-        matrix.country.push(group.country.toLowerCase())
+        matrix.guide.push({
+          site: parsed.site,
+          country: group.country.toLowerCase()
+        })
       })
     })
 
