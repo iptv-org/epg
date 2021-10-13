@@ -138,6 +138,15 @@ jobs:
           commit_author: 'iptv-bot[bot] <84861620+iptv-bot[bot]@users.noreply.github.com>'
           branch: bot/auto-update
           file_pattern: README.md
+  pull-request:
+    if: ${{ github.ref == 'refs/heads/master' }}
+    needs: update-readme
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: bot/auto-update
       - name: Generate Token
         uses: tibdex/github-app-token@v1
         id: generate-token
@@ -145,7 +154,6 @@ jobs:
           app_id: ${{ secrets.APP_ID }}
           private_key: ${{ secrets.APP_PRIVATE_KEY }}
       - name: Create Pull Request
-        if: ${{ github.ref == 'refs/heads/master' }}
         id: pr
         uses: repo-sync/pull-request@v2
         with:
