@@ -123,8 +123,6 @@ jobs:
           ref: bot/auto-update
       - name: Download Artifacts
         uses: actions/download-artifact@v2
-      - name: Show Files
-        run: ls .gh-pages
       - name: Install Dependencies
         run: npm install
       - name: Update README.md
