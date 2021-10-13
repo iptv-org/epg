@@ -39,9 +39,9 @@ async function main() {
     await grabber
       .grab(channel, config, (item, err) => {
         console.log(
-          `  ${item.channel.site} - ${item.channel.xmltv_id} - ${item.date.format(
-            'MMM D, YYYY'
-          )} (${item.programs.length} programs)`
+          `  ${item.channel.site} (${options.country.toUpperCase()}) - ${
+            item.channel.xmltv_id
+          } - ${item.date.format('MMM D, YYYY')} (${item.programs.length} programs)`
         )
 
         if (err) {
