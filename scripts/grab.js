@@ -38,10 +38,11 @@ async function main() {
     config.days = options.days
     await grabber
       .grab(channel, config, (item, err) => {
+        const countryLabel = options.country ? ` (${options.country.toUpperCase()})` : ''
         console.log(
-          `  ${item.channel.site} (${options.country.toUpperCase()}) - ${
-            item.channel.xmltv_id
-          } - ${item.date.format('MMM D, YYYY')} (${item.programs.length} programs)`
+          `  ${item.channel.site}${countryLabel} - ${item.channel.xmltv_id} - ${item.date.format(
+            'MMM D, YYYY'
+          )} (${item.programs.length} programs)`
         )
 
         if (err) {
