@@ -2,6 +2,7 @@ const cheerio = require('cheerio')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
+const axios = require('axios')
 
 dayjs.extend(utc)
 dayjs.extend(customParseFormat)
@@ -14,9 +15,24 @@ module.exports = {
   url({ channel, date }) {
     const [bouquetId] = channel.site_id.split('#')
 
-    return `https://guide.dstv.com/api/gridview/page?&bouquetId=${bouquetId}&genre=all&date=${date.format(
+    return `https://guide.dstv.com/api/gridview/page?bouquetId=${bouquetId}&genre=all&date=${date.format(
       'YYYY-MM-DD'
     )}`
+  },
+  async logo({ channel }) {
+    const [bouquetId, channelId] = channel.site_id.split('#')
+    const url = `https://guide.dstv.com/api/channel/fetchChannelsByGenresInBouquet?bouquetId=${bouquetId}&genre=all`
+    const result = await axios
+      .get(url)
+      .then(r => r.data)
+      .catch(console.log)
+    if (!result) return null
+    const items = result.items || []
+    const elem = items.find(i => i.channelTag === channelId) || {
+      channelLogoPaths: { XLARGE: null }
+    }
+
+    return elem.channelLogoPaths.XLARGE
   },
   parser({ content, date, channel }) {
     let PM = false
