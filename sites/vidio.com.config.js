@@ -4,7 +4,6 @@ const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
 const timezone = require('dayjs/plugin/timezone')
-require('dayjs/locale/id')
 
 dayjs.extend(utc)
 dayjs.extend(customParseFormat)
@@ -16,53 +15,73 @@ module.exports = {
     return `https://www.vidio.com/live/${channel.site_id}/schedules`
   },
   parser({ content, date }) {
+    let PM = false
     const programs = []
-    const dom = new JSDOM(content)
-
-    const scheduleDate = dom.window.document
-      .querySelector('div.b-livestreaming-daily-schedule__date-label')
-      .textContent.split(',')
-    const currdate = dayjs(scheduleDate[1], 'DD MMMM YYYY', 'id')
-    const list = dom.window.document.querySelector(
-      `#schedule-content-${currdate.format(
-        'YYYYMMDD'
-      )} > .b-livestreaming-daily-schedule__scroll-container`
-    )
-    const items = list.querySelectorAll('div.b-livestreaming-daily-schedule__item')
+    const items = parseItems(content, date)
     items.forEach(item => {
-      const title = (
-        item.querySelector('div.b-livestreaming-daily-schedule__item-content-title') || {
-          textContent: ''
-        }
-      ).textContent
-      const time = (
-        item.querySelector('div.b-livestreaming-daily-schedule__item-content-caption') || {
-          textContent: ''
-        }
-      ).textContent
-      if (title && time) {
-        let start = dayjs.tz(
-          currdate.format('YYYY-MM-DD ').concat(time.substring(0, 5)),
-          'YYYY-MM-DD HH:mm',
-          'Asia/Jakarta'
-        )
-        let stop = dayjs.tz(
-          currdate.format('YYYY-MM-DD ').concat(time.substring(8, 13)),
-          'YYYY-MM-DD HH:mm',
-          'Asia/Jakarta'
-        )
-        if (start.diff(stop, 'h') > 0) {
-          stop = stop.add(1, 'day')
-        }
+      const title = parseTitle(item)
+      const start = parseStart(item, date)
+      let stop = parseStop(item, date)
+      if (!stop) return
+      if (stop.hour() > 11) PM = true
+      if (stop.hour() < 12 && PM) stop = stop.add(1, 'd')
 
-        programs.push({
-          title,
-          start,
-          stop
-        })
-      }
+      programs.push({
+        title,
+        start,
+        stop
+      })
     })
 
     return programs
   }
+}
+
+function parseStop(item, date) {
+  const time = (
+    item.querySelector('div.b-livestreaming-daily-schedule__item-content-caption') || {
+      textContent: ''
+    }
+  ).textContent
+
+  return dayjs.tz(
+    date.format('YYYY-MM-DD ').concat(time.substring(8, 13)),
+    'YYYY-MM-DD HH:mm',
+    'Asia/Jakarta'
+  )
+}
+
+function parseStart(item, date) {
+  const time = (
+    item.querySelector('div.b-livestreaming-daily-schedule__item-content-caption') || {
+      textContent: ''
+    }
+  ).textContent
+
+  return dayjs.tz(
+    date.format('YYYY-MM-DD ').concat(time.substring(0, 5)),
+    'YYYY-MM-DD HH:mm',
+    'Asia/Jakarta'
+  )
+}
+
+function parseTitle(item) {
+  return (
+    item.querySelector('div.b-livestreaming-daily-schedule__item-content-title') || {
+      textContent: ''
+    }
+  ).textContent
+}
+
+function parseItems(content, date) {
+  const dom = new JSDOM(content)
+  const list = dom.window.document.querySelector(
+    `#schedule-content-${date.format(
+      'YYYYMMDD'
+    )} > .b-livestreaming-daily-schedule__scroll-container`
+  )
+
+  if (!list) return []
+
+  return list.querySelectorAll('div.b-livestreaming-daily-schedule__item')
 }
