@@ -1,6 +1,6 @@
 const { Command } = require('commander')
 const file = require('./file')
-const parser = require('./parser')
+const grabber = require('epg-grabber')
 
 const program = new Command()
 program
@@ -16,13 +16,13 @@ file.list('sites/*.channels.xml', options.include, options.exclude).then(files =
   }
 
   files.forEach(filename => {
+    const country = filename.match(/sites\/.*_(.*)\.channels\.xml/i)[1]
+
     const channelsFile = file.read(filename)
-    const parsed = parser.parseChannels(channelsFile)
-    parsed.groups.forEach(group => {
-      matrix.guide.push({
-        site: parsed.site,
-        country: group.country.toLowerCase()
-      })
+    const parsed = grabber.parseChannels(channelsFile)
+    matrix.guide.push({
+      site: parsed.site,
+      country
     })
   })
 
