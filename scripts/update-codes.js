@@ -14,12 +14,12 @@ async function main() {
     const parsed = parser.parse(epg)
     parsed.channels.forEach(channel => {
       if (!codes[channel.id]) {
-        channel.guides = [url]
         codes[channel.id] = {
           tvg_id: channel.id,
           display_name: channel.name[0].value,
           logo: channel.icon[0],
-          country: channel.id.split('.')[1]
+          country: channel.id.split('.')[1],
+          guides: [url]
         }
       } else {
         codes[channel.id].guides.push(url)
