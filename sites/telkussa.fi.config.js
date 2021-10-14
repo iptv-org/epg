@@ -2,6 +2,9 @@ const dayjs = require('dayjs')
 
 module.exports = {
   site: 'telkussa.fi',
+  request: {
+    timeout: 10000
+  },
   url: function ({ date, channel }) {
     return `https://telkussa.fi/API/Channel/${channel.site_id}/${date.format('YYYYMMDD')}`
   },
