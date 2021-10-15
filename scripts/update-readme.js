@@ -18,29 +18,18 @@ async function main() {
         data.push({
           countryFlag: country.flag,
           countryName: country.name,
-          stateName: country.state,
           guideUrl: filename.replace('.gh-pages', 'https://iptv-org.github.io/epg'),
           channelCount: parsed.channels.length
         })
       })
 
-      data = data
-        .sort((a, b) => {
-          var countryNameA = a.countryName.toLowerCase()
-          var countryNameB = b.countryName.toLowerCase()
-          var stateNameA = a.stateName.toLowerCase()
-          var stateNameB = b.stateName.toLowerCase()
-          if (countryNameA < countryNameB) return -1
-          if (countryNameA > countryNameB) return 1
-          if (stateNameA < stateNameB) return -1
-          if (stateNameA > stateNameB) return 1
-          return b.channelCount - a.channelCount
-        })
-        .map(i => {
-          if (i.stateName) delete i.countryName
-
-          return i
-        })
+      data = data.sort((a, b) => {
+        var countryNameA = a.countryName.toLowerCase()
+        var countryNameB = b.countryName.toLowerCase()
+        if (countryNameA < countryNameB) return -1
+        if (countryNameA > countryNameB) return 1
+        return b.channelCount - a.channelCount
+      })
 
       console.log('Generating table...')
       const table = generateTable(data, ['Country', 'Channels', 'EPG'])
@@ -64,12 +53,10 @@ function generateTable(data, header) {
 
   output += '\t<tbody>\n'
   for (let item of data) {
-    const size = data.filter(i => i.countryName && i.countryName === item.countryName).length
+    const size = data.filter(i => i.countryName === item.countryName).length
     let root = output.indexOf(item.countryName) === -1
     const rowspan = root && size > 1 ? ` rowspan="${size}"` : ''
-    const name = item.stateName
-      ? `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${item.stateName}`
-      : item.countryName
+    const name = item.countryName
     const cell1 = root
       ? `<td align="left" valign="top" nowrap${rowspan}>${item.countryFlag}&nbsp;${name}</td>`
       : ''
