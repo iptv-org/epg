@@ -10,13 +10,13 @@ program
 
 const options = program.opts()
 
-file.list('sites/*.channels.xml', options.include, options.exclude).then(files => {
+file.list('sites/**/*.channels.xml', options.include, options.exclude).then(files => {
   const matrix = {
     guide: []
   }
 
   files.forEach(filename => {
-    const country = filename.match(/sites\/.*_(.*)\.channels\.xml/i)[1]
+    const country = filename.match(/sites\/.*\/.*_(.*)\.channels\.xml/i)[1]
 
     const channelsFile = file.read(filename)
     const parsed = grabber.parseChannels(channelsFile)
