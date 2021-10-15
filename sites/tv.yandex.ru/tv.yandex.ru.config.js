@@ -7,7 +7,8 @@ module.exports = {
     headers: {
       Cookie:
         'yandexuid=8747786251615498142; Expires=Tue, 11 Mar 2031 21:29:02 GMT; Domain=yandex.ru; Path=/'
-    }
+    },
+    timeout: 10000
   },
   url: function ({ date, channel }) {
     const [region, id] = channel.site_id.split('#')
