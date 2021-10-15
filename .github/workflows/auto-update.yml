@@ -31,7 +31,7 @@ jobs:
         run: npm install
       - name: Create Matrix
         id: set-matrix
-        run: node scripts/create-matrix.js --include=sites/andorradifusio.ad/andorradifusio.ad_ad.channels.xml
+        run: node scripts/create-matrix.js
   grab:
     runs-on: ubuntu-latest
     needs: create-matrix
