@@ -10,7 +10,7 @@ program
 
 const options = program.opts()
 
-file.list('sites/**/*.channels.xml', options.include, options.exclude).then(files => {
+file.list('sites/*/*.channels.xml', options.include, options.exclude).then(files => {
   const matrix = {
     guide: []
   }
