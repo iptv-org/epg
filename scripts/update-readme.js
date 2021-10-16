@@ -15,11 +15,17 @@ async function main() {
         if (!country) return
         const epg = file.read(filename)
         const parsed = parser.parse(epg)
+        let emptyGuides = 0
+        parsed.channels.forEach(channel => {
+          const showCount = parsed.programs.filter(p => p.channel === channel.id).length
+          if (showCount === 0) emptyGuides++
+        })
         data.push({
           countryFlag: country.flag,
           countryName: country.name,
           guideUrl: filename.replace('.gh-pages', 'https://iptv-org.github.io/epg'),
-          channelCount: parsed.channels.length
+          channelCount: parsed.channels.length,
+          emptyGuides
         })
       })
 
@@ -32,7 +38,7 @@ async function main() {
       })
 
       console.log('Generating table...')
-      const table = generateTable(data, ['Country', 'Channels', 'EPG'])
+      const table = generateTable(data, ['Country', 'Channels', 'EPG', 'Status'])
       file.write('.readme/_table.md', table)
       console.log('Updating README.md...')
       markdownInclude.compileFiles('.readme/config.json')
@@ -57,10 +63,13 @@ function generateTable(data, header) {
     let root = output.indexOf(item.countryName) === -1
     const rowspan = root && size > 1 ? ` rowspan="${size}"` : ''
     const name = item.countryName
+    let status = '🟢'
+    if (item.emptyGuides === item.channelCount) status = '🔴'
+    else if (item.emptyGuides > 0) status = '🟡'
     const cell1 = root
       ? `<td align="left" valign="top" nowrap${rowspan}>${item.countryFlag}&nbsp;${name}</td>`
       : ''
-    output += `\t\t<tr>${cell1}<td align="right" nowrap>${item.channelCount}</td><td align="left" nowrap><code>${item.guideUrl}</code></td></tr>\n`
+    output += `\t\t<tr>${cell1}<td align="right" nowrap>${item.channelCount}</td><td align="left" nowrap><code>${item.guideUrl}</code></td><td align="center">${status}</td></tr>\n`
   }
   output += '\t</tbody>\n'
 
