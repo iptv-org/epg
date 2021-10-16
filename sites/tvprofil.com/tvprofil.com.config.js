@@ -2,6 +2,7 @@ const cheerio = require('cheerio')
 const dayjs = require('dayjs')
 
 module.exports = {
+  delay: 5000,
   site: 'tvprofil.com',
   request: {
     headers: {
@@ -16,6 +17,7 @@ module.exports = {
   },
   logo: function ({ content }) {
     const result = parseContent(content)
+    if (!result) return null
 
     return `https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/${result.data.channel.logo}`
   },
