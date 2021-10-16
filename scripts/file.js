@@ -1,16 +1,17 @@
 const glob = require('glob')
 const fs = require('fs')
 const path = require('path')
+const wcmatch = require('wildcard-match')
 
 function list(pattern, include = [], exclude = []) {
   return new Promise(resolve => {
     glob(pattern, function (err, files) {
       if (include.length) {
-        files = files.filter(filename => include.includes(filename))
+        files = files.filter(filename => include.some(item => wcmatch(item)(filename)))
       }
 
       if (exclude.length) {
-        files = files.filter(filename => !exclude.includes(filename))
+        files = files.filter(filename => !exclude.some(item => wcmatch(item)(filename)))
       }
 
       resolve(files)
