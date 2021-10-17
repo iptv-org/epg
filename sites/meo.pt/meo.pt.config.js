@@ -20,7 +20,7 @@ module.exports = {
         accountID: ''
       }
     },
-    timeout: 10000
+    timeout: 15000
   },
   logo({ content }) {
     const data = parseContent(content)
