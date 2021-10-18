@@ -126,7 +126,7 @@ jobs:
       - name: Install Dependencies
         run: npm install
       - name: Update README.md
-        run: node scripts/update-readme.js
+        run: npx ts-node scripts/update-readme.ts
       - name: Commit Changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
