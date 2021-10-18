@@ -13,7 +13,17 @@ To load a program guide, all you need to do is copy the link to one or more of t
 <br>
 
 <!-- prettier-ignore -->
-#include "./.readme/_table.md"
+#include "./.readme/_countries.md"
+
+### US States
+
+<!-- prettier-ignore -->
+#include "./.readme/_us-states.md"
+
+### Provinces of Canada
+
+<!-- prettier-ignore -->
+#include "./.readme/_ca-provinces.md"
 
 </details>
 
