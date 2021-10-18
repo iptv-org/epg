@@ -36,9 +36,11 @@ async function main() {
   file.write('.gh-pages/codes.json', JSON.stringify(sorted))
 
   const _items = {}
-  countries.forEach(country => {
+  Object.values(countries).forEach(country => {
     _items[country.code] = {
-      ...country,
+      flag: country.flag,
+      name: country.name,
+      code: country.code,
       expanded: false,
       channels: []
     }
