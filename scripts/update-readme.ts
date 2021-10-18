@@ -29,8 +29,8 @@ type Program = {
 }
 
 type Guide = {
+  name?: string
   flag: string
-  name: string
   url: string
   channelCount: number
   emptyGuides: number
@@ -41,10 +41,11 @@ async function main() {
   file
     .list('.gh-pages/guides/**/*.xml')
     .then((files: string[]) => {
-      let guidesByCountry: Guide[] = []
-      let guidesByUSState: Guide[] = []
-      let guidesByCanadaProvince: Guide[] = []
+      const guidesByCountry: Guide[] = []
+      const guidesByUSState: Guide[] = []
+      const guidesByCanadaProvince: Guide[] = []
       files.forEach((filename: string) => {
+        console.log(`Loading '${filename}'...`)
         const matches: string[] = filename.match(/\.gh\-pages\/guides\/(.*)\/.*/i) || []
         const code: string | undefined = matches[1]
         if (code === undefined) return
@@ -59,42 +60,35 @@ async function main() {
           if (showCount === 0) emptyGuides++
         })
 
-        const [_, stateCode] = code.split('-')
-        const country: Country | undefined = countries[code]
-        const us_state: State | undefined = countries['us']
-          ? countries['us'].states[stateCode]
-          : undefined
-        const ca_province: State | undefined = countries['ca']
-          ? countries['ca'].states[stateCode]
-          : undefined
+        const guide: Guide = {
+          flag: '',
+          url: filename.replace('.gh-pages', 'https://iptv-org.github.io/epg'),
+          channelCount: epg.channels.length,
+          emptyGuides
+        }
 
-        if (country !== undefined) {
-          guidesByCountry.push({
-            flag: country.flag,
-            name: country.name,
-            url: filename.replace('.gh-pages', 'https://iptv-org.github.io/epg'),
-            channelCount: epg.channels.length,
-            emptyGuides
-          })
-          guidesByCountry = sortGuides(guidesByCountry)
-        } else if (us_state !== undefined) {
-          guidesByUSState.push({
-            flag: '',
-            name: us_state.name,
-            url: filename.replace('.gh-pages', 'https://iptv-org.github.io/epg'),
-            channelCount: epg.channels.length,
-            emptyGuides
-          })
-          guidesByUSState = sortGuides(guidesByUSState)
-        } else if (ca_province !== undefined) {
-          guidesByCanadaProvince.push({
-            flag: '',
-            name: ca_province.name,
-            url: filename.replace('.gh-pages', 'https://iptv-org.github.io/epg'),
-            channelCount: epg.channels.length,
-            emptyGuides
-          })
-          guidesByCanadaProvince = sortGuides(guidesByCanadaProvince)
+        if (!code.includes('-')) {
+          const country: Country | undefined = countries[code]
+          if (!country) return
+          guide.flag = country.flag
+          guide.name = country.name
+          guidesByCountry.push(guide)
+        } else if (code.startsWith('us-')) {
+          const [_, stateCode] = code.split('-')
+          const state: State | undefined = countries['us']
+            ? countries['us'].states[stateCode]
+            : undefined
+          if (!state) return
+          guide.name = state.name
+          guidesByUSState.push(guide)
+        } else if (code.startsWith('ca-')) {
+          const [_, provinceCode] = code.split('-')
+          const province: State | undefined = countries['ca']
+            ? countries['ca'].states[provinceCode]
+            : undefined
+          if (!province) return
+          guide.name = province.name
+          guidesByCanadaProvince.push(guide)
         }
       })
 
@@ -124,6 +118,8 @@ async function main() {
 }
 
 function generateTable(guides: Guide[], header: string[]) {
+  guides = sortGuides(guides)
+
   let output = '<table>\n'
 
   output += '\t<thead>\n\t\t<tr>'
@@ -135,6 +131,7 @@ function generateTable(guides: Guide[], header: string[]) {
   output += '\t<tbody>\n'
   for (let guide of guides) {
     const size = guides.filter((g: Guide) => g.name === guide.name).length
+    if (!guide.name) continue
     let root = output.indexOf(guide.name) === -1
     const rowspan = root && size > 1 ? ` rowspan="${size}"` : ''
     const name = `${guide.flag}&nbsp;${guide.name}`
@@ -153,10 +150,10 @@ function generateTable(guides: Guide[], header: string[]) {
 
 function sortGuides(guides: Guide[]): Guide[] {
   return guides.sort((a, b) => {
-    var countryNameA = a.name.toLowerCase()
-    var countryNameB = b.name.toLowerCase()
-    if (countryNameA < countryNameB) return -1
-    if (countryNameA > countryNameB) return 1
+    var nameA = a.name ? a.name.toLowerCase() : ''
+    var nameB = b.name ? b.name.toLowerCase() : ''
+    if (nameA < nameB) return -1
+    if (nameA > nameB) return 1
     return b.channelCount - a.channelCount
   })
 }
