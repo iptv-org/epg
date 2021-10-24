@@ -1,11 +1,15 @@
 {
   "name": "epg",
   "scripts": {
-    "update-codes": "node scripts/update-codes.js"
+    "update-codes": "node scripts/update-codes.js",
+    "test": "jest"
   },
   "private": true,
   "author": "Arhey",
   "license": "MIT",
+  "jest": {
+    "testRegex": "sites/(.*?/)?.*test.js$"
+  },
   "dependencies": {
     "axios": "^0.21.1",
     "cheerio": "^1.0.0-rc.10",
@@ -16,6 +20,7 @@
     "form-data": "^4.0.0",
     "glob": "^7.2.0",
     "iconv-lite": "^0.4.24",
+    "jest": "^27.3.1",
     "jsdom": "^16.5.0",
     "lodash": "^4.17.21",
     "markdown-include": "^0.4.3",
