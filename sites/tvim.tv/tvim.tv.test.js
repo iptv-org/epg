@@ -15,8 +15,8 @@ it('can generate valid url', () => {
 })
 
 it('can get logo url', () => {
-  const result = logo({ content })
-  expect(result).toBe('https://mobile-api.tvim.tv/images/chan_logos/120x60/T7.png')
+  const result = logo({ channel })
+  expect(result).toBe('https://mobile-api.tvim.tv/images/channels/120x60px/T7.png')
 })
 
 it('can parse response', () => {
