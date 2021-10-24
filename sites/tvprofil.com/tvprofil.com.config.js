@@ -2,7 +2,7 @@ const cheerio = require('cheerio')
 const dayjs = require('dayjs')
 
 module.exports = {
-  delay: 5000,
+  delay: 10000,
   site: 'tvprofil.com',
   request: {
     headers: {
