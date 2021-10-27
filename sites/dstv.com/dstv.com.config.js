@@ -20,6 +20,7 @@ module.exports = {
     )}`
   },
   async logo({ channel }) {
+    if (channel.logo) return channel.logo
     const [bouquetId, channelId] = channel.site_id.split('#')
     const url = `https://guide.dstv.com/api/channel/fetchChannelsByGenresInBouquet?bouquetId=${bouquetId}&genre=all`
     const result = await axios
