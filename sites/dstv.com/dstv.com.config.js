@@ -9,6 +9,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'dstv.com',
+  delay: 5000,
   request: {
     timeout: 15000
   },
