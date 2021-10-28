@@ -42,18 +42,18 @@ module.exports = {
     items.forEach(item => {
       const title = item.title
       let start = parseStart(item, date)
-      if (start.hour() > 18 && !PM) return
-      if (start.hour() > 11 && start.hour() < 18) PM = true
-      if (start.hour() < 12 && PM) start = start.add(1, 'd')
-      const stop = start.add(30, 'm')
+      if (start.hour() > 18 && !PM) start = start.subtract(1, 'd')
+      else if (start.hour() > 11 && start.hour() < 18) PM = true
+      else if (start.hour() < 12 && PM) start = start.add(1, 'd')
+      const stop = start.add(1, 'h')
       if (programs.length) {
-        programs[programs.length - 1].stop = start
+        programs[programs.length - 1].stop = start.toString()
       }
 
       programs.push({
         title,
-        start,
-        stop
+        start: start.toString(),
+        stop: stop.toString()
       })
     })
 
@@ -69,8 +69,8 @@ function parseStart(item, date) {
 
 function parseItems(content, date, channel) {
   const [_, channelTag] = channel.site_id.split('#')
-  const json = JSON.parse(content)
-  const html = json[channelTag]
+  const data = JSON.parse(content)
+  const html = data[channelTag]
   if (!html) return []
   const $ = cheerio.load(html)
 
