@@ -35,7 +35,7 @@ it('can get logo url', done => {
     .catch(error => done(error))
 })
 
-fit('can parse response', () => {
+it('can parse response', () => {
   const result = parser({ date, channel, content })
   expect(result).toMatchObject([
     {
