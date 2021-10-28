@@ -1,6 +1,5 @@
 const { Command } = require('commander')
 const file = require('./file')
-const grabber = require('epg-grabber')
 
 const program = new Command()
 program
@@ -16,14 +15,9 @@ file.list('sites/*/*.channels.xml', options.include, options.exclude).then(files
   }
 
   files.forEach(filename => {
-    const country = filename.match(/sites\/.*\/.*_(.*)\.channels\.xml/i)[1]
+    const [_, site, country] = filename.match(/sites\/.*\/(.*)_(.*)\.channels\.xml/i)
 
-    const channelsFile = file.read(filename)
-    const parsed = grabber.parseChannels(channelsFile)
-    matrix.guide.push({
-      site: parsed.site,
-      country
-    })
+    matrix.guide.push({ site, country })
   })
 
   const output = `::set-output name=matrix::${JSON.stringify(matrix)}`
