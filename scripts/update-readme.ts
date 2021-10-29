@@ -132,9 +132,9 @@ function generateTable(guides: Guide[], header: string[]) {
   for (let guide of guides) {
     const size = guides.filter((g: Guide) => g.name === guide.name).length
     if (!guide.name) continue
-    let root = output.indexOf(guide.name) === -1
-    const rowspan = root && size > 1 ? ` rowspan="${size}"` : ''
     const name = `${guide.flag}&nbsp;${guide.name}`
+    let root = output.indexOf(name) === -1
+    const rowspan = root && size > 1 ? ` rowspan="${size}"` : ''
     let status = '🟢'
     if (guide.emptyGuides === guide.channelCount) status = '🔴'
     else if (guide.emptyGuides > 0) status = '🟡'
