@@ -53,6 +53,7 @@ async function main() {
         const xml = file.read(filename)
         let epg: EPG = parser.parse(xml)
         let emptyGuides = 0
+        if (!epg.channels.length) return
         epg.channels.forEach((channel: Channel) => {
           const showCount = epg.programs.filter(
             (program: Program) => program.channel === channel.id
