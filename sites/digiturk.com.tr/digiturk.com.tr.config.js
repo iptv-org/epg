@@ -39,8 +39,8 @@ module.exports = {
           title: item.ProgramName,
           description: item.LongDescription,
           category: categories[item.Genre],
-          start: item.BroadcastStart,
-          stop: item.BroadcastEnd
+          start: item.BroadcastStart + " +0400",
+          stop: item.BroadcastEnd + " +0400"
         })
       }
     })
