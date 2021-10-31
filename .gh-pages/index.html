@@ -111,18 +111,19 @@
                 </div>
                 <div class="card-content" x-show="country.expanded || (count > 0 && _query.length)">
                   <div class="table-container">
-                    <table class="table is-fullwidth">
+                    <table class="table" style="min-width: 100%">
                       <thead>
                         <tr>
                           <th></th>
                           <th>Name</th>
                           <th>TVG-ID</th>
+                          <th>EPG</th>
                         </tr>
                       </thead>
                       <tbody>
                         <template x-for="channel in countryChannels">
                           <tr>
-                            <td style="width: 150px; text-align: center">
+                            <td class="is-vcentered" style="min-width: 150px; text-align: center">
                               <img
                                 loading="lazy"
                                 x-show="channel.logo"
@@ -130,11 +131,16 @@
                                 style="max-width: 100px; max-height: 50px; vertical-align: middle"
                               />
                             </td>
-                            <td class="is-vcentered">
+                            <td class="is-vcentered" nowrap>
                               <div x-text="channel.display_name"></div>
                             </td>
-                            <td class="is-vcentered">
+                            <td class="is-vcentered" nowrap>
                               <code x-text="channel.tvg_id"></code>
+                            </td>
+                            <td class="is-vcentered">
+                              <template x-for="guide in channel.guides">
+                                <p><code style="white-space: nowrap" x-text="guide"></code></p>
+                              </template>
                             </td>
                           </tr>
                         </template>
