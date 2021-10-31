@@ -8,10 +8,6 @@ EPG (Electronic Program Guide) for thousands of TV channels collected from diffe
 
 To load a program guide, all you need to do is copy the link to one or more of the guides from the list below and paste it into your favorite player.
 
-<details>
-<summary>Expand</summary>
-<br>
-
 <!-- prettier-ignore -->
 <table>
 	<thead>
@@ -205,8 +201,6 @@ To load a program guide, all you need to do is copy the link to one or more of t
 		<tr><td align="left" valign="top" nowrap>&nbsp;Saskatchewan</td><td align="right" nowrap>21</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/ca-sk/tvtv.us.epg.xml</code></td><td align="center">🟢</td></tr>
 	</tbody>
 </table>
-
-</details>
 
 ## List of supported channels
 
