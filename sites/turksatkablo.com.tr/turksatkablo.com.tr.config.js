@@ -8,6 +8,9 @@ dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
 module.exports = {
+  request: {
+    timeout: 10000
+  },
   site: 'turksatkablo.com.tr',
   url: function ({ date }) {
     return `https://www.turksatkablo.com.tr/userUpload/EPG/y.json?_=${date.valueOf()}`
