@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/osn.com/osn.com.config.js --channels=sites/osn.com/osn.com_ae.channels.xml --days=2 --output=guide.xml
+// NODE_OPTIONS=--insecure-http-parser npx epg-grabber --config=sites/osn.com/osn.com.config.js --channels=sites/osn.com/osn.com_ae.channels.xml --days=2 --output=guide.xml
 
 const { parser, url, logo, request } = require('./osn.com.config.js')
 const dayjs = require('dayjs')
