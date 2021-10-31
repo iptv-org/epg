@@ -1,3 +1,5 @@
+// BUG: site is down
+
 const jsdom = require('jsdom')
 const { JSDOM } = jsdom
 const dayjs = require('dayjs')
