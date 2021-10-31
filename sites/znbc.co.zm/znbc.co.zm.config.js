@@ -1,5 +1,3 @@
-// BUG: site is down
-
 const jsdom = require('jsdom')
 const { JSDOM } = jsdom
 const dayjs = require('dayjs')
@@ -14,6 +12,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'znbc.co.zm',
+  ignore: true, // NOTE: site is down
   url({ channel }) {
     return `https://www.znbc.co.zm/${channel.site_id}/`
   },
