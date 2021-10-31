@@ -1,5 +1,6 @@
 const { Command } = require('commander')
 const file = require('./file')
+const path = require('path')
 
 const program = new Command()
 program
@@ -16,6 +17,9 @@ file.list('sites/*/*.channels.xml', options.include, options.exclude).then(files
 
   files.forEach(filename => {
     const [_, site, country] = filename.match(/sites\/.*\/(.*)_(.*)\.channels\.xml/i)
+    const config = require(path.resolve(`./sites/${site}/${site}.config.js`))
+
+    if (config.ignore) return
 
     matrix.guide.push({ site, country })
   })
