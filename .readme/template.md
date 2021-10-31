@@ -8,10 +8,6 @@ EPG (Electronic Program Guide) for thousands of TV channels collected from diffe
 
 To load a program guide, all you need to do is copy the link to one or more of the guides from the list below and paste it into your favorite player.
 
-<details>
-<summary>Expand</summary>
-<br>
-
 <!-- prettier-ignore -->
 #include "./.readme/_countries.md"
 
@@ -24,8 +20,6 @@ To load a program guide, all you need to do is copy the link to one or more of t
 
 <!-- prettier-ignore -->
 #include "./.readme/_ca-provinces.md"
-
-</details>
 
 ## List of supported channels
 
