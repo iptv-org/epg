@@ -1,10 +1,9 @@
-// BUG: server is not stable
-
 const cheerio = require('cheerio')
 const dayjs = require('dayjs')
 
 module.exports = {
   site: 'tvprofil.com',
+  ignore: true, // NOTE: server is not stable
   request: {
     headers: {
       'x-requested-with': 'XMLHttpRequest'
