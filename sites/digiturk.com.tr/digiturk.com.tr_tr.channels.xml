@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site site="digiturk.com.tr">
   <channels>
-    <channel lang="tr" xmltv_id="24TV.tr" site_id="178">24 TV</channel>
     <channel lang="tr" xmltv_id="360.tr" site_id="30">360</channel>
     <channel lang="tr" xmltv_id="AHaber.tr" site_id="301">A Haber</channel>
     <channel lang="tr" xmltv_id="AljazeeraEnglish.qa" site_id="182">Aljazeera English</channel>
-    <channel lang="tr" xmltv_id="ASpor.tr" site_id="433">A Spor</channel>
     <channel lang="tr" xmltv_id="ATVTurkiye.tr" site_id="300">ATV Türkiye</channel>
     <channel lang="tr" xmltv_id="BabyTVEurope.uk" site_id="436">Baby TV Europe</channel>
     <channel lang="tr" xmltv_id="BBCEntertainmentEurope.uk" site_id="88">BBC Entertainment Europe</channel>
@@ -28,11 +26,7 @@
     <channel lang="tr" xmltv_id="BeInSeriesDrama.qa" site_id="263">BeIn Series Drama</channel>
     <channel lang="tr" xmltv_id="BeInSeriesSciFi.qa" site_id="375">BeIn Series Sci-Fi</channel>
     <channel lang="tr" xmltv_id="BeInSeriesVice.qa" site_id="255">BeIn Series Vice</channel>
-    <channel lang="tr" xmltv_id="BeInSports1Turkiye.qa" site_id="193">BeIn Sports 1 Türkiye</channel>
     <channel lang="tr" xmltv_id="BeInSports1Turkiye.qa" site_id="483">BeIn Sports 1 Türkiye</channel>
-    <channel lang="tr" xmltv_id="BeInSports2Turkiye.qa" site_id="310">BeIn Sports 2 Türkiye</channel>
-    <channel lang="tr" xmltv_id="BeInSports3Turkiye.qa" site_id="312">BeIn Sports 3 Türkiye</channel>
-    <channel lang="tr" xmltv_id="BeyazTV.tr" site_id="188">Beyaz TV</channel>
     <channel lang="tr" xmltv_id="BloombergHT.us" site_id="24">Bloomberg HT</channel>
     <channel lang="tr" xmltv_id="BloombergTVEurope.us" site_id="137">Bloomberg TV Europe</channel>
     <channel lang="tr" xmltv_id="CartoonNetworkTurkiye.us" site_id="220">Cartoon Network Türkiye</channel>
@@ -42,23 +36,18 @@
     <channel lang="tr" xmltv_id="DiscoveryScienceTurkiye.us" site_id="318">Discovery Science Türkiye</channel>
     <channel lang="tr" xmltv_id="DisneyChannelTurkiye.us" site_id="186">Disney Channel Türkiye</channel>
     <channel lang="tr" xmltv_id="DisneyJuniorTurkiyePolska.us" site_id="282">Disney Junior Türkiye &amp; Polska</channel>
-    <channel lang="tr" xmltv_id="DiyanetTV.tr" site_id="332">Diyanet TV</channel>
     <channel lang="tr" xmltv_id="DMAXTurkiye.us" site_id="212">DMAX Türkiye</channel>
     <channel lang="tr" xmltv_id="EuroNewsEnglish.fr" site_id="78">EuroNews English</channel>
     <channel lang="tr" xmltv_id="Eurosport1.fr" site_id="47">Eurosport 1</channel>
     <channel lang="tr" xmltv_id="Eurosport2.fr" site_id="82">Eurosport 2</channel>
     <channel lang="tr" xmltv_id="FashionTVHDEurope.fr" site_id="74">FashionTV HD Europe</channel>
-    <channel lang="tr" xmltv_id="FBTV.tr" site_id="55">FB TV</channel>
     <channel lang="tr" xmltv_id="FoxTurkiye.us" site_id="18">Fox Türkiye</channel>
     <channel lang="tr" xmltv_id="France24English.fr" site_id="285">France 24 English</channel>
-    <channel lang="tr" xmltv_id="GSTV.tr" site_id="250">GS TV</channel>
     <channel lang="tr" xmltv_id="Haberturk.tr" site_id="31">Habertürk</channel>
-    <channel lang="tr" xmltv_id="HalkTV.tr" site_id="298">Halk TV</channel>
     <channel lang="tr" xmltv_id="Kanal7.tr" site_id="439">Kanal 7</channel>
     <channel lang="tr" xmltv_id="KanalD.tr" site_id="430">Kanal D</channel>
     <channel lang="tr" xmltv_id="MCMTop.fr" site_id="60">MCM Top</channel>
     <channel lang="tr" xmltv_id="Mezzo.fr" site_id="61">Mezzo</channel>
-    <channel lang="tr" xmltv_id="MinikaGo.tr" site_id="291">Minika Go</channel>
     <channel lang="tr" xmltv_id="MTVHitsEurope.us" site_id="337">MTV Hits Europe</channel>
     <channel lang="tr" xmltv_id="MTVLiveHD.us" site_id="323">MTV Live HD</channel>
     <channel lang="tr" xmltv_id="NationalGeographicTurkiye.us" site_id="179">National Geographic Türkiye</channel>
@@ -67,30 +56,16 @@
     <channel lang="tr" xmltv_id="NTV.tr" site_id="28">NTV</channel>
     <channel lang="tr" xmltv_id="QuranTV.sa" site_id="477">Quran TV</channel>
     <channel lang="tr" xmltv_id="Rai1.it" site_id="85">Rai 1</channel>
-    <channel lang="tr" xmltv_id="RTRPlaneta.ru" site_id="369">RTR Planeta</channel>
     <channel lang="tr" xmltv_id="ShowTV.tr" site_id="294">Show TV</channel>
     <channel lang="tr" xmltv_id="StarTV.tr" site_id="406">Star TV</channel>
     <channel lang="tr" xmltv_id="SunnaTV.sa" site_id="478">Sunna TV</channel>
     <channel lang="tr" xmltv_id="Teve2.tr" site_id="256">Teve 2</channel>
-    <channel lang="tr" xmltv_id="TGRTHaber.tr" site_id="84">TGRT Haber</channel>
-    <channel lang="tr" xmltv_id="TJKTV.tr" site_id="53">TJK TV</channel>
     <channel lang="tr" xmltv_id="TLCTurkiye.us" site_id="23">TLC Türkiye</channel>
     <channel lang="tr" xmltv_id="TRT1.tr" site_id="19">TRT 1</channel>
-    <channel lang="tr" xmltv_id="TRT2.tr" site_id="308">TRT 2</channel>
     <channel lang="tr" xmltv_id="TRTArabi.tr" site_id="262">TRT Arabi</channel>
-    <channel lang="tr" xmltv_id="TRTAvaz.tr" site_id="244">TRT Avaz</channel>
-    <channel lang="tr" xmltv_id="TRTBelgesel.tr" site_id="487">TRT Belgesel</channel>
-    <channel lang="tr" xmltv_id="TRTCocuk.tr" site_id="243">TRT Çocuk</channel>
-    <channel lang="tr" xmltv_id="TRTHaber.tr" site_id="20">TRT Haber</channel>
-    <channel lang="tr" xmltv_id="TRTKurdi.tr" site_id="246">TRT Kurdî</channel>
-    <channel lang="tr" xmltv_id="TRTMuzik.tr" site_id="261">TRT Müzik</channel>
-    <channel lang="tr" xmltv_id="TRTSpor.tr" site_id="229">TRT Spor</channel>
-    <channel lang="tr" xmltv_id="TRTTurk.tr" site_id="245">TRT Türk</channel>
     <channel lang="tr" xmltv_id="TRTWorld.tr" site_id="469">TRT World</channel>
     <channel lang="tr" xmltv_id="TV5MondeEurope.fr" site_id="86">TV5Monde Europe</channel>
     <channel lang="tr" xmltv_id="TV8.tr" site_id="428">TV 8</channel>
-    <channel lang="tr" xmltv_id="TVNet.tr" site_id="222">TV Net</channel>
-    <channel lang="tr" xmltv_id="UlkeTV.tr" site_id="166">Ülke TV</channel>
     <channel lang="tr" xmltv_id="VH1Europe.us" site_id="63">VH1 Europe</channel>
   </channels>
 </site>
