@@ -6,6 +6,9 @@ require('dayjs/locale/ro')
 dayjs.locale('ro')
 
 module.exports = {
+  request: {
+    timeout: 30000
+  },
   site: 'programetv.ro',
   url: function ({ date, channel }) {
     const diff = dayjs().diff(date, 'd')
