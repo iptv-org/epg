@@ -26,7 +26,7 @@ it('can get logo url', () => {
   expect(result).toBe('https://www.dsmart.com.tr/epg/images/0x50/59f97253cfef0b75f4723ded')
 })
 
-fit('can parse response', () => {
+it('can parse response', () => {
   const result = parser({ date, channel, content })
   expect(result).toMatchObject([
     {
