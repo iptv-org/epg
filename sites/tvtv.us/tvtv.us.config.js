@@ -15,6 +15,8 @@ module.exports = {
     }/listings?start=${date.format()}&end=${date.add(1, 'd').format()}`
   },
   logo: async function ({ channel }) {
+    if (channel.logo) return channel.logo
+
     return await axios
       .get(`https://tvtv.us/tvm/t/tv/v4/stations/${channel.site_id}`)
       .then(r =>
