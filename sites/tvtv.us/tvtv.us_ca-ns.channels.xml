@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site site="tvtv.us">
   <channels>
-    <channel lang="en" xmltv_id="CBHT.ca" site_id="121">CBC (CBHT) Halifax, NS</channel>
-    <channel lang="en" xmltv_id="CIHF.ca" site_id="115">Global (CIHF) Dartmouth, NS</channel>
-    <channel lang="en" xmltv_id="CIHFTV15.ca" site_id="13829">Global (CIHF-TV-15) Antigonish, NS</channel>
-    <channel lang="en" xmltv_id="CJCB.ca" site_id="3318">CTV (CJCB) Sydney/Cape Breton, NS</channel>
-    <channel lang="en" xmltv_id="CJCH.ca" site_id="3316">CTV (CJCH) Halifax, NS</channel>
-    <channel lang="en" xmltv_id="CJCHTV1.ca" site_id="14087">CTV (CJCH-TV-1) Canning, NS</channel>
-    <channel lang="en" xmltv_id="CJCHTV5.ca" site_id="14091">CTV (CJCH-TV-5) Sheet Harbour, NS</channel>
-    <channel lang="en" xmltv_id="CJCHTV6.ca" site_id="14092">CTV (CJCH-TV-6) Caledonia, NS</channel>
-    <channel lang="en" xmltv_id="CJCHTV7.ca" site_id="14093">CTV (CJCH-TV-7) Yarmouth, NS</channel>
+    <channel lang="en" xmltv_id="CBHT.ca" site_id="121" logo="https://cdn.tvpassport.com/image/station/100x100/cbc2015.png">CBC (CBHT) Halifax, NS</channel>
+    <channel lang="en" xmltv_id="CIHF.ca" site_id="115" logo="https://cdn.tvpassport.com/image/station/100x100/globalmaritimes.png">Global (CIHF) Dartmouth, NS</channel>
+    <channel lang="en" xmltv_id="CIHFTV15.ca" site_id="13829" logo="https://cdn.tvpassport.com/image/station/100x100/globalmaritimes.png">Global (CIHF-TV-15) Antigonish, NS</channel>
+    <channel lang="en" xmltv_id="CJCB.ca" site_id="3318" logo="https://cdn.tvpassport.com/image/station/100x100/ctv-2018.png">CTV (CJCB) Sydney/Cape Breton, NS</channel>
+    <channel lang="en" xmltv_id="CJCH.ca" site_id="3316" logo="https://cdn.tvpassport.com/image/station/100x100/ctv-2018.png">CTV (CJCH) Halifax, NS</channel>
+    <channel lang="en" xmltv_id="CJCHTV1.ca" site_id="14087" logo="https://cdn.tvpassport.com/image/station/100x100/ctv-2018.png">CTV (CJCH-TV-1) Canning, NS</channel>
+    <channel lang="en" xmltv_id="CJCHTV5.ca" site_id="14091" logo="https://cdn.tvpassport.com/image/station/100x100/ctv-2018.png">CTV (CJCH-TV-5) Sheet Harbour, NS</channel>
+    <channel lang="en" xmltv_id="CJCHTV6.ca" site_id="14092" logo="https://cdn.tvpassport.com/image/station/100x100/ctv-2018.png">CTV (CJCH-TV-6) Caledonia, NS</channel>
+    <channel lang="en" xmltv_id="CJCHTV7.ca" site_id="14093" logo="https://cdn.tvpassport.com/image/station/100x100/ctv-2018.png">CTV (CJCH-TV-7) Yarmouth, NS</channel>
   </channels>
 </site>

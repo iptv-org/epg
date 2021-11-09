@@ -1,44 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site site="tvtv.us">
   <channels>
-    <channel lang="en" xmltv_id="CBUFT.ca" site_id="188">ICI (CBUFT) Vancouver, BC</channel>
-    <channel lang="en" xmltv_id="CBUT.ca" site_id="180">CBC (CBUT) Vancouver, BC</channel>
-    <channel lang="en" xmltv_id="CFCNTV9.ca" site_id="13798">CTV (CFCN-TV9) Cranbrook, BC</channel>
-    <channel lang="en" xmltv_id="CFFLTV1.ca" site_id="13966">Global BC (CFFL-TV-1) Fraser Lake, BC</channel>
-    <channel lang="en" xmltv_id="CFHOTV1.ca" site_id="13913">Global BC (CFHO-TV-1) Smithers, BC</channel>
-    <channel lang="en" xmltv_id="CFHOTV2.ca" site_id="13914">Global BC (CFHO-TV-2) Telkwa, BC</channel>
-    <channel lang="en" xmltv_id="CFHOTV.ca" site_id="13982">Global BC (CFHO-TV) Houston, BC</channel>
-    <channel lang="en" xmltv_id="CFJC.ca" site_id="452">CFJC-TV Kamloops, BC</channel>
-    <channel lang="en" xmltv_id="CFJCTV3.ca" site_id="13989">CFJC-TV-3 Merritt, BC</channel>
-    <channel lang="en" xmltv_id="CFJCTV4.ca" site_id="13990">CFJC-TV-4 Clinton, BC</channel>
-    <channel lang="en" xmltv_id="CFJCTV6.ca" site_id="13992">CFJC-TV-6 100 Mile House, BC</channel>
-    <channel lang="en" xmltv_id="CFTK.ca" site_id="584">CTV 2 (CFTK) Terrace, BC</channel>
-    <channel lang="en" xmltv_id="CHANDT1.ca" site_id="14079">Global BC (CHAN-DT-1) Chilliwack, BC</channel>
-    <channel lang="en" xmltv_id="CHANDT6.ca" site_id="14081">Global BC (CHAN-DT-6) Wilson Creek, BC</channel>
-    <channel lang="en" xmltv_id="CHANTV4.ca" site_id="13936">Global BC (CHAN-TV-4) Courtenay, BC</channel>
-    <channel lang="en" xmltv_id="CHBC.ca" site_id="170">Global (CHBC) Okanagan Valley, BC</channel>
-    <channel lang="en" xmltv_id="CHBCDT1.ca" site_id="13833">Global (CHBC-DT-1) Penticton, BC</channel>
-    <channel lang="en" xmltv_id="CHBCDT2.ca" site_id="13834">Global (CHBC-DT-2) Vernon, BC</channel>
-    <channel lang="en" xmltv_id="CHBCTV3.ca" site_id="13835">Global (CHBC-TV-3) Oliver, BC</channel>
-    <channel lang="en" xmltv_id="CHBCTV4.ca" site_id="13836">Global (CHBC-TV-4) Salmon Arm, BC</channel>
-    <channel lang="en" xmltv_id="CHBCTV5.ca" site_id="13837">Global (CHBC-TV-5) Enderby, BC</channel>
-    <channel lang="en" xmltv_id="CHBLTV.ca" site_id="13940">Global BC (CHBL-TV) Ootsa Lake, BC</channel>
-    <channel lang="en" xmltv_id="CHKLDT1.ca" site_id="13944">Global BC (CHKL-DT-1) Penticton, BC</channel>
-    <channel lang="en" xmltv_id="CHKLDT2.ca" site_id="13945">Global BC (CHKL-DT-2) Vernon, BC</channel>
-    <channel lang="en" xmltv_id="CHKLDT.ca" site_id="13943">Global BC (CHKL-DT) Kelowna, BC</channel>
-    <channel lang="en" xmltv_id="CHKM.ca" site_id="11597">Global (CHKM) Kamloops, BC</channel>
-    <channel lang="en" xmltv_id="CHNUDT1.ca" site_id="5867">Joytv (CHNU-TV) Fraser Valley, BC</channel>
-    <channel lang="en" xmltv_id="CIFG.ca" site_id="11600">Global (CIFG) Prince George, BC</channel>
-    <channel lang="en" xmltv_id="CIFGTV.ca" site_id="13953">Global BC (CIFG-TV) Prince George, BC</channel>
-    <channel lang="en" xmltv_id="CITMTV.ca" site_id="13959">Global BC (CITM-TV) 100 Mile House, BC</channel>
-    <channel lang="en" xmltv_id="CIVIDT2.ca" site_id="13841">CTV 2 (CIVI-DT2) Vancouver, BC</channel>
-    <channel lang="en" xmltv_id="CJDC.ca" site_id="337">CTV 2 (CJDC-TV) Dawson Creek, BC</channel>
-    <channel lang="en" xmltv_id="CKHSTV.ca" site_id="13973">Global BC (CKHS-TV) Burns Lake, BC</channel>
-    <channel lang="en" xmltv_id="CKKMTV.ca" site_id="13974">Global BC (CKKM-TV) Oliver/Osoyoos, BC</channel>
-    <channel lang="en" xmltv_id="CKPG.ca" site_id="546">CKPG-TV Prince George, BC</channel>
-    <channel lang="en" xmltv_id="CKTNTV3.ca" site_id="13979">Global BC (CKTN-TV-3) Nelson, BC</channel>
-    <channel lang="en" xmltv_id="CKTNTV.ca" site_id="13976">Global BC (CKTN-TV) Trail, BC</channel>
-    <channel lang="en" xmltv_id="CKVUDT2.ca" site_id="13872">Citytv (CKVU-DT-2) Victoria, BC</channel>
-    <channel lang="en" xmltv_id="CKVUTV1.ca" site_id="13871">Citytv (CKVU-TV-1) Courtenay, BC</channel>
+    <channel lang="en" xmltv_id="CBUFT.ca" site_id="188" logo="https://cdn.tvpassport.com/image/station/100x100/src.png">ICI (CBUFT) Vancouver, BC</channel>
+    <channel lang="en" xmltv_id="CBUT.ca" site_id="180" logo="https://cdn.tvpassport.com/image/station/100x100/cbc2015.png">CBC (CBUT) Vancouver, BC</channel>
+    <channel lang="en" xmltv_id="CFCNTV9.ca" site_id="13798" logo="https://cdn.tvpassport.com/image/station/100x100/ctv-2018.png">CTV (CFCN-TV9) Cranbrook, BC</channel>
+    <channel lang="en" xmltv_id="CFFLTV1.ca" site_id="13966" logo="https://cdn.tvpassport.com/image/station/100x100/global.png">Global BC (CFFL-TV-1) Fraser Lake, BC</channel>
+    <channel lang="en" xmltv_id="CFHOTV1.ca" site_id="13913" logo="https://cdn.tvpassport.com/image/station/100x100/global.png">Global BC (CFHO-TV-1) Smithers, BC</channel>
+    <channel lang="en" xmltv_id="CFHOTV2.ca" site_id="13914" logo="https://cdn.tvpassport.com/image/station/100x100/global.png">Global BC (CFHO-TV-2) Telkwa, BC</channel>
+    <channel lang="en" xmltv_id="CFHOTV.ca" site_id="13982" logo="https://cdn.tvpassport.com/image/station/100x100/global.png">Global BC (CFHO-TV) Houston, BC</channel>
+    <channel lang="en" xmltv_id="CFJC.ca" site_id="452" logo="https://cdn.tvpassport.com/image/station/100x100/cfjc.png">CFJC-TV Kamloops, BC</channel>
+    <channel lang="en" xmltv_id="CFJCTV3.ca" site_id="13989" logo="https://cdn.tvpassport.com/image/station/100x100/cfjc.png">CFJC-TV-3 Merritt, BC</channel>
+    <channel lang="en" xmltv_id="CFJCTV4.ca" site_id="13990" logo="https://cdn.tvpassport.com/image/station/100x100/cfjc.png">CFJC-TV-4 Clinton, BC</channel>
+    <channel lang="en" xmltv_id="CFJCTV6.ca" site_id="13992" logo="https://cdn.tvpassport.com/image/station/100x100/cfjc.png">CFJC-TV-6 100 Mile House, BC</channel>
+    <channel lang="en" xmltv_id="CFTK.ca" site_id="584" logo="https://cdn.tvpassport.com/image/station/100x100/ctv2-2018.png">CTV 2 (CFTK) Terrace, BC</channel>
+    <channel lang="en" xmltv_id="CHANDT1.ca" site_id="14079" logo="https://cdn.tvpassport.com/image/station/100x100/global.png">Global BC (CHAN-DT-1) Chilliwack, BC</channel>
+    <channel lang="en" xmltv_id="CHANDT6.ca" site_id="14081" logo="https://cdn.tvpassport.com/image/station/100x100/global.png">Global BC (CHAN-DT-6) Wilson Creek, BC</channel>
+    <channel lang="en" xmltv_id="CHANTV4.ca" site_id="13936" logo="https://cdn.tvpassport.com/image/station/100x100/global.png">Global BC (CHAN-TV-4) Courtenay, BC</channel>
+    <channel lang="en" xmltv_id="CHBC.ca" site_id="170" logo="https://cdn.tvpassport.com/image/station/100x100/global.png">Global (CHBC) Okanagan Valley, BC</channel>
+    <channel lang="en" xmltv_id="CHBCDT1.ca" site_id="13833" logo="https://cdn.tvpassport.com/image/station/100x100/global.png">Global (CHBC-DT-1) Penticton, BC</channel>
+    <channel lang="en" xmltv_id="CHBCDT2.ca" site_id="13834" logo="https://cdn.tvpassport.com/image/station/100x100/global.png">Global (CHBC-DT-2) Vernon, BC</channel>
+    <channel lang="en" xmltv_id="CHBCTV3.ca" site_id="13835" logo="https://cdn.tvpassport.com/image/station/100x100/global.png">Global (CHBC-TV-3) Oliver, BC</channel>
+    <channel lang="en" xmltv_id="CHBCTV4.ca" site_id="13836" logo="https://cdn.tvpassport.com/image/station/100x100/global.png">Global (CHBC-TV-4) Salmon Arm, BC</channel>
+    <channel lang="en" xmltv_id="CHBCTV5.ca" site_id="13837" logo="https://cdn.tvpassport.com/image/station/100x100/global.png">Global (CHBC-TV-5) Enderby, BC</channel>
+    <channel lang="en" xmltv_id="CHBLTV.ca" site_id="13940" logo="https://cdn.tvpassport.com/image/station/100x100/global.png">Global BC (CHBL-TV) Ootsa Lake, BC</channel>
+    <channel lang="en" xmltv_id="CHKLDT1.ca" site_id="13944" logo="https://cdn.tvpassport.com/image/station/100x100/global.png">Global BC (CHKL-DT-1) Penticton, BC</channel>
+    <channel lang="en" xmltv_id="CHKLDT2.ca" site_id="13945" logo="https://cdn.tvpassport.com/image/station/100x100/global.png">Global BC (CHKL-DT-2) Vernon, BC</channel>
+    <channel lang="en" xmltv_id="CHKLDT.ca" site_id="13943" logo="https://cdn.tvpassport.com/image/station/100x100/global.png">Global BC (CHKL-DT) Kelowna, BC</channel>
+    <channel lang="en" xmltv_id="CHKM.ca" site_id="11597" logo="https://cdn.tvpassport.com/image/station/100x100/global.png">Global (CHKM) Kamloops, BC</channel>
+    <channel lang="en" xmltv_id="CHNUDT1.ca" site_id="5867" logo="https://cdn.tvpassport.com/image/station/100x100/chnu.png">Joytv (CHNU-TV) Fraser Valley, BC</channel>
+    <channel lang="en" xmltv_id="CIFG.ca" site_id="11600" logo="https://cdn.tvpassport.com/image/station/100x100/global.png">Global (CIFG) Prince George, BC</channel>
+    <channel lang="en" xmltv_id="CIFGTV.ca" site_id="13953" logo="https://cdn.tvpassport.com/image/station/100x100/global.png">Global BC (CIFG-TV) Prince George, BC</channel>
+    <channel lang="en" xmltv_id="CITMTV.ca" site_id="13959" logo="https://cdn.tvpassport.com/image/station/100x100/global.png">Global BC (CITM-TV) 100 Mile House, BC</channel>
+    <channel lang="en" xmltv_id="CIVIDT2.ca" site_id="13841" logo="https://cdn.tvpassport.com/image/station/100x100/ctv2-2018.png">CTV 2 (CIVI-DT2) Vancouver, BC</channel>
+    <channel lang="en" xmltv_id="CJDC.ca" site_id="337" logo="https://cdn.tvpassport.com/image/station/100x100/ctvtwo.png">CTV 2 (CJDC-TV) Dawson Creek, BC</channel>
+    <channel lang="en" xmltv_id="CKHSTV.ca" site_id="13973" logo="https://cdn.tvpassport.com/image/station/100x100/global.png">Global BC (CKHS-TV) Burns Lake, BC</channel>
+    <channel lang="en" xmltv_id="CKKMTV.ca" site_id="13974" logo="https://cdn.tvpassport.com/image/station/100x100/global.png">Global BC (CKKM-TV) Oliver/Osoyoos, BC</channel>
+    <channel lang="en" xmltv_id="CKPG.ca" site_id="546" logo="https://cdn.tvpassport.com/image/station/100x100/ckpg.png">CKPG-TV Prince George, BC</channel>
+    <channel lang="en" xmltv_id="CKTNTV3.ca" site_id="13979" logo="https://cdn.tvpassport.com/image/station/100x100/global.png">Global BC (CKTN-TV-3) Nelson, BC</channel>
+    <channel lang="en" xmltv_id="CKTNTV.ca" site_id="13976" logo="https://cdn.tvpassport.com/image/station/100x100/global.png">Global BC (CKTN-TV) Trail, BC</channel>
+    <channel lang="en" xmltv_id="CKVUDT2.ca" site_id="13872" logo="https://cdn.tvpassport.com/image/station/100x100/citytv.png">Citytv (CKVU-DT-2) Victoria, BC</channel>
+    <channel lang="en" xmltv_id="CKVUTV1.ca" site_id="13871" logo="https://cdn.tvpassport.com/image/station/100x100/citytv.png">Citytv (CKVU-TV-1) Courtenay, BC</channel>
   </channels>
 </site>
