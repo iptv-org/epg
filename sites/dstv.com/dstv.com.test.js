@@ -24,15 +24,10 @@ it('can generate valid url', () => {
   )
 })
 
-it('can get logo url', done => {
-  logo({ channel })
-    .then(result => {
-      expect(result).toBe(
-        'https://rndcdn.dstv.com/dstvcms/2020/09/01/M-Net_Movies_4_Logo_4-3_lightbackground_xlrg.png'
-      )
-      done()
-    })
-    .catch(error => done(error))
+it('can get logo url', () => {
+  expect(logo({ channel })).toBe(
+    'https://rndcdn.dstv.com/dstvcms/2020/09/01/M-Net_Movies_4_Logo_4-3_lightbackground_xlrg.png'
+  )
 })
 
 it('can parse response', () => {

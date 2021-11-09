@@ -19,21 +19,8 @@ module.exports = {
       'YYYY-MM-DD'
     )}`
   },
-  async logo({ channel }) {
-    if (channel.logo) return channel.logo
-    const [bouquetId, channelId] = channel.site_id.split('#')
-    const url = `https://guide.dstv.com/api/channel/fetchChannelsByGenresInBouquet?bouquetId=${bouquetId}&genre=all`
-    const result = await axios
-      .get(url)
-      .then(r => r.data)
-      .catch(console.log)
-    if (!result) return null
-    const items = result.items || []
-    const elem = items.find(i => i.channelTag === channelId) || {
-      channelLogoPaths: { XLARGE: null }
-    }
-
-    return elem.channelLogoPaths.XLARGE
+  logo({ channel }) {
+    return channel.logo
   },
   parser({ content, date, channel }) {
     let PM = false
