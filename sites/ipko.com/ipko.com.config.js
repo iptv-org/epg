@@ -9,14 +9,8 @@ module.exports = {
   url: function ({ date }) {
     return `https://www.ipko.com/epg/admin/programs.php?date=${date.format('YYYY-MM-DD')}`
   },
-  async logo({ channel }) {
-    const data = await axios
-      .post('https://www.ipko.com/epg/admin/channels.php')
-      .then(r => r.data)
-      .catch(console.log)
-    const item = Object.values(data.element).find(c => c.channel_id == channel.site_id)
-
-    return item ? `https://www.ipko.com/epg/logo/${item.icon}` : null
+  logo({ channel }) {
+    return channel.logo
   },
   parser: function ({ content, channel, date }) {
     let programs = []
