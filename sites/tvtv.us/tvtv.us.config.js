@@ -1,4 +1,3 @@
-const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 
@@ -14,15 +13,8 @@ module.exports = {
       channel.site_id
     }/listings?start=${date.format()}&end=${date.add(1, 'd').format()}`
   },
-  logo: async function ({ channel }) {
-    return await axios
-      .get(`https://tvtv.us/tvm/t/tv/v4/stations/${channel.site_id}`)
-      .then(r =>
-        r.data && r.data.logoFilename
-          ? `https://cdn.tvpassport.com/image/station/100x100/${r.data.logoFilename}`
-          : null
-      )
-      .catch(e => console.log)
+  logo({ channel }) {
+    return channel.logo
   },
   parser: function ({ content }) {
     let programs = []
