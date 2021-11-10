@@ -10,6 +10,9 @@ module.exports = {
       channel.site_id
     }/${date.format('YYYY-MM-DD')}/0`
   },
+  logo({ channel }) {
+    return channel.logo
+  },
   parser: function ({ content, channel }) {
     const programs = []
     const items = parseItems(content, channel)
@@ -18,8 +21,8 @@ module.exports = {
         title: item.ProgramName,
         description: item.LongDescription,
         category: parseCategory(item),
-        start: parseStart(item),
-        stop: parseStop(item)
+        start: parseStart(item).toJSON(),
+        stop: parseStop(item).toJSON()
       })
     })
 
@@ -64,7 +67,7 @@ function parseCategory(item) {
 function parseItems(content, channel) {
   const data = JSON.parse(content)
   const items = data.listings[channel.site_id]
-  if (!items.length) return []
+  if (!Array.isArray(items)) return []
 
   return items
 }
