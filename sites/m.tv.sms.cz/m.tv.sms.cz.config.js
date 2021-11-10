@@ -12,7 +12,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   request: {
-    timeout: 10000
+    timeout: 15000
   },
   site: 'm.tv.sms.cz',
   url: function ({ date, channel }) {
