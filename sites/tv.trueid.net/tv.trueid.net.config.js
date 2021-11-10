@@ -6,7 +6,7 @@ dayjs.extend(utc)
 
 module.exports = {
   request: {
-    timeout: 90000,
+    timeout: 120000,
     jar: null
   },
   site: 'tv.trueid.net',
