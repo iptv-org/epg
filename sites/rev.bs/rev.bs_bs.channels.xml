@@ -1,9 +1,191 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site site="rev.bs">
   <channels>
-    <channel lang="en" xmltv_id="IslandLuckTV.bs" site_id="224">Island Luck TV</channel>
-    <channel lang="en" xmltv_id="JCNChannel14.bs" site_id="214">JCN Channel 14</channel>
-    <channel lang="en" xmltv_id="OurTV.bs" site_id="212">Our TV</channel>
-    <channel lang="en" xmltv_id="ZNSTV.bs" site_id="211">ZNS TV</channel>
+    <channel lang="en" xmltv_id="3ABNEnglish.us" site_id="653" logo="https://zap2it.tmsimg.com/h3/NowShowing/10002/s10002_h3_aa.png">3ABN English</channel>
+    <channel lang="en" xmltv_id="AEEast.us" site_id="480" logo="https://zap2it.tmsimg.com/h5/NowShowing/10035/s10035_h5_aa.png">A&amp;E East</channel>
+    <channel lang="en" xmltv_id="AljazeeraEnglish.qa" site_id="404" logo="https://zap2it.tmsimg.com/h3/NowShowing/20296/s20296_h3_aa.png">Aljazeera English</channel>
+    <channel lang="en" xmltv_id="AMCEast.us" site_id="489" logo="https://zap2it.tmsimg.com/h3/NowShowing/52247/s52247_h3_aa.png">AMC East</channel>
+    <channel lang="en" xmltv_id="AnimalPlanetEast.us" site_id="259" logo="https://zap2it.tmsimg.com/h5/NowShowing/18649/s18649_h5_aa.png">Animal Planet East</channel>
+    <channel lang="en" xmltv_id="Ant1Satellite.gr" site_id="681" logo="https://zap2it.tmsimg.com/h3/NowShowing/16372/s16372_h3_aa.png">Ant1 Satellite</channel>
+    <channel lang="en" xmltv_id="AWE.us" site_id="267" logo="https://zap2it.tmsimg.com/h5/NowShowing/44895/s44895_h5_aa.png">AWE</channel>
+    <channel lang="en" xmltv_id="AXSTV.us" site_id="369" logo="https://zap2it.tmsimg.com/h5/NowShowing/28506/s28506_h5_aa.png">AXS TV</channel>
+    <channel lang="en" xmltv_id="BabyFirstTV.us" site_id="318" logo="https://zap2it.tmsimg.com/h3/NowShowing/50338/s50338_h3_aa.png">BabyFirst TV</channel>
+    <channel lang="en" xmltv_id="BBCAmericaEast.uk" site_id="485" logo="https://zap2it.tmsimg.com/h3/NowShowing/18332/s18332_h3_aa.png">BBC America East</channel>
+    <channel lang="en" xmltv_id="BBCWorldNewsAmericas.uk" site_id="409" logo="https://zap2it.tmsimg.com/h3/NowShowing/36844/s36844_h3_aa.png">BBC World News Americas</channel>
+    <channel lang="en" xmltv_id="BCNTV.bs" site_id="660" logo="https://www.rev.bs/wp-content/uploads/2020/06/bcn-logo-300x201.png">BCN TV</channel>
+    <channel lang="en" xmltv_id="BETEast.us" site_id="356" logo="https://zap2it.tmsimg.com/h3/NowShowing/10051/s10051_h3_aa.png">BET East</channel>
+    <channel lang="en" xmltv_id="BETGospel.us" site_id="385" logo="https://zap2it.tmsimg.com/assets/s16484_h3_aa.png">BET Gospel</channel>
+    <channel lang="en" xmltv_id="BETHerEast.us" site_id="380" logo="https://zap2it.tmsimg.com/h3/NowShowing/14897/s14897_h3_aa.png">BET Her East</channel>
+    <channel lang="en" xmltv_id="BETJams.us" site_id="376" logo="https://zap2it.tmsimg.com/h5/NowShowing/30419/s30419_h5_aa.png">BET Jams</channel>
+    <channel lang="en" xmltv_id="BETSoul.us" site_id="379" logo="https://zap2it.tmsimg.com/h5/NowShowing/18718/s18718_h5_aa.png">BET Soul</channel>
+    <channel lang="en" xmltv_id="BigTenNetwork.us" site_id="713" logo="https://zap2it.tmsimg.com/h3/NowShowing/58321/s58321_h3_aa.png">Big Ten Network</channel>
+    <channel lang="en" xmltv_id="BloombergTVUS.us" site_id="417" logo="https://zap2it.tmsimg.com/assets/s26089_h4_ba.png">Bloomberg TV US</channel>
+    <channel lang="en" xmltv_id="BoomerangUS.us" site_id="312" logo="https://zap2it.tmsimg.com/assets/s14755_h3_aa.png">Boomerang US</channel>
+    <channel lang="en" xmltv_id="Bounce.us" site_id="367" logo="https://zap2it.tmsimg.com/h3/NowShowing/73067/s73067_h3_aa.png">Bounce</channel>
+    <channel lang="en" xmltv_id="Bravo.us" site_id="483" logo="https://zap2it.tmsimg.com/h5/NowShowing/10057/s10057_h5_aa.png">Bravo</channel>
+    <channel lang="en" xmltv_id="CalaClassics.bs" site_id="358" logo="https://zap2it.tmsimg.com/h3/NowShowing/80063/s80063_h3_aa.png">Cala Classics</channel>
+    <channel lang="en" xmltv_id="CalaWeather.bs" site_id="412" logo="https://zap2it.tmsimg.com/h3/NowShowing/79913/s79913_h3_aa.png">Cala Weather</channel>
+    <channel lang="en" xmltv_id="CaribVision.bb" site_id="271" logo="https://zap2it.tmsimg.com/h4/NowShowing/49411/s49411_h4_aa.png">CaribVision</channel>
+    <channel lang="en" xmltv_id="CartoonNetworkEast.us" site_id="301" logo="https://zap2it.tmsimg.com/assets/s59562_h5_aa.png">Cartoon Network East</channel>
+    <channel lang="en" xmltv_id="CBCToronto.ca" site_id="208" logo="https://zap2it.tmsimg.com/assets/s46245_h3_aa.png">CBC Toronto</channel>
+    <channel lang="en" xmltv_id="CCTV4America.cn" site_id="688" logo="https://zap2it.tmsimg.com/h5/NowShowing/24248/s24248_h5_aa.png">CCTV 4 America</channel>
+    <channel lang="en" xmltv_id="CCTV9.cn" site_id="680" logo="https://zap2it.tmsimg.com/h3/NowShowing/29114/s29114_h3_aa.png">CCTV 9</channel>
+    <channel lang="en" xmltv_id="CinemaxEast.us" site_id="462" logo="https://zap2it.tmsimg.com/h4/NowShowing/16794/s16794_h4_aa.png">Cinemax East</channel>
+    <channel lang="en" xmltv_id="CitytvToronto.ca" site_id="219" logo="https://zap2it.tmsimg.com/assets/s10125_h3_aa.png">Citytv Toronto</channel>
+    <channel lang="en" xmltv_id="CMTMusic.us" site_id="390" logo="https://zap2it.tmsimg.com/h5/NowShowing/10138/s10138_h5_aa.png">CMT Music</channel>
+    <channel lang="en" xmltv_id="CNBCUS.us" site_id="403" logo="https://zap2it.tmsimg.com/h3/NowShowing/10139/s10139_h3_ba.png">CNBC US</channel>
+    <channel lang="en" xmltv_id="CNNInternationalLatinAmerica.us" site_id="408" logo="https://zap2it.tmsimg.com/h5/NowShowing/10146/s10146_h5_ba.png">CNN International Latin America</channel>
+    <channel lang="en" xmltv_id="CNNUSA.us" site_id="405" logo="https://zap2it.tmsimg.com/assets/s58646_h3_aa.png">CNN USA</channel>
+    <channel lang="en" xmltv_id="ComedyCentralEast.us" site_id="354" logo="https://zap2it.tmsimg.com/assets/s10149_h5_ba.png">Comedy Central East</channel>
+    <channel lang="en" xmltv_id="ComedyTV.us" site_id="355" logo="https://zap2it.tmsimg.com/assets/s82470_h3_aa.png">Comedy TV</channel>
+    <channel lang="en" xmltv_id="CookingChannel.us" site_id="251" logo="https://zap2it.tmsimg.com/h5/NowShowing/30156/s30156_h5_aa.png">Cooking Channel</channel>
+    <channel lang="en" xmltv_id="CourtTVMystery.us" site_id="314" logo="https://zap2it.tmsimg.com/h5/NowShowing/89923/s89923_h5_aa.png">Court TV Mystery</channel>
+    <channel lang="en" xmltv_id="CTVToronto.ca" site_id="220" logo="https://zap2it.tmsimg.com/h3/NowShowing/10108/s10108_h3_aa.png">CTV Toronto</channel>
+    <channel lang="en" xmltv_id="CuriosityChannel.us" site_id="260" logo="https://zap2it.tmsimg.com/h5/NowShowing/110951/s110951_h5_aa.png">Curiosity Channel</channel>
+    <channel lang="en" xmltv_id="DaystarTV.us" site_id="659" logo="https://zap2it.tmsimg.com/h4/NowShowing/19026/s19026_h4_ba.png">Daystar TV</channel>
+    <channel lang="en" xmltv_id="DiscoveryChannelEast.us" site_id="258" logo="https://zap2it.tmsimg.com/assets/s119237_h3_aa.png">Discovery Channel East</channel>
+    <channel lang="en" xmltv_id="DiscoveryCivilization.us" site_id="264" logo="https://zap2it.tmsimg.com/h3/NowShowing/48524/s48524_h3_aa.png">Discovery Civilization</channel>
+    <channel lang="en" xmltv_id="DiscoveryHDWorldLatinoamerica.us" site_id="257" logo="https://zap2it.tmsimg.com/h5/NowShowing/66488/s66488_h5_aa.png">Discovery HD World Latinoamérica</channel>
+    <channel lang="en" xmltv_id="DiscoveryHomeHealthLatinoamerica.us" site_id="268" logo="https://zap2it.tmsimg.com/h3/NowShowing/24424/s24424_h3_aa.png">Discovery Home &amp; Health Latinoamérica</channel>
+    <channel lang="en" xmltv_id="DiscoveryKidsColombia.us" site_id="304" logo="https://zap2it.tmsimg.com/h3/NowShowing/16665/s16665_h3_aa.png">Discovery Kids Colombia</channel>
+    <channel lang="en" xmltv_id="DiscoveryScienceLatinoamerica.us" site_id="262" logo="https://zap2it.tmsimg.com/h5/NowShowing/48527/s48527_h5_aa.png">Discovery Science Latinoamérica</channel>
+    <channel lang="en" xmltv_id="DiscoveryTheater.us" site_id="275" logo="https://zap2it.tmsimg.com/h5/NowShowing/65940/s65940_h5_aa.png">Discovery Theater</channel>
+    <channel lang="en" xmltv_id="DiscoveryTurboAmericaLatina.us" site_id="263" logo="https://zap2it.tmsimg.com/h5/NowShowing/46608/s46608_h5_aa.png">Discovery Turbo América Latina</channel>
+    <channel lang="en" xmltv_id="DisneyChannelEast.us" site_id="300" logo="https://zap2it.tmsimg.com/h3/NowShowing/41223/s41223_h3_aa.png">Disney Channel East</channel>
+    <channel lang="en" xmltv_id="DisneyJuniorEast.us" site_id="320" logo="https://zap2it.tmsimg.com/h5/NowShowing/60506/s60506_h5_aa.png">Disney Junior East</channel>
+    <channel lang="en" xmltv_id="DisneyXDEast.us" site_id="319" logo="https://zap2it.tmsimg.com/h5/NowShowing/54930/s54930_h5_aa.png">Disney XD East</channel>
+    <channel lang="en" xmltv_id="DIYNetworkUSA.us" site_id="253" logo="https://zap2it.tmsimg.com/h4/NowShowing/18544/s18544_h4_ba.png">DIY Network USA</channel>
+    <channel lang="en" xmltv_id="DWEnglish.de" site_id="676" logo="https://zap2it.tmsimg.com/h3/NowShowing/74479/s74479_h3_aa.png">DW English</channel>
+    <channel lang="en" xmltv_id="EEast.us" site_id="350" logo="https://zap2it.tmsimg.com/h5/NowShowing/10989/s10989_h5_ba.png">E! East</channel>
+    <channel lang="en" xmltv_id="ESPN2Caribbean.us" site_id="705" logo="https://zap2it.tmsimg.com/h3/NowShowing/55885/s55885_h3_aa.png">ESPN 2 Caribbean</channel>
+    <channel lang="en" xmltv_id="ESPNCaribbean.us" site_id="700">ESPN Caribbean</channel>
+    <channel lang="en" xmltv_id="ESPNU.us" site_id="723" logo="https://zap2it.tmsimg.com/h3/NowShowing/45654/s45654_h3_ba.png">ESPNU</channel>
+    <channel lang="en" xmltv_id="EsTV.us" site_id="454" logo="https://zap2it.tmsimg.com/h3/NowShowing/76870/s76870_h3_aa.png">Es TV</channel>
+    <channel lang="en" xmltv_id="Eurochannel.us" site_id="270" logo="https://zap2it.tmsimg.com/h3/NowShowing/16574/s16574_h3_aa.png">Eurochannel</channel>
+    <channel lang="en" xmltv_id="EuroNewsEnglish.fr" site_id="426" logo="https://zap2it.tmsimg.com/h3/NowShowing/28174/s28174_h3_aa.png">EuroNews English</channel>
+    <channel lang="en" xmltv_id="EWTNUS.us" site_id="657" logo="https://zap2it.tmsimg.com/h5/NowShowing/10183/s10183_h5_aa.png">EWTN US</channel>
+    <channel lang="en" xmltv_id="FightNetwork.ca" site_id="726" logo="https://zap2it.tmsimg.com/h3/NowShowing/81448/s81448_h3_aa.png">Fight Network</channel>
+    <channel lang="en" xmltv_id="FoodNetworkEast.us" site_id="252" logo="https://zap2it.tmsimg.com/h3/NowShowing/12574/s12574_h3_aa.png">Food Network East</channel>
+    <channel lang="en" xmltv_id="FoxBusiness.us" site_id="410" logo="https://zap2it.tmsimg.com/assets/s58718_h3_aa.png">Fox Business</channel>
+    <channel lang="en" xmltv_id="FoxNewsChannel.us" site_id="407" logo="https://zap2it.tmsimg.com/h3/NowShowing/16374/s16374_h3_aa.png">Fox News Channel</channel>
+    <channel lang="en" xmltv_id="FoxSoccerPlus.us" site_id="703" logo="https://zap2it.tmsimg.com/h5/NowShowing/66879/s66879_h5_ba.png">Fox Soccer Plus</channel>
+    <channel lang="en" xmltv_id="FoxSportsRacing.us" site_id="732" logo="https://zap2it.tmsimg.com/h3/NowShowing/30189/s30189_h3_aa.png">Fox Sports Racing</channel>
+    <channel lang="en" xmltv_id="FS2.us" site_id="707" logo="https://zap2it.tmsimg.com/h3/NowShowing/33178/s33178_h3_aa.png">FS2</channel>
+    <channel lang="en" xmltv_id="FXEast.us" site_id="456" logo="https://zap2it.tmsimg.com/h5/NowShowing/73681/s73681_h5_aa.png">FX East</channel>
+    <channel lang="en" xmltv_id="FYIEast.us" site_id="255" logo="https://zap2it.tmsimg.com/h3/NowShowing/16834/s16834_h3_aa.png">FYI East</channel>
+    <channel lang="en" xmltv_id="GamePlus.ca" site_id="725" logo="https://zap2it.tmsimg.com/h5/NowShowing/89098/s89098_h5_ba.png">Game+</channel>
+    <channel lang="en" xmltv_id="GameShowNetworkEast.us" site_id="361" logo="https://zap2it.tmsimg.com/h3/NowShowing/14909/s14909_h3_aa.png">Game Show Network East</channel>
+    <channel lang="en" xmltv_id="GolfChannelUS.us" site_id="721" logo="https://zap2it.tmsimg.com/h5/NowShowing/14899/s14899_h5_ba.png">Golf Channel US</channel>
+    <channel lang="en" xmltv_id="GoneViralMusic.bb" site_id="282" logo="https://zap2it.tmsimg.com/assets/s92068_h3_aa.png">Gone Viral Music</channel>
+    <channel lang="en" xmltv_id="GoneViralTV.bb" site_id="285" logo="https://zap2it.tmsimg.com/h5/NowShowing/75757/s75757_h5_aa.png">Gone Viral TV</channel>
+    <channel lang="en" xmltv_id="GoneViralVogue.bb" site_id="284" logo="https://zap2it.tmsimg.com/assets/s92065_h3_ba.png">Gone Viral Vogue</channel>
+    <channel lang="en" xmltv_id="GoneViralXtreme.bb" site_id="283" logo="https://zap2it.tmsimg.com/assets/s92067_h3_aa.png">Gone Viral X-treme</channel>
+    <channel lang="en" xmltv_id="Grit.us" site_id="357" logo="https://zap2it.tmsimg.com/h5/NowShowing/89922/s89922_h5_ba.png">Grit</channel>
+    <channel lang="en" xmltv_id="HBO2Latinoamerica.us" site_id="507" logo="https://zap2it.tmsimg.com/h3/NowShowing/68140/s68140_h3_aa.png">HBO 2 Latinoamérica</channel>
+    <channel lang="en" xmltv_id="HBOCaribbean.us" site_id="501" logo="https://zap2it.tmsimg.com/h5/NowShowing/10240/s10240_h5_aa.png">HBO Caribbean</channel>
+    <channel lang="en" xmltv_id="HBOEast.us" site_id="506" logo="https://zap2it.tmsimg.com/h5/NowShowing/10240/s10240_h5_aa.png">HBO East</channel>
+    <channel lang="en" xmltv_id="HBOFamilyLatinoamerica.us" site_id="502" logo="https://zap2it.tmsimg.com/h3/NowShowing/34879/s34879_h3_aa.png">HBO Family Latinoamérica</channel>
+    <channel lang="en" xmltv_id="HBOMundiLatinoamerica.us" site_id="540" logo="https://zap2it.tmsimg.com/h5/NowShowing/70081/s70081_h5_aa.png">HBO Mundi Latinoamérica</channel>
+    <channel lang="en" xmltv_id="HBOMundiWest.us" site_id="545" logo="https://zap2it.tmsimg.com/h5/NowShowing/70081/s70081_h5_aa.png">HBO Mundi West</channel>
+    <channel lang="en" xmltv_id="HBOPlusLatinoamerica.us" site_id="504" logo="https://zap2it.tmsimg.com/h5/NowShowing/34725/s34725_h5_ba.png">HBO + Latinoamérica</channel>
+    <channel lang="en" xmltv_id="HBOPopLatinoamerica.us" site_id="541" logo="https://zap2it.tmsimg.com/h3/NowShowing/68134/s68134_h3_aa.png">HBO Pop Latinoamérica</channel>
+    <channel lang="en" xmltv_id="HBOSignatureLatinoamerica.us" site_id="503" logo="https://zap2it.tmsimg.com/h4/NowShowing/80120/s80120_h4_ba.png">HBO Signature Latinoamérica</channel>
+    <channel lang="en" xmltv_id="HBOXtremeLatinoamerica.us" site_id="542" logo="https://zap2it.tmsimg.com/h5/NowShowing/80211/s80211_h5_aa.png">HBO Xtreme Latinoamérica</channel>
+    <channel lang="en" xmltv_id="HGTVEast.us" site_id="250" logo="https://zap2it.tmsimg.com/h3/NowShowing/14902/s14902_h3_aa.png">HGTV East</channel>
+    <channel lang="en" xmltv_id="HistoryEast.us" site_id="254" logo="https://zap2it.tmsimg.com/h4/NowShowing/14771/s14771_h4_ba.png">History East</channel>
+    <channel lang="en" xmltv_id="HLN.us" site_id="400" logo="https://zap2it.tmsimg.com/h5/NowShowing/10145/s10145_h5_aa.png">HLN</channel>
+    <channel lang="en" xmltv_id="HopeChannelNorthAmerica.us" site_id="658" logo="https://zap2it.tmsimg.com/h3/NowShowing/49266/s49266_h3_aa.png">Hope Channel North America</channel>
+    <channel lang="en" xmltv_id="ImpactNetwork.us" site_id="661" logo="https://zap2it.tmsimg.com/h5/NowShowing/71798/s71798_h5_aa.png">Impact Network</channel>
+    <channel lang="en" xmltv_id="InspirationTV.us" site_id="651">Inspiration TV</channel>
+    <channel lang="en" xmltv_id="InvestigationDiscoveryEast.us" site_id="265" logo="https://zap2it.tmsimg.com/h3/NowShowing/16615/s16615_h3_aa.png">Investigation Discovery East</channel>
+    <channel lang="en" xmltv_id="IONPlusEast.us" site_id="487" logo="https://zap2it.tmsimg.com/h3/NowShowing/55241/s55241_h3_aa.png">ION Plus East</channel>
+    <channel lang="en" xmltv_id="IONTVEast.us" site_id="465" logo="https://zap2it.tmsimg.com/h5/NowShowing/18633/s18633_h5_aa.png">ION TV East</channel>
+    <channel lang="en" xmltv_id="ISat.ar" site_id="286" logo="https://zap2it.tmsimg.com/h5/NowShowing/16497/s16497_h5_aa.png">I-Sat</channel>
+    <channel lang="en" xmltv_id="IslandLuckTV.bs" site_id="224" logo="https://zap2it.tmsimg.com/h3/NowShowing/101310/s101310_h3_aa.png">Island Luck TV</channel>
+    <channel lang="en" xmltv_id="IslandTV.ht" site_id="689">Island TV</channel>
+    <channel lang="en" xmltv_id="JCNChannel14.bs" site_id="214" logo="https://zap2it.tmsimg.com/h5/NowShowing/56653/s56653_h5_ba.png">JCN Channel 14</channel>
+    <channel lang="en" xmltv_id="JewelryTV.us" site_id="362" logo="https://zap2it.tmsimg.com/h5/NowShowing/65556/s65556_h5_aa.png">Jewelry TV</channel>
+    <channel lang="en" xmltv_id="JusticeCentralTV.us" site_id="415" logo="https://zap2it.tmsimg.com/h3/NowShowing/79670/s79670_h3_aa.png">Justice Central TV</channel>
+    <channel lang="en" xmltv_id="KAYUTV.us" site_id="216" logo="https://zap2it.tmsimg.com/h5/NowShowing/10212/s10212_h5_aa.png">FOX (KAYU) Spokane, WA</channel>
+    <channel lang="en" xmltv_id="KIROTV.us" site_id="217" logo="https://zap2it.tmsimg.com/h5/NowShowing/10098/s10098_h5_aa.png">CBS (KIRO) Seattle, WA</channel>
+    <channel lang="en" xmltv_id="KTLA.us" site_id="227" logo="https://zap2it.tmsimg.com/assets/s51307_h5_aa.png">KTLA Los Angeles, CA</channel>
+    <channel lang="en" xmltv_id="KTVX.us" site_id="218" logo="https://zap2it.tmsimg.com/h3/NowShowing/10003/s10003_h3_aa.png">ABC (KTVX) Salt Lake City, UT</channel>
+    <channel lang="en" xmltv_id="LawCrime.us" site_id="416" logo="https://zap2it.tmsimg.com/h5/NowShowing/109553/s109553_h5_aa.png">Law &amp; Crime</channel>
+    <channel lang="en" xmltv_id="LifetimeEast.us" site_id="470" logo="https://zap2it.tmsimg.com/h3/NowShowing/10918/s10918_h3_aa.png">Lifetime East</channel>
+    <channel lang="en" xmltv_id="LifetimeMoviesEast.us" site_id="472" logo="https://zap2it.tmsimg.com/h4/NowShowing/18480/s18480_h4_aa.png">Lifetime Movies East</channel>
+    <channel lang="en" xmltv_id="LifetimeRealWomen.us" site_id="473" logo="https://zap2it.tmsimg.com/h5/NowShowing/29612/s29612_h5_aa.png">Lifetime Real Women</channel>
+    <channel lang="en" xmltv_id="MavTV.us" site_id="459" logo="https://zap2it.tmsimg.com/h5/NowShowing/45169/s45169_h5_aa.png">MavTV</channel>
+    <channel lang="en" xmltv_id="MeTV.us" site_id="359" logo="https://zap2it.tmsimg.com/h4/NowShowing/70436/s70436_h4_aa.png">Me TV</channel>
+    <channel lang="en" xmltv_id="MLBNetwork.us" site_id="728" logo="https://zap2it.tmsimg.com/h4/NowShowing/62079/s62079_h4_aa.png">MLB Network</channel>
+    <channel lang="en" xmltv_id="Movies.us" site_id="586" logo="https://zap2it.tmsimg.com/h5/NowShowing/81275/s81275_h5_aa.png">Movies!</channel>
+    <channel lang="en" xmltv_id="MSNBC.us" site_id="402" logo="https://zap2it.tmsimg.com/h5/NowShowing/16300/s16300_h5_aa.png">MSNBC</channel>
+    <channel lang="en" xmltv_id="MTV2East.us" site_id="374" logo="https://zap2it.tmsimg.com/h3/NowShowing/16361/s16361_h3_aa.png">MTV 2 East</channel>
+    <channel lang="en" xmltv_id="MTVEast.us" site_id="370" logo="https://zap2it.tmsimg.com/h5/NowShowing/10986/s10986_h5_aa.png">MTV East</channel>
+    <channel lang="en" xmltv_id="MyDestinationTV.us" site_id="276" logo="https://zap2it.tmsimg.com/h3/NowShowing/71303/s71303_h3_aa.png">My Destination TV</channel>
+    <channel lang="en" xmltv_id="NationalGeographicEast.us" site_id="256" logo="https://zap2it.tmsimg.com/h5/NowShowing/24959/s24959_h5_ba.png">National Geographic East</channel>
+    <channel lang="en" xmltv_id="NationalGeographicWild.us" site_id="273" logo="https://zap2it.tmsimg.com/assets/s67331_h3_ba.png">National Geographic Wild</channel>
+    <channel lang="en" xmltv_id="NBATV.us" site_id="730" logo="https://zap2it.tmsimg.com/h3/NowShowing/32281/s32281_h3_aa.png">NBA TV</channel>
+    <channel lang="en" xmltv_id="NBCSN.us" site_id="717" logo="https://zap2it.tmsimg.com/h3/NowShowing/15952/s15952_h3_aa.png">NBCSN</channel>
+    <channel lang="en" xmltv_id="NFLNetwork.us" site_id="711" logo="https://zap2it.tmsimg.com/h4/NowShowing/34710/s34710_h4_aa.png">NFL Network</channel>
+    <channel lang="en" xmltv_id="NickelodeonEast.us" site_id="303" logo="https://zap2it.tmsimg.com/h4/NowShowing/11006/s11006_h4_aa.png">Nickelodeon East</channel>
+    <channel lang="en" xmltv_id="NickMusicUS.us" site_id="377" logo="https://zap2it.tmsimg.com/h4/NowShowing/30418/s30418_h4_ba.png">NickMusic US</channel>
+    <channel lang="en" xmltv_id="OneAmericaNewsNetwork.us" site_id="406" logo="https://zap2it.tmsimg.com/h4/NowShowing/82542/s82542_h4_ba.png">One America News Network</channel>
+    <channel lang="en" xmltv_id="OneCaribbeanTV.us" site_id="382">One Caribbean TV</channel>
+    <channel lang="en" xmltv_id="OprahWinfreyNetworkEast.us" site_id="475" logo="https://zap2it.tmsimg.com/assets/s114456_h3_aa.png">Oprah Winfrey Network East</channel>
+    <channel lang="en" xmltv_id="OurTV.bs" site_id="212" logo="https://zap2it.tmsimg.com/h3/NowShowing/50522/s50522_h3_aa.png">Our TV</channel>
+    <channel lang="en" xmltv_id="OutdoorChannel.us" site_id="708" logo="https://zap2it.tmsimg.com/h5/NowShowing/14776/s14776_h5_aa.png">Outdoor Channel</channel>
+    <channel lang="en" xmltv_id="ParamountNetworkEast.us" site_id="453" logo="https://zap2it.tmsimg.com/h5/NowShowing/11163/s11163_h5_aa.png">Paramount Network East</channel>
+    <channel lang="en" xmltv_id="PBSKids.us" site_id="305" logo="https://zap2it.tmsimg.com/h4/NowShowing/101364/s101364_h4_ba.png">PBS Kids</channel>
+    <channel lang="en" xmltv_id="PursuitChannel.us" site_id="718" logo="https://zap2it.tmsimg.com/h5/NowShowing/60111/s60111_h5_aa.png">Pursuit Channel</channel>
+    <channel lang="en" xmltv_id="QuestUK.us" site_id="720" logo="https://www.rev.bs/wp-content/uploads/2020/06/quest-logo.png">Quest UK</channel>
+    <channel lang="en" xmltv_id="RaiItaliaNordAmerica.it" site_id="682" logo="https://zap2it.tmsimg.com/h3/NowShowing/17250/s17250_h3_aa.png">Rai Italia Nord America</channel>
+    <channel lang="en" xmltv_id="RecipeTV.us" site_id="249" logo="https://zap2it.tmsimg.com/h5/NowShowing/71294/s71294_h5_aa.png">Recipe TV</channel>
+    <channel lang="en" xmltv_id="Revolt.us" site_id="340" logo="https://zap2it.tmsimg.com/h3/NowShowing/83097/s83097_h3_aa.png">Revolt</channel>
+    <channel lang="en" xmltv_id="SECNetwork.us" site_id="724" logo="https://zap2it.tmsimg.com/h3/NowShowing/89535/s89535_h3_aa.png">SEC Network</channel>
+    <channel lang="en" xmltv_id="SpaceMexico.ar" site_id="231" logo="https://zap2it.tmsimg.com/h4/NowShowing/16499/s16499_h4_aa.png">Space México</channel>
+    <channel lang="en" xmltv_id="SportsMax.jm" site_id="735" logo="https://zap2it.tmsimg.com/h3/NowShowing/49559/s49559_h3_aa.png">SportsMax</channel>
+    <channel lang="en" xmltv_id="SportsMax2.jm" site_id="745" logo="https://zap2it.tmsimg.com/h3/NowShowing/82672/s82672_h3_aa.png">SportsMax 2</channel>
+    <channel lang="en" xmltv_id="StarAction.us" site_id="558" logo="https://www.rev.bs/wp-content/uploads/2021/02/star-premium-trans.png">Star Action</channel>
+    <channel lang="en" xmltv_id="StarCinema.us" site_id="564" logo="https://www.rev.bs/wp-content/uploads/2021/02/star-premium-trans.png">Star Cinema</channel>
+    <channel lang="en" xmltv_id="StarClassics.us" site_id="563" logo="https://zap2it.tmsimg.com/h3/NowShowing/44028/s44028_h3_aa.png">Star Classics</channel>
+    <channel lang="en" xmltv_id="StarComedy.us" site_id="560" logo="https://www.rev.bs/wp-content/uploads/2021/02/star-premium-trans.png">Star Comedy</channel>
+    <channel lang="en" xmltv_id="StarFun.us" site_id="561" logo="https://www.rev.bs/wp-content/uploads/2021/02/star-premium-trans.png">Star Fun</channel>
+    <channel lang="en" xmltv_id="StarHits.us" site_id="557" logo="https://www.rev.bs/wp-content/uploads/2021/02/star-premium-trans.png">Star Hits</channel>
+    <channel lang="en" xmltv_id="StarSeries.us" site_id="555" logo="https://zap2it.tmsimg.com/h3/NowShowing/18812/s18812_h3_aa.png">Star Series</channel>
+    <channel lang="en" xmltv_id="SyfyEast.us" site_id="222" logo="https://zap2it.tmsimg.com/assets/s56727_h3_aa.png">Syfy East</channel>
+    <channel lang="en" xmltv_id="TBNUS.us" site_id="650" logo="https://zap2it.tmsimg.com/h3/NowShowing/14767/s14767_h3_aa.png">TBN US</channel>
+    <channel lang="en" xmltv_id="TBSEast.us" site_id="225" logo="https://zap2it.tmsimg.com/h5/NowShowing/75073/s75073_h5_aa.png">TBS East</channel>
+    <channel lang="en" xmltv_id="TCMAmericaLatina.us" site_id="492" logo="https://zap2it.tmsimg.com/h3/NowShowing/19246/s19246_h3_ba.png">TCM América Latina</channel>
+    <channel lang="en" xmltv_id="TeenNickEast.us" site_id="315" logo="https://zap2it.tmsimg.com/h3/NowShowing/59036/s59036_h3_aa.png">TeenNick East</channel>
+    <channel lang="en" xmltv_id="TelePacific.ht" site_id="384">Tele Pacific</channel>
+    <channel lang="en" xmltv_id="TempoNetworks.us" site_id="381" logo="https://zap2it.tmsimg.com/h3/NowShowing/49948/s49948_h3_aa.png">Tempo Networks</channel>
+    <channel lang="en" xmltv_id="TheAfricaChannel.us" site_id="269" logo="https://zap2it.tmsimg.com/h5/NowShowing/47472/s47472_h5_ba.png">The Africa Channel</channel>
+    <channel lang="en" xmltv_id="TheParliamentaryChannel.bs" site_id="420" logo="https://www.rev.bs/wp-content/uploads/2020/06/Coat_of_arms_of_the_Bahamas.svg_-245x300.png">The Parliamentary Channel</channel>
+    <channel lang="en" xmltv_id="TheWeatherChannel.us" site_id="411" logo="https://zap2it.tmsimg.com/h3/NowShowing/11187/s11187_h3_aa.png">The Weather Channel</channel>
+    <channel lang="en" xmltv_id="TheWordNetwork.us" site_id="652" logo="https://zap2it.tmsimg.com/h4/NowShowing/21781/s21781_h4_ba.png">The Word Network</channel>
+    <channel lang="en" xmltv_id="TLCEast.us" site_id="266" logo="https://zap2it.tmsimg.com/h3/NowShowing/73824/s73824_h3_aa.png">TLC East</channel>
+    <channel lang="en" xmltv_id="TNTEast.us" site_id="450" logo="https://zap2it.tmsimg.com/assets/s71148_h4_ba.png">TNT East</channel>
+    <channel lang="en" xmltv_id="TravelChannelEast.us" site_id="261" logo="https://zap2it.tmsimg.com/h3/NowShowing/11180/s11180_h3_aa.png">Travel Channel East</channel>
+    <channel lang="en" xmltv_id="TreehouseTV.ca" site_id="309" logo="https://zap2it.tmsimg.com/h3/NowShowing/17639/s17639_h3_aa.png">Treehouse TV</channel>
+    <channel lang="en" xmltv_id="TruTVEast.us" site_id="414" logo="https://zap2it.tmsimg.com/h4/NowShowing/16496/s16496_h4_aa.png">Tru TV East</channel>
+    <channel lang="en" xmltv_id="TSN1.ca" site_id="715" logo="https://zap2it.tmsimg.com/assets/s34313_h3_aa.png">TSN 1</channel>
+    <channel lang="en" xmltv_id="TV5MondeEtatsUnis.fr" site_id="677" logo="https://zap2it.tmsimg.com/h3/NowShowing/16422/s16422_h3_aa.png">TV5Monde États-Unis</channel>
+    <channel lang="en" xmltv_id="TVO.ca" site_id="306" logo="https://zap2it.tmsimg.com/h4/NowShowing/10119/s10119_h4_aa.png">TVO</channel>
+    <channel lang="en" xmltv_id="TVOne.us" site_id="366" logo="https://zap2it.tmsimg.com/h5/NowShowing/35513/s35513_h5_aa.png">TV One</channel>
+    <channel lang="en" xmltv_id="UnivisionEste.us" site_id="679" logo="https://zap2it.tmsimg.com/h5/NowShowing/11118/s11118_h5_ba.png">Univisión Este</channel>
+    <channel lang="en" xmltv_id="VH1East.us" site_id="372" logo="https://zap2it.tmsimg.com/assets/s42567_h3_aa.png">VH1 East</channel>
+    <channel lang="en" xmltv_id="ViceEast.us" site_id="341" logo="https://zap2it.tmsimg.com/h3/NowShowing/18822/s18822_h3_aa.png">Vice East</channel>
+    <channel lang="en" xmltv_id="WarnerChannelPanregional.us" site_id="221" logo="https://zap2it.tmsimg.com/h3/NowShowing/16213/s16213_h3_aa.png">Warner Channel Panregional</channel>
+    <channel lang="en" xmltv_id="WFORTV.us" site_id="209" logo="https://zap2it.tmsimg.com/h5/NowShowing/10098/s10098_h5_aa.png">CBS (WFOR) Miami, FL</channel>
+    <channel lang="en" xmltv_id="WGNTV.us" site_id="229" logo="https://zap2it.tmsimg.com/h3/NowShowing/11474/s11474_h3_aa.png">WGN-TV</channel>
+    <channel lang="en" xmltv_id="WPBT.us" site_id="213" logo="https://zap2it.tmsimg.com/h5/NowShowing/11039/s11039_h5_aa.png">PBS (WPBT) Miami, FL</channel>
+    <channel lang="en" xmltv_id="WPIXTV.us" site_id="226" logo="https://zap2it.tmsimg.com/h5/NowShowing/11779/s11779_h5_aa.png">WPIX-TV</channel>
+    <channel lang="en" xmltv_id="WPLG.us" site_id="210" logo="https://zap2it.tmsimg.com/h3/NowShowing/10003/s10003_h3_aa.png">ABC (WPLG) Miami, FL</channel>
+    <channel lang="en" xmltv_id="WPTVTV.us" site_id="215" logo="https://zap2it.tmsimg.com/h5/NowShowing/10991/s10991_h5_aa.png">NBC (WPTV) West Palm Beach, FL</channel>
+    <channel lang="en" xmltv_id="WSVN.us" site_id="207" logo="https://zap2it.tmsimg.com/h4/NowShowing/10212/s10212_h4_ba.png">FOX (WSVN) Miami, FL</channel>
+    <channel lang="en" xmltv_id="WTVJ.us" site_id="206" logo="https://zap2it.tmsimg.com/assets/s28717_h5_aa.png">NBC (WTVJ) Miami, FL</channel>
+    <channel lang="en" xmltv_id="WWORTV.us" site_id="228" logo="https://zap2it.tmsimg.com/h5/NowShowing/51307/s51307_h5_aa.png">MyNetworkTV (WWOR) New York, NY</channel>
+    <channel lang="en" xmltv_id="YTV.ca" site_id="307" logo="https://zap2it.tmsimg.com/h3/NowShowing/12045/s12045_h3_aa.png">YTV</channel>
+    <channel lang="en" xmltv_id="ZNSTV.bs" site_id="211" logo="https://zap2it.tmsimg.com/h3/NowShowing/36504/s36504_h3_aa.png">ZNS TV</channel>
   </channels>
 </site>

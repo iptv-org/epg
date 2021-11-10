@@ -15,18 +15,8 @@ module.exports = {
   url: function ({ date }) {
     return endpoint.replace('$date', date.format('YYYY-MM-DD')).replace('$index', 0)
   },
-  logo: async function ({ channel }) {
-    const html = await axios
-      .get('https://www.rev.bs/tv-guide')
-      .then(r => r.data)
-      .catch(console.log)
-    const $ = cheerio.load(html)
-    const script = $('body > script:nth-child(2)').html()
-    let channels = script.match(/Rev.TVGuide.channels = (.*);/i)[1] || ''
-    channels = JSON.parse(channels)
-    if (!channels[channel.site_id]) return null
-
-    return `https:${channels[channel.site_id].channel_image}`
+  logo({ channel }) {
+    return channel.logo
   },
   parser: async function ({ content, channel, date }) {
     const programs = []
