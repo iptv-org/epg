@@ -12,7 +12,9 @@ dayjs.extend(utc)
 module.exports = {
   site: 'elcinema.com',
   url({ channel }) {
-    return `https://elcinema.com/tvguide/${channel.site_id}/`
+    const lang = channel.lang === 'en' ? 'en/' : '/'
+
+    return `https://elcinema.com/${lang}tvguide/${channel.site_id}/`
   },
   logo({ content }) {
     const dom = new JSDOM(content)
@@ -116,7 +118,7 @@ function parseDescription(item) {
     }
   ).textContent
 
-  return excerpt.replace('...اقرأ المزيد', '') + desc
+  return excerpt.replace('...اقرأ المزيد', '').replace('...Read more', '') + desc
 }
 
 function parseItems(content, date) {
