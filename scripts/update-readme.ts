@@ -68,13 +68,7 @@ async function main() {
           emptyGuides
         }
 
-        if (!code.includes('-')) {
-          const country: Country | undefined = countries[code]
-          if (!country) return
-          guide.flag = country.flag
-          guide.name = country.name
-          guidesByCountry.push(guide)
-        } else if (code.startsWith('us-')) {
+        if (code.startsWith('us-')) {
           const [_, stateCode] = code.split('-')
           const state: State | undefined = countries['us']
             ? countries['us'].states[stateCode]
@@ -90,6 +84,13 @@ async function main() {
           if (!province) return
           guide.name = province.name
           guidesByCanadaProvince.push(guide)
+        } else {
+          const [countryCode] = code.split('-')
+          const country: Country | undefined = countries[countryCode]
+          if (!country) return
+          guide.flag = country.flag
+          guide.name = country.name
+          guidesByCountry.push(guide)
         }
       })
 
