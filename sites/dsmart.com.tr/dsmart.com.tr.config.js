@@ -9,21 +9,21 @@ module.exports = {
   },
   site: 'dsmart.com.tr',
   url({ date, channel }) {
-    return `https://www.dsmart.com.tr/api/v1/public/epg/schedules?page=${
-      channel.site_id
-    }&limit=1&day=${date.format('YYYY-MM-DD')}`
-  },
-  logo({ content }) {
-    const data = JSON.parse(content)
-    if (!data || !data.data.channels.length) return null
-    const logoId = data.data.channels[0].logo
+    const [page] = channel.site_id.split('#')
 
-    return logoId ? `https://www.dsmart.com.tr/epg/images/0x50/${logoId}` : null
+    return `https://www.dsmart.com.tr/api/v1/public/epg/schedules?page=${page}&limit=1&day=${date.format(
+      'YYYY-MM-DD'
+    )}`
+  },
+  logo({ content, channel }) {
+    const data = parseContent(content, channel)
+
+    return data && data.logo ? `https://www.dsmart.com.tr/epg/images/0x50/${data.logo}` : null
   },
   parser: function ({ content, channel, date }) {
     let offset = -1
     let programs = []
-    const items = parseItems(content)
+    const items = parseItems(content, channel)
     items.forEach(item => {
       let start = parseStart(item, date)
       if (offset === -1 && start.hour() > 18) start = start.subtract(1, 'd')
@@ -52,9 +52,16 @@ function parseStop(item, date) {
   return dayjs.utc(item.end_date).set('date', date.get('date'))
 }
 
-function parseItems(content) {
+function parseContent(content, channel) {
   const data = JSON.parse(content)
-  if (!data || !data.data.channels.length) return []
+  if (!data || !data.data || !Array.isArray(data.data.channels)) return null
+  const [_, channelId] = channel.site_id.split('#')
 
-  return data.data.channels[0].schedule
+  return data.data.channels.find(i => i.ch_no == channelId)
+}
+
+function parseItems(content, channel) {
+  const data = parseContent(content, channel)
+
+  return data ? data.schedule : []
 }
