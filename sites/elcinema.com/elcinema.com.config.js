@@ -1,9 +1,9 @@
-const jsdom = require('jsdom')
-const { JSDOM } = jsdom
+const cheerio = require('cheerio')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
+require('dayjs/locale/ar')
 
 dayjs.extend(customParseFormat)
 dayjs.extend(timezone)
@@ -17,31 +17,25 @@ module.exports = {
     return `https://elcinema.com/${lang}tvguide/${channel.site_id}/`
   },
   logo({ content }) {
-    const dom = new JSDOM(content)
-    const img = dom.window.document.querySelector('.intro-box > .row > div.columns.large-2 > img')
+    const $ = cheerio.load(content)
+    const imgSrc = $('.intro-box > .row > div.columns.large-2 > img').attr('src')
 
-    return img.src || null
+    return imgSrc || null
   },
-  parser({ content, date }) {
+  parser({ content, channel, date }) {
     const programs = []
-
-    const items = parseItems(content, date)
+    const items = parseItems(content, channel, date)
     items.forEach(item => {
-      const title = parseTitle(item)
-      const description = parseDescription(item)
-      const category = parseCategory(item)
-      const icon = parseIcon(item)
       const start = parseStart(item, date)
       const duration = parseDuration(item)
       const stop = start.add(duration, 'm')
-
       programs.push({
-        title,
-        description,
-        category,
-        icon,
-        start,
-        stop
+        title: parseTitle(item),
+        description: parseDescription(item),
+        category: parseCategory(item),
+        icon: parseIcon(item),
+        start: start.toJSON(),
+        stop: stop.toJSON()
       })
     })
 
@@ -50,41 +44,36 @@ module.exports = {
 }
 
 function parseIcon(item) {
-  const img =
-    item.querySelector('.row > div.columns.small-3.large-1 > a > img') ||
-    item.querySelector('.row > div.columns.small-5.large-1 > img')
+  const $ = cheerio.load(item)
+  const imgSrc =
+    $('.row > div.columns.small-3.large-1 > a > img').data('src') ||
+    $('.row > div.columns.small-5.large-1 > img').data('src')
 
-  return img.dataset.src || null
+  return imgSrc || null
 }
 
 function parseCategory(item) {
-  const category = (
-    item.querySelector('.row > div.columns.small-6.large-3 > ul > li:nth-child(2)') || {
-      textContent: ''
-    }
-  ).textContent
+  const $ = cheerio.load(item)
+  const category = $('.row > div.columns.small-6.large-3 > ul > li:nth-child(2)').text()
 
-  return category.replace(/\(\d+\)/, '').trim()
+  return category.replace(/\(\d+\)/, '').trim() || null
 }
 
 function parseDuration(item) {
-  const duration = (
-    item.querySelector('.row > div.columns.small-3.large-2 > ul > li:nth-child(2) > span') ||
-    item.querySelector('.row > div.columns.small-7.large-11 > ul > li:nth-child(2) > span') || {
-      textContent: ''
-    }
-  ).textContent
+  const $ = cheerio.load(item)
+  const duration =
+    $('.row > div.columns.small-3.large-2 > ul > li:nth-child(2) > span').text() ||
+    $('.row > div.columns.small-7.large-11 > ul > li:nth-child(2) > span').text()
 
-  return duration.replace(/\D/g, '')
+  return duration.replace(/\D/g, '') || ''
 }
 
 function parseStart(item, initDate) {
-  let time = (
-    item.querySelector('.row > div.columns.small-3.large-2 > ul > li:nth-child(1)') ||
-    item.querySelector('.row > div.columns.small-7.large-11 > ul > li:nth-child(2)') || {
-      textContent: ''
-    }
-  ).textContent
+  const $ = cheerio.load(item)
+  let time =
+    $('.row > div.columns.small-3.large-2 > ul > li:nth-child(1)').text() ||
+    $('.row > div.columns.small-7.large-11 > ul > li:nth-child(2)').text() ||
+    ''
 
   time = time
     .replace(/\[.*\]/, '')
@@ -94,37 +83,36 @@ function parseStart(item, initDate) {
 
   time = `${initDate.format('DD/MM/YYYY')} ${time}`
 
-  return dayjs.tz(time, 'DD/MM/YYYY H:mm A', 'Africa/Algiers')
+  return dayjs.tz(time, 'DD/MM/YYYY H:mm A', 'Africa/Cairo')
 }
 
 function parseTitle(item) {
+  const $ = cheerio.load(item)
+
   return (
-    item.querySelector('.row > div.columns.small-6.large-3 > ul > li:nth-child(1) > a') ||
-    item.querySelector('.row > div.columns.small-7.large-11 > ul > li:nth-child(1)') || {
-      textContent: ''
-    }
-  ).textContent
+    $('.row > div.columns.small-6.large-3 > ul > li:nth-child(1) > a').text() ||
+    $('.row > div.columns.small-7.large-11 > ul > li:nth-child(1)').text() ||
+    null
+  )
 }
 
 function parseDescription(item) {
-  const excerpt = (
-    item.querySelector('.row > div.columns.small-12.large-6 > ul > li:nth-child(3)') || {
-      textContent: ''
-    }
-  ).textContent
-  const desc = (
-    item.querySelector('.row > div.columns.small-12.large-6 > ul > li:nth-child(3) > .hide') || {
-      textContent: ''
-    }
-  ).textContent
+  const $ = cheerio.load(item)
+  const excerpt = $('.row > div.columns.small-12.large-6 > ul > li:nth-child(3)').text() || ''
 
-  return excerpt.replace('...اقرأ المزيد', '').replace('...Read more', '') + desc
+  return excerpt.replace('...اقرأ المزيد', '').replace('...Read more', '')
 }
 
-function parseItems(content, date) {
-  const dom = new JSDOM(content)
-  const diff = date.diff(dayjs().startOf('d'), 'd')
-  const listNum = (diff + 1) * 2
+function parseItems(content, channel, date) {
+  const $ = cheerio.load(content)
+  const dateString = date.locale(channel.lang).format('dddd D MMMM')
+  const list = $('.dates')
+    .filter((i, el) => {
+      return $(el).text().trim() === dateString
+    })
+    .first()
+    .parent()
+    .next()
 
-  return dom.window.document.querySelectorAll(`.tvgrid > div:nth-child(${listNum}) > .padded-half`)
+  return $('.padded-half', list).toArray()
 }
