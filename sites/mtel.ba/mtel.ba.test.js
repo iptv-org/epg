@@ -32,7 +32,7 @@ it('can get logo url', () => {
   )
 })
 
-fit('can parse response', () => {
+it('can parse response', () => {
   const result = parser({ date, channel, content })
   expect(result).toMatchObject([
     {
