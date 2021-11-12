@@ -1,6 +1,4 @@
 const FormData = require('form-data')
-const jsdom = require('jsdom')
-const { JSDOM } = jsdom
 const axios = require('axios')
 const cheerio = require('cheerio')
 const dayjs = require('dayjs')
@@ -14,6 +12,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'mncvision.id',
+  url: `https://mncvision.id/schedule/table`,
   request: {
     method: 'POST',
     data: function ({ channel, date }) {
@@ -34,20 +33,18 @@ module.exports = {
   logo({ channel }) {
     return `https://www.mncvision.id/userfiles/image/channel/channel_${channel.site_id}.png`
   },
-  url({ channel }) {
-    return `https://www.mncvision.id/schedule/table`
-  },
-  parser({ content, date }) {
+  async parser({ content, date }) {
     const programs = []
     const items = parseItems(content)
-    items.forEach(item => {
+    for (const item of items) {
       const title = parseTitle(item)
       const start = parseStart(item, date)
       const duration = parseDuration(item)
       const stop = start.add(duration, 'm')
+      const description = await loadDescription(item)
 
-      programs.push({ title, start, stop })
-    })
+      programs.push({ title, description, start: start.toJSON(), stop: stop.toJSON() })
+    }
 
     return programs
   },
@@ -73,8 +70,23 @@ module.exports = {
   }
 }
 
+async function loadDescription(item) {
+  const $item = cheerio.load(item)
+  const progUrl = $item('a').attr('href')
+  if (!progUrl) return null
+  const data = await axios
+    .get(progUrl)
+    .then(r => r.data)
+    .catch(console.log)
+  if (!data) return null
+  const $page = cheerio.load(data)
+
+  return $page('.synopsis').text().trim()
+}
+
 function parseDuration(item) {
-  let duration = (item.querySelector('td:nth-child(3)') || { textContent: '' }).textContent
+  const $ = cheerio.load(item)
+  let duration = $('td:nth-child(3)').text()
   const match = duration.match(/(\d{2}):(\d{2})/)
   const hours = parseInt(match[1])
   const minutes = parseInt(match[2])
@@ -83,18 +95,21 @@ function parseDuration(item) {
 }
 
 function parseStart(item, date) {
-  let time = (item.querySelector('td:nth-child(1)') || { textContent: '' }).textContent
+  const $ = cheerio.load(item)
+  let time = $('td:nth-child(1)').text()
   time = `${date.format('DD/MM/YYYY')} ${time}`
 
   return dayjs.tz(time, 'DD/MM/YYYY HH:mm', 'Asia/Jakarta')
 }
 
 function parseTitle(item) {
-  return (item.querySelector('td:nth-child(2) > a') || { textContent: '' }).textContent
+  const $ = cheerio.load(item)
+
+  return $('td:nth-child(2) > a').text()
 }
 
 function parseItems(content) {
-  const dom = new JSDOM(content)
+  const $ = cheerio.load(content)
 
-  return dom.window.document.querySelectorAll('tr[valign="top"]')
+  return $('tr[valign="top"]').toArray()
 }
