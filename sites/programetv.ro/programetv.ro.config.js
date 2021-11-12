@@ -22,7 +22,7 @@ module.exports = {
   logo({ content }) {
     const data = parseContent(content)
 
-    return data ? data.station.icon : null
+    return data && data.station ? data.station.icon : null
   },
   parser: function ({ content }) {
     let programs = []
