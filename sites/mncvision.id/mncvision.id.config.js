@@ -1,6 +1,8 @@
 const FormData = require('form-data')
 const jsdom = require('jsdom')
 const { JSDOM } = jsdom
+const axios = require('axios')
+const cheerio = require('cheerio')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
@@ -48,6 +50,26 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels() {
+    const data = await axios
+      .get('https://www.mncvision.id/schedule')
+      .then(response => response.data)
+      .catch(console.log)
+
+    const $ = cheerio.load(data)
+    const items = $('select[name="fchannel"] option').toArray()
+    const channels = items.map(item => {
+      const $item = cheerio.load(item)
+
+      return {
+        lang: 'id',
+        site_id: $item('*').attr('value'),
+        name: $item('*').text()
+      }
+    })
+
+    return channels
   }
 }
 
