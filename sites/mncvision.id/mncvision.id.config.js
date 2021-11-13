@@ -43,7 +43,12 @@ module.exports = {
       const stop = start.add(duration, 'm')
       const description = await loadDescription(item)
 
-      programs.push({ title, description, start: start.toJSON(), stop: stop.toJSON() })
+      programs.push({
+        title,
+        description,
+        start: start.toJSON(),
+        stop: stop.toJSON()
+      })
     }
 
     return programs
@@ -80,8 +85,10 @@ async function loadDescription(item) {
     .catch(console.log)
   if (!data) return null
   const $page = cheerio.load(data)
+  const description = $page('.synopsis').text().trim()
+  if (description === '-') return null
 
-  return $page('.synopsis').text().trim()
+  return description
 }
 
 function parseDuration(item) {

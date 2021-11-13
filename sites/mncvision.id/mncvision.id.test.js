@@ -64,6 +64,30 @@ it('can parse response', done => {
     })
 })
 
+it('can parse response with empty description', done => {
+  axios.get.mockImplementation(() =>
+    Promise.resolve({
+      data: `<!DOCTYPE html><html lang="en"><head></head><body><blockquote class="bloquet synopsis"> - </blockquote></body></html>`
+    })
+  )
+
+  parser({ date, channel, content })
+    .then(result => {
+      expect(result).toMatchObject([
+        {
+          start: '2021-11-11T17:00:00.000Z',
+          stop: '2021-11-11T18:00:00.000Z',
+          title: 'African Wild S1: Seals',
+          description: null
+        }
+      ])
+      done()
+    })
+    .catch(error => {
+      done(error)
+    })
+})
+
 it('can handle empty guide', done => {
   parser({
     date,
