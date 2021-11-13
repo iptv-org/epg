@@ -46,6 +46,7 @@ module.exports = {
 
 function parseContent(content, channel) {
   const [_, site_id] = channel.site_id.split('#')
+  if (!content) return null
   const data = JSON.parse(content)
   if (!data || !data.channels || !data.channels.length) return null
 
