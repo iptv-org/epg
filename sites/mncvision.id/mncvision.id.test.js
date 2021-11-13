@@ -1,3 +1,4 @@
+// node ./scripts/channels.js --config=./sites/mncvision.id/mncvision.id.config.js --output=./sites/mncvision.id/mncvision.id_id.channels.xml
 // npx epg-grabber --config=sites/mncvision.id/mncvision.id.config.js --channels=sites/mncvision.id/mncvision.id_id.channels.xml --output=.gh-pages/guides/id/mncvision.id.epg.xml --days=2
 
 const { parser, url, request, logo } = require('./mncvision.id.config.js')
