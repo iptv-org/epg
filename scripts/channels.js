@@ -17,6 +17,12 @@ async function main() {
   if (isPromise(channels)) {
     channels = await channels
   }
+  channels = channels.map(channel => {
+    if (!channel.xmltv_id) {
+      channel.xmltv_id = channel.name
+    }
+    return channel
+  })
   const xml = json2xml(channels, config.site)
 
   const dir = path.parse(options.config).dir
