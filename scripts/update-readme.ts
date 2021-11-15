@@ -139,7 +139,6 @@ function generateTable(guides: Guide[], header: string[]) {
     const rowspan = root && size > 1 ? ` rowspan="${size}"` : ''
     let status = '🟢'
     if (guide.emptyGuides === guide.channelCount) status = '🔴'
-    else if (guide.emptyGuides > 0) status = '🟡'
     const cell1 = root ? `<td align="left" valign="top" nowrap${rowspan}>${name}</td>` : ''
     output += `\t\t<tr>${cell1}<td align="right" nowrap>${guide.channelCount}</td><td align="left" nowrap><code>${guide.url}</code></td><td align="center">${status}</td></tr>\n`
   }
