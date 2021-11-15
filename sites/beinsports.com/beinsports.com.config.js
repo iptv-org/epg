@@ -7,6 +7,7 @@ dayjs.extend(utc)
 dayjs.extend(customParseFormat)
 
 module.exports = {
+  ignore: true, // INFO: guide on the site is empty
   request: {
     timeout: 30000
   },
