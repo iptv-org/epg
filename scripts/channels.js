@@ -6,6 +6,7 @@ const { json2xml } = require('./utils')
 const program = new Command()
 program
   .requiredOption('-c, --config <config>', 'Config file')
+  .option('-s, --set [args...]', 'Set custom arguments')
   .option('-o, --output <output>', 'Output file')
   .parse(process.argv)
 
@@ -13,7 +14,12 @@ const options = program.opts()
 
 async function main() {
   const config = require(path.resolve(options.config))
-  let channels = config.channels()
+  const args = {}
+  options.set.forEach(arg => {
+    const [key, value] = arg.split(':')
+    args[key] = value
+  })
+  let channels = config.channels(args)
   if (isPromise(channels)) {
     channels = await channels
   }
