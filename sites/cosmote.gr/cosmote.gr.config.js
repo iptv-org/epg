@@ -9,7 +9,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   request: {
-    timeout: 10000
+    timeout: 30000
   },
   site: 'cosmote.gr',
   url: function ({ date, channel }) {
