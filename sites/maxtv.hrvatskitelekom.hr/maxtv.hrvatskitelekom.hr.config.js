@@ -22,7 +22,7 @@ module.exports = {
     const programs = []
     const items = parseItems(content, channel)
     items.forEach(item => {
-      if (item.showId === -1) return
+      if (item.showId == -1) return
       programs.push({
         title: item.title,
         category: item.category,
