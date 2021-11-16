@@ -33,7 +33,8 @@ type Guide = {
   flag: string
   url: string
   channelCount: number
-  emptyGuides: number
+  programCount: number
+  errorCount: number
 }
 
 async function main() {
@@ -46,26 +47,23 @@ async function main() {
       const guidesByCanadaProvince: Guide[] = []
       files.forEach((filename: string) => {
         console.log(`Loading '${filename}'...`)
-        const matches: string[] = filename.match(/\.gh\-pages\/guides\/(.*)\/.*/i) || []
-        const code: string | undefined = matches[1]
-        if (code === undefined) return
+        const [_, code, site]: string[] = filename.match(
+          /\.gh\-pages\/guides\/(.*)\/(.*)\.epg\.xml/i
+        ) || ['', '', '']
+        if (!code || !site) return
 
-        const xml = file.read(filename)
-        let epg: EPG = parser.parse(xml)
-        let emptyGuides = 0
-        if (!epg.channels.length) return
-        epg.channels.forEach((channel: Channel) => {
-          const showCount = epg.programs.filter(
-            (program: Program) => program.channel === channel.id
-          ).length
-          if (showCount === 0) emptyGuides++
-        })
+        const xml: string = file.read(filename)
+        const epg: EPG = parser.parse(xml)
+
+        const log = file.read(`logs/${site}_${code}.log`)
+        const errorCount = (log.match(/ERROR/gi) || []).length
 
         const guide: Guide = {
           flag: '',
           url: filename.replace('.gh-pages', 'https://iptv-org.github.io/epg'),
           channelCount: epg.channels.length,
-          emptyGuides
+          programCount: epg.programs.length,
+          errorCount
         }
 
         if (code.startsWith('us-')) {
@@ -138,8 +136,8 @@ function generateTable(guides: Guide[], header: string[]) {
     let root = output.indexOf(name) === -1
     const rowspan = root && size > 1 ? ` rowspan="${size}"` : ''
     let status = '🟢'
-    if (guide.emptyGuides === guide.channelCount) status = '🔴'
-    else if (guide.emptyGuides > 0) status = '🟡'
+    if (guide.programCount === 0) status = '🔴'
+    else if (guide.errorCount > 0) status = '🟡'
     const cell1 = root ? `<td align="left" valign="top" nowrap${rowspan}>${name}</td>` : ''
     output += `\t\t<tr>${cell1}<td align="right" nowrap>${guide.channelCount}</td><td align="left" nowrap><code>${guide.url}</code></td><td align="center">${status}</td></tr>\n`
   }
