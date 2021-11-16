@@ -1,9 +1,12 @@
 const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+
+dayjs.extend(utc)
 
 module.exports = {
   site: 'canalplus-reunion.com',
   url: function ({ channel, date }) {
-    const diff = date.diff(dayjs().startOf('d'), 'd')
+    const diff = date.diff(dayjs.utc().startOf('d'), 'd')
 
     return `https://service.canal-overseas.com/ott-frontend/vector/63001/channel/${channel.site_id}/events?filter.day=${diff}`
   },
