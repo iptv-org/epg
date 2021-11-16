@@ -10,6 +10,9 @@ dayjs.extend(timezone)
 dayjs.extend(utc)
 
 module.exports = {
+  request: {
+    timeout: 10000
+  },
   site: 'elcinema.com',
   url({ channel }) {
     const lang = channel.lang === 'en' ? 'en/' : '/'
