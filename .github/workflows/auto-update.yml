@@ -50,7 +50,7 @@ jobs:
         run: npm install
       - name: Create Matrix
         id: set-matrix
-        run: node scripts/create-matrix.js
+        run: node scripts/create-matrix.js --include=sites/andorradifusio.ad/**
   grab:
     runs-on: ubuntu-latest
     needs: create-matrix
