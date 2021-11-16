@@ -7,37 +7,43 @@ module.exports = {
     data: function ({ channel, date }) {
       return {
         channelList: [channel.site_id],
-        startDate: date.startOf('d').unix(),
-        endDate: date.endOf('d').unix()
+        startDate: date.unix(),
+        endDate: date.add(1, 'd').unix()
       }
     }
   },
-  url: function ({ date, channel }) {
-    return `https://player.maxtvtogo.tportal.hr:8082/OTT4Proxy/proxy/epg/shows`
-  },
-  logo: function ({ content }) {
-    const json = JSON.parse(content)
-    return json.data ? json.data[0].logo : null
-  },
-  parser: function ({ content }) {
-    const programs = []
-    const json = JSON.parse(content)
-    if (!json.data) return programs
+  url: 'https://player.maxtvtogo.tportal.hr:8082/OTT4Proxy/proxy/epg/shows',
+  logo: function ({ content, channel }) {
+    const data = parseContent(content, channel)
 
-    const items = json.data[0].shows
+    return data ? data.logo : null
+  },
+  parser: function ({ content, channel }) {
+    const programs = []
+    const items = parseItems(content, channel)
     items.forEach(item => {
-      if (item.title && item.startTime && item.endTime) {
-        const start = dayjs.unix(item.startTime)
-        const stop = dayjs.unix(item.endTime)
-        programs.push({
-          title: item.title,
-          category: item.category,
-          start: start.toString(),
-          stop: stop.toString()
-        })
-      }
+      if (item.showId === -1) return
+      programs.push({
+        title: item.title,
+        category: item.category,
+        start: dayjs.unix(item.startTime),
+        stop: dayjs.unix(item.endTime)
+      })
     })
 
     return programs
   }
+}
+
+function parseContent(content, channel) {
+  const json = JSON.parse(content)
+  if (!Array.isArray(json.data)) return null
+
+  return json.data.find(i => i.channelId == channel.site_id)
+}
+
+function parseItems(content, channel) {
+  const data = parseContent(content, channel)
+
+  return data && Array.isArray(data.shows) ? data.shows : []
 }
