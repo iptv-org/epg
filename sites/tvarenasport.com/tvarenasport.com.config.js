@@ -22,9 +22,9 @@ module.exports = {
     const items = parseItems(content, channel)
     items.forEach(item => {
       programs.push({
-        title: item.title,
+        title: item.title.trim(),
         category: item.league,
-        description: item.sport,
+        description: item.sport.trim(),
         start: dayjs(item.start),
         stop: dayjs(item.end)
       })
