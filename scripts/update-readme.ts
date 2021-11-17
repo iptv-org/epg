@@ -55,6 +55,8 @@ async function main() {
         const xml: string = file.read(filename)
         const epg: EPG = parser.parse(xml)
 
+        if (!epg.channels.length) return
+
         const log = file.read(`logs/${site}_${code}.log`)
         const errorCount = (log.match(/ERROR/gi) || []).length
 
