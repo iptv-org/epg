@@ -12,7 +12,7 @@ module.exports = {
   site: 'dishtv.in',
   url: `https://www.dishtv.in/WhatsonIndiaWebService.asmx/LoadPagginResultDataForProgram`,
   request: {
-    timeout: 10000,
+    timeout: 15000,
     method: 'POST',
     data({ channel, date }) {
       return {
