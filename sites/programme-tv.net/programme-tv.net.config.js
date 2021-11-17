@@ -14,7 +14,7 @@ module.exports = {
   site: 'programme-tv.net',
   delay: 5000,
   request: {
-    timeout: 15000
+    timeout: 20000
   },
   url: function ({ date, channel }) {
     return `https://www.programme-tv.net/programme/chaine/${date.format('YYYY-MM-DD')}/programme-${
