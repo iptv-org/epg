@@ -5,7 +5,7 @@ dayjs.extend(utc)
 
 module.exports = {
   request: {
-    timeout: 20000
+    timeout: 30000
   },
   site: 'tvtv.us',
   url: function ({ date, channel }) {
