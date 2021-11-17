@@ -19,6 +19,7 @@ module.exports = {
         hoursForMobile: 0
       }
     },
+    timeout: 10000,
     jar: null
   },
   url: function () {
