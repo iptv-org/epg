@@ -14,6 +14,7 @@ module.exports = {
   site: 'mncvision.id',
   url: `https://mncvision.id/schedule/table`,
   request: {
+    timeout: 10000,
     method: 'POST',
     data: function ({ channel, date }) {
       const formData = new FormData()
