@@ -6,7 +6,7 @@ const { json2xml } = require('./utils')
 const program = new Command()
 program
   .requiredOption('-c, --config <config>', 'Config file')
-  .option('-s, --set [args...]', 'Set custom arguments')
+  .option('-s, --set [args...]', 'Set custom arguments', [])
   .option('-o, --output <output>', 'Output file')
   .parse(process.argv)
 

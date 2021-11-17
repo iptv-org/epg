@@ -1,21 +1,10 @@
 const axios = require('axios')
 const dayjs = require('dayjs')
 
-const domains = {
-  rs: '',
-  mk: '/mk',
-  me: '/me',
-  ba: '/ba'
-}
-
 module.exports = {
-  site: 'tvarenasport.com',
+  site: 'tvarenasport.hr',
   url: function ({ channel, date }) {
-    const [country] = channel.site_id.split('#')
-
-    return `https://www.tvarenasport.com${domains[country]}/api/schedule?date=${date.format(
-      'DD-MM-YYYY'
-    )}`
+    return `https://www.tvarenasport.hr/api/schedule?date=${date.format('DD-MM-YYYY')}`
   },
   parser: function ({ content, channel }) {
     let programs = []
@@ -23,8 +12,8 @@ module.exports = {
     items.forEach(item => {
       programs.push({
         title: item.title.trim(),
-        category: item.league,
-        description: item.sport.trim(),
+        category: item.sport,
+        description: item.league.trim(),
         start: dayjs(item.start),
         stop: dayjs(item.end)
       })
@@ -34,7 +23,7 @@ module.exports = {
   },
   async channels({ country, lang }) {
     const data = await axios
-      .get(`https://www.tvarenasport.com${domains[country]}/api/schedule`)
+      .get(`https://www.tvarenasport.hr/api/schedule`)
       .then(r => r.data)
       .catch(console.log)
 
@@ -42,8 +31,8 @@ module.exports = {
     for (let id in data.channels) {
       const item = data.channels[id]
       channels.push({
-        lang: 'sr',
-        site_id: `${country}#${id}`,
+        lang: 'hr',
+        site_id: id,
         name: item.name
       })
     }
@@ -53,9 +42,8 @@ module.exports = {
 }
 
 function parseItems(content, channel) {
-  const [_, channelId] = channel.site_id.split('#')
   const data = JSON.parse(content)
   if (!data || !Array.isArray(data.items)) return []
 
-  return data.items.filter(i => i.group === channelId)
+  return data.items.filter(i => i.group === channel.site_id)
 }
