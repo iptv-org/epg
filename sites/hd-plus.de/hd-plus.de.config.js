@@ -18,9 +18,6 @@ module.exports = {
 
     return `https://www.hd-plus.de/epg/channel/${channel.site_id}?d=${day}`
   },
-  request: {
-    timeout: 10000
-  },
   logo({ content }) {
     const dom = new JSDOM(content)
     const img = dom.window.document.querySelector('header > img')

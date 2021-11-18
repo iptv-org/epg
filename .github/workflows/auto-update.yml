@@ -71,7 +71,7 @@ jobs:
       - name: Install Dependencies
         run: npm install
       - name: Run Grabber
-        run: NODE_OPTIONS=--insecure-http-parser npx epg-grabber --config=sites/${{ matrix.guide.site }}/${{ matrix.guide.site }}.config.js --channels=sites/${{ matrix.guide.site }}/${{ matrix.guide.site }}_${{ matrix.guide.country }}.channels.xml --output=.gh-pages/guides/${{ matrix.guide.country }}/${{ matrix.guide.site }}.epg.xml --log=logs/${{ matrix.guide.site }}_${{ matrix.guide.country }}.log --days=2
+        run: NODE_OPTIONS=--insecure-http-parser npx epg-grabber --config=sites/${{ matrix.guide.site }}/${{ matrix.guide.site }}.config.js --channels=sites/${{ matrix.guide.site }}/${{ matrix.guide.site }}_${{ matrix.guide.country }}.channels.xml --output=.gh-pages/guides/${{ matrix.guide.country }}/${{ matrix.guide.site }}.epg.xml --log=logs/${{ matrix.guide.site }}_${{ matrix.guide.country }}.log --days=2 --timeout=30000
       - name: Upload Guide
         uses: actions/upload-artifact@v2
         with:

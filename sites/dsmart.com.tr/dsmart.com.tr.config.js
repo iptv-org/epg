@@ -4,9 +4,6 @@ const utc = require('dayjs/plugin/utc')
 dayjs.extend(utc)
 
 module.exports = {
-  request: {
-    timeout: 15000
-  },
   site: 'dsmart.com.tr',
   url({ date, channel }) {
     const [page] = channel.site_id.split('#')

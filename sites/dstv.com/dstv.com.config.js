@@ -8,9 +8,6 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'dstv.com',
-  request: {
-    timeout: 30000
-  },
   url({ channel, date }) {
     const [bouquetId] = channel.site_id.split('#')
 

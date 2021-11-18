@@ -8,9 +8,6 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   ignore: true, // INFO: guide on the site is empty
-  request: {
-    timeout: 30000
-  },
   site: 'beinsports.com',
   url: function ({ date }) {
     return `https://epg.beinsports.com/utctime.php?mins=00&serviceidentity=beinsports.com&cdate=${date.format(

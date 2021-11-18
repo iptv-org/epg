@@ -7,9 +7,6 @@ module.exports = {
       'DD-MM-YYYY'
     )}?filter=channel&subslug=${channel.site_id}`
   },
-  request: {
-    timeout: 10000
-  },
   logo: function ({ content }) {
     const data = JSON.parse(content)
     const logo =

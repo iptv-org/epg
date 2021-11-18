@@ -13,7 +13,6 @@ module.exports = {
     return `https://mts.rs/oec/epg/program?date=${date.format('YYYY-MM-DD')}&position=${position}`
   },
   request: {
-    timeout: 10000,
     headers: {
       'X-Requested-With': 'XMLHttpRequest'
     }
