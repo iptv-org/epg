@@ -23,8 +23,7 @@ module.exports = {
     },
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded'
-    },
-    timeout: 15000
+    }
   },
   url: function ({ channel }) {
     return `https://comteco.com.bo/pages/canales-y-programacion-tv/paquete-oro/${channel.site_id}`
