@@ -5,9 +5,6 @@ dayjs.extend(utc)
 
 module.exports = {
   site: 'astro.com.my',
-  request: {
-    timeout: 15000
-  },
   url: function ({ date, channel }) {
     return `http://ams-api.astro.com.my/ams/v3/getEvents?periodStart=${date.format(
       'YYYY-MM-DD'
