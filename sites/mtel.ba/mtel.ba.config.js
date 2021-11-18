@@ -11,7 +11,6 @@ module.exports = {
     return `https://mtel.ba/oec/epg/program?date=${date.format('YYYY-MM-DD')}&position=${position}`
   },
   request: {
-    timeout: 15000,
     headers: {
       'X-Requested-With': 'XMLHttpRequest'
     }
