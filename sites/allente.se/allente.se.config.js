@@ -8,9 +8,6 @@ module.exports = {
 
     return `https://cs-vcb.allente.${country}/epg/events?date=${date.format('YYYY-MM-DD')}`
   },
-  request: {
-    timeout: 10000
-  },
   logo({ channel }) {
     return channel.logo
   },
