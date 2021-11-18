@@ -6,9 +6,6 @@ dayjs.extend(utc)
 dayjs.extend(timezone)
 
 module.exports = {
-  request: {
-    timeout: 10000
-  },
   site: 'programacion-tv.elpais.com',
   url: function ({ date }) {
     return `https://programacion-tv.elpais.com/data/parrilla_${date.format('DDMMYYYY')}.json`
