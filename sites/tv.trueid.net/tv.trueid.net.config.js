@@ -5,14 +5,12 @@ const utc = require('dayjs/plugin/utc')
 dayjs.extend(utc)
 
 module.exports = {
-  request: {
-    timeout: 300000,
-    jar: null
-  },
   site: 'tv.trueid.net',
-  channels: 'tv.trueid.net.channels.xml',
   url: function ({ channel, date }) {
     return `https://tv.trueid.net/tvguide/all/${channel.site_id}/${date.format('YYYY-MM-DD')}`
+  },
+  request: {
+    jar: null
   },
   logo: function ({ content, channel }) {
     const data = parseContent(content, channel)
