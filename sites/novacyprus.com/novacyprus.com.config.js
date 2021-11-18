@@ -15,9 +15,6 @@ module.exports = {
       .add(1, 'd')
       .format('YYYYMMDD')}`
   },
-  request: {
-    timeout: 10000
-  },
   logo({ channel }) {
     return channel.logo
   },
