@@ -4,9 +4,6 @@ const utc = require('dayjs/plugin/utc')
 dayjs.extend(utc)
 
 module.exports = {
-  request: {
-    timeout: 15000
-  },
   site: 'directv.com',
   url({ channel, date }) {
     return `https://www.directv.com/json/channelschedule?channels=${
