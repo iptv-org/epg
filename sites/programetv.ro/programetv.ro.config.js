@@ -1,9 +1,6 @@
 const dayjs = require('dayjs')
 
 module.exports = {
-  request: {
-    timeout: 30000
-  },
   site: 'programetv.ro',
   url: function ({ date, channel }) {
     const daysOfWeek = {
