@@ -2,9 +2,6 @@ const dayjs = require('dayjs')
 
 module.exports = {
   site: 'tv.cctv.com',
-  request: {
-    timeout: 30000
-  },
   url({ channel, date }) {
     return `https://api.cntv.cn/epg/getEpgInfoByChannelNew?serviceId=tvcctv&c=${
       channel.site_id
