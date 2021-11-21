@@ -5,6 +5,7 @@ const utc = require('dayjs/plugin/utc')
 dayjs.extend(utc)
 
 module.exports = {
+  delay: 5000,
   site: 'tv.trueid.net',
   url: function ({ channel, date }) {
     return `https://tv.trueid.net/tvguide/all/${channel.site_id}/${date.format('YYYY-MM-DD')}`
