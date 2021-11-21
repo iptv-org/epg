@@ -1,6 +1,6 @@
-// npx epg-grabber --config=sites/orange.fr/orange.fr.config.js --channels=sites/orange.fr/orange.fr_fr.channels.xml --output=.gh-pages/guides/fr/orange.fr.epg.xml --days=2
+// npx epg-grabber --config=sites/chaines-tv.orange.fr/chaines-tv.orange.fr.config.js --channels=sites/chaines-tv.orange.fr/chaines-tv.orange.fr_fr.channels.xml --output=.gh-pages/guides/fr/chaines-tv.orange.fr.epg.xml --days=2
 
-const { parser, url, logo, request } = require('./orange.fr.config.js')
+const { parser, url, logo, request } = require('./chaines-tv.orange.fr.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
