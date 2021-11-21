@@ -51,7 +51,7 @@ it('can parse response', () => {
     },
     {
       start: '2021-11-20T17:00:00.000Z',
-      stop: '2021-11-20T18:00:00.000Z',
+      stop: '2021-11-20T17:30:00.000Z',
       title: `Move Fiji`
     }
   ])
