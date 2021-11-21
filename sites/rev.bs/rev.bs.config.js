@@ -1,19 +1,16 @@
+const _ = require('lodash')
+const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
-const axios = require('axios')
-const _ = require('lodash')
-const cheerio = require('cheerio')
 
 dayjs.extend(utc)
 dayjs.extend(timezone)
 
-const endpoint = `https://www.rev.bs/wp-content/uploads/tv-guide/$date_$index.json`
-
 module.exports = {
   site: 'rev.bs',
   url: function ({ date }) {
-    return endpoint.replace('$date', date.format('YYYY-MM-DD')).replace('$index', 0)
+    return `https://www.rev.bs/wp-content/uploads/tv-guide/${date.format('YYYY-MM-DD')}_0.json`
   },
   logo({ channel }) {
     return channel.logo
@@ -21,6 +18,7 @@ module.exports = {
   parser: async function ({ content, channel, date }) {
     const programs = []
     const items0 = parseItems(content, channel)
+    if (!items0.length) return programs
     const items1 = parseItems(await loadNextItems(date, 1), channel)
     const items2 = parseItems(await loadNextItems(date, 2), channel)
     const items3 = parseItems(await loadNextItems(date, 3), channel)
@@ -40,25 +38,30 @@ module.exports = {
 }
 
 async function loadNextItems(date, index) {
-  const url = endpoint.replace('$date', date.format('YYYY-MM-DD')).replace('$index', index)
+  const url = `https://www.rev.bs/wp-content/uploads/tv-guide/${date.format(
+    'YYYY-MM-DD'
+  )}_${index}.json`
 
   return axios
     .get(url, {
       responseType: 'arraybuffer'
     })
     .then(res => res.data.toString())
-    .catch(e => ({}))
+    .catch(console.log)
 }
 
-function parseStart(item, d) {
+function parseStart(item, date) {
   const shift = parseInt(item.s)
 
-  return dayjs.tz(d.add(shift, 'm').toString(), 'America/New_York')
+  return dayjs.tz(date.add(shift, 'm').toString(), 'America/New_York')
 }
 
 function parseItems(content, channel) {
-  const data = JSON.parse(content)
-  if (data.status !== 'OK') return []
+  let data
+  try {
+    data = JSON.parse(content)
+  } catch (err) {}
+  if (!data || data.status !== 'OK') return []
 
-  return data.data.schedule[channel.site_id]
+  return data.data.schedule[channel.site_id] || []
 }
