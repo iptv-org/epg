@@ -31,7 +31,11 @@ it('can get logo url', () => {
 })
 
 it('can parse response', () => {
-  const result = parser({ date, channel, content })
+  const result = parser({ date, channel, content }).map(p => {
+    p.start = p.start.toJSON()
+    p.stop = p.stop.toJSON()
+    return p
+  })
   expect(result).toMatchObject([
     {
       start: '2021-11-06T22:44:00.000Z',
