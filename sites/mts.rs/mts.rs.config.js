@@ -27,15 +27,13 @@ module.exports = {
     const data = parseContent(content, channel)
     const items = parseItems(data)
     items.forEach(item => {
-      const start = parseStart(item)
-      const stop = parseStop(item)
       programs.push({
         title: item.title,
         category: item.category,
         description: item.description,
         icon: item.image,
-        start: start.toJSON(),
-        stop: stop.toJSON()
+        start: parseStart(item),
+        stop: parseStop(item)
       })
     })
 
@@ -45,8 +43,10 @@ module.exports = {
 
 function parseContent(content, channel) {
   const [_, site_id] = channel.site_id.split('#')
-  if (!content) return null
-  const data = JSON.parse(content)
+  let data
+  try {
+    data = JSON.parse(content)
+  } catch (e) {}
   if (!data || !data.channels || !data.channels.length) return null
 
   return data.channels.find(c => c.id === site_id) || null
