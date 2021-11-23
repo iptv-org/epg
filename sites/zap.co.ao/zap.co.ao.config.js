@@ -16,7 +16,7 @@ module.exports = {
     const channels = JSON.parse(content)
     const data = channels.find(ch => ch.id == channel.site_id)
 
-    return data.image_uri
+    return data ? data.image_uri : null
   },
   parser: function ({ content, channel }) {
     let PM = false
