@@ -37,6 +37,11 @@ it('can parse Sukmaindera 11 November 2021.pdf', done => {
   )
   parser({ buffer, date })
     .then(results => {
+      results = results.map(p => {
+        p.start = p.start.toJSON()
+        p.stop = p.stop.toJSON()
+        return p
+      })
       expect(results.length).toBe(47)
       expect(results[0]).toMatchObject({
         start: '2021-11-10T22:00:00.000Z',
@@ -61,6 +66,11 @@ it('can parse Aneka 11 November 2021.pdf', done => {
   })
   parser({ buffer, date })
     .then(results => {
+      results = results.map(p => {
+        p.start = p.start.toJSON()
+        p.stop = p.stop.toJSON()
+        return p
+      })
       expect(results.length).toBe(26)
       expect(results[4]).toMatchObject({
         start: '2021-11-11T03:00:00.000Z',
