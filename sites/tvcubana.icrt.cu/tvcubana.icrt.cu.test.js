@@ -20,8 +20,8 @@ it('can generate valid url', () => {
 })
 
 it('can generate valid url for next day', () => {
-  expect(url({ channel, date: date.add(1, 'd') })).toBe(
-    'https://www.tvcubana.icrt.cu/cartv/cv/martes.php'
+  expect(url({ channel, date: date.add(2, 'd') })).toBe(
+    'https://www.tvcubana.icrt.cu/cartv/cv/miercoles.php'
   )
 })
 
