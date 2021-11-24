@@ -9,6 +9,7 @@ dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
 module.exports = {
+  ignore: true, // INFO: no longer available
   site: 'vivacom.bg',
   url({ date, channel }) {
     const [page] = channel.site_id.split('#')
