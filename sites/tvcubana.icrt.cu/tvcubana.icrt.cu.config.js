@@ -3,14 +3,12 @@ const timezone = require('dayjs/plugin/timezone')
 
 dayjs.extend(timezone)
 
-require('dayjs/locale/es')
-
 module.exports = {
   site: 'tvcubana.icrt.cu',
   url({ channel, date }) {
-    return `https://www.tvcubana.icrt.cu/cartv/${channel.site_id}/${date
-      .locale('es')
-      .format('dddd')}.php`
+    const daysOfWeek = ['domingo', 'lunes', 'martes', 'miercoles', 'jueves', 'viernes', 'sabado']
+
+    return `https://www.tvcubana.icrt.cu/cartv/${channel.site_id}/${daysOfWeek[date.day()]}.php`
   },
   logo({ channel }) {
     return channel.logo
