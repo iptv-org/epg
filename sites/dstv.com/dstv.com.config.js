@@ -19,24 +19,26 @@ module.exports = {
     return channel.logo
   },
   parser({ content, date, channel }) {
-    let PM = false
     const programs = []
     const items = parseItems(content, date, channel)
     items.forEach(item => {
-      const title = item.title
+      const prev = programs[programs.length - 1]
       let start = parseStart(item, date)
-      if (start.hour() > 18 && !PM) start = start.subtract(1, 'd')
-      else if (start.hour() > 11 && start.hour() < 18) PM = true
-      else if (start.hour() < 12 && PM) start = start.add(1, 'd')
-      const stop = start.add(1, 'h')
-      if (programs.length) {
-        programs[programs.length - 1].stop = start.toString()
+      if (prev) {
+        if (start.isBefore(prev.start)) {
+          start = start.add(1, 'd')
+          date = date.add(1, 'd')
+        }
+        prev.stop = start
+      } else if (start.hour() > 12) {
+        start = start.subtract(1, 'd')
+        date = date.subtract(1, 'd')
       }
-
+      const stop = start.add(1, 'h')
       programs.push({
-        title,
-        start: start.toString(),
-        stop: stop.toString()
+        title: item.title,
+        start,
+        stop
       })
     })
 
