@@ -15,21 +15,21 @@ module.exports = {
     return `https://www.andorradifusio.ad/programacio/${channel.site_id}`
   },
   parser({ content, date }) {
-    let PM = false
     const programs = []
     const items = parseItems(content, date)
     items.forEach(item => {
-      const title = item.title
+      const prev = programs[programs.length - 1]
       let start = parseStart(item, date)
-      if (start.hour() > 11) PM = true
-      if (start.hour() < 12 && PM) start = start.add(1, 'd')
-      const stop = start.add(1, 'h')
-      if (programs.length) {
-        programs[programs.length - 1].stop = start
+      if (prev) {
+        if (start.isBefore(prev.start)) {
+          start = start.add(1, 'd')
+          date = date.add(1, 'd')
+        }
+        prev.stop = start
       }
-
+      const stop = start.add(1, 'h')
       programs.push({
-        title,
+        title: item.title,
         start,
         stop
       })
@@ -40,9 +40,9 @@ module.exports = {
 }
 
 function parseStart(item, date) {
-  time = `${date.format('MM/DD/YYYY')} ${item.time}`
+  const dateString = `${date.format('MM/DD/YYYY')} ${item.time}`
 
-  return dayjs.tz(time, 'MM/DD/YYYY HH:mm', 'Europe/Madrid')
+  return dayjs.tz(dateString, 'MM/DD/YYYY HH:mm', 'Europe/Madrid')
 }
 
 function parseItems(content, date) {
