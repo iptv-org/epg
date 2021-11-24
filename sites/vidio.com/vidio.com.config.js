@@ -1,13 +1,12 @@
-const jsdom = require('jsdom')
-const { JSDOM } = jsdom
+const cheerio = require('cheerio')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
-const customParseFormat = require('dayjs/plugin/customParseFormat')
 const timezone = require('dayjs/plugin/timezone')
+const customParseFormat = require('dayjs/plugin/customParseFormat')
 
 dayjs.extend(utc)
-dayjs.extend(customParseFormat)
 dayjs.extend(timezone)
+dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'vidio.com',
@@ -15,19 +14,23 @@ module.exports = {
     return `https://www.vidio.com/live/${channel.site_id}/schedules`
   },
   parser({ content, date }) {
-    let PM = false
     const programs = []
     const items = parseItems(content, date)
     items.forEach(item => {
-      const title = parseTitle(item)
-      const start = parseStart(item, date)
-      let stop = parseStop(item, date)
-      if (!stop) return
-      if (stop.hour() > 11) PM = true
-      if (stop.hour() < 12 && PM) stop = stop.add(1, 'd')
-
+      const prev = programs[programs.length - 1]
+      const $item = cheerio.load(item)
+      let start = parseStart($item, date)
+      if (prev && start.isBefore(prev.start)) {
+        start = start.add(1, 'd')
+        date = date.add(1, 'd')
+      }
+      let stop = parseStop($item, date)
+      if (stop.isBefore(start)) {
+        stop = stop.add(1, 'd')
+        date = date.add(1, 'd')
+      }
       programs.push({
-        title,
+        title: parseTitle($item),
         start,
         stop
       })
@@ -37,51 +40,32 @@ module.exports = {
   }
 }
 
-function parseStop(item, date) {
-  const time = (
-    item.querySelector('div.b-livestreaming-daily-schedule__item-content-caption') || {
-      textContent: ''
-    }
-  ).textContent
+function parseStart($item, date) {
+  const timeString = $item('div.b-livestreaming-daily-schedule__item-content-caption').text()
+  const [_, start] = timeString.match(/(\d{2}:\d{2}) -/) || [null, null]
+  const dateString = `${date.format('YYYY-MM-DD')} ${start}`
 
-  return dayjs.tz(
-    date.format('YYYY-MM-DD ').concat(time.substring(8, 13)),
-    'YYYY-MM-DD HH:mm',
-    'Asia/Jakarta'
-  )
+  return dayjs.tz(dateString, 'YYYY-MM-DD HH:mm', 'Asia/Jakarta')
 }
 
-function parseStart(item, date) {
-  const time = (
-    item.querySelector('div.b-livestreaming-daily-schedule__item-content-caption') || {
-      textContent: ''
-    }
-  ).textContent
+function parseStop($item, date) {
+  const timeString = $item('div.b-livestreaming-daily-schedule__item-content-caption').text()
+  const [_, stop] = timeString.match(/- (\d{2}:\d{2}) WIB/) || [null, null]
+  const dateString = `${date.format('YYYY-MM-DD')} ${stop}`
 
-  return dayjs.tz(
-    date.format('YYYY-MM-DD ').concat(time.substring(0, 5)),
-    'YYYY-MM-DD HH:mm',
-    'Asia/Jakarta'
-  )
+  return dayjs.tz(dateString, 'YYYY-MM-DD HH:mm', 'Asia/Jakarta')
 }
 
-function parseTitle(item) {
-  return (
-    item.querySelector('div.b-livestreaming-daily-schedule__item-content-title') || {
-      textContent: ''
-    }
-  ).textContent
+function parseTitle($item) {
+  return $item('div.b-livestreaming-daily-schedule__item-content-title').text()
 }
 
 function parseItems(content, date) {
-  const dom = new JSDOM(content)
-  const list = dom.window.document.querySelector(
+  const $ = cheerio.load(content)
+
+  return $(
     `#schedule-content-${date.format(
       'YYYYMMDD'
-    )} > .b-livestreaming-daily-schedule__scroll-container`
-  )
-
-  if (!list) return []
-
-  return list.querySelectorAll('div.b-livestreaming-daily-schedule__item')
+    )} > .b-livestreaming-daily-schedule__scroll-container .b-livestreaming-daily-schedule__item`
+  ).toArray()
 }
