@@ -1,10 +1,8 @@
-const jsdom = require('jsdom')
-const { JSDOM } = jsdom
+const cheerio = require('cheerio')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
-const tabletojson = require('tabletojson').Tabletojson
 
 dayjs.extend(utc)
 dayjs.extend(timezone)
@@ -12,25 +10,26 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'arianatelevision.com',
-  url() {
-    return `https://www.arianatelevision.com/program-schedule/`
+  url: `https://www.arianatelevision.com/program-schedule/`,
+  logo({ channel }) {
+    return channel.logo
   },
   parser({ content, date }) {
-    let PM = false
     const programs = []
     const items = parseItems(content, date)
     items.forEach(item => {
-      const title = item.title
+      const prev = programs[programs.length - 1]
       let start = parseStart(item, date)
-      if (start.hour() > 11) PM = true
-      if (start.hour() < 12 && PM) start = start.add(1, 'd')
-      const stop = start.add(30, 'm')
-      if (programs.length) {
-        programs[programs.length - 1].stop = start
+      if (prev) {
+        if (start.isBefore(prev.start)) {
+          start = start.add(1, 'd')
+          date = date.add(1, 'd')
+        }
+        prev.stop = start
       }
-
+      const stop = start.add(30, 'm')
       programs.push({
-        title,
+        title: item.title,
         start,
         stop
       })
@@ -48,12 +47,25 @@ function parseStart(item, date) {
 
 function parseItems(content, date) {
   const items = []
-  const dom = new JSDOM(content)
-  const dayOfWeek = date.format('dddd')
-  const el = dom.window.document.getElementById('jtrt_table_508')
-  const data = tabletojson.convert(el.outerHTML)
-  if (!data) return items
-  const rows = data[0]
+  const col = date.day()
+  const $ = cheerio.load(content)
+  const settings = $('#jtrt_table_settings_508').text()
+  if (!settings) return []
+  const data = JSON.parse(settings)
+  if (!data || !Array.isArray(data)) return []
 
-  return rows.map(r => ({ start: r.Start, title: r[dayOfWeek] })).filter(i => i.start)
+  let rows = data[0]
+  rows.shift()
+  const output = []
+  rows.forEach(row => {
+    let day = date.day() + 2
+    if (day > 7) day = 1
+    if (!row[0] || !row[day]) return
+    output.push({
+      start: row[0].trim(),
+      title: row[day].trim()
+    })
+  })
+
+  return output
 }
