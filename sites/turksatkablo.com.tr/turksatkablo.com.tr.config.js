@@ -9,26 +9,28 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'turksatkablo.com.tr',
-  ignore: true, // NOTE: server is not stable
   url: function ({ date }) {
     return `https://www.turksatkablo.com.tr/userUpload/EPG/y.json?_=${date.valueOf()}`
   },
   parser: function ({ content, channel, date }) {
-    let PM = false
     let programs = []
     const items = parseItems(content, channel)
     items.forEach(item => {
+      const prev = programs[programs.length - 1]
       let start = parseStart(item, date)
-      if (start.hour() > 11) PM = true
-      if (start.hour() < 12 && PM) start = start.add(1, 'd')
+      if (prev && start.isBefore(prev.start)) {
+        start = start.add(1, 'd')
+        date = date.add(1, 'd')
+      }
       let stop = parseStop(item, date)
-      if (stop.hour() > 11) PM = true
-      if (stop.hour() < 12 && PM) stop = stop.add(1, 'd')
-
+      if (prev && stop.isBefore(start)) {
+        stop = stop.add(1, 'd')
+        date = date.add(1, 'd')
+      }
       programs.push({
         title: item.b,
-        start: start.toString(),
-        stop: stop.toString()
+        start,
+        stop
       })
     })
 
@@ -37,22 +39,24 @@ module.exports = {
 }
 
 function parseStart(item, date) {
-  const time = `${date.format('MM/DD/YYYY')} ${item.c}`
+  const time = `${date.format('YYYY-MM-DD')} ${item.c}`
 
-  return dayjs.tz(time, 'MM/DD/YYYY HH:mm', 'Europe/Istanbul')
+  return dayjs.tz(time, 'YYYY-MM-DD HH:mm', 'Europe/Istanbul')
 }
 
 function parseStop(item, date) {
-  const time = `${date.format('MM/DD/YYYY')} ${item.d}`
+  const time = `${date.format('YYYY-MM-DD')} ${item.d}`
 
-  return dayjs.tz(time, 'MM/DD/YYYY HH:mm', 'Europe/Istanbul')
+  return dayjs.tz(time, 'YYYY-MM-DD HH:mm', 'Europe/Istanbul')
 }
 
 function parseItems(content, channel) {
-  const parsed = JSON.parse(content)
-  const channels = parsed.k
-  if (!channels) return []
-  const data = channels.find(c => c.x == channel.site_id)
+  let parsed
+  try {
+    parsed = JSON.parse(content)
+  } catch (e) {}
+  if (!parsed || !parsed.k) return []
+  const data = parsed.k.find(c => c.x == channel.site_id)
 
   return data ? data.p : []
 }
