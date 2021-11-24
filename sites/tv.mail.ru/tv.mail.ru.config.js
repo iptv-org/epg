@@ -16,28 +16,29 @@ module.exports = {
   },
   logo({ content }) {
     const json = JSON.parse(content)
-    if (json.status !== 'OK') return null
+    if (!json || !Array.isArray(json.schedule)) return null
 
-    return json.schedule[0].channel.pic_url_64
+    return json.schedule[0] && json.schedule[0].channel
+      ? json.schedule[0].channel.pic_url_128
+      : null
   },
   parser({ content, date }) {
-    let PM = false
     const programs = []
     const items = parseItems(content)
     items.forEach(item => {
-      const title = parseTitle(item)
-      const category = parseCategory(item)
+      const prev = programs[programs.length - 1]
       let start = parseStart(item, date)
-      if (start.hour() > 11) PM = true
-      if (start.hour() < 12 && PM) start = start.add(1, 'd')
-      const stop = start.add(1, 'h')
-      if (programs.length) {
-        programs[programs.length - 1].stop = start
+      if (prev) {
+        if (start.isBefore(prev.start)) {
+          start = start.add(1, 'd')
+          date = date.add(1, 'd')
+        }
+        prev.stop = start
       }
-
+      const stop = start.add(1, 'h')
       programs.push({
-        title,
-        category,
+        title: item.name,
+        category: parseCategory(item),
         start,
         stop
       })
@@ -48,13 +49,9 @@ module.exports = {
 }
 
 function parseStart(item, date) {
-  const time = `${date.format('MM/DD/YYYY')} ${item.start}`
+  const dateString = `${date.format('YYYY-MM-DD')} ${item.start}`
 
-  return dayjs.tz(time, 'MM/DD/YYYY HH:mm', 'Europe/Moscow')
-}
-
-function parseTitle(item) {
-  return item.name
+  return dayjs.tz(dateString, 'YYYY-MM-DD HH:mm', 'Europe/Moscow')
 }
 
 function parseCategory(item) {
@@ -62,24 +59,26 @@ function parseCategory(item) {
     1: 'Фильм',
     2: 'Сериал',
     6: 'Документальное',
+    7: 'Телемагазин',
     8: 'Позновательное',
     10: 'Другое',
     14: 'ТВ-шоу',
     16: 'Досуг,Хобби',
     17: 'Ток-шоу',
     18: 'Юмористическое',
+    23: 'Музыка',
     24: 'Развлекательное',
     25: 'Игровое',
     26: 'Новости'
   }
 
-  return categories[item.category_id] || null
+  return categories[item.category_id]
 }
 
 function parseItems(content) {
   const json = JSON.parse(content)
-  if (json.status !== 'OK') return []
-  const event = json.schedule[0].event
+  if (!Array.isArray(json.schedule) || !json.schedule[0]) return []
+  const event = json.schedule[0].event || []
 
   return [...event.past, ...event.current]
 }
