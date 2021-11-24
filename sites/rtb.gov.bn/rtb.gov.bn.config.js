@@ -24,21 +24,23 @@ module.exports = {
     return channel.logo
   },
   parser: async function ({ buffer, date }) {
-    let PM = false
     let programs = []
     const items = await parseItems(buffer)
     items.forEach(item => {
+      const prev = programs[programs.length - 1]
       let start = parseStart(item, date)
-      if (start.hour() > 11) PM = true
-      if (start.hour() < 12 && PM) start = start.add(1, 'd')
-      const stop = start.add(1, 'h')
-      if (programs.length) {
-        programs[programs.length - 1].stop = start.toJSON()
+      if (prev) {
+        if (start.isBefore(prev.start)) {
+          start = start.add(1, 'd')
+          date = date.add(1, 'd')
+        }
+        prev.stop = start
       }
+      const stop = start.add(1, 'h')
       programs.push({
         title: item.title,
-        start: start.toJSON(),
-        stop: stop.toJSON()
+        start,
+        stop
       })
     })
 
@@ -47,9 +49,9 @@ module.exports = {
 }
 
 function parseStart(item, date) {
-  const time = `${date.format('YYYY-MM-DD')} ${item.time}`
+  const dateString = `${date.format('YYYY-MM-DD')} ${item.time}`
 
-  return dayjs.tz(time, 'YYYY-MM-DD HH:mm', 'Asia/Brunei')
+  return dayjs.tz(dateString, 'YYYY-MM-DD HH:mm', 'Asia/Brunei')
 }
 
 async function parseItems(buffer) {
