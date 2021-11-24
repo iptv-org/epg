@@ -1,5 +1,4 @@
-const jsdom = require('jsdom')
-const { JSDOM } = jsdom
+const cheerio = require('cheerio')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
@@ -13,36 +12,36 @@ module.exports = {
   delay: 5000,
   site: 'programtv.onet.pl',
   url: function ({ date, channel }) {
-    const today = dayjs().utc().startOf('d')
-    const day = date.diff(today, 'd')
+    const currDate = dayjs.utc().startOf('d')
+    const day = currDate.diff(date, 'd')
+
     return `https://programtv.onet.pl/program-tv/${channel.site_id}?dzien=${day}`
   },
   logo: function ({ content }) {
-    const dom = new JSDOM(content)
-    const img = dom.window.document.querySelector('#channelTV > section > header > span > img')
+    const $ = cheerio.load(content)
+    const imgSrc = $('#channelTV > section > header > span > img').attr('src')
 
-    return img ? 'https:' + img.src : null
+    return imgSrc ? `https:${imgSrc}` : null
   },
   parser: function ({ content, date }) {
-    let PM = false
     const programs = []
     const items = parseItems(content)
     items.forEach(item => {
-      const title = parseTitle(item)
-      const description = parseDescription(item)
-      const category = parseCategory(item)
-      let start = parseStart(item, date)
-      if (start.hour() > 11) PM = true
-      if (start.hour() < 12 && PM) start = start.add(1, 'd')
-      const stop = start.add(1, 'h')
-      if (programs.length) {
-        programs[programs.length - 1].stop = start
+      const prev = programs[programs.length - 1]
+      const $item = cheerio.load(item)
+      let start = parseStart($item, date)
+      if (prev) {
+        if (start.isBefore(prev.start)) {
+          start = start.add(1, 'd')
+          date = date.add(1, 'd')
+        }
+        prev.stop = start
       }
-
+      const stop = start.add(1, 'h')
       programs.push({
-        title,
-        description,
-        category,
+        title: parseTitle($item),
+        description: parseDescription($item),
+        category: parseCategory($item),
         start,
         stop
       })
@@ -52,27 +51,27 @@ module.exports = {
   }
 }
 
-function parseStart(item, date) {
-  let time = (item.querySelector('.hours > .hour') || { textContent: '' }).textContent
-  time = `${date.format('MM/DD/YYYY')} ${time}`
+function parseStart($item, date) {
+  const timeString = $item('.hours > .hour').text()
+  const dateString = `${date.format('MM/DD/YYYY')} ${timeString}`
 
-  return dayjs.tz(time, 'MM/DD/YYYY HH:mm', 'Europe/Warsaw')
+  return dayjs.tz(dateString, 'MM/DD/YYYY HH:mm', 'Europe/Warsaw')
 }
 
-function parseCategory(item) {
-  return (item.querySelector('.titles > .type') || { textContent: '' }).textContent
+function parseCategory($item) {
+  return $item('.titles > .type').text()
 }
 
-function parseDescription(item) {
-  return (item.querySelector('.titles > p') || { textContent: '' }).textContent
+function parseDescription($item) {
+  return $item('.titles > p').text().trim()
 }
 
-function parseTitle(item) {
-  return (item.querySelector('.titles > a') || { textContent: '' }).textContent
+function parseTitle($item) {
+  return $item('.titles > a').text().trim()
 }
 
 function parseItems(content) {
-  const dom = new JSDOM(content)
+  const $ = cheerio.load(content)
 
-  return dom.window.document.querySelectorAll('#channelTV > section > div.emissions > ul > li')
+  return $('#channelTV > section > div.emissions > ul > li').toArray()
 }
