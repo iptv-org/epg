@@ -36,7 +36,7 @@ it('can generate valid request headers', () => {
   })
 })
 
-fit('can get logo url', () => {
+it('can get logo url', () => {
   expect(logo({ channel })).toBe(
     'https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch96_160_115'
   )
