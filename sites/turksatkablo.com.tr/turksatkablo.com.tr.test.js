@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/turksatkablo.com.tr/turksatkablo.com.tr.config.js --channels=sites/turksatkablo.com.tr/turksatkablo.com.tr_tr.channels.xml --days=2 --output=.gh-pages/guides/tr/turksatkablo.com.tr.epg.xml
+// npx epg-grabber --config=sites/turksatkablo.com.tr/turksatkablo.com.tr.config.js --channels=sites/turksatkablo.com.tr/turksatkablo.com.tr_tr.channels.xml --output=.gh-pages/guides/tr/turksatkablo.com.tr.epg.xml --days=2
 
 const { parser, url } = require('./turksatkablo.com.tr.config.js')
 const dayjs = require('dayjs')
@@ -17,15 +17,35 @@ it('can generate valid url', () => {
 })
 
 it('can parse response', () => {
-  const result = parser({ date, channel, content })
-  expect(result[0]).toMatchObject({
-    start: 'Sun, 24 Oct 2021 22:15:00 GMT',
-    stop: 'Mon, 25 Oct 2021 00:00:00 GMT',
-    title: 'Ölüm Ormanı'
+  const result = parser({ date, channel, content }).map(p => {
+    p.start = p.start.toJSON()
+    p.stop = p.stop.toJSON()
+    return p
   })
-  expect(result[2]).toMatchObject({
-    start: 'Mon, 25 Oct 2021 20:45:00 GMT',
-    stop: 'Tue, 26 Oct 2021 00:45:00 GMT',
-    title: 'Kaçakçı'
+  expect(result).toMatchObject([
+    {
+      start: '2021-10-24T22:15:00.000Z',
+      stop: '2021-10-25T00:00:00.000Z',
+      title: 'Ölüm Ormanı'
+    },
+    {
+      start: '2021-10-25T12:00:00.000Z',
+      stop: '2021-10-25T14:00:00.000Z',
+      title: 'Kızım'
+    },
+    {
+      start: '2021-10-25T20:45:00.000Z',
+      stop: '2021-10-26T00:45:00.000Z',
+      title: 'Kaçakçı'
+    }
+  ])
+})
+
+it('can handle empty guide', () => {
+  const result = parser({
+    date,
+    channel,
+    content: `<!DOCTYPE html><html><head></head><body></body></html>`
   })
+  expect(result).toMatchObject([])
 })
