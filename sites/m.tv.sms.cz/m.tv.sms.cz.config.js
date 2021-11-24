@@ -1,6 +1,5 @@
-const jsdom = require('jsdom')
+const cheerio = require('cheerio')
 const iconv = require('iconv-lite')
-const { JSDOM } = jsdom
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
@@ -18,29 +17,29 @@ module.exports = {
     )}`
   },
   logo: function ({ content }) {
-    const dom = new JSDOM(content)
-    const img = dom.window.document.querySelector('.logo_out > img')
+    const $ = cheerio.load(content)
+    const imgSrc = $('.logo_out > img').attr('src')
 
-    return img ? img.src : null
+    return imgSrc ? `https:${imgSrc}` : null
   },
   parser: function ({ buffer, date }) {
-    let PM = false
     const programs = []
     const items = parseItems(buffer)
     items.forEach((item, i) => {
-      const title = parseTitle(item)
-      const description = parseDescription(item)
-      let start = parseStart(item, date)
-      if (start.hour() > 11) PM = true
-      if (start.hour() < 12 && PM) start = start.add(1, 'd')
-      const stop = start.add(1, 'h')
-      if (programs.length) {
-        programs[programs.length - 1].stop = start
+      const prev = programs[programs.length - 1]
+      const $item = cheerio.load(item)
+      let start = parseStart($item, date)
+      if (prev) {
+        if (start.isBefore(prev.start)) {
+          start = start.add(1, 'd')
+          date = date.add(1, 'd')
+        }
+        prev.stop = start
       }
-
+      const stop = start.add(1, 'h')
       programs.push({
-        title,
-        description,
+        title: parseTitle($item),
+        description: parseDescription($item),
         start,
         stop
       })
@@ -50,25 +49,24 @@ module.exports = {
   }
 }
 
-function parseStart(item, date) {
-  let time = (item.querySelector('div > span') || { textContent: '' }).textContent.trim()
+function parseStart($item, date) {
+  const timeString = $item('div > span').text().trim()
+  const dateString = `${date.format('MM/DD/YYYY')} ${timeString}`
 
-  time = `${date.format('MM/DD/YYYY')} ${time}`
-
-  return dayjs.tz(time, 'MM/DD/YYYY HH.mm', 'Europe/Prague')
+  return dayjs.tz(dateString, 'MM/DD/YYYY HH.mm', 'Europe/Prague')
 }
 
-function parseDescription(item) {
-  return (item.querySelector('a > div.detail') || { textContent: '' }).textContent.trim()
+function parseDescription($item) {
+  return $item('a.nazev > div.detail').text().trim()
 }
 
-function parseTitle(item) {
-  return (item.querySelector('a > div') || { textContent: '' }).textContent.trim()
+function parseTitle($item) {
+  return $item('a.nazev > div:nth-child(1)').text().trim()
 }
 
 function parseItems(buffer) {
   const string = iconv.decode(buffer, 'win1250')
-  const dom = new JSDOM(string)
+  const $ = cheerio.load(string)
 
-  return dom.window.document.querySelectorAll('#obsah > div > div.porady > div.porad')
+  return $('#obsah > div > div.porady > div.porad').toArray()
 }
