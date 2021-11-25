@@ -20,10 +20,15 @@ module.exports = {
     let programs = []
     const items = parseItems(content)
     items.forEach(item => {
+      const prev = programs[programs.length - 1]
       const $item = cheerio.load(item)
       let start = parseStart($item, date)
+      if (prev && start.isBefore(prev.stop)) {
+        start = start.add(1, 'd')
+        date = date.add(1, 'd')
+      }
       let stop = parseStop($item, date)
-      if (start.isAfter(stop)) {
+      if (stop.isBefore(start)) {
         stop = stop.add(1, 'd')
         date = date.add(1, 'd')
       }
