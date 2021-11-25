@@ -40,6 +40,10 @@ module.exports = {
       const $item = cheerio.load(item)
       const start = parseStart($item, date, channel)
       if (prev) {
+        if (start.isBefore(prev.start)) {
+          start = start.add(1, 'd')
+          date = date.add(1, 'd')
+        }
         prev.stop = start
       }
       const stop = start.add(1, 'h')
