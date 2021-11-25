@@ -21,22 +21,28 @@ module.exports = {
     let programs = []
     const items = parseItems(content)
     items.forEach((item, index) => {
+      const prev = programs[programs.length - 1]
       const $item = cheerio.load(item)
-      const title = parseTitle($item)
-      const icon = parseIcon($item)
-      const description = parseDescription($item)
       let start = parseStart($item, date)
-      if (index === 0 && start.hour() > 12) {
+      if (prev && start.isBefore(prev.stop)) {
+        start = start.add(1, 'd')
+        date = date.add(1, 'd')
+      } else if (!prev && start.hour() > 12) {
         start = start.subtract(1, 'd')
         date = date.subtract(1, 'd')
       }
       let stop = parseStop($item, date)
-      if (start.isAfter(stop)) {
+      if (stop.isBefore(start)) {
         stop = stop.add(1, 'd')
         date = date.add(1, 'd')
       }
-
-      programs.push({ title, description, icon, start, stop })
+      programs.push({
+        title: parseTitle($item),
+        description: parseDescription($item),
+        icon: parseIcon($item),
+        start,
+        stop
+      })
     })
 
     return programs
