@@ -1,5 +1,4 @@
-const jsdom = require('jsdom')
-const { JSDOM } = jsdom
+const cheerio = require('cheerio')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
@@ -26,58 +25,55 @@ module.exports = {
     return url
   },
   logo: function ({ content }) {
-    const dom = new JSDOM(content)
-    const img =
-      dom.window.document.querySelector('#content > div > div > div.span6 > img') ||
-      dom.window.document.querySelector('#inner-headline > div > div > div > img')
+    const $ = cheerio.load(content)
+    const imgSrc = $(
+      '#content > div > div > div.span6 > img,#inner-headline > div > div > div > img'
+    ).attr('src')
 
-    return img ? img.src : null
+    return imgSrc || null
   },
   parser: function ({ content, date, channel }) {
     const programs = []
     const items = parseItems(content)
     items.forEach(item => {
-      const title = parseTitle(item)
-      const start = parseStart(item, date, channel)
-      const stop = start.add(1, 'h')
-
-      if (title && start) {
-        if (programs.length) {
-          programs[programs.length - 1].stop = start
-        }
-
-        programs.push({
-          title,
-          start,
-          stop
-        })
+      const prev = programs[programs.length - 1]
+      const $item = cheerio.load(item)
+      const start = parseStart($item, date, channel)
+      if (prev) {
+        prev.stop = start
       }
+      const stop = start.add(1, 'h')
+      programs.push({
+        title: parseTitle($item),
+        description: parseDescription($item),
+        start,
+        stop
+      })
     })
 
     return programs
   }
 }
 
-function parseStart(item, date, channel) {
+function parseStart($item, date, channel) {
   const [region, id] = channel.site_id.split('#')
   const timezone = region ? tz[region] : tz['uk']
+  const timeString = $item('td:nth-child(1) > h5').text().trim()
+  const dateString = `${date.format('YYYY-MM-DD')} ${timeString}`
 
-  let time = (item.querySelector('td:nth-child(1) > h5') || { textContent: '' }).textContent.trim()
-  time = `${date.format('DD/MM/YYYY')} ${time.toUpperCase()}`
-
-  return dayjs.tz(time, 'DD/MM/YYYY H:mm A', timezone)
+  return dayjs.tz(dateString, 'YYYY-MM-DD H:mm a', timezone)
 }
 
-function parseTitle(item) {
-  return (item.querySelector('td:nth-child(2) > h5 > a') || { textContent: '' }).textContent
-    .toString()
-    .trim()
+function parseTitle($item) {
+  return $item('td:nth-child(2) > h5').text().trim()
+}
+
+function parseDescription($item) {
+  return $item('td:nth-child(2) > h6').text().trim()
 }
 
 function parseItems(content) {
-  const dom = new JSDOM(content)
+  const $ = cheerio.load(content)
 
-  return dom.window.document.querySelectorAll(
-    '#content > div > div > div.span6 > table > tbody > tr'
-  )
+  return $('#content > div > div > div.span6 > table > tbody > tr').toArray()
 }
