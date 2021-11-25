@@ -1,5 +1,4 @@
-const jsdom = require('jsdom')
-const { JSDOM } = jsdom
+const cheerio = require('cheerio')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
@@ -11,8 +10,14 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'comteco.com.bo',
+  url: function ({ channel }) {
+    return `https://comteco.com.bo/pages/canales-y-programacion-tv/paquete-oro/${channel.site_id}`
+  },
   request: {
     method: 'POST',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
     data: function ({ date }) {
       const params = new URLSearchParams()
       params.append('_method', 'POST')
@@ -20,57 +25,51 @@ module.exports = {
       params.append('fechafin', date.format('D/M/YYYY'))
 
       return params
-    },
-    headers: {
-      'Content-Type': 'application/x-www-form-urlencoded'
     }
   },
-  url: function ({ channel }) {
-    return `https://comteco.com.bo/pages/canales-y-programacion-tv/paquete-oro/${channel.site_id}`
-  },
   logo: function ({ content }) {
-    const dom = new JSDOM(content)
-    const img = dom.window.document.querySelector(
-      '#myform > div.row > div:nth-child(1) > div.col-xs-5.col-sm-7 > img'
+    const $ = cheerio.load(content)
+    const imgSrc = $('#myform > div.row > div:nth-child(1) > div.col-xs-5.col-sm-7 > img').attr(
+      'src'
     )
 
-    return img ? `https://comteco.com.bo${img.src}` : null
+    return imgSrc ? `https://comteco.com.bo${imgSrc}` : null
   },
   parser: function ({ content, date }) {
     const programs = []
     const items = parseItems(content)
     items.forEach(item => {
-      const title = parseTitle(item)
-      let start = parseStart(item, date)
-      const stop = start.add(30, 'm')
-      if (programs.length) {
-        programs[programs.length - 1].stop = start
+      const prev = programs[programs.length - 1]
+      const $item = cheerio.load(item)
+      let start = parseStart($item, date)
+      if (prev) {
+        if (start.isBefore(prev.start)) {
+          start = start.add(1, 'd')
+          date = date.add(1, 'd')
+        }
+        prev.stop = start
       }
-
-      programs.push({ title, start, stop })
+      const stop = start.add(30, 'm')
+      programs.push({ title: parseTitle($item), start, stop })
     })
 
     return programs
   }
 }
 
-function parseStart(item, date) {
-  let time = (
-    item.querySelector('div > div.col-xs-11 > p > span') || { textContent: '' }
-  ).textContent.trim()
-  time = `${date.format('MM/DD/YYYY')} ${time}`
+function parseStart($item, date) {
+  const timeString = $item('div > div.col-xs-11 > p > span').text().trim()
+  const dateString = `${date.format('YYYY-MM-DD')} ${timeString}`
 
-  return dayjs.tz(time, 'MM/DD/YYYY HH:mm:ss', 'America/La_Paz')
+  return dayjs.tz(dateString, 'YYYY-MM-DD HH:mm:ss', 'America/La_Paz')
 }
 
-function parseTitle(item) {
-  return (
-    item.querySelector('div > div.col-xs-11 > p > strong') || { textContent: '' }
-  ).textContent.trim()
+function parseTitle($item) {
+  return $item('div > div.col-xs-11 > p > strong').text().trim()
 }
 
 function parseItems(content) {
-  const dom = new JSDOM(content)
+  const $ = cheerio.load(content)
 
-  return dom.window.document.querySelectorAll('#datosasociados > div > .list-group-item')
+  return $('#datosasociados > div > .list-group-item').toArray()
 }
