@@ -1,5 +1,4 @@
-const jsdom = require('jsdom')
-const { JSDOM } = jsdom
+const cheerio = require('cheerio')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
@@ -19,43 +18,46 @@ module.exports = {
     return `https://www.hd-plus.de/epg/channel/${channel.site_id}?d=${day}`
   },
   logo({ content }) {
-    const dom = new JSDOM(content)
-    const img = dom.window.document.querySelector('header > img')
+    const $ = cheerio.load(content)
+    const imgSrc = $('header > img').attr('src')
 
-    return img ? img.src : null
+    return imgSrc ? `https:${imgSrc}` : null
   },
   parser({ content, date }) {
     const programs = []
     const items = parseItems(content)
     items.forEach(item => {
-      const title = parseTitle(item)
-      let start = parseStart(item, date)
-      const stop = start.add(1, 'h')
-      if (programs.length) {
-        programs[programs.length - 1].stop = start
+      const prev = programs[programs.length - 1]
+      const $item = cheerio.load(item)
+      let start = parseStart($item, date)
+      if (prev) {
+        if (start.isBefore(prev.start)) {
+          start = start.add(1, 'd')
+          date = date.add(1, 'd')
+        }
+        prev.stop = start
       }
-
-      programs.push({ title, start, stop })
+      const stop = start.add(1, 'h')
+      programs.push({ title: parseTitle($item), start, stop })
     })
 
     return programs
   }
 }
 
-function parseStart(item, date) {
-  let time = (item.querySelector('td:nth-child(2)') || { textContent: '' }).textContent
-  time = time.split(' ').pop()
-  time = `${date.format('MM/DD/YYYY')} ${time}`
+function parseStart($item, date) {
+  const timeString = $item('td:nth-child(2)').text().split(' ').pop()
+  const dateString = `${date.format('YYYY-MM-DD')} ${timeString}`
 
-  return dayjs.tz(time, 'MM/DD/YYYY HH:mm', 'Europe/Berlin')
+  return dayjs.tz(dateString, 'YYYY-MM-DD HH:mm', 'Europe/Berlin')
 }
 
-function parseTitle(item) {
-  return (item.querySelector('td:nth-child(1) > a') || { textContent: '' }).textContent
+function parseTitle($item) {
+  return $item('td:nth-child(1) > a').text()
 }
 
 function parseItems(content) {
-  const dom = new JSDOM(content)
+  const $ = cheerio.load(content)
 
-  return dom.window.document.querySelectorAll('table > tbody > tr')
+  return $('table > tbody > tr').toArray()
 }
