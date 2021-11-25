@@ -1,5 +1,4 @@
-const jsdom = require('jsdom')
-const { JSDOM } = jsdom
+const dayjs = require('dayjs')
 
 module.exports = {
   site: 'tv.yandex.ru',
@@ -11,33 +10,43 @@ module.exports = {
   },
   url: function ({ date, channel }) {
     const [region, id] = channel.site_id.split('#')
+
     return `https://tv.yandex.ru/${region}/channel/${id}?date=${date.format('YYYY-MM-DD')}`
   },
   logo: function ({ content }) {
-    const dom = new JSDOM(content)
-    const img = dom.window.document.querySelector(
-      '#mount > div > main > div > div > div.content__header > div > div.channel-header__title > figure > img'
-    )
+    const data = parseContent(content)
 
-    return img ? 'https:' + img.src : null
+    return data ? `https:${data.channel.logo.maxSize.src}` : null
   },
   parser: function ({ content }) {
-    const initialState = content.match(/window.__INITIAL_STATE__ = (.*);/i)
-    let programs = []
-    if (!initialState && !initialState[1]) return programs
-
-    const data = JSON.parse(initialState[1], null, 2)
-    if (data.channel) {
-      programs = data.channel.schedule.events.map(i => {
-        return {
-          title: i.title,
-          description: i.program.description,
-          start: i.start,
-          stop: i.finish
-        }
+    const programs = []
+    const items = parseItems(content)
+    items.forEach(item => {
+      programs.push({
+        title: item.title,
+        description: item.program.description,
+        category: item.program.type.name,
+        start: dayjs(item.start),
+        stop: dayjs(item.finish)
       })
-    }
+    })
 
     return programs
   }
+}
+
+function parseContent(content) {
+  const [_, initialState] = content.match(/window.__INITIAL_STATE__ = (.*);/i) || [null, null]
+  if (!initialState) return null
+  const data = JSON.parse(initialState)
+  if (!data) return null
+
+  return data.channel
+}
+
+function parseItems(content) {
+  const data = parseContent(content)
+  if (!data || !data.schedule || !Array.isArray(data.schedule.events)) return []
+
+  return data.schedule.events
 }
