@@ -18,15 +18,17 @@ module.exports = {
 
     return data ? data.image_uri : null
   },
-  parser: function ({ content, channel }) {
-    let PM = false
+  parser: function ({ content, channel, date }) {
     const programs = []
     const items = parseItems(content, channel)
     if (!items.length) return programs
     items.forEach(item => {
-      let start = parseStart(item)
-      if (start.hour() > 11) PM = true
-      if (start.hour() < 12 && PM) start = start.add(1, 'd')
+      const prev = programs[programs.length - 1]
+      let start = parseStart(item, date)
+      if (prev && start.isBefore(prev.start)) {
+        start = start.add(1, 'd')
+        date = date.add(1, 'd')
+      }
       const stop = start.add(item.duration, 's')
       programs.push({
         title: item.name,
@@ -47,10 +49,9 @@ function parseItems(content, channel) {
   return data ? data.epg : []
 }
 
-function parseStart(item) {
-  const [date] = item.date.split('T')
+function parseStart(item, date) {
   const [hours, minutes] = item.start_time.split('h')
-  const time = `${date} ${hours}:${minutes}`
+  const dateString = `${date.format('YYYY-MM-DD')} ${hours}:${minutes}`
 
-  return dayjs.tz(time, 'YYYY-MM-DD HH:mm', 'Africa/Luanda')
+  return dayjs.tz(dateString, 'YYYY-MM-DD HH:mm', 'Africa/Luanda')
 }
