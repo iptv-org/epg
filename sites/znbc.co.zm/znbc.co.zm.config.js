@@ -1,5 +1,4 @@
-const jsdom = require('jsdom')
-const { JSDOM } = jsdom
+const cheerio = require('cheerio')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
@@ -12,30 +11,32 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'znbc.co.zm',
-  ignore: true, // NOTE: site is down
   url({ channel }) {
     return `https://www.znbc.co.zm/${channel.site_id}/`
   },
   logo({ content }) {
-    const dom = new JSDOM(content)
-    const img = dom.window.document.querySelector(
-      '.elementor-tabs-content-wrapper > .elementor-tab-content > table > tbody > tr:nth-child(1) > td > span > img'
-    )
+    const $ = cheerio.load(content)
+    const imgSrc = $(
+      '.elementor-tab-content > table > tbody > tr:nth-child(1) > td span > img'
+    ).data('src')
 
-    return img ? img.dataset.src : null
+    return imgSrc || null
   },
   parser({ content, date }) {
     const programs = []
     const items = parseItems(content, date)
     items.forEach(item => {
-      const title = item.title
-      const start = parseStart(item, date)
-      const stop = start.add(30, 'm')
-      if (programs.length) {
-        programs[programs.length - 1].stop = start
+      const prev = programs[programs.length - 1]
+      let start = parseStart(item, date)
+      if (prev) {
+        if (start.isBefore(prev.start)) {
+          start = start.add(1, 'd')
+          date = date.add(1, 'd')
+        }
+        prev.stop = start
       }
-
-      programs.push({ title, start, stop })
+      const stop = start.add(30, 'm')
+      programs.push({ title: item.title, start, stop })
     })
 
     return programs
@@ -43,29 +44,29 @@ module.exports = {
 }
 
 function parseStart(item, date) {
-  const time = `${date.format('MM/DD/YYYY')} ${item.time}`
+  const dateString = `${date.format('YYYY-MM-DD')} ${item.time}`
 
-  return dayjs.tz(time, 'MM/DD/YYYY HH:mm', 'Africa/Lusaka')
+  return dayjs.tz(dateString, 'YYYY-MM-DD HH:mm', 'Africa/Lusaka')
 }
 
 function parseItems(content, date) {
-  const items = []
-  const day = date.day() // 0 => Sunday
-  const dom = new JSDOM(content)
-  const tabs = dom.window.document.querySelectorAll(
-    `.elementor-tabs-content-wrapper > div[id*='elementor-tab-content']`
-  )
-  const table = tabs[day].querySelector(`table`)
-  const data = tabletojson.convert(table.outerHTML)
-  if (!data) return items
-  const rows = data[0]
+  const dayOfWeek = date.format('dddd').toUpperCase()
+  const $ = cheerio.load(content)
+  const table = $(`.elementor-tab-mobile-title:contains("${dayOfWeek}")`).next().html()
+  if (!table) return []
+  const data = tabletojson.convert(table)
+  if (!Array.isArray(data) || !Array.isArray(data[0])) return []
 
-  return rows
+  return data[0]
     .map(row => {
-      const time = row['0'].slice(0, 5).trim()
-      const title = row['0'].replace(time, '').replace(/\s\s+/g, ' ').trim()
+      const [_, time, title] = row['0'].replace(/\s\s/g, ' ').match(/^(\d{2}:\d{2}) (.*)/) || [
+        null,
+        null,
+        null
+      ]
+      if (!time || !title.trim()) return null
 
-      return { time, title }
+      return { time, title: title.trim() }
     })
-    .filter(i => dayjs(i.time, 'HH:mm').isValid())
+    .filter(i => i)
 }
