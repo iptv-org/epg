@@ -1,4 +1,4 @@
-const jsdom = require('jsdom')
+const cheerio = require('cheerio')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 
@@ -20,17 +20,13 @@ module.exports = {
   },
   parser: function ({ content, channel }) {
     let programs = []
-    const data = parseContent(content, channel)
-    const items = parseItems(data)
+    const items = parseItems(content, channel)
     items.forEach(item => {
-      const start = parseStart(item)
-      const stop = parseStop(item)
-
       programs.push({
         title: item.title,
         icon: parseIcon(item),
-        start,
-        stop
+        start: parseStart(item),
+        stop: parseStop(item)
       })
     })
 
@@ -51,19 +47,24 @@ function parseStop(item) {
 }
 
 function parseContent(content, channel) {
-  const virtualConsole = new jsdom.VirtualConsole()
-  virtualConsole.sendTo(console, { omitJSDOMErrors: true })
-  const dom = new jsdom.JSDOM(content, { virtualConsole })
-  const elem = dom.window.document.getElementById('__NEXT_DATA__') || { textContent: '' }
-  if (!elem.textContent) return null
-  const data = JSON.parse(elem.textContent)
-  const channels = data.props?.pageProps?.listEPG?.data || []
+  const $ = cheerio.load(content)
+  const nextData = $('#__NEXT_DATA__').html()
+  const data = JSON.parse(nextData)
+  if (
+    !data ||
+    !data.props ||
+    !data.props.pageProps ||
+    !data.props.pageProps.listEPG ||
+    !Array.isArray(data.props.pageProps.listEPG.data)
+  )
+    return null
 
-  return channels.find(ch => ch.slug === channel.site_id)
+  return data.props.pageProps.listEPG.data.find(ch => ch.slug === channel.site_id)
 }
 
-function parseItems(data) {
-  if (!data) return []
+function parseItems(content, channel) {
+  const data = parseContent(content, channel)
+  if (!data || !Array.isArray(data.programList)) return []
 
-  return data.programList || []
+  return data.programList
 }
