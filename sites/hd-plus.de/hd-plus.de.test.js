@@ -15,7 +15,8 @@ const channel = {
 const content = `<!DOCTYPE html><html> <head lang="de"></head> <body data-sensory-parallax-role="main" data-sensory-controller='{"controllerName": "OffscreenController"}' class="webshop-epg red" > <main data-sensory-controller='{"controllerName": "TeaserController"}'> <div class="grid-container-epg channel"> <div class="site_overlay"> <div class="loading_icon"></div></div><div class="site_wrapper"> <div id="UIChannelContent-619fb9d2e185d" class="channel-content"> <header> <img src="//cdn.hd-plus.de/senderlogos/bright-cropped/24444-2.png" alt="1-2-3.tv HD" class="channel-image"/> <h2 class="title">1-2-3.tv HD</h2> </header> <table> <thead> <tr> <th>Titel</th> <th>Ausstrahlungszeit</th> </tr></thead> <tbody> <tr> <td> <a href="/epg/show/1-2-3-tv-hd-ihre-lieblingsuhren/1442396582" >Ihre Lieblingsuhren</a > </td><td>Do 25.11 00:00</td></tr><tr> <td> <a href="/epg/show/1-2-3-tv-hd-ihre-lieblingsuhren/1442396584" >Ihre Lieblingsuhren</a > </td><td>Do 25.11 01:00</td></tr><tr> <td><a href="/epg/show/1-2-3-tv-hd-flash-deals/1452944370">Flash Deals</a></td><td>Do 25.11 06:00</td></tr></tbody> </table> </div></div></div></main> </body></html>`
 
 it('can generate valid url', () => {
-  expect(url({ channel, date })).toBe('https://www.hd-plus.de/epg/channel/1-2-3-tv-hd?d=0')
+  const today = dayjs.utc().startOf('d')
+  expect(url({ channel, date: today })).toBe('https://www.hd-plus.de/epg/channel/1-2-3-tv-hd?d=0')
 })
 
 it('can generate valid logo url', () => {
