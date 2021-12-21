@@ -8,6 +8,7 @@ dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
 module.exports = {
+  ignore: true, // Error: Connection timeout
   site: 'turksatkablo.com.tr',
   url: function ({ date }) {
     return `https://www.turksatkablo.com.tr/userUpload/EPG/y.json?_=${date.valueOf()}`
