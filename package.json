@@ -8,7 +8,7 @@
   "author": "Arhey",
   "license": "MIT",
   "jest": {
-    "testRegex": "sites/(.*?/)?.*test.js$"
+    "testRegex": "(sites|tests)/(.*?/)?.*test.js$"
   },
   "dependencies": {
     "axios": "^0.21.1",
@@ -25,6 +25,8 @@
     "lodash": "^4.17.21",
     "markdown-include": "^0.4.3",
     "mockdate": "^3.0.5",
+    "mz": "^2.7.0",
+    "nedb-promises": "^5.0.3",
     "parse-duration": "^1.0.0",
     "pdf-parse": "^1.1.1",
     "srcset": "^4.0.0",
