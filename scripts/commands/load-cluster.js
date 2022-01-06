@@ -18,14 +18,16 @@ async function main() {
   logger.info(`Creating '${clusterLog}'...`)
   await file.create(clusterLog)
   const items = await db.find({ cluster_id: options.clusterId })
-  const total = items.length
-  logger.info(`Found ${total} links`)
+  let days = 2
+  const total = days * items.length
+  logger.info(`Total ${total} requests`)
 
   logger.info('Loading...')
   const results = {}
   let i = 1
   for (const item of items) {
     const config = require(file.resolve(item.configPath))
+    config.days = config.days || days
     const programs = await grabber.grab(item, config, (data, err) => {
       logger.info(
         `[${i}/${total}] ${config.site} - ${data.channel.xmltv_id} - ${data.date.format(
