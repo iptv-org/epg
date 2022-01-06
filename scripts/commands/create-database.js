@@ -32,9 +32,11 @@ async function loadChannels() {
 
   const files = await file.list(options.channels)
   for (const filepath of files) {
+    const dir = file.dirname(filepath)
     const items = await parser.parseChannels(filepath)
     for (const item of items) {
-      item.filepath = filepath
+      item.channelsPath = filepath
+      item.configPath = `${dir}/${item.site}.config.js`
       channels.push(item)
     }
   }

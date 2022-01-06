@@ -23,7 +23,8 @@ it('can create database', () => {
     xmltv_id: 'AndorraTV.ad',
     site_id: 'atv',
     site: 'andorradifusio.ad',
-    filepath: 'tests/__data__/input/site.channels.xml',
+    channelsPath: 'tests/__data__/input/site.channels.xml',
+    configPath: 'tests/__data__/input/andorradifusio.ad.config.js',
     cluster_id: 1
   })
 })
