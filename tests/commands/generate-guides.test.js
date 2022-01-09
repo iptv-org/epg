@@ -39,10 +39,13 @@ it('can generate programs.json', () => {
     'categories',
     'channel',
     'description',
-    'icons',
-    'site',
+    'image',
     'start',
     'stop',
     'title'
   ])
+  expect(Array.isArray(program.title)).toBe(true)
+  expect(Array.isArray(program.description)).toBe(true)
+  expect(Array.isArray(program.categories)).toBe(true)
+  expect(program.image === null || typeof program.image === 'string').toBe(true)
 })

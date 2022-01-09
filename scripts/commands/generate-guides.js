@@ -20,41 +20,39 @@ async function main() {
 main()
 
 async function setUp() {
-  channels = await db.channels.find({})
+  channels = await db.channels.find({}).sort({ xmltv_id: 1 })
   programs = await db.programs.find({})
 }
 
 async function generateChannelsJson() {
   logger.info('Generating channels.json...')
 
-  let items = channels
-  items = _.sortBy(items, item => item.name)
+  let output = {}
+  channels.forEach(channel => {
+    if (!output[channel.xmltv_id]) {
+      const countryCode = channel.xmltv_id.split('.')[1]
 
-  let buffer = {}
-  items.forEach(item => {
-    if (!buffer[item.xmltv_id]) {
-      const countryCode = item.xmltv_id.split('.')[1]
-
-      buffer[item.xmltv_id] = {
-        id: item.xmltv_id,
-        name: [item.name],
-        logo: item.logo || null,
+      output[channel.xmltv_id] = {
+        id: channel.xmltv_id,
+        name: [channel.name],
+        logo: channel.logo || null,
         country: countryCode ? countryCode.toUpperCase() : null
       }
     } else {
-      if (!buffer[item.xmltv_id].logo && item.logo) {
-        buffer[item.xmltv_id].logo = item.logo
+      if (!output[channel.xmltv_id].logo && channel.logo) {
+        output[channel.xmltv_id].logo = channel.logo
       }
 
-      if (!buffer[item.xmltv_id].name.includes(item.name)) {
-        buffer[item.xmltv_id].name.push(item.name)
+      if (!output[channel.xmltv_id].name.includes(channel.name)) {
+        output[channel.xmltv_id].name.push(channel.name)
       }
     }
   })
 
-  items = Object.values(buffer)
-
-  await file.create(`${PUBLIC_DIR}/api/channels.json`, JSON.stringify(items))
+  await file.create(
+    `${PUBLIC_DIR}/api/channels.json`,
+    JSON.stringify(Object.values(output), null, 2)
+  )
 }
 
 async function generateProgramsJson() {
@@ -73,17 +71,16 @@ async function generateProgramsJson() {
     for (let slotId in slots) {
       let program = {
         channel,
-        site: null,
         title: [],
         description: [],
         categories: [],
-        icons: [],
+        image: null,
         start: null,
         stop: null
       }
 
       slots[slotId].forEach(item => {
-        program.site = item.site
+        // program.site = item.site
         if (item.title) program.title.push({ lang: item.lang, value: item.title })
         if (item.description)
           program.description.push({
@@ -91,10 +88,14 @@ async function generateProgramsJson() {
             value: item.description
           })
         if (item.category) program.categories.push({ lang: item.lang, value: item.category })
-        if (item.icon) program.icons.push(item.icon)
+        program.image = program.image || item.icon
         program.start = item.start
         program.stop = item.stop
       })
+
+      program.title = _.uniqBy(program.title, 'lang')
+      program.description = _.uniqBy(program.description, 'lang')
+      program.categories = _.uniqBy(program.categories, 'lang')
 
       slots[slotId] = program
     }
