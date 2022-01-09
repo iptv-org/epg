@@ -1,11 +1,11 @@
 const { db, logger, file, parser } = require('../core')
 const _ = require('lodash')
 
-const LOGS_PATH = process.env.LOGS_PATH || 'scripts/logs'
+const LOGS_DIR = process.env.LOGS_DIR || 'scripts/logs'
 
 async function main() {
   db.programs.reset()
-  const files = await file.list(`${LOGS_PATH}/load-cluster/cluster_*.log`)
+  const files = await file.list(`${LOGS_DIR}/load-cluster/cluster_*.log`)
   for (const filepath of files) {
     const results = await parser.parseLogs(filepath)
     results.forEach(result => {

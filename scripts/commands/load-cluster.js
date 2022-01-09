@@ -8,13 +8,13 @@ const options = program
   .parse(process.argv)
   .opts()
 
-const LOGS_PATH = process.env.LOGS_PATH || 'scripts/logs'
+const LOGS_DIR = process.env.LOGS_DIR || 'scripts/logs'
 
 async function main() {
   logger.info('Starting...')
   timer.start()
 
-  const clusterLog = `${LOGS_PATH}/load-cluster/cluster_${options.clusterId}.log`
+  const clusterLog = `${LOGS_DIR}/load-cluster/cluster_${options.clusterId}.log`
   logger.info(`Loading cluster: ${options.clusterId}`)
   logger.info(`Creating '${clusterLog}'...`)
   await file.create(clusterLog)
