@@ -4,6 +4,7 @@ const { db, logger, timer, file, parser } = require('../core')
 
 const options = program
   .requiredOption('-c, --cluster-id <cluster-id>', 'The ID of cluster to load', parser.parseNumber)
+  .option('-d, --days <days>', 'Number of days for which to grab the program', parser.parseNumber)
   .parse(process.argv)
   .opts()
 
@@ -18,7 +19,7 @@ async function main() {
   logger.info(`Creating '${clusterLog}'...`)
   await file.create(clusterLog)
   const items = await db.find({ cluster_id: options.clusterId })
-  let days = 2
+  const days = options.days || 1
   const total = days * items.length
   logger.info(`Total ${total} requests`)
 
@@ -39,7 +40,10 @@ async function main() {
 
       if (i < total) i++
     })
-    await file.append(clusterLog, JSON.stringify({ [item._id]: programs }) + '\n')
+    await file.append(
+      clusterLog,
+      JSON.stringify({ _id: item._id, site: config.site, programs }) + '\n'
+    )
   }
 
   logger.info(`Done in ${timer.format('HH[h] mm[m] ss[s]')}`)

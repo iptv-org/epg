@@ -1,6 +1,9 @@
 const axios = require('axios')
 const cheerio = require('cheerio')
 const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+
+dayjs.extend(utc)
 
 module.exports = {
   site: 'nowplayer.now.com',
