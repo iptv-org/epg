@@ -20,15 +20,15 @@ async function main() {
 main()
 
 async function setUp() {
-  channels = await db.channels.find({}).sort({ xmltv_id: 1 })
-  programs = await db.programs.find({})
+  channels = await loadChannels()
+  programs = await loadPrograms()
 }
 
-async function generateChannelsJson() {
-  logger.info('Generating channels.json...')
+async function loadChannels() {
+  let items = await db.channels.find({}).sort({ xmltv_id: 1 })
 
   let output = {}
-  channels.forEach(channel => {
+  items.forEach(channel => {
     if (!output[channel.xmltv_id]) {
       const countryCode = channel.xmltv_id.split('.')[1]
 
@@ -49,16 +49,11 @@ async function generateChannelsJson() {
     }
   })
 
-  await file.create(
-    `${PUBLIC_DIR}/api/channels.json`,
-    JSON.stringify(Object.values(output), null, 2)
-  )
+  return Object.values(output)
 }
 
-async function generateProgramsJson() {
-  logger.info('Generating programs.json...')
-
-  let items = programs
+async function loadPrograms() {
+  let items = await db.programs.find({})
 
   items = _.sortBy(items, ['channel', 'start'])
   items = _.groupBy(items, 'channel')
@@ -80,7 +75,6 @@ async function generateProgramsJson() {
       }
 
       slots[slotId].forEach(item => {
-        // program.site = item.site
         if (item.title) program.title.push({ lang: item.lang, value: item.title })
         if (item.description)
           program.description.push({
@@ -103,7 +97,19 @@ async function generateProgramsJson() {
     items[channel] = Object.values(slots)
   }
 
-  await file.create(`${PUBLIC_DIR}/api/programs.json`, JSON.stringify(items, null, 2))
+  return items
+}
+
+async function generateChannelsJson() {
+  logger.info('Generating channels.json...')
+
+  await file.create(`${PUBLIC_DIR}/api/channels.json`, JSON.stringify(channels, null, 2))
+}
+
+async function generateProgramsJson() {
+  logger.info('Generating programs.json...')
+
+  await file.create(`${PUBLIC_DIR}/api/programs.json`, JSON.stringify(programs, null, 2))
 }
 
 // async function generateGuideXML() {
