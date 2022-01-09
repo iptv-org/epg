@@ -17,5 +17,10 @@ it('can generate channels.json', () => {
     encoding: 'utf8'
   })
   const parsed = JSON.parse(json)
-  expect(parsed[0]).toMatchObject({})
+  expect(parsed[0]).toMatchObject({
+    id: 'AndorraTV.ad',
+    name: ['Andorra TV'],
+    logo: null,
+    country: 'AD'
+  })
 })
