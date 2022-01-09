@@ -19,9 +19,16 @@ it('can save results', () => {
   })
   const lines = logs.split('\n')
   const parsed = JSON.parse(lines[0])
-  expect(parsed).toMatchObject({
-    channel: 'AndorraTV.ad',
-    lang: 'ca',
-    site: 'andorradifusio.ad'
-  })
+  expect(Object.keys(parsed).sort()).toEqual([
+    '_id',
+    'category',
+    'channel',
+    'description',
+    'icon',
+    'lang',
+    'site',
+    'start',
+    'stop',
+    'title'
+  ])
 })
