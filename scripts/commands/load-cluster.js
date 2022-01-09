@@ -18,7 +18,7 @@ async function main() {
   logger.info(`Loading cluster: ${options.clusterId}`)
   logger.info(`Creating '${clusterLog}'...`)
   await file.create(clusterLog)
-  const items = await db.find({ cluster_id: options.clusterId })
+  const items = await db.channels.find({ cluster_id: options.clusterId })
   const days = options.days || 1
   const total = days * items.length
   logger.info(`Total ${total} requests`)

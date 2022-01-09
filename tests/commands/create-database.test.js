@@ -7,13 +7,13 @@ beforeEach(() => {
   fs.mkdirSync('tests/__data__/output')
 })
 
-it('can create database', () => {
+it('can create channels database', () => {
   const results = execSync(
-    'DB_FILEPATH=tests/__data__/output/test.db node scripts/commands/create-database.js --channels=tests/__data__/input/site.channels.xml --max-clusters=1',
+    'DB_DIR=tests/__data__/output/database node scripts/commands/create-database.js --channels=tests/__data__/input/site.channels.xml --max-clusters=1',
     { encoding: 'utf8' }
   )
 
-  const database = fs.readFileSync(path.resolve('tests/__data__/output/test.db'), {
+  const database = fs.readFileSync(path.resolve('tests/__data__/output/database/channels.db'), {
     encoding: 'utf8'
   })
   const item = database.split('\n').find(i => i.includes('AndorraTV.ad'))

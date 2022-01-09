@@ -46,12 +46,12 @@ async function loadChannels() {
 async function saveToDatabase() {
   logger.info('Saving to the database...')
 
-  await db.reset()
+  await db.channels.reset()
   const chunks = split(_.shuffle(channels), options.maxClusters)
   for (const [i, chunk] of chunks.entries()) {
     for (const item of chunk) {
       item.cluster_id = i + 1
-      await db.insert(item)
+      await db.channels.insert(item)
     }
   }
 }
