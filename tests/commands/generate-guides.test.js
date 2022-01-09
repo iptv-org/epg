@@ -24,3 +24,25 @@ it('can generate channels.json', () => {
     country: 'AD'
   })
 })
+
+it('can generate programs.json', () => {
+  const result = execSync(
+    'PUBLIC_DIR=tests/__data__/output DB_DIR=tests/__data__/input/database node scripts/commands/generate-guides.js',
+    { encoding: 'utf8' }
+  )
+  const json = fs.readFileSync(path.resolve('tests/__data__/output/api/programs.json'), {
+    encoding: 'utf8'
+  })
+  const parsed = JSON.parse(json)
+  const program = parsed['AndorraTV.ad'][0]
+  expect(Object.keys(program).sort()).toEqual([
+    'categories',
+    'channel',
+    'description',
+    'icons',
+    'site',
+    'start',
+    'stop',
+    'title'
+  ])
+})

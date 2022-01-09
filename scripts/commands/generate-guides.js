@@ -14,12 +14,14 @@ async function main() {
   await setUp()
 
   await generateChannelsJson()
+  await generateProgramsJson()
 }
 
 main()
 
 async function setUp() {
   channels = await db.channels.find({})
+  programs = await db.programs.find({})
 }
 
 async function generateChannelsJson() {
@@ -55,53 +57,53 @@ async function generateChannelsJson() {
   await file.create(`${PUBLIC_DIR}/api/channels.json`, JSON.stringify(items))
 }
 
-// async function createProgramsJson() {
-//   logger.info('Creating programs.json...')
+async function generateProgramsJson() {
+  logger.info('Generating programs.json...')
 
-//   let items = programs
+  let items = programs
 
-//   items = _.sortBy(items, ['channel', 'start'])
-//   items = _.groupBy(items, 'channel')
+  items = _.sortBy(items, ['channel', 'start'])
+  items = _.groupBy(items, 'channel')
 
-//   for (let channel in items) {
-//     let programs = items[channel]
-//     programs = Object.values(_.groupBy(programs, i => i.site))[0]
-//     let slots = _.groupBy(programs, i => `${i.start}_${i.stop}`)
+  for (let channel in items) {
+    let channelPrograms = items[channel]
+    channelPrograms = Object.values(_.groupBy(channelPrograms, i => i.site))[0]
+    let slots = _.groupBy(channelPrograms, i => `${i.start}_${i.stop}`)
 
-//     for (let slotId in slots) {
-//       let program = {
-//         channel,
-//         site: null,
-//         title: [],
-//         description: [],
-//         categories: [],
-//         icons: [],
-//         start: null,
-//         stop: null
-//       }
+    for (let slotId in slots) {
+      let program = {
+        channel,
+        site: null,
+        title: [],
+        description: [],
+        categories: [],
+        icons: [],
+        start: null,
+        stop: null
+      }
 
-//       slots[slotId].forEach(item => {
-//         program.site = item.site
-//         if (item.title) program.title.push({ lang: item.lang, value: item.title })
-//         if (item.description)
-//           program.description.push({
-//             lang: item.lang,
-//             value: item.description
-//           })
-//         if (item.category) program.categories.push({ lang: item.lang, value: item.category })
-//         if (item.icon) program.icons.push(item.icon)
-//         program.start = item.start
-//         program.stop = item.stop
-//       })
+      slots[slotId].forEach(item => {
+        program.site = item.site
+        if (item.title) program.title.push({ lang: item.lang, value: item.title })
+        if (item.description)
+          program.description.push({
+            lang: item.lang,
+            value: item.description
+          })
+        if (item.category) program.categories.push({ lang: item.lang, value: item.category })
+        if (item.icon) program.icons.push(item.icon)
+        program.start = item.start
+        program.stop = item.stop
+      })
 
-//       slots[slotId] = program
-//     }
+      slots[slotId] = program
+    }
 
-//     items[channel] = Object.values(slots)
-//   }
+    items[channel] = Object.values(slots)
+  }
 
-//   await file.create(`${PUBLIC_PATH}/api/programs.json`, JSON.stringify(items, null, 2))
-// }
+  await file.create(`${PUBLIC_DIR}/api/programs.json`, JSON.stringify(items, null, 2))
+}
 
 // async function generateGuideXML() {
 //   logger.info(`Generating guide.xml...`)
