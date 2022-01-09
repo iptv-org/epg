@@ -45,7 +45,7 @@ file.create = function (filepath, data = '') {
 }
 
 file.write = function (filepath, data = '') {
-  return fs.writeFile(path.resolve(filepath), data).catch(console.error)
+  return fs.writeFile(path.resolve(filepath), data, { encoding: 'utf8' }).catch(console.error)
 }
 
 file.clear = function (filepath) {

@@ -1,8 +1,5 @@
-const { db, logger, file, parser } = require('../core')
+const { db, logger, file, xml } = require('../core')
 const _ = require('lodash')
-const dayjs = require('dayjs')
-const utc = require('dayjs/plugin/utc')
-dayjs.extend(utc)
 
 let channels = []
 let programs = []
@@ -15,6 +12,7 @@ async function main() {
 
   await generateChannelsJson()
   await generateProgramsJson()
+  await generateEpgXML()
 }
 
 main()
@@ -28,25 +26,23 @@ async function loadChannels() {
   let items = await db.channels.find({}).sort({ xmltv_id: 1 })
 
   let output = {}
-  items.forEach(channel => {
-    if (!output[channel.xmltv_id]) {
-      const countryCode = channel.xmltv_id.split('.')[1]
+  items.forEach(item => {
+    if (!output[item.xmltv_id]) {
+      const countryCode = item.xmltv_id.split('.')[1]
 
-      output[channel.xmltv_id] = {
-        id: channel.xmltv_id,
-        name: [channel.name],
-        logo: channel.logo || null,
-        country: countryCode ? countryCode.toUpperCase() : null
+      output[item.xmltv_id] = {
+        id: item.xmltv_id,
+        name: [item.name],
+        logo: item.logo || null,
+        country: countryCode ? countryCode.toUpperCase() : null,
+        site: item.site
       }
     } else {
-      if (!output[channel.xmltv_id].logo && channel.logo) {
-        output[channel.xmltv_id].logo = channel.logo
-      }
-
-      if (!output[channel.xmltv_id].name.includes(channel.name)) {
-        output[channel.xmltv_id].name.push(channel.name)
-      }
+      output[item.xmltv_id].logo = output[item.xmltv_id].logo || item.logo
+      output[item.xmltv_id].name.push(item.name)
     }
+
+    output[item.xmltv_id].name = _.uniq(output[item.xmltv_id].name)
   })
 
   return Object.values(output)
@@ -103,132 +99,22 @@ async function loadPrograms() {
 async function generateChannelsJson() {
   logger.info('Generating channels.json...')
 
-  await file.create(`${PUBLIC_DIR}/api/channels.json`, JSON.stringify(channels, null, 2))
+  await file.create(`${PUBLIC_DIR}/api/channels.json`, JSON.stringify(channels))
 }
 
 async function generateProgramsJson() {
   logger.info('Generating programs.json...')
 
-  await file.create(`${PUBLIC_DIR}/api/programs.json`, JSON.stringify(programs, null, 2))
+  await file.create(`${PUBLIC_DIR}/api/programs.json`, JSON.stringify(programs))
 }
 
-// async function generateGuideXML() {
-//   logger.info(`Generating guide.xml...`)
+async function generateEpgXML() {
+  logger.info(`Generating epg.xml...`)
 
-//   const channels = Object.keys(programs)
-//   let items = await db.find({ xmltv_id: { $in: channels } })
-//   items = _.sortBy(items, item => item.name)
+  const output = {}
+  const filteredChannels = Object.keys(programs)
+  output.channels = channels.filter(c => filteredChannels.includes(c.id))
+  output.programs = _.flatten(Object.values(programs))
 
-//   let buffer = {}
-//   items.forEach(item => {
-//     if (!buffer[item.xmltv_id]) {
-//       const countryCode = item.xmltv_id.split('.')[1]
-
-//       buffer[item.xmltv_id] = {
-//         id: item.xmltv_id,
-//         display_name: [item.name],
-//         logo: item.logo || null,
-//         country: countryCode ? countryCode.toUpperCase() : null,
-//         site: `https://${programs[item.xmltv_id][0].site}`
-//       }
-//     } else {
-//       if (!buffer[item.xmltv_id].logo && item.logo) {
-//         buffer[item.xmltv_id].logo = item.logo
-//       }
-
-//       if (!buffer[item.xmltv_id].display_name.includes(item.name)) {
-//         buffer[item.xmltv_id].display_name.push(item.name)
-//       }
-//     }
-//   })
-
-//   items = Object.values(buffer)
-
-//   let outputProgs = []
-//   for (let ip of Object.values(programs)) {
-//     outputProgs = outputProgs.concat(ip)
-//   }
-
-//   const xml = convertToXMLTV({ channels: items, programs: outputProgs })
-//   await file.write('./guide.xml', xml)
-// }
-
-// function convertToXMLTV({ channels, programs }) {
-//   let output = `<?xml version="1.0" encoding="UTF-8" ?><tv>\r\n`
-//   for (let channel of channels) {
-//     output += `<channel id="${escapeString(channel.id)}">`
-//     channel.display_name.forEach(displayName => {
-//       output += `<display-name>${escapeString(displayName)}</display-name>`
-//     })
-//     if (channel.logo) {
-//       const logo = escapeString(channel.logo)
-//       output += `<icon src="${logo}"/>`
-//     }
-//     output += `<url>${channel.site}</url>`
-//     output += `</channel>\r\n`
-//   }
-
-//   for (let program of programs) {
-//     if (!program) continue
-
-//     const start = program.start ? dayjs.unix(program.start).utc().format('YYYYMMDDHHmmss ZZ') : ''
-//     const stop = program.stop ? dayjs.unix(program.stop).utc().format('YYYYMMDDHHmmss ZZ') : ''
-//     const icon = escapeString(program.icon)
-
-//     if (start && stop) {
-//       output += `<programme start="${start}" stop="${stop}" channel="${escapeString(
-//         program.channel
-//       )}">`
-
-//       program.title.forEach(title => {
-//         output += `<title lang="${title.lang}">${escapeString(title.value)}</title>`
-//       })
-
-//       program.description.forEach(description => {
-//         output += `<desc lang="${description.lang}">${escapeString(description.value)}</desc>`
-//       })
-
-//       program.categories.forEach(category => {
-//         output += `<category lang="${category.lang}">${escapeString(category.value)}</category>`
-//       })
-
-//       program.icons.forEach(icon => {
-//         output += `<icon src="${icon}"/>`
-//       })
-
-//       output += '</programme>\r\n'
-//     }
-//   }
-
-//   output += '</tv>'
-
-//   return output
-// }
-
-// function escapeString(string, defaultValue = '') {
-//   if (!string) return defaultValue
-
-//   const regex = new RegExp(
-//     '((?:[\0-\x08\x0B\f\x0E-\x1F\uFFFD\uFFFE\uFFFF]|[\uD800-\uDBFF](?![\uDC00-\uDFFF])|(?:[^\uD800-\uDBFF]|^)[\uDC00-\uDFFF]))|([\\x7F-\\x84]|[\\x86-\\x9F]|[\\uFDD0-\\uFDEF]|(?:\\uD83F[\\uDFFE\\uDFFF])|(?:\\uD87F[\\uDF' +
-//       'FE\\uDFFF])|(?:\\uD8BF[\\uDFFE\\uDFFF])|(?:\\uD8FF[\\uDFFE\\uDFFF])|(?:\\uD93F[\\uDFFE\\uD' +
-//       'FFF])|(?:\\uD97F[\\uDFFE\\uDFFF])|(?:\\uD9BF[\\uDFFE\\uDFFF])|(?:\\uD9FF[\\uDFFE\\uDFFF])' +
-//       '|(?:\\uDA3F[\\uDFFE\\uDFFF])|(?:\\uDA7F[\\uDFFE\\uDFFF])|(?:\\uDABF[\\uDFFE\\uDFFF])|(?:\\' +
-//       'uDAFF[\\uDFFE\\uDFFF])|(?:\\uDB3F[\\uDFFE\\uDFFF])|(?:\\uDB7F[\\uDFFE\\uDFFF])|(?:\\uDBBF' +
-//       '[\\uDFFE\\uDFFF])|(?:\\uDBFF[\\uDFFE\\uDFFF])(?:[\\0-\\t\\x0B\\f\\x0E-\\u2027\\u202A-\\uD7FF\\' +
-//       'uE000-\\uFFFF]|[\\uD800-\\uDBFF][\\uDC00-\\uDFFF]|[\\uD800-\\uDBFF](?![\\uDC00-\\uDFFF])|' +
-//       '(?:[^\\uD800-\\uDBFF]|^)[\\uDC00-\\uDFFF]))',
-//     'g'
-//   )
-
-//   string = String(string || '').replace(regex, '')
-
-//   return string
-//     .replace(/&/g, '&amp;')
-//     .replace(/</g, '&lt;')
-//     .replace(/>/g, '&gt;')
-//     .replace(/"/g, '&quot;')
-//     .replace(/'/g, '&apos;')
-//     .replace(/\n|\r/g, ' ')
-//     .replace(/  +/g, ' ')
-//     .trim()
-// }
+  await file.create(`${PUBLIC_DIR}/guides/epg.xml`, xml.create(output))
+}
