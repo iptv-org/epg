@@ -34,8 +34,7 @@ async function loadChannels() {
         id: item.xmltv_id,
         name: [item.name],
         logo: item.logo || null,
-        country: countryCode ? countryCode.toUpperCase() : null,
-        site: item.site
+        country: countryCode ? countryCode.toUpperCase() : null
       }
     } else {
       output[item.xmltv_id].logo = output[item.xmltv_id].logo || item.logo
