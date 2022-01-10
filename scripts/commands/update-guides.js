@@ -1,8 +1,8 @@
 const { db, logger, file, xml } = require('../core')
 const _ = require('lodash')
 
-let channels = []
-let programs = []
+let channels = {}
+let programs = {}
 let sources = {}
 
 const DB_DIR = process.env.DB_DIR || 'scripts/database'
@@ -22,7 +22,7 @@ async function generateMainXML() {
 
   const output = {}
   const filteredChannels = Object.keys(programs)
-  output.channels = channels
+  output.channels = _.flatten(Object.values(channels))
     .filter(c => filteredChannels.includes(c.id))
     .map(c => {
       c.site = sources[c.id]
@@ -36,7 +36,7 @@ async function generateMainXML() {
 async function generateCountries() {
   logger.info(`Generating countries/...`)
 
-  const countryCodes = ['US', 'ZA']
+  const countryCodes = Object.keys(programs).map(id => channels[id].country)
 
   for (let code of countryCodes) {
     const output = {
@@ -44,7 +44,7 @@ async function generateCountries() {
       programs: []
     }
 
-    output.channels = channels
+    output.channels = _.flatten(Object.values(channels))
       .filter(c => c.country === code)
       .map(c => {
         c.site = sources[c.id]
@@ -86,7 +86,7 @@ async function loadChannels() {
     output[item.xmltv_id].name = _.uniq(output[item.xmltv_id].name)
   })
 
-  return Object.values(output)
+  return output
 }
 
 async function loadPrograms() {
