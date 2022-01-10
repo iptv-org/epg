@@ -15,11 +15,10 @@ beforeEach(() => {
     'tests/__data__/temp/database/programs.db'
   )
 
-  const results = execSync(
+  execSync(
     'DB_DIR=tests/__data__/temp/database GUIDES_DIR=tests/__data__/output/guides node scripts/commands/update-guides.js',
     { encoding: 'utf8' }
   )
-  // console.log(results)
 })
 
 afterEach(() => {
@@ -33,7 +32,7 @@ it('can generate epg.xml', () => {
   expect(output).toBe(expected)
 })
 
-it('can generate /countries guides', () => {
+fit('can generate /countries guides', () => {
   const output1 = content('tests/__data__/output/guides/countries/us.epg.xml')
   const expected1 = content('tests/__data__/expected/guides/countries/us.epg.xml')
 
