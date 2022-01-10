@@ -19,6 +19,8 @@ xml.create = function ({ channels, programs }) {
 	}
 
 	for (let program of programs) {
+		if (!program) continue
+
 		const start = program.start ? dayjs.unix(program.start).utc().format('YYYYMMDDHHmmss ZZ') : ''
 		const stop = program.stop ? dayjs.unix(program.stop).utc().format('YYYYMMDDHHmmss ZZ') : ''
 

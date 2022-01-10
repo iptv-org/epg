@@ -12,6 +12,7 @@ async function main() {
   await setUp()
 
   await generateMainXML()
+  await generateCountries()
 }
 
 main()
@@ -30,6 +31,32 @@ async function generateMainXML() {
   output.programs = _.flatten(Object.values(programs))
 
   await file.create(`${GUIDES_DIR}/epg.xml`, xml.create(output))
+}
+
+async function generateCountries() {
+  logger.info(`Generating countries/...`)
+
+  const countryCodes = ['US', 'ZA']
+
+  for (let code of countryCodes) {
+    const output = {
+      channels: [],
+      programs: []
+    }
+
+    output.channels = channels
+      .filter(c => c.country === code)
+      .map(c => {
+        c.site = sources[c.id]
+        return c
+      })
+
+    for (let channel of output.channels) {
+      output.programs = output.programs.concat(programs[channel.id])
+    }
+
+    await file.create(`${GUIDES_DIR}/countries/${code.toLowerCase()}.epg.xml`, xml.create(output))
+  }
 }
 
 async function setUp() {

@@ -50,7 +50,9 @@ async function saveToDatabase() {
   const chunks = split(_.shuffle(channels), options.maxClusters)
   for (const [i, chunk] of chunks.entries()) {
     for (const item of chunk) {
+      const countryCode = item.xmltv_id.split('.')[1]
       item.cluster_id = i + 1
+      item.country = countryCode ? countryCode.toUpperCase() : null
       await db.channels.insert(item)
     }
   }

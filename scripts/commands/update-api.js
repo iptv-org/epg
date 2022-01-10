@@ -28,13 +28,11 @@ async function loadChannels() {
   let output = {}
   items.forEach(item => {
     if (!output[item.xmltv_id]) {
-      const countryCode = item.xmltv_id.split('.')[1]
-
       output[item.xmltv_id] = {
         id: item.xmltv_id,
         name: [item.name],
         logo: item.logo || null,
-        country: countryCode ? countryCode.toUpperCase() : null
+        country: item.country
       }
     } else {
       output[item.xmltv_id].logo = output[item.xmltv_id].logo || item.logo

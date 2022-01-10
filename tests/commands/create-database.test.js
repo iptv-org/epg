@@ -17,6 +17,7 @@ it('can create channels database', () => {
 
   expect(output).toMatchObject({
     lang: 'ru',
+    country: 'US',
     xmltv_id: 'CNNInternationalEurope.us',
     site_id: '140',
     name: 'CNN International Europe',

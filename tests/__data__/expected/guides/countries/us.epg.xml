@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?><tv>
 <channel id="CNNInternationalEurope.us"><display-name>CNN International Europe</display-name><display-name>CNN Int</display-name><icon src="https://proxymedia.woopic.com/api/v1/images/553%2Flogos%2Fv2%2Flogos%2Flivetv_cnn%2F20151026_092415%2FwebTVLogo%2Flogo_180x96.png"/><url>https://magticom.ge</url></channel>
-<channel id="MNetMovies2.za"><display-name>M-Net Movies 2</display-name><icon src="https://rndcdn.dstv.com/dstvcms/2020/08/31/M-Net_Movies_2_Logo_4-3_lightbackground_xlrg.png"/><url>https://dstv.com</url></channel>
 <programme start="20220110000000 +0000" stop="20220110010000 +0000" channel="CNNInternationalEurope.us"><title lang="ru">CNN Newsroom Sunday</title><desc lang="ru">Свежая мировая информационная сводка от CNN. О политике, экономике, общественной жизни, культуре, спорте.</desc></programme>
 <programme start="20220110010000 +0000" stop="20220110020000 +0000" channel="CNNInternationalEurope.us"><title lang="ru">Fareed Zakaria GPS</title><desc lang="ru">Интервью с главными игроками мировой политики.</desc></programme>
 <programme start="20220110020000 +0000" stop="20220110023000 +0000" channel="CNNInternationalEurope.us"><title lang="ru">African Voices Changemakers. 114-я серия</title><desc lang="ru">114-я серия. Африка сегодня - люди, новости, события.</desc></programme>
@@ -33,18 +32,4 @@
 <programme start="20220110220000 +0000" stop="20220110230000 +0000" channel="CNNInternationalEurope.us"><title lang="ru">The Situation Room with Wolf Blitzer</title><desc lang="ru">Командный центр новостей, политики и неординарных репортажей со всего мира.</desc></programme>
 <programme start="20220110230000 +0000" stop="20220111000000 +0000" channel="CNNInternationalEurope.us"><title lang="ru">Erin Burnett OutFront</title><desc lang="ru">Обсуждение самых важных мировых тем в эфире канала CNN.</desc></programme>
 <programme start="20220111000000 +0000" stop="20220111010000 +0000" channel="CNNInternationalEurope.us"><title lang="ru">Anderson Cooper 360</title><desc lang="ru">Уникальный взгляд Андерсона Купера на главные события мира.</desc></programme>
-<programme start="20220109205500 +0000" stop="20220109223500 +0000" channel="MNetMovies2.za"><title lang="en">Fatman</title></programme>
-<programme start="20220109223500 +0000" stop="20220110005500 +0000" channel="MNetMovies2.za"><title lang="en">Motherless Brooklyn</title></programme>
-<programme start="20220110005500 +0000" stop="20220110024500 +0000" channel="MNetMovies2.za"><title lang="en">The Water Diviner</title></programme>
-<programme start="20220110024500 +0000" stop="20220110045000 +0000" channel="MNetMovies2.za"><title lang="en">Outbreak</title></programme>
-<programme start="20220110045000 +0000" stop="20220110063500 +0000" channel="MNetMovies2.za"><title lang="en">Paranoia</title></programme>
-<programme start="20220110063500 +0000" stop="20220110075500 +0000" channel="MNetMovies2.za"><title lang="en">Beyond The Line</title></programme>
-<programme start="20220110075500 +0000" stop="20220110101000 +0000" channel="MNetMovies2.za"><title lang="en">Backdraft</title></programme>
-<programme start="20220110101000 +0000" stop="20220110113500 +0000" channel="MNetMovies2.za"><title lang="en">Mafia</title></programme>
-<programme start="20220110113500 +0000" stop="20220110134500 +0000" channel="MNetMovies2.za"><title lang="en">12 Strong</title></programme>
-<programme start="20220110134500 +0000" stop="20220110154000 +0000" channel="MNetMovies2.za"><title lang="en">Robin Hood</title></programme>
-<programme start="20220110154000 +0000" stop="20220110171300 +0000" channel="MNetMovies2.za"><title lang="en">The Scorpion King</title></programme>
-<programme start="20220110171300 +0000" stop="20220110190000 +0000" channel="MNetMovies2.za"><title lang="en">The Last Witch Hunter</title></programme>
-<programme start="20220110190000 +0000" stop="20220110204000 +0000" channel="MNetMovies2.za"><title lang="en">Force Of Nature</title></programme>
-<programme start="20220110204000 +0000" stop="20220110214000 +0000" channel="MNetMovies2.za"><title lang="en">Bad Boys For Life</title></programme>
 </tv>
