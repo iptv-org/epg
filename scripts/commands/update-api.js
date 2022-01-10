@@ -6,14 +6,13 @@ let programs = []
 let sources = {}
 
 const DB_DIR = process.env.DB_DIR || 'scripts/database'
-const PUBLIC_DIR = process.env.PUBLIC_DIR || '.gh-pages'
+const API_DIR = process.env.API_DIR || '.gh-pages/api'
 
 async function main() {
   await setUp()
 
   await generateChannelsJson()
   await generateProgramsJson()
-  await generateEpgXML()
 }
 
 main()
@@ -100,27 +99,11 @@ async function loadPrograms() {
 async function generateChannelsJson() {
   logger.info('Generating channels.json...')
 
-  await file.create(`${PUBLIC_DIR}/api/channels.json`, JSON.stringify(channels))
+  await file.create(`${API_DIR}/channels.json`, JSON.stringify(channels))
 }
 
 async function generateProgramsJson() {
   logger.info('Generating programs.json...')
 
-  await file.create(`${PUBLIC_DIR}/api/programs.json`, JSON.stringify(programs))
-}
-
-async function generateEpgXML() {
-  logger.info(`Generating epg.xml...`)
-
-  const output = {}
-  const filteredChannels = Object.keys(programs)
-  output.channels = channels
-    .filter(c => filteredChannels.includes(c.id))
-    .map(c => {
-      c.site = sources[c.id]
-      return c
-    })
-  output.programs = _.flatten(Object.values(programs))
-
-  await file.create(`${PUBLIC_DIR}/guides/epg.xml`, xml.create(output))
+  await file.create(`${API_DIR}/programs.json`, JSON.stringify(programs))
 }

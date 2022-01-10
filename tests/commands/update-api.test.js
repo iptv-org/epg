@@ -16,7 +16,7 @@ beforeEach(() => {
   )
 
   execSync(
-    'DB_DIR=tests/__data__/temp/database PUBLIC_DIR=tests/__data__/output node scripts/commands/generate-guides.js',
+    'DB_DIR=tests/__data__/temp/database API_DIR=tests/__data__/output/api node scripts/commands/update-api.js',
     { encoding: 'utf8' }
   )
 })
@@ -35,13 +35,6 @@ it('can generate channels.json', () => {
 it('can generate programs.json', () => {
   const output = content('tests/__data__/output/api/programs.json')
   const expected = content('tests/__data__/expected/api/programs.json')
-
-  expect(output).toBe(expected)
-})
-
-it('can generate epg.xml', () => {
-  const output = content('tests/__data__/output/guides/epg.xml')
-  const expected = content('tests/__data__/expected/guides/epg.xml')
 
   expect(output).toBe(expected)
 })
