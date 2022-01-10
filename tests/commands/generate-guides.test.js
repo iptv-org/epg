@@ -10,6 +10,10 @@ beforeEach(() => {
     'tests/__data__/input/database/channels.db',
     'tests/__data__/temp/database/channels.db'
   )
+  fs.copyFileSync(
+    'tests/__data__/input/database/programs.db',
+    'tests/__data__/temp/database/programs.db'
+  )
 
   execSync(
     'DB_DIR=tests/__data__/temp/database PUBLIC_DIR=tests/__data__/output node scripts/commands/generate-guides.js',
