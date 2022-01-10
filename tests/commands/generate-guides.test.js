@@ -5,11 +5,20 @@ const { execSync } = require('child_process')
 beforeEach(() => {
   fs.rmdirSync('tests/__data__/output', { recursive: true })
   fs.mkdirSync('tests/__data__/output')
+  fs.mkdirSync('tests/__data__/temp/database', { recursive: true })
+  fs.copyFileSync(
+    'tests/__data__/input/database/channels.db',
+    'tests/__data__/temp/database/channels.db'
+  )
 
   execSync(
-    'PUBLIC_DIR=tests/__data__/output DB_DIR=tests/__data__/input/database node scripts/commands/generate-guides.js',
+    'DB_DIR=tests/__data__/temp/database PUBLIC_DIR=tests/__data__/output node scripts/commands/generate-guides.js',
     { encoding: 'utf8' }
   )
+})
+
+afterEach(() => {
+  fs.rmdirSync('tests/__data__/temp', { recursive: true })
 })
 
 it('can generate channels.json', () => {
