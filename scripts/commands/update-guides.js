@@ -36,15 +36,16 @@ async function generateMainXML() {
 async function generateCountries() {
   logger.info(`Generating countries/...`)
 
-  const countryCodes = Object.keys(programs).map(id => channels[id].country)
+  const filteredChannels = Object.keys(programs).map(id => channels[id])
 
-  for (let code of countryCodes) {
+  for (let channel of filteredChannels) {
+    const code = channel.country
     const output = {
       channels: [],
       programs: []
     }
 
-    output.channels = _.flatten(Object.values(channels))
+    output.channels = filteredChannels
       .filter(c => c.country === code)
       .map(c => {
         c.site = sources[c.id]

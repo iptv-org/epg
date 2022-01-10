@@ -32,7 +32,7 @@ it('can generate epg.xml', () => {
   expect(output).toBe(expected)
 })
 
-fit('can generate /countries guides', () => {
+it('can generate /countries guides', () => {
   const output1 = content('tests/__data__/output/guides/countries/us.epg.xml')
   const expected1 = content('tests/__data__/expected/guides/countries/us.epg.xml')
 
