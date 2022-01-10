@@ -22,5 +22,5 @@ it('can load cluster', () => {
   const lines = output.split('\n')
   const parsed = JSON.parse(lines[0])
 
-  expect(parsed._id).toBe('K1kaxwsWVjsRIZL6')
+  expect(parsed._id).toBe('1XzrxNkSF2AQNBrT')
 })
