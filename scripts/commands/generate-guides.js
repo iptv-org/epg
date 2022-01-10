@@ -3,6 +3,7 @@ const _ = require('lodash')
 
 let channels = []
 let programs = []
+let sources = {}
 
 const DB_DIR = process.env.DB_DIR || 'scripts/database'
 const PUBLIC_DIR = process.env.PUBLIC_DIR || '.gh-pages'
@@ -80,6 +81,7 @@ async function loadPrograms() {
         program.image = program.image || item.icon
         program.start = item.start
         program.stop = item.stop
+        sources[channel] = item.site
       })
 
       program.title = _.uniqBy(program.title, 'lang')
@@ -112,7 +114,12 @@ async function generateEpgXML() {
 
   const output = {}
   const filteredChannels = Object.keys(programs)
-  output.channels = channels.filter(c => filteredChannels.includes(c.id))
+  output.channels = channels
+    .filter(c => filteredChannels.includes(c.id))
+    .map(c => {
+      c.site = sources[c.id]
+      return c
+    })
   output.programs = _.flatten(Object.values(programs))
 
   await file.create(`${PUBLIC_DIR}/guides/epg.xml`, xml.create(output))
