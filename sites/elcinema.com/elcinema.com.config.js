@@ -105,7 +105,12 @@ function parseDescription(item) {
 
 function parseItems(content, channel, date) {
   const $ = cheerio.load(content)
-  const dateString = date.locale(channel.lang).format('dddd D MMMM')
+  
+//  const dateString = date.locale(channel.lang).format('dddd D MMMM')
+  const dayNum = date.locale(channel.lang).format('D')
+  if ( dayNum.length == 1 ) dateString = date.locale(channel.lang).format('dddd  D MMMM')
+  if ( dayNum.length == 2 ) dateString = date.locale(channel.lang).format('dddd D MMMM')
+  
   const list = $('.dates')
     .filter((i, el) => {
       return $(el).text().trim() === dateString
