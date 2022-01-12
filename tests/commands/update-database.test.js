@@ -23,6 +23,7 @@ it('can update database', () => {
     '_id',
     'category',
     'channel',
+    'country',
     'description',
     'icon',
     'lang',

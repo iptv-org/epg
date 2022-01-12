@@ -15,31 +15,32 @@ beforeEach(() => {
     'tests/__data__/temp/database/programs.db'
   )
 
-  execSync(
-    'DB_DIR=tests/__data__/temp/database GUIDES_DIR=tests/__data__/output/guides node scripts/commands/update-guides.js',
+  const r = execSync(
+    'DB_DIR=tests/__data__/temp/database PUBLIC_DIR=tests/__data__/output node scripts/commands/update-guides.js',
     { encoding: 'utf8' }
   )
+  console.log(r)
 })
 
 afterEach(() => {
   fs.rmdirSync('tests/__data__/temp', { recursive: true })
 })
 
-it('can generate epg.xml', () => {
-  const output = content('tests/__data__/output/guides/epg.xml')
-  const expected = content('tests/__data__/expected/guides/epg.xml')
+fit('can generate epg.xml', () => {
+  const output = content('tests/__data__/output/epg.xml')
+  const expected = content('tests/__data__/expected/epg.xml')
 
   expect(output).toBe(expected)
 })
 
-it('can generate /countries guides', () => {
-  const output1 = content('tests/__data__/output/guides/countries/us.epg.xml')
-  const expected1 = content('tests/__data__/expected/guides/countries/us.epg.xml')
+it('can generate /guides', () => {
+  const output1 = content('tests/__data__/output/guides/us/magticom.ge.epg.xml')
+  const expected1 = content('tests/__data__/expected/guides/us/magticom.ge.epg.xml')
 
   expect(output1).toBe(expected1)
 
-  const output2 = content('tests/__data__/output/guides/countries/za.epg.xml')
-  const expected2 = content('tests/__data__/expected/guides/countries/za.epg.xml')
+  const output2 = content('tests/__data__/output/guides/za/dstv.com.epg.xml')
+  const expected2 = content('tests/__data__/expected/guides/za/dstv.com.epg.xml')
 
   expect(output2).toBe(expected2)
 })

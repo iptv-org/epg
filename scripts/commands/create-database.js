@@ -33,10 +33,16 @@ async function loadChannels() {
   const files = await file.list(options.channels)
   for (const filepath of files) {
     const dir = file.dirname(filepath)
+    const filename = file.basename(filepath)
+    const [_, code] = filename.match(/_(.*).channels.xml/i) || ['', '']
+    const [country, __] = code.split('-') || [null, null]
     const items = await parser.parseChannels(filepath)
     for (const item of items) {
+      // const countryCode = item.xmltv_id.split('.')[1]
+      // item.country = countryCode ? countryCode.toUpperCase() : null
       item.channelsPath = filepath
       item.configPath = `${dir}/${item.site}.config.js`
+      item.country = country.toUpperCase()
       channels.push(item)
     }
   }
@@ -50,9 +56,7 @@ async function saveToDatabase() {
   const chunks = split(_.shuffle(channels), options.maxClusters)
   for (const [i, chunk] of chunks.entries()) {
     for (const item of chunk) {
-      const countryCode = item.xmltv_id.split('.')[1]
       item.cluster_id = i + 1
-      item.country = countryCode ? countryCode.toUpperCase() : null
       await db.channels.insert(item)
     }
   }

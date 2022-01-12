@@ -9,9 +9,11 @@ async function main() {
   for (const filepath of files) {
     const results = await parser.parseLogs(filepath)
     results.forEach(result => {
-      const programs = result.programs.map(p => {
-        p.site = result.site
-        return p
+      const programs = result.programs.map(program => {
+        program.site = result.site
+        program.country = result.country
+
+        return program
       })
       db.programs.insert(programs)
     })

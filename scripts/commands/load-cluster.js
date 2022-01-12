@@ -18,18 +18,18 @@ async function main() {
   logger.info(`Loading cluster: ${options.clusterId}`)
   logger.info(`Creating '${clusterLog}'...`)
   await file.create(clusterLog)
-  const items = await db.channels.find({ cluster_id: options.clusterId })
+  const channels = await db.channels.find({ cluster_id: options.clusterId })
   const days = options.days || 1
-  const total = days * items.length
+  const total = days * channels.length
   logger.info(`Total ${total} requests`)
 
   logger.info('Loading...')
   const results = {}
   let i = 1
-  for (const item of items) {
-    const config = require(file.resolve(item.configPath))
+  for (const channel of channels) {
+    const config = require(file.resolve(channel.configPath))
     config.days = config.days || days
-    const programs = await grabber.grab(item, config, (data, err) => {
+    const programs = await grabber.grab(channel, config, (data, err) => {
       logger.info(
         `[${i}/${total}] ${config.site} - ${data.channel.xmltv_id} - ${data.date.format(
           'MMM D, YYYY'
@@ -42,7 +42,8 @@ async function main() {
     })
     await file.append(
       clusterLog,
-      JSON.stringify({ _id: item._id, site: config.site, programs }) + '\n'
+      JSON.stringify({ _id: channel._id, site: config.site, country: channel.country, programs }) +
+        '\n'
     )
   }
 

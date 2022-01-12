@@ -1,24 +1,23 @@
 const { db, logger, file, xml } = require('../core')
 const _ = require('lodash')
 
-let channels = {}
-let programs = {}
 let sources = {}
 
 const DB_DIR = process.env.DB_DIR || 'scripts/database'
-const GUIDES_DIR = process.env.GUIDES_DIR || '.gh-pages/guides'
+const PUBLIC_DIR = process.env.PUBLIC_DIR || '.gh-pages'
 
 async function main() {
-  await setUp()
-
-  await generateMainXML()
-  await generateCountries()
+  await generateEpgXML()
+  await generateGuides()
 }
 
 main()
 
-async function generateMainXML() {
+async function generateEpgXML() {
   logger.info(`Generating epg.xml...`)
+
+  const channels = await loadChannels()
+  const programs = await loadPrograms()
 
   const output = {}
   const filteredChannels = Object.keys(programs)
@@ -30,39 +29,26 @@ async function generateMainXML() {
     })
   output.programs = _.flatten(Object.values(programs))
 
-  await file.create(`${GUIDES_DIR}/epg.xml`, xml.create(output))
+  await file.create(`${PUBLIC_DIR}/epg.xml`, xml.create(output))
 }
 
-async function generateCountries() {
-  logger.info(`Generating countries/...`)
+async function generateGuides() {
+  logger.info(`Generating guides/...`)
 
-  const filteredChannels = Object.keys(programs).map(id => channels[id])
+  let channels = await db.channels.find({}).sort({ xmltv_id: 1 })
+  const programs = await db.programs.find({}).sort({ channel: 1, start: 1 })
+  const grouped = _.groupBy(programs, i => `${i.country.toLowerCase()}/${i.site}`)
 
-  for (let channel of filteredChannels) {
-    const code = channel.country
-    const output = {
-      channels: [],
-      programs: []
-    }
-
-    output.channels = filteredChannels
-      .filter(c => c.country === code)
-      .map(c => {
-        c.site = sources[c.id]
-        return c
-      })
-
-    for (let channel of output.channels) {
-      output.programs = output.programs.concat(programs[channel.id])
-    }
-
-    await file.create(`${GUIDES_DIR}/countries/${code.toLowerCase()}.epg.xml`, xml.create(output))
+  for (let groupId in grouped) {
+    const filepath = `${PUBLIC_DIR}/guides/${groupId}.epg.xml`
+    const groupProgs = grouped[groupId]
+    const groupChannels = Object.keys(_.groupBy(groupProgs, 'channel')).map(key => {
+      let [_, site] = groupId.split('/')
+      return channels.find(i => i.xmltv_id === key && i.site === site)
+    })
+    const output = xml.create({ channels: groupChannels, programs: groupProgs })
+    await file.create(filepath, output)
   }
-}
-
-async function setUp() {
-  channels = await loadChannels()
-  programs = await loadPrograms()
 }
 
 async function loadChannels() {
@@ -89,50 +75,66 @@ async function loadChannels() {
 }
 
 async function loadPrograms() {
-  let items = await db.programs.find({})
+  let programs = await db.programs.find({})
 
-  items = _.sortBy(items, ['channel', 'start'])
-  items = _.groupBy(items, 'channel')
-
-  for (let channel in items) {
-    let channelPrograms = items[channel]
-    channelPrograms = Object.values(_.groupBy(channelPrograms, i => i.site))[0]
-    let slots = _.groupBy(channelPrograms, i => `${i.start}_${i.stop}`)
-
-    for (let slotId in slots) {
-      let program = {
-        channel,
-        title: [],
-        description: [],
-        categories: [],
-        image: null,
-        start: null,
-        stop: null
-      }
-
-      slots[slotId].forEach(item => {
-        if (item.title) program.title.push({ lang: item.lang, value: item.title })
-        if (item.description)
-          program.description.push({
-            lang: item.lang,
-            value: item.description
-          })
-        if (item.category) program.categories.push({ lang: item.lang, value: item.category })
-        program.image = program.image || item.icon
-        program.start = item.start
-        program.stop = item.stop
-        sources[channel] = item.site
-      })
-
-      program.title = _.uniqBy(program.title, 'lang')
-      program.description = _.uniqBy(program.description, 'lang')
-      program.categories = _.uniqBy(program.categories, 'lang')
-
-      slots[slotId] = program
+  programs = programs.map(program => {
+    return {
+      title: program.title ? [{ lang: program.lang, value: program.title }] : [],
+      description: program.description ? [{ lang: program.lang, value: program.description }] : [],
+      categories: program.category ? [{ lang: program.lang, value: program.category }] : [],
+      icon: program.icon,
+      channel: program.channel,
+      lang: program.lang,
+      start: program.start,
+      stop: program.stop,
+      site: program.site,
+      country: program.country,
+      _id: program._id
     }
+  })
 
-    items[channel] = Object.values(slots)
-  }
+  programs = _.sortBy(programs, ['channel', 'start'])
+  programs = _.groupBy(programs, 'channel')
 
-  return items
+  // for (let channel in items) {
+  //   let channelPrograms = items[channel]
+  //   channelPrograms = Object.values(_.groupBy(channelPrograms, i => i.site))[0]
+  //   let slots = _.groupBy(channelPrograms, i => `${i.start}_${i.stop}`)
+
+  //   for (let slotId in slots) {
+  //     let program = {
+  //       channel,
+  //       title: [],
+  //       description: [],
+  //       categories: [],
+  //       image: null,
+  //       start: null,
+  //       stop: null
+  //     }
+
+  //     slots[slotId].forEach(item => {
+  //       if (item.title) program.title.push({ lang: item.lang, value: item.title })
+  //       if (item.description)
+  //         program.description.push({
+  //           lang: item.lang,
+  //           value: item.description
+  //         })
+  //       if (item.category) program.categories.push({ lang: item.lang, value: item.category })
+  //       program.image = program.image || item.icon
+  //       program.start = item.start
+  //       program.stop = item.stop
+  //       sources[channel] = item.site
+  //     })
+
+  //     program.title = _.uniqBy(program.title, 'lang')
+  //     program.description = _.uniqBy(program.description, 'lang')
+  //     program.categories = _.uniqBy(program.categories, 'lang')
+
+  //     slots[slotId] = program
+  //   }
+
+  //   items[channel] = Object.values(slots)
+  // }
+
+  return programs
 }

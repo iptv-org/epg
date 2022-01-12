@@ -22,7 +22,7 @@ it('can create channels database', () => {
     site_id: '140',
     name: 'CNN International Europe',
     site: 'example.com',
-    channelsPath: 'tests/__data__/input/example.com.channels.xml',
+    channelsPath: 'tests/__data__/input/example.com_us.channels.xml',
     configPath: 'tests/__data__/input/example.com.config.js',
     cluster_id: 1
   })
