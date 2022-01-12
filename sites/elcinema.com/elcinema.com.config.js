@@ -105,10 +105,15 @@ function parseDescription(item) {
 
 function parseItems(content, channel, date) {
   const $ = cheerio.load(content)
-  const dateString = date.locale(channel.lang).format('dddd D MMMM')
+  
+ const dateString = date.locale(channel.lang).format('dddd D MMMM')
+  
   const list = $('.dates')
     .filter((i, el) => {
-      return $(el).text().trim() === dateString
+      let parsedDateString = $(el).text().trim()
+      parsedDateString = parsedDateString.replace(/\s\s+/g, ' ')
+      
+      return parsedDateString === dateString
     })
     .first()
     .parent()
