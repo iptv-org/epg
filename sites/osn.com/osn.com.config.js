@@ -41,8 +41,8 @@ module.exports = {
       const duration = parseDuration(item)
       const stop = start.add(duration, 'm')
       programs.push({
-        title: item.Arab_Title,
-        category: item.GenreArabicName,
+        title: parseTitle(item, channel),
+        category: parseCategory(item, channel),
         start: start.toString(),
         stop: stop.toString()
       })
@@ -50,6 +50,14 @@ module.exports = {
 
     return programs
   }
+}
+
+function parseTitle(item, channel) {
+  return channel.lang === 'ar' ? item.Arab_Title : item.Title
+}
+
+function parseCategory(item, channel) {
+  return channel.lang === 'ar' ? item.GenreArabicName : item.GenreEnglishName
 }
 
 function parseDuration(item) {
