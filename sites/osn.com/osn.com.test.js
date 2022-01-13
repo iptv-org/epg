@@ -1,4 +1,4 @@
-// NODE_OPTIONS=--insecure-http-parser npx epg-grabber --config=sites/osn.com/osn.com.config.js --channels=sites/osn.com/osn.com_ae.channels.xml --days=2 --output=guide.xml
+// NODE_OPTIONS=--insecure-http-parser npx epg-grabber --config=sites/osn.com/osn.com.config.js --channels=sites/osn.com/osn.com_ae.channels.xml --output=guide.xml --days=2
 
 const { parser, url, logo, request } = require('./osn.com.config.js')
 const dayjs = require('dayjs')
@@ -21,6 +21,14 @@ it('can generate valid request data', () => {
     channelCode: 'AAN',
     isMobile: false,
     hoursForMobile: 0
+  })
+})
+
+it('can generate valid request headers', () => {
+  const result = request.headers
+  expect(result).toMatchObject({
+    'Content-Type': 'application/json; charset=UTF-8',
+    Referer: 'https://www.osn.com'
   })
 })
 

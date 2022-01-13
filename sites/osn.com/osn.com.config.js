@@ -9,6 +9,10 @@ module.exports = {
   site: 'osn.com',
   request: {
     method: 'POST',
+    headers: {
+      'Content-Type': 'application/json; charset=UTF-8',
+      Referer: 'https://www.osn.com'
+    },
     data({ channel, date }) {
       const [selectedCountry, channelCode] = channel.site_id.split('#')
       return {
