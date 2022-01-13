@@ -9,6 +9,10 @@ module.exports = {
   site: 'osn.com',
   request: {
     method: 'POST',
+    headers: {
+      'Content-Type': 'application/json; charset=UTF-8',
+      Referer: 'https://www.osn.com'
+    },
     data({ channel, date }) {
       const [selectedCountry, channelCode] = channel.site_id.split('#')
       return {
@@ -37,8 +41,8 @@ module.exports = {
       const duration = parseDuration(item)
       const stop = start.add(duration, 'm')
       programs.push({
-        title: item.Arab_Title,
-        category: item.GenreArabicName,
+        title: parseTitle(item, channel),
+        category: parseCategory(item, channel),
         start: start.toString(),
         stop: stop.toString()
       })
@@ -46,6 +50,14 @@ module.exports = {
 
     return programs
   }
+}
+
+function parseTitle(item, channel) {
+  return channel.lang === 'ar' ? item.Arab_Title : item.Title
+}
+
+function parseCategory(item, channel) {
+  return channel.lang === 'ar' ? item.GenreArabicName : item.GenreEnglishName
 }
 
 function parseDuration(item) {
