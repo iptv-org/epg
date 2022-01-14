@@ -30,7 +30,7 @@ https://iptv-org.github.io/epg/index.html
 You can also get a list of all available channels and their codes in JSON format by sending a GET request to:
 
 ```
-https://iptv-org.github.io/epg/codes.json
+https://iptv-org.github.io/epg/api/channels.json
 ```
 
 If successful, you should get the following response:
@@ -43,10 +43,12 @@ If successful, you should get the following response:
 [
   ...
   {
-    "tvg_id": "CNNUSA.us",
-    "display_name": "CNN USA",
+    "id": "CNNUSA.us",
+    "name": [
+      "CNN USA"
+    ],
     "logo": "https://cdn.tvpassport.com/image/station/100x100/cnn.png",
-    "country": "us",
+    "country": "US",
     "guides": [
       "https://iptv-org.github.io/epg/guides/tvtv.us.guide.xml",
       ...
