@@ -34,12 +34,14 @@ async function loadChannels() {
   for (const filepath of files) {
     const dir = file.dirname(filepath)
     const filename = file.basename(filepath)
+    const [_, gid] = filename.match(/_([a-z-]+)\.channels\.xml/i) || [null, null]
     const items = await parser.parseChannels(filepath)
     for (const item of items) {
       const countryCode = item.xmltv_id.split('.')[1]
       item.country = countryCode ? countryCode.toUpperCase() : null
       item.channelsPath = filepath
       item.configPath = `${dir}/${item.site}.config.js`
+      item.gid = gid
       channels.push(item)
     }
   }

@@ -7,7 +7,7 @@ beforeEach(() => {
   fs.mkdirSync('tests/__data__/output')
 
   execSync(
-    'DB_DIR=tests/__data__/output/database node scripts/commands/create-database.js --channels=tests/__data__/input/*.channels.xml --max-clusters=1',
+    'DB_DIR=tests/__data__/output/database node scripts/commands/create-database.js --channels=tests/__data__/input/sites/*.channels.xml --max-clusters=1',
     { encoding: 'utf8' }
   )
 })
@@ -15,15 +15,29 @@ beforeEach(() => {
 it('can create channels database', () => {
   const output = content('tests/__data__/output/database/channels.db')
 
-  expect(output).toMatchObject({
+  expect(output[0]).toMatchObject({
+    lang: 'en',
+    country: 'LV',
+    xmltv_id: '1Plus2.lv',
+    site_id: '1341',
+    name: '1+2',
+    site: 'example.com',
+    channelsPath: 'tests/__data__/input/sites/example.com_en-ee.channels.xml',
+    configPath: 'tests/__data__/input/sites/example.com.config.js',
+    gid: 'en-ee',
+    cluster_id: 1
+  })
+
+  expect(output[1]).toMatchObject({
     lang: 'ru',
     country: 'US',
     xmltv_id: 'CNNInternationalEurope.us',
     site_id: '140',
     name: 'CNN International Europe',
     site: 'example.com',
-    channelsPath: 'tests/__data__/input/example.com_us.channels.xml',
-    configPath: 'tests/__data__/input/example.com.config.js',
+    channelsPath: 'tests/__data__/input/sites/example.com_ca-nl.channels.xml',
+    configPath: 'tests/__data__/input/sites/example.com.config.js',
+    gid: 'ca-nl',
     cluster_id: 1
   })
 })
@@ -33,5 +47,10 @@ function content(filepath) {
     encoding: 'utf8'
   })
 
-  return JSON.parse(data)
+  return data
+    .split('\n')
+    .filter(l => l)
+    .map(l => {
+      return JSON.parse(l)
+    })
 }
