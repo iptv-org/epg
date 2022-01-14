@@ -12,7 +12,7 @@ beforeEach(() => {
   )
 
   execSync(
-    'DB_DIR=tests/__data__/temp/database LOGS_DIR=tests/__data__/output/logs node scripts/commands/load-cluster.js --cluster-id=1',
+    'DB_DIR=tests/__data__/temp/database LOGS_DIR=tests/__data__/output/logs node scripts/commands/load-cluster.js --cluster-id=1 --timeout=1',
     { encoding: 'utf8' }
   )
 })
@@ -22,14 +22,32 @@ afterEach(() => {
 })
 
 it('can load cluster', () => {
-  const output = fs.readFileSync(
-    path.resolve('tests/__data__/output/logs/load-cluster/cluster_1.log'),
-    {
-      encoding: 'utf8'
-    }
-  )
-  const lines = output.split('\n')
-  const parsed = JSON.parse(lines[0])
+  const output = content('tests/__data__/output/logs/load-cluster/cluster_1.log')
 
-  expect(parsed._id).toBe('0Wefq0oMR3feCcuY')
+  expect(output[0]).toMatchObject({
+    _id: '0Wefq0oMR3feCcuY',
+    site: 'chaines-tv.orange.fr',
+    country: 'US',
+    gid: 'fr'
+  })
+
+  expect(output[1]).toMatchObject({
+    _id: '1XzrxNkSF2AQNBrT',
+    site: 'magticom.ge',
+    country: 'US',
+    gid: 'ge'
+  })
 })
+
+function content(filepath) {
+  const data = fs.readFileSync(path.resolve(filepath), {
+    encoding: 'utf8'
+  })
+
+  return data
+    .split('\n')
+    .filter(l => l)
+    .map(l => {
+      return JSON.parse(l)
+    })
+}

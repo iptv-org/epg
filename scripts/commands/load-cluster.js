@@ -1,10 +1,18 @@
+const _ = require('lodash')
 const grabber = require('epg-grabber')
 const { program } = require('commander')
 const { db, logger, timer, file, parser } = require('../core')
 
 const options = program
   .requiredOption('-c, --cluster-id <cluster-id>', 'The ID of cluster to load', parser.parseNumber)
-  .option('-d, --days <days>', 'Number of days for which to grab the program', parser.parseNumber)
+  .option('--days <days>', 'Number of days for which to grab the program', parser.parseNumber, 1)
+  .option('--delay <delay>', 'Delay between requests (in mileseconds)', parser.parseNumber)
+  .option(
+    '-t, --timeout <timeout>',
+    'Set a timeout for each request (in mileseconds)',
+    parser.parseNumber
+  )
+  .option('--debug', 'Enable debug mode', false)
   .parse(process.argv)
   .opts()
 
@@ -19,16 +27,24 @@ async function main() {
   logger.info(`Creating '${clusterLog}'...`)
   await file.create(clusterLog)
   const channels = await db.channels.find({ cluster_id: options.clusterId })
-  const days = options.days || 1
-  const total = days * channels.length
+  const total = options.days * channels.length
   logger.info(`Total ${total} requests`)
 
   logger.info('Loading...')
   const results = {}
   let i = 1
   for (const channel of channels) {
-    const config = require(file.resolve(channel.configPath))
-    config.days = config.days || days
+    let config = require(file.resolve(channel.configPath))
+
+    config = _.merge(config, {
+      days: options.days,
+      debug: options.debug,
+      delay: options.delay,
+      request: {
+        timeout: options.timeout
+      }
+    })
+
     const programs = await grabber.grab(channel, config, (data, err) => {
       logger.info(
         `[${i}/${total}] ${config.site} - ${data.channel.xmltv_id} - ${data.date.format(
@@ -40,10 +56,16 @@ async function main() {
 
       if (i < total) i++
     })
+
     await file.append(
       clusterLog,
-      JSON.stringify({ _id: channel._id, site: config.site, country: channel.country, programs }) +
-        '\n'
+      JSON.stringify({
+        _id: channel._id,
+        site: config.site,
+        country: channel.country,
+        gid: channel.gid,
+        programs
+      }) + '\n'
     )
   }
 
