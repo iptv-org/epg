@@ -21,7 +21,6 @@ markdown.createTable = function (data, cols) {
       if (i === 0) output += `<td align="left" valign="top" nowrap${rowspan}>${item.name}</td>`
       output += `<td align="right">${item.channels}</td>`
       output += `<td align="left" nowrap>${item.epg}</td>`
-      output += `<td align="center">${item.status}</td>`
       output += '</tr>\n'
     }
   }

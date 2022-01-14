@@ -7,11 +7,6 @@ const _ = require('lodash')
 
 let log = []
 
-const statuses = {
-  0: '✗',
-  1: '✓'
-}
-
 const LOGS_DIR = process.env.LOGS_DIR || 'scripts/logs'
 
 const options = program
@@ -43,15 +38,14 @@ async function generateCountriesTable() {
     rows.push({
       name: `${country.flag} ${country.name}`,
       channels: item.count,
-      epg: `<code>https://iptv-org.github.io/epg/guides/${item.gid}/${item.site}.epg.xml</code>`,
-      status: statuses[item.status]
+      epg: `<code>https://iptv-org.github.io/epg/guides/${item.gid}/${item.site}.epg.xml</code>`
     })
   }
 
   rows = _.orderBy(rows, ['name', 'channels'], ['asc', 'desc'])
   rows = _.groupBy(rows, 'name')
 
-  const table = markdown.createTable(rows, ['Country', 'Channels', 'EPG', 'Status'])
+  const table = markdown.createTable(rows, ['Country', 'Channels', 'EPG'])
 
   await file.create('./.readme/_countries.md', table)
 }
@@ -68,15 +62,14 @@ async function generateUSStatesTable() {
     rows.push({
       name: state.name,
       channels: item.count,
-      epg: `<code>https://iptv-org.github.io/epg/guides/${item.gid}/${item.site}.epg.xml</code>`,
-      status: statuses[item.status]
+      epg: `<code>https://iptv-org.github.io/epg/guides/${item.gid}/${item.site}.epg.xml</code>`
     })
   }
 
   rows = _.orderBy(rows, ['name', 'channels'], ['asc', 'desc'])
   rows = _.groupBy(rows, 'name')
 
-  const table = markdown.createTable(rows, ['State', 'Channels', 'EPG', 'Status'])
+  const table = markdown.createTable(rows, ['State', 'Channels', 'EPG'])
 
   await file.create('./.readme/_us-states.md', table)
 }
@@ -93,15 +86,14 @@ async function generateCanadaProvincesTable() {
     rows.push({
       name: province.name,
       channels: item.count,
-      epg: `<code>https://iptv-org.github.io/epg/guides/${item.gid}/${item.site}.epg.xml</code>`,
-      status: statuses[item.status]
+      epg: `<code>https://iptv-org.github.io/epg/guides/${item.gid}/${item.site}.epg.xml</code>`
     })
   }
 
   rows = _.orderBy(rows, ['name', 'channels'], ['asc', 'desc'])
   rows = _.groupBy(rows, 'name')
 
-  const table = markdown.createTable(rows, ['Province', 'Channels', 'EPG', 'Status'])
+  const table = markdown.createTable(rows, ['Province', 'Channels', 'EPG'])
 
   await file.create('./.readme/_ca-provinces.md', table)
 }

@@ -11,12 +11,12 @@ To load a program guide, all you need to do is copy the link to one or more of t
 <!-- prettier-ignore -->
 <table>
   <thead>
-    <tr><th align="left">Country</th><th align="left">Channels</th><th align="left">EPG</th><th align="left">Status</th></tr>
+    <tr><th align="left">Country</th><th align="left">Channels</th><th align="left">EPG</th></tr>
   </thead>
   <tbody>
-    <tr><td align="left" valign="top" nowrap rowspan="2">🇺🇸 United States</td><td align="right">372</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us/tvtv.us.epg.xml</code></td><td align="center">✓</td></tr>
-    <tr><td align="right">74</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us/magticom.ge.epg.xml</code></td><td align="center">✓</td></tr>
-    <tr><td align="left" valign="top" nowrap>🇿🇦 South Africa</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/za/dstv.com.epg.xml</code></td><td align="center">✓</td></tr>
+    <tr><td align="left" valign="top" nowrap rowspan="2">🇺🇸 United States</td><td align="right">372</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us/tvtv.us.epg.xml</code></td></tr>
+    <tr><td align="right">74</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us/magticom.ge.epg.xml</code></td></tr>
+    <tr><td align="left" valign="top" nowrap>🇿🇦 South Africa</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/za/dstv.com.epg.xml</code></td></tr>
   </tbody>
 </table>
 
@@ -25,12 +25,12 @@ To load a program guide, all you need to do is copy the link to one or more of t
 <!-- prettier-ignore -->
 <table>
   <thead>
-    <tr><th align="left">State</th><th align="left">Channels</th><th align="left">EPG</th><th align="left">Status</th></tr>
+    <tr><th align="left">State</th><th align="left">Channels</th><th align="left">EPG</th></tr>
   </thead>
   <tbody>
-    <tr><td align="left" valign="top" nowrap rowspan="3">Puerto Rico</td><td align="right">14</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-pr/tvtv.us.epg.xml</code></td><td align="center">✓</td></tr>
-    <tr><td align="right">7</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-pr/gatotv.com.epg.xml</code></td><td align="center">✓</td></tr>
-    <tr><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-pr/directv.com.epg.xml</code></td><td align="center">✓</td></tr>
+    <tr><td align="left" valign="top" nowrap rowspan="3">Puerto Rico</td><td align="right">14</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-pr/tvtv.us.epg.xml</code></td></tr>
+    <tr><td align="right">7</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-pr/gatotv.com.epg.xml</code></td></tr>
+    <tr><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-pr/directv.com.epg.xml</code></td></tr>
   </tbody>
 </table>
 
@@ -39,10 +39,10 @@ To load a program guide, all you need to do is copy the link to one or more of t
 <!-- prettier-ignore -->
 <table>
   <thead>
-    <tr><th align="left">Province</th><th align="left">Channels</th><th align="left">EPG</th><th align="left">Status</th></tr>
+    <tr><th align="left">Province</th><th align="left">Channels</th><th align="left">EPG</th></tr>
   </thead>
   <tbody>
-    <tr><td align="left" valign="top" nowrap>Newfoundland and Labrador</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/ca-nl/tvtv.us.epg.xml</code></td><td align="center">✓</td></tr>
+    <tr><td align="left" valign="top" nowrap>Newfoundland and Labrador</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/ca-nl/tvtv.us.epg.xml</code></td></tr>
   </tbody>
 </table>
 
