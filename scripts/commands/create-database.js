@@ -7,7 +7,7 @@ const options = program
     '--max-clusters <max-clusters>',
     'Set maximum number of clusters',
     parser.parseNumber,
-    200
+    256
   )
   .option('--channels <channels>', 'Set path to channels.xml file', 'sites/**/*.channels.xml')
   .parse(process.argv)
