@@ -38,8 +38,9 @@ async function generateGuides() {
 
     await log({
       gid,
-      filepath,
-      count: groupChannels.length
+      site,
+      count: groupChannels.length,
+      status: 1
     })
   }
 }
