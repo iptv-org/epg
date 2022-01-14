@@ -16,7 +16,7 @@ beforeEach(() => {
   )
 
   execSync(
-    'DB_DIR=tests/__data__/temp/database PUBLIC_DIR=tests/__data__/output node scripts/commands/update-guides.js',
+    'DB_DIR=tests/__data__/temp/database PUBLIC_DIR=tests/__data__/output LOGS_DIR=tests/__data__/output/logs node scripts/commands/update-guides.js',
     { encoding: 'utf8' }
   )
 })
@@ -35,6 +35,11 @@ it('can generate /guides', () => {
   const expected2 = content('tests/__data__/expected/guides/za/dstv.com.epg.xml')
 
   expect(output2).toBe(expected2)
+
+  const output3 = content('tests/__data__/output/logs/update-guides.log')
+  const expected3 = content('tests/__data__/expected/logs/update-guides.log')
+
+  expect(output3).toBe(expected3)
 })
 
 function content(filepath) {

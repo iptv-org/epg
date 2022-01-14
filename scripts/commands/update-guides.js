@@ -2,9 +2,12 @@ const { db, logger, file, xml } = require('../core')
 const _ = require('lodash')
 
 const DB_DIR = process.env.DB_DIR || 'scripts/database'
+const LOGS_DIR = process.env.LOGS_DIR || 'scripts/logs'
 const PUBLIC_DIR = process.env.PUBLIC_DIR || '.gh-pages'
 
 async function main() {
+  await setUp()
+
   await generateGuides()
 }
 
@@ -15,11 +18,12 @@ async function generateGuides() {
 
   const channels = await db.channels.find({}).sort({ xmltv_id: 1 })
   const programs = await loadPrograms()
-  const grouped = _.groupBy(programs, i => `${i.gid}/${i.site}.epg.xml`)
+  const grouped = _.groupBy(programs, i => `${i.gid}_${i.site}`)
 
-  for (let relativePath in grouped) {
-    const filepath = `${PUBLIC_DIR}/guides/${relativePath}`
-    const groupProgs = grouped[relativePath]
+  for (let key in grouped) {
+    const [gid, site] = key.split('_') || [null, null]
+    const filepath = `${PUBLIC_DIR}/guides/${gid}/${site}.epg.xml`
+    const groupProgs = grouped[key]
     const groupChannels = Object.keys(_.groupBy(groupProgs, i => `${i.site}_${i.channel}`)).map(
       key => {
         let [site, channel] = key.split('_')
@@ -31,6 +35,12 @@ async function generateGuides() {
     const output = xml.create({ channels: groupChannels, programs: groupProgs })
 
     await file.create(filepath, output)
+
+    await log({
+      gid,
+      filepath,
+      count: groupChannels.length
+    })
   }
 }
 
@@ -55,4 +65,15 @@ async function loadPrograms() {
   })
 
   return programs
+}
+
+async function setUp() {
+  const logPath = `${LOGS_DIR}/update-guides.log`
+
+  logger.info(`Creating '${logPath}'...`)
+  await file.create(logPath)
+}
+
+async function log(data) {
+  await file.append(`${LOGS_DIR}/update-guides.log`, JSON.stringify(data) + '\n')
 }
