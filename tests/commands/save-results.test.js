@@ -7,12 +7,12 @@ beforeEach(() => {
   fs.mkdirSync('tests/__data__/output')
 
   execSync(
-    'DB_DIR=tests/__data__/output/database LOGS_DIR=tests/__data__/input/logs node scripts/commands/update-database.js',
+    'DB_DIR=tests/__data__/output/database LOGS_DIR=tests/__data__/input/logs node scripts/commands/save-results.js',
     { encoding: 'utf8' }
   )
 })
 
-it('can update database', () => {
+it('can save results to database', () => {
   const output = fs.readFileSync(path.resolve('tests/__data__/output/database/programs.db'), {
     encoding: 'utf8'
   })
