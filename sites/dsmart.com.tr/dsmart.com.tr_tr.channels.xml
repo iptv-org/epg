@@ -1,104 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site site="dsmart.com.tr">
   <channels>
-    <channel lang="tr" xmltv_id="24KitchenTurkiye.us" site_id="52#54">24 Kitchen Türkiye</channel>
-    <channel lang="tr" xmltv_id="24TV.tr" site_id="33#34">24 TV</channel>
-    <channel lang="tr" xmltv_id="360.tr" site_id="42#43">360</channel>
-    <channel lang="tr" xmltv_id="AHaber.tr" site_id="34#35">A Haber</channel>
-    <channel lang="tr" xmltv_id="ANews.tr" site_id="169#289">A News</channel>
-    <channel lang="tr" xmltv_id="ASpor.tr" site_id="76#80">A Spor</channel>
-    <channel lang="tr" xmltv_id="ATVTurkiye.tr" site_id="24#25">ATV Türkiye</channel>
-    <channel lang="tr" xmltv_id="BabyTVEurope.uk" site_id="107#123">Baby TV Europe</channel>
-    <channel lang="tr" xmltv_id="BBCEarthTurkiye.uk" site_id="54#56">BBC Earth Türkiye</channel>
-    <channel lang="tr" xmltv_id="BBCWorldNewsEurope.uk" site_id="50#51">BBC World News Europe</channel>
-    <channel lang="tr" xmltv_id="BBNTurk.tr" site_id="37#38">BBN Türk</channel>
-    <channel lang="tr" xmltv_id="BeyazTV.tr" site_id="39#40">Beyaz TV</channel>
-    <channel lang="tr" xmltv_id="BloombergHT.us" site_id="43#44">Bloomberg HT</channel>
-    <channel lang="tr" xmltv_id="BoomerangTurkiye.us" site_id="106#122">Boomerang Türkiye</channel>
-    <channel lang="tr" xmltv_id="CartoonNetworkTurkiye.us" site_id="104#120">Cartoon Network Türkiye</channel>
-    <channel lang="tr" xmltv_id="CNNInternationalEurope.us" site_id="49#50">CNN International Europe</channel>
-    <channel lang="tr" xmltv_id="CNNTurk.us" site_id="201#500">CNN Türk</channel>
-    <channel lang="tr" xmltv_id="CocukSmart.tr" site_id="105#121">Çocuk Smart</channel>
-    <channel lang="tr" xmltv_id="DaVinci.de" site_id="110#127">Da Vinci</channel>
-    <channel lang="tr" xmltv_id="DiscoveryChannelTurkiye.us" site_id="57#59">Discovery Channel Türkiye</channel>
-    <channel lang="tr" xmltv_id="DiscoveryScienceTurkiye.us" site_id="58#61">Discovery Science Türkiye</channel>
-    <channel lang="tr" xmltv_id="DisneyChannelTurkiye.us" site_id="112#130">Disney Channel Türkiye</channel>
-    <channel lang="tr" xmltv_id="DisneyJuniorTurkiyePolska.us" site_id="111#129">Disney Junior Türkiye &amp; Polska</channel>
-    <channel lang="tr" xmltv_id="DiyanetTV.tr" site_id="90#104">Diyanet TV</channel>
-    <channel lang="tr" xmltv_id="DiziSmartMax.tr" site_id="19#20">DiziSmart Max</channel>
-    <channel lang="tr" xmltv_id="DiziSmartPremium.tr" site_id="16#16">DiziSmart Premium</channel>
-    <channel lang="tr" xmltv_id="DMAXTurkiye.us" site_id="45#46">DMAX Türkiye</channel>
-    <channel lang="tr" xmltv_id="DocuBoxHD.us" site_id="56#58">DocuBox HD</channel>
-    <channel lang="tr" xmltv_id="EuroD.tr" site_id="171#292">Euro D</channel>
-    <channel lang="tr" xmltv_id="Eurosport1.fr" site_id="71#75">Eurosport 1</channel>
-    <channel lang="tr" xmltv_id="Eurosport2.fr" site_id="72#76">Eurosport 2</channel>
-    <channel lang="tr" xmltv_id="FashionTVHDEurope.fr" site_id="65#69">FashionTV HD Europe</channel>
-    <channel lang="tr" xmltv_id="FastFunBoxHD.us" site_id="67#71">Fast &amp; FunBox HD</channel>
-    <channel lang="tr" xmltv_id="FBTV.tr" site_id="79#83">FB TV</channel>
-    <channel lang="tr" xmltv_id="FightBoxHD.us" site_id="77#81">FightBox HD</channel>
-    <channel lang="tr" xmltv_id="FilmBoxTurkiye.us" site_id="13#13">FilmBox Türkiye</channel>
-    <channel lang="tr" xmltv_id="FlashTV.tr" site_id="155#273">Flash TV</channel>
-    <channel lang="tr" xmltv_id="FoxCrimeTurkiye.us" site_id="18#19">Fox Crime Türkiye</channel>
-    <channel lang="tr" xmltv_id="FoxTurkiye.us" site_id="28#29">Fox Türkiye</channel>
-    <channel lang="tr" xmltv_id="FXTurkiye.us" site_id="17#18">FX Türkiye</channel>
-    <channel lang="tr" xmltv_id="HaberGlobal.tr" site_id="41#42">Haber Global</channel>
-    <channel lang="tr" xmltv_id="Haberturk.tr" site_id="32#33">Habertürk</channel>
-    <channel lang="tr" xmltv_id="InsightHD.nl" site_id="64#68">Insight HD</channel>
-    <channel lang="tr" xmltv_id="Kanal7.tr" site_id="26#27">Kanal 7</channel>
-    <channel lang="tr" xmltv_id="KanalD.tr" site_id="21#22">Kanal D</channel>
-    <channel lang="tr" xmltv_id="LiderTV.tr" site_id="93#107">Lider TV</channel>
-    <channel lang="tr" xmltv_id="LoveNature.ca" site_id="69#73">Love Nature</channel>
-    <channel lang="tr" xmltv_id="MovieSmartClassic.tr" site_id="14#14">MovieSmart Classic</channel>
-    <channel lang="tr" xmltv_id="MovieSmartPremium.tr" site_id="1#1">MovieSmart Premium</channel>
-    <channel lang="tr" xmltv_id="MovieSmartPremium2.tr" site_id="2#2">MovieSmart Premium 2</channel>
-    <channel lang="tr" xmltv_id="MovieSmartTurk.tr" site_id="15#15">MovieSmart Türk</channel>
-    <channel lang="tr" xmltv_id="NationalGeographicTurkiye.us" site_id="60#63">National Geographic Türkiye</channel>
-    <channel lang="tr" xmltv_id="NationalGeographicWildTurkiye.us" site_id="61#64">National Geographic Wild Türkiye</channel>
-    <channel lang="tr" xmltv_id="NBATV.us" site_id="68#72">NBA TV</channel>
-    <channel lang="tr" xmltv_id="NTV.tr" site_id="30#31">NTV</channel>
-    <channel lang="tr" xmltv_id="Number1Turk.tr" site_id="99#115">Number 1 Türk</channel>
-    <channel lang="tr" xmltv_id="Number1TV.tr" site_id="98#114">Number 1 TV</channel>
-    <channel lang="tr" xmltv_id="PowerTV.tr" site_id="103#119">Power TV</channel>
-    <channel lang="tr" xmltv_id="ShowTV.tr" site_id="22#23">Show TV</channel>
-    <channel lang="tr" xmltv_id="Sinema2.tr" site_id="4#4">Sinema 2</channel>
-    <channel lang="tr" xmltv_id="Sinema1001.tr" site_id="11#11">Sinema 1001</channel>
-    <channel lang="tr" xmltv_id="Sinema1002.tr" site_id="12#12">Sinema 1002</channel>
-    <channel lang="tr" xmltv_id="SinemaAile.tr" site_id="7#7">Sinema Aile</channel>
-    <channel lang="tr" xmltv_id="SinemaAile2.tr" site_id="8#8">Sinema Aile 2</channel>
-    <channel lang="tr" xmltv_id="SinemaAksiyon.tr" site_id="5#5">Sinema Aksiyon</channel>
-    <channel lang="tr" xmltv_id="SinemaAksiyon2.tr" site_id="6#6">Sinema Aksiyon 2</channel>
-    <channel lang="tr" xmltv_id="SinemaKomedi.tr" site_id="9#9">Sinema Komedi</channel>
-    <channel lang="tr" xmltv_id="SinemaKomedi2.tr" site_id="10#10">Sinema Komedi 2</channel>
-    <channel lang="tr" xmltv_id="SinemaTV.tr" site_id="3#3">Sinema TV</channel>
-    <channel lang="tr" xmltv_id="SporSmart.tr" site_id="73#77">Spor Smart</channel>
-    <channel lang="tr" xmltv_id="SporSmart2.tr" site_id="78#82">Spor Smart 2</channel>
-    <channel lang="tr" xmltv_id="SSport.tr" site_id="74#78">S Sport</channel>
-    <channel lang="tr" xmltv_id="SSport2.tr" site_id="75#79">S Sport 2</channel>
-    <channel lang="tr" xmltv_id="StarTV.tr" site_id="23#24">Star TV</channel>
-    <channel lang="tr" xmltv_id="StingrayNaturescape.ca" site_id="62#66">Stingray Naturescape</channel>
-    <channel lang="tr" xmltv_id="Teve2.tr" site_id="20#21">Teve 2</channel>
-    <channel lang="tr" xmltv_id="TGRTHaber.tr" site_id="44#45">TGRT Haber</channel>
-    <channel lang="tr" xmltv_id="TheHistoryChannelTurkey.us" site_id="59#62">The History Channel Turkey</channel>
-    <channel lang="tr" xmltv_id="TLCTurkiye.us" site_id="35#36">TLC Türkiye</channel>
-    <channel lang="tr" xmltv_id="TMB.tr" site_id="97#113">TMB</channel>
-    <channel lang="tr" xmltv_id="TraceUrban.fr" site_id="66#70">Trace Urban</channel>
-    <channel lang="tr" xmltv_id="TRT1.tr" site_id="25#26">TRT 1</channel>
-    <channel lang="tr" xmltv_id="TRT2.tr" site_id="91#105">TRT 2</channel>
-    <channel lang="tr" xmltv_id="TRT4K.tr" site_id="166#286">TRT 4K</channel>
-    <channel lang="tr" xmltv_id="TRTAvaz.tr" site_id="163#283">TRT Avaz</channel>
-    <channel lang="tr" xmltv_id="TRTBelgesel.tr" site_id="63#67">TRT Belgesel</channel>
-    <channel lang="tr" xmltv_id="TRTHaber.tr" site_id="31#32">TRT Haber</channel>
-    <channel lang="tr" xmltv_id="TRTKurdi.tr" site_id="163#283">TRT Kurdî</channel>
-    <channel lang="tr" xmltv_id="TRTMuzik.tr" site_id="94#110">TRT Müzik</channel>
-    <channel lang="tr" xmltv_id="TRTSporYildiz.tr" site_id="82#86">TRT Spor Yildiz</channel>
-    <channel lang="tr" xmltv_id="TRTTurk.tr" site_id="92#106">TRT Türk</channel>
-    <channel lang="tr" xmltv_id="TV4.tr" site_id="83#87">TV 4</channel>
-    <channel lang="tr" xmltv_id="TV8.tr" site_id="27#28">TV 8</channel>
-    <channel lang="tr" xmltv_id="TV100.tr" site_id="36#37">TV 100</channel>
-    <channel lang="tr" xmltv_id="TVNet.tr" site_id="40#41">TV Net</channel>
-    <channel lang="tr" xmltv_id="UcanKusTV.tr" site_id="38#39">UçanKus TV</channel>
-    <channel lang="tr" xmltv_id="UlkeTV.tr" site_id="48#49">Ülke TV</channel>
-    <channel lang="tr" xmltv_id="VavTV.tr" site_id="53#55">Vav TV</channel>
-    <channel lang="tr" xmltv_id="ViasatHistoryHD.se" site_id="55#57">Viasat History HD</channel>
+    <channel lang="tr" xmltv_id="24KitchenTurkiye.us" site_id="58d29bb0eefad3db9c60627b">24 Kitchen Türkiye</channel>
+    <channel lang="tr" xmltv_id="24TV.tr" site_id="58d29bb0eefad3db9c60622e">24 TV</channel>
+    <channel lang="tr" xmltv_id="360.tr" site_id="58d29bb0eefad3db9c606236">360</channel>
+    <channel lang="tr" xmltv_id="AHaber.tr" site_id="58d29bb0eefad3db9c60625e">A Haber</channel>
+    <channel lang="tr" xmltv_id="ANews.tr" site_id="59638e5fcfef0b43f0fd31b5">A News</channel>
+    <channel lang="tr" xmltv_id="ASpor.tr" site_id="58d29bb0eefad3db9c6062b2">A Spor</channel>
+    <channel lang="tr" xmltv_id="ATVTurkiye.tr" site_id="58d29bb0eefad3db9c60625f">ATV Türkiye</channel>
+    <channel lang="tr" xmltv_id="BabyTVEurope.uk" site_id="58d29bb0eefad3db9c6062b7">Baby TV Europe</channel>
+    <channel lang="tr" xmltv_id="BBCEarthTurkiye.uk" site_id="58d29bb0eefad3db9c6062bc">BBC Earth Türkiye</channel>
+    <channel lang="tr" xmltv_id="BBCWorldNewsEurope.uk" site_id="58d29bb0eefad3db9c6062c6">BBC World News Europe</channel>
+    <channel lang="tr" xmltv_id="BeyazTV.tr" site_id="58d29bb0eefad3db9c606298">Beyaz TV</channel>
+    <channel lang="tr" xmltv_id="BloombergHT.us" site_id="58d29bb0eefad3db9c60623e">Bloomberg HT</channel>
+    <channel lang="tr" xmltv_id="BoomerangTurkiye.us" site_id="58d29bb0eefad3db9c6062b9">Boomerang Türkiye</channel>
+    <channel lang="tr" xmltv_id="CartoonNetworkTurkiye.us" site_id="58d29bb0eefad3db9c6062c8">Cartoon Network Türkiye</channel>
+    <channel lang="tr" xmltv_id="CNNInternationalEurope.us" site_id="58d29bb0eefad3db9c6062b8">CNN International Europe</channel>
+    <channel lang="tr" xmltv_id="CNNTurk.us" site_id="59dca1f3cfef0b4d80a47a5f">CNN Türk</channel>
+    <channel lang="tr" xmltv_id="CocukSmart.tr" site_id="58d29bb0eefad3db9c6062b5">Çocuk Smart</channel>
+    <channel lang="tr" xmltv_id="DaVinci.de" site_id="58d29bb0eefad3db9c6062b6">Da Vinci</channel>
+    <channel lang="tr" xmltv_id="DiscoveryChannelTurkiye.us" site_id="58d29bb0eefad3db9c606248">Discovery Channel Türkiye</channel>
+    <channel lang="tr" xmltv_id="DiscoveryScienceTurkiye.us" site_id="58d29bb0eefad3db9c60628e">Discovery Science Türkiye</channel>
+    <channel lang="tr" xmltv_id="DisneyChannelTurkiye.us" site_id="58d29bb0eefad3db9c60626c">Disney Channel Türkiye</channel>
+    <channel lang="tr" xmltv_id="DisneyJuniorTurkiyePolska.us" site_id="5fedddcecfef0b159330996e">Disney Junior Türkiye &amp; Polska</channel>
+    <channel lang="tr" xmltv_id="DiyanetTV.tr" site_id="5ac73ebbcfef0b34db533a95">Diyanet TV</channel>
+    <channel lang="tr" xmltv_id="DiziSmartMax.tr" site_id="58d29bb0eefad3db9c606278">DiziSmart Max</channel>
+    <channel lang="tr" xmltv_id="DiziSmartPremium.tr" site_id="58d29bb0eefad3db9c60625a">DiziSmart Premium</channel>
+    <channel lang="tr" xmltv_id="DMAXTurkiye.us" site_id="58d29bb0eefad3db9c606282">DMAX Türkiye</channel>
+    <channel lang="tr" xmltv_id="DocuBoxHD.us" site_id="58d29bb0eefad3db9c6062be">DocuBox HD</channel>
+    <channel lang="tr" xmltv_id="EuroD.tr" site_id="59dcbfdccfef0b4d80a4974a">Euro D</channel>
+    <channel lang="tr" xmltv_id="Eurosport1.fr" site_id="58d29bb0eefad3db9c6062aa">Eurosport 1</channel>
+    <channel lang="tr" xmltv_id="Eurosport2.fr" site_id="58d29bb0eefad3db9c606281">Eurosport 2</channel>
+    <channel lang="tr" xmltv_id="FashionTVHDEurope.fr" site_id="59dca3b2cfef0b4d80a47b77">FashionTV HD Europe</channel>
+    <channel lang="tr" xmltv_id="FastFunBoxHD.us" site_id="58d29bb0eefad3db9c6062bf">Fast &amp; FunBox HD</channel>
+    <channel lang="tr" xmltv_id="FBTV.tr" site_id="58d29bb0eefad3db9c606235">FB TV</channel>
+    <channel lang="tr" xmltv_id="FightBoxHD.us" site_id="58d29bb0eefad3db9c6062b4">FightBox HD</channel>
+    <channel lang="tr" xmltv_id="FilmBoxTurkiye.us" site_id="58d29bb0eefad3db9c6062ba">FilmBox Türkiye</channel>
+    <channel lang="tr" xmltv_id="FlashTV.tr" site_id="59dcbddccfef0b4d80a49642">Flash TV</channel>
+    <channel lang="tr" xmltv_id="FoxCrimeTurkiye.us" site_id="58d29bb0eefad3db9c606268">Fox Crime Türkiye</channel>
+    <channel lang="tr" xmltv_id="FoxTurkiye.us" site_id="58d29bb0eefad3db9c6062a0">Fox Türkiye</channel>
+    <channel lang="tr" xmltv_id="FXTurkiye.us" site_id="58d29bb0eefad3db9c606269">FX Türkiye</channel>
+    <channel lang="tr" xmltv_id="HaberGlobal.tr" site_id="5bac7dedcfef0b02fac035fd">Haber Global</channel>
+    <channel lang="tr" xmltv_id="Haberturk.tr" site_id="58d29bb0eefad3db9c60629d">Habertürk</channel>
+    <channel lang="tr" xmltv_id="HalkTV.tr" site_id="58d29bb0eefad3db9c606288">Halk TV</channel>
+    <channel lang="tr" xmltv_id="InsightHD.nl" site_id="5dfc6dc2cfef0b201d222aa0">Insight HD</channel>
+    <channel lang="tr" xmltv_id="Kanal7.tr" site_id="58d29bb0eefad3db9c60629c">Kanal 7</channel>
+    <channel lang="tr" xmltv_id="KanalD.tr" site_id="58d29bb0eefad3db9c606258">Kanal D</channel>
+    <channel lang="tr" xmltv_id="LiderTV.tr" site_id="61517908cfef0b1593cd5f9e">Lider TV</channel>
+    <channel lang="tr" xmltv_id="LoveNature.ca" site_id="5dfc9faacfef0b201d2246b5">Love Nature</channel>
+    <channel lang="tr" xmltv_id="MovieSmartClassic.tr" site_id="58d29bb0eefad3db9c60629a">MovieSmart Classic</channel>
+    <channel lang="tr" xmltv_id="MovieSmartPremium.tr" site_id="58d29bb0eefad3db9c606290">MovieSmart Premium</channel>
+    <channel lang="tr" xmltv_id="MovieSmartPremium2.tr" site_id="58d29bb0eefad3db9c606291">MovieSmart Premium 2</channel>
+    <channel lang="tr" xmltv_id="MovieSmartTurk.tr" site_id="58d29bb0eefad3db9c606299">MovieSmart Türk</channel>
+    <channel lang="tr" xmltv_id="NationalGeographicTurkiye.us" site_id="58d29bb0eefad3db9c6062a4">National Geographic Türkiye</channel>
+    <channel lang="tr" xmltv_id="NationalGeographicWildTurkiye.us" site_id="58d29bb0eefad3db9c6062a5">National Geographic Wild Türkiye</channel>
+    <channel lang="tr" xmltv_id="NBATV.us" site_id="58d29bb0eefad3db9c60626e">NBA TV</channel>
+    <channel lang="tr" xmltv_id="NTV.tr" site_id="58d29bb0eefad3db9c60623a">NTV</channel>
+    <channel lang="tr" xmltv_id="Number1Turk.tr" site_id="58d29bb0eefad3db9c606245">Number 1 Türk</channel>
+    <channel lang="tr" xmltv_id="Number1TV.tr" site_id="58d29bb0eefad3db9c60623c">Number 1 TV</channel>
+    <channel lang="tr" xmltv_id="PowerTV.tr" site_id="58d29bb0eefad3db9c6062b3">Power TV</channel>
+    <channel lang="tr" xmltv_id="ShowTV.tr" site_id="58d29bb0eefad3db9c60629b">Show TV</channel>
+    <channel lang="tr" xmltv_id="Sinema1001.tr" site_id="5fe07f5dcfef0b1593275822">Sinema 1001</channel>
+    <channel lang="tr" xmltv_id="Sinema1002.tr" site_id="5fe07f72cfef0b159327585a">Sinema 1002</channel>
+    <channel lang="tr" xmltv_id="Sinema2.tr" site_id="5fe07d9fcfef0b1593275754">Sinema 2</channel>
+    <channel lang="tr" xmltv_id="SinemaAile.tr" site_id="5fe07e42cfef0b15932757a3">Sinema Aile</channel>
+    <channel lang="tr" xmltv_id="SinemaAile2.tr" site_id="5fe07eabcfef0b15932757a6">Sinema Aile 2</channel>
+    <channel lang="tr" xmltv_id="SinemaAksiyon.tr" site_id="5fe07dd5cfef0b1593275758">Sinema Aksiyon</channel>
+    <channel lang="tr" xmltv_id="SinemaAksiyon2.tr" site_id="5fe07e23cfef0b15932757a1">Sinema Aksiyon 2</channel>
+    <channel lang="tr" xmltv_id="SinemaKomedi.tr" site_id="5fe07f29cfef0b1593275800">Sinema Komedi</channel>
+    <channel lang="tr" xmltv_id="SinemaKomedi2.tr" site_id="5fe07f45cfef0b159327581f">Sinema Komedi 2</channel>
+    <channel lang="tr" xmltv_id="SinemaTV.tr" site_id="5fe07d7acfef0b1593275751">Sinema TV</channel>
+    <channel lang="tr" xmltv_id="SporSmart.tr" site_id="58d29bb0eefad3db9c60628a">Spor Smart</channel>
+    <channel lang="tr" xmltv_id="SporSmart2.tr" site_id="5fcb6bd2cfef0b15931fcdf8">Spor Smart 2</channel>
+    <channel lang="tr" xmltv_id="SSport.tr" site_id="5ff5d18bcfef0b1593364e28">S Sport</channel>
+    <channel lang="tr" xmltv_id="SSport2.tr" site_id="5ff5d2c8cfef0b15933651c7">S Sport 2</channel>
+    <channel lang="tr" xmltv_id="StarTV.tr" site_id="58d29bb0eefad3db9c606259">Star TV</channel>
+    <channel lang="tr" xmltv_id="StingrayNaturescape.ca" site_id="59dca29fcfef0b4d80a47a61">Stingray Naturescape</channel>
+    <channel lang="tr" xmltv_id="TAYTV.tr" site_id="59dca4d8cfef0b4d80a47b7a">TAY TV</channel>
+    <channel lang="tr" xmltv_id="Tele1.tr" site_id="59dcbddccfef0b4d80a49642">Tele 1</channel>
+    <channel lang="tr" xmltv_id="Teve2.tr" site_id="58d29bb0eefad3db9c6062a1">Teve 2</channel>
+    <channel lang="tr" xmltv_id="TGRTHaber.tr" site_id="58d29bb0eefad3db9c60623d">TGRT Haber</channel>
+    <channel lang="tr" xmltv_id="TheHistoryChannelTurkey.us" site_id="61a408d7cfef0b1593ed2812">The History Channel Turkey</channel>
+    <channel lang="tr" xmltv_id="TLCTurkiye.us" site_id="58d29bb0eefad3db9c606238">TLC Türkiye</channel>
+    <channel lang="tr" xmltv_id="TMB.tr" site_id="58d29bb0eefad3db9c606272">TMB</channel>
+    <channel lang="tr" xmltv_id="TraceUrban.fr" site_id="58d29bb0eefad3db9c6062c5">Trace Urban</channel>
+    <channel lang="tr" xmltv_id="TRT1.tr" site_id="58d29bb0eefad3db9c606274">TRT 1</channel>
+    <channel lang="tr" xmltv_id="TRT2.tr" site_id="58d29bb0eefad3db9c606263">TRT 2</channel>
+    <channel lang="tr" xmltv_id="TRT3.tr" site_id="58d29bb0eefad3db9c606231">TRT 3</channel>
+    <channel lang="tr" xmltv_id="TRT4K.tr" site_id="59dcbee1cfef0b4d80a49650">TRT 4K</channel>
+    <channel lang="tr" xmltv_id="TRTAvaz.tr" site_id="58d29bb0eefad3db9c60624b">TRT Avaz</channel>
+    <channel lang="tr" xmltv_id="TRTBelgesel.tr" site_id="58d29bb0eefad3db9c6062a8">TRT Belgesel</channel>
+    <channel lang="tr" xmltv_id="TRTCocuk.tr" site_id="58d29bb0eefad3db9c606255">TRT Çocuk</channel>
+    <channel lang="tr" xmltv_id="TRTHaber.tr" site_id="58d29bb0eefad3db9c606289">TRT Haber</channel>
+    <channel lang="tr" xmltv_id="TRTKurdi.tr" site_id="58d29bb0eefad3db9c60624a">TRT Kurdî</channel>
+    <channel lang="tr" xmltv_id="TRTMuzik.tr" site_id="58d29bb0eefad3db9c606266">TRT Müzik</channel>
+    <channel lang="tr" xmltv_id="TRTSpor.tr" site_id="58d29bb0eefad3db9c6062a9">TRT Spor</channel>
+    <channel lang="tr" xmltv_id="TRTSporYildiz.tr" site_id="5da87214cfef0b4df9157780">TRT Spor Yildiz</channel>
+    <channel lang="tr" xmltv_id="TRTTurk.tr" site_id="58d29bb0eefad3db9c60624c">TRT Türk</channel>
+    <channel lang="tr" xmltv_id="TV100.tr" site_id="5ccfd6adcfef0b6021816941">TV 100</channel>
+    <channel lang="tr" xmltv_id="TV4.tr" site_id="59dca577cfef0b4d80a47b7c">TV 4</channel>
+    <channel lang="tr" xmltv_id="TV8.tr" site_id="58d29bb0eefad3db9c6062ae">TV 8</channel>
+    <channel lang="tr" xmltv_id="TV85.tr" site_id="58d29bb0eefad3db9c6062cb">TV 8.5</channel>
+    <channel lang="tr" xmltv_id="TVNet.tr" site_id="58d29bb0eefad3db9c60629e">TV Net</channel>
+    <channel lang="tr" xmltv_id="UcanKusTV.tr" site_id="58d29bb0eefad3db9c6062b0">UçanKus TV</channel>
+    <channel lang="tr" xmltv_id="UlkeTV.tr" site_id="58d29bb0eefad3db9c60629f">Ülke TV</channel>
+    <channel lang="tr" xmltv_id="VavTV.tr" site_id="6071fb3bcfef0b159373a531">Vav TV</channel>
+    <channel lang="tr" xmltv_id="ViasatHistoryHD.se" site_id="58d29bb0eefad3db9c6062bd">Viasat History HD</channel>
   </channels>
 </site>

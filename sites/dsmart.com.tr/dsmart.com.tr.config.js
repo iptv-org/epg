@@ -6,9 +6,7 @@ dayjs.extend(utc)
 module.exports = {
   site: 'dsmart.com.tr',
   url({ date, channel }) {
-    const [page] = channel.site_id.split('#')
-
-    return `https://www.dsmart.com.tr/api/v1/public/epg/schedules?page=${page}&limit=1&day=${date.format(
+    return `https://www.dsmart.com.tr/api/v1/public/epg/schedules?page=1&limit=500&day=${date.format(
       'YYYY-MM-DD'
     )}`
   },
@@ -52,9 +50,8 @@ function parseStop(item, date) {
 function parseContent(content, channel) {
   const data = JSON.parse(content)
   if (!data || !data.data || !Array.isArray(data.data.channels)) return null
-  const [_, channelId] = channel.site_id.split('#')
 
-  return data.data.channels.find(i => i.ch_no == channelId)
+  return data.data.channels.find(i => i._id == channel.site_id)
 }
 
 function parseItems(content, channel) {
