@@ -13,18 +13,15 @@ beforeEach(() => {
 })
 
 it('can save results to database', () => {
-  const output = fs.readFileSync(path.resolve('tests/__data__/output/database/programs.db'), {
-    encoding: 'utf8'
-  })
-  const lines = output.split('\n')
-  const parsed = JSON.parse(lines[0])
+  const output = content('tests/__data__/output/database/programs.db')
 
-  expect(Object.keys(parsed).sort()).toEqual([
+  expect(Object.keys(output[0]).sort()).toEqual([
     '_id',
     'category',
     'channel',
     'country',
     'description',
+    'gid',
     'icon',
     'lang',
     'site',
@@ -33,3 +30,16 @@ it('can save results to database', () => {
     'title'
   ])
 })
+
+function content(filepath) {
+  const data = fs.readFileSync(path.resolve(filepath), {
+    encoding: 'utf8'
+  })
+
+  return data
+    .split('\n')
+    .filter(l => l)
+    .map(l => {
+      return JSON.parse(l)
+    })
+}

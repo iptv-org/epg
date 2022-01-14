@@ -12,6 +12,7 @@ async function main() {
       const programs = result.programs.map(program => {
         program.site = result.site
         program.country = result.country
+        program.gid = result.gid
 
         return program
       })
