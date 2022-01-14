@@ -15,22 +15,14 @@ beforeEach(() => {
     'tests/__data__/temp/database/programs.db'
   )
 
-  const r = execSync(
+  execSync(
     'DB_DIR=tests/__data__/temp/database PUBLIC_DIR=tests/__data__/output node scripts/commands/update-guides.js',
     { encoding: 'utf8' }
   )
-  console.log(r)
 })
 
 afterEach(() => {
   fs.rmdirSync('tests/__data__/temp', { recursive: true })
-})
-
-fit('can generate epg.xml', () => {
-  const output = content('tests/__data__/output/epg.xml')
-  const expected = content('tests/__data__/expected/epg.xml')
-
-  expect(output).toBe(expected)
 })
 
 it('can generate /guides', () => {

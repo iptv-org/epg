@@ -7,13 +7,9 @@ const xml = {}
 xml.create = function ({ channels, programs }) {
 	let output = `<?xml version="1.0" encoding="UTF-8" ?><tv>\n`
 	for (let channel of channels) {
-		output += `<channel id="${escapeString(channel.id)}">`
-		channel.name.forEach(name => {
-			output += `<display-name>${escapeString(name)}</display-name>`
-		})
-		if (channel.logo) {
-			output += `<icon src="${escapeString(channel.logo)}"/>`
-		}
+		output += `<channel id="${escapeString(channel.xmltv_id)}">`
+		output += `<display-name>${escapeString(channel.name)}</display-name>`
+		if (channel.logo) output += `<icon src="${escapeString(channel.logo)}"/>`
 		if (channel.site) output += `<url>https://${channel.site}</url>`
 		output += `</channel>\n`
 	}
