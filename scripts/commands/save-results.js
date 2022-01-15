@@ -4,6 +4,7 @@ const _ = require('lodash')
 const LOGS_DIR = process.env.LOGS_DIR || 'scripts/logs'
 
 async function main() {
+  await db.programs.load()
   await db.programs.reset()
   const files = await file.list(`${LOGS_DIR}/load-cluster/cluster_*.log`)
   for (const filepath of files) {
