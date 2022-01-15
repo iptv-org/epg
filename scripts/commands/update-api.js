@@ -26,16 +26,20 @@ async function loadChannels() {
     if (!output[item.xmltv_id]) {
       output[item.xmltv_id] = {
         id: item.xmltv_id,
-        name: [item.name],
+        name: [],
         logo: item.logo || null,
-        country: item.country
+        country: item.country,
+        guides: []
       }
     } else {
       output[item.xmltv_id].logo = output[item.xmltv_id].logo || item.logo
-      output[item.xmltv_id].name.push(item.name)
     }
 
+    output[item.xmltv_id].name.push(item.name)
     output[item.xmltv_id].name = _.uniq(output[item.xmltv_id].name)
+    output[item.xmltv_id].guides.push(
+      `https://iptv-org.github.io/epg/guides/${item.gid}/${item.site}.epg.xml`
+    )
   })
 
   return Object.values(output)
