@@ -1,6 +1,7 @@
 const { logger, db } = require('../core')
 
 async function main() {
+  await db.channels.load()
   const docs = await db.channels.find({}).sort({ cluster_id: 1 })
   const cluster_id = docs.reduce((acc, curr) => {
     if (!acc.includes(curr.cluster_id)) acc.push(curr.cluster_id)
