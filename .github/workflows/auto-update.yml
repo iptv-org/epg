@@ -84,6 +84,10 @@ jobs:
         with:
           name: logs
           path: scripts/logs
+      - uses: actions/upload-artifact@v2
+        with:
+          name: gh-pages
+          path: .gh-pages
       - run: node scripts/commands/update-readme.js
       - run: git add README.md
       - run: git commit -m "[Bot] Update README.md"
