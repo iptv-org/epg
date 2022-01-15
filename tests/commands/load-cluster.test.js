@@ -3,6 +3,7 @@ const path = require('path')
 const { execSync } = require('child_process')
 
 beforeEach(() => {
+  fs.rmdirSync('tests/__data__/temp', { recursive: true })
   fs.rmdirSync('tests/__data__/output', { recursive: true })
   fs.mkdirSync('tests/__data__/output')
   fs.mkdirSync('tests/__data__/temp/database', { recursive: true })
@@ -12,13 +13,9 @@ beforeEach(() => {
   )
 
   execSync(
-    'DB_DIR=tests/__data__/temp/database LOGS_DIR=tests/__data__/output/logs node scripts/commands/load-cluster.js --cluster-id=1 --timeout=1',
+    'DB_DIR=tests/__data__/temp/database LOGS_DIR=tests/__data__/output/logs node scripts/commands/load-cluster.js --cluster-id=1 --timeout=10000',
     { encoding: 'utf8' }
   )
-})
-
-afterEach(() => {
-  fs.rmdirSync('tests/__data__/temp', { recursive: true })
 })
 
 it('can load cluster', () => {
@@ -36,6 +33,18 @@ it('can load cluster', () => {
     site: 'magticom.ge',
     country: 'US',
     gid: 'ge'
+  })
+
+  const database = content('tests/__data__/temp/database/channels.db')
+
+  expect(database[1]).toMatchObject({
+    _id: '0Wefq0oMR3feCcuY',
+    logo: 'https://example.com/logo.png'
+  })
+
+  expect(database[2]).toMatchObject({
+    _id: '1XzrxNkSF2AQNBrT',
+    logo: 'https://www.magticom.ge/images/channels/MjAxOC8wOS8xMC9lZmJhNWU5Yy0yMmNiLTRkMTAtOWY5Ny01ODM0MzY0ZTg0MmEuanBn.jpg'
   })
 })
 

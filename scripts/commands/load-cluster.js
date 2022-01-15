@@ -46,11 +46,13 @@ async function main() {
       }
     })
 
-    const programs = await grabber.grab(channel, config, (data, err) => {
+    const programs = await grabber.grab(channel, config, async (data, err) => {
+      await db.channels.update({ _id: channel._id }, { $set: { logo: data.channel.logo } })
+
       logger.info(
-        `[${i}/${total}] ${config.site} - ${data.channel.xmltv_id} - ${data.date.format(
-          'MMM D, YYYY'
-        )} (${data.programs.length} programs)`
+        `[${i}/${total}] ${channel.site} - ${data.id} - ${data.date.format('MMM D, YYYY')} (${
+          data.programs.length
+        } programs)`
       )
 
       if (err) logger.error(err.message)
@@ -62,13 +64,15 @@ async function main() {
       clusterLog,
       JSON.stringify({
         _id: channel._id,
-        site: config.site,
+        site: channel.site,
         country: channel.country,
         gid: channel.gid,
         programs
       }) + '\n'
     )
   }
+
+  db.channels.compact()
 
   logger.info(`Done in ${timer.format('HH[h] mm[m] ss[s]')}`)
 }
