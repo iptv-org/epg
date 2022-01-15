@@ -6,8 +6,11 @@ const DB_DIR = process.env.DB_DIR || './scripts/database'
 class Database {
   constructor(filepath) {
     this.filepath = filepath
+  }
+
+  load() {
     this.db = nedb.create({
-      filename: file.resolve(filepath),
+      filename: file.resolve(this.filepath),
       autoload: true,
       onload: err => {
         if (err) console.error(err)
@@ -34,6 +37,10 @@ class Database {
 
   compact() {
     return this.db.persistence.compactDatafile()
+  }
+
+  stopAutocompact() {
+    return this.db.persistence.stopAutocompaction()
   }
 
   reset() {
