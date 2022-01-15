@@ -4,10 +4,10 @@ const _ = require('lodash')
 const DB_DIR = process.env.DB_DIR || 'scripts/database'
 const LOGS_DIR = process.env.LOGS_DIR || 'scripts/logs'
 const PUBLIC_DIR = process.env.PUBLIC_DIR || '.gh-pages'
+const LOG_PATH = `${LOGS_DIR}/update-guides.log`
 
 async function main() {
   await setUp()
-
   await generateGuides()
 }
 
@@ -16,10 +16,10 @@ main()
 async function generateGuides() {
   logger.info(`Generating guides/...`)
 
-  const channels = await db.channels.find({}).sort({ xmltv_id: 1 })
+  const channels = await loadChannels()
   const programs = await loadPrograms()
-  const grouped = _.groupBy(programs, i => `${i.gid}_${i.site}`)
 
+  const grouped = _.groupBy(programs, i => `${i.gid}_${i.site}`)
   for (let key in grouped) {
     const [gid, site] = key.split('_') || [null, null]
     const filepath = `${PUBLIC_DIR}/guides/${gid}/${site}.epg.xml`
@@ -45,7 +45,19 @@ async function generateGuides() {
   }
 }
 
+async function loadChannels() {
+  logger.info('Loading channels from database...')
+
+  await db.channels.load()
+
+  return await db.channels.find({}).sort({ xmltv_id: 1 })
+}
+
 async function loadPrograms() {
+  logger.info('Loading programs from database...')
+
+  await db.programs.load()
+
   let programs = await db.programs.find({}).sort({ channel: 1, start: 1 })
 
   programs = programs.map(program => {
@@ -69,12 +81,10 @@ async function loadPrograms() {
 }
 
 async function setUp() {
-  const logPath = `${LOGS_DIR}/update-guides.log`
-
-  logger.info(`Creating '${logPath}'...`)
-  await file.create(logPath)
+  logger.info(`Creating '${LOG_PATH}'...`)
+  await file.create(LOG_PATH)
 }
 
 async function log(data) {
-  await file.append(`${LOGS_DIR}/update-guides.log`, JSON.stringify(data) + '\n')
+  await file.append(LOG_PATH, JSON.stringify(data) + '\n')
 }
