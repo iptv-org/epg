@@ -79,7 +79,7 @@ jobs:
           name: database
           path: scripts/database
       - run: node scripts/commands/update-api.js
-      - run: node scripts/commands/update-guides.js
+      - run: NODE_OPTIONS="--max-old-space-size=4096" node scripts/commands/update-guides.js
       - uses: actions/upload-artifact@v2
         with:
           name: logs
