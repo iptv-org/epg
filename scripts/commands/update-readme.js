@@ -8,6 +8,7 @@ const _ = require('lodash')
 let log = []
 
 const LOGS_DIR = process.env.LOGS_DIR || 'scripts/logs'
+const LOG_PATH = `${LOGS_DIR}/update-guides.log`
 
 const options = program
   .option('-c, --config <config>', 'Set path to config file', '.readme/config.json')
@@ -16,6 +17,11 @@ const options = program
 
 async function main() {
   await setUp()
+
+  if (!log.length) {
+    logger.error(`File "${LOG_PATH}" is empty`)
+    process.exit(1)
+  }
 
   await generateCountriesTable()
   await generateUSStatesTable()
@@ -107,5 +113,5 @@ async function updateReadme() {
 }
 
 async function setUp() {
-  log = await parser.parseLogs(`${LOGS_DIR}/update-guides.log`)
+  log = await parser.parseLogs(LOG_PATH)
 }
