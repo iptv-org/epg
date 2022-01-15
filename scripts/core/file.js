@@ -40,7 +40,7 @@ file.create = function (filepath, data = '') {
 
   return file
     .createDir(dir)
-    .then(() => fs.writeFile(filepath, data, { encoding: 'utf8', flag: 'w' }))
+    .then(() => file.write(filepath, data))
     .catch(console.error)
 }
 
