@@ -34,6 +34,7 @@ async function generateGuides() {
 
     const output = xml.create({ channels: groupChannels, programs: groupProgs })
 
+    logger.info(`Creating "${filepath}"...`)
     await file.create(filepath, output)
 
     await log({
@@ -43,10 +44,12 @@ async function generateGuides() {
       status: 1
     })
   }
+
+  logger.info(`Done`)
 }
 
 async function loadChannels() {
-  logger.info('Loading channels from database...')
+  logger.info('Loading channels...')
 
   await db.channels.load()
 
@@ -54,10 +57,12 @@ async function loadChannels() {
 }
 
 async function loadPrograms() {
-  logger.info('Loading programs from database...')
+  logger.info('Loading programs...')
 
+  logger.info('Loading "database/programs.db"...')
   await db.programs.load()
 
+  logger.info('Loading programs from "database/programs.db"...')
   let programs = await db.programs.find({}).sort({ channel: 1, start: 1 })
 
   programs = programs.map(program => {
