@@ -37,7 +37,8 @@ async function generateCountriesTable() {
     const country = countries[code]
 
     rows.push({
-      name: `${country.flag} ${country.name}`,
+      flag: country.flag,
+      name: country.name,
       channels: item.count,
       epg: `<code>https://iptv-org.github.io/epg/guides/${item.gid}/${item.site}.epg.xml</code>`
     })

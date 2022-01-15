@@ -18,7 +18,10 @@ markdown.createTable = function (data, cols) {
     for (let [i, item] of group.entries()) {
       const rowspan = group.length > 1 ? ` rowspan="${group.length}"` : ''
       output += '    <tr>'
-      if (i === 0) output += `<td align="left" valign="top" nowrap${rowspan}>${item.name}</td>`
+      if (i === 0) {
+        const name = item.flag ? `${item.flag} ${item.name}` : item.name
+        output += `<td align="left" valign="top" nowrap${rowspan}>${name}</td>`
+      }
       output += `<td align="right">${item.channels}</td>`
       output += `<td align="left" nowrap>${item.epg}</td>`
       output += '</tr>\n'

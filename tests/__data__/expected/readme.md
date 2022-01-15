@@ -14,9 +14,9 @@ To load a program guide, all you need to do is copy the link to one or more of t
     <tr><th align="left">Country</th><th align="left">Channels</th><th align="left">EPG</th></tr>
   </thead>
   <tbody>
+    <tr><td align="left" valign="top" nowrap>🇿🇦 South Africa</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/za/dstv.com.epg.xml</code></td></tr>
     <tr><td align="left" valign="top" nowrap rowspan="2">🇺🇸 United States</td><td align="right">372</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us/tvtv.us.epg.xml</code></td></tr>
     <tr><td align="right">74</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us/magticom.ge.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>🇿🇦 South Africa</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/za/dstv.com.epg.xml</code></td></tr>
   </tbody>
 </table>
 
