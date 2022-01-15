@@ -3,7 +3,7 @@
   "scripts": {
     "update-codes": "node scripts/update-codes.js",
     "act": "act workflow_dispatch -W .github/workflows/auto-update.yml --artifact-server-path ./.artifacts",
-    "test": "jest"
+    "test": "npx jest --runInBand"
   },
   "private": true,
   "author": "Arhey",
