@@ -7,8 +7,9 @@ async function main() {
   await db.programs.reset()
   const files = await file.list(`${LOGS_DIR}/load-cluster/cluster_*.log`)
   for (const filepath of files) {
+    logger.info(`Parsing "${filepath}"...`)
     const results = await parser.parseLogs(filepath)
-    results.forEach(result => {
+    for (const result of results) {
       const programs = result.programs.map(program => {
         program.site = result.site
         program.country = result.country
@@ -16,10 +17,10 @@ async function main() {
 
         return program
       })
-      db.programs.insert(programs)
-    })
+
+      await db.programs.insert(programs)
+    }
   }
-  db.programs.compact()
 }
 
 main()
