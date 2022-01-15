@@ -60,18 +60,19 @@
               <div class="level-item">Loading...</div>
             </div>
 
-            <template x-for="country in items">
+            <template x-for="item in items">
               <div
                 class="card mb-3 is-shadowless"
                 style="border: 1px solid #dbdbdb"
                 x-data="{
                   count: 0,
                   get countryChannels() {
-                    if (!_query) return country.channels
+                    if (!_query) return item.channels
+                    const normQuery = _query.toLowerCase()
 
-                    return country.channels.filter(c => {
-                      return c.hash.includes(_query)
-                    })
+                    return item.channels.filter(c => {
+                      return c.hash.includes(normQuery)
+                    }) || []
                   }
                 }"
                 x-show="countryChannels.length > 0"
@@ -81,14 +82,14 @@
               >
                 <div
                   class="card-header is-shadowless is-clickable"
-                  @click="country.expanded = !country.expanded"
+                  @click="item.expanded = !item.expanded"
                 >
-                  <span class="card-header-title" x-text="`${country.flag} ${country.name}`"></span>
+                  <span class="card-header-title" x-text="`${item.flag} ${item.name}`"></span>
                   <button class="card-header-icon" aria-label="more options">
                     <span class="icon">
                       <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
                         <path
-                          x-show="!country.expanded"
+                          x-show="!item.expanded"
                           fill="none"
                           stroke="currentColor"
                           stroke-linecap="round"
@@ -97,7 +98,7 @@
                           d="M112 184l144 144 144-144"
                         />
                         <path
-                          x-show="country.expanded"
+                          x-show="item.expanded"
                           fill="none"
                           stroke="currentColor"
                           stroke-linecap="round"
@@ -109,7 +110,7 @@
                     </span>
                   </button>
                 </div>
-                <div class="card-content" x-show="country.expanded || (count > 0 && _query.length)">
+                <div class="card-content" x-show="item.expanded || (count > 0 && _query.length)">
                   <div class="table-container">
                     <table class="table" style="min-width: 100%">
                       <thead>
@@ -132,10 +133,12 @@
                               />
                             </td>
                             <td class="is-vcentered" nowrap>
-                              <div x-text="channel.display_name"></div>
+                              <template x-for="name in channel.name">
+                                <p x-text="name"></p>
+                              </template>
                             </td>
                             <td class="is-vcentered" nowrap>
-                              <code x-text="channel.tvg_id"></code>
+                              <code x-text="channel.id"></code>
                             </td>
                             <td class="is-vcentered">
                               <template x-for="guide in channel.guides">
