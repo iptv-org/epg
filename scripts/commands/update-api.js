@@ -15,14 +15,22 @@ async function generateChannelsJson() {
 
   const channels = await loadChannels()
 
-  await file.create(`${API_DIR}/channels.json`, JSON.stringify(channels))
+  const channelsPath = `${API_DIR}/channels.json`
+  logger.info(`Saving to "${channelsPath}"...`)
+  await file.create(channelsPath, JSON.stringify(channels))
+
+  logger.info(`Done`)
 }
 
 async function loadChannels() {
-  let items = await db.channels.find({}).sort({ xmltv_id: 1 })
+  logger.info('Loading channels from database...')
 
-  let output = {}
-  items.forEach(item => {
+  await db.channels.load()
+
+  const items = await db.channels.find({}).sort({ xmltv_id: 1 })
+
+  const output = {}
+  for (const item of items) {
     if (!output[item.xmltv_id]) {
       output[item.xmltv_id] = {
         id: item.xmltv_id,
@@ -40,7 +48,7 @@ async function loadChannels() {
     output[item.xmltv_id].guides.push(
       `https://iptv-org.github.io/epg/guides/${item.gid}/${item.site}.epg.xml`
     )
-  })
+  }
 
   return Object.values(output)
 }
