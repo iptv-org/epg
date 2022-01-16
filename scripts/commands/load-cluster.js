@@ -46,30 +46,29 @@ async function main() {
       }
     })
 
-    const programs = await grabber.grab(channel, config, async (data, err) => {
-      await db.channels.update({ _id: channel._id }, { $set: { logo: data.channel.logo } })
+    await grabber.grab(channel, config, async (data, err) => {
+      await file.append(
+        clusterLog,
+        JSON.stringify({
+          _id: channel._id,
+          site: channel.site,
+          country: channel.country,
+          logo: data.channel.logo,
+          gid: channel.gid,
+          programs: data.programs
+        }) + '\n'
+      )
 
       logger.info(
-        `[${i}/${total}] ${channel.site} - ${data.id} - ${data.date.format('MMM D, YYYY')} (${
-          data.programs.length
-        } programs)`
+        `[${i}/${total}] ${channel.site} - ${channel.xmltv_id} - ${data.date.format(
+          'MMM D, YYYY'
+        )} (${data.programs.length} programs)`
       )
 
       if (err) logger.error(err.message)
 
       if (i < total) i++
     })
-
-    await file.append(
-      clusterLog,
-      JSON.stringify({
-        _id: channel._id,
-        site: channel.site,
-        country: channel.country,
-        gid: channel.gid,
-        programs
-      }) + '\n'
-    )
   }
 
   db.channels.compact()

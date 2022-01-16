@@ -24,6 +24,7 @@ it('can load cluster', () => {
   expect(output[0]).toMatchObject({
     _id: '0Wefq0oMR3feCcuY',
     site: 'chaines-tv.orange.fr',
+    logo: 'https://example.com/logo.png',
     country: 'US',
     gid: 'fr'
   })
@@ -31,20 +32,9 @@ it('can load cluster', () => {
   expect(output[1]).toMatchObject({
     _id: '1XzrxNkSF2AQNBrT',
     site: 'magticom.ge',
+    logo: 'https://www.magticom.ge/images/channels/MjAxOC8wOS8xMC9lZmJhNWU5Yy0yMmNiLTRkMTAtOWY5Ny01ODM0MzY0ZTg0MmEuanBn.jpg',
     country: 'US',
     gid: 'ge'
-  })
-
-  const database = content('tests/__data__/temp/database/channels.db')
-
-  expect(database[1]).toMatchObject({
-    _id: '0Wefq0oMR3feCcuY',
-    logo: 'https://example.com/logo.png'
-  })
-
-  expect(database[2]).toMatchObject({
-    _id: '1XzrxNkSF2AQNBrT',
-    logo: 'https://www.magticom.ge/images/channels/MjAxOC8wOS8xMC9lZmJhNWU5Yy0yMmNiLTRkMTAtOWY5Ny01ODM0MzY0ZTg0MmEuanBn.jpg'
   })
 })
 
