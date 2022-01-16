@@ -109,7 +109,7 @@ jobs:
           pr_body: |
             This pull request is created by [auto-update][1] workflow.
 
-            [1]: https://github.com/iptv-org/iptv/actions/runs/${{ github.run_id }}
+            [1]: https://github.com/iptv-org/epg/actions/runs/${{ github.run_id }}
       - uses: juliangruber/merge-pull-request-action@v1
         if: ${{ github.ref == 'refs/heads/master' }}
         with:
