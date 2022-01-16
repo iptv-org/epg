@@ -5,6 +5,12 @@ const { execSync } = require('child_process')
 beforeEach(() => {
   fs.rmdirSync('tests/__data__/output', { recursive: true })
   fs.mkdirSync('tests/__data__/output')
+  fs.mkdirSync('tests/__data__/output/database', { recursive: true })
+
+  fs.copyFileSync(
+    'tests/__data__/input/database/channels.db',
+    'tests/__data__/output/database/channels.db'
+  )
 
   execSync(
     'DB_DIR=tests/__data__/output/database LOGS_DIR=tests/__data__/input/logs node scripts/commands/save-results.js',
@@ -29,6 +35,13 @@ it('can save results to database', () => {
     'stop',
     'title'
   ])
+
+  const database = content('tests/__data__/output/database/channels.db')
+
+  expect(database[1]).toMatchObject({
+    _id: '0Wefq0oMR3feCcuY',
+    logo: 'https://example.com/logo.png'
+  })
 })
 
 function content(filepath) {
