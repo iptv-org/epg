@@ -12,7 +12,7 @@ module.exports = {
   delay: 5000,
   site: 'programtv.onet.pl',
   url: function ({ date, channel }) {
-    const currDate = dayjs.utc().startOf('d')
+    const currDate = dayjs.utc().startOf('d').add(1, 'm')
     const day = currDate.diff(date, 'd')
 
     return `https://programtv.onet.pl/program-tv/${channel.site_id}?dzien=${day}`
