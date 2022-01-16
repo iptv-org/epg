@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/mbc.net/mbc.net.config.js --channels=sites/mbc.net/mbc.net_ae.channels.xml --output=.gh-pages/guides/ae/mbc.net.epg.xml --days=2
+// npx epg-grabber --config=sites/mbc.net/mbc.net.config.js --channels=sites/mbc.net/mbc.net_ae.channels.xml --output=guide.xml --days=2
 
 const { parser, url, logo } = require('./mbc.net.config.js')
 const dayjs = require('dayjs')
