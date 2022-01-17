@@ -21,6 +21,11 @@ document.addEventListener('alpine:init', () => {
       let items = {}
       for (let channel of channels) {
         if (!items[channel.country]) {
+          if (!countries[channel.country]) {
+            console.log('Warning: Wrong country code', channel)
+            continue
+          }
+
           const country = countries[channel.country]
 
           items[channel.country] = {
