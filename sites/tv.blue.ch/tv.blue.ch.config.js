@@ -81,5 +81,7 @@ function parseItems(content) {
   const nodes = data.Nodes.Items.filter(i => i.Kind === 'Channel')
   if (!nodes.length) return []
 
-  return nodes[0].Content.Nodes.Items.filter(i => i.Kind === 'Broadcast')
+  return nodes[0].Content.Nodes && Array.isArray(nodes[0].Content.Nodes.Items)
+    ? nodes[0].Content.Nodes.Items.filter(i => i.Kind === 'Broadcast')
+    : []
 }
