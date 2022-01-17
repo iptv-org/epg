@@ -63,9 +63,16 @@ it('can parse response without image', () => {
   ])
 })
 
-it('can handle empty guide', () => {
+it('can handle wrong site id', () => {
   const result = parser({
     content: `{"Status":{"Version":"7","Status":"OK","ProcessingTime":"00:00:00.0160674","ExecutionTime":"2022-01-17T13:47:30.584Z"},"Request":{"Domain":"TV","Resource":"Channels","Action":"List","Parameters":"(ids=12210;start=202201170000;end=202201180000;level=normal)","Identifiers":["12210"],"Start":"2022-01-17T00:00:00Z","End":"2022-01-18T00:00:00Z","DataLevel":"Normal"},"DataSource":{"Snapshot":"Tv_20220117114748","DbCreationTime":"2022-01-17T11:49:14.608Z","IncrementCreationTime":"0001-01-01T00:00:00Z"},"Nodes":{"Items":[]}}`
+  })
+  expect(result).toMatchObject([])
+})
+
+it('can handle empty guide', () => {
+  const result = parser({
+    content: `{"Status":{"Version":"7","Status":"OK","ExecutionTime":"2022-01-17T15:30:37.97Z"},"Request":{"Domain":"TV","Resource":"Channels","Action":"List","Parameters":"(ids=1884;start=202201170000;end=202201180000;level=normal)","Identifiers":["1884"],"Start":"2022-01-17T00:00:00Z","End":"2022-01-18T00:00:00Z","DataLevel":"Normal"},"DataSource":{"Snapshot":"Tv_20220117144354","DbCreationTime":"2022-01-17T14:45:11.84Z","IncrementCreationTime":"0001-01-01T00:00:00Z"},"Nodes":{"Count":1,"TotalItemCount":1,"Items":[{"Domain":"TV","Identifier":"1884","Kind":"Channel","Content":{"Description":{"Title":"Fisu.tv 1","Language":"en"}}}]}}`
   })
   expect(result).toMatchObject([])
 })
