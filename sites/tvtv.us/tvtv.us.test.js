@@ -15,7 +15,7 @@ const channel = {
   logo: 'https://cdn.tvpassport.com/image/station/100x100/src.png'
 }
 
-fit('can generate valid url', () => {
+it('can generate valid url', () => {
   expect(url({ channel, date })).toBe(
     'https://www.tvtv.us/gn/d/v1.1/stations/62670/airings?startDateTime=2022-01-17T00:00:00Z&endDateTime=2022-01-18T00:00:00Z'
   )
