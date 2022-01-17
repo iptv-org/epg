@@ -21,9 +21,10 @@ module.exports = {
     let programs = []
     const items = parseItems(content)
     items.forEach(item => {
-      if (item.title === 'Fin des programmes') return
+      const title = parseTitle(item)
+      if (title === 'Sendepause') return
       programs.push({
-        title: parseTitle(item),
+        title,
         description: parseDescription(item),
         icon: parseIcon(item),
         start: parseStart(item),
