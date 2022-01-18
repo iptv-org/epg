@@ -1,3 +1,4 @@
+const _ = require('lodash')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 dayjs.extend(utc)
@@ -36,6 +37,17 @@ xml.create = function ({ channels, programs }) {
 			program.categories.forEach(category => {
 				output += `<category lang="${category.lang}">${escapeString(category.value)}</category>`
 			})
+
+			if (program.season && program.episode) {
+				const episodeNum = {
+					xmltv_ns: createXMLTVNS(program.season, program.episode),
+					onscreen: createOnScreen(program.season, program.episode)
+				}
+
+				for (const [system, value] of Object.entries(episodeNum)) {
+					output += `<episode-num system="${system}">${value}</episode-num>`
+				}
+			}
 
 			if (program.image) output += `<icon src="${escapeString(program.image)}"/>`
 
@@ -76,4 +88,15 @@ function escapeString(string, defaultValue = '') {
 		.replace(/\n|\r/g, ' ')
 		.replace(/  +/g, ' ')
 		.trim()
+}
+
+function createXMLTVNS(s, e) {
+	return `${s - 1}.${e - 1}.0/1`
+}
+
+function createOnScreen(s, e) {
+	s = _.padStart(s, 2, '0')
+	e = _.padStart(e, 2, '0')
+
+	return `S${s}E${e}`
 }

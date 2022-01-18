@@ -77,6 +77,8 @@ async function loadPrograms() {
       stop: program.stop,
       site: program.site,
       country: program.country,
+      season: program.season,
+      episode: program.episode,
       gid: program.gid,
       _id: program._id
     }
