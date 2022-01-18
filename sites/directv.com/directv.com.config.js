@@ -1,3 +1,4 @@
+const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 
@@ -13,24 +14,37 @@ module.exports = {
   logo({ channel }) {
     return channel.logo
   },
-  parser({ content }) {
+  async parser({ content }) {
     const programs = []
     const items = parseItems(content)
-    items.forEach(item => {
-      if (item.programID === '-1') return
+    for (let item of items) {
+      if (item.programID === '-1') continue
+      const detail = await loadProgramDetail(item.programID)
       const start = parseStart(item)
       const stop = start.add(item.duration, 'm')
       programs.push({
         title: item.title,
-        description: item.description,
+        description: parseDescription(detail),
         category: item.subcategoryList,
         start,
         stop
       })
-    })
+    }
 
     return programs
   }
+}
+
+function parseDescription(detail) {
+  return detail ? detail.description : null
+}
+
+function loadProgramDetail(programID) {
+  return axios
+    .get(`https://www.directv.com/json/program/flip/${programID}`)
+    .then(r => r.data)
+    .then(d => d.programDetail)
+    .catch(console.err)
 }
 
 function parseStart(item) {
