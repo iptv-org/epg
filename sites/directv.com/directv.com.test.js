@@ -1,11 +1,14 @@
-// npx epg-grabber --config=sites/directv.com/directv.com.config.js --channels=sites/directv.com/directv.com_us.channels.xml --days=1 --output=.gh-pages/guides/us/directv.com.epg.xml
+// npx epg-grabber --config=sites/directv.com/directv.com.config.js --channels=sites/directv.com/directv.com_us.channels.xml --output=guide.xml --days=2
 
 const { parser, url, logo } = require('./directv.com.config.js')
+const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
+
+jest.mock('axios')
 
 const date = dayjs.utc('2021-10-24', 'YYYY-MM-DD').startOf('d')
 const channel = {
@@ -27,24 +30,71 @@ it('can get logo url', () => {
   expect(result).toBe('https://www.directv.com/images/logos/channels/dark/large/875.png')
 })
 
-it('can parse response', () => {
-  const result = parser({ date, channel, content })
-  expect(result).toMatchObject([
-    {
-      start: dayjs.utc('Sat, 30 Oct 2021 00:00:00 GMT'),
-      stop: dayjs.utc('Sat, 30 Oct 2021 01:00:00 GMT'),
-      title: 'Home Sweet Home',
-      category: ['Series', 'Reality'],
-      description: null
+it('can parse response', done => {
+  axios.get.mockImplementation(url => {
+    if (url === 'https://www.directv.com/json/program/flip/EP039886740003') {
+      return Promise.resolve({
+        data: JSON.parse(
+          `{"programDetail":{"title":"Home Sweet Home","episodeTitle":"Art Is My God","mainCategory":"TV","rating":"PG","runLength":"1 hr","runLengthOriginal":60,"tomatoScore":0,"tomatoImg":"","audienceScore":0,"popcornImg":"","price":0,"formats":["1080p"],"starRating":"","starRatingNum":0,"episodeNumber":3,"episodeSeason":1,"originalAirDate":"2021-10-29","airDate":"Friday, October 29th","progType":"Series","ltd":"","isInPlaylist":false,"historical":false,"detailsLinkUrl":"/tv/Home-Sweet-Home-bUdDOWFNWkFKQWlGby9GckxSaXJvUT09/Art-Is-My-God-QVZSbmFsVUNvK0pLL3JRTjl0OFNYUT09","seriesLinkUrl":"/tv/Home-Sweet-Home-bUdDOWFNWkFKQWlGby9GckxSaXJvUT09","description":"The Baltzers, a surfing Mormon family, and the Silversteins, an artistic Black and Latino family with Jewish heritage, discover that the struggle of living outside their comfort zones sparks rewarding moments.","primaryImageUrl":"/db_photos/default/TV/tv.jpg","isLiveStreaming":false,"tmsProgramID":"EP039886740003","firstRun":false,"seriesID":20584969},"reporting":{"flip":{"success":false,"reportingData":"reporting for app/shared/nodules/json/flip/flip not implemented yet"}},"messagekeys":null,"contingencies":[]}`
+        )
+      })
+    } else {
+      return Promise.resolve({ data: '' })
     }
-  ])
+  })
+
+  parser({ date, channel, content })
+    .then(result => {
+      result = result.map(p => {
+        p.start = p.start.toJSON()
+        p.stop = p.stop.toJSON()
+        return p
+      })
+
+      expect(result).toMatchObject([
+        {
+          start: '2021-10-30T00:00:00.000Z',
+          stop: '2021-10-30T01:00:00.000Z',
+          title: 'Home Sweet Home',
+          description:
+            'The Baltzers, a surfing Mormon family, and the Silversteins, an artistic Black and Latino family with Jewish heritage, discover that the struggle of living outside their comfort zones sparks rewarding moments.',
+          category: ['Series', 'Reality']
+        }
+      ])
+      done()
+    })
+    .catch(done)
 })
 
-it('can handle empty guide', () => {
-  const result = parser({
+it('can handle missing details', done => {
+  axios.get.mockImplementation(url => {
+    if (url === 'https://www.directv.com/json/program/flip/EP039886740003') {
+      return Promise.resolve({ data: '' })
+    }
+  })
+
+  parser({ date, channel, content })
+    .then(result => {
+      expect(result).toMatchObject([
+        {
+          title: 'Home Sweet Home',
+          description: null
+        }
+      ])
+      done()
+    })
+    .catch(done)
+})
+
+it('can handle empty guide', done => {
+  parser({
     date,
     channel,
     content: `{"errors":[{"text":"Service failure: see errors or BulkOperationErrors for details","field":"","reason":"INTERNAL_SERVER_ERROR"}],"statusCode":500,"apiResponse":{"messages":"NOTE: see res.contingencies for size-filtered message values"},"reporting":{"channelschedules":{"success":false,"reportingData":"reporting for app/json/channelschedules/channelschedules not implemented yet"}},"messagekeys":null,"contingencies":[{"key":"ent_ep_guide_backend_unavailable_error_message","value":"<!-- message: key=ent_ep_guide_backend_unavailable_error_message, deviceType=web -->Due to technical issues the guide is currently unavailable, please check back to soon.","level":"ERROR"}]}`
   })
-  expect(result).toMatchObject([])
+    .then(result => {
+      expect(result).toMatchObject([])
+      done()
+    })
+    .catch(done)
 })
