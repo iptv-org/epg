@@ -6,6 +6,8 @@ const API_DIR = process.env.API_DIR || '.gh-pages/api'
 
 async function main() {
   await generateChannelsJson()
+  await generateProgramsJson()
+  logger.info(`Done`)
 }
 
 main()
@@ -18,8 +20,41 @@ async function generateChannelsJson() {
   const channelsPath = `${API_DIR}/channels.json`
   logger.info(`Saving to "${channelsPath}"...`)
   await file.create(channelsPath, JSON.stringify(channels))
+}
 
-  logger.info(`Done`)
+async function generateProgramsJson() {
+  logger.info('Generating programs.json...')
+
+  const programs = await loadPrograms()
+
+  const programsPath = `${API_DIR}/programs.json`
+  logger.info(`Saving to "${programsPath}"...`)
+  await file.create(programsPath, JSON.stringify(programs))
+}
+
+async function loadPrograms() {
+  logger.info('Loading programs from database...')
+
+  await db.programs.load()
+
+  let items = await db.programs.find({})
+
+  items = items.map(item => {
+    return {
+      channel: item.channel,
+      site: item.site,
+      lang: item.lang,
+      title: item.title,
+      desc: item.description || null,
+      categories: item.category || [],
+      image: item.icon || null,
+      start: item.start,
+      stop: item.stop
+    }
+  })
+
+  logger.info('Sort programs...')
+  return _.sortBy(items, ['channel', 'site', 'start'])
 }
 
 async function loadChannels() {

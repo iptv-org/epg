@@ -50,19 +50,13 @@ To load a program guide, all you need to do is copy the link to one or more of t
 
 https://iptv-org.github.io/epg/index.html
 
-## For Developers
+## API
 
-You can also get a list of all available channels and their codes in JSON format by sending a GET request to:
+### List of channels
 
 ```
 https://iptv-org.github.io/epg/api/channels.json
 ```
-
-If successful, you should get the following response:
-
-<details>
-<summary>Expand</summary>
-<br>
 
 ```
 [
@@ -83,7 +77,33 @@ If successful, you should get the following response:
 ]
 ```
 
-</details>
+### List of programs
+
+```
+https://iptv-org.github.io/epg/api/programs.json
+```
+
+```
+[
+  ...
+  {
+    "channel": "CNNUSA.us",
+    "site": "example.com",
+    "lang": "en",
+    "title": "Erin Burnett OutFront",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    "categories": [
+      "Series",
+      "News"
+    ],
+    "image": "https://example.com/banner.jpg",
+    "start": 1641772800,
+    "stop": 1641776400
+  },
+  ...
+]
+```
 
 ## Contribution
 
