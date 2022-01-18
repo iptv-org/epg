@@ -47,7 +47,7 @@ it('can parse response', () => {
 })
 
 it('can parse response without image', () => {
-  const content = `{"Nodes":{"Count":1,"TotalItemCount":1,"Items":[{"Domain":"TV","Identifier":"1221","Kind":"Channel","Content":{"Description":{"Title":"blue Zoom D","Language":"de"},"Nodes":{"Count":29,"TotalItemCount":29,"Items":[{"Domain":"TV","Identifier":"t10014a78a8b0668","Kind":"Broadcast","Channel":"1001","Content":{"Description":{"Title":"Sendepause","Language":"fr","Duration":"00:01:00"}},"Version":{"Hash":"440e"},"Availabilities":[{"AvailabilityStart":"2022-01-17T04:59:00Z","AvailabilityEnd":"2022-01-17T05:00:00Z"}],"Relations":[{"Domain":"TV","Kind":"Reference","Role":"ChannelIdentifier","TargetIdentifier":"3553a4f2-ff63-5200-7048-d8d59d805f81"},{"Domain":"TV","Kind":"Reference","Role":"Dummy","TargetIdentifier":"True"},{"Domain":"TV","Kind":"Reference","Role":"ProgramIdentifier","TargetIdentifier":"p1"}]}]}}}]}}`
+  const content = `{"Nodes":{"Count":1,"TotalItemCount":1,"Items":[{"Domain":"TV","Identifier":"1221","Kind":"Channel","Content":{"Description":{"Title":"blue Zoom D","Language":"de"},"Nodes":{"Count":29,"TotalItemCount":29,"Items":[{"Domain":"TV","Identifier":"t10014a78a8b0668","Kind":"Broadcast","Channel":"1001","Content":{"Description":{"Title":"Lorem ipsum","Language":"fr","Duration":"00:01:00"}},"Version":{"Hash":"440e"},"Availabilities":[{"AvailabilityStart":"2022-01-17T04:59:00Z","AvailabilityEnd":"2022-01-17T05:00:00Z"}],"Relations":[{"Domain":"TV","Kind":"Reference","Role":"ChannelIdentifier","TargetIdentifier":"3553a4f2-ff63-5200-7048-d8d59d805f81"},{"Domain":"TV","Kind":"Reference","Role":"Dummy","TargetIdentifier":"True"},{"Domain":"TV","Kind":"Reference","Role":"ProgramIdentifier","TargetIdentifier":"p1"}]}]}}}]}}`
   const result = parser({ content }).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
@@ -58,7 +58,7 @@ it('can parse response without image', () => {
     {
       start: '2022-01-17T04:59:00.000Z',
       stop: '2022-01-17T05:00:00.000Z',
-      title: 'Sendepause'
+      title: 'Lorem ipsum'
     }
   ])
 })
