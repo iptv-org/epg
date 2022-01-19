@@ -58,6 +58,8 @@ it('can parse response', done => {
           title: 'Home Sweet Home',
           description:
             'The Baltzers, a surfing Mormon family, and the Silversteins, an artistic Black and Latino family with Jewish heritage, discover that the struggle of living outside their comfort zones sparks rewarding moments.',
+          season: 1,
+          episode: 3,
           category: ['Series', 'Reality']
         }
       ])

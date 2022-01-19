@@ -26,6 +26,8 @@ module.exports = {
         title: item.title,
         description: parseDescription(detail),
         category: item.subcategoryList,
+        season: item.seasonNumber,
+        episode: item.episodeNumber,
         start,
         stop
       })
