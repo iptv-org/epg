@@ -1,4 +1,5 @@
-const { db, logger, file, xml } = require('../core')
+const { db, logger, file } = require('../core')
+const grabber = require('epg-grabber')
 const _ = require('lodash')
 
 const DB_DIR = process.env.DB_DIR || 'scripts/database'
@@ -32,7 +33,7 @@ async function generateGuides() {
       }
     )
 
-    const output = xml.create({ channels: groupChannels, programs: groupProgs })
+    const output = grabber.convertToXMLTV({ channels: groupChannels, programs: groupProgs })
 
     logger.info(`Creating "${filepath}"...`)
     await file.create(filepath, output)
@@ -67,9 +68,9 @@ async function loadPrograms() {
 
   programs = programs.map(program => {
     return {
-      title: program.title ? [{ lang: program.lang, value: program.title }] : [],
-      description: program.description ? [{ lang: program.lang, value: program.description }] : [],
-      categories: program.category ? [{ lang: program.lang, value: program.category }] : [],
+      title: program.title,
+      description: program.description,
+      categories: program.category,
       icon: program.icon,
       channel: program.channel,
       lang: program.lang,
@@ -77,6 +78,8 @@ async function loadPrograms() {
       stop: program.stop,
       site: program.site,
       country: program.country,
+      season: program.season,
+      episode: program.episode,
       gid: program.gid,
       _id: program._id
     }
