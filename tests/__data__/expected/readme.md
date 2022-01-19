@@ -77,7 +77,7 @@ https://iptv-org.github.io/epg/api/channels.json
 ]
 ```
 
-### List of programs
+<!-- ### List of programs
 
 ```
 https://iptv-org.github.io/epg/api/programs.json
@@ -103,7 +103,7 @@ https://iptv-org.github.io/epg/api/programs.json
   },
   ...
 ]
-```
+``` -->
 
 ## Contribution
 

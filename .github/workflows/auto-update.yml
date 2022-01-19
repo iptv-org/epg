@@ -78,7 +78,7 @@ jobs:
         with:
           name: database
           path: scripts/database
-      - run: node scripts/commands/update-api.js
+      - run: NODE_OPTIONS="--max-old-space-size=4096" node scripts/commands/update-api.js
       - run: NODE_OPTIONS="--max-old-space-size=4096" node scripts/commands/update-guides.js
       - uses: actions/upload-artifact@v2
         with:
@@ -86,8 +86,16 @@ jobs:
           path: scripts/logs
       - uses: actions/upload-artifact@v2
         with:
-          name: gh-pages
-          path: .gh-pages
+          name: channels.json
+          path: .gh-pages/api/channels.json
+      - uses: actions/upload-artifact@v2
+        with:
+          name: programs.json
+          path: .gh-pages/api/programs.json
+      - uses: actions/upload-artifact@v2
+        with:
+          name: guides
+          path: .gh-pages/guides
       - run: node scripts/commands/update-readme.js
       - run: git add README.md
       - run: git commit -m "[Bot] Update README.md"
