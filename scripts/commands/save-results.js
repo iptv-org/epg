@@ -16,11 +16,21 @@ async function main() {
       await db.channels.update({ _id: result._id }, { $set: { logo: result.logo } })
 
       const programs = result.programs.map(program => {
-        program.site = result.site
-        program.country = result.country
-        program.gid = result.gid
-
-        return program
+        return {
+          title: program.title,
+          description: program.description || null,
+          category: program.category || [],
+          season: program.season || null,
+          episode: program.episode || null,
+          icon: program.icon || null,
+          channel: program.channel,
+          lang: program.lang,
+          start: program.start,
+          stop: program.stop,
+          site: result.site,
+          country: result.country,
+          gid: result.gid
+        }
       })
 
       await db.programs.insert(programs)

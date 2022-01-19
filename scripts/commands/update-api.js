@@ -6,7 +6,10 @@ const API_DIR = process.env.API_DIR || '.gh-pages/api'
 
 async function main() {
   await generateChannelsJson()
-  await generateProgramsJson()
+
+  // Reason: File api/programs.json is 419.08 MB; this exceeds GitHub's file size limit of 100.00 MB
+  // await generateProgramsJson()
+
   logger.info(`Done`)
 }
 
@@ -47,6 +50,8 @@ async function loadPrograms() {
       title: item.title,
       desc: item.description || null,
       categories: item.category || [],
+      season: item.season || null,
+      episode: item.episode || null,
       image: item.icon || null,
       start: item.start,
       stop: item.stop
