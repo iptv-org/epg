@@ -32,12 +32,12 @@ it('can generate channels.json', () => {
   expect(output).toBe(expected)
 })
 
-// it('can generate programs.json', () => {
-//   const output = content('tests/__data__/output/api/programs.json')
-//   const expected = content('tests/__data__/expected/api/programs.json')
+it('can generate programs.json', () => {
+  const output = content('tests/__data__/output/api/programs.json')
+  const expected = content('tests/__data__/expected/api/programs.json')
 
-//   expect(output).toBe(expected)
-// })
+  expect(output).toBe(expected)
+})
 
 function content(filepath) {
   const data = fs.readFileSync(path.resolve(filepath), {
