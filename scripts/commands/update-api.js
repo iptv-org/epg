@@ -47,6 +47,8 @@ async function loadPrograms() {
       title: item.title,
       desc: item.description || null,
       categories: item.category || [],
+      season: item.season || null,
+      episode: item.episode || null,
       image: item.icon || null,
       start: item.start,
       stop: item.stop
