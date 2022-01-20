@@ -1,4 +1,4 @@
-// node ./scripts/commands/parse-channels.js --config=./sites/directv.com/directv.com.config.js --output=./sites/directv.com/directv.com_us.channels.xml
+// node ./scripts/commands/parse-channels.js --config=./sites/directv.com/directv.com.config.js --output=./sites/directv.com/directv.com_us-ny.channels.xml --set=zip:10001
 // npx epg-grabber --config=sites/directv.com/directv.com.config.js --channels=sites/directv.com/directv.com_us.channels.xml --output=guide.xml --days=2
 
 const { parser, url, logo } = require('./directv.com.config.js')

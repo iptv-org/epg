@@ -37,9 +37,13 @@ module.exports = {
 
     return programs
   },
-  async channels({ country }) {
+  async channels({ zip }) {
     const html = await axios
-      .get(`https://www.directv.com/guide`)
+      .get(`https://www.directv.com/guide`, {
+        headers: {
+          cookie: `dtve-prospect-zip=${zip}`
+        }
+      })
       .then(r => r.data)
       .catch(console.log)
 
