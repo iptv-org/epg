@@ -3,7 +3,9 @@
   "scripts": {
     "update-codes": "node scripts/update-codes.js",
     "act": "act workflow_dispatch -W .github/workflows/auto-update.yml --artifact-server-path ./.artifacts",
-    "test": "npx jest --runInBand"
+    "test": "npx jest --runInBand",
+    "test:commands": "npx jest --runInBand -- commands",
+    "test:sites": "npx jest --runInBand -- sites"
   },
   "private": true,
   "author": "Arhey",
@@ -17,7 +19,7 @@
     "commander": "^8.2.0",
     "csv-parser": "^3.0.0",
     "dayjs": "^1.10.4",
-    "epg-grabber": "^0.17.1",
+    "epg-grabber": "^0.18.0",
     "epg-parser": "^0.1.6",
     "form-data": "^4.0.0",
     "glob": "^7.2.0",
