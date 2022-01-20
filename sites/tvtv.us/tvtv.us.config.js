@@ -24,6 +24,8 @@ module.exports = {
         title: parseTitle(item),
         description: parseDescription(item),
         category: parseCategory(item),
+        season: parseSeason(item),
+        episode: parseEpisode(item),
         start: parseStart(item),
         stop: parseStop(item),
         icon: parseIcon(item)
@@ -74,6 +76,14 @@ function parseDescription(item) {
 
 function parseCategory(item) {
   return item.program.genres || []
+}
+
+function parseSeason(item) {
+  return item.program.seasonNum || null
+}
+
+function parseEpisode(item) {
+  return item.program.episodeNum || null
 }
 
 function parseIcon(item) {
