@@ -19,7 +19,7 @@ async function main() {
         return {
           title: program.title,
           description: program.description || null,
-          category: program.category || [],
+          category: program.category || null,
           season: program.season || null,
           episode: program.episode || null,
           icon: program.icon || null,
