@@ -40,13 +40,15 @@ async function loadPrograms() {
   let items = await db.programs.find({})
 
   items = items.map(item => {
+    const categories = Array.isArray(item.category) ? item.category : [item.category]
+
     return {
       channel: item.channel,
       site: item.site,
       lang: item.lang,
       title: item.title,
       desc: item.description || null,
-      categories: item.category || [],
+      categories: categories.filter(i => i),
       season: item.season || null,
       episode: item.episode || null,
       image: item.icon || null,
