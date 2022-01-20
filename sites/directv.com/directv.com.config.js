@@ -1,3 +1,5 @@
+const { padStart } = require('lodash')
+const cheerio = require('cheerio')
 const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
@@ -34,6 +36,32 @@ module.exports = {
     }
 
     return programs
+  },
+  async channels({ country }) {
+    const html = await axios
+      .get(`https://www.directv.com/guide`)
+      .then(r => r.data)
+      .catch(console.log)
+
+    const $ = cheerio.load(html)
+    const script = $('#dtvClientData').html()
+    const [_, json] = script.match(/var dtvClientData = (.*);/) || [null, null]
+    const data = JSON.parse(json)
+
+    let items = data.guideData.channels
+
+    return items.map(item => {
+      return {
+        lang: 'en',
+        site_id: item.chNum,
+        name: item.chName,
+        logo: `https://www.directv.com/images/logos/channels/dark/large/${padStart(
+          item.chLogoId,
+          3,
+          '0'
+        )}.png`
+      }
+    })
   }
 }
 
