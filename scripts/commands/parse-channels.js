@@ -38,6 +38,8 @@ async function main() {
     }
   }
 
+  channels = _.sortBy(channels, 'xmltv_id')
+
   const xml = json2xml(channels, config.site)
 
   const dir = path.parse(options.config).dir
