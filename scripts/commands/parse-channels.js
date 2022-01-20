@@ -1,6 +1,8 @@
 const { Command } = require('commander')
-const fs = require('fs')
+const { db } = require('../core')
 const path = require('path')
+const _ = require('lodash')
+const fs = require('fs')
 
 const program = new Command()
 program
@@ -12,6 +14,7 @@ program
 const options = program.opts()
 
 async function main() {
+  await db.channels.load()
   const config = require(path.resolve(options.config))
   const args = {}
   options.set.forEach(arg => {
@@ -22,12 +25,19 @@ async function main() {
   if (isPromise(channels)) {
     channels = await channels
   }
-  channels = channels.map(channel => {
-    if (!channel.xmltv_id) {
-      channel.xmltv_id = channel.name
+  channels = _.uniqBy(channels, 'site_id')
+
+  for (const channel of channels) {
+    const data = await db.channels
+      .find({ site: config.site, site_id: channel.site_id.toString() })
+      .limit(1)
+    if (data.length) {
+      const first = data[0]
+      channel.xmltv_id = first.xmltv_id
+      channel.name = first.name
     }
-    return channel
-  })
+  }
+
   const xml = json2xml(channels, config.site)
 
   const dir = path.parse(options.config).dir
