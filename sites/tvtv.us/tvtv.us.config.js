@@ -6,7 +6,6 @@ dayjs.extend(utc)
 
 module.exports = {
   site: 'tvtv.us',
-  ignore: false, // NOTE: site_id of most channels must be re-mapped
   url: function ({ date, channel }) {
     return `https://www.tvtv.us/gn/d/v1.1/stations/${
       channel.site_id
