@@ -70,7 +70,7 @@ async function loadPrograms() {
     return {
       title: program.title,
       description: program.description,
-      categories: program.category,
+      category: program.category,
       icon: program.icon,
       channel: program.channel,
       lang: program.lang,
