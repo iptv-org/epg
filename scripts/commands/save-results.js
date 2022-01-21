@@ -34,7 +34,7 @@ async function main() {
       if (result.channel.logo) {
         await db.channels.update(
           { _id: result.channel._id },
-          { $set: { logo: result.channel.logo } }
+          { $set: { logo: result.channel.logo, programCount: result.programs.length } }
         )
       }
 

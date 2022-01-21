@@ -42,6 +42,22 @@ it('can save results', () => {
 
   const channels = content('tests/__data__/output/database/channels.db')
 
+  expect(Object.keys(channels[0]).sort()).toEqual([
+    '_id',
+    'channelsPath',
+    'cluster_id',
+    'configPath',
+    'country',
+    'groups',
+    'lang',
+    'logo',
+    'name',
+    'programCount',
+    'site',
+    'site_id',
+    'xmltv_id'
+  ])
+
   expect(channels[1]).toMatchObject({
     _id: '0Wefq0oMR3feCcuY',
     logo: 'https://example.com/logo.png'
