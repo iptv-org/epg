@@ -25,7 +25,7 @@ it('can create channels database', () => {
       site: 'example.com',
       channelsPath: 'tests/__data__/input/sites/example.com_ca-nl.channels.xml',
       configPath: 'tests/__data__/input/sites/example.com.config.js',
-      gid: 'ca-nl',
+      groups: ['ca-nl'],
       cluster_id: 1
     }
   ])
