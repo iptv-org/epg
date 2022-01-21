@@ -13,23 +13,21 @@ const options = program
   .parse(process.argv)
   .opts()
 
-const channels = []
-
 async function main() {
   logger.info('Starting...')
   logger.info(`Number of clusters: ${options.maxClusters}`)
 
-  await loadChannels()
-  await saveToDatabase()
+  await saveToDatabase(await getChannels())
 
   logger.info('Done')
 }
 
 main()
 
-async function loadChannels() {
+async function getChannels() {
   logger.info(`Loading channels...`)
 
+  const channels = []
   const files = await file.list(options.channels)
   for (const filepath of files) {
     const dir = file.dirname(filepath)
@@ -51,9 +49,11 @@ async function loadChannels() {
     }
   }
   logger.info(`Found ${channels.length} channels`)
+
+  return channels
 }
 
-async function saveToDatabase() {
+async function saveToDatabase(channels = []) {
   logger.info('Saving to the database...')
   await db.channels.load()
   await db.channels.reset()
