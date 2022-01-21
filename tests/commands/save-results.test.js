@@ -31,6 +31,7 @@ it('can save results', () => {
     'icon',
     'lang',
     'season',
+    'site',
     'start',
     'stop',
     'title'

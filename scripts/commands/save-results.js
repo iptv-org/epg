@@ -26,6 +26,7 @@ async function main() {
           lang: program.lang,
           start: program.start,
           stop: program.stop,
+          site: result.channel.site,
           _cid: result.channel._id
         }
       })
