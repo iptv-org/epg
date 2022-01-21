@@ -1,6 +1,10 @@
 const fs = require('fs')
 const path = require('path')
+const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
 const { execSync } = require('child_process')
+
+dayjs.extend(utc)
 
 beforeEach(() => {
   fs.rmdirSync('tests/__data__/temp', { recursive: true })
@@ -21,17 +25,22 @@ beforeEach(() => {
 it('can load cluster', () => {
   const output = content('tests/__data__/output/logs/load-cluster/cluster_1.log')
 
+  expect(Object.keys(output[0]).sort()).toEqual(['channel', 'date', 'error', 'programs'])
+
   expect(output[0]).toMatchObject({
-    _id: '0Wefq0oMR3feCcuY',
-    logo: 'https://example.com/logo.png',
+    channel: {
+      _id: '0Wefq0oMR3feCcuY',
+      logo: 'https://example.com/logo.png'
+    },
+    date: dayjs.utc().startOf('d').format(),
     error: null
   })
 
-  expect(Object.keys(output[0]).sort()).toEqual(['_id', 'error', 'logo', 'programs'])
-
   expect(output[1]).toMatchObject({
-    _id: '1XzrxNkSF2AQNBrT',
-    logo: 'https://www.magticom.ge/images/channels/MjAxOC8wOS8xMC9lZmJhNWU5Yy0yMmNiLTRkMTAtOWY5Ny01ODM0MzY0ZTg0MmEuanBn.jpg'
+    channel: {
+      _id: '1XzrxNkSF2AQNBrT',
+      logo: 'https://www.magticom.ge/images/channels/MjAxOC8wOS8xMC9lZmJhNWU5Yy0yMmNiLTRkMTAtOWY5Ny01ODM0MzY0ZTg0MmEuanBn.jpg'
+    }
   })
 })
 

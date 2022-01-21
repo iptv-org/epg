@@ -56,9 +56,9 @@ async function main() {
       if (err) logger.error(err.message)
 
       const result = {
-        _id: channel._id,
-        logo: data.channel.logo,
+        channel: data.channel,
         programs: data.programs,
+        date: data.date.format(),
         error: err ? err.message : null
       }
 
