@@ -38,7 +38,8 @@ async function getChannels() {
     const configPath = `${dir}/${site}.config.js`
     const config = require(file.resolve(configPath))
     if (config.ignore) continue
-    const [__, groupId] = filename.match(/_([a-z-]+)\.channels\.xml/i) || [null, null]
+    const [__, region] = filename.match(/_([a-z-]+)\.channels\.xml/i) || [null, null]
+    const groupId = `${region}/${site}`
     const items = await parser.parseChannels(filepath)
     for (const item of items) {
       const key = `${item.site}:${item.site_id}`
