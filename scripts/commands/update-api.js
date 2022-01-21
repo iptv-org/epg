@@ -71,7 +71,6 @@ async function loadPrograms() {
     }
   })
 
-  logger.info('Sort programs...')
   programs = _.sortBy(programs, ['channel', 'site', 'start'])
 
   return programs
