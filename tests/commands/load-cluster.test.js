@@ -23,18 +23,15 @@ it('can load cluster', () => {
 
   expect(output[0]).toMatchObject({
     _id: '0Wefq0oMR3feCcuY',
-    site: 'chaines-tv.orange.fr',
     logo: 'https://example.com/logo.png',
-    country: 'US',
-    gid: 'fr'
+    error: null
   })
+
+  expect(Object.keys(output[0]).sort()).toEqual(['_id', 'error', 'logo', 'programs'])
 
   expect(output[1]).toMatchObject({
     _id: '1XzrxNkSF2AQNBrT',
-    site: 'magticom.ge',
-    logo: 'https://www.magticom.ge/images/channels/MjAxOC8wOS8xMC9lZmJhNWU5Yy0yMmNiLTRkMTAtOWY5Ny01ODM0MzY0ZTg0MmEuanBn.jpg',
-    country: 'US',
-    gid: 'ge'
+    logo: 'https://www.magticom.ge/images/channels/MjAxOC8wOS8xMC9lZmJhNWU5Yy0yMmNiLTRkMTAtOWY5Ny01ODM0MzY0ZTg0MmEuanBn.jpg'
   })
 })
 

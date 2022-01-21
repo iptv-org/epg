@@ -47,18 +47,6 @@ async function main() {
     })
 
     await grabber.grab(channel, config, async (data, err) => {
-      await file.append(
-        clusterLog,
-        JSON.stringify({
-          _id: channel._id,
-          site: channel.site,
-          country: channel.country,
-          logo: data.channel.logo,
-          gid: channel.gid,
-          programs: data.programs
-        }) + '\n'
-      )
-
       logger.info(
         `[${i}/${total}] ${channel.site} - ${channel.xmltv_id} - ${data.date.format(
           'MMM D, YYYY'
@@ -66,6 +54,15 @@ async function main() {
       )
 
       if (err) logger.error(err.message)
+
+      const result = {
+        _id: channel._id,
+        logo: data.channel.logo,
+        programs: data.programs,
+        error: err ? err.message : null
+      }
+
+      await file.append(clusterLog, JSON.stringify(result) + '\n')
 
       if (i < total) i++
     })
