@@ -5,31 +5,45 @@ const DB_DIR = process.env.DB_DIR || 'scripts/database'
 const API_DIR = process.env.API_DIR || '.gh-pages/api'
 
 async function main() {
-  await generateChannelsJson()
-  await generateProgramsJson()
-  logger.info(`Done`)
+  await saveToChannelsJson(await loadChannels())
+  await saveToProgramsJson(await loadPrograms())
 }
 
 main()
 
-async function generateChannelsJson() {
-  logger.info('Generating channels.json...')
+async function loadChannels() {
+  logger.info('Loading channels from database...')
 
-  const channels = await loadChannels()
+  await db.channels.load()
 
-  const channelsPath = `${API_DIR}/channels.json`
-  logger.info(`Saving to "${channelsPath}"...`)
-  await file.create(channelsPath, JSON.stringify(channels))
-}
+  const channels = await db.channels.find({}).sort({ xmltv_id: 1 })
 
-async function generateProgramsJson() {
-  logger.info('Generating programs.json...')
+  const output = {}
+  for (const channel of channels) {
+    if (!output[channel.xmltv_id]) {
+      output[channel.xmltv_id] = {
+        id: channel.xmltv_id,
+        name: [],
+        logo: channel.logo || null,
+        country: channel.country,
+        guides: []
+      }
+    } else {
+      output[channel.xmltv_id].logo = output[channel.xmltv_id].logo || channel.logo
+    }
 
-  const programs = await loadPrograms()
+    output[channel.xmltv_id].name.push(channel.name)
+    output[channel.xmltv_id].name = _.uniq(output[channel.xmltv_id].name)
+    channel.groups.forEach(group => {
+      if (channel.programCount) {
+        output[channel.xmltv_id].guides.push(
+          `https://iptv-org.github.io/epg/guides/${group}.epg.xml`
+        )
+      }
+    })
+  }
 
-  const programsPath = `${API_DIR}/programs.json`
-  logger.info(`Saving to "${programsPath}"...`)
-  await file.create(programsPath, JSON.stringify(programs))
+  return Object.values(output)
 }
 
 async function loadPrograms() {
@@ -37,9 +51,9 @@ async function loadPrograms() {
 
   await db.programs.load()
 
-  let items = await db.programs.find({})
+  let programs = await db.programs.find({})
 
-  items = items.map(item => {
+  programs = programs.map(item => {
     const categories = Array.isArray(item.category) ? item.category : [item.category]
 
     return {
@@ -58,36 +72,19 @@ async function loadPrograms() {
   })
 
   logger.info('Sort programs...')
-  return _.sortBy(items, ['channel', 'site', 'start'])
+  programs = _.sortBy(programs, ['channel', 'site', 'start'])
+
+  return programs
 }
 
-async function loadChannels() {
-  logger.info('Loading channels from database...')
+async function saveToChannelsJson(channels = []) {
+  const channelsPath = `${API_DIR}/channels.json`
+  logger.info(`Saving to "${channelsPath}"...`)
+  await file.create(channelsPath, JSON.stringify(channels))
+}
 
-  await db.channels.load()
-
-  const items = await db.channels.find({}).sort({ xmltv_id: 1 })
-
-  const output = {}
-  for (const item of items) {
-    if (!output[item.xmltv_id]) {
-      output[item.xmltv_id] = {
-        id: item.xmltv_id,
-        name: [],
-        logo: item.logo || null,
-        country: item.country,
-        guides: []
-      }
-    } else {
-      output[item.xmltv_id].logo = output[item.xmltv_id].logo || item.logo
-    }
-
-    output[item.xmltv_id].name.push(item.name)
-    output[item.xmltv_id].name = _.uniq(output[item.xmltv_id].name)
-    output[item.xmltv_id].guides.push(
-      `https://iptv-org.github.io/epg/guides/${item.gid}/${item.site}.epg.xml`
-    )
-  }
-
-  return Object.values(output)
+async function saveToProgramsJson(programs = []) {
+  const programsPath = `${API_DIR}/programs.json`
+  logger.info(`Saving to "${programsPath}"...`)
+  await file.create(programsPath, JSON.stringify(programs))
 }
