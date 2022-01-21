@@ -16,7 +16,6 @@ beforeEach(() => {
     'DB_DIR=tests/__data__/output/database LOGS_DIR=tests/__data__/input/logs node scripts/commands/save-results.js',
     { encoding: 'utf8' }
   )
-  console.log(stdout)
 })
 
 it('can save results', () => {
