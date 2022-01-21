@@ -14,7 +14,7 @@ jobs:
           node-version: '14'
           cache: 'npm'
       - run: npm install
-      - run: node scripts/commands/create-database.js
+      - run: node scripts/commands/create-queue.js
       - run: node scripts/commands/create-matrix.js
         id: create-matrix
       - uses: actions/upload-artifact@v2
@@ -86,6 +86,10 @@ jobs:
           path: scripts/logs
       - uses: actions/upload-artifact@v2
         with:
+          name: errors.log
+          path: scripts/logs/errors.log
+      - uses: actions/upload-artifact@v2
+        with:
           name: channels.json
           path: .gh-pages/api/channels.json
       - uses: actions/upload-artifact@v2
@@ -119,13 +123,13 @@ jobs:
 
             [1]: https://github.com/iptv-org/epg/actions/runs/${{ github.run_id }}
       - uses: juliangruber/merge-pull-request-action@v1
-        if: ${{ github.ref == 'refs/heads/master' }}
+        if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
         with:
           github-token: ${{ secrets.PAT }}
           number: ${{ steps.pull-request.outputs.pr_number }}
           method: squash
       - uses: JamesIves/github-pages-deploy-action@4.1.1
-        if: ${{ github.ref == 'refs/heads/master' }}
+        if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
         with:
           branch: gh-pages
           folder: .gh-pages

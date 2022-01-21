@@ -1,6 +1,6 @@
 const { db, file, parser, logger } = require('../core')
 const { program } = require('commander')
-const _ = require('lodash')
+const { shuffle } = require('lodash')
 
 const options = program
   .option(
@@ -13,22 +13,21 @@ const options = program
   .parse(process.argv)
   .opts()
 
-const channels = []
-
 async function main() {
   logger.info('Starting...')
   logger.info(`Number of clusters: ${options.maxClusters}`)
 
-  await loadChannels()
-  await saveToDatabase()
+  await saveToDatabase(await getChannels())
 
   logger.info('Done')
 }
 
 main()
 
-async function loadChannels() {
+async function getChannels() {
   logger.info(`Loading channels...`)
+
+  let channels = {}
 
   const files = await file.list(options.channels)
   for (const filepath of files) {
@@ -39,25 +38,39 @@ async function loadChannels() {
     const configPath = `${dir}/${site}.config.js`
     const config = require(file.resolve(configPath))
     if (config.ignore) continue
-    const [__, gid] = filename.match(/_([a-z-]+)\.channels\.xml/i) || [null, null]
+    const [__, region] = filename.match(/_([a-z-]+)\.channels\.xml/i) || [null, null]
+    const groupId = `${region}/${site}`
     const items = await parser.parseChannels(filepath)
     for (const item of items) {
-      const countryCode = item.xmltv_id.split('.')[1]
-      item.country = countryCode ? countryCode.toUpperCase() : null
-      item.channelsPath = filepath
-      item.configPath = configPath
-      item.gid = gid
-      channels.push(item)
+      const key = `${item.site}:${item.site_id}`
+      if (!channels[key]) {
+        const countryCode = item.xmltv_id.split('.')[1]
+        item.country = countryCode ? countryCode.toUpperCase() : null
+        item.channelsPath = filepath
+        item.configPath = configPath
+        item.groups = []
+
+        channels[key] = item
+      }
+
+      if (!channels[key].groups.includes(groupId)) {
+        channels[key].groups.push(groupId)
+      }
     }
   }
+
+  channels = Object.values(channels)
+
   logger.info(`Found ${channels.length} channels`)
+
+  return channels
 }
 
-async function saveToDatabase() {
+async function saveToDatabase(channels = []) {
   logger.info('Saving to the database...')
   await db.channels.load()
   await db.channels.reset()
-  const chunks = split(_.shuffle(channels), options.maxClusters)
+  const chunks = split(shuffle(channels), options.maxClusters)
   for (const [i, chunk] of chunks.entries()) {
     for (const item of chunk) {
       item.cluster_id = i + 1

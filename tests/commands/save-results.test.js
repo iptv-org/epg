@@ -12,23 +12,22 @@ beforeEach(() => {
     'tests/__data__/output/database/channels.db'
   )
 
-  execSync(
+  const stdout = execSync(
     'DB_DIR=tests/__data__/output/database LOGS_DIR=tests/__data__/input/logs node scripts/commands/save-results.js',
     { encoding: 'utf8' }
   )
 })
 
-it('can save results to database', () => {
-  const output = content('tests/__data__/output/database/programs.db')
+it('can save results', () => {
+  const programs = content('tests/__data__/output/database/programs.db')
 
-  expect(Object.keys(output[0]).sort()).toEqual([
+  expect(Object.keys(programs[0]).sort()).toEqual([
+    '_cid',
     '_id',
     'category',
     'channel',
-    'country',
     'description',
     'episode',
-    'gid',
     'icon',
     'lang',
     'season',
@@ -38,11 +37,40 @@ it('can save results to database', () => {
     'title'
   ])
 
-  const database = content('tests/__data__/output/database/channels.db')
+  expect(programs[0]).toMatchObject({
+    _cid: '0Wefq0oMR3feCcuY'
+  })
 
-  expect(database[1]).toMatchObject({
+  const channels = content('tests/__data__/output/database/channels.db')
+
+  expect(Object.keys(channels[0]).sort()).toEqual([
+    '_id',
+    'channelsPath',
+    'cluster_id',
+    'configPath',
+    'country',
+    'groups',
+    'lang',
+    'logo',
+    'name',
+    'programCount',
+    'site',
+    'site_id',
+    'xmltv_id'
+  ])
+
+  expect(channels[1]).toMatchObject({
     _id: '0Wefq0oMR3feCcuY',
     logo: 'https://example.com/logo.png'
+  })
+
+  const errors = content('tests/__data__/input/logs/errors.log')
+
+  expect(errors[0]).toMatchObject({
+    _id: '00AluKCrCnfgrl8W',
+    site: 'directv.com',
+    xmltv_id: 'BravoEast.us',
+    error: 'Invalid header value char'
   })
 })
 

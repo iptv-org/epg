@@ -15,7 +15,7 @@ beforeEach(() => {
     'tests/__data__/temp/database/programs.db'
   )
 
-  execSync(
+  const stdout = execSync(
     'DB_DIR=tests/__data__/temp/database PUBLIC_DIR=tests/__data__/output LOGS_DIR=tests/__data__/output/logs node scripts/commands/update-guides.js',
     { encoding: 'utf8' }
   )
@@ -26,13 +26,13 @@ afterEach(() => {
 })
 
 it('can generate /guides', () => {
-  const output1 = content('tests/__data__/output/guides/us/magticom.ge.epg.xml')
-  const expected1 = content('tests/__data__/expected/guides/us/magticom.ge.epg.xml')
+  const output1 = content('tests/__data__/output/guides/fr/chaines-tv.orange.fr.epg.xml')
+  const expected1 = content('tests/__data__/expected/guides/fr/chaines-tv.orange.fr.epg.xml')
 
   expect(output1).toBe(expected1)
 
-  const output2 = content('tests/__data__/output/guides/za/dstv.com.epg.xml')
-  const expected2 = content('tests/__data__/expected/guides/za/dstv.com.epg.xml')
+  const output2 = content('tests/__data__/output/guides/zw/dstv.com.epg.xml')
+  const expected2 = content('tests/__data__/expected/guides/zw/dstv.com.epg.xml')
 
   expect(output2).toBe(expected2)
 

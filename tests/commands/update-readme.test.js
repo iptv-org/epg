@@ -6,7 +6,7 @@ beforeEach(() => {
   fs.rmdirSync('tests/__data__/output', { recursive: true })
   fs.mkdirSync('tests/__data__/output')
 
-  execSync(
+  const stdout = execSync(
     'LOGS_DIR=tests/__data__/input/logs node scripts/commands/update-readme.js --config=tests/__data__/input/_readme.json',
     { encoding: 'utf8' }
   )

@@ -1,14 +1,11 @@
 const { file, markdown, parser, logger } = require('../core')
+const provinces = require('../data/ca-provinces.json')
 const countries = require('../data/countries.json')
 const states = require('../data/us-states.json')
-const provinces = require('../data/ca-provinces.json')
 const { program } = require('commander')
 const _ = require('lodash')
 
 const LOGS_DIR = process.env.LOGS_DIR || 'scripts/logs'
-const LOG_PATH = `${LOGS_DIR}/update-guides.log`
-
-let log = []
 
 const options = program
   .option('-c, --config <config>', 'Set path to config file', '.readme/config.json')
@@ -16,31 +13,28 @@ const options = program
   .opts()
 
 async function main() {
-  await setUp()
-
-  await generateCountriesTable()
-  await generateUSStatesTable()
-  await generateCanadaProvincesTable()
-
+  const records = await getLogRecords()
+  await generateCountriesTable(records)
+  await generateUSStatesTable(records)
+  await generateCanadaProvincesTable(records)
   await updateReadme()
 }
 
 main()
 
-async function generateCountriesTable() {
+async function generateCountriesTable(items = []) {
   logger.info('Generating countries table...')
 
-  const items = log.filter(i => i.gid.length === 2)
   let rows = []
   for (const item of items) {
-    const code = item.gid.toUpperCase()
-    const country = countries[code]
+    const country = countries[item.code]
+    if (!country) continue
 
     rows.push({
       flag: country.flag,
       name: country.name,
       channels: item.count,
-      epg: `<code>https://iptv-org.github.io/epg/guides/${item.gid}/${item.site}.epg.xml</code>`
+      epg: `<code>https://iptv-org.github.io/epg/guides/${item.group}.epg.xml</code>`
     })
   }
 
@@ -52,19 +46,18 @@ async function generateCountriesTable() {
   await file.create('./.readme/_countries.md', table)
 }
 
-async function generateUSStatesTable() {
+async function generateUSStatesTable(items = []) {
   logger.info('Generating US states table...')
 
-  const items = log.filter(i => i.gid.startsWith('us-'))
   let rows = []
   for (const item of items) {
-    const code = item.gid.toUpperCase()
-    const state = states[code]
+    const state = states[item.code]
+    if (!state) continue
 
     rows.push({
       name: state.name,
       channels: item.count,
-      epg: `<code>https://iptv-org.github.io/epg/guides/${item.gid}/${item.site}.epg.xml</code>`
+      epg: `<code>https://iptv-org.github.io/epg/guides/${item.group}.epg.xml</code>`
     })
   }
 
@@ -76,19 +69,18 @@ async function generateUSStatesTable() {
   await file.create('./.readme/_us-states.md', table)
 }
 
-async function generateCanadaProvincesTable() {
+async function generateCanadaProvincesTable(items = []) {
   logger.info('Generating Canada provinces table...')
 
-  const items = log.filter(i => i.gid.startsWith('ca-'))
   let rows = []
   for (const item of items) {
-    const code = item.gid.toUpperCase()
-    const province = provinces[code]
+    const province = provinces[item.code]
+    if (!province) continue
 
     rows.push({
       name: province.name,
       channels: item.count,
-      epg: `<code>https://iptv-org.github.io/epg/guides/${item.gid}/${item.site}.epg.xml</code>`
+      epg: `<code>https://iptv-org.github.io/epg/guides/${item.group}.epg.xml</code>`
     })
   }
 
@@ -108,11 +100,19 @@ async function updateReadme() {
   await markdown.compile(options.config)
 }
 
-async function setUp() {
-  log = await parser.parseLogs(LOG_PATH)
+async function getLogRecords() {
+  const logPath = `${LOGS_DIR}/update-guides.log`
+  const records = await parser.parseLogs(logPath)
 
-  if (!log.length) {
-    logger.error(`File "${LOG_PATH}" is empty`)
+  if (!records.length) {
+    logger.error(`File "${logPath}" is empty`)
     process.exit(1)
   }
+
+  return records.map(item => {
+    const code = item.group.split('/')[0] || ''
+    item.code = code.toUpperCase()
+
+    return item
+  })
 }
