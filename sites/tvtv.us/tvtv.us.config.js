@@ -12,7 +12,7 @@ module.exports = {
     }/airings?startDateTime=${date.format()}&endDateTime=${date.add(1, 'd').format()}`
   },
   logo({ channel }) {
-    return channel.logo
+    return `http://tvtv.tmsimg.com/assets/s${channel.site_id}_ll_h15_ad.png?w=360&h=270`
   },
   parser: function ({ content }) {
     let programs = []
@@ -40,14 +40,12 @@ module.exports = {
       .catch(console.log)
 
     return data.data
-      .filter(i => ['Satellite'].includes(i.type))
+      .filter(i => !['Radio Station'].includes(i.type))
       .map(item => {
         return {
           lang: 'en',
           site_id: item.id,
-          xmltv_id: item.shortName,
-          name: item.name,
-          logo: item.logo
+          name: item.name
         }
       })
   }
