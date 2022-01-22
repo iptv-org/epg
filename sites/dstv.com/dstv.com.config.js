@@ -1,3 +1,4 @@
+const axios = require('axios')
 const cheerio = require('cheerio')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
@@ -43,6 +44,24 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels({ bouquet }) {
+    const data = await axios
+      .get(
+        `https://guide.dstv.com/api/channel/fetchChannelsByGenresInBouquet?bouquetId=${bouquet}&genre=all`
+      )
+      .then(r => r.data)
+      .catch(console.log)
+
+    const items = data.items
+    return items.map(item => {
+      return {
+        lang: 'en',
+        site_id: `${bouquet}#${item.channelTag}`,
+        name: item.channelName,
+        logo: item.channelLogoPaths.XLARGE
+      }
+    })
   }
 }
 
