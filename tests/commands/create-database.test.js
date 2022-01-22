@@ -7,7 +7,7 @@ beforeEach(() => {
   fs.mkdirSync('tests/__data__/output')
 
   const stdout = execSync(
-    'DB_DIR=tests/__data__/output/database node scripts/commands/create-queue.js --channels=tests/__data__/input/sites/*.channels.xml --max-clusters=1',
+    'DB_DIR=tests/__data__/output/database node scripts/commands/create-database.js --channels=tests/__data__/input/sites/*.channels.xml --max-clusters=1',
     { encoding: 'utf8' }
   )
 })
