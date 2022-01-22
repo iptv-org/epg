@@ -33,7 +33,7 @@ async function generateGuides() {
 
     await log({
       group: key,
-      count: programs.length
+      count: channels.length
     })
   }
 
