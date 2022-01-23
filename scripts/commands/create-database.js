@@ -42,7 +42,6 @@ async function getChannels() {
     const groupId = `${region}/${site}`
     const items = await parser.parseChannels(filepath)
     for (const item of items) {
-      if (!item.site || !item.site_id || !item.xmltv_id || !item.name) continue
       const key = `${item.site}:${item.site_id}`
       if (!channels[key]) {
         const countryCode = item.xmltv_id.split('.')[1]
