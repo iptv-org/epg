@@ -27,14 +27,13 @@ async function main() {
   }
   channels = _.uniqBy(channels, 'site_id')
 
+  const siteChannels = await db.channels.find({ site: config.site })
   for (const channel of channels) {
-    const data = await db.channels
-      .find({ site: config.site, site_id: channel.site_id.toString() })
-      .limit(1)
-    if (data.length) {
-      const first = data[0]
-      channel.xmltv_id = first.xmltv_id
-      channel.name = first.name
+    if (channel.xmltv_id) continue
+    const data = siteChannels.find(c => c.site_id === channel.site_id.toString())
+    if (data) {
+      channel.xmltv_id = data.xmltv_id
+      channel.name = data.name
     }
   }
 
