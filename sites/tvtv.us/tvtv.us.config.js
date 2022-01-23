@@ -12,7 +12,7 @@ module.exports = {
     }/airings?startDateTime=${date.format()}&endDateTime=${date.add(1, 'd').format()}`
   },
   logo({ channel }) {
-    return `http://tvtv.tmsimg.com/assets/s${channel.site_id}_ll_h15_ad.png?w=360&h=270`
+    return channel.logo
   },
   parser: function ({ content }) {
     let programs = []
@@ -34,21 +34,63 @@ module.exports = {
     return programs
   },
   async channels({ country }) {
+    const channels = []
+
     const data = await axios
       .get(`https://www.tvtv.${country}/api/stations`)
       .then(r => r.data)
       .catch(console.log)
 
-    return data.data
-      .filter(i => !['Radio Station'].includes(i.type))
-      .map(item => {
-        return {
-          lang: 'en',
-          site_id: item.id,
-          name: item.name
-        }
-      })
+    const stations = data.data.filter(i => !['Radio Station'].includes(i.type))
+    for (const station of stations) {
+      const stationData = await axios
+        .get(`https://www.tvtv.us/gn/d/v1.1/stations/${station.id}`)
+        .then(r => r.data[0] || {})
+        .catch(console.log)
+      if (!stationData) continue
+
+      let channel
+      const logo = parseChannelLogo(stationData.preferredImage)
+      switch (stationData.type) {
+        case 'Low Power Broadcast':
+        case 'Full Power Broadcast':
+          channel = {
+            site_id: station.id,
+            name: stationData.name,
+            xmltv_id: parseChannelId(stationData),
+            logo
+          }
+          break
+        default:
+          channel = {
+            site_id: station.id,
+            name: stationData.name,
+            logo
+          }
+          break
+      }
+
+      if (channel) {
+        channels.push(channel)
+      }
+    }
+
+    return channels
   }
+}
+
+function parseChannelLogo(image) {
+  return image && image.uri ? `http://tvtv.tmsimg.com/${image.uri}` : null
+}
+
+function parseChannelId(data) {
+  if (!data.callSign) return null
+  if (/^((CB|C[F-K]|V[A-G]|VO|VX|VY|X[J-O])[0-9A-Z-]+)/.test(data.callSign))
+    return `${data.callSign}.ca`
+  if (/^((XH|XE)[0-9A-Z-]+)/.test(data.callSign)) return `${data.callSign}.mx`
+  if (/^((K|N|W)[0-9A-Z-]+)/.test(data.callSign)) return `${data.callSign}.us`
+
+  return null
 }
 
 function parseItems(content) {
