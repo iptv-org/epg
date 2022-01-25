@@ -32,15 +32,14 @@ async function getChannels() {
   const files = await file.list(options.channels)
   for (const filepath of files) {
     const dir = file.dirname(filepath)
-    const filename = file.basename(filepath)
-    const [_, site] = filename.match(/([a-z0-9-.]+)_/i) || [null, null]
+    const { site, channels: items } = await parser.parseChannels(filepath)
     if (!site) continue
     const configPath = `${dir}/${site}.config.js`
     const config = require(file.resolve(configPath))
     if (config.ignore) continue
+    const filename = file.basename(filepath)
     const [__, region] = filename.match(/_([a-z-]+)\.channels\.xml/i) || [null, null]
     const groupId = `${region}/${site}`
-    const items = await parser.parseChannels(filepath)
     for (const item of items) {
       if (!item.site || !item.site_id || !item.xmltv_id || !item.name) continue
       const key = `${item.site}:${item.site_id}`
