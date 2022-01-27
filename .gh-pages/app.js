@@ -5,6 +5,7 @@ const ChannelItem = {
       <td class="is-vcentered" style="min-width: 150px; text-align: center">
         <img
           loading="lazy"
+          referrerpolicy="no-referrer"
           v-show="channel.logo"
           :src="channel.logo"
           style="max-width: 100px; max-height: 50px; vertical-align: middle"
