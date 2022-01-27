@@ -28,7 +28,7 @@ const CountryItem = {
   components: {
     ChannelItem
   },
-  props: ['item', 'query'],
+  props: ['item', 'normQuery', 'regQuery'],
   data() {
     return {
       count: 0
@@ -36,11 +36,16 @@ const CountryItem = {
   },
   computed: {
     countryChannels() {
-      if (!this.query) return this.item.channels
+      if (!this.normQuery) return this.item.channels
 
       return (
         this.item.channels.filter(c => {
-          return c.key.includes(this.query)
+          const normResult = c.key.includes(this.normQuery)
+          const regResult = this.regQuery
+            ? this.regQuery.test(c.name) || this.regQuery.test(c.id)
+            : false
+
+          return normResult || regResult
         }) || []
       )
     }
@@ -86,7 +91,7 @@ const CountryItem = {
           </span>
         </button>
       </div>
-      <div class="card-content" v-show="item.expanded || (count > 0 && query.length)">
+      <div class="card-content" v-show="item.expanded || (count > 0 && normQuery.length)">
         <div class="table-container">
           <table class="table" style="min-width: 100%">
             <thead>
@@ -116,12 +121,14 @@ const App = {
       isLoading: true,
       query: '',
       normQuery: '',
+      regQuery: null,
       items: []
     }
   },
   methods: {
     search() {
       this.normQuery = this.query.replace(/\s/g, '').toLowerCase()
+      this.regQuery = new RegExp(this.query)
     }
   },
   async mounted() {
