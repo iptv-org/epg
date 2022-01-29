@@ -90,8 +90,8 @@ jobs:
           path: scripts/logs/errors.log
       - uses: actions/upload-artifact@v2
         with:
-          name: channels.json
-          path: .gh-pages/api/channels.json
+          name: guides.json
+          path: .gh-pages/api/guides.json
       - uses: actions/upload-artifact@v2
         with:
           name: programs.json
