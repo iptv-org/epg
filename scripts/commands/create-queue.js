@@ -58,6 +58,8 @@ async function createQueue() {
 
   queue = Object.values(queue)
 
+  console.log(queue)
+
   logger.info(`Found ${queue.length} items`)
 
   return queue

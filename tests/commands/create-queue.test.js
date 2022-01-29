@@ -13,28 +13,22 @@ beforeEach(() => {
 })
 
 it('can create queue', () => {
-  const output = content('tests/__data__/output/database/queue.db')
+  let output = content('tests/__data__/output/database/queue.db')
+  let expected = content('tests/__data__/expected/database/queue.db')
+
+  output = output.map(i => {
+    i._id = null
+    return i
+  })
+  expected = expected.map(i => {
+    i._id = null
+    return i
+  })
 
   expect(output).toEqual(
     expect.arrayContaining([
-      expect.objectContaining({
-        lang: 'ru',
-        xmltv_id: 'CNNInternationalEurope.us',
-        site_id: '140',
-        site: 'example.com',
-        configPath: 'tests/__data__/input/sites/example.com.config.js',
-        groups: ['ca-nl/example.com'],
-        cluster_id: 1
-      }),
-      expect.objectContaining({
-        lang: 'en',
-        xmltv_id: 'CNNInternationalEurope2.us',
-        site_id: '141',
-        site: 'example.com',
-        configPath: 'tests/__data__/input/sites/example.com.config.js',
-        groups: ['ca-nl/example.com'],
-        cluster_id: 1
-      })
+      expect.objectContaining(expected[0]),
+      expect.objectContaining(expected[1])
     ])
   )
 })
