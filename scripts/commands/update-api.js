@@ -67,9 +67,9 @@ async function loadPrograms() {
 }
 
 async function saveToGuidesJson(guides = []) {
-  const channelsPath = `${API_DIR}/guides.json`
-  logger.info(`Saving to "${channelsPath}"...`)
-  await file.create(channelsPath, JSON.stringify(guides))
+  const guidesPath = `${API_DIR}/guides.json`
+  logger.info(`Saving to "${guidesPath}"...`)
+  await file.create(guidesPath, JSON.stringify(guides))
 }
 
 async function saveToProgramsJson(programs = []) {
