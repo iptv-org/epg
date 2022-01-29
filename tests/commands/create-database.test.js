@@ -15,32 +15,34 @@ beforeEach(() => {
 it('can create channels database', () => {
   const output = content('tests/__data__/output/database/channels.db')
 
-  expect(output).toMatchObject([
-    {
-      lang: 'ru',
-      country: 'US',
-      xmltv_id: 'CNNInternationalEurope.us',
-      site_id: '140',
-      name: 'CNN International Europe',
-      site: 'example.com',
-      channelsPath: 'tests/__data__/input/sites/example.com_ca-nl.channels.xml',
-      configPath: 'tests/__data__/input/sites/example.com.config.js',
-      groups: ['ca-nl/example.com'],
-      cluster_id: 1
-    },
-    {
-      lang: 'en',
-      xmltv_id: 'CNNInternationalEurope2.us',
-      site_id: '141',
-      name: 'CNN International Europe 2',
-      site: 'example.com',
-      country: 'US',
-      channelsPath: 'tests/__data__/input/sites/example.com_ca-nl.channels.xml',
-      configPath: 'tests/__data__/input/sites/example.com.config.js',
-      groups: ['ca-nl/example.com'],
-      cluster_id: 1
-    }
-  ])
+  expect(output).toEqual(
+    expect.arrayContaining([
+      expect.objectContaining({
+        lang: 'ru',
+        country: 'US',
+        xmltv_id: 'CNNInternationalEurope.us',
+        site_id: '140',
+        name: 'CNN International Europe',
+        site: 'example.com',
+        channelsPath: 'tests/__data__/input/sites/example.com_ca-nl.channels.xml',
+        configPath: 'tests/__data__/input/sites/example.com.config.js',
+        groups: ['ca-nl/example.com'],
+        cluster_id: 1
+      }),
+      expect.objectContaining({
+        lang: 'en',
+        xmltv_id: 'CNNInternationalEurope2.us',
+        site_id: '141',
+        name: 'CNN International Europe 2',
+        site: 'example.com',
+        country: 'US',
+        channelsPath: 'tests/__data__/input/sites/example.com_ca-nl.channels.xml',
+        configPath: 'tests/__data__/input/sites/example.com.config.js',
+        groups: ['ca-nl/example.com'],
+        cluster_id: 1
+      })
+    ])
+  )
 })
 
 function content(filepath) {

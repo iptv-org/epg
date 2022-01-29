@@ -132,7 +132,7 @@ const App = {
     }
   },
   async mounted() {
-    const guides = await fetch('https://iptv-org.github.io/epg/api/channels.json')
+    const guides = await fetch('api/guides.json')
       .then(response => response.json())
       .catch(console.log)
 
@@ -140,13 +140,13 @@ const App = {
       .then(response => response.json())
       .then(arr =>
         arr.map(c => {
-          const found = guides.find(g => g.id === c.id)
+          const found = guides.filter(g => g.channel === c.id)
           c.key = `${c.id}_${c.name}`.replace(/\s/g, '').toLowerCase()
-          c.guides = found ? found.guides : []
+          c.guides = found.map(f => f.url) || []
           return c
         })
       )
-      .then(arr => groupBy(arr, 'country'))
+      .then(arr => _.groupBy(arr, 'country'))
       .catch(console.log)
 
     const countries = await fetch('https://iptv-org.github.io/api/countries.json')

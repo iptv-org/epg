@@ -15,7 +15,7 @@ beforeEach(() => {
     'tests/__data__/temp/database/programs.db'
   )
 
-  execSync(
+  const stdout = execSync(
     'DB_DIR=tests/__data__/temp/database API_DIR=tests/__data__/output/api node scripts/commands/update-api.js',
     { encoding: 'utf8' }
   )
@@ -25,9 +25,9 @@ afterEach(() => {
   fs.rmdirSync('tests/__data__/temp', { recursive: true })
 })
 
-it('can generate channels.json', () => {
-  const output = content('tests/__data__/output/api/channels.json')
-  const expected = content('tests/__data__/expected/api/channels.json')
+it('can generate guides.json', () => {
+  const output = content('tests/__data__/output/api/guides.json')
+  const expected = content('tests/__data__/expected/api/guides.json')
 
   expect(output).toBe(expected)
 })
