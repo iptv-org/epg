@@ -11,10 +11,7 @@ beforeEach(() => {
   fs.rmdirSync('tests/__data__/output', { recursive: true })
   fs.mkdirSync('tests/__data__/output')
   fs.mkdirSync('tests/__data__/temp/database', { recursive: true })
-  fs.copyFileSync(
-    'tests/__data__/input/database/channels.db',
-    'tests/__data__/temp/database/channels.db'
-  )
+  fs.copyFileSync('tests/__data__/input/database/queue.db', 'tests/__data__/temp/database/queue.db')
 
   execSync(
     'DB_DIR=tests/__data__/temp/database LOGS_DIR=tests/__data__/output/logs node scripts/commands/load-cluster.js --cluster-id=1 --timeout=10000',
@@ -23,25 +20,19 @@ beforeEach(() => {
 })
 
 it('can load cluster', () => {
-  const output = content('tests/__data__/output/logs/load-cluster/cluster_1.log')
+  let output = content('tests/__data__/output/logs/load-cluster/cluster_1.log')
+  let expected = content('tests/__data__/expected/logs/load-cluster/cluster_1.log')
 
-  expect(Object.keys(output[0]).sort()).toEqual(['channel', 'date', 'error', 'programs'])
-
-  expect(output[0]).toMatchObject({
-    channel: {
-      _id: '0Wefq0oMR3feCcuY',
-      logo: 'https://example.com/logo.png'
-    },
-    date: dayjs.utc().startOf('d').format(),
-    error: null
+  output = output.map(i => {
+    i.date = null
+    return i
+  })
+  expected = expected.map(i => {
+    i.date = null
+    return i
   })
 
-  expect(output[1]).toMatchObject({
-    channel: {
-      _id: '1XzrxNkSF2AQNBrT',
-      logo: 'https://www.magticom.ge/images/channels/MjAxOC8wOS8xMC9lZmJhNWU5Yy0yMmNiLTRkMTAtOWY5Ny01ODM0MzY0ZTg0MmEuanBn.jpg'
-    }
-  })
+  expect(output).toEqual(expected)
 })
 
 function content(filepath) {

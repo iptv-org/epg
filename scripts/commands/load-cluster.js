@@ -26,16 +26,16 @@ async function main() {
   logger.info(`Loading cluster: ${options.clusterId}`)
   logger.info(`Creating '${clusterLog}'...`)
   await file.create(clusterLog)
-  await db.channels.load()
-  const channels = await db.channels.find({ cluster_id: options.clusterId })
-  const total = options.days * channels.length
+  await db.queue.load()
+  const items = await db.queue.find({ cluster_id: options.clusterId })
+  const total = options.days * items.length
   logger.info(`Total ${total} requests`)
 
   logger.info('Loading...')
   const results = {}
   let i = 1
-  for (const channel of channels) {
-    let config = require(file.resolve(channel.configPath))
+  for (const item of items) {
+    let config = require(file.resolve(item.configPath))
 
     config = _.merge(config, {
       days: options.days,
@@ -46,11 +46,11 @@ async function main() {
       }
     })
 
-    await grabber.grab(channel, config, async (data, err) => {
+    await grabber.grab(item, config, async (data, err) => {
       logger.info(
-        `[${i}/${total}] ${channel.site} - ${channel.xmltv_id} - ${data.date.format(
-          'MMM D, YYYY'
-        )} (${data.programs.length} programs)`
+        `[${i}/${total}] ${item.site} - ${item.xmltv_id} - ${data.date.format('MMM D, YYYY')} (${
+          data.programs.length
+        } programs)`
       )
 
       if (err) logger.error(err.message)
@@ -68,7 +68,7 @@ async function main() {
     })
   }
 
-  db.channels.compact()
+  db.queue.compact()
 
   logger.info(`Done in ${timer.format('HH[h] mm[m] ss[s]')}`)
 }
