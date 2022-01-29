@@ -8,8 +8,8 @@ beforeEach(() => {
   fs.mkdirSync('tests/__data__/output/database', { recursive: true })
 
   fs.copyFileSync(
-    'tests/__data__/input/database/channels.db',
-    'tests/__data__/output/database/channels.db'
+    'tests/__data__/input/database/queue.db',
+    'tests/__data__/output/database/queue.db'
   )
 
   const stdout = execSync(
@@ -18,55 +18,35 @@ beforeEach(() => {
   )
 })
 
-it('can save results', () => {
-  const programs = content('tests/__data__/output/database/programs.db')
+it('can save programs to database', () => {
+  let output = content('tests/__data__/output/database/programs.db')
+  let expected = content('tests/__data__/expected/database/programs.db')
 
-  expect(Object.keys(programs[0]).sort()).toEqual([
-    '_cid',
-    '_id',
-    'category',
-    'channel',
-    'description',
-    'episode',
-    'icon',
-    'lang',
-    'season',
-    'site',
-    'start',
-    'stop',
-    'title'
-  ])
-
-  expect(programs[0]).toMatchObject({
-    _cid: '0Wefq0oMR3feCcuY'
+  output = output.map(i => {
+    i._id = null
+    return i
+  })
+  expected = expected.map(i => {
+    i._id = null
+    return i
   })
 
-  const channels = content('tests/__data__/output/database/channels.db')
+  expect(output).toEqual(expected)
+})
 
-  expect(Object.keys(channels[0]).sort()).toEqual([
-    '_id',
-    'channelsPath',
-    'cluster_id',
-    'configPath',
-    'country',
-    'groups',
-    'lang',
-    'logo',
-    'name',
-    'programCount',
-    'site',
-    'site_id',
-    'xmltv_id'
-  ])
+it('can update queue', () => {
+  const output = content('tests/__data__/output/database/queue.db')
 
-  expect(channels[1]).toMatchObject({
+  expect(output[1]).toMatchObject({
     _id: '0Wefq0oMR3feCcuY',
-    logo: 'https://example.com/logo.png'
+    programCount: 23
   })
+})
 
-  const errors = content('tests/__data__/input/logs/errors.log')
+it('can save errors', () => {
+  const output = content('tests/__data__/input/logs/errors.log')
 
-  expect(errors[0]).toMatchObject({
+  expect(output[0]).toMatchObject({
     _id: '00AluKCrCnfgrl8W',
     site: 'directv.com',
     xmltv_id: 'BravoEast.us',

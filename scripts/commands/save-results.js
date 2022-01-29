@@ -6,7 +6,7 @@ const LOGS_DIR = process.env.LOGS_DIR || 'scripts/logs'
 async function main() {
   const errorsLog = `${LOGS_DIR}/errors.log`
   await file.create(errorsLog)
-  await db.channels.load()
+  await db.queue.load()
   await db.programs.load()
   await db.programs.reset()
   const files = await file.list(`${LOGS_DIR}/load-cluster/cluster_*.log`)
@@ -32,12 +32,10 @@ async function main() {
       })
       await db.programs.insert(programs)
 
-      if (result.channel.logo) {
-        await db.channels.update(
-          { _id: result.channel._id },
-          { $set: { logo: result.channel.logo, programCount: result.programs.length } }
-        )
-      }
+      await db.queue.update(
+        { _id: result.channel._id },
+        { $set: { programCount: result.programs.length } }
+      )
 
       if (result.error) {
         await file.append(
@@ -48,7 +46,7 @@ async function main() {
     }
   }
 
-  await db.channels.compact()
+  await db.queue.compact()
 }
 
 main()
