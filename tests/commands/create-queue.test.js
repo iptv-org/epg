@@ -7,24 +7,21 @@ beforeEach(() => {
   fs.mkdirSync('tests/__data__/output')
 
   const stdout = execSync(
-    'DB_DIR=tests/__data__/output/database node scripts/commands/create-database.js --channels=tests/__data__/input/sites/*.channels.xml --max-clusters=1',
+    'DB_DIR=tests/__data__/output/database node scripts/commands/create-queue.js --channels=tests/__data__/input/sites/*.channels.xml --max-clusters=1',
     { encoding: 'utf8' }
   )
 })
 
-it('can create channels database', () => {
-  const output = content('tests/__data__/output/database/channels.db')
+it('can create queue', () => {
+  const output = content('tests/__data__/output/database/queue.db')
 
   expect(output).toEqual(
     expect.arrayContaining([
       expect.objectContaining({
         lang: 'ru',
-        country: 'US',
         xmltv_id: 'CNNInternationalEurope.us',
         site_id: '140',
-        name: 'CNN International Europe',
         site: 'example.com',
-        channelsPath: 'tests/__data__/input/sites/example.com_ca-nl.channels.xml',
         configPath: 'tests/__data__/input/sites/example.com.config.js',
         groups: ['ca-nl/example.com'],
         cluster_id: 1
@@ -33,10 +30,7 @@ it('can create channels database', () => {
         lang: 'en',
         xmltv_id: 'CNNInternationalEurope2.us',
         site_id: '141',
-        name: 'CNN International Europe 2',
         site: 'example.com',
-        country: 'US',
-        channelsPath: 'tests/__data__/input/sites/example.com_ca-nl.channels.xml',
         configPath: 'tests/__data__/input/sites/example.com.config.js',
         groups: ['ca-nl/example.com'],
         cluster_id: 1

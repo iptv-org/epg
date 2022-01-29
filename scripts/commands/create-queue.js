@@ -17,17 +17,17 @@ async function main() {
   logger.info('Starting...')
   logger.info(`Number of clusters: ${options.maxClusters}`)
 
-  await saveToDatabase(await getChannels())
+  await saveToDatabase(await createQueue())
 
   logger.info('Done')
 }
 
 main()
 
-async function getChannels() {
-  logger.info(`Loading channels...`)
+async function createQueue() {
+  logger.info(`Create queue...`)
 
-  let channels = {}
+  let queue = {}
 
   const files = await file.list(options.channels)
   for (const filepath of files) {
@@ -41,40 +41,37 @@ async function getChannels() {
     const [__, region] = filename.match(/_([a-z-]+)\.channels\.xml/i) || [null, null]
     const groupId = `${region}/${site}`
     for (const item of items) {
-      if (!item.site || !item.site_id || !item.xmltv_id || !item.name) continue
+      if (!item.site || !item.site_id || !item.xmltv_id) continue
       const key = `${item.site}:${item.site_id}`
-      if (!channels[key]) {
-        const countryCode = item.xmltv_id.split('.')[1]
-        item.country = countryCode ? countryCode.toUpperCase() : null
-        item.channelsPath = filepath
+      if (!queue[key]) {
         item.configPath = configPath
         item.groups = []
 
-        channels[key] = item
+        queue[key] = item
       }
 
-      if (!channels[key].groups.includes(groupId)) {
-        channels[key].groups.push(groupId)
+      if (!queue[key].groups.includes(groupId)) {
+        queue[key].groups.push(groupId)
       }
     }
   }
 
-  channels = Object.values(channels)
+  queue = Object.values(queue)
 
-  logger.info(`Found ${channels.length} channels`)
+  logger.info(`Found ${queue.length} items`)
 
-  return channels
+  return queue
 }
 
-async function saveToDatabase(channels = []) {
+async function saveToDatabase(items = []) {
   logger.info('Saving to the database...')
-  await db.channels.load()
-  await db.channels.reset()
-  const chunks = split(shuffle(channels), options.maxClusters)
+  await db.queue.load()
+  await db.queue.reset()
+  const chunks = split(shuffle(items), options.maxClusters)
   for (const [i, chunk] of chunks.entries()) {
     for (const item of chunk) {
       item.cluster_id = i + 1
-      await db.channels.insert(item)
+      await db.queue.insert(item)
     }
   }
 }
