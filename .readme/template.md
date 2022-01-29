@@ -21,64 +21,9 @@ To load a program guide, all you need to do is copy the link to one or more of t
 <!-- prettier-ignore -->
 #include "./.readme/_ca-provinces.md"
 
-## List of supported channels
-
-https://iptv-org.github.io/epg/index.html
-
 ## API
 
-### List of channels
-
-```
-https://iptv-org.github.io/epg/api/channels.json
-```
-
-```
-[
-  ...
-  {
-    "id": "CNNUSA.us",
-    "name": [
-      "CNN USA"
-    ],
-    "logo": "https://cdn.tvpassport.com/image/station/100x100/cnn.png",
-    "country": "US",
-    "guides": [
-      "https://iptv-org.github.io/epg/guides/tvtv.us.guide.xml",
-      ...
-    ]
-  },
-  ...
-]
-```
-
-<!-- ### List of programs
-
-```
-https://iptv-org.github.io/epg/api/programs.json
-```
-
-```
-[
-  ...
-  {
-    "channel": "CNNUSA.us",
-    "site": "example.com",
-    "lang": "en",
-    "title": "Erin Burnett OutFront",
-    "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    "categories": [
-      "Series",
-      "News"
-    ],
-    "image": "https://example.com/banner.jpg",
-    "start": 1641772800,
-    "stop": 1641776400
-  },
-  ...
-]
-``` -->
+The API documentation can be found in the [iptv-org/api](https://github.com/iptv-org/api) repository.
 
 ## Contribution
 
