@@ -5,45 +5,35 @@ const DB_DIR = process.env.DB_DIR || 'scripts/database'
 const API_DIR = process.env.API_DIR || '.gh-pages/api'
 
 async function main() {
-  await saveToChannelsJson(await loadChannels())
+  await saveToGuidesJson(await loadGuides())
   await saveToProgramsJson(await loadPrograms())
 }
 
 main()
 
-async function loadChannels() {
-  logger.info('Loading channels from database...')
+async function loadGuides() {
+  logger.info('Loading guides from database...')
 
   await db.channels.load()
 
   const channels = await db.channels.find({}).sort({ xmltv_id: 1 })
 
-  const output = {}
+  const output = []
   for (const channel of channels) {
-    if (!output[channel.xmltv_id]) {
-      output[channel.xmltv_id] = {
-        id: channel.xmltv_id,
-        name: [],
-        logo: channel.logo || null,
-        country: channel.country,
-        guides: []
-      }
-    } else {
-      output[channel.xmltv_id].logo = output[channel.xmltv_id].logo || channel.logo
-    }
-
-    output[channel.xmltv_id].name.push(channel.name)
-    output[channel.xmltv_id].name = _.uniq(output[channel.xmltv_id].name)
     channel.groups.forEach(group => {
       if (channel.programCount) {
-        output[channel.xmltv_id].guides.push(
-          `https://iptv-org.github.io/epg/guides/${group}.epg.xml`
-        )
+        output.push({
+          channel: channel.xmltv_id,
+          display_name: channel.name,
+          site: channel.site,
+          lang: channel.lang,
+          url: `https://iptv-org.github.io/epg/guides/${group}.epg.xml`
+        })
       }
     })
   }
 
-  return Object.values(output)
+  return output
 }
 
 async function loadPrograms() {
@@ -76,10 +66,10 @@ async function loadPrograms() {
   return programs
 }
 
-async function saveToChannelsJson(channels = []) {
-  const channelsPath = `${API_DIR}/channels.json`
+async function saveToGuidesJson(guides = []) {
+  const channelsPath = `${API_DIR}/guides.json`
   logger.info(`Saving to "${channelsPath}"...`)
-  await file.create(channelsPath, JSON.stringify(channels))
+  await file.create(channelsPath, JSON.stringify(guides))
 }
 
 async function saveToProgramsJson(programs = []) {
