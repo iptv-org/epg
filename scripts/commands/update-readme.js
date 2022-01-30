@@ -1,7 +1,4 @@
-const { file, markdown, parser, logger } = require('../core')
-const provinces = require('../data/ca-provinces.json')
-const countries = require('../data/countries.json')
-const states = require('../data/us-states.json')
+const { file, markdown, parser, logger, api } = require('../core')
 const { program } = require('commander')
 const _ = require('lodash')
 
@@ -14,6 +11,7 @@ const options = program
 
 async function main() {
   const records = await getLogRecords()
+  console.log(records)
   await generateCountriesTable(records)
   await generateUSStatesTable(records)
   await generateCanadaProvincesTable(records)
@@ -27,7 +25,7 @@ async function generateCountriesTable(items = []) {
 
   let rows = []
   for (const item of items) {
-    const country = countries[item.code]
+    const country = api.countries.find({ code: item.code })
     if (!country) continue
 
     rows.push({
@@ -51,7 +49,8 @@ async function generateUSStatesTable(items = []) {
 
   let rows = []
   for (const item of items) {
-    const state = states[item.code]
+    if (!item.code.startsWith('US-')) continue
+    const state = api.subdivisions.find({ code: item.code })
     if (!state) continue
 
     rows.push({
@@ -74,7 +73,8 @@ async function generateCanadaProvincesTable(items = []) {
 
   let rows = []
   for (const item of items) {
-    const province = provinces[item.code]
+    if (!item.code.startsWith('CA-')) continue
+    const province = api.subdivisions.find({ code: item.code })
     if (!province) continue
 
     rows.push({

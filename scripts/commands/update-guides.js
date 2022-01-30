@@ -27,7 +27,7 @@ async function generateGuides() {
     const items = grouped[key]
     const channels = items
       .map(i => {
-        const channel = api.channels.get(i.xmltv_id)
+        const channel = api.channels.find({ id: i.xmltv_id })
         i.name = channel.name
         i.logo = channel.logo
         return i
