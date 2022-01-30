@@ -24,6 +24,7 @@ markdown.createTable = function (data, cols) {
       }
       output += `<td align="right">${item.channels}</td>`
       output += `<td align="left" nowrap>${item.epg}</td>`
+      output += `<td align="center" nowrap>${item.status}</td>`
       output += '</tr>\n'
     }
   }
