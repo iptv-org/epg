@@ -1,4 +1,4 @@
-const { db, file, parser, logger } = require('../core')
+const { db, file, parser, logger, date } = require('../core')
 const { program } = require('commander')
 const { shuffle } = require('lodash')
 
@@ -9,6 +9,7 @@ const options = program
     parser.parseNumber,
     256
   )
+  .option('--days <days>', 'Number of days for which to grab the program', parser.parseNumber, 1)
   .option('--channels <channels>', 'Set path to channels.xml file', 'sites/**/*.channels.xml')
   .parse(process.argv)
   .opts()
@@ -30,6 +31,8 @@ async function createQueue() {
   let queue = {}
 
   const files = await file.list(options.channels)
+  const utcDate = date.getUTC()
+  const dates = Array.from({ length: options.days }, (_, i) => utcDate.add(i, 'd'))
   for (const filepath of files) {
     const dir = file.dirname(filepath)
     const { site, channels: items } = await parser.parseChannels(filepath)
@@ -42,23 +45,32 @@ async function createQueue() {
     const groupId = `${region}/${site}`
     for (const item of items) {
       if (!item.site || !item.site_id || !item.xmltv_id) continue
-      const key = `${item.site}:${item.site_id}`
-      if (!queue[key]) {
-        item.configPath = configPath
-        item.groups = []
+      for (const d of dates) {
+        const dString = d.toJSON()
+        const key = `${item.site}:${item.site_id}:${dString}`
+        console.log(key)
+        if (!queue[key]) {
+          queue[key] = {
+            lang: item.lang,
+            xmltv_id: item.xmltv_id,
+            site_id: item.site_id,
+            site: item.site,
+            date: dString,
+            configPath: item.configPath,
+            groups: []
+          }
+        }
 
-        queue[key] = item
-      }
-
-      if (!queue[key].groups.includes(groupId)) {
-        queue[key].groups.push(groupId)
+        if (!queue[key].groups.includes(groupId)) {
+          queue[key].groups.push(groupId)
+        }
       }
     }
   }
 
   queue = Object.values(queue)
 
-  logger.info(`Found ${queue.length} items`)
+  logger.info(`Added ${queue.length} items`)
 
   return queue
 }

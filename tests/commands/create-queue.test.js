@@ -7,7 +7,7 @@ beforeEach(() => {
   fs.mkdirSync('tests/__data__/output')
 
   const stdout = execSync(
-    'DB_DIR=tests/__data__/output/database node scripts/commands/create-queue.js --channels=tests/__data__/input/sites/*.channels.xml --max-clusters=1',
+    'DB_DIR=tests/__data__/output/database node scripts/commands/create-queue.js --channels=tests/__data__/input/sites/*.channels.xml --max-clusters=1 --days=2',
     { encoding: 'utf8' }
   )
 })
@@ -18,17 +18,21 @@ it('can create queue', () => {
 
   output = output.map(i => {
     i._id = null
+    i.date = null
     return i
   })
   expected = expected.map(i => {
     i._id = null
+    i.date = null
     return i
   })
 
   expect(output).toEqual(
     expect.arrayContaining([
       expect.objectContaining(expected[0]),
-      expect.objectContaining(expected[1])
+      expect.objectContaining(expected[1]),
+      expect.objectContaining(expected[2]),
+      expect.objectContaining(expected[3])
     ])
   )
 })
