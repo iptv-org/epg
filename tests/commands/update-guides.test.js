@@ -16,8 +16,6 @@ beforeEach(() => {
     'DB_DIR=tests/__data__/temp/database DATA_DIR=tests/__data__/input/data PUBLIC_DIR=tests/__data__/output LOGS_DIR=tests/__data__/output/logs node scripts/commands/update-guides.js',
     { encoding: 'utf8' }
   )
-
-  console.log(stdout)
 })
 
 afterEach(() => {
