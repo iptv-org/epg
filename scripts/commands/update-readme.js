@@ -110,7 +110,7 @@ async function updateReadme() {
 }
 
 async function getLogRecords() {
-  const logPath = `${LOGS_DIR}/update-guides.log`
+  const logPath = `${LOGS_DIR}/guides.log`
   const records = await parser.parseLogs(logPath)
 
   return records.map(item => {
