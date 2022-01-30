@@ -1,4 +1,4 @@
-const { db, logger, file } = require('../core')
+const { db, logger, file, api } = require('../core')
 const grabber = require('epg-grabber')
 const _ = require('lodash')
 
@@ -17,14 +17,23 @@ main()
 async function generateGuides() {
   logger.info(`Generating guides/...`)
 
-  const grouped = groupByGroup(await loadChannels())
+  const grouped = groupByGroup(await loadQueue())
 
   logger.info('Loading "database/programs.db"...')
   await db.programs.load()
 
   for (const key in grouped) {
     const filepath = `${PUBLIC_DIR}/guides/${key}.epg.xml`
-    const channels = grouped[key]
+    const items = grouped[key]
+    const channels = items
+      .map(i => {
+        const channel = api.channels.get(i.xmltv_id)
+        i.name = channel.name
+        i.logo = channel.logo
+        return i
+      })
+      .filter(i => i)
+
     const programs = await loadProgramsForChannels(channels)
     const output = grabber.convertToXMLTV({ channels, programs })
 
@@ -56,12 +65,12 @@ function groupByGroup(channels = []) {
   return groups
 }
 
-async function loadChannels() {
-  logger.info('Loading channels...')
+async function loadQueue() {
+  logger.info('Loading queue...')
 
-  await db.channels.load()
+  await db.queue.load()
 
-  return await db.channels.find({ programCount: { $gt: 0 } }).sort({ xmltv_id: 1 })
+  return await db.queue.find({ programCount: { $gt: 0 } }).sort({ xmltv_id: 1 })
 }
 
 async function loadProgramsForChannels(channels = []) {
