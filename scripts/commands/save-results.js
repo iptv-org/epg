@@ -23,7 +23,7 @@ async function main() {
           season: program.season || null,
           episode: program.episode || null,
           icon: program.icon || null,
-          channel: item.xmltv_id,
+          channel: program.channel,
           lang: program.lang,
           start: program.start,
           stop: program.stop,
