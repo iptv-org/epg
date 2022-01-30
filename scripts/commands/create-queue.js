@@ -10,9 +10,10 @@ const options = program
     256
   )
   .option('--days <days>', 'Number of days for which to grab the program', parser.parseNumber, 1)
-  .option('--channels <channels>', 'Set path to channels.xml file', 'sites/**/*.channels.xml')
   .parse(process.argv)
   .opts()
+
+const CHANNELS_PATH = process.env.CHANNELS_PATH || 'sites/**/*.channels.xml'
 
 async function main() {
   logger.info('Starting...')
@@ -30,7 +31,7 @@ async function createQueue() {
 
   let queue = {}
 
-  const files = await file.list(options.channels)
+  const files = await file.list(CHANNELS_PATH)
   const utcDate = date.getUTC()
   const dates = Array.from({ length: options.days }, (_, i) => utcDate.add(i, 'd'))
   for (const filepath of files) {
