@@ -12,9 +12,9 @@ async function main() {
     logger.info(`Parsing "${filepath}"...`)
     const results = await parser.parseLogs(filepath)
     for (const result of results) {
-      const channels = await db.queue.find({ _id: result._qid }).limit(1)
-      if (!channels.length) continue
-      const channel = channels[0]
+      const queue = await db.queue.find({ _id: result._qid }).limit(1)
+      if (!queue.length) continue
+      const item = queue[0]
       const programs = result.programs.map(program => {
         return {
           title: program.title,
@@ -23,10 +23,12 @@ async function main() {
           season: program.season || null,
           episode: program.episode || null,
           icon: program.icon || null,
-          channel: channel.xmltv_id,
+          channel: item.xmltv_id,
           lang: program.lang,
           start: program.start,
           stop: program.stop,
+          stop: program.stop,
+          site: item.site,
           _qid: result._qid
         }
       })
