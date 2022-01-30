@@ -43,11 +43,11 @@ async function main() {
       }
     })
 
-    await grabber.grab(item, item.date, config, async (data, err) => {
+    await grabber.grab(item.channel, item.date, config, async (data, err) => {
       logger.info(
-        `[${i}/${total}] ${item.site} - ${item.xmltv_id} - ${data.date.format('MMM D, YYYY')} (${
-          data.programs.length
-        } programs)`
+        `[${i}/${total}] ${item.site} - ${item.channel.xmltv_id} - ${data.date.format(
+          'MMM D, YYYY'
+        )} (${data.programs.length} programs)`
       )
 
       if (err) logger.error(err.message)
