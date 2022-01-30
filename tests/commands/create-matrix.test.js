@@ -21,5 +21,5 @@ it('can create valid matrix', () => {
     }
   )
 
-  expect(result).toBe('::set-output name=matrix::{"cluster_id":[1,84,120]}\n')
+  expect(result).toBe('::set-output name=matrix::{"cluster_id":[1,4,84,120]}\n')
 })
