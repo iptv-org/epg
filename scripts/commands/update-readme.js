@@ -10,6 +10,8 @@ const options = program
   .opts()
 
 async function main() {
+  await api.countries.load()
+  await api.subdivisions.load()
   const records = await getLogRecords()
   await generateCountriesTable(records)
   await generateUSStatesTable(records)

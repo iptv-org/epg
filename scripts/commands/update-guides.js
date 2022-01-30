@@ -2,7 +2,6 @@ const { db, logger, file, api } = require('../core')
 const grabber = require('epg-grabber')
 const _ = require('lodash')
 
-const DB_DIR = process.env.DB_DIR || 'scripts/database'
 const LOGS_DIR = process.env.LOGS_DIR || 'scripts/logs'
 const PUBLIC_DIR = process.env.PUBLIC_DIR || '.gh-pages'
 const LOG_PATH = `${LOGS_DIR}/update-guides.log`
@@ -21,6 +20,7 @@ async function generateGuides() {
 
   logger.info('Loading "database/programs.db"...')
   await db.programs.load()
+  await api.channels.load()
 
   for (const key in grouped) {
     const filepath = `${PUBLIC_DIR}/guides/${key}.epg.xml`

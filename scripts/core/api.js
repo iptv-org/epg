@@ -1,8 +1,16 @@
 const _ = require('lodash')
+const file = require('./file')
+
+const DATA_DIR = process.env.DATA_DIR || './scripts/data'
 
 class API {
   constructor(filepath) {
-    this.collection = require(filepath)
+    this.filepath = file.resolve(filepath)
+  }
+
+  async load() {
+    const data = await file.read(this.filepath)
+    this.collection = JSON.parse(data)
   }
 
   find(query) {
@@ -12,8 +20,8 @@ class API {
 
 const api = {}
 
-api.channels = new API('../data/channels.json')
-api.countries = new API('../data/countries.json')
-api.subdivisions = new API('../data/subdivisions.json')
+api.channels = new API(`${DATA_DIR}/channels.json`)
+api.countries = new API(`${DATA_DIR}/countries.json`)
+api.subdivisions = new API(`${DATA_DIR}/subdivisions.json`)
 
 module.exports = api

@@ -1,0 +1,55 @@
+[
+  {
+    "id": "BravoEast.us",
+    "name": "Bravo East",
+    "network": null,
+    "country": "US",
+    "subdivision": null,
+    "city": null,
+    "broadcast_area": [
+      "c/US"
+    ],
+    "languages": [
+      "eng"
+    ],
+    "categories": [],
+    "is_nsfw": false,
+    "logo": "https://www.directv.com/images/logos/channels/dark/large/579.png"
+  },
+  {
+    "id": "CNNInternationalEurope.us",
+    "name": "CNN International Europe",
+    "network": null,
+    "country": "US",
+    "subdivision": null,
+    "city": null,
+    "broadcast_area": [
+      "r/EUR"
+    ],
+    "languages": [
+      "eng"
+    ],
+    "categories": [
+      "news"
+    ],
+    "is_nsfw": false,
+    "logo": "https://i.imgur.com/2BXCg0x.jpg"
+  },
+  {
+    "id": "MNetMovies2.za",
+    "name": "M-Net Movies 2",
+    "network": null,
+    "country": "ZA",
+    "subdivision": null,
+    "city": null,
+    "broadcast_area": [
+      "c/ZA"
+    ],
+    "languages": [
+      "afr"
+    ],
+    "categories": [],
+    "is_nsfw": false,
+    "logo": "https://rndcdn.dstv.com/dstvcms/2020/08/31/M-Net_Movies_2_Logo_4-3_lightbackground_xlrg.png"
+  }
+]
