@@ -48,15 +48,16 @@ async function createQueue() {
       for (const d of dates) {
         const dString = d.toJSON()
         const key = `${item.site}:${item.site_id}:${dString}`
-        console.log(key)
         if (!queue[key]) {
           queue[key] = {
-            lang: item.lang,
-            xmltv_id: item.xmltv_id,
-            site_id: item.site_id,
+            channel: {
+              lang: item.lang,
+              xmltv_id: item.xmltv_id,
+              site_id: item.site_id
+            },
             site: item.site,
             date: dString,
-            configPath: item.configPath,
+            configPath,
             groups: [],
             error: null
           }
