@@ -14,19 +14,18 @@ main()
 async function loadGuides() {
   logger.info('Loading guides from database...')
 
-  await db.channels.load()
+  await db.queue.load()
 
-  const channels = await db.channels.find({}).sort({ xmltv_id: 1 })
+  const queue = await db.queue.find({}).sort({ xmltv_id: 1 })
 
   const output = []
-  for (const channel of channels) {
-    channel.groups.forEach(group => {
-      if (channel.programCount) {
+  for (const item of queue) {
+    item.groups.forEach(group => {
+      if (item.programCount) {
         output.push({
-          channel: channel.xmltv_id,
-          display_name: channel.name,
-          site: channel.site,
-          lang: channel.lang,
+          channel: item.xmltv_id,
+          site: item.site,
+          lang: item.lang,
           url: `https://iptv-org.github.io/epg/guides/${group}.epg.xml`
         })
       }
