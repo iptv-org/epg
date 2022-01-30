@@ -23,15 +23,6 @@ it('can load cluster', () => {
   let output = content('tests/__data__/output/logs/load-cluster/cluster_1.log')
   let expected = content('tests/__data__/expected/logs/load-cluster/cluster_1.log')
 
-  output = output.map(i => {
-    i.date = null
-    return i
-  })
-  expected = expected.map(i => {
-    i.date = null
-    return i
-  })
-
   expect(output).toEqual(expected)
 })
 

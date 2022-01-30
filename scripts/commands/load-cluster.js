@@ -5,7 +5,6 @@ const { db, logger, timer, file, parser } = require('../core')
 
 const options = program
   .requiredOption('-c, --cluster-id <cluster-id>', 'The ID of cluster to load', parser.parseNumber)
-  .option('--days <days>', 'Number of days for which to grab the program', parser.parseNumber, 1)
   .option('--delay <delay>', 'Delay between requests (in mileseconds)', parser.parseNumber)
   .option(
     '-t, --timeout <timeout>',
@@ -17,19 +16,18 @@ const options = program
   .opts()
 
 const LOGS_DIR = process.env.LOGS_DIR || 'scripts/logs'
+const CLUSTER_PATH = `${LOGS_DIR}/load-cluster/cluster_${options.clusterId}.log`
 
 async function main() {
   logger.info('Starting...')
   timer.start()
 
-  const clusterLog = `${LOGS_DIR}/load-cluster/cluster_${options.clusterId}.log`
   logger.info(`Loading cluster: ${options.clusterId}`)
-  logger.info(`Creating '${clusterLog}'...`)
-  await file.create(clusterLog)
+  logger.info(`Creating '${CLUSTER_PATH}'...`)
+  await file.create(CLUSTER_PATH)
   await db.queue.load()
   const items = await db.queue.find({ cluster_id: options.clusterId })
-  const total = options.days * items.length
-  logger.info(`Total ${total} requests`)
+  const total = items.length
 
   logger.info('Loading...')
   const results = {}
@@ -38,7 +36,6 @@ async function main() {
     let config = require(file.resolve(item.configPath))
 
     config = _.merge(config, {
-      days: options.days,
       debug: options.debug,
       delay: options.delay,
       request: {
@@ -46,7 +43,7 @@ async function main() {
       }
     })
 
-    await grabber.grab(item, config, async (data, err) => {
+    await grabber.grab(item, item.date, config, async (data, err) => {
       logger.info(
         `[${i}/${total}] ${item.site} - ${item.xmltv_id} - ${data.date.format('MMM D, YYYY')} (${
           data.programs.length
@@ -56,13 +53,12 @@ async function main() {
       if (err) logger.error(err.message)
 
       const result = {
-        channel: data.channel,
+        _qid: item._id,
         programs: data.programs,
-        date: data.date.format(),
         error: err ? err.message : null
       }
 
-      await file.append(clusterLog, JSON.stringify(result) + '\n')
+      await file.append(CLUSTER_PATH, JSON.stringify(result) + '\n')
 
       if (i < total) i++
     })
