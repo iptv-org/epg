@@ -4,7 +4,8 @@ const _ = require('lodash')
 
 const LOGS_DIR = process.env.LOGS_DIR || 'scripts/logs'
 const PUBLIC_DIR = process.env.PUBLIC_DIR || '.gh-pages'
-const LOG_PATH = `${LOGS_DIR}/update-guides.log`
+const GUIDES_PATH = `${LOGS_DIR}/guides.log`
+const ERRORS_PATH = `${LOGS_DIR}/errors.log`
 
 async function main() {
   await setUp()
@@ -24,41 +25,59 @@ async function generateGuides() {
 
   for (const key in grouped) {
     const filepath = `${PUBLIC_DIR}/guides/${key}.epg.xml`
-    const items = grouped[key]
-    const channels = items
+    let items = grouped[key]
+    items = items
       .map(i => {
         const channel = api.channels.find({ id: i.xmltv_id })
         i.name = channel.name
         i.logo = channel.logo
+
         return i
       })
       .filter(i => i)
 
-    const programs = await loadProgramsForChannels(channels)
-    const output = grabber.convertToXMLTV({ channels, programs })
+    const errors = []
+    for (const item of items) {
+      if (item.error) {
+        const error = {
+          xmltv_id: item.xmltv_id,
+          site: item.site,
+          site_id: item.site_id,
+          lang: item.lang,
+          date: item.date,
+          error: item.error
+        }
+        errors.push(error)
+        await logError(error)
+      }
+    }
+
+    const programs = await loadProgramsForChannels(items)
 
     logger.info(`Creating "${filepath}"...`)
+    const output = grabber.convertToXMLTV({ channels: items, programs })
     await file.create(filepath, output)
 
-    await log({
+    await logGuide({
       group: key,
-      count: channels.length
+      count: items.length,
+      status: errors.length > 0 ? 1 : 0
     })
   }
 
   logger.info(`Done`)
 }
 
-function groupByGroup(channels = []) {
+function groupByGroup(items = []) {
   const groups = {}
 
-  channels.forEach(channel => {
-    channel.groups.forEach(key => {
+  items.forEach(item => {
+    item.groups.forEach(key => {
       if (!groups[key]) {
         groups[key] = []
       }
 
-      groups[key].push(channel)
+      groups[key].push(item)
     })
   })
 
@@ -70,7 +89,7 @@ async function loadQueue() {
 
   await db.queue.load()
 
-  return await db.queue.find({ programCount: { $gt: 0 } }).sort({ xmltv_id: 1 })
+  return await db.queue.find({}).sort({ xmltv_id: 1 })
 }
 
 async function loadProgramsForChannels(channels = []) {
@@ -80,10 +99,15 @@ async function loadProgramsForChannels(channels = []) {
 }
 
 async function setUp() {
-  logger.info(`Creating '${LOG_PATH}'...`)
-  await file.create(LOG_PATH)
+  logger.info(`Creating '${GUIDES_PATH}'...`)
+  await file.create(GUIDES_PATH)
+  await file.create(ERRORS_PATH)
 }
 
-async function log(data) {
-  await file.append(LOG_PATH, JSON.stringify(data) + '\n')
+async function logGuide(data) {
+  await file.append(GUIDES_PATH, JSON.stringify(data) + '\r\n')
+}
+
+async function logError(data) {
+  await file.append(ERRORS_PATH, JSON.stringify(data) + '\r\n')
 }

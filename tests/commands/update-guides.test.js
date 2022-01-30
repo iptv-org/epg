@@ -16,6 +16,8 @@ beforeEach(() => {
     'DB_DIR=tests/__data__/temp/database DATA_DIR=tests/__data__/input/data PUBLIC_DIR=tests/__data__/output LOGS_DIR=tests/__data__/output/logs node scripts/commands/update-guides.js',
     { encoding: 'utf8' }
   )
+
+  console.log(stdout)
 })
 
 afterEach(() => {
@@ -32,11 +34,20 @@ it('can generate /guides', () => {
   const expected2 = content('tests/__data__/expected/guides/zw/dstv.com.epg.xml')
 
   expect(output2).toBe(expected2)
+})
 
-  const output3 = content('tests/__data__/output/logs/update-guides.log')
-  const expected3 = content('tests/__data__/expected/logs/update-guides.log')
+it('can create guides.log', () => {
+  const output = content('tests/__data__/output/logs/guides.log')
+  const expected = content('tests/__data__/expected/logs/guides.log')
 
-  expect(output3).toBe(expected3)
+  expect(output).toBe(expected)
+})
+
+it('can create errors.log', () => {
+  const output = content('tests/__data__/output/logs/errors.log')
+  const expected = content('tests/__data__/expected/logs/errors.log')
+
+  expect(output).toBe(expected)
 })
 
 function content(filepath) {
