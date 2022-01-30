@@ -11,7 +11,6 @@ const options = program
 
 async function main() {
   const records = await getLogRecords()
-  console.log(records)
   await generateCountriesTable(records)
   await generateUSStatesTable(records)
   await generateCanadaProvincesTable(records)
