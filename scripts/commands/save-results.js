@@ -4,8 +4,6 @@ const _ = require('lodash')
 const LOGS_DIR = process.env.LOGS_DIR || 'scripts/logs'
 
 async function main() {
-  const errorsLog = `${LOGS_DIR}/errors.log`
-  await file.create(errorsLog)
   await db.queue.load()
   await db.programs.load()
   await db.programs.reset()
@@ -34,15 +32,8 @@ async function main() {
 
       await db.queue.update(
         { _id: result.channel._id },
-        { $set: { programCount: result.programs.length } }
+        { $set: { programCount: result.programs.length, error: result.error } }
       )
-
-      if (result.error) {
-        await file.append(
-          errorsLog,
-          JSON.stringify({ ...result.channel, date: result.date, error: result.error }) + '\n'
-        )
-      }
     }
   }
 

@@ -36,22 +36,9 @@ it('can save programs to database', () => {
 
 it('can update queue', () => {
   const output = content('tests/__data__/output/database/queue.db')
+  const expected = content('tests/__data__/expected/database/queue-with-errors.db')
 
-  expect(output[1]).toMatchObject({
-    _id: '0Wefq0oMR3feCcuY',
-    programCount: 23
-  })
-})
-
-it('can save errors', () => {
-  const output = content('tests/__data__/input/logs/errors.log')
-
-  expect(output[0]).toMatchObject({
-    _id: '00AluKCrCnfgrl8W',
-    site: 'directv.com',
-    xmltv_id: 'BravoEast.us',
-    error: 'Invalid header value char'
-  })
+  expect(output).toEqual(expected)
 })
 
 function content(filepath) {
