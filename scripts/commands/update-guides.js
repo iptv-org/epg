@@ -26,24 +26,15 @@ async function generateGuides() {
   for (const key in grouped) {
     const filepath = `${PUBLIC_DIR}/guides/${key}.epg.xml`
     let items = grouped[key]
-    items = items
-      .map(i => {
-        const channel = api.channels.find({ id: i.xmltv_id })
-        i.name = channel.name
-        i.logo = channel.logo
-
-        return i
-      })
-      .filter(i => i)
 
     const errors = []
     for (const item of items) {
       if (item.error) {
         const error = {
-          xmltv_id: item.xmltv_id,
+          xmltv_id: item.channel.xmltv_id,
           site: item.site,
-          site_id: item.site_id,
-          lang: item.lang,
+          site_id: item.channel.site_id,
+          lang: item.channel.lang,
           date: item.date,
           error: item.error
         }
@@ -52,10 +43,23 @@ async function generateGuides() {
       }
     }
 
-    const programs = await loadProgramsForChannels(items)
+    const programs = await loadProgramsForItems(items)
 
     logger.info(`Creating "${filepath}"...`)
-    const output = grabber.convertToXMLTV({ channels: items, programs })
+    const channels = items
+      .map(item => {
+        const channel = api.channels.find({ id: item.channel.xmltv_id })
+        if (!channel) return null
+
+        return {
+          id: channel.id,
+          display_name: channel.name,
+          url: item.site,
+          icon: channel.logo
+        }
+      })
+      .filter(i => i)
+    const output = grabber.convertToXMLTV({ channels, programs })
     await file.create(filepath, output)
 
     await logGuide({
@@ -92,10 +96,10 @@ async function loadQueue() {
   return await db.queue.find({}).sort({ xmltv_id: 1 })
 }
 
-async function loadProgramsForChannels(channels = []) {
-  const cids = channels.map(c => c._id)
+async function loadProgramsForItems(items = []) {
+  const qids = items.map(i => i._id)
 
-  return await db.programs.find({ _cid: { $in: cids } }).sort({ channel: 1, start: 1 })
+  return await db.programs.find({ _qid: { $in: qids } }).sort({ channel: 1, start: 1 })
 }
 
 async function setUp() {
