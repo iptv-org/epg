@@ -105,11 +105,6 @@ async function getLogRecords() {
   const logPath = `${LOGS_DIR}/update-guides.log`
   const records = await parser.parseLogs(logPath)
 
-  if (!records.length) {
-    logger.error(`File "${logPath}" is empty`)
-    process.exit(1)
-  }
-
   return records.map(item => {
     const code = item.group.split('/')[0] || ''
     item.code = code.toUpperCase()
