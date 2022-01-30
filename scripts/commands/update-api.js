@@ -21,7 +21,7 @@ async function loadGuides() {
   const output = []
   for (const item of queue) {
     item.groups.forEach(group => {
-      if (item.programCount) {
+      if (!item.error) {
         output.push({
           channel: item.xmltv_id,
           site: item.site,

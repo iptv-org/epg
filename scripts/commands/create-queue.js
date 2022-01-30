@@ -57,7 +57,8 @@ async function createQueue() {
             site: item.site,
             date: dString,
             configPath: item.configPath,
-            groups: []
+            groups: [],
+            error: null
           }
         }
 
