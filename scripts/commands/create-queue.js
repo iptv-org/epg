@@ -14,6 +14,7 @@ const options = program
   .opts()
 
 const CHANNELS_PATH = process.env.CHANNELS_PATH || 'sites/**/*.channels.xml'
+const LOGS_DIR = process.env.LOGS_DIR || 'scripts/logs'
 
 async function main() {
   logger.info('Starting...')
@@ -49,9 +50,17 @@ async function createQueue() {
       if (!item.site || !item.site_id || !item.xmltv_id) continue
       const channel = api.channels.find({ id: item.xmltv_id })
       if (!channel) {
-        console.log(item.xmltv_id)
+        await logError(groupId, {
+          xmltv_id: item.xmltv_id,
+          site: item.site,
+          site_id: item.site_id,
+          lang: item.lang,
+          date: undefined,
+          error: 'Wrong channel ID'
+        })
         continue
       }
+
       for (const d of dates) {
         const dString = d.toJSON()
         const key = `${item.site}:${item.site_id}:${item.lang}:${dString}`
@@ -103,4 +112,13 @@ function split(arr, n) {
     result.push(arr.splice(0, Math.ceil(arr.length / i)))
   }
   return result
+}
+
+async function logError(key, data) {
+  const filepath = `${LOGS_DIR}/errors/${key}.log`
+  if (!(await file.exists(filepath))) {
+    await file.create(filepath)
+  }
+
+  await file.append(filepath, JSON.stringify(data) + '\r\n')
 }
