@@ -13,9 +13,6 @@ module.exports = {
       channel.site_id
     }&startTime=${date.format()}&hours=24`
   },
-  logo({ channel }) {
-    return channel.logo
-  },
   async parser({ content }) {
     const programs = []
     const items = parseItems(content)
@@ -58,12 +55,7 @@ module.exports = {
       return {
         lang: 'en',
         site_id: item.chNum,
-        name: item.chName,
-        logo: `https://www.directv.com/images/logos/channels/dark/large/${padStart(
-          item.chLogoId,
-          3,
-          '0'
-        )}.png`
+        name: item.chName
       }
     })
   }
