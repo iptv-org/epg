@@ -1,434 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site site="tvtv.us">
   <channels>
-    <channel lang="en" xmltv_id="AECanada.us" site_id="3886" logo="https://cdn.tvpassport.com/image/station/100x100/aande.png">A&amp;E Canada</channel>
-    <channel lang="en" xmltv_id="AMCCanada.us" site_id="3822" logo="https://cdn.tvpassport.com/image/station/100x100/amc.png">AMC Canada</channel>
-    <channel lang="en" xmltv_id="AMItele.ca" site_id="13775" logo="https://cdn.tvpassport.com/image/station/100x100/ami-tele.png">AMI-télé</channel>
-    <channel lang="en" xmltv_id="AMItvEast.ca" site_id="6056" logo="https://cdn.tvpassport.com/image/station/100x100/ami-tv.png">AMI-tv East</channel>
-    <channel lang="en" xmltv_id="AMItvWest.ca" site_id="10756" logo="https://cdn.tvpassport.com/image/station/100x100/ami-tv.png">AMI-tv West</channel>
-    <channel lang="en" xmltv_id="APTNEast.ca" site_id="198" logo="https://cdn.tvpassport.com/image/station/100x100/aptn.png">APTN East</channel>
-    <channel lang="en" xmltv_id="APTNNorth.ca" site_id="486" logo="https://cdn.tvpassport.com/image/station/100x100/aptn.png">APTN North</channel>
-    <channel lang="en" xmltv_id="APTNWest.ca" site_id="3830" logo="https://cdn.tvpassport.com/image/station/100x100/aptn.png">APTN West</channel>
-    <channel lang="en" xmltv_id="ASide.ca" site_id="6778" logo="https://cdn.tvpassport.com/image/station/100x100/a_sidetv.png">A.Side</channel>
-    <channel lang="en" xmltv_id="ATNABPNews.ca" site_id="11053" logo="https://cdn.tvpassport.com/image/station/100x100/abp_news.png">ATN ABP News</channel>
-    <channel lang="en" xmltv_id="ATNARYNews.ca" site_id="13699" logo="https://cdn.tvpassport.com/image/station/100x100/ary-news.png">ATN ARY News</channel>
-    <channel lang="en" xmltv_id="ATNAapkaColors.ca" site_id="10295" logo="https://cdn.tvpassport.com/image/station/100x100/aapkacolors.png">ATN Aapka Colors</channel>
-    <channel lang="en" xmltv_id="ATNAasthaTV.ca" site_id="2262" logo="https://cdn.tvpassport.com/image/station/100x100/aastha.png">ATN Aastha TV</channel>
-    <channel lang="en" xmltv_id="ATNB4UMovies.ca" site_id="2865" logo="https://cdn.tvpassport.com/image/station/100x100/b4u_movies.png">ATN B4U Movies</channel>
-    <channel lang="en" xmltv_id="ATNB4UMusic.ca" site_id="2867" logo="https://cdn.tvpassport.com/image/station/100x100/b4u_music.png">ATN B4U Music</channel>
-    <channel lang="en" xmltv_id="ATNBangla.ca" site_id="2260" logo="https://cdn.tvpassport.com/image/station/100x100/atn-bangla.png">ATN Bangla</channel>
-    <channel lang="en" xmltv_id="ATNBritAsiaTV.ca" site_id="13705" logo="https://cdn.tvpassport.com/image/station/100x100/brit-asia.png">ATN Brit Asia TV</channel>
-    <channel lang="en" xmltv_id="ATNChannel.ca" site_id="4192" logo="https://cdn.tvpassport.com/image/station/100x100/atn.png">ATN Channel</channel>
-    <channel lang="en" xmltv_id="ATNColorsMarathi.ca" site_id="17036" logo="https://cdn.tvpassport.com/image/station/100x100/colors_marathi.png">ATN Colors Marathi</channel>
-    <channel lang="en" xmltv_id="ATNColorsRishtey.ca" site_id="17038" logo="https://cdn.tvpassport.com/image/station/100x100/rishtey.png">ATN Colors Rishtey</channel>
-    <channel lang="en" xmltv_id="ATNCricketPlus.ca" site_id="13695" logo="https://cdn.tvpassport.com/image/station/100x100/atn_cricket_plus.png">ATN Cricket Plus</channel>
-    <channel lang="en" xmltv_id="ATNFoodFood.ca" site_id="11051" logo="https://cdn.tvpassport.com/image/station/100x100/foodfood.png">ATN Food Food</channel>
-    <channel lang="en" xmltv_id="ATNGujarati.ca" site_id="14217" logo="https://cdn.tvpassport.com/image/station/100x100/gujarati.png">ATN Gujarati</channel>
+    <channel lang="en" xmltv_id="AMItvWest.ca" site_id="10756">AMI-tv West</channel>
+    <channel lang="en" xmltv_id="ATNColorsRishtey.ca" site_id="17038">ATN Colors Rishtey</channel>
     <channel lang="en" xmltv_id="ATNIBCTamil.ca" site_id="20367">ATN IBC Tamil</channel>
-    <channel lang="en" xmltv_id="ATNJayaTV.ca" site_id="3406" logo="https://cdn.tvpassport.com/image/station/100x100/jayatv.png">ATN Jaya TV</channel>
-    <channel lang="en" xmltv_id="ATNLife.ca" site_id="17042" logo="https://cdn.tvpassport.com/image/station/100x100/life_ok.png">ATN Life</channel>
-    <channel lang="en" xmltv_id="ATNMTVIndia.ca" site_id="17035" logo="https://cdn.tvpassport.com/image/station/100x100/mtv_india.png">ATN MTV India</channel>
-    <channel lang="en" xmltv_id="ATNMalayalam.ca" site_id="8967" logo="https://cdn.tvpassport.com/image/station/100x100/asianet.png">ATN Malayalam</channel>
-    <channel lang="en" xmltv_id="ATNMax2.ca" site_id="6776">ATN Max 2</channel>
-    <channel lang="en" xmltv_id="ATNMovies.ca" site_id="11052" logo="https://cdn.tvpassport.com/image/station/100x100/atn-movies.png">ATN Movies</channel>
-    <channel lang="en" xmltv_id="ATNMoviesPlus.ca" site_id="17037" logo="https://cdn.tvpassport.com/image/station/100x100/atn-movies-plus.png">ATN Movies Plus</channel>
-    <channel lang="en" xmltv_id="ATNNews18.ca" site_id="17041" logo="https://cdn.tvpassport.com/image/station/100x100/atn-news-18.png">ATN News 18</channel>
-    <channel lang="en" xmltv_id="ATNNews.ca" site_id="10247" logo="https://cdn.tvpassport.com/image/station/100x100/ndtv.png">ATN News</channel>
-    <channel lang="en" xmltv_id="ATNPMOne.ca" site_id="6774" logo="https://cdn.tvpassport.com/image/station/100x100/atn-mh-one.png">ATN PM One</channel>
-    <channel lang="en" xmltv_id="ATNPunjabi5.ca" site_id="17040" logo="https://cdn.tvpassport.com/image/station/100x100/atn-punjabi-5.png">ATN Punjabi 5</channel>
-    <channel lang="en" xmltv_id="ATNPunjabi.ca" site_id="2866" logo="https://cdn.tvpassport.com/image/station/100x100/atn_alpha.png">ATN Punjabi</channel>
-    <channel lang="en" xmltv_id="ATNPunjabiNews.ca" site_id="17039" logo="https://cdn.tvpassport.com/image/station/100x100/atn-punjabi-news.png">ATN Punjabi News</channel>
-    <channel lang="en" xmltv_id="ATNPunjabiPlus.ca" site_id="17043" logo="https://cdn.tvpassport.com/image/station/100x100/atn-punjabi-plus.png">ATN Punjabi Plus</channel>
-    <channel lang="en" xmltv_id="ATNSABTV.ca" site_id="10244" logo="https://cdn.tvpassport.com/image/station/100x100/atn-sab-tv.png">ATN SAB TV</channel>
-    <channel lang="en" xmltv_id="ATNSetMax.ca" site_id="6771" logo="https://cdn.tvpassport.com/image/station/100x100/set_max.png">ATN Set Max</channel>
-    <channel lang="en" xmltv_id="ATNSikh.ca" site_id="13702" logo="https://cdn.tvpassport.com/image/station/100x100/atn-sikh.png">ATN Sikh</channel>
-    <channel lang="en" xmltv_id="ATNSony.ca" site_id="6439" logo="https://cdn.tvpassport.com/image/station/100x100/atn-sony.png">ATN Sony</channel>
-    <channel lang="en" xmltv_id="ATNSony.ca" site_id="31985" logo="https://cdn.tvpassport.com/image/station/100x100/atn-sony.png">ATN Sony</channel>
-    <channel lang="en" xmltv_id="ATNSonyAath.ca" site_id="14215" logo="https://cdn.tvpassport.com/image/station/100x100/sony_aath.png">ATN Sony Aath</channel>
-    <channel lang="en" xmltv_id="ATNSports.ca" site_id="14213" logo="https://cdn.tvpassport.com/image/station/100x100/dd-sports.png">ATN Sports</channel>
-    <channel lang="en" xmltv_id="ATNTV18Urdu.ca" site_id="14216" logo="https://cdn.tvpassport.com/image/station/100x100/urdu.png">ATN TV 18 Urdu</channel>
-    <channel lang="en" xmltv_id="ATNTamilPlus.ca" site_id="6777">ATN Tamil Plus</channel>
-    <channel lang="en" xmltv_id="ATNTimesNow.ca" site_id="10245" logo="https://cdn.tvpassport.com/image/station/100x100/atn-times-now.png">ATN Times Now</channel>
-    <channel lang="en" xmltv_id="ATNUrdu.ca" site_id="13626" logo="https://cdn.tvpassport.com/image/station/100x100/ary-digital.png">ATN Urdu</channel>
-    <channel lang="en" xmltv_id="ATNZoom.ca" site_id="10246" logo="https://cdn.tvpassport.com/image/station/100x100/atn-zoom.png">ATN Zoom</channel>
-    <channel lang="en" xmltv_id="ATVHalifax.ca" site_id="122" logo="https://cdn.tvpassport.com/image/station/100x100/ctv-2018.png">ATV Halifax</channel>
-    <channel lang="en" xmltv_id="AddikTV.ca" site_id="2033" logo="https://cdn.tvpassport.com/image/station/100x100/addiktv.png">Addik TV</channel>
-    <channel lang="en" xmltv_id="AlNahar.ca" site_id="10248" logo="https://cdn.tvpassport.com/image/station/100x100/al_nahar.png">Al-Nahar</channel>
-    <channel lang="en" xmltv_id="AlNaharDrama.ca" site_id="31967" logo="https://cdn.tvpassport.com/image/station/100x100/al-nahar-drama.png">Al-Nahar Drama</channel>
-    <channel lang="en" xmltv_id="AmazingDiscoveriesTV.ca" site_id="34372">Amazing Discoveries TV</channel>
-    <channel lang="en" xmltv_id="AmericanHeroesChannelCanada.us" site_id="2035" logo="https://cdn.tvpassport.com/image/station/100x100/ahc_logo.png">American Heroes Channel Canada</channel>
-    <channel lang="en" xmltv_id="AnimalPlanetCanada.us" site_id="472" logo="https://cdn.tvpassport.com/image/station/100x100/animal-planet-canada.png">Animal Planet Canada</channel>
-    <channel lang="en" xmltv_id="AquariumChannel.ca" site_id="7819">Aquarium Channel</channel>
-    <channel lang="en" xmltv_id="AssembleenationaleduQuebec.ca" site_id="431" logo="https://cdn.tvpassport.com/image/station/100x100/assemblee.png">Assemblee nationale du Quebec</channel>
-    <channel lang="en" xmltv_id="Avisderecherche.ca" site_id="5950" logo="https://cdn.tvpassport.com/image/station/100x100/adr_tv.png">Avis de recherche</channel>
-    <channel lang="en" xmltv_id="B4UMoviesCanada.in" site_id="4006">B4U Movies Canada</channel>
-    <channel lang="en" xmltv_id="B4UMusicCanada.in" site_id="15875" logo="https://cdn.tvpassport.com/image/station/100x100/b4u_music.png">B4U Music Canada</channel>
-    <channel lang="en" xmltv_id="BBCFirstCanada.uk" site_id="3906" logo="https://cdn.tvpassport.com/image/station/100x100/bbcfirst.png">BBC First Canada</channel>
-    <channel lang="en" xmltv_id="BETCanada.us" site_id="4386" logo="https://cdn.tvpassport.com/image/station/100x100/bettv.png">BET Canada</channel>
-    <channel lang="en" xmltv_id="BNNBloomberg.ca" site_id="294" logo="https://cdn.tvpassport.com/image/station/100x100/bnn-2018.png">BNN Bloomberg</channel>
-    <channel lang="en" xmltv_id="BeInSportsCanada.qa" site_id="13246" logo="https://cdn.tvpassport.com/image/station/100x100/bein_sports.png">BeIN Sports Canada</channel>
-    <channel lang="en" xmltv_id="BloombergTVCanada.us" site_id="17045" logo="https://cdn.tvpassport.com/image/station/100x100/bnn-2018.png">Bloomberg TV Canada</channel>
-    <channel lang="en" xmltv_id="CBCNewsNetwork.ca" site_id="74" logo="https://cdn.tvpassport.com/image/station/100x100/cbc_news_network.png">CBC News Network</channel>
-    <channel lang="en" xmltv_id="CBCNorthNWT.ca" site_id="348" logo="https://cdn.tvpassport.com/image/station/100x100/cbc2015.png">CBC North NWT</channel>
-    <channel lang="en" xmltv_id="CBCNorthNunavut.ca" site_id="152" logo="https://cdn.tvpassport.com/image/station/100x100/cbc2015.png">CBC North Nunavut</channel>
-    <channel lang="en" xmltv_id="CBCNorthYukon.ca" site_id="202" logo="https://cdn.tvpassport.com/image/station/100x100/cbc2015.png">CBC North Yukon</channel>
-    <channel lang="en" xmltv_id="CBSSportsNetworkCanada.us" site_id="10708" logo="https://cdn.tvpassport.com/image/station/100x100/cbs_sports_network.png">CBS Sports Network Canada</channel>
-    <channel lang="en" xmltv_id="CHCHTV.ca" site_id="43" logo="https://cdn.tvpassport.com/image/station/100x100/chch.png">CHCH TV</channel>
-    <channel lang="en" xmltv_id="CMTCanada.us" site_id="120" logo="https://cdn.tvpassport.com/image/station/100x100/cmtcanada.png">CMT Canada</channel>
-    <channel lang="en" xmltv_id="CNBCCanada.us" site_id="3561" logo="https://cdn.tvpassport.com/image/station/100x100/cnbc.png">CNBC Canada</channel>
-    <channel lang="en" xmltv_id="CP24.ca" site_id="321" logo="https://cdn.tvpassport.com/image/station/100x100/cp24.png">CP 24</channel>
-    <channel lang="en" xmltv_id="CPACFrancais.ca" site_id="429" logo="https://cdn.tvpassport.com/image/station/100x100/cpac.png">CPAC Francais</channel>
-    <channel lang="en" xmltv_id="CPACOttawa.ca" site_id="127" logo="https://cdn.tvpassport.com/image/station/100x100/cpac.png">CPAC Ottawa</channel>
-    <channel lang="en" xmltv_id="CTV2Alberta.ca" site_id="157" logo="https://cdn.tvpassport.com/image/station/100x100/ctv2-2018.png">CTV 2 Alberta</channel>
-    <channel lang="en" xmltv_id="CTV2AtlanticRegion.ca" site_id="116" logo="https://cdn.tvpassport.com/image/station/100x100/ctv2-2018.png">CTV 2 Atlantic Region</channel>
-    <channel lang="en" xmltv_id="CTV2London.ca" site_id="139" logo="https://cdn.tvpassport.com/image/station/100x100/ctv2-2018.png">CTV 2 London</channel>
-    <channel lang="en" xmltv_id="CTV2Ottawa.ca" site_id="51" logo="https://cdn.tvpassport.com/image/station/100x100/ctv2-2018.png">CTV 2 Ottawa</channel>
-    <channel lang="en" xmltv_id="CTV2Toronto.ca" site_id="36" logo="https://cdn.tvpassport.com/image/station/100x100/ctv2-2018.png">CTV 2 Toronto</channel>
-    <channel lang="en" xmltv_id="CTV2VancouverIsland.ca" site_id="454" logo="https://cdn.tvpassport.com/image/station/100x100/ctv2-2018.png">CTV 2 Vancouver Island</channel>
-    <channel lang="en" xmltv_id="CTV2Windsor.ca" site_id="3401" logo="https://cdn.tvpassport.com/image/station/100x100/ctv2-2018.png">CTV 2 Windsor</channel>
-    <channel lang="en" xmltv_id="CTV.ca" site_id="185" logo="https://cdn.tvpassport.com/image/station/100x100/ctv-2018.png">CTV</channel>
-    <channel lang="en" xmltv_id="CTVComedyChannelEast.ca" site_id="159" logo="https://cdn.tvpassport.com/image/station/100x100/ctv-comedy.png">CTV Comedy Channel East</channel>
-    <channel lang="en" xmltv_id="CTVComedyChannelWest.ca" site_id="1019" logo="https://cdn.tvpassport.com/image/station/100x100/ctv-comedy.png">CTV Comedy Channel West</channel>
-    <channel lang="en" xmltv_id="CTVDramaChannel.ca" site_id="59" logo="https://cdn.tvpassport.com/image/station/100x100/ctv-drama.png">CTV Drama Channel</channel>
-    <channel lang="en" xmltv_id="CTVLife.ca" site_id="309" logo="https://cdn.tvpassport.com/image/station/100x100/ctv-life.png">CTV Life</channel>
-    <channel lang="en" xmltv_id="CTVNewsChannel.ca" site_id="416" logo="https://cdn.tvpassport.com/image/station/100x100/ctvnews.png">CTV News Channel</channel>
-    <channel lang="en" xmltv_id="CTVSciFi.ca" site_id="153" logo="https://cdn.tvpassport.com/image/station/100x100/ctv-scifi.png">CTV Sci-Fi</channel>
-    <channel lang="en" xmltv_id="Cable14Hamilton.ca" site_id="670" logo="https://cdn.tvpassport.com/image/station/100x100/cable14.png">Cable 14 Hamilton</channel>
-    <channel lang="en" xmltv_id="CanalD.ca" site_id="108" logo="https://cdn.tvpassport.com/image/station/100x100/canald.png">Canal D</channel>
-    <channel lang="en" xmltv_id="CanalIndigo2.ca" site_id="3273" logo="https://cdn.tvpassport.com/image/station/100x100/indigo.png">Canal Indigo 2</channel>
-    <channel lang="en" xmltv_id="CanalIndigo3.ca" site_id="3277" logo="https://cdn.tvpassport.com/image/station/100x100/indigo.png">Canal Indigo 3</channel>
-    <channel lang="en" xmltv_id="CanalIndigo4.ca" site_id="3279" logo="https://cdn.tvpassport.com/image/station/100x100/indigo.png">Canal Indigo 4</channel>
-    <channel lang="en" xmltv_id="CanalIndigo5.ca" site_id="3280" logo="https://cdn.tvpassport.com/image/station/100x100/indigo.png">Canal Indigo 5</channel>
-    <channel lang="en" xmltv_id="CanalIndigo6.ca" site_id="14179" logo="https://cdn.tvpassport.com/image/station/100x100/indigo.png">Canal Indigo 6</channel>
-    <channel lang="en" xmltv_id="CanalIndigo.ca" site_id="2852" logo="https://cdn.tvpassport.com/image/station/100x100/indigo.png">Canal Indigo</channel>
-    <channel lang="en" xmltv_id="CanalM.ca" site_id="5955" logo="https://cdn.tvpassport.com/image/station/100x100/canalm.png">Canal M</channel>
-    <channel lang="en" xmltv_id="CanalVie.ca" site_id="307" logo="https://cdn.tvpassport.com/image/station/100x100/canalvie.png">Canal Vie</channel>
-    <channel lang="en" xmltv_id="CartoonNetworkCanada.us" site_id="10613" logo="https://cdn.tvpassport.com/image/station/100x100/cartoonnetwork.png">Cartoon Network Canada</channel>
-    <channel lang="en" xmltv_id="Casa.ca" site_id="5484" logo="https://cdn.tvpassport.com/image/station/100x100/casa.png">Casa</channel>
-    <channel lang="en" xmltv_id="Cinepop.ca" site_id="2325" logo="https://cdn.tvpassport.com/image/station/100x100/cinepop.png">Cinépop</channel>
-    <channel lang="en" xmltv_id="CitytvMontreal.ca" site_id="1171" logo="https://cdn.tvpassport.com/image/station/100x100/citytv.png">Citytv Montreal</channel>
-    <channel lang="en" xmltv_id="CitytvOttawa.ca" site_id="13870" logo="https://cdn.tvpassport.com/image/station/100x100/citytv.png">Citytv Ottawa</channel>
-    <channel lang="en" xmltv_id="CitytvSaskatchewan.ca" site_id="241" logo="https://cdn.tvpassport.com/image/station/100x100/citytv.png">Citytv Saskatchewan</channel>
-    <channel lang="en" xmltv_id="CitytvToronto.ca" site_id="42" logo="https://cdn.tvpassport.com/image/station/100x100/citytv.png">Citytv Toronto</channel>
-    <channel lang="en" xmltv_id="CitytvVancouver.ca" site_id="187" logo="https://cdn.tvpassport.com/image/station/100x100/citytv.png">Citytv Vancouver</channel>
-    <channel lang="en" xmltv_id="CitytvWoodstock.ca" site_id="13869" logo="https://cdn.tvpassport.com/image/station/100x100/citytv.png">Citytv Woodstock</channel>
-    <channel lang="en" xmltv_id="CookingChannelCanada.us" site_id="4226" logo="https://cdn.tvpassport.com/image/station/100x100/cooking_channel.png">Cooking Channel Canada</channel>
-    <channel lang="en" xmltv_id="CottageLifeTV.ca" site_id="455" logo="https://cdn.tvpassport.com/image/station/100x100/cott.png">Cottage Life TV</channel>
-    <channel lang="en" xmltv_id="Crave1East.ca" site_id="72" logo="https://cdn.tvpassport.com/image/station/100x100/crave1.png">Crave 1 East</channel>
-    <channel lang="en" xmltv_id="Crave1West.ca" site_id="158" logo="https://cdn.tvpassport.com/image/station/100x100/crave1.png">Crave 1 West</channel>
-    <channel lang="en" xmltv_id="Crave2East.ca" site_id="86" logo="https://cdn.tvpassport.com/image/station/100x100/crave2.png">Crave 2 East</channel>
-    <channel lang="en" xmltv_id="Crave2West.ca" site_id="250" logo="https://cdn.tvpassport.com/image/station/100x100/crave2.png">Crave 2 West</channel>
-    <channel lang="en" xmltv_id="Crave3East.ca" site_id="85" logo="https://cdn.tvpassport.com/image/station/100x100/crave3.png">Crave 3 East</channel>
-    <channel lang="en" xmltv_id="Crave3West.ca" site_id="354" logo="https://cdn.tvpassport.com/image/station/100x100/crave3.png">Crave 3 West</channel>
-    <channel lang="en" xmltv_id="Crave4.ca" site_id="320" logo="https://cdn.tvpassport.com/image/station/100x100/crave4.png">Crave 4</channel>
-    <channel lang="en" xmltv_id="CrimePlusInvestigationCanada.us" site_id="451" logo="https://cdn.tvpassport.com/image/station/100x100/crime_invest.png">Crime + Investigation Canada</channel>
-    <channel lang="en" xmltv_id="DIYNetworkCanada.us" site_id="2034" logo="https://cdn.tvpassport.com/image/station/100x100/diy.png">DIY Network Canada</channel>
-    <channel lang="en" xmltv_id="DTourEast.ca" site_id="161" logo="https://cdn.tvpassport.com/image/station/100x100/dtour.png">DTour East</channel>
-    <channel lang="en" xmltv_id="DTourWest.ca" site_id="1022" logo="https://cdn.tvpassport.com/image/station/100x100/dtour.png">DTour West</channel>
-    <channel lang="en" xmltv_id="DaystarTVCanada.us" site_id="3431" logo="https://cdn.tvpassport.com/image/station/100x100/daystar_tv.png">Daystar TV Canada</channel>
-    <channel lang="en" xmltv_id="DejaView.ca" site_id="448" logo="https://cdn.tvpassport.com/image/station/100x100/dejaview.png">DejaView</channel>
-    <channel lang="en" xmltv_id="DiscoveryChannelCanada.us" site_id="16" logo="https://cdn.tvpassport.com/image/station/100x100/discovery-canada.png">Discovery Channel Canada</channel>
-    <channel lang="en" xmltv_id="DiscoveryScienceCanada.us" site_id="1188" logo="https://cdn.tvpassport.com/image/station/100x100/science16.png">Discovery Science Canada</channel>
-    <channel lang="en" xmltv_id="DisneyChannelCanadaEast.us" site_id="16682" logo="https://cdn.tvpassport.com/image/station/100x100/disney.png">Disney Channel Canada East</channel>
-    <channel lang="en" xmltv_id="DisneyChannelCanadaWest.us" site_id="16831" logo="https://cdn.tvpassport.com/image/station/100x100/disney.png">Disney Channel Canada West</channel>
-    <channel lang="en" xmltv_id="DisneyJuniorCanada.us" site_id="17224" logo="https://cdn.tvpassport.com/image/station/100x100/disney_junior.png">Disney Junior Canada</channel>
-    <channel lang="en" xmltv_id="DisneyXDCanada.us" site_id="17172" logo="https://cdn.tvpassport.com/image/station/100x100/disneyxd.png">Disney XD Canada</channel>
-    <channel lang="en" xmltv_id="DocumentaryChannel.ca" site_id="462" logo="https://cdn.tvpassport.com/image/station/100x100/docu-can.png">Documentary Channel</channel>
-    <channel lang="en" xmltv_id="ECanada.us" site_id="295" logo="https://cdn.tvpassport.com/image/station/100x100/eentertain.png">E! Canada</channel>
-    <channel lang="en" xmltv_id="ERTWorldCanada.gr" site_id="3419">ERT World Canada</channel>
-    <channel lang="en" xmltv_id="ESPNClassicCanada.us" site_id="1154" logo="https://cdn.tvpassport.com/image/station/100x100/espn_classics.png">ESPN Classic Canada</channel>
-    <channel lang="en" xmltv_id="EWTNCanada.us" site_id="619" logo="https://cdn.tvpassport.com/image/station/100x100/ewtn2016.png">EWTN Canada</channel>
-    <channel lang="en" xmltv_id="ElleFictions.ca" site_id="101" logo="https://cdn.tvpassport.com/image/station/100x100/elle-fictions.png">Elle Fictions</channel>
-    <channel lang="en" xmltv_id="Evasion.ca" site_id="343" logo="https://cdn.tvpassport.com/image/station/100x100/evasion.png">Évasion</channel>
-    <channel lang="en" xmltv_id="Exxxtasy.ca" site_id="1168" logo="https://cdn.tvpassport.com/image/station/100x100/hustlertv.png">Exxxtasy</channel>
-    <channel lang="en" xmltv_id="FPTV.ca" site_id="2465" logo="https://cdn.tvpassport.com/image/station/100x100/fptv.png">FPTV (Festival Portuguese TV)</channel>
-    <channel lang="en" xmltv_id="FXCanada.us" site_id="10026" logo="https://cdn.tvpassport.com/image/station/100x100/fxcanada.png">FX Canada</channel>
-    <channel lang="en" xmltv_id="FXXCanada.us" site_id="13400" logo="https://cdn.tvpassport.com/image/station/100x100/fxx.png">FXX Canada</channel>
-    <channel lang="en" xmltv_id="FairchildTV2.ca" site_id="11397" logo="https://cdn.tvpassport.com/image/station/100x100/fairchild_tv2.png">Fairchild TV 2</channel>
-    <channel lang="en" xmltv_id="FairchildTVEast.ca" site_id="2871" logo="https://cdn.tvpassport.com/image/station/100x100/fairchild.png">Fairchild TV East</channel>
-    <channel lang="en" xmltv_id="FairchildTVWest.ca" site_id="366" logo="https://cdn.tvpassport.com/image/station/100x100/fairchild.png">Fairchild TV West</channel>
-    <channel lang="en" xmltv_id="FaithTV.ca" site_id="5329" logo="https://cdn.tvpassport.com/image/station/100x100/faithtv.png">FaithTV</channel>
-    <channel lang="en" xmltv_id="FamilyChannelEast.ca" site_id="53" logo="https://cdn.tvpassport.com/image/station/100x100/familychannel.png">Family Channel East</channel>
-    <channel lang="en" xmltv_id="FamilyChannelWest.ca" site_id="1018" logo="https://cdn.tvpassport.com/image/station/100x100/familychannel.png">Family Channel West</channel>
-    <channel lang="en" xmltv_id="FamilyJr.ca" site_id="5330" logo="https://cdn.tvpassport.com/image/station/100x100/familyjr.png">Family Jr</channel>
-    <channel lang="en" xmltv_id="FightNetwork.ca" site_id="48099" logo="https://cdn.tvpassport.com/image/station/100x100/fight-network.png">Fight Network</channel>
-    <channel lang="en" xmltv_id="FilipinoTV.ca" site_id="6639" logo="https://cdn.tvpassport.com/image/station/100x100/filipino-tv.png">Filipino TV</channel>
-    <channel lang="en" xmltv_id="FoodNetworkCanada.us" site_id="169" logo="https://cdn.tvpassport.com/image/station/100x100/food-canada-2021.png">Food Network Canada</channel>
-    <channel lang="en" xmltv_id="FrissonsTV.ca" site_id="32125" logo="https://cdn.tvpassport.com/image/station/100x100/frissons.png">Frissons TV</channel>
-    <channel lang="en" xmltv_id="GamePlus.ca" site_id="14464" logo="https://cdn.tvpassport.com/image/station/100x100/gameplus.png">Game+</channel>
-    <channel lang="en" xmltv_id="GameTV.ca" site_id="5976" logo="https://cdn.tvpassport.com/image/station/100x100/gametv.png">Game TV</channel>
-    <channel lang="en" xmltv_id="GinxeSportsTVCanada.uk" site_id="4836" logo="https://cdn.tvpassport.com/image/station/100x100/ginxcanada.png">Ginx eSports TV Canada</channel>
+    <channel lang="en" xmltv_id="ATNMovies.ca" site_id="11052">ATN Movies</channel>
+    <channel lang="en" xmltv_id="ATNPunjabi5.ca" site_id="17040">ATN Punjabi 5</channel>
+    <channel lang="en" xmltv_id="ATNPunjabiPlus.ca" site_id="17043">ATN Punjabi Plus</channel>
+    <channel lang="en" xmltv_id="ATNZoom.ca" site_id="10246">ATN Zoom</channel>
+    <channel lang="en" xmltv_id="CartoonNetworkCanada.us" site_id="10613">Cartoon Network Canada</channel>
+    <channel lang="en" xmltv_id="CBSSportsNetworkCanada.us" site_id="10708">CBS Sports Network Canada</channel>
+    <channel lang="en" xmltv_id="CFHDDT.ca" site_id="26780">ICI (CFHD-DT) Montréal, QC</channel>
+    <channel lang="en" xmltv_id="CHBCDT2.ca" site_id="13834">Global (CHBC-DT-2) Vernon, BC</channel>
+    <channel lang="en" xmltv_id="CHKM.ca" site_id="11597">Global (CHKM) Kamloops, BC</channel>
+    <channel lang="en" xmltv_id="DisneyChannelCanadaWest.us" site_id="16831">Disney Channel Canada West</channel>
+    <channel lang="en" xmltv_id="FairchildTV2.ca" site_id="11397">Fairchild TV 2</channel>
+    <channel lang="en" xmltv_id="FightNetwork.ca" site_id="48099">Fight Network</channel>
+    <channel lang="en" xmltv_id="FrissonsTV.ca" site_id="32125">Frissons TV</channel>
     <channel lang="en" xmltv_id="GlobalNewsBC1.ca" site_id="10980">Global News: BC1</channel>
-    <channel lang="en" xmltv_id="GlobalTVBC.ca" site_id="31" logo="https://cdn.tvpassport.com/image/station/100x100/global.png">Global TV BC</channel>
-    <channel lang="en" xmltv_id="GolfChannelCanada.us" site_id="9900" logo="https://cdn.tvpassport.com/image/station/100x100/golf.png">Golf Channel Canada</channel>
-    <channel lang="en" xmltv_id="HBOCanada2.us" site_id="292" logo="https://cdn.tvpassport.com/image/station/100x100/hbo.png">HBO Canada 2</channel>
-    <channel lang="en" xmltv_id="HGTVCanada.us" site_id="167" logo="https://cdn.tvpassport.com/image/station/100x100/hgtv-usa.png">HGTV Canada</channel>
-    <channel lang="en" xmltv_id="HPItv.ca" site_id="1152" logo="https://cdn.tvpassport.com/image/station/100x100/hpitv.png">HPItv</channel>
-    <channel lang="en" xmltv_id="HallaBol.ca" site_id="13664" logo="https://cdn.tvpassport.com/image/station/100x100/hallabol.png">Halla Bol!</channel>
-    <channel lang="en" xmltv_id="History2Canada.us" site_id="461" logo="https://cdn.tvpassport.com/image/station/100x100/history-2-canada.png">History 2 Canada</channel>
-    <channel lang="en" xmltv_id="HistoryCanadaEast.us" site_id="164" logo="https://cdn.tvpassport.com/image/station/100x100/historycanada.png">History Canada East</channel>
-    <channel lang="en" xmltv_id="HistoryCanadaWest.us" site_id="3782" logo="https://cdn.tvpassport.com/image/station/100x100/historycanada.png">History Canada West</channel>
-    <channel lang="en" xmltv_id="HollywoodSuite00sMovies.ca" site_id="73578" logo="https://cdn.tvpassport.com/image/station/100x100/hs00s.png">Hollywood Suite 00s Movies</channel>
-    <channel lang="en" xmltv_id="HollywoodSuite70sMovies.ca" site_id="73572" logo="https://cdn.tvpassport.com/image/station/100x100/hs70s.png">Hollywood Suite 70s Movies</channel>
-    <channel lang="en" xmltv_id="HollywoodSuite80sMovies.ca" site_id="73574" logo="https://cdn.tvpassport.com/image/station/100x100/hs80s.png">Hollywood Suite 80s Movies</channel>
-    <channel lang="en" xmltv_id="HollywoodSuite90sMovies.ca" site_id="73571" logo="https://cdn.tvpassport.com/image/station/100x100/hs90s.png">Hollywood Suite 90s Movies</channel>
-    <channel lang="en" xmltv_id="IciARTV.ca" site_id="459" logo="https://cdn.tvpassport.com/image/station/100x100/ici_artv.png">Ici ARTV</channel>
-    <channel lang="en" xmltv_id="IciExplora.ca" site_id="10298" logo="https://cdn.tvpassport.com/image/station/100x100/explora.png">Ici Explora</channel>
-    <channel lang="en" xmltv_id="IciRDI.ca" site_id="8" logo="https://cdn.tvpassport.com/image/station/100x100/rdi.png">Ici RDI</channel>
-    <channel lang="en" xmltv_id="IciRadioCanadaTeleMontreal.ca" site_id="11385" logo="https://cdn.tvpassport.com/image/station/100x100/icitv.png">Ici Radio Canada Télé Montréal</channel>
-    <channel lang="en" xmltv_id="IciRadioCanadaTeleQuebec.ca" site_id="32134" logo="https://cdn.tvpassport.com/image/station/100x100/icitv.png">Ici Radio Canada Télé Québec</channel>
-    <channel lang="en" xmltv_id="Investigation.ca" site_id="11344" logo="https://cdn.tvpassport.com/image/station/100x100/canald_investigation.png">Investigation</channel>
-    <channel lang="en" xmltv_id="InvestigationDiscoveryCanada.us" site_id="1120" logo="https://cdn.tvpassport.com/image/station/100x100/investigation_discovery.png">Investigation Discovery Canada</channel>
-    <channel lang="en" xmltv_id="Joytv.ca" site_id="7806" logo="https://cdn.tvpassport.com/image/station/100x100/chnu.png">Joytv</channel>
-    <channel lang="en" xmltv_id="KnowledgeNetwork.ca" site_id="173" logo="https://cdn.tvpassport.com/image/station/100x100/knowl.png">Knowledge Network</channel>
-    <channel lang="en" xmltv_id="LCN.ca" site_id="432" logo="https://cdn.tvpassport.com/image/station/100x100/lcn-2021.png">LCN</channel>
-    <channel lang="en" xmltv_id="LSTimesTV.ca" site_id="6863" logo="https://cdn.tvpassport.com/image/station/100x100/lstimes.png">LS Times TV</channel>
-    <channel lang="en" xmltv_id="LeafsNationNetwork.ca" site_id="60020" logo="https://cdn.tvpassport.com/image/station/100x100/leafstv.png">Leafs Nation Network</channel>
-    <channel lang="en" xmltv_id="LifetimeCanada.us" site_id="1148" logo="https://cdn.tvpassport.com/image/station/100x100/lifetime19.png">Lifetime Canada</channel>
-    <channel lang="en" xmltv_id="LoveNature.ca" site_id="3907" logo="https://cdn.tvpassport.com/image/station/100x100/lovenature.png">Love Nature</channel>
-    <channel lang="en" xmltv_id="MAtvMontreal.ca" site_id="340" logo="https://cdn.tvpassport.com/image/station/100x100/matv.png">MAtv Montréal</channel>
-    <channel lang="en" xmltv_id="MAtvQuebec.ca" site_id="5893" logo="https://cdn.tvpassport.com/image/station/100x100/matv.png">MAtv Québec</channel>
-    <channel lang="en" xmltv_id="MTV2Canada.us" site_id="478" logo="https://cdn.tvpassport.com/image/station/100x100/mtv2.png">MTV 2 Canada</channel>
-    <channel lang="en" xmltv_id="MTVCanada.us" site_id="414" logo="https://cdn.tvpassport.com/image/station/100x100/mtv.png">MTV Canada</channel>
-    <channel lang="en" xmltv_id="Makeful.ca" site_id="2466" logo="https://cdn.tvpassport.com/image/station/100x100/makeful.png">Makeful</channel>
-    <channel lang="en" xmltv_id="Max.ca" site_id="306" logo="https://cdn.tvpassport.com/image/station/100x100/musimax.png">Max</channel>
-    <channel lang="en" xmltv_id="MeteoMedia.ca" site_id="427" logo="https://cdn.tvpassport.com/image/station/100x100/meteo-copy.png">MétéoMédia</channel>
-    <channel lang="en" xmltv_id="MeteoMediaMontreal.ca" site_id="5942" logo="https://cdn.tvpassport.com/image/station/100x100/meteo-copy.png">MétéoMédia Montreal</channel>
-    <channel lang="en" xmltv_id="MeteoMediaQuebec.ca" site_id="5943" logo="https://cdn.tvpassport.com/image/station/100x100/meteo-copy.png">MétéoMédia Quebec</channel>
-    <channel lang="en" xmltv_id="MeteoMediaSherbrooke.ca" site_id="5945" logo="https://cdn.tvpassport.com/image/station/100x100/meteo-copy.png">MétéoMédia Sherbrooke</channel>
-    <channel lang="en" xmltv_id="MeteoMediaTroisRivieres.ca" site_id="5944" logo="https://cdn.tvpassport.com/image/station/100x100/meteo-copy.png">MétéoMédia Trois-Rivieres</channel>
-    <channel lang="en" xmltv_id="MoietCie.ca" site_id="9109" logo="https://cdn.tvpassport.com/image/station/100x100/moi-et-cie.png">Moi et Cie</channel>
-    <channel lang="en" xmltv_id="MovieTime.ca" site_id="464" logo="https://cdn.tvpassport.com/image/station/100x100/movietime.png">MovieTime</channel>
-    <channel lang="en" xmltv_id="Much.ca" site_id="73" logo="https://cdn.tvpassport.com/image/station/100x100/much.png">Much</channel>
-    <channel lang="en" xmltv_id="NBATVCanada.us" site_id="1150" logo="https://cdn.tvpassport.com/image/station/100x100/nbatvcanada.png">NBA TV Canada</channel>
-    <channel lang="en" xmltv_id="NationalGeographicCanada.us" site_id="475" logo="https://cdn.tvpassport.com/image/station/100x100/ngeog-copy.png">National Geographic Canada</channel>
-    <channel lang="en" xmltv_id="NationalGeographicWildCanada.us" site_id="11011" logo="https://cdn.tvpassport.com/image/station/100x100/natgeowild.png">National Geographic Wild Canada</channel>
-    <channel lang="en" xmltv_id="NickelodeonCanada.us" site_id="6835" logo="https://cdn.tvpassport.com/image/station/100x100/nickelodeon.png">Nickelodeon Canada</channel>
-    <channel lang="en" xmltv_id="Noovo.ca" site_id="4884" logo="https://cdn.tvpassport.com/image/station/100x100/noovo.png">Noovo</channel>
-    <channel lang="en" xmltv_id="NousTV.ca" site_id="3832" logo="https://cdn.tvpassport.com/image/station/100x100/noustv.png">NousTV</channel>
-    <channel lang="en" xmltv_id="OLN.ca" site_id="160" logo="https://cdn.tvpassport.com/image/station/100x100/oln.png">OLN</channel>
-    <channel lang="en" xmltv_id="OMNI1.ca" site_id="41" logo="https://cdn.tvpassport.com/image/station/100x100/omni1.png">OMNI 1</channel>
-    <channel lang="en" xmltv_id="OMNI2.ca" site_id="613" logo="https://cdn.tvpassport.com/image/station/100x100/omni2.png">OMNI 2</channel>
-    <channel lang="en" xmltv_id="OMNICalgary.ca" site_id="5924" logo="https://cdn.tvpassport.com/image/station/100x100/omnialberta.png">OMNI Calgary</channel>
-    <channel lang="en" xmltv_id="OMNIEast.ca" site_id="31930" logo="https://cdn.tvpassport.com/image/station/100x100/omni-television.png">OMNI East</channel>
-    <channel lang="en" xmltv_id="OMNIEdmonton.ca" site_id="5925" logo="https://cdn.tvpassport.com/image/station/100x100/omni-television.png">OMNI Edmonton</channel>
-    <channel lang="en" xmltv_id="OMNIPacific.ca" site_id="31932" logo="https://cdn.tvpassport.com/image/station/100x100/omnibc.png">OMNI Pacific</channel>
-    <channel lang="en" xmltv_id="OMNIPrairie.ca" site_id="31934" logo="https://cdn.tvpassport.com/image/station/100x100/omni-television.png">OMNI Prairie</channel>
-    <channel lang="en" xmltv_id="OMNIVancouver.ca" site_id="1174" logo="https://cdn.tvpassport.com/image/station/100x100/omnibc.png">OMNI Vancouver</channel>
-    <channel lang="en" xmltv_id="Odyssey.ca" site_id="412" logo="https://cdn.tvpassport.com/image/station/100x100/odyssey.png">Odyssey</channel>
-    <channel lang="en" xmltv_id="One.ca" site_id="444" logo="https://cdn.tvpassport.com/image/station/100x100/one-get-fit.png">One</channel>
-    <channel lang="en" xmltv_id="OprahWinfreyNetworkCanada.us" site_id="296" logo="https://cdn.tvpassport.com/image/station/100x100/own.png">Oprah Winfrey Network Canada</channel>
-    <channel lang="en" xmltv_id="OutTV.ca" site_id="2729" logo="https://cdn.tvpassport.com/image/station/100x100/outtv.png">OutTV</channel>
-    <channel lang="en" xmltv_id="PalmaresADISQparStingray.ca" site_id="33599" logo="https://cdn.tvpassport.com/image/station/100x100/adisq-stingray.png">PalmarèsADISQ par Stingray</channel>
-    <channel lang="en" xmltv_id="ParamountNetworkCanada.us" site_id="3" logo="https://cdn.tvpassport.com/image/station/100x100/paramount.png">Paramount Network Canada</channel>
-    <channel lang="en" xmltv_id="PenthouseTVCanada.us" site_id="5894" logo="https://cdn.tvpassport.com/image/station/100x100/penthouse.png">Penthouse TV Canada</channel>
-    <channel lang="en" xmltv_id="PlaymenTV.ca" site_id="5952" logo="https://cdn.tvpassport.com/image/station/100x100/playmen.png">Playmen TV</channel>
+    <channel lang="en" xmltv_id="HollywoodSuite00sMovies.ca" site_id="73578">Hollywood Suite 00s Movies</channel>
+    <channel lang="en" xmltv_id="HollywoodSuite70sMovies.ca" site_id="73572">Hollywood Suite 70s Movies</channel>
+    <channel lang="en" xmltv_id="HollywoodSuite80sMovies.ca" site_id="73574">Hollywood Suite 80s Movies</channel>
+    <channel lang="en" xmltv_id="HollywoodSuite90sMovies.ca" site_id="73571">Hollywood Suite 90s Movies</channel>
+    <channel lang="en" xmltv_id="IciRadioCanadaTeleMontreal.ca" site_id="11385">Ici Radio Canada Télé Montréal</channel>
+    <channel lang="en" xmltv_id="IciRadioCanadaTeleQuebec.ca" site_id="32134">Ici Radio Canada Télé Québec</channel>
+    <channel lang="en" xmltv_id="Investigation.ca" site_id="11344">Investigation</channel>
+    <channel lang="en" xmltv_id="LeafsNationNetwork.ca" site_id="60020">Leafs Nation Network</channel>
     <channel lang="en" xmltv_id="PrimeAsiaTV.ca" site_id="32677">Prime Asia TV</channel>
-    <channel lang="en" xmltv_id="Prise2.ca" site_id="2848" logo="https://cdn.tvpassport.com/image/station/100x100/prise2.png">Prise 2</channel>
-    <channel lang="en" xmltv_id="RDS2.ca" site_id="9705" logo="https://cdn.tvpassport.com/image/station/100x100/rds2.png">RDS 2</channel>
-    <channel lang="en" xmltv_id="RDS.ca" site_id="47" logo="https://cdn.tvpassport.com/image/station/100x100/rds-copy.png">RDS</channel>
-    <channel lang="en" xmltv_id="RDSInfo.ca" site_id="3889" logo="https://cdn.tvpassport.com/image/station/100x100/rdsinfo.png">RDS Info</channel>
-    <channel lang="en" xmltv_id="RTViCanada.ru" site_id="32056" logo="https://cdn.tvpassport.com/image/station/100x100/rtvi.png">RTVi Canada</channel>
-    <channel lang="en" xmltv_id="RawalTV.ca" site_id="31958" logo="https://cdn.tvpassport.com/image/station/100x100/rawaltv.png">Rawal TV</channel>
-    <channel lang="en" xmltv_id="RealEstateChannel.ca" site_id="3298">Real Estate Channel</channel>
-    <channel lang="en" xmltv_id="RedHotTV.ca" site_id="3627" logo="https://cdn.tvpassport.com/image/station/100x100/redhottv.png">Red Hot TV</channel>
-    <channel lang="en" xmltv_id="RevTVCanada.ca" site_id="19232" logo="https://cdn.tvpassport.com/image/station/100x100/revtvcanada.png">Rev TV Canada</channel>
-    <channel lang="en" xmltv_id="Rewind.ca" site_id="1149" logo="https://cdn.tvpassport.com/image/station/100x100/rewind_tv.png">Rewind</channel>
-    <channel lang="en" xmltv_id="SaisonsCanada.ca" site_id="20046" logo="https://cdn.tvpassport.com/image/station/100x100/saisons-canada.png">Saisons Canada</channel>
-    <channel lang="en" xmltv_id="SaltPlusLightTV.ca" site_id="2469" logo="https://cdn.tvpassport.com/image/station/100x100/stl.png">Salt + Light TV</channel>
-    <channel lang="en" xmltv_id="SaskatchewanLegislativeNetwork.ca" site_id="538">Saskatchewan Legislative Network</channel>
-    <channel lang="en" xmltv_id="Savoirmedia.ca" site_id="342" logo="https://cdn.tvpassport.com/image/station/100x100/savoirmedia.png">Savoir média</channel>
-    <channel lang="en" xmltv_id="SeriesPlus.ca" site_id="341" logo="https://cdn.tvpassport.com/image/station/100x100/seriesplus.png">Séries Plus</channel>
-    <channel lang="en" xmltv_id="ShowcaseCanada.ca" site_id="62" logo="https://cdn.tvpassport.com/image/station/100x100/showcasecanada.png">Showcase Canada</channel>
-    <channel lang="en" xmltv_id="SilverScreenClassics.ca" site_id="2115" logo="https://cdn.tvpassport.com/image/station/100x100/silverscreen.png">Silver Screen Classics</channel>
-    <channel lang="en" xmltv_id="Slice.ca" site_id="60" logo="https://cdn.tvpassport.com/image/station/100x100/slice.png">Slice</channel>
-    <channel lang="en" xmltv_id="SmithsonianChannelCanada.us" site_id="3909" logo="https://cdn.tvpassport.com/image/station/100x100/smithsonian.png">Smithsonian Channel Canada</channel>
-    <channel lang="en" xmltv_id="SportsNet360.ca" site_id="336" logo="https://cdn.tvpassport.com/image/station/100x100/sn360.png">SportsNet 360</channel>
-    <channel lang="en" xmltv_id="SportsNetCanucks.ca" site_id="69200" logo="https://cdn.tvpassport.com/image/station/100x100/sportsnet.png">SportsNet Canucks</channel>
-    <channel lang="en" xmltv_id="SportsNetEast.ca" site_id="70394" logo="https://cdn.tvpassport.com/image/station/100x100/sportsneteast.png">SportsNet East</channel>
-    <channel lang="en" xmltv_id="SportsNetFlames.ca" site_id="69207" logo="https://cdn.tvpassport.com/image/station/100x100/sportsnet.png">SportsNet Flames</channel>
-    <channel lang="en" xmltv_id="SportsNetOilers.ca" site_id="69204" logo="https://cdn.tvpassport.com/image/station/100x100/sportsnet.png">SportsNet Oilers</channel>
-    <channel lang="en" xmltv_id="SportsNetOne.ca" site_id="68859" logo="https://cdn.tvpassport.com/image/station/100x100/sportsnetone.png">SportsNet One</channel>
-    <channel lang="en" xmltv_id="SportsNetOntario.ca" site_id="254" logo="https://cdn.tvpassport.com/image/station/100x100/sportsnetontario.png">SportsNet Ontario</channel>
-    <channel lang="en" xmltv_id="SportsNetOntarioOttawa.ca" site_id="299" logo="https://cdn.tvpassport.com/image/station/100x100/sportsnetontario.png">SportsNet Ontario Ottawa</channel>
-    <channel lang="en" xmltv_id="SportsNetOntarioToronto.ca" site_id="300" logo="https://cdn.tvpassport.com/image/station/100x100/sportsnetontario.png">SportsNet Ontario Toronto</channel>
-    <channel lang="en" xmltv_id="SportsNetPacific.ca" site_id="70402" logo="https://cdn.tvpassport.com/image/station/100x100/sportsnetpacific.png">SportsNet Pacific</channel>
-    <channel lang="en" xmltv_id="SportsNetWest.ca" site_id="70398" logo="https://cdn.tvpassport.com/image/station/100x100/sportsnetwest.png">SportsNet West</channel>
-    <channel lang="en" xmltv_id="SportsNetWorld.ca" site_id="57735" logo="https://cdn.tvpassport.com/image/station/100x100/sportsnetworld.png">SportsNet World</channel>
-    <channel lang="en" xmltv_id="SportsmanChannelCanada.us" site_id="32992" logo="https://cdn.tvpassport.com/image/station/100x100/sportsman-can.png">Sportsman Channel Canada</channel>
-    <channel lang="en" xmltv_id="Starz1East.ca" site_id="49338" logo="https://cdn.tvpassport.com/image/station/100x100/starz1.png">Starz 1 East</channel>
-    <channel lang="en" xmltv_id="Starz1West.ca" site_id="59984" logo="https://cdn.tvpassport.com/image/station/100x100/starz1.png">Starz 1 West</channel>
-    <channel lang="en" xmltv_id="Starz2East.ca" site_id="77045" logo="https://cdn.tvpassport.com/image/station/100x100/starz2.png">Starz 2 East</channel>
-    <channel lang="en" xmltv_id="Starz2West.ca" site_id="82448" logo="https://cdn.tvpassport.com/image/station/100x100/starz2.png">Starz 2 West</channel>
-    <channel lang="en" xmltv_id="StingrayAdultAlternative.ca" site_id="2770" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Adult Alternative</channel>
-    <channel lang="en" xmltv_id="StingrayAllDayParty.ca" site_id="2786" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray All Day Party!</channel>
-    <channel lang="en" xmltv_id="StingrayAltCountryAmericana.ca" site_id="18848" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Alt Country Americana</channel>
-    <channel lang="en" xmltv_id="StingrayAltRockClassics.ca" site_id="18842" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Alt Rock Classics</channel>
-    <channel lang="en" xmltv_id="StingrayAlternative.ca" site_id="2885" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Alternative</channel>
-    <channel lang="en" xmltv_id="StingrayAroundtheWorld.ca" site_id="2808" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Around the World</channel>
-    <channel lang="en" xmltv_id="StingrayBaroque.ca" site_id="2772" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Baroque</channel>
-    <channel lang="en" xmltv_id="StingrayBeautifulInstrumentals.ca" site_id="3430" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Beautiful Instrumentals</channel>
-    <channel lang="en" xmltv_id="StingrayBigBand.ca" site_id="2892" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Big Band</channel>
-    <channel lang="en" xmltv_id="StingrayBluegrass.ca" site_id="19523" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Bluegrass</channel>
-    <channel lang="en" xmltv_id="StingrayBroadway.ca" site_id="19050" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Broadway</channel>
-    <channel lang="en" xmltv_id="StingrayCMT.ca" site_id="2778" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray CMT</channel>
-    <channel lang="en" xmltv_id="StingrayCeltic.ca" site_id="2898" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Celtic</channel>
-    <channel lang="en" xmltv_id="StingrayChamberMusic.ca" site_id="2775" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Chamber Music</channel>
-    <channel lang="en" xmltv_id="StingrayChillLounge.ca" site_id="2771" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Chill Lounge</channel>
-    <channel lang="en" xmltv_id="StingrayChristianPopRock.ca" site_id="2899" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Christian Pop &amp; Rock</channel>
-    <channel lang="en" xmltv_id="StingrayClassicMastersGrandsclassiques.ca" site_id="5979" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Classic Masters / Grands classiques</channel>
-    <channel lang="en" xmltv_id="StingrayClassicRB.ca" site_id="19047" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Classic R&amp;B</channel>
-    <channel lang="en" xmltv_id="StingrayClassicRock.ca" site_id="2785" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Classic Rock</channel>
-    <channel lang="en" xmltv_id="StingrayClassica.ca" site_id="32619" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Classica</channel>
-    <channel lang="en" xmltv_id="StingrayCountry.ca" site_id="35064" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Country</channel>
-    <channel lang="en" xmltv_id="StingrayCountryClassics.ca" site_id="2779" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Country Classics</channel>
-    <channel lang="en" xmltv_id="StingrayDanceClubbin.ca" site_id="2780" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Dance Clubbin&apos;</channel>
-    <channel lang="en" xmltv_id="StingrayEasyListening.ca" site_id="2886" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Easy Listening</channel>
-    <channel lang="en" xmltv_id="StingrayEclecticElectronic.ca" site_id="2891" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Eclectic Electronic</channel>
-    <channel lang="en" xmltv_id="StingrayEnMarge.ca" site_id="2900" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray En Marge</channel>
-    <channel lang="en" xmltv_id="StingrayEverything80s.ca" site_id="19998" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Everything 80&apos;s</channel>
-    <channel lang="en" xmltv_id="StingrayEverything80s.ca" site_id="19998" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Everything &apos;80s</channel>
-    <channel lang="en" xmltv_id="StingrayFestival4K.ca" site_id="34379" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Festival 4K</channel>
-    <channel lang="en" xmltv_id="StingrayFlashback70s.ca" site_id="2769" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Flashback 70&apos;s</channel>
-    <channel lang="en" xmltv_id="StingrayFolkRoots.ca" site_id="2782" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Folk Roots</channel>
-    <channel lang="en" xmltv_id="StingrayFrancoCountry.ca" site_id="2784" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Franco Country</channel>
-    <channel lang="en" xmltv_id="StingrayFrancoEnergie.ca" site_id="2796" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Franco Energie</channel>
-    <channel lang="en" xmltv_id="StingrayFrancoFetes.ca" site_id="17046" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Franco Fêtes</channel>
-    <channel lang="en" xmltv_id="StingrayFrancoPop.ca" site_id="2902" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Franco Pop</channel>
-    <channel lang="en" xmltv_id="StingrayFrancoRelax.ca" site_id="2783" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Franco Relax</channel>
-    <channel lang="en" xmltv_id="StingrayFrancoRetro.ca" site_id="2901" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Franco Retro</channel>
-    <channel lang="en" xmltv_id="StingrayGospel.ca" site_id="18845" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Gospel</channel>
-    <channel lang="en" xmltv_id="StingrayGreatestHits.ca" site_id="6821" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Greatest Hits</channel>
-    <channel lang="en" xmltv_id="StingrayGrooveDiscoFunk.ca" site_id="19048" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Groove Disco &amp; Funk</channel>
-    <channel lang="en" xmltv_id="StingrayHeavyMetal.ca" site_id="10066" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Heavy Metal</channel>
-    <channel lang="en" xmltv_id="StingrayHipHop.ca" site_id="10067" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Hip Hop</channel>
-    <channel lang="en" xmltv_id="StingrayHitList.ca" site_id="2824" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Hit List</channel>
-    <channel lang="en" xmltv_id="StingrayHits.ca" site_id="33595" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Hits</channel>
-    <channel lang="en" xmltv_id="StingrayHolidayFavourites.ca" site_id="2897" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Holiday Favourites</channel>
-    <channel lang="en" xmltv_id="StingrayHotCountry.ca" site_id="5953" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Hot Country</channel>
-    <channel lang="en" xmltv_id="StingrayJammin.ca" site_id="18846" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Jammin&apos;</channel>
-    <channel lang="en" xmltv_id="StingrayJazzCafe.ca" site_id="2801" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Jazz Café</channel>
-    <channel lang="en" xmltv_id="StingrayJazzMastersGeantsduJazz.ca" site_id="2787" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Jazz Masters / Géants du Jazz</channel>
-    <channel lang="en" xmltv_id="StingrayJazzNowJazzdaujourdhui.ca" site_id="2788" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Jazz Now / Jazz d&apos;aujourd&apos;hui</channel>
-    <channel lang="en" xmltv_id="StingrayJuicebox.ca" site_id="1160" logo="https://cdn.tvpassport.com/image/station/100x100/stingray-juicebox.png">Stingray Juicebox</channel>
-    <channel lang="en" xmltv_id="StingrayJukeboxOldies.ca" site_id="2800" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Jukebox Oldies</channel>
-    <channel lang="en" xmltv_id="StingrayKidsStuff.ca" site_id="14196" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Kids Stuff</channel>
-    <channel lang="en" xmltv_id="StingrayLatinoTropical.ca" site_id="2894" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Latino Tropical</channel>
-    <channel lang="en" xmltv_id="StingrayLatinoUrbana.ca" site_id="18847" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Latino Urbana</channel>
-    <channel lang="en" xmltv_id="StingrayLePalmares.ca" site_id="3429" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Le Palmarès</channel>
-    <channel lang="en" xmltv_id="StingrayLoud.ca" site_id="1162" logo="https://cdn.tvpassport.com/image/station/100x100/stingray-loud.png">Stingray Loud</channel>
-    <channel lang="en" xmltv_id="StingrayMasterworks.ca" site_id="2777" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Masterworks</channel>
-    <channel lang="en" xmltv_id="StingrayMaximumParty.ca" site_id="18843" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Maximum Party</channel>
-    <channel lang="en" xmltv_id="StingrayMemories.ca" site_id="2773" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Memories</channel>
-    <channel lang="en" xmltv_id="StingrayMoussesmusique.ca" site_id="2789" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Mousses musique</channel>
-    <channel lang="en" xmltv_id="StingrayMusiqueBoutchoux.ca" site_id="2790" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Musique Boutchoux</channel>
-    <channel lang="en" xmltv_id="StingrayNature.ca" site_id="2791" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Nature</channel>
-    <channel lang="en" xmltv_id="StingrayNaturescape.ca" site_id="16122" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Naturescape</channel>
-    <channel lang="en" xmltv_id="StingrayNoFences.ca" site_id="18841" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray No Fences</channel>
-    <channel lang="en" xmltv_id="StingrayNostalgie.ca" site_id="2792" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Nostalgie</channel>
-    <channel lang="en" xmltv_id="StingrayNothinBut90s.ca" site_id="2887" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Nothin&apos; But 90s</channel>
-    <channel lang="en" xmltv_id="StingrayNow4K.ca" site_id="33597" logo="https://cdn.tvpassport.com/image/station/100x100/stingray-now4k.png">Stingray Now 4K</channel>
-    <channel lang="en" xmltv_id="StingrayOperaPlus.ca" site_id="2896" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Opera Plus</channel>
-    <channel lang="en" xmltv_id="StingrayOsheaga.ca" site_id="9297" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Osheaga</channel>
-    <channel lang="en" xmltv_id="StingrayPopAdult.ca" site_id="2794" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Pop Adult</channel>
-    <channel lang="en" xmltv_id="StingrayPopularClassicalClassiquepopulaire.ca" site_id="2795" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Popular Classical / Classique populaire</channel>
-    <channel lang="en" xmltv_id="StingrayPowerHits.ca" site_id="2781" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Power Hits</channel>
-    <channel lang="en" xmltv_id="StingrayRememberthe80s.ca" site_id="2804" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Remember the 80s</channel>
-    <channel lang="en" xmltv_id="StingrayRetro.ca" site_id="2116" logo="https://cdn.tvpassport.com/image/station/100x100/stingray-retro.png">Stingray Retro</channel>
-    <channel lang="en" xmltv_id="StingrayRetroLatino.ca" site_id="14198" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Retro Latino</channel>
-    <channel lang="en" xmltv_id="StingrayRiddim.ca" site_id="2797" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Riddim</channel>
-    <channel lang="en" xmltv_id="StingrayRock.ca" site_id="2799" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Rock</channel>
-    <channel lang="en" xmltv_id="StingrayRockenEspanol.ca" site_id="19525" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Rock en Español</channel>
-    <channel lang="en" xmltv_id="StingrayRomanceLatino.ca" site_id="19049" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Romance Latino</channel>
-    <channel lang="en" xmltv_id="StingraySmoothJazz.ca" site_id="14232" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Smooth Jazz</channel>
-    <channel lang="en" xmltv_id="StingraySmoothJazzChristmas.ca" site_id="5954" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Smooth Jazz Christmas</channel>
-    <channel lang="en" xmltv_id="StingraySoulStorm.ca" site_id="18840" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Soul Storm</channel>
-    <channel lang="en" xmltv_id="StingraySoulnRB.ca" site_id="2890" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Souln R&amp;B</channel>
-    <channel lang="en" xmltv_id="StingraySouvenirs.ca" site_id="2802" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Souvenirs</channel>
-    <channel lang="en" xmltv_id="StingraySwinginStandards.ca" site_id="2893" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Swingin&apos; Standards</channel>
-    <channel lang="en" xmltv_id="StingrayTheBeat.ca" site_id="2807" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray The Beat</channel>
-    <channel lang="en" xmltv_id="StingrayTheBlues.ca" site_id="2774" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray The Blues</channel>
-    <channel lang="en" xmltv_id="StingrayTheEdge.ca" site_id="2805" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray The Edge</channel>
-    <channel lang="en" xmltv_id="StingrayTheSpa.ca" site_id="2895" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray The Spa</channel>
-    <channel lang="en" xmltv_id="StingrayTodaysLatinPop.ca" site_id="10069" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Today&apos;s Latin Pop</channel>
-    <channel lang="en" xmltv_id="StingrayTreehouse.ca" site_id="2806" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Treehouse</channel>
-    <channel lang="en" xmltv_id="StingrayUrbanBeat.ca" site_id="2889" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Urban Beat</channel>
-    <channel lang="en" xmltv_id="StingrayVibe.ca" site_id="1161" logo="https://cdn.tvpassport.com/image/station/100x100/stingray-vibe.png">Stingray Vibe</channel>
-    <channel lang="en" xmltv_id="StingrayY2K.ca" site_id="19524" logo="https://cdn.tvpassport.com/image/station/100x100/stingray.png">Stingray Y2K</channel>
-    <channel lang="en" xmltv_id="SuperChannelFuse.ca" site_id="4833" logo="https://cdn.tvpassport.com/image/station/100x100/superchannel-fuse.png">Super Channel Fuse</channel>
-    <channel lang="en" xmltv_id="SuperChannelHeartHome.ca" site_id="4834" logo="https://cdn.tvpassport.com/image/station/100x100/superchannel-heart.png">Super Channel Heart &amp; Home</channel>
-    <channel lang="en" xmltv_id="SuperChannelVault.ca" site_id="4835" logo="https://cdn.tvpassport.com/image/station/100x100/superchannel-vault.png">Super Channel Vault</channel>
-    <channel lang="en" xmltv_id="SuperEcran1.ca" site_id="57" logo="https://cdn.tvpassport.com/image/station/100x100/superecran.png">Super Écran 1</channel>
-    <channel lang="en" xmltv_id="SuperEcran2.ca" site_id="362" logo="https://cdn.tvpassport.com/image/station/100x100/superecran.png">Super Écran 2</channel>
-    <channel lang="en" xmltv_id="SuperEcran3.ca" site_id="410" logo="https://cdn.tvpassport.com/image/station/100x100/superecran.png">Super Écran 3</channel>
-    <channel lang="en" xmltv_id="SuperEcran4.ca" site_id="411" logo="https://cdn.tvpassport.com/image/station/100x100/superecran.png">Super Écran 4</channel>
-    <channel lang="en" xmltv_id="TCMCanada.us" site_id="2847" logo="https://cdn.tvpassport.com/image/station/100x100/tcm.png">TCM Canada</channel>
-    <channel lang="en" xmltv_id="TFCCanada.ph" site_id="9604" logo="https://cdn.tvpassport.com/image/station/100x100/filipinochannel.png">TFC Canada</channel>
-    <channel lang="en" xmltv_id="TFO.ca" site_id="10" logo="https://cdn.tvpassport.com/image/station/100x100/tfo.png">TFO</channel>
-    <channel lang="en" xmltv_id="TLCCanada.us" site_id="1204" logo="https://cdn.tvpassport.com/image/station/100x100/tlc.png">TLC Canada</channel>
-    <channel lang="en" xmltv_id="TLNenEspanol.ca" site_id="5580" logo="https://cdn.tvpassport.com/image/station/100x100/univision.png">TLN en Espanol</channel>
-    <channel lang="en" xmltv_id="TPlusE.ca" site_id="476" logo="https://cdn.tvpassport.com/image/station/100x100/tandetv.png">T+E</channel>
-	  <channel lang="en" xmltv_id="TSN1.ca" site_id="11182" logo="https://cdn.tvpassport.com/image/station/100x100/tsn1-2018.png">TSN1</channel>
-    <channel lang="en" xmltv_id="TSN2.ca" site_id="18990" logo="https://cdn.tvpassport.com/image/station/100x100/tsn2-2018.png">TSN2</channel>
-    <channel lang="en" xmltv_id="TSN3.ca" site_id="90119" logo="https://cdn.tvpassport.com/image/station/100x100/tsn3-2018.png">TSN3</channel>
-    <channel lang="en" xmltv_id="TSN4K.ca" site_id="19467" logo="https://cdn.tvpassport.com/image/station/100x100/tsn1-2018.png">TSN 4K</channel>
-    <channel lang="en" xmltv_id="TSN4KLeafs.ca" site_id="31605" logo="https://cdn.tvpassport.com/image/station/100x100/tsn1-2018.png">TSN 4K Leafs</channel>
-    <channel lang="en" xmltv_id="TSN4KSenators.ca" site_id="31606" logo="https://cdn.tvpassport.com/image/station/100x100/tsn1-2018.png">TSN 4K Senators</channel>
-    <channel lang="en" xmltv_id="TSN4.ca" site_id="90122" logo="https://cdn.tvpassport.com/image/station/100x100/tsn4-2018.png">TSN4</channel>
-    <channel lang="en" xmltv_id="TSN5.ca" site_id="90125" logo="https://cdn.tvpassport.com/image/station/100x100/tsn5-2018.png">TSN5</channel>
-    <channel lang="en" xmltv_id="TV5QuebecCanadaEast.ca" site_id="23" logo="https://cdn.tvpassport.com/image/station/100x100/tv5.png">TV5 Québec Canada East</channel>
-    <channel lang="en" xmltv_id="TV5QuebecCanadaWest.ca" site_id="14309" logo="https://cdn.tvpassport.com/image/station/100x100/tv5.png">TV5 Québec Canada West</channel>
-    <channel lang="en" xmltv_id="TVASports2.ca" site_id="13777" logo="https://cdn.tvpassport.com/image/station/100x100/tvasports.png">TVA Sports 2</channel>
-    <channel lang="en" xmltv_id="TVASports3.ca" site_id="14946" logo="https://cdn.tvpassport.com/image/station/100x100/tvasports.png">TVA Sports 3</channel>
-    <channel lang="en" xmltv_id="TVASports.ca" site_id="9823" logo="https://cdn.tvpassport.com/image/station/100x100/tvasports.png">TVA Sports</channel>
-    <channel lang="en" xmltv_id="TVO.ca" site_id="18" logo="https://cdn.tvpassport.com/image/station/100x100/tvo_2017.png">TVO</channel>
-    <channel lang="en" xmltv_id="Talentvision.ca" site_id="365" logo="https://cdn.tvpassport.com/image/station/100x100/talentvision.png">Talentvision</channel>
-    <channel lang="en" xmltv_id="TamilVisionTV.ca" site_id="2869" logo="https://cdn.tvpassport.com/image/station/100x100/tamilvision.png">Tamil Vision TV</channel>
-    <channel lang="en" xmltv_id="TeleNinos.ca" site_id="9972">TeleNiños</channel>
-    <channel lang="en" xmltv_id="TeleToonEast.ca" site_id="162" logo="https://cdn.tvpassport.com/image/station/100x100/teletoon.png">TéléToon East</channel>
-    <channel lang="en" xmltv_id="TeleToonWest.ca" site_id="1020" logo="https://cdn.tvpassport.com/image/station/100x100/teletoon.png">TéléToon West</channel>
+    <channel lang="en" xmltv_id="SaisonsCanada.ca" site_id="20046">Saisons Canada</channel>
+    <channel lang="en" xmltv_id="SportsmanChannelCanada.us" site_id="32992">Sportsman Channel Canada</channel>
+    <channel lang="en" xmltv_id="SportsNetCanucks.ca" site_id="69200">SportsNet Canucks</channel>
+    <channel lang="en" xmltv_id="SportsNetEast.ca" site_id="70394">SportsNet East</channel>
+    <channel lang="en" xmltv_id="SportsNetFlames.ca" site_id="69207">SportsNet Flames</channel>
+    <channel lang="en" xmltv_id="SportsNetOilers.ca" site_id="69204">SportsNet Oilers</channel>
+    <channel lang="en" xmltv_id="SportsNetOne.ca" site_id="68859">SportsNet One</channel>
+    <channel lang="en" xmltv_id="SportsNetPacific.ca" site_id="70402">SportsNet Pacific</channel>
+    <channel lang="en" xmltv_id="SportsNetWest.ca" site_id="70398">SportsNet West</channel>
+    <channel lang="en" xmltv_id="SportsNetWorld.ca" site_id="57735">SportsNet World</channel>
+    <channel lang="en" xmltv_id="Starz1East.ca" site_id="49338">Starz 1 East</channel>
+    <channel lang="en" xmltv_id="Starz1West.ca" site_id="59984">Starz 1 West</channel>
+    <channel lang="en" xmltv_id="Starz2East.ca" site_id="77045">Starz 2 East</channel>
+    <channel lang="en" xmltv_id="Starz2West.ca" site_id="82448">Starz 2 West</channel>
+    <channel lang="en" xmltv_id="StingrayBroadway.ca" site_id="19050">Stingray Broadway</channel>
+    <channel lang="en" xmltv_id="StingrayClassica.ca" site_id="32619">Stingray Classica</channel>
+    <channel lang="en" xmltv_id="StingrayClassicRB.ca" site_id="19047">Stingray Classic R&amp;B</channel>
+    <channel lang="en" xmltv_id="StingrayCountry.ca" site_id="35064">Stingray Country</channel>
+    <channel lang="en" xmltv_id="StingrayFestival4K.ca" site_id="34379">Stingray Festival 4K</channel>
+    <channel lang="en" xmltv_id="StingrayFrancoFetes.ca" site_id="17046">Stingray Franco Fêtes</channel>
+    <channel lang="en" xmltv_id="StingrayGospel.ca" site_id="18845">Stingray Gospel</channel>
+    <channel lang="en" xmltv_id="StingrayNoFences.ca" site_id="18841">Stingray No Fences</channel>
+    <channel lang="en" xmltv_id="StingrayRomanceLatino.ca" site_id="19049">Stingray Romance Latino</channel>
+    <channel lang="en" xmltv_id="StingraySoulStorm.ca" site_id="18840">Stingray Soul Storm</channel>
     <channel lang="en" xmltv_id="Telebimbi.ca" site_id="19655">Telebimbi</channel>
-    <channel lang="en" xmltv_id="Telemagino.ca" site_id="8019" logo="https://cdn.tvpassport.com/image/station/100x100/telemagino.png">Télémagino</channel>
-    <channel lang="en" xmltv_id="TheRuralChannel.ca" site_id="11109" logo="https://cdn.tvpassport.com/image/station/100x100/ruralchannel.png">The Rural Channel</channel>
-    <channel lang="en" xmltv_id="TheWeatherNetwork.ca" site_id="419" logo="https://cdn.tvpassport.com/image/station/100x100/twn2015.png">The Weather Network</channel>
-    <channel lang="en" xmltv_id="TodaysShoppingChoice.ca" site_id="359" logo="https://cdn.tvpassport.com/image/station/100x100/shopping_channel.png">Today&apos;s Shopping Choice</channel>
-    <channel lang="en" xmltv_id="ToonAVision.ca" site_id="33925">ToonAVision</channel>
-    <channel lang="en" xmltv_id="TreehouseTV.ca" site_id="163" logo="https://cdn.tvpassport.com/image/station/100x100/treehousetv.png">Treehouse TV</channel>
-    <channel lang="en" xmltv_id="UnisEst.ca" site_id="13716" logo="https://cdn.tvpassport.com/image/station/100x100/unis.png">Unis Est</channel>
-    <channel lang="en" xmltv_id="UnisOuest.ca" site_id="14322" logo="https://cdn.tvpassport.com/image/station/100x100/unis.png">Unis Ouest</channel>
-    <channel lang="en" xmltv_id="UnivisionCanada.us" site_id="13625" logo="https://cdn.tvpassport.com/image/station/100x100/univision.png">Univisión Canada</channel>
-    <channel lang="en" xmltv_id="VRAKTV.ca" site_id="48" logo="https://cdn.tvpassport.com/image/station/100x100/vrak.png">VRAK TV</channel>
-    <channel lang="en" xmltv_id="VisionTV.ca" site_id="31607" logo="https://cdn.tvpassport.com/image/station/100x100/vision.png">VisionTV</channel>
-    <channel lang="en" xmltv_id="VisionTVEast.ca" site_id="17" logo="https://cdn.tvpassport.com/image/station/100x100/vision.png">VisionTV East</channel>
-    <channel lang="en" xmltv_id="VisionTVPacific.ca" site_id="31963" logo="https://cdn.tvpassport.com/image/station/100x100/vision.png">VisionTV Pacific</channel>
-    <channel lang="en" xmltv_id="WNetworkEast.ca" site_id="64" logo="https://cdn.tvpassport.com/image/station/100x100/w-copy.png">W Network East</channel>
-    <channel lang="en" xmltv_id="WNetworkWest.ca" site_id="1023" logo="https://cdn.tvpassport.com/image/station/100x100/w-copy.png">W Network West</channel>
-    <channel lang="en" xmltv_id="WWENetworkCanada.us" site_id="14230" logo="https://cdn.tvpassport.com/image/station/100x100/wwe-network.png">WWE Network Canada</channel>
+    <channel lang="en" xmltv_id="TheRuralChannel.ca" site_id="11109">The Rural Channel</channel>
+    <channel lang="en" xmltv_id="TSN1.ca" site_id="11182">TSN1</channel>
+    <channel lang="en" xmltv_id="TSN2.ca" site_id="18990">TSN2</channel>
+    <channel lang="en" xmltv_id="TSN3.ca" site_id="90119">TSN3</channel>
+    <channel lang="en" xmltv_id="TSN4.ca" site_id="90122">TSN4</channel>
+    <channel lang="en" xmltv_id="TSN4KLeafs.ca" site_id="31605">TSN 4K Leafs</channel>
+    <channel lang="en" xmltv_id="TSN5.ca" site_id="90125">TSN5</channel>
+    <channel lang="en" xmltv_id="TVASports3.ca" site_id="14946">TVA Sports 3</channel>
+    <channel lang="en" xmltv_id="VisionTV.ca" site_id="31607">VisionTV</channel>
     <channel lang="en" xmltv_id="WaterTelevisionNetwork.ca" site_id="35844">Water Television Network</channel>
-    <channel lang="en" xmltv_id="WildTV.ca" site_id="2976" logo="https://cdn.tvpassport.com/image/station/100x100/wildpursuit.png">Wild TV</channel>
-    <channel lang="en" xmltv_id="YTVEast.ca" site_id="15" logo="https://cdn.tvpassport.com/image/station/100x100/ytv2015.png">YTV East</channel>
-    <channel lang="en" xmltv_id="YTVWest.ca" site_id="1021" logo="https://cdn.tvpassport.com/image/station/100x100/ytv2015.png">YTV West</channel>
-    <channel lang="en" xmltv_id="Yoopa.ca" site_id="7616" logo="https://cdn.tvpassport.com/image/station/100x100/yoopa.png">Yoopa</channel>
-    <channel lang="en" xmltv_id="YourTVBelleville.ca" site_id="13745" logo="https://cdn.tvpassport.com/image/station/100x100/yourtv.png">YourTV Belleville</channel>
-    <channel lang="en" xmltv_id="YourTVBrockville.ca" site_id="3874" logo="https://cdn.tvpassport.com/image/station/100x100/yourtv.png">YourTV Brockville</channel>
-    <channel lang="en" xmltv_id="YourTVBurlington.ca" site_id="671" logo="https://cdn.tvpassport.com/image/station/100x100/yourtv.png">YourTV Burlington</channel>
-    <channel lang="en" xmltv_id="YourTVChathamKent.ca" site_id="405" logo="https://cdn.tvpassport.com/image/station/100x100/yourtv.png">YourTV Chatham-Kent</channel>
-    <channel lang="en" xmltv_id="YourTVCornwall.ca" site_id="388" logo="https://cdn.tvpassport.com/image/station/100x100/yourtv.png">YourTV Cornwall</channel>
-    <channel lang="en" xmltv_id="YourTVFergus.ca" site_id="3873" logo="https://cdn.tvpassport.com/image/station/100x100/yourtv.png">YourTV Fergus</channel>
-    <channel lang="en" xmltv_id="YourTVHalton.ca" site_id="9863" logo="https://cdn.tvpassport.com/image/station/100x100/yourtv.png">YourTV Halton</channel>
-    <channel lang="en" xmltv_id="YourTVHawkesbury.ca" site_id="304" logo="https://cdn.tvpassport.com/image/station/100x100/yourtv.png">YourTV Hawkesbury</channel>
-    <channel lang="en" xmltv_id="YourTVHuntsville.ca" site_id="19025" logo="https://cdn.tvpassport.com/image/station/100x100/yourtv.png">YourTV Huntsville</channel>
-    <channel lang="en" xmltv_id="YourTVKingston.ca" site_id="3875" logo="https://cdn.tvpassport.com/image/station/100x100/yourtv.png">YourTV Kingston</channel>
-    <channel lang="en" xmltv_id="YourTVMilton.ca" site_id="35589" logo="https://cdn.tvpassport.com/image/station/100x100/yourtv.png">YourTV Milton</channel>
-    <channel lang="en" xmltv_id="YourTVNiagaraFalls.ca" site_id="378" logo="https://cdn.tvpassport.com/image/station/100x100/yourtv.png">YourTV Niagara Falls</channel>
-    <channel lang="en" xmltv_id="YourTVNorthBay.ca" site_id="3877" logo="https://cdn.tvpassport.com/image/station/100x100/yourtv.png">YourTV North Bay</channel>
-    <channel lang="en" xmltv_id="YourTVPembroke.ca" site_id="3878" logo="https://cdn.tvpassport.com/image/station/100x100/yourtv.png">YourTV Pembroke</channel>
-    <channel lang="en" xmltv_id="YourTVPeterborough.ca" site_id="384" logo="https://cdn.tvpassport.com/image/station/100x100/yourtv.png">YourTV Peterborough</channel>
-    <channel lang="en" xmltv_id="YourTVSarnia.ca" site_id="5467" logo="https://cdn.tvpassport.com/image/station/100x100/yourtv.png">YourTV Sarnia</channel>
-    <channel lang="en" xmltv_id="YourTVSmithsFalls.ca" site_id="3880" logo="https://cdn.tvpassport.com/image/station/100x100/yourtv.png">YourTV Smiths Falls</channel>
-    <channel lang="en" xmltv_id="YourTVWindsor.ca" site_id="3845" logo="https://cdn.tvpassport.com/image/station/100x100/yourtv.png">YourTV Windsor</channel>
-    <channel lang="en" xmltv_id="Z.ca" site_id="344" logo="https://cdn.tvpassport.com/image/station/100x100/canal_z.png">Z</channel>
-    <channel lang="en" xmltv_id="ZeeTVCanada.in" site_id="13656" logo="https://cdn.tvpassport.com/image/station/100x100/zeetv_canada.png">Zee TV Canada</channel>
-    <channel lang="en" xmltv_id="Zeste.ca" site_id="7508" logo="https://cdn.tvpassport.com/image/station/100x100/zeste-2021.png">Zeste</channel>
+    <channel lang="en" xmltv_id="YourTVMilton.ca" site_id="35589">YourTV Milton</channel>
   </channels>
 </site>
