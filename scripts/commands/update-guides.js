@@ -24,9 +24,11 @@ async function generateGuides() {
   for (const key in grouped) {
     const filepath = `${PUBLIC_DIR}/guides/${key}.epg.xml`
     const criticalErrors = []
-    const channels = []
+    let channels = {}
     let programs = []
     for (const item of grouped[key]) {
+      if (channels[item.channel.xmltv_id]) continue
+
       if (item.error) {
         const error = {
           xmltv_id: item.channel.xmltv_id,
@@ -65,16 +67,18 @@ async function generateGuides() {
           continue
         }
 
-        channels.push({
+        channels[channel.id] = {
           xmltv_id: channel.id,
           name: channel.name,
           logo: channel.logo,
           site: item.channel.site
-        })
+        }
 
         programs = programs.concat(itemPrograms)
       }
     }
+
+    channels = Object.values(channels)
 
     logger.info(`Creating "${filepath}"...`)
     const output = grabber.convertToXMLTV({ channels, programs })

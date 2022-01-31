@@ -1,6 +1,6 @@
 const { db, file, parser, logger, date, api } = require('../core')
 const { program } = require('commander')
-const { shuffle } = require('lodash')
+const _ = require('lodash')
 
 const options = program
   .option(
@@ -97,13 +97,18 @@ async function saveToDatabase(items = []) {
   logger.info('Saving to the database...')
   await db.queue.load()
   await db.queue.reset()
-  const chunks = split(shuffle(items), options.maxClusters)
+  let queue = []
+  const chunks = split(_.shuffle(items), options.maxClusters)
   for (const [i, chunk] of chunks.entries()) {
     for (const item of chunk) {
       item.cluster_id = i + 1
-      await db.queue.insert(item)
+      queue.push(item)
     }
   }
+
+  queue = _.sortBy(queue, ['channel.xmltv_id', 'date'])
+
+  await db.queue.insert(queue)
 }
 
 function split(arr, n) {
