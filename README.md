@@ -1,7 +1,5 @@
 # EPG
 
-![auto-update](https://github.com/iptv-org/epg/actions/workflows/auto-update.yml/badge.svg)
-
 EPG (Electronic Program Guide) for thousands of TV channels collected from different sources.
 
 ## Usage
@@ -40,7 +38,7 @@ To load a program guide, all you need to do is copy the link to one or more of t
     <tr><td align="right">127</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/bi/dstv.com.epg.xml</code></td></tr>
     <tr><td align="left" valign="top" nowrap rowspan="2">🇨🇲 Cameroon</td><td align="right">240</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/cm/canalplus-afrique.com.epg.xml</code></td></tr>
     <tr><td align="right">127</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/cm/dstv.com.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>🇨🇦 Canada</td><td align="right">55</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/ca/tvtv.us.epg.xml</code></td></tr>
+    <tr><td align="left" valign="top" nowrap>🇨🇦 Canada</td><td align="right">62</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/ca/tvtv.us.epg.xml</code></td></tr>
     <tr><td align="left" valign="top" nowrap rowspan="2">🇨🇻 Cape Verde</td><td align="right">240</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/cv/canalplus-afrique.com.epg.xml</code></td></tr>
     <tr><td align="right">124</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/cv/dstv.com.epg.xml</code></td></tr>
     <tr><td align="left" valign="top" nowrap rowspan="2">🇨🇫 Central African Republic</td><td align="right">240</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/cf/canalplus-afrique.com.epg.xml</code></td></tr>
@@ -176,93 +174,14 @@ To load a program guide, all you need to do is copy the link to one or more of t
     <tr><td align="left" valign="top" nowrap>🇺🇬 Uganda</td><td align="right">146</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/ug/dstv.com.epg.xml</code></td></tr>
     <tr><td align="left" valign="top" nowrap rowspan="2">🇬🇧 United Kingdom</td><td align="right">190</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/uk/sky.com.epg.xml</code></td></tr>
     <tr><td align="right">97</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/uk/ontvtonight.com.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap rowspan="3">🇺🇸 United States</td><td align="right">450</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="right">376</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us/directv.com.epg.xml</code></td></tr>
-    <tr><td align="right">15</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us/gatotv.com.epg.xml</code></td></tr>
+    <tr><td align="left" valign="top" nowrap rowspan="3">🇺🇸 United States</td><td align="right">1299</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us/tvtv.us.epg.xml</code></td></tr>
+    <tr><td align="right">410</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us/directv.com.epg.xml</code></td></tr>
+    <tr><td align="right">22</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us/gatotv.com.epg.xml</code></td></tr>
     <tr><td align="left" valign="top" nowrap>🇺🇾 Uruguay</td><td align="right">30</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/uy/gatotv.com.epg.xml</code></td></tr>
     <tr><td align="left" valign="top" nowrap>🇻🇪 Venezuela</td><td align="right">36</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/ve/gatotv.com.epg.xml</code></td></tr>
     <tr><td align="left" valign="top" nowrap rowspan="2">🇿🇲 Zambia</td><td align="right">135</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/zm/dstv.com.epg.xml</code></td></tr>
     <tr><td align="right">3</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/zm/znbc.co.zm.epg.xml</code></td></tr>
     <tr><td align="left" valign="top" nowrap>🇿🇼 Zimbabwe</td><td align="right">129</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/zw/dstv.com.epg.xml</code></td></tr>
-  </tbody>
-</table>
-
-### US States
-
-<!-- prettier-ignore -->
-<table>
-  <thead>
-    <tr><th align="left">State</th><th align="left">Channels</th><th align="left">EPG</th></tr>
-  </thead>
-  <tbody>
-    <tr><td align="left" valign="top" nowrap>Alabama</td><td align="right">61</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-al/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>Alaska</td><td align="right">6</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-ak/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>Arizona</td><td align="right">73</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-az/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>Arkansas</td><td align="right">25</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-ar/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>California</td><td align="right">529</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-ca/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>Colorado</td><td align="right">66</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-co/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>Connecticut</td><td align="right">16</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-ct/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>Delaware</td><td align="right">3</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-de/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>District Of Columbia</td><td align="right">9</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-dc/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>Florida</td><td align="right">134</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-fl/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>Georgia</td><td align="right">50</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-ga/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>Hawaii</td><td align="right">10</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-hi/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>Idaho</td><td align="right">30</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-id/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>Illinois</td><td align="right">54</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-il/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>Indiana</td><td align="right">51</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-in/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>Iowa</td><td align="right">39</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-ia/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>Kansas</td><td align="right">52</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-ks/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>Kentucky</td><td align="right">40</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-ky/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>Louisiana</td><td align="right">40</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-la/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>Maine</td><td align="right">14</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-me/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>Maryland</td><td align="right">13</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-md/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>Massachusetts</td><td align="right">16</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-ma/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>Michigan</td><td align="right">64</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-mi/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>Minnesota</td><td align="right">37</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-mn/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>Mississippi</td><td align="right">37</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-ms/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>Missouri</td><td align="right">73</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-mo/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>Montana</td><td align="right">29</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-mt/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>Nebraska</td><td align="right">26</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-ne/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>Nevada</td><td align="right">46</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-nv/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>New Hampshire</td><td align="right">8</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-nh/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>New Jersey</td><td align="right">13</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-nj/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>New Mexico</td><td align="right">40</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-nm/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>New York</td><td align="right">87</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-ny/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>North Carolina</td><td align="right">65</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-nc/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>North Dakota</td><td align="right">17</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-nd/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>Ohio</td><td align="right">92</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-oh/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>Oklahoma</td><td align="right">51</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-ok/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>Oregon</td><td align="right">35</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-or/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>Pennsylvania</td><td align="right">72</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-pa/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap rowspan="3">Puerto Rico</td><td align="right">7</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-pr/gatotv.com.epg.xml</code></td></tr>
-    <tr><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-pr/directv.com.epg.xml</code></td></tr>
-    <tr><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-pr/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>Rhode Island</td><td align="right">6</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-ri/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>South Carolina</td><td align="right">51</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-sc/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>South Dakota</td><td align="right">8</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-sd/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap rowspan="2">Tennessee</td><td align="right">78</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-tn/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="right">3</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-tn/directv.com.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>Texas</td><td align="right">186</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-tx/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>Utah</td><td align="right">23</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-ut/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>Vermont</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-vt/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>Virginia</td><td align="right">49</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-va/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>Washington</td><td align="right">34</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-wa/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>West Virginia</td><td align="right">19</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-wv/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>Wisconsin</td><td align="right">55</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-wi/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>Wyoming</td><td align="right">6</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-wy/tvtv.us.epg.xml</code></td></tr>
-  </tbody>
-</table>
-
-### Provinces of Canada
-
-<!-- prettier-ignore -->
-<table>
-  <thead>
-    <tr><th align="left">Province</th><th align="left">Channels</th><th align="left">EPG</th></tr>
-  </thead>
-  <tbody>
-    <tr><td align="left" valign="top" nowrap>British Columbia</td><td align="right">3</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/ca-bc/tvtv.us.epg.xml</code></td></tr>
-    <tr><td align="left" valign="top" nowrap>Quebec</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/ca-qc/tvtv.us.epg.xml</code></td></tr>
   </tbody>
 </table>
 
