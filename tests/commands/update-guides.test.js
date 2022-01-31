@@ -41,11 +41,16 @@ it('can create guides.log', () => {
   expect(output).toBe(expected)
 })
 
-it('can create errors.log', () => {
-  const output = content('tests/__data__/output/logs/errors.log')
-  const expected = content('tests/__data__/expected/logs/errors.log')
+it('can log errors', () => {
+  const output1 = content('tests/__data__/output/logs/errors/ru/yandex.ru.log')
+  const expected1 = content('tests/__data__/expected/logs/errors/ru/yandex.ru.log')
 
-  expect(output).toBe(expected)
+  expect(output1).toBe(expected1)
+
+  const output2 = content('tests/__data__/output/logs/errors/us/directv.com.log')
+  const expected2 = content('tests/__data__/expected/logs/errors/us/directv.com.log')
+
+  expect(output2).toBe(expected2)
 })
 
 function content(filepath) {
