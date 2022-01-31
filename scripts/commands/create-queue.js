@@ -48,7 +48,7 @@ async function createQueue() {
       if (!item.site || !item.site_id || !item.xmltv_id) continue
       for (const d of dates) {
         const dString = d.toJSON()
-        const key = `${item.site}:${item.site_id}:${dString}`
+        const key = `${item.site}:${item.site_id}:${item.lang}:${dString}`
         if (!queue[key]) {
           queue[key] = {
             channel: {
