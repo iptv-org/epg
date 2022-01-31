@@ -46,7 +46,7 @@ async function getGuides(programs = []) {
 }
 
 async function loadPrograms() {
-  logger.info('Loading programs from database...')
+  logger.info('Loading programs...')
   await db.programs.load()
   return await db.programs.find({})
 }
