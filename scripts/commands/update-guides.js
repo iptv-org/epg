@@ -5,7 +5,6 @@ const _ = require('lodash')
 const LOGS_DIR = process.env.LOGS_DIR || 'scripts/logs'
 const PUBLIC_DIR = process.env.PUBLIC_DIR || '.gh-pages'
 const GUIDES_PATH = `${LOGS_DIR}/guides.log`
-const ERRORS_PATH = `${LOGS_DIR}/errors.log`
 
 async function main() {
   await setUp()
@@ -40,9 +39,9 @@ async function generateGuides() {
           error: item.error
         }
         errors.push(error)
-        await logError(error)
       }
     }
+    await logErrors(key, errors)
 
     const programs = await loadProgramsForItems(items)
     let channels = Object.keys(_.groupBy(programs, 'channel'))
@@ -113,13 +112,16 @@ async function loadProgramsForItems(items = []) {
 async function setUp() {
   logger.info(`Creating '${GUIDES_PATH}'...`)
   await file.create(GUIDES_PATH)
-  await file.create(ERRORS_PATH)
+  await file.createDir(`${LOGS_DIR}/errors`)
 }
 
 async function logGuide(data) {
   await file.append(GUIDES_PATH, JSON.stringify(data) + '\r\n')
 }
 
-async function logError(data) {
-  await file.append(ERRORS_PATH, JSON.stringify(data) + '\r\n')
+async function logErrors(key, errors) {
+  if (!errors.length) return false
+  errors = errors.map(e => JSON.stringify(e)).join('\r\n')
+
+  await file.create(`${LOGS_DIR}/errors/${key}.log`, errors)
 }
