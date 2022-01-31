@@ -1,7 +1,7 @@
 // node ./scripts/commands/parse-channels.js --config=./sites/tvtv.us/tvtv.us.config.js --output=./sites/tvtv.us/tvtv.us_ca.channels.xml --set=country:ca
 // npx epg-grabber --config=sites/tvtv.us/tvtv.us.config.js --channels=sites/tvtv.us/tvtv.us_ca-nb.channels.xml --output=guide.xml --days=2
 
-const { parser, url, logo } = require('./tvtv.us.config.js')
+const { parser, url } = require('./tvtv.us.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -11,18 +11,13 @@ dayjs.extend(utc)
 const date = dayjs.utc('2022-01-17', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: '62670',
-  xmltv_id: 'AMITV.ca',
-  logo: 'https://cdn.tvpassport.com/image/station/100x100/src.png'
+  xmltv_id: 'AMITV.ca'
 }
 
 it('can generate valid url', () => {
   expect(url({ channel, date })).toBe(
     'https://www.tvtv.us/gn/d/v1.1/stations/62670/airings?startDateTime=2022-01-17T00:00:00Z&endDateTime=2022-01-18T00:00:00Z'
   )
-})
-
-it('can get logo url', () => {
-  expect(logo({ channel })).toBe('https://cdn.tvpassport.com/image/station/100x100/src.png')
 })
 
 it('can parse response', () => {
