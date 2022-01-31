@@ -8,13 +8,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - run: mkdir -p scripts/data
+      - run: curl -L -o scripts/data/channels.json https://iptv-org.github.io/api/channels.json
+      - run: curl -L -o scripts/data/countries.json https://iptv-org.github.io/api/countries.json
+      - run: curl -L -o scripts/data/subdivisions.json https://iptv-org.github.io/api/subdivisions.json
+      - uses: actions/upload-artifact@v2
+        with:
+          name: data
+          path: scripts/data
       - uses: actions/setup-node@v2
         if: ${{ !env.ACT }}
         with:
           node-version: '14'
           cache: 'npm'
       - run: npm install
-      - run: node scripts/commands/create-database.js
+      - run: node scripts/commands/create-queue.js --max-clusters=30000 --days=2
       - run: node scripts/commands/create-matrix.js
         id: create-matrix
       - uses: actions/upload-artifact@v2
@@ -29,9 +37,9 @@ jobs:
     continue-on-error: true
     strategy:
       fail-fast: false
-      matrix: ${{ fromJson(needs.setup.outputs.matrix) }}
-      # matrix:
-      #   cluster_id: [1]
+      # matrix: ${{ fromJson(needs.setup.outputs.matrix) }}
+      matrix:
+        cluster_id: [1]
     steps:
       - uses: actions/checkout@v2
       - uses: actions/download-artifact@v2
@@ -44,7 +52,7 @@ jobs:
         with:
           node-version: '14'
       - run: npm install
-      - run: NODE_OPTIONS=--insecure-http-parser node scripts/commands/load-cluster.js --days=2 --timeout=30000 --cluster-id=${{ matrix.cluster_id }}
+      - run: NODE_OPTIONS=--insecure-http-parser node scripts/commands/load-cluster.js --timeout=30000 --cluster-id=${{ matrix.cluster_id }}
       - uses: actions/upload-artifact@v2
         with:
           name: logs
@@ -59,11 +67,14 @@ jobs:
       - run: git config user.name 'iptv-bot[bot]'
       - run: git config user.email '84861620+iptv-bot[bot]@users.noreply.github.com'
       - run: git checkout -b ${{ steps.create-branch-name.outputs.branch_name }}
-      - run: curl -L -o scripts/data/codes.json https://iptv-org.github.io/epg/codes.json
       - uses: actions/download-artifact@v2
         with:
           name: database
           path: scripts/database
+      - uses: actions/download-artifact@v2
+        with:
+          name: data
+          path: scripts/data
       - uses: actions/download-artifact@v2
         with:
           name: logs
@@ -78,8 +89,8 @@ jobs:
         with:
           name: database
           path: scripts/database
-      - run: NODE_OPTIONS="--max-old-space-size=4096" node scripts/commands/update-api.js
       - run: NODE_OPTIONS="--max-old-space-size=4096" node scripts/commands/update-guides.js
+      - run: NODE_OPTIONS="--max-old-space-size=4096" node scripts/commands/update-api.js
       - uses: actions/upload-artifact@v2
         with:
           name: logs
