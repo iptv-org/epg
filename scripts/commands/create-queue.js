@@ -1,4 +1,4 @@
-const { db, file, parser, logger, date } = require('../core')
+const { db, file, parser, logger, date, api } = require('../core')
 const { program } = require('commander')
 const { shuffle } = require('lodash')
 
@@ -31,6 +31,7 @@ async function createQueue() {
 
   let queue = {}
 
+  await api.channels.load()
   const files = await file.list(CHANNELS_PATH)
   const utcDate = date.getUTC()
   const dates = Array.from({ length: options.days }, (_, i) => utcDate.add(i, 'd'))
@@ -46,6 +47,11 @@ async function createQueue() {
     const groupId = `${region}/${site}`
     for (const item of items) {
       if (!item.site || !item.site_id || !item.xmltv_id) continue
+      const channel = api.channels.find({ id: item.xmltv_id })
+      if (!channel) {
+        console.log(item.xmltv_id)
+        continue
+      }
       for (const d of dates) {
         const dString = d.toJSON()
         const key = `${item.site}:${item.site_id}:${item.lang}:${dString}`
