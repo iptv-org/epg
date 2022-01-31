@@ -18,6 +18,12 @@ jobs:
       - run: NODE_OPTIONS=--insecure-http-parser node scripts/commands/load-cluster.js --timeout=30000 --cluster-id=1
       - run: node scripts/commands/save-results.js
       - run: node scripts/commands/update-guides.js
+      - uses: tibdex/github-app-token@v1
+        if: ${{ !env.ACT }}
+        id: create-app-token
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
       - uses: JamesIves/github-pages-deploy-action@4.1.1
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
         with:
@@ -27,3 +33,4 @@ jobs:
           git-config-name: iptv-bot[bot]
           git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
           commit-message: '[Bot] Deploy to GitHub Pages'
+          clean: false
