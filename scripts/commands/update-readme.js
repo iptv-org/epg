@@ -1,7 +1,4 @@
-const { file, markdown, parser, logger } = require('../core')
-const provinces = require('../data/ca-provinces.json')
-const countries = require('../data/countries.json')
-const states = require('../data/us-states.json')
+const { file, markdown, parser, logger, api } = require('../core')
 const { program } = require('commander')
 const _ = require('lodash')
 
@@ -12,7 +9,14 @@ const options = program
   .parse(process.argv)
   .opts()
 
+const statuses = {
+  0: '🟢',
+  1: '🔴'
+}
+
 async function main() {
+  await api.countries.load()
+  await api.subdivisions.load()
   const records = await getLogRecords()
   await generateCountriesTable(records)
   await generateUSStatesTable(records)
@@ -27,21 +31,22 @@ async function generateCountriesTable(items = []) {
 
   let rows = []
   for (const item of items) {
-    const country = countries[item.code]
+    const country = api.countries.find({ code: item.code })
     if (!country) continue
 
     rows.push({
       flag: country.flag,
       name: country.name,
       channels: item.count,
-      epg: `<code>https://iptv-org.github.io/epg/guides/${item.group}.epg.xml</code>`
+      epg: `<code>https://iptv-org.github.io/epg/guides/${item.group}.epg.xml</code>`,
+      status: statuses[item.status]
     })
   }
 
   rows = _.orderBy(rows, ['name', 'channels'], ['asc', 'desc'])
   rows = _.groupBy(rows, 'name')
 
-  const table = markdown.createTable(rows, ['Country', 'Channels', 'EPG'])
+  const table = markdown.createTable(rows, ['Country', 'Channels', 'EPG', 'Status'])
 
   await file.create('./.readme/_countries.md', table)
 }
@@ -51,20 +56,22 @@ async function generateUSStatesTable(items = []) {
 
   let rows = []
   for (const item of items) {
-    const state = states[item.code]
+    if (!item.code.startsWith('US-')) continue
+    const state = api.subdivisions.find({ code: item.code })
     if (!state) continue
 
     rows.push({
       name: state.name,
       channels: item.count,
-      epg: `<code>https://iptv-org.github.io/epg/guides/${item.group}.epg.xml</code>`
+      epg: `<code>https://iptv-org.github.io/epg/guides/${item.group}.epg.xml</code>`,
+      status: statuses[item.status]
     })
   }
 
   rows = _.orderBy(rows, ['name', 'channels'], ['asc', 'desc'])
   rows = _.groupBy(rows, 'name')
 
-  const table = markdown.createTable(rows, ['State', 'Channels', 'EPG'])
+  const table = markdown.createTable(rows, ['State', 'Channels', 'EPG', 'Status'])
 
   await file.create('./.readme/_us-states.md', table)
 }
@@ -74,20 +81,22 @@ async function generateCanadaProvincesTable(items = []) {
 
   let rows = []
   for (const item of items) {
-    const province = provinces[item.code]
+    if (!item.code.startsWith('CA-')) continue
+    const province = api.subdivisions.find({ code: item.code })
     if (!province) continue
 
     rows.push({
       name: province.name,
       channels: item.count,
-      epg: `<code>https://iptv-org.github.io/epg/guides/${item.group}.epg.xml</code>`
+      epg: `<code>https://iptv-org.github.io/epg/guides/${item.group}.epg.xml</code>`,
+      status: statuses[item.status]
     })
   }
 
   rows = _.orderBy(rows, ['name', 'channels'], ['asc', 'desc'])
   rows = _.groupBy(rows, 'name')
 
-  const table = markdown.createTable(rows, ['Province', 'Channels', 'EPG'])
+  const table = markdown.createTable(rows, ['Province', 'Channels', 'EPG', 'Status'])
 
   await file.create('./.readme/_ca-provinces.md', table)
 }
@@ -101,13 +110,8 @@ async function updateReadme() {
 }
 
 async function getLogRecords() {
-  const logPath = `${LOGS_DIR}/update-guides.log`
+  const logPath = `${LOGS_DIR}/guides.log`
   const records = await parser.parseLogs(logPath)
-
-  if (!records.length) {
-    logger.error(`File "${logPath}" is empty`)
-    process.exit(1)
-  }
 
   return records.map(item => {
     const code = item.group.split('/')[0] || ''

@@ -6,17 +6,14 @@ beforeEach(() => {
   fs.rmdirSync('tests/__data__/output', { recursive: true })
   fs.mkdirSync('tests/__data__/output')
   fs.mkdirSync('tests/__data__/temp/database', { recursive: true })
-  fs.copyFileSync(
-    'tests/__data__/input/database/channels.db',
-    'tests/__data__/temp/database/channels.db'
-  )
+  fs.copyFileSync('tests/__data__/input/database/queue.db', 'tests/__data__/temp/database/queue.db')
   fs.copyFileSync(
     'tests/__data__/input/database/programs.db',
     'tests/__data__/temp/database/programs.db'
   )
 
   const stdout = execSync(
-    'DB_DIR=tests/__data__/temp/database PUBLIC_DIR=tests/__data__/output LOGS_DIR=tests/__data__/output/logs node scripts/commands/update-guides.js',
+    'DB_DIR=tests/__data__/temp/database DATA_DIR=tests/__data__/input/data PUBLIC_DIR=tests/__data__/output LOGS_DIR=tests/__data__/output/logs node scripts/commands/update-guides.js',
     { encoding: 'utf8' }
   )
 })
@@ -35,9 +32,28 @@ it('can generate /guides', () => {
   const expected2 = content('tests/__data__/expected/guides/zw/dstv.com.epg.xml')
 
   expect(output2).toBe(expected2)
+})
 
-  const output3 = content('tests/__data__/output/logs/update-guides.log')
-  const expected3 = content('tests/__data__/expected/logs/update-guides.log')
+it('can create guides.log', () => {
+  const output = content('tests/__data__/output/logs/guides.log')
+  const expected = content('tests/__data__/expected/logs/guides.log')
+
+  expect(output).toBe(expected)
+})
+
+it('can log errors', () => {
+  const output1 = content('tests/__data__/output/logs/errors/ru/yandex.ru.log')
+  const expected1 = content('tests/__data__/expected/logs/errors/ru/yandex.ru.log')
+
+  expect(output1).toBe(expected1)
+
+  const output2 = content('tests/__data__/output/logs/errors/us/directv.com.log')
+  const expected2 = content('tests/__data__/expected/logs/errors/us/directv.com.log')
+
+  expect(output2).toBe(expected2)
+
+  const output3 = content('tests/__data__/output/logs/errors/ge/magticom.ge.log')
+  const expected3 = content('tests/__data__/expected/logs/errors/ge/magticom.ge.log')
 
   expect(output3).toBe(expected3)
 })

@@ -4,9 +4,7 @@ const _ = require('lodash')
 const LOGS_DIR = process.env.LOGS_DIR || 'scripts/logs'
 
 async function main() {
-  const errorsLog = `${LOGS_DIR}/errors.log`
-  await file.create(errorsLog)
-  await db.channels.load()
+  await db.queue.load()
   await db.programs.load()
   await db.programs.reset()
   const files = await file.list(`${LOGS_DIR}/load-cluster/cluster_*.log`)
@@ -14,6 +12,9 @@ async function main() {
     logger.info(`Parsing "${filepath}"...`)
     const results = await parser.parseLogs(filepath)
     for (const result of results) {
+      const queue = await db.queue.find({ _id: result._qid }).limit(1)
+      if (!queue.length) continue
+      const item = queue[0]
       const programs = result.programs.map(program => {
         return {
           title: program.title,
@@ -26,29 +27,18 @@ async function main() {
           lang: program.lang,
           start: program.start,
           stop: program.stop,
-          site: result.channel.site,
-          _cid: result.channel._id
+          stop: program.stop,
+          site: item.channel.site,
+          _qid: result._qid
         }
       })
       await db.programs.insert(programs)
 
-      if (result.channel.logo) {
-        await db.channels.update(
-          { _id: result.channel._id },
-          { $set: { logo: result.channel.logo, programCount: result.programs.length } }
-        )
-      }
-
-      if (result.error) {
-        await file.append(
-          errorsLog,
-          JSON.stringify({ ...result.channel, date: result.date, error: result.error }) + '\n'
-        )
-      }
+      await db.queue.update({ _id: result._qid }, { $set: { error: result.error } })
     }
   }
 
-  await db.channels.compact()
+  await db.queue.compact()
 }
 
 main()

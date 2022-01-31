@@ -70,7 +70,7 @@ class Database {
 
 const db = {}
 
-db.channels = new Database(`${DB_DIR}/channels.db`)
+db.queue = new Database(`${DB_DIR}/queue.db`)
 db.programs = new Database(`${DB_DIR}/programs.db`)
 
 module.exports = db

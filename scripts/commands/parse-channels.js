@@ -1,5 +1,5 @@
 const { Command } = require('commander')
-const { db } = require('../core')
+const { db, logger } = require('../core')
 const path = require('path')
 const _ = require('lodash')
 const fs = require('fs')
@@ -46,7 +46,7 @@ async function main() {
 
   fs.writeFileSync(path.resolve(output), xml)
 
-  console.log(`File '${output}' successfully saved`)
+  logger.info(`File '${output}' successfully saved`)
 }
 
 main()
