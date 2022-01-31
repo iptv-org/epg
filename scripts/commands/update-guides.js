@@ -53,10 +53,10 @@ async function generateGuides() {
         if (!channel) return null
 
         return {
-          id: channel.id,
-          display_name: channel.name,
-          url: site,
-          icon: channel.logo
+          xmltv_id: channel.id,
+          name: channel.name,
+          logo: channel.logo,
+          site
         }
       })
       .filter(i => i)
