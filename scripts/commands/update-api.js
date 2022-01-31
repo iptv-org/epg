@@ -8,7 +8,7 @@ async function main() {
   await loadQueue()
 
   const programs = await loadPrograms()
-  const guides = await loadGuides(programs)
+  const guides = await getGuides(programs)
 
   await saveToGuidesJson(guides)
   await saveToProgramsJson(programs)
@@ -22,9 +22,7 @@ async function loadQueue() {
   await db.queue.load()
 }
 
-async function loadGuides(programs = []) {
-  logger.info('Loading guides from database...')
-
+async function getGuides(programs = []) {
   programs = _.groupBy(programs, i => i._qid)
 
   const queue = await db.queue.find({}).sort({ xmltv_id: 1 })
