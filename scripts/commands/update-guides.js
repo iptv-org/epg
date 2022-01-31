@@ -79,6 +79,8 @@ async function generateGuides() {
     }
 
     channels = Object.values(channels)
+    channels = _.sortBy(channels, 'xmltv_id')
+    programs = _.sortBy(programs, ['channel', 'start'])
 
     logger.info(`Creating "${filepath}"...`)
     const output = grabber.convertToXMLTV({ channels, programs })
