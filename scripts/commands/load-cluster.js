@@ -26,7 +26,8 @@ async function main() {
   logger.info(`Creating '${CLUSTER_PATH}'...`)
   await file.create(CLUSTER_PATH)
   await db.queue.load()
-  const items = await db.queue.find({ cluster_id: options.clusterId })
+  let items = await db.queue.find({ cluster_id: options.clusterId })
+  items = _.orderBy(items, [i => i.channel.xmltv_id.toLowerCase(), 'date'])
   const total = items.length
 
   logger.info('Loading...')
