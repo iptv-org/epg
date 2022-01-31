@@ -24,6 +24,7 @@ async function generateGuides() {
   await api.channels.load()
 
   for (const key in grouped) {
+    const [__, site] = key.split('/')
     const filepath = `${PUBLIC_DIR}/guides/${key}.epg.xml`
     let items = grouped[key]
 
@@ -44,21 +45,23 @@ async function generateGuides() {
     }
 
     const programs = await loadProgramsForItems(items)
+    let channels = Object.keys(_.groupBy(programs, 'channel'))
 
     logger.info(`Creating "${filepath}"...`)
-    const channels = items
-      .map(item => {
-        const channel = api.channels.find({ id: item.channel.xmltv_id })
+    channels = channels
+      .map(id => {
+        const channel = api.channels.find({ id })
         if (!channel) return null
 
         return {
           id: channel.id,
           display_name: channel.name,
-          url: item.channel.site,
+          url: site,
           icon: channel.logo
         }
       })
       .filter(i => i)
+
     const output = grabber.convertToXMLTV({ channels, programs })
     await file.create(filepath, output)
 
