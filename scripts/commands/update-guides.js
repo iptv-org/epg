@@ -16,19 +16,17 @@ main()
 async function generateGuides() {
   logger.info(`Generating guides/...`)
 
-  const grouped = groupByGroup(await loadQueue())
-
   logger.info('Loading "database/programs.db"...')
   await db.programs.load()
   await api.channels.load()
 
+  const grouped = groupByGroup(await loadQueue())
   for (const key in grouped) {
-    const [__, site] = key.split('/')
     const filepath = `${PUBLIC_DIR}/guides/${key}.epg.xml`
-    let items = grouped[key]
-
-    const errors = []
-    for (const item of items) {
+    const criticalErrors = []
+    const channels = []
+    let programs = []
+    for (const item of grouped[key]) {
       if (item.error) {
         const error = {
           xmltv_id: item.channel.xmltv_id,
@@ -38,34 +36,52 @@ async function generateGuides() {
           date: item.date,
           error: item.error
         }
-        errors.push(error)
-      }
-    }
-    await logErrors(key, errors)
+        criticalErrors.push(error)
+        await logError(key, error)
+      } else {
+        const itemPrograms = await loadProgramsForItem(item)
+        if (!itemPrograms.length) {
+          await logError(key, {
+            xmltv_id: item.channel.xmltv_id,
+            site: item.channel.site,
+            site_id: item.channel.site_id,
+            lang: item.channel.lang,
+            date: item.date,
+            error: 'Programs not found'
+          })
+          continue
+        }
 
-    const programs = await loadProgramsForItems(items)
-    let channels = Object.keys(_.groupBy(programs, 'channel'))
+        const channel = api.channels.find({ id: item.channel.xmltv_id })
+        if (!channel) {
+          await logError(key, {
+            xmltv_id: item.channel.xmltv_id,
+            site: item.channel.site,
+            site_id: item.channel.site_id,
+            lang: item.channel.lang,
+            date: item.date,
+            error: 'The channel has the wrong xmltv_id'
+          })
+          continue
+        }
 
-    logger.info(`Creating "${filepath}"...`)
-    channels = channels
-      .map(id => {
-        const channel = api.channels.find({ id })
-        if (!channel) return null
-
-        return {
+        channels.push({
           xmltv_id: channel.id,
           name: channel.name,
           logo: channel.logo,
-          site
-        }
-      })
-      .filter(i => i)
+          site: item.channel.site
+        })
 
+        programs = programs.concat(itemPrograms)
+      }
+    }
+
+    logger.info(`Creating "${filepath}"...`)
     const output = grabber.convertToXMLTV({ channels, programs })
     await file.create(filepath, output)
 
     let status = 0
-    if (errors.length > 0 || !channels.length) {
+    if (criticalErrors.length > 0 || !channels.length) {
       status = 1
     }
 
@@ -103,10 +119,8 @@ async function loadQueue() {
   return await db.queue.find({}).sort({ xmltv_id: 1 })
 }
 
-async function loadProgramsForItems(items = []) {
-  const qids = items.map(i => i._id)
-
-  return await db.programs.find({ _qid: { $in: qids } }).sort({ channel: 1, start: 1 })
+async function loadProgramsForItem(item) {
+  return await db.programs.find({ _qid: item._id }).sort({ channel: 1, start: 1 })
 }
 
 async function setUp() {
@@ -119,9 +133,11 @@ async function logGuide(data) {
   await file.append(GUIDES_PATH, JSON.stringify(data) + '\r\n')
 }
 
-async function logErrors(key, errors) {
-  if (!errors.length) return false
-  errors = errors.map(e => JSON.stringify(e)).join('\r\n')
+async function logError(key, data) {
+  const filepath = `${LOGS_DIR}/errors/${key}.log`
+  if (!(await file.exists(filepath))) {
+    await file.create(filepath)
+  }
 
-  await file.create(`${LOGS_DIR}/errors/${key}.log`, errors)
+  await file.append(filepath, JSON.stringify(data) + '\r\n')
 }

@@ -56,7 +56,7 @@ async function createQueue() {
           site_id: item.site_id,
           lang: item.lang,
           date: undefined,
-          error: 'Wrong channel ID'
+          error: 'The channel has the wrong xmltv_id'
         })
         continue
       }

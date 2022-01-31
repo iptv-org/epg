@@ -35,7 +35,7 @@ it('can create queue', () => {
   )
 })
 
-it('can create errors log', () => {
+it('can log errors', () => {
   let output = content('tests/__data__/output/logs/errors/ca-nl/example.com.log')
   let expected = content('tests/__data__/expected/logs/errors/ca-nl/example.com.log')
 

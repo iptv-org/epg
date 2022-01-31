@@ -51,6 +51,11 @@ it('can log errors', () => {
   const expected2 = content('tests/__data__/expected/logs/errors/us/directv.com.log')
 
   expect(output2).toBe(expected2)
+
+  const output3 = content('tests/__data__/output/logs/errors/ge/magticom.ge.log')
+  const expected3 = content('tests/__data__/expected/logs/errors/ge/magticom.ge.log')
+
+  expect(output3).toBe(expected3)
 })
 
 function content(filepath) {
