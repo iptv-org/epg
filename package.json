@@ -2,7 +2,7 @@
   "name": "epg",
   "scripts": {
     "update-codes": "node scripts/update-codes.js",
-    "act": "act workflow_dispatch -W .github/workflows/andorradifusio.ad.yml",
+    "act": "act workflow_dispatch",
     "test": "npx jest --runInBand",
     "test:commands": "npx jest --runInBand -- commands",
     "test:sites": "npx jest --runInBand -- sites"
