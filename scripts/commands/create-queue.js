@@ -54,9 +54,9 @@ async function createQueue() {
             channel: {
               lang: item.lang,
               xmltv_id: item.xmltv_id,
-              site_id: item.site_id
+              site_id: item.site_id,
+              site: item.site
             },
-            site: item.site,
             date: dString,
             configPath,
             groups: [],

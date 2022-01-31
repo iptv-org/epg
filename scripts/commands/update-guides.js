@@ -32,7 +32,7 @@ async function generateGuides() {
       if (item.error) {
         const error = {
           xmltv_id: item.channel.xmltv_id,
-          site: item.site,
+          site: item.channel.site,
           site_id: item.channel.site_id,
           lang: item.channel.lang,
           date: item.date,
@@ -54,7 +54,7 @@ async function generateGuides() {
         return {
           id: channel.id,
           display_name: channel.name,
-          url: item.site,
+          url: item.channel.site,
           icon: channel.logo
         }
       })

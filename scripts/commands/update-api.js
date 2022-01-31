@@ -36,7 +36,7 @@ async function loadGuides(programs = []) {
       if (!item.error && channelPrograms) {
         output.push({
           channel: item.channel.xmltv_id,
-          site: item.site,
+          site: item.channel.site,
           lang: item.channel.lang,
           url: `https://iptv-org.github.io/epg/guides/${group}.epg.xml`
         })

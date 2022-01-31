@@ -28,7 +28,7 @@ async function main() {
           start: program.start,
           stop: program.stop,
           stop: program.stop,
-          site: item.site,
+          site: item.channel.site,
           _qid: result._qid
         }
       })
