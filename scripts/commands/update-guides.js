@@ -65,10 +65,15 @@ async function generateGuides() {
     const output = grabber.convertToXMLTV({ channels, programs })
     await file.create(filepath, output)
 
+    let status = 0
+    if (errors.length > 0 || !channels.length) {
+      status = 1
+    }
+
     await logGuide({
       group: key,
-      count: items.length,
-      status: errors.length > 0 ? 1 : 0
+      count: channels.length,
+      status
     })
   }
 
