@@ -7,7 +7,7 @@ beforeEach(() => {
   fs.mkdirSync('tests/__data__/output')
 
   const stdout = execSync(
-    'DB_DIR=tests/__data__/output/database CHANNELS_PATH=tests/__data__/input/sites/*.channels.xml node scripts/commands/create-queue.js --max-clusters=1 --days=2',
+    'DB_DIR=tests/__data__/output/database LOGS_DIR=tests/__data__/output/logs CHANNELS_PATH=tests/__data__/input/sites/*.channels.xml node scripts/commands/create-queue.js --max-clusters=1 --days=2',
     { encoding: 'utf8' }
   )
 })
@@ -30,11 +30,16 @@ it('can create queue', () => {
   expect(output).toEqual(
     expect.arrayContaining([
       expect.objectContaining(expected[0]),
-      expect.objectContaining(expected[1]),
-      expect.objectContaining(expected[2]),
-      expect.objectContaining(expected[3])
+      expect.objectContaining(expected[1])
     ])
   )
+})
+
+it('can create errors log', () => {
+  let output = content('tests/__data__/output/logs/errors/ca-nl/example.com.log')
+  let expected = content('tests/__data__/expected/logs/errors/ca-nl/example.com.log')
+
+  expect(output).toEqual(expected)
 })
 
 function content(filepath) {
