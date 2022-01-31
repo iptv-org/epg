@@ -11,9 +11,6 @@ module.exports = {
       channel.site_id
     }/airings?startDateTime=${date.format()}&endDateTime=${date.add(1, 'd').format()}`
   },
-  logo({ channel }) {
-    return channel.logo
-  },
   parser: function ({ content }) {
     let programs = []
 
@@ -50,22 +47,19 @@ module.exports = {
       if (!stationData) continue
 
       let channel
-      const logo = parseChannelLogo(stationData.preferredImage)
       switch (stationData.type) {
         case 'Low Power Broadcast':
         case 'Full Power Broadcast':
           channel = {
             site_id: station.id,
             name: stationData.name,
-            xmltv_id: parseChannelId(stationData),
-            logo
+            xmltv_id: parseChannelId(stationData)
           }
           break
         default:
           channel = {
             site_id: station.id,
-            name: stationData.name,
-            logo
+            name: stationData.name
           }
           break
       }
@@ -77,10 +71,6 @@ module.exports = {
 
     return channels
   }
-}
-
-function parseChannelLogo(image) {
-  return image && image.uri ? `http://tvtv.tmsimg.com/${image.uri}` : null
 }
 
 function parseChannelId(data) {
