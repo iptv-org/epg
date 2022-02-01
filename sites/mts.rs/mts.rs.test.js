@@ -1,6 +1,6 @@
 // npx epg-grabber --config=sites/mts.rs/mts.rs.config.js --channels=sites/mts.rs/mts.rs_rs.channels.xml --output=.gh-pages/guides/rs/mts.rs.epg.xml --days=2
 
-const { parser, url, logo, request } = require('./mts.rs.config.js')
+const { parser, url, request } = require('./mts.rs.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -23,11 +23,6 @@ it('can generate valid request headers', () => {
   expect(request.headers).toMatchObject({
     'X-Requested-With': 'XMLHttpRequest'
   })
-})
-
-it('can get logo url', () => {
-  const result = logo({ content, channel })
-  expect(result).toBe('https://mts.rs/oec/images/tv_channels/904ddd8cd6720a4a1c23eae513b5b957.jpg')
 })
 
 it('can parse response', () => {
