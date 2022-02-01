@@ -3,7 +3,7 @@
 // node ./scripts/channels.js --config=./sites/teliatv.ee/teliatv.ee.config.js --output=./sites/teliatv.ee/teliatv.ee_ee-en.channels.xml --set=lang:en
 // npx epg-grabber --config=sites/teliatv.ee/teliatv.ee.config.js --channels=sites/teliatv.ee/teliatv.ee_ee-et.channels.xml --output=.gh-pages/guides/ee-et/teliatv.ee.epg.xml --days=2
 
-const { parser, url, logo } = require('./teliatv.ee.config.js')
+const { parser, url } = require('./teliatv.ee.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -32,10 +32,6 @@ it('can generate valid url with different language', () => {
   expect(url({ date, channel: ruChannel })).toBe(
     'https://api.teliatv.ee/dtv-api/3.2/ru/epg/guide?channelIds=1&relations=programmes&images=webGuideItemLarge&startAt=2021-11-21T00:00&startAtOp=lte&endAt=2021-11-20T00:00&endAtOp=gt'
   )
-})
-
-it('can generate valid logo url', () => {
-  expect(logo({ channel })).toBe('https://inet-static.mw.elion.ee/images/channels/300x300/1.png')
 })
 
 it('can parse response', () => {

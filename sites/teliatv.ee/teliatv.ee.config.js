@@ -12,9 +12,6 @@ module.exports = {
       'YYYY-MM-DDTHH:mm'
     )}&endAtOp=gt`
   },
-  logo({ channel }) {
-    return `https://inet-static.mw.elion.ee/images/channels/300x300/${channel.site_id}.png`
-  },
   parser({ content, channel }) {
     let programs = []
     const items = parseItems(content, channel)
