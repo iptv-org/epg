@@ -12,9 +12,6 @@ module.exports = {
 
     return `https://service.canal-overseas.com/ott-frontend/vector/53101/channel/${channel.site_id}/events?filter.day=${diff}`
   },
-  logo({ channel }) {
-    return channel.logo
-  },
   parser: function ({ content }) {
     let programs = []
     const items = parseItems(content)
@@ -46,8 +43,7 @@ module.exports = {
       return {
         lang: 'fr',
         site_id: item.epgID,
-        name: item.name,
-        logo: item.LogoUrl
+        name: item.name
       }
     })
   }
