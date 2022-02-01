@@ -17,12 +17,6 @@ module.exports = {
 
     return `https://programtv.onet.pl/program-tv/${channel.site_id}?dzien=${day}`
   },
-  logo: function ({ content }) {
-    const $ = cheerio.load(content)
-    const imgSrc = $('#channelTV > section > header > span > img').attr('src')
-
-    return imgSrc ? `https:${imgSrc}` : null
-  },
   parser: function ({ content, date }) {
     const programs = []
     const items = parseItems(content)

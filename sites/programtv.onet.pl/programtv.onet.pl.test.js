@@ -1,7 +1,7 @@
 // npx epg-grabber --config=sites/programtv.onet.pl/programtv.onet.pl.config.js --channels=sites/programtv.onet.pl/programtv.onet.pl_pl.channels.xml --output=guide.xml --days=2
 
 const MockDate = require('mockdate')
-const { parser, url, logo } = require('./programtv.onet.pl.config.js')
+const { parser, url } = require('./programtv.onet.pl.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -29,12 +29,6 @@ it('can generate valid url for next day', () => {
     'https://programtv.onet.pl/program-tv/13th-street-250?dzien=1'
   )
   MockDate.reset()
-})
-
-it('can generate valid logo url', () => {
-  expect(logo({ content })).toBe(
-    'https://ocdn.eu/ptv2-images-transforms/1/zB4kr1sb2dvLW1pZ3JhdGVkLzEzdGgtc3RyZWV0LnBuZ5KVAmQAwsOVAgAowsM'
-  )
 })
 
 it('can parse response', () => {
