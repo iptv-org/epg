@@ -2,21 +2,16 @@ const dayjs = require('dayjs')
 
 module.exports = {
   site: 'tv.yandex.ru',
-  request: {
-    headers: {
-      Cookie:
-        'yandexuid=8747786251615498142; Expires=Tue, 11 Mar 2031 21:29:02 GMT; Domain=yandex.ru; Path=/'
-    }
-  },
   url: function ({ date, channel }) {
     const [region, id] = channel.site_id.split('#')
 
     return `https://tv.yandex.ru/${region}/channel/${id}?date=${date.format('YYYY-MM-DD')}`
   },
-  logo: function ({ content }) {
-    const data = parseContent(content)
-
-    return data ? `https:${data.channel.logo.maxSize.src}` : null
+  request: {
+    headers: {
+      Cookie:
+        'yandexuid=8747786251615498142; Expires=Tue, 11 Mar 2031 21:29:02 GMT; Domain=yandex.ru; Path=/'
+    }
   },
   parser: function ({ content }) {
     const programs = []

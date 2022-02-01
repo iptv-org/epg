@@ -1,6 +1,6 @@
 // npx epg-grabber --config=sites/tv.yandex.ru/tv.yandex.ru.config.js --channels=sites/tv.yandex.ru/tv.yandex.ru_kz.channels.xml --output=.gh-pages/guides/kz/tv.yandex.ru.epg.xml --days=2
 
-const { parser, url, request, logo } = require('./tv.yandex.ru.config.js')
+const { parser, url, request } = require('./tv.yandex.ru.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -25,12 +25,6 @@ it('can generate valid request headers', () => {
     Cookie:
       'yandexuid=8747786251615498142; Expires=Tue, 11 Mar 2031 21:29:02 GMT; Domain=yandex.ru; Path=/'
   })
-})
-
-it('can generate valid logo url', () => {
-  expect(logo({ content })).toBe(
-    'https://avatars.mds.yandex.net/get-tv-channel-logos/30303/2a00000170e2a3ef22bf7cfa4ff11e8405de/170x100'
-  )
 })
 
 it('can parse response', () => {
