@@ -1,6 +1,6 @@
 // npx epg-grabber --config=sites/pbsguam.org/pbsguam.org.config.js --channels=sites/pbsguam.org/pbsguam.org_gu.channels.xml --output=.gh-pages/guides/gu/pbsguam.org.epg.xml --days=2
 
-const { parser, url, logo } = require('./pbsguam.org.config.js')
+const { parser, url } = require('./pbsguam.org.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -10,18 +10,11 @@ dayjs.extend(utc)
 const date = dayjs.utc('2021-11-25', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: '#',
-  xmltv_id: 'KGTF.us',
-  logo: 'https://pbsguam.org/wp-content/uploads/sites/10/2021/09/pbs-guam-blue.png'
+  xmltv_id: 'KGTF.us'
 }
 
 it('can generate valid url', () => {
   expect(url).toBe('https://pbsguam.org/calendar/')
-})
-
-it('can get logo url', () => {
-  expect(logo({ channel })).toBe(
-    'https://pbsguam.org/wp-content/uploads/sites/10/2021/09/pbs-guam-blue.png'
-  )
 })
 
 it('can parse response', () => {

@@ -6,9 +6,6 @@ dayjs.extend(isBetween)
 module.exports = {
   site: 'pbsguam.org',
   url: 'https://pbsguam.org/calendar/',
-  logo({ channel }) {
-    return channel.logo
-  },
   parser: function ({ content, date }) {
     let programs = []
     const items = parseItems(content, date)
