@@ -15,11 +15,6 @@ module.exports = {
       'X-Requested-With': 'XMLHttpRequest'
     }
   },
-  logo({ content, channel }) {
-    const data = parseContent(content, channel)
-
-    return data ? data.image : null
-  },
   parser: function ({ content, channel }) {
     let programs = []
     const items = parseItems(content, channel)

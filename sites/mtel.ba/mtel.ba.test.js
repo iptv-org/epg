@@ -1,6 +1,6 @@
 // npx epg-grabber --config=sites/mtel.ba/mtel.ba.config.js --channels=sites/mtel.ba/mtel.ba_ba.channels.xml --output=.gh-pages/guides/ba/mtel.ba.epg.xml --days=2
 
-const { parser, url, request, logo } = require('./mtel.ba.config.js')
+const { parser, url, request } = require('./mtel.ba.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -24,12 +24,6 @@ it('can generate valid request headers', () => {
   expect(request.headers).toMatchObject({
     'X-Requested-With': 'XMLHttpRequest'
   })
-})
-
-it('can get logo url', () => {
-  expect(logo({ content, channel })).toBe(
-    'https://mtel.ba/oec/images/tv_channels/c3556aa629b00325aaaea622abfb1070.png'
-  )
 })
 
 it('can parse response', () => {
