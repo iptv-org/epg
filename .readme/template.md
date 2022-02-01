@@ -1,7 +1,5 @@
 # EPG
 
-![auto-update](https://github.com/iptv-org/epg/actions/workflows/auto-update.yml/badge.svg)
-
 EPG (Electronic Program Guide) for thousands of TV channels collected from different sources.
 
 ## Usage
@@ -11,15 +9,9 @@ To load a program guide, all you need to do is copy the link to one or more of t
 <!-- prettier-ignore -->
 #include "./.readme/_countries.md"
 
-### US States
+## EPG Codes
 
-<!-- prettier-ignore -->
-#include "./.readme/_us-states.md"
-
-### Provinces of Canada
-
-<!-- prettier-ignore -->
-#include "./.readme/_ca-provinces.md"
+📋&nbsp;&nbsp;[iptv-org.github.io](https://iptv-org.github.io/)
 
 ## API
 
