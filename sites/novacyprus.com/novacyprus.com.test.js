@@ -1,7 +1,7 @@
 // node ./scripts/channels.js --config=./sites/novacyprus.com/novacyprus.com.config.js --output=./sites/novacyprus.com/novacyprus.com_cy.channels.xml
 // npx epg-grabber --config=sites/novacyprus.com/novacyprus.com.config.js --channels=sites/novacyprus.com/novacyprus.com_cy.channels.xml --output=.gh-pages/guides/cy/novacyprus.com.epg.xml --days=2
 
-const { parser, url, logo } = require('./novacyprus.com.config.js')
+const { parser, url } = require('./novacyprus.com.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -11,19 +11,12 @@ dayjs.extend(utc)
 const date = dayjs.utc('2021-11-17', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: '614',
-  xmltv_id: 'NovaCinema1.gr',
-  logo: 'https://www.novacyprus.com/sites/default/files/2020-04/VOULI-85x80.png'
+  xmltv_id: 'NovaCinema1.gr'
 }
 
 it('can generate valid url', () => {
   expect(url({ date })).toBe(
     'https://www.novacyprus.com/api/v1/tvprogram/from/20211117/to/20211118'
-  )
-})
-
-it('can generate valid logo url', () => {
-  expect(logo({ channel })).toBe(
-    'https://www.novacyprus.com/sites/default/files/2020-04/VOULI-85x80.png'
   )
 })
 

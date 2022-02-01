@@ -15,9 +15,6 @@ module.exports = {
       .add(1, 'd')
       .format('YYYYMMDD')}`
   },
-  logo({ channel }) {
-    return channel.logo
-  },
   parser({ content, channel }) {
     let programs = []
     const items = parseItems(content, channel)
@@ -42,15 +39,10 @@ module.exports = {
       .catch(console.log)
 
     return channels.map(item => {
-      const logo = item.Logo.replace(/\\/g, '').startsWith('/sites/default/files')
-        ? `https://www.novacyprus.com${item.Logo}`
-        : item.Logo
-
       return {
         lang: 'el',
         site_id: item.ChannelId,
-        name: item.nameEl,
-        logo
+        name: item.nameEl
       }
     })
   }
