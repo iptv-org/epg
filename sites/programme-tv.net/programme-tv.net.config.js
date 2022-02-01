@@ -17,14 +17,6 @@ module.exports = {
       channel.site_id
     }.html`
   },
-  logo: function ({ content }) {
-    const $ = cheerio.load(content)
-    const img = $('.gridChannel-logo').first().find('img')
-    const value = img.attr('srcset') || img.data('srcset')
-    const obj = value ? srcset.parse(value).find(i => i.width === 80) : {}
-
-    return obj.url
-  },
   parser: function ({ content, date }) {
     const programs = []
     const items = parseItems(content)
