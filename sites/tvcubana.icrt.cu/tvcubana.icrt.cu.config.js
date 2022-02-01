@@ -10,9 +10,6 @@ module.exports = {
 
     return `https://www.tvcubana.icrt.cu/cartv/${channel.site_id}/${daysOfWeek[date.day()]}.php`
   },
-  logo({ channel }) {
-    return channel.logo
-  },
   parser: function ({ content }) {
     let programs = []
     const items = parseItems(content)
