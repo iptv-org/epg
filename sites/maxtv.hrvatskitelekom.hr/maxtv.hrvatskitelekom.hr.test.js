@@ -1,6 +1,6 @@
 // npx epg-grabber --config=sites/maxtv.hrvatskitelekom.hr/maxtv.hrvatskitelekom.hr.config.js --channels=sites/maxtv.hrvatskitelekom.hr/maxtv.hrvatskitelekom.hr_hr.channels.xml --output=.gh-pages/guides/hr/maxtv.hrvatskitelekom.hr.epg.xml --days=2
 
-const { parser, url, request, logo } = require('./maxtv.hrvatskitelekom.hr.config.js')
+const { parser, url, request } = require('./maxtv.hrvatskitelekom.hr.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -24,12 +24,6 @@ it('can generate valid request data', () => {
     startDate: 1637020800,
     endDate: 1637107200
   })
-})
-
-it('can get logo url', () => {
-  expect(logo({ channel, content })).toBe(
-    'http://ottepg5.nexttv.ht.hr:33200/EPG/jsp/images/universal/film/logo/fileEntity/20161109/000200/XTV100002173/493d03f8-0f08-4932-8371-e5b57d96f17d.png'
-  )
 })
 
 it('can parse response', () => {
