@@ -7,9 +7,6 @@ module.exports = {
       .add(1, 'd')
       .valueOf()}&after=${channel.site_id}&limit=1`
   },
-  logo({ channel }) {
-    return channel.logo
-  },
   parser: function ({ content, channel }) {
     let programs = []
     const items = parseItems(content, channel)
