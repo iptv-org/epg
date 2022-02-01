@@ -66,8 +66,7 @@ module.exports = {
       return {
         lang: 'bg',
         site_id: $item.attr('href').replace('tv_channel.php?id=', ''),
-        name: $item.find('div.thumbnail > img').attr('alt'),
-        logo: $item.find('div.thumbnail > img').data('src')
+        name: $item.find('div.thumbnail > img').attr('alt')
       }
     })
   }
