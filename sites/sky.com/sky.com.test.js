@@ -1,6 +1,6 @@
 // npx epg-grabber --config=sites/sky.com/sky.com.config.js --channels=sites/sky.com/sky.com_uk.channels.xml --output=.gh-pages/guides/au/sky.com.epg.xml --days=2
 
-const { parser, url, logo } = require('./sky.com.config.js')
+const { parser, url } = require('./sky.com.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -20,12 +20,6 @@ it('can generate valid url', () => {
   )
 })
 
-it('can generate valid logo url', () => {
-  expect(logo({ channel })).toBe(
-    'https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/400/160/skychb2002.png'
-  )
-})
-
 it('can parse response', () => {
   const result = parser({ content, channel, date }).map(p => {
     p.start = p.start.toJSON()
@@ -38,13 +32,13 @@ it('can parse response', () => {
       start: '2021-12-14T01:50:00.000Z',
       stop: '2021-12-14T02:20:00.000Z',
       title: 'Question of Sport',
-      icon: 'http://epgstatic.sky.com/epgdata/1.0/paimage/46/1/lisa/5.2.2/linear/channel/7f80ef03-3d8a-4f73-bf7d-6b03f410c7a8/2002',
+      icon: 'http://epgstatic.sky.com/epgdata/1.0/paimage/46/1/lisa/5.2.2/linear/channel/7f80ef03-3d8a-4f73-bf7d-6b03f410c7a8/2002'
     },
     {
       start: '2021-12-14T02:20:00.000Z',
       stop: '2021-12-14T02:25:00.000Z',
       title: 'Weather for the Week Ahead',
-      icon: 'http://epgstatic.sky.com/epgdata/1.0/paimage/46/1/lisa/5.2.2/linear/channel/8fcf08b7-4081-499a-bf63-d100908e2d75/2002',
+      icon: 'http://epgstatic.sky.com/epgdata/1.0/paimage/46/1/lisa/5.2.2/linear/channel/8fcf08b7-4081-499a-bf63-d100908e2d75/2002'
     }
   ])
 })
