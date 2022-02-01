@@ -1,6 +1,6 @@
 // npx epg-grabber --config=sites/tv.mail.ru/tv.mail.ru.config.js --channels=sites/tv.mail.ru/tv.mail.ru_am.channels.xml --output=.gh-pages/guides/am/tv.mail.ru.epg.xml --days=2
 
-const { parser, url, logo } = require('./tv.mail.ru.config.js')
+const { parser, url } = require('./tv.mail.ru.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -17,12 +17,6 @@ const content = `{"status":"OK","schedule":[{"channel":{"name":"21TV","pic_url":
 it('can generate valid url', () => {
   expect(url({ channel, date })).toBe(
     'https://tv.mail.ru/ajax/channel/?region_id=70&channel_id=2785&date=2021-11-24'
-  )
-})
-
-it('can generate valid logo url', () => {
-  expect(logo({ content })).toBe(
-    'https://resizer.mail.ru/p/1234c5ac-c19c-5cf2-9c6a-fc0efca920ac/AAACwjJ45j9sTP8fcjPJnJ4xk5e_ILr5iXwjLMhWhzlVnIJkrtT42vEp9walcgpXRKDq9KFoliEPR0xI-LEh96C_izY.png'
   )
 })
 

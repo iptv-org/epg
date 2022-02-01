@@ -14,14 +14,6 @@ module.exports = {
       channel.site_id
     }&date=${date.format('YYYY-MM-DD')}`
   },
-  logo({ content }) {
-    const json = JSON.parse(content)
-    if (!json || !Array.isArray(json.schedule)) return null
-
-    return json.schedule[0] && json.schedule[0].channel
-      ? json.schedule[0].channel.pic_url_128
-      : null
-  },
   parser({ content, date }) {
     const programs = []
     const items = parseItems(content)
