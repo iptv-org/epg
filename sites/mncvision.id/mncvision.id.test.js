@@ -1,7 +1,7 @@
 // node ./scripts/channels.js --config=./sites/mncvision.id/mncvision.id.config.js --output=./sites/mncvision.id/mncvision.id_id.channels.xml
 // npx epg-grabber --config=sites/mncvision.id/mncvision.id.config.js --channels=sites/mncvision.id/mncvision.id_id.channels.xml --output=.gh-pages/guides/id/mncvision.id.epg.xml --days=2
 
-const { parser, url, request, logo } = require('./mncvision.id.config.js')
+const { parser, url, request } = require('./mncvision.id.config.js')
 const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
@@ -31,12 +31,6 @@ it('can generate valid request headers', () => {
 it('can generate valid request data', () => {
   const result = request.data({ channel, date })
   expect(result._boundary).toBe('X-EPG-BOUNDARY')
-})
-
-it('can get logo url', () => {
-  expect(logo({ content, channel })).toBe(
-    'https://www.mncvision.id/userfiles/image/channel/channel_203.png'
-  )
 })
 
 it('can parse response', done => {

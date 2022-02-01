@@ -30,9 +30,6 @@ module.exports = {
       'Content-Type': 'multipart/form-data; boundary=X-EPG-BOUNDARY'
     }
   },
-  logo({ channel }) {
-    return `https://www.mncvision.id/userfiles/image/channel/channel_${channel.site_id}.png`
-  },
   async parser({ content, date }) {
     const programs = []
     const items = parseItems(content)
