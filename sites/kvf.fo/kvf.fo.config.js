@@ -13,9 +13,6 @@ module.exports = {
   url({ date }) {
     return `https://kvf.fo/nskra/uv?date=${date.format('YYYY-MM-DD')}`
   },
-  logo({ channel }) {
-    return channel.logo
-  },
   parser({ content, date }) {
     let programs = []
     const items = parseItems(content)

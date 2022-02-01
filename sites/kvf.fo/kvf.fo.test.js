@@ -1,6 +1,6 @@
 // npx epg-grabber --config=sites/kvf.fo/kvf.fo.config.js --channels=sites/kvf.fo/kvf.fo_fo.channels.xml --output=.gh-pages/guides/fo/kvf.fo.epg.xml --days=2
 
-const { parser, url, logo } = require('./kvf.fo.config.js')
+const { parser, url } = require('./kvf.fo.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -10,16 +10,11 @@ dayjs.extend(utc)
 const date = dayjs.utc('2021-11-21', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: '#',
-  xmltv_id: 'KVFSjonvarp.fo',
-  logo: 'https://kvf.fo/sites/all/themes/bootstrap_subtheme/logo.png'
+  xmltv_id: 'KVFSjonvarp.fo'
 }
 
 it('can generate valid url', () => {
   expect(url({ date })).toBe('https://kvf.fo/nskra/uv?date=2021-11-21')
-})
-
-it('can get logo url', () => {
-  expect(logo({ channel })).toBe('https://kvf.fo/sites/all/themes/bootstrap_subtheme/logo.png')
 })
 
 it('can parse response', () => {
