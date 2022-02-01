@@ -1,7 +1,7 @@
 // node ./scripts/channels.js --config=./sites/maxtvgo.mk/maxtvgo.mk.config.js --output=./sites/maxtvgo.mk/maxtvgo.mk_mk.channels.xml
 // npx epg-grabber --config=sites/maxtvgo.mk/maxtvgo.mk.config.js --channels=sites/maxtvgo.mk/maxtvgo.mk_mk.channels.xml --output=.gh-pages/guides/mk/maxtvgo.mk.epg.xml --days=2
 
-const { parser, url, logo } = require('./maxtvgo.mk.config.js')
+const { parser, url } = require('./maxtvgo.mk.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -17,12 +17,6 @@ const channel = {
 it('can generate valid url', () => {
   expect(url({ channel, date })).toBe(
     'https://prd-static-mkt.spectar.tv/rev-1636968171/client_api.php/epg/list/instance_id/1/language/mk/channel_id/105/start/20211117000000/stop/20211118000000/include_current/true/format/json'
-  )
-})
-
-it('can generate valid logo url', () => {
-  expect(logo({ channel })).toBe(
-    'https://prd-static-mkt.spectar.tv/rev-1636968170/image_transform.php/transform/1/instance_id/1/video_id/105'
   )
 })
 

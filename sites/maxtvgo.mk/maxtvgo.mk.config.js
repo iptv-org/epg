@@ -13,9 +13,6 @@ module.exports = {
       .add(1, 'd')
       .format('YYYYMMDDHHmmss')}/include_current/true/format/json`
   },
-  logo: function ({ channel }) {
-    return `https://prd-static-mkt.spectar.tv/rev-1636968170/image_transform.php/transform/1/instance_id/1/video_id/${channel.site_id}`
-  },
   parser: function ({ content }) {
     let programs = []
     const items = parseItems(content)
