@@ -1,6 +1,6 @@
 // npx epg-grabber --config=sites/zap.co.ao/zap.co.ao.config.js --channels=sites/zap.co.ao/zap.co.ao_ao.channels.xml --output=.gh-pages/guides/ao/zap.co.ao.epg.xml --days=2
 
-const { parser, url, logo } = require('./zap.co.ao.config.js')
+const { parser, url } = require('./zap.co.ao.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -16,12 +16,6 @@ const content = `[{"image_uri":"https://www.zap.co.ao/media/cache/movie_thumb/up
 
 it('can generate valid url', () => {
   expect(url({ date })).toBe('https://www.zap.co.ao/_api/channels/2021-11-25/epg.json')
-})
-
-it('can generate valid logo url', () => {
-  expect(logo({ content, channel })).toBe(
-    'https://www.zap.co.ao/media/cache/movie_thumb/uploads/ao/channels/54bd3c6b068ef.png'
-  )
 })
 
 it('can parse response', () => {

@@ -12,12 +12,6 @@ module.exports = {
   url: function ({ date, channel }) {
     return `https://www.zap.co.ao/_api/channels/${date.format('YYYY-M-D')}/epg.json`
   },
-  logo({ content, channel }) {
-    const channels = JSON.parse(content)
-    const data = channels.find(ch => ch.id == channel.site_id)
-
-    return data ? data.image_uri : null
-  },
   parser: function ({ content, channel, date }) {
     const programs = []
     const items = parseItems(content, channel)
