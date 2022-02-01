@@ -10,11 +10,6 @@ module.exports = {
       'YYYY-MM-DD'
     )}`
   },
-  logo({ content, channel }) {
-    const data = parseContent(content, channel)
-
-    return data && data.logo ? `https://www.dsmart.com.tr/epg/images/0x50/${data.logo}` : null
-  },
   parser: function ({ content, channel, date }) {
     let offset = -1
     let programs = []

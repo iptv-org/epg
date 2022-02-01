@@ -1,6 +1,6 @@
 // npx epg-grabber --config=sites/dsmart.com.tr/dsmart.com.tr.config.js --channels=sites/dsmart.com.tr/dsmart.com.tr_tr.channels.xml --output=guide.xml --timeout=30000 --days=2
 
-const { parser, url, logo } = require('./dsmart.com.tr.config.js')
+const { parser, url } = require('./dsmart.com.tr.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -17,12 +17,6 @@ const content = `{"meta": {"code": 200, "message": "OK"}, "data": {"total": 200,
 it('can generate valid url', () => {
   expect(url({ date, channel })).toBe(
     'https://www.dsmart.com.tr/api/v1/public/epg/schedules?page=1&limit=500&day=2021-11-06'
-  )
-})
-
-it('can get logo url', () => {
-  expect(logo({ content, channel })).toBe(
-    'https://www.dsmart.com.tr/epg/images/0x50/59f97253cfef0b75f4723ded'
   )
 })
 
