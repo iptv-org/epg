@@ -1,7 +1,7 @@
 // NODE_OPTIONS=--insecure-http-parser npx epg-grabber --config=sites/osn.com/osn.com.config.js --channels=sites/osn.com/osn.com_ae-ar.channels.xml --output=guide.xml --days=2
 // NODE_OPTIONS=--insecure-http-parser npx epg-grabber --config=sites/osn.com/osn.com.config.js --channels=sites/osn.com/osn.com_ae-en.channels.xml --output=guide.xml --days=2
 
-const { parser, url, logo, request } = require('./osn.com.config.js')
+const { parser, url, request } = require('./osn.com.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -35,15 +35,9 @@ it('can generate valid request headers', () => {
 })
 
 it('can generate valid url', () => {
-  const result = url()
-  expect(result).toBe(
+  expect(url).toBe(
     'https://www.osn.com/CMSPages/TVScheduleWebService.asmx/GetTVChannelsProgramTimeTable'
   )
-})
-
-it('can get logo url', () => {
-  const result = logo({ channel: channelAR })
-  expect(result).toBe('https://content.osn.com/logo/channel/cropped/AAN.png')
 })
 
 it('can parse response (ar)', () => {

@@ -7,6 +7,7 @@ dayjs.extend(timezone)
 
 module.exports = {
   site: 'osn.com',
+  url: `https://www.osn.com/CMSPages/TVScheduleWebService.asmx/GetTVChannelsProgramTimeTable`,
   request: {
     method: 'POST',
     headers: {
@@ -24,14 +25,6 @@ module.exports = {
       }
     },
     jar: null
-  },
-  url: function () {
-    return `https://www.osn.com/CMSPages/TVScheduleWebService.asmx/GetTVChannelsProgramTimeTable`
-  },
-  logo: function ({ channel }) {
-    const [_, channelCode] = channel.site_id.split('#')
-
-    return `https://content.osn.com/logo/channel/cropped/${channelCode}.png`
   },
   parser: function ({ content, channel }) {
     let programs = []
