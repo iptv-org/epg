@@ -1,7 +1,7 @@
 // [Geo-blocked] node ./scripts/commands/parse-channels.js --config=./sites/canalplus-afrique.com/canalplus-afrique.com.config.js --output=./sites/canalplus-afrique.com/canalplus-afrique.com_bf.channels.xml --set=country:bf
 // npx epg-grabber --config=sites/canalplus-afrique.com/canalplus-afrique.com.config.js --channels=sites/canalplus-afrique.com/canalplus-afrique.com_bf.channels.xml --output=guide.xml --days=2
 
-const { parser, url, logo } = require('./canalplus-afrique.com.config.js')
+const { parser, url } = require('./canalplus-afrique.com.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -10,8 +10,7 @@ dayjs.extend(utc)
 
 const channel = {
   site_id: '60020',
-  xmltv_id: 'CanalPlusReunion.fr',
-  logo: 'https://service.canal-overseas.com/image-api/v1/image/702e588188caa19c38c438d14bfc8870'
+  xmltv_id: 'CanalPlusReunion.fr'
 }
 
 it('can generate valid url for today', () => {
@@ -25,12 +24,6 @@ it('can generate valid url for tomorrow', () => {
   const date = dayjs.utc().startOf('d').add(1, 'd')
   expect(url({ channel, date })).toBe(
     'https://service.canal-overseas.com/ott-frontend/vector/83001/channel/60020/events?filter.day=1'
-  )
-})
-
-it('can get logo url', () => {
-  expect(logo({ channel })).toBe(
-    'https://service.canal-overseas.com/image-api/v1/image/702e588188caa19c38c438d14bfc8870'
   )
 })
 
