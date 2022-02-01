@@ -8,9 +8,6 @@ module.exports = {
       .add(1, 'd')
       .unix()}&includeDetails=true&channels=${channel.site_id}`
   },
-  logo({ channel }) {
-    return channel.logo
-  },
   parser: function ({ content, channel }) {
     let programs = []
     const items = parseItems(content, channel)
@@ -37,8 +34,7 @@ module.exports = {
         return {
           lang: 'nl',
           site_id: item['ID'],
-          name: item.name,
-          logo: item.images.logo
+          name: item.name
         }
       })
   }

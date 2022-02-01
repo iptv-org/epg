@@ -1,7 +1,7 @@
 // node ./scripts/channels.js --config=./sites/delta.nl/delta.nl.config.js --output=./sites/delta.nl/delta.nl_nl.channels.xml
 // npx epg-grabber --config=sites/delta.nl/delta.nl.config.js --channels=sites/delta.nl/delta.nl_nl.channels.xml --output=.gh-pages/guides/nl/delta.nl.epg.xml --days=2
 
-const { parser, url, request, logo } = require('./delta.nl.config.js')
+const { parser, url, request } = require('./delta.nl.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -11,19 +11,12 @@ dayjs.extend(utc)
 const date = dayjs.utc('2021-11-12', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: '1',
-  xmltv_id: 'NPO1.nl',
-  logo: 'https://tv.delta.nl/assets/graphics/thumbnails/channel/delta/npo1.svg'
+  xmltv_id: 'NPO1.nl'
 }
 
 it('can generate valid url', () => {
   expect(url({ channel, date })).toBe(
     'https://clientapi.tv.delta.nl/guide/channels/list?start=1636675200&end=1636761600&includeDetails=true&channels=1'
-  )
-})
-
-it('can get logo url', () => {
-  expect(logo({ channel })).toBe(
-    'https://tv.delta.nl/assets/graphics/thumbnails/channel/delta/npo1.svg'
   )
 })
 
