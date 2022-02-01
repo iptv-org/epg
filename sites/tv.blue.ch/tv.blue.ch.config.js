@@ -14,9 +14,6 @@ module.exports = {
       .add(1, 'd')
       .format('YYYYMMDDHHss')};level=normal)`
   },
-  logo({ channel }) {
-    return `https://services.sg101.prd.sctv.ch/content/images/tv/channel/${channel.site_id}_image_7_w116.webp`
-  },
   parser: function ({ content }) {
     let programs = []
     const items = parseItems(content)

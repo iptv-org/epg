@@ -1,7 +1,7 @@
 // node ./scripts/commands/parse-channels.js --config=./sites/tv.blue.ch/tv.blue.ch.config.js --output=./sites/tv.blue.ch/tv.blue.ch_ch.channels.xml
 // npx epg-grabber --config=sites/tv.blue.ch/tv.blue.ch.config.js --channels=sites/tv.blue.ch/tv.blue.ch_ch.channels.xml --output=guide.xml --days=2
 
-const { parser, url, logo } = require('./tv.blue.ch.config.js')
+const { parser, url } = require('./tv.blue.ch.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -17,12 +17,6 @@ const channel = {
 it('can generate valid url', () => {
   expect(url({ channel, date })).toBe(
     'https://services.sg101.prd.sctv.ch/catalog/tv/channels/list/(ids=1221;start=202201170000;end=202201180000;level=normal)'
-  )
-})
-
-it('can get logo url', () => {
-  expect(logo({ channel })).toBe(
-    'https://services.sg101.prd.sctv.ch/content/images/tv/channel/1221_image_7_w116.webp'
   )
 })
 
