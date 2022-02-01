@@ -8,9 +8,6 @@ module.exports = {
       channel.site_id
     }&pivot_date=${date.format('YYYY-MM-DD')}`
   },
-  logo: function ({ channel }) {
-    return channel.logo
-  },
   parser: function ({ content, date, channel }) {
     const programs = []
     const items = parseItems(content)
@@ -40,18 +37,11 @@ module.exports = {
 
     const channels = []
     for (let item of data.data) {
-      const logo = item.images
-        ? item.images[0].url_template
-            .replace('{width}', '512')
-            .replace('{height}', '512')
-            .replace('{crop}', 'c')
-        : null
       channels.push({
         lang: 'fa',
         site_id: item.id,
         name: item.name,
-        xmltv_id: item.slug,
-        logo
+        xmltv_id: item.slug
       })
     }
 
