@@ -1,6 +1,6 @@
 // npx epg-grabber --config=sites/dishtv.in/dishtv.in.config.js --channels=sites/dishtv.in/dishtv.in_in.channels.xml --output=.gh-pages/guides/in/dishtv.in.epg.xml --days=2
 
-const { parser, url, logo, request } = require('./dishtv.in.config.js')
+const { parser, url, request } = require('./dishtv.in.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -24,13 +24,6 @@ it('can generate valid request data', () => {
     fromdate: '202111050000',
     todate: '202111060000'
   })
-})
-
-it('can get logo url', () => {
-  const result = logo({ content })
-  expect(result).toBe(
-    'http://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/hiyj8ndf.png'
-  )
 })
 
 it('can parse response', () => {

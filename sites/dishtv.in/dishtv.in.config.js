@@ -21,12 +21,6 @@ module.exports = {
       }
     }
   },
-  logo({ content }) {
-    const data = parseContent(content)
-    const $ = cheerio.load(data)
-
-    return $(`img.chnl-logo`).attr('src')
-  },
   parser: function ({ content, channel, date }) {
     let programs = []
     const data = parseContent(content)
