@@ -9,19 +9,12 @@ dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
 module.exports = {
-  ignore: true, // INFO: no longer available
   site: 'vivacom.bg',
+  ignore: true, // INFO: no longer available
   url({ date, channel }) {
     const [page] = channel.site_id.split('#')
 
     return `https://www.vivacom.bg/bg/tv/programa/?date=${date.format('YYYY-MM-DD')}&page=${page}`
-  },
-  logo({ content, channel }) {
-    const [_, channelId] = channel.site_id.split('#')
-    const $ = cheerio.load(content)
-    const imgSrc = $(`li[title="${channelId}"] > img`).attr('src')
-
-    return imgSrc ? `https://www.vivacom.bg${imgSrc}` : null
   },
   parser: function ({ content, channel, date }) {
     let programs = []

@@ -1,6 +1,6 @@
 // npx epg-grabber --config=sites/vivacom.bg/vivacom.bg.config.js --channels=sites/vivacom.bg/vivacom.bg_bg.channels.xml --output=.gh-pages/guides/bg/vivacom.bg.epg.xml --days=2
 
-const { parser, url, logo, request } = require('./vivacom.bg.config.js')
+const { parser, url, request } = require('./vivacom.bg.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -14,11 +14,6 @@ const content = `<!DOCTYPE html><head></head> <body class="bg-BG" lang="en-UK"><
 it('can generate valid url', () => {
   const result = url({ date, channel })
   expect(result).toBe('https://www.vivacom.bg/bg/tv/programa/?date=2021-11-05&page=1')
-})
-
-it('can get logo url', () => {
-  const result = logo({ content, channel })
-  expect(result).toBe('https://www.vivacom.bg/web/files/richeditor/tv/bnt-1-hd.png')
 })
 
 it('can parse response', () => {
