@@ -16,9 +16,6 @@ module.exports = {
   request: {
     method: 'POST'
   },
-  logo({ channel }) {
-    return channel.logo
-  },
   parser: async function ({ buffer, date }) {
     let programs = []
     const items = await parseItems(buffer, date)

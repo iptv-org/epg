@@ -1,6 +1,6 @@
 // npx epg-grabber --config=sites/rotana.net/rotana.net.config.js --channels=sites/rotana.net/rotana.net_sa.channels.xml --output=guide.xml --days=2
 
-const { parser, url, logo, request } = require('./rotana.net.config.js')
+const { parser, url, request } = require('./rotana.net.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -10,8 +10,7 @@ dayjs.extend(utc)
 const date = dayjs.utc('2021-11-08', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: 'KHALIJIA-7',
-  xmltv_id: 'RotanaKhalejia.sa',
-  logo: 'https://rotana.net/triAssets/uploads/2020/11/khalijiat.png'
+  xmltv_id: 'RotanaKhalejia.sa'
 }
 const buffer =
   Buffer.from(`Event ID,Event Name,Arabic Event Name,Start Date,Start Time,End Date,End Time,Short Description,Arabic Short Description,Extended Description,Arabic Extended Description,,Genre,Audio,Video
@@ -21,11 +20,6 @@ const buffer =
 it('can generate valid url', () => {
   const result = url({ channel, date })
   expect(result).toBe('https://rotana.net/triAssets/uploads/2020/11/KHALIJIA-7.csv')
-})
-
-it('can get logo url', () => {
-  const result = logo({ channel })
-  expect(result).toBe('https://rotana.net/triAssets/uploads/2020/11/khalijiat.png')
 })
 
 it('can parse response', done => {
