@@ -18,11 +18,6 @@ module.exports = {
       return params
     }
   },
-  logo({ content, channel }) {
-    const data = parseContent(content, channel)
-
-    return data && data.logo ? `http://cdn-std-1.sibasa.netdna-cdn.com/co/${data.logo}` : null
-  },
   parser: function ({ content, channel }) {
     let programs = []
     const items = parseItems(content, channel)

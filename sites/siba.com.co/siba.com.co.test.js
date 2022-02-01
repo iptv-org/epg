@@ -1,6 +1,6 @@
 // npx epg-grabber --config=sites/siba.com.co/siba.com.co.config.js --channels=sites/siba.com.co/siba.com.co_co.channels.xml --output=.gh-pages/guides/co/siba.com.co.epg.xml --days=2
 
-const { parser, url, request, logo } = require('./siba.com.co.config.js')
+const { parser, url, request } = require('./siba.com.co.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -30,12 +30,6 @@ it('can generate valid request data', () => {
   expect(result.has('ini')).toBe(true)
   expect(result.has('end')).toBe(true)
   expect(result.has('chn')).toBe(true)
-})
-
-it('can get logo url', () => {
-  expect(logo({ content, channel })).toBe(
-    'http://cdn-std-1.sibasa.netdna-cdn.com/co/7c4b9e8566a6e867d1db4c7ce845f1f4.jpg'
-  )
 })
 
 it('can parse response', () => {
