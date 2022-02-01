@@ -1,7 +1,7 @@
 // node ./scripts/channels.js --config=./sites/rev.bs/rev.bs.config.js --output=./sites/rev.bs/rev.bs_bs.channels.xml
 // npx epg-grabber --config=sites/rev.bs/rev.bs.config.js --channels=sites/rev.bs/rev.bs_bs.channels.xml --output=.gh-pages/guides/bs/rev.bs.epg.xml --days=2
 
-const { parser, url, logo } = require('./rev.bs.config.js')
+const { parser, url } = require('./rev.bs.config.js')
 const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
@@ -15,18 +15,13 @@ jest.mock('axios')
 const date = dayjs.utc('2021-11-21', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: '206',
-  xmltv_id: 'WTVJ.us',
-  logo: 'https://zap2it.tmsimg.com/assets/s28717_h5_aa.png'
+  xmltv_id: 'WTVJ.us'
 }
 
 it('can generate valid url', () => {
   expect(url({ date, channel })).toBe(
     'https://www.rev.bs/wp-content/uploads/tv-guide/2021-11-21_0.json'
   )
-})
-
-it('can generate valid logo url', () => {
-  expect(logo({ channel })).toBe('https://zap2it.tmsimg.com/assets/s28717_h5_aa.png')
 })
 
 it('can parse response', done => {

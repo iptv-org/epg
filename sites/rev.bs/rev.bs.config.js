@@ -12,9 +12,6 @@ module.exports = {
   url: function ({ date }) {
     return `https://www.rev.bs/wp-content/uploads/tv-guide/${date.format('YYYY-MM-DD')}_0.json`
   },
-  logo({ channel }) {
-    return channel.logo
-  },
   parser: async function ({ content, channel, date }) {
     const programs = []
     const items0 = parseItems(content, channel)
