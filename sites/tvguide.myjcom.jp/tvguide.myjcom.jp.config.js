@@ -15,9 +15,6 @@ module.exports = {
 
     return `https://tvguide.myjcom.jp/api/getEpgInfo/?channels=${id}`
   },
-  logo({ channel }) {
-    return channel.logo || null
-  },
   parser: function ({ content, channel, date }) {
     let programs = []
     const items = parseItems(content, channel, date)
@@ -66,8 +63,7 @@ module.exports = {
       return {
         lang: 'jp',
         site_id: `${item.channel_type}_${item.channel_id}_${item.network_id}`,
-        name: item.channel_name,
-        logo: item.logo_url
+        name: item.channel_name
       }
     })
   }
