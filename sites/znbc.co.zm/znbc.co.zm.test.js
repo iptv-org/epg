@@ -1,6 +1,6 @@
 // npx epg-grabber --config=sites/znbc.co.zm/znbc.co.zm.config.js --channels=sites/znbc.co.zm/znbc.co.zm_zm.channels.xml --output=.gh-pages/guides/zm/znbc.co.zm.epg.xml --days=2
 
-const { parser, url, logo } = require('./znbc.co.zm.config.js')
+const { parser, url } = require('./znbc.co.zm.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -16,10 +16,6 @@ const content = `<!DOCTYPE html><html lang="en-US"> <head></head> <body class=" 
 
 it('can generate valid url', () => {
   expect(url({ channel })).toBe('https://www.znbc.co.zm/tv1/')
-})
-
-it('can generate valid logo url', () => {
-  expect(logo({ content })).toBe('https://www.znbc.co.zm/wp-content/uploads/2019/04/TV2-Logo.jpg')
 })
 
 it('can parse response', () => {

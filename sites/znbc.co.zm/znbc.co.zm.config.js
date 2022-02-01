@@ -14,14 +14,6 @@ module.exports = {
   url({ channel }) {
     return `https://www.znbc.co.zm/${channel.site_id}/`
   },
-  logo({ content }) {
-    const $ = cheerio.load(content)
-    const imgSrc = $(
-      '.elementor-tab-content > table > tbody > tr:nth-child(1) > td span > img'
-    ).data('src')
-
-    return imgSrc || null
-  },
   parser({ content, date }) {
     const programs = []
     const items = parseItems(content, date)
