@@ -12,9 +12,6 @@ module.exports = {
       'YYYYMMDD'
     )}_${channel.site_id}.sjson`
   },
-  logo: function ({ channel }) {
-    return `http://www.mediaset.it/include/img/loghi/${channel.site_id}.png`
-  },
   parser: function ({ content, date }) {
     const programs = []
     const data = JSON.parse(content)
