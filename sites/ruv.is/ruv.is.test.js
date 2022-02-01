@@ -1,6 +1,6 @@
 // npx epg-grabber --config=sites/ruv.is/ruv.is.config.js --channels=sites/ruv.is/ruv.is_is.channels.xml --output=.gh-pages/guides/is/ruv.is.epg.xml --days=2
 
-const { parser, url, logo } = require('./ruv.is.config.js')
+const { parser, url } = require('./ruv.is.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
