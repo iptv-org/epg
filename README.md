@@ -189,6 +189,10 @@ To load a program guide, all you need to do is copy the link to one or more of t
   </tbody>
 </table>
 
+## EPG Codes
+
+📋&nbsp;&nbsp;[iptv-org.github.io](https://iptv-org.github.io/)
+
 ## API
 
 The API documentation can be found in the [iptv-org/api](https://github.com/iptv-org/api) repository.
