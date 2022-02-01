@@ -4,7 +4,7 @@
 // node ./scripts/channels.js --config=./sites/allente.se/allente.se.config.js --output=./sites/allente.se/allente.se_dk.channels.xml --set=country:dk --set=lang:da
 // npx epg-grabber --config=sites/allente.se/allente.se.config.js --channels=sites/allente.se/allente.se_se.channels.xml --output=.gh-pages/guides/se/allente.se.epg.xml --days=2
 
-const { parser, url, logo } = require('./allente.se.config.js')
+const { parser, url } = require('./allente.se.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -14,8 +14,7 @@ dayjs.extend(utc)
 const date = dayjs.utc('2021-11-17', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: 'se#0148',
-  xmltv_id: 'SVT1.se',
-  logo: 'https://images.ctfassets.net/989y85n5kcxs/5uT9g9pdQWRZeDPQXVI9g6/e02f550a32e259b9be8081e83dc64948/svt_1_logotyp_rgb_0.png'
+  xmltv_id: 'SVT1.se'
 }
 
 it('can generate valid url', () => {
@@ -26,12 +25,6 @@ it('can generate valid url for different country', () => {
   const dkChannel = { site_id: 'dk#0148' }
   expect(url({ date, channel: dkChannel })).toBe(
     'https://cs-vcb.allente.dk/epg/events?date=2021-11-17'
-  )
-})
-
-it('can generate valid logo url', () => {
-  expect(logo({ channel })).toBe(
-    'https://images.ctfassets.net/989y85n5kcxs/5uT9g9pdQWRZeDPQXVI9g6/e02f550a32e259b9be8081e83dc64948/svt_1_logotyp_rgb_0.png'
   )
 })
 
