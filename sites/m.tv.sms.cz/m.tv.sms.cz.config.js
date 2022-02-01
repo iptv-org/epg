@@ -16,12 +16,6 @@ module.exports = {
       'YYYY-MM-DD'
     )}`
   },
-  logo: function ({ content }) {
-    const $ = cheerio.load(content)
-    const imgSrc = $('.logo_out > img').attr('src')
-
-    return imgSrc ? `https:${imgSrc}` : null
-  },
   parser: function ({ buffer, date }) {
     const programs = []
     const items = parseItems(buffer)

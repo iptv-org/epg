@@ -1,6 +1,6 @@
 // npx epg-grabber --config=sites/m.tv.sms.cz/m.tv.sms.cz.config.js --channels=sites/m.tv.sms.cz/m.tv.sms.cz_cz.channels.xml --output=.gh-pages/guides/cz/m.tv.sms.cz.epg.xml --days=2
 
-const { parser, url, logo } = require('./m.tv.sms.cz.config.js')
+const { parser, url } = require('./m.tv.sms.cz.config.js')
 const iconv = require('iconv-lite')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
@@ -20,10 +20,6 @@ it('can generate valid url', () => {
   expect(url({ channel, date })).toBe(
     'https://m.tv.sms.cz/index.php?stanice=Cero&cas=0&den=2021-11-24'
   )
-})
-
-it('can generate valid logo url', () => {
-  expect(logo({ content })).toBe('https://www.sms.cz/kategorie/televize/bmp/loga/velka/cero.png')
 })
 
 it('can parse response', () => {
