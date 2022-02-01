@@ -7,9 +7,6 @@ module.exports = {
       channel.site_id
     }&server_time=true`
   },
-  logo({ channel }) {
-    return `https://mobile-api.tvim.tv/images/channels/120x60px/${channel.site_id}.png`
-  },
   parser: function ({ content, channel, date }) {
     let programs = []
     const items = parseItems(content)

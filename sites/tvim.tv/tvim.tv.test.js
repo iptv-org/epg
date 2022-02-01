@@ -1,6 +1,6 @@
 // npx epg-grabber --config=sites/tvim.tv/tvim.tv.config.js --channels=sites/tvim.tv/tvim.tv_xk.channels.xml --days=2 --output=.gh-pages/guides/xk/tvim.tv.epg.xml
 
-const { parser, url, logo } = require('./tvim.tv.config.js')
+const { parser, url } = require('./tvim.tv.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -16,11 +16,6 @@ it('can generate valid url', () => {
   expect(result).toBe(
     'https://www.tvim.tv/script/program_epg?date=24.10.2021&prog=T7&server_time=true'
   )
-})
-
-it('can get logo url', () => {
-  const result = logo({ channel })
-  expect(result).toBe('https://mobile-api.tvim.tv/images/channels/120x60px/T7.png')
 })
 
 it('can parse response', () => {
