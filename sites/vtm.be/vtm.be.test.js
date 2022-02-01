@@ -1,6 +1,6 @@
 // npx epg-grabber --config=sites/vtm.be/vtm.be.config.js --channels=sites/vtm.be/vtm.be_be.channels.xml --output=.gh-pages/guides/be/vtm.be.epg.xml --days=2
 
-const { parser, url, logo } = require('./vtm.be.config.js')
+const { parser, url } = require('./vtm.be.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -18,12 +18,6 @@ window.__EPG__={"baseUrl":"/tv-gids","selectedChannel":null,"language":"nl","bra
 it('can generate valid url', () => {
   const result = url({ channel })
   expect(result).toBe('https://vtm.be/tv-gids/vtm')
-})
-
-it('can get logo url', () => {
-  expect(logo({ content, channel })).toBe(
-    'https://images4.persgroep.net/rcs/-JpJ692wUcyJ14N20YNDKhK3JEU/diocontent/175372657/_fitwidth/500?appId=da11c75db9b73ea0f41f0cd0da631c71'
-  )
 })
 
 it('can parse response', () => {
