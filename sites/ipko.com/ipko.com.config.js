@@ -8,9 +8,6 @@ module.exports = {
   url: function ({ date }) {
     return `https://www.ipko.com/epg/admin/programs.php?date=${date.format('YYYY-MM-DD')}`
   },
-  logo({ channel }) {
-    return channel.logo
-  },
   parser: function ({ content, channel, date }) {
     let programs = []
     const items = parseItems(content, channel)
