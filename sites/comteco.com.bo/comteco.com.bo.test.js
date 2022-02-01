@@ -1,6 +1,6 @@
 // npx epg-grabber --config=sites/comteco.com.bo/comteco.com.bo.config.js --channels=sites/comteco.com.bo/comteco.com.bo_bo.channels.xml --output=.gh-pages/guides/bo/comteco.com.bo.epg.xml --days=2
 
-const { parser, url, request, logo } = require('./comteco.com.bo.config.js')
+const { parser, url, request } = require('./comteco.com.bo.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -35,10 +35,6 @@ it('can generate valid request data', () => {
   expect(result.get('_method')).toBe('POST')
   expect(result.get('fechaini')).toBe('25/11/2021')
   expect(result.get('fechafin')).toBe('25/11/2021')
-})
-
-it('can generate valid logo url', () => {
-  expect(logo({ content })).toBe('https://comteco.com.bo/img/upload/canales/abya-yala.png')
 })
 
 it('can parse response', () => {

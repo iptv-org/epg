@@ -27,14 +27,6 @@ module.exports = {
       return params
     }
   },
-  logo: function ({ content }) {
-    const $ = cheerio.load(content)
-    const imgSrc = $('#myform > div.row > div:nth-child(1) > div.col-xs-5.col-sm-7 > img').attr(
-      'src'
-    )
-
-    return imgSrc ? `https://comteco.com.bo${imgSrc}` : null
-  },
   parser: function ({ content, date }) {
     const programs = []
     const items = parseItems(content)
