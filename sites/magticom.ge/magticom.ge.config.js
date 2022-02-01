@@ -27,9 +27,6 @@ module.exports = {
       return params
     }
   },
-  logo({ channel }) {
-    return channel.logo
-  },
   parser({ content }) {
     let programs = []
     const items = parseItems(content)
@@ -57,13 +54,11 @@ module.exports = {
 
     return channels.map(item => {
       const $item = cheerio.load(item)
-      const imgSrc = $item('.tv-guide-channel-title > div > img').attr('src')
       const channelId = $item('*').data('id')
       return {
         lang: 'ka',
         site_id: channelId,
-        name: $item('.tv-guide-channel-title > div > div').text(),
-        logo: imgSrc ? `https://www.magticom.ge/${imgSrc}` : null
+        name: $item('.tv-guide-channel-title > div > div').text()
       }
     })
   }

@@ -1,7 +1,7 @@
 // node ./scripts/channels.js --config=./sites/magticom.ge/magticom.ge.config.js --output=./sites/magticom.ge/magticom.ge_ge.channels.xml
 // npx epg-grabber --config=sites/magticom.ge/magticom.ge.config.js --channels=sites/magticom.ge/magticom.ge_ge.channels.xml --output=.gh-pages/guides/ge/magticom.ge.epg.xml --days=2
 
-const { parser, url, request, logo } = require('./magticom.ge.config.js')
+const { parser, url, request } = require('./magticom.ge.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -11,8 +11,7 @@ dayjs.extend(utc)
 const date = dayjs.utc('2021-11-22', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: '260',
-  xmltv_id: 'BollywoodTVRossiya.il',
-  logo: 'https://www.magticom.ge/images/channels/MjAyMS8wNy8yMi8zNDAyZDAzZi00MThlLTQyZWUtYTc1Zi05YjYyZjAzNDIwZjJCb2xseXdvb0RfLV81NjBfeF80MDgucG5n.jpg'
+  xmltv_id: 'BollywoodTVRossiya.il'
 }
 
 it('can generate valid url', () => {
@@ -35,12 +34,6 @@ it('can generate valid request data', () => {
   expect(result.has('channelId')).toBe(true)
   expect(result.has('start')).toBe(true)
   expect(result.has('end')).toBe(true)
-})
-
-it('can generate valid logo url', () => {
-  expect(logo({ channel })).toBe(
-    'https://www.magticom.ge/images/channels/MjAyMS8wNy8yMi8zNDAyZDAzZi00MThlLTQyZWUtYTc1Zi05YjYyZjAzNDIwZjJCb2xseXdvb0RfLV81NjBfeF80MDgucG5n.jpg'
-  )
 })
 
 it('can parse response', () => {
