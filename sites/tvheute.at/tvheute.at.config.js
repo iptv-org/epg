@@ -8,12 +8,6 @@ module.exports = {
       'DD-MM-YYYY'
     )}`
   },
-  logo({ content }) {
-    const $ = cheerio.load(content)
-    const imgSrc = $(`.station-info .logo`).attr('src')
-
-    return imgSrc ? `https://tvheute.at${imgSrc}` : null
-  },
   parser: function ({ content, channel, date }) {
     let programs = []
     const items = parseItems(content)

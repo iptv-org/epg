@@ -1,6 +1,6 @@
 // npx epg-grabber --config=sites/tvheute.at/tvheute.at.config.js --channels=sites/tvheute.at/tvheute.at_at.channels.xml --output=.gh-pages/guides/at/tvheute.at.epg.xml --days=2
 
-const { parser, url, logo, request } = require('./tvheute.at.config.js')
+const { parser, url, request } = require('./tvheute.at.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -17,10 +17,6 @@ it('can generate valid url', () => {
   expect(url({ channel, date })).toBe(
     'https://tvheute.at/part/channel-shows/partial/orf1/08-11-2021'
   )
-})
-
-it('can get logo url', () => {
-  expect(logo({ content })).toBe('https://tvheute.at/images/channels/ORF1--1394099696-01.png')
 })
 
 it('can parse response', () => {
