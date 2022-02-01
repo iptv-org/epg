@@ -24,14 +24,6 @@ module.exports = {
 
     return url
   },
-  logo: function ({ content }) {
-    const $ = cheerio.load(content)
-    const imgSrc = $(
-      '#content > div > div > div.span6 > img,#inner-headline > div > div > div > img'
-    ).attr('src')
-
-    return imgSrc || null
-  },
   parser: function ({ content, date, channel }) {
     const programs = []
     const items = parseItems(content)

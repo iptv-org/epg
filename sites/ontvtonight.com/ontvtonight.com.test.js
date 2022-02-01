@@ -1,6 +1,6 @@
 // npx epg-grabber --config=sites/ontvtonight.com/ontvtonight.com.config.js --channels=sites/ontvtonight.com/ontvtonight.com_au.channels.xml --output=.gh-pages/guides/au/ontvtonight.com.epg.xml --days=2
 
-const { parser, url, logo } = require('./ontvtonight.com.config.js')
+const { parser, url } = require('./ontvtonight.com.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -17,12 +17,6 @@ const content = `<!DOCTYPE html><html lang="en-AU" xmlns:og="http://opengraphpro
 it('can generate valid url', () => {
   expect(url({ channel, date })).toBe(
     'https://www.ontvtonight.com/au/guide/listings/channel/1692/7two.html?dt=2021-11-25'
-  )
-})
-
-it('can generate valid logo url', () => {
-  expect(logo({ content })).toBe(
-    'https://otv-us-web.s3-us-west-2.amazonaws.com/logos/guide/media/ed49cf4f-1123-4bee-9c90-a6af375af310.png'
   )
 })
 
