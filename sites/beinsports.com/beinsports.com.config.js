@@ -13,11 +13,6 @@ module.exports = {
       'YYYY-MM-DD'
     )}`
   },
-  logo({ content, channel }) {
-    const $ = cheerio.load(content)
-
-    return $(`#channels_${channel.site_id} .channel img`).attr('src')
-  },
   parser: function ({ content, channel, date }) {
     let offset = -1
     let programs = []

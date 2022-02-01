@@ -1,6 +1,6 @@
 // npx epg-grabber --config=sites/beinsports.com/beinsports.com.config.js --channels=sites/beinsports.com/beinsports.com_qa.channels.xml --days=2 --output=.gh-pages/guides/qa/beinsports.com.epg.xml
 
-const { parser, url, logo } = require('./beinsports.com.config.js')
+const { parser, url } = require('./beinsports.com.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -70,13 +70,6 @@ it('can generate valid url', () => {
   const result = url({ date })
   expect(result).toBe(
     'https://epg.beinsports.com/utctime.php?mins=00&serviceidentity=beinsports.com&cdate=2021-10-24'
-  )
-})
-
-it('can get logo url', () => {
-  const result = logo({ content, channel })
-  expect(result).toBe(
-    'https://assets.bein.com/mena/sites/3/2015/06/bein_SPORTS_FTA_DIGITAL_Mono.png'
   )
 })
 
