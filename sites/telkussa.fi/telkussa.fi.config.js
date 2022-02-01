@@ -5,9 +5,6 @@ module.exports = {
   url: function ({ date, channel }) {
     return `https://telkussa.fi/API/Channel/${channel.site_id}/${date.format('YYYYMMDD')}`
   },
-  logo: function ({ channel }) {
-    return `https://telkussa.fi/images/chan${channel.site_id}@3x.png`
-  },
   parser: function ({ content, date, channel }) {
     const programs = []
     const items = JSON.parse(content)
