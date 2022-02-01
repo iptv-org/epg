@@ -16,12 +16,6 @@ module.exports = {
 
     return `https://elcinema.com/${lang}tvguide/${channel.site_id}/`
   },
-  logo({ content }) {
-    const $ = cheerio.load(content)
-    const imgSrc = $('.intro-box > .row > div.columns.large-2 > img').attr('src')
-
-    return imgSrc || null
-  },
   parser({ content, channel, date }) {
     const programs = []
     const items = parseItems(content, channel, date)
@@ -105,14 +99,14 @@ function parseDescription(item) {
 
 function parseItems(content, channel, date) {
   const $ = cheerio.load(content)
-  
- const dateString = date.locale(channel.lang).format('dddd D MMMM')
-  
+
+  const dateString = date.locale(channel.lang).format('dddd D MMMM')
+
   const list = $('.dates')
     .filter((i, el) => {
       let parsedDateString = $(el).text().trim()
       parsedDateString = parsedDateString.replace(/\s\s+/g, ' ')
-      
+
       return parsedDateString === dateString
     })
     .first()

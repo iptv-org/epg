@@ -1,7 +1,7 @@
 // npx epg-grabber --config=sites/elcinema.com/elcinema.com.config.js --channels=sites/elcinema.com/elcinema.com_eg-en.channels.xml --output=.gh-pages/guides/eg-en/elcinema.com.epg.xml --days=2
 // npx epg-grabber --config=sites/elcinema.com/elcinema.com.config.js --channels=sites/elcinema.com/elcinema.com_eg-ar.channels.xml --output=.gh-pages/guides/eg-ar/elcinema.com.epg.xml --days=2
 
-const { parser, url, request, logo } = require('./elcinema.com.config.js')
+const { parser, url, request } = require('./elcinema.com.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -24,10 +24,6 @@ const contentEN = `<!DOCTYPE html><html lang="en" dir="ltr"> <head></head> <body
 
 it('can generate valid url', () => {
   expect(url({ channel: channelEN })).toBe('https://elcinema.com/en/tvguide/1127/')
-})
-
-it('can get logo url', () => {
-  expect(logo({ content: contentEN })).toBe('https://media.elcinema.com/tvguide/1127_1.png')
 })
 
 it('can parse response (en)', () => {
