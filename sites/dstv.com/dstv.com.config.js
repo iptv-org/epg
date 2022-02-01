@@ -16,9 +16,6 @@ module.exports = {
       'YYYY-MM-DD'
     )}`
   },
-  logo({ channel }) {
-    return channel.logo
-  },
   parser({ content, date, channel }) {
     const programs = []
     const items = parseItems(content, date, channel)
@@ -58,8 +55,7 @@ module.exports = {
       return {
         lang: 'en',
         site_id: `${bouquet}#${item.channelTag}`,
-        name: item.channelName,
-        logo: item.channelLogoPaths.XLARGE
+        name: item.channelName
       }
     })
   }

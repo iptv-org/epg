@@ -1,7 +1,7 @@
 // node ./scripts/commands/parse-channels.js --config=./sites/dstv.com/dstv.com.config.js --output=./sites/dstv.com/dstv.com_za.channels.xml --set=bouquet:c35aaecd-5dd1-480b-ae24-357e600a0e4d
 // npx epg-grabber --config=sites/dstv.com/dstv.com.config.js --channels=sites/dstv.com/dstv.com_za.channels.xml --output=guide.xml --timeout=30000 --days=2
 
-const { parser, url, logo } = require('./dstv.com.config.js')
+const { parser, url } = require('./dstv.com.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -11,20 +11,13 @@ dayjs.extend(utc)
 const date = dayjs.utc('2021-11-24', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: 'b0dc42b8-c651-4c3c-8713-a7fcd04744ee#M4H',
-  xmltv_id: 'MNetMovies4.za',
-  logo: 'https://rndcdn.dstv.com/dstvcms/2020/09/01/M-Net_Movies_4_Logo_4-3_lightbackground_xlrg.png'
+  xmltv_id: 'MNetMovies4.za'
 }
 
 it('can generate valid url', () => {
   const result = url({ date, channel })
   expect(result).toBe(
     'https://guide.dstv.com/api/gridview/page?bouquetId=b0dc42b8-c651-4c3c-8713-a7fcd04744ee&genre=all&date=2021-11-24'
-  )
-})
-
-it('can get logo url', () => {
-  expect(logo({ channel })).toBe(
-    'https://rndcdn.dstv.com/dstvcms/2020/09/01/M-Net_Movies_4_Logo_4-3_lightbackground_xlrg.png'
   )
 })
 
