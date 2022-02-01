@@ -8,9 +8,6 @@ module.exports = {
 
     return `https://cs-vcb.allente.${country}/epg/events?date=${date.format('YYYY-MM-DD')}`
   },
-  logo({ channel }) {
-    return channel.logo
-  },
   parser({ content, channel }) {
     let programs = []
     const items = parseItems(content, channel)
@@ -40,8 +37,7 @@ module.exports = {
       return {
         lang,
         site_id: `${country}#${item.id}`,
-        name: item.name,
-        logo: `https:${item.icon}`
+        name: item.name
       }
     })
   }
