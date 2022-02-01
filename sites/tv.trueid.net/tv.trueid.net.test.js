@@ -1,6 +1,6 @@
 // NODE_OPTIONS=--insecure-http-parser npx epg-grabber --config=sites/tv.trueid.net/tv.trueid.net.config.js --channels=sites/tv.trueid.net/tv.trueid.net_th.channels.xml --output=guide.xml --timeout=30000 --days=2
 
-const { parser, url, logo } = require('./tv.trueid.net.config.js')
+const { parser, url } = require('./tv.trueid.net.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -18,13 +18,6 @@ const content = `<!DOCTYPE html><html lang="th"><head></head><body><script id="_
 it('can generate valid url', () => {
   const result = url({ channel, date })
   expect(result).toBe('https://tv.trueid.net/tvguide/all/tv-nfl-nba/2021-10-28')
-})
-
-it('can get logo url', () => {
-  const result = logo({ content, channel })
-  expect(result).toBe(
-    'https://cms.dmpcdn.com/livetv/2021/09/28/2c9c41c0-203b-11ec-9346-6f50de6452df_webp_original.png'
-  )
 })
 
 it('can parse response', () => {

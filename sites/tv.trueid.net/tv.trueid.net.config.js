@@ -13,11 +13,6 @@ module.exports = {
   request: {
     jar: null
   },
-  logo: function ({ content, channel }) {
-    const data = parseContent(content, channel)
-
-    return data ? data.logo : null
-  },
   parser: function ({ content, channel }) {
     let programs = []
     const items = parseItems(content, channel)
