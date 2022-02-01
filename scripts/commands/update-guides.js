@@ -27,6 +27,9 @@ async function generateGuides() {
     let channels = {}
     let programs = []
     for (const item of grouped[key]) {
+      const itemPrograms = await loadProgramsForItem(item)
+      programs = programs.concat(itemPrograms)
+
       if (channels[item.channel.xmltv_id]) continue
 
       if (item.error) {
@@ -41,7 +44,6 @@ async function generateGuides() {
         criticalErrors.push(error)
         await logError(key, error)
       } else {
-        const itemPrograms = await loadProgramsForItem(item)
         if (!itemPrograms.length) {
           await logError(key, {
             xmltv_id: item.channel.xmltv_id,
@@ -73,8 +75,6 @@ async function generateGuides() {
           logo: channel.logo,
           site: item.channel.site
         }
-
-        programs = programs.concat(itemPrograms)
       }
     }
 
