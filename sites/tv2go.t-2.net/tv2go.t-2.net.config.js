@@ -38,9 +38,6 @@ const config = {
       }
     }
   },
-  logo({ channel }) {
-    return channel.logo
-  },
   parser({ content }) {
     let programs = []
     const items = parseItems(content)
@@ -81,8 +78,7 @@ const config = {
       return {
         lang: 'sl',
         site_id: item.id,
-        name: item.name,
-        logo: item.images[0] ? `https://tv2go.t-2.net${item.images[0].url}` : null
+        name: item.name
       }
     })
   }

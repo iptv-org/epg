@@ -1,7 +1,7 @@
 // node ./scripts/channels.js --config=./sites/tv2go.t-2.net/tv2go.t-2.net.config.js --output=./sites/tv2go.t-2.net/tv2go.t-2.net_si.channels.xml
 // npx epg-grabber --config=sites/tv2go.t-2.net/tv2go.t-2.net.config.js --channels=sites/tv2go.t-2.net/tv2go.t-2.net_si.channels.xml --output=.gh-pages/guides/si/tv2go.t-2.net.epg.xml --days=2
 
-const { parser, url, request, logo } = require('./tv2go.t-2.net.config.js')
+const { parser, url, request } = require('./tv2go.t-2.net.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -11,8 +11,7 @@ dayjs.extend(utc)
 const date = dayjs.utc('2021-11-19', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: '1000259',
-  xmltv_id: 'TVSlovenija1.si',
-  logo: 'https://tv2go.t-2.net/static/media/img/channels/dark/ios/small/retina/145597.png'
+  xmltv_id: 'TVSlovenija1.si'
 }
 
 it('can generate valid url', () => {
@@ -37,12 +36,6 @@ it('can generate valid request data', () => {
     includeBookmarks: false,
     includeShow: true
   })
-})
-
-it('can generate valid logo url', () => {
-  expect(logo({ channel })).toBe(
-    'https://tv2go.t-2.net/static/media/img/channels/dark/ios/small/retina/145597.png'
-  )
 })
 
 it('can parse response', () => {
