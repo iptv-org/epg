@@ -10,9 +10,6 @@ module.exports = {
   url: function ({ date }) {
     return `https://programacion-tv.elpais.com/data/parrilla_${date.format('DDMMYYYY')}.json`
   },
-  logo: function ({ channel }) {
-    return `https://programacion-tv.elpais.com/imagenes/canales/${channel.site_id}.jpg`
-  },
   parser: function ({ content, date, channel }) {
     const programs = []
     const data = JSON.parse(content)
