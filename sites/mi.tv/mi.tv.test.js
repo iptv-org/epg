@@ -1,6 +1,6 @@
 // npx epg-grabber --config=sites/mi.tv/mi.tv.config.js --channels=sites/mi.tv/mi.tv_ar.channels.xml --output=.gh-pages/guides/ar/mi.tv.epg.xml --days=2
 
-const { parser, url, logo } = require('./mi.tv.config.js')
+const { parser, url } = require('./mi.tv.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -17,12 +17,6 @@ const content = `<div id="listings"> <div class="channel-info"> <img src="https:
 it('can generate valid url', () => {
   expect(url({ channel, date })).toBe(
     'https://mi.tv/ar/async/channel/24-7-canal-de-noticias/2021-11-24/0'
-  )
-})
-
-it('can generate valid logo url', () => {
-  expect(logo({ content })).toBe(
-    'https://cdn.mitvstatic.com/channels/ar_24-7-canal-de-noticias_m.png'
   )
 })
 

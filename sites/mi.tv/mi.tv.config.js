@@ -13,12 +13,6 @@ module.exports = {
 
     return `https://mi.tv/${country}/async/channel/${id}/${date.format('YYYY-MM-DD')}/0`
   },
-  logo({ content }) {
-    const $ = cheerio.load(content)
-    const imgSrc = $('#listings > div.channel-info > img').attr('src')
-
-    return imgSrc || null
-  },
   parser({ content, date }) {
     const programs = []
     const items = parseItems(content)
