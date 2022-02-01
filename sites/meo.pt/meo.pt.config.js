@@ -9,6 +9,7 @@ dayjs.extend(timezone)
 
 module.exports = {
   site: 'meo.pt',
+  url: `https://www.meo.pt/_layouts/15/Ptsi.Isites.GridTv/GridTvMng.asmx/getProgramsFromChannels`,
   request: {
     method: 'POST',
     data: function ({ channel, date }) {
@@ -20,13 +21,6 @@ module.exports = {
         accountID: ''
       }
     }
-  },
-  logo({ content }) {
-    const data = parseContent(content)
-    return data.d.channels[0] ? data.d.channels[0].logo : null
-  },
-  url() {
-    return `https://www.meo.pt/_layouts/15/Ptsi.Isites.GridTv/GridTvMng.asmx/getProgramsFromChannels`
   },
   parser({ content }) {
     let programs = []
