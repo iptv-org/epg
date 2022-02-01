@@ -1,7 +1,7 @@
 // node ./scripts/channels.js --config=./sites/walesi.com.fj/walesi.com.fj.config.js --output=./sites/walesi.com.fj/walesi.com.fj_fj.channels.xml
 // npx epg-grabber --config=sites/walesi.com.fj/walesi.com.fj.config.js --channels=sites/walesi.com.fj/walesi.com.fj_fj.channels.xml --output=.gh-pages/guides/fj/walesi.com.fj.epg.xml --days=2
 
-const { parser, url, request, logo } = require('./walesi.com.fj.config.js')
+const { parser, url, request } = require('./walesi.com.fj.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
