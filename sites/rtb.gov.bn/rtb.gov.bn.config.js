@@ -20,9 +20,6 @@ module.exports = {
       } ${date.format('DD MMMM YYYY')}.pdf`
     )
   },
-  logo({ channel }) {
-    return channel.logo
-  },
   parser: async function ({ buffer, date }) {
     let programs = []
     const items = await parseItems(buffer)

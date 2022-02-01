@@ -1,6 +1,6 @@
 // npx epg-grabber --config=sites/rtb.gov.bn/rtb.gov.bn.config.js --channels=sites/rtb.gov.bn/rtb.gov.bn_bn.channels.xml --output=.gh-pages/guides/bn/rtb.gov.bn.epg.xml --days=2
 
-const { parser, url, logo } = require('./rtb.gov.bn.config.js')
+const { parser, url } = require('./rtb.gov.bn.config.js')
 const path = require('path')
 const fs = require('fs')
 const dayjs = require('dayjs')
@@ -12,19 +12,12 @@ dayjs.extend(utc)
 const date = dayjs.utc('2021-11-11', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: 'Sukmaindera',
-  xmltv_id: 'RTBSukmaindera.bn',
-  logo: 'http://www.rtb.gov.bn/SiteAssets/SitePages/TV%20Programme%20Division/LOGO%20RTB%20SUKMAINDERA.png'
+  xmltv_id: 'RTBSukmaindera.bn'
 }
 
 it('can generate valid url', () => {
   expect(url({ channel, date })).toBe(
     'http://www.rtb.gov.bn/PublishingImages/SitePages/Programme%20Guide/Sukmaindera%2011%20November%202021.pdf'
-  )
-})
-
-it('can get logo url', () => {
-  expect(logo({ channel })).toBe(
-    'http://www.rtb.gov.bn/SiteAssets/SitePages/TV%20Programme%20Division/LOGO%20RTB%20SUKMAINDERA.png'
   )
 })
 
