@@ -3,7 +3,7 @@
 // npx epg-grabber --config=sites/nowplayer.now.com/nowplayer.now.com.config.js --channels=sites/nowplayer.now.com/nowplayer.now.com_hk-zh.channels.xml --output=.gh-pages/guides/hk-zh/nowplayer.now.com.epg.xml --days=2
 // npx epg-grabber --config=sites/nowplayer.now.com/nowplayer.now.com.config.js --channels=sites/nowplayer.now.com/nowplayer.now.com_hk-en.channels.xml --output=.gh-pages/guides/hk-en/nowplayer.now.com.epg.xml --days=2
 
-const { parser, url, request, logo } = require('./nowplayer.now.com.config.js')
+const { parser, url, request } = require('./nowplayer.now.com.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -34,12 +34,6 @@ it('can generate valid request headers', () => {
   expect(request.headers({ channel })).toMatchObject({
     Cookie: `LANG=zh; Expires=null; Path=/; Domain=nowplayer.now.com`
   })
-})
-
-it('can get logo url', () => {
-  expect(logo({ channel })).toBe(
-    'https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch96_160_115'
-  )
 })
 
 it('can parse response', () => {

@@ -19,11 +19,6 @@ module.exports = {
       }
     }
   },
-  logo({ channel }) {
-    const channelId = channel.site_id.replace(/^0/, '')
-
-    return `https://images.now-tv.com/shares/channelPreview/img/en_hk/color/ch${channelId}_160_115`
-  },
   parser: function ({ content }) {
     let programs = []
     const items = parseItems(content)
