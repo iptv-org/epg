@@ -7,15 +7,6 @@ module.exports = {
       'DD-MM-YYYY'
     )}?filter=channel&subslug=${channel.site_id}`
   },
-  logo: function ({ content }) {
-    const data = JSON.parse(content)
-    const logo =
-      data.schedule.programme && data.schedule.programme.length
-        ? data.schedule.programme[0].channel.logo_64
-        : null
-
-    return logo ? `https://cdn.tvstart.com/img/channel/${logo}` : null
-  },
   parser: function ({ content }) {
     const programs = []
     const items = parseItems(content)
