@@ -1,7 +1,7 @@
 // node ./scripts/channels.js --config=./sites/gatotv.com/gatotv.com.config.js --output=./sites/gatotv.com/gatotv.com_cr.channels.xml --set=country:costa_rica
 // npx epg-grabber --config=sites/gatotv.com/gatotv.com.config.js --channels=sites/gatotv.com/gatotv.com_ar.channels.xml --output=.gh-pages/guides/ar/gatotv.com.epg.xml --days=2
 
-const { parser, url, request, logo } = require('./gatotv.com.config.js')
+const { parser, url, request } = require('./gatotv.com.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -17,12 +17,6 @@ const content = `<html> <head></head> <body> <div class="div_content" itemscope=
 
 it('can generate valid url', () => {
   expect(url({ channel, date })).toBe('https://www.gatotv.com/canal/13_de_argentina/2021-11-13')
-})
-
-it('can get logo url', () => {
-  expect(logo({ content })).toBe(
-    'https://imagenes.gatotv.com/logos/canales/oscuros/13_de_argentina-mediano.png'
-  )
 })
 
 it('can parse response', () => {

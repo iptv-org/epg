@@ -12,11 +12,6 @@ module.exports = {
   url: function ({ channel, date }) {
     return `https://www.gatotv.com/canal/${channel.site_id}/${date.format('YYYY-MM-DD')}`
   },
-  logo({ content }) {
-    const $ = cheerio.load(content)
-
-    return $('.div_MainPicture img').attr('src')
-  },
   parser: function ({ content, date }) {
     let programs = []
     const items = parseItems(content)
