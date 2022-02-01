@@ -11,9 +11,6 @@ dayjs.extend(customParseFormat)
 module.exports = {
   site: 'arianatelevision.com',
   url: `https://www.arianatelevision.com/program-schedule/`,
-  logo({ channel }) {
-    return channel.logo
-  },
   parser({ content, date }) {
     const programs = []
     const items = parseItems(content, date)
