@@ -12,9 +12,6 @@ module.exports = {
       channel.site_id
     }/${date.format('YYYY-MM-DD')}/0`
   },
-  logo({ channel }) {
-    return channel.logo
-  },
   parser: function ({ content, channel }) {
     const programs = []
     const items = parseItems(content, channel)
