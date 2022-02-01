@@ -1,7 +1,7 @@
 // node ./scripts/channels.js --config=./sites/programme-tv.vini.pf/programme-tv.vini.pf.config.js --output=./sites/programme-tv.vini.pf/programme-tv.vini.pf_pf.channels.xml
 // npx epg-grabber --config=sites/programme-tv.vini.pf/programme-tv.vini.pf.config.js --channels=sites/programme-tv.vini.pf/programme-tv.vini.pf_pf.channels.xml --output=.gh-pages/guides/pf/programme-tv.vini.pf.epg.xml --days=2
 
-const { parser, url, request, logo } = require('./programme-tv.vini.pf.config.js')
+const { parser, url, request } = require('./programme-tv.vini.pf.config.js')
 const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
@@ -15,8 +15,7 @@ jest.mock('axios')
 const date = dayjs.utc('2021-11-21', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: 'tf1',
-  xmltv_id: 'TF1.fr',
-  logo: 'https://programme-tv.vini.pf/sites/default/files/img-icones/192.png'
+  xmltv_id: 'TF1.fr'
 }
 
 it('can generate valid url', () => {
@@ -29,12 +28,6 @@ it('can generate valid request method', () => {
 
 it('can generate valid request data', () => {
   expect(request.data({ date })).toMatchObject({ dateDebut: '2021-11-20T14:00:00-10:00' })
-})
-
-it('can generate valid logo url', () => {
-  expect(logo({ channel })).toBe(
-    'https://programme-tv.vini.pf/sites/default/files/img-icones/192.png'
-  )
 })
 
 it('can parse response', done => {
