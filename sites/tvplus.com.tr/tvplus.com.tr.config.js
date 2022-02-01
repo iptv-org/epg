@@ -34,9 +34,6 @@ module.exports = {
       }
     }
   },
-  logo({ channel }) {
-    return channel.logo
-  },
   parser: function ({ content }) {
     let programs = []
     const items = parseItems(content)
