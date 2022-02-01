@@ -1,6 +1,6 @@
 // npx epg-grabber --config=sites/cosmote.gr/cosmote.gr.config.js --channels=sites/cosmote.gr/cosmote.gr_gr.channels.xml --output=.gh-pages/guides/gr/cosmote.gr.epg.xml --days=2
 
-const { parser, url, logo } = require('./cosmote.gr.config.js')
+const { parser, url } = require('./cosmote.gr.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
@@ -20,12 +20,6 @@ const content = `<!DOCTYPE html><html class="aui ltr" dir="ltr" lang="el-GR"> <h
 it('can generate valid url', () => {
   expect(url({ channel, date })).toBe(
     'https://www.cosmote.gr/cosmotetv/residential/program/epg/programchannel?p_p_id=channelprogram_WAR_OTETVportlet&p_p_lifecycle=0&_channelprogram_WAR_OTETVportlet_platform=IPTV&_channelprogram_WAR_OTETVportlet_date=25-11-2021&_channelprogram_WAR_OTETVportlet_articleTitleUrl=4e'
-  )
-})
-
-it('can generate valid logo url', () => {
-  expect(logo({ content })).toBe(
-    'https://www.cosmote.gr/portal/image/journal/article?img_id=56014332&t=1544180299920'
   )
 })
 

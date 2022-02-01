@@ -15,12 +15,6 @@ module.exports = {
       'DD-MM-YYYY'
     )}&_channelprogram_WAR_OTETVportlet_articleTitleUrl=${channel.site_id}`
   },
-  logo: function ({ content }) {
-    const $ = cheerio.load(content)
-    const imgSrc = $('img.channel_program-banner').attr('src')
-
-    return imgSrc ? `https://www.cosmote.gr${imgSrc}` : null
-  },
   parser: function ({ date, content }) {
     let programs = []
     const items = parseItems(content)
