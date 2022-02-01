@@ -1,6 +1,6 @@
 // npx epg-grabber --config=sites/hd-plus.de/hd-plus.de.config.js --channels=sites/hd-plus.de/hd-plus.de_de.channels.xml --output=.gh-pages/guides/de/hd-plus.de.epg.xml --days=2
 
-const { parser, url, logo } = require('./hd-plus.de.config.js')
+const { parser, url } = require('./hd-plus.de.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -17,10 +17,6 @@ const content = `<!DOCTYPE html><html> <head lang="de"></head> <body data-sensor
 it('can generate valid url', () => {
   const today = dayjs.utc().startOf('d')
   expect(url({ channel, date: today })).toBe('https://www.hd-plus.de/epg/channel/1-2-3-tv-hd?d=0')
-})
-
-it('can generate valid logo url', () => {
-  expect(logo({ content })).toBe('https://cdn.hd-plus.de/senderlogos/bright-cropped/24444-2.png')
 })
 
 it('can parse response', () => {

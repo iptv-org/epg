@@ -9,19 +9,12 @@ dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
 module.exports = {
-  lang: 'de',
   site: 'hd-plus.de',
   url({ date, channel }) {
     const today = dayjs().utc().startOf('d')
     const day = date.diff(today, 'd')
 
     return `https://www.hd-plus.de/epg/channel/${channel.site_id}?d=${day}`
-  },
-  logo({ content }) {
-    const $ = cheerio.load(content)
-    const imgSrc = $('header > img').attr('src')
-
-    return imgSrc ? `https:${imgSrc}` : null
   },
   parser({ content, date }) {
     const programs = []
