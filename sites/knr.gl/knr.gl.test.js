@@ -1,6 +1,6 @@
 // npx epg-grabber --config=sites/knr.gl/knr.gl.config.js --channels=sites/knr.gl/knr.gl_gl.channels.xml --output=.gh-pages/guides/gl/knr.gl.epg.xml --days=2
 
-const { parser, url, logo } = require('./knr.gl.config.js')
+const { parser, url } = require('./knr.gl.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -10,16 +10,11 @@ dayjs.extend(utc)
 const date = dayjs.utc('2021-11-22', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: '#',
-  xmltv_id: 'KNRTV.gl',
-  logo: 'https://knr.gl/files/knr_logo.jpg'
+  xmltv_id: 'KNRTV.gl'
 }
 
 it('can generate valid url', () => {
   expect(url({ date })).toBe('https://knr.gl/admin/knr/TV/program/2021-11-22/gl')
-})
-
-it('can get valid logo url', () => {
-  expect(logo({ channel })).toBe('https://knr.gl/files/knr_logo.jpg')
 })
 
 it('can parse response', () => {

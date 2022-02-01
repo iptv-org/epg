@@ -13,9 +13,6 @@ module.exports = {
   url({ date }) {
     return `https://knr.gl/admin/knr/TV/program/${date.format('YYYY-MM-DD')}/gl`
   },
-  logo({ channel }) {
-    return channel.logo
-  },
   parser({ content, date }) {
     let programs = []
     const items = parseItems(content)
