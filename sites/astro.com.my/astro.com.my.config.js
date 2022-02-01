@@ -10,9 +10,6 @@ module.exports = {
       'YYYY-MM-DD'
     )}:00:00:00&periodEnd=${date.format('YYYY-MM-DD')}:23:59:59&channelId=${channel.site_id}`
   },
-  logo: function ({ channel }) {
-    return `https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/${channel.site_id}_144.png`
-  },
   parser: function ({ content }) {
     const programs = []
     const data = JSON.parse(content)
