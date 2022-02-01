@@ -16,11 +16,6 @@ module.exports = {
 
     return `https://www.programetv.ro/post/${channel.site_id}/${daysOfWeek[day]}/`
   },
-  logo({ content }) {
-    const data = parseContent(content)
-
-    return data && data.station ? data.station.icon : null
-  },
   parser: function ({ content }) {
     let programs = []
     const data = parseContent(content)

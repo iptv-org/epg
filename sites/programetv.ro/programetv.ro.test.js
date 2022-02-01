@@ -1,6 +1,6 @@
 // npx epg-grabber --config=sites/programetv.ro/programetv.ro.config.js --channels=sites/programetv.ro/programetv.ro_ro.channels.xml --output=.gh-pages/guides/ro/programetv.ro.epg.xml --days=2
 
-const { parser, url, logo } = require('./programetv.ro.config.js')
+const { parser, url } = require('./programetv.ro.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -29,11 +29,6 @@ var __controls = [{"date":"2021-11-03","slug":"ieri","label":"Ieri","name":"Ieri
 it('can generate valid url', () => {
   const result = url({ date, channel })
   expect(result).toBe('https://www.programetv.ro/post/pro-tv/duminica/')
-})
-
-it('can get logo url', () => {
-  const result = logo({ content })
-  expect(result).toBe('https://static.cinemagia.ro/img/tv_station/pro-tv.jpg')
 })
 
 it('can parse response', () => {
