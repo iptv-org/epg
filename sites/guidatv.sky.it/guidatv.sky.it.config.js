@@ -6,11 +6,6 @@ module.exports = {
       .add(1, 'd')
       .format('YYYY-MM-DD')}T00:00:00Z&pageSize=999&pageNum=0&env=${env}&channels=${id}`
   },
-  logo: function ({ content }) {
-    if (!content.events) return null
-    const logo = content.events[0].channel.logo
-    return logo ? `https://guidatv.sky.it${logo}` : null
-  },
   parser: function ({ content, date }) {
     const programs = []
     const data = JSON.parse(content)
