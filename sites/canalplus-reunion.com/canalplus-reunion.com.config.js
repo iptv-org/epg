@@ -10,9 +10,6 @@ module.exports = {
 
     return `https://service.canal-overseas.com/ott-frontend/vector/63001/channel/${channel.site_id}/events?filter.day=${diff}`
   },
-  logo({ channel }) {
-    return channel.logo
-  },
   parser: function ({ content }) {
     let programs = []
     const items = parseItems(content)
