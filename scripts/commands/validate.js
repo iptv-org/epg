@@ -31,7 +31,7 @@ async function main() {
 
     if (output.length) {
       logger.info(chalk.underline(filepath))
-      console.table(output, ['xmltv_id', 'site_id', 'name'])
+      console.table(output, ['lang', 'xmltv_id', 'site_id', 'name'])
       console.log()
       stats.files++
     }
