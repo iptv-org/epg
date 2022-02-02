@@ -63,7 +63,7 @@ async function createQueue() {
 
       for (const d of dates) {
         const dString = d.toJSON()
-        const key = `${item.site}:${item.site_id}:${item.lang}:${dString}`
+        const key = `${item.site}:${item.lang}:${item.xmltv_id}:${dString}`
         if (!queue[key]) {
           queue[key] = {
             channel: {
@@ -106,7 +106,7 @@ async function saveToDatabase(items = []) {
     }
   }
 
-  queue = _.sortBy(queue, ['channel.xmltv_id', 'date'])
+  queue = _.sortBy(queue, ['channel.lang', 'channel.xmltv_id', 'date'])
 
   await db.queue.insert(queue)
 }
