@@ -39,6 +39,8 @@ async function main() {
 	let errors = []
 
 	for (const filepath of program.args) {
+		if (!filepath.endsWith('.xml')) continue
+
 		const xml = await file.read(filepath)
 
 		let localErrors = []
