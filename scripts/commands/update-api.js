@@ -1,85 +1,36 @@
-const { db, logger, file, xml } = require('../core')
+const { file, parser, logger } = require('../core')
+const { program } = require('commander')
 const _ = require('lodash')
 
-const DB_DIR = process.env.DB_DIR || 'scripts/database'
-const API_DIR = process.env.API_DIR || '.gh-pages/api'
+const CHANNELS_PATH = process.env.CHANNELS_PATH || 'sites/**/*.channels.xml'
+const OUTPUT_DIR = process.env.OUTPUT_DIR || '.gh-pages/api'
 
 async function main() {
-  await loadQueue()
+  const files = await file.list(CHANNELS_PATH)
+  let guides = []
+  for (const filepath of files) {
+    const { site, channels } = await parser.parseChannels(filepath)
+    const config = require(`../../sites/${site}/${site}.config.js`)
+    if (config.ignore) continue
 
-  const programs = await loadPrograms()
-  const guides = await getGuides(programs)
+    const filename = file.basename(filepath)
+    const [__, suffix] = filename.match(/\_(.*)\.channels\.xml$/) || [null, null]
 
-  await saveToGuidesJson(guides)
-  await saveToProgramsJson(programs)
+    for (const channel of channels) {
+      guides.push({
+        channel: channel.xmltv_id,
+        site,
+        lang: channel.lang,
+        url: `https://iptv-org.github.io/epg/guides/${suffix}/${site}.epg.xml`
+      })
+    }
+  }
+
+  guides = _.sortBy(guides, 'channel')
+
+  const outputFilepath = `${OUTPUT_DIR}/guides.json`
+  await file.create(outputFilepath, JSON.stringify(guides))
+  logger.info(`saved to "${outputFilepath}"...`)
 }
 
 main()
-
-async function loadQueue() {
-  logger.info('Loading queue...')
-
-  await db.queue.load()
-}
-
-async function getGuides(programs = []) {
-  programs = _.groupBy(programs, i => i._qid)
-
-  const queue = await db.queue.find({}).sort({ xmltv_id: 1 })
-
-  const output = []
-  for (const item of queue) {
-    item.groups.forEach(group => {
-      const channelPrograms = programs[item._id]
-      if (!item.error && channelPrograms) {
-        output.push({
-          channel: item.channel.xmltv_id,
-          site: item.channel.site,
-          lang: item.channel.lang,
-          url: `https://iptv-org.github.io/epg/guides/${group}.epg.xml`
-        })
-      }
-    })
-  }
-
-  return output
-}
-
-async function loadPrograms() {
-  logger.info('Loading programs...')
-  await db.programs.load()
-  return await db.programs.find({})
-}
-
-async function saveToGuidesJson(guides = []) {
-  const guidesPath = `${API_DIR}/guides.json`
-  logger.info(`Saving to "${guidesPath}"...`)
-  await file.create(guidesPath, JSON.stringify(guides))
-}
-
-async function saveToProgramsJson(programs = []) {
-  const programsPath = `${API_DIR}/programs.json`
-  logger.info(`Saving to "${programsPath}"...`)
-
-  programs = programs.map(item => {
-    const categories = Array.isArray(item.category) ? item.category : [item.category]
-
-    return {
-      channel: item.channel,
-      site: item.site,
-      lang: item.lang,
-      title: item.title,
-      desc: item.description || null,
-      categories: categories.filter(i => i),
-      season: item.season || null,
-      episode: item.episode || null,
-      image: item.icon || null,
-      start: item.start,
-      stop: item.stop
-    }
-  })
-
-  programs = _.sortBy(programs, ['channel', 'site', 'start'])
-
-  await file.create(programsPath, JSON.stringify(programs))
-}
