@@ -4,8 +4,6 @@ const chalk = require('chalk')
 
 program.argument('<filepath>', 'Path to file to validate').parse(process.argv)
 
-const options = program.opts()
-
 async function main() {
   await api.channels.load()
 
