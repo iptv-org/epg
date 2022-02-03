@@ -1,0 +1,19 @@
+name: _check
+on:
+  workflow_dispatch:
+  pull_request:
+    types: [opened, synchronize, reopened, edited]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Download channels from API
+        run: |
+          mkdir -p scripts/data
+          curl -L -o scripts/data/channels.json https://iptv-org.github.io/api/channels.json
+      - id: files
+        uses: jitterbit/get-changed-files@v1
+      - run: npm install
+      - run: npm run lint -- ${{ steps.files.outputs.added_modified }}
+      - run: npm run validate -- ${{ steps.files.outputs.added_modified }}

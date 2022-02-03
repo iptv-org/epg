@@ -17,6 +17,8 @@ async function main() {
   }
 
   for (const filepath of program.args) {
+    if (!filepath.endsWith('.xml')) continue
+
     const { site, channels } = await parser.parseChannels(filepath)
 
     const output = []
