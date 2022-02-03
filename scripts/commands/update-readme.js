@@ -15,6 +15,9 @@ async function main() {
   const items = []
   for (const filepath of files) {
     const { site, channels } = await parser.parseChannels(filepath)
+    const config = require(`../../sites/${site}/${site}.config.js`)
+    if (config.ignore) continue
+
     const filename = file.basename(filepath)
     const [__, suffix] = filename.match(/\_(.*)\.channels\.xml$/) || [null, null]
     const [code] = suffix.split('-')
