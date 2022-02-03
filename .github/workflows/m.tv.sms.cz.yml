@@ -1,4 +1,5 @@
 name: m.tv.sms.cz
+concurrency: sites
 on:
   workflow_dispatch:
   schedule:

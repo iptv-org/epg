@@ -1,4 +1,5 @@
 name: nowplayer.now.com
+concurrency: sites
 on:
   workflow_dispatch:
   schedule:

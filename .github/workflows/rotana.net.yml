@@ -1,4 +1,5 @@
 name: rotana.net
+concurrency: sites
 on:
   workflow_dispatch:
   schedule:

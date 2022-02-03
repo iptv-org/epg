@@ -1,4 +1,5 @@
 name: rev.bs
+concurrency: sites
 on:
   workflow_dispatch:
   schedule:

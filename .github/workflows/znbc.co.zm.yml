@@ -1,4 +1,5 @@
 name: znbc.co.zm
+concurrency: sites
 on:
   workflow_dispatch:
   schedule:

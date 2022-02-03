@@ -1,4 +1,5 @@
 name: comteco.com.bo
+concurrency: sites
 on:
   workflow_dispatch:
   schedule:

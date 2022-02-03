@@ -1,4 +1,5 @@
 name: delta.nl
+concurrency: sites
 on:
   workflow_dispatch:
   schedule:

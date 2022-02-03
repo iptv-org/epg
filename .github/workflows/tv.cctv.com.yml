@@ -1,4 +1,5 @@
 name: tv.cctv.com
+concurrency: sites
 on:
   workflow_dispatch:
   schedule:

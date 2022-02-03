@@ -1,4 +1,5 @@
 name: pbsguam.org
+concurrency: sites
 on:
   workflow_dispatch:
   schedule:

@@ -1,4 +1,5 @@
 name: tvtv.us
+concurrency: sites
 on:
   workflow_dispatch:
   schedule:

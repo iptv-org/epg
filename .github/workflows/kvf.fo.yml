@@ -1,4 +1,5 @@
 name: kvf.fo
+concurrency: sites
 on:
   workflow_dispatch:
   schedule:

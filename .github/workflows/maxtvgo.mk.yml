@@ -1,4 +1,5 @@
 name: maxtvgo.mk
+concurrency: sites
 on:
   workflow_dispatch:
   schedule:

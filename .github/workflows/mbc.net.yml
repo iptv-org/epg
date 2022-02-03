@@ -1,4 +1,5 @@
 name: mbc.net
+concurrency: sites
 on:
   workflow_dispatch:
   schedule:

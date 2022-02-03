@@ -1,4 +1,5 @@
 name: tv.mail.ru
+concurrency: sites
 on:
   workflow_dispatch:
   schedule:

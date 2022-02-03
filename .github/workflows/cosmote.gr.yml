@@ -1,4 +1,5 @@
 name: cosmote.gr
+concurrency: sites
 on:
   workflow_dispatch:
   schedule:

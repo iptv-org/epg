@@ -1,4 +1,5 @@
 name: meo.pt
+concurrency: sites
 on:
   workflow_dispatch:
   schedule:

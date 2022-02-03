@@ -1,4 +1,5 @@
 name: telkussa.fi
+concurrency: sites
 on:
   workflow_dispatch:
   schedule:

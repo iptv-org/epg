@@ -1,4 +1,5 @@
 name: tv.dir.bg
+concurrency: sites
 on:
   workflow_dispatch:
   schedule:

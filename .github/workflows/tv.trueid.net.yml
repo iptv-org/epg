@@ -1,4 +1,5 @@
 name: tv.trueid.net
+concurrency: sites
 on:
   workflow_dispatch:
   schedule:

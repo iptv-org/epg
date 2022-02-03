@@ -1,4 +1,5 @@
 name: tvgid.ua
+concurrency: sites
 on:
   workflow_dispatch:
   schedule:

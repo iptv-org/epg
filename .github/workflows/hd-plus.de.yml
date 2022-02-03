@@ -1,4 +1,5 @@
 name: hd-plus.de
+concurrency: sites
 on:
   workflow_dispatch:
   schedule:

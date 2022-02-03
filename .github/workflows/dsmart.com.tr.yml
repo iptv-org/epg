@@ -1,4 +1,5 @@
 name: dsmart.com.tr
+concurrency: sites
 on:
   workflow_dispatch:
   schedule:

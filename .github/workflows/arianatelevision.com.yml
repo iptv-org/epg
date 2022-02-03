@@ -1,4 +1,5 @@
 name: arianatelevision.com
+concurrency: sites
 on:
   workflow_dispatch:
   schedule:

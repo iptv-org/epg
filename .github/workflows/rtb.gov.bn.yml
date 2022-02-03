@@ -1,4 +1,5 @@
 name: rtb.gov.bn
+concurrency: sites
 on:
   workflow_dispatch:
   schedule:

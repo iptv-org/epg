@@ -1,4 +1,5 @@
 name: tv.yandex.ru
+concurrency: sites
 on:
   workflow_dispatch:
   schedule:

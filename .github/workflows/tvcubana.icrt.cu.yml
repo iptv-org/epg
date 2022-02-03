@@ -1,4 +1,5 @@
 name: tvcubana.icrt.cu
+concurrency: sites
 on:
   workflow_dispatch:
   schedule:

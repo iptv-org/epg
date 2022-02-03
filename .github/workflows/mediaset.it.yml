@@ -1,4 +1,5 @@
 name: mediaset.it
+concurrency: sites
 on:
   workflow_dispatch:
   schedule:

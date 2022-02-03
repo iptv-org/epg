@@ -1,4 +1,5 @@
 name: maxtv.hrvatskitelekom.hr
+concurrency: sites
 on:
   workflow_dispatch:
   schedule:

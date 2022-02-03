@@ -1,4 +1,5 @@
 name: gatotv.com
+concurrency: sites
 on:
   workflow_dispatch:
   schedule:

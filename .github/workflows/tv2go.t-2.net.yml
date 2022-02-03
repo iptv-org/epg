@@ -1,4 +1,5 @@
 name: tv2go.t-2.net
+concurrency: sites
 on:
   workflow_dispatch:
   schedule:

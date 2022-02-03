@@ -1,4 +1,5 @@
 name: digiturk.com.tr
+concurrency: sites
 on:
   workflow_dispatch:
   schedule:

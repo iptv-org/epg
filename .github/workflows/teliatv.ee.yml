@@ -1,4 +1,5 @@
 name: teliatv.ee
+concurrency: sites
 on:
   workflow_dispatch:
   schedule:

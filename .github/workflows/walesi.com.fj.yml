@@ -1,4 +1,5 @@
 name: walesi.com.fj
+concurrency: sites
 on:
   workflow_dispatch:
   schedule:
