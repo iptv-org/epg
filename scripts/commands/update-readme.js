@@ -1,37 +1,44 @@
-const { file, markdown, parser, logger, api } = require('../core')
+const { file, markdown, parser, logger, api, table } = require('../core')
 const { program } = require('commander')
 const _ = require('lodash')
 
-const LOGS_DIR = process.env.LOGS_DIR || 'scripts/logs'
+const CHANNELS_PATH = process.env.CHANNELS_PATH || 'sites/**/*.channels.xml'
 
 const options = program
   .option('-c, --config <config>', 'Set path to config file', '.readme/config.json')
   .parse(process.argv)
   .opts()
 
-const statuses = {
-  0: '🟢',
-  1: '🔴'
-}
-
 async function main() {
   await api.countries.load()
-  await api.subdivisions.load()
-  const records = await getLogRecords()
-  await generateCountriesTable(records)
-  await generateUSStatesTable(records)
-  await generateCanadaProvincesTable(records)
+  const files = await file.list(CHANNELS_PATH)
+  const items = []
+  for (const filepath of files) {
+    const { site, channels } = await parser.parseChannels(filepath)
+    const filename = file.basename(filepath)
+    const [__, suffix] = filename.match(/\_(.*)\.channels\.xml$/) || [null, null]
+    const [code] = suffix.split('-')
+
+    items.push({
+      code,
+      site,
+      count: channels.length,
+      group: `${suffix}/${site}`
+    })
+  }
+
+  await generateCountriesTable(items)
   await updateReadme()
 }
 
 main()
 
 async function generateCountriesTable(items = []) {
-  logger.info('Generating countries table...')
+  logger.info('generating countries table...')
 
   let rows = []
   for (const item of items) {
-    const country = api.countries.find({ code: item.code })
+    const country = api.countries.find({ code: item.code.toUpperCase() })
     if (!country) continue
 
     rows.push({
@@ -39,70 +46,25 @@ async function generateCountriesTable(items = []) {
       name: country.name,
       channels: item.count,
       epg: `<code>https://iptv-org.github.io/epg/guides/${item.group}.epg.xml</code>`,
-      status: statuses[item.status]
+      status: `<a href="https://github.com/iptv-org/epg/actions/workflows/${item.site}.yml"><img src="https://github.com/iptv-org/epg/actions/workflows/${item.site}.yml/badge.svg" alt="${item.site}" style="max-width: 100%;"></a>`
     })
   }
 
   rows = _.orderBy(rows, ['name', 'channels'], ['asc', 'desc'])
   rows = _.groupBy(rows, 'name')
 
-  const table = markdown.createTable(rows, ['Country', 'Channels', 'EPG', 'Status'])
+  const output = table.create(rows, [
+    'Country',
+    'Channels',
+    'EPG',
+    'Status&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
+  ])
 
-  await file.create('./.readme/_countries.md', table)
-}
-
-async function generateUSStatesTable(items = []) {
-  logger.info('Generating US states table...')
-
-  let rows = []
-  for (const item of items) {
-    if (!item.code.startsWith('US-')) continue
-    const state = api.subdivisions.find({ code: item.code })
-    if (!state) continue
-
-    rows.push({
-      name: state.name,
-      channels: item.count,
-      epg: `<code>https://iptv-org.github.io/epg/guides/${item.group}.epg.xml</code>`,
-      status: statuses[item.status]
-    })
-  }
-
-  rows = _.orderBy(rows, ['name', 'channels'], ['asc', 'desc'])
-  rows = _.groupBy(rows, 'name')
-
-  const table = markdown.createTable(rows, ['State', 'Channels', 'EPG', 'Status'])
-
-  await file.create('./.readme/_us-states.md', table)
-}
-
-async function generateCanadaProvincesTable(items = []) {
-  logger.info('Generating Canada provinces table...')
-
-  let rows = []
-  for (const item of items) {
-    if (!item.code.startsWith('CA-')) continue
-    const province = api.subdivisions.find({ code: item.code })
-    if (!province) continue
-
-    rows.push({
-      name: province.name,
-      channels: item.count,
-      epg: `<code>https://iptv-org.github.io/epg/guides/${item.group}.epg.xml</code>`,
-      status: statuses[item.status]
-    })
-  }
-
-  rows = _.orderBy(rows, ['name', 'channels'], ['asc', 'desc'])
-  rows = _.groupBy(rows, 'name')
-
-  const table = markdown.createTable(rows, ['Province', 'Channels', 'EPG', 'Status'])
-
-  await file.create('./.readme/_ca-provinces.md', table)
+  await file.create('./.readme/_countries.md', output)
 }
 
 async function updateReadme() {
-  logger.info('Updating README.md...')
+  logger.info('updating readme.md...')
 
   const config = require(file.resolve(options.config))
   await file.createDir(file.dirname(config.build))
