@@ -3,10 +3,11 @@
   "scripts": {
     "lint": "node scripts/commands/lint.js",
     "validate": "node scripts/commands/validate.js",
-    "act": "act workflow_dispatch",
     "test": "npx jest --runInBand",
     "test:commands": "npx jest --runInBand -- commands",
-    "test:sites": "npx jest --runInBand -- sites"
+    "test:sites": "npx jest --runInBand -- sites",
+    "act": "act workflow_dispatch",
+    "update-readme": "node scripts/commands/update-readme.js"
   },
   "private": true,
   "author": "Arhey",

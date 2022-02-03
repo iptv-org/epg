@@ -7,7 +7,7 @@ beforeEach(() => {
   fs.mkdirSync('tests/__data__/output')
 
   const stdout = execSync(
-    'LOGS_DIR=tests/__data__/input/logs DATA_DIR=tests/__data__/input/data node scripts/commands/update-readme.js --config=tests/__data__/input/_readme.json',
+    'CHANNELS_PATH=tests/__data__/input/sites/*.channels.xml DATA_DIR=tests/__data__/input/data node scripts/commands/update-readme.js --config=tests/__data__/input/_readme.json',
     { encoding: 'utf8' }
   )
 })

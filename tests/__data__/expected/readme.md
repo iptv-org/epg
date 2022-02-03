@@ -1,7 +1,5 @@
 # EPG
 
-![auto-update](https://github.com/iptv-org/epg/actions/workflows/auto-update.yml/badge.svg)
-
 EPG (Electronic Program Guide) for thousands of TV channels collected from different sources.
 
 ## Usage
@@ -11,40 +9,17 @@ To load a program guide, all you need to do is copy the link to one or more of t
 <!-- prettier-ignore -->
 <table>
   <thead>
-    <tr><th align="left">Country</th><th align="left">Channels</th><th align="left">EPG</th><th align="left">Status</th></tr>
+    <tr><th>Country</th><th>Channels</th><th>EPG</th><th>Status&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th></tr>
   </thead>
   <tbody>
-    <tr><td align="left" valign="top" nowrap>🇿🇦 South Africa</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/za/dstv.com.epg.xml</code></td><td align="center" nowrap>🟢</td></tr>
-    <tr><td align="left" valign="top" nowrap rowspan="2">🇺🇸 United States</td><td align="right">372</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us/tvtv.us.epg.xml</code></td><td align="center" nowrap>🟢</td></tr>
-    <tr><td align="right">74</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us/magticom.ge.epg.xml</code></td><td align="center" nowrap>🟢</td></tr>
+    <tr><td valign="top">🇨🇦&nbsp;Canada</td><td align="right">2</td><td nowrap><code>https://iptv-org.github.io/epg/guides/ca/example.com.epg.xml</code></td><td><a href="https://github.com/iptv-org/epg/actions/workflows/example.com.yml"><img src="https://github.com/iptv-org/epg/actions/workflows/example.com.yml/badge.svg" alt="example.com" style="max-width: 100%;"></a></td></tr>
+    <tr><td valign="top">🇪🇪&nbsp;Estonia</td><td align="right">1</td><td nowrap><code>https://iptv-org.github.io/epg/guides/ee-en/ignore.com.epg.xml</code></td><td><a href="https://github.com/iptv-org/epg/actions/workflows/ignore.com.yml"><img src="https://github.com/iptv-org/epg/actions/workflows/ignore.com.yml/badge.svg" alt="ignore.com" style="max-width: 100%;"></a></td></tr>
   </tbody>
 </table>
 
-### US States
+## EPG Codes
 
-<!-- prettier-ignore -->
-<table>
-  <thead>
-    <tr><th align="left">State</th><th align="left">Channels</th><th align="left">EPG</th><th align="left">Status</th></tr>
-  </thead>
-  <tbody>
-    <tr><td align="left" valign="top" nowrap rowspan="3">Puerto Rico</td><td align="right">14</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-pr/tvtv.us.epg.xml</code></td><td align="center" nowrap>🟢</td></tr>
-    <tr><td align="right">7</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-pr/gatotv.com.epg.xml</code></td><td align="center" nowrap>🔴</td></tr>
-    <tr><td align="right">0</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/us-pr/directv.com.epg.xml</code></td><td align="center" nowrap>🟢</td></tr>
-  </tbody>
-</table>
-
-### Provinces of Canada
-
-<!-- prettier-ignore -->
-<table>
-  <thead>
-    <tr><th align="left">Province</th><th align="left">Channels</th><th align="left">EPG</th><th align="left">Status</th></tr>
-  </thead>
-  <tbody>
-    <tr><td align="left" valign="top" nowrap>Newfoundland and Labrador</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/epg/guides/ca-nl/tvtv.us.epg.xml</code></td><td align="center" nowrap>🟢</td></tr>
-  </tbody>
-</table>
+📋&nbsp;&nbsp;[iptv-org.github.io](https://iptv-org.github.io/)
 
 ## API
 

@@ -36,8 +36,8 @@ it('can create queue', () => {
 })
 
 it('can log errors', () => {
-  let output = content('tests/__data__/output/logs/errors/ca-nl/example.com.log')
-  let expected = content('tests/__data__/expected/logs/errors/ca-nl/example.com.log')
+  let output = content('tests/__data__/output/logs/errors/ca/example.com.log')
+  let expected = content('tests/__data__/expected/logs/errors/ca/example.com.log')
 
   expect(output).toEqual(expected)
 })
