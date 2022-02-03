@@ -1,6 +1,7 @@
 {
   "name": "epg",
   "scripts": {
+    "lint": "node scripts/commands/lint.js",
     "validate": "node scripts/commands/validate.js",
     "act": "act workflow_dispatch",
     "test": "npx jest --runInBand",
@@ -26,6 +27,7 @@
     "glob": "^7.2.0",
     "iconv-lite": "^0.4.24",
     "jest": "^27.3.1",
+    "libxmljs": "^0.19.7",
     "lodash": "^4.17.21",
     "markdown-include": "^0.4.3",
     "mockdate": "^3.0.5",
