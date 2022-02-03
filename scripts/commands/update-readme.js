@@ -15,7 +15,8 @@ async function main() {
   const items = []
   for (const filepath of files) {
     const { site, channels } = await parser.parseChannels(filepath)
-    const config = require(`../../sites/${site}/${site}.config.js`)
+    const dir = file.dirname(filepath)
+    const config = require(file.resolve(`${dir}/${site}.config.js`))
     if (config.ignore) continue
 
     const filename = file.basename(filepath)
