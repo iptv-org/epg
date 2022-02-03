@@ -54,7 +54,7 @@ async function generateCountriesTable(items = []) {
   rows = _.groupBy(rows, 'name')
 
   const output = table.create(rows, [
-    'Country',
+    'Country&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;',
     'Channels',
     'EPG',
     'Status&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
@@ -69,16 +69,4 @@ async function updateReadme() {
   const config = require(file.resolve(options.config))
   await file.createDir(file.dirname(config.build))
   await markdown.compile(options.config)
-}
-
-async function getLogRecords() {
-  const logPath = `${LOGS_DIR}/guides.log`
-  const records = await parser.parseLogs(logPath)
-
-  return records.map(item => {
-    const code = item.group.split('/')[0] || ''
-    item.code = code.toUpperCase()
-
-    return item
-  })
 }
