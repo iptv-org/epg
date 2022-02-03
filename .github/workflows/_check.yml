@@ -8,16 +8,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Download channels from API
+        run: |
+          mkdir -p scripts/data
+          curl -L -o scripts/data/channels.json https://iptv-org.github.io/api/channels.json
       - id: files
         uses: jitterbit/get-changed-files@v1
-      - run: |
-          for changed_file in ${{ steps.files.outputs.added_modified }}; do
-            echo "Do something with this ${changed_file}."
-          done
-      # - name: Download channels from API
-      #   run: |
-      #     mkdir -p scripts/data
-      #     curl -L -o scripts/data/channels.json https://iptv-org.github.io/api/channels.json
-      # - run: npm install
-      # - run: npm run lint ${{ steps.files.outputs.added_modified }}
-      # - run: npm run validate ${{ steps.files.outputs.added_modified }}
+      - run: npm install
+      - run: npm run lint -- ${{ steps.files.outputs.added_modified }}
+      - run: npm run validate -- ${{ steps.files.outputs.added_modified }}
