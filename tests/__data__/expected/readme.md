@@ -9,11 +9,10 @@ To load a program guide, all you need to do is copy the link to one or more of t
 <!-- prettier-ignore -->
 <table>
   <thead>
-    <tr><th>Country</th><th>Channels</th><th>EPG</th><th>Status&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th></tr>
+    <tr><th>Country&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><th>Channels</th><th>EPG</th><th>Status&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th></tr>
   </thead>
   <tbody>
     <tr><td valign="top">🇨🇦&nbsp;Canada</td><td align="right">2</td><td nowrap><code>https://iptv-org.github.io/epg/guides/ca/example.com.epg.xml</code></td><td><a href="https://github.com/iptv-org/epg/actions/workflows/example.com.yml"><img src="https://github.com/iptv-org/epg/actions/workflows/example.com.yml/badge.svg" alt="example.com" style="max-width: 100%;"></a></td></tr>
-    <tr><td valign="top">🇪🇪&nbsp;Estonia</td><td align="right">1</td><td nowrap><code>https://iptv-org.github.io/epg/guides/ee-en/ignore.com.epg.xml</code></td><td><a href="https://github.com/iptv-org/epg/actions/workflows/ignore.com.yml"><img src="https://github.com/iptv-org/epg/actions/workflows/ignore.com.yml/badge.svg" alt="ignore.com" style="max-width: 100%;"></a></td></tr>
   </tbody>
 </table>
 
