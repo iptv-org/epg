@@ -71,7 +71,7 @@ async function generateGuides() {
 
         channels[channel.id] = {
           xmltv_id: channel.id,
-          name: channel.name,
+          name: item.channel.display_name,
           logo: channel.logo,
           site: item.channel.site
         }
