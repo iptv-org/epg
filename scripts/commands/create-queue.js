@@ -69,6 +69,7 @@ async function createQueue() {
             channel: {
               lang: item.lang,
               xmltv_id: item.xmltv_id,
+              display_name: item.name,
               site_id: item.site_id,
               site: item.site
             },
