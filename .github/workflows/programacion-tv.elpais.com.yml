@@ -1,5 +1,4 @@
 name: programacion-tv.elpais.com
-concurrency: sites
 on:
   workflow_dispatch:
   schedule:

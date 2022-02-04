@@ -1,5 +1,4 @@
 name: tvarenasport.hr
-concurrency: sites
 on:
   workflow_dispatch:
   schedule:

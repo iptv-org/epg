@@ -1,5 +1,4 @@
 name: novacyprus.com
-concurrency: sites
 on:
   workflow_dispatch:
   schedule:

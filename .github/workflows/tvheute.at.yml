@@ -1,5 +1,4 @@
 name: tvheute.at
-concurrency: sites
 on:
   workflow_dispatch:
   schedule:

@@ -1,5 +1,4 @@
 name: tvmusor.hu
-concurrency: sites
 on:
   workflow_dispatch:
   schedule:

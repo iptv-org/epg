@@ -1,5 +1,4 @@
 name: tv.blue.ch
-concurrency: sites
 on:
   workflow_dispatch:
   schedule:

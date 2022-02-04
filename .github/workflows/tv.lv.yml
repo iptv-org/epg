@@ -1,5 +1,4 @@
 name: tv.lv
-concurrency: sites
 on:
   workflow_dispatch:
   schedule:

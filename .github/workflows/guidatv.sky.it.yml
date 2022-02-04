@@ -1,5 +1,4 @@
 name: guidatv.sky.it
-concurrency: sites
 on:
   workflow_dispatch:
   schedule:

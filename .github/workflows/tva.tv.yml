@@ -1,5 +1,4 @@
 name: tva.tv
-concurrency: sites
 on:
   workflow_dispatch:
   schedule:

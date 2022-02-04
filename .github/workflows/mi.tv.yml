@@ -1,5 +1,4 @@
 name: mi.tv
-concurrency: sites
 on:
   workflow_dispatch:
   schedule:

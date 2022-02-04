@@ -1,5 +1,4 @@
 name: tvguide.myjcom.jp
-concurrency: sites
 on:
   workflow_dispatch:
   schedule:

@@ -1,5 +1,4 @@
 name: andorradifusio.ad
-concurrency: sites
 on:
   workflow_dispatch:
   schedule:

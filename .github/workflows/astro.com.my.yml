@@ -1,5 +1,4 @@
 name: astro.com.my
-concurrency: sites
 on:
   workflow_dispatch:
   schedule:

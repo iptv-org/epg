@@ -1,5 +1,4 @@
 name: mncvision.id
-concurrency: sites
 on:
   workflow_dispatch:
   schedule:

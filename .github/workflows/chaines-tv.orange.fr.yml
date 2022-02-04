@@ -1,5 +1,4 @@
 name: chaines-tv.orange.fr
-concurrency: sites
 on:
   workflow_dispatch:
   schedule:

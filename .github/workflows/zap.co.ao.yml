@@ -1,5 +1,4 @@
 name: zap.co.ao
-concurrency: sites
 on:
   workflow_dispatch:
   schedule:

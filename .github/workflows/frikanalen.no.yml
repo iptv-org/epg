@@ -1,5 +1,4 @@
 name: frikanalen.no
-concurrency: sites
 on:
   workflow_dispatch:
   schedule:

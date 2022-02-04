@@ -1,5 +1,4 @@
 name: magticom.ge
-concurrency: sites
 on:
   workflow_dispatch:
   schedule:

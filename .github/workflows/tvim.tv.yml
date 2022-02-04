@@ -1,5 +1,4 @@
 name: tvim.tv
-concurrency: sites
 on:
   workflow_dispatch:
   schedule:

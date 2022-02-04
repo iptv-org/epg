@@ -1,5 +1,4 @@
 name: canalplus-reunion.com
-concurrency: sites
 on:
   workflow_dispatch:
   schedule:

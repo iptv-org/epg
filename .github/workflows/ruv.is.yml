@@ -1,5 +1,4 @@
 name: ruv.is
-concurrency: sites
 on:
   workflow_dispatch:
   schedule:

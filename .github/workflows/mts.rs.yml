@@ -1,5 +1,4 @@
 name: mts.rs
-concurrency: sites
 on:
   workflow_dispatch:
   schedule:

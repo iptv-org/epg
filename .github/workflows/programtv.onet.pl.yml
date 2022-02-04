@@ -1,5 +1,4 @@
 name: programtv.onet.pl
-concurrency: sites
 on:
   workflow_dispatch:
   schedule:

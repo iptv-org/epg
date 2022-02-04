@@ -1,5 +1,4 @@
 name: tvplus.com.tr
-concurrency: sites
 on:
   workflow_dispatch:
   schedule:

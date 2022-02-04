@@ -1,5 +1,4 @@
 name: vtm.be
-concurrency: sites
 on:
   workflow_dispatch:
   schedule:

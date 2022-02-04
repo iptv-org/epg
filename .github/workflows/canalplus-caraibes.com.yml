@@ -1,5 +1,4 @@
 name: canalplus-caraibes.com
-concurrency: sites
 on:
   workflow_dispatch:
   schedule:

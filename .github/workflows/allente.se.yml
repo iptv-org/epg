@@ -1,5 +1,4 @@
 name: allente.se
-concurrency: sites
 on:
   workflow_dispatch:
   schedule:

@@ -1,5 +1,4 @@
 name: programme-tv.vini.pf
-concurrency: sites
 on:
   workflow_dispatch:
   schedule:
