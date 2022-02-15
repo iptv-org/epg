@@ -2,7 +2,7 @@ name: mi.tv
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '5 0 * * *'
 jobs:
   load:
     runs-on: ubuntu-latest
