@@ -5,6 +5,6 @@ on:
     - cron: '0 0 * * *'
 jobs:
   load:
-    uses: ./.github/workflows/_load.yml
+    uses: ./.github/workflows/_load.yml@${{github.ref}}
     with:
       site: ${{github.workflow}}
