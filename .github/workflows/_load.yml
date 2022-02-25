@@ -5,6 +5,11 @@ on:
       site:
         required: true
         type: string
+    secrets:
+      APP_ID:
+        required: true
+      APP_PRIVATE_KEY:
+        required: true
 jobs:
   load:
     runs-on: ubuntu-latest
