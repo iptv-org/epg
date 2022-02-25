@@ -9,6 +9,7 @@ jobs:
   load:
     runs-on: ubuntu-latest
     steps:
+      - run: echo running on branch ${GITHUB_REF##*/}
       - uses: actions/checkout@v2
       - name: Download data from API
         run: |
