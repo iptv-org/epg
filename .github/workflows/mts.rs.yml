@@ -7,4 +7,4 @@ jobs:
   load:
     uses: ./.github/workflows/_load.yml
     with:
-      site: mts.rs
+      site: ${{github.workflow}}
