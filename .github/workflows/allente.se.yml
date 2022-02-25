@@ -1,6 +1,10 @@
 name: allente.se
 on:
   workflow_dispatch:
+  workflow_run:
+    workflows: [_trigger]
+    types:
+      - completed
   schedule:
     - cron: '0 0 * * *'
 jobs:
