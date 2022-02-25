@@ -1,8 +1,12 @@
 name: rotana.net
 on:
-  workflow_dispatch:
   schedule:
     - cron: '0 0 * * *'
+  workflow_dispatch:
+  workflow_run:
+    workflows: [_trigger]
+    types:
+      - completed
 jobs:
   load:
     uses: ./.github/workflows/_load.yml

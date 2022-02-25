@@ -1,12 +1,12 @@
 name: allente.se
 on:
+  schedule:
+    - cron: '0 0 * * *'
   workflow_dispatch:
   workflow_run:
     workflows: [_trigger]
     types:
       - completed
-  schedule:
-    - cron: '0 0 * * *'
 jobs:
   load:
     uses: ./.github/workflows/_load.yml
