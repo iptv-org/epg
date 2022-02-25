@@ -1,4 +1,4 @@
-name: load
+name: _load
 on:
   workflow_call:
     inputs:
