@@ -65,7 +65,6 @@
     <channel lang="en" xmltv_id="BBCAmericaEast.uk" site_id="18332">BBC America East</channel>
     <channel lang="en" xmltv_id="BBCAmericaWest.uk" site_id="18339">BBC America West</channel>
     <channel lang="en" xmltv_id="BeInSportsenEspanol.qa" site_id="10856">BeIn Sports en Español</channel>
-    <channel lang="en" xmltv_id="BeInSportsenEspanol.qa" site_id="76943">BeIn Sports en Español</channel>
     <channel lang="en" xmltv_id="BeInSportsUSA.qa" site_id="10853">BeIn Sports USA</channel>
     <channel lang="en" xmltv_id="BETEast.us" site_id="10051">BET East</channel>
     <channel lang="en" xmltv_id="BETGospel.us" site_id="16484">BET Gospel</channel>
@@ -1344,16 +1343,15 @@
     <channel lang="en" xmltv_id="WTLFDT2.us" site_id="97223">Comet (WTLF2) Tallahassee FL</channel>
     <channel lang="en" xmltv_id="WTLFDT3.us" site_id="102330">TBD. (WTLF3) Tallahassee FL</channel>
     <channel lang="en" xmltv_id="WFSUDT1.us" site_id="35387">PBS (WFSU1) Tallahassee FL</channel>
-    <channel lang="en" xmltv_id="WFSUDT1.us" site_id="35389">The Florida Channel (WFSU2)</channel>
-    <channel lang="en" xmltv_id="WFSUDT1.us" site_id="35391">Create (WFSU3) Tallahassee FL</channel>
-    <channel lang="en" xmltv_id="WFSUDT1.us" site_id="35393">PBS Kids (WFSU4) Tallahassee FL</channel>
+    <channel lang="en" xmltv_id="WFSUDT2.us" site_id="35389">The Florida Channel (WFSU2)</channel>
+    <channel lang="en" xmltv_id="WFSUDT3.us" site_id="35391">Create (WFSU3) Tallahassee FL</channel>
+    <channel lang="en" xmltv_id="WFSUDT4.us" site_id="35393">PBS Kids (WFSU4) Tallahassee FL</channel>
     <channel lang="en" xmltv_id="WSBDT1.us" site_id="19586">ABC (WSB-DT1) Atanta GA</channel>
     <channel lang="en" xmltv_id="WSBDT2.us" site_id="59472">Bounce (WSB-DT2) Atanta GA</channel>
     <channel lang="en" xmltv_id="WSBDT3.us" site_id="92262">Dabl (WSB-DT3) Atanta GA</channel>
     <channel lang="en" xmltv_id="WGCLDT1.us" site_id="24505">CBS (WGCL-DT1) Atanta GA</channel>
     <channel lang="en" xmltv_id="WGCLDT2.us" site_id="63920">Cozi TV (WGCL-DT2) Atanta GA</channel>
     <channel lang="en" xmltv_id="WGCLDT3.us" site_id="46099">Grit (WGCL-DT3) Atanta GA</channel>
-    <channel lang="en" xmltv_id="WGCLDT3.us" site_id="119577">Fave TV (WGCL-DT4) Atanta GA</channel>
     <channel lang="en" xmltv_id="WXIADT1.us" site_id="19587">NBC (WXIA-DT1) Atanta GA</channel>
     <channel lang="en" xmltv_id="WXIADT3.us" site_id="63920">True Crime Network (WXIA-DT3) Atanta GA</channel>
     <channel lang="en" xmltv_id="WXIADT4.us" site_id="107026">Quest (WXIA-DT4) Atanta GA</channel>
@@ -1430,9 +1428,6 @@
     <channel lang="en" xmltv_id="WNYWDT2.us" site_id="30763">Movies! (WNYW-DT2) New York NY</channel>
     <channel lang="en" xmltv_id="WNYWDT4.us" site_id="97965">The Grio TV (WNYW-DT4) New York NY</channel>
     <channel lang="en" xmltv_id="WNYWDT5.us" site_id="112941">Decades (WNYW-DT5) New York NY</channel>
-    <channel lang="en" xmltv_id="WNYEDT1.us" site_id="26196">NYC Life (WNYE-DT1) New York NY</channel>
-    <channel lang="en" xmltv_id="WNYEDT2.us" site_id="28270">NYC Gov. (WNYE-DT2) New York NY</channel>
-    <channel lang="en" xmltv_id="WNYEDT3.us" site_id="28271">CUNY TV (WNYE-DT3) New York NY</channel>
     <channel lang="en" xmltv_id="WWJDT1.us" site_id="20376">CBS (WWJ-DT1) Detroit MI</channel>
     <channel lang="en" xmltv_id="WWJDT2.us" site_id="42610">Start TV (WWJ-DT2) Detroit MI</channel>
     <channel lang="en" xmltv_id="WWJDT3.us" site_id="42611">Dabl (WWJ-DT3) Detroit MI</channel>
@@ -1566,9 +1561,9 @@
     <channel lang="en" xmltv_id="WSFLDT3.us" site_id="68675">Antenna TV (WSFL-DT3) Miami FL</channel>
     <channel lang="en" xmltv_id="WSFLDT4.us" site_id="70585">TrueReal (WSFL-DT4) Miami FL</channel>
     <channel lang="en" xmltv_id="KDFWDT1.us" site_id="19616">FOX (KDFW-DT1) Dallas TX</channel>
-    <channel lang="en" xmltv_id="KDFWDT1.us" site_id="49091">MyNetwork TV (KDFW-DT2) Dallas TX</channel>
-    <channel lang="en" xmltv_id="KDFWDT1.us" site_id="113579">Heores and Icons (KDFW-DT3) Dallas TX</channel>
-    <channel lang="en" xmltv_id="KDFWDT1.us" site_id="115738">GetTV (KDFW-DT4) Dallas TX</channel>
+    <channel lang="en" xmltv_id="KDFWDT2.us" site_id="49091">MyNetwork TV (KDFW-DT2) Dallas TX</channel>
+    <channel lang="en" xmltv_id="KDFWDT3.us" site_id="113579">Heores and Icons (KDFW-DT3) Dallas TX</channel>
+    <channel lang="en" xmltv_id="KDFWDT4.us" site_id="115738">GetTV (KDFW-DT4) Dallas TX</channel>
     <channel lang="en" xmltv_id="KXASDT1.us" site_id="19627">NBC (KXAS-DT1) Dallas TX</channel>
     <channel lang="en" xmltv_id="KXASDT2.us" site_id="45803">Cozi TV (KXAS-DT2) Dallas TX</channel>
     <channel lang="en" xmltv_id="KXASDT3.us" site_id="61401">NBCLX (KXAS-DT3) Dallas TX</channel>
@@ -1627,9 +1622,9 @@
     <channel lang="en" xmltv_id="KASWDT1.us" site_id="30818">CW (KASW-DT1) Arizona PX</channel>
     <channel lang="en" xmltv_id="KASWDT2.us" site_id="97506">Grit (KASW-DT2) Arizona PX</channel>
     <channel lang="en" xmltv_id="KAETDT1.us" site_id="25102">PBS (KAET-DT1) Arizona PX</channel>
-    <channel lang="en" xmltv_id="KAETDT1.us" site_id="25103">PBS Arizona Life (KAET-DT2) Arizona PX</channel>
-    <channel lang="en" xmltv_id="KAETDT1.us" site_id="25104">PBS World (KAET-DT3) Arizona PX</channel>
-    <channel lang="en" xmltv_id="KAETDT1.us" site_id="58879">PBS Kids (KAET-DT4) Arizona PX</channel>
+    <channel lang="en" xmltv_id="KAETDT2.us" site_id="25103">PBS Arizona Life (KAET-DT2) Arizona PX</channel>
+    <channel lang="en" xmltv_id="KAETDT3.us" site_id="25104">PBS World (KAET-DT3) Arizona PX</channel>
+    <channel lang="en" xmltv_id="KAETDT4.us" site_id="58879">PBS Kids (KAET-DT4) Arizona PX</channel>
     <channel lang="en" xmltv_id="KUTPDT1.us" site_id="24345">My Nework TV (KUTP-DT1) Arizona PX</channel>
     <channel lang="en" xmltv_id="KUTPDT2.us" site_id="81451">Movies! (KUTP-DT2) Arizona PX</channel>
     <channel lang="en" xmltv_id="KUTPDT3.us" site_id="95625">Buzzr (KUTP-DT3) Arizona PX</channel>
