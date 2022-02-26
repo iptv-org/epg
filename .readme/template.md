@@ -9,9 +9,13 @@ To load a program guide, all you need to do is copy the link to one or more of t
 <!-- prettier-ignore -->
 #include "./.readme/_countries.md"
 
-## EPG Codes
+## API
 
-📋&nbsp;&nbsp;[iptv-org.github.io](https://iptv-org.github.io/)
+The API documentation can be found in the [iptv-org/api](https://github.com/iptv-org/api) repository.
+
+## Resources
+
+Links to other useful IPTV-related resources can be found in the [iptv-org/awesome-iptv](https://github.com/iptv-org/awesome-iptv) repository.
 
 ## API
 
