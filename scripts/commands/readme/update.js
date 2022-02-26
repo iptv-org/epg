@@ -1,4 +1,4 @@
-const { file, markdown, parser, logger, api, table } = require('../core')
+const { file, markdown, parser, logger, api, table } = require('../../core')
 const { program } = require('commander')
 const _ = require('lodash')
 

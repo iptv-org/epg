@@ -1,13 +1,18 @@
 {
   "name": "epg",
   "scripts": {
-    "lint": "node scripts/commands/lint.js",
-    "validate": "node scripts/commands/validate.js",
+    "channels:validate": "node scripts/commands/channels/validate.js",
+    "channels:lint": "node scripts/commands/channels/lint.js",
+    "queue:create": "node scripts/commands/queue/create.js",
+    "cluster:load": "node scripts/commands/cluster/load.js",
+    "programs:save": "node scripts/commands/programs/save.js",
+    "guides:update": "node scripts/commands/guides/update.js",
+    "api:update": "node scripts/commands/api/update.js",
+    "readme:update": "node scripts/commands/readme/update.js",
     "test": "npx jest --runInBand",
     "test:commands": "npx jest --runInBand -- commands",
     "test:sites": "npx jest --runInBand -- sites",
-    "act": "act workflow_dispatch",
-    "update-readme": "node scripts/commands/update-readme.js"
+    "act": "act workflow_dispatch"
   },
   "private": true,
   "author": "Arhey",
@@ -25,6 +30,7 @@
     "epg-grabber": "^0.20.0",
     "epg-parser": "^0.1.6",
     "form-data": "^4.0.0",
+    "fs-extra": "^10.0.1",
     "glob": "^7.2.0",
     "iconv-lite": "^0.4.24",
     "jest": "^27.3.1",

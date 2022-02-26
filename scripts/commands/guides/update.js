@@ -1,10 +1,10 @@
-const { db, logger, file, api } = require('../core')
+const { db, logger, file, api } = require('../../core')
 const grabber = require('epg-grabber')
 const _ = require('lodash')
 
 const LOGS_DIR = process.env.LOGS_DIR || 'scripts/logs'
 const PUBLIC_DIR = process.env.PUBLIC_DIR || '.gh-pages'
-const GUIDES_PATH = `${LOGS_DIR}/guides.log`
+const GUIDES_PATH = `${LOGS_DIR}/guides/update.log`
 
 async function main() {
   await setUp()

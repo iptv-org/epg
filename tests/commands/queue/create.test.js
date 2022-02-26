@@ -1,13 +1,12 @@
-const fs = require('fs')
-const path = require('path')
 const { execSync } = require('child_process')
+const fs = require('fs-extra')
+const path = require('path')
 
 beforeEach(() => {
-  fs.rmdirSync('tests/__data__/output', { recursive: true })
-  fs.mkdirSync('tests/__data__/output')
+  fs.emptyDirSync('tests/__data__/output')
 
   const stdout = execSync(
-    'DB_DIR=tests/__data__/output/database LOGS_DIR=tests/__data__/output/logs CHANNELS_PATH=tests/__data__/input/sites/*.channels.xml node scripts/commands/create-queue.js --max-clusters=1 --days=2',
+    'DB_DIR=tests/__data__/output/database LOGS_DIR=tests/__data__/output/logs CHANNELS_PATH=tests/__data__/input/sites/*.channels.xml npm run queue:create -- --max-clusters=1 --days=2',
     { encoding: 'utf8' }
   )
 })
@@ -33,13 +32,6 @@ it('can create queue', () => {
       expect.objectContaining(expected[1])
     ])
   )
-})
-
-it('can log errors', () => {
-  let output = content('tests/__data__/output/logs/errors/ca/example.com.log')
-  let expected = content('tests/__data__/expected/logs/errors/ca/example.com.log')
-
-  expect(output).toEqual(expected)
 })
 
 function content(filepath) {

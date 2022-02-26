@@ -1,7 +1,7 @@
 const _ = require('lodash')
 const grabber = require('epg-grabber')
 const { program } = require('commander')
-const { db, logger, timer, file, parser } = require('../core')
+const { db, logger, timer, file, parser } = require('../../core')
 
 const options = program
   .requiredOption('-c, --cluster-id <cluster-id>', 'The ID of cluster to load', parser.parseNumber)
@@ -16,7 +16,7 @@ const options = program
   .opts()
 
 const LOGS_DIR = process.env.LOGS_DIR || 'scripts/logs'
-const CLUSTER_PATH = `${LOGS_DIR}/load-cluster/cluster_${options.clusterId}.log`
+const CLUSTER_PATH = `${LOGS_DIR}/cluster/load/cluster_${options.clusterId}.log`
 
 async function main() {
   logger.info('Starting...')
