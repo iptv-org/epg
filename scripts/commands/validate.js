@@ -8,8 +8,8 @@ async function main() {
   await api.channels.load()
 
   const stats = {
-    channels: 0,
-    files: 0
+    files: 0,
+    errors: 0
   }
 
   if (!program.args.length) {
@@ -21,26 +21,32 @@ async function main() {
 
     const { site, channels } = await parser.parseChannels(filepath)
 
-    const output = []
+    const buffer = {}
+    const errors = []
     for (const channel of channels) {
+      if (!buffer[channel.xmltv_id]) {
+        buffer[channel.xmltv_id] = channel
+      } else {
+        errors.push({ type: 'duplicate', ...channel })
+        stats.errors++
+      }
+
       if (!api.channels.find({ id: channel.xmltv_id })) {
-        output.push(channel)
-        stats.channels++
+        errors.push({ type: 'wrong_xmltv_id', ...channel })
+        stats.errors++
       }
     }
 
-    if (output.length) {
+    if (errors.length) {
       logger.info(chalk.underline(filepath))
-      console.table(output, ['lang', 'xmltv_id', 'site_id', 'name'])
+      console.table(errors, ['type', 'lang', 'xmltv_id', 'site_id', 'name'])
       console.log()
       stats.files++
     }
   }
 
-  if (stats.channels > 0) {
-    logger.error(
-      chalk.red(`${stats.channels} channel(s) in ${stats.files} file(s) have the wrong xmltv_id`)
-    )
+  if (stats.errors > 0) {
+    logger.error(chalk.red(`${stats.errors} error(s) in ${stats.files} file(s)`))
     process.exit(1)
   }
 }
