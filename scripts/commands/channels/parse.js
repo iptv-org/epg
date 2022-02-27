@@ -1,5 +1,5 @@
+const { db, logger } = require('../../core')
 const { Command } = require('commander')
-const { db, logger } = require('../core')
 const path = require('path')
 const _ = require('lodash')
 const fs = require('fs')
