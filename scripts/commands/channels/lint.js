@@ -1,7 +1,7 @@
 const chalk = require('chalk')
 const libxml = require('libxmljs')
 const { program } = require('commander')
-const { logger, file } = require('../core')
+const { logger, file } = require('../../core')
 
 const xsd = `<?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
