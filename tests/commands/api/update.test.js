@@ -6,7 +6,7 @@ beforeEach(() => {
   fs.emptyDirSync('tests/__data__/output')
 
   const stdout = execSync(
-    'CHANNELS_PATH=tests/__data__/input/sites/**.channels.xml OUTPUT_DIR=tests/__data__/output/api npm run api:update',
+    'CHANNELS_PATH=tests/__data__/input/sites/example.com_ca.channels.xml OUTPUT_DIR=tests/__data__/output/api npm run api:update',
     { encoding: 'utf8' }
   )
 })
