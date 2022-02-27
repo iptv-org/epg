@@ -3,6 +3,7 @@
   "scripts": {
     "channels:validate": "node scripts/commands/channels/validate.js",
     "channels:lint": "node scripts/commands/channels/lint.js",
+    "channels:parse": "node scripts/commands/channels/parse.js",
     "queue:create": "node scripts/commands/queue/create.js",
     "cluster:load": "node scripts/commands/cluster/load.js",
     "programs:save": "node scripts/commands/programs/save.js",
