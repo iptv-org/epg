@@ -1,4 +1,4 @@
-const { parser, logger, api } = require('../core')
+const { parser, logger, api } = require('../../core')
 const { program } = require('commander')
 const chalk = require('chalk')
 
