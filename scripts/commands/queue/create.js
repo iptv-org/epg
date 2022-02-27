@@ -37,53 +37,57 @@ async function createQueue() {
   const utcDate = date.getUTC()
   const dates = Array.from({ length: options.days }, (_, i) => utcDate.add(i, 'd'))
   for (const filepath of files) {
-    const dir = file.dirname(filepath)
-    const { site, channels: items } = await parser.parseChannels(filepath)
-    if (!site) continue
-    const configPath = `${dir}/${site}.config.js`
-    const config = require(file.resolve(configPath))
-    if (config.ignore) continue
-    const filename = file.basename(filepath)
-    const [__, region] = filename.match(/_([a-z-]+)\.channels\.xml/i) || [null, null]
-    const groupId = `${region}/${site}`
-    for (const item of items) {
-      if (!item.site || !item.site_id || !item.xmltv_id) continue
-      const channel = api.channels.find({ id: item.xmltv_id })
-      if (!channel) {
-        await logError(groupId, {
-          xmltv_id: item.xmltv_id,
-          site: item.site,
-          site_id: item.site_id,
-          lang: item.lang,
-          date: undefined,
-          error: 'The channel has the wrong xmltv_id'
-        })
-        continue
-      }
+    try {
+      const dir = file.dirname(filepath)
+      const { site, channels: items } = await parser.parseChannels(filepath)
+      if (!site) continue
+      const configPath = `${dir}/${site}.config.js`
+      const config = require(file.resolve(configPath))
+      if (config.ignore) continue
+      const filename = file.basename(filepath)
+      const [__, region] = filename.match(/_([a-z-]+)\.channels\.xml/i) || [null, null]
+      const groupId = `${region}/${site}`
+      for (const item of items) {
+        if (!item.site || !item.site_id || !item.xmltv_id) continue
+        const channel = api.channels.find({ id: item.xmltv_id })
+        if (!channel) {
+          await logError(groupId, {
+            xmltv_id: item.xmltv_id,
+            site: item.site,
+            site_id: item.site_id,
+            lang: item.lang,
+            date: undefined,
+            error: 'The channel has the wrong xmltv_id'
+          })
+          continue
+        }
 
-      for (const d of dates) {
-        const dString = d.toJSON()
-        const key = `${item.site}:${item.lang}:${item.xmltv_id}:${dString}`
-        if (!queue[key]) {
-          queue[key] = {
-            channel: {
-              lang: item.lang,
-              xmltv_id: item.xmltv_id,
-              display_name: item.name,
-              site_id: item.site_id,
-              site: item.site
-            },
-            date: dString,
-            configPath,
-            groups: [],
-            error: null
+        for (const d of dates) {
+          const dString = d.toJSON()
+          const key = `${item.site}:${item.lang}:${item.xmltv_id}:${dString}`
+          if (!queue[key]) {
+            queue[key] = {
+              channel: {
+                lang: item.lang,
+                xmltv_id: item.xmltv_id,
+                display_name: item.name,
+                site_id: item.site_id,
+                site: item.site
+              },
+              date: dString,
+              configPath,
+              groups: [],
+              error: null
+            }
+          }
+
+          if (!queue[key].groups.includes(groupId)) {
+            queue[key].groups.push(groupId)
           }
         }
-
-        if (!queue[key].groups.includes(groupId)) {
-          queue[key].groups.push(groupId)
-        }
       }
+    } catch (err) {
+      console.error(err)
     }
   }
 
