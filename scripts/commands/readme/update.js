@@ -10,25 +10,30 @@ const options = program
   .opts()
 
 async function main() {
-  await api.countries.load()
-  const files = await file.list(CHANNELS_PATH)
   const items = []
-  for (const filepath of files) {
-    const { site, channels } = await parser.parseChannels(filepath)
-    const dir = file.dirname(filepath)
-    const config = require(file.resolve(`${dir}/${site}.config.js`))
-    if (config.ignore) continue
 
-    const filename = file.basename(filepath)
-    const [__, suffix] = filename.match(/\_(.*)\.channels\.xml$/) || [null, null]
-    const [code] = suffix.split('-')
+  try {
+    await api.countries.load()
+    const files = await file.list(CHANNELS_PATH)
+    for (const filepath of files) {
+      const { site, channels } = await parser.parseChannels(filepath)
+      const dir = file.dirname(filepath)
+      const config = require(file.resolve(`${dir}/${site}.config.js`))
+      if (config.ignore) continue
 
-    items.push({
-      code,
-      site,
-      count: channels.length,
-      group: `${suffix}/${site}`
-    })
+      const filename = file.basename(filepath)
+      const [__, suffix] = filename.match(/\_(.*)\.channels\.xml$/) || [null, null]
+      const [code] = suffix.split('-')
+
+      items.push({
+        code,
+        site,
+        count: channels.length,
+        group: `${suffix}/${site}`
+      })
+    }
+  } catch (err) {
+    console.error(err)
   }
 
   await generateCountriesTable(items)
