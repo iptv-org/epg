@@ -26,7 +26,7 @@ jobs:
         with:
           repository-name: iptv-org/api
           branch: gh-pages
-          folder: .gh-pages/api
+          folder: .api
           token: ${{ steps.create-app-token.outputs.token }}
           git-config-name: iptv-bot[bot]
           git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
