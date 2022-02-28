@@ -14,7 +14,6 @@ jobs:
   load:
     runs-on: ubuntu-latest
     steps:
-      - run: echo running on branch ${GITHUB_REF##*/}
       - uses: actions/checkout@v2
       - name: Download data from API
         run: |
@@ -24,7 +23,7 @@ jobs:
       - run: npm install
       - run: CHANNELS_PATH=sites/${{inputs.site}}/*.channels.xml npm run queue:create -- --max-clusters=1 --days=2
       - run: NODE_OPTIONS=--insecure-http-parser npm run cluster:load -- --timeout=30000 --cluster-id=1
-      - run: npm run results:save
+      - run: npm run programs:save
       - run: npm run guides:update
       - uses: tibdex/github-app-token@v1
         if: ${{ !env.ACT }}
