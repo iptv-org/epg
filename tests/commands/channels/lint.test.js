@@ -1,6 +1,6 @@
 const { execSync } = require('child_process')
 
-fit('will show a message if the file contains a syntax error', () => {
+it('will show a message if the file contains a syntax error', () => {
   try {
     const stdout = execSync(
       'npm run channels:lint -- tests/__data__/input/sites/lint.channels.xml',
