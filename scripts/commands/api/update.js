@@ -3,7 +3,7 @@ const { program } = require('commander')
 const _ = require('lodash')
 
 const CHANNELS_PATH = process.env.CHANNELS_PATH || 'sites/**/*.channels.xml'
-const OUTPUT_DIR = process.env.OUTPUT_DIR || '.gh-pages/api'
+const OUTPUT_DIR = process.env.OUTPUT_DIR || '.api'
 
 async function main() {
   let guides = []
