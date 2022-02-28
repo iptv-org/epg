@@ -10,12 +10,22 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 2
-      - name: Download channels from API
+      - name: Download data from API
         run: |
           mkdir -p scripts/data
           curl -L -o scripts/data/channels.json https://iptv-org.github.io/api/channels.json
-      - id: files
-        uses: jitterbit/get-changed-files@v1
-      - run: npm install
-      - run: npm run lint -- ${{ steps.files.outputs.added_modified }}
-      - run: npm run validate -- ${{ steps.files.outputs.added_modified }}
+      - uses: actions/setup-node@v2
+        if: ${{ !env.ACT && steps.files.outputs.any_changed == 'true' }}
+        with:
+          node-version: '14'
+          cache: 'npm'
+      - uses: tj-actions/changed-files@v12.2
+        id: files
+        with:
+          files: 'sites'
+      - name: validate
+        if: steps.files.outputs.any_changed == 'true'
+        run: |
+          npm install
+          npm run channels:lint -- ${{ steps.files.outputs.all_changed_files }}
+          npm run channels:validate -- ${{ steps.files.outputs.all_changed_files }}
