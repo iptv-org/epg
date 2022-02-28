@@ -16,7 +16,6 @@ module.exports = {
     const programs = []
     const items = parseItems(content, channel)
     items.forEach(item => {
-      if (item.showId == -1) return
       programs.push({
         title: item.et,
         description: item.epit,
