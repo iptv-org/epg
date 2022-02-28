@@ -13,7 +13,7 @@ const content = `{"cl":[{"ci":522,"el":[{"ei":122309300,"bsdt":1645916700000,"bs
 
 
 it('can generate valid url', () => {
-    expect(url()).toBe('https://www.sky.de/sgtvg/service/getBroadcastsForGrid')
+    expect(url).toBe('https://www.sky.de/sgtvg/service/getBroadcastsForGrid')
 })
 
 it('can parse response', () => {
