@@ -20,6 +20,11 @@ jobs:
           mkdir -p scripts/data
           curl -L -o scripts/data/channels.json https://iptv-org.github.io/api/channels.json
       - uses: FedericoCarboni/setup-ffmpeg@v1
+      - uses: actions/setup-node@v2
+        if: ${{ !env.ACT }}
+        with:
+          node-version: '14'
+          cache: 'npm'
       - run: npm install
       - run: CHANNELS_PATH=sites/${{inputs.site}}/*.channels.xml npm run queue:create -- --max-clusters=1 --days=2
       - run: NODE_OPTIONS=--insecure-http-parser npm run cluster:load -- --timeout=30000 --cluster-id=1
