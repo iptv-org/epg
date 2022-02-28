@@ -8,6 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 2
       - run: echo "::set-output name=branch_name::$(date +'bot/auto-update-%s')"
         id: create-branch-name
       - run: git config user.name 'iptv-bot[bot]'
