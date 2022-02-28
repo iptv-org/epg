@@ -4,7 +4,7 @@ on:
   schedule:
     - cron: '0 12 * * *'
 jobs:
-  check:
+  update:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -17,6 +17,11 @@ jobs:
         run: |
           mkdir -p scripts/data
           curl -L -o scripts/data/countries.json https://iptv-org.github.io/api/countries.json
+      - uses: actions/setup-node@v2
+        if: ${{ !env.ACT }}
+        with:
+          node-version: '14'
+          cache: 'npm'
       - run: npm install
       - run: npm run readme:update
       - name: Commit Changes
