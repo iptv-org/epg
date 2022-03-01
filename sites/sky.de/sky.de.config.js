@@ -2,7 +2,7 @@ const dayjs = require('dayjs')
 
 module.exports = {
   site: 'sky.de',
-  url: 'https://www.sky.de/sgtvg/service/getBroadcastsForGrid',
+  url: `https://www.sky.de/sgtvg/service/getBroadcastsForGrid`, 
   request: {
     method: 'POST',
     data: function ({ channel, date }) {
