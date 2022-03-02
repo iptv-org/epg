@@ -27,7 +27,7 @@ module.exports = {
       'Content-Type': 'application/x-www-form-urlencoded'
     }
   },
-  async parser({ content, date }) {
+  parser({ content, date }) {
     const programs = []
     const items = parseItems(content)
     for (const item of items) {
@@ -35,13 +35,13 @@ module.exports = {
       const start = parseStart(item, date)
       const duration = parseDuration(item)
       const stop = start.add(duration, 'm')
-      const description = await loadDescription(item)
+      const description = parseDescription(item)
 
       programs.push({
         title,
         description,
-        start: start.toJSON(),
-        stop: stop.toJSON()
+        start,
+        stop
       })
     }
 
@@ -69,7 +69,7 @@ module.exports = {
   }
 }
 
-async function loadDescription(item) {
+function parseDescription(item) {
   return cheerio.load(item)('td:last-child').text()
 }
 
