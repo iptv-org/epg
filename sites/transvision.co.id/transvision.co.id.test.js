@@ -32,7 +32,7 @@ it('can generate valid request data', () => {
   expect(result.get('yt0')).toBe('PROSES')
 })
 
-fit('can parse response', () => {
+it('can parse response', () => {
   const result = parser({ content, channel, date }).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
