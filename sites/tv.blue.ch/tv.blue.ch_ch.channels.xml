@@ -3,7 +3,7 @@
   <channels>
     <channel lang="ar" xmltv_id="2MMonde.ma" site_id="3">2M Monde</channel>
     <channel lang="ar" xmltv_id="Alarabiya.ae" site_id="13">Alarabiya</channel>
-    <channel lang="ar" xmltv_id="AljazeeraChannel.qa" site_id="14">Aljazeera Channel</channel>
+    <channel lang="ar" xmltv_id="AlJazeeraChannel.qa" site_id="14">Aljazeera Channel</channel>
     <channel lang="ar" xmltv_id="AlMasriyah.eg" site_id="154">Al Masriyah</channel>
     <channel lang="ar" xmltv_id="DubaiTV.ae" site_id="138">Dubai TV</channel>
     <channel lang="ar" xmltv_id="Watania1.tn" site_id="1673">Watania 1</channel>
@@ -27,7 +27,6 @@
     <channel lang="de" xmltv_id="AutoMotorogSportTV.de" site_id="1783">Auto Motor og Sport TV</channel>
     <channel lang="de" xmltv_id="AutoMotorundSport.de" site_id="1616">Auto Motor und Sport</channel>
     <channel lang="de" xmltv_id="AXNDeutschland.us" site_id="32">Sony AXN</channel>
-    <channel lang="de" xmltv_id="BayerischesFernsehenSud.de" site_id="55">Bayerisches Fernsehen Süd</channel>
     <channel lang="de" xmltv_id="Bergblick.de" site_id="1409">Bergblick</channel>
     <channel lang="de" xmltv_id="BibelTV.de" site_id="44">Bibel TV</channel>
     <channel lang="de" xmltv_id="Bild.de" site_id="1865">Bild</channel>
@@ -42,6 +41,7 @@
     <channel lang="de" xmltv_id="BodenseeTV.ch" site_id="49">Bodensee TV</channel>
     <channel lang="de" xmltv_id="BonGusto.de" site_id="1569">Bon Gusto</channel>
     <channel lang="de" xmltv_id="BoomerangDeutschland.us" site_id="54">Boomerang Deutschland</channel>
+    <channel lang="de" xmltv_id="BRFernsehenSud.de" site_id="55">Bayerisches Fernsehen Süd</channel>
     <channel lang="de" xmltv_id="CartoonNetworkDeutschland.us" site_id="83">Cartoon Network Deutschland</channel>
     <channel lang="de" xmltv_id="ComedyCentralHungary.us" site_id="110">Comedy Central Hungary</channel>
     <channel lang="de" xmltv_id="CrimePlusInvestigationDeutschland.us" site_id="1334">Crime + Investigation Deutschland</channel>
@@ -202,7 +202,7 @@
     <channel lang="en" xmltv_id="5Select.uk" site_id="1670">5 Select</channel>
     <channel lang="en" xmltv_id="5Star.uk" site_id="1652">5 Star</channel>
     <channel lang="en" xmltv_id="5USA.uk" site_id="1411">5 USA</channel>
-    <channel lang="en" xmltv_id="AljazeeraEnglish.qa" site_id="15">Aljazeera English</channel>
+    <channel lang="en" xmltv_id="AlJazeeraEnglish.qa" site_id="15">Aljazeera English</channel>
     <channel lang="en" xmltv_id="BBCFour.uk" site_id="35">BBC Four</channel>
     <channel lang="en" xmltv_id="BBCNews.uk" site_id="36">BBC News</channel>
     <channel lang="en" xmltv_id="BBCOne.uk" site_id="37">BBC One</channel>
@@ -546,7 +546,7 @@
     <channel lang="ru" xmltv_id="KaruselInternational.ru" site_id="1676">Karusel International</channel>
     <channel lang="ru" xmltv_id="NashKinomir.de" site_id="229">Nash Kinomir</channel>
     <channel lang="ru" xmltv_id="OstWest.de" site_id="922">Ost West</channel>
-    <channel lang="ru" xmltv_id="PerviykanalEuropa.ru" site_id="90">Perviy kanal Europa</channel>
+    <channel lang="ru" xmltv_id="PervyykanalEuropa.ru" site_id="90">Perviy kanal Europa</channel>
     <channel lang="ru" xmltv_id="RTRPlaneta.ru" site_id="366">RTR Planeta</channel>
     <channel lang="ru" xmltv_id="TelebomTeledom.de" site_id="587">Telebom &amp; Teledom</channel>
     <channel lang="sq" xmltv_id="ABCNews.al" site_id="1880">ABC News</channel>

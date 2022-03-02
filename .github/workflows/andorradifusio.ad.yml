@@ -1,36 +1,17 @@
 name: andorradifusio.ad
 on:
-  workflow_dispatch:
   schedule:
     - cron: '0 0 * * *'
+  workflow_dispatch:
+  workflow_run:
+    workflows: [_trigger]
+    types:
+      - completed
 jobs:
   load:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Download channels from API
-        run: |
-          mkdir -p scripts/data
-          curl -L -o scripts/data/channels.json https://iptv-org.github.io/api/channels.json
-      - uses: FedericoCarboni/setup-ffmpeg@v1
-      - run: npm install
-      - run: CHANNELS_PATH=sites/${{github.workflow}}/*.channels.xml node scripts/commands/create-queue.js --max-clusters=1 --days=2
-      - run: NODE_OPTIONS=--insecure-http-parser node scripts/commands/load-cluster.js --timeout=30000 --cluster-id=1
-      - run: node scripts/commands/save-results.js
-      - run: node scripts/commands/update-guides.js
-      - uses: tibdex/github-app-token@v1
-        if: ${{ !env.ACT }}
-        id: create-app-token
-        with:
-          app_id: ${{ secrets.APP_ID }}
-          private_key: ${{ secrets.APP_PRIVATE_KEY }}
-      - uses: JamesIves/github-pages-deploy-action@4.1.1
-        if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
-        with:
-          branch: gh-pages
-          folder: .gh-pages
-          token: ${{ steps.create-app-token.outputs.token }}
-          git-config-name: iptv-bot[bot]
-          git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
-          commit-message: '[Bot] Deploy to GitHub Pages'
-          clean: false
+    uses: ./.github/workflows/_load.yml
+    with:
+      site: ${{github.workflow}}
+    secrets:
+      APP_ID: ${{ secrets.APP_ID }}
+      APP_PRIVATE_KEY: ${{ secrets.APP_PRIVATE_KEY }}
