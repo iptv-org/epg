@@ -4,11 +4,10 @@ const grabber = require('epg-grabber')
 
 const parser = {}
 
-parser.parseChannels = async function(filepath) {
+parser.parseChannels = async function (filepath) {
   const content = await file.read(filepath)
-  const channels = grabber.parseChannels(content)
 
-  return channels
+  return grabber.parseChannels(content)
 }
 
 parser.parseLogs = async function (filepath) {
