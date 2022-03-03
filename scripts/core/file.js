@@ -48,6 +48,10 @@ file.write = function (filepath, data = '') {
   return fs.writeFile(path.resolve(filepath), data, { encoding: 'utf8' }).catch(console.error)
 }
 
+file.writeSync = function (filepath, data = '') {
+  return fs.writeFileSync(path.resolve(filepath), data, { encoding: 'utf8' })
+}
+
 file.clear = async function (filepath) {
   if (await file.exists(filepath)) return file.write(filepath, '')
   return true
