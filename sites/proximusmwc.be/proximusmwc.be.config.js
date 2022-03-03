@@ -42,7 +42,7 @@ module.exports = {
       operationName: 'getPlayableChannels',
       variables: { language: 'fr', id: '0' },
       query:
-        'query getPlayableChannels($language: String!, $queryParams: ChannelQueryParams, $id: String) { playableChannels(language: $language, queryParams: $queryParams, id: $id) { id name language }}'
+        'query getPlayableChannels($language: String!, $queryParams: ChannelQueryParams, $id: String) { playableChannels(language: $language, queryParams: $queryParams, id: $id) { id name language radio }}'
     }
     const data = await axios
       .post(`https://api.proximusmwc.be/v2/graphql`, query)
@@ -51,6 +51,7 @@ module.exports = {
 
     const channels = []
     for (let item of data.data.playableChannels) {
+      if (item.radio) continue
       channels.push({
         lang: item.language,
         site_id: item.id,
