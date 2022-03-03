@@ -4,6 +4,7 @@
     "channels:validate": "node scripts/commands/channels/validate.js",
     "channels:lint": "node scripts/commands/channels/lint.js",
     "channels:parse": "node scripts/commands/channels/parse.js",
+    "channels:editor": "node scripts/commands/channels/editor.js",
     "queue:create": "node scripts/commands/queue/create.js",
     "cluster:load": "node scripts/commands/cluster/load.js",
     "programs:save": "node scripts/commands/programs/save.js",
@@ -36,17 +37,20 @@
     "fs-extra": "^10.0.1",
     "glob": "^7.2.0",
     "iconv-lite": "^0.4.24",
+    "inquirer": "^8.2.0",
     "jest": "^27.3.1",
     "libxmljs": "^0.19.7",
     "lodash": "^4.17.21",
     "markdown-include": "^0.4.3",
     "mockdate": "^3.0.5",
     "nedb-promises": "^5.0.3",
+    "node-cleanup": "^2.1.2",
     "parse-duration": "^1.0.0",
     "pdf-parse": "^1.1.1",
     "signale": "^1.4.0",
     "srcset": "^4.0.0",
     "tabletojson": "^2.0.7",
+    "transliteration": "^2.2.0",
     "wildcard-match": "^5.1.2"
   }
 }
