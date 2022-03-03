@@ -33,7 +33,7 @@ async function main() {
 
   await file.write(outputFilepath, output)
 
-  logger.info(`File '${output}' successfully saved`)
+  logger.info(`File '${outputFilepath}' successfully saved`)
 }
 
 main()

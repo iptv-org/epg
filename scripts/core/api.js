@@ -16,6 +16,10 @@ class API {
   find(query) {
     return _.find(this.collection, query)
   }
+
+  all() {
+    return this.collection
+  }
 }
 
 const api = {}
