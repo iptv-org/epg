@@ -15,10 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Download data from API
-        run: |
-          mkdir -p scripts/data
-          curl -L -o scripts/data/channels.json https://iptv-org.github.io/api/channels.json
+      - run: npm run api:load
       - uses: FedericoCarboni/setup-ffmpeg@v1
       - uses: actions/setup-node@v2
         if: ${{ !env.ACT }}
