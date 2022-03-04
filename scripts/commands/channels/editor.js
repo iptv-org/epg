@@ -38,6 +38,7 @@ async function main() {
           channel.xmltv_id = input.xmltv_id
           break
         case 'Skip...':
+          channel.xmltv_id = '-'
           break
         default:
           const [name, xmltv_id] = selected.option
