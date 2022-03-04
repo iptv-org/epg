@@ -24,7 +24,12 @@ async function main() {
   if (isPromise(channels)) {
     channels = await channels
   }
-  channels = _.sortBy(channels, 'xmltv_id')
+  channels = channels.map(c => {
+    c.lang = c.lang || 'en'
+
+    return c
+  })
+  channels = _.sortBy(channels, ['lang', 'xmltv_id'])
 
   const dir = file.dirname(options.config)
   const outputFilepath = options.output || `${dir}/${config.site}.channels.xml`
