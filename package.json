@@ -10,6 +10,7 @@
     "programs:save": "node scripts/commands/programs/save.js",
     "guides:update": "node scripts/commands/guides/update.js",
     "api:update": "node scripts/commands/api/update.js",
+    "api:load": "mkdir -p scripts/data && curl -L -o scripts/data/channels.json https://iptv-org.github.io/api/channels.json",
     "readme:update": "node scripts/commands/readme/update.js",
     "test": "npx jest --runInBand",
     "test:commands": "npx jest --runInBand -- commands",
