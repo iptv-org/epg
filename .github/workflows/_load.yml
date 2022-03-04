@@ -14,18 +14,22 @@ jobs:
   load:
     runs-on: ubuntu-latest
     steps:
-      - run: echo running on branch ${GITHUB_REF##*/}
       - uses: actions/checkout@v2
       - name: Download data from API
         run: |
           mkdir -p scripts/data
           curl -L -o scripts/data/channels.json https://iptv-org.github.io/api/channels.json
       - uses: FedericoCarboni/setup-ffmpeg@v1
+      - uses: actions/setup-node@v2
+        if: ${{ !env.ACT }}
+        with:
+          node-version: '14'
+          cache: 'npm'
       - run: npm install
-      - run: CHANNELS_PATH=sites/${{inputs.site}}/*.channels.xml node scripts/commands/create-queue.js --max-clusters=1 --days=2
-      - run: NODE_OPTIONS=--insecure-http-parser node scripts/commands/load-cluster.js --timeout=30000 --cluster-id=1
-      - run: node scripts/commands/save-results.js
-      - run: node scripts/commands/update-guides.js
+      - run: CHANNELS_PATH=sites/${{inputs.site}}/*.channels.xml npm run queue:create -- --max-clusters=1 --days=2
+      - run: NODE_OPTIONS=--insecure-http-parser npm run cluster:load -- --timeout=30000 --cluster-id=1
+      - run: npm run programs:save
+      - run: npm run guides:update
       - uses: tibdex/github-app-token@v1
         if: ${{ !env.ACT }}
         id: create-app-token
