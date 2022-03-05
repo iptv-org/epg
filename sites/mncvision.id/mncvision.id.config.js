@@ -12,7 +12,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'mncvision.id',
-  url: `https://mncvision.id/schedule/table`,
+  url: 'https://mncvision.id/schedule/table',
   request: {
     method: 'POST',
     data: function ({ channel, date }) {
@@ -30,21 +30,33 @@ module.exports = {
       'Content-Type': 'multipart/form-data; boundary=X-EPG-BOUNDARY'
     }
   },
-  async parser({ content, date }) {
+  async parser({ content, date, headers }) {
     const programs = []
-    const items = parseItems(content)
+
+    let items = parseItems(content)
+    const pages = parsePages(content)
+    const cookies = headers && headers['set-cookie'] ? headers['set-cookie'].join(';') : ''
+    for (let url of pages) {
+      const nextContent = await axios
+        .get(url, {
+          headers: {
+            Cookie: cookies
+          }
+        })
+        .then(r => r.data)
+        .catch(console.log)
+      items = items.concat(parseItems(nextContent))
+    }
+
     for (const item of items) {
-      const title = parseTitle(item)
       const start = parseStart(item, date)
       const duration = parseDuration(item)
       const stop = start.add(duration, 'm')
-      const description = await loadDescription(item)
-
       programs.push({
-        title,
-        description,
-        start: start.toJSON(),
-        stop: stop.toJSON()
+        title: parseTitle(item),
+        description: await loadDescription(item),
+        start,
+        stop
       })
     }
 
@@ -116,4 +128,17 @@ function parseItems(content) {
   const $ = cheerio.load(content)
 
   return $('tr[valign="top"]').toArray()
+}
+
+function parsePages(content) {
+  const $ = cheerio.load(content)
+  const links = $('#schedule > div.schedule_search_result_container > div.box.well > a').toArray()
+
+  const pages = {}
+  for (let link of links) {
+    const url = $(link).attr('href')
+    pages[url] = true
+  }
+
+  return Object.keys(pages)
 }
