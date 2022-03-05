@@ -11,6 +11,7 @@ async function main() {
   await db.programs.load()
   await api.channels.load()
 
+  let total = 0
   const grouped = groupByGroup(await loadQueue())
   for (const key in grouped) {
     let channels = {}
@@ -35,6 +36,7 @@ async function main() {
     channels = Object.values(channels)
     channels = _.sortBy(channels, 'xmltv_id')
     programs = _.sortBy(programs, ['channel', 'start'])
+    total += programs.length
 
     const filepath = `${PUBLIC_DIR}/guides/${key}.epg.xml`
     logger.info(`Creating "${filepath}"...`)
@@ -42,7 +44,12 @@ async function main() {
     await file.create(filepath, output)
   }
 
-  logger.info(`Done`)
+  if (!total) {
+    logger.error('\nError: No programs found')
+    process.exit(1)
+  } else {
+    logger.info(`Done`)
+  }
 }
 
 main()
