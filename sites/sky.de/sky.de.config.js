@@ -2,6 +2,7 @@ const dayjs = require('dayjs')
 
 module.exports = {
   site: 'sky.de',
+  ignore: true, // server returns error 403 (https://github.com/iptv-org/epg/runs/5435899744?check_suite_focus=true)
   url: `https://www.sky.de/sgtvg/service/getBroadcastsForGrid`,
   request: {
     method: 'POST',
@@ -32,14 +33,13 @@ module.exports = {
   }
 }
 
-
 function parseContent(content, channel) {
-    const json = JSON.parse(content)
-    if (!Array.isArray(json.cl)) return null
-    return json.cl.find(i => i.ci == channel.site_id)
-  }
+  const json = JSON.parse(content)
+  if (!Array.isArray(json.cl)) return null
+  return json.cl.find(i => i.ci == channel.site_id)
+}
 
 function parseItems(content, channel) {
-    const data = parseContent(content, channel)
-    return data && Array.isArray(data.el) ? data.el : []
-  }
+  const data = parseContent(content, channel)
+  return data && Array.isArray(data.el) ? data.el : []
+}
