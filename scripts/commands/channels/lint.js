@@ -10,7 +10,7 @@ const xsd = `<?xml version="1.0" encoding="UTF-8"?>
       <xs:sequence>
         <xs:element ref="channels"/>
       </xs:sequence>
-      <xs:attribute name="site" use="required" type="xs:NCName"/>
+      <xs:attribute name="site" use="required" type="xs:string"/>
     </xs:complexType>
   </xs:element>
   <xs:element name="channels">
