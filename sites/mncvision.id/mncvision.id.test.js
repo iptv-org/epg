@@ -1,5 +1,6 @@
 // node ./scripts/channels.js --config=./sites/mncvision.id/mncvision.id.config.js --output=./sites/mncvision.id/mncvision.id_id.channels.xml
-// npx epg-grabber --config=sites/mncvision.id/mncvision.id.config.js --channels=sites/mncvision.id/mncvision.id_id.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/mncvision.id/mncvision.id.config.js --channels=sites/mncvision.id/mncvision.id_id-id.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/mncvision.id/mncvision.id.config.js --channels=sites/mncvision.id/mncvision.id_id-en.channels.xml --output=guide.xml --days=2
 
 const { parser, url, request } = require('./mncvision.id.config.js')
 const axios = require('axios')
@@ -12,9 +13,15 @@ dayjs.extend(utc)
 jest.mock('axios')
 
 const date = dayjs.utc('2021-11-12', 'YYYY-MM-DD').startOf('d')
-const channel = {
+const channelID = {
   site_id: '203',
-  xmltv_id: 'AnimalPlanetSoutheastAsia.us'
+  xmltv_id: 'AnimalPlanetSoutheastAsia.us',
+  lang: 'id'
+}
+const channelEN = {
+  site_id: '203',
+  xmltv_id: 'AnimalPlanetSoutheastAsia.us',
+  lang: 'en'
 }
 const setCookie = [
   's1nd0vL=0qpsmm7dpjmi7nt8d2h5epf16rmgg8a8; expires=Sat, 05-Mar-2022 15:44:22 GMT; Max-Age=7200; path=/; HttpOnly'
@@ -33,13 +40,18 @@ it('can generate valid request headers', () => {
 })
 
 it('can generate valid request data', () => {
-  const result = request.data({ channel, date })
+  const result = request.data({ channel: channelID, date })
   expect(result._boundary).toBe('X-EPG-BOUNDARY')
 })
 
-it('can parse response', done => {
+it('can parse response in Indonesian', done => {
   axios.get.mockImplementation((url, options = {}) => {
-    if (url === 'https://www.mncvision.id/schedule/detail/2022030500000041/Hey-Duggee-S3-Ep-22/1') {
+    if (
+      url === 'https://www.mncvision.id/schedule/detail/2022030500000041/Hey-Duggee-S3-Ep-22/1' &&
+      options.headers &&
+      options.headers['X-Requested-With'] === 'XMLHttpRequest' &&
+      options.headers['cookie'] === 's1nd0vL=bfh2v7qvrsso7ck6pama3ane6bfv5k5g;'
+    ) {
       return Promise.resolve({
         data: `<!DOCTYPE html><html lang="en"><head></head><body><blockquote class="bloquet synopsis">
       Nikmati suasana kehidupan koloni anjing laut di kawasan pantai barat Afrika Selatan.    </blockquote></body></html>`
@@ -57,7 +69,7 @@ it('can parse response', done => {
     return Promise.resolve({ data: '' })
   })
 
-  parser({ date, content: content0, headers: { 'set-cookie': setCookie } })
+  parser({ date, content: content0, headers: { 'set-cookie': setCookie }, channel: channelID })
     .then(result => {
       result = result.map(p => {
         p.start = p.start.toJSON()
@@ -87,10 +99,65 @@ it('can parse response', done => {
     })
 })
 
+it('can parse response in English', done => {
+  axios.get.mockImplementation((url, options = {}) => {
+    if (
+      url === 'https://www.mncvision.id/schedule/detail/2022030500000041/Hey-Duggee-S3-Ep-22/1' &&
+      options.headers &&
+      options.headers['X-Requested-With'] === 'XMLHttpRequest' &&
+      options.headers['cookie'] === 's1nd0vL=jgs82rfmntm362uvdbknng4l5n4lq4u4;'
+    ) {
+      return Promise.resolve({
+        data: `<!DOCTYPE html><html lang="en"><head></head><body><blockquote class="bloquet synopsis">
+      While Castiel investigates the disappearance of a local teen, Sam and Dean are visited by an old friend.    </blockquote></body></html>`
+      })
+    } else if (
+      url === 'https://www.mncvision.id/schedule/table/startno/50' &&
+      options.headers &&
+      options.headers['Cookie'] === setCookie.join(';')
+    ) {
+      return Promise.resolve({
+        data: content50
+      })
+    }
+
+    return Promise.resolve({ data: '' })
+  })
+
+  parser({ date, content: content0, headers: { 'set-cookie': setCookie }, channel: channelEN })
+    .then(result => {
+      result = result.map(p => {
+        p.start = p.start.toJSON()
+        p.stop = p.stop.toJSON()
+        return p
+      })
+
+      expect(result).toMatchObject([
+        {
+          start: '2021-11-11T17:00:00.000Z',
+          stop: '2021-11-11T17:07:00.000Z',
+          title: 'Hey Duggee S3, Ep 22',
+          description:
+            'While Castiel investigates the disappearance of a local teen, Sam and Dean are visited by an old friend.'
+        },
+        {
+          start: '2021-11-12T01:25:00.000Z',
+          stop: '2021-11-12T01:32:00.000Z',
+          title: 'Hey Duggee S1, Ep 46',
+          description: null
+        }
+      ])
+      done()
+    })
+    .catch(error => {
+      done(error)
+    })
+})
+
 it('can handle empty guide', done => {
   parser({
     date,
-    channel,
+    channel: channelID,
     content: `<!DOCTYPE html><html lang="en"><head></head><body></body></html>`
   })
     .then(result => {
