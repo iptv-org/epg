@@ -8,7 +8,7 @@ dayjs.extend(utc)
 const date = dayjs.utc('2022-02-28', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: '522',
-  xmltv_id: 'WarnerTVComedyDeutschlandHD.us'
+  xmltv_id: 'WarnerTVComedyHD.de'
 }
 
 const content = `{"cl":[{"ci":522,"el":[{"ei":122309300,"bsdt":1645916700000,"bst":"00:05","bedt":1645918200000,"len":25,"et":"King of Queens","ec":"Comedyserie","cop":"USA","yop":2001,"fsk":"ab 0 Jahre","epit":"Der Experte","sn":"4","en":"11","pu":"/static/img/program_guide/1522936_s.jpg"},{"ei":122309301,"bsdt":1645918200000,"bst":"00:30","bedt":1645919700000,"len":25,"et":"King of Queens","ec":"Comedyserie","cop":"USA","yop":2001,"fsk":"ab 0 Jahre","epit":"Speedy Gonzales","sn":"4","en":"12","pu":"/static/img/program_guide/1522937_s.jpg"}]}]}`
