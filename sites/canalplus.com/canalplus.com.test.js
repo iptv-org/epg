@@ -18,14 +18,14 @@ const channel = {
 jest.mock('axios')
 
 it('can generate valid url for today', () => {
-  const today = dayjs.utc('2022-03-07', 'YYYY-MM-DD').startOf('d')
+  const today = dayjs.utc().startOf('d')
   expect(url({ channel, date: today })).toBe(
     'https://hodor.canalplus.pro/api/v2/mycanal/channels/f55e5c7ddf0afba59d1c64581358910d/312/broadcasts/day/0'
   )
 })
 
 it('can generate valid url for tomorrow', () => {
-  const tomorrow = dayjs.utc('2022-03-08', 'YYYY-MM-DD').startOf('d')
+  const tomorrow = dayjs.utc().startOf('d').add(1, 'd')
   expect(url({ channel, date: tomorrow })).toBe(
     'https://hodor.canalplus.pro/api/v2/mycanal/channels/f55e5c7ddf0afba59d1c64581358910d/312/broadcasts/day/1'
   )
