@@ -1,4 +1,5 @@
 // npm run channels:parse -- --config=./sites/dstv.com/dstv.com.config.js --output=./sites/dstv.com/dstv.com_za.channels.xml --set=country:zaf
+// npm run channels:parse -- --config=./sites/dstv.com/dstv.com.config.js --output=./sites/dstv.com/dstv.com_ng.channels.xml --set=country:nga
 // npx epg-grabber --config=sites/dstv.com/dstv.com.config.js --channels=sites/dstv.com/dstv.com_za.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./dstv.com.config.js')
@@ -12,14 +13,24 @@ dayjs.extend(utc)
 jest.mock('axios')
 
 const date = dayjs.utc('2022-03-11', 'YYYY-MM-DD').startOf('d')
-const channel = {
-  site_id: 'zaf#HDT',
+const channelZA = {
+  site_id: 'zaf#101',
+  xmltv_id: 'MNetWest.za'
+}
+const channelNG = {
+  site_id: 'nga#101',
   xmltv_id: 'MNetWest.za'
 }
 
-it('can generate valid url', () => {
-  expect(url({ channel, date })).toBe(
-    'https://www.dstv.com/umbraco/api/TvGuide/GetProgrammes?d=2022-03-11&country=zaf'
+it('can generate valid url for zaf', () => {
+  expect(url({ channel: channelZA, date })).toBe(
+    'https://www.dstv.com/umbraco/api/TvGuide/GetProgrammes?d=2022-03-11&package=&country=zaf'
+  )
+})
+
+it('can generate valid url for nga', () => {
+  expect(url({ channel: channelNG, date })).toBe(
+    'https://www.dstv.com/umbraco/api/TvGuide/GetProgrammes?d=2022-03-11&package=DStv%20Premium&country=nga'
   )
 })
 
@@ -41,7 +52,7 @@ it('can parse response', done => {
     }
   })
 
-  parser({ content, channel })
+  parser({ content, channel: channelZA })
     .then(result => {
       result = result.map(p => {
         p.start = p.start.toJSON()
@@ -68,7 +79,7 @@ it('can parse response', done => {
 it('can handle empty guide', done => {
   parser({
     content: `{"Total":0,"Channels":[]}`,
-    channel
+    channel: channelZA
   })
     .then(result => {
       expect(result).toMatchObject([])
