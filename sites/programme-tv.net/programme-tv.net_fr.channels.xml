@@ -17,9 +17,9 @@
     <channel lang="fr" xmltv_id="BBCFour.uk" site_id="bbc4-247">BBC Four</channel>
     <channel lang="fr" xmltv_id="BBCOne.uk" site_id="bbc-1-230">BBC One</channel>
     <channel lang="fr" xmltv_id="BBCTwo.uk" site_id="bbc-2-231">BBC Two</channel>
-    <channel lang="fr" xmltv_id="BeInSports1.qa" site_id="bein-sports-1-183">BeIn Sports 1</channel>
-    <channel lang="fr" xmltv_id="BeInSports2.qa" site_id="bein-sports-2-184">BeIn Sports 2</channel>
-    <channel lang="fr" xmltv_id="BeInSports3.qa" site_id="bein-sports-3-265">BeIn Sports 3</channel>
+    <channel lang="fr" xmltv_id="BeInSports1France.qa" site_id="bein-sports-1-183">BeIn Sports 1 France</channel>
+    <channel lang="fr" xmltv_id="BeInSports2France.qa" site_id="bein-sports-2-184">BeIn Sports 2 France</channel>
+    <channel lang="fr" xmltv_id="BeInSports3France.qa" site_id="bein-sports-3-265">BeIn Sports 3 France</channel>
     <channel lang="fr" xmltv_id="BeInSportsMax10France.qa" site_id="bein-sports-max-10-305">BeIn Sports Max 10 France</channel>
     <channel lang="fr" xmltv_id="BeInSportsMax4France.qa" site_id="bein-sports-max-4-300">BeIn Sports Max 4 France</channel>
     <channel lang="fr" xmltv_id="BeInSportsMax5France.qa" site_id="bein-sports-max-5-301">BeIn Sports Max 5 France</channel>
@@ -39,10 +39,16 @@
     <channel lang="fr" xmltv_id="CanalJ.fr" site_id="canal-j-40">Canal J</channel>
     <channel lang="fr" xmltv_id="CanalPlusCinemaFrance.fr" site_id="canalplus-cinema-35">Canal + Cinéma France</channel>
     <channel lang="fr" xmltv_id="CanalPlusDecale.fr" site_id="canalplus-decale-36">Canal + Décalé</channel>
-    <channel lang="fr" xmltv_id="CanalPlusFamilyFrance.fr" site_id="canalplus-family-149">Canal + Family France</channel>
+    <channel lang="fr" xmltv_id="CanalPlusDocs.fr" site_id="canalplus-docs-9501">Canal + Docs</channel>
+    <channel lang="fr" xmltv_id="CanalPlusGrandEcranFrance.fr" site_id="canalplus-grand-ecran-11504">Canal + Grand Ecran France</channel>
+    <channel lang="fr" xmltv_id="CanalPlusKids.fr" site_id="canalplus-kids-149">Canal + Kids</channel>
+    <channel lang="fr" xmltv_id="CanalPlusFormula1.fr" site_id="canalplus-formula-1-10503">Canal + Formula 1</channel>
     <channel lang="fr" xmltv_id="CanalPlusFrance.fr" site_id="canalplus-2">Canal + France</channel>
+    <channel lang="fr" xmltv_id="CanalPlusMotoGp.fr" site_id="canalplus-moto-gp-10505">Canal + Moto GP</channel>
+    <channel lang="fr" xmltv_id="CanalPlusPremierLeague.fr" site_id="canalplus-premier-league-10506">Canal + Premier League</channel>
     <channel lang="fr" xmltv_id="CanalPlusSeriesFrance.fr" site_id="canalplus-series-227">Canal + Séries France</channel>
     <channel lang="fr" xmltv_id="CanalPlusSportFrance.fr" site_id="canalplus-sport-37">Canal + Sport France</channel>
+    <channel lang="fr" xmltv_id="CanalPlusTop14.fr" site_id="canalplus-top-14-10507">Canal + Top 14</channel>
     <channel lang="fr" xmltv_id="Canvas.be" site_id="canvas-234">Canvas</channel>
     <channel lang="fr" xmltv_id="CartoonNetworkFrance.us" site_id="cartoon-network-41">Cartoon Network France</channel>
     <channel lang="fr" xmltv_id="ChassePeche.fr" site_id="chasse-et-peche-42">Chasse &amp; Pêche</channel>
@@ -70,7 +76,7 @@
     <channel lang="fr" xmltv_id="EFrance.us" site_id="e-141">E! France</channel>
     <channel lang="fr" xmltv_id="Equidia.fr" site_id="equidia-59">Equidia</channel>
     <channel lang="fr" xmltv_id="Eurochannel.us" site_id="eurochannel-236">Eurochannel</channel>
-    <channel lang="fr" xmltv_id="EuroNewsFrancais.fr" site_id="euronews-62">EuroNews Français</channel>
+    <channel lang="fr" xmltv_id="EuronewsFrancais.fr" site_id="euronews-62">EuroNews Français</channel>
     <channel lang="fr" xmltv_id="Eurosport1France.fr" site_id="eurosport-1-5">Eurosport 1 France</channel>
     <channel lang="fr" xmltv_id="Eurosport2France.fr" site_id="eurosport-2-63">Eurosport 2 France</channel>
     <channel lang="fr" xmltv_id="FashionTVEurope.fr" site_id="fashion-tv-358">FashionTV Europe</channel>
@@ -163,6 +169,7 @@
     <channel lang="fr" xmltv_id="RMCDecouverte.fr" site_id="rmc-decouverte-205">RMC Découverte</channel>
     <channel lang="fr" xmltv_id="RMCSport1.fr" site_id="rmc-sport-1-452">RMC Sport 1</channel>
     <channel lang="fr" xmltv_id="RMCSport2.fr" site_id="rmc-sport-2-453">RMC Sport 2</channel>
+    <channel lang="fr" xmltv_id="RMCSportUHD.fr" site_id="rmc-sport-1-uhd-334">RMC Sport UHD</channel>
     <channel lang="fr" xmltv_id="RMCStory.fr" site_id="rmc-story-203">RMC Story</channel>
     <channel lang="fr" xmltv_id="RTBFLaUne.be" site_id="la-une-144">RTBF La Une</channel>
     <channel lang="fr" xmltv_id="RTFrance.ru" site_id="rt-france-480">RT France</channel>

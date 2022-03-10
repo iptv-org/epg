@@ -48,20 +48,9 @@ async function createQueue() {
       const [__, region] = filename.match(/_([a-z-]+)\.channels\.xml/i) || [null, null]
       const groupId = `${region}/${site}`
       for (const item of items) {
-        if (!item.site || !item.site_id || !item.xmltv_id) continue
+        if (!item.site || !item.xmltv_id) continue
         const channel = api.channels.find({ id: item.xmltv_id })
-        if (!channel) {
-          await logError(groupId, {
-            xmltv_id: item.xmltv_id,
-            site: item.site,
-            site_id: item.site_id,
-            lang: item.lang,
-            date: undefined,
-            error: 'The channel has the wrong xmltv_id'
-          })
-          continue
-        }
-
+        if (!channel) continue
         for (const d of dates) {
           const dString = d.toJSON()
           const key = `${item.site}:${item.lang}:${item.xmltv_id}:${dString}`
@@ -122,13 +111,4 @@ function split(arr, n) {
     result.push(arr.splice(0, Math.ceil(arr.length / i)))
   }
   return result
-}
-
-async function logError(key, data) {
-  const filepath = `${LOGS_DIR}/errors/${key}.log`
-  if (!(await file.exists(filepath))) {
-    await file.create(filepath)
-  }
-
-  await file.append(filepath, JSON.stringify(data) + '\r\n')
 }

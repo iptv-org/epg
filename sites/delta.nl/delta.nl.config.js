@@ -8,17 +8,19 @@ module.exports = {
       .add(1, 'd')
       .unix()}&includeDetails=true&channels=${channel.site_id}`
   },
-  parser: function ({ content, channel }) {
+  async parser({ content, channel }) {
     let programs = []
     const items = parseItems(content, channel)
-    items.forEach(item => {
+    for (let item of items) {
+      const details = await loadProgramDetails(item)
       programs.push({
         title: item.title,
         icon: item.images.thumbnail.url,
+        description: details.description,
         start: parseStart(item).toJSON(),
         stop: parseStop(item).toJSON()
       })
-    })
+    }
 
     return programs
   },
@@ -38,6 +40,17 @@ module.exports = {
         }
       })
   }
+}
+
+async function loadProgramDetails(item) {
+  if (!item.ID) return {}
+  const url = `https://clientapi.tv.delta.nl/guide/4/details/${item.ID}?X-Response-Version=4.5`
+  const data = await axios
+    .get(url)
+    .then(r => r.data)
+    .catch(console.log)
+
+  return data || {}
 }
 
 function parseStart(item) {
