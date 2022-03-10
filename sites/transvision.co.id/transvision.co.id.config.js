@@ -31,15 +31,13 @@ module.exports = {
     const programs = []
     const items = parseItems(content)
     for (const item of items) {
-      const title = parseTitle(item)
+      const prev = programs[programs.length - 1]
       const start = parseStart(item, date)
-      const duration = parseDuration(item)
-      const stop = start.add(duration, 'm')
-      const description = parseDescription(item)
-
+      if (prev) prev.stop = start
+      const stop = start.add(30, 'm')
       programs.push({
-        title,
-        description,
+        title: parseTitle(item),
+        description: parseDescription(item),
         start,
         stop
       })
