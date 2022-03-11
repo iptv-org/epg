@@ -1,6 +1,7 @@
 // npm run channels:parse -- --config=./sites/dstv.com/dstv.com.config.js --output=./sites/dstv.com/dstv.com_za.channels.xml --set=country:zaf
 // npm run channels:parse -- --config=./sites/dstv.com/dstv.com.config.js --output=./sites/dstv.com/dstv.com_ng.channels.xml --set=country:nga
 // npx epg-grabber --config=sites/dstv.com/dstv.com.config.js --channels=sites/dstv.com/dstv.com_za.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/dstv.com/dstv.com.config.js --channels=sites/dstv.com/dstv.com_ng.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./dstv.com.config.js')
 const axios = require('axios')
