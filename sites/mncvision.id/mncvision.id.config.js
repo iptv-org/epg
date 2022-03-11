@@ -30,22 +30,18 @@ module.exports = {
       'Content-Type': 'multipart/form-data; boundary=X-EPG-BOUNDARY'
     }
   },
-  async parser({ content, date, headers }) {
+  async parser({ content, date, headers, channel }) {
     const programs = []
     let items = parseItems(content)
+    if (!items.length) return programs
+
     const pages = parsePages(content)
     const cookies = headers && headers['set-cookie'] ? headers['set-cookie'].join(';') : ''
     for (let url of pages) {
-      const nextContent = await axios
-        .get(url, {
-          headers: {
-            Cookie: cookies
-          }
-        })
-        .then(r => r.data)
-        .catch(console.log)
-      items = items.concat(parseItems(nextContent))
+      items = items.concat(parseItems(await loadNextPage(url, cookies)))
     }
+
+    const langCookies = await loadLangCookies(channel)
 
     for (const item of items) {
       const start = parseStart(item, date)
@@ -53,7 +49,7 @@ module.exports = {
       const stop = start.add(duration, 'm')
       programs.push({
         title: parseTitle(item),
-        description: await loadDescription(item, cookies),
+        description: await loadDescription(item, langCookies),
         start,
         stop
       })
@@ -81,6 +77,27 @@ module.exports = {
 
     return channels
   }
+}
+
+async function loadNextPage(url, cookies) {
+  return axios
+    .get(url, {
+      headers: {
+        Cookie: cookies
+      }
+    })
+    .then(r => r.data)
+    .catch(console.log)
+}
+
+async function loadLangCookies(channel) {
+  const lang = channel.lang === 'en' ? 'english' : 'indonesia'
+  const url = `https://www.mncvision.id/language_switcher/setlang/${lang}/`
+
+  return axios
+    .get(url)
+    .then(r => r.headers['set-cookie'].join(';'))
+    .catch(console.error)
 }
 
 async function loadDescription(item, cookies) {
