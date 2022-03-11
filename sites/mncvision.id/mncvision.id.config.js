@@ -30,9 +30,8 @@ module.exports = {
       'Content-Type': 'multipart/form-data; boundary=X-EPG-BOUNDARY'
     }
   },
-  async parser({ content, date, headers, channel }) {
+  async parser({ content, date, headers }) {
     const programs = []
-
     let items = parseItems(content)
     const pages = parsePages(content)
     const cookies = headers && headers['set-cookie'] ? headers['set-cookie'].join(';') : ''
@@ -54,7 +53,7 @@ module.exports = {
       const stop = start.add(duration, 'm')
       programs.push({
         title: parseTitle(item),
-        description: await loadDescription(item, channel),
+        description: await loadDescription(item, cookies),
         start,
         stop
       })
@@ -84,17 +83,12 @@ module.exports = {
   }
 }
 
-async function loadDescription(item, channel) {
-  const cookies = {
-    en: 's1nd0vL=jgs82rfmntm362uvdbknng4l5n4lq4u4;',
-    id: 's1nd0vL=bfh2v7qvrsso7ck6pama3ane6bfv5k5g;'
-  }
-  const cookie = cookies[channel.lang]
+async function loadDescription(item, cookies) {
   const $item = cheerio.load(item)
   const progUrl = $item('a').attr('href')
   if (!progUrl) return null
   const data = await axios
-    .get(progUrl, { headers: { 'X-Requested-With': 'XMLHttpRequest', cookie } })
+    .get(progUrl, { headers: { 'X-Requested-With': 'XMLHttpRequest', Cookie: cookies } })
     .then(r => r.data)
     .catch(console.log)
   if (!data) return null
