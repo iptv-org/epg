@@ -32,21 +32,16 @@ module.exports = {
   },
   async parser({ content, date, headers, channel }) {
     const programs = []
-
     let items = parseItems(content)
+    if (!items.length) return programs
+
     const pages = parsePages(content)
     const cookies = headers && headers['set-cookie'] ? headers['set-cookie'].join(';') : ''
     for (let url of pages) {
-      const nextContent = await axios
-        .get(url, {
-          headers: {
-            Cookie: cookies
-          }
-        })
-        .then(r => r.data)
-        .catch(console.log)
-      items = items.concat(parseItems(nextContent))
+      items = items.concat(parseItems(await loadNextPage(url, cookies)))
     }
+
+    const langCookies = await loadLangCookies(channel)
 
     for (const item of items) {
       const start = parseStart(item, date)
@@ -54,7 +49,7 @@ module.exports = {
       const stop = start.add(duration, 'm')
       programs.push({
         title: parseTitle(item),
-        description: await loadDescription(item, channel),
+        description: await loadDescription(item, langCookies),
         start,
         stop
       })
@@ -84,17 +79,33 @@ module.exports = {
   }
 }
 
-async function loadDescription(item, channel) {
-  const cookies = {
-    en: 's1nd0vL=jgs82rfmntm362uvdbknng4l5n4lq4u4;',
-    id: 's1nd0vL=bfh2v7qvrsso7ck6pama3ane6bfv5k5g;'
-  }
-  const cookie = cookies[channel.lang]
+async function loadNextPage(url, cookies) {
+  return axios
+    .get(url, {
+      headers: {
+        Cookie: cookies
+      }
+    })
+    .then(r => r.data)
+    .catch(console.log)
+}
+
+async function loadLangCookies(channel) {
+  const lang = channel.lang === 'en' ? 'english' : 'indonesia'
+  const url = `https://www.mncvision.id/language_switcher/setlang/${lang}/`
+
+  return axios
+    .get(url)
+    .then(r => r.headers['set-cookie'].join(';'))
+    .catch(console.error)
+}
+
+async function loadDescription(item, cookies) {
   const $item = cheerio.load(item)
   const progUrl = $item('a').attr('href')
   if (!progUrl) return null
   const data = await axios
-    .get(progUrl, { headers: { 'X-Requested-With': 'XMLHttpRequest', cookie } })
+    .get(progUrl, { headers: { 'X-Requested-With': 'XMLHttpRequest', Cookie: cookies } })
     .then(r => r.data)
     .catch(console.log)
   if (!data) return null
