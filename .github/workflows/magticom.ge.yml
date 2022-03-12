@@ -1,7 +1,7 @@
 name: magticom.ge
 on:
   schedule:
-    - cron: '5 0 * * *'
+    - cron: '30 0 * * *'
   workflow_dispatch:
   workflow_run:
     workflows: [_trigger]
