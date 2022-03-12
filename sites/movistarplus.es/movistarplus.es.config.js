@@ -1,10 +1,11 @@
 const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
 var customParseFormat = require('dayjs/plugin/customParseFormat')
+dayjs.extend(utc)
 dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'movistarplus.es',
-  ignore: true, // removes the site from the list until the test is passed
   url: function ({ date }) {
     return `https://www.movistarplus.es/programacion-tv/${date.format('YYYY-MM-DD')}?v=json`
   },
@@ -14,11 +15,8 @@ module.exports = {
     if (!items.length) return programs
     let guideDate = date
     items.forEach(item => {
-      let startTime = dayjs(
-        `${guideDate.format('YYYY-MM-DD')} ${item.HORA_INICIO}`,
-        'YYYY-MM-DD HH:mm'
-      )
-      let stopTime = dayjs(`${guideDate.format('YYYY-MM-DD')} ${item.HORA_FIN}`, 'YYYY-MM-DD HH:mm')
+      let startTime = dayjs.utc(`${guideDate.format('YYYY-MM-DD')} ${item.HORA_INICIO}`,"YYYY-MM-DD HH:mm")
+      let stopTime = dayjs.utc(`${guideDate.format('YYYY-MM-DD')} ${item.HORA_FIN}`, 'YYYY-MM-DD HH:mm')
       if (stopTime.isBefore(startTime)) {
         guideDate = guideDate.add(1, 'd')
         stopTime = stopTime.add(1, 'd')
