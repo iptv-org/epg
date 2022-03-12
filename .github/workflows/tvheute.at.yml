@@ -1,7 +1,7 @@
 name: tvheute.at
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '10 0 * * *'
   workflow_dispatch:
   workflow_run:
     workflows: [_trigger]
