@@ -1,4 +1,4 @@
-const { db, logger, file, api } = require('../../core')
+const { db, logger, file, api, zip } = require('../../core')
 const grabber = require('epg-grabber')
 const _ = require('lodash')
 
@@ -42,6 +42,8 @@ async function main() {
     logger.info(`Creating "${filepath}"...`)
     const output = grabber.convertToXMLTV({ channels, programs })
     await file.create(filepath, output)
+    const compressed = await zip.compress(output)
+    await file.create(filepath + '.gz', compressed)
   }
 
   if (!total) {
