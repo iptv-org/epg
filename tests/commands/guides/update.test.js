@@ -1,6 +1,7 @@
 const { execSync } = require('child_process')
 const fs = require('fs-extra')
 const path = require('path')
+const glob = require('glob')
 
 beforeEach(() => {
   fs.emptyDirSync('tests/__data__/output')
@@ -14,13 +15,21 @@ it('can generate /guides', () => {
     { encoding: 'utf8' }
   )
 
-  expect(content('tests/__data__/output/guides/fr/chaines-tv.orange.fr.epg.xml')).toBe(
-    content('tests/__data__/expected/guides/fr/chaines-tv.orange.fr.epg.xml')
-  )
+  const guides = glob
+    .sync('tests/__data__/expected/guides/**/*.xml')
+    .map(f => f.replace('tests/__data__/expected/', ''))
 
-  expect(content('tests/__data__/output/guides/zw/dstv.com.epg.xml')).toBe(
-    content('tests/__data__/expected/guides/zw/dstv.com.epg.xml')
-  )
+  guides.forEach(filepath => {
+    expect(content(`output/${filepath}`), filepath).toBe(content(`expected/${filepath}`))
+  })
+
+  const compressed = glob
+    .sync('tests/__data__/expected/guides/**/*.xml.gz')
+    .map(f => f.replace('tests/__data__/expected/', ''))
+
+  compressed.forEach(filepath => {
+    expect(content(`output/${filepath}`), filepath).toBe(content(`expected/${filepath}`))
+  })
 })
 
 it('will terminate process if programs not found', () => {
@@ -57,9 +66,7 @@ Error: No programs found
 })
 
 function content(filepath) {
-  const data = fs.readFileSync(path.resolve(filepath), {
+  return fs.readFileSync(`tests/__data__/${filepath}`, {
     encoding: 'utf8'
   })
-
-  return JSON.stringify(data)
 }
