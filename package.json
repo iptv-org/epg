@@ -23,16 +23,20 @@
   "author": "Arhey",
   "license": "MIT",
   "jest": {
-    "testRegex": "(sites|tests)/(.*?/)?.*test.js$"
+    "testRegex": "(sites|tests)/(.*?/)?.*test.js$",
+    "setupFilesAfterEnv": [
+      "@alex_neo/jest-expect-message"
+    ]
   },
   "dependencies": {
+    "@alex_neo/jest-expect-message": "^1.0.5",
     "axios": "^0.21.1",
     "chalk": "^4.1.2",
     "cheerio": "^1.0.0-rc.10",
     "commander": "^8.2.0",
     "csv-parser": "^3.0.0",
     "dayjs": "^1.10.8",
-    "epg-grabber": "^0.23.0",
+    "epg-grabber": "^0.24.0",
     "epg-parser": "^0.1.6",
     "form-data": "^4.0.0",
     "fs-extra": "^10.0.1",
@@ -46,6 +50,7 @@
     "mockdate": "^3.0.5",
     "nedb-promises": "^5.0.3",
     "node-cleanup": "^2.1.2",
+    "node-gzip": "^1.1.2",
     "parse-duration": "^1.0.0",
     "pdf-parse": "^1.1.1",
     "signale": "^1.4.0",
