@@ -16,7 +16,15 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: npm run api:load
+      - uses: tibdex/github-app-token@v1
+        if: ${{ !env.ACT }}
+        id: create-app-token
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
       - uses: FedericoCarboni/setup-ffmpeg@v1
+        with:
+          token: ${{ steps.create-app-token.outputs.token }}
       - uses: actions/setup-node@v2
         if: ${{ !env.ACT }}
         with:
@@ -27,12 +35,6 @@ jobs:
       - run: NODE_OPTIONS=--insecure-http-parser npm run cluster:load -- --timeout=30000 --cluster-id=1
       - run: npm run programs:save
       - run: npm run guides:update
-      - uses: tibdex/github-app-token@v1
-        if: ${{ !env.ACT }}
-        id: create-app-token
-        with:
-          app_id: ${{ secrets.APP_ID }}
-          private_key: ${{ secrets.APP_PRIVATE_KEY }}
       - uses: JamesIves/github-pages-deploy-action@4.1.1
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
         with:
