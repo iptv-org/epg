@@ -35,7 +35,7 @@ jobs:
       - run: NODE_OPTIONS=--insecure-http-parser npm run cluster:load -- --timeout=30000 --cluster-id=1
       - run: npm run programs:save
       - run: npm run guides:update
-      - uses: JamesIves/github-pages-deploy-action@4.1.1
+      - uses: JamesIves/github-pages-deploy-action@v4.2.5
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
         with:
           branch: gh-pages
