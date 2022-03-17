@@ -18,13 +18,13 @@ jobs:
       - run: npm run api:load
       - uses: tibdex/github-app-token@v1
         if: ${{ !env.ACT }}
-        id: create-app-token
+        id: create-ffmpeg-token
         with:
           app_id: ${{ secrets.APP_ID }}
           private_key: ${{ secrets.APP_PRIVATE_KEY }}
       - uses: FedericoCarboni/setup-ffmpeg@v1
         with:
-          token: ${{ steps.create-app-token.outputs.token }}
+          token: ${{ steps.create-ffmpeg-token.outputs.token }}
       - uses: actions/setup-node@v2
         if: ${{ !env.ACT }}
         with:
@@ -35,12 +35,18 @@ jobs:
       - run: NODE_OPTIONS=--insecure-http-parser npm run cluster:load -- --timeout=30000 --cluster-id=1
       - run: npm run programs:save
       - run: npm run guides:update
+      - uses: tibdex/github-app-token@v1
+        if: ${{ !env.ACT }}
+        id: create-deploy-token
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
       - uses: JamesIves/github-pages-deploy-action@v4.2.5
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
         with:
           branch: gh-pages
           folder: .gh-pages
-          token: ${{ steps.create-app-token.outputs.token }}
+          token: ${{ steps.create-deploy-token.outputs.token }}
           git-config-name: iptv-bot[bot]
           git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
           commit-message: '[Bot] Deploy to GitHub Pages'
