@@ -21,9 +21,9 @@ module.exports = {
       const details = await loadProgramDetails(item)
       programs.push({
         title: item.Title,
-        description: details.Synopsis,
-        icon: details.ThumbnailUri,
-        category: details.SubGenres,
+        description: parseDescription(details),
+        icon: parseIcon(details),
+        category: parseCategory(details),
         start: parseStart(item),
         stop: parseStop(item)
       })
@@ -46,6 +46,18 @@ module.exports = {
       }
     })
   }
+}
+
+function parseDescription(details) {
+  return details ? details.Synopsis : null
+}
+
+function parseIcon(details) {
+  return details ? details.ThumbnailUri : null
+}
+
+function parseCategory(details) {
+  return details ? details.SubGenres : null
 }
 
 async function loadProgramDetails(item) {
