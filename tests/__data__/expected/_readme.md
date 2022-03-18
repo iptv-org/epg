@@ -16,6 +16,8 @@ To load a program guide, all you need to do is copy the link to one or more of t
   </tbody>
 </table>
 
+To use a compressed version of the files, add `.gz` to the end of the filename.
+
 ## API
 
 The API documentation can be found in the [iptv-org/api](https://github.com/iptv-org/api) repository.
