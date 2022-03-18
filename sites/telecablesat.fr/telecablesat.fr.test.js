@@ -12,7 +12,7 @@ dayjs.extend(utc)
 const date = dayjs.utc('2022-03-11', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: '2',
-  xmltv_id: '13emeRue.us'
+  xmltv_id: '13emeRue.fr'
 }
 
 jest.mock('axios')

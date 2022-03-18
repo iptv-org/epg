@@ -11,7 +11,7 @@ dayjs.extend(utc)
 const date = dayjs.utc('2022-03-09', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: '255',
-  xmltv_id: '13thStreetDeutschland.us'
+  xmltv_id: '13thStreet.de'
 }
 
 it('can generate valid url', () => {
