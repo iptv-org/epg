@@ -3,7 +3,7 @@
   <channels>
     <channel lang="de" xmltv_id="BRFernsehenNord.de" site_id="UID2348">BRF TV HD</channel>
     <channel lang="de" xmltv_id="DasErste.de" site_id="UID0024">Das Erste</channel>
-    <channel lang="de" xmltv_id="RTLDeutschland.de" site_id="UID2210">RTL</channel>
+    <channel lang="de" xmltv_id="RTLGermany.de" site_id="UID2210">RTL</channel>
     <channel lang="de" xmltv_id="ZDF.de" site_id="UID0030">ZDF</channel>
     <channel lang="en" xmltv_id="BBCEntertainmentEurope.uk" site_id="UID50316">BBC Ent</channel>
     <channel lang="en" xmltv_id="BBCFirstNederland.uk" site_id="UID0132">BBC First</channel>
@@ -28,7 +28,7 @@
     <channel lang="fr" xmltv_id="AlJazeeraEnglish.qa" site_id="UID50162">Al Jazeera</channel>
     <channel lang="fr" xmltv_id="Animaux.fr" site_id="UID50053">Animaux</channel>
     <channel lang="fr" xmltv_id="ACTV.be" site_id="UID2321">Antenne Centre HD</channel>
-    <channel lang="fr" xmltv_id="ARTEFrancais.fr" site_id="UID50018">Arte</channel>
+    <channel lang="fr" xmltv_id="ARTEFrench.fr" site_id="UID50018">Arte</channel>
     <channel lang="fr" xmltv_id="Automotolachaine.fr" site_id="UID50111">AUTOMOTO</channel>
     <channel lang="fr" xmltv_id="Be1.be" site_id="UID0300">Be1</channel>
     <channel lang="fr" xmltv_id="BeCine.be" site_id="UID0301">Be Ciné</channel>
@@ -48,9 +48,8 @@
     <channel lang="fr" xmltv_id="ComedyCentralFrance.us" site_id="UID2068">Comedy Central F</channel>
     <channel lang="fr" xmltv_id="CrimeDistrict.fr" site_id="UID0189">Crime District</channel>
     <channel lang="fr" xmltv_id="DiscoveryChannelFrance.us" site_id="UID0090">Discovery F</channel>
-    <channel lang="fr" xmltv_id="DisneyChannelFrance.us" site_id="UID2042">Disn Ch HD F</channel>
-    <channel lang="fr" xmltv_id="DisneyJuniorFrance.us" site_id="UID50137">Disn Jr F</channel>
-    <channel lang="fr" xmltv_id="DisneyPlusFrance.us" site_id="UID0131">Disney+</channel>
+    <channel lang="fr" xmltv_id="DisneyChannelFrance.fr" site_id="UID2042">Disn Ch HD F</channel>
+    <channel lang="fr" xmltv_id="DisneyJuniorFrance.fr" site_id="UID50137">Disn Jr F</channel>
     <channel lang="fr" xmltv_id="DobbitTVFR.be" site_id="UID0043">Dobbit TV F</channel>
     <channel lang="fr" xmltv_id="DorcelXXX.nl" site_id="UID50099">Dorcel XXX</channel>
     <channel lang="fr" xmltv_id="EFrance.us" site_id="UID50109">E! F</channel>
@@ -60,11 +59,11 @@
     <channel lang="fr" xmltv_id="ElevenSports1FR.uk" site_id="UID0640">ES1 F</channel>
     <channel lang="fr" xmltv_id="ElevenSports2FR.uk" site_id="UID0642">ES2 F</channel>
     <channel lang="fr" xmltv_id="ElevenSports3FR.uk" site_id="UID0648">ES3 F</channel>
-    <channel lang="fr" xmltv_id="EuronewsFrancais.fr" site_id="UID0154">Euronews F</channel>
+    <channel lang="fr" xmltv_id="EuronewsFrench.fr" site_id="UID0154">Euronews F</channel>
     <channel lang="fr" xmltv_id="Eurosport1France.fr" site_id="UID50077">Eurosp F</channel>
     <channel lang="fr" xmltv_id="Eurosport2France.fr" site_id="UID50090">Eurosp2 F</channel>
     <channel lang="fr" xmltv_id="France2.fr" site_id="UID50088">France 2</channel>
-    <channel lang="fr" xmltv_id="France24Francais.fr" site_id="UID50073">France 24 F</channel>
+    <channel lang="fr" xmltv_id="France24French.fr" site_id="UID50073">France 24 F</channel>
     <channel lang="fr" xmltv_id="France3.fr" site_id="UID50089">France 3</channel>
     <channel lang="fr" xmltv_id="France4.fr" site_id="UID50081">France 4</channel>
     <channel lang="fr" xmltv_id="France5.fr" site_id="UID50038">France 5</channel>
@@ -143,8 +142,8 @@
     <channel lang="nl" xmltv_id="ComedyCentralNederland.us" site_id="UID50144">Comedy Central N</channel>
     <channel lang="nl" xmltv_id="DiscoveryChannelNederland.us" site_id="UID50017">Discovery N</channel>
     <channel lang="nl" xmltv_id="DiscoveryScienceUK.us" site_id="UID50029">Disc Science</channel>
-    <channel lang="nl" xmltv_id="DisneyChannelNederland.us" site_id="UID50329">Disn Ch N</channel>
-    <channel lang="nl" xmltv_id="DisneyJuniorNederland.us" site_id="UID0080">DisnJr N</channel>
+    <channel lang="nl" xmltv_id="DisneyChannelNederland.nl" site_id="UID50329">Disn Ch N</channel>
+    <channel lang="nl" xmltv_id="DisneyJuniorNederland.nl" site_id="UID0080">DisnJr N</channel>
     <channel lang="nl" xmltv_id="DobbitTVNL.be" site_id="UID0037">Dobbit TV N</channel>
     <channel lang="nl" xmltv_id="Dusk.nl" site_id="UID0628">Dusk</channel>
     <channel lang="nl" xmltv_id="EclipsTV.be" site_id="UID0211">Eclips</channel>

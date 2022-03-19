@@ -123,7 +123,6 @@
     <channel lang="en" xmltv_id="ComedyTV.us" site_id="80740">Comedy.TV</channel>
     <channel lang="en" xmltv_id="Comet.us" site_id="97051">Comet</channel>
     <channel lang="en" xmltv_id="CookingChannel.us" site_id="30156">Cooking Channel</channel>
-    <channel lang="en" xmltv_id="CornerStoreTV.us" site_id="11304">Corner Store TV</channel>
     <channel lang="en" xmltv_id="CourtTVMystery.us" site_id="15773">Court TV Mystery</channel>
     <channel lang="en" xmltv_id="CoziTV.us" site_id="78851">Cozi TV</channel>
     <channel lang="en" xmltv_id="Create.us" site_id="48990">Create</channel>
@@ -141,8 +140,8 @@
     <channel lang="en" xmltv_id="DiscoveryChannelWest.us" site_id="12500">Discovery Channel West</channel>
     <channel lang="en" xmltv_id="DiscoveryFamily.us" site_id="16618">Discovery Family</channel>
     <channel lang="en" xmltv_id="DiscoveryLifeChannel.us" site_id="16125">Discovery Life Channel</channel>
-    <channel lang="en" xmltv_id="DisneyChannelUSEast.us" site_id="10171">Disney Channel East</channel>
-    <channel lang="en" xmltv_id="DisneyChannelUSWest.us" site_id="12510">Disney Channel West</channel>
+    <channel lang="en" xmltv_id="DisneyChannelEast.us" site_id="10171">Disney Channel East</channel>
+    <channel lang="en" xmltv_id="DisneyChannelWest.us" site_id="12510">Disney Channel West</channel>
     <channel lang="en" xmltv_id="DisneyJuniorEast.us" site_id="74796">Disney Junior East</channel>
     <channel lang="en" xmltv_id="DisneyJuniorWest.us" site_id="75003">Disney Junior West</channel>
     <channel lang="en" xmltv_id="DisneyXDEast.us" site_id="18279">Disney XD East</channel>
@@ -186,7 +185,7 @@
     <channel lang="en" xmltv_id="ETTVNews.tw" site_id="35273">ETTV News</channel>
     <channel lang="en" xmltv_id="ETTVYOYO.tw" site_id="10486">ETTV YOYO</channel>
     <channel lang="en" xmltv_id="EuronewsEnglish.fr" site_id="2121">Euronews English</channel>
-    <channel lang="en" xmltv_id="EuronewsFrancais.fr" site_id="3900">Euronews Français</channel>
+    <channel lang="en" xmltv_id="EuronewsFrench.fr" site_id="3900">Euronews Français</channel>
     <channel lang="en" xmltv_id="FamilyChrgd.us" site_id="10176">Family CHRGD</channel>
     <channel lang="en" xmltv_id="FETV.us" site_id="73413">FETV</channel>
     <channel lang="en" xmltv_id="FlixEast.us" site_id="10201">Flix East</channel>
@@ -220,8 +219,8 @@
     <channel lang="en" xmltv_id="FXXWest.us" site_id="82570">FXX West</channel>
     <channel lang="en" xmltv_id="FYIEast.us" site_id="16834">FYI East</channel>
     <channel lang="en" xmltv_id="FYIWest.us" site_id="92371">FYI West</channel>
-    <channel lang="en" xmltv_id="GalavisionEste.us" site_id="10222">Galavisión Este</channel>
-    <channel lang="en" xmltv_id="GalavisionOeste.us" site_id="18350">Galavisión Oeste</channel>
+    <channel lang="en" xmltv_id="GalavisionEast.us" site_id="10222">Galavisión Este</channel>
+    <channel lang="en" xmltv_id="GalavisionWest.us" site_id="18350">Galavisión Oeste</channel>
     <channel lang="en" xmltv_id="GameShowCentralEast.us" site_id="116474">Game Show Central </channel>
     <channel lang="en" xmltv_id="GameShowNetworkEast.us" site_id="14909">Game Show Network East</channel>
     <channel lang="en" xmltv_id="GameShowNetworkWest.us" site_id="44382">Game Show Network West</channel>
@@ -247,7 +246,7 @@
     <channel lang="en" xmltv_id="HBOComedyWest.us" site_id="18430">HBO Comedy West</channel>
     <channel lang="en" xmltv_id="HBOEast.us" site_id="10240">HBO East</channel>
     <channel lang="en" xmltv_id="HBOFamilyEast.us" site_id="16585">HBO Family East</channel>
-    <channel lang="en" xmltv_id="HBOFamilyLatinoamerica.us" site_id="32933">HBO Family Latinoamérica</channel>
+    <channel lang="en" xmltv_id="HBOFamilyLatinAmerica.us" site_id="32933">HBO Family Latinoamérica</channel>
     <channel lang="en" xmltv_id="HBOFamilyWest.us" site_id="16619">HBO Family West</channel>
     <channel lang="en" xmltv_id="HBOSignatureEast.us" site_id="10243">HBO Signature East</channel>
     <channel lang="en" xmltv_id="HBOSignatureWest.us" site_id="16576">HBO Signature West</channel>
@@ -262,7 +261,7 @@
     <channel lang="en" xmltv_id="HGTVWest.us" site_id="34215">HGTV West</channel>
     <channel lang="en" xmltv_id="HillsongChannel.us" site_id="29328">Hillsong Channel</channel>
     <channel lang="en" xmltv_id="HistoryEast.us" site_id="57708">History East</channel>
-    <channel lang="en" xmltv_id="HistoryenEspanol.us" site_id="105678">History en Español East</channel>
+    <channel lang="en" xmltv_id="HistoryenEspanolEast.us" site_id="105678">History en Español East</channel>
     <channel lang="en" xmltv_id="HistoryWest.us" site_id="88545">History West</channel>
     <channel lang="en" xmltv_id="HITN.us" site_id="17142">HITN</channel>
     <channel lang="en" xmltv_id="HLN.us" site_id="10145">HLN</channel>
@@ -273,7 +272,6 @@
     <channel lang="en" xmltv_id="IFCEast.us" site_id="14873">IFC East</channel>
     <channel lang="en" xmltv_id="IFCFilmsPicks.us" site_id="115677">IFC Film Picks</channel>
     <channel lang="en" xmltv_id="IFCWest.us" site_id="61866">IFC West</channel>
-    <channel lang="en" xmltv_id="InDemandenEspanol.us" site_id="32016">In Demand en Español</channel>
     <channel lang="en" xmltv_id="IndiePlexEast.us" site_id="49751">IndiePlex East</channel>
     <channel lang="en" xmltv_id="IndiePlexWest.us" site_id="63181">IndiePlex West</channel>
     <channel lang="en" xmltv_id="INSP.us" site_id="11066">INSP</channel>
@@ -1381,11 +1379,11 @@
     <channel lang="en" xmltv_id="TyCSports.ar" site_id="16275">TyC Sports</channel>
     <channel lang="en" xmltv_id="UltraFamilia.us" site_id="80149">Ultra Familia</channel>
     <channel lang="en" xmltv_id="UniMasCentral.us" site_id="11523">UniMás Central</channel>
-    <channel lang="en" xmltv_id="UniMasEste.us" site_id="29058">UniMás Este</channel>
-    <channel lang="en" xmltv_id="UniMasOeste.us" site_id="31541">Unimas West (National Feed)</channel>
+    <channel lang="en" xmltv_id="UniMasEast.us" site_id="29058">UniMás Este</channel>
+    <channel lang="en" xmltv_id="UniMasWest.us" site_id="31541">Unimas West (National Feed)</channel>
     <channel lang="en" xmltv_id="UniversalKids.us" site_id="47540">Universal Kids</channel>
-    <channel lang="en" xmltv_id="UnivisionEste.us" site_id="68049">Univision East (National Feed)</channel>
-    <channel lang="en" xmltv_id="UnivisionOeste.us" site_id="14762">Univision West (National Feed)</channel>
+    <channel lang="en" xmltv_id="UnivisionEast.us" site_id="68049">Univision East (National Feed)</channel>
+    <channel lang="en" xmltv_id="UnivisionWest.us" site_id="14762">Univision West (National Feed)</channel>
     <channel lang="en" xmltv_id="UpTV.us" site_id="44940">UPtv</channel>
     <channel lang="en" xmltv_id="USANetworkEast.us" site_id="11207">USA Network East</channel>
     <channel lang="en" xmltv_id="USANetworkWest.us" site_id="11208">USA Network West</channel>
