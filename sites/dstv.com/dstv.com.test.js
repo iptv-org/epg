@@ -65,11 +65,11 @@ it('can parse response', done => {
         {
           start: '2022-03-11T00:10:00.000Z',
           stop: '2022-03-11T00:50:00.000Z',
-          title: 'Curb Your Enthusiasm',
-          description:
-            "'S11/E6 of 10 - Man Fights Tiny Woman'. A general entertainment channel showcasing the best international content, focusing on scripted drama, comedy and talk.",
-          icon: 'https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/img/21893_curb_your_enthusiam169.jpg',
-          category: ['Sitcom', 'Comedy']
+          title: 'Curb Your Enthusiasm'
+          // description:
+          //   "'S11/E6 of 10 - Man Fights Tiny Woman'. A general entertainment channel showcasing the best international content, focusing on scripted drama, comedy and talk.",
+          // icon: 'https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/img/21893_curb_your_enthusiam169.jpg',
+          // category: ['Sitcom', 'Comedy']
         }
       ])
       done()
