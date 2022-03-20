@@ -46,9 +46,9 @@ async function main() {
 
     await grabber.grab(item.channel, item.date, config, async (data, err) => {
       logger.info(
-        `[${i}/${total}] ${item.channel.site} - ${item.channel.xmltv_id} - ${data.date.format(
-          'MMM D, YYYY'
-        )} (${data.programs.length} programs)`
+        `[${i}/${total}] ${item.channel.site} (${item.channel.lang}) - ${
+          item.channel.xmltv_id
+        } - ${data.date.format('MMM D, YYYY')} (${data.programs.length} programs)`
       )
 
       if (err) logger.error(err.message)
