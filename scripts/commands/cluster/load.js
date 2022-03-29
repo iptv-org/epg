@@ -1,5 +1,5 @@
 const _ = require('lodash')
-const grabber = require('epg-grabber')
+const EPGGrabber = require('epg-grabber')
 const { program } = require('commander')
 const { db, logger, timer, file, parser } = require('../../core')
 
@@ -9,6 +9,11 @@ const options = program
   .option(
     '-t, --timeout <timeout>',
     'Set a timeout for each request (in mileseconds)',
+    parser.parseNumber
+  )
+  .option(
+    '--cache-max-age <cacheMaxAge>',
+    'Maximum time for storing each request (in milliseconds)',
     parser.parseNumber
   )
   .option('--debug', 'Enable debug mode', false)
@@ -33,18 +38,20 @@ async function main() {
   logger.info('Loading...')
   const results = {}
   let i = 1
-  for (const item of items) {
-    let config = require(file.resolve(item.configPath))
-
-    config = _.merge(config, {
-      debug: options.debug,
-      delay: options.delay,
-      request: {
-        timeout: options.timeout
+  let config = require(file.resolve(items[0].configPath))
+  config = _.merge(config, {
+    debug: options.debug,
+    delay: options.delay,
+    request: {
+      timeout: options.timeout,
+      cache: {
+        maxAge: options.cacheMaxAge
       }
-    })
-
-    await grabber.grab(item.channel, item.date, config, async (data, err) => {
+    }
+  })
+  const grabber = new EPGGrabber(config)
+  for (const item of items) {
+    await grabber.grab(item.channel, item.date, async (data, err) => {
       logger.info(
         `[${i}/${total}] ${item.channel.site} (${item.channel.lang}) - ${
           item.channel.xmltv_id
