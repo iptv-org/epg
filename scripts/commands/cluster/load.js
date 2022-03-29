@@ -12,7 +12,7 @@ const options = program
     parser.parseNumber
   )
   .option(
-    '--cache-max-age',
+    '--cache-max-age <cacheMaxAge>',
     'Maximum time for storing each request (in milliseconds)',
     parser.parseNumber
   )
