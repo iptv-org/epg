@@ -3,6 +3,7 @@ const axios = require('axios')
 
 module.exports = {
   site: 'canalplus.com',
+  ignore: true, // server returns HTTP error 401 (https://github.com/iptv-org/epg/runs/5746477292?check_suite_focus=true)
   url: function ({ channel, date }) {
     const diff = date.diff(dayjs.utc().startOf('d'), 'd')
 
