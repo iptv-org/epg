@@ -23,6 +23,8 @@ module.exports = {
           title: item.eventTitle,
           description: item.eventSynopsis,
           category: item.content.genre.name,
+          season:item.content.seasonNumber || null,
+          episode:item.content.episodeNumber || null,
           start: item.starttime,
           stop: item.endtime,
           icon
