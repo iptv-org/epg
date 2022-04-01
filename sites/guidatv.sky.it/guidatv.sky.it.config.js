@@ -1,3 +1,5 @@
+const dayjs = require('dayjs')
+
 module.exports = {
   site: 'guidatv.sky.it',
   url: function ({ date, channel }) {
@@ -6,32 +8,38 @@ module.exports = {
       .add(1, 'd')
       .format('YYYY-MM-DD')}T00:00:00Z&pageSize=999&pageNum=0&env=${env}&channels=${id}`
   },
-  parser: function ({ content, date }) {
+  parser: function ({ content }) {
     const programs = []
     const data = JSON.parse(content)
     const items = data.events
     if (!items.length) return programs
-
     items.forEach(item => {
-      if (item.eventTitle && item.starttime && item.endtime) {
-        const cover = item.content.imagesMap
-          ? item.content.imagesMap.find(i => i.key === 'cover')
-          : null
-        const icon =
-          cover && cover.img && cover.img.url ? `https://guidatv.sky.it${cover.img.url}` : null
-        programs.push({
-          title: item.eventTitle,
-          description: item.eventSynopsis,
-          category: item.content.genre.name,
-          season:item.content.seasonNumber || null,
-          episode:item.content.episodeNumber || null,
-          start: item.starttime,
-          stop: item.endtime,
-          icon
-        })
-      }
+      programs.push({
+        title: item.eventTitle,
+        description: item.eventSynopsis,
+        category: item.content.genre.name,
+        season: item.content.seasonNumber || null,
+        episode: item.content.episodeNumber || null,
+        start: parseStart(item),
+        stop: parseStop(item),
+        icon: parseIcon(item)
+      })
     })
 
     return programs
   }
+}
+
+function parseStart(item) {
+  return item.starttime ? dayjs(item.starttime) : null
+}
+
+function parseStop(item) {
+  return item.endtime ? dayjs(item.endtime) : null
+}
+
+function parseIcon(item) {
+  const cover = item.content.imagesMap ? item.content.imagesMap.find(i => i.key === 'cover') : null
+
+  return cover && cover.img && cover.img.url ? `https://guidatv.sky.it${cover.img.url}` : null
 }
