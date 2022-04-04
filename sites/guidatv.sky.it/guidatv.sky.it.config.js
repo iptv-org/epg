@@ -17,7 +17,7 @@ module.exports = {
       programs.push({
         title: item.eventTitle,
         description: item.eventSynopsis,
-        category: item.content.genre.name,
+        category: parseCategory(item),
         season: item.content.seasonNumber || null,
         episode: item.content.episodeNumber || null,
         start: parseStart(item),
@@ -28,6 +28,15 @@ module.exports = {
 
     return programs
   }
+}
+
+function parseCategory(item) {
+  let category = item.content.genre.name || null;
+  const subcategory =  item.content.subgenre.name || null;
+  if(category && subcategory){
+    category += `/${subcategory}`;
+  }
+  return category;
 }
 
 function parseStart(item) {
