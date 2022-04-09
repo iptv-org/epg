@@ -37,7 +37,7 @@ it('can parse response', () => {
       season: 3,
       episode: 2,
       icon: 'https://guidatv.sky.it/uuid/1c35aa09-24e6-42e0-a2a0-2e58976ca793/cover?md5ChecksumParam=33cc326236e0894c5ba2a7a4795c3b5b',
-      category: 'Intrattenimento'
+      category: 'Intrattenimento/Fiction'
     }
   ])
 })
