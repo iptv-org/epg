@@ -31,14 +31,37 @@ module.exports = {
 
     return programs
   },
-  async channels() {
+  async channels({ country }) {
+    const area = {
+      ke: 6,
+      ng: 2,
+      tz: 3,
+      ug: 4,
+      rw: 5,
+      gh: 32,
+      mw: 14,
+      ci: 22,
+      gn: 12,
+      bi: 9,
+      cg: 16,
+      cd: 11,
+      mg: 13,
+      mz: 15,
+      cm: 20,
+      ga: 19
+    }
     const data = await axios
-      .get(`https://www.startimestv.com/tv_guide.html`)
+      .get(`https://www.startimestv.com/tv_guide.html`, {
+        headers: {
+          Cookie: `default_areaID=${area[country]}`
+        }
+      })
       .then(r => r.data)
       .catch(console.log)
     const $ = cheerio.load(data)
     const script = $('body > script:nth-child(10)').html()
-    const [_, json] = script.match(/var obj = eval\( '(.*)' \);/) || [null, null]
+    let [_, json] = script.match(/var obj = eval\( '(.*)' \);/) || [null, null]
+    json = json.replace(/\\'/g, '')
     const items = JSON.parse(json)
 
     return items.map(i => ({
