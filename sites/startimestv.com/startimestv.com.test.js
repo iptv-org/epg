@@ -11,7 +11,7 @@ dayjs.extend(utc)
 const date = dayjs.utc('2022-04-10', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: '1023102509',
-  xmltv_id: 'ZeeOne.za'
+  xmltv_id: 'ZeeOneAfrica.za'
 }
 
 it('can generate valid url', () => {
