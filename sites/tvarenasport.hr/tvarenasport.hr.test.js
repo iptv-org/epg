@@ -11,7 +11,7 @@ dayjs.extend(utc)
 const date = dayjs.utc('2021-11-17', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: '380',
-  xmltv_id: 'ArenaSport1Hrvatska.rs'
+  xmltv_id: 'ArenaSport1Hrvatska.hr'
 }
 
 it('can generate valid url', () => {
