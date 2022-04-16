@@ -11,7 +11,8 @@ dayjs.extend(customParseFormat)
 const tz = {
   au: 'Australia/Sydney',
   ie: 'Europe/Dublin',
-  uk: 'Europe/London'
+  uk: 'Europe/London',
+  us: 'America/New_York'
 }
 
 module.exports = {
