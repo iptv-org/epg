@@ -6,6 +6,11 @@ dayjs.extend(utc)
 
 module.exports = {
   site: 'dstv.com',
+  request: {
+    cache: {
+      maxAge: 6 * 60 * 60 * 1000 // 6h
+    }
+  },
   url: function ({ channel, date }) {
     const [region] = channel.site_id.split('#')
     const packageName = region === 'nga' ? 'DStv%20Premium' : ''
@@ -19,12 +24,12 @@ module.exports = {
     const items = parseItems(content, channel)
     for (const item of items) {
       // NOTE: the job has exceeded the maximum execution time of 360 minutes (https://github.com/iptv-org/epg/runs/5608211322?check_suite_focus=true)
-      // const details = await loadProgramDetails(item)
+      const details = await loadProgramDetails(item)
       programs.push({
         title: item.Title,
-        // description: parseDescription(details),
-        // icon: parseIcon(details),
-        // category: parseCategory(details),
+        description: parseDescription(details),
+        icon: parseIcon(details),
+        category: parseCategory(details),
         start: parseStart(item),
         stop: parseStop(item)
       })
