@@ -11,7 +11,7 @@ dayjs.extend(utc)
 const date = dayjs.utc('2021-11-22', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: '260',
-  xmltv_id: 'BollywoodTVRossiya.ru'
+  xmltv_id: 'BollywoodHD.ru'
 }
 
 it('can generate valid url', () => {
