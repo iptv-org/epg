@@ -1,4 +1,5 @@
-// npx epg-grabber --config=sites/ontvtonight.com/ontvtonight.com.config.js --channels=sites/ontvtonight.com/ontvtonight.com_au.channels.xml --output=.gh-pages/guides/au/ontvtonight.com.epg.xml --days=2
+// npx epg-grabber --config=sites/ontvtonight.com/ontvtonight.com.config.js --channels=sites/ontvtonight.com/ontvtonight.com_au.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/ontvtonight.com/ontvtonight.com.config.js --channels=sites/ontvtonight.com/ontvtonight.com_us.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./ontvtonight.com.config.js')
 const dayjs = require('dayjs')
