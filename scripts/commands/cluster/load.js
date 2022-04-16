@@ -11,11 +11,6 @@ const options = program
     'Set a timeout for each request (in mileseconds)',
     parser.parseNumber
   )
-  .option(
-    '--cache-max-age <cacheMaxAge>',
-    'Maximum time for storing each request (in milliseconds)',
-    parser.parseNumber
-  )
   .option('--debug', 'Enable debug mode', false)
   .parse(process.argv)
   .opts()
@@ -43,10 +38,7 @@ async function main() {
     debug: options.debug,
     delay: options.delay,
     request: {
-      timeout: options.timeout,
-      cache: {
-        maxAge: options.cacheMaxAge
-      }
+      timeout: options.timeout
     }
   })
   const grabber = new EPGGrabber(config)

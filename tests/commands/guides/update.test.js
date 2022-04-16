@@ -5,11 +5,17 @@ const glob = require('glob')
 
 beforeEach(() => {
   fs.emptyDirSync('tests/__data__/output')
-  fs.copyFileSync('tests/__data__/input/database/queue.db', 'tests/__data__/output/queue.db')
+  fs.copyFileSync(
+    'tests/__data__/input/database/update-guides/queue.db',
+    'tests/__data__/output/queue.db'
+  )
 })
 
 it('can generate /guides', () => {
-  fs.copyFileSync('tests/__data__/input/database/programs.db', 'tests/__data__/output/programs.db')
+  fs.copyFileSync(
+    'tests/__data__/input/database/update-guides/programs.db',
+    'tests/__data__/output/programs.db'
+  )
   const stdout = execSync(
     'DB_DIR=tests/__data__/output DATA_DIR=tests/__data__/input/data PUBLIC_DIR=tests/__data__/output npm run guides:update',
     { encoding: 'utf8' }
@@ -34,7 +40,7 @@ it('can generate /guides', () => {
 
 it('will terminate process if programs not found', () => {
   fs.copyFileSync(
-    'tests/__data__/input/database/no-programs.db',
+    'tests/__data__/input/database/update-guides/no-programs.db',
     'tests/__data__/output/programs.db'
   )
   try {
