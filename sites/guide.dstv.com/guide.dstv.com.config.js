@@ -9,6 +9,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'guide.dstv.com',
+  ignore: true, // the guide is currently not available on the site
   url({ channel, date }) {
     const [bouquetId] = channel.site_id.split('#')
 
