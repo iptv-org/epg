@@ -6,14 +6,14 @@ beforeEach(() => {
   fs.emptyDirSync('tests/__data__/output')
 
   const stdout = execSync(
-    'DB_DIR=tests/__data__/output/database LOGS_DIR=tests/__data__/output/logs CHANNELS_PATH=tests/__data__/input/sites/example.com_ca.channels.xml npm run queue:create -- --max-clusters=1 --days=2',
+    'DB_DIR=tests/__data__/output/database LOGS_DIR=tests/__data__/output/logs CHANNELS_PATH=tests/__data__/input/sites/example.com_ca-*.channels.xml npm run queue:create -- --max-clusters=1 --days=2',
     { encoding: 'utf8' }
   )
 })
 
 it('can create queue', () => {
   let output = content('tests/__data__/output/database/queue.db')
-  let expected = content('tests/__data__/expected/database/queue.db')
+  let expected = content('tests/__data__/expected/database/create-queue/queue.db')
 
   output = output.map(i => {
     i._id = null
