@@ -23,7 +23,6 @@ module.exports = {
     let programs = []
     const items = parseItems(content, channel)
     for (const item of items) {
-      // NOTE: the job has exceeded the maximum execution time of 360 minutes (https://github.com/iptv-org/epg/runs/5608211322?check_suite_focus=true)
       const details = await loadProgramDetails(item)
       programs.push({
         title: item.Title,
