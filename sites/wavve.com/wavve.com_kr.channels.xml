@@ -1,154 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site site="wavve.com">
   <channels>
-    <channel lang="ko" xmltv_id="" site_id="K01">KBS 1TV</channel>
-    <channel lang="ko" xmltv_id="" site_id="K02">KBS 2TV</channel>
-    <channel lang="ko" xmltv_id="" site_id="M01">MBC</channel>
-    <channel lang="ko" xmltv_id="" site_id="S01">SBS</channel>
-    <channel lang="ko" xmltv_id="" site_id="E01">EBS 1</channel>
-    <channel lang="ko" xmltv_id="" site_id="E07">EBS 2</channel>
-    <channel lang="ko" xmltv_id="" site_id="C2401">MBN</channel>
-    <channel lang="ko" xmltv_id="" site_id="C2601">TV CHOSUN</channel>
-    <channel lang="ko" xmltv_id="" site_id="C2501">채널A</channel>
-    <channel lang="ko" xmltv_id="" site_id="Y01">연합뉴스TV</channel>
-    <channel lang="ko" xmltv_id="" site_id="C2101">YTN</channel>
-    <channel lang="ko" xmltv_id="" site_id="S06">SBS Biz</channel>
-    <channel lang="ko" xmltv_id="" site_id="F2101">한국경제TV</channel>
-    <channel lang="ko" xmltv_id="" site_id="F2001">매일경제TV</channel>
-    <channel lang="ko" xmltv_id="" site_id="F4301">머니투데이방송</channel>
-    <channel lang="ko" xmltv_id="" site_id="F3301">국회방송</channel>
-    <channel lang="ko" xmltv_id="" site_id="K12">CCTV4</channel>
-    <channel lang="ko" xmltv_id="" site_id="K25">CGTN</channel>
-    <channel lang="ko" xmltv_id="" site_id="C4201">GS SHOP</channel>
-    <channel lang="ko" xmltv_id="" site_id="C4101">현대홈쇼핑</channel>
-    <channel lang="ko" xmltv_id="" site_id="C8301">NS홈쇼핑</channel>
-    <channel lang="ko" xmltv_id="" site_id="C5601">롯데홈쇼핑</channel>
-    <channel lang="ko" xmltv_id="" site_id="C4202">GS MY SHOP</channel>
-    <channel lang="ko" xmltv_id="" site_id="C4102">현대홈쇼핑+샵</channel>
-    <channel lang="ko" xmltv_id="" site_id="C8302">NS SHOP+</channel>
-    <channel lang="ko" xmltv_id="" site_id="C4901">쇼핑엔티</channel>
-    <channel lang="ko" xmltv_id="" site_id="C4801">신세계TV쇼핑</channel>
-    <channel lang="ko" xmltv_id="" site_id="C5602">롯데홈쇼핑 ONETV</channel>
-    <channel lang="ko" xmltv_id="" site_id="F1401">K SHOPPING</channel>
-    <channel lang="ko" xmltv_id="" site_id="F2701">SK스토아</channel>
-    <channel lang="ko" xmltv_id="" site_id="K15">KBS 1박 2일</channel>
-    <channel lang="ko" xmltv_id="" site_id="K124">슈퍼맨이 돌아왔다</channel>
-    <channel lang="ko" xmltv_id="" site_id="K28">연애의 참견</channel>
-    <channel lang="ko" xmltv_id="" site_id="K29">KBS 사극</channel>
-    <channel lang="ko" xmltv_id="" site_id="K30">KBS 주말명작</channel>
-    <channel lang="ko" xmltv_id="" site_id="K31">KBS 사랑과전쟁</channel>
-    <channel lang="ko" xmltv_id="" site_id="K32">KBS 로코드라마</channel>
-    <channel lang="ko" xmltv_id="" site_id="K06">KBS DRAMA</channel>
-    <channel lang="ko" xmltv_id="" site_id="K04">KBS JOY</channel>
-    <channel lang="ko" xmltv_id="" site_id="K05">KBS Life</channel>
-    <channel lang="ko" xmltv_id="" site_id="K09">KBS Story</channel>
-    <channel lang="ko" xmltv_id="" site_id="PM1">MBC 무한도전</channel>
-    <channel lang="ko" xmltv_id="" site_id="PM2">MBC 나 혼자 산다</channel>
-    <channel lang="ko" xmltv_id="" site_id="M12">MBC 라디오스타</channel>
-    <channel lang="ko" xmltv_id="" site_id="M13">MBC 서프라이즈</channel>
-    <channel lang="ko" xmltv_id="" site_id="M15">MBC 하이킥24 LIVE</channel>
-    <channel lang="ko" xmltv_id="" site_id="M16">MBC 드라마정주행24 LIVE</channel>
-    <channel lang="ko" xmltv_id="" site_id="M17">MBC 예능정주행24 LIVE</channel>
-    <channel lang="ko" xmltv_id="" site_id="M06">MBC M</channel>
-    <channel lang="ko" xmltv_id="" site_id="M02">MBC Drama</channel>
-    <channel lang="ko" xmltv_id="" site_id="M03">MBC Every1</channel>
-    <channel lang="ko" xmltv_id="" site_id="M14">MBC ON</channel>
-    <channel lang="ko" xmltv_id="" site_id="M10">ALL THE K-POP</channel>
-    <channel lang="ko" xmltv_id="" site_id="S15">TV동물농장</channel>
-    <channel lang="ko" xmltv_id="" site_id="S16">런닝맨</channel>
-    <channel lang="ko" xmltv_id="" site_id="S17">미우새</channel>
-    <channel lang="ko" xmltv_id="" site_id="S18">레전드 시트콤</channel>
-    <channel lang="ko" xmltv_id="" site_id="S19">순옥 명작관</channel>
-    <channel lang="ko" xmltv_id="" site_id="S20">스브스갓드</channel>
-    <channel lang="ko" xmltv_id="" site_id="S23">X맨</channel>
-    <channel lang="ko" xmltv_id="" site_id="S25">백종원의 골목식당</channel>
-    <channel lang="ko" xmltv_id="" site_id="S04">SBS funE</channel>
-    <channel lang="ko" xmltv_id="" site_id="S03">SBS Plus</channel>
-    <channel lang="ko" xmltv_id="" site_id="S22">SBS Fil</channel>
-    <channel lang="ko" xmltv_id="" site_id="S09">SBS MTV</channel>
-    <channel lang="ko" xmltv_id="" site_id="C2402">MBN 플러스</channel>
-    <channel lang="ko" xmltv_id="" site_id="C2502">채널A 플러스</channel>
-    <channel lang="ko" xmltv_id="" site_id="C2602">TV CHOSUN2</channel>
-    <channel lang="ko" xmltv_id="" site_id="C7301">동아TV</channel>
-    <channel lang="ko" xmltv_id="" site_id="C6901">폴라리스TV</channel>
-    <channel lang="ko" xmltv_id="" site_id="C5902">LIFETIME</channel>
-    <channel lang="ko" xmltv_id="" site_id="C5901">HISTORY</channel>
-    <channel lang="ko" xmltv_id="" site_id="C4001">Discovery</channel>
-    <channel lang="ko" xmltv_id="" site_id="X01">EDGETV</channel>
-    <channel lang="ko" xmltv_id="" site_id="X02">FUNTV</channel>
-    <channel lang="ko" xmltv_id="" site_id="C8701">텔레노벨라</channel>
-    <channel lang="ko" xmltv_id="" site_id="C5501">채널J</channel>
-    <channel lang="ko" xmltv_id="" site_id="C3901">채널W</channel>
-    <channel lang="ko" xmltv_id="" site_id="C5101">AsiaN</channel>
-    <channel lang="ko" xmltv_id="" site_id="C8401">채널차이나</channel>
-    <channel lang="ko" xmltv_id="" site_id="F5601">TVasia Plus</channel>
-    <channel lang="ko" xmltv_id="" site_id="F5602">SmileTV Plus</channel>
-    <channel lang="ko" xmltv_id="" site_id="C8101">JNG</channel>
-    <channel lang="ko" xmltv_id="" site_id="C7801">블렌딩 뮤직비디오</channel>
-    <channel lang="ko" xmltv_id="" site_id="H01">PLAYY 웰메이드 영화</channel>
-    <channel lang="ko" xmltv_id="" site_id="H02">PLAYY 프리미엄 영화</channel>
-    <channel lang="ko" xmltv_id="" site_id="H07">PLAYY 액션영화</channel>
-    <channel lang="ko" xmltv_id="" site_id="H05">시네마천국</channel>
-    <channel lang="ko" xmltv_id="" site_id="C5102">AsiaM</channel>
-    <channel lang="ko" xmltv_id="" site_id="F2601">인디필름</channel>
-    <channel lang="ko" xmltv_id="" site_id="F2501">THE MOVIE</channel>
-    <channel lang="ko" xmltv_id="" site_id="C4401">ANIBOX</channel>
-    <channel lang="ko" xmltv_id="" site_id="C4402">ANIONE</channel>
-    <channel lang="ko" xmltv_id="" site_id="A01">ANIMAX</channel>
-    <channel lang="ko" xmltv_id="" site_id="S10">SBS Nick</channel>
-    <channel lang="ko" xmltv_id="" site_id="E05">EBS 키즈</channel>
-    <channel lang="ko" xmltv_id="" site_id="C6802">브라보키즈</channel>
-    <channel lang="ko" xmltv_id="" site_id="F1301">대교어린이TV</channel>
-    <channel lang="ko" xmltv_id="" site_id="S05">SBS Golf</channel>
-    <channel lang="ko" xmltv_id="" site_id="F0501">BTN</channel>
-    <channel lang="ko" xmltv_id="" site_id="F0601">CTS기독교TV</channel>
-    <channel lang="ko" xmltv_id="" site_id="F0701">가톨릭평화방송</channel>
-    <channel lang="ko" xmltv_id="" site_id="E18">자이언트 펭TV</channel>
-    <channel lang="ko" xmltv_id="" site_id="F4601">JBOX</channel>
-    <channel lang="ko" xmltv_id="" site_id="C5202">iHQ 맛있는녀석들</channel>
-    <channel lang="ko" xmltv_id="" site_id="C5203">iHQ 뚱TV</channel>
-    <channel lang="ko" xmltv_id="" site_id="C5204">iHQ SHOW</channel>
-    <channel lang="ko" xmltv_id="" site_id="C5702">노는채널 E채널</channel>
-    <channel lang="ko" xmltv_id="" site_id="C5703">콘텐츠공작소 t.cast</channel>
-    <channel lang="ko" xmltv_id="" site_id="C2411">MBN 예능 정주행</channel>
-    <channel lang="ko" xmltv_id="" site_id="C2412">MBN 실제상황</channel>
-    <channel lang="ko" xmltv_id="" site_id="C6102">애니플러스</channel>
-    <channel lang="ko" xmltv_id="" site_id="F0102">포켓몬스터</channel>
-    <channel lang="ko" xmltv_id="" site_id="C6803">헬로 브라보키즈</channel>
-    <channel lang="ko" xmltv_id="" site_id="C6702">캐리TV LIVE</channel>
-    <channel lang="ko" xmltv_id="" site_id="F1211">ORIGINAL 로코</channel>
-    <channel lang="ko" xmltv_id="" site_id="F1212">ORIGINAL 학원</channel>
-    <channel lang="ko" xmltv_id="" site_id="F1213">ORIGINAL 스포츠예능</channel>
-    <channel lang="ko" xmltv_id="" site_id="F1214">ORIGINAL 청춘</channel>
-    <channel lang="ko" xmltv_id="" site_id="F1215">ORIGINAL 생존</channel>
-    <channel lang="ko" xmltv_id="" site_id="F1216">ORIGINAL 블랙코미디</channel>
-    <channel lang="ko" xmltv_id="" site_id="F1217">ORIGINAL 어른멜로</channel>
-    <channel lang="ko" xmltv_id="" site_id="F1218">ORIGINAL 아이돌</channel>
-    <channel lang="ko" xmltv_id="" site_id="F1219">ORIGINAL 판타지</channel>
-    <channel lang="ko" xmltv_id="" site_id="F1220">ORIGINAL 코미디</channel>
-    <channel lang="ko" xmltv_id="" site_id="F1221">ORIGINAL 로맨스</channel>
-    <channel lang="ko" xmltv_id="" site_id="F1222">wavve에서 오늘 뭐보지</channel>
-    <channel lang="ko" xmltv_id="" site_id="F1223">Only wavve 아시아드라마</channel>
-    <channel lang="ko" xmltv_id="" site_id="K07">KBS1RADIO</channel>
-    <channel lang="ko" xmltv_id="" site_id="K08">KBSCOOLFM</channel>
-    <channel lang="ko" xmltv_id="" site_id="M08">MBC FM4U</channel>
-    <channel lang="ko" xmltv_id="" site_id="M07">MBC 표준 FM</channel>
-    <channel lang="ko" xmltv_id="" site_id="S07">SBS 파워FM</channel>
-    <channel lang="ko" xmltv_id="" site_id="S08">SBS 러브FM</channel>
-    <channel lang="ko" xmltv_id="" site_id="E06">EBS FM</channel>
-    <channel lang="ko" xmltv_id="" site_id="C4501">TBS FM LIVE</channel>
-    <channel lang="ko" xmltv_id="" site_id="C2107">YTN 라디오</channel>
-    <channel lang="ko" xmltv_id="" site_id="C2701">KISS - 최신인기가요</channel>
-    <channel lang="ko" xmltv_id="" site_id="C2702">KISS - 당신을 위한 발라드</channel>
-    <channel lang="ko" xmltv_id="" site_id="C2703">KISS - 8090인기가요</channel>
-    <channel lang="ko" xmltv_id="" site_id="C2705">KISS - 2000년대 인기가요</channel>
-    <channel lang="ko" xmltv_id="" site_id="C2706">KISS - 재즈 라운지</channel>
-    <channel lang="ko" xmltv_id="" site_id="C2707">KISS - Dog &amp; Mom</channel>
-    <channel lang="ko" xmltv_id="" site_id="C2708">KISS - 명품 클래식</channel>
-    <channel lang="ko" xmltv_id="" site_id="C2709">KISS - 한국인이 사랑한 팝송</channel>
-    <channel lang="ko" xmltv_id="" site_id="C2710">KISS - 키스 더 트롯</channel>
-    <channel lang="ko" xmltv_id="" site_id="C2711">KISS - K-POP 차트쇼</channel>
-    <channel lang="ko" xmltv_id="" site_id="C2712">KISS - 8090 히트팝</channel>
-    <channel lang="ko" xmltv_id="" site_id="C2713">KISS - 탑골 K-POP</channel>
+    <channel lang="ko" xmltv_id="Anibox.kr" site_id="C4401">ANIBOX</channel>
+    <channel lang="ko" xmltv_id="AnimaxKorea.kr" site_id="A01">ANIMAX</channel>
+    <channel lang="ko" xmltv_id="Anione.kr" site_id="C4402">ANIONE</channel>
+    <channel lang="ko" xmltv_id="Aniplus.kr" site_id="C6102">애니플러스</channel>
+    <channel lang="ko" xmltv_id="AsiaM.kr" site_id="C5102">AsiaM</channel>
+    <channel lang="ko" xmltv_id="AsiaN.kr" site_id="C5101">AsiaN</channel>
+    <channel lang="ko" xmltv_id="BravoKids.kr" site_id="C6802">브라보키즈</channel>
+    <channel lang="ko" xmltv_id="BTNTV.kr" site_id="F0501">BTN</channel>
+    <channel lang="ko" xmltv_id="CCTV4Asia.cn" site_id="K12">CCTV4</channel>
+    <channel lang="ko" xmltv_id="CGTN.cn" site_id="K25">CGTN</channel>
+    <channel lang="ko" xmltv_id="ChannelA.kr" site_id="C2501">채널A</channel>
+    <channel lang="ko" xmltv_id="ChannelAPlus.kr" site_id="C2502">채널A 플러스</channel>
+    <channel lang="ko" xmltv_id="ChannelChina.kr" site_id="C8401">채널차이나</channel>
+    <channel lang="ko" xmltv_id="ChannelJ.kr" site_id="C5501">채널J</channel>
+    <channel lang="ko" xmltv_id="ChW.kr" site_id="C3901">채널W</channel>
+    <channel lang="ko" xmltv_id="CPBCTV.kr" site_id="F0701">가톨릭평화방송</channel>
+    <channel lang="ko" xmltv_id="CTSTV.kr" site_id="F0601">CTS기독교TV</channel>
+    <channel lang="ko" xmltv_id="DaekyoKidsTV.kr" site_id="F1301">대교어린이TV</channel>
+    <channel lang="ko" xmltv_id="DiscoveryAsia.us" site_id="C4001">Discovery</channel>
+    <channel lang="ko" xmltv_id="DongaTV.kr" site_id="C7301">동아TV</channel>
+    <channel lang="ko" xmltv_id="EBS1TV.kr" site_id="E01">EBS 1</channel>
+    <channel lang="ko" xmltv_id="EBS2TV.kr" site_id="E07">EBS 2</channel>
+    <channel lang="ko" xmltv_id="EBSKids.kr" site_id="E05">EBS 키즈</channel>
+    <channel lang="ko" xmltv_id="EChannel.kr" site_id="C5702">노는채널 E채널</channel>
+    <channel lang="ko" xmltv_id="EdgeTV.kr" site_id="X01">EDGETV</channel>
+    <channel lang="ko" xmltv_id="FunTV.kr" site_id="X02">FUNTV</channel>
+    <channel lang="ko" xmltv_id="GSMyShop.kr" site_id="C4202">GS MY SHOP</channel>
+    <channel lang="ko" xmltv_id="GSShop.kr" site_id="C4201">GS SHOP</channel>
+    <channel lang="ko" xmltv_id="HistoryKorea.kr" site_id="C5901">HISTORY</channel>
+    <channel lang="ko" xmltv_id="HyundaiHomeShopping.kr" site_id="C4101">현대홈쇼핑</channel>
+    <channel lang="ko" xmltv_id="HyundaiHomeShoppingPlusShop.kr" site_id="C4102">현대홈쇼핑+샵</channel>
+    <channel lang="ko" xmltv_id="IndieFilm.kr" site_id="F2601">인디필름</channel>
+    <channel lang="ko" xmltv_id="JNGKorea.kr" site_id="C8101">JNG</channel>
+    <channel lang="ko" xmltv_id="KBS1TV.kr" site_id="K01">KBS 1TV</channel>
+    <channel lang="ko" xmltv_id="KBS2TV.kr" site_id="K02">KBS 2TV</channel>
+    <channel lang="ko" xmltv_id="KBSDrama.kr" site_id="K06">KBS DRAMA</channel>
+    <channel lang="ko" xmltv_id="KBSJoy.kr" site_id="K04">KBS JOY</channel>
+    <channel lang="ko" xmltv_id="KBSLife.kr" site_id="K05">KBS Life</channel>
+    <channel lang="ko" xmltv_id="KBSStory.kr" site_id="K09">KBS Story</channel>
+    <channel lang="ko" xmltv_id="KShopping.kr" site_id="F1401">K SHOPPING</channel>
+    <channel lang="ko" xmltv_id="LifetimeAsia.us" site_id="C5902">LIFETIME</channel>
+    <channel lang="ko" xmltv_id="LotteHomeShopping.kr" site_id="C5601">롯데홈쇼핑</channel>
+    <channel lang="ko" xmltv_id="LotteOneTV.kr" site_id="C5602">롯데홈쇼핑 ONETV</channel>
+    <channel lang="ko" xmltv_id="MBCDrama.kr" site_id="M02">MBC Drama</channel>
+    <channel lang="ko" xmltv_id="MBCEvery1.kr" site_id="M03">MBC Every1</channel>
+    <channel lang="ko" xmltv_id="MBCM.kr" site_id="M06">MBC M</channel>
+    <channel lang="ko" xmltv_id="MBCOn.kr" site_id="M14">MBC ON</channel>
+    <channel lang="ko" xmltv_id="MBCTV.kr" site_id="M01">MBC</channel>
+    <channel lang="ko" xmltv_id="MBN.kr" site_id="C2401">MBN</channel>
+    <channel lang="ko" xmltv_id="MBNPlus.kr" site_id="C2402">MBN 플러스</channel>
+    <channel lang="ko" xmltv_id="Mmoney.kr" site_id="F2001">매일경제TV</channel>
+    <channel lang="ko" xmltv_id="MTN.kr" site_id="F4301">머니투데이방송</channel>
+    <channel lang="ko" xmltv_id="NationalAssemblyTV.kr" site_id="F3301">국회방송</channel>
+    <channel lang="ko" xmltv_id="NickelodeonKorea.kr" site_id="S10">SBS Nick</channel>
+    <channel lang="ko" xmltv_id="NSHomeshopping.kr" site_id="C8301">NS홈쇼핑</channel>
+    <channel lang="ko" xmltv_id="NSShopPlus.kr" site_id="C8302">NS SHOP+</channel>
+    <channel lang="ko" xmltv_id="PolarisTV.kr" site_id="C6901">폴라리스TV</channel>
+    <channel lang="ko" xmltv_id="SBSBiz.kr" site_id="S06">SBS Biz</channel>
+    <channel lang="ko" xmltv_id="SBSFL.kr" site_id="S22">SBS Fil</channel>
+    <channel lang="ko" xmltv_id="SBSfunE.kr" site_id="S04">SBS funE</channel>
+    <channel lang="ko" xmltv_id="SBSGolf.kr" site_id="S05">SBS Golf</channel>
+    <channel lang="ko" xmltv_id="SBSMTV.kr" site_id="S09">SBS MTV</channel>
+    <channel lang="ko" xmltv_id="SBSPlus.kr" site_id="S03">SBS Plus</channel>
+    <channel lang="ko" xmltv_id="SBSTV.kr" site_id="S01">SBS</channel>
+    <channel lang="ko" xmltv_id="ShinsegaeTVShopping.kr" site_id="C4801">신세계TV쇼핑</channel>
+    <channel lang="ko" xmltv_id="ShoppingNT.kr" site_id="C4901">쇼핑엔티</channel>
+    <channel lang="ko" xmltv_id="SKStoa.kr" site_id="F2701">SK스토아</channel>
+    <channel lang="ko" xmltv_id="SmileTVPlus.kr" site_id="F5602">SmileTV Plus</channel>
+    <channel lang="ko" xmltv_id="Telenovela.kr" site_id="C8701">텔레노벨라</channel>
+    <channel lang="ko" xmltv_id="TheMovie.kr" site_id="F2501">THE MOVIE</channel>
+    <channel lang="ko" xmltv_id="TVAsiaPlus.kr" site_id="F5601">TVasia Plus</channel>
+    <channel lang="ko" xmltv_id="TVChosun.kr" site_id="C2601">TV CHOSUN</channel>
+    <channel lang="ko" xmltv_id="TVChosun2.kr" site_id="C2602">TV CHOSUN2</channel>
+    <channel lang="ko" xmltv_id="Vlending.kr" site_id="C7801">블렌딩 뮤직비디오</channel>
+    <channel lang="ko" xmltv_id="WowTV.kr" site_id="F2101">한국경제TV</channel>
+    <channel lang="ko" xmltv_id="YonhapNewsTV.kr" site_id="Y01">연합뉴스TV</channel>
+    <channel lang="ko" xmltv_id="YTN.kr" site_id="C2101">YTN</channel>
   </channels>
 </site>
