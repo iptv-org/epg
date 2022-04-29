@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site site="directv.com">
   <channels>
-    <channel lang="en" xmltv_id="5StarMax.us" site_id="520">5 StarMax</channel>
+    <channel lang="en" xmltv_id="5StarMaxEast.us" site_id="520">5 StarMax</channel>
     <channel lang="en" xmltv_id="88Films.us" site_id="2105">88 Films</channel>
     <channel lang="en" xmltv_id="88TV.us" site_id="2103">88 TV</channel>
     <channel lang="en" xmltv_id="AccuWeatherNetwork.us" site_id="361">AccuWeather Network</channel>
@@ -13,7 +13,6 @@
     <channel lang="en" xmltv_id="AmericasValueChannel.us" site_id="224">America&apos;s Value Channel</channel>
     <channel lang="en" xmltv_id="AnimalPlanetEast.us" site_id="282">Animal Planet East</channel>
     <channel lang="en" xmltv_id="Antena3Internacional.es" site_id="458">Antena 3 Internacional</channel>
-    <channel lang="en" xmltv_id="Aqui.us" site_id="401">Aqui</channel>
     <channel lang="en" xmltv_id="ArirangWorld.kr" site_id="2095">Arirang World</channel>
     <channel lang="en" xmltv_id="AspireTV.us" site_id="381">Aspire TV</channel>
     <channel lang="en" xmltv_id="Atreseries.es" site_id="420">Atreseries</channel>
@@ -28,7 +27,6 @@
     <channel lang="en" xmltv_id="BangU.us" site_id="596">Bang U</channel>
     <channel lang="en" xmltv_id="BBCAmericaEast.us" site_id="264">BBC America East</channel>
     <channel lang="en" xmltv_id="BBCWorldNewsNorthAmerica.uk" site_id="346">BBC World News Americas</channel>
-    <channel lang="en" xmltv_id="BestChannel.us" site_id="88">Best Channel</channel>
     <channel lang="en" xmltv_id="BETEast.us" site_id="329">BET East</channel>
     <channel lang="en" xmltv_id="BETHerEast.us" site_id="330">BET Her East</channel>
     <channel lang="en" xmltv_id="BloombergTV.us" site_id="353">Bloomberg TV US</channel>
@@ -43,10 +41,8 @@
     <channel lang="en" xmltv_id="CaracolTVInternacional.co" site_id="417">Caracol TV Internacional</channel>
     <channel lang="en" xmltv_id="CartoonNetworkEast.us" site_id="296">Cartoon Network East</channel>
     <channel lang="en" xmltv_id="CartoonNetworkWest.us" site_id="297">Cartoon Network West</channel>
-    <channel lang="en" xmltv_id="Cash.us" site_id="97">Cash</channel>
     <channel lang="en" xmltv_id="CBSSportsNetworkUSA.us" site_id="221">CBS Sports Network USA</channel>
     <channel lang="en" xmltv_id="CCTV4America.cn" site_id="2052">CCTV 4 America</channel>
-    <channel lang="en" xmltv_id="CelebrityShoppingTV.us" site_id="95">Celebrity Shopping TV</channel>
     <channel lang="en" xmltv_id="CentroamericaTV.us" site_id="428">Centroamérica TV</channel>
     <channel lang="en" xmltv_id="CGTNAmerica.cn" site_id="2053">CGTN America</channel>
     <channel lang="en" xmltv_id="ChannelNecoInternational.jp" site_id="2042">Channel Neco International</channel>
@@ -72,7 +68,6 @@
     <channel lang="en" xmltv_id="CrimePlusInvestigationNetworkUSA.us" site_id="571">Crime + Investigation Network USA</channel>
     <channel lang="en" xmltv_id="CSPAN.us" site_id="350">C-SPAN</channel>
     <channel lang="en" xmltv_id="CSPAN2.us" site_id="351">C-SPAN 2</channel>
-    <channel lang="en" xmltv_id="CTITVInternational.tw" site_id="2056">CTI TV International</channel>
     <channel lang="en" xmltv_id="CTN.us" site_id="376">CTN</channel>
     <channel lang="en" xmltv_id="CTSTV.kr" site_id="2092">CTS</channel>
     <channel lang="en" xmltv_id="DaystarTV.us" site_id="369">Daystar TV</channel>
@@ -96,17 +91,16 @@
     <channel lang="en" xmltv_id="EEast.us" site_id="236">E! East</channel>
     <channel lang="en" xmltv_id="ElevenSportsUSA.us" site_id="623">Eleven Sports USA</channel>
     <channel lang="en" xmltv_id="Enlace.cr" site_id="448">Enlace</channel>
-    <channel lang="en" xmltv_id="ESPN2US.us" site_id="209">ESPN 2 US</channel>
+    <channel lang="en" xmltv_id="ESPN2.us" site_id="209">ESPN 2 US</channel>
     <channel lang="en" xmltv_id="ESPNDeportes.us" site_id="466">ESPN Deportes</channel>
     <channel lang="en" xmltv_id="ESPNews.us" site_id="207">ESPNews</channel>
     <channel lang="en" xmltv_id="ESPNU.us" site_id="208">ESPNU</channel>
-    <channel lang="en" xmltv_id="ESPNUS.us" site_id="206">ESPN US</channel>
+    <channel lang="en" xmltv_id="ESPN.us" site_id="206">ESPN US</channel>
     <channel lang="en" xmltv_id="EstrellaTVEast.us" site_id="442">Estrella TV East</channel>
     <channel lang="en" xmltv_id="EWTNUS.us" site_id="370">EWTN US</channel>
     <channel lang="en" xmltv_id="FamilyEntertainmentTV.us" site_id="323">Family Entertainment TV</channel>
     <channel lang="en" xmltv_id="Film24h.us" site_id="2037">Film 24h</channel>
     <channel lang="en" xmltv_id="FlixEast.us" site_id="556">Flix East</channel>
-    <channel lang="en" xmltv_id="FM.us" site_id="386">FM</channel>
     <channel lang="en" xmltv_id="FoodNetworkEast.us" site_id="231">Food Network East</channel>
     <channel lang="en" xmltv_id="Foro.mx" site_id="453">Foro TV Estados Unidos</channel>
     <channel lang="en" xmltv_id="FoxBusiness.us" site_id="359">Fox Business</channel>
@@ -126,10 +120,8 @@
     <channel lang="en" xmltv_id="GameShowNetworkEast.us" site_id="233">Game Show Network East</channel>
     <channel lang="en" xmltv_id="GEB.us" site_id="363">GEB</channel>
     <channel lang="en" xmltv_id="GemShoppingNetwork.us" site_id="228">Gem Shopping Network</channel>
-    <channel lang="en" xmltv_id="GetItInfomercial.us" site_id="80">Get It Infomercial</channel>
     <channel lang="en" xmltv_id="GMALifeTV.ph" site_id="2069">GMA Life TV</channel>
     <channel lang="en" xmltv_id="GMAPinoyTVUSACanada.ph" site_id="2061">GMA Pinoy TV USA &amp; Canada</channel>
-    <channel lang="en" xmltv_id="Go4It.us" site_id="92">Go4It</channel>
     <channel lang="en" xmltv_id="GodTVUS.us" site_id="365">God TV US</channel>
     <channel lang="en" xmltv_id="GolfChannelUS.us" site_id="218">Golf Channel US</channel>
     <channel lang="en" xmltv_id="GolTV.us" site_id="468">Gol TV</channel>
@@ -163,15 +155,8 @@
     <channel lang="en" xmltv_id="HustlerTVMonthlyOffer.us" site_id="588">Hustler TV Monthly Offer</channel>
     <channel lang="en" xmltv_id="ICableFinanceInfoChannel.hk" site_id="2108">I-Cable Finance Info Channel</channel>
     <channel lang="en" xmltv_id="ICableNewsChannel.hk" site_id="2109">I-Cable News Channel</channel>
-    <channel lang="en" xmltv_id="IdeaChannel.us" site_id="84">Idea Channel</channel>
     <channel lang="en" xmltv_id="IFCEast.us" site_id="333">IFC East</channel>
     <channel lang="en" xmltv_id="ImpactNetwork.us" site_id="380">Impact Network</channel>
-    <channel lang="en" xmltv_id="Informercial1.us" site_id="1">Informercial 1</channel>
-    <channel lang="en" xmltv_id="Informercial77.us" site_id="77">Informercial 77</channel>
-    <channel lang="en" xmltv_id="Informercial82.us" site_id="82">Informercial 82</channel>
-    <channel lang="en" xmltv_id="Informercial87.us" site_id="87">Informercial 87</channel>
-    <channel lang="en" xmltv_id="Informercial91.us" site_id="91">Informercial 91</channel>
-    <channel lang="en" xmltv_id="InformercialSecret.us" site_id="250">Informercial Secret</channel>
     <channel lang="en" xmltv_id="INSP.us" site_id="364">INSP</channel>
     <channel lang="en" xmltv_id="InvestigationDiscoveryEast.us" site_id="285">Investigation Discovery East</channel>
     <channel lang="en" xmltv_id="IONTVEast.us" site_id="305">ION TV East</channel>
@@ -193,8 +178,6 @@
     <channel lang="en" xmltv_id="LinkTV.us" site_id="375">Link TV</channel>
     <channel lang="en" xmltv_id="LogoEast.us" site_id="272">Logo East</channel>
     <channel lang="en" xmltv_id="LonghornNetwork.us" site_id="677">Longhorn Network</channel>
-    <channel lang="en" xmltv_id="LookNetwork.us" site_id="78">Look Network</channel>
-    <channel lang="en" xmltv_id="MallTV.us" site_id="89">Mall TV</channel>
     <channel lang="en" xmltv_id="MASN.us" site_id="640">MASN</channel>
     <channel lang="en" xmltv_id="MavTV.us" site_id="214">MavTV</channel>
     <channel lang="en" xmltv_id="MaxLatino.us" site_id="523">MaxLatino</channel>
@@ -202,7 +185,6 @@
     <channel lang="en" xmltv_id="MBNPlus.kr" site_id="2088">MBN Plus</channel>
     <channel lang="en" xmltv_id="MediasetItalia.it" site_id="2020">Mediaset Italia</channel>
     <channel lang="en" xmltv_id="MegaTV.us" site_id="405">Mega TV</channel>
-    <channel lang="en" xmltv_id="MercuryMediaChannel.us" site_id="85">Mercury Media Channel</channel>
     <channel lang="en" xmltv_id="MGMHDUSA.us" site_id="567">MGM HD USA</channel>
     <channel lang="en" xmltv_id="MLBNetwork.us" site_id="213">MLB Network</channel>
     <channel lang="en" xmltv_id="MoreMaxEast.us" site_id="517">MoreMax East</channel>
@@ -261,7 +243,6 @@
     <channel lang="en" xmltv_id="PlayboyTV.us" site_id="577">Playboy TV USA</channel>
     <channel lang="en" xmltv_id="PlayboyTVHD.us" site_id="576">Playboy TV USA HD</channel>
     <channel lang="en" xmltv_id="PopEast.us" site_id="273">Pop East</channel>
-    <channel lang="en" xmltv_id="PrimeTV.us" site_id="81">Prime TV</channel>
     <channel lang="en" xmltv_id="QVC2.us" site_id="76">QVC 2</channel>
     <channel lang="en" xmltv_id="QVC3.us" site_id="318">QVC 3</channel>
     <channel lang="en" xmltv_id="QVCUS.us" site_id="70">QVC US</channel>
@@ -277,7 +258,6 @@
     <channel lang="en" xmltv_id="RTAmerica.ru" site_id="321">RT America</channel>
     <channel lang="en" xmltv_id="RTRPlanetaUSA.us" site_id="2141">RTR Planeta USA</channel>
     <channel lang="en" xmltv_id="RTViUSA.us" site_id="2148">RTVi USA</channel>
-    <channel lang="en" xmltv_id="SaleNetwork.us" site_id="74">Sale Network</channel>
     <channel lang="en" xmltv_id="SariSariChannel.ph" site_id="2068">Sari Sari Channel</channel>
     <channel lang="en" xmltv_id="SBNDomestic.us" site_id="344">SBN Domestic</channel>
     <channel lang="en" xmltv_id="SBSTV.kr" site_id="2080">SBS</channel>
@@ -359,7 +339,6 @@
     <channel lang="en" xmltv_id="UnivisionTlnovelas.mx" site_id="454">Univision Tlnovelas</channel>
     <channel lang="en" xmltv_id="UpTV.us" site_id="338">Up TV</channel>
     <channel lang="en" xmltv_id="USANetworkEast.us" site_id="242">USA Network East</channel>
-    <channel lang="en" xmltv_id="Valu.us" site_id="86">Valu</channel>
     <channel lang="en" xmltv_id="Venevision.ve" site_id="409">Venevisión</channel>
     <channel lang="en" xmltv_id="VGNTV.us" site_id="2031">VGN TV</channel>
     <channel lang="en" xmltv_id="VH1USEast.us" site_id="335">VH1 East</channel>
@@ -394,7 +373,6 @@
     <channel lang="en" xmltv_id="WNPTDT1.us" site_id="8">PBS (WNPT) Nashville, TN</channel>
     <channel lang="en" xmltv_id="WNYWDT1.us" site_id="398">Fox East</channel>
     <channel lang="en" xmltv_id="WorldHarvestTV.us" site_id="367">World Harvest TV</channel>
-    <channel lang="en" xmltv_id="WowTV.us" site_id="83">Wow TV</channel>
     <channel lang="en" xmltv_id="WPXKDT1.us" site_id="54">ION (WPXK) Knoxville, TN</channel>
     <channel lang="en" xmltv_id="WPXXDT1.us" site_id="50">ION (WPXX) Memphis, TN</channel>
     <channel lang="en" xmltv_id="WREGDT1.us" site_id="3">CBS (WREG) Memphis, TN</channel>
@@ -406,7 +384,6 @@
     <channel lang="en" xmltv_id="WVLTDT2.us" site_id="30">MyNetworkTV (WVLT-DT2) Knoxville, TN</channel>
     <channel lang="en" xmltv_id="WZTVDT1.us" site_id="17">FOX (WZTV) Nashville, TN</channel>
     <channel lang="en" xmltv_id="WZTVDT2.us" site_id="18">CW (WZTV-DT2) Nashville, TN</channel>  
-    <channel lang="en" xmltv_id="Xtra.us" site_id="99">Xtra</channel>
     <channel lang="en" xmltv_id="YesNetwork.us" site_id="631">Yes Network</channel>
     <channel lang="en" xmltv_id="YTN.kr" site_id="2083">YTN</channel>
     <channel lang="en" xmltv_id="ZooMooLatinAmerica.nz" site_id="432">ZooMoo Latinoamérica</channel>
