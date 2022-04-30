@@ -156,14 +156,6 @@
     <channel lang="en" xmltv_id="ESPN2.us" site_id="45507">ESPN 2</channel>
     <channel lang="en" xmltv_id="ESPNBasesLoaded.us" site_id="80768">ESPN Bases Loaded</channel>
     <channel lang="en" xmltv_id="ESPNBuzzerBeater.us" site_id="70462">ESPN Buzzer Beater</channel>
-    <channel lang="en" xmltv_id="ESPNCollegeExtra1.us" site_id="20687">ESPN College Extra 1</channel>
-    <channel lang="en" xmltv_id="ESPNCollegeExtra2.us" site_id="20688">ESPN College Extra 2</channel>
-    <channel lang="en" xmltv_id="ESPNCollegeExtra3.us" site_id="20689">ESPN College Extra 3</channel>
-    <channel lang="en" xmltv_id="ESPNCollegeExtra4.us" site_id="20690">ESPN College Extra 4</channel>
-    <channel lang="en" xmltv_id="ESPNCollegeExtra5.us" site_id="20691">ESPN College Extra 5</channel>
-    <channel lang="en" xmltv_id="ESPNCollegeExtra6.us" site_id="20692">ESPN College Extra 6</channel>
-    <channel lang="en" xmltv_id="ESPNCollegeExtra7.us" site_id="73263">ESPN College Extra 7</channel>
-    <channel lang="en" xmltv_id="ESPNCollegeExtra8.us" site_id="73264">ESPN College Extra 8</channel>
     <channel lang="en" xmltv_id="ESPNDeportes.us" site_id="25595">ESPN Deportes</channel>
     <channel lang="en" xmltv_id="ESPNU.us" site_id="45654">ESPNU</channel>
     <channel lang="en" xmltv_id="ESPN.us" site_id="10179">ESPN</channel>
@@ -1102,6 +1094,7 @@
     <channel lang="en" xmltv_id="Movies.us" site_id="81275">Movies!</channel>
     <channel lang="en" xmltv_id="MSG.us" site_id="10979">MSG</channel>
     <channel lang="en" xmltv_id="MSG2.us" site_id="10980">MSG2</channel>
+    <channel lang="en" xmltv_id="MSGPlus.us" site_id="11105">MSG Plus</channel>
     <channel lang="en" xmltv_id="MSNBC.us" site_id="16300">MSNBC</channel>
     <channel lang="en" xmltv_id="MTV2East.us" site_id="16361">MTV2 East</channel>
     <channel lang="en" xmltv_id="MTV2West.us" site_id="48129">MTV2 West</channel>
@@ -1149,16 +1142,6 @@
     <channel lang="en" xmltv_id="NationalGeographicEast.us" site_id="49438">National Geographic East</channel>
     <channel lang="en" xmltv_id="NationalGeographicWest.us" site_id="71601">National Geographic West</channel>
     <channel lang="en" xmltv_id="NationalGeographicWild.us" site_id="56425">National Geographic Wild</channel>
-    <channel lang="en" xmltv_id="NBALeaguePass1.us" site_id="20810">NBA League Pass 1</channel>
-    <channel lang="en" xmltv_id="NBALeaguePass10.us" site_id="21115">NBA League Pass 10</channel>
-    <channel lang="en" xmltv_id="NBALeaguePass2.us" site_id="20811">NBA League Pass 2</channel>
-    <channel lang="en" xmltv_id="NBALeaguePass3.us" site_id="20812">NBA League Pass 3</channel>
-    <channel lang="en" xmltv_id="NBALeaguePass4.us" site_id="21044">NBA League Pass 4</channel>
-    <channel lang="en" xmltv_id="NBALeaguePass5.us" site_id="21045">NBA League Pass 5</channel>
-    <channel lang="en" xmltv_id="NBALeaguePass6.us" site_id="21046">NBA League Pass 6</channel>
-    <channel lang="en" xmltv_id="NBALeaguePass7.us" site_id="21047">NBA League Pass 7</channel>
-    <channel lang="en" xmltv_id="NBALeaguePass8.us" site_id="21048">NBA League Pass 8</channel>
-    <channel lang="en" xmltv_id="NBALeaguePass9.us" site_id="21049">NBA League Pass 9</channel>
     <channel lang="en" xmltv_id="NBATV.us" site_id="32281">NBA TV</channel>
     <channel lang="en" xmltv_id="NBCEast.us" site_id="10991">NBC East</channel>
     <channel lang="en" xmltv_id="NBCLX.us" site_id="114278">NBCLX (National)</channel>
@@ -1253,10 +1236,13 @@
     <channel lang="en" xmltv_id="ShopHQ.us" site_id="14948">ShopHQ</channel>
     <channel lang="en" xmltv_id="ShopLC.us" site_id="56032">Shop LC</channel>
     <channel lang="en" xmltv_id="ShopTV.ph" site_id="11017">Shop TV</channel>
-    <channel lang="en" xmltv_id="Showtime2East.us" site_id="47115">Showtime 2 East</channel>
+    <channel lang="en" xmltv_id="Showtime2East.us" site_id="11116">Showtime 2 East</channel>
+    <channel lang="en" xmltv_id="Showtime2West.us" site_id="16444">Showtime 2 West</channel>
     <channel lang="en" xmltv_id="ShowtimeEast.us" site_id="11115">Showtime East</channel>
     <channel lang="en" xmltv_id="ShowtimeExtremeEast.us" site_id="18086">Showtime Extreme East</channel>
     <channel lang="en" xmltv_id="ShowtimeExtremeWest.us" site_id="18164">Showtime Extreme West</channel>
+    <channel lang="en" xmltv_id="ShowtimeFamilyZoneEast.us" site_id="25274">Showtime Family Zone East</channel>
+    <channel lang="en" xmltv_id="ShowtimeFamilyZoneWest.us" site_id="25275">Showtime Family Zone West</channel>
     <channel lang="en" xmltv_id="ShowtimeNextEast.us" site_id="25270">Showtime Next East</channel>
     <channel lang="en" xmltv_id="ShowtimeNextWest.us" site_id="25271">Showtime Next West</channel>
     <channel lang="en" xmltv_id="ShowtimeShowcaseEast.us" site_id="16153">Showtime Showcase East</channel>
@@ -1329,6 +1315,8 @@
     <channel lang="en" xmltv_id="TheIsraeliNetwork.il" site_id="27549">The Israeli Network</channel>
     <channel lang="en" xmltv_id="TheMovieChannelEast.us" site_id="11160">The Movie Channel East</channel>
     <channel lang="en" xmltv_id="TheMovieChannelWest.us" site_id="12509">The Movie Channel West</channel>
+    <channel lang="en" xmltv_id="TheMovieChannelXtraEast.us" site_id="17663">The Movie Channel Extra East</channel>
+    <channel lang="en" xmltv_id="TheMovieChannelXtraWest.us" site_id="17687">The Movie Channel Extra West</channel>
     <channel lang="en" xmltv_id="TheWeatherChannel.us" site_id="11187">The Weather Channel</channel>
     <channel lang="en" xmltv_id="TheWordNetwork.us" site_id="21781">The Word Network</channel>
     <channel lang="en" xmltv_id="ThisTV.us" site_id="61775">This TV</channel>
@@ -1977,14 +1965,6 @@
     <channel lang="en" xmltv_id="CNWestTVE.us" site_id="110443">Cartoon Network West (TV Everywhere Feed)</channel>
     <channel lang="en" xmltv_id="YesNetwork.us" site_id="30017">YES Network</channel>
     <channel lang="en" xmltv_id="SportsNetNewYork.us" site_id="49603">SportsNet New York</channel>
-    <channel lang="en" xmltv_id="BeINSports3USA.us" site_id="92442">beIN Sports 3 USA</channel>
-    <channel lang="en" xmltv_id="BeINSports4USA.us" site_id="92443">beIN Sports 4 USA</channel>
-    <channel lang="en" xmltv_id="BeINSports5USA.us" site_id="92439">beIN Sports 5 USA</channel>
-    <channel lang="en" xmltv_id="BeINSports6USA.us" site_id="92437">beIN Sports 6 USA</channel>
-    <channel lang="en" xmltv_id="BeINSports7USA.us" site_id="92438">beIN Sports 7 USA</channel>
-    <channel lang="en" xmltv_id="BeINSports8USA.us" site_id="92436">beIN Sports 8 USA</channel>
-    <channel lang="en" xmltv_id="TennisChannelPlus1.us" site_id="109934">Tennis Channel+ 1</channel>
-    <channel lang="en" xmltv_id="TennisChannelPlus2.us" site_id="109935">Tennis Channel+ 2</channel>
     <channel lang="en" xmltv_id="Cheddar.us" site_id="109333">Cheddar News</channel>
     <channel lang="en" xmltv_id="DogTV.us" site_id="82446">Dog TV</channel>
     <channel lang="en" xmltv_id="SoYummy.us" site_id="115674">So Yummy!</channel>
@@ -1998,8 +1978,9 @@
     <channel lang="en" xmltv_id="DePeliculaClasico.mx" site_id="33628">De Pelicula Clasico</channel>
     <channel lang="en" xmltv_id="MTVTr3sEast.us" site_id="18715">MTV Tr3s East</channel>
     <channel lang="en" xmltv_id="MTVTr3sWest.us" site_id="55928">MTV Tr3s West</channel>
+    <channel lang="en" xmltv_id="PasionesEstadosUnidos.us" site_id="61776">Pasiones US</channel>
     <channel lang="en" xmltv_id="TeleHit.mx" site_id="34394">TeleHit</channel>
-    <channel lang="en" xmltv_id="UnivisionTlnovelas.mx" site_id="100858">Univision Tlnovelas</channel>
+    <channel lang="en" xmltv_id="UnivisionTlnovelas.mx" site_id="74550">Univision Tlnovelas</channel>
     <channel lang="en" xmltv_id="WAPAAmerica.pr" site_id="44322">WAPA America</channel>
     <channel lang="en" xmltv_id="GolTVSpanish.us" site_id="33691">GolTV English</channel>
     <channel lang="en" xmltv_id="GodTVUS.us" site_id="52697">GodTV</channel>
@@ -2011,5 +1992,20 @@
     <channel lang="en" xmltv_id="IONPlusEast.us" site_id="55241">ION Plus East</channel>
     <channel lang="en" xmltv_id="LawCrime.us" site_id="109553">Law &amp; Crime</channel>
     <channel lang="en" xmltv_id="PeopleTV.us" site_id="107584">People TV</channel>
+    <channel lang="en" xmltv_id="JewishLifeTelevision.us" site_id="60165">Jewish Life Television</channel>
+    <channel lang="en" xmltv_id="GEBAmerica.us" site_id="18999">GEB America</channel>
+    <channel lang="en" xmltv_id="INSP.us" site_id="11066">INSP</channel>
+    <channel lang="en" xmltv_id="3ABNEnglish.us" site_id="10002">3ABN English</channel>
+    <channel lang="en" xmltv_id="TBNInspire.us" site_id="122276">TBN Inspire</channel>
+    <channel lang="en" xmltv_id="GreatAmericanCountry.us" site_id="16062">Great American Country</channel>
+    <channel lang="en" xmltv_id="RFDTV.us" site_id="25148">RFD-TV</channel>
+    <channel lang="en" xmltv_id="HopeChannel.us" site_id="49266">Hope Channel</channel>
+    <channel lang="en" xmltv_id="JBS.us" site_id="74978">JBS</channel>
+    <channel lang="en" xmltv_id="WRNNDT1.us" site_id="101453">ShopHQ (WRNN-DT1) New Rochelle, NY</channel>
+    <channel lang="en" xmltv_id="WMBCDT1.us" site_id="35911">WMBC (WMBC-DT1) Newton, NJ</channel>
+    <channel lang="en" xmltv_id="WZMEDT1.us" site_id="64008">Story Television (WZME-DT1) New York, NY</channel>
+    <channel lang="en" xmltv_id="WZMEDT2.us" site_id="74322">MeTV Plus (WZME-DT2) New York, NY</channel>
+    <channel lang="en" xmltv_id="WNWTLD1.us" site_id="81896">Local Now (WNWT-LD1) New York, NY</channel>
+
   </channels>
 </site>
