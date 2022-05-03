@@ -8,7 +8,7 @@ module.exports = {
   site: 'dstv.com',
   request: {
     cache: {
-      maxAge: 6 * 60 * 60 * 1000 // 6h
+      ttl: 6 * 60 * 60 * 1000 // 6h
     }
   },
   url: function ({ channel, date }) {
@@ -19,7 +19,7 @@ module.exports = {
       'YYYY-MM-DD'
     )}&package=${packageName}&country=${region}`
   },
-  async parser({ content, channel }) {
+  async parser({ content, channel, cached }) {
     let programs = []
     const items = parseItems(content, channel)
     for (const item of items) {
