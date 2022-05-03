@@ -22,10 +22,10 @@ module.exports = {
           .set('D', date.get('D'))
           .set('M', date.get('M'))
           .set('y', date.get('y'))
-        const start = startDate.toString()
+        const start = startDate.toJSON()
         const duration = parseInt(item.duration_in_minutes)
-        const stopDate = startDate.utcOffset(duration)
-        const stop = stopDate.toString()
+        const stopDate = startDate.add(duration,'m')
+        const stop = stopDate.toJSON()
 
         programs.push({
           title: item.name || item.program.name,
