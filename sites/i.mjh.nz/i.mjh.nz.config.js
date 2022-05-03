@@ -9,12 +9,17 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'i.mjh.nz',
+  request: {
+    cache: {
+      ttl: 6 * 60 * 60 * 1000 // 6h
+    }
+  },
   url: function ({ channel }) {
     const [source] = channel.site_id.split('#')
 
     return `https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/${source}.xml`
   },
-  parser: function ({ content, channel, date }) {
+  parser: function ({ content, channel, date, cached }) {
     let programs = []
     const items = parseItems(content, channel, date)
     items.forEach(item => {
