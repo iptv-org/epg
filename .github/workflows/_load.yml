@@ -41,7 +41,7 @@ jobs:
         with:
           app_id: ${{ secrets.APP_ID }}
           private_key: ${{ secrets.APP_PRIVATE_KEY }}
-      - uses: JamesIves/github-pages-deploy-action@v4.2.5
+      - uses: JamesIves/github-pages-deploy-action@v4.3.3
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
         with:
           branch: gh-pages
