@@ -15,6 +15,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
       - run: npm run api:load
       - uses: tibdex/github-app-token@v1
         if: ${{ !env.ACT }}
@@ -41,9 +43,6 @@ jobs:
         with:
           app_id: ${{ secrets.APP_ID }}
           private_key: ${{ secrets.APP_PRIVATE_KEY }}
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 2
       - uses: JamesIves/github-pages-deploy-action@v4.3.3
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
         with:
