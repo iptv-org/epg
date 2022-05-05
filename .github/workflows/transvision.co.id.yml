@@ -1,7 +1,7 @@
 name: transvision.co.id
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '00 14 * * *'
   workflow_dispatch:
   workflow_run:
     workflows: [_trigger]
@@ -12,6 +12,3 @@ jobs:
     uses: ./.github/workflows/_load.yml
     with:
       site: ${{github.workflow}}
-    secrets:
-      APP_ID: ${{ secrets.APP_ID }}
-      APP_PRIVATE_KEY: ${{ secrets.APP_PRIVATE_KEY }}
