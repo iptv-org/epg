@@ -57,6 +57,7 @@ module.exports = {
 
     return programs
   },
+  days: 3,
   async channels() {
     const data = await axios
       .get('https://www.mncvision.id/schedule')
