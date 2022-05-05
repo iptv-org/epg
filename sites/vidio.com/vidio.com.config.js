@@ -13,6 +13,7 @@ module.exports = {
   url({ channel }) {
     return `https://www.vidio.com/live/${channel.site_id}/schedules`
   },
+  days: 3,
   parser({ content, date }) {
     const programs = []
     const items = parseItems(content, date)
