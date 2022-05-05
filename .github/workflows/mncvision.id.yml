@@ -12,6 +12,3 @@ jobs:
     uses: ./.github/workflows/_load.yml
     with:
       site: ${{github.workflow}}
-    secrets:
-      APP_ID: ${{ secrets.APP_ID }}
-      APP_PRIVATE_KEY: ${{ secrets.APP_PRIVATE_KEY }}
