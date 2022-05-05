@@ -43,7 +43,7 @@ jobs:
           private_key: ${{ secrets.APP_PRIVATE_KEY }}
       - uses: actions/checkout@v3
         with:
-          ref: gh-pages
+          fetch-depth: 0
       - uses: JamesIves/github-pages-deploy-action@v4.3.3
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
         with:
