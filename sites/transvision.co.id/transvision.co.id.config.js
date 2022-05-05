@@ -27,6 +27,7 @@ module.exports = {
       'Content-Type': 'application/x-www-form-urlencoded'
     }
   },
+  days: 3,
   parser({ content, date }) {
     const programs = []
     const items = parseItems(content)
