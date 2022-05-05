@@ -51,5 +51,5 @@ jobs:
           token: ${{ steps.create-deploy-token.outputs.token }}
           git-config-name: iptv-bot[bot]
           git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
-          commit-message: '[Bot] Deploy to GitHub Pages'
+          commit-message: '[Bot] Update guide from ${{inputs.site}}'
           clean: false
