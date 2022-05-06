@@ -51,3 +51,4 @@ jobs:
           git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
           commit-message: '[Bot] Update guide from ${{inputs.site}}'
           clean: false
+          force: false
