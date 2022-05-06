@@ -32,6 +32,8 @@ module.exports = {
           description: item.description,
           season: item.season || null,
           episode: item.episode || null,
+          sub_title : item['episode_title'] || null,
+          url : parseURL(item),
           start,
           stop,
           icon: parseIcon(item)
@@ -46,4 +48,15 @@ module.exports = {
 function parseIcon(item) {
   return cover = item.image ? `https://www.raiplay.it${item.image}` : null
 
+}
+
+function parseURL(item) {
+  let url = null
+  if(item.weblink){
+    url = `https://www.raiplay.it${item.weblink}`
+  }
+  if(item.event_weblink){
+    url = `https://www.raiplay.it${item.event_weblink}`
+  }
+  return url
 }
