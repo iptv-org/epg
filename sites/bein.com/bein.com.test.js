@@ -10,10 +10,10 @@ dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
 const date = dayjs.utc('2022-05-08', 'YYYY-MM-DD').startOf('d')
-const channel = { site_id: '1', xmltv_id: 'BeInSports.qa' }
+const channel = { site_id: '0#1', xmltv_id: 'BeInSports.qa' }
 
 it('can generate valid url', () => {
-  const result = url({ date })
+  const result = url({ date, channel })
   expect(result).toBe(
     'https://www.bein.com/en/epg-ajax-template/?action=epg_fetch&category=sports&cdate=2022-05-08&language=EN&loadindex=0&mins=00&offset=0&postid=25356&serviceidentity=bein.net'
   )
