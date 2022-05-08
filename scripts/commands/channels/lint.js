@@ -1,5 +1,5 @@
 const chalk = require('chalk')
-const libxml = require('libxmljs')
+const libxml = require('libxmljs2')
 const { program } = require('commander')
 const { logger, file } = require('../../core')
 

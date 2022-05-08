@@ -917,10 +917,12 @@
   dependencies:
     "underscore" "~1.4.4"
 
-"bindings@~1.3.0":
-  "integrity" "sha512-i47mqjF9UbjxJhxGf+pZ6kSxrnI3wBLlnGI2ArWJ4r0VrvDS7ZYXkprq/pLaBWYq4GM0r4zdHY+NNRqEMU7uew=="
-  "resolved" "https://registry.npmjs.org/bindings/-/bindings-1.3.1.tgz"
-  "version" "1.3.1"
+"bindings@~1.5.0":
+  "integrity" "sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ=="
+  "resolved" "https://registry.npmjs.org/bindings/-/bindings-1.5.0.tgz"
+  "version" "1.5.0"
+  dependencies:
+    "file-uri-to-path" "1.0.0"
 
 "bl@^4.1.0":
   "integrity" "sha512-1W07cM9gS6DcLperZfFSj+bWLtaPGSOHWhPiGzXmvVJbRLdG82sH/Kn8EtW1VqWVA54AKf2h5k5BbnIbwF3h6w=="
@@ -1631,6 +1633,11 @@
   "version" "3.2.0"
   dependencies:
     "escape-string-regexp" "^1.0.5"
+
+"file-uri-to-path@1.0.0":
+  "integrity" "sha512-0Zt+s3L7Vf1biwWZ29aARiVYLx7iMGnEUl9x33fbB/j3jR81u/O2LbqK+Bm1CDSNDKVtJ/YjwY7TUd5SkeLQLw=="
+  "resolved" "https://registry.npmjs.org/file-uri-to-path/-/file-uri-to-path-1.0.0.tgz"
+  "version" "1.0.0"
 
 "fill-range@^7.0.1":
   "integrity" "sha512-qOo9F+dMUmC2Lcb4BbVvnKJxTPjCm+RRpe4gDuGrzkL7mEVl/djYSu2OdQ2Pa302N4oqkSg9ir6jaLWJ2USVpQ=="
@@ -2572,14 +2579,14 @@
     "prelude-ls" "~1.1.2"
     "type-check" "~0.3.2"
 
-"libxmljs@^0.19.9":
-  "integrity" "sha512-oPgeDf4Hc4KG9HKbKEQlRCKr605Efz4YFcRIw/jroVIqTTdicLxYGsum5o/Be5N1P5v7npil7N7OFvak5A43hg=="
-  "resolved" "https://registry.npmjs.org/libxmljs/-/libxmljs-0.19.9.tgz"
-  "version" "0.19.9"
+"libxmljs2@^0.30.1":
+  "integrity" "sha512-Upgf6LnbDZV8oYrG2cONazKjnUPV2v8TbAKP951flkCsyyrEuMYBe8IgYtrcm5bXFOmQnKsbFeZwMwVvVNZLpg=="
+  "resolved" "https://registry.npmjs.org/libxmljs2/-/libxmljs2-0.30.1.tgz"
+  "version" "0.30.1"
   dependencies:
     "@mapbox/node-pre-gyp" "^1.0.9"
-    "bindings" "~1.3.0"
-    "nan" "~2.14.0"
+    "bindings" "~1.5.0"
+    "nan" "~2.15.0"
 
 "lie@3.1.1":
   "integrity" "sha1-mkNrLMd0bKWd56QfpGmz77dr2H4="
@@ -2781,10 +2788,10 @@
   "resolved" "https://registry.npmjs.org/mute-stream/-/mute-stream-0.0.8.tgz"
   "version" "0.0.8"
 
-"nan@~2.14.0":
-  "integrity" "sha512-M2ufzIiINKCuDfBSAUr1vWQ+vuVcA9kqx8JJUsbQi6yf1uGRyb7HfpdfUr5qLXf3B/t8dPvcjhKMmlfnP47EzQ=="
-  "resolved" "https://registry.npmjs.org/nan/-/nan-2.14.2.tgz"
-  "version" "2.14.2"
+"nan@~2.15.0":
+  "integrity" "sha512-8ZtvEnA2c5aYCZYd1cvgdnU6cqwixRoYg70xPLWUws5ORTa/lnw+u4amixRS/Ac5U5mQVgp9pnlSUnbNWFaWZQ=="
+  "resolved" "https://registry.npmjs.org/nan/-/nan-2.15.0.tgz"
+  "version" "2.15.0"
 
 "natural-compare@^1.4.0":
   "integrity" "sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc="
