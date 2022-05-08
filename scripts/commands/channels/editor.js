@@ -17,10 +17,10 @@ let site
 let channels = []
 
 async function main() {
-  await api.channels.load()
   let result = await parser.parseChannels(options.input)
   site = result.site
   channels = result.channels
+  await api.channels.load()
   for (const channel of channels) {
     if (channel.xmltv_id) continue
     let choices = await getOptions(channel)
