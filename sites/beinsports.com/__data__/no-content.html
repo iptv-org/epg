@@ -1,0 +1,28 @@
+<script>
+currenthour="13";
+</script>
+<div class=container>
+<div class='row no-gutter'>
+<div class='col-xs-12 col-sm-12 col-md-12 col-lg-12'>
+</div></div><div class='row no-gutter'>
+<div class='col-xs-12 col-sm-12 col-md-12 col-lg-12'>
+<table width=100% border=0  class=day_table><tr><td><span id=day1t1 style=width:100% class=day_item><a href=javascript:selectday('day1');loaders('utctime.php?cdate=2022-05-08&offset=0&mins=00&category=sports&serviceidentity=beinsports.com',2)>Sun</a></span><span id=day1t2 style=width:100% class=day_item1><a href=javascript:selectday('day1');loaders('utctime.php?cdate=2022-05-08&offset=0&mins=00&category=sports&serviceidentity=beinsports.com',2)>08</a></div></td><td><span id=day2t1 style=width:100% class=day_item><a href=javascript:selectday('day2');loaders('utctime.php?cdate=2022-05-09&offset=0&mins=00&category=sports&serviceidentity=beinsports.com',2)>Mon</a></span><span id=day2t2 style=width:100% class=day_item1><a href=javascript:selectday('day2');loaders('utctime.php?cdate=2022-05-09&offset=0&mins=00&category=sports&serviceidentity=beinsports.com',2)>09</a></div></td><td><span id=day3t1 style=width:100% class=day_item><a href=javascript:selectday('day3');loaders('utctime.php?cdate=2022-05-10&offset=0&mins=00&category=sports&serviceidentity=beinsports.com',2)>Tue</a></span><span id=day3t2 style=width:100% class=day_item1><a href=javascript:selectday('day3');loaders('utctime.php?cdate=2022-05-10&offset=0&mins=00&category=sports&serviceidentity=beinsports.com',2)>10</a></div></td><td><span id=day4t1 style=width:100% class=day_item><a href=javascript:selectday('day4');loaders('utctime.php?cdate=2022-05-11&offset=0&mins=00&category=sports&serviceidentity=beinsports.com',2)>Wed</a></span><span id=day4t2 style=width:100% class=day_item1><a href=javascript:selectday('day4');loaders('utctime.php?cdate=2022-05-11&offset=0&mins=00&category=sports&serviceidentity=beinsports.com',2)>11</a></div></td><td><span id=day5t1 style=width:100% class=day_item><a href=javascript:selectday('day5');loaders('utctime.php?cdate=2022-05-12&offset=0&mins=00&category=sports&serviceidentity=beinsports.com',2)>Thu</a></span><span id=day5t2 style=width:100% class=day_item1><a href=javascript:selectday('day5');loaders('utctime.php?cdate=2022-05-12&offset=0&mins=00&category=sports&serviceidentity=beinsports.com',2)>12</a></div></td><td><span id=day6t1 style=width:100% class=day_item><a href=javascript:selectday('day6');loaders('utctime.php?cdate=2022-05-13&offset=0&mins=00&category=sports&serviceidentity=beinsports.com',2)>Fri</a></span><span id=day6t2 style=width:100% class=day_item1><a href=javascript:selectday('day6');loaders('utctime.php?cdate=2022-05-13&offset=0&mins=00&category=sports&serviceidentity=beinsports.com',2)>13</a></div></td><td><span id=day7t1 style=width:100% class=day_item><a href=javascript:selectday('day7');loaders('utctime.php?cdate=2022-05-14&offset=0&mins=00&category=sports&serviceidentity=beinsports.com',2)>Sat</a></span><span id=day7t2 style=width:100% class=day_item1><a href=javascript:selectday('day7');loaders('utctime.php?cdate=2022-05-14&offset=0&mins=00&category=sports&serviceidentity=beinsports.com',2)>14</a></div></td></table></div>
+</div><div class='row no-gutter'>
+<div class='col-xs-12 col-sm-12 col-md-12 col-lg-12'>
+<div style='background-color:#d1d0de;margin:0px auto;text-align:center;display:flex;width:100%'><div id=left style=width:25px;background-color:red;height:50px;padding-top:13px;background-color:#d1d0de;><img src=ico/left.png onclick=ptime()></div><div id='slider_timer' class='slider_time'>
+<ul id='timer'></ul></div><div id=left style=width:25px;background-color:red;height:50px;padding-top:13px;background-color:#d1d0de><img src=ico/right.png onclick=ntime()></div></div>
+</div>
+</div><div class='row no-gutter' style='height:10px'></div>
+<div class='row no-gutter'>
+<div class='col-xs-7 col-xs-offset-5 col-sm-4 col-sm-offset-8 col-md-2 col-md-offset-10 col-lg-2 col-lg-offset-10'>
+<div style='position:absolute;font-size:18px;margin-top:5px'>Live Events</div><div class="onoffswitch" style='left:120px'><input onchange=showhides() type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0"><label class="onoffswitch-label" for="myonoffswitch"><span class="onoffswitch-inner"></span><span class="onoffswitch-switch"></span></label></div></div></div><div class='row no-gutter' style='height:10px'></div>
+<div class='row no-gutter'>
+<div class='col-xs-12 col-sm-12 col-md-12 col-lg-12'>
+<div id='loader_inner' style='display:none;margin:0 auto;width:100%;margin-top:5px;margin-bottom:5px;text-align:center'>
+<div style='text-align:center;margin:auto 0;'><img src='images/ajax-loader.gif'></div>
+</div>
+</div>
+</div>
+</div><div class='container'><div class='row no-gutter' id='cta_row'><div id='cta' class='col-xs-12 col-sm-12 col-md-12 col-lg-12'><img style=cursor:pointer onclick=gobein('entertainment','e') class='img-responsive'  src=images/entertain_cta_en.png></div><div></div>
+</div>
+<div id="immobile" style="display:'none'"></div><div id="imtablet" style="display:'none'"></div><div id="imdesktop" style="display:'none'"></div>
