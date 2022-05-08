@@ -22,6 +22,7 @@ module.exports = {
         episode: item.content.episodeNumber || null,
         start: parseStart(item),
         stop: parseStop(item),
+        url: parseURL(item),
         icon: parseIcon(item)
       })
     })
@@ -45,6 +46,10 @@ function parseStart(item) {
 
 function parseStop(item) {
   return item.endtime ? dayjs(item.endtime) : null
+}
+
+function parseURL(item) {
+  return item.content.url ? `https://guidatv.sky.it${item.content.url}` : null
 }
 
 function parseIcon(item) {
