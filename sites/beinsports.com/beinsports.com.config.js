@@ -1,9 +1,11 @@
 const cheerio = require('cheerio')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
 
 dayjs.extend(utc)
+dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
 module.exports = {
@@ -14,32 +16,32 @@ module.exports = {
     )}`
   },
   parser: function ({ content, channel, date }) {
-    let offset = -1
     let programs = []
     const items = parseItems(content, channel)
+    date = date.subtract(1, 'd')
     items.forEach(item => {
-      const title = parseTitle(item)
-      const category = parseCategory(item)
-      let start = parseStart(item, date)
-      if (!start) return
-      if (start.hour() > 18 && offset === -1) {
-        start = start.subtract(1, 'd')
-      } else if (start.hour() < 12 && offset === -1) {
-        offset++
+      const $item = cheerio.load(item)
+      const title = parseTitle($item)
+      if (!title) return
+      const category = parseCategory($item)
+      const prev = programs[programs.length - 1]
+      let start = parseStart($item, date)
+      if (prev) {
+        if (start.isBefore(prev.start)) {
+          start = start.add(1, 'd')
+          date = date.add(1, 'd')
+        }
+        prev.stop = start
       }
-      let stop = parseStop(item, date)
-      if (!stop) return
-      if (stop.hour() > 18 && offset === -1) {
-        stop = stop.subtract(1, 'd')
-      } else if (stop.hour() < 12 && offset === -1) {
-        offset++
+      let stop = parseStop($item, start)
+      if (stop.isBefore(start)) {
+        stop = stop.add(1, 'd')
       }
-
       programs.push({
         title,
         category,
-        start: start.toString(),
-        stop: stop.toString()
+        start,
+        stop
       })
     })
 
@@ -47,42 +49,37 @@ module.exports = {
   }
 }
 
-function parseTitle(item) {
-  const $ = cheerio.load(item)
-
-  return $('.title').text()
+function parseTitle($item) {
+  return $item('.title').text()
 }
 
-function parseCategory(item) {
-  const $ = cheerio.load(item)
-
-  return $('.format').text()
+function parseCategory($item) {
+  return $item('.format').text()
 }
 
-function parseStart(item, date) {
-  const $ = cheerio.load(item)
-  let [_, time] = $('.time')
+function parseStart($item, date) {
+  let [_, time] = $item('.time')
     .text()
     .match(/^(\d{2}:\d{2})/) || [null, null]
   if (!time) return null
   time = `${date.format('YYYY-MM-DD')} ${time}`
 
-  return dayjs.utc(time, 'YYYY-MM-DD HH:mm')
+  return dayjs.tz(time, 'YYYY-MM-DD HH:mm', 'Asia/Qatar')
 }
 
-function parseStop(item, date) {
-  const $ = cheerio.load(item)
-  let [_, time] = $('.time')
+function parseStop($item, date) {
+  let [_, time] = $item('.time')
     .text()
     .match(/(\d{2}:\d{2})$/) || [null, null]
   if (!time) return null
   time = `${date.format('YYYY-MM-DD')} ${time}`
 
-  return dayjs.utc(time, 'YYYY-MM-DD HH:mm')
+  return dayjs.tz(time, 'YYYY-MM-DD HH:mm', 'Asia/Qatar')
 }
 
 function parseItems(content, channel) {
+  const [_, channelId] = channel.site_id.split('#')
   const $ = cheerio.load(content)
 
-  return $(`#channels_${channel.site_id} .slider > ul:first-child > li`).toArray()
+  return $(`#channels_${channelId} .slider > ul:first-child > li`).toArray()
 }
