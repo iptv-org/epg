@@ -10,10 +10,12 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'bein.com',
-  url: function ({ date }) {
+  url: function ({ date, channel }) {
+    const [index] = channel.site_id.split('#')
+
     return `https://www.bein.com/en/epg-ajax-template/?action=epg_fetch&category=sports&cdate=${date.format(
       'YYYY-MM-DD'
-    )}&language=EN&loadindex=0&mins=00&offset=0&postid=25356&serviceidentity=bein.net`
+    )}&language=EN&loadindex=${index}&mins=00&offset=0&postid=25356&serviceidentity=bein.net`
   },
   parser: function ({ content, channel, date }) {
     let programs = []
@@ -78,7 +80,8 @@ function parseStop($item, date) {
 }
 
 function parseItems(content, channel) {
+  const [_, channelId] = channel.site_id.split('#')
   const $ = cheerio.load(content)
 
-  return $(`#channels_${channel.site_id} .slider > ul:first-child > li`).toArray()
+  return $(`#channels_${channelId} .slider > ul:first-child > li`).toArray()
 }
