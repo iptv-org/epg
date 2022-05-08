@@ -1,3 +1,4 @@
+const axios = require('axios')
 const cheerio = require('cheerio')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
@@ -10,8 +11,11 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'beinsports.com',
-  url: function ({ date }) {
-    return `https://epg.beinsports.com/utctime.php?mins=00&serviceidentity=beinsports.com&cdate=${date.format(
+  url: function ({ date, channel }) {
+    let [region] = channel.site_id.split('#')
+    region = region ? `_${region}` : ''
+
+    return `https://epg.beinsports.com/utctime${region}.php?mins=00&serviceidentity=beinsports.com&cdate=${date.format(
       'YYYY-MM-DD'
     )}`
   },
@@ -46,6 +50,33 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels({ region, lang }) {
+    const suffix = region ? `_${region}` : ''
+    const content = await axios
+      .get(
+        `https://epg.beinsports.com/utctime${suffix}.php?mins=00&serviceidentity=beinsports.com&cdate=2022-05-08`
+      )
+      .then(r => r.data)
+      .catch(console.log)
+    const $ = cheerio.load(content)
+    const items = $(`.container > div, #epg_div > div`).toArray()
+    return items
+      .map(item => {
+        const $item = cheerio.load(item)
+        const id = $item('*').attr('id')
+        if (!/^channels\_[0-9]+$/.test(id)) return null
+        const channelId = id.replace('channels_', '')
+        const imgSrc = $item('img').attr('src')
+        const [_, __, name] = imgSrc.match(/(\/|)([a-z0-9-_.]+)(.png|.svg)$/i) || [null, null, '']
+
+        return {
+          lang,
+          site_id: `${region}#${channelId}`,
+          name
+        }
+      })
+      .filter(i => i)
   }
 }
 

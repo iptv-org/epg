@@ -1,4 +1,6 @@
+// npm run channels:parse -- --config=./sites/beinsports.com/beinsports.com.config.js --output=./sites/beinsports.com/beinsports.com_qa-ar.channels.xml --set=lang:ar --set=region:ar
 // npx epg-grabber --config=sites/beinsports.com/beinsports.com.config.js --channels=sites/beinsports.com/beinsports.com_qa-en.channels.xml --output=guide.xml --timeout=30000 --days=2
+// npx epg-grabber --config=sites/beinsports.com/beinsports.com.config.js --channels=sites/beinsports.com/beinsports.com_qa-ar.channels.xml --output=guide.xml --timeout=30000 --days=2
 
 const { parser, url } = require('./beinsports.com.config.js')
 const fs = require('fs')
@@ -13,9 +15,17 @@ const date = dayjs.utc('2022-05-08', 'YYYY-MM-DD').startOf('d')
 const channel = { site_id: '#1', xmltv_id: 'BeINSports.qa' }
 
 it('can generate valid url', () => {
-  const result = url({ date })
+  const result = url({ date, channel })
   expect(result).toBe(
     'https://epg.beinsports.com/utctime.php?mins=00&serviceidentity=beinsports.com&cdate=2022-05-08'
+  )
+})
+
+it('can generate valid url for arabic guide', () => {
+  const channel = { site_id: 'ar#1', xmltv_id: 'BeINSports.qa' }
+  const result = url({ date, channel })
+  expect(result).toBe(
+    'https://epg.beinsports.com/utctime_ar.php?mins=00&serviceidentity=beinsports.com&cdate=2022-05-08'
   )
 })
 
