@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/beinsports.com/beinsports.com.config.js --channels=sites/beinsports.com/beinsports.com_qa.channels.xml --days=2 --output=.gh-pages/guides/qa/beinsports.com.epg.xml
+// npx epg-grabber --config=sites/beinsports.com/beinsports.com.config.js --channels=sites/beinsports.com/beinsports.com_qa.channels.xml --output=guide.xml --timeout=30000 --days=2
 
 const { parser, url } = require('./beinsports.com.config.js')
 const dayjs = require('dayjs')

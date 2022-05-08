@@ -8,7 +8,6 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'beinsports.com',
-  ignore: true, // NOTE: there is no program for the current date on the site
   url: function ({ date }) {
     return `https://epg.beinsports.com/utctime.php?mins=00&serviceidentity=beinsports.com&cdate=${date.format(
       'YYYY-MM-DD'
