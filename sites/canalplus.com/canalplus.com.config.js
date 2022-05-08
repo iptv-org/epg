@@ -1,13 +1,17 @@
 const dayjs = require('dayjs')
 const axios = require('axios')
 
+// TODO: calculate API_KEY based on the current date
+//
+// const API_KEY = 'f55e5c7ddf0afba59d1c64581358910d' // 03.2022
+const API_KEY = 'c71b6b8eb30125dab9d10a3850131ac6' // 05.2022
+
 module.exports = {
   site: 'canalplus.com',
-  ignore: true, // server returns HTTP error 401 (https://github.com/iptv-org/epg/runs/5746477292?check_suite_focus=true)
   url: function ({ channel, date }) {
     const diff = date.diff(dayjs.utc().startOf('d'), 'd')
 
-    return `https://hodor.canalplus.pro/api/v2/mycanal/channels/f55e5c7ddf0afba59d1c64581358910d/${channel.site_id}/broadcasts/day/${diff}`
+    return `https://hodor.canalplus.pro/api/v2/mycanal/channels/${API_KEY}/${channel.site_id}/broadcasts/day/${diff}`
   },
   async parser({ content }) {
     let programs = []
