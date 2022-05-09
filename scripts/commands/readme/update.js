@@ -12,10 +12,10 @@ const options = program
 async function main() {
   const items = []
 
-  try {
-    await api.countries.load()
-    const files = await file.list(CHANNELS_PATH)
-    for (const filepath of files) {
+  await api.countries.load().catch(console.error)
+  const files = await file.list(CHANNELS_PATH).catch(console.error)
+  for (const filepath of files) {
+    try {
       const { site, channels } = await parser.parseChannels(filepath)
       const dir = file.dirname(filepath)
       const config = require(file.resolve(`${dir}/${site}.config.js`))
@@ -31,9 +31,10 @@ async function main() {
         count: channels.length,
         group: `${suffix}/${site}`
       })
+    } catch (err) {
+      console.error(err)
+      continue
     }
-  } catch (err) {
-    console.error(err)
   }
 
   await generateCountriesTable(items)
