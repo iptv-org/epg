@@ -9,7 +9,12 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'guide.dstv.com',
-  ignore: true, // the guide is currently not available on the site
+  request: {
+    cache: {
+      ttl: 60 * 60 * 1000,
+      interpretHeader: false
+    }
+  },
   url({ channel, date }) {
     const [bouquetId] = channel.site_id.split('#')
 
@@ -17,7 +22,7 @@ module.exports = {
       'YYYY-MM-DD'
     )}`
   },
-  parser({ content, date, channel }) {
+  parser({ content, date, channel, cached }) {
     const programs = []
     const items = parseItems(content, date, channel)
     items.forEach(item => {
