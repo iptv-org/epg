@@ -20,24 +20,24 @@ jest.mock('axios')
 it('can generate valid url for today', () => {
   const today = dayjs.utc().startOf('d')
   expect(url({ channel, date: today })).toBe(
-    'https://hodor.canalplus.pro/api/v2/mycanal/channels/f55e5c7ddf0afba59d1c64581358910d/312/broadcasts/day/0'
+    'https://hodor.canalplus.pro/api/v2/mycanal/channels/c71b6b8eb30125dab9d10a3850131ac6/312/broadcasts/day/0'
   )
 })
 
 it('can generate valid url for tomorrow', () => {
   const tomorrow = dayjs.utc().startOf('d').add(1, 'd')
   expect(url({ channel, date: tomorrow })).toBe(
-    'https://hodor.canalplus.pro/api/v2/mycanal/channels/f55e5c7ddf0afba59d1c64581358910d/312/broadcasts/day/1'
+    'https://hodor.canalplus.pro/api/v2/mycanal/channels/c71b6b8eb30125dab9d10a3850131ac6/312/broadcasts/day/1'
   )
 })
 
 it('can parse response', done => {
-  const content = `{"timeSlices":[{"timeSlice":"0","contents":[{"contentID":"18257183_50061","title":"TFou","subtitle":"Emission du 07 mars 2022","startTime":1646630700000,"onClick":{"displayTemplate":"detailSeason","displayName":"TFou","path":"/jeunesse/tfou/h/10709960_50061","URLPage":"https://hodor.canalplus.pro/api/v2/mycanal/detail/f55e5c7ddf0afba59d1c64581358910d/okapi/10709339_50061.json?detailType=detailSeason&objectType=season&broadcastID=PLM_1094261940&episodeId=18257183_50061&brandID=10709960_50061&fromDiff=true"}}]},{"timeSlice":"1","contents":[{"contentID":"18257202_50061","title":"Petits plats en équilibre","subtitle":"Mag. Gastronomie","startTime":1646654100000,"onClick":{"displayTemplate":"detailPage","displayName":"Petits plats en équilibre","path":"/divertissement/petits-plats-en-equilibre-mag-gastronomie/h/18257202_50061","URLPage":"https://hodor.canalplus.pro/api/v2/mycanal/detail/f55e5c7ddf0afba59d1c64581358910d/okapi/18257202_50061.json?detailType=detailPage&objectType=unit&broadcastID=PLM_1094380194&fromDiff=true"}}]}]}`
+  const content = `{"timeSlices":[{"timeSlice":"0","contents":[{"contentID":"18257183_50061","title":"TFou","subtitle":"Emission du 07 mars 2022","startTime":1646630700000,"onClick":{"displayTemplate":"detailSeason","displayName":"TFou","path":"/jeunesse/tfou/h/10709960_50061","URLPage":"https://hodor.canalplus.pro/api/v2/mycanal/detail/c71b6b8eb30125dab9d10a3850131ac6/okapi/10709339_50061.json?detailType=detailSeason&objectType=season&broadcastID=PLM_1094261940&episodeId=18257183_50061&brandID=10709960_50061&fromDiff=true"}}]},{"timeSlice":"1","contents":[{"contentID":"18257202_50061","title":"Petits plats en équilibre","subtitle":"Mag. Gastronomie","startTime":1646654100000,"onClick":{"displayTemplate":"detailPage","displayName":"Petits plats en équilibre","path":"/divertissement/petits-plats-en-equilibre-mag-gastronomie/h/18257202_50061","URLPage":"https://hodor.canalplus.pro/api/v2/mycanal/detail/c71b6b8eb30125dab9d10a3850131ac6/okapi/18257202_50061.json?detailType=detailPage&objectType=unit&broadcastID=PLM_1094380194&fromDiff=true"}}]}]}`
 
   axios.get.mockImplementation(url => {
     if (
       url ===
-      'https://hodor.canalplus.pro/api/v2/mycanal/detail/f55e5c7ddf0afba59d1c64581358910d/okapi/10709339_50061.json?detailType=detailSeason&objectType=season&broadcastID=PLM_1094261940&episodeId=18257183_50061&brandID=10709960_50061&fromDiff=true'
+      'https://hodor.canalplus.pro/api/v2/mycanal/detail/c71b6b8eb30125dab9d10a3850131ac6/okapi/10709339_50061.json?detailType=detailSeason&objectType=season&broadcastID=PLM_1094261940&episodeId=18257183_50061&brandID=10709960_50061&fromDiff=true'
     ) {
       return Promise.resolve({
         data: JSON.parse(
@@ -46,7 +46,7 @@ it('can parse response', done => {
       })
     } else if (
       url ===
-      'https://hodor.canalplus.pro/api/v2/mycanal/detail/f55e5c7ddf0afba59d1c64581358910d/okapi/18257202_50061.json?detailType=detailPage&objectType=unit&broadcastID=PLM_1094380194&fromDiff=true'
+      'https://hodor.canalplus.pro/api/v2/mycanal/detail/c71b6b8eb30125dab9d10a3850131ac6/okapi/18257202_50061.json?detailType=detailPage&objectType=unit&broadcastID=PLM_1094380194&fromDiff=true'
     ) {
       return Promise.resolve({
         data: JSON.parse(
