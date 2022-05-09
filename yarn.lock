@@ -1474,10 +1474,10 @@
   "resolved" "https://registry.npmjs.org/entities/-/entities-2.2.0.tgz"
   "version" "2.2.0"
 
-"epg-grabber@^0.27.0":
-  "integrity" "sha512-MHUTNSFQtleifS9zaO0tGc5OneIJKyLGhmhCArEuGBoiQVGdM/gGJ3s5RmNJfm5Qt3a+rjcWeOL5efP7lvhLQQ=="
-  "resolved" "https://registry.npmjs.org/epg-grabber/-/epg-grabber-0.27.0.tgz"
-  "version" "0.27.0"
+"epg-grabber@^0.27.1":
+  "integrity" "sha512-NRFLsa+Wtu0CYNy8qlew5pztJvmeb9yvJstQlQ02e21SxWU0erpovx+YpUcYQJwuNz+UIjVWRI+xuZsLeLBm+A=="
+  "resolved" "https://registry.npmjs.org/epg-grabber/-/epg-grabber-0.27.1.tgz"
+  "version" "0.27.1"
   dependencies:
     "axios" "^0.21.1"
     "axios-cache-interceptor" "^0.10.3"
