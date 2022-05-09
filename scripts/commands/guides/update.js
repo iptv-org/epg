@@ -3,6 +3,7 @@ const grabber = require('epg-grabber')
 const _ = require('lodash')
 
 const PUBLIC_DIR = process.env.PUBLIC_DIR || '.gh-pages'
+const CURR_DATE = process.env.CURR_DATE || new Date()
 
 async function main() {
   logger.info(`Generating guides/...`)
@@ -40,7 +41,7 @@ async function main() {
 
     const filepath = `${PUBLIC_DIR}/guides/${key}.epg.xml`
     logger.info(`Creating "${filepath}"...`)
-    const output = grabber.convertToXMLTV({ channels, programs })
+    const output = grabber.convertToXMLTV({ channels, programs, date: CURR_DATE })
     await file.create(filepath, output)
     const compressed = await zip.compress(output)
     await file.create(filepath + '.gz', compressed)

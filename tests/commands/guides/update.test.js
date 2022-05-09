@@ -17,7 +17,7 @@ it('can generate /guides', () => {
     'tests/__data__/output/programs.db'
   )
   const stdout = execSync(
-    'DB_DIR=tests/__data__/output DATA_DIR=tests/__data__/input/data PUBLIC_DIR=tests/__data__/output npm run guides:update',
+    'DB_DIR=tests/__data__/output DATA_DIR=tests/__data__/input/data PUBLIC_DIR=tests/__data__/output CURR_DATE=2022-05-05 npm run guides:update',
     { encoding: 'utf8' }
   )
 
@@ -48,7 +48,6 @@ it('will terminate process if programs not found', () => {
       'DB_DIR=tests/__data__/output DATA_DIR=tests/__data__/input/data PUBLIC_DIR=tests/__data__/output npm run guides:update',
       { encoding: 'utf8' }
     )
-    console.log(stdout)
     process.exit(1)
   } catch (err) {
     expect(err.status).toBe(1)
