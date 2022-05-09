@@ -13,10 +13,7 @@ jobs:
       - run: git config user.name 'iptv-bot[bot]'
       - run: git config user.email '84861620+iptv-bot[bot]@users.noreply.github.com'
       - run: git checkout -b ${{ steps.create-branch-name.outputs.branch_name }}
-      - name: Download data from API
-        run: |
-          mkdir -p scripts/data
-          curl -L -o scripts/data/countries.json https://iptv-org.github.io/api/countries.json
+      - name: npm run api:load
       - uses: actions/setup-node@v2
         if: ${{ !env.ACT }}
         with:
