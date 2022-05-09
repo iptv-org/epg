@@ -1,6 +1,6 @@
 // npm run channels:parse -- --config=./sites/beinsports.com/beinsports.com.config.js --output=./sites/beinsports.com/beinsports.com_qa-ar.channels.xml --set=lang:ar --set=region:ar
 // npx epg-grabber --config=sites/beinsports.com/beinsports.com.config.js --channels=sites/beinsports.com/beinsports.com_qa-en.channels.xml --output=guide.xml --timeout=30000 --days=2
-// npx epg-grabber --config=sites/beinsports.com/beinsports.com.config.js --channels=sites/beinsports.com/beinsports.com_qa-ar.channels.xml --output=guide.xml --timeout=30000 --days=2
+// npx epg-grabber --config=sites/beinsports.com/beinsports.com.config.js --channels=sites/beinsports.com/beinsports.com_us-en.channels.xml --output=guide.xml --timeout=30000 --days=2
 
 const { parser, url } = require('./beinsports.com.config.js')
 const fs = require('fs')
@@ -41,7 +41,23 @@ it('can parse response', () => {
     start: '2022-05-07T19:45:00.000Z',
     stop: '2022-05-07T21:30:00.000Z',
     title: 'Al Arabi vs Al Khor - Qatar Stars League 2021/2022',
-    category: 'Qatar Stars League'
+    category: ['Qatar Stars League']
+  })
+})
+
+it('can parse US response', () => {
+  const content = fs.readFileSync(path.resolve('sites/beinsports.com/__data__/content_us.html'))
+  const results = parser({ date, channel, content }).map(p => {
+    p.start = p.start.toJSON()
+    p.stop = p.stop.toJSON()
+    return p
+  })
+
+  expect(results[0]).toMatchObject({
+    start: '2022-05-07T19:30:00.000Z',
+    stop: '2022-05-07T21:30:00.000Z',
+    title: 'Basaksehir vs. Galatasaray',
+    category: ['Turkish Super Lig Soccer', 'Soccer']
   })
 })
 

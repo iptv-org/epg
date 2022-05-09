@@ -11,6 +11,12 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'beinsports.com',
+  request: {
+    cache: {
+      ttl: 60 * 60 * 1000, // 1h
+      interpretHeader: false
+    }
+  },
   url: function ({ date, channel }) {
     let [region] = channel.site_id.split('#')
     region = region ? `_${region}` : ''
@@ -19,7 +25,7 @@ module.exports = {
       'YYYY-MM-DD'
     )}`
   },
-  parser: function ({ content, channel, date }) {
+  parser: function ({ content, channel, date, cached }) {
     let programs = []
     const items = parseItems(content, channel)
     date = date.subtract(1, 'd')
@@ -41,12 +47,8 @@ module.exports = {
       if (stop.isBefore(start)) {
         stop = stop.add(1, 'd')
       }
-      programs.push({
-        title,
-        category,
-        start,
-        stop
-      })
+
+      programs.push({ title, category, start, stop })
     })
 
     return programs
@@ -85,27 +87,33 @@ function parseTitle($item) {
 }
 
 function parseCategory($item) {
-  return $item('.format').text()
+  return $item('.format')
+    .map(function () {
+      return $item(this).text()
+    })
+    .get()
 }
 
 function parseStart($item, date) {
-  let [_, time] = $item('.time')
-    .text()
-    .match(/^(\d{2}:\d{2})/) || [null, null]
+  let time = $item('.time').text()
   if (!time) return null
-  time = `${date.format('YYYY-MM-DD')} ${time}`
+  let [_, start, period] = time.match(/^(\d{2}:\d{2})( AM| PM|)/) || [null, null, null]
+  if (!start) return null
+  start = `${date.format('YYYY-MM-DD')} ${start}${period}`
+  const format = period ? 'YYYY-MM-DD hh:mm A' : 'YYYY-MM-DD HH:mm'
 
-  return dayjs.tz(time, 'YYYY-MM-DD HH:mm', 'Asia/Qatar')
+  return dayjs.tz(start, format, 'Asia/Qatar')
 }
 
 function parseStop($item, date) {
-  let [_, time] = $item('.time')
-    .text()
-    .match(/(\d{2}:\d{2})$/) || [null, null]
+  let time = $item('.time').text()
   if (!time) return null
-  time = `${date.format('YYYY-MM-DD')} ${time}`
+  let [_, stop, period] = time.match(/(\d{2}:\d{2})( AM| PM|)$/) || [null, null, null]
+  if (!stop) return null
+  stop = `${date.format('YYYY-MM-DD')} ${stop}${period}`
+  const format = period ? 'YYYY-MM-DD hh:mm A' : 'YYYY-MM-DD HH:mm'
 
-  return dayjs.tz(time, 'YYYY-MM-DD HH:mm', 'Asia/Qatar')
+  return dayjs.tz(stop, format, 'Asia/Qatar')
 }
 
 function parseItems(content, channel) {
