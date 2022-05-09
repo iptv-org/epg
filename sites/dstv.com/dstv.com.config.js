@@ -8,7 +8,8 @@ module.exports = {
   site: 'dstv.com',
   request: {
     cache: {
-      ttl: 6 * 60 * 60 * 1000 // 6h
+      ttl: 6 * 60 * 60 * 1000, // 6h
+      interpretHeader: false
     }
   },
   url: function ({ channel, date }) {
