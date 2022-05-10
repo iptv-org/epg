@@ -29,34 +29,34 @@ it('can parse response', () => {
 
   expect(result).toMatchObject([
     {
-      start: '2021-11-12T23:00:00.000Z',
-      stop: '2021-11-13T00:30:00.000Z',
+      start: '2021-11-13T04:00:00.000Z',
+      stop: '2021-11-13T05:30:00.000Z',
       title: 'Bienvenidos a bordo'
     },
     {
-      start: '2021-11-13T00:30:00.000Z',
-      stop: '2021-11-13T01:45:00.000Z',
+      start: '2021-11-13T05:30:00.000Z',
+      stop: '2021-11-13T06:45:00.000Z',
       title: 'Ciudad de sombras'
     },
     {
-      start: '2021-11-13T01:45:00.000Z',
-      stop: '2021-11-13T03:30:00.000Z',
+      start: '2021-11-13T06:45:00.000Z',
+      stop: '2021-11-13T08:30:00.000Z',
       title: 'Rascacielos: Rescate en las Alturas',
       icon: 'https://imagenes.gatotv.com/categorias/peliculas/miniatura/rascacielos.jpg',
       description:
         'Cuando un ex rescatista de rehenes del FBI evalúa la seguridad de un rascacielos en China, un incendio repentino hace que sea acusado injustamente.'
     },
     {
-      start: '2021-11-13T13:30:00.000Z',
-      stop: '2021-11-13T13:41:00.000Z',
+      start: '2021-11-13T18:30:00.000Z',
+      stop: '2021-11-13T18:41:00.000Z',
       title: 'Los Jóvenes Titanes En Acción',
       icon: 'https://imagenes.gatotv.com/categorias/caricaturas/miniatura/los_jovenes_titanes_en_accion.jpg',
       description:
         'Robin, Starfire, Raven, Chico Bestia y Cyborg se preparan para nuevas aventuras cómicas después de hacer un sándwich, jugar algún videojuego o lavar la ropa.'
     },
     {
-      start: '2021-11-13T23:55:00.000Z',
-      stop: '2021-11-14T04:00:00.000Z',
+      start: '2021-11-14T04:55:00.000Z',
+      stop: '2021-11-14T09:00:00.000Z',
       title: 'Decisión 2021'
     }
   ])
