@@ -17,7 +17,7 @@ module.exports = {
     headers: {
       'content-type': 'application/x-www-form-urlencoded'
     },
-    data: function({ date }) {
+    data: function ({ date }) {
       const diff = date.diff(dayjs.utc().startOf('d'), 'd')
       const params = new URLSearchParams()
       params.append('objId', diff)
@@ -27,7 +27,7 @@ module.exports = {
   },
   parser: function ({ content }) {
     const programs = []
-    if(!content) return programs
+    if (!content) return programs
     const items = JSON.parse(content)
     items.forEach(item => {
       const icon = parseIcon(item)
@@ -51,12 +51,12 @@ function parseStart(item) {
   const [_, M, D, YYYY] = item.adddate.match(/(\d+)\/(\d+)\/(\d+) /)
   const [HH, mm] = item.start_Time.split(':')
 
-  return dayjs(`${YYYY}-${M}-${D}T${HH}:${mm}:00`, 'YYYY-M-DTHH:mm:ss', 'Asia/Riyadh')
+  return dayjs.tz(`${YYYY}-${M}-${D}T${HH}:${mm}:00`, 'YYYY-M-DTHH:mm:ss', 'Asia/Riyadh')
 }
 
 function parseDuration(item) {
   const [__, HH, mm, ss] = item.duration.match(/(\d+):(\d+):(\d+)/)
-  
+
   return parseInt(HH) * 3600 + parseInt(mm) * 60 + parseInt(ss)
 }
 
