@@ -14,7 +14,7 @@
     "readme:update": "node scripts/commands/readme/update.js",
     "test": "npx jest --runInBand",
     "test:commands": "npx jest --runInBand -- commands",
-    "test:sites": "npx jest --runInBand -- sites",
+    "test:sites": "TZ=UTC npx jest --runInBand -- sites",
     "act:test": "act workflow_dispatch -W .github/workflows/_test.yml",
     "act:check": "act workflow_dispatch -W .github/workflows/_check.yml",
     "act:update-readme": "act workflow_dispatch -W .github/workflows/_update-readme.yml",
