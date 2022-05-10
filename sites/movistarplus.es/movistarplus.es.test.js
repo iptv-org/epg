@@ -22,20 +22,20 @@ it('can parse response', () => {
   const result = parser({ content, channel, date })
   expect(result).toMatchObject([
     {
-      start: '2022-03-11T06:00:00.000Z',
-      stop: '2022-03-11T08:30:00.000Z',
+      start: '2022-03-11T05:00:00.000Z',
+      stop: '2022-03-11T07:30:00.000Z',
       category: 'Información',
       title: `Telediario Matinal`
     },
     {
-      start: '2022-03-11T22:15:00.000Z',
-      stop: '2022-03-12T00:30:00.000Z',
+      start: '2022-03-11T21:15:00.000Z',
+      stop: '2022-03-11T23:30:00.000Z',
       category: 'Información',
       title: `Las Claves del Siglo XXI: Episodio 8`
     },
     {
-      start: '2022-03-12T03:10:00.000Z',
-      stop: '2022-03-12T06:00:00.000Z',
+      start: '2022-03-12T02:10:00.000Z',
+      stop: '2022-03-12T05:00:00.000Z',
       category: 'Información',
       title: `Noticias 24H`
     }

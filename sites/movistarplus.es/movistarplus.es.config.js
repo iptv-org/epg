@@ -1,7 +1,9 @@
 const dayjs = require('dayjs')
+const timezone = require('dayjs/plugin/timezone')
 const utc = require('dayjs/plugin/utc')
 var customParseFormat = require('dayjs/plugin/customParseFormat')
 dayjs.extend(utc)
+dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
 module.exports = {
@@ -15,8 +17,16 @@ module.exports = {
     if (!items.length) return programs
     let guideDate = date
     items.forEach(item => {
-      let startTime = dayjs.utc(`${guideDate.format('YYYY-MM-DD')} ${item.HORA_INICIO}`,"YYYY-MM-DD HH:mm")
-      let stopTime = dayjs.utc(`${guideDate.format('YYYY-MM-DD')} ${item.HORA_FIN}`, 'YYYY-MM-DD HH:mm')
+      let startTime = dayjs.tz(
+        `${guideDate.format('YYYY-MM-DD')} ${item.HORA_INICIO}`,
+        'YYYY-MM-DD HH:mm',
+        'Europe/Madrid'
+      )
+      let stopTime = dayjs.tz(
+        `${guideDate.format('YYYY-MM-DD')} ${item.HORA_FIN}`,
+        'YYYY-MM-DD HH:mm',
+        'Europe/Madrid'
+      )
       if (stopTime.isBefore(startTime)) {
         guideDate = guideDate.add(1, 'd')
         stopTime = stopTime.add(1, 'd')
