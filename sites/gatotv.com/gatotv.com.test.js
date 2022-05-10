@@ -8,6 +8,8 @@ const customParseFormat = require('dayjs/plugin/customParseFormat')
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
+process.env.TZ = 'UTC'
+
 const date = dayjs.utc('2021-11-13', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: '13_de_argentina',
