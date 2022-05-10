@@ -19,10 +19,10 @@ module.exports = {
 
     data.events.forEach(item => {
       if (item.name && item.hour && item.duration_in_minutes) {
-        const startDate = dayjs(item.hour, 'HH:mm')
+        const startDate = dayjs.tz(item.hour, 'HH:mm','Europe/Rome')
           .set('D', date.get('D'))
           .set('M', date.get('M'))
-          .set('y', date.get('y')).tz('Europe/Rome')
+          .set('y', date.get('y'))
         const start = startDate.toJSON()
         const duration = parseInt(item.duration_in_minutes)
         const stopDate = startDate.add(duration,'m')
