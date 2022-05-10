@@ -27,8 +27,8 @@ it('can parse response', () => {
 
   expect(result).toMatchObject([
     {
-      start: '2022-05-03T19:40:00.000Z',
-      stop: '2022-05-03T20:30:00.000Z',
+      start: '2022-05-03T17:40:00.000Z',
+      stop: '2022-05-03T18:30:00.000Z',
       title: 'The Good Doctor S3E5 - La prima volta',
       description:
         "Shaun affronta il suo primo intervento. Il caso si rivela complicato e, nonostante Shaun abbia un'idea geniale, sarà Andrews a portare a termine l'operazione.",

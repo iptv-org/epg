@@ -1,9 +1,11 @@
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
 
 dayjs.extend(utc)
 dayjs.extend(customParseFormat)
+dayjs.extend(timezone)
 
 module.exports = {
   site: 'raiplay.it',
@@ -17,8 +19,7 @@ module.exports = {
 
     data.events.forEach(item => {
       if (item.name && item.hour && item.duration_in_minutes) {
-        const startDate = dayjs
-          .utc(item.hour, 'HH:mm')
+        const startDate = dayjs.tz(item.hour, 'HH:mm','Europe/Rome')
           .set('D', date.get('D'))
           .set('M', date.get('M'))
           .set('y', date.get('y'))
@@ -46,8 +47,11 @@ module.exports = {
 }
 
 function parseIcon(item) {
-  return cover = item.image ? `https://www.raiplay.it${item.image}` : null
-
+  let cover = null;
+  if(item.image){
+    cover = `https://www.raiplay.it${item.image}`
+  }
+  return cover
 }
 
 function parseURL(item) {
