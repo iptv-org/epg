@@ -12,7 +12,7 @@ dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
 const date = dayjs.utc('2022-05-08', 'YYYY-MM-DD').startOf('d')
-const channel = { site_id: '#1', xmltv_id: 'BeINSports.qa' }
+const channel = { site_id: '#2', xmltv_id: 'BeINSports.qa' }
 
 it('can generate valid url', () => {
   const result = url({ date, channel })
@@ -38,10 +38,29 @@ it('can parse response', () => {
   })
 
   expect(results[0]).toMatchObject({
-    start: '2022-05-07T19:45:00.000Z',
-    stop: '2022-05-07T21:30:00.000Z',
-    title: 'Al Arabi vs Al Khor - Qatar Stars League 2021/2022',
-    category: ['Qatar Stars League']
+    start: '2022-05-07T19:30:00.000Z',
+    stop: '2022-05-07T21:20:00.000Z',
+    title: 'Lorient vs Marseille',
+    category: ['Ligue 1 2021/22']
+  })
+})
+
+it('can parse response for tomorrow', () => {
+  const date = dayjs.utc('2022-05-09', 'YYYY-MM-DD').startOf('d')
+  const content = fs.readFileSync(
+    path.resolve('sites/beinsports.com/__data__/content_tomorrow.html')
+  )
+  const results = parser({ date, channel, content }).map(p => {
+    p.start = p.start.toJSON()
+    p.stop = p.stop.toJSON()
+    return p
+  })
+
+  expect(results[0]).toMatchObject({
+    start: '2022-05-08T21:20:00.000Z',
+    stop: '2022-05-08T23:10:00.000Z',
+    title: 'Celtic vs Hearts',
+    category: ['SPFL Premiership 2021/22']
   })
 })
 
@@ -54,10 +73,10 @@ it('can parse US response', () => {
   })
 
   expect(results[0]).toMatchObject({
-    start: '2022-05-07T19:30:00.000Z',
-    stop: '2022-05-07T21:30:00.000Z',
+    start: '2022-05-07T20:00:00.000Z',
+    stop: '2022-05-07T22:00:00.000Z',
     title: 'Basaksehir vs. Galatasaray',
-    category: ['Turkish Super Lig Soccer', 'Soccer']
+    category: ['Fútbol Turco Superliga', 'Soccer']
   })
 })
 

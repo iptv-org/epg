@@ -28,7 +28,7 @@ module.exports = {
   parser: function ({ content, channel, date, cached }) {
     let programs = []
     const items = parseItems(content, channel)
-    date = date.subtract(1, 'd')
+    let i = 0
     items.forEach(item => {
       const $item = cheerio.load(item)
       const title = parseTitle($item)
@@ -36,6 +36,10 @@ module.exports = {
       const category = parseCategory($item)
       const prev = programs[programs.length - 1]
       let start = parseStart($item, date)
+      if (i === 0 && start.hour() > 18) {
+        date = date.subtract(1, 'd')
+        start = start.subtract(1, 'd')
+      }
       if (prev) {
         if (start.isBefore(prev.start)) {
           start = start.add(1, 'd')
@@ -49,6 +53,7 @@ module.exports = {
       }
 
       programs.push({ title, category, start, stop })
+      i++
     })
 
     return programs
