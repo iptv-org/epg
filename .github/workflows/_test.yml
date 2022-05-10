@@ -17,13 +17,17 @@ jobs:
         id: files
         with:
           files: sites/**/*.config.js
-      - uses: actions/setup-node@v2
-        if: ${{ !env.ACT && steps.files.outputs.any_changed == 'true' }}
-        with:
-          node-version: '14'
-          cache: 'npm'
+      - name: Set changed sites name
+        if: ${{ steps.files.outputs.any_changed == 'true' }}
+        id: sites
+        run: |
+          declare out
+          for i in ${{ steps.files.outputs.all_changed_files }}; do
+            out+="$(echo $i | cut -d'/' -f 2) "
+          done
+          echo "::set-output name=all_changed_sites::$(echo $out)"
       - name: test
         if: steps.files.outputs.any_changed == 'true'
         run: |
           npm install
-          npm test -- sites
+          npm test -- ${{ steps.sites.outputs.all_changed_sites }}
