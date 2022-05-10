@@ -1,9 +1,11 @@
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
 
 dayjs.extend(utc)
 dayjs.extend(customParseFormat)
+dayjs.extend(timezone)
 
 module.exports = {
   site: 'raiplay.it',
@@ -20,7 +22,7 @@ module.exports = {
         const startDate = dayjs(item.hour, 'HH:mm')
           .set('D', date.get('D'))
           .set('M', date.get('M'))
-          .set('y', date.get('y'))
+          .set('y', date.get('y')).tz('Europe/Rome')
         const start = startDate.toJSON()
         const duration = parseInt(item.duration_in_minutes)
         const stopDate = startDate.add(duration,'m')
