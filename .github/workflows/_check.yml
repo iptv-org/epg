@@ -17,10 +17,10 @@ jobs:
         run: |
           mkdir -p scripts/data
           curl -L -o scripts/data/channels.json https://iptv-org.github.io/api/channels.json
-      - uses: tj-actions/changed-files@v12.2
+      - uses: tj-actions/changed-files@v19
         id: files
         with:
-          files: 'sites'
+          files: sites/**/*.channels.xml
       - uses: actions/setup-node@v2
         if: ${{ !env.ACT && steps.files.outputs.any_changed == 'true' }}
         with:
