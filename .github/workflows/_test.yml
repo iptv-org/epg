@@ -26,4 +26,4 @@ jobs:
         if: steps.files.outputs.any_changed == 'true'
         run: |
           npm install
-          npm test
+          npm test -- sites
