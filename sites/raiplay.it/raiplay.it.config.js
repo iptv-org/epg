@@ -17,8 +17,7 @@ module.exports = {
 
     data.events.forEach(item => {
       if (item.name && item.hour && item.duration_in_minutes) {
-        const startDate = dayjs
-          .utc(item.hour, 'HH:mm')
+        const startDate = dayjs(item.hour, 'HH:mm')
           .set('D', date.get('D'))
           .set('M', date.get('M'))
           .set('y', date.get('y'))
@@ -46,8 +45,11 @@ module.exports = {
 }
 
 function parseIcon(item) {
-  return cover = item.image ? `https://www.raiplay.it${item.image}` : null
-
+  let cover = null;
+  if(item.image){
+    cover = `https://www.raiplay.it${item.image}`
+  }
+  return cover
 }
 
 function parseURL(item) {
