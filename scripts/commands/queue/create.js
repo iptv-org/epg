@@ -32,8 +32,8 @@ async function createQueue() {
 
   let queue = {}
 
-  await api.channels.load()
-  const files = await file.list(CHANNELS_PATH)
+  await api.channels.load().catch(console.error)
+  const files = await file.list(CHANNELS_PATH).catch(console.error)
   const utcDate = date.getUTC()
   const dates = Array.from({ length: options.days }, (_, i) => utcDate.add(i, 'd'))
   for (const filepath of files) {
@@ -77,6 +77,7 @@ async function createQueue() {
       }
     } catch (err) {
       console.error(err)
+      continue
     }
   }
 
