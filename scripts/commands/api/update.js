@@ -8,9 +8,9 @@ const OUTPUT_DIR = process.env.OUTPUT_DIR || '.api'
 async function main() {
   let guides = []
 
-  try {
-    const files = await file.list(CHANNELS_PATH)
-    for (const filepath of files) {
+  const files = await file.list(CHANNELS_PATH).catch(console.error)
+  for (const filepath of files) {
+    try {
       const { site, channels } = await parser.parseChannels(filepath)
       const dir = file.dirname(filepath)
       const config = require(file.resolve(`${dir}/${site}.config.js`))
@@ -27,9 +27,10 @@ async function main() {
           url: `https://iptv-org.github.io/epg/guides/${suffix}/${site}.epg.xml`
         })
       }
+    } catch (err) {
+      console.error(err)
+      continue
     }
-  } catch (err) {
-    console.error(err)
   }
 
   guides = _.sortBy(guides, 'channel')
