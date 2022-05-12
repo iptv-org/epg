@@ -18,8 +18,11 @@ module.exports = {
     items.forEach(item => {
       programs.push({
         title: parseTitle(item),
+        sub-title: parseSubTitle(item),
         description: parseDescription(item),
         category: parseCategory(item),
+        rating: parseRating(item),
+        credits: parseCredits(item),
         season: parseSeason(item),
         episode: parseEpisode(item),
         start: parseStart(item),
@@ -99,12 +102,24 @@ function parseTitle(item) {
   return item.program.title
 }
 
+function parseSubTitle(item) {
+  return item.program.episodeTitle
+}
+
 function parseDescription(item) {
   return item.program.longDescription
 }
 
 function parseCategory(item) {
   return item.program.genres || []
+}
+
+function parseRating(item) {
+  return item.program.ratings || []
+}
+
+function parseCredits(item) {
+  return item.program.topCast || []
 }
 
 function parseSeason(item) {
