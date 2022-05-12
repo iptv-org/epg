@@ -31,16 +31,16 @@ it('can parse response', () => {
 
   expect(result).toMatchObject([
     {
-      start: '2022-01-20T00:00:00.000Z',
-      stop: '2022-01-20T00:30:00.000Z',
-      title: 'Reflect and Renew With Kevin Naidoo',
-      sub-title: 'Joy',
-      description: `Kevin demonstrates a meditation and yoga practice to reclaim his courage and confidence.`,
-      category: ['Health'],
-      ratiang: ['null'],
-      credits: ['Kevin Naidoo'],
-      season: 1,
-      episode: 6,
+      start: '2022-05-12T00:30:00.000Z',
+      stop: '2022-05-12T01:00:00.000Z',
+      title: 'IGotThis',
+      sub-title: 'Laurie and Jennifer',
+      description: `Finding out what it took for each woman to realize her old self was not lost.`,
+      category: ['Documentary'],
+      ratiang: ['G'],
+      credits: ['null'],
+      season: 8,
+      episode: 3,
       icon: 'http://tvtv.tmsimg.com/assets/p16640522_b_v9_aa.jpg?w=240&h=360'
     },
     {
