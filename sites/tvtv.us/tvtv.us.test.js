@@ -35,7 +35,7 @@ it('can parse response', () => {
       stop: '2022-01-20T00:30:00.000Z',
       title: 'Reflect and Renew With Kevin Naidoo',
       sub_title: 'Self-Love',
-      description: ,
+      description: 'Kevin demonstrates a meditation and yoga practice to reclaim his courage and confidence.'
       category: ['Health'],
       actor: ['Kevin Naidoo'],
       season: 1,
