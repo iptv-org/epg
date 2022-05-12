@@ -35,7 +35,7 @@ it('can parse response', () => {
       stop: '2022-05-12T03:30Z',
       title: 'Reflect and Renew With Kevin Naidoo',
       sub_title: 'Self-Love'
-      description: 'Kevin demonstrates judgement-free, self-love through discussion, meditation and yoga.',
+      description: `Kevin demonstrates judgement-free self-love through discussion meditation and yoga.`,
       date: 2019,
       category: ['Health'],
       actor: ['Kevin Naidoo'],
