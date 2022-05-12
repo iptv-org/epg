@@ -30,26 +30,9 @@ it('can parse response', () => {
   })
 
   expect(result).toMatchObject([
-    {
-      start: '2022-05-12T03:00Z',
-      stop: '2022-05-12T03:30Z',
-      title: 'Reflect and Renew With Kevin Naidoo',
-      sub_title: 'Self-Love'
-      description: `Kevin demonstrates judgement-free self-love through discussion meditation and yoga.`,
-      date: 2019,
-      category: ['Health'],
-      actor: ['Kevin Naidoo'],
-      season: 1,
-      episode: 1,
-      icon: 'http://tvtv.tmsimg.com/assets/p16640522_b_v9_aa.jpg?w=240&h=360'
+    { start: '2022-05-12T03:00Z', stop: '2022-05-12T03:30Z', title: 'Reflect and Renew With Kevin Naidoo', sub_title: 'Self-Love' description: `Kevin demonstrates judgement-free self-love through discussion meditation and yoga.`, date: 2019, category: ['Health'], actor: ['Kevin Naidoo'], season: 1, episode: 1, icon: 'http://tvtv.tmsimg.com/assets/p16640522_b_v9_aa.jpg?w=240&h=360'
     },
-    {
-      start: '2022-05-12T03:30Z',
-      stop: '2022-05-12T04:00Z',
-      title: 'Four Senses',
-      description: `Everything is sizzled and seared as chef Corbin Tomaszeski joins Christine and Carl in the kitchen.`,
-      category: ['House/garden'],
-      icon: 'http://tvtv.tmsimg.com/assets/p10464580_b_v7_aa.jpg?w=240&h=360'
+    { start: '2022-05-12T03:30Z', stop: '2022-05-12T04:00Z', title: 'Four Senses', description: `Everything is sizzled and seared as chef Corbin Tomaszeski joins Christine and Carl in the kitchen.`, category: ['House/garden'], icon: 'http://tvtv.tmsimg.com/assets/p10464580_b_v7_aa.jpg?w=240&h=360'
     }
   ])
 })
