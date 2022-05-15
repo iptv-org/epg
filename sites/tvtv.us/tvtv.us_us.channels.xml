@@ -68,9 +68,9 @@
     <channel lang="en" xmltv_id="BBCAmericaEast.us" site_id="18332">BBC America East</channel>
     <channel lang="en" xmltv_id="BBCAmericaWest.us" site_id="18339">BBC America West</channel>
     <channel lang="en" xmltv_id="BBCWorldNewsNorthAmerica.uk" site_id="89690">BBC World News (North America)</channel>
-    <channel lang="en" xmltv_id="BeINSportsenEspanol.us" site_id="76943">BeIn Sports en Español</channel>
-    <channel lang="en" xmltv_id="BeINSportsUSA.us" site_id="76942">BeIn Sports USA</channel>
-    <channel lang="en" xmltv_id="BeINSportsXtraenEspanol.us" site_id="122816">beIN Sports Xtra En Espanol</channel>
+    <channel lang="en" xmltv_id="beINSportsenEspanol.us" site_id="76943">BeIn Sports en Español</channel>
+    <channel lang="en" xmltv_id="beINSportsUSA.us" site_id="76942">BeIn Sports USA</channel>
+    <channel lang="en" xmltv_id="beINSportsXtraenEspanol.us" site_id="122816">beIN Sports Xtra En Espanol</channel>
     <channel lang="en" xmltv_id="BETEast.us" site_id="10051">BET East</channel>
     <channel lang="en" xmltv_id="BETGospel.us" site_id="16484">BET Gospel</channel>
     <channel lang="en" xmltv_id="BETHerEast.us" site_id="14897">BET Her</channel>
@@ -96,19 +96,17 @@
     <channel lang="en" xmltv_id="CartoonNetworkEast.us" site_id="60048">Cartoon Network East</channel>
     <channel lang="en" xmltv_id="CartoonNetworkWest.us" site_id="18151">Cartoon Network West</channel>
     <channel lang="en" xmltv_id="CatholicFaithNetwork.us" site_id="62900">Catholic Faith Network</channel>
-    <channel lang="en" xmltv_id="CBHT.us" site_id="14724">CBHT</channel>
+    <channel lang="en" xmltv_id="CBHTDT.ca" site_id="14724">CBHT</channel>
     <channel lang="en" xmltv_id="CBSEast.us" site_id="10098">CBS East</channel>
     <channel lang="en" xmltv_id="CBSNews.us" site_id="104846">CBS News Live</channel>
     <channel lang="en" xmltv_id="CBSSportsNetworkUSA.us" site_id="59250">CBS Sports Network</channel>
     <channel lang="en" xmltv_id="CentroamericaTV.us" site_id="44448">CentroAmérica TV</channel>
-    <channel lang="en" xmltv_id="CFTO.us" site_id="10108">CFTO</channel>
+    <channel lang="en" xmltv_id="CFTODT.ca" site_id="10108">CFTO</channel>
     <channel lang="en" xmltv_id="CGTNAmerica.cn" site_id="29114">CGTN America</channel>
     <channel lang="en" xmltv_id="ChannelI.bd" site_id="14202">Channel i</channel>
     <channel lang="en" xmltv_id="Charge.us" site_id="102148">Charge!</channel>
-    <channel lang="en" xmltv_id="CHCH.ca" site_id="60123">CHCH (CHCH-DT1) Ontario Canada</channel>
     <channel lang="en" xmltv_id="CHCHDT1.ca" site_id="60123">CHCH (CHCH-DT1) Ontario Canada</channel>
     <channel lang="en" xmltv_id="Cheddar.us" site_id="109333">Cheddar News</channel>
-    <channel lang="en" xmltv_id="CIII.ca" site_id="73281">Global (CIII-DT1) Ontario Canada</channel>
     <channel lang="en" xmltv_id="CineEstelar.us" site_id="62125">Cine Estelar</channel>
     <channel lang="en" xmltv_id="CinemaxEast.us" site_id="10120">Cinemax East</channel>
     <channel lang="en" xmltv_id="CinemaxWest.us" site_id="12508">Cinemax West</channel>
@@ -193,7 +191,7 @@
     <channel lang="en" xmltv_id="EuronewsFrench.fr" site_id="3900">Euronews Français</channel>
     <channel lang="en" xmltv_id="EWest.us" site_id="91579">E! West</channel>
     <channel lang="en" xmltv_id="EWTNUS.us" site_id="10183">EWTN</channel>
-    <channel lang="en" xmltv_id="FamilyChrgd.us" site_id="10176">Family CHRGD</channel>
+    <channel lang="en" xmltv_id="WildBrainTV.ca" site_id="10176">Family CHRGD</channel>
     <channel lang="en" xmltv_id="FETV.us" site_id="73413">FETV</channel>
     <channel lang="en" xmltv_id="FlixEast.us" site_id="10201">Flix East</channel>
     <channel lang="en" xmltv_id="FlixWest.us" site_id="16575">Flix West</channel>
@@ -226,7 +224,7 @@
     <channel lang="en" xmltv_id="FYIWest.us" site_id="92371">FYI West</channel>
     <channel lang="en" xmltv_id="GalavisionEast.us" site_id="10222">Galavisión Este</channel>
     <channel lang="en" xmltv_id="GalavisionWest.us" site_id="18350">Galavisión Oeste</channel>
-    <channel lang="en" xmltv_id="GameShowCentralEast.us" site_id="116474">Game Show Central </channel>
+    <channel lang="en" xmltv_id="GameShowCentral.us" site_id="116474">Game Show Central</channel>
     <channel lang="en" xmltv_id="GameShowNetworkEast.us" site_id="14909">Game Show Network East</channel>
     <channel lang="en" xmltv_id="GameShowNetworkWest.us" site_id="44382">Game Show Network West</channel>
     <channel lang="en" xmltv_id="GEBAmerica.us" site_id="18999">GEB America</channel>
@@ -236,7 +234,7 @@
     <channel lang="en" xmltv_id="GMANews.ph" site_id="75448">GMA News</channel>
     <channel lang="en" xmltv_id="GMAPinoyTV.ph" site_id="46463">GMA Pinoy TV</channel>
     <channel lang="en" xmltv_id="GodTVUS.us" site_id="52697">GodTV</channel>
-    <channel lang="en" xmltv_id="GolfChannelUS.us" site_id="61854">Golf Channel</channel>
+    <channel lang="en" xmltv_id="GolfChannel.us" site_id="61854">Golf Channel</channel>
     <channel lang="en" xmltv_id="GolTV.us" site_id="32161">Gol TV</channel>
     <channel lang="en" xmltv_id="GolTVSpanish.us" site_id="33691">GolTV English</channel>
     <channel lang="en" xmltv_id="GreatAmericanCountry.us" site_id="16062">Great American Country</channel>
@@ -299,7 +297,7 @@
     <channel lang="en" xmltv_id="LifetimeEast.us" site_id="60150">Lifetime East</channel>
     <channel lang="en" xmltv_id="LifetimeMoviesEast.us" site_id="18480">LMN East</channel>
     <channel lang="en" xmltv_id="LifetimeMoviesWest.us" site_id="19192">LMN West</channel>
-    <channel lang="en" xmltv_id="LifetimeRealWomenEast.us" site_id="29612">Lifetime Real Women East</channel>
+    <channel lang="en" xmltv_id="LifetimeRealWomen.us" site_id="29612">Lifetime Real Women East</channel>
     <channel lang="en" xmltv_id="LifetimeWest.us" site_id="10919">Lifetime West</channel>
     <channel lang="en" xmltv_id="LinkTV.us" site_id="21450">Link TV</channel>
     <channel lang="en" xmltv_id="LivingFaithTV.us" site_id="58595">Living Faith TV</channel>
@@ -528,7 +526,6 @@
     <channel lang="en" xmltv_id="SpectrumSportsNet.us" site_id="77375">Spectrum SportsNet</channel>
     <channel lang="en" xmltv_id="SpectrumSportsNetLA.us" site_id="87023">Spectrum SportsNet LA</channel>
     <channel lang="en" xmltv_id="SportsmanChannel.us" site_id="33930">Sportsman Channel</channel>
-    <channel lang="en" xmltv_id="SportsNetNewYork.us" site_id="49603">SportsNet New York</channel>
     <channel lang="en" xmltv_id="Stadium.us" site_id="104950">Stadium</channel>
     <channel lang="en" xmltv_id="StadiumCollegeSportsAtlantic.us" site_id="26077">Stadium College Sports Atlantic</channel>
     <channel lang="en" xmltv_id="StadiumCollegeSportsCentral.us" site_id="26078">Stadium College Sports Central</channel>
