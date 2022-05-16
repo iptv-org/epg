@@ -12,7 +12,7 @@ dayjs.extend(customParseFormat)
 module.exports = {
   site: 'useetv.com',
   method: 'GET',
-  delay: 100,
+  days: 1,
   url: function ({ channel }) {
     return `https://useetv.com/livetv/${channel.site_id}`
   },
