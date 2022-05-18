@@ -14,7 +14,7 @@ jest.mock('axios')
 const date = dayjs.utc('2022-03-09', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: '123_tv',
-  xmltv_id: '123TV.de'
+  xmltv_id: '123tv.de'
 }
 
 it('can generate valid url', () => {
