@@ -11,7 +11,7 @@ module.exports = {
   site: 'rotana.net',
   ignore: true, // NOTE: there is no program for the current date on the site
   url({ channel, date }) {
-    return `https://rotana.net/triAssets/uploads/2020/${date.format('MM')}/${channel.site_id}.csv`
+    return `https://rotana.net/triAssets/uploads/2020/11/${channel.site_id}.csv`
   },
   request: {
     method: 'POST'
