@@ -11,7 +11,7 @@ dayjs.extend(utc)
 const date = dayjs.utc('2022-05-10', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: '102',
-  xmltv_id: 'Channel5Singapore.sg'
+  xmltv_id: 'Channel5.sg'
 }
 
 it('can generate valid url', () => {
