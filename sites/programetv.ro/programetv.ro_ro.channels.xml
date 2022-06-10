@@ -2,6 +2,8 @@
 <site site="programetv.ro">
   <channels>
     <channel lang="ro" xmltv_id="3sat.de" site_id="3sat">3sat</channel>
+    <channel lang="ro" xmltv_id="Acasa.ro" site_id="acasa">Acasa</channel>
+    <channel lang="ro" xmltv_id="AcasaGold.ro" site_id="acasa-gold">Acasa Gold</channel>
     <channel lang="ro" xmltv_id="AgroTV.ro" site_id="agro-tv">Agro TV</channel>
     <channel lang="ro" xmltv_id="AlephNews.ro" site_id="aleph-news">Aleph News</channel>
     <channel lang="ro" xmltv_id="AlfaOmegaTV.ro" site_id="alfa-omega-tv">Alfa Omega TV</channel>
@@ -161,14 +163,12 @@
     <channel lang="ro" xmltv_id="PrimaTV.ro" site_id="prima-tv">Prima TV</channel>
     <channel lang="ro" xmltv_id="PrimaTVHD.ro" site_id="prima-tv-hd">Prima TV HD</channel>
     <channel lang="ro" xmltv_id="PrivateTV.nl" site_id="private-tv">Private TV</channel>
-    <channel lang="ro" xmltv_id="Pro2.ro" site_id="pro-2">Pro 2</channel>
+    <channel lang="ro" xmltv_id="ProArena.ro" site_id="pro-arena-hd">Pro Arena</channel>
     <channel lang="ro" xmltv_id="ProCinema.ro" site_id="pro-cinema-hd">Pro Cinema</channel>
     <channel lang="ro" xmltv_id="ProfitTV.ro" site_id="profit-ro">Profit TV</channel>
-    <channel lang="ro" xmltv_id="ProGold.ro" site_id="pro-gold-hd">Pro Gold</channel>
     <channel lang="ro" xmltv_id="ProSiebenGermany.de" site_id="pro-7">ProSieben Deutschland</channel>
     <channel lang="ro" xmltv_id="ProTV.ro" site_id="pro-tv">Pro TV</channel>
     <channel lang="ro" xmltv_id="ProTVInternational.ro" site_id="protv-international">Pro TV International</channel>
-    <channel lang="ro" xmltv_id="ProX.ro" site_id="pro-x">Pro X</channel>
     <channel lang="ro" xmltv_id="PublikaTV.md" site_id="publika">Publika TV</channel>
     <channel lang="ro" xmltv_id="Rai1.it" site_id="rai-1">Rai 1</channel>
     <channel lang="ro" xmltv_id="Rai2.it" site_id="rai-2">Rai 2</channel>
@@ -226,6 +226,7 @@
     <channel lang="ro" xmltv_id="ViasatNature.se" site_id="viasat-nature">Viasat Nature East</channel>
     <channel lang="ro" xmltv_id="VoxGermany.de" site_id="vox">Vox Deutschland</channel>
     <channel lang="ro" xmltv_id="VTV.ro" site_id="vtv">VTV</channel>
+    <channel lang="ro" xmltv_id="WarnerTVRomania.ro" site_id="warner-tv">Warner TV</channel>
     <channel lang="ro" xmltv_id="Welt.de" site_id="welt">Welt</channel>
     <channel lang="ro" xmltv_id="ZDF.de" site_id="zdf">ZDF</channel>
     <channel lang="ro" xmltv_id="ZDFinfo.de" site_id="zdf-info">ZDF Info</channel>
