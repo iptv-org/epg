@@ -1,4 +1,5 @@
 const { db, logger, file, parser } = require('../../core')
+const { Program } = require('epg-grabber')
 const _ = require('lodash')
 
 const LOGS_DIR = process.env.LOGS_DIR || 'scripts/logs'
@@ -15,34 +16,11 @@ async function main() {
       const queue = await db.queue.find({ _id: result._qid }).limit(1)
       if (!queue.length) continue
       const item = queue[0]
-      const programs = result.programs.map(program => {
-        return {
-          title: program.title,
-          description: program.description || null,
-          category: program.category || null,
-          season: program.season || null,
-          episode: program.episode || null,
-          url: program.url || null,
-          icon: program.icon || null,
-          channel: program.channel,
-          sub_title: program.sub_title || null,
-          date: program.date || null,
-          lang: program.lang,
-          start: program.start,
-          stop: program.stop,
-          director: program.director || null,
-          actor: program.actor || null,
-          writer: program.writer || null,
-          adapter: program.adapter || null,
-          producer: program.producer || null,
-          composer: program.composer || null,
-          editor: program.editor || null,
-          presenter: program.presenter || null,
-          commentator: program.commentator || null,
-          guest: program.guest || null,
-          site: item.channel.site,
-          _qid: result._qid
-        }
+      const programs = result.programs.map(p => {
+        p = new Program(p)
+        p._qid = result._qid
+
+        return p
       })
       await db.programs.insert(programs)
 

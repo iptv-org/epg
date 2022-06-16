@@ -1,5 +1,5 @@
 const { db, logger, file, api, zip } = require('../../core')
-const grabber = require('epg-grabber')
+const { generateXMLTV, Program, Channel } = require('epg-grabber')
 const _ = require('lodash')
 
 const PUBLIC_DIR = process.env.PUBLIC_DIR || '.gh-pages'
@@ -23,25 +23,21 @@ async function main() {
       const itemPrograms = await loadProgramsForItem(item)
       programs = programs.concat(itemPrograms)
 
-      if (channels[item.channel.xmltv_id]) continue
-      const channel = api.channels.find({ id: item.channel.xmltv_id })
-      if (channel) {
-        channels[channel.id] = {
-          xmltv_id: channel.id,
-          name: item.channel.display_name,
-          logo: channel.logo,
-          site: item.channel.site
-        }
+      if (channels[item.channel.id]) continue
+      const found = api.channels.find({ id: item.channel.id })
+      if (found) {
+        channels[item.channel.id] = new Channel(item.channel)
       }
     }
     channels = Object.values(channels)
-    channels = _.sortBy(channels, 'xmltv_id')
+    channels = _.sortBy(channels, 'id')
     programs = _.sortBy(programs, ['channel', 'start'])
+    programs = programs.map(p => new Program(p))
     total += programs.length
 
     const filepath = `${PUBLIC_DIR}/guides/${key}.epg.xml`
     logger.info(`Creating "${filepath}"...`)
-    const output = grabber.convertToXMLTV({ channels, programs, date: CURR_DATE })
+    const output = generateXMLTV({ channels, programs, date: CURR_DATE })
     await file.create(filepath, output)
     const compressed = await zip.compress(output)
     await file.create(filepath + '.gz', compressed)
