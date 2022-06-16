@@ -77,7 +77,7 @@ function parseStart(item, initDate) {
 
   time = `${initDate.format('DD/MM/YYYY')} ${time}`
 
-  return dayjs.tz(time, 'DD/MM/YYYY H:mm A', 'Africa/Cairo')
+  return dayjs.tz(time, 'DD/MM/YYYY H:mm A', 'Asia/Riyadh')
 }
 
 function parseTitle(item) {
