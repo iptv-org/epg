@@ -21,8 +21,8 @@ async function main() {
 
       for (const channel of channels) {
         guides.push({
-          channel: channel.xmltv_id,
-          site,
+          channel: channel.id,
+          site: channel.site,
           lang: channel.lang,
           url: `https://iptv-org.github.io/epg/guides/${suffix}/${site}.epg.xml`
         })

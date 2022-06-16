@@ -39,7 +39,7 @@ async function createQueue() {
   for (const filepath of files) {
     try {
       const dir = file.dirname(filepath)
-      const { site, channels: items } = await parser.parseChannels(filepath)
+      const { site, channels } = await parser.parseChannels(filepath)
       if (!site) continue
       const configPath = `${dir}/${site}.config.js`
       const config = require(file.resolve(configPath))
@@ -47,22 +47,16 @@ async function createQueue() {
       const filename = file.basename(filepath)
       const [__, region] = filename.match(/_([a-z-]+)\.channels\.xml/i) || [null, null]
       const groupId = `${region}/${site}`
-      for (const item of items) {
-        if (!item.site || !item.xmltv_id) continue
-        const channel = api.channels.find({ id: item.xmltv_id })
-        if (!channel) continue
+      for (const channel of channels) {
+        if (!channel.site || !channel.id) continue
+        const found = api.channels.find({ id: channel.id })
+        if (!found) continue
         for (const d of dates) {
           const dString = d.toJSON()
-          const key = `${item.site}:${item.lang}:${item.xmltv_id}:${dString}`
+          const key = `${channel.site}:${channel.lang}:${channel.id}:${dString}`
           if (!queue[key]) {
             queue[key] = {
-              channel: {
-                lang: item.lang,
-                xmltv_id: item.xmltv_id,
-                display_name: item.name,
-                site_id: item.site_id,
-                site: item.site
-              },
+              channel,
               date: dString,
               configPath,
               groups: [],

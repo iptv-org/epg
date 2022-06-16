@@ -1,7 +1,11 @@
 const _ = require('lodash')
-const EPGGrabber = require('epg-grabber')
+const { EPGGrabber } = require('epg-grabber')
 const { program } = require('commander')
 const { db, logger, timer, file, parser } = require('../../core')
+const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+
+dayjs.extend(utc)
 
 const options = program
   .requiredOption('-c, --cluster-id <cluster-id>', 'The ID of cluster to load', parser.parseNumber)
@@ -27,7 +31,7 @@ async function main() {
   await file.create(CLUSTER_PATH)
   await db.queue.load()
   let items = await db.queue.find({ cluster_id: options.clusterId })
-  items = _.orderBy(items, [i => i.channel.xmltv_id.toLowerCase(), 'date'])
+  items = _.orderBy(items, [i => i.channel.id.toLowerCase(), 'date'])
   const total = items.length
 
   logger.info('Loading...')
@@ -45,9 +49,9 @@ async function main() {
   for (const item of items) {
     await grabber.grab(item.channel, item.date, async (data, err) => {
       logger.info(
-        `[${i}/${total}] ${item.channel.site} (${item.channel.lang}) - ${
-          item.channel.xmltv_id
-        } - ${data.date.format('MMM D, YYYY')} (${data.programs.length} programs)`
+        `[${i}/${total}] ${item.channel.site} (${item.channel.lang}) - ${item.channel.id} - ${dayjs
+          .utc(data.date)
+          .format('MMM D, YYYY')} (${data.programs.length} programs)`
       )
 
       if (err) logger.error(err.message)

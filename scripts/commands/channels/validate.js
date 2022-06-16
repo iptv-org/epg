@@ -24,15 +24,15 @@ async function main() {
     const buffer = {}
     const errors = []
     for (const channel of channels) {
-      if (!buffer[channel.xmltv_id]) {
-        buffer[channel.xmltv_id] = channel
+      if (!buffer[channel.id]) {
+        buffer[channel.id] = channel
       } else {
-        errors.push({ type: 'duplicate', ...channel })
+        errors.push({ type: 'duplicate', xmltv_id: channel.id, ...channel })
         stats.errors++
       }
 
-      if (!api.channels.find({ id: channel.xmltv_id })) {
-        errors.push({ type: 'wrong_xmltv_id', ...channel })
+      if (!api.channels.find({ id: channel.id })) {
+        errors.push({ type: 'wrong_xmltv_id', xmltv_id: channel.id, ...channel })
         stats.errors++
       }
     }
