@@ -51,6 +51,7 @@ async function createQueue() {
         if (!channel.site || !channel.id) continue
         const found = api.channels.find({ id: channel.id })
         if (!found) continue
+        channel.logo = found.logo
         for (const d of dates) {
           const dString = d.toJSON()
           const key = `${channel.site}:${channel.lang}:${channel.id}:${dString}`

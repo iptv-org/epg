@@ -1,4 +1,4 @@
-const { db, logger, file, api, zip } = require('../../core')
+const { db, logger, file, zip } = require('../../core')
 const { generateXMLTV, Program, Channel } = require('epg-grabber')
 const _ = require('lodash')
 
@@ -10,7 +10,6 @@ async function main() {
 
   logger.info('Loading "database/programs.db"...')
   await db.programs.load()
-  await api.channels.load()
 
   let total = 0
   const grouped = groupByGroup(await loadQueue())
@@ -24,10 +23,7 @@ async function main() {
       programs = programs.concat(itemPrograms)
 
       if (channels[item.channel.id]) continue
-      const found = api.channels.find({ id: item.channel.id })
-      if (found) {
-        channels[item.channel.id] = new Channel(item.channel)
-      }
+      channels[item.channel.id] = new Channel(item.channel)
     }
     channels = Object.values(channels)
     channels = _.sortBy(channels, 'id')
