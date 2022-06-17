@@ -23,6 +23,9 @@ it('can generate valid url', () => {
 it('can generate valid request headers', () => {
   expect(request.headers).toMatchObject({
     'X-DEVICE-TYPE': 'PCWEB',
+    'X-DEVICE-MODEL': 'Chrome',
+    'X-OS-TYPE': 'Windows',
+    'X-OS-VERSION': '11',
     transactionId: '0'
   })
 })

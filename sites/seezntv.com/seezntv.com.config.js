@@ -16,6 +16,9 @@ module.exports = {
   request: {
     headers: {
       'X-DEVICE-TYPE': 'PCWEB',
+      'X-DEVICE-MODEL': 'Chrome',
+      'X-OS-TYPE': 'Windows',
+      'X-OS-VERSION': '11',
       transactionId: '0'
     }
   },
