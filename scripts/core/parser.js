@@ -1,4 +1,3 @@
-const logger = require('./logger')
 const file = require('./file')
 const grabber = require('epg-grabber')
 
