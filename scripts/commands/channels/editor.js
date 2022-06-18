@@ -22,7 +22,7 @@ async function main() {
   channels = result.channels
   await api.channels.load()
   for (const channel of channels) {
-    if (channel.xmltv_id) continue
+    if (channel.id) continue
     let choices = await getOptions(channel)
     const question = {
       name: 'option',
@@ -35,17 +35,17 @@ async function main() {
       switch (selected.option) {
         case 'Overwrite...':
           const input = await getInput(channel)
-          channel.xmltv_id = input.xmltv_id
+          channel.id = input.xmltv_id
           break
         case 'Skip...':
-          channel.xmltv_id = '-'
+          channel.id = '-'
           break
         default:
           const [name, xmltv_id] = selected.option
             .replace(/ \[.*\]/, '')
             .split('|')
             .map(i => i.trim().replace(newLabel, ''))
-          channel.xmltv_id = xmltv_id
+          channel.id = xmltv_id
           break
       }
     })
