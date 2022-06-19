@@ -11,7 +11,7 @@ dayjs.extend(customParseFormat)
 module.exports = {
   site: 'kvf.fo',
   url({ date }) {
-    return `https://kvf.fo/nskra/uv?date=${date.format('YYYY-MM-DD')}`
+    return `https://kvf.fo/nskra/sv?date=${date.format('YYYY-MM-DD')}`
   },
   parser({ content, date }) {
     let programs = []
