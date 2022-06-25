@@ -5,7 +5,7 @@ xml.create = function (items, site) {
 
   items.forEach(channel => {
     const logo = channel.logo ? ` logo="${channel.logo}"` : ''
-    const xmltv_id = channel.id || ''
+    const xmltv_id = channel.xmltv_id || ''
     const lang = channel.lang || ''
     const site_id = channel.site_id || ''
     output += `    <channel lang="${lang}" xmltv_id="${escapeString(

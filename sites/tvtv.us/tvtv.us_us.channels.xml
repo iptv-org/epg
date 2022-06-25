@@ -71,6 +71,7 @@
     <channel lang="en" xmltv_id="beINSportsenEspanol.us" site_id="76943">BeIn Sports en Español</channel>
     <channel lang="en" xmltv_id="beINSportsUSA.us" site_id="76942">BeIn Sports USA</channel>
     <channel lang="en" xmltv_id="beINSportsXtraenEspanol.us" site_id="122816">beIN Sports Xtra En Espanol</channel>
+    <channel lang="en" xmltv_id="beINSportsXtraUSA.us" site_id="113143">beIN Sports Xtra USA</channel>
     <channel lang="en" xmltv_id="BETEast.us" site_id="10051">BET East</channel>
     <channel lang="en" xmltv_id="BETGospel.us" site_id="16484">BET Gospel</channel>
     <channel lang="en" xmltv_id="BETHerEast.us" site_id="14897">BET Her</channel>
@@ -111,6 +112,7 @@
     <channel lang="en" xmltv_id="CinemaxEast.us" site_id="10120">Cinemax East</channel>
     <channel lang="en" xmltv_id="CinemaxWest.us" site_id="12508">Cinemax West</channel>
     <channel lang="en" xmltv_id="CineSony.us" site_id="102978">Cine Sony</channel>
+    <channel lang="en" xmltv_id="Circle.us" site_id="113430">Circle</channel>
     <channel lang="en" xmltv_id="ClassicArtsShowcase.us" site_id="16325">Classic Arts Showcase</channel>
     <channel lang="en" xmltv_id="CleoTV.us" site_id="110288">Cleo TV</channel>
     <channel lang="en" xmltv_id="CMTEast.us" site_id="10138">CMT East</channel>
@@ -303,7 +305,6 @@
     <channel lang="en" xmltv_id="LogoWest.us" site_id="46947">Logo West</channel>
     <channel lang="en" xmltv_id="LonghornNetwork.us" site_id="76219">Longhorn Network</channel>
     <channel lang="en" xmltv_id="MagnoliaNetworkEast.us" site_id="67375">Magnolia Network East</channel>
-    <channel lang="en" xmltv_id="MagnoliaNetworkWest.us" site_id="18544">Magnolia Network West</channel>
     <channel lang="en" xmltv_id="MarqueeSportsNetwork.us" site_id="113776">Marquee Sports Network</channel>
     <channel lang="en" xmltv_id="MASN.us" site_id="46817">MASN</channel>
     <channel lang="en" xmltv_id="MASN2.us" site_id="55433">MASN2</channel>
@@ -315,9 +316,9 @@
     <channel lang="en" xmltv_id="MelodyAflam.eg" site_id="90639">Melody Aflam</channel>
     <channel lang="en" xmltv_id="MelodyDrama.eg" site_id="10465">Melody Drama</channel>
     <channel lang="en" xmltv_id="MelodyHits.eg" site_id="10471">Melody Hits</channel>
-    <channel lang="en" xmltv_id="MeTV.us" site_id="75523">MeTV</channel>
+    <channel lang="en" xmltv_id="MeTV.us" site_id="70436">MeTV</channel>
     <channel lang="en" xmltv_id="MezzoLiveHD.fr" site_id="115902">Mezzo Live HD</channel>
-    <channel lang="en" xmltv_id="MGMHDUSA.us" site_id="58530">MGM</channel>
+    <channel lang="en" xmltv_id="MGMHDUSA.us" site_id="58530">MGM HD</channel>
     <channel lang="en" xmltv_id="MilitaryHistory.us" site_id="48999">Military History Channel</channel>
     <channel lang="en" xmltv_id="MLBNetwork.us" site_id="62079">MLB Network</channel>
     <channel lang="en" xmltv_id="MLBStrikeZone.us" site_id="80404">MLB Strike Zone</channel>
@@ -340,8 +341,8 @@
     <channel lang="en" xmltv_id="MTVClassicEast.us" site_id="22561">MTV Classic East</channel>
     <channel lang="en" xmltv_id="MTVClassicWest.us" site_id="59054">MTV Classic West</channel>
     <channel lang="en" xmltv_id="MTVEast.us" site_id="10986">MTV East</channel>
-    <channel lang="en" xmltv_id="MTVLive.uk" site_id="49141">MTV Live (Alternative)</channel>
-    <channel lang="en" xmltv_id="MTVLiveUS.us" site_id="66419">MTV Live</channel>
+    <channel lang="en" xmltv_id="MTVLiveUS.us" site_id="49141">MTV Live</channel>
+    <channel lang="en" xmltv_id="MTVLive.uk" site_id="66419">MTV Live (International)</channel>
     <channel lang="en" xmltv_id="MTVTr3sEast.us" site_id="18715">MTV Tr3s East</channel>
     <channel lang="en" xmltv_id="MTVTr3sWest.us" site_id="55928">MTV Tr3s West</channel>
     <channel lang="en" xmltv_id="MTVU.us" site_id="44228">MTV U</channel>
@@ -430,6 +431,7 @@
     <channel lang="en" xmltv_id="NRBTV.us" site_id="49097">NRBTV</channel>
     <channel lang="en" xmltv_id="NTDTVEast.us" site_id="11253">NTD TV</channel>
     <channel lang="en" xmltv_id="NTV.bd" site_id="80160">NTV</channel>
+    <channel lang="en" xmltv_id="NuestraVision.us" site_id="106819">Nuestra Visión</channel>
     <channel lang="en" xmltv_id="OlympicChannel.es" site_id="104089">Olympic Channel</channel>
     <channel lang="en" xmltv_id="OneAmericaNewsNetwork.us" site_id="82542">One America News Network</channel>
     <channel lang="en" xmltv_id="OneCaribbeanTelevision.us" site_id="20036">One Caribbean Television</channel>
@@ -451,6 +453,9 @@
     <channel lang="en" xmltv_id="Pac12Washington.us" site_id="76373">Pac-12 Washington</channel>
     <channel lang="en" xmltv_id="ParamountNetworkEast.us" site_id="11163">Paramount Network East</channel>
     <channel lang="en" xmltv_id="PasionesEstadosUnidos.us" site_id="61776">Pasiones US</channel>
+    <channel lang="en" xmltv_id="PBSEast.us" site_id="33453">PBS East (National Feed)</channel>
+    <channel lang="en" xmltv_id="PBSWest.us" site_id="62271">PBS West (National Feed)</channel>
+    <channel lang="en" xmltv_id="PBSKidsEasternCentral.us" site_id="101364">PBS Kids East (National Feed)</channel>
     <channel lang="en" xmltv_id="PeopleTV.us" site_id="107584">People TV</channel>
     <channel lang="en" xmltv_id="PeruMagico.pe" site_id="18869">Perú Mágico</channel>
     <channel lang="en" xmltv_id="PetsTV.us" site_id="71297">Pets.TV</channel>
@@ -529,7 +534,7 @@
     <channel lang="en" xmltv_id="StadiumCollegeSportsCentral.us" site_id="26078">Stadium College Sports Central</channel>
     <channel lang="en" xmltv_id="StadiumCollegeSportsPacific.us" site_id="26079">Stadium College Sports Pacific</channel>
     <channel lang="en" xmltv_id="StarBharat.in" site_id="44889">Star Bharat</channel>
-    <channel lang="en" xmltv_id="StartTV.us" site_id="33006">Start TV</channel>
+    <channel lang="en" xmltv_id="StartTV.us" site_id="109454">Start TV</channel>
     <channel lang="en" xmltv_id="StarzCinemaEast.us" site_id="19634">Starz Cinema East</channel>
     <channel lang="en" xmltv_id="StarzCinemaWest.us" site_id="19651">Starz Cinema West</channel>
     <channel lang="en" xmltv_id="StarzComedyEast.us" site_id="34901">Starz Comedy East</channel>
