@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site site="tvtv.us">
   <channels>
-    <channel lang="en" xmltv_id="ABCSpark.ca" site_id="75031">ABC Spark</channel>
     <channel lang="en" xmltv_id="AMItv.ca" site_id="10756">AMI-tv</channel>
     <channel lang="en" xmltv_id="ATNColorsRishtey.ca" site_id="17038">ATN Colors Rishtey</channel>
     <channel lang="en" xmltv_id="ATNIBCTamil.ca" site_id="20367">ATN IBC Tamil</channel>
@@ -34,8 +33,7 @@
     <channel lang="en" xmltv_id="CKCODT.ca" site_id="72614">CTV (CKCO-DT) Kitchener ON</channel>
     <channel lang="en" xmltv_id="CTVSciFiChannel.ca" site_id="72484">CTV Sci-Fi Channel</channel>
     <channel lang="en" xmltv_id="CFTODT.ca" site_id="44784">CTV (CFTO-DT) Toronto ON</channel>
-    <channel lang="en" xmltv_id="DejaView.ca" site_id="100638">Deja View</channel>
-	<channel lang="en" xmltv_id="DisneyChannelCanadaWest.ca" site_id="16831">Disney Channel Canada West</channel>
+    <channel lang="en" xmltv_id="DisneyChannelCanadaWest.ca" site_id="16831">Disney Channel Canada West</channel>
     <channel lang="en" xmltv_id="FairchildTV2.ca" site_id="11397">Fairchild TV 2</channel>
     <channel lang="en" xmltv_id="FightNetwork.ca" site_id="48099">Fight Network</channel>
     <channel lang="en" xmltv_id="FrissonsTV.ca" site_id="32125">Frissons TV</channel>
@@ -48,8 +46,6 @@
     <channel lang="en" xmltv_id="Investigation.ca" site_id="11344">Investigation</channel>
     <channel lang="fr" xmltv_id="LCN.ca" site_id="67231">LCN</channel>
     <channel lang="en" xmltv_id="LeafsNationNetwork.ca" site_id="60020">Leafs Nation Network</channel>
-	<channel lang="en" xmltv_id="LoveNature.ca" site_id="52745">Love Nature</channel>
-	<channel lang="en" xmltv_id="Makeful.ca" site_id="46217">Makeful</channel>
     <channel lang="en" xmltv_id="PrimeAsiaTV.ca" site_id="32677">Prime Asia TV</channel>
     <channel lang="en" xmltv_id="StingrayQello.ca" site_id="113296">Qello Concerts by Stingray</channel>
     <channel lang="en" xmltv_id="SaisonsCanada.ca" site_id="20046">Saisons Canada</channel>
@@ -95,7 +91,6 @@
     <channel lang="en" xmltv_id="TVASports3.ca" site_id="14946">TVA Sports 3</channel>
     <channel lang="en" xmltv_id="VisionTV.ca" site_id="31607">VisionTV</channel>
     <channel lang="en" xmltv_id="WaterTelevisionNetwork.ca" site_id="35844">Water Television Network</channel>
-	<channel lang="en" xmltv_id="WWENetworkCanada.ca" site_id="90143">WWE Network</channel>
     <channel lang="en" xmltv_id="YourTVMilton.ca" site_id="35589">YourTV Milton</channel>
   </channels>
 </site>
