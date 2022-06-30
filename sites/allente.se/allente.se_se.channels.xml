@@ -2,6 +2,7 @@
 <site site="allente.se">
   <channels>
     <channel lang="sv" xmltv_id="AlJazeeraEnglish.qa" site_id="se#0344">Aljazeera</channel>
+    <channel lang="sv" xmltv_id="AnimalPlanetSweden.se" site_id="se#1005">Animal Planet Sverige</channel>
     <channel lang="sv" xmltv_id="ATGLive.se" site_id="se#1000">ATG Live</channel>
     <channel lang="sv" xmltv_id="BBCEarthNordic.uk" site_id="se#1018">BBC Earth HD</channel>
     <channel lang="sv" xmltv_id="BBCBritNordic.uk" site_id="se#1016">BBC Brit HD</channel>
@@ -17,13 +18,14 @@
     <channel lang="sv" xmltv_id="CMoreLive2.se" site_id="se#660">C More Live 2</channel>
     <channel lang="sv" xmltv_id="CMoreLive3.se" site_id="se#661">C More Live 3</channel>
     <channel lang="sv" xmltv_id="CMoreLive4.se" site_id="se#662">C More Live 4</channel>
-    <channel lang="sv" xmltv_id="CMoreLive5.se" site_id="se#663">C More Live 4</channel>
-    <channel lang="sv" xmltv_id="CMoreGolf.se" site_id="se#658">C More Mix</channel>
+    <channel lang="sv" xmltv_id="CMoreLive5.se" site_id="se#663">C More Live 5</channel>
+    <channel lang="sv" xmltv_id="CMoreMix.se" site_id="se#658">C More Mix</channel>
     <channel lang="sv" xmltv_id="CMoreSeries.se" site_id="se#971">C More Series</channel>
     <channel lang="sv" xmltv_id="CMoreStars.se" site_id="se#970">C More Stars</channel>
     <channel lang="sv" xmltv_id="CNBCEurope.uk" site_id="se#0032">CNBC</channel>
     <channel lang="sv" xmltv_id="CNNInternationalEurope.us" site_id="se#0033">CNN</channel>
-    <channel lang="sv" xmltv_id="DiscoveryChannelSweden.se" site_id="se#493">Discovery Channel</channel>
+    <channel lang="sv" xmltv_id="DiscoveryChannelSweden.se" site_id="se#493">Discovery Channel Sverige</channel>
+    <channel lang="sv" xmltv_id="DiscoveryScienceUK.uk" site_id="se#1006">Discovery Science Sverige</channel>
     <channel lang="sv" xmltv_id="DisneyChannelScandinavia.uk" site_id="se#0037">Disney Channel</channel>
     <channel lang="sv" xmltv_id="DisneyJuniorScandinavia.uk" site_id="se#0307">Disney Junior</channel>
     <channel lang="sv" xmltv_id="DiscoveryPlusExtra1.se" site_id="se#637">Discovery+ Extra 1</channel>
@@ -39,30 +41,32 @@
     <channel lang="sv" xmltv_id="DRRamasjang.dk" site_id="se#0048">DR Ramasjang</channel>
     <channel lang="sv" xmltv_id="EEurope.us" site_id="se#0052">E!</channel>
     <channel lang="sv" xmltv_id="EuronewsEnglish.fr" site_id="se#0281">EuroNews</channel>
-    <channel lang="sv" xmltv_id="Eurosport1Sweden.se" site_id="se#1001">Eurosport 1</channel> 
-    <channel lang="sv" xmltv_id="Eurosport2Sweden.se" site_id="se#1002">Eurosport 2</channel>
+    <channel lang="sv" xmltv_id="Eurosport1Sweden.se" site_id="se#1023">Eurosport 1</channel> 
+    <channel lang="sv" xmltv_id="Eurosport2Sweden.se" site_id="se#1024">Eurosport 2</channel>
     <channel lang="sv" xmltv_id="Godare.se" site_id="se#722">Godare</channel>
     <channel lang="sv" xmltv_id="GodTVScandinavia.uk" site_id="se#0058">God TV</channel>
     <channel lang="sv" xmltv_id="HistorySweden.se" site_id="se#652">History</channel>
     <channel lang="sv" xmltv_id="History2Nordic.us" site_id="se#1004">H2</channel>
     <channel lang="sv" xmltv_id="HorseCountryTVSweden.se" site_id="se#668">Horse &amp; Country TV</channel>
+    <channel lang="sv" xmltv_id="InvestigationDiscoverySweden.se" site_id="se#1039">Investigation Discovery Sverige</channel>
     <channel lang="sv" xmltv_id="Kanal5.se" site_id="se#0279">Kanal 5</channel>
     <channel lang="sv" xmltv_id="Kanal9.se" site_id="se#474">Kanal 9</channel>
     <channel lang="sv" xmltv_id="Kanal11.se" site_id="se#0235">Kanal 11</channel>
     <channel lang="sv" xmltv_id="Kunskapskanalen.se" site_id="se#0149">Kunskapskanalen</channel>
     <channel lang="sv" xmltv_id="MTV00s.uk" site_id="se#0246">MTV 00s</channel>
+    <channel lang="sv" xmltv_id="MTV80s.uk" site_id="se#0099">MTV 80s</channel>
     <channel lang="sv" xmltv_id="MTVHitsEurope.uk" site_id="se#0077">MTV Hits</channel>
     <channel lang="sv" xmltv_id="MTVGlobal.cz" site_id="se#0080">MTV Nordic</channel>
-    <channel lang="sv" xmltv_id="NationalGeographicHDSweden.se" site_id="se#0083">National Geographic Channel HD</channel>
+    <channel lang="sv" xmltv_id="MotorvisionTVUK.uk" site_id="se#1009">Motorvision</channel>
     <channel lang="sv" xmltv_id="NationalGeographicSweden.se" site_id="se#0084">National Geographic</channel>
-    <channel lang="sv" xmltv_id="NationalGeographicWildSweden.se" site_id="se#558">National Geographic Wild</channel>
+    <channel lang="sv" xmltv_id="NationalGeographicWildSweden.se" site_id="se#0082">National Geographic Wild</channel>
     <channel lang="sv" xmltv_id="NFLNetwork.us" site_id="se#569">NFL Network</channel>
     <channel lang="sv" xmltv_id="NickelodeonScandinavia.nl" site_id="se#0086">Nickelodeon</channel>
     <channel lang="sv" xmltv_id="NickJrScandinavia.nl" site_id="se#0088">Nick Jr</channel>
     <channel lang="sv" xmltv_id="NicktoonsScandinavia.nl" site_id="se#570">Nicktoons</channel>
-    <channel lang="sv" xmltv_id="NRK1.no" site_id="se#0091">NRK1</channel>
+    <channel lang="sv" xmltv_id="NRK1.no" site_id="se#0090">NRK1</channel>
     <channel lang="sv" xmltv_id="NRK2.no" site_id="se#0288">NRK2</channel>
-    <channel lang="sv" xmltv_id="NRK3.no" site_id="se#540">NRK3</channel>
+    <channel lang="sv" xmltv_id="NRK3.no" site_id="se#0289">NRK3</channel>
     <channel lang="sv" xmltv_id="ParamountNetworkSweden.se" site_id="se#0034">Paramount Network</channel>
     <channel lang="sv" xmltv_id="SFkanalen.se" site_id="se#972">SF-kanalen</channel>
     <channel lang="sv" xmltv_id="Sjuan.se" site_id="se#0232">Sjuan</channel>
@@ -72,6 +76,7 @@
     <channel lang="sv" xmltv_id="SVT2.se" site_id="se#0282">SVT 2</channel>
     <channel lang="sv" xmltv_id="SVT24.se" site_id="se#146">SVT 24</channel>
     <channel lang="sv" xmltv_id="SVTBarn.se" site_id="se#0147">SVT Barn</channel>
+    <channel lang="sv" xmltv_id="TLCSweden.se" site_id="se#1038">TLC Sverige</channel>
     <channel lang="sv" xmltv_id="TV2.dk" site_id="se#0297">TV 2</channel>
     <channel lang="sv" xmltv_id="TV3Sweden.se" site_id="se#0290">TV 3</channel>
     <channel lang="sv" xmltv_id="TV4.se" site_id="se#0227">TV 4</channel>
