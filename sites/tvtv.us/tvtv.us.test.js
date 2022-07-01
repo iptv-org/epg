@@ -38,7 +38,7 @@ it('can parse response', () => {
       category: ['Health'],
       season: 1,
       episode: 6,
-      icon: 'http://tvtv.tmsimg.com/assets/p16640522_b_v9_aa.jpg?w=240&h=360'
+      icon: 'https://tvtv.us/gn/i/assets/p16640522_b_v9_aa.jpg?w=240&h=360'
     },
     {
       start: '2022-01-20T00:30:00.000Z',
@@ -46,7 +46,7 @@ it('can parse response', () => {
       title: 'Four Senses',
       description: `Everything is sizzled and seared as chef Corbin Tomaszeski joins Christine and Carl in the kitchen.`,
       category: ['House/garden'],
-      icon: 'http://tvtv.tmsimg.com/assets/p10464580_b_v7_aa.jpg?w=240&h=360'
+      icon: 'https://tvtv.us/gn/i/assets/p10464580_b_v7_aa.jpg?w=240&h=360'
     }
   ])
 })
