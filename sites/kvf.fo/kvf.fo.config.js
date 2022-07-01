@@ -20,6 +20,7 @@ module.exports = {
       const prev = programs[programs.length - 1]
       const $item = cheerio.load(item)
       let start = parseStart($item, date)
+      if (!start) return
       if (prev && start.isBefore(prev.stop)) {
         start = start.add(1, 'd')
         date = date.add(1, 'd')
@@ -65,7 +66,5 @@ function parseTitle($item) {
 function parseItems(content) {
   const $ = cheerio.load(content)
 
-  return $(
-    '#block-system-main > div > div > div.panels-flexible-row.panels-flexible-row-339-main-row.panels-flexible-row-last.clearfix > div > div.panels-flexible-region.panels-flexible-region-339-center.panels-flexible-region-first > div > div > div > div > div.view-content > div.views-row'
-  ).toArray()
+  return $('.view > .view-content > div.views-row').toArray()
 }
