@@ -34,6 +34,7 @@ it('can parse response', () => {
       start: '2022-01-20T00:00:00.000Z',
       stop: '2022-01-20T00:30:00.000Z',
       title: 'Reflect and Renew With Kevin Naidoo',
+      sub_title: 'Empowerment',
       description: `Kevin demonstrates a meditation and yoga practice to reclaim his courage and confidence.`,
       category: ['Health'],
       season: 1,
@@ -44,6 +45,7 @@ it('can parse response', () => {
       start: '2022-01-20T00:30:00.000Z',
       stop: '2022-01-20T01:00:00.000Z',
       title: 'Four Senses',
+      sub_title: 'Sizzled & Seared',
       description: `Everything is sizzled and seared as chef Corbin Tomaszeski joins Christine and Carl in the kitchen.`,
       category: ['House/garden'],
       icon: 'https://tvtv.us/gn/i/assets/p10464580_b_v7_aa.jpg?w=240&h=360'
