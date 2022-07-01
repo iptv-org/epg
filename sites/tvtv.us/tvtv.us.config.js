@@ -117,6 +117,6 @@ function parseEpisode(item) {
 
 function parseIcon(item) {
   return item.program.preferredImage && item.program.preferredImage.uri
-    ? `http://tvtv.tmsimg.com/${item.program.preferredImage.uri}`
+    ? `https://tvtv.us/gn/i/${item.program.preferredImage.uri}`
     : null
 }
