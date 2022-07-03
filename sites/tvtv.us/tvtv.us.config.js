@@ -101,7 +101,7 @@ function parseTitle(item) {
 }
 
 function parseSubtitle(item) {
-  return item.program.episodeTitle
+  return item.program.episodeTitle && item.program.eventTitle
 }
 
 function parseDescription(item) {
