@@ -25,11 +25,11 @@ async function main() {
       if (channels[item.channel.id]) continue
       channels[item.channel.id] = new Channel(item.channel)
     }
+    programs = _.sortBy(programs, ['channel', 'start'])
+    programs = programs.map(p => new Program(p, channels[p.channel]))
+    total += programs.length
     channels = Object.values(channels)
     channels = _.sortBy(channels, 'id')
-    programs = _.sortBy(programs, ['channel', 'start'])
-    programs = programs.map(p => new Program(p))
-    total += programs.length
 
     const filepath = `${PUBLIC_DIR}/guides/${key}.epg.xml`
     logger.info(`Creating "${filepath}"...`)
