@@ -1537,10 +1537,10 @@
   "resolved" "https://registry.npmjs.org/entities/-/entities-2.2.0.tgz"
   "version" "2.2.0"
 
-"epg-grabber@^0.28.6":
-  "integrity" "sha512-Cx8acZ9O1dnLaSztCRSnATi/LBroc9wcVbe2fsa9s1pAj0a/FujbR2O1C2O/EzexENhTFlgLpTjpNJ+4i9LkYw=="
-  "resolved" "https://registry.npmjs.org/epg-grabber/-/epg-grabber-0.28.6.tgz"
-  "version" "0.28.6"
+"epg-grabber@^0.29.1":
+  "integrity" "sha512-D2j5EsjIi/bZRf/AOgMt5NBbEzImrcC3RInAv4JybTO78CZDAvOCX3hRqDWcluKF6ms0r87+0a3W4NcbX794Uw=="
+  "resolved" "https://registry.npmjs.org/epg-grabber/-/epg-grabber-0.29.1.tgz"
+  "version" "0.29.1"
   dependencies:
     "axios" "^0.21.1"
     "axios-cache-interceptor" "^0.10.3"
@@ -1976,9 +1976,9 @@
     "type-fest" "^0.20.2"
 
 "got@^11.8.2":
-  "integrity" "sha512-7gtQ5KiPh1RtGS9/Jbv1ofDpBFuq42gyfEib+ejaRBJuj/3tQFeR5+gw57e4ipaU8c/rCjvX6fkQz2lyDlGAOg=="
-  "resolved" "https://registry.npmjs.org/got/-/got-11.8.3.tgz"
-  "version" "11.8.3"
+  "integrity" "sha512-o0Je4NvQObAuZPHLFoRSkdG2lTgtcynqymzg2Vupdx6PorhaT5MCbIyXG6d4D94kk8ZG57QeosgdiqfJWhEhlQ=="
+  "resolved" "https://registry.npmjs.org/got/-/got-11.8.5.tgz"
+  "version" "11.8.5"
   dependencies:
     "@sindresorhus/is" "^4.0.0"
     "@szmarczak/http-timer" "^4.0.5"
