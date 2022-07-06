@@ -1,5 +1,5 @@
 const _ = require('lodash')
-const { EPGGrabber } = require('epg-grabber')
+const { EPGGrabber, Channel } = require('epg-grabber')
 const { program } = require('commander')
 const { db, logger, timer, file, parser } = require('../../core')
 const dayjs = require('dayjs')
@@ -47,9 +47,10 @@ async function main() {
   })
   const grabber = new EPGGrabber(config)
   for (const item of items) {
-    await grabber.grab(item.channel, item.date, async (data, err) => {
+    const channel = new Channel(item.channel)
+    await grabber.grab(channel, item.date, async (data, err) => {
       logger.info(
-        `[${i}/${total}] ${item.channel.site} (${item.channel.lang}) - ${item.channel.id} - ${dayjs
+        `[${i}/${total}] ${channel.site} (${channel.lang}) - ${channel.id} - ${dayjs
           .utc(data.date)
           .format('MMM D, YYYY')} (${data.programs.length} programs)`
       )
