@@ -54,14 +54,15 @@ module.exports = {
           channel = {
             site_id: station.id,
             name: stationData.name,
-            xmltv_id: parseChannelId(stationData)
+            xmltv_id: parseChannelId(stationData),
             logo: parseChannelIcon(item)
           }
           break
         default:
           channel = {
             site_id: station.id,
-            name: stationData.name
+            name: stationData.name,
+            logo: parseChannelIcon(item)
           }
           break
       }
