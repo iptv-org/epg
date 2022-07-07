@@ -20,6 +20,7 @@ module.exports = {
         title: parseTitle(item),
         sub_title: parseSubtitle(item),
         description: parseDescription(item),
+        ratings: parseRating(item),
         category: parseCategory(item),
         season: parseSeason(item),
         episode: parseEpisode(item),
@@ -120,6 +121,14 @@ function parseSeason(item) {
 
 function parseEpisode(item) {
   return item.program.episodeNum || null
+}
+
+function parseRating(item) {
+           return {
+		system: item.program.ratings.body,
+		value: item.program.ratings.code
+	}
+}
 }
 
 function parseIcon(item) {
