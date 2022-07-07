@@ -54,13 +54,15 @@ module.exports = {
           channel = {
             site_id: station.id,
             name: stationData.name,
-            xmltv_id: parseChannelId(stationData)
+            xmltv_id: parseChannelId(stationData),
+            logo: parseChannelIcon(item)
           }
           break
         default:
           channel = {
             site_id: station.id,
-            name: stationData.name
+            name: stationData.name,
+            logo: parseChannelIcon(item)
           }
           break
       }
@@ -123,5 +125,11 @@ function parseEpisode(item) {
 function parseIcon(item) {
   return item.program.preferredImage && item.program.preferredImage.uri
     ? `https://tvtv.us/gn/i/${item.program.preferredImage.uri}`
+    : null
+}
+
+function parseChannelIcon(item) {
+  return item.station.preferredImage && item.station.preferredImage.uri
+    ? `https://tvtv.us/gn/i/${item.station.preferredImage.uri}`
     : null
 }
