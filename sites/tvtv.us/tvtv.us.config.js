@@ -129,7 +129,6 @@ function parseRating(item) {
 		value: item.program.ratings.code
 	}
 }
-}
 
 function parseIcon(item) {
   return item.program.preferredImage && item.program.preferredImage.uri
