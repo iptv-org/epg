@@ -11,7 +11,7 @@ dayjs.extend(utc)
 const date = dayjs.utc('2022-01-17', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: '62670',
-  xmltv_id: 'AMITV.ca'
+  xmltv_id: 'AMITV.ca',
   logo: 'https://tvtv.us/gn/i/assets/s62670_ll_h15_ab.png?w=360&h=270'
 }
 
