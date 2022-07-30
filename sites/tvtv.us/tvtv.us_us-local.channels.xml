@@ -949,6 +949,7 @@
     <channel lang="en" xmltv_id="WALELD2.us" site_id="31265">Laff (WALE-LD2) Montgomery, AL</channel>
     <channel lang="en" xmltv_id="WALELD4.us" site_id="31252">Jewelry TV (WALE-LD4) Montgomery, AL</channel>
     <channel lang="en" xmltv_id="WAPADT1.us" site_id="44322">WAPA America</channel>
+    <channel lang="en" xmltv_id="WAPADT2.us" site_id="63739">WAPA Deportes</channel>
     <channel lang="en" xmltv_id="WATLDT1.us" site_id="31621">My Network TV (WATL-DT1) Atlanta, GA</channel>
     <channel lang="en" xmltv_id="WATLDT2.us" site_id="70568">This TV (WATL-DT2) Atlanta, GA</channel>
     <channel lang="en" xmltv_id="WATLDT3.us" site_id="91912">Antenna TV (WATL-DT3) Atlanta, GA</channel>
@@ -1162,6 +1163,8 @@
     <channel lang="en" xmltv_id="WJWDT4.us" site_id="106510">Charge (WJW-DT4) Cleveland, OH</channel>
     <channel lang="en" xmltv_id="WJZDT1.us" site_id="21232">CBS (WJZ-DT1) Baltimore, MD</channel>
     <channel lang="en" xmltv_id="WKARDT1.us" site_id="42529">PBS (WKAR-TV) East Lansing, MI</channel>
+    <channel lang="en" xmltv_id="WKAQDT1.us" site_id="12569">Telemundo (WKAQ-DT) San Juan, PR</channel>
+    <channel lang="en" xmltv_id="WKAQDT2.us" site_id="69285">Punto 2 (WKAQ-DT) San Juan, PR</channel>
     <channel lang="en" xmltv_id="WKBDDT1.us" site_id="25126">CW (WKBD-TV) Detroit, MI</channel>
     <channel lang="en" xmltv_id="WKBWDT1.us" site_id="24052">ABC (WKBW1) Buffalo, NY</channel>
     <channel lang="en" xmltv_id="WKBWDT2.us" site_id="56328">Bounce (WKBW2) Buffalo, NY</channel>
@@ -1182,6 +1185,7 @@
     <channel lang="en" xmltv_id="WKYCDT4.us" site_id="107047">Quest (WKYC-DT4) Cleveland, OH</channel>
     <channel lang="en" xmltv_id="WKYCDT5.us" site_id="118839">Twist (WKYC-DT5) Cleveland, OH</channel>
     <channel lang="en" xmltv_id="WKYCDT6.us" site_id="122046">Shop LC (WKYC-DT6) Cleveland, OH</channel>
+    <channel lang="en" xmltv_id="WLIIDT1.us" site_id="12569">Univision (WLII-DT1) San Juan, PR</channel>
     <channel lang="en" xmltv_id="WLIWDT1.us" site_id="34325">PBS (WLIW-DT1) New York, NY</channel>
     <channel lang="en" xmltv_id="WLIWDT2.us" site_id="34135">PBS Create (WLIW-DT2) New York, NY</channel>
     <channel lang="en" xmltv_id="WLIWDT3.us" site_id="44147">PBS World (WLIW-DT3) New York, NY</channel>
@@ -1500,7 +1504,37 @@
     <channel lang="en" xmltv_id="WZDCCD1.us" site_id="76363">Telemundo (WZDC-CD1) Washington, DC</channel>
     <channel lang="en" xmltv_id="WZMEDT1.us" site_id="64008">Story Television (WZME-DT1) New York, NY</channel>
     <channel lang="en" xmltv_id="WZMEDT2.us" site_id="74322">MeTV Plus (WZME-DT2) New York, NY</channel>
-    <channel lang="en" xmltv_id="WZZMDT1.us" site_id="31482">ABC (WZZM-DT1) Grand Rapids MI</channel>
+    <channel lang="en" xmltv_id="WZZMDT1.us" site_id="31482">ABC (WZZM-DT1) Grand Rapids, MI</channel>
+    <channel lang="en" xmltv_id="WBONLD1.us" site_id="77242">AMG TV (WBON-LD) Richmond, KY</channel>
+    <channel lang="en" xmltv_id="WBONLD2.us" site_id="84234">Buzzr TV (WBON-LD2) Richmond, KY</channel>
+    <channel lang="en" xmltv_id="WBONLD3.us" site_id="84235">Heartland (WBON-LD3) Richmond, KY</channel>
+    <channel lang="en" xmltv_id="WZZMDT1.us" site_id="115204">Retro TV (WBON-LD4) Richmond, KY</channel>
+    <channel lang="en" xmltv_id="WCVEDT1.us" site_id="43782">PBS (WCVE-DT) Richmond, VA</channel>
+    <channel lang="en" xmltv_id="WCVEDT2.us" site_id="58837">Create (WCVE-DT2) Richmond, VA</channel>
+    <channel lang="en" xmltv_id="WCVEDT3.us" site_id="58918">PBS World (WCVE-DT3) Richmond, VA</channel>
+    <channel lang="en" xmltv_id="WCVEDT4.us" site_id="108690">PBS Kids (WCVE-DT4) Richmond, VA</channel>
+    <channel lang="en" xmltv_id="WKOIDT1.us" site_id="34609">ION (WKOI-DT) Richmond, IN</channel>
+    <channel lang="en" xmltv_id="WKOIDT2.us" site_id="50100">Hillsong (WKOI-DT2) Richmond, IN</channel>
+    <channel lang="en" xmltv_id="WKOIDT3.us" site_id="50102">PosiTiV (WKOI-DT3) Richmond, IN</channel>
+    <channel lang="en" xmltv_id="WKOIDT4.us" site_id="50104">Enlace (WKOI-DT4) Richmond, IN</channel>
+    <channel lang="en" xmltv_id="WKOIDT5.us" site_id="50106">Smile (WKOI-DT5) Richmond, IN</channel>
+    <channel lang="en" xmltv_id="WRICDT1.us" site_id="20458">ABC (WRIC-DT) Richmond, VA</channel>
+    <channel lang="en" xmltv_id="WRICDT2.us" site_id="71490">ION (WRIC-DT2) Richmond, VA</channel>
+    <channel lang="en" xmltv_id="WRICDT3.us" site_id="98442">Cozi TV (WRIC-DT3) Richmond, VA</channel>
+    <channel lang="en" xmltv_id="WRLHDT1.us" site_id="34674">FOX (WRLH-DT) Richmond, KY</channel>
+    <channel lang="en" xmltv_id="WRLHDT2.us" site_id="52724">MyNetworkTV (WRLH-DT2) Richmond, KY</channel>
+    <channel lang="en" xmltv_id="WRLHDT3.us" site_id="69969">Comet TV (WRLH-DT3) Richmond, KY</channel>
+    <channel lang="en" xmltv_id="WRLHDT4.us" site_id="102233">CHARGE! (WRLH-DT4) Richmond, KY</channel>
+    <channel lang="en" xmltv_id="WRLHDT5.us" site_id="112986">Dabl (WRLH-DT5) Richmond, KY</channel>
+    <channel lang="en" xmltv_id="WTVRDT1.us" site_id="36075">CBS (WTVR-DT) Richmond, KY</channel>
+    <channel lang="en" xmltv_id="WTVRDT2.us" site_id="46787">Antenna TV (WTVR-DT2) Richmond, KY</channel>
+    <channel lang="en" xmltv_id="WTVRDT4.us" site_id="47679">Court TV (WTVR-DT4) Richmond, KY</channel>
+    <channel lang="en" xmltv_id="WWBTDT1.us" site_id="30305">NBC (WWBT-DT) Richmond, KY</channel>
+    <channel lang="en" xmltv_id="WWBTDT2.us" site_id="30674">MeTV (WWBT-DT2) Richmond, KY</channel>
+    <channel lang="en" xmltv_id="WWBTDT3.us" site_id="30675">Circle (WWBT-DT3) Richmond, KY</channel>
+    <channel lang="en" xmltv_id="WWBTDT4.us" site_id="113527">Ion Mystery (WWBT-DT4) Richmond, KY</channel>
+    <channel lang="en" xmltv_id="WWBTDT5.us" site_id="114161">True Crime Network (WWBT-DT5) Richmond, KY</channel>
+    <channel lang="en" xmltv_id="WZTDLD1.us" site_id="78805">Telemundo (WZTD-LD) Richmond, KY</channel>
     <channel lang="en" xmltv_id="XHASDT2.us" site_id="74026">LATV (XHAS-DT2) San Diego, CA</channel>
   </channels>
 </site>
