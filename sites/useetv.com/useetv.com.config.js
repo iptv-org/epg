@@ -9,7 +9,7 @@ dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
 module.exports = {
-  site: 'vidio.com',
+  site: 'useetv.com',
   url({ channel }) {
     return `https://www.useetv.com/tvod/${channel.site_id}`
   },
@@ -63,9 +63,5 @@ function parseTitle($item) {
 function parseItems(content, date) {
   const $ = cheerio.load(content)
 
-  return $(
-    `#pills-${date.format(
-      'YYYY-MM-DD'
-    )} .schedule-item`
-  ).toArray()
+  return $(`#pills-${date.format('YYYY-MM-DD')} .schedule-item`).toArray()
 }
