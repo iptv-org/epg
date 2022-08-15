@@ -123,8 +123,8 @@ function parseEpisode(item) {
 }
 
 function parseIcon(item) {
-  return item.program.preferredImage && item.program.preferredImage.uri
-    ? `https://tvtv.us/gn/i/${item.program.preferredImage.uri}`
+  return item.program.seriesId
+    ? `https://tvtv.us/gn/i/assets/p${item.program.seriesId}_b_h9_aa.jpg?w=3840`
     : null
 }
 
