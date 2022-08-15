@@ -124,7 +124,7 @@ function parseEpisode(item) {
 
 function parseIcon(item) {
   return item.program.seriesId
-    ? `https://tvtv.us/gn/i/assets/p${item.program.seriesId}_b_h9_aa.jpg?w=3840`
+    ? `https://tvtv.us/gn/i/assets/p${item.program.seriesId}_b_h9_aa.jpg?w=3840&h=2880`
     : null
 }
 
