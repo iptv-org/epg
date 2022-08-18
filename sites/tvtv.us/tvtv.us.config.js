@@ -23,6 +23,14 @@ module.exports = {
         category: parseCategory(item),
         season: parseSeason(item),
         episode: parseEpisode(item),
+        rating: [{
+          system: parseRatingSystem(item),
+          value: parseRatingValue(item),
+          icon: ''
+        }],
+        directors: parseDirectors(item),
+        actors: parseActors(item),
+        date: parseDate(item),
         start: parseStart(item),
         stop: parseStop(item),
         icon: parseIcon(item)
@@ -122,9 +130,29 @@ function parseEpisode(item) {
   return item.program.episodeNum || null
 }
 
+function parseDirectors(item) {
+  return item.program.directors || []
+}
+
+function parseDate(item) {
+  return item.program.origAirDate
+}
+
+function parseRatingSystem(item) {
+  return item.program.ratings.body
+}
+
+function parseRatingValue(item) {
+  return item.program.ratings.code
+}
+
+function parseActors(item) {
+  return item.program.topCast || []
+}
+
 function parseIcon(item) {
-  return item.program.seriesId
-    ? `https://tvtv.us/gn/i/assets/p${item.program.seriesId}_b_h9_aa.jpg?w=3840&h=2880`
+  return item.program.preferredImage && item.program.preferredImage.uri
+    ? `https://tvtv.us/gn/i/${item.program.preferredImage.uri}`
     : null
 }
 
