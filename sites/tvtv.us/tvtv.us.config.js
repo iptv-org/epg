@@ -23,11 +23,6 @@ module.exports = {
         category: parseCategory(item),
         season: parseSeason(item),
         episode: parseEpisode(item),
-        rating: [{
-          system: parseRatingSystem(item),
-          value: parseRatingValue(item),
-          icon: ''
-        }],
         directors: parseDirectors(item),
         actors: parseActors(item),
         date: parseDate(item),
@@ -136,14 +131,6 @@ function parseDirectors(item) {
 
 function parseDate(item) {
   return item.program.origAirDate
-}
-
-function parseRatingSystem(item) {
-  return item.program.ratings.body
-}
-
-function parseRatingValue(item) {
-  return item.program.ratings.code
 }
 
 function parseActors(item) {
