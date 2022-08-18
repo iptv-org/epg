@@ -16,6 +16,8 @@ module.exports = {
         description: item.description,
         icon: item.imageLandscape,
         category: item.genres,
+        season: item.seasonNumber || null,
+        episode: item.episodeNumber || null,
         start: parseStart(item),
         stop: parseStop(item)
       })
