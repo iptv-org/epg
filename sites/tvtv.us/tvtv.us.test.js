@@ -40,11 +40,6 @@ it('can parse response', () => {
       category: ['Health'],
       season: 1,
       episode: 6,
-      rating: [{
-        system: 'Canadian Parental Rating',
-        value: 'G',
-        icon: ''
-      }],
       directors: [''],
       actors: [''],
       date: '2019-04-20',
@@ -57,11 +52,6 @@ it('can parse response', () => {
       sub_title: 'Sizzled & Seared',
       description: `Everything is sizzled and seared as chef Corbin Tomaszeski joins Christine and Carl in the kitchen.`,
       category: ['House/garden'],
-      rating: [{
-        system: 'Canadian Parental Rating',
-        value: 'G',
-        icon: ''
-      }],
       directors: [''],
       actors: ['Carl Heinrich','Christine Ha'],
       date: '2016-01-14',
