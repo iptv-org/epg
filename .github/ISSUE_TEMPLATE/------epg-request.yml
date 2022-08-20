@@ -1,6 +1,6 @@
 name: 📺 EPG Request
-description: Request to add Electronic programming guide (EPG) in this repository
-title: 'Add: '
+description: Request to add EPG (Electronic Programming Guide) in this repository
+title: ''
 
 body:
   - type: markdown
@@ -10,7 +10,7 @@ body:
 
   - type: input
     attributes:
-      label: Website
+      label: Source
       description: Website where the EPG can be found?
       placeholder: 'https://cablecompany.com/tvlisting'
     validations:
