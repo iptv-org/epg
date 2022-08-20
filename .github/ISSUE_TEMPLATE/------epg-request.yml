@@ -10,22 +10,6 @@ body:
 
   - type: input
     attributes:
-      label: Channel Name
-      description: Channel Name from iptv-org/database. A complete list of supported channels can be found on iptv-org.github.io.
-      placeholder: 'BBC America East'
-    validations:
-      required: true
-
-  - type: input
-    attributes:
-      label: Channel ID
-      description: Unique channel ID from iptv-org/database. A complete list of supported channels can be found on iptv-org.github.io..
-      placeholder: 'BBCAmericaEast.us'
-    validations:
-      required: true
-
-  - type: input
-    attributes:
       label: Website
       description: Website where the EPG can be found?
       placeholder: 'https://cablecompany.com/tvlisting'
