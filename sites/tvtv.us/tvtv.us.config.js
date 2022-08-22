@@ -23,6 +23,9 @@ module.exports = {
         category: parseCategory(item),
         season: parseSeason(item),
         episode: parseEpisode(item),
+        directors: parseDirectors(item),
+        actors: parseActors(item),
+        date: parseDate(item),
         start: parseStart(item),
         stop: parseStop(item),
         icon: parseIcon(item)
@@ -120,6 +123,18 @@ function parseSeason(item) {
 
 function parseEpisode(item) {
   return item.program.episodeNum || null
+}
+
+function parseDirectors(item) {
+  return item.program.directors || []
+}
+
+function parseDate(item) {
+  return item.program.origAirDate
+}
+
+function parseActors(item) {
+  return item.program.topCast || []
 }
 
 function parseIcon(item) {
