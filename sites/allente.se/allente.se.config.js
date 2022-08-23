@@ -20,6 +20,8 @@ module.exports = {
         category: item.details.categories,
         description: item.details.description,
         icon: item.details.image,
+        season: parseSeason(item),
+        episode: parseEpisode(item),
         start,
         stop
       })
@@ -50,4 +52,11 @@ function parseItems(content, channel) {
   const channelData = data.channels.find(i => i.id === channelId)
 
   return channelData && Array.isArray(channelData.events) ? channelData.events : []
+}
+
+function parseSeason(item) {
+    return item.details.season || null
+}
+function parseEpisode(item) {
+    return item.details.episode || null
 }
