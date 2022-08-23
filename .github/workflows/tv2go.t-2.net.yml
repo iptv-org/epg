@@ -1,7 +1,7 @@
 name: tv2go.t-2.net
 on:
   schedule:
-    - cron: '30 0 * * *'
+    - cron: '0 3 * * *'
   workflow_dispatch:
   workflow_run:
     workflows: [_trigger]

@@ -1,7 +1,7 @@
 name: hd-plus.de
 on:
   schedule:
-    - cron: '5 0 * * *'
+    - cron: '0 3 * * *'
   workflow_dispatch:
   workflow_run:
     workflows: [_trigger]
