@@ -12,12 +12,10 @@ To load a program guide, all you need to do is copy the link to one or more of t
     <tr><th>Country&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><th>Channels</th><th>EPG</th><th>Status&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th></tr>
   </thead>
   <tbody>
-    <tr><td valign="top" rowspan="2">🇨🇦&nbsp;Canada</td><td align="right">2</td><td nowrap><code>https://iptv-org.github.io/epg/guides/ca-en/example.com.epg.xml</code></td><td><a href="https://github.com/iptv-org/epg/actions/workflows/example.com.yml"><img src="https://github.com/iptv-org/epg/actions/workflows/example.com.yml/badge.svg" alt="example.com" style="max-width: 100%;"></a></td></tr>
-    <tr><td align="right">1</td><td nowrap><code>https://iptv-org.github.io/epg/guides/ca-ru/example.com.epg.xml</code></td><td><a href="https://github.com/iptv-org/epg/actions/workflows/example.com.yml"><img src="https://github.com/iptv-org/epg/actions/workflows/example.com.yml/badge.svg" alt="example.com" style="max-width: 100%;"></a></td></tr>
+    <tr><td valign="top" rowspan="2">🇨🇦&nbsp;Canada</td><td align="right">2</td><td nowrap><code>https://iptv-org.github.io/epg/guides/ca-en/example.com.xml.gz</code></td><td><a href="https://github.com/iptv-org/epg/actions/workflows/example.com.yml"><img src="https://github.com/iptv-org/epg/actions/workflows/example.com.yml/badge.svg" alt="example.com" style="max-width: 100%;"></a></td></tr>
+    <tr><td align="right">1</td><td nowrap><code>https://iptv-org.github.io/epg/guides/ca-ru/example.com.xml.gz</code></td><td><a href="https://github.com/iptv-org/epg/actions/workflows/example.com.yml"><img src="https://github.com/iptv-org/epg/actions/workflows/example.com.yml/badge.svg" alt="example.com" style="max-width: 100%;"></a></td></tr>
   </tbody>
 </table>
-
-To use a compressed version of the files, add `.gz` to the end of the filename.
 
 ## API
 
