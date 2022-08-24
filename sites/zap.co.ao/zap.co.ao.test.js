@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/zap.co.ao/zap.co.ao.config.js --channels=sites/zap.co.ao/zap.co.ao_ao.channels.xml --output=.gh-pages/guides/ao/zap.co.ao.epg.xml --days=2
+// npx epg-grabber --config=sites/zap.co.ao/zap.co.ao.config.js --channels=sites/zap.co.ao/zap.co.ao_ao.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./zap.co.ao.config.js')
 const dayjs = require('dayjs')
