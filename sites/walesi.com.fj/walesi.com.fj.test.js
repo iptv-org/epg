@@ -45,13 +45,13 @@ it('can parse response', () => {
 
   expect(result).toMatchObject([
     {
-      start: '2021-11-20T11:00:00.000Z',
-      stop: '2021-11-20T17:00:00.000Z',
+      start: '2021-11-20T12:00:00.000Z',
+      stop: '2021-11-20T18:00:00.000Z',
       title: `Aljazeera`
     },
     {
-      start: '2021-11-20T17:00:00.000Z',
-      stop: '2021-11-20T17:30:00.000Z',
+      start: '2021-11-20T18:00:00.000Z',
+      stop: '2021-11-20T18:30:00.000Z',
       title: `Move Fiji`
     }
   ])
