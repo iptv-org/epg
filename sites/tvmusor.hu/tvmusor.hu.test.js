@@ -1,5 +1,5 @@
 // node ./scripts/channels.js --config=./sites/tvmusor.hu/tvmusor.hu.config.js --output=./sites/tvmusor.hu/tvmusor.hu_hu.channels.xml
-// npx epg-grabber --config=sites/tvmusor.hu/tvmusor.hu.config.js --channels=sites/tvmusor.hu/tvmusor.hu_hu.channels.xml --output=.gh-pages/guides/hu/tvmusor.hu.epg.xml --days=2
+// npx epg-grabber --config=sites/tvmusor.hu/tvmusor.hu.config.js --channels=sites/tvmusor.hu/tvmusor.hu_hu.channels.xml --output=guide.xml --days=2
 
 const { parser, url, request } = require('./tvmusor.hu.config.js')
 const dayjs = require('dayjs')
