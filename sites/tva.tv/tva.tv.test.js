@@ -1,5 +1,5 @@
 // node ./scripts/channels.js --config=./sites/tva.tv/tva.tv.config.js --output=./sites/tva.tv/tva.tv_ir.channels.xml
-// npx epg-grabber --config=sites/tva.tv/tva.tv.config.js --channels=sites/tva.tv/tva.tv_ir.channels.xml --output=.gh-pages/guides/ir/tva.tv.epg.xml --timeout=30000 --days=2
+// npx epg-grabber --config=sites/tva.tv/tva.tv.config.js --channels=sites/tva.tv/tva.tv_ir.channels.xml --output=guide.xml --timeout=30000 --days=2
 
 const { parser, url } = require('./tva.tv.config.js')
 const dayjs = require('dayjs')

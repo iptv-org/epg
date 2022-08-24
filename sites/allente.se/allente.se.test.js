@@ -2,7 +2,7 @@
 // node ./scripts/channels.js --config=./sites/allente.se/allente.se.config.js --output=./sites/allente.se/allente.se_fi.channels.xml --set=country:fi --set=lang:fi
 // node ./scripts/channels.js --config=./sites/allente.se/allente.se.config.js --output=./sites/allente.se/allente.se_no.channels.xml --set=country:no --set=lang:no
 // node ./scripts/channels.js --config=./sites/allente.se/allente.se.config.js --output=./sites/allente.se/allente.se_dk.channels.xml --set=country:dk --set=lang:da
-// npx epg-grabber --config=sites/allente.se/allente.se.config.js --channels=sites/allente.se/allente.se_se.channels.xml --output=.gh-pages/guides/se/allente.se.epg.xml --days=2
+// npx epg-grabber --config=sites/allente.se/allente.se.config.js --channels=sites/allente.se/allente.se_se.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./allente.se.config.js')
 const dayjs = require('dayjs')

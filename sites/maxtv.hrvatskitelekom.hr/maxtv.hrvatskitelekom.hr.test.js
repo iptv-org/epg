@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/maxtv.hrvatskitelekom.hr/maxtv.hrvatskitelekom.hr.config.js --channels=sites/maxtv.hrvatskitelekom.hr/maxtv.hrvatskitelekom.hr_hr.channels.xml --output=.gh-pages/guides/hr/maxtv.hrvatskitelekom.hr.epg.xml --days=2
+// npx epg-grabber --config=sites/maxtv.hrvatskitelekom.hr/maxtv.hrvatskitelekom.hr.config.js --channels=sites/maxtv.hrvatskitelekom.hr/maxtv.hrvatskitelekom.hr_hr.channels.xml --output=guide.xml --days=2
 
 const { parser, url, request } = require('./maxtv.hrvatskitelekom.hr.config.js')
 const dayjs = require('dayjs')

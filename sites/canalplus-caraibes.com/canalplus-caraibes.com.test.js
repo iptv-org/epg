@@ -1,5 +1,5 @@
 // [Geo-blocked] node ./scripts/channels.js --config=./sites/canalplus-caraibes.com/canalplus-caraibes.com.config.js --output=./sites/canalplus-caraibes.com/canalplus-caraibes.com_bl.channels.xml --set=country:bl
-// npx epg-grabber --config=sites/canalplus-caraibes.com/canalplus-caraibes.com.config.js --channels=sites/canalplus-caraibes.com/canalplus-caraibes.com_bl.channels.xml --output=.gh-pages/guides/bl/canalplus-caraibes.com.epg.xml --days=2
+// npx epg-grabber --config=sites/canalplus-caraibes.com/canalplus-caraibes.com.config.js --channels=sites/canalplus-caraibes.com/canalplus-caraibes.com_bl.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./canalplus-caraibes.com.config.js')
 const axios = require('axios')
@@ -30,13 +30,12 @@ it('can generate valid url for tomorrow', () => {
   )
 })
 
-
 it('can parse response', done => {
-    const content = `{"timeSlices":[{"contents":[{"title":"Rugby - Leinster / La Rochelle","subtitle":"Rugby","thirdTitle":"BEIN SPORTS 1 HD","startTime":1660815000,"endTime":1660816800,"onClick":{"displayTemplate":"miniDetail","displayName":"Rugby - Leinster / La Rochelle","URLPage":"https://service.canal-overseas.com/ott-frontend/vector/53001/event/140377765","URLVitrine":"https://service.canal-overseas.com/ott-frontend/vector/53001/program/224515801/recommendations"},"programID":224515801,"diffusionID":"140377765","URLImageDefault":"https://service.canal-overseas.com/image-api/v1/image/75fca4586fdc3458930dd1ab6fc2e643","URLImage":"https://service.canal-overseas.com/image-api/v1/image/7854e20fb6efecd398598653c57cc771"}],"timeSlice":"4"}]}`
-    axios.get.mockImplementation(url => {
-        if (url === 'https://service.canal-overseas.com/ott-frontend/vector/53001/event/140377765') {
-            return Promise.resolve({
-                data: JSON.parse(`{
+  const content = `{"timeSlices":[{"contents":[{"title":"Rugby - Leinster / La Rochelle","subtitle":"Rugby","thirdTitle":"BEIN SPORTS 1 HD","startTime":1660815000,"endTime":1660816800,"onClick":{"displayTemplate":"miniDetail","displayName":"Rugby - Leinster / La Rochelle","URLPage":"https://service.canal-overseas.com/ott-frontend/vector/53001/event/140377765","URLVitrine":"https://service.canal-overseas.com/ott-frontend/vector/53001/program/224515801/recommendations"},"programID":224515801,"diffusionID":"140377765","URLImageDefault":"https://service.canal-overseas.com/image-api/v1/image/75fca4586fdc3458930dd1ab6fc2e643","URLImage":"https://service.canal-overseas.com/image-api/v1/image/7854e20fb6efecd398598653c57cc771"}],"timeSlice":"4"}]}`
+  axios.get.mockImplementation(url => {
+    if (url === 'https://service.canal-overseas.com/ott-frontend/vector/53001/event/140377765') {
+      return Promise.resolve({
+        data: JSON.parse(`{
                     "currentPage": {
                     "displayName": "Rugby - Leinster / La Rochelle",
                     "displayTemplate": "detailPage",
@@ -94,42 +93,43 @@ it('can parse response', done => {
                     ]
                     }
                     }`)
-            })
-        } else {
-            return Promise.resolve({ data: '' })
+      })
+    } else {
+      return Promise.resolve({ data: '' })
+    }
+  })
+
+  parser({ content })
+    .then(result => {
+      result = result.map(p => {
+        p.start = p.start.toJSON()
+        p.stop = p.stop.toJSON()
+        return p
+      })
+
+      expect(result).toMatchObject([
+        {
+          start: '2022-08-18T09:30:00.000Z',
+          stop: '2022-08-18T10:00:00.000Z',
+          title: 'Rugby - Leinster / La Rochelle',
+          icon: 'https://service.canal-overseas.com/image-api/v1/image/7854e20fb6efecd398598653c57cc771',
+          category: 'Rugby',
+          description:
+            "Retransmission d'un match de Champions Cup de rugby à XV. L'European Rugby Champions Cup est une compétition annuelle interclubs de rugby à XV disputée par les meilleures équipes en Europe. Jusqu'en 2014, cette compétition s'appelait Heineken Cup, ou H Cup, et était sous l'égide de l'ERC, et depuis cette date l'EPRC lui a succédé. La première édition s'est déroulée en 1995."
         }
+      ])
+      done()
     })
-
-    parser({ content })
-        .then(result => {
-            result = result.map(p => {
-                p.start = p.start.toJSON()
-                p.stop = p.stop.toJSON()
-                return p
-            })
-
-            expect(result).toMatchObject([
-                {
-                    start: '2022-08-18T09:30:00.000Z',
-                    stop: '2022-08-18T10:00:00.000Z',
-                    title: 'Rugby - Leinster / La Rochelle',
-                    icon: 'https://service.canal-overseas.com/image-api/v1/image/7854e20fb6efecd398598653c57cc771',
-                    category: 'Rugby',
-                    description: 'Retransmission d\'un match de Champions Cup de rugby à XV. L\'European Rugby Champions Cup est une compétition annuelle interclubs de rugby à XV disputée par les meilleures équipes en Europe. Jusqu\'en 2014, cette compétition s\'appelait Heineken Cup, ou H Cup, et était sous l\'égide de l\'ERC, et depuis cette date l\'EPRC lui a succédé. La première édition s\'est déroulée en 1995.'
-                }
-            ])
-            done()
-        })
-        .catch(done)
+    .catch(done)
 })
 
 it('can handle empty guide', done => {
-    parser({
-        content: `{"currentPage":{"displayTemplate":"error","BOName":"Page introuvable"},"title":"Page introuvable","text":"La page que vous demandez est introuvable. Si le problème persiste, vous pouvez contacter l'assistance de CANAL+/CANALSAT.","code":404}`
+  parser({
+    content: `{"currentPage":{"displayTemplate":"error","BOName":"Page introuvable"},"title":"Page introuvable","text":"La page que vous demandez est introuvable. Si le problème persiste, vous pouvez contacter l'assistance de CANAL+/CANALSAT.","code":404}`
+  })
+    .then(result => {
+      expect(result).toMatchObject([])
+      done()
     })
-        .then(result => {
-            expect(result).toMatchObject([])
-            done()
-        })
-        .catch(done)
+    .catch(done)
 })
