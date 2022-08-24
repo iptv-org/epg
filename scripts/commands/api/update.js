@@ -24,7 +24,7 @@ async function main() {
           channel: channel.id,
           site: channel.site,
           lang: channel.lang,
-          url: `https://iptv-org.github.io/epg/guides/${suffix}/${site}.xml.gz`
+          url: `https://iptv-org.github.io/epg/guides/${suffix}/${site}.epg.xml.gz`
         })
       }
     } catch (err) {
