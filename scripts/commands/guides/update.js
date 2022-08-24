@@ -31,7 +31,7 @@ async function main() {
     channels = Object.values(channels)
     channels = _.sortBy(channels, 'id')
 
-    const filepath = `${PUBLIC_DIR}/guides/${key}.xml.gz`
+    const filepath = `${PUBLIC_DIR}/guides/${key}.epg.xml.gz`
     logger.info(`Creating "${filepath}"...`)
     const xmltv = generateXMLTV({ channels, programs, date: CURR_DATE })
     const compressed = await zip.compress(xmltv)
