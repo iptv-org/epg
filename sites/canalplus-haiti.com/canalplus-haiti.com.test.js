@@ -1,5 +1,5 @@
 // [Geo-blocked] node ./scripts/channels.js --config=./sites/canalplus-haiti.com/canalplus-haiti.com.config.js --output=./sites/canalplus-haiti.com/canalplus-haiti.com_ht.channels.xml
-// npx epg-grabber --config=sites/canalplus-haiti.com/canalplus-haiti.com.config.js --channels=sites/canalplus-haiti.com/canalplus-haiti.com_ht.channels.xml --output=.gh-pages/guides/ht/canalplus-haiti.com.epg.xml --days=2
+// npx epg-grabber --config=sites/canalplus-haiti.com/canalplus-haiti.com.config.js --channels=sites/canalplus-haiti.com/canalplus-haiti.com_ht.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./canalplus-haiti.com.config.js')
 const axios = require('axios')
@@ -31,7 +31,7 @@ it('can generate valid url for tomorrow', () => {
 })
 
 it('can parse response', done => {
-    const content = `{
+  const content = `{
         "timeSlices": [
             {
                 "contents": [
@@ -57,10 +57,10 @@ it('can parse response', done => {
             }
         ]
     }`
-    axios.get.mockImplementation(url => {
-        if (url === 'https://service.canal-overseas.com/ott-frontend/vector/53101/event/140952809') {
-            return Promise.resolve({
-                data: JSON.parse(`{
+  axios.get.mockImplementation(url => {
+    if (url === 'https://service.canal-overseas.com/ott-frontend/vector/53101/event/140952809') {
+      return Promise.resolve({
+        data: JSON.parse(`{
                     "currentPage": {
                     "displayName": "New Amsterdam - S3 - Ep7",
                     "displayTemplate": "detailPage",
@@ -133,42 +133,43 @@ it('can parse response', done => {
                     ]
                     }
                     }`)
-            })
-        } else {
-            return Promise.resolve({ data: '' })
+      })
+    } else {
+      return Promise.resolve({ data: '' })
+    }
+  })
+
+  parser({ content })
+    .then(result => {
+      result = result.map(p => {
+        p.start = p.start.toJSON()
+        p.stop = p.stop.toJSON()
+        return p
+      })
+
+      expect(result).toMatchObject([
+        {
+          start: '2022-08-17T23:55:00.000Z',
+          stop: '2022-08-18T00:40:00.000Z',
+          title: 'New Amsterdam - S3 - Ep7',
+          icon: 'https://service.canal-overseas.com/image-api/v1/image/52a18a209e28380b199201961c27097e',
+          category: 'Série Hôpital',
+          description:
+            "C'est la journée nationale de dépistage du VIH et Max offre des soins gratuits à tous les malades séropositifs qui se présentent à New Amsterdam."
         }
+      ])
+      done()
     })
-
-    parser({ content })
-        .then(result => {
-            result = result.map(p => {
-                p.start = p.start.toJSON()
-                p.stop = p.stop.toJSON()
-                return p
-            })
-
-            expect(result).toMatchObject([
-                {
-                    start: '2022-08-17T23:55:00.000Z',
-                    stop: '2022-08-18T00:40:00.000Z',
-                    title: 'New Amsterdam - S3 - Ep7',
-                    icon: 'https://service.canal-overseas.com/image-api/v1/image/52a18a209e28380b199201961c27097e',
-                    category: 'Série Hôpital',
-                    description: 'C\'est la journée nationale de dépistage du VIH et Max offre des soins gratuits à tous les malades séropositifs qui se présentent à New Amsterdam.'
-                }
-            ])
-            done()
-        })
-        .catch(done)
+    .catch(done)
 })
 
 it('can handle empty guide', done => {
-    parser({
-        content: `{"currentPage":{"displayTemplate":"error","BOName":"Page introuvable"},"title":"Page introuvable","text":"La page que vous demandez est introuvable. Si le problème persiste, vous pouvez contacter l'assistance de CANAL+/CANALSAT.","code":404}`
+  parser({
+    content: `{"currentPage":{"displayTemplate":"error","BOName":"Page introuvable"},"title":"Page introuvable","text":"La page que vous demandez est introuvable. Si le problème persiste, vous pouvez contacter l'assistance de CANAL+/CANALSAT.","code":404}`
+  })
+    .then(result => {
+      expect(result).toMatchObject([])
+      done()
     })
-        .then(result => {
-            expect(result).toMatchObject([])
-            done()
-        })
-        .catch(done)
+    .catch(done)
 })
