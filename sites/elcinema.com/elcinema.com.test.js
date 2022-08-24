@@ -1,5 +1,5 @@
-// npx epg-grabber --config=sites/elcinema.com/elcinema.com.config.js --channels=sites/elcinema.com/elcinema.com_eg-en.channels.xml --output=.gh-pages/guides/eg-en/elcinema.com.epg.xml --days=2
-// npx epg-grabber --config=sites/elcinema.com/elcinema.com.config.js --channels=sites/elcinema.com/elcinema.com_eg-ar.channels.xml --output=.gh-pages/guides/eg-ar/elcinema.com.epg.xml --days=2
+// npx epg-grabber --config=sites/elcinema.com/elcinema.com.config.js --channels=sites/elcinema.com/elcinema.com_eg-en.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/elcinema.com/elcinema.com.config.js --channels=sites/elcinema.com/elcinema.com_eg-ar.channels.xml --output=guide.xml --days=2
 
 const { parser, url, request } = require('./elcinema.com.config.js')
 const dayjs = require('dayjs')
