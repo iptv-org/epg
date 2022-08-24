@@ -1,5 +1,5 @@
 // node ./scripts/channels.js --config=./sites/tvarenasport.com/tvarenasport.com.config.js --output=./sites/tvarenasport.com/tvarenasport.com_rs.channels.xml --set=country:rs
-// npx epg-grabber --config=sites/tvarenasport.com/tvarenasport.com.config.js --channels=sites/tvarenasport.com/tvarenasport.com_rs.channels.xml --output=.gh-pages/guides/rs/tvarenasport.com.epg.xml --days=2
+// npx epg-grabber --config=sites/tvarenasport.com/tvarenasport.com.config.js --channels=sites/tvarenasport.com/tvarenasport.com_rs.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./tvarenasport.com.config.js')
 const dayjs = require('dayjs')
