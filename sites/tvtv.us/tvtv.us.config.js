@@ -130,7 +130,7 @@ function parseDirectors(item) {
 }
 
 function parseDate(item) {
-  return item.program.origAirDate
+  return item.program.releaseDate
 }
 
 function parseActors(item) {
