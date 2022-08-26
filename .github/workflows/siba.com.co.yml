@@ -1,7 +1,7 @@
 name: siba.com.co
 on:
   schedule:
-    - cron: '15 0 * * *'
+    - cron: '0 3 * * *'
   workflow_dispatch:
   workflow_run:
     workflows: [_trigger]

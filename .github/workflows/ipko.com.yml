@@ -1,7 +1,7 @@
 name: ipko.com
 on:
   schedule:
-    - cron: '10 0 * * *'
+    - cron: '0 3 * * *'
   workflow_dispatch:
   workflow_run:
     workflows: [_trigger]

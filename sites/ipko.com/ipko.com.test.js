@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/ipko.com/ipko.com.config.js --channels=sites/ipko.com/ipko.com_al.channels.xml --days=2 --output=.gh-pages/guides/al/ipko.com.epg.xml
+// npx epg-grabber --config=sites/ipko.com/ipko.com.config.js --channels=sites/ipko.com/ipko.com_al.channels.xml --days=2 --output=guide.xml
 
 const { parser, url } = require('./ipko.com.config.js')
 const dayjs = require('dayjs')

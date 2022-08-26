@@ -1,5 +1,5 @@
 // node ./scripts/channels.js --config=./sites/gatotv.com/gatotv.com.config.js --output=./sites/gatotv.com/gatotv.com_cr.channels.xml --set=country:costa_rica
-// npx epg-grabber --config=sites/gatotv.com/gatotv.com.config.js --channels=sites/gatotv.com/gatotv.com_ar.channels.xml --output=.gh-pages/guides/ar/gatotv.com.epg.xml --days=2
+// npx epg-grabber --config=sites/gatotv.com/gatotv.com.config.js --channels=sites/gatotv.com/gatotv.com_ar.channels.xml --output=guide.xml --days=2
 
 const { parser, url, request } = require('./gatotv.com.config.js')
 const dayjs = require('dayjs')

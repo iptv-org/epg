@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/canalplus-reunion.com/canalplus-reunion.com.config.js --channels=sites/canalplus-reunion.com/canalplus-reunion.com_km.channels.xml --output=.gh-pages/guides/km/canalplus-reunion.com.epg.xml --days=2
+// npx epg-grabber --config=sites/canalplus-reunion.com/canalplus-reunion.com.config.js --channels=sites/canalplus-reunion.com/canalplus-reunion.com_km.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./canalplus-reunion.com.config.js')
 const axios = require('axios')
@@ -30,7 +30,7 @@ it('can generate valid url for tomorrow', () => {
 })
 
 it('can parse response', done => {
-    const content = `{
+  const content = `{
         "timeSlices": [
             {
                 "contents": [
@@ -56,10 +56,10 @@ it('can parse response', done => {
             }
         ]
     }`
-    axios.get.mockImplementation(url => {
-        if (url === 'https://service.canal-overseas.com/ott-frontend/vector/63001/event/140382363') {
-            return Promise.resolve({
-                data: JSON.parse(`{
+  axios.get.mockImplementation(url => {
+    if (url === 'https://service.canal-overseas.com/ott-frontend/vector/63001/event/140382363') {
+      return Promise.resolve({
+        data: JSON.parse(`{
                     "currentPage": {
                     "displayName": "Almeria / Real Madrid",
                     "displayTemplate": "detailPage",
@@ -117,42 +117,43 @@ it('can parse response', done => {
                     ]
                     }
                     }`)
-            })
-        } else {
-            return Promise.resolve({ data: '' })
+      })
+    } else {
+      return Promise.resolve({ data: '' })
+    }
+  })
+
+  parser({ content })
+    .then(result => {
+      result = result.map(p => {
+        p.start = p.start.toJSON()
+        p.stop = p.stop.toJSON()
+        return p
+      })
+
+      expect(result).toMatchObject([
+        {
+          start: '2022-08-18T00:00:00.000Z',
+          stop: '2022-08-18T02:00:00.000Z',
+          title: 'Almeria / Real Madrid',
+          icon: 'https://service.canal-overseas.com/image-api/v1/image/47000149dabce60d1769589c766aad20',
+          category: 'Football',
+          description:
+            "Diffusion d'un match de LaLiga Santander, championnat d'Espagne de football, la plus haute compétition de football d'Espagne. Cette compétition professionnelle, placée sous la supervision de la Fédération espagnole de football, a été fondée en 1928 et s'appelle Primera Division jusqu'en 2008. Elle se nomme ensuite Liga BBVA jusqu'en 2016 puis LaLiga Santander depuis cette date."
         }
+      ])
+      done()
     })
-
-    parser({ content })
-        .then(result => {
-            result = result.map(p => {
-                p.start = p.start.toJSON()
-                p.stop = p.stop.toJSON()
-                return p
-            })
-
-            expect(result).toMatchObject([
-                {
-                    start: '2022-08-18T00:00:00.000Z',
-                    stop: '2022-08-18T02:00:00.000Z',
-                    title: 'Almeria / Real Madrid',
-                    icon: 'https://service.canal-overseas.com/image-api/v1/image/47000149dabce60d1769589c766aad20',
-                    category: 'Football',
-                    description: 'Diffusion d\'un match de LaLiga Santander, championnat d\'Espagne de football, la plus haute compétition de football d\'Espagne. Cette compétition professionnelle, placée sous la supervision de la Fédération espagnole de football, a été fondée en 1928 et s\'appelle Primera Division jusqu\'en 2008. Elle se nomme ensuite Liga BBVA jusqu\'en 2016 puis LaLiga Santander depuis cette date.'
-                }
-            ])
-            done()
-        })
-        .catch(done)
+    .catch(done)
 })
 
 it('can handle empty guide', done => {
-    parser({
-        content: `{"currentPage":{"displayTemplate":"error","BOName":"Page introuvable"},"title":"Page introuvable","text":"La page que vous demandez est introuvable. Si le problème persiste, vous pouvez contacter l'assistance de CANAL+/CANALSAT.","code":404}`
+  parser({
+    content: `{"currentPage":{"displayTemplate":"error","BOName":"Page introuvable"},"title":"Page introuvable","text":"La page que vous demandez est introuvable. Si le problème persiste, vous pouvez contacter l'assistance de CANAL+/CANALSAT.","code":404}`
+  })
+    .then(result => {
+      expect(result).toMatchObject([])
+      done()
     })
-        .then(result => {
-            expect(result).toMatchObject([])
-            done()
-        })
-        .catch(done)
+    .catch(done)
 })

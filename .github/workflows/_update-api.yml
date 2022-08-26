@@ -2,7 +2,7 @@ name: _update-api
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 6 * * *'
+    - cron: '0 9 * * *'
 jobs:
   update:
     runs-on: ubuntu-latest

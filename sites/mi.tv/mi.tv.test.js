@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/mi.tv/mi.tv.config.js --channels=sites/mi.tv/mi.tv_ar.channels.xml --output=.gh-pages/guides/ar/mi.tv.epg.xml --days=2
+// npx epg-grabber --config=sites/mi.tv/mi.tv.config.js --channels=sites/mi.tv/mi.tv_ar.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./mi.tv.config.js')
 const dayjs = require('dayjs')

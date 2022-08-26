@@ -13,7 +13,7 @@ it('will show a message if the file contains a duplicate', () => {
   } catch (err) {
     expect(err.status).toBe(1)
     expect(err.stdout).toBe(
-      `\n> channels:validate\n> node scripts/commands/channels/validate.js "tests/__data__/input/sites/duplicate.channels.xml"\n\ntests/__data__/input/sites/duplicate.channels.xml
+      `\n> channels:validate\n> node scripts/commands/channels/validate.js\n\ntests/__data__/input/sites/duplicate.channels.xml
 ┌─────────┬─────────────┬──────┬─────────────────────────────┬─────────┬─────────────────────┐
 │ (index) │    type     │ lang │          xmltv_id           │ site_id │        name         │
 ├─────────┼─────────────┼──────┼─────────────────────────────┼─────────┼─────────────────────┤
@@ -37,7 +37,7 @@ it('will show a message if the file contains a channel with wrong xmltv_id', () 
   } catch (err) {
     expect(err.status).toBe(1)
     expect(err.stdout).toBe(
-      `\n> channels:validate\n> node scripts/commands/channels/validate.js "tests/__data__/input/sites/wrong_xmltv_id.channels.xml"\n\ntests/__data__/input/sites/wrong_xmltv_id.channels.xml
+      `\n> channels:validate\n> node scripts/commands/channels/validate.js\n\ntests/__data__/input/sites/wrong_xmltv_id.channels.xml
 ┌─────────┬──────────────────┬──────┬────────────────────┬─────────┬─────────────────────┐
 │ (index) │       type       │ lang │      xmltv_id      │ site_id │        name         │
 ├─────────┼──────────────────┼──────┼────────────────────┼─────────┼─────────────────────┤

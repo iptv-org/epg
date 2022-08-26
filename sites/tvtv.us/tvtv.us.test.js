@@ -40,6 +40,7 @@ it('can parse response', () => {
       category: ['Health'],
       season: 1,
       episode: 6,
+      date: '2019-04-20',
       icon: 'https://tvtv.us/gn/i/assets/p16640522_b_v9_aa.jpg?w=240&h=360'
     },
     {
@@ -49,6 +50,8 @@ it('can parse response', () => {
       sub_title: 'Sizzled & Seared',
       description: `Everything is sizzled and seared as chef Corbin Tomaszeski joins Christine and Carl in the kitchen.`,
       category: ['House/garden'],
+      actors: ['Carl Heinrich','Christine Ha'],
+      date: '2016-01-14',
       icon: 'https://tvtv.us/gn/i/assets/p10464580_b_v7_aa.jpg?w=240&h=360'
     }
   ])

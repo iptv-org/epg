@@ -1,5 +1,5 @@
 // node ./scripts/channels.js --config=./sites/novacyprus.com/novacyprus.com.config.js --output=./sites/novacyprus.com/novacyprus.com_cy.channels.xml
-// npx epg-grabber --config=sites/novacyprus.com/novacyprus.com.config.js --channels=sites/novacyprus.com/novacyprus.com_cy.channels.xml --output=.gh-pages/guides/cy/novacyprus.com.epg.xml --days=2
+// npx epg-grabber --config=sites/novacyprus.com/novacyprus.com.config.js --channels=sites/novacyprus.com/novacyprus.com_cy.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./novacyprus.com.config.js')
 const dayjs = require('dayjs')

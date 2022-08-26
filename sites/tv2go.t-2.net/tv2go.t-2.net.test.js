@@ -1,5 +1,5 @@
 // node ./scripts/channels.js --config=./sites/tv2go.t-2.net/tv2go.t-2.net.config.js --output=./sites/tv2go.t-2.net/tv2go.t-2.net_si.channels.xml
-// npx epg-grabber --config=sites/tv2go.t-2.net/tv2go.t-2.net.config.js --channels=sites/tv2go.t-2.net/tv2go.t-2.net_si.channels.xml --output=.gh-pages/guides/si/tv2go.t-2.net.epg.xml --days=2
+// npx epg-grabber --config=sites/tv2go.t-2.net/tv2go.t-2.net.config.js --channels=sites/tv2go.t-2.net/tv2go.t-2.net_si.channels.xml --output=guide.xml --days=2
 
 const { parser, url, request } = require('./tv2go.t-2.net.config.js')
 const dayjs = require('dayjs')
