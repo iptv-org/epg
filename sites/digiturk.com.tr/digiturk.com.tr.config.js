@@ -35,7 +35,7 @@ module.exports = {
 }
 
 function parseStart(item) {
-  return dayjs.unix(item.BroadcastTimeStamp, 'Europe/Istanbul')
+  return dayjs.tz(item.BroadcastStart, 'Europe/Istanbul')
 }
 
 function parseCategory(item) {
