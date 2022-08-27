@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/pbsguam.org/pbsguam.org.config.js --channels=sites/pbsguam.org/pbsguam.org_gu.channels.xml --output=.gh-pages/guides/gu/pbsguam.org.epg.xml --days=2
+// npx epg-grabber --config=sites/pbsguam.org/pbsguam.org.config.js --channels=sites/pbsguam.org/pbsguam.org_gu.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./pbsguam.org.config.js')
 const dayjs = require('dayjs')

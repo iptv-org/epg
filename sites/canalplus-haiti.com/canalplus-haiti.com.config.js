@@ -12,18 +12,21 @@ module.exports = {
 
     return `https://service.canal-overseas.com/ott-frontend/vector/53101/channel/${channel.site_id}/events?filter.day=${diff}`
   },
-  parser: function ({ content }) {
+  async parser({ content }) {
     let programs = []
     const items = parseItems(content)
-    items.forEach(item => {
+    for (let item of items) {
       if (item.title === 'Fin des programmes') return
+      const detail = await loadProgramDetails(item)
       programs.push({
-        title: item.title,
-        icon: item.URLImageDefault,
-        start: parseStart(item).toJSON(),
-        stop: parseStop(item).toJSON()
+          title: item.title,
+          description:parseDescription(detail),
+          category: parseCategory(detail),
+          icon: parseIcon(item),
+          start: parseStart(item),
+          stop: parseStop(item)
       })
-    })
+    }
 
     return programs
   },
@@ -47,6 +50,28 @@ module.exports = {
       }
     })
   }
+}
+
+
+async function loadProgramDetails(item) {
+    if (!item.onClick.URLPage) return {}
+    const url = item.onClick.URLPage
+    const data = await axios
+      .get(url)
+      .then(r => r.data)
+      .catch(console.log)
+    return data || {}
+  }
+
+function parseDescription(detail){
+    return detail.detail.informations.summary ||  null
+}
+
+function parseCategory(detail){
+    return detail.detail.informations.subGenre ||  null
+}
+function parseIcon(item){
+    return item.URLImage || item.URLImageDefault
 }
 
 function parseStart(item) {

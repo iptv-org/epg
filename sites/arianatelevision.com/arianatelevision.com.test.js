@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/arianatelevision.com/arianatelevision.com.config.js --channels=sites/arianatelevision.com/arianatelevision.com_af.channels.xml --output=.gh-pages/guides/af/arianatelevision.com.epg.xml --days=2
+// npx epg-grabber --config=sites/arianatelevision.com/arianatelevision.com.config.js --channels=sites/arianatelevision.com/arianatelevision.com_af.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./arianatelevision.com.config.js')
 const dayjs = require('dayjs')
@@ -18,7 +18,7 @@ it('can generate valid url', () => {
 })
 
 it('can parse response', () => {
-  const content = `<!DOCTYPE html><html><head></head><body><textarea data-jtrt-table-id="508" id="jtrt_table_settings_508" cols="30" rows="10">[[["Start","Saturday","Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","",""],["7:00AM","City Report","ICC T20 Highlights","ICC T20 Highlights","ICC T20 Highlights","ICC T20 Highlights","ICC T20 Highlights","ICC T20 Highlights","",""],["7:30AM","ICC T20 Highlights","Sport ","Sport ","Sport ","Sport ","Sport ","Sport ","",""],["3:00PM","ICC T20 World Cup","ICC T20 World Cup","ICC T20 World Cup","ICC T20 World Cup","ICC T20 World Cup","ICC T20 World Cup","ICC T20 World Cup","",""],["6:30AM","Quran and Hadis ","Falah","Falah","Falah","Falah","Falah","Falah","",""],["","\\n","","","","","","","",""]]]</textarea></body></html>`
+  const content = `<!DOCTYPE html><html><head></head><body><textarea data-jtrt-table-id="508" id="jtrt_table_settings_508" cols="30" rows="10">[[["Start","Saturday","Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","",""],["7:00","City Report","ICC T20 Highlights","ICC T20 Highlights","ICC T20 Highlights","ICC T20 Highlights","ICC T20 Highlights","ICC T20 Highlights","",""],["7:30","ICC T20 Highlights","Sport ","Sport ","Sport ","Sport ","Sport ","Sport ","",""],["15:00","ICC T20 World Cup","ICC T20 World Cup","ICC T20 World Cup","ICC T20 World Cup","ICC T20 World Cup","ICC T20 World Cup","ICC T20 World Cup","",""],["6:30","Quran and Hadis ","Falah","Falah","Falah","Falah","Falah","Falah","",""],["","\\n","","","","","","","",""]]]</textarea></body></html>`
   const result = parser({ content, date }).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()

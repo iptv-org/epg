@@ -1,5 +1,5 @@
 // node ./scripts/channels.js --config=./sites/tvarenasport.hr/tvarenasport.hr.config.js --output=./sites/tvarenasport.hr/tvarenasport.hr_hr.channels.xml
-// npx epg-grabber --config=sites/tvarenasport.hr/tvarenasport.hr.config.js --channels=sites/tvarenasport.hr/tvarenasport.hr_hr.channels.xml --output=.gh-pages/guides/hr/tvarenasport.hr.epg.xml --days=2
+// npx epg-grabber --config=sites/tvarenasport.hr/tvarenasport.hr.config.js --channels=sites/tvarenasport.hr/tvarenasport.hr_hr.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./tvarenasport.hr.config.js')
 const dayjs = require('dayjs')
@@ -11,7 +11,7 @@ dayjs.extend(utc)
 const date = dayjs.utc('2021-11-17', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: '380',
-  xmltv_id: 'ArenaSport1Hrvatska.rs'
+  xmltv_id: 'ArenaSport1Croatia.hr'
 }
 
 it('can generate valid url', () => {

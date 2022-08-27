@@ -3,21 +3,17 @@
   <channels>
     <channel lang="zh" xmltv_id="AnhuiTV.cn" site_id="anhui">安徽卫视</channel>
     <channel lang="zh" xmltv_id="BeijingSatelliteTV.cn" site_id="btv1">北京卫视</channel>
-    <channel lang="zh" xmltv_id="BeijingTV.cn" site_id="btv4">BTV影视</channel>
-    <channel lang="zh" xmltv_id="BeijingTVArtsChannel.cn" site_id="btv2">BTV文艺</channel>
-    <channel lang="zh" xmltv_id="BeijingTVFinanceChannel.cn" site_id="btv5">BTV财经</channel>
-    <channel lang="zh" xmltv_id="BeijingTVInternationalChannel.cn" site_id="btvInternational">BTV国际</channel>
-    <channel lang="zh" xmltv_id="BeijingTVKaku.cn" site_id="btvchild">BTV卡酷少儿</channel>
-    <channel lang="zh" xmltv_id="BeijingTVLifestyleChannel.cn" site_id="btv7">BTV生活</channel>
-    <channel lang="zh" xmltv_id="BeijingTVNewsChannel.cn" site_id="btv9">BTV新闻</channel>
-    <channel lang="zh" xmltv_id="BeijingTVScienceandEducationChannel.cn" site_id="btv3">BTV科教</channel>
-    <channel lang="zh" xmltv_id="BeijingTVSportsChannel.cn" site_id="btv6">BTV体育</channel>
-    <channel lang="zh" xmltv_id="BeijingTVWinterOlympicDocChannel.cn" site_id="btvjishi">BTV纪实</channel>
-    <channel lang="zh" xmltv_id="BeijingTVYouthChannel.cn" site_id="btv8">BTV青少</channel>
+    <channel lang="zh" xmltv_id="BRTVFilmTelevisionChannel.cn" site_id="btv4">BTV影视</channel>
+    <channel lang="zh" xmltv_id="BRTVArtsChannel.cn" site_id="btv2">BTV文艺</channel>
+    <channel lang="zh" xmltv_id="BRTVFinancialChannel.cn" site_id="btv5">BTV财经</channel>
+    <channel lang="zh" xmltv_id="BRTVKakuChildrensChannel.cn" site_id="btvchild">BTV卡酷少儿</channel>
+    <channel lang="zh" xmltv_id="BRTVLifeChannel.cn" site_id="btv7">BTV生活</channel>
+    <channel lang="zh" xmltv_id="BRTVNewsChannel.cn" site_id="btv9">BTV新闻</channel>
+    <channel lang="zh" xmltv_id="BRTVScienceEducationChannel.cn" site_id="btv3">BTV科教</channel>
+    <channel lang="zh" xmltv_id="BRTVWinterOlympicsDocumentaryChannel.cn" site_id="btvjishi">BTV纪实</channel>
     <channel lang="zh" xmltv_id="CCTV1.cn" site_id="cctv1">CCTV 1</channel>
     <channel lang="zh" xmltv_id="CCTV10.cn" site_id="cctv10">CCTV 10</channel>
     <channel lang="zh" xmltv_id="CCTV11.cn" site_id="cctv11">CCTV 11</channel>
-    <channel lang="zh" xmltv_id="CCTV11.cn" site_id="cctvxiqu">CCTV戏曲</channel>
     <channel lang="zh" xmltv_id="CCTV12.cn" site_id="cctv12">CCTV 12</channel>
     <channel lang="zh" xmltv_id="CCTV13.cn" site_id="cctv13">CCTV 13</channel>
     <channel lang="zh" xmltv_id="CCTV14.cn" site_id="cctvchild">CCTV 14</channel>
@@ -33,18 +29,18 @@
     <channel lang="zh" xmltv_id="CCTV8.cn" site_id="cctv8">CCTV 8</channel>
     <channel lang="zh" xmltv_id="CCTV9.cn" site_id="cctvjilu">CCTV 9</channel>
     <channel lang="zh" xmltv_id="CCTVBilliards.cn" site_id="taiqiu">CCTV央视台球</channel>
-    <channel lang="zh" xmltv_id="CCTVClassic.cn" site_id="jingpin">CCTV央视文化精品</channel>
+    <channel lang="zh" xmltv_id="CCTVCultureofQuality.cn" site_id="jingpin">CCTV央视文化精品</channel>
     <channel lang="zh" xmltv_id="CCTVEntertainment.cn" site_id="cctvyule">CCTV娱乐</channel>
-    <channel lang="zh" xmltv_id="CCTVFashionableWoman.cn" site_id="shishang">CCTV女性时尚</channel>
-    <channel lang="zh" xmltv_id="CCTVFashionMusic.cn" site_id="fyyy">CCTV风云音乐</channel>
+    <channel lang="zh" xmltv_id="CCTVWomensFashion.cn" site_id="shishang">CCTV女性时尚</channel>
+    <channel lang="zh" xmltv_id="CCTVStormMusic.cn" site_id="fyyy">CCTV风云音乐</channel>
     <channel lang="zh" xmltv_id="CCTVGolfTennis.cn" site_id="cctvgaowang">CCTV高尔夫网球</channel>
     <channel lang="zh" xmltv_id="CCTVHealth.cn" site_id="wsjk">卫生健康</channel>
-    <channel lang="zh" xmltv_id="CCTVHomeShopping.cn" site_id="dianshigouwu">CCTV中视购物</channel>
+    <channel lang="zh" xmltv_id="CCTVChinaTelevisionShoppingChannel.cn" site_id="dianshigouwu">CCTV中视购物</channel>
     <channel lang="zh" xmltv_id="CCTVNostalgiaTheater.cn" site_id="hjjc">CCTV怀旧剧场</channel>
-    <channel lang="zh" xmltv_id="CCTVOldStories.cn" site_id="cctvlaogushi">CCTV老故事</channel>
-    <channel lang="zh" xmltv_id="CCTVShincoAnimation.cn" site_id="xinkedongman">CCTV新科动漫</channel>
-    <channel lang="zh" xmltv_id="CCTVSoccer.cn" site_id="cctvfyzq">CCTV风云足球</channel>
-    <channel lang="zh" xmltv_id="CCTVStormMusic.cn" site_id="fyjc">CCTV风云剧场</channel>
+    <channel lang="zh" xmltv_id="CNDFilmOldStories.cn" site_id="cctvlaogushi">CCTV老故事</channel>
+    <channel lang="zh" xmltv_id="CNDFilmShincoAnimation.cn" site_id="xinkedongman">CCTV新科动漫</channel>
+    <channel lang="zh" xmltv_id="CCTVStormFootball.cn" site_id="cctvfyzq">CCTV风云足球</channel>
+    <channel lang="zh" xmltv_id="CCTVStormTheater.cn" site_id="fyjc">CCTV风云剧场</channel>
     <channel lang="zh" xmltv_id="CCTVTheFirstTheater.cn" site_id="diyijuchang">CCTV第一剧场</channel>
     <channel lang="zh" xmltv_id="CCTVTVGuide.cn" site_id="zhinan">CCTV电视指南</channel>
     <channel lang="zh" xmltv_id="CCTVWorldGeography.cn" site_id="shijiedili">CCTV世界地理</channel>

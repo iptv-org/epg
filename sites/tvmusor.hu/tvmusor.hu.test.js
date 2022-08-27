@@ -1,5 +1,5 @@
 // node ./scripts/channels.js --config=./sites/tvmusor.hu/tvmusor.hu.config.js --output=./sites/tvmusor.hu/tvmusor.hu_hu.channels.xml
-// npx epg-grabber --config=sites/tvmusor.hu/tvmusor.hu.config.js --channels=sites/tvmusor.hu/tvmusor.hu_hu.channels.xml --output=.gh-pages/guides/hu/tvmusor.hu.epg.xml --days=2
+// npx epg-grabber --config=sites/tvmusor.hu/tvmusor.hu.config.js --channels=sites/tvmusor.hu/tvmusor.hu_hu.channels.xml --output=guide.xml --days=2
 
 const { parser, url, request } = require('./tvmusor.hu.config.js')
 const dayjs = require('dayjs')
@@ -11,7 +11,7 @@ dayjs.extend(utc)
 const date = dayjs.utc('2021-11-24', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: '139',
-  xmltv_id: 'AMCMagyarorszag.us'
+  xmltv_id: 'AMCHungary.hu'
 }
 
 it('can generate valid url', () => {

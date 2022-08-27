@@ -7,8 +7,8 @@ module.exports = {
       0: 'duminica',
       1: 'luni',
       2: 'marti',
-      3: 'ieri',
-      4: 'azi',
+      3: 'miercuri',
+      4: 'joi',
       5: 'vineri',
       6: 'sambata'
     }

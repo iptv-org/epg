@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/comteco.com.bo/comteco.com.bo.config.js --channels=sites/comteco.com.bo/comteco.com.bo_bo.channels.xml --output=.gh-pages/guides/bo/comteco.com.bo.epg.xml --days=2
+// npx epg-grabber --config=sites/comteco.com.bo/comteco.com.bo.config.js --channels=sites/comteco.com.bo/comteco.com.bo_bo.channels.xml --output=guide.xml --days=2
 
 const { parser, url, request } = require('./comteco.com.bo.config.js')
 const dayjs = require('dayjs')

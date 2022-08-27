@@ -1,5 +1,5 @@
 // node ./scripts/channels.js --config=./sites/magticom.ge/magticom.ge.config.js --output=./sites/magticom.ge/magticom.ge_ge.channels.xml
-// npx epg-grabber --config=sites/magticom.ge/magticom.ge.config.js --channels=sites/magticom.ge/magticom.ge_ge.channels.xml --output=.gh-pages/guides/ge/magticom.ge.epg.xml --days=2
+// npx epg-grabber --config=sites/magticom.ge/magticom.ge.config.js --channels=sites/magticom.ge/magticom.ge_ge.channels.xml --output=guide.xml --days=2
 
 const { parser, url, request } = require('./magticom.ge.config.js')
 const dayjs = require('dayjs')
@@ -11,7 +11,7 @@ dayjs.extend(utc)
 const date = dayjs.utc('2021-11-22', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: '260',
-  xmltv_id: 'BollywoodTVRossiya.il'
+  xmltv_id: 'BollywoodHDRussia.ru'
 }
 
 it('can generate valid url', () => {

@@ -37,9 +37,9 @@ module.exports = {
 }
 
 function parseStart(item, date) {
-  const time = `${date.format('MM/DD/YYYY')} ${item.start}`
+  const time = `${date.format('YYYY-MM-DD')} ${item.start}`
 
-  return dayjs.tz(time, 'MM/DD/YYYY h:mmA', 'Asia/Kabul')
+  return dayjs.tz(time, 'YYYY-MM-DD H:mm', 'Asia/Kabul')
 }
 
 function parseItems(content, date) {

@@ -1,5 +1,5 @@
 // node ./scripts/channels.js --config=./sites/gatotv.com/gatotv.com.config.js --output=./sites/gatotv.com/gatotv.com_cr.channels.xml --set=country:costa_rica
-// npx epg-grabber --config=sites/gatotv.com/gatotv.com.config.js --channels=sites/gatotv.com/gatotv.com_ar.channels.xml --output=.gh-pages/guides/ar/gatotv.com.epg.xml --days=2
+// npx epg-grabber --config=sites/gatotv.com/gatotv.com.config.js --channels=sites/gatotv.com/gatotv.com_ar.channels.xml --output=guide.xml --days=2
 
 const { parser, url, request } = require('./gatotv.com.config.js')
 const dayjs = require('dayjs')
@@ -29,34 +29,34 @@ it('can parse response', () => {
 
   expect(result).toMatchObject([
     {
-      start: '2021-11-12T20:00:00.000Z',
-      stop: '2021-11-12T21:30:00.000Z',
+      start: '2021-11-13T04:00:00.000Z',
+      stop: '2021-11-13T05:30:00.000Z',
       title: 'Bienvenidos a bordo'
     },
     {
-      start: '2021-11-12T21:30:00.000Z',
-      stop: '2021-11-12T22:45:00.000Z',
+      start: '2021-11-13T05:30:00.000Z',
+      stop: '2021-11-13T06:45:00.000Z',
       title: 'Ciudad de sombras'
     },
     {
-      start: '2021-11-12T22:45:00.000Z',
-      stop: '2021-11-13T00:30:00.000Z',
+      start: '2021-11-13T06:45:00.000Z',
+      stop: '2021-11-13T08:30:00.000Z',
       title: 'Rascacielos: Rescate en las Alturas',
       icon: 'https://imagenes.gatotv.com/categorias/peliculas/miniatura/rascacielos.jpg',
       description:
         'Cuando un ex rescatista de rehenes del FBI evalúa la seguridad de un rascacielos en China, un incendio repentino hace que sea acusado injustamente.'
     },
     {
-      start: '2021-11-13T10:30:00.000Z',
-      stop: '2021-11-13T10:41:00.000Z',
+      start: '2021-11-13T18:30:00.000Z',
+      stop: '2021-11-13T18:41:00.000Z',
       title: 'Los Jóvenes Titanes En Acción',
       icon: 'https://imagenes.gatotv.com/categorias/caricaturas/miniatura/los_jovenes_titanes_en_accion.jpg',
       description:
         'Robin, Starfire, Raven, Chico Bestia y Cyborg se preparan para nuevas aventuras cómicas después de hacer un sándwich, jugar algún videojuego o lavar la ropa.'
     },
     {
-      start: '2021-11-13T20:55:00.000Z',
-      stop: '2021-11-14T01:00:00.000Z',
+      start: '2021-11-14T04:55:00.000Z',
+      stop: '2021-11-14T09:00:00.000Z',
       title: 'Decisión 2021'
     }
   ])

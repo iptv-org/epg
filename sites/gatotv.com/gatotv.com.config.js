@@ -82,14 +82,14 @@ function parseStart($item, date) {
   let time = $item('td:nth-child(1) > div > time').attr('datetime')
   time = `${date.format('YYYY-MM-DD')} ${time}`
 
-  return dayjs.tz(time, 'YYYY-MM-DD HH:mm', dayjs.tz.guess())
+  return dayjs.tz(time, 'YYYY-MM-DD HH:mm', 'America/New_York')
 }
 
 function parseStop($item, date) {
   let time = $item('td:nth-child(2) > div > time').attr('datetime')
   time = `${date.format('YYYY-MM-DD')} ${time}`
 
-  return dayjs.tz(time, 'YYYY-MM-DD HH:mm', dayjs.tz.guess())
+  return dayjs.tz(time, 'YYYY-MM-DD HH:mm', 'America/New_York')
 }
 
 function parseItems(content) {

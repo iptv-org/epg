@@ -1,0 +1,33 @@
+name: _test
+on:
+  workflow_dispatch:
+  pull_request:
+    types: [opened, synchronize, reopened, edited]
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 2
+      - uses: tj-actions/changed-files@v19
+        id: files
+        with:
+          files: sites/**/*.config.js
+      - name: Set changed sites name
+        if: ${{ steps.files.outputs.any_changed == 'true' }}
+        id: sites
+        run: |
+          declare out
+          for i in ${{ steps.files.outputs.all_changed_files }}; do
+            out+="$(echo $i | cut -d'/' -f 2) "
+          done
+          echo "::set-output name=all_changed_sites::$(echo $out)"
+      - name: test
+        if: steps.files.outputs.any_changed == 'true'
+        run: |
+          npm install
+          npm test -- ${{ steps.sites.outputs.all_changed_sites }}

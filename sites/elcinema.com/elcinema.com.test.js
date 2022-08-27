@@ -1,5 +1,5 @@
-// npx epg-grabber --config=sites/elcinema.com/elcinema.com.config.js --channels=sites/elcinema.com/elcinema.com_eg-en.channels.xml --output=.gh-pages/guides/eg-en/elcinema.com.epg.xml --days=2
-// npx epg-grabber --config=sites/elcinema.com/elcinema.com.config.js --channels=sites/elcinema.com/elcinema.com_eg-ar.channels.xml --output=.gh-pages/guides/eg-ar/elcinema.com.epg.xml --days=2
+// npx epg-grabber --config=sites/elcinema.com/elcinema.com.config.js --channels=sites/elcinema.com/elcinema.com_eg-en.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/elcinema.com/elcinema.com.config.js --channels=sites/elcinema.com/elcinema.com_eg-ar.channels.xml --output=guide.xml --days=2
 
 const { parser, url, request } = require('./elcinema.com.config.js')
 const dayjs = require('dayjs')
@@ -29,8 +29,8 @@ it('can generate valid url', () => {
 it('can parse response (en)', () => {
   expect(parser({ date, channel: channelEN, content: contentEN })).toMatchObject([
     {
-      start: '2021-11-11T08:00:00.000Z',
-      stop: '2021-11-11T10:00:00.000Z',
+      start: '2021-11-11T07:00:00.000Z',
+      stop: '2021-11-11T09:00:00.000Z',
       title: 'Good Morning Arab',
       icon: 'https://media.elcinema.com/uploads/_150x200_5659fb4f174c49b54cc14cb53e70a5467abef429b5bb9d1a1cf2a40aa37562b2.jpg',
       description: `As Abdel Mohsen passes away and his will is read to the family members, the true essence of each of them emerges, resulting in unthinkable discord. `,
@@ -42,8 +42,8 @@ it('can parse response (en)', () => {
 it('can parse response (ar)', () => {
   expect(parser({ date, channel: channelAR, content: contentAR })).toMatchObject([
     {
-      start: '2021-11-11T10:30:00.000Z',
-      stop: '2021-11-11T11:00:00.000Z',
+      start: '2021-11-11T09:30:00.000Z',
+      stop: '2021-11-11T10:00:00.000Z',
       title: 'أحلى ما طاش',
       icon: 'https://media.elcinema.com/uploads/_150x200_2f74473c92a69d7bfd25bd7fca8576168e8a58da4dd5cb8222eb1297caa13915.jpg',
       description: ` يعيد برنامج (أحلى ما طاش) عرضا لمجموعة من أفضل الحلقات التي تم تقديمها من خلال المسلسل الكوميدي السعودي (طاش ما طاش)، والذي استمر عرضه على التليفزيون السعودي لمدة 18 موسمًا متواصلًا، والتي ناقش من خلالها (ناصر القصبي) و(عبدالله السدحان) مجموعة من القضايا الاجتماعية التي تشغل بال المجتمع السعودي بطريقة ساخرة. `,

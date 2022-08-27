@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/vtm.be/vtm.be.config.js --channels=sites/vtm.be/vtm.be_be.channels.xml --output=.gh-pages/guides/be/vtm.be.epg.xml --days=2
+// npx epg-grabber --config=sites/vtm.be/vtm.be.config.js --channels=sites/vtm.be/vtm.be_be.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./vtm.be.config.js')
 const dayjs = require('dayjs')

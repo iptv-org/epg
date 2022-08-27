@@ -11,7 +11,8 @@ dayjs.extend(utc)
 const date = dayjs.utc('2022-01-17', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: '62670',
-  xmltv_id: 'AMITV.ca'
+  xmltv_id: 'AMITV.ca',
+  logo: 'https://tvtv.us/gn/i/assets/s62670_ll_h15_ab.png?w=360&h=270'
 }
 
 it('can generate valid url', () => {
@@ -34,19 +35,24 @@ it('can parse response', () => {
       start: '2022-01-20T00:00:00.000Z',
       stop: '2022-01-20T00:30:00.000Z',
       title: 'Reflect and Renew With Kevin Naidoo',
+      sub_title: 'Empowerment',
       description: `Kevin demonstrates a meditation and yoga practice to reclaim his courage and confidence.`,
       category: ['Health'],
       season: 1,
       episode: 6,
-      icon: 'http://tvtv.tmsimg.com/assets/p16640522_b_v9_aa.jpg?w=240&h=360'
+      date: '2019-04-20',
+      icon: 'https://tvtv.us/gn/i/assets/p16640522_b_v9_aa.jpg?w=240&h=360'
     },
     {
       start: '2022-01-20T00:30:00.000Z',
       stop: '2022-01-20T01:00:00.000Z',
       title: 'Four Senses',
+      sub_title: 'Sizzled & Seared',
       description: `Everything is sizzled and seared as chef Corbin Tomaszeski joins Christine and Carl in the kitchen.`,
       category: ['House/garden'],
-      icon: 'http://tvtv.tmsimg.com/assets/p10464580_b_v7_aa.jpg?w=240&h=360'
+      actors: ['Carl Heinrich','Christine Ha'],
+      date: '2016-01-14',
+      icon: 'https://tvtv.us/gn/i/assets/p10464580_b_v7_aa.jpg?w=240&h=360'
     }
   ])
 })

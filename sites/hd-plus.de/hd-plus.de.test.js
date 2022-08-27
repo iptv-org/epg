@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/hd-plus.de/hd-plus.de.config.js --channels=sites/hd-plus.de/hd-plus.de_de.channels.xml --output=.gh-pages/guides/de/hd-plus.de.epg.xml --days=2
+// npx epg-grabber --config=sites/hd-plus.de/hd-plus.de.config.js --channels=sites/hd-plus.de/hd-plus.de_de.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./hd-plus.de.config.js')
 const dayjs = require('dayjs')
@@ -10,7 +10,7 @@ dayjs.extend(utc)
 const date = dayjs.utc('2021-11-25', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: '1-2-3-tv-hd',
-  xmltv_id: '123TV.de'
+  xmltv_id: '123tv.de'
 }
 const content = `<!DOCTYPE html><html> <head lang="de"></head> <body data-sensory-parallax-role="main" data-sensory-controller='{"controllerName": "OffscreenController"}' class="webshop-epg red" > <main data-sensory-controller='{"controllerName": "TeaserController"}'> <div class="grid-container-epg channel"> <div class="site_overlay"> <div class="loading_icon"></div></div><div class="site_wrapper"> <div id="UIChannelContent-619fb9d2e185d" class="channel-content"> <header> <img src="//cdn.hd-plus.de/senderlogos/bright-cropped/24444-2.png" alt="1-2-3.tv HD" class="channel-image"/> <h2 class="title">1-2-3.tv HD</h2> </header> <table> <thead> <tr> <th>Titel</th> <th>Ausstrahlungszeit</th> </tr></thead> <tbody> <tr> <td> <a href="/epg/show/1-2-3-tv-hd-ihre-lieblingsuhren/1442396582" >Ihre Lieblingsuhren</a > </td><td>Do 25.11 00:00</td></tr><tr> <td> <a href="/epg/show/1-2-3-tv-hd-ihre-lieblingsuhren/1442396584" >Ihre Lieblingsuhren</a > </td><td>Do 25.11 01:00</td></tr><tr> <td><a href="/epg/show/1-2-3-tv-hd-flash-deals/1452944370">Flash Deals</a></td><td>Do 25.11 06:00</td></tr></tbody> </table> </div></div></div></main> </body></html>`
 

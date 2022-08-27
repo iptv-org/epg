@@ -2,14 +2,19 @@ name: _update-api
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 12 * * *'
+    - cron: '0 9 * * *'
 jobs:
-  check:
+  update:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        if: ${{ !env.ACT }}
+        with:
+          node-version: '14'
+          cache: 'npm'
       - run: npm install
-      - run: node scripts/commands/update-api.js
+      - run: npm run api:update
       - uses: tibdex/github-app-token@v1
         if: ${{ !env.ACT }}
         id: create-app-token
@@ -21,7 +26,7 @@ jobs:
         with:
           repository-name: iptv-org/api
           branch: gh-pages
-          folder: .gh-pages/api
+          folder: .api
           token: ${{ steps.create-app-token.outputs.token }}
           git-config-name: iptv-bot[bot]
           git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com

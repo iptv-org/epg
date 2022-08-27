@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/m.tv.sms.cz/m.tv.sms.cz.config.js --channels=sites/m.tv.sms.cz/m.tv.sms.cz_cz.channels.xml --output=.gh-pages/guides/cz/m.tv.sms.cz.epg.xml --days=2
+// npx epg-grabber --config=sites/m.tv.sms.cz/m.tv.sms.cz.config.js --channels=sites/m.tv.sms.cz/m.tv.sms.cz_cz.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./m.tv.sms.cz.config.js')
 const iconv = require('iconv-lite')
@@ -8,22 +8,22 @@ const customParseFormat = require('dayjs/plugin/customParseFormat')
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
-const date = dayjs.utc('2021-11-24', 'YYYY-MM-DD').startOf('d')
+const date = dayjs.utc('2022-03-30', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: 'Cero',
   xmltv_id: '0.es'
 }
-const content = `<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd"><html xmlns="http://www.w3.org/1999/xhtml"> <head></head> <body> <div id="obsah" style="text-align: left"> <div class="stanice" style="text-align: left"> <div class="stanice_a" style="border-bottom: none"> <div style="width: 50%; float: left; overflow: hidden; height: 2.8em; padding-top: 5px"> <div class="button" style="width: 90%; margin-left: 3px; text-align: left; overflow: hidden" onclick="zmen_stanici(this)" > <img style="float: right; margin-top: 10px; margin-right: 3px" src="//www.sms.cz/mobilni/tvp/img/sipka_dolu.gif"/> <div class="logo_out" onclick="zmen_stanici(this); canEv(event);"> <img style="margin-top: 2px" class="logo" src="//www.sms.cz/kategorie/televize/bmp/loga/velka/cero.png"/> </div><div class="button_ov"> Cero <div class="ztrb"></div></div></div></div><div style="width: 50%; float: left; margin-top: 5px"> <div style="width: 50%; float: right"> <a href="#" onclick="zobraz_datepicker()" class="button" style="width: 90%; float: right; margin-right: 3px" > <img style="float: right; margin-top: 10px; margin-right: 3px" src="//www.sms.cz/mobilni/tvp/img/sipka_dolu.gif"/>dnes</a > </div><div style="width: 50%; float: left"> <a href="#" class="button" onclick="zobraz_timepicker(this)" style="width: 90%"> <img style="float: right; margin-top: 10px; margin-right: 3px" src="//www.sms.cz/mobilni/tvp/img/sipka_dolu.gif"/> <span id="time_text">rбno</span> </a> </div></div></div><div class="porady"> <div class="porad"> <div class="cas" onclick='if (document.getElementById("x1581482663")) document.getElementById("x1581482663").click();' > <span style="">05.02</span><br/> </div><a class="nazev" href="https://m.tv.sms.cz/televize/Cero/20211124/1581482663-La-magia-de-la-Luna--El-octavo-continente" ><div style="position: relative; overflow: hidden; height: 18px"> La magia de la Luna: El octavo continente <div class="ztr"></div></div><div class="detail"> Documentales <div class="ztr"></div></div ></a> </div><div class="porad"> <div class="cas" onclick='if (document.getElementById("x1581482664")) document.getElementById("x1581482664").click();' > <span style="">05.56</span><br/> </div><a class="nazev" href="https://m.tv.sms.cz/televize/Cero/20211124/1581482664-Explorando-Europa--El-nacimiento-de-un-continente" ><div style="position: relative; overflow: hidden; height: 18px"> Explorando Europa: El nacimiento de un continente <div class="ztr"></div></div><div class="detail"> Documentales <div class="ztr"></div></div ></a> </div><div class="porad"> <div class="cas" onclick='if (document.getElementById("x1580526747")) document.getElementById("x1580526747").click();' > <span style="">23.00</span><br/> </div><a class="nazev" href="https://m.tv.sms.cz/televize/Cero/20211124/1580526747-Late-Motiv--41-" ><div style="position: relative; overflow: hidden; height: 18px"> Late Motiv (41) <div class="ztr"></div></div><div class="detail"> Entretenimiento <div class="ztr"></div></div ></a> </div><div class="porad"> <div class="cas" onclick='if (document.getElementById("x1580526748")) document.getElementById("x1580526748").click();' > <span style="">00.05</span><br/> </div><a class="nazev" href="https://m.tv.sms.cz/televize/Cero/20211124/1580526748-La-Resistencia--41-" ><div style="position: relative; overflow: hidden; height: 18px"> La Resistencia (41) <div class="ztr"></div></div><div class="detail"> Entretenimiento <div class="ztr"></div></div ></a> </div><div class="porad"> <div class="cas" onclick='if (document.getElementById("x1581426545")) document.getElementById("x1581426545").click();' > <span style="">01.20</span><br/> </div><a class="nazev" href="https://m.tv.sms.cz/televize/Cero/20211124/1581426545-Ilustres-Ignorantes--Cantantes" ><div style="position: relative; overflow: hidden; height: 18px"> Ilustres Ignorantes: Cantantes <div class="ztr"></div></div><div class="detail"> Entretenimiento <div class="ztr"></div></div ></a> </div></div></div></div></body></html>`
-const buffer = iconv.encode(Buffer.from(content), 'win1250')
 
 it('can generate valid url', () => {
   expect(url({ channel, date })).toBe(
-    'https://m.tv.sms.cz/index.php?stanice=Cero&cas=0&den=2021-11-24'
+    'https://m.tv.sms.cz/index.php?stanice=Cero&cas=0&den=2022-03-30'
   )
 })
 
 it('can parse response', () => {
-  const result = parser({ buffer, date }).map(p => {
+  let content = `<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd"><html xmlns="http://www.w3.org/1999/xhtml"> <head></head> <body> <div id='obsah' style='text-align: left'> <div class='stanice' style='text-align: left'> <div class='porady'> <div class='porad' style='display: none;'> <div class='cas' onclick='if (document.getElementById("x1620166884")) document.getElementById("x1620166884").click();'><span style='color: #FF2672'>05.25</span><br/></div><a class='nazev' href='https://m.sms.cz/serial/pred-kamerou-xix-8'> <div style='position: relative; overflow: hidden; height: 18px;'> Před kamerou XIX (8) <div class='ztr'></div></div><div class='detail'> Filmový magazín Francie / USA (2022) <div class='ztr'></div></div></a> </div><div class='porad' style='display: none;'> <div class='cas' onclick='if (document.getElementById("x1620166885")) document.getElementById("x1620166885").click();'><span style='color: #71B7DC'>06.00</span><br/><span style='color: #71B7DC; font-size: 85%'>59%</span></div><a class='nazev' href='https://m.sms.cz/film/kubanska-spojka'> <div style='position: relative; overflow: hidden; height: 18px;'> Kubánská spojka <div class='ztr'></div></div><div class='detail'> Na přelomu 80. a 90. let minulého století podnikaly povstalecké skupiny sídlící na Floridě násilné ú... <div class='ztr'></div></div></a> </div><div class='porad' > <div class='cas' onclick='if (document.getElementById("x1620166899")) document.getElementById("x1620166899").click();'> <span style='color: #71B7DC'>22.35</span><br/><span style='color: #71B7DC; font-size: 85%'>72%</span><br/> <div id="x1620166899" title="Přehrát televizní pořad" class="ntvp_rec " style="width: 90%; max-width: initial !important;" onclick="location.href='https://www.xn--lep-tma39c.tv/'" > <div class="record_cudl_inner"></div></div></div><a class='nazev' href='https://m.sms.cz/film/patriot-2000'> <div style='position: relative; overflow: hidden; height: 18px;'> Patriot <div class='ztr'></div></div><div class='detail'> Jižní Karolína, 1776. Benjamin Martin, hrdina, který bojoval proti Francouzům a Indiánům, žije v kli... <div class='ztr'></div></div></a> </div><div class='porad' > <div class='cas' onclick='if (document.getElementById("x1620166900")) document.getElementById("x1620166900").click();'> <span style='color: #71B7DC'>01.15</span><br/><span style='color: #71B7DC; font-size: 85%'>55%</span><br/> <div id="x1620166900" title="Přehrát televizní pořad" class="ntvp_rec " style="width: 90%; max-width: initial !important;" onclick="location.href='https://www.xn--lep-tma39c.tv/'" > <div class="record_cudl_inner"></div></div></div><a class='nazev' href='https://m.sms.cz/film/chelsea-handler-evoluce'> <div style='position: relative; overflow: hidden; height: 18px;'> Chelsea Handler: Evoluce <div class='ztr'></div></div><div class='detail'> Chelsea Handlerová se po šestileté přestávce vrací ke stand-up comedy ve speciálu HBO Max. Během hod... <div class='ztr'></div></div></a> </div><div class='porad' > <div class='cas' onclick='if (document.getElementById("x1620166901")) document.getElementById("x1620166901").click();'> <span style='color: #FF2672'>02.25</span><br/> <div id="x1620166901" title="Přehrát televizní pořad" class="ntvp_rec " style="width: 90%; max-width: initial !important;" onclick="location.href='https://www.xn--lep-tma39c.tv/'" > <div class="record_cudl_inner"></div></div></div><a class='nazev' href='https://m.sms.cz/serial/drapy-episode-7'> <div style='position: relative; overflow: hidden; height: 18px;'> Drápy IV (8) <div class='ztr'></div></div><div class='detail'> Kriminální komediální drama USA (2020) <div class='ztr'></div></div></a> </div></div></div></div></body></html>`
+  const buffer = iconv.encode(content, 'win1250')
+  const result = parser({ content, buffer, date }).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
     return p
@@ -31,34 +31,37 @@ it('can parse response', () => {
 
   expect(result).toMatchObject([
     {
-      start: '2021-11-24T04:02:00.000Z',
-      stop: '2021-11-24T04:56:00.000Z',
-      title: `La magia de la Luna: El octavo continente`,
-      description: 'Documentales'
+      start: '2022-03-30T03:25:00.000Z',
+      stop: '2022-03-30T04:00:00.000Z',
+      title: `Před kamerou XIX (8)`,
+      description: 'Filmový magazín Francie / USA (2022)'
     },
     {
-      start: '2021-11-24T04:56:00.000Z',
-      stop: '2021-11-24T22:00:00.000Z',
-      title: `Explorando Europa: El nacimiento de un continente`,
-      description: 'Documentales'
+      start: '2022-03-30T04:00:00.000Z',
+      stop: '2022-03-30T20:35:00.000Z',
+      title: `Kubánská spojka`,
+      description:
+        'Na přelomu 80. a 90. let minulého století podnikaly povstalecké skupiny sídlící na Floridě násilné ú...'
     },
     {
-      start: '2021-11-24T22:00:00.000Z',
-      stop: '2021-11-24T23:05:00.000Z',
-      title: `Late Motiv (41)`,
-      description: 'Entretenimiento'
+      start: '2022-03-30T20:35:00.000Z',
+      stop: '2022-03-30T23:15:00.000Z',
+      title: `Patriot`,
+      description:
+        'Jižní Karolína, 1776. Benjamin Martin, hrdina, který bojoval proti Francouzům a Indiánům, žije v kli...'
     },
     {
-      start: '2021-11-24T23:05:00.000Z',
-      stop: '2021-11-25T00:20:00.000Z',
-      title: `La Resistencia (41)`,
-      description: 'Entretenimiento'
+      start: '2022-03-30T23:15:00.000Z',
+      stop: '2022-03-31T00:25:00.000Z',
+      title: `Chelsea Handler: Evoluce`,
+      description:
+        'Chelsea Handlerová se po šestileté přestávce vrací ke stand-up comedy ve speciálu HBO Max. Během hod...'
     },
     {
-      start: '2021-11-25T00:20:00.000Z',
-      stop: '2021-11-25T01:20:00.000Z',
-      title: `Ilustres Ignorantes: Cantantes`,
-      description: 'Entretenimiento'
+      start: '2022-03-31T00:25:00.000Z',
+      stop: '2022-03-31T01:25:00.000Z',
+      title: `Drápy IV (8)`,
+      description: 'Kriminální komediální drama USA (2020)'
     }
   ])
 })

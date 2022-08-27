@@ -1,86 +1,94 @@
 const axios = require('axios')
-const cheerio = require('cheerio')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
-const customParseFormat = require('dayjs/plugin/customParseFormat')
 
 dayjs.extend(utc)
-dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'dstv.com',
-  url({ channel, date }) {
-    const [bouquetId] = channel.site_id.split('#')
-
-    return `https://guide.dstv.com/api/gridview/page?bouquetId=${bouquetId}&genre=all&date=${date.format(
-      'YYYY-MM-DD'
-    )}`
+  request: {
+    cache: {
+      ttl: 6 * 60 * 60 * 1000, // 6h
+      interpretHeader: false
+    }
   },
-  parser({ content, date, channel }) {
-    const programs = []
-    const items = parseItems(content, date, channel)
-    items.forEach(item => {
-      const prev = programs[programs.length - 1]
-      let start = parseStart(item, date)
-      if (prev) {
-        if (start.isBefore(prev.start)) {
-          start = start.add(1, 'd')
-          date = date.add(1, 'd')
-        }
-        prev.stop = start
-      } else if (start.hour() > 12) {
-        start = start.subtract(1, 'd')
-        date = date.subtract(1, 'd')
-      }
-      const stop = start.add(1, 'h')
+  url: function ({ channel, date }) {
+    const [region] = channel.site_id.split('#')
+    const packageName = region === 'nga' ? 'DStv%20Premium' : ''
+
+    return `https://www.dstv.com/umbraco/api/TvGuide/GetProgrammes?d=${date.format(
+      'YYYY-MM-DD'
+    )}&package=${packageName}&country=${region}`
+  },
+  async parser({ content, channel, cached }) {
+    let programs = []
+    const items = parseItems(content, channel)
+    for (const item of items) {
+      const details = await loadProgramDetails(item)
       programs.push({
-        title: item.title,
-        start,
-        stop
+        title: item.Title,
+        description: parseDescription(details),
+        icon: parseIcon(details),
+        category: parseCategory(details),
+        start: parseStart(item),
+        stop: parseStop(item)
       })
-    })
+    }
 
     return programs
   },
-  async channels({ bouquet }) {
+  async channels({ country }) {
     const data = await axios
       .get(
-        `https://guide.dstv.com/api/channel/fetchChannelsByGenresInBouquet?bouquetId=${bouquet}&genre=all`
+        `https://www.dstv.com/umbraco/api/TvGuide/GetProgrammes?d=2022-03-10&package=DStv%20Premium&country=${country}`
       )
       .then(r => r.data)
       .catch(console.log)
 
-    const items = data.items
-    return items.map(item => {
+    return data.Channels.map(item => {
       return {
-        lang: 'en',
-        site_id: `${bouquet}#${item.channelTag}`,
-        name: item.channelName
+        site_id: `${country}#${item.Number}`,
+        name: item.Name
       }
     })
   }
 }
 
-function parseStart(item, date) {
-  time = `${date.format('MM/DD/YYYY')} ${item.time}`
-
-  return dayjs.utc(time, 'MM/DD/YYYY HH:mm')
+function parseDescription(details) {
+  return details ? details.Synopsis : null
 }
 
-function parseItems(content, date, channel) {
-  const [_, channelTag] = channel.site_id.split('#')
-  const data = JSON.parse(content)
-  const html = data[channelTag]
-  if (!html) return []
-  const $ = cheerio.load(html)
+function parseIcon(details) {
+  return details ? details.ThumbnailUri : null
+}
 
-  return $('li')
-    .map((i, el) => {
-      return {
-        time: $(el).find('.event-time').text().trim(),
-        title: $(el).find('.event-title').text().trim()
-      }
-    })
-    .toArray()
-    .filter(i => i.time && i.title)
+function parseCategory(details) {
+  return details ? details.SubGenres : null
+}
+
+async function loadProgramDetails(item) {
+  const url = `https://www.dstv.com/umbraco/api/TvGuide/GetProgramme?id=${item.Id}`
+
+  return axios
+    .get(url)
+    .then(r => r.data)
+    .catch(console.error)
+}
+
+function parseStart(item) {
+  return dayjs.utc(item.StartTime, 'YYYY-MM-DDTHH:mm:ss')
+}
+
+function parseStop(item) {
+  return dayjs.utc(item.EndTime, 'YYYY-MM-DDTHH:mm:ss')
+}
+
+function parseItems(content, channel) {
+  const [_, channelId] = channel.site_id.split('#')
+  const data = JSON.parse(content)
+  if (!data || !Array.isArray(data.Channels)) return []
+  const channelData = data.Channels.find(c => c.Number === channelId)
+  if (!channelData || !Array.isArray(channelData.Programmes)) return []
+
+  return channelData.Programmes
 }

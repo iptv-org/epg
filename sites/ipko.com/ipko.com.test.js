@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/ipko.com/ipko.com.config.js --channels=sites/ipko.com/ipko.com_al.channels.xml --days=2 --output=.gh-pages/guides/al/ipko.com.epg.xml
+// npx epg-grabber --config=sites/ipko.com/ipko.com.config.js --channels=sites/ipko.com/ipko.com_al.channels.xml --days=2 --output=guide.xml
 
 const { parser, url } = require('./ipko.com.config.js')
 const dayjs = require('dayjs')
@@ -10,7 +10,7 @@ dayjs.extend(utc)
 const date = dayjs.utc('2021-10-24', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: '406',
-  xmltv_id: 'RTK1.rs'
+  xmltv_id: 'RTK1.xk'
 }
 const content = `{"element":{"1":[{"id":6367,"channel_id":406,"program_name":"Beautiful People 13","name_short":"","description":"Lin largohet nga Nju Meksiko për t'u vendosur në Nju Jork e për t'ia nisur nga fillimi: një punë të re, shtëpi të re dhe njohje të reja. Bashkë me të janë vajzat e saj, Sofia, një 16 vjeçare që shkëlqen në shkollë, dhe Kareni, 20 vjeçare, që do të bë","category":"Sezoni I","duration":150,"day":"Sun","left_distanc":165,"date":"00:55:00"}]}}`
 

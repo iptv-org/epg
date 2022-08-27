@@ -12,7 +12,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'mncvision.id',
-  url: `https://mncvision.id/schedule/table`,
+  url: 'https://mncvision.id/schedule/table',
   request: {
     method: 'POST',
     data: function ({ channel, date }) {
@@ -30,21 +30,28 @@ module.exports = {
       'Content-Type': 'multipart/form-data; boundary=X-EPG-BOUNDARY'
     }
   },
-  async parser({ content, date }) {
+  async parser({ content, date, headers, channel }) {
     const programs = []
-    const items = parseItems(content)
+    let items = parseItems(content)
+    if (!items.length) return programs
+
+    const pages = parsePages(content)
+    const cookies = headers && headers['set-cookie'] ? headers['set-cookie'].join(';') : ''
+    for (let url of pages) {
+      items = items.concat(parseItems(await loadNextPage(url, cookies)))
+    }
+
+    const langCookies = await loadLangCookies(channel)
+
     for (const item of items) {
-      const title = parseTitle(item)
       const start = parseStart(item, date)
       const duration = parseDuration(item)
       const stop = start.add(duration, 'm')
-      const description = await loadDescription(item)
-
       programs.push({
-        title,
-        description,
-        start: start.toJSON(),
-        stop: stop.toJSON()
+        title: parseTitle(item),
+        description: await loadDescription(item, langCookies),
+        start,
+        stop
       })
     }
 
@@ -72,12 +79,33 @@ module.exports = {
   }
 }
 
-async function loadDescription(item) {
+async function loadNextPage(url, cookies) {
+  return axios
+    .get(url, {
+      headers: {
+        Cookie: cookies
+      }
+    })
+    .then(r => r.data)
+    .catch(console.log)
+}
+
+async function loadLangCookies(channel) {
+  const lang = channel.lang === 'en' ? 'english' : 'indonesia'
+  const url = `https://www.mncvision.id/language_switcher/setlang/${lang}/`
+
+  return axios
+    .get(url)
+    .then(r => r.headers['set-cookie'].join(';'))
+    .catch(console.error)
+}
+
+async function loadDescription(item, cookies) {
   const $item = cheerio.load(item)
   const progUrl = $item('a').attr('href')
   if (!progUrl) return null
   const data = await axios
-    .get(progUrl)
+    .get(progUrl, { headers: { 'X-Requested-With': 'XMLHttpRequest', Cookie: cookies } })
     .then(r => r.data)
     .catch(console.log)
   if (!data) return null
@@ -116,4 +144,17 @@ function parseItems(content) {
   const $ = cheerio.load(content)
 
   return $('tr[valign="top"]').toArray()
+}
+
+function parsePages(content) {
+  const $ = cheerio.load(content)
+  const links = $('#schedule > div.schedule_search_result_container > div.box.well > a').toArray()
+
+  const pages = {}
+  for (let link of links) {
+    const url = $(link).attr('href')
+    pages[url] = true
+  }
+
+  return Object.keys(pages)
 }
