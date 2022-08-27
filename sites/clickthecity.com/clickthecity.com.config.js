@@ -21,7 +21,7 @@ module.exports = {
     },
     data({ date }) {
       const params = new URLSearchParams()
-      params.append('optDate', dayjs().tz('Asia/Manila').format('YYYY-MM-DD'))
+      params.append('optDate', dayjs(date).tz('Asia/Manila').format('YYYY-MM-DD'))
       params.append('optTime', '00:00:00')
 
       return params
