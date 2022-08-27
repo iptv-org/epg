@@ -29,15 +29,15 @@ it('can parse response', () => {
   })
 
   expect(results[0]).toMatchObject({
-    start: '2022-08-26T22:50:00.000Z',
-    stop: '2022-08-27T01:20:00.000Z',
+    start: '2022-08-26T19:50:00.000Z',
+    stop: '2022-08-26T22:20:00.000Z',
     title: 'YABANCI SİNEMA "KİMLİKSİZ"',
     description: `KİMLİĞİNİ KANITLAMAK İÇİN MACERALI BİR YOLCULUĞA ÇIKAR.`
   })
 
   expect(results[11]).toMatchObject({
-    start: '2022-08-27T23:30:00.000Z',
-    stop: '2022-08-28T00:45:00.000Z',
+    start: '2022-08-27T20:30:00.000Z',
+    stop: '2022-08-27T21:45:00.000Z',
     title: 'PELİN ÇİFT İLE GÜNDEM ÖTESİ',
     description: `ULUYOR. İLGİ ÇEKİCİ KONULARI VE UZMAN KONUKLARIYLA BİLDİĞİNİZDEN FAZLASINI EKRANA TAŞIYOR.`
   })
