@@ -1,3 +1,4 @@
+const _ = require('lodash')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
@@ -13,28 +14,28 @@ module.exports = {
     }/${date.format('YYYY-MM-DD')}/0`
   },
   parser: function ({ content, channel }) {
-    const programs = []
+    let programs = []
     const items = parseItems(content, channel)
     items.forEach(item => {
+      const start = parseStart(item)
+      const stop = start.add(item.BroadcastDuration, 's')
       programs.push({
         title: item.ProgramName,
         description: item.LongDescription,
         category: parseCategory(item),
-        start: parseStart(item).toJSON(),
-        stop: parseStop(item).toJSON()
+        start,
+        stop
       })
     })
+
+    programs = _.sortBy(programs, 'start')
 
     return programs
   }
 }
 
 function parseStart(item) {
-  return dayjs.tz(item.BroadcastStart, 'Europe/Istanbul')
-}
-
-function parseStop(item) {
-  return dayjs.tz(item.BroadcastEnd, 'Europe/Istanbul')
+  return dayjs.unix(item.BroadcastTimeStamp, 'Europe/Istanbul')
 }
 
 function parseCategory(item) {
