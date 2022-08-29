@@ -1,5 +1,4 @@
 const dayjs = require('dayjs')
-const axios = require('axios')
 const cheerio = require('cheerio')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -38,38 +37,6 @@ module.exports = {
     })
 
     return programs
-  },
-  async channels() {
-    let html = await axios
-      .get(`https://tv24.se/x/settings/addremove`)
-      .then(r => r.data)
-      .catch(console.log)
-    let $ = cheerio.load(html)
-    const nums = $('li')
-      .toArray()
-      .map(item => $(item).data('channel'))
-    html = await axios
-      .get(`https://tv24.se`, {
-        headers: {
-          Cookie: `selectedChannels=${nums.join(',')}`
-        }
-      })
-      .then(r => r.data)
-      .catch(console.log)
-    $ = cheerio.load(html)
-    const items = $('li.c').toArray()
-
-    return items.map(item => {
-      const name = $(item).find('h3').text().trim()
-      const link = $(item).find('.channel').attr('href')
-      const [_, site_id] = link.match(/\/kanal\/(.*)/) || [null, null]
-
-      return {
-        lang: 'sv',
-        site_id,
-        name
-      }
-    })
   }
 }
 
