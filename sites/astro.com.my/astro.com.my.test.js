@@ -1,3 +1,5 @@
+// npx epg-grabber --config=sites/astro.com.my/astro.com.my.config.js --channels=sites/astro.com.my/astro.com.my_my.channels.xml --output=guide.xml --days=2
+
 const { parser, url } = require('./astro.com.my.config.js')
 const fs = require('fs')
 const path = require('path')
