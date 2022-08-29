@@ -4,15 +4,10 @@ const utc = require('dayjs/plugin/utc')
 dayjs.extend(utc)
 module.exports = {
   site: 'astro.com.my',
-  request: {
-    cache: {
-      ttl: 6 * 60 * 60 * 1000 // 6h
-    }
-  },
   url: function ({ channel }) {
     return `https://contenthub-api.eco.astro.com.my/channel/${channel.site_id}.json`
   },
-  parser: function ({ content, date, cached }) {
+  parser: function ({ content, date }) {
     const programs = []
     const items = parseItems(content, date)
     items.forEach(item => {
