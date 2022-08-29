@@ -7,25 +7,32 @@ module.exports = {
   url: function ({ channel }) {
     return `https://contenthub-api.eco.astro.com.my/channel/${channel.site_id}.json`
   },
-  parser: function ({ content }) {
+  parser: function ({ content, date }) {
     const programs = []
+    const items = parseItems(content, date)
+    items.forEach(item => {
+      const start = dayjs.utc(item.datetimeInUtc)
+      const duration = parseDuration(item.duration)
+      const stop = start.add(duration, 's')
+      programs.push({
+        title: item.title,
+        start: start,
+        stop: stop
+      })
+    })
+
+    return programs
+  }
+}
+
+function parseItems(content, date) {
+  try {
     const data = JSON.parse(content)
     const schedules = data.response.schedule
 
-    for(let items of Object.values(schedules)){
-        items.forEach(item => {
-            const start = dayjs.utc(item.datetimeInUtc)
-            const duration = parseDuration(item.duration)
-            const stop = start.add(duration, 's')
-            programs.push({
-                title: item.title,
-                start: start,
-                stop: stop
-            })
-        })
-
-    }
-    return programs
+    return schedules[date.format('YYYY-MM-DD')] || []
+  } catch (e) {
+    return []
   }
 }
 
