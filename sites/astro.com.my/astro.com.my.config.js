@@ -2,36 +2,29 @@ const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 
 dayjs.extend(utc)
-
 module.exports = {
   site: 'astro.com.my',
-  url: function ({ date, channel }) {
-    return `http://ams-api.astro.com.my/ams/v3/getEvents?periodStart=${date.format(
-      'YYYY-MM-DD'
-    )}:00:00:00&periodEnd=${date.format('YYYY-MM-DD')}:23:59:59&channelId=${channel.site_id}`
+  url: function ({ channel }) {
+    return `https://contenthub-api.eco.astro.com.my/channel/${channel.site_id}.json`
   },
   parser: function ({ content }) {
     const programs = []
     const data = JSON.parse(content)
-    const items = data.getevent
-    if (!items.length) return programs
+    const schedules = data.response.schedule
 
-    items.forEach(item => {
-      if (item.programmeTitle && item.displayDateTimeUtc && item.displayDuration) {
-        const start = dayjs.utc(item.displayDateTimeUtc)
-        const duration = parseDuration(item.displayDuration)
-        const stop = start.add(duration, 's')
-        programs.push({
-          title: item.programmeTitle,
-          description: item.shortSynopsis,
-          category: item.subGenre,
-          icon: item.epgEventImage,
-          start: start.toString(),
-          stop: stop.toString()
+    for(let items of Object.values(schedules)){
+        items.forEach(item => {
+            const start = dayjs.utc(item.datetimeInUtc)
+            const duration = parseDuration(item.duration)
+            const stop = start.add(duration, 's')
+            programs.push({
+                title: item.title,
+                start: start,
+                stop: stop
+            })
         })
-      }
-    })
 
+    }
     return programs
   }
 }
