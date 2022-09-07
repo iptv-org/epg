@@ -1,0 +1,231 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+
+<html lang="is">
+<head>
+	<link rel="icon" href="http://beta.sjonvarp.is/favicon.ico?v=2" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"> 
+<!--	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />  --> 
+	<title>sjonvarp.is - Sjónvarpsdagskráin</title>
+	<script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="bootstrap/dist/js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/detailshow.js"></script>	
+
+	 <script type="text/javascript">
+			$('#nav').affix({
+		      offset: {
+		        top: $('header').height()
+		      }
+		});	
+	</script> 
+
+   <script type="text/javascript">
+    function loadContent() { 
+	    var viewportWidth = $(window).width();
+		if (viewportWidth > 1400) {
+			$('#wrapper').load('content.php');
+		} else {
+			$('#wrapper').load('content.php?size=M');
+		}
+ 	}
+  </script>  
+	<style type="text/css" media="screen">@import "./css/screen.css";</style>
+	<style type="text/css" media="screen">@import "./css/konnun.css";</style>
+	<style type="text/css" media="screen">@import "./css/modalbox.css";</style>
+	<link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+	<link href="css/nano-bootstrap.css" rel="stylesheet">
+	<link href="css/people.css" rel="stylesheet">
+    <link rel="apple-touch-icon" href="/bootstrap/img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/bootstrap/img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/bootstrap/img/apple-touch-icon-114x114.png">
+</head>
+
+<body> 
+
+	<!-- header start-->
+	<header class="masthead min-width nano-header">
+		<div class="container"> 
+			<div class="headerrow">
+				<a href="index.php">
+					<img src="images/Sjonvarp-app-icon.png"></img>
+
+				</a>
+
+			</div>
+					</div>
+
+		<!-- navbar start -->
+		<div id="nav" class="min-width">
+			<!-- Fixed navbar -->
+			<div class="navbar navbar-default navbar-static"> <!-- fixed-top"> -->
+				<div class="container">
+					<!--   <div class="navbar-header"> -->
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.php">Sjónvarp.is</a> 
+					<!--     </div>  -->
+					<div id="navbar" class="navbar-collapse collapse">
+						<ul class="nav navbar-nav">
+
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Klukkan 23:00 <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li class="dropdown-header">Flýtileið</li><li><a href="index.php?Tm=19:2022-08-28" >Kvöldið</a></li><li><a href="index.php?Tm=23:2022-08-28" >Núna</a></li><li class="dropdown-header">Klukkan</li><li><a href="index.php?Tm=09:2022-08-28" >09:00 </a></li>
+<li><a href="index.php?Tm=10:2022-08-28" >10:00 </a></li>
+<li><a href="index.php?Tm=11:2022-08-28" >11:00 </a></li>
+<li><a href="index.php?Tm=12:2022-08-28" >12:00 </a></li>
+<li><a href="index.php?Tm=13:2022-08-28" >13:00 </a></li>
+<li><a href="index.php?Tm=14:2022-08-28" >14:00 </a></li>
+<li><a href="index.php?Tm=15:2022-08-28" >15:00 </a></li>
+<li><a href="index.php?Tm=16:2022-08-28" >16:00 </a></li>
+<li><a href="index.php?Tm=17:2022-08-28" >17:00 </a></li>
+<li><a href="index.php?Tm=18:2022-08-28" >18:00 </a></li>
+<li><a href="index.php?Tm=19:2022-08-28" >19:00 </a></li>
+<li><a href="index.php?Tm=20:2022-08-28" >20:00 </a></li>
+<li><a href="index.php?Tm=21:2022-08-28" >21:00 </a></li>
+<li><a href="index.php?Tm=22:2022-08-28" >22:00 </a></li>
+<li><a href="index.php?Tm=23:2022-08-28" ><b>23:00 </b></a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sunnudagur 28. ágúst <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+																		<li><a href="index.php?Tm=23:2022-08-27" title='Sjá dagskránna á laugardegi'>Laugardagur 27. ágúst</a></li>
+<li><a href="index.php?Tm=23:2022-08-28" title='Sjá dagskránna á sunnudegi'><b>Sunnudagur 28. ágúst</b></a></li>
+<li><a href="index.php?Tm=23:2022-08-29" title='Sjá dagskránna á mánudegi'>Mánudagur 29. ágúst</a></li>
+<li><a href="index.php?Tm=23:2022-08-30" title='Sjá dagskránna á þriðjudegi'>Þriðjudagur 30. ágúst</a></li>
+<li><a href="index.php?Tm=23:2022-08-31" title='Sjá dagskránna á miðvikudegi'>Miðvikudagur 31. ágúst</a></li>
+<li><a href="index.php?Tm=23:2022-09-01" title='Sjá dagskránna á fimmtudegi'>Fimmtudagur 1. september</a></li>
+<li><a href="index.php?Tm=23:2022-09-02" title='Sjá dagskránna á föstudegi'>Föstudagur 2. september</a></li>
+<li><a href="index.php?Tm=23:2022-09-03" title='Sjá dagskránna á laugardegi'>Laugardagur 3. september</a></li>
+<li><a  href="index.php?Tm=23:2022-09-04" title='Sjá dagskránna á sunnudegi'>Sunnudagur 4. september</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Stöðvar <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="index.php">Allar stöðvar</a></li>											
+									<li><a href="index.php?type=SP">Íþróttir</a></li>
+									<li><a href="index.php?type=MV">Kvikmyndir</a></li>
+									<li><a href="index.php?type=CH">Barnastöðvar</a></li>
+									<li><a href="index.php?type=NW">Fréttir</a></li>
+									<li role="separator" class="divider"></li>
+									<li><a href="index.php?grp=SCA">Norrænar</a></li>
+									<li><a href="index.php?grp=EUR">Evrópa</a></li>
+								</ul>
+							</li>   
+			<!--				<li><a href="index.php?Tm=?&amp;p=livesports">Beinar útsendingar</a></li>	
+							<li><a href="index.php?Tm=?&amp;p=people">Afmæli í dag</a></li>	  -->
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Heitt í dag <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									
+									<li><a href="index.php?Tm=?&amp;p=livesports">Beinar útsendingar</a></li>		
+									<li><a href="index.php?Tm=?&amp;p=trending">Vinsælt í dag</a></li>		
+									<li role="separator" class="divider"></li>		
+									<li><a href="index.php?Tm=?&amp;p=people">Afmælisbörn dagsins</a></li>		
+								</ul>
+							</li> 						
+							
+						</ul>
+						<div class="navbar-right">
+							<form class="navbar-form" role="search" style="float: left; overflow: hidden;">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Leita" name='s'>
+								</div>
+								<button type="submit" class="btn btn-default">
+									<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+								</button>
+							</form> 
+
+						</div>
+					</div><!--/.nav-collapse -->
+				</div>
+			</div>
+		</div>
+		<!-- navbar end -->
+	</header>  
+	<!-- header end-->
+
+	<!-- ad small banner -->
+	<!-- <img src="images/ads/audur.png"/> -->
+
+	<!-- content start -->
+	<div class="container nano-container">
+	<!-- <img src="images/ads/audur.png" style="margin-left: 27px;margin-top: 20px;"> -->
+		<div class="listing">
+			<ul class="grid">
+				<li class='timeline-row'>
+	<a class='timeline-arrow' href="index.php?Tm=?&amp;p=idag&amp;c=RUV&amp;y=2022&amp;m=08&amp;d=28&amp;a=-1" style='width: 38px'>
+<!--	<a class='timeline-arrow' href="index.php?Tm=?&amp;p=idag&amp;c=RUV&amp;y=2022&amp;m=08&amp;d=28&amp;a=-1" onMouseOver="changeImage('on', 'img10','Aftur um eina klukkustund', '10', 2); return true;" onMouseOut="changeImage('off', 'img10', '', '10', 2); return true;" style='width: 38px'>	-->
+		<img name='img10' src='images/toptimas/toptimas_r4_c02.gif' vertical-align='middle' width='20' height='18' border='0' />
+	</a>
+<!--	<a class='timeline-arrow' href="index.php?Tm=?&amp;p=idag&amp;c=RUV&amp;y=2022&amp;m=08&amp;d=28&amp;a=+1" onMouseOver="changeImage('on', 'img11','Áfram um eina klukkustund', '11', 2); return true;" onMouseOut="changeImage('off', 'img11', '', '11', 2); return true;" style='width: 38px'> -->
+	<a class='timeline-arrow' href="index.php?Tm=?&amp;p=idag&amp;c=RUV&amp;y=2022&amp;m=08&amp;d=28&amp;a=+1" style='width: 38px'>	
+		<img name='img11' src='images/toptimas/toptimas_r4_c03.gif' align='middle' width='20' height='18' border='0'/>
+	</a>
+<span class='day-listing-control' style='width: 75%'>Sunnudagur 28. ágúst 2022</span>	
+</li>
+
+<div class='day-channels'><li class = 'day-channels-channel-active listing-row' id='RUV'><a class="channel" href="index.php?Tm=?&amp;p=idag&amp;c=RUV&amp;y=2022&amp;m=08&amp;d=28" title="Skoða dagskránna á RÚV í dag" style='width: 15%'><img src='images/logos/RUV.jpg' /></a></li><li class = 'day-channels-channel listing-row' id='S1'><a class="channel" href="index.php?Tm=?&amp;p=idag&amp;c=S1&amp;y=2022&amp;m=08&amp;d=28" title="Skoða dagskránna á Sjónvarp Símans í dag" style='width: 15%'><img src='images/logos/gray/SIMINN.jpg' /></a></li><li class = 'day-channels-channel listing-row' id='ST2'><a class="channel" href="index.php?Tm=?&amp;p=idag&amp;c=ST2&amp;y=2022&amp;m=08&amp;d=28" title="Skoða dagskránna á Stöð 2 í dag" style='width: 15%'><img src='images/logos/gray/st2.jpg' /></a></li><li class = 'day-channels-channel listing-row' id='STOD3'><a class="channel" href="index.php?Tm=?&amp;p=idag&amp;c=STOD3&amp;y=2022&amp;m=08&amp;d=28" title="Skoða dagskránna á Stöð 2 Fjölskylda í dag" style='width: 15%'><img src='images/logos/gray/stod2_fjolskylda_2020.jpg' /></a></li><li class = 'day-channels-channel listing-row' id='BIO'><a class="channel" href="index.php?Tm=?&amp;p=idag&amp;c=BIO&amp;y=2022&amp;m=08&amp;d=28" title="Skoða dagskránna á Stöð 2 Bíó í dag" style='width: 15%'><img src='images/logos/gray/stod2_bio_2020.jpg' /></a></li><li class = 'day-channels-channel listing-row' id='RUVI'><a class="channel" href="index.php?Tm=?&amp;p=idag&amp;c=RUVI&amp;y=2022&amp;m=08&amp;d=28" title="Skoða dagskránna á RÚV Íþróttir í dag" style='width: 15%'><img src='images/logos/gray/RUVI.jpg' /></a></li><li class = 'day-channels-channel listing-row' id='S1SPORT'><a class="channel" href="index.php?Tm=?&amp;p=idag&amp;c=S1SPORT&amp;y=2022&amp;m=08&amp;d=28" title="Skoða dagskránna á Síminn Sport í dag" style='width: 15%'><img src='images/logos/gray/SIMINNSPORT.jpg' /></a></li><li class = 'day-channels-channel listing-row' id='S1SPORT2'><a class="channel" href="index.php?Tm=?&amp;p=idag&amp;c=S1SPORT2&amp;y=2022&amp;m=08&amp;d=28" title="Skoða dagskránna á Síminn Sport 2 í dag" style='width: 15%'><img src='images/logos/gray/SIMINNSPORT2.jpg' /></a></li><li class = 'day-channels-channel listing-row' id='SYN'><a class="channel" href="index.php?Tm=?&amp;p=idag&amp;c=SYN&amp;y=2022&amp;m=08&amp;d=28" title="Skoða dagskránna á Stöð 2 Sport í dag" style='width: 15%'><img src='images/logos/gray/stod2_sport_2020.jpg' /></a></li><li class='timeline-row'>
+	<a class='timeline-arrow' href="index.php?Tm=?&amp;p=idag&amp;c=RUV&amp;y=2022&amp;m=08&amp;d=28&amp;a=-1" style='width: 38px'>
+<!--	<a class='timeline-arrow' href="index.php?Tm=?&amp;p=idag&amp;c=RUV&amp;y=2022&amp;m=08&amp;d=28&amp;a=-1" onMouseOver="changeImage('on', 'img10','Aftur um eina klukkustund', '10', 2); return true;" onMouseOut="changeImage('off', 'img10', '', '10', 2); return true;" style='width: 38px'>	-->
+		<img name='img10' src='images/toptimas/toptimas_r4_c02.gif' vertical-align='middle' width='20' height='18' border='0' />
+	</a>
+<!--	<a class='timeline-arrow' href="index.php?Tm=?&amp;p=idag&amp;c=RUV&amp;y=2022&amp;m=08&amp;d=28&amp;a=+1" onMouseOver="changeImage('on', 'img11','Áfram um eina klukkustund', '11', 2); return true;" onMouseOut="changeImage('off', 'img11', '', '11', 2); return true;" style='width: 38px'> -->
+	<a class='timeline-arrow' href="index.php?Tm=?&amp;p=idag&amp;c=RUV&amp;y=2022&amp;m=08&amp;d=28&amp;a=+1" style='width: 38px'>	
+		<img name='img11' src='images/toptimas/toptimas_r4_c03.gif' align='middle' width='20' height='18' border='0'/>
+	</a>
+	
+</li>
+
+<li class = 'day-channels-channel listing-row' id='SKJARSPORT'><a class="channel" href="index.php?Tm=?&amp;p=idag&amp;c=SKJARSPORT&amp;y=2022&amp;m=08&amp;d=28" title="Skoða dagskránna á Stöð 2 Sport 2 í dag" style='width: 15%'><img src='images/logos/gray/stod2_sport2_2020.jpg' /></a></li><li class = 'day-channels-channel listing-row' id='S2SPORT3'><a class="channel" href="index.php?Tm=?&amp;p=idag&amp;c=S2SPORT3&amp;y=2022&amp;m=08&amp;d=28" title="Skoða dagskránna á Stöð 2 Sport 3 í dag" style='width: 15%'><img src='images/logos/gray/stod2_sport3_2020.jpg' /></a></li><li class = 'day-channels-channel listing-row' id='S2SPORT4'><a class="channel" href="index.php?Tm=?&amp;p=idag&amp;c=S2SPORT4&amp;y=2022&amp;m=08&amp;d=28" title="Skoða dagskránna á Stöð 2 Sport 4 í dag" style='width: 15%'><img src='images/logos/gray/stod2_sport4_2020.jpg' /></a></li><li class = 'day-channels-channel listing-row' id='S2ESPORT'><a class="channel" href="index.php?Tm=?&amp;p=idag&amp;c=S2ESPORT&amp;y=2022&amp;m=08&amp;d=28" title="Skoða dagskránna á Stöð 2 E Sport í dag" style='width: 15%'><img src='images/logos/gray/stod2_esport_2020.jpg' /></a></li><li class = 'day-channels-channel listing-row' id='GOLF'><a class="channel" href="index.php?Tm=?&amp;p=idag&amp;c=GOLF&amp;y=2022&amp;m=08&amp;d=28" title="Skoða dagskránna á Stöð 2 Golf í dag" style='width: 15%'><img src='images/logos/gray/stod2_golf_2020.jpg' /></a></li><li class = 'day-channels-channel listing-row' id='HRING'><a class="channel" href="index.php?Tm=?&amp;p=idag&amp;c=HRING&amp;y=2022&amp;m=08&amp;d=28" title="Skoða dagskránna á Hringbraut í dag" style='width: 15%'><img src='images/logos/gray/hringbraut.jpg' /></a></li><li class = 'day-channels-channel listing-row' id='N4'><a class="channel" href="index.php?Tm=?&amp;p=idag&amp;c=N4&amp;y=2022&amp;m=08&amp;d=28" title="Skoða dagskránna á N4 í dag" style='width: 15%'><img src='images/logos/gray/n4_2020.jpg' /></a></li><li class = 'day-channels-channel listing-row' id='OMEG'><a class="channel" href="index.php?Tm=?&amp;p=idag&amp;c=OMEG&amp;y=2022&amp;m=08&amp;d=28" title="Skoða dagskránna á Omega í dag" style='width: 15%'><img src='images/logos/gray/omega.png' /></a></li></div><div class='day-listing'><div class='day-listing-channel'><img src='images/logos/RUV.jpg'><span class='day-listing-channel-name'>RÚV</span></div><div><span class='day-listing-time'>07:15</span><span class='day-listing-title'>KrakkaRÚV</span><div class='day-listing-description'></div></div><div><span class='day-listing-time'>07:16</span><span class='day-listing-title'>Tölukubbar</span><span class='day-listing-originaltitle'>(Numberblocks)</span><div class='day-listing-description'>Lærið um tölustafina með Tölukubbunum! e.</div></div><div><span class='day-listing-time'>07:21</span><span class='day-listing-title'>Kúlugúbbarnir</span><span class='day-listing-originaltitle'>(Bubble Guppies III)</span><div class='day-listing-description'>Krúttlegir teiknimyndaþættir um litla hafbúa sem eru saman í bekk og elska að syngja og dansa. Kennarinn þeirra er hress gullfiskur sem kennir þeim ýmislegt um lífið og tilveruna.</div></div><div><span class='day-listing-time'>07:45</span><span class='day-listing-title'>Mói</span><span class='day-listing-originaltitle'>(Mouk)</span><div class='day-listing-description'>Fallegir þættir um litla björninn Móa sem ferðast um allan heiminn á hjólinu sínu.</div></div><div><span class='day-listing-time'>07:56</span><span class='day-listing-title'>Elías</span><span class='day-listing-originaltitle'>(Den lille redningsskøyta Elias)</span><div class='day-listing-description'>Elías er ungur og áhugasamur björgunarbátur. Hann er ósvífinn, fjörugur og mikils metinn í heimabæ sínum. Vinir Elíasar skipta honum öllu máli og leggur hann í hvaða ævintýri sem er til þess að bjarga vinum sínum úr ógöngum.</div></div><div><span class='day-listing-time'>08:07</span><span class='day-listing-title'>Rán og Sævar</span><span class='day-listing-originaltitle'>(Pirata & Capitano)</span><div class='day-listing-description'>Fjörugir þættir um sjóræningjastelpuna Rán og Sævar sem flýgur sinni eigin sjóflugvél.</div></div><div><span class='day-listing-time'>08:18</span><span class='day-listing-title'>Kalli og Lóa</span><span class='day-listing-originaltitle'>(Charlie & Lola III)</span><div class='day-listing-description'>Kalli og Lóa eru hress systkini sem kunna svo sannarlega að bralla ýmislegt. e.</div></div><div><span class='day-listing-time'>08:30</span><span class='day-listing-title'>Hæ Sámur</span><span class='day-listing-originaltitle'>(Hey Duggee)</span><div class='day-listing-description'>Vinalegi hundurinn Sámur hvetur börn til þess að kanna umhverfi sitt og takast á við verkefni í sameiningu. e.</div></div><div><span class='day-listing-time'>08:37</span><span class='day-listing-title'>Sjóræningjarnir í næsta húsi</span><span class='day-listing-originaltitle'>(The Pirates Next Door)</span><div class='day-listing-description'>Hressir teiknimyndaþættir um ævintýri sjóræningjanna í Daufhöfn og Matthildi vinkonu þeirra. Byggðir á samnefndum bókum í þýðingu Braga Valdimars Skúlasonar.</div></div><div><span class='day-listing-time'>08:48</span><span class='day-listing-title'>Eðlukrúttin</span><span class='day-listing-originaltitle'>(Dinopaws)</span><div class='day-listing-description'>Ólíku eðlukrúttin Bubbi, Gunna og Tobbi eru fjörugir og skemmtilegir vinir sem búa í ævintýraheimi þar sem ekkert er ómögulegt. e.</div></div><div><span class='day-listing-time'>08:59</span><span class='day-listing-title'>Múmínálfarnir</span><span class='day-listing-originaltitle'>(Moominvalley II)</span><div class='day-listing-description'>Ástsælu Múmínálfarnir sem allir þekkja úr smiðju Tove Janson mæta aftur og lenda í fleiri skemmtilegum ævintýrum. e.</div></div><div><span class='day-listing-time'>09:21</span><span class='day-listing-title'>Hvolpasveitin</span><span class='day-listing-originaltitle'>(Paw Patrol VII)</span><div class='day-listing-description'>Hvolparnir síkátu halda áfram ævintýrum sínum og hafa aldrei verið hressari. e.</div></div><div><span class='day-listing-time'>09:43</span><span class='day-listing-title'>Rán - Rún</span><span class='day-listing-originaltitle'>(Tish - Tash)</span><div class='day-listing-description'>Rán er ung og hress stelpa sem styttir sér stundir með ímynduðu vinkonu sinni. En hún Rún virðist raunverulegri en flestir. e.</div></div><div><span class='day-listing-time'>09:48</span><span class='day-listing-title'>Stuðboltarnir</span><span class='day-listing-originaltitle'>(Go Jetters III)</span><div class='day-listing-description'>Stuðboltarnir í þotuakademíunni, Súla, Kiddi, Lars og Fúsi, fara á heimshornaflakk til að bjarga þekktum kennileitum frá Galla-Grími. e.</div></div><div><span class='day-listing-time'>10:00</span><span class='day-listing-title'>Með okkar augum</span><div class='day-listing-description'>Tólfta þáttaröð þessara margverðlaunuðu þátta sem vakið hafa athygli fyrir nýstárleg og frumleg efnistök. Fólk með þroskahömlun vinnur þættina með fagfólki í sjónvarpsgerð og miðlar þannig fjölbreytileika íslensks samfélags. Umsjón: Andri Freyr Hilmarsson, Ásgeir Tómas Arnarson, Elva Björg Gunnarsdóttir, Katrín Guðrún Tryggvadóttir, Magnús Orri Arnarson og Steinunn Ása Þorvaldsdóttir. Dagskrárgerð: Elín Sveinsdóttir. e.</div></div><div><span class='day-listing-time'>10:30</span><span class='day-listing-title'>Tæknin allt um kring</span><span class='day-listing-originaltitle'>(Tann valdsmikla tøknin)</span><div class='day-listing-description'>Færeysk heimildarmynd um nútímatækni. Tölvur, farsímar og spjaldtölvur hafa umbreytt lífi okkar og tilveru og haft áhrif á hvernig við verjum tíma okkar saman. Uppeldi, skólastarf og atvinnulíf tekur sífelldum breytingum og margir vita ekki hvort þeir eiga að lofsama þessa nýju þróun eða hræðast hana. e.</div></div><div><span class='day-listing-time'>11:15</span><span class='day-listing-title'>Keramik af kærleika</span><span class='day-listing-originaltitle'>(Dreja - en kärlekshistoria)</span><div class='day-listing-description'>Sænskir þættir um keramikgerð þar sem Ika Johannesson ræðir við fólk sem hefur lagt fyrir sig keramiklist og kynnist ýmsum aðferðum við að búa til muni úr leir. e.</div></div><div><span class='day-listing-time'>11:45</span><span class='day-listing-title'>Óskalög Norðmanna</span><span class='day-listing-originaltitle'>(Önskekonsert med Kork)</span><div class='day-listing-description'>Útitónleikar með hljómsveit norska ríkissjónvarpsins sem leikur þekkta kvikmyndatónlist, tónlist úr söngleikjum og klassískar perlur. e.</div></div><div><span class='day-listing-time'>12:55</span><span class='day-listing-title'>Fiskilíf</span><span class='day-listing-originaltitle'>(Fiskeliv)</span><div class='day-listing-description'>Sænskir þættir um fiskveiðar. Þáttastjórnendurnir Emilie Björkman og Martin Falklind ferðast um Svíþjóð, hitta fiskveiðiáhugamenn, stunda veiðar og gefa góð ráð. e.</div></div><div><span class='day-listing-time'>13:25</span><span class='day-listing-title'>Leyndardómar húðarinnar</span><span class='day-listing-originaltitle'>(Secrets of Skin)</span><div class='day-listing-description'>Náttúrulífsþættir frá BBC um húðina og öll fjölbreyttu form hennar. Þróun þessa stóra líffæris er rannsökuð. Húð hefur þróast með ýmsum hætti og gegnir fjölbreyttum hlutverkum. Þessi fjölbreytileiki hefur gert hryggdýrum kleift að dafna á öllum svæðum jarðar. Meðal annars er skoðað hvernig húð og skinn hefur þróast og orðið að vopni í formi beittra kvista, brynja og eiturs. e.</div></div><div><span class='day-listing-time'>13:55</span><span class='day-listing-title'>Tónatal</span><span class='day-listing-originaltitle'>(Valgeir Guðjónsson)</span><div class='day-listing-description'>Matthías Már Magnússon tekur á móti tónlistarfólki sem veitir innsýn í líf sitt og flytur nokkur af vinsælustu lögunum sínum í bland við nýjar ábreiður. Í þáttunum fá áhorfendur að sjá nýjar hliðar á mörgu af áhugaverðasta tónlistarfólki landsins. e.</div></div><div><span class='day-listing-time'>14:55</span><span class='day-listing-title'>Fornar borgir: Undir yfirborðinu - Kaíró</span><span class='day-listing-originaltitle'>(Ancient Invisible Cites)</span><div class='day-listing-description'>Heimildarþáttaröð frá BBC í þremur þáttum þar sem Michael Scott rannsakar leyndardóma þriggja mögnuðustu stórborga fornaldar; Kaíró, Aþenu og Istanbúl. Með aðstoð þrívíddarskanna skoðar hann merkustu mannvirki og byggingar borganna frá áður óséðum sjónarhornum. e.</div></div><div><span class='day-listing-time'>15:45</span><span class='day-listing-title'>Popp- og rokksaga Íslands</span><span class='day-listing-originaltitle'>(Ekkert vex af engu)</span><div class='day-listing-description'>Einstök heimildarþáttaröð þar sem farið yfir sögu og þróun rokk- og popptónlistar á Íslandi. Í þáttunum hittum við söngvara, lagahöfunda, upptökustjóra og aðra sem hafa sett svip sinn á blómlegt tónlistarlíf Íslendinga í gegnum tíðina. Dagskrárgerð: Örn Marinó Arnarson og Þorkell Harðarson í samvinnu við Dr. Gunna. e.</div></div><div><span class='day-listing-time'>16:45</span><span class='day-listing-title'>Söngur Kanemu</span><div class='day-listing-description'>Íslensk heimildarmynd um leit Ernu Kanemu að söngvum frá Sambíu, heimalandi föður síns. Hún ferðast til Sambíu í von um að komast í snertingu við uppruna sinn og öðlast skilning á tónlistarhefð forfeðra sinna. Dagskrárgerð og framleiðsla: Anna Þóra Steinþórsdóttir. e.</div></div><div><span class='day-listing-time'>18:00</span><span class='day-listing-title'>KrakkaRÚV</span><div class='day-listing-description'></div></div><div><span class='day-listing-time'>18:01</span><span class='day-listing-title'>Holly Hobbie</span><span class='day-listing-originaltitle'>(Holly Hobbie)</span><div class='day-listing-description'>Holly er 13 ára stelpa sem syngur og semur sín eigin lög. Hún er umkringd vinum og fjölskyldu en dreymir um að bjarga heiminum. Þó hún þurfi að byrja í garðinum sínum. e.</div></div><div><span class='day-listing-time'>18:25</span><span class='day-listing-title'>Basl er búskapur</span><span class='day-listing-originaltitle'>(Bonderøven)</span><div class='day-listing-description'>Danskir þættir um ungt par sem vill einfalda líf sitt og hefur búskap. e.</div></div><div><span class='day-listing-time'>19:00</span><span class='day-listing-title'>Fréttir</span><div class='day-listing-description'>Helstu fréttir dagsins af innlendum og erlendum vettvangi. Alla daga, árið um kring.</div></div><div><span class='day-listing-time'>19:25</span><span class='day-listing-title'>Íþróttir</span><div class='day-listing-description'>Íþróttafréttir.</div></div><div><span class='day-listing-time'>19:35</span><span class='day-listing-title'>Veður</span><div class='day-listing-description'>Veðurfréttir.</div></div><div><span class='day-listing-time'>19:45</span><span class='day-listing-title'>Akureyrarvaka 2022</span><div class='day-listing-description'>Samantekt frá Akureyrarvöku sem haldin er árlega síðustu helgina í ágúst í tilefni afmælis Akureyrarbæjar.</div></div><div><span class='day-listing-time'>20:10</span><span class='day-listing-title'>Náttúran mín</span><span class='day-listing-originaltitle'>(Dalatangi)</span><div class='day-listing-description'>Íslensk heimildarþáttaröð í fjórum þáttum. Þótt meirihluti landsmanna búi í þéttbýli býr sumt fólk á stöðum þar sem náttúran hefur meiri áhrif á líf þess en gengur og gerist. Í þessari þáttaröð greinir fólk frá ýmsum stöðum á landinu frá ástríðu sinni fyrir því, hvers vegna það kýs að búa utan þéttbýlis og hvað veldur því að það vill hvergi annars staðar búa. Dagskrárgerð: Magnús Atli Magnússon og Lára Ómarsdóttir.</div></div><div><span class='day-listing-time'>20:40</span><span class='day-listing-title'>Öldin hennar</span><div class='day-listing-description'>Heimildamynd í þremur hlutum sem framleidd var í tilefni af því þegar hundrað ár voru liðin frá því konur hlutu kosningarétt. Í þáttunum er stiklað á stóru um sögu íslenskra kvenna, baráttu þeirra fyrir samfélagslegu jafnrétti og varpar ljósi kvennapólitík í sínum víðasta skilningi. Leikstjórn: Hrafnhildur Gunnarsdóttir.</div></div><div><span class='day-listing-time'>21:45</span><span class='day-listing-title'>Þetta verður vont</span><span class='day-listing-originaltitle'>(This Is Going to Hurt)</span><div class='day-listing-description'>Dramatískir gamanþættir frá BBC. Lífið getur verið strembið fyrir unglækna á fæðingardeild á erilsömu sjúkrahúsi í London. Þeir reyna að samræma einkalífið og vinnuna þar sem stutt er milli hláturs og gráts. Aðalhlutverk: Ben Whishaw, Ambika Mod og Rory Fleck Byrne. Þættirnir eru ekki við hæfi barna yngri en 12 ára.</div></div><div><span class='day-listing-time'>22:30</span><span class='day-listing-title'>Yuli - Sagan af Carlos Acosta</span><span class='day-listing-originaltitle'>(Yuli: The Carlos Acosta Story)</span><div class='day-listing-description'>Sannsöguleg kvikmynd frá 2018 um ævi og feril kúbverska dansarans Carlos Acosta, sem var fyrsti svarti dansarinn til að dansa í mörgum af mikilvægustu hlutverkum ballettheimsins. Carlos ólst upp í Havana og var sendur í ballettskóla af föður sínum, gegn sínum eigin vilja. Leikstjóri: Icíar Bollaín. Aðalhlutverk: Carlos Acosta, Santiago Alfonso, Keyvin Martínez og Edilson Manuel Olbera Núñez. e.</div></div><div><span class='day-listing-time'>00:20</span><span class='day-listing-title'>Ísland: bíóland</span><span class='day-listing-originaltitle'>(Íslenska kvikmyndasumarið)</span><div class='day-listing-description'>Þáttaröð í tíu hlutum um íslenskar kvikmyndir allt frá fyrri hluta 20. aldar til samtímans. Í hverjum þætti er ákveðið tímabil tekið fyrir, fjallað um kvikmyndir þess tímabils og sýndir valdir hlutar úr þeim. Rætt er við á annað hundrað kvikmyndagerðarmenn, leikara og kvikmyndasérfræðinga um verkin og margvíslega fleti íslenskrar kvikmyndagerðar. Leikstjóri: Ásgrímur Sverrisson. e.</div></div><div><span class='day-listing-time'>01:20</span><span class='day-listing-title'>Förum á EM</span><div class='day-listing-description'>EM kvenna í fótbolta fer fram á Englandi í júlí og þar verður íslenska landsliðið - stelpurnar okkar. Í þáttunum hita hraðfréttadrengirnir Benedikt og Fannar upp fyrir mótið, hitta leikmenn landsliðsins og fá innsýn í líf þeirra innan og utan vallarins. e.</div></div><div><span class='day-listing-time'>01:50</span><span class='day-listing-title'>Spánn - Japan</span><span class='day-listing-originaltitle'>(HM U20 kvenna í fótbolta)</span><div class='day-listing-description'>Bein útsending frá úrslitaleik HM U20 kvenna í fótbolta.</div></div><div><span class='day-listing-time'>04:00</span><span class='day-listing-title'>Dagskrárlok</span><div class='day-listing-description'></div></div></div	
+			</ul>
+		</div>						
+	</div>								
+	<!-- content end -->
+
+	<!-- footer start -->
+	<div id="footer" class="min-width">
+		<p>
+			<a href="?p=um" title="Nánari upplýsingar um sjonvarp.is">Upplýsingar um sjonvarp.is</a>
+		</p>
+	</div>
+	<!-- footer end -->
+
+<!--			</div>
+		</div>
+	</div>  -->
+
+	<!-- counter start -->
+	<script type="text/javascript" src="js/script.js"></script>
+	<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-1465830-1";
+urchinTracker();
+</script>	<!-- counter end -->
+
+	<!-- facebook start -->
+	<div id="fb-root"></div>
+	<script>
+		(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+	<!-- facebook end -->
+	<script src='js/responsive-img.js' defer></script>
+</body>
+
+</html>

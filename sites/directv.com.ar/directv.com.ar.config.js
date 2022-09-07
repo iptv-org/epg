@@ -1,11 +1,13 @@
-process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0;
+process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
 const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
+const customParseFormat = require('dayjs/plugin/customParseFormat')
 
 dayjs.extend(utc)
 dayjs.extend(timezone)
+dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'directv.com.ar',

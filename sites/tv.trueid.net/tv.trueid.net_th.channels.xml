@@ -2,10 +2,10 @@
 <site site="tv.trueid.net">
   <channels>
     <channel lang="th" xmltv_id="Amarin34HD.th" site_id="amarintv-hd">Amarin 34 HD</channel>
-    <channel lang="th" xmltv_id="AnimalPlanetHDThailand.th" site_id="hybrid-animalplanet-hd">Animal Planet HD</channel>
+    <channel lang="th" xmltv_id="AnimalPlanetHDThailand.th" site_id="animalplanet-hd">Animal Planet HD</channel>
     <channel lang="th" xmltv_id="AsianFoodNetwork.sg" site_id="asian-food-channel">Asian Food Network</channel>
-    <channel lang="th" xmltv_id="AXNHDThailand.th" site_id="hybrid-axn-hd">AXN HD</channel>
-    <channel lang="th" xmltv_id="BBCEarthAsia.uk" site_id="hybrid-bbc-earth-hd">BBC Earth HD</channel>
+    <channel lang="th" xmltv_id="AXNHDThailand.th" site_id="axn-hd">AXN HD</channel>
+    <channel lang="th" xmltv_id="BBCEarthAsia.uk" site_id="bbc-earth-hd">BBC Earth HD</channel>
     <channel lang="th" xmltv_id="BBCLifestyleAsia.uk" site_id="bbc-life-style">BBC Lifestyle</channel>
     <channel lang="th" xmltv_id="BBCWorldNewsAsiaPacific.uk" site_id="bbc-world-news-hd">BBC World News HD</channel>
     <channel lang="th" xmltv_id="BBTVChannel7.th" site_id="ch7-hd">BBTV Channel 7</channel>
@@ -14,55 +14,63 @@
     <channel lang="th" xmltv_id="CartoonNetworkAsia.sg" site_id="hybrid-cartoon-network">Cartoon Network</channel>
     <channel lang="th" xmltv_id="CCTV4Asia.cn" site_id="cctv">CCTV</channel>
     <channel lang="th" xmltv_id="Channel3.th" site_id="ch3-hd">Channel 3 HD</channel>
+    <channel lang="th" xmltv_id="Channel8.th" site_id="ch8">Thai Channel 8</channel>
     <channel lang="th" xmltv_id="CNBCAsia.sg" site_id="cnbc">CNBC</channel>
     <channel lang="th" xmltv_id="CNNInternationalAsiaPacific.hk" site_id="cnn-hd">CNN HD</channel>
-    <channel lang="th" xmltv_id="DiscoveryAsiaThailand.th" site_id="hybrid-discoveryasia">Discovery Asia</channel>
-    <channel lang="th" xmltv_id="DiscoveryChannelThailand.th" site_id="hybrid-discoverychannel">Discovery Channel</channel>
-    <channel lang="th" xmltv_id="DreamWorksChannelAsia.us" site_id="hybrid-dreamworks-hd">DreamWorks TV HD</channel>
-    <channel lang="th" xmltv_id="FashionTVAsia.fr" site_id="hybrid-fashion-tv">FashionTV</channel>
-    <channel lang="th" xmltv_id="FoodNetworkAsia.sg" site_id="hybrid-food-network-hd">Food Network HD</channel>
+    <channel lang="th" xmltv_id="DiscoveryAsiaThailand.th" site_id="discoveryasia">Discovery Asia</channel>
+    <channel lang="th" xmltv_id="DiscoveryChannelThailand.th" site_id="discoverychannel">Discovery Channel</channel>
+    <channel lang="th" xmltv_id="DreamWorksChannelAsia.us" site_id="dreamworks-hd">DreamWorks TV HD</channel>
+    <channel lang="th" xmltv_id="FashionTVAsia.fr" site_id="fashion-tv">FashionTV</channel>
+    <channel lang="th" xmltv_id="FoodNetworkAsia.sg" site_id="food-network-hd">Food Network HD</channel>
     <channel lang="th" xmltv_id="GEM.sg" site_id="gem">Gem</channel>
     <channel lang="th" xmltv_id="GMM25.th" site_id="gmm25">GMM 25</channel>
     <channel lang="th" xmltv_id="History2Asia.us" site_id="hybrid-h2">History 2</channel>
-    <channel lang="th" xmltv_id="HistoryAsia.us" site_id="hybrid-history-channel-hd">History HD</channel>
+    <channel lang="th" xmltv_id="HistoryAsia.us" site_id="history-channel-hd">History HD</channel>
     <channel lang="th" xmltv_id="JKN18.th" site_id="jkn18">JKN 18</channel>
     <channel lang="th" xmltv_id="KBSWorld.kr" site_id="kbs-world-hd">KBS World</channel>
     <channel lang="th" xmltv_id="KMTV.kr" site_id="hybrid-kmtv-hd">KMTV HD</channel>
-    <channel lang="th" xmltv_id="LifetimeAsia.us" site_id="hybrid-life-time">Lifetime</channel>
+    <channel lang="th" xmltv_id="LifetimeAsia.us" site_id="life-time">Lifetime</channel>
     <channel lang="th" xmltv_id="LoveNature.ca" site_id="lovenature">Love Nature</channel>
     <channel lang="th" xmltv_id="MCOTHD.th" site_id="9mcot-hd">MCOT HD</channel>
     <channel lang="th" xmltv_id="Mono29.th" site_id="mono29">Mono 29</channel>
-    <channel lang="th" xmltv_id="MotorvisionTV.de" site_id="hybrid-motor-vision">Motorvision TV</channel>
+    <channel lang="th" xmltv_id="MotorvisionTV.de" site_id="motor-vision">Motorvision TV</channel>
     <channel lang="th" xmltv_id="NationTV.th" site_id="nationtv">Nation TV</channel>
-    <channel lang="th" xmltv_id="NBATV.us" site_id="nba-tv">NBA TV</channel>
+    <channel lang="th" xmltv_id="NBATV.us" site_id="hybrid-nba-tv">NBA TV</channel>
     <channel lang="th" xmltv_id="NBT2HD.th" site_id="nbt">NBT 2</channel>
     <channel lang="th" xmltv_id="NHKWorldPremium.jp" site_id="nhk-world-tv">NHK World</channel>
     <channel lang="th" xmltv_id="NickelodeonAsia.sg" site_id="nickelodeon">Nickelodeon</channel>
-    <channel lang="th" xmltv_id="NickJrAsia.sg" site_id="hybrid-nickjr-hd">Nick Jr HD</channel>
+    <channel lang="th" xmltv_id="NickJrAsia.sg" site_id="nickjr-hd">Nick Jr HD</channel>
     <channel lang="th" xmltv_id="One31.th" site_id="one-hd">One 31</channel>
-    <channel lang="th" xmltv_id="OutdoorChannelInternational.us" site_id="hybrid-outdoor-channel">Outdoor Channel</channel>
+    <channel lang="th" xmltv_id="OutdoorChannelInternational.us" site_id="outdoor-channel">Outdoor Channel</channel>
     <channel lang="th" xmltv_id="ParamountNetworkHDThailand.th" site_id="hybrid-paramount-hd">Paramount Network HD</channel>
     <channel lang="th" xmltv_id="PhoenixInfoNewsChannel.hk" site_id="phoenix-infonews">Phoenix InfoNews Channel</channel>
     <channel lang="th" xmltv_id="PPTVHD36.th" site_id="pptv-hd">PPTV HD 36</channel>
     <channel lang="th" xmltv_id="RamaChannel.th" site_id="hybrid-rama-channel">Rama Channel</channel>
-    <channel lang="th" xmltv_id="RockEntertainment.sg" site_id="hybrid-rtl-entertainment">Rock Entertainment</channel>
-    <channel lang="th" xmltv_id="RockExtreme.sg" site_id="hybrid-rtl-extreme">Rock Extreme</channel>
+    <channel lang="th" xmltv_id="RockEntertainment.sg" site_id="rtl-entertainment">Rock Entertainment</channel>
+    <channel lang="th" xmltv_id="RockExtreme.sg" site_id="rtl-extreme">Rock Extreme</channel>
     <channel lang="th" xmltv_id="SPOTV2.kr" site_id="spotv2-hd">SpoTV 2</channel>
-    <channel lang="th" xmltv_id="Channel8.th" site_id="ch8">Thai Channel 8</channel>
     <channel lang="th" xmltv_id="ThaiPBS3.th" site_id="thaipbs">Thai PBS 3</channel>
     <channel lang="th" xmltv_id="ThairathTV32.th" site_id="thairathtv-hd">Thairath TV 32</channel>
     <channel lang="th" xmltv_id="ThaiTV5HD1.th" site_id="ch5">Thai TV 5 HD1</channel>
-    <channel lang="th" xmltv_id="TLCSoutheastAsia.us" site_id="hybrid-tcl-hd">TLC HD</channel>
-    <channel lang="th" xmltv_id="TNN2.th" site_id="tnn-2">TNN 2</channel>
+    <channel lang="th" xmltv_id="TLCSoutheastAsia.us" site_id="tcl-hd">TLC HD</channel>
     <channel lang="th" xmltv_id="TNN16.th" site_id="hybrid-3-tnn16">TNN 16</channel>
+    <channel lang="th" xmltv_id="TNN2.th" site_id="tnn-2">TNN 2</channel>
     <channel lang="th" xmltv_id="True4U.th" site_id="true4u">True 4U</channel>
+    <channel lang="th" xmltv_id="TrueAsianMore.th" site_id="hybrid-true-asian-more">True Asian More</channel>
+    <channel lang="th" xmltv_id="TrueChineseMore.th" site_id="true-chinese-more-hd">True Chinese More</channel>
     <channel lang="th" xmltv_id="TrueExploreLife.th" site_id="true-explore-life">True Explore Life</channel>
     <channel lang="th" xmltv_id="TrueExploreSci.th" site_id="true-explore-3">True Explore Sci</channel>
     <channel lang="th" xmltv_id="TrueExploreWild.th" site_id="hybrid-true-explore-wild">True Explore Wild</channel>
     <channel lang="th" xmltv_id="TrueFilmHD.th" site_id="true-film-hd">True Film HD</channel>
     <channel lang="th" xmltv_id="TrueFilmHD2.th" site_id="true-film-hd-2">True Film HD 2</channel>
+    <channel lang="th" xmltv_id="TrueKoreanMore.th" site_id="true-korean-more-hd">True Korean More</channel>
     <channel lang="th" xmltv_id="TrueMovieHits.th" site_id="true-movie-hits">True Movie Hits</channel>
     <channel lang="th" xmltv_id="TruePlookpanya.th" site_id="hybrid-trueplookpanya">True Plookpanya</channel>
+    <channel lang="th" xmltv_id="TruePremierFootball1.th" site_id="truepremierfootballhd1">True Premier Football 1</channel>
+    <channel lang="th" xmltv_id="TruePremierFootball2.th" site_id="truepremierfootballhd2">True Premier Football 2</channel>
+    <channel lang="th" xmltv_id="TruePremierFootball3.th" site_id="truepremierfootballhd3">True Premier Football 3</channel>
+    <channel lang="th" xmltv_id="TruePremierFootball4.th" site_id="truepremierfootballhd4">True Premier Football 4</channel>
+    <channel lang="th" xmltv_id="TruePremierFootball5.th" site_id="truepremierfootballhd5">True Premier Football 5</channel>
     <channel lang="th" xmltv_id="TrueSelect.th" site_id="hybrid-true-select">True Select</channel>
     <channel lang="th" xmltv_id="TrueSeries.th" site_id="true-series">True Series</channel>
     <channel lang="th" xmltv_id="TrueShopping.th" site_id="hybrid-2-true-select-hd">True Shopping</channel>

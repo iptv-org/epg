@@ -1,0 +1,231 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+
+<html lang="is">
+<head>
+	<link rel="icon" href="http://beta.sjonvarp.is/favicon.ico?v=2" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"> 
+<!--	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />  --> 
+	<title>sjonvarp.is - Sjónvarpsdagskráin</title>
+	<script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="bootstrap/dist/js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/detailshow.js"></script>	
+
+	 <script type="text/javascript">
+			$('#nav').affix({
+		      offset: {
+		        top: $('header').height()
+		      }
+		});	
+	</script> 
+
+   <script type="text/javascript">
+    function loadContent() { 
+	    var viewportWidth = $(window).width();
+		if (viewportWidth > 1400) {
+			$('#wrapper').load('content.php');
+		} else {
+			$('#wrapper').load('content.php?size=M');
+		}
+ 	}
+  </script>  
+	<style type="text/css" media="screen">@import "./css/screen.css";</style>
+	<style type="text/css" media="screen">@import "./css/konnun.css";</style>
+	<style type="text/css" media="screen">@import "./css/modalbox.css";</style>
+	<link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+	<link href="css/nano-bootstrap.css" rel="stylesheet">
+	<link href="css/people.css" rel="stylesheet">
+    <link rel="apple-touch-icon" href="/bootstrap/img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/bootstrap/img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/bootstrap/img/apple-touch-icon-114x114.png">
+</head>
+
+<body> 
+
+	<!-- header start-->
+	<header class="masthead min-width nano-header">
+		<div class="container"> 
+			<div class="headerrow">
+				<a href="index.php">
+					<img src="images/Sjonvarp-app-icon.png"></img>
+
+				</a>
+
+			</div>
+					</div>
+
+		<!-- navbar start -->
+		<div id="nav" class="min-width">
+			<!-- Fixed navbar -->
+			<div class="navbar navbar-default navbar-static"> <!-- fixed-top"> -->
+				<div class="container">
+					<!--   <div class="navbar-header"> -->
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.php">Sjónvarp.is</a> 
+					<!--     </div>  -->
+					<div id="navbar" class="navbar-collapse collapse">
+						<ul class="nav navbar-nav">
+
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Klukkan 23:00 <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li class="dropdown-header">Flýtileið</li><li><a href="index.php?Tm=19:2022-08-28" >Kvöldið</a></li><li><a href="index.php?Tm=23:2022-08-28" >Núna</a></li><li class="dropdown-header">Klukkan</li><li><a href="index.php?Tm=09:2022-08-28" >09:00 </a></li>
+<li><a href="index.php?Tm=10:2022-08-28" >10:00 </a></li>
+<li><a href="index.php?Tm=11:2022-08-28" >11:00 </a></li>
+<li><a href="index.php?Tm=12:2022-08-28" >12:00 </a></li>
+<li><a href="index.php?Tm=13:2022-08-28" >13:00 </a></li>
+<li><a href="index.php?Tm=14:2022-08-28" >14:00 </a></li>
+<li><a href="index.php?Tm=15:2022-08-28" >15:00 </a></li>
+<li><a href="index.php?Tm=16:2022-08-28" >16:00 </a></li>
+<li><a href="index.php?Tm=17:2022-08-28" >17:00 </a></li>
+<li><a href="index.php?Tm=18:2022-08-28" >18:00 </a></li>
+<li><a href="index.php?Tm=19:2022-08-28" >19:00 </a></li>
+<li><a href="index.php?Tm=20:2022-08-28" >20:00 </a></li>
+<li><a href="index.php?Tm=21:2022-08-28" >21:00 </a></li>
+<li><a href="index.php?Tm=22:2022-08-28" >22:00 </a></li>
+<li><a href="index.php?Tm=23:2022-08-28" ><b>23:00 </b></a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sunnudagur 28. ágúst <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+																		<li><a href="index.php?Tm=23:2022-08-27" title='Sjá dagskránna á laugardegi'>Laugardagur 27. ágúst</a></li>
+<li><a href="index.php?Tm=23:2022-08-28" title='Sjá dagskránna á sunnudegi'><b>Sunnudagur 28. ágúst</b></a></li>
+<li><a href="index.php?Tm=23:2022-08-29" title='Sjá dagskránna á mánudegi'>Mánudagur 29. ágúst</a></li>
+<li><a href="index.php?Tm=23:2022-08-30" title='Sjá dagskránna á þriðjudegi'>Þriðjudagur 30. ágúst</a></li>
+<li><a href="index.php?Tm=23:2022-08-31" title='Sjá dagskránna á miðvikudegi'>Miðvikudagur 31. ágúst</a></li>
+<li><a href="index.php?Tm=23:2022-09-01" title='Sjá dagskránna á fimmtudegi'>Fimmtudagur 1. september</a></li>
+<li><a href="index.php?Tm=23:2022-09-02" title='Sjá dagskránna á föstudegi'>Föstudagur 2. september</a></li>
+<li><a href="index.php?Tm=23:2022-09-03" title='Sjá dagskránna á laugardegi'>Laugardagur 3. september</a></li>
+<li><a  href="index.php?Tm=23:2022-09-04" title='Sjá dagskránna á sunnudegi'>Sunnudagur 4. september</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Stöðvar <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="index.php">Allar stöðvar</a></li>											
+									<li><a href="index.php?type=SP">Íþróttir</a></li>
+									<li><a href="index.php?type=MV">Kvikmyndir</a></li>
+									<li><a href="index.php?type=CH">Barnastöðvar</a></li>
+									<li><a href="index.php?type=NW">Fréttir</a></li>
+									<li role="separator" class="divider"></li>
+									<li><a href="index.php?grp=SCA">Norrænar</a></li>
+									<li><a href="index.php?grp=EUR">Evrópa</a></li>
+								</ul>
+							</li>   
+			<!--				<li><a href="index.php?Tm=?&amp;p=livesports">Beinar útsendingar</a></li>	
+							<li><a href="index.php?Tm=?&amp;p=people">Afmæli í dag</a></li>	  -->
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Heitt í dag <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									
+									<li><a href="index.php?Tm=?&amp;p=livesports">Beinar útsendingar</a></li>		
+									<li><a href="index.php?Tm=?&amp;p=trending">Vinsælt í dag</a></li>		
+									<li role="separator" class="divider"></li>		
+									<li><a href="index.php?Tm=?&amp;p=people">Afmælisbörn dagsins</a></li>		
+								</ul>
+							</li> 						
+							
+						</ul>
+						<div class="navbar-right">
+							<form class="navbar-form" role="search" style="float: left; overflow: hidden;">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Leita" name='s'>
+								</div>
+								<button type="submit" class="btn btn-default">
+									<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+								</button>
+							</form> 
+
+						</div>
+					</div><!--/.nav-collapse -->
+				</div>
+			</div>
+		</div>
+		<!-- navbar end -->
+	</header>  
+	<!-- header end-->
+
+	<!-- ad small banner -->
+	<!-- <img src="images/ads/audur.png"/> -->
+
+	<!-- content start -->
+	<div class="container nano-container">
+	<!-- <img src="images/ads/audur.png" style="margin-left: 27px;margin-top: 20px;"> -->
+		<div class="listing">
+			<ul class="grid">
+				<li class='timeline-row'>
+	<a class='timeline-arrow' href="index.php?Tm=?&amp;p=idag&amp;c=RUV&amp;y=2023&amp;m=08&amp;d=28&amp;a=-1" style='width: 38px'>
+<!--	<a class='timeline-arrow' href="index.php?Tm=?&amp;p=idag&amp;c=RUV&amp;y=2023&amp;m=08&amp;d=28&amp;a=-1" onMouseOver="changeImage('on', 'img10','Aftur um eina klukkustund', '10', 2); return true;" onMouseOut="changeImage('off', 'img10', '', '10', 2); return true;" style='width: 38px'>	-->
+		<img name='img10' src='images/toptimas/toptimas_r4_c02.gif' vertical-align='middle' width='20' height='18' border='0' />
+	</a>
+<!--	<a class='timeline-arrow' href="index.php?Tm=?&amp;p=idag&amp;c=RUV&amp;y=2023&amp;m=08&amp;d=28&amp;a=+1" onMouseOver="changeImage('on', 'img11','Áfram um eina klukkustund', '11', 2); return true;" onMouseOut="changeImage('off', 'img11', '', '11', 2); return true;" style='width: 38px'> -->
+	<a class='timeline-arrow' href="index.php?Tm=?&amp;p=idag&amp;c=RUV&amp;y=2023&amp;m=08&amp;d=28&amp;a=+1" style='width: 38px'>	
+		<img name='img11' src='images/toptimas/toptimas_r4_c03.gif' align='middle' width='20' height='18' border='0'/>
+	</a>
+<span class='day-listing-control' style='width: 75%'>Mánudagur 28. ágúst 2023</span>	
+</li>
+
+<div class='day-channels'><li class = 'day-channels-channel-active listing-row' id='RUV'><a class="channel" href="index.php?Tm=?&amp;p=idag&amp;c=RUV&amp;y=2023&amp;m=08&amp;d=28" title="Skoða dagskránna á RÚV í dag" style='width: 15%'><img src='images/logos/RUV.jpg' /></a></li><li class = 'day-channels-channel listing-row' id='S1'><a class="channel" href="index.php?Tm=?&amp;p=idag&amp;c=S1&amp;y=2023&amp;m=08&amp;d=28" title="Skoða dagskránna á Sjónvarp Símans í dag" style='width: 15%'><img src='images/logos/gray/SIMINN.jpg' /></a></li><li class = 'day-channels-channel listing-row' id='ST2'><a class="channel" href="index.php?Tm=?&amp;p=idag&amp;c=ST2&amp;y=2023&amp;m=08&amp;d=28" title="Skoða dagskránna á Stöð 2 í dag" style='width: 15%'><img src='images/logos/gray/st2.jpg' /></a></li><li class = 'day-channels-channel listing-row' id='STOD3'><a class="channel" href="index.php?Tm=?&amp;p=idag&amp;c=STOD3&amp;y=2023&amp;m=08&amp;d=28" title="Skoða dagskránna á Stöð 2 Fjölskylda í dag" style='width: 15%'><img src='images/logos/gray/stod2_fjolskylda_2020.jpg' /></a></li><li class = 'day-channels-channel listing-row' id='BIO'><a class="channel" href="index.php?Tm=?&amp;p=idag&amp;c=BIO&amp;y=2023&amp;m=08&amp;d=28" title="Skoða dagskránna á Stöð 2 Bíó í dag" style='width: 15%'><img src='images/logos/gray/stod2_bio_2020.jpg' /></a></li><li class = 'day-channels-channel listing-row' id='RUVI'><a class="channel" href="index.php?Tm=?&amp;p=idag&amp;c=RUVI&amp;y=2023&amp;m=08&amp;d=28" title="Skoða dagskránna á RÚV Íþróttir í dag" style='width: 15%'><img src='images/logos/gray/RUVI.jpg' /></a></li><li class = 'day-channels-channel listing-row' id='S1SPORT'><a class="channel" href="index.php?Tm=?&amp;p=idag&amp;c=S1SPORT&amp;y=2023&amp;m=08&amp;d=28" title="Skoða dagskránna á Síminn Sport í dag" style='width: 15%'><img src='images/logos/gray/SIMINNSPORT.jpg' /></a></li><li class = 'day-channels-channel listing-row' id='S1SPORT2'><a class="channel" href="index.php?Tm=?&amp;p=idag&amp;c=S1SPORT2&amp;y=2023&amp;m=08&amp;d=28" title="Skoða dagskránna á Síminn Sport 2 í dag" style='width: 15%'><img src='images/logos/gray/SIMINNSPORT2.jpg' /></a></li><li class = 'day-channels-channel listing-row' id='SYN'><a class="channel" href="index.php?Tm=?&amp;p=idag&amp;c=SYN&amp;y=2023&amp;m=08&amp;d=28" title="Skoða dagskránna á Stöð 2 Sport í dag" style='width: 15%'><img src='images/logos/gray/stod2_sport_2020.jpg' /></a></li><li class='timeline-row'>
+	<a class='timeline-arrow' href="index.php?Tm=?&amp;p=idag&amp;c=RUV&amp;y=2023&amp;m=08&amp;d=28&amp;a=-1" style='width: 38px'>
+<!--	<a class='timeline-arrow' href="index.php?Tm=?&amp;p=idag&amp;c=RUV&amp;y=2023&amp;m=08&amp;d=28&amp;a=-1" onMouseOver="changeImage('on', 'img10','Aftur um eina klukkustund', '10', 2); return true;" onMouseOut="changeImage('off', 'img10', '', '10', 2); return true;" style='width: 38px'>	-->
+		<img name='img10' src='images/toptimas/toptimas_r4_c02.gif' vertical-align='middle' width='20' height='18' border='0' />
+	</a>
+<!--	<a class='timeline-arrow' href="index.php?Tm=?&amp;p=idag&amp;c=RUV&amp;y=2023&amp;m=08&amp;d=28&amp;a=+1" onMouseOver="changeImage('on', 'img11','Áfram um eina klukkustund', '11', 2); return true;" onMouseOut="changeImage('off', 'img11', '', '11', 2); return true;" style='width: 38px'> -->
+	<a class='timeline-arrow' href="index.php?Tm=?&amp;p=idag&amp;c=RUV&amp;y=2023&amp;m=08&amp;d=28&amp;a=+1" style='width: 38px'>	
+		<img name='img11' src='images/toptimas/toptimas_r4_c03.gif' align='middle' width='20' height='18' border='0'/>
+	</a>
+	
+</li>
+
+<li class = 'day-channels-channel listing-row' id='SKJARSPORT'><a class="channel" href="index.php?Tm=?&amp;p=idag&amp;c=SKJARSPORT&amp;y=2023&amp;m=08&amp;d=28" title="Skoða dagskránna á Stöð 2 Sport 2 í dag" style='width: 15%'><img src='images/logos/gray/stod2_sport2_2020.jpg' /></a></li><li class = 'day-channels-channel listing-row' id='S2SPORT3'><a class="channel" href="index.php?Tm=?&amp;p=idag&amp;c=S2SPORT3&amp;y=2023&amp;m=08&amp;d=28" title="Skoða dagskránna á Stöð 2 Sport 3 í dag" style='width: 15%'><img src='images/logos/gray/stod2_sport3_2020.jpg' /></a></li><li class = 'day-channels-channel listing-row' id='S2SPORT4'><a class="channel" href="index.php?Tm=?&amp;p=idag&amp;c=S2SPORT4&amp;y=2023&amp;m=08&amp;d=28" title="Skoða dagskránna á Stöð 2 Sport 4 í dag" style='width: 15%'><img src='images/logos/gray/stod2_sport4_2020.jpg' /></a></li><li class = 'day-channels-channel listing-row' id='S2ESPORT'><a class="channel" href="index.php?Tm=?&amp;p=idag&amp;c=S2ESPORT&amp;y=2023&amp;m=08&amp;d=28" title="Skoða dagskránna á Stöð 2 E Sport í dag" style='width: 15%'><img src='images/logos/gray/stod2_esport_2020.jpg' /></a></li><li class = 'day-channels-channel listing-row' id='GOLF'><a class="channel" href="index.php?Tm=?&amp;p=idag&amp;c=GOLF&amp;y=2023&amp;m=08&amp;d=28" title="Skoða dagskránna á Stöð 2 Golf í dag" style='width: 15%'><img src='images/logos/gray/stod2_golf_2020.jpg' /></a></li><li class = 'day-channels-channel listing-row' id='HRING'><a class="channel" href="index.php?Tm=?&amp;p=idag&amp;c=HRING&amp;y=2023&amp;m=08&amp;d=28" title="Skoða dagskránna á Hringbraut í dag" style='width: 15%'><img src='images/logos/gray/hringbraut.jpg' /></a></li><li class = 'day-channels-channel listing-row' id='N4'><a class="channel" href="index.php?Tm=?&amp;p=idag&amp;c=N4&amp;y=2023&amp;m=08&amp;d=28" title="Skoða dagskránna á N4 í dag" style='width: 15%'><img src='images/logos/gray/n4_2020.jpg' /></a></li><li class = 'day-channels-channel listing-row' id='OMEG'><a class="channel" href="index.php?Tm=?&amp;p=idag&amp;c=OMEG&amp;y=2023&amp;m=08&amp;d=28" title="Skoða dagskránna á Omega í dag" style='width: 15%'><img src='images/logos/gray/omega.png' /></a></li></div><div class='day-listing'><div class='day-listing-channel'><img src='images/logos/RUV.jpg'><span class='day-listing-channel-name'>RÚV</span></div></div	
+			</ul>
+		</div>						
+	</div>								
+	<!-- content end -->
+
+	<!-- footer start -->
+	<div id="footer" class="min-width">
+		<p>
+			<a href="?p=um" title="Nánari upplýsingar um sjonvarp.is">Upplýsingar um sjonvarp.is</a>
+		</p>
+	</div>
+	<!-- footer end -->
+
+<!--			</div>
+		</div>
+	</div>  -->
+
+	<!-- counter start -->
+	<script type="text/javascript" src="js/script.js"></script>
+	<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-1465830-1";
+urchinTracker();
+</script>	<!-- counter end -->
+
+	<!-- facebook start -->
+	<div id="fb-root"></div>
+	<script>
+		(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+	<!-- facebook end -->
+	<script src='js/responsive-img.js' defer></script>
+</body>
+
+</html>

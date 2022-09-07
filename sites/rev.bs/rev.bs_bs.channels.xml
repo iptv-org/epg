@@ -30,17 +30,17 @@
     <channel lang="en" xmltv_id="CBLTDT.ca" site_id="208">CBC Toronto</channel>
     <channel lang="en" xmltv_id="CCTV4America.cn" site_id="688">CCTV 4 America</channel>
     <channel lang="en" xmltv_id="CCTV9.cn" site_id="680">CCTV 9</channel>
+    <channel lang="en" xmltv_id="CFTODT.ca" site_id="220">CTV Toronto</channel>
     <channel lang="en" xmltv_id="CinemaxEast.us" site_id="462">Cinemax East</channel>
     <channel lang="en" xmltv_id="CITYDT.ca" site_id="219">Citytv Toronto</channel>
     <channel lang="en" xmltv_id="CMTMusic.us" site_id="390">CMT Music</channel>
     <channel lang="en" xmltv_id="CNBC.us" site_id="403">CNBC US</channel>
-    <channel lang="en" xmltv_id="CNNInternationalLatinAmerica.us" site_id="408">CNN International Latin America</channel>
     <channel lang="en" xmltv_id="CNN.us" site_id="405">CNN USA</channel>
+    <channel lang="en" xmltv_id="CNNInternationalLatinAmerica.us" site_id="408">CNN International Latin America</channel>
     <channel lang="en" xmltv_id="ComedyCentralEast.us" site_id="354">Comedy Central East</channel>
     <channel lang="en" xmltv_id="ComedyTV.us" site_id="355">Comedy TV</channel>
     <channel lang="en" xmltv_id="CookingChannel.us" site_id="251">Cooking Channel</channel>
     <channel lang="en" xmltv_id="CourtTVMystery.us" site_id="314">Court TV Mystery</channel>
-    <channel lang="en" xmltv_id="CFTODT.ca" site_id="220">CTV Toronto</channel>
     <channel lang="en" xmltv_id="CuriosityChannel.us" site_id="260">Curiosity Channel</channel>
     <channel lang="en" xmltv_id="DaystarTV.us" site_id="659">Daystar TV</channel>
     <channel lang="en" xmltv_id="DiscoveryChannelEast.us" site_id="258">Discovery Channel East</channel>
@@ -67,8 +67,8 @@
     <channel lang="en" xmltv_id="FoxBusiness.us" site_id="410">Fox Business</channel>
     <channel lang="en" xmltv_id="FoxNewsChannel.us" site_id="407">Fox News Channel</channel>
     <channel lang="en" xmltv_id="FoxSoccerPlus.us" site_id="703">Fox Soccer Plus</channel>
-    <channel lang="en" xmltv_id="FoxSportsRacing.us" site_id="732">Fox Sports Racing</channel>
     <channel lang="en" xmltv_id="FoxSports2.us" site_id="707">FS2</channel>
+    <channel lang="en" xmltv_id="FoxSportsRacing.us" site_id="732">Fox Sports Racing</channel>
     <channel lang="en" xmltv_id="FXEast.us" site_id="456">FX East</channel>
     <channel lang="en" xmltv_id="FYIEast.us" site_id="255">FYI East</channel>
     <channel lang="en" xmltv_id="GamePlus.ca" site_id="725">Game+</channel>
@@ -109,7 +109,6 @@
     <channel lang="en" xmltv_id="LifetimeMoviesEast.us" site_id="472">Lifetime Movies East</channel>
     <channel lang="en" xmltv_id="LifetimeRealWomen.us" site_id="473">Lifetime Real Women</channel>
     <channel lang="en" xmltv_id="MAVTV.us" site_id="459">MavTV</channel>
-    <channel lang="en" xmltv_id="MeTV.us" site_id="359">Me TV</channel>
     <channel lang="en" xmltv_id="MLBNetwork.us" site_id="728">MLB Network</channel>
     <channel lang="en" xmltv_id="Movies.us" site_id="586">Movies!</channel>
     <channel lang="en" xmltv_id="MSNBC.us" site_id="402">MSNBC</channel>
@@ -164,8 +163,8 @@
     <channel lang="en" xmltv_id="TruTVEast.us" site_id="414">Tru TV East</channel>
     <channel lang="en" xmltv_id="TSN1.ca" site_id="715">TSN 1</channel>
     <channel lang="en" xmltv_id="TV5MondeUS.us" site_id="677">TV5Monde États-Unis</channel>
-    <channel lang="en" xmltv_id="TVOntario.ca" site_id="306">TVO</channel>
     <channel lang="en" xmltv_id="TVOne.us" site_id="366">TV One</channel>
+    <channel lang="en" xmltv_id="TVOntario.ca" site_id="306">TVO</channel>
     <channel lang="en" xmltv_id="UnivisionEast.us" site_id="679">Univisión Este</channel>
     <channel lang="en" xmltv_id="VH1USEast.us" site_id="372">VH1 East</channel>
     <channel lang="en" xmltv_id="ViceTV.us" site_id="341">Vice East</channel>
@@ -181,5 +180,6 @@
     <channel lang="en" xmltv_id="WWORDT1.us" site_id="228">MyNetworkTV (WWOR) New York, NY</channel>
     <channel lang="en" xmltv_id="YTVEast.ca" site_id="307">YTV</channel>
     <channel lang="en" xmltv_id="ZNSTV.bs" site_id="211">ZNS TV</channel>
+    <!-- <channel lang="en" xmltv_id="" site_id="359">Me TV</channel> -->
   </channels>
 </site>

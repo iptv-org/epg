@@ -2,7 +2,6 @@
 <site site="tv.blue.ch">
   <channels>
     <channel lang="ar" xmltv_id="2MMonde.ma" site_id="3">2M Monde</channel>
-    <channel lang="en" xmltv_id="5Action.uk" site_id="1669">5 Action</channel>
     <channel lang="ar" xmltv_id="Alarabiya.ae" site_id="13">Alarabiya</channel>
     <channel lang="ar" xmltv_id="AlJazeeraChannel.qa" site_id="14">Aljazeera Channel</channel>
     <channel lang="ar" xmltv_id="AlMasriyah.eg" site_id="154">Al Masriyah</channel>
@@ -200,6 +199,7 @@
     <channel lang="el" xmltv_id="ERTWorld.gr" site_id="153">ERT World</channel>
     <channel lang="el" xmltv_id="RIKSat.cy" site_id="351">RIK Sat</channel>
     <channel lang="en" xmltv_id="4Seven.uk" site_id="1678">4Seven</channel>
+    <channel lang="en" xmltv_id="5Action.uk" site_id="1669">5 Action</channel>
     <channel lang="en" xmltv_id="5Select.uk" site_id="1670">5 Select</channel>
     <channel lang="en" xmltv_id="5Star.uk" site_id="1652">5 Star</channel>
     <channel lang="en" xmltv_id="5USA.uk" site_id="1411">5 USA</channel>
@@ -330,7 +330,6 @@
     <channel lang="fr" xmltv_id="DisneyJuniorFrance.fr" site_id="132">Disney Junior France</channel>
     <channel lang="fr" xmltv_id="EFrance.fr" site_id="144">E! France</channel>
     <channel lang="fr" xmltv_id="Equidia.fr" site_id="151">Equidia</channel>
-    <channel lang="fr" xmltv_id="MGGTV.fr" site_id="1406">ES1</channel>
     <channel lang="fr" xmltv_id="EuronewsFrench.fr" site_id="165">EuroNews Français</channel>
     <channel lang="fr" xmltv_id="Eurosport1France.fr" site_id="168">Eurosport 1 France</channel>
     <channel lang="fr" xmltv_id="Eurosport2France.fr" site_id="171">Eurosport 2 France</channel>
@@ -366,6 +365,7 @@
     <channel lang="fr" xmltv_id="Melody.fr" site_id="1761">Melody</channel>
     <channel lang="fr" xmltv_id="Mezzo.fr" site_id="258">Mezzo</channel>
     <channel lang="fr" xmltv_id="MezzoLiveHD.fr" site_id="1541">Mezzo Live HD</channel>
+    <channel lang="fr" xmltv_id="MGGTV.fr" site_id="1406">ES1</channel>
     <channel lang="fr" xmltv_id="MySports2French.ch" site_id="1558">MySports 2 Français</channel>
     <channel lang="fr" xmltv_id="MySports3French.ch" site_id="1559">MySports 3 Français</channel>
     <channel lang="fr" xmltv_id="MySports4French.ch" site_id="1560">MySports 4 Français</channel>
@@ -447,6 +447,7 @@
     <channel lang="hu" xmltv_id="M2.hu" site_id="1527">M2</channel>
     <channel lang="hu" xmltv_id="M5.hu" site_id="1531">M5</channel>
     <channel lang="it" xmltv_id="20Mediaset.it" site_id="1379">20 Mediaset</channel>
+    <channel lang="it" xmltv_id="27Twentyseven.it" site_id="1948">Mediaset Twentyseven</channel>
     <channel lang="it" xmltv_id="7Gold.it" site_id="1388">7 Gold</channel>
     <channel lang="it" xmltv_id="AlmaTV.it" site_id="16">Alma TV</channel>
     <channel lang="it" xmltv_id="BoingItaly.it" site_id="51">Boing Italia</channel>
@@ -486,7 +487,6 @@
     <channel lang="it" xmltv_id="NationalGeographicItaly.it" site_id="280">National Geographic Italia</channel>
     <channel lang="it" xmltv_id="NationalGeographicWildItaly.it" site_id="284">National Geographic Wild Italia</channel>
     <channel lang="it" xmltv_id="Nove.it" site_id="118">Nove</channel>
-    <channel lang="it" xmltv_id="ParamountNetworkItaly.it" site_id="1288">Paramount Network Italia</channel>
     <channel lang="it" xmltv_id="RadionorbaTV.it" site_id="1499">Radionorba TV</channel>
     <channel lang="it" xmltv_id="RadioTicinoChannel.it" site_id="1799">Radio Ticino Channel</channel>
     <channel lang="it" xmltv_id="Rai1.it" site_id="327">Rai 1</channel>
@@ -511,7 +511,6 @@
     <channel lang="it" xmltv_id="SanMarinoRTV.sm" site_id="1719">San Marino RTV</channel>
     <channel lang="it" xmltv_id="SenatoTV.it" site_id="1671">Senato TV</channel>
     <channel lang="it" xmltv_id="SkyTG24.it" site_id="393">Sky TG 24</channel>
-    <channel lang="it" xmltv_id="SpikeItaly.us" site_id="1347">Spike Italia</channel>
     <channel lang="it" xmltv_id="Sportitalia.it" site_id="1387">Sportitalia</channel>
     <channel lang="it" xmltv_id="Super.it" site_id="412">Super!</channel>
     <channel lang="it" xmltv_id="SuperTennis.it" site_id="1386">Super Tennis</channel>
@@ -543,14 +542,13 @@
     <channel lang="ro" xmltv_id="Digi24.ro" site_id="1650">Digi 24</channel>
     <channel lang="ro" xmltv_id="ProTVInternational.ro" site_id="321">Pro TV International</channel>
     <channel lang="ro" xmltv_id="TVRInternational.ro" site_id="631">TVR International</channel>
+    <channel lang="ru" xmltv_id="ChannelOneEuropa.ru" site_id="90">Perviy kanal Europa</channel>
     <channel lang="ru" xmltv_id="KaruselInternational.ru" site_id="1676">Karusel International</channel>
     <channel lang="ru" xmltv_id="NashKinomir.de" site_id="229">Nash Kinomir</channel>
     <channel lang="ru" xmltv_id="OstWest.de" site_id="922">Ost West</channel>
-    <channel lang="ru" xmltv_id="ChannelOneEuropa.ru" site_id="90">Perviy kanal Europa</channel>
     <channel lang="ru" xmltv_id="RTRPlaneta.ru" site_id="366">RTR Planeta</channel>
     <channel lang="ru" xmltv_id="TelebomTeledom.de" site_id="587">Telebom &amp; Teledom</channel>
     <channel lang="sq" xmltv_id="ABCNews.al" site_id="1880">ABC News</channel>
-    <channel lang="sq" xmltv_id="Arta.rs" site_id="1896">Arta</channel>
     <channel lang="sq" xmltv_id="EuronewsAlbania.al" site_id="1894">EuroNews Albania</channel>
     <channel lang="sq" xmltv_id="FaxNews.al" site_id="1895">Fax News</channel>
     <channel lang="sq" xmltv_id="FirstChannel.rs" site_id="1688">First Channel</channel>
@@ -563,6 +561,7 @@
     <channel lang="sq" xmltv_id="T7.rs" site_id="1689">T7</channel>
     <channel lang="sq" xmltv_id="TopChannel.al" site_id="1877">Top Channel</channel>
     <channel lang="sq" xmltv_id="TV21HDMacedonia.mk" site_id="1893">TV 21 Macedonia</channel>
+    <channel lang="sq" xmltv_id="TVArta.xk" site_id="1896">Arta</channel>
     <channel lang="sq" xmltv_id="TVDukagjini.rs" site_id="1446">TV Dukagjini</channel>
     <channel lang="sq" xmltv_id="TVKlan.al" site_id="1782">TV Klan</channel>
     <channel lang="sr" xmltv_id="BNMusic.ba" site_id="1649">BN Music</channel>
@@ -583,8 +582,8 @@
     <channel lang="ta" xmltv_id="VijayTV.hk" site_id="407">Vijay TV</channel>
     <channel lang="th" xmltv_id="ThaiTVGlobalNetwork.th" site_id="603">Thai TV Global Network</channel>
     <channel lang="tr" xmltv_id="360.tr" site_id="394">360</channel>
-    <channel lang="tr" xmltv_id="ATVAvrupa.tr" site_id="30">ATV Avrupa</channel>
     <channel lang="tr" xmltv_id="ATV.tr" site_id="1718">ATV Türkiye</channel>
+    <channel lang="tr" xmltv_id="ATVAvrupa.tr" site_id="30">ATV Avrupa</channel>
     <channel lang="tr" xmltv_id="CNNTurk.tr" site_id="1656">CNN Türk</channel>
     <channel lang="tr" xmltv_id="EuroStar.tr" site_id="162">EuroStar</channel>
     <channel lang="tr" xmltv_id="ShowMax.tr" site_id="1297">Show Max</channel>

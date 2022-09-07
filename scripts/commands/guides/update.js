@@ -27,6 +27,7 @@ async function main() {
     }
     programs = _.sortBy(programs, ['channel', 'start'])
     programs = programs.map(p => new Program(p, channels[p.channel]))
+    programs = _.uniqBy(programs, p => p.channel + p.start)
     total += programs.length
     channels = Object.values(channels)
     channels = _.sortBy(channels, 'id')

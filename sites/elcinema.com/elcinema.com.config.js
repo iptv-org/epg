@@ -28,8 +28,8 @@ module.exports = {
         description: parseDescription(item),
         category: parseCategory(item),
         icon: parseIcon(item),
-        start: start.toJSON(),
-        stop: stop.toJSON()
+        start,
+        stop
       })
     })
 
@@ -75,9 +75,9 @@ function parseStart(item, initDate) {
     .replace('صباحًا', 'AM')
     .trim()
 
-  time = `${initDate.format('DD/MM/YYYY')} ${time}`
+  time = `${initDate.format('YYYY-MM-DD')} ${time}`
 
-  return dayjs.tz(time, 'DD/MM/YYYY H:mm A', 'Asia/Riyadh')
+  return dayjs.tz(time, 'YYYY-MM-DD hh:mm A', dayjs.tz.guess())
 }
 
 function parseTitle(item) {
@@ -100,14 +100,14 @@ function parseDescription(item) {
 function parseItems(content, channel, date) {
   const $ = cheerio.load(content)
 
-  const dateString = date.locale(channel.lang).format('dddd D MMMM')
+  const dateString = date.locale(channel.lang).format('dddd D')
 
   const list = $('.dates')
     .filter((i, el) => {
       let parsedDateString = $(el).text().trim()
       parsedDateString = parsedDateString.replace(/\s\s+/g, ' ')
 
-      return parsedDateString === dateString
+      return parsedDateString.includes(dateString)
     })
     .first()
     .parent()
