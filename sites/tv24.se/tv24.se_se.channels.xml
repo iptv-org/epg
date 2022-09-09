@@ -33,6 +33,10 @@
     <channel lang="sv" xmltv_id="CMoreLive5.se" site_id="c-more-live-5">C More Live 5</channel>
     <channel lang="sv" xmltv_id="CMoreLive5HD.se" site_id="c-more-live-5-hd">C More Live 5 HD</channel>
     <channel lang="sv" xmltv_id="CMoreLiveHD.se" site_id="c-more-live-hd">C More Live HD</channel>
+    <channel lang="sv" xmltv_id="CMoreLive2.se" site_id="c-more-live-2-ppv">C More Live 2 (PPV)</channel>
+    <channel lang="sv" xmltv_id="CMoreLive3.se" site_id="c-more-live-3-ppv">C More Live 3 (PPV)</channel>
+    <channel lang="sv" xmltv_id="CMoreLive4.se" site_id="c-more-live-4-ppv">C More Live 4 (PPV)</channel>
+    <channel lang="sv" xmltv_id="CMoreLive.se" site_id="c-more-live-ppv">C More Live (PPV)</channel>
     <channel lang="sv" xmltv_id="CMoreMix.se" site_id="c-more-mix">C More Mix</channel>
     <channel lang="sv" xmltv_id="CMoreSeries.se" site_id="c-more-series">C More Series</channel>
     <channel lang="sv" xmltv_id="CMoreSeriesHD.se" site_id="c-more-series-hd">C More Series HD</channel>
@@ -163,10 +167,12 @@
     <channel lang="sv" xmltv_id="ViasatHistoryHD.se" site_id="viasat-history-hd-1">Viasat History HD</channel>
     <channel lang="sv" xmltv_id="ViasatNature.se" site_id="viasat-nature">Viasat Nature</channel>
     <channel lang="sv" xmltv_id="ViasatNatureHD.se" site_id="viasat-nature-hd">Viasat Nature HD</channel>
+    <channel lang="sv" xmltv_id="VSeries.se" site_id="viasat-series">Viasat Series</channel>
     <channel lang="sv" xmltv_id="ViasatSport.se" site_id="viasat-sport">Viasat Sport</channel>
     <channel lang="sv" xmltv_id="VSportExtra.se" site_id="v-sport-extra">V Sport Extra</channel>
     <channel lang="sv" xmltv_id="VSportExtraHD.se" site_id="v-sport-extra-hd">V Sport Extra HD</channel>
     <channel lang="sv" xmltv_id="VSportFootballHD.se" site_id="v-sport-fotboll-hd">V Sport Fotboll HD</channel>
+    <channel lang="sv" xmltv_id="VSportGolf.se" site_id="v-sport-golf-hd">V Sport Golf HD</channel>
     <channel lang="sv" xmltv_id="VSportMotorHD.se" site_id="v-sport-motor-hd">V Sport Motor HD</channel>
     <channel lang="sv" xmltv_id="VSportPremiumHD.se" site_id="v-sport-premium-hd">V Sport Premium HD</channel>
     <channel lang="sv" xmltv_id="VSportUltraHD.se" site_id="v-sport-ultra-hd">V Sport Ultra HD</channel>
@@ -186,10 +192,6 @@
     <!-- <channel lang="sv" xmltv_id="" site_id="bloomberg-tv-hd-uk">Bloomberg TV HD (UK)</channel> -->
     <!-- <channel lang="sv" xmltv_id="" site_id="c-more-fotbollhockeystars-hd">C More Fotboll/Hockey/Stars HD</channel> -->
     <!-- <channel lang="sv" xmltv_id="" site_id="c-more-golfsf-kanalen">C More Golf/SF-Kanalen</channel> -->
-    <!-- <channel lang="sv" xmltv_id="" site_id="c-more-live-2-ppv">C More Live 2 (PPV)</channel> -->
-    <!-- <channel lang="sv" xmltv_id="" site_id="c-more-live-3-ppv">C More Live 3 (PPV)</channel> -->
-    <!-- <channel lang="sv" xmltv_id="" site_id="c-more-live-4-ppv">C More Live 4 (PPV)</channel> -->
-    <!-- <channel lang="sv" xmltv_id="" site_id="c-more-live-ppv">C More Live (PPV)</channel> -->
     <!-- <channel lang="sv" xmltv_id="" site_id="c-more-livec-more-hits">C More Live/C More Hits</channel> -->
     <!-- <channel lang="sv" xmltv_id="" site_id="c-more-mix-hd">C More Mix HD</channel> -->
     <!-- <channel lang="sv" xmltv_id="" site_id="c-more-sport-sf-kanalen">C More Sport SF-Kanalen</channel> -->
@@ -291,7 +293,6 @@
     <!-- <channel lang="sv" xmltv_id="" site_id="tv8-hd">TV8 HD</channel> -->
     <!-- <channel lang="sv" xmltv_id="" site_id="v-series-hd">V Series HD</channel> -->
     <!-- <channel lang="sv" xmltv_id="" site_id="v-sport-1-hd">V Sport 1 HD</channel> -->
-    <!-- <channel lang="sv" xmltv_id="" site_id="v-sport-golf-hd">V Sport Golf HD</channel> -->
     <!-- <channel lang="sv" xmltv_id="" site_id="v-sport-vinter-hd">V Sport Vinter HD</channel> -->
     <!-- <channel lang="sv" xmltv_id="" site_id="viasat-film-action">Viasat Film Action</channel> -->
     <!-- <channel lang="sv" xmltv_id="" site_id="viasat-film-family-hd">Viasat Film Family HD</channel> -->
