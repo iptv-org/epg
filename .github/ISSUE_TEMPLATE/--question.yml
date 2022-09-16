@@ -1,0 +1,10 @@
+name: ❓ Ask a Question
+description: For any questions about this repository
+labels: ['❓ question']
+
+body:
+  - type: textarea
+    attributes:
+      label: Description
+    validations:
+      required: true
