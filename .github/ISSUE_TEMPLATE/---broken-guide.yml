@@ -11,7 +11,7 @@ body:
   - type: input
     attributes:
       label: Guide
-      description: Link to the guide that broke
+      description: Link to the broken guide
       placeholder: 'https://iptv-org.github.io/epg/guides/us/directv.com.epg.xml.gz'
     validations:
       required: true
@@ -19,6 +19,6 @@ body:
   - type: textarea
     attributes:
       label: Description
-      description: Describe the problem in detail
+      description: Describe the issue in details
     validations:
       required: true
