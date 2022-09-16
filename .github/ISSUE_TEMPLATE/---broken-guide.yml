@@ -1,0 +1,24 @@
+name: ⚠️ Broken Guide
+description: Report a broken EPG
+labels: ['⚠️ broken guide']
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please fill out the issue template as much as you can so we could efficiently process your request
+
+  - type: input
+    attributes:
+      label: Guide
+      description: Link to the guide that broke
+      placeholder: 'https://iptv-org.github.io/epg/guides/us/directv.com.epg.xml.gz'
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Details
+      description: What exactly is not working?
+    validations:
+      required: true

@@ -1,5 +1,6 @@
-name: 📺 EPG Request
-description: Request to add EPG (Electronic Programming Guide) in this repository
+name: 🗓 EPG Request
+description: Request to add a new EPG (Electronic Programming Guide) source to the repository
+labels: ['🗓 epg request']
 
 body:
   - type: markdown
