@@ -11,7 +11,7 @@ body:
   - type: input
     attributes:
       label: Source
-      description: Website where you saw the program for the channel
+      description: Website where the EPG for these channels can be found?
       placeholder: 'https://cablecompany.com/tvlisting'
     validations:
       required: true
