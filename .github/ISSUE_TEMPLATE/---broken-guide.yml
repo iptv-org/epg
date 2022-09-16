@@ -1,5 +1,5 @@
 name: ⚠️ Broken Guide
-description: Report a broken EPG
+description: Report an error in the guide
 labels: ['⚠️ broken guide']
 
 body:
@@ -18,7 +18,7 @@ body:
 
   - type: textarea
     attributes:
-      label: Details
-      description: What exactly is not working?
+      label: Description
+      description: Describe the problem in detail
     validations:
       required: true
