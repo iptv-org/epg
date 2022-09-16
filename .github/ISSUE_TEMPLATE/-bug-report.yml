@@ -3,9 +3,13 @@ description: Report an error in this repository
 labels: ['🐞 bug']
 
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Please describe your idea in as much detail as possible so that we can efficiently process your request
+
   - type: textarea
     attributes:
       label: Description
-      description: Please describe the error in as much detail as possible so that we can fix it quickly.
     validations:
       required: true
