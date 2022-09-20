@@ -1,8 +1,12 @@
 const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
+const customParseFormat = require('dayjs/plugin/customParseFormat')
 
 dayjs.extend(utc)
+dayjs.extend(timezone)
+dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'dstv.com',
@@ -30,8 +34,8 @@ module.exports = {
         description: parseDescription(details),
         icon: parseIcon(details),
         category: parseCategory(details),
-        start: parseStart(item),
-        stop: parseStop(item)
+        start: parseTime(item.StartTime),
+        stop: parseTime(item.EndTime)
       })
     }
 
@@ -75,12 +79,16 @@ async function loadProgramDetails(item) {
     .catch(console.error)
 }
 
-function parseStart(item) {
-  return dayjs.utc(item.StartTime, 'YYYY-MM-DDTHH:mm:ss')
-}
+// function parseStart(item) {
+//   return dayjs.utc(item.StartTime, 'YYYY-MM-DDTHH:mm:ss')
+// }
 
-function parseStop(item) {
-  return dayjs.utc(item.EndTime, 'YYYY-MM-DDTHH:mm:ss')
+// function parseStop(item) {
+//   return dayjs.utc(item.EndTime, 'YYYY-MM-DDTHH:mm:ss')
+// }
+
+function parseTime(time) {
+    return dayjs.tz(time, 'YYYY-MM-DDTHH:mm:ss', 'Africa/Johannesburg')
 }
 
 function parseItems(content, channel) {
