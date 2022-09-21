@@ -35,8 +35,8 @@ it('can parse response', () => {
   const result = parser({ date, channel, content })
   expect(result).toMatchObject([
     {
-      start: 'Sun, 07 Nov 2021 05:00:00 GMT',
-      stop: 'Sun, 07 Nov 2021 07:59:59 GMT',
+      start: '2021-11-07T05:00:00.000Z',
+      stop: '2021-11-07T07:59:59.000Z',
       title: 'Ştirile Pro Tv',
       description: `În fiecare zi, cele mai importante evenimente, transmisiuni LIVE, analize, anchete şi reportaje sunt la Ştirile ProTV.`,
       category: ['Ştiri'],

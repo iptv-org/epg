@@ -1,4 +1,7 @@
 const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+
+dayjs.extend(utc)
 
 module.exports = {
   site: 'programetv.ro',
@@ -45,11 +48,11 @@ module.exports = {
 }
 
 function parseStart(item) {
-  return dayjs.utc(item.start)
+  return dayjs(item.start).toJSON()
 }
 
 function parseStop(item) {
-  return dayjs.utc(item.stop)
+  return dayjs(item.stop).toJSON()
 }
 
 function parseContent(content) {
