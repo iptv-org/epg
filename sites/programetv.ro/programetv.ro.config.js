@@ -16,21 +16,26 @@ module.exports = {
 
     return `https://www.programetv.ro/post/${channel.site_id}/${daysOfWeek[day]}/`
   },
-  parser: function ({ content }) {
+  parser: function ({ content, channel }) {
     let programs = []
     const data = parseContent(content)
     if (!data || !data.shows) return programs
     const items = data.shows
     items.forEach(item => {
-      let title = item.title
-      if (item.season) title += ` Sez.${item.season}`
-      if (item.episode) title += ` Ep.${item.episode}`
       programs.push({
-        title,
-        description: item.desc,
+        title: parseTitle(item, channel),
+        sub_title: item.subTitle || null,
+        description: item.desc || item.obs,
         category: item.categories,
-        start: parseStart(item).toString(),
-        stop: parseStop(item).toString(),
+        season: item.season || null,
+        episode: item.episode || null,
+        start: parseStart(item),
+        stop: parseStop(item),
+        url: item.url || null,
+        date: item.date,
+        rating: parseRating(item),
+        directors: parseDirector(item),
+        actors: parseActor(item),
         icon: item.icon
       })
     })
@@ -40,11 +45,11 @@ module.exports = {
 }
 
 function parseStart(item) {
-  return dayjs(item.start).utc()
+  return dayjs.utc(item.start)
 }
 
 function parseStop(item) {
-  return dayjs(item.stop).utc()
+  return dayjs.utc(item.stop)
 }
 
 function parseContent(content) {
@@ -52,3 +57,24 @@ function parseContent(content) {
 
   return data ? JSON.parse(data) : {}
 }
+
+function parseTitle(item, channel) {
+    return (channel.lang === 'ro' || !item.titleOriginal) ? item.title : item.titleOriginal
+}
+
+function parseDirector(item) {
+    return item.credits && item.credits.director ? item.credits.director : null
+}
+
+function parseActor(item) {
+    return item.credits && item.credits.actor ? item.credits.actor : null
+}
+
+function parseRating(item) {
+    return item.rating
+      ? {
+          system: 'CNC',
+          value: item.rating.toUpperCase()
+        }
+      : null
+  }
