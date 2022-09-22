@@ -26,8 +26,8 @@ module.exports = {
     const items = data.shows
     items.forEach(item => {
       programs.push({
-        title: parseTitle(item, channel),
-        sub_title: item.subTitle || null,
+        title: item.title,
+        sub_title: item.titleOriginal,
         description: item.desc || item.obs,
         category: item.categories,
         season: item.season || null,
@@ -61,9 +61,6 @@ function parseContent(content) {
   return data ? JSON.parse(data) : {}
 }
 
-function parseTitle(item, channel) {
-    return (channel.lang === 'ro' || !item.titleOriginal) ? item.title : item.titleOriginal
-}
 
 function parseDirector(item) {
     return item.credits && item.credits.director ? item.credits.director : null
