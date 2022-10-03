@@ -1,0 +1,364 @@
+<script type="text/javascript">
+<!--
+	var margen_img;
+	var ficha_size;
+	var margen;
+	var capitulo_size;
+	var sinopsis_size;
+	var margin_left_calendario;
+	var Ficha_Tecnica_Height;
+	var Sinopsis_Height;
+	var Capitulo_Height;
+//-->
+</script><script type="text/javascript">
+<!--
+/************************************************************************/
+/*ANIMACION DE LLEGADA DE DIVS A LA PANTALLA DETALLE*/
+/************************************************************************/
+
+/* Calculo el tama�o que llevaran los box de las fichas */
+var Sinopsis_Height = 100;
+var Sinopsis_Margin_Top = 0;
+var Capitulo_Height = 100;
+var Capitulo_Margin_Top = 0;
+var Sinopsis_Visibility = "visible";
+var Capitulo_Visibility = "visible";
+
+if ( $("#Capitulo").attr("name") == "Disable" ) { 
+		Sinopsis_Height = 150;
+		Sinopsis_Margin_Top = 40;
+		Capitulo_Height = 0;
+		Capitulo_Visibility = "hidden";
+		}
+
+if ( $("#Sinopsis").attr("name") == "Disable" ) { 
+		Capitulo_Height = 150;
+		Capitulo_Margin_Top = 35;
+		Sinopsis_Height = 0;
+		Sinopsis_Visibility = "hidden";
+		}
+if ( $("#Sinopsis").attr("name") == "Disable" && $("#Capitulo").attr("name") == "Disable" ){
+		Sinopsis_Height = 150;
+		Sinopsis_Margin_Top = 40;
+		Capitulo_Height = 0;
+		Capitulo_Visibility = "hidden";
+		Sinopsis_Visibility = "visible";
+	}
+
+$("#Ficha").css({
+			"height"		: '140px',
+			"width"			: "195px",
+        });
+
+$("#Ficha .inner").css({
+			"height"		: '122px',
+			"width"			: "98%",
+        });
+$("#Ficha .h4").css({
+			"height"		: '18px',
+			"width"			: "100%",
+        });
+
+$("#Sinopsis").css({
+			"height"		: Sinopsis_Height+'px',
+			"margin-top"	: Sinopsis_Margin_Top+"px",
+			"width"			: "99%",
+			"visibility"	: Sinopsis_Visibility,
+			});
+
+$("#Sinopsis .inner").css({
+			"height"		: (Sinopsis_Height - 16) +'px',
+			});
+
+$("#Capitulo").css({
+			"height"		: Capitulo_Height+'px',
+			"margin-top"	: Capitulo_Margin_Top+'px',
+			"margin-left"	: "0px",
+			"width"			: "99%",
+			"visibility"	: Capitulo_Visibility,
+			});
+
+$("#Capitulo .inner").css({
+			"height"		: (Capitulo_Height - 16) +'px',
+			});
+
+// Muestra la seccion de agendar.
+function Mostrar_Ficha_Agenda() {
+	
+	$("#Email").animate({
+				'opacity': '0.0',
+				"height": "0px",
+				"margin-top" : "100%",
+			}, 0 ).show()
+			.animate({
+				'opacity': '1.0',
+				"height": "100%",
+				"margin-top" : "0px",
+			}, 1000 );
+			
+	}
+	
+	$("#Ficha").css("margin-top","10px");
+	$("#ImgProg").css("margin-top","10px");
+	$("#Calendario").css("margin-top","10px");
+	
+$("#Emisiones").css("opacity",0);
+
+$("#btnEmisiones").click(function(){
+				   $("#Emisiones").animate({
+						'opacity': '0.0',
+						"margin-left" : "580px",
+						"width" : "0px",
+					}, 1500 );	
+				  $("#Email").animate({
+						'opacity': '0.0',
+					}, 1500 );	
+				});
+//Muestra la seccion de emisiones
+function Mostrar_Seccion_Emisiones(){
+
+$("#Emisiones").animate({
+            'opacity': '0.0',
+			"width" : "0px",
+			"margin-left" : "580px",
+			"margin-top" : "17px",
+			'z-index' : '10',
+        }, 0 ).show()
+        .animate({
+            'opacity': '1.0',
+			"margin-left" : "295px",
+			"margin-top" : "17px",
+			"width" : "285px",
+        }, 1500 );	
+
+	$("#Email").animate({
+            'opacity': '0.0',
+			"width" : "0px",
+        }, 0 ).show()
+        .animate({
+			"margin-top": "195px",
+			"width" : "100%",
+        }, 1500 );	
+}
+//-->
+</script><script type="text/javascript">
+<!--
+
+
+/************************************************************************/
+/************************************************************************/
+
+$("#cerrar").click(function(){
+				   hide('divDetalle');
+				   hide('divFondoOpacoFull');
+				   setTimeout("$('#divFondoOpacoFull').remove()",500);
+				});
+
+/************************************************************************
+		SECCION TABLA DE EMISIONES
+************************************************************************/
+/* Muestra la tabla con las emisiones del programa*/
+$("#CalendarioDetalle .emision").click( function() { 
+		Fecha = $(this).attr("id").split("/");
+		dia = Fecha[0];
+		$("#tblEmisiones tbody tr").each(function(){ 
+			if($(this).attr("value") != dia) {
+				$(this).css("display","none");
+				}
+			else {
+				$(this).css("display","table-row");
+				}
+			 });
+	
+	Mostrar_Seccion_Emisiones();	
+	});
+	
+	
+function verEmisiones(dia) { 
+		$("#tblEmisiones tbody tr").each(function(){ 
+			if($(this).attr("value") != dia && dia != 0) {
+				$(this).css("display","none");
+				}
+			else {
+				$(this).css("display","table-row");
+				}
+			 });
+	Mostrar_Seccion_Emisiones(0);	
+	};
+/************************************************************************
+		SECCION RECODATORIO
+************************************************************************/
+/* Muestra el div para agendar la emision*/
+
+function verAgendar(emision, id_programa, id_senial, fecha, hora){
+	
+	$("#FechaAgenda").text(emision);
+	$("#id_programa").attr("value",id_programa);
+	$("#id_senial").attr("value",id_senial);
+	$("#fecha_emision").attr("value",fecha + ' ' + hora);
+	$("#fecha_recordatorio").attr("value",1);
+	
+	Mostrar_Ficha_Agenda();
+
+}
+
+$("#hora_recordatorio").change(function(){
+		$("#fecha_recordatorio").attr("value",this.value);		
+										});
+$("#btnAgendar").attr("disabled","disabled");
+$("#txtemail").keyup(function(){
+	regex= /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/; //FUNCIONA
+	//regex=/^.*?\@+[0-9a-zA-Z])+$/;
+  if (regex.test(this.value)){
+  	$("#txtemail").css("color","#000");
+  	$("#btnAgendar").attr("disabled",false);
+  } else {
+  	$("#btnAgendar").attr("disabled","disabled");
+  	$("#txtemail").css("color","#F00");
+  }
+});
+/**********************************************************************/
+$("#btnAgendar").click(function() {
+	InsertarRecordatorio();
+  $("#Email").animate({
+			"height": "0px",
+			"margin-top" : "100%",
+			"opacity": "0.0",
+        }, 1000 );
+});
+
+$("#btnCancelarAgenda").click(function() {
+  $("#Email").animate({
+			"height": "0px",
+			"margin-top" : "100%",
+			"opacity": "0.0",
+        }, 1000 );
+});
+
+/* Llama al script Recordatorio.php para insertar en base de datos.*/
+function InsertarRecordatorio(){
+	$.ajax({
+	 	   async: true,
+		   type: "POST",
+		   url: "Recordatorio.php",
+		   dataType: "html",
+		   contentType: "application/x-www-form-urlencoded",
+		   data: {
+				    Alineacion : $("#alineacion").attr("value"),
+			 	    Email : $("#txtemail").attr("value"),
+					idPrograma: $("#id_programa").attr("value"),
+					idSenial: $("#id_senial").attr("value"),
+					FechaEmision : $("#fecha_emision").attr("value"),
+					FechaRecordatorio : $("#fecha_recordatorio").attr("value"),
+		   		},
+			success: RecordatorioAgendado,
+			error:problemas,
+		   });
+	return false;
+}
+	
+function RecordatorioAgendado(datos)
+{
+		 CustomAlert(datos,'Recordatorio Guardado!');
+}
+//-->
+</script>
+<div id="Detalle" style="width:580px; height:420px"  >
+    <input type="hidden" id="HEADER" value="TITULO"/>
+    <div id="Fichas">
+        <table id="TablaDetalle" width="100%"> 
+            <tr height="170px">
+                <td width="140px" >    
+                    <div id="Ficha" class="outer">
+                        <label class="h4">Ficha T&eacute;cnica</label>
+                        <div class="inner">
+                            <label class="lable">Canal: </label>
+                            <br><label class="lable">T&iacute;tulo: </label> 
+                            
+                            
+                            <!---->
+                            
+                            
+                            
+                            
+                            <br><label class='lable'>Inicio: </label>
+                            <br><label class="lable">Fin: </label>
+                            <br><lable class="lable">Duraci&oacute;n: </lable>
+                        </div>
+                    </div>
+                </td>
+                <td width="160px">
+                    <div id="Img">
+                        <img id="ImgProg" src="./img/Programas/NoPicture.jpg" width="159px" height="116px">
+                        <a href="../buscador/img/Programas/" style="display:block;text-align:center;visibility:hidden" onclick="Galeria('../buscador/img/Programas/');
+                                return false;">
+                            <img id="persona_mas_fotos" src="./img/2307/Galeria_Personas.png" alt="Galeria de fotos" style="">
+                        </a>
+                    </div>
+                </td>
+                <td width="200px">
+                    <div id="Calendario" >
+                        <table id="CalendarioDetalle" class="tablacalendario" cellspacing="3" cellpadding="1" border="0"><tr><td colspan="7" class="tit"><table width="100%" cellspacing="2" cellpadding="0" border="0"><tr><td><span></span></td><td class='titmesano'>Octubre 2022</td><td><span></span></td></tr></table></td></tr><tr><td width="14%" class="diasemana">Lu</td><td width="14%" class="diasemana">Ma</td><td width="14%" class="diasemana">Mi</td><td width="14%" class="diasemana">Ju</td><td width="14%" class="diasemana">Vi</td><td width="14%" class="diasemana">S&aacute;</td><td width="14%" class="diasemana">Do</td></tr><tr><td id='//' class='diainvalido' ><span></span></td><td id='//' class='diainvalido' ><span></span></td><td id='//' class='diainvalido' ><span></span></td><td id='//' class='diainvalido' ><span></span></td><td id='//' class='diainvalido' ><span></span></td><td id='01/10/2022' class='sinemision Dia' ><span>01</span></td><td id='02/10/2022' class='domingo Dia' ><span>02</span></td></tr><tr><td id='03/10/2022' class='sinemision hoy Dia' ><span>03</span></td><td id='04/10/2022' class='sinemision Dia' ><span>04</span></td><td id='05/10/2022' class='sinemision Dia' ><span>05</span></td><td id='06/10/2022' class='sinemision Dia' ><span>06</span></td><td id='07/10/2022' class='sinemision Dia' ><span>07</span></td><td id='08/10/2022' class='sinemision Dia' ><span>08</span></td><td id='09/10/2022' class='domingo Dia' ><span>09</span></td></tr><tr><td id='10/10/2022' class='sinemision Dia' ><span>10</span></td><td id='11/10/2022' class='sinemision Dia' ><span>11</span></td><td id='12/10/2022' class='sinemision Dia' ><span>12</span></td><td id='13/10/2022' class='sinemision Dia' ><span>13</span></td><td id='14/10/2022' class='sinemision Dia' ><span>14</span></td><td id='15/10/2022' class='sinemision Dia' ><span>15</span></td><td id='16/10/2022' class='domingo Dia' ><span>16</span></td></tr><tr><td id='17/10/2022' class='sinemision Dia' ><span>17</span></td><td id='18/10/2022' class='sinemision Dia' ><span>18</span></td><td id='19/10/2022' class='sinemision Dia' ><span>19</span></td><td id='20/10/2022' class='sinemision Dia' ><span>20</span></td><td id='21/10/2022' class='sinemision Dia' ><span>21</span></td><td id='22/10/2022' class='sinemision Dia' ><span>22</span></td><td id='23/10/2022' class='domingo Dia' ><span>23</span></td></tr><tr><td id='24/10/2022' class='sinemision Dia' ><span>24</span></td><td id='25/10/2022' class='sinemision Dia' ><span>25</span></td><td id='26/10/2022' class='sinemision Dia' ><span>26</span></td><td id='27/10/2022' class='sinemision Dia' ><span>27</span></td><td id='28/10/2022' class='sinemision Dia' ><span>28</span></td><td id='29/10/2022' class='sinemision Dia' ><span>29</span></td><td id='30/10/2022' class='domingo Dia' ><span>30</span></td></tr><tr><td id='31/10/2022' class='sinemision Dia' ><span>31</span></td><td id='//' class='diainvalido' ><span></span></td><td id='//' class='diainvalido' ><span></span></td><td id='//' class='diainvalido' ><span></span></td><td id='//' class='diainvalido' ><span></span></td><td id='//' class='diainvalido' ><span></span></td><td id='//' class='diainvalido' ><span></span></td></tr></table>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <div id="Sinopsis" class="outer" name="Disable">
+                        <label class="h4">Sinops&iacute;s</label>
+                        <div class="inner" >
+                            No hay informaci&oacute;n disponible. 
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <div id="Capitulo" class="outer" name="Disable">
+                        <!--<label class="h4">Emisi&oacute;n de hoy</label>-->
+                        <div class="inner">
+                            
+                            No hay informaci&oacute;n disponible.
+                            
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+        </table>
+        <div id="Emisiones" >
+            <div id="Email">  
+                <div>   
+                    <label id="FechaAgenda"></label>
+                    <input type="hidden" id="id_programa" value=""/>
+                    <input type="hidden" id="id_senial" value=""/>
+                    <input type="hidden" id="fecha_emision" value=""/>
+                    <input type="hidden" id="fecha_recordatorio" value=""/>
+                    <input type="hidden" id="alineacion" value="2694"/>
+                </div>
+                <div>
+                    <label> E-mail </label>
+                    <input type="text" id="txtemail"/>            
+                </div>
+                <div>
+                    <label> Recordar </label>
+                    <select id="hora_recordatorio">
+                        <option value="1">1 hora</option>
+                        <option value="2">2 horas</option>
+                        <option value="6">6 horas</option>
+                        <option value="12">12 horas</option>
+                    </select>
+                    <label> antes </label>
+                </div>
+                <div>
+                    <input id="btnAgendar" type="button" value="Agendar" title="Agendar" style="width:80px"/>
+                    <input id="btnCancelarAgenda" type="button" value="Salir" title="Cancelar" style="width:80px"/>
+                </div>
+            </div> 
+            <div id="btnEmisiones">
+                <img title="Ocultar" src="img/2694/OcultarEmisiones.png" width="20px" height="25px"> 
+            </div>      
+            <div id="TablaEmisiones"><table    id="tblEmisiones"       width=""  heigth=""          id='tblEmisiones'  ></table></div> 
+        </div>
+    </div>  
+</div>
