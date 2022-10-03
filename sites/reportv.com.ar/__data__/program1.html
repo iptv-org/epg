@@ -1,0 +1,364 @@
+<script type="text/javascript">
+<!--
+	var margen_img;
+	var ficha_size;
+	var margen;
+	var capitulo_size;
+	var sinopsis_size;
+	var margin_left_calendario;
+	var Ficha_Tecnica_Height;
+	var Sinopsis_Height;
+	var Capitulo_Height;
+//-->
+</script><script type="text/javascript">
+<!--
+/************************************************************************/
+/*ANIMACION DE LLEGADA DE DIVS A LA PANTALLA DETALLE*/
+/************************************************************************/
+
+/* Calculo el tama�o que llevaran los box de las fichas */
+var Sinopsis_Height = 100;
+var Sinopsis_Margin_Top = 0;
+var Capitulo_Height = 100;
+var Capitulo_Margin_Top = 0;
+var Sinopsis_Visibility = "visible";
+var Capitulo_Visibility = "visible";
+
+if ( $("#Capitulo").attr("name") == "Disable" ) { 
+		Sinopsis_Height = 150;
+		Sinopsis_Margin_Top = 40;
+		Capitulo_Height = 0;
+		Capitulo_Visibility = "hidden";
+		}
+
+if ( $("#Sinopsis").attr("name") == "Disable" ) { 
+		Capitulo_Height = 150;
+		Capitulo_Margin_Top = 35;
+		Sinopsis_Height = 0;
+		Sinopsis_Visibility = "hidden";
+		}
+if ( $("#Sinopsis").attr("name") == "Disable" && $("#Capitulo").attr("name") == "Disable" ){
+		Sinopsis_Height = 150;
+		Sinopsis_Margin_Top = 40;
+		Capitulo_Height = 0;
+		Capitulo_Visibility = "hidden";
+		Sinopsis_Visibility = "visible";
+	}
+
+$("#Ficha").css({
+			"height"		: '140px',
+			"width"			: "195px",
+        });
+
+$("#Ficha .inner").css({
+			"height"		: '122px',
+			"width"			: "98%",
+        });
+$("#Ficha .h4").css({
+			"height"		: '18px',
+			"width"			: "100%",
+        });
+
+$("#Sinopsis").css({
+			"height"		: Sinopsis_Height+'px',
+			"margin-top"	: Sinopsis_Margin_Top+"px",
+			"width"			: "99%",
+			"visibility"	: Sinopsis_Visibility,
+			});
+
+$("#Sinopsis .inner").css({
+			"height"		: (Sinopsis_Height - 16) +'px',
+			});
+
+$("#Capitulo").css({
+			"height"		: Capitulo_Height+'px',
+			"margin-top"	: Capitulo_Margin_Top+'px',
+			"margin-left"	: "0px",
+			"width"			: "99%",
+			"visibility"	: Capitulo_Visibility,
+			});
+
+$("#Capitulo .inner").css({
+			"height"		: (Capitulo_Height - 16) +'px',
+			});
+
+// Muestra la seccion de agendar.
+function Mostrar_Ficha_Agenda() {
+	
+	$("#Email").animate({
+				'opacity': '0.0',
+				"height": "0px",
+				"margin-top" : "100%",
+			}, 0 ).show()
+			.animate({
+				'opacity': '1.0',
+				"height": "100%",
+				"margin-top" : "0px",
+			}, 1000 );
+			
+	}
+	
+	$("#Ficha").css("margin-top","10px");
+	$("#ImgProg").css("margin-top","10px");
+	$("#Calendario").css("margin-top","10px");
+	
+$("#Emisiones").css("opacity",0);
+
+$("#btnEmisiones").click(function(){
+				   $("#Emisiones").animate({
+						'opacity': '0.0',
+						"margin-left" : "580px",
+						"width" : "0px",
+					}, 1500 );	
+				  $("#Email").animate({
+						'opacity': '0.0',
+					}, 1500 );	
+				});
+//Muestra la seccion de emisiones
+function Mostrar_Seccion_Emisiones(){
+
+$("#Emisiones").animate({
+            'opacity': '0.0',
+			"width" : "0px",
+			"margin-left" : "580px",
+			"margin-top" : "17px",
+			'z-index' : '10',
+        }, 0 ).show()
+        .animate({
+            'opacity': '1.0',
+			"margin-left" : "295px",
+			"margin-top" : "17px",
+			"width" : "285px",
+        }, 1500 );	
+
+	$("#Email").animate({
+            'opacity': '0.0',
+			"width" : "0px",
+        }, 0 ).show()
+        .animate({
+			"margin-top": "195px",
+			"width" : "100%",
+        }, 1500 );	
+}
+//-->
+</script><script type="text/javascript">
+<!--
+
+
+/************************************************************************/
+/************************************************************************/
+
+$("#cerrar").click(function(){
+				   hide('divDetalle');
+				   hide('divFondoOpacoFull');
+				   setTimeout("$('#divFondoOpacoFull').remove()",500);
+				});
+
+/************************************************************************
+		SECCION TABLA DE EMISIONES
+************************************************************************/
+/* Muestra la tabla con las emisiones del programa*/
+$("#CalendarioDetalle .emision").click( function() { 
+		Fecha = $(this).attr("id").split("/");
+		dia = Fecha[0];
+		$("#tblEmisiones tbody tr").each(function(){ 
+			if($(this).attr("value") != dia) {
+				$(this).css("display","none");
+				}
+			else {
+				$(this).css("display","table-row");
+				}
+			 });
+	
+	Mostrar_Seccion_Emisiones();	
+	});
+	
+	
+function verEmisiones(dia) { 
+		$("#tblEmisiones tbody tr").each(function(){ 
+			if($(this).attr("value") != dia && dia != 0) {
+				$(this).css("display","none");
+				}
+			else {
+				$(this).css("display","table-row");
+				}
+			 });
+	Mostrar_Seccion_Emisiones(0);	
+	};
+/************************************************************************
+		SECCION RECODATORIO
+************************************************************************/
+/* Muestra el div para agendar la emision*/
+
+function verAgendar(emision, id_programa, id_senial, fecha, hora){
+	
+	$("#FechaAgenda").text(emision);
+	$("#id_programa").attr("value",id_programa);
+	$("#id_senial").attr("value",id_senial);
+	$("#fecha_emision").attr("value",fecha + ' ' + hora);
+	$("#fecha_recordatorio").attr("value",1);
+	
+	Mostrar_Ficha_Agenda();
+
+}
+
+$("#hora_recordatorio").change(function(){
+		$("#fecha_recordatorio").attr("value",this.value);		
+										});
+$("#btnAgendar").attr("disabled","disabled");
+$("#txtemail").keyup(function(){
+	regex= /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/; //FUNCIONA
+	//regex=/^.*?\@+[0-9a-zA-Z])+$/;
+  if (regex.test(this.value)){
+  	$("#txtemail").css("color","#000");
+  	$("#btnAgendar").attr("disabled",false);
+  } else {
+  	$("#btnAgendar").attr("disabled","disabled");
+  	$("#txtemail").css("color","#F00");
+  }
+});
+/**********************************************************************/
+$("#btnAgendar").click(function() {
+	InsertarRecordatorio();
+  $("#Email").animate({
+			"height": "0px",
+			"margin-top" : "100%",
+			"opacity": "0.0",
+        }, 1000 );
+});
+
+$("#btnCancelarAgenda").click(function() {
+  $("#Email").animate({
+			"height": "0px",
+			"margin-top" : "100%",
+			"opacity": "0.0",
+        }, 1000 );
+});
+
+/* Llama al script Recordatorio.php para insertar en base de datos.*/
+function InsertarRecordatorio(){
+	$.ajax({
+	 	   async: true,
+		   type: "POST",
+		   url: "Recordatorio.php",
+		   dataType: "html",
+		   contentType: "application/x-www-form-urlencoded",
+		   data: {
+				    Alineacion : $("#alineacion").attr("value"),
+			 	    Email : $("#txtemail").attr("value"),
+					idPrograma: $("#id_programa").attr("value"),
+					idSenial: $("#id_senial").attr("value"),
+					FechaEmision : $("#fecha_emision").attr("value"),
+					FechaRecordatorio : $("#fecha_recordatorio").attr("value"),
+		   		},
+			success: RecordatorioAgendado,
+			error:problemas,
+		   });
+	return false;
+}
+	
+function RecordatorioAgendado(datos)
+{
+		 CustomAlert(datos,'Recordatorio Guardado!');
+}
+//-->
+</script>
+<div id="Detalle" style="width:580px; height:420px"  >
+    <input type="hidden" id="HEADER" value="TITULO"/>
+    <div id="Fichas">
+        <table id="TablaDetalle" width="100%"> 
+            <tr height="170px">
+                <td width="140px" >    
+                    <div id="Ficha" class="outer">
+                        <label class="h4">Ficha T&eacute;cnica</label>
+                        <div class="inner">
+                            <label class="lable">Canal: </label>10 - VENEVISION PLUS
+                            <br><label class="lable">T&iacute;tulo: </label>&iquest;Qui&eacute;n tiene la raz&oacute;n? 
+                            <br><label class="lable">G&eacute;nero: </label>Talk Show
+                            
+                            <!--<br><label class="lable">Audio: </label>Original-->
+                            <br><label class="lable">Actores: </label><span onclick='Creditos(100468,2694,"Nancy &Aacute;lvarez")'><a href='#' >Nancy &Aacute;lvarez</a></span>
+                            
+                            <br><label class="lable">A&ntilde;o: </label>2003
+                            <br><label class="lable">Pais: </label>EE. UU.
+                            <br><label class='lable'>Inicio: </label>00:00
+                            <br><label class="lable">Fin: </label>01:00
+                            <br><lable class="lable">Duraci&oacute;n: </lable>01:00
+                        </div>
+                    </div>
+                </td>
+                <td width="160px">
+                    <div id="Img">
+                        <img id="ImgProg" src="./img/Programas/4401882.jpg" width="159px" height="116px">
+                        <a href="../buscador/img/Programas/1412127.jpg" style="display:block;text-align:center;" onclick="Galeria('../buscador/img/Programas/|1412127.jpg|4389647.jpg|4389648.jpg');
+                                return false;">
+                            <img id="persona_mas_fotos" src="./img/2307/Galeria_Personas.png" alt="Galeria de fotos" style="">
+                        </a>
+                    </div>
+                </td>
+                <td width="200px">
+                    <div id="Calendario" >
+                        <table id="CalendarioDetalle" class="tablacalendario" cellspacing="3" cellpadding="1" border="0"><tr><td colspan="7" class="tit"><table width="100%" cellspacing="2" cellpadding="0" border="0"><tr><td><span></span></td><td class='titmesano'>Octubre 2022</td><td><span></span></td></tr></table></td></tr><tr><td width="14%" class="diasemana">Lu</td><td width="14%" class="diasemana">Ma</td><td width="14%" class="diasemana">Mi</td><td width="14%" class="diasemana">Ju</td><td width="14%" class="diasemana">Vi</td><td width="14%" class="diasemana">S&aacute;</td><td width="14%" class="diasemana">Do</td></tr><tr><td id='//' class='diainvalido' ><span></span></td><td id='//' class='diainvalido' ><span></span></td><td id='//' class='diainvalido' ><span></span></td><td id='//' class='diainvalido' ><span></span></td><td id='//' class='diainvalido' ><span></span></td><td id='01/10/2022' class='sinemision Dia' ><span>01</span></td><td id='02/10/2022' class='domingo Dia' ><span>02</span></td></tr><tr><td id='03/10/2022' class='emision hoy Dia' ><span>03</span></td><td id='04/10/2022' class='emision Dia' ><span>04</span></td><td id='05/10/2022' class='emision Dia' ><span>05</span></td><td id='06/10/2022' class='emision Dia' ><span>06</span></td><td id='07/10/2022' class='emision Dia' ><span>07</span></td><td id='08/10/2022' class='emision Dia' ><span>08</span></td><td id='09/10/2022' class='emision Dia' ><span>09</span></td></tr><tr><td id='10/10/2022' class='emision Dia' ><span>10</span></td><td id='11/10/2022' class='emision Dia' ><span>11</span></td><td id='12/10/2022' class='emision Dia' ><span>12</span></td><td id='13/10/2022' class='emision Dia' ><span>13</span></td><td id='14/10/2022' class='emision Dia' ><span>14</span></td><td id='15/10/2022' class='emision Dia' ><span>15</span></td><td id='16/10/2022' class='emision Dia' ><span>16</span></td></tr><tr><td id='17/10/2022' class='emision Dia' ><span>17</span></td><td id='18/10/2022' class='emision Dia' ><span>18</span></td><td id='19/10/2022' class='emision Dia' ><span>19</span></td><td id='20/10/2022' class='emision Dia' ><span>20</span></td><td id='21/10/2022' class='emision Dia' ><span>21</span></td><td id='22/10/2022' class='emision Dia' ><span>22</span></td><td id='23/10/2022' class='emision Dia' ><span>23</span></td></tr><tr><td id='24/10/2022' class='emision Dia' ><span>24</span></td><td id='25/10/2022' class='emision Dia' ><span>25</span></td><td id='26/10/2022' class='emision Dia' ><span>26</span></td><td id='27/10/2022' class='emision Dia' ><span>27</span></td><td id='28/10/2022' class='emision Dia' ><span>28</span></td><td id='29/10/2022' class='emision Dia' ><span>29</span></td><td id='30/10/2022' class='emision Dia' ><span>30</span></td></tr><tr><td id='31/10/2022' class='emision Dia' ><span>31</span></td><td id='//' class='diainvalido' ><span></span></td><td id='//' class='diainvalido' ><span></span></td><td id='//' class='diainvalido' ><span></span></td><td id='//' class='diainvalido' ><span></span></td><td id='//' class='diainvalido' ><span></span></td><td id='//' class='diainvalido' ><span></span></td></tr></table>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <div id="Sinopsis" class="outer" name="sinopsis">
+                        <label class="h4">Sinops&iacute;s</label>
+                        <div class="inner" >
+                            Espacio que dar&aacute; de qu&eacute; hablar cuando la doctora Nancy &Aacute;lvarez y Carmen Jara, acompa&ntilde;adas de un jurado implacable, lleguen a escuchar y a resolver los problemas de las partes en conflicto para luego decidir qui&eacute;n tiene la raz&oacute;n. 
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <div id="Capitulo" class="outer" name="Disable">
+                        <!--<label class="h4">Emisi&oacute;n de hoy</label>-->
+                        <div class="inner">
+                            
+                            No hay informaci&oacute;n disponible.
+                            
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+        </table>
+        <div id="Emisiones" >
+            <div id="Email">  
+                <div>   
+                    <label id="FechaAgenda"></label>
+                    <input type="hidden" id="id_programa" value=""/>
+                    <input type="hidden" id="id_senial" value=""/>
+                    <input type="hidden" id="fecha_emision" value=""/>
+                    <input type="hidden" id="fecha_recordatorio" value=""/>
+                    <input type="hidden" id="alineacion" value="2694"/>
+                </div>
+                <div>
+                    <label> E-mail </label>
+                    <input type="text" id="txtemail"/>            
+                </div>
+                <div>
+                    <label> Recordar </label>
+                    <select id="hora_recordatorio">
+                        <option value="1">1 hora</option>
+                        <option value="2">2 horas</option>
+                        <option value="6">6 horas</option>
+                        <option value="12">12 horas</option>
+                    </select>
+                    <label> antes </label>
+                </div>
+                <div>
+                    <input id="btnAgendar" type="button" value="Agendar" title="Agendar" style="width:80px"/>
+                    <input id="btnCancelarAgenda" type="button" value="Salir" title="Cancelar" style="width:80px"/>
+                </div>
+            </div> 
+            <div id="btnEmisiones">
+                <img title="Ocultar" src="img/2694/OcultarEmisiones.png" width="20px" height="25px"> 
+            </div>      
+            <div id="TablaEmisiones"><table    id="tblEmisiones"       width=""  heigth=""          id='tblEmisiones'  ><tr   id="Lunes 0300:00:00-VENEVISION PLUS"   value="03"   title="Agendar"     onclick="verAgendar(this.id, 286096,914,'2022-10-03','00:00:00')"         ><td      style="width:15px"             ><img src='./img/2694/agendar.png' width='15px' height='15px'></td><td                  >03 Lunes 00:00:00 hs</td><td      style="width:40px"  title="VENEVISION PLUS"            ><img src='./img/Logos/3339292.gif' width='40px' height='25px'></td></tr><tr   id="Lunes 0318:00:00-VENEVISION PLUS"   value="03"   title="Agendar"     onclick="verAgendar(this.id, 286096,914,'2022-10-03','18:00:00')"         ><td      style="width:15px"             ><img src='./img/2694/agendar.png' width='15px' height='15px'></td><td                  >03 Lunes 18:00:00 hs</td><td      style="width:40px"  title="VENEVISION PLUS"            ><img src='./img/Logos/3339292.gif' width='40px' height='25px'></td></tr><tr   id="Martes 0418:00:00-VENEVISION PLUS"   value="04"   title="Agendar"     onclick="verAgendar(this.id, 286096,914,'2022-10-04','18:00:00')"         ><td      style="width:15px"             ><img src='./img/2694/agendar.png' width='15px' height='15px'></td><td                  >04 Martes 18:00:00 hs</td><td      style="width:40px"  title="VENEVISION PLUS"            ><img src='./img/Logos/3339292.gif' width='40px' height='25px'></td></tr><tr   id="Mi&eacute;rcoles 0518:00:00-VENEVISION PLUS"   value="05"   title="Agendar"     onclick="verAgendar(this.id, 286096,914,'2022-10-05','18:00:00')"         ><td      style="width:15px"             ><img src='./img/2694/agendar.png' width='15px' height='15px'></td><td                  >05 Mi&eacute;rcoles 18:00:00 hs</td><td      style="width:40px"  title="VENEVISION PLUS"            ><img src='./img/Logos/3339292.gif' width='40px' height='25px'></td></tr><tr   id="Jueves 0618:00:00-VENEVISION PLUS"   value="06"   title="Agendar"     onclick="verAgendar(this.id, 286096,914,'2022-10-06','18:00:00')"         ><td      style="width:15px"             ><img src='./img/2694/agendar.png' width='15px' height='15px'></td><td                  >06 Jueves 18:00:00 hs</td><td      style="width:40px"  title="VENEVISION PLUS"            ><img src='./img/Logos/3339292.gif' width='40px' height='25px'></td></tr><tr   id="Viernes 0718:00:00-VENEVISION PLUS"   value="07"   title="Agendar"     onclick="verAgendar(this.id, 286096,914,'2022-10-07','18:00:00')"         ><td      style="width:15px"             ><img src='./img/2694/agendar.png' width='15px' height='15px'></td><td                  >07 Viernes 18:00:00 hs</td><td      style="width:40px"  title="VENEVISION PLUS"            ><img src='./img/Logos/3339292.gif' width='40px' height='25px'></td></tr><tr   id="S&aacute;bado 0806:00:00-VENEVISION PLUS"   value="08"   title="Agendar"     onclick="verAgendar(this.id, 286096,914,'2022-10-08','06:00:00')"         ><td      style="width:15px"             ><img src='./img/2694/agendar.png' width='15px' height='15px'></td><td                  >08 S&aacute;bado 06:00:00 hs</td><td      style="width:40px"  title="VENEVISION PLUS"            ><img src='./img/Logos/3339292.gif' width='40px' height='25px'></td></tr><tr   id="S&aacute;bado 0816:00:00-VENEVISION PLUS"   value="08"   title="Agendar"     onclick="verAgendar(this.id, 286096,914,'2022-10-08','16:00:00')"         ><td      style="width:15px"             ><img src='./img/2694/agendar.png' width='15px' height='15px'></td><td                  >08 S&aacute;bado 16:00:00 hs</td><td      style="width:40px"  title="VENEVISION PLUS"            ><img src='./img/Logos/3339292.gif' width='40px' height='25px'></td></tr><tr   id="S&aacute;bado 0816:30:00-VENEVISION PLUS"   value="08"   title="Agendar"     onclick="verAgendar(this.id, 286096,914,'2022-10-08','16:30:00')"         ><td      style="width:15px"             ><img src='./img/2694/agendar.png' width='15px' height='15px'></td><td                  >08 S&aacute;bado 16:30:00 hs</td><td      style="width:40px"  title="VENEVISION PLUS"            ><img src='./img/Logos/3339292.gif' width='40px' height='25px'></td></tr><tr   id="Domingo 0922:00:00-VENEVISION PLUS"   value="09"   title="Agendar"     onclick="verAgendar(this.id, 286096,914,'2022-10-09','22:00:00')"         ><td      style="width:15px"             ><img src='./img/2694/agendar.png' width='15px' height='15px'></td><td                  >09 Domingo 22:00:00 hs</td><td      style="width:40px"  title="VENEVISION PLUS"            ><img src='./img/Logos/3339292.gif' width='40px' height='25px'></td></tr><tr   id="Lunes 1000:00:00-VENEVISION PLUS"   value="10"   title="Agendar"     onclick="verAgendar(this.id, 286096,914,'2022-10-10','00:00:00')"         ><td      style="width:15px"             ><img src='./img/2694/agendar.png' width='15px' height='15px'></td><td                  >10 Lunes 00:00:00 hs</td><td      style="width:40px"  title="VENEVISION PLUS"            ><img src='./img/Logos/3339292.gif' width='40px' height='25px'></td></tr><tr   id="Lunes 1018:00:00-VENEVISION PLUS"   value="10"   title="Agendar"     onclick="verAgendar(this.id, 286096,914,'2022-10-10','18:00:00')"         ><td      style="width:15px"             ><img src='./img/2694/agendar.png' width='15px' height='15px'></td><td                  >10 Lunes 18:00:00 hs</td><td      style="width:40px"  title="VENEVISION PLUS"            ><img src='./img/Logos/3339292.gif' width='40px' height='25px'></td></tr><tr   id="Martes 1118:00:00-VENEVISION PLUS"   value="11"   title="Agendar"     onclick="verAgendar(this.id, 286096,914,'2022-10-11','18:00:00')"         ><td      style="width:15px"             ><img src='./img/2694/agendar.png' width='15px' height='15px'></td><td                  >11 Martes 18:00:00 hs</td><td      style="width:40px"  title="VENEVISION PLUS"            ><img src='./img/Logos/3339292.gif' width='40px' height='25px'></td></tr><tr   id="Mi&eacute;rcoles 1218:00:00-VENEVISION PLUS"   value="12"   title="Agendar"     onclick="verAgendar(this.id, 286096,914,'2022-10-12','18:00:00')"         ><td      style="width:15px"             ><img src='./img/2694/agendar.png' width='15px' height='15px'></td><td                  >12 Mi&eacute;rcoles 18:00:00 hs</td><td      style="width:40px"  title="VENEVISION PLUS"            ><img src='./img/Logos/3339292.gif' width='40px' height='25px'></td></tr><tr   id="Jueves 1318:00:00-VENEVISION PLUS"   value="13"   title="Agendar"     onclick="verAgendar(this.id, 286096,914,'2022-10-13','18:00:00')"         ><td      style="width:15px"             ><img src='./img/2694/agendar.png' width='15px' height='15px'></td><td                  >13 Jueves 18:00:00 hs</td><td      style="width:40px"  title="VENEVISION PLUS"            ><img src='./img/Logos/3339292.gif' width='40px' height='25px'></td></tr><tr   id="Viernes 1418:00:00-VENEVISION PLUS"   value="14"   title="Agendar"     onclick="verAgendar(this.id, 286096,914,'2022-10-14','18:00:00')"         ><td      style="width:15px"             ><img src='./img/2694/agendar.png' width='15px' height='15px'></td><td                  >14 Viernes 18:00:00 hs</td><td      style="width:40px"  title="VENEVISION PLUS"            ><img src='./img/Logos/3339292.gif' width='40px' height='25px'></td></tr><tr   id="S&aacute;bado 1506:00:00-VENEVISION PLUS"   value="15"   title="Agendar"     onclick="verAgendar(this.id, 286096,914,'2022-10-15','06:00:00')"         ><td      style="width:15px"             ><img src='./img/2694/agendar.png' width='15px' height='15px'></td><td                  >15 S&aacute;bado 06:00:00 hs</td><td      style="width:40px"  title="VENEVISION PLUS"            ><img src='./img/Logos/3339292.gif' width='40px' height='25px'></td></tr><tr   id="S&aacute;bado 1516:00:00-VENEVISION PLUS"   value="15"   title="Agendar"     onclick="verAgendar(this.id, 286096,914,'2022-10-15','16:00:00')"         ><td      style="width:15px"             ><img src='./img/2694/agendar.png' width='15px' height='15px'></td><td                  >15 S&aacute;bado 16:00:00 hs</td><td      style="width:40px"  title="VENEVISION PLUS"            ><img src='./img/Logos/3339292.gif' width='40px' height='25px'></td></tr><tr   id="S&aacute;bado 1516:30:00-VENEVISION PLUS"   value="15"   title="Agendar"     onclick="verAgendar(this.id, 286096,914,'2022-10-15','16:30:00')"         ><td      style="width:15px"             ><img src='./img/2694/agendar.png' width='15px' height='15px'></td><td                  >15 S&aacute;bado 16:30:00 hs</td><td      style="width:40px"  title="VENEVISION PLUS"            ><img src='./img/Logos/3339292.gif' width='40px' height='25px'></td></tr><tr   id="Domingo 1622:00:00-VENEVISION PLUS"   value="16"   title="Agendar"     onclick="verAgendar(this.id, 286096,914,'2022-10-16','22:00:00')"         ><td      style="width:15px"             ><img src='./img/2694/agendar.png' width='15px' height='15px'></td><td                  >16 Domingo 22:00:00 hs</td><td      style="width:40px"  title="VENEVISION PLUS"            ><img src='./img/Logos/3339292.gif' width='40px' height='25px'></td></tr><tr   id="Lunes 1700:00:00-VENEVISION PLUS"   value="17"   title="Agendar"     onclick="verAgendar(this.id, 286096,914,'2022-10-17','00:00:00')"         ><td      style="width:15px"             ><img src='./img/2694/agendar.png' width='15px' height='15px'></td><td                  >17 Lunes 00:00:00 hs</td><td      style="width:40px"  title="VENEVISION PLUS"            ><img src='./img/Logos/3339292.gif' width='40px' height='25px'></td></tr><tr   id="Lunes 1718:00:00-VENEVISION PLUS"   value="17"   title="Agendar"     onclick="verAgendar(this.id, 286096,914,'2022-10-17','18:00:00')"         ><td      style="width:15px"             ><img src='./img/2694/agendar.png' width='15px' height='15px'></td><td                  >17 Lunes 18:00:00 hs</td><td      style="width:40px"  title="VENEVISION PLUS"            ><img src='./img/Logos/3339292.gif' width='40px' height='25px'></td></tr><tr   id="Martes 1818:00:00-VENEVISION PLUS"   value="18"   title="Agendar"     onclick="verAgendar(this.id, 286096,914,'2022-10-18','18:00:00')"         ><td      style="width:15px"             ><img src='./img/2694/agendar.png' width='15px' height='15px'></td><td                  >18 Martes 18:00:00 hs</td><td      style="width:40px"  title="VENEVISION PLUS"            ><img src='./img/Logos/3339292.gif' width='40px' height='25px'></td></tr><tr   id="Mi&eacute;rcoles 1918:00:00-VENEVISION PLUS"   value="19"   title="Agendar"     onclick="verAgendar(this.id, 286096,914,'2022-10-19','18:00:00')"         ><td      style="width:15px"             ><img src='./img/2694/agendar.png' width='15px' height='15px'></td><td                  >19 Mi&eacute;rcoles 18:00:00 hs</td><td      style="width:40px"  title="VENEVISION PLUS"            ><img src='./img/Logos/3339292.gif' width='40px' height='25px'></td></tr><tr   id="Jueves 2018:00:00-VENEVISION PLUS"   value="20"   title="Agendar"     onclick="verAgendar(this.id, 286096,914,'2022-10-20','18:00:00')"         ><td      style="width:15px"             ><img src='./img/2694/agendar.png' width='15px' height='15px'></td><td                  >20 Jueves 18:00:00 hs</td><td      style="width:40px"  title="VENEVISION PLUS"            ><img src='./img/Logos/3339292.gif' width='40px' height='25px'></td></tr><tr   id="Viernes 2118:00:00-VENEVISION PLUS"   value="21"   title="Agendar"     onclick="verAgendar(this.id, 286096,914,'2022-10-21','18:00:00')"         ><td      style="width:15px"             ><img src='./img/2694/agendar.png' width='15px' height='15px'></td><td                  >21 Viernes 18:00:00 hs</td><td      style="width:40px"  title="VENEVISION PLUS"            ><img src='./img/Logos/3339292.gif' width='40px' height='25px'></td></tr><tr   id="S&aacute;bado 2206:00:00-VENEVISION PLUS"   value="22"   title="Agendar"     onclick="verAgendar(this.id, 286096,914,'2022-10-22','06:00:00')"         ><td      style="width:15px"             ><img src='./img/2694/agendar.png' width='15px' height='15px'></td><td                  >22 S&aacute;bado 06:00:00 hs</td><td      style="width:40px"  title="VENEVISION PLUS"            ><img src='./img/Logos/3339292.gif' width='40px' height='25px'></td></tr><tr   id="S&aacute;bado 2216:00:00-VENEVISION PLUS"   value="22"   title="Agendar"     onclick="verAgendar(this.id, 286096,914,'2022-10-22','16:00:00')"         ><td      style="width:15px"             ><img src='./img/2694/agendar.png' width='15px' height='15px'></td><td                  >22 S&aacute;bado 16:00:00 hs</td><td      style="width:40px"  title="VENEVISION PLUS"            ><img src='./img/Logos/3339292.gif' width='40px' height='25px'></td></tr><tr   id="S&aacute;bado 2216:30:00-VENEVISION PLUS"   value="22"   title="Agendar"     onclick="verAgendar(this.id, 286096,914,'2022-10-22','16:30:00')"         ><td      style="width:15px"             ><img src='./img/2694/agendar.png' width='15px' height='15px'></td><td                  >22 S&aacute;bado 16:30:00 hs</td><td      style="width:40px"  title="VENEVISION PLUS"            ><img src='./img/Logos/3339292.gif' width='40px' height='25px'></td></tr><tr   id="Domingo 2322:00:00-VENEVISION PLUS"   value="23"   title="Agendar"     onclick="verAgendar(this.id, 286096,914,'2022-10-23','22:00:00')"         ><td      style="width:15px"             ><img src='./img/2694/agendar.png' width='15px' height='15px'></td><td                  >23 Domingo 22:00:00 hs</td><td      style="width:40px"  title="VENEVISION PLUS"            ><img src='./img/Logos/3339292.gif' width='40px' height='25px'></td></tr><tr   id="Lunes 2400:00:00-VENEVISION PLUS"   value="24"   title="Agendar"     onclick="verAgendar(this.id, 286096,914,'2022-10-24','00:00:00')"         ><td      style="width:15px"             ><img src='./img/2694/agendar.png' width='15px' height='15px'></td><td                  >24 Lunes 00:00:00 hs</td><td      style="width:40px"  title="VENEVISION PLUS"            ><img src='./img/Logos/3339292.gif' width='40px' height='25px'></td></tr><tr   id="Lunes 2418:00:00-VENEVISION PLUS"   value="24"   title="Agendar"     onclick="verAgendar(this.id, 286096,914,'2022-10-24','18:00:00')"         ><td      style="width:15px"             ><img src='./img/2694/agendar.png' width='15px' height='15px'></td><td                  >24 Lunes 18:00:00 hs</td><td      style="width:40px"  title="VENEVISION PLUS"            ><img src='./img/Logos/3339292.gif' width='40px' height='25px'></td></tr><tr   id="Martes 2518:00:00-VENEVISION PLUS"   value="25"   title="Agendar"     onclick="verAgendar(this.id, 286096,914,'2022-10-25','18:00:00')"         ><td      style="width:15px"             ><img src='./img/2694/agendar.png' width='15px' height='15px'></td><td                  >25 Martes 18:00:00 hs</td><td      style="width:40px"  title="VENEVISION PLUS"            ><img src='./img/Logos/3339292.gif' width='40px' height='25px'></td></tr><tr   id="Mi&eacute;rcoles 2618:00:00-VENEVISION PLUS"   value="26"   title="Agendar"     onclick="verAgendar(this.id, 286096,914,'2022-10-26','18:00:00')"         ><td      style="width:15px"             ><img src='./img/2694/agendar.png' width='15px' height='15px'></td><td                  >26 Mi&eacute;rcoles 18:00:00 hs</td><td      style="width:40px"  title="VENEVISION PLUS"            ><img src='./img/Logos/3339292.gif' width='40px' height='25px'></td></tr><tr   id="Jueves 2718:00:00-VENEVISION PLUS"   value="27"   title="Agendar"     onclick="verAgendar(this.id, 286096,914,'2022-10-27','18:00:00')"         ><td      style="width:15px"             ><img src='./img/2694/agendar.png' width='15px' height='15px'></td><td                  >27 Jueves 18:00:00 hs</td><td      style="width:40px"  title="VENEVISION PLUS"            ><img src='./img/Logos/3339292.gif' width='40px' height='25px'></td></tr><tr   id="Viernes 2818:00:00-VENEVISION PLUS"   value="28"   title="Agendar"     onclick="verAgendar(this.id, 286096,914,'2022-10-28','18:00:00')"         ><td      style="width:15px"             ><img src='./img/2694/agendar.png' width='15px' height='15px'></td><td                  >28 Viernes 18:00:00 hs</td><td      style="width:40px"  title="VENEVISION PLUS"            ><img src='./img/Logos/3339292.gif' width='40px' height='25px'></td></tr><tr   id="S&aacute;bado 2906:00:00-VENEVISION PLUS"   value="29"   title="Agendar"     onclick="verAgendar(this.id, 286096,914,'2022-10-29','06:00:00')"         ><td      style="width:15px"             ><img src='./img/2694/agendar.png' width='15px' height='15px'></td><td                  >29 S&aacute;bado 06:00:00 hs</td><td      style="width:40px"  title="VENEVISION PLUS"            ><img src='./img/Logos/3339292.gif' width='40px' height='25px'></td></tr><tr   id="S&aacute;bado 2916:00:00-VENEVISION PLUS"   value="29"   title="Agendar"     onclick="verAgendar(this.id, 286096,914,'2022-10-29','16:00:00')"         ><td      style="width:15px"             ><img src='./img/2694/agendar.png' width='15px' height='15px'></td><td                  >29 S&aacute;bado 16:00:00 hs</td><td      style="width:40px"  title="VENEVISION PLUS"            ><img src='./img/Logos/3339292.gif' width='40px' height='25px'></td></tr><tr   id="S&aacute;bado 2916:30:00-VENEVISION PLUS"   value="29"   title="Agendar"     onclick="verAgendar(this.id, 286096,914,'2022-10-29','16:30:00')"         ><td      style="width:15px"             ><img src='./img/2694/agendar.png' width='15px' height='15px'></td><td                  >29 S&aacute;bado 16:30:00 hs</td><td      style="width:40px"  title="VENEVISION PLUS"            ><img src='./img/Logos/3339292.gif' width='40px' height='25px'></td></tr><tr   id="Domingo 3022:00:00-VENEVISION PLUS"   value="30"   title="Agendar"     onclick="verAgendar(this.id, 286096,914,'2022-10-30','22:00:00')"         ><td      style="width:15px"             ><img src='./img/2694/agendar.png' width='15px' height='15px'></td><td                  >30 Domingo 22:00:00 hs</td><td      style="width:40px"  title="VENEVISION PLUS"            ><img src='./img/Logos/3339292.gif' width='40px' height='25px'></td></tr><tr   id="Lunes 3100:00:00-VENEVISION PLUS"   value="31"   title="Agendar"     onclick="verAgendar(this.id, 286096,914,'2022-10-31','00:00:00')"         ><td      style="width:15px"             ><img src='./img/2694/agendar.png' width='15px' height='15px'></td><td                  >31 Lunes 00:00:00 hs</td><td      style="width:40px"  title="VENEVISION PLUS"            ><img src='./img/Logos/3339292.gif' width='40px' height='25px'></td></tr><tr   id="Lunes 3118:00:00-VENEVISION PLUS"   value="31"   title="Agendar"     onclick="verAgendar(this.id, 286096,914,'2022-10-31','18:00:00')"         ><td      style="width:15px"             ><img src='./img/2694/agendar.png' width='15px' height='15px'></td><td                  >31 Lunes 18:00:00 hs</td><td      style="width:40px"  title="VENEVISION PLUS"            ><img src='./img/Logos/3339292.gif' width='40px' height='25px'></td></tr></table></div> 
+        </div>
+    </div>  
+</div>
