@@ -34,6 +34,9 @@ module.exports = {
         actors: details.actors,
         icon: details.icon,
         category: details.category,
+        sub_title: details.sub_title,
+        season: details.season,
+        episode: details.episode,
         start,
         stop
       })
@@ -88,7 +91,10 @@ async function loadProgramDetails($item) {
     icon: parseIcon($),
     actors: parseActors($),
     description: parseDescription($),
-    category: parseCategory($)
+    category: parseCategory($),
+    sub_title: parseSubTitle($),
+    season: parseSeason($),
+    episode: parseEpisode($)
   })
 }
 
@@ -97,6 +103,30 @@ function parseIcon($) {
   const [_, url] = style.match(/background-image\: url\('([^']+)'\)/)
 
   return url
+}
+
+function parseSeason($) {
+  const [_, season] = $('.sub-title')
+    .text()
+    .trim()
+    .match(/Säsong (\d+)/) || [null, '']
+
+  return parseInt(season)
+}
+
+function parseEpisode($) {
+  const [_, episode] = $('.sub-title')
+    .text()
+    .trim()
+    .match(/Avsnitt (\d+)/) || [null, '']
+
+  return parseInt(episode)
+}
+
+function parseSubTitle($) {
+  const [_, subtitle] = $('.sub-title').text().trim().split(': ')
+
+  return subtitle
 }
 
 function parseCategory($) {
