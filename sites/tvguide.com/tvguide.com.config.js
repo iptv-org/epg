@@ -37,7 +37,8 @@ function parseTime(timestamp) {
 }
 
 function parseItems(content) {
-  const json = JSON.parse(content)
+  const data = JSON.parse(content)
+  if (!Array.isArray(data.data.items) || !data.data.items.length) return []
 
-  return json.data.items[0].programSchedules
+  return data.data.items[0].programSchedules
 }
