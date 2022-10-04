@@ -12,10 +12,10 @@ module.exports = {
   url: function ({ channel, date }) {
     return `https://tv24.se/x/channel/${channel.site_id}/0/${date.format('YYYY-MM-DD')}`
   },
-  parser: function ({ content, date }) {
+  parser: async function ({ content, date }) {
     let programs = []
     const items = parseItems(content)
-    items.forEach(item => {
+    for (let item of items) {
       const prev = programs[programs.length - 1]
       const $item = cheerio.load(item)
       let start = parseStart($item, date)
@@ -27,13 +27,17 @@ module.exports = {
         prev.stop = start
       }
       const stop = start.add(30, 'm')
+      const details = await loadProgramDetails($item)
       programs.push({
         title: parseTitle($item),
-        description: parseDescription($item),
+        description: details.description,
+        actors: details.actors,
+        icon: details.icon,
+        category: details.category,
         start,
         stop
       })
-    })
+    }
 
     return programs
   },
@@ -71,12 +75,48 @@ module.exports = {
   }
 }
 
-function parseTitle($item) {
-  return $item('h3').text()
+async function loadProgramDetails($item) {
+  const programId = $item('a').attr('href')
+  const data = await axios
+    .get(`https://tv24.se/x${programId}/0/0`)
+    .then(r => r.data)
+    .catch(console.error)
+  if (!data) return Promise.resolve({})
+  const $ = cheerio.load(data.contentBefore + data.contentAfter)
+
+  return Promise.resolve({
+    icon: parseIcon($),
+    actors: parseActors($),
+    description: parseDescription($),
+    category: parseCategory($)
+  })
 }
 
-function parseDescription($item) {
-  return $item('p').text()
+function parseIcon($) {
+  const style = $('.image > .actual').attr('style')
+  const [_, url] = style.match(/background-image\: url\('([^']+)'\)/)
+
+  return url
+}
+
+function parseCategory($) {
+  return $('.extras > dt:contains(Kategori)').next().text().trim().split(' / ')
+}
+
+function parseActors($) {
+  return $('.cast > li')
+    .map((i, el) => {
+      return $(el).find('.name').text().trim()
+    })
+    .get()
+}
+
+function parseDescription($) {
+  return $('.info > p').text().trim()
+}
+
+function parseTitle($item) {
+  return $item('h3').text()
 }
 
 function parseStart($item, date) {
