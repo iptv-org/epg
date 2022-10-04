@@ -65,7 +65,10 @@ it('can parse response', async () => {
     description:
       'När samtliga sex män frias för ännu en skjutning växer vreden inom polisen. Ökningen av skjutningar i Sverige ligger i topp i Europa - och nu är våldsspiralen på väg mot ett nattsvart rekord. Hur blev Sverige landet där mördare går fria?',
     actors: ['Karin Mattisson', 'Ali Fegan'],
-    category: ['Dokumentär', 'Samhällsfrågor']
+    category: ['Dokumentär', 'Samhällsfrågor'],
+    season: 23,
+    episode: 5,
+    sub_title: 'Där mördare går fria'
   })
 })
 
