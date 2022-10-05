@@ -20,14 +20,14 @@ jest.mock('axios')
 it('can generate valid url for today', () => {
   const today = dayjs.utc().startOf('d')
   expect(url({ channel, date: today })).toBe(
-    'https://hodor.canalplus.pro/api/v2/mycanal/channels/c71b6b8eb30125dab9d10a3850131ac6/312/broadcasts/day/0'
+    'https://hodor.canalplus.pro/api/v2/mycanal/channels/da2291af3b10e9900d1c55e1a65d3388/312/broadcasts/day/0'
   )
 })
 
 it('can generate valid url for tomorrow', () => {
   const tomorrow = dayjs.utc().startOf('d').add(1, 'd')
   expect(url({ channel, date: tomorrow })).toBe(
-    'https://hodor.canalplus.pro/api/v2/mycanal/channels/c71b6b8eb30125dab9d10a3850131ac6/312/broadcasts/day/1'
+    'https://hodor.canalplus.pro/api/v2/mycanal/channels/da2291af3b10e9900d1c55e1a65d3388/312/broadcasts/day/1'
   )
 })
 
@@ -37,7 +37,7 @@ it('can parse response', done => {
   axios.get.mockImplementation(url => {
     if (
       url ===
-      'https://hodor.canalplus.pro/api/v2/mycanal/detail/c71b6b8eb30125dab9d10a3850131ac6/okapi/10709339_50061.json?detailType=detailSeason&objectType=season&broadcastID=PLM_1094261940&episodeId=18257183_50061&brandID=10709960_50061&fromDiff=true'
+      'https://hodor.canalplus.pro/api/v2/mycanal/detail/da2291af3b10e9900d1c55e1a65d3388/okapi/10709339_50061.json?detailType=detailSeason&objectType=season&broadcastID=PLM_1094261940&episodeId=18257183_50061&brandID=10709960_50061&fromDiff=true'
     ) {
       return Promise.resolve({
         data: JSON.parse(
@@ -46,7 +46,7 @@ it('can parse response', done => {
       })
     } else if (
       url ===
-      'https://hodor.canalplus.pro/api/v2/mycanal/detail/c71b6b8eb30125dab9d10a3850131ac6/okapi/18257202_50061.json?detailType=detailPage&objectType=unit&broadcastID=PLM_1094380194&fromDiff=true'
+      'https://hodor.canalplus.pro/api/v2/mycanal/detail/da2291af3b10e9900d1c55e1a65d3388/okapi/18257202_50061.json?detailType=detailPage&objectType=unit&broadcastID=PLM_1094380194&fromDiff=true'
     ) {
       return Promise.resolve({
         data: JSON.parse(
