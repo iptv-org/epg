@@ -4,7 +4,8 @@ const axios = require('axios')
 // TODO: calculate API_KEY based on the current date
 //
 // const API_KEY = 'f55e5c7ddf0afba59d1c64581358910d' // 03.2022
-const API_KEY = 'c71b6b8eb30125dab9d10a3850131ac6' // 05.2022
+//const API_KEY = 'c71b6b8eb30125dab9d10a3850131ac6' // 05.2022
+const API_KEY = 'da2291af3b10e9900d1c55e1a65d3388' // 10.2022
 
 module.exports = {
   site: 'canalplus.com',
