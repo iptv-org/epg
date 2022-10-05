@@ -1,4 +1,4 @@
-const FormData = require('form-data')
+const _ = require('lodash')
 const axios = require('axios')
 const cheerio = require('cheerio')
 const dayjs = require('dayjs')
@@ -16,8 +16,7 @@ module.exports = {
   request: {
     method: 'POST',
     data: function ({ channel, date }) {
-      const formData = new FormData()
-      formData.setBoundary('X-EPG-BOUNDARY')
+      const formData = new URLSearchParams()
       formData.append('search_model', 'channel')
       formData.append('af0rmelement', 'aformelement')
       formData.append('fdate', date.format('YYYY-MM-DD'))
@@ -27,29 +26,36 @@ module.exports = {
       return formData
     },
     headers: {
-      'Content-Type': 'multipart/form-data; boundary=X-EPG-BOUNDARY'
-    }
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
+    jar: null
   },
   async parser({ content, date, headers, channel }) {
     const programs = []
+    const cookies = parseCookies(headers)
+    if (!cookies) return programs
     let items = parseItems(content)
     if (!items.length) return programs
 
     const pages = parsePages(content)
-    const cookies = headers && headers['set-cookie'] ? headers['set-cookie'].join(';') : ''
     for (let url of pages) {
       items = items.concat(parseItems(await loadNextPage(url, cookies)))
     }
 
     const langCookies = await loadLangCookies(channel)
+    if (!langCookies) return programs
 
     for (const item of items) {
-      const start = parseStart(item, date)
-      const duration = parseDuration(item)
+      const $item = cheerio.load(item)
+      const start = parseStart($item, date)
+      const duration = parseDuration($item)
       const stop = start.add(duration, 'm')
+      const description = await loadDescription($item, langCookies)
       programs.push({
-        title: parseTitle(item),
-        description: await loadDescription(item, langCookies),
+        title: parseTitle($item),
+        season: parseSeason($item),
+        episode: parseEpisode($item),
+        description,
         start,
         stop
       })
@@ -61,7 +67,7 @@ module.exports = {
     const data = await axios
       .get('https://www.mncvision.id/schedule')
       .then(response => response.data)
-      .catch(console.log)
+      .catch(console.error)
 
     const $ = cheerio.load(data)
     const items = $('select[name="fchannel"] option').toArray()
@@ -79,46 +85,22 @@ module.exports = {
   }
 }
 
-async function loadNextPage(url, cookies) {
-  return axios
-    .get(url, {
-      headers: {
-        Cookie: cookies
-      }
-    })
-    .then(r => r.data)
-    .catch(console.log)
+function parseSeason($item) {
+  const title = parseTitle($item)
+  const [_, season] = title.match(/ S(\d+)/) || [null, null]
+
+  return season ? parseInt(season) : null
 }
 
-async function loadLangCookies(channel) {
-  const lang = channel.lang === 'en' ? 'english' : 'indonesia'
-  const url = `https://www.mncvision.id/language_switcher/setlang/${lang}/`
+function parseEpisode($item) {
+  const title = parseTitle($item)
+  const [_, episode] = title.match(/ Ep (\d+)/) || [null, null]
 
-  return axios
-    .get(url)
-    .then(r => r.headers['set-cookie'].join(';'))
-    .catch(console.error)
+  return episode ? parseInt(episode) : null
 }
 
-async function loadDescription(item, cookies) {
-  const $item = cheerio.load(item)
-  const progUrl = $item('a').attr('href')
-  if (!progUrl) return null
-  const data = await axios
-    .get(progUrl, { headers: { 'X-Requested-With': 'XMLHttpRequest', Cookie: cookies } })
-    .then(r => r.data)
-    .catch(console.log)
-  if (!data) return null
-  const $page = cheerio.load(data)
-  const description = $page('.synopsis').text().trim()
-  if (description === '-') return null
-
-  return description
-}
-
-function parseDuration(item) {
-  const $ = cheerio.load(item)
-  let duration = $('td:nth-child(3)').text()
+function parseDuration($item) {
+  let duration = $item('td:nth-child(3)').text()
   const match = duration.match(/(\d{2}):(\d{2})/)
   const hours = parseInt(match[1])
   const minutes = parseInt(match[2])
@@ -126,18 +108,15 @@ function parseDuration(item) {
   return hours * 60 + minutes
 }
 
-function parseStart(item, date) {
-  const $ = cheerio.load(item)
-  let time = $('td:nth-child(1)').text()
+function parseStart($item, date) {
+  let time = $item('td:nth-child(1)').text()
   time = `${date.format('DD/MM/YYYY')} ${time}`
 
   return dayjs.tz(time, 'DD/MM/YYYY HH:mm', 'Asia/Jakarta')
 }
 
-function parseTitle(item) {
-  const $ = cheerio.load(item)
-
-  return $('td:nth-child(2) > a').text()
+function parseTitle($item) {
+  return $item('td:nth-child(2) > a').text()
 }
 
 function parseItems(content) {
@@ -148,13 +127,57 @@ function parseItems(content) {
 
 function parsePages(content) {
   const $ = cheerio.load(content)
-  const links = $('#schedule > div.schedule_search_result_container > div.box.well > a').toArray()
+  const links = $('#schedule > div.schedule_search_result_container > div.box.well > a')
+    .map((i, el) => {
+      return $(el).attr('href')
+    })
+    .get()
 
-  const pages = {}
-  for (let link of links) {
-    const url = $(link).attr('href')
-    pages[url] = true
+  return _.uniq(links)
+}
+
+function loadNextPage(url, cookies) {
+  return axios
+    .get(url, { headers: { Cookie: cookies }, timeout: 30000 })
+    .then(r => r.data)
+    .catch(err => {
+      console.log(err.message)
+
+      return null
+    })
+}
+
+function loadLangCookies(channel) {
+  const languages = {
+    en: 'english',
+    id: 'indonesia'
   }
+  const url = `https://www.mncvision.id/language_switcher/setlang/${languages[channel.lang]}/`
 
-  return Object.keys(pages)
+  return axios
+    .get(url, { timeout: 30000 })
+    .then(r => parseCookies(r.headers))
+    .catch(err => null)
+}
+
+async function loadDescription($item, cookies) {
+  const url = $item('a').attr('href')
+  if (!url) return null
+  const content = await axios
+    .get(url, {
+      headers: { 'X-Requested-With': 'XMLHttpRequest', Cookie: cookies },
+      timeout: 30000
+    })
+    .then(r => r.data)
+    .catch(err => null)
+  if (!content) return null
+
+  const $page = cheerio.load(content)
+  const description = $page('.synopsis').text().trim()
+
+  return description !== '-' ? description : null
+}
+
+function parseCookies(headers) {
+  return Array.isArray(headers['set-cookie']) ? headers['set-cookie'].join(';') : null
 }
