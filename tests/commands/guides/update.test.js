@@ -28,6 +28,14 @@ it('can generate /guides', () => {
   compressed.forEach(filepath => {
     expect(content(`output/${filepath}`), filepath).toBe(content(`expected/${filepath}`))
   })
+
+  const json = glob
+    .sync('tests/__data__/expected/guides/**/*.json')
+    .map(f => f.replace('tests/__data__/expected/', ''))
+
+  json.forEach(filepath => {
+    expect(content(`output/${filepath}`), filepath).toBe(content(`expected/${filepath}`))
+  })
 })
 
 it('will terminate process if programs not found', () => {
