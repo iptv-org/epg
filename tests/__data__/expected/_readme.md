@@ -17,13 +17,7 @@ To load a program guide, all you need to do is copy the link to one or more of t
   </tbody>
 </table>
 
-## API
-
-The API documentation can be found in the [iptv-org/api](https://github.com/iptv-org/api) repository.
-
-## Resources
-
-Links to other useful IPTV-related resources can be found in the [iptv-org/awesome-iptv](https://github.com/iptv-org/awesome-iptv) repository.
+All guides also have a JSON version. To download it, just change the extension from `.xml.gz` to `.json`.
 
 ## Contribution
 
