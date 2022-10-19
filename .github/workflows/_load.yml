@@ -16,10 +16,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: npm run api:load
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v3
         if: ${{ !env.ACT }}
         with:
-          node-version: '14'
+          node-version: 16
           cache: 'npm'
       - run: npm install
       - run: CHANNELS_PATH=sites/${{inputs.site}}/*.channels.xml npm run queue:create -- --max-clusters=1 --days=2
@@ -32,7 +32,7 @@ jobs:
         with:
           app_id: ${{ secrets.APP_ID }}
           private_key: ${{ secrets.APP_PRIVATE_KEY }}
-      - uses: JamesIves/github-pages-deploy-action@v4.3.3
+      - uses: JamesIves/github-pages-deploy-action@v4.4.1
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
         with:
           branch: gh-pages
