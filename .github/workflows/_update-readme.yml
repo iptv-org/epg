@@ -8,15 +8,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: echo "::set-output name=branch_name::$(date +'bot/auto-update-%s')"
+        run: echo "branch_name=$(date +'bot/auto-update-%s')" >> $GITHUB_OUTPUT
         id: create-branch-name
       - run: git config user.name 'iptv-bot[bot]'
       - run: git config user.email '84861620+iptv-bot[bot]@users.noreply.github.com'
       - run: git checkout -b ${{ steps.create-branch-name.outputs.branch_name }}
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v3
         if: ${{ !env.ACT }}
         with:
-          node-version: '14'
+          node-version: 16
           cache: 'npm'
       - run: npm install
       - run: npm run api:load

@@ -21,10 +21,10 @@ jobs:
         id: files
         with:
           files: sites/**/*.channels.xml
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v3
         if: ${{ !env.ACT && steps.files.outputs.any_changed == 'true' }}
         with:
-          node-version: '14'
+          node-version: 16
           cache: 'npm'
       - name: validate
         if: steps.files.outputs.any_changed == 'true'
