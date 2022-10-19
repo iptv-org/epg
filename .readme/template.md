@@ -9,7 +9,7 @@ To load a program guide, all you need to do is copy the link to one or more of t
 <!-- prettier-ignore -->
 #include "./.readme/_countries.md"
 
-All guides also have a JSON version. To download it, just change the extension from `.xml.gz` to `.json`.
+All guides also have a compressed and JSON version. To download them, simply change the extension from `.xml` to `.xml.gz` or `.json` respectively.
 
 ## Contribution
 
