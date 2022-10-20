@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site site="tv.blue.ch">
   <channels>
-    <channel lang="ar" xmltv_id="2MMonde.ma" site_id="3">2M Monde</channel>
+    <channel lang="ar" xmltv_id="2MInternational.ma" site_id="3">2M Monde</channel>
     <channel lang="ar" xmltv_id="Alarabiya.ae" site_id="13">Alarabiya</channel>
     <channel lang="ar" xmltv_id="AlJazeeraChannel.qa" site_id="14">Aljazeera Channel</channel>
     <channel lang="ar" xmltv_id="AlMasriyah.eg" site_id="154">Al Masriyah</channel>
@@ -63,7 +63,7 @@
     <channel lang="de" xmltv_id="Eurosport1Germany.de" site_id="167">Eurosport 1 Germany</channel>
     <channel lang="de" xmltv_id="Eurosport2.fr" site_id="170">Eurosport 2</channel>
     <channel lang="de" xmltv_id="FixFoxi.de" site_id="1792">Fix &amp; Foxi</channel>
-    <channel lang="de" xmltv_id="Folx.de" site_id="180">Folx</channel>
+    <channel lang="de" xmltv_id="FolxMusicTelevision.de" site_id="180">Folx</channel>
     <channel lang="de" xmltv_id="GameTV.ch" site_id="1224">Game TV</channel>
     <channel lang="de" xmltv_id="GeoTV.de" site_id="1333">Geo TV</channel>
     <channel lang="de" xmltv_id="GoldstarTVGermany.de" site_id="1786">Goldstar TV</channel>
@@ -110,7 +110,7 @@
     <channel lang="de" xmltv_id="NitroGermany.de" site_id="363">Nitro Deutschland</channel>
     <channel lang="de" xmltv_id="ntv.de" site_id="297">N-TV</channel>
     <channel lang="de" xmltv_id="One.de" site_id="147">One</channel>
-    <channel lang="de" xmltv_id="One1MusicTV.de" site_id="1790">One 1 Music TV</channel>
+    <channel lang="de" xmltv_id="OneMusicTelevision.de" site_id="1790">One 1 Music TV</channel>
     <channel lang="de" xmltv_id="ORF1.at" site_id="303">ORF 1</channel>
     <channel lang="de" xmltv_id="ORF2.at" site_id="302">ORF 2</channel>
     <channel lang="de" xmltv_id="ORFIII.at" site_id="1222">ORF III</channel>
@@ -197,7 +197,7 @@
     <channel lang="de" xmltv_id="ZDF.de" site_id="656">ZDF</channel>
     <channel lang="de" xmltv_id="ZDFinfo.de" site_id="658">ZDF Info</channel>
     <channel lang="de" xmltv_id="ZDFneo.de" site_id="659">ZDF Neo</channel>
-    <channel lang="de" xmltv_id="Zwei2MusicTV.de" site_id="1791">Zwei 2 Music TV</channel>
+    <channel lang="de" xmltv_id="ZweiMusicTelevision.de" site_id="1791">Zwei 2 Music TV</channel>
     <channel lang="el" xmltv_id="ERTWorld.gr" site_id="153">ERT World</channel>
     <channel lang="el" xmltv_id="RIKSat.cy" site_id="351">RIK Sat</channel>
     <channel lang="en" xmltv_id="4Seven.uk" site_id="1678">4Seven</channel>
@@ -266,7 +266,7 @@
     <channel lang="en" xmltv_id="PBSAmerica.uk" site_id="1404">PBS America</channel>
     <channel lang="en" xmltv_id="PickUK.uk" site_id="1677">Pick UK</channel>
     <channel lang="en" xmltv_id="QuestUK.uk" site_id="1604">Quest UK</channel>
-    <channel lang="en" xmltv_id="RTNews.ru" site_id="373">RT News</channel>
+    <channel lang="en" xmltv_id="RT.ru" site_id="373">RT News</channel>
     <channel lang="en" xmltv_id="SkyNewsInternational.uk" site_id="390">Sky News International</channel>
     <channel lang="en" xmltv_id="SmithsonianChannelUK.uk" site_id="1490">Smithsonian Channel UK</channel>
     <channel lang="en" xmltv_id="StingrayFestival4K.ca" site_id="1257">Stingray Festival 4K</channel>
@@ -362,7 +362,7 @@
     <channel lang="fr" xmltv_id="M6Switzerland.ch" site_id="249">M6 Suisse</channel>
     <channel lang="fr" xmltv_id="Mangas.fr" site_id="252">Mangas</channel>
     <channel lang="fr" xmltv_id="MaxTV.ch" site_id="253">Max TV</channel>
-    <channel lang="fr" xmltv_id="MCMFrance.fr" site_id="1532">MCM France</channel>
+    <channel lang="fr" xmltv_id="MCM.fr" site_id="1532">MCM France</channel>
     <channel lang="fr" xmltv_id="MCMTop.fr" site_id="255">MCM Top</channel>
     <channel lang="fr" xmltv_id="Melody.fr" site_id="1761">Melody</channel>
     <channel lang="fr" xmltv_id="Mezzo.fr" site_id="258">Mezzo</channel>
@@ -416,7 +416,7 @@
     <channel lang="fr" xmltv_id="TF1SeriesFilms.fr" site_id="199">TF 1 Séries Films</channel>
     <channel lang="fr" xmltv_id="TF1Switzerland.ch" site_id="601">TF 1 Suisse</channel>
     <channel lang="fr" xmltv_id="TFXSwitzerland.ch" site_id="295">TFX Suisse</channel>
-    <channel lang="fr" xmltv_id="Tiji.fr" site_id="605">Tiji</channel>
+    <channel lang="fr" xmltv_id="TiJi.fr" site_id="605">Tiji</channel>
     <channel lang="fr" xmltv_id="TMCSwitzerland.ch" site_id="609">TMC Suisse</channel>
     <channel lang="fr" xmltv_id="ToonamiFrance.fr" site_id="1330">Toonami France</channel>
     <channel lang="fr" xmltv_id="ToutelHistoire.fr" site_id="615">Toute l&apos;Histoire</channel>
@@ -544,8 +544,8 @@
     <channel lang="ro" xmltv_id="Digi24.ro" site_id="1650">Digi 24</channel>
     <channel lang="ro" xmltv_id="ProTVInternational.ro" site_id="321">Pro TV International</channel>
     <channel lang="ro" xmltv_id="TVRInternational.ro" site_id="631">TVR International</channel>
-    <channel lang="ru" xmltv_id="ChannelOneEuropa.ru" site_id="90">Perviy kanal Europa</channel>
-    <channel lang="ru" xmltv_id="KaruselInternational.ru" site_id="1676">Karusel International</channel>
+    <channel lang="ru" xmltv_id="ChannelOne.ru" site_id="90">Perviy kanal Europa</channel>
+    <channel lang="ru" xmltv_id="Karusel.ru" site_id="1676">Karusel International</channel>
     <channel lang="ru" xmltv_id="NashKinomir.de" site_id="229">Nash Kinomir</channel>
     <channel lang="ru" xmltv_id="OstWest.de" site_id="922">Ost West</channel>
     <channel lang="ru" xmltv_id="RTRPlaneta.ru" site_id="366">RTR Planeta</channel>

@@ -7,11 +7,11 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         if: ${{ !env.ACT }}
         with:
-          node-version: '14'
+          node-version: 16
           cache: 'npm'
       - run: npm install
       - run: npm run api:update
@@ -21,7 +21,7 @@ jobs:
         with:
           app_id: ${{ secrets.APP_ID }}
           private_key: ${{ secrets.APP_PRIVATE_KEY }}
-      - uses: JamesIves/github-pages-deploy-action@4.1.1
+      - uses: JamesIves/github-pages-deploy-action@v4.4.1
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
         with:
           repository-name: iptv-org/api
