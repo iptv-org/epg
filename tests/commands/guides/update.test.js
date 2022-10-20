@@ -21,6 +21,14 @@ it('can generate /guides', () => {
     { encoding: 'utf8' }
   )
 
+  const uncompressed = glob
+    .sync('tests/__data__/expected/guides/**/*.epg.xml')
+    .map(f => f.replace('tests/__data__/expected/', ''))
+
+  uncompressed.forEach(filepath => {
+    expect(content(`output/${filepath}`), filepath).toBe(content(`expected/${filepath}`))
+  })
+
   const compressed = glob
     .sync('tests/__data__/expected/guides/**/*.epg.xml.gz')
     .map(f => f.replace('tests/__data__/expected/', ''))
@@ -51,22 +59,7 @@ it('will terminate process if programs not found', () => {
     process.exit(1)
   } catch (err) {
     expect(err.status).toBe(1)
-    expect(err.stdout).toBe(`
-> guides:update
-> node scripts/commands/guides/update.js
-
-Generating guides/...
-Loading \"database/programs.db\"...
-Loading queue...
-Creating \"tests/__data__/output/guides/us/directv.com.epg.xml.gz\"...
-Creating \"tests/__data__/output/guides/fr/chaines-tv.orange.fr.epg.xml.gz\"...
-Creating \"tests/__data__/output/guides/bh/chaines-tv.orange.fr.epg.xml.gz\"...
-Creating \"tests/__data__/output/guides/ge/magticom.ge.epg.xml.gz\"...
-Creating \"tests/__data__/output/guides/ru/yandex.ru.epg.xml.gz\"...
-Creating \"tests/__data__/output/guides/zw/dstv.com.epg.xml.gz\"...
-
-Error: No programs found
-`)
+    expect(err.stdout.includes('Error: No programs found')).toBe(true)
   }
 })
 
