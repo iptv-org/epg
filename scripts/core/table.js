@@ -1,35 +1,47 @@
 const table = {}
 
 table.create = function (data, cols) {
-  let output = '<table>\n'
+  let output = '<table>\r\n'
 
-  output += '  <thead>\n    <tr>'
+  output += '  <thead>\r\n    <tr>'
   for (let column of cols) {
-    output += `<th>${column}</th>`
+    output += `<th align="left">${column}</th>`
   }
-  output += '</tr>\n  </thead>\n'
+  output += '</tr>\r\n  </thead>\r\n'
 
-  output += '  <tbody>\n'
-  for (let groupId in data) {
-    const group = data[groupId]
-    for (let [i, item] of group.entries()) {
-      const rowspan = group.length > 1 ? ` rowspan="${group.length}"` : ''
-      output += '    <tr>'
-      if (i === 0) {
-        const name = item.flag ? `${item.flag}&nbsp;${item.name}` : item.name
-        output += `<td valign="top"${rowspan}>${name}</td>`
-      }
-      output += `<td align="right">${item.channels}</td>`
-      output += `<td nowrap>${item.epg}</td>`
-      output += `<td>${item.status}</td>`
-      output += '</tr>\n'
-    }
-  }
-  output += '  </tbody>\n'
+  output += '  <tbody>\r\n'
+  output += getHTMLRows(data)
+  output += '  </tbody>\r\n'
 
   output += '</table>'
 
   return output
 }
+
+function getHTMLRows(data) {
+  let output = ''
+  for (let group of data) {
+    let rowspan = group.length
+    for (let [j, row] of group.entries()) {
+      output += '    <tr>'
+      for (let [i, value] of row.entries()) {
+        if (i === 0 && j === 0) {
+          output += `<td valign="top" rowspan="${rowspan}">${value}</td>`
+        } else if (i > 0) {
+          if (typeof value === 'number') {
+            output += `<td align="right" nowrap>${value}</td>`
+          } else {
+            output += `<td nowrap>${value}</td>`
+          }
+        }
+      }
+      output += '</tr>\r\n'
+    }
+  }
+
+  return output
+}
+
+function getSpan() {}
 
 module.exports = table

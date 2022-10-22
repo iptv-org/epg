@@ -7,15 +7,7 @@ EPG (Electronic Program Guide) for thousands of TV channels collected from diffe
 To load a program guide, all you need to do is copy the link to one or more of the guides from the list below and paste it into your favorite player.
 
 <!-- prettier-ignore -->
-<table>
-  <thead>
-    <tr><th align="left">Country&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><th align="left">Channels</th><th align="left">EPG</th></tr>
-  </thead>
-  <tbody>
-    <tr><td valign="top" rowspan="2">🇨🇦&nbsp;Canada</td><td align="right" nowrap>2</td><td nowrap><code>https://iptv-org.github.io/epg/guides/ca-en/example.com.epg.xml</code></td></tr>
-    <tr><td align="right" nowrap>1</td><td nowrap><code>https://iptv-org.github.io/epg/guides/ca-ru/example.com.epg.xml</code></td></tr>
-  </tbody>
-</table>
+#include "./.readme/_countries.md"
 
 All guides also have a compressed and JSON version. To download them, simply change the extension from `.xml` to `.xml.gz` or `.json` respectively.
 

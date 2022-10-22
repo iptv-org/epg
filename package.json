@@ -12,6 +12,7 @@
     "api:update": "node scripts/commands/api/update.js",
     "api:load": "mkdir -p scripts/data && curl -L -o scripts/data/channels.json https://iptv-org.github.io/api/channels.json && curl -L -o scripts/data/countries.json https://iptv-org.github.io/api/countries.json",
     "readme:update": "node scripts/commands/readme/update.js",
+    "status:update": "node scripts/commands/status/update.js",
     "lint": "npx eslint ./scripts/**/*.js",
     "test": "TZ=Pacific/Nauru npx jest --runInBand",
     "test:commands": "npx jest --runInBand -- commands",
@@ -19,6 +20,7 @@
     "act:test": "act workflow_dispatch -W .github/workflows/_test.yml",
     "act:check": "act workflow_dispatch -W .github/workflows/_check.yml",
     "act:update-readme": "act workflow_dispatch -W .github/workflows/_update-readme.yml",
+    "act:update-status": "act workflow_dispatch -W .github/workflows/_update-status.yml",
     "act:update-api": "act workflow_dispatch -W .github/workflows/_update-api.yml"
   },
   "private": true,

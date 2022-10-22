@@ -5,7 +5,7 @@ const _ = require('lodash')
 const CHANNELS_PATH = process.env.CHANNELS_PATH || 'sites/**/*.channels.xml'
 
 const options = program
-  .option('-c, --config <config>', 'Set path to config file', '.readme/config.json')
+  .option('-c, --config <config>', 'Set path to config file', '.readme/readme.json')
   .parse(process.argv)
   .opts()
 
@@ -46,28 +46,30 @@ main()
 async function generateCountriesTable(items = []) {
   logger.info('generating countries table...')
 
-  let rows = []
+  let data = []
   for (const item of items) {
     const country = api.countries.find({ code: item.code.toUpperCase() })
     if (!country) continue
 
-    rows.push({
-      flag: country.flag,
-      name: country.name,
-      channels: item.count,
-      epg: `<code>https://iptv-org.github.io/epg/guides/${item.group}.epg.xml</code>`,
-      status: `<a href="https://github.com/iptv-org/epg/actions/workflows/${item.site}.yml"><img src="https://github.com/iptv-org/epg/actions/workflows/${item.site}.yml/badge.svg" alt="${item.site}" style="max-width: 100%;"></a>`
-    })
+    data.push([
+      country.name,
+      `${country.flag}&nbsp;${country.name}`,
+      item.count,
+      `<code>https://iptv-org.github.io/epg/guides/${item.group}.epg.xml</code>`
+    ])
   }
 
-  rows = _.orderBy(rows, ['name', 'channels'], ['asc', 'desc'])
-  rows = _.groupBy(rows, 'name')
+  data = _.orderBy(data, [item => item[0], item => item[2]], ['asc', 'desc'])
+  data = data.map(i => {
+    i.shift()
+    return i
+  })
+  data = Object.values(_.groupBy(data, item => item[0]))
 
-  const output = table.create(rows, [
+  const output = table.create(data, [
     'Country&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;',
     'Channels',
-    'EPG',
-    'Status&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
+    'EPG'
   ])
 
   await file.create('./.readme/_countries.md', output)
