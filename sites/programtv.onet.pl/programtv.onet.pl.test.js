@@ -24,7 +24,7 @@ it('can generate valid url', () => {
 })
 
 it('can generate valid url for next day', () => {
-  MockDate.set(dayjs.utc('2021-11-25', 'YYYY-MM-DD').startOf('d'))
+  MockDate.set(dayjs.utc('2021-11-23', 'YYYY-MM-DD').startOf('d'))
   expect(url({ channel, date })).toBe(
     'https://programtv.onet.pl/program-tv/13th-street-250?dzien=1'
   )
