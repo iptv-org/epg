@@ -20,6 +20,7 @@
     "act:test": "act workflow_dispatch -W .github/workflows/_test.yml",
     "act:check": "act workflow_dispatch -W .github/workflows/_check.yml",
     "act:update-readme": "act workflow_dispatch -W .github/workflows/_update-readme.yml",
+    "act:update-status": "act workflow_dispatch -W .github/workflows/_update-status.yml",
     "act:update-api": "act workflow_dispatch -W .github/workflows/_update-api.yml"
   },
   "private": true,
