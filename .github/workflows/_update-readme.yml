@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: echo "BRANCH_NAME=$(date +'bot/auto-update-%s')" >> $GITHUB_OUTPUT
+      - run: echo "BRANCH_NAME=$(date +'bot/update-readme-%s')" >> $GITHUB_OUTPUT
         id: create-branch-name
       - run: git config user.name 'iptv-bot[bot]'
       - run: git config user.email '84861620+iptv-bot[bot]@users.noreply.github.com'
