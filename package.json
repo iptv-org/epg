@@ -12,6 +12,7 @@
     "api:update": "node scripts/commands/api/update.js",
     "api:load": "mkdir -p scripts/data && curl -L -o scripts/data/channels.json https://iptv-org.github.io/api/channels.json && curl -L -o scripts/data/countries.json https://iptv-org.github.io/api/countries.json",
     "readme:update": "node scripts/commands/readme/update.js",
+    "status:update": "node scripts/commands/status/update.js",
     "lint": "npx eslint ./scripts/**/*.js",
     "test": "TZ=Pacific/Nauru npx jest --runInBand",
     "test:commands": "npx jest --runInBand -- commands",
