@@ -270,7 +270,7 @@ To load a program guide, all you need to do is copy the link to one or more of t
     <tr><td align="right" nowrap>58</td><td nowrap><code>https://iptv-org.github.io/epg/guides/es/gatotv.com.epg.xml</code></td></tr>
     <tr><td valign="top" rowspan="1">🇸🇩&nbsp;Sudan</td><td align="right" nowrap>118</td><td nowrap><code>https://iptv-org.github.io/epg/guides/sd/guide.dstv.com.epg.xml</code></td></tr>
     <tr><td valign="top" rowspan="1">🇸🇿&nbsp;Swaziland</td><td align="right" nowrap>127</td><td nowrap><code>https://iptv-org.github.io/epg/guides/sz/guide.dstv.com.epg.xml</code></td></tr>
-    <tr><td valign="top" rowspan="3">🇸🇪&nbsp;Sweden</td><td align="right" nowrap>213</td><td nowrap><code>https://iptv-org.github.io/epg/guides/se/tv24.se.epg.xml</code></td></tr>
+    <tr><td valign="top" rowspan="3">🇸🇪&nbsp;Sweden</td><td align="right" nowrap>214</td><td nowrap><code>https://iptv-org.github.io/epg/guides/se/tv24.se.epg.xml</code></td></tr>
     <tr><td align="right" nowrap>178</td><td nowrap><code>https://iptv-org.github.io/epg/guides/se/tv.nu.epg.xml</code></td></tr>
     <tr><td align="right" nowrap>109</td><td nowrap><code>https://iptv-org.github.io/epg/guides/se/allente.se.epg.xml</code></td></tr>
     <tr><td valign="top" rowspan="1">🇨🇭&nbsp;Switzerland</td><td align="right" nowrap>599</td><td nowrap><code>https://iptv-org.github.io/epg/guides/ch/tv.blue.ch.epg.xml</code></td></tr>
