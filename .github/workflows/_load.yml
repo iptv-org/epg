@@ -25,7 +25,7 @@ jobs:
       - run: CHANNELS_PATH=sites/${{inputs.site}}/*.channels.xml npm run queue:create -- --max-clusters=1 --days=2
       - run: NODE_OPTIONS=--insecure-http-parser npm run cluster:load -- --timeout=30000  --cluster-id=1
       - run: npm run programs:save
-      - run: npm run guides:update
+      - run: npm run guides:update_legacy
       - uses: tibdex/github-app-token@v1
         if: ${{ !env.ACT }}
         id: create-deploy-token
