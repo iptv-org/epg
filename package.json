@@ -7,10 +7,12 @@
     "channels:editor": "node scripts/commands/channels/editor.js",
     "queue:create": "node scripts/commands/queue/create.js",
     "cluster:load": "node scripts/commands/cluster/load.js",
+    "programs:load": "node scripts/commands/programs/load.js",
     "programs:save": "node scripts/commands/programs/save.js",
-    "guides:update": "node scripts/commands/guides/update.js",
+    "guides:update": "NODE_OPTIONS=--max-old-space-size=4096 node scripts/commands/guides/update.js",
+    "guides:update_legacy": "node scripts/commands/guides/update_legacy.js",
+    "api:load": "./scripts/commands/api/load.sh",
     "api:update": "node scripts/commands/api/update.js",
-    "api:load": "mkdir -p scripts/data && curl -L -o scripts/data/channels.json https://iptv-org.github.io/api/channels.json && curl -L -o scripts/data/countries.json https://iptv-org.github.io/api/countries.json",
     "readme:update": "node scripts/commands/readme/update.js",
     "status:update": "node scripts/commands/status/update.js",
     "lint": "npx eslint ./scripts/**/*.js",
@@ -34,6 +36,7 @@
   },
   "dependencies": {
     "@alex_neo/jest-expect-message": "^1.0.5",
+    "@octokit/core": "^4.1.0",
     "axios": "^0.21.1",
     "chalk": "^4.1.2",
     "cheerio": "^1.0.0-rc.10",
@@ -48,6 +51,7 @@
     "iconv-lite": "^0.4.24",
     "inquirer": "^8.2.0",
     "jest": "^27.3.1",
+    "langs": "^2.0.0",
     "libxmljs2": "^0.30.1",
     "lodash": "^4.17.21",
     "markdown-include": "^0.4.3",
@@ -61,6 +65,7 @@
     "srcset": "^4.0.0",
     "tabletojson": "^2.0.7",
     "transliteration": "^2.2.0",
+    "unzipit": "^1.4.0",
     "wildcard-match": "^5.1.2"
   },
   "devDependencies": {
