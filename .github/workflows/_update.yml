@@ -8,8 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
       - run: echo "BRANCH_NAME=$(date +'bot/auto-update-%s')" >> $GITHUB_OUTPUT
         id: create-branch-name
       - run: git config user.name 'iptv-bot[bot]'
@@ -36,7 +34,7 @@ jobs:
         with:
           branch: gh-pages
           folder: .gh-pages
-          token: ${{ steps.create-deploy-token.outputs.token }}
+          token: ${{ steps.create-app-token.outputs.token }}
           git-config-name: iptv-bot[bot]
           git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
           commit-message: '[Bot] Update guides'
@@ -60,14 +58,12 @@ jobs:
           git add README.md
           git commit -m "[Bot] Update README.md"
           git status
-          git push -u origin ${{ steps.create-branch-name.outputs.BRANCH_NAME }}
       - run: npm run status:update
       - if: ${{ !env.ACT }}
         run: |
           git add STATUS.md
           git commit -m "[Bot] Update STATUS.md"
           git status
-          git push -u origin ${{ steps.create-branch-name.outputs.BRANCH_NAME }}
       - uses: repo-sync/pull-request@v2
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
         id: pull-request
