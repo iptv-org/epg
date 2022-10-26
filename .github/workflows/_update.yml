@@ -8,22 +8,24 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
       - run: echo "BRANCH_NAME=$(date +'bot/auto-update-%s')" >> $GITHUB_OUTPUT
         id: create-branch-name
       - run: git config user.name 'iptv-bot[bot]'
       - run: git config user.email '84861620+iptv-bot[bot]@users.noreply.github.com'
       - run: git checkout -b ${{ steps.create-branch-name.outputs.BRANCH_NAME }}
-      - uses: actions/setup-node@v3
-        if: ${{ !env.ACT }}
-        with:
-          node-version: 16
-          cache: 'npm'
       - uses: tibdex/github-app-token@v1
         if: ${{ !env.ACT }}
         id: create-app-token
         with:
           app_id: ${{ secrets.APP_ID }}
           private_key: ${{ secrets.APP_PRIVATE_KEY }}
+      - uses: actions/setup-node@v3
+        if: ${{ !env.ACT }}
+        with:
+          node-version: 16
+          cache: 'npm'
       - run: npm install
       - run: npm run api:load
       - if: ${{ !env.ACT }}
@@ -53,9 +55,6 @@ jobs:
           commit-message: '[Bot] Deploy to iptv-org/api'
           clean: false
       - run: npm run readme:update
-      - run: ls -l
-      - run: git status
-      - run: git branch --show-current
       - if: ${{ !env.ACT }}
         run: |
           git add README.md
