@@ -25,6 +25,7 @@ class API {
 const api = {}
 
 api.channels = new API(`${DATA_DIR}/channels.json`)
+api.regions = new API(`${DATA_DIR}/regions.json`)
 api.countries = new API(`${DATA_DIR}/countries.json`)
 api.subdivisions = new API(`${DATA_DIR}/subdivisions.json`)
 
