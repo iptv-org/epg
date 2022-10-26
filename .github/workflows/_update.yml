@@ -8,8 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
       - run: echo "BRANCH_NAME=$(date +'bot/auto-update-%s')" >> $GITHUB_OUTPUT
         id: create-branch-name
       - run: git config user.name 'iptv-bot[bot]'
@@ -55,17 +53,16 @@ jobs:
           commit-message: '[Bot] Deploy to iptv-org/api'
           clean: false
       - run: npm run readme:update
-      - if: ${{ !env.ACT }}
+      - run: npm run status:update
+      - name: Commit Changes
+        if: ${{ !env.ACT }}
         run: |
           git add README.md
           git commit --allow-empty -m "[Bot] Update README.md"
-          git status
-      - run: npm run status:update
-      - if: ${{ !env.ACT }}
-        run: |
           git add STATUS.md
           git commit --allow-empty -m "[Bot] Update STATUS.md"
           git status
+          git push -u origin ${{ steps.create-branch-name.outputs.BRANCH_NAME }}
       - uses: repo-sync/pull-request@v2
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
         id: pull-request
