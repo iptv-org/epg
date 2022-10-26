@@ -8,8 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
       - run: echo "BRANCH_NAME=$(date +'bot/auto-update-%s')" >> $GITHUB_OUTPUT
         id: create-branch-name
       - run: git config user.name 'iptv-bot[bot]'
@@ -64,6 +62,10 @@ jobs:
           git add STATUS.md
           git commit --allow-empty -m "[Bot] Update STATUS.md"
           git status
+      - name: Push to origin
+        if: ${{ !env.ACT }}
+        run: |
+          git remote add origin https://github.com/iptv-org/epg.git
           git push -u origin ${{ steps.create-branch-name.outputs.BRANCH_NAME }}
       - uses: repo-sync/pull-request@v2
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
