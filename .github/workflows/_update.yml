@@ -55,6 +55,7 @@ jobs:
       - run: npm run readme:update
       - run: ls -l
       - run: git status
+      - run: git branch --show-current
       - if: ${{ !env.ACT }}
         run: |
           git add README.md
