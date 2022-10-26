@@ -40,18 +40,6 @@ jobs:
           commit-message: '[Bot] Update guides'
           clean: false
           force: false
-      - run: npm run api:update
-      - uses: JamesIves/github-pages-deploy-action@v4.4.1
-        if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
-        with:
-          repository-name: iptv-org/api
-          branch: gh-pages
-          folder: .api
-          token: ${{ steps.create-app-token.outputs.token }}
-          git-config-name: iptv-bot[bot]
-          git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
-          commit-message: '[Bot] Deploy to iptv-org/api'
-          clean: false
       - run: npm run readme:update
       - if: ${{ !env.ACT }}
         run: |
@@ -66,6 +54,18 @@ jobs:
           git commit -m "[Bot] Update STATUS.md"
           git status
           git push -u origin ${{ steps.create-branch-name.outputs.BRANCH_NAME }}
+      - run: npm run api:update
+      - uses: JamesIves/github-pages-deploy-action@v4.4.1
+        if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
+        with:
+          repository-name: iptv-org/api
+          branch: gh-pages
+          folder: .api
+          token: ${{ steps.create-app-token.outputs.token }}
+          git-config-name: iptv-bot[bot]
+          git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
+          commit-message: '[Bot] Deploy to iptv-org/api'
+          clean: false
       - uses: repo-sync/pull-request@v2
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
         id: pull-request
