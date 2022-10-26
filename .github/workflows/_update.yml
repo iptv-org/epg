@@ -29,20 +29,7 @@ jobs:
       - if: ${{ !env.ACT }}
         run: GITHUB_TOKEN=${{ steps.create-app-token.outputs.token }} npm run programs:load
       - run: npm run guides:update
-      - run: npm run api:update
-      - run: npm run readme:update
-      - run: npm run status:update
-      - name: Commit Changes
-        if: ${{ !env.ACT }}
-        run: |
-          git add README.md
-          git commit -m "[Bot] Update README.md"
-          git add STATUS.md
-          git commit -m "[Bot] Update STATUS.md"
-          git status
-          git push -u origin ${{ steps.create-branch-name.outputs.BRANCH_NAME }}
-      - name: Deploy to gh-pages
-        uses: JamesIves/github-pages-deploy-action@v4.4.1
+      - uses: JamesIves/github-pages-deploy-action@v4.4.1
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
         with:
           branch: gh-pages
@@ -53,8 +40,8 @@ jobs:
           commit-message: '[Bot] Update guides'
           clean: false
           force: false
-      - name: Deploy to iptv-org/api
-        uses: JamesIves/github-pages-deploy-action@v4.4.1
+      - run: npm run api:update
+      - uses: JamesIves/github-pages-deploy-action@v4.4.1
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
         with:
           repository-name: iptv-org/api
@@ -65,6 +52,20 @@ jobs:
           git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
           commit-message: '[Bot] Deploy to iptv-org/api'
           clean: false
+      - run: npm run readme:update
+      - if: ${{ !env.ACT }}
+        run: |
+          git add README.md
+          git commit -m "[Bot] Update README.md"
+          git status
+          git push -u origin ${{ steps.create-branch-name.outputs.BRANCH_NAME }}
+      - run: npm run status:update
+      - if: ${{ !env.ACT }}
+        run: |
+          git add STATUS.md
+          git commit -m "[Bot] Update STATUS.md"
+          git status
+          git push -u origin ${{ steps.create-branch-name.outputs.BRANCH_NAME }}
       - uses: repo-sync/pull-request@v2
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
         id: pull-request
