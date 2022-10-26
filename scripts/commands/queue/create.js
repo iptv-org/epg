@@ -14,7 +14,6 @@ const options = program
   .opts()
 
 const CHANNELS_PATH = process.env.CHANNELS_PATH || 'sites/**/*.channels.xml'
-const LOGS_DIR = process.env.LOGS_DIR || 'scripts/logs'
 
 async function main() {
   logger.info('Starting...')

@@ -2,7 +2,7 @@ const { file, markdown, parser, logger, api, table } = require('../../core')
 const { program } = require('commander')
 const _ = require('lodash')
 
-const CHANNELS_PATH = process.env.CHANNELS_PATH || 'sites/**/*.channels.xml'
+const LOGS_DIR = process.env.LOGS_DIR || 'scripts/logs'
 
 const options = program
   .option('-c, --config <config>', 'Set path to config file', '.readme/readme.json')
@@ -10,52 +10,34 @@ const options = program
   .opts()
 
 async function main() {
-  const items = []
-
   await api.countries.load().catch(console.error)
-  const files = await file.list(CHANNELS_PATH).catch(console.error)
-  for (const filepath of files) {
-    try {
-      const { site, channels } = await parser.parseChannels(filepath)
-      const dir = file.dirname(filepath)
-      const config = require(file.resolve(`${dir}/${site}.config.js`))
-      if (config.ignore) continue
-
-      const filename = file.basename(filepath)
-      const [__, suffix] = filename.match(/\_(.*)\.channels\.xml$/) || [null, null]
-      const [code] = suffix.split('-')
-
-      items.push({
-        code,
-        site,
-        count: channels.length,
-        group: `${suffix}/${site}`
-      })
-    } catch (err) {
-      console.error(err)
-      continue
+  const logPath = `${LOGS_DIR}/guides/update.log`
+  const results = await parser.parseLogs(logPath)
+  const files = results.reduce((acc, curr) => {
+    if (acc[curr.filename]) {
+      acc[curr.filename].channels++
+    } else {
+      acc[curr.filename] = {
+        country: curr.country,
+        channels: 1,
+        filename: curr.filename
+      }
     }
-  }
 
-  await generateCountriesTable(items)
-  await updateReadme()
-}
-
-main()
-
-async function generateCountriesTable(items = []) {
-  logger.info('generating countries table...')
+    return acc
+  }, {})
 
   let data = []
-  for (const item of items) {
-    const country = api.countries.find({ code: item.code.toUpperCase() })
+  for (const filename in files) {
+    const item = files[filename]
+    const country = api.countries.find({ code: item.country })
     if (!country) continue
 
     data.push([
       country.name,
       `${country.flag}&nbsp;${country.name}`,
-      item.count,
-      `<code>https://iptv-org.github.io/epg/guides/${item.group}.epg.xml</code>`
+      item.channels,
+      `<code>https://iptv-org.github.io/epg/guides/${filename}.xml</code>`
     ])
   }
 
@@ -73,7 +55,11 @@ async function generateCountriesTable(items = []) {
   ])
 
   await file.create('./.readme/_countries.md', output)
+
+  await updateReadme()
 }
+
+main()
 
 async function updateReadme() {
   logger.info('updating readme.md...')
