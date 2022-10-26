@@ -53,6 +53,8 @@ jobs:
           commit-message: '[Bot] Deploy to iptv-org/api'
           clean: false
       - run: npm run readme:update
+      - run: ls -l
+      - run: git status
       - if: ${{ !env.ACT }}
         run: |
           git add README.md
