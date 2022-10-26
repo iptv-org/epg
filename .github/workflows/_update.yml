@@ -56,13 +56,13 @@ jobs:
       - if: ${{ !env.ACT }}
         run: |
           git add README.md
-          git commit -m "[Bot] Update README.md"
+          git commit --allow-empty -m "[Bot] Update README.md"
           git status
       - run: npm run status:update
       - if: ${{ !env.ACT }}
         run: |
           git add STATUS.md
-          git commit -m "[Bot] Update STATUS.md"
+          git commit --allow-empty -m "[Bot] Update STATUS.md"
           git status
       - uses: repo-sync/pull-request@v2
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
@@ -71,7 +71,7 @@ jobs:
           github_token: ${{ steps.create-app-token.outputs.token }}
           source_branch: ${{ steps.create-branch-name.outputs.BRANCH_NAME }}
           destination_branch: 'master'
-          pr_title: '[Bot] Update README.md'
+          pr_title: '[Bot] Daily update'
           pr_body: |
             This pull request is created via [update][1] workflow.
 
