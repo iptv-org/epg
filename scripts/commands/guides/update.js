@@ -63,8 +63,9 @@ async function main() {
 
     let countryPrograms = db_programs.filter(p => countryChannels.includes(p.channel))
     let langGroups = _.groupBy(countryPrograms, 'lang')
-    let countryLanguages = _.uniq(['eng', ...country.languages])
+    let countryLanguages = _.uniq([...country.languages, 'eng'])
 
+    let programs = {}
     for (let langCode of countryLanguages) {
       const lang = convertLangCode(langCode, '3', '1')
       if (!lang) continue
@@ -72,54 +73,61 @@ async function main() {
       let langPrograms = langGroups[lang]
       if (!langPrograms || !langPrograms.length) continue
 
-      let programs = []
       let channelGroups = _.groupBy(langPrograms, 'channel')
-      for (let groupedPrograms of Object.values(channelGroups)) {
+      for (let channel in channelGroups) {
+        if (programs[channel]) continue
+        let groupedPrograms = channelGroups[channel]
         let channelPrograms = getChannelPrograms(groupedPrograms)
         if (!channelPrograms.length) continue
 
-        programs = programs.concat(channelPrograms)
+        programs[channel] = channelPrograms
       }
-      programs = _.sortBy(programs, ['channel', 'start'])
-      programs = programs.map(p => new Program(p, new Channel(channels_dic[p.channel])))
-      let channels = programs.map(p => {
-        let c = channels_dic[p.channel]
-        c.site = p.site
-        c.lang = lang
+    }
 
-        return new Channel(c)
-      })
-      channels = _.sortBy(channels, 'id')
-      channels = _.uniqBy(channels, 'id')
+    programs = _.flatten(Object.values(programs))
 
-      const filename = `${country.code.toLowerCase()}_${lang}`
-      const xmlFilepath = `${PUBLIC_DIR}/guides/${filename}.xml`
-      const gzFilepath = `${PUBLIC_DIR}/guides/${filename}.xml.gz`
-      const jsonFilepath = `${PUBLIC_DIR}/guides/${filename}.json`
-      logger.info(`creating ${xmlFilepath}...`)
-      const xmltv = generateXMLTV({
-        channels,
-        programs,
-        date: CURR_DATE
-      })
-      await file.create(xmlFilepath, xmltv)
-      logger.info(`creating ${gzFilepath}...`)
-      const compressed = await zip.compress(xmltv)
-      await file.create(gzFilepath, compressed)
-      logger.info(`creating ${jsonFilepath}...`)
-      await file.create(jsonFilepath, JSON.stringify({ channels, programs }))
+    if (!programs.length) continue
 
-      for (let channel of channels) {
-        let result = {
-          country: country.code,
-          lang,
-          site: channel.site,
-          channel: channel.id,
-          filename
-        }
+    let channels = programs.map(p => {
+      let c = channels_dic[p.channel]
+      c.site = p.site
+      c.lang = p.lang
 
-        await file.append(logPath, JSON.stringify(result) + '\r\n')
+      return new Channel(c)
+    })
+    channels = _.sortBy(channels, 'id')
+    channels = _.uniqBy(channels, 'id')
+
+    programs = programs = _.sortBy(programs, ['channel', 'start'])
+    programs = programs.map(p => new Program(p, new Channel(channels_dic[p.channel])))
+
+    const filename = country.code.toLowerCase()
+    const xmlFilepath = `${PUBLIC_DIR}/guides/${filename}.xml`
+    const gzFilepath = `${PUBLIC_DIR}/guides/${filename}.xml.gz`
+    const jsonFilepath = `${PUBLIC_DIR}/guides/${filename}.json`
+    logger.info(`creating ${xmlFilepath}...`)
+    const xmltv = generateXMLTV({
+      channels,
+      programs,
+      date: CURR_DATE
+    })
+    await file.create(xmlFilepath, xmltv)
+    logger.info(`creating ${gzFilepath}...`)
+    const compressed = await zip.compress(xmltv)
+    await file.create(gzFilepath, compressed)
+    logger.info(`creating ${jsonFilepath}...`)
+    await file.create(jsonFilepath, JSON.stringify({ channels, programs }))
+
+    for (let channel of channels) {
+      let result = {
+        country: country.code,
+        lang: channel.lang,
+        site: channel.site,
+        channel: channel.id,
+        filename
       }
+
+      await file.append(logPath, JSON.stringify(result) + '\r\n')
     }
   }
 }
