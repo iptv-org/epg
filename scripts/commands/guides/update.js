@@ -146,9 +146,7 @@ function getChannelPrograms(programs) {
   let priority = 0
   let selected
   for (let site in sites) {
-    let prog = sites[site][0]
-
-    let sitePriority = calcPriority(prog)
+    let sitePriority = calcPriority(sites[site])
 
     if (sitePriority > priority) {
       selected = site
@@ -159,17 +157,19 @@ function getChannelPrograms(programs) {
   return sites[selected] || []
 }
 
-function calcPriority(program) {
+function calcPriority(programs) {
   let priority = 0
-  for (let prop in program) {
-    let value = program[prop]
+  for (let program of programs) {
+    for (let prop in program) {
+      let value = program[prop]
 
-    if (Array.isArray(value) && value.length) {
-      priority++
-    } else if (typeof value === 'string' && value) {
-      priority++
-    } else if (value && typeof value === 'object' && Object.values(value).map(Boolean).length) {
-      priority++
+      if (Array.isArray(value) && value.length) {
+        priority++
+      } else if (typeof value === 'string' && value) {
+        priority++
+      } else if (value && typeof value === 'object' && Object.values(value).map(Boolean).length) {
+        priority++
+      }
     }
   }
 
