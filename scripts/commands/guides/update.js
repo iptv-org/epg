@@ -85,8 +85,9 @@ async function main() {
     }
 
     programs = _.flatten(Object.values(programs))
-    programs = programs = _.sortBy(programs, ['channel', 'start'])
-    programs = programs.map(p => new Program(p, new Channel(channels_dic[p.channel])))
+
+    if (!programs.length) continue
+
     let channels = programs.map(p => {
       let c = channels_dic[p.channel]
       c.site = p.site
@@ -96,6 +97,9 @@ async function main() {
     })
     channels = _.sortBy(channels, 'id')
     channels = _.uniqBy(channels, 'id')
+
+    programs = programs = _.sortBy(programs, ['channel', 'start'])
+    programs = programs.map(p => new Program(p, new Channel(channels_dic[p.channel])))
 
     const filename = country.code.toLowerCase()
     const xmlFilepath = `${PUBLIC_DIR}/guides/${filename}.xml`
