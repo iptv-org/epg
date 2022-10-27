@@ -12,8 +12,8 @@ const options = program
 async function main() {
   await api.countries.load().catch(console.error)
   const logPath = `${LOGS_DIR}/guides/update.log`
-  const results = await parser.parseLogs(logPath)
-  const files = results.reduce((acc, curr) => {
+  let results = await parser.parseLogs(logPath)
+  let files = results.reduce((acc, curr) => {
     if (acc[curr.filename]) {
       acc[curr.filename].channels++
     } else {
@@ -41,7 +41,11 @@ async function main() {
     ])
   }
 
-  data = _.orderBy(data, [item => item[0], item => item[2]], ['asc', 'desc'])
+  data = _.orderBy(
+    data,
+    [item => item[0], item => (item[3].includes('_en') ? Infinity : item[2])],
+    ['asc', 'desc']
+  )
   data = data.map(i => {
     i.shift()
     return i
