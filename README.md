@@ -207,7 +207,7 @@ To load a program guide, all you need to do is copy the link to one or more of t
     <tr><td valign="top" rowspan="1">🇸🇲&nbsp;San Marino</td><td align="right" nowrap>60</td><td nowrap><code>https://iptv-org.github.io/epg/guides/sm.xml</code></td></tr>
     <tr><td valign="top" rowspan="1">🇸🇦&nbsp;Saudi Arabia</td><td align="right" nowrap>111</td><td nowrap><code>https://iptv-org.github.io/epg/guides/sa.xml</code></td></tr>
     <tr><td valign="top" rowspan="1">🇸🇳&nbsp;Senegal</td><td align="right" nowrap>88</td><td nowrap><code>https://iptv-org.github.io/epg/guides/sn.xml</code></td></tr>
-    <tr><td valign="top" rowspan="1">🇷🇸&nbsp;Serbia</td><td align="right" nowrap>281</td><td nowrap><code>https://iptv-org.github.io/epg/guides/rs.xml</code></td></tr>
+    <tr><td valign="top" rowspan="1">🇷🇸&nbsp;Serbia</td><td align="right" nowrap>280</td><td nowrap><code>https://iptv-org.github.io/epg/guides/rs.xml</code></td></tr>
     <tr><td valign="top" rowspan="1">🇸🇨&nbsp;Seychelles</td><td align="right" nowrap>75</td><td nowrap><code>https://iptv-org.github.io/epg/guides/sc.xml</code></td></tr>
     <tr><td valign="top" rowspan="1">🇸🇱&nbsp;Sierra Leone</td><td align="right" nowrap>68</td><td nowrap><code>https://iptv-org.github.io/epg/guides/sl.xml</code></td></tr>
     <tr><td valign="top" rowspan="1">🇸🇬&nbsp;Singapore</td><td align="right" nowrap>100</td><td nowrap><code>https://iptv-org.github.io/epg/guides/sg.xml</code></td></tr>
