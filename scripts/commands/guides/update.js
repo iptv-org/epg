@@ -133,8 +133,39 @@ function convertLangCode(code, from, to) {
 }
 
 function getChannelPrograms(programs) {
-  let groups = _.groupBy(programs, 'site')
-  groups = Object.values(groups)
+  let sites = _.groupBy(programs, 'site')
 
-  return groups[0]
+  let priority = 0
+  let selected
+  for (let site in sites) {
+    let prog = sites[site][0]
+
+    let sitePriority = calcPriority(prog)
+
+    if (sitePriority > priority) {
+      selected = site
+      priority = sitePriority
+    }
+  }
+
+  return sites[selected] || []
+}
+
+function calcPriority(program) {
+  let priority = 0
+  for (let prop in program) {
+    let value = program[prop]
+
+    if (Array.isArray(value) && value.length) {
+      priority++
+    } else if (typeof value === 'string' && value) {
+      priority++
+    } else if (value && typeof value === 'object' && Object.values(value).map(Boolean).length) {
+      priority++
+    }
+  }
+
+  console.log(priority)
+
+  return priority
 }
