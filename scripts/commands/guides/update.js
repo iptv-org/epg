@@ -63,8 +63,9 @@ async function main() {
 
     let countryPrograms = db_programs.filter(p => countryChannels.includes(p.channel))
     let langGroups = _.groupBy(countryPrograms, 'lang')
+    let countryLanguages = _.uniq(['eng', ...country.languages])
 
-    for (let langCode of country.languages) {
+    for (let langCode of countryLanguages) {
       const lang = convertLangCode(langCode, '3', '1')
       if (!lang) continue
 
