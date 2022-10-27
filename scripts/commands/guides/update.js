@@ -158,20 +158,19 @@ function getChannelPrograms(programs) {
 }
 
 function calcPriority(programs) {
-  let priority = 0
-  for (let program of programs) {
-    for (let prop in program) {
-      let value = program[prop]
+  return programs.reduce((total, program) => {
+    let values = Object.values(program)
 
+    for (let value of values) {
       if (Array.isArray(value) && value.length) {
-        priority++
+        total++
       } else if (typeof value === 'string' && value) {
-        priority++
+        total++
       } else if (value && typeof value === 'object' && Object.values(value).map(Boolean).length) {
-        priority++
+        total++
       }
     }
-  }
 
-  return priority
+    return total
+  }, 0)
 }
