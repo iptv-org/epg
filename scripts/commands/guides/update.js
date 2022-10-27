@@ -173,7 +173,5 @@ function calcPriority(program) {
     }
   }
 
-  console.log(priority)
-
   return priority
 }
