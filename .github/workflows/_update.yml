@@ -65,7 +65,7 @@ jobs:
       - name: Push to origin
         if: ${{ !env.ACT }}
         run: |
-          git remote add origin https://github.com/iptv-org/epg.git
+          git remote set-url origin https://github.com/iptv-org/epg.git
           git push -u origin ${{ steps.create-branch-name.outputs.BRANCH_NAME }}
       - uses: repo-sync/pull-request@v2
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
