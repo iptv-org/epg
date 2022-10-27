@@ -35,7 +35,9 @@ async function main() {
   db_programs = db_programs
     .map(p => {
       if (p.titles.length) {
+        p.score = calcScore(p)
         p.lang = p.titles[0].lang
+
         return p
       }
       return null
@@ -143,34 +145,33 @@ function convertLangCode(code, from, to) {
 function getChannelPrograms(programs) {
   let sites = _.groupBy(programs, 'site')
 
-  let priority = 0
+  let topScore = 0
   let selected
   for (let site in sites) {
-    let sitePriority = calcPriority(sites[site])
+    let sitePrograms = sites[site]
+    let siteScore = _.sumBy(sitePrograms, 'score')
 
-    if (sitePriority > priority) {
+    if (siteScore > topScore) {
       selected = site
-      priority = sitePriority
+      topScore = siteScore
     }
   }
 
   return sites[selected] || []
 }
 
-function calcPriority(programs) {
-  return programs.reduce((total, program) => {
-    let values = Object.values(program)
-
-    for (let value of values) {
-      if (Array.isArray(value) && value.length) {
-        total++
-      } else if (typeof value === 'string' && value) {
-        total++
-      } else if (value && typeof value === 'object' && Object.values(value).map(Boolean).length) {
-        total++
-      }
+function calcScore(program) {
+  let score = 0
+  let values = Object.values(program)
+  for (let value of values) {
+    if (Array.isArray(value) && value.length) {
+      score++
+    } else if (typeof value === 'string' && value) {
+      score++
+    } else if (value && typeof value === 'object' && Object.values(value).map(Boolean).length) {
+      score++
     }
+  }
 
-    return total
-  }, 0)
+  return score
 }
