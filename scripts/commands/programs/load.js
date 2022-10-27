@@ -68,7 +68,7 @@ async function getRunArtifacts(run) {
 }
 
 async function getWorkflowRun(workflow) {
-  let today = dayjs.utc().format('YYYY-MM-DD')
+  let today = dayjs.utc().subtract(1, 'd').format('YYYY-MM-DD')
   let results = await octokit.request(
     'GET /repos/{owner}/{repo}/actions/workflows/{workflow_id}/runs',
     {
