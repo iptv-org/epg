@@ -8,20 +8,30 @@ dayjs.extend(timezone)
 
 module.exports = {
   site: 'tvmi.mt',
-  url: function ({ date }) {
-    return `https://www.tvmi.mt/mt/tvmi/skeda/?sd-date=${date.format('YYYY-MM-DD')}`
+  url: function ({ date, channel }) {
+    return `https://tvmi.mt/schedule/${channel.site_id}/${date.format('YYYY-MM-DD')}`
   },
-  parser: function ({ content, channel, date }) {
+  parser: function ({ content, date }) {
     let programs = []
-    const items = parseItems(content, channel)
+    const items = parseItems(content)
     items.forEach(item => {
       const $item = cheerio.load(item)
+      const prev = programs[programs.length - 1]
+      let start = parseStart($item, date)
+      if (prev) {
+        if (start.isBefore(prev.start)) {
+          start = start.add(1, 'd')
+          date = date.add(1, 'd')
+        }
+        prev.stop = start
+      }
+      const stop = start.add(30, 'm')
       programs.push({
         title: parseTitle($item),
         description: parseDescription($item),
         icon: parseIcon($item),
-        start: parseStart($item, date),
-        stop: parseStop($item, date)
+        start,
+        stop
       })
     })
 
@@ -30,41 +40,37 @@ module.exports = {
 }
 
 function parseTitle($item) {
-  return $item('.programme-title').text().trim()
+  return $item('div > div:nth-child(2) > div:nth-child(2),a > div:nth-child(2) > div:nth-child(2)')
+    .text()
+    .trim()
 }
 
 function parseDescription($item) {
-  return $item('.description').text().trim()
+  return $item('div > div:nth-child(2) > div:nth-child(3),a > div:nth-child(2) > div:nth-child(3)')
+    .text()
+    .trim()
 }
 
 function parseIcon($item) {
-  return $item('.image').attr('src')
+  const bg = $item('div > div:nth-child(1) > div > div,a > div:nth-child(1) > div').data('bg')
+
+  return bg ? `https:${bg}` : null
 }
 
 function parseStart($item, date) {
-  const times = $item('.title-time > .times').text().trim()
-  const [_, HH, mm] = times.match(/^(\d{2}):(\d{2}) \-/) || [null, null, null]
+  const timeString = $item(
+    'div > div:nth-child(2) > div:nth-child(1),a > div:nth-child(2) > div:nth-child(1)'
+  )
+    .text()
+    .trim()
+  const [_, HH, mm] = timeString.match(/^(\d{2}):(\d{2})/) || [null, null, null]
   if (!HH || !mm) return null
 
   return dayjs.tz(`${date.format('YYYY-MM-DD')} ${HH}:${mm}`, 'YYYY-MM-DD HH:mm', 'Europe/Malta')
 }
 
-function parseStop($item, date) {
-  const times = $item('.title-time > .times').text().trim()
-  const [_, HH, mm] = times.match(/\- (\d{2}):(\d{2})$/) || [null, null, null]
-  if (!HH || !mm) return null
-
-  return dayjs.tz(`${date.format('YYYY-MM-DD')} ${HH}:${mm}`, 'YYYY-MM-DD HH:mm', 'Europe/Malta')
-}
-
-function parseItems(content, channel) {
+function parseItems(content) {
   const $ = cheerio.load(content)
-  const channelSchedules = $(
-    '#content > div.schedule > div.content > div.schedule-bottom > div.schedules > .channel-schedule'
-  ).toArray()
-  if (!Array.isArray(channelSchedules)) return []
-  const index = parseInt(channel.site_id) - 1
-  if (!channelSchedules[index]) return []
 
-  return $(channelSchedules[index], '.programmes').find('.remodal').toArray()
+  return $('body > main > div.mt-8 > div').toArray()
 }
