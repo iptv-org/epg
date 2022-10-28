@@ -23,9 +23,11 @@ module.exports = {
       if (prev) {
         if (start.isBefore(prev.start)) {
           start = start.add(1, 'd')
-          stop = stop.add(1, 'd')
         }
         prev.stop = start
+        if (stop.isBefore(prev.stop)) {
+          stop = stop.add(1, 'd')
+        }
       }
       programs.push({
         title: parseTitle($item),
@@ -63,7 +65,7 @@ function parseTitle($item) {
 }
 
 function parseDescription($item) {
-  return $item('.t > div').text().trim()
+  return $item('.t > div').clone().children().remove().end().text().trim()
 }
 
 function parseIcon($item) {
@@ -73,16 +75,16 @@ function parseIcon($item) {
 }
 
 function parseStart($item, date) {
-  const subtitle = $item('.h > h2').text().trim()
-  const [_, HH, mm] = subtitle.match(/ (\d{2})\.(\d{2}) -/) || [null, null, null]
+  const subtitle = $item('.h > h2').clone().children().remove().end().text().trim()
+  const [_, HH, mm] = subtitle.match(/(\d{2})\.(\d{2}) - (\d{2})\.(\d{2})$/) || [null, null, null]
   if (!HH || !mm) return null
 
   return dayjs.tz(`${date.format('YYYY-MM-DD')} ${HH}:${mm}`, 'YYYY-MM-DD HH:mm', 'Europe/Helsinki')
 }
 
 function parseStop($item, date) {
-  const subtitle = $item('.h > h2').text().trim()
-  const [_, HH, mm] = subtitle.match(/ - (\d{2})\.(\d{2})/) || [null, null, null]
+  const subtitle = $item('.h > h2').clone().children().remove().end().text().trim()
+  const [_, HH, mm] = subtitle.match(/ - (\d{2})\.(\d{2})$/) || [null, null, null]
   if (!HH || !mm) return null
 
   return dayjs.tz(`${date.format('YYYY-MM-DD')} ${HH}:${mm}`, 'YYYY-MM-DD HH:mm', 'Europe/Helsinki')
