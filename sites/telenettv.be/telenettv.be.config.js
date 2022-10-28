@@ -5,6 +5,7 @@ const API_ENDPOINT = `https://obo-prod.oesp.telenettv.be/oesp/v4/BE/eng/web`
 
 module.exports = {
   site: 'telenettv.be',
+  ignore: true, // INFO: Request failed with status code 404 (Not Found)
   url: function ({ date }) {
     return `${API_ENDPOINT}/programschedules/${date.format('YYYYMMDD')}/1`
   },
@@ -29,16 +30,16 @@ module.exports = {
       .catch(console.error)
     // items.forEach(item => {
     for (let item of items) {
-        const detail = await loadProgramDetails(item)
-        programs.push({
-            title: item.t,
-            description: parseDescription(detail),
-            category: parseCategory(detail),
-            season: parseSeason(detail),
-            episode: parseEpisode(detail),
-            start: parseStart(item),
-            stop: parseStop(item)
-        })
+      const detail = await loadProgramDetails(item)
+      programs.push({
+        title: item.t,
+        description: parseDescription(detail),
+        category: parseCategory(detail),
+        season: parseSeason(detail),
+        episode: parseEpisode(detail),
+        start: parseStart(item),
+        stop: parseStop(item)
+      })
     }
     //)
 
@@ -61,14 +62,14 @@ module.exports = {
 }
 
 async function loadProgramDetails(item) {
-    if (!item.i) return {}
-    const url = `${API_ENDPOINT}/listings/${item.i}`
-    const data = await axios
-      .get(url)
-      .then(r => r.data)
-      .catch(console.log)
-    return data || {}
-  }
+  if (!item.i) return {}
+  const url = `${API_ENDPOINT}/listings/${item.i}`
+  const data = await axios
+    .get(url)
+    .then(r => r.data)
+    .catch(console.log)
+  return data || {}
+}
 
 function parseStart(item) {
   return dayjs(item.s)
@@ -86,23 +87,22 @@ function parseItems(content, channel) {
   return entity ? entity.l : []
 }
 
-function parseDescription(detail){
-    return detail.program.longDescription ||  null
+function parseDescription(detail) {
+  return detail.program.longDescription || null
 }
 
 function parseCategory(detail) {
-    let categories = []
-    detail.program.categories.forEach(category => {
-        categories.push(category.title)
-    });
-    return categories
-  }
+  let categories = []
+  detail.program.categories.forEach(category => {
+    categories.push(category.title)
+  })
+  return categories
+}
 
-  function parseSeason(detail) {
-    return detail.program.seriesNumber || null
-  }
+function parseSeason(detail) {
+  return detail.program.seriesNumber || null
+}
 
-  function parseEpisode(detail) {
-    return detail.program.seriesEpisodeNumber || null
-  }
-
+function parseEpisode(detail) {
+  return detail.program.seriesEpisodeNumber || null
+}
