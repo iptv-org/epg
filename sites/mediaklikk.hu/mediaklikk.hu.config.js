@@ -1,11 +1,9 @@
 const cheerio = require('cheerio')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
-const timezone = require('dayjs/plugin/timezone')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
 
 dayjs.extend(utc)
-dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
 module.exports = {
@@ -48,14 +46,18 @@ module.exports = {
 function parseStart($item) {
   const timeString = $item('*').data('from')
 
-  return dayjs.tz(timeString, 'YYYY-MM-DD HH:mm:ss', 'Europe/Budapest')
+  return dayjs(timeString, 'YYYY-MM-DD HH:mm:ssZZ')
 }
 
 function parseStop($item) {
   const timeString = $item('*').data('till')
   if (!timeString) return null
 
-  return dayjs.tz(timeString, 'YYYY-MM-DD HH:mm:ss', 'Europe/Budapest')
+  try {
+    return dayjs(timeString, 'YYYY-MM-DD HH:mm:ssZZ')
+  } catch (err) {
+    return null
+  }
 }
 
 function parseTitle($item) {
@@ -70,8 +72,9 @@ function parseIcon($item) {
   const backgroundImage = $item('.program_about > .program_photo').css('background-image')
   if (!backgroundImage) return null
   const [_, icon] = backgroundImage.match(/url\(\'(.*)'\)/) || [null, null]
+  if (!icon) return null
 
-  return icon
+  return `https:${icon}`
 }
 
 function parseItems(content) {
