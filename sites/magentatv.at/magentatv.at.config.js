@@ -5,6 +5,7 @@ const API_ENDPOINT = `https://prod.oesp.magentatv.at/oesp/v4/AT/deu/web/programs
 
 module.exports = {
   site: 'magentatv.at',
+  ignore: true, // INFO: Request failed with status code 404 (Not Found)
   url: function ({ date }) {
     return `${API_ENDPOINT}/${date.format('YYYYMMDD')}/1`
   },
