@@ -1,6 +1,8 @@
 // npx epg-grabber --config=sites/mediaklikk.hu/mediaklikk.hu.config.js --channels=sites/mediaklikk.hu/mediaklikk.hu_hu.channels.xml --output=guide.xml --days=2
 
 const { parser, url, request } = require('./mediaklikk.hu.config.js')
+const fs = require('fs')
+const path = require('path')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -36,24 +38,21 @@ it('can generate valid request data', () => {
 })
 
 it('can parse response', () => {
-  const content = `<div class="mediaklikkOwlWrapper channels_num_1"> <div class="mediaklikkOwlItem" data-channelid="3" data-channelshortcode="" data-buttontype="" data-channelname="" data-date="2022-03-10" data-videoPageUrl="" > <div class="tvguide channel mainsite"> <div data-thisdate="2022-03-10" class="channel_body" data-type="0"> <ul> <li class="program_body " style="" data-from="2022-03-10 00:35:35" data-till="2022-03-10 01:35:54" data-bci="1" data-vpi=" "data-vpslug="" > <div class="time"> <time >00:35</time> <div class="elo " style="display: none"><span class="live_play"></span>Élő</div><button style="display: none" ></button> </div><div class="program_info"> <h1> A tengeralattjáró (2018) </h1> <span class="status disabled "></span><span class="agelimitico tizennyolc" ></span> <p>4. rész, 57 perc, 2018</p></div><div class="program_about" style="display: none;"> <div class="program_photo" style="background-image:url('https://mediaklikk.hu/wp-content/uploads/sites/4/2020/06/00-150x150.jpg')"></div><div class="program_description"> <p> A La Rochelle-ben történt robbanás után a polgármester parancsot kap néhány súlyos intézkedés meghozatalára. Az ellenséges támadás után az U-612 fedélzetén a bajtársiasság terén gondok mutatkoznak. Hoffmann és Tennstedt rivalizálása és a legénység közt tapasztalható feszültség veszélybe sodorja küldetésüket.<br/>(Eredeti hang digitálisan.) </p></div><div class="notifications" style="" > <div class="notice" style="display: none;"> <span></span> <p>Értesítést kérek</p></div><div class="program_site" onclick="location.href='https://mediaklikk.hu/musor/a-tengeralattjaro'"> <span></span> <p>Műsoroldal</p></div></div><button style="display: none" ></button> </div></li></ul> </div></div></div></div>`
-
-  const result = parser({ content }).map(p => {
+  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.html'))
+  const results = parser({ content }).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
     return p
   })
 
-  expect(result).toMatchObject([
-    {
-      start: '2022-03-09T23:35:35.000Z',
-      stop: '2022-03-10T00:35:54.000Z',
-      title: `A tengeralattjáró (2018)`,
-      description:
-        'A La Rochelle-ben történt robbanás után a polgármester parancsot kap néhány súlyos intézkedés meghozatalára. Az ellenséges támadás után az U-612 fedélzetén a bajtársiasság terén gondok mutatkoznak. Hoffmann és Tennstedt rivalizálása és a legénység közt tapasztalható feszültség veszélybe sodorja küldetésüket.(Eredeti hang digitálisan.)',
-      icon: 'https://mediaklikk.hu/wp-content/uploads/sites/4/2020/06/00-150x150.jpg'
-    }
-  ])
+  expect(results[0]).toMatchObject({
+    start: '2022-10-27T22:00:46.000Z',
+    stop: '2022-10-27T22:54:00.000Z',
+    title: `A hegyi doktor - I. évad`,
+    description:
+      'Maxl iskolatársának, Vroninak az anyja egy autóbalesetben meghal. A 20 éves testvér, Vinzenz magához szeretné venni a lányt, ám a gyámüggyel problémái akadnak, ezért megpróbálja elszöktetni.(Eredeti hang digitálisan.)',
+    icon: 'https://mediaklikk.hu/wp-content/uploads/sites/4/2019/10/A-hegyi-doktor-I-évad-e1571318391226-150x150.jpg'
+  })
 })
 
 it('can handle empty guide', () => {
