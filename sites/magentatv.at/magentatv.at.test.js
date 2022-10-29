@@ -2,6 +2,8 @@
 // npx epg-grabber --config=sites/magentatv.at/magentatv.at.config.js --channels=sites/magentatv.at/magentatv.at_at.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./magentatv.at.config.js')
+const fs = require('fs')
+const path = require('path')
 const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
@@ -9,95 +11,86 @@ const customParseFormat = require('dayjs/plugin/customParseFormat')
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
+const API_STATIC_ENDPOINT = 'https://static.spark.magentatv.at/deu/web/epg-service-lite/at'
+const API_PROD_ENDPOINT = 'https://prod.spark.magentatv.at/deu/web/linear-service/v2'
+
 jest.mock('axios')
 
-const date = dayjs.utc('2022-03-09', 'YYYY-MM-DD').startOf('d')
+const date = dayjs.utc('2022-10-30', 'YYYY-MM-DD').startOf('d')
 const channel = {
-  site_id: '13TH_Street_HD',
-  xmltv_id: '13thStreet.de'
+  site_id: '13TH_STREET_HD',
+  xmltv_id: '13thStreet.de',
+  lang: 'de'
 }
 
 it('can generate valid url', () => {
-  expect(url({ date })).toBe(
-    'https://prod.oesp.magentatv.at/oesp/v4/AT/deu/web/programschedules/20220309/1'
-  )
+  expect(url({ date, channel })).toBe(`${API_STATIC_ENDPOINT}/de/events/segments/20221030000000`)
 })
 
-it('can parse response', done => {
-  const content = `{"entries":[{"o":"lgi-at-prodobo-master:13TH_Street_HD","l":[{"i":"crid:~~2F~~2Fbds.tv~~2F1870513,imi:c83a0bf1b04d6610d0517e63647772c1c8725693","t":"Law & Order: Special Victims Unit","s":1646778600000,"e":1646781300000,"c":"lgi-at-prodobo-master:genre-9","a":false,"r":false,"rm":false,"ad":[],"sl":[]}]}]}`
+it('can parse response', async () => {
+  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content_0000.json'))
 
   axios.get.mockImplementation(url => {
-    if (url === 'https://prod.oesp.magentatv.at/oesp/v4/AT/deu/web/programschedules/20220309/2') {
+    if (url === `${API_STATIC_ENDPOINT}/de/events/segments/20221030060000`) {
       return Promise.resolve({
-        data: JSON.parse(
-          `{"entries":[{"o":"lgi-at-prodobo-master:13TH_Street_HD","l":[{"i":"crid:~~2F~~2Fmedia-press.tv~~2F217048123,imi:ee14cfe306cb50502b03c96d58851c32345a9391","t":"FBI: Special Crime Unit","s":1646781300000,"e":1646784000000,"c":"lgi-at-prodobo-master:genre-9","a":false,"r":false,"rm":false,"ad":[],"sl":[]}]}]}`
-        )
+        data: fs.readFileSync(path.resolve(__dirname, '__data__/content_0600.json'))
+      })
+    } else if (url === `${API_STATIC_ENDPOINT}/de/events/segments/20221030120000`) {
+      return Promise.resolve({
+        data: fs.readFileSync(path.resolve(__dirname, '__data__/content_1200.json'))
+      })
+    } else if (url === `${API_STATIC_ENDPOINT}/de/events/segments/20221030180000`) {
+      return Promise.resolve({
+        data: fs.readFileSync(path.resolve(__dirname, '__data__/content_1800.json'))
       })
     } else if (
-      url === 'https://prod.oesp.magentatv.at/oesp/v4/AT/deu/web/programschedules/20220309/3'
+      url ===
+      `${API_PROD_ENDPOINT}/replayEvent/crid:~~2F~~2Fgn.tv~~2F2236391~~2FEP019388320252,imi:af4af994f29354e64878101c0612b17999d0c1a3?returnLinearContent=true&language=de`
     ) {
       return Promise.resolve({
-        data: JSON.parse(
-          `{"entries":[{"o":"lgi-at-prodobo-master:13TH_Street_HD","l":[{"i":"crid:~~2F~~2Fmedia-press.tv~~2F224431085,imi:805c5a9b6610edb65cdff319a9b080ab5f65a6c8","t":"FBI: Special Crime Unit","s":1646784000000,"e":1646786700000,"c":"lgi-at-prodobo-master:genre-9","a":false,"r":false,"rm":false,"ad":[],"sl":[]}]}]}`
-        )
-      })
-    } else if (
-      url === 'https://prod.oesp.magentatv.at/oesp/v4/AT/deu/web/programschedules/20220309/4'
-    ) {
-      return Promise.resolve({
-        data: JSON.parse(
-          `{"entries":[{"o":"lgi-at-prodobo-master:13TH_Street_HD","l":[{"i":"crid:~~2F~~2Fbds.tv~~2F918961,imi:f27353bf910e8849d60e0381fdb2d1f7518ef7a2","t":"Law & Order","s":1646786700000,"e":1646789400000,"c":"lgi-at-prodobo-master:genre-9","a":false,"r":false,"rm":false,"ad":[],"sl":[]}]}]}`
-        )
+        data: JSON.parse(fs.readFileSync(path.resolve(__dirname, '__data__/program.json')))
       })
     } else {
       return Promise.resolve({ data: '' })
     }
   })
 
-  parser({ content, channel, date })
-    .then(result => {
-      result = result.map(p => {
-        p.start = p.start.toJSON()
-        p.stop = p.stop.toJSON()
-        return p
-      })
+  let results = await parser({ content, channel, date })
+  results = results.map(p => {
+    p.start = p.start.toJSON()
+    p.stop = p.stop.toJSON()
+    return p
+  })
 
-      expect(result).toMatchObject([
-        {
-          start: '2022-03-08T22:30:00.000Z',
-          stop: '2022-03-08T23:15:00.000Z',
-          title: 'Law & Order: Special Victims Unit'
-        },
-        {
-          start: '2022-03-08T23:15:00.000Z',
-          stop: '2022-03-09T00:00:00.000Z',
-          title: 'FBI: Special Crime Unit'
-        },
-        {
-          start: '2022-03-09T00:00:00.000Z',
-          stop: '2022-03-09T00:45:00.000Z',
-          title: 'FBI: Special Crime Unit'
-        },
-        {
-          start: '2022-03-09T00:45:00.000Z',
-          stop: '2022-03-09T01:30:00.000Z',
-          title: 'Law & Order'
-        }
-      ])
-      done()
-    })
-    .catch(done)
+  expect(results[0]).toMatchObject({
+    start: '2022-10-29T23:55:00.000Z',
+    stop: '2022-10-30T01:40:00.000Z',
+    title: 'Law & Order: Special Victims Unit',
+    sub_title: 'Mutterinstinkt',
+    description:
+      'Patty Branson wird von einem Jungen in einem Park angegriffen und von diesem verfolgt. Der Junge wurde von Michelle Osborne engagiert, die vorgibt, die leibliche Mutter des Mädchens zu sein. Doch ist dies tatsächlich die Wahrheit?',
+    category: ['Drama-Serie', 'Krimi Drama', 'Action', 'Thriller'],
+    actors: [
+      'Christopher Meloni',
+      'Mariska Hargitay',
+      'Richard Belzer',
+      'Dann Florek',
+      'Ice-T',
+      'BD Wong',
+      'Diane Neal',
+      'Tamara Tunie',
+      'Abigail Breslin',
+      'Lea Thompson'
+    ],
+    directors: ['Arthur W. Forney'],
+    producers: ['Dick Wolf', 'Ted Kotcheff', 'Neal Baer'],
+    season: 6,
+    episode: 1
+  })
 })
 
-it('can handle empty guide', done => {
-  parser({
-    content: `[{"type":"PATH_PARAM","code":"period","reason":"INVALID"}]`,
-    channel,
-    date
-  })
-    .then(result => {
-      expect(result).toMatchObject([])
-      done()
-    })
-    .catch(done)
+it('can handle empty guide', async () => {
+  let results = await parser({ content: ``, channel, date })
+
+  expect(results).toMatchObject([])
 })

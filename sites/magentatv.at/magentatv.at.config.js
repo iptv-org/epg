@@ -1,71 +1,122 @@
 const axios = require('axios')
 const dayjs = require('dayjs')
 
-const API_ENDPOINT = `https://prod.oesp.magentatv.at/oesp/v4/AT/deu/web/programschedules`
+const API_STATIC_ENDPOINT = 'https://static.spark.magentatv.at/deu/web/epg-service-lite/at'
+const API_PROD_ENDPOINT = 'https://prod.spark.magentatv.at/deu/web/linear-service/v2'
 
 module.exports = {
   site: 'magentatv.at',
-  ignore: true, // INFO: Request failed with status code 404 (Not Found)
-  url: function ({ date }) {
-    return `${API_ENDPOINT}/${date.format('YYYYMMDD')}/1`
+  request: {
+    cache: {
+      ttl: 60 * 60 * 1000 // 1 hour
+    }
+  },
+  url: function ({ date, channel }) {
+    return `${API_STATIC_ENDPOINT}/${channel.lang}/events/segments/${date.format('YYYYMMDDHHmmss')}`
   },
   async parser({ content, channel, date }) {
     let programs = []
     let items = parseItems(content, channel)
     if (!items.length) return programs
-    const d = date.format('YYYYMMDD')
     const promises = [
-      axios.get(`${API_ENDPOINT}/${d}/2`),
-      axios.get(`${API_ENDPOINT}/${d}/3`),
-      axios.get(`${API_ENDPOINT}/${d}/4`)
+      axios.get(
+        `${API_STATIC_ENDPOINT}/${channel.lang}/events/segments/${date
+          .add(6, 'h')
+          .format('YYYYMMDDHHmmss')}`,
+        {
+          responseType: 'arraybuffer'
+        }
+      ),
+      axios.get(
+        `${API_STATIC_ENDPOINT}/${channel.lang}/events/segments/${date
+          .add(12, 'h')
+          .format('YYYYMMDDHHmmss')}`,
+        {
+          responseType: 'arraybuffer'
+        }
+      ),
+      axios.get(
+        `${API_STATIC_ENDPOINT}/${channel.lang}/events/segments/${date
+          .add(18, 'h')
+          .format('YYYYMMDDHHmmss')}`,
+        {
+          responseType: 'arraybuffer'
+        }
+      )
     ]
+
     await Promise.allSettled(promises)
       .then(results => {
         results.forEach(r => {
           if (r.status === 'fulfilled') {
-            items = items.concat(parseItems(r.value.data, channel))
+            const parsed = parseItems(r.value.data, channel)
+
+            items = items.concat(parsed)
           }
         })
       })
       .catch(console.error)
-    items.forEach(item => {
+
+    for (let item of items) {
+      const detail = await loadProgramDetails(item, channel)
       programs.push({
-        title: item.t,
+        title: item.title,
+        sub_title: detail.episodeName,
+        description: detail.longDescription,
+        category: detail.genres,
+        actors: detail.actors,
+        directors: detail.directors,
+        producers: detail.producers,
+        season: detail.seasonNumber,
+        episode: detail.episodeNumber,
         start: parseStart(item),
         stop: parseStop(item)
       })
-    })
+    }
 
     return programs
   },
   async channels() {
     const data = await axios
-      .get(`https://prod.oesp.magentatv.at/oesp/v4/AT/deu/web/channels`)
+      .get(`${API_PROD_ENDPOINT}/channels?cityId=65535&language=de&productClass=Orion-DASH`)
       .then(r => r.data)
       .catch(console.log)
 
     return data.channels.map(item => {
       return {
         lang: 'de',
-        site_id: item.id.replace('lgi-at-prodobo-master:101-', ''),
-        name: item.title
+        site_id: item.id,
+        name: item.name
       }
     })
   }
 }
 
+async function loadProgramDetails(item, channel) {
+  if (!item.id) return {}
+  const url = `${API_PROD_ENDPOINT}/replayEvent/${item.id}?returnLinearContent=true&language=${channel.lang}`
+  const data = await axios
+    .get(url)
+    .then(r => r.data)
+    .catch(console.log)
+
+  return data || {}
+}
+
 function parseStart(item) {
-  return dayjs(item.s)
+  return dayjs.unix(item.startTime)
 }
 
 function parseStop(item) {
-  return dayjs(item.e)
+  return dayjs.unix(item.endTime)
 }
 
 function parseItems(content, channel) {
-  const data = typeof content === 'string' ? JSON.parse(content) : content
+  if (!content) return []
+  const data = JSON.parse(content)
   if (!data || !Array.isArray(data.entries)) return []
-  const entity = data.entries.find(e => e.o === `lgi-at-prodobo-master:${channel.site_id}`)
+  const channelData = data.entries.find(e => e.channelId === channel.site_id)
+  if (!channelData) return []
 
-  return entity ? entity.l : []
+  return Array.isArray(channelData.events) ? channelData.events : []
 }
