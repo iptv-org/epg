@@ -1,5 +1,7 @@
-// npm run channels:parse -- --config=./sites/horizon.tv/horizon.tv.config.js --output=./sites/horizon.tv/horizon.tv_de.channels.xml
+// npm run channels:parse -- --config=./sites/horizon.tv/horizon.tv.config.js --output=./sites/horizon.tv/horizon.tv_de.channels.xml --set=country:DE --set=lang:deu
+// npm run channels:parse -- --config=./sites/horizon.tv/horizon.tv.config.js --output=./sites/horizon.tv/horizon.tv_sk.channels.xml --set=country:SK --set=lang:slk
 // npx epg-grabber --config=sites/horizon.tv/horizon.tv.config.js --channels=sites/horizon.tv/horizon.tv_de.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/horizon.tv/horizon.tv.config.js --channels=sites/horizon.tv/horizon.tv_sk.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./horizon.tv.config.js')
 const axios = require('axios')
@@ -13,12 +15,12 @@ jest.mock('axios')
 
 const date = dayjs.utc('2022-03-09', 'YYYY-MM-DD').startOf('d')
 const channel = {
-  site_id: '123_tv',
+  site_id: 'DE#deu#lgi-obolite-de-prod-master:123_tv',
   xmltv_id: '123tv.de'
 }
 
 it('can generate valid url', () => {
-  expect(url({ date })).toBe(
+  expect(url({ date, channel })).toBe(
     'https://legacy-static.oesp.horizon.tv/oesp/v4/DE/deu/web/programschedules/20220309/1'
   )
 })
