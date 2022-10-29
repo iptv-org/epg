@@ -1,22 +1,25 @@
 const axios = require('axios')
 const dayjs = require('dayjs')
 
-const API_ENDPOINT = `https://legacy-static.oesp.horizon.tv/oesp/v4/DE/deu/web/programschedules`
+const API_ENDPOINT = `https://legacy-static.oesp.horizon.tv/oesp/v4`
 
 module.exports = {
   site: 'horizon.tv',
-  url: function ({ date }) {
-    return `${API_ENDPOINT}/${date.format('YYYYMMDD')}/1`
+  url: function ({ date, channel }) {
+    const [country, lang] = channel.site_id.split('#')
+
+    return `${API_ENDPOINT}/${country}/${lang}/web/programschedules/${date.format('YYYYMMDD')}/1`
   },
   async parser({ content, channel, date }) {
+    const [country, lang] = channel.site_id.split('#')
     let programs = []
     let items = parseItems(content, channel)
     if (!items.length) return programs
     const d = date.format('YYYYMMDD')
     const promises = [
-      axios.get(`${API_ENDPOINT}/${d}/2`),
-      axios.get(`${API_ENDPOINT}/${d}/3`),
-      axios.get(`${API_ENDPOINT}/${d}/4`)
+      axios.get(`${API_ENDPOINT}/${country}/${lang}/web/programschedules/${d}/2`),
+      axios.get(`${API_ENDPOINT}/${country}/${lang}/web/programschedules/${d}/3`),
+      axios.get(`${API_ENDPOINT}/${country}/${lang}/web/programschedules/${d}/4`)
     ]
     await Promise.allSettled(promises)
       .then(results => {
@@ -37,16 +40,17 @@ module.exports = {
 
     return programs
   },
-  async channels() {
+  async channels({ country, lang }) {
+    const langs = { deu: 'de', slk: 'sk' }
     const data = await axios
-      .get(`https://legacy-dynamic.oesp.horizon.tv/oesp/v4/DE/deu/web/channels`)
+      .get(`https://legacy-dynamic.oesp.horizon.tv/oesp/v4/${country}/${lang}/web/channels`)
       .then(r => r.data)
       .catch(console.log)
 
     return data.channels.map(item => {
       return {
-        lang: 'de',
-        site_id: item.id.replace('lgi-obolite-de-prod-master:65535-', ''),
+        lang: langs[lang],
+        site_id: `${country}#${lang}#${item.stationSchedules[0].station.id}`,
         name: item.title
       }
     })
@@ -62,9 +66,10 @@ function parseStop(item) {
 }
 
 function parseItems(content, channel) {
+  const [_, __, channelId] = channel.site_id.split('#')
   const data = typeof content === 'string' ? JSON.parse(content) : content
   if (!data || !Array.isArray(data.entries)) return []
-  const entity = data.entries.find(e => e.o === `lgi-obolite-de-prod-master:${channel.site_id}`)
+  const entity = data.entries.find(e => e.o === channelId)
 
   return entity ? entity.l : []
 }
