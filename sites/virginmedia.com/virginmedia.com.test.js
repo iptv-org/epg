@@ -88,27 +88,21 @@ it('can parse response', done => {
                     stop: '2022-03-17T02:30:00.000Z',
                     title: 'Live: NHL Hockey',
                     description: 'The Boston Bruins make the trip to Xcel Energy Center for an NHL clash with the Minnesota Wild.',
-                    category: ['Sport', 'Ice Hockey'],
-                    season: '20120000',
-                    episode: '2022031605'
+                    category: ['Sport', 'Ice Hockey']
                 },
                 {
                     start: '2022-03-17T02:30:00.000Z',
                     stop: '2022-03-17T06:00:00.000Z',
                     title: 'Challenge Cup Ice Hockey',
                     description: 'Exclusive coverage from SSE Arena of the Premier Sports Challenge Final between Belfast Giants and Cardiff Devils.',
-                    category: ['Ice Hockey'],
-                    season: '79870000',
-                    episode: '2022031605'
+                    category: ['Ice Hockey']
                 },
                 {
                     start: '2022-03-17T10:00:00.000Z',
                     stop: '2022-03-17T12:00:00.000Z',
                     title: 'NHL Hockey',
                     description: 'The Calgary Flames play host to the New Jersey Devils in this NHL encounter from Scotiabank Saddledome.',
-                    category: ['Sport', 'Ice Hockey'],
-                    season: '102022',
-                    episode: '194'
+                    category: ['Sport', 'Ice Hockey']
                 },
                 {
                     start: '2022-03-17T17:45:00.000Z',

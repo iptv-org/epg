@@ -87,9 +87,7 @@ it('can parse response', async () => {
       'Jeroen Tjepkema',
       'Saïda Maggé',
       'Winfried Baijens'
-    ],
-    season: 6510000,
-    episode: 144222201
+    ]
   })
 })
 
