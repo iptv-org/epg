@@ -1,0 +1,20 @@
+{
+  "errors": [
+    {
+      "code": 400,
+      "reason": "Not Found",
+      "message": "Bad Request"
+    }
+  ],
+  "links": {
+    "self": {
+      "href": "https://cmg-prod.apigee.net/v1/xapi/tvschedules/tvguide/100001138/web?start=1667088000&duration=1440&channelSourceIds=9200018514"
+    }
+  },
+  "meta": {
+    "componentName": null,
+    "componentDisplayName": null,
+    "componentType": null
+  }
+}
+            
