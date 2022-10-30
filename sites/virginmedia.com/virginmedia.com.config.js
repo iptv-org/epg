@@ -96,13 +96,17 @@ function parseCategory(detail) {
         categories.push(category.title)
     });
     return categories
-  }
+}
 
-  function parseSeason(detail) {
-    return detail.program.seriesNumber || null
-  }
+function parseSeason(detail) {
+    if (!detail.program.seriesNumber) return null
+    if (String(detail.program.seriesNumber).length > 2) return null
+    return detail.program.seriesNumber
+}
 
-  function parseEpisode(detail) {
-    return detail.program.seriesEpisodeNumber || null
-  }
+function parseEpisode(detail) {
+    if (!detail.program.seriesEpisodeNumber) return null
+    if (String(detail.program.seriesEpisodeNumber).length > 3) return null
+    return detail.program.seriesEpisodeNumber
+}
 
