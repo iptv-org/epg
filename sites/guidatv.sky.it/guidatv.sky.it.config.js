@@ -18,8 +18,8 @@ module.exports = {
         title: item.eventTitle,
         description: item.eventSynopsis,
         category: parseCategory(item),
-        season: item.content.seasonNumber || null,
-        episode: item.content.episodeNumber || null,
+        season: parseSeason(item),
+        episode: parseEpisode(item),
         start: parseStart(item),
         stop: parseStop(item),
         url: parseURL(item),
@@ -56,4 +56,16 @@ function parseIcon(item) {
   const cover = item.content.imagesMap ? item.content.imagesMap.find(i => i.key === 'cover') : null
 
   return cover && cover.img && cover.img.url ? `https://guidatv.sky.it${cover.img.url}` : null
+}
+
+function parseSeason(item) {
+    if (!item.content.seasonNumber) return null
+    if (String(item.content.seasonNumber)).length > 2) return null
+    return item.content.seasonNumber
+}
+
+function parseEpisode(item) {
+    if (!item.content.episodeNumber) return null
+    if (String(item.content.episodeNumber).length > 3) return null
+    return item.content.episodeNumber
 }
