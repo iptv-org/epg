@@ -108,7 +108,7 @@ async function loadProgramDetails(item) {
   const data = await axios
     .get(url)
     .then(r => r.data)
-    .catch(err => console.log(err.message))
+    .catch(err => {})
   if (!data) return {}
 
   return data.response || {}
