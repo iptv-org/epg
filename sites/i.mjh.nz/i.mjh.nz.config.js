@@ -35,15 +35,14 @@ module.exports = {
 
     return programs
   },
-  async channels({ service, region, lang = 'en' }) {
+  async channels({ service, region = 'all', lang = 'en' }) {
     const data = await axios
       .get(`https://i.mjh.nz/${service}/app.json`)
       .then(r => r.data)
       .catch(console.log)
 
     const channels = []
-    const items = !region ? data.channels : data.regions[region].channels
-    region = region || 'all'
+    const items = region === 'all' ? data.channels : data.regions[region].channels
     const path = `${service}/${region}`
     for (let id in items) {
       const channel = items[id]
