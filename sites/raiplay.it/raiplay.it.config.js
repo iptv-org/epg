@@ -31,8 +31,8 @@ module.exports = {
         programs.push({
           title: item.name || item.program.name,
           description: item.description,
-          season: item.season || null,
-          episode: item.episode || null,
+          season: parseSeason(item) ,
+          episode: parseEpisode(item),
           sub_title : item['episode_title'] || null,
           url : parseURL(item),
           start,
@@ -63,4 +63,16 @@ function parseURL(item) {
     url = `https://www.raiplay.it${item.event_weblink}`
   }
   return url
+}
+
+function parseSeason(item) {
+    if (!item.season) return null
+    if (String(item.season).length > 2) return null
+    return item.season
+}
+
+function parseEpisode(item) {
+    if (!item.episode) return null
+    if (String(item.episode).length > 3) return null
+    return item.episode
 }
