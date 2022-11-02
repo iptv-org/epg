@@ -15,7 +15,7 @@
     <channel lang="cz" xmltv_id="AlJazeeraBalkans.qa" site_id="Al+Jazeera+Balkans">Aljazeera Balkans</channel>
     <channel lang="cz" xmltv_id="AlJazeeraChannel.qa" site_id="Aljazeera+%28Arabic%29">Aljazeera Channel</channel>
     <channel lang="cz" xmltv_id="AlJazeeraEnglish.qa" site_id="Al+Jazeera">Aljazeera English</channel>
-    <channel lang="cz" xmltv_id="AMCCEE.cz" site_id="AMC">AMC Cesko</channel>
+    <channel lang="cz" xmltv_id="AMCCzechRepublic.cz" site_id="AMC">AMC Cesko</channel>
     <channel lang="cz" xmltv_id="AnimalPlanetCzechRepublic.cz" site_id="AnimalPlanet">Animal Planet</channel>
     <channel lang="cz" xmltv_id="AnimalPlanetUK.uk" site_id="AnimalPlanet+UK">Animal Planet UK</channel>
     <channel lang="cz" xmltv_id="AnixeHDSerie.de" site_id="ANIXE+HD">Anixe HD Serie</channel>
@@ -77,7 +77,7 @@
     <channel lang="cz" xmltv_id="ComedyCentralHungary.hu" site_id="Comedy+Central+%28hu%29">Comedy Central Hungary</channel>
     <channel lang="cz" xmltv_id="CoolTV.hu" site_id="Cool+TV">Cool TV</channel>
     <channel lang="cz" xmltv_id="CredoTV.ro" site_id="Credo">Credo TV</channel>
-    <channel lang="cz" xmltv_id="CrimePlusInvestigationEurope.de" site_id="Crime+and+Investigation">Crime + Investigation</channel>
+    <channel lang="cz" xmltv_id="CrimePlusInvestigationCEE.uk" site_id="Crime+and+Investigation">Crime + Investigation</channel>
     <channel lang="cz" xmltv_id="CrimePlusInvestigationUK.uk" site_id="Crime+and+Investigation+UK">Crime + Investigation UK</channel>
     <channel lang="cz" xmltv_id="CSFilm.cz" site_id="CS+Film">CS Film</channel>
     <channel lang="cz" xmltv_id="CSHistory.cz" site_id="CS+History">CS History</channel>
@@ -149,10 +149,10 @@
     <channel lang="cz" xmltv_id="FilmBoxFamily.nl" site_id="Filmbox+Family">FilmBox Family</channel>
     <channel lang="cz" xmltv_id="FilmBoxPremiumHDCzechRepublicSlovakia.cz" site_id="Filmbox+Premium">FilmBox Premium Czechia</channel>
     <channel lang="cz" xmltv_id="FilmBoxStarsCzechRepublicSlovakia.cz" site_id="Filmbox+Stars">FilmBox Stars Czechia</channel>
-    <channel lang="cz" xmltv_id="FilmCafeHungary.cz" site_id="Film+Caf%E9">Film Café Hungary</channel>
+    <channel lang="cz" xmltv_id="FilmCafeHungary.hu" site_id="Film+Caf%E9">Film Café Hungary</channel>
     <channel lang="cz" xmltv_id="FilmEurope.cz" site_id="Film+Europe">Film Europe</channel>
     <channel lang="cz" xmltv_id="FilmEuropePlus.cz" site_id="Film+Europe+%2B">Film Europe +</channel>
-    <channel lang="cz" xmltv_id="FilmManiaHungary.cz" site_id="Film+M%E1nia">Film Mánia</channel>
+    <channel lang="cz" xmltv_id="FilmMania.hu" site_id="Film+M%E1nia">Film Mánia</channel>
     <channel lang="cz" xmltv_id="FilmPlus.cz" site_id="Film%2B">Film + Czechia</channel>
     <channel lang="cz" xmltv_id="FilmPlusHungary.lu" site_id="Film%2B+%28hu%29">Film + Hungary</channel>
     <channel lang="cz" xmltv_id="FokusTV.pl" site_id="Fokus+TV">Fokus TV</channel>
@@ -200,7 +200,7 @@
     <channel lang="cz" xmltv_id="ITVLondon.uk" site_id="ITV+HD+London">ITV London</channel>
     <channel lang="cz" xmltv_id="IzauraTV.hu" site_id="Izaura+TV">Izaura TV</channel>
     <channel lang="cz" xmltv_id="Jednotka.sk" site_id="STV1">RTVS 1</channel>
-    <channel lang="cz" xmltv_id="JimJamEurope.es" site_id="Jim+Jam">JimJam Europe</channel>
+    <channel lang="cz" xmltv_id="JimJamEurope.uk" site_id="Jim+Jam">JimJam Europe</channel>
     <channel lang="cz" xmltv_id="JOJCinema.sk" site_id="JOJ+Cinema">Joj Cinema</channel>
     <channel lang="cz" xmltv_id="JOJFamily.sk" site_id="JOJ+Family">Joj Family</channel>
     <channel lang="cz" xmltv_id="Jojko.sk" site_id="Jojko">Jojko</channel>
@@ -238,7 +238,7 @@
     <channel lang="cz" xmltv_id="Mezzo.fr" site_id="Mezzo">Mezzo</channel>
     <channel lang="cz" xmltv_id="MezzoLiveHD.fr" site_id="Mezzo+Live+HD">Mezzo Live HD</channel>
     <channel lang="cz" xmltv_id="MinimaxCEE.cz" site_id="Minimax">Minimax Czechia</channel>
-    <channel lang="cz" xmltv_id="MinimaxHungary.cz" site_id="Minimax+%28hu%29">Minimax Hungary</channel>
+    <channel lang="cz" xmltv_id="MinimaxHungary.hu" site_id="Minimax+%28hu%29">Minimax Hungary</channel>
     <channel lang="cz" xmltv_id="MiniTV.hr" site_id="Mini+TV">Mini TV</channel>
     <channel lang="cz" xmltv_id="MnamTV.cz" site_id="M%F2am+TV">Mňam TV</channel>
     <channel lang="cz" xmltv_id="MnauTV.cz" site_id="M%F2au+TV">Mňau TV</channel>
@@ -418,14 +418,14 @@
     <channel lang="cz" xmltv_id="SonyMovieChannelHungary.hu" site_id="Sony+Movie">Sony Movie Channel Hungary</channel>
     <channel lang="cz" xmltv_id="SorozatPlus.hu" site_id="Sorozat%2B">Sorozat +</channel>
     <channel lang="cz" xmltv_id="Spektrum.cz" site_id="Spektrum">Spektrum Czech</channel>
-    <channel lang="cz" xmltv_id="SpektrumHungary.cz" site_id="Spektrum+%28hu%29">Spektrum</channel>
+    <channel lang="cz" xmltv_id="SpektrumHungary.hu" site_id="Spektrum+%28hu%29">Spektrum</channel>
     <channel lang="cz" xmltv_id="SpektrumHome.cz" site_id="Spektrum+Home">Spektrum Home Czech</channel>
-    <channel lang="cz" xmltv_id="SpektrumHomeHungary.cz" site_id="Spektrum+Home+%28hu%29">Spektrum Home</channel>
+    <channel lang="cz" xmltv_id="SpektrumHomeHungary.hu" site_id="Spektrum+Home+%28hu%29">Spektrum Home</channel>
     <channel lang="cz" xmltv_id="Sport.sk" site_id="RTVS+%8Aport">RTVS Šport</channel>
     <channel lang="cz" xmltv_id="Sport1.cz" site_id="Sport1">Sport 1 Czechia</channel>
-    <channel lang="cz" xmltv_id="Sport1Hungary.cz" site_id="Sport1+%28hu%29">Sport 1 Hungary</channel>
+    <channel lang="cz" xmltv_id="Sport1Hungary.hu" site_id="Sport1+%28hu%29">Sport 1 Hungary</channel>
     <channel lang="cz" xmltv_id="Sport2.cz" site_id="Sport2">Sport 2 Czechia</channel>
-    <channel lang="cz" xmltv_id="Sport2Hungary.cz" site_id="Sport2+%28hu%29">Sport 2 Hungary</channel>
+    <channel lang="cz" xmltv_id="Sport2Hungary.hu" site_id="Sport2+%28hu%29">Sport 2 Hungary</channel>
     <channel lang="cz" xmltv_id="Sport5.cz" site_id="Sport+5">Sport 5</channel>
     <channel lang="cz" xmltv_id="StarsTV.pl" site_id="Stars+TV">Stars TV</channel>
     <channel lang="cz" xmltv_id="StingrayClassica.ca" site_id="Brava+HDTV">Stingray Classica</channel>
@@ -487,7 +487,7 @@
     <channel lang="cz" xmltv_id="TVP2.pl" site_id="TVP2">TVP 2</channel>
     <channel lang="cz" xmltv_id="TVPABC.pl" site_id="TVP+ABC">TVP ABC</channel>
     <channel lang="cz" xmltv_id="TVPaprika.cz" site_id="Paprika">TV Paprika Czech Republic</channel>
-    <channel lang="cz" xmltv_id="TVPaprikaHungary.cz" site_id="Paprika+%28hu%29">TV Paprika</channel>
+    <channel lang="cz" xmltv_id="TVPaprikaHungary.hu" site_id="Paprika+%28hu%29">TV Paprika</channel>
     <channel lang="cz" xmltv_id="TVPHD.pl" site_id="TVP+HD">TVP HD</channel>
     <channel lang="cz" xmltv_id="TVPHistoria.pl" site_id="TVP+Historia">TVP Historia</channel>
     <channel lang="cz" xmltv_id="TVPInfo.pl" site_id="TVP+Info">TVP Info</channel>
