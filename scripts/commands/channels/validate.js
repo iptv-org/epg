@@ -21,11 +21,19 @@ async function main() {
 
     const { site, channels } = await parser.parseChannels(filepath)
 
-    const buffer = {}
+    const bufferById = {}
+    const bufferBySiteId = {}
     const errors = []
     for (const channel of channels) {
-      if (!buffer[channel.id]) {
-        buffer[channel.id] = channel
+      if (!bufferById[channel.id]) {
+        bufferById[channel.id] = channel
+      } else {
+        errors.push({ type: 'duplicate', xmltv_id: channel.id, ...channel })
+        stats.errors++
+      }
+
+      if (!bufferBySiteId[channel.site_id]) {
+        bufferBySiteId[channel.site_id] = channel
       } else {
         errors.push({ type: 'duplicate', xmltv_id: channel.id, ...channel })
         stats.errors++
