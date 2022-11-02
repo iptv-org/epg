@@ -60,7 +60,7 @@ function parseIcon(item) {
 
 function parseSeason(item) {
     if (!item.content.seasonNumber) return null
-    if (String(item.content.seasonNumber)).length > 2) return null
+    if (String(item.content.seasonNumber).length > 2) return null
     return item.content.seasonNumber
 }
 
