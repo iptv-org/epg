@@ -109,8 +109,8 @@
     <channel lang="cz" xmltv_id="DorcelTV.nl" site_id="Dorcel+TV">Dorcel TV</channel>
     <channel lang="cz" xmltv_id="DorcelXXX.nl" site_id="Dorcel+XXX">Dorcel XXX</channel>
     <channel lang="cz" xmltv_id="DTXEastEurope.us" site_id="DTX">DTX East Europe</channel>
-    <channel lang="cz" xmltv_id="DuckTVPlus.sk" site_id="ducktv+plus">Duck TV Plus</channel>
     <channel lang="cz" xmltv_id="DuckTV.sk" site_id="ducktv">Duck TV SD</channel>
+    <channel lang="cz" xmltv_id="DuckTVPlus.sk" site_id="ducktv+plus">Duck TV Plus</channel>
     <channel lang="cz" xmltv_id="DunaTV.hu" site_id="Duna">Duna TV</channel>
     <channel lang="cz" xmltv_id="DunaWorld.hu" site_id="Duna+World">Duna World</channel>
     <channel lang="cz" xmltv_id="Dusk.nl" site_id="Dusk%21">Dusk</channel>
@@ -175,7 +175,6 @@
     <channel lang="cz" xmltv_id="HBO3CzechRepublic.cz" site_id="HBO3">HBO 3</channel>
     <channel lang="cz" xmltv_id="HBOCzechRepublic.cz" site_id="HBO">HBO</channel>
     <channel lang="cz" xmltv_id="HirTV.hu" site_id="H%EDr+TV">Hír TV</channel>
-    <!-- <channel lang="cz" xmltv_id="" site_id="History+Channel">History Channel</channel> -->
     <channel lang="cz" xmltv_id="HNTV.hr" site_id="HNTV">HNTV</channel>
     <channel lang="cz" xmltv_id="HobbyTV.cz" site_id="Hobby+TV">Hobby TV</channel>
     <channel lang="cz" xmltv_id="HomeTV.pl" site_id="Home+TV">Home TV</channel>
@@ -200,6 +199,7 @@
     <channel lang="cz" xmltv_id="IzauraTV.hu" site_id="Izaura+TV">Izaura TV</channel>
     <channel lang="cz" xmltv_id="Jednotka.sk" site_id="STV1">RTVS 1</channel>
     <channel lang="cz" xmltv_id="JimJamEurope.uk" site_id="Jim+Jam">JimJam Europe</channel>
+    <channel lang="cz" xmltv_id="JOJ24.sk" site_id="JOJ+24">Joj 24</channel>
     <channel lang="cz" xmltv_id="JOJCinema.sk" site_id="JOJ+Cinema">Joj Cinema</channel>
     <channel lang="cz" xmltv_id="JOJFamily.sk" site_id="JOJ+Family">Joj Family</channel>
     <channel lang="cz" xmltv_id="Jojko.sk" site_id="Jojko">Jojko</channel>
@@ -361,7 +361,6 @@
     <channel lang="cz" xmltv_id="Relax.cz" site_id="RELAX">Relax</channel>
     <channel lang="cz" xmltv_id="Rete4.it" site_id="Rete+4">Rete 4</channel>
     <channel lang="cz" xmltv_id="RetroMusicTV.cz" site_id="Retro+Music">Retro Music TV</channel>
-    <channel lang="cz" xmltv_id="TVRiK.sk" site_id="Rik+TV">Rik</channel>
     <channel lang="cz" xmltv_id="RTDoc.ru" site_id="Russia+Today+Doc">RT Documentary</channel>
     <channel lang="cz" xmltv_id="RTGTV.ru" site_id="Russian+Travel+Guide">RTG TV</channel>
     <channel lang="cz" xmltv_id="RTL2Croatia.hr" site_id="RTL+2+%28hr%29">RTL 2 Hrvatska</channel>
@@ -417,9 +416,9 @@
     <channel lang="cz" xmltv_id="SonyMovieChannelHungary.hu" site_id="Sony+Movie">Sony Movie Channel Hungary</channel>
     <channel lang="cz" xmltv_id="SorozatPlus.hu" site_id="Sorozat%2B">Sorozat +</channel>
     <channel lang="cz" xmltv_id="Spektrum.cz" site_id="Spektrum">Spektrum Czech</channel>
-    <channel lang="cz" xmltv_id="SpektrumHungary.hu" site_id="Spektrum+%28hu%29">Spektrum</channel>
     <channel lang="cz" xmltv_id="SpektrumHome.cz" site_id="Spektrum+Home">Spektrum Home Czech</channel>
     <channel lang="cz" xmltv_id="SpektrumHomeHungary.hu" site_id="Spektrum+Home+%28hu%29">Spektrum Home</channel>
+    <channel lang="cz" xmltv_id="SpektrumHungary.hu" site_id="Spektrum+%28hu%29">Spektrum</channel>
     <channel lang="cz" xmltv_id="Sport.sk" site_id="RTVS+%8Aport">RTVS Šport</channel>
     <channel lang="cz" xmltv_id="Sport1.cz" site_id="Sport1">Sport 1 Czechia</channel>
     <channel lang="cz" xmltv_id="Sport1Hungary.hu" site_id="Sport1+%28hu%29">Sport 1 Hungary</channel>
@@ -456,6 +455,7 @@
     <channel lang="cz" xmltv_id="TrueAmateurs.uk" site_id="True+Amateurs">True Amateurs</channel>
     <channel lang="cz" xmltv_id="TTV.pl" site_id="TTV">TTV</channel>
     <channel lang="cz" xmltv_id="TukiTV.sk" site_id="%8Duki">Tuki TV</channel>
+    <channel lang="cz" xmltv_id="TurboTV.sk" site_id="Turbo+TV">Turbo TV</channel>
     <channel lang="cz" xmltv_id="TV1000East.ru" site_id="TV+1000+Balkans">TV 1000 Balkan</channel>
     <channel lang="cz" xmltv_id="TV2.hu" site_id="TV2">TV 2</channel>
     <channel lang="cz" xmltv_id="TV2000.va" site_id="TV2000">TV 2000</channel>
@@ -472,6 +472,7 @@
     <channel lang="cz" xmltv_id="TVC.pl" site_id="TVC">TVC</channel>
     <channel lang="cz" xmltv_id="TVCentral.sk" site_id="CETV">TV Central</channel>
     <channel lang="cz" xmltv_id="TVCGSat.me" site_id="TVCG+SAT">TVCG Sat</channel>
+    <channel lang="cz" xmltv_id="TVDK.sk" site_id="Telev%EDzia+Doln%FD+Kub%EDn">Televízia Dolný Kubín</channel>
     <channel lang="cz" xmltv_id="TVEInternacionalEuropeAsia.es" site_id="TVE">TVE Internacional Europa</channel>
     <channel lang="cz" xmltv_id="TVJOJ.sk" site_id="JOJ">TV Joj</channel>
     <channel lang="cz" xmltv_id="TVLux.sk" site_id="Lux">TV Lux</channel>
@@ -499,6 +500,7 @@
     <channel lang="cz" xmltv_id="TVPuls.pl" site_id="TV+Puls">TV Puls</channel>
     <channel lang="cz" xmltv_id="TVRaj.sk" site_id="TV+RAJ">TV Raj</channel>
     <channel lang="cz" xmltv_id="TVRepublika.pl" site_id="Telewizja+Republika">TV Republika</channel>
+    <channel lang="cz" xmltv_id="TVRiK.sk" site_id="Rik+TV">Rik</channel>
     <channel lang="cz" xmltv_id="TVRomana.sk" site_id="Romana">TV Romana</channel>
     <channel lang="cz" xmltv_id="TVS.pl" site_id="TVS">TVS</channel>
     <channel lang="cz" xmltv_id="TVSeverka.sk" site_id="Severka">TV Severka</channel>
@@ -529,5 +531,6 @@
     <channel lang="cz" xmltv_id="ZoomTV.pl" site_id="Zoom+TV">Zoom TV</channel>
     <!-- <channel lang="cz" xmltv_id="" site_id="%8Al%E1gr+2">Slágr 2</channel> -->
     <!-- <channel lang="cz" xmltv_id="" site_id="Filmbox+Premium+%28pl%29">FilmBox Premium Polska</channel> -->
+    <!-- <channel lang="cz" xmltv_id="" site_id="History+Channel">History Channel</channel> -->
   </channels>
 </site>
