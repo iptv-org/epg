@@ -53,7 +53,7 @@
     <channel lang="de" xmltv_id="DeutschesMusikFernsehen.de" site_id="121">Deutsches Musik Fernsehen</channel>
     <channel lang="de" xmltv_id="DiscoveryChannelGermany.de" site_id="122">Discovery Channel Deutschland</channel>
     <channel lang="de" xmltv_id="DisneyChannelGermany.de" site_id="128">Disney Channel Deutschland</channel>
-    <channel lang="de" xmltv_id="DMAXGermany.de" site_id="136">DMAX Deutschland</channel>
+    <channel lang="de" xmltv_id="DMAX.de" site_id="136">DMAX Deutschland</channel>
     <channel lang="de" xmltv_id="DuckTV.sk" site_id="1626">Duck TV SD</channel>
     <channel lang="de" xmltv_id="DWDeutsch.de" site_id="1447">DW Deutsch</channel>
     <channel lang="de" xmltv_id="EGermany.us" site_id="143">E! Deutschland</channel>
@@ -73,7 +73,7 @@
     <channel lang="de" xmltv_id="HGTVGermany.us" site_id="1510">HGTV Deutschland</channel>
     <channel lang="de" xmltv_id="HistoryGermany.de" site_id="203">History Deutschland</channel>
     <channel lang="de" xmltv_id="HitExpressTV.ch" site_id="1825">HitExpress TV</channel>
-    <channel lang="de" xmltv_id="HopeTVDeutsch.de" site_id="204">Hope TV Deutsch</channel>
+    <channel lang="de" xmltv_id="HopeChannelGerman.de" site_id="204">Hope TV Deutsch</channel>
     <channel lang="de" xmltv_id="HRFernsehen.de" site_id="205">HR Fernsehen</channel>
     <channel lang="de" xmltv_id="HSE.de" site_id="207">HSE</channel>
     <channel lang="de" xmltv_id="Junior.de" site_id="224">Junior</channel>
@@ -132,10 +132,9 @@
     <channel lang="de" xmltv_id="RTLCrimeGermany.de" site_id="361">RTL Crime Deutschland</channel>
     <channel lang="de" xmltv_id="RTLLivingGermany.de" site_id="362">RTL Living Deutschland</channel>
     <channel lang="de" xmltv_id="RTLPassionCroatia.hr" site_id="305">RTL Passion Hrvatska</channel>
-    <channel lang="de" xmltv_id="RTLSchweiz.ch" site_id="1770">RTL Schweiz</channel>
-    <channel lang="de" xmltv_id="RTLUHD.de" site_id="360">RTL UHD</channel>
-    <channel lang="de" xmltv_id="RTLUp.de" site_id="919">RTL Up</channel>
-    <channel lang="de" xmltv_id="RTLZweiSchweiz.ch" site_id="359">RTL Zwei Schweiz</channel>
+    <channel lang="de" xmltv_id="RTLGermany.de" site_id="1770">RTL</channel>
+    <channel lang="de" xmltv_id="RTLup.de" site_id="919">RTL Up</channel>
+    <channel lang="de" xmltv_id="RTLZwei.de" site_id="359">RTL Zwei</channel>
     <channel lang="de" xmltv_id="S1.ch" site_id="374">S1</channel>
     <channel lang="de" xmltv_id="Sat1Germany.de" site_id="375">Sat. 1 Deutschland</channel>
     <channel lang="de" xmltv_id="Sat1GoldGermany.de" site_id="377">Sat. 1 Gold Deutschland</channel>
@@ -143,12 +142,12 @@
     <channel lang="de" xmltv_id="SchlagerDeluxe.de" site_id="1714">Schlager Deluxe</channel>
     <channel lang="de" xmltv_id="ServusTV.at" site_id="381">Servus TV Deutschland</channel>
     <channel lang="de" xmltv_id="SixxGermany.de" site_id="385">Sixx Deutschland</channel>
-    <channel lang="de" xmltv_id="SonyChannelGermany.us" site_id="1083">Sony Channel Deutschland</channel>
+    <channel lang="de" xmltv_id="SonyChannelGermany.de" site_id="1083">Sony Channel Deutschland</channel>
     <channel lang="de" xmltv_id="SpiegelGeschichte.de" site_id="395">Spiegel Geschichte</channel>
     <channel lang="de" xmltv_id="SpiegelTVWissen.de" site_id="396">Spiegel TV Wissen</channel>
     <channel lang="de" xmltv_id="Sport1.de" site_id="398">Sport 1</channel>
     <channel lang="de" xmltv_id="Sport1Plus.de" site_id="1552">Sport 1+</channel>
-    <channel lang="de" xmltv_id="SportdigitalFussball.de" site_id="1554">Sportdigital Fussball</channel>
+    <channel lang="de" xmltv_id="Sportdigital.de" site_id="1554">Sportdigital Fussball</channel>
     <channel lang="de" xmltv_id="SRF1.ch" site_id="399">SRF 1</channel>
     <channel lang="de" xmltv_id="SRFernsehen.de" site_id="1502">SR Fernsehen</channel>
     <channel lang="de" xmltv_id="SRFInfo.ch" site_id="400">SRF Info</channel>
@@ -333,8 +332,8 @@
     <channel lang="fr" xmltv_id="EFrance.fr" site_id="144">E! France</channel>
     <channel lang="fr" xmltv_id="Equidia.fr" site_id="151">Equidia</channel>
     <channel lang="fr" xmltv_id="EuronewsFrench.fr" site_id="165">EuroNews Français</channel>
-    <channel lang="fr" xmltv_id="Eurosport1France.fr" site_id="168">Eurosport 1 France</channel>
-    <channel lang="fr" xmltv_id="Eurosport2France.fr" site_id="171">Eurosport 2 France</channel>
+    <channel lang="fr" xmltv_id="Eurosport1.fr" site_id="168">Eurosport 1 France</channel>
+    <channel lang="fr" xmltv_id="Eurosport2.fr" site_id="171">Eurosport 2 France</channel>
     <channel lang="fr" xmltv_id="France2.fr" site_id="182">France 2</channel>
     <channel lang="fr" xmltv_id="France24French.fr" site_id="183">France 24 Français</channel>
     <channel lang="fr" xmltv_id="France3.fr" site_id="184">France 3</channel>
@@ -502,7 +501,7 @@
     <channel lang="it" xmltv_id="RaiPremium.it" site_id="336">Rai Premium</channel>
     <channel lang="it" xmltv_id="RaiScuola.it" site_id="337">Rai Scuola</channel>
     <channel lang="it" xmltv_id="RaiSport.it" site_id="339">Rai Sport</channel>
-    <channel lang="it" xmltv_id="RaiSportPlusHD.it" site_id="338">Rai Sport + HD</channel>
+    <channel lang="it" xmltv_id="RaiSportPlus.it" site_id="338">Rai Sport + HD</channel>
     <channel lang="it" xmltv_id="RaiStoria.it" site_id="340">Rai Storia</channel>
     <channel lang="it" xmltv_id="RaiYoyo.it" site_id="341">Rai Yoyo</channel>
     <channel lang="it" xmltv_id="RealTimeItaly.it" site_id="346">Real Time Italia</channel>
@@ -558,11 +557,11 @@
     <channel lang="sq" xmltv_id="OraTV.al" site_id="1878">Ora</channel>
     <channel lang="sq" xmltv_id="RTK1.xk" site_id="358">RTK 1</channel>
     <channel lang="sq" xmltv_id="RTSH3.al" site_id="1681">RTSH 3</channel>
-    <channel lang="sq" xmltv_id="RTV21HD.xk" site_id="370">RTV 21 Sat</channel>
+    <channel lang="sq" xmltv_id="RTV21.xk" site_id="370">RTV 21 Sat</channel>
     <channel lang="sq" xmltv_id="SyriTV.al" site_id="1879">Syri TV</channel>
     <channel lang="sq" xmltv_id="T7.rs" site_id="1689">T7</channel>
     <channel lang="sq" xmltv_id="TopChannel.al" site_id="1877">Top Channel</channel>
-    <channel lang="sq" xmltv_id="TV21HDMacedonia.mk" site_id="1893">TV 21 Macedonia</channel>
+    <channel lang="sq" xmltv_id="TV21.mk" site_id="1893">TV 21 Macedonia</channel>
     <channel lang="sq" xmltv_id="TVArta.xk" site_id="1896">Arta</channel>
     <channel lang="sq" xmltv_id="TVDukagjini.rs" site_id="1446">TV Dukagjini</channel>
     <channel lang="sq" xmltv_id="TVKlan.al" site_id="1782">TV Klan</channel>

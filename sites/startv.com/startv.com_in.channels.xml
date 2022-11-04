@@ -2,68 +2,45 @@
 <site site="startv.com">
   <channels>
     <channel lang="hi" xmltv_id="Asianet.in" site_id="Asianet">Asianet</channel>
-    <channel lang="hi" xmltv_id="AsianetHD.in" site_id="Asianet HD">Asianet HD</channel>
     <channel lang="hi" xmltv_id="AsianetMovies.in" site_id="Asianet Movies">Asianet Movies</channel>
     <channel lang="hi" xmltv_id="AsianetPlus.in" site_id="Asianet Plus">Asianet Plus</channel>
     <channel lang="hi" xmltv_id="BabyTV.uk" site_id="Baby TV">Baby TV</channel>
-    <channel lang="hi" xmltv_id="BabyTVHD.uk" site_id="Baby TV HD">Baby TV HD</channel>
-    <channel lang="hi" xmltv_id="FoxLifeHDIndia.in" site_id="Fox Life HD">Fox Life HD</channel>
     <channel lang="hi" xmltv_id="FoxLifeIndia.in" site_id="Fox Life">Fox Life</channel>
     <channel lang="hi" xmltv_id="JalshaMovies.in" site_id="Jalsha Movies">Jalsha Movies</channel>
-    <channel lang="hi" xmltv_id="JalshaMoviesHD.in" site_id="Jalsha Movies HD">Jalsha Movies HD</channel>
-    <channel lang="hi" xmltv_id="NationalGeographicHDIndia.in" site_id="National Geographic Channel HD">National Geographic Channel HD</channel>
     <channel lang="hi" xmltv_id="NationalGeographicIndia.in" site_id="National Geographic Channel">National Geographic Channel</channel>
-    <channel lang="hi" xmltv_id="NationalGeographicWildHDIndia.in" site_id="Nat Geo Wild HD">Nat Geo Wild HD</channel>
     <channel lang="hi" xmltv_id="NationalGeographicWildIndia.in" site_id="Nat Geo Wild">Nat Geo Wild</channel>
     <channel lang="hi" xmltv_id="StarBharat.in" site_id="Star Bharat">Star Bharat</channel>
-    <channel lang="hi" xmltv_id="StarBharatHD.in" site_id="Star Bharat HD">Star Bharat HD</channel>
     <channel lang="hi" xmltv_id="StarGold.in" site_id="Star Gold">Star Gold</channel>
     <channel lang="hi" xmltv_id="StarGold2.in" site_id="Star Gold 2">Star Gold 2</channel>
-    <channel lang="hi" xmltv_id="StarGoldHD.in" site_id="Star Gold HD">Star Gold HD</channel>
     <channel lang="hi" xmltv_id="StarGoldSelect.in" site_id="Star Gold Select">Star Gold Select</channel>
-    <channel lang="hi" xmltv_id="StarGoldSelectHD.in" site_id="Star Gold Select HD">Star Gold Select HD</channel>
     <channel lang="hi" xmltv_id="StarJalsha.in" site_id="Star Jalsha">Star Jalsha</channel>
-    <channel lang="hi" xmltv_id="StarJalshaHD.in" site_id="Star Jalsha HD">Star Jalsha HD</channel>
     <channel lang="hi" xmltv_id="StarMaa.in" site_id="Star Maa">Star Maa</channel>
     <channel lang="hi" xmltv_id="StarMaaGold.in" site_id="Star Maa Gold">Star Maa Gold</channel>
-    <channel lang="hi" xmltv_id="StarMaaHD.in" site_id="Star Maa HD">Star Maa HD</channel>
     <channel lang="hi" xmltv_id="StarMaaMovies.in" site_id="Star Maa Movies">Star Maa Movies</channel>
-    <channel lang="hi" xmltv_id="StarMaaMoviesHD.in" site_id="Star Maa Movies HD">Star Maa Movies HD</channel>
     <channel lang="hi" xmltv_id="StarMaaMusic.in" site_id="Star Maa Music">Star Maa Music</channel>
-    <channel lang="hi" xmltv_id="StarMoviesHDIndia.in" site_id="Star Movies HD">Star Movies HD</channel>
     <channel lang="hi" xmltv_id="StarMoviesIndia.in" site_id="Star Movies">Star Movies</channel>
-    <channel lang="hi" xmltv_id="StarMoviesSelectHD.in" site_id="Star Movies Select HD">Star Movies Select HD</channel>
+    <channel lang="hi" xmltv_id="StarMoviesSelect.in" site_id="Star Movies Select HD">Star Movies Select HD</channel>
     <channel lang="hi" xmltv_id="StarPlus.in" site_id="STAR PLUS">STAR PLUS</channel>
-    <channel lang="hi" xmltv_id="StarPlusHD.in" site_id="STAR PLUS HD">STAR PLUS HD</channel>
     <channel lang="hi" xmltv_id="StarPravah.in" site_id="Star Pravah">Star Pravah</channel>
-    <channel lang="hi" xmltv_id="StarPravahHD.in" site_id="Star Pravah HD">Star Pravah HD</channel>
     <channel lang="hi" xmltv_id="StarSports1.in" site_id="Star Sports 1">Star Sports 1</channel>
     <channel lang="hi" xmltv_id="StarSports1Bangla.in" site_id="Star Sports 1 Bangla">Star Sports 1 Bangla</channel>
-    <channel lang="hi" xmltv_id="StarSports1HD.in" site_id="Star Sports 1 HD">Star Sports 1 HD</channel>
-    <channel lang="hi" xmltv_id="StarSports1HDHindi.in" site_id="Star Sports 1 HD Hindi">Star Sports 1 HD Hindi</channel>
     <channel lang="hi" xmltv_id="StarSports1Hindi.in" site_id="Star Sports 1 Hindi">Star Sports 1 Hindi</channel>
     <channel lang="hi" xmltv_id="StarSports1Kannada.in" site_id="Star Sports 1 Kannada">Star Sports 1 Kannada</channel>
     <channel lang="hi" xmltv_id="StarSports1Marathi.in" site_id="Star Sports 1 Marathi">Star Sports 1 Marathi</channel>
     <channel lang="hi" xmltv_id="StarSports1Tamil.in" site_id="Star Sports 1 Tamil">Star Sports 1 Tamil</channel>
     <channel lang="hi" xmltv_id="StarSports1Telugu.in" site_id="Star Sports 1 Telugu">Star Sports 1 Telugu</channel>
     <channel lang="hi" xmltv_id="StarSports2.in" site_id="Star Sports 2">Star Sports 2</channel>
-    <channel lang="hi" xmltv_id="StarSports2HD.in" site_id="Star Sports 2 HD">Star Sports 2 HD</channel>
     <channel lang="hi" xmltv_id="StarSports3.in" site_id="Star Sports 3">Star Sports 3</channel>
     <channel lang="hi" xmltv_id="StarSportsFirst.in" site_id="Star Sports First">Star Sports First</channel>
     <channel lang="hi" xmltv_id="StarSportsSelect1.in" site_id="Star Sports Select 1">Star Sports Select 1</channel>
-    <channel lang="hi" xmltv_id="StarSportsSelect1HD.in" site_id="Star Sports Select 1 HD">Star Sports Select 1 HD</channel>
     <channel lang="hi" xmltv_id="StarSportsSelect2.in" site_id="Star Sports Select 2">Star Sports Select 2</channel>
-    <channel lang="hi" xmltv_id="StarSportsSelect2HD.in" site_id="Star Sports Select 2 HD">Star Sports Select 2 HD</channel>
     <channel lang="hi" xmltv_id="StarSuvarna.in" site_id="Star Suvarna">Star Suvarna</channel>
-    <channel lang="hi" xmltv_id="StarSuvarnaHD.in" site_id="Star Suvarna HD">Star Suvarna HD</channel>
     <channel lang="hi" xmltv_id="StarSuvarnaPlus.in" site_id="Star Suvarna Plus">Star Suvarna Plus</channel>
     <channel lang="hi" xmltv_id="StarUtsav.in" site_id="Star Utsav">Star Utsav</channel>
     <channel lang="hi" xmltv_id="StarUtsavMovies.in" site_id="Star Utsav Movies">Star Utsav Movies</channel>
     <channel lang="hi" xmltv_id="StarVijay.in" site_id="Vijay TV">Vijay TV</channel>
-    <channel lang="hi" xmltv_id="StarVijayHD.in" site_id="Vijay HD">Vijay HD</channel>
     <channel lang="hi" xmltv_id="StarVijaySuper.in" site_id="Vijay Super">Vijay Super</channel>
-    <channel lang="hi" xmltv_id="StarWorldHDIndia.in" site_id="Star World HD">Star World HD</channel>
     <channel lang="hi" xmltv_id="StarWorldIndia.in" site_id="Star World">Star World</channel>
-    <channel lang="hi" xmltv_id="StarWorldPremiereHD.in" site_id="Star World Premiere HD">Star World Premiere HD</channel>
+    <channel lang="hi" xmltv_id="StarWorldPremiere.in" site_id="Star World Premiere HD">Star World Premiere HD</channel>
   </channels>
 </site>
