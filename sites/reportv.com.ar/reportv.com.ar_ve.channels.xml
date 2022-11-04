@@ -12,6 +12,7 @@
     <channel lang="en" xmltv_id="CanalI.ve" site_id="967">CANAL I</channel>
     <channel lang="en" xmltv_id="Colombeia.ve" site_id="2626">COLOMBEIA</channel>
     <channel lang="en" xmltv_id="ConCienciaTV.ve" site_id="2831">CONCIENCIA TV</channel>
+    <channel lang="en" xmltv_id="DiscoveryScienceLatinAmerica.us" site_id="493">DISCOVERY SCIENCE</channel>
     <channel lang="en" xmltv_id="DWEspanol.de" site_id="16">DW ESPAÑOL</channel>
     <channel lang="en" xmltv_id="Eurochannel.us" site_id="337">EUROCHANNEL</channel>
     <channel lang="en" xmltv_id="EuropaEuropa.ar" site_id="184">EUROPA EUROPA</channel>
@@ -21,20 +22,26 @@
     <channel lang="en" xmltv_id="IVCHD.ve" site_id="4479">IVC HD</channel>
     <channel lang="en" xmltv_id="LaVozdeMaria.do" site_id="1945">LA VOZ DE MARIA</channel>
     <channel lang="en" xmltv_id="MeridianoTV.ve" site_id="934">MERIDIANO TV</channel>
+    <channel lang="en" xmltv_id="MTV80s.uk" site_id="933">VH1 CLASSIC</channel>
     <channel lang="en" xmltv_id="MultiPremier.mx" site_id="106">MULTIPREMIER</channel>
     <channel lang="en" xmltv_id="PenthouseTV.us" site_id="3291">PENTHOUSE</channel>
+    <channel lang="en" xmltv_id="RTenEspanol.ru" site_id="1502">RUSSIA TODAY</channel>
     <channel lang="en" xmltv_id="RTPInternacional.pt" site_id="931">RTP INTERNACIONAL</channel>
     <channel lang="en" xmltv_id="SerTV.pa" site_id="2226">SERTV</channel>
     <channel lang="en" xmltv_id="SunChannel.ve" site_id="771">SUN CHANNEL</channel>
     <channel lang="en" xmltv_id="TelefeInternacional.ar" site_id="149">TELEFE INTERNACIONAL</channel>
+    <channel lang="en" xmltv_id="Telesur.ve" site_id="388">TELESUR</channel>
     <channel lang="en" xmltv_id="Televen.ve" site_id="408">TELEVEN</channel>
     <channel lang="en" xmltv_id="TLT.ve" site_id="3530">TLT</channel>
     <channel lang="en" xmltv_id="Tooncast.us" site_id="880">TOONCAST</channel>
+    <channel lang="en" xmltv_id="TVEInternacionalAmerica.es" site_id="59">TVE</channel>
     <channel lang="en" xmltv_id="TVes.ve" site_id="2186">TVES</channel>
     <channel lang="en" xmltv_id="TVFamilia.ve" site_id="3413">TV FAMILIA</channel>
     <channel lang="en" xmltv_id="ValeTV.ve" site_id="3357">VALE TV</channel>
     <channel lang="en" xmltv_id="Venevision.ve" site_id="2138">VENEVISION</channel>
+    <channel lang="en" xmltv_id="VenezolanadeTelevision.ve" site_id="420">VTV</channel>
     <channel lang="en" xmltv_id="Venus.ar" site_id="3294">VENUS</channel>
+    <channel lang="en" xmltv_id="VepacoTV.ve" site_id="3352">TVEPACO</channel>
     <channel lang="en" xmltv_id="VePlusVenezuela.ve" site_id="914">VENEVISION PLUS</channel>
     <channel lang="en" xmltv_id="Vive.ve" site_id="407">VIVE TV</channel>
     <!-- <channel lang="en" xmltv_id="" site_id="1054">CLASICOS INSTRUMENTALES</channel> -->
@@ -58,7 +65,6 @@
     <!-- <channel lang="en" xmltv_id="" site_id="135">TV PUBLICA</channel> -->
     <!-- <channel lang="en" xmltv_id="" site_id="1362">AMC</channel> -->
     <!-- <channel lang="en" xmltv_id="" site_id="137">DE PELICULA</channel> -->
-    <!-- <channel lang="en" xmltv_id="" site_id="1502">RUSSIA TODAY</channel> -->
     <!-- <channel lang="en" xmltv_id="" site_id="1531">HGTV</channel> -->
     <!-- <channel lang="en" xmltv_id="" site_id="1537">STAR CHANNEL HD</channel> -->
     <!-- <channel lang="en" xmltv_id="" site_id="1720">ROCK ALTERNATIVO</channel> -->
@@ -98,7 +104,6 @@
     <!-- <channel lang="en" xmltv_id="" site_id="3313">FANB TV</channel> -->
     <!-- <channel lang="en" xmltv_id="" site_id="334">HBO XTREME</channel> -->
     <!-- <channel lang="en" xmltv_id="" site_id="335">HBO FAMILY</channel> -->
-    <!-- <channel lang="en" xmltv_id="" site_id="3352">TVEPACO</channel> -->
     <!-- <channel lang="en" xmltv_id="" site_id="3381">CANAL GUIA INTER</channel> -->
     <!-- <channel lang="en" xmltv_id="" site_id="339">TLC</channel> -->
     <!-- <channel lang="en" xmltv_id="" site_id="3422">HBO POP PANAMERICANO</channel> -->
@@ -108,14 +113,12 @@
     <!-- <channel lang="en" xmltv_id="" site_id="3750">TLT HD</channel> -->
     <!-- <channel lang="en" xmltv_id="" site_id="38">TV5</channel> -->
     <!-- <channel lang="en" xmltv_id="" site_id="386">DISNEY</channel> -->
-    <!-- <channel lang="en" xmltv_id="" site_id="388">TELESUR</channel> -->
     <!-- <channel lang="en" xmltv_id="" site_id="3901">SHOWVEN TV</channel> -->
     <!-- <channel lang="en" xmltv_id="" site_id="396">DISCOVERY KIDS</channel> -->
     <!-- <channel lang="en" xmltv_id="" site_id="401">GOLDEN</channel> -->
     <!-- <channel lang="en" xmltv_id="" site_id="403">CARTOON NETWORK</channel> -->
     <!-- <channel lang="en" xmltv_id="" site_id="404">NATIONAL GEOGRAPHIC</channel> -->
     <!-- <channel lang="en" xmltv_id="" site_id="413">ENLACE</channel> -->
-    <!-- <channel lang="en" xmltv_id="" site_id="420">VTV</channel> -->
     <!-- <channel lang="en" xmltv_id="" site_id="423">UNIVERSAL CHANNEL</channel> -->
     <!-- <channel lang="en" xmltv_id="" site_id="427">FX</channel> -->
     <!-- <channel lang="en" xmltv_id="" site_id="4361">ESPN 4</channel> -->
@@ -131,7 +134,6 @@
     <!-- <channel lang="en" xmltv_id="" site_id="479">AXN</channel> -->
     <!-- <channel lang="en" xmltv_id="" site_id="491">ENTERTAINMENT TELEVISION</channel> -->
     <!-- <channel lang="en" xmltv_id="" site_id="492">DISCOVERY TURBO</channel> -->
-    <!-- <channel lang="en" xmltv_id="" site_id="493">DISCOVERY SCIENCE</channel> -->
     <!-- <channel lang="en" xmltv_id="" site_id="4993">GOLDEN PLUS HD</channel> -->
     <!-- <channel lang="en" xmltv_id="" site_id="500">HBO SIGNATURE</channel> -->
     <!-- <channel lang="en" xmltv_id="" site_id="532">80S HITS</channel> -->
@@ -143,7 +145,6 @@
     <!-- <channel lang="en" xmltv_id="" site_id="571">NUEVA ERA</channel> -->
     <!-- <channel lang="en" xmltv_id="" site_id="572">CONTEMPORANEA</channel> -->
     <!-- <channel lang="en" xmltv_id="" site_id="580">STUDIO UNIVERSAL</channel> -->
-    <!-- <channel lang="en" xmltv_id="" site_id="59">TVE</channel> -->
     <!-- <channel lang="en" xmltv_id="" site_id="591">DISCOVERY ID</channel> -->
     <!-- <channel lang="en" xmltv_id="" site_id="61">ANTENA3</channel> -->
     <!-- <channel lang="en" xmltv_id="" site_id="6223">CLAROSPORTS</channel> -->
@@ -162,6 +163,5 @@
     <!-- <channel lang="en" xmltv_id="" site_id="9">LAS ESTRELLAS</channel> -->
     <!-- <channel lang="en" xmltv_id="" site_id="910">TCM</channel> -->
     <!-- <channel lang="en" xmltv_id="" site_id="917">I-SAT</channel> -->
-    <!-- <channel lang="en" xmltv_id="" site_id="933">VH1 CLASSIC</channel> -->
   </channels>
 </site>
