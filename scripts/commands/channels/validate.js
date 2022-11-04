@@ -25,15 +25,15 @@ async function main() {
     const bufferBySiteId = {}
     const errors = []
     for (const channel of channels) {
-      if (!bufferById[channel.id]) {
-        bufferById[channel.id] = channel
+      if (!bufferById[channel.id + channel.lang]) {
+        bufferById[channel.id + channel.lang] = channel
       } else {
         errors.push({ type: 'duplicate', xmltv_id: channel.id, ...channel })
         stats.errors++
       }
 
-      if (!bufferBySiteId[channel.site_id]) {
-        bufferBySiteId[channel.site_id] = channel
+      if (!bufferBySiteId[channel.site_id + channel.lang]) {
+        bufferBySiteId[channel.site_id + channel.lang] = channel
       } else {
         errors.push({ type: 'duplicate', xmltv_id: channel.id, ...channel })
         stats.errors++
