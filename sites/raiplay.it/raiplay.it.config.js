@@ -10,7 +10,9 @@ dayjs.extend(timezone)
 module.exports = {
   site: 'raiplay.it',
   url: function ({ date, channel }) {
-    return `https://www.raiplay.it/palinsesto/app/${channel.site_id}/${date.format('DD-MM-YYYY')}.json`
+    return `https://www.raiplay.it/palinsesto/app/${channel.site_id}/${date.format(
+      'DD-MM-YYYY'
+    )}.json`
   },
   parser: function ({ content, date }) {
     const programs = []
@@ -18,37 +20,35 @@ module.exports = {
     if (!data.events) return programs
 
     data.events.forEach(item => {
-      if (item.name && item.hour && item.duration_in_minutes) {
-        const startDate = dayjs.tz(item.hour, 'HH:mm','Europe/Rome')
-          .set('D', date.get('D'))
-          .set('M', date.get('M'))
-          .set('y', date.get('y'))
-        const start = startDate.toJSON()
-        const duration = parseInt(item.duration_in_minutes)
-        const stopDate = startDate.add(duration,'m')
-        const stop = stopDate.toJSON()
+      if (!item.name || !item.hour || !item.duration_in_minutes) return
+      const start = parseStart(item, date)
+      const duration = parseInt(item.duration_in_minutes)
+      const stop = start.add(duration, 'm')
 
-        programs.push({
-          title: item.name || item.program.name,
-          description: item.description,
-          season: parseSeason(item) ,
-          episode: parseEpisode(item),
-          sub_title : item['episode_title'] || null,
-          url : parseURL(item),
-          start,
-          stop,
-          icon: parseIcon(item)
-        })
-      }
+      programs.push({
+        title: item.name || item.program.name,
+        description: item.description,
+        season: parseSeason(item),
+        episode: parseEpisode(item),
+        sub_title: item['episode_title'] || null,
+        url: parseURL(item),
+        start,
+        stop,
+        icon: parseIcon(item)
+      })
     })
 
     return programs
   }
 }
 
+function parseStart(item, date) {
+  return dayjs.tz(`${date.format('YYYY-MM-DD')} ${item.hour}`, 'YYYY-MM-DD HH:mm', 'Europe/Rome')
+}
+
 function parseIcon(item) {
-  let cover = null;
-  if(item.image){
+  let cover = null
+  if (item.image) {
     cover = `https://www.raiplay.it${item.image}`
   }
   return cover
@@ -56,23 +56,23 @@ function parseIcon(item) {
 
 function parseURL(item) {
   let url = null
-  if(item.weblink){
+  if (item.weblink) {
     url = `https://www.raiplay.it${item.weblink}`
   }
-  if(item.event_weblink){
+  if (item.event_weblink) {
     url = `https://www.raiplay.it${item.event_weblink}`
   }
   return url
 }
 
 function parseSeason(item) {
-    if (!item.season) return null
-    if (String(item.season).length > 2) return null
-    return item.season
+  if (!item.season) return null
+  if (String(item.season).length > 2) return null
+  return item.season
 }
 
 function parseEpisode(item) {
-    if (!item.episode) return null
-    if (String(item.episode).length > 3) return null
-    return item.episode
+  if (!item.episode) return null
+  if (String(item.episode).length > 3) return null
+  return item.episode
 }
