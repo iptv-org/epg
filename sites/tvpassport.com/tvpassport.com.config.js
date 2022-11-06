@@ -29,9 +29,16 @@ module.exports = {
       const start = parseStart($item)
       const duration = parseDuration($item)
       const stop = start.add(duration, 'm')
+      let title = parseTitle($item)
+      let sub_title = parseSubTitle($item)
+      if (title === 'Movie') {
+        title = sub_title
+        sub_title = null
+      }
+
       programs.push({
-        title: parseTitle($item),
-        sub_title: parseSubTitle($item),
+        title,
+        sub_title,
         description: parseDescription($item),
         icon: parseIcon($item),
         category: parseCategory($item),
