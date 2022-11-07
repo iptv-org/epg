@@ -16,7 +16,7 @@ const xsd = `<?xml version="1.0" encoding="UTF-8"?>
   <xs:element name="channels">
     <xs:complexType>
       <xs:sequence>
-        <xs:element maxOccurs="unbounded" ref="channel"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="channel"/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
