@@ -1,5 +1,4 @@
-// npm run channels:parse -- --config=./sites/i.mjh.nz/i.mjh.nz.config.js --output=./sites/i.mjh.nz/i.mjh.nz_us-pluto.channels.xml --set=service:PlutoTV --set=region:us
-// npm run channels:parse -- --config=./sites/i.mjh.nz/i.mjh.nz.config.js --output=./sites/i.mjh.nz/i.mjh.nz_us-stirr.channels.xml --set=service:Stirr
+// npm run channels:parse -- --config=./sites/i.mjh.nz/i.mjh.nz.config.js --output=./sites/i.mjh.nz/i.mjh.nz_us-pluto.channels.xml --set=path:PlutoTV/us
 // npx epg-grabber --config=sites/i.mjh.nz/i.mjh.nz.config.js --channels=sites/i.mjh.nz/i.mjh.nz_us-pluto.channels.xml --output=guide.xml --days=2
 // npx epg-grabber --config=sites/i.mjh.nz/i.mjh.nz.config.js --channels=sites/i.mjh.nz/i.mjh.nz_us-stirr.channels.xml --output=guide.xml --days=2
 
