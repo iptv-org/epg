@@ -13,7 +13,7 @@ module.exports = {
     cache: {
       ttl: 6 * 60 * 60 * 1000 // 6h
     },
-    maxContentLength: 15 * 1024 * 1024 // 15Mb
+    maxContentLength: 20 * 1024 * 1024 // 20Mb
   },
   url: function ({ channel }) {
     const [source] = channel.site_id.split('#')
