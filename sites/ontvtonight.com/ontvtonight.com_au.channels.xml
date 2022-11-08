@@ -4,8 +4,8 @@
     <channel lang="en" xmltv_id="10Bold.au" site_id="au#2439/10-bold">10 Bold</channel>
     <channel lang="en" xmltv_id="10Peach.au" site_id="au#1937/10-peach">10 Peach</channel>
     <channel lang="en" xmltv_id="10Shake.au" site_id="au#3346/10-shake">10 Shake</channel>
-    <channel lang="en" xmltv_id="10Sydney.au" site_id="au#2795/10-hd">Ten</channel>
-    <channel lang="en" xmltv_id="SevenNetwork.au" site_id="au#2890/7-hd">Seven</channel>
+    <channel lang="en" xmltv_id="Channel10.au" site_id="au#2795/10-hd">Ten</channel>
+    <channel lang="en" xmltv_id="Channel7.au" site_id="au#2890/7-hd">Seven</channel>
     <channel lang="en" xmltv_id="7flix.au" site_id="au#2773/7flix">7 flix</channel>
     <channel lang="en" xmltv_id="7mate.au" site_id="au#1732/7mate">7 mate</channel>
     <channel lang="en" xmltv_id="7two.au" site_id="au#1679/7two">7 Two</channel>
@@ -16,12 +16,11 @@
     <channel lang="en" xmltv_id="ABCMe.au" site_id="au#2096/abc-me">ABC ME</channel>
     <channel lang="en" xmltv_id="ABCNewsAustralia.au" site_id="au#2149/abc-news">ABC News</channel>
     <channel lang="en" xmltv_id="ABCTV.au" site_id="au#2984/abc-tv-hd">ABC TV</channel>
-    <channel lang="en" xmltv_id="AustralianChristianChannel.au" site_id="au#3149/acc">Australian Christian Channel</channel>
-    <channel lang="en" xmltv_id="ChannelNineSydney.au" site_id="au#2749/9-hd">Nine</channel>
+    <channel lang="en" xmltv_id="Channel9.au" site_id="au#2749/9-hd">Nine</channel>
     <channel lang="en" xmltv_id="ESPNAustralia.au" site_id="au#3226/espn-hd">ESPN Australia</channel>
     <channel lang="en" xmltv_id="Fox8.au" site_id="au#3182/fox8-hd">Fox 8</channel>
     <channel lang="en" xmltv_id="FoxArena.au" site_id="au#3154/fox-arena">Fox Arena</channel>
-    <channel lang="en" xmltv_id="FoxClassicsAustralia.au" site_id="au#3185/fox-classics">Fox Classics</channel>
+    <channel lang="en" xmltv_id="FoxClassics.au" site_id="au#3185/fox-classics">Fox Classics</channel>
     <channel lang="en" xmltv_id="FoxComedyAustralia.au" site_id="au#3192/fox-comedy">Fox Comedy</channel>
     <channel lang="en" xmltv_id="FoxCrimeAustralia.au" site_id="au#3234/fox-crime">Fox Crime</channel>
     <channel lang="en" xmltv_id="FoxDocos.au" site_id="au#3257/fox-docos-hd">Fox Docos</channel>
@@ -31,7 +30,7 @@
     <channel lang="en" xmltv_id="FoxSciFi.au" site_id="au#3322/fox-scifi-hd">Fox SciFi</channel>
     <channel lang="en" xmltv_id="FoxShowcase.au" site_id="au#3212/fox-showcase-hd">Fox Showcase</channel>
     <channel lang="en" xmltv_id="FoxSleuth.au" site_id="au#3323/fox-sleuth-hd">Fox Sleuth</channel>
-    <channel lang="en" xmltv_id="Foxtel4K.au" site_id="au#3324/foxtel-movies-ultra-hd">Foxtel Movies Ultra HD</channel>
+    <channel lang="en" xmltv_id="FoxtelMoviesUltraHD.au" site_id="au#3324/foxtel-movies-ultra-hd">Foxtel Movies Ultra HD</channel>
     <channel lang="en" xmltv_id="FoxtelMoviesAction.au" site_id="au#3144/foxtel-movies-action-hd">Foxtel Movies Action</channel>
     <channel lang="en" xmltv_id="FoxtelMoviesComedy.au" site_id="au#3198/foxtel-movies-comedy-hd">Foxtel Movies Comedy</channel>
     <channel lang="en" xmltv_id="FoxtelMoviesDrama.au" site_id="au#3201/foxtel-movies-drama-hd">Foxtel Movies Drama</channel>
@@ -45,7 +44,7 @@
     <channel lang="en" xmltv_id="PBSKids.us" site_id="au#3432/pbs-kids">PBS Kids</channel>
     <channel lang="en" xmltv_id="Racingcom.au" site_id="au#2865/racingcom">Racing.com</channel>
     <channel lang="en" xmltv_id="SBSFood.au" site_id="au#2682/sbs-food">SBS Food</channel>
-    <channel lang="en" xmltv_id="SBSTV.au" site_id="au#2333/sbs-one">SBS One</channel>
+    <channel lang="en" xmltv_id="SBS.au" site_id="au#2333/sbs-one">SBS One</channel>
     <channel lang="en" xmltv_id="SBSWorldMovies.au" site_id="au#2386/sbs-world-movies">SBS World Movies</channel>
     <channel lang="en" xmltv_id="SpreeTV.au" site_id="au#2627/spreetv">SpreeTV</channel>
   </channels>
