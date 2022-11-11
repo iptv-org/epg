@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site site="sky.com">
   <channels>
+    <channel lang="en" xmltv_id="40Plus.uk" site_id="1031">TVX 40+</channel>
     <channel lang="en" xmltv_id="4seven.uk" site_id="3150">4Seven</channel>
     <channel lang="en" xmltv_id="5Action.uk" site_id="1036">5 Action</channel>
     <channel lang="en" xmltv_id="5Select.uk" site_id="3028">5 Select</channel>
@@ -31,9 +32,9 @@
     <channel lang="en" xmltv_id="BBCAlba.uk" site_id="2012">BBC Alba</channel>
     <channel lang="en" xmltv_id="BBCFour.uk" site_id="1092">BBC Four</channel>
     <channel lang="en" xmltv_id="BBCNews.uk" site_id="2011">BBC News</channel>
-    <channel lang="en" xmltv_id="BBCOneEngland.uk" site_id="2076">BBC One</channel>
     <channel lang="en" xmltv_id="BBCOneChannelIslands.uk" site_id="2074">BBC One CI</channel>
     <channel lang="en" xmltv_id="BBCOneEastMidlands.uk" site_id="2105">BBC One E Mid</channel>
+    <channel lang="en" xmltv_id="BBCOneEngland.uk" site_id="2076">BBC One</channel>
     <channel lang="en" xmltv_id="BBCOneLondon.uk" site_id="1059">BBC One Lon</channel>
     <channel lang="en" xmltv_id="BBCOneNorthEastCumbria.uk" site_id="2155">BBC One NE&amp;C</channel>
     <channel lang="en" xmltv_id="BBCOneNorthernIreland.uk" site_id="2005">BBC One NI</channel>
@@ -81,7 +82,6 @@
     <channel lang="en" xmltv_id="CBSRealityUKPlus1.uk" site_id="3602">CBS Reality+1</channel>
     <channel lang="en" xmltv_id="Challenge.uk" site_id="2202">Challenge UK</channel>
     <channel lang="en" xmltv_id="Channel4.uk" site_id="1621">Channel 4</channel>
-    <!-- <channel lang="en" xmltv_id="" site_id="5359">Channel 44</channel> -->
     <channel lang="en" xmltv_id="Channel4Plus1.uk" site_id="1671">Channel 4+1</channel>
     <channel lang="en" xmltv_id="Channel5.uk" site_id="1800">Channel 5</channel>
     <channel lang="en" xmltv_id="Channel5Plus1.uk" site_id="1839">Channel 5 +1</channel>
@@ -102,8 +102,8 @@
     <channel lang="en" xmltv_id="CrimePlusInvestigationUK.uk" site_id="1448">Crime+Inv</channel>
     <channel lang="en" xmltv_id="CrimePlusInvestigationUKPlus1.uk" site_id="3620">Crime+Inv+1</channel>
     <channel lang="en" xmltv_id="Cruise1stTV.uk" site_id="1018">Cruise 1st TV</channel>
-    <channel lang="en" xmltv_id="Davejavu.uk" site_id="2320">Dave ja vu</channel>
     <channel lang="en" xmltv_id="Dave.uk" site_id="2306">Dave UK</channel>
+    <channel lang="en" xmltv_id="Davejavu.uk" site_id="2320">Dave ja vu</channel>
     <channel lang="en" xmltv_id="DaystarTV.us" site_id="5541">Daystar TV UK</channel>
     <channel lang="en" xmltv_id="DeenTV.uk" site_id="1235">Deen TV</channel>
     <channel lang="en" xmltv_id="DiscoveryChannelUK.uk" site_id="4003">Discovery Channel UK</channel>
@@ -120,8 +120,8 @@
     <channel lang="en" xmltv_id="DramaPlus1.uk" site_id="1081">Drama UK +1</channel>
     <channel lang="en" xmltv_id="DunamisTV.ng" site_id="1191">Dunamis TV</channel>
     <channel lang="en" xmltv_id="DunyaNews.pk" site_id="1038">Dunya News UK</channel>
-    <channel lang="en" xmltv_id="E4Extra.uk" site_id="1758">E4 Extra</channel>
     <channel lang="en" xmltv_id="E4.uk" site_id="1628">E4 UK</channel>
+    <channel lang="en" xmltv_id="E4Extra.uk" site_id="1758">E4 Extra</channel>
     <channel lang="en" xmltv_id="E4Plus1.uk" site_id="3300">E4 UK +1</channel>
     <channel lang="en" xmltv_id="EarthxTV.us" site_id="1086">EarthxTV HD</channel>
     <channel lang="en" xmltv_id="Eden.uk" site_id="2302">Eden</channel>
@@ -167,7 +167,6 @@
     <channel lang="en" xmltv_id="HorrorChannelUK.uk" site_id="3605">Horror Channel UK</channel>
     <channel lang="en" xmltv_id="HorrorXtraPlus1.uk" site_id="4502">HorrorXtra+1</channel>
     <channel lang="en" xmltv_id="HumEurope.pk" site_id="5205">Hum TV Europe</channel>
-    <!-- <channel lang="en" xmltv_id="" site_id="5740">Ideal Extra</channel> -->
     <channel lang="en" xmltv_id="IdealWorldTV.uk" site_id="1244">Ideal World</channel>
     <channel lang="en" xmltv_id="InspirationTV.us" site_id="3219">Inspiration TV</channel>
     <channel lang="en" xmltv_id="InvestigationDiscoveryUK.uk" site_id="2413">Investigation Discovery UK</channel>
@@ -323,6 +322,7 @@
     <channel lang="en" xmltv_id="TBNUK.uk" site_id="3109">TBN UK</channel>
     <channel lang="en" xmltv_id="TCMMovies.uk" site_id="5605">TCM Movies</channel>
     <channel lang="en" xmltv_id="TCMMoviesPlus1.uk" site_id="5275">TCM Movies+1</channel>
+    <channel lang="en" xmltv_id="TelevisionX.uk" site_id="4192">Television X</channel>
     <channel lang="en" xmltv_id="TG4.ie" site_id="1253">TG4</channel>
     <channel lang="en" xmltv_id="ThaneDirect.uk" site_id="3805">Thane</channel>
     <channel lang="en" xmltv_id="TheBoxUK.uk" site_id="1802">The Box UK</channel>
@@ -337,8 +337,6 @@
     <channel lang="en" xmltv_id="Travelxp.in" site_id="1226">Travelxp</channel>
     <channel lang="en" xmltv_id="TRTWorld.tr" site_id="5071">TRT World</channel>
     <channel lang="en" xmltv_id="TVWarehouse.uk" site_id="3632">TV Warehouse</channel>
-    <channel lang="en" xmltv_id="TelevisionX.uk" site_id="4192">Television X</channel>
-    <channel lang="en" xmltv_id="40Plus.uk" site_id="1031">TVX 40+</channel>
     <channel lang="en" xmltv_id="UtsavBharat.uk" site_id="3608">Utsav Bharat</channel>
     <channel lang="en" xmltv_id="UtsavGold.in" site_id="3613">Utsav Gold</channel>
     <channel lang="en" xmltv_id="UtsavPlus.uk" site_id="1771">Utsav Plus</channel>
@@ -398,10 +396,12 @@
     <!-- <channel lang="en" xmltv_id="" site_id="4540">NTV</channel> -->
     <!-- <channel lang="en" xmltv_id="" site_id="5192">NickJrPAWPatrol</channel> -->
     <!-- <channel lang="en" xmltv_id="" site_id="5212">TJC Beauty</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="5359">Channel 44</channel> -->
     <!-- <channel lang="en" xmltv_id="" site_id="5426">TV One</channel> -->
     <!-- <channel lang="en" xmltv_id="" site_id="5520">Channels 24</channel> -->
     <!-- <channel lang="en" xmltv_id="" site_id="5527">NickSpongeBob</channel> -->
     <!-- <channel lang="en" xmltv_id="" site_id="5536">Local TV</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="5740">Ideal Extra</channel> -->
     <!-- <channel lang="en" xmltv_id="" site_id="5882">TVC News</channel> -->
   </channels>
 </site>
