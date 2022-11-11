@@ -1,6 +1,7 @@
 const { parser, logger, api } = require('../../core')
 const { program } = require('commander')
 const chalk = require('chalk')
+const langs = require('langs')
 
 program.argument('<filepath>', 'Path to file to validate').parse(process.argv)
 
@@ -41,6 +42,11 @@ async function main() {
 
       if (!api.channels.find({ id: channel.id })) {
         errors.push({ type: 'wrong_xmltv_id', xmltv_id: channel.id, ...channel })
+        stats.errors++
+      }
+
+      if (!langs.where('1', channel.lang)) {
+        errors.push({ type: 'wrong_lang', xmltv_id: channel.id, ...channel })
         stats.errors++
       }
     }
