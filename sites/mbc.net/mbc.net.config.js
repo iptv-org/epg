@@ -2,7 +2,7 @@ const dayjs = require('dayjs')
 
 module.exports = {
   site: 'mbc.net',
-  ignore: true, // NOTE: there is no program on the site
+  skip: true, // NOTE: there is no program on the site
   url({ date, channel }) {
     return `https://www.mbc.net/.rest/api/channel/grids?from=${date.valueOf()}&to=${date
       .add(1, 'd')

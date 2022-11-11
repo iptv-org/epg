@@ -3,7 +3,7 @@ const dayjs = require('dayjs')
 const cheerio = require('cheerio')
 
 module.exports = {
-  ignore: true, // returns "Access Denied" or nothing
+  skip: true, // returns "Access Denied" or nothing
   site: 'foxtel.com.au',
   url({ channel, date }) {
     return `https://www.foxtel.com.au/tv-guide/channel/${channel.site_id}/${date.format(

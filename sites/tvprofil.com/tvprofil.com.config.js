@@ -3,7 +3,7 @@ const dayjs = require('dayjs')
 
 module.exports = {
   site: 'tvprofil.com',
-  ignore: true, // NOTE: server is not stable
+  skip: true, // NOTE: server is not stable
   url: function ({ channel, date }) {
     const parts = channel.site_id.split('#')
     const query = buildQuery(parts[1], date)

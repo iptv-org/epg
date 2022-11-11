@@ -8,7 +8,7 @@ dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
 module.exports = {
-  ignore: true, // INFO: Request failed with status code 403 (Access denied)
+  skip: true, // INFO: Request failed with status code 403 (Access denied)
   site: 'kan.org.il',
   url: function ({ channel, date }) {
     return `https://www.kan.org.il/tv-guide/tv_guidePrograms.ashx?stationID=${

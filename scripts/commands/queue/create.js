@@ -42,7 +42,7 @@ async function createQueue() {
       if (!site) continue
       const configPath = `${dir}/${site}.config.js`
       const config = require(file.resolve(configPath))
-      if (config.ignore) continue
+      if (config.skip) continue
       const filename = file.basename(filepath)
       const [__, region] = filename.match(/_([a-z-]+)\.channels\.xml/i) || [null, null]
       const groupId = `${region}/${site}`

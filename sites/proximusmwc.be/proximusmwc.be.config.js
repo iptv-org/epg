@@ -3,7 +3,7 @@ const dayjs = require('dayjs')
 
 module.exports = {
   site: 'proximusmwc.be',
-  ignore: true, // site is not working (https://github.com/iptv-org/epg/runs/5505070902?check_suite_focus=true)
+  skip: true, // site is not working (https://github.com/iptv-org/epg/runs/5505070902?check_suite_focus=true)
   url: 'https://api.proximusmwc.be/v2/graphql',
   request: {
     headers: {

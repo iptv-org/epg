@@ -10,7 +10,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'vivacom.bg',
-  ignore: true, // INFO: no longer available
+  skip: true, // INFO: no longer available
   url({ date, channel }) {
     const [page] = channel.site_id.split('#')
 

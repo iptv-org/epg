@@ -3,7 +3,7 @@ const dayjs = require('dayjs')
 
 module.exports = {
   site: 'tvarenasport.hr',
-  ignore: true, // there is no current program on the website
+  skip: true, // there is no current program on the website
   url: function ({ channel, date }) {
     return `https://www.tvarenasport.hr/api/schedule?date=${date.format('DD-MM-YYYY')}`
   },

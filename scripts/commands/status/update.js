@@ -15,9 +15,9 @@ async function main() {
   const files = await file.list(CONFIGS_PATH).catch(console.error)
   for (const filepath of files) {
     try {
-      const { site, ignore } = require(file.resolve(filepath))
+      const { site, skip } = require(file.resolve(filepath))
 
-      if (ignore) continue
+      if (skip) continue
 
       data.push([
         site,
