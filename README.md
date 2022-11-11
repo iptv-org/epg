@@ -114,7 +114,7 @@ To load a program guide, all you need to do is copy the link to one or more of t
     <tr><td valign="top" rowspan="1">🇮🇸&nbsp;Iceland</td><td align="right" nowrap>96</td><td nowrap><code>https://iptv-org.github.io/epg/guides/is.xml</code></td></tr>
     <tr><td valign="top" rowspan="1">🇮🇳&nbsp;India</td><td align="right" nowrap>410</td><td nowrap><code>https://iptv-org.github.io/epg/guides/in.xml</code></td></tr>
     <tr><td valign="top" rowspan="1">🇮🇩&nbsp;Indonesia</td><td align="right" nowrap>191</td><td nowrap><code>https://iptv-org.github.io/epg/guides/id.xml</code></td></tr>
-    <tr><td valign="top" rowspan="1">🇮🇷&nbsp;Iran</td><td align="right" nowrap>89</td><td nowrap><code>https://iptv-org.github.io/epg/guides/ir.xml</code></td></tr>
+    <tr><td valign="top" rowspan="1">🇮🇷&nbsp;Iran</td><td align="right" nowrap>90</td><td nowrap><code>https://iptv-org.github.io/epg/guides/ir.xml</code></td></tr>
     <tr><td valign="top" rowspan="1">🇮🇶&nbsp;Iraq</td><td align="right" nowrap>87</td><td nowrap><code>https://iptv-org.github.io/epg/guides/iq.xml</code></td></tr>
     <tr><td valign="top" rowspan="1">🇮🇪&nbsp;Ireland</td><td align="right" nowrap>140</td><td nowrap><code>https://iptv-org.github.io/epg/guides/ie.xml</code></td></tr>
     <tr><td valign="top" rowspan="1">🇮🇲&nbsp;Isle of Man</td><td align="right" nowrap>47</td><td nowrap><code>https://iptv-org.github.io/epg/guides/im.xml</code></td></tr>
@@ -248,7 +248,7 @@ To load a program guide, all you need to do is copy the link to one or more of t
     <tr><td valign="top" rowspan="1">🇺🇬&nbsp;Uganda</td><td align="right" nowrap>97</td><td nowrap><code>https://iptv-org.github.io/epg/guides/ug.xml</code></td></tr>
     <tr><td valign="top" rowspan="1">🇺🇦&nbsp;Ukraine</td><td align="right" nowrap>75</td><td nowrap><code>https://iptv-org.github.io/epg/guides/ua.xml</code></td></tr>
     <tr><td valign="top" rowspan="1">🇦🇪&nbsp;United Arab Emirates</td><td align="right" nowrap>105</td><td nowrap><code>https://iptv-org.github.io/epg/guides/ae.xml</code></td></tr>
-    <tr><td valign="top" rowspan="1">🇬🇧&nbsp;United Kingdom</td><td align="right" nowrap>400</td><td nowrap><code>https://iptv-org.github.io/epg/guides/uk.xml</code></td></tr>
+    <tr><td valign="top" rowspan="1">🇬🇧&nbsp;United Kingdom</td><td align="right" nowrap>399</td><td nowrap><code>https://iptv-org.github.io/epg/guides/uk.xml</code></td></tr>
     <tr><td valign="top" rowspan="1">🇺🇸&nbsp;United States</td><td align="right" nowrap>1118</td><td nowrap><code>https://iptv-org.github.io/epg/guides/us.xml</code></td></tr>
     <tr><td valign="top" rowspan="1">🇺🇾&nbsp;Uruguay</td><td align="right" nowrap>207</td><td nowrap><code>https://iptv-org.github.io/epg/guides/uy.xml</code></td></tr>
     <tr><td valign="top" rowspan="1">🇺🇿&nbsp;Uzbekistan</td><td align="right" nowrap>58</td><td nowrap><code>https://iptv-org.github.io/epg/guides/uz.xml</code></td></tr>
