@@ -55,7 +55,6 @@
     <channel lang="zh" xmltv_id="KBSWorld.kr" site_id="156">KBS World</channel>
     <channel lang="zh" xmltv_id="LifetimeAsia.us" site_id="525">Lifetime Asia</channel>
     <channel lang="zh" xmltv_id="TDMMacauSatellite.mo" site_id="544">Macau Asia Satellite TV</channel>
-    <channel lang="zh" xmltv_id="MOOVConcertMV.hk" site_id="168">MOOV Concert/MV</channel>
     <channel lang="zh" xmltv_id="MovieMovie.hk" site_id="116">Movie Movie</channel>
     <channel lang="zh" xmltv_id="MTVIndia.in" site_id="779">MTV India</channel>
     <channel lang="zh" xmltv_id="MUTV.uk" site_id="640">MUTV</channel>
@@ -65,39 +64,39 @@
     <channel lang="en" xmltv_id="NHKWorldPremium.jp" site_id="711">NHK World Premium</channel>
     <channel lang="zh" xmltv_id="NickelodeonAsia.sg" site_id="444">Nickelodeon South East Asia</channel>
     <channel lang="zh" xmltv_id="NickJrAsia.sg" site_id="449">Nick Jr Asia</channel>
-    <channel lang="zh" xmltv_id="Now668.hk" site_id="668">Now 668</channel>
-    <channel lang="zh" xmltv_id="NowBaoguMovies.hk" site_id="133">Now Baogu Movies</channel>
-    <channel lang="zh" xmltv_id="NowBaoguSuperstars.hk" site_id="138">Now Baogu Superstars</channel>
-    <channel lang="zh" xmltv_id="NowBusinessNewsChannel.hk" site_id="333">Now Business News Channel</channel>
-    <channel lang="zh" xmltv_id="NowChineseDramaChannel.hk" site_id="105">Now Chinese Drama Channel</channel>
-    <channel lang="zh" xmltv_id="NowDataChannel.hk" site_id="336">Now Data Channel</channel>
-    <channel lang="zh" xmltv_id="NowDirect.hk" site_id="331">Now Direct</channel>
-    <channel lang="zh" xmltv_id="NowDramaChannel.hk" site_id="102">Now Drama Channel</channel>
-    <channel lang="zh" xmltv_id="NowGolf2.hk" site_id="683">Now Golf 2</channel>
-    <channel lang="zh" xmltv_id="NowGolf3.hk" site_id="684">Now Golf 3</channel>
-    <channel lang="zh" xmltv_id="NowJelli.hk" site_id="108">Now Jelli</channel>
-    <channel lang="zh" xmltv_id="NowNews.hk" site_id="332">Now News</channel>
-    <channel lang="zh" xmltv_id="NowSports1.hk" site_id="631">Now Sports 1</channel>
-    <channel lang="zh" xmltv_id="NowSports2.hk" site_id="632">Now Sports 2</channel>
-    <channel lang="zh" xmltv_id="NowSports3.hk" site_id="633">Now Sports 3</channel>
-    <channel lang="zh" xmltv_id="NowSports4.hk" site_id="634">Now Sports 4</channel>
-    <channel lang="zh" xmltv_id="NowSports4K.hk" site_id="611">Now Sports 4K</channel>
-    <channel lang="zh" xmltv_id="NowSports5.hk" site_id="635">Now Sports 5</channel>
-    <channel lang="zh" xmltv_id="NowSports6.hk" site_id="636">Now Sports 6</channel>
-    <channel lang="zh" xmltv_id="NowSports7.hk" site_id="637">Now Sports 7</channel>
-    <channel lang="zh" xmltv_id="NowSportsPlus.hk" site_id="680">Now Sports Plus</channel>
-    <channel lang="zh" xmltv_id="NowSportsPremierLeague1.hk" site_id="621">Now Sports Premier League 1</channel>
-    <channel lang="zh" xmltv_id="NowSportsPremierLeague2.hk" site_id="622">Now Sports Premier League 2</channel>
-    <channel lang="zh" xmltv_id="NowSportsPremierLeague3.hk" site_id="623">Now Sports Premier League 3</channel>
-    <channel lang="zh" xmltv_id="NowSportsPremierLeague4.hk" site_id="624">Now Sports Premier League 4</channel>
-    <channel lang="zh" xmltv_id="NowSportsPremierLeague5.hk" site_id="625">Now Sports Premier League 5</channel>
-    <channel lang="zh" xmltv_id="NowSportsPremierLeague6.hk" site_id="626">Now Sports Premier League 6</channel>
-    <channel lang="zh" xmltv_id="NowSportsPremierLeagueTV.hk" site_id="620">Now Sports Premier League TV</channel>
-    <channel lang="zh" xmltv_id="NowSportsPrime.hk" site_id="630">Now Sports Prime</channel>
-    <channel lang="zh" xmltv_id="NowVideoExpress.hk" site_id="106">Now Video Express</channel>
+    <channel lang="zh" xmltv_id="now668.hk" site_id="668">Now 668</channel>
+    <channel lang="zh" xmltv_id="nowBaoguMovies.hk" site_id="133">Now Baogu Movies</channel>
+    <channel lang="zh" xmltv_id="nowBaoguSuperstars.hk" site_id="138">Now Baogu Superstars</channel>
+    <channel lang="zh" xmltv_id="nowBusinessNewsChannel.hk" site_id="333">Now Business News Channel</channel>
+    <channel lang="zh" xmltv_id="nowChineseDramaChannel.hk" site_id="105">Now Chinese Drama Channel</channel>
+    <channel lang="zh" xmltv_id="nowData.hk" site_id="336">Now Data Channel</channel>
+    <channel lang="zh" xmltv_id="nowDirect.hk" site_id="331">Now Direct</channel>
+    <!-- <channel lang="zh" xmltv_id="" site_id="102">Now Drama Channel</channel> -->
+    <channel lang="zh" xmltv_id="nowGolf2.hk" site_id="683">Now Golf 2</channel>
+    <channel lang="zh" xmltv_id="nowGolf3.hk" site_id="684">Now Golf 3</channel>
+    <channel lang="zh" xmltv_id="nowJelli.hk" site_id="108">Now Jelli</channel>
+    <channel lang="zh" xmltv_id="nowNews.hk" site_id="332">Now News</channel>
+    <channel lang="zh" xmltv_id="nowSports1.hk" site_id="631">Now Sports 1</channel>
+    <channel lang="zh" xmltv_id="nowSports2.hk" site_id="632">Now Sports 2</channel>
+    <channel lang="zh" xmltv_id="nowSports3.hk" site_id="633">Now Sports 3</channel>
+    <channel lang="zh" xmltv_id="nowSports4.hk" site_id="634">Now Sports 4</channel>
+    <channel lang="zh" xmltv_id="nowSports4K1.hk" site_id="611">Now Sports 4K</channel>
+    <channel lang="zh" xmltv_id="nowSports5.hk" site_id="635">Now Sports 5</channel>
+    <channel lang="zh" xmltv_id="nowSports6.hk" site_id="636">Now Sports 6</channel>
+    <channel lang="zh" xmltv_id="nowSports7.hk" site_id="637">Now Sports 7</channel>
+    <channel lang="zh" xmltv_id="nowSportsPlus.hk" site_id="680">Now Sports Plus</channel>
+    <channel lang="zh" xmltv_id="nowSportsPremierLeague1.hk" site_id="621">Now Sports Premier League 1</channel>
+    <channel lang="zh" xmltv_id="nowSportsPremierLeague2.hk" site_id="622">Now Sports Premier League 2</channel>
+    <channel lang="zh" xmltv_id="nowSportsPremierLeague3.hk" site_id="623">Now Sports Premier League 3</channel>
+    <channel lang="zh" xmltv_id="nowSportsPremierLeague4.hk" site_id="624">Now Sports Premier League 4</channel>
+    <channel lang="zh" xmltv_id="nowSportsPremierLeague5.hk" site_id="625">Now Sports Premier League 5</channel>
+    <channel lang="zh" xmltv_id="nowSportsPremierLeague6.hk" site_id="626">Now Sports Premier League 6</channel>
+    <channel lang="zh" xmltv_id="nowSportsPremierLeagueTV.hk" site_id="620">Now Sports Premier League TV</channel>
+    <channel lang="zh" xmltv_id="nowSportsPrime.hk" site_id="630">Now Sports Prime</channel>
+    <channel lang="zh" xmltv_id="nowVideoExpress.hk" site_id="106">Now Video Express</channel>
     <channel lang="zh" xmltv_id="OutdoorChannelInternational.us" site_id="221">Outdoor Channel International</channel>
     <channel lang="zh" xmltv_id="PhoenixChineseChannel.hk" site_id="548">Phoenix Chinese Channel</channel>
-    <channel lang="zh" xmltv_id="PhoenixHongKong.hk" site_id="367">Phoenix Hong Kong</channel>
+    <channel lang="zh" xmltv_id="PhoenixHongKongChannel.hk" site_id="367">Phoenix Hong Kong</channel>
     <channel lang="zh" xmltv_id="PhoenixInfoNewsChannel.hk" site_id="366">Phoenix InfoNews Channel</channel>
     <channel lang="zh" xmltv_id="RockEntertainment.sg" site_id="517">Rock Entertainment</channel>
     <channel lang="en" xmltv_id="RT.ru" site_id="329">RT News</channel>
@@ -109,7 +108,7 @@
     <!-- <channel lang="zh" xmltv_id="" site_id="772">Sony Max Asia</channel> -->
     <channel lang="zh" xmltv_id="SonySABAsia.in" site_id="774">Sony SAB TV Asia</channel>
     <channel lang="zh" xmltv_id="StarBharat.in" site_id="797">Star Bharat India</channel>
-    <channel lang="zh" xmltv_id="StarChineseMoviesSouthEastAsia.hk" site_id="139">Star Chinese Movies South East Asia</channel>
+    <channel lang="zh" xmltv_id="StarChineseMovies.hk" site_id="139">Star Chinese Movies South East Asia</channel>
     <channel lang="zh" xmltv_id="StarGold.in" site_id="793">Star Gold</channel>
     <channel lang="zh" xmltv_id="StarPlus.in" site_id="794">Star Plus Southeast Asia</channel>
     <channel lang="zh" xmltv_id="TheFilipinoChannelAsia.us" site_id="725">TFC Asia-Pacific</channel>
@@ -119,7 +118,7 @@
     <channel lang="zh" xmltv_id="TV5MondeAsia.fr" site_id="714">TV5Monde Asie</channel>
     <channel lang="zh" xmltv_id="TV5MondeStyle.fr" site_id="713">TV5Monde Style HD</channel>
     <channel lang="zh" xmltv_id="TVBSAsia.tw" site_id="163">TVBS Asia</channel>
-    <channel lang="zh" xmltv_id="TVNAsia.hk" site_id="155">TVN Asia</channel>
+    <channel lang="zh" xmltv_id="tvNAsia.hk" site_id="155">TVN Asia</channel>
     <channel lang="zh" xmltv_id="TVS2SouthernTV.cn" site_id="543">TVS 2 Southern TV</channel>
     <channel lang="zh" xmltv_id="ViuTV.hk" site_id="099">ViuTV</channel>
     <channel lang="zh" xmltv_id="ViuTVsix.hk" site_id="096">ViuTVsix</channel>
