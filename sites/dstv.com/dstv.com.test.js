@@ -63,8 +63,8 @@ it('can parse response', done => {
 
       expect(result).toMatchObject([
         {
-          start: '2022-03-10T22:10:00.000Z',
-          stop: '2022-03-10T22:50:00.000Z',
+          start: '2022-03-11T00:10:00.000Z',
+          stop: '2022-03-11T00:50:00.000Z',
           title: 'Curb Your Enthusiasm'
           // description:
           //   "'S11/E6 of 10 - Man Fights Tiny Woman'. A general entertainment channel showcasing the best international content, focusing on scripted drama, comedy and talk.",

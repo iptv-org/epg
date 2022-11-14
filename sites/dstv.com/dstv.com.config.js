@@ -79,16 +79,8 @@ async function loadProgramDetails(item) {
     .catch(console.error)
 }
 
-// function parseStart(item) {
-//   return dayjs.utc(item.StartTime, 'YYYY-MM-DDTHH:mm:ss')
-// }
-
-// function parseStop(item) {
-//   return dayjs.utc(item.EndTime, 'YYYY-MM-DDTHH:mm:ss')
-// }
-
 function parseTime(time) {
-    return dayjs.tz(time, 'YYYY-MM-DDTHH:mm:ss', 'Africa/Johannesburg')
+  return dayjs.utc(time, 'YYYY-MM-DDTHH:mm:ss')
 }
 
 function parseItems(content, channel) {
