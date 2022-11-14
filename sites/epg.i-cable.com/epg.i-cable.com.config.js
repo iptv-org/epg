@@ -12,6 +12,11 @@ const API_ENDPOINT = 'http://epg.i-cable.com/ci/channel'
 
 module.exports = {
   site: 'epg.i-cable.com',
+  request: {
+    cache: {
+      ttl: 60 * 60 * 1000 // 1h
+    }
+  },
   url: function ({ channel, date }) {
     return `${API_ENDPOINT}/epg/${channel.site_id}/${date.format('YYYY-MM-DD')}?api=api`
   },
