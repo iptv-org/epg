@@ -47,7 +47,7 @@ module.exports = {
 }
 
 function parseCategories(item) {
-  return item.Genre.map(g => g.tag)
+  return Array.isArray(item.Genre) ? item.Genre.map(g => g.tag) : []
 }
 
 function parseStart(item) {
