@@ -51,7 +51,7 @@ function parseStart($item) {
 
 function parseStop($item) {
   const timeString = $item('*').data('till')
-  if (!timeString) return null
+  if (!timeString || /^\+/.test(timeString)) return null
 
   try {
     return dayjs(timeString, 'YYYY-MM-DD HH:mm:ssZZ')
