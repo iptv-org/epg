@@ -90,7 +90,8 @@ async function getOptions(channel) {
   let variants = []
   variants.push(`${channel.name.trim()} | ${generateCode(channel.name, defaultCountry)}${newLabel}`)
   similar.forEach(i => {
-    variants.push(`${i.name} | ${i.id} [api]`)
+    let alt_names = i.alt_names.length ? ` (${i.alt_names.join(',')})` : ''
+    variants.push(`${i.name}${alt_names} | ${i.id} [api]`)
   })
   variants.push(`Overwrite...`)
   variants.push(`Skip...`)
@@ -102,10 +103,10 @@ async function getSimilar(list, channel) {
   return list.filter(i =>
     i.name
       .toLowerCase()
-      .replace(/\s|-|:/gi, '')
+      .replace(/[^a-z0-9]/gi, '')
       .startsWith(
         channel.name
-          .replace(/(\s|-|:)/gi, '')
+          .replace(/[^a-z0-9]/gi, '')
           .slice(0, 8)
           .toLowerCase()
       )
