@@ -269,4 +269,6 @@ All guides also have a compressed and JSON version. To download them, simply cha
 
 ## Contribution
 
-If you find a bug or want to contribute to the code or documentation, you can help by submitting an [issue](https://github.com/iptv-org/epg/issues) or a [pull request](https://github.com/iptv-org/epg/pulls).
+If you find a bug or have an idea how to improve the project you can publish it [here](https://github.com/iptv-org/epg/issues).
+
+If you want to contribute to the code or documentation directly, you can do it via [pull request](https://github.com/iptv-org/epg/pulls), just be sure to read [Contributing Guide](CONTRIBUTING.md) before doing so.
