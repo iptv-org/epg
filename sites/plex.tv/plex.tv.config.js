@@ -51,20 +51,27 @@ function parseCategories(item) {
 }
 
 function parseStart(item) {
-  const media = item.Media.length ? item.Media[0] : null
-
-  return media ? dayjs.unix(media.beginsAt) : null
+  return item.beginsAt ? dayjs.unix(item.beginsAt) : null
 }
 
 function parseStop(item) {
-  const media = item.Media.length ? item.Media[0] : null
-
-  return media ? dayjs.unix(media.endsAt) : null
+  return item.endsAt ? dayjs.unix(item.endsAt) : null
 }
 
 function parseItems(content) {
   const data = JSON.parse(content)
   if (!data || !data.MediaContainer || !Array.isArray(data.MediaContainer.Metadata)) return []
+  const metadata = data.MediaContainer.Metadata
+  const items = []
+  metadata.forEach(item => {
+    item.Media.forEach(media => {
+      items.push({ ...item, ...media })
+    })
+  })
 
-  return data.MediaContainer.Metadata
+  return items.sort((a, b) => {
+    if (a.beginsAt > b.beginsAt) return 1
+    if (a.beginsAt < b.beginsAt) return -1
+    return 0
+  })
 }
