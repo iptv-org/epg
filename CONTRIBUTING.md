@@ -110,7 +110,6 @@ This file contains a list of channels available at the source.
 ```
 
 </details>
-<br>
 
 After creating all the files we can make sure that the guide loads correctly and has no errors using the command:
 
