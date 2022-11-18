@@ -40,6 +40,7 @@ it('can parse response', () => {
     return p
   })
 
+  expect(results.length).toBe(14)
   expect(results[0]).toMatchObject({
     start: '2022-11-14T23:04:00.000Z',
     stop: '2022-11-15T00:47:00.000Z',
@@ -48,6 +49,26 @@ it('can parse response', () => {
       'Conjoined twins Daisy and Violet Hilton were born in 1908, then were sold to a carnival sideshow as babies. They became huge stars of Vaudeville but never earned a penny until they sued for freedom in 1936.',
     icon: 'https://metadata-static.plex.tv/4/gracenote/40b523ad60464f8232f93f861c161384.jpg',
     categories: ['Documentary', 'Movies']
+  })
+
+  expect(results[10]).toMatchObject({
+    start: '2022-11-15T16:45:00.000Z',
+    stop: '2022-11-15T18:47:00.000Z',
+    title: 'Antiviral',
+    description:
+      "Syd has to unravel the mystery surrounding Hannah's death before a virus kills him.",
+    icon: 'https://metadata-static.plex.tv/5/gracenote/5ca8432a2e8fb2e8f8157ae142164ef7.jpg',
+    categories: ['Horror', 'Science fiction', 'Thriller', 'Movies']
+  })
+
+  expect(results[11]).toMatchObject({
+    start: '2022-11-15T18:47:00.000Z',
+    stop: '2022-11-15T20:36:00.000Z',
+    title: 'Cold Weather',
+    description:
+      'Armed with a few clues and an in-depth knowledge of Sherlock Holmes lore, an ice-factory worker (Cris Lankenau) leads his sister and a co-worker on a search for his missing former lover.',
+    icon: 'https://metadata-static.plex.tv/5/gracenote/5150185f3188dbefd10b5d388e8ba115.jpg',
+    categories: ['Comedy', 'Mystery', 'Movies']
   })
 })
 
