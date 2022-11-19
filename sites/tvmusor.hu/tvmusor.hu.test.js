@@ -1,17 +1,19 @@
-// node ./scripts/channels.js --config=./sites/tvmusor.hu/tvmusor.hu.config.js --output=./sites/tvmusor.hu/tvmusor.hu_hu.channels.xml
+// npm run channels:parse -- --config=./sites/tvmusor.hu/tvmusor.hu.config.js --output=./sites/tvmusor.hu/tvmusor.hu_hu.channels.xml
 // npx epg-grabber --config=sites/tvmusor.hu/tvmusor.hu.config.js --channels=sites/tvmusor.hu/tvmusor.hu_hu.channels.xml --output=guide.xml --days=2
 
 const { parser, url, request } = require('./tvmusor.hu.config.js')
+const fs = require('fs')
+const path = require('path')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
-const date = dayjs.utc('2021-11-24', 'YYYY-MM-DD').startOf('d')
+const date = dayjs.utc('2022-11-19', 'YYYY-MM-DD').startOf('d')
 const channel = {
-  site_id: '139',
-  xmltv_id: 'AMCHungary.hu'
+  site_id: '290',
+  xmltv_id: 'M4Sport.hu'
 }
 
 it('can generate valid url', () => {
@@ -30,27 +32,33 @@ it('can generate valid request headers', () => {
 
 it('can generate valid request data', () => {
   const result = request.data({ channel, date })
-  expect(result.get('data')).toBe('{"blocks":["139|2021-11-24"]}')
+  expect(result.get('data')).toBe('{"blocks":["290|2022-11-19"]}')
 })
 
 it('can parse response', () => {
-  const content = `{"status":"success","data":{"time":0.00033187866210938,"loadedBlocks":{"139_2021-11-24":[{"a":903037163,"b":167085,"c":"Milyen volt a vil\\u00e1g, amikor elkezdett \\u00e1talakulni azz\\u00e1 a horrorisztikus apokalipsziss\\u00e9, amelyet a The Walking Dead festett le? A Los Angeles-ben j\\u00e1tsz\\u00f3d\\u00f3 t\\u00e1rs-sorozat pontosan erre a k\\u00e9rd\\u00e9sre v\\u00e1laszol.","d":65,"e":1637712900000,"f":1637716800000,"g":2021,"h":"filmsorozat","i":"1:15","j":"Fear the Walking Dead","l":"18","n":"fear-the-walking-dead","z":"d6310651d2be559cc4e49498a21edd7477c19244_6345563D34F3542B1649E80.jpg"}]}}}`
-  const result = parser({ content, channel, date }).map(p => {
+  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'))
+  let results = parser({ content, channel, date })
+  results = results.map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
     return p
   })
 
-  expect(result).toMatchObject([
-    {
-      start: '2021-11-24T00:15:00.000Z',
-      stop: '2021-11-24T01:20:00.000Z',
-      title: `Fear the Walking Dead`,
-      category: 'filmsorozat',
-      description: `Milyen volt a világ, amikor elkezdett átalakulni azzá a horrorisztikus apokalipszissé, amelyet a The Walking Dead festett le? A Los Angeles-ben játszódó társ-sorozat pontosan erre a kérdésre válaszol.`,
-      icon: 'http://www.tvmusor.hu/images/events/408/d6310651d2be559cc4e49498a21edd7477c19244_6345563D34F3542B1649E80.jpg'
-    }
-  ])
+  expect(results[0]).toMatchObject({
+    start: '2022-11-18T23:30:00.000Z',
+    stop: '2022-11-19T00:55:00.000Z',
+    title: `Rövidpályás Úszó Országos Bajnokság`,
+    category: 'sportműsor',
+    description: 'Forma-1 magazin. Hírek, információk, érdekességek a Forma-1 világából.',
+    icon: 'http://www.tvmusor.hu/images/events/408/f1e45193930943d9ee29769e0afa902aff0e4a90-better-call-saul.jpg'
+  })
+
+  expect(results[1]).toMatchObject({
+    start: '2022-11-19T00:55:00.000Z',
+    stop: '2022-11-19T01:10:00.000Z',
+    title: `Sportlövészet`,
+    category: 'sportműsor'
+  })
 })
 
 it('can handle empty guide', () => {
