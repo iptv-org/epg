@@ -102,6 +102,7 @@ async function main() {
 
     programs = programs = _.sortBy(programs, ['channel', 'start'])
     programs = programs.map(p => new Program(p, new Channel(channels_dic[p.channel])))
+    programs = _.uniqBy(programs, p => p.channel + p.start)
 
     const filename = country.code.toLowerCase()
     const xmlFilepath = `${PUBLIC_DIR}/guides/${filename}.xml`

@@ -1,6 +1,6 @@
-const FormData = require('form-data')
 const axios = require('axios')
 const dayjs = require('dayjs')
+const _ = require('lodash')
 
 module.exports = {
   site: 'tvmusor.hu',
@@ -26,13 +26,20 @@ module.exports = {
     let programs = []
     const items = parseItems(content, channel, date)
     items.forEach(item => {
+      const prev = programs[programs.length - 1]
+      let start = dayjs(item.e)
+      let stop = dayjs(item.f)
+      if (prev) {
+        start = prev.stop
+      }
+
       programs.push({
         title: item.j,
         category: item.h,
         description: item.c,
         icon: parseIcon(item),
-        start: dayjs(item.e),
-        stop: dayjs(item.f)
+        start,
+        stop
       })
     })
 
@@ -67,6 +74,7 @@ function parseItems(content, channel, date) {
   if (!data || !data.data || !data.data.loadedBlocks) return []
   const blocks = data.data.loadedBlocks
   const blockId = `${channel.site_id}_${date.format('YYYY-MM-DD')}`
+  if (!Array.isArray(blocks[blockId])) return []
 
-  return Array.isArray(blocks[blockId]) ? blocks[blockId] : []
+  return _.uniqBy(_.uniqBy(blocks[blockId], 'e'), 'b')
 }
