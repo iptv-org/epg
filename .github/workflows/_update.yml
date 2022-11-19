@@ -78,7 +78,7 @@ jobs:
 
             [1]: https://github.com/iptv-org/epg/actions/runs/${{ github.run_id }}
       - uses: juliangruber/merge-pull-request-action@v1
-        if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
+        if: ${{ !env.ACT && github.ref == 'refs/heads/master' && steps.pull-request.outputs.has_changed_files }}
         with:
           github-token: ${{ secrets.PAT }}
           number: ${{ steps.pull-request.outputs.pr_number }}
