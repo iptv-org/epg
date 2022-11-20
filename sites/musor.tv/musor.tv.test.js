@@ -10,14 +10,20 @@ const customParseFormat = require('dayjs/plugin/customParseFormat')
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
-const date = dayjs.utc('2022-11-20', 'YYYY-MM-DD').startOf('d')
+const date = dayjs.utc('2022-11-19', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: 'HATOS_CSATORNA',
   xmltv_id: 'Hatoscsatorna.hu'
 }
 
 it('can generate valid url', () => {
-  expect(url({ channel, date })).toBe('https://musor.tv/napi/tvmusor/HATOS_CSATORNA/2022.11.20')
+  expect(url({ channel, date })).toBe('https://musor.tv/napi/tvmusor/HATOS_CSATORNA/2022.11.19')
+})
+
+it('can generate valid url for today', () => {
+  const today = dayjs.utc().startOf('d')
+
+  expect(url({ channel, date: today })).toBe('https://musor.tv/mai/tvmusor/HATOS_CSATORNA')
 })
 
 it('can parse response', () => {
