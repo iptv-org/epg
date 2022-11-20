@@ -10,9 +10,7 @@ dayjs.extend(customParseFormat)
 module.exports = {
   site: 'musor.tv',
   url({ channel, date }) {
-    const diff = date.diff(dayjs.utc().startOf('d'), 'd')
-
-    return diff === 0
+    return dayjs.utc().isSame(date, 'd')
       ? `https://musor.tv/mai/tvmusor/${channel.site_id}`
       : `https://musor.tv/napi/tvmusor/${channel.site_id}/${date.format('YYYY.MM.DD')}`
   },
