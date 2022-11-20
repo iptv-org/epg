@@ -7,76 +7,39 @@ const customParseFormat = require('dayjs/plugin/customParseFormat')
 dayjs.extend(isBetween)
 dayjs.extend(customParseFormat)
 
+const API_ENDPOINT = 'https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master'
+
 module.exports = {
   site: 'i.mjh.nz',
   request: {
     cache: {
-      ttl: 6 * 60 * 60 * 1000 // 6h
+      ttl: 3 * 60 * 60 * 1000 // 3h
     },
-    maxContentLength: 20 * 1024 * 1024 // 20Mb
+    maxContentLength: 30 * 1024 * 1024 // 30Mb
   },
   url: function ({ channel }) {
-    const [source] = channel.site_id.split('#')
+    const [path] = channel.site_id.split('#')
 
-    return `https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/${source}.xml`
+    return `${API_ENDPOINT}/${path}.xml`
   },
   parser: function ({ content, channel, date, cached }) {
-    let programs = []
-    const items = parseItems(content, channel, date)
-    items.forEach(item => {
-      programs.push({
-        title: parseTitle(item, channel),
-        description: parseDescription(item, channel),
-        category: parseCategory(item, channel),
-        start: parseStart(item),
-        stop: parseStop(item)
-      })
-    })
-
-    return programs
+    return parseItems(content, channel, date)
   },
   async channels({ path, lang = 'en' }) {
-    const [service] = path.split('/')
-    let data = await axios
-      .get(`https://i.mjh.nz/${service}/app.json`)
+    let xml = await axios
+      .get(`${API_ENDPOINT}/${path}.xml`)
       .then(r => r.data)
       .catch(console.log)
+    let data = parser.parse(xml)
 
-    const channels = []
-    const items = data.channels || data
-    for (let id in items) {
-      const channel = items[id]
-      channels.push({
+    return data.channels.map(channel => {
+      return {
         lang,
-        site_id: `${path}#${id}`,
-        name: channel.name
-      })
-    }
-
-    return channels
+        site_id: `${path}#${channel.id}`,
+        name: channel.name[0].value
+      }
+    })
   }
-}
-
-function parseTitle(item, channel) {
-  return item.title.length ? item.title[0].value : null
-}
-
-function parseDescription(item, channel) {
-  return item.desc.length ? item.desc[0].value : null
-}
-
-function parseCategory(item, channel) {
-  const category = item.category.length ? item.category[0].value : ''
-
-  return category.split(/\s\&amp\;\s/g).filter(c => c)
-}
-
-function parseStart(item) {
-  return dayjs(item.start, 'YYYYMMDDHHmmss ZZ')
-}
-
-function parseStop(item) {
-  return dayjs(item.stop, 'YYYYMMDDHHmmss ZZ')
 }
 
 function parseItems(content, channel, date) {
