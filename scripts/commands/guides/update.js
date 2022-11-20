@@ -100,7 +100,7 @@ async function main() {
     channels = _.sortBy(channels, 'id')
     channels = _.uniqBy(channels, 'id')
 
-    programs = programs = _.sortBy(programs, ['channel', 'start'])
+    programs = _.sortBy(programs, ['channel', 'start'])
     programs = programs.map(p => new Program(p, new Channel(channels_dic[p.channel])))
     programs = _.uniqBy(programs, p => p.channel + p.start)
 
