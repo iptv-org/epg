@@ -30,14 +30,10 @@ it('can parse response', () => {
   expect(results[0]).toMatchObject({
     start: '2022-05-03T10:49:22.000Z',
     stop: '2022-05-03T11:21:22.000Z',
-    title: [{ value: 'Barney and Friends' }],
-    desc: [
-      {
-        value:
-          'Baby Bop forgets to say "please" and "thank you". Riff shares his dream of becoming an inventor.'
-      }
-    ],
-    category: [{ value: 'Children &amp; Family' }]
+    title: 'Barney and Friends',
+    description:
+      'Baby Bop forgets to say "please" and "thank you". Riff shares his dream of becoming an inventor.',
+    categories: ['Children &amp; Family']
   })
 })
 
