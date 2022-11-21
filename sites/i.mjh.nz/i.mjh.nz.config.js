@@ -23,7 +23,16 @@ module.exports = {
     return `${API_ENDPOINT}/${path}.xml`
   },
   parser: function ({ content, channel, date, cached }) {
-    return parseItems(content, channel, date)
+    const items = parseItems(content, channel, date)
+
+    return items.map(item => {
+      return {
+        ...item,
+        title: getTitle(item),
+        description: getDescription(item),
+        categories: getCategories(item)
+      }
+    })
   },
   async channels({ path, lang = 'en' }) {
     let xml = await axios
@@ -40,6 +49,18 @@ module.exports = {
       }
     })
   }
+}
+
+function getTitle(item) {
+  return item.title.length ? item.title[0].value : null
+}
+
+function getDescription(item) {
+  return item.desc.length ? item.desc[0].value : null
+}
+
+function getCategories(item) {
+  return item.category.map(c => c.value)
 }
 
 function parseItems(content, channel, date) {
