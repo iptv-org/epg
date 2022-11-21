@@ -3,16 +3,14 @@ const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
-const isToday = require('dayjs/plugin/isToday')
 
 dayjs.extend(utc)
-dayjs.extend(isToday)
 dayjs.extend(timezone)
 
 module.exports = {
   site: 'tvgids.nl',
   url: function ({ date, channel }) {
-    const path = date.isToday() ? '' : `${date.format('DD-MM-YYYY')}/`
+    const path = dayjs.utc().isSame(date, 'd') ? '' : `${date.format('DD-MM-YYYY')}/`
 
     return `https://www.tvgids.nl/gids/${path}${channel.site_id}`
   },
