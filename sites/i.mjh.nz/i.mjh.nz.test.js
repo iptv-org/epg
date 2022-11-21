@@ -1,7 +1,7 @@
 // npm run channels:parse -- --config=./sites/i.mjh.nz/i.mjh.nz.config.js --output=./sites/i.mjh.nz/i.mjh.nz_us-pluto.channels.xml --set=path:PlutoTV/us
 // npx epg-grabber --config=sites/i.mjh.nz/i.mjh.nz.config.js --channels=sites/i.mjh.nz/i.mjh.nz_us-pluto.channels.xml --output=guide.xml --days=2
 // npx epg-grabber --config=sites/i.mjh.nz/i.mjh.nz.config.js --channels=sites/i.mjh.nz/i.mjh.nz_us-stirr.channels.xml --output=guide.xml --days=2
-// npx epg-grabber --config=sites/i.mjh.nz/i.mjh.nz.config.js --channels=sites/i.mjh.nz/i.mjh.nz_us-skygo.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/i.mjh.nz/i.mjh.nz.config.js --channels=sites/i.mjh.nz/i.mjh.nz_au-skygo.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./i.mjh.nz.config.js')
 const dayjs = require('dayjs')
