@@ -8,21 +8,23 @@ dayjs.extend(utc)
 dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
+const API_ENDPOINT = 'https://www.dstv.com/umbraco/api/TvGuide'
+
 module.exports = {
   site: 'dstv.com',
   request: {
     cache: {
-      ttl: 6 * 60 * 60 * 1000, // 6h
+      ttl: 3 * 60 * 60 * 1000, // 3h
       interpretHeader: false
     }
   },
   url: function ({ channel, date }) {
     const [region] = channel.site_id.split('#')
-    const packageName = region === 'nga' ? 'DStv%20Premium' : ''
+    const packageName = region === 'nga' ? '&package=DStv%20Premium' : ''
 
-    return `https://www.dstv.com/umbraco/api/TvGuide/GetProgrammes?d=${date.format(
+    return `${API_ENDPOINT}/GetProgrammes?d=${date.format(
       'YYYY-MM-DD'
-    )}&package=${packageName}&country=${region}`
+    )}${packageName}&country=${region}`
   },
   async parser({ content, channel, cached }) {
     let programs = []
@@ -34,8 +36,8 @@ module.exports = {
         description: parseDescription(details),
         icon: parseIcon(details),
         category: parseCategory(details),
-        start: parseTime(item.StartTime),
-        stop: parseTime(item.EndTime)
+        start: parseTime(item.StartTime, channel),
+        stop: parseTime(item.EndTime, channel)
       })
     }
 
@@ -43,9 +45,7 @@ module.exports = {
   },
   async channels({ country }) {
     const data = await axios
-      .get(
-        `https://www.dstv.com/umbraco/api/TvGuide/GetProgrammes?d=2022-03-10&package=DStv%20Premium&country=${country}`
-      )
+      .get(`${API_ENDPOINT}/GetProgrammes?d=2022-03-10&package=DStv%20Premium&country=${country}`)
       .then(r => r.data)
       .catch(console.log)
 
@@ -56,6 +56,16 @@ module.exports = {
       }
     })
   }
+}
+
+function parseTime(time, channel) {
+  const [region] = channel.site_id.split('#')
+  const tz = {
+    zaf: 'Africa/Johannesburg',
+    nga: 'Africa/Lagos'
+  }
+
+  return dayjs.tz(time, 'YYYY-MM-DDTHH:mm:ss', tz[region])
 }
 
 function parseDescription(details) {
@@ -71,16 +81,12 @@ function parseCategory(details) {
 }
 
 async function loadProgramDetails(item) {
-  const url = `https://www.dstv.com/umbraco/api/TvGuide/GetProgramme?id=${item.Id}`
+  const url = `${API_ENDPOINT}/GetProgramme?id=${item.Id}`
 
   return axios
     .get(url)
     .then(r => r.data)
     .catch(console.error)
-}
-
-function parseTime(time) {
-  return dayjs.utc(time, 'YYYY-MM-DDTHH:mm:ss')
 }
 
 function parseItems(content, channel) {
