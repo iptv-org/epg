@@ -10,7 +10,6 @@
     <channel lang="en" xmltv_id="BayTV.za" site_id="zaf#260">Bay TV</channel>
     <channel lang="en" xmltv_id="BBCBritAfrica.uk" site_id="zaf#120">BBC Brit HD</channel>
     <channel lang="en" xmltv_id="BBCEarthAfrica.uk" site_id="zaf#184">BBC Earth HD</channel>
-    <!-- <channel lang="en" xmltv_id="" site_id="zaf#119">BBC First HD</channel> -->
     <channel lang="en" xmltv_id="BBCLifestyleAfrica.uk" site_id="zaf#174">BBC Lifestyle</channel>
     <channel lang="en" xmltv_id="BBCWorldNewsAfrica.uk" site_id="zaf#400">BBC World News</channel>
     <channel lang="en" xmltv_id="BETAfrica.us" site_id="zaf#129">BET</channel>
@@ -98,7 +97,6 @@
     <channel lang="en" xmltv_id="RealTimeAfrica.us" site_id="zaf#155">Real Time</channel>
     <channel lang="en" xmltv_id="Rok.uk" site_id="zaf#168">ROK</channel>
     <channel lang="en" xmltv_id="RT.ru" site_id="zaf#407">Russia Today</channel>
-    <channel lang="pt" xmltv_id="RTPInternacional.pt" site_id="zaf#435">RTPI</channel>
     <channel lang="en" xmltv_id="SABC1.za" site_id="zaf#191">SABC 1 HD</channel>
     <channel lang="en" xmltv_id="SABC2.za" site_id="zaf#192">SABC 2 HD</channel>
     <channel lang="en" xmltv_id="SABC3.za" site_id="zaf#193">SABC 3 HD</channel>
@@ -146,5 +144,7 @@
     <channel lang="en" xmltv_id="WildEarth.za" site_id="zaf#183">WildEarth</channel>
     <channel lang="en" xmltv_id="WWEChannel.za" site_id="zaf#236">WWE</channel>
     <channel lang="en" xmltv_id="ZeeWorld.za" site_id="zaf#166">Zee World HD</channel>
+    <channel lang="pt" xmltv_id="RTPInternacional.pt" site_id="zaf#435">RTPI</channel>
+    <!-- <channel lang="en" xmltv_id="" site_id="zaf#119">BBC First HD</channel> -->
   </channels>
 </site>
