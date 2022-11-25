@@ -1,0 +1,30 @@
+name: 🗓 EPG Request
+description: Request to add a EPG (Electronic Programming Guide) for a specific channel
+labels: ['🗓 epg request']
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please fill out the issue template as much as you can so we could efficiently process your request.
+
+  - type: input
+    attributes:
+      label: Channel ID
+      description: Unique channel ID from [iptv-org.github.io](https://iptv-org.github.io/). If you can't find the channel you want in the list, please let us know through this [form](https://github.com/iptv-org/database/issues/new?assignees=&labels=channel+request&template=---channel-request.yml&title=Add%3A+).
+      placeholder: 'BBCAmericaEast.us'
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: Source
+      description: Website where the EPG can be found?
+      placeholder: 'https://cablecompany.com/tvlisting'
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Notes
+      description: Anything else we should know?

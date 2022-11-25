@@ -1,5 +1,5 @@
 name: ⚠️ Broken Guide
-description: Report an error in the guide
+description: Report an error in one of the guides
 labels: ['⚠️ broken guide']
 
 body:
@@ -12,7 +12,7 @@ body:
     attributes:
       label: Guide
       description: Link to the broken guide
-      placeholder: 'https://iptv-org.github.io/epg/guides/us/directv.com.epg.xml.gz'
+      placeholder: 'https://iptv-org.github.io/epg/guides/us.xml'
     validations:
       required: true
 
