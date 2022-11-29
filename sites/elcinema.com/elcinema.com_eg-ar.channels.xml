@@ -7,12 +7,13 @@
     <channel lang="ar" xmltv_id="AlAoulaMiddleEast.ma" site_id="1101">Al Aoula Middle East</channel>
     <channel lang="ar" xmltv_id="AlArabyTV2.uk" site_id="1382">Al Araby 2 TV</channel>
     <channel lang="ar" xmltv_id="AlDafrahTV.ae" site_id="1264">Al Dafrah TV</channel>
-    <channel lang="ar" xmltv_id="AlHayatTV.us" site_id="1137">Al Hayat</channel>
+    <channel lang="ar" xmltv_id="AlhayatTV.eg" site_id="1137">Al Hayat</channel>
     <channel lang="ar" xmltv_id="AlJadeed.lb" site_id="1216">Al Jadeed</channel>
     <channel lang="ar" xmltv_id="AlKaheraWalNas.eg" site_id="1174">Al Kahera Wal Nas</channel>
+    <channel lang="ar" xmltv_id="AlKaheraWalNas2.eg" site_id="1252">Al Kahera Wal Nas TV 2</channel>
     <channel lang="ar" xmltv_id="AlManar.lb" site_id="1321">Al-Manar TV</channel>
-    <channel lang="ar" xmltv_id="AlNaharDrama.eg" site_id="1223">Al-Nahar Drama</channel>
     <channel lang="ar" xmltv_id="AlNahar.eg" site_id="1193">Al-Nahar TV</channel>
+    <channel lang="ar" xmltv_id="AlNaharDrama.eg" site_id="1223">Al-Nahar Drama</channel>
     <channel lang="ar" xmltv_id="AlraiTV.kw" site_id="1170">Alrai TV</channel>
     <channel lang="ar" xmltv_id="AlRasheedTV.iq" site_id="1306">Al Rasheed TV</channel>
     <channel lang="ar" xmltv_id="AlSaeedah.eg" site_id="1339">Al-Saeedah</channel>
@@ -27,10 +28,10 @@
     <channel lang="ar" xmltv_id="ARTHekayat.sa" site_id="1122">ART Hekayat</channel>
     <channel lang="ar" xmltv_id="ARTHekayat2.sa" site_id="1182">ART Hekayat 2</channel>
     <channel lang="ar" xmltv_id="beINDrama1.qa" site_id="1309">BeIn Drama 1</channel>
+    <channel lang="ar" xmltv_id="beINMovies1Premiere.qa" site_id="1322">BeIn Movies Premiere</channel>
     <channel lang="ar" xmltv_id="beINMovies2Action.qa" site_id="1323">BeIn Movies Action</channel>
     <channel lang="ar" xmltv_id="beINMovies3Drama.qa" site_id="1324">BeIn Movies Drama</channel>    
     <channel lang="ar" xmltv_id="beINMovies4Family.qa" site_id="1325">BeIn Movies Family</channel>
-    <channel lang="ar" xmltv_id="beINMovies1Premiere.qa" site_id="1322">BeIn Movies Premiere</channel>
     <channel lang="ar" xmltv_id="beINSeries1.qa" site_id="1327">BeIn Series 1</channel>
     <channel lang="ar" xmltv_id="beINSeries2.qa" site_id="1328">BeIn Series 2</channel>
     <channel lang="ar" xmltv_id="CartoonNetworkArabic.ae" site_id="1242">Cartoon Network Arabic</channel>
@@ -51,6 +52,7 @@
     <channel lang="ar" xmltv_id="ElMehwarChannel.eg" site_id="1145">El Mehwar Channel</channel>
     <channel lang="ar" xmltv_id="EmaratTV.ae" site_id="1135">Emarat TV</channel>
     <channel lang="ar" xmltv_id="EMiddleEast.us" site_id="1273">E! Middle East</channel>
+    <channel lang="ar" xmltv_id="ETCTV.eg" site_id="1375">ETC TV</channel>
     <channel lang="ar" xmltv_id="Fann.ae" site_id="1233">Fann</channel>
     <channel lang="ar" xmltv_id="iFilmArabic.ir" site_id="1204">IFilm Arabic</channel>
     <channel lang="ar" xmltv_id="KTVAlQurain.kw" site_id="1369">KTV Al Qurain</channel>
@@ -68,10 +70,10 @@
     <channel lang="ar" xmltv_id="MBCAction.ae" site_id="1130">MBC Action</channel>
     <channel lang="ar" xmltv_id="MBCBollywood.ae" site_id="1259">MBC Bollywood</channel>
     <channel lang="ar" xmltv_id="MBCDrama.ae" site_id="1194">MBC Drama</channel>
-    <channel lang="ar" xmltv_id="MBCPlusDrama.ae" site_id="1131">MBC Drama +</channel>
     <channel lang="ar" xmltv_id="MBCMasr.eg" site_id="1239">MBC Maser</channel>
     <channel lang="ar" xmltv_id="MBCMasr2.eg" site_id="1278">MBC Maser 2</channel>
     <channel lang="ar" xmltv_id="MBCMax.ae" site_id="1132">MBC Max</channel>
+    <channel lang="ar" xmltv_id="MBCPlusDrama.ae" site_id="1131">MBC Drama +</channel>
     <channel lang="ar" xmltv_id="MixBelAraby.eg" site_id="1371">Mix Bel Araby</channel>
     <channel lang="ar" xmltv_id="MixHollywood.eg" site_id="1355">Mix Hollywood</channel>
     <channel lang="ar" xmltv_id="MTVLebanon.lb" site_id="1296">MTV Alloubnaniya</channel>
@@ -83,23 +85,15 @@
     <channel lang="ar" xmltv_id="NileDrama.eg" site_id="1156">Nile Drama</channel>
     <channel lang="ar" xmltv_id="OnDrama.eg" site_id="1134">On Drama</channel>
     <channel lang="ar" xmltv_id="OnE.eg" site_id="1203">On E</channel>
-    <channel lang="ar" xmltv_id="OSNMoviesAction.ae" site_id="1211">OSN Action</channel>
     <channel lang="ar" xmltv_id="OSNComedy.ae" site_id="1257">OSN Comedy</channel>
-    <!-- <channel lang="ar" xmltv_id="" site_id="1229">OSN Enigma</channel> -->
     <channel lang="ar" xmltv_id="OSNKids.ae" site_id="1232">OSN Kids</channel>
+    <channel lang="ar" xmltv_id="OSNMoviesAction.ae" site_id="1211">OSN Action</channel>
     <channel lang="ar" xmltv_id="OSNMoviesHollywood.ae" site_id="1209">OSN Movies</channel>
-    <!-- <channel lang="ar" xmltv_id="OSNMoviesDisney.ae" site_id="1345">OSN Movies Disney</channel> -->
-    <!-- <channel lang="ar" xmltv_id="OSNMoviesFirst.ae" site_id="1213">OSN Movies First</channel> -->
-    <!-- <channel lang="ar" xmltv_id="OSNMoviesFirstPlus2.ae" site_id="1214">OSN Movies First +2</channel> -->
-    <!-- <channel lang="ar" xmltv_id="OSNSeries.ae" site_id="1254">OSN Series</channel> -->
-    <!-- <channel lang="ar" xmltv_id="OSNSeriesFirst.ae" site_id="1256">OSN Series First</channel> -->
     <channel lang="ar" xmltv_id="OSNYahala.ae" site_id="1205">OSN Ya Hala</channel>
-    <!-- <channel lang="ar" xmltv_id="OSNYaHalaAlOula.ae" site_id="1250">OSN Ya Hala Al Oula</channel> -->
-    <!-- <channel lang="ar" xmltv_id="OSNYaHalaCinema.ae" site_id="1285">OSN Ya Hala Cinema</channel> -->
-    <channel lang="ar" xmltv_id="RotanaComedy.sa" site_id="1358">Rotana Comedy</channel>
     <channel lang="ar" xmltv_id="RotanaCinemaEgypt.eg" site_id="1148">Rotana Cinema Egypt</channel>
     <channel lang="ar" xmltv_id="RotanaCinemaKSA.sa" site_id="1289">Rotana Cinema KSA</channel>
     <channel lang="ar" xmltv_id="RotanaClassic.sa" site_id="1217">Rotana Classic</channel>
+    <channel lang="ar" xmltv_id="RotanaComedy.sa" site_id="1358">Rotana Comedy</channel>
     <channel lang="ar" xmltv_id="RotanaDrama.sa" site_id="1147">Rotana Drama</channel>
     <channel lang="ar" xmltv_id="RotanaKhalijia.sa" site_id="1149">Rotana Khalijia</channel>
     <channel lang="ar" xmltv_id="RotanaKids.sa" site_id="1356">Rotana Kids</channel>
