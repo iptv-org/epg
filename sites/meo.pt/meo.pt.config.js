@@ -24,30 +24,36 @@ module.exports = {
   },
   parser({ content }) {
     let programs = []
-    const data = parseContent(content)
-    const items = data.d.channels[0] ? data.d.channels[0].programs : []
-    if (!items.length) return programs
-
+    const items = parseItems(content)
     items.forEach(item => {
-      const title = item.name
-      const localStart = dayjs.utc(`${item.date}/${item.timeIni}`, 'D-M-YYYY/HH:mm')
-      const start = dayjs.tz(localStart.toString(), 'Europe/Lisbon').toString()
-      const localStop = dayjs.utc(`${item.date}/${item.timeEnd}`, 'D-M-YYYY/HH:mm')
-      const stop = dayjs.tz(localStop.toString(), 'Europe/Lisbon').toString()
-
-      if (title && start && stop) {
-        programs.push({
-          title,
-          start,
-          stop
-        })
+      const start = parseStart(item)
+      let stop = parseStop(item)
+      if (stop.isBefore(start)) {
+        stop = stop.add(1, 'd')
       }
+      programs.push({
+        title: item.name,
+        start,
+        stop
+      })
     })
 
     return programs
   }
 }
 
-function parseContent(content) {
-  return JSON.parse(content)
+function parseStart(item) {
+  return dayjs.tz(`${item.date} ${item.timeIni}`, 'D-M-YYYY HH:mm', 'Europe/Lisbon')
+}
+
+function parseStop(item) {
+  return dayjs.tz(`${item.date} ${item.timeEnd}`, 'D-M-YYYY HH:mm', 'Europe/Lisbon')
+}
+
+function parseItems(content) {
+  if (!content) return []
+  const data = JSON.parse(content)
+  const programs = data?.d?.channels?.[0]?.programs
+
+  return Array.isArray(programs) ? programs : []
 }
