@@ -12,13 +12,13 @@ dayjs.extend(utc)
 
 const date = dayjs.utc('2022-12-02', 'YYYY-MM-DD').startOf('d')
 const channel = {
-  site_id: '1',
-  xmltv_id: 'RTP1.pt'
+  site_id: '4',
+  xmltv_id: 'RTPMadeira.pt'
 }
 
 it('can generate valid url', () => {
   expect(url({ channel, date })).toBe(
-    'https://www.rtp.pt/EPG/json/rtp-channels-page/list-grid/tv/1/2-12-2022'
+    'https://www.rtp.pt/EPG/json/rtp-channels-page/list-grid/tv/4/2-12-2022'
   )
 })
 
@@ -30,12 +30,12 @@ it('can parse response', () => {
     return p
   })
 
-  expect(results[0]).toMatchObject({
-    start: '2022-12-02T06:30:00.000Z',
-    stop: '2022-12-02T10:00:00.000Z',
-    title: 'Bom Dia Portugal',
-    description: 'E porque é de manhã que começa o dia, então inicie-o na nossa companhia!',
-    icon: 'https://cdn-images.rtp.pt/EPG/imagens/38084_57380_28384.png?w=384&h=216'
+  expect(results[9]).toMatchObject({
+    start: '2022-12-02T23:30:00.000Z',
+    stop: '2022-12-03T00:00:00.000Z',
+    title: 'Telejornal Madeira',
+    description: 'Informação de proximidade. De confiança!',
+    icon: 'https://cdn-images.rtp.pt/EPG/imagens/15790_43438_8820.png?w=384&h=216'
   })
 })
 
