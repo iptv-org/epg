@@ -13,7 +13,7 @@ dayjs.extend(utc)
 
 jest.mock('axios')
 
-const date = dayjs.utc('2022-11-15', 'YYYY-MM-DD').startOf('d')
+const date = dayjs.utc('2022-12-02', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: '31',
   xmltv_id: 'RTHKTV31.hk',
@@ -21,7 +21,7 @@ const channel = {
 }
 
 it('can generate valid url', () => {
-  expect(url({ date })).toBe('https://www.rthk.hk/timetable/main_timetable/20221115')
+  expect(url({ date })).toBe('https://www.rthk.hk/timetable/main_timetable/20221202')
 })
 
 it('can generate valid request headers', () => {
@@ -48,12 +48,12 @@ it('can parse response', () => {
   })
 
   expect(results[0]).toMatchObject({
-    start: '2022-11-14T16:00:00.000Z',
-    stop: '2022-11-14T16:30:00.000Z',
-    title: '救Bee大作戰',
-    sub_title: '第二集',
-    categories: ['知識', '娛樂'],
-    icon: 'https://www.rthk.hk/assets/rthk/images/tv/player/480x272.jpg'
+    start: '2022-12-01T16:00:00.000Z',
+    stop: '2022-12-01T17:00:00.000Z',
+    title: '問天',
+    sub_title: '第十四集',
+    categories: ['戲劇'],
+    icon: 'https://www.rthk.hk/assets/images/rthk/dtt31/thegreataerospace/10239_1920_s.jpg'
   })
 })
 
@@ -67,12 +67,12 @@ it('can parse response in English', () => {
   })
 
   expect(results[0]).toMatchObject({
-    start: '2022-11-14T16:00:00.000Z',
-    stop: '2022-11-14T16:30:00.000Z',
-    title: "Jimmy's Big Bee Rescue",
-    sub_title: 'Episode 2',
-    categories: ['知識', '娛樂'],
-    icon: 'https://www.rthk.hk/assets/rthk/images/tv/player/480x272.jpg'
+    start: '2022-12-01T16:00:00.000Z',
+    stop: '2022-12-01T17:00:00.000Z',
+    title: 'The Great Aerospace',
+    sub_title: 'Episode 14',
+    categories: ['戲劇'],
+    icon: 'https://www.rthk.hk/assets/images/rthk/dtt31/thegreataerospace/10239_1920_s.jpg'
   })
 })
 
