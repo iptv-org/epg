@@ -8,6 +8,7 @@ dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
 module.exports = {
+  skip: true, // NOTE: Connection timeout
   site: 'zap.co.ao',
   url: function ({ date, channel }) {
     return `https://www.zap.co.ao/_api/channels/${date.format('YYYY-M-D')}/epg.json`
