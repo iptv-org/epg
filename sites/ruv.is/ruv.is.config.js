@@ -11,27 +11,21 @@ dayjs.extend(customParseFormat)
 module.exports = {
   site: 'ruv.is',
   url({ channel, date }) {
-    return `https://www.ruv.is/dagskra/${channel.site_id}/${date.format('YYYYMMDD')}`
+    return `https://www.ruv.is/sjonvarp/dagskra/${channel.site_id}/${date.format('YYYY-MM-DD')}`
   },
-  parser({ content, date }) {
+  parser({ content, channel, date }) {
     let programs = []
-    const items = parseItems(content)
+    const items = parseItems(content, channel, date)
     items.forEach(item => {
-      const $item = cheerio.load(item)
-      const prev = programs[programs.length - 1]
-      let start = parseStart($item, date)
-      if (prev) {
-        if (start.isBefore(prev.start)) {
-          start = start.add(1, 'd')
-          date = date.add(1, 'd')
-        }
-        prev.stop = start
+      let start = parseStart(item, date)
+      let stop = parseStop(item, date)
+      if (stop.isBefore(start)) {
+        stop = stop.add(1, 'd')
       }
-      let stop = start.add(1, 'h')
       programs.push({
-        title: parseTitle($item),
-        description: parseDescription($item),
-        icon: parseIcon($item),
+        title: item.title,
+        description: item.description,
+        icon: parseIcon(item),
         start,
         stop
       })
@@ -41,27 +35,35 @@ module.exports = {
   }
 }
 
-function parseTitle($item) {
-  return $item('span.field-content.ruv-color').text()
+function parseIcon(item) {
+  return item.image.replace('$$IMAGESIZE$$', '480')
 }
 
-function parseDescription($item) {
-  return $item('div.views-field > span > div > span > p').text().trim()
+function parseStart(item, date) {
+  return dayjs.tz(
+    `${date.format('YYYY-MM-DD')} ${item.start_time_friendly}`,
+    'YYYY-MM-DD HH:mm',
+    'Atlantic/Reykjavik'
+  )
 }
 
-function parseIcon($item) {
-  return $item('div.views-field > span > div > div img').attr('src')
+function parseStop(item, date) {
+  return dayjs.tz(
+    `${date.format('YYYY-MM-DD')} ${item.end_time_friendly}`,
+    'YYYY-MM-DD HH:mm',
+    'Atlantic/Reykjavik'
+  )
 }
 
-function parseStart($item, date) {
-  const string = $item('strong').text()
-  const time = `${date.format('YYYY-MM-DD')} ${string}`
-
-  return dayjs.tz(time, 'YYYY-MM-DD HH : mm', 'Atlantic/Reykjavik')
-}
-
-function parseItems(content) {
+function parseItems(content, channel, date) {
   const $ = cheerio.load(content)
+  const apollo = $('#apollo').html()
+  const [, state] = apollo.match(/window.__APOLLO_STATE__ = ([^;<]+)/) || [null, '']
+  const data = JSON.parse(state)
 
-  return $('#ruv_api_calendar > ul > li').toArray()
+  return (
+    data?.ROOT_QUERY?.[
+      `Schedule({"channel":"${channel.site_id}","date":"${date.format('YYYY-MM-DD')}"})`
+    ]?.events || []
+  )
 }
