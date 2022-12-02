@@ -44,14 +44,14 @@ module.exports = {
 }
 
 function parseIcon($item) {
-  return $item('*').data('p')
+  return $item('.single-wrap').data('p')
 }
 
 function parseCategories($item) {
-  let cate = $item('*').data('cate')
+  let cate = $item('.single-wrap').data('cate') || ''
   let [_, categories] = cate.match(/^\|(.*)\|$/) || [null, '']
 
-  return categories.split('||')
+  return categories.split('||').filter(Boolean)
 }
 
 function parseTitle($item) {
