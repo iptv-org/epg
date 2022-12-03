@@ -227,7 +227,7 @@ To load a program guide, all you need to do is copy the link to one or more of t
     <tr><td valign="top" rowspan="1">🇸🇯&nbsp;Svalbard and Jan Mayen</td><td align="right" nowrap>52</td><td nowrap><code>https://iptv-org.github.io/epg/guides/sj.xml</code></td></tr>
     <tr><td valign="top" rowspan="1">🇸🇿&nbsp;Swaziland</td><td align="right" nowrap>100</td><td nowrap><code>https://iptv-org.github.io/epg/guides/sz.xml</code></td></tr>
     <tr><td valign="top" rowspan="1">🇸🇪&nbsp;Sweden</td><td align="right" nowrap>177</td><td nowrap><code>https://iptv-org.github.io/epg/guides/se.xml</code></td></tr>
-    <tr><td valign="top" rowspan="1">🇨🇭&nbsp;Switzerland</td><td align="right" nowrap>232</td><td nowrap><code>https://iptv-org.github.io/epg/guides/ch.xml</code></td></tr>
+    <tr><td valign="top" rowspan="1">🇨🇭&nbsp;Switzerland</td><td align="right" nowrap>233</td><td nowrap><code>https://iptv-org.github.io/epg/guides/ch.xml</code></td></tr>
     <tr><td valign="top" rowspan="1">🇸🇾&nbsp;Syria</td><td align="right" nowrap>95</td><td nowrap><code>https://iptv-org.github.io/epg/guides/sy.xml</code></td></tr>
     <tr><td valign="top" rowspan="1">🇸🇹&nbsp;São Tomé and Príncipe</td><td align="right" nowrap>107</td><td nowrap><code>https://iptv-org.github.io/epg/guides/st.xml</code></td></tr>
     <tr><td valign="top" rowspan="1">🇹🇼&nbsp;Taiwan</td><td align="right" nowrap>68</td><td nowrap><code>https://iptv-org.github.io/epg/guides/tw.xml</code></td></tr>
