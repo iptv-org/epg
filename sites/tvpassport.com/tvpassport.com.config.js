@@ -101,19 +101,27 @@ function parseSubTitle($item) {
 }
 
 function parseCategory($item) {
-  return $item('*').data('showtype').split(', ')
+  const showtype = $item('*').data('showtype')
+
+  return showtype ? showtype.split(', ') : []
 }
 
 function parseActors($item) {
-  return $item('*').data('cast').split(', ')
+  const cast = $item('*').data('cast')
+
+  return cast ? cast.split(', ') : []
 }
 
 function parseDirector($item) {
-  return $item('*').data('director').split(', ')
+  const director = $item('*').data('director')
+
+  return director ? director.split(', ') : []
 }
 
 function parseGuest($item) {
-  return $item('*').data('guest').split(', ')
+  const guest = $item('*').data('guest')
+
+  return guest ? guest.split(', ') : []
 }
 
 function parseRating($item) {
