@@ -64,8 +64,8 @@ module.exports = {
         description: detail.longDescription,
         category: detail.genres,
         actors: detail.actors,
-        season: detail.seasonNumber,
-        episode: detail.episodeNumber,
+        season: parseSeason(detail),
+        episode: parseEpisode(detail),
         start: parseStart(item),
         stop: parseStop(item)
       })
@@ -116,4 +116,16 @@ function parseItems(content, channel) {
   if (!channelData) return []
 
   return Array.isArray(channelData.events) ? channelData.events : []
+}
+
+function parseSeason(detail) {
+    if (!detail.seasonNumber) return null
+    if (String(detail.seasonNumber).length > 2) return null
+    return detail.seasonNumber
+}
+
+function parseEpisode(detail) {
+    if (!detail.episodeNumber) return null
+    if (String(detail.episodeNumber).length > 3) return null
+    return detail.episodeNumber
 }
