@@ -10,8 +10,8 @@
 	<channel lang="en" xmltv_id="Channel10.au" site_id="10">Channel 10</channel>
 	<channel lang="en" xmltv_id="10Peach.au" site_id="11">10 Peach</channel>
 	<channel lang="en" xmltv_id="Channel7.au" site_id="7">Channel 7</channel>
-	<channel lang="en" xmltv_id="Channel7.au" site_id="7HD">Channel 7 HD</channel>
-	<channel lang="en" xmltv_id="7mate.au?" site_id="7MATE">7mate</channel>
+	<!-- <channel lang="en" xmltv_id="Channel7.au" site_id="7HD">Channel 7 HD</channel> -->
+	<channel lang="en" xmltv_id="7mate.au" site_id="7MATE">7mate</channel>
 	<channel lang="en" xmltv_id="7two.au" site_id="7TWO">7two</channel>
 	<channel lang="en" xmltv_id="7flix.au" site_id="7flix">7flix</channel>
 	<channel lang="en" xmltv_id="Channel9.au" site_id="9">Channel 9</channel>
@@ -34,4 +34,4 @@
 	<channel lang="en" xmltv_id="TVSN.au" site_id="TVSN">TSVN</channel>
 	<channel lang="en" xmltv_id="SBSViceland.au" site_id="VICHD">SBS Viceland</channel>
   </channels>
-</site>	
+</site>
