@@ -29,8 +29,9 @@ module.exports = {
         season: parseSeason(item),
         episode: parseEpisode(item),
 		rating: parseRating(item),
-        start: dayjs.utc(item.start_time),
-        stop: dayjs.utc(item.end_time)
+        icon: parseIcon(item),
+        start: parseTime(item.start_time),
+        stop: parseTime(item.end_time)
       })
     })
 
@@ -39,12 +40,16 @@ module.exports = {
 }
 
 function parseItems(content, channel) {
-  const data = JSON.parse(content)
-  if (!data) return []
-  if (!Array.isArray(data.schedule)) return []
+    try {
+        const data = JSON.parse(content)
+        if (!data) return []
+        if (!Array.isArray(data.schedule)) return []
 
-  const channelData = data.schedule.filter(i => i.channel == channel.site_id)
-  return channelData.listing && Array.isArray(channelData.listing) ? channelData.listing : []
+        const channelData = data.schedule.find(i => i.channel == channel.site_id)
+        return channelData.listing && Array.isArray(channelData.listing) ? channelData.listing : []
+    } catch (err) {
+        return []
+    }
 }
 
 function parseSeason(item) {
@@ -56,7 +61,7 @@ function parseEpisode(item) {
 function parseTime(time) {
 	return dayjs.tz(time, 'YYYY-MM-DD HH:mm', 'Australia/Sydney')
 }
-function parseIcon(tem) {
+function parseIcon(item) {
 	return item.image_file ? `https://www.abc.net.au/tv/common/images/publicity/${item.image_file}` : null
 }
 function parseRating(item) {

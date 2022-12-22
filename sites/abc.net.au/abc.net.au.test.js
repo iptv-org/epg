@@ -12,7 +12,7 @@ const channel = {
 }
 it('can generate valid url', () => {
   expect(url({ date })).toBe(
-    'https://epg.abctv.net.au/processed/Sydney_2022-12-22.json
+    'https://epg.abctv.net.au/processed/Sydney_2022-12-22.json'
   )
 })
 
@@ -30,8 +30,10 @@ it('can parse response', () => {
       title: 'Silent Witness',
       sub_title: 'Lift Up Your Hearts (part Two)',
       description: `When tragedy strikes close to home, it puts head teacher Noah Taylor on a collision course with the criminals responsible. Can the Lyell team help him stop the cycle of violence?`,
-      category: 'Entertainment',
-      rating: 'M',
+      category: ['Entertainment'],
+      rating: {
+        system: 'ACB',
+        value: 'M'},
       season: 22,
       episode: 4,
       icon: 'https://www.abc.net.au/tv/common/images/publicity/ZW2178A004S00_460.jpg',
