@@ -6,6 +6,7 @@ const customParseFormat = require('dayjs/plugin/customParseFormat')
 dayjs.extend(utc)
 dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
+const tz = 'Europe/Prague'
 
 module.exports = {
     site: 'skylink.cz',
@@ -47,7 +48,7 @@ function parseList(list) {
     return typeof list === 'string' ? list.split(',') : []
   }
 function parseTime(time) {
-    return dayjs.utc(time, 'DD.MM.YYYY HH.mm')
+    return dayjs(time, 'DD.MM.YYYY HH.mm').tz(tz)
 }
 
 function parseCategory(item) {
