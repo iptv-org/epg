@@ -9,22 +9,9 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
     site: 'skylink.cz',
-    request: {
-        method: 'POST',
-        headers: {
-        'Content-Type': 'application/x-www-form-urlencoded'
-        },
-        data: function ({ channel, date }) {
-            const params = new URLSearchParams()
-            params.append('channel_cid', channel.site_id)
-            // 0 = today, 1 = tomorrow, etc
-            const diff = date.diff(dayjs.utc().startOf('d'), 'd')
-            params.append('day', diff)
-            return params
-        }
-    },
-    url() {
-        return `https://services.mujtvprogram.cz/tvprogram2services/services/tvprogrammelist_mobile.php`
+    url({channel, date}) {
+        const diff = date.diff(dayjs.utc().startOf('d'), 'd')
+        return `https://services.mujtvprogram.cz/tvprogram2services/services/tvprogrammelist_mobile.php?channel_cid=${channel.site_id}&day=${diff}`
     },
     parser({ content}) {
         let programs = []
@@ -39,7 +26,6 @@ module.exports = {
                 date: item.year || null,
                 director: parseList(item.directors),
                 actor: parseList(item.actors)
-
             })
         })
         return programs
