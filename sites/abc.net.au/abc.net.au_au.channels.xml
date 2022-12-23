@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site site="abc.net.au">
+  <channels>
+		<channel lang="en" xmltv_id="10Bold.au" site_id="ONE">10 Bold</channel>
+		<channel lang="en" xmltv_id="10Peach.au" site_id="11">10 Peach</channel>
+		<channel lang="en" xmltv_id="10Shake.au" site_id="SHAKE">10 Shake</channel>
+		<channel lang="en" xmltv_id="7flix.au" site_id="7flix">7flix</channel>
+		<channel lang="en" xmltv_id="7mate.au" site_id="7MATE">7mate</channel>
+		<channel lang="en" xmltv_id="7two.au" site_id="7TWO">7two</channel>
+		<channel lang="en" xmltv_id="9Gem.au" site_id="GEM">9 Gem</channel>
+		<channel lang="en" xmltv_id="9Go.au" site_id="GO">9 Go!</channel>
+		<channel lang="en" xmltv_id="9Life.au" site_id="9Life">9 Life</channel>
+		<channel lang="en" xmltv_id="9Rush.au" site_id="9Rush">9 Rush</channel>
+		<channel lang="en" xmltv_id="ABCKids.au" site_id="ABC4KIDS">ABC Kids</channel>
+		<channel lang="en" xmltv_id="ABCMe.au" site_id="ABC3">ABC ME</channel>
+		<channel lang="en" xmltv_id="ABCNewsAustralia.au" site_id="ABCN">ABC News</channel>
+		<channel lang="en" xmltv_id="ABCTV.au" site_id="ABC1">ABC TV</channel>
+		<channel lang="en" xmltv_id="ABCTVPlus.au" site_id="ABC2">ABC TV Plus</channel>
+		<channel lang="en" xmltv_id="Channel10.au" site_id="10">Channel 10</channel>
+		<channel lang="en" xmltv_id="Channel7.au" site_id="7">Channel 7</channel>
+		<channel lang="en" xmltv_id="Channel9.au" site_id="9">Channel 9</channel>
+		<channel lang="en" xmltv_id="NITV.au" site_id="NITV">NITV</channel>
+		<channel lang="en" xmltv_id="Racingcom.au" site_id="RTV">Racing.com</channel>
+		<channel lang="en" xmltv_id="SBS.au" site_id="SBS">SBS One</channel>
+		<channel lang="en" xmltv_id="SBSFood.au" site_id="SBS3">SBS Food</channel>
+		<channel lang="en" xmltv_id="SBSViceland.au" site_id="VICHD">SBS Viceland</channel>
+		<channel lang="en" xmltv_id="SBSWorldMovies.au" site_id="SBS2">SBS World Movies</channel>
+		<channel lang="en" xmltv_id="SBSWorldWatch.au" site_id="SBSWW">SBS World Watch</channel>
+		<channel lang="en" xmltv_id="SpreeTV.au" site_id="SPREE">Spree TV</channel>
+		<channel lang="en" xmltv_id="TVSN.au" site_id="TVSN">TSVN</channel>
+		<!-- <channel lang="en" xmltv_id="ABCTV.au" site_id="ABCHD">ABC TV HD</channel> -->
+		<!-- <channel lang="en" xmltv_id="Channel10.au" site_id="TENHD">Channel 10 HD</channel> -->
+		<!-- <channel lang="en" xmltv_id="Channel7.au" site_id="7HD">Channel 7 HD</channel> -->
+		<!-- <channel lang="en" xmltv_id="Channel9.au" site_id="9HD">Channel 9 HD</channel> -->
+		<!-- <channel lang="en" xmltv_id="SBS.au" site_id="SBSHD">SBS HD</channel> -->
+  </channels>
+</site>
