@@ -7,6 +7,7 @@
   </thead>
   <tbody>
     <tr><td valign="top" rowspan="1">9tv.co.il</td><td nowrap><a href="https://github.com/iptv-org/epg/actions/workflows/9tv.co.il.yml"><img src="https://github.com/iptv-org/epg/actions/workflows/9tv.co.il.yml/badge.svg" alt="9tv.co.il" style="max-width: 100%;"></a></td></tr>
+    <tr><td valign="top" rowspan="1">abc.net.au</td><td nowrap><a href="https://github.com/iptv-org/epg/actions/workflows/abc.net.au.yml"><img src="https://github.com/iptv-org/epg/actions/workflows/abc.net.au.yml/badge.svg" alt="abc.net.au" style="max-width: 100%;"></a></td></tr>
     <tr><td valign="top" rowspan="1">allente.se</td><td nowrap><a href="https://github.com/iptv-org/epg/actions/workflows/allente.se.yml"><img src="https://github.com/iptv-org/epg/actions/workflows/allente.se.yml/badge.svg" alt="allente.se" style="max-width: 100%;"></a></td></tr>
     <tr><td valign="top" rowspan="1">andorradifusio.ad</td><td nowrap><a href="https://github.com/iptv-org/epg/actions/workflows/andorradifusio.ad.yml"><img src="https://github.com/iptv-org/epg/actions/workflows/andorradifusio.ad.yml/badge.svg" alt="andorradifusio.ad" style="max-width: 100%;"></a></td></tr>
     <tr><td valign="top" rowspan="1">arianaafgtv.com</td><td nowrap><a href="https://github.com/iptv-org/epg/actions/workflows/arianaafgtv.com.yml"><img src="https://github.com/iptv-org/epg/actions/workflows/arianaafgtv.com.yml/badge.svg" alt="arianaafgtv.com" style="max-width: 100%;"></a></td></tr>
