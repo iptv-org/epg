@@ -29,16 +29,16 @@ module.exports = {
       .catch(console.error)
     // items.forEach(item => {
     for (let item of items) {
-        const detail = await loadProgramDetails(item)
-        programs.push({
-            title: item.t,
-            description: parseDescription(detail),
-            category: parseCategory(detail),
-            season: parseSeason(detail),
-            episode: parseEpisode(detail),
-            start: parseStart(item),
-            stop: parseStop(item)
-        })
+      const detail = await loadProgramDetails(item)
+      programs.push({
+        title: item.t,
+        description: parseDescription(detail),
+        category: parseCategory(detail),
+        season: parseSeason(detail),
+        episode: parseEpisode(detail),
+        start: parseStart(item),
+        stop: parseStop(item)
+      })
     }
     //)
 
@@ -61,14 +61,14 @@ module.exports = {
 }
 
 async function loadProgramDetails(item) {
-    if (!item.i) return {}
-    const url = `${API_ENDPOINT}/listings/${item.i}`
-    const data = await axios
-      .get(url)
-      .then(r => r.data)
-      .catch(console.log)
-    return data || {}
-  }
+  if (!item.i) return {}
+  const url = `${API_ENDPOINT}/listings/${item.i}`
+  const data = await axios
+    .get(url)
+    .then(r => r.data)
+    .catch(console.log)
+  return data || {}
+}
 
 function parseStart(item) {
   return dayjs(item.s)
@@ -86,27 +86,26 @@ function parseItems(content, channel) {
   return entity ? entity.l : []
 }
 
-function parseDescription(detail){
-    return detail.program.longDescription ||  null
+function parseDescription(detail) {
+  return detail.program.longDescription || null
 }
 
 function parseCategory(detail) {
-    let categories = []
-    detail.program.categories.forEach(category => {
-        categories.push(category.title)
-    });
-    return categories
+  let categories = []
+  detail.program.categories.forEach(category => {
+    categories.push(category.title)
+  })
+  return categories
 }
 
 function parseSeason(detail) {
-    if (!detail.program.seriesNumber) return null
-    if (String(detail.program.seriesNumber).length > 2) return null
-    return detail.program.seriesNumber
+  if (!detail.program.seriesNumber) return null
+  if (String(detail.program.seriesNumber).length > 2) return null
+  return detail.program.seriesNumber
 }
 
 function parseEpisode(detail) {
-    if (!detail.program.seriesEpisodeNumber) return null
-    if (String(detail.program.seriesEpisodeNumber).length > 3) return null
-    return detail.program.seriesEpisodeNumber
+  if (!detail.program.seriesEpisodeNumber) return null
+  if (String(detail.program.seriesEpisodeNumber).length > 3) return null
+  return detail.program.seriesEpisodeNumber
 }
-

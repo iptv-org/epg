@@ -12,30 +12,30 @@ dayjs.extend(utc)
 jest.mock('axios')
 
 const channel = {
-    site_id: '80759',
-    xmltv_id: 'Animaux.fr'
+  site_id: '80759',
+  xmltv_id: 'Animaux.fr'
 }
 
 it('can generate valid url for today', () => {
-    const date = dayjs.utc().startOf('d')
-    expect(url({ channel, date })).toBe(
-        'https://service.canal-overseas.com/ott-frontend/vector/83001/channel/80759/events?filter.day=0'
-    )
+  const date = dayjs.utc().startOf('d')
+  expect(url({ channel, date })).toBe(
+    'https://service.canal-overseas.com/ott-frontend/vector/83001/channel/80759/events?filter.day=0'
+  )
 })
 
 it('can generate valid url for tomorrow', () => {
-    const date = dayjs.utc().startOf('d').add(1, 'd')
-    expect(url({ channel, date })).toBe(
-        'https://service.canal-overseas.com/ott-frontend/vector/83001/channel/80759/events?filter.day=1'
-    )
+  const date = dayjs.utc().startOf('d').add(1, 'd')
+  expect(url({ channel, date })).toBe(
+    'https://service.canal-overseas.com/ott-frontend/vector/83001/channel/80759/events?filter.day=1'
+  )
 })
 
 it('can parse response', done => {
-    const content = `{"timeSlices":[{"contents":[{"title":"A petit pas","subtitle":"Episode 1 - La naissance","thirdTitle":"ANIMAUX","startTime":1660794900,"endTime":1660797900,"onClick":{"displayTemplate":"miniDetail","displayName":"A petit pas","URLPage":"https://service.canal-overseas.com/ott-frontend/vector/83001/event/140280189","URLVitrine":"https://service.canal-overseas.com/ott-frontend/vector/83001/program/104991257/recommendations"},"programID":104991257,"diffusionID":"140280189","URLImageDefault":"https://service.canal-overseas.com/image-api/v1/image/generic","URLImage":"https://service.canal-overseas.com/image-api/v1/image/7dedf4a579b66153a1988637e9e023f5"}],"timeSlice":"1"}]}`
-    axios.get.mockImplementation(url => {
-        if (url === 'https://service.canal-overseas.com/ott-frontend/vector/83001/event/140280189') {
-            return Promise.resolve({
-                data: JSON.parse(`{
+  const content = `{"timeSlices":[{"contents":[{"title":"A petit pas","subtitle":"Episode 1 - La naissance","thirdTitle":"ANIMAUX","startTime":1660794900,"endTime":1660797900,"onClick":{"displayTemplate":"miniDetail","displayName":"A petit pas","URLPage":"https://service.canal-overseas.com/ott-frontend/vector/83001/event/140280189","URLVitrine":"https://service.canal-overseas.com/ott-frontend/vector/83001/program/104991257/recommendations"},"programID":104991257,"diffusionID":"140280189","URLImageDefault":"https://service.canal-overseas.com/image-api/v1/image/generic","URLImage":"https://service.canal-overseas.com/image-api/v1/image/7dedf4a579b66153a1988637e9e023f5"}],"timeSlice":"1"}]}`
+  axios.get.mockImplementation(url => {
+    if (url === 'https://service.canal-overseas.com/ott-frontend/vector/83001/event/140280189') {
+      return Promise.resolve({
+        data: JSON.parse(`{
             "currentPage": {
             "displayName": "A petit pas",
             "displayTemplate": "detailPage",
@@ -109,42 +109,43 @@ it('can parse response', done => {
             ]
             }
             }`)
-            })
-        } else {
-            return Promise.resolve({ data: '' })
+      })
+    } else {
+      return Promise.resolve({ data: '' })
+    }
+  })
+
+  parser({ content })
+    .then(result => {
+      result = result.map(p => {
+        p.start = p.start.toJSON()
+        p.stop = p.stop.toJSON()
+        return p
+      })
+
+      expect(result).toMatchObject([
+        {
+          start: '2022-08-18T03:55:00.000Z',
+          stop: '2022-08-18T04:45:00.000Z',
+          title: 'A petit pas',
+          icon: 'https://service.canal-overseas.com/image-api/v1/image/7dedf4a579b66153a1988637e9e023f5',
+          category: 'Doc. Animalier',
+          description:
+            'Suivi pendant une année entière de trois bébés animaux, un border collie, un poulain et un lémurien, prédestinés par leur maître à devenir de véritables champions.'
         }
+      ])
+      done()
     })
-
-    parser({ content })
-        .then(result => {
-            result = result.map(p => {
-                p.start = p.start.toJSON()
-                p.stop = p.stop.toJSON()
-                return p
-            })
-
-            expect(result).toMatchObject([
-                {
-                    start: '2022-08-18T03:55:00.000Z',
-                    stop: '2022-08-18T04:45:00.000Z',
-                    title: 'A petit pas',
-                    icon: 'https://service.canal-overseas.com/image-api/v1/image/7dedf4a579b66153a1988637e9e023f5',
-                    category: 'Doc. Animalier',
-                    description: 'Suivi pendant une année entière de trois bébés animaux, un border collie, un poulain et un lémurien, prédestinés par leur maître à devenir de véritables champions.'
-                }
-            ])
-            done()
-        })
-        .catch(done)
+    .catch(done)
 })
 
 it('can handle empty guide', done => {
-    parser({
-        content: `{"currentPage":{"displayTemplate":"error","BOName":"Page introuvable"},"title":"Page introuvable","text":"La page que vous demandez est introuvable. Si le problème persiste, vous pouvez contacter l'assistance de CANAL+/CANALSAT.","code":404}`
+  parser({
+    content: `{"currentPage":{"displayTemplate":"error","BOName":"Page introuvable"},"title":"Page introuvable","text":"La page que vous demandez est introuvable. Si le problème persiste, vous pouvez contacter l'assistance de CANAL+/CANALSAT.","code":404}`
+  })
+    .then(result => {
+      expect(result).toMatchObject([])
+      done()
     })
-        .then(result => {
-            expect(result).toMatchObject([])
-            done()
-        })
-        .catch(done)
+    .catch(done)
 })

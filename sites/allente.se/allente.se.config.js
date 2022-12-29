@@ -55,8 +55,8 @@ function parseItems(content, channel) {
 }
 
 function parseSeason(item) {
-    return item.details.season || null
+  return item.details.season || null
 }
 function parseEpisode(item) {
-    return item.details.episode || null
+  return item.details.episode || null
 }

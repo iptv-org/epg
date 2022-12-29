@@ -32,12 +32,12 @@ module.exports = {
 }
 
 function parseCategory(item) {
-  let category = item.content.genre.name || null;
-  const subcategory =  item.content.subgenre.name || null;
-  if(category && subcategory){
-    category += `/${subcategory}`;
+  let category = item.content.genre.name || null
+  const subcategory = item.content.subgenre.name || null
+  if (category && subcategory) {
+    category += `/${subcategory}`
   }
-  return category;
+  return category
 }
 
 function parseStart(item) {
@@ -59,13 +59,13 @@ function parseIcon(item) {
 }
 
 function parseSeason(item) {
-    if (!item.content.seasonNumber) return null
-    if (String(item.content.seasonNumber).length > 2) return null
-    return item.content.seasonNumber
+  if (!item.content.seasonNumber) return null
+  if (String(item.content.seasonNumber).length > 2) return null
+  return item.content.seasonNumber
 }
 
 function parseEpisode(item) {
-    if (!item.content.episodeNumber) return null
-    if (String(item.content.episodeNumber).length > 3) return null
-    return item.content.episodeNumber
+  if (!item.content.episodeNumber) return null
+  if (String(item.content.episodeNumber).length > 3) return null
+  return item.content.episodeNumber
 }

@@ -119,13 +119,13 @@ function parseItems(content, channel) {
 }
 
 function parseSeason(detail) {
-    if (!detail.seasonNumber) return null
-    if (String(detail.seasonNumber).length > 2) return null
-    return detail.seasonNumber
+  if (!detail.seasonNumber) return null
+  if (String(detail.seasonNumber).length > 2) return null
+  return detail.seasonNumber
 }
 
 function parseEpisode(detail) {
-    if (!detail.episodeNumber) return null
-    if (String(detail.episodeNumber).length > 3) return null
-    return detail.episodeNumber
+  if (!detail.episodeNumber) return null
+  if (String(detail.episodeNumber).length > 3) return null
+  return detail.episodeNumber
 }

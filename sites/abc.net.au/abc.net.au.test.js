@@ -11,9 +11,7 @@ const channel = {
   xmltv_id: 'ABCTV.au'
 }
 it('can generate valid url', () => {
-  expect(url({ date })).toBe(
-    'https://epg.abctv.net.au/processed/Sydney_2022-12-22.json'
-  )
+  expect(url({ date })).toBe('https://epg.abctv.net.au/processed/Sydney_2022-12-22.json')
 })
 
 it('can parse response', () => {
@@ -33,7 +31,8 @@ it('can parse response', () => {
       category: ['Entertainment'],
       rating: {
         system: 'ACB',
-        value: 'M'},
+        value: 'M'
+      },
       season: 22,
       episode: 4,
       icon: 'https://www.abc.net.au/tv/common/images/publicity/ZW2178A004S00_460.jpg',

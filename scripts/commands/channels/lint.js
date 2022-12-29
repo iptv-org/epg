@@ -32,45 +32,45 @@ const xsd = `<?xml version="1.0" encoding="UTF-8"?>
 program.argument('<filepath>', 'Path to file to validate').parse(process.argv)
 
 async function main() {
-	if (!program.args.length) {
-		logger.error('required argument "filepath" not specified')
-	}
+  if (!program.args.length) {
+    logger.error('required argument "filepath" not specified')
+  }
 
-	let errors = []
+  let errors = []
 
-	for (const filepath of program.args) {
-		if (!filepath.endsWith('.xml')) continue
+  for (const filepath of program.args) {
+    if (!filepath.endsWith('.xml')) continue
 
-		const xml = await file.read(filepath)
+    const xml = await file.read(filepath)
 
-		let localErrors = []
+    let localErrors = []
 
-		try {
-			const xsdDoc = libxml.parseXml(xsd)
-			const doc = libxml.parseXml(xml)
+    try {
+      const xsdDoc = libxml.parseXml(xsd)
+      const doc = libxml.parseXml(xml)
 
-			if (!doc.validate(xsdDoc)) {
-				localErrors = doc.validationErrors
-			}
-		} catch (error) {
-			localErrors.push(error)
-		}
+      if (!doc.validate(xsdDoc)) {
+        localErrors = doc.validationErrors
+      }
+    } catch (error) {
+      localErrors.push(error)
+    }
 
-		if (localErrors.length) {
-			logger.info(`\n${chalk.underline(filepath)}`)
-			localErrors.forEach(error => {
-				const position = `${error.line}:${error.column}`
-				logger.error(` ${chalk.gray(position.padEnd(4, ' '))} ${error.message.trim()}`)
-			})
+    if (localErrors.length) {
+      logger.info(`\n${chalk.underline(filepath)}`)
+      localErrors.forEach(error => {
+        const position = `${error.line}:${error.column}`
+        logger.error(` ${chalk.gray(position.padEnd(4, ' '))} ${error.message.trim()}`)
+      })
 
-			errors = errors.concat(localErrors)
-		}
-	}
+      errors = errors.concat(localErrors)
+    }
+  }
 
-	if (errors.length) {
-		logger.error(chalk.red(`\n${errors.length} error(s)`))
-		process.exit(1)
-	}
+  if (errors.length) {
+    logger.error(chalk.red(`\n${errors.length} error(s)`))
+    process.exit(1)
+  }
 }
 
 main()

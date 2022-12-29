@@ -61,20 +61,19 @@ function parseContent(content) {
   return data ? JSON.parse(data) : {}
 }
 
-
 function parseDirector(item) {
-    return item.credits && item.credits.director ? item.credits.director : null
+  return item.credits && item.credits.director ? item.credits.director : null
 }
 
 function parseActor(item) {
-    return item.credits && item.credits.actor ? item.credits.actor : null
+  return item.credits && item.credits.actor ? item.credits.actor : null
 }
 
 function parseRating(item) {
-    return item.rating
-      ? {
-          system: 'CNC',
-          value: item.rating.toUpperCase()
-        }
-      : null
-  }
+  return item.rating
+    ? {
+        system: 'CNC',
+        value: item.rating.toUpperCase()
+      }
+    : null
+}

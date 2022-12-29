@@ -15,7 +15,7 @@ module.exports = {
     }
   },
   url({ date }) {
-  	return `https://epg.abctv.net.au/processed/Sydney_${date.format('YYYY-MM-DD')}.json`
+    return `https://epg.abctv.net.au/processed/Sydney_${date.format('YYYY-MM-DD')}.json`
   },
   parser({ content, channel }) {
     let programs = []
@@ -28,7 +28,7 @@ module.exports = {
         description: item.description,
         season: parseSeason(item),
         episode: parseEpisode(item),
-		rating: parseRating(item),
+        rating: parseRating(item),
         icon: parseIcon(item),
         start: parseTime(item.start_time),
         stop: parseTime(item.end_time)
@@ -40,35 +40,37 @@ module.exports = {
 }
 
 function parseItems(content, channel) {
-    try {
-        const data = JSON.parse(content)
-        if (!data) return []
-        if (!Array.isArray(data.schedule)) return []
+  try {
+    const data = JSON.parse(content)
+    if (!data) return []
+    if (!Array.isArray(data.schedule)) return []
 
-        const channelData = data.schedule.find(i => i.channel == channel.site_id)
-        return channelData.listing && Array.isArray(channelData.listing) ? channelData.listing : []
-    } catch (err) {
-        return []
-    }
+    const channelData = data.schedule.find(i => i.channel == channel.site_id)
+    return channelData.listing && Array.isArray(channelData.listing) ? channelData.listing : []
+  } catch (err) {
+    return []
+  }
 }
 
 function parseSeason(item) {
-    return item.series_num || null
+  return item.series_num || null
 }
 function parseEpisode(item) {
-    return item.episode_num || null
+  return item.episode_num || null
 }
 function parseTime(time) {
-	return dayjs.tz(time, 'YYYY-MM-DD HH:mm', 'Australia/Sydney')
+  return dayjs.tz(time, 'YYYY-MM-DD HH:mm', 'Australia/Sydney')
 }
 function parseIcon(item) {
-	return item.image_file ? `https://www.abc.net.au/tv/common/images/publicity/${item.image_file}` : null
+  return item.image_file
+    ? `https://www.abc.net.au/tv/common/images/publicity/${item.image_file}`
+    : null
 }
 function parseRating(item) {
-    return item.rating
-      ? {
-          system: 'ACB',
-          value: item.rating
-        }
-      : null
-  }
+  return item.rating
+    ? {
+        system: 'ACB',
+        value: item.rating
+      }
+    : null
+}

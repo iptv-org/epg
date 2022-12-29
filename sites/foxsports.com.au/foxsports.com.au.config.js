@@ -8,7 +8,9 @@ module.exports = {
     }
   },
   url({ date }) {
-  	return `https://tvguide.foxsports.com.au/granite-api/programmes.json?from=${date.format('YYYY-MM-DD')}&to=${date.add(1, 'd').format('YYYY-MM-DD')}`
+    return `https://tvguide.foxsports.com.au/granite-api/programmes.json?from=${date.format(
+      'YYYY-MM-DD'
+    )}&to=${date.add(1, 'd').format('YYYY-MM-DD')}`
   },
   parser({ content, channel }) {
     let programs = []

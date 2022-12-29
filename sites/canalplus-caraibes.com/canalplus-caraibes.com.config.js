@@ -19,12 +19,12 @@ module.exports = {
       if (item.title === 'Fin des programmes') return
       const detail = await loadProgramDetails(item)
       programs.push({
-          title: item.title,
-          description:parseDescription(detail),
-          category: parseCategory(detail),
-          icon: parseIcon(item),
-          start: parseStart(item),
-          stop: parseStop(item)
+        title: item.title,
+        description: parseDescription(detail),
+        category: parseCategory(detail),
+        icon: parseIcon(item),
+        start: parseStart(item),
+        stop: parseStop(item)
       })
     }
 
@@ -53,24 +53,24 @@ module.exports = {
 }
 
 async function loadProgramDetails(item) {
-    if (!item.onClick.URLPage) return {}
-    const url = item.onClick.URLPage
-    const data = await axios
-      .get(url)
-      .then(r => r.data)
-      .catch(console.log)
-    return data || {}
-  }
-
-function parseDescription(detail){
-    return detail.detail.informations.summary ||  null
+  if (!item.onClick.URLPage) return {}
+  const url = item.onClick.URLPage
+  const data = await axios
+    .get(url)
+    .then(r => r.data)
+    .catch(console.log)
+  return data || {}
 }
 
-function parseCategory(detail){
-    return detail.detail.informations.subGenre ||  null
+function parseDescription(detail) {
+  return detail.detail.informations.summary || null
 }
-function parseIcon(item){
-    return item.URLImage || item.URLImageDefault
+
+function parseCategory(detail) {
+  return detail.detail.informations.subGenre || null
+}
+function parseIcon(item) {
+  return item.URLImage || item.URLImageDefault
 }
 function parseStart(item) {
   return dayjs.unix(item.startTime)
