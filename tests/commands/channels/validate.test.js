@@ -3,7 +3,7 @@ const { execSync } = require('child_process')
 it('will show a message if the file contains a duplicate', () => {
   try {
     const stdout = execSync(
-      'npm run channels:validate -- tests/__data__/input/sites/duplicate.channels.xml',
+      'DATA_DIR=tests/__data__/input/data npm run channels:validate -- tests/__data__/input/sites/duplicate.channels.xml',
       {
         encoding: 'utf8'
       }
@@ -27,7 +27,7 @@ it('will show a message if the file contains a duplicate', () => {
 it('will show a message if the file contains a channel with wrong xmltv_id', () => {
   try {
     const stdout = execSync(
-      'npm run channels:validate -- tests/__data__/input/sites/wrong_xmltv_id.channels.xml',
+      'DATA_DIR=tests/__data__/input/data npm run channels:validate -- tests/__data__/input/sites/wrong_xmltv_id.channels.xml',
       {
         encoding: 'utf8'
       }
