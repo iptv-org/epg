@@ -52,11 +52,7 @@ async function main() {
   })
   data = Object.values(_.groupBy(data, item => item[0]))
 
-  const output = table.create(data, [
-    'Country&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;',
-    'Channels',
-    'EPG'
-  ])
+  const output = table.create(data, ['Country', 'Channels', 'EPG'])
 
   await file.create('./.readme/_countries.md', output)
 
