@@ -97,7 +97,7 @@
     <channel lang="cs" xmltv_id="DigiSport1Hungary.hu" site_id="Digi+Sport+1+HD">Digi Sport 1 Hungary</channel>
     <channel lang="cs" xmltv_id="DigiSport2Hungary.hu" site_id="Digi+Sport+2+HD">Digi Sport 2 Hungary</channel>
     <channel lang="cs" xmltv_id="DiscoveryChannelCzechRepublic.cz" site_id="Discovery">Discovery Channel</channel>
-    <channel lang="cs" xmltv_id="DiscoveryScience.us" site_id="Discovery+Science">Discovery Science</channel>
+    <channel lang="cs" xmltv_id="DiscoveryScienceCzechRepublic.cz" site_id="Discovery+Science">Discovery Science</channel>
     <channel lang="cs" xmltv_id="DisneyChannelCzechRepublic.cz" site_id="Disney+Channel">Disney Channel</channel>
     <channel lang="cs" xmltv_id="DisneyChannelGermany.de" site_id="Disney+Channel+%28de%29">Disney Channel Deutschland</channel>
     <channel lang="cs" xmltv_id="DisneyJuniorCzechRepublic.cz" site_id="Disney+Junior">Disney Junior</channel>
@@ -143,7 +143,7 @@
     <channel lang="cs" xmltv_id="FilmBoxAction.nl" site_id="Filmbox+Action+%28pl%29">FilmBox Action</channel>
     <channel lang="cs" xmltv_id="FilmBoxArthouse.nl" site_id="FilmBox+Arthouse">FilmBox Arthouse Worldwide</channel>
     <channel lang="cs" xmltv_id="FilmBoxCzechRepublicSlovakia.cz" site_id="Filmbox">FilmBox Central Europe</channel>
-    <channel lang="cs" xmltv_id="FilmBoxExtraCzechRepublicSlovakia.cz" site_id="Filmbox+Extra+HD">FilmBox Extra HD Czechia &amp; Hungary</channel>
+    <channel lang="cs" xmltv_id="FilmBoxExtraCzechRepublicSlovakia.cz" site_id="Filmbox+Extra+HD">FilmBox Extra HD Czechia</channel>
     <channel lang="cs" xmltv_id="FilmBoxExtraPoland.pl" site_id="Filmbox+Extra+HD+%28pl%29">FilmBox Extra HD Polska</channel>
     <channel lang="cs" xmltv_id="FilmBoxFamily.nl" site_id="Filmbox+Family">FilmBox Family</channel>
     <channel lang="cs" xmltv_id="FilmBoxPremiumCzechRepublicSlovakia.cz" site_id="Filmbox+Premium">FilmBox Premium Czechia</channel>
@@ -170,7 +170,7 @@
     <channel lang="cs" xmltv_id="GoldTV.pl" site_id="Gold+TV">Gold TV</channel>
     <channel lang="cs" xmltv_id="GolfChannelCzechia.us" site_id="Golf+Channel">Golf Channel Czechia</channel>
     <!-- <channel lang="cs" xmltv_id="" site_id="Gospel">Gospel</channel> -->
-    <channel lang="cs" xmltv_id="HaHa.rs" site_id="HaHa+TV">Ha Ha</channel>
+    <channel lang="cs" xmltv_id="HAHATV.sk" site_id="HaHa+TV">HaHa TV</channel>
     <channel lang="cs" xmltv_id="HBO2CzechRepublic.cz" site_id="HBO2">HBO 2</channel>
     <channel lang="cs" xmltv_id="HBO3CzechRepublic.cz" site_id="HBO3">HBO 3</channel>
     <channel lang="cs" xmltv_id="HBOCzechRepublic.cz" site_id="HBO">HBO</channel>
@@ -297,10 +297,10 @@
     <channel lang="cs" xmltv_id="O2TVSport5.cz" site_id="O2+Sport5">O2 TV Sport 5</channel>
     <channel lang="cs" xmltv_id="O2TVSport6.cz" site_id="O2+Sport6">O2 TV Sport 6</channel>
     <channel lang="cs" xmltv_id="O2TVTenis.cz" site_id="O2TV+Tenis">O2 TV Tenis</channel>
-    <channel lang="cs" xmltv_id="Ocko.cz" site_id="%D3%E8ko">Ócko</channel>
-    <channel lang="cs" xmltv_id="OckoBlack.cz" site_id="%D3%E8ko+Black">Ócko Black</channel>
-    <channel lang="cs" xmltv_id="OckoExpres.cz" site_id="%D3%E8ko+Expres">Ócko Expres</channel>
-    <channel lang="cs" xmltv_id="OckoStar.cz" site_id="%D3%E8ko+Star">Ócko Star</channel>
+    <channel lang="cs" xmltv_id="Ocko.cz" site_id="%D3%E8ko">Óčko</channel>
+    <channel lang="cs" xmltv_id="OckoBlack.cz" site_id="%D3%E8ko+Black">Óčko Black</channel>
+    <channel lang="cs" xmltv_id="OckoExpres.cz" site_id="%D3%E8ko+Expres">Óčko Expres</channel>
+    <channel lang="cs" xmltv_id="OckoStar.cz" site_id="%D3%E8ko+Star">Óčko Star</channel>
     <channel lang="cs" xmltv_id="One.de" site_id="ARD+One">One</channel>
     <channel lang="cs" xmltv_id="ORF1.at" site_id="ORF1">ORF 1</channel>
     <channel lang="cs" xmltv_id="ORF2.at" site_id="ORF2">ORF 2</channel>
@@ -358,7 +358,7 @@
     <channel lang="cs" xmltv_id="Rebel.cz" site_id="Rebel">Rebel</channel>
     <channel lang="cs" xmltv_id="RedCarpetTV.pl" site_id="Red+Carpet">Red Carpet</channel>
     <channel lang="cs" xmltv_id="RedlightHD.nl" site_id="Redlight+HD">Redlight HD</channel>
-    <channel lang="cs" xmltv_id="RegionalniTV.cz" site_id="regionalnitelevize.cz">Regionální TV</channel>
+    <channel lang="cs" xmltv_id="NasRegionTV.cz" site_id="N%E1%9A+REGION+TV">Náš REGION TV</channel>
     <channel lang="cs" xmltv_id="Relax.cz" site_id="RELAX">Relax</channel>
     <channel lang="cs" xmltv_id="Rete4.it" site_id="Rete+4">Rete 4</channel>
     <channel lang="cs" xmltv_id="RetroMusicTV.cz" site_id="Retro+Music">Retro Music TV</channel>
@@ -512,9 +512,9 @@
     <channel lang="cs" xmltv_id="UATV.ua" site_id="UATV">UA TV</channel>
     <channel lang="cs" xmltv_id="Ukraina24.ua" site_id="Ukraina+24">Ukraïna 24</channel>
     <channel lang="cs" xmltv_id="UpNetwork.cz" site_id="UP+NETWORK">Up Network</channel>
-    <channel lang="cs" xmltv_id="ViasatExplore.se" site_id="Viasat+Explorer">Viasat Explore East</channel>
-    <channel lang="cs" xmltv_id="ViasatHistory.se" site_id="Viasat+History">Viasat History</channel>
-    <channel lang="cs" xmltv_id="ViasatNature.se" site_id="Viasat+Nature">Viasat Nature East</channel>
+    <channel lang="cs" xmltv_id="ViasatExploreCzechRepublic.cz" site_id="Viasat+Explorer">Viasat Explore</channel>
+    <channel lang="cs" xmltv_id="ViasatHistoryCzechRepublic.cz" site_id="Viasat+History">Viasat History</channel>
+    <channel lang="cs" xmltv_id="ViasatNatureCzechRepublic.cz" site_id="Viasat+Nature">Viasat Nature</channel>
     <channel lang="cs" xmltv_id="VTV1.vn" site_id="VTV1">VTV 1</channel>
     <channel lang="cs" xmltv_id="VTV2.vn" site_id="VTV2">VTV 2</channel>
     <channel lang="cs" xmltv_id="VTV3.vn" site_id="VTV3">VTV 3</channel>
@@ -529,7 +529,6 @@
     <channel lang="cs" xmltv_id="ZDFneo.de" site_id="ZDFneo">ZDF Neo</channel>
     <channel lang="cs" xmltv_id="Zoom.ua" site_id="ZOOM">Zoom</channel>
     <channel lang="cs" xmltv_id="ZoomTV.pl" site_id="Zoom+TV">Zoom TV</channel>
-    <!-- <channel lang="cs" xmltv_id="" site_id="%8Al%E1gr+2">Slágr 2</channel> -->
     <!-- <channel lang="cs" xmltv_id="" site_id="Filmbox+Premium+%28pl%29">FilmBox Premium Polska</channel> -->
   </channels>
 </site>
