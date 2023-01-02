@@ -12,19 +12,19 @@ dayjs.extend(utc)
 
 const date = dayjs.utc('2022-12-02', 'YYYY-MM-DD').startOf('d')
 const channel = {
-  site_id: '4',
+  site_id: 'lis#4',
   xmltv_id: 'RTPMadeira.pt'
 }
 
 it('can generate valid url', () => {
   expect(url({ channel, date })).toBe(
-    'https://www.rtp.pt/EPG/json/rtp-channels-page/list-grid/tv/4/2-12-2022'
+    'https://www.rtp.pt/EPG/json/rtp-channels-page/list-grid/tv/4/2-12-2022/lis'
   )
 })
 
 it('can parse response', () => {
   const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'))
-  let results = parser({ content }).map(p => {
+  let results = parser({ content, channel }).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
     return p
