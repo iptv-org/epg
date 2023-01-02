@@ -1,103 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site site="osn.com">
   <channels>
-    <channel lang="en" xmltv_id="AghaniAghaniTV.lb" site_id="YE#AGH">Aghani Aghani TV</channel>
-    <channel lang="en" xmltv_id="AksyonTVInternational.ph" site_id="YE#AKS">Aksyon TV International</channel>
     <channel lang="en" xmltv_id="AlAanTV.ae" site_id="YE#AAN">Al Aan TV</channel>
     <channel lang="en" xmltv_id="AlDafrahTV.ae" site_id="YE#DAF">Al Dafrah TV</channel>
-    <channel lang="en" xmltv_id="Alhurra.us" site_id="YE#ALH">Alhurra TV</channel>
-    <channel lang="en" xmltv_id="AlMajlisTV.kw" site_id="YE#KTM">Al-Majlis TV</channel>
-    <channel lang="en" xmltv_id="AlMamlakaTV.jo" site_id="YE#MMK">Al Mamlaka TV</channel>
-    <channel lang="en" xmltv_id="AlQurainTV.kw" site_id="YE#KTQ">Al-Qurain TV</channel>
+    <channel lang="en" xmltv_id="Alhurra.us" site_id="YE#ALH">AL Hurra HD</channel>
+    <!-- <channel lang="en" xmltv_id="???" site_id="YE#ALQ">AL Hurra Iraq HD</channel> -->
+    <channel lang="en" xmltv_id="AlQurainTV.kw" site_id="YE#KTQ">Al Qurain HD</channel>
+    <channel lang="en" xmltv_id="RoyaTV.jo" site_id="YE#ROY">Al Roya TV</channel>
     <channel lang="en" xmltv_id="AlSafwa.ae" site_id="YE#SAF">Al Safwa</channel>
-    <channel lang="en" xmltv_id="AlWoustaTV.ae" site_id="YE#WAD">Al Wousta TV</channel>
+    <channel lang="en" xmltv_id="AlWoustaTV.ae" site_id="YE#WAD">Al Wosta from Al Dhaid</channel>
     <channel lang="en" xmltv_id="AlYawm.ae" site_id="YE#YAW">Al Yawm</channel>
+    <channel lang="en" xmltv_id="AlfaSeries.ae" site_id="YE#SE2">Alfa Series +2</channel>
+    <channel lang="en" xmltv_id="AlfaSeriesPlus2.ae" site_id="YE#SER">Alfa Series Channel</channel>
+    <channel lang="en" xmltv_id="AlMamlakaTV.jo" site_id="YE#MMK">AlMamlaka TV</channel>
     <channel lang="en" xmltv_id="ANC.ph" site_id="YE#ANC">ANC</channel>
+    <channel lang="en" xmltv_id="ArirangTV.kr" site_id="YE#ARW">Arirang TV</channel>
     <channel lang="en" xmltv_id="ARTAflam1.sa" site_id="YE#AF1">ART Aflam 1</channel>
     <channel lang="en" xmltv_id="ARTAflam2.sa" site_id="YE#AF2">ART Aflam 2</channel>
     <channel lang="en" xmltv_id="ARTCinema.sa" site_id="YE#ACM">ART Cinema</channel>
-    <channel lang="en" xmltv_id="ARTHekayat.sa" site_id="YE#HK1">ART Hekayat</channel>
-    <channel lang="en" xmltv_id="ARTHekayat2.sa" site_id="YE#HK2">ART Hekayat 2</channel>
     <channel lang="en" xmltv_id="B4UAflam.ae" site_id="YE#B4A">B4U Aflam</channel>
     <channel lang="en" xmltv_id="B4UPlus.in" site_id="YE#B4P">B4U Plus</channel>
-    <channel lang="en" xmltv_id="BabyTV.uk" site_id="YE#BAB">Baby TV Europe</channel>
+    <channel lang="en" xmltv_id="BabyTV.uk" site_id="YE#BAB">BabyTV Europe</channel>
     <channel lang="en" xmltv_id="BahrainTV.bh" site_id="YE#BAH">Bahrain TV</channel>
     <channel lang="en" xmltv_id="BBCArabic.uk" site_id="YE#BBA">BBC Arabic</channel>
-    <channel lang="en" xmltv_id="BBCWorldNewsMiddleEast.uk" site_id="YE#BBW">BBC World News Middle East</channel>
-    <channel lang="en" xmltv_id="BloombergTVEurope.uk" site_id="YE#BTV">Bloomberg TV Europe</channel>
+    <channel lang="en" xmltv_id="BBCWorldNewsMiddleEast.uk" site_id="YE#BBW">BBC World</channel>
+    <channel lang="en" xmltv_id="BloombergTVEurope.uk" site_id="YE#BTV">Bloomberg</channel>
     <channel lang="en" xmltv_id="CGTN.cn" site_id="YE#CT9">CGTN</channel>
     <channel lang="en" xmltv_id="CGTNArabic.cn" site_id="YE#CTA">CGTN Arabic</channel>
+    <channel lang="en" xmltv_id="CineMo.ph" site_id="YE#CIN">Cine Mo</channel>
     <channel lang="en" xmltv_id="Cinema1.ae" site_id="YE#CM1">Cinema 1</channel>
     <channel lang="en" xmltv_id="Cinema2.ae" site_id="YE#CM2">Cinema 2</channel>
     <channel lang="en" xmltv_id="CinemaOneGlobal.ph" site_id="YE#COG">Cinema One Global</channel>
-    <channel lang="en" xmltv_id="CineMo.ph" site_id="YE#CIN">Cine Mo!</channel>
-    <channel lang="en" xmltv_id="CNBCArabiya.ae" site_id="YE#CAR">CNBC Arabiya</channel>
-    <channel lang="en" xmltv_id="CNBCEurope.uk" site_id="YE#CNB">CNBC Europe</channel>
-    <channel lang="en" xmltv_id="CrimePlusInvestigationUK.uk" site_id="YE#CAI">Crime + Investigation UK</channel>
-    <channel lang="en" xmltv_id="DiscoveryChannelMiddleEastAfrica.us" site_id="YE#DSC">Discovery Channel Middle East &amp; Africa</channel>
-    <channel lang="en" xmltv_id="DiscoveryScienceMiddleEast.uk" site_id="YE#SCI">Discovery Science Middle East</channel>
-    <channel lang="en" xmltv_id="DisneyChannelMENA.uk" site_id="YE#DIS">Disney Channel Middle East</channel>
-    <channel lang="en" xmltv_id="DubaiRacing.ae" site_id="YE#DUH">Dubai Racing</channel>
+    <channel lang="en" xmltv_id="CNBCEurope.uk" site_id="YE#CNB">CNBC</channel>
+    <channel lang="en" xmltv_id="CNBCArabiya.ae" site_id="YE#CAR">CNBC Arabia</channel>
+    <channel lang="en" xmltv_id="CrimePlusInvestigationUK.uk" site_id="YE#CAI">Crime + Investigation Network</channel>
+    <channel lang="en" xmltv_id="DiscoveryChannelMiddleEastAfrica.us" site_id="YE#DSC">Discovery HD</channel>
+    <channel lang="en" xmltv_id="InvestigationDiscoveryEurope.us" site_id="YE#DCX">Discovery ID</channel>
+    <channel lang="en" xmltv_id="DiscoveryScienceMiddleEast.uk" site_id="YE#SCI">Discovery Science HD</channel>
+    <channel lang="en" xmltv_id="DisneyChannelMENA.uk" site_id="YE#DIS">Disney HD</channel>
+    <channel lang="en" xmltv_id="DisneyJuniorMENA.uk" site_id="YE#DJR">Disney Junior</channel>
+    <channel lang="en" xmltv_id="DubaiRacing.ae" site_id="YE#DUH">Dubai Racing 1 HD</channel>
     <channel lang="en" xmltv_id="DubaiRacing3.ae" site_id="YE#DR3">Dubai Racing 3</channel>
-    <channel lang="en" xmltv_id="Ellaycom.ae" site_id="YE#ELL">Ellay.com</channel>
-    <channel lang="en" xmltv_id="EMiddleEast.us" site_id="YE#ETV">E! Middle East</channel>
+    <!-- <channel lang="en" xmltv_id="???" site_id="YE#DWR">DWRR 101.9</channel> -->
+    <channel lang="en" xmltv_id="TeleRadyoGlobal.ph" site_id="YE#DZM">DZMM Teleradyo</channel>
+    <channel lang="en" xmltv_id="EMiddleEast.us" site_id="YE#ETV">E! Entertainment HD</channel>
     <channel lang="en" xmltv_id="Fann.ae" site_id="YE#FAN">Fann</channel>
-    <channel lang="en" xmltv_id="France24Arabic.fr" site_id="YE#FRA">France 24 Arabic</channel>
+    <channel lang="en" xmltv_id="France24Arabic.fr" site_id="YE#FRA">France 24</channel>
     <channel lang="en" xmltv_id="France24English.fr" site_id="YE#FRE">France 24 English</channel>
     <channel lang="en" xmltv_id="GMALifeTV.ph" site_id="YE#GML">GMA Life TV</channel>
-    <channel lang="en" xmltv_id="GMANewsTV.ph" site_id="YE#GMN">GMA News</channel>
-    <channel lang="en" xmltv_id="GMAPinoyTVMiddleEast.ph" site_id="YE#GMA">GMA Pinoy TV Middle East</channel>
-    <channel lang="en" xmltv_id="History2MiddleEast.us" site_id="YE#HI2">History 2 Middle East</channel>
-    <channel lang="en" xmltv_id="HistoryMiddleEast.us" site_id="YE#HIS">History Middle East</channel>
-    <channel lang="en" xmltv_id="InvestigationDiscoveryEurope.us" site_id="YE#DCX">Investigation Discovery Europe</channel>
-    <channel lang="en" xmltv_id="KTV1.kw" site_id="YE#KT1">KTV 1</channel>
-    <channel lang="en" xmltv_id="KTV2.kw" site_id="YE#KT2">KTV 2</channel>
-    <channel lang="en" xmltv_id="KTVArabe.kw" site_id="YE#KTA">KTV Arabe</channel>
-    <channel lang="en" xmltv_id="KTVEthraa.kw" site_id="YE#KTE">KTV Ethraa</channel>
-    <channel lang="en" xmltv_id="KTVSport.kw" site_id="YE#KTS">KTV Sport</channel>
-    <channel lang="en" xmltv_id="KTVSportPlus.kw" site_id="YE#KTP">KTV Sport Plus</channel>
+    <channel lang="en" xmltv_id="GMANewsTV.ph" site_id="YE#GMN">GMA News TV</channel>
+    <channel lang="en" xmltv_id="GMAPinoyTVMiddleEast.ph" site_id="YE#GMA">GMA Pinoy TV</channel>
+    <channel lang="en" xmltv_id="History2MiddleEast.us" site_id="YE#HI2">H2 HD</channel>
+    <channel lang="en" xmltv_id="ARTHekayat.sa" site_id="YE#HK1">Hekayat</channel>
+    <channel lang="en" xmltv_id="ARTHekayat2.sa" site_id="YE#HK2">Hekayat 2</channel>
+    <channel lang="en" xmltv_id="HistoryMiddleEast.us" site_id="YE#HIS">History HD</channel>
+    <channel lang="en" xmltv_id="AksyonTVInternational.ph" site_id="YE#AKS">Kapatid TV5</channel>
+    <channel lang="en" xmltv_id="KTVArabe.kw" site_id="YE#KTA">KTV Arabe HD</channel>
+    <channel lang="en" xmltv_id="KTVEthraa.kw" site_id="YE#KTE">KTV Ethraa HD</channel>
+    <channel lang="en" xmltv_id="AlMajlisTV.kw" site_id="YE#KTM">KTV Majlis HD</channel>
+    <channel lang="en" xmltv_id="KTVSport.kw" site_id="YE#KTS">KTV Sport HD</channel>
+    <channel lang="en" xmltv_id="KTVSportPlus.kw" site_id="YE#KTP">KTV Sport Plus HD</channel>
+    <channel lang="en" xmltv_id="KTV1.kw" site_id="YE#KT1">KTV1 HD</channel>
+    <channel lang="en" xmltv_id="KTV2.kw" site_id="YE#KT2">KTV2 HD</channel>
     <channel lang="en" xmltv_id="MadaniChannelEnglish.pk" site_id="YE#MDN">Madani TV</channel>
     <channel lang="en" xmltv_id="MarinaTV.kw" site_id="YE#MRN">Marina TV</channel>
+    <channel lang="en" xmltv_id="MoonbugKids.uk" site_id="YE#MBU">Moonbug Kids</channel>
     <channel lang="en" xmltv_id="MTV00s.uk" site_id="YE#VH1">MTV 00s</channel>
-    <channel lang="en" xmltv_id="MTVLive.uk" site_id="YE#MTL">MTV Live</channel>
-    <channel lang="en" xmltv_id="Musalsalat.ae" site_id="YE#SER">Musalsalat</channel>
-    <channel lang="en" xmltv_id="MusalsalatPlus2.ae" site_id="YE#SE4">Musalsalat +2</channel>
+    <channel lang="en" xmltv_id="MTVLive.uk" site_id="YE#MTL">MTV Live HD</channel>
     <channel lang="en" xmltv_id="MusicNow.ae" site_id="YE#NOW">Music Now</channel>
-    <channel lang="en" xmltv_id="MyxMiddleEast.ph" site_id="YE#MYX">Myx Middle East</channel>
-    <channel lang="en" xmltv_id="NationalGeographicMiddleEast.uk" site_id="YE#NGO">National Geographic Middle East</channel>
-    <channel lang="en" xmltv_id="NationalGeographicWildMiddleEast.uk" site_id="YE#NHD">National Geographic Wild Middle East</channel>
-    <channel lang="en" xmltv_id="NHKWorldJapan.jp" site_id="YE#NHK">NHK World Japan</channel>
-    <channel lang="en" xmltv_id="NickelodeonArabia.ae" site_id="YE#NIC">Nickelodeon Arabia</channel>
-    <channel lang="en" xmltv_id="NickJrArabia.ae" site_id="YE#NJR">Nick Jr Arabia</channel>
-    <channel lang="en" xmltv_id="NicktoonsArabia.ae" site_id="YE#NKT">NickToons Arabia</channel>
-    <channel lang="en" xmltv_id="OSNMoviesAction.ae" site_id="YE#AHD">OSN Action</channel>
+    <channel lang="en" xmltv_id="MyxMiddleEast.ph" site_id="YE#MYX">Myx</channel>
+    <channel lang="en" xmltv_id="NationalGeographicMiddleEast.uk" site_id="YE#NGO">Nat Geo HD</channel>
+    <channel lang="en" xmltv_id="NationalGeographicWildMiddleEast.uk" site_id="YE#NHD">Nat Geo Wild HD</channel>
+    <channel lang="en" xmltv_id="NHKWorldJapan.jp" site_id="YE#NHK">NHK World TV</channel>
+    <channel lang="en" xmltv_id="NickJrArabia.ae" site_id="YE#NJR">Nick Jr</channel>
+    <channel lang="en" xmltv_id="NickelodeonArabia.ae" site_id="YE#NIC">Nickelodeon HD</channel>
+    <channel lang="en" xmltv_id="NicktoonsArabia.ae" site_id="YE#NKT">NickToons HD</channel>
     <channel lang="en" xmltv_id="OSNComedy.ae" site_id="YE#OCO">OSN Comedy</channel>
-    <channel lang="en" xmltv_id="OSNMoviesPremiere.ae" site_id="YE#OCM">OSN Enigma</channel>
     <channel lang="en" xmltv_id="OSNFamily.ae" site_id="YE#OFM">OSN Family</channel>
     <channel lang="en" xmltv_id="OSNKids.ae" site_id="YE#OMK">OSN Kids</channel>
-    <channel lang="en" xmltv_id="OSNKidzone.ae" site_id="YE#KDZ">OSN Kid Zone</channel>
+    <channel lang="en" xmltv_id="OSNKidzone.ae" site_id="YE#KDZ">OSN Kidzone</channel>
     <channel lang="en" xmltv_id="OSNLiving.ae" site_id="YE#OLH">OSN Living</channel>
     <channel lang="en" xmltv_id="OSNMezze.ae" site_id="YE#OMZ">OSN Mezze</channel>
-    <channel lang="en" xmltv_id="OSNMoviesHollywood.ae" site_id="YE#OPR">OSN Movies</channel>
-    <!-- <channel lang="en" xmltv_id="OSNMoviesFirst.ae" site_id="YE#OM1">OSN Movies First</channel> -->
-    <!-- <channel lang="en" xmltv_id="OSNMoviesFirstPlus2.ae" site_id="YE#OMX">OSN Movies First +2</channel> -->
+    <channel lang="en" xmltv_id="OSNMoviesAction.ae" site_id="YE#AHD">OSN Movies Action</channel>
+    <channel lang="en" xmltv_id="OSNMoviesHollywood.ae" site_id="YE#OPR">OSN Movies Hollywood</channel>
+    <channel lang="en" xmltv_id="OSNMoviesPremiere.ae" site_id="YE#OM1">OSN Movies Premiere</channel>
+    <channel lang="en" xmltv_id="OSNMoviesPremierePlus2.ae" site_id="YE#OMX">OSN Movies Premiere +2</channel>
     <channel lang="en" xmltv_id="OSNNews.ae" site_id="YE#ONS">OSN News</channel>
-    <!-- <channel lang="en" xmltv_id="OSNSeries.ae" site_id="YE#OBG">OSN Series</channel> -->
-    <!-- <channel lang="en" xmltv_id="OSNSeriesFirst.ae" site_id="YE#OFH">OSN Series First</channel> -->
-    <channel lang="en" xmltv_id="OSNW.ae" site_id="YE#OSW">OSN Woman</channel>
-    <channel lang="en" xmltv_id="OSNYahala.ae" site_id="YE#OYA">OSN Ya Hala</channel>
-    <!-- <channel lang="en" xmltv_id="OSNYaHalaAlOula.ae" site_id="YE#OYH">OSN Ya Hala Al Oula</channel> -->
-    <!-- <channel lang="en" xmltv_id="OSNYaHalaCinema.ae" site_id="YE#OYC">OSN Ya Hala Cinema</channel> -->
-    <channel lang="en" xmltv_id="RoyaTV.jo" site_id="YE#ROY">Roya TV</channel>
-    <channel lang="en" xmltv_id="RTArabic.ru" site_id="YE#RUS">RT Arabic</channel>
-    <channel lang="en" xmltv_id="SharjahSports.ae" site_id="YE#SHS">Sharjah Sports</channel>
-    <channel lang="en" xmltv_id="SharqiyaTV.ae" site_id="YE#SQK">Sharqiya TV</channel>
+    <channel lang="en" xmltv_id="OSNPopUp.ae" site_id="YE#PO2">OSN Popup</channel>
+    <channel lang="en" xmltv_id="OSNSeriesPrime.ae" site_id="YE#OBG">OSN Series Prime</channel>
+    <channel lang="en" xmltv_id="OSNShowcase.ae" site_id="YE#OFH">OSN Showcase</channel>
+    <channel lang="en" xmltv_id="OSNW.ae" site_id="YE#OSW">OSN W</channel>
+    <channel lang="en" xmltv_id="OSNYahala.ae" site_id="YE#OYH">OSN Yahala</channel>
+    <channel lang="en" xmltv_id="OSNYahalaAflam.ae" site_id="YE#OYC">OSN Yahala Aflam</channel>
+    <channel lang="en" xmltv_id="OSNYahalaBilArabi.ae" site_id="YE#OYA">OSN Yahala Bil Arabi</channel>
+    <channel lang="en" xmltv_id="PBARush.ph" site_id="YE#PBA">PBA Rush</channel>
+    <channel lang="en" xmltv_id="RTArabic.ru" site_id="YE#RUS">Rusiya Al Yawm</channel>
+    <channel lang="en" xmltv_id="SharjahSports.ae" site_id="YE#SSH">Sharjah Sport HD</channel>
+    <channel lang="en" xmltv_id="SharjahTV.ae" site_id="YE#SHT">Sharjah TV</channel>
+    <channel lang="en" xmltv_id="SharqiyaTV.ae" site_id="YE#SQK">Sharqiya from Kalba</channel>
     <channel lang="en" xmltv_id="SkyNewsArabia.ae" site_id="YE#SNA">Sky News Arabia</channel>
-    <channel lang="en" xmltv_id="SkyNewsInternational.uk" site_id="YE#SKH">Sky News International</channel>
-    <channel lang="en" xmltv_id="StarMoviesMiddleEast.ae" site_id="YE#STM">Star Movies Middle East</channel>
-    <channel lang="en" xmltv_id="StarWorldMiddleEast.ae" site_id="YE#STW">Star World Middle East</channel>
-    <channel lang="en" xmltv_id="TeleRadyoGlobal.ph" site_id="YE#DZM">TeleRadyo Global</channel>
-    <channel lang="en" xmltv_id="TheFilipinoChannelMiddleEast.us" site_id="YE#TFC">TFC Middle East</channel>
-    <channel lang="en" xmltv_id="TLCArabia.us" site_id="YE#TLC">TLC Arabia</channel>
+    <!-- <channel lang="en" xmltv_id="SkyNewsArabia.ae" site_id="YE#SNH">Sky News Arabia HD</channel> -->
+    <channel lang="en" xmltv_id="SkyNewsInternational.uk" site_id="YE#SKH">Sky News HD</channel>
+    <channel lang="en" xmltv_id="StarMoviesMiddleEast.ae" site_id="YE#STM">Star Movies HD</channel>
+    <channel lang="en" xmltv_id="StarWorldMiddleEast.ae" site_id="YE#STW">Star World HD</channel>
+    <channel lang="en" xmltv_id="TheFilipinoChannelMiddleEast.us" site_id="YE#TFC">TFC</channel>
+    <channel lang="en" xmltv_id="TLCArabia.us" site_id="YE#TLC">TLC HD</channel>
   </channels>
 </site>
