@@ -6,6 +6,7 @@
     <channel lang="en" xmltv_id="ActionMaxWest.us" site_id="actionmax-pacific-hd/8473">Actionmax Pacific HD</channel>
     <channel lang="en" xmltv_id="AMCPlus.us" site_id="amc/35317">AMC+</channel>
     <channel lang="en" xmltv_id="AMCWest.us" site_id="amc-pacific-feed/1262">AMC West</channel>
+    <channel lang="en" xmltv_id="AnimalPlanetWest.us" site_id="animal-planet-us-hd-west/11524">Animal Planet West</channel>
     <channel lang="en" xmltv_id="AntennaTV.us" site_id="antenna-network/16820">Antenna - Network</channel>
     <channel lang="en" xmltv_id="BallySportsArizona.us" site_id="bally-sports-arizona/1118">Bally Sports Arizona</channel>
     <channel lang="en" xmltv_id="BallySportsArizonaExtra.us" site_id="bally-sports-arizona-extra/31547">Bally Sports Arizona Extra</channel>
@@ -30,6 +31,7 @@
     <channel lang="en" xmltv_id="BallySportsWisconsin.us" site_id="stations/bally-sports-wisconsin/6760">Bally Sports Wisconsin</channel>
     <channel lang="en" xmltv_id="BETWest.us" site_id="bet-pacific-feed/2682">BET West</channel>
     <channel lang="en" xmltv_id="BravoWest.us" site_id="bravo-usa-pacific-feed/1320">Bravo West</channel>
+    <channel lang="en" xmltv_id="CarsTV.us" site_id="carstv-hd/18803">Cars.TV</channel>
     <channel lang="en" xmltv_id="CBATDT.ca" site_id="cbc-cbat-fredericton-nb-hd/3942">CBC (CBAT) Fredericton, NB HD</channel>
     <channel lang="en" xmltv_id="CBHTDT.ca" site_id="cbc-cbht-halifax-ns/121">CBC (CBHT) Halifax, NS</channel>
     <channel lang="en" xmltv_id="CBLTDT.ca" site_id="cbc-cblt-toronto-on/34">CBC (CBLT) Toronto, ON</channel>
@@ -41,6 +43,10 @@
     <channel lang="en" xmltv_id="CBWTDT.ca" site_id="cbc-cbwt-winnipeg-mb/110">CBC (CBWT) Winnipeg, MB</channel>
     <channel lang="en" xmltv_id="CBXTDT.ca" site_id="cbc-cbxt-edmonton-ab/146">CBC (CBXT) Edmonton, AB</channel>
     <channel lang="en" xmltv_id="ComedyCentralWest.us" site_id="comedy-central-us-pacific-feed/1212">Comedy Central West</channel>
+    <channel lang="en" xmltv_id="Crave1.ca" site_id="crave1-east/72">Crave 1</channel>
+    <channel lang="en" xmltv_id="Crave2.ca" site_id="crave2-east/86">Crave 2</channel>
+    <channel lang="en" xmltv_id="Crave3.ca" site_id="crave3-east/85">Crave 3</channel>
+    <channel lang="en" xmltv_id="Crave4.ca" site_id="crave4/320">Crave 4</channel>
     <channel lang="en" xmltv_id="DiscoveryChannelWest.us" site_id="discovery-channel-us-pacific-feed/1206">Discovery Channel (US) Pacific Feed</channel>
     <channel lang="en" xmltv_id="DisneyXDWest.us" site_id="disney-xd-usa-pacific-feed/1208">Disney XD USA Pacific Feed</channel>
     <channel lang="en" xmltv_id="Epix2East.us" site_id="epix2-east/11485">Epix 2 East</channel>
@@ -50,10 +56,15 @@
     <channel lang="en" xmltv_id="EpixWest.us" site_id="epix-pacific/13443">EPIX Pacific</channel>
     <channel lang="en" xmltv_id="EWest.us" site_id="e-entertainment-usa-pacific-feed/1213">E! West</channel>
     <channel lang="en" xmltv_id="FlixWest.us" site_id="flix-pacific/3387">Flix West</channel>
+    <channel lang="en" xmltv_id="FoodNetworkWest.us" site_id="food-network-usa-pacific-feed/2032">Food Network West</channel>
+    <channel lang="en" xmltv_id="FreeformEast.us" site_id="freeform-east-feed/1011">Freeform</channel>
+    <channel lang="en" xmltv_id="FreeformWest.us" site_id="freeform-pacific-feed/1197">Freeform West</channel>
     <channel lang="en" xmltv_id="FXWest.us" site_id="fx-networks-west-coast/1449">FX West</channel>
     <channel lang="en" xmltv_id="FXXWest.us" site_id="fxx-usa-pacific/19080">FXX West</channel>
     <channel lang="en" xmltv_id="KFJXDT1.us" site_id="fox-kfjx-pittsburg-ks/2426">FOX (KFJX) Pittsburg, KS</channel>
     <channel lang="en" xmltv_id="KFNBDT1.us" site_id="fox-kfnb-casper-wy/9916">FOX (KFNB) Casper, WY</channel>
+    <channel lang="en" xmltv_id="HBOCanada1.ca" site_id="hbo1/84">HBO Canada 1</channel>
+    <channel lang="en" xmltv_id="HBOCanada2.ca" site_id="hbo-2-eastern-feed-hd/6313">HBO Canada 2</channel>
     <channel lang="en" xmltv_id="HBOComedyWest.us" site_id="hbo-comedy-pacific/2593">HBO Comedy West</channel>
     <channel lang="en" xmltv_id="HBOSignatureWest.us" site_id="hbo-signature-hbo-3-pacific/2580">HBO Signature West</channel>
     <channel lang="en" xmltv_id="HBOZoneWest.us" site_id="hbo-zone-pacific/2594">HBO Zone West</channel>
@@ -108,6 +119,7 @@
     <channel lang="en" xmltv_id="ShowtimeNextWest.us" site_id="showtime-next-pacific/2597">Showtime Next West</channel>
     <channel lang="en" xmltv_id="ShowtimeShowcaseEast.us" site_id="showtime-showcase-eastern/2271">Showtime Showcase East</channel>    
     <channel lang="en" xmltv_id="ShowtimeShowcaseWest.us" site_id="showtime-showcase-pacific/2585">Showtime Showcase West</channel>    
+    <channel lang="en" xmltv_id="ShowtimeWomenEast.us" site_id="showtime-women-eastern/2273">Showtime Women East</channel>
     <channel lang="en" xmltv_id="ShowtimeWomenWest.us" site_id="showtime-women-pacific/2598">Showtime Women West</channel>
     <channel lang="en" xmltv_id="ShoxBetWest.us" site_id="shoxbet-hd-pacific/7568">SHOXBET HD Pacific</channel>
     <channel lang="en" xmltv_id="SportsGrid.us" site_id="sportsgrid/35189">SportsGrid</channel>
