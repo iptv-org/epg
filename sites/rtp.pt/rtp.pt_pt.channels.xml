@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site site="rtp.pt">
   <channels>
-    <channel lang="pt" xmltv_id="RTP1.pt" site_id="1">RTP1</channel>
-    <channel lang="pt" xmltv_id="RTP2.pt" site_id="8">RTP2</channel>
-    <channel lang="pt" xmltv_id="RTP3.pt" site_id="7">RTP3</channel>
-    <channel lang="pt" xmltv_id="RTPMemoria.pt" site_id="9">RTP Memória</channel>
-    <channel lang="pt" xmltv_id="RTPAfrica.pt" site_id="6">RTP África</channel>
-    <channel lang="pt" xmltv_id="RTPInternacional.pt" site_id="5">RTP Internacional</channel>
-    <channel lang="pt" xmltv_id="RTPAcores.pt" site_id="3">RTP Açores</channel>
-    <channel lang="pt" xmltv_id="RTPMadeira.pt" site_id="4">RTP Madeira</channel>
+    <channel lang="pt" xmltv_id="RTP1.pt" site_id="lis#1">RTP1</channel>
+    <channel lang="pt" xmltv_id="RTP2.pt" site_id="lis#8">RTP2</channel>
+    <channel lang="pt" xmltv_id="RTP3.pt" site_id="lis#7">RTP3</channel>
+    <channel lang="pt" xmltv_id="RTPMemoria.pt" site_id="lis#9">RTP Memória</channel>
+    <channel lang="pt" xmltv_id="RTPAfrica.pt" site_id="lis#6">RTP África</channel>
+    <channel lang="pt" xmltv_id="RTPInternacional.pt" site_id="lis#5">RTP Internacional</channel>
+    <channel lang="pt" xmltv_id="RTPiAmerica.pt" site_id="rja#5">RTP Internacional América</channel>
+    <channel lang="pt" xmltv_id="RTPiAsia.pt" site_id="per#5">RTP Internacional Ásia</channel>
+    <channel lang="pt" xmltv_id="RTPAcores.pt" site_id="lis#3">RTP Açores</channel>
+    <channel lang="pt" xmltv_id="RTPMadeira.pt" site_id="lis#4">RTP Madeira</channel>
   </channels>
 </site>

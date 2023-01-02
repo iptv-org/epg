@@ -9,19 +9,24 @@ dayjs.extend(utc)
 dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
+const tz = {
+    lis: 'Europe/Lisbon',
+    per: 'Asia/Macau',
+    rja: 'America/Sao_Paulo'
+}
+
 module.exports = {
   site: 'rtp.pt',
   url({ channel, date }) {
-    return `https://www.rtp.pt/EPG/json/rtp-channels-page/list-grid/tv/${
-      channel.site_id
-    }/${date.format('D-M-YYYY')}`
+    let [region, channelCode] = channel.site_id.split('#')
+    return `https://www.rtp.pt/EPG/json/rtp-channels-page/list-grid/tv/${channelCode}/${date.format('D-M-YYYY')}/${region}`
   },
-  parser({ content }) {
+  parser({ content, channel }) {
     let programs = []
     const items = parseItems(content)
     items.forEach(item => {
       const prev = programs[programs.length - 1]
-      let start = parseStart(item)
+      let start = parseStart(item, channel)
       if (!start) return
       if (prev) {
         prev.stop = start
@@ -56,12 +61,13 @@ module.exports = {
 
 function parseIcon(item) {
   const last = item.image.pop()
-
-  return last?.src
+  if(!last) return null
+  return last.src
 }
 
-function parseStart(item) {
-  return dayjs.tz(item.date, 'YYYY-MM-DD HH:mm:ss', 'Europe/Lisbon')
+function parseStart(item, channel) {
+  let [region] = channel.site_id.split('#')
+  return dayjs.tz(item.date, 'YYYY-MM-DD HH:mm:ss', tz[region])
 }
 
 function parseItems(content) {
