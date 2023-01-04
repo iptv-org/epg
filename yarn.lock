@@ -1631,10 +1631,10 @@
   "resolved" "https://registry.npmjs.org/entities/-/entities-4.4.0.tgz"
   "version" "4.4.0"
 
-"epg-grabber@^0.29.4":
-  "integrity" "sha512-GNKP8Q01HV3DXq3MEFQvFUlr3ejNsw8QSgGWvQ/lQTdgBXNJMEblz241wac9BNnte/fb+u9ExIyiskpds/dFug=="
-  "resolved" "https://registry.npmjs.org/epg-grabber/-/epg-grabber-0.29.4.tgz"
-  "version" "0.29.4"
+"epg-grabber@^0.29.5":
+  "integrity" "sha512-HJvziMNM7YDcJnfkIxWm5ulg76T5eH44mxsLL579dfold//QYZgaCKWMQKPNoGVuCW5SMIY7g90d08VC2rZe6w=="
+  "resolved" "https://registry.npmjs.org/epg-grabber/-/epg-grabber-0.29.5.tgz"
+  "version" "0.29.5"
   dependencies:
     "axios" "^0.21.1"
     "axios-cache-interceptor" "^0.10.3"
@@ -2881,9 +2881,9 @@
   "version" "1.0.1"
 
 "json5@^2.2.1":
-  "integrity" "sha512-1hqLFMSrGHRHxav9q9gNjJ5EXznIxGVO09xQRrwplcS8qs28pZ8s8hupZAmqDwZUmVZ2Qb2jnyPOWcDH8m8dlA=="
-  "resolved" "https://registry.npmjs.org/json5/-/json5-2.2.1.tgz"
-  "version" "2.2.1"
+  "integrity" "sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg=="
+  "resolved" "https://registry.npmjs.org/json5/-/json5-2.2.3.tgz"
+  "version" "2.2.3"
 
 "jsonfile@^6.0.1":
   "integrity" "sha512-5dgndWOriYSm5cnYaJNhalLNDKOqFwyDB/rr1E9ZsGciGvKPs8R2xYGCacuf3z6K1YKDz182fd+fY3cn3pMqXQ=="
