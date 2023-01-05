@@ -9,7 +9,7 @@ To load a program guide, all you need to do is copy the link to one or more of t
 <!-- prettier-ignore -->
 <table>
   <thead>
-    <tr><th align="left">Country&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><th align="left">Channels</th><th align="left">EPG</th></tr>
+    <tr><th align="left">Country</th><th align="left">Channels</th><th align="left">EPG</th></tr>
   </thead>
   <tbody>
     <tr><td valign="top" rowspan="2">🇨🇦&nbsp;Canada</td><td align="right" nowrap>2</td><td nowrap><code>https://iptv-org.github.io/epg/guides/ca_en.xml</code></td></tr>
