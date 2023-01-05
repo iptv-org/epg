@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/abc.net.au/abc.net.au.config.js --channels=sites/abc.net.au/abc.net.au_au.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/abc.net.au/abc.net.au.config.js --channels=sites/abc.net.au/abc.net.au.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./abc.net.au.config.js')
 const dayjs = require('dayjs')

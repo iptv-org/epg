@@ -1,5 +1,5 @@
-// npm run channels:parse -- --config=./sites/musor.tv/musor.tv.config.js --output=./sites/musor.tv/musor.tv_hu.channels.xml
-// npx epg-grabber --config=sites/musor.tv/musor.tv.config.js --channels=sites/musor.tv/musor.tv_hu.channels.xml --output=guide.xml --days=2
+// npm run channels:parse -- --config=./sites/musor.tv/musor.tv.config.js --output=./sites/musor.tv/musor.tv.channels.xml
+// npx epg-grabber --config=sites/musor.tv/musor.tv.config.js --channels=sites/musor.tv/musor.tv.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./musor.tv.config.js')
 const fs = require('fs')

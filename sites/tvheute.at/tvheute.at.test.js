@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/tvheute.at/tvheute.at.config.js --channels=sites/tvheute.at/tvheute.at_at.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/tvheute.at/tvheute.at.config.js --channels=sites/tvheute.at/tvheute.at.channels.xml --output=guide.xml --days=2
 
 const { parser, url, request } = require('./tvheute.at.config.js')
 const dayjs = require('dayjs')

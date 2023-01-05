@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/tvcubana.icrt.cu/tvcubana.icrt.cu.config.js --channels=sites/tvcubana.icrt.cu/tvcubana.icrt.cu_cu.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/tvcubana.icrt.cu/tvcubana.icrt.cu.config.js --channels=sites/tvcubana.icrt.cu/tvcubana.icrt.cu.channels.xml --output=guide.xml --days=2
 
 const { parser, url, request } = require('./tvcubana.icrt.cu.config.js')
 const dayjs = require('dayjs')

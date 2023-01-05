@@ -1,5 +1,5 @@
-// npx epg-grabber --config=sites/myafn.dodmedia.osd.mil/myafn.dodmedia.osd.mil.config.js --channels=sites/myafn.dodmedia.osd.mil/myafn.dodmedia.osd.mil_us.channels.xml --output=guide.xml --days=2
-// npm run channels:parse -- --config=./sites/myafn.dodmedia.osd.mil/myafn.dodmedia.osd.mil.config.js --output=./sites/myafn.dodmedia.osd.mil/myafn.dodmedia.osd.mil_us.channels.xml
+// npx epg-grabber --config=sites/myafn.dodmedia.osd.mil/myafn.dodmedia.osd.mil.config.js --channels=sites/myafn.dodmedia.osd.mil/myafn.dodmedia.osd.mil.channels.xml --output=guide.xml --days=2
+// npm run channels:parse -- --config=./sites/myafn.dodmedia.osd.mil/myafn.dodmedia.osd.mil.config.js --output=./sites/myafn.dodmedia.osd.mil/myafn.dodmedia.osd.mil.channels.xml
 
 const { parser, url } = require('./myafn.dodmedia.osd.mil.config.js')
 const dayjs = require('dayjs')

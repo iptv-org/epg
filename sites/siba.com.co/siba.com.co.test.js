@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/siba.com.co/siba.com.co.config.js --channels=sites/siba.com.co/siba.com.co_co.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/siba.com.co/siba.com.co.config.js --channels=sites/siba.com.co/siba.com.co.channels.xml --output=guide.xml --days=2
 
 const { parser, url, request } = require('./siba.com.co.config.js')
 const dayjs = require('dayjs')

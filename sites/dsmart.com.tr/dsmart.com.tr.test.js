@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/dsmart.com.tr/dsmart.com.tr.config.js --channels=sites/dsmart.com.tr/dsmart.com.tr_tr.channels.xml --output=guide.xml --timeout=30000 --days=2
+// npx epg-grabber --config=sites/dsmart.com.tr/dsmart.com.tr.config.js --channels=sites/dsmart.com.tr/dsmart.com.tr.channels.xml --output=guide.xml --timeout=30000 --days=2
 
 const { parser, url } = require('./dsmart.com.tr.config.js')
 const dayjs = require('dayjs')

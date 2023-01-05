@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/chaines-tv.orange.fr/chaines-tv.orange.fr.config.js --channels=sites/chaines-tv.orange.fr/chaines-tv.orange.fr_fr.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/chaines-tv.orange.fr/chaines-tv.orange.fr.config.js --channels=sites/chaines-tv.orange.fr/chaines-tv.orange.fr.channels.xml --output=guide.xml --days=2
 
 const { parser, url, request } = require('./chaines-tv.orange.fr.config.js')
 const dayjs = require('dayjs')

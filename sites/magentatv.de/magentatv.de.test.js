@@ -1,5 +1,5 @@
-// npm run channels:parse -- --config=./sites/magentatv.de/magentatv.de.config.js --output=./sites/magentatv.de/magentatv.de_de.channels.xml
-// npx epg-grabber --config=sites/magentatv.de/magentatv.de.config.js --channels=sites/magentatv.de/magentatv.de_de.channels.xml --output=guide.xml --days=2
+// npm run channels:parse -- --config=./sites/magentatv.de/magentatv.de.config.js --output=./sites/magentatv.de/magentatv.de.channels.xml
+// npx epg-grabber --config=sites/magentatv.de/magentatv.de.config.js --channels=sites/magentatv.de/magentatv.de.channels.xml --output=guide.xml --days=2
 
 const { parser, url, request } = require('./magentatv.de.config.js')
 const dayjs = require('dayjs')

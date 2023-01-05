@@ -15,11 +15,10 @@ module.exports = {
       Referer: 'https://www.osn.com'
     },
     data({ channel, date }) {
-      const [selectedCountry, channelCode] = channel.site_id.split('#')
       return {
         newDate: date.format('MM/DD/YYYY'),
-        selectedCountry,
-        channelCode,
+        selectedCountry: 'AE',
+        channelCode: channel.site_id,
         isMobile: false,
         hoursForMobile: 0
       }
@@ -59,28 +58,8 @@ function parseDuration(item) {
 
 function parseStart(item, channel) {
   const time = item.StartDateTime
-  const [selectedCountry] = channel.site_id.split('#')
-  const tz = {
-    AE: 'Asia/Dubai',
-    SA: 'Asia/Riyadh',
-    EG: 'Africa/Cairo',
-    KW: 'Asia/Kuwait',
-    QA: 'Asia/Qatar',
-    BH: 'Asia/Bahrain',
-    OM: 'Asia/Muscat',
-    JO: 'Asia/Amman',
-    LB: 'Asia/Beirut',
-    IQ: 'Asia/Baghdad',
-    AG: 'Africa/Algiers',
-    LY: 'Africa/Tripoli',
-    MA: 'Africa/Casablanca',
-    PS: 'Asia/Gaza',
-    CH: 'Africa/Ndjamena',
-    YE: 'Asia/Aden',
-    MR: 'Africa/Nouakchott'
-  }
 
-  return dayjs.tz(time, 'DD MMM YYYY, HH:mm', tz[selectedCountry])
+  return dayjs.tz(time, 'DD MMM YYYY, HH:mm', 'Asia/Dubai')
 }
 
 function parseItems(content) {

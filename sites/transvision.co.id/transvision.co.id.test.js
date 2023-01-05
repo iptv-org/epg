@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/transvision.co.id/transvision.co.id.config.js --channels=sites/transvision.co.id/transvision.co.id_id.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/transvision.co.id/transvision.co.id.config.js --channels=sites/transvision.co.id/transvision.co.id.channels.xml --output=guide.xml --days=2
 
 const { parser, url, request } = require('./transvision.co.id.config.js')
 const dayjs = require('dayjs')

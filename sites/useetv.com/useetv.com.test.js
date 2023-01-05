@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/useetv.com/useetv.com.config.js --channels=sites/useetv.com/useetv.com_id.channels.xml --output=guide.xml --timeout=30000 --days=2
+// npx epg-grabber --config=sites/useetv.com/useetv.com.config.js --channels=sites/useetv.com/useetv.com.channels.xml --output=guide.xml --timeout=30000 --days=2
 
 const { parser, url, request } = require('./useetv.com.config.js')
 const dayjs = require('dayjs')

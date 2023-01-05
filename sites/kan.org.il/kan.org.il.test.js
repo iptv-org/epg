@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/kan.org.il/kan.org.il.config.js --channels=sites/kan.org.il/kan.org.il_il.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/kan.org.il/kan.org.il.config.js --channels=sites/kan.org.il/kan.org.il.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./kan.org.il.config.js')
 const dayjs = require('dayjs')

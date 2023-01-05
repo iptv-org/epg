@@ -1,5 +1,5 @@
-// npm run channels:parse -- --config=./sites/clickthecity.com/clickthecity.com.config.js --output=./sites/clickthecity.com/clickthecity.com_ph.channels.xml
-// npx epg-grabber --config=sites/clickthecity.com/clickthecity.com.config.js --channels=sites/clickthecity.com/clickthecity.com_ph.channels.xml --output=guide.xml --days=2
+// npm run channels:parse -- --config=./sites/clickthecity.com/clickthecity.com.config.js --output=./sites/clickthecity.com/clickthecity.com.channels.xml
+// npx epg-grabber --config=sites/clickthecity.com/clickthecity.com.config.js --channels=sites/clickthecity.com/clickthecity.com.channels.xml --output=guide.xml --days=2
 
 const { parser, url, request } = require('./clickthecity.com.config.js')
 const dayjs = require('dayjs')

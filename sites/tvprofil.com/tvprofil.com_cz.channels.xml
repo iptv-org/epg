@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site site="tvprofil.com">
   <channels>
-    <channel lang="hr" xmltv_id="NovaCinema.cz" site_id="tvprogram#nova-plus-cinema">Nova Cinema</channel>
-    <channel lang="hr" xmltv_id="RTLCrimeCroatia.hr" site_id="tvprogram#rtl-crime">RTL Crime Hrvatska</channel>
-    <channel lang="hr" xmltv_id="RTLPassionCroatia.hr" site_id="tvprogram#rtl-passion">RTL Passion Hrvatska</channel>
-    <channel lang="hr" xmltv_id="MiniTV.hr" site_id="tvprogram#minitv">Mini TV</channel>
-    <channel lang="hr" xmltv_id="NovaTV.hr" site_id="tvprogram#tv-nova">Nova TV</channel>
-    <channel lang="hr" xmltv_id="NovaWorld.hr" site_id="tvprogram#nova-world">Nova World</channel>
-    <channel lang="hr" xmltv_id="PickboxTV.hr" site_id="tvprogram#pickbox-tv">Pickbox TV</channel>
-    <channel lang="hr" xmltv_id="Sitel.mk" site_id="tvprogram#sitel">Sitel TV</channel>
     <channel lang="hr" xmltv_id="ArenaFight.rs" site_id="tvprogram#arena-fight">Arena Fight</channel>
     <channel lang="hr" xmltv_id="ArenaSport10Croatia.hr" site_id="tvprogram#arena-sport-10-hr">Arena Sport 10 Hrvatska</channel>
     <channel lang="hr" xmltv_id="ArenaSport2Croatia.hr" site_id="tvprogram#tv-arena-sport-2-hr">Arena Sport 2 Hrvatska</channel>
@@ -19,14 +11,22 @@
     <channel lang="hr" xmltv_id="ArenaSport7Croatia.hr" site_id="tvprogram#arena-sport-7-hr">Arena Sport 7 Hrvatska</channel>
     <channel lang="hr" xmltv_id="ArenaSport8Croatia.hr" site_id="tvprogram#arena-sport-8-hr">Arena Sport 8 Hrvatska</channel>
     <channel lang="hr" xmltv_id="ArenaSport9Croatia.hr" site_id="tvprogram#arena-sport-9-hr">Arena Sport 9 Hrvatska</channel>
-    <channel lang="hr" xmltv_id="RTS3.rs" site_id="tvprogram#rts-digital">RTS 3</channel>
-    <channel lang="hr" xmltv_id="RTV2.rs" site_id="tvprogram#vojvodina-2">RTV 2</channel>
+    <channel lang="hr" xmltv_id="Gold.uk" site_id="tvprogram#gold-tv">Gold UK</channel>
     <channel lang="hr" xmltv_id="GolicaTV.si" site_id="tvprogram#golica-tv">Golica TV</channel>
     <channel lang="hr" xmltv_id="KanalA.si" site_id="tvprogram#kanal-a">Kanal A</channel>
+    <channel lang="hr" xmltv_id="MiniTV.hr" site_id="tvprogram#minitv">Mini TV</channel>
+    <channel lang="hr" xmltv_id="NovaCinema.cz" site_id="tvprogram#nova-plus-cinema">Nova Cinema</channel>
+    <channel lang="hr" xmltv_id="NovaTV.hr" site_id="tvprogram#tv-nova">Nova TV</channel>
+    <channel lang="hr" xmltv_id="NovaWorld.hr" site_id="tvprogram#nova-world">Nova World</channel>
+    <channel lang="hr" xmltv_id="PickboxTV.hr" site_id="tvprogram#pickbox-tv">Pickbox TV</channel>
     <channel lang="hr" xmltv_id="PlanetTV.si" site_id="tvprogram#planettv">Planet TV</channel>
     <channel lang="hr" xmltv_id="PopTV.si" site_id="tvprogram#pop-tv">Pop TV</channel>
+    <channel lang="hr" xmltv_id="RTLCrimeCroatia.hr" site_id="tvprogram#rtl-crime">RTL Crime Hrvatska</channel>
+    <channel lang="hr" xmltv_id="RTLPassionCroatia.hr" site_id="tvprogram#rtl-passion">RTL Passion Hrvatska</channel>
+    <channel lang="hr" xmltv_id="RTS3.rs" site_id="tvprogram#rts-digital">RTS 3</channel>
+    <channel lang="hr" xmltv_id="RTV2.rs" site_id="tvprogram#vojvodina-2">RTV 2</channel>
+    <channel lang="hr" xmltv_id="Sitel.mk" site_id="tvprogram#sitel">Sitel TV</channel>
     <channel lang="hr" xmltv_id="TV3Slovenia.si" site_id="tvprogram#tv3-medias">TV 3</channel>
     <channel lang="hr" xmltv_id="TVSLO1.si" site_id="tvprogram#slavonska-tv">TV Slovenija 1</channel>
-    <channel lang="hr" xmltv_id="Gold.uk" site_id="tvprogram#gold-tv">Gold UK</channel>
   </channels>
 </site>

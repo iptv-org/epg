@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site site="foxtel.com.au">
+  <channels>
+    <!-- <channel lang="en" xmltv_id="" site_id="Channel-9-Sydney/NIN">Channel 9 Sydney</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="FOX-One/F1S">FOX One</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="ABC-NSW/ABC">ABC NSW</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="SBS-Sydney/SBS">SBS Sydney</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="UKTV/UKT">UKTV</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="LifeStyle/LST">LifeStyle</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Channel-7-Sydney/ATN">Channel 7 Sydney</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="FOX8/FOX">FOX8</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="10-Sydney/TEN">10 Sydney</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="FOX-ARENA/ARN">FOX ARENA</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="FOX-SHOWCASE/SHC">FOX SHOWCASE</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="FOX-Crime/IOI">FOX Crime</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="FOX-Funny/FFS">FOX Funny</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="FOX-Comedy/HIT">FOX Comedy</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="FOX-Sci-Fi/FIS">FOX Sci Fi</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="FOX-Classics/FKC">FOX Classics</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="FOX-Sleuth/FSU">FOX Sleuth</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="BBC-First/BSF">BBC First</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Universal-TV/HAL">Universal TV</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="E-Entertainment/ETV">E! Entertainment</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="MTV/MTV">MTV</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="TLC/DTA">TLC</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="LifeStyle-Food/FOD">LifeStyle Food</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="LifeStyle-Home/LHO">LifeStyle Home</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="FOX-DOCOS/SAR">FOX DOCOS</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="HISTORY/HST">HISTORY</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="AE/AES">A&amp;E</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Discovery-Channel/DIS">Discovery Channel</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="BBC-Earth/BBK">BBC Earth</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="CRIMEINVESTIGATION/CIN">CRIME+INVESTIGATION</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Investigation-Discovery/DID">Investigation Discovery</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="National-Geographic/NGE">National Geographic</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Nat-Geo-Wild/NGW">Nat Geo Wild</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Animal-Planet/ANI">Animal Planet</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Discovery-Turbo/DIT">Discovery Turbo</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="BoxSets/BXS">BoxSets</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="ABC-KidsABC-TV-Plus/A2N">ABC Kids/ABC TV Plus</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="7TWO-Sydney/S72">7TWO Sydney</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="7mate-Sydney/SSD">7mate Sydney</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="7Flix-NSW/FLN">7Flix NSW</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="9Go-Sydney/G9S">9Go! Sydney</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="9Life-Sydney/LS9">9Life Sydney</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="9Gem-Sydney/NSD">9Gem Sydney</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="10-BOLD-Sydney/TED">10 BOLD Sydney</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="10-Peach-Sydney/TDS">10 Peach Sydney</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="SBS-Viceland/SBN">SBS Viceland</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="SBS-Food-NSW/SBF">SBS Food NSW</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="NITV/NNS">NITV</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Aurora/AUR">Aurora</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="TVSN/TVS">TVSN</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="EXPO/EXP">EXPO</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="GOOD/ACC">GOOD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="TBN-Inspire/HLT">TBN Inspire</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Daystar/DAS">Daystar</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="SonLife/SLT">SonLife</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="FOX-One-2/F12">FOX One +2</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="ABC-TV-HD/AHS">ABC TV HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="SBS-HD/BSD">SBS HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="UKTV2/UK2">UKTV+2</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="LifeStyle-2/LS2">LifeStyle +2</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="7HD-Sydney/DSS">7HD Sydney</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="FOX82/FO2">FOX8+2</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="9HD-Sydney/HS9">9HD Sydney</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="10-HD-Sydney/THE">10 HD Sydney</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="FOX-ARENA-2/AR2">FOX ARENA +2</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="FOX-SHOWCASE-2/SW2">FOX SHOWCASE +2</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="FOX-Crime-2/IO2">FOX Crime +2</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="FOX-Funny-2/FF2">FOX Funny +2</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="FOX-Comedy-2/HI2">FOX Comedy +2</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="FOX-Sci-Fi-2/FI2">FOX Sci Fi +2</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="FOX-Classics2/CL2">FOX Classics+2</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="FOX-Sleuth-2/FS2">FOX Sleuth +2</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="E2/ET2">E!+2</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="TLC-2/DT2">TLC +2</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="LifeStyle-Food-2/LF2">LifeStyle Food +2</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="AE-2/E2A">A&amp;E +2</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Discovery-2/DS2">Discovery +2</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Discovery-Turbo-2/DI2">Discovery Turbo +2</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="7Mate-HD-Sydney/MAS">7Mate HD Sydney</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="9Gem-HD-Sydney/G02">9Gem HD Sydney</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="SBS-Viceland-HD/SNN">SBS Viceland HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="FOX-One-HD/F1H">FOX One HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="LifeStyle-HD/LSD">LifeStyle HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="FOX8-HD/F8D">FOX8 HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="FOX-ARENA-HD/ARD">FOX ARENA HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="FOX-SHOWCASE-HD/SCD">FOX SHOWCASE HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="FOX-Crime-HD/FCH">FOX Crime HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="FOX-Funny-HD/FFH">FOX Funny HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="FOX-Sci-Fi-HD/FSI">FOX Sci Fi HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="FOX-Sleuth-HD/FSL">FOX Sleuth HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="BBC-First-HD/BFF">BBC First HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Universal-HD/UND">Universal HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="FOX-DOCOS-HD/HAR">FOX DOCOS HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="HISTORY-HD/HSD">HISTORY HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="AE-HD/AED">A&amp;E HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Discovery-HD/DHD">Discovery HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="BBC-Earth-HD/BKH">BBC Earth HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Nat-Geo-HD/NGD">Nat Geo HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Nat-Geo-Wild-HD/NWD">Nat Geo Wild HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="BoxSet-HD/BXD">BoxSet HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Foxtel-Movies-Ultra-HD/K02">Foxtel Movies Ultra HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Foxtel-Movies-Premiere/SHO">Foxtel Movies Premiere</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Foxtel-Movies-Hits/MVS">Foxtel Movies Hits</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Foxtel-Movies-Family/SHF">Foxtel Movies Family</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Foxtel-Movies-Kids/MO9">Foxtel Movies Kids</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Foxtel-Movies-Action/SHA">Foxtel Movies Action</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Foxtel-Movies-Comedy/SHY">Foxtel Movies Comedy</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Foxtel-Movies-Thriller/SHH">Foxtel Movies Thriller</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Foxtel-Movies-Romance/SHD">Foxtel Movies Romance</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Foxtel-Movies-Drama/MO6">Foxtel Movies Drama</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Foxtel-Movies-Greats/GRR">Foxtel Movies Greats</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Lifetime-Movie-Network/LMS">Lifetime Movie Network</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Foxtel-Movies-Premiere-2/SH2">Foxtel Movies Premiere +2</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Foxtel-Movies-Action-2/MTA">Foxtel Movies Action +2</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Foxtel-Movies-Family-2/MTF">Foxtel Movies Family +2</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="SBS-World-Movies-HD/SB4">SBS World Movies HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="SBS-World-Movies-SD/S4B">SBS World Movies SD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Foxtel-Movies-Premiere-HD/SOD">Foxtel Movies Premiere HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Foxtel-Movies-Hits-HD/MVD">Foxtel Movies Hits HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Foxtel-Movies-Family-HD/MO7">Foxtel Movies Family HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Foxtel-Movies-Kids-HD/MO8">Foxtel Movies Kids HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Foxtel-Movies-Action-HD/STN">Foxtel Movies Action HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Foxtel-Movies-Comedy-HD/MO1">Foxtel Movies Comedy HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Foxtel-Movies-Thriller-HD/MO3">Foxtel Movies Thriller HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Foxtel-Movies-Romance-HD/MO2">Foxtel Movies Romance HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Foxtel-Movies-Drama-HD/MO5">Foxtel Movies Drama HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Foxtel-Movies-Greats-HD/GRE">Foxtel Movies Greats HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Lifetime-Movie-Network-HD/LMH">Lifetime Movie Network HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Fox-Sports-News/FSN">Fox Sports News</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="FOX-CRICKET/FS1">FOX CRICKET</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="FOX-LEAGUE/SP2">FOX LEAGUE</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="FOX-SPORTS-503/FS3">FOX SPORTS 503</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Fox-Footy/FAF">Fox Footy</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="FOX-SPORTS-505/FSP">FOX SPORTS 505</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="FOX-SPORTS-506/SPS">FOX SPORTS 506</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="ESPN/ESP">ESPN</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="ESPN2/ES2">ESPN2</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="beIN-SPORTS-1/B1E">beIN SPORTS 1</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="beIN-SPORTS-2/B2E">beIN SPORTS 2</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="beIN-SPORTS-3/B3E">beIN SPORTS 3</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="SKY-Racing/SRA">SKY Racing</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="SKY-Racing-2/SR2">SKY Racing 2</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="SKY-Tbred-Cent/SRW">SKY Tbred Cent</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="RACINGCOM/RTV">RACING.COM</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Fox-Sports-News-HD/FSD">Fox Sports News HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="FOX-CRICKET-HD/F1D">FOX CRICKET HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="FOX-LEAGUE-HD/F2D">FOX LEAGUE HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="FOX-SPORTS-503-HD/FHD">FOX SPORTS 503 HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Fox-Footy-HD/FAD">Fox Footy HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="FOX-SPORTS-505-HD/F4D">FOX SPORTS 505 HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="FOX-SPORTS-506-HD/SPE">FOX SPORTS 506 HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="FOX-SPORTS-MORE-HD/FSM">FOX SPORTS MORE HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="ESPN-HD/E1D">ESPN HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="ESPN2-HD/EHD">ESPN2 HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="beIN-SPORTS-1-HD/BE1">beIN SPORTS 1 HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="beIN-SPORTS-2-HD/BE2">beIN SPORTS 2 HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="beIN-SPORTS-3-HD/BE3">beIN SPORTS 3 HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="SKY-Tbred-Cent-HD/SRH">SKY Tbred Cent HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="SKY-News/SKY">SKY News</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="SKY-Weather/FXW">SKY Weather</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Sky-News-Extra/ASP">Sky News Extra</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Sky-News-UK/SUK">Sky News UK</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="BBC-World-News/BBC">BBC World News</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="FOX-News/FNC">FOX News</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="CNN/CNN">CNN</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="CNBC/CNB">CNBC</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Bloomberg-Television/BLM">Bloomberg Television</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="ABC-News/ASD">ABC News</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="SBS-Worldwatch/SWW">SBS Worldwatch</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Al-Jazeera/AJE">Al Jazeera</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="CGTN/CCC">CGTN</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="CGTNDocumentary/CCD">CGTN-Documentary</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="NHK-WorldJapan/NHK">NHK World-Japan</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Sky-News-HD/NHD">Sky News HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Sky-News-UK-HD/SUH">Sky News UK HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Fox-News-HD/FNH">Fox News HD</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Looney-Tunes/NPO">Looney Tunes</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Nickelodeon/NIC">Nickelodeon</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Nick-Jr/NJR">Nick Jr.</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Cbeebies/CBE">Cbeebies</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Cartoon-Network/CNE">Cartoon Network</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Boomerang/BOO">Boomerang</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="DreamWorks/DRM">DreamWorks</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="PBS-KIDS/PBS">PBS KIDS</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="ABC-ME-Sydney/SA3">ABC ME Sydney</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="MTV-Hits/TMF">MTV Hits</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Nick-Music/NMU">Nick Music</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Club-MTV/VH1">Club MTV</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="MTV-Classic/MTC">MTV Classic</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="CMT/CMT">CMT</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="Antenna-Pacific/ANT">Antenna Pacific</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="RAI-ITALIA/RAI">RAI ITALIA</channel> -->
+  </channels>
+</site>

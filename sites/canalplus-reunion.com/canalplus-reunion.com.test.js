@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/canalplus-reunion.com/canalplus-reunion.com.config.js --channels=sites/canalplus-reunion.com/canalplus-reunion.com_km.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/canalplus-reunion.com/canalplus-reunion.com.config.js --channels=sites/canalplus-reunion.com/canalplus-reunion.com.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./canalplus-reunion.com.config.js')
 const axios = require('axios')

@@ -1,5 +1,5 @@
-// npm run channels:parse -- --config=./sites/telenet.tv/telenet.tv.config.js --output=./sites/telenet.tv/telenet.tv_be.channels.xml
-// npx epg-grabber --config=sites/telenet.tv/telenet.tv.config.js --channels=sites/telenet.tv/telenet.tv_be.channels.xml --output=guide.xml --days=2
+// npm run channels:parse -- --config=./sites/telenet.tv/telenet.tv.config.js --output=./sites/telenet.tv/telenet.tv.channels.xml
+// npx epg-grabber --config=sites/telenet.tv/telenet.tv.config.js --channels=sites/telenet.tv/telenet.tv.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./telenet.tv.config.js')
 const fs = require('fs')

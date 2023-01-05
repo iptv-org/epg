@@ -1,5 +1,5 @@
-// npm run channels:parse -- --config=./sites/tv.yettel.hu/tv.yettel.hu.config.js --output=./sites/tv.yettel.hu/tv.yettel.hu_hu.channels.xml
-// npx epg-grabber --config=sites/tv.yettel.hu/tv.yettel.hu.config.js --channels=sites/tv.yettel.hu/tv.yettel.hu_hu.channels.xml --output=guide.xml --days=2
+// npm run channels:parse -- --config=./sites/tv.yettel.hu/tv.yettel.hu.config.js --output=./sites/tv.yettel.hu/tv.yettel.hu.channels.xml
+// npx epg-grabber --config=sites/tv.yettel.hu/tv.yettel.hu.config.js --channels=sites/tv.yettel.hu/tv.yettel.hu.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./tv.yettel.hu.config.js')
 const dayjs = require('dayjs')

@@ -1,5 +1,5 @@
-// npx epg-grabber --config=sites/reportv.com.ar/reportv.com.ar.config.js --channels=sites/reportv.com.ar/reportv.com.ar_ve.channels.xml --output=guide.xml --days=2
-// npm run channels:parse -- --config=./sites/reportv.com.ar/reportv.com.ar.config.js --output=./sites/reportv.com.ar/reportv.com.ar_ve.channels.xml
+// npx epg-grabber --config=sites/reportv.com.ar/reportv.com.ar.config.js --channels=sites/reportv.com.ar/reportv.com.ar.channels.xml --output=guide.xml --days=2
+// npm run channels:parse -- --config=./sites/reportv.com.ar/reportv.com.ar.config.js --output=./sites/reportv.com.ar/reportv.com.ar.channels.xml
 
 const { parser, url, request } = require('./reportv.com.ar.config.js')
 const fs = require('fs')

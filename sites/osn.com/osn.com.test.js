@@ -1,5 +1,5 @@
-// NODE_OPTIONS=--insecure-http-parser npx epg-grabber --config=sites/osn.com/osn.com.config.js --channels=sites/osn.com/osn.com_ae-ar.channels.xml --output=guide.xml --days=2
-// NODE_OPTIONS=--insecure-http-parser npx epg-grabber --config=sites/osn.com/osn.com.config.js --channels=sites/osn.com/osn.com_ae-en.channels.xml --output=guide.xml --days=2
+// NODE_OPTIONS=--insecure-http-parser npx epg-grabber --config=sites/osn.com/osn.com.config.js --channels=sites/osn.com/osn.com_ar.channels.xml --output=guide.xml --days=2
+// NODE_OPTIONS=--insecure-http-parser npx epg-grabber --config=sites/osn.com/osn.com.config.js --channels=sites/osn.com/osn.com_en.channels.xml --output=guide.xml --days=2
 
 const { parser, url, request } = require('./osn.com.config.js')
 const dayjs = require('dayjs')
@@ -9,8 +9,8 @@ dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
 const date = dayjs.utc('2021-10-24', 'YYYY-MM-DD').startOf('d')
-const channelAR = { site_id: 'AE#AAN', xmltv_id: 'AlAanTV.ae', lang: 'ar' }
-const channelEN = { site_id: 'AE#AAN', xmltv_id: 'AlAanTV.ae', lang: 'en' }
+const channelAR = { site_id: 'AAN', xmltv_id: 'AlAanTV.ae', lang: 'ar' }
+const channelEN = { site_id: 'AAN', xmltv_id: 'AlAanTV.ae', lang: 'en' }
 const content = JSON.stringify({
   d: '[{"IsPlaying":"0","Durationtime":null,"StartMinute":0,"EndMinute":0,"EmptyDivWidth":1152,"TotalDivWidth":576,"IsTodayDate":false,"IsLastRow":false,"StartDateTime":"24 Oct 2021, 22:00","EndDateTime":"\\/Date(-62135596800000)\\/","Title":"Al Aan TV","Arab_Title":"تلفزيون الآن","GenreEnglishName":null,"GenreArabicName":null,"ChannelNumber":140,"ChannelCode":"AAN","Duration":"\\/Date(-62135596800000)\\/","Showtime":"\\/Date(-62135596800000)\\/","EpisodeId":738257,"ProgramType":null,"EPGUNIQID":"AAN202110271800738257"}]'
 })

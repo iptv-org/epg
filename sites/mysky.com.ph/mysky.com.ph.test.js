@@ -1,5 +1,5 @@
-// npx epg-grabber --config=sites/mysky.com.ph/mysky.com.ph.config.js --channels=sites/mysky.com.ph/mysky.com.ph_ph.channels.xml --output=guide.xml --days=2
-// npm run channels:parse -- --config=./sites/mysky.com.ph/mysky.com.ph.config.js --output=./sites/mysky.com.ph/mysky.com.ph_ph.channels.xml
+// npx epg-grabber --config=sites/mysky.com.ph/mysky.com.ph.config.js --channels=sites/mysky.com.ph/mysky.com.ph.channels.xml --output=guide.xml --days=2
+// npm run channels:parse -- --config=./sites/mysky.com.ph/mysky.com.ph.config.js --output=./sites/mysky.com.ph/mysky.com.ph.channels.xml
 
 const { parser, url } = require('./mysky.com.ph.config.js')
 const dayjs = require('dayjs')

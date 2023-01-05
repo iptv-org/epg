@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/mewatch.sg/mewatch.sg.config.js --channels=sites/mewatch.sg/mewatch.sg_sg.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/mewatch.sg/mewatch.sg.config.js --channels=sites/mewatch.sg/mewatch.sg.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./mewatch.sg.config.js')
 const dayjs = require('dayjs')

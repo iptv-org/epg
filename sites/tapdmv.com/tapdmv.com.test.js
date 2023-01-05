@@ -1,5 +1,5 @@
-// npx epg-grabber --config=sites/tapdmv.com/tapdmv.com.config.js --channels=sites/tapdmv.com/tapdmv.com_ph.channels.xml --output=guide.xml --days=2
-// npm run channels:parse -- --config=./sites/tapdmv.com/tapdmv.com.config.js --output=./sites/tapdmv.com/tapdmv.com_ph.channels.xml
+// npx epg-grabber --config=sites/tapdmv.com/tapdmv.com.config.js --channels=sites/tapdmv.com/tapdmv.com.channels.xml --output=guide.xml --days=2
+// npm run channels:parse -- --config=./sites/tapdmv.com/tapdmv.com.config.js --output=./sites/tapdmv.com/tapdmv.com.channels.xml
 
 const { parser, url } = require('./tapdmv.com.config.js')
 const dayjs = require('dayjs')

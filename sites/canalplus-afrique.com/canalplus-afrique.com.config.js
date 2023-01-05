@@ -30,9 +30,9 @@ module.exports = {
 
     return programs
   },
-  async channels({ country }) {
+  async channels() {
     const html = await axios
-      .get(`https://www.canalplus-afrique.com/${country}/guide-tv-maintenant`)
+      .get(`https://www.canalplus-afrique.com/bf/guide-tv-maintenant`)
       .then(r => r.data)
       .catch(console.log)
 

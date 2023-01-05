@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/foxsports.com.au/foxsports.com.au.config.js --channels=sites/foxsports.com.au/foxsports.com.au_au.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/foxsports.com.au/foxsports.com.au.config.js --channels=sites/foxsports.com.au/foxsports.com.au.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./foxsports.com.au.config.js')
 const dayjs = require('dayjs')

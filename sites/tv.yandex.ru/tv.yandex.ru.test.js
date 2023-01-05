@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/tv.yandex.ru/tv.yandex.ru.config.js --channels=sites/tv.yandex.ru/tv.yandex.ru_kz.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/tv.yandex.ru/tv.yandex.ru.config.js --channels=sites/tv.yandex.ru/tv.yandex.ru.channels.xml --output=guide.xml --days=2
 
 const { parser, url, request } = require('./tv.yandex.ru.config.js')
 const dayjs = require('dayjs')

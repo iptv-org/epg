@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/toonamiaftermath.com/toonamiaftermath.com.config.js --channels=sites/toonamiaftermath.com/toonamiaftermath.com_us.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/toonamiaftermath.com/toonamiaftermath.com.config.js --channels=sites/toonamiaftermath.com/toonamiaftermath.com.channels.xml --output=guide.xml --days=2
 
 const { parser, url, request } = require('./toonamiaftermath.com.config.js')
 const fs = require('fs')

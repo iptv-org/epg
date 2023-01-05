@@ -1,5 +1,5 @@
-// node ./scripts/channels.js --config=./sites/programme-tv.vini.pf/programme-tv.vini.pf.config.js --output=./sites/programme-tv.vini.pf/programme-tv.vini.pf_pf.channels.xml
-// npx epg-grabber --config=sites/programme-tv.vini.pf/programme-tv.vini.pf.config.js --channels=sites/programme-tv.vini.pf/programme-tv.vini.pf_pf.channels.xml --output=guide.xml --days=2
+// node ./scripts/channels.js --config=./sites/programme-tv.vini.pf/programme-tv.vini.pf.config.js --output=./sites/programme-tv.vini.pf/programme-tv.vini.pf.channels.xml
+// npx epg-grabber --config=sites/programme-tv.vini.pf/programme-tv.vini.pf.config.js --channels=sites/programme-tv.vini.pf/programme-tv.vini.pf.channels.xml --output=guide.xml --days=2
 
 const { parser, url, request } = require('./programme-tv.vini.pf.config.js')
 const axios = require('axios')

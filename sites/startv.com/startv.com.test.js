@@ -1,5 +1,5 @@
-// npm run channels:parse -- --config=sites/startv.com/startv.com.config.js --output=sites/startv.com/startv.com_in.channels.xml
-// npx epg-grabber --config=sites/startv.com/startv.com.config.js --channels=sites/startv.com/startv.com_in.channels.xml --output=guide.xml --days=2
+// npm run channels:parse -- --config=sites/startv.com/startv.com.config.js --output=sites/startv.com/startv.com.channels.xml
+// npx epg-grabber --config=sites/startv.com/startv.com.config.js --channels=sites/startv.com/startv.com.channels.xml --output=guide.xml --days=2
 
 const { parser, url, request } = require('./startv.com.config.js')
 const dayjs = require('dayjs')

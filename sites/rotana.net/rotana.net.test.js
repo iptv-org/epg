@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/rotana.net/rotana.net.config.js --channels=sites/rotana.net/rotana.net_sa.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/rotana.net/rotana.net.config.js --channels=sites/rotana.net/rotana.net.channels.xml --output=guide.xml --days=2
 
 const { parser, url, request } = require('./rotana.net.config.js')
 const dayjs = require('dayjs')

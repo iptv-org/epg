@@ -1,5 +1,5 @@
-// node ./scripts/channels.js --config=./sites/magticom.ge/magticom.ge.config.js --output=./sites/magticom.ge/magticom.ge_ge.channels.xml
-// npx epg-grabber --config=sites/magticom.ge/magticom.ge.config.js --channels=sites/magticom.ge/magticom.ge_ge.channels.xml --output=guide.xml --days=2
+// node ./scripts/channels.js --config=./sites/magticom.ge/magticom.ge.config.js --output=./sites/magticom.ge/magticom.ge.channels.xml
+// npx epg-grabber --config=sites/magticom.ge/magticom.ge.config.js --channels=sites/magticom.ge/magticom.ge.channels.xml --output=guide.xml --days=2
 
 const { parser, url, request } = require('./magticom.ge.config.js')
 const dayjs = require('dayjs')

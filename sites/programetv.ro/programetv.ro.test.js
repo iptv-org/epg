@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/programetv.ro/programetv.ro.config.js --channels=sites/programetv.ro/programetv.ro_ro.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/programetv.ro/programetv.ro.config.js --channels=sites/programetv.ro/programetv.ro.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./programetv.ro.config.js')
 const dayjs = require('dayjs')

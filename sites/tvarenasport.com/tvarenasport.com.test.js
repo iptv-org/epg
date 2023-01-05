@@ -1,5 +1,5 @@
-// node ./scripts/channels.js --config=./sites/tvarenasport.com/tvarenasport.com.config.js --output=./sites/tvarenasport.com/tvarenasport.com_rs.channels.xml --set=country:rs
-// npx epg-grabber --config=sites/tvarenasport.com/tvarenasport.com.config.js --channels=sites/tvarenasport.com/tvarenasport.com_rs.channels.xml --output=guide.xml --days=2
+// node ./scripts/channels.js --config=./sites/tvarenasport.com/tvarenasport.com.config.js --output=./sites/tvarenasport.com/tvarenasport.com.channels.xml --set=country:rs
+// npx epg-grabber --config=sites/tvarenasport.com/tvarenasport.com.config.js --channels=sites/tvarenasport.com/tvarenasport.com.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./tvarenasport.com.config.js')
 const dayjs = require('dayjs')
@@ -10,7 +10,7 @@ dayjs.extend(utc)
 
 const date = dayjs.utc('2021-11-17', 'YYYY-MM-DD').startOf('d')
 const channel = {
-  site_id: 'rs#380',
+  site_id: '380',
   xmltv_id: 'ArenaSport1.rs'
 }
 

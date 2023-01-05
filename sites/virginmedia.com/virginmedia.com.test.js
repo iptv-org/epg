@@ -1,5 +1,5 @@
-// npm run channels:parse -- --config=./sites/virginmedia.com/virginmedia.com.config.js --output=./sites/virginmedia.com/virginmedia.com_uk.channels.xml
-// npx epg-grabber --config=sites/virginmedia.com/virginmedia.com.config.js --channels=sites/virginmedia.com/virginmedia.com_uk.channels.xml --output=guide.xml --days=2
+// npm run channels:parse -- --config=./sites/virginmedia.com/virginmedia.com.config.js --output=./sites/virginmedia.com/virginmedia.com.channels.xml
+// npx epg-grabber --config=sites/virginmedia.com/virginmedia.com.config.js --channels=sites/virginmedia.com/virginmedia.com.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./virginmedia.com.config.js')
 const axios = require('axios')

@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/mtel.ba/mtel.ba.config.js --channels=sites/mtel.ba/mtel.ba_ba.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/mtel.ba/mtel.ba.config.js --channels=sites/mtel.ba/mtel.ba.channels.xml --output=guide.xml --days=2
 
 const { parser, url, request } = require('./mtel.ba.config.js')
 const dayjs = require('dayjs')

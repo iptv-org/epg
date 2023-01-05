@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/tvgid.ua/tvgid.ua.config.js --channels=sites/tvgid.ua/tvgid.ua_ua.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/tvgid.ua/tvgid.ua.config.js --channels=sites/tvgid.ua/tvgid.ua.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./tvgid.ua.config.js')
 const iconv = require('iconv-lite')

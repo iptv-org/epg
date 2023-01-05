@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/ruv.is/ruv.is.config.js --channels=sites/ruv.is/ruv.is_is.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/ruv.is/ruv.is.config.js --channels=sites/ruv.is/ruv.is.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./ruv.is.config.js')
 const fs = require('fs')

@@ -1,5 +1,5 @@
-// [Geo-blocked] node ./scripts/commands/parse-channels.js --config=./sites/canalplus-afrique.com/canalplus-afrique.com.config.js --output=./sites/canalplus-afrique.com/canalplus-afrique.com_bf.channels.xml --set=country:bf
-// npx epg-grabber --config=sites/canalplus-afrique.com/canalplus-afrique.com.config.js --channels=sites/canalplus-afrique.com/canalplus-afrique.com_bf.channels.xml --output=guide.xml --days=2
+// [Geo-blocked] node ./scripts/commands/parse-channels.js --config=./sites/canalplus-afrique.com/canalplus-afrique.com.config.js --output=./sites/canalplus-afrique.com/canalplus-afrique.com.channels.xml
+// npx epg-grabber --config=sites/canalplus-afrique.com/canalplus-afrique.com.config.js --channels=sites/canalplus-afrique.com/canalplus-afrique.com.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./canalplus-afrique.com.config.js')
 const axios = require('axios')

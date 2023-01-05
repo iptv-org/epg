@@ -1,5 +1,5 @@
-// [Geo-blocked] node ./scripts/channels.js --config=./sites/canalplus-haiti.com/canalplus-haiti.com.config.js --output=./sites/canalplus-haiti.com/canalplus-haiti.com_ht.channels.xml
-// npx epg-grabber --config=sites/canalplus-haiti.com/canalplus-haiti.com.config.js --channels=sites/canalplus-haiti.com/canalplus-haiti.com_ht.channels.xml --output=guide.xml --days=2
+// [Geo-blocked] npm run channels:parse --config=./sites/canalplus-haiti.com/canalplus-haiti.com.config.js --output=./sites/canalplus-haiti.com/canalplus-haiti.com.channels.xml
+// npx epg-grabber --config=sites/canalplus-haiti.com/canalplus-haiti.com.config.js --channels=sites/canalplus-haiti.com/canalplus-haiti.com.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./canalplus-haiti.com.config.js')
 const axios = require('axios')

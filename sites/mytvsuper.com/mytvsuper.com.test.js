@@ -1,7 +1,7 @@
-// npm run channels:parse -- --config=./sites/mytvsuper.com/mytvsuper.com.config.js --output=./sites/mytvsuper.com/mytvsuper.com_hk-zh.channels.xml --set=lang:zh
-// npm run channels:parse -- --config=./sites/mytvsuper.com/mytvsuper.com.config.js --output=./sites/mytvsuper.com/mytvsuper.com_hk-en.channels.xml --set=lang:en
-// npx epg-grabber --config=sites/mytvsuper.com/mytvsuper.com.config.js --channels=sites/mytvsuper.com/mytvsuper.com_hk-zh.channels.xml --output=guide.xml --days=2
-// npx epg-grabber --config=sites/mytvsuper.com/mytvsuper.com.config.js --channels=sites/mytvsuper.com/mytvsuper.com_hk-en.channels.xml --output=guide.xml --days=2
+// npm run channels:parse -- --config=./sites/mytvsuper.com/mytvsuper.com.config.js --output=./sites/mytvsuper.com/mytvsuper.com_zh.channels.xml --set=lang:zh
+// npm run channels:parse -- --config=./sites/mytvsuper.com/mytvsuper.com.config.js --output=./sites/mytvsuper.com/mytvsuper.com_en.channels.xml --set=lang:en
+// npx epg-grabber --config=sites/mytvsuper.com/mytvsuper.com.config.js --channels=sites/mytvsuper.com/mytvsuper.com_zh.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/mytvsuper.com/mytvsuper.com.config.js --channels=sites/mytvsuper.com/mytvsuper.com_en.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./mytvsuper.com.config.js')
 const fs = require('fs')

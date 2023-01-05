@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/hd-plus.de/hd-plus.de.config.js --channels=sites/hd-plus.de/hd-plus.de_de.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/hd-plus.de/hd-plus.de.config.js --channels=sites/hd-plus.de/hd-plus.de.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./hd-plus.de.config.js')
 const dayjs = require('dayjs')

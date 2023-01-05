@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/mts.rs/mts.rs.config.js --channels=sites/mts.rs/mts.rs_rs.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/mts.rs/mts.rs.config.js --channels=sites/mts.rs/mts.rs.channels.xml --output=guide.xml --days=2
 
 const { parser, url, request } = require('./mts.rs.config.js')
 const dayjs = require('dayjs')

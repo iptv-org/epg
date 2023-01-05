@@ -1,5 +1,5 @@
-// npm run channels:parse -- --config=sites/starhubtvplus.com/starhubtvplus.com.config.js --output=sites/starhubtvplus.com/starhubtvplus.com_sg.channels.xml
-// npx epg-grabber --config=sites/starhubtvplus.com/starhubtvplus.com.config.js --channels=sites/starhubtvplus.com/starhubtvplus.com_sg.channels.xml --output=guide.xml --days=2
+// npm run channels:parse -- --config=sites/starhubtvplus.com/starhubtvplus.com.config.js --output=sites/starhubtvplus.com/starhubtvplus.com.channels.xml
+// npx epg-grabber --config=sites/starhubtvplus.com/starhubtvplus.com.config.js --channels=sites/starhubtvplus.com/starhubtvplus.com.channels.xml --output=guide.xml --days=2
 
 const { parser, url, request } = require('./starhubtvplus.com.config.js')
 const dayjs = require('dayjs')

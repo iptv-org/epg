@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/directv.com.uy/directv.com.uy.config.js --channels=sites/directv.com.uy/directv.com.uy_uy.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/directv.com.uy/directv.com.uy.config.js --channels=sites/directv.com.uy/directv.com.uy.channels.xml --output=guide.xml --days=2
 
 const { parser, url, request } = require('./directv.com.uy.config.js')
 const fs = require('fs')

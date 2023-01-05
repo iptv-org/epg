@@ -1,5 +1,5 @@
-// npm run channels:parse -- --config=./sites/proximusmwc.be/proximusmwc.be.config.js --output=./sites/proximusmwc.be/proximusmwc.be_be.channels.xml
-// npx epg-grabber --config=sites/proximusmwc.be/proximusmwc.be.config.js --channels=sites/proximusmwc.be/proximusmwc.be_be.channels.xml --output=guide.xml --days=2
+// npm run channels:parse -- --config=./sites/proximusmwc.be/proximusmwc.be.config.js --output=./sites/proximusmwc.be/proximusmwc.be.channels.xml
+// npx epg-grabber --config=sites/proximusmwc.be/proximusmwc.be.config.js --channels=sites/proximusmwc.be/proximusmwc.be.channels.xml --output=guide.xml --days=2
 
 const { parser, url, request } = require('./proximusmwc.be.config.js')
 const dayjs = require('dayjs')

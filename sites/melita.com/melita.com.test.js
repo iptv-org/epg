@@ -1,5 +1,5 @@
-// npm run channels:parse -- --config=./sites/melita.com/melita.com.config.js --output=./sites/melita.com/melita.com_mt.channels.xml
-// npx epg-grabber --config=sites/melita.com/melita.com.config.js --channels=sites/melita.com/melita.com_mt.channels.xml --output=guide.xml --days=2
+// npm run channels:parse -- --config=./sites/melita.com/melita.com.config.js --output=./sites/melita.com/melita.com.channels.xml
+// npx epg-grabber --config=sites/melita.com/melita.com.config.js --channels=sites/melita.com/melita.com.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./melita.com.config.js')
 const dayjs = require('dayjs')

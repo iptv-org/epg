@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/guidatv.sky.it/guidatv.sky.it.config.js --channels=sites/guidatv.sky.it/guidatv.sky.it_it.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/guidatv.sky.it/guidatv.sky.it.config.js --channels=sites/guidatv.sky.it/guidatv.sky.it.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./guidatv.sky.it.config.js')
 const dayjs = require('dayjs')

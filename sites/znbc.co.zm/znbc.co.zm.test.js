@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/znbc.co.zm/znbc.co.zm.config.js --channels=sites/znbc.co.zm/znbc.co.zm_zm.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/znbc.co.zm/znbc.co.zm.config.js --channels=sites/znbc.co.zm/znbc.co.zm.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./znbc.co.zm.config.js')
 const dayjs = require('dayjs')

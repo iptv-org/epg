@@ -1,5 +1,5 @@
-// node ./scripts/commands/parse-channels.js --config=./sites/tv.blue.ch/tv.blue.ch.config.js --output=./sites/tv.blue.ch/tv.blue.ch_ch.channels.xml
-// npx epg-grabber --config=sites/tv.blue.ch/tv.blue.ch.config.js --channels=sites/tv.blue.ch/tv.blue.ch_ch.channels.xml --output=guide.xml --days=2
+// node ./scripts/commands/parse-channels.js --config=./sites/tv.blue.ch/tv.blue.ch.config.js --output=./sites/tv.blue.ch/tv.blue.ch.channels.xml
+// npx epg-grabber --config=sites/tv.blue.ch/tv.blue.ch.config.js --channels=sites/tv.blue.ch/tv.blue.ch.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./tv.blue.ch.config.js')
 const dayjs = require('dayjs')

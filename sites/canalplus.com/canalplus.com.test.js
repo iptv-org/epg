@@ -1,5 +1,5 @@
-// npm run channels:parse -- --config=./sites/canalplus.com/canalplus.com.config.js --output=./sites/canalplus.com/canalplus.com_fr.channels.xml
-// npx epg-grabber --config=sites/canalplus.com/canalplus.com.config.js --channels=sites/canalplus.com/canalplus.com_fr.channels.xml --output=guide.xml --days=2
+// npm run channels:parse -- --config=./sites/canalplus.com/canalplus.com.config.js --output=./sites/canalplus.com/canalplus.com.channels.xml
+// npx epg-grabber --config=sites/canalplus.com/canalplus.com.config.js --channels=sites/canalplus.com/canalplus.com.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./canalplus.com.config.js')
 const axios = require('axios')

@@ -1,5 +1,5 @@
-// npm run channels:parse -- --config=./sites/plex.tv/plex.tv.config.js --output=./sites/plex.tv/plex.tv_us.channels.xml
-// npx epg-grabber --config=sites/plex.tv/plex.tv.config.js --channels=sites/plex.tv/plex.tv_us.channels.xml --output=guide.xml --days=2
+// npm run channels:parse -- --config=./sites/plex.tv/plex.tv.config.js --output=./sites/plex.tv/plex.tv.channels.xml
+// npx epg-grabber --config=sites/plex.tv/plex.tv.config.js --channels=sites/plex.tv/plex.tv.channels.xml --output=guide.xml --days=2
 
 const { parser, url, request } = require('./plex.tv.config.js')
 const fs = require('fs')
