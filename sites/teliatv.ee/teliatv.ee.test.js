@@ -1,7 +1,5 @@
-// node ./scripts/channels.js --config=./sites/teliatv.ee/teliatv.ee.config.js --output=./sites/teliatv.ee/teliatv.ee_et.channels.xml --set=lang:et
-// node ./scripts/channels.js --config=./sites/teliatv.ee/teliatv.ee.config.js --output=./sites/teliatv.ee/teliatv.ee_ru.channels.xml --set=lang:ru
-// node ./scripts/channels.js --config=./sites/teliatv.ee/teliatv.ee.config.js --output=./sites/teliatv.ee/teliatv.ee_en.channels.xml --set=lang:en
-// npx epg-grabber --config=sites/teliatv.ee/teliatv.ee.config.js --channels=sites/teliatv.ee/teliatv.ee_et.channels.xml --output=guide.xml --days=2
+// node ./scripts/channels.js --config=./sites/teliatv.ee/teliatv.ee.config.js --output=./sites/teliatv.ee/teliatv.ee.channels.xml --set=lang:et
+// npx epg-grabber --config=sites/teliatv.ee/teliatv.ee.config.js --channels=sites/teliatv.ee/teliatv.ee.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./teliatv.ee.config.js')
 const dayjs = require('dayjs')

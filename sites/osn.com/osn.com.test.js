@@ -1,5 +1,4 @@
-// NODE_OPTIONS=--insecure-http-parser npx epg-grabber --config=sites/osn.com/osn.com.config.js --channels=sites/osn.com/osn.com_ar.channels.xml --output=guide.xml --days=2
-// NODE_OPTIONS=--insecure-http-parser npx epg-grabber --config=sites/osn.com/osn.com.config.js --channels=sites/osn.com/osn.com_en.channels.xml --output=guide.xml --days=2
+// NODE_OPTIONS=--insecure-http-parser npx epg-grabber --config=sites/osn.com/osn.com.config.js --channels=sites/osn.com/osn.com.channels.xml --output=guide.xml --days=2
 
 const { parser, url, request } = require('./osn.com.config.js')
 const dayjs = require('dayjs')

@@ -1,6 +1,5 @@
-// npm run channels:parse --config=./sites/mncvision.id/mncvision.id.config.js --output=./sites/mncvision.id/mncvision.id_id.channels.xml
-// npx epg-grabber --config=sites/mncvision.id/mncvision.id.config.js --channels=sites/mncvision.id/mncvision.id_id.channels.xml --output=guide.xml --timeout=30000 --days=2
-// npx epg-grabber --config=sites/mncvision.id/mncvision.id.config.js --channels=sites/mncvision.id/mncvision.id_en.channels.xml --output=guide.xml --timeout=30000 --days=2
+// npm run channels:parse --config=./sites/mncvision.id/mncvision.id.config.js --output=./sites/mncvision.id/mncvision.id.channels.xml
+// npx epg-grabber --config=sites/mncvision.id/mncvision.id.config.js --channels=sites/mncvision.id/mncvision.id.channels.xml --output=guide.xml --timeout=30000 --days=2
 
 const { parser, url, request } = require('./mncvision.id.config.js')
 const fs = require('fs')
