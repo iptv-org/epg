@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/artonline.tv/artonline.tv.config.js --channels=sites/artonline.tv/artonline.tv_sa.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/artonline.tv/artonline.tv.config.js --channels=sites/artonline.tv/artonline.tv.channels.xml --output=guide.xml --days=2
 
 const { parser, url, request } = require('./artonline.tv.config.js')
 const dayjs = require('dayjs')

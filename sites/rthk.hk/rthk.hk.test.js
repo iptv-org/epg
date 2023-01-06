@@ -1,5 +1,4 @@
-// npx epg-grabber --config=sites/rthk.hk/rthk.hk.config.js --channels=sites/rthk.hk/rthk.hk_hk-zh.channels.xml --output=guide.xml --days=2
-// npx epg-grabber --config=sites/rthk.hk/rthk.hk.config.js --channels=sites/rthk.hk/rthk.hk_hk-en.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/rthk.hk/rthk.hk.config.js --channels=sites/rthk.hk/rthk.hk.channels.xml --output=guide.xml --days=2
 
 const { parser, url, request } = require('./rthk.hk.config.js')
 const fs = require('fs')

@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/vivacom.bg/vivacom.bg.config.js --channels=sites/vivacom.bg/vivacom.bg_bg.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/vivacom.bg/vivacom.bg.config.js --channels=sites/vivacom.bg/vivacom.bg.channels.xml --output=guide.xml --days=2
 
 const { parser, url, request } = require('./vivacom.bg.config.js')
 const dayjs = require('dayjs')

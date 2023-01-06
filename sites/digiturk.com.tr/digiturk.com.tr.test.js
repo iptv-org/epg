@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/digiturk.com.tr/digiturk.com.tr.config.js --channels=sites/digiturk.com.tr/digiturk.com.tr_tr.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/digiturk.com.tr/digiturk.com.tr.config.js --channels=sites/digiturk.com.tr/digiturk.com.tr.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./digiturk.com.tr.config.js')
 const fs = require('fs')

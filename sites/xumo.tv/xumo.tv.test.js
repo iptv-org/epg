@@ -1,5 +1,5 @@
-// npm run channels:parse -- --config=./sites/xumo.tv/xumo.tv.config.js --output=./sites/xumo.tv/xumo.tv_us.channels.xml
-// npx epg-grabber --config=sites/xumo.tv/xumo.tv.config.js --channels=sites/xumo.tv/xumo.tv_us.channels.xml --output=guide.xml --days=2
+// npm run channels:parse -- --config=./sites/xumo.tv/xumo.tv.config.js --output=./sites/xumo.tv/xumo.tv.channels.xml
+// npx epg-grabber --config=sites/xumo.tv/xumo.tv.config.js --channels=sites/xumo.tv/xumo.tv.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./xumo.tv.config.js')
 const fs = require('fs')

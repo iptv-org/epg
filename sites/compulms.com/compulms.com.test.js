@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/compulms.com/compulms.com.config.js --channels=sites/compulms.com/compulms.com_mx.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/compulms.com/compulms.com.config.js --channels=sites/compulms.com/compulms.com.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./compulms.com.config.js')
 const fs = require('fs')

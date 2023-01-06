@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/m.tv.sms.cz/m.tv.sms.cz.config.js --channels=sites/m.tv.sms.cz/m.tv.sms.cz_cz.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/m.tv.sms.cz/m.tv.sms.cz.config.js --channels=sites/m.tv.sms.cz/m.tv.sms.cz.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./m.tv.sms.cz.config.js')
 const iconv = require('iconv-lite')

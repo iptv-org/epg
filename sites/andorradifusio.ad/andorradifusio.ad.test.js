@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/andorradifusio.ad/andorradifusio.ad.config.js --channels=sites/andorradifusio.ad/andorradifusio.ad_ad.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/andorradifusio.ad/andorradifusio.ad.config.js --channels=sites/andorradifusio.ad/andorradifusio.ad.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./andorradifusio.ad.config.js')
 const dayjs = require('dayjs')

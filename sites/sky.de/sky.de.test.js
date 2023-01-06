@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/sky.de/sky.de.config.js --channels=sites/sky.de/sky.de_de.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/sky.de/sky.de.config.js --channels=sites/sky.de/sky.de.channels.xml --output=guide.xml --days=2
 
 const { parser, url, request } = require('./sky.de.config.js')
 const dayjs = require('dayjs')

@@ -1,5 +1,5 @@
-// node ./scripts/commands/parse-channels.js --config=./sites/guide.dstv.com/guide.dstv.com.config.js --output=./sites/guide.dstv.com/guide.dstv.com_za.channels.xml --set=bouquet:c35aaecd-5dd1-480b-ae24-357e600a0e4d
-// npx epg-grabber --config=sites/guide.dstv.com/guide.dstv.com.config.js --channels=sites/guide.dstv.com/guide.dstv.com_ao.channels.xml --output=guide.xml --timeout=30000 --days=2
+// node ./scripts/commands/parse-channels.js --config=./sites/guide.dstv.com/guide.dstv.com.config.js --output=./sites/guide.dstv.com/guide.dstv.com.channels.xml --set=bouquet:c35aaecd-5dd1-480b-ae24-357e600a0e4d
+// npx epg-grabber --config=sites/guide.dstv.com/guide.dstv.com.config.js --channels=sites/guide.dstv.com/guide.dstv.com.channels.xml --output=guide.xml --timeout=30000 --days=2
 
 const { parser, url } = require('./guide.dstv.com.config.js')
 const dayjs = require('dayjs')

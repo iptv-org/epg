@@ -1,5 +1,5 @@
-// node ./scripts/channels.js --config=./sites/rev.bs/rev.bs.config.js --output=./sites/rev.bs/rev.bs_bs.channels.xml
-// npx epg-grabber --config=sites/rev.bs/rev.bs.config.js --channels=sites/rev.bs/rev.bs_bs.channels.xml --output=guide.xml --days=2
+// node ./scripts/channels.js --config=./sites/rev.bs/rev.bs.config.js --output=./sites/rev.bs/rev.bs.channels.xml
+// npx epg-grabber --config=sites/rev.bs/rev.bs.config.js --channels=sites/rev.bs/rev.bs.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./rev.bs.config.js')
 const axios = require('axios')

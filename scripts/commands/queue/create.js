@@ -44,8 +44,6 @@ async function createQueue() {
       const config = require(file.resolve(configPath))
       if (config.skip) continue
       const filename = file.basename(filepath)
-      const [__, region] = filename.match(/_([a-z-]+)\.channels\.xml/i) || [null, null]
-      const groupId = `${region}/${site}`
       for (const channel of channels) {
         if (!channel.site || !channel.id) continue
         const found = api.channels.find({ id: channel.id })
@@ -59,13 +57,8 @@ async function createQueue() {
               channel,
               date: dString,
               configPath,
-              groups: [],
               error: null
             }
-          }
-
-          if (!queue[key].groups.includes(groupId)) {
-            queue[key].groups.push(groupId)
           }
         }
       }

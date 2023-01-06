@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/rtb.gov.bn/rtb.gov.bn.config.js --channels=sites/rtb.gov.bn/rtb.gov.bn_bn.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/rtb.gov.bn/rtb.gov.bn.config.js --channels=sites/rtb.gov.bn/rtb.gov.bn.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./rtb.gov.bn.config.js')
 const path = require('path')

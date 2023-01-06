@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/programme.tvb.com/programme.tvb.com.config.js --channels=sites/programme.tvb.com/programme.tvb.com_hk.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/programme.tvb.com/programme.tvb.com.config.js --channels=sites/programme.tvb.com/programme.tvb.com.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./programme.tvb.com.config.js')
 const fs = require('fs')

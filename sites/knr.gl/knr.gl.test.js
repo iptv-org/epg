@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/knr.gl/knr.gl.config.js --channels=sites/knr.gl/knr.gl_gl.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/knr.gl/knr.gl.config.js --channels=sites/knr.gl/knr.gl.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./knr.gl.config.js')
 const dayjs = require('dayjs')

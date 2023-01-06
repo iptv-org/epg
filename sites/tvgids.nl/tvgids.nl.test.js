@@ -1,5 +1,5 @@
-// npm run channels:parse -- --config=./sites/tvgids.nl/tvgids.nl.config.js --output=./sites/tvgids.nl/tvgids.nl_nl.channels.xml
-// npx epg-grabber --config=sites/tvgids.nl/tvgids.nl.config.js --channels=sites/tvgids.nl/tvgids.nl_nl.channels.xml --output=guide.xml --days=2
+// npm run channels:parse -- --config=./sites/tvgids.nl/tvgids.nl.config.js --output=./sites/tvgids.nl/tvgids.nl.channels.xml
+// npx epg-grabber --config=sites/tvgids.nl/tvgids.nl.config.js --channels=sites/tvgids.nl/tvgids.nl.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./tvgids.nl.config.js')
 const fs = require('fs')

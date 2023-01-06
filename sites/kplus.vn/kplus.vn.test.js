@@ -1,5 +1,5 @@
-// npm run channels:parse -- --config=sites/kplus.vn/kplus.vn.config.js --output=sites/kplus.vn/kplus.vn_vn.channels.xml
-// npx epg-grabber --config=sites/kplus.vn/kplus.vn.config.js --channels=sites/kplus.vn/kplus.vn_vn.channels.xml --output=guide.xml --days=2
+// npm run channels:parse -- --config=sites/kplus.vn/kplus.vn.config.js --output=sites/kplus.vn/kplus.vn.channels.xml
+// npx epg-grabber --config=sites/kplus.vn/kplus.vn.config.js --channels=sites/kplus.vn/kplus.vn.channels.xml --output=guide.xml --days=2
 
 const { parser, url, request } = require('./kplus.vn.config.js')
 const dayjs = require('dayjs')

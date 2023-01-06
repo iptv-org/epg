@@ -1,5 +1,5 @@
-// node ./scripts/channels.js --config=./sites/tvguide.myjcom.jp/tvguide.myjcom.jp.config.js --output=./sites/tvguide.myjcom.jp/tvguide.myjcom.jp_jp.channels.xml
-// npx epg-grabber --config=sites/tvguide.myjcom.jp/tvguide.myjcom.jp.config.js --channels=sites/tvguide.myjcom.jp/tvguide.myjcom.jp_jp.channels.xml --output=guide.xml --days=2
+// node ./scripts/channels.js --config=./sites/tvguide.myjcom.jp/tvguide.myjcom.jp.config.js --output=./sites/tvguide.myjcom.jp/tvguide.myjcom.jp.channels.xml
+// npx epg-grabber --config=sites/tvguide.myjcom.jp/tvguide.myjcom.jp.config.js --channels=sites/tvguide.myjcom.jp/tvguide.myjcom.jp.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./tvguide.myjcom.jp.config.js')
 const dayjs = require('dayjs')

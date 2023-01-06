@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/ionplustv.com/ionplustv.com.config.js --channels=sites/ionplustv.com/ionplustv.com_us.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/ionplustv.com/ionplustv.com.config.js --channels=sites/ionplustv.com/ionplustv.com.channels.xml --output=guide.xml --days=2
 
 const { parser, url, request } = require('./ionplustv.com.config.js')
 const fs = require('fs')

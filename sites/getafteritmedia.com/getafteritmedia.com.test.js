@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/getafteritmedia.com/getafteritmedia.com.config.js --channels=sites/getafteritmedia.com/getafteritmedia.com_us.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/getafteritmedia.com/getafteritmedia.com.config.js --channels=sites/getafteritmedia.com/getafteritmedia.com.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./getafteritmedia.com.config.js')
 const fs = require('fs')

@@ -1,5 +1,5 @@
-// npm run channels:parse --config=./sites/delta.nl/delta.nl.config.js --output=./sites/delta.nl/delta.nl_nl.channels.xml
-// npx epg-grabber --config=sites/delta.nl/delta.nl.config.js --channels=sites/delta.nl/delta.nl_nl.channels.xml --output=guide.xml --days=2
+// npm run channels:parse --config=./sites/delta.nl/delta.nl.config.js --output=./sites/delta.nl/delta.nl.channels.xml
+// npx epg-grabber --config=sites/delta.nl/delta.nl.config.js --channels=sites/delta.nl/delta.nl.channels.xml --output=guide.xml --days=2
 
 const { parser, url, request } = require('./delta.nl.config.js')
 const axios = require('axios')

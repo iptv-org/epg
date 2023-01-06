@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/raiplay.it/raiplay.it.config.js --channels=sites/raiplay.it/raiplay.it_it.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/raiplay.it/raiplay.it.config.js --channels=sites/raiplay.it/raiplay.it.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./raiplay.it.config.js')
 const dayjs = require('dayjs')

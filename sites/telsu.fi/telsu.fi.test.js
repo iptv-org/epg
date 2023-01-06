@@ -1,5 +1,5 @@
-// npm run channels:parse -- --config=./sites/telsu.fi/telsu.fi.config.js --output=./sites/telsu.fi/telsu.fi_fi.channels.xml
-// npx epg-grabber --config=sites/telsu.fi/telsu.fi.config.js --channels=sites/telsu.fi/telsu.fi_fi.channels.xml --output=guide.xml --days=2
+// npm run channels:parse -- --config=./sites/telsu.fi/telsu.fi.config.js --output=./sites/telsu.fi/telsu.fi.channels.xml
+// npx epg-grabber --config=sites/telsu.fi/telsu.fi.config.js --channels=sites/telsu.fi/telsu.fi.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./telsu.fi.config.js')
 const fs = require('fs')

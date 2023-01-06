@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/mujtvprogram.cz/mujtvprogram.cz.config.js --channels=sites/mujtvprogram.cz/mujtvprogram.cz_cz.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/mujtvprogram.cz/mujtvprogram.cz.config.js --channels=sites/mujtvprogram.cz/mujtvprogram.cz.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./mujtvprogram.cz.config.js')
 const fs = require('fs')

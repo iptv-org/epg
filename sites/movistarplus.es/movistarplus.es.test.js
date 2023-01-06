@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/movistarplus.es/movistarplus.es.config.js --channels=sites/movistarplus.es/movistarplus.es_es.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/movistarplus.es/movistarplus.es.config.js --channels=sites/movistarplus.es/movistarplus.es.channels.xml --output=guide.xml --days=2
 
 const { parser, url, request } = require('./movistarplus.es.config.js')
 const dayjs = require('dayjs')

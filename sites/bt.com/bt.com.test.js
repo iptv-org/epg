@@ -1,5 +1,4 @@
-// node ./scripts/commands/parse-channels.js --config=./sites/bt.com/bt.com.config.js --output=./sites/bt.com/bt.com_uk-ny.channels.xml --set=zip:10001
-// npx epg-grabber --config=sites/bt.com/bt.com.config.js --channels=sites/bt.com/bt.com_uk.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/bt.com/bt.com.config.js --channels=sites/bt.com/bt.com.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./bt.com.config.js')
 const axios = require('axios')

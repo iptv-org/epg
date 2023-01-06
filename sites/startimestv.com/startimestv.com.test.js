@@ -1,5 +1,5 @@
-// npm run channels:parse -- --config=./sites/startimestv.com/startimestv.com.config.js --output=./sites/startimestv.com/startimestv.com_ke.channels.xml --set=country:ke
-// npx epg-grabber --config=sites/startimestv.com/startimestv.com.config.js --channels=sites/startimestv.com/startimestv.com_ke.channels.xml --output=guide.xml --days=2
+// npm run channels:parse -- --config=./sites/startimestv.com/startimestv.com.config.js --output=./sites/startimestv.com/startimestv.com.channels.xml --set=country:ke
+// npx epg-grabber --config=sites/startimestv.com/startimestv.com.config.js --channels=sites/startimestv.com/startimestv.com.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./startimestv.com.config.js')
 const dayjs = require('dayjs')

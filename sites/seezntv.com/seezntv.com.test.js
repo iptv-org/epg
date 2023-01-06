@@ -1,5 +1,5 @@
-// npm run channels:parse -- --config=sites/seezntv.com/seezntv.com.config.js --output=sites/seezntv.com/seezntv.com_kr.channels.xml
-// npx epg-grabber --config=sites/seezntv.com/seezntv.com.config.js --channels=sites/seezntv.com/seezntv.com_kr.channels.xml --output=guide.xml --days=2
+// npm run channels:parse -- --config=sites/seezntv.com/seezntv.com.config.js --output=sites/seezntv.com/seezntv.com.channels.xml
+// npx epg-grabber --config=sites/seezntv.com/seezntv.com.config.js --channels=sites/seezntv.com/seezntv.com.channels.xml --output=guide.xml --days=2
 
 const { parser, url, request } = require('./seezntv.com.config.js')
 const dayjs = require('dayjs')

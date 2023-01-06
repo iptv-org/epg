@@ -1,5 +1,5 @@
-// npm run channels:parse -- --config=./sites/tv24.se/tv24.se.config.js --output=./sites/tv24.se/tv24.se_se.channels.xml
-// npx epg-grabber --config=sites/tv24.se/tv24.se.config.js --channels=sites/tv24.se/tv24.se_se.channels.xml --output=guide.xml --days=2
+// npm run channels:parse -- --config=./sites/tv24.se/tv24.se.config.js --output=./sites/tv24.se/tv24.se.channels.xml
+// npx epg-grabber --config=sites/tv24.se/tv24.se.config.js --channels=sites/tv24.se/tv24.se.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./tv24.se.config.js')
 const fs = require('fs')

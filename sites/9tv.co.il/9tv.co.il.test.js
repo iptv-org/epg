@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/9tv.co.il/9tv.co.il.config.js --channels=sites/9tv.co.il/9tv.co.il_il.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/9tv.co.il/9tv.co.il.config.js --channels=sites/9tv.co.il/9tv.co.il.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./9tv.co.il.config.js')
 const dayjs = require('dayjs')

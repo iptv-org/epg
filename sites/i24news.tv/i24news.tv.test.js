@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/i24news.tv/i24news.tv.config.js --channels=sites/i24news.tv/i24news.tv_il.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/i24news.tv/i24news.tv.config.js --channels=sites/i24news.tv/i24news.tv.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./i24news.tv.config.js')
 const dayjs = require('dayjs')

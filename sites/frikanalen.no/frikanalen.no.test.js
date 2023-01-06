@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/frikanalen.no/frikanalen.no.config.js --channels=sites/frikanalen.no/frikanalen.no_no.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/frikanalen.no/frikanalen.no.config.js --channels=sites/frikanalen.no/frikanalen.no.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./frikanalen.no.config.js')
 const dayjs = require('dayjs')

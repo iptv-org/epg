@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/mako.co.il/mako.co.il.config.js --channels=sites/mako.co.il/mako.co.il_il.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/mako.co.il/mako.co.il.config.js --channels=sites/mako.co.il/mako.co.il.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./mako.co.il.config.js')
 const dayjs = require('dayjs')

@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/rtmklik.rtm.gov.my/rtmklik.rtm.gov.my.config.js --channels=sites/rtmklik.rtm.gov.my/rtmklik.rtm.gov.my_my.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/rtmklik.rtm.gov.my/rtmklik.rtm.gov.my.config.js --channels=sites/rtmklik.rtm.gov.my/rtmklik.rtm.gov.my.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./rtmklik.rtm.gov.my.config.js')
 const dayjs = require('dayjs')

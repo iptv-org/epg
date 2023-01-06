@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/cosmote.gr/cosmote.gr.config.js --channels=sites/cosmote.gr/cosmote.gr_gr.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/cosmote.gr/cosmote.gr.config.js --channels=sites/cosmote.gr/cosmote.gr.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./cosmote.gr.config.js')
 const dayjs = require('dayjs')

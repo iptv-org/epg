@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/sportsnet.ca/sportsnet.ca.config.js --channels=sites/sportsnet.ca/sportsnet.ca_ca.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/sportsnet.ca/sportsnet.ca.config.js --channels=sites/sportsnet.ca/sportsnet.ca.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./sportsnet.ca.config.js')
 const dayjs = require('dayjs')

@@ -1,5 +1,5 @@
-// npm run channels:parse -- --config=./sites/tv.movistar.com.pe/tv.movistar.com.pe.config.js --output=./sites/tv.movistar.com.pe/tv.movistar.com.pe_pe.channels.xml
-// npx epg-grabber --config=sites/tv.movistar.com.pe/tv.movistar.com.pe.config.js --channels=sites/tv.movistar.com.pe/tv.movistar.com.pe_pe.channels.xml --output=guide.xml --days=2
+// npm run channels:parse -- --config=./sites/tv.movistar.com.pe/tv.movistar.com.pe.config.js --output=./sites/tv.movistar.com.pe/tv.movistar.com.pe.channels.xml
+// npx epg-grabber --config=sites/tv.movistar.com.pe/tv.movistar.com.pe.config.js --channels=sites/tv.movistar.com.pe/tv.movistar.com.pe.channels.xml --output=guide.xml --days=2
 
 const { parser, url, request } = require('./tv.movistar.com.pe.config.js')
 const fs = require('fs')

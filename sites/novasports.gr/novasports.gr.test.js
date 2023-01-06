@@ -1,5 +1,5 @@
-// npm run channels:parse -- --config=./sites/novasports.gr/novasports.gr.config.js --output=./sites/novasports.gr/novasports.gr_gr.channels.xml
-// npx epg-grabber --config=sites/novasports.gr/novasports.gr.config.js --channels=sites/novasports.gr/novasports.gr_gr.channels.xml --output=guide.xml --days=2
+// npm run channels:parse -- --config=./sites/novasports.gr/novasports.gr.config.js --output=./sites/novasports.gr/novasports.gr.channels.xml
+// npx epg-grabber --config=sites/novasports.gr/novasports.gr.config.js --channels=sites/novasports.gr/novasports.gr.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./novasports.gr.config.js')
 const fs = require('fs')

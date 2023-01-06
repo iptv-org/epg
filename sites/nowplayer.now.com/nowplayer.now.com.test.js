@@ -1,7 +1,5 @@
-// npm run channels:parse -- --config=./sites/nowplayer.now.com/nowplayer.now.com.config.js --output=./sites/nowplayer.now.com/nowplayer.now.com_hk-zh.channels.xml --set=lang:zh
-// npm run channels:parse -- --config=./sites/nowplayer.now.com/nowplayer.now.com.config.js --output=./sites/nowplayer.now.com/nowplayer.now.com_hk-en.channels.xml --set=lang:en
-// npx epg-grabber --config=sites/nowplayer.now.com/nowplayer.now.com.config.js --channels=sites/nowplayer.now.com/nowplayer.now.com_hk-zh.channels.xml --output=guide.xml --timeout=30000 --days=2
-// npx epg-grabber --config=sites/nowplayer.now.com/nowplayer.now.com.config.js --channels=sites/nowplayer.now.com/nowplayer.now.com_hk-en.channels.xml --output=guide.xml --timeout=30000 --days=2
+// npm run channels:parse -- --config=./sites/nowplayer.now.com/nowplayer.now.com.config.js --output=./sites/nowplayer.now.com/nowplayer.now.com.channels.xml --set=lang:zh
+// npx epg-grabber --config=sites/nowplayer.now.com/nowplayer.now.com.config.js --channels=sites/nowplayer.now.com/nowplayer.now.com.channels.xml --output=guide.xml --timeout=30000 --days=2
 
 const { parser, url, request } = require('./nowplayer.now.com.config.js')
 const dayjs = require('dayjs')

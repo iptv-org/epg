@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/tvim.tv/tvim.tv.config.js --channels=sites/tvim.tv/tvim.tv_xk.channels.xml --days=2 --output=guide.xml
+// npx epg-grabber --config=sites/tvim.tv/tvim.tv.config.js --channels=sites/tvim.tv/tvim.tv.channels.xml --days=2 --output=guide.xml
 
 const { parser, url } = require('./tvim.tv.config.js')
 const dayjs = require('dayjs')
