@@ -29,21 +29,3 @@ jobs:
         with:
           name: database
           path: scripts/database
-      - run: npm run guides:update_legacy
-      - uses: tibdex/github-app-token@v1
-        if: ${{ !env.ACT }}
-        id: create-deploy-token
-        with:
-          app_id: ${{ secrets.APP_ID }}
-          private_key: ${{ secrets.APP_PRIVATE_KEY }}
-      - uses: JamesIves/github-pages-deploy-action@v4.4.1
-        if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
-        with:
-          branch: gh-pages
-          folder: .gh-pages
-          token: ${{ steps.create-deploy-token.outputs.token }}
-          git-config-name: iptv-bot[bot]
-          git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
-          commit-message: '[Bot] Update guide from ${{inputs.site}}'
-          clean: false
-          force: false
