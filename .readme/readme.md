@@ -1,5 +1,7 @@
 # EPG
 
+[![_update](https://github.com/iptv-org/epg/actions/workflows/_update.yml/badge.svg)](https://github.com/iptv-org/epg/actions/workflows/_update.yml)
+
 EPG (Electronic Program Guide) for thousands of TV channels collected from different sources.
 
 ## Usage
