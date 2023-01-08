@@ -29,6 +29,7 @@ jobs:
       - if: ${{ !env.ACT }}
         run: GITHUB_TOKEN=${{ steps.create-app-token.outputs.token }} npm run programs:load
       - run: npm run guides:update
+      - run: npm run guides:validate
       - run: npm run api:update
       - run: npm run readme:update
       - run: npm run status:update
