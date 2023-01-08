@@ -4,12 +4,34 @@
 
 EPG (Electronic Program Guide) for thousands of TV channels collected from different sources.
 
-## Usage
+## How to use?
 
 To load a program guide, all you need to do is copy the link to one or more of the guides from the list below and paste it into your favorite player.
 
+## Guides
+
+### Grouped by country
+
+<details>
+<summary>Expand</summary>
+<br>
+
 <!-- prettier-ignore -->
 #include "./.readme/_countries.md"
+
+</details>
+
+### Grouped by source
+
+<details>
+<summary>Expand</summary>
+<br>
+
+<!-- prettier-ignore -->
+#include "./.readme/_sources.md"
+
+</details>
+<br>
 
 All guides also have a compressed and JSON version. To download them, simply change the extension from `.xml` to `.xml.gz` or `.json` respectively.
 
