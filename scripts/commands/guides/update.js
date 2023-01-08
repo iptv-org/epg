@@ -47,9 +47,6 @@ async function main() {
     .filter(Boolean)
   logger.info(`found ${db_programs.length} programs`)
 
-  logger.info(`creating ${logPath}...`)
-  await file.create(logPath)
-
   await generateByCountry()
 
   await generateBySource()
@@ -231,9 +228,10 @@ function calcScore(program) {
 async function makeReport() {
   const errors = []
 
+  let countryGuides = guides.filter(g => g.groupedBy === 'country')
   let programs = _.uniqBy(db_programs, p => p.site + p.channel)
   for (let program of programs) {
-    if (!guides.find(g => g.channel === program.channel)) {
+    if (!countryGuides.find(g => g.channel === program.channel)) {
       const channel = await api.channels.find({ id: program.channel })
       errors.push({ type: 'no_guide', ...program, ...channel })
     }
