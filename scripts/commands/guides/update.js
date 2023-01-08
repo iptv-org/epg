@@ -9,13 +9,19 @@ const CURR_DATE = process.env.CURR_DATE || new Date()
 
 const logPath = `${LOGS_DIR}/guides/update.log`
 
+let guides = []
+let db_programs = []
+
 async function main() {
   logger.info(`starting...`)
 
-  logger.info('loading API data...')
+  logger.info('loading data/countries.json...')
   await api.countries.load()
+  logger.info('loading data/channels.json...')
   await api.channels.load()
+  logger.info('loading data/regions.json...')
   await api.regions.load()
+  logger.info('loading data/subdivisions.json...')
   await api.subdivisions.load()
 
   let countries = await api.countries.all()
@@ -31,7 +37,7 @@ async function main() {
 
   logger.info('loading database/programs.db...')
   await db.programs.load()
-  let db_programs = await db.programs.find({})
+  db_programs = await db.programs.find({})
   db_programs = db_programs
     .map(p => {
       if (p.titles.length) {
@@ -44,9 +50,6 @@ async function main() {
     })
     .filter(Boolean)
   logger.info(`found ${db_programs.length} programs`)
-
-  logger.info(`creating ${logPath}...`)
-  await file.create(logPath)
 
   for (let country of countries) {
     let countryBroadcastCode = `c/${country.code}`
@@ -122,17 +125,20 @@ async function main() {
     await file.create(jsonFilepath, JSON.stringify({ channels, programs }))
 
     for (let channel of channels) {
-      let result = {
+      guides.push({
         country: country.code,
         lang: channel.lang,
         site: channel.site,
         channel: channel.id,
         filename
-      }
-
-      await file.append(logPath, JSON.stringify(result) + '\r\n')
+      })
     }
   }
+
+  logger.info(`creating ${logPath}...`)
+  await file.create(logPath, guides.map(g => JSON.stringify(g)).join('\r\n'))
+
+  await makeReport()
 }
 
 main()
@@ -175,4 +181,21 @@ function calcScore(program) {
   }
 
   return score
+}
+
+async function makeReport() {
+  const errors = []
+
+  let programs = _.uniqBy(db_programs, p => p.site + p.channel)
+  for (let program of programs) {
+    if (!guides.find(g => g.channel === program.channel)) {
+      const channel = await api.channels.find({ id: program.channel })
+      errors.push({ type: 'no_guide', ...program, ...channel })
+    }
+  }
+
+  console.log()
+  logger.info(`report:`)
+  console.table(errors, ['type', 'site', 'lang', 'channel', 'broadcast_area', 'languages'])
+  logger.error(`found ${errors.length} error(s)`)
 }
