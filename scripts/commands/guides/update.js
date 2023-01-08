@@ -133,7 +133,7 @@ async function generateByCountry() {
 
     for (let channel of channels) {
       let result = {
-        groupedBy: 'broadcast_area',
+        groupedBy: 'country',
         country: country.code,
         lang: channel.lang,
         site: channel.site,
