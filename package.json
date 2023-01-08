@@ -10,8 +10,6 @@
     "programs:load": "node scripts/commands/programs/load.js",
     "programs:save": "node scripts/commands/programs/save.js",
     "guides:update": "NODE_OPTIONS=--max-old-space-size=5120 node scripts/commands/guides/update.js",
-    "guides:update_legacy": "node scripts/commands/guides/update_legacy.js",
-    "guides:validate": "NODE_OPTIONS=--max-old-space-size=5120 node scripts/commands/guides/validate.js",
     "api:load": "./scripts/commands/api/load.sh",
     "api:update": "node scripts/commands/api/update.js",
     "readme:update": "node scripts/commands/readme/update.js",
