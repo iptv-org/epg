@@ -9,6 +9,10 @@ const CURR_DATE = process.env.CURR_DATE || new Date()
 
 const logPath = `${LOGS_DIR}/guides/update.log`
 
+let api_channels = []
+let channels_dic = {}
+let db_programs = []
+
 async function main() {
   logger.info(`starting...`)
 
@@ -18,20 +22,14 @@ async function main() {
   await api.regions.load()
   await api.subdivisions.load()
 
-  let countries = await api.countries.all()
-  let api_channels = await api.channels.all()
-
-  let channels_dic = {}
+  api_channels = await api.channels.all()
   api_channels.forEach(channel => {
     channels_dic[channel.id] = channel
   })
 
-  let api_regions = await api.regions.all()
-  let api_subdivisions = await api.subdivisions.all()
-
   logger.info('loading database/programs.db...')
   await db.programs.load()
-  let db_programs = await db.programs.find({})
+  db_programs = await db.programs.find({})
   db_programs = db_programs
     .map(p => {
       if (p.titles.length) {
@@ -48,7 +46,46 @@ async function main() {
   logger.info(`creating ${logPath}...`)
   await file.create(logPath)
 
-  for (let country of countries) {
+  await generateByCountry()
+
+  await generateBySource()
+}
+
+main()
+
+async function generateBySource() {
+  let sites = _.groupBy(db_programs, 'site')
+
+  for (let site in sites) {
+    let langs = _.groupBy(sites[site], p => p.titles[0].lang)
+
+    for (let lang in langs) {
+      let programs = langs[lang]
+      let filename = `${site}/${lang}`
+
+      let { channels } = await save(filename, programs)
+
+      for (let channel of channels) {
+        let result = {
+          groupedBy: 'site+lang',
+          lang: channel.lang,
+          site: channel.site,
+          channel: channel.id,
+          filename
+        }
+
+        await file.append(logPath, JSON.stringify(result) + '\r\n')
+      }
+    }
+  }
+}
+
+async function generateByCountry() {
+  let api_countries = await api.countries.all()
+  let api_regions = await api.regions.all()
+  let api_subdivisions = await api.subdivisions.all()
+
+  for (let country of api_countries) {
     let countryBroadcastCode = `c/${country.code}`
     let countryRegions = api_regions
       .filter(r => r.countries.includes(country.code))
@@ -90,39 +127,13 @@ async function main() {
 
     if (!programs.length) continue
 
-    let channels = programs.map(p => {
-      let c = channels_dic[p.channel]
-      c.site = p.site
-      c.lang = p.lang
-
-      return new Channel(c)
-    })
-    channels = _.sortBy(channels, 'id')
-    channels = _.uniqBy(channels, 'id')
-
-    programs = _.sortBy(programs, ['channel', 'start'])
-    programs = programs.map(p => new Program(p, new Channel(channels_dic[p.channel])))
-    programs = _.uniqBy(programs, p => p.channel + p.start)
-
     const filename = country.code.toLowerCase()
-    const xmlFilepath = `${PUBLIC_DIR}/guides/${filename}.xml`
-    const gzFilepath = `${PUBLIC_DIR}/guides/${filename}.xml.gz`
-    const jsonFilepath = `${PUBLIC_DIR}/guides/${filename}.json`
-    logger.info(`creating ${xmlFilepath}...`)
-    const xmltv = generateXMLTV({
-      channels,
-      programs,
-      date: CURR_DATE
-    })
-    await file.create(xmlFilepath, xmltv)
-    logger.info(`creating ${gzFilepath}...`)
-    const compressed = await zip.compress(xmltv)
-    await file.create(gzFilepath, compressed)
-    logger.info(`creating ${jsonFilepath}...`)
-    await file.create(jsonFilepath, JSON.stringify({ channels, programs }))
+
+    let { channels } = await save(filename, programs)
 
     for (let channel of channels) {
       let result = {
+        groupedBy: 'broadcast_area',
         country: country.code,
         lang: channel.lang,
         site: channel.site,
@@ -135,7 +146,42 @@ async function main() {
   }
 }
 
-main()
+async function save(filepath, programs) {
+  let channels = programs.map(p => {
+    let c = channels_dic[p.channel]
+    c.site = p.site
+    c.lang = p.lang
+
+    return new Channel(c)
+  })
+  channels = _.sortBy(channels, 'id')
+  channels = _.uniqBy(channels, 'id')
+
+  programs = _.sortBy(programs, ['channel', 'start'])
+  programs = programs.map(p => new Program(p, new Channel(channels_dic[p.channel])))
+  programs = _.uniqBy(programs, p => p.channel + p.start)
+
+  const xmlFilepath = `${PUBLIC_DIR}/guides/${filepath}.xml`
+  const gzFilepath = `${PUBLIC_DIR}/guides/${filepath}.xml.gz`
+  const jsonFilepath = `${PUBLIC_DIR}/guides/${filepath}.json`
+  logger.info(`creating ${xmlFilepath}...`)
+  const xmltv = generateXMLTV({
+    channels,
+    programs,
+    date: CURR_DATE
+  })
+  await file.create(xmlFilepath, xmltv)
+  logger.info(`creating ${gzFilepath}...`)
+  const compressed = await zip.compress(xmltv)
+  await file.create(gzFilepath, compressed)
+  logger.info(`creating ${jsonFilepath}...`)
+  await file.create(jsonFilepath, JSON.stringify({ channels, programs }))
+
+  return {
+    channels,
+    programs
+  }
+}
 
 function convertLangCode(code, from, to) {
   let found = langs.where(from, code)
