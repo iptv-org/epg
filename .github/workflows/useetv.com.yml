@@ -1,7 +1,7 @@
 name: useetv.com
 on:
   schedule:
-    - cron: '0 7 * * *'
+    - cron: '5 17 * * *'
   workflow_dispatch:
   workflow_run:
     workflows: [_trigger]
