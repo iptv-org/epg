@@ -28,7 +28,15 @@ jobs:
       - run: npm run api:load
       - if: ${{ !env.ACT }}
         run: GITHUB_TOKEN=${{ steps.create-app-token.outputs.token }} npm run programs:load
+      - uses: actions/upload-artifact@v3
+        with:
+          name: database
+          path: scripts/database
       - run: npm run guides:update
+      - uses: actions/upload-artifact@v3
+        with:
+          name: logs
+          path: scripts/logs
       - run: npm run guides:validate
       - run: npm run api:update
       - run: npm run readme:update
