@@ -19,11 +19,19 @@ async function main() {
 
   const errors = []
 
-  let programs = db_programs.map(p => ({
-    site: p.site,
-    xmltv_id: p.channel,
-    lang: p.titles[0].lang
-  }))
+  let programs = db_programs
+    .map(p => {
+      if (p.titles.length) {
+        return {
+          site: p.site,
+          xmltv_id: p.channel,
+          lang: p.titles[0].lang
+        }
+      }
+
+      return null
+    })
+    .filter(Boolean)
   programs = _.uniqBy(programs, p => p.site + p.xmltv_id)
   for (let program of programs) {
     if (!guides.find(g => g.channel === program.xmltv_id)) {
