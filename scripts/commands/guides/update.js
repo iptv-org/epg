@@ -1,7 +1,6 @@
 const { db, api, logger, file, zip } = require('../../core')
 const { generateXMLTV, Program, Channel } = require('epg-grabber')
 const _ = require('lodash')
-const langs = require('langs')
 
 const PUBLIC_DIR = process.env.PUBLIC_DIR || '.gh-pages'
 const LOGS_DIR = process.env.LOGS_DIR || 'scripts/logs'
@@ -9,7 +8,6 @@ const CURR_DATE = process.env.CURR_DATE || new Date()
 
 const logPath = `${LOGS_DIR}/guides/update.log`
 
-let api_channels = []
 let channels_dic = {}
 let db_programs = []
 let guides = []
@@ -17,16 +15,10 @@ let guides = []
 async function main() {
   logger.info(`starting...`)
 
-  logger.info('loading data/countries.json...')
-  await api.countries.load()
   logger.info('loading data/channels.json...')
   await api.channels.load()
-  logger.info('loading data/regions.json...')
-  await api.regions.load()
-  logger.info('loading data/subdivisions.json...')
-  await api.subdivisions.load()
 
-  api_channels = await api.channels.all()
+  let api_channels = await api.channels.all()
   api_channels.forEach(channel => {
     channels_dic[channel.id] = channel
   })
@@ -34,111 +26,37 @@ async function main() {
   logger.info('loading database/programs.db...')
   await db.programs.load()
   db_programs = await db.programs.find({})
-  db_programs = db_programs
-    .map(p => {
-      if (p.titles.length) {
-        p.score = calcScore(p)
-        p.lang = p.titles[0].lang
-
-        return p
-      }
-      return null
-    })
-    .filter(Boolean)
   logger.info(`found ${db_programs.length} programs`)
 
-  await generateByCountry()
-
-  await generateBySource()
+  await generate()
 
   logger.info(`creating ${logPath}...`)
   await file.create(logPath, guides.map(g => JSON.stringify(g)).join('\r\n'))
 
-  await makeReport()
+  logger.info('finished')
 }
 
 main()
 
-async function generateBySource() {
+async function generate() {
   let sites = _.groupBy(db_programs, 'site')
 
   for (let site in sites) {
-    let langs = _.groupBy(sites[site], p => p.titles[0].lang)
-
-    for (let lang in langs) {
-      let programs = langs[lang]
-      let filename = `${site}/${lang}`
-
-      let { channels } = await save(filename, programs)
-
-      for (let channel of channels) {
-        guides.push({
-          groupedBy: 'site+lang',
-          lang: channel.lang,
-          site: channel.site,
-          channel: channel.id,
-          filename
-        })
-      }
-    }
-  }
-}
-
-async function generateByCountry() {
-  let api_countries = await api.countries.all()
-  let api_regions = await api.regions.all()
-  let api_subdivisions = await api.subdivisions.all()
-
-  for (let country of api_countries) {
-    let countryBroadcastCode = `c/${country.code}`
-    let countryRegions = api_regions
-      .filter(r => r.countries.includes(country.code))
-      .map(r => `r/${r.code}`)
-    let countrySubdivisions = api_subdivisions
-      .filter(s => s.country === country.code)
-      .map(s => `s/${s.code}`)
-    let broadcastCodes = [countryBroadcastCode, ...countryRegions, ...countrySubdivisions]
-
-    let countryChannels = api_channels.filter(
-      c => _.intersection(c.broadcast_area, broadcastCodes).length
-    )
-    countryChannels = countryChannels.map(c => c.id)
-
-    let countryPrograms = db_programs.filter(p => countryChannels.includes(p.channel))
-    let langGroups = _.groupBy(countryPrograms, 'lang')
-    let countryLanguages = _.uniq([...country.languages, 'eng'])
-
     let programs = {}
-    for (let langCode of countryLanguages) {
-      const lang = convertLangCode(langCode, '3', '1')
-      if (!lang) continue
-
-      let langPrograms = langGroups[lang]
-      if (!langPrograms || !langPrograms.length) continue
-
-      let channelGroups = _.groupBy(langPrograms, 'channel')
-      for (let channel in channelGroups) {
-        if (programs[channel]) continue
-        let groupedPrograms = channelGroups[channel]
-        let channelPrograms = getChannelPrograms(groupedPrograms)
-        if (!channelPrograms.length) continue
-
-        programs[channel] = channelPrograms
+    for (let prog of sites[site]) {
+      let key = prog.channel + prog.start
+      if (!programs[key]) {
+        programs[key] = prog
+      } else {
+        programs[key] = merge(programs[key], prog)
       }
     }
 
-    programs = _.flatten(Object.values(programs))
-
-    if (!programs.length) continue
-
-    const filename = country.code.toLowerCase()
-
-    let { channels } = await save(filename, programs)
+    let filename = `${site}`
+    let { channels } = await save(filename, Object.values(programs))
 
     for (let channel of channels) {
       guides.push({
-        groupedBy: 'country',
-        country: country.code,
         lang: channel.lang,
         site: channel.site,
         channel: channel.id,
@@ -148,15 +66,34 @@ async function generateByCountry() {
   }
 }
 
-async function save(filepath, programs) {
-  let channels = programs.map(p => {
-    let c = channels_dic[p.channel]
-    c.site = p.site
-    c.lang = p.lang
+function merge(p1, p2) {
+  for (let prop in p1) {
+    if (Array.isArray(p1[prop])) {
+      p1[prop] = _.orderBy(
+        _.uniqWith(p1[prop].concat(p2[prop]), _.isEqual),
+        v => (v.lang === 'en' ? Infinity : 1),
+        'desc'
+      )
+    }
+  }
 
-    return new Channel(c)
+  return p1
+}
+
+async function save(filepath, programs) {
+  let all_channels = {}
+  programs.forEach(p => {
+    p.titles.forEach(t => {
+      let c = channels_dic[p.channel]
+      c.site = p.site
+      c.lang = t.lang
+      if (!all_channels[p.channel + t.lang]) {
+        all_channels[p.channel + t.lang] = new Channel(c)
+      }
+    })
   })
-  channels = _.sortBy(channels, 'id')
+
+  let channels = _.sortBy(Object.values(all_channels), 'id')
   channels = _.uniqBy(channels, 'id')
 
   programs = _.sortBy(programs, ['channel', 'start'])
@@ -180,65 +117,7 @@ async function save(filepath, programs) {
   await file.create(jsonFilepath, JSON.stringify({ channels, programs }))
 
   return {
-    channels,
+    channels: Object.values(all_channels),
     programs
   }
-}
-
-function convertLangCode(code, from, to) {
-  let found = langs.where(from, code)
-
-  return found ? found[to] : null
-}
-
-function getChannelPrograms(programs) {
-  let sites = _.groupBy(programs, 'site')
-
-  let topScore = 0
-  let selected
-  for (let site in sites) {
-    let sitePrograms = sites[site]
-    let siteScore = _.sumBy(sitePrograms, 'score')
-
-    if (siteScore > topScore) {
-      selected = site
-      topScore = siteScore
-    }
-  }
-
-  return sites[selected] || []
-}
-
-function calcScore(program) {
-  let score = 0
-  let values = Object.values(program)
-  for (let value of values) {
-    if (Array.isArray(value) && value.length) {
-      score++
-    } else if (typeof value === 'string' && value) {
-      score++
-    } else if (value && typeof value === 'object' && Object.values(value).map(Boolean).length) {
-      score++
-    }
-  }
-
-  return score
-}
-
-async function makeReport() {
-  const errors = []
-
-  let countryGuides = guides.filter(g => g.groupedBy === 'country')
-  let programs = _.uniqBy(db_programs, p => p.site + p.channel)
-  for (let program of programs) {
-    if (!countryGuides.find(g => g.channel === program.channel)) {
-      const channel = await api.channels.find({ id: program.channel })
-      errors.push({ type: 'no_guide', ...program, ...channel })
-    }
-  }
-
-  console.log()
-  logger.info(`report:`)
-  console.table(errors, ['type', 'site', 'lang', 'channel', 'broadcast_area', 'languages'])
-  logger.error(`found ${errors.length} error(s)`)
 }
