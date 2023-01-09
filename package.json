@@ -13,7 +13,6 @@
     "api:load": "./scripts/commands/api/load.sh",
     "api:update": "node scripts/commands/api/update.js",
     "readme:update": "node scripts/commands/readme/update.js",
-    "status:update": "node scripts/commands/status/update.js",
     "lint": "npx eslint ./scripts/**/*.js",
     "test": "TZ=Pacific/Nauru npx jest --runInBand",
     "test:commands": "npx jest --runInBand -- commands",
