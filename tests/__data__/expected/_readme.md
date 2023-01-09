@@ -13,7 +13,7 @@ To load a program guide, all you need to do is copy the link to one or more of t
 <!-- prettier-ignore -->
 <table>
   <thead>
-    <tr><th align="left">Site</th><th align="left">Channels</th><th align="left">EPG</th><th align="left">Status</th></tr>
+    <tr><th align="left">Site</th><th align="left">Channels</th><th align="left">EPG</th><th align="left">Status&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th></tr>
   </thead>
   <tbody>
     <tr><td valign="top" rowspan="1">allente.se</td><td align="right" nowrap>1</td><td nowrap><code>https://iptv-org.github.io/epg/guides/allente.se.xml</code></td><td nowrap><a href="https://github.com/iptv-org/epg/actions/workflows/allente.se.yml"><img src="https://github.com/iptv-org/epg/actions/workflows/allente.se.yml/badge.svg" alt="allente.se" style="max-width: 100%;"></a></td></tr>
