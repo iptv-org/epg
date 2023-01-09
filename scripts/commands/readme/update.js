@@ -61,7 +61,12 @@ async function createTable(log) {
   })
   data = Object.values(_.groupBy(data, item => item[0]))
 
-  const output = table.create(data, ['Site', 'Channels', 'EPG', 'Status'])
+  const output = table.create(data, [
+    'Site',
+    'Channels',
+    'EPG',
+    'Status&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
+  ])
 
   await file.create('./.readme/_sites.md', output)
 }
