@@ -9,11 +9,11 @@ const options = program
     parser.parseNumber,
     256
   )
-  .option('--days <days>', 'Number of days for which to grab the program', parser.parseNumber, 1)
   .parse(process.argv)
   .opts()
 
 const CHANNELS_PATH = process.env.CHANNELS_PATH || 'sites/**/*.channels.xml'
+const CURR_DATE = process.env.CURR_DATE || new Date()
 
 async function main() {
   logger.info('Starting...')
@@ -33,8 +33,7 @@ async function createQueue() {
 
   await api.channels.load().catch(console.error)
   const files = await file.list(CHANNELS_PATH).catch(console.error)
-  const utcDate = date.getUTC()
-  const dates = Array.from({ length: options.days }, (_, i) => utcDate.add(i, 'd'))
+  const utcDate = date.getUTC(CURR_DATE)
   for (const filepath of files) {
     try {
       const dir = file.dirname(filepath)
@@ -44,6 +43,8 @@ async function createQueue() {
       const config = require(file.resolve(configPath))
       if (config.skip) continue
       const filename = file.basename(filepath)
+      const days = config.days || 1
+      const dates = Array.from({ length: days }, (_, i) => utcDate.add(i, 'd'))
       for (const channel of channels) {
         if (!channel.site || !channel.id) continue
         const found = api.channels.find({ id: channel.id })
