@@ -10,10 +10,10 @@ To load a program guide, all you need to do is copy the link to one or more of t
 
 ## Guides
 
-<!-- prettier-ignore -->
-#include "./.readme/_sites.md"
+All guides also have a compressed and JSON version. To load them just change the extension from `.xml` to `.xml.gz` or `.json` respectively.
 
-All guides also have a compressed and JSON version. To download them, simply change the extension from `.xml` to `.xml.gz` or `.json` respectively.
+<!-- prettier-ignore -->
+#include "./.readme/_guides.md"
 
 ## Contribution
 
