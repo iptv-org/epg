@@ -8,7 +8,7 @@ const CURR_DATE = process.env.CURR_DATE || new Date()
 
 const logPath = `${LOGS_DIR}/guides/update.log`
 
-let channels_dic = {}
+let api_channels = {}
 let db_programs = []
 let guides = []
 
@@ -18,9 +18,8 @@ async function main() {
   logger.info('loading data/channels.json...')
   await api.channels.load()
 
-  let api_channels = await api.channels.all()
-  api_channels.forEach(channel => {
-    channels_dic[channel.id] = channel
+  api.channels.all().forEach(channel => {
+    api_channels[channel.id] = channel
   })
 
   logger.info('loading database/programs.db...')
@@ -39,26 +38,23 @@ async function main() {
 main()
 
 async function generate() {
-  let sites = _.groupBy(db_programs, 'site')
+  let programs = _.groupBy(db_programs, p =>
+    p.titles.length ? `${p.titles[0].lang}/${p.site}` : `_`
+  )
 
-  for (let site in sites) {
-    let programs = {}
-    for (let prog of sites[site]) {
-      let key = prog.channel + prog.start
-      if (!programs[key]) {
-        programs[key] = prog
-      } else {
-        programs[key] = merge(programs[key], prog)
-      }
-    }
+  delete programs['_']
 
-    let filename = `${site}`
-    let { channels } = await save(filename, Object.values(programs))
+  for (let filename in programs) {
+    let { channels } = await save(filename, programs[filename])
 
     for (let channel of channels) {
+      const configPath = `sites/${channel.site}/${channel.site}.config.js`
+      const config = require(file.resolve(configPath))
+
       guides.push({
-        lang: channel.lang,
         site: channel.site,
+        lang: channel.lang,
+        days: config.days,
         channel: channel.id,
         filename
       })
@@ -66,58 +62,56 @@ async function generate() {
   }
 }
 
-function merge(p1, p2) {
-  for (let prop in p1) {
-    if (Array.isArray(p1[prop])) {
-      p1[prop] = _.orderBy(
-        _.uniqWith(p1[prop].concat(p2[prop]), _.isEqual),
-        v => (v.lang === 'en' ? Infinity : 1),
-        'desc'
-      )
-    }
+async function save(filepath, programs) {
+  let output = {
+    channels: [],
+    programs: [],
+    date: CURR_DATE
   }
 
-  return p1
-}
+  for (let programData of programs) {
+    let channelData = api_channels[programData.channel]
+    channelData.site = programData.site
+    channelData.lang = programData.titles[0].lang
 
-async function save(filepath, programs) {
-  let all_channels = {}
-  programs.forEach(p => {
-    p.titles.forEach(t => {
-      let c = channels_dic[p.channel]
-      c.site = p.site
-      c.lang = t.lang
-      if (!all_channels[p.channel + t.lang]) {
-        all_channels[p.channel + t.lang] = new Channel(c)
-      }
-    })
-  })
+    let channel = new Channel(channelData)
+    let program = new Program(programData, channel)
 
-  let channels = _.sortBy(Object.values(all_channels), 'id')
-  channels = _.uniqBy(channels, 'id')
+    output.channels.push(channel)
+    output.programs.push(program)
+  }
 
-  programs = _.sortBy(programs, ['channel', 'start'])
-  programs = programs.map(p => new Program(p, new Channel(channels_dic[p.channel])))
-  programs = _.uniqBy(programs, p => p.channel + p.start)
+  output.channels = _.sortBy(output.channels, 'id')
+  output.channels = _.uniqBy(output.channels, 'id')
+
+  output.programs = _.sortBy(output.programs, ['channel', 'start'])
+  output.programs = _.uniqBy(output.programs, p => p.channel + p.start)
 
   const xmlFilepath = `${PUBLIC_DIR}/guides/${filepath}.xml`
   const gzFilepath = `${PUBLIC_DIR}/guides/${filepath}.xml.gz`
   const jsonFilepath = `${PUBLIC_DIR}/guides/${filepath}.json`
   logger.info(`creating ${xmlFilepath}...`)
-  const xmltv = generateXMLTV({
-    channels,
-    programs,
-    date: CURR_DATE
-  })
+  const xmltv = generateXMLTV(output)
   await file.create(xmlFilepath, xmltv)
   logger.info(`creating ${gzFilepath}...`)
   const compressed = await zip.compress(xmltv)
   await file.create(gzFilepath, compressed)
   logger.info(`creating ${jsonFilepath}...`)
-  await file.create(jsonFilepath, JSON.stringify({ channels, programs }))
+  await file.create(jsonFilepath, JSON.stringify(output))
 
-  return {
-    channels: Object.values(all_channels),
-    programs
-  }
+  return output
 }
+
+// function merge(p1, p2) {
+//   for (let prop in p1) {
+//     if (Array.isArray(p1[prop])) {
+//       p1[prop] = _.orderBy(
+//         _.uniqWith(p1[prop].concat(p2[prop]), _.isEqual),
+//         v => (v.lang === 'en' ? Infinity : 1),
+//         'desc'
+//       )
+//     }
+//   }
+
+//   return p1
+// }
