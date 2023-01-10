@@ -16,6 +16,7 @@ async function main() {
       channel: result.channel,
       site: result.site,
       lang: result.lang,
+      days: result.days,
       url: `https://iptv-org.github.io/epg/guides/${result.filename}.xml`
     })
   }
