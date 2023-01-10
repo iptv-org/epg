@@ -8,6 +8,7 @@ dayjs.extend(timezone)
 
 module.exports = {
   site: 'tvguide.com',
+  days: 2,
   url: function ({ date, channel }) {
     const [providerId, channelSourceIds] = channel.site_id.split('#')
     const url = `https://cmg-prod.apigee.net/v1/xapi/tvschedules/tvguide/${providerId}/web?start=${date

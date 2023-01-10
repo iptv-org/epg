@@ -2,6 +2,7 @@ const dayjs = require('dayjs')
 
 module.exports = {
   site: 'mewatch.sg',
+  days: 2,
   url: function ({ channel, date }) {
     return `https://cdn.mewatch.sg/api/schedules?channels=${channel.site_id}&date=${date.format(
       'YYYY-MM-DD'

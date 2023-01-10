@@ -9,6 +9,7 @@ dayjs.extend(timezone)
 
 module.exports = {
   site: 'novasports.gr',
+  days: 2,
   url: function ({ date, channel }) {
     return `https://www.novasports.gr/wp-admin/admin-ajax.php?action=nova_get_template&template=tv-program/broadcast&dt=${date.format(
       'YYYY-MM-DD'

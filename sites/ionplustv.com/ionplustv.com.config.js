@@ -11,6 +11,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'ionplustv.com',
+  days: 2,
   url({ date }) {
     return `https://ionplustv.com/schedule/${date.format('YYYY-MM-DD')}`
   },

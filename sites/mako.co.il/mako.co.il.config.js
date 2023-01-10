@@ -9,6 +9,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'mako.co.il',
+  days: 2,
   url: 'https://www.mako.co.il/AjaxPage?jspName=EPGResponse.jsp',
   parser: function ({ content, date }) {
     let programs = []

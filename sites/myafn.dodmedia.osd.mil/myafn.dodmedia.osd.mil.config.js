@@ -8,6 +8,7 @@ dayjs.extend(utc)
 
 module.exports = {
   site: 'myafn.dodmedia.osd.mil',
+  days: 2,
   request: {
     cache: {
       ttl: 60 * 60 * 1000 // 1 hour

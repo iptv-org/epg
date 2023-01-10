@@ -9,6 +9,7 @@ dayjs.extend(timezone)
 
 module.exports = {
   site: 'rev.bs',
+  days: 2,
   url: function ({ date }) {
     return `https://www.rev.bs/wp-content/uploads/tv-guide/${date.format('YYYY-MM-DD')}_0.json`
   },

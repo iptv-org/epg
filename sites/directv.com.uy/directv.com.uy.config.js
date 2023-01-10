@@ -10,6 +10,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'directv.com.uy',
+  days: 2,
   url: `https://www.directv.com.uy/guia/ChannelDetail.aspx/GetProgramming`,
   request: {
     method: 'POST',

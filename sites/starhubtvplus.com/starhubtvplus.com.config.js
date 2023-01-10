@@ -6,6 +6,7 @@ const SESSION_KEY = '01G2QG0N3RWDNCBA1S5MK1MD2K17CE4431A2'
 
 module.exports = {
   site: 'starhubtvplus.com',
+  days: 2,
   request: {
     headers: {
       'x-application-key': APP_KEY,

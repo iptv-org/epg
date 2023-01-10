@@ -5,6 +5,7 @@ dayjs.extend(timezone)
 
 module.exports = {
   site: 'tvcubana.icrt.cu',
+  days: 2,
   url({ channel, date }) {
     const daysOfWeek = ['domingo', 'lunes', 'martes', 'miercoles', 'jueves', 'viernes', 'sabado']
 

@@ -10,6 +10,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'knr.gl',
+  days: 2,
   url({ date }) {
     return `https://knr.gl/admin/knr/TV/program/${date.format('YYYY-MM-DD')}/gl`
   },

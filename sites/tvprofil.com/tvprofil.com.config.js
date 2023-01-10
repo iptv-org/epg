@@ -3,6 +3,7 @@ const dayjs = require('dayjs')
 
 module.exports = {
   site: 'tvprofil.com',
+  days: 2,
   skip: true, // NOTE: server is not stable
   url: function ({ channel, date }) {
     const parts = channel.site_id.split('#')

@@ -6,6 +6,7 @@ const API_PROD_ENDPOINT = 'https://prod.spark.magentatv.at/deu/web/linear-servic
 
 module.exports = {
   site: 'magentatv.at',
+  days: 2,
   request: {
     cache: {
       ttl: 60 * 60 * 1000 // 1 hour

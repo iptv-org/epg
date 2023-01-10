@@ -11,6 +11,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'tvgid.ua',
+  days: 2,
   skip: true, // NOTE: the current program is not currently available on the website
   url: function ({ date, channel }) {
     return `https://tvgid.ua/channels/${channel.site_id}/${date.format('DDMMYYYY')}/tmall/`

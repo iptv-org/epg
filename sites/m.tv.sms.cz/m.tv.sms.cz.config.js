@@ -11,6 +11,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'm.tv.sms.cz',
+  days: 2,
   url: function ({ date, channel }) {
     return `https://m.tv.sms.cz/index.php?stanice=${channel.site_id}&cas=0&den=${date.format(
       'YYYY-MM-DD'

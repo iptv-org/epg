@@ -8,6 +8,7 @@ dayjs.extend(timezone)
 
 module.exports = {
   site: 'tvmi.mt',
+  days: 2,
   url: function ({ date, channel }) {
     return `https://tvmi.mt/schedule/${channel.site_id}/${date.format('YYYY-MM-DD')}`
   },

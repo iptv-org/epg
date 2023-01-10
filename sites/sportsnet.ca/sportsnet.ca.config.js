@@ -5,6 +5,7 @@ dayjs.extend(utc)
 
 module.exports = {
   site: 'sportsnet.ca',
+  days: 2,
   url: function ({ channel, date }) {
     return `https://production-cdn.sportsnet.ca/api/schedules?channels=${
       channel.site_id

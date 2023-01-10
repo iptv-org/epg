@@ -8,6 +8,7 @@ dayjs.extend(timezone)
 
 module.exports = {
   site: 'digiturk.com.tr',
+  days: 2,
   url: function ({ date, channel }) {
     return `https://www.digiturk.com.tr/yayin-akisi/api/program/kanal/${
       channel.site_id

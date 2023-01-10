@@ -13,6 +13,7 @@ dayjs.extend(isoWeek)
 
 module.exports = {
   site: 'getafteritmedia.com',
+  days: 2,
   url: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQcDmb9OnO0HpbjINfGaepqgGTp3VSmPs7hs654n3sRKrq4Q9y6uPSEvVvq9MwTLYG_n_V7vh0rFYP9/pubhtml',
   parser({ content, channel, date }) {
     const programs = []

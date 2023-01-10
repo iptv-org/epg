@@ -7,6 +7,7 @@ dayjs.extend(utc)
 module.exports = {
   delay: 5000,
   site: 'tv.trueid.net',
+  days: 2,
   url: function ({ channel, date }) {
     return `https://tv.trueid.net/tvguide/all/${channel.site_id}/${date.format('YYYY-MM-DD')}`
   },

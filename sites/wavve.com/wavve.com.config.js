@@ -10,6 +10,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'wavve.com',
+  days: 2,
   url: function ({ channel, date }) {
     return `https://apis.pooq.co.kr/live/epgs/channels/${channel.site_id}?startdatetime=${date
       .tz('Asia/Seoul')

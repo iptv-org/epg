@@ -11,6 +11,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'walesi.com.fj',
+  days: 2,
   skip: true, // the program is no longer available on the website
   url: 'https://www.walesi.com.fj/wp-admin/admin-ajax.php',
   request: {

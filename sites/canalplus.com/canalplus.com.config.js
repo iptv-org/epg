@@ -9,6 +9,7 @@ const API_KEY = 'da2291af3b10e9900d1c55e1a65d3388' // 10.2022
 
 module.exports = {
   site: 'canalplus.com',
+  days: 2,
   url: function ({ channel, date }) {
     const diff = date.diff(dayjs.utc().startOf('d'), 'd')
 

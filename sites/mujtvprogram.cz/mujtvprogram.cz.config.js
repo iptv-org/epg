@@ -10,6 +10,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'mujtvprogram.cz',
+  days: 2,
   url({ channel, date }) {
     const diff = date.diff(dayjs.utc().startOf('d'), 'd')
     return `https://services.mujtvprogram.cz/tvprogram2services/services/tvprogrammelist_mobile.php?channel_cid=${channel.site_id}&day=${diff}`

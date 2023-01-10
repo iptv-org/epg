@@ -11,6 +11,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'clickthecity.com',
+  days: 2,
   url({ channel }) {
     return `https://www.clickthecity.com/tv/network/${channel.site_id}`
   },

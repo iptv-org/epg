@@ -12,6 +12,7 @@ const API = {
 
 const config = {
   site: 'tv2go.t-2.net',
+  days: 2,
   url({ date, channel }) {
     const data = config.request.data({ date, channel })
     const endpoint = 'client/tv/getEpg'

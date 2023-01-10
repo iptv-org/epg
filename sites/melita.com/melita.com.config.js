@@ -3,6 +3,7 @@ const dayjs = require('dayjs')
 
 module.exports = {
   site: 'melita.com',
+  days: 2,
   url: function ({ channel, date }) {
     return `https://androme.melitacable.com/api/epg/v1/schedule/channel/${
       channel.site_id

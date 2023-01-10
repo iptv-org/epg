@@ -11,6 +11,7 @@ dayjs.extend(customParseFormat)
 module.exports = {
   skip: true, // INFO: guide is not available on the site
   site: 'rtb.gov.bn',
+  days: 2,
   url: function ({ channel, date }) {
     const [position] = channel.site_id.split('#')
 

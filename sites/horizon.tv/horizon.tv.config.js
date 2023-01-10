@@ -5,6 +5,7 @@ const API_ENDPOINT = `https://legacy-static.oesp.horizon.tv/oesp/v4`
 
 module.exports = {
   site: 'horizon.tv',
+  days: 2,
   url: function ({ date, channel }) {
     const [country, lang] = channel.site_id.split('#')
 

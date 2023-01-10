@@ -2,6 +2,7 @@ const dayjs = require('dayjs')
 
 module.exports = {
   site: 'chaines-tv.orange.fr',
+  days: 2,
   url({ channel, date }) {
     return `https://rp-ott-mediation-tv.woopic.com/api-gw/live/v3/applications/STB4PC/programs?groupBy=channel&includeEmptyChannels=false&period=${date.valueOf()},${date
       .add(1, 'd')

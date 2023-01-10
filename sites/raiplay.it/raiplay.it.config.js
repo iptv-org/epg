@@ -9,6 +9,7 @@ dayjs.extend(timezone)
 
 module.exports = {
   site: 'raiplay.it',
+  days: 2,
   url: function ({ date, channel }) {
     return `https://www.raiplay.it/palinsesto/app/${channel.site_id}/${date.format(
       'DD-MM-YYYY'

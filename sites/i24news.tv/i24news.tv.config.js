@@ -9,6 +9,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'i24news.tv',
+  days: 2,
   url: function ({ channel }) {
     const [lang] = channel.site_id.split('#')
 

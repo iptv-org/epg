@@ -9,6 +9,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'rtmklik.rtm.gov.my',
+  days: 2,
   url: function ({ date, channel }) {
     return `https://rtm.glueapi.io/v3/epg/${
       channel.site_id

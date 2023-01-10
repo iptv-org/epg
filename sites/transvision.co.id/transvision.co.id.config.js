@@ -11,6 +11,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'transvision.co.id',
+  days: 2,
   url: `https://www.transvision.co.id/jadwalacara/epg`,
   request: {
     method: 'POST',

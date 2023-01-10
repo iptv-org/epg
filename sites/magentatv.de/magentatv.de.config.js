@@ -7,6 +7,7 @@ const COOKIE =
 
 module.exports = {
   site: 'magentatv.de',
+  days: 2,
   skip: true, // the site uses a constantly updated session ID
   url: `https://api.prod.sngtv.magentatv.de/EPG/JSON/PlayBillList`,
   request: {

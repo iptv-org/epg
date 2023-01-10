@@ -11,6 +11,7 @@ dayjs.extend(utc)
 
 module.exports = {
   site: 'elcinema.com',
+  days: 2,
   url({ channel }) {
     const lang = channel.lang === 'en' ? 'en/' : '/'
 

@@ -2,6 +2,7 @@ const dayjs = require('dayjs')
 
 module.exports = {
   site: 'tvim.tv',
+  days: 2,
   url: function ({ date, channel }) {
     return `https://www.tvim.tv/script/program_epg?date=${date.format('DD.MM.YYYY')}&prog=${
       channel.site_id

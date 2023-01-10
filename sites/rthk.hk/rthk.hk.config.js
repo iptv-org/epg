@@ -11,6 +11,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'rthk.hk',
+  days: 2,
   request: {
     headers({ channel }) {
       return {

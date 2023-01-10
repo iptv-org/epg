@@ -9,6 +9,7 @@ dayjs.extend(timezone)
 
 module.exports = {
   site: 'tvgids.nl',
+  days: 2,
   url: function ({ date, channel }) {
     const path = dayjs.utc().isSame(date, 'd') ? '' : `${date.format('DD-MM-YYYY')}/`
 

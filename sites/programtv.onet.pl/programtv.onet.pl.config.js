@@ -11,6 +11,7 @@ dayjs.extend(customParseFormat)
 module.exports = {
   delay: 5000,
   site: 'programtv.onet.pl',
+  days: 2,
   url: function ({ date, channel }) {
     const currDate = dayjs.utc().startOf('d')
     const day = date.diff(currDate, 'd')

@@ -2,6 +2,7 @@ const dayjs = require('dayjs')
 
 module.exports = {
   site: 'maxtv.hrvatskitelekom.hr',
+  days: 2,
   url: 'https://player.maxtvtogo.tportal.hr:8082/OTT4Proxy/proxy/epg/shows',
   request: {
     method: 'POST',

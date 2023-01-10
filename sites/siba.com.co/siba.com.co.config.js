@@ -2,6 +2,7 @@ const dayjs = require('dayjs')
 
 module.exports = {
   site: 'siba.com.co',
+  days: 2,
   url: 'http://devportal.siba.com.co/index.php?action=grilla',
   request: {
     method: 'POST',

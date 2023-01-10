@@ -5,6 +5,7 @@ dayjs.extend(utc)
 
 module.exports = {
   site: 'programetv.ro',
+  days: 2,
   url: function ({ date, channel }) {
     const daysOfWeek = {
       0: 'duminica',

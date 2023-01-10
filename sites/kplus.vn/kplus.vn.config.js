@@ -10,6 +10,7 @@ const API_ENDPOINT = `https://www.kplus.vn/Schedule/getSchedule`
 
 module.exports = {
   site: 'kplus.vn',
+  days: 2,
   skip: true, // channel list changes with each request
   url: API_ENDPOINT,
   request: {

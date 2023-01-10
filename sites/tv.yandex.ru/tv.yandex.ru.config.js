@@ -2,6 +2,7 @@ const dayjs = require('dayjs')
 
 module.exports = {
   site: 'tv.yandex.ru',
+  days: 2,
   url: function ({ date, channel }) {
     const [region, id] = channel.site_id.split('#')
 

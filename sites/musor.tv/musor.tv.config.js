@@ -9,6 +9,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'musor.tv',
+  days: 2,
   url({ channel, date }) {
     return dayjs.utc().isSame(date, 'd')
       ? `https://musor.tv/mai/tvmusor/${channel.site_id}`

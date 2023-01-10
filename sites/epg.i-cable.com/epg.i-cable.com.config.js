@@ -12,6 +12,7 @@ const API_ENDPOINT = 'http://epg.i-cable.com/ci/channel'
 
 module.exports = {
   site: 'epg.i-cable.com',
+  days: 2,
   request: {
     cache: {
       ttl: 60 * 60 * 1000 // 1h

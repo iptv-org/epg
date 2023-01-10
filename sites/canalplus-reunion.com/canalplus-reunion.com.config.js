@@ -6,6 +6,7 @@ dayjs.extend(utc)
 
 module.exports = {
   site: 'canalplus-reunion.com',
+  days: 2,
   url: function ({ channel, date }) {
     const diff = date.diff(dayjs.utc().startOf('d'), 'd')
 

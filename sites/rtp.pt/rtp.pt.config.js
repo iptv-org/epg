@@ -10,16 +10,19 @@ dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
 const tz = {
-    lis: 'Europe/Lisbon',
-    per: 'Asia/Macau',
-    rja: 'America/Sao_Paulo'
+  lis: 'Europe/Lisbon',
+  per: 'Asia/Macau',
+  rja: 'America/Sao_Paulo'
 }
 
 module.exports = {
   site: 'rtp.pt',
+  days: 2,
   url({ channel, date }) {
     let [region, channelCode] = channel.site_id.split('#')
-    return `https://www.rtp.pt/EPG/json/rtp-channels-page/list-grid/tv/${channelCode}/${date.format('D-M-YYYY')}/${region}`
+    return `https://www.rtp.pt/EPG/json/rtp-channels-page/list-grid/tv/${channelCode}/${date.format(
+      'D-M-YYYY'
+    )}/${region}`
   },
   parser({ content, channel }) {
     let programs = []
@@ -61,7 +64,7 @@ module.exports = {
 
 function parseIcon(item) {
   const last = item.image.pop()
-  if(!last) return null
+  if (!last) return null
   return last.src
 }
 
