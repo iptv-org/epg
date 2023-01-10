@@ -6,7 +6,7 @@ beforeEach(() => {
   fs.emptyDirSync('tests/__data__/output')
 
   const stdout = execSync(
-    'DB_DIR=tests/__data__/output/database CHANNELS_PATH=tests/__data__/input/sites/example.com_*.channels.xml DATA_DIR=tests/__data__/input/data npm run queue:create -- --max-clusters=1 --days=2',
+    'DB_DIR=tests/__data__/output/database CHANNELS_PATH=tests/__data__/input/sites/example.com_*.channels.xml DATA_DIR=tests/__data__/input/data CURR_DATE=2022-12-29 npm run queue:create -- --max-clusters=1',
     { encoding: 'utf8' }
   )
 })
@@ -17,19 +17,19 @@ it('can create queue', () => {
 
   output = output.map(i => {
     i._id = null
-    i.date = null
     return i
   })
   expected = expected.map(i => {
     i._id = null
-    i.date = null
     return i
   })
 
   expect(output).toEqual(
     expect.arrayContaining([
       expect.objectContaining(expected[0]),
-      expect.objectContaining(expected[1])
+      expect.objectContaining(expected[1]),
+      expect.objectContaining(expected[2]),
+      expect.objectContaining(expected[3])
     ])
   )
 })
