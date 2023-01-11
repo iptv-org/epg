@@ -6,6 +6,11 @@ dayjs.extend(utc)
 module.exports = {
   site: 'dsmart.com.tr',
   days: 2,
+  request: {
+    cache: {
+      ttl: 60 * 1000 // 60 seconds response cache
+    }
+  },
   url({ date, channel }) {
     return `https://www.dsmart.com.tr/api/v1/public/epg/schedules?page=1&limit=500&day=${date.format(
       'YYYY-MM-DD'
