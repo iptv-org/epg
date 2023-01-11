@@ -3,6 +3,7 @@ const dayjs = require('dayjs')
 
 module.exports = {
   site: 'tvheute.at',
+  days: 2,
   url({ channel, date }) {
     return `https://tvheute.at/part/channel-shows/partial/${channel.site_id}/${date.format(
       'DD-MM-YYYY'

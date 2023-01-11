@@ -1,5 +1,6 @@
 const { file, markdown, parser, logger, api, table } = require('../../core')
 const { program } = require('commander')
+const langs = require('langs')
 const _ = require('lodash')
 
 const LOGS_DIR = process.env.LOGS_DIR || 'scripts/logs'
@@ -12,54 +13,69 @@ const options = program
 async function main() {
   await api.countries.load().catch(console.error)
   const logPath = `${LOGS_DIR}/guides/update.log`
-  let results = await parser.parseLogs(logPath)
-  let files = results.reduce((acc, curr) => {
-    if (acc[curr.filename]) {
-      acc[curr.filename].channels++
-    } else {
-      acc[curr.filename] = {
-        country: curr.country,
-        channels: 1,
-        filename: curr.filename
-      }
-    }
+  let log = await parser.parseLogs(logPath)
 
-    return acc
-  }, {})
-
-  let data = []
-  for (const filename in files) {
-    const item = files[filename]
-    const country = api.countries.find({ code: item.country })
-    if (!country) continue
-
-    data.push([
-      country.name,
-      `${country.flag}&nbsp;${country.name}`,
-      item.channels,
-      `<code>https://iptv-org.github.io/epg/guides/${filename}.xml</code>`
-    ])
-  }
-
-  data = _.orderBy(
-    data,
-    [item => item[0], item => (item[3].includes('_en') ? Infinity : item[2])],
-    ['asc', 'desc']
-  )
-  data = data.map(i => {
-    i.shift()
-    return i
-  })
-  data = Object.values(_.groupBy(data, item => item[0]))
-
-  const output = table.create(data, ['Country', 'Channels', 'EPG'])
-
-  await file.create('./.readme/_countries.md', output)
+  await createTable(log)
 
   await updateReadme()
 }
 
 main()
+
+async function createTable(log) {
+  let files = log.reduce((acc, curr) => {
+    if (!acc[curr.filename]) {
+      acc[curr.filename] = {
+        site: curr.site,
+        lang: curr.lang,
+        channels: 0,
+        filename: curr.filename
+      }
+    }
+
+    acc[curr.filename].channels++
+
+    return acc
+  }, {})
+
+  let groups = {}
+  for (const filename in files) {
+    const item = files[filename]
+    const lang = langs.where('1', item.lang)
+
+    if (!lang) continue
+
+    if (!groups[lang.name]) groups[lang.name] = { lang: lang.name, data: [] }
+
+    groups[lang.name].data.push([
+      `<a href="https://${item.site}">${item.site}</a>`,
+      item.channels,
+      `<code>https://iptv-org.github.io/epg/guides/${filename}.xml</code>`,
+      `<a href="https://github.com/iptv-org/epg/actions/workflows/${item.site}.yml"><img src="https://github.com/iptv-org/epg/actions/workflows/${item.site}.yml/badge.svg" alt="${item.site}" style="max-width: 100%;"></a>`
+    ])
+  }
+
+  groups = _.sortBy(Object.values(groups), 'lang')
+
+  let guides = ''
+  for (let group of groups) {
+    let lang = group.lang
+    let data = group.data
+
+    data = _.orderBy(data, [item => item[0], item => item[1]], ['asc', 'desc'])
+    data = Object.values(_.groupBy(data, item => item[0]))
+
+    guides += `### ${lang}\r\n\r\n`
+    guides += table.create(data, [
+      'Site',
+      'Channels',
+      'EPG',
+      'Status&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
+    ])
+    guides += `\r\n\r\n`
+  }
+  await file.create('./.readme/_guides.md', guides)
+}
 
 async function updateReadme() {
   logger.info('updating readme.md...')

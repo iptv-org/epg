@@ -10,6 +10,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'arianaafgtv.com',
+  days: 2,
   url() {
     return `https://www.arianaafgtv.com/index.html`
   },

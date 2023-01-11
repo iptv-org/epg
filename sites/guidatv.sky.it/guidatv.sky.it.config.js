@@ -2,6 +2,7 @@ const dayjs = require('dayjs')
 
 module.exports = {
   site: 'guidatv.sky.it',
+  days: 2,
   url: function ({ date, channel }) {
     const [env, id] = channel.site_id.split('#')
     return `https://apid.sky.it/gtv/v1/events?from=${date.format('YYYY-MM-DD')}T00:00:00Z&to=${date

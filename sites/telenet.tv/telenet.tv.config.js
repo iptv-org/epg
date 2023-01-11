@@ -6,6 +6,7 @@ const API_PROD_ENDPOINT = 'https://prod.spark.telenet.tv/eng/web/linear-service/
 
 module.exports = {
   site: 'telenet.tv',
+  days: 2,
   request: {
     cache: {
       ttl: 60 * 60 * 1000 // 1 hour

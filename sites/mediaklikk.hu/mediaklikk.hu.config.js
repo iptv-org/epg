@@ -8,6 +8,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'mediaklikk.hu',
+  days: 2,
   url: 'https://mediaklikk.hu/wp-content/plugins/hms-global-widgets/widgets/programGuide/programGuideInterface.php',
   request: {
     method: 'POST',

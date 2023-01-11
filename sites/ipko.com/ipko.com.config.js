@@ -5,6 +5,7 @@ dayjs.extend(utc)
 
 module.exports = {
   site: 'ipko.com',
+  days: 2,
   url: function ({ date }) {
     return `https://www.ipko.com/epg/admin/programs.php?date=${date.format('YYYY-MM-DD')}`
   },

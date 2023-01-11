@@ -10,6 +10,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'bein.com',
+  days: 2,
   url: function ({ date, channel }) {
     const [index] = channel.site_id.split('#')
 

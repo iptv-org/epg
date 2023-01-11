@@ -5,6 +5,7 @@ const apiUrl = `https://programme-tv.vini.pf/programmesJSON`
 
 module.exports = {
   site: 'programme-tv.vini.pf',
+  days: 2,
   url: apiUrl,
   request: {
     method: 'POST',

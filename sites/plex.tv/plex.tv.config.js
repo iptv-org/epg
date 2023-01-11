@@ -5,6 +5,7 @@ const API_ENDPOINT = 'https://epg.provider.plex.tv'
 
 module.exports = {
   site: 'plex.tv',
+  days: 2,
   request: {
     headers: {
       'x-plex-provider-version': '5.1'

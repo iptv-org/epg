@@ -11,6 +11,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'cablego.com.pe',
+  days: 2,
   request: {
     method: 'POST',
     headers: {

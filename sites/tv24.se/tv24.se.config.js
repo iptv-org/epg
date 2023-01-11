@@ -9,6 +9,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'tv24.se',
+  days: 2,
   url: function ({ channel, date }) {
     return `https://tv24.se/x/channel/${channel.site_id}/0/${date.format('YYYY-MM-DD')}`
   },

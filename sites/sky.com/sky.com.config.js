@@ -2,6 +2,7 @@ const dayjs = require('dayjs')
 
 module.exports = {
   site: 'sky.com',
+  days: 2,
   url: function ({ date, channel }) {
     return `https://epgservices.sky.com/5.2.2/api/2.0/channel/json/${
       channel.site_id

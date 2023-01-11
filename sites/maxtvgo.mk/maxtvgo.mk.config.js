@@ -6,6 +6,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'maxtvgo.mk',
+  days: 2,
   url: function ({ channel, date }) {
     return `https://prd-static-mkt.spectar.tv/rev-1636968171/client_api.php/epg/list/instance_id/1/language/mk/channel_id/${
       channel.site_id

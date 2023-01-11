@@ -11,6 +11,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'cgates.lt',
+  days: 2,
   url: function ({ channel }) {
     return `https://www.cgates.lt/tv-kanalai/${channel.site_id}/`
   },

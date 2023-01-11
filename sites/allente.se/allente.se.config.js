@@ -3,6 +3,7 @@ const dayjs = require('dayjs')
 
 module.exports = {
   site: 'allente.se',
+  days: 2,
   url({ date, channel }) {
     const [country] = channel.site_id.split('#')
 

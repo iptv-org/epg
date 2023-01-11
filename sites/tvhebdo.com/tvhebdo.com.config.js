@@ -11,6 +11,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'tvhebdo.com',
+  days: 2,
   url: function ({ channel, date }) {
     return `https://www.tvhebdo.com/horaire-tele/${channel.site_id}/date/${date.format(
       'YYYY-MM-DD'

@@ -10,6 +10,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'arianatelevision.com',
+  days: 2,
   url: `https://www.arianatelevision.com/program-schedule/`,
   parser({ content, date }) {
     const programs = []

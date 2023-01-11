@@ -2,6 +2,7 @@ const dayjs = require('dayjs')
 
 module.exports = {
   site: 'frikanalen.no',
+  days: 2,
   url({ date }) {
     return `https://frikanalen.no/api/scheduleitems/?date=${date.format(
       'YYYY-MM-DD'

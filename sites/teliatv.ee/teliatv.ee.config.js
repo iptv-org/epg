@@ -3,6 +3,7 @@ const dayjs = require('dayjs')
 
 module.exports = {
   site: 'teliatv.ee',
+  days: 2,
   url({ date, channel }) {
     return `https://api.teliatv.ee/dtv-api/3.2/${channel.lang}/epg/guide?channelIds=${
       channel.site_id

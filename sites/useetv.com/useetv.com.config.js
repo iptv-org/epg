@@ -10,6 +10,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'useetv.com',
+  days: 2,
   url({ channel }) {
     return `https://www.useetv.com/tvod/${channel.site_id}`
   },

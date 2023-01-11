@@ -9,6 +9,7 @@ dayjs.extend(timezone)
 
 module.exports = {
   site: 'telsu.fi',
+  days: 2,
   url: function ({ date, channel }) {
     return `https://www.telsu.fi/${date.format('YYYYMMDD')}/${channel.site_id}`
   },

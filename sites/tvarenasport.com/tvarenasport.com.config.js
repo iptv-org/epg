@@ -3,6 +3,7 @@ const dayjs = require('dayjs')
 
 module.exports = {
   site: 'tvarenasport.com',
+  days: 2,
   url: function ({ channel, date }) {
     return `https://www.tvarenasport.com/api/schedule?date=${date.format('DD-MM-YYYY')}`
   },

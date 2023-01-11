@@ -39,14 +39,11 @@ jobs:
           path: scripts/logs
       - run: npm run api:update
       - run: npm run readme:update
-      - run: npm run status:update
       - name: Commit Changes
         if: ${{ !env.ACT }}
         run: |
           git add README.md
           git commit --allow-empty -m "[Bot] Update README.md"
-          git add STATUS.md
-          git commit --allow-empty -m "[Bot] Update STATUS.md"
           git status
       - name: Push to origin
         if: ${{ !env.ACT }}

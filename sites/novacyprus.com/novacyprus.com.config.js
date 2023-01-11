@@ -10,6 +10,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'novacyprus.com',
+  days: 2,
   url({ channel, date }) {
     return `https://www.novacyprus.com/api/v1/tvprogram/from/${date.format('YYYYMMDD')}/to/${date
       .add(1, 'd')

@@ -4,6 +4,7 @@ const _ = require('lodash')
 
 module.exports = {
   site: 'tvmusor.hu',
+  days: 2,
   url: 'http://www.tvmusor.hu/a/get-events/',
   request: {
     method: 'POST',

@@ -10,6 +10,7 @@ dayjs.extend(customParseFormat)
 module.exports = {
   skip: true, // Error: Connection timeout
   site: 'turksatkablo.com.tr',
+  days: 2,
   url: function ({ date }) {
     return `https://www.turksatkablo.com.tr/userUpload/EPG/y.json?_=${date.valueOf()}`
   },

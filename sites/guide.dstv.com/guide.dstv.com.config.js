@@ -9,6 +9,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'guide.dstv.com',
+  days: 2,
   request: {
     cache: {
       ttl: 60 * 60 * 1000,

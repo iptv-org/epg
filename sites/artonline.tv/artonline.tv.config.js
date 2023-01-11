@@ -9,6 +9,7 @@ dayjs.extend(utc)
 
 module.exports = {
   site: 'artonline.tv',
+  days: 2,
   url: function ({ channel }) {
     return `https://www.artonline.tv/Home/Tvlist${channel.site_id}`
   },

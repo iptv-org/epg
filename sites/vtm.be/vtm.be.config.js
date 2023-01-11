@@ -5,6 +5,7 @@ dayjs.extend(isBetween)
 
 module.exports = {
   site: 'vtm.be',
+  days: 2,
   url: function ({ channel }) {
     return `https://vtm.be/tv-gids/${channel.site_id}`
   },

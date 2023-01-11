@@ -9,6 +9,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'tv.mail.ru',
+  days: 2,
   url({ channel, date }) {
     return `https://tv.mail.ru/ajax/channel/?region_id=70&channel_id=${
       channel.site_id

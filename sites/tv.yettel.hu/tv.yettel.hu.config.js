@@ -3,6 +3,7 @@ const dayjs = require('dayjs')
 
 module.exports = {
   site: 'tv.yettel.hu',
+  days: 2,
   url: function ({ channel, date }) {
     return `https://dev.mytvback.com/api/19/default/hu-HU/schedules?livechannelpids=${
       channel.site_id

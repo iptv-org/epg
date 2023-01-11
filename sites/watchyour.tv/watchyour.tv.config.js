@@ -3,6 +3,7 @@ const axios = require('axios')
 
 module.exports = {
   site: 'watchyour.tv',
+  days: 2,
   url: `https://www.watchyour.tv/guide.json`,
   request: {
     cache: {

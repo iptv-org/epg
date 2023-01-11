@@ -8,6 +8,7 @@ dayjs.extend(utc)
 
 module.exports = {
   site: 'directv.com',
+  days: 2,
   url({ channel, date }) {
     return `https://www.directv.com/json/channelschedule?channels=${
       channel.site_id

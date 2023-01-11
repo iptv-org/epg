@@ -9,6 +9,7 @@ dayjs.extend(timezone)
 
 module.exports = {
   site: 'gatotv.com',
+  days: 2,
   url: function ({ channel, date }) {
     return `https://www.gatotv.com/canal/${channel.site_id}/${date.format('YYYY-MM-DD')}`
   },

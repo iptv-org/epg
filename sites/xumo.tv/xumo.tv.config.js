@@ -10,6 +10,7 @@ const client = axios.create({
 
 module.exports = {
   site: 'xumo.tv',
+  days: 2,
   request: {
     cache: {
       ttl: 60 * 60 * 1000 // 1 hour

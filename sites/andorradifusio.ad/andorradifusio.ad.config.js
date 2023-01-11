@@ -11,6 +11,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'andorradifusio.ad',
+  days: 2,
   url({ channel }) {
     return `https://www.andorradifusio.ad/programacio/${channel.site_id}`
   },

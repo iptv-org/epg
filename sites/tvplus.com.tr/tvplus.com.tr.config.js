@@ -8,6 +8,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'tvplus.com.tr',
+  days: 2,
   url: 'https://izmottvsc23.tvplus.com.tr:33207/EPG/JSON/PlayBillList',
   request: {
     method: 'POST',

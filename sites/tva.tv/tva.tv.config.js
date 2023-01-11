@@ -3,6 +3,7 @@ const dayjs = require('dayjs')
 
 module.exports = {
   site: 'tva.tv',
+  days: 2,
   url: function ({ date, channel }) {
     return `https://api.ott.tva.tv/v2/epg/program_events.json?channel_id=${
       channel.site_id

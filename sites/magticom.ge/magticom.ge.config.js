@@ -11,6 +11,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'magticom.ge',
+  days: 2,
   url: 'https://www.magticom.ge/request/channel-program.php',
   request: {
     method: 'POST',

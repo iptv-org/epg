@@ -7,6 +7,7 @@ dayjs.extend(timezone)
 
 module.exports = {
   site: 'osn.com',
+  days: 2,
   url: `https://www.osn.com/CMSPages/TVScheduleWebService.asmx/GetTVChannelsProgramTimeTable`,
   request: {
     method: 'POST',

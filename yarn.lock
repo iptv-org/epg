@@ -1631,10 +1631,10 @@
   "resolved" "https://registry.npmjs.org/entities/-/entities-4.4.0.tgz"
   "version" "4.4.0"
 
-"epg-grabber@^0.29.5":
-  "integrity" "sha512-HJvziMNM7YDcJnfkIxWm5ulg76T5eH44mxsLL579dfold//QYZgaCKWMQKPNoGVuCW5SMIY7g90d08VC2rZe6w=="
-  "resolved" "https://registry.npmjs.org/epg-grabber/-/epg-grabber-0.29.5.tgz"
-  "version" "0.29.5"
+"epg-grabber@^0.29.7":
+  "integrity" "sha512-wvjevMnrJD/fr4TaJ0Wh4Y2Kyy0LLQtp+bOEsHFCsF8oe53jUnThOlUYsAT49Sx5v7A6K9GheGxDAXOpLXV67A=="
+  "resolved" "https://registry.npmjs.org/epg-grabber/-/epg-grabber-0.29.7.tgz"
+  "version" "0.29.7"
   dependencies:
     "axios" "^0.21.1"
     "axios-cache-interceptor" "^0.10.3"

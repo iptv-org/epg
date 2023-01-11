@@ -5,6 +5,7 @@ dayjs.extend(utc)
 
 module.exports = {
   site: 'dsmart.com.tr',
+  days: 2,
   url({ date, channel }) {
     return `https://www.dsmart.com.tr/api/v1/public/epg/schedules?page=1&limit=500&day=${date.format(
       'YYYY-MM-DD'

@@ -7,6 +7,7 @@ const API_ENDPOINT = `https://api.toonamiaftermath.com`
 
 module.exports = {
   site: 'toonamiaftermath.com',
+  days: 2,
   async url({ channel, date }) {
     const playlists = await axios
       .get(

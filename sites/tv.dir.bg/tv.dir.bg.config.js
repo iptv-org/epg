@@ -11,6 +11,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'tv.dir.bg',
+  days: 2,
   url({ channel, date }) {
     return `https://tv.dir.bg/tv_channel.php?id=${channel.site_id}&dd=${date.format('DD.MM')}`
   },

@@ -11,6 +11,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'znbc.co.zm',
+  days: 2,
   url({ channel }) {
     return `https://www.znbc.co.zm/${channel.site_id}/`
   },

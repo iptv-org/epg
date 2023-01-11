@@ -5,6 +5,7 @@ dayjs.extend(timezone)
 
 module.exports = {
   site: 'mtel.ba',
+  days: 2,
   url: function ({ channel, date }) {
     const [position] = channel.site_id.split('#')
 

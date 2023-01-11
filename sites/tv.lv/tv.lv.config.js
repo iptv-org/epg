@@ -2,6 +2,7 @@ const dayjs = require('dayjs')
 
 module.exports = {
   site: 'tv.lv',
+  days: 2,
   url: function ({ date, channel }) {
     return `https://www.tv.lv/programme/listing/none/${date.format(
       'DD-MM-YYYY'

@@ -10,6 +10,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'mysky.com.ph',
+  days: 2,
   url: 'https://skyepg.mysky.com.ph/Main/getEventsbyType',
   request: {
     cache: {

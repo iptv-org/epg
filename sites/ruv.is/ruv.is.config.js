@@ -10,6 +10,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'ruv.is',
+  days: 2,
   url({ channel, date }) {
     return `https://www.ruv.is/sjonvarp/dagskra/${channel.site_id}/${date.format('YYYY-MM-DD')}`
   },

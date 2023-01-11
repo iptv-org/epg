@@ -10,6 +10,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'vidio.com',
+  days: 2,
   url({ channel }) {
     return `https://www.vidio.com/live/${channel.site_id}/schedules`
   },

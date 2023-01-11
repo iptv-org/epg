@@ -3,6 +3,7 @@ const dayjs = require('dayjs')
 
 module.exports = {
   site: 'telkku.com',
+  days: 2,
   url: function ({ channel, date }) {
     const [group] = channel.site_id.split('#')
 

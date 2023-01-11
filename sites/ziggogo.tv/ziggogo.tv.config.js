@@ -5,6 +5,7 @@ const API_ENDPOINT = `https://static.spark.ziggogo.tv/eng/web/epg-service-lite`
 
 module.exports = {
   site: 'ziggogo.tv',
+  days: 2,
   request: {
     cache: {
       ttl: 60 * 60 * 1000 // 1 hour

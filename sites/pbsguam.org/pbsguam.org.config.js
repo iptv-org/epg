@@ -4,7 +4,8 @@ const isBetween = require('dayjs/plugin/isBetween')
 dayjs.extend(isBetween)
 
 module.exports = {
-  site: 'pbsguam.org', // the program is only available Thursday through Sunday
+  site: 'pbsguam.org',
+  days: 2, // the program is only available Thursday through Sunday
   url: 'https://pbsguam.org/calendar/',
   parser: function ({ content, date }) {
     let programs = []

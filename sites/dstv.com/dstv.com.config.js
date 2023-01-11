@@ -12,6 +12,7 @@ const API_ENDPOINT = 'https://www.dstv.com/umbraco/api/TvGuide'
 
 module.exports = {
   site: 'dstv.com',
+  days: 2,
   request: {
     cache: {
       ttl: 3 * 60 * 60 * 1000, // 3h

@@ -8,6 +8,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'movistarplus.es',
+  days: 2,
   url: function ({ date }) {
     return `https://www.movistarplus.es/programacion-tv/${date.format('YYYY-MM-DD')}?v=json`
   },

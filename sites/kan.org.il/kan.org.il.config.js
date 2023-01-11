@@ -10,6 +10,7 @@ dayjs.extend(customParseFormat)
 module.exports = {
   skip: true, // INFO: Request failed with status code 403 (Access denied)
   site: 'kan.org.il',
+  days: 2,
   url: function ({ channel, date }) {
     return `https://www.kan.org.il/tv-guide/tv_guidePrograms.ashx?stationID=${
       channel.site_id

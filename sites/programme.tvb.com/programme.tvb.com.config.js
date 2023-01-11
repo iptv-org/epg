@@ -10,6 +10,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'programme.tvb.com',
+  days: 2,
   url: function ({ channel, date }) {
     return `https://programme.tvb.com/ajax.php?action=channellist&code=${
       channel.site_id

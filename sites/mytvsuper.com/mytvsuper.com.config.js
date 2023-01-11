@@ -10,6 +10,7 @@ const API_ENDPOINT = 'https://content-api.mytvsuper.com/v1'
 
 module.exports = {
   site: 'mytvsuper.com',
+  days: 2,
   request: {
     cache: {
       ttl: 60 * 60 * 1000 // 1h
