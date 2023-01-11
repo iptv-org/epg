@@ -61,7 +61,7 @@ module.exports = {
     })
 
     return channels.map(c => {
-      let name = lang === 'en' ? c.channel_name_en : c.channel_name
+      let name = lang === 'zh' ? c.channel_name : c.channel_name_en
       name = c.remark_id == 3 ? `${name} [HD]` : name
 
       return {
