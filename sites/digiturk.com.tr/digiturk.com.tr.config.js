@@ -8,6 +8,7 @@ dayjs.extend(timezone)
 
 module.exports = {
   site: 'digiturk.com.tr',
+  skip: true, // Error: The requested URL was rejected (https://github.com/iptv-org/epg/issues/1651)
   days: 2,
   url: function ({ date, channel }) {
     return `https://www.digiturk.com.tr/yayin-akisi/api/program/kanal/${
