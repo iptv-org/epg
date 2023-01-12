@@ -35,8 +35,8 @@ async function main() {
   const total = items.length
 
   logger.info('Loading...')
-  const results = {}
   let i = 1
+  let totalPrograms = 0
   let config = require(file.resolve(items[0].configPath))
   config = _.merge(config, {
     debug: options.debug,
@@ -48,30 +48,42 @@ async function main() {
   const grabber = new EPGGrabber(config)
   for (const item of items) {
     const channel = new Channel(item.channel)
-    await grabber.grab(channel, item.date, async (data, err) => {
-      logger.info(
-        `[${i}/${total}] ${channel.site} (${channel.lang}) - ${channel.id} - ${dayjs
-          .utc(data.date)
-          .format('MMM D, YYYY')} (${data.programs.length} programs)`
-      )
 
-      if (err) logger.error(err.message)
+    await new Promise(resolve => {
+      grabber.grab(channel, item.date, async (data, err) => {
+        logger.info(
+          `[${i}/${total}] ${channel.site} (${channel.lang}) - ${channel.id} - ${dayjs
+            .utc(data.date)
+            .format('MMM D, YYYY')} (${data.programs.length} programs)`
+        )
 
-      const result = {
-        _qid: item._id,
-        programs: data.programs,
-        error: err ? err.message : null
-      }
+        if (err) logger.error(err.message)
 
-      await file.append(CLUSTER_PATH, JSON.stringify(result) + '\n')
+        const result = {
+          _qid: item._id,
+          programs: data.programs,
+          error: err ? err.message : null
+        }
 
-      if (i < total) i++
+        await file.append(CLUSTER_PATH, JSON.stringify(result) + '\n')
+
+        totalPrograms += data.programs.length
+
+        if (i < total) i++
+
+        resolve()
+      })
     })
   }
 
   db.queue.compact()
 
   logger.info(`Done in ${timer.format('HH[h] mm[m] ss[s]')}`)
+
+  if (totalPrograms === 0) {
+    logger.error('\nError: No programs found')
+    process.exit(1)
+  }
 }
 
 main()
