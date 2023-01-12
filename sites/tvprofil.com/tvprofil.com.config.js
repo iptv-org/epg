@@ -4,7 +4,6 @@ const dayjs = require('dayjs')
 module.exports = {
   site: 'tvprofil.com',
   days: 2,
-  skip: true, // NOTE: server is not stable
   url: function ({ channel, date }) {
     const parts = channel.site_id.split('#')
     const query = buildQuery(parts[1], date)
@@ -16,11 +15,9 @@ module.exports = {
       'x-requested-with': 'XMLHttpRequest'
     }
   },
-  parser: function ({ content, channel, date }) {
+  parser: function ({ content }) {
     let programs = []
-    const result = parseContent(content)
-    if (!result) return programs
-    const items = parseItems(result.data.program)
+    const items = parseItems(content)
     items.forEach(item => {
       const $item = cheerio.load(item)
       const title = parseTitle($item)
@@ -62,16 +59,15 @@ function parseTitle($item) {
   return title.replace('®', '').trim().replace(/,$/, '')
 }
 
-function parseItems(program) {
-  const $ = cheerio.load(program)
+function parseItems(content) {
+  let data = (content.match(/cb\((.*)\)/) || [null, null])[1]
+  if (!data) return []
+  let json = JSON.parse(data)
+  if (!json || !json.data || !json.data.program) return []
+
+  const $ = cheerio.load(json.data.program)
 
   return $('.row').toArray()
-}
-
-function parseContent(content) {
-  let data = (content.match(/cb\((.*)\)/) || [null, null])[1]
-
-  return JSON.parse(data)
 }
 
 function buildQuery(site_id, date) {
