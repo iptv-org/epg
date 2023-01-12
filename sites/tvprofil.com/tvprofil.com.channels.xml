@@ -2,27 +2,27 @@
 <site site="tvprofil.com">
   <channels>
     <channel lang="bg" xmltv_id="24KitchenBulgaria.bg" site_id="bg/tv-programa#24kitchen-bg">24 Kitchen Bulgaria</channel>
+    <channel lang="bg" xmltv_id="AXNBlack.us" site_id="bg/tv-programa#axn-black-bg">AXN Black</channel>
+    <channel lang="bg" xmltv_id="AXNEurope.gr" site_id="bg/tv-programa#axn-bg">AXN Bulgaria</channel>
+    <channel lang="bg" xmltv_id="AXNWhite.us" site_id="bg/tv-programa#axn-white-bg">AXN White</channel>
     <channel lang="bg" xmltv_id="ActionPlus.bg" site_id="bg/tv-programa#action-plus-bg">Action+</channel>
     <channel lang="bg" xmltv_id="AgroTV.bg" site_id="bg/tv-programa#agro-tv-bg">Agro TV</channel>
     <channel lang="bg" xmltv_id="AlfaTV.bg" site_id="bg/tv-programa#alfa-bg">Alfa TV</channel>
     <channel lang="bg" xmltv_id="AnimalPlanetRussia.ru" site_id="bg/tv-programa#animal-planet-ru">Animal Planet Rossiya</channel>
-    <channel lang="bg" xmltv_id="AXNBlack.us" site_id="bg/tv-programa#axn-black-bg">AXN Black</channel>
-    <channel lang="bg" xmltv_id="AXNEurope.gr" site_id="bg/tv-programa#axn-bg">AXN Bulgaria</channel>
-    <channel lang="bg" xmltv_id="AXNWhite.us" site_id="bg/tv-programa#axn-white-bg">AXN White</channel>
     <channel lang="bg" xmltv_id="B1BBox.bg" site_id="bg/tv-programa#b1b-action-tv-bg">B1B Box</channel>
-    <channel lang="bg" xmltv_id="BarelyLegalTV.us" site_id="bg/tv-programa#barely-legal">Barely Legal TV</channel>
     <channel lang="bg" xmltv_id="BGMusicChannel.bg" site_id="bg/tv-programa#bg-music-channel">BG Music Channel</channel>
-    <channel lang="bg" xmltv_id="BloombergTVBulgaria.bg" site_id="bg/tv-programa#bloomberg-tv-bg">Bloomberg TV Bulgaria</channel>
     <channel lang="bg" xmltv_id="BNT1.bg" site_id="bg/tv-programa#bnt-1">BNT 1</channel>
     <channel lang="bg" xmltv_id="BNT2.bg" site_id="bg/tv-programa#bnt-2">BNT 2</channel>
     <channel lang="bg" xmltv_id="BNT3.bg" site_id="bg/tv-programa#bnt-3">BNT 3</channel>
     <channel lang="bg" xmltv_id="BNT4.bg" site_id="bg/tv-programa#bnt-4">BNT 4</channel>
-    <channel lang="bg" xmltv_id="BoxTV.bg" site_id="bg/tv-programa#box-tv-bg">Box TV</channel>
     <channel lang="bg" xmltv_id="BTV.bg" site_id="bg/tv-programa#btv-bg">BTV</channel>
     <channel lang="bg" xmltv_id="BTVAction.bg" site_id="bg/tv-programa#btv-action">BTV Action</channel>
     <channel lang="bg" xmltv_id="BTVCinema.bg" site_id="bg/tv-programa#btv-cinema">BTV Cinema</channel>
     <channel lang="bg" xmltv_id="BTVComedy.bg" site_id="bg/tv-programa#btv-comedy">BTV Comedy</channel>
     <channel lang="bg" xmltv_id="BTVLady.bg" site_id="bg/tv-programa#btv-lady">BTV Lady</channel>
+    <channel lang="bg" xmltv_id="BarelyLegalTV.us" site_id="bg/tv-programa#barely-legal">Barely Legal TV</channel>
+    <channel lang="bg" xmltv_id="BloombergTVBulgaria.bg" site_id="bg/tv-programa#bloomberg-tv-bg">Bloomberg TV Bulgaria</channel>
+    <channel lang="bg" xmltv_id="BoxTV.bg" site_id="bg/tv-programa#box-tv-bg">Box TV</channel>
     <channel lang="bg" xmltv_id="Bulgaria24.bg" site_id="bg/tv-programa#bulgaria-24-bg">Bulgaria 24</channel>
     <channel lang="bg" xmltv_id="BulgariaOnAir.bg" site_id="bg/tv-programa#bulgaria-on-air">Bulgaria On Air</channel>
     <channel lang="bg" xmltv_id="CinemaPlus.bg" site_id="bg/tv-programa#cinema-bg">Cinema+</channel>
@@ -34,6 +34,7 @@
     <channel lang="bg" xmltv_id="DisneyChannelBulgaria.bg" site_id="bg/tv-programa#disney-channel-bg">Disney Channel Bulgaria</channel>
     <channel lang="bg" xmltv_id="EKids.bg" site_id="bg/tv-programa#ekids">EKids</channel>
     <channel lang="bg" xmltv_id="Evrokom.bg" site_id="bg/tv-programa#eurocom-bg">Evrokom</channel>
+    <channel lang="bg" xmltv_id="FUELTV.at" site_id="bg/tv-programa#fuel-tv">Fuel TV</channel>
     <channel lang="bg" xmltv_id="FenFolk.bg" site_id="bg/tv-programa#fen-folk">Fen Folk</channel>
     <channel lang="bg" xmltv_id="FenTV.bg" site_id="bg/tv-programa#fen-tv">Fen TV</channel>
     <channel lang="bg" xmltv_id="FilmBoxStarsBulgaria.bg" site_id="bg/tv-programa#filmbox-stars-bg">FilmBox Stars Adria</channel>
@@ -41,7 +42,6 @@
     <channel lang="bg" xmltv_id="FoxBulgaria.bg" site_id="bg/tv-programa#fox-bg">Fox Bulgaria</channel>
     <channel lang="bg" xmltv_id="FoxCrimeAdria.us" site_id="bg/tv-programa#fox-crime-bg">Fox Crime Adria</channel>
     <channel lang="bg" xmltv_id="FoxLifeBulgaria.bg" site_id="bg/tv-programa#fox-life-bg">Fox Life Bulgaria</channel>
-    <channel lang="bg" xmltv_id="FUELTV.at" site_id="bg/tv-programa#fuel-tv">Fuel TV</channel>
     <channel lang="bg" xmltv_id="HBOCEE.hu" site_id="bg/tv-programa#hbo-bg">HBO</channel>
     <channel lang="bg" xmltv_id="HobbyTV.cz" site_id="bg/tv-programa#hobby-tv">Hobby TV</channel>
     <channel lang="bg" xmltv_id="KinoNova.bg" site_id="bg/tv-programa#kino-nova">Kino Nova</channel>
@@ -62,15 +62,15 @@
     <channel lang="bg" xmltv_id="RodinaTV.bg" site_id="bg/tv-programa#tv-rodina-bg">Rodina</channel>
     <channel lang="bg" xmltv_id="SKAT.bg" site_id="bg/tv-programa#skat-tv">SKAT</channel>
     <channel lang="bg" xmltv_id="SportPlusHD.bg" site_id="bg/tv-programa#sport-hd">Sport+ HD</channel>
+    <channel lang="bg" xmltv_id="TV1.bg" site_id="bg/tv-programa#tv1-bg">TV 1</channel>
+    <channel lang="bg" xmltv_id="TVEvropa.bg" site_id="bg/tv-programa#tv-evropa-bg">TV Evropa</channel>
+    <channel lang="bg" xmltv_id="TVPlus.bg" site_id="bg/tv-programa#tv-plus-bg">TV+</channel>
     <channel lang="bg" xmltv_id="TheVoiceTV.bg" site_id="bg/tv-programa#the-voice-bg">The Voice TV</channel>
     <channel lang="bg" xmltv_id="TiankovFolk.bg" site_id="bg/tv-programa#tiankov-folk-bg">Tiankov Folk</channel>
     <channel lang="bg" xmltv_id="TravelTV.bg" site_id="bg/tv-programa#travel-tv-bg">Travel TV</channel>
     <channel lang="bg" xmltv_id="Travelxp.in" site_id="bg/tv-programa#travelxp">Travelxp HD Europe</channel>
-    <channel lang="bg" xmltv_id="TV1.bg" site_id="bg/tv-programa#tv1-bg">TV 1</channel>
-    <channel lang="bg" xmltv_id="TVEvropa.bg" site_id="bg/tv-programa#tv-evropa-bg">TV Evropa</channel>
-    <channel lang="bg" xmltv_id="TVPlus.bg" site_id="bg/tv-programa#tv-plus-bg">TV+</channel>
-    <channel lang="bg" xmltv_id="VivacomArena.bg" site_id="bg/tv-programa#vivacom-arena">Vivacom Arena</channel>
     <channel lang="bg" xmltv_id="VTK.bg" site_id="bg/tv-programa#vtk-bg">VTK</channel>
+    <channel lang="bg" xmltv_id="VivacomArena.bg" site_id="bg/tv-programa#vivacom-arena">Vivacom Arena</channel>
     <channel lang="bg" xmltv_id="WnessTV.bg" site_id="bg/tv-programa#wness-tv">Wness TV</channel>
     <channel lang="bg" xmltv_id="XXL.fr" site_id="bg/tv-programa#xxl">XXL</channel>
     <channel lang="hr" xmltv_id="24KitchenSerbia.rs" site_id="al/programacioni#24kitchen">24 Kitchen Srbija</channel>
@@ -79,14 +79,21 @@
     <channel lang="hr" xmltv_id="4FunDance.pl" site_id="ba/tvprogram#4fun-dance">4 Fun Dance</channel>
     <channel lang="hr" xmltv_id="4FunKids.pl" site_id="ba/tvprogram#4fun-gold">4 Fun Kids</channel>
     <channel lang="hr" xmltv_id="4FunTV.pl" site_id="me/tvprogram#4funtv">4 Fun TV</channel>
-    <channel lang="hr" xmltv_id="AgroTV.ro" site_id="ba/tvprogram#agro-tv">Agro TV</channel>
-    <channel lang="hr" xmltv_id="AlfaTV.ba" site_id="ba/tvprogram#televizija-alfa">Alfa TV</channel>
-    <channel lang="hr" xmltv_id="AlJazeeraBalkans.qa" site_id="al/programacioni#al-jazeera-balkans">Aljazeera Balkans</channel>
-    <channel lang="hr" xmltv_id="AlJazeeraEnglish.qa" site_id="al/programacioni#al-jazeera">Aljazeera English</channel>
-    <channel lang="hr" xmltv_id="AlphaTV.gr" site_id="al/programacioni#alpha-tv">Alpha TV</channel>
-    <channel lang="hr" xmltv_id="Alsat.mk" site_id="me/tvprogram#alsat-m">Alsat M</channel>
     <channel lang="hr" xmltv_id="AMCHungary.hu" site_id="hu/tvmusor#amc-hu">AMC Magyarország</channel>
     <channel lang="hr" xmltv_id="ANT1Europe.gr" site_id="de/tvprogramm#antena-europe">Ant1 Europe</channel>
+    <channel lang="hr" xmltv_id="ARTEFrance.fr" site_id="al/programacioni#arte-de">ARTE Deutsch</channel>
+    <channel lang="hr" xmltv_id="ATV.at" site_id="al/programacioni#atv1">ATV</channel>
+    <channel lang="hr" xmltv_id="ATV.hu" site_id="hu/tvmusor#atv-hu">ATV</channel>
+    <channel lang="hr" xmltv_id="ATVAvrupa.tr" site_id="mk/tv-raspored#atv-avrupa">ATV Avrupa</channel>
+    <channel lang="hr" xmltv_id="AXNAdria.us" site_id="ba/tvprogram#axn">AXN</channel>
+    <channel lang="hr" xmltv_id="AXNHungary.hu" site_id="hu/tvmusor#axn-hu">AXN Central Europe</channel>
+    <channel lang="hr" xmltv_id="AXNSpin.gr" site_id="ba/tvprogram#axn-spin">AXN Spin</channel>
+    <channel lang="hr" xmltv_id="AgroTV.ro" site_id="ba/tvprogram#agro-tv">Agro TV</channel>
+    <channel lang="hr" xmltv_id="AlJazeeraBalkans.qa" site_id="al/programacioni#al-jazeera-balkans">Aljazeera Balkans</channel>
+    <channel lang="hr" xmltv_id="AlJazeeraEnglish.qa" site_id="al/programacioni#al-jazeera">Aljazeera English</channel>
+    <channel lang="hr" xmltv_id="AlfaTV.ba" site_id="ba/tvprogram#televizija-alfa">Alfa TV</channel>
+    <channel lang="hr" xmltv_id="AlphaTV.gr" site_id="al/programacioni#alpha-tv">Alpha TV</channel>
+    <channel lang="hr" xmltv_id="Alsat.mk" site_id="me/tvprogram#alsat-m">Alsat M</channel>
     <channel lang="hr" xmltv_id="ApostolTV.hu" site_id="hu/tvmusor#apostol-tv">Apostol TV</channel>
     <channel lang="hr" xmltv_id="Arena4.hu" site_id="hu/tvmusor#arena4-hu">Arena4</channel>
     <channel lang="hr" xmltv_id="ArenaEsport.rs" site_id="me/tvprogram#arena-esport">Arena Esport</channel>
@@ -107,31 +114,25 @@
     <channel lang="hr" xmltv_id="ArenaSport7Croatia.hr" site_id="tvprogram#arena-sport-7-hr">Arena Sport 7 Hrvatska</channel>
     <channel lang="hr" xmltv_id="ArenaSport8Croatia.hr" site_id="tvprogram#arena-sport-8-hr">Arena Sport 8 Hrvatska</channel>
     <channel lang="hr" xmltv_id="ArenaSport9Croatia.hr" site_id="tvprogram#arena-sport-9-hr">Arena Sport 9 Hrvatska</channel>
-    <channel lang="hr" xmltv_id="ARTEFrance.fr" site_id="al/programacioni#arte-de">ARTE Deutsch</channel>
-    <channel lang="hr" xmltv_id="ATV.at" site_id="al/programacioni#atv1">ATV</channel>
-    <channel lang="hr" xmltv_id="ATV.hu" site_id="hu/tvmusor#atv-hu">ATV</channel>
-    <channel lang="hr" xmltv_id="ATVAvrupa.tr" site_id="mk/tv-raspored#atv-avrupa">ATV Avrupa</channel>
     <channel lang="hr" xmltv_id="AuroraTV.hr" site_id="ba/tvprogram#aurora-tv">Aurora TV</channel>
-    <channel lang="hr" xmltv_id="AXNAdria.us" site_id="ba/tvprogram#axn">AXN</channel>
-    <channel lang="hr" xmltv_id="AXNHungary.hu" site_id="hu/tvmusor#axn-hu">AXN Central Europe</channel>
-    <channel lang="hr" xmltv_id="AXNSpin.gr" site_id="ba/tvprogram#axn-spin">AXN Spin</channel>
     <channel lang="hr" xmltv_id="B1.ro" site_id="ba/tvprogram#b1-tv">B1</channel>
     <channel lang="hr" xmltv_id="B92.rs" site_id="al/programacioni#b92">B92</channel>
-    <channel lang="hr" xmltv_id="BalkanikaMusicTV.bg" site_id="al/programacioni#balkanika">Balkanika Music TV</channel>
-    <channel lang="hr" xmltv_id="BalkanTrip.rs" site_id="ba/tvprogram#balkan-trip">Balkan Trip</channel>
     <channel lang="hr" xmltv_id="BBCEarthRomania.ro" site_id="ba/tvprogram#bbc-earth">BBC Earth</channel>
     <channel lang="hr" xmltv_id="BBCNews.uk" site_id="ba/tvprogram#bbc-news">BBC News</channel>
     <channel lang="hr" xmltv_id="BBCWorldNewsEurope.uk" site_id="al/programacioni#bbc-world">BBC World News Europe</channel>
     <channel lang="hr" xmltv_id="BNMusic.ba" site_id="al/programacioni#bn-music">BN Music</channel>
     <channel lang="hr" xmltv_id="BNTV2.ba" site_id="ba/tvprogram#bn-sat">BN 2</channel>
+    <channel lang="hr" xmltv_id="BalkanTrip.rs" site_id="ba/tvprogram#balkan-trip">Balkan Trip</channel>
+    <channel lang="hr" xmltv_id="BalkanikaMusicTV.bg" site_id="al/programacioni#balkanika">Balkanika Music TV</channel>
     <channel lang="hr" xmltv_id="BoomerangCEE.us" site_id="al/programacioni#boomerang">Boomerang Central &amp; Eastern Europe</channel>
     <channel lang="hr" xmltv_id="BrainzTV.rs" site_id="ba/tvprogram#brainz-tv">Brainz TV</channel>
     <channel lang="hr" xmltv_id="BrazzersTVEurope.us" site_id="ba/tvprogram#private-spice">Brazzers TV</channel>
     <channel lang="hr" xmltv_id="Brio.si" site_id="si/tvspored#pop-brio">Brio</channel>
-    <channel lang="hr" xmltv_id="Canale5.it" site_id="al/programacioni#canale-5">Canale 5</channel>
     <channel lang="hr" xmltv_id="CBSRealityEMEA.uk" site_id="al/programacioni#cbs-reality">CBS Reality Europe</channel>
     <channel lang="hr" xmltv_id="CGTNDocumentary.cn" site_id="ba/tvprogram#cgtn-documentary">CGTN Documentary</channel>
-    <channel lang="hr" xmltv_id="Cinemania.rs" site_id="me/tvprogram#cinemania">Cinemania</channel>
+    <channel lang="hr" xmltv_id="CNNInternationalEurope.us" site_id="al/programacioni#cnn">CNN International Europe</channel>
+    <channel lang="hr" xmltv_id="CNNTurk.tr" site_id="de/tvprogramm#cnn-turk-tv">CNN Türk</channel>
+    <channel lang="hr" xmltv_id="Canale5.it" site_id="al/programacioni#canale-5">Canale 5</channel>
     <channel lang="hr" xmltv_id="CineStarTV1Croatia.hr" site_id="ba/tvprogram#cinestar-tv">CineStar TV 1</channel>
     <channel lang="hr" xmltv_id="CineStarTV1Serbia.rs" site_id="me/tvprogram#cinestar-tv-rs">CineStar TV 1 Srbija</channel>
     <channel lang="hr" xmltv_id="CineStarTV2Croatia.hr" site_id="ba/tvprogram#cinestar-tv-2">CineStar TV 2</channel>
@@ -141,16 +142,17 @@
     <channel lang="hr" xmltv_id="CineStarTVFantasyCroatia.hr" site_id="ba/tvprogram#cinestar-tv-fantasy">CineStar TV Fantasy</channel>
     <channel lang="hr" xmltv_id="CineStarTVPremiere1Croatia.hr" site_id="ba/tvprogram#cinestar-premiere">CineStar TV Premiere 1</channel>
     <channel lang="hr" xmltv_id="CineStarTVPremiere2Croatia.hr" site_id="ba/tvprogram#cinestar-premiere-2">CineStar TV Premiere 2</channel>
-    <channel lang="hr" xmltv_id="CNNInternationalEurope.us" site_id="al/programacioni#cnn">CNN International Europe</channel>
-    <channel lang="hr" xmltv_id="CNNTurk.tr" site_id="de/tvprogramm#cnn-turk-tv">CNN Türk</channel>
+    <channel lang="hr" xmltv_id="Cinemania.rs" site_id="me/tvprogram#cinemania">Cinemania</channel>
     <channel lang="hr" xmltv_id="ComedyCentralFamilyHungary.hu" site_id="hu/tvmusor#comedy-central-family-hu">Comedy Central Family Hungary</channel>
     <channel lang="hr" xmltv_id="ComedyCentralHungary.hu" site_id="hu/tvmusor#comedy-central-hu">Comedy Central Hungary</channel>
     <channel lang="hr" xmltv_id="CoolTV.hu" site_id="hu/tvmusor#cooltv">Cool</channel>
     <channel lang="hr" xmltv_id="CrimePlusInvestigationUK.uk" site_id="al/programacioni#crime-investigation">Crime + Investigation UK</channel>
     <channel lang="hr" xmltv_id="Cufo.al" site_id="al/programacioni#cufo-tv">Çufo</channel>
     <channel lang="hr" xmltv_id="D1TV.hu" site_id="hu/tvmusor#d1-tv-hu">d1 TV</channel>
-    <channel lang="hr" xmltv_id="DasErste.de" site_id="al/programacioni#ard">Das Erste</channel>
+    <channel lang="hr" xmltv_id="DMSat.rs" site_id="al/programacioni#dmsat">DM Sat</channel>
+    <channel lang="hr" xmltv_id="DWEnglish.de" site_id="al/programacioni#deutchewelle">DW English</channel>
     <channel lang="hr" xmltv_id="DaVinci.de" site_id="ba/tvprogram#da-vinci-learning">Da Vinci</channel>
+    <channel lang="hr" xmltv_id="DasErste.de" site_id="al/programacioni#ard">Das Erste</channel>
     <channel lang="hr" xmltv_id="DecijaTV.rs" site_id="ba/tvprogram#decija-tv">Decija TV</channel>
     <channel lang="hr" xmltv_id="DexyTV.rs" site_id="me/tvprogram#dexy-tv">Dexy TV</channel>
     <channel lang="hr" xmltv_id="DigiAnimalWorldRomania.ro" site_id="hu/tvmusor#digi-animal-world-hu">Digi Animal World</channel>
@@ -162,7 +164,6 @@
     <channel lang="hr" xmltv_id="DiscoveryChannelHungary.hu" site_id="hu/tvmusor#discovery-channel-hu">Discovery Channel Hungary</channel>
     <channel lang="hr" xmltv_id="DiscoveryScience.us" site_id="al/programacioni#discovery-science">Discovery Science</channel>
     <channel lang="hr" xmltv_id="DisneyChannelHungary.hu" site_id="hu/tvmusor#disney-channel-hu">Disney Channel Hungary</channel>
-    <channel lang="hr" xmltv_id="DMSat.rs" site_id="al/programacioni#dmsat">DM Sat</channel>
     <channel lang="hr" xmltv_id="DocuBox.nl" site_id="al/programacioni#docubox-hd">DocuBox HD</channel>
     <channel lang="hr" xmltv_id="DokuTV.hr" site_id="ba/tvprogram#doku-tv">Doku TV</channel>
     <channel lang="hr" xmltv_id="DomaTV.hr" site_id="ba/tvprogram#doma-tv">Doma Hrvatska</channel>
@@ -171,16 +172,15 @@
     <channel lang="hr" xmltv_id="DrFit.bg" site_id="ba/tvprogram#dr-fit">Dr. Fit Channel</channel>
     <channel lang="hr" xmltv_id="DuckTV.sk" site_id="al/programacioni#ducktv">Duck TV HD</channel>
     <channel lang="hr" xmltv_id="Dusk.nl" site_id="ba/tvprogram#dusk">Dusk</channel>
-    <channel lang="hr" xmltv_id="DWEnglish.de" site_id="al/programacioni#deutchewelle">DW English</channel>
     <channel lang="hr" xmltv_id="EEurope.us" site_id="al/programacioni#entertainment">E! Europe</channel>
+    <channel lang="hr" xmltv_id="ETV.mn" site_id="si/tvspored#etv-hd">ETV HD</channel>
     <channel lang="hr" xmltv_id="EnglishClubTV.uk" site_id="al/programacioni#club-tv">English Club TV</channel>
     <channel lang="hr" xmltv_id="EpicDrama.se" site_id="ba/tvprogram#epic-drama">Epic Drama</channel>
     <channel lang="hr" xmltv_id="Erox.nl" site_id="al/programacioni#erox-hd">Erox HD</channel>
     <channel lang="hr" xmltv_id="Eroxxx.nl" site_id="al/programacioni#eroxxx-hd">Eroxxx HD</channel>
     <channel lang="hr" xmltv_id="EskaTV.pl" site_id="me/tvprogram#eska-tv">Eska TV</channel>
-    <channel lang="hr" xmltv_id="ETV.mn" site_id="si/tvspored#etv-hd">ETV HD</channel>
-    <channel lang="hr" xmltv_id="Eurochannel.uk" site_id="al/programacioni#eurochannel">Eurochannel</channel>
     <channel lang="hr" xmltv_id="EuroD.tr" site_id="de/tvprogramm#euro-d">Euro D</channel>
+    <channel lang="hr" xmltv_id="Eurochannel.uk" site_id="al/programacioni#eurochannel">Eurochannel</channel>
     <channel lang="hr" xmltv_id="EuronewsAlbania.al" site_id="al/programacioni#euronews">EuroNews Albania</channel>
     <channel lang="hr" xmltv_id="Eurosport1.fr" site_id="al/programacioni#eurosport">Eurosport 1</channel>
     <channel lang="hr" xmltv_id="Eurosport2.fr" site_id="ba/tvprogram#eurosport2">Eurosport 2</channel>
@@ -188,11 +188,11 @@
     <channel lang="hr" xmltv_id="ExplorerNatyra.al" site_id="al/programacioni#explorer-natyra">Explorer Natyra</channel>
     <channel lang="hr" xmltv_id="ExplorerShkence.al" site_id="al/programacioni#explorer-shkence">Explorer Shkencë</channel>
     <channel lang="hr" xmltv_id="ExtremeSportsChannelEurope.nl" site_id="al/programacioni#extreme-sports">Extreme Sports Channel</channel>
+    <channel lang="hr" xmltv_id="FEM3.hu" site_id="hu/tvmusor#fem3">FEM3</channel>
     <channel lang="hr" xmltv_id="FaceTV.ba" site_id="ba/tvprogram#face-tv">Face TV</channel>
     <channel lang="hr" xmltv_id="FashionBox.nl" site_id="al/programacioni#fashionbox-hd">FashionBox HD</channel>
     <channel lang="hr" xmltv_id="FashionTVEurope.fr" site_id="al/programacioni#fashion-tv">FashionTV Europe</channel>
     <channel lang="hr" xmltv_id="FastFunBox.nl" site_id="al/programacioni#fast-funbox-hd">Fast &amp; FunBox HD</channel>
-    <channel lang="hr" xmltv_id="FEM3.hu" site_id="hu/tvmusor#fem3">FEM3</channel>
     <channel lang="hr" xmltv_id="FightBox.nl" site_id="al/programacioni#fightbox-hd">FightBox HD</channel>
     <channel lang="hr" xmltv_id="FightNetwork.ca" site_id="ba/tvprogram#pink-fight">Fight Network</channel>
     <channel lang="hr" xmltv_id="Film4Hungary.hu" site_id="hu/tvmusor#film4-hu">Film4</channel>
@@ -221,29 +221,29 @@
     <channel lang="hr" xmltv_id="France24French.fr" site_id="al/programacioni#france-24-franch">France 24 Français</channel>
     <channel lang="hr" xmltv_id="France3.fr" site_id="al/programacioni#france-3">France 3</channel>
     <channel lang="hr" xmltv_id="France5.fr" site_id="al/programacioni#france-5">France 5</channel>
+    <channel lang="hr" xmltv_id="GINXEsportsTV.uk" site_id="ba/tvprogram#ginx">Ginx eSports TV International</channel>
     <channel lang="hr" xmltv_id="Galaxy4.hu" site_id="hu/tvmusor#galaxy4">Galaxy4</channel>
     <channel lang="hr" xmltv_id="Gametoon.nl" site_id="al/programacioni#gametoon-hd">Gametoon</channel>
-    <channel lang="hr" xmltv_id="GINXEsportsTV.uk" site_id="ba/tvprogram#ginx">Ginx eSports TV International</channel>
     <channel lang="hr" xmltv_id="Gold.uk" site_id="tvprogram#gold-tv">Gold UK</channel>
     <channel lang="hr" xmltv_id="GolicaTV.si" site_id="tvprogram#golica-tv">Golica TV</channel>
     <channel lang="hr" xmltv_id="Grand.rs" site_id="ba/tvprogram#grand-narodna-tv">Grand</channel>
-    <channel lang="hr" xmltv_id="Haberturk.tr" site_id="al/programacioni#haberturk">Habertürk</channel>
-    <channel lang="hr" xmltv_id="HaHa.rs" site_id="ba/tvprogram#pink-ha-ha">Ha Ha</channel>
-    <channel lang="hr" xmltv_id="Hayat.ba" site_id="al/programacioni#hayat-tv">Hayat</channel>
-    <channel lang="hr" xmltv_id="HayatFolk.ba" site_id="al/programacioni#hayat-folk">Hayat Folk</channel>
-    <channel lang="hr" xmltv_id="HayatMusic.ba" site_id="ba/tvprogram#hayat-music">Hayat Music</channel>
-    <channel lang="hr" xmltv_id="Hayatovci.ba" site_id="ba/tvprogram#hayatovci">Hayatovci</channel>
-    <channel lang="hr" xmltv_id="HayatPlus.ba" site_id="al/programacioni#hayat-plus">Hayat Plus</channel>
     <channel lang="hr" xmltv_id="HBOHungary.hu" site_id="hu/tvmusor#hbo-hu">HBO Hungary</channel>
     <channel lang="hr" xmltv_id="HGTVUK.uk" site_id="ba/tvprogram#hgtv">HGTV UK</channel>
-    <channel lang="hr" xmltv_id="HirTV.hu" site_id="hu/tvmusor#hir-tv">Hír TV</channel>
-    <channel lang="hr" xmltv_id="History2Poland.pl" site_id="ba/tvprogram#history-channel-2">History 2</channel>
     <channel lang="hr" xmltv_id="HNTV.hr" site_id="ba/tvprogram#hntv">HNTV</channel>
     <channel lang="hr" xmltv_id="HRT1.hr" site_id="al/programacioni#htv1">HRT 1</channel>
     <channel lang="hr" xmltv_id="HRT2.hr" site_id="ba/tvprogram#htv2">HRT 2</channel>
     <channel lang="hr" xmltv_id="HRT3.hr" site_id="al/programacioni#htv3">HRT 3</channel>
     <channel lang="hr" xmltv_id="HRT4.hr" site_id="ba/tvprogram#htv4">HRT 4</channel>
     <channel lang="hr" xmltv_id="HRTInternational.hr" site_id="ba/tvprogram#htv5">HRT International</channel>
+    <channel lang="hr" xmltv_id="HaHa.rs" site_id="ba/tvprogram#pink-ha-ha">Ha Ha</channel>
+    <channel lang="hr" xmltv_id="Haberturk.tr" site_id="al/programacioni#haberturk">Habertürk</channel>
+    <channel lang="hr" xmltv_id="Hayat.ba" site_id="al/programacioni#hayat-tv">Hayat</channel>
+    <channel lang="hr" xmltv_id="HayatFolk.ba" site_id="al/programacioni#hayat-folk">Hayat Folk</channel>
+    <channel lang="hr" xmltv_id="HayatMusic.ba" site_id="ba/tvprogram#hayat-music">Hayat Music</channel>
+    <channel lang="hr" xmltv_id="HayatPlus.ba" site_id="al/programacioni#hayat-plus">Hayat Plus</channel>
+    <channel lang="hr" xmltv_id="Hayatovci.ba" site_id="ba/tvprogram#hayatovci">Hayatovci</channel>
+    <channel lang="hr" xmltv_id="HirTV.hu" site_id="hu/tvmusor#hir-tv">Hír TV</channel>
+    <channel lang="hr" xmltv_id="History2Poland.pl" site_id="ba/tvprogram#history-channel-2">History 2</channel>
     <channel lang="hr" xmltv_id="HtMusicChannelHungary.hu" site_id="hu/tvmusor#hit-music">H!t Music Channel Hungary</channel>
     <channel lang="hr" xmltv_id="IDJTV.rs" site_id="ba/tvprogram#idj-world-tv">IDJ TV</channel>
     <channel lang="hr" xmltv_id="INTV.al" site_id="me/tvprogram#intv-al">In TV</channel>
@@ -254,13 +254,13 @@
     <channel lang="hr" xmltv_id="JockyTV.hu" site_id="hu/tvmusor#jockytv">Jocky TV</channel>
     <channel lang="hr" xmltv_id="JugotonTV.hr" site_id="ba/tvprogram#jugoton-tv">Jugoton TV</channel>
     <channel lang="hr" xmltv_id="K3.ba" site_id="ba/tvprogram#kanal-3-prnjavor">K3</channel>
+    <channel lang="hr" xmltv_id="KCN1.rs" site_id="ba/tvprogram#kopernikus">K CN 1</channel>
+    <channel lang="hr" xmltv_id="KCN2.rs" site_id="ba/tvprogram#k-cn-music">K CN 2</channel>
+    <channel lang="hr" xmltv_id="KCN3.rs" site_id="ba/tvprogram#svet-plus">K CN 3</channel>
     <channel lang="hr" xmltv_id="Kanal5.mk" site_id="me/tvprogram#kanal5">Kanal 5</channel>
     <channel lang="hr" xmltv_id="KanalA.si" site_id="tvprogram#kanal-a">Kanal A</channel>
     <channel lang="hr" xmltv_id="KanalD.tr" site_id="al/programacioni#kanal-d-tr">Kanal D</channel>
     <channel lang="hr" xmltv_id="Kazbuka.rs" site_id="rs/tvprogram#kazbuka">Kazbuka</channel>
-    <channel lang="hr" xmltv_id="KCN1.rs" site_id="ba/tvprogram#kopernikus">K CN 1</channel>
-    <channel lang="hr" xmltv_id="KCN2.rs" site_id="ba/tvprogram#k-cn-music">K CN 2</channel>
-    <channel lang="hr" xmltv_id="KCN3.rs" site_id="ba/tvprogram#svet-plus">K CN 3</channel>
     <channel lang="hr" xmltv_id="Kino.si" site_id="si/tvspored#pop-kino">Kino</channel>
     <channel lang="hr" xmltv_id="KinoTV.hr" site_id="ba/tvprogram#kinotv">Kino TV</channel>
     <channel lang="hr" xmltv_id="KitchenTV.rs" site_id="ba/tvprogram#kitchentv">Kitchen TV</channel>
@@ -278,26 +278,26 @@
     <channel lang="hr" xmltv_id="Loviribolov.rs" site_id="ba/tvprogram#lov-i-ribolov">Lov i ribolov</channel>
     <channel lang="hr" xmltv_id="M1Film.hr" site_id="ba/tvprogram#m1-film">M1 Film</channel>
     <channel lang="hr" xmltv_id="M1Gold.hr" site_id="ba/tvprogram#m1-gold">M1 Gold</channel>
-    <channel lang="hr" xmltv_id="MediasetItalia.it" site_id="al/programacioni#mediaset-italia">Mediaset Italia</channel>
-    <channel lang="hr" xmltv_id="Mezzo.fr" site_id="ba/tvprogram#mezzo">Mezzo</channel>
-    <channel lang="hr" xmltv_id="MezzoLiveHD.fr" site_id="ba/tvprogram#mezzo-live-hd">Mezzo Live HD</channel>
-    <channel lang="hr" xmltv_id="MinimaxCEE.cz" site_id="ba/tvprogram#minimax">Minimax Romania</channel>
-    <channel lang="hr" xmltv_id="MiniTV.hr" site_id="tvprogram#minitv">Mini TV</channel>
-    <channel lang="hr" xmltv_id="MoziPlus.hu" site_id="hu/tvmusor#pro4">Mozi+</channel>
-    <channel lang="hr" xmltv_id="Moziverzum.hu" site_id="hu/tvmusor#moziverzum">Moziverzum</channel>
     <channel lang="hr" xmltv_id="MRT1.mk" site_id="ba/tvprogram#mrt1">MRT 1</channel>
     <channel lang="hr" xmltv_id="MRT2Sat.mk" site_id="mk/tv-raspored#mrt2">MRT 2 Sat</channel>
     <channel lang="hr" xmltv_id="MTVGlobal.uk" site_id="hu/tvmusor#mtv-europe-hu">MTV Hungary</channel>
     <channel lang="hr" xmltv_id="MTVLive.uk" site_id="al/programacioni#mtv-live-hd">MTV Live HD</channel>
+    <channel lang="hr" xmltv_id="MediasetItalia.it" site_id="al/programacioni#mediaset-italia">Mediaset Italia</channel>
+    <channel lang="hr" xmltv_id="Mezzo.fr" site_id="ba/tvprogram#mezzo">Mezzo</channel>
+    <channel lang="hr" xmltv_id="MezzoLiveHD.fr" site_id="ba/tvprogram#mezzo-live-hd">Mezzo Live HD</channel>
+    <channel lang="hr" xmltv_id="MiniTV.hr" site_id="tvprogram#minitv">Mini TV</channel>
+    <channel lang="hr" xmltv_id="MinimaxCEE.cz" site_id="ba/tvprogram#minimax">Minimax Romania</channel>
+    <channel lang="hr" xmltv_id="MoziPlus.hu" site_id="hu/tvmusor#pro4">Mozi+</channel>
+    <channel lang="hr" xmltv_id="Moziverzum.hu" site_id="hu/tvmusor#moziverzum">Moziverzum</channel>
     <channel lang="hr" xmltv_id="Muse.al" site_id="al/programacioni#muse">Muse</channel>
     <channel lang="hr" xmltv_id="MuzsikaTV.hu" site_id="hu/tvmusor#muzsika-tv">Muzsika TV</channel>
     <channel lang="hr" xmltv_id="MyZenTV.fr" site_id="al/programacioni#myzen">MyZen TV</channel>
     <channel lang="hr" xmltv_id="N1BosniaHerzegovina.ba" site_id="ba/tvprogram#n1">N1 Bosna i Hercegovina</channel>
     <channel lang="hr" xmltv_id="N1Croatia.hr" site_id="ba/tvprogram#n1-hr">N1 Hrvatska</channel>
     <channel lang="hr" xmltv_id="N1Serbia.rs" site_id="rs/n1-rs">N1 Serbia</channel>
+    <channel lang="hr" xmltv_id="NBATV.us" site_id="al/programacioni#nba-tv">NBA TV</channel>
     <channel lang="hr" xmltv_id="NationalGeographicHungary.hu" site_id="hu/tvmusor#national-geographic-hu">National Geographic Hungary</channel>
     <channel lang="hr" xmltv_id="NationalGeographicWildHungary.hu" site_id="hu/tvmusor#nat-geo-wild-hu">National Geographic Wild Hungary</channel>
-    <channel lang="hr" xmltv_id="NBATV.us" site_id="al/programacioni#nba-tv">NBA TV</channel>
     <channel lang="hr" xmltv_id="News24.al" site_id="al/programacioni#news-24">News 24</channel>
     <channel lang="hr" xmltv_id="NickJrHungary.hu" site_id="hu/tvmusor#nick-jr-hu">Nick Jr Hungary</channel>
     <channel lang="hr" xmltv_id="Nitro.de" site_id="al/programacioni#rtl-nitro">Nitro Deutschland</channel>
@@ -312,9 +312,9 @@
     <channel lang="hr" xmltv_id="NovosadskaTV.rs" site_id="rs/tvprogram#novosadska-tv">Novosadska TV</channel>    
     <channel lang="hr" xmltv_id="OBN.ba" site_id="al/programacioni#obn">OBN</channel>
     <channel lang="hr" xmltv_id="OKanal.ba" site_id="ba/tvprogram#o-kanal">O Kanal</channel>
+    <channel lang="hr" xmltv_id="OTO.si" site_id="si/tvspored#pop-oto">Oto</channel>
     <channel lang="hr" xmltv_id="One.de" site_id="al/programacioni#one">One</channel>
     <channel lang="hr" xmltv_id="OraNews.al" site_id="al/programacioni#ora-news">Ora News</channel>
-    <channel lang="hr" xmltv_id="OTO.si" site_id="si/tvspored#pop-oto">Oto</channel>
     <channel lang="hr" xmltv_id="PaxTV.hu" site_id="hu/tvmusor#pax-tv">Pax TV</channel>
     <channel lang="hr" xmltv_id="PickboxTV.hr" site_id="tvprogram#pickbox-tv">Pickbox TV</channel>
     <channel lang="hr" xmltv_id="Pikaboo.rs" site_id="al/programacioni#pikaboo">Pikaboo</channel>
@@ -332,7 +332,6 @@
     <channel lang="hr" xmltv_id="PinkKuvar.rs" site_id="ba/tvprogram#pink-kuvar">Pink Kuvar</channel>
     <channel lang="hr" xmltv_id="PinkM.me" site_id="ba/tvprogram#pink-m">Pink M</channel>
     <channel lang="hr" xmltv_id="PinkMovies.rs" site_id="ba/tvprogram#pink-movies">Pink Movies</channel>
-    <channel lang="hr" xmltv_id="PinknRoll.rs" site_id="ba/tvprogram#pink-n-roll">Pink n Roll</channel>
     <channel lang="hr" xmltv_id="PinkPedia.rs" site_id="ba/tvprogram#pink-pedia">Pink Pedia</channel>
     <channel lang="hr" xmltv_id="PinkPremium.rs" site_id="ba/tvprogram#pink-premium">Pink Premium</channel>
     <channel lang="hr" xmltv_id="PinkRomance.rs" site_id="ba/tvprogram#pink-movies-2">Pink Romance</channel>
@@ -348,13 +347,14 @@
     <channel lang="hr" xmltv_id="PinkWorld.rs" site_id="ba/tvprogram#pink-world">Pink World</channel>
     <channel lang="hr" xmltv_id="PinkWorldCinema.rs" site_id="ba/tvprogram#pink-world-cinema">Pink World Cinema</channel>
     <channel lang="hr" xmltv_id="PinkZabava.rs" site_id="ba/tvprogram#pink-zabava">Pink Zabava</channel>
-    <channel lang="hr" xmltv_id="PlanetaTV.bg" site_id="mk/tv-raspored#planeta-tv-bg">Planeta TV</channel>
+    <channel lang="hr" xmltv_id="PinknRoll.rs" site_id="ba/tvprogram#pink-n-roll">Pink n Roll</channel>
     <channel lang="hr" xmltv_id="PlanetEarth.bg" site_id="ba/tvprogram#planet-earth">Planet Earth</channel>
     <channel lang="hr" xmltv_id="PlanetTV.si" site_id="tvprogram#planettv">Planet TV</channel>
+    <channel lang="hr" xmltv_id="PlanetaTV.bg" site_id="mk/tv-raspored#planeta-tv-bg">Planeta TV</channel>
     <channel lang="hr" xmltv_id="PlayboyTVEurope.us" site_id="al/programacioni#playboy-tv">Playboy TV Europe</channel>
     <channel lang="hr" xmltv_id="PopTV.si" site_id="tvprogram#pop-tv">Pop TV</channel>
-    <channel lang="hr" xmltv_id="PowerTurkTV.tr" site_id="al/programacioni#powerturk-tv">Power Türk TV</channel>
     <channel lang="hr" xmltv_id="PowerTV.tr" site_id="al/programacioni#power-tv">Power TV</channel>
+    <channel lang="hr" xmltv_id="PowerTurkTV.tr" site_id="al/programacioni#powerturk-tv">Power Türk TV</channel>
     <channel lang="hr" xmltv_id="Prime.hu" site_id="hu/tvmusor#prime">Prime</channel>
     <channel lang="hr" xmltv_id="PrivateTV.nl" site_id="al/programacioni#private-tv">Private TV</channel>
     <channel lang="hr" xmltv_id="ProSieben.de" site_id="al/programacioni#pro-7">ProSieben</channel>
@@ -371,18 +371,6 @@
     <channel lang="hr" xmltv_id="Puls4.at" site_id="al/programacioni#puls4">Puls 4</channel>
     <channel lang="hr" xmltv_id="QVCStyleGermany.de" site_id="de/tvprogramm#qvc-style-de">QVC Style Deutschland</channel>
     <channel lang="hr" xmltv_id="QVCStyleUK.uk" site_id="de/tvprogramm#qvc-style">QVC Style UK</channel>
-    <channel lang="hr" xmltv_id="RadioBremenFernsehen.de" site_id="de/tvprogramm#radiobremen">Radio Bremen Fernsehen</channel>
-    <channel lang="hr" xmltv_id="Rai1.it" site_id="al/programacioni#rai-1">Rai 1</channel>
-    <channel lang="hr" xmltv_id="Rai2.it" site_id="al/programacioni#rai-2">Rai 2</channel>
-    <channel lang="hr" xmltv_id="Rai3.it" site_id="al/programacioni#rai-3">Rai 3</channel>
-    <channel lang="hr" xmltv_id="RaiGulp.it" site_id="al/programacioni#rai-gulp">Rai Gulp</channel>
-    <channel lang="hr" xmltv_id="RaiNews24.it" site_id="al/programacioni#rai-news-24">Rai News 24</channel>
-    <channel lang="hr" xmltv_id="RaiSport.it" site_id="ba/tvprogram#rai-sport">Rai Sport</channel>
-    <channel lang="hr" xmltv_id="RaiStoria.it" site_id="al/programacioni#rai-storia">Rai Storia</channel>
-    <channel lang="hr" xmltv_id="RealTimeItaly.it" site_id="al/programacioni#real-time">Real Time Italia</channel>
-    <channel lang="hr" xmltv_id="RedTV.rs" site_id="al/programacioni#pink-2">Red TV</channel>
-    <channel lang="hr" xmltv_id="ReportTV.al" site_id="al/programacioni#report-tv">Report TV</channel>
-    <channel lang="hr" xmltv_id="Rete4.it" site_id="al/programacioni#rete-4">Rete 4</channel>
     <channel lang="hr" xmltv_id="RT.ru" site_id="al/programacioni#russia-today">RT News</channel>
     <channel lang="hr" xmltv_id="RTDoc.ru" site_id="al/programacioni#rt-documentary">RT Documentary</channel>
     <channel lang="hr" xmltv_id="RTK1.xk" site_id="al/programacioni#rtk-1">RTK 1</channel>
@@ -413,10 +401,23 @@
     <channel lang="hr" xmltv_id="RTV1.rs" site_id="ba/tvprogram#vojvodina-1">RTV 1</channel>
     <channel lang="hr" xmltv_id="RTV2.rs" site_id="tvprogram#vojvodina-2">RTV 2</channel>
     <channel lang="hr" xmltv_id="RTV21.xk" site_id="mk/tv-raspored#rtv21">RTV 21 Sat</channel>
+    <channel lang="hr" xmltv_id="RadioBremenFernsehen.de" site_id="de/tvprogramm#radiobremen">Radio Bremen Fernsehen</channel>
+    <channel lang="hr" xmltv_id="Rai1.it" site_id="al/programacioni#rai-1">Rai 1</channel>
+    <channel lang="hr" xmltv_id="Rai2.it" site_id="al/programacioni#rai-2">Rai 2</channel>
+    <channel lang="hr" xmltv_id="Rai3.it" site_id="al/programacioni#rai-3">Rai 3</channel>
+    <channel lang="hr" xmltv_id="RaiGulp.it" site_id="al/programacioni#rai-gulp">Rai Gulp</channel>
+    <channel lang="hr" xmltv_id="RaiNews24.it" site_id="al/programacioni#rai-news-24">Rai News 24</channel>
+    <channel lang="hr" xmltv_id="RaiSport.it" site_id="ba/tvprogram#rai-sport">Rai Sport</channel>
+    <channel lang="hr" xmltv_id="RaiStoria.it" site_id="al/programacioni#rai-storia">Rai Storia</channel>
+    <channel lang="hr" xmltv_id="RealTimeItaly.it" site_id="al/programacioni#real-time">Real Time Italia</channel>
+    <channel lang="hr" xmltv_id="RedTV.rs" site_id="al/programacioni#pink-2">Red TV</channel>
+    <channel lang="hr" xmltv_id="ReportTV.al" site_id="al/programacioni#report-tv">Report TV</channel>
+    <channel lang="hr" xmltv_id="Rete4.it" site_id="al/programacioni#rete-4">Rete 4</channel>
     <channel lang="hr" xmltv_id="Russia24.ru" site_id="ba/tvprogram#rossija24">Rossiya 24</channel>
     <channel lang="hr" xmltv_id="SAT1.de" site_id="al/programacioni#sat-1">Sat. 1</channel>
     <channel lang="hr" xmltv_id="SAT1GOLD.de" site_id="al/programacioni#sat-1-gold">Sat. 1 Gold</channel>
     <channel lang="hr" xmltv_id="SBNTVInternational.us" site_id="de/tvprogramm#sonlife">SBN International</channel>
+    <channel lang="hr" xmltv_id="STVFolk.al" site_id="al/programacioni#stv-folk">STV Folk</channel>
     <channel lang="hr" xmltv_id="ScifiSerbia.rs" site_id="al/programacioni#scifi">Scifi Srbija</channel>
     <channel lang="hr" xmltv_id="ShowTurk.tr" site_id="al/programacioni#show-turk">Show Turk</channel>
     <channel lang="hr" xmltv_id="Sitel.mk" site_id="tvprogram#sitel">Sitel TV</channel>
@@ -437,50 +438,23 @@
     <channel lang="hr" xmltv_id="SportKlubEsports.rs" site_id="ba/tvprogram#sk-esports">Sport Klub Esports</channel>
     <channel lang="hr" xmltv_id="SportKlubGolf.rs" site_id="ba/tvprogram#golf-klub">Sport Klub Golf</channel>
     <channel lang="hr" xmltv_id="SportKlubHD.rs" site_id="ba/tvprogram#sport-klub-hd">Sport Klub HD</channel>
-    <channel lang="hr" xmltv_id="SportskaTV.hr" site_id="ba/tvprogram#sportska-televizija">Sportska TV</channel>
     <channel lang="hr" xmltv_id="SportTV1.pt" site_id="si/tvspored#sport-tv1-pt">Sport TV 1</channel>
     <channel lang="hr" xmltv_id="SportTV1.si" site_id="si/tvspored#sport-tv-1">Sport TV 1</channel>
     <channel lang="hr" xmltv_id="SportTV2.pt" site_id="si/tvspored#sport-tv2">Sport TV 2</channel>
     <channel lang="hr" xmltv_id="SportTV2.si" site_id="si/tvspored#sport-tv-2">Sport TV 2</channel>
-    <channel lang="hr" xmltv_id="StarsTV.pl" site_id="ba/tvprogram#stars-tv-pl">Stars TV</channel>
+    <channel lang="hr" xmltv_id="SportskaTV.hr" site_id="ba/tvprogram#sportska-televizija">Sportska TV</channel>
     <channel lang="hr" xmltv_id="StarTV.tr" site_id="al/programacioni#star-tv-tr">Star TV</channel>
+    <channel lang="hr" xmltv_id="StarsTV.pl" site_id="ba/tvprogram#stars-tv-pl">Stars TV</channel>
     <channel lang="hr" xmltv_id="Stinet.al" site_id="al/programacioni#stinet">Stinët</channel>
     <channel lang="hr" xmltv_id="StingrayiConcerts.ca" site_id="ba/tvprogram#stingray-iconcerts">Stingray IConcerts</channel>
     <channel lang="hr" xmltv_id="Story4.hu" site_id="hu/tvmusor#story4">Story4</channel>
     <channel lang="hr" xmltv_id="StudioB.rs" site_id="ba/tvprogram#studio-b-yu">Studio B</channel>
-    <channel lang="hr" xmltv_id="STVFolk.al" site_id="al/programacioni#stv-folk">STV Folk</channel>
     <channel lang="hr" xmltv_id="SuperRTL.de" site_id="al/programacioni#super-rtl">Super RTL</channel>
-    <channel lang="hr" xmltv_id="SuperstarTV.rs" site_id="ba/tvprogram#superstar-tv">Superstar TV</channel>
-    <channel lang="hr" xmltv_id="SuperTennis.it" site_id="ba/tvprogram#supertennis-hd">Super Tennis</channel>
     <channel lang="hr" xmltv_id="SuperTV2.hu" site_id="hu/tvmusor#super-tv2">Super TV2</channel>
+    <channel lang="hr" xmltv_id="SuperTennis.it" site_id="ba/tvprogram#supertennis-hd">Super Tennis</channel>
+    <channel lang="hr" xmltv_id="SuperstarTV.rs" site_id="ba/tvprogram#superstar-tv">Superstar TV</channel>
     <channel lang="hr" xmltv_id="TGCom24.it" site_id="al/programacioni#tgcom24">TGCom 24</channel>
-    <channel lang="hr" xmltv_id="TheFishingHuntingChannel.hu" site_id="hu/tvmusor#fishing-hunting">The Fishing &amp; Hunting Channel</channel>
-    <channel lang="hr" xmltv_id="TipTV.al" site_id="al/programacioni#tip-tv">Tip TV</channel>
     <channel lang="hr" xmltv_id="TLCBalkan.us" site_id="al/programacioni#discovery-tlc">TLC</channel>
-    <channel lang="hr" xmltv_id="ToggoPlus.de" site_id="ba/tvprogram#toggo-plus">Toggo Plus</channel>
-    <channel lang="hr" xmltv_id="TopChannel.al" site_id="al/programacioni#top-channel">Top Channel</channel>
-    <channel lang="hr" xmltv_id="TopNews.al" site_id="al/programacioni#top-news">Top News</channel>
-    <channel lang="hr" xmltv_id="TraceUrban.fr" site_id="ba/tvprogram#trace-urban">Trace Urban</channel>
-    <channel lang="hr" xmltv_id="TravelChannelEMEA.uk" site_id="al/programacioni#travel-channel">Travel Channel</channel>
-    <channel lang="hr" xmltv_id="TringAction.al" site_id="al/programacioni#tring-max">Tring Action</channel>
-    <channel lang="hr" xmltv_id="TringClassic.al" site_id="al/programacioni#tring-classic">Tring Classic</channel>
-    <channel lang="hr" xmltv_id="TringComedy.al" site_id="al/programacioni#tring-comedy">Tring Comedy</channel>
-    <channel lang="hr" xmltv_id="TringFamily.al" site_id="al/programacioni#tring-family">Tring Family</channel>
-    <channel lang="hr" xmltv_id="TringFantasy.al" site_id="al/programacioni#tring-fantasy">Tring Fantasy</channel>
-    <channel lang="hr" xmltv_id="TringHistory.al" site_id="al/programacioni#tring-history">Tring History</channel>
-    <channel lang="hr" xmltv_id="TringInternational.al" site_id="al/programacioni#tring-international">Tring International</channel>
-    <channel lang="hr" xmltv_id="TringJolly.al" site_id="al/programacioni#jolly-hd">Tring Jolly HD</channel>
-    <channel lang="hr" xmltv_id="TringKids.al" site_id="al/programacioni#tring-kids">Tring Kids</channel>
-    <channel lang="hr" xmltv_id="TringLife.al" site_id="al/programacioni#tring-life">Tring Life</channel>
-    <channel lang="hr" xmltv_id="TringPlanet.al" site_id="al/programacioni#tring-planet">Tring Planet</channel>
-    <channel lang="hr" xmltv_id="TringShqip.al" site_id="al/programacioni#tring-shqip">Tring Shqip</channel>
-    <channel lang="hr" xmltv_id="TringSport1.al" site_id="al/programacioni#tring-sport-1-hd">Tring Sport 1</channel>
-    <channel lang="hr" xmltv_id="TringSport2.al" site_id="al/programacioni#tring-sport-2-hd">Tring Sport 2</channel>
-    <channel lang="hr" xmltv_id="TringSport3.al" site_id="al/programacioni#tring-sport-3-hd">Tring Sport 3</channel>
-    <channel lang="hr" xmltv_id="TringSportNews.al" site_id="al/programacioni#sport-news-hd">Tring Sport News</channel>
-    <channel lang="hr" xmltv_id="TringSuper.al" site_id="al/programacioni#tring-super">Tring Super</channel>
-    <channel lang="hr" xmltv_id="TringTring.al" site_id="al/programacioni#tring-tring">Tring Tring</channel>
-    <channel lang="hr" xmltv_id="TringWorld.al" site_id="al/programacioni#tring-world">Tring World</channel>
     <channel lang="hr" xmltv_id="TRT1.tr" site_id="al/programacioni#trt-1">TRT 1</channel>
     <channel lang="hr" xmltv_id="TRT2.tr" site_id="al/programacioni#trt-2">TRT 2</channel>
     <channel lang="hr" xmltv_id="TRTArabi.tr" site_id="ba/tvprogram#trt-arabic">TRT Arabi</channel>
@@ -513,13 +487,39 @@
     <channel lang="hr" xmltv_id="TVN.pl" site_id="de/tvprogramm#tvn">TVN</channel>
     <channel lang="hr" xmltv_id="TVN24.pl" site_id="de/tvprogramm#tvn24">TVN 24</channel>
     <channel lang="hr" xmltv_id="TVNoviPazar.rs" site_id="ba/tvprogram#novi-pazar">TV Novi Pazar</channel>
-    <channel lang="hr" xmltv_id="TVPaprikaHungary.hu" site_id="hu/tvmusor#tv-paprika">TV Paprika</channel>
     <channel lang="hr" xmltv_id="TVPPolonia.pl" site_id="de/tvprogramm#polonia-1">TVP Polonia</channel>
+    <channel lang="hr" xmltv_id="TVPaprikaHungary.hu" site_id="hu/tvmusor#tv-paprika">TV Paprika</channel>
     <channel lang="hr" xmltv_id="TVSLO1.si" site_id="ba/tvprogram#slo1">TV Slovenija 1</channel>
     <channel lang="hr" xmltv_id="TVSLO2.si" site_id="ba/tvprogram#slo2">TV Slovenija 2</channel>
     <channel lang="hr" xmltv_id="TVSLO3.si" site_id="ba/tvprogram#slo3">TV Slovenija 3</channel>
     <channel lang="hr" xmltv_id="TVSonce.mk" site_id="mk/tv-raspored#tv-sonce">TV Sonce</channel>
     <channel lang="hr" xmltv_id="TVVijesti.me" site_id="me/tvprogram#tv-vijesti">TV Vijesti</channel>
+    <channel lang="hr" xmltv_id="TheFishingHuntingChannel.hu" site_id="hu/tvmusor#fishing-hunting">The Fishing &amp; Hunting Channel</channel>
+    <channel lang="hr" xmltv_id="TipTV.al" site_id="al/programacioni#tip-tv">Tip TV</channel>
+    <channel lang="hr" xmltv_id="ToggoPlus.de" site_id="ba/tvprogram#toggo-plus">Toggo Plus</channel>
+    <channel lang="hr" xmltv_id="TopChannel.al" site_id="al/programacioni#top-channel">Top Channel</channel>
+    <channel lang="hr" xmltv_id="TopNews.al" site_id="al/programacioni#top-news">Top News</channel>
+    <channel lang="hr" xmltv_id="TraceUrban.fr" site_id="ba/tvprogram#trace-urban">Trace Urban</channel>
+    <channel lang="hr" xmltv_id="TravelChannelEMEA.uk" site_id="al/programacioni#travel-channel">Travel Channel</channel>
+    <channel lang="hr" xmltv_id="TringAction.al" site_id="al/programacioni#tring-max">Tring Action</channel>
+    <channel lang="hr" xmltv_id="TringClassic.al" site_id="al/programacioni#tring-classic">Tring Classic</channel>
+    <channel lang="hr" xmltv_id="TringComedy.al" site_id="al/programacioni#tring-comedy">Tring Comedy</channel>
+    <channel lang="hr" xmltv_id="TringFamily.al" site_id="al/programacioni#tring-family">Tring Family</channel>
+    <channel lang="hr" xmltv_id="TringFantasy.al" site_id="al/programacioni#tring-fantasy">Tring Fantasy</channel>
+    <channel lang="hr" xmltv_id="TringHistory.al" site_id="al/programacioni#tring-history">Tring History</channel>
+    <channel lang="hr" xmltv_id="TringInternational.al" site_id="al/programacioni#tring-international">Tring International</channel>
+    <channel lang="hr" xmltv_id="TringJolly.al" site_id="al/programacioni#jolly-hd">Tring Jolly HD</channel>
+    <channel lang="hr" xmltv_id="TringKids.al" site_id="al/programacioni#tring-kids">Tring Kids</channel>
+    <channel lang="hr" xmltv_id="TringLife.al" site_id="al/programacioni#tring-life">Tring Life</channel>
+    <channel lang="hr" xmltv_id="TringPlanet.al" site_id="al/programacioni#tring-planet">Tring Planet</channel>
+    <channel lang="hr" xmltv_id="TringShqip.al" site_id="al/programacioni#tring-shqip">Tring Shqip</channel>
+    <channel lang="hr" xmltv_id="TringSport1.al" site_id="al/programacioni#tring-sport-1-hd">Tring Sport 1</channel>
+    <channel lang="hr" xmltv_id="TringSport2.al" site_id="al/programacioni#tring-sport-2-hd">Tring Sport 2</channel>
+    <channel lang="hr" xmltv_id="TringSport3.al" site_id="al/programacioni#tring-sport-3-hd">Tring Sport 3</channel>
+    <channel lang="hr" xmltv_id="TringSportNews.al" site_id="al/programacioni#sport-news-hd">Tring Sport News</channel>
+    <channel lang="hr" xmltv_id="TringSuper.al" site_id="al/programacioni#tring-super">Tring Super</channel>
+    <channel lang="hr" xmltv_id="TringTring.al" site_id="al/programacioni#tring-tring">Tring Tring</channel>
+    <channel lang="hr" xmltv_id="TringWorld.al" site_id="al/programacioni#tring-world">Tring World</channel>
     <channel lang="hr" xmltv_id="UlkeTV.tr" site_id="de/tvprogramm#ulke-tv">Ülke TV</channel>
     <channel lang="hr" xmltv_id="Vavoom.rs" site_id="al/programacioni#vavoom">Vavoom</channel>
     <channel lang="hr" xmltv_id="Viasat2.hu" site_id="hu/tvmusor#viasat2">Viasat2</channel>   
