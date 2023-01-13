@@ -29,6 +29,13 @@ module.exports = {
         title: item.title,
         description: parseDescription(info),
         icon: parseIcon(info),
+        actors: parseCast(info,"Avec :"),
+        director: parseCast(info,"De :"),
+        writer: parseCast(info,"Scénario :"),
+        composer: parseCast(info,"Musique :"),
+        presenter: parseCast(info,"Présenté par :"),
+        date: paseDate(info),
+        rating: parseRating(info),
         start,
         stop
       })
@@ -87,4 +94,35 @@ function parseItems(content) {
     acc = acc.concat(curr.contents)
     return acc
   }, [])
+}
+
+function parseCast(info, type) {
+  let people = []
+  if (info && info.personnalities) {
+    const personnalities = info.personnalities.find(i => i.prefix == type)
+    if (!personnalities) return people
+    for(let person of personnalities.personnalitiesList) {
+      people.push(person.title)
+    }
+  }
+  return people
+}
+
+function paseDate(info) {
+  return (info && info.productionYear) ? info.productionYear : null
+}
+
+function parseRating(info) {
+    if (!info || !info.parentalRatings) return null
+    let rating = info.parentalRatings.find(i => i.authority === 'CSA')
+    if (!rating || Array.isArray(rating)) return null
+    if (rating.value === '1') return null
+    if (rating.value === '2') rating.value = '-10'
+    if (rating.value === '3') rating.value = '-12'
+    if (rating.value === '4') rating.value = '-16'
+    if (rating.value === '5') rating.value = '-18'
+    return {
+        system: rating.authority,
+        value: rating.value
+    }
 }

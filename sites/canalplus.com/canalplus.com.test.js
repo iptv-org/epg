@@ -2,56 +2,53 @@
 // npx epg-grabber --config=sites/canalplus.com/canalplus.com.config.js --channels=sites/canalplus.com/canalplus.com.channels.xml --output=guide.xml --days=2
 
 const { parser, url } = require('./canalplus.com.config.js')
+const fs = require('fs')
+const path = require('path')
 const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
+jest.mock('axios')
 
-const date = dayjs.utc('2022-03-07', 'YYYY-MM-DD').startOf('d')
 const channel = {
-  site_id: '312',
-  xmltv_id: 'TF1.fr'
+  site_id: '198',
+  xmltv_id: 'CanalPlusCinemaFrance.fr'
 }
 
-jest.mock('axios')
 
 it('can generate valid url for today', () => {
   const today = dayjs.utc().startOf('d')
   expect(url({ channel, date: today })).toBe(
-    'https://hodor.canalplus.pro/api/v2/mycanal/channels/da2291af3b10e9900d1c55e1a65d3388/312/broadcasts/day/0'
+    'https://hodor.canalplus.pro/api/v2/mycanal/channels/da2291af3b10e9900d1c55e1a65d3388/198/broadcasts/day/0'
   )
 })
 
 it('can generate valid url for tomorrow', () => {
   const tomorrow = dayjs.utc().startOf('d').add(1, 'd')
   expect(url({ channel, date: tomorrow })).toBe(
-    'https://hodor.canalplus.pro/api/v2/mycanal/channels/da2291af3b10e9900d1c55e1a65d3388/312/broadcasts/day/1'
+    'https://hodor.canalplus.pro/api/v2/mycanal/channels/da2291af3b10e9900d1c55e1a65d3388/198/broadcasts/day/1'
   )
 })
 
 it('can parse response', done => {
-  const content = `{"timeSlices":[{"timeSlice":"0","contents":[{"contentID":"18257183_50061","title":"TFou","subtitle":"Emission du 07 mars 2022","startTime":1646630700000,"onClick":{"displayTemplate":"detailSeason","displayName":"TFou","path":"/jeunesse/tfou/h/10709960_50061","URLPage":"https://hodor.canalplus.pro/api/v2/mycanal/detail/da2291af3b10e9900d1c55e1a65d3388/okapi/10709339_50061.json?detailType=detailSeason&objectType=season&broadcastID=PLM_1094261940&episodeId=18257183_50061&brandID=10709960_50061&fromDiff=true"}}]},{"timeSlice":"1","contents":[{"contentID":"18257202_50061","title":"Petits plats en équilibre","subtitle":"Mag. Gastronomie","startTime":1646654100000,"onClick":{"displayTemplate":"detailPage","displayName":"Petits plats en équilibre","path":"/divertissement/petits-plats-en-equilibre-mag-gastronomie/h/18257202_50061","URLPage":"https://hodor.canalplus.pro/api/v2/mycanal/detail/da2291af3b10e9900d1c55e1a65d3388/okapi/18257202_50061.json?detailType=detailPage&objectType=unit&broadcastID=PLM_1094380194&fromDiff=true"}}]}]}`
+    const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'))
 
   axios.get.mockImplementation(url => {
     if (
       url ===
-      'https://hodor.canalplus.pro/api/v2/mycanal/detail/da2291af3b10e9900d1c55e1a65d3388/okapi/10709339_50061.json?detailType=detailSeason&objectType=season&broadcastID=PLM_1094261940&episodeId=18257183_50061&brandID=10709960_50061&fromDiff=true'
+      'https://hodor.canalplus.pro/api/v2/mycanal/detail/da2291af3b10e9900d1c55e1a65d3388/okapi/6564630_50001.json?detailType=detailSeason&objectType=season&broadcastID=PLM_1196447642&episodeId=20482220_50001&brandID=4501558_50001&fromDiff=true'
     ) {
       return Promise.resolve({
-        data: JSON.parse(
-          `{"detail":{"informations":{"URLImage":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/filters:quality({imageQualityPercentage})/img-hapi.canalplus.pro:80/ServiceImage/ImageID/97215037","summary":"Une émission jeunesse qui propose les meilleures séries de dessins animés du moment."}}}`
-        )
+        data: JSON.parse(fs.readFileSync(path.resolve(__dirname, '__data__/program1.json')))
       })
     } else if (
       url ===
-      'https://hodor.canalplus.pro/api/v2/mycanal/detail/da2291af3b10e9900d1c55e1a65d3388/okapi/18257202_50061.json?detailType=detailPage&objectType=unit&broadcastID=PLM_1094380194&fromDiff=true'
+      'https://hodor.canalplus.pro/api/v2/mycanal/detail/da2291af3b10e9900d1c55e1a65d3388/okapi/17230453_50001.json?detailType=detailPage&objectType=unit&broadcastID=PLM_1196447637&fromDiff=true'
     ) {
       return Promise.resolve({
-        data: JSON.parse(
-          `{"detail":{"informations":{"URLImage":"https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/filters:quality({imageQualityPercentage})/img-hapi.canalplus.pro:80/ServiceImage/ImageID/100841894","summary":"Chaque jour, Laurent Mariotte propose des recettes simples et savoureuses pour profiter des ingrédients de saison, en donnant la part belle aux produits locaux."}}}`
-        )
+        data: JSON.parse(fs.readFileSync(path.resolve(__dirname, '__data__/program2.json')))
       })
     } else {
       return Promise.resolve({ data: '' })
@@ -68,20 +65,43 @@ it('can parse response', done => {
 
       expect(result).toMatchObject([
         {
-          start: '2022-03-07T05:25:00.000Z',
-          stop: '2022-03-07T11:55:00.000Z',
-          title: 'TFou',
-          description:
-            'Une émission jeunesse qui propose les meilleures séries de dessins animés du moment.',
-          icon: 'https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/filters:quality({imageQualityPercentage})/img-hapi.canalplus.pro:80/ServiceImage/ImageID/97215037'
+          start: '2023-01-12T06:28:00.000Z',
+          stop: '2023-01-12T12:06:00.000Z',
+          title: 'Le cercle',
+          description: `Tant qu'il y aura du cinéma, LE CERCLE sera là. C'est la seule émission télévisée de débats critiques 100% consacrée au cinéma et elle rentre dans sa 18e saison. Chaque semaine, elle offre des joutes enflammées, joyeuses et sans condescendance, sur les films à l'affiche ; et invite avec \"Le questionnaire du CERCLE\" les réalisatrices et réalisateurs à venir partager leur passion cinéphile.`,
+          icon: 'https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/filters:quality({imageQualityPercentage})/img-hapi.canalplus.pro:80/ServiceImage/ImageID/107297573',
+          presenter: ['Lily Bloom'],
+          rating: {
+            system: 'CSA',
+            value: '-10'
+          }
         },
         {
-          start: '2022-03-07T11:55:00.000Z',
-          stop: '2022-03-07T12:55:00.000Z',
-          title: 'Petits plats en équilibre',
-          description:
-            'Chaque jour, Laurent Mariotte propose des recettes simples et savoureuses pour profiter des ingrédients de saison, en donnant la part belle aux produits locaux.',
-          icon: 'https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/filters:quality({imageQualityPercentage})/img-hapi.canalplus.pro:80/ServiceImage/ImageID/100841894'
+          start: '2023-01-12T12:06:00.000Z',
+          stop: '2023-01-12T13:06:00.000Z',
+          title: 'Illusions perdues',
+          description: `Pendant la Restauration, Lucien de Rubempré, jeune provincial d'Angoulême, se rêve poète. Il débarque à Paris en quête de gloire. Il a le soutien de Louise de Bargeton, une aristocrate qui croit en son talent. Pour gagner sa vie, Lucien trouve un emploi dans le journal dirigé par le peu scrupuleux Etienne Lousteau...`,
+          icon: 'https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/filters:quality({imageQualityPercentage})/img-hapi.canalplus.pro:80/ServiceImage/ImageID/107356485',
+          director: ['Xavier Giannoli'],
+          actors: [
+            'Benjamin Voisin',
+            'Cécile de France',
+            'Vincent Lacoste',
+            'Xavier Dolan',
+            'Gérard Depardieu',
+            'Salomé Dewaels',
+            'Jeanne Balibar',
+            'Louis-Do de Lencquesaing',
+            'Alexis Barbosa',
+            'Jean-François Stévenin',
+            'André Marcon',
+            'Marie Cornillon'
+          ],
+          writer: ['Xavier Giannoli'],
+          rating: {
+            system: 'CSA',
+            value: '-10'
+          }
         }
       ])
       done()
@@ -89,13 +109,8 @@ it('can parse response', done => {
     .catch(done)
 })
 
-it('can handle empty guide', done => {
-  parser({
-    content: `{"currentPage":{"displayTemplate":"error","displayName":"Page introuvable","path":"/erreur","BOName":"Page introuvable","BOLayoutName":"Erreur 404"},"title":"Page introuvable","text":"La page que vous demandez est introuvable. Si le problème persiste, vous pouvez contacter l'assistance de CANAL+.","code":404}`
-  })
-    .then(result => {
-      expect(result).toMatchObject([])
-      done()
-    })
-    .catch(done)
+it('can handle empty guide', async () => {
+    const content = fs.readFileSync(path.resolve(__dirname, '__data__/no_content.json'))
+    const result = await parser({ content })
+    expect(result).toMatchObject([])
 })
