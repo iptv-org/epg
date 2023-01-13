@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site site="tv.blue.ch">
   <channels>
-    <channel lang="ar" xmltv_id="2MInternational.ma" site_id="3">2M Monde</channel>
-    <channel lang="ar" xmltv_id="Alarabiya.ae" site_id="13">Alarabiya</channel>
-    <channel lang="ar" xmltv_id="AlJazeeraChannel.qa" site_id="14">Aljazeera Channel</channel>
-    <channel lang="ar" xmltv_id="AlMasriyah.eg" site_id="154">Al Masriyah</channel>
-    <channel lang="ar" xmltv_id="DubaiTV.ae" site_id="138">Dubai TV</channel>
-    <channel lang="ar" xmltv_id="Watania1.tn" site_id="1673">Watania 1</channel>
     <channel lang="bs" xmltv_id="BNTV.ba" site_id="48">BN TV Satelitski</channel>
     <channel lang="bs" xmltv_id="HayatFolk.ba" site_id="196">Hayat Folk</channel>
     <channel lang="bs" xmltv_id="HayatPlus.ba" site_id="197">Hayat Plus</channel>
@@ -200,12 +194,16 @@
     <channel lang="de" xmltv_id="ZweiMusicTelevision.de" site_id="1791">Zwei 2 Music TV</channel>
     <channel lang="el" xmltv_id="ERTWorld.gr" site_id="153">ERT World</channel>
     <channel lang="el" xmltv_id="RIKSat.cy" site_id="351">RIK Sat</channel>
+    <channel lang="en" xmltv_id="2MInternational.ma" site_id="3">2M Monde</channel>
     <channel lang="en" xmltv_id="4seven.uk" site_id="1678">4Seven</channel>
     <channel lang="en" xmltv_id="5Action.uk" site_id="1669">5 Action</channel>
     <channel lang="en" xmltv_id="5Select.uk" site_id="1670">5 Select</channel>
     <channel lang="en" xmltv_id="5Star.uk" site_id="1652">5 Star</channel>
     <channel lang="en" xmltv_id="5USA.uk" site_id="1411">5 USA</channel>
+    <channel lang="en" xmltv_id="Alarabiya.ae" site_id="13">Alarabiya</channel>
+    <channel lang="en" xmltv_id="AlJazeeraChannel.qa" site_id="14">Aljazeera Channel</channel>
     <channel lang="en" xmltv_id="AlJazeeraEnglish.qa" site_id="15">Aljazeera English</channel>
+    <channel lang="en" xmltv_id="AlMasriyah.eg" site_id="154">Al Masriyah</channel>
     <channel lang="en" xmltv_id="BBCFour.uk" site_id="35">BBC Four</channel>
     <channel lang="en" xmltv_id="BBCNews.uk" site_id="36">BBC News</channel>
     <channel lang="en" xmltv_id="BBCOneEngland.uk" site_id="37">BBC One</channel>
@@ -216,6 +214,7 @@
     <channel lang="en" xmltv_id="CBBC.uk" site_id="85">CBBC</channel>
     <channel lang="en" xmltv_id="CBeebies.uk" site_id="86">CBeebies UK</channel>
     <channel lang="en" xmltv_id="CBSRealityEMEA.uk" site_id="1717">CBS Reality Europe</channel>
+    <channel lang="en" xmltv_id="CCTV4Europe.cn" site_id="88">CCTV 4 Europe</channel>
     <channel lang="en" xmltv_id="CGTN.cn" site_id="87">CGTN</channel>
     <channel lang="en" xmltv_id="Challenge.uk" site_id="1682">Challenge UK</channel>
     <channel lang="en" xmltv_id="Channel4.uk" site_id="89">Channel 4 UK</channel>
@@ -227,6 +226,7 @@
     <channel lang="en" xmltv_id="Dave.uk" site_id="1507">Dave UK</channel>
     <channel lang="en" xmltv_id="DMAXUK.uk" site_id="1654">DMAX UK</channel>
     <channel lang="en" xmltv_id="Drama.uk" site_id="902">Drama UK</channel>
+    <channel lang="en" xmltv_id="DubaiTV.ae" site_id="138">Dubai TV</channel>
     <channel lang="en" xmltv_id="DWEnglish.de" site_id="142">DW English</channel>
     <channel lang="en" xmltv_id="E4.uk" site_id="146">E4 UK</channel>
     <channel lang="en" xmltv_id="EDGEsport.uk" site_id="1722">Edge Sport</channel>
@@ -265,6 +265,7 @@
     <channel lang="en" xmltv_id="Now80s.uk" site_id="1715">Now 80&apos;s</channel>
     <channel lang="en" xmltv_id="Now90s.uk" site_id="94">Now 90&apos;s</channel>
     <channel lang="en" xmltv_id="PBSAmerica.uk" site_id="1404">PBS America</channel>
+    <channel lang="en" xmltv_id="PhoenixInfoNewsChannel.hk" site_id="306">Phoenix InfoNews Channel</channel>
     <channel lang="en" xmltv_id="Pick.uk" site_id="1677">Pick UK</channel>
     <channel lang="en" xmltv_id="QuestUK.uk" site_id="1604">Quest UK</channel>
     <channel lang="en" xmltv_id="RT.ru" site_id="373">RT News</channel>
@@ -277,6 +278,7 @@
     <channel lang="en" xmltv_id="TraceHits.uk" site_id="91">Trace Hits</channel>
     <channel lang="en" xmltv_id="ViaplayXtra.uk" site_id="1603">Viaplay Xtra</channel>
     <channel lang="en" xmltv_id="VoATVGlobal.us" site_id="1637">Voice of America</channel>
+    <channel lang="en" xmltv_id="Watania1.tn" site_id="1673">Watania 1</channel>
     <channel lang="en" xmltv_id="Yesterday.uk" site_id="1674">Yesterday</channel>
     <channel lang="es" xmltv_id="AragonTVInternacional.es" site_id="1535">Aragón TV Internacional</channel>
     <channel lang="es" xmltv_id="Canal24Horas.es" site_id="71">Canal 24 Horas</channel>
@@ -599,7 +601,5 @@
     <channel lang="tr" xmltv_id="TRTSpor.tr" site_id="1479">TRT Spor</channel>
     <channel lang="tr" xmltv_id="TRTTurk.tr" site_id="620">TRT Türk</channel>
     <channel lang="tr" xmltv_id="TV8International.tr" site_id="638">TV 8 International</channel>
-    <channel lang="en" xmltv_id="CCTV4Europe.cn" site_id="88">CCTV 4 Europe</channel>
-    <channel lang="en" xmltv_id="PhoenixInfoNewsChannel.hk" site_id="306">Phoenix InfoNews Channel</channel>
   </channels>
 </site>
