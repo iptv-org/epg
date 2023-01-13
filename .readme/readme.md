@@ -8,6 +8,8 @@ EPG (Electronic Program Guide) for thousands of TV channels collected from diffe
 
 To load a program guide, all you need to do is copy the link to one or more of the guides from the list below and paste it into your favorite player.
 
+You can also find the link to the guide by the name of the channel via https://iptv-org.github.io.
+
 ## Guides
 
 All guides also have a compressed and JSON version. To load them just change the extension from `.xml` to `.xml.gz` or `.json` respectively.
