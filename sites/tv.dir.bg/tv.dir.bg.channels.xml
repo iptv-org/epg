@@ -24,6 +24,7 @@
     <channel lang="bg" xmltv_id="BulgariaOnAir.bg" site_id="24">Bulgaria On Air</channel>
     <channel lang="bg" xmltv_id="CartoonNetworkBulgaria.bg" site_id="6">Cartoon Network</channel>
     <channel lang="bg" xmltv_id="CBSRealityEMEA.uk" site_id="93">CBS Reality</channel>
+    <channel lang="bg" xmltv_id="ChannelOne.ru" site_id="55">Perviy kanal</channel>
     <channel lang="bg" xmltv_id="Cinemax2Bulgaria.bg" site_id="105">Cinemax 2</channel>
     <channel lang="bg" xmltv_id="CinemaxBulgaria.bg" site_id="90">Cinemax</channel>
     <channel lang="bg" xmltv_id="CNNInternationalEurope.us" site_id="49">CNN</channel>
@@ -44,18 +45,14 @@
     <channel lang="bg" xmltv_id="Eurosport2.fr" site_id="101">Eurosport 2</channel>
     <channel lang="bg" xmltv_id="Evrokom.bg" site_id="14">Evrokom</channel>
     <channel lang="bg" xmltv_id="ExtremeSportsChannelEurope.nl" site_id="220">Extreme Sports Channel</channel>
-    <channel lang="bg" xmltv_id="FashionTVEurope.fr" site_id="233">FashionTV</channel>
     <channel lang="bg" xmltv_id="FenFolk.bg" site_id="301">Fen Folk</channel>
     <channel lang="bg" xmltv_id="FenTV.bg" site_id="71">Fen TV</channel>
-    <channel lang="bg" xmltv_id="FightBox.nl" site_id="280">FightBox HD</channel>
-    <!-- <channel lang="bg" xmltv_id="FilmBoxCentralEurope.us" site_id="354">FilmBox</channel> -->
     <channel lang="bg" xmltv_id="FilmBoxExtraBulgaria.bg" site_id="282">FilmBox Extra HD</channel>
     <channel lang="bg" xmltv_id="FilmBoxStarsBulgaria.bg" site_id="355">FilmBox Plus</channel>
     <channel lang="bg" xmltv_id="FoodNetworkEMEA.us" site_id="234">Food Network</channel>
     <channel lang="bg" xmltv_id="FoxBulgaria.bg" site_id="230">Fox</channel>
     <channel lang="bg" xmltv_id="FoxCrimeBulgaria.bg" site_id="86">Fox Crime</channel>
     <channel lang="bg" xmltv_id="FoxLifeBulgaria.bg" site_id="69">Fox Life</channel>
-    <channel lang="bg" xmltv_id="FUELTV.at" site_id="283">Fuel TV</channel>
     <channel lang="bg" xmltv_id="HBO2CEE.hu" site_id="89">HBO 2</channel>
     <channel lang="bg" xmltv_id="HBO3CEE.hu" site_id="319">HBO 3</channel>
     <channel lang="bg" xmltv_id="HBOCEE.hu" site_id="58">HBO</channel>
@@ -70,8 +67,6 @@
     <channel lang="bg" xmltv_id="MaxSport3.bg" site_id="367">Max Sport 3</channel>
     <channel lang="bg" xmltv_id="MaxSport4.bg" site_id="368">Max Sport 4</channel>
     <channel lang="bg" xmltv_id="MCMTop.fr" site_id="50">MCM Top</channel>
-    <channel lang="bg" xmltv_id="MezzoLiveHD.fr" site_id="381">Mezzo Live HD</channel>
-    <channel lang="bg" xmltv_id="MTVHitsUK.uk" site_id="251">MTV Hits</channel>
     <channel lang="bg" xmltv_id="NationalGeographicBulgaria.bg" site_id="27">National Geographic</channel>
     <channel lang="bg" xmltv_id="NationalGeographicWildBulgaria.bg" site_id="150">National Geographic Wild</channel>
     <channel lang="bg" xmltv_id="NickelodeonBulgaria.bg" site_id="232">Nickelodeon</channel>
@@ -81,7 +76,6 @@
     <channel lang="bg" xmltv_id="NovaTV.bg" site_id="28">Nova TV</channel>
     <channel lang="bg" xmltv_id="NTVMir.ru" site_id="379">NTV Mir</channel>
     <channel lang="bg" xmltv_id="OkhotaiRybalka.ru" site_id="156">Okhota i Rybalka</channel>
-    <channel lang="bg" xmltv_id="ChannelOne.ru" site_id="55">Perviy kanal</channel>
     <channel lang="bg" xmltv_id="PlanetaFolk.bg" site_id="114">Planeta Folk</channel>
     <channel lang="bg" xmltv_id="PlanetaTV.bg" site_id="60">Planeta HD</channel>
     <channel lang="bg" xmltv_id="POTV.bg" site_id="211">POTV</channel>
@@ -90,7 +84,6 @@
     <channel lang="bg" xmltv_id="SKAT.bg" site_id="38">SKAT</channel>
     <channel lang="bg" xmltv_id="Telemedia.bg" site_id="325">Telemedia</channel>
     <channel lang="bg" xmltv_id="TLCBalkan.us" site_id="178">TLC</channel>
-    <channel lang="bg" xmltv_id="TraceSportStars.fr" site_id="300">Trace Sport Stars</channel>
     <channel lang="bg" xmltv_id="TravelChannelEMEA.uk" site_id="243">Travel Channel</channel>
     <channel lang="bg" xmltv_id="TravelTV.bg" site_id="154">Travel TV</channel>
     <channel lang="bg" xmltv_id="TV1.bg" site_id="216">TV 1</channel>
@@ -102,5 +95,12 @@
     <channel lang="bg" xmltv_id="ViasatExplore.se" site_id="91">Viasat Explore</channel>
     <channel lang="bg" xmltv_id="ViasatHistory.se" site_id="7">Viasat History HD</channel>
     <channel lang="bg" xmltv_id="ViasatNature.se" site_id="168">Viasat Nature</channel>
+    <channel lang="en" xmltv_id="FashionTVEurope.fr" site_id="233">FashionTV</channel>
+    <channel lang="en" xmltv_id="FightBox.nl" site_id="280">FightBox HD</channel>
+    <channel lang="en" xmltv_id="FUELTV.at" site_id="283">Fuel TV</channel>
+    <channel lang="en" xmltv_id="MezzoLiveHD.fr" site_id="381">Mezzo Live HD</channel>
+    <channel lang="en" xmltv_id="MTVHitsUK.uk" site_id="251">MTV Hits</channel>
+    <channel lang="en" xmltv_id="TraceSportStars.fr" site_id="300">Trace Sport Stars</channel>
+    <!-- <channel lang="bg" xmltv_id="" site_id="354">FilmBox</channel> -->
   </channels>
 </site>
