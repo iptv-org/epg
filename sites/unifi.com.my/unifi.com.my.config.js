@@ -8,54 +8,53 @@ dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
 module.exports = {
-    site: 'unifi.com.my',
-    days: 2,
-    url: `https://unifi.com.my/tv/api/tv`,
-    request: {
-        cache: {
-            ttl: 60 * 60 * 1000 // 1 hour
-        },
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
-        },
-        data({ date }) {
-            const params = new URLSearchParams()
-            params.append('date', date.format('YYYY-MM-DD'))
-            return params
-        }
+  site: 'unifi.com.my',
+  days: 2,
+  url: `https://unifi.com.my/tv/api/tv`,
+  request: {
+    cache: {
+      ttl: 60 * 60 * 1000 // 1 hour
     },
-    parser({ content, channel, date }) {
-        let programs = []
-        const items = parseItems(content, channel)
-        items.forEach(item => {
-            const start = parseStart(item, date)
-            const stop = start.add(item.minute, 'minute')
-            programs.push({
-                title: item.name,
-                start,
-                stop
-            })
-        })
-        return programs
+    method: 'POST',
+    headers: {
+      'x-requested-with': 'XMLHttpRequest'
+    },
+    data({ date }) {
+      const params = new URLSearchParams()
+      params.append('date', date.format('YYYY-MM-DD'))
+      return params
     }
+  },
+  parser({ content, channel, date }) {
+    let programs = []
+    const items = parseItems(content, channel)
+    items.forEach(item => {
+      const start = parseStart(item, date)
+      const stop = start.add(item.minute, 'minute')
+      programs.push({
+        title: item.name,
+        start,
+        stop
+      })
+    })
+    return programs
+  }
 }
 
 function parseItems(content, channel) {
-    try {
-        const data = JSON.parse(content)
-        if (!data) return []
-        if (!Array.isArray(data)) return []
+  try {
+    const data = JSON.parse(content)
+    if (!data) return []
+    if (!Array.isArray(data)) return []
 
-        const channelData = data.find(i => i.id == channel.site_id)
-        return channelData.items && Array.isArray(channelData.items) ? channelData.items : []
-    } catch (err) {
-        return []
-    }
+    const channelData = data.find(i => i.id == channel.site_id)
+    return channelData.items && Array.isArray(channelData.items) ? channelData.items : []
+  } catch (err) {
+    return []
+  }
 }
 
 function parseStart(item, date) {
-    const time = `${date.format('YYYY-MM-DD')} ${item.start_time}`
-    return dayjs.tz(time, 'YYYY-MM-DD H:mma', 'Asia/Kuala_Lumpur')
+  const time = `${date.format('YYYY-MM-DD')} ${item.start_time}`
+  return dayjs.tz(time, 'YYYY-MM-DD H:mma', 'Asia/Kuala_Lumpur')
 }
-
