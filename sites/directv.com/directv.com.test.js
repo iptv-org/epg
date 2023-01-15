@@ -18,7 +18,6 @@ const channel = {
   site_id: '249#249',
   xmltv_id: 'ComedyCentralEast.us'
 }
-const content = `{"schedule":[{"secLiveStreaming":"N","chNum":15,"authCode":"NA","chRec":true,"chCall":"WTAP","chId":2073,"secondaryChannelId":0,"chHd":true,"secondary":false,"blackOut":false,"chAdult":false,"chCat":["HDTV Channels","Local Channels"],"chLogoId":875,"detailsLinkUrl":"/Channels/Parkersburg-WV-WTAP-NBC-15-A3-HD-15","schedules":[{"primaryImageUrl":"/db_photos/default/TV/tv.jpg","restartAllowed":false,"subcategoryList":["Series","Reality"],"gridViewPrimaryImageUrl":"/db_photos/default/TV/tv_p.jpg","rating":"TVPG","description":null,"title":"Home Sweet Home","episodeNumber":3,"duration":60,"price":0,"repeat":false,"lookBack":false,"tvAdvisory":["L"],"dimension":"2D","ltd":"","programID":"EP039886740003","blackoutCode":"NA","airTime":"2021-10-30T00:00:00.000+0000","secLiveStreaming":"N","prOrd":0,"episodeTitle":"Art Is My God","authCode":"NA","format":"HD","seasonNumber":1,"listViewPrimaryImageUrl":"/db_photos/default/TV/tv_l.jpg","eventCode":"","mainCategory":"TV","hd":1,"liveStreaming":"N"}],"chKey":"2073_1476352800000","chName":"Parkersburg, WV WTAP NBC 15 A3 HD","chDesc":"NBC television services from WTAPDT-TV, 15, Parkersburg, WV.","liveStreaming":"N","digitalAdInsertableLive":false}],"reporting":{"channelschedules":{"success":false,"reportingData":"reporting for app/json/channelschedules/channelschedules not implemented yet"}},"messagekeys":null,"contingencies":[]}`
 
 it('can generate valid url', () => {
   const result = url({ date, channel })
@@ -61,7 +60,7 @@ it('can parse response', done => {
             'Kay (Tommy Lee Jones) and Jay (Will Smith) reunite to provide our best line of defense against a seductress who levels the toughest challenge yet to the MIBs mission statement: protecting the earth from the scum of the universe. While investigating a routine crime, Jay uncovers a plot masterminded by Serleena (Boyle), a Kylothian monster who disguises herself as a lingerie model. When Serleena takes the MIB building hostage, there is only one person Jay can turn to -- his former MIB partner.',
           date: '2002',
           icon: 'https://www.directv.com/db_photos/movies/AllPhotosAPGI/29160/29160_aa.jpg',
-          category: [	'Comedy','Movies Anywhere','Action/Adventure','Science Fiction' ],
+          category: ['Comedy', 'Movies Anywhere', 'Action/Adventure', 'Science Fiction'],
           rating: {
             system: 'MPA',
             value: 'TV14'
@@ -74,8 +73,8 @@ it('can parse response', done => {
           sub_title: 'Goth Kids 3: Dawn of the Posers',
           description: 'The goth kids are sent to a camp for troubled children.',
           icon: 'https://www.directv.com/db_photos/showcards/v5/AllPhotos/184338/p184338_b_v5_aa.jpg',
-          category: [	'Series','Animation','Comedy' ],
-          season : 17,
+          category: ['Series', 'Animation', 'Comedy'],
+          season: 17,
           episode: 4,
           rating: {
             system: 'MPA',
@@ -87,7 +86,6 @@ it('can parse response', done => {
     })
     .catch(done)
 })
-
 
 it('can handle empty guide', done => {
   const content = fs.readFileSync(path.resolve(__dirname, '__data__/no-content.json'))
