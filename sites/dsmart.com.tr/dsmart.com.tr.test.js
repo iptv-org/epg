@@ -2,49 +2,63 @@
 
 const { parser, url } = require('./dsmart.com.tr.config.js')
 const dayjs = require('dayjs')
+const fs = require('fs')
+const path = require('path')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
-const date = dayjs.utc('2021-11-06', 'YYYY-MM-DD').startOf('d')
+const date = dayjs.utc('2023-01-16', 'YYYY-MM-DD').startOf('d')
 const channel = {
-  site_id: '58d29bb0eefad3db9c606290',
-  xmltv_id: 'MovieSmartPremium.tr'
+  site_id: '5fe07d7acfef0b1593275751',
+  xmltv_id: 'SinemaTV.tr'
 }
-const content = `{"meta": {"code": 200, "message": "OK"}, "data": {"total": 200, "channels": [{"rating": 3, "ch_id": 805, "logo": "59f97253cfef0b75f4723ded", "ch_no": 1, "is_hd": true, "genre": [1, 2], "packages": ["58cfc9c7e138237a591f9a61", "58cfc9c7e138237a591f9a62", "58cfc9c7e138237a591f9a5f", "58cfc9c7e138237a591f9a60"], "slug": "moviesmart-premium", "hd": true, "_id": "58d29bb0eefad3db9c606290", "order": 1, "channel_name": "MovieSmart Premium", "description": "", "schedule": [{"actor": "", "year": "2015", "id": "60488f69cfef0b15935d70d7", "subject": "Goosebumps: Canavarlar Firarda (Goosebumps) T\\u00fcr: Komedi - Macera Y\\u00f6netmen: Rob Letterman Oyuncular: Jack Black, Dylan Minnette, Odeya Rush", "audio_subtitles": 3, "start_date": "2021-11-03T21:15:00Z", "channel": "58d29bb0eefad3db9c606290", "description": "B\\u00fcy\\u00fck \\u015fehirden k\\u00fc\\u00e7\\u00fck bir kasabaya ta\\u015f\\u0131nd\\u0131\\u011f\\u0131 i\\u00e7in mutsuz olan Zach Cooper, ta\\u015f\\u0131nd\\u0131klar\\u0131 evin tam yan\\u0131ndaki evde ya\\u015fayan g\\u00fczel k\\u0131z Hannah ile kar\\u015f\\u0131la\\u015f\\u0131p, Champ ile de k\\u0131sa s\\u00fcrede arkada\\u015f olunca yeni bir hayat i\\u00e7in umutlan\\u0131r. Ancak Zach, Hannah'n\\u0131n gizemli babas\\u0131n\\u0131n Goosebumps kitaplar\\u0131n\\u0131n yazar\\u0131, R.L. Stine oldu\\u011funu \\u00f6\\u011frendi\\u011finde, olaylar\\u0131n normal gitmeyece\\u011fini anlar. (Dil:T\\u00fcrk\\u00e7e/Orijinal - Altyaz\\u0131:T\\u00fcrk\\u00e7e/\\u0130ngilizce)", "director": "", "end_date": "2021-11-03T23:55:00Z", "genre": "sinema/genel", "program_name": "Goosebumps: Canavarlar Firarda", "day": "2021-11-05T21:00:00Z", "episode": "", "screen_violence": 4, "_id": "6185a3f6cfef0b1593e44e63", "duration": "1:40:00"},{"actor": "", "year": "2015", "id": "60488f69cfef0b15935d70d7", "subject": "Goosebumps: Canavarlar Firarda (Goosebumps) T\\u00fcr: Komedi - Macera Y\\u00f6netmen: Rob Letterman Oyuncular: Jack Black, Dylan Minnette, Odeya Rush", "audio_subtitles": 3, "start_date": "2021-11-03T23:55:00Z", "channel": "58d29bb0eefad3db9c606290", "description": "B\\u00fcy\\u00fck \\u015fehirden k\\u00fc\\u00e7\\u00fck bir kasabaya ta\\u015f\\u0131nd\\u0131\\u011f\\u0131 i\\u00e7in mutsuz olan Zach Cooper, ta\\u015f\\u0131nd\\u0131klar\\u0131 evin tam yan\\u0131ndaki evde ya\\u015fayan g\\u00fczel k\\u0131z Hannah ile kar\\u015f\\u0131la\\u015f\\u0131p, Champ ile de k\\u0131sa s\\u00fcrede arkada\\u015f olunca yeni bir hayat i\\u00e7in umutlan\\u0131r. Ancak Zach, Hannah'n\\u0131n gizemli babas\\u0131n\\u0131n Goosebumps kitaplar\\u0131n\\u0131n yazar\\u0131, R.L. Stine oldu\\u011funu \\u00f6\\u011frendi\\u011finde, olaylar\\u0131n normal gitmeyece\\u011fini anlar. (Dil:T\\u00fcrk\\u00e7e/Orijinal - Altyaz\\u0131:T\\u00fcrk\\u00e7e/\\u0130ngilizce)", "director": "", "end_date": "2021-11-03T01:55:00Z", "genre": "sinema/genel", "program_name": "Goosebumps: Canavarlar Firarda", "day": "2021-11-05T21:00:00Z", "episode": "", "screen_violence": 4, "_id": "6185a3f6cfef0b1593e44e63", "duration": "1:40:00"}]}]}}`
 
 it('can generate valid url', () => {
   expect(url({ date, channel })).toBe(
-    'https://www.dsmart.com.tr/api/v1/public/epg/schedules?page=1&limit=500&day=2021-11-06'
+    'https://www.dsmart.com.tr/api/v1/public/epg/schedules?page=1&limit=500&day=2023-01-16'
   )
 })
 
 it('can parse response', () => {
-  const result = parser({ date, channel, content })
-  expect(result).toMatchObject([
-    {
-      start: '2021-11-05T21:15:00.000Z',
-      stop: '2021-11-05T23:55:00.000Z',
-      title: 'Goosebumps: Canavarlar Firarda',
-      category: 'sinema/genel',
-      description: `Büyük şehirden küçük bir kasabaya taşındığı için mutsuz olan Zach Cooper, taşındıkları evin tam yanındaki evde yaşayan güzel kız Hannah ile karşılaşıp, Champ ile de kısa sürede arkadaş olunca yeni bir hayat için umutlanır. Ancak Zach, Hannah'nın gizemli babasının Goosebumps kitaplarının yazarı, R.L. Stine olduğunu öğrendiğinde, olayların normal gitmeyeceğini anlar. (Dil:Türkçe/Orijinal - Altyazı:Türkçe/İngilizce)`
-    },
-    {
-      start: '2021-11-05T23:55:00.000Z',
-      stop: '2021-11-06T01:55:00.000Z',
-      title: 'Goosebumps: Canavarlar Firarda',
-      category: 'sinema/genel',
-      description: `Büyük şehirden küçük bir kasabaya taşındığı için mutsuz olan Zach Cooper, taşındıkları evin tam yanındaki evde yaşayan güzel kız Hannah ile karşılaşıp, Champ ile de kısa sürede arkadaş olunca yeni bir hayat için umutlanır. Ancak Zach, Hannah'nın gizemli babasının Goosebumps kitaplarının yazarı, R.L. Stine olduğunu öğrendiğinde, olayların normal gitmeyeceğini anlar. (Dil:Türkçe/Orijinal - Altyazı:Türkçe/İngilizce)`
-    }
-  ])
+  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'))
+  const results = parser({ channel, content }).map(p => {
+    p.start = p.start.toJSON()
+    p.stop = p.stop.toJSON()
+    return p
+  })
+
+  expect(results[0]).toMatchObject({
+    start: '2023-01-15T22:00:00.000Z',
+    stop: '2023-01-15T23:45:00.000Z',
+    title: 'Bizi Ayıran Her Şey',
+    category: 'sinema/genel',
+    description: `Issızlığın ortasında yer alan orta sınıf bir evde bir anne kız yaşamaktadır. Çevrelerindeki taşları insanlarla yaşadıkları çatışmalar, anne-kızın hayatını olumsuz yönde etkilemektedir. Kızının ansızın ortadan kaybolması, bu çatışmaların seviyesini artıracak ve anne, kızını bulmak için her türlü yola başvuracaktır.`
+  })
+
+  expect(results[1]).toMatchObject({
+    start: '2023-01-15T23:45:00.000Z',
+    stop: '2023-01-16T01:30:00.000Z',
+    title: 'Pixie',
+    category: 'sinema/genel',
+    description: `Annesinin intikamını almak isteyen Pixie, dahiyane bir soygun planlar. Fakat işler planladığı gibi gitmeyince kendini İrlanda’nın vahşi gangsterleri tarafından kovalanan iki adamla birlikte kaçarken bulur.`
+  })
+
+  expect(results[12]).toMatchObject({
+    start: '2023-01-16T20:30:00.000Z',
+    stop: '2023-01-16T22:30:00.000Z',
+    title: 'Seberg',
+    category: 'sinema/genel',
+    description: `Başrolünde ünlü yıldız Kristen Stewart’ın yer aldığı politik gerilim, 1960’ların sonunda insan hakları aktivisti Hakim Jamal ile yaşadığı politik ve romantik ilişki sebebiyle FBI tarafından hedef alınan, Fransız Yeni Dalgası’nın sevilen yüzü ve Serseri Aşıklar’ın yıldızı Jean Seberg’ün çarpıcı hikayesini anlatıyor.`
+  })
 })
 
 it('can handle empty guide', () => {
-  const result = parser({
-    date,
+  const results = parser({
     channel,
-    content: `{"meta": {"code": 200, "message": "OK"}, "data": {"total": 200, "channels": []}}`
+    content: fs.readFileSync(path.resolve(__dirname, '__data__/no_content.json'))
   })
-  expect(result).toMatchObject([])
+
+  expect(results).toMatchObject([])
 })
