@@ -59,7 +59,7 @@ it('can parse response', done => {
           title: 'Men in Black II',
           description:
             'Kay (Tommy Lee Jones) and Jay (Will Smith) reunite to provide our best line of defense against a seductress who levels the toughest challenge yet to the MIBs mission statement: protecting the earth from the scum of the universe. While investigating a routine crime, Jay uncovers a plot masterminded by Serleena (Boyle), a Kylothian monster who disguises herself as a lingerie model. When Serleena takes the MIB building hostage, there is only one person Jay can turn to -- his former MIB partner.',
-          year: '2002',
+          date: '2002',
           icon: 'https://www.directv.com/db_photos/movies/AllPhotosAPGI/29160/29160_aa.jpg',
           category: [	'Comedy','Movies Anywhere','Action/Adventure','Science Fiction' ],
           rating: {

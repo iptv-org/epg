@@ -34,7 +34,7 @@ module.exports = {
         sub_title: item.episodeTitle,
         description: parseDescription(detail),
         rating: parseRating(item),
-        year: parseYear(detail),
+        date: parseYear(detail),
         category: item.subcategoryList,
         season: item.seasonNumber,
         episode: item.episodeNumber,
