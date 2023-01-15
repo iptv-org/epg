@@ -1,4 +1,3 @@
-const { padStart } = require('lodash')
 const cheerio = require('cheerio')
 const axios = require('axios')
 const dayjs = require('dayjs')
@@ -9,14 +8,22 @@ dayjs.extend(utc)
 module.exports = {
   site: 'directv.com',
   days: 2,
-  url({ channel, date }) {
-    return `https://www.directv.com/json/channelschedule?channels=${
-      channel.site_id
-    }&startTime=${date.format()}&hours=24`
+  request: {
+    cache: {
+      ttl: 60 * 60 * 1000 // 1 hour
+    }
   },
-  async parser({ content }) {
+  url({ date, channel }) {
+    const [channelId, childId] = channel.site_id.split('#')
+    return `https://www.directv.com/json/channelschedule?channels=${
+      channelId
+    }&startTime=${date.format()}&hours=24&chId=${
+      childId
+    }`
+  },
+  async parser({ content, channel }) {
     const programs = []
-    const items = parseItems(content)
+    const items = parseItems(content, channel)
     for (let item of items) {
       if (item.programID === '-1') continue
       const detail = await loadProgramDetail(item.programID)
@@ -24,10 +31,14 @@ module.exports = {
       const stop = start.add(item.duration, 'm')
       programs.push({
         title: item.title,
+        sub_title: item.episodeTitle,
         description: parseDescription(detail),
+        rating: parseRating(item),
+        date: parseYear(detail),
         category: item.subcategoryList,
         season: item.seasonNumber,
         episode: item.episodeNumber,
+        icon: parseIcon(item),
         start,
         stop
       })
@@ -65,7 +76,20 @@ module.exports = {
 function parseDescription(detail) {
   return detail ? detail.description : null
 }
-
+function parseYear(detail) {
+  return detail ? detail.releaseYear : null
+}
+function parseRating(item) {
+  return item.rating
+    ? {
+        system: 'MPA',
+        value: item.rating
+      }
+    : null
+}
+function parseIcon(item) {
+  return item.primaryImageUrl ? `https://www.directv.com${item.primaryImageUrl}` : null
+}
 function loadProgramDetail(programID) {
   return axios
     .get(`https://www.directv.com/json/program/flip/${programID}`)
@@ -78,8 +102,12 @@ function parseStart(item) {
   return dayjs.utc(item.airTime)
 }
 
-function parseItems(content) {
+function parseItems(content, channel) {
   const data = JSON.parse(content)
+  if (!data) return []
+  if (!Array.isArray(data.schedule)) return []
 
-  return data && data.schedule && data.schedule[0] ? data.schedule[0].schedules : []
+  const [, childId] = channel.site_id.split('#')
+  const channelData = data.schedule.find(i => i.chId == childId)
+  return channelData.schedules && Array.isArray(channelData.schedules) ? channelData.schedules : []
 }
