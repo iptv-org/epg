@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site site="tvplus.com.tr">
   <channels>
+    <channel lang="de" xmltv_id="DWDeutsch.de" site_id="103">DW Deutsch</channel>
+    <channel lang="en" xmltv_id="AlJazeeraChannel.qa" site_id="140">Aljazeera Channel</channel>
+    <channel lang="en" xmltv_id="AlJazeeraEnglish.qa" site_id="6">Aljazeera English</channel>
+    <channel lang="en" xmltv_id="BabyTV.uk" site_id="29">Baby TV Europe</channel>
+    <channel lang="en" xmltv_id="DWEnglish.de" site_id="94">DW English</channel>
+    <channel lang="en" xmltv_id="EDGEsport.uk" site_id="137">Edge Sport</channel>
+    <channel lang="en" xmltv_id="EuronewsEnglish.fr" site_id="171">EuroNews English</channel>
+    <channel lang="en" xmltv_id="France24English.fr" site_id="16">France 24 English</channel>
+    <channel lang="en" xmltv_id="SkyNewsArabia.ae" site_id="142">Sky News Arabia</channel>
+    <channel lang="en" xmltv_id="TRTArabi.tr" site_id="76">TRT Arabi</channel>
+    <channel lang="en" xmltv_id="TRTWorld.tr" site_id="38">TRT World</channel>
+    <channel lang="fr" xmltv_id="France24Arabic.fr" site_id="161">France 24 Arabic</channel>
+    <channel lang="fr" xmltv_id="TV5MondeEurope.fr" site_id="36">TV5Monde Europe</channel>
     <channel lang="tr" xmltv_id="24KitchenTurkey.tr" site_id="108">24 Kitchen Türkiye</channel>
     <channel lang="tr" xmltv_id="24TV.tr" site_id="32">24 TV</channel>
     <channel lang="tr" xmltv_id="360.tr" site_id="86">360</channel>
@@ -9,14 +22,11 @@
     <channel lang="tr" xmltv_id="AHaber.tr" site_id="160">A Haber</channel>
     <channel lang="tr" xmltv_id="AkilliTV.tr" site_id="19">Akilli TV</channel>
     <channel lang="tr" xmltv_id="AkitTV.tr" site_id="13">Akit TV</channel>
-    <channel lang="tr" xmltv_id="AlJazeeraChannel.qa" site_id="140">Aljazeera Channel</channel>
-    <channel lang="tr" xmltv_id="AlJazeeraEnglish.qa" site_id="6">Aljazeera English</channel>
     <channel lang="tr" xmltv_id="Animaux.fr" site_id="127">Animaux</channel>
     <channel lang="tr" xmltv_id="APara.tr" site_id="79">A Para</channel>
     <channel lang="tr" xmltv_id="ASpor.tr" site_id="3">A Spor</channel>
     <channel lang="tr" xmltv_id="ATV.tr" site_id="124">ATV Türkiye</channel>
     <channel lang="tr" xmltv_id="Automotolachaine.fr" site_id="4">Automoto la chaîne</channel>
-    <channel lang="tr" xmltv_id="BabyTV.uk" site_id="29">Baby TV Europe</channel>
     <channel lang="tr" xmltv_id="BenguturkTV.tr" site_id="47">Bengü Türk</channel>
     <channel lang="tr" xmltv_id="BeyazTV.tr" site_id="135">Beyaz TV</channel>
     <channel lang="tr" xmltv_id="BizimevTV.tr" site_id="118">Bizimev TV</channel>
@@ -36,16 +46,12 @@
     <channel lang="tr" xmltv_id="DMAXTurkey.tr" site_id="180">DMAX Türkiye</channel>
     <channel lang="tr" xmltv_id="DreamTurk.tr" site_id="153">Dream Türk</channel>
     <channel lang="tr" xmltv_id="DuckTV.sk" site_id="37">Duck TV HD</channel>
-    <channel lang="tr" xmltv_id="DWDeutsch.de" site_id="103">DW Deutsch</channel>
-    <channel lang="tr" xmltv_id="DWEnglish.de" site_id="94">DW English</channel>
     <channel lang="tr" xmltv_id="EBATVIlkokul.tr" site_id="2299">EBA TV Ilkokul</channel>
     <channel lang="tr" xmltv_id="EBATVLise.tr" site_id="2301">EBA TV Lise</channel>
     <channel lang="tr" xmltv_id="EBATVOrtaokul.tr" site_id="2300">EBA TV Ortaokul</channel>
-    <channel lang="tr" xmltv_id="EDGEsport.uk" site_id="137">Edge Sport</channel>
     <channel lang="tr" xmltv_id="Ekoturk.tr" site_id="100">Ekotürk</channel>
     <channel lang="tr" xmltv_id="EnglishClubTV.uk" site_id="107">English Club TV</channel>
     <channel lang="tr" xmltv_id="EpicDrama.se" site_id="167">Epic Drama</channel>
-    <channel lang="tr" xmltv_id="EuronewsEnglish.fr" site_id="171">EuroNews English</channel>
     <channel lang="tr" xmltv_id="Eurosport1.fr" site_id="77">Eurosport 1</channel>
     <channel lang="tr" xmltv_id="Eurosport2.fr" site_id="106">Eurosport 2</channel>
     <channel lang="tr" xmltv_id="FashionOne.uk" site_id="80">Fashion One Europe</channel>
@@ -53,17 +59,15 @@
     <channel lang="tr" xmltv_id="FMTV.tr" site_id="163">FM TV</channel>
     <channel lang="tr" xmltv_id="FoxCrimeTurkey.tr" site_id="82">Fox Crime Türkiye</channel>
     <channel lang="tr" xmltv_id="FoxTurkey.tr" site_id="93">Fox Türkiye</channel>
-    <channel lang="tr" xmltv_id="France24Arabic.fr" site_id="161">France 24 Arabic</channel>
-    <channel lang="tr" xmltv_id="France24English.fr" site_id="16">France 24 English</channel>
     <channel lang="tr" xmltv_id="FXTurkey.us" site_id="131">FX Türkiye</channel>
     <channel lang="tr" xmltv_id="HaberGlobal.tr" site_id="5">Haber Global</channel>
     <channel lang="tr" xmltv_id="Haberturk.tr" site_id="87">Habertürk</channel>
     <channel lang="tr" xmltv_id="HalkTV.tr" site_id="91">Halk TV</channel>
     <channel lang="tr" xmltv_id="KadirgaTV.tr" site_id="110">Kadirga TV</channel>
-    <channel lang="tr" xmltv_id="Kanal7.tr" site_id="90">Kanal 7</channel>
     <channel lang="tr" xmltv_id="Kanal23.tr" site_id="2359">Kanal 23</channel>
     <channel lang="tr" xmltv_id="Kanal26.tr" site_id="143">Kanal 26</channel>
     <channel lang="tr" xmltv_id="Kanal33.tr" site_id="146">Kanal 33</channel>
+    <channel lang="tr" xmltv_id="Kanal7.tr" site_id="90">Kanal 7</channel>
     <channel lang="tr" xmltv_id="KanalD.tr" site_id="88">Kanal D</channel>
     <channel lang="tr" xmltv_id="KanalSim.cy" site_id="197">Kanal Sim</channel>
     <channel lang="tr" xmltv_id="KanalV.tr" site_id="114">Kanal V</channel>
@@ -95,9 +99,9 @@
     <channel lang="tr" xmltv_id="RTenEspanol.ru" site_id="104">RT Español</channel>
     <channel lang="tr" xmltv_id="SemerkandTV.tr" site_id="97">Semerkand TV</channel>
     <channel lang="tr" xmltv_id="ShowTV.tr" site_id="130">Show TV</channel>
-    <channel lang="tr" xmltv_id="Sinema2.tr" site_id="199">Sinema 2</channel>
     <channel lang="tr" xmltv_id="Sinema1001.tr" site_id="181">Sinema 1001</channel>
     <channel lang="tr" xmltv_id="Sinema1002.tr" site_id="190">Sinema 1002</channel>
+    <channel lang="tr" xmltv_id="Sinema2.tr" site_id="199">Sinema 2</channel>
     <channel lang="tr" xmltv_id="SinemaAile.tr" site_id="155">Sinema Aile</channel>
     <channel lang="tr" xmltv_id="SinemaAile2.tr" site_id="182">Sinema Aile 2</channel>
     <channel lang="tr" xmltv_id="SinemaAksiyon.tr" site_id="129">Sinema Aksiyon</channel>
@@ -106,7 +110,6 @@
     <channel lang="tr" xmltv_id="SinemaTV.tr" site_id="166">Sinema TV</channel>
     <channel lang="tr" xmltv_id="SinemaYerli.tr" site_id="12">Sinema Yerli</channel>
     <channel lang="tr" xmltv_id="SinemaYerli2.tr" site_id="61">Sinema Yerli 2</channel>
-    <channel lang="tr" xmltv_id="SkyNewsArabia.ae" site_id="142">Sky News Arabia</channel>
     <channel lang="tr" xmltv_id="SportsTV.tr" site_id="173">Sports TV</channel>
     <channel lang="tr" xmltv_id="SSport.tr" site_id="11">S Sport</channel>
     <channel lang="tr" xmltv_id="SSport2.tr" site_id="170">S Sport 2</channel>
@@ -123,7 +126,6 @@
     <channel lang="tr" xmltv_id="TRT1.tr" site_id="144">TRT 1</channel>
     <channel lang="tr" xmltv_id="TRT2.tr" site_id="83">TRT 2</channel>
     <channel lang="tr" xmltv_id="TRT3.tr" site_id="116">TRT 3</channel>
-    <channel lang="tr" xmltv_id="TRTArabi.tr" site_id="76">TRT Arabi</channel>
     <channel lang="tr" xmltv_id="TRTAvaz.tr" site_id="193">TRT Avaz</channel>
     <channel lang="tr" xmltv_id="TRTBelgesel.tr" site_id="21">TRT Belgesel</channel>
     <channel lang="tr" xmltv_id="TRTCocuk.tr" site_id="99">TRT Çocuk</channel>
@@ -133,17 +135,15 @@
     <channel lang="tr" xmltv_id="TRTSpor.tr" site_id="31">TRT Spor</channel>
     <channel lang="tr" xmltv_id="TRTSporYildiz.tr" site_id="205">TRT Spor Yildiz</channel>
     <channel lang="tr" xmltv_id="TRTTurk.tr" site_id="156">TRT Türk</channel>
-    <channel lang="tr" xmltv_id="TRTWorld.tr" site_id="38">TRT World</channel>
-    <channel lang="tr" xmltv_id="TV5MondeEurope.fr" site_id="36">TV5Monde Europe</channel>
+    <channel lang="tr" xmltv_id="TV100.tr" site_id="179">TV 100</channel>
     <channel lang="tr" xmltv_id="TV8.tr" site_id="134">TV 8</channel>
     <channel lang="tr" xmltv_id="TV85.tr" site_id="188">TV 8.5</channel>
-    <channel lang="tr" xmltv_id="TV100.tr" site_id="179">TV 100</channel>
     <channel lang="tr" xmltv_id="TVNet.tr" site_id="92">TV Net</channel>
     <channel lang="tr" xmltv_id="UcanKusTV.tr" site_id="207">UçanKus TV</channel>
     <channel lang="tr" xmltv_id="UlkeTV.tr" site_id="145">Ülke TV</channel>
     <channel lang="tr" xmltv_id="UlusalKanal.tr" site_id="2240">Ulusal Kanal</channel>
     <channel lang="tr" xmltv_id="VavTV.tr" site_id="2859">Vav TV</channel>
-    <channel lang="tr" xmltv_id="ViasatExplore.se" site_id="59">Viasat Explore</channel>
-    <channel lang="tr" xmltv_id="ViasatHistory.se" site_id="44">Viasat History HD</channel>
+    <channel lang="tr" xmltv_id="ViasatExploreTurkey.tr" site_id="59">Viasat Explore</channel>
+    <channel lang="tr" xmltv_id="ViasatHistoryTurkey.tr" site_id="44">Viasat History HD</channel>
   </channels>
 </site>
