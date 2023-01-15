@@ -6,6 +6,7 @@ dayjs.extend(utc)
 dayjs.extend(timezone)
 
 module.exports = {
+  skip: true, // NOTE: return an HTTP error 302 on requests from GitHub server (https://github.com/iptv-org/epg/issues/1654#issuecomment-1382915005)
   site: 'osn.com',
   days: 2,
   url: `https://www.osn.com/CMSPages/TVScheduleWebService.asmx/GetTVChannelsProgramTimeTable`,
