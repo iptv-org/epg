@@ -1,7 +1,9 @@
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
+const customParseFormat = require('dayjs/plugin/customParseFormat')
 
 dayjs.extend(utc)
+dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'dsmart.com.tr',
@@ -16,23 +18,27 @@ module.exports = {
       'YYYY-MM-DD'
     )}`
   },
-  parser: function ({ content, channel, date }) {
+  parser: function ({ content, channel }) {
     let offset = -1
     let programs = []
     const items = parseItems(content, channel)
-    items.forEach(item => {
-      let start = parseStart(item, date)
-      if (offset === -1 && start.hour() > 18) start = start.subtract(1, 'd')
-      let stop = parseStop(item, date)
-      if (offset === -1 && stop.hour() > 18) stop = stop.subtract(1, 'd')
-      if (start.hour() < 18 || stop.hour() < 18) offset = 0
+    items.forEach((item, i) => {
+      const prev = programs[programs.length - 1]
+      let start
+      if (prev) {
+        start = parseStart(item, prev.stop)
+      } else {
+        start = parseStart(item, dayjs.utc(item.day))
+      }
+      let duration = parseDuration(item)
+      let stop = start.add(duration, 's')
 
       programs.push({
         title: item.program_name,
         category: item.genre,
-        description: item.description,
-        start: start.toJSON(),
-        stop: stop.toJSON()
+        description: item.description.trim(),
+        start,
+        stop
       })
     })
 
@@ -41,22 +47,21 @@ module.exports = {
 }
 
 function parseStart(item, date) {
-  return dayjs.utc(item.start_date).set('date', date.get('date'))
+  const time = dayjs.utc(item.start_date)
+
+  return dayjs.utc(`${date.format('YYYY-MM-DD')} ${time.format('HH:mm:ss')}`, 'YYYY-MM-DD HH:mm:ss')
 }
 
-function parseStop(item, date) {
-  return dayjs.utc(item.end_date).set('date', date.get('date'))
-}
+function parseDuration(item) {
+  const [_, H, mm, ss] = item.duration.match(/(\d+):(\d+):(\d+)$/)
 
-function parseContent(content, channel) {
-  const data = JSON.parse(content)
-  if (!data || !data.data || !Array.isArray(data.data.channels)) return null
-
-  return data.data.channels.find(i => i._id == channel.site_id)
+  return parseInt(H) * 3600 + parseInt(mm) * 60 + parseInt(ss)
 }
 
 function parseItems(content, channel) {
-  const data = parseContent(content, channel)
+  const data = JSON.parse(content)
+  if (!data || !data.data || !Array.isArray(data.data.channels)) return null
+  const channelData = data.data.channels.find(i => i._id == channel.site_id)
 
-  return data ? data.schedule : []
+  return channelData && Array.isArray(channelData.schedule) ? channelData.schedule : []
 }
