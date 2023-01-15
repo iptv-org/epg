@@ -17,11 +17,11 @@
     <channel lang="bg" xmltv_id="BNT3.bg" site_id="bg/tv-programa#bnt-3">BNT 3</channel>
     <channel lang="bg" xmltv_id="BNT4.bg" site_id="bg/tv-programa#bnt-4">BNT 4</channel>
     <channel lang="bg" xmltv_id="BoxTV.bg" site_id="bg/tv-programa#box-tv-bg">Box TV</channel>
-    <channel lang="bg" xmltv_id="BTV.bg" site_id="bg/tv-programa#btv-bg">BTV</channel>
-    <channel lang="bg" xmltv_id="BTVAction.bg" site_id="bg/tv-programa#btv-action">BTV Action</channel>
-    <channel lang="bg" xmltv_id="BTVCinema.bg" site_id="bg/tv-programa#btv-cinema">BTV Cinema</channel>
-    <channel lang="bg" xmltv_id="BTVComedy.bg" site_id="bg/tv-programa#btv-comedy">BTV Comedy</channel>
-    <channel lang="bg" xmltv_id="BTVLady.bg" site_id="bg/tv-programa#btv-lady">BTV Lady</channel>
+    <channel lang="bg" xmltv_id="bTV.bg" site_id="bg/tv-programa#btv-bg">BTV</channel>
+    <channel lang="bg" xmltv_id="bTVAction.bg" site_id="bg/tv-programa#btv-action">BTV Action</channel>
+    <channel lang="bg" xmltv_id="bTVCinema.bg" site_id="bg/tv-programa#btv-cinema">BTV Cinema</channel>
+    <channel lang="bg" xmltv_id="bTVComedy.bg" site_id="bg/tv-programa#btv-comedy">BTV Comedy</channel>
+    <channel lang="bg" xmltv_id="bTVLady.bg" site_id="bg/tv-programa#btv-lady">BTV Lady</channel>
     <channel lang="bg" xmltv_id="Bulgaria24.bg" site_id="bg/tv-programa#bulgaria-24-bg">Bulgaria 24</channel>
     <channel lang="bg" xmltv_id="BulgariaOnAir.bg" site_id="bg/tv-programa#bulgaria-on-air">Bulgaria On Air</channel>
     <channel lang="bg" xmltv_id="CinemaPlus.bg" site_id="bg/tv-programa#cinema-bg">Cinema+</channel>
@@ -38,7 +38,7 @@
     <channel lang="bg" xmltv_id="FilmBoxStarsBulgaria.bg" site_id="bg/tv-programa#filmbox-stars-bg">FilmBox Stars Adria</channel>
     <channel lang="bg" xmltv_id="FolklorTV.bg" site_id="bg/tv-programa#folklor-tv-bg">Folklor TV</channel>
     <channel lang="bg" xmltv_id="FoxBulgaria.bg" site_id="bg/tv-programa#fox-bg">Fox Bulgaria</channel>
-    <channel lang="bg" xmltv_id="FoxCrimeAdria.us" site_id="bg/tv-programa#fox-crime-bg">Fox Crime Adria</channel>
+    <channel lang="bg" xmltv_id="FoxCrimeBulgaria.bg" site_id="bg/tv-programa#fox-crime-bg">Fox Crime Bulgaria</channel>
     <channel lang="bg" xmltv_id="FoxLifeBulgaria.bg" site_id="bg/tv-programa#fox-life-bg">Fox Life Bulgaria</channel>
     <channel lang="bg" xmltv_id="HBOCEE.hu" site_id="bg/tv-programa#hbo-bg">HBO</channel>
     <channel lang="bg" xmltv_id="HobbyTV.cz" site_id="bg/tv-programa#hobby-tv">Hobby TV</channel>
@@ -213,7 +213,7 @@
     <channel lang="hr" xmltv_id="FilmThriller.al" site_id="al/programacioni#film-thriller-digitalb">Film Thriller</channel>
     <channel lang="hr" xmltv_id="FoodNetworkEMEA.us" site_id="al/programacioni#food-network">Food Network EMEA</channel>
     <channel lang="hr" xmltv_id="FoxCrimeSerbia.rs" site_id="al/programacioni#fox-crime">Fox Crime Srbija</channel>
-    <channel lang="hr" xmltv_id="FoxLifeRegional.us" site_id="al/programacioni#fox-life">Fox Life Regional</channel>
+    <!-- <channel lang="hr" xmltv_id="" site_id="al/programacioni#fox-life">Fox Life</channel> -->
     <channel lang="hr" xmltv_id="FoxTurkey.tr" site_id="al/programacioni#fox-turkey">Fox Türkiye</channel>
     <channel lang="hr" xmltv_id="France2.fr" site_id="al/programacioni#france-2">France 2</channel>
     <channel lang="hr" xmltv_id="France24Arabic.fr" site_id="ba/tvprogram#france-24-arabic">France 24 Arabic</channel>
