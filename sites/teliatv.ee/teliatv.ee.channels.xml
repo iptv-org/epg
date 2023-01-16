@@ -2,6 +2,7 @@
 <site site="teliatv.ee">
   <channels>
     <channel lang="de" xmltv_id="ARTEFrance.fr" site_id="24">ARTE Français</channel>
+    <channel lang="de" xmltv_id="ntv.de" site_id="145">N-TV</channel>
     <channel lang="de" xmltv_id="RTLGermany.de" site_id="20">RTL Deutschland</channel>
     <channel lang="de" xmltv_id="SAT1.de" site_id="11">Sat. 1 Deutschland</channel>
     <channel lang="en" xmltv_id="1Plus2.lv" site_id="1341">1+2</channel>
@@ -31,15 +32,10 @@
     <channel lang="en" xmltv_id="Duo4.ee" site_id="101">Duo 4</channel>
     <channel lang="en" xmltv_id="Duo5.ee" site_id="728">Duo 5</channel>
     <channel lang="en" xmltv_id="Duo6.ee" site_id="1080">Duo 6</channel>
-    <channel lang="en" xmltv_id="Duo7.ee" site_id="1343">Duo 7</channel>
     <channel lang="en" xmltv_id="Dusk.nl" site_id="1088">Dusk</channel>
     <channel lang="en" xmltv_id="DWEnglish.de" site_id="73">DW English</channel>
-    <channel lang="en" xmltv_id="EestiKanal.ee" site_id="1333">Eesti Kanal</channel>
     <channel lang="en" xmltv_id="EntusiastTV.ee" site_id="1290">Entusiast TV</channel>
     <channel lang="en" xmltv_id="EpicDrama.se" site_id="1292">Epic Drama</channel>
-    <channel lang="en" xmltv_id="ETV.ee" site_id="1">ETV</channel>
-    <channel lang="en" xmltv_id="ETV2.ee" site_id="111">ETV 2</channel>
-    <channel lang="en" xmltv_id="ETVPlus.ee" site_id="1252">ETV +</channel>
     <channel lang="en" xmltv_id="Eurochannel.uk" site_id="1241">Eurochannel</channel>
     <channel lang="en" xmltv_id="EuronewsRussian.fr" site_id="59">EuroNews</channel>
     <channel lang="en" xmltv_id="Eurosport1Russia.ru" site_id="35">Eurosport 1</channel>
@@ -50,7 +46,6 @@
     <channel lang="en" xmltv_id="Football.ru" site_id="262">Telekanal Futbol</channel>
     <channel lang="en" xmltv_id="FoxLifeRussia.ru" site_id="105">Fox Life</channel>
     <channel lang="en" xmltv_id="FoxRussia.ru" site_id="77">Fox</channel>
-    <channel lang="en" xmltv_id="France2.fr" site_id="256">France 2</channel>
     <channel lang="en" xmltv_id="France24English.fr" site_id="143">France 24</channel>
     <channel lang="en" xmltv_id="FridayInternational.ru" site_id="1304">Pyatnitsa!</channel>
     <channel lang="en" xmltv_id="FUELTV.at" site_id="1182">Fuel TV</channel>
@@ -64,7 +59,6 @@
     <channel lang="en" xmltv_id="KidZoneMini.ee" site_id="1293">Kidzone+</channel>
     <channel lang="en" xmltv_id="KidZoneTV.ee" site_id="1086">KidZone TV</channel>
     <channel lang="en" xmltv_id="KIKA.de" site_id="78">KIKA</channel>
-    <channel lang="en" xmltv_id="LifeTV.ee" site_id="220">Life TV</channel>
     <channel lang="en" xmltv_id="LoloTV.lv" site_id="222">Lolo TV</channel>
     <channel lang="en" xmltv_id="MCMTopRussia.ru" site_id="84">MCM Top Russia</channel>
     <channel lang="en" xmltv_id="Mezzo.fr" site_id="36">Mezzo</channel>
@@ -83,22 +77,17 @@
     <channel lang="en" xmltv_id="NickelodeonCIS.ru" site_id="58">Nickelodeon</channel>
     <channel lang="en" xmltv_id="NickJrScandinavia.nl" site_id="1300">Nick Jr</channel>
     <channel lang="en" xmltv_id="NicktoonsScandinavia.nl" site_id="1301">Nicktoons</channel>
-    <channel lang="en" xmltv_id="ntv.de" site_id="145">N-TV</channel>
     <channel lang="en" xmltv_id="NTVBaltic.ru" site_id="14">NTV Mir Baltic</channel>
     <channel lang="en" xmltv_id="NTVSeries.ru" site_id="1289">NTV Serial</channel>
     <channel lang="en" xmltv_id="OkhotaiRybalka.ru" site_id="74">Okhota i Rybalka</channel>
-    <channel lang="en" xmltv_id="OrsentTV.ee" site_id="141">Orsent TV</channel>
     <channel lang="en" xmltv_id="PBKEstonia.ee" site_id="28">Perviy Baltijskyi Kanal</channel>
     <channel lang="en" xmltv_id="PrivateTV.nl" site_id="148">Private TV</channel>
     <channel lang="en" xmltv_id="ProSieben.de" site_id="60">ProSieben</channel>
-    <channel lang="en" xmltv_id="Rai1.it" site_id="86">Rai 1</channel>
     <channel lang="en" xmltv_id="RBKTV.ru" site_id="97">RBK TV</channel>
     <channel lang="en" xmltv_id="RENTVBaltic.lv" site_id="23">REN TV Baltic</channel>
     <channel lang="en" xmltv_id="RFMTV.fr" site_id="83">RFM TV</channel>
-    <channel lang="en" xmltv_id="RTLGermany.de" site_id="20">RTL Deutschland</channel>
     <channel lang="en" xmltv_id="RTRPlaneta.ru" site_id="18">RTR Planeta</channel>
     <channel lang="en" xmltv_id="Russia24.ru" site_id="153">Rossiya 24</channel>
-    <channel lang="en" xmltv_id="SAT1.de" site_id="11">Sat. 1 Deutschland</channel>
     <channel lang="en" xmltv_id="SetantaSports1Evraziya.ie" site_id="1206">Setanta Sports 1</channel>
     <channel lang="en" xmltv_id="SkyNewsInternational.uk" site_id="91">Sky News International</channel>
     <channel lang="en" xmltv_id="Smartzone.ee" site_id="1344">Smartzone</channel>
@@ -106,8 +95,6 @@
     <channel lang="en" xmltv_id="StingrayDJAZZ.ca" site_id="1129">Stingray Djazz</channel>
     <channel lang="en" xmltv_id="StingrayiConcerts.ca" site_id="731">Stingray IConcerts</channel>
     <channel lang="en" xmltv_id="SuperRTL.de" site_id="17">Super RTL Deutschland</channel>
-    <channel lang="en" xmltv_id="TaevasTV7.fi" site_id="248">Taevas TV7</channel>
-    <channel lang="en" xmltv_id="TBNBaltia.ee" site_id="261">TBN Baltia</channel>
     <channel lang="en" xmltv_id="Telecafe.ru" site_id="703">Telecafé International</channel>
     <channel lang="en" xmltv_id="TLCRussia.ru" site_id="823">TLC Russia</channel>
     <channel lang="en" xmltv_id="TNTComedy.ru" site_id="1279">TNT Comedy</channel>
@@ -115,26 +102,19 @@
     <channel lang="en" xmltv_id="TV1000ActionEast.ru" site_id="227">TV 1000 Action</channel>
     <channel lang="en" xmltv_id="TV1000East.ru" site_id="224">TV 1000 East</channel>
     <channel lang="en" xmltv_id="TV1000RusskoeKino.ru" site_id="225">TV 1000 Russkoe Kino</channel>
-    <channel lang="en" xmltv_id="TV3Estonia.ee" site_id="2">TV 3 Eesti</channel>
     <channel lang="en" xmltv_id="TV3Film.lv" site_id="226">TV 3 Film</channel>
     <channel lang="en" xmltv_id="TV3Plus.lv" site_id="221">TV 3 Plus</channel>
     <channel lang="en" xmltv_id="TV3Sport.uk" site_id="228">TV 3 Sport</channel>
     <channel lang="en" xmltv_id="TV3Sport2.uk" site_id="229">TV 3 Sport 2</channel>
-    <channel lang="en" xmltv_id="TV5MondeEurope.fr" site_id="85">TV5Monde Europe</channel>
-    <channel lang="en" xmltv_id="TV6Estonia.ee" site_id="223">TV 6 Eesti</channel>
     <channel lang="en" xmltv_id="TVCentrInternational.ru" site_id="717">TV Centr International</channel>
-    <channel lang="en" xmltv_id="TVEInternacionalEuropeAsia.es" site_id="255">TVE Internacional Europa</channel>
-    <channel lang="en" xmltv_id="TVN.ee" site_id="140">TVN</channel>
     <channel lang="en" xmltv_id="TVRain.ru" site_id="828">Dozhd</channel>
-    <channel lang="en" xmltv_id="TVXXI.lv" site_id="8">TV XXI</channel>
     <channel lang="en" xmltv_id="Usadba.ru" site_id="737">Usadba International</channel>
     <channel lang="en" xmltv_id="ViasatExplore.se" site_id="230">Viasat Explore</channel>
     <channel lang="en" xmltv_id="ViasatHistory.se" site_id="231">Viasat History</channel>
     <channel lang="en" xmltv_id="ViasatNature.se" site_id="716">Viasat Nature East</channel>
     <channel lang="en" xmltv_id="VIPComedy.ru" site_id="1303">VIP Comedy</channel>
     <channel lang="en" xmltv_id="Vremya.ru" site_id="94">Vremya</channel>
-    <channel lang="en" xmltv_id="YleTV1.fi" site_id="12">YLE TV 1</channel>
-    <channel lang="en" xmltv_id="YleTV2.fi" site_id="13">YLE TV 2</channel>
+    <channel lang="es" xmltv_id="TVEInternacionalEuropeAsia.es" site_id="255">TVE Internacional Europa</channel>
     <channel lang="et" xmltv_id="1Plus2.lv" site_id="1341">1+2</channel>
     <channel lang="et" xmltv_id="AlJazeeraEnglish.qa" site_id="89">Aljazeera English</channel>
     <channel lang="et" xmltv_id="AloTV.ee" site_id="157">Alo TV</channel>
@@ -240,13 +220,13 @@
     <channel lang="et" xmltv_id="TV1000ActionEast.ru" site_id="227">TV 1000 Action</channel>
     <channel lang="et" xmltv_id="TV1000East.ru" site_id="224">TV 1000</channel>
     <channel lang="et" xmltv_id="TV1000RusskoeKino.ru" site_id="225">TV 1000 Russkoe Kino</channel>
-    <channel lang="et" xmltv_id="TV3Estonia.ee" site_id="2">TV 3</channel>
+    <channel lang="et" xmltv_id="TV3Estonia.ee" site_id="2">TV 3 Eesti</channel>
     <channel lang="et" xmltv_id="TV3Film.lv" site_id="226">TV 3 Film</channel>
     <channel lang="et" xmltv_id="TV3Plus.lv" site_id="221">TV 3 Plus</channel>
     <channel lang="et" xmltv_id="TV3Sport.uk" site_id="228">TV 3 Sport</channel>
     <channel lang="et" xmltv_id="TV3Sport2.uk" site_id="229">TV 3 Sport 2</channel>
     <channel lang="et" xmltv_id="TV5MondeEurope.fr" site_id="85">TV5Monde</channel>
-    <channel lang="et" xmltv_id="TV6Estonia.ee" site_id="223">TV 6</channel>
+    <channel lang="et" xmltv_id="TV6Estonia.ee" site_id="223">TV 6 Eesti</channel>
     <channel lang="et" xmltv_id="TVCentrInternational.ru" site_id="717">TV Centr</channel>
     <channel lang="et" xmltv_id="TVEInternacionalEuropeAsia.es" site_id="255">TVE</channel>
     <channel lang="et" xmltv_id="TVN.ee" site_id="140">TVN</channel>
@@ -258,8 +238,11 @@
     <channel lang="et" xmltv_id="ViasatNature.se" site_id="716">Viasat Nature</channel>
     <channel lang="et" xmltv_id="VIPComedy.ru" site_id="1303">VIP Comedy</channel>
     <channel lang="et" xmltv_id="Vremya.ru" site_id="94">Vremya</channel>
-    <channel lang="et" xmltv_id="YleTV1.fi" site_id="12">YLE TV 1</channel>
-    <channel lang="et" xmltv_id="YleTV2.fi" site_id="13">YLE TV 2</channel>
+    <channel lang="fi" xmltv_id="YleTV1.fi" site_id="12">YLE TV 1</channel>
+    <channel lang="fi" xmltv_id="YleTV2.fi" site_id="13">YLE TV 2</channel>
+    <channel lang="fr" xmltv_id="France2.fr" site_id="256">France 2</channel>
+    <channel lang="fr" xmltv_id="TV5MondeEurope.fr" site_id="85">TV5Monde Europe</channel>
+    <channel lang="it" xmltv_id="Rai1.it" site_id="86">Rai 1</channel>
     <channel lang="nl" xmltv_id="DisneyChannelScandinavia.uk" site_id="102">Disney Channel Scandinavia</channel>
     <channel lang="ru" xmltv_id="1Plus2.lv" site_id="1341">1+2</channel>
     <channel lang="ru" xmltv_id="AnimalPlanetRussia.ru" site_id="31">Animal Planet Rossiya</channel>
@@ -357,7 +340,6 @@
     <channel lang="ru" xmltv_id="ViasatNature.se" site_id="716">Viasat Nature East</channel>
     <channel lang="ru" xmltv_id="VIPComedy.ru" site_id="1303">VIP Comedy</channel>
     <channel lang="ru" xmltv_id="Vremya.ru" site_id="94">Vremya</channel>
-    <channel lang="ru" xmltv_id="YleTV1.fi" site_id="12">YLE TV 1</channel>
     <channel lang="ru" xmltv_id="YleTV2.fi" site_id="13">YLE TV 2</channel>
   </channels>
 </site>

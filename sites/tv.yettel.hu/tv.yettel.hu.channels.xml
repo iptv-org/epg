@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site site="tv.yettel.hu">
   <channels>
+    <channel lang="en" xmltv_id="BBCWorldNewsEurope.uk" site_id="LCH53">BBC World News</channel>
+    <channel lang="en" xmltv_id="CNNInternationalEurope.us" site_id="LCH150">CNN</channel>
+    <channel lang="en" xmltv_id="EuronewsHungarian.fr" site_id="LCH166">Euronews</channel>
+    <channel lang="en" xmltv_id="MTV80s.uk" site_id="LCH165">MTV 80s</channel>
+    <channel lang="en" xmltv_id="MTV90s.uk" site_id="LCH154">MTV90s</channel>
+    <channel lang="en" xmltv_id="MTVHitsEurope.uk" site_id="LCH152">MTV Hits</channel>
     <channel lang="hu" xmltv_id="AMCHungary.hu" site_id="LCH16">AMC</channel>
     <channel lang="hu" xmltv_id="AnimalPlanetHungary.hu" site_id="LCH136">Animal Planet</channel>
     <channel lang="hu" xmltv_id="Arena4.hu" site_id="LCH179">Arena4</channel>
     <channel lang="hu" xmltv_id="ATV.hu" site_id="LCH182">ATV</channel>
     <channel lang="hu" xmltv_id="BBCEarthHungary.hu" site_id="LCH63">BBC Earth</channel>
-    <channel lang="hu" xmltv_id="BBCWorldNewsEurope.uk" site_id="LCH53">BBC World News</channel>
     <channel lang="hu" xmltv_id="BoomerangHungary.hu" site_id="LCH119">Boomerang</channel>
     <channel lang="hu" xmltv_id="CartoonNetworkHungary.hu" site_id="LCH118">Cartoon Network</channel>
-    <channel lang="hu" xmltv_id="CNNInternationalEurope.us" site_id="LCH150">CNN</channel>
     <channel lang="hu" xmltv_id="ComedyCentralFamilyHungary.hu" site_id="LCH161">Comedy Central Family</channel>
     <channel lang="hu" xmltv_id="ComedyCentralHungary.hu" site_id="LCH104">Comedy Central</channel>
     <channel lang="hu" xmltv_id="CoolTV.hu" site_id="LCH45">Cool</channel>
@@ -20,7 +24,6 @@
     <channel lang="hu" xmltv_id="DTXHungary.hu" site_id="LCH148">DTX</channel>
     <channel lang="hu" xmltv_id="DunaTV.hu" site_id="LCH29">Duna</channel>
     <channel lang="hu" xmltv_id="DunaWorld.hu" site_id="LCH40">Duna World</channel>
-    <channel lang="hu" xmltv_id="EuronewsHungarian.fr" site_id="LCH166">Euronews</channel>
     <channel lang="hu" xmltv_id="FEM3.hu" site_id="LCH85">FEM3</channel>
     <channel lang="hu" xmltv_id="FilmCafeHungary.hu" site_id="LCH42">FilmCafe</channel>
     <channel lang="hu" xmltv_id="FilmPlusHungary.hu" site_id="LCH44">Film+</channel>
@@ -39,9 +42,6 @@
     <channel lang="hu" xmltv_id="MoziPlus.hu" site_id="LCH26">Mozi+</channel>
     <channel lang="hu" xmltv_id="Moziverzum.hu" site_id="LCH174">Moziverzum</channel>
     <channel lang="hu" xmltv_id="MTV00s.uk" site_id="LCH155">MTV 00s</channel>
-    <channel lang="hu" xmltv_id="MTV80s.uk" site_id="LCH165">MTV 80s</channel>
-    <channel lang="hu" xmltv_id="MTV90s.uk" site_id="LCH154">MTV90s</channel>
-    <channel lang="hu" xmltv_id="MTVHitsEurope.uk" site_id="LCH152">MTV Hits</channel>
     <channel lang="hu" xmltv_id="MTVHungary.hu" site_id="LCH163">MTV Hungary</channel>
     <channel lang="hu" xmltv_id="MuzsikaTV.hu" site_id="LCH10">Muzsika TV</channel>
     <channel lang="hu" xmltv_id="NationalGeographicHungary.hu" site_id="LCH133">National Geographic</channel>
@@ -56,8 +56,8 @@
     <channel lang="hu" xmltv_id="RTLKlub.hu" site_id="LCH43">RTL KLUB</channel>
     <channel lang="hu" xmltv_id="RTLPlus.hu" site_id="LCH9">RTL+</channel>
     <channel lang="hu" xmltv_id="SorozatPlus.hu" site_id="LCH18">Sorozat+</channel>
-    <channel lang="hu" xmltv_id="SpektrumHungary.hu" site_id="LCH39">Spektrum</channel>
     <channel lang="hu" xmltv_id="SpektrumHomeHungary.hu" site_id="LCH79">Spektrum Home</channel>
+    <channel lang="hu" xmltv_id="SpektrumHungary.hu" site_id="LCH39">Spektrum</channel>
     <channel lang="hu" xmltv_id="Spiler1TV.hu" site_id="LCH71">Spíler1 TV</channel>
     <channel lang="hu" xmltv_id="Spiler2TV.hu" site_id="LCH170">Spíler2 TV</channel>
     <channel lang="hu" xmltv_id="Sport1Hungary.hu" site_id="LCH41">Sport1</channel>
