@@ -9,39 +9,40 @@ const customParseFormat = require('dayjs/plugin/customParseFormat')
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
-const date = dayjs.utc('2022-12-03', 'YYYY-MM-DD').startOf('d')
+const date = dayjs.utc('2023-01-17', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: 'ruv',
   xmltv_id: 'RUV.is'
 }
 
 it('can generate valid url', () => {
-  expect(url({ channel, date })).toBe('https://www.ruv.is/sjonvarp/dagskra/ruv/2022-12-03')
+  expect(url({ channel, date })).toBe(
+    'https://www.ruv.is/gql/?operationName=getSchedule&variables=%7B%22channel%22%3A%22ruv%22,%22date%22%3A%222023-01-17%22%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%227d133b9bd9e50127e90f2b3af1b41eb5e89cd386ed9b100b55169f395af350e6%22%7D%7D'
+  )
 })
 
 it('can parse response', () => {
-  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.html'))
-  let results = parser({ content, channel, date }).map(p => {
+  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'))
+  let results = parser({ content, date }).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
     return p
   })
 
   expect(results[0]).toMatchObject({
-    start: '2022-12-03T07:05:00.000Z',
-    stop: '2022-12-03T07:15:00.000Z',
-    title: `Smástund`,
+    start: '2023-01-17T13:00:00.000Z',
+    stop: '2023-01-17T13:10:00.000Z',
+    title: `Heimaleikfimi`,
     description:
-      'Smástund hentar vel fyrir þau allra yngstu, í hverjum þætti lærum við orð, liti, tölur og tónlist. e.',
-    icon: 'https://d38kdhuogyllre.cloudfront.net/fit-in/480x/filters:quality(65)/hd_posters/a2kmk0-mcpf0o.jpg'
+      'Góð ráð og æfingar sem tilvalið er að gera heima. Íris Rut Garðarsdóttir sjúkraþjálfari hefur umsjón með leikfiminni. e.',
+    icon: 'https://d38kdhuogyllre.cloudfront.net/fit-in/480x/filters:quality(65)/hd_posters/91pvig-3p3hig.jpg'
   })
 })
 
 it('can handle empty guide', () => {
   const result = parser({
     date,
-    channel,
-    content: fs.readFileSync(path.resolve(__dirname, '__data__/no_content.html'))
+    content: fs.readFileSync(path.resolve(__dirname, '__data__/no_content.json'))
   })
   expect(result).toMatchObject([])
 })
