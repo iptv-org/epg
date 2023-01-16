@@ -12,11 +12,27 @@ module.exports = {
   site: 'ruv.is',
   days: 2,
   url({ channel, date }) {
-    return `https://www.ruv.is/sjonvarp/dagskra/${channel.site_id}/${date.format('YYYY-MM-DD')}`
+    let params = new URLSearchParams()
+    params.append('operationName', 'getSchedule')
+    params.append(
+      'variables',
+      JSON.stringify({ channel: channel.site_id, date: date.format('YYYY-MM-DD') })
+    )
+    params.append(
+      'extensions',
+      JSON.stringify({
+        persistedQuery: {
+          version: 1,
+          sha256Hash: '7d133b9bd9e50127e90f2b3af1b41eb5e89cd386ed9b100b55169f395af350e6'
+        }
+      })
+    )
+
+    return `https://www.ruv.is/gql/?${params.toString()}`
   },
-  parser({ content, channel, date }) {
+  parser({ content, date }) {
     let programs = []
-    const items = parseItems(content, channel, date)
+    const items = parseItems(content, date)
     items.forEach(item => {
       let start = parseStart(item, date)
       let stop = parseStop(item, date)
@@ -57,14 +73,8 @@ function parseStop(item, date) {
 }
 
 function parseItems(content, channel, date) {
-  const $ = cheerio.load(content)
-  const apollo = $('#apollo').html()
-  const [, state] = apollo.match(/window.__APOLLO_STATE__ = ([^;<]+)/) || [null, '']
-  const data = JSON.parse(state)
+  const data = JSON.parse(content)
+  if (!data || !Array.isArray(data.data.Schedule.events)) return []
 
-  return (
-    data?.ROOT_QUERY?.[
-      `Schedule({"channel":"${channel.site_id}","date":"${date.format('YYYY-MM-DD')}"})`
-    ]?.events || []
-  )
+  return data.data.Schedule.events
 }
