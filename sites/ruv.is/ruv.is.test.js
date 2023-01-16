@@ -17,7 +17,7 @@ const channel = {
 
 it('can generate valid url', () => {
   expect(url({ channel, date })).toBe(
-    'https://www.ruv.is/gql/?operationName=getSchedule&variables=%7B%22channel%22%3A%22ruv%22,%22date%22%3A%222023-01-17%22%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%227d133b9bd9e50127e90f2b3af1b41eb5e89cd386ed9b100b55169f395af350e6%22%7D%7D'
+    'https://www.ruv.is/gql/?operationName=getSchedule&variables=%7B%22channel%22%3A%22ruv%22%2C%22date%22%3A%222023-01-17%22%7D&extensions=%7B%22persistedQuery%22%3A%7B%22version%22%3A1%2C%22sha256Hash%22%3A%227d133b9bd9e50127e90f2b3af1b41eb5e89cd386ed9b100b55169f395af350e6%22%7D%7D'
   )
 })
 
