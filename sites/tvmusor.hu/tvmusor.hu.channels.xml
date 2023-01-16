@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site site="tvmusor.hu">
   <channels>
+    <channel lang="en" xmltv_id="BBCWorldNewsEurope.uk" site_id="126">BBC World News</channel>
+    <channel lang="en" xmltv_id="CNNInternationalEurope.us" site_id="4">CNN</channel>
+    <channel lang="en" xmltv_id="SkyNewsInternational.uk" site_id="158">Sky News International</channel>
+    <channel lang="ens" xmltv_id="EuronewsEnglish.fr" site_id="71">EuroNews</channel>
     <channel lang="hu" xmltv_id="AMCHungary.hu" site_id="139">AMC</channel>
     <channel lang="hu" xmltv_id="AnimalPlanetHungary.hu" site_id="231">Animal Planet</channel>
     <channel lang="hu" xmltv_id="ATV.hu" site_id="15">ATV</channel>
     <channel lang="hu" xmltv_id="AXNHungary.hu" site_id="42">AXN</channel>
     <channel lang="hu" xmltv_id="BBCEarthRomania.ro" site_id="251">BBC Earth</channel>
-    <channel lang="hu" xmltv_id="BBCWorldNewsEurope.uk" site_id="126">BBC World News</channel>
     <channel lang="hu" xmltv_id="BoomerangCEE.us" site_id="77">Boomerang</channel>
     <channel lang="hu" xmltv_id="CartoonNetworkHungary.hu" site_id="91">Cartoon Network</channel>
     <channel lang="hu" xmltv_id="CinemaxHungary.hu" site_id="47">Cinemax</channel>
-    <channel lang="hu" xmltv_id="CNNInternationalEurope.us" site_id="4">CNN</channel>
     <channel lang="hu" xmltv_id="ComedyCentralFamilyHungary.hu" site_id="316">Comedy Central Family</channel>
     <channel lang="hu" xmltv_id="ComedyCentralHungary.hu" site_id="194">Comedy Central</channel>
     <channel lang="hu" xmltv_id="CoolTV.hu" site_id="79">Cool</channel>
@@ -26,7 +28,6 @@
     <channel lang="hu" xmltv_id="DuckTV.sk" site_id="156">Duck TV</channel>
     <channel lang="hu" xmltv_id="DunaTV.hu" site_id="6">Duna TV</channel>
     <channel lang="hu" xmltv_id="DunaWorld.hu" site_id="103">Duna World</channel>
-    <channel lang="hu" xmltv_id="EuronewsEnglish.fr" site_id="71">EuroNews</channel>
     <channel lang="hu" xmltv_id="Eurosport1.fr" site_id="94">Eurosport 1</channel>
     <channel lang="hu" xmltv_id="Eurosport2.fr" site_id="37">Eurosport 2</channel>
     <channel lang="hu" xmltv_id="FEM3.hu" site_id="307">FEM3</channel>
@@ -64,7 +65,6 @@
     <channel lang="hu" xmltv_id="RTLIIHungary.hu" site_id="241">RTL II</channel>
     <channel lang="hu" xmltv_id="RTLKlub.hu" site_id="5">RTL Klub</channel>
     <channel lang="hu" xmltv_id="RTLPlus.hu" site_id="178">RTL+</channel>
-    <channel lang="hu" xmltv_id="SkyNewsInternational.uk" site_id="158">Sky News International</channel>
     <channel lang="hu" xmltv_id="SlagerTV.hu" site_id="216">Sláger TV</channel>   
     <channel lang="hu" xmltv_id="SorozatPlus.hu" site_id="179">Sorozat+</channel>
     <channel lang="hu" xmltv_id="SpektrumHungary.hu" site_id="9">Spektrum</channel>
