@@ -3,6 +3,7 @@ const dayjs = require('dayjs')
 
 module.exports = {
   site: 'tva.tv',
+  skip: true, // NOTE: the server is not responsible for the given time (https://github.com/iptv-org/epg/actions/workflows/tva.tv.yml)
   days: 2,
   url: function ({ date, channel }) {
     return `https://api.ott.tva.tv/v2/epg/program_events.json?channel_id=${
