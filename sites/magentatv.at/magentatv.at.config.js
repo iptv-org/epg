@@ -12,8 +12,8 @@ module.exports = {
       ttl: 60 * 60 * 1000 // 1 hour
     }
   },
-  url: function ({ date, channel }) {
-    return `${API_STATIC_ENDPOINT}/${channel.lang}/events/segments/${date.format('YYYYMMDDHHmmss')}`
+  url: function ({ date }) {
+    return `${API_STATIC_ENDPOINT}/de/events/segments/${date.format('YYYYMMDDHHmmss')}`
   },
   async parser({ content, channel, date }) {
     let programs = []
@@ -21,7 +21,7 @@ module.exports = {
     if (!items.length) return programs
     const promises = [
       axios.get(
-        `${API_STATIC_ENDPOINT}/${channel.lang}/events/segments/${date
+        `${API_STATIC_ENDPOINT}/de/events/segments/${date
           .add(6, 'h')
           .format('YYYYMMDDHHmmss')}`,
         {
@@ -29,7 +29,7 @@ module.exports = {
         }
       ),
       axios.get(
-        `${API_STATIC_ENDPOINT}/${channel.lang}/events/segments/${date
+        `${API_STATIC_ENDPOINT}/de/events/segments/${date
           .add(12, 'h')
           .format('YYYYMMDDHHmmss')}`,
         {
@@ -37,7 +37,7 @@ module.exports = {
         }
       ),
       axios.get(
-        `${API_STATIC_ENDPOINT}/${channel.lang}/events/segments/${date
+        `${API_STATIC_ENDPOINT}/de/events/segments/${date
           .add(18, 'h')
           .format('YYYYMMDDHHmmss')}`,
         {
@@ -59,11 +59,12 @@ module.exports = {
       .catch(console.error)
 
     for (let item of items) {
-      const detail = await loadProgramDetails(item, channel)
+      const detail = await loadProgramDetails(item)
       programs.push({
         title: item.title,
         sub_title: detail.episodeName,
         description: detail.longDescription,
+        date: detail.productionDate,
         category: detail.genres,
         actors: detail.actors,
         directors: detail.directors,
@@ -93,9 +94,9 @@ module.exports = {
   }
 }
 
-async function loadProgramDetails(item, channel) {
+async function loadProgramDetails(item) {
   if (!item.id) return {}
-  const url = `${API_PROD_ENDPOINT}/replayEvent/${item.id}?returnLinearContent=true&language=${channel.lang}`
+  const url = `${API_PROD_ENDPOINT}/replayEvent/${item.id}?returnLinearContent=true`
   const data = await axios
     .get(url)
     .then(r => r.data)
