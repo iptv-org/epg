@@ -7,7 +7,7 @@ const API_ENDPOINT = `https://api.toonamiaftermath.com`
 
 module.exports = {
   site: 'toonamiaftermath.com',
-  days: 2,
+  days: 3,
   async url({ channel, date }) {
     const playlists = await axios
       .get(
@@ -20,16 +20,16 @@ module.exports = {
 
     const playlist = playlists.find(p => date.isSame(p.startDate, 'day'))
 
-    return `https://api.toonamiaftermath.com/playlist?id=${playlist._id}&addInfo=true`
+    return `${API_ENDPOINT}/playlist?id=${playlist._id}&addInfo=true`
   },
   parser({ content, date }) {
     let programs = []
-    const items = parseItems(content, date)
+    const items = parseItems(content)
     items.forEach(item => {
       programs.push({
         title: item.name,
-        sub_title: item?.info?.episode,
-        icon: item?.info?.image,
+        sub_title: parseEpisode(item),
+        icon: parseIcon(item),
         start: dayjs(item.startDate),
         stop: dayjs(item.endDate)
       })
@@ -39,16 +39,23 @@ module.exports = {
   }
 }
 
-function parseItems(content, date) {
+function parseItems(content) {
   if (!content) return []
   const data = JSON.parse(content)
-  const blocks = data?.playlist?.blocks || []
+  if (!data || !data.playlist) return []
 
-  return blocks
+  return data.playlist.blocks
     .reduce((acc, curr) => {
       acc = acc.concat(curr.mediaList)
 
       return acc
     }, [])
-    .filter(i => date.isSame(i.startDate, 'day'))
+}
+
+function parseEpisode(item) {
+  return (item && item.info && item.info.episode) ? item.info.episode : null
+}
+
+function parseIcon(item) {
+  return (item && item.info && item.info.image) ? item.info.image : null
 }
