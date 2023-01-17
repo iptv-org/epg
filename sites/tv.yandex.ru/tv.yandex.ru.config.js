@@ -2,6 +2,7 @@ const dayjs = require('dayjs')
 
 module.exports = {
   site: 'tv.yandex.ru',
+  skip: true, // NOTE: the server blocks requests by IP (https://github.com/iptv-org/epg/actions/workflows/tv.yandex.ru.yml)
   days: 2,
   url: function ({ date, channel }) {
     const [region, id] = channel.site_id.split('#')
