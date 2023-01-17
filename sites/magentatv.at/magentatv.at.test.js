@@ -24,7 +24,7 @@ const channel = {
 }
 
 it('can generate valid url', () => {
-  expect(url({ date, channel })).toBe(`${API_STATIC_ENDPOINT}/de/events/segments/20221030000000`)
+  expect(url({ date })).toBe(`${API_STATIC_ENDPOINT}/de/events/segments/20221030000000`)
 })
 
 it('can parse response', async () => {
@@ -45,7 +45,7 @@ it('can parse response', async () => {
       })
     } else if (
       url ===
-      `${API_PROD_ENDPOINT}/replayEvent/crid:~~2F~~2Fgn.tv~~2F2236391~~2FEP019388320252,imi:af4af994f29354e64878101c0612b17999d0c1a3?returnLinearContent=true&language=de`
+      `${API_PROD_ENDPOINT}/replayEvent/crid:~~2F~~2Fgn.tv~~2F2236391~~2FEP019388320252,imi:af4af994f29354e64878101c0612b17999d0c1a3?returnLinearContent=true`
     ) {
       return Promise.resolve({
         data: JSON.parse(fs.readFileSync(path.resolve(__dirname, '__data__/program.json')))
@@ -69,6 +69,7 @@ it('can parse response', async () => {
     sub_title: 'Mutterinstinkt',
     description:
       'Patty Branson wird von einem Jungen in einem Park angegriffen und von diesem verfolgt. Der Junge wurde von Michelle Osborne engagiert, die vorgibt, die leibliche Mutter des Mädchens zu sein. Doch ist dies tatsächlich die Wahrheit?',
+    date: '2004',
     category: ['Drama-Serie', 'Krimi Drama', 'Action', 'Thriller'],
     actors: [
       'Christopher Meloni',
