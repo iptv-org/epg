@@ -11,12 +11,18 @@ dayjs.extend(customParseFormat)
 module.exports = {
   site: 'bein.com',
   days: 2,
+  request: {
+    cache: {
+      ttl: 60 * 60 * 1000 // 1 hour
+    }
+  },
   url: function ({ date, channel }) {
-    const [index] = channel.site_id.split('#')
+    const [category] = channel.site_id.split('#')
+    const postid = (channel.lang === 'ar') ? '25344' : '25356'
 
-    return `https://www.bein.com/en/epg-ajax-template/?action=epg_fetch&category=sports&cdate=${date.format(
+    return `https://www.bein.com/${channel.lang}/epg-ajax-template/?action=epg_fetch&category=${category}&cdate=${date.format(
       'YYYY-MM-DD'
-    )}&language=EN&loadindex=${index}&mins=00&offset=0&postid=25356&serviceidentity=bein.net`
+    )}&language=${channel.lang.toUpperCase()}&loadindex=0&mins=00&offset=0&postid=${postid}&serviceidentity=bein.net`
   },
   parser: function ({ content, channel, date }) {
     let programs = []
@@ -28,7 +34,7 @@ module.exports = {
       if (!title) return
       const category = parseCategory($item)
       const prev = programs[programs.length - 1]
-      let start = parseStart($item, date)
+      let start = parseTime($item, date)
       if (prev) {
         if (start.isBefore(prev.start)) {
           start = start.add(1, 'd')
@@ -36,7 +42,7 @@ module.exports = {
         }
         prev.stop = start
       }
-      let stop = parseStop($item, start)
+      let stop = parseTime($item, start)
       if (stop.isBefore(start)) {
         stop = stop.add(1, 'd')
       }
@@ -60,20 +66,10 @@ function parseCategory($item) {
   return $item('.format').text()
 }
 
-function parseStart($item, date) {
+function parseTime($item, date) {
   let [_, time] = $item('.time')
     .text()
     .match(/^(\d{2}:\d{2})/) || [null, null]
-  if (!time) return null
-  time = `${date.format('YYYY-MM-DD')} ${time}`
-
-  return dayjs.tz(time, 'YYYY-MM-DD HH:mm', 'Asia/Qatar')
-}
-
-function parseStop($item, date) {
-  let [_, time] = $item('.time')
-    .text()
-    .match(/(\d{2}:\d{2})$/) || [null, null]
   if (!time) return null
   time = `${date.format('YYYY-MM-DD')} ${time}`
 
