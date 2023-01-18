@@ -65,6 +65,7 @@ You can also find the link to the guide by the name of the channel via https://i
 
 
 </details>
+<br>
 
 All guides also have a compressed and JSON version. To load them just change the extension from `.xml` to `.xml.gz` or `.json` respectively.
 
