@@ -9,41 +9,39 @@ const customParseFormat = require('dayjs/plugin/customParseFormat')
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
-const date = dayjs.utc('2022-08-27', 'YYYY-MM-DD').startOf('d')
+const date = dayjs.utc('2023-01-19', 'YYYY-MM-DD').startOf('d')
 const channel = {
-  site_id: '19',
-  xmltv_id: 'TRT1.tr'
+  site_id: '14',
+  xmltv_id: 'beINMovies2Action.qa'
 }
 
 it('can generate valid url', () => {
   const result = url({ date, channel })
-  expect(result).toBe('https://www.digiturk.com.tr/yayin-akisi/api/program/kanal/19/2022-08-27/0')
+  expect(result).toBe('https://www.digiturk.com.tr/_Ajax/getBroadcast.aspx?channelNo=14&date=19.01.2023&tomorrow=false&primetime=false')
 })
 
 it('can parse response', () => {
   const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'))
-  const results = parser({ content, channel }).map(p => {
+  const results = parser({ content }).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
     return p
   })
 
   expect(results[0]).toMatchObject({
-    start: '2022-08-26T19:50:00.000Z',
-    stop: '2022-08-26T22:20:00.000Z',
-    title: 'YABANCI SİNEMA "KİMLİKSİZ"',
-    description: `KİMLİĞİNİ KANITLAMAK İÇİN MACERALI BİR YOLCULUĞA ÇIKAR.`
+    start: '2023-01-18T20:40:00.000Z',
+    stop: '2023-01-18T22:32:00.000Z',
+    title: 'PARÇALANMIŞ'
   })
 
-  expect(results[11]).toMatchObject({
-    start: '2022-08-27T20:30:00.000Z',
-    stop: '2022-08-27T21:45:00.000Z',
-    title: 'PELİN ÇİFT İLE GÜNDEM ÖTESİ',
-    description: `ULUYOR. İLGİ ÇEKİCİ KONULARI VE UZMAN KONUKLARIYLA BİLDİĞİNİZDEN FAZLASINI EKRANA TAŞIYOR.`
+  expect(results[10]).toMatchObject({
+    start: '2023-01-19T05:04:00.000Z',
+    stop: '2023-01-19T06:42:00.000Z',
+    title: 'HIZLI VE ÖFKELİ: TOKYO YARIŞI'
   })
 })
 
 it('can handle empty guide', () => {
-  const result = parser({ date, channel, content: `{"listings":{"1483":[]}}` })
+  const result = parser({ content: `` })
   expect(result).toMatchObject([])
 })
