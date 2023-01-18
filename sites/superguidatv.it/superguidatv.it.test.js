@@ -17,19 +17,19 @@ const channel = {
 }
 
 it('can generate valid url', () => {
-  expect(url({ channel, date })).toBe(
+  expect(url({ channel, date: dayjs.utc().startOf('d') })).toBe(
     'https://www.superguidatv.it/programmazione-canale/oggi/guida-programmi-tv-virgin-radio/461/'
   )
 })
 
 it('can generate valid url for tomorrow', () => {
-  expect(url({ channel, date: date.add(1, 'd') })).toBe(
+  expect(url({ channel, date: dayjs.utc().startOf('d').add(1, 'd') })).toBe(
     'https://www.superguidatv.it/programmazione-canale/domani/guida-programmi-tv-virgin-radio/461/'
   )
 })
 
 it('can generate valid url for after tomorrow', () => {
-  expect(url({ channel, date: date.add(2, 'd') })).toBe(
+  expect(url({ channel, date: dayjs.utc().startOf('d').add(2, 'd') })).toBe(
     'https://www.superguidatv.it/programmazione-canale/dopodomani/guida-programmi-tv-virgin-radio/461/'
   )
 })
