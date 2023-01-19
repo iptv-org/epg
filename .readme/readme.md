@@ -67,7 +67,7 @@ And thank you to everyone who has already contributed!
 
 ### Contributors
 
-<a href="https://github.com/iptv-org/iptv/graphs/contributors"><img src="https://opencollective.com/iptv-org/contributors.svg?width=890" /></a>
+<a href="https://github.com/iptv-org/epg/graphs/contributors"><img src="https://opencollective.com/iptv-org/contributors.svg?width=890" /></a>
 
 ## License
 
