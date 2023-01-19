@@ -58,6 +58,7 @@ jobs:
           git-config-name: iptv-bot[bot]
           git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
           commit-message: '[Bot] Update guides'
+          single-commit: true
           clean: true
       - uses: JamesIves/github-pages-deploy-action@v4.4.1
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
