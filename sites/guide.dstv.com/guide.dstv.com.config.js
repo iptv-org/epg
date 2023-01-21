@@ -9,6 +9,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'guide.dstv.com',
+  skip: true, // NOTE: website is down (HTTP Server Error 503)
   days: 2,
   request: {
     cache: {
