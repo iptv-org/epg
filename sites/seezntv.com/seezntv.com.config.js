@@ -10,6 +10,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'seezntv.com',
+  skip: true, // NOTE: the site was closed on December 31, 2022
   days: 2,
   url: function ({ channel }) {
     return `https://api.seezntv.com/svc/menu/app6/api/epg_proglist?ch_no=${channel.site_id}&search_day=1`
