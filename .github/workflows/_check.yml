@@ -17,7 +17,7 @@ jobs:
         run: |
           mkdir -p scripts/data
           curl -L -o scripts/data/channels.json https://iptv-org.github.io/api/channels.json
-      - uses: tj-actions/changed-files@v19
+      - uses: tj-actions/changed-files@v35
         id: files
         with:
           files: sites/**/*.channels.xml
