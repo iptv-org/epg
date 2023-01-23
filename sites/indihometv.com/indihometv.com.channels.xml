@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<site site="useetv.com">
+<site site="indihometv.com">
   <channels>
     <channel lang="id" xmltv_id="UseePrime.id" site_id="useeprime">UseePrime</channel>
     <channel lang="id" xmltv_id="UseePhoto.id" site_id="useephoto">Usee Photo</channel>
@@ -152,6 +152,6 @@
 </site>
 
 <!-- 
-  Get all channels from https://www.useetv.com/tv/live:
-  [...document.querySelectorAll('.channel-item')].map(el => `<channel lang="id" xmltv_id="${el.dataset.name.replaceAll(' ', '')}.id" site_id="${el.href.replace('https://www.useetv.com/livetv/', '')}">${el.dataset.name}</channel>`).join('\n')
+  Get all channels from https://www.indihometv.com/tvod:
+  [...document.querySelectorAll('.channel-item')].map(el => `<channel lang="id" xmltv_id="${el.dataset.name.replaceAll(' ', '')}.id" site_id="${el.href.replace('https://www.indihometv.com/tvod/', '')}">${el.dataset.name}</channel>`).join('\n')
  -->

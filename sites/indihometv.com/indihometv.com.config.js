@@ -9,10 +9,10 @@ dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
 module.exports = {
-  site: 'useetv.com',
+  site: 'indihometv.com',
   days: 2,
   url({ channel }) {
-    return `https://www.useetv.com/tvod/${channel.site_id}`
+    return `https://www.indihometv.com/tvod/${channel.site_id}`
   },
   parser({ content, date }) {
     const programs = []
