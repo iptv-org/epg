@@ -5,6 +5,7 @@
     <channel lang="en" xmltv_id="5StarMaxEast.us" site_id="5-star-max-eastern/636">5 StarMax East</channel>
     <channel lang="en" xmltv_id="5StarMaxWest.us" site_id="5-star-max-pacific/2627">5StarMax West</channel>
     <channel lang="en" xmltv_id="ABCEast.us" site_id="abc-eastern/1224">ABC Eastern</channel>
+    <channel lang="en" xmltv_id="AccuWeatherNOW.us" site_id="accuweather/6140">AccuWeather</channel>
     <channel lang="en" xmltv_id="AEEast.us" site_id="ae-us-eastern-feed/2">A&amp;E East</channel>
     <channel lang="en" xmltv_id="AEWest.us" site_id="ae-us-pacific-feed/1202">A&amp;E West</channel>
     <channel lang="en" xmltv_id="ABCNewsLive.us" site_id="abc-news-live/36224">ABC News Live</channel>
@@ -34,10 +35,12 @@
     <channel lang="en" xmltv_id="BallySportsSouthwest.us" site_id="bally-sports-southwest/1106">Bally Sports Southwest</channel>
     <channel lang="en" xmltv_id="BallySportsOklahoma.us" site_id="bally-sports-oklahoma-hd/11520">Bally Sports Oklahoma</channel>
     <channel lang="en" xmltv_id="BallySportsSouthSouthCarolinas.us" site_id="bally-sports-south-carolinas/4531">Bally Sports South South Carolinas</channel>
-    <channel lang="en" xmltv_id="BallySportsWisconsin.us" site_id="stations/bally-sports-wisconsin/6760">Bally Sports Wisconsin</channel>
+    <channel lang="en" xmltv_id="BallySportsWisconsin.us" site_id="bally-sports-wisconsin/6760">Bally Sports Wisconsin</channel>
     <channel lang="en" xmltv_id="BBCAmericaEast.us" site_id="bbc-america-east/615">BBC America East</channel>
+    <channel lang="en" xmltv_id="BBCWorldNewsNorthAmerica.uk" site_id="bbc-world-north-america/527">BBC World News North America</channel>
     <channel lang="en" xmltv_id="BETEast.us" site_id="bet-eastern-feed/323">BET East</channel>
     <channel lang="en" xmltv_id="BETWest.us" site_id="bet-pacific-feed/2682">BET West</channel>
+    <channel lang="en" xmltv_id="BloombergTV.us" site_id="bloomberg-tv-usa/1856">Bloomberg TV</channel>
     <channel lang="en" xmltv_id="Boomerang.us" site_id="boomerang-hd/16413">Boomerang US</channel>
     <channel lang="en" xmltv_id="BravoEast.us" site_id="bravo-usa-hd-eastern-feed/6120">Bravo East</channel>
     <channel lang="en" xmltv_id="BravoWest.us" site_id="bravo-usa-pacific-feed/1320">Bravo West</channel>
@@ -64,16 +67,15 @@
     <channel lang="en" xmltv_id="Crave2.ca" site_id="crave2-east/86">Crave 2</channel>
     <channel lang="en" xmltv_id="Crave3.ca" site_id="crave3-east/85">Crave 3</channel>
     <channel lang="en" xmltv_id="Crave4.ca" site_id="crave4/320">Crave 4</channel>
+    <channel lang="en" xmltv_id="CSPAN2.us" site_id="cspan-2/1050">C-SPAN 2</channel>
     <channel lang="en" xmltv_id="DiscoveryChannelWest.us" site_id="discovery-channel-us-pacific-feed/1206">Discovery Channel (US) Pacific Feed</channel>
     <channel lang="en" xmltv_id="DisneyXDWest.us" site_id="disney-xd-usa-pacific-feed/1208">Disney XD USA Pacific Feed</channel>
-    <channel lang="en" xmltv_id="MGMPlusHitsEast.us" site_id="epix2-east/11485">MGM+ Hits East</channel>
-    <channel lang="en" xmltv_id="MGMPlusDriveIn.us" site_id="epix-drivein/11487">MGM+ Drive-In</channel>
-    <channel lang="en" xmltv_id="MGMPlusEast.us" site_id="epix-hd-east/7610">MGM+ East</channel>
-    <channel lang="en" xmltv_id="MGMPlusMarquee.us" site_id="epix-hits/11486">MGM+ Marquee</channel>
-    <channel lang="en" xmltv_id="MGMPlusWest.us" site_id="epix-pacific/13443">MGM+ Pacific</channel>
+    <channel lang="en" xmltv_id="ESPN.us" site_id="espn/594">ESPN</channel>
+    <channel lang="en" xmltv_id="ESPN2.us" site_id="espn2/650">ESPN 2</channel>
     <channel lang="en" xmltv_id="EWest.us" site_id="e-entertainment-usa-pacific-feed/1213">E! West</channel>
     <channel lang="en" xmltv_id="FlixWest.us" site_id="flix-pacific/3387">Flix West</channel>
-	<channel lang="en" xmltv_id="FoxEast.us" site_id="fox-eastern/1229">FOX Eastern</channel>
+    <channel lang="en" xmltv_id="FoxBusiness.us" site_id="fox-business/4656">Fox Business</channel>
+    <channel lang="en" xmltv_id="FoxEast.us" site_id="fox-eastern/1229">FOX Eastern</channel>
     <channel lang="en" xmltv_id="FoodNetworkWest.us" site_id="food-network-usa-pacific-feed/2032">Food Network West</channel>
     <channel lang="en" xmltv_id="FoxNewsChannel.us" site_id="fox-news/1083">FOX News</channel>
     <channel lang="en" xmltv_id="FreeformEast.us" site_id="freeform-east-feed/1011">Freeform</channel>
@@ -82,6 +84,7 @@
     <channel lang="en" xmltv_id="FXXWest.us" site_id="fxx-usa-pacific/19080">FXX West</channel>
     <channel lang="es" xmltv_id="GalavisionWest.us" site_id="galavision-pacific-feed/1573">Galavision West</channel>
     <channel lang="en" xmltv_id="GreatAmericanLiving.us" site_id="gac-living/16158">Great American Living</channel>
+    <channel lang="en" xmltv_id="Grit.us" site_id="grit-network/14377">Grit</channel>
     <channel lang="en" xmltv_id="HallmarkChannelEast.us" site_id="hallmark-channel-hd-eastern/6213">Hallmark Channel East</channel>
     <channel lang="en" xmltv_id="HallmarkChannelWest.us" site_id="hallmark-channel-hd-pacific/17058">Hallmark Channel West</channel>
     <channel lang="en" xmltv_id="HallmarkDrama.us" site_id="hallmark-drama/32480">Hallmark Drama</channel>
@@ -93,6 +96,7 @@
     <channel lang="en" xmltv_id="HBOZoneWest.us" site_id="hbo-zone-pacific/2594">HBO Zone West</channel>
     <channel lang="en" xmltv_id="HGTVEast.us" site_id="hgtv-usa-eastern-feed/623">HGTV East</channel>
     <channel lang="en" xmltv_id="HGTVWest.us" site_id="hgtv-usa-hd-pacific-feed/16232">HGTV USA HD Pacific Feed</channel>
+    <channel lang="en" xmltv_id="HLN.us" site_id="hln/425">HLN</channel>
     <channel lang="en" xmltv_id="IndiePlexEast.us" site_id="indieplex-eastern/2340">IndiePlex East</channel>
     <channel lang="en" xmltv_id="IndiePlexWest.us" site_id="indieplex-pacific/2341">IndiePlex West</channel>
     <channel lang="en" xmltv_id="InvestigationDiscoveryWest.us" site_id="investigation-discovery-usa-pacific/19949">Investigation Discovery West</channel>
@@ -184,7 +188,14 @@
     <channel lang="en" xmltv_id="KXDFCD1.us" site_id="cbs-k13xd-fairbanks-ak/4960">CBS (KXDF-CD) Fairbanks, AK</channel>
     <channel lang="en" xmltv_id="KXTVDT1.us" site_id="abc-kxtv-sacramento-ca/2151">ABC (KXTV) Sacramento, CA</channel>
     <channel lang="en" xmltv_id="KYAZDT2.us" site_id="metv-plus-kyazdt2-houston-tx/15499">MeTV Plus (KYAZ-DT2) Houston TX</channel>
+    <channel lang="en" xmltv_id="LogoEast.us" site_id="logo-east/2091">Logo East</channel>
+    <channel lang="en" xmltv_id="LogoWest.us" site_id="logo-pacific/13460">Logo West</channel>
     <channel lang="en" xmltv_id="MeTV.us" site_id="metv-network/16325">MeTV Network</channel>
+    <channel lang="en" xmltv_id="MGMPlusHitsEast.us" site_id="epix2-east/11485">MGM+ Hits East</channel>
+    <channel lang="en" xmltv_id="MGMPlusDriveIn.us" site_id="epix-drivein/11487">MGM+ Drive-In</channel>
+    <channel lang="en" xmltv_id="MGMPlusEast.us" site_id="epix-hd-east/7610">MGM+ East</channel>
+    <channel lang="en" xmltv_id="MGMPlusMarquee.us" site_id="epix-hits/11486">MGM+ Marquee</channel>
+    <channel lang="en" xmltv_id="MGMPlusWest.us" site_id="epix-pacific/13443">MGM+ Pacific</channel>
     <channel lang="en" xmltv_id="MoreMaxWest.us" site_id="moremax-pacific-hd/8472">Moremax Pacific HD</channel>
     <channel lang="en" xmltv_id="MovieMaxWest.us" site_id="moviemax-pacific/2625">MovieMax West</channel>
     <channel lang="en" xmltv_id="MoviePlexEast.us" site_id="movieplex-eastern/1066">MoviePlex East</channel>
@@ -195,8 +206,10 @@
     <channel lang="en" xmltv_id="NBCSportsBoston.us" site_id="nbc-sports-boston/4529">NBC Sports Boston</channel>
     <channel lang="en" xmltv_id="News12Conneticut.us" site_id="news-12-connecticut/20178">News12 Conneticut</channel>
     <channel lang="en" xmltv_id="News12LongIsland.us" site_id="news-12-long-island/20180">News12 Long Island</channel>
+    <channel lang="en" xmltv_id="NewsmaxTV.us" site_id="newsmax-tv/16818">Newsmax TV</channel>
     <channel lang="en" xmltv_id="NHLNetwork.us" site_id="nhl-network-usa/14156">NHL Network</channel>
     <channel lang="en" xmltv_id="OuterMaxEast.us" site_id="outermax-eastern/2270">OuterMax Eastern</channel>
+    <channel lang="en" xmltv_id="Reelz.us" site_id="reelzchannel/4175">Reelz</channel>
     <channel lang="en" xmltv_id="RetroPlexEast.us" site_id="retroplex-eastern/2342">RetroPlex East</channel>
     <channel lang="en" xmltv_id="RetroPlexWest.us" site_id="retroplex-pacific/2343">RetroPlex West</channel>
     <channel lang="en" xmltv_id="ScreenPix.us" site_id="screenpix/34659">ScreenPix</channel>
@@ -231,6 +244,8 @@
     <channel lang="en" xmltv_id="TBSWest.us" site_id="tbs-pacific/2016">TBS West</channel>
     <channel lang="en" xmltv_id="TCMCanada.ca" site_id="turner-classic-movies-canada/2847">Turner Classic Movies Canada</channel>
     <channel lang="en" xmltv_id="TCMEast.us" site_id="turner-classic-movies-usa/176">Turner Classic Movies USA</channel>
+    <channel lang="en" xmltv_id="TelemundoEast.us" site_id="telemundo-east-hd/33284">Telemundo East</channel>
+    <channel lang="en" xmltv_id="TelemundoWest.us" site_id="telemundo-pacific-feed/2013">Telemundo West</channel>
     <channel lang="en" xmltv_id="ThrillerMaxWest.us" site_id="thrillermax-pacific/2595">Thrillermax Pacific</channel>
     <channel lang="en" xmltv_id="TLCEast.us" site_id="tlc-usa-eastern/5005">TLC East</channel>
     <channel lang="en" xmltv_id="TLCWest.us" site_id="tlc-usa-hd-pacific/13492">TLC USA HD Pacific</channel>
@@ -244,10 +259,12 @@
     <channel lang="en" xmltv_id="TSN2.ca" site_id="tsn2/4294">TSN2</channel>
     <channel lang="en" xmltv_id="TSN3.ca" site_id="tsn3/13719">TSN3</channel>
     <channel lang="en" xmltv_id="TSN4.ca" site_id="tsn4/279">TSN4</channel>
-    <channel lang="en" xmltv_id="TSN5.ca" site_id="tsn5/278">TSN5</channel>	  
+    <channel lang="en" xmltv_id="TSN5.ca" site_id="tsn5/278">TSN5</channel>
+    <channel lang="en" xmltv_id="TVOne.us" site_id="tv-one/2287">TV One</channel>	  
     <channel lang="en" xmltv_id="TVLandWest.us" site_id="tv-land-pacific/210">TV Land West</channel>
     <channel lang="en" xmltv_id="USANetworkWest.us" site_id="usa-network-pacific/2144">USA Network West</channel>
     <channel lang="en" xmltv_id="VH1West.us" site_id="vh1-pacific-feed/1270">VH1 West</channel>
+    <channel lang="en" xmltv_id="VICETV.us" site_id="vice/624">Vice</channel>
     <channel lang="en" xmltv_id="W20CQD1.us" site_id="hope-channel-w20cqd-hempstead-ny/16436">Hope Channel (W20CQ-D) Hempstead, NY</channel>
     <channel lang="en" xmltv_id="WABCDT1.us" site_id="abc-wabc-new-york-ny/1769">ABC (WABC) New York, NY</channel>
     <channel lang="en" xmltv_id="WABCDT2.us" site_id="localish-wabcdt2-new-york-ny/10497">Localish (WABC-DT2) New York, NY</channel>
