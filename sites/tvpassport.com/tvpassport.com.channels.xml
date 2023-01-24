@@ -8,6 +8,7 @@
     <channel lang="en" xmltv_id="ABCNewsLive.us" site_id="abc-news-live/36224">ABC News Live</channel>
     <channel lang="en" xmltv_id="ABCSpark.ca" site_id="abc-spark/10281">ABC Spark</channel>
     <channel lang="en" xmltv_id="AccuWeatherNOW.us" site_id="accuweather/6140">AccuWeather</channel>
+    <channel lang="en" xmltv_id="ActionMaxEast.us" site_id="actionmax-eastern/1377">Actionmax Eastern</channel>
     <channel lang="en" xmltv_id="ActionMaxWest.us" site_id="actionmax-pacific-hd/8473">Actionmax Pacific HD</channel>
     <channel lang="en" xmltv_id="AEEast.us" site_id="ae-us-eastern-feed/2">A&amp;E East</channel>
     <channel lang="en" xmltv_id="AEWest.us" site_id="ae-us-pacific-feed/1202">A&amp;E West</channel>
@@ -59,6 +60,8 @@
     <channel lang="en" xmltv_id="CBUTDT.ca" site_id="cbc-cbut-vancouver-bc/180">CBC (CBUT) Vancouver, BC</channel>
     <channel lang="en" xmltv_id="CBWTDT.ca" site_id="cbc-cbwt-winnipeg-mb/110">CBC (CBWT) Winnipeg, MB</channel>
     <channel lang="en" xmltv_id="CBXTDT.ca" site_id="cbc-cbxt-edmonton-ab/146">CBC (CBXT) Edmonton, AB</channel>
+    <channel lang="en" xmltv_id="CinemaxEast.us" site_id="cinemax-eastern-feed/632">Cinemax Eastern</channel>
+    <channel lang="en" xmltv_id="CinemaxWest.us" site_id="cinemax-pacific-hd/3568">Cinemax Pacific</channel>
     <channel lang="en" xmltv_id="CMTEast.us" site_id="cmt-us-eastern-feed-hd/6344">CMT East</channel>
     <channel lang="en" xmltv_id="CNBC.us" site_id="cnbc-usa/201">CNBC</channel>
     <channel lang="en" xmltv_id="CNN.us" site_id="cnn/70">CNN</channel>
@@ -68,7 +71,12 @@
     <channel lang="en" xmltv_id="Crave3.ca" site_id="crave3-east/85">Crave 3</channel>
     <channel lang="en" xmltv_id="Crave4.ca" site_id="crave4/320">Crave 4</channel>
     <channel lang="en" xmltv_id="CSPAN2.us" site_id="cspan-2/1050">C-SPAN 2</channel>
+    <channel lang="en" xmltv_id="DiscoveryChannelEast.us" site_id="discovery-channel-us-eastern-feed/649">Discovery Channel (US) Eastern Feed</channel>
     <channel lang="en" xmltv_id="DiscoveryChannelWest.us" site_id="discovery-channel-us-pacific-feed/1206">Discovery Channel (US) Pacific Feed</channel>
+    <channel lang="en" xmltv_id="DiscoveryFamily.us" site_id="discovery-family-channel-hd/8518">Discovery Family (US)</channel>
+    <channel lang="en" xmltv_id="DisneyChannelEast.us" site_id="disney-eastern-feed/595">Disney Channel USA Eastern Feed</channel>
+    <channel lang="en" xmltv_id="DisneyJuniorEast.us" site_id="disney-junior-usa-east/6867">Disney Junior USA Eastern Feed</channel>
+    <channel lang="en" xmltv_id="DisneyXDEast.us" site_id="disney-xd-usa-eastern-feed/1053">Disney XD USA Eastern Feed</channel>
     <channel lang="en" xmltv_id="DisneyXDWest.us" site_id="disney-xd-usa-pacific-feed/1208">Disney XD USA Pacific Feed</channel>
     <channel lang="en" xmltv_id="ESPN.us" site_id="espn/594">ESPN</channel>
     <channel lang="en" xmltv_id="ESPN2.us" site_id="espn2/650">ESPN 2</channel>
@@ -80,8 +88,14 @@
     <channel lang="en" xmltv_id="FoxNewsChannel.us" site_id="fox-news/1083">FOX News</channel>
     <channel lang="en" xmltv_id="FreeformEast.us" site_id="freeform-east-feed/1011">Freeform</channel>
     <channel lang="en" xmltv_id="FreeformWest.us" site_id="freeform-pacific-feed/1197">Freeform West</channel>
+    <channel lang="en" xmltv_id="FuseEast.us" site_id="fuse-tv-hd-eastern/6221">Fuse East</channel>
+    <channel lang="en" xmltv_id="FXEast.us" site_id="fx-networks-east-coast-hd/6111">FX East</channel>
     <channel lang="en" xmltv_id="FXWest.us" site_id="fx-networks-west-coast/1449">FX West</channel>
+    <channel lang="en" xmltv_id="FXMovieChannel.us" site_id="fx-movie-channel-hd/8463">FX Movie Channel</channel>
+    <channel lang="en" xmltv_id="FXXEast.us" site_id="fxx-usa-hd-eastern/7506">FXX East</channel>
     <channel lang="en" xmltv_id="FXXWest.us" site_id="fxx-usa-pacific/19080">FXX West</channel>
+    <channel lang="en" xmltv_id="FYIEast.us" site_id="fyi-usa-hd-eastern/6211">FYI East</channel>
+    <channel lang="en" xmltv_id="GolTV.us" site_id="gol-tv-usa-hd/12608">GolTV US</channel>
     <channel lang="en" xmltv_id="GreatAmericanLiving.us" site_id="gac-living/16158">Great American Living</channel>
     <channel lang="en" xmltv_id="Grit.us" site_id="grit-network/14377">Grit</channel>
     <channel lang="en" xmltv_id="HallmarkChannelEast.us" site_id="hallmark-channel-hd-eastern/6213">Hallmark Channel East</channel>
@@ -186,13 +200,17 @@
     <channel lang="en" xmltv_id="KYAZDT2.us" site_id="metv-plus-kyazdt2-houston-tx/15499">MeTV Plus (KYAZ-DT2) Houston TX</channel>
     <channel lang="en" xmltv_id="LogoEast.us" site_id="logo-east/2091">Logo East</channel>
     <channel lang="en" xmltv_id="LogoWest.us" site_id="logo-pacific/13460">Logo West</channel>
+    <channel lang="en" xmltv_id="MagnoliaNetwork.us" site_id="magnolia-hd-east/8114">Magnolia Network</channel>
+    <channel lang="en" xmltv_id="MagnoliaNetworEast.us" site_id="magnolia-hd-east/8114">Magnolia East</channel>
     <channel lang="en" xmltv_id="MeTV.us" site_id="metv-network/16325">MeTV Network</channel>
     <channel lang="en" xmltv_id="MGMPlusDriveIn.us" site_id="epix-drivein/11487">MGM+ Drive-In</channel>
     <channel lang="en" xmltv_id="MGMPlusEast.us" site_id="epix-hd-east/7610">MGM+ East</channel>
     <channel lang="en" xmltv_id="MGMPlusHitsEast.us" site_id="epix2-east/11485">MGM+ Hits East</channel>
     <channel lang="en" xmltv_id="MGMPlusMarquee.us" site_id="epix-hits/11486">MGM+ Marquee</channel>
     <channel lang="en" xmltv_id="MGMPlusWest.us" site_id="epix-pacific/13443">MGM+ Pacific</channel>
+    <channel lang="en" xmltv_id="MoreMaxEast.us" site_id="moremax-eastern-hd/7097">MoreMax Eastern</channel>
     <channel lang="en" xmltv_id="MoreMaxWest.us" site_id="moremax-pacific-hd/8472">Moremax Pacific HD</channel>
+    <channel lang="en" xmltv_id="MovieMaxEast.us" site_id="moviemax-hd/7101">MovieMax Eastern</channel>
     <channel lang="en" xmltv_id="MovieMaxWest.us" site_id="moviemax-pacific/2625">MovieMax West</channel>
     <channel lang="en" xmltv_id="MoviePlexEast.us" site_id="movieplex-eastern/1066">MoviePlex East</channel>
     <channel lang="en" xmltv_id="MoviePlexWest.us" site_id="movieplex-pacific/1220">MoviePlex West</channel>
@@ -245,6 +263,7 @@
     <channel lang="en" xmltv_id="TheMovieChannelEast.us" site_id="tmc-hd-eastern/4352">The Movie Channel East</channel>
     <channel lang="en" xmltv_id="TheMovieChannelXtraEast.us" site_id="tmc-xtra-hd-eastern/7113">The Movie Channel Xtra East</channel>
     <channel lang="en" xmltv_id="TheWeatherChannel.us" site_id="the-weather-channel-hd/5599">The Weather Channel</channel>
+    <channel lang="en" xmltv_id="ThrillerMaxEast.us" site_id="thrillermax-east/1652">Thrillermax Eastern</channel>
     <channel lang="en" xmltv_id="ThrillerMaxWest.us" site_id="thrillermax-pacific/2595">Thrillermax Pacific</channel>
     <channel lang="en" xmltv_id="TLCEast.us" site_id="tlc-usa-eastern/5005">TLC East</channel>
     <channel lang="en" xmltv_id="TLCWest.us" site_id="tlc-usa-hd-pacific/13492">TLC USA HD Pacific</channel>
