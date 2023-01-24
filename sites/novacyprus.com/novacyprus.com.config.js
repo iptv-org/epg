@@ -1,3 +1,5 @@
+process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
+
 const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
