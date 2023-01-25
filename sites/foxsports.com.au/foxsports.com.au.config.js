@@ -2,7 +2,7 @@ const dayjs = require('dayjs')
 
 module.exports = {
   site: 'foxsports.com.au',
-  days: 2,
+  days: 3,
   request: {
     cache: {
       ttl: 60 * 60 * 1000 // 1 hour
