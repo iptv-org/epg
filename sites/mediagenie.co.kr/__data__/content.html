@@ -1,0 +1,868 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10">
+<meta name="HandheldFriendly" content="true">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="imagetoolbar" content="no">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+<meta name="description" content="ENA DRAMA, ENA STORY, 채널칭, ONT, 헬스메디 채널 운영 및 오리지널 콘텐츠 제작">
+<meta name="keywords" content="ENA DRAMA, ENA STORY, 채널칭, ONT, 헬스메디 채널 운영 및 오리지널 콘텐츠 제작">
+<meta property="og:type" content="website">
+<meta property="og:title" content="미디어지니 [Touch and Feel 콘텐츠 채널]">
+<meta property="og:description" content="ENA DRAMA, ENA STORY, 채널칭, ONT, 헬스메디 채널 운영 및 오리지널 콘텐츠 제작">
+<meta http-equiv="imagetoolbar" content="no">
+<link rel="canonical" href="https://mediagenie.co.kr/">
+
+<meta name="naver-site-verification" content="c04af30801bb12495fde71b4b4423ed13fb4a837" />
+<title>미디어지니 [Touch and Feel 콘텐츠 채널]</title>
+<link rel="stylesheet" href="https://mediagenie.co.kr/css/common.css?ver=210618">
+<link rel="stylesheet" href="https://mediagenie.co.kr/js/font-awesome/css/font-awesome.min.css?ver=210618">
+<link rel="stylesheet" href="https://mediagenie.co.kr/css/contents.css?ver=210618">
+<!--[if lte IE 8]>
+<script src="https://mediagenie.co.kr/js/html5.js"></script>
+<![endif]-->
+<script>
+// 자바스크립트에서 사용하는 전역변수 선언
+var g5_url       = "https://mediagenie.co.kr";
+var g5_bbs_url   = "https://mediagenie.co.kr/bbs";
+var g5_is_member = "";
+var g5_is_admin  = "";
+var g5_is_mobile = "";
+var g5_bo_table  = "";
+var g5_sca       = "";
+var g5_editor    = "";
+var g5_cookie_domain = "";
+</script>
+<script src="https://momentjs.com/downloads/moment.js"></script>
+<script src="https://mediagenie.co.kr/js/jquery-1.12.4.min.js?ver=210618"></script>
+<script src="https://mediagenie.co.kr/js/jquery-migrate-1.4.1.min.js?ver=210618"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+<script src="https://mediagenie.co.kr/js/jquery.menu.js?ver=210618"></script>
+<script src="https://mediagenie.co.kr/js/common.js?ver=210618"></script>
+<script src="https://mediagenie.co.kr/js/wrest.js?ver=210618"></script>
+<script src="https://mediagenie.co.kr/js/placeholders.min.js?ver=210618"></script>
+<script src="https://mediagenie.co.kr/js/slick.js?ver=210618"></script>
+<script src="https://mediagenie.co.kr/js/genie.js?ver=210618"></script>
+</head>
+<body>
+<div id="wrapper" class="channel">
+
+
+<!-- 상단 시작 { -->
+<header id="header">
+   <div class="wfix">
+      <h1 id="h1"><a href="https://ena.skylifetv.co.kr/" class="logo">skyTV</a></h1>
+      <button type="button" class="tgl_sns mo"><i>SNS 보기</i></button>
+      <div id="tnb">
+         <ul class="lst mont">
+            <li class="ENA"><a href="http://ena.skylifetv.co.kr/ENA" target="_blank">ENA</a></li>
+            <li class="ENA_PLAY"><a href="http://ena.skylifetv.co.kr/ENA_PLAY" target="_blank">ENA PLAY</a></li>
+            <li class="ENA_DRAMA"><a href="https://mediagenie.co.kr/ENA_DRAMA">ENA DRAMA</a></li>
+            <li class="ENA_STORY"><a href="https://mediagenie.co.kr/ENA_STORY">ENA STORY</a></li>
+            <li class="CHING"><a href="https://mediagenie.co.kr/CHING">CHING</a></li>
+            <li class="ONT"><a href="https://mediagenie.co.kr/ONT">ONT</a></li>
+            <li class="Healthmedi"><a href="https://mediagenie.co.kr/Healthmedi">Healthmedi</a></li>
+         </ul>
+      </div>
+      <nav id="menu">
+         <ul class="lst mont">
+                        <li class="d1">
+               <a href="https://mediagenie.co.kr/contents/schedule.php" class="d1_link"><span class="name_menu">편성표</span></a>
+               <ul class="sub">
+                                    <li class="d2"><a href="https://mediagenie.co.kr/contents/schedule.php" class="d2_link"><span class="name_menu">편성표</span></a></li>
+                                    <li class="d2"><a href="https://mediagenie.co.kr/number" class="d2_link"><span class="name_menu">채널번호</span></a></li>
+                                    <li class="d2"><a href="https://mediagenie.co.kr/contents/qton.php" class="d2_link"><span class="name_menu">큐톤</span></a></li>
+                                 </ul>
+            </li>
+                        <li class="d1">
+               <a href="/program" class="d1_link"><span class="name_menu">프로그램</span></a>
+               <ul class="sub">
+                                    <li class="d2"><a href="/program" class="d2_link"><span class="name_menu">프로그램</span></a></li>
+                                 </ul>
+            </li>
+                        <li class="d1">
+               <a href="https://mediagenie.co.kr/notice" class="d1_link"><span class="name_menu">공지사항</span></a>
+               <ul class="sub">
+                                    <li class="d2"><a href="https://mediagenie.co.kr/notice" class="d2_link"><span class="name_menu">공지사항</span></a></li>
+                                 </ul>
+            </li>
+                        <li class="d1">
+               <a href="https://mediagenie.co.kr/ENA_DRAMA" class="d1_link"><span class="name_menu">채널소개</span></a>
+               <ul class="sub mont">
+                                    <li class="d2"><a href="https://mediagenie.co.kr/ENA_DRAMA" class="d2_link"><span class="name_menu">ENA DRAMA</span></a></li>
+                                    <li class="d2"><a href="https://mediagenie.co.kr/ENA_STORY" class="d2_link"><span class="name_menu">ENA STORY</span></a></li>
+                                    <li class="d2"><a href="https://mediagenie.co.kr/CHING" class="d2_link"><span class="name_menu">CHING</span></a></li>
+                                    <li class="d2"><a href="https://mediagenie.co.kr/ONT" class="d2_link"><span class="name_menu">ONT</span></a></li>
+                                    <li class="d2"><a href="https://mediagenie.co.kr/Healthmedi" class="d2_link"><span class="name_menu">Healthmedi</span></a></li>
+                                 </ul>
+            </li>
+                     </ul>
+      </nav>
+      <div id="hd_sns">
+         <ul class="lst">
+            <li class="sns_youtube"><a href="https://www.youtube.com/c/ENA_PICK/videos" target="_blank">유튜브</a></li>
+            <li class="sns_facebook"><a href="https://www.facebook.com/mediagenietv" target="_blank">페이스북</a></li>
+            <li class="sns_blog"><a href="https://blog.naver.com/hyundaimediaofficial" target="_blank">블로그</a></li>
+            <li class="sns_insta"><a href="https://www.instagram.com/enadrama.ch/" target="_blank">인스타그램</a></li>
+         </ul>
+      </div>
+      <button type="button" class="tgl_menu mo"><i>전체메뉴</i></button>
+      <nav id="lnb" class="mo">
+         <button type="button" class="close">닫기</button>
+         <div class="inr">
+            <div class="hd_lnb"><a href="https://mediagenie.co.kr"><img src="https://mediagenie.co.kr/img/logo_skytv.png" alt="skyTV"></a></div>
+            <ul class="lnb_lst_channel">
+               <li><a href="https://mediagenie.co.kr/ENA_DRAMA"><img src="https://mediagenie.co.kr/img/chn_logo_ENA_DRAMA.png"></a></li>
+               <li><a href="https://mediagenie.co.kr/ENA_STORY"><img src="https://mediagenie.co.kr/img/chn_logo_ENA_STORY.png"></a></li>
+               <li><a href="http://ena.skylifetv.co.kr/ENA" target="_blank"><img src="https://mediagenie.co.kr/img/chn_logo_ENA.png"></a></li>
+               <li><a href="http://ena.skylifetv.co.kr/ENA_PLAY" target="_blank"><img src="https://mediagenie.co.kr/img/chn_logo_ENA_PLAY.png"></a></li>
+            </ul>
+            <ul class="lst">
+                              <li class="d1 on">
+                  <strong class="d1_tit"><span class="name_menu">편성표</span></strong>
+                  <ul class="sub" style="display:block;">
+                                          <li class="d2"><a href="https://mediagenie.co.kr/contents/schedule.php" class="d2_link"><span class="name_menu">편성표</span></a></li>
+                                          <li class="d2"><a href="https://mediagenie.co.kr/number" class="d2_link"><span class="name_menu">채널번호</span></a></li>
+                                          <li class="d2"><a href="https://mediagenie.co.kr/contents/qton.php" class="d2_link"><span class="name_menu">큐톤</span></a></li>
+                                       </ul>
+               </li>
+                              <li class="d1">
+                  <strong class="d1_tit"><span class="name_menu">프로그램</span></strong>
+                  <ul class="sub">
+                                          <li class="d2"><a href="/program" class="d2_link"><span class="name_menu">프로그램</span></a></li>
+                                       </ul>
+               </li>
+                              <li class="d1">
+                  <strong class="d1_tit"><span class="name_menu">공지사항</span></strong>
+                  <ul class="sub">
+                                          <li class="d2"><a href="https://mediagenie.co.kr/notice" class="d2_link"><span class="name_menu">공지사항</span></a></li>
+                                       </ul>
+               </li>
+                              <li class="d1 on">
+                  <strong class="d1_tit"><span class="name_menu">채널소개</span></strong>
+                  <ul class="sub mont" style="display:block;">
+                                          <li class="d2"><a href="https://mediagenie.co.kr/ENA_DRAMA" class="d2_link"><span class="name_menu">ENA DRAMA</span></a></li>
+                                          <li class="d2"><a href="https://mediagenie.co.kr/ENA_STORY" class="d2_link"><span class="name_menu">ENA STORY</span></a></li>
+                                          <li class="d2"><a href="https://mediagenie.co.kr/CHING" class="d2_link"><span class="name_menu">CHING</span></a></li>
+                                          <li class="d2"><a href="https://mediagenie.co.kr/ONT" class="d2_link"><span class="name_menu">ONT</span></a></li>
+                                          <li class="d2"><a href="https://mediagenie.co.kr/Healthmedi" class="d2_link"><span class="name_menu">헬스메디</span></a></li>
+                                       </ul>
+               </li>
+                           </ul>
+         </div>
+      </nav>
+   </div>
+</header>
+<!-- } 상단 끝 -->
+<hr>
+<!-- 콘텐츠 시작 { -->
+<div id="container" class="ena_drama">
+   
+   <div id="visual" style="background-color:#478baf">
+            <div class="bg mo" style="background-image:url(https://mediagenie.co.kr/data/file/channel1/);"></div>
+      <div class="bg" style="background-image:url(https://mediagenie.co.kr/data/file/channel1/);"></div>
+   </div>
+   <div id="contents">
+      <!--
+      <section class="section tit_channel">
+      -->
+      <section class="section tit_channel type2">
+         <!--
+                  -->
+         <div class="wfix">
+         <strong class="tit">드라마틱 DNA, <b class="mont emph">ENA DRAMA</b></strong>
+         <div class="cont">
+            <strong class="emph subTit"><p><span style="font-size:36px;color:rgb(238,42,48);">최고를 꿈꾸는 드라마 전문채널</span>&nbsp;</p></strong>
+            <p class="desc">3049 여성들의 취향을 저격할 드라마 전문 큐레이션 채널<br />
+드라마 덕후들을 위한 즐거운 커뮤니티장<br />
+가장 HOT한 드라마를 가장 빠르게 !!</p>
+         </div>
+         <!--
+         </div>         -->
+         </div>
+      </section>
+      <!-- 프로그램
+            <section class="section programs">
+         <div class="wfix">
+            <h4 class="tit_sec">프로그램</h4>
+            <div class="wrap_program">
+               <div class="lst">
+                                    <div class="item">
+                     <a href="" class="link">
+                        <div class="thumb"><img src="https://mediagenie.co.kr/data/file/channel1/1954331223_7YH3g96B_80130f97ee6ea9995e5fe8b49eaabe8f18ec42d9.ai" alt=""></div>
+                        <strong class="tit_item ellip"></strong>
+                     </a>
+                  </div>
+                                    <div class="item">
+                     <a href="" class="link">
+                        <div class="thumb"><img src="/" alt=""></div>
+                        <strong class="tit_item ellip"></strong>
+                     </a>
+                  </div>
+                                    <div class="item">
+                     <a href="" class="link">
+                        <div class="thumb"><img src="/" alt=""></div>
+                        <strong class="tit_item ellip"></strong>
+                     </a>
+                  </div>
+                                    <div class="item">
+                     <a href="" class="link">
+                        <div class="thumb"><img src="/" alt=""></div>
+                        <strong class="tit_item ellip"></strong>
+                     </a>
+                  </div>
+                                 </div>
+            </div>
+         </div>
+      </section>
+         -->
+
+            
+      <section id="sec_sche" class="section wrap_schedule">
+         <div class="wfix">
+            <h4 class="tit_sec">실시간 편성표</h4>
+            <div class="wrap_lst_date">
+               <ul class="lst has_today day7">
+                                    <li>
+                     <a href="https://mediagenie.co.kr/ENA_DRAMA?qd=20230122#sec_sche" class="inr">
+                        <div class="cont">
+                           <span class="date roboto">1.22</span>
+                           <span class="day">일요일</span>
+                        </div>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="https://mediagenie.co.kr/ENA_DRAMA?qd=20230123#sec_sche" class="inr">
+                        <div class="cont">
+                           <span class="date roboto">1.23</span>
+                           <span class="day">월요일</span>
+                        </div>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="https://mediagenie.co.kr/ENA_DRAMA?qd=20230124#sec_sche" class="inr">
+                        <div class="cont">
+                           <span class="date roboto">1.24</span>
+                           <span class="day">화요일</span>
+                        </div>
+                     </a>
+                  </li>
+                  <li class="onAir today">
+                     <a href="https://mediagenie.co.kr/ENA_DRAMA?qd=20230125#sec_sche" class="inr">
+                                                <span class="lab mont">ON<br>AIR</span>
+                                                <div class="cont">
+                           <span class="date roboto">
+                              1.25                              <em class="mo">23.01.25</em>
+                           </span>
+                           <span class="day">수요일</span>
+                        </div>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="https://mediagenie.co.kr/ENA_DRAMA?qd=20230126#sec_sche" class="inr">
+                        <div class="cont">
+                           <span class="date roboto">1.26</span>
+                           <span class="day">목요일</span>
+                        </div>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="https://mediagenie.co.kr/ENA_DRAMA?qd=20230127#sec_sche" class="inr">
+                        <div class="cont">
+                           <span class="date roboto">1.27</span>
+                           <span class="day">금요일</span>
+                        </div>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="https://mediagenie.co.kr/ENA_DRAMA?qd=20230128#sec_sche" class="inr">
+                        <div class="cont">
+                           <span class="date roboto">1.28</span>
+                           <span class="day">토요일</span>
+                        </div>
+                     </a>
+                  </li>
+               </ul>
+               <a href="https://mediagenie.co.kr/ENA_DRAMA?qd=20230124#sec_sche" class="arw prev">이전</a>
+               <a href="https://mediagenie.co.kr/ENA_DRAMA?qd=20230126#sec_sche" class="arw next">다음</a>
+            </div>
+
+                        <div class="wrap_tbl">
+               <table class="tbl">
+                  <caption class="blind">실시간 편성표</caption>
+                  <thead>
+                     <tr>
+                        <th scope="col">시간</th>
+                        <th scope="col" colspan="2">프로그램 제목</th>
+                        <th scope="col">회차</th>
+                        <th scope="col">프로그램 정보</th>
+                        <th scope="col">시청등급</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                                          <tr>
+                        <td class="col1">00:20</td>
+                                                <td class="col2" colspan="2">
+                           대행사                           <ul class="lst_info mo">
+                                                            <li><span class="lgd_lab mont re">재</span></li>
+                                                            <li><span class="lgd_lab mont">일</span></li>
+                                                         </ul>
+                        </td>
+                                                <td class="col4">5회</td>
+                        <td class="col5">
+                           <ul class="lst_info">
+                                                            <li><span class="lgd_lab mont re">재</span></li>
+                                                            <li><span class="lgd_lab mont">일</span></li>
+                                                         </ul>
+                        </td>
+                        <td class="col6">15</td>
+                     </tr>
+                                          <tr>
+                        <td class="col1">01:34</td>
+                                                <td class="col2" colspan="2">
+                           대행사                           <ul class="lst_info mo">
+                                                            <li><span class="lgd_lab mont re">재</span></li>
+                                                            <li><span class="lgd_lab mont">일</span></li>
+                                                         </ul>
+                        </td>
+                                                <td class="col4">6회</td>
+                        <td class="col5">
+                           <ul class="lst_info">
+                                                            <li><span class="lgd_lab mont re">재</span></li>
+                                                            <li><span class="lgd_lab mont">일</span></li>
+                                                         </ul>
+                        </td>
+                        <td class="col6">15</td>
+                     </tr>
+                                          <tr>
+                        <td class="col1">02:48</td>
+                                                <td class="col2" colspan="2">
+                           빨간 풍선                           <ul class="lst_info mo">
+                                                            <li><span class="lgd_lab mont re">재</span></li>
+                                                            <li><span class="lgd_lab mont">일</span></li>
+                                                         </ul>
+                        </td>
+                                                <td class="col4">9회</td>
+                        <td class="col5">
+                           <ul class="lst_info">
+                                                            <li><span class="lgd_lab mont re">재</span></li>
+                                                            <li><span class="lgd_lab mont">일</span></li>
+                                                         </ul>
+                        </td>
+                        <td class="col6">15</td>
+                     </tr>
+                                          <tr>
+                        <td class="col1">04:13</td>
+                                                <td class="col2" colspan="2">
+                           빨간 풍선                           <ul class="lst_info mo">
+                                                            <li><span class="lgd_lab mont re">재</span></li>
+                                                            <li><span class="lgd_lab mont">일</span></li>
+                                                         </ul>
+                        </td>
+                                                <td class="col4">10회</td>
+                        <td class="col5">
+                           <ul class="lst_info">
+                                                            <li><span class="lgd_lab mont re">재</span></li>
+                                                            <li><span class="lgd_lab mont">일</span></li>
+                                                         </ul>
+                        </td>
+                        <td class="col6">15</td>
+                     </tr>
+                                          <tr>
+                        <td class="col1">05:40</td>
+                                                <td class="col2" colspan="2">
+                           법쩐                           <ul class="lst_info mo">
+                                                            <li><span class="lgd_lab mont re">재</span></li>
+                                                            <li><span class="lgd_lab mont">일</span></li>
+                                                         </ul>
+                        </td>
+                                                <td class="col4">5회</td>
+                        <td class="col5">
+                           <ul class="lst_info">
+                                                            <li><span class="lgd_lab mont re">재</span></li>
+                                                            <li><span class="lgd_lab mont">일</span></li>
+                                                         </ul>
+                        </td>
+                        <td class="col6">15</td>
+                     </tr>
+                                          <tr>
+                        <td class="col1">06:55</td>
+                                                <td class="col2" colspan="2">
+                           법쩐                           <ul class="lst_info mo">
+                                                            <li><span class="lgd_lab mont re">재</span></li>
+                                                            <li><span class="lgd_lab mont">일</span></li>
+                                                         </ul>
+                        </td>
+                                                <td class="col4">6회</td>
+                        <td class="col5">
+                           <ul class="lst_info">
+                                                            <li><span class="lgd_lab mont re">재</span></li>
+                                                            <li><span class="lgd_lab mont">일</span></li>
+                                                         </ul>
+                        </td>
+                        <td class="col6">15</td>
+                     </tr>
+                                          <tr>
+                        <td class="col1">08:11</td>
+                                                <td class="col2" colspan="2">
+                           남이 될 수 있을까                           <ul class="lst_info mo">
+                                                            <li><span class="lgd_lab mont re">재</span></li>
+                                                            <li><span class="lgd_lab mont">일</span></li>
+                                                         </ul>
+                        </td>
+                                                <td class="col4">1회</td>
+                        <td class="col5">
+                           <ul class="lst_info">
+                                                            <li><span class="lgd_lab mont re">재</span></li>
+                                                            <li><span class="lgd_lab mont">일</span></li>
+                                                         </ul>
+                        </td>
+                        <td class="col6">15</td>
+                     </tr>
+                                          <tr>
+                        <td class="col1">09:28</td>
+                                                <td class="col2" colspan="2">
+                           남이 될 수 있을까                           <ul class="lst_info mo">
+                                                            <li><span class="lgd_lab mont re">재</span></li>
+                                                            <li><span class="lgd_lab mont">일</span></li>
+                                                         </ul>
+                        </td>
+                                                <td class="col4">2회</td>
+                        <td class="col5">
+                           <ul class="lst_info">
+                                                            <li><span class="lgd_lab mont re">재</span></li>
+                                                            <li><span class="lgd_lab mont">일</span></li>
+                                                         </ul>
+                        </td>
+                        <td class="col6">15</td>
+                     </tr>
+                                          <tr class="onAir">
+                        <td class="col1">10:51</td>
+                                                <td class="col2">
+                           <span class="mont mo onair">ON AIR</span>
+                           오은영 게임                           <ul class="lst_info mo">
+                                                            <li><span class="lgd_lab mont orig">본</span></li>
+                                                            <li><span class="lgd_lab mont">일</span></li>
+                                                         </ul>
+                        </td>
+                        <td class="col3 mont">ON AIR</td>
+                                                <td class="col4">1회</td>
+                        <td class="col5">
+                           <ul class="lst_info">
+                                                            <li><span class="lgd_lab mont orig">본</span></li>
+                                                            <li><span class="lgd_lab mont">일</span></li>
+                                                         </ul>
+                        </td>
+                        <td class="col6">12</td>
+                     </tr>
+                                          <tr>
+                        <td class="col1">12:20</td>
+                                                <td class="col2" colspan="2">
+                           대행사                           <ul class="lst_info mo">
+                                                            <li><span class="lgd_lab mont re">재</span></li>
+                                                            <li><span class="lgd_lab mont">일</span></li>
+                                                         </ul>
+                        </td>
+                                                <td class="col4">5회</td>
+                        <td class="col5">
+                           <ul class="lst_info">
+                                                            <li><span class="lgd_lab mont re">재</span></li>
+                                                            <li><span class="lgd_lab mont">일</span></li>
+                                                         </ul>
+                        </td>
+                        <td class="col6">15</td>
+                     </tr>
+                                          <tr>
+                        <td class="col1">13:41</td>
+                                                <td class="col2" colspan="2">
+                           대행사                           <ul class="lst_info mo">
+                                                            <li><span class="lgd_lab mont re">재</span></li>
+                                                            <li><span class="lgd_lab mont">일</span></li>
+                                                         </ul>
+                        </td>
+                                                <td class="col4">6회</td>
+                        <td class="col5">
+                           <ul class="lst_info">
+                                                            <li><span class="lgd_lab mont re">재</span></li>
+                                                            <li><span class="lgd_lab mont">일</span></li>
+                                                         </ul>
+                        </td>
+                        <td class="col6">15</td>
+                     </tr>
+                                          <tr>
+                        <td class="col1">:59</td>
+                                                <td class="col2" colspan="2">
+                           남이 될 수 있을까                           <ul class="lst_info mo">
+                                                            <li><span class="lgd_lab mont re">재</span></li>
+                                                            <li><span class="lgd_lab mont">일</span></li>
+                                                         </ul>
+                        </td>
+                                                <td class="col4">1회</td>
+                        <td class="col5">
+                           <ul class="lst_info">
+                                                            <li><span class="lgd_lab mont re">재</span></li>
+                                                            <li><span class="lgd_lab mont">일</span></li>
+                                                         </ul>
+                        </td>
+                        <td class="col6">15</td>
+                     </tr>
+                                          <tr>
+                        <td class="col1">16:19</td>
+                                                <td class="col2" colspan="2">
+                           남이 될 수 있을까                           <ul class="lst_info mo">
+                                                            <li><span class="lgd_lab mont re">재</span></li>
+                                                            <li><span class="lgd_lab mont">일</span></li>
+                                                         </ul>
+                        </td>
+                                                <td class="col4">2회</td>
+                        <td class="col5">
+                           <ul class="lst_info">
+                                                            <li><span class="lgd_lab mont re">재</span></li>
+                                                            <li><span class="lgd_lab mont">일</span></li>
+                                                         </ul>
+                        </td>
+                        <td class="col6">15</td>
+                     </tr>
+                                          <tr>
+                        <td class="col1">17:38</td>
+                                                <td class="col2" colspan="2">
+                           오은영 게임                           <ul class="lst_info mo">
+                                                            <li><span class="lgd_lab mont re">재</span></li>
+                                                            <li><span class="lgd_lab mont">일</span></li>
+                                                         </ul>
+                        </td>
+                                                <td class="col4">1회</td>
+                        <td class="col5">
+                           <ul class="lst_info">
+                                                            <li><span class="lgd_lab mont re">재</span></li>
+                                                            <li><span class="lgd_lab mont">일</span></li>
+                                                         </ul>
+                        </td>
+                        <td class="col6">12</td>
+                     </tr>
+                                          <tr>
+                        <td class="col1">19:06</td>
+                                                <td class="col2" colspan="2">
+                           무한도전                           <ul class="lst_info mo">
+                                                            <li><span class="lgd_lab mont re">재</span></li>
+                                                            <li><span class="lgd_lab mont">일</span></li>
+                                                         </ul>
+                        </td>
+                                                <td class="col4">392회</td>
+                        <td class="col5">
+                           <ul class="lst_info">
+                                                            <li><span class="lgd_lab mont re">재</span></li>
+                                                            <li><span class="lgd_lab mont">일</span></li>
+                                                         </ul>
+                        </td>
+                        <td class="col6">12</td>
+                     </tr>
+                                          <tr>
+                        <td class="col1">20:40</td>
+                                                <td class="col2" colspan="2">
+                           무한도전                           <ul class="lst_info mo">
+                                                            <li><span class="lgd_lab mont re">재</span></li>
+                                                            <li><span class="lgd_lab mont">일</span></li>
+                                                         </ul>
+                        </td>
+                                                <td class="col4">393회</td>
+                        <td class="col5">
+                           <ul class="lst_info">
+                                                            <li><span class="lgd_lab mont re">재</span></li>
+                                                            <li><span class="lgd_lab mont">일</span></li>
+                                                         </ul>
+                        </td>
+                        <td class="col6">12</td>
+                     </tr>
+                                          <tr>
+                        <td class="col1">22:15</td>
+                                                <td class="col2" colspan="2">
+                           남이 될 수 있을까                           <ul class="lst_info mo">
+                                                            <li><span class="lgd_lab mont re">재</span></li>
+                                                            <li><span class="lgd_lab mont">일</span></li>
+                                                         </ul>
+                        </td>
+                                                <td class="col4">5회</td>
+                        <td class="col5">
+                           <ul class="lst_info">
+                                                            <li><span class="lgd_lab mont re">재</span></li>
+                                                            <li><span class="lgd_lab mont">일</span></li>
+                                                         </ul>
+                        </td>
+                        <td class="col6">15</td>
+                     </tr>
+                                          <tr>
+                        <td class="col1">23:27</td>
+                                                <td class="col2" colspan="2">
+                           법쩐                           <ul class="lst_info mo">
+                                                            <li><span class="lgd_lab mont re">재</span></li>
+                                                            <li><span class="lgd_lab mont">일</span></li>
+                                                         </ul>
+                        </td>
+                                                <td class="col4">6회</td>
+                        <td class="col5">
+                           <ul class="lst_info">
+                                                            <li><span class="lgd_lab mont re">재</span></li>
+                                                            <li><span class="lgd_lab mont">일</span></li>
+                                                         </ul>
+                        </td>
+                        <td class="col6">15</td>
+                     </tr>
+                                       </tbody>
+               </table>
+               </div>
+                        <div class="ft_tbl">
+               <a href="javascript:;" class="tgl">편성표 자세히 보기</a>
+               <p class="refer">* 이 편성표는 방송사 사정에 따라 변경 될 수 있습니다.</p>
+            </div>
+            <div class="lgd">
+                  <ul class="lst">
+                                             <li><span class="lgd_lab mont re">재</span><span class="desc">재방송</span></li>
+                                                <li><span class="lgd_lab mont orig">본</span><span class="desc">본방송</span></li>
+                                                <li><span class="lgd_lab mont">일</span><span class="desc">일반방송</span></li>
+                                                <li><span class="lgd_lab mont">해</span><span class="desc">화면해설</span></li>
+                                                <li><span class="lgd_lab mont">수</span><span class="desc">수화방송</span></li>
+                                                <li><span class="lgd_lab mont">자</span><span class="desc">자막방송</span></li>
+                                                <li><span class="lgd_lab mont">음</span><span class="desc">음성다중</span></li>
+                                                <li><span class="lgd_lab mont">SD</span><span class="desc">일반화질</span></li>
+                                                <li><span class="lgd_lab mont">HD</span><span class="desc">고화질</span></li>
+                                                <li><span class="lgd_lab mont">UHD</span><span class="desc">초고화질</span></li>
+                                             </ul>
+                     <div class="mo lst_age">
+                        <ul class="lst">
+                           <li><span class="lgd_lab mont">ALL</span></li>
+                           <li><span class="lgd_lab">7</span></li>
+                           <li><span class="lgd_lab">12</span></li>
+                           <li><span class="lgd_lab">15</span></li>
+                           <li><span class="lgd_lab age19">19</span></li>
+                        </ul>
+                        <span class="desc">연령대 별 시청 가능</span>
+                     </div>
+                  </div>
+         </div>
+      </section>
+
+      <section id="sec_num" class="section channelNum">
+         <div class="wfix">
+
+            <h4 class="tit_sec">채널 번호</h4>
+         </div>
+                        <div class="wrap_number">
+               <div class="sch_area">
+                  <div class="wfix">
+                     <div class="inr_sch">
+                        <strong class="tit">우리지역찾기</strong>
+                        <div class="wrap_sch">
+                        <div class="wrap_slt">
+                           <select id="area1" class="slt_area" onchange="schArea(this)" title="시,도 선택">
+                              <option value="">시/도</option>
+                                                            <option value="강원" data-area="2">강원</option>
+                                                            <option value="경기" data-area="3">경기</option>
+                                                            <option value="경남" data-area="4">경남</option>
+                                                            <option value="경북" data-area="5">경북</option>
+                                                            <option value="광주" data-area="6">광주</option>
+                                                            <option value="대구" data-area="7">대구</option>
+                                                            <option value="대전" data-area="8">대전</option>
+                                                            <option value="부산" data-area="9">부산</option>
+                                                            <option value="서울" data-area="10">서울</option>
+                                                            <option value="세종" data-area="11">세종</option>
+                                                            <option value="울산" data-area="12">울산</option>
+                                                            <option value="인천" data-area="13">인천</option>
+                                                            <option value="전남" data-area="14">전남</option>
+                                                            <option value="전북" data-area="15">전북</option>
+                                                            <option value="제주" data-area="16">제주</option>
+                                                            <option value="충남" data-area="17">충남</option>
+                                                            <option value="충북" data-area="18">충북</option>
+                                                         </select>
+                        </div>
+                        <div class="wrap_slt">
+                           <select id="area2" class="slt_area" title="시,구,군 선택">
+                              <option value="">시/구/군</option>
+                                                         </select>
+                        </div>
+                        <button type="button" onclick="sch_result()" class="btn_sch">검색</button>
+                     </div>
+                     </div>
+                  </div>
+               </div>
+                              <div class="lst_numbers">
+                  <div class="wfix">
+                     <ul class="lst">
+                                                   <li>
+                              <strong class="roboto num">46</strong>
+                              <span class="logo"><img src="../img/telecom_btv.png" alt="btv"></span>
+                              <a href="https://www.skbroadband.com/" class="link" target="_blank">바로가기</a>
+                           </li>
+                                                   <li>
+                              <strong class="roboto num">999</strong>
+                              <span class="logo"><img src="../img/telecom_olleh.png" alt="olleh"></span>
+                              <a href="https://tv.kt.com/" class="link" target="_blank">바로가기</a>
+                           </li>
+                                                   <li>
+                              <strong class="roboto num">73</strong>
+                              <span class="logo"><img src="../img/telecom_lg.png" alt="lg"></span>
+                              <a href="https://www.uplus.co.kr/" class="link" target="_blank">바로가기</a>
+                           </li>
+                                                   <li>
+                              <strong class="roboto num">36</strong>
+                              <span class="logo"><img src="../img/telecom_ktsky.png" alt="ktsky"></span>
+                              <a href="https://www.skylife.co.kr/" class="link" target="_blank">바로가기</a>
+                           </li>
+                                             </ul>
+                  </div>
+               </div>
+            </div>
+            <script>
+               function schArea(sel){
+                  var sel_arr = $(sel).find("option:selected").data('area');
+                  location.href = 'https://mediagenie.co.kr/ENA_DRAMA?qd=&chn=ENA_DRAMA&area_slt1='+sel_arr+'#sec_num';
+               }
+               function sch_result(){
+                  var sel_arr = $('#area1').find("option:selected").data('area');
+                  var sel_arr2 = $('#area2').find("option:selected").data('area');
+                  location.href = 'https://mediagenie.co.kr/ENA_DRAMA?qd=&chn=ENA_DRAMA&area_slt1='+sel_arr+'&area_slt2='+sel_arr2+'#sec_num';
+               }
+            </script>
+      </section>
+
+      <div class="ft_chn">
+         <div class="wfix">
+            <div class="wrap_download">
+               
+   <a href="https://mediagenie.co.kr/bbs/download.php?bo_table=channel1&amp;wr_id=2&amp;no=2" class="link_download"><span class="inr"><b class="mont emph">ENA DRAMA</b> <span class="ib"><em>채널</em> 로고 다운받기</span></span></a>
+            </div>
+            <div class="wrap_contact">채널문의 <a href="mailto:ks.shin@kt.com" class="mont"><span class="mo">채널문의</span>ks.shin@kt.com</a></div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<script>
+   $(document).ready(function(){
+      if($('.wrap_schedule tr.onAir').length > 0){
+         var p = $('.wrap_schedule tr.onAir').prev();
+         var on = $('.wrap_schedule tr.onAir');
+         var n = $('.wrap_schedule tr.onAir').next();
+      }else {
+         var p = $('.wrap_schedule tr').eq(1)
+         var on = $('.wrap_schedule tr').eq(2)
+         var n = $('.wrap_schedule tr').eq(3)
+      }
+      if($('#sec_sche .lst').hasClass('has_today')){
+         $('.wrap_schedule tbody tr').not(p).not(n).not(on).hide()
+         $('.wrap_schedule .tgl').click(function(){
+            $(this).toggleClass('on');
+            if($('.wrap_schedule').hasClass('on')){
+               $('.wrap_schedule').removeClass('on')
+               $('.wrap_schedule tbody tr').not(p).not(n).not(on).hide()
+            }else {
+               $('.wrap_schedule').addClass('on')
+               $('.wrap_schedule tr').show()
+            }
+         })
+         $('.wrap_schedule tbody tr.onAir:first-child').next().next().show()
+      }else {
+         $('.wrap_schedule tbody tr:nth-child(n+4)').hide()
+         $('.wrap_schedule .tgl').click(function(){
+            if($('.wrap_schedule').hasClass('on')){
+               $('.wrap_schedule').removeClass('on')
+               $('.wrap_schedule tbody tr:nth-child(n+4)').hide()
+            }else {
+               $('.wrap_schedule').addClass('on')
+               $('.wrap_schedule tr').show()
+            }
+         })
+      }
+   })
+</script>
+
+</div>
+<!-- } 콘텐츠 끝 -->
+
+<hr>
+<!-- 하단 시작 { -->
+<footer id="footer">
+   <div class="links">
+     <div class="wfix">
+       <ul class="lst">
+                    <li><a href="https://ena.skylifetv.co.kr/theme/business/html/company/01.php">회사소개</a></li>
+                      <li><a href="https://ena.skylifetv.co.kr/bbs/board.php?bo_table=history">연혁</a></li>
+                      <li><a href="https://ena.skylifetv.co.kr/bbs/board.php?bo_table=sky_advertisement&wr_id=3">광고안내</a></li>
+                      <li><a href="https://ena.skylifetv.co.kr/bbs/board.php?bo_table=sky_online">사업안내</a></li>
+                      <li><a href="https://mediagenie.co.kr/announce">회사공고</a></li>
+                      <li><a href="https://ena.skylifetv.co.kr/bbs/board.php?bo_table=sky_job">채용</a></li>
+                      <li><a href="https://ena.skylifetv.co.kr/bbs/board.php?bo_table=ethics">윤리경영</a></li>
+                    </ul>
+         <a href="javascript:;" id="top_btn" class="totop">맨위로</a>
+     </div>
+   </div>
+   <div class="ft_cont">
+      <div class="wfix">
+         <a href="https://ena.skylifetv.co.kr/" class="logo"><img src="https://mediagenie.co.kr/img/ft_logo_sky.png" alt="skyTV"></a>
+         <div class="ft_info">
+            <span>대표이사 : 윤용필</span>
+            <span>사업자등록번호 : 104-81-86162</span><br>
+            <span>주소 : 서울특별시 마포구 월드컵북로 54길 25(상암동 1596) S-city 3~5층</span><br>
+            <span><b>TEL</b> : 02-2146-0700</span>
+            <span><b>FAX</b> : 02-2146-0702</span>
+            <span>이메일 : help@skylifetv.co.kr</span>
+            <p class="copyrights">
+               Copyright 2022 스카이라이프티브이. All Rights Reserved.
+                              <a href="https://mediagenie.co.kr/bbs/login.php" class="link_login"><i class="fa fa-user" aria-hidden="true"></i></a>
+                        </div>
+         <div class="ft_contact">
+            <strong class="tit roboto">Contact</strong>
+            <div class="cont_contact">
+               <a href="tel:02-2146-0700" class=" roboto link_tel">02-2146-0700</a>
+               <a href="mailto:﻿help@skylifetv.co.kr" class="mont link_email">help@skylifetv.co.kr</a>
+            </div>
+         </div>
+      </div>
+   </div>
+
+</footer>
+</div>
+
+<script>
+$(function() {
+   $("#top_btn").on("click", function() {
+      $("html, body").animate({scrollTop:0}, '500');
+      return false;
+   });
+});
+</script>
+
+
+<!-- } 하단 끝 -->
+
+<script>
+$(function() {
+    // 폰트 리사이즈 쿠키있으면 실행
+    font_resize("container", get_cookie("ck_font_resize_rmv_class"), get_cookie("ck_font_resize_add_class"));
+});
+</script>
+
+
+
+<!-- ie6,7에서 사이드뷰가 게시판 목록에서 아래 사이드뷰에 가려지는 현상 수정 -->
+<!--[if lte IE 7]>
+<script>
+$(function() {
+    var $sv_use = $(".sv_use");
+    var count = $sv_use.length;
+
+    $sv_use.each(function() {
+        $(this).css("z-index", count);
+        $(this).css("position", "relative");
+        count = count - 1;
+    });
+});
+</script>
+<![endif]-->
+
+
+</body>
+</html>
