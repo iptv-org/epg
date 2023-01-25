@@ -2,14 +2,12 @@
 <site site="indihometv.com">
   <channels>
     <channel lang="id" xmltv_id="UseePrime.id" site_id="useeprime">UseePrime</channel>
-    <channel lang="id" xmltv_id="UseePhoto.id" site_id="useephoto">Usee Photo</channel>
     <channel lang="id" xmltv_id="IndiKids.id" site_id="indikids">IndiKids</channel>
-    <channel lang="id" xmltv_id="RuangTrampil.id" site_id="useeinfo">Ruang Trampil</channel>
     <channel lang="id" xmltv_id="SEAToday.id" site_id="seatoday">SEA Today</channel>
-    <channel lang="id" xmltv_id="Trans7.id" site_id="trans7">Trans7</channel>
     <channel lang="id" xmltv_id="TransTV.id" site_id="transtv">TransTV</channel>
-    <channel lang="id" xmltv_id="ANTV.id" site_id="antv">ANTV</channel>
+    <channel lang="id" xmltv_id="Trans7.id" site_id="trans7">Trans7</channel>
     <channel lang="id" xmltv_id="tvOne.id" site_id="tvone">TV One</channel>
+    <channel lang="id" xmltv_id="ANTV.id" site_id="antv">ANTV</channel>
     <channel lang="id" xmltv_id="MetroTV.id" site_id="metrotv">Metro TV</channel>
     <channel lang="id" xmltv_id="KompasTV.id" site_id="kompastv">Kompas TV</channel>
     <channel lang="id" xmltv_id="INews.id" site_id="inews">iNews</channel>
@@ -18,49 +16,47 @@
     <channel lang="id" xmltv_id="RodjaTV.id" site_id="rodjatv">Rodja TV</channel>
     <channel lang="id" xmltv_id="JTV.id" site_id="jtv">JTV</channel>
     <channel lang="id" xmltv_id="MNCNews.id" site_id="mncnews">MNC News</channel>
-    <channel lang="id" xmltv_id="BeritaSatu.id" site_id="beritasatu">Berita Satu</channel>
+    <channel lang="id" xmltv_id="BeritaSatu.id" site_id="beritasatu">BTV</channel>
     <channel lang="id" xmltv_id="RRINet.id" site_id="rrinet">RRI NET</channel>
     <channel lang="id" xmltv_id="BaliTV.id" site_id="balitv">Bali TV</channel>
     <channel lang="id" xmltv_id="MQTV.id" site_id="mqtv">MQTV</channel>
     <channel lang="id" xmltv_id="MTATV.id" site_id="mtatv">MTATV</channel>
-    <!-- <channel lang="id" xmltv_id="AlQuranKareem.id" site_id="alquran">AlQuran Kareem</channel> -->
+    <channel lang="id" xmltv_id="QuranTV.sa" site_id="alquran">AlQuran Kareem</channel>
     <channel lang="id" xmltv_id="JakTV.id" site_id="jaktv">JakTV</channel>
     <channel lang="id" xmltv_id="NusantaraTV.id" site_id="nusantaratv">Nusantara TV</channel>
-    <!-- <channel lang="id" xmltv_id="Antara.id" site_id="antara">Antara</channel> -->
-    <!-- <channel lang="id" xmltv_id="MuhammadiyahTV.id" site_id="muhammadiyahtv">Muhammadiyah TV</channel> -->
-    <!-- <channel lang="id" xmltv_id="Prambors.id" site_id="pramborstv">Prambors</channel> -->
+    <channel lang="id" xmltv_id="Antara.id" site_id="antara">Antara</channel>
+    <channel lang="id" xmltv_id="TVMu.id" site_id="muhammadiyahtv">Muhammadiyah TV</channel>
+    <channel lang="id" xmltv_id="Prambors.id" site_id="pramborstv">Prambors</channel>
     <channel lang="id" xmltv_id="TVEdukasi.id" site_id="tvedukasi">TV Edukasi</channel>
     <channel lang="id" xmltv_id="ArirangTV.kr" site_id="arirang">Arirang</channel>
     <channel lang="id" xmltv_id="TVMUI.id" site_id="muitv">MUI TV</channel>
     <channel lang="id" xmltv_id="TawafTV.id" site_id="tawaftv">Tawaf TV</channel>
     <channel lang="id" xmltv_id="TV9Nusantara.id" site_id="tv9">TV9 NU</channel>
-    <!-- <channel lang="id" xmltv_id="IndonesianaTV.id" site_id="indonesiana">Indonesiana TV</channel> -->
-    <!-- <channel lang="id" xmltv_id="UtamiTV.id" site_id="utamitv">Utami TV</channel> -->
+    <channel lang="id" xmltv_id="IndonesianaTV.id" site_id="indonesiana">Indonesiana TV</channel>
     <channel lang="id" xmltv_id="CCTV4Asia.cn" site_id="cctv4">CCTV4</channel>
     <channel lang="id" xmltv_id="DWEnglish.de" site_id="dwtv">DW (English)</channel>
     <channel lang="id" xmltv_id="ABCAustralia.au" site_id="abcaustralia">ABC Australia</channel>
-    <!-- <channel lang="id" xmltv_id="ChineseDrama.id" site_id="chinesedrama">Chinese Drama</channel> -->
+    <channel lang="id" xmltv_id="ChineseDrama.hk" site_id="chinesedrama">Chinese Drama</channel>
     <channel lang="id" xmltv_id="EuronewsEnglish.fr" site_id="euronews">Euronews</channel>
     <channel lang="id" xmltv_id="TRTWorld.tr" site_id="trtworld">TRT World</channel>
     <channel lang="id" xmltv_id="France24English.fr" site_id="france24">France 24</channel>
     <channel lang="id" xmltv_id="CGTNDocumentary.cn" site_id="cgtndocumentary">CGTN Documentary</channel>
     <channel lang="id" xmltv_id="SCTV.id" site_id="sctv">SCTV</channel>
     <channel lang="id" xmltv_id="Indosiar.id" site_id="indosiar">Indosiar</channel>
-    <!-- <channel lang="id" xmltv_id="UseeSports.id" site_id="useesport">UseeSports</channel> -->
-    <!-- <channel lang="id" xmltv_id="UseeSports2.id" site_id="useesports2">UseeSports2</channel> -->
+    <channel lang="id" xmltv_id="UseeSports.id" site_id="useesport">UseeSports</channel>
+    <channel lang="id" xmltv_id="UseeSports2.id" site_id="useesports2">UseeSports2</channel>
     <channel lang="id" xmltv_id="beINSports1Indonesia.id" site_id="bein1">beIN Sports 1</channel>
     <channel lang="id" xmltv_id="beINSports3Indonesia.id" site_id="bein2">beIN Sports 3</channel>
     <channel lang="id" xmltv_id="SPOTV.kr" site_id="spotv">SPOTV</channel>
     <channel lang="id" xmltv_id="SPOTV2.kr" site_id="spotv2">SPOTV2</channel>
     <channel lang="id" xmltv_id="NBATV.us" site_id="nba">NBA</channel>
-    <channel lang="id" xmltv_id="eGGNetwork.my" site_id="egg">egg network</channel>
     <channel lang="id" xmltv_id="FightSports.us" site_id="fightsport">Fight Sport</channel>
     <channel lang="id" xmltv_id="tvNMoviesAsia.hk" site_id="tvnmovies">TVN Movies</channel>
     <channel lang="id" xmltv_id="IMC.id" site_id="imc">IMC</channel>
     <channel lang="id" xmltv_id="GalaxyPremium.id" site_id="galaxypremium">Galaxy Premium</channel>
     <channel lang="id" xmltv_id="Galaxy.id" site_id="galaxy">Galaxy</channel>
-    <!-- <channel lang="id" xmltv_id="Hits.id" site_id="hits">Hits</channel> -->
-    <!-- <channel lang="id" xmltv_id="Flik.id" site_id="flik">Flik</channel> -->
+    <channel lang="id" xmltv_id="HITS.sg" site_id="hits">HITS</channel>
+    <channel lang="id" xmltv_id="Flik.id" site_id="flik">Flik</channel>
     <channel lang="id" xmltv_id="BioskopIndonesia.id" site_id="bioskopindonesia">Bioskop Indonesia</channel>
     <channel lang="id" xmltv_id="CelestialMoviesIndonesia.id" site_id="celestialmovie">Celestial Movie</channel>
     <channel lang="id" xmltv_id="ZeeBioskop.id" site_id="zbioskop">ZBioskop</channel>
@@ -95,11 +91,10 @@
     <channel lang="id" xmltv_id="KIX.hk" site_id="kix">Kix</channel>
     <channel lang="id" xmltv_id="LifetimeAsia.us" site_id="lifetime">Lifetime</channel>
     <channel lang="id" xmltv_id="TV5MondeAsia.fr" site_id="tv5monde">TV5Monde</channel>
-    <channel lang="id" xmltv_id="NHKWorldPremium.jp" site_id="nhkpremium">NHK World Premium</channel>
-    <!-- <channel lang="id" xmltv_id="Formosa.id" site_id="formosa">Formosa</channel> -->
-    <!-- <channel lang="id" xmltv_id="SGEM.id" site_id="sgem">SGEM</channel> -->
-    <!-- UNSURE- GUESS --><channel lang="id" xmltv_id="ZhejiangSatelliteTVInternational.cn" site_id="zhejiang">Zhejiang</channel>
-    <!-- <channel lang="id" xmltv_id="Shenzen.id" site_id="shenzen">Shenzen</channel> -->
+    <channel lang="id" xmltv_id="FTV.tw" site_id="formosa">Formosa</channel>
+    <channel lang="id" xmltv_id="GEM.sg" site_id="sgem">GEM</channel>
+    <channel lang="id" xmltv_id="ZhejiangSatelliteTVInternational.cn" site_id="zhejiang">Zhejiang</channel>
+    <channel lang="id" xmltv_id="ShenzhenTV.cn" site_id="shenzen">Shenzen</channel>
     <channel lang="id" xmltv_id="EBCAsia.tw" site_id="ettvasia">EBC Asia</channel>
     <channel lang="id" xmltv_id="CTiAsia.tw" site_id="ctiasia">CTI Asia</channel>
     <channel lang="id" xmltv_id="CartoonNetworkAsia.sg" site_id="cartoonnetwork">Cartoon Network</channel>
@@ -110,7 +105,7 @@
     <channel lang="id" xmltv_id="BoomerangAsia.sg" site_id="boomerang">Boomerang</channel>
     <channel lang="id" xmltv_id="MyKidz.id" site_id="mykids">MyKidz</channel>
     <channel lang="id" xmltv_id="MentariTV.id" site_id="mentaritv">Mentari TV</channel>
-    <!-- <channel lang="id" xmltv_id="DaVinciLearning.id" site_id="davinci">Da Vinci Learning</channel> -->
+    <channel lang="id" xmltv_id="DaVinciAsia.de" site_id="davinci">Da Vinci Learning</channel>
     <channel lang="id" xmltv_id="NationalGeographicIndonesia.id" site_id="natgeo">Nat Geo</channel>
     <channel lang="id" xmltv_id="DiscoveryChannelIndonesia.id" site_id="disco">Discovery Channel</channel>
     <channel lang="id" xmltv_id="NationalGeographicWildIndonesia.id" site_id="natgeowild">Nat Geo Wild</channel>
@@ -124,30 +119,22 @@
     <channel lang="id" xmltv_id="FashionTVAsia.fr" site_id="fashiontv">FashionTV</channel>
     <channel lang="id" xmltv_id="MTVLive.uk" site_id="mtvlive">MTV Live</channel>
     <channel lang="id" xmltv_id="CitraDangdut.id" site_id="citradangdut">Citra Dangdut</channel>
-    <!-- <channel lang="id" xmltv_id="I-Konser.id" site_id="ikonser">I-Konser</channel> -->
-    <channel lang="id" xmltv_id="OChannel.id" site_id="ochannel">O Channel</channel>
+    <channel lang="id" xmltv_id="I-Konser.id" site_id="ikonser">I-Konser</channel>
+    <channel lang="id" xmltv_id="OChannel.id" site_id="ochannel">MOJI</channel>
     <channel lang="id" xmltv_id="nsert.id" site_id="insert">Insert</channel>
-    <!-- <channel lang="id" xmltv_id="KCON2022.id" site_id="kcon1">KCON 2022</channel> -->
-    <!-- <channel lang="id" xmltv_id="SPOTV-MotoGP.id" site_id="motogp">SPOTV - MotoGP</channel> -->
     <channel lang="id" xmltv_id="NET.id" site_id="net">Net.</channel>
     <channel lang="id" xmltv_id="DAAITV.id" site_id="daaitv">Daai TV</channel>
     <channel lang="id" xmltv_id="IDXChannel.id" site_id="idx">IDX</channel>
-    <!-- <channel lang="id" xmltv_id="MusikIndonesia.id" site_id="musikindo">Musik Indonesia</channel> -->
-    <!-- <channel lang="id" xmltv_id="MMITV.id" site_id="mmi">MMI TV</channel> -->
-    <channel lang="id" xmltv_id="MShopSignature.id" site_id="mncshop">M Shop</channel>
+    <channel lang="id" xmltv_id="MusikIndonesia.id" site_id="musikindo">Musik Indonesia</channel>
     <channel lang="id" xmltv_id="SeruChannel.id" site_id="seru">Seru!</channel>
     <channel lang="id" xmltv_id="UChannel.id" site_id="uchannel">UChannel</channel>
-    <!-- <channel lang="id" xmltv_id="ElJohnTV.id" site_id="eljohn">El John TV</channel> -->
     <channel lang="id" xmltv_id="NHKWorldJapan.jp" site_id="nhkworld">NHK World Japan</channel>
     <channel lang="id" xmltv_id="ATV.id" site_id="atv">ATV</channel>
-    <channel lang="id" xmltv_id="OutdoorChannelInternational.us" site_id="outdoor">Outdoor Channel</channel>
     <channel lang="id" xmltv_id="HorizonSports.us" site_id="horizonsport">Horizon Sports</channel>
-    <!-- <channel lang="id" xmltv_id="HItsMovie.id" site_id="hitsmovie">HIts Movie</channel> -->
-    <channel lang="id" xmltv_id="StarChineseMovies.hk" site_id="starchinesemovies">Star Chinese Movies</channel>
-    <channel lang="id" xmltv_id="StarChineseChannel.hk" site_id="starchinesechannel">Star Chinese Channel</channel>
-    <!-- <channel lang="id" xmltv_id="KungfuTV.id" site_id="kungfutv">Kungfu TV</channel> -->
-    <channel lang="id" xmltv_id="BabyFirst.us" site_id="babyfirst">Baby First</channel>
+    <channel lang="id" xmltv_id="HITSMovies.sg" site_id="hitsmovie">HIts Movie</channel>
+    <channel lang="id" xmltv_id="KungfuTV.id" site_id="kungfutv">Kungfu TV</channel>
     <channel lang="id" xmltv_id="DreamWorksChannelAsia.us" site_id="dreamworks">Dreamworks</channel>
+    <channel lang="id" xmltv_id="MoonbugKids.uk" site_id="moonbug">Moonbug Kids</channel>
   </channels>
 </site>
 
