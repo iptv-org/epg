@@ -1,7 +1,7 @@
 name: mediagenie.co.kr
 on:
   schedule:
-    - cron: '0 3 * * *'
+    - cron: '0 6 * * *'
   workflow_dispatch:
   workflow_run:
     workflows: [_trigger]
