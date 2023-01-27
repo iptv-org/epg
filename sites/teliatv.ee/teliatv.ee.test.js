@@ -11,7 +11,7 @@ dayjs.extend(utc)
 const date = dayjs.utc('2021-11-20', 'YYYY-MM-DD').startOf('d')
 const channel = {
   lang: 'et',
-  site_id: '1',
+  site_id: 'et#1',
   xmltv_id: 'ETV.ee'
 }
 
@@ -24,7 +24,7 @@ it('can generate valid url', () => {
 it('can generate valid url with different language', () => {
   const ruChannel = {
     lang: 'ru',
-    site_id: '1',
+    site_id: 'ru#1',
     xmltv_id: 'ETV.ee'
   }
   expect(url({ date, channel: ruChannel })).toBe(
