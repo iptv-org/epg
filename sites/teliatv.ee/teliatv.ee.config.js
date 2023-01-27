@@ -5,8 +5,9 @@ module.exports = {
   site: 'teliatv.ee',
   days: 2,
   url({ date, channel }) {
-    return `https://api.teliatv.ee/dtv-api/3.2/${channel.lang}/epg/guide?channelIds=${
-      channel.site_id
+    const [lang, channelId] = channel.site_id.split('#')
+    return `https://api.teliatv.ee/dtv-api/3.2/${lang}/epg/guide?channelIds=${
+      channelId
     }&relations=programmes&images=webGuideItemLarge&startAt=${date
       .add(1, 'd')
       .format('YYYY-MM-DDTHH:mm')}&startAtOp=lte&endAt=${date.format(
@@ -52,7 +53,8 @@ function parseIcon(item) {
 function parseItems(content, channel) {
   const data = JSON.parse(content)
   if (!data || !data.relations || !data.categoryItems) return []
-  const items = data.categoryItems[channel.site_id] || []
+  const [, channelId] = channel.site_id.split('#')
+  const items = data.categoryItems[channelId] || []
 
   return items
     .map(i => {
