@@ -1,0 +1,22 @@
+name: ➕ Source Request
+description: Request to add a new source
+labels: ['➕ source request']
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please fill out the request as much as possible so we can efficiently process your request.
+
+  - type: input
+    attributes:
+      label: Source
+      description: Website where the EPG can be found?
+      placeholder: 'https://cablecompany.com/tvlisting'
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Notes
+      description: Anything else we should know?
