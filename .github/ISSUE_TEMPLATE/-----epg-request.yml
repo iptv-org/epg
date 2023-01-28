@@ -1,0 +1,33 @@
+name: 🗓 EPG Request
+description: Request to add a channel to existing guide
+labels: ['🗓 epg request']
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please fill out the issue template as much as you can so we could efficiently process your request.
+
+  - type: input
+    attributes:
+      label: Guide
+      description: Link to the file in which you want to add these channels
+      placeholder: 'https://iptv-org.github.io/epg/guides/en/example.co.uk.xml'
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Channels
+      description: List all channels that need to be added
+      placeholder: |
+        - Channel1
+        - Channel2
+        ...
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Notes
+      description: Anything else we should know?
