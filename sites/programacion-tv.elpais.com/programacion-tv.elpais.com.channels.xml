@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site site="programacion-tv.elpais.com">
   <channels>
+    <channel lang="es" xmltv_id="324.es" site_id="449">3/24</channel>
     <channel lang="es" xmltv_id="7TelevisionRegiondeMurcia.es" site_id="551">7 Región de Murcia</channel>
     <channel lang="es" xmltv_id="AlJazeeraEnglish.qa" site_id="539">Al Jazeera English</channel>
     <channel lang="es" xmltv_id="AMCSpain.es" site_id="481">AMC</channel>
@@ -29,6 +30,7 @@
     <channel lang="es" xmltv_id="Clan.es" site_id="505">Clan TVE</channel>
     <channel lang="es" xmltv_id="CNBCEurope.uk" site_id="204">CNBC</channel>
     <channel lang="es" xmltv_id="CNNInternationalEurope.us" site_id="203">CNN International</channel>
+    <channel lang="es" xmltv_id="CMMTV.es" site_id="296">CMM TV</channel>
     <channel lang="es" xmltv_id="ComedyCentralSpain.es" site_id="493">Comedy Central</channel>
     <channel lang="es" xmltv_id="CosmopolitanTV.es" site_id="186">Cosmopolitan</channel>
     <channel lang="es" xmltv_id="Cuatro.es" site_id="496">Cuatro</channel>
@@ -39,8 +41,10 @@
     <channel lang="es" xmltv_id="DisneyChannelSpain.es" site_id="175">Disney Channel</channel>
     <channel lang="es" xmltv_id="DisneyJuniorSpain.es" site_id="292">Disney Junior</channel>
     <channel lang="es" xmltv_id="Divinity.es" site_id="697">Divinity</channel>
+    <channel lang="es" xmltv_id="DMAXSpain.es" site_id="475">DMAX</channel>
     <channel lang="es" xmltv_id="DWEspanol.de" site_id="206">Deutsche Welle</channel>
     <channel lang="es" xmltv_id="Energy.es" site_id="709">Energy</channel>
+    <channel lang="es" xmltv_id="ElToroTV.es" site_id="516">El Toro TV</channel>
     <channel lang="es" xmltv_id="ETB1.es" site_id="33">ETB 1</channel>
     <channel lang="es" xmltv_id="ETB3.es" site_id="795">ETB 3</channel>
     <channel lang="es" xmltv_id="EuronewsSpanish.fr" site_id="139">EuroNews</channel>
@@ -60,6 +64,7 @@
     <channel lang="es" xmltv_id="La1.es" site_id="3">La 1</channel>
     <channel lang="es" xmltv_id="La2.es" site_id="4">La 2</channel>
     <channel lang="es" xmltv_id="LaSexta.es" site_id="510">laSexta</channel>
+    <channel lang="es" xmltv_id="Mega.es" site_id="841">Mega</channel>
     <channel lang="es" xmltv_id="Mezzo.fr" site_id="338">Mezzo</channel>
     <channel lang="es" xmltv_id="MovistarAccion.es" site_id="847">Movistar Acción</channel>
     <channel lang="es" xmltv_id="MovistarCineEspanol.es" site_id="385">Movistar Cine Español</channel>
@@ -76,6 +81,7 @@
     <channel lang="es" xmltv_id="NickelodeonSpain.es" site_id="200">Nickelodeon</channel>
     <channel lang="es" xmltv_id="NickJrSpain.es" site_id="687">Nick Junior</channel>
     <channel lang="es" xmltv_id="Nova.es" site_id="509">Nova</channel>
+    <channel lang="es" xmltv_id="La8Burgos.es" site_id="872">La 8 Burgos</channel>
     <channel lang="es" xmltv_id="Odisea.es" site_id="135">Odisea</channel>
     <channel lang="es" xmltv_id="ProTVInternational.ro" site_id="570">Pro TV International</channel>
     <channel lang="es" xmltv_id="RealMadridTV.es" site_id="158">Real Madrid TV</channel>
@@ -94,6 +100,7 @@
     <channel lang="es" xmltv_id="TV3.es" site_id="43">TV3</channel>
     <channel lang="es" xmltv_id="TV3CAT.es" site_id="47">TV3CAT</channel>
     <channel lang="es" xmltv_id="TV5MondeEurope.fr" site_id="209">TV5 Monde</channel>
+    <channel lang="es" xmltv_id="TVCanaria.es" site_id="41">TV Canaria</channel>
     <channel lang="es" xmltv_id="TVChile.cl" site_id="416">TV Chile</channel>
     <channel lang="es" xmltv_id="TVEInternacionalAsiaOceania.es" site_id="667">TVE Internacional Asia</channel>
     <channel lang="es" xmltv_id="TVEInternacionalEuropeAsia.es" site_id="468">TVE Internacional</channel>
@@ -123,12 +130,8 @@
     <!-- <channel lang="es" xmltv_id="" site_id="39">La Otra</channel> -->
     <!-- <channel lang="es" xmltv_id="" site_id="395">Motors tv</channel> -->
     <!-- <channel lang="es" xmltv_id="" site_id="400">TV Polonia</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="41">TelevisiónCanaria</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="449">3/24</channel> -->
     <!-- <channel lang="es" xmltv_id="" site_id="469">MTV Dance</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="475">DMAX</channel> -->
     <!-- <channel lang="es" xmltv_id="" site_id="492">AMC Break</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="516">El Toro TV</channel> -->
     <!-- <channel lang="es" xmltv_id="" site_id="519">IB3</channel> -->
     <!-- <channel lang="es" xmltv_id="" site_id="521">TPA</channel> -->
     <!-- <channel lang="es" xmltv_id="" site_id="541">Super 3</channel> -->
@@ -185,13 +188,11 @@
     <!-- <channel lang="es" xmltv_id="" site_id="832">TV Mediterráneo</channel> -->
     <!-- <channel lang="es" xmltv_id="" site_id="833">Ukraine Today</channel> -->
     <!-- <channel lang="es" xmltv_id="" site_id="839">Non Stop People</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="841">Mega</channel> -->
     <!-- <channel lang="es" xmltv_id="" site_id="842">Canal+</channel> -->
     <!-- <channel lang="es" xmltv_id="" site_id="844">Movistar Series Xtra</channel> -->
     <!-- <channel lang="es" xmltv_id="" site_id="846">Movistar Xtra</channel> -->
     <!-- <channel lang="es" xmltv_id="" site_id="849">Movistar DCine</channel> -->
     <!-- <channel lang="es" xmltv_id="" site_id="870">Viral TV</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="872">La 8 Burgos</channel> -->
     <!-- <channel lang="es" xmltv_id="" site_id="874">Iberalia 2</channel> -->
     <!-- <channel lang="es" xmltv_id="" site_id="882">Partidazo</channel> -->
     <!-- <channel lang="es" xmltv_id="" site_id="889">Ten</channel> -->
