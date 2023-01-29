@@ -22,28 +22,17 @@ module.exports = {
     for (let item of items) {
       const prev = programs[programs.length - 1]
       const $item = cheerio.load(item)
-      let start = parseStart($item, date)
-      if (prev) {
-        if (start.isBefore(prev.start)) {
-          start = start.add(1, 'd')
-          date = date.add(1, 'd')
-        }
-        prev.stop = start
-      }
-      let stop = parseStop($item, date)
-      if (stop.isBefore(start)) {
-        stop = stop.add(1, 'd')
-        date = date.add(1, 'd')
-      }
+
       const channelAcronym = parseChannelAcronym(content)
       const programId = parseProgramId($item)
       const details = await loadProgramDetails(channelAcronym, programId)
+
       programs.push({
-        title: parseTitle($item),
+        title: details.title,
         description: details.description,
-        icon: details.icon,
-        start,
-        stop
+        icon: parseIcon(details),
+        start: dayjs(details.start),
+        stop: dayjs(details.stop)
       })
     }
 
@@ -93,13 +82,19 @@ async function loadProgramDetails(channelAcronym, programId) {
 
   if (!data) return {}
 
-  const [, description, iconFilename] = data.d.split('_#|$_')
-  const icon = iconFilename ? `https://images.nos.pt/${iconFilename}` : null
+  const [title, description, image, , , , start, stop] = data.d.split('_#|$_')
 
   return {
+    title,
     description,
-    icon
+    image,
+    start,
+    stop
   }
+}
+
+function parseIcon(details) {
+  return details.image ? `https://images.nos.pt/${details.image}` : null
 }
 
 function parseProgramId($item) {
@@ -110,34 +105,6 @@ function parseChannelAcronym(content) {
   const $ = cheerio.load(content)
 
   return $('#channel-logo > img').attr('alt')
-}
-
-function parseTitle($item) {
-  return $item('a').attr('title').trim()
-}
-
-function parseStart($item, date) {
-  const [time] = $item('.duration')
-    .text()
-    .replace(/\s+/g, ' ')
-    .trim()
-    .match(/^\d{2}:\d{2}/) || [null]
-
-  if (!time) return null
-
-  return dayjs.tz(`${date.format('YYYY-MM-DD')} ${time}`, 'YYYY-MM-DD HH:mm', 'Europe/Lisbon')
-}
-
-function parseStop($item, date) {
-  const [time] = $item('.duration')
-    .text()
-    .replace(/\s+/g, ' ')
-    .trim()
-    .match(/\d{2}:\d{2}$/) || [null]
-
-  if (!time) return null
-
-  return dayjs.tz(`${date.format('YYYY-MM-DD')} ${time}`, 'YYYY-MM-DD HH:mm', 'Europe/Lisbon')
 }
 
 function parseItems(content, date) {
