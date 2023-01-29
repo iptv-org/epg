@@ -18,7 +18,7 @@ module.exports = {
     let programs = []
     const items = parseItems(content, channel)
     items.forEach(item => {
-      const start = dayjs(item.startDateTime)
+      const start = dayjs.utc(item.startDateTime)
       const stop = start.add(item.duration, 's')
       programs.push({
         title: item.program.title,
