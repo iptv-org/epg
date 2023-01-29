@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site site="virginmediatelevision.ie">
+  <channels>
+    <channel lang="en" xmltv_id="VirginMediaOne.ie" site_id="one">One</channel>
+    <channel lang="en" xmltv_id="VirginMediaTwo.ie" site_id="two">Two</channel>
+    <channel lang="en" xmltv_id="VirginMediaThree.ie" site_id="three">Three</channel>
+    <channel lang="en" xmltv_id="VirginMediaFour.ie" site_id="vm_four">Four</channel>
+    <channel lang="en" xmltv_id="VirginMediaMore.ie" site_id="vm_more">More</channel>
+  </channels>
+</site>
