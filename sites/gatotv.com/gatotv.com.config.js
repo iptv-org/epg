@@ -1,37 +1,43 @@
 const axios = require('axios')
 const cheerio = require('cheerio')
+const url = require('url')
+const path = require('path')
 const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
-var url = require('url')
-var path = require('path')
+const customParseFormat = require('dayjs/plugin/customParseFormat')
 
+dayjs.extend(utc)
 dayjs.extend(timezone)
+dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'gatotv.com',
   days: 2,
-  url: function ({ channel, date }) {
+  url({ channel, date }) {
     return `https://www.gatotv.com/canal/${channel.site_id}/${date.format('YYYY-MM-DD')}`
   },
-  parser: function ({ content, date }) {
+  parser({ content, date }) {
     let programs = []
     const items = parseItems(content)
+    date = date.subtract(1, 'd')
     items.forEach((item, index) => {
       const prev = programs[programs.length - 1]
       const $item = cheerio.load(item)
       let start = parseStart($item, date)
-      if (prev && start.isBefore(prev.stop)) {
-        start = start.add(1, 'd')
-        date = date.add(1, 'd')
-      } else if (!prev && start.hour() > 12) {
-        start = start.subtract(1, 'd')
-        date = date.subtract(1, 'd')
+      if (prev) {
+        if (start.isBefore(prev.start)) {
+          start = start.add(1, 'd')
+          date = date.add(1, 'd')
+        }
+        prev.stop = start
       }
-      let stop = parseStop($item, date)
+      let stop = parseStop($item, start)
       if (stop.isBefore(start)) {
         stop = stop.add(1, 'd')
         date = date.add(1, 'd')
       }
+
       programs.push({
         title: parseTitle($item),
         description: parseDescription($item),
@@ -43,15 +49,16 @@ module.exports = {
 
     return programs
   },
-  async channels({ country }) {
+  async channels() {
     const data = await axios
-      .get(`https://www.gatotv.com/guia_tv/${country}`)
+      .get(`https://www.gatotv.com/guia_tv/completa`)
       .then(response => response.data)
       .catch(console.log)
 
     const $ = cheerio.load(data)
     const items = $('.tbl_EPG_row,.tbl_EPG_rowAlternate').toArray()
-    const channels = items.map(item => {
+
+    return items.map(item => {
       const $item = cheerio.load(item)
       const link = $item('td:nth-child(1) > div:nth-child(2) > a:nth-child(3)').attr('href')
       const parsed = url.parse(link)
@@ -62,8 +69,6 @@ module.exports = {
         name: $item('td:nth-child(1) > div:nth-child(2) > a:nth-child(3)').text()
       }
     })
-
-    return channels
   }
 }
 
@@ -80,17 +85,15 @@ function parseIcon($item) {
 }
 
 function parseStart($item, date) {
-  let time = $item('td:nth-child(1) > div > time').attr('datetime')
-  time = `${date.format('YYYY-MM-DD')} ${time}`
+  const time = $item('td:nth-child(1) > div > time').attr('datetime')
 
-  return dayjs.tz(time, 'YYYY-MM-DD HH:mm', 'America/New_York')
+  return dayjs.tz(`${date.format('YYYY-MM-DD')} ${time}`, 'YYYY-MM-DD HH:mm', 'EST')
 }
 
 function parseStop($item, date) {
-  let time = $item('td:nth-child(2) > div > time').attr('datetime')
-  time = `${date.format('YYYY-MM-DD')} ${time}`
+  const time = $item('td:nth-child(2) > div > time').attr('datetime')
 
-  return dayjs.tz(time, 'YYYY-MM-DD HH:mm', 'America/New_York')
+  return dayjs.tz(`${date.format('YYYY-MM-DD')} ${time}`, 'YYYY-MM-DD HH:mm', 'EST')
 }
 
 function parseItems(content) {
