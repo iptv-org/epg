@@ -1,11 +1,13 @@
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
 
 dayjs.extend(utc)
+dayjs.extend(timezone)
 
 module.exports = {
   site: 'singtel.com',
-  days: 2,
+  days: 3,
   request: {
     cache: {
       ttl: 60 * 60 * 1000 // 1 hour
@@ -18,7 +20,7 @@ module.exports = {
     let programs = []
     const items = parseItems(content, channel)
     items.forEach(item => {
-      const start = dayjs.utc(item.startDateTime)
+      const start = dayjs.tz(item.startDateTime,'Asia/Singapore')
       const stop = start.add(item.duration, 's')
       programs.push({
         title: item.program.title,
