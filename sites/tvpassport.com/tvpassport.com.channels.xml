@@ -252,6 +252,8 @@
     <channel lang="en" xmltv_id="MoviePlexEast.us" site_id="movieplex-eastern/1066">MoviePlex East</channel>
     <channel lang="en" xmltv_id="MoviePlexWest.us" site_id="movieplex-pacific/1220">MoviePlex West</channel>
     <channel lang="en" xmltv_id="MSG.us" site_id="msg-madison-square-gardens-hd/4695">MSG</channel>
+    <channel lang="en" xmltv_id="MSG2.us" site_id="msg-2-hd/31491">MSG 2</channel>
+    <channel lang="en" xmltv_id="MSGPlus.us" site_id="msg-plus/1088">MSG Plus</channel>
     <channel lang="en" xmltv_id="MSNBC.us" site_id="msnbc-usa/655">MSNBC</channel>
     <channel lang="en" xmltv_id="NBCEast.us" site_id="nbc-network-eastern/1227">NBC Network Eastern</channel>
     <channel lang="en" xmltv_id="NBCSportsBoston.us" site_id="nbc-sports-boston/4529">NBC Sports Boston</channel>
@@ -259,11 +261,13 @@
     <channel lang="en" xmltv_id="News12Conneticut.us" site_id="news-12-connecticut/20178">News12 Conneticut</channel>
     <channel lang="en" xmltv_id="News12LongIsland.us" site_id="news-12-long-island/20180">News12 Long Island</channel>
     <channel lang="en" xmltv_id="NewsmaxTV.us" site_id="newsmax-tv/16818">Newsmax TV</channel>
+    <channel lang="en" xmltv_id="NFLRedZone.us" site_id="nfl-redzone/6921">NFL RedZone</channel>
     <channel lang="en" xmltv_id="NHLNetwork.us" site_id="nhl-network-usa/14156">NHL Network</channel>
     <channel lang="en" xmltv_id="NickelodeonEast.us" site_id="nickelodeon-usa-east-feed-hd/6342">Nickelodeon East</channel>
     <channel lang="en" xmltv_id="NickelodeonWest.us" site_id="nickelodeon-usa-pacific-feed/1198">Nickelodeon West</channel>
     <channel lang="en" xmltv_id="NickJrEast.us" site_id="nick-jr-east/1969">Nick Jr East</channel>
     <channel lang="en" xmltv_id="NicktoonsEast.us" site_id="nicktoons-hd-east/11445">Nicktoons East</channel>
+    <channel lang="en" xmltv_id="OneAmericaNewsNetwork.us" site_id="one-america-news-network/12614">ONE AMERICAN NEWS NETWORK</channel>
     <channel lang="en" xmltv_id="OuterMaxEast.us" site_id="outermax-eastern/2270">OuterMax Eastern</channel>
     <channel lang="en" xmltv_id="ParamountNetworkEast.us" site_id="paramount-network-usa-hd-eastern-feed/6334">Paramount Network East</channel>
     <channel lang="en" xmltv_id="PBSEast.us" site_id="pbs-network-hd-eastern/4259">PBS East</channel>
@@ -639,6 +643,7 @@
     <channel lang="es" xmltv_id="WRIWCD1.us" site_id="telemundo-wriwca-providence-ri/7308">Telemundo (WRIW-CA) Providence, RI</channel>
     <channel lang="es" xmltv_id="WTBYDT3.us" site_id="enlace-wtbytv3-new-york-ny/11094">Enlace (WTBY-TV3) New York, NY</channel>
     <channel lang="es" xmltv_id="WXNYLD3.us" site_id="cgtn-spanish-wxnyld3-new-york-ny/16444">CGTN Spanish (WXNY-LD3) New York, NY</channel>
+    <channel lang="es" xmltv_id="WWENetwork.us" site_id="wwe-network-hd/14155">WWE Network</channel>
     <channel lang="es" xmltv_id="WXTVDT1.us" site_id="uni-wxtv-teaneck-nj/1771">UNI (WXTV) Teaneck, NJ</channel>
   </channels>
 </site>
