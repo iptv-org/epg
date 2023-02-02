@@ -37,8 +37,8 @@ it('can parse response', () => {
 
   expect(results.length).toBe(23)
   expect(results[0]).toMatchObject({
-    start: '2023-01-29T00:00:00.000Z',
-    stop: '2023-01-29T01:30:00.000Z',
+    start: '2023-01-28T16:00:00.000Z',
+    stop: '2023-01-28T17:30:00.000Z',
     title: 'Hip Hop Family Christmas Wedding',
     description:
       `Hip Hop's most famous family is back, and this time Christmas wedding bells are ringing! Jessica and Jayson are getting ready to say their "I do's".`,
@@ -46,8 +46,8 @@ it('can parse response', () => {
   })
 
   expect(results[10]).toMatchObject({
-    start: '2023-01-29T09:00:00.000Z',
-    stop: '2023-01-29T09:30:00.000Z',
+    start: '2023-01-29T01:00:00.000Z',
+    stop: '2023-01-29T01:30:00.000Z',
     title: 'The Daily Show',
     description:
       "The Daily Show correspondents tackle the biggest stories in news, politics and pop culture.",
