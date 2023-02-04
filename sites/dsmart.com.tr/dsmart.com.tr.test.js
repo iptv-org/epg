@@ -1,3 +1,4 @@
+// npm run channels:parse -- --config=./sites/dsmart.com.tr/dsmart.com.tr.config.js --output=./sites/dsmart.com.tr/dsmart.com.tr.channels.xml
 // npx epg-grabber --config=sites/dsmart.com.tr/dsmart.com.tr.config.js --channels=sites/dsmart.com.tr/dsmart.com.tr.channels.xml --output=guide.xml --timeout=30000 --days=2
 
 const { parser, url } = require('./dsmart.com.tr.config.js')
@@ -11,13 +12,13 @@ dayjs.extend(utc)
 
 const date = dayjs.utc('2023-01-16', 'YYYY-MM-DD').startOf('d')
 const channel = {
-  site_id: '5fe07d7acfef0b1593275751',
+  site_id: '3#5fe07d7acfef0b1593275751',
   xmltv_id: 'SinemaTV.tr'
 }
 
 it('can generate valid url', () => {
   expect(url({ date, channel })).toBe(
-    'https://www.dsmart.com.tr/api/v1/public/epg/schedules?page=1&limit=500&day=2023-01-16'
+    'https://www.dsmart.com.tr/api/v1/public/epg/schedules?page=3&limit=1&day=2023-01-16'
   )
 })
 

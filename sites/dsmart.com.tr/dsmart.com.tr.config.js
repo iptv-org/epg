@@ -1,3 +1,4 @@
+const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -5,18 +6,15 @@ const customParseFormat = require('dayjs/plugin/customParseFormat')
 dayjs.extend(utc)
 dayjs.extend(customParseFormat)
 
+const API_ENDPOINT = 'https://www.dsmart.com.tr/api/v1/public/epg/schedules'
+
 module.exports = {
   site: 'dsmart.com.tr',
   days: 2,
-  request: {
-    cache: {
-      ttl: 60 * 1000 // 60 seconds response cache
-    }
-  },
   url({ date, channel }) {
-    return `https://www.dsmart.com.tr/api/v1/public/epg/schedules?page=1&limit=500&day=${date.format(
-      'YYYY-MM-DD'
-    )}`
+    const [page] = channel.site_id.split('#')
+
+    return `${API_ENDPOINT}?page=${page}&limit=1&day=${date.format('YYYY-MM-DD')}`
   },
   parser: function ({ content, channel }) {
     let offset = -1
@@ -35,7 +33,7 @@ module.exports = {
 
       programs.push({
         title: item.program_name,
-        category: item.genre,
+        category: parseCategory(item),
         description: item.description.trim(),
         start,
         stop
@@ -43,7 +41,46 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels() {
+    const perPage = 1
+    const totalChannels = 210
+    const pages = Math.ceil(totalChannels / perPage)
+
+    const channels = []
+    for (let i in Array(pages).fill(0)) {
+      const page = parseInt(i) + 1
+      const url = `${API_ENDPOINT}?page=${page}&limit=${perPage}&day=${dayjs().format(
+        'YYYY-MM-DD'
+      )}`
+      let offset = i * perPage
+      await axios
+        .get(url)
+        .then(r => r.data)
+        .then(data => {
+          offset++
+          if (data && data.data && Array.isArray(data.data.channels)) {
+            data.data.channels.forEach((item, j) => {
+              const index = offset + j
+              channels.push({
+                lang: 'tr',
+                name: item.channel_name,
+                site_id: index + '#' + item._id
+              })
+            })
+          }
+        })
+        .catch(err => {
+          console.log(err.message)
+        })
+    }
+
+    return channels
   }
+}
+
+function parseCategory(item) {
+  return item.genre !== '0' ? item.genre : null
 }
 
 function parseStart(item, date) {
@@ -59,9 +96,10 @@ function parseDuration(item) {
 }
 
 function parseItems(content, channel) {
+  const [, channelId] = channel.site_id.split('#')
   const data = JSON.parse(content)
   if (!data || !data.data || !Array.isArray(data.data.channels)) return null
-  const channelData = data.data.channels.find(i => i._id == channel.site_id)
+  const channelData = data.data.channels.find(i => i._id == channelId)
 
   return channelData && Array.isArray(channelData.schedule) ? channelData.schedule : []
 }
