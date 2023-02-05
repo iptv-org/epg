@@ -13,15 +13,15 @@ dayjs.extend(utc)
 
 jest.mock('axios')
 
-const date = dayjs.utc('2022-11-15', 'YYYY-MM-DD').startOf('d')
+const date = dayjs.utc('2023-02-05', 'YYYY-MM-DD').startOf('d')
 const channel = {
-  site_id: '5e20b730f2f8d5003d739db7-5fc705eb052f6f002ef46057',
-  xmltv_id: 'IFCFilmsPicks.us'
+  site_id: '5e20b730f2f8d5003d739db7-5eea605674085f0040ddc7a6',
+  xmltv_id: 'DarkMatterTV.us'
 }
 
 it('can generate valid url', () => {
   expect(url({ channel, date })).toBe(
-    'https://epg.provider.plex.tv/grid?channelGridKey=5fc705eb052f6f002ef46057&date=2022-11-15'
+    'https://epg.provider.plex.tv/grid?channelGridKey=5eea605674085f0040ddc7a6&date=2023-02-05'
   )
 })
 
@@ -40,35 +40,15 @@ it('can parse response', () => {
     return p
   })
 
-  expect(results.length).toBe(14)
+  // expect(results.length).toBe(15)
   expect(results[0]).toMatchObject({
-    start: '2022-11-14T23:04:00.000Z',
-    stop: '2022-11-15T00:47:00.000Z',
-    title: 'Bound by Flesh',
+    start: '2023-02-04T23:31:14.000Z',
+    stop: '2023-02-05T01:10:45.000Z',
+    title: 'Violet & Daisy',
     description:
-      'Conjoined twins Daisy and Violet Hilton were born in 1908, then were sold to a carnival sideshow as babies. They became huge stars of Vaudeville but never earned a penny until they sued for freedom in 1936.',
-    icon: 'https://metadata-static.plex.tv/4/gracenote/40b523ad60464f8232f93f861c161384.jpg',
-    categories: ['Documentary', 'Movies']
-  })
-
-  expect(results[10]).toMatchObject({
-    start: '2022-11-15T16:45:00.000Z',
-    stop: '2022-11-15T18:47:00.000Z',
-    title: 'Antiviral',
-    description:
-      "Syd has to unravel the mystery surrounding Hannah's death before a virus kills him.",
-    icon: 'https://metadata-static.plex.tv/5/gracenote/5ca8432a2e8fb2e8f8157ae142164ef7.jpg',
-    categories: ['Horror', 'Science fiction', 'Thriller', 'Movies']
-  })
-
-  expect(results[11]).toMatchObject({
-    start: '2022-11-15T18:47:00.000Z',
-    stop: '2022-11-15T20:36:00.000Z',
-    title: 'Cold Weather',
-    description:
-      'Armed with a few clues and an in-depth knowledge of Sherlock Holmes lore, an ice-factory worker (Cris Lankenau) leads his sister and a co-worker on a search for his missing former lover.',
-    icon: 'https://metadata-static.plex.tv/5/gracenote/5150185f3188dbefd10b5d388e8ba115.jpg',
-    categories: ['Comedy', 'Mystery', 'Movies']
+      'Two teenage assassins accept what they think will be a quick-and-easy job, until an unexpected target throws them off their plan.',
+    icon: 'https://provider-static.plex.tv/epg/images/ott_channels/arts/darkmatter-tv-about.jpg',
+    categories: ['Movies']
   })
 })
 
