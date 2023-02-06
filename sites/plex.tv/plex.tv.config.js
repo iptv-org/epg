@@ -65,14 +65,26 @@ function parseItems(content) {
   const metadata = data.MediaContainer.Metadata
   const items = []
   metadata.forEach(item => {
-    item.Media.forEach(media => {
-      items.push({ ...item, ...media })
+    let segments = []
+    item.Media.sort(byTime).forEach((media, i) => {
+      let prevSegment = segments[segments.length - 1]
+      if (prevSegment && prevSegment.endsAt === media.beginsAt) {
+        prevSegment.endsAt = media.endsAt
+      } else {
+        segments.push(media)
+      }
+    })
+
+    segments.forEach(segment => {
+      items.push({ ...item, segments, beginsAt: segment.beginsAt, endsAt: segment.endsAt })
     })
   })
 
-  return items.sort((a, b) => {
+  return items.sort(byTime)
+
+  function byTime(a, b) {
     if (a.beginsAt > b.beginsAt) return 1
     if (a.beginsAt < b.beginsAt) return -1
     return 0
-  })
+  }
 }
