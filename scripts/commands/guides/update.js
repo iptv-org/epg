@@ -71,6 +71,8 @@ async function save(filepath, programs) {
 
   for (let programData of programs) {
     let channelData = api_channels[programData.channel]
+    if (!channelData) continue
+
     channelData.site = programData.site
     channelData.lang = programData.titles[0].lang
 
