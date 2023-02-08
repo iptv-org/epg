@@ -86,9 +86,10 @@ async function getInput(channel) {
 
 async function getOptions(channel) {
   const channels = await api.channels.all()
-  const similar = await getSimilar(channels, channel)
+  const channelId = generateCode(channel.name, defaultCountry)
+  const similar = await getSimilar(channels, channelId)
   let variants = []
-  variants.push(`${channel.name.trim()} | ${generateCode(channel.name, defaultCountry)}${newLabel}`)
+  variants.push(`${channel.name.trim()} | ${channelId}${newLabel}`)
   similar.forEach(i => {
     let alt_names = i.alt_names.length ? ` (${i.alt_names.join(',')})` : ''
     variants.push(`${i.name}${alt_names} | ${i.id} [api]`)
@@ -99,18 +100,8 @@ async function getOptions(channel) {
   return variants
 }
 
-async function getSimilar(list, channel) {
-  return list.filter(i =>
-    i.name
-      .toLowerCase()
-      .replace(/[^a-z0-9]/gi, '')
-      .startsWith(
-        channel.name
-          .replace(/[^a-z0-9]/gi, '')
-          .slice(0, 8)
-          .toLowerCase()
-      )
-  )
+async function getSimilar(list, channelId) {
+  return list.filter(i => i.id.toLowerCase().startsWith(channelId.slice(0, 8).toLowerCase()))
 }
 
 function generateCode(name, country) {
