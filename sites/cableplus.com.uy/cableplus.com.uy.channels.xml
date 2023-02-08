@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site site="cableplus.com.uy">
+  <channels>
+    <channel lang="es" xmltv_id="360TV.ar" site_id="2000">360 TV</channel>
+    <channel lang="es" xmltv_id="A24.ar" site_id="343">A24</channel>
+    <channel lang="es" xmltv_id="AmericaSports.ar" site_id="84">AMERICA SPORTS</channel>
+    <channel lang="es" xmltv_id="APlusV.uy" site_id="2035">A+V</channel>
+    <channel lang="es" xmltv_id="ArgentinisimaSatelital.ar" site_id="57">ARGENTINISIMA</channel>
+    <channel lang="es" xmltv_id="BBCWorldNewsLatinAmerica.uk" site_id="80">BBC WORLD</channel>
+    <channel lang="es" xmltv_id="BYUTVLatinAmerica.us" site_id="574">BYUTV</channel>
+    <channel lang="es" xmltv_id="Canal10.uy" site_id="1387">SAETA</channel>
+    <channel lang="es" xmltv_id="Canal26.ar" site_id="3">CANAL 26</channel>
+    <channel lang="es" xmltv_id="Canal5.uy" site_id="475">TV NACIONAL</channel>
+    <channel lang="es" xmltv_id="Canal7PuntadelEste.uy" site_id="2858">CANAL 7 PUNTA DEL ESTE</channel>
+    <channel lang="es" xmltv_id="CanalRural.ar" site_id="11">CANAL RURAL</channel>
+    <channel lang="es" xmltv_id="CardinalTV.uy" site_id="4866">CARDINAL TV</channel>
+    <channel lang="es" xmltv_id="CharruaTelevision.uy" site_id="2874">CHARRUA TV</channel>
+    <channel lang="es" xmltv_id="Clan.es" site_id="4312">CLAN HD</channel>
+    <channel lang="es" xmltv_id="CNNenEspanol.us" site_id="62">CNN EN ESPAÑOL</channel>
+    <channel lang="es" xmltv_id="CronicaTV.ar" site_id="192">CRONICA</channel>
+    <channel lang="es" xmltv_id="DWDeutschPlus.de" site_id="2067">DEUTSCHE WELLE (DEUTSCH+)</channel>
+    <channel lang="es" xmltv_id="DWEspanol.de" site_id="16">DW ESPAÑOL</channel>
+    <channel lang="es" xmltv_id="ElCanaldelaRegion.uy" site_id="5020">CANAL DE LA REGIÓN</channel>
+    <channel lang="es" xmltv_id="ElGarageTV.ar" site_id="358">EL GARAGE</channel>
+    <channel lang="es" xmltv_id="ETBBasque.es" site_id="273">CANAL VASCO</channel>
+    <channel lang="es" xmltv_id="France24Espanol.fr" site_id="4124">FRANCE 24 ESPAÑOL</channel>
+    <channel lang="es" xmltv_id="France24French.fr" site_id="3431">FRANCE 24 FRANCES</channel>
+    <channel lang="es" xmltv_id="GaliciaTVAmerica.es" site_id="65">GALICIA TV</channel>
+    <channel lang="es" xmltv_id="GolTVLatinAmerica.us" site_id="1519">GOL TV</channel>
+    <channel lang="es" xmltv_id="HBOMundiLatinAmerica.us" site_id="12">HBO MUNDI</channel>
+    <channel lang="es" xmltv_id="HBOPopLatinAmerica.us" site_id="1378">HBO POP</channel>
+    <channel lang="es" xmltv_id="HBOSignatureLatinAmerica.us" site_id="500">HBO SIGNATURE</channel>
+    <channel lang="es" xmltv_id="LaNacionPlus.ar" site_id="3644">LA NACION +</channel>
+    <channel lang="es" xmltv_id="MaronasEntertainment.uy" site_id="2412">MAROÑAS</channel>
+    <channel lang="es" xmltv_id="PXSports.mx" site_id="2063">PX SPORTS HD</channel>
+    <channel lang="es" xmltv_id="RaiItaliaAmerica.it" site_id="29">RAI</channel>
+    <channel lang="es" xmltv_id="RTenEspanol.ru" site_id="1502">RT TV</channel>
+    <channel lang="es" xmltv_id="Siemprecine.uy" site_id="365">SIEMPRE CINE</channel>
+    <channel lang="es" xmltv_id="SunChannel.ve" site_id="2257">SUN CHANNEL HD</channel>
+    <channel lang="es" xmltv_id="Teledoce.uy" site_id="483">TELEDOCE</channel>
+    <channel lang="es" xmltv_id="Tooncast.us" site_id="880">TOONCAST</channel>
+    <channel lang="es" xmltv_id="truTVLatinAmerica.us" site_id="912">TRU TV</channel>
+    <channel lang="es" xmltv_id="TVCiudad.uy" site_id="1290">TEVECIUDAD</channel>
+    <channel lang="es" xmltv_id="TVN.cl" site_id="39">TVN CHILE</channel>
+    <channel lang="es" xmltv_id="TVPublica.ar" site_id="135">TV PUBLICA ARG</channel>
+    <channel lang="es" xmltv_id="UCL.uy" site_id="2541">UCL</channel>
+    <channel lang="es" xmltv_id="VTV.uy" site_id="373">VTV</channel>
+    <channel lang="es" xmltv_id="VTVPlus.uy" site_id="2368">VTV +</channel>
+    <channel lang="es" xmltv_id="WOBI.ar" site_id="723">WOBI TV</channel>
+    <channel lang="es" xmltv_id="ZooMoo.sg" site_id="3271">ZOOMOO</channel>
+    <!-- <channel lang="es" xmltv_id="" site_id="100">AXN</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="1011">CITYTV</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="111">DISCOVERY ID</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="1120">STUDIO UNIVERSAL</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="1132">ESPN EXTRA HD</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="1181">DISCOVERY HD THEATER</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="125">EL GOURMET</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="13">CNN</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="136">DISNEY</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="1383">MONTECARLO</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="1389">DISCOVERY WORLD HD</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="1499">HISTORY HD</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="15">CINECANAL</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="1531">HGTV</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="1552">CGTN</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="1579">SONY HD</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="1623">ANIMAL PLANET</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="1624">DISCOVERY TRAVEL AND LIVING</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="1666">TYC SPORTS HD</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="167">A&amp;E MUNDO</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="17">DISCOVERY</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="174">CARTOONITO</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="178">HISTORY</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="1862">AXN HD</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="2040">FX HD</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="21">HBO</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="2127">HBO 2</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="2165">HBO PLUS ESTE</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="2218">DISCOVERY HOME AND HEALTH HD</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="226">CARTOON NETWORK</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="2271">TYC SPORTS</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="2292">CINEMAX</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="265">TNT</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="2670">HOLA TV HD</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="2693">ESPN 4 HD</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="2711">NAT GEO HD</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="2729">FOX SPORTS 2</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="2788">LIFETIME</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="28">MUCHMUSIC</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="281">CANAL 24 HS</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="2845">CARTOON NETWORK HD</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="2860">MONTECARLO HD</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="3064">STAR CHANNEL HD</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="3066">DISCOVERY HD</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="3142">CINEMAX HD</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="3154">ALLEGRO HD</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="32">SONY</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="3223">DISCOVERY TURBO HD</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="3244">EL GOURMET HD</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="33">SPACE</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="334">HBO XTREME ESTE</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="335">HBO FAMILY</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="3373">CANAL 6 LOCAL</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="3374">EVENTOS CABLEPLUS</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="3375">EVENTOS HD CABLEPLUS</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="3389">STAR HD</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="340">DISCOVERY HOME AND HEALTH</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="3438">FOOD NETWORK</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="3445">CINECANAL HD</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="348">ESPN 4</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="3573">LIFETIME HD</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="3601">FOX SPORTS 2 HD</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="3621">H2 HD</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="3628">ATRES CINE HD</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="372">BANDEIRANTES</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="3787">WARNER HD</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="38">TV 5</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="388">TELESUR</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="3898">FOX SPORTS 3</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="3899">FOX SPORTS 3 HD</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="3988">ATRESERIES HD</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="4054">TNT HD</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="413">ENLACE TBN</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="4226">HTV HD</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="4256">ANTENA3 HD</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="426">FX</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="4301">TELEMUNDO HD</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="4367">DISNEY HD</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="451">STAR CHANNEL</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="4535">SPACE HD</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="46">WARNER</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="4600">AL JAZEERA HD</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="4605">ANIMAL PLANET HD</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="463">NATIONAL GEOGRAPHIC</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="465">UNIVERSAL TV</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="4704">DISCOVERY SCIENCE HD</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="4718">LOVE NATURE</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="4867">LA REPUBLICA TV</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="4902">DISCOVERY ID HD</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="492">DISCOVERY TURBO</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="493">DISCOVERY SCIENCE</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="50">ENTERTAINMENT</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="5249">ESPN 3</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="5252">ESPN 3 HD</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="5253">ESPN</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="5254">ESPN HD</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="59">TVE</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="61">ANTENA3</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="6198">ESPN 2</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="6199">ESPN 2 HD</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="64">EWTN</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="685">RECORD</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="695">BABY TV</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="743">NHK WORLD</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="756">DISNEY JR</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="76">DISCOVERY KIDS</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="760">SY FY</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="82">TV GLOBO</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="875">HBO HD</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="943">AMERICA 2</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="958">TELEMUNDO</channel> -->
+  </channels>
+</site>
