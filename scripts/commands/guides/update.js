@@ -91,15 +91,12 @@ async function save(filepath, programs) {
 
   const xmlFilepath = `${PUBLIC_DIR}/guides/${filepath}.xml`
   const gzFilepath = `${PUBLIC_DIR}/guides/${filepath}.xml.gz`
-  const jsonFilepath = `${PUBLIC_DIR}/guides/${filepath}.json`
   logger.info(`creating ${xmlFilepath}...`)
   const xmltv = generateXMLTV(output)
   await file.create(xmlFilepath, xmltv)
   logger.info(`creating ${gzFilepath}...`)
   const compressed = await zip.compress(xmltv)
   await file.create(gzFilepath, compressed)
-  logger.info(`creating ${jsonFilepath}...`)
-  await file.create(jsonFilepath, JSON.stringify(output))
 
   return output
 }
