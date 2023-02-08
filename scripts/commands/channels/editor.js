@@ -92,7 +92,9 @@ async function getOptions(channel) {
   variants.push(`${channel.name.trim()} | ${channelId}${newLabel}`)
   similar.forEach(i => {
     let alt_names = i.alt_names.length ? ` (${i.alt_names.join(',')})` : ''
-    variants.push(`${i.name}${alt_names} | ${i.id} [api]`)
+    let closed = i.closed ? `[closed:${i.closed}]` : ``
+    let replaced_by = i.replaced_by ? `[replaced_by:${i.replaced_by}]` : ''
+    variants.push(`${i.name}${alt_names} | ${i.id} ${closed}${replaced_by}[api]`)
   })
   variants.push(`Overwrite...`)
   variants.push(`Skip...`)
@@ -101,7 +103,8 @@ async function getOptions(channel) {
 }
 
 async function getSimilar(list, channelId) {
-  return list.filter(i => i.id.toLowerCase().startsWith(channelId.slice(0, 8).toLowerCase()))
+  const normChannelId = channelId.split('.')[0].slice(0, 8).toLowerCase()
+  return list.filter(i => i.id.split('.')[0].toLowerCase().startsWith(normChannelId))
 }
 
 function generateCode(name, country) {
