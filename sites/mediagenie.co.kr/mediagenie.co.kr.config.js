@@ -10,7 +10,8 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'mediagenie.co.kr',
-  days: 2,
+  days: 1,
+  skip: true, // NOTE: the guide appears on the site after the end of the daily update (https://github.com/iptv-org/epg/actions/workflows/mediagenie.co.kr.yml)
   url({ channel, date }) {
     return `https://mediagenie.co.kr/${channel.site_id}/?qd=${date.format('YYYYMMDD')}`
   },
