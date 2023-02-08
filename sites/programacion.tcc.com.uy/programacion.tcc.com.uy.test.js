@@ -1,7 +1,7 @@
-// npm run channels:parse -- --config=./sites/tccvivo.com.uy/tccvivo.com.uy.config.js --output=./sites/tccvivo.com.uy/tccvivo.com.uy.channels.xml
-// npx epg-grabber --config=sites/tccvivo.com.uy/tccvivo.com.uy.config.js --channels=sites/tccvivo.com.uy/tccvivo.com.uy.channels.xml --output=guide.xml --timeout=30000 --days=2
+// npm run channels:parse -- --config=./sites/programacion.tcc.com.uy/programacion.tcc.com.uy.config.js --output=./sites/programacion.tcc.com.uy/programacion.tcc.com.uy.channels.xml
+// npx epg-grabber --config=sites/programacion.tcc.com.uy/programacion.tcc.com.uy.config.js --channels=sites/programacion.tcc.com.uy/programacion.tcc.com.uy.channels.xml --output=guide.xml --timeout=30000 --days=2
 
-const { parser, url } = require('./tccvivo.com.uy.config.js')
+const { parser, url } = require('./programacion.tcc.com.uy.config.js')
 const fs = require('fs')
 const path = require('path')
 const dayjs = require('dayjs')

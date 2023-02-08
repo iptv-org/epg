@@ -4,7 +4,7 @@ const dayjs = require('dayjs')
 const API_ENDPOINT = 'https://www.tccvivo.com.uy/api/v1/navigation_filter/1575/filter/'
 
 module.exports = {
-  site: 'tccvivo.com.uy',
+  site: 'programacion.tcc.com.uy',
   days: 2,
   request: {
     cache: {
