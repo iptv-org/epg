@@ -116,6 +116,7 @@
     <channel lang="fr" xmltv_id="CFJPDT.ca" site_id="v-cfjp-montreal-qc/301">V (CFJP) Montreal, QC</channel>
     <channel lang="en" xmltv_id="CHCHDT.ca" site_id="chch-hamilton-on/43">CHCH Hamilton, ON</channel>
     <channel lang="en" xmltv_id="CHEK.ca" site_id="chek-vancouver-island-bc/183">CHEK Vancouver Island, BC</channel>
+    <channel lang="en" xmltv_id="CHEXDT.ca" site_id="global-chex-peterborough-on/37">Global (CHEX) Peterborough, ON</channel>
     <channel lang="en" xmltv_id="CICADT.ca" site_id="tvo-tv-ontario/18">TVO (TV Ontario)</channel>
     <channel lang="en" xmltv_id="CIHFDT.ca" site_id="global-cihf-dartmouth/115">Global (CIHF) Dartmouth</channel>
     <channel lang="en" xmltv_id="CIIIDT.ca" site_id="global-ciii-ontario-hd/4021">Global (CIII) Ontario HD</channel>
@@ -126,6 +127,7 @@
     <channel lang="en" xmltv_id="CITSDT.ca" site_id="yes-tv-cits-burlington-on/293">Yes TV (CITS) Burlington, ON</channel>
     <channel lang="fr" xmltv_id="CIVMDT.ca" site_id="telequebec-civm-montreal/1140">Tele-Quebec (CIVM) Montreal</channel>
     <channel lang="en" xmltv_id="CJONDT.ca" site_id="cjon-ntv-stjohn-nl/199">CJON (NTV) St-John, NL</channel>
+    <channel lang="en" xmltv_id="CKWSDT.ca" site_id="global-ckws-kingston-on/24">Global (CKWS) Kingston, ON</channel>
     <channel lang="en" xmltv_id="CMTCanada.ca" site_id="cmt-canada/120">CMT Canada</channel>
     <channel lang="en" xmltv_id="CMTEast.us" site_id="cmt-us-eastern-feed-hd/6344">CMT East</channel>
     <channel lang="en" xmltv_id="CNBC.us" site_id="cnbc-usa/201">CNBC</channel>
@@ -145,6 +147,7 @@
     <channel lang="en" xmltv_id="CSPAN.us" site_id="cspan/648">C-SPAN</channel>
     <channel lang="en" xmltv_id="CSPAN2.us" site_id="cspan-2/1050">C-SPAN 2</channel>
     <channel lang="en" xmltv_id="CSPAN3.us" site_id="cspan-3/3423">C-SPAN 3</channel>
+    <channel lang="en" xmltv_id="CTV2Atlantic.ca" site_id="ctv2-atlantic-region/116">CTV2 Atlantic</channel>
     <channel lang="en" xmltv_id="CTVNewsChannel.ca" site_id="ctv-news-channel/416">CTV News Channel</channel>
     <channel lang="en" xmltv_id="DDBharati.in" site_id="dd-bharati-doordarshan/13649">DD Bharati (Doordarshan)</channel>
     <channel lang="en" xmltv_id="DDIndia.in" site_id="dd-india-doordarshan/13650">DD India (Doordarshan)</channel>
@@ -264,6 +267,7 @@
     <channel lang="en" xmltv_id="KABCDT1.us" site_id="abc-kabc-los-angeles-ca/2589">ABC (KABC) Los Angeles, CA</channel>
     <channel lang="en" xmltv_id="KAKEDT1.us" site_id="abc-kake-wichita-ks/1547">ABC (KAKE) Wichita, KS</channel>
     <channel lang="en" xmltv_id="KAKEDT2.us" site_id="metv-kakedt2-wichita-ks/12586">MeTV (KAKE-DT2) Wichita, KS</channel>
+    <channel lang="en" xmltv_id="KAREDT1.us" site_id="nbc-kare-minneapolis-mn/81">NBC (KARE) Minneapolis, MN</channel>
     <channel lang="en" xmltv_id="KASWDT1.us" site_id="cw-kasw-phoenix-az/1181">CW (KASW) Phoenix, AZ</channel>
     <channel lang="en" xmltv_id="KATVDT1.us" site_id="abc-katv-little-rock-ar/1499">ABC (KATV) Little Rick, AR</channel>
     <channel lang="en" xmltv_id="KATVDT2.us" site_id="comet-tv-katv2-little-rock-ar/6517">Comet (KATV-DT2) Little Rick, AR</channel>
@@ -386,7 +390,9 @@
     <channel lang="en" xmltv_id="MSNBC.us" site_id="msnbc-usa/655">MSNBC</channel>
     <channel lang="en" xmltv_id="MTV2East.us" site_id="mtv-2-east/1515">MTV 2 - East</channel>
     <channel lang="en" xmltv_id="MTVCanada.ca" site_id="mtv-canada/414">MTV Canada</channel>
+    <channel lang="en" xmltv_id="Much.ca" site_id="much-music/73">Much</channel>
     <channel lang="en" xmltv_id="NationalGeographicCanada.ca" site_id="national-geographic-canada/475">National Geographic Canada</channel>
+    <channel lang="en" xmltv_id="NationalGeographicWest.us" site_id="national-geographic-us-pacific/10314">National Geographic West</channel>
     <channel lang="en" xmltv_id="NBATVCanada.ca" site_id="nba-tv-canada/1150">NBA TV Canada</channel>
     <channel lang="en" xmltv_id="NBCEast.us" site_id="nbc-network-eastern/1227">NBC Network Eastern</channel>
     <channel lang="en" xmltv_id="NBCSportsBoston.us" site_id="nbc-sports-boston/4529">NBC Sports Boston</channel>
@@ -395,6 +401,7 @@
     <channel lang="en" xmltv_id="News12Conneticut.us" site_id="news-12-connecticut/20178">News12 Conneticut</channel>
     <channel lang="en" xmltv_id="News12LongIsland.us" site_id="news-12-long-island/20180">News12 Long Island</channel>
     <channel lang="en" xmltv_id="NewsmaxTV.us" site_id="newsmax-tv/16818">Newsmax TV</channel>
+    <channel lang="en" xmltv_id="NewsNationEast.us" site_id="newsnation-eastern-feed/65">NewsNation East</channel>
     <channel lang="en" xmltv_id="NFLNetwork.us" site_id="nfl-network/3349">NFL Network</channel>
     <channel lang="en" xmltv_id="NFLRedZone.us" site_id="nfl-redzone/6921">NFL RedZone</channel>
     <channel lang="en" xmltv_id="NFLSundayTicket1.us" site_id="nfl-sunday-ticket-1/2747">NFL Sunday Ticket 1</channel>
@@ -481,6 +488,7 @@
     <channel lang="en" xmltv_id="SportsnetWorld.ca" site_id="sportsnet-world/4442">Sportsnet World</channel>
     <channel lang="en" xmltv_id="StarGold.in" site_id="star-india-gold/6776">Star India Gold</channel>
     <channel lang="bn" xmltv_id="StarJalsha.in" site_id="star-jalsha/13709">Star Jalsha</channel>
+    <channel lang="en" xmltv_id="Starz1East.ca" site_id="starz1-east/55">Starz 1 East</channel>
     <channel lang="en" xmltv_id="StarzCinemaEast.us" site_id="starz-cinema-eastern/2680">Starz Cinema East</channel>
     <channel lang="en" xmltv_id="StarzCinemaWest.us" site_id="starz-cinema-pacific/2681">Starz Cinema Pacific</channel>
     <channel lang="en" xmltv_id="StarzComedyEast.us" site_id="starz-comedy-hd-eastern/7088">Starz Comedy East</channel>
@@ -584,6 +592,8 @@
     <channel lang="en" xmltv_id="WBKPDT1.us" site_id="cw-wbkp-calumet-mi/4943">CW (WBKP) Calumet, MI</channel>
     <channel lang="en" xmltv_id="WBSFDT1.us" site_id="cw-wbsf-flint-mi/6958">CW (WBSF) Bay City, MI</channel>
     <channel lang="en" xmltv_id="WBUPDT1.us" site_id="abc-wbup-ishpeming-mi/4944">ABC (WBUP) Ishpeming, MI</channel>
+    <channel lang="en" xmltv_id="WBZDT1.us" site_id="cbs-wbz-boston-ma/134">CBS (WBZ) Boston, MA</channel>
+    <channel lang="en" xmltv_id="WCAXDT1.us" site_id="cbs-wcax-burlington-vt/97">CBS (WCAX) Burlington, VT</channel>
     <channel lang="en" xmltv_id="WCBIDT1.us" site_id="cbs-wcbi-colombus-ms/1841">CBS (WCBI) Colombus, MS</channel>
     <channel lang="en" xmltv_id="WCBSDT1.us" site_id="cbs-wcbs-new-york-ny/1766">CBS (WCBS) New York, NY</channel>
     <channel lang="en" xmltv_id="WCBSDT2.us" site_id="start-tv-wcbstv2-new-york-ny/11045">Start TV (WCBS-TV2) New York, NY</channel>
@@ -591,6 +601,8 @@
     <channel lang="en" xmltv_id="WCCTDT1.us" site_id="cw-wcct-hartford-ct/2057">CW (WCCT) Hartford, CT</channel>
     <channel lang="en" xmltv_id="WCCTDT2.us" site_id="court-tv-wccttv2-hartford-ct/7714">Grit (WCCT-DT2) Hartford, CT</channel>
     <channel lang="en" xmltv_id="WCCTDT3.us" site_id="comet-tv-wccttv3-hartford-ct/18168">Comet (WCCT-DT3) Hartford, CT</channel>
+    <channel lang="en" xmltv_id="WCCODT1.us" site_id="cbs-wcco-minneapolis-mn/80">CBS (WCCO) Minneapolis, MN</channel>
+    <channel lang="en" xmltv_id="WCFEDT1.us" site_id="pbs-wcfe-plattsburgh-ny/109">PBS (WCFE) Plattsburgh, NY</channel>
     <channel lang="en" xmltv_id="WCIUDT1.us" site_id="cw26-wciu-chicago-il/1834">CW (WCIU) Chicago, IL</channel>
     <channel lang="en" xmltv_id="WCIUDT5.us" site_id="story-wciutv5-chicago-il/11342">Story (WCIU-DT5) Chicago, IL</channel>
     <channel lang="en" xmltv_id="WCMUDT1.us" site_id="pbs-wcmu-mt-pleasant-mi/9304">PBS (WCMU-TV) Mount Pleasant, MI</channel>
@@ -604,11 +616,13 @@
     <channel lang="en" xmltv_id="WDAFDT1.us" site_id="fox-wdaf-kansas-city-mo/2451">FOX (WDAF) Kansas City, MO</channel>
     <channel lang="en" xmltv_id="WDCADT1.us" site_id="fox-5-plus-wdca-district-of-columbia/1557">MNT (WDCA) District of Columbia</channel>
     <channel lang="en" xmltv_id="WDCQDT1.us" site_id="pbs-wdcq-flint-mi/9042">PBS (WDCQ-TV) Bad Axe, MI</channel>
+    <channel lang="en" xmltv_id="WDIVDT1.us" site_id="nbc-wdiv-detroit-mi/21">NBC (WDIV) Detroit, MI</channel>
     <channel lang="en" xmltv_id="WDVBCD1.us" site_id="the-country-network-wdvb-edison-nj/11067">The Country Network (WDVB) Edison, NJ</channel>
     <channel lang="en" xmltv_id="WDVBCD2.us" site_id="sstn-wdvbcd2-edison-nj/11068">SSTN (WDVB-CD2) Edison, NJ</channel>
     <channel lang="en" xmltv_id="WEDWDT1.us" site_id="connecticut-public-television-wedw-bridgeport/2065">Connecticut Public Television (WEDW) Bridgeport</channel>
     <channel lang="en" xmltv_id="WEDWDT3.us" site_id="cptv-spirit-wedwdt3-bridgeport-ct/11910">CPTV Spirit (WEDW-DT3) Bridgeport, CT</channel>
     <channel lang="en" xmltv_id="WETADT1.us" site_id="pbs-weta-hd-washington-dc/8180">PBS (WETA-TV) Washington DC</channel>
+    <channel lang="en" xmltv_id="WETKDT1.us" site_id="pbs-wetk-colchester-vt/102">PBS (WETK) Colchester, VT</channel>
     <channel lang="en" xmltv_id="WEVVDT1.us" site_id="cbs-wevv-evansville-in/1801">CBS (WEVV) Evansville, IN</channel>
     <channel lang="en" xmltv_id="WEVVDT2.us" site_id="fox-wevv2-evansville-in-hd/9720">FOX (WEVV-DT2) Evansville, IN</channel>
     <channel lang="en" xmltv_id="WEWSDT1.us" site_id="abc-wews-cleveland-oh/215">ABC (WEWS-TV) Cleveland, OH</channel>
@@ -617,6 +631,7 @@
     <channel lang="en" xmltv_id="WFAADT2.us" site_id="accuweather-wfaa2-dallas-tx/14780">AccuWeather (WFAA-DT2) Dallas, TX</channel>
     <channel lang="en" xmltv_id="WFAADT3.us" site_id="true-crime-network-wfaadt3-dallas-tx/7463">True Crime Network (WFAA-DT3) Dallas, TX</channel>
     <channel lang="en" xmltv_id="WFAADT4.us" site_id="quest-wfaa4-dallas-tx/32427">Quest (WFAA-DT4) Dallas, TX</channel>
+    <channel lang="en" xmltv_id="WFFFDT1.us" site_id="fox-wfff-burlington-vt/140">FOX (WFFF) Burlington, VT</channel> 
     <channel lang="en" xmltv_id="WFLDDT1.us" site_id="fox-wfld-chicago-il/1606">FOX (WFLD) Chicago, IL</channel>
     <channel lang="en" xmltv_id="WFQXDT1.us" site_id="fox-wfqx-traverse-citycadillac-mi/483">FOX (WFQX-TV) Cadillac, MI</channel>
     <channel lang="en" xmltv_id="WFQXDT2.us" site_id="cw-wfqxtv2-traverse-citycadillac-mi/31612">CW (WFQX-DT2) Cadillac, MI</channel>
@@ -636,8 +651,10 @@
     <channel lang="en" xmltv_id="WFXTDT1.us" site_id="fox-wfxt-boston-ma/338">FOX (WFXT) Boston, MA</channel>
     <channel lang="en" xmltv_id="WGMEDT1.us" site_id="cbs-wgme-portland-me/2696">CBS (WGME) Portland, ME</channel>
     <channel lang="en" xmltv_id="WGRZDT1.us" site_id="nbc-wgrz-buffalo-ny/91">NBC (WGRZ) Buffalo, NY</channel>
+    <channel lang="en" xmltv_id="WGTQDT1.us" site_id="abc-wgtq-sault-ste-marie-mi/76">ABC (WGTQ) Sault Ste. Marie, MI</channel>   
     <channel lang="en" xmltv_id="WGTUDT1.us" site_id="abc-wgtu-traverse-city-mi/1260">ABC (WGTU) Traverse City, MI</channel>
     <channel lang="en" xmltv_id="WGVUDT1.us" site_id="pbs-wgvu-grand-rapids-mi/1919">PBS (WGVU-TV) Grand Rapids, MI</channel>
+    <channel lang="en" xmltv_id="WHAMDT1.us" site_id="abc-wham-rochester-ny/26">ABC (WHAM) Rochester, NY</channel>
     <channel lang="en" xmltv_id="WHDHDT1.us" site_id="whdh-boston-ma/135">Independent (WHDH) Boston, MA</channel>
     <channel lang="en" xmltv_id="WHDHDT2.us" site_id="this-whdh2-hudson-nh/8041">THIS (WHDH) Boston, MA</channel>
     <channel lang="en" xmltv_id="WHECDT1.us" site_id="nbc-whec-rochester-ny/40">NBC (WHEC) Rochester, NY</channel>
@@ -653,6 +670,7 @@
     <channel lang="en" xmltv_id="WJARDT3.us" site_id="comet-tv-wjar3-cranston-ri/16825">Comet TV (WJAR-DT3) Cranston, RI</channel>
     <channel lang="en" xmltv_id="WJAXDT1.us" site_id="cbs-wjax-jacksonville-fl/2048">CBS (WJAX) Jacksonville, FL</channel>
     <channel lang="en" xmltv_id="WJLADT1.us" site_id="abc-wjla-district-of-columbia/1555">ABC (WJLA) District of Columbia</channel>
+    <channel lang="en" xmltv_id="WJBKDT1.us" site_id="fox-wjbk-detroit-mi/54">FOX (WJBK) Detroit, MI</channel>
     <channel lang="en" xmltv_id="WJLPDT1.us" site_id="metv-wjlp-new-jerseynew-york/5138">MeTV (WJLP) New Jersey</channel>
     <channel lang="en" xmltv_id="WJLPDT2.us" site_id="laff-wjlp2-new-jersey/15178">Laff (WJLP2) New Jersey</channel>
     <channel lang="en" xmltv_id="WJLPDT3.us" site_id="grit-tv-wjlp3-new-jerseynew-york/20040">Grit TV (WJLP3) New Jersey/New York</channel>
@@ -678,6 +696,7 @@
     <channel lang="en" xmltv_id="WKOBLD7.us" site_id="shop-lc-wkobdt7-new-york-ny/16454">Shop LC (WKOB-DT7) New York, NY</channel>
     <channel lang="en" xmltv_id="WKOBLD8.us" site_id="ontv4u-wkobdt8-new-york-ny/17491">ONTV4U (WKOB-DT8) New York, NY</channel>
     <channel lang="en" xmltv_id="WKRNDT1.us" site_id="abc-wkrn-nashville-tn/1886">ABC (WKRN) Nashville, TN</channel>
+    <channel lang="en" xmltv_id="WLBZDT1.us" site_id="nbc-wlbz-bangor-me/124">NBC (WLBZ) Bangor, ME</channel>
     <channel lang="en" xmltv_id="WLIWDT1.us" site_id="pbs-wliw-long-island-ny/1775">PBS (WLIW) Long Island, NY</channel>
     <channel lang="en" xmltv_id="WLIWDT2.us" site_id="create-wliw2-long-island-ny/6202">Create (WLIW2) Long Island, NY</channel>
     <channel lang="en" xmltv_id="WLIWDT3.us" site_id="pbs-world-wliw3-long-island-ny/6203">PBS World (WLIW3) Long Island, NY</channel>
@@ -758,6 +777,7 @@
     <channel lang="en" xmltv_id="WNYXLD5.us" site_id="retro-tv-wnyxld5-new-york-ny/17849">Retro TV (WNYX-LD5) New York, NY</channel>
     <channel lang="en" xmltv_id="WOIDT1.us" site_id="abc-woi-des-moines-ia/1245">ABC (WOI) Des Moines, IA</channel>
     <channel lang="en" xmltv_id="WorldFishingNetwork.us" site_id="wfnworld-fishing-network/2414">World Fishing Network</channel>
+    <channel lang="en" xmltv_id="WPBSDT1.us" site_id="pbs-wpbs-watertown-ny/29">PBS (WPBS) Watertown, NY</channel>
     <channel lang="en" xmltv_id="WPCWDT1.us" site_id="cw-wpcw-pittsburgh-pa/3187">CW (WPCW) Pittsburgh, PA</channel>
     <channel lang="en" xmltv_id="WPCWDT2.us" site_id="hi-wpcw2-pittsburgh-pa/33360">H&amp;I (WPCW-DT2) Pittsburgh, PA</channel>
     <channel lang="en" xmltv_id="WPCWDT3.us" site_id="grit-tv-wpcw3-pittsburgh-pa/33361">Grit TV (WPCW-DT3) Pittsburgh, PA</channel>
@@ -776,6 +796,7 @@
     <channel lang="en" xmltv_id="WPRIDT2.us" site_id="mnt-wpritv2-providence-ri/32449">MNT (WPRI-DT2) Providence, RI</channel>
     <channel lang="en" xmltv_id="WPRIDT3.us" site_id="true-crime-wpritv3-providence-ri/15037">True Crime Network (WPRI-DT3) Providence, RI</channel>
     <channel lang="en" xmltv_id="WPRIDT4.us" site_id="dabl-wpritv4-providence-ri/19496">DABL (WPRI-DT4) Providence, RI</channel>
+    <channel lang="en" xmltv_id="WPTZDT1.us" site_id="nbc-wptz-plattsburg-ny/99">NBC (WPTZ) Plattsburg, NY</channel>
     <channel lang="en" xmltv_id="WPVIDT1.us" site_id="abc-wpvi-philadelphia-pa/2563">ABC (WPVI) Philadelphia, PA</channel>
     <channel lang="en" xmltv_id="WPVIDT2.us" site_id="localish-wpvidt2-philadelphia-pa/8852">Localish (WPVI-DT2) Philadelphia, PA</channel>
     <channel lang="en" xmltv_id="WPVIDT3.us" site_id="this-wpvitv3-philadelphia-pa/14662">THIS (WPVI-TV3) Philadelphia, PA</channel>
@@ -800,6 +821,7 @@
     <channel lang="en" xmltv_id="WRNNDT2.us" site_id="circle-wrnntv2-new-york/8687">Circle (WRNN-TV2) New York</channel>
     <channel lang="en" xmltv_id="WRNNDT3.us" site_id="canal-de-la-fe-wrnndt3-new-york-ny/11091">Canal de La Fe (WRNN-DT3) New York, NY</channel>
     <channel lang="en" xmltv_id="WRNNDT4.us" site_id="qvc2-wrnntv4-new-york-ny/11092">QVC2 (WRNN-TV4) New York, NY</channel>
+    <channel lang="en" xmltv_id="WROCDT1.us" site_id="cbs-wroc-rochester-ny/35">CBS (WROC) Rochester, NY</channel>
     <channel lang="en" xmltv_id="WRTVDT1.us" site_id="abc-wrtv-indianapolis-in/1363">ABC (WRTV) Indianapolis, IN</channel>
     <channel lang="en" xmltv_id="WSBDT1.us" site_id="abc-wsb-atlanta-ga/1342">ABC (WSB) Atlanta, GA</channel>
     <channel lang="en" xmltv_id="WSBEDT1.us" site_id="pbs-wsbe-providence-ri-hd/7752">PBS (WSBE) Providence, RI</channel>
@@ -822,18 +844,23 @@
     <channel lang="en" xmltv_id="WTLVDT1.us" site_id="nbc-wtlv-jacksonville-fl/1435">NBC (WTLV) Jacksonville, FL</channel>
     <channel lang="en" xmltv_id="WTNHDT1.us" site_id="abc-wtnh-sd-new-haven-ct/17476">ABC (WTNH) SD New Haven, CT</channel>
     <channel lang="en" xmltv_id="WTNHDT2.us" site_id="rewind-tv-us-wtnh2-new-haven-ct/10741">Rewind TV US (WTNH2) New Haven, CT</channel>
+    <channel lang="en" xmltv_id="WTOLDT1.us" site_id="cbs-wtol-toledo-oh/27">CBS (WTOL) Toledo, OH</channel>
     <channel lang="en" xmltv_id="WTVDDT1.us" site_id="abc-wtvd-raleigh-nc/1284">ABC (WTVD) Raleigh, NC</channel>
     <channel lang="en" xmltv_id="WTVFDT1.us" site_id="cbs-wtvf-nashville-tn/1883">CBS (WTVF) Nashville, TN</channel>
     <channel lang="en" xmltv_id="WTVGDT1.us" site_id="abc-wtvg-toledo-oh/271">ABC (WTVG) Toledo, OH</channel>
     <channel lang="en" xmltv_id="WTVGDT2.us" site_id="cw-wtvgdt2-toledo-oh/10390">CW (WTVG-DT2) Toledo, OH</channel>
+    <channel lang="en" xmltv_id="WTVSDT1.us" site_id="pbs-wtvs-detroit-mi/22">PBS (WTVS) Detroit, MI</channel>
     <channel lang="en" xmltv_id="WTVSDT5.us" site_id="mlc-wtvsdt5-detroit-mi/36121">Michigan Learning Channel (WTVS-DT5) Detroit, MI</channel>
     <channel lang="en" xmltv_id="WTVTDT1.us" site_id="fox-wtvt-tampa-bay-fl/2552">FOX (WTVT) Tampa Bay, FL</channel>
+    <channel lang="en" xmltv_id="WUHFDT1.us" site_id="fox-wuhf-rochester-ny/44">FOX (WUHF) Rochester, NY</channel>
     <channel lang="en" xmltv_id="WUTVDT1.us" site_id="fox-wutv-buffalo-ny/45">FOX (WUTV) Buffalo, NY</channel>
     <channel lang="en" xmltv_id="WVITDT1.us" site_id="nbc-wvit-w-hartford-ct/2056">NBC (WVIT) Hartford, CT</channel>
     <channel lang="en" xmltv_id="WVITDT2.us" site_id="cozi-tv-wvit2-new-haven-ct/10954">Cozi (WVIT-DT2) Hartford, CT</channel>
+    <channel lang="en" xmltv_id="WVNYDT1.us" site_id="abc-wvny-burlington-vt/100">ABC (WVNY) Burlington, VT</channel>
     <channel lang="en" xmltv_id="WVUEDT1.us" site_id="fox-wvue-new-orleans-la/1745">FOX (WVUE) New Orleans, LA</channel>
     <channel lang="en" xmltv_id="WWAYDT2.us" site_id="cbs-wway2-wilmington-nc/7209">CBS (WWAY2) Wilmington, NC</channel>
     <channel lang="es" xmltv_id="WWENetwork.us" site_id="wwe-network-hd/14155">WWE Network</channel>
+    <channel lang="en" xmltv_id="WWJDT1.us" site_id="cbs-wwj-detroit-mi/128">CBS (WWJ) Detroit, MI</channel>
     <channel lang="en" xmltv_id="WWJDT4.us" site_id="fave-tv-wwjtv4-detroit-mi/35971">Fave TV (WWJ-DT4) Detroit, MI</channel>
     <channel lang="en" xmltv_id="WWORDT1.us" site_id="mnt-wwor-new-york-ny/1612">MNT (WWOR) New York, NY</channel>
     <channel lang="en" xmltv_id="WWORDT2.us" site_id="circle-wwortv2-new-york-ny/4793">Circle (WWOR-TV2) New York, NY</channel>
@@ -849,6 +876,7 @@
     <channel lang="en" xmltv_id="WXTVDT2.us" site_id="bounce-wxtvdt2-paterson-nj/16452">Bounce (WXTV-DT2) Paterson, NJ</channel>
     <channel lang="en" xmltv_id="WXTVDT3.us" site_id="twist-wxtvdt3-paterson-nj/16450">Twist (WXTV-DT3) Paterson, NJ</channel>
     <channel lang="en" xmltv_id="WXTVDT4.us" site_id="grit-tv-wxtvdt4-paterson-nj/16451">Grit TV (WXTV-DT4) Paterson, NJ</channel>
+    <channel lang="en" xmltv_id="WXXIDT1.us" site_id="pbs-wxxi-rochester-ny/46">PBS (WXXI) Rochester, NY</channel>
     <channel lang="en" xmltv_id="WXYZDT1.us" site_id="abc-wxyz-detroit-mi/11155">ABC (WXYZ) Detroit, MI</channel>
     <channel lang="en" xmltv_id="WYXNLD1.us" site_id="cgtn-wyxnld-new-york-ny/29736">CGTN (WYXN-LD) New York, NY</channel>
     <channel lang="en" xmltv_id="WZMQDT2.us" site_id="cbs-wzmq2-marquette-mi/17308">CBS (WZMQ-DT2) Marquette, MI</channel>
