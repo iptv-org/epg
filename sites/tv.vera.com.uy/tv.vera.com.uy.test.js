@@ -73,7 +73,9 @@ it('can parse response', () => {
   expect(results[0]).toMatchObject({
     start: '2023-02-11T02:30:00.000Z',
     stop: '2023-02-11T04:00:00.000Z',
-    title: 'Canal 5 Noticias rep.'
+    title: 'Canal 5 Noticias rep.',
+    sub_title: '',
+    description: ''
   })
 })
 
