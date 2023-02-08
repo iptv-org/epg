@@ -59,7 +59,7 @@ module.exports = {
 function parseTitle(item) {
   const localized = item.localized.find(i => i.language === 'es')
 
-  return localized ? localized.title : null
+  return localized ? localized.title : item.original_title
 }
 
 function parseDescription(item) {
