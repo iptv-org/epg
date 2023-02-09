@@ -9,6 +9,7 @@ const CURR_DATE = process.env.CURR_DATE || new Date()
 const logPath = `${LOGS_DIR}/guides/update.log`
 
 let api_channels = {}
+let db_queue = []
 let db_programs = []
 let guides = []
 
@@ -21,6 +22,11 @@ async function main() {
   api.channels.all().forEach(channel => {
     api_channels[channel.id] = channel
   })
+
+  logger.info('loading database/queue.db...')
+  await db.queue.load()
+  db_queue = await db.queue.find({})
+  logger.info(`found ${db_queue.length} channels`)
 
   logger.info('loading database/programs.db...')
   await db.programs.load()
@@ -38,14 +44,27 @@ async function main() {
 main()
 
 async function generate() {
+  let queue = _.groupBy(db_queue, i => (i.channel ? `${i.channel.lang}/${i.channel.site}` : `_`))
+  delete queue['_']
+
   let programs = _.groupBy(db_programs, p =>
     p.titles.length ? `${p.titles[0].lang}/${p.site}` : `_`
   )
 
   delete programs['_']
 
-  for (let filename in programs) {
-    let { channels } = await save(filename, programs[filename])
+  for (let filename in queue) {
+    if (!queue[filename]) continue
+    const channels = queue[filename].map(i => {
+      const channelData = api_channels[i.channel.id]
+      channelData.site = i.channel.site
+      channelData.site_id = i.channel.site_id
+      channelData.lang = i.channel.lang
+
+      return new Channel(channelData)
+    })
+
+    await save(filename, channels, programs[filename])
 
     for (let channel of channels) {
       const configPath = `sites/${channel.site}/${channel.site}.config.js`
@@ -62,24 +81,19 @@ async function generate() {
   }
 }
 
-async function save(filepath, programs) {
+async function save(filepath, channels, programs = []) {
   let output = {
-    channels: [],
+    channels,
     programs: [],
     date: CURR_DATE
   }
 
   for (let programData of programs) {
-    let channelData = api_channels[programData.channel]
-    if (!channelData) continue
+    let channel = channels.find(c => c.id === programData.channel)
+    if (!channel) continue
 
-    channelData.site = programData.site
-    channelData.lang = programData.titles[0].lang
-
-    let channel = new Channel(channelData)
     let program = new Program(programData, channel)
 
-    output.channels.push(channel)
     output.programs.push(program)
   }
 
@@ -100,17 +114,3 @@ async function save(filepath, programs) {
 
   return output
 }
-
-// function merge(p1, p2) {
-//   for (let prop in p1) {
-//     if (Array.isArray(p1[prop])) {
-//       p1[prop] = _.orderBy(
-//         _.uniqWith(p1[prop].concat(p2[prop]), _.isEqual),
-//         v => (v.lang === 'en' ? Infinity : 1),
-//         'desc'
-//       )
-//     }
-//   }
-
-//   return p1
-// }
