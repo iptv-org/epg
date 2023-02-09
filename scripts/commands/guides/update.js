@@ -26,7 +26,7 @@ async function main() {
   logger.info('loading database/queue.db...')
   await db.queue.load()
   db_queue = await db.queue.find({})
-  logger.info(`found ${db_queue.length} channels`)
+  logger.info(`found ${db_queue.length} items`)
 
   logger.info('loading database/programs.db...')
   await db.programs.load()
@@ -44,7 +44,8 @@ async function main() {
 main()
 
 async function generate() {
-  let queue = _.groupBy(db_queue, i => (i.channel ? `${i.channel.lang}/${i.channel.site}` : `_`))
+  let queue = _.uniqBy(db_queue, i => i.channel.lang + i.channel.id + i.channel.site)
+  queue = _.groupBy(queue, i => (i.channel ? `${i.channel.lang}/${i.channel.site}` : `_`))
   delete queue['_']
 
   let programs = _.groupBy(db_programs, p =>
