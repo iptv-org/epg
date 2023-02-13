@@ -9,7 +9,8 @@ dayjs.extend(isToday)
 dayjs.extend(utc)
 
 const DB_DIR = process.env.DB_DIR || './scripts/database'
-const dbPath = `${DB_DIR}/programs.db`
+const programsPath = `${DB_DIR}/programs.db`
+const queuePath = `${DB_DIR}/queue.db`
 
 const octokit = new Octokit({
   auth: process.env.GITHUB_TOKEN
@@ -20,7 +21,8 @@ async function main() {
     let workflows = await getWorkflows()
     logger.info(`found ${workflows.length} workflows\r\n`)
 
-    await file.create(dbPath)
+    await file.create(programsPath)
+    await file.create(queuePath)
     const total = workflows.length
     for (let [i, workflow] of workflows.entries()) {
       logger.info(`[${i + 1}/${total}] ${workflow.name}`)
@@ -29,8 +31,11 @@ async function main() {
 
       let artifact = await getRunArtifacts(run)
 
-      const buffer = await downloadArtifact(artifact)
-      await file.append(dbPath, buffer)
+      const programsBuffer = await downloadArtifact(artifact, 'programs.db')
+      await file.append(programsPath, programsBuffer)
+
+      const queueBuffer = await downloadArtifact(artifact, 'queue.db')
+      await file.append(queuePath, queueBuffer)
     }
   } catch (err) {
     console.log(err.message)
@@ -39,7 +44,7 @@ async function main() {
 
 main()
 
-async function downloadArtifact(artifact) {
+async function downloadArtifact(artifact, filename) {
   let results = await octokit.request(
     'GET /repos/{owner}/{repo}/actions/artifacts/{artifact_id}/{archive_format}',
     {
@@ -52,7 +57,7 @@ async function downloadArtifact(artifact) {
 
   const { entries } = await unzipit.unzip(results.data)
 
-  const arrayBuffer = await entries['programs.db'].arrayBuffer()
+  const arrayBuffer = await entries[filename].arrayBuffer()
 
   return toString(arrayBuffer)
 }

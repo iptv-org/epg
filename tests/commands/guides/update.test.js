@@ -9,6 +9,10 @@ beforeEach(() => {
     'tests/__data__/input/database/update-guides/programs.db',
     'tests/__data__/output/programs.db'
   )
+  fs.copyFileSync(
+    'tests/__data__/input/database/update-guides/queue.db',
+    'tests/__data__/output/queue.db'
+  )
 })
 
 it('can generate /guides', () => {

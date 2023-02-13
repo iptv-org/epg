@@ -27,7 +27,7 @@ jobs:
       - run: npm install
       - run: npm run api:load
       - if: ${{ !env.ACT }}
-        run: GITHUB_TOKEN=${{ steps.create-app-token.outputs.token }} npm run programs:load
+        run: GITHUB_TOKEN=${{ steps.create-app-token.outputs.token }} npm run db:load
       - uses: actions/upload-artifact@v3
         with:
           name: database

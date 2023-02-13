@@ -7,7 +7,7 @@
     "channels:editor": "node scripts/commands/channels/editor.js",
     "queue:create": "node scripts/commands/queue/create.js",
     "cluster:load": "node scripts/commands/cluster/load.js",
-    "programs:load": "node scripts/commands/programs/load.js",
+    "db:load": "node scripts/commands/database/load.js",
     "programs:save": "node scripts/commands/programs/save.js",
     "guides:update": "NODE_OPTIONS=--max-old-space-size=5120 node scripts/commands/guides/update.js",
     "api:load": "./scripts/commands/api/load.sh",
