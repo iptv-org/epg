@@ -1,95 +1,126 @@
-const axios = require('axios')
-const cheerio = require('cheerio')
 const dayjs = require('dayjs')
-const utc = require('dayjs/plugin/utc')
+const axios = require('axios')
 
-dayjs.extend(utc)
+// TODO: calculate API_KEY based on the current date
+// specific key for Canal + Afrique
+const API_KEY = 'c500bf0e7216fe10b1a6a26a0cd2c278' // 03.2023
 
 module.exports = {
-  skip: true, // 404 not found
   site: 'canalplus-afrique.com',
   days: 2,
   url: function ({ channel, date }) {
     const diff = date.diff(dayjs.utc().startOf('d'), 'd')
 
-    return `https://service.canal-overseas.com/ott-frontend/vector/83001/channel/${channel.site_id}/events?filter.day=${diff}`
+    return `https://hodor.canalplus.pro/api/v2/mycanal/channels/${API_KEY}/${channel.site_id}/broadcasts/day/${diff}`
   },
   async parser({ content }) {
     let programs = []
     const items = parseItems(content)
     for (let item of items) {
-      if (item.title === 'Fin des programmes') return
-      const detail = await loadProgramDetails(item)
+      const prev = programs[programs.length - 1]
+      const details = await loadProgramDetails(item)
+      const info = parseInfo(details)
+      const start = parseStart(item)
+      if (prev) prev.stop = start
+      const stop = start.add(1, 'h')
       programs.push({
         title: item.title,
-        description: parseDescription(detail),
-        category: parseCategory(detail),
-        icon: parseIcon(item),
-        start: parseStart(item),
-        stop: parseStop(item)
+        description: parseDescription(info),
+        icon: parseIcon(info),
+        actors: parseCast(info,"Avec :"),
+        director: parseCast(info,"De :"),
+        writer: parseCast(info,"Scénario :"),
+        composer: parseCast(info,"Musique :"),
+        presenter: parseCast(info,"Présenté par :"),
+        date: parseDate(info),
+        rating: parseRating(info),
+        start,
+        stop
       })
     }
 
     return programs
   },
   async channels() {
-    const html = await axios
-      .get(`https://www.canalplus-afrique.com/bf/guide-tv-maintenant`)
+    const data = await axios
+      .get(`https://secure-webtv-static.canal-plus.com/metadata/cpafr/bf/all/v2.2/globalchannels.json`)
       .then(r => r.data)
       .catch(console.log)
 
-    const $ = cheerio.load(html)
-    const script = $('body > script:nth-child(2)').html()
-    const [_, json] = script.match(/window.APP_STATE=(.*);/) || [null, null]
-    const data = JSON.parse(json)
-    const items = data.tvGuide.channels.byZapNumber
-
-    return Object.values(items).map(item => {
+    return data.channels.map(item => {
       return {
         lang: 'fr',
-        site_id: item.epgID,
+        site_id: item.id,
         name: item.name
       }
     })
   }
 }
 
-async function loadProgramDetails(item) {
-  if (!item.onClick.URLPage) return {}
-  const url = item.onClick.URLPage
-  const data = await axios
-    .get(url)
-    .then(r => r.data)
-    .catch(console.log)
-  return data || {}
-}
-
-function parseDescription(detail) {
-  return detail.detail.informations.summary || null
-}
-
-function parseCategory(detail) {
-  return detail.detail.informations.subGenre || null
-}
-function parseIcon(item) {
-  return item.URLImage || item.URLImageDefault
-}
-
 function parseStart(item) {
-  return dayjs.unix(item.startTime)
+  return item && item.startTime ? dayjs(item.startTime) : null
 }
 
-function parseStop(item) {
-  return dayjs.unix(item.endTime)
+function parseIcon(info) {
+  return info ? info.URLImage : null
+}
+
+function parseDescription(info) {
+  return info ? info.summary : null
+}
+
+function parseInfo(data) {
+  if (!data || !data.detail || !data.detail.informations) return null
+
+  return data.detail.informations
+}
+
+async function loadProgramDetails(item) {
+  if (!item.onClick || !item.onClick.URLPage) return {}
+
+  return await axios
+    .get(item.onClick.URLPage)
+    .then(r => r.data)
+    .catch(console.error)
 }
 
 function parseItems(content) {
   const data = JSON.parse(content)
-  if (!data || !data.timeSlices) return []
-  const items = data.timeSlices.reduce((acc, curr) => {
+  if (!data || !Array.isArray(data.timeSlices)) return []
+
+  return data.timeSlices.reduce((acc, curr) => {
     acc = acc.concat(curr.contents)
     return acc
   }, [])
+}
 
-  return items
+function parseCast(info, type) {
+  let people = []
+  if (info && info.personnalities) {
+    const personnalities = info.personnalities.find(i => i.prefix == type)
+    if (!personnalities) return people
+    for(let person of personnalities.personnalitiesList) {
+      people.push(person.title)
+    }
+  }
+  return people
+}
+
+function parseDate(info) {
+  return (info && info.productionYear) ? info.productionYear : null
+}
+
+function parseRating(info) {
+    if (!info || !info.parentalRatings) return null
+    let rating = info.parentalRatings.find(i => i.authority === 'CSA')
+    if (!rating || Array.isArray(rating)) return null
+    if (rating.value === '1') return null
+    if (rating.value === '2') rating.value = '-10'
+    if (rating.value === '3') rating.value = '-12'
+    if (rating.value === '4') rating.value = '-16'
+    if (rating.value === '5') rating.value = '-18'
+    return {
+        system: rating.authority,
+        value: rating.value
+    }
 }
