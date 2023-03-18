@@ -6,7 +6,7 @@ const utc = require('dayjs/plugin/utc')
 dayjs.extend(utc)
 
 module.exports = {
-  skip: true // 404 not found
+  skip: true, // 404 not found
   site: 'canalplus-afrique.com',
   days: 2,
   url: function ({ channel, date }) {
