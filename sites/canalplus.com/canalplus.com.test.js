@@ -21,31 +21,31 @@ const channel = {
 it('can generate valid url for today', () => {
   const today = dayjs.utc().startOf('d')
   expect(url({ channel, date: today })).toBe(
-    'https://hodor.canalplus.pro/api/v2/mycanal/channels/da2291af3b10e9900d1c55e1a65d3388/198/broadcasts/day/0'
+    'https://hodor.canalplus.pro/api/v2/mycanal/channels/c503b468728808c0d19aa5a4b8e6adc9/198/broadcasts/day/0'
   )
 })
 
 it('can generate valid url for tomorrow', () => {
   const tomorrow = dayjs.utc().startOf('d').add(1, 'd')
   expect(url({ channel, date: tomorrow })).toBe(
-    'https://hodor.canalplus.pro/api/v2/mycanal/channels/da2291af3b10e9900d1c55e1a65d3388/198/broadcasts/day/1'
+    'https://hodor.canalplus.pro/api/v2/mycanal/channels/c503b468728808c0d19aa5a4b8e6adc9/198/broadcasts/day/1'
   )
 })
 
 it('can parse response', done => {
-    const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'))
+  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'))
 
   axios.get.mockImplementation(url => {
     if (
       url ===
-      'https://hodor.canalplus.pro/api/v2/mycanal/detail/da2291af3b10e9900d1c55e1a65d3388/okapi/6564630_50001.json?detailType=detailSeason&objectType=season&broadcastID=PLM_1196447642&episodeId=20482220_50001&brandID=4501558_50001&fromDiff=true'
+      'https://hodor.canalplus.pro/api/v2/mycanal/detail/c503b468728808c0d19aa5a4b8e6adc9/okapi/6564630_50001.json?detailType=detailSeason&objectType=season&broadcastID=PLM_1196447642&episodeId=20482220_50001&brandID=4501558_50001&fromDiff=true'
     ) {
       return Promise.resolve({
         data: JSON.parse(fs.readFileSync(path.resolve(__dirname, '__data__/program1.json')))
       })
     } else if (
       url ===
-      'https://hodor.canalplus.pro/api/v2/mycanal/detail/da2291af3b10e9900d1c55e1a65d3388/okapi/17230453_50001.json?detailType=detailPage&objectType=unit&broadcastID=PLM_1196447637&fromDiff=true'
+      'https://hodor.canalplus.pro/api/v2/mycanal/detail/c503b468728808c0d19aa5a4b8e6adc9/okapi/17230453_50001.json?detailType=detailPage&objectType=unit&broadcastID=PLM_1196447637&fromDiff=true'
     ) {
       return Promise.resolve({
         data: JSON.parse(fs.readFileSync(path.resolve(__dirname, '__data__/program2.json')))

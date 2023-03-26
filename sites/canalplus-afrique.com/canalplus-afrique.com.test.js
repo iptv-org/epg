@@ -12,112 +12,50 @@ dayjs.extend(utc)
 jest.mock('axios')
 
 const channel = {
-  site_id: '80759',
-  xmltv_id: 'Animaux.fr'
+  site_id: '180018',
+  xmltv_id: 'CanalPlusPremiereOuest.fr'
 }
 
 it('can generate valid url for today', () => {
   const date = dayjs.utc().startOf('d')
   expect(url({ channel, date })).toBe(
-    'https://service.canal-overseas.com/ott-frontend/vector/83001/channel/80759/events?filter.day=0'
+    'https://hodor.canalplus.pro/api/v2/mycanal/channels/08e7ee52ff5b639aeb39347d3f850210/180018/broadcasts/day/0'
   )
 })
 
 it('can generate valid url for tomorrow', () => {
   const date = dayjs.utc().startOf('d').add(1, 'd')
   expect(url({ channel, date })).toBe(
-    'https://service.canal-overseas.com/ott-frontend/vector/83001/channel/80759/events?filter.day=1'
+    'https://hodor.canalplus.pro/api/v2/mycanal/channels/08e7ee52ff5b639aeb39347d3f850210/180018/broadcasts/day/1'
   )
 })
 
 it('can parse response', done => {
-  const content = `{"timeSlices":[{"contents":[{"title":"A petit pas","subtitle":"Episode 1 - La naissance","thirdTitle":"ANIMAUX","startTime":1660794900,"endTime":1660797900,"onClick":{"displayTemplate":"miniDetail","displayName":"A petit pas","URLPage":"https://service.canal-overseas.com/ott-frontend/vector/83001/event/140280189","URLVitrine":"https://service.canal-overseas.com/ott-frontend/vector/83001/program/104991257/recommendations"},"programID":104991257,"diffusionID":"140280189","URLImageDefault":"https://service.canal-overseas.com/image-api/v1/image/generic","URLImage":"https://service.canal-overseas.com/image-api/v1/image/7dedf4a579b66153a1988637e9e023f5"}],"timeSlice":"1"}]}`
+  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'))
+
   axios.get.mockImplementation(url => {
-    if (url === 'https://service.canal-overseas.com/ott-frontend/vector/83001/event/140280189') {
+    if (
+      url ===
+      'https://hodor.canalplus.pro/api/v2/mycanal/detail/08e7ee52ff5b639aeb39347d3f850210/okapi/19955110_50261.json?detailType=detailPage&objectType=unit&broadcastID=PLM_1228891040_180018&fromDiff=true'
+    ) {
       return Promise.resolve({
-        data: JSON.parse(`{
-            "currentPage": {
-            "displayName": "A petit pas",
-            "displayTemplate": "detailPage",
-            "URLVitrine": "https://service.canal-overseas.com/ott-frontend/vector/83001/program/104991257/recommendations"
-            },
-            "detail": {
-            "informations": {
-            "programmeType": "EPG",
-            "isInOffer": false,
-            "isInOfferOnDevice": false,
-            "isInOfferForD2G": false,
-            "availableInVoDOnDevice": false,
-            "availableInVoDOnG5": false,
-            "availableInD2GOnDevice": false,
-            "availableInLiveOnDevice": false,
-            "rediffusions": true,
-            "canBeRecorded": false,
-            "channelName": "ANIMAUX",
-            "startTime": 1660794900,
-            "endTime": 1660797900,
-            "title": "A petit pas",
-            "subtitle": "Episode 1 - La naissance",
-            "thirdTitle": "ANIMAUX",
-            "genre": "Découverte",
-            "subGenre": "Doc. Animalier",
-            "editorialTitle": "Découverte, France, 2013, 0h50",
-            "audioLanguage": "VF",
-            "personnalities": [
-            {
-            "prefix": "De :",
-            "content": "Emilie Fertil"
-            }
-            ],
-            "summary": "Suivi pendant une année entière de trois bébés animaux, un border collie, un poulain et un lémurien, prédestinés par leur maître à devenir de véritables champions.",
-            "summaryMedium": "Suivi pendant une année entière de trois bébés animaux, un border collie, un poulain et un lémurien, prédestinés par leur maître à devenir de véritables champions.",
-            "programID": 104991257,
-            "sharingURL": "https://www.canalplus-afrique.com/grille-tv/event/140280189-a-petit-pas.html",
-            "EpgId": 80759,
-            "CSA": 1,
-            "HD": false,
-            "3D": false,
-            "diffusionID": "140280189",
-            "duration": "3000",
-            "URLImageDefault": "https://service.canal-overseas.com/image-api/v1/image/generic",
-            "URLImage": "https://service.canal-overseas.com/image-api/v1/image/7dedf4a579b66153a1988637e9e023f5",
-            "URLLogo": "https://service.canal-overseas.com/image-api/v1/image/9d91bf8d25632e77d004cf5b84f296b1",
-            "URLLogoBlack": "https://service.canal-overseas.com/image-api/v1/image/9d91bf8d25632e77d004cf5b84f296b1",
-            "URLVitrine": "https://service.canal-overseas.com/ott-frontend/vector/83001/program/104991257/recommendations"
-            },
-            "diffusions": [
-            {
-            "diffusionDateUTC": 1660794900,
-            "sharingUrl": "https://www.canalplus-afrique.com/grille-tv/event/140280189-a-petit-pas.html",
-            "broadcastId": "140280189",
-            "name": "ANIMAUX",
-            "epgID": "80759",
-            "ZapNumber": "161",
-            "URLLogo": "https://service.canal-overseas.com/image-api/v1/image/9d91bf8d25632e77d004cf5b84f296b1",
-            "URLLogoBlack": "https://service.canal-overseas.com/image-api/v1/image/9d91bf8d25632e77d004cf5b84f296b1"
-            },
-            {
-            "diffusionDateUTC": 1661475600,
-            "sharingUrl": "https://www.canalplus-afrique.com/grille-tv/event/141170299-a-petit-pas.html",
-            "broadcastId": "141170299",
-            "name": "ANIMAUX",
-            "epgID": "80759",
-            "ZapNumber": "161",
-            "URLLogo": "https://service.canal-overseas.com/image-api/v1/image/9d91bf8d25632e77d004cf5b84f296b1",
-            "URLLogoBlack": "https://service.canal-overseas.com/image-api/v1/image/9d91bf8d25632e77d004cf5b84f296b1"
-            }
-            ]
-            }
-            }`)
+        data: JSON.parse(fs.readFileSync(path.resolve(__dirname, '__data__/program1.json')))
+      })
+    } else if (
+      url ===
+      'https://hodor.canalplus.pro/api/v2/mycanal/detail/08e7ee52ff5b639aeb39347d3f850210/okapi/16871923_50261.json?detailType=detailPage&objectType=unit&broadcastID=PLM_1231194477_180018&fromDiff=true'
+    ) {
+      return Promise.resolve({
+        data: JSON.parse(fs.readFileSync(path.resolve(__dirname, '__data__/program2.json')))
       })
     } else {
       return Promise.resolve({ data: '' })
     }
   })
 
-  parser({ content })
+parser({ content })
     .then(result => {
-      result = result.map(p => {
+      result.map(p => {
         p.start = p.start.toJSON()
         p.stop = p.stop.toJSON()
         return p
@@ -125,13 +63,53 @@ it('can parse response', done => {
 
       expect(result).toMatchObject([
         {
-          start: '2022-08-18T03:55:00.000Z',
-          stop: '2022-08-18T04:45:00.000Z',
-          title: 'A petit pas',
-          icon: 'https://service.canal-overseas.com/image-api/v1/image/7dedf4a579b66153a1988637e9e023f5',
-          category: 'Doc. Animalier',
-          description:
-            'Suivi pendant une année entière de trois bébés animaux, un border collie, un poulain et un lémurien, prédestinés par leur maître à devenir de véritables champions.'
+          start: '2023-03-26T08:30:00.000Z',
+          stop: '2023-03-26T10:11:00.000Z',
+          title: 'Super Speed',
+          description: `Sur le déclin, l'écurie automobile Lions aimerait retrouver son prestige d'antan sur les circuits du championnat super pro de la ligue asiatique. Toute la pression repose sur Jeffery Lee et sur sa coéquipière Lili Lu, une jeune pilote promise à un bel avenir. Lorsque celle-ci est victime d'un accident, l'équipe recrute le gamer Jake Tu, un petit génie des simulateurs de course auto...`,
+          icon: 'https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/filters:quality({imageQualityPercentage})/img-hapi.canalplus.pro:80/ServiceImage/ImageID/107851690',
+          director: ['Yi-xian Chen'],
+          actors: [
+            'Hannah Quinlivan',
+            'Yu-Ning Tsao',
+            'Van Fan',
+            'Alan Ko',
+            'Ying-Hsuan Kao',
+            'Nolay Piho',
+            'Ken Lin',
+            'Jay Chou',
+            'Will Liu',
+            'Karry Wang',
+            'Evonne Hsu',
+            'Rio Peng'
+          ],
+          writer: [
+            'Yi-xian Chen',
+            'Jay Chern'
+          ],
+          rating: {
+            system: 'CSA',
+            value: ''
+          }
+        },
+        {
+          start: '2023-03-26T08:06:00.000Z',
+          stop: '2023-03-26T08:30:00.000Z',
+          title: 'Les enfants de Bohème',
+          description: `Idi et Rita vivent chez leur grand-mère, Manie. Idi essaye de conserver les souvenirs qu’ils ont de leur mère, en dessinant sur son cahier d’école. Par la force de leur désir, les enfants gardent le lien qu’ils ont à leur drôle de maman, malgré la séparation.`,
+          icon: 'https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/filters:quality({imageQualityPercentage})/img-hapi.canalplus.pro:80/ServiceImage/ImageID/102124410',
+          director: ['Judith Chemla'],
+          actors: [
+            'Ilion Thierrée',
+            'Gloria Manca',
+            'Yolande Moreau',
+            'Judith Chemla',
+          ],
+          writer: [''],
+          rating: {
+            system: 'CSA',
+            value: '-10'
+          }
         }
       ])
       done()
@@ -139,13 +117,8 @@ it('can parse response', done => {
     .catch(done)
 })
 
-it('can handle empty guide', done => {
-  parser({
-    content: `{"currentPage":{"displayTemplate":"error","BOName":"Page introuvable"},"title":"Page introuvable","text":"La page que vous demandez est introuvable. Si le problème persiste, vous pouvez contacter l'assistance de CANAL+/CANALSAT.","code":404}`
-  })
-    .then(result => {
-      expect(result).toMatchObject([])
-      done()
-    })
-    .catch(done)
+it('can handle empty guide', async () => {
+    const content = fs.readFileSync(path.resolve(__dirname, '__data__/no_content.json'))
+    const result = await parser({ content })
+    expect(result).toMatchObject([])
 })

@@ -1,0 +1,193 @@
+{
+	"currentPage": {
+	  "displayTemplate": "detailPage",
+	  "displayName": "Les enfants de Bohème",
+	  "path": "/bf/cinema/les-enfants-de-boheme/h/16871923_50261"
+	},
+	"meta": {
+	  "title": "Les enfants de Bohème",
+	  "description": "Idi et Rita vivent chez leur grand-mère, Manie. Idi essaye de conserver les souvenirs qu’ils ont de leur mère, en dessinant sur son cahier d’école. Par la force de leur désir, les enfants gardent le lien qu’ils ont à leur drôle de maman, malgré la séparation."
+	},
+	"tracking": {
+	  "omniture": {
+		"channel": "myCANAL",
+		"prop4": "myCANAL - Prog",
+		"prop5": "myCANAL - Prog - Fiche",
+		"prop6": "myCANAL - Prog - Fiche - Cinema",
+		"prop7": "myCANAL - Prog - Fiche - Cinema - Les enfants de Boheme",
+		"pageName": "myCANAL - Prog - Fiche - Cinema - Les enfants de Boheme",
+		"prop10": "Contenu",
+		"prop11": "DRM",
+		"content_protection": "DRM",
+		"prop12": "Consumer",
+		"eVar39": "16871923_50261",
+		"prop19": "CANAL+ AFRIQUE",
+		"prop32": "notInOffer",
+		"prop36": "Cinema",
+		"prop35": "Film Court metrage",
+		"content_title": "Les enfants de Boheme",
+		"page_level_1": "Prog",
+		"page_level_2": "Fiche",
+		"page_level_3": "Cinema",
+		"page_level_4": "Les enfants de Boheme",
+		"page_name": "myCANAL - Prog - Fiche - Cinema - Les enfants de Boheme",
+		"page_title": "Les enfants de Boheme",
+		"page_display_title": "Les enfants de Boheme",
+		"user_profile": "Consumer",
+		"content_id": "16871923_50261",
+		"content_in_offer": "notInOffer",
+		"genre": "Cinema",
+		"subgenre": "Film Court metrage",
+		"channel_name": "CANAL+ AFRIQUE"
+	  },
+	  "dataLayer": {
+		"page_level_1": "Prog",
+		"page_level_2": "Fiche",
+		"page_level_3": "Cinema",
+		"page_level_4": "Les enfants de Boheme",
+		"page_name": "myCANAL - Prog - Fiche - Cinema - Les enfants de Boheme",
+		"page_title": "Les enfants de Boheme",
+		"page_display_title": "Les enfants de Boheme",
+		"user_profile": "Consumer",
+		"content_id": "16871923_50261",
+		"content_in_offer": "notInOffer",
+		"genre": "Cinema",
+		"subgenre": "Film Court metrage",
+		"channel_name": "CANAL+ AFRIQUE",
+		"content_title": "Les enfants de Boheme",
+		"content_protection": "DRM"
+	  }
+	},
+	"detail": {
+	  "informations": {
+		"type": "VoD",
+		"contentID": "16871923_50261",
+		"idRevision": "16871923_50261",
+		"title": "Les enfants de Bohème",
+		"URLImage": "https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/filters:quality({imageQualityPercentage})/img-hapi.canalplus.pro:80/ServiceImage/ImageID/102124410",
+		"URLLogoChannel": "https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/filters:quality({imageQualityPercentage})/img-hapi.canalplus.pro:80/ServiceImage/ImageID/95019834",
+		"altLogoChannel": "CANAL+ AFRIQUE",
+		"summary": "Idi et Rita vivent chez leur grand-mère, Manie. Idi essaye de conserver les souvenirs qu’ils ont de leur mère, en dessinant sur son cahier d’école. Par la force de leur désir, les enfants gardent le lien qu’ils ont à leur drôle de maman, malgré la séparation.",
+		"isTVoD": false,
+		"audioLanguage": "VF",
+		"subtitle": "Film Court métrage",
+		"noPub": true,
+		"editorialTitle": "Film Court métrage, France, 2021, 20 min",
+		"sharingURL": "https://mycan.al/bf/cinema/les-enfants-de-boheme/h/16871923_50261",
+		"formats": {
+		  "video": [
+			"HD",
+			"SD"
+		  ],
+		  "audio": [
+			"MONO"
+		  ]
+		},
+		"URLVitrine": "https://hodor.canalplus.pro/api/v2/mycanal/highlight/08e7ee52ff5b639aeb39347d3f850210/objectType/unit/16871923_50261.json?previousPageName=myCANAL%20-%20Prog%20-%20Fiche%20-%20Cinema&adult=false&context_page_title=Content%20-%20See%20also%20-%20Les%20enfants%20de%20Boh%C3%A8me&omitTracking=true",
+		"closedCaptioning": false,
+		"consumptionPlatform": "HAPI",
+		"trailer": false,
+		"teasers": [],
+		"personnalities": [
+		  {
+			"prefix": "De :",
+			"personnalitiesList": [
+			  {
+				"title": "Judith Chemla",
+				"onClick": {
+				  "displayName": "Judith Chemla",
+				  "displayTemplate": "contentGrid",
+				  "URLPage": "https://hodor.canalplus.pro/api/v2/mycanal/contentGrid/08e7ee52ff5b639aeb39347d3f850210/12287.json?objectType=person&dsp=detailPage",
+				  "path": "/bf/personne/judith-chemla/12287"
+				}
+			  }
+			]
+		  },
+		  {
+			"prefix": "Avec :",
+			"personnalitiesList": [
+			  {
+				"title": "Ilion Thierrée",
+				"onClick": {
+				  "displayName": "Ilion Thierrée",
+				  "displayTemplate": "contentGrid",
+				  "URLPage": "https://hodor.canalplus.pro/api/v2/mycanal/contentGrid/08e7ee52ff5b639aeb39347d3f850210/47232930.json?objectType=person&dsp=detailPage",
+				  "path": "/bf/personne/ilion-thierree/47232930"
+				}
+			  },
+			  {
+				"title": "Gloria Manca",
+				"onClick": {
+				  "displayName": "Gloria Manca",
+				  "displayTemplate": "contentGrid",
+				  "URLPage": "https://hodor.canalplus.pro/api/v2/mycanal/contentGrid/08e7ee52ff5b639aeb39347d3f850210/47232931.json?objectType=person&dsp=detailPage",
+				  "path": "/bf/personne/gloria-manca/47232931"
+				}
+			  },
+			  {
+				"title": "Yolande Moreau",
+				"onClick": {
+				  "displayName": "Yolande Moreau",
+				  "displayTemplate": "contentGrid",
+				  "URLPage": "https://hodor.canalplus.pro/api/v2/mycanal/contentGrid/08e7ee52ff5b639aeb39347d3f850210/2425.json?objectType=person&dsp=detailPage",
+				  "path": "/bf/personne/yolande-moreau/2425"
+				}
+			  },
+			  {
+				"title": "Judith Chemla",
+				"onClick": {
+				  "displayName": "Judith Chemla",
+				  "displayTemplate": "contentGrid",
+				  "URLPage": "https://hodor.canalplus.pro/api/v2/mycanal/contentGrid/08e7ee52ff5b639aeb39347d3f850210/12287.json?objectType=person&dsp=detailPage",
+				  "path": "/bf/personne/judith-chemla/12287"
+				}
+			  },
+			  {
+				"title": "",
+				"onClick": {
+				  "displayName": "",
+				  "displayTemplate": "contentGrid"
+				}
+			  }
+			]
+		  }
+		],
+		"displayPersoButtons": true,
+		"parentalRatings": [
+		  {
+			"value": "2",
+			"authority": "CSA"
+		  }
+		],
+		"duration": "1200000",
+		"productionYear": "2021",
+		"contentAvailability": {
+		  "isInCatalog": true,
+		  "isInOffer": false,
+		  "availabilities": {
+			"download": {
+			  "consumptionPlatform": "HAPI",
+			  "isAvailable": true,
+			  "isInOffer": false,
+			  "URLMedias": "https://hodor.canalplus.pro/api/v2/mycanal/me/getMediaUrl/{tokenCMS}/okapi/16871923_50261.json"
+			},
+			"stream": {
+			  "consumptionPlatform": "HAPI",
+			  "isAvailable": false,
+			  "isInOffer": false,
+			  "URLMedias": "https://hodor.canalplus.pro/api/v2/mycanal/me/getMediaUrl/{tokenCMS}/okapi/16871923_50261.json"
+			},
+			"live": {
+			  "isInOffer": false,
+			  "isAvailable": true
+			}
+		  }
+		}
+	  }
+	},
+	"perso": [
+	  {
+		"platform": "HAPI"
+	  }
+	]
+  }

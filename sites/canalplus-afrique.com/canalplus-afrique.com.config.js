@@ -3,7 +3,7 @@ const axios = require('axios')
 
 // TODO: calculate API_KEY based on the current date
 // specific key for Canal + Afrique
-const API_KEY = 'c500bf0e7216fe10b1a6a26a0cd2c278' // 03.2023
+const API_KEY = '08e7ee52ff5b639aeb39347d3f850210' // 03.2023
 
 module.exports = {
   site: 'canalplus-afrique.com',
