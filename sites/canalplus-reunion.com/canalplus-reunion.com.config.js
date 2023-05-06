@@ -1,8 +1,10 @@
 const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
 
 dayjs.extend(utc)
+dayjs.extend(timezone)
 
 module.exports = {
   site: 'canalplus-reunion.com',
@@ -53,11 +55,11 @@ function parseIcon(item) {
   return item.URLImage || item.URLImageDefault
 }
 function parseStart(item) {
-  return dayjs.unix(item.startTime)
+  return dayjs.unix(item.startTime).tz("Indian/Reunion")
 }
 
 function parseStop(item) {
-  return dayjs.unix(item.endTime)
+  return dayjs.unix(item.endTime).tz("Indian/Reunion")
 }
 
 function parseItems(content) {
