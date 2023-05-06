@@ -76,11 +76,11 @@ function parseIcon(item) {
   return item.URLImage || item.URLImageDefault
 }
 function parseStart(item) {
-  return dayjs.unix(item.startTime).tz("America/Cayenne");
+  return dayjs.unix(item.startTime).tz("America/Cayenne")
 }
 
 function parseStop(item) {
-  return dayjs.unix(item.endTime).tz("America/Cayenne");
+  return dayjs.unix(item.endTime).tz("America/Cayenne")
 }
 
 function parseItems(content) {
