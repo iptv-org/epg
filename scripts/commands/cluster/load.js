@@ -35,7 +35,6 @@ async function main() {
   const total = items.length
 
   logger.info('Loading...')
-  let i = 1
   let totalPrograms = 0
   let config = require(file.resolve(items[0].configPath))
   config = _.merge(config, {
@@ -46,13 +45,13 @@ async function main() {
     }
   })
   const grabber = new EPGGrabber(config)
-  for (const item of items) {
-    const channel = new Channel(item.channel)
 
-    await new Promise(resolve => {
+  const grabPromises = items.map(async (item, index) => {
+    const channel = new Channel(item.channel)
+    const grabPromise = new Promise((resolve) => {
       grabber.grab(channel, item.date, async (data, err) => {
         logger.info(
-          `[${i}/${total}] ${channel.site} (${channel.lang}) - ${channel.id} - ${dayjs
+          `[${index + 1}/${total}] ${channel.site} (${channel.lang}) - ${channel.id} - ${dayjs
             .utc(data.date)
             .format('MMM D, YYYY')} (${data.programs.length} programs)`
         )
@@ -69,12 +68,13 @@ async function main() {
 
         totalPrograms += data.programs.length
 
-        if (i < total) i++
-
         resolve()
       })
     })
-  }
+    return await grabPromise
+  })
+
+  await Promise.all(grabPromises)
 
   db.queue.compact()
 
@@ -85,5 +85,4 @@ async function main() {
     process.exit(1)
   }
 }
-
 main()
