@@ -18,8 +18,8 @@
   "author": "Arhey",
   "license": "MIT",
   "jest": {
-    "testPathIgnorePatterns": [
-      ".jenkins"
+    "modulePathIgnorePatterns": [
+      "<rootDir>/.jenkins/"
     ],
     "testRegex": "(sites|tests)/(.*?/)?.*test.js$",
     "setupFilesAfterEnv": [
