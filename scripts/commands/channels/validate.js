@@ -26,27 +26,27 @@ async function main() {
     const bufferBySiteId = {}
     const errors = []
     for (const channel of channels) {
-      if (!bufferById[channel.id + channel.lang]) {
-        bufferById[channel.id + channel.lang] = channel
+      if (!bufferById[channel.xmltv_id + channel.lang]) {
+        bufferById[channel.xmltv_id + channel.lang] = channel
       } else {
-        errors.push({ type: 'duplicate', xmltv_id: channel.id, ...channel })
+        errors.push({ type: 'duplicate', ...channel })
         stats.errors++
       }
 
       if (!bufferBySiteId[channel.site_id + channel.lang]) {
         bufferBySiteId[channel.site_id + channel.lang] = channel
       } else {
-        errors.push({ type: 'duplicate', xmltv_id: channel.id, ...channel })
+        errors.push({ type: 'duplicate', ...channel })
         stats.errors++
       }
 
-      if (!api.channels.find({ id: channel.id })) {
-        errors.push({ type: 'wrong_xmltv_id', xmltv_id: channel.id, ...channel })
+      if (!api.channels.find({ id: channel.xmltv_id })) {
+        errors.push({ type: 'wrong_xmltv_id', ...channel })
         stats.errors++
       }
 
       if (!langs.where('1', channel.lang)) {
-        errors.push({ type: 'wrong_lang', xmltv_id: channel.id, ...channel })
+        errors.push({ type: 'wrong_lang', ...channel })
         stats.errors++
       }
     }

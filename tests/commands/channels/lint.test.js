@@ -13,7 +13,7 @@ it('will show a message if the file contains a syntax error', () => {
   } catch (err) {
     expect(err.status).toBe(1)
     expect(err.stdout).toBe(
-      `\n> channels:lint\n> node scripts/commands/channels/lint.js\n\n\ntests/__data__/input/sites/lint.channels.xml\n 4:0  Element 'channel': The attribute 'lang' is required but missing.\n\n1 error(s)\n`
+      `\n> channels:lint\n> node scripts/commands/channels/lint.js tests/__data__/input/sites/lint.channels.xml\n\n\ntests/__data__/input/sites/lint.channels.xml\n 4:0  Element 'channel': The attribute 'lang' is required but missing.\n\n1 error(s)\n`
     )
   }
 })
