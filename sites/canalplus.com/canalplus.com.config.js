@@ -34,7 +34,7 @@ module.exports = {
         writer: parseCast(info,"Scénario :"),
         composer: parseCast(info,"Musique :"),
         presenter: parseCast(info,"Présenté par :"),
-        date: paseDate(info),
+        date: parseDate(info),
         rating: parseRating(info),
         start,
         stop
@@ -108,7 +108,7 @@ function parseCast(info, type) {
   return people
 }
 
-function paseDate(info) {
+function parseDate(info) {
   return (info && info.productionYear) ? info.productionYear : null
 }
 
