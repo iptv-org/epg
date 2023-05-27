@@ -5,28 +5,22 @@
     "channels:lint": "node scripts/commands/channels/lint.js",
     "channels:parse": "node scripts/commands/channels/parse.js",
     "channels:editor": "node scripts/commands/channels/editor.js",
-    "queue:create": "node scripts/commands/queue/create.js",
-    "cluster:load": "node scripts/commands/cluster/load.js",
-    "db:load": "node scripts/commands/database/load.js",
-    "programs:save": "node scripts/commands/programs/save.js",
-    "guides:update": "NODE_OPTIONS=--max-old-space-size=5120 node scripts/commands/guides/update.js",
     "api:load": "./scripts/commands/api/load.sh",
-    "api:update": "node scripts/commands/api/update.js",
-    "readme:update": "node scripts/commands/readme/update.js",
     "lint": "npx eslint ./scripts/**/*.js",
     "test": "TZ=Pacific/Nauru npx jest --runInBand",
     "test:commands": "npx jest --runInBand -- commands",
     "test:sites": "TZ=Pacific/Nauru npx jest --runInBand -- sites",
-    "act:test": "act workflow_dispatch -W .github/workflows/_test.yml",
-    "act:check": "act workflow_dispatch -W .github/workflows/_check.yml",
-    "act:update-readme": "act workflow_dispatch -W .github/workflows/_update-readme.yml",
-    "act:update-status": "act workflow_dispatch -W .github/workflows/_update-status.yml",
-    "act:update-api": "act workflow_dispatch -W .github/workflows/_update-api.yml"
+    "check": "npm run api:load && npm run channels:lint sites/**/*.js && npm run channels:validate sites/**/*.xml",
+    "grab": "npx epg-grabber --config=sites/${SITE}/${SITE}.config.js --channels=sites/${SITE}/${SITE}.channels.xml --output=guides/{lang}/{site}.xml",
+    "serve": "npx serve"
   },
   "private": true,
   "author": "Arhey",
   "license": "MIT",
   "jest": {
+    "testPathIgnorePatterns": [
+      ".jenkins"
+    ],
     "testRegex": "(sites|tests)/(.*?/)?.*test.js$",
     "setupFilesAfterEnv": [
       "@alex_neo/jest-expect-message"
@@ -41,7 +35,7 @@
     "commander": "^8.2.0",
     "csv-parser": "^3.0.0",
     "dayjs": "^1.10.8",
-    "epg-grabber": "^0.29.7",
+    "epg-grabber": "^0.30.2",
     "epg-parser": "^0.2.0",
     "form-data": "^4.0.0",
     "fs-extra": "^10.0.1",
@@ -59,6 +53,7 @@
     "node-gzip": "^1.1.2",
     "parse-duration": "^1.0.0",
     "pdf-parse": "^1.1.1",
+    "serve": "^14.2.0",
     "signale": "^1.4.0",
     "srcset": "^4.0.0",
     "table2array": "^0.0.2",

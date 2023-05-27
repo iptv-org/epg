@@ -1,8 +1,0 @@
-name: _trigger
-on:
-  workflow_dispatch:
-jobs:
-  start:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo 'Starting all workflows...'

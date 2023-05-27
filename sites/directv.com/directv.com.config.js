@@ -11,7 +11,11 @@ module.exports = {
   request: {
     cache: {
       ttl: 60 * 60 * 1000 // 1 hour
-    }
+    },
+    headers: {
+      'Accept-Language':'en-US,en;q=0.5',
+      'Connection':'keep-alive',
+    },
   },
   url({ date, channel }) {
     const [channelId, childId] = channel.site_id.split('#')
