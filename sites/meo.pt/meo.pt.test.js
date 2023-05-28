@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/meo.pt/meo.pt.config.js --channels=sites/meo.pt/meo.pt.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/meo.pt/meo.pt.config.js --channels=sites/meo.pt/meo.pt.channels.xml --output=guide.xml
 
 const { parser, url, request } = require('./meo.pt.config.js')
 const fs = require('fs')
@@ -17,12 +17,18 @@ const channel = {
 
 it('can generate valid url', () => {
   expect(url).toBe(
-    'https://www.meo.pt/_layouts/15/Ptsi.Isites.GridTv/GridTvMng.asmx/getProgramsFromChannels'
+    'https://authservice.apps.meo.pt/Services/GridTv/GridTvMng.svc/getProgramsFromChannels'
   )
 })
 
 it('can generate valid request method', () => {
   expect(request.method).toBe('POST')
+})
+
+it('can generate valid request headers', () => {
+  expect(request.headers).toMatchObject({
+    Origin: 'https://www.meo.pt'
+  })
 })
 
 it('can generate valid request method', () => {
@@ -38,14 +44,14 @@ it('can generate valid request method', () => {
 it('can parse response', () => {
   const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'))
   let results = parser({ content }).map(p => {
-    p.start = p.start.toJSON()
-    p.stop = p.stop.toJSON()
+    p.start = p.start.toISO()
+    p.stop = p.stop.toISO()
     return p
   })
 
   expect(results[0]).toMatchObject({
-    start: '2022-12-01T23:35:00.000Z',
-    stop: '2022-12-02T00:17:00.000Z',
+    start: '2022-12-01T23:35:00.000+00:00',
+    stop: '2022-12-02T00:17:00.000+00:00',
     title: 'Walker, O Ranger Do Texas T6 - Ep. 14'
   })
 })
