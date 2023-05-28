@@ -17,7 +17,7 @@ __IMPORTANT:__ We are no longer able to provide pre-made guides due to the disab
 
 ## How to use?
 
-To download the guide you must have [Node.js](https://nodejs.org/en) installed on your computer first.
+To download the guide from one of the supported sites you must have [Node.js](https://nodejs.org/en) installed on your computer first.
 
 You will also need to install [Git](https://git-scm.com/downloads) to follow these instructions.
 
