@@ -44,14 +44,14 @@ it('can generate valid request method', () => {
 it('can parse response', () => {
   const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'))
   let results = parser({ content }).map(p => {
-    p.start = p.start.toISO()
-    p.stop = p.stop.toISO()
+    p.start = p.start.toJSON()
+    p.stop = p.stop.toJSON()
     return p
   })
 
   expect(results[0]).toMatchObject({
-    start: '2022-12-01T23:35:00.000+00:00',
-    stop: '2022-12-02T00:17:00.000+00:00',
+    start: '2022-12-01T23:35:00.000Z',
+    stop: '2022-12-02T00:17:00.000Z',
     title: 'Walker, O Ranger Do Texas T6 - Ep. 14'
   })
 })
