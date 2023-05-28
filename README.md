@@ -45,7 +45,7 @@ Now choose one of the sources (their complete list can be found in the [/sites](
 SITE=example.com npm run grab
 ```
 
-After the download is completed in the current directory will appear a new folder `guides`, which will store our XML files:
+After the download is completed in the current directory will appear a new folder `guides`, which will store all XML files:
 
 ```sh
 guides
