@@ -5,7 +5,6 @@ const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
 
 dayjs.extend(utc)
-dayjs.extend(timezone)
 
 module.exports = {
   site: 'canalplus-caraibes.com',
@@ -76,11 +75,11 @@ function parseIcon(item) {
   return item.URLImage || item.URLImageDefault
 }
 function parseStart(item) {
-  return dayjs.unix(item.startTime).tz("America/Cayenne")
+  return dayjs.unix(item.startTime)
 }
 
 function parseStop(item) {
-  return dayjs.unix(item.endTime).tz("America/Cayenne")
+  return dayjs.unix(item.endTime)
 }
 
 function parseItems(content) {
