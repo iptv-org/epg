@@ -42,13 +42,13 @@ module.exports = {
 function parseStart(item) {
   return DateTime.fromFormat(`${item.date} ${item.timeIni}`, 'd-M-yyyy HH:mm', {
     zone: 'Europe/Lisbon'
-  })
+  }).toUTC()
 }
 
 function parseStop(item) {
   return DateTime.fromFormat(`${item.date} ${item.timeEnd}`, 'd-M-yyyy HH:mm', {
     zone: 'Europe/Lisbon'
-  })
+  }).toUTC()
 }
 
 function parseItems(content) {
