@@ -1,53 +1,49 @@
-const dayjs = require('dayjs')
-const utc = require('dayjs/plugin/utc')
-const timezone = require('dayjs/plugin/timezone')
-const customParseFormat = require('dayjs/plugin/customParseFormat')
-
-dayjs.extend(utc)
-dayjs.extend(timezone)
-dayjs.extend(customParseFormat)
+const { DateTime } = require('luxon')
+const axios = require('axios')
 
 module.exports = {
-  skip: true, // NOTE: Connection timeout
   site: 'zap.co.ao',
   days: 2,
+  maxConnections: 200,
   url: function ({ date, channel }) {
-    return `https://www.zap.co.ao/_api/channels/${date.format('YYYY-M-D')}/epg.json`
+    return `https://zapon.zapsi.net/ao/m/api/epg/events?date=${date.format('YYYYMMDD')}&channel=${
+      channel.site_id
+    }`
   },
-  parser: function ({ content, channel, date }) {
+  parser: function ({ content }) {
     const programs = []
-    const items = parseItems(content, channel)
+    const items = parseItems(content)
     if (!items.length) return programs
     items.forEach(item => {
-      const prev = programs[programs.length - 1]
-      let start = parseStart(item, date)
-      if (prev && start.isBefore(prev.start)) {
-        start = start.add(1, 'd')
-        date = date.add(1, 'd')
-      }
-      const stop = start.add(item.duration, 's')
       programs.push({
-        title: item.name,
-        description: item.sinopse,
-        start,
-        stop
+        title: item.programName,
+        description: item.programDescription,
+        category: item.categoryName,
+        start: DateTime.fromSeconds(item.utcBeginDate).toUTC(),
+        stop: DateTime.fromSeconds(item.utcEndDate).toUTC()
       })
     })
 
     return programs
+  },
+  async channels() {
+    const channels = await axios
+      .get(`https://zapon.zapsi.net/ao/m/api/epg/channels`)
+      .then(r => r.data.data)
+      .catch(console.log)
+
+    return channels.map(item => {
+      return {
+        lang: 'pt',
+        site_id: item.id,
+        name: item.name
+      }
+    })
   }
 }
 
-function parseItems(content, channel) {
-  const channels = JSON.parse(content)
-  const data = channels.find(ch => ch.id == channel.site_id)
+function parseItems(content) {
+  const data = JSON.parse(content)
 
-  return data ? data.epg : []
-}
-
-function parseStart(item, date) {
-  const [hours, minutes] = item.start_time.split('h')
-  const dateString = `${date.format('YYYY-MM-DD')} ${hours}:${minutes}`
-
-  return dayjs.tz(dateString, 'YYYY-MM-DD HH:mm', 'Africa/Luanda')
+  return data.data || []
 }
