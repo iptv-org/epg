@@ -1,5 +1,5 @@
 // npm run channels:parse -- --config=sites/wavve.com/wavve.com.config.js --output=sites/wavve.com/wavve.com.channels.xml
-// npx epg-grabber --config=sites/wavve.com/wavve.com.config.js --channels=sites/wavve.com/wavve.com.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/wavve.com/wavve.com.config.js --channels=sites/wavve.com/wavve.com.channels.xml --output=guide.xml
 
 const { parser, url } = require('./wavve.com.config.js')
 const dayjs = require('dayjs')
