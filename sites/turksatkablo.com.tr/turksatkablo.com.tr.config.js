@@ -1,14 +1,6 @@
-const dayjs = require('dayjs')
-const utc = require('dayjs/plugin/utc')
-const timezone = require('dayjs/plugin/timezone')
-const customParseFormat = require('dayjs/plugin/customParseFormat')
-
-dayjs.extend(utc)
-dayjs.extend(timezone)
-dayjs.extend(customParseFormat)
+const { DateTime } = require('luxon')
 
 module.exports = {
-  skip: true, // Error: Connection timeout
   site: 'turksatkablo.com.tr',
   days: 2,
   url: function ({ date }) {
@@ -23,13 +15,13 @@ module.exports = {
     items.forEach(item => {
       const prev = programs[programs.length - 1]
       let start = parseStart(item, date)
-      if (prev && start.isBefore(prev.start)) {
-        start = start.add(1, 'd')
+      if (prev && start < prev.start) {
+        start = start.plus({ days: 1 })
         date = date.add(1, 'd')
       }
       let stop = parseStop(item, date)
-      if (prev && stop.isBefore(start)) {
-        stop = stop.add(1, 'd')
+      if (prev && stop < start) {
+        stop = stop.plus({ days: 1 })
         date = date.add(1, 'd')
       }
       programs.push({
@@ -46,13 +38,13 @@ module.exports = {
 function parseStart(item, date) {
   const time = `${date.format('YYYY-MM-DD')} ${item.c}`
 
-  return dayjs.tz(time, 'YYYY-MM-DD HH:mm', 'Europe/Istanbul')
+  return DateTime.fromFormat(time, 'yyyy-MM-dd HH:mm', { zone: 'Europe/Istanbul' }).toUTC()
 }
 
 function parseStop(item, date) {
   const time = `${date.format('YYYY-MM-DD')} ${item.d}`
 
-  return dayjs.tz(time, 'YYYY-MM-DD HH:mm', 'Europe/Istanbul')
+  return DateTime.fromFormat(time, 'yyyy-MM-dd HH:mm', { zone: 'Europe/Istanbul' }).toUTC()
 }
 
 function parseItems(content, channel) {
