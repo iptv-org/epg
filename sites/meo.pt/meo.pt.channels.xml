@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site site="meo.pt">
   <channels>
-    <channel lang="en" xmltv_id="EuronewsGerman.fr" site_id="EURNA">EuroNews Deutsch</channel>
-    <channel lang="en" xmltv_id="France24English.fr" site_id="FR24I">France 24 English</channel>
-    <channel lang="en" xmltv_id="KBSWorld.kr" site_id="KBS">KBS World</channel>
-    <channel lang="en" xmltv_id="MTV00s.uk" site_id="MTV00S">MTV 00s</channel>
-    <channel lang="en" xmltv_id="MTVLive.uk" site_id="MTVLIVE">MTV Live HD</channel>
-    <channel lang="en" xmltv_id="NHKWorldJapan.jp" site_id="NHKHD">NHK World Japan</channel>
-    <channel lang="en" xmltv_id="SkyNewsInternational.uk" site_id="SKYN">Sky News</channel>
-    <channel lang="en" xmltv_id="TPAInternacional.ao" site_id="TPA">TPA</channel>
-    <channel lang="en" xmltv_id="TRTWorld.tr" site_id="TRTWHD">TRT World</channel>
     <channel lang="pt" xmltv_id="24KitchenPortugal.pt" site_id="24KITC">24 Kitchen</channel>
     <channel lang="pt" xmltv_id="3sat.de" site_id="3SAT">3sat</channel>
     <channel lang="pt" xmltv_id="ABolaTV.pt" site_id="ABOLA">A Bola TV</channel>
@@ -78,6 +69,7 @@
     <channel lang="pt" xmltv_id="Eleven5Portugal.pt" site_id="ELEVEN5">Eleven 5</channel>
     <channel lang="pt" xmltv_id="Eleven6Portugal.pt" site_id="ELEVEN6">Eleven 6</channel>
     <channel lang="pt" xmltv_id="EuronewsEnglish.fr" site_id="EURNI">EuroNews English</channel>
+    <channel lang="en" xmltv_id="EuronewsGerman.fr" site_id="EURNA">EuroNews Deutsch</channel>
     <channel lang="pt" xmltv_id="EuronewsPortuguese.fr" site_id="EURN">EuroNews</channel>
     <channel lang="pt" xmltv_id="Eurosport1.fr" site_id="EURSP">Eurosport 1</channel>
     <channel lang="pt" xmltv_id="Eurosport2.fr" site_id="EURS2">Eurosport 2</channel>
@@ -89,6 +81,7 @@
     <channel lang="pt" xmltv_id="FoxMoviesPortugal.pt" site_id="FOXM">Fox Movies</channel>
     <channel lang="pt" xmltv_id="FoxPortugal.pt" site_id="FOX">Fox</channel>
     <channel lang="pt" xmltv_id="France2.fr" site_id="FR2HD">France 2</channel>
+    <channel lang="en" xmltv_id="France24English.fr" site_id="FR24I">France 24 English</channel>    
     <channel lang="pt" xmltv_id="France24French.fr" site_id="FR24F">France 24 Français</channel>
     <channel lang="pt" xmltv_id="France3.fr" site_id="FR3HD">France 3</channel>
     <channel lang="pt" xmltv_id="France5.fr" site_id="FR5HD">France 5</channel>
@@ -104,6 +97,7 @@
     <channel lang="pt" xmltv_id="I24NewsFrench.il" site_id="I24F">I24 News Français</channel>
     <channel lang="pt" xmltv_id="InterPlus.ua" site_id="IHTEP">Inter +</channel>
     <channel lang="pt" xmltv_id="JimJamEurope.uk" site_id="JJAM">JimJam</channel>
+    <channel lang="en" xmltv_id="KBSWorld.kr" site_id="KBS">KBS World</channel>    
     <channel lang="pt" xmltv_id="KIKA.de" site_id="KIKA">KIKA</channel>
     <channel lang="pt" xmltv_id="KuriakosTV.pt" site_id="KURIAKO">Kuriakos TV</channel>
     <channel lang="pt" xmltv_id="LocalVisaoTV.pt" site_id="LVTV">LocalVisão TV</channel>
@@ -113,10 +107,13 @@
     <channel lang="pt" xmltv_id="MCMTop.fr" site_id="MCM T">MCM Top</channel>
     <channel lang="pt" xmltv_id="Mezzo.fr" site_id="MEZZO">Mezzo</channel>
     <channel lang="pt" xmltv_id="MezzoLiveHD.fr" site_id="MEZHD">Mezzo Live HD</channel>
+    <channel lang="en" xmltv_id="MTV00s.uk" site_id="MTV00S">MTV 00s</channel>
+    <channel lang="en" xmltv_id="MTVLive.uk" site_id="MTVLIVE">MTV Live HD</channel>    
     <channel lang="pt" xmltv_id="MTVPortugal.pt" site_id="MTV">MTV</channel>
     <channel lang="pt" xmltv_id="NationalGeographicPortugal.pt" site_id="NGC">National Geographic</channel>
     <channel lang="pt" xmltv_id="NationalGeographicWildPortugal.pt" site_id="WILD">National Geographic Wild</channel>
     <channel lang="pt" xmltv_id="NBATV.us" site_id="NBATVHD">NBA TV</channel>
+    <channel lang="en" xmltv_id="NHKWorldJapan.jp" site_id="NHKHD">NHK World Japan</channel>    
     <channel lang="pt" xmltv_id="NickelodeonSpain.es" site_id="NICKELO">Nickelodeon</channel>
     <channel lang="pt" xmltv_id="Odisseia.pt" site_id="ODISS">Odisseia</channel>
     <channel lang="pt" xmltv_id="PandaKids.pt" site_id="PANDAK">Panda Kids</channel>
@@ -151,6 +148,7 @@
     <channel lang="pt" xmltv_id="SICMulher.pt" site_id="SICM">SIC Mulher</channel>
     <channel lang="pt" xmltv_id="SICNoticias.pt" site_id="SICN">SIC Notícias</channel>
     <channel lang="pt" xmltv_id="SICRadical.pt" site_id="SICR">SIC Radical</channel>
+    <channel lang="en" xmltv_id="SkyNewsInternational.uk" site_id="SKYN">Sky News</channel>    
     <channel lang="pt" xmltv_id="SolMusica.es" site_id="SOLMUSI">Sol Música</channel>
     <channel lang="pt" xmltv_id="Somos.es" site_id="SOMOS">Somos</channel>
     <channel lang="pt" xmltv_id="SonyEntertainmentTelevisionAsia.uk" site_id="SETAS">SET Asia</channel>
@@ -176,9 +174,11 @@
     <channel lang="pt" xmltv_id="Telesur.ve" site_id="TELESUR">Telesur</channel>
     <channel lang="pt" xmltv_id="TLCPortugal.pt" site_id="TLC">TLC</channel>
     <channel lang="pt" xmltv_id="Toros.es" site_id="TOROTV">Toros TV</channel>
+    <channel lang="en" xmltv_id="TPAInternacional.ao" site_id="TPA">TPA</channel>
     <channel lang="pt" xmltv_id="TraceBrazuca.fr" site_id="TRACEBR">Trace Brazuca</channel>
     <channel lang="pt" xmltv_id="TraceToca.fr" site_id="TRACETC">Trace Toca</channel>
     <channel lang="pt" xmltv_id="TraceUrban.fr" site_id="TRACE">Trace Urban</channel>
+    <channel lang="en" xmltv_id="TRTWorld.tr" site_id="TRTWHD">TRT World</channel>    
     <channel lang="pt" xmltv_id="TV2.no" site_id="NLOTV2">TV 2</channel>
     <channel lang="pt" xmltv_id="TV5MondeEurope.fr" site_id="TV5">TV5Monde Europe</channel>
     <channel lang="pt" xmltv_id="TVCancaoNovaPortugal.pt" site_id="CNOVA">TV Canção Nova</channel>
