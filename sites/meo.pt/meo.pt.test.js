@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/meo.pt/meo.pt.config.js --channels=sites/meo.pt/meo.pt.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/meo.pt/meo.pt.config.js --channels=sites/meo.pt/meo.pt.channels.xml --output=guide.xml
 
 const { parser, url, request } = require('./meo.pt.config.js')
 const fs = require('fs')
@@ -17,12 +17,18 @@ const channel = {
 
 it('can generate valid url', () => {
   expect(url).toBe(
-    'https://www.meo.pt/_layouts/15/Ptsi.Isites.GridTv/GridTvMng.asmx/getProgramsFromChannels'
+    'https://authservice.apps.meo.pt/Services/GridTv/GridTvMng.svc/getProgramsFromChannels'
   )
 })
 
 it('can generate valid request method', () => {
   expect(request.method).toBe('POST')
+})
+
+it('can generate valid request headers', () => {
+  expect(request.headers).toMatchObject({
+    Origin: 'https://www.meo.pt'
+  })
 })
 
 it('can generate valid request method', () => {

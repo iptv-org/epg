@@ -1,18 +1,14 @@
-const dayjs = require('dayjs')
-const utc = require('dayjs/plugin/utc')
-const customParseFormat = require('dayjs/plugin/customParseFormat')
-const timezone = require('dayjs/plugin/timezone')
-
-dayjs.extend(utc)
-dayjs.extend(customParseFormat)
-dayjs.extend(timezone)
+const { DateTime } = require('luxon')
 
 module.exports = {
   site: 'meo.pt',
   days: 2,
-  url: `https://www.meo.pt/_layouts/15/Ptsi.Isites.GridTv/GridTvMng.asmx/getProgramsFromChannels`,
+  url: `https://authservice.apps.meo.pt/Services/GridTv/GridTvMng.svc/getProgramsFromChannels`,
   request: {
     method: 'POST',
+    headers: {
+      Origin: 'https://www.meo.pt'
+    },
     data: function ({ channel, date }) {
       return {
         service: 'channelsguide',
@@ -29,8 +25,8 @@ module.exports = {
     items.forEach(item => {
       const start = parseStart(item)
       let stop = parseStop(item)
-      if (stop.isBefore(start)) {
-        stop = stop.add(1, 'd')
+      if (stop < start) {
+        stop = stop.plus({ days: 1 })
       }
       programs.push({
         title: item.name,
@@ -44,11 +40,15 @@ module.exports = {
 }
 
 function parseStart(item) {
-  return dayjs.tz(`${item.date} ${item.timeIni}`, 'D-M-YYYY HH:mm', 'Europe/Lisbon')
+  return DateTime.fromFormat(`${item.date} ${item.timeIni}`, 'd-M-yyyy HH:mm', {
+    zone: 'Europe/Lisbon'
+  }).toUTC()
 }
 
 function parseStop(item) {
-  return dayjs.tz(`${item.date} ${item.timeEnd}`, 'D-M-YYYY HH:mm', 'Europe/Lisbon')
+  return DateTime.fromFormat(`${item.date} ${item.timeEnd}`, 'd-M-yyyy HH:mm', {
+    zone: 'Europe/Lisbon'
+  }).toUTC()
 }
 
 function parseItems(content) {
