@@ -1,17 +1,11 @@
 const cheerio = require('cheerio')
 const axios = require('axios')
-const dayjs = require('dayjs')
-const utc = require('dayjs/plugin/utc')
-const timezone = require('dayjs/plugin/timezone')
-const customParseFormat = require('dayjs/plugin/customParseFormat')
-
-dayjs.extend(utc)
-dayjs.extend(timezone)
-dayjs.extend(customParseFormat)
+const { DateTime } = require('luxon')
 
 module.exports = {
   site: 'tvhebdo.com',
   days: 2,
+  timeout: 30000, // 30s
   url: function ({ channel, date }) {
     return `https://www.tvhebdo.com/horaire-tele/${channel.site_id}/date/${date.format(
       'YYYY-MM-DD'
@@ -25,12 +19,12 @@ module.exports = {
       const $item = cheerio.load(item)
       let start = parseStart($item, date)
       if (prev) {
-        if (start.isBefore(prev.start)) {
-          start = start.add(1, 'd')
+        if (start < prev.start) {
+          start = start.plus({ days: 1 })
         }
         prev.stop = start
       }
-      let stop = start.add(30, 'm')
+      let stop = start.plus({ minutes: 30 })
       programs.push({
         title: parseTitle($item),
         start,
@@ -87,7 +81,9 @@ function parseTitle($item) {
 function parseStart($item, date) {
   const time = $item('.heure').text()
 
-  return dayjs.tz(`${date.format('YYYY-MM-DD')} ${time}`, 'YYYY-MM-DD HH:mm', 'America/Toronto')
+  return DateTime.fromFormat(`${date.format('YYYY-MM-DD')} ${time}`, 'yyyy-MM-dd HH:mm', {
+    zone: 'America/Toronto'
+  }).toUTC()
 }
 
 function parseItems(content) {
