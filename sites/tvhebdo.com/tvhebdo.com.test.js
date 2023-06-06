@@ -1,5 +1,5 @@
 // npm run channels:parse -- --config=./sites/tvhebdo.com/tvhebdo.com.config.js --output=./sites/tvhebdo.com/tvhebdo.com.channels.xml
-// npx epg-grabber --config=sites/tvhebdo.com/tvhebdo.com.config.js --channels=sites/tvhebdo.com/tvhebdo.com.channels.xml --output=guide.xml --timeout=30000 --days=2
+// npx epg-grabber --config=sites/tvhebdo.com/tvhebdo.com.config.js --channels=sites/tvhebdo.com/tvhebdo.com.channels.xml --output=guide.xml
 
 const { parser, url } = require('./tvhebdo.com.config.js')
 const fs = require('fs')
