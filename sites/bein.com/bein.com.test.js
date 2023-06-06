@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/bein.com/bein.com.config.js --channels=sites/bein.com/bein.com.channels.xml --output=guide.xml --timeout=30000 --days=2
+// npx epg-grabber --config=sites/bein.com/bein.com.config.js --channels=sites/bein.com/bein.com.channels.xml --output=guide.xml
 
 const fs = require('fs')
 const path = require('path')
