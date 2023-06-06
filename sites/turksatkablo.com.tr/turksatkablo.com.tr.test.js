@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/turksatkablo.com.tr/turksatkablo.com.tr.config.js --channels=sites/turksatkablo.com.tr/turksatkablo.com.tr.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/turksatkablo.com.tr/turksatkablo.com.tr.config.js --channels=sites/turksatkablo.com.tr/turksatkablo.com.tr.channels.xml --output=guide.xml
 
 const { parser, url } = require('./turksatkablo.com.tr.config.js')
 const dayjs = require('dayjs')
