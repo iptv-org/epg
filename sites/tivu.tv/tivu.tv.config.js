@@ -1,12 +1,6 @@
 const dayjs = require('dayjs')
 const cheerio = require('cheerio')
-const utc = require('dayjs/plugin/utc')
-const timezone = require('dayjs/plugin/timezone')
-const customParseFormat = require('dayjs/plugin/customParseFormat')
-
-dayjs.extend(utc)
-dayjs.extend(timezone)
-dayjs.extend(customParseFormat)
+const { DateTime } = require('luxon')
 
 module.exports = {
   site: 'tivu.tv',
@@ -17,7 +11,7 @@ module.exports = {
     }
   },
   url({ date }) {
-    const diff = date.diff(dayjs.utc().startOf('d'), 'd')
+    const diff = date.diff(DateTime.now().toUTC().startOf('day'), 'd')
 
     return `https://www.tivu.tv/epg_ajax_sat.aspx?d=${diff}`
   },
@@ -30,13 +24,13 @@ module.exports = {
       let start = parseStart($item, date)
       if (!start) return
       if (prev) {
-        if (start.isBefore(prev.start)) {
-          start = start.add(1, 'd')
+        if (start < prev.start) {
+          start = start.plus({ days: 1 })
           date = date.add(1, 'd')
         }
         prev.stop = start
       }
-      const stop = start.add(30, 'm')
+      const stop = start.plus({ minutes: 30 })
       programs.push({
         title: parseTitle($item),
         start,
@@ -58,7 +52,9 @@ function parseStart($item, date) {
   const [_, __, time] = $item('a').html().split('<br>')
   if (!time) return null
 
-  return dayjs.tz(`${date.format('YYYY-MM-DD')} ${time}`, 'YYYY-MM-DD HH:mm', 'Europe/Rome')
+  return DateTime.fromFormat(`${date.format('YYYY-MM-DD')} ${time}`, 'yyyy-MM-dd HH:mm', {
+    zone: 'Europe/Rome'
+  }).toUTC()
 }
 
 function parseItems(content, channel, date) {
