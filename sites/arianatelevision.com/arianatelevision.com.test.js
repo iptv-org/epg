@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/arianatelevision.com/arianatelevision.com.config.js --channels=sites/arianatelevision.com/arianatelevision.com.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/arianatelevision.com/arianatelevision.com.config.js --channels=sites/arianatelevision.com/arianatelevision.com.channels.xml --output=guide.xml
 
 const { parser, url } = require('./arianatelevision.com.config.js')
 const dayjs = require('dayjs')
