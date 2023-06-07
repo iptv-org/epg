@@ -1,13 +1,5 @@
 const cheerio = require('cheerio')
-const dayjs = require('dayjs')
-const utc = require('dayjs/plugin/utc')
-const timezone = require('dayjs/plugin/timezone')
-const customParseFormat = require('dayjs/plugin/customParseFormat')
-require('dayjs/locale/ca')
-
-dayjs.extend(utc)
-dayjs.extend(timezone)
-dayjs.extend(customParseFormat)
+const { DateTime } = require('luxon')
 
 module.exports = {
   site: 'andorradifusio.ad',
@@ -22,13 +14,13 @@ module.exports = {
       const prev = programs[programs.length - 1]
       let start = parseStart(item, date)
       if (prev) {
-        if (start.isBefore(prev.start)) {
-          start = start.add(1, 'd')
+        if (start < prev.start) {
+          start = start.plus({ days: 1 })
           date = date.add(1, 'd')
         }
         prev.stop = start
       }
-      const stop = start.add(1, 'h')
+      const stop = start.plus({ hours: 1 })
       programs.push({
         title: item.title,
         start,
@@ -43,15 +35,16 @@ module.exports = {
 function parseStart(item, date) {
   const dateString = `${date.format('MM/DD/YYYY')} ${item.time}`
 
-  return dayjs.tz(dateString, 'MM/DD/YYYY HH:mm', 'Europe/Madrid')
+  return DateTime.fromFormat(dateString, 'MM/dd/yyyy HH:mm', { zone: 'Europe/Madrid' }).toUTC()
 }
 
 function parseItems(content, date) {
   const $ = cheerio.load(content)
-  const dayOfWeek = dayjs(date).locale('ca').format('dddd').toLowerCase()
-  const column = $('.programacio-dia > h3')
-    .filter((i, el) => $(el).text().startsWith(dayOfWeek))
+  const day = DateTime.fromMillis(date.valueOf()).setLocale('ca').toFormat('dd LLLL').toLowerCase()
+  const column = $('.programacio-dia > h3 > .dia')
+    .filter((i, el) => $(el).text() === day.slice(0, 6) + '.')
     .first()
+    .parent()
     .parent()
   const items = []
   const titles = column.find(`p`).toArray()
