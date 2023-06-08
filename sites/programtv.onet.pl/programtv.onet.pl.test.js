@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/programtv.onet.pl/programtv.onet.pl.config.js --channels=sites/programtv.onet.pl/programtv.onet.pl.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/programtv.onet.pl/programtv.onet.pl.config.js --channels=sites/programtv.onet.pl/programtv.onet.pl.channels.xml --output=guide.xml
 
 const MockDate = require('mockdate')
 const { parser, url } = require('./programtv.onet.pl.config.js')
