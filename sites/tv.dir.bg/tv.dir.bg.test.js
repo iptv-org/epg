@@ -1,5 +1,5 @@
 // node ./scripts/commands/parse-channels.js --config=./sites/tv.dir.bg/tv.dir.bg.config.js --output=./sites/tv.dir.bg/tv.dir.bg.channels.xml
-// npx epg-grabber --config=sites/tv.dir.bg/tv.dir.bg.config.js --channels=sites/tv.dir.bg/tv.dir.bg.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/tv.dir.bg/tv.dir.bg.config.js --channels=sites/tv.dir.bg/tv.dir.bg.channels.xml --output=guide.xml
 
 const { parser, url } = require('./tv.dir.bg.config.js')
 const dayjs = require('dayjs')
