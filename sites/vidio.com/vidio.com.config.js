@@ -1,12 +1,5 @@
 const cheerio = require('cheerio')
-const dayjs = require('dayjs')
-const utc = require('dayjs/plugin/utc')
-const timezone = require('dayjs/plugin/timezone')
-const customParseFormat = require('dayjs/plugin/customParseFormat')
-
-dayjs.extend(utc)
-dayjs.extend(timezone)
-dayjs.extend(customParseFormat)
+const { DateTime } = require('luxon')
 
 module.exports = {
   site: 'vidio.com',
@@ -21,13 +14,13 @@ module.exports = {
       const prev = programs[programs.length - 1]
       const $item = cheerio.load(item)
       let start = parseStart($item, date)
-      if (prev && start.isBefore(prev.start)) {
-        start = start.add(1, 'd')
+      if (prev && start < prev.start) {
+        start = start.plus({ days: 1 })
         date = date.add(1, 'd')
       }
       let stop = parseStop($item, date)
-      if (stop.isBefore(start)) {
-        stop = stop.add(1, 'd')
+      if (stop < start) {
+        stop = stop.plus({ days: 1 })
         date = date.add(1, 'd')
       }
       programs.push({
@@ -46,7 +39,7 @@ function parseStart($item, date) {
   const [_, start] = timeString.match(/(\d{2}:\d{2}) -/) || [null, null]
   const dateString = `${date.format('YYYY-MM-DD')} ${start}`
 
-  return dayjs.tz(dateString, 'YYYY-MM-DD HH:mm', 'Asia/Jakarta')
+  return DateTime.fromFormat(dateString, 'yyyy-MM-dd HH:mm', { zone: 'Asia/Jakarta' }).toUTC()
 }
 
 function parseStop($item, date) {
@@ -54,7 +47,7 @@ function parseStop($item, date) {
   const [_, stop] = timeString.match(/- (\d{2}:\d{2}) WIB/) || [null, null]
   const dateString = `${date.format('YYYY-MM-DD')} ${stop}`
 
-  return dayjs.tz(dateString, 'YYYY-MM-DD HH:mm', 'Asia/Jakarta')
+  return DateTime.fromFormat(dateString, 'yyyy-MM-dd HH:mm', { zone: 'Asia/Jakarta' }).toUTC()
 }
 
 function parseTitle($item) {
