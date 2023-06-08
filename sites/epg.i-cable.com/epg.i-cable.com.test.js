@@ -1,5 +1,5 @@
 // npm run channels:parse -- --config=./sites/epg.i-cable.com/epg.i-cable.com.config.js --output=./sites/epg.i-cable.com/epg.i-cable.com.channels.xml --set=lang:zh
-// npx epg-grabber --config=sites/epg.i-cable.com/epg.i-cable.com.config.js --channels=sites/epg.i-cable.com/epg.i-cable.com.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/epg.i-cable.com/epg.i-cable.com.config.js --channels=sites/epg.i-cable.com/epg.i-cable.com.channels.xml --output=guide.xml
 
 const { parser, url } = require('./epg.i-cable.com.config.js')
 const fs = require('fs')

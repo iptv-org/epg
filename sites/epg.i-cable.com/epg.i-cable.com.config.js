@@ -1,12 +1,5 @@
 const axios = require('axios')
-const dayjs = require('dayjs')
-const utc = require('dayjs/plugin/utc')
-const timezone = require('dayjs/plugin/timezone')
-const customParseFormat = require('dayjs/plugin/customParseFormat')
-
-dayjs.extend(utc)
-dayjs.extend(timezone)
-dayjs.extend(customParseFormat)
+const { DateTime } = require('luxon')
 
 const API_ENDPOINT = 'http://epg.i-cable.com/ci/channel'
 
@@ -27,18 +20,18 @@ module.exports = {
     for (let item of items) {
       const prev = programs[programs.length - 1]
       let start = parseStart(item, date)
-      const stop = start.add(30, 'm')
+      const stop = start.plus({ minutes: 30 })
       if (prev) {
-        if (start.isBefore(prev.start)) {
-          start = start.add(1, 'd')
+        if (start < prev.start) {
+          start = start.plus({ days: 1 })
           date = date.add(1, 'd')
         }
         prev.stop = start
       }
       programs.push({
         title: parseTitle(item, channel),
-        start: start,
-        stop: stop
+        start,
+        stop
       })
     }
 
@@ -78,11 +71,12 @@ function parseTitle(item, channel) {
 }
 
 function parseStart(item, date) {
-  return dayjs.tz(
-    `${date.format('YYYY-MM-DD')} ${item.time} ${item.session_mark}`,
-    'YYYY-MM-DD hh:mm A',
-    'Asia/Hong_Kong'
-  )
+  let meridiem = item.session_mark === 'PM' ? 'PM' : 'AM'
+  return DateTime.fromFormat(
+    `${date.format('YYYY-MM-DD')} ${item.time} ${meridiem}`,
+    'yyyy-MM-dd hh:mm a',
+    { zone: 'Asia/Hong_Kong' }
+  ).toUTC()
 }
 
 function parseItems(content, date) {
