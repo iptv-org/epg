@@ -1,19 +1,12 @@
 const cheerio = require('cheerio')
-const dayjs = require('dayjs')
-const utc = require('dayjs/plugin/utc')
-const timezone = require('dayjs/plugin/timezone')
-const customParseFormat = require('dayjs/plugin/customParseFormat')
-
-dayjs.extend(utc)
-dayjs.extend(timezone)
-dayjs.extend(customParseFormat)
+const { DateTime } = require('luxon')
 
 module.exports = {
   delay: 5000,
   site: 'programtv.onet.pl',
   days: 2,
   url: function ({ date, channel }) {
-    const currDate = dayjs.utc().startOf('d')
+    const currDate = DateTime.now().toUTC().startOf('day')
     const day = date.diff(currDate, 'd')
 
     return `https://programtv.onet.pl/program-tv/${channel.site_id}?dzien=${day}`
@@ -26,13 +19,13 @@ module.exports = {
       const $item = cheerio.load(item)
       let start = parseStart($item, date)
       if (prev) {
-        if (start.isBefore(prev.start)) {
-          start = start.add(1, 'd')
+        if (start < prev.start) {
+          start = start.plus({ days: 1 })
           date = date.add(1, 'd')
         }
         prev.stop = start
       }
-      const stop = start.add(1, 'h')
+      const stop = start.plus({ hours: 1 })
       programs.push({
         title: parseTitle($item),
         description: parseDescription($item),
@@ -50,7 +43,7 @@ function parseStart($item, date) {
   const timeString = $item('.hours > .hour').text()
   const dateString = `${date.format('MM/DD/YYYY')} ${timeString}`
 
-  return dayjs.tz(dateString, 'MM/DD/YYYY HH:mm', 'Europe/Warsaw')
+  return DateTime.fromFormat(dateString, 'MM/dd/yyyy HH:mm', { zone: 'Europe/Warsaw' }).toUTC()
 }
 
 function parseCategory($item) {
