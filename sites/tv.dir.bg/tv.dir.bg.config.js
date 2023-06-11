@@ -1,13 +1,6 @@
 const axios = require('axios')
 const cheerio = require('cheerio')
-const dayjs = require('dayjs')
-const utc = require('dayjs/plugin/utc')
-const timezone = require('dayjs/plugin/timezone')
-const customParseFormat = require('dayjs/plugin/customParseFormat')
-
-dayjs.extend(utc)
-dayjs.extend(timezone)
-dayjs.extend(customParseFormat)
+const { DateTime } = require('luxon')
 
 module.exports = {
   site: 'tv.dir.bg',
@@ -24,13 +17,13 @@ module.exports = {
       let start = parseStart($item, date)
       if (!start) return
       if (prev) {
-        if (start.isBefore(prev.start)) {
-          start = start.add(1, 'd')
+        if (start < prev.start) {
+          start = start.plus({ days: 1 })
           date = date.add(1, 'd')
         }
         prev.stop = start
       }
-      const stop = start.add(30, 'm')
+      const stop = start.plus({ minutes: 30 })
       programs.push({
         title: parseTitle($item),
         start,
@@ -78,7 +71,7 @@ function parseStart($item, date) {
   if (!time) return null
   const dateString = `${date.format('MM/DD/YYYY')} ${time}`
 
-  return dayjs.tz(dateString, 'MM/DD/YYYY HH.mm', 'Europe/Sofia')
+  return DateTime.fromFormat(dateString, 'MM/dd/yyyy HH.mm', { zone: 'Europe/Sofia' }).toUTC()
 }
 
 function parseTitle($item) {
