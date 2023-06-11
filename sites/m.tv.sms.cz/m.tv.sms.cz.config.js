@@ -1,13 +1,6 @@
 const cheerio = require('cheerio')
 const iconv = require('iconv-lite')
-const dayjs = require('dayjs')
-const utc = require('dayjs/plugin/utc')
-const timezone = require('dayjs/plugin/timezone')
-const customParseFormat = require('dayjs/plugin/customParseFormat')
-
-dayjs.extend(utc)
-dayjs.extend(timezone)
-dayjs.extend(customParseFormat)
+const { DateTime } = require('luxon')
 
 module.exports = {
   site: 'm.tv.sms.cz',
@@ -25,13 +18,13 @@ module.exports = {
       const $item = cheerio.load(item)
       let start = parseStart($item, date)
       if (prev) {
-        if (start.isBefore(prev.start)) {
-          start = start.add(1, 'd')
+        if (start < prev.start) {
+          start = start.plus({ days: 1 })
           date = date.add(1, 'd')
         }
         prev.stop = start
       }
-      const stop = start.add(1, 'h')
+      const stop = start.plus({ hours: 1 })
       programs.push({
         title: parseTitle($item),
         description: parseDescription($item),
@@ -48,7 +41,7 @@ function parseStart($item, date) {
   const timeString = $item('div > span').text().trim()
   const dateString = `${date.format('MM/DD/YYYY')} ${timeString}`
 
-  return dayjs.tz(dateString, 'MM/DD/YYYY HH.mm', 'Europe/Prague')
+  return DateTime.fromFormat(dateString, 'MM/dd/yyyy HH.mm', { zone: 'Europe/Prague' }).toUTC()
 }
 
 function parseDescription($item) {
