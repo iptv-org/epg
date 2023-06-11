@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>tvprogram.cz</title>
+<base href="https://m.tv.sms.cz" />
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
+<meta name="format-detection" content="telephone=no" /> 
+<meta name="HandheldFriendly" content="true" />
+<link rel="stylesheet" type="text/css" href="//www.sms.cz/mobilni/style/style.css" />
+<link rel="stylesheet" type="text/css" href="//www.sms.cz/mobilni/tvp/styl.css" />
+<link rel="stylesheet" type="text/css" href="//www.sms.cz/kategorie/365dni/prehravac3/build/mediaelementplayer.css" />
+<script type="text/javascript" src="//www.sms.cz/mobilni/tvp/skript.js?20160526"></script>
+<script type="text/javascript" src="//www.sms.cz/mobilni/tvp/matchMedia.js"></script>
+<script type="text/javascript" src="//www.sms.cz/javascript/j_sms.js"></script>
+<script type="text/javascript" src="//www.sms.cz/kategorie/365dni/prehravac3/mejs.js"></script>
+<script type="text/javascript" src="https://www.sms.cz/mobilni/javascript/iscroll.js"></script><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-360086-23']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+<script type="text/javascript">
+var touch = null;
+
+var p_webroot2 = 'https://m.tv.sms.cz';
+</script>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-5169408581043132",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<div id="and_menu_over" onclick="sbal_menu();"></div>
+<div id="and_menu">
+<div class="hlavicka" style="width: 100%">
+  <div class="menu_cudl" onclick="sbal_menu();"></div>
+  <div style="position: absolute; top: 0px; right: 0px; height: 38px; width: 38px; line-height: 38px; cursor: pointer; font-size: 180%; /*border: 1px solid white;*/ border-radius: 5px" onclick="sbal_menu();">x</div>
+  <div class="empty"></div>
+</div>
+<div class="ul">
+<div class="li mobilni_prihlasen"><a href="http://m.sms.cz/?prihlaseni">Přihlášení/registrace</a></div>
+<div class="li"><a href="https://m.sms.cz" class="sms">SMS.cz</a></div>
+<div class="li"><a href="https://m.programy.sms.cz" class="dni365">365dni.cz</a></div>
+<div class="li"><a href="https://horoskopy.sms.cz" class="horoskopy">horoskopy.sms.cz</a></div>
+<div class="li"><a href="https://studentka.cz" class="studentka">studentka.cz</a></div>
+<div class="li"><a href="https://najdemese.cz" class="seznamka">najdemese.cz</a></div>
+<div class="li"><a href="https://nejhry.cz" class="nejhry">nejhry.cz</a></div>
+</div>
+</div>
+<div style="width: 100%" class="hlavicka" id="hlavicka">
+  <div class="menu_cudl" onclick="rozbal_menu(); rozbal_hledani(false); "></div>
+    <div style="float: left; z-index: 1012; position: relative">
+      <a href="http://m.tv.sms.cz" >
+        <img id="top_log_img" style="max-height: 2.3em;margin-top: 0em;" alt="logo" class="logo" src="//www.sms.cz/mobilni/tvp/img/logo_tvp.png" />
+      </a>
+    </div>
+    <div style="float: right; width: 50%" class="menu">
+     <form method="get" action="" id="formular" name="formular">
+      <input type="hidden" id="cas" name="cas" value="" />
+      <input type="hidden" id="den" name="den" value="2023-06-11" />
+      <input type="hidden" id="stanice" name="stanice" value="Cero" />
+      <input type="hidden" id="detail" name="detail" value="" />
+      <input type="hidden" id="tab" name="tab" value="" />
+      <input type="hidden" id="id" name="id" value="" />
+                <input type="hidden" id="zmen_stanice" name="zmen_stanice" value="" />            
+                <div style="width:98%; margin-top: 5px;">
+          <div class="htlacitko">
+            <input type="submit" id="hsubmit" onclick="document.getElementById('P_hledat_kde_str').value = 0;" value="">
+          </div>
+          <div class="hhledej">
+            <span style="display: block" id="blank_hledej" class="hblank_span" onclick="this.style.display = 'none'; document.getElementById('P_hledat_kde_text').focus();">hledat TV pořad...</span>
+            <input type="text" id="P_hledat_kde_text" name="P_hledat" value="" onblur="if (this.value == '') document.getElementById('blank_hledej').style.display = 'block'" autocomplete="off" />
+            <input type="hidden" id="P_hledat_kde_hist" name="hhistorie" value="" />
+            <input type="hidden" id="P_hledat_kde_str" name="hstranka" value="" />
+          </div>
+          
+        </div>
+            </form>
+    </div>
+</div>
+
+<div id='obsah' style='text-align: left'><div class='stanice' style='text-align: left'><div class='stanice_a' style='border-bottom: none'>
+            <div style='width: 50%; float: left; overflow: hidden; height: 2.8em; padding-top: 5px'>
+              <div class='button' style='width: 90%; margin-left: 3px; text-align: left; overflow: hidden' onclick='zmen_stanici(this)'>
+                <img style='float: right; margin-top: 10px; margin-right: 3px' src='//www.sms.cz/mobilni/tvp/img/sipka_dolu.gif' />
+                <div class='logo_out' onclick='zmen_stanici(this); canEv(event);'>
+                  <img style='margin-top: 2px' class='logo' src='//www.sms.cz/kategorie/televize/bmp/loga/velka/cero.png' />
+                </div>
+                <div class='button_ov'>Cero<div class='ztrb'></div></div>
+              </div>
+            </div>
+            <div style='width: 50%; float: left; margin-top: 5px'>
+              <div style='width: 50%; float: right'><a href='#' onclick='zobraz_datepicker()' class='button' style='width: 90%; float: right; margin-right: 3px'>
+            <img style='float: right; margin-top: 10px; margin-right: 3px' src='//www.sms.cz/mobilni/tvp/img/sipka_dolu.gif' />dnes</a></div><div style='width: 50%; float: left'><a href="#" class="button" onclick="zobraz_timepicker(this)" style="width: 90%">
+            <img style="float: right; margin-top: 10px; margin-right: 3px" src="//www.sms.cz/mobilni/tvp/img/sipka_dolu.gif" />
+            <span id="time_text">nyní</span>
+          </a></div>
+            </div>
+          </div><div class='porady'><div class='porad' style='display: none;'><div class='cas' onclick='if (document.getElementById("x1771081557")) document.getElementById("x1771081557").click();'><span style=''>05.21</span><br /></div><a class='nazev' href='https://m.tv.sms.cz/televize/Cero/20230611/1771081557-Conspiraciones-al-descubierto--La-bomba-atomica-alemana-y-el-hundimiento-del-Titanic'><div style='position: relative; overflow: hidden; height: 18px;'>Conspiraciones al descubierto: La bomba atómica alemana y el hundimiento del Titanic<div class='ztr'></div></div><div class='detail'>Documentales <div class='ztr'></div></div></a></div><div class='porad' style='display: none;'><div class='cas' onclick='if (document.getElementById("x1771081558")) document.getElementById("x1771081558").click();'><span style=''>06.08</span><br /></div><a class='nazev' href='https://m.tv.sms.cz/televize/Cero/20230611/1771081558-Conspiraciones-al-descubierto--Amelia-Earhart-y-el-misterio-de-Salvator-Mundi'><div style='position: relative; overflow: hidden; height: 18px;'>Conspiraciones al descubierto: Amelia Earhart y el misterio de Salvator Mundi<div class='ztr'></div></div><div class='detail'>Documentales <div class='ztr'></div></div></a></div><div class='porad' style='display: none;'><div class='cas' onclick='if (document.getElementById("x1771081559")) document.getElementById("x1771081559").click();'><span style=''>06.55</span><br /></div><a class='nazev' href='https://m.tv.sms.cz/televize/Cero/20230611/1771081559-Conspiraciones-al-descubierto--La-muerte-de-Hitler-y-la-daga-de-hierro-de-Tutankamon'><div style='position: relative; overflow: hidden; height: 18px;'>Conspiraciones al descubierto: La muerte de Hitler y la daga de hierro de Tutankamón<div class='ztr'></div></div><div class='detail'>Documentales <div class='ztr'></div></div></a></div><div class='porad' style='display: none;'><div class='cas' onclick='if (document.getElementById("x1771081560")) document.getElementById("x1771081560").click();'><span style=''>07.42</span><br /></div><a class='nazev' href='https://m.tv.sms.cz/televize/Cero/20230611/1771081560-Dinosaurios-letales--Supersentidos'><div style='position: relative; overflow: hidden; height: 18px;'>Dinosaurios letales: Supersentidos<div class='ztr'></div></div><div class='detail'>Documentales <div class='ztr'></div></div></a></div><div class='porad' style='display: none;'><div class='cas' onclick='if (document.getElementById("x1771053344")) document.getElementById("x1771053344").click();'><span style=''>08.15</span><br /></div><a class='nazev' href='https://m.tv.sms.cz/televize/Cero/20230611/1771053344-Tesoros-al-descubierto--La-tumba-de-Tutankamon'><div style='position: relative; overflow: hidden; height: 18px;'>Tesoros al descubierto: La tumba de Tutankamón<div class='ztr'></div></div><div class='detail'>Documentales <div class='ztr'></div></div></a></div><div class='porad' style='display: none;'><div class='cas' onclick='if (document.getElementById("x1771053345")) document.getElementById("x1771053345").click();'><span style=''>08.58</span><br /></div><a class='nazev' href='https://m.tv.sms.cz/televize/Cero/20230611/1771053345-Tesoros-al-descubierto--El-Santo-Grial'><div style='position: relative; overflow: hidden; height: 18px;'>Tesoros al descubierto: El Santo Grial<div class='ztr'></div></div><div class='detail'>Documentales <div class='ztr'></div></div></a></div><div class='porad' style='display: none;'><div class='cas' onclick='if (document.getElementById("x1771081561")) document.getElementById("x1771081561").click();'><span style=''>09.50</span><br /></div><a class='nazev' href='https://m.tv.sms.cz/televize/Cero/20230611/1771081561-La-gran-aventura-de-Mortadelo-y-Filemon'><div style='position: relative; overflow: hidden; height: 18px;'>La gran aventura de Mortadelo y Filemón<div class='ztr'></div></div><div class='detail'>Cine <div class='ztr'></div></div></a></div><div class='porad' style='display: none;'><div class='cas' onclick='if (document.getElementById("x1771081562")) document.getElementById("x1771081562").click();'><span style=''>11.33</span><br /></div><a class='nazev' href='https://m.tv.sms.cz/televize/Cero/20230611/1771081562-La-vida-secreta-del-Zoo--5-'><div style='position: relative; overflow: hidden; height: 18px;'>La vida secreta del Zoo (5)<div class='ztr'></div></div><div class='detail'>Entretenimiento <div class='ztr'></div></div></a></div><div class='porad' style='display: none;'><div class='cas' onclick='if (document.getElementById("x1771081563")) document.getElementById("x1771081563").click();'><span style=''>12.19</span><br /></div><a class='nazev' href='https://m.tv.sms.cz/televize/Cero/20230611/1771081563-La-vida-secreta-del-Zoo--6-'><div style='position: relative; overflow: hidden; height: 18px;'>La vida secreta del Zoo (6)<div class='ztr'></div></div><div class='detail'>Entretenimiento <div class='ztr'></div></div></a></div><div class='porad' style='display: none;'><div class='cas' onclick='if (document.getElementById("x1771081564")) document.getElementById("x1771081564").click();'><span style=''>13.13</span><br /></div><a class='nazev' href='https://m.tv.sms.cz/televize/Cero/20230611/1771081564-Libro-sobre-libro--Harry-Potter'><div style='position: relative; overflow: hidden; height: 18px;'>Libro sobre libro: Harry Potter<div class='ztr'></div></div><div class='detail'>Entretenimiento <div class='ztr'></div></div></a></div><div class='porad' style='display: none;'><div class='cas' onclick='if (document.getElementById("x1771081565")) document.getElementById("x1771081565").click();'><span style=''>13.44</span><br /></div><a class='nazev' href='https://m.tv.sms.cz/televize/Cero/20230611/1771081565-Cuerpos-policiales---Ficcion-o-realidad-'><div style='position: relative; overflow: hidden; height: 18px;'>Cuerpos policiales: ?Ficción o realidad?<div class='ztr'></div></div><div class='detail'>Entretenimiento <div class='ztr'></div></div></a></div><div class='porad' style='display: none;'><div class='cas' onclick='if (document.getElementById("x1771081566")) document.getElementById("x1771081566").click();'><span style=''>14.15</span><br /></div><a class='nazev' href='https://m.tv.sms.cz/televize/Cero/20230611/1771081566-Superancianos--como-vivir-mas-y-mejor--El-envejecimiento'><div style='position: relative; overflow: hidden; height: 18px;'>Superancianos: cómo vivir más y mejor: El envejecimiento<div class='ztr'></div></div><div class='detail'>Documentales <div class='ztr'></div></div></a></div><div class='porad' style='display: none;'><div class='cas' onclick='if (document.getElementById("x1771081567")) document.getElementById("x1771081567").click();'><span style='color: #FFB82E'>15.12</span><br /></div><a class='nazev' href='https://m.tv.sms.cz/televize/Cero/20230611/1771081567-Showriano--Javier-Camara'><div style='position: relative; overflow: hidden; height: 18px;'>Showriano: Javier Cámara<div class='ztr'></div></div><div class='detail'>Entretenimiento <div class='ztr'></div></div></a></div><div class='porad' style='display: none;'><div class='cas' onclick='if (document.getElementById("x1771081568")) document.getElementById("x1771081568").click();'><span style=''>16.13</span><br /></div><a class='nazev' href='https://m.tv.sms.cz/televize/Cero/20230611/1771081568-En-el-punto-de-mira'><div style='position: relative; overflow: hidden; height: 18px;'>En el punto de mira<div class='ztr'></div></div><div class='detail'>Cine <div class='ztr'></div></div></a></div><div class='porad' style='display: none;'><div class='cas' onclick='if (document.getElementById("x1771081569")) document.getElementById("x1771081569").click();'><span style=''>17.40</span><br /></div><a class='nazev' href='https://m.tv.sms.cz/televize/Cero/20230611/1771081569-Jack-Reacher--Nunca-vuelvas-atras'><div style='position: relative; overflow: hidden; height: 18px;'>Jack Reacher: Nunca vuelvas atrás<div class='ztr'></div></div><div class='detail'>Cine <div class='ztr'></div></div></a></div><div class='porad' style='display: none;'><div class='cas' onclick='if (document.getElementById("x1771081570")) document.getElementById("x1771081570").click();'><span style=''>19.36</span><br /></div><a class='nazev' href='https://m.tv.sms.cz/televize/Cero/20230611/1771081570-Descubriendo-Corea-del-Sur--2-'><div style='position: relative; overflow: hidden; height: 18px;'>Descubriendo Corea del Sur (2)<div class='ztr'></div></div><div class='detail'>Documentales <div class='ztr'></div></div></a></div><div class='porad' style='display: none;'><div class='cas' onclick='if (document.getElementById("x1771081571")) document.getElementById("x1771081571").click();'><span style=''>20.24</span><br /></div><a class='nazev' href='https://m.tv.sms.cz/televize/Cero/20230611/1771081571-Martinez-y-Hermanos--Marta-Diaz--Maria-Becerra-y-Mirian-Rodriguez'><div style='position: relative; overflow: hidden; height: 18px;'>Martínez y Hermanos: Marta Díaz, María Becerra y Mirian Rodríguez<div class='ztr'></div></div><div class='detail'>Entretenimiento <div class='ztr'></div></div></a></div><div class='porad' ><div class='cas' onclick='if (document.getElementById("x1770675005")) document.getElementById("x1770675005").click();'><span style=''>21.27</span><div class='teplomer'><div style='padding: 2px'><div class='teplomer_inn' style='width: 45%'></div></div></div></div><a class='nazev' href='https://m.tv.sms.cz/televize/Cero/20230611/1770675005-Ilustres-Ignorantes--Ferreterias'><div style='position: relative; overflow: hidden; height: 18px;font-weight: bold'>Ilustres Ignorantes: Ferreterías<div class='ztr'></div></div><div class='detail'>Entretenimiento <div class='ztr'></div></div></a></div><div class='porad' ><div class='cas' onclick='if (document.getElementById("x1771023013")) document.getElementById("x1771023013").click();'><span style='color: #FFB82E'>22.00</span><br /></div><a class='nazev' href='https://m.tv.sms.cz/televize/Cero/20230611/1771023013-Showriano--Javier-Camara'><div style='position: relative; overflow: hidden; height: 18px;'>Showriano: Javier Cámara<div class='ztr'></div></div><div class='detail'>Entretenimiento <div class='ztr'></div></div></a></div><div class='porad' ><div class='cas' onclick='if (document.getElementById("x1770675007")) document.getElementById("x1770675007").click();'><span style=''>23.00</span><br /></div><a class='nazev' href='https://m.tv.sms.cz/televize/Cero/20230611/1770675007-Supergarcia--Un-Vietnam-en-las-ondas'><div style='position: relative; overflow: hidden; height: 18px;'>Supergarcía: Un Vietnam en las ondas<div class='ztr'></div></div><div class='detail'>Documentales <div class='ztr'></div></div></a></div><div class='porad' ><div class='cas' onclick='if (document.getElementById("x1771081572")) document.getElementById("x1771081572").click();'><span style='color: #FF2672'>00.06</span><br /></div><a class='nazev' href='https://m.tv.sms.cz/televize/Cero/20230611/1771081572-Rapa-I--1-'><div style='position: relative; overflow: hidden; height: 18px;'>Rapa I (1)<div class='ztr'></div></div><div class='detail'>Series <div class='ztr'></div></div></a></div><div class='porad' ><div class='cas' onclick='if (document.getElementById("x1771081573")) document.getElementById("x1771081573").click();'><span style='color: #FF2672'>00.56</span><br /></div><a class='nazev' href='https://m.tv.sms.cz/televize/Cero/20230611/1771081573-Rapa-I--2-'><div style='position: relative; overflow: hidden; height: 18px;'>Rapa I (2)<div class='ztr'></div></div><div class='detail'>Series <div class='ztr'></div></div></a></div><div class='porad' ><div class='cas' onclick='if (document.getElementById("x1771081574")) document.getElementById("x1771081574").click();'><span style='color: #FF2672'>01.49</span><br /></div><a class='nazev' href='https://m.tv.sms.cz/televize/Cero/20230611/1771081574-Rapa-I--3-'><div style='position: relative; overflow: hidden; height: 18px;'>Rapa I (3)<div class='ztr'></div></div><div class='detail'>Series <div class='ztr'></div></div></a></div><div class='porad' ><div class='cas' onclick='if (document.getElementById("x1771081575")) document.getElementById("x1771081575").click();'><span style='color: #FF2672'>02.40</span><br /></div><a class='nazev' href='https://m.tv.sms.cz/televize/Cero/20230611/1771081575-Rapa-I--4-'><div style='position: relative; overflow: hidden; height: 18px;'>Rapa I (4)<div class='ztr'></div></div><div class='detail'>Series <div class='ztr'></div></div></a></div><div class='porad' ><div class='cas' onclick='if (document.getElementById("x1771081576")) document.getElementById("x1771081576").click();'><span style='color: #FF2672'>03.33</span><br /></div><a class='nazev' href='https://m.tv.sms.cz/televize/Cero/20230611/1771081576-Rapa-I--5-'><div style='position: relative; overflow: hidden; height: 18px;'>Rapa I (5)<div class='ztr'></div></div><div class='detail'>Series <div class='ztr'></div></div></a></div><div class='porad' ><div class='cas' onclick='if (document.getElementById("x1771081577")) document.getElementById("x1771081577").click();'><span style='color: #FF2672'>04.23</span><br /></div><a class='nazev' href='https://m.tv.sms.cz/televize/Cero/20230611/1771081577-Rapa-I--6-'><div style='position: relative; overflow: hidden; height: 18px;'>Rapa I (6)<div class='ztr'></div></div><div class='detail'>Series <div class='ztr'></div></div></a></div></div><div class='predchozi_porady' onclick="predchozi_porady2(this, '')" style='display: block'>-</div></div></div><div id='preddal' style='width: 100%; height: 2em'><div style='float: right; width: 50%'><a class='button' onclick="prejdi_cas('?stanice=Cero&den=2023-06-12&cas='); canEv(event);" style='width: 95%; float: right; margin-right: 3px;' href='?stanice=Cero&cas=&den=2023-06-12'>Další den&nbsp;&gt;</a></div><div style='float: left; width: 50%'><a class='button' onclick="prejdi_cas('?stanice=Cero&den=2023-06-10&cas='); canEv(event); " style='width: 95%; margin-left: 3px' href='?stanice=Cero&cas=&den=2023-06-10'>&lt;&nbsp;Předchozí den</a></div></div>
+<div id="pat">
+  <div style="float: right">
+    <div class="zpet_nahoru">
+      <!--<a href="#nahoru">Zpět nahoru</a>-->
+      <div onclick="window.scrollTo(1,1);">
+       <img src="//www.sms.cz/mobilni/image/back_top.png" style="height: 15px; float: right; margin-left: 5px;" alt="top" />Zpět nahoru</div>
+  
+  
+  
+    </div>
+    <div class="svatek">
+      Svátek: Bruno    </div>
+  </div>
+  
+  <div onclick="zobraz_webpicker(this)" style="float: left">
+    <img id="bottom_log_img" alt="logo" src="//www.sms.cz/img/nove/logo_sms.png" />
+    <img src="//www.sms.cz/mobilni/tvp/img/sipka_dolu.gif" alt="sipka dolu" style="margin-top: 15px; margin-left: 5px" />
+  </div>
+  <a class="klasicke_zobrazeni" href="https://tv.sms.cz/?mobilni=false">
+    <img style="height: 15px; float: right; margin-left: 5px; margin-bottom: 1em;" alt="exit" src="//www.sms.cz/mobilni/image/exit.png">Klasické zobrazení
+  </a>
+  
+  <div class="clear"></div>
+</div>
+<div class="canal_picker_nadpis" id="canal_zavri" style="display: none">
+          <div class="canal_zavri" onclick="zavriOkna()"></div>
+          <div style="padding-left: 10px; line-height: 1.2em; height: 3em; vertical-align: middle; display: table-cell">Volba stanice pro zobrazení TVprogramu</div>
+          </div><div id='canal_picker' class='canal_picker'><div style="height: 3em; width: 100%; color: #DADADA; background-color: #555">
+             <div class="canal_zavri" style="position: absolute; top: 0px; right: 0px;" onclick="zavriOkna()"></div>
+             <div style="margin-left: 10px; padding-top: 12px; overflow: hidden; height: 3em; text-align: left">Volba stanice pro zobrazení TVprogramu</div>
+           </div><a class='date_date'  onclick="document.getElementById('stanice').value='ČT1'; document.getElementById('formular').submit();" href='#'><div class='inn'>ČT1</div></a><a class='date_date'  onclick="document.getElementById('stanice').value='ČT2'; document.getElementById('formular').submit();" href='#'><div class='inn'>ČT2</div></a><a class='date_date'  onclick="document.getElementById('stanice').value='Nova'; document.getElementById('formular').submit();" href='#'><div class='inn'>Nova</div></a><a class='date_date'  onclick="document.getElementById('stanice').value='Prima'; document.getElementById('formular').submit();" href='#'><div class='inn'>Prima</div></a><a class='date_date'  onclick="document.getElementById('stanice').value='Prima Cool'; document.getElementById('formular').submit();" href='#'><div class='inn'>Prima Cool</div></a><a class='date_date'  onclick="document.getElementById('stanice').value='Barrandov'; document.getElementById('formular').submit();" href='#'><div class='inn'>Barrandov</div></a><a class='date_date'  onclick="document.getElementById('stanice').value='Nova Cinema'; document.getElementById('formular').submit();" href='#'><div class='inn'>Nova Cinema</div></a><a class='date_date' style='line-height: 50px' href='#' onclick="document.getElementById('zmen_stanice').value='true'; document.getElementById('formular').submit();">&nbsp;&nbsp;+ další stanice</a></div><div id='time_picker' class='time_picker'><div style="height: 3em; width: 100%; background-color: #555; color: #DADADA">
+             <div class="time_zavri" style="position: absolute; top: 0px; right: 0px;" onclick="zavriOkna()"></div>
+             <div style="margin-left: 10px; padding-top: 12px; overflow: hidden; height: 3em; text-align: left">Čas</div>
+           </div><a id='time_pick_0' class='date_date'  onclick="zmenCas3('0', 'ráno')" href='#'><div class='inn'>od rána</div></a><a id='time_pick_12' class='date_date'  onclick="zmenCas3('12', '12:00')" href='#'><div class='inn'>od 12:00</div></a><a id='time_pick_17' class='date_date'  onclick="zmenCas3('17', '17:00')" href='#'><div class='inn'>od 17:00</div></a><a id='time_pick_20' class='date_date'  onclick="zmenCas3('20', '20:00')" href='#'><div class='inn'>od 20:00</div></a><a id='time_pick_' class='date_date' style='font-weight: bold' onclick="zmenCas3('', 'nyní')" href='#'><div class='inn'>od nyní</div></a><a id='time_pick_22' class='date_date'  onclick="zmenCas3('22', '22:00')" href='#'><div class='inn'>od 22:00</div></a></div>
+<!--<div class="web_picker_nadpis" id="web_zavri" style="display: none">
+  <div class="date_zavri" onclick="zavriOkna()"></div>
+  <div style="margin-left: 10px; float: left">Služby</div>
+</div>-->
+<div class="web_picker" id="web_picker" style="display: none">
+  <div style="height: 3em; width: 100%; background-color: #555; color: #DADADA">
+    <div class="date_zavri" style="position: absolute; top: 0px; right: 0px;" onclick="zavriOkna()"></div>
+    <div style="margin-left: 10px; padding-top: 12px; overflow: hidden; height: 3em; text-align: left">Služby</div> 
+  </div>
+  <a class="date_date" href="https://www.sms.cz"><div class="okolo_obrazku"><img src="//www.sms.cz/img/nove/logo_sms.png" alt="sms.cz" /></div><span class="pick_text">SMS.cz</span></a>
+  <a class="date_date" href="https://m.sms.cz"><div class="okolo_obrazku"><img src="//www.sms.cz/img/nove/logo_365dni.png" alt="365dni.cz" /></div><span class="pick_text">365dni (mobilní verze)</span></a>
+  <a class="date_date" href="https://m.tv.sms.cz"><div class="okolo_obrazku"><img src="//www.sms.cz/img/nove/logo_tvp.png" alt="tvp.cz" /></div><span class="pick_text">TV program (mobilní verze)</span></a>
+  <a class="date_date" href="https://seznamka.sms.cz"><div class="okolo_obrazku"><img src="//www.sms.cz/img/nove/logo_najdemese.png" alt="najdemese.cz" /></div><span class="pick_text">NajdemeSe</span></a>
+  <a class="date_date" href="https://hry.sms.cz"><div class="okolo_obrazku"><img src="//www.sms.cz/img/nove/logo_nejhry.png" alt="nejhry.cz" /></div><span class="pick_text">NejHry</span></a>
+  <a class="date_date" href="https://studentka.sms.cz"><div class="okolo_obrazku"><img src="//www.sms.cz/img/nove/logo_studentka.png" alt="studentka.cz" /></div><span class="pick_text">Studentka</span></a>
+  <a class="date_date" href="https://humor.sms.cz"><div class="okolo_obrazku"><img src="//www.sms.cz/img/nove/logo_srandicky.png" alt="srandicky.cz" /></div><span class="pick_text">Srandičky</span></a>
+  <a class="date_date" href="https://horoskopy.sms.cz"><div class="okolo_obrazku"><img src="//www.sms.cz/img/nove/logo_horoskopy.png" alt="horoskopy.sms.cz" /></div><span class="pick_text">Horoskopy</span></a>
+  <a class="date_date" href="https://email.sms.cz"><div class="okolo_obrazku"><img src="//www.sms.cz/img/nove/logo_email.png" alt="email.sms.cz" /></div><span class="pick_text">Email</span></a>
+</div>
+
+<!--<div class="date_picker_nadpis" id="date_zavri" style="display: none">
+  <div class="date_zavri" onclick="zavriOkna()"></div>
+  <div style="margin-left: 10px; float: left">Datum</div>
+</div>-->
+<div class="date_picker" id="date_picker" style="display: none">
+  <div style="height: 3em; width: 100%; background-color: #555; color: #DADADA">
+    <div class="date_zavri" style="position: absolute; top: 0px; right: 0px;" onclick="zavriOkna()"></div>
+    <div style="margin-left: 10px; padding-top: 12px; overflow: hidden; height: 3em; text-align: left">Datum</div> 
+  </div>
+  <a class="date_date"  href="#" onclick="zmenDen('2023-06-10')"><div class="inn">včera</div></a><a class="date_date" style="font-weight: bold" href="#" onclick="zmenDen('2023-06-11')"><div class="inn">dnes</div></a><a class="date_date"  href="#" onclick="zmenDen('2023-06-12')"><div class="inn">zítra</div></a><a class="date_date"  href="#" onclick="zmenDen('2023-06-13')"><div class="inn">út 13. 6.</div></a><a class="date_date"  href="#" onclick="zmenDen('2023-06-14')"><div class="inn">st 14. 6.</div></a><a class="date_date"  href="#" onclick="zmenDen('2023-06-15')"><div class="inn">čt 15. 6.</div></a><a class="date_date"  href="#" onclick="zmenDen('2023-06-16')"><div class="inn">pá 16. 6.</div></a><a class="date_date"  href="#" onclick="zmenDen('2023-06-17')"><div class="inn">so 17. 6.</div></a><a class="date_date"  href="#" onclick="zmenDen('2023-06-18')"><div class="inn">ne 18. 6.</div></a><a class="date_date"  href="#" onclick="zmenDen('2023-06-19')"><div class="inn">po 19. 6.</div></a><a class="date_date"  href="#" onclick="zmenDen('2023-06-20')"><div class="inn">út 20. 6.</div></a><a class="date_date"  href="#" onclick="zmenDen('2023-06-21')"><div class="inn">st 21. 6.</div></a><a class="date_date"  href="#" onclick="zmenDen('2023-06-22')"><div class="inn">čt 22. 6.</div></a><a class="date_date"  href="#" onclick="zmenDen('2023-06-23')"><div class="inn">pá 23. 6.</div></a><a class="date_date"  href="#" onclick="zmenDen('2023-06-24')"><div class="inn">so 24. 6.</div></a></div>
+
+<script type="text/javascript">
+  var supportsOrientationChange = "onorientationchange" in window,
+    orientationEvent = supportsOrientationChange ? "orientationchange" : "resize"; 
+
+  window.addEventListener(orientationEvent, function() {
+    nastav_paticku();
+  }, false);  
+  
+  function nastav_pri_onload() {
+    nastav_paticku();
+  }    
+  
+  var poloha = "";
+  
+  if (matchMedia('screen and (orientation:landscape)').matches) {
+    poloha = "landscape";
+  }
+  
+  if (matchMedia('screen and (orientation:portrait)').matches) {
+    poloha = "portrait";
+  }
+  
+  setInterval( function() {
+    if (((matchMedia('screen and (orientation:landscape)').matches) && (poloha == "portrait")) ||
+        ((matchMedia('screen and (orientation:portrait)').matches) && (poloha == "landscape"))) {
+      nastav_paticku();
+      if (matchMedia('screen and (orientation:landscape)').matches) 
+        poloha = "landscape";
+      else
+        poloha = "portrait";
+    }
+  }, 500);
+  
+  var onload_old = window.onload;
+  if (typeof window.onload != 'function'){
+    window.onload = nastav_pri_onload;
+  }else{
+    window.onload = function(){
+      if (onload_old) onload_old();
+      nastav_pri_onload();
+    }
+  }
+  /*
+  var dy2 = 0;
+  var dpiy = 0;
+  var dpix = 0;
+  var smy = 0;
+  var smx = 0;
+  */
+  var dpix = 0;
+  var dpiy = 0;
+  var dpibool = false;
+  
+  var st = document.getElementById("obsah");
+  if (st) {
+    //st.addEventListener("touchstart", handleStart, false);
+    //st.addEventListener("scroll", swap_move, false);
+    //st.addEventListener("touchmove", swap_move, false);
+    //st.addEventListener("touchend", function(e) { swap_date(e, '1686434400'); }, false);
+  }
+       
+</script></body>
+</html>
