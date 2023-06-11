@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site site="clickthecity.com">
   <channels>
-    <channel lang="en" xmltv_id="A2Z.ph" site_id="a2z-channel-11">A2Z Channel 11</channel>
-    <channel lang="en" xmltv_id="ANC.ph" site_id="anc">ANC</channel>
-    <channel lang="en" xmltv_id="AnimaxPhilippines.ph" site_id="animax">Animax</channel>
-    <channel lang="en" xmltv_id="AXNPhilippines.ph" site_id="axn">AXN</channel>
-    <channel lang="en" xmltv_id="CelestialMoviesPinoy.hk" site_id="celestial-movies-pinoy">Celestial Movies Pinoy</channel>
-    <channel lang="en" xmltv_id="CinemaOneGlobal.ph" site_id="cinema-one">Cinema One</channel>
-    <channel lang="en" xmltv_id="CinemaxAsia.sg" site_id="cinemax">Cinemax</channel>
-    <channel lang="en" xmltv_id="CNNPhilippines.ph" site_id="cnn-philippines">CNN Philippines</channel>
-    <channel lang="en" xmltv_id="CrimePlusInvestigationAsia.sg" site_id="crime-investigation">Crime &amp; Investigation</channel>
-    <channel lang="en" xmltv_id="IBC13.ph" site_id="ibc-tv-13">IBC 13</channel>
-    <channel lang="en" xmltv_id="ETC.ph" site_id="etc">ETC</channel>
-    <channel lang="en" xmltv_id="GEM.sg" site_id="gem">GEM</channel>
-    <channel lang="en" xmltv_id="GMANewsTV.ph" site_id="gma-news-tv">GMA News TV</channel>
-    <channel lang="en" xmltv_id="GMATV.ph" site_id="gma">GMA</channel>
-    <channel lang="en" xmltv_id="GTV.ph" site_id="gtv">GTV</channel>
-    <channel lang="en" xmltv_id="HBOAsia.sg" site_id="hbo-asia">HBO Asia</channel>
-    <channel lang="en" xmltv_id="HistoryPhilippines.ph" site_id="history">History</channel>
-    <channel lang="en" xmltv_id="JeepneyTV.ph" site_id="jeepney-tv">Jeepney TV</channel>
-    <channel lang="en" xmltv_id="KapamilyaChannel.ph" site_id="kapamilya-channel">Kapamilya Channel</channel>
-    <channel lang="en" xmltv_id="KMoviesPinoy.ph" site_id="k-movies-pinoy">K Movies Pinoy</channel>
-    <channel lang="en" xmltv_id="Liga.ph" site_id="liga">Liga</channel>
-    <channel lang="en" xmltv_id="MetroChannel.ph" site_id="metro-channel">Metro Channel</channel>
-    <channel lang="en" xmltv_id="MyxPhilippines.ph" site_id="myx">MYX</channel>
-    <channel lang="en" xmltv_id="NationalGeographicPhilippines.ph" site_id="national-geographic">National Geographic</channel>
-    <channel lang="en" xmltv_id="Net25.ph" site_id="net-25">Net 25</channel>
-    <channel lang="en" xmltv_id="NickelodeonPhilippines.ph" site_id="nickelodeon">Nickelodeon</channel>
-    <channel lang="en" xmltv_id="PBO.ph" site_id="pbo">PBO</channel>
-    <channel lang="en" xmltv_id="PTV.ph" site_id="ptv">PTV</channel>
-    <channel lang="en" xmltv_id="ROCKEntertainment.sg" site_id="rock-entertainment">Rock Entertainment</channel>
-    <channel lang="en" xmltv_id="ROCKExtreme.sg" site_id="rock-extreme">Rock Extreme</channel>
-    <channel lang="en" xmltv_id="TeleNovelaChannel.ph" site_id="telenovela-channel">TeleNovela Channel</channel>
-    <channel lang="en" xmltv_id="TV5.ph" site_id="tv5">TV5</channel>
-    <channel lang="en" xmltv_id="VivaCinema.ph" site_id="viva-tv">VIVA Cinema</channel>
+    <!-- <channel lang="en" xmltv_id="" site_id="137">Solar Flix</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="163">Crime Investigation</channel> -->
+    <channel lang="en" xmltv_id="A2Z.ph" site_id="189">a2z Channel 11</channel>
+    <channel lang="en" xmltv_id="ANC.ph" site_id="13">ANC</channel>
+    <channel lang="en" xmltv_id="AnimaxPhilippines.ph" site_id="168">Animax</channel>
+    <channel lang="en" xmltv_id="AXNPhilippines.ph" site_id="126">AXN</channel>
+    <channel lang="en" xmltv_id="CelestialMoviesPinoy.hk" site_id="181">Celestial Movies Pinoy</channel>
+    <channel lang="en" xmltv_id="CinemaOneGlobal.ph" site_id="82">Cinema One</channel>
+    <channel lang="en" xmltv_id="CinemaxAsia.sg" site_id="30">Cinemax</channel>
+    <channel lang="en" xmltv_id="CNNPhilippines.ph" site_id="177">CNN Philippines</channel>
+    <channel lang="en" xmltv_id="GEM.sg" site_id="183">GEM</channel>
+    <channel lang="en" xmltv_id="GMATV.ph" site_id="2">GMA</channel>
+    <channel lang="en" xmltv_id="GTV.ph" site_id="143">GTV</channel>
+    <channel lang="en" xmltv_id="HBOAsia.sg" site_id="8">HBO</channel>
+    <channel lang="en" xmltv_id="HistoryPhilippines.ph" site_id="162">History</channel>
+    <channel lang="en" xmltv_id="IBC13.ph" site_id="7">IBC TV 13</channel>
+    <channel lang="en" xmltv_id="JeepneyTV.ph" site_id="179">Jeepney TV</channel>
+    <channel lang="en" xmltv_id="KapamilyaChannel.ph" site_id="184">Kapamilya Channel</channel>
+    <channel lang="en" xmltv_id="KMoviesPinoy.ph" site_id="182">K-Movies Pinoy</channel>
+    <channel lang="en" xmltv_id="Liga.ph" site_id="188">Liga</channel>
+    <channel lang="en" xmltv_id="MetroChannel.ph" site_id="66">Metro Channel</channel>
+    <channel lang="en" xmltv_id="MyxPhilippines.ph" site_id="139">MYX</channel>
+    <channel lang="en" xmltv_id="NationalGeographicPhilippines.ph" site_id="75">National Geographic</channel>
+    <channel lang="en" xmltv_id="Net25.ph" site_id="133">Net 25</channel>
+    <channel lang="en" xmltv_id="NickelodeonPhilippines.ph" site_id="78">Nickelodeon</channel>
+    <channel lang="en" xmltv_id="PBO.ph" site_id="142">PBO</channel>
+    <channel lang="en" xmltv_id="PTV.ph" site_id="4">PTV</channel>
+    <channel lang="en" xmltv_id="ROCKEntertainment.sg" site_id="180">Rock Entertainment</channel>
+    <channel lang="en" xmltv_id="ROCKExtreme.sg" site_id="186">Rock Extreme</channel>
+    <channel lang="en" xmltv_id="TagalizedMovieChannel.ph" site_id="178">Tagalized Movie Channel</channel>
+    <channel lang="en" xmltv_id="TeleNovelaChannel.ph" site_id="160">Telenovela Channel</channel>
+    <channel lang="en" xmltv_id="TV5.ph" site_id="5">TV5</channel>
+    <channel lang="en" xmltv_id="VivaCinema.ph" site_id="155">VIVA Cinema</channel>
   </channels>
 </site>
