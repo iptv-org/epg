@@ -1,5 +1,5 @@
 // npm run channels:parse -- --config=./sites/tvgids.nl/tvgids.nl.config.js --output=./sites/tvgids.nl/tvgids.nl.channels.xml
-// npx epg-grabber --config=sites/tvgids.nl/tvgids.nl.config.js --channels=sites/tvgids.nl/tvgids.nl.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/tvgids.nl/tvgids.nl.config.js --channels=sites/tvgids.nl/tvgids.nl.channels.xml --output=guide.xml
 
 const { parser, url } = require('./tvgids.nl.config.js')
 const fs = require('fs')
@@ -10,20 +10,20 @@ const customParseFormat = require('dayjs/plugin/customParseFormat')
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
-const date = dayjs.utc('2022-11-18', 'YYYY-MM-DD').startOf('d')
+const date = dayjs.utc('2023-06-13', 'YYYY-MM-DD').startOf('d')
 const channel = {
-  site_id: 'eurosport1',
-  xmltv_id: 'Eurosport1Netherlands.nl'
+  site_id: 'npo1',
+  xmltv_id: 'NPO1.nl'
 }
 
 it('can generate valid url', () => {
-  expect(url({ date, channel })).toBe('https://www.tvgids.nl/gids/18-11-2022/eurosport1')
+  expect(url({ date, channel })).toBe('https://www.tvgids.nl/gids/13-06-2023/npo1')
 })
 
 it('can generate valid url for today', () => {
   const today = dayjs.utc().startOf('d')
 
-  expect(url({ date: today, channel })).toBe('https://www.tvgids.nl/gids/eurosport1')
+  expect(url({ date: today, channel })).toBe('https://www.tvgids.nl/gids/npo1')
 })
 
 it('can parse response', () => {
@@ -35,18 +35,20 @@ it('can parse response', () => {
   })
 
   expect(results[0]).toMatchObject({
-    start: '2022-11-17T22:30:00.000Z',
-    stop: '2022-11-17T23:30:00.000Z',
-    title: 'Autosport: 8 uur van Bahrein',
-    description: 'Verslag van de 8 uur van Bahrein, gereden op het Bahrain International Circuit.'
+    start: '2023-06-12T21:57:00.000Z',
+    stop: '2023-06-12T22:58:00.000Z',
+    title: 'Op1',
+    icon: 'https://tvgidsassets.nl/v301/upload/o/carrousel/op1-451542641.jpg',
+    description: "Talkshow met wisselende presentatieduo's, live vanuit Amsterdam."
   })
 
-  expect(results[1]).toMatchObject({
-    start: '2022-11-17T23:30:00.000Z',
-    stop: '2022-11-18T00:30:00.000Z',
-    title: 'Powerlifting: Wereldkampioenschap Viborg',
-    description: 'Verslag van de krachtsport powerlifting.',
-    icon: 'https://tvgidsassets.nl/v270/upload/p/klein/powerlifting-wereldkampioenschap-viborg-418877211.jpg'
+  expect(results[61]).toMatchObject({
+    start: '2023-06-14T00:18:00.000Z',
+    stop: '2023-06-14T00:48:00.000Z',
+    title: 'NOS Journaal',
+    icon: 'https://tvgidsassets.nl/v301/upload/n/carrousel/nos-journaal-452818771.jpg',
+    description:
+      'Met het laatste nieuws, gebeurtenissen van nationaal en internationaal belang en de weersverwachting voor vandaag.'
   })
 })
 
