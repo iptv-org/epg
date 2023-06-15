@@ -19,7 +19,7 @@ it('can parse response', () => {
 			start: '2023-06-13T03:55:00.000Z',
 			stop: '2023-06-13T04:30:00.000Z',
 			title: 'China Tonight',
-            description: 'China is a superpower that dominates global news but it\'s also home to 1.4 billion stories. Sam Yang is back for a new season, hearing from the people who make this extraordinary nation what it is today.'
+			description: 'China is a superpower that dominates global news but it\'s also home to 1.4 billion stories. Sam Yang is back for a new season, hearing from the people who make this extraordinary nation what it is today.'
 		}
 	])
 })

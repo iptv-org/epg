@@ -1,14 +1,16 @@
 const dayjs = require("dayjs");
 const timezone = require("dayjs/plugin/timezone");
+const utc = require('dayjs/plugin/utc');
+
 dayjs.extend(timezone);
+dayjs.extend(utc);
 
 module.exports = {
   site: "firstmedia.com",
-  days: 2,
+  days: 1,
   url: function ({ channel, date }) {
-    return `https://www.firstmedia.com/ajax/schedule?date=${
-      date.format("DD/MM/YYYY")
-    }&channel=${channel.site_id}&start_time=1&end_time=24&need_channels=0`;
+    return `https://www.firstmedia.com/ajax/schedule?date=${date.format("DD/MM/YYYY")
+      }&channel=${channel.site_id}&start_time=1&end_time=24&need_channels=0`;
   },
   parser: function ({ content, channel }) {
     if (!content || !channel) return [];
@@ -29,7 +31,7 @@ module.exports = {
 };
 
 function parseItems(content, channel) {
-  return JSON.parse(content).entries[channel];
+  return JSON.parse(content.trim()).entries[channel];
 }
 
 function parseTitle(item) {
