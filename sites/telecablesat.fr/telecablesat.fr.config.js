@@ -15,6 +15,7 @@ const API_ENDPOINT = 'https://tv-programme.telecablesat.fr/chaine'
 module.exports = {
   site: 'telecablesat.fr',
   days: 2,
+  delay: 5000,
   url: function ({ channel, date }) {
     return `${API_ENDPOINT}/${channel.site_id}/index.html?date=${date.format('YYYY-MM-DD')}`
   },
