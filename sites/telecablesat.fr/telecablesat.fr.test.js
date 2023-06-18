@@ -1,5 +1,5 @@
 // npm run channels:parse -- --config=./sites/telecablesat.fr/telecablesat.fr.config.js --output=./sites/telecablesat.fr/telecablesat.fr.channels.xml
-// npx epg-grabber --config=sites/telecablesat.fr/telecablesat.fr.config.js --channels=sites/telecablesat.fr/telecablesat.fr.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/telecablesat.fr/telecablesat.fr.config.js --channels=sites/telecablesat.fr/telecablesat.fr.channels.xml --output=guide.xml
 
 const { parser, url } = require('./telecablesat.fr.config.js')
 const axios = require('axios')
