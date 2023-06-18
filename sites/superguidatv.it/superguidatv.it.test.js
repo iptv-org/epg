@@ -1,5 +1,5 @@
 // npm run channels:parse -- --config=sites/superguidatv.it/superguidatv.it.config.js --output=sites/superguidatv.it/superguidatv.it.channels.xml
-// npx epg-grabber --config=sites/superguidatv.it/superguidatv.it.config.js --channels=sites/superguidatv.it/superguidatv.it.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/superguidatv.it/superguidatv.it.config.js --channels=sites/superguidatv.it/superguidatv.it.channels.xml --output=guide.xml
 
 const { parser, url } = require('./superguidatv.it.config.js')
 const fs = require('fs')
