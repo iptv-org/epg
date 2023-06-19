@@ -11,7 +11,7 @@ module.exports = {
   days: 2,
   url: function ({ date, channel }) {
     const [providerId, channelSourceIds] = channel.site_id.split('#')
-    const url = `https://cmg-prod.apigee.net/v1/xapi/tvschedules/tvguide/${providerId}/web?start=${date
+    const url = `https://fandom-prod.apigee.net/v1/xapi/tvschedules/tvguide/${providerId}/web?start=${date
       .startOf('d')
       .unix()}&duration=1440&channelSourceIds=${channelSourceIds}`
 
