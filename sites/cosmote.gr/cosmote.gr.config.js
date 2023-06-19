@@ -4,6 +4,9 @@ const { DateTime } = require('luxon')
 module.exports = {
   site: 'cosmote.gr',
   days: 2,
+  request: {
+    timeout: 30000 // 30 seconds
+  },
   url: function ({ date, channel }) {
     return `https://www.cosmotetv.gr/portal/residential/program/epg/programchannel?p_p_id=channelprogram_WAR_OTETVportlet&p_p_lifecycle=0&_channelprogram_WAR_OTETVportlet_platform=IPTV&_channelprogram_WAR_OTETVportlet_date=${date.format(
       'DD-MM-YYYY'
