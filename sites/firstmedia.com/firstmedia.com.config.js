@@ -8,6 +8,9 @@ dayjs.extend(utc);
 module.exports = {
   site: "firstmedia.com",
   days: 1,
+  request: {
+    timeout: 30000 // 30 seconds
+  },
   url: function ({ channel, date }) {
     return `https://www.firstmedia.com/ajax/schedule?date=${date.format("DD/MM/YYYY")
       }&channel=${channel.site_id}&start_time=1&end_time=24&need_channels=0`;
