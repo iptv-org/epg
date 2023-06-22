@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site site="firstmedia.com">
+    <channels>
+        <channel lang="en" xmltv_id="ABCAustralia.au" site_id="251">ABC Australia</channel>
+        <channel lang="en" xmltv_id="AlJazeeraChannel.qa" site_id="245">Al Jazeera Arabic</channel>
+        <channel lang="en" xmltv_id="AlJazeeraEnglish.qa" site_id="243">Al Jazeera International</channel>
+        <channel lang="en" xmltv_id="AlQuranAlKareemTV.sa" site_id="47">Al Quran Al Kareem</channel>
+        <channel lang="en" xmltv_id="AnhuiTV.cn" site_id="217">ANHUI TV</channel>
+        <channel lang="en" xmltv_id="AnimalPlanetSoutheastAsia.sg" site_id="105">Animal Planet</channel>
+        <channel lang="en" xmltv_id="AnimaxAsia.sg" site_id="52">Animax</channel>
+        <channel lang="en" xmltv_id="ANTV.id" site_id="13">ANTV</channel>
+        <channel lang="en" xmltv_id="ArirangTV.kr" site_id="234">Arirang</channel>
+        <channel lang="en" xmltv_id="AsianFoodNetwork.sg" site_id="76">Asian Food Network</channel>
+        <channel lang="en" xmltv_id="AXNIndonesia.id" site_id="51">AXN</channel>
+        <channel lang="en" xmltv_id="BabyFirst.us" site_id="128">BabyFirst</channel>
+        <!-- <channel lang="en" xmltv_id="fill" site_id="34">Balai Kota Bandung</channel>
+        <channel lang="en" xmltv_id="fill" site_id="33">Balai Kota Channel</channel>
+        <channel lang="en" xmltv_id="fill" site_id="66">Balai Kota Medan</channel> -->
+        <!-- NOT SURE WHAT IS THE ID FOR THESE CHANNELS
+        <channel lang="en" xmltv_id="fill" site_id="230">BBC WORLD</channel>
+        <channel lang="en" xmltv_id="fill" site_id="235">BBC World News</channel>
+        <channel lang="en" xmltv_id="fill" site_id="395">BBC World News HD</channel> -->
+        <channel lang="en" xmltv_id="BeritaSatu.id" site_id="1">Berita Satu</channel>
+        <channel lang="en" xmltv_id="BeritaSatuWorld.id" site_id="19">Berita Satu World</channel>
+        <!-- <channel lang="en" xmltv_id="fill" site_id="239">Bloomberg</channel> -->
+        <channel lang="en" xmltv_id="BloombergTV.us" site_id="231">BLOOMBERG TELEVISION</channel>
+        <channel lang="en" xmltv_id="BoomerangAsia.sg" site_id="372">Boomerang HD</channel>
+        <channel lang="en" xmltv_id="CartoonNetworkAsia.sg" site_id="127">Cartoon Network</channel>
+        <channel lang="en" xmltv_id="CCTV4Asia.cn" site_id="209">CCTV 4</channel>
+        <channel lang="en" xmltv_id="CelestialMoviesIndonesia.id" site_id="204">Celestial Movie</channel>
+        <channel lang="en" xmltv_id="CGTN.cn" site_id="210">CGTN</channel>
+        <channel lang="en" xmltv_id="CGTNDocumentary.cn" site_id="405">CGTN Documentary HD</channel>
+        <channel lang="en" xmltv_id="ChampionsTV1.id" site_id="141">Champions TV 1</channel>
+        <channel lang="en" xmltv_id="ChampionsTV2.id" site_id="142">Champions TV 2</channel>
+        <channel lang="en" xmltv_id="ChampionsTV3.id" site_id="143">Champions TV 3</channel>
+        <channel lang="en" xmltv_id="ChampionsTV4.id" site_id="144">Champions TV 4 SD</channel>
+        <channel lang="en" xmltv_id="CNA.sg" site_id="242">Channel News Asia</channel>
+        <channel lang="en" xmltv_id="CinemaWorld.my" site_id="337">Cinema World HD</channel>
+        <channel lang="en" xmltv_id="CinemaxAsia.sg" site_id="290">Cinemax</channel>
+        <channel lang="en" xmltv_id="CitraBioskop.id" site_id="376">Citra Biskop HD</channel>
+        <channel lang="en" xmltv_id="CitraDangdut.id" site_id="377">Citra Dangdut HD</channel>
+        <channel lang="en" xmltv_id="CitraDrama.id" site_id="378">CItra Drama HD</channel>
+        <channel lang="en" xmltv_id="CitraEntertainment.id" site_id="379">Citra Entertainment HD</channel>
+        <channel lang="en" xmltv_id="CitraMuslim.id" site_id="410">Citra Muslim HD</channel>
+        <!-- <channel lang="en" xmltv_id="fill" site_id="236">CNN International</channel> -->
+        <channel lang="en" xmltv_id="CrimePlusInvestigationAsia.sg" site_id="349">Crime
+            Investigation HD</channel>
+        <channel lang="en" xmltv_id="DaVinciAsia.de" site_id="371">Da Vinci HD</channel>
+        <channel lang="en" xmltv_id="DAAITV.id" site_id="27">DAAI TV</channel>
+        <channel lang="en" xmltv_id="DiscoveryAsia.sg" site_id="364">Discovery Asia HD</channel>
+        <channel lang="en" xmltv_id="DiscoveryChannelIndonesia.id" site_id="101">Discovery Channel</channel>
+        <!-- <channel lang="en" xmltv_id="fill" site_id="299">DIVA</channel> -->
+        <channel lang="en" xmltv_id="DMAXSoutheastAsia.sg" site_id="347">DMAX HD</channel>
+        <channel lang="en" xmltv_id="DragonTV.cn" site_id="215">Dragon TV</channel>
+        <channel lang="en" xmltv_id="DreamWorksChannelAsia.us" site_id="374">Dream Works HD</channel>
+        <channel lang="en" xmltv_id="DWDeutsch.de" site_id="232">DW Deutsch</channel>
+        <channel lang="en" xmltv_id="DWEnglish.de" site_id="233">DW English</channel>
+        <channel lang="en" xmltv_id="eGGNetwork.my" site_id="148">eGG Channel</channel>
+        <channel lang="en" xmltv_id="EWTNAsiaPacific.us" site_id="29">Eternal Word Television
+            Network (EWTN))</channel>
+        <channel lang="en" xmltv_id="EuronewsEnglish.fr" site_id="60">Euronews</channel>
+        <!-- <channel lang="en" xmltv_id="fill" site_id="151">Eurosport</channel> -->
+        <channel lang="en" xmltv_id="FashionTVAsia.fr" site_id="81">Fashion TV</channel>
+        <!-- FIRSTMEDIA SPECIFIC CHANNELS - NOT ON DB YET
+        <channel lang="en" xmltv_id="fill" site_id="300">First Atmos HD</channel>
+        <channel lang="en" xmltv_id="fill" site_id="145">First Football</channel>
+        <channel lang="en" xmltv_id="fill" site_id="327">First Football HD</channel>
+        <channel lang="en" xmltv_id="fill" site_id="900">First Highlights HD</channel>
+        <channel lang="en" xmltv_id="fill" site_id="3">FIRST LIFESTYLE</channel>
+        <channel lang="en" xmltv_id="fill" site_id="303">First Lifestyle HD</channel>
+        <channel lang="en" xmltv_id="fill" site_id="999">First Warriors HD</channel> -->
+        <channel lang="en" xmltv_id="FoodNetworkAsia.sg" site_id="355">Food Network HD</channel>
+        <channel lang="en" xmltv_id="FoxNewsChannel.us" site_id="237">Fox News</channel>
+        <channel lang="en" xmltv_id="France24English.fr" site_id="246">France 24</channel>
+        <channel lang="en" xmltv_id="Galaxy.id" site_id="381">Galaxy HD</channel>
+        <channel lang="en" xmltv_id="GalaxyPremium.id" site_id="382">Galaxy Premium HD</channel>
+        <channel lang="en" xmltv_id="GarudaTV.id" site_id="45">Garuda TV</channel>
+        <channel lang="en" xmltv_id="GEM.sg" site_id="254">GEM</channel>
+        <channel lang="en" xmltv_id="GMS.id" site_id="86">GMS Channel</channel>
+        <channel lang="en" xmltv_id="GTV.id" site_id="53">GTV</channel>
+        <channel lang="en" xmltv_id="HBOAsia.sg" site_id="285">HBO</channel>
+        <channel lang="en" xmltv_id="HBOFamilyAsia.sg" site_id="288">HBO Family</channel>
+        <channel lang="en" xmltv_id="HBOHitsAsia.sg" site_id="287">HBO Hits</channel>
+        <channel lang="en" xmltv_id="HBOSignatureAsia.sg" site_id="286">HBO Signature</channel>
+        <channel lang="en" xmltv_id="HGTVAsia.us" site_id="354">HGTV HD</channel>
+        <channel lang="en" xmltv_id="HistoryAsia.us" site_id="365">History HD</channel>
+        <channel lang="en" xmltv_id="HITS.sg" site_id="326">HITS HD</channel>
+        <channel lang="en" xmltv_id="HITSMovies.sg" site_id="325">HITS MOVIES HD</channel>
+        <!-- <channel lang="en" xmltv_id="fill" site_id="324">HITS NOW HD</channel> -->
+        <!-- <channel lang="en" xmltv_id="fill" site_id="40">Holland Village Jakarta</channel> -->
+        <channel lang="en" xmltv_id="Horee.id" site_id="375">Horee! HD</channel>
+        <channel lang="en" xmltv_id="HunanTV.cn" site_id="214">Hunan TV</channel>
+        <channel lang="en" xmltv_id="IDXChannel.id" site_id="415">IDX Channel HD</channel>
+        <channel lang="en" xmltv_id="IMC.id" site_id="80">IMC</channel>
+        <channel lang="en" xmltv_id="Indosiar.id" site_id="11">Indosiar</channel>
+        <channel lang="en" xmltv_id="INews.id" site_id="65">iNews</channel>
+        <!-- <channel lang="en" xmltv_id="fill" site_id="2">Jakarta Globe News Channel</channel> -->
+        <channel lang="en" xmltv_id="JakTV.id" site_id="62">Jakarta TV - Jak TV</channel>
+        <channel lang="en" xmltv_id="JTV.id" site_id="17">Jawa Pos Media Televisi - JTV</channel>
+        <channel lang="en" xmltv_id="JiangsuTV.cn" site_id="216">Jiangsu TV</channel>
+        <!-- <channel lang="en" xmltv_id="fill" site_id="23">Kairos</channel>
+        <channel lang="en" xmltv_id="fill" site_id="30">Karaoke</channel> -->
+        <channel lang="en" xmltv_id="KBSWorld.kr" site_id="244">KBS World</channel>
+        <channel lang="en" xmltv_id="KIX.hk" site_id="336">KIX HD</channel>
+        <channel lang="en" xmltv_id="KompasTV.id" site_id="15">Kompas TV</channel>
+        <channel lang="en" xmltv_id="LifetimeAsia.us" site_id="359">Lifetime HD</channel>
+        <!-- <channel lang="en" xmltv_id="fill" site_id="25">Liga Mahasiswa</channel> -->
+        <!-- <channel lang="en" xmltv_id="fill" site_id="88">Light</channel>
+        <channel lang="en" xmltv_id="fill" site_id="328">Liverpool FC TV HD</channel> -->
+        <channel lang="en" xmltv_id="LoveNature.ca" site_id="700">Love Nature 4K</channel>
+        <channel lang="en" xmltv_id="LoveNature4K.ca" site_id="368">Love Nature HD</channel>
+        <!-- <channel lang="en" xmltv_id="fill" site_id="38">Meikarta District 1</channel>
+        <channel lang="en" xmltv_id="fill" site_id="43">Meikarta District 2</channel> -->
+        <channel lang="en" xmltv_id="MetroGlobeNetwork.id" site_id="36">Metro Globe Network - MGN</channel>
+        <channel lang="en" xmltv_id="MetroTV.id" site_id="7">Metro TV</channel>
+        <channel lang="en" xmltv_id="MNCNews.id" site_id="37">MNC News</channel>
+        <channel lang="en" xmltv_id="MTVAsia.sg" site_id="220">MTV Asia</channel>
+        <channel lang="en" xmltv_id="MTVLive.uk" site_id="358">MTV Live HD</channel>
+        <channel lang="en" xmltv_id="MyZenTV.fr" site_id="348">MyZen TV HD</channel>
+        <channel lang="en" xmltv_id="NationalGeographicIndonesia.id" site_id="110">National
+            Geographic Channel</channel>
+        <channel lang="en" xmltv_id="NationalGeographicWildIndonesia.id" site_id="111">National
+            Geographic Wild</channel>
+        <channel lang="en" xmltv_id="NET.id" site_id="5">NET.</channel>
+        <channel lang="en" xmltv_id="NHKWorldJapan.jp" site_id="341">NHK World Japan HD</channel>
+        <channel lang="en" xmltv_id="NHKWorldPremium.jp" site_id="247">NHK World Premium</channel>
+        <channel lang="en" xmltv_id="NickJrAsia.sg" site_id="124">Nick jr.</channel>
+        <channel lang="en" xmltv_id="NickelodeonAsia.sg" site_id="125">Nickelodeon</channel>
+        <channel lang="en" xmltv_id="OChannel.id" site_id="26">O Channel</channel>
+        <channel lang="en" xmltv_id="OneTVAsia.sg" site_id="205">ONE</channel>
+        <channel lang="en" xmltv_id="ParamountNetworkIndonesia.id" site_id="309">Paramount Network
+            HD</channel>
+        <channel lang="en" xmltv_id="PhoenixChineseChannel.hk" site_id="203">Phoenix Chinese Channel</channel>
+        <channel lang="en" xmltv_id="PhoenixInfoNewsChannel.hk" site_id="202">Phoenix Info News</channel>
+        <!-- <channel lang="en" xmltv_id="fill" site_id="89">Praise</channel> -->
+        <channel lang="en" xmltv_id="PremierSports.ph" site_id="156">Premier Sports</channel>
+        <channel lang="en" xmltv_id="RaiItaliaAsia.it" site_id="258">Rai Italia</channel>
+        <channel lang="en" xmltv_id="RajawaliTV.id" site_id="35">Rajawali TV</channel>
+        <channel lang="en" xmltv_id="Reformed21.id" site_id="21">Reformed 21</channel>
+        <channel lang="en" xmltv_id="ROCKEntertainment.sg" site_id="335">Rock Entertainment HD</channel>
+        <channel lang="en" xmltv_id="ROCKExtreme.sg" site_id="57">Rock Extreme</channel>
+        <channel lang="en" xmltv_id="RT.ru" site_id="238">Russia Today</channel>
+        <channel lang="en" xmltv_id="SCTV.id" site_id="10">SCTV</channel>
+        <channel lang="en" xmltv_id="SEAToday.id" site_id="416">SEA Today HD</channel>
+        <!-- <channel lang="en" xmltv_id="fill" site_id="24">Sekolah Pelita Harapan Channel -
+        SPH</channel> -->
+        <!-- <channel lang="en" xmltv_id="fill" site_id="218">Shenzen TV</channel> -->
+        <channel lang="en" xmltv_id="ShineTV.nz" site_id="87">Shine</channel>
+        <channel lang="en" xmltv_id="SmithsonianChannelAsia.us" site_id="366">Smithsonian HD</channel>
+        <channel lang="en" xmltv_id="SPOTV.kr" site_id="139">SPOTV</channel>
+        <channel lang="en" xmltv_id="SPOTV2.kr" site_id="140">SPOTV 2</channel>
+        <channel lang="en" xmltv_id="StarChineseChannel.hk" site_id="207">Star Chinese Channel</channel>
+        <channel lang="en" xmltv_id="StarGold.in" site_id="160">Star Gold</channel>
+        <channel lang="en" xmltv_id="StarPlus.in" site_id="171">Star Plus</channel>
+        <channel lang="en" xmltv_id="StingrayDJAZZ.ca" site_id="334">Stingray Djazz HD</channel>
+        <channel lang="en" xmltv_id="StingrayFestival4K.ca" site_id="702">Stingray Festival 4K</channel>
+        <!-- <channel lang="en" xmltv_id="fill" site_id="701">Stingray Naturescape 4K</channel> -->
+        <channel lang="en" xmltv_id="StingrayNaturescape.ca" site_id="367">Stingray Naturescape HD</channel>
+        <channel lang="en" xmltv_id="StingrayNow4K.ca" site_id="703">Stingray Now 4K</channel>
+        <!-- <channel lang="en" xmltv_id="fill" site_id="345">Stingray Now HD</channel> -->
+        <channel lang="en" xmltv_id="AlSunnahAlNabawiyahTV.sa" site_id="48">Sunnah TV</channel>
+        <channel lang="en" xmltv_id="TBNAsia.us" site_id="61">TBN Asia</channel>
+        <channel lang="en" xmltv_id="TechStorm.sg" site_id="333">Tech Storm HD</channel>
+        <channel lang="en" xmltv_id="TLCSoutheastAsia.sg" site_id="72">The Learning Channel - TLC</channel>
+        <channel lang="en" xmltv_id="Trans7.id" site_id="8">TRANS 7</channel>
+        <channel lang="en" xmltv_id="TransTV.id" site_id="9">TRANS TV</channel>
+        <channel lang="en" xmltv_id="TRTWorld.tr" site_id="240">TRT World</channel>
+        <!-- <channel lang="en" xmltv_id="fill" site_id="314">TSB Now 1 HD</channel>
+        <channel lang="en" xmltv_id="fill" site_id="315">TSB Now 2 HD</channel>
+        <channel lang="en" xmltv_id="fill" site_id="316">TSB Now 3 HD</channel> -->
+        <channel lang="en" xmltv_id="TV5MondeStyle.fr" site_id="352">TV 5 Monde Style HD</channel>
+        <channel lang="en" xmltv_id="tvOne.id" site_id="14">TV One</channel>
+        <channel lang="en" xmltv_id="TVRParlemen.id" site_id="18">TV PARLEMEN</channel>
+        <channel lang="en" xmltv_id="TV5MondeAsia.fr" site_id="260">TV5 Monde</channel>
+        <channel lang="en" xmltv_id="TV9Nusantara.id" site_id="44">TV9</channel>
+        <channel lang="en" xmltv_id="TVBXingHe.hk" site_id="201">TVB Xing He</channel>
+        <channel lang="en" xmltv_id="TVBSAsia.tw" site_id="211">TVBS Asia</channel>
+        <channel lang="en" xmltv_id="TVBSNews.tw" site_id="212">TVBS News</channel>
+        <channel lang="en" xmltv_id="tvNAsia.hk" site_id="339">TVN HD</channel>
+        <channel lang="en" xmltv_id="tvNMoviesAsia.hk" site_id="343">TVN Movies HD</channel>
+        <channel lang="en" xmltv_id="TVRINasional.id" site_id="16">TVRI Nasional</channel>
+        <channel lang="en" xmltv_id="USATODAY.us" site_id="401">USA Today HD</channel>
+        <!-- <channel lang="en" xmltv_id="fill" site_id="50">West Java Network</channel> -->
+        <channel lang="en" xmltv_id="WION.in" site_id="176">Wion</channel>
+        <channel lang="en" xmltv_id="XingKongChina.cn" site_id="206">Xing Kong China</channel>
+        <channel lang="en" xmltv_id="ZeeAction.in" site_id="178">Zee Action</channel>
+        <channel lang="en" xmltv_id="ZeeBioskop.id" site_id="161">Zee Bioskop</channel>
+        <channel lang="en" xmltv_id="ZeeBollywood.in" site_id="177">Zee Bollywood</channel>
+        <channel lang="en" xmltv_id="ZeeCinemaAsia.in" site_id="175">Zee Cinema</channel>
+        <channel lang="en" xmltv_id="ZeeTVAsiaPacific.sg" site_id="172">ZEE TV</channel>
+        <channel lang="en" xmltv_id="ZhejiangSatelliteTV.cn" site_id="208">Zhejiang TV</channel>
+    </channels>
+</site>
