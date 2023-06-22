@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/tvguide.com/tvguide.com.config.js --channels=sites/tvguide.com/tvguide.com.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/tvguide.com/tvguide.com.config.js --channels=sites/tvguide.com/tvguide.com.channels.xml --output=guide.xml
 
 const { parser, url } = require('./tvguide.com.config.js')
 const fs = require('fs')
@@ -20,7 +20,7 @@ const channel = {
 
 it('can generate valid url', () => {
   expect(url({ date, channel })).toBe(
-    'https://cmg-prod.apigee.net/v1/xapi/tvschedules/tvguide/9100001138/web?start=1667088000&duration=1440&channelSourceIds=9200018514'
+    'https://fandom-prod.apigee.net/v1/xapi/tvschedules/tvguide/9100001138/web?start=1667088000&duration=1440&channelSourceIds=9200018514'
   )
 })
 
@@ -30,7 +30,7 @@ it('can parse response', async () => {
   axios.get.mockImplementation(url => {
     if (
       url ===
-      'https://cmg-prod.apigee.net/v1/xapi/tvschedules/tvguide/programdetails/6060613824/web'
+      'https://fandom-prod.apigee.net/v1/xapi/tvschedules/tvguide/programdetails/6060613824/web'
     ) {
       return Promise.resolve({
         data: JSON.parse(fs.readFileSync(path.resolve(__dirname, '__data__/program.json')))
