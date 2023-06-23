@@ -10,9 +10,9 @@ body:
 
   - type: input
     attributes:
-      label: Guide
-      description: Link to the broken guide
-      placeholder: 'https://iptv-org.github.io/epg/guides/us.xml'
+      label: Site
+      description: The name of the site listed in the [sites](https://github.com/iptv-org/epg/tree/master/sites) folder
+      placeholder: 'guidatv.sky.it'
     validations:
       required: true
 
