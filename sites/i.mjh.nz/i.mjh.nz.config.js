@@ -13,10 +13,11 @@ module.exports = {
   site: 'i.mjh.nz',
   days: 2,
   request: {
+    timeout: 30000, // 30s
     cache: {
       ttl: 3 * 60 * 60 * 1000 // 3h
     },
-    maxContentLength: 30 * 1024 * 1024 // 30Mb
+    maxContentLength: 100 * 1024 * 1024 // 100Mb
   },
   url: function ({ channel }) {
     const [path] = channel.site_id.split('#')
