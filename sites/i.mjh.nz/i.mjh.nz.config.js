@@ -13,10 +13,11 @@ module.exports = {
   site: 'i.mjh.nz',
   days: 2,
   request: {
+    timeout: 30000, // 30s
     cache: {
       ttl: 3 * 60 * 60 * 1000 // 3h
     },
-    maxContentLength: 30 * 1024 * 1024 // 30Mb
+    maxContentLength: 100 * 1024 * 1024 // 100Mb
   },
   url: function ({ channel }) {
     const [path] = channel.site_id.split('#')
@@ -26,7 +27,7 @@ module.exports = {
   parser: function ({ content, channel, date, cached }) {
     const items = parseItems(content, channel, date)
 
-    return items.map(item => {
+    let programs = items.map(item => {
       return {
         ...item,
         title: getTitle(item),
@@ -34,6 +35,10 @@ module.exports = {
         categories: getCategories(item)
       }
     })
+
+    programs = mergeMovieParts(programs)
+
+    return programs
   },
   async channels({ path, lang = 'en' }) {
     let xml = await axios
@@ -50,6 +55,27 @@ module.exports = {
       }
     })
   }
+}
+
+function mergeMovieParts(programs) {
+  let output = []
+
+  programs.forEach(prog => {
+    let prev = output[output.length - 1]
+    let found =
+      prev &&
+      prog.categories.includes('Movie') &&
+      prev.title === prog.title &&
+      prev.description === prog.description
+
+    if (found) {
+      prev.stop = prog.stop
+    } else {
+      output.push(prog)
+    }
+  })
+
+  return output
 }
 
 function getTitle(item) {
