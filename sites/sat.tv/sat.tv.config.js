@@ -14,6 +14,7 @@ module.exports = {
   days: 2,
   url: API_ENDPOINT,
   request: {
+    timeout: 30000, // 30 seconds
     method: 'POST',
     headers({ channel }) {
       return {
