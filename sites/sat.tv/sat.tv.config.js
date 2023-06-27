@@ -23,11 +23,12 @@ module.exports = {
       }
     },
     data({ channel, date }) {
+      const [satSatellite, satLineup] = channel.site_id.split('#')
       const params = new URLSearchParams()
       params.append('dateFiltre', date.format('YYYY-MM-DD'))
       params.append('hoursFiltre', '0')
-      params.append('satLineup', '38')
-      params.append('satSatellite', '1')
+      params.append('satLineup', satLineup)
+      params.append('satSatellite', satSatellite)
       params.append('userDateTime', date.valueOf())
       params.append('userTimezone', 'Europe/London')
 
@@ -54,12 +55,12 @@ module.exports = {
 
     return programs
   },
-  async channels({ lang }) {
+  async channels({ lang, satLineup, satSatellite }) {
     const params = new URLSearchParams()
     params.append('dateFiltre', dayjs().format('YYYY-MM-DD'))
     params.append('hoursFiltre', '0')
-    params.append('satLineup', '38')
-    params.append('satSatellite', '1')
+    params.append('satLineup', satLineup)
+    params.append('satSatellite', satSatellite)
     params.append('userDateTime', dayjs().valueOf())
     params.append('userTimezone', 'Europe/London')
     const data = await axios
@@ -116,10 +117,11 @@ function parseDuration($item) {
 }
 
 function parseItems(content, channel) {
+  const [, , site_id] = channel.site_id.split('#')
   const $ = cheerio.load(content)
   const channelData = $('.main-container-channels-events > .container-channel-events')
     .filter((index, el) => {
-      return $(el).find('.channel-title').text().trim() === channel.site_id
+      return $(el).find('.channel-title').text().trim() === site_id
     })
     .first()
   if (!channelData) return []
