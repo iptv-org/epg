@@ -1,4 +1,4 @@
-// npm run channels:parse -- --config=sites/sat.tv/sat.tv.config.js --output=sites/sat.tv/sat.tv.channels.xml --set=lang:ar
+// npm run channels:parse -- --config=sites/sat.tv/sat.tv.config.js --output=sites/sat.tv/sat.tv.channels.xml --set=lang:ar --set=satSatellite:1 --set=satLineup:38
 // npx epg-grabber --config=sites/sat.tv/sat.tv.config.js --channels=sites/sat.tv/sat.tv.channels.xml --output=guide.xml
 
 const { parser, url, request } = require('./sat.tv.config.js')
@@ -12,7 +12,7 @@ dayjs.extend(utc)
 
 const date = dayjs.utc('2023-06-26', 'YYYY-MM-DD').startOf('d')
 const channel = {
-  site_id: 'السعودية',
+  site_id: '1#38#السعودية',
   xmltv_id: 'AlSaudiya.sa',
   lang: 'ar'
 }
@@ -72,7 +72,7 @@ it('can parse response', () => {
 
 it('can parse response in english', () => {
   const channel = {
-    site_id: 'Saudi HD',
+    site_id: '1#38#Saudi HD',
     xmltv_id: 'AlSaudiya.sa',
     lang: 'en'
   }
