@@ -21,7 +21,7 @@ async function main() {
   site = result.site
   channels = result.channels
   channels = channels.map(c => {
-    c.xmltv_id = c.id
+    c.xmltv_id = c.xmltv_id
     return c
   })
   await api.channels.load()
