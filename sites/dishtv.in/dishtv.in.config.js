@@ -1,3 +1,4 @@
+const axios = require('axios')
 const cheerio = require('cheerio')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
@@ -40,6 +41,73 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels() {
+    const channelguide = await axios
+      .get(`https://www.dishtv.in/channelguide/`)
+      .then(r => r.data)
+      .catch(console.log)
+    const $channelguide = cheerio.load(channelguide)
+
+    let ids = []
+    $channelguide('#MainContent_recordPagging li').each((i, item) => {
+      const onclick = $channelguide(item).find('a').attr('onclick')
+      const [, list] = onclick.match(/ShowNextPageResult\('([^']+)/) || [null, null]
+
+      ids = ids.concat(list.split(','))
+    })
+    ids = ids.filter(Boolean)
+
+    const channels = {}
+    const channelList = await axios
+      .post(`https://www.dishtv.in/WebServiceMethod.aspx/GetChannelListFromMobileAPI`, {
+        strChannel: ''
+      })
+      .then(r => r.data)
+      .catch(console.log)
+    const $channelList = cheerio.load(channelList.d)
+    $channelList('#tblpackChnl > div').each((i, item) => {
+      let num = $channelList(item).find('p:nth-child(2)').text().trim()
+      const name = $channelList(item).find('p').first().text().trim()
+
+      if (num === '') return
+
+      channels[parseInt(num)] = {
+        name
+      }
+    })
+
+    const date = dayjs().add(1, 'd')
+    const promises = []
+    for (let id of ids) {
+      const promise = axios
+        .post(
+          `https://www.dishtv.in/WhatsonIndiaWebService.asmx/LoadPagginResultDataForProgram`,
+          {
+            Channelarr: id,
+            fromdate: date.format('YYYYMMDD[0000]'),
+            todate: date.format('YYYYMMDD[2300]')
+          },
+          { timeout: 5000 }
+        )
+        .then(r => r.data)
+        .then(data => {
+          const $channelGuide = cheerio.load(data.d)
+
+          const num = $channelGuide('.cnl-fav > a > span').text().trim()
+
+          if (channels[num]) {
+            channels[num].site_id = id
+          }
+        })
+        .catch(console.log)
+
+      promises.push(promise)
+    }
+
+    await Promise.allSettled(promises)
+
+    return Object.values(channels)
   }
 }
 
