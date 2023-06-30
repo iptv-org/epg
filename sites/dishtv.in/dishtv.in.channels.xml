@@ -15,6 +15,7 @@
     <channel lang="en" xmltv_id="ABPNews.in" site_id="10000000000180000">ABP News India</channel>
     <channel lang="en" xmltv_id="AlankarTV.in" site_id="10000000029250000">Alankar TV</channel>
     <channel lang="en" xmltv_id="AlJazeeraEnglish.qa" site_id="10000000053730000">Aljazeera English</channel>
+    <channel lang="en" xmltv_id="Andflix.in" site_id="10000000059360000">&amp; flix</channel>
     <channel lang="en" xmltv_id="Andpictures.in" site_id="10000000024300000">&amp; pictures</channel>
     <channel lang="en" xmltv_id="AndpriveHD.in" site_id="10000000053720000">&amp; privé HD</channel>
     <channel lang="en" xmltv_id="AndTV.in" site_id="10000000028050000">&amp; TV</channel>
@@ -116,7 +117,6 @@
     <channel lang="en" xmltv_id="EZMall.in" site_id="10000000055410000">EZMall</channel>
     <channel lang="en" xmltv_id="FaktMarathi.in" site_id="10000000032000000">Fakt Marathi</channel>
     <channel lang="en" xmltv_id="Filamchi.in" site_id="10000000073830000">Filamchi</channel>
-    <channel lang="en" xmltv_id="Andflix.in" site_id="10000000059360000">&amp; flix</channel>
     <channel lang="en" xmltv_id="FlowersTV.in" site_id="10000000028570000">Flowers TV</channel>
     <channel lang="en" xmltv_id="FoxLifeIndia.in" site_id="10000000013350000">Fox Life India</channel>
     <channel lang="en" xmltv_id="GeminiTV.in" site_id="10000000000580000">Gemini TV</channel>
@@ -159,6 +159,7 @@
     <channel lang="en" xmltv_id="MoviePlus.jp" site_id="10000000070980000">Movie Plus</channel>
     <channel lang="en" xmltv_id="MoviesNow.in" site_id="10000000006930000">Movies Now</channel>
     <channel lang="en" xmltv_id="MoviesNowPlus.in" site_id="10000000025870000">Movies Now +</channel>
+    <channel lang="en" xmltv_id="MTVBeats.in" site_id="10000000048710000">MTV Beats</channel>
     <channel lang="en" xmltv_id="MTVIndia.in" site_id="10000000000480000">MTV India</channel>
     <channel lang="en" xmltv_id="NaaptolTamil.in" site_id="10000000025590000">Naaptol Tamil</channel>
     <channel lang="en" xmltv_id="NandighoshaTV.in" site_id="10000000072550000">Nandighosha TV</channel>
@@ -188,6 +189,7 @@
     <channel lang="en" xmltv_id="NewsStateUPUK.in" site_id="10000000021290000">News State UP &amp; UK</channel>
     <channel lang="en" xmltv_id="NewsTimeBangla.in" site_id="10000000004360000">NewsTime Bangla</channel>
     <channel lang="en" xmltv_id="NickelodeonIndia.in" site_id="10000000001010000">Nickelodeon India</channel>
+    <channel lang="en" xmltv_id="NickelodeonSonic.in" site_id="10000000007610000">Sonic Nickelodeon</channel>
     <channel lang="en" xmltv_id="NickHDPlus.in" site_id="10000000039210000">Nick HD+</channel>
     <channel lang="en" xmltv_id="NickJrIndia.in" site_id="10000000013230000">Nick Jr India</channel>
     <channel lang="en" xmltv_id="OdishaTV.in" site_id="10000000003380000">Odisha TV</channel>
@@ -225,17 +227,15 @@
     <channel lang="en" xmltv_id="SanskarTV.in" site_id="10000000001160000">Sanskar TV</channel>
     <channel lang="en" xmltv_id="SantvaniChannel.in" site_id="10000000075300000">Santvani Channel</channel>
     <channel lang="en" xmltv_id="SatsangTV.in" site_id="10000000003720000">Satsang TV</channel>
-    <channel lang="en" xmltv_id="SonyEntertainmentTelevision.in" site_id="10000000009390000">SET India</channel>
     <channel lang="en" xmltv_id="ShemarooMarathiBana.in" site_id="10000000072640000">Shemaroo Marathi Bana</channel>
     <channel lang="en" xmltv_id="ShemarooTV.in" site_id="10000000073540000">Shemaroo TV</channel>
     <channel lang="en" xmltv_id="ShubhTV.in" site_id="10000000041760000">Shubh TV</channel>
     <channel lang="en" xmltv_id="SongdewTV.in" site_id="10000000063850000">Songdew TV</channel>
-    <channel lang="en" xmltv_id="NickelodeonSonic.in" site_id="10000000007610000">Sonic Nickelodeon</channel>
     <channel lang="en" xmltv_id="SonyAath.in" site_id="10000000004390000">Sony Aath</channel>
     <channel lang="en" xmltv_id="SonyBBCEarth.in" site_id="10000000050940000">Sony BBC Earth</channel>
+    <channel lang="en" xmltv_id="SonyEntertainmentTelevision.in" site_id="10000000009390000">SET India</channel>
     <channel lang="en" xmltv_id="SonyMarathi.in" site_id="10000000060520000">Sony Marathi</channel>
     <channel lang="en" xmltv_id="SonyMax2.in" site_id="10000000022850000">Sony Max 2</channel>
-    <!-- <channel lang="en" xmltv_id="" site_id="10000000033520000">Sony Max India</channel> -->
     <channel lang="en" xmltv_id="SonyPal.in" site_id="10000000025050000">Sony Pal</channel>
     <channel lang="en" xmltv_id="SonyPix.in" site_id="10000000023150000">Sony Pix</channel>
     <channel lang="en" xmltv_id="SonySABIndia.in" site_id="10000000048550000">Sony SAB TV India</channel>
@@ -246,8 +246,8 @@
     <channel lang="en" xmltv_id="SonyWah.in" site_id="10000000043750000">Sony Wah</channel>
     <channel lang="en" xmltv_id="SonyYay.in" site_id="10000000051840000">Sony Yay!</channel>
     <channel lang="en" xmltv_id="StarBharat.in" site_id="10000000053360000">Star Bharat India</channel>
-    <channel lang="en" xmltv_id="StarGold2.in" site_id="10000000009260000">Star Gold 2</channel>
     <channel lang="en" xmltv_id="StarGold.in" site_id="10000000006960000">Star Gold HD India</channel>
+    <channel lang="en" xmltv_id="StarGold2.in" site_id="10000000009260000">Star Gold 2</channel>
     <channel lang="en" xmltv_id="StarGoldSelect.in" site_id="10000000050920000">Star Gold Select</channel>
     <channel lang="en" xmltv_id="StarJalsha.in" site_id="10000000041830000">Star Jalsha</channel>
     <channel lang="en" xmltv_id="StarMaa.in" site_id="10000000001220000">Star Maa</channel>
