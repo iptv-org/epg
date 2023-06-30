@@ -26,6 +26,10 @@ file.exists = function (filepath) {
   return fs.exists(path.resolve(filepath))
 }
 
+file.existsSync = function (filepath) {
+  return fs.existsSync(path.resolve(filepath))
+}
+
 file.read = function (filepath) {
   return fs.readFile(path.resolve(filepath), { encoding: 'utf8' }).catch(console.error)
 }
