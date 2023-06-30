@@ -1,3 +1,4 @@
+// npm run channels:parse -- --config=./sites/dishtv.in/dishtv.in.config.js --output=./sites/dishtv.in/dishtv.in.channels.xml
 // npx epg-grabber --config=sites/dishtv.in/dishtv.in.config.js --channels=sites/dishtv.in/dishtv.in.channels.xml --output=guide.xml --days=2
 
 const { parser, url, request } = require('./dishtv.in.config.js')
