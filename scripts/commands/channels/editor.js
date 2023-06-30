@@ -5,10 +5,11 @@ const { program } = require('commander')
 const inquirer = require('inquirer')
 
 program
-  .requiredOption('-i, --input <file>', 'Load channels from the file')
+  .argument('<filepath>', 'Path to *.channels.xml file to edit')
   .option('-c, --country <name>', 'Source country', 'us')
   .parse(process.argv)
 
+const filepath = program.args[0]
 const options = program.opts()
 const defaultCountry = options.country
 const newLabel = ` [new]`
@@ -17,7 +18,12 @@ let site
 let channels = []
 
 async function main() {
-  let result = await parser.parseChannels(options.input)
+  if (!(await file.exists(filepath))) {
+    throw new Error(`File "${filepath}" does not exists`)
+    return
+  }
+
+  let result = await parser.parseChannels(filepath)
   site = result.site
   channels = result.channels
   channels = channels.map(c => {
@@ -59,11 +65,13 @@ async function main() {
 main()
 
 function save() {
+  if (!file.existsSync(filepath)) return
+
   const output = xml.create(channels, site)
 
-  file.writeSync(options.input, output)
+  file.writeSync(filepath, output)
 
-  logger.info(`\nFile '${options.input}' successfully saved`)
+  logger.info(`\nFile '${filepath}' successfully saved`)
 }
 
 nodeCleanup(() => {
