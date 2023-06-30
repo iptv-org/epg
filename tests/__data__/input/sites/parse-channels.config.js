@@ -10,9 +10,13 @@ module.exports = {
     return [
       {
         lang: 'en',
-        xmltv_id: 'CNNInternational.us',
         site_id: 140,
         name: 'CNN International'
+      },
+      {
+        lang: 'en',
+        site_id: 240,
+        name: 'BBC World News'
       }
     ]
   }
