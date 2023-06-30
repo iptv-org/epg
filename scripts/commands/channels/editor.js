@@ -118,6 +118,7 @@ async function getSimilar(list, channelId) {
 function generateCode(name, country) {
   const id = transliterate(name)
     .replace(/\+/gi, 'Plus')
+    .replace(/^\&/gi, 'And')
     .replace(/[^a-z\d]+/gi, '')
 
   return `${id}.${country}`
