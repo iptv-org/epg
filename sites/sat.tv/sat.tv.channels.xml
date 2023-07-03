@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site site="sat.tv">
+  <channels>
+    <channel lang="ar" xmltv_id="2M.ma" site_id="1#38#2M وطني">2M وطني</channel>
+    <channel lang="ar" xmltv_id="AbuDhabiEmirates.ae" site_id="1#38#الامارات">الامارات</channel>
+    <channel lang="ar" xmltv_id="AbuDhabiSports1.ae" site_id="1#38#أبو ظبي الرياضية 1">أبو ظبي الرياضية 1</channel>
+    <channel lang="ar" xmltv_id="AbuDhabiSports2.ae" site_id="1#38#أبو ظبي الرياضية 2">أبو ظبي الرياضية 2</channel>
+    <channel lang="ar" xmltv_id="AbuDhabiTV.ae" site_id="1#38#أبو ظبي تي في">أبو ظبي تي في</channel>
+    <channel lang="ar" xmltv_id="AdenTV.ye" site_id="1#38#عدن">عدن</channel>
+    <channel lang="ar" xmltv_id="AlAanTV.ae" site_id="1#38#الآن">الآن</channel>
+    <channel lang="ar" xmltv_id="AlAoula.ma" site_id="1#38#الاولى">الاولى</channel>
+    <channel lang="ar" xmltv_id="AlArabyTV.uk" site_id="1#38#العربي">العربي</channel>
+    <channel lang="ar" xmltv_id="AlEkhbariya.sa" site_id="1#38#السعودية الإخبارية">السعودية الإخبارية</channel>
+    <channel lang="ar" xmltv_id="AlhayatDrama.eg" site_id="1#38#الحياة مسلسلات">الحياة مسلسلات</channel>
+    <channel lang="ar" xmltv_id="AlhayatTV.eg" site_id="1#38#الحياة">الحياة</channel>
+    <channel lang="ar" xmltv_id="AlJanoubiyaTV.tn" site_id="1#50#الجنوبية">الجنوبية</channel>
+    <channel lang="ar" xmltv_id="AlMaghribia.ma" site_id="1#49#المغربية">المغربية</channel>
+    <channel lang="ar" xmltv_id="AlMamlakaTV.jo" site_id="1#38#المملكة تي في">المملكة تي في</channel>
+    <channel lang="ar" xmltv_id="AlMasriyah.eg" site_id="1#38#المصرية">المصرية</channel>
+    <channel lang="ar" xmltv_id="AlMayadeenTV.lb" site_id="1#38#الميادين">الميادين</channel>
+    <channel lang="ar" xmltv_id="AlNaharDrama.eg" site_id="1#38#النهار دراما">النهار دراما</channel>
+    <channel lang="ar" xmltv_id="AlRayyanTV.qa" site_id="1#38#الريان">الريان</channel>
+    <channel lang="ar" xmltv_id="AlSaudiya.sa" site_id="1#38#السعودية">السعودية</channel>
+    <channel lang="ar" xmltv_id="AlSharqiya.iq" site_id="1#38#الشرقية">الشرقية</channel>
+    <channel lang="ar" xmltv_id="AlSharqiyaNews.iq" site_id="1#38#الشرقية للأخبار">الشرقية للأخبار</channel>
+    <channel lang="ar" xmltv_id="Alsumaria.iq" site_id="1#38#السومرية">السومرية</channel>
+    <channel lang="ar" xmltv_id="AmmanTV.jo" site_id="1#38#عمان تي في">عمان تي في</channel>
+    <channel lang="ar" xmltv_id="Arryadia.ma" site_id="1#49#الرياضية">الرياضية</channel>
+    <channel lang="ar" xmltv_id="Athaqafia.ma" site_id="1#49#الثقافية">الثقافية</channel>
+    <channel lang="ar" xmltv_id="AttessiaTV.tn" site_id="1#38#القناة 9">القناة 9</channel>
+    <channel lang="ar" xmltv_id="BahiaTV.dz" site_id="1#38#باهية">باهية</channel>
+    <channel lang="ar" xmltv_id="CBC.eg" site_id="1#38#سي بي سي">سي بي سي</channel>
+    <channel lang="ar" xmltv_id="CBCDrama.eg" site_id="1#38#سي بي سي دراما">سي بي سي دراما</channel>
+    <channel lang="ar" xmltv_id="CBCSofra.eg" site_id="1#38#سي بي سي سفرة">سي بي سي سفرة</channel>
+    <channel lang="ar" xmltv_id="DijlahTV.iq" site_id="1#38#دجلة">دجلة</channel>
+    <channel lang="ar" xmltv_id="DMC.eg" site_id="1#38#دي ام سي">دي ام سي</channel>
+    <channel lang="ar" xmltv_id="DMCDrama.eg" site_id="1#38#دي ام سي دراما">دي ام سي دراما</channel>
+    <channel lang="ar" xmltv_id="DubaiRacing.ae" site_id="1#38#دبي ريسينج 1">دبي ريسينج 1</channel>
+    <channel lang="ar" xmltv_id="DubaiRacing2.ae" site_id="1#38#دبي ريسينج 2">دبي ريسينج 2</channel>
+    <channel lang="ar" xmltv_id="DubaiRacing3.ae" site_id="1#38#دبي ريسينج 3">دبي ريسينج 3</channel>
+    <channel lang="ar" xmltv_id="DubaiSports1.ae" site_id="1#38#دبي الرياضية 1">دبي الرياضية 1</channel>
+    <channel lang="ar" xmltv_id="DubaiSports2.ae" site_id="1#38#دبي الرياضية 2">دبي الرياضية 2</channel>
+    <channel lang="ar" xmltv_id="DubaiSports3.ae" site_id="1#38#دبي الرياضية 3">دبي الرياضية 3</channel>
+    <channel lang="ar" xmltv_id="EchoroukNews.dz" site_id="1#38#الشروق الإخبارية">الشروق الإخبارية</channel>
+    <channel lang="ar" xmltv_id="EchoroukTV.dz" site_id="1#38#الشروق">الشروق</channel>
+    <channel lang="ar" xmltv_id="ElhiwarEttounsiTV.tn" site_id="1#50#الحوار التونسي">الحوار التونسي</channel>
+    <channel lang="ar" xmltv_id="ElMehwarChannel.eg" site_id="1#38#المحور تي في">المحور تي في</channel>
+    <channel lang="ar" xmltv_id="ElWatania1.tn" site_id="1#38#1 التونسية الوطنية">1 التونسية الوطنية</channel>
+    <channel lang="ar" xmltv_id="EnnaharTV.dz" site_id="1#38#النهار تي في">النهار تي في</channel>
+    <channel lang="ar" xmltv_id="ERTU1.eg" site_id="1#38#المصرية الأولى">المصرية الأولى</channel>
+    <channel lang="ar" xmltv_id="FujairahTV.ae" site_id="1#38#الفجيرة">الفجيرة</channel>
+    <channel lang="ar" xmltv_id="HannibalTV.tn" site_id="1#50#حنبعل">حنبعل</channel>
+    <channel lang="ar" xmltv_id="JordanTV.jo" site_id="1#38#الأردني تي في">الأردني تي في</channel>
+    <channel lang="ar" xmltv_id="KhartoumTV.sd" site_id="1#38#الخرطوم">الخرطوم</channel>
+    <channel lang="ar" xmltv_id="KTV1.kw" site_id="1#38#دولة الكويت - الأولى">دولة الكويت - الأولى</channel>
+    <channel lang="ar" xmltv_id="KTV2.kw" site_id="1#38#دولة الكويت - الثانية">دولة الكويت - الثانية</channel>
+    <channel lang="ar" xmltv_id="MBC1.ae" site_id="1#38#ام بي سي 1">ام بي سي 1</channel>
+    <channel lang="ar" xmltv_id="MBC2.ae" site_id="1#38#ام بي سي 2">ام بي سي 2</channel>
+    <channel lang="ar" xmltv_id="MBC4.ae" site_id="1#38#ام بي سي 4">ام بي سي 4</channel>
+    <channel lang="ar" xmltv_id="NessmaElJadida.tn" site_id="1#50#نسمة الجديدة">نسمة الجديدة</channel>
+    <channel lang="ar" xmltv_id="NileCinema.eg" site_id="1#38#نايل سينما">نايل سينما</channel>
+    <channel lang="ar" xmltv_id="NileComedy.eg" site_id="1#38#نايل كوميدي">نايل كوميدي</channel>
+    <channel lang="ar" xmltv_id="NileDrama.eg" site_id="1#38#نايل دراما">نايل دراما</channel>
+    <channel lang="ar" xmltv_id="NileLife.eg" site_id="1#38#نايل لايف">نايل لايف</channel>
+    <channel lang="ar" xmltv_id="NoorDubai.ae" site_id="1#38#نور دبي تي في">نور دبي تي في</channel>
+    <channel lang="ar" xmltv_id="OmanTV.om" site_id="1#38#عُمان تي في">عُمان تي في</channel>
+    <channel lang="ar" xmltv_id="PNCFood.eg" site_id="1#38#بانوراما فوود">بانوراما فوود</channel>
+    <channel lang="ar" xmltv_id="QatarTelevision.qa" site_id="1#38#قطر تي في">قطر تي في</channel>
+    <channel lang="ar" xmltv_id="QatarTelevision2.qa" site_id="1#38#قطر 2">قطر 2</channel>
+    <channel lang="ar" xmltv_id="RotanaCinemaEgypt.eg" site_id="1#38#روتانا سينما مصر">روتانا سينما مصر</channel>
+    <channel lang="ar" xmltv_id="RotanaCinemaKSA.sa" site_id="1#38#روتانا سينما السعودية">روتانا سينما السعودية</channel>
+    <channel lang="ar" xmltv_id="RotanaClassic.sa" site_id="1#38#روتانا كلاسيك">روتانا كلاسيك</channel>
+    <channel lang="ar" xmltv_id="RotanaDrama.sa" site_id="1#38#روتانا دراما">روتانا دراما</channel>
+    <channel lang="ar" xmltv_id="RotanaKhalijia.sa" site_id="1#38#روتانا خليجية">روتانا خليجية</channel>
+    <channel lang="ar" xmltv_id="RoyaTV.jo" site_id="1#38#رؤيا تي في">رؤيا تي في</channel>
+    <channel lang="ar" xmltv_id="SadaElbalad.eg" site_id="1#38#صدى البلد">صدى البلد</channel>
+    <channel lang="ar" xmltv_id="SadaElbalad2.eg" site_id="1#38#صدى البلد 2">صدى البلد 2</channel>
+    <channel lang="ar" xmltv_id="SadaElbaladDrama.eg" site_id="1#38#صدى البلد دراما">صدى البلد دراما</channel>
+    <channel lang="ar" xmltv_id="SamiraTV.dz" site_id="1#38#سميرة">سميرة</channel>
+    <channel lang="ar" xmltv_id="SBC.sa" site_id="1#38#اس بي سي">اس بي سي</channel>
+    <channel lang="ar" xmltv_id="SharjahSports.ae" site_id="1#38#الشارقة الرياضية">الشارقة الرياضية</channel>
+    <channel lang="ar" xmltv_id="SharjahTV.ae" site_id="1#38#الشارقة تي في">الشارقة تي في</channel>
+    <channel lang="ar" xmltv_id="SkyNewsArabia.ae" site_id="1#38#سكاي نيوز عربية">سكاي نيوز عربية</channel>
+    <channel lang="ar" xmltv_id="SpacetoonArabic.ae" site_id="1#38#سبيس تون">سبيس تون</channel>
+    <channel lang="ar" xmltv_id="SudanTV.sd" site_id="1#38#السودان تي في">السودان تي في</channel>
+    <channel lang="ar" xmltv_id="TamazightTV.ma" site_id="1#49#الأمازيغية">الأمازيغية</channel>
+    <channel lang="ar" xmltv_id="TelvzaTV.tn" site_id="1#50#تلفزة">تلفزة</channel>
+    <channel lang="ar" xmltv_id="ThikrayatTV.sa" site_id="1#38#ذكريات">ذكريات</channel>
+    <channel lang="ar" xmltv_id="TunisnaTV.tn" site_id="1#50#تونسنا">تونسنا</channel>
+    <channel lang="ar" xmltv_id="TV2.dz" site_id="1#38#الجزائر تي في">الجزائر تي في</channel>
+    <channel lang="ar" xmltv_id="TV3.dz" site_id="1#38#الجزائرية الثالثة">الجزائرية الثالثة</channel>
+    <channel lang="ar" xmltv_id="TV4.dz" site_id="1#38#الجزائرية الرابعة">الجزائرية الرابعة</channel>
+    <channel lang="ar" xmltv_id="TV5.dz" site_id="1#38#الجزائرية الخامسة">الجزائرية الخامسة</channel>
+    <channel lang="ar" xmltv_id="TV6.dz" site_id="1#38#الجزائرية السادسة">الجزائرية السادسة</channel>
+    <channel lang="ar" xmltv_id="TV7.dz" site_id="1#38#الجزائرية السابعة">الجزائرية السابعة</channel>
+    <channel lang="ar" xmltv_id="TV8.dz" site_id="1#38#الجزائرية الثامنة">الجزائرية الثامنة</channel>
+    <channel lang="ar" xmltv_id="YasTV.ae" site_id="1#38#ياس تي في">ياس تي في</channel>
+    <channel lang="ar" xmltv_id="YemenShababChannel.ye" site_id="1#38#يمن شباب">يمن شباب</channel>
+    <channel lang="ar" xmltv_id="YemenTV.ye" site_id="1#38#اليمن تي في">اليمن تي في</channel>
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#1 بي ان سبورت ماكس">1 بي ان سبورت ماكس</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#1 موفي">1 موفي</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#2 الحياة">2 الحياة</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#2 الرياضية السعودية">2 الرياضية السعودية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#2 القاهرة والناس">2 القاهرة والناس</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#2 المرأة العربية">2 المرأة العربية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#2 بانوراما دراما">2 بانوراما دراما</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#2 بي ان سبورت ماكس">2 بي ان سبورت ماكس</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#2المرجعية تيفي">2المرجعية تيفي</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#3 الرياضية السعودية">3 الرياضية السعودية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#3 القاهرة">3 القاهرة</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#4 الرياضية السعودية">4 الرياضية السعودية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#4 القنال">4 القنال</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#4 بي ان سبورت ماكس">4 بي ان سبورت ماكس</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#5 الإسكندرية">5 الإسكندرية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#6 الدلتا">6 الدلتا</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#8 طابا">8 طابا</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#Hala London HD">Hala London HD</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#آي فيلم عربي">آي فيلم عربي</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#آي24 نيوز">آي24 نيوز</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#أريرانج وورلد تي في">أريرانج وورلد تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#أصيل">أصيل</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#أغابي">أغابي</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#أفا للترفية">أفا للترفية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#أوربت اليوم">أوربت اليوم</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#أوربيت حكايات">أوربيت حكايات</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#ئامۆژگاری">ئامۆژگاری</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#ابل افلام">ابل افلام</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#ابل اليوم">ابل اليوم</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#ابل دراما">ابل دراما</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#ابل سينيما">ابل سينيما</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#ابل مسلسلات">ابل مسلسلات</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#ابن العثيمين">ابن العثيمين</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#اثراء ۔ الكويت تي في">اثراء ۔ الكويت تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#ازهري">ازهري</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#اس بي ان العالمية">اس بي ان العالمية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#اسيرات">اسيرات</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#اطفال و مواهب">اطفال و مواهب</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#افا">افا</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#افاق">افاق</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#افريقيا 1 القران الكريم">افريقيا 1 القران الكريم</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#اقرأ">اقرأ</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#اكسترا لايف">اكسترا لايف</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#اكسترا نيوز">اكسترا نيوز</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#ال بي سي اللبنانية">ال بي سي اللبنانية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الأردن الآن">الأردن الآن</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الأردن الرياضية">الأردن الرياضية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الأنس">الأنس</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الأنوار 2">الأنوار 2</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الأنيس">الأنيس</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الأهلي">الأهلي</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الأهواز تي في">الأهواز تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الأوحاد">الأوحاد</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الأيام">الأيام</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الإمام الصادق">الإمام الصادق</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الإيمان تي في">الإيمان تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الإيمان">الإيمان</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الاتجاه">الاتجاه</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الاتحاد">الاتحاد</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الارث النبوي  تي في">الارث النبوي تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الاستقامة">الاستقامة</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الاشراق">الاشراق</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الاقتصاديه الاولى">الاقتصاديه الاولى</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الاقصى  تي في">الاقصى تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الانبار تي في">الانبار تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الانوار تي في">الانوار تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الاولى العراقية">الاولى العراقية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#البحرين الدولية">البحرين الدولية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#البحرين تي في">البحرين تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#البرلمانية الموريطانية تي في">البرلمانية الموريطانية تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#البصيرة">البصيرة</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#البغدادية الآن">البغدادية الآن</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#البلد تي في">البلد تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#التراث">التراث</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#التركمانية">التركمانية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#التعليمية">التعليمية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#التغيير">التغيير</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#التناصح">التناصح</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الثالثة الرياضية ۔ الكويت">الثالثة الرياضية ۔ الكويت</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الثقلين">الثقلين</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الجزائر رقم 1 ۔">الجزائر رقم 1 ۔</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الجزائرية الدولية تي في">الجزائرية الدولية تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الجزيرة الإنجليزية">الجزيرة الإنجليزية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الجزيرة الوثائقية">الجزيرة الوثائقية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الجزيرة مباشر مصر">الجزيرة مباشر مصر</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الجزيرة مباشر">الجزيرة مباشر</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الجزيرة">الجزيرة</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الجنوب تي في">الجنوب تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الجوكر أفلام">الجوكر أفلام</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الجوكر حكايات">الجوكر حكايات</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الجوكر دراما">الجوكر دراما</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الجوكر سينما">الجوكر سينما</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الجوكر مسلسلات">الجوكر مسلسلات</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الحدث اليوم">الحدث اليوم</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الحدث">الحدث</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الحرة عراق">الحرة عراق</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الحرة">الحرة</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الحرية">الحرية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الحقيقة الدولية">الحقيقة الدولية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الحقيقة">الحقيقة</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الحوار تي في">الحوار تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الدعاء تي في">الدعاء تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الدعوة تي في">الدعوة تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الرابعة الرياضية تي في">الرابعة الرياضية تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الرابعة هي العراق">الرابعة هي العراق</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الرافدين">الرافدين</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الراي">الراي</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الرحمة">الرحمة</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الرسالة">الرسالة</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الرشيد">الرشيد</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الرياضية السعودية 1">الرياضية السعودية 1</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الريان القديم">الريان القديم</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الزعيم دراما">الزعيم دراما</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الزعيم سينما">الزعيم سينما</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الزمالك">الزمالك</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الزيتونة تي في">الزيتونة تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الساعة دراما">الساعة دراما</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الساعة سينما">الساعة سينما</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الساعة كلاسيك">الساعة كلاسيك</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#السحات">السحات</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#السعودية السنة النبوية">السعودية السنة النبوية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#السعودية القرآن الكريم">السعودية القرآن الكريم</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#السعيدة">السعيدة</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#السلام تي في">السلام تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#السلام">السلام</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#السلام">السلام</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#السودان بكرة">السودان بكرة</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#السودان تعليم الأساسي">السودان تعليم الأساسي</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الشرق تي في">الشرق تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الشرق للأخبار">الشرق للأخبار</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الشرقية من كلباء">الشرقية من كلباء</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الشعائر">الشعائر</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الشعوب تيفي">الشعوب تيفي</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الشمس تي في">الشمس تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الصباح">الصباح</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الصحراء">الصحراء</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الصعيد 7">الصعيد 7</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الصين الدولية تي في">الصين الدولية تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الصين العربية">الصين العربية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الصينية العربية">الصينية العربية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الطليعة">الطليعة</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الظفرة تي في">الظفرة تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#العاصمة والناس">العاصمة والناس</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#العالم">العالم</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#العتبة العلوية المقدسة">العتبة العلوية المقدسة</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#العدالة">العدالة</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#العراقية الإخبارية">العراقية الإخبارية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#العراقية التعليمية">العراقية التعليمية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#العراقية الرياضية">العراقية الرياضية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#العراقية السريانية">العراقية السريانية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#العراقية توركمان">العراقية توركمان</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#العراقية كورد">العراقية كورد</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#العراقية">العراقية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#العربي 2">العربي 2</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#العربي ۔ الكويتية">العربي ۔ الكويتية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#العربية">العربية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#العقيلة">العقيلة</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#العمدة  مسلسلات">العمدة مسلسلات</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#العمدة اليوم">العمدة اليوم</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#العمدة دحكايات">العمدة دحكايات</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#العمدة دراما">العمدة دراما</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#العمدة دسينما">العمدة دسينما</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#العهد تي في">العهد تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#العيلة">العيلة</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الغد المشرق">الغد المشرق</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الغد">الغد</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الغدير">الغدير</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الغفران">الغفران</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الفادي">الفادي</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الفتح">الفتح</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الفجر دراما تي في">الفجر دراما تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الفرات">الفرات</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الفلوجة">الفلوجة</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#القاهرة الإخبارية">القاهرة الإخبارية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#القاهرة والناس">القاهرة والناس</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#القدس اليوم">القدس اليوم</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#القرآن تي في">القرآن تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#القرين- كويت تي في">القرين- كويت تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#القمر">القمر</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الكاس 1">الكاس 1</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الكاس 2">الكاس 2</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الكرازة">الكرازة</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الكرمة الجيل جديد">الكرمة الجيل جديد</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الكرمة تسبيح">الكرمة تسبيح</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الكميل">الكميل</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الكوثر تي في">الكوثر تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الكوفية">الكوفية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الكوفية">الكوفية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الكويت الرياضية بلس">الكويت الرياضية بلس</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#اللؤلؤة">اللؤلؤة</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#اللحظة">اللحظة</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#المجد تي في">المجد تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#المجد للقرآن الكريم">المجد للقرآن الكريم</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#المجد">المجد</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#المجلس">المجلس</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#المحبة">المحبة</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#المدني اردو تي في">المدني اردو تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#المديح">المديح</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#المرأة العربية 1">المرأة العربية 1</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#المرقاب تي في">المرقاب تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#المسار">المسار</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#المستقلة">المستقلة</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#المسيرة المباشر">المسيرة المباشر</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#المسيرة">المسيرة</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#المصري تي في">المصري تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#المصرية الثانية">المصرية الثانية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#المصطفى">المصطفى</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#المعارف">المعارف</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#المعالي">المعالي</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#المعجزة  تي في">المعجزة تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#المغاربية">المغاربية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الملكوت سات تي في">الملكوت سات تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#المنقد العالمي تي في">المنقد العالمي تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#المهتدي">المهتدي</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#المهدي">المهدي</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#المواكب">المواكب</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الموصلية">الموصلية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#المولد">المولد</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الناس">الناس</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#النبأ">النبأ</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#النجباء">النجباء</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#النجف الأشرف">النجف الأشرف</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الندى تي في">الندى تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#النعيم">النعيم</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#النهار الجديدة">النهار الجديدة</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#النهار">النهار</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#النيل التعليمية تي في">النيل التعليمية تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#النيل الثقافية تي في">النيل الثقافية تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#النيل تي في">النيل تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الهداف تي في">الهداف تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الهواية">الهواية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الواقع">الواقع</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الوثائقية">الوثائقية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الوسطى">الوسطى</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الوطن">الوطن</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#الوطنية تي في">الوطنية تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#اليرموك">اليرموك</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#اليمن التعليمية">اليمن التعليمية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#اليمن الوثائقية">اليمن الوثائقية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#اليمن اليوم">اليمن اليوم</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#اليوم تي في">اليوم تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#ام اي سات">ام اي سات</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#ام بي سي 3">ام بي سي 3</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#ام بي سي آل">ام بي سي آل</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#ام بي سي اكشن">ام بي سي اكشن</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#ام بي سي العراق">ام بي سي العراق</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#ام بي سي بوليوود">ام بي سي بوليوود</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#ام بي سي دراما">ام بي سي دراما</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#ام بي سي مصر 2">ام بي سي مصر 2</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#ام بي سي مصر">ام بي سي مصر</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#امام حسين 2">امام حسين 2</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#ان ار تي 2">ان ار تي 2</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#ان ار تي 3 للأطفال">ان ار تي 3 للأطفال</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#ان ار تي 4">ان ار تي 4</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#ان ار تي">ان ار تي</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#ان ايتش كي الدولي (اليابان)">ان ايتش كي الدولي (اليابان)</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#انجل العربي">انجل العربي</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#او اس ان تي في">او اس ان تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#اوربت دراما">اوربت دراما</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#اوربت سينما">اوربت سينما</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#اوربت للأفلام">اوربت للأفلام</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#اوسكارتي في">اوسكارتي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#اون إي">اون إي</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#اون تايم سبورتس  2">اون تايم سبورتس 2</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#اون تايم سبورتس">اون تايم سبورتس</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#اون دراما">اون دراما</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#اي بي ان">اي بي ان</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#اي نيوز">اي نيوز</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#بابلي تولز">بابلي تولز</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#بانوراما دراما">بانوراما دراما</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#بانوراما فيلم">بانوراما فيلم</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#بانوراما يوم تي في">بانوراما يوم تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#بداية">بداية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#بربري">بربري</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#بريس تي في">بريس تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#بطوط كيدز">بطوط كيدز</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#بلاد">بلاد</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#بلقيس">بلقيس</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#بنكه واز">بنكه واز</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#به يام">به يام</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#بي ان سبورت الاخبارية">بي ان سبورت الاخبارية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#بي ان سبورت ماكس 5">بي ان سبورت ماكس 5</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#بي ان سبورت ماكس 6">بي ان سبورت ماكس 6</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#بي ان سبورت">بي ان سبورت</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#بي بي سي  انجليزي">بي بي سي انجليزي</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#بي بي سي عربي">بي بي سي عربي</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#بي فور يو بلس">بي فور يو بلس</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#بيروت  سينما">بيروت سينما</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#بيروت أفلام">بيروت أفلام</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#بيروت اليوم">بيروت اليوم</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#بيروت دراما">بيروت دراما</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#بينونة تي في">بينونة تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#تريند شعبي">تريند شعبي</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#تشاد تي في">تشاد تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#تلمذة الكرمة">تلمذة الكرمة</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#تي آر تي الدولي (تركيا)">تي آر تي الدولي (تركيا)</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#تي آر تي العربية (تركيا)">تي آر تي العربية (تركيا)</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#تي آر تي الكوردية - تركيا">تي آر تي الكوردية - تركيا</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#تي تي 1">تي تي 1</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#تي في 5 المغرب">تي في 5 المغرب</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#تي في جين">تي في جين</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#تين">تين</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#جنة">جنة</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#جيل دي زاد">جيل دي زاد</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#حب العالم">حب العالم</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#حلب اليوم">حلب اليوم</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#خليل الرحمن">خليل الرحمن</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#دبي تي في">دبي تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#دبي زمان">دبي زمان</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#دبي وان">دبي وان</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#دجلة  زمان">دجلة زمان</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#دعوة">دعوة</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#دوللي مسلسلات">دوللي مسلسلات</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#دي دبليو عربية">دي دبليو عربية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#ديوان">ديوان</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#روتانا كليب">روتانا كليب</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#روتانا موسيقى">روتانا موسيقى</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#روجافا">روجافا</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#روداو تي في">روداو تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#روسيا اليوم - العربي">روسيا اليوم - العربي</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#روناهي">روناهي</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#زاد">زاد</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#زاروك تي في">زاروك تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#زاكروس">زاكروس</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#زاوية">زاوية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#زهرة تي في">زهرة تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#زي أفلام">زي أفلام</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#زي ألوان">زي ألوان</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#سات 7 تي في">سات 7 تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#سات 7 للأطفال">سات 7 للأطفال</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#سات في للمساعدة">سات في للمساعدة</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#سبأ">سبأ</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#سبيده تي في">سبيده تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#ستار 1">ستار 1</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#ستار 2">ستار 2</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#سترايك">سترايك</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#سحر كوردي">سحر كوردي</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#سما الاردن">سما الاردن</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#سما دبي">سما دبي</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#سمارة">سمارة</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#سهيل">سهيل</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#سوبورو">سوبورو</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#سوريا">سوريا</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#سوريو">سوريو</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#سي إن بي سي عربية">سي إن بي سي عربية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#سي ان ان">سي ان ان</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#سي تي في">سي تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#سي سات">سي سات</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#سيتروس">سيتروس</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#سيرة">سيرة</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#سيما">سيما</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#شبكة الأخبار الكردية">شبكة الأخبار الكردية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#شدى">شدى</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#شمالية">شمالية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#شهاب">شهاب</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#صدى أف أم">صدى أف أم</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#صفا">صفا</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#صلاح الدين">صلاح الدين</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#صوت العقيلة">صوت العقيلة</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#طه">طه</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#طيبة تي في">طيبة تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#طيور الجنة">طيور الجنة</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#عجمان تي في">عجمان تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#عدن المستقيلة">عدن المستقيلة</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#عراق 24">عراق 24</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#عراق المستقبل">عراق المستقبل</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#عربية 12">عربية 12</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#عرين">عرين</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#على الطريق">على الطريق</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#عمو يزيد طفوله تي في">عمو يزيد طفوله تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#عودة">عودة</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#عيلة الكرمة">عيلة الكرمة</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#عيون الوطن">عيون الوطن</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#عُمان الثقافية">عُمان الثقافية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#عُمان الرياضية">عُمان الرياضية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#عُمان مباشر">عُمان مباشر</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#فرانس 24 انجليزي">فرانس 24 انجليزي</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#فرانس 24 عربي">فرانس 24 عربي</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#فري تي في">فري تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#فلسطين التعليمية">فلسطين التعليمية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#فلسطين الرياضية">فلسطين الرياضية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#فلسطين اليوم">فلسطين اليوم</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#فلسطين تي في">فلسطين تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#فلسطين مباشر">فلسطين مباشر</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#فلسطيننا">فلسطيننا</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#فلسطيني">فلسطيني</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#فنون تي في">فنون تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#فوكس موفي">فوكس موفي</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#قالي كردستان تي في">قالي كردستان تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#قناة ليبيا">قناة ليبيا</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#كارتون نتورك">كارتون نتورك</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#كاي تي او ۔ كوريا">كاي تي او ۔ كوريا</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#كراميش">كراميش</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#كربلاء">كربلاء</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#كردسات نيوز">كردسات نيوز</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#كردسات">كردسات</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#كردستان 24">كردستان 24</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#كركوك تي في">كركوك تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#كرمة الشرق الاوسط 1">كرمة الشرق الاوسط 1</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#كوجي للأطفال">كوجي للأطفال</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#كورد ماكس شو">كورد ماكس شو</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#كورد ماكس">كورد ماكس</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#كوردستان تي في">كوردستان تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#كوكيز تي في">كوكيز تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#كي بي أس العالمية">كي بي أس العالمية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#كيف الفضائية تي في">كيف الفضائية تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#لبده تي في">لبده تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#لوجوس">لوجوس</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#ليبيا الأحرار">ليبيا الأحرار</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#ليبيا الاقتصادية">ليبيا الاقتصادية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#ليبيا الجديدة">ليبيا الجديدة</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#ليبيا الحدث">ليبيا الحدث</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#ليبيا الرسمية">ليبيا الرسمية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#ليبيا الرياضية 1">ليبيا الرياضية 1</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#ليبيا الرياضية 2">ليبيا الرياضية 2</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#ليبيا المستقبل">ليبيا المستقبل</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#ليبيا الوطنية">ليبيا الوطنية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#ليبيا لي">ليبيا لي</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#م 24 المغربية">م 24 المغربية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#م تي اي 3">م تي اي 3</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#ماجد للأطفال">ماجد للأطفال</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#مارينا">مارينا</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#ماسبيرو زمان">ماسبيرو زمان</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#مانيو شات">مانيو شات</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#مدرستنا 1">مدرستنا 1</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#مدرستنا 2">مدرستنا 2</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#مدرستنا 3">مدرستنا 3</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#مزيكا">مزيكا</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#مساواة">مساواة</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#مصر البلد">مصر البلد</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#مصر الزراعية">مصر الزراعية</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#مصر قرآن كريم تي في">مصر قرآن كريم تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#معاً تي في">معاً تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#مكملين">مكملين</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#مكه تي في">مكه تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#منهاج النبوة">منهاج النبوة</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#موسيقى العراق">موسيقى العراق</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#ميد موسيقى">ميد موسيقى</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#ميكس 1">ميكس 1</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#ميكس بالعربي تي في">ميكس بالعربي تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#ميكس هوليوود">ميكس هوليوود</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#مينو ترافيل تي في">مينو ترافيل تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#ناشيونال جيوغرافك">ناشيونال جيوغرافك</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#نايل تي في">نايل تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#نايل سبورت تي في">نايل سبورت تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#نايل فاملي">نايل فاملي</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#نجوم اف ام">نجوم اف ام</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#نمو قدس">نمو قدس</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#نورسات الشباب">نورسات الشباب</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#نورسات القداس">نورسات القداس</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#نورسات كيدز">نورسات كيدز</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#نورسات مريم">نورسات مريم</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#نورسات">نورسات</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#نيو تي في">نيو تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#هدهد تي في">هدهد تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#هنا بغداد">هنا بغداد</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#هوجان">هوجان</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#وار تي في">وار تي في</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#وسط">وسط</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#وييون">وييون</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#يلا مصارعة">يلا مصارعة</channel> -->
+    <!-- <channel lang="ar" xmltv_id="" site_id="1#38#يو تي في عراق">يو تي في عراق</channel> -->
+  </channels>
+</site>
