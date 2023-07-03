@@ -21,7 +21,7 @@ it('can generate valid url', () => {
 })
 
 it('can generate valid url for today', () => {
-  const today = dayjs.utc().startOf('d')
+  const today = dayjs().startOf('d')
 
   expect(url({ date: today, channel })).toBe('https://www.tvgids.nl/gids/npo1')
 })
