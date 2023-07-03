@@ -42,6 +42,10 @@ npm install
 Now choose one of the sources (their complete list can be found in the [/sites](https://github.com/iptv-org/epg/tree/master/sites) folder) and start downloading the guide using the command:
 
 ```sh
+# Windows
+set SITE=example.com&& npm run grab
+
+# Linux/macOS
 SITE=example.com npm run grab
 ```
 
