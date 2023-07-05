@@ -42,11 +42,7 @@ npm install
 Now choose one of the sources (their complete list can be found in the [/sites](https://github.com/iptv-org/epg/tree/master/sites) folder) and start downloading the guide using the command:
 
 ```sh
-# Windows
-set SITE=example.com&& npm run grab
-
-# Linux/macOS
-SITE=example.com npm run grab
+npm run grab example.com
 ```
 
 After the download is completed in the current directory will appear a new folder `guides`, which will store all XML files:
