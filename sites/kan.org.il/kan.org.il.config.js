@@ -43,7 +43,6 @@ module.exports = {
     return programs
   },
   request: {
-    timeout: 5000,
     responseType: "arraybuffer",
     responseEncoding: 'binary'
   }
