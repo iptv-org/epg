@@ -43,10 +43,10 @@ Now choose one of the sources (their complete list can be found in the [/sites](
 
 ```sh
 # Windows
-set SITE=example.com&& npm run grab
+set SITE=example.com && set DAYS=2 && npm run grab
 
 # Linux/macOS
-SITE=example.com npm run grab
+SITE=example.com DAYS=2 npm run grab
 ```
 
 After the download is completed in the current directory will appear a new folder `guides`, which will store all XML files:
