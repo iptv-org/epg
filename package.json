@@ -11,7 +11,7 @@
     "test:commands": "npx jest --runInBand -- commands",
     "test:sites": "TZ=Pacific/Nauru npx jest --runInBand -- sites",
     "check": "npm run api:load && npm run channels:lint sites/**/*.js && npm run channels:validate sites/**/*.xml",
-    "grab": "cross-var epg-grabber --config=sites/$SITE/$SITE.config.js --channels=sites/$SITE/$SITE.channels.xml --output=guides/{lang}/{site}.xml",
+    "grab": "cross-var epg-grabber --config=sites/$SITE/$SITE.config.js --channels=sites/$SITE/$SITE.channels.xml --output=guides/{lang}/{site}.xml --days=$DAYS",
     "serve": "npx serve"
   },
   "private": true,
