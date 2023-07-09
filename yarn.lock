@@ -2530,10 +2530,10 @@ entities@^4.2.0, entities@^4.3.0, entities@^4.4.0:
   resolved "https://registry.npmjs.org/entities/-/entities-4.4.0.tgz"
   integrity sha512-oYp7156SP8LkeGD0GF85ad1X9Ai79WtRsZ2gxJqtBuzH+98YUV6jkHEKlZkMbcrjJjIVJNIDP/3WL9wQkoPbWA==
 
-epg-grabber@^0.31.0:
-  version "0.31.0"
-  resolved "https://registry.npmjs.org/epg-grabber/-/epg-grabber-0.31.0.tgz"
-  integrity sha512-DT58SsA9QOBB1qC4uKDabRdbOohUeO4jwUCXEDk9jvI8NVvk3lypnB2JUkwYv3Q1kQeFs+522E8pbcZLEa5oFQ==
+epg-grabber@^0.32.0:
+  version "0.32.0"
+  resolved "https://registry.npmjs.org/epg-grabber/-/epg-grabber-0.32.0.tgz"
+  integrity sha512-B6Kfd8gTebUXF+mugpLDCHnza6bl7Ymq5OlOZY2SsdT6JnmDF5F/pOy0vulOLwd9QXE9fwatN/rcfN3GVtc7kQ==
   dependencies:
     axios "^0.21.1"
     axios-cache-interceptor "^0.10.3"
