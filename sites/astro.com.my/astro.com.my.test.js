@@ -49,7 +49,7 @@ it('can parse response', async () => {
   expect(results[0]).toMatchObject({
     start: '2022-10-30T16:10:00.000Z',
     stop: '2022-10-30T17:02:00.000Z',
-    title: 'Triumph in the Skies Ep06',
+    title: 'Triumph in the Skies S1 Ep06',
     description:
       'This classic drama depicts the many aspects of two complicated relationships set against an airline company. Will those involved ever find true love?',
     actors: ['Francis Ng Chun Yu', 'Joe Ma Tak Chung', 'Flora Chan Wai San'],
@@ -60,6 +60,7 @@ it('can parse response', async () => {
       value: 'U'
     },
     episode: 6,
+    season: 1,
     categories: ['Drama']
   })
 })
