@@ -10,7 +10,7 @@ const command = spawn(
   [
     'epg-grabber',
     `--config=sites/${site}/${site}.config.js`,
-    `--channels=sites/${site}/${site}.channels.xml`,
+    `--channels=sites/${site}/${site}*.channels.xml`,
     `--output=guides/{lang}/{site}.xml`
   ],
   { shell: process.platform == 'win32' }
