@@ -45,7 +45,11 @@ async function main() {
 
   channels = _.uniqBy(channels, c => c.site_id + c.lang)
 
-  channels = _.sortBy(channels, ['lang', c => c.xmltv_id || '_', 'site_id'])
+  channels = _.sortBy(channels, [
+    'lang',
+    c => (c.xmltv_id ? c.xmltv_id.toLowerCase() : '_'),
+    'site_id'
+  ])
 
   const output = xml.create(channels, config.site)
 
