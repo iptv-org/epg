@@ -4,8 +4,10 @@ const utc = require('dayjs/plugin/utc')
 dayjs.extend(utc)
 
 module.exports = {
-  skip: true, // NOTE: return an HTTP error 503 (Service Unavailable) on every request from GitHub server only (https://github.com/iptv-org/epg/issues/1172#issuecomment-1284261669)
   site: 'tvtv.us',
+  request: {
+    delay: 500 // 500 ms
+  },
   days: 2,
   url: function ({ date, channel }) {
     return `https://www.tvtv.us/api/v1/lineup/USA-NY71652-DEFAULT/grid/${date.toJSON()}/${date
