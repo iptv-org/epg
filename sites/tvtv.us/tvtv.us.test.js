@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/tvtv.us/tvtv.us.config.js --channels=sites/tvtv.us/tvtv.us.channels.xml --output=guide.xml --days=2
+// npx epg-grabber --config=sites/tvtv.us/tvtv.us.config.js --channels=sites/tvtv.us/tvtv.us.channels.xml --output=guide.xml
 
 const { parser, url } = require('./tvtv.us.config.js')
 const dayjs = require('dayjs')
