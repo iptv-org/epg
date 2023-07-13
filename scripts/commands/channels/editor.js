@@ -31,8 +31,14 @@ async function main() {
     return c
   })
   await api.channels.load()
+  const buffer = []
   for (const channel of channels) {
-    if (channel.xmltv_id) continue
+    if (channel.xmltv_id) {
+      if (channel.xmltv_id !== '-') {
+        buffer.push(channel.xmltv_id)
+      }
+      continue
+    }
     let choices = await getOptions(channel)
     const question = {
       name: 'option',
@@ -43,11 +49,11 @@ async function main() {
     }
     await inquirer.prompt(question).then(async selected => {
       switch (selected.option) {
-        case 'Overwrite...':
+        case 'Overwrite':
           const input = await getInput(channel)
           channel.xmltv_id = input.xmltv_id
           break
-        case 'Skip...':
+        case 'Skip':
           channel.xmltv_id = '-'
           break
         default:
@@ -58,6 +64,33 @@ async function main() {
           channel.xmltv_id = xmltv_id
           break
       }
+
+      const found = buffer.includes(channel.xmltv_id)
+      if (found) {
+        const question = {
+          name: 'option',
+          message: `"${channel.xmltv_id}" already on the list. Choose an option:`,
+          type: 'list',
+          choices: ['Skip', 'Add', 'Delete'],
+          pageSize: 5
+        }
+        await inquirer.prompt(question).then(async selected => {
+          switch (selected.option) {
+            case 'Skip':
+              channel.xmltv_id = '-'
+              break
+            case 'Delete':
+              channel.delete = true
+              break
+            default:
+              break
+          }
+        })
+      } else {
+        if (channel.xmltv_id !== '-') {
+          buffer.push(channel.xmltv_id)
+        }
+      }
     })
   }
 }
@@ -66,6 +99,8 @@ main()
 
 function save() {
   if (!file.existsSync(filepath)) return
+
+  channels = channels.filter(c => !c.delete)
 
   const output = xml.create(channels, site)
 
@@ -104,8 +139,8 @@ async function getOptions(channel) {
     let replaced_by = i.replaced_by ? `[replaced_by:${i.replaced_by}]` : ''
     variants.push(`${i.name}${alt_names} | ${i.id} ${closed}${replaced_by}[api]`)
   })
-  variants.push(`Overwrite...`)
-  variants.push(`Skip...`)
+  variants.push(`Overwrite`)
+  variants.push(`Skip`)
 
   return variants
 }
