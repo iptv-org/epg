@@ -35,7 +35,7 @@ async function main() {
   for (const channel of channels) {
     if (channel.xmltv_id) {
       if (channel.xmltv_id !== '-') {
-        buffer.push(channel.xmltv_id)
+        buffer.push(`${channel.xmltv_id}/${channel.lang}`)
       }
       continue
     }
@@ -65,7 +65,7 @@ async function main() {
           break
       }
 
-      const found = buffer.includes(channel.xmltv_id)
+      const found = buffer.includes(`${channel.xmltv_id}/${channel.lang}`)
       if (found) {
         const question = {
           name: 'option',
@@ -88,7 +88,7 @@ async function main() {
         })
       } else {
         if (channel.xmltv_id !== '-') {
-          buffer.push(channel.xmltv_id)
+          buffer.push(`${channel.xmltv_id}/${channel.lang}`)
         }
       }
     })
