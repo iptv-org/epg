@@ -51,12 +51,25 @@ To download a guide in a specific language pass its [ISO 639-1](https://en.wikip
 npm run grab -- --site=example.com --lang=fr
 ```
 
+To also create a compressed version of the guide, add the `--gzip` flag:
+
+```sh
+npm run grab -- --site=example.com --gzip
+```
+
 After the download is completed in the current directory will appear a new folder `guides`, which will store all XML files:
 
 ```sh
 guides
 └── fr
     └── example.com.xml
+    └── example.com.xml.gz
+```
+
+If you want to download the guide automatically on a schedule, you need to pass a valid [cron expression](https://crontab.guru/) to the script using the `--cron` attribute:
+
+```sh
+npm run grab -- --site=example.com --cron="0 0 * * *"
 ```
 
 Also you can make these guides available via URL by running your own server:
