@@ -59,6 +59,11 @@ function parseCategory(item) {
   }
 
   return categories[item.category_id]
+    ? {
+        lang: 'ru',
+        value: categories[item.category_id]
+      }
+    : null
 }
 
 function parseItems(content) {
