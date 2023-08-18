@@ -12,3 +12,8 @@ const channel = { site_id: '0', xmltv_id: 'moji.id', lang: 'en', logo: 'https://
 it('can generate valid url', () => {
     expect(url({ channel, date })).toBe('https://moji.id/schedule')
 })
+
+it('can handle empty guide', () => {
+    const results = parser({ content: '' })
+    expect(results).toMatchObject([])
+})
