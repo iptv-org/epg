@@ -53,14 +53,16 @@ module.exports = {
 
 function parseItems(content) {
     const $ = cheerio.load(content)
-    let schDayMonths =  $('.date-slider .slide').toArray()
-    let schPrograms = $('.desc-slider .list-slider .accordion').toArray()
+    const schDayMonths =  $('.date-slider .slide').toArray()
+    const schPrograms = $('.desc-slider .list-slider').toArray()
     let items = [];
     schDayMonths.forEach(function(schDayMonth, i) {
-        schPrograms.forEach(function(program, i) {
+        let schDayPrograms = $(schPrograms[i]).find('.accordion').toArray()
+        //let schDayPrograms = $('.accordion').toArray()
+        schDayPrograms.forEach(function(program, i) {
             let itemDay = {
                 progStart: parseStart(schDayMonth, program),
-                progStop: parseStop(schDayMonth, program, schPrograms[i+1]),
+                progStop: parseStop(schDayMonth, program, schDayPrograms[i+1]),
                 progTitle: parseTitle(program),
                 progDesc: parseDescription(program)
             };
@@ -95,6 +97,6 @@ function parseStop(schDayMonth, itemCurrent, itemNext) {
     }
     else
     {
-        return dayjs.tz(currentYear + ' ' + monthDate[0] + ' ' + monthDate[1] + ' 24:00', 'YYYY MMM DD HH:mm', 'Asia/Jakarta')
+        return dayjs.tz(currentYear + ' ' + monthDate[0] + ' ' + (parseInt(monthDate[1]) + 1) + ' 00:00', 'YYYY MMM DD HH:mm', 'Asia/Jakarta')
     }
 }
