@@ -1,9 +1,10 @@
 const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const isSameOrAfter = require('dayjs/plugin/isSameOrAfter')
+const isSameOrBefore = require('dayjs/plugin/isSameOrBefore')
 
-var isSameOrAfter = require('dayjs/plugin/isSameOrAfter')
+dayjs.extend(utc)
 dayjs.extend(isSameOrAfter)
-
-var isSameOrBefore = require('dayjs/plugin/isSameOrBefore')
 dayjs.extend(isSameOrBefore)
 
 module.exports = {
