@@ -30,7 +30,7 @@ module.exports = {
     },
 
     parser: function (context) {
-        let programs = []
+        const programs = []
         const scheduleDates = parseItems(context.content)
         const today = dayjs.utc(context.date).startOf('day')
         const lastDay = today.add(1, 'day')
