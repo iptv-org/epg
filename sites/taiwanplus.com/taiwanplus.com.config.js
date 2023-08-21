@@ -43,7 +43,7 @@ module.exports = {
                     programs.push({
                         title: program.title,
                         start: dayjs.utc(program.dateTime, 'YYYY/MM/DD HH:mm'),
-                        stop: (i != (scheduleDate.schedule.length - 1)) ? dayjs.utc(program.dateTime, 'YYYY/MM/DD HH:mm') : dayjs.utc(program.dateTime, 'YYYY/MM/DD HH:mm').add(1, 'day').startOf('day'),
+                        stop: (i != (scheduleDate.schedule.length - 1)) ? dayjs.utc(scheduleDate.schedule[i+1].dateTime, 'YYYY/MM/DD HH:mm') : dayjs.utc(program.dateTime, 'YYYY/MM/DD HH:mm').add(1, 'day').startOf('day'),
                         description: program.description,
                         icon: program.image,
                         category: program.categoryName,
