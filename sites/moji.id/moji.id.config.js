@@ -35,8 +35,7 @@ module.exports = {
 
     parser: function (context) {
         const programs = []
-
-        const items = parseItems(context.content)
+        const items = parseItems(context)
 
         items.forEach(function(item, i) {
             programs.push({
@@ -51,23 +50,26 @@ module.exports = {
     }
 }
 
-function parseItems(content) {
-    const $ = cheerio.load(content)
-    const schDayMonths =  $('.date-slider .slide').toArray()
+function parseItems(context) {
+    const $ = cheerio.load(context.content)
+    const schDayMonths =  $('.date-slider .month').toArray()
     const schPrograms = $('.desc-slider .list-slider').toArray()
-    let items = [];
+    const monthDate = dayjs(context.date).format('MMM D')
+    const items = [];
+
     schDayMonths.forEach(function(schDayMonth, i) {
-        let schDayPrograms = $(schPrograms[i]).find('.accordion').toArray()
-        //let schDayPrograms = $('.accordion').toArray()
-        schDayPrograms.forEach(function(program, i) {
-            let itemDay = {
-                progStart: parseStart(schDayMonth, program),
-                progStop: parseStop(schDayMonth, program, schDayPrograms[i+1]),
-                progTitle: parseTitle(program),
-                progDesc: parseDescription(program)
-            };
-            items.push(itemDay)
-        })
+        if (monthDate == $(schDayMonth).text()) {
+            let schDayPrograms = $(schPrograms[i]).find('.accordion').toArray()
+            schDayPrograms.forEach(function(program, i) {
+                let itemDay = {
+                    progStart: parseStart(schDayMonth, program),
+                    progStop: parseStop(schDayMonth, program, schDayPrograms[i+1]),
+                    progTitle: parseTitle(program),
+                    progDesc: parseDescription(program)
+                };
+                items.push(itemDay)
+            })
+        }
     })
 
     return items
@@ -82,14 +84,14 @@ function parseDescription(item) {
 }
 
 function parseStart(schDayMonth, item) {
-    let monthDate = cheerio.load(schDayMonth)('.slide .month').text().split(' ')
+    let monthDate = cheerio.load(schDayMonth).text().split(' ')
     let startTime = cheerio.load(item)('.pkl').text()
     let progStart = dayjs.tz(currentYear + ' ' + monthDate[0] + ' ' + monthDate[1] + ' ' + startTime, 'YYYY MMM DD HH:mm', 'Asia/Jakarta')
     return progStart
 }
 
 function parseStop(schDayMonth, itemCurrent, itemNext) {
-    let monthDate = cheerio.load(schDayMonth)('.slide .month').text().split(' ')
+    let monthDate = cheerio.load(schDayMonth).text().split(' ')
     
     if (itemNext) {
         let stopTime = cheerio.load(itemNext)('.pkl').text()
