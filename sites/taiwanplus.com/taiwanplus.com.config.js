@@ -38,9 +38,7 @@ module.exports = {
         for(let scheduleDate of scheduleDates) {
             const currentScheduleDate = new dayjs.utc(scheduleDate.date, 'YYYY/MM/DD')
 
-            if (currentScheduleDate.isBefore(today)) {
-                continue
-            } else if (currentScheduleDate.isBefore(lastDay)) {
+            if (currentScheduleDate.isSame(today)) {
                 scheduleDate.schedule.forEach(function(program, i) {
                     programs.push({
                         title: program.title,
@@ -51,9 +49,7 @@ module.exports = {
                         category: program.categoryName,
                         rating: program.ageRating
                     })
-                })
-            } else {
-                continue
+                });
             }
         }
 
