@@ -52,7 +52,7 @@ async function main() {
     }
 
     if (errors.length) {
-      logger.info(chalk.underline(filepath))
+      console.log(chalk.underline(filepath))
       console.table(errors, ['type', 'lang', 'xmltv_id', 'site_id', 'name'])
       console.log()
       stats.files++
@@ -60,7 +60,7 @@ async function main() {
   }
 
   if (stats.errors > 0) {
-    logger.error(chalk.red(`${stats.errors} error(s) in ${stats.files} file(s)`))
+    console.log(chalk.red(`${stats.errors} error(s) in ${stats.files} file(s)`))
     process.exit(1)
   }
 }
