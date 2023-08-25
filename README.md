@@ -42,19 +42,34 @@ npm install
 Now choose one of the sources (their complete list can be found in the [/sites](https://github.com/iptv-org/epg/tree/master/sites) folder) and start downloading the guide using the command:
 
 ```sh
-# Windows
-set SITE=example.com&& npm run grab
+npm run grab -- --site=example.com
+```
 
-# Linux/macOS
-SITE=example.com npm run grab
+To download a guide in a specific language pass its [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) code to the `--lang` argument:
+
+```sh
+npm run grab -- --site=example.com --lang=fr
+```
+
+To also create a compressed version of the guide, add the `--gzip` flag:
+
+```sh
+npm run grab -- --site=example.com --gzip
 ```
 
 After the download is completed in the current directory will appear a new folder `guides`, which will store all XML files:
 
 ```sh
 guides
-└── en
+└── fr
     └── example.com.xml
+    └── example.com.xml.gz
+```
+
+If you want to download the guide automatically on a schedule, you need to pass a valid [cron expression](https://crontab.guru/) to the script using the `--cron` attribute:
+
+```sh
+npm run grab -- --site=example.com --cron="0 0 * * *"
 ```
 
 Also you can make these guides available via URL by running your own server:
@@ -66,13 +81,13 @@ npm run serve
 After that all the downloaded guides will be available at a link like this:
 
 ```
-http://localhost:3000/guides/en/example.com.xml
+http://localhost:3000/guides/fr/example.com.xml
 ```
 
 In addition, they will be available on your local network at:
 
 ```
-http://<your_local_ip_address>:3000/guides/en/example.com.xml
+http://<your_local_ip_address>:3000/guides/fr/example.com.xml
 ```
 
 ## Playlists

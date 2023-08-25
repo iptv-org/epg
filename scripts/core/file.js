@@ -4,6 +4,23 @@ const fs = require('fs-extra')
 
 const file = {}
 
+file.templateVariables = function (template) {
+  const match = template.match(/{[^}]+}/g)
+
+  return Array.isArray(match) ? match.map(s => s.substring(1, s.length - 1)) : []
+}
+
+file.templateFormat = function (template, obj) {
+  let output = template
+  for (let key in obj) {
+    const regex = new RegExp(`{${key}}`, 'g')
+    const value = obj[key] || undefined
+    output = output.replace(regex, value)
+  }
+
+  return output
+}
+
 file.list = function (pattern) {
   return new Promise(resolve => {
     glob(pattern, function (err, files) {
