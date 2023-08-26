@@ -61,10 +61,9 @@ module.exports = {
                 title: item.displayNm,
                 start: parseStart(item),
                 stop: parseStop(item),
-                icon: programDetail.image[0].url,
-                category: programDetail.category_Info[0].title,
-                description: programDetail.content[0].text
-
+                icon: programDetail ? programDetail.image[0].url : '',
+                category: programDetail ? programDetail.category_Info[0].title : '',
+                description: programDetail ? programDetail.content[0].text : ''
             })
         }
 
@@ -90,7 +89,7 @@ function parseStop(item) {
 }
 
 async function parseProgramDetail(item) {
-    const data = await axios.post(
+    return axios.post(
         'https://www.arirang.com/v1.0/open/program/detail',
         {
             'bis_program_code': item.pgmCd
@@ -102,13 +101,13 @@ async function parseProgramDetail(item) {
                 'Origin': 'https://www.arirang.com',
                 'Referer': 'https://www.arirang.com/schedule',
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36'
-            }
-        })
-        .then(r => r.data)
-        .catch()
-
-    if (!data)
-        return {}
-
-    return data
+            },
+            timeout: 5000,
+            cache: { ttl: 60 * 1000 },
+        }
+    ).then(function (response) {
+        return response.data
+    }).catch(function (error) {
+        // console.log(error)
+    })
 }
