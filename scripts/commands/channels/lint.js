@@ -57,10 +57,10 @@ async function main() {
     }
 
     if (localErrors.length) {
-      logger.info(`\n${chalk.underline(filepath)}`)
+      console.log(`\n${chalk.underline(filepath)}`)
       localErrors.forEach(error => {
         const position = `${error.line}:${error.column}`
-        logger.error(` ${chalk.gray(position.padEnd(4, ' '))} ${error.message.trim()}`)
+        console.log(` ${chalk.gray(position.padEnd(4, ' '))} ${error.message.trim()}`)
       })
 
       errors = errors.concat(localErrors)
@@ -68,7 +68,7 @@ async function main() {
   }
 
   if (errors.length) {
-    logger.error(chalk.red(`\n${errors.length} error(s)`))
+    console.log(chalk.red(`\n${errors.length} error(s)`))
     process.exit(1)
   }
 }
