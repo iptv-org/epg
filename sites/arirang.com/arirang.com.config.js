@@ -61,9 +61,9 @@ module.exports = {
                 title: item.displayNm,
                 start: parseStart(item),
                 stop: parseStop(item),
-                icon: programDetail ? programDetail.image[0].url : '',
-                category: programDetail ? programDetail.category_Info[0].title : '',
-                description: programDetail ? programDetail.content[0].text : ''
+                icon: parseIcon(programDetail),
+                category: parseCategory(programDetail),
+                description: parseDescription(programDetail)
             })
         }
 
@@ -110,4 +110,30 @@ async function parseProgramDetail(item) {
     }).catch(function (error) {
         // console.log(error)
     })
+}
+
+function parseIcon(programDetail) {
+    if (programDetail && programDetail.image && programDetail.image[0].url) {
+        return programDetail.image[0].url
+    } else {
+        return ''
+    }
+}
+
+function parseCategory(programDetail) {
+    if (programDetail && programDetail.category_Info && programDetail.category_Info[0].title) {
+        return programDetail.category_Info[0].title
+    } else {
+        return ''
+    }
+}
+
+function parseDescription(programDetail) {
+    if (programDetail && programDetail.content && programDetail.content[0] && programDetail.content[0].text) {
+        let description = programDetail.content[0].text
+        let regex = /(<([^>]+)>)/ig
+        return description.replace(regex, '')
+    } else {
+        return ''
+    }
 }
