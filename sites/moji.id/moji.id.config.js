@@ -54,7 +54,7 @@ function parseItems(context) {
     const $ = cheerio.load(context.content)
     const schDayMonths =  $('.date-slider .month').toArray()
     const schPrograms = $('.desc-slider .list-slider').toArray()
-    const monthDate = dayjs(context.date).format('MMM D')
+    const monthDate = dayjs(context.date).format('MMM DD')
     const items = [];
 
     schDayMonths.forEach(function(schDayMonth, i) {
@@ -99,6 +99,6 @@ function parseStop(schDayMonth, itemCurrent, itemNext) {
     }
     else
     {
-        return dayjs.tz(currentYear + ' ' + monthDate[0] + ' ' + (parseInt(monthDate[1]) + 1) + ' 00:00', 'YYYY MMM DD HH:mm', 'Asia/Jakarta')
+        return dayjs.tz(currentYear + ' ' + monthDate[0] + ' ' + (parseInt(monthDate[1]) + 1).toString().padStart(2, '0') + ' 00:00', 'YYYY MMM DD HH:mm', 'Asia/Jakarta')
     }
 }
