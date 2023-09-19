@@ -1,10 +1,15 @@
 module.exports = {
   site: 'example.com',
-  days: 2,
+  days: 1,
+  request: {
+    timeout: 1000
+  },
   url() {
     return `https://example.com`
   },
-  parser() {
+  parser({ channel }) {
+    if (channel.xmltv_id === 'Channel2.us') return []
+
     return [
       {
         title: 'Program1',
