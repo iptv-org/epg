@@ -1,6 +1,134 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site site="gatotv.com">
   <channels>
+    <!-- <channel lang="es" xmltv_id="" site_id="13_de_guatemala">13 de Guatemala</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="14_de_mexico">14 de México</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="5_mexico">5 de México</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="6_de_puerto_rico">WIPR</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="7_de_puerto_rico_teleisla">Tele Isla</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="9_de_mexico">9 de México</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="amc_break">AMC Break</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="amc_colombia">AMC Colombia</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="amc_mexico">AMC México</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="america_teve">América TeVé</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="animal_planet_mexico">Animal Planet México</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="animal_planet_panregional">Animal Planet Panregional</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="animal_planet_sur">Animal Planet Sur</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="axn_espana">AXN ES</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="axn_venezuela">AXN Venezuela</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="axn_white_espana">AXN White España</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="azteca_uno_1h">Azteca Uno -1 h</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="azteca_uno_2h">Azteca Uno -2 h</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="baby_tv_latinoamerica">Baby TV Latam.</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="bbc_world_news">BBC World News</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="bloomberg">Bloomberg</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="capital_colombia">Capital Colombia</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="cartoonito_panregional">Cartoonito Panregional</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="cartoonito_sur">Cartoonito Sur</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="cinelatino_u_s_a">Cinelatino USA</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="cinema">Cinema</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="cinemax_argentina">Cinemax Argentina</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="city_tv">City TV</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="claro_tv">Claro TV</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="clic">Clic</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="comedy_central_centro">Comedy Central Centro</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="comedy_central_mexico">Comedy Central México</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="de_las_estrellas_-1h_mexico">las Estrellas - 1 Hora</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="de_las_estrellas_-2h_mexico">las Estrellas -2 Horas</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="de_pelicula">De Película</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="de_pelicula_m">De Película MPX</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="deutsche_welle">DW</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="discovery_home_and_health_colombia">Discovery Home &amp; Health Colombia</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="discovery_kids_latinoamerica">Discovery Kids LATAM</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="discovery_turbo_latinoamerica">Discovery Turbo LATAM.</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="discovery_world_latinoamerica">Discovery World Lat.</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="disney_channel_mexico">Disney Channel México</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="dw_latinoamerica">DW Latam.</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="e_entertainment_television_chile">E! Entertainment Television Chile</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="e_entertainment_television_panregional">E! Entertainment Television Panregional</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="el_heraldo_tv_mexico">El Heraldo TV</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="elgourmet">Elgourmet</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="enlace">TBN</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="espn_2_sur">ESPN 2 Sur</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="espn_2_venezuela">ESPN 2 Venezuela</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="espn_extra_latinoamerica">ESPN Extra Latinoamérica</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="espn_sur">ESPN Sur</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="euronews">Euronews</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="ewtn_en_espanol">EWTN en Español</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="film_and_arts">Film &amp; Arts</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="fox_sports_2_cono_norte">Fox Sports 2 Cono Norte</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="fox_sports_2_cono_sur">Fox Sports 2 Cono Sur</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="fox_sports_3_cono_norte">Fox Sports 3 Cono Norte</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="fox_sports_3_cono_sur">Fox Sports 3 Cono Sur</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="fox_sports_cono_norte">Fox Sports Cono Norte</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="fox_sports_cono_sur">Fox Sports Cono Sur</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="fx_centro">FX Centro</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="galicia_tv">Galicia TV</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="glitz">Glitz</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="gol_play_espana">Gol Play España</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="gol_tv_estados_unidos">Gol TV USA</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="golden_edge">Golden Edge</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="golden_mexico">Golden México</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="golden_mpx">Golden MPX</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="hbo_chile">HBO Chile</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="hollywood_espana">Hollywood España</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="i.sat">I.Sat</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="la_red_chile">La Red Chile</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="mas_chic_estados_unidos_este">Más Chic USA</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="mas_chic_latinoamerica">Más Chic Lat.</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="mtv_centro">MTV Centro</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="mtv_hits">MTV Hits</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="mtv_live_hd">MTV Live HD</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="mtv_mexico">MTV México</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="much_music">Much Music</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="national_geographic_centro">National Geographic Centro</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="nick_junior_latinoamerica">Nick Jr. Latinoamérica</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="nickelodeon_centro">Nickelodeon Centro</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="paramount_channel_latinoamerica">Paramount Channel Lat.</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="paramount_channel_mexico">Paramount Channel México</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="rai_international">RAI International</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="rcn_colombia">RCN Colombia</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="rcn_nuestra_tele_internacional">RCN Internacional</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="region_mas">Región+</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="sony_centro">Sony Centro</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="sony_chile">Sony Chile</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="space_chile">Space Chile</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="star_channel_argentina">Star Channel Argentina</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="star_channel_centro">Star Channel Centro</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="star_tve">Star TVE</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="starz_encore_espanol">Starz Encore Español</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="sun_channel">Sun Channel</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="syfy_latinoamerica">Syfy LATAM</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="tbs_latinoamerica">TBS Latinoamérica</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="telehit_musica_plus">Telehit Música Plus</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="telemundo_panregional">Telemundo PAN</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="telemundo_puerto_rico">Telemundo Puerto Rico</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="telesur">teleSUR</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="tiva_tv_puerto_rico">Tiva TV</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="tnt_centroamerica_y_caribe">TNT Centroamérica y Caribe</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="tnt_series">TNT Series Lat.</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="tnt_sports">TNT Sports</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="tr3s">Tr3s</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="tudn_centroamerica">TUDN Centroamérica</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="tv_agro_centroamerica">TV Agro C. A.</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="tv_azteca_corazon">TV Azteca Corazón</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="tv_azteca_mundo">TV Azteca Mundo</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="tv_dominicana">Television Dominicana</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="ultra_cine">Ultra Cine</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="ultra_docu">Ultra Docu</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="ultra_fiesta">Ultra Fiesta</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="ultra_film">Ultra Film</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="ultra_kidz">Ultra Kidz</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="ultra_tainment">Ultra Tainment</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="univision_latinoamerica">Univision Latinoamérica</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="ve_plus_latinoamerica">Ve Plus LATAM</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="vh1">VH1 Lat.</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="vme_tv">Vme TV</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="warner_tv_chile">Warner TV Chile</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="warner_tv_mexico">Warner TV México</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="warner_tv_panregional">Warner TV Panregional</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="warner_tv_sur">Warner TV Sur</channel> -->
+    <!-- <channel lang="es" xmltv_id="" site_id="zoomoo_latinoamerica">ZooMoo Latinoamérica</channel> -->
     <channel lang="es" xmltv_id="0porMovistarPlus.es" site_id="m_0">M+ #0</channel>
     <channel lang="es" xmltv_id="24Horas.cl" site_id="24_horas_chile">24 Horas Chile</channel>
     <channel lang="es" xmltv_id="AccionporMovistarPlus.es" site_id="m_accion">M+ Acción</channel>
@@ -292,7 +420,7 @@
     <channel lang="es" xmltv_id="TeleNostalgia.co" site_id="telenostalgia">Telenostalgia</channel>
     <channel lang="es" xmltv_id="TeleOnce.gt" site_id="11_de_guatemala">11 de Guatemala</channel>
     <channel lang="es" xmltv_id="Telepacifico.co" site_id="telepacifico">Telepacífico</channel>
-    <channel lang="es" xmltv_id="Telesistema.do" site_id="telesistema_11">11 de República Dominicana</channel>
+    <channel lang="es" xmltv_id="Telesistema11.do" site_id="telesistema_11">11 de República Dominicana</channel>
     <channel lang="es" xmltv_id="Teletica7.cr" site_id="7_de_costa_rica_teletica">7 de Costa Rica</channel>
     <channel lang="es" xmltv_id="Teleunion.do" site_id="teleunion_republica_dominicana">Teleunion</channel>
     <channel lang="es" xmltv_id="Teleuniverso.do" site_id="29_republica_dominicana">29 de República Dominicana</channel>
@@ -349,144 +477,16 @@
     <channel lang="es" xmltv_id="ViendoMovies.us" site_id="viendomovies">ViendoMovies</channel>
     <channel lang="es" xmltv_id="VivaNicaraguaCanal13.ni" site_id="13_de_nicaragua">13 de Nicaragua</channel>
     <channel lang="es" xmltv_id="VTV.hn" site_id="vtv_honduras_vica_tv">VTV Honduras</channel>
-    <channel lang="es" xmltv_id="WAPADT1.us" site_id="wapa_tv">WAPA-TV</channel>
-    <channel lang="es" xmltv_id="WAPADT2.us" site_id="wapa_2_deportes">WAPA 2 Deportes</channel>
+    <channel lang="es" xmltv_id="WAPADT1.pr" site_id="wapa_tv">WAPA-TV</channel>
+    <channel lang="es" xmltv_id="WAPADT2.pr" site_id="wapa_2_deportes">WAPA 2 Deportes</channel>
     <channel lang="es" xmltv_id="WillaxTV.pe" site_id="willax_tv">Willax TV</channel>
-    <channel lang="es" xmltv_id="WKAQDT2.us" site_id="punto_2_puerto_rico">Punto 2</channel>
+    <channel lang="es" xmltv_id="WKAQDT2.pr" site_id="punto_2_puerto_rico">Punto 2</channel>
     <channel lang="es" xmltv_id="WOBI.ar" site_id="wobi">WOBI</channel>
-    <channel lang="es" xmltv_id="WORODT1.us" site_id="13_de_puerto_rico">13 de Puerto Rico</channel>
+    <channel lang="es" xmltv_id="WORODT1.pr" site_id="13_de_puerto_rico">13 de Puerto Rico</channel>
     <channel lang="es" xmltv_id="XEFBTDT.mx" site_id="4_de_monterrey">4 de Monterrey</channel>
     <channel lang="es" xmltv_id="XEIMTTDT2.mx" site_id="22_mexico">22 de México</channel>
     <channel lang="es" xmltv_id="XEIPNTDT.mx" site_id="11_de_mexico">11 de México</channel>
     <channel lang="es" xmltv_id="ZonaLatina.cl" site_id="zona_latina">Zona Latina</channel>
     <channel lang="es" xmltv_id="Zoom.co" site_id="zoom_colombia">ZOOM Colombia</channel>
-    <!-- <channel lang="es" xmltv_id="" site_id="13_de_guatemala">13 de Guatemala</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="14_de_mexico">14 de México</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="5_mexico">5 de México</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="6_de_puerto_rico">WIPR</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="7_de_puerto_rico_teleisla">Tele Isla</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="9_de_mexico">9 de México</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="amc_break">AMC Break</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="amc_colombia">AMC Colombia</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="amc_mexico">AMC México</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="america_teve">América TeVé</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="animal_planet_mexico">Animal Planet México</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="animal_planet_panregional">Animal Planet Panregional</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="animal_planet_sur">Animal Planet Sur</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="axn_espana">AXN ES</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="axn_venezuela">AXN Venezuela</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="axn_white_espana">AXN White España</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="azteca_uno_1h">Azteca Uno -1 h</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="azteca_uno_2h">Azteca Uno -2 h</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="baby_tv_latinoamerica">Baby TV Latam.</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="bbc_world_news">BBC World News</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="bloomberg">Bloomberg</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="capital_colombia">Capital Colombia</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="cartoonito_panregional">Cartoonito Panregional</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="cartoonito_sur">Cartoonito Sur</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="cinelatino_u_s_a">Cinelatino USA</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="cinema">Cinema</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="cinemax_argentina">Cinemax Argentina</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="city_tv">City TV</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="claro_tv">Claro TV</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="clic">Clic</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="comedy_central_centro">Comedy Central Centro</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="comedy_central_mexico">Comedy Central México</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="de_las_estrellas_-1h_mexico">las Estrellas - 1 Hora</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="de_las_estrellas_-2h_mexico">las Estrellas -2 Horas</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="de_pelicula">De Película</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="de_pelicula_m">De Película MPX</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="deutsche_welle">DW</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="discovery_home_and_health_colombia">Discovery Home &amp; Health Colombia</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="discovery_kids_latinoamerica">Discovery Kids LATAM</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="discovery_turbo_latinoamerica">Discovery Turbo LATAM.</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="discovery_world_latinoamerica">Discovery World Lat.</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="disney_channel_mexico">Disney Channel México</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="dw_latinoamerica">DW Latam.</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="e_entertainment_television_chile">E! Entertainment Television Chile</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="e_entertainment_television_panregional">E! Entertainment Television Panregional</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="el_heraldo_tv_mexico">El Heraldo TV</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="elgourmet">Elgourmet</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="enlace">TBN</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="espn_2_sur">ESPN 2 Sur</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="espn_2_venezuela">ESPN 2 Venezuela</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="espn_extra_latinoamerica">ESPN Extra Latinoamérica</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="espn_sur">ESPN Sur</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="euronews">Euronews</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="ewtn_en_espanol">EWTN en Español</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="film_and_arts">Film &amp; Arts</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="fox_sports_2_cono_norte">Fox Sports 2 Cono Norte</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="fox_sports_2_cono_sur">Fox Sports 2 Cono Sur</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="fox_sports_3_cono_norte">Fox Sports 3 Cono Norte</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="fox_sports_3_cono_sur">Fox Sports 3 Cono Sur</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="fox_sports_cono_norte">Fox Sports Cono Norte</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="fox_sports_cono_sur">Fox Sports Cono Sur</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="fx_centro">FX Centro</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="galicia_tv">Galicia TV</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="glitz">Glitz</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="gol_play_espana">Gol Play España</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="gol_tv_estados_unidos">Gol TV USA</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="golden_edge">Golden Edge</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="golden_mexico">Golden México</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="golden_mpx">Golden MPX</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="hbo_chile">HBO Chile</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="hollywood_espana">Hollywood España</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="i.sat">I.Sat</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="la_red_chile">La Red Chile</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="mas_chic_estados_unidos_este">Más Chic USA</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="mas_chic_latinoamerica">Más Chic Lat.</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="mtv_centro">MTV Centro</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="mtv_hits">MTV Hits</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="mtv_live_hd">MTV Live HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="mtv_mexico">MTV México</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="much_music">Much Music</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="national_geographic_centro">National Geographic Centro</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="nick_junior_latinoamerica">Nick Jr. Latinoamérica</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="nickelodeon_centro">Nickelodeon Centro</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="paramount_channel_latinoamerica">Paramount Channel Lat.</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="paramount_channel_mexico">Paramount Channel México</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="rai_international">RAI International</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="rcn_colombia">RCN Colombia</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="rcn_nuestra_tele_internacional">RCN Internacional</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="region_mas">Región+</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="sony_centro">Sony Centro</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="sony_chile">Sony Chile</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="space_chile">Space Chile</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="star_channel_argentina">Star Channel Argentina</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="star_channel_centro">Star Channel Centro</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="star_tve">Star TVE</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="starz_encore_espanol">Starz Encore Español</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="sun_channel">Sun Channel</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="syfy_latinoamerica">Syfy LATAM</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="tbs_latinoamerica">TBS Latinoamérica</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="telehit_musica_plus">Telehit Música Plus</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="telemundo_panregional">Telemundo PAN</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="telemundo_puerto_rico">Telemundo Puerto Rico</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="telesur">teleSUR</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="tiva_tv_puerto_rico">Tiva TV</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="tnt_centroamerica_y_caribe">TNT Centroamérica y Caribe</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="tnt_series">TNT Series Lat.</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="tnt_sports">TNT Sports</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="tr3s">Tr3s</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="tudn_centroamerica">TUDN Centroamérica</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="tv_agro_centroamerica">TV Agro C. A.</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="tv_azteca_corazon">TV Azteca Corazón</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="tv_azteca_mundo">TV Azteca Mundo</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="tv_dominicana">Television Dominicana</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="ultra_cine">Ultra Cine</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="ultra_docu">Ultra Docu</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="ultra_fiesta">Ultra Fiesta</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="ultra_film">Ultra Film</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="ultra_kidz">Ultra Kidz</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="ultra_tainment">Ultra Tainment</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="univision_latinoamerica">Univision Latinoamérica</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="ve_plus_latinoamerica">Ve Plus LATAM</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="vh1">VH1 Lat.</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="vme_tv">Vme TV</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="warner_tv_chile">Warner TV Chile</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="warner_tv_mexico">Warner TV México</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="warner_tv_panregional">Warner TV Panregional</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="warner_tv_sur">Warner TV Sur</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="zoomoo_latinoamerica">ZooMoo Latinoamérica</channel> -->
   </channels>
 </site>
