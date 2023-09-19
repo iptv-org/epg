@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site site="mi.tv">
   <channels>
+    <!-- <channel lang="es" xmltv_id="" site_id="pe#pat">PAT</channel> -->
     <channel lang="es" xmltv_id="ATV.pe" site_id="pe#atv">ATV</channel>
     <channel lang="es" xmltv_id="ATVPlus.pe" site_id="pe#atv-1">ATV+</channel>
     <channel lang="es" xmltv_id="ATVSur.pe" site_id="pe#atv-sur">ATV Sur</channel>
@@ -14,7 +15,6 @@
     <channel lang="es" xmltv_id="MiGenteTV.co" site_id="pe#mi-gente">Mi Gente TV</channel>
     <channel lang="es" xmltv_id="NickelodeonPanregional.us" site_id="pe#nickelodeon">Nickelodeon</channel>
     <channel lang="es" xmltv_id="PanamericanaTV.pe" site_id="pe#panamericana-tv">Panamericana TV</channel>
-    <channel lang="es" xmltv_id="PAT.bo" site_id="pe#pat">PAT</channel>
     <channel lang="es" xmltv_id="RumbaTV.co" site_id="pe#rumba-tv">Rumba TV</channel>
     <channel lang="es" xmltv_id="Telefuturo.py" site_id="pe#telefuturo">Telefuturo</channel>
     <channel lang="es" xmltv_id="TVPeru.pe" site_id="pe#tv-peru">TV Perú</channel>
