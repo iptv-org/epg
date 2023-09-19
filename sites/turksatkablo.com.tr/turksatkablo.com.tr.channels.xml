@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site site="turksatkablo.com.tr">
   <channels>
+    <!-- <channel lang="tr" xmltv_id="" site_id="173">Qazaq TV</channel> -->
     <channel lang="tr" xmltv_id="24KitchenTurkey.tr" site_id="552">24 Kitchen Türkiye</channel>
     <channel lang="tr" xmltv_id="24TV.tr" site_id="1883">24 TV</channel>
     <channel lang="tr" xmltv_id="360.tr" site_id="1884">360</channel>
@@ -11,6 +12,7 @@
     <channel lang="tr" xmltv_id="AlaToo24.kg" site_id="2043">Ala Too 24</channel>
     <channel lang="tr" xmltv_id="AlJazeeraChannel.qa" site_id="615">Aljazeera Channel</channel>
     <channel lang="tr" xmltv_id="AlJazeeraEnglish.qa" site_id="169">Aljazeera English</channel>
+    <channel lang="tr" xmltv_id="AlSaudiya.sa" site_id="2118">Saudi TV</channel>
     <channel lang="tr" xmltv_id="ANews.tr" site_id="1857">A News</channel>
     <channel lang="tr" xmltv_id="Animaux.fr" site_id="268">Animaux</channel>
     <channel lang="tr" xmltv_id="APara.tr" site_id="1937">A Para</channel>
@@ -92,16 +94,14 @@
     <channel lang="tr" xmltv_id="NBATV.us" site_id="1828">NBA TV</channel>
     <channel lang="tr" xmltv_id="NHKWorldJapan.jp" site_id="181">NHK World Japan</channel>
     <channel lang="tr" xmltv_id="NTV.tr" site_id="1768">NTV</channel>
-    <channel lang="tr" xmltv_id="QazaqTV.kz" site_id="173">Qazaq TV</channel>
     <channel lang="tr" xmltv_id="QuranTV.sa" site_id="2111">Quran TV</channel>
-    <channel lang="tr" xmltv_id="Russia24.ru" site_id="1762">Rossiya 24</channel>
     <channel lang="tr" xmltv_id="RTGint.ru" site_id="310">RTG International</channel>
-    <channel lang="tr" xmltv_id="SaudiTV.sa" site_id="2118">Saudi TV</channel>
+    <channel lang="tr" xmltv_id="Russia24.ru" site_id="1762">Rossiya 24</channel>
     <channel lang="tr" xmltv_id="ScienceVieTV.fr" site_id="269">Science &amp; Vie TV</channel>
     <channel lang="tr" xmltv_id="ShowTV.tr" site_id="1417">Show TV</channel>
-    <channel lang="tr" xmltv_id="Sinema2.tr" site_id="284">Sinema 2</channel>
     <channel lang="tr" xmltv_id="Sinema1001.tr" site_id="327">Sinema 1001</channel>
     <channel lang="tr" xmltv_id="Sinema1002.tr" site_id="1928">Sinema 1002</channel>
+    <channel lang="tr" xmltv_id="Sinema2.tr" site_id="284">Sinema 2</channel>
     <channel lang="tr" xmltv_id="SinemaAile.tr" site_id="480">Sinema Aile</channel>
     <channel lang="tr" xmltv_id="SinemaAile2.tr" site_id="1897">Sinema Aile 2</channel>
     <channel lang="tr" xmltv_id="SinemaAksiyon.tr" site_id="325">Sinema Aksiyon</channel>
@@ -136,10 +136,10 @@
     <channel lang="tr" xmltv_id="TRTTurk.tr" site_id="114">TRT Türk</channel>
     <channel lang="tr" xmltv_id="TRTWorld.tr" site_id="1758">TRT World</channel>
     <channel lang="tr" xmltv_id="TurkmeneliTV.iq" site_id="1776">Türkmeneli TV</channel>
+    <channel lang="tr" xmltv_id="TV100.tr" site_id="2000">TV 100</channel>
     <channel lang="tr" xmltv_id="TV5MondeEurope.fr" site_id="184">TV 5 Monde Europe</channel>
     <channel lang="tr" xmltv_id="TV8.tr" site_id="1446">TV 8</channel>
     <channel lang="tr" xmltv_id="TV85.tr" site_id="1849">TV 8.5</channel>
-    <channel lang="tr" xmltv_id="TV100.tr" site_id="2000">TV 100</channel>
     <channel lang="tr" xmltv_id="TVNet.tr" site_id="1419">TV Net</channel>
     <channel lang="tr" xmltv_id="UATV.ua" site_id="1977">UA TV</channel>
     <channel lang="tr" xmltv_id="UcanKusTV.tr" site_id="1455">UçanKus TV</channel>
