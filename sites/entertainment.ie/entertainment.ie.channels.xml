@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site site="entertainment.ie">
   <channels>
+    <!-- <channel lang="en" xmltv_id="" site_id="bbc-one-ni">BBC One NI</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="bbc-two-northern-ireland">BBC Two NI</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="bt-sportespn">BT Sport/ESPN</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="e-entertainment">E! Entertainment</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="film4">FilmFour</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="great-action">Great! Action</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="great-movies-romance">Great! Movies Romance</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="home">Home</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="sky-cinema-batman">Sky Cinema Batman</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="sky-cinema-gangsters">Sky Cinema Gangsters</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="sky-cinema-superheroes">Sky Cinema Superheroes</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="sky-sports-f1">Sky Sports F1</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="tcm">Turner Classic Movies</channel> -->
     <channel lang="en" xmltv_id="4Music.uk" site_id="4music">4Music</channel>
     <channel lang="en" xmltv_id="Alibi.uk" site_id="alibi">Alibi</channel>
     <channel lang="en" xmltv_id="AnimalPlanetUK.uk" site_id="animal-planet">Animal Planet</channel>
@@ -8,9 +21,6 @@
     <channel lang="en" xmltv_id="BBCThree.uk" site_id="bbc-three">BBC Three</channel>
     <channel lang="en" xmltv_id="BoomerangUK.uk" site_id="boomerang">Boomerang</channel>
     <channel lang="en" xmltv_id="BoxNation.uk" site_id="box-nation">Box Nation</channel>
-    <channel lang="en" xmltv_id="BTSport1.uk" site_id="bt-sport-1">BT Sport 1</channel>
-    <channel lang="en" xmltv_id="BTSport2.uk" site_id="bt-sport-2">BT Sport 2</channel>
-    <channel lang="en" xmltv_id="BTSport3.uk" site_id="bt-sport-3">BT Sport 3</channel>
     <channel lang="en" xmltv_id="CartoonNetworkUK.uk" site_id="cartoon-network">Cartoon Network</channel>
     <channel lang="en" xmltv_id="CBBC.uk" site_id="cbbc">CBBC</channel>
     <channel lang="en" xmltv_id="CBeebies.uk" site_id="cbeebies">CBeebies</channel>
@@ -88,6 +98,9 @@
     <channel lang="en" xmltv_id="SkyWitness.uk" site_id="sky-witness">Sky Witness</channel>
     <channel lang="en" xmltv_id="TG4.ie" site_id="tg4">TG4</channel>
     <channel lang="en" xmltv_id="TLCUK.uk" site_id="tlc">TLC</channel>
+    <channel lang="en" xmltv_id="TNTSports1.uk" site_id="bt-sport-1">TNT Sports 1</channel>
+    <channel lang="en" xmltv_id="TNTSports2.uk" site_id="bt-sport-2">TNT Sports 2</channel>
+    <channel lang="en" xmltv_id="TNTSports3.uk" site_id="bt-sport-3">TNT Sports 3</channel>
     <channel lang="en" xmltv_id="UTV.uk" site_id="utv">UTV</channel>
     <channel lang="en" xmltv_id="VirginMediaFour.ie" site_id="virgin-media-four">Virgin Media Four</channel>
     <channel lang="en" xmltv_id="VirginMediaMore.ie" site_id="virgin-media-more">Virgin Media More</channel>
@@ -96,18 +109,5 @@
     <channel lang="en" xmltv_id="VirginMediaTwo.ie" site_id="virgin-media-two">Virgin Media Two</channel>
     <channel lang="en" xmltv_id="W.uk" site_id="w">W</channel>
     <channel lang="en" xmltv_id="Yesterday.uk" site_id="yesterday">Yesterday</channel>
-    <!-- <channel lang="en" xmltv_id="" site_id="bbc-one-ni">BBC One NI</channel> -->
-    <!-- <channel lang="en" xmltv_id="" site_id="bbc-two-northern-ireland">BBC Two NI</channel> -->
-    <!-- <channel lang="en" xmltv_id="" site_id="bt-sportespn">BT Sport/ESPN</channel> -->
-    <!-- <channel lang="en" xmltv_id="" site_id="e-entertainment">E! Entertainment</channel> -->
-    <!-- <channel lang="en" xmltv_id="" site_id="film4">FilmFour</channel> -->
-    <!-- <channel lang="en" xmltv_id="" site_id="great-action">Great! Action</channel> -->
-    <!-- <channel lang="en" xmltv_id="" site_id="great-movies-romance">Great! Movies Romance</channel> -->
-    <!-- <channel lang="en" xmltv_id="" site_id="home">Home</channel> -->
-    <!-- <channel lang="en" xmltv_id="" site_id="sky-cinema-batman">Sky Cinema Batman</channel> -->
-    <!-- <channel lang="en" xmltv_id="" site_id="sky-cinema-gangsters">Sky Cinema Gangsters</channel> -->
-    <!-- <channel lang="en" xmltv_id="" site_id="sky-cinema-superheroes">Sky Cinema Superheroes</channel> -->
-    <!-- <channel lang="en" xmltv_id="" site_id="sky-sports-f1">Sky Sports F1</channel> -->
-    <!-- <channel lang="en" xmltv_id="" site_id="tcm">Turner Classic Movies</channel> -->
   </channels>
 </site>
