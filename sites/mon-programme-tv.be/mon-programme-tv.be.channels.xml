@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site site="mon-programme-tv.be">
   <channels>
+    <!-- <channel lang="fr" xmltv_id="" site_id="1200/programme-television-disney-cinema">DISNEY CINEMA</channel> -->
+    <!-- <channel lang="fr" xmltv_id="" site_id="129/programme-television-bbc1">BBC1</channel> -->
+    <!-- <channel lang="fr" xmltv_id="" site_id="130/programme-television-bbc2">BBC2</channel> -->
+    <!-- <channel lang="fr" xmltv_id="" site_id="1377/programme-television-eleven-sports-1">ELEVEN SPORTS 1</channel> -->
+    <!-- <channel lang="fr" xmltv_id="" site_id="180/programme-television-info-sport">INFO SPORT</channel> -->
+    <!-- <channel lang="fr" xmltv_id="" site_id="344/programme-television-france-o">FRANCE Ô</channel> -->
+    <!-- <channel lang="fr" xmltv_id="" site_id="658/programme-television-disney-xd">DISNEY XD</channel> -->
+    <!-- <channel lang="fr" xmltv_id="" site_id="71/programme-television-voyage">VOYAGE</channel> -->
+    <!-- <channel lang="fr" xmltv_id="" site_id="82/programme-television-seasons-">SEASONS +</channel> -->
     <channel lang="fr" xmltv_id="13emeRue.fr" site_id="74/programme-television-13eme-rue">13EME RUE</channel>
     <channel lang="fr" xmltv_id="AB3.be" site_id="229/programme-television-ab3">AB3</channel>
     <channel lang="fr" xmltv_id="ABXplore.be" site_id="1725/programme-television-abxplore">ABXPLORE</channel>
@@ -21,9 +30,9 @@
     <channel lang="fr" xmltv_id="Canvas.be" site_id="581/programme-television-canvas">CANVAS</channel>
     <channel lang="fr" xmltv_id="CartoonNetworkFrance.fr" site_id="93/programme-television-cartoon-network">CARTOON NETWORK</channel>
     <channel lang="fr" xmltv_id="ChassePeche.fr" site_id="127/programme-television-chasse-peche">CHASSE &amp; PECHE</channel>
-    <channel lang="fr" xmltv_id="CinePlusClassic.be" site_id="312/programme-television-cine-classic-be">CINE + CLASSIC BE</channel>
-    <channel lang="fr" xmltv_id="CinePlusFrisson.be" site_id="266/programme-television-cine-frisson-be">CINE + FRISSON BE</channel>
-    <channel lang="fr" xmltv_id="CinePlusPremier.be" site_id="265/programme-television-cine-premier-be">CINE + PREMIER BE</channel>
+    <channel lang="fr" xmltv_id="CinePlusClassicBelgium.be" site_id="312/programme-television-cine-classic-be">CINE + CLASSIC BE</channel>
+    <channel lang="fr" xmltv_id="CinePlusFrissonBelgium.be" site_id="266/programme-television-cine-frisson-be">CINE + FRISSON BE</channel>
+    <channel lang="fr" xmltv_id="CinePlusPremierBelgium.be" site_id="265/programme-television-cine-premier-be">CINE + PREMIER BE</channel>
     <channel lang="fr" xmltv_id="ClubRTL.be" site_id="67/programme-television-club-rtl">CLUB RTL</channel>
     <channel lang="fr" xmltv_id="CNews.fr" site_id="179/programme-television-cnews">CNEWS</channel>
     <channel lang="fr" xmltv_id="ComediePlus.fr" site_id="73/programme-television-comedie-">COMEDIE +</channel>
@@ -103,14 +112,5 @@
     <channel lang="fr" xmltv_id="VTM4.be" site_id="688/programme-television-vtm4">VTM4</channel>
     <channel lang="fr" xmltv_id="VTMKids.be" site_id="1170/programme-television-vtm-kids">VTM KIDS</channel>
     <channel lang="fr" xmltv_id="WarnerTVFrance.fr" site_id="1729/programme-television-warner-tv">Warner TV</channel>
-    <!-- <channel lang="fr" xmltv_id="" site_id="1200/programme-television-disney-cinema">DISNEY CINEMA</channel> -->
-    <!-- <channel lang="fr" xmltv_id="" site_id="129/programme-television-bbc1">BBC1</channel> -->
-    <!-- <channel lang="fr" xmltv_id="" site_id="130/programme-television-bbc2">BBC2</channel> -->
-    <!-- <channel lang="fr" xmltv_id="" site_id="1377/programme-television-eleven-sports-1">ELEVEN SPORTS 1</channel> -->
-    <!-- <channel lang="fr" xmltv_id="" site_id="180/programme-television-info-sport">INFO SPORT</channel> -->
-    <!-- <channel lang="fr" xmltv_id="" site_id="344/programme-television-france-o">FRANCE Ô</channel> -->
-    <!-- <channel lang="fr" xmltv_id="" site_id="658/programme-television-disney-xd">DISNEY XD</channel> -->
-    <!-- <channel lang="fr" xmltv_id="" site_id="71/programme-television-voyage">VOYAGE</channel> -->
-    <!-- <channel lang="fr" xmltv_id="" site_id="82/programme-television-seasons-">SEASONS +</channel> -->
   </channels>
 </site>
