@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site site="telecablesat.fr">
   <channels>
+    <channel lang="de" xmltv_id="DasErste.de" site_id="13">Das Erste</channel>
+    <channel lang="de" xmltv_id="ZDF.de" site_id="219">ZDF</channel>
+    <channel lang="en" xmltv_id="BBCEntertainment.uk" site_id="18">BBC Entertainment</channel>
+    <channel lang="en" xmltv_id="BBCOneEngland.uk" site_id="16">BBC 1</channel>
+    <channel lang="en" xmltv_id="BBCTwoEngland.uk" site_id="17">BBC 2</channel>
+    <channel lang="en" xmltv_id="BBCWorldNewsEurope.uk" site_id="19">BBC World News</channel>
+    <channel lang="en" xmltv_id="CNNInternationalEurope.us" site_id="53">CNN</channel>
+    <channel lang="en" xmltv_id="DWEnglish.de" site_id="61">DW (English)</channel>
     <channel lang="fr" xmltv_id="13emeRue.fr" site_id="2">13eme RUE</channel>
     <channel lang="fr" xmltv_id="2MInternational.ma" site_id="340">2M Monde</channel>
     <channel lang="fr" xmltv_id="3sat.de" site_id="3">3SAT</channel>
@@ -18,10 +26,6 @@
     <channel lang="fr" xmltv_id="APlusInternationalFrance.fr" site_id="2049">A+ International France</channel>
     <channel lang="fr" xmltv_id="ARTEFrance.fr" site_id="111">Arte</channel>
     <channel lang="fr" xmltv_id="Automotolachaine.fr" site_id="15">Automoto</channel>
-    <channel lang="en" xmltv_id="BBCEntertainment.uk" site_id="18">BBC Entertainment</channel>
-    <channel lang="en" xmltv_id="BBCOneEngland.uk" site_id="16">BBC 1</channel>
-    <channel lang="en" xmltv_id="BBCTwoEngland.uk" site_id="17">BBC 2</channel>
-    <channel lang="en" xmltv_id="BBCWorldNewsEurope.uk" site_id="19">BBC World News</channel>
     <channel lang="fr" xmltv_id="Be1.be" site_id="29">BE 1</channel>
     <channel lang="fr" xmltv_id="BeCine.be" site_id="417">Be Ciné</channel>
     <channel lang="fr" xmltv_id="beINSports1France.fr" site_id="1290">beIN SPORTS 1</channel>
@@ -56,29 +60,26 @@
     <channel lang="fr" xmltv_id="CanalPlusSportFrance.fr" site_id="35">Canal+ Sport</channel>
     <channel lang="fr" xmltv_id="CanalZ.be" site_id="936">Canal Z</channel>
     <channel lang="fr" xmltv_id="CanalZoom.be" site_id="386">Canal Zoom</channel>
-    <channel lang="nl" xmltv_id="Canvas.be" site_id="24">Canvas</channel>
     <channel lang="fr" xmltv_id="CartoonNetworkFrance.fr" site_id="36">Cartoon Network</channel>
     <channel lang="fr" xmltv_id="CGTNFrench.cn" site_id="318">CGTN</channel>
     <channel lang="fr" xmltv_id="ChassePeche.fr" site_id="38">Chasse et pêche</channel>
     <channel lang="fr" xmltv_id="Cherie25.fr" site_id="1399">Chérie 25</channel>
     <channel lang="fr" xmltv_id="CinePlusClassic.fr" site_id="287">Ciné+ Classic</channel>
-    <channel lang="fr" xmltv_id="CinePlusClassic.be" site_id="437">Ciné+ Classic Belgique</channel>
+    <channel lang="fr" xmltv_id="CinePlusClassicBelgium.be" site_id="437">Ciné+ Classic Belgique</channel>
     <channel lang="fr" xmltv_id="CinePlusClub.fr" site_id="285">Ciné+ Club</channel>
     <channel lang="fr" xmltv_id="CinePlusEmotion.fr" site_id="283">Ciné+ Emotion</channel>
     <channel lang="fr" xmltv_id="CinePlusFamiz.fr" site_id="401">Ciné+ Famiz</channel>
     <channel lang="fr" xmltv_id="CinePlusFrisson.fr" site_id="284">Ciné+ Frisson</channel>
-    <channel lang="fr" xmltv_id="CinePlusFrisson.be" site_id="317">Ciné+ Frisson Belgique</channel>
+    <channel lang="fr" xmltv_id="CinePlusFrissonBelgium.be" site_id="317">Ciné+ Frisson Belgique</channel>
     <channel lang="fr" xmltv_id="CinePlusPremier.fr" site_id="282">Ciné+ Premier</channel>
-    <channel lang="fr" xmltv_id="CinePlusPremier.be" site_id="294">Ciné+ Premier Belgique</channel>
+    <channel lang="fr" xmltv_id="CinePlusPremierBelgium.be" site_id="294">Ciné+ Premier Belgique</channel>
     <channel lang="fr" xmltv_id="CliqueTV.fr" site_id="2781">Clique TV</channel>
     <channel lang="fr" xmltv_id="ClubRTL.be" site_id="50">Club RTL</channel>
     <channel lang="fr" xmltv_id="CNews.fr" site_id="226">CNEWS</channel>
-    <channel lang="en" xmltv_id="CNNInternationalEurope.us" site_id="53">CNN</channel>
     <channel lang="fr" xmltv_id="ComediePlus.fr" site_id="54">Comédie+</channel>
     <channel lang="fr" xmltv_id="ComedyCentralFrance.fr" site_id="2752">Comedy Central</channel>
     <channel lang="fr" xmltv_id="CrimeDistrict.fr" site_id="2037">Crime District</channel>
     <channel lang="fr" xmltv_id="CStar.fr" site_id="458">CSTAR</channel>
-    <channel lang="de" xmltv_id="DasErste.de" site_id="13">Das Erste</channel>
     <channel lang="fr" xmltv_id="DemainTV.fr" site_id="57">Demain TV</channel>
     <channel lang="fr" xmltv_id="DiscoveryChannelFrance.fr" site_id="400">Discovery Channel</channel>
     <channel lang="fr" xmltv_id="DiscoveryFamily.us" site_id="2324">Discovery Family</channel>
@@ -87,8 +88,6 @@
     <channel lang="fr" xmltv_id="DisneyChannelFrance.fr" site_id="58">Disney Channel</channel>
     <channel lang="fr" xmltv_id="DisneyJuniorFrance.fr" site_id="300">Disney Junior</channel>
     <channel lang="fr" xmltv_id="DorcelTV.nl" site_id="560">Dorcel TV</channel>
-    <channel lang="en" xmltv_id="DWEnglish.de" site_id="61">DW (English)</channel>
-    <channel lang="nl" xmltv_id="Een.be" site_id="23">één</channel>
     <channel lang="fr" xmltv_id="EFrance.fr" site_id="405">E !</channel>
     <channel lang="fr" xmltv_id="Eleven1Belgium.be" site_id="2024">Eleven Sports 1</channel>
     <channel lang="fr" xmltv_id="Eleven2Belgium.be" site_id="2025">Eleven Sports 2</channel>
@@ -162,6 +161,7 @@
     <channel lang="fr" xmltv_id="MensUPTV.fr" site_id="1452">Men&apos;s UP TV</channel>
     <channel lang="fr" xmltv_id="Mezzo.fr" site_id="125">Mezzo</channel>
     <channel lang="fr" xmltv_id="MezzoLiveHD.fr" site_id="907">Mezzo Live HD</channel>
+    <channel lang="fr" xmltv_id="MoselleTV.fr" site_id="1045">ViàMoselleTV</channel>
     <channel lang="fr" xmltv_id="MTVFrance.fr" site_id="128">MTV</channel>
     <channel lang="fr" xmltv_id="MuseumTV.fr" site_id="1072">Museum TV</channel>
     <channel lang="fr" xmltv_id="MyZenTV.fr" site_id="829">MyZen.tv</channel>
@@ -194,12 +194,10 @@
     <channel lang="fr" xmltv_id="PolarPlus.fr" site_id="2326">Polar+</channel>
     <channel lang="fr" xmltv_id="ProSieben.de" site_id="964">Pro7</channel>
     <channel lang="fr" xmltv_id="Proximus11.be" site_id="1075">Proximus 11</channel>
-    <channel lang="it" xmltv_id="Rai1.it" site_id="156">Rai Uno</channel>
-    <channel lang="it" xmltv_id="Rai2.it" site_id="154">Rai Due</channel>
-    <channel lang="it" xmltv_id="Rai3.it" site_id="155">Rai Tre</channel>
     <channel lang="fr" xmltv_id="Reunion1ere.fr" site_id="245">Réunion la 1ère</channel>
     <channel lang="fr" xmltv_id="RMCDecouverte.fr" site_id="1400">RMC Découverte</channel>
     <channel lang="fr" xmltv_id="RMCSport1.fr" site_id="2665">RMC Sport 1</channel>
+    <channel lang="fr" xmltv_id="RMCSport1UHD.fr" site_id="2029">RMC Sport 1 UHD</channel>
     <channel lang="fr" xmltv_id="RMCSport2.fr" site_id="2666">RMC Sport 2</channel>
     <channel lang="fr" xmltv_id="RMCSportAccess1.fr" site_id="2095">RMC Sport Access 1</channel>
     <channel lang="fr" xmltv_id="RMCSportAccess2.fr" site_id="675">RMC Sport Access 2</channel>
@@ -213,7 +211,6 @@
     <channel lang="fr" xmltv_id="RMCSportLive7.fr" site_id="2670">RMC Sport Live 7</channel>
     <channel lang="fr" xmltv_id="RMCSportLive8.fr" site_id="2671">RMC Sport Live 8</channel>
     <channel lang="fr" xmltv_id="RMCSportLive9.fr" site_id="2672">RMC Sport Live 9</channel>
-    <channel lang="fr" xmltv_id="RMCSport1UHD.fr" site_id="2029">RMC Sport 1 UHD</channel>
     <channel lang="fr" xmltv_id="RMCStory.fr" site_id="1402">RMC Story</channel>
     <channel lang="fr" xmltv_id="RougeTV.ch" site_id="822">Rouge TV</channel>
     <channel lang="fr" xmltv_id="RSILa1.ch" site_id="200">RSI LA 1</channel>
@@ -266,20 +263,23 @@
     <channel lang="fr" xmltv_id="ViaATV.mq" site_id="295">ATV Martinique</channel>
     <channel lang="fr" xmltv_id="ViaGuadeloupe.fr" site_id="1140">ATV Guadeloupe</channel>
     <channel lang="fr" xmltv_id="ViaGuyane.fr" site_id="1531">ATV Guyane</channel>
-    <channel lang="fr" xmltv_id="MoselleTV.fr" site_id="1045">ViàMoselleTV</channel>
     <channel lang="fr" xmltv_id="ViaOccitanieMontpellier.fr" site_id="704">Vià Occitanie Montpellier</channel>
     <channel lang="fr" xmltv_id="ViaOccitaniePaysGardois.fr" site_id="538">Vià Occitanie Pays Gardois</channel>
-    <channel lang="fr" xmltv_id="VosgesTV.fr" site_id="1095">ViàVosges</channel>
     <channel lang="fr" xmltv_id="VICETV.us" site_id="2171">Vice TV</channel>
     <channel lang="fr" xmltv_id="VOOsportWorld1.be" site_id="413">VOOsport World 1</channel>
     <channel lang="fr" xmltv_id="VOOsportWorld2.be" site_id="414">VOOsport World 2</channel>
     <channel lang="fr" xmltv_id="VOOsportWorld3.be" site_id="472">VOOsport World 3</channel>
-    <channel lang="nl" xmltv_id="VTM.be" site_id="215">VTM</channel>
+    <channel lang="fr" xmltv_id="VosgesTV.fr" site_id="1095">ViàVosges</channel>
     <channel lang="fr" xmltv_id="W9.fr" site_id="119">W9</channel>
     <channel lang="fr" xmltv_id="WallisFutuna1ere.fr" site_id="519">Wallis et Futuna la 1ère</channel>
     <channel lang="fr" xmltv_id="WarnerTVFrance.fr" site_id="2334">Warner TV</channel>
     <channel lang="fr" xmltv_id="Weo.fr" site_id="809">Wéo</channel>
     <channel lang="fr" xmltv_id="XXL.fr" site_id="218">XXL</channel>
-    <channel lang="de" xmltv_id="ZDF.de" site_id="219">ZDF</channel>
+    <channel lang="it" xmltv_id="Rai1.it" site_id="156">Rai Uno</channel>
+    <channel lang="it" xmltv_id="Rai2.it" site_id="154">Rai Due</channel>
+    <channel lang="it" xmltv_id="Rai3.it" site_id="155">Rai Tre</channel>
+    <channel lang="nl" xmltv_id="Canvas.be" site_id="24">Canvas</channel>
+    <channel lang="nl" xmltv_id="Een.be" site_id="23">één</channel>
+    <channel lang="nl" xmltv_id="VTM.be" site_id="215">VTM</channel>
   </channels>
 </site>
