@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site site="plex.tv">
   <channels>
+    <!-- <channel lang="en" xmltv_id="" site_id="5e20b730f2f8d5003d739db7-5f6b8e7900b0950040d0f2b2">The World Poker Tour</channel> -->
     <channel lang="en" xmltv_id="24HourFreeMovies.us" site_id="5e20b730f2f8d5003d739db7-5fd115bab7ef8d002dcf181d">24 Hour Free Movies</channel>
     <channel lang="en" xmltv_id="ACCDigitalNetwork.us" site_id="5e20b730f2f8d5003d739db7-5f8ee3727c75fa002d9e47c1">ACCDN</channel>
     <channel lang="en" xmltv_id="AccuWeatherNOW.us" site_id="5e20b730f2f8d5003d739db7-6151d74593dbf246f0843f01">AccuWeather NOW</channel>
@@ -8,14 +9,12 @@
     <channel lang="en" xmltv_id="ACTION.us" site_id="5e20b730f2f8d5003d739db7-61fdad7e6448bd1648c124d9">ACTION!!!</channel>
     <channel lang="en" xmltv_id="ActionNewsJaxNow.us" site_id="5e20b730f2f8d5003d739db7-61f9a4c0c68d91e31d4cc86a">Action News Jax</channel>
     <channel lang="en" xmltv_id="AfroLandTV.us" site_id="5e20b730f2f8d5003d739db7-60e737a4ebef9d002c4d0a0c">AfroLandTV</channel>
-    <channel lang="es" xmltv_id="AFVEspanol.us" site_id="5e20b730f2f8d5003d739db7-5ef4e1b10d9ad000423c4421">AFV Español</channel>
     <channel lang="en" xmltv_id="AFVFamily.us" site_id="5e20b730f2f8d5003d739db7-5ef11486d33ab9004048a1cd">AFV Family</channel>
     <channel lang="en" xmltv_id="ALF.us" site_id="5e20b730f2f8d5003d739db7-62d1ecc8e44d39da220722aa">ALF</channel>
     <channel lang="en" xmltv_id="ALLBLKGems.us" site_id="5e20b730f2f8d5003d739db7-628bb0eafcb403aa62d2317d">ALLBLK Gems</channel>
     <channel lang="en" xmltv_id="AllRealitybyWEtv.us" site_id="5e20b730f2f8d5003d739db7-5fc705ff2f220e002d5e6bec">All Reality WE tv</channel>
     <channel lang="en" xmltv_id="AllWeddingsWEtv.us" site_id="5e20b730f2f8d5003d739db7-60de0520281b17002cd1d4c4">All Weddings WE tv</channel>
     <channel lang="en" xmltv_id="ALTRDTV.us" site_id="5e20b730f2f8d5003d739db7-60bfd0907c60b7002c9765de">ALTRD.TV</channel>
-    <channel lang="es" xmltv_id="AMCenEspanol.us" site_id="5e20b730f2f8d5003d739db7-62d1efa6c33948ea4ceedbcf">AMC en Español</channel>
     <channel lang="en" xmltv_id="AMCThrillers.us" site_id="5e20b730f2f8d5003d739db7-5fc705e2a2236e002d69f36d">AMC Thrillers</channel>
     <channel lang="en" xmltv_id="AngerManagementChannel.us" site_id="5e20b730f2f8d5003d739db7-6303ca568a01b5d4dae57d0e">Anger Management</channel>
     <channel lang="en" xmltv_id="AntiquesRoadshowUK.us" site_id="5e20b730f2f8d5003d739db7-630902bf0417b7074a4ad95c">Antiques Roadshow UK</channel>
@@ -42,17 +41,14 @@
     <channel lang="en" xmltv_id="BoonieCubsTV.us" site_id="5e20b730f2f8d5003d739db7-6334bd648a7b2a349d903bc3">Boonie Cubs TV</channel>
     <channel lang="en" xmltv_id="Boston25Now.us" site_id="5e20b730f2f8d5003d739db7-61f9a37f43ec158c3a3eb292">Boston 25 News</channel>
     <channel lang="en" xmltv_id="CampusLoreSports.us" site_id="5e20b730f2f8d5003d739db7-6216ae22c3bbca2de8704f65">CampusLore Sports</channel>
-    <channel lang="es" xmltv_id="CanelaTV.us" site_id="5e20b730f2f8d5003d739db7-5f5132e362fe160040f26c18">Canela TV</channel>
     <channel lang="en" xmltv_id="CaughtinProvidence.us" site_id="5e20b730f2f8d5003d739db7-61ddcdc03c12aa1e5d320aaf">Caught in Providence</channel>
     <channel lang="en" xmltv_id="CheddarNews.us" site_id="5e20b730f2f8d5003d739db7-5f6b8e5900b0950040d0f2af">Cheddar News</channel>
     <channel lang="en" xmltv_id="ChickenSoupfortheSoul.us" site_id="5e20b730f2f8d5003d739db7-61a94815f6575693e6392561">Chicken Soup for the Soul</channel>
-    <channel lang="es" xmltv_id="Chiquilines.us" site_id="5e20b730f2f8d5003d739db7-6018913ea15130002b28418f">Chiquilines</channel>
     <channel lang="en" xmltv_id="ChiveTV.us" site_id="5e20b730f2f8d5003d739db7-616df4c10dfa27ee465797fc">ChiveTV</channel>
     <channel lang="en" xmltv_id="Choppertown.us" site_id="5e20b730f2f8d5003d739db7-5ef11487d33ab9004048a1d3">Choppertown</channel>
     <channel lang="en" xmltv_id="CineLife.us" site_id="5e20b730f2f8d5003d739db7-616df1e90dfa27ee465797fa">CineLife</channel>
     <channel lang="en" xmltv_id="CinemaLibreChannel.us" site_id="5e20b730f2f8d5003d739db7-631b9d0a57a647ff194be13f">Cinema Libre Channel</channel>
     <channel lang="en" xmltv_id="CinePride.us" site_id="5e20b730f2f8d5003d739db7-62167144ab2095ca85353ad6">CINEPRIDE</channel>
-    <channel lang="es" xmltv_id="CineReal.us" site_id="5e20b730f2f8d5003d739db7-60240f57676235002df19f47">Cine Real</channel>
     <channel lang="en" xmltv_id="CineSureno.us" site_id="5e20b730f2f8d5003d739db7-6018913fa15130002b284197">Cine Sureño</channel>
     <channel lang="en" xmltv_id="CineverseSelects.us" site_id="5e20b730f2f8d5003d739db7-60a9d104d162b9002d05a60a">Cineverse Selects</channel>
     <channel lang="en" xmltv_id="ClassicDoctorWho.us" site_id="5e20b730f2f8d5003d739db7-63068b870bbec3b06755a0ee">Classic Doctor Who</channel>
@@ -63,7 +59,6 @@
     <channel lang="en" xmltv_id="CONtv.us" site_id="5e20b730f2f8d5003d739db7-5efe1de5e0b3f5003f5d9f79">CONtv</channel>
     <channel lang="en" xmltv_id="CONtvAnime.us" site_id="5e20b730f2f8d5003d739db7-5f5132d862fe160040f26b32">CONtv Anime</channel>
     <channel lang="en" xmltv_id="CookingPanda.us" site_id="5e20b730f2f8d5003d739db7-5f07e9fdf313eb0041bbecda">Cooking Panda</channel>
-    <channel lang="es" xmltv_id="TVCortos.us" site_id="5e20b730f2f8d5003d739db7-631b9f3d9ffce67ae0e91190">Cortos</channel>
     <channel lang="en" xmltv_id="CowboyWay.us" site_id="5e20b730f2f8d5003d739db7-62316e8eb9d292cb4ad7499f">Cowboy Way</channel>
     <channel lang="en" xmltv_id="Crackle.us" site_id="5e20b730f2f8d5003d739db7-5fd2759bc8634d002d9ff9bc">Crackle</channel>
     <channel lang="en" xmltv_id="Crime360.us" site_id="5e20b730f2f8d5003d739db7-5f74cf7effbe690040689f41">Crime 360</channel>
@@ -76,19 +71,14 @@
     <channel lang="en" xmltv_id="DoveChannel.us" site_id="5e20b730f2f8d5003d739db7-5efe1de8e0b3f5003f5d9f91">Dove</channel>
     <channel lang="en" xmltv_id="DungeonTV.us" site_id="5e20b730f2f8d5003d739db7-6216723e2c2627c068e73ad4">Dungeon TV</channel>
     <channel lang="en" xmltv_id="EDGEsport.uk" site_id="5e20b730f2f8d5003d739db7-5eea71d45252710041e0ccb9">Edge Sport</channel>
-    <channel lang="es" xmltv_id="ElConflictoTV.us" site_id="5e20b730f2f8d5003d739db7-621674f168c966be92737ce6">El Conflicto TV</channel>
     <channel lang="en" xmltv_id="ElectricNow.us" site_id="5e20b730f2f8d5003d739db7-5f170d61b898490041b49360">Electric Now</channel>
     <channel lang="en" xmltv_id="ElRey.us" site_id="5e20b730f2f8d5003d739db7-6335ad3170dc93c71ab5ce09">EL REY</channel>
     <channel lang="en" xmltv_id="EntrepreneurTV.us" site_id="5e20b730f2f8d5003d739db7-62ba4c6bf663580a7238f329">Entrepreneur TV</channel>
-    <channel lang="es" xmltv_id="EstrellaNews.us" site_id="5e20b730f2f8d5003d739db7-60089d97f682a3002c34829b">Estrella News</channel>
-    <channel lang="es" xmltv_id="EstrellaTV.us" site_id="5e20b730f2f8d5003d739db7-60089d98f682a3002c34829f">Estrella TV</channel>
     <channel lang="en" xmltv_id="ESTV.us" site_id="5e20b730f2f8d5003d739db7-603da0d5d4e466002cdda4d1">ESTV</channel>
     <channel lang="en" xmltv_id="EuronewsEnglish.fr" site_id="5e20b730f2f8d5003d739db7-60089d90f682a3002c348299">Euronews</channel>
     <channel lang="en" xmltv_id="EuronewsFrench.fr" site_id="5e20b730f2f8d5003d739db7-6245f06793b402a3d1097787">Euronews Français</channel>
     <channel lang="en" xmltv_id="EuronewsGerman.fr" site_id="5e20b730f2f8d5003d739db7-6245efe9f137de43897ea1ae">Euronews Deutsch</channel>
     <channel lang="en" xmltv_id="EuronewsItalian.fr" site_id="5e20b730f2f8d5003d739db7-6245f13093b402a3d1097789">Euronews Italiano</channel>
-    <channel lang="pt" xmltv_id="EuronewsPortuguese.fr" site_id="5e20b730f2f8d5003d739db7-6245cd154f27f4e9c76d67e9">Euronews Portuguese</channel>
-    <channel lang="es" xmltv_id="EuronewsSpanish.fr" site_id="5e20b730f2f8d5003d739db7-60089d97f682a3002c34829d">Euronews Español</channel>
     <channel lang="en" xmltv_id="FailArmy.us" site_id="5e20b730f2f8d5003d739db7-5eea605574085f0040ddc791">FailArmy</channel>
     <channel lang="en" xmltv_id="FamilyTime.us" site_id="5e20b730f2f8d5003d739db7-614b82e2fda2ea37754acbb8">FamilyTime</channel>
     <channel lang="en" xmltv_id="Farscape.us" site_id="5e20b730f2f8d5003d739db7-635195e9ccee3e1547a8831a">Farscape</channel>
@@ -126,7 +116,6 @@
     <channel lang="en" xmltv_id="HistoryHit.us" site_id="5e20b730f2f8d5003d739db7-5f74cf83ffbe690040689f50">History Hit</channel>
     <channel lang="en" xmltv_id="HiYAH.us" site_id="5e20b730f2f8d5003d739db7-5f64c4ef35f612003f6ffe30">Hi-YAH!</channel>
     <channel lang="en" xmltv_id="HomeMadeNation.us" site_id="5e20b730f2f8d5003d739db7-5f74cf82ffbe690040689f47">Home.Made.Nation</channel>
-    <channel lang="es" xmltv_id="Horrorfy.us" site_id="5e20b730f2f8d5003d739db7-617afafd7ab406f93af02607">Horrorfy</channel>
     <channel lang="en" xmltv_id="HumorMill.us" site_id="5e20b730f2f8d5003d739db7-5fd115b7b7ef8d002dcf1814">Humor Mill</channel>
     <channel lang="en" xmltv_id="i24NEWSUpdates.us" site_id="5e20b730f2f8d5003d739db7-61e9af453508a50f84213dd6">i24NEWS Updates</channel>
     <channel lang="en" xmltv_id="IFCFilmsPicks.us" site_id="5e20b730f2f8d5003d739db7-5fc705eb052f6f002ef46057">IFC Films Picks</channel>
@@ -139,7 +128,7 @@
     <channel lang="en" xmltv_id="JOURNYPresentsAmericatheBeautiful.us" site_id="5e20b730f2f8d5003d739db7-6182cd0df4e62961d9c2ccf6">JOURNY Presents: America the Beautiful</channel>
     <channel lang="en" xmltv_id="JudgeFaith.us" site_id="5e20b730f2f8d5003d739db7-5f5132da62fe160040f26b5b">Judge Faith</channel>
     <channel lang="en" xmltv_id="JuliaChild.us" site_id="5e20b730f2f8d5003d739db7-6348aff690b96ef5e0eb3290">Julia Child</channel>
-    <channel lang="es" xmltv_id="JuntosTV.us" site_id="5e20b730f2f8d5003d739db7-60240f57676235002df19f49">Juntos TV</channel>
+    <channel lang="en" xmltv_id="KevinHartsLOLNetwork.us" site_id="5e20b730f2f8d5003d739db7-628ea9fcffe4cec6361f5310">LOL! Network</channel>
     <channel lang="en" xmltv_id="KidoodleTV.us" site_id="5e20b730f2f8d5003d739db7-5eea605574085f0040ddc79a">Kidoodle TV</channel>
     <channel lang="en" xmltv_id="KidsFlix.us" site_id="5e20b730f2f8d5003d739db7-5eea605574085f0040ddc797">KidsFlix</channel>
     <channel lang="en" xmltv_id="KidsPangTV.us" site_id="5e20b730f2f8d5003d739db7-60d4eddfb2fdec002c141139">Kids Pang TV</channel>
@@ -150,19 +139,16 @@
     <channel lang="en" xmltv_id="LaBocinaLatina.us" site_id="5e20b730f2f8d5003d739db7-631932e2f6672ff675ee5ec0">La Bocina Latina</channel>
     <channel lang="en" xmltv_id="LaCorriente.us" site_id="5e20b730f2f8d5003d739db7-602d6608f867c4002c897e27">La Corriente</channel>
     <channel lang="en" xmltv_id="LawCrime.us" site_id="5e20b730f2f8d5003d739db7-5eea605674085f0040ddc79d">Law &amp; Crime</channel>
-    <channel lang="es" xmltv_id="LevelUpTV.us" site_id="5e20b730f2f8d5003d739db7-6041643175c115002dc5125b">LevelUp</channel>
     <channel lang="en" xmltv_id="LocalNowBergenCounty.us" site_id="5e20b730f2f8d5003d739db7-62aa6c6eb5520790e10654aa">Local Now Bergen County</channel>
     <channel lang="en" xmltv_id="LocalNowLongIsland.us" site_id="5e20b730f2f8d5003d739db7-62a79fd0a7158c1b1be41b26">Local Now Long Island</channel>
     <channel lang="en" xmltv_id="LocalNowManhattan.us" site_id="5e20b730f2f8d5003d739db7-62a9e6a31fef11b3afe340d2">Local Now Manhattan</channel>
     <channel lang="en" xmltv_id="LocalNowNewburgh.us" site_id="5e20b730f2f8d5003d739db7-62a7854c3ccfe207c22a5e54">Local Now Newburgh</channel>
     <channel lang="en" xmltv_id="LocalNowNewYorkCity.us" site_id="5e20b730f2f8d5003d739db7-62a226a4d95f6a0c0146cc6b">Local Now New York City</channel>
     <channel lang="en" xmltv_id="LocalNowWhitePlains.us" site_id="5e20b730f2f8d5003d739db7-62aa6a06152d10325d5bfb16">Local Now White Plains</channel>
-    <channel lang="en" xmltv_id="LOLNetwork.us" site_id="5e20b730f2f8d5003d739db7-628ea9fcffe4cec6361f5310">LOL! Network</channel>
     <channel lang="en" xmltv_id="LOLStandUp.us" site_id="5e20b730f2f8d5003d739db7-620462434ebc6b3b9a8aed94">LOL! Stand Up</channel>
     <channel lang="en" xmltv_id="LoneStarNetwork.us" site_id="5e20b730f2f8d5003d739db7-6196c9241d310bf925e02616">Lone Star Network</channel>
     <channel lang="en" xmltv_id="LoveDestination.us" site_id="5e20b730f2f8d5003d739db7-5eea605674085f0040ddc7a9">Love Destination</channel>
     <channel lang="en" xmltv_id="LoveNature.ca" site_id="5e20b730f2f8d5003d739db7-60995eb136c72d002da7bbcb">Love Nature</channel>
-    <channel lang="es" xmltv_id="LoveNatureenEspanol.us" site_id="5e20b730f2f8d5003d739db7-60c8d4d5ad7b3f002c64b87e">Love Nature en Español</channel>
     <channel lang="en" xmltv_id="MadeInHollywood.us" site_id="5e20b730f2f8d5003d739db7-60db63d29ec966002c9ea6f0">Made In Hollywood</channel>
     <channel lang="en" xmltv_id="MagellanTVNow.us" site_id="5e20b730f2f8d5003d739db7-5f5132e262fe160040f26bf2">MagellanTV NOW</channel>
     <channel lang="en" xmltv_id="MaverickBlackCinema.us" site_id="5e20b730f2f8d5003d739db7-5ef4e1b40d9ad000423c4430">Maverick Black Cinema</channel>
@@ -172,7 +158,6 @@
     <channel lang="en" xmltv_id="MHzNow.us" site_id="5e20b730f2f8d5003d739db7-611152a48f945c002c40021a">MHz Now</channel>
     <channel lang="en" xmltv_id="MidnightPulp.us" site_id="5e20b730f2f8d5003d739db7-5ef4e1b40d9ad000423c4427">Midnight Pulp</channel>
     <channel lang="en" xmltv_id="MMATV.us" site_id="5e20b730f2f8d5003d739db7-60ecb878ebef9d002c4d0a11">MMA TV</channel>
-    <channel lang="es" xmltv_id="MMC.us" site_id="5e20b730f2f8d5003d739db7-623954128ed2b3b15baecb2c">MMC</channel>
     <channel lang="en" xmltv_id="MOBTV.us" site_id="5e20b730f2f8d5003d739db7-61fb10e8fe90430654c57530">MOB TV</channel>
     <channel lang="en" xmltv_id="MoconomyEconomyFinanceInfotainment.us" site_id="5e20b730f2f8d5003d739db7-63489fcd1159f6a5ce819b7d">Moconomy - Economy &amp; Finance Infotainment</channel>
     <channel lang="en" xmltv_id="MoreU.us" site_id="5e20b730f2f8d5003d739db7-6112a9139894c8002c6cb87f">More U</channel>
@@ -189,14 +174,11 @@
     <channel lang="en" xmltv_id="NHRATV.us" site_id="5e20b730f2f8d5003d739db7-60aeb5cd87f9b1002ce12323">NHRA TV</channel>
     <channel lang="en" xmltv_id="NinjaKidzTV.us" site_id="5e20b730f2f8d5003d739db7-627ec46a92d8e6a705784bd1">Ninja Kidz TV</channel>
     <channel lang="en" xmltv_id="Nosey.us" site_id="5e20b730f2f8d5003d739db7-5f0ff262d71dcb00449ec015">Nosey</channel>
-    <channel lang="es" xmltv_id="NoseyCasos.us" site_id="5e20b730f2f8d5003d739db7-62fbef771567211fdb82e91e">Nosey Casos</channel>
-    <channel lang="es" xmltv_id="NoseyEscandalos.us" site_id="5e20b730f2f8d5003d739db7-6154a863e3e4d9577f96b31a">Nosey Escándalos</channel>
     <channel lang="en" xmltv_id="OnDemandChina.us" site_id="5e20b730f2f8d5003d739db7-60d4edd7b2fdec002c14112b">OnDemandChina</channel>
     <channel lang="en" xmltv_id="OutdoorAmerica.us" site_id="5e20b730f2f8d5003d739db7-611c3ac2409e4d002c85a6dd">Outdoor America</channel>
     <channel lang="en" xmltv_id="Outside.us" site_id="5e20b730f2f8d5003d739db7-629e522ed1bc5f1b16c6b98d">Outside</channel>
     <channel lang="en" xmltv_id="Overtime.us" site_id="5e20b730f2f8d5003d739db7-62a388865440744efae8e243">Overtime</channel>
     <channel lang="en" xmltv_id="PartyPokerTV.us" site_id="5e20b730f2f8d5003d739db7-6196c99e3b964c65b53de32f">Party Poker TV</channel>
-    <channel lang="es" xmltv_id="PartyTymeKaraoke.us" site_id="5e20b730f2f8d5003d739db7-602d56bef867c4002c897e22">Party Tyme Karaoke</channel>
     <channel lang="en" xmltv_id="Pattrn.us" site_id="5e20b730f2f8d5003d739db7-608a2c722957c9002c6a6179">Pattrn</channel>
     <channel lang="en" xmltv_id="PBSAntiquesRoadshow.us" site_id="5e20b730f2f8d5003d739db7-6348ac7090b96ef5e0eb3288">PBS Antiques Roadshow</channel>
     <channel lang="en" xmltv_id="PBSNature.us" site_id="5e20b730f2f8d5003d739db7-63506e7747b2355a27e76e7f">PBS Nature</channel>
@@ -227,9 +209,7 @@
     <channel lang="en" xmltv_id="Revry.us" site_id="5e20b730f2f8d5003d739db7-5ef11487d33ab9004048a1d9">Revry</channel>
     <channel lang="en" xmltv_id="RevryNews.us" site_id="5e20b730f2f8d5003d739db7-5f458dded93f4a0041cb1f63">RevryNews</channel>
     <channel lang="en" xmltv_id="Runtime.us" site_id="5e20b730f2f8d5003d739db7-5f47b0b87cb6a400422f9146">Runtime</channel>
-    <channel lang="es" xmltv_id="RuntimeEspanol.us" site_id="5e20b730f2f8d5003d739db7-5f5132e362fe160040f26c15">Runtime Español</channel>
     <channel lang="en" xmltv_id="RyanandFriends.us" site_id="5e20b730f2f8d5003d739db7-5f91c4ea96a391002df9a664">Ryan and Friends</channel>
-    <channel lang="es" xmltv_id="SaberMas.us" site_id="5e20b730f2f8d5003d739db7-6018913ea15130002b284195">Saber Mas</channel>
     <channel lang="en" xmltv_id="SamuelGoldwynChannel.us" site_id="5e20b730f2f8d5003d739db7-6233ee9222dcc1d9a93916b6">Samuel Goldwyn Channel</channel>
     <channel lang="en" xmltv_id="SamuelGoldwynClassics.us" site_id="5e20b730f2f8d5003d739db7-6233ef13ce37cac7a278664b">Samuel Goldwyn Classics</channel>
     <channel lang="en" xmltv_id="SamuelGoldwynInternational.us" site_id="5e20b730f2f8d5003d739db7-624604480e3d6a85f19e37f1">Samuel Goldwyn International</channel>
@@ -243,8 +223,6 @@
     <channel lang="en" xmltv_id="SlightlyOffIFC.us" site_id="5e20b730f2f8d5003d739db7-5fc705eea2236e002d69f5ae">Slightly Off IFC</channel>
     <channel lang="en" xmltv_id="SlopesTV.us" site_id="5e20b730f2f8d5003d739db7-616df1be2cf008a748c8cb53">SLOPES</channel>
     <channel lang="en" xmltv_id="SonicTV.us" site_id="5e20b730f2f8d5003d739db7-62ba4aaff663580a7238f327">Sonic TV</channel>
-    <channel lang="es" xmltv_id="SonyCanalCompetencias.us" site_id="5e20b730f2f8d5003d739db7-5f5132e362fe160040f26c0a">Sony Canal Competencias</channel>
-    <channel lang="es" xmltv_id="SonyCanalNovelas.us" site_id="5e20b730f2f8d5003d739db7-5f5132e362fe160040f26c0f">Sony Canal Novelas</channel>
     <channel lang="en" xmltv_id="SonyKALHindi.us" site_id="5e20b730f2f8d5003d739db7-61ae65bd03baf19077bbf931">Sony KAL</channel>
     <channel lang="en" xmltv_id="SoReal.us" site_id="5e20b730f2f8d5003d739db7-5f0ff262d71dcb00449ec012">So...Real</channel>
     <channel lang="en" xmltv_id="SoYummy.us" site_id="5e20b730f2f8d5003d739db7-6041643175c115002dc5125d">So Yummy</channel>
@@ -286,7 +264,6 @@
     <channel lang="en" xmltv_id="TheArchive.us" site_id="5e20b730f2f8d5003d739db7-5eea605674085f0040ddc7a0">The Archive</channel>
     <channel lang="en" xmltv_id="TheBoatShow.us" site_id="5e20b730f2f8d5003d739db7-5efe1de6e0b3f5003f5d9f82">The Boat Show</channel>
     <channel lang="en" xmltv_id="TheBobRossChannel.us" site_id="5e20b730f2f8d5003d739db7-5efe1de6e0b3f5003f5d9f88">The Bob Ross Channel</channel>
-    <channel lang="es" xmltv_id="TheBobRossChannelenEspanol.us" site_id="5e20b730f2f8d5003d739db7-636442f69aabc8029c6d6b8d">The Bob Ross Channel en Español</channel>
     <channel lang="en" xmltv_id="TheCarolBurnettShow.us" site_id="5e20b730f2f8d5003d739db7-60d4edd6b2fdec002c141125">The Carol Burnett Show</channel>
     <channel lang="en" xmltv_id="TheDesignNetwork.us" site_id="5e20b730f2f8d5003d739db7-5f0641d3e8ffda004033b16e">The Design Network</channel>
     <channel lang="en" xmltv_id="TheElvisPresleyChannel.us" site_id="5e20b730f2f8d5003d739db7-627ce2ecfe959b6153ed5b57">The Elvis Presley Channel</channel>
@@ -297,20 +274,17 @@
     <channel lang="en" xmltv_id="ThePreviewChannel.us" site_id="5e20b730f2f8d5003d739db7-608083444363b700366942df">The Preview Channel</channel>
     <channel lang="en" xmltv_id="TheWalkingDeadUniverse.us" site_id="5e20b730f2f8d5003d739db7-5fc705ff2f220e002d5e6bce">The Walking Dead Universe</channel>
     <channel lang="en" xmltv_id="TheWeatherChannelenEspanol.us" site_id="5e20b730f2f8d5003d739db7-627121c4210f4a174062e5c5">Weather Channel Español</channel>
-    <channel lang="en" xmltv_id="TheWorldPokerTour.us" site_id="5e20b730f2f8d5003d739db7-5f6b8e7900b0950040d0f2b2">The World Poker Tour</channel>
     <channel lang="en" xmltv_id="ThisOldHouse.us" site_id="5e20b730f2f8d5003d739db7-62e3232ca105dea9c400e9fe">This Old House</channel>
     <channel lang="en" xmltv_id="TimesNowNavbharat.in" site_id="5e20b730f2f8d5003d739db7-631a605b260b7e21d0b819ee">Times Now Navbharat</channel>
     <channel lang="en" xmltv_id="TODAYAllDay.us" site_id="5e20b730f2f8d5003d739db7-5fc70600598c41002da3dd39">TODAY All Day</channel>
     <channel lang="en" xmltv_id="TokuSHOUTsu.us" site_id="5e20b730f2f8d5003d739db7-60d4edd7b2fdec002c141129">TokuSHOUTsu</channel>
     <channel lang="en" xmltv_id="ToonGoggles.us" site_id="5e20b730f2f8d5003d739db7-5f170d60b898490041b49359">Toon Goggles</channel>
-    <channel lang="es" xmltv_id="TopCine.us" site_id="5e20b730f2f8d5003d739db7-60240f58676235002df19f4b">Top Cine</channel>
     <channel lang="en" xmltv_id="TopGear.uk" site_id="5e20b730f2f8d5003d739db7-6308f121ac9983739c8a29bd">Top Gear</channel>
     <channel lang="en" xmltv_id="TrailerParkBoysTheSwearNetShow.us" site_id="5e20b730f2f8d5003d739db7-6348b2cb1159f6a5ce819b89">Trailer Park Boys: The SwearNet Show</channel>
     <channel lang="en" xmltv_id="TrailersFromHell.us" site_id="5e20b730f2f8d5003d739db7-61d738b5a7b7c7f703418514">Trailers From Hell</channel>
     <channel lang="en" xmltv_id="TribecaChannel.us" site_id="5e20b730f2f8d5003d739db7-60ede94f7da2ef002c55ce9b">Tribeca Channel</channel>
     <channel lang="en" xmltv_id="TrueCrimeNow.us" site_id="5e20b730f2f8d5003d739db7-61ae679103baf19077bbf933">True Crime Now</channel>
     <channel lang="en" xmltv_id="TrueHistory.us" site_id="5e20b730f2f8d5003d739db7-614398a08f30fa61e0da7c97">True History</channel>
-    <channel lang="es" xmltv_id="TuCine.us" site_id="5e20b730f2f8d5003d739db7-608b7095a09205002da4f293">Tu Cine</channel>
     <channel lang="en" xmltv_id="TVAsiaComedyPoweredbyShemaroo.us" site_id="5e20b730f2f8d5003d739db7-62f5303cb2258cb00041732d">TV Asia Comedy Powered by Shemaroo</channel>
     <channel lang="en" xmltv_id="Unbeaten.us" site_id="5e20b730f2f8d5003d739db7-633239caa6615514fb78ecf3">Unbeaten</channel>
     <channel lang="en" xmltv_id="Unexplained.us" site_id="5e20b730f2f8d5003d739db7-62913be9a0ed9c2b6ae63bac">Unexplained</channel>
@@ -333,7 +307,7 @@
     <channel lang="en" xmltv_id="WildEarth.us" site_id="5e20b730f2f8d5003d739db7-60d4edddb2fdec002c141135">WildEarth</channel>
     <channel lang="en" xmltv_id="Wired2FishTV.us" site_id="5e20b730f2f8d5003d739db7-608a2c722957c9002c6a617b">Wired2Fish</channel>
     <channel lang="en" xmltv_id="WomensSportsNetwork.us" site_id="5e20b730f2f8d5003d739db7-630fa9e577ec3866def38fa2">Women&apos;s Sports Network</channel>
-    <channel lang="en" xmltv_id="Wonder.us" site_id="5e20b730f2f8d5003d739db7-5f74cf83ffbe690040689f4d">Wonder</channel>
+    <channel lang="en" xmltv_id="Wonder.uk" site_id="5e20b730f2f8d5003d739db7-5f74cf83ffbe690040689f4d">Wonder</channel>
     <channel lang="en" xmltv_id="WPXINow.us" site_id="5e20b730f2f8d5003d739db7-61f9a57443ec158c3a3eb294">WPXI Now Pittsburgh</channel>
     <channel lang="en" xmltv_id="WSBNow.us" site_id="5e20b730f2f8d5003d739db7-61f9a611c68d91e31d4cc86c">WSB Now Atlanta</channel>
     <channel lang="en" xmltv_id="WSOCNow.us" site_id="5e20b730f2f8d5003d739db7-61f9a6aec68d91e31d4cc86e">WSOC Channel 9</channel>
@@ -341,5 +315,31 @@
     <channel lang="en" xmltv_id="XFCTV.us" site_id="5e20b730f2f8d5003d739db7-621670feab2095ca85353ad4">XFC TV</channel>
     <channel lang="en" xmltv_id="YahooFinance.us" site_id="5e20b730f2f8d5003d739db7-5f170f01b898490041b49dd1">Yahoo Finance</channel>
     <channel lang="en" xmltv_id="YGTV.us" site_id="5e20b730f2f8d5003d739db7-60d4ede2b2fdec002c14113b">YG TV</channel>
+    <channel lang="es" xmltv_id="AFVEspanol.us" site_id="5e20b730f2f8d5003d739db7-5ef4e1b10d9ad000423c4421">AFV Español</channel>
+    <channel lang="es" xmltv_id="AMCenEspanol.us" site_id="5e20b730f2f8d5003d739db7-62d1efa6c33948ea4ceedbcf">AMC en Español</channel>
+    <channel lang="es" xmltv_id="CanelaTV.us" site_id="5e20b730f2f8d5003d739db7-5f5132e362fe160040f26c18">Canela TV</channel>
+    <channel lang="es" xmltv_id="Chiquilines.us" site_id="5e20b730f2f8d5003d739db7-6018913ea15130002b28418f">Chiquilines</channel>
+    <channel lang="es" xmltv_id="CineReal.us" site_id="5e20b730f2f8d5003d739db7-60240f57676235002df19f47">Cine Real</channel>
+    <channel lang="es" xmltv_id="ElConflictoTV.us" site_id="5e20b730f2f8d5003d739db7-621674f168c966be92737ce6">El Conflicto TV</channel>
+    <channel lang="es" xmltv_id="EstrellaNews.us" site_id="5e20b730f2f8d5003d739db7-60089d97f682a3002c34829b">Estrella News</channel>
+    <channel lang="es" xmltv_id="EstrellaTV.us" site_id="5e20b730f2f8d5003d739db7-60089d98f682a3002c34829f">Estrella TV</channel>
+    <channel lang="es" xmltv_id="EuronewsSpanish.fr" site_id="5e20b730f2f8d5003d739db7-60089d97f682a3002c34829d">Euronews Español</channel>
+    <channel lang="es" xmltv_id="Horrorfy.us" site_id="5e20b730f2f8d5003d739db7-617afafd7ab406f93af02607">Horrorfy</channel>
+    <channel lang="es" xmltv_id="JuntosTV.us" site_id="5e20b730f2f8d5003d739db7-60240f57676235002df19f49">Juntos TV</channel>
+    <channel lang="es" xmltv_id="LevelUpTV.us" site_id="5e20b730f2f8d5003d739db7-6041643175c115002dc5125b">LevelUp</channel>
+    <channel lang="es" xmltv_id="LoveNatureenEspanol.us" site_id="5e20b730f2f8d5003d739db7-60c8d4d5ad7b3f002c64b87e">Love Nature en Español</channel>
+    <channel lang="es" xmltv_id="MMC.us" site_id="5e20b730f2f8d5003d739db7-623954128ed2b3b15baecb2c">MMC</channel>
+    <channel lang="es" xmltv_id="NoseyCasos.us" site_id="5e20b730f2f8d5003d739db7-62fbef771567211fdb82e91e">Nosey Casos</channel>
+    <channel lang="es" xmltv_id="NoseyEscandalos.us" site_id="5e20b730f2f8d5003d739db7-6154a863e3e4d9577f96b31a">Nosey Escándalos</channel>
+    <channel lang="es" xmltv_id="PartyTymeKaraoke.us" site_id="5e20b730f2f8d5003d739db7-602d56bef867c4002c897e22">Party Tyme Karaoke</channel>
+    <channel lang="es" xmltv_id="RuntimeEspanol.us" site_id="5e20b730f2f8d5003d739db7-5f5132e362fe160040f26c15">Runtime Español</channel>
+    <channel lang="es" xmltv_id="SaberMas.us" site_id="5e20b730f2f8d5003d739db7-6018913ea15130002b284195">Saber Mas</channel>
+    <channel lang="es" xmltv_id="SonyCanalCompetencias.us" site_id="5e20b730f2f8d5003d739db7-5f5132e362fe160040f26c0a">Sony Canal Competencias</channel>
+    <channel lang="es" xmltv_id="SonyCanalNovelas.us" site_id="5e20b730f2f8d5003d739db7-5f5132e362fe160040f26c0f">Sony Canal Novelas</channel>
+    <channel lang="es" xmltv_id="TheBobRossChannelenEspanol.us" site_id="5e20b730f2f8d5003d739db7-636442f69aabc8029c6d6b8d">The Bob Ross Channel en Español</channel>
+    <channel lang="es" xmltv_id="TopCine.us" site_id="5e20b730f2f8d5003d739db7-60240f58676235002df19f4b">Top Cine</channel>
+    <channel lang="es" xmltv_id="TuCine.us" site_id="5e20b730f2f8d5003d739db7-608b7095a09205002da4f293">Tu Cine</channel>
+    <channel lang="es" xmltv_id="TVCortos.us" site_id="5e20b730f2f8d5003d739db7-631b9f3d9ffce67ae0e91190">Cortos</channel>
+    <channel lang="pt" xmltv_id="EuronewsPortuguese.fr" site_id="5e20b730f2f8d5003d739db7-6245cd154f27f4e9c76d67e9">Euronews Portuguese</channel>
   </channels>
 </site>
