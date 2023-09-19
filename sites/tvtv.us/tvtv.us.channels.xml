@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site site="tvtv.us">
   <channels>
+    <!-- <channel lang="en" xmltv_id="" site_id="33691">GolTV English</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="83157">Corner Store (KSFV-CD3) Los Angeles, CA</channel> -->
     <channel lang="en" xmltv_id="3ABNEnglish.us" site_id="10002">3ABN English</channel>
     <channel lang="en" xmltv_id="5StarMaxEast.us" site_id="25620">5 StarMax East</channel>
     <channel lang="en" xmltv_id="AajTak.in" site_id="48512">Aaj Tak</channel>
@@ -208,11 +210,6 @@
     <channel lang="en" xmltv_id="EEast.us" site_id="10989">E! East</channel>
     <channel lang="en" xmltv_id="ElectricNow.us" site_id="112797">Electric Now</channel>
     <channel lang="en" xmltv_id="Enlace.cr" site_id="20286">Enlace</channel>
-    <channel lang="en" xmltv_id="MGMPlusHitsEast.us" site_id="73075">MGM+ Hits East</channel>
-    <channel lang="en" xmltv_id="MGMPlusDriveIn.us" site_id="68409">MGM+ Drive-In</channel>
-    <channel lang="en" xmltv_id="MGMPlusEast.us" site_id="65669">MGM+ East</channel>
-    <channel lang="en" xmltv_id="MGMPlusMarquee.us" site_id="74073">MGM+ Marquee</channel>
-    <channel lang="en" xmltv_id="MGMPlusWest.us" site_id="66073">MGM+ West</channel>
     <channel lang="en" xmltv_id="EsperanzaTV.us" site_id="65095">Esperanza TV</channel>
     <channel lang="en" xmltv_id="ESPN.us" site_id="10179">ESPN</channel>
     <channel lang="en" xmltv_id="ESPN2.us" site_id="45507">ESPN 2</channel>
@@ -240,8 +237,8 @@
     <channel lang="en" xmltv_id="EWest.us" site_id="91579">E! West</channel>
     <channel lang="en" xmltv_id="EWTN.us" site_id="10183">EWTN</channel>
     <channel lang="en" xmltv_id="FairchildTV2.ca" site_id="11397">Fairchild TV 2</channel>
-    <channel lang="en" xmltv_id="FanDuelTV.us" site_id="21345">FanDuel TV</channel>
     <channel lang="en" xmltv_id="FanDuelRacing.us" site_id="32258">FanDuel Racing</channel>
+    <channel lang="en" xmltv_id="FanDuelTV.us" site_id="21345">FanDuel TV</channel>
     <channel lang="en" xmltv_id="FETV.us" site_id="73413">FETV</channel>
     <channel lang="en" xmltv_id="FightNetwork.ca" site_id="48099">Fight Network</channel>
     <channel lang="en" xmltv_id="FlixEast.us" site_id="10201">Flix East</channel>
@@ -285,7 +282,6 @@
     <channel lang="en" xmltv_id="GodTV.uk" site_id="52697">GodTV</channel>
     <channel lang="en" xmltv_id="GolfChannel.us" site_id="61854">Golf Channel</channel>
     <channel lang="en" xmltv_id="GolTVUSA.us" site_id="32161">Gol TV</channel>
-    <!-- <channel lang="en" xmltv_id="" site_id="33691">GolTV English</channel> -->
     <channel lang="en" xmltv_id="GreatAmericanCountry.us" site_id="16062">Great American Country</channel>
     <channel lang="en" xmltv_id="Grit.us" site_id="89922">Grit</channel>
     <channel lang="en" xmltv_id="HallmarkChannelEast.us" site_id="11221">Hallmark Channel East</channel>
@@ -979,7 +975,6 @@
     <channel lang="en" xmltv_id="KSEEDT2.us" site_id="47887">Bounce (KSEE2) Fresno, CA</channel>
     <channel lang="en" xmltv_id="KSEEDT3.us" site_id="57694">LATV (KSEE-DT3) Fresno, CA</channel>
     <channel lang="en" xmltv_id="KSFVCD2.us" site_id="87005">Mana (KSFV-CD2) Los Angeles, CA</channel>
-    <!-- <channel lang="en" xmltv_id="KSFVCD3.us" site_id="83157">Corner Store (KSFV-CD3) Los Angeles, CA</channel> -->
     <channel lang="en" xmltv_id="KSFYDT1.us" site_id="20375">ABC (KSFY-DT1) Sioux Falls, SD</channel>
     <channel lang="en" xmltv_id="KSKJCD1.us" site_id="97134">beIN Sports Xtra (KSKJ-CD) Los Angeles, CA</channel>
     <channel lang="en" xmltv_id="KSKJCD2.us" site_id="97135">SSTN (KSKJ-DT2) Los Angeles, CA</channel>
@@ -1251,6 +1246,11 @@
     <channel lang="en" xmltv_id="MelodyHits.eg" site_id="10471">Melody Hits</channel>
     <channel lang="en" xmltv_id="MeTV.us" site_id="70436">MeTV</channel>
     <channel lang="en" xmltv_id="MezzoLiveHD.fr" site_id="115902">Mezzo Live HD</channel>
+    <channel lang="en" xmltv_id="MGMPlusDriveIn.us" site_id="68409">MGM+ Drive-In</channel>
+    <channel lang="en" xmltv_id="MGMPlusEast.us" site_id="65669">MGM+ East</channel>
+    <channel lang="en" xmltv_id="MGMPlusHitsEast.us" site_id="73075">MGM+ Hits East</channel>
+    <channel lang="en" xmltv_id="MGMPlusMarquee.us" site_id="74073">MGM+ Marquee</channel>
+    <channel lang="en" xmltv_id="MGMPlusWest.us" site_id="66073">MGM+ West</channel>
     <channel lang="en" xmltv_id="MilitaryHistory.us" site_id="48999">Military History Channel</channel>
     <channel lang="en" xmltv_id="MLBExtraInnings1.us" site_id="75674">MLB Extra Innings 1</channel>
     <channel lang="en" xmltv_id="MLBExtraInnings10.us" site_id="60887">MLB Extra Innings 10</channel>
@@ -1394,12 +1394,12 @@
     <channel lang="en" xmltv_id="OneAmericaNewsNetwork.us" site_id="82542">One America News Network</channel>
     <channel lang="en" xmltv_id="OneCaribbeanTelevision.us" site_id="20036">One Caribbean Television</channel>
     <channel lang="en" xmltv_id="OnTV4U.us" site_id="59576">OnTV4U</channel>
-    <channel lang="en" xmltv_id="OWNEast.us" site_id="70387">Oprah Winfrey Network East</channel>
     <channel lang="en" xmltv_id="OSNYahala.ae" site_id="31538">OSN Ya Hala</channel>
     <channel lang="en" xmltv_id="OutdoorChannel.us" site_id="14776">Outdoor Channel</channel>
     <channel lang="en" xmltv_id="OuterMaxEast.us" site_id="25622">OuterMax East</channel>
     <channel lang="en" xmltv_id="OuterMaxWest.us" site_id="61174">OuterMax West</channel>
     <channel lang="en" xmltv_id="Ovation.us" site_id="15807">Ovation</channel>
+    <channel lang="en" xmltv_id="OWNEast.us" site_id="70387">Oprah Winfrey Network East</channel>
     <channel lang="en" xmltv_id="OxygenEast.us" site_id="21484">Oxygen East</channel>
     <channel lang="en" xmltv_id="OxygenWest.us" site_id="21744">Oxygen West</channel>
     <channel lang="en" xmltv_id="Pac12Arizona.us" site_id="76372">Pac-12 Arizona</channel>
@@ -1666,8 +1666,8 @@
     <channel lang="en" xmltv_id="WAGADT5.us" site_id="112717">Decades (WAGA-DT5) Atanta, GA</channel>
     <channel lang="en" xmltv_id="WALELD2.us" site_id="31265">Laff (WALE-LD2) Montgomery, AL</channel>
     <channel lang="en" xmltv_id="WALELD4.us" site_id="31252">Jewelry TV (WALE-LD4) Montgomery, AL</channel>
-    <channel lang="en" xmltv_id="WAPADT1.us" site_id="44322">WAPA America</channel>
-    <channel lang="en" xmltv_id="WAPADT2.us" site_id="63739">WAPA Deportes</channel>
+    <channel lang="en" xmltv_id="WAPADT1.pr" site_id="44322">WAPA America</channel>
+    <channel lang="en" xmltv_id="WAPADT2.pr" site_id="63739">WAPA Deportes</channel>
     <channel lang="en" xmltv_id="WASALD1.us" site_id="75011">EstrellaTV (WASA-LD1) Port Jervis, NY</channel>
     <channel lang="en" xmltv_id="WATEDT1.us" site_id="11286">ABC (WATE) KNOXVILLE</channel>
     <channel lang="en" xmltv_id="WaterTelevisionNetwork.ca" site_id="35844">Water Television Network</channel>
@@ -1894,7 +1894,7 @@
     <channel lang="en" xmltv_id="WJWDT3.us" site_id="106509">Comet (WJW-DT3) Cleveland, OH</channel>
     <channel lang="en" xmltv_id="WJWDT4.us" site_id="106510">Charge (WJW-DT4) Cleveland, OH</channel>
     <channel lang="en" xmltv_id="WJZDT1.us" site_id="21232">CBS (WJZ-DT1) Baltimore, MD</channel>
-    <channel lang="en" xmltv_id="WKAQDT2.us" site_id="69285">Punto 2 (WKAQ-DT) San Juan, PR</channel>
+    <channel lang="en" xmltv_id="WKAQDT2.pr" site_id="69285">Punto 2 (WKAQ-DT) San Juan, PR</channel>
     <channel lang="en" xmltv_id="WKARDT1.us" site_id="42529">PBS (WKAR-TV) East Lansing, MI</channel>
     <channel lang="en" xmltv_id="WKBDDT1.us" site_id="25126">CW (WKBD-TV) Detroit, MI</channel>
     <channel lang="en" xmltv_id="WKBWDT1.us" site_id="24052">ABC (WKBW1) Buffalo, NY</channel>
