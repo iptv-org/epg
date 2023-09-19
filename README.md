@@ -51,6 +51,12 @@ To download a guide in a specific language pass its [ISO 639-1](https://en.wikip
 npm run grab -- --site=example.com --lang=fr
 ```
 
+To override the number of days for which the program will be loaded use the `--days` argument (the default is the value specified in the site config):
+
+```sh
+npm run grab -- --site=example.com --days=3
+```
+
 To also create a compressed version of the guide, add the `--gzip` flag:
 
 ```sh
