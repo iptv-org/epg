@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site site="tvhebdo.com">
   <channels>
+    <!-- <channel lang="fr" xmltv_id="" site_id="tta/TOONA">TOONA</channel> -->
     <channel lang="en" xmltv_id="CPACEnglish.ca" site_id="cpae/CPAE">CPAC English</channel>
     <channel lang="fr" xmltv_id="2MInternational.ma" site_id="2m/2M">2M</channel>
     <channel lang="fr" xmltv_id="ABCSpark.ca" site_id="spar/SPARK">SPARK</channel>
@@ -41,6 +42,7 @@
     <channel lang="fr" xmltv_id="CFTMDT.ca" site_id="tva/CFTM">CFTM</channel>
     <channel lang="fr" xmltv_id="CFTUDT.ca" site_id="sav/CFTU">Savm</channel>
     <channel lang="fr" xmltv_id="CHANDT1.ca" site_id="global/CHAN">CHAN</channel>
+    <channel lang="fr" xmltv_id="CHLFTV.ca" site_id="tfo/TFO">TFO</channel>
     <channel lang="fr" xmltv_id="CICADT.ca" site_id="tvo/TVO">CICA</channel>
     <channel lang="fr" xmltv_id="CIIIDT.ca" site_id="global/CIIIHD">CIII (Hull-Ottawa) HD</channel>
     <channel lang="fr" xmltv_id="CineLatino.mx" site_id="cinl/CINEL">Cine Latino</channel>
@@ -144,8 +146,8 @@
     <channel lang="fr" xmltv_id="Noovo.ca" site_id="v/NVSMT">NVSMT</channel>
     <channel lang="fr" xmltv_id="Odyssey.ca" site_id="otn/OTN">OTN</channel>
     <channel lang="fr" xmltv_id="OLN.ca" site_id="oln/OLN">OUTDOOR LIFE</channel>
-    <channel lang="fr" xmltv_id="OWNCanada.ca" site_id="ownh/OWN">OWN Canada</channel>
     <channel lang="fr" xmltv_id="OUTtv.ca" site_id="outv/OUTTV">Out TV</channel>
+    <channel lang="fr" xmltv_id="OWNCanada.ca" site_id="ownh/OWN">OWN Canada</channel>
     <channel lang="fr" xmltv_id="ParamountNetworkEast.us" site_id="par/PAR">Paramount SD</channel>
     <channel lang="fr" xmltv_id="PlanetePlus.fr" site_id="plan/PLAN">Planète</channel>
     <channel lang="fr" xmltv_id="PlayboyTV.us" site_id="play/PLAYBO">PLAYBOY</channel>
@@ -183,11 +185,10 @@
     <channel lang="fr" xmltv_id="SuperEcran2.ca" site_id="se/SE+2">SE 2</channel>
     <channel lang="fr" xmltv_id="SuperEcran3.ca" site_id="se/SE+3">SE 3</channel>
     <channel lang="fr" xmltv_id="SuperEcran4.ca" site_id="se/SE+4">SE 4</channel>
+    <channel lang="fr" xmltv_id="TCMCanada.ca" site_id="tcmv/TCM1">Turner Classic Movie 1</channel>
     <channel lang="fr" xmltv_id="Telemagino.ca" site_id="mgio/MGIO">Télémagino SD</channel>
     <channel lang="fr" xmltv_id="TeleNinos.ca" site_id="nino/NINOS">TLN Ninos</channel>
-    <channel lang="fr" xmltv_id="TeletoonEnglish.ca" site_id="tta/TOONA">TOONA</channel>
     <channel lang="fr" xmltv_id="TeletoonFrench.ca" site_id="ttf/TOONF">TOONF</channel>
-    <channel lang="fr" xmltv_id="CHLFTV.ca" site_id="tfo/TFO">TFO</channel>
     <channel lang="fr" xmltv_id="TGCom24.it" site_id="tg24/TG24">TGCOM 24</channel>
     <channel lang="fr" xmltv_id="TheShoppingChannel.ca" site_id="tsc/SHOP">The Shopping Channel</channel>
     <channel lang="fr" xmltv_id="TheWeatherNetwork.ca" site_id="wthr/WTHR">WTHR</channel>
@@ -200,7 +201,6 @@
     <channel lang="fr" xmltv_id="TSN3.ca" site_id="tsn/TSN3">TSN3</channel>
     <channel lang="fr" xmltv_id="TSN4.ca" site_id="tsn/TSN4">TSN4</channel>
     <channel lang="fr" xmltv_id="TSN5.ca" site_id="tsn/TSN5">TSN (5)</channel>
-    <channel lang="fr" xmltv_id="TCMCanada.ca" site_id="tcmv/TCM1">Turner Classic Movie 1</channel>
     <channel lang="fr" xmltv_id="TV5QuebecCanada.ca" site_id="tv5/TV5">TV5</channel>
     <channel lang="fr" xmltv_id="TVASports.ca" site_id="tvas/TVASP">TVA Sports</channel>
     <channel lang="fr" xmltv_id="TVASports2.ca" site_id="tvs2/TVS2">TVA Sports 2</channel>
