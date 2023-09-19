@@ -24,10 +24,10 @@
     <channel lang="fr" xmltv_id="AB3.be" site_id="UID50058">AB3</channel>
     <channel lang="fr" xmltv_id="ABXplore.be" site_id="UID0231">ABXPLO HD</channel>
     <channel lang="fr" xmltv_id="Action.fr" site_id="UID50019">Action</channel>
+    <channel lang="fr" xmltv_id="ACTV.be" site_id="UID2321">Antenne Centre HD</channel>
     <channel lang="fr" xmltv_id="AlAoulaEurope.ma" site_id="UID50141">Al Aoula</channel>
     <channel lang="fr" xmltv_id="AlJazeeraEnglish.qa" site_id="UID50162">Al Jazeera</channel>
     <channel lang="fr" xmltv_id="Animaux.fr" site_id="UID50053">Animaux</channel>
-    <channel lang="fr" xmltv_id="ACTV.be" site_id="UID2321">Antenne Centre HD</channel>
     <channel lang="fr" xmltv_id="ARTEFrance.fr" site_id="UID50018">Arte</channel>
     <channel lang="fr" xmltv_id="Automotolachaine.fr" site_id="UID50111">AUTOMOTO</channel>
     <channel lang="fr" xmltv_id="Be1.be" site_id="UID0300">Be1</channel>
@@ -41,9 +41,9 @@
     <channel lang="fr" xmltv_id="CanalJ.fr" site_id="UID50057">Canal J</channel>
     <channel lang="fr" xmltv_id="CanalZoom.be" site_id="UID50146">Canal Zoom</channel>
     <channel lang="fr" xmltv_id="CartoonNetworkFrance.fr" site_id="UID50021">Cartoon F</channel>
-    <channel lang="fr" xmltv_id="CinePlusClassic.be" site_id="UID0305">Ciné+Classic</channel>
-    <channel lang="fr" xmltv_id="CinePlusFrisson.be" site_id="UID0304">Ciné+Frisson</channel>
-    <channel lang="fr" xmltv_id="CinePlusPremier.be" site_id="UID0303">Ciné+Premier</channel>
+    <channel lang="fr" xmltv_id="CinePlusClassicBelgium.be" site_id="UID0305">Ciné+Classic</channel>
+    <channel lang="fr" xmltv_id="CinePlusFrissonBelgium.be" site_id="UID0304">Ciné+Frisson</channel>
+    <channel lang="fr" xmltv_id="CinePlusPremierBelgium.be" site_id="UID0303">Ciné+Premier</channel>
     <channel lang="fr" xmltv_id="ClubRTL.be" site_id="UID50070">ClubRTL</channel>
     <channel lang="fr" xmltv_id="ComedyCentralFrance.fr" site_id="UID2068">Comedy Central F</channel>
     <channel lang="fr" xmltv_id="CrimeDistrict.fr" site_id="UID0189">Crime District</channel>
@@ -65,6 +65,8 @@
     <channel lang="fr" xmltv_id="Gulli.fr" site_id="UID2060">Gulli HD</channel>
     <channel lang="fr" xmltv_id="HistoireTV.fr" site_id="UID50013">Histoire</channel>
     <channel lang="fr" xmltv_id="KTO.fr" site_id="UID50164">KTO</channel>
+    <channel lang="fr" xmltv_id="LaTrois.be" site_id="UID50302">La Trois</channel>
+    <channel lang="fr" xmltv_id="LaUne.be" site_id="UID50060">La Une</channel>
     <channel lang="fr" xmltv_id="LCI.fr" site_id="UID50067">LCI</channel>
     <channel lang="fr" xmltv_id="LN24.be" site_id="UID0311">LN24</channel>
     <channel lang="fr" xmltv_id="MaghrebTV.be" site_id="DTV29670499">Maghreb TV</channel>
@@ -97,8 +99,6 @@
     <channel lang="fr" xmltv_id="PlugRTL.be" site_id="UID50026">PlugRTL</channel>
     <channel lang="fr" xmltv_id="RadioContact.be" site_id="UID50014">ContactV</channel>
     <channel lang="fr" xmltv_id="RFMTV.fr" site_id="UID50043">RFM TV</channel>
-    <channel lang="fr" xmltv_id="LaTrois.be" site_id="UID50302">La Trois</channel>
-    <channel lang="fr" xmltv_id="LaUne.be" site_id="UID50060">La Une</channel>
     <channel lang="fr" xmltv_id="RTCTeleLiege.be" site_id="UID2335">RTC Liège HD</channel>
     <channel lang="fr" xmltv_id="RTLTVI.be" site_id="UID50072">RTL-TVI</channel>
     <channel lang="fr" xmltv_id="ScienceVieTV.fr" site_id="UID50102">Sc et Vie TV</channel>
@@ -143,12 +143,12 @@
     <channel lang="nl" xmltv_id="EclipsTV.be" site_id="UID0211">Eclips</channel>
     <channel lang="nl" xmltv_id="Een.be" site_id="UID50037">één</channel>
     <channel lang="nl" xmltv_id="EEurope.us" site_id="UID50128">E! N</channel>
-    <channel lang="nl" xmltv_id="ElevenProLeague1.be" site_id="UID2181">Eleven Pro League 1 (NL)</channel>
-    <channel lang="nl" xmltv_id="ElevenProLeague2.be" site_id="UID2185">Eleven Pro League 2 (NL)</channel>
-    <channel lang="nl" xmltv_id="ElevenProLeague3.be" site_id="UID2189">Eleven Pro League 3 (NL)</channel>
     <channel lang="nl" xmltv_id="Eleven1Belgium.be" site_id="UID0641">ES1 N</channel>
     <channel lang="nl" xmltv_id="Eleven2Belgium.be" site_id="UID0643">ES2 N</channel>
     <channel lang="nl" xmltv_id="Eleven3Belgium.be" site_id="UID0649">ES3 N</channel>
+    <channel lang="nl" xmltv_id="ElevenProLeague1.be" site_id="UID2181">Eleven Pro League 1 (NL)</channel>
+    <channel lang="nl" xmltv_id="ElevenProLeague2.be" site_id="UID2185">Eleven Pro League 2 (NL)</channel>
+    <channel lang="nl" xmltv_id="ElevenProLeague3.be" site_id="UID2189">Eleven Pro League 3 (NL)</channel>
     <channel lang="nl" xmltv_id="Eurosport1.fr" site_id="UID50094">Eurosp N</channel>
     <channel lang="nl" xmltv_id="Eurosport2.fr" site_id="UID50269">Eurosp2 N</channel>
     <channel lang="nl" xmltv_id="FocusWTV.be" site_id="UID2330">Focus TV HD</channel>
