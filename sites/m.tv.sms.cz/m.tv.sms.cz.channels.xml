@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site site="m.tv.sms.cz">
   <channels>
+    <!-- <channel lang="cs" xmltv_id="" site_id="Kazakh+TV">Qazaq TV</channel> -->
     <channel lang="bs" xmltv_id="BNTV.ba" site_id="BN+Televizija">BN TV Satelitski</channel>
     <channel lang="cs" xmltv_id="AMCCzechRepublic.cz" site_id="AMC">AMC Cesko</channel>
     <channel lang="cs" xmltv_id="AnimalPlanetCzechRepublic.cz" site_id="AnimalPlanet">Animal Planet</channel>
@@ -224,7 +225,6 @@
     <channel lang="cs" xmltv_id="PrivateTV.nl" site_id="Private+TV">Private TV</channel>
     <channel lang="cs" xmltv_id="ProSieben.de" site_id="PRO7">ProSieben Deutschland</channel>
     <channel lang="cs" xmltv_id="Puls2.pl" site_id="Puls+2">Puls 2</channel>
-    <channel lang="cs" xmltv_id="QazaqTV.kz" site_id="Kazakh+TV">Qazaq TV</channel>
     <channel lang="cs" xmltv_id="RacingTV.uk" site_id="Racing+UK+SD">Racing UK SD</channel>
     <channel lang="cs" xmltv_id="Rai1.it" site_id="Rai+Uno">Rai 1</channel>
     <channel lang="cs" xmltv_id="Rai2.it" site_id="Rai+Due">Rai 2</channel>
