@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site site="tvpassport.com">
   <channels>
+    <!-- <channel lang="en" xmltv_id="" site_id="teletoon-east/162">Teletoon - East</channel> -->
+    <channel lang="bn" xmltv_id="StarJalsha.in" site_id="star-jalsha/13709">Star Jalsha</channel>
+    <channel lang="el" xmltv_id="Odyssey.ca" site_id="odyssey/412">Odyssey</channel>
     <channel lang="en" xmltv_id="3ABNEnglish.us" site_id="three-angels-broadcasting-network/19066">3ABN English</channel>
     <channel lang="en" xmltv_id="5StarMaxEast.us" site_id="5-star-max-eastern/636">5 StarMax East</channel>
     <channel lang="en" xmltv_id="5StarMaxWest.us" site_id="5-star-max-pacific/2627">5StarMax West</channel>
@@ -14,23 +17,18 @@
     <channel lang="en" xmltv_id="ActionEast.us" site_id="action-east/607">Action - East</channel>
     <channel lang="en" xmltv_id="ActionMaxEast.us" site_id="actionmax-eastern/1377">Actionmax Eastern</channel>
     <channel lang="en" xmltv_id="ActionMaxWest.us" site_id="actionmax-pacific-hd/8473">Actionmax Pacific HD</channel>
-    <channel lang="fr" xmltv_id="addikTV.ca" site_id="addik-tv/2033">Addik TV</channel>
     <channel lang="en" xmltv_id="AEEast.us" site_id="ae-us-eastern-feed/2">A&amp;E East</channel>
     <channel lang="en" xmltv_id="AEWest.us" site_id="ae-us-pacific-feed/1202">A&amp;E West</channel>
     <channel lang="en" xmltv_id="AMCEast.us" site_id="amc-eastern-feed-hd/6219">AMC East</channel>
     <channel lang="en" xmltv_id="AMCPlus.us" site_id="amc/35317">AMC+</channel>
     <channel lang="en" xmltv_id="AMCWest.us" site_id="amc-pacific-feed/1262">AMC West</channel>
     <channel lang="en" xmltv_id="AmericanHeroesChannel.us" site_id="american-heroes-channel/2035">American Heroes Channel</channel>
-    <channel lang="fr" xmltv_id="AMItele.ca" site_id="amitele/13775">AMI-télé</channel>
     <channel lang="en" xmltv_id="AMItv.ca" site_id="amitv-east/6056">AMI-tv East</channel>
     <channel lang="en" xmltv_id="AnimalPlanetCanada.ca" site_id="animal-planet-canada/472">Animal Planet Canada</channel>
     <channel lang="en" xmltv_id="AnimalPlanetEast.us" site_id="animal-planet-us-hd-east/4537">Animal Planet East</channel>
     <channel lang="en" xmltv_id="AnimalPlanetWest.us" site_id="animal-planet-us-hd-west/11524">Animal Planet West</channel>
     <channel lang="en" xmltv_id="AntennaTV.us" site_id="antenna-network/16820">Antenna - Network</channel>
-    <channel lang="fr" xmltv_id="APTNE.ca" site_id="aptn-east/198">APTN - East</channel>
-    <channel lang="fr" xmltv_id="APTNHD.ca" site_id="aptn-hd/5997">APTN HD</channel>
     <channel lang="en" xmltv_id="Aspire.us" site_id="aspire-tv/10760">Aspire</channel>
-    <channel lang="fr" xmltv_id="AssembleenationaleduQuebec.ca" site_id="assemblee-nationale-du-quebec/431">Assemblee nationale du Quebec</channel>
     <channel lang="en" xmltv_id="ATNAapkaColors.ca" site_id="atn-aapka-colors/10295">ATN - Aapka Colors</channel>
     <channel lang="en" xmltv_id="ATNAasthaTV.ca" site_id="atn-aastha/2262">ATN - AASTHA</channel>
     <channel lang="en" xmltv_id="ATNARYDigital.ca" site_id="atn-ary-digital-canada/13626">ATN - ARY Digital (Canada)</channel>
@@ -53,7 +51,6 @@
     <channel lang="en" xmltv_id="ATNZoom.ca" site_id="atn-zoom-hindi/10246">ATN - Zoom (Hindi)</channel>
     <channel lang="en" xmltv_id="ATTSportsNetPittsburgh.us" site_id="att-sportsnet-pittsburgh/1084">AT&amp;ET SportsNet Pittsburgh</channel>
     <channel lang="en" xmltv_id="AWE.us" site_id="awe-tv-network-hd/6306">AWE</channel>
-    <channel lang="fr" xmltv_id="AzMundo.mx" site_id="az-mundo/3998">AZ Mundo</channel>
     <channel lang="en" xmltv_id="BallySportsArizona.us" site_id="bally-sports-arizona/1118">Bally Sports Arizona</channel>
     <channel lang="en" xmltv_id="BallySportsArizonaExtra.us" site_id="bally-sports-arizona-extra/31547">Bally Sports Arizona Extra</channel>
     <channel lang="en" xmltv_id="BallySportsDetroit.us" site_id="bally-sports-detroit/1115">Bally Sports Detroit</channel>
@@ -85,21 +82,14 @@
     <channel lang="en" xmltv_id="Boomerang.us" site_id="boomerang-hd/16413">Boomerang US</channel>
     <channel lang="en" xmltv_id="BravoEast.us" site_id="bravo-usa-hd-eastern-feed/6120">Bravo East</channel>
     <channel lang="en" xmltv_id="BravoWest.us" site_id="bravo-usa-pacific-feed/1320">Bravo West</channel>
-    <channel lang="fr" xmltv_id="CanalD.ca" site_id="canal-d/108">Canal D</channel>
-    <channel lang="fr" xmltv_id="CanalM.ca" site_id="canal-m/5955">Canal M</channel>
-    <channel lang="fr" xmltv_id="CanalVie.ca" site_id="canal-vie/307">Canal Vie</channel>
     <channel lang="en" xmltv_id="CarsTV.us" site_id="carstv-hd/18803">Cars.TV</channel>
     <channel lang="en" xmltv_id="CartoonNetworkCanada.ca" site_id="cartoon-network-canada/10613">Cartoon Network Canada</channel>
     <channel lang="en" xmltv_id="CartoonNetworkEast.us" site_id="cartoon-network-usa-hd-eastern/6917">Cartoon Network East US</channel>
     <channel lang="en" xmltv_id="CartoonNetworkWest.us" site_id="cartoon-network-usa-pacific-feed/1209">Cartoon Network West US</channel>
-    <channel lang="fr" xmltv_id="Casa.ca" site_id="casa/5484">CASA</channel>
-    <channel lang="fr" xmltv_id="CBAFTDT.ca" site_id="src-cbaft-moncton-nb/118">SRC (CBAFT) Moncton, NB</channel>
     <channel lang="en" xmltv_id="CBATDT.ca" site_id="cbc-cbat-fredericton-nb-hd/3942">CBC (CBAT) Fredericton, NB HD</channel>
     <channel lang="en" xmltv_id="CBCNewsNetwork.ca" site_id="cbc-news-network/74">CBC News Network</channel>
     <channel lang="en" xmltv_id="CBETDT.ca" site_id="cbc-cbet-windsor-on/132">CBC (CBET) Windsor, ON</channel>
-    <channel lang="fr" xmltv_id="CBFTDT.ca" site_id="src-cbft-montreal-qc/196">SRC (CBFT) Montreal, QC</channel>
     <channel lang="en" xmltv_id="CBHTDT.ca" site_id="cbc-cbht-halifax-ns/121">CBC (CBHT) Halifax, NS</channel>
-    <channel lang="fr" xmltv_id="CBLFTDT.ca" site_id="src-cblft-toronto-hd/3626">SRC (CBLFT) Toronto HD</channel>
     <channel lang="en" xmltv_id="CBLTDT.ca" site_id="cbc-cblt-toronto-on/34">CBC (CBLT) Toronto, ON</channel>
     <channel lang="en" xmltv_id="CBMTDT.ca" site_id="cbc-cbmt-montreal-qc/107">CBC (CBMT) Montreal, QC</channel>
     <channel lang="en" xmltv_id="CBN.ca" site_id="cbn-commonwealth-broadcasting-network/4016">CBN (Commonwealth Broadcasting Network)</channel>
@@ -109,12 +99,9 @@
     <channel lang="en" xmltv_id="CBSEast.us" site_id="cbs-eastern/1225">CBS Eastern</channel>
     <channel lang="en" xmltv_id="CBSSportsNetworkCanada.ca" site_id="cbs-sports-network-canada/10708">CBS Sports Network Canada</channel>
     <channel lang="en" xmltv_id="CBSWest.us" site_id="cbs-pacific/9907">CBS Pacific</channel>
-    <channel lang="fr" xmltv_id="CBUFTDT.ca" site_id="src-cbuft-vancouver-bc/188">SRC (CBUFT) Vancouver, BC</channel>
     <channel lang="en" xmltv_id="CBUTDT.ca" site_id="cbc-cbut-vancouver-bc/180">CBC (CBUT) Vancouver, BC</channel>
     <channel lang="en" xmltv_id="CBWTDT.ca" site_id="cbc-cbwt-winnipeg-mb/110">CBC (CBWT) Winnipeg, MB</channel>
     <channel lang="en" xmltv_id="CBXTDT.ca" site_id="cbc-cbxt-edmonton-ab/146">CBC (CBXT) Edmonton, AB</channel>
-    <channel lang="fr" xmltv_id="CFJPDT.ca" site_id="v-cfjp-montreal-qc/301">V (CFJP) Montreal, QC</channel>
-    <channel lang="fr" xmltv_id="CFTMDT.ca" site_id="tva-cftm-montreal/106">TVA (CFTM) Montreal, QC</channel>
     <channel lang="en" xmltv_id="CHCHDT.ca" site_id="chch-hamilton-on/43">CHCH Hamilton, ON</channel>
     <channel lang="en" xmltv_id="CHEK.ca" site_id="chek-vancouver-island-bc/183">CHEK Vancouver Island, BC</channel>
     <channel lang="en" xmltv_id="CHEXDT.ca" site_id="global-chex-peterborough-on/37">Global (CHEX) Peterborough, ON</channel>
@@ -124,9 +111,7 @@
     <channel lang="en" xmltv_id="CIIIDT41.ca" site_id="global-ciiidt41-toronto/13585">Global (CIII-DT-41) Toronto</channel>
     <channel lang="en" xmltv_id="CinemaxEast.us" site_id="cinemax-eastern-feed/632">Cinemax Eastern</channel>
     <channel lang="en" xmltv_id="CinemaxWest.us" site_id="cinemax-pacific-hd/3568">Cinemax Pacific</channel>
-    <channel lang="fr" xmltv_id="Cinepop.ca" site_id="cinepop/2325">Cinépop</channel>
     <channel lang="en" xmltv_id="CITSDT.ca" site_id="yes-tv-cits-burlington-on/293">Yes TV (CITS) Burlington, ON</channel>
-    <channel lang="fr" xmltv_id="CIVMDT.ca" site_id="telequebec-civm-montreal/1140">Tele-Quebec (CIVM) Montreal</channel>
     <channel lang="en" xmltv_id="CJONDT.ca" site_id="cjon-ntv-stjohn-nl/199">CJON (NTV) St-John, NL</channel>
     <channel lang="en" xmltv_id="CKWSDT.ca" site_id="global-ckws-kingston-on/24">Global (CKWS) Kingston, ON</channel>
     <channel lang="en" xmltv_id="CMTCanada.ca" site_id="cmt-canada/120">CMT Canada</channel>
@@ -139,7 +124,6 @@
     <channel lang="en" xmltv_id="CottageLife.ca" site_id="cottage-life/455">Cottage Life</channel>
     <channel lang="en" xmltv_id="CP24.ca" site_id="cp24-cablepulse-24/321">CP24 (CablePulse 24)</channel>
     <channel lang="en" xmltv_id="CPACEnglish.ca" site_id="cpac-ottawa/127">CPAC Ottawa</channel>
-    <channel lang="fr" xmltv_id="CPACFrench.ca" site_id="cpac-francais/429">CPAC (Francais)</channel>
     <channel lang="en" xmltv_id="Crave1.ca" site_id="crave1-east/72">Crave 1</channel>
     <channel lang="en" xmltv_id="Crave2.ca" site_id="crave2-east/86">Crave 2</channel>
     <channel lang="en" xmltv_id="Crave3.ca" site_id="crave3-east/85">Crave 3</channel>
@@ -169,7 +153,6 @@
     <channel lang="en" xmltv_id="DocumentaryChannel.ca" site_id="documentary-channel-canada/462">Documentary Channel (Canada)</channel>
     <channel lang="en" xmltv_id="DTour.ca" site_id="dtour/11143">DTOUR</channel>
     <channel lang="en" xmltv_id="ECanada.ca" site_id="e-canada/295">E! Canada</channel>
-    <channel lang="hu" xmltv_id="ERTWorldCanada.ca" site_id="ert-world-canada/3419">ERT World (Canada)</channel>
     <channel lang="en" xmltv_id="ESPN.us" site_id="espn/594">ESPN</channel>
     <channel lang="en" xmltv_id="ESPN2.us" site_id="espn2/650">ESPN 2</channel>
     <channel lang="en" xmltv_id="ESPNClassicCanada.ca" site_id="espn-classic-canada/1154">ESPN Classic Canada</channel>
@@ -182,7 +165,6 @@
     <channel lang="en" xmltv_id="ESPNCollegeExtra7.us" site_id="espn-college-extra-7/15352">ESPN College Extra 7</channel>
     <channel lang="en" xmltv_id="ESPNCollegeExtra8.us" site_id="espn-college-extra-8-hd/15446">ESPN College Extra 8</channel>
     <channel lang="en" xmltv_id="ESPNU.us" site_id="espn-u/3331">ESPNU</channel>
-    <channel lang="fr" xmltv_id="Evasion.ca" site_id="canal-evasion/343">Canal Evasion</channel>
     <channel lang="en" xmltv_id="EWest.us" site_id="e-entertainment-usa-pacific-feed/1213">E! West</channel>
     <channel lang="en" xmltv_id="FairchildTV1East.ca" site_id="fairchild-tv-east/2871">Fairchild TV - East</channel>
     <channel lang="en" xmltv_id="FairchildTV1West.ca" site_id="fairchild-tv-pacific/366">Fairchild TV - Pacific</channel>
@@ -202,7 +184,6 @@
     <channel lang="en" xmltv_id="FoxNewsChannel.us" site_id="fox-news/1083">FOX News</channel>
     <channel lang="en" xmltv_id="FoxSportsRacing.us" site_id="fox-sports-racing/192">Fox Sports Racing</channel>
     <channel lang="en" xmltv_id="FoxWest.us" site_id="fox-pacific/4409">FOX Pacific</channel>
-    <channel lang="fr" xmltv_id="FPTV.ca" site_id="fptv-festival-portuguese-tv/2465">FPTV (Festival Portuguese TV)</channel>
     <channel lang="en" xmltv_id="FreeformEast.us" site_id="freeform-east-feed/1011">Freeform</channel>
     <channel lang="en" xmltv_id="FreeformWest.us" site_id="freeform-pacific-feed/1197">Freeform West</channel>
     <channel lang="en" xmltv_id="FuseEast.us" site_id="fuse-tv-hd-eastern/6221">Fuse East</channel>
@@ -214,7 +195,6 @@
     <channel lang="en" xmltv_id="FXXEast.us" site_id="fxx-usa-hd-eastern/7506">FXX East</channel>
     <channel lang="en" xmltv_id="FXXWest.us" site_id="fxx-usa-pacific/19080">FXX West</channel>
     <channel lang="en" xmltv_id="FYIEast.us" site_id="fyi-usa-hd-eastern/6211">FYI East</channel>
-    <channel lang="es" xmltv_id="GalavisionWest.us" site_id="galavision-pacific-feed/1573">Galavision West</channel>
     <channel lang="en" xmltv_id="GameShowNetworkEast.us" site_id="game-show-network-east/329">Game Show Network - East</channel>
     <channel lang="en" xmltv_id="GlobalNewsBC1.ca" site_id="global-bc/31">Global BC</channel>
     <channel lang="en" xmltv_id="GolTVUSA.us" site_id="gol-tv-usa-hd/12608">GolTV US</channel>
@@ -244,7 +224,6 @@
     <channel lang="en" xmltv_id="HGTVCanada.ca" site_id="hgtv-canada/167">HGTV Canada</channel>
     <channel lang="en" xmltv_id="HGTVEast.us" site_id="hgtv-usa-eastern-feed/623">HGTV East</channel>
     <channel lang="en" xmltv_id="HGTVWest.us" site_id="hgtv-usa-hd-pacific-feed/16232">HGTV USA HD Pacific Feed</channel>
-    <channel lang="fr" xmltv_id="Historia.ca" site_id="historia/345">Historia</channel>
     <channel lang="en" xmltv_id="History2Canada.ca" site_id="h2-canada/461">H2 Canada</channel>
     <channel lang="en" xmltv_id="HistoryCanada.ca" site_id="history-canada-east/164">History Canada East</channel>
     <channel lang="en" xmltv_id="HistoryEast.us" site_id="history-channel-us-hd-east/4660">History East</channel>
@@ -254,9 +233,6 @@
     <channel lang="en" xmltv_id="HollywoodSuite80sMovies.ca" site_id="hollywood-suite-80s/13639">Hollywood Suite 80s</channel>
     <channel lang="en" xmltv_id="HollywoodSuite90sMovies.ca" site_id="hollywood-suite-90s/10880">Hollywood Suite 90s</channel>
     <channel lang="en" xmltv_id="HSN2.us" site_id="hsn-2/13495">HSN 2</channel>
-    <channel lang="fr" xmltv_id="IciARTV.ca" site_id="artv/459">ARTV</channel>
-    <channel lang="fr" xmltv_id="IciExplora.ca" site_id="explora/10298">Explora</channel>
-    <channel lang="fr" xmltv_id="IciRDI.ca" site_id="rdi-news/8">RDI (News)</channel>
     <channel lang="en" xmltv_id="IFCEast.us" site_id="independent-film-channel-us-hd/6215">IFC East</channel>
     <channel lang="en" xmltv_id="IndiePlexEast.us" site_id="indieplex-eastern/2340">IndiePlex East</channel>
     <channel lang="en" xmltv_id="IndiePlexWest.us" site_id="indieplex-pacific/2341">IndiePlex West</channel>
@@ -290,8 +266,8 @@
     <channel lang="en" xmltv_id="KCNCDT1.us" site_id="cbs-kcnc-denver-co/1566">CBS (KCNC-TV) Denver, CO</channel>
     <channel lang="en" xmltv_id="KCOPDT1.us" site_id="mnt-kcop-los-angeles-ca/1811">KCOP (KCOP) Los Angeles, CA</channel>
     <channel lang="en" xmltv_id="KCPQDT1.us" site_id="fox-kcpq-tacoma-wa/32824">FOX (KCPQ) Tacoma, WA</channel>
-	<channel lang="en" xmltv_id="KCRADT1.us" site_id="nbc-kcra-sacramento-ca/2087">NBC (KCRA) Sacramento, CA</channel>
-	<channel lang="en" xmltv_id="KCTSDT1.us" site_id="pbs-kcts-seattle-wa/190">PBS (KCTS) Seattle, WA</channel>
+    <channel lang="en" xmltv_id="KCRADT1.us" site_id="nbc-kcra-sacramento-ca/2087">NBC (KCRA) Sacramento, CA</channel>
+    <channel lang="en" xmltv_id="KCTSDT1.us" site_id="pbs-kcts-seattle-wa/190">PBS (KCTS) Seattle, WA</channel>
     <channel lang="en" xmltv_id="KDKADT1.us" site_id="cbs-kdka-pittsburgh-pa/1389">CBS (KDKA-TV) Pittsburgh, PA</channel>
     <channel lang="en" xmltv_id="KDKADT2.us" site_id="start-tv-kdkatv2-pittsburgh-pa/15641">Start TV (KDKA-TV2) Pittsburgh, PA</channel>
     <channel lang="en" xmltv_id="KDKADT3.us" site_id="dabl-kdkatv3-pittsburgh-pa/34137">DABL (KDKA-TV3) Pittsburgh, PA</channel>
@@ -320,15 +296,13 @@
     <channel lang="en" xmltv_id="KLCSDT3.us" site_id="create-klcs3-los-angeles-ca/11230">Create (KLCS3) Los Angeles, CA</channel>
     <channel lang="en" xmltv_id="KMBCDT1.us" site_id="abc-kmbc-kansas-city-mo/2453">ABC (KMBC) Kansas City, MO</channel>
     <channel lang="en" xmltv_id="KMBCDT2.us" site_id="metv-kmbctv2-kansas-city-mo/7267">MeTV (KMBC-DT2) Kansas City, MO</channel>
-    <channel lang="es" xmltv_id="KMEXDT1.us" site_id="uni-kmex-los-angeles-ca/2602">Univision (KMEX) Los Angeles, CA</channel>
-    <channel lang="es" xmltv_id="KMEXDT2.us" site_id="unimas-kftr-ontario-ca/11261">UniMás (KMEX-DT2) Los Angeles, CA</channel>
     <channel lang="en" xmltv_id="KMGHDT1.us" site_id="abc-kmgh-denver-co/1568">ABC (KMGH) Denver, CO</channel>
     <channel lang="en" xmltv_id="KNBCDT1.us" site_id="nbc-knbc-los-angeles-ca/2588">NBC (KNBC) Los Angeles, CA</channel>
     <channel lang="en" xmltv_id="KNTVDT1.us" site_id="nbc-kntv-san-francisco-ca/3262">NBC (KNTV) San Francisco, CA</channel>
     <channel lang="en" xmltv_id="KNXVDT1.us" site_id="abc-knxv-phoenix-az/1178">ABC (KNXV) Phoenix, AZ</channel>
     <channel lang="en" xmltv_id="KOCEDT1.us" site_id="pbs-socal1-koce-huntington-beach-ca/2632">PBS (KOCE) Huntington Beach, CA</channel>
     <channel lang="en" xmltv_id="KOMODT1.us" site_id="abc-komo-seattle-wa/181">ABC (KOMO) Seattle, WA</channel>
-	<channel lang="en" xmltv_id="KOVRDT1.us" site_id="cbs-kovr-sacramento-ca/2153">CBS (KOVR) Sacramento, CA</channel>
+    <channel lang="en" xmltv_id="KOVRDT1.us" site_id="cbs-kovr-sacramento-ca/2153">CBS (KOVR) Sacramento, CA</channel>
     <channel lang="en" xmltv_id="KPAXDT1.us" site_id="cbs-kpax-missoula-mt/4976">CBS (KPAX-TV) Missoula, MT</channel>
     <channel lang="en" xmltv_id="KPAXDT2.us" site_id="cw-kpaxtv2-missoula-mt/8949">CW (KPAX-DT2) Missoula, MT</channel>
     <channel lang="en" xmltv_id="KPHODT1.us" site_id="cbs-kpho-phoenix-az/1179">CBS (KPHO) Phoenix, AZ</channel>
@@ -338,8 +312,8 @@
     <channel lang="en" xmltv_id="KPIXDT4.us" site_id="fave-tv-kpixtv4-san-francisco-ca/35818">Fave TV (KPIX-DT4) San Francisco, CA</channel>
     <channel lang="en" xmltv_id="KPNXDT1.us" site_id="nbc-kpnx-phoenix-az/1186">NBC (KPNX) Phoenix, AZ</channel>
     <channel lang="en" xmltv_id="KRIVDT1.us" site_id="fox-kriv-houston-tx/2402">FOX (KRIV) Houston, TX</channel>
-	<channel lang="en" xmltv_id="KRNVDT1.us" site_id="nbc-krnv-reno-nv/1491"> NBC (KRNV) Reno, NV</channel>
-	<channel lang="en" xmltv_id="KRXIDT1.us" site_id="fox-krxi-reno-nv/1495">FOX (KRXI) Reno, NV</channel>
+    <channel lang="en" xmltv_id="KRNVDT1.us" site_id="nbc-krnv-reno-nv/1491"> NBC (KRNV) Reno, NV</channel>
+    <channel lang="en" xmltv_id="KRXIDT1.us" site_id="fox-krxi-reno-nv/1495">FOX (KRXI) Reno, NV</channel>
     <channel lang="en" xmltv_id="KSATDT1.us" site_id="abc-ksat-san-antonio-tx/3071">ABC (KSAT) San Antonio, TX</channel>
     <channel lang="en" xmltv_id="KSATDT2.us" site_id="metv-ksattv2-san-antonio-tx/8358">MeTV (KSAT-DT2) San Antonio, TX</channel>
     <channel lang="en" xmltv_id="KSATDT3.us" site_id="movies-ksattv3-san-antonio-tx/19497">Movies! (KSAT-DT3) San Antonio, TX</channel>
@@ -354,21 +328,18 @@
     <channel lang="en" xmltv_id="KTRKDT1.us" site_id="abc-ktrk-houston-tx/2394">ABC (KTRK) Houston, TX</channel>
     <channel lang="en" xmltv_id="KTTVDT1.us" site_id="fox-kttv-los-angeles-ca/1949">FOX (KTTV) Los Angeles, CA</channel>
     <channel lang="en" xmltv_id="KTVDDT1.us" site_id="mnt-ktvd-denver-co/1565">MNT (KTVD) Denver, CO</channel>
-	<channel lang="en" xmltv_id="KTVNDT1.us" site_id="cbs-ktvn-reno-nv/1490">CBS (KTVN) Reno, NV</channel>
-	<channel lang="en" xmltv_id="KTXLDT1.us" site_id="fox-ktxl-sacramento-ca/2158">FOX (KTXL) Sacramento, CA</channel>
     <channel lang="en" xmltv_id="KTVFDT1.us" site_id="nbc-ktvf-fairbanks-ak/5121">NBC (KTVF) Fairbanks, AK</channel>
     <channel lang="en" xmltv_id="KTVHDT1.us" site_id="metv-plus-khtv-los-angeles-ca/13348">NBC (KTVH) Los Angeles,CA</channel>
+    <channel lang="en" xmltv_id="KTVNDT1.us" site_id="cbs-ktvn-reno-nv/1490">CBS (KTVN) Reno, NV</channel>
     <channel lang="en" xmltv_id="KTVQDT2.us" site_id="cw-ktvq2-billings-mt/8943">CW (KTVQ-DT2) Billings, MT</channel>
     <channel lang="en" xmltv_id="KTVUDT1.us" site_id="fox-ktvu-san-francisco-ca/2145">FOX (KTVU) San Francisco, CA</channel>
+    <channel lang="en" xmltv_id="KTXLDT1.us" site_id="fox-ktxl-sacramento-ca/2158">FOX (KTXL) Sacramento, CA</channel>
     <channel lang="en" xmltv_id="KUFMDT1.us" site_id="pbs-kufm-missoula-mt/13228">PBS (KUFM-TV) Missoula, MT</channel>
-    <channel lang="es" xmltv_id="KVEADT1.us" site_id="telemundo-kvea-los-angeles-ca/2611">Telemundo (KVEA) Los Angeles, CA </channel>
     <channel lang="en" xmltv_id="KWCHDT1.us" site_id="cbs-kwch-wichita-ks/1546">CBS (KWCH) Wichita, KS</channel>
     <channel lang="en" xmltv_id="KWCHDT4.us" site_id="circle-kwchdt4-hutchinsonm-ks/34557">Circle (KWCH-DT4) Wichita, KS</channel>
     <channel lang="en" xmltv_id="KXDFCD1.us" site_id="cbs-k13xd-fairbanks-ak/4960">CBS (KXDF-CD) Fairbanks, AK</channel>
     <channel lang="en" xmltv_id="KXTVDT1.us" site_id="abc-kxtv-sacramento-ca/2151">ABC (KXTV) Sacramento, CA</channel>
     <channel lang="en" xmltv_id="KYAZDT2.us" site_id="metv-plus-kyazdt2-houston-tx/15499">MeTV Plus (KYAZ-DT2) Houston TX</channel>
-    <channel lang="fr" xmltv_id="LaChaineDisney.ca" site_id="la-chaine-disney/5981">La Chaine Disney</channel>
-    <channel lang="fr" xmltv_id="LCN.ca" site_id="lcn/432">LCN</channel>
     <channel lang="en" xmltv_id="LegislativeAssemblyofOntario.ca" site_id="ontario-legislature/417">Ontario Legislature</channel>
     <channel lang="en" xmltv_id="LifetimeEast.us" site_id="lifetime-network-us-eastern-feed-hd/6333">Lifetime East</channel>
     <channel lang="en" xmltv_id="LogoEast.us" site_id="logo-east/2091">Logo East</channel>
@@ -377,8 +348,6 @@
     <channel lang="en" xmltv_id="LSTimesTV.ca" site_id="ls-times/6863">LS Times</channel>
     <channel lang="en" xmltv_id="MagnoliaNetworkEast.us" site_id="magnolia-hd-east/8114">Magnolia East</channel>
     <channel lang="en" xmltv_id="Makeful.ca" site_id="makeful/2466">Makeful</channel>
-    <channel lang="it" xmltv_id="MediasetItaliaCanada.ca" site_id="mediaset-italia/8436">Mediaset Italia</channel>
-    <channel lang="fr" xmltv_id="MeteoMedia.ca" site_id="meteomedia-montreal/5942">Meteo-Media Montreal</channel>
     <channel lang="en" xmltv_id="MeTV.us" site_id="metv-network/16325">MeTV Network</channel>
     <channel lang="en" xmltv_id="MGMPlusDriveIn.us" site_id="epix-drivein/11487">MGM+ Drive-In</channel>
     <channel lang="en" xmltv_id="MGMPlusEast.us" site_id="epix-hd-east/7610">MGM+ East</channel>
@@ -442,7 +411,6 @@
     <channel lang="en" xmltv_id="NickelodeonWest.us" site_id="nickelodeon-usa-pacific-feed/1198">Nickelodeon West</channel>
     <channel lang="en" xmltv_id="NickJrEast.us" site_id="nick-jr-east/1969">Nick Jr East</channel>
     <channel lang="en" xmltv_id="NicktoonsEast.us" site_id="nicktoons-hd-east/11445">Nicktoons East</channel>
-    <channel lang="el" xmltv_id="Odyssey.ca" site_id="odyssey/412">Odyssey</channel>
     <channel lang="en" xmltv_id="OneAmericaNewsNetwork.us" site_id="one-america-news-network/12614">ONE AMERICAN NEWS NETWORK</channel>
     <channel lang="en" xmltv_id="OuterMaxEast.us" site_id="outermax-eastern/2270">OuterMax Eastern</channel>
     <channel lang="en" xmltv_id="OUTtv.ca" site_id="outtv/2729">OUTtv</channel>
@@ -450,20 +418,14 @@
     <channel lang="en" xmltv_id="ParamountNetworkEast.us" site_id="paramount-network-usa-hd-eastern-feed/6334">Paramount Network East</channel>
     <channel lang="en" xmltv_id="PBSEast.us" site_id="pbs-network-hd-eastern/4259">PBS East</channel>
     <channel lang="en" xmltv_id="PenthouseTVCanada.ca" site_id="penthouse-tv-canada/5894">Penthouse TV Canada</channel>
-    <channel lang="fr" xmltv_id="Prise2.ca" site_id="prise-2/2848">Prise 2</channel>
-    <channel lang="fr" xmltv_id="RDS.ca" site_id="rds-reseau-des-sports/47">RDS (Réseau des sports)</channel>
-    <channel lang="fr" xmltv_id="RDS2.ca" site_id="rds-2/9705">RDS 2</channel>
-    <channel lang="fr" xmltv_id="RDSInfo.ca" site_id="rds-info/3889">RDS Info</channel>
     <channel lang="en" xmltv_id="RedHotTV.ca" site_id="red-hot-tv/3627">Red Hot TV</channel>
     <channel lang="en" xmltv_id="Reelz.us" site_id="reelzchannel/4175">Reelz</channel>
     <channel lang="en" xmltv_id="RetroPlexEast.us" site_id="retroplex-eastern/2342">RetroPlex East</channel>
     <channel lang="en" xmltv_id="RetroPlexWest.us" site_id="retroplex-pacific/2343">RetroPlex West</channel>
-    <channel lang="fr" xmltv_id="SaltPlusLightTelevision.ca" site_id="salt-light/2469">Salt &amp; Light</channel>
     <channel lang="en" xmltv_id="ScreenPix.us" site_id="screenpix/34659">ScreenPix</channel>
     <channel lang="en" xmltv_id="ScreenPixAction.us" site_id="screenpix-action/34660">ScreenPix Action</channel>
     <channel lang="en" xmltv_id="ScreenPixVoices.us" site_id="screenpix-voices/34662">ScreenPix Voices</channel>
     <channel lang="en" xmltv_id="ScreenPixWesterns.us" site_id="screenpix-westerns/34661">ScreenPix Westerns</channel>
-    <channel lang="fr" xmltv_id="SeriesPlus.ca" site_id="series/341">Series +</channel>
     <channel lang="en" xmltv_id="Showcase.ca" site_id="showcase-canada/62">Showcase Canada</channel>
     <channel lang="en" xmltv_id="Showtime2East.us" site_id="showtime-2-hd-eastern/7111">Showtime 2 East</channel>
     <channel lang="en" xmltv_id="Showtime2West.us" site_id="showtime-2-pacific/2596">Showtime 2 West</channel>
@@ -495,7 +457,6 @@
     <channel lang="en" xmltv_id="SportsnetWest.ca" site_id="sportsnet-west-satellitedigital/2705">Sportsnet (West) - Satellite/Digital</channel>
     <channel lang="en" xmltv_id="SportsnetWorld.ca" site_id="sportsnet-world/4442">Sportsnet World</channel>
     <channel lang="en" xmltv_id="StarGold.in" site_id="star-india-gold/6776">Star India Gold</channel>
-    <channel lang="bn" xmltv_id="StarJalsha.in" site_id="star-jalsha/13709">Star Jalsha</channel>
     <channel lang="en" xmltv_id="Starz1East.ca" site_id="starz1-east/55">Starz 1 East</channel>
     <channel lang="en" xmltv_id="StarzCinemaEast.us" site_id="starz-cinema-eastern/2680">Starz Cinema East</channel>
     <channel lang="en" xmltv_id="StarzCinemaWest.us" site_id="starz-cinema-pacific/2681">Starz Cinema Pacific</channel>
@@ -526,10 +487,6 @@
     <channel lang="en" xmltv_id="SuperChannel2.ca" site_id="super-channel-2/4834">Super Channel 2</channel>
     <channel lang="en" xmltv_id="SuperChannel3.ca" site_id="super-channel-3/4835">Super Channel 3</channel>
     <channel lang="en" xmltv_id="SuperChannel4.ca" site_id="super-channel-4/4836">Super Channel 4</channel>
-    <channel lang="fr" xmltv_id="SuperEcran1.ca" site_id="super-ecran/57">Super Ecran</channel>
-    <channel lang="fr" xmltv_id="SuperEcran2.ca" site_id="super-ecran-2/362">Super Ecran 2</channel>
-    <channel lang="fr" xmltv_id="SuperEcran3.ca" site_id="super-ecran-3/410">Super Ecran 3</channel>
-    <channel lang="fr" xmltv_id="SuperEcran4.ca" site_id="super-ecran-4/411">Super Ecran 4</channel>
     <channel lang="en" xmltv_id="SyfyEast.us" site_id="syfy-eastern-feed/596">Syfy East</channel>
     <channel lang="en" xmltv_id="SyfyWest.us" site_id="syfy-pacific-feed/1207">Syfy West</channel>
     <channel lang="en" xmltv_id="Talentvision.ca" site_id="talentvision/365">Talentvision</channel>
@@ -541,9 +498,6 @@
     <channel lang="en" xmltv_id="Telemagino.ca" site_id="telemagino/8019">Télémagino</channel>
     <channel lang="en" xmltv_id="TelemundoEast.us" site_id="telemundo-east-hd/33284">Telemundo East</channel>
     <channel lang="en" xmltv_id="TelemundoWest.us" site_id="telemundo-pacific-feed/2013">Telemundo West</channel>
-    <channel lang="en" xmltv_id="TeletoonEnglish.ca" site_id="teletoon-east/162">Teletoon - East</channel>
-    <channel lang="fr" xmltv_id="TeletoonFrench.ca" site_id="teletoon-francais/308">TéléTOON - français</channel>
-    <channel lang="fr" xmltv_id="TFO.ca" site_id="tfo-chaine-francaise/10">TFO - Chaine Francaise</channel>
     <channel lang="en" xmltv_id="TheFilipinoChannelNorthAmerica.us" site_id="tfc-the-filipino-channel/9604">TFC - The Filipino Channel</channel>
     <channel lang="en" xmltv_id="TheMovieChannelEast.us" site_id="tmc-hd-eastern/4352">The Movie Channel East</channel>
     <channel lang="en" xmltv_id="TheMovieChannelXtraEast.us" site_id="tmc-xtra-hd-eastern/7113">The Movie Channel Xtra East</channel>
@@ -564,12 +518,9 @@
     <channel lang="en" xmltv_id="TSN3.ca" site_id="tsn3/13719">TSN3</channel>
     <channel lang="en" xmltv_id="TSN4.ca" site_id="tsn4/279">TSN4</channel>
     <channel lang="en" xmltv_id="TSN5.ca" site_id="tsn5/278">TSN5</channel>
-    <channel lang="fr" xmltv_id="TVASports.ca" site_id="tva-sports/9823">TVA Sports</channel>
-    <channel lang="es" xmltv_id="TVChile.cl" site_id="tv-chile/2102">TV Chile</channel>
     <channel lang="en" xmltv_id="TVLandEast.us" site_id="tv-land-eastern-hd/8815">TV Land East</channel>
     <channel lang="en" xmltv_id="TVLandWest.us" site_id="tv-land-pacific/210">TV Land West</channel>
     <channel lang="en" xmltv_id="TVOne.us" site_id="tv-one/2287">TV One</channel>
-    <channel lang="es" xmltv_id="UnivisionCanada.ca" site_id="univision-canada/13625">Univision Canada</channel>
     <channel lang="en" xmltv_id="UpTV.us" site_id="up/5911">Up TV</channel>
     <channel lang="en" xmltv_id="USANetworkEast.us" site_id="usa-network-hd-east/5490">USA Network East</channel>
     <channel lang="en" xmltv_id="USANetworkWest.us" site_id="usa-network-pacific/2144">USA Network West</channel>
@@ -577,18 +528,13 @@
     <channel lang="en" xmltv_id="VICETV.us" site_id="vice/624">Vice</channel>
     <channel lang="en" xmltv_id="VisionTV.ca" site_id="vision-tv/17">Vision TV</channel>
     <channel lang="en" xmltv_id="VividTVCanada.ca" site_id="vivid-tv-canada-english/13620">Vivid TV Canada (English)</channel>
-    <channel lang="fr" xmltv_id="VividTVCanada.ca" site_id="vivid-tv-canada-francais/8519">Vivid TV Canada (Français)</channel>
-    <channel lang="fr" xmltv_id="Vrak.ca" site_id="vrak/48">VRAK</channel>
     <channel lang="en" xmltv_id="W20CQD1.us" site_id="hope-channel-w20cqd-hempstead-ny/16436">Hope Channel (W20CQ-D) Hempstead, NY</channel>
-    <channel lang="es" xmltv_id="W20CQD2.us" site_id="esperanza-w20cqd2-hempstead-ny/16437">Esperanza (W20CQ-D2) Hempstead, NY</channel>
     <channel lang="en" xmltv_id="WABCDT1.us" site_id="abc-wabc-new-york-ny/1769">ABC (WABC) New York, NY</channel>
     <channel lang="en" xmltv_id="WABCDT2.us" site_id="localish-wabcdt2-new-york-ny/10497">Localish (WABC-DT2) New York, NY</channel>
     <channel lang="en" xmltv_id="WABCDT3.us" site_id="this-wabctv3-new-york-ny/11049">THIS (WABC-TV3) New York, NY</channel>
     <channel lang="en" xmltv_id="WABCDT4.us" site_id="hsn-wabctv4-new-york-ny/36168">HSN (WABC-TV4) New York, NY</channel>
     <channel lang="en" xmltv_id="WADLDT1.us" site_id="wadl-tv-detroit-mi/10217">MNT (WADL) Mount Clemens, MI</channel>
-    <channel lang="es" xmltv_id="WASALD1.us" site_id="estrella-wasald-port-jervis-ny/11071">Estrella (WASA-LD) Port Jervis, NY</channel>
-	<channel lang="es" xmltv_id="WATNDT1.us" site_id="abc-watn-memphis-tn/1423">ABC (WATN) Memphis, TN</channel>
-	<channel lang="en" xmltv_id="WBALDT1.us" site_id="nbc-wbal-baltimore-md/3236">NBC (WBAL-TV) Baltimore, MD</channel>
+    <channel lang="en" xmltv_id="WBALDT1.us" site_id="nbc-wbal-baltimore-md/3236">NBC (WBAL-TV) Baltimore, MD</channel>
     <channel lang="en" xmltv_id="WBALDT2.us" site_id="metv-wbaltv2-baltimore-md/11796">MeTV (WBAL-DT2) Baltimore, MD</channel>
     <channel lang="en" xmltv_id="WBALDT4.us" site_id="the-grio-wbaltv4-baltimore-md/36930">The Grio (WBAL-DT4) Baltimore, MD</channel>
     <channel lang="en" xmltv_id="WBBMDT1.us" site_id="cbs-wbbm-chicago-il/1830">CBS (WBBM) Chicago, IL</channel>
@@ -607,10 +553,10 @@
     <channel lang="en" xmltv_id="WCBSDT1.us" site_id="cbs-wcbs-new-york-ny/1766">CBS (WCBS) New York, NY</channel>
     <channel lang="en" xmltv_id="WCBSDT2.us" site_id="start-tv-wcbstv2-new-york-ny/11045">Start TV (WCBS-TV2) New York, NY</channel>
     <channel lang="en" xmltv_id="WCBSDT3.us" site_id="dabl-wcbstv3-new-york-ny/34131">DABL (WCBS-TV3) New York, NY</channel>
+    <channel lang="en" xmltv_id="WCCODT1.us" site_id="cbs-wcco-minneapolis-mn/80">CBS (WCCO) Minneapolis, MN</channel>
     <channel lang="en" xmltv_id="WCCTDT1.us" site_id="cw-wcct-hartford-ct/2057">CW (WCCT) Hartford, CT</channel>
     <channel lang="en" xmltv_id="WCCTDT2.us" site_id="court-tv-wccttv2-hartford-ct/7714">Grit (WCCT-DT2) Hartford, CT</channel>
     <channel lang="en" xmltv_id="WCCTDT3.us" site_id="comet-tv-wccttv3-hartford-ct/18168">Comet (WCCT-DT3) Hartford, CT</channel>
-    <channel lang="en" xmltv_id="WCCODT1.us" site_id="cbs-wcco-minneapolis-mn/80">CBS (WCCO) Minneapolis, MN</channel>
     <channel lang="en" xmltv_id="WCFEDT1.us" site_id="pbs-wcfe-plattsburgh-ny/109">PBS (WCFE) Plattsburgh, NY</channel>
     <channel lang="en" xmltv_id="WCIUDT1.us" site_id="cw26-wciu-chicago-il/1834">CW (WCIU) Chicago, IL</channel>
     <channel lang="en" xmltv_id="WCIUDT5.us" site_id="story-wciutv5-chicago-il/11342">Story (WCIU-DT5) Chicago, IL</channel>
@@ -630,6 +576,7 @@
     <channel lang="en" xmltv_id="WDVBCD2.us" site_id="sstn-wdvbcd2-edison-nj/11068">SSTN (WDVB-CD2) Edison, NJ</channel>
     <channel lang="en" xmltv_id="WEDWDT1.us" site_id="connecticut-public-television-wedw-bridgeport/2065">Connecticut Public Television (WEDW) Bridgeport</channel>
     <channel lang="en" xmltv_id="WEDWDT3.us" site_id="cptv-spirit-wedwdt3-bridgeport-ct/11910">CPTV Spirit (WEDW-DT3) Bridgeport, CT</channel>
+    <channel lang="en" xmltv_id="WESHDT1.us" site_id="nbc-wesh-daytona-beach-fl/2490">NBC (WESH-DT1) Daytona Beach, FL</channel>
     <channel lang="en" xmltv_id="WETADT1.us" site_id="pbs-weta-hd-washington-dc/8180">PBS (WETA-TV) Washington DC</channel>
     <channel lang="en" xmltv_id="WETKDT1.us" site_id="pbs-wetk-colchester-vt/102">PBS (WETK) Colchester, VT</channel>
     <channel lang="en" xmltv_id="WEVVDT1.us" site_id="cbs-wevv-evansville-in/1801">CBS (WEVV) Evansville, IN</channel>
@@ -649,17 +596,8 @@
     <channel lang="en" xmltv_id="WFSBDT3.us" site_id="laff-wfsb3-hartford-ct/16153">Laff (WFSB-DT3) Hartford, CT</channel>
     <channel lang="en" xmltv_id="WFSBDT4.us" site_id="cbs-wfsb4-fairfield-county-hartfod-ct/14723">CBS (WFSB-DT4) Fairfield County, CT</channel>
     <channel lang="en" xmltv_id="WFTVDT1.us" site_id="abc-wftv-orlando-fl/2494">ABC (WFTV-DT1) Orlando, FL</channel>
-	<channel lang="en" xmltv_id="WKMGDT1.us" site_id="cbs-wkmg-orlando-fl/2492">CBS (WKMG-DT1) Orlando, FL</channel>
-	<channel lang="en" xmltv_id="WKCFDT1.us" site_id="cw-wkcf-orlando-fl/2515">CW (WKCF-DT1) Orlando, FL</channel>
-    <channel lang="en" xmltv_id="WOFLDT1.us" site_id="fox-wofl-orlando-fl/2491">FOX (WOFL-DT1) Orlando, FL</channel>
-    <channel lang="en" xmltv_id="WRBWDT1.us" site_id="fox-35-plus-wrbw-orlando-fl/2493">My TV 65 / FOX 35 Plus (WRBW-DT1) Orlando, FL</channel>
-    <channel lang="en" xmltv_id="WESHDT1.us" site_id="nbc-wesh-daytona-beach-fl/2490">NBC (WESH-DT1) Daytona Beach, FL</channel>
-    <channel lang="en" xmltv_id="WRDQDT3.us" site_id="telemundo-wrdqdt3-orlando-fl/17603">Telemundo (WRDQ-DT3) Orlando, FL</channel>
     <channel lang="en" xmltv_id="WFTYDT1.us" site_id="unimas-wfty-smithtown-ny/1961">True Crime Network (WFTY) Smithtown, NY</channel>
-    <channel lang="es" xmltv_id="WFTYDT2.us" site_id="uni-wftydt2-new-york-ny/1962">UniMás (WFTY-DT2) New York, NY</channel>
-    <channel lang="es" xmltv_id="WFTYDT3.us" site_id="gettv-wftydt3-los-angeles-ca/13521">GetTV (WFTY-DT3) Los Angeles, CA</channel>
     <channel lang="en" xmltv_id="WFTYDT4.us" site_id="ion-mystery-wftydt4-smithtown-ny/19460">ION Mystery (WFTY-DT4) Smithtown, NY</channel>
-    <channel lang="es" xmltv_id="WFUTDT1.us" site_id="unimas-wfut-new-york-ny/1776">UniMás (WFUT) New York, NY</channel>
     <channel lang="en" xmltv_id="WFUTDT2.us" site_id="true-crime-network-wfutdt2-newark-nj/16472">True Crime Network (WFUT-DT2) Newark, NJ</channel>
     <channel lang="en" xmltv_id="WFUTDT3.us" site_id="gettv-wfutdt3-newark-nj/16429">GetTV (WFUT-DT3) Newark, NJ</channel>
     <channel lang="en" xmltv_id="WFUTDT4.us" site_id="ion-mystery-wfutdt4-newark-nj/16471">ION Mystery (WFUT-DT4) Newark, NJ</channel>
@@ -671,7 +609,7 @@
     <channel lang="en" xmltv_id="WGVUDT1.us" site_id="pbs-wgvu-grand-rapids-mi/1919">PBS (WGVU-TV) Grand Rapids, MI</channel>
     <channel lang="en" xmltv_id="WHAMDT1.us" site_id="abc-wham-rochester-ny/26">ABC (WHAM) Rochester, NY</channel>
     <channel lang="en" xmltv_id="WHBQDT1.us" site_id="fox-whbq-memphis-tn/1429">FOX (WHBQ) Memphis, TN</channel>
-	<channel lang="en" xmltv_id="WHDHDT1.us" site_id="whdh-boston-ma/135">Independent (WHDH) Boston, MA</channel>
+    <channel lang="en" xmltv_id="WHDHDT1.us" site_id="whdh-boston-ma/135">Independent (WHDH) Boston, MA</channel>
     <channel lang="en" xmltv_id="WHDHDT2.us" site_id="this-whdh2-hudson-nh/8041">THIS (WHDH) Boston, MA</channel>
     <channel lang="en" xmltv_id="WHECDT1.us" site_id="nbc-whec-rochester-ny/40">NBC (WHEC) Rochester, NY</channel>
     <channel lang="en" xmltv_id="WHNELD9.us" site_id="newsnet-whneld9-flint-mi/35849">NewsNet (WHNE-LD9) Detroit, MI</channel>
@@ -685,8 +623,8 @@
     <channel lang="en" xmltv_id="WJARDT1.us" site_id="nbc-wjar-cranston-ri/2055">NBC (WJAR) Cranston, RI</channel>
     <channel lang="en" xmltv_id="WJARDT3.us" site_id="comet-tv-wjar3-cranston-ri/16825">Comet TV (WJAR-DT3) Cranston, RI</channel>
     <channel lang="en" xmltv_id="WJAXDT1.us" site_id="cbs-wjax-jacksonville-fl/2048">CBS (WJAX) Jacksonville, FL</channel>
-    <channel lang="en" xmltv_id="WJLADT1.us" site_id="abc-wjla-district-of-columbia/1555">ABC (WJLA) District of Columbia</channel>
     <channel lang="en" xmltv_id="WJBKDT1.us" site_id="fox-wjbk-detroit-mi/54">FOX (WJBK) Detroit, MI</channel>
+    <channel lang="en" xmltv_id="WJLADT1.us" site_id="abc-wjla-district-of-columbia/1555">ABC (WJLA) District of Columbia</channel>
     <channel lang="en" xmltv_id="WJLPDT1.us" site_id="metv-wjlp-new-jerseynew-york/5138">MeTV (WJLP) New Jersey</channel>
     <channel lang="en" xmltv_id="WJLPDT2.us" site_id="laff-wjlp2-new-jersey/15178">Laff (WJLP2) New Jersey</channel>
     <channel lang="en" xmltv_id="WJLPDT3.us" site_id="grit-tv-wjlp3-new-jerseynew-york/20040">Grit TV (WJLP3) New Jersey/New York</channel>
@@ -704,11 +642,11 @@
     <channel lang="en" xmltv_id="WJZDT4.us" site_id="fave-tv-wjztv4-baltimore-md/35969">Fave TV (WJZ-DT4) Baltimore, MD</channel>
     <channel lang="en" xmltv_id="WKARDT1.us" site_id="pbs-wkar-east-lansing-mi/13241">PBS (WKAR-TV) East Lansing, MI</channel>
     <channel lang="en" xmltv_id="WKBWDT1.us" site_id="abc-wkbw-buffalo-ny/89">ABC (WKBW) Buffalo, NY</channel>
+    <channel lang="en" xmltv_id="WKCFDT1.us" site_id="cw-wkcf-orlando-fl/2515">CW (WKCF-DT1) Orlando, FL</channel>
+    <channel lang="en" xmltv_id="WKMGDT1.us" site_id="cbs-wkmg-orlando-fl/2492">CBS (WKMG-DT1) Orlando, FL</channel>
     <channel lang="en" xmltv_id="WKOBLD1.us" site_id="azteca-wkob-new-york-ny/5096">Azteca (WKOB) New York, NY</channel>
-    <channel lang="es" xmltv_id="WKOBLD2.us" site_id="daystar-wkobld2-new-york-ny/11083">Daystar (WKOB-LD2) New York, NY</channel>
     <channel lang="en" xmltv_id="WKOBLD3.us" site_id="peace-tv-wkobld3-new-york-ny/11085">Peace TV (WKOB-LD3) New York, NY</channel>
     <channel lang="en" xmltv_id="WKOBLD5.us" site_id="sonlife-network-wkobld5-new-york-ny/11087">SonLife Network (WKOB-LD5) New York, NY</channel>
-    <channel lang="es" xmltv_id="WKOBLD6.us" site_id="estrella-wkobdt6-new-york-ny/16453">Estrella (WKOB-DT6) New York, NY</channel>
     <channel lang="en" xmltv_id="WKOBLD7.us" site_id="shop-lc-wkobdt7-new-york-ny/16454">Shop LC (WKOB-DT7) New York, NY</channel>
     <channel lang="en" xmltv_id="WKOBLD8.us" site_id="ontv4u-wkobdt8-new-york-ny/17491">ONTV4U (WKOB-DT8) New York, NY</channel>
     <channel lang="en" xmltv_id="WKRNDT1.us" site_id="abc-wkrn-nashville-tn/1886">ABC (WKRN) Nashville, TN</channel>
@@ -739,11 +677,10 @@
     <channel lang="en" xmltv_id="WMBCDT2.us" site_id="quest-wmbctv2-newton-nj/16467">Quest (WMBC-TV2) Newton, NJ</channel>
     <channel lang="en" xmltv_id="WMBCDT5.us" site_id="new-tang-dynasty-tv-wmbcdt5-newton-nj/15033">New Tang Dynasty TV (WMBC-DT5) Newton, NJ</channel>
     <channel lang="en" xmltv_id="WMBCDT6.us" site_id="azteca-wmbc-newton-nj/11536">Azteca (WMBC-TV6) Newton, NJ</channel>
-    <channel lang="es" xmltv_id="WMBCDT7.us" site_id="aliento-vision-wmbctv7-newton-nj/16468">Aliento Vision (WMBC-TV7) Newton, NJ</channel>
     <channel lang="en" xmltv_id="WMBQCD1.us" site_id="biztv-wmbqcd-new-york-ny/16459">Biz-TV (WMBQ-CD) New York, NY</channel>
     <channel lang="en" xmltv_id="WMBQCD2.us" site_id="hope-channel-wmbqcd2-new-york-ny/16460">Hope Channel (WMBQ-CD2) New York, NY</channel>
-	<channel lang="en" xmltv_id="WMCDT1.us" site_id="nbc-wmc-memphis-tn/1353">NBC (WMC) Memphis, TN</channel>
-	<channel lang="en" xmltv_id="WMEUCD1.us" site_id="the-u-wmeucd-chicago-il/12512">The U (WMEU-CD) Chicago, IL</channel>
+    <channel lang="en" xmltv_id="WMCDT1.us" site_id="nbc-wmc-memphis-tn/1353">NBC (WMC) Memphis, TN</channel>
+    <channel lang="en" xmltv_id="WMEUCD1.us" site_id="the-u-wmeucd-chicago-il/12512">The U (WMEU-CD) Chicago, IL</channel>
     <channel lang="en" xmltv_id="WMTWDT1.us" site_id="abc-wmtw-auburn-me/98">ABC (WMTW) Auburn, ME</channel>
     <channel lang="en" xmltv_id="WMTWDT2.us" site_id="metv-wmtw2-portland-me/17886">MeTV (WMTW-DT2) Auburn, ME</channel>
     <channel lang="en" xmltv_id="WMURDT1.us" site_id="abc-wmur-manchester-nh/642">ABC (WMUR) Manchester, NH</channel>
@@ -762,14 +699,11 @@
     <channel lang="en" xmltv_id="WNEDDT1.us" site_id="pbs-wned-buffalo-ny/92">PBS (WNED) Buffalo, NY</channel>
     <channel lang="en" xmltv_id="WNETDT1.us" site_id="pbs-wnet-new-york-ny/1774">PBS (WNET) New York, NY</channel>
     <channel lang="en" xmltv_id="WNETDT2.us" site_id="pbs-kids-wnetdt2-new-york-ny/2088">PBS Kids (WNET-DT2) New York, NY</channel>
-    <channel lang="es" xmltv_id="WNETDT3.us" site_id="vme-wnetdt3-new-york-ny/7291">V-Me (WNET-DT3) New York, NY</channel>
     <channel lang="en" xmltv_id="WNetworkEast.ca" site_id="w-wtn-east/64">W (WTN) - East</channel>
     <channel lang="en" xmltv_id="WNJBDT1.us" site_id="nj-pbs-wnjb-new-brunswick-nj/2124">NJ PBS (WNJB) New Brunswick, NJ</channel>
     <channel lang="en" xmltv_id="WNJNDT1.us" site_id="nj-pbs-wnjn-montclair-nj/2574">NJ PBS (WNJN) Montclair, NJ</channel>
     <channel lang="en" xmltv_id="WNJTDT1.us" site_id="nj-pbs-wnjt-trenton-nj/2564">NJ PBS (WNJT) Trenton, NJ</channel>
     <channel lang="en" xmltv_id="WNJTDT2.us" site_id="nhk-world-wnjttv2-trenton-nj/32845">NHK World (WNJT-TV2) Trenton, NJ</channel>
-    <channel lang="es" xmltv_id="WNJUDT1.us" site_id="telemundo-wnju-teterboro-nj/1772">Telemundo (WNJU) Teterboro, NJ</channel>
-    <channel lang="es" xmltv_id="WNJUDT2.us" site_id="telexitos-wnju2-teterboro-nj/10749">TeleXitos (WNJU2) Teterboro, NJ</channel>
     <channel lang="en" xmltv_id="WNMFLD1.us" site_id="infomercials-wnmf-new-york-ny/17860">Infomercials (WNMF) New York, NY</channel>
     <channel lang="en" xmltv_id="WNMFLD2.us" site_id="jewelry-tv-wnmfld2-new-york-ny/17861">Jewelry TV (WNMF-LD2) New York, NY</channel>
     <channel lang="en" xmltv_id="WNMUDT1.us" site_id="pbs-wnmu-marquette-mi/481">PBS (WNMU) Marquette, MI</channel>
@@ -777,7 +711,6 @@
     <channel lang="en" xmltv_id="WNWODT1.us" site_id="nbc-wnwo-toledo-oh/259">NBC (WNWO-TV) Toledo, OH</channel>
     <channel lang="en" xmltv_id="WNXYLD1.us" site_id="cgtn-wnxyld-new-york-ny/16456">CGTN (WNXY-LD) New York, NY</channel>
     <channel lang="en" xmltv_id="WNXYLD2.us" site_id="cctv4-wnxyld2-new-york-ny/16457">CCTV-4 (WNXY-LD2) New York, NY</channel>
-    <channel lang="es" xmltv_id="WNXYLD3.us" site_id="cgtn-spanish-wnxyld3-new-york-ny/16458">CGTN Spanish (WNXY-LD3) New York, NY</channel>
     <channel lang="en" xmltv_id="WNYEDT1.us" site_id="nyc-life-wnyedt1-new-york-ny/10011">NYC Life (WNYE-DT1) New York, NY</channel>
     <channel lang="en" xmltv_id="WNYEDT2.us" site_id="nyc-gov-wnyedt2-new-york-ny/11074">NYC Gov (WNYE-DT2) New York, NY</channel>
     <channel lang="en" xmltv_id="WNYEDT3.us" site_id="cuny-wnyedt3-new-york-ny/11075">CUNY (WNYE-DT3) New York, NY</channel>
@@ -792,9 +725,9 @@
     <channel lang="en" xmltv_id="WNYWDT5.us" site_id="decades-wnyw5-new-york-ny/34342">Decades (WNYW5) New York, NY</channel>
     <channel lang="en" xmltv_id="WNYXLD1.us" site_id="cgtn-wnyxld-new-york-ny/16441">CGTN (WNYX-LD) New York, NY</channel>
     <channel lang="en" xmltv_id="WNYXLD2.us" site_id="cctv4-wnyxld2-new-york-ny/16442">CCTV-4 (WNYX-LD2) New York, NY</channel>
-    <channel lang="es" xmltv_id="WNYXLD3.us" site_id="cgtn-spanish-wnyxld3-new-york-ny/16445">CGTN Spanish (WNYX-LD3) New York, NY</channel>
     <channel lang="en" xmltv_id="WNYXLD4.us" site_id="revn-wnyxld4-new-york-ny/16447">REV&apos;N (WNYX-LD4) New York, NY</channel>
     <channel lang="en" xmltv_id="WNYXLD5.us" site_id="retro-tv-wnyxld5-new-york-ny/17849">Retro TV (WNYX-LD5) New York, NY</channel>
+    <channel lang="en" xmltv_id="WOFLDT1.us" site_id="fox-wofl-orlando-fl/2491">FOX (WOFL-DT1) Orlando, FL</channel>
     <channel lang="en" xmltv_id="WOIDT1.us" site_id="abc-woi-des-moines-ia/1245">ABC (WOI) Des Moines, IA</channel>
     <channel lang="en" xmltv_id="WorldFishingNetwork.us" site_id="wfnworld-fishing-network/2414">World Fishing Network</channel>
     <channel lang="en" xmltv_id="WPBSDT1.us" site_id="pbs-wpbs-watertown-ny/29">PBS (WPBS) Watertown, NY</channel>
@@ -837,8 +770,9 @@
     <channel lang="en" xmltv_id="WPXUDT3.us" site_id="grit-tv-wpxutv3-jacksonville-nc/12104">Grit TV (WPXU-TV3) Jacksonville, NC</channel>
     <channel lang="en" xmltv_id="WPXUDT4.us" site_id="laff-wpxutv4-jacksonville-nc/12225">Laff (WPXU-TV4) Jacksonville, NC</channel>
     <channel lang="en" xmltv_id="WPXUDT5.us" site_id="qvc-wpxutv5-jacksonville-nc/12292">QVC (WPXU-TV5) Jacksonville, NC</channel>
-	<channel lang="en" xmltv_id="WREGDT1.us" site_id="cbs-wreg-memphis-tn/1428">CBS (WREG) Memphis, TN</channel>
-	<channel lang="es" xmltv_id="WRIWCD1.us" site_id="telemundo-wriwca-providence-ri/7308">Telemundo (WRIW-CA) Providence, RI</channel>
+    <channel lang="en" xmltv_id="WRBWDT1.us" site_id="fox-35-plus-wrbw-orlando-fl/2493">My TV 65 / FOX 35 Plus (WRBW-DT1) Orlando, FL</channel>
+    <channel lang="en" xmltv_id="WRDQDT3.us" site_id="telemundo-wrdqdt3-orlando-fl/17603">Telemundo (WRDQ-DT3) Orlando, FL</channel>
+    <channel lang="en" xmltv_id="WREGDT1.us" site_id="cbs-wreg-memphis-tn/1428">CBS (WREG) Memphis, TN</channel>
     <channel lang="en" xmltv_id="WRNNDT2.us" site_id="circle-wrnntv2-new-york/8687">Circle (WRNN-TV2) New York</channel>
     <channel lang="en" xmltv_id="WRNNDT3.us" site_id="canal-de-la-fe-wrnndt3-new-york-ny/11091">Canal de La Fe (WRNN-DT3) New York, NY</channel>
     <channel lang="en" xmltv_id="WRNNDT4.us" site_id="qvc2-wrnntv4-new-york-ny/11092">QVC2 (WRNN-TV4) New York, NY</channel>
@@ -855,7 +789,6 @@
     <channel lang="en" xmltv_id="WTATDT1.us" site_id="fox-wtat-charleston-sc/1097">FOX (WTAT) Charleston, SC</channel>
     <channel lang="en" xmltv_id="WTBYDT1.us" site_id="tbn-wtby-new-york-ny/2575">TBN (WTBY) New York, NY</channel>
     <channel lang="en" xmltv_id="WTBYDT2.us" site_id="smile-wtbytv2-new-york-ny/11093">Smile (WTBY-TV2) New York, NY</channel>
-    <channel lang="es" xmltv_id="WTBYDT3.us" site_id="enlace-wtbytv3-new-york-ny/11094">Enlace (WTBY-TV3) New York, NY</channel>
     <channel lang="en" xmltv_id="WTBYDT4.us" site_id="positiv-wtbytv4-new-york-ny/11095">PosiTiV (WTBY-TV4) New York, NY</channel>
     <channel lang="en" xmltv_id="WTICDT1.us" site_id="fox-wtic-hartford-ct/2061">FOX (WTIC-TV) Hartford, CT</channel>
     <channel lang="en" xmltv_id="WTICDT2.us" site_id="antenna-wtictv2-hartford-ct/9639">Antenna TV (WTIC-TV2) Hartford, CT</channel>
@@ -893,10 +826,8 @@
     <channel lang="en" xmltv_id="WXINDT1.us" site_id="fox-wxin-indianapolis-in/1374">FOX (WXIN) Indianapolis, IN</channel>
     <channel lang="en" xmltv_id="WXNYLD1.us" site_id="cgtn-wxnyld-new-york-ny/11078">CGTN (WXNY-LD) New York, NY</channel>
     <channel lang="en" xmltv_id="WXNYLD2.us" site_id="cctv4-wxnyld2-new-york-ny/16443">CCTV-4 (WXNY-LD2) New York, NY</channel>
-    <channel lang="es" xmltv_id="WXNYLD3.us" site_id="cgtn-spanish-wxnyld3-new-york-ny/16444">CGTN Spanish (WXNY-LD3) New York, NY</channel>
     <channel lang="en" xmltv_id="WXNYLD4.us" site_id="retro-tv-wxnyld4-new-york-ny/16446">Retro TV (WXNY-LD4) New York, NY</channel>
     <channel lang="en" xmltv_id="WXNYLD5.us" site_id="retro-tv-wxnyld5-new-york-ny/17346">Retro TV (WXNY-LD5) New York, NY</channel>
-    <channel lang="es" xmltv_id="WXTVDT1.us" site_id="uni-wxtv-teaneck-nj/1771">UNI (WXTV) Teaneck, NJ</channel>
     <channel lang="en" xmltv_id="WXTVDT2.us" site_id="bounce-wxtvdt2-paterson-nj/16452">Bounce (WXTV-DT2) Paterson, NJ</channel>
     <channel lang="en" xmltv_id="WXTVDT3.us" site_id="twist-wxtvdt3-paterson-nj/16450">Twist (WXTV-DT3) Paterson, NJ</channel>
     <channel lang="en" xmltv_id="WXTVDT4.us" site_id="grit-tv-wxtvdt4-paterson-nj/16451">Grit TV (WXTV-DT4) Paterson, NJ</channel>
@@ -908,11 +839,80 @@
     <channel lang="en" xmltv_id="WZTVDT2.us" site_id="cw-wztvdt2-nashville-tn/15467">CW (WZTV-DT2) Nashville, TN</channel>
     <channel lang="en" xmltv_id="WZTVDT3.us" site_id="antenna-wztv3-nashville-tn/17306">Antenna (WZTV3) Nashville, TN</channel>
     <channel lang="en" xmltv_id="YesNetwork.us" site_id="yes-network/1953">YES Network</channel>
-    <channel lang="fr" xmltv_id="Yoopa.ca" site_id="yoopa/7616">Yoopa</channel>
     <channel lang="en" xmltv_id="YTATV.us" site_id="youtoo-america-network/5463">Youtoo America - Network </channel>
     <channel lang="en" xmltv_id="YTVEast.ca" site_id="ytv-youth-television-east/15">YTV (Youth Television) - East</channel>
     <channel lang="en" xmltv_id="YTVWest.ca" site_id="ytv-youth-television-pacific/1021">YTV (Youth Television) - Pacific</channel>
+    <channel lang="es" xmltv_id="GalavisionWest.us" site_id="galavision-pacific-feed/1573">Galavision West</channel>
+    <channel lang="es" xmltv_id="KMEXDT1.us" site_id="uni-kmex-los-angeles-ca/2602">Univision (KMEX) Los Angeles, CA</channel>
+    <channel lang="es" xmltv_id="KMEXDT2.us" site_id="unimas-kftr-ontario-ca/11261">UniMás (KMEX-DT2) Los Angeles, CA</channel>
+    <channel lang="es" xmltv_id="KVEADT1.us" site_id="telemundo-kvea-los-angeles-ca/2611">Telemundo (KVEA) Los Angeles, CA </channel>
+    <channel lang="es" xmltv_id="TVChile.cl" site_id="tv-chile/2102">TV Chile</channel>
+    <channel lang="es" xmltv_id="UnivisionCanada.ca" site_id="univision-canada/13625">Univision Canada</channel>
+    <channel lang="es" xmltv_id="W20CQD2.us" site_id="esperanza-w20cqd2-hempstead-ny/16437">Esperanza (W20CQ-D2) Hempstead, NY</channel>
+    <channel lang="es" xmltv_id="WASALD1.us" site_id="estrella-wasald-port-jervis-ny/11071">Estrella (WASA-LD) Port Jervis, NY</channel>
+    <channel lang="es" xmltv_id="WATNDT1.us" site_id="abc-watn-memphis-tn/1423">ABC (WATN) Memphis, TN</channel>
+    <channel lang="es" xmltv_id="WFTYDT2.us" site_id="uni-wftydt2-new-york-ny/1962">UniMás (WFTY-DT2) New York, NY</channel>
+    <channel lang="es" xmltv_id="WFTYDT3.us" site_id="gettv-wftydt3-los-angeles-ca/13521">GetTV (WFTY-DT3) Los Angeles, CA</channel>
+    <channel lang="es" xmltv_id="WFUTDT1.us" site_id="unimas-wfut-new-york-ny/1776">UniMás (WFUT) New York, NY</channel>
+    <channel lang="es" xmltv_id="WKOBLD2.us" site_id="daystar-wkobld2-new-york-ny/11083">Daystar (WKOB-LD2) New York, NY</channel>
+    <channel lang="es" xmltv_id="WKOBLD6.us" site_id="estrella-wkobdt6-new-york-ny/16453">Estrella (WKOB-DT6) New York, NY</channel>
+    <channel lang="es" xmltv_id="WMBCDT7.us" site_id="aliento-vision-wmbctv7-newton-nj/16468">Aliento Vision (WMBC-TV7) Newton, NJ</channel>
+    <channel lang="es" xmltv_id="WNETDT3.us" site_id="vme-wnetdt3-new-york-ny/7291">V-Me (WNET-DT3) New York, NY</channel>
+    <channel lang="es" xmltv_id="WNJUDT1.us" site_id="telemundo-wnju-teterboro-nj/1772">Telemundo (WNJU) Teterboro, NJ</channel>
+    <channel lang="es" xmltv_id="WNJUDT2.us" site_id="telexitos-wnju2-teterboro-nj/10749">TeleXitos (WNJU2) Teterboro, NJ</channel>
+    <channel lang="es" xmltv_id="WNXYLD3.us" site_id="cgtn-spanish-wnxyld3-new-york-ny/16458">CGTN Spanish (WNXY-LD3) New York, NY</channel>
+    <channel lang="es" xmltv_id="WNYXLD3.us" site_id="cgtn-spanish-wnyxld3-new-york-ny/16445">CGTN Spanish (WNYX-LD3) New York, NY</channel>
+    <channel lang="es" xmltv_id="WRIWCD1.us" site_id="telemundo-wriwca-providence-ri/7308">Telemundo (WRIW-CA) Providence, RI</channel>
+    <channel lang="es" xmltv_id="WTBYDT3.us" site_id="enlace-wtbytv3-new-york-ny/11094">Enlace (WTBY-TV3) New York, NY</channel>
+    <channel lang="es" xmltv_id="WXNYLD3.us" site_id="cgtn-spanish-wxnyld3-new-york-ny/16444">CGTN Spanish (WXNY-LD3) New York, NY</channel>
+    <channel lang="es" xmltv_id="WXTVDT1.us" site_id="uni-wxtv-teaneck-nj/1771">UNI (WXTV) Teaneck, NJ</channel>
+    <channel lang="fr" xmltv_id="addikTV.ca" site_id="addik-tv/2033">Addik TV</channel>
+    <channel lang="fr" xmltv_id="AMItele.ca" site_id="amitele/13775">AMI-télé</channel>
+    <channel lang="fr" xmltv_id="APTNE.ca" site_id="aptn-east/198">APTN - East</channel>
+    <channel lang="fr" xmltv_id="APTNHD.ca" site_id="aptn-hd/5997">APTN HD</channel>
+    <channel lang="fr" xmltv_id="AssembleenationaleduQuebec.ca" site_id="assemblee-nationale-du-quebec/431">Assemblee nationale du Quebec</channel>
+    <channel lang="fr" xmltv_id="AzMundo.mx" site_id="az-mundo/3998">AZ Mundo</channel>
+    <channel lang="fr" xmltv_id="CanalD.ca" site_id="canal-d/108">Canal D</channel>
+    <channel lang="fr" xmltv_id="CanalM.ca" site_id="canal-m/5955">Canal M</channel>
+    <channel lang="fr" xmltv_id="CanalVie.ca" site_id="canal-vie/307">Canal Vie</channel>
+    <channel lang="fr" xmltv_id="Casa.ca" site_id="casa/5484">CASA</channel>
+    <channel lang="fr" xmltv_id="CBAFTDT.ca" site_id="src-cbaft-moncton-nb/118">SRC (CBAFT) Moncton, NB</channel>
+    <channel lang="fr" xmltv_id="CBFTDT.ca" site_id="src-cbft-montreal-qc/196">SRC (CBFT) Montreal, QC</channel>
+    <channel lang="fr" xmltv_id="CBLFTDT.ca" site_id="src-cblft-toronto-hd/3626">SRC (CBLFT) Toronto HD</channel>
+    <channel lang="fr" xmltv_id="CBUFTDT.ca" site_id="src-cbuft-vancouver-bc/188">SRC (CBUFT) Vancouver, BC</channel>
+    <channel lang="fr" xmltv_id="CFJPDT.ca" site_id="v-cfjp-montreal-qc/301">V (CFJP) Montreal, QC</channel>
+    <channel lang="fr" xmltv_id="CFTMDT.ca" site_id="tva-cftm-montreal/106">TVA (CFTM) Montreal, QC</channel>
+    <channel lang="fr" xmltv_id="Cinepop.ca" site_id="cinepop/2325">Cinépop</channel>
+    <channel lang="fr" xmltv_id="CIVMDT.ca" site_id="telequebec-civm-montreal/1140">Tele-Quebec (CIVM) Montreal</channel>
+    <channel lang="fr" xmltv_id="CPACFrench.ca" site_id="cpac-francais/429">CPAC (Francais)</channel>
+    <channel lang="fr" xmltv_id="Evasion.ca" site_id="canal-evasion/343">Canal Evasion</channel>
+    <channel lang="fr" xmltv_id="FPTV.ca" site_id="fptv-festival-portuguese-tv/2465">FPTV (Festival Portuguese TV)</channel>
+    <channel lang="fr" xmltv_id="Historia.ca" site_id="historia/345">Historia</channel>
+    <channel lang="fr" xmltv_id="IciARTV.ca" site_id="artv/459">ARTV</channel>
+    <channel lang="fr" xmltv_id="IciExplora.ca" site_id="explora/10298">Explora</channel>
+    <channel lang="fr" xmltv_id="IciRDI.ca" site_id="rdi-news/8">RDI (News)</channel>
+    <channel lang="fr" xmltv_id="LaChaineDisney.ca" site_id="la-chaine-disney/5981">La Chaine Disney</channel>
+    <channel lang="fr" xmltv_id="LCN.ca" site_id="lcn/432">LCN</channel>
+    <channel lang="fr" xmltv_id="MeteoMedia.ca" site_id="meteomedia-montreal/5942">Meteo-Media Montreal</channel>
+    <channel lang="fr" xmltv_id="Prise2.ca" site_id="prise-2/2848">Prise 2</channel>
+    <channel lang="fr" xmltv_id="RDS.ca" site_id="rds-reseau-des-sports/47">RDS (Réseau des sports)</channel>
+    <channel lang="fr" xmltv_id="RDS2.ca" site_id="rds-2/9705">RDS 2</channel>
+    <channel lang="fr" xmltv_id="RDSInfo.ca" site_id="rds-info/3889">RDS Info</channel>
+    <channel lang="fr" xmltv_id="SaltPlusLightTelevision.ca" site_id="salt-light/2469">Salt &amp; Light</channel>
+    <channel lang="fr" xmltv_id="SeriesPlus.ca" site_id="series/341">Series +</channel>
+    <channel lang="fr" xmltv_id="SuperEcran1.ca" site_id="super-ecran/57">Super Ecran</channel>
+    <channel lang="fr" xmltv_id="SuperEcran2.ca" site_id="super-ecran-2/362">Super Ecran 2</channel>
+    <channel lang="fr" xmltv_id="SuperEcran3.ca" site_id="super-ecran-3/410">Super Ecran 3</channel>
+    <channel lang="fr" xmltv_id="SuperEcran4.ca" site_id="super-ecran-4/411">Super Ecran 4</channel>
+    <channel lang="fr" xmltv_id="TeletoonFrench.ca" site_id="teletoon-francais/308">TéléTOON - français</channel>
+    <channel lang="fr" xmltv_id="TFO.ca" site_id="tfo-chaine-francaise/10">TFO - Chaine Francaise</channel>
+    <channel lang="fr" xmltv_id="TVASports.ca" site_id="tva-sports/9823">TVA Sports</channel>
+    <channel lang="fr" xmltv_id="VividTVCanada.ca" site_id="vivid-tv-canada-francais/8519">Vivid TV Canada (Français)</channel>
+    <channel lang="fr" xmltv_id="Vrak.ca" site_id="vrak/48">VRAK</channel>
+    <channel lang="fr" xmltv_id="Yoopa.ca" site_id="yoopa/7616">Yoopa</channel>
     <channel lang="fr" xmltv_id="Z.ca" site_id="z/344">Z</channel>
     <channel lang="fr" xmltv_id="Zeste.ca" site_id="zeste/7508">Zeste</channel>
+    <channel lang="hu" xmltv_id="ERTWorldCanada.ca" site_id="ert-world-canada/3419">ERT World (Canada)</channel>
+    <channel lang="it" xmltv_id="MediasetItaliaCanada.ca" site_id="mediaset-italia/8436">Mediaset Italia</channel>
   </channels>
 </site>
