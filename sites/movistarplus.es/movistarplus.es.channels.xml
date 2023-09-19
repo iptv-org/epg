@@ -30,7 +30,6 @@
     <channel lang="es" xmltv_id="CanalCocina.es" site_id="CACOC">Canal Cocina</channel>
     <channel lang="es" xmltv_id="CanalExtremadura.es" site_id="EXTRE">Canal Extremadura</channel>
     <channel lang="es" xmltv_id="CanalExtremaduraSatelite.es" site_id="EXTREM">Canal Extremadura Satélite</channel>
-    <channel lang="es" xmltv_id="FutbolReplay.es" site_id="FUTREP">Canal Fútbol Replay</channel>
     <channel lang="es" xmltv_id="CanalHollywood.es" site_id="HOLLYW">Canal Hollywood España</channel>
     <channel lang="es" xmltv_id="CanalPandaSpain.es" site_id="PANDA">Canal Panda España</channel>
     <channel lang="es" xmltv_id="CanalSUR.us" site_id="CSURHD">Canal Sur</channel>
@@ -38,6 +37,7 @@
     <channel lang="es" xmltv_id="CazayPesca.es" site_id="CAZPES">Caza y Pesca</channel>
     <channel lang="es" xmltv_id="CGTN.cn" site_id="CCTV-E">CGTN Español</channel>
     <channel lang="es" xmltv_id="Clan.es" site_id="CLANTV">Clan TVE</channel>
+    <channel lang="es" xmltv_id="CMMTV.es" site_id="CASMAN">TV Castilla-La Mancha</channel>
     <channel lang="es" xmltv_id="CNBCEurope.uk" site_id="NBC">CNBC Europe</channel>
     <channel lang="es" xmltv_id="CNCWorldEnglish.cn" site_id="CNCWOR">CNC World English</channel>
     <channel lang="es" xmltv_id="CNNInternationalEurope.us" site_id="CNN">CNN International Europe</channel>
@@ -73,9 +73,10 @@
     <channel lang="es" xmltv_id="Eurosport2.fr" site_id="ESP2">Eurosport 2</channel>
     <channel lang="es" xmltv_id="EWTNEspanaLatinAmerica.us" site_id="EWTN">EWTN España - Latinoamérica</channel>
     <channel lang="es" xmltv_id="FactoriadeFiccion.es" site_id="FDFIC">Factoria de Ficción</channel>
-    <channel lang="es" xmltv_id="FoxSpain.es" site_id="FOXGE">Fox España</channel>
     <channel lang="es" xmltv_id="FoxNewsChannel.us" site_id="FOXNWS">Fox News Channel</channel>
+    <channel lang="es" xmltv_id="FoxSpain.es" site_id="FOXGE">Fox España</channel>
     <channel lang="es" xmltv_id="France24Espanol.fr" site_id="FRANCE">France 24 Español</channel>
+    <channel lang="es" xmltv_id="FutbolReplay.es" site_id="FUTREP">Canal Fútbol Replay</channel>
     <channel lang="es" xmltv_id="GaliciaTVEuropa.es" site_id="TVGAL">Galicia TV Europa</channel>
     <channel lang="es" xmltv_id="Gol.es" site_id="GOL">Gol</channel>
     <channel lang="es" xmltv_id="HistoriaSpain.es" site_id="HIST">Historia España</channel>
@@ -90,6 +91,10 @@
     <channel lang="es" xmltv_id="LaResistencia.es" site_id="RESIST">La Resistencia</channel>
     <channel lang="es" xmltv_id="LasEstrellasEuropa.mx" site_id="GALAV">Las Estrellas Europa</channel>
     <channel lang="es" xmltv_id="LaSexta.es" site_id="SEXTA">La Sexta</channel>
+    <channel lang="es" xmltv_id="LigadeCampeones10porMovistarPlus.es" site_id="CHAP10">Movistar Liga de Campeones 10</channel>
+    <channel lang="es" xmltv_id="LigadeCampeones11porMovistarPlus.es" site_id="CHAP11">Movistar Liga de Campeones 11</channel>
+    <channel lang="es" xmltv_id="LigadeCampeones12porMovistarPlus.es" site_id="CHAP12">Movistar Liga de Campeones 12</channel>
+    <channel lang="es" xmltv_id="LigadeCampeones9porMovistarPlus.es" site_id="CHAP9">Movistar Liga de Campeones 9</channel>
     <channel lang="es" xmltv_id="Mega.es" site_id="MEGA">Mega</channel>
     <channel lang="es" xmltv_id="Mezzo.fr" site_id="MEZZO">Mezzo</channel>
     <channel lang="es" xmltv_id="MezzoLiveHD.fr" site_id="MEZOHD">Mezzo Live HD</channel>
@@ -124,9 +129,6 @@
     <channel lang="es" xmltv_id="MovistarLaLigaUHD.es" site_id="MLIGUH">Movistar LaLiga UHD</channel>
     <channel lang="es" xmltv_id="MovistarLigadeCampeones.es" site_id="CHAPIO">Movistar Liga de Campeones</channel>
     <channel lang="es" xmltv_id="MovistarLigadeCampeones1.es" site_id="CHAP1">Movistar Liga de Campeones 1</channel>
-    <channel lang="es" xmltv_id="LigadeCampeones10porMovistarPlus.es" site_id="CHAP10">Movistar Liga de Campeones 10</channel>
-    <channel lang="es" xmltv_id="LigadeCampeones11porMovistarPlus.es" site_id="CHAP11">Movistar Liga de Campeones 11</channel>
-    <channel lang="es" xmltv_id="LigadeCampeones12porMovistarPlus.es" site_id="CHAP12">Movistar Liga de Campeones 12</channel>
     <channel lang="es" xmltv_id="MovistarLigadeCampeones2.es" site_id="CHAP2">Movistar Liga de Campeones 2</channel>
     <channel lang="es" xmltv_id="MovistarLigadeCampeones3.es" site_id="CHAP3">Movistar Liga de Campeones 3</channel>
     <channel lang="es" xmltv_id="MovistarLigadeCampeones4.es" site_id="CHAP4">Movistar Liga de Campeones 4</channel>
@@ -134,9 +136,7 @@
     <channel lang="es" xmltv_id="MovistarLigadeCampeones6.es" site_id="CHAP6">Movistar Liga de Campeones 6</channel>
     <channel lang="es" xmltv_id="MovistarLigadeCampeones7.es" site_id="CHAP7">Movistar Liga de Campeones 7</channel>
     <channel lang="es" xmltv_id="MovistarLigadeCampeones8.es" site_id="CHAP8">Movistar Liga de Campeones 8</channel>
-    <channel lang="es" xmltv_id="LigadeCampeones9porMovistarPlus.es" site_id="CHAP9">Movistar Liga de Campeones 9</channel>
     <channel lang="es" xmltv_id="MovistarLigadeCampeonesUHD.es" site_id="CHAUHD">Movistar Liga de Campeones UHD</channel>
-    <channel lang="es" xmltv_id="OscarsporMovistarPlus.es" site_id="MOSCAR">Movistar Los Oscar</channel>
     <channel lang="es" xmltv_id="MovistarSeries.es" site_id="MV2">Movistar Series</channel>
     <channel lang="es" xmltv_id="MovistarSeries2.es" site_id="CPSER">Movistar  Series 2</channel>
     <channel lang="es" xmltv_id="MTV00s.uk" site_id="VH1">MTV 00s</channel>
@@ -151,6 +151,7 @@
     <channel lang="es" xmltv_id="NickJrSpain.es" site_id="NICKJR">Nick Jr España</channel>
     <channel lang="es" xmltv_id="Nova.es" site_id="NOVA">Nova</channel>
     <channel lang="es" xmltv_id="Odisea.es" site_id="ODISEA">Odisea</channel>
+    <channel lang="es" xmltv_id="OscarsporMovistarPlus.es" site_id="MOSCAR">Movistar Los Oscar</channel>
     <channel lang="es" xmltv_id="ParamountChannelSpain.es" site_id="PARCH">Paramount Channel España</channel>
     <channel lang="es" xmltv_id="PlayboyTVIberia.us" site_id="PBOY">Playboy TV Iberia</channel>
     <channel lang="es" xmltv_id="RCNNuestraTeleInternacional.co" site_id="COLOMB">RCN Nuestra Tele Internacional</channel>
@@ -176,7 +177,6 @@
     <channel lang="es" xmltv_id="TV3CAT.es" site_id="TVC">TV3CAT</channel>
     <channel lang="es" xmltv_id="TV5MondeEurope.fr" site_id="TV5">TV5Monde Europe</channel>
     <channel lang="es" xmltv_id="TVCanaria.es" site_id="CANAR">TV Canaria</channel>
-    <channel lang="es" xmltv_id="TVCastillaLaMancha.es" site_id="CASMAN">TV Castilla-La Mancha</channel>
     <channel lang="es" xmltv_id="TVChile.cl" site_id="CHILE">TV Chile</channel>
     <channel lang="es" xmltv_id="tvG2.es" site_id="TVG2">tvG2</channel>
     <channel lang="es" xmltv_id="TVGEuropa.es" site_id="TVG">TVG Europa</channel>
