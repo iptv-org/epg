@@ -3,6 +3,9 @@ const dayjs = require('dayjs')
 module.exports = {
   site: 'bt.com',
   days: 2,
+  request: {
+    timeout: 30000
+  },
   url: function ({ date, channel }) {
     return `https://voila.metabroadcast.com/4/schedules/${
       channel.site_id
