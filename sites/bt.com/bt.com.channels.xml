@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <site site="bt.com">
   <channels>
+    <!-- <channel lang="en" xmltv_id="" site_id="hsxg">Craft Store TV</channel> -->
+    <!-- <channel lang="en" xmltv_id="" site_id="hsxq">Ideal Extra</channel> -->
     <channel lang="en" xmltv_id="4seven.uk" site_id="hswj">4seven</channel>
     <channel lang="en" xmltv_id="5Action.uk" site_id="hsvx">5 Action</channel>
     <channel lang="en" xmltv_id="5Select.uk" site_id="ht94">5 Select</channel>
@@ -10,10 +12,10 @@
     <channel lang="en" xmltv_id="BBCAlba.uk" site_id="hs6q">BBC Alba</channel>
     <channel lang="en" xmltv_id="BBCFour.uk" site_id="hst5">BBC Four</channel>
     <channel lang="en" xmltv_id="BBCNews.uk" site_id="hsx4">BBC News</channel>
-    <channel lang="en" xmltv_id="BBCOneEngland.uk" site_id="hsxv">BBC One HD</channel>
     <channel lang="en" xmltv_id="BBCOneCambridgeshire.uk" site_id="hs56">BBC One Cambridgeshire</channel>
     <channel lang="en" xmltv_id="BBCOneChannelIslands.uk" site_id="hs5y">BBC One Channel Islands</channel>
     <channel lang="en" xmltv_id="BBCOneEastMidlands.uk" site_id="hs6h">BBC One East Midlands</channel>
+    <channel lang="en" xmltv_id="BBCOneEngland.uk" site_id="hsxv">BBC One HD</channel>
     <channel lang="en" xmltv_id="BBCOneLondon.uk" site_id="hs44">BBC One London</channel>
     <channel lang="en" xmltv_id="BBCOneNorthEastCumbria.uk" site_id="hs2t">BBC One North East &amp; Cumbria</channel>
     <channel lang="en" xmltv_id="BBCOneNorthWest.uk" site_id="hs5k">BBC One North West</channel>
@@ -32,19 +34,6 @@
     <channel lang="en" xmltv_id="BBCTwoWales.uk" site_id="hs4k">BBC Two Wales</channel>
     <channel lang="en" xmltv_id="Blaze.uk" site_id="hswv">Blaze UK</channel>
     <channel lang="en" xmltv_id="BoomerangUK.uk" site_id="hstb">Boomerang UK</channel>
-    <channel lang="en" xmltv_id="BTSport1.uk" site_id="hspc">BT Sport 1</channel>
-    <channel lang="en" xmltv_id="BTSport10.uk" site_id="hsp6">BT Sport 10</channel>
-    <channel lang="en" xmltv_id="BTSport2.uk" site_id="hspd">BT Sport 2</channel>
-    <channel lang="en" xmltv_id="BTSport3.uk" site_id="hspf">BT Sport 3</channel>
-    <channel lang="en" xmltv_id="BTSport4.uk" site_id="hspg">BT Sport 4</channel>
-    <channel lang="en" xmltv_id="BTSport5.uk" site_id="hspy">BT Sport 5</channel>
-    <channel lang="en" xmltv_id="BTSport6.uk" site_id="hspz">BT Sport 6</channel>
-    <channel lang="en" xmltv_id="BTSport7.uk" site_id="hsp2">BT Sport 7</channel>
-    <channel lang="en" xmltv_id="BTSport8.uk" site_id="hsp4">BT Sport 8</channel>
-    <channel lang="en" xmltv_id="BTSport9.uk" site_id="hsp5">BT Sport 9</channel>
-    <channel lang="en" xmltv_id="BTSportBoxOffice.uk" site_id="hsqs">BT Sport Box Office UK</channel>
-    <channel lang="en" xmltv_id="BTSportBoxOffice2.uk" site_id="hsqt">BT Sport Box Office 2 UK</channel>
-    <channel lang="en" xmltv_id="BTSportUltimate.uk" site_id="hspr">BT Sport Ultimate</channel>
     <channel lang="en" xmltv_id="CartoonitoUK.uk" site_id="hss8">Cartoonito UK</channel>
     <channel lang="en" xmltv_id="CartoonNetworkUK.uk" site_id="hss2">Cartoon Network UK</channel>
     <channel lang="en" xmltv_id="CBBC.uk" site_id="hsyd">CBBC</channel>
@@ -59,21 +48,19 @@
     <channel lang="en" xmltv_id="CITV.uk" site_id="hsyc">CITV</channel>
     <channel lang="en" xmltv_id="ClublandTV.uk" site_id="hs8s">Clubland TV</channel>
     <channel lang="en" xmltv_id="ComedyCentralUK.uk" site_id="hsrs">Comedy Central UK</channel>
-    <!-- <channel lang="en" xmltv_id="" site_id="hsxg">Craft Store TV</channel> -->
     <channel lang="en" xmltv_id="CreateandCraft.uk" site_id="hsxr">Create and Craft</channel>
-    <channel lang="en" xmltv_id="Davejavu.uk" site_id="hsxb">Dave ja vu</channel>
     <channel lang="en" xmltv_id="Dave.uk" site_id="hsvh">Dave UK</channel>
+    <channel lang="en" xmltv_id="Davejavu.uk" site_id="hsxb">Dave ja vu</channel>
     <channel lang="en" xmltv_id="DMAXUK.uk" site_id="hsv6">DMAX UK</channel>
     <channel lang="en" xmltv_id="Drama.uk" site_id="hsvj">Drama UK</channel>
-    <channel lang="en" xmltv_id="E4Extra.uk" site_id="hsvv">E4 Extra</channel>
     <channel lang="en" xmltv_id="E4.uk" site_id="hs4s">E4 UK</channel>
+    <channel lang="en" xmltv_id="E4Extra.uk" site_id="hsvv">E4 Extra</channel>
     <channel lang="en" xmltv_id="E4Plus1.uk" site_id="hsvt">E4+1</channel>
     <channel lang="en" xmltv_id="Eurosport1UK.uk" site_id="hspt">Eurosport 1 UK</channel>
     <channel lang="en" xmltv_id="Eurosport2UK.uk" site_id="hspv">Eurosport 2 UK</channel>
     <channel lang="en" xmltv_id="Film4.uk" site_id="hsvb">Film 4 UK</channel>
     <channel lang="en" xmltv_id="Film4Plus1.uk" site_id="hswg">Film 4 UK +1</channel>
     <channel lang="en" xmltv_id="FoodNetworkUK.uk" site_id="hswb">Food Network UK</channel>
-    <channel lang="en" xmltv_id="ViaplayXtra.uk" site_id="hsww">Viaplay Xtra</channel>
     <channel lang="en" xmltv_id="GBNews.uk" site_id="ht7w">GB News</channel>
     <channel lang="en" xmltv_id="GemsTV.uk" site_id="hswd">Gems TV</channel>
     <channel lang="en" xmltv_id="Gold.uk" site_id="hsrr">Gold HD</channel>
@@ -85,8 +72,6 @@
     <channel lang="en" xmltv_id="GreatTV.uk" site_id="hswk">Great! TV</channel>
     <channel lang="en" xmltv_id="GreatTVPlus1.uk" site_id="hs8p">Great! TV +1</channel>
     <channel lang="en" xmltv_id="HGTVUK.uk" site_id="hswc">HGTV UK</channel>
-    <channel lang="en" xmltv_id="Legend.uk" site_id="hsw2">Horror Channel UK</channel>
-    <!-- <channel lang="en" xmltv_id="" site_id="hsxq">Ideal Extra</channel> -->
     <channel lang="en" xmltv_id="IdealWorldTV.uk" site_id="hsvm">Ideal World</channel>
     <channel lang="en" xmltv_id="ITV1.uk" site_id="hs2m">ITV</channel>
     <channel lang="en" xmltv_id="ITV2.uk" site_id="hst2">ITV 2</channel>
@@ -97,6 +82,7 @@
     <channel lang="en" xmltv_id="ITV4Plus1.uk" site_id="hsws">ITV 4 +1</channel>
     <channel lang="en" xmltv_id="ITVBe.uk" site_id="hs52">ITV Be</channel>
     <channel lang="en" xmltv_id="JewelleryMaker.uk" site_id="hsw5">Jewellery Maker</channel>
+    <channel lang="en" xmltv_id="Legend.uk" site_id="hsw2">Horror Channel UK</channel>
     <channel lang="en" xmltv_id="LFCTV.uk" site_id="hs8k">LFC TV</channel>
     <channel lang="en" xmltv_id="More4.uk" site_id="hsvg">More 4 UK</channel>
     <channel lang="en" xmltv_id="More4Plus1.uk" site_id="hsxh">More4+1</channel>
@@ -162,7 +148,21 @@
     <channel lang="en" xmltv_id="TBNUK.uk" site_id="hswx">TBN UK</channel>
     <channel lang="en" xmltv_id="TinyPop.uk" site_id="hsyh">Tiny Pop</channel>
     <channel lang="en" xmltv_id="TJC.uk" site_id="hswm">TJC</channel>
+    <channel lang="en" xmltv_id="TNTSports1.uk" site_id="hspc">TNT Sports 1</channel>
+    <channel lang="en" xmltv_id="TNTSports10.uk" site_id="hsp6">TNT Sports 10</channel>
+    <channel lang="en" xmltv_id="TNTSports2.uk" site_id="hspd">TNT Sports 2</channel>
+    <channel lang="en" xmltv_id="TNTSports3.uk" site_id="hspf">TNT Sports 3</channel>
+    <channel lang="en" xmltv_id="TNTSports4.uk" site_id="hspg">TNT Sports 4</channel>
+    <channel lang="en" xmltv_id="TNTSports5.uk" site_id="hspy">TNT Sports 5</channel>
+    <channel lang="en" xmltv_id="TNTSports6.uk" site_id="hspz">TNT Sports 6</channel>
+    <channel lang="en" xmltv_id="TNTSports7.uk" site_id="hsp2">TNT Sports 7</channel>
+    <channel lang="en" xmltv_id="TNTSports8.uk" site_id="hsp4">TNT Sports 8</channel>
+    <channel lang="en" xmltv_id="TNTSports9.uk" site_id="hsp5">TNT Sports 9</channel>
+    <channel lang="en" xmltv_id="TNTSportsBoxOffice.uk" site_id="hsqs">TNT Sports Box Office UK</channel>
+    <channel lang="en" xmltv_id="TNTSportsBoxOffice2.uk" site_id="hsqt">TNT Sports Box Office 2 UK</channel>
+    <channel lang="en" xmltv_id="TNTSportsUltimate.uk" site_id="hspr">TNT Sports Ultimate</channel>
     <channel lang="en" xmltv_id="TogetherTV.uk" site_id="hsxj">Together TV</channel>
+    <channel lang="en" xmltv_id="ViaplayXtra.uk" site_id="hsww">Viaplay Xtra</channel>
     <channel lang="en" xmltv_id="XpandedTV.uk" site_id="hsyv">Xpanded TV</channel>
     <channel lang="en" xmltv_id="Yesterday.uk" site_id="hsvq">Yesterday</channel>
     <channel lang="en" xmltv_id="YesterdayPlus1.uk" site_id="hsw7">Yesterday+1</channel>
