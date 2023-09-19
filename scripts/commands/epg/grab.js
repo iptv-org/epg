@@ -16,6 +16,7 @@ program
   .requiredOption('-s, --site <name>', 'Name of the site to parse')
   .option('-l, --lang <code>', 'Filter channels by language (ISO 639-2 code)')
   .option('-o, --output <path>', 'Path to output file')
+  .option('--days <days>', 'Override the number of days for which the program will be loaded')
   .option('--cron <expression>', 'Schedule a script run')
   .option('--gzip', 'Create a compressed version of the guide as well', false)
   .parse(process.argv)
@@ -123,13 +124,14 @@ async function createQueue(channelsPath, config) {
   await api.channels.load().catch(logger.error)
   const files = await file.list(channelsPath).catch(logger.error)
   const utcDate = date.getUTC(CURR_DATE)
+  const days = options.days ? parseInt(options.days) : config.days
   for (const filepath of files) {
     logger.info(`  loading "${filepath}"...`)
     try {
       const dir = file.dirname(filepath)
       const { channels } = await parser.parseChannels(filepath)
       const filename = file.basename(filepath)
-      const dates = Array.from({ length: config.days }, (_, i) => utcDate.add(i, 'd'))
+      const dates = Array.from({ length: days }, (_, i) => utcDate.add(i, 'd'))
       for (const channel of channels) {
         if (!channel.site || !channel.xmltv_id) continue
         if (options.lang && channel.lang !== options.lang) continue
@@ -194,8 +196,8 @@ async function save(template, parsedChannels, programs = []) {
       output.programs.push(new Program(program, channel))
     }
 
-    output.channels = _.sortBy(output.channels, 'id')
-    output.channels = _.uniqBy(output.channels, 'id')
+    output.channels = _.sortBy(output.channels, 'xmltv_id')
+    output.channels = _.uniqBy(output.channels, 'xmltv_id')
 
     output.programs = _.sortBy(output.programs, ['channel', 'start'])
     output.programs = _.uniqBy(output.programs, p => p.channel + p.start)
