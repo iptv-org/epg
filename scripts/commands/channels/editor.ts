@@ -9,12 +9,12 @@ import inquirer, { QuestionCollection } from 'inquirer'
 
 program
   .argument('<filepath>', 'Path to *.channels.xml file to edit')
-  .option('-c, --country <name>', 'Source country', 'us')
+  .option('-c, --country <name>', 'Default country (ISO 3166 code)', 'US')
   .parse(process.argv)
 
 const filepath = program.args[0]
 const programOptions = program.opts()
-const defaultCountry = programOptions.country
+const defaultCountry = programOptions.country.toLowerCase()
 const newLabel = ` [new]`
 
 let site: string
