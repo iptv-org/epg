@@ -1,5 +1,5 @@
 // npm run channels:parse -- --config=./sites/cgates.lt/cgates.lt.config.js --output=./sites/cgates.lt/cgates.lt.channels.xml
-// npx epg-grabber --config=sites/cgates.lt/cgates.lt.config.js --channels=sites/cgates.lt/cgates.lt.channels.xml --output=guide.xml --days=2
+// npm run grab -- --site=cgates.lt
 
 const { parser, url } = require('./cgates.lt.config.js')
 const fs = require('fs')

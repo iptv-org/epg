@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/arianatelevision.com/arianatelevision.com.config.js --channels=sites/arianatelevision.com/arianatelevision.com.channels.xml --output=guide.xml
+// npm run grab -- --site=arianatelevision.com
 
 const { parser, url } = require('./arianatelevision.com.config.js')
 const dayjs = require('dayjs')
@@ -18,7 +18,8 @@ it('can generate valid url', () => {
 })
 
 it('can parse response', () => {
-  const content = `<!DOCTYPE html><html><head></head><body><textarea data-jtrt-table-id="508" id="jtrt_table_settings_508" cols="30" rows="10">[[["Start","Saturday","Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","",""],["7:00","City Report","ICC T20 Highlights","ICC T20 Highlights","ICC T20 Highlights","ICC T20 Highlights","ICC T20 Highlights","ICC T20 Highlights","",""],["7:30","ICC T20 Highlights","Sport ","Sport ","Sport ","Sport ","Sport ","Sport ","",""],["15:00","ICC T20 World Cup","ICC T20 World Cup","ICC T20 World Cup","ICC T20 World Cup","ICC T20 World Cup","ICC T20 World Cup","ICC T20 World Cup","",""],["6:30","Quran and Hadis ","Falah","Falah","Falah","Falah","Falah","Falah","",""],["","\\n","","","","","","","",""]]]</textarea></body></html>`
+  const content =
+    '<!DOCTYPE html><html><head></head><body><textarea data-jtrt-table-id="508" id="jtrt_table_settings_508" cols="30" rows="10">[[["Start","Saturday","Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","",""],["7:00","City Report","ICC T20 Highlights","ICC T20 Highlights","ICC T20 Highlights","ICC T20 Highlights","ICC T20 Highlights","ICC T20 Highlights","",""],["7:30","ICC T20 Highlights","Sport ","Sport ","Sport ","Sport ","Sport ","Sport ","",""],["15:00","ICC T20 World Cup","ICC T20 World Cup","ICC T20 World Cup","ICC T20 World Cup","ICC T20 World Cup","ICC T20 World Cup","ICC T20 World Cup","",""],["6:30","Quran and Hadis ","Falah","Falah","Falah","Falah","Falah","Falah","",""],["","\\n","","","","","","","",""]]]</textarea></body></html>'
   const result = parser({ content, date }).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
@@ -29,22 +30,22 @@ it('can parse response', () => {
     {
       start: '2021-11-27T02:30:00.000Z',
       stop: '2021-11-27T03:00:00.000Z',
-      title: `City Report`
+      title: 'City Report'
     },
     {
       start: '2021-11-27T03:00:00.000Z',
       stop: '2021-11-27T10:30:00.000Z',
-      title: `ICC T20 Highlights`
+      title: 'ICC T20 Highlights'
     },
     {
       start: '2021-11-27T10:30:00.000Z',
       stop: '2021-11-28T02:00:00.000Z',
-      title: `ICC T20 World Cup`
+      title: 'ICC T20 World Cup'
     },
     {
       start: '2021-11-28T02:00:00.000Z',
       stop: '2021-11-28T02:30:00.000Z',
-      title: `Quran and Hadis`
+      title: 'Quran and Hadis'
     }
   ])
 })
@@ -53,7 +54,8 @@ it('can handle empty guide', () => {
   const result = parser({
     date,
     channel,
-    content: `<!DOCTYPE html><html><head></head><body><textarea data-jtrt-table-id="508" id="jtrt_table_settings_508" cols="30" rows="10"></textarea></body></html>`
+    content:
+      '<!DOCTYPE html><html><head></head><body><textarea data-jtrt-table-id="508" id="jtrt_table_settings_508" cols="30" rows="10"></textarea></body></html>'
   })
   expect(result).toMatchObject([])
 })

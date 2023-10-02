@@ -66,7 +66,6 @@ module.exports = {
       gm: 'https://secure-webtv-static.canal-plus.com/metadata/cpafr/gm/all/v2.2/globalchannels.json',
       gn: 'https://secure-webtv-static.canal-plus.com/metadata/cpafr/gn/all/v2.2/globalchannels.json',
       gp: 'https://secure-webtv-static.canal-plus.com/metadata/cpafr/gp/all/v2.2/globalchannels.json',
-      gp: 'https://secure-webtv-static.canal-plus.com/metadata/cpant/gp/all/v2.2/globalchannels.json',
       gw: 'https://secure-webtv-static.canal-plus.com/metadata/cpafr/gw/all/v2.2/globalchannels.json',
       mf: 'https://secure-webtv-static.canal-plus.com/metadata/cpant/mf/all/v2.2/globalchannels.json',
       mg: 'https://secure-webtv-static.canal-plus.com/metadata/cpafr/mg/all/v2.2/globalchannels.json',

@@ -7,9 +7,9 @@ const customParseFormat = require('dayjs/plugin/customParseFormat')
 dayjs.extend(utc)
 dayjs.extend(customParseFormat)
 
+// ERR: certificate has expired
 module.exports = {
   site: 'guide.dstv.com',
-  skip: true, // NOTE: website is down (HTTP Server Error 503)
   days: 2,
   request: {
     cache: {
@@ -24,9 +24,9 @@ module.exports = {
       'YYYY-MM-DD'
     )}`
   },
-  parser({ content, date, channel, cached }) {
+  parser({ content, date, channel }) {
     const programs = []
-    const items = parseItems(content, date, channel)
+    const items = parseItems(content, channel)
     items.forEach(item => {
       const prev = programs[programs.length - 1]
       let start = parseStart(item, date)
@@ -70,13 +70,13 @@ module.exports = {
 }
 
 function parseStart(item, date) {
-  time = `${date.format('MM/DD/YYYY')} ${item.time}`
+  const time = `${date.format('MM/DD/YYYY')} ${item.time}`
 
   return dayjs.utc(time, 'MM/DD/YYYY HH:mm')
 }
 
-function parseItems(content, date, channel) {
-  const [_, channelTag] = channel.site_id.split('#')
+function parseItems(content, channel) {
+  const [, channelTag] = channel.site_id.split('#')
   const data = JSON.parse(content)
   const html = data[channelTag]
   if (!html) return []

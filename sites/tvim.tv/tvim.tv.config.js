@@ -8,7 +8,7 @@ module.exports = {
       channel.site_id
     }&server_time=true`
   },
-  parser: function ({ content, channel, date }) {
+  parser: function ({ content }) {
     let programs = []
     const items = parseItems(content)
     items.forEach(item => {
@@ -36,7 +36,7 @@ function parseStop(item) {
   return dayjs.unix(item.end_utc)
 }
 
-function parseItems(content, channel) {
+function parseItems(content) {
   const parsed = JSON.parse(content)
 
   return parsed.data.prog || []

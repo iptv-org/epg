@@ -8,7 +8,6 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'sjonvarp.is',
-  skip: true, // NOTE: there is no program on the website
   days: 2,
   url: function ({ channel, date }) {
     return `http://www.sjonvarp.is/index.php?Tm=%3F&p=idag&c=${channel.site_id}&y=${date.format(

@@ -30,8 +30,6 @@ module.exports = {
       const programId = parseProgramId($item)
       const details = await loadProgramDetails(programId)
       if (!details) continue
-      const start = parseStart(details)
-      const stop = parseStop(details)
       programs.push({
         title: details.main_title,
         description: details.short_argument,

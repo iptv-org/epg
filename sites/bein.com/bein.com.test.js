@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/bein.com/bein.com.config.js --channels=sites/bein.com/bein.com.channels.xml --output=guide.xml
+// npm run grab -- --site=bein.com
 
 const fs = require('fs')
 const path = require('path')

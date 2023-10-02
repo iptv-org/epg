@@ -49,7 +49,7 @@ function parseIcon($item) {
     'background-image'
   )
   if (!backgroundImage) return null
-  const [_, relativePath] = backgroundImage.match(/url\((.*)\)/) || [null, null]
+  const [, relativePath] = backgroundImage.match(/url\((.*)\)/) || [null, null]
 
   return relativePath ? `https://www.9tv.co.il${relativePath}` : null
 }

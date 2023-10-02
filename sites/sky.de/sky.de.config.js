@@ -3,14 +3,14 @@ const dayjs = require('dayjs')
 module.exports = {
   site: 'sky.de',
   days: 2,
-  url: `https://www.sky.de/sgtvg/service/getBroadcastsForGrid`,
+  url: 'https://www.sky.de/sgtvg/service/getBroadcastsForGrid',
   request: {
     method: 'POST',
     headers: {
-        'accept-language': 'en-GB',
-        'accept-encoding': 'gzip, deflate, br',
-        accept: 'application/json'
-      },
+      'accept-language': 'en-GB',
+      'accept-encoding': 'gzip, deflate, br',
+      accept: 'application/json'
+    },
     data: function ({ channel, date }) {
       return {
         cil: [channel.site_id],

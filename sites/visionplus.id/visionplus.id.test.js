@@ -1,10 +1,9 @@
 // npm run channels:parse -- --config=./sites/visionplus.id/visionplus.id.config.js --output=./sites/visionplus.id/visionplus.id.channels.xml
-// npx epg-grabber --config=sites/visionplus.id/visionplus.id.config.js --channels=sites/visionplus.id/visionplus.id.channels.xml --output=guide.xml
+// npm run grab -- --site=visionplus.id
 
 const { parser, url, request } = require('./visionplus.id.config.js')
 const fs = require('fs')
 const path = require('path')
-const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -46,7 +45,7 @@ it('can parse response', () => {
     start: '2023-06-29T18:15:00.000Z',
     stop: '2023-06-29T19:00:00.000Z',
     title: 'Hafalan Shalat Delisa',
-    description: ``
+    description: ''
   })
 
   expect(results[17]).toMatchObject({

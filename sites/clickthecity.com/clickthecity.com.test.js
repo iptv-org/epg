@@ -1,5 +1,5 @@
 // npm run channels:parse -- --config=./sites/clickthecity.com/clickthecity.com.config.js --output=./sites/clickthecity.com/clickthecity.com.channels.xml
-// npx epg-grabber --config=sites/clickthecity.com/clickthecity.com.config.js --channels=sites/clickthecity.com/clickthecity.com.channels.xml --output=guide.xml
+// npm run grab -- --site=clickthecity.com
 
 const { parser, url, request } = require('./clickthecity.com.config.js')
 const fs = require('fs')
@@ -49,13 +49,13 @@ it('can parse response', () => {
   expect(results[0]).toMatchObject({
     start: '2023-06-11T21:00:00.000Z',
     stop: '2023-06-11T22:00:00.000Z',
-    title: `Word Of God`
+    title: 'Word Of God'
   })
 
   expect(results[19]).toMatchObject({
     start: '2023-06-12T15:30:00.000Z',
     stop: '2023-06-12T16:00:00.000Z',
-    title: `La Suerte De Loli`
+    title: 'La Suerte De Loli'
   })
 })
 
@@ -63,7 +63,8 @@ it('can handle empty guide', () => {
   const result = parser({
     date,
     channel,
-    content: `<!DOCTYPE html><html class="html" lang="en-US" prefix="og: https://ogp.me/ns#"><head></head><body></body></html>`
+    content:
+      '<!DOCTYPE html><html class="html" lang="en-US" prefix="og: https://ogp.me/ns#"><head></head><body></body></html>'
   })
   expect(result).toMatchObject([])
 })

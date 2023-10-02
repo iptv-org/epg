@@ -1,10 +1,9 @@
 // npm run channels:parse -- --config=./sites/plex.tv/plex.tv.config.js --output=./sites/plex.tv/plex.tv.channels.xml
-// npx epg-grabber --config=sites/plex.tv/plex.tv.config.js --channels=sites/plex.tv/plex.tv.channels.xml --output=guide.xml --days=2
+// npm run grab -- --site=plex.tv
 
 const { parser, url, request } = require('./plex.tv.config.js')
 const fs = require('fs')
 const path = require('path')
-const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')

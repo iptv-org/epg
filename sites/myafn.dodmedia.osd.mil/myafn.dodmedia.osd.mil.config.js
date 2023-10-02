@@ -40,7 +40,7 @@ module.exports = {
   },
   async channels() {
     const data = await axios
-      .get(`https://v3.myafn.dodmedia.osd.mil/api/json/32/channels.json`)
+      .get('https://v3.myafn.dodmedia.osd.mil/api/json/32/channels.json')
       .then(r => r.data)
       .catch(console.log)
 
@@ -51,7 +51,7 @@ module.exports = {
   }
 }
 
-function parseStart(item, date) {
+function parseStart(item) {
   return dayjs.utc(item.e, 'YYYY,M,D,H,m,s,0').add(1, 'month')
 }
 

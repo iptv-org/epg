@@ -37,7 +37,7 @@ module.exports = {
   },
   async channels() {
     const data = await axios
-      .get(`https://entertainment.ie/tv/all-channels/`)
+      .get('https://entertainment.ie/tv/all-channels/')
       .then(r => r.data)
       .catch(console.log)
     const $ = cheerio.load(data)
@@ -73,7 +73,7 @@ function parseCategories($item) {
 
 function parseStart($item, date) {
   let d = $item('.text-holder > .btn-hold > .btn-wrap > a.btn-share').data('time')
-  let [_, time] = d ? d.split(', ') : [null, null]
+  let [, time] = d ? d.split(', ') : [null, null]
 
   return time
     ? DateTime.fromFormat(`${date.format('YYYY-MM-DD')} ${time}`, 'yyyy-MM-dd HH:mm', {
@@ -91,5 +91,5 @@ function parseDuration($item) {
 function parseItems(content) {
   const $ = cheerio.load(content)
 
-  return $(`.info-list > li`).toArray()
+  return $('.info-list > li').toArray()
 }

@@ -74,7 +74,7 @@ function buildQuery(site_id, date) {
   const query = {
     datum: date.format('YYYY-MM-DD'),
     kanal: site_id,
-    callback: `cb`
+    callback: 'cb'
   }
 
   const a = query.datum + query.kanal

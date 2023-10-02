@@ -1,5 +1,5 @@
 // npm run channels:parse -- --config=./sites/ziggogo.tv/ziggogo.tv.config.js --output=./sites/ziggogo.tv/ziggogo.tv.channels.xml
-// npx epg-grabber --config=sites/ziggogo.tv/ziggogo.tv.config.js --channels=sites/ziggogo.tv/ziggogo.tv.channels.xml --output=guide.xml --days=2
+// npm run grab -- --site=ziggogo.tv
 
 const { parser, url } = require('./ziggogo.tv.config.js')
 const fs = require('fs')
@@ -92,7 +92,7 @@ it('can parse response', async () => {
 })
 
 it('can handle empty guide', async () => {
-  let results = await parser({ content: ``, channel, date })
+  let results = await parser({ content: '', channel, date })
 
   expect(results).toMatchObject([])
 })

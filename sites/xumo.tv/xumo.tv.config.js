@@ -1,7 +1,7 @@
 const axios = require('axios')
 const dayjs = require('dayjs')
 
-const API_ENDPOINT = `https://valencia-app-mds.xumo.com/v2`
+const API_ENDPOINT = 'https://valencia-app-mds.xumo.com/v2'
 
 const client = axios.create({
   baseURL: API_ENDPOINT,
@@ -62,7 +62,7 @@ module.exports = {
   async channels() {
     const channels = await axios
       .get(
-        `https://valencia-app-mds.xumo.com/v2/channels/list/10006.json?sort=hybrid&geoId=unknown`
+        'https://valencia-app-mds.xumo.com/v2/channels/list/10006.json?sort=hybrid&geoId=unknown'
       )
       .then(r => r.data.channel.item)
       .catch(console.log)
@@ -116,7 +116,7 @@ function parseStop(item) {
 
 function parseItems(content, channel) {
   if (!content) return []
-  const [_, channelId] = channel.site_id.split('#')
+  const [, channelId] = channel.site_id.split('#')
   const data = JSON.parse(content)
   if (!data || !Array.isArray(data.channels)) return []
   const channelData = data.channels.find(c => c.channelId == channelId)

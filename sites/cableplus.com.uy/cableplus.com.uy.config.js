@@ -115,14 +115,14 @@ function parseItems(content, date) {
 
   let featuredItems = $('.vista-pc > .programacion-fila > .channel-programa')
     .filter(function () {
-      return $(this).find(`.grid_fecha_hora`).text().indexOf(date.format('DD-MM')) > -1
+      return $(this).find('.grid_fecha_hora').text().indexOf(date.format('DD-MM')) > -1
     })
     .toArray()
-  let otherItems = $(`#owl-pc > .item-program`)
+  let otherItems = $('#owl-pc > .item-program')
     .filter(function () {
       return (
         $(this)
-          .find(`.evento_titulo > .horario > p.fechaHora`)
+          .find('.evento_titulo > .horario > p.fechaHora')
           .text()
           .indexOf(date.format('DD/MM')) > -1
       )

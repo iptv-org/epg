@@ -10,8 +10,7 @@ dayjs.extend(customParseFormat)
 module.exports = {
   site: 'rotana.net',
   days: 2,
-  skip: true, // NOTE: there is no program for the current date on the site
-  url({ channel, date }) {
+  url({ channel }) {
     return `https://rotana.net/triAssets/uploads/2020/11/${channel.site_id}.csv`
   },
   request: {
@@ -34,10 +33,6 @@ module.exports = {
 
     return programs
   }
-}
-
-function parseIcon(item) {
-  return item.pictures && item.pictures.length ? item.pictures[0].href : null
 }
 
 function parseStart(item) {

@@ -52,7 +52,7 @@ module.exports = {
   },
   async channels() {
     const data = await axios
-      .get(`https://tv-programme.telecablesat.fr/`)
+      .get('https://tv-programme.telecablesat.fr/')
       .then(r => r.data)
       .catch(console.log)
 
@@ -64,7 +64,7 @@ module.exports = {
     return items.map(item => {
       const $item = cheerio.load(item)
       const link = $item('*').attr('href')
-      const [_, site_id] = link.match(/\/chaine\/(\d+)\//) || [null, null]
+      const [, site_id] = link.match(/\/chaine\/(\d+)\//) || [null, null]
       const name = $item('*').text().trim()
       return {
         lang: 'fr',
@@ -96,15 +96,6 @@ function parseTitle($item) {
 
 function parseDescription($item) {
   return $item('div.item-content > p').text()
-}
-
-async function loadProgramDetails(item) {
-  if (!item.onClick || !item.onClick.URLPage) return {}
-
-  return await axios
-    .get(item.onClick.URLPage)
-    .then(r => r.data)
-    .catch(console.error)
 }
 
 function parseItems(content) {

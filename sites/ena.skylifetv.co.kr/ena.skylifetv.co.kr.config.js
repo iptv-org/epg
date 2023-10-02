@@ -61,7 +61,7 @@ function parseStart($item, date) {
   return dayjs.tz(`${date.format('YYYY-MM-DD')} ${time}`, 'YYYY-MM-DD HH:mm', 'Asia/Seoul')
 }
 
-function parseItems(content, channel, date) {
+function parseItems(content) {
   const $ = cheerio.load(content)
 
   return $('.tbl_schedule > tbody > tr').toArray()

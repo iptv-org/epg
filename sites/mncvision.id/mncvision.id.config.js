@@ -88,14 +88,14 @@ module.exports = {
 
 function parseSeason($item) {
   const title = parseTitle($item)
-  const [_, season] = title.match(/ S(\d+)/) || [null, null]
+  const [, season] = title.match(/ S(\d+)/) || [null, null]
 
   return season ? parseInt(season) : null
 }
 
 function parseEpisode($item) {
   const title = parseTitle($item)
-  const [_, episode] = title.match(/ Ep (\d+)/) || [null, null]
+  const [, episode] = title.match(/ Ep (\d+)/) || [null, null]
 
   return episode ? parseInt(episode) : null
 }
@@ -158,7 +158,7 @@ function loadLangCookies(channel) {
   return axios
     .get(url, { timeout: 30000 })
     .then(r => parseCookies(r.headers))
-    .catch(err => null)
+    .catch(error => console.log(error.message))
 }
 
 async function loadDescription($item, cookies) {
@@ -170,7 +170,7 @@ async function loadDescription($item, cookies) {
       timeout: 30000
     })
     .then(r => r.data)
-    .catch(err => null)
+    .catch(error => console.log(error.message))
   if (!content) return null
 
   const $page = cheerio.load(content)

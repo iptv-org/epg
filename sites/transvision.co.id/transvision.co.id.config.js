@@ -12,7 +12,7 @@ dayjs.extend(customParseFormat)
 module.exports = {
   site: 'transvision.co.id',
   days: 2,
-  url: `https://www.transvision.co.id/jadwalacara/epg`,
+  url: 'https://www.transvision.co.id/jadwalacara/epg',
   request: {
     method: 'POST',
     data: function ({ channel, date }) {
@@ -70,16 +70,6 @@ module.exports = {
 
 function parseDescription(item) {
   return cheerio.load(item)('td:last-child').text()
-}
-
-function parseDuration(item) {
-  const $ = cheerio.load(item)
-  let duration = $('th').text()
-  const match = duration.match(/(\d{2}):(\d{2}):\d{2}/)
-  const hours = parseInt(match[1])
-  const minutes = parseInt(match[2])
-
-  return hours * 60 + minutes
 }
 
 function parseStart(item, date) {

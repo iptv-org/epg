@@ -1,34 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<site site="novacyprus.com">
-  <channels>
-    <channel lang="el" xmltv_id="AnimalPlanetAfrica.za" site_id="645">Animal Planet Africa</channel>
-    <channel lang="el" xmltv_id="BoomerangCEE.us" site_id="610">Boomerang Central &amp; Eastern Europe</channel>
-    <channel lang="el" xmltv_id="DisneyChannelMENA.uk" site_id="593">Disney Channel Middle East</channel>
-    <channel lang="el" xmltv_id="EuronewsGreek.fr" site_id="672">EuroNews Ellinika</channel>
-    <channel lang="el" xmltv_id="Eurosport1.fr" site_id="627">Eurosport 1</channel>
-    <channel lang="el" xmltv_id="Eurosport2.fr" site_id="638">Eurosport 2</channel>
-    <channel lang="el" xmltv_id="FoxGreece.gr" site_id="609">Fox Greece</channel>
-    <channel lang="el" xmltv_id="FoxLifeGreece.gr" site_id="570">Fox Life Greece</channel>
-    <channel lang="el" xmltv_id="HellenicParliamentTV.gr" site_id="521">Vouli TV</channel>
-    <channel lang="el" xmltv_id="InsightTV.nl" site_id="81">Insight HD</channel>
-    <channel lang="el" xmltv_id="MADGreekz.gr" site_id="582">Mad Greekz</channel>
-    <channel lang="el" xmltv_id="MadTV.gr" site_id="227">Mad TV</channel>
-    <channel lang="el" xmltv_id="MTVLive.uk" site_id="673">MTV Live</channel>
-    <channel lang="el" xmltv_id="MyZenTV.fr" site_id="221">MyZen TV</channel>
-    <channel lang="el" xmltv_id="NationalGeographicGreece.gr" site_id="617">National Geographic Ellada</channel>
-    <channel lang="el" xmltv_id="NickelodeonGreece.gr" site_id="544">Nickelodeon Greece</channel>
-    <channel lang="el" xmltv_id="Novacinema1.gr" site_id="614">Nova Cinema 1</channel>
-    <channel lang="el" xmltv_id="Novacinema2.gr" site_id="653">Nova Cinema 2</channel>
-    <channel lang="el" xmltv_id="Novacinema3.gr" site_id="652">Nova Cinema 3</channel>
-    <channel lang="el" xmltv_id="Novacinema4.gr" site_id="667">Nova Cinema 4</channel>
-    <channel lang="el" xmltv_id="Novalife.gr" site_id="53">Nova Life</channel>
-    <channel lang="el" xmltv_id="Novasports2.gr" site_id="639">Nova Sports 2</channel>
-    <channel lang="el" xmltv_id="Novasports3.gr" site_id="669">Nova Sports 3</channel>
-    <channel lang="el" xmltv_id="Novasports4.gr" site_id="142">Nova Sports 4</channel>
-    <channel lang="el" xmltv_id="Novasports5.gr" site_id="17">Nova Sports 5</channel>
-    <channel lang="el" xmltv_id="Number1TV.tr" site_id="649">Number 1 TV</channel>
-    <channel lang="el" xmltv_id="OneChannel.gr" site_id="584">One Channel</channel>
-    <channel lang="el" xmltv_id="SmileTV.gr" site_id="576">Smile TV</channel>
-    <channel lang="el" xmltv_id="ViasatHistory.se" site_id="580">Viasat History HD</channel>
-  </channels>
-</site>
+<channels>
+  <channel site="novacyprus.com" lang="el" xmltv_id="AnimalPlanetAfrica.za" site_id="645">Animal Planet Africa</channel>
+  <channel site="novacyprus.com" lang="el" xmltv_id="BoomerangCEE.us" site_id="610">Boomerang Central &amp; Eastern Europe</channel>
+  <channel site="novacyprus.com" lang="el" xmltv_id="DisneyChannelMENA.uk" site_id="593">Disney Channel Middle East</channel>
+  <channel site="novacyprus.com" lang="el" xmltv_id="EuronewsGreek.fr" site_id="672">EuroNews Ellinika</channel>
+  <channel site="novacyprus.com" lang="el" xmltv_id="Eurosport1.fr" site_id="627">Eurosport 1</channel>
+  <channel site="novacyprus.com" lang="el" xmltv_id="Eurosport2.fr" site_id="638">Eurosport 2</channel>
+  <channel site="novacyprus.com" lang="el" xmltv_id="FoxGreece.gr" site_id="609">Fox Greece</channel>
+  <channel site="novacyprus.com" lang="el" xmltv_id="FoxLifeGreece.gr" site_id="570">Fox Life Greece</channel>
+  <channel site="novacyprus.com" lang="el" xmltv_id="HellenicParliamentTV.gr" site_id="521">Vouli TV</channel>
+  <channel site="novacyprus.com" lang="el" xmltv_id="InsightTV.nl" site_id="81">Insight HD</channel>
+  <channel site="novacyprus.com" lang="el" xmltv_id="MADGreekz.gr" site_id="582">Mad Greekz</channel>
+  <channel site="novacyprus.com" lang="el" xmltv_id="MadTV.gr" site_id="227">Mad TV</channel>
+  <channel site="novacyprus.com" lang="el" xmltv_id="MTVLive.uk" site_id="673">MTV Live</channel>
+  <channel site="novacyprus.com" lang="el" xmltv_id="MyZenTV.fr" site_id="221">MyZen TV</channel>
+  <channel site="novacyprus.com" lang="el" xmltv_id="NationalGeographicGreece.gr" site_id="617">National Geographic Ellada</channel>
+  <channel site="novacyprus.com" lang="el" xmltv_id="NickelodeonGreece.gr" site_id="544">Nickelodeon Greece</channel>
+  <channel site="novacyprus.com" lang="el" xmltv_id="Novacinema1.gr" site_id="614">Nova Cinema 1</channel>
+  <channel site="novacyprus.com" lang="el" xmltv_id="Novacinema2.gr" site_id="653">Nova Cinema 2</channel>
+  <channel site="novacyprus.com" lang="el" xmltv_id="Novacinema3.gr" site_id="652">Nova Cinema 3</channel>
+  <channel site="novacyprus.com" lang="el" xmltv_id="Novacinema4.gr" site_id="667">Nova Cinema 4</channel>
+  <channel site="novacyprus.com" lang="el" xmltv_id="Novalife.gr" site_id="53">Nova Life</channel>
+  <channel site="novacyprus.com" lang="el" xmltv_id="Novasports2.gr" site_id="639">Nova Sports 2</channel>
+  <channel site="novacyprus.com" lang="el" xmltv_id="Novasports3.gr" site_id="669">Nova Sports 3</channel>
+  <channel site="novacyprus.com" lang="el" xmltv_id="Novasports4.gr" site_id="142">Nova Sports 4</channel>
+  <channel site="novacyprus.com" lang="el" xmltv_id="Novasports5.gr" site_id="17">Nova Sports 5</channel>
+  <channel site="novacyprus.com" lang="el" xmltv_id="Number1TV.tr" site_id="649">Number 1 TV</channel>
+  <channel site="novacyprus.com" lang="el" xmltv_id="OneChannel.gr" site_id="584">One Channel</channel>
+  <channel site="novacyprus.com" lang="el" xmltv_id="SmileTV.gr" site_id="576">Smile TV</channel>
+  <channel site="novacyprus.com" lang="el" xmltv_id="ViasatHistory.se" site_id="580">Viasat History HD</channel>
+</channels>

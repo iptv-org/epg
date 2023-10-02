@@ -1,4 +1,3 @@
-const axios = require('axios')
 const dayjs = require('dayjs')
 const cheerio = require('cheerio')
 const utc = require('dayjs/plugin/utc')
@@ -67,7 +66,7 @@ function parseSubTitle($item) {
 }
 
 function parseRating($item) {
-  const [_, rating] = $item('.tv-rating')
+  const [, rating] = $item('.tv-rating')
     .text()
     .match(/([^(]+)/) || [null, null]
 
@@ -92,7 +91,7 @@ function parseStart($item, date) {
 }
 
 function parseDuration($item) {
-  const [_, duration] = $item('.tv-rating')
+  const [, duration] = $item('.tv-rating')
     .text()
     .trim()
     .match(/\((\d+)/) || [null, null]
@@ -104,5 +103,5 @@ function parseItems(content) {
   if (!content) return []
   const $ = cheerio.load(content)
 
-  return $(`#accordion > div`).toArray()
+  return $('#accordion > div').toArray()
 }

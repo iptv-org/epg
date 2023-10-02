@@ -72,7 +72,7 @@ function parseDescription($item) {
 function parseIcon($item) {
   const backgroundImage = $item('.program_about > .program_photo').css('background-image')
   if (!backgroundImage) return null
-  const [_, icon] = backgroundImage.match(/url\(\'(.*)'\)/) || [null, null]
+  const [, icon] = backgroundImage.match(/url\('(.*)'\)/) || [null, null]
   if (!icon) return null
 
   return `https:${icon}`

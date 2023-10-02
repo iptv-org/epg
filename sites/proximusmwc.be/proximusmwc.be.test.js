@@ -1,5 +1,5 @@
 // npm run channels:parse -- --config=./sites/proximusmwc.be/proximusmwc.be.config.js --output=./sites/proximusmwc.be/proximusmwc.be.channels.xml
-// npx epg-grabber --config=sites/proximusmwc.be/proximusmwc.be.config.js --channels=sites/proximusmwc.be/proximusmwc.be.channels.xml --output=guide.xml --days=2
+// npm run grab -- --site=proximusmwc.be
 
 const { parser, url, request } = require('./proximusmwc.be.config.js')
 const dayjs = require('dayjs')
@@ -38,7 +38,8 @@ it('can generate valid request data', () => {
 })
 
 it('can parse response', () => {
-  const content = `{"data":{"schedulesByInterval":[{"trailId":"UID0024_202202225537","programReferenceNumber":"107504040014","channelId":"UID0024","title":"Der Bozen-Krimi","category":"C.Magazine","startTime":1646350800,"endTime":1646356200,"description":"Chiara Schoras alias \\"Capo\\" Sonja Schwarz muss im 14. Bozen-Krimi nicht nur einen widersprüchlichen Mordfall aufklären, sondern auch ein Geheimnis ans Licht bringen, das zwei Familien auf schmerzhafte Weise untrennbar verbindet.","image":[{"key":"source","url":"https://experience-cache.proximustv.be:443/posterserver/poster/EPG/250_250_BF6BF77FC28F72FA23EAEA6CAAE98B60.jpg","__typename":"Image"},{"key":"custom","url":"https://experience-cache.proximustv.be:443/posterserver/poster/EPG/w-%width%_h-%height%/250_250_BF6BF77FC28F72FA23EAEA6CAAE98B60.jpg","__typename":"Image"}]}]}}`
+  const content =
+    '{"data":{"schedulesByInterval":[{"trailId":"UID0024_202202225537","programReferenceNumber":"107504040014","channelId":"UID0024","title":"Der Bozen-Krimi","category":"C.Magazine","startTime":1646350800,"endTime":1646356200,"description":"Chiara Schoras alias \\"Capo\\" Sonja Schwarz muss im 14. Bozen-Krimi nicht nur einen widersprüchlichen Mordfall aufklären, sondern auch ein Geheimnis ans Licht bringen, das zwei Familien auf schmerzhafte Weise untrennbar verbindet.","image":[{"key":"source","url":"https://experience-cache.proximustv.be:443/posterserver/poster/EPG/250_250_BF6BF77FC28F72FA23EAEA6CAAE98B60.jpg","__typename":"Image"},{"key":"custom","url":"https://experience-cache.proximustv.be:443/posterserver/poster/EPG/w-%width%_h-%height%/250_250_BF6BF77FC28F72FA23EAEA6CAAE98B60.jpg","__typename":"Image"}]}]}}'
   const result = parser({ content, channel, date }).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
@@ -49,7 +50,7 @@ it('can parse response', () => {
     {
       start: '2022-03-03T23:40:00.000Z',
       stop: '2022-03-04T01:10:00.000Z',
-      title: `Der Bozen-Krimi`,
+      title: 'Der Bozen-Krimi',
       description:
         'Chiara Schoras alias "Capo" Sonja Schwarz muss im 14. Bozen-Krimi nicht nur einen widersprüchlichen Mordfall aufklären, sondern auch ein Geheimnis ans Licht bringen, das zwei Familien auf schmerzhafte Weise untrennbar verbindet.',
       category: 'Magazine',
@@ -62,7 +63,7 @@ it('can handle empty guide', () => {
   const result = parser({
     date,
     channel,
-    content: `{"data":{"schedulesByInterval":[]}}`
+    content: '{"data":{"schedulesByInterval":[]}}'
   })
   expect(result).toMatchObject([])
 })

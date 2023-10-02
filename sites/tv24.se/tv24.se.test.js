@@ -1,5 +1,5 @@
 // npm run channels:parse -- --config=./sites/tv24.se/tv24.se.config.js --output=./sites/tv24.se/tv24.se.channels.xml
-// npx epg-grabber --config=sites/tv24.se/tv24.se.config.js --channels=sites/tv24.se/tv24.se.channels.xml --output=guide.xml --days=2
+// npm run grab -- --site=tv24.se
 
 const { parser, url } = require('./tv24.se.config.js')
 const fs = require('fs')
@@ -26,7 +26,7 @@ it('can generate valid url', () => {
 it('can parse response', async () => {
   const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.html'))
 
-  axios.get.mockImplementation((url, data) => {
+  axios.get.mockImplementation(url => {
     if (url === 'https://tv24.se/x/b/rh7f40-1hkm/0/0') {
       return Promise.resolve({
         data: JSON.parse(fs.readFileSync(path.resolve(__dirname, '__data__/program1.json')))

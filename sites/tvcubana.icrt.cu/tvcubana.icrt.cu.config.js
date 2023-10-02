@@ -35,11 +35,13 @@ function parseStop(item) {
   return dayjs.tz(item.eventEndDateTime, 'America/Havana')
 }
 
-function parseItems(content, channel) {
+function parseItems(content) {
   let data
   try {
     data = JSON.parse(content)
-  } catch (e) {}
+  } catch (error) {
+    return []
+  }
   if (!data || !Array.isArray(data)) return []
 
   return data

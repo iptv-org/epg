@@ -51,7 +51,9 @@ function parseItems(content, channel) {
   let parsed
   try {
     parsed = JSON.parse(content)
-  } catch (e) {}
+  } catch (error) {
+    return []
+  }
   if (!parsed || !parsed.k) return []
   const data = parsed.k.find(c => c.x == channel.site_id)
 

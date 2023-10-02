@@ -9,7 +9,7 @@ module.exports = {
       'DD-MM-YYYY'
     )}`
   },
-  parser: function ({ content, channel, date }) {
+  parser: function ({ content }) {
     let programs = []
     const items = parseItems(content)
     items.forEach(item => {

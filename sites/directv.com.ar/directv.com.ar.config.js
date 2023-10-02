@@ -1,5 +1,4 @@
 process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
-const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
@@ -12,21 +11,22 @@ dayjs.extend(customParseFormat)
 module.exports = {
   site: 'directv.com.ar',
   days: 2,
-  url: `https://www.directv.com.ar/guia/ChannelDetail.aspx/GetProgramming`,
+  url: 'https://www.directv.com.ar/guia/ChannelDetail.aspx/GetProgramming',
   request: {
     method: 'POST',
     headers: {
-      'Cookie': 'PGCSS=16; PGLang=S; PGCulture=es-AR;',
-      'Accept': '*/*',
+      Cookie: 'PGCSS=16; PGLang=S; PGCulture=es-AR;',
+      Accept: '*/*',
       'Accept-Language': 'es-419,es;q=0.9',
-      'Connection': 'keep-alive',
+      Connection: 'keep-alive',
       'Content-Type': 'application/json; charset=UTF-8',
-      'Origin': 'https://www.directv.com.ar',
-      'Referer': 'https://www.directv.com.ar/guia/ChannelDetail.aspx?id=1740&name=TLCHD',
+      Origin: 'https://www.directv.com.ar',
+      Referer: 'https://www.directv.com.ar/guia/ChannelDetail.aspx?id=1740&name=TLCHD',
       'Sec-Fetch-Dest': 'empty',
       'Sec-Fetch-Mode': 'cors',
       'Sec-Fetch-Site': 'same-origin',
-      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36',
+      'User-Agent':
+        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36',
       'sec-ch-ua': '"Not.A/Brand";v="8", "Chromium";v="114", "Google Chrome";v="114"',
       'sec-ch-ua-mobile': '?0',
       'sec-ch-ua-platform': '"Windows"'

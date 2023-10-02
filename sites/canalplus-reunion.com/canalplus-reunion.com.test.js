@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/canalplus-reunion.com/canalplus-reunion.com.config.js --channels=sites/canalplus-reunion.com/canalplus-reunion.com.channels.xml --output=guide.xml --days=2
+// npm run grab -- --site=canalplus-reunion.com
 
 const { parser, url } = require('./canalplus-reunion.com.config.js')
 const axios = require('axios')
@@ -149,7 +149,8 @@ it('can parse response', done => {
 
 it('can handle empty guide', done => {
   parser({
-    content: `{"currentPage":{"displayTemplate":"error","BOName":"Page introuvable"},"title":"Page introuvable","text":"La page que vous demandez est introuvable. Si le problème persiste, vous pouvez contacter l'assistance de CANAL+/CANALSAT.","code":404}`
+    content:
+      '{"currentPage":{"displayTemplate":"error","BOName":"Page introuvable"},"title":"Page introuvable","text":"La page que vous demandez est introuvable. Si le problème persiste, vous pouvez contacter l\'assistance de CANAL+/CANALSAT.","code":404}'
   })
     .then(result => {
       expect(result).toMatchObject([])

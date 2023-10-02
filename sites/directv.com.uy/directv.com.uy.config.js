@@ -1,4 +1,3 @@
-const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
@@ -11,7 +10,7 @@ dayjs.extend(customParseFormat)
 module.exports = {
   site: 'directv.com.uy',
   days: 2,
-  url: `https://www.directv.com.uy/guia/ChannelDetail.aspx/GetProgramming`,
+  url: 'https://www.directv.com.uy/guia/ChannelDetail.aspx/GetProgramming',
   request: {
     method: 'POST',
     headers: {

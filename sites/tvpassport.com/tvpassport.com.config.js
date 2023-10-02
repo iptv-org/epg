@@ -56,7 +56,7 @@ module.exports = {
   },
   async channels() {
     const content = await axios
-      .get(`https://www.tvpassport.com/tv-listings`, {
+      .get('https://www.tvpassport.com/tv-listings', {
         headers: {
           Cookie: 'cisession=317b3a464bfe449650b7cc4b16ccf900a6646d88;'
         }
@@ -152,5 +152,5 @@ function parseItems(content) {
   if (!content) return []
   const $ = cheerio.load(content)
 
-  return $(`.station-listings .list-group-item`).toArray()
+  return $('.station-listings .list-group-item').toArray()
 }

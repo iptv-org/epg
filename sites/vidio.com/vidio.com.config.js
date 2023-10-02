@@ -36,7 +36,7 @@ module.exports = {
 
 function parseStart($item, date) {
   const timeString = $item('div.b-livestreaming-daily-schedule__item-content-caption').text()
-  const [_, start] = timeString.match(/(\d{2}:\d{2}) -/) || [null, null]
+  const [, start] = timeString.match(/(\d{2}:\d{2}) -/) || [null, null]
   const dateString = `${date.format('YYYY-MM-DD')} ${start}`
 
   return DateTime.fromFormat(dateString, 'yyyy-MM-dd HH:mm', { zone: 'Asia/Jakarta' }).toUTC()
@@ -44,7 +44,7 @@ function parseStart($item, date) {
 
 function parseStop($item, date) {
   const timeString = $item('div.b-livestreaming-daily-schedule__item-content-caption').text()
-  const [_, stop] = timeString.match(/- (\d{2}:\d{2}) WIB/) || [null, null]
+  const [, stop] = timeString.match(/- (\d{2}:\d{2}) WIB/) || [null, null]
   const dateString = `${date.format('YYYY-MM-DD')} ${stop}`
 
   return DateTime.fromFormat(dateString, 'yyyy-MM-dd HH:mm', { zone: 'Asia/Jakarta' }).toUTC()

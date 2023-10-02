@@ -1,174 +1,172 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<site site="musor.tv">
-  <channels>
-    <channel lang="en" xmltv_id="ClubMTVEurope.uk" site_id="CLUB_MTV">club MTV</channel>
-    <channel lang="en" xmltv_id="EEurope.us" site_id="E_ENTERTAINMENT">E! Entertainment</channel>
-    <channel lang="en" xmltv_id="EnglishClubTV.uk" site_id="ENGLISH_CLUB_TV">English Club TV</channel>
-    <channel lang="en" xmltv_id="ExtremeSportsChannelEurope.nl" site_id="EXTREMESP">Extreme Sports Channel</channel>
-    <channel lang="en" xmltv_id="FightBox.nl" site_id="FIGHTBOX_EN">Fightbox</channel>
-    <channel lang="en" xmltv_id="FilmBoxArthouse.nl" site_id="FILMBOX_ARTHOUSE">Filmbox Arthouse</channel>
-    <channel lang="en" xmltv_id="MTV00s.uk" site_id="MTV00S">MTV 00s</channel>
-    <channel lang="en" xmltv_id="MTV90s.uk" site_id="MTV90S">MTV 90s</channel>
-    <channel lang="en" xmltv_id="MTVGlobal.uk" site_id="MTV_EURO">MTV European</channel>
-    <channel lang="en" xmltv_id="MTVHitsEurope.uk" site_id="MTVHITS">MTV Hits</channel>
-    <channel lang="en" xmltv_id="MTVLive.uk" site_id="MTVLIVEHD">MTV Live</channel>
-    <channel lang="en" xmltv_id="SkyNewsInternational.uk" site_id="SKYNEWS">Sky News</channel>
-    <channel lang="en" xmltv_id="StingrayClassica.ca" site_id="CLASSICA">Stingray Classica</channel>
-    <channel lang="en" xmltv_id="StingrayCMusic.ca" site_id="CMUSIC">Stingray C Music</channel>
-    <channel lang="en" xmltv_id="TotalDanceTV.hu" site_id="TOTALDANCE_TV">Total Dance TV</channel>
-    <channel lang="en" xmltv_id="TraceSportStars.fr" site_id="TRACESPORTS">Trace Sports</channel>
-    <channel lang="en" xmltv_id="TraceUrban.fr" site_id="TRACEURBAN">Trace Urban</channel>
-    <channel lang="en" xmltv_id="Travelxp.in" site_id="TRAVELXP">Travel XP</channel>
-    <channel lang="hu" xmltv_id="7TV.hu" site_id="7TV">7.TV</channel>
-    <channel lang="hu" xmltv_id="AMCHungary.hu" site_id="AMC">AMC</channel>
-    <channel lang="hu" xmltv_id="AnimalPlanetHungary.hu" site_id="ANIMAL">Animal Planet</channel>
-    <channel lang="hu" xmltv_id="ApostolTV.hu" site_id="APOSTOL_TV">Apostol TV</channel>
-    <channel lang="hu" xmltv_id="Arena4.hu" site_id="ARENA4">Arena4</channel>
-    <channel lang="hu" xmltv_id="ATV.hu" site_id="ATV">ATV</channel>
-    <channel lang="hu" xmltv_id="ATVSpirit.hu" site_id="ATV_SPIRIT">ATV Spirit</channel>
-    <channel lang="hu" xmltv_id="AutoMotorundSport.de" site_id="AUTO_MOTOR_SPORT">Auto Motor Sport</channel>
-    <channel lang="hu" xmltv_id="AXNHungary.hu" site_id="AXN">AXN</channel>
-    <channel lang="hu" xmltv_id="BabyTV.uk" site_id="BABYTV">Baby TV</channel>
-    <channel lang="hu" xmltv_id="BalatonTV.hu" site_id="BALATON_TV">Balaton TV</channel>
-    <channel lang="hu" xmltv_id="BBCEarthRomania.ro" site_id="BBC_EARTH">BBC Earth</channel>
-    <channel lang="hu" xmltv_id="BBCWorldNewsEurope.uk" site_id="BBCWORLD">BBC World News</channel>
-    <channel lang="hu" xmltv_id="BoomerangCEE.us" site_id="BOOMERANG">Boomerang</channel>
-    <channel lang="hu" xmltv_id="CartoonNetworkHungary.hu" site_id="CARTOON">Cartoon Network</channel>
-    <channel lang="hu" xmltv_id="CBSRealityEMEA.uk" site_id="CBSREALITY">CBS Reality</channel>
-    <channel lang="hu" xmltv_id="Cinemax2Hungary.hu" site_id="CINEMAX2">Cinemax 2</channel>
-    <channel lang="hu" xmltv_id="CinemaxHungary.hu" site_id="CINEMAX">Cinemax</channel>
-    <channel lang="hu" xmltv_id="CNBCEurope.uk" site_id="CNBC">CNBC</channel>
-    <channel lang="hu" xmltv_id="CNNInternationalEurope.us" site_id="CNN">CNN</channel>
-    <channel lang="hu" xmltv_id="ComedyCentralFamilyHungary.hu" site_id="COMEDY_CENTRAL_FAMILY">Comedy Central Family</channel>
-    <channel lang="hu" xmltv_id="ComedyCentralHungary.hu" site_id="COMEDY">Comedy Central</channel>
-    <channel lang="hu" xmltv_id="CoolTV.hu" site_id="COOL">Cool</channel>
-    <channel lang="hu" xmltv_id="D1TV.hu" site_id="D1TV">d1 TV</channel>
-    <channel lang="hu" xmltv_id="DaVinciHungary.hu" site_id="DAVINCI">Da Vinci</channel>
-    <channel lang="hu" xmltv_id="DigiAnimalWorldRomania.ro" site_id="DIGIANIMALWORLD">DIGI Animal World</channel>
-    <channel lang="hu" xmltv_id="DigiLifeHungary.hu" site_id="DIGILIFE">DIGI Life</channel>
-    <channel lang="hu" xmltv_id="DigiSport1Hungary.hu" site_id="DIGISPORT1">DIGI Sport 1</channel>
-    <channel lang="hu" xmltv_id="DigiSport2Hungary.hu" site_id="DIGISPORT2">DIGI Sport 2</channel>
-    <channel lang="hu" xmltv_id="DigiSport3Hungary.hu" site_id="DIGISPORT3">DIGI Sport 3</channel>
-    <channel lang="hu" xmltv_id="DigiWorldHungary.hu" site_id="DIGIWORLD">DIGI World</channel>
-    <channel lang="hu" xmltv_id="DikhTV.hu" site_id="DIKH_TV">Dikh TV</channel>
-    <channel lang="hu" xmltv_id="DirectOneTV.lu" site_id="DIRECT_ONE_TV">Direct One TV</channel>
-    <channel lang="hu" xmltv_id="DiscoveryChannelHungary.hu" site_id="DISCOVERY">Discovery Channel</channel>
-    <channel lang="hu" xmltv_id="DiscoveryScience.us" site_id="DISCOVERYSCI">Discovery Science</channel>
-    <channel lang="hu" xmltv_id="DisneyChannelHungary.hu" site_id="DISNEY">Disney Channel</channel>
-    <channel lang="hu" xmltv_id="DocuBox.nl" site_id="DOCUBOX_EN">Docubox</channel>
-    <channel lang="hu" xmltv_id="DuckTV.sk" site_id="DUCKTV">Duck TV</channel>
-    <channel lang="hu" xmltv_id="DunaTV.hu" site_id="DUNA">Duna TV</channel>
-    <channel lang="hu" xmltv_id="DunaWorld.hu" site_id="DUNAWORLD">Duna World</channel>
-    <channel lang="hu" xmltv_id="EpicDrama.se" site_id="EPIC_DRAMA">Epic Drama</channel>
-    <channel lang="hu" xmltv_id="ErdelyTV.ro" site_id="ERDELY_TV">Erdély TV</channel>
-    <channel lang="hu" xmltv_id="EuronewsHungarian.fr" site_id="EURONEWS">Euronews</channel>
-    <channel lang="hu" xmltv_id="Eurosport1Hungary.hu" site_id="EUROSPORT">Eurosport 1</channel>
-    <channel lang="hu" xmltv_id="Eurosport2Hungary.hu" site_id="EUROSPORT2">Eurosport 2</channel>
-    <channel lang="hu" xmltv_id="Eurosport4K.fr" site_id="EUROSPORT4K">Eurosport 4K</channel>
-    <channel lang="hu" xmltv_id="EWTNBonumTV.hu" site_id="BONUM">EWTN / Bonum TV</channel>
-    <channel lang="hu" xmltv_id="FashionTVEurope.fr" site_id="FTVHD">Fashion TV</channel>
-    <channel lang="hu" xmltv_id="FehervarTV.hu" site_id="FEHERVAR_TV">Fehérvár TV</channel>
-    <channel lang="hu" xmltv_id="FEM3.hu" site_id="FEM3">FEM3</channel>
-    <channel lang="hu" xmltv_id="Film4Hungary.hu" site_id="FILM4">Film4</channel>
-    <channel lang="hu" xmltv_id="FilmBoxExtraHungary.hu" site_id="FILMBOX_EXTRA_HD">Filmbox Extra</channel>
-    <channel lang="hu" xmltv_id="FilmBoxFamily.nl" site_id="FILMBOXFAMILY">Filmbox Family</channel>
-    <channel lang="hu" xmltv_id="FilmBoxPremiumHungary.hu" site_id="FILMBOX_PREMIUM">Filmbox Premium</channel>
-    <channel lang="hu" xmltv_id="FilmBoxStarsHungary.hu" site_id="FILMBOX_STARS">Filmbox Stars</channel>
-    <channel lang="hu" xmltv_id="FilmCafeHungary.hu" site_id="FILMCAFE">Film Café</channel>
-    <channel lang="hu" xmltv_id="FilmMania.hu" site_id="FILMMANIA">Film Mánia</channel>
-    <channel lang="hu" xmltv_id="FilmNowHungary.hu" site_id="FILMNOW">Film Now</channel>
-    <channel lang="hu" xmltv_id="FilmPlusHungary.hu" site_id="FILMPLUS">film+</channel>
-    <channel lang="hu" xmltv_id="FitHD.hu" site_id="FIT_HD">Fit HD</channel>
-    <channel lang="hu" xmltv_id="FIXTV.hu" site_id="FIXTV">FIX TV</channel>
-    <channel lang="hu" xmltv_id="FoodNetworkEMEA.us" site_id="FOODNETWORK">Food Network</channel>
-    <channel lang="hu" xmltv_id="FunBoxUHD.nl" site_id="FUNBOX_UHD">Funbox UltraHD 4K</channel>
-    <channel lang="hu" xmltv_id="Galaxy4.hu" site_id="GALAXY">Galaxy4</channel>
-    <channel lang="hu" xmltv_id="Gametoon.nl" site_id="GAMETOON">Gametoon</channel>
-    <channel lang="hu" xmltv_id="Hatoscsatorna.hu" site_id="HATOS_CSATORNA">Hatoscsatorna</channel>
-    <channel lang="hu" xmltv_id="HBO2Hungary.hu" site_id="HBO2">HBO 2</channel>
-    <channel lang="hu" xmltv_id="HBO3Hungary.hu" site_id="HBO3">HBO 3</channel>
-    <channel lang="hu" xmltv_id="HBOHungary.hu" site_id="HBO">HBO</channel>
-    <channel lang="hu" xmltv_id="HegyvidekTV.hu" site_id="HEGYVIDEK_TV">Hegyvidék TV</channel>
-    <channel lang="hu" xmltv_id="HetiTV.hu" site_id="HETI_TV">Heti TV</channel>
-    <channel lang="hu" xmltv_id="HGTVPanregional.us" site_id="HGTV">HGTV</channel>
-    <channel lang="hu" xmltv_id="HirTV.hu" site_id="HIRTV">Hír TV</channel>
-    <channel lang="hu" xmltv_id="HistoryHungary.hu" site_id="HISTORY">History</channel>
-    <channel lang="hu" xmltv_id="HtMusicChannelHungary.hu" site_id="HIT_MUSIC">H!T Music</channel>
-    <channel lang="hu" xmltv_id="InvestigationDiscoveryHungary.hu" site_id="ID">ID</channel>
-    <channel lang="hu" xmltv_id="IzauraTV.hu" site_id="IZAURA_TV">Izaura TV</channel>
-    <channel lang="hu" xmltv_id="JimJamHungary.hu" site_id="JIMJAM">JimJam</channel>
-    <channel lang="hu" xmltv_id="JockyTV.hu" site_id="JOCKYTV">Jocky TV</channel>
-    <channel lang="hu" xmltv_id="KaposTV.hu" site_id="KAPOS_TV">Kapos TV</channel>
-    <channel lang="hu" xmltv_id="KolcseyTV.hu" site_id="KOLCSEY_TV">Kölcsey TV</channel>
-    <channel lang="hu" xmltv_id="LifeTV.hu" site_id="LIFE_TV">Life TV</channel>
-    <channel lang="hu" xmltv_id="LoveNature.ca" site_id="LOVE_NATURE">Love Nature</channel>
-    <channel lang="hu" xmltv_id="M1.hu" site_id="M1">M1</channel>
-    <channel lang="hu" xmltv_id="M2.hu" site_id="M2">M2 / Petőfi</channel>
-    <channel lang="hu" xmltv_id="M4Sport.hu" site_id="M4_SPORT">M4 Sport</channel>
-    <channel lang="hu" xmltv_id="M4SportPlus.hu" site_id="M4_SPORT_PLUSZ">M4 Sport+</channel>
-    <channel lang="hu" xmltv_id="M5.hu" site_id="M5">M5</channel>
-    <channel lang="hu" xmltv_id="Match4.hu" site_id="MATCH4">Match4</channel>
-    <channel lang="hu" xmltv_id="MagyarMoziTV.hu" site_id="MAGYAR_MOZI_TV">Magyar Mozi TV</channel>		
-    <channel lang="hu" xmltv_id="MAX4.hu" site_id="MAX4">MAX4</channel>		
-    <channel lang="hu" xmltv_id="Mezzo.fr" site_id="MEZZO">Mezzo</channel>
-    <channel lang="hu" xmltv_id="MezzoLiveHD.fr" site_id="MEZZOHD">Mezzo Live</channel>
-    <channel lang="hu" xmltv_id="MinimaxHungary.hu" site_id="MINIMAX">Minimax</channel>
-    <channel lang="hu" xmltv_id="MoziPlus.hu" site_id="MOZI_PLUSZ">Mozi+</channel>
-    <channel lang="hu" xmltv_id="Moziverzum.hu" site_id="MOZIVERZUM">Moziverzum</channel>
-    <channel lang="hu" xmltv_id="MTV80s.uk" site_id="MTV80S">MTV 80s</channel>
-    <channel lang="hu" xmltv_id="MusicChannelHungary.hu" site_id="MUSICCHANNEL">1 Music Channel</channel>
-    <channel lang="hu" xmltv_id="MuzsikaTV.hu" site_id="MUZSIKATV">Muzsika TV</channel>
-    <channel lang="hu" xmltv_id="NationalGeographicHungary.hu" site_id="NATGEO">National Geographic</channel>
-    <channel lang="hu" xmltv_id="NationalGeographicWildHungary.hu" site_id="NATGEOWILD">National Geographic Wild</channel>
-    <channel lang="hu" xmltv_id="NauticalChannel.it" site_id="NAUTICAL_CHANNEL">Nautical Channel</channel>
-    <channel lang="hu" xmltv_id="NickelodeonHungary.hu" site_id="NICKELODEON">Nickelodeon</channel>
-    <channel lang="hu" xmltv_id="NickJrHungary.hu" site_id="NICKJR">Nick Jr</channel>
-    <channel lang="hu" xmltv_id="NicktoonsRomania.ro" site_id="NICKTOONS">Nicktoons</channel>
-    <channel lang="hu" xmltv_id="OzoneTV.hu" site_id="OZONE_TV">Ozone TV</channel>
-    <channel lang="hu" xmltv_id="PannonTV.rs" site_id="PANNON_TV">Pannon TV (Vajdaság)</channel>
-    <channel lang="hu" xmltv_id="ParamountNetworkHungary.hu" site_id="PARAMOUNT">Paramount Network</channel>
-    <channel lang="hu" xmltv_id="PaxTV.hu" site_id="PAX">PAX TV</channel>
-    <channel lang="hu" xmltv_id="PestiTV.hu" site_id="PESTI_TV">Pesti TV</channel>
-    <channel lang="hu" xmltv_id="Prime.hu" site_id="PRIME">Prime</channel>
-    <channel lang="hu" xmltv_id="RTLGold.hu" site_id="RTL_GOLD">RTL Gold</channel>
-    <channel lang="hu" xmltv_id="RTLKETTO.hu" site_id="RTL2">RTL KETTŐ</channel>
-    <channel lang="hu" xmltv_id="RTLHAROM.hu" site_id="RTL_PLUSZ">RTL HÁROM</channel>
-    <channel lang="hu" xmltv_id="RTLHungary.hu" site_id="RTL">RTL</channel>   
-    <channel lang="hu" xmltv_id="SlagerTV.hu" site_id="SLAGERTV">Sláger TV</channel>
-    <channel lang="hu" xmltv_id="SorozatPlus.hu" site_id="SOROZAT">Sorozat+</channel>
-    <channel lang="hu" xmltv_id="SpektrumHomeHungary.hu" site_id="SPEKTRUMHOME">Spektrum Home</channel>
-    <channel lang="hu" xmltv_id="SpektrumHungary.hu" site_id="SPEKTRUM">Spektrum</channel>
-    <channel lang="hu" xmltv_id="Spiler1TV.hu" site_id="SPILER_TV">Spíler1 TV</channel>
-    <channel lang="hu" xmltv_id="Spiler2TV.hu" site_id="SPILER2_TV">Spíler2 TV</channel>
-    <channel lang="hu" xmltv_id="Sport1Hungary.hu" site_id="SPORT1">Sport1</channel>
-    <channel lang="hu" xmltv_id="Sport2Hungary.hu" site_id="SPORT2">Sport2</channel>
-    <channel lang="hu" xmltv_id="StingrayiConcerts.ca" site_id="ICONCERTS">Stingray iConcerts</channel>
-    <channel lang="hu" xmltv_id="Story4.hu" site_id="STORY4">Story4</channel>
-    <channel lang="hu" xmltv_id="SuperTV2.hu" site_id="SUPERTV2">Super TV2</channel>
-    <channel lang="hu" xmltv_id="SzegedTV.hu" site_id="SZEGED_TV">Szeged TV</channel>
-    <channel lang="hu" xmltv_id="TeenNickHungary.hu" site_id="TEENNICK">TeenNick</channel>
-    <channel lang="hu" xmltv_id="TheFishingHuntingChannel.hu" site_id="FISHING_HUNTING">Fishing &amp; Hunting Channel</channel>
-    <channel lang="hu" xmltv_id="TLCHungary.hu" site_id="TLC">TLC</channel>
-    <channel lang="hu" xmltv_id="TravelChannelEMEA.uk" site_id="TRAVEL">Travel Channel</channel>
-    <channel lang="hu" xmltv_id="TV2.hu" site_id="TV2">TV2</channel>
-    <channel lang="hu" xmltv_id="TV21Ungvar.ua" site_id="TV21_UNGVAR">TV21 Ungvár (Kárpátalja)</channel>
-    <channel lang="hu" xmltv_id="TV2Comedy.hu" site_id="TV2_COMEDY">TV2 Comedy</channel>
-    <channel lang="hu" xmltv_id="TV2Kids.hu" site_id="TV2_KIDS">TV2 Kids</channel>
-    <channel lang="hu" xmltv_id="TV2Sef.hu" site_id="TV2_SEF">TV2 Séf</channel>
-    <channel lang="hu" xmltv_id="TV4.hu" site_id="TV4">TV4</channel>
-    <channel lang="hu" xmltv_id="TVEger.hu" site_id="TV_EGER">TV Eger</channel>
-    <channel lang="hu" xmltv_id="TVPaprikaHungary.hu" site_id="PAPRIKA">TV Paprika</channel>
-    <channel lang="hu" xmltv_id="UjbudaTV.hu" site_id="UJBUDA_TV">Újbuda TV</channel>
-    <channel lang="hu" xmltv_id="Viasat2.hu" site_id="VIASAT2">Viasat2</channel>
-    <channel lang="hu" xmltv_id="Viasat3.hu" site_id="VIASAT3">Viasat3</channel>
-    <channel lang="hu" xmltv_id="Viasat6.hu" site_id="VIASAT6">Viasat6</channel>
-    <channel lang="hu" xmltv_id="ViasatExploreHungary.hu" site_id="VIASATEXP">Viasat Explore</channel>
-    <channel lang="hu" xmltv_id="ViasatFilm.hu" site_id="VIASATFILM">Viasat Film</channel>
-    <channel lang="hu" xmltv_id="ViasatHistoryHungary.hu" site_id="VIASATHIST">Viasat History</channel>
-    <channel lang="hu" xmltv_id="ViasatNatureHungary.hu" site_id="VIASATNAT">Viasat Nature</channel>
-    <channel lang="hu" xmltv_id="ZalaegerszegiTV.hu" site_id="ZEG_TV">Zalaegerszegi TV</channel>
-    <channel lang="hu" xmltv_id="Zenebutik.hu" site_id="ZENEBUTIK">Zenebutik TV</channel>
-    <!-- <channel lang="hu" xmltv_id="" site_id="DTX">Discovery Turbo Xtra (DTX)</channel> -->
-    <!-- <channel lang="hu" xmltv_id="" site_id="FILMBOX">Filmbox</channel> -->
-  </channels>
-</site>
+<channels>
+  <!-- <channel site="musor.tv" lang="hu" xmltv_id="" site_id="DTX">Discovery Turbo Xtra (DTX)</channel> -->
+  <!-- <channel site="musor.tv" lang="hu" xmltv_id="" site_id="FILMBOX">Filmbox</channel> -->
+  <channel site="musor.tv" lang="en" xmltv_id="ClubMTVEurope.uk" site_id="CLUB_MTV">club MTV</channel>
+  <channel site="musor.tv" lang="en" xmltv_id="EEurope.us" site_id="E_ENTERTAINMENT">E! Entertainment</channel>
+  <channel site="musor.tv" lang="en" xmltv_id="EnglishClubTV.uk" site_id="ENGLISH_CLUB_TV">English Club TV</channel>
+  <channel site="musor.tv" lang="en" xmltv_id="ExtremeSportsChannelEurope.nl" site_id="EXTREMESP">Extreme Sports Channel</channel>
+  <channel site="musor.tv" lang="en" xmltv_id="FightBox.nl" site_id="FIGHTBOX_EN">Fightbox</channel>
+  <channel site="musor.tv" lang="en" xmltv_id="FilmBoxArthouse.nl" site_id="FILMBOX_ARTHOUSE">Filmbox Arthouse</channel>
+  <channel site="musor.tv" lang="en" xmltv_id="MTV00s.uk" site_id="MTV00S">MTV 00s</channel>
+  <channel site="musor.tv" lang="en" xmltv_id="MTV90s.uk" site_id="MTV90S">MTV 90s</channel>
+  <channel site="musor.tv" lang="en" xmltv_id="MTVGlobal.uk" site_id="MTV_EURO">MTV European</channel>
+  <channel site="musor.tv" lang="en" xmltv_id="MTVHitsEurope.uk" site_id="MTVHITS">MTV Hits</channel>
+  <channel site="musor.tv" lang="en" xmltv_id="MTVLive.uk" site_id="MTVLIVEHD">MTV Live</channel>
+  <channel site="musor.tv" lang="en" xmltv_id="SkyNewsInternational.uk" site_id="SKYNEWS">Sky News</channel>
+  <channel site="musor.tv" lang="en" xmltv_id="StingrayClassica.ca" site_id="CLASSICA">Stingray Classica</channel>
+  <channel site="musor.tv" lang="en" xmltv_id="StingrayCMusic.ca" site_id="CMUSIC">Stingray C Music</channel>
+  <channel site="musor.tv" lang="en" xmltv_id="TotalDanceTV.hu" site_id="TOTALDANCE_TV">Total Dance TV</channel>
+  <channel site="musor.tv" lang="en" xmltv_id="TraceSportStars.fr" site_id="TRACESPORTS">Trace Sports</channel>
+  <channel site="musor.tv" lang="en" xmltv_id="TraceUrban.fr" site_id="TRACEURBAN">Trace Urban</channel>
+  <channel site="musor.tv" lang="en" xmltv_id="Travelxp.in" site_id="TRAVELXP">Travel XP</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="7TV.hu" site_id="7TV">7.TV</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="AMCHungary.hu" site_id="AMC">AMC</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="AnimalPlanetHungary.hu" site_id="ANIMAL">Animal Planet</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="ApostolTV.hu" site_id="APOSTOL_TV">Apostol TV</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="Arena4.hu" site_id="ARENA4">Arena4</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="ATV.hu" site_id="ATV">ATV</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="ATVSpirit.hu" site_id="ATV_SPIRIT">ATV Spirit</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="AutoMotorundSport.de" site_id="AUTO_MOTOR_SPORT">Auto Motor Sport</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="AXNHungary.hu" site_id="AXN">AXN</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="BabyTV.uk" site_id="BABYTV">Baby TV</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="BalatonTV.hu" site_id="BALATON_TV">Balaton TV</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="BBCEarthRomania.ro" site_id="BBC_EARTH">BBC Earth</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="BBCWorldNewsEurope.uk" site_id="BBCWORLD">BBC World News</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="BoomerangCEE.us" site_id="BOOMERANG">Boomerang</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="CartoonNetworkHungary.hu" site_id="CARTOON">Cartoon Network</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="CBSRealityEMEA.uk" site_id="CBSREALITY">CBS Reality</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="Cinemax2Hungary.hu" site_id="CINEMAX2">Cinemax 2</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="CinemaxHungary.hu" site_id="CINEMAX">Cinemax</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="CNBCEurope.uk" site_id="CNBC">CNBC</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="CNNInternationalEurope.us" site_id="CNN">CNN</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="ComedyCentralFamilyHungary.hu" site_id="COMEDY_CENTRAL_FAMILY">Comedy Central Family</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="ComedyCentralHungary.hu" site_id="COMEDY">Comedy Central</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="CoolTV.hu" site_id="COOL">Cool</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="D1TV.hu" site_id="D1TV">d1 TV</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="DaVinciHungary.hu" site_id="DAVINCI">Da Vinci</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="DigiAnimalWorldRomania.ro" site_id="DIGIANIMALWORLD">DIGI Animal World</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="DigiLifeHungary.hu" site_id="DIGILIFE">DIGI Life</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="DigiSport1Hungary.hu" site_id="DIGISPORT1">DIGI Sport 1</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="DigiSport2Hungary.hu" site_id="DIGISPORT2">DIGI Sport 2</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="DigiSport3Hungary.hu" site_id="DIGISPORT3">DIGI Sport 3</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="DigiWorldHungary.hu" site_id="DIGIWORLD">DIGI World</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="DikhTV.hu" site_id="DIKH_TV">Dikh TV</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="DirectOneTV.lu" site_id="DIRECT_ONE_TV">Direct One TV</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="DiscoveryChannelHungary.hu" site_id="DISCOVERY">Discovery Channel</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="DiscoveryScience.us" site_id="DISCOVERYSCI">Discovery Science</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="DisneyChannelHungary.hu" site_id="DISNEY">Disney Channel</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="DocuBox.nl" site_id="DOCUBOX_EN">Docubox</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="DuckTV.sk" site_id="DUCKTV">Duck TV</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="DunaTV.hu" site_id="DUNA">Duna TV</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="DunaWorld.hu" site_id="DUNAWORLD">Duna World</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="EpicDrama.se" site_id="EPIC_DRAMA">Epic Drama</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="ErdelyTV.ro" site_id="ERDELY_TV">Erdély TV</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="EuronewsHungarian.fr" site_id="EURONEWS">Euronews</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="Eurosport1Hungary.hu" site_id="EUROSPORT">Eurosport 1</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="Eurosport2Hungary.hu" site_id="EUROSPORT2">Eurosport 2</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="Eurosport4K.fr" site_id="EUROSPORT4K">Eurosport 4K</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="EWTNBonumTV.hu" site_id="BONUM">EWTN / Bonum TV</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="FashionTVEurope.fr" site_id="FTVHD">Fashion TV</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="FehervarTV.hu" site_id="FEHERVAR_TV">Fehérvár TV</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="FEM3.hu" site_id="FEM3">FEM3</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="Film4Hungary.hu" site_id="FILM4">Film4</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="FilmBoxExtraHungary.hu" site_id="FILMBOX_EXTRA_HD">Filmbox Extra</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="FilmBoxFamily.nl" site_id="FILMBOXFAMILY">Filmbox Family</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="FilmBoxPremiumHungary.hu" site_id="FILMBOX_PREMIUM">Filmbox Premium</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="FilmBoxStarsHungary.hu" site_id="FILMBOX_STARS">Filmbox Stars</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="FilmCafeHungary.hu" site_id="FILMCAFE">Film Café</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="FilmMania.hu" site_id="FILMMANIA">Film Mánia</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="FilmNowHungary.hu" site_id="FILMNOW">Film Now</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="FilmPlusHungary.hu" site_id="FILMPLUS">film+</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="FitHD.hu" site_id="FIT_HD">Fit HD</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="FIXTV.hu" site_id="FIXTV">FIX TV</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="FoodNetworkEMEA.us" site_id="FOODNETWORK">Food Network</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="FunBoxUHD.nl" site_id="FUNBOX_UHD">Funbox UltraHD 4K</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="Galaxy4.hu" site_id="GALAXY">Galaxy4</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="Gametoon.nl" site_id="GAMETOON">Gametoon</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="Hatoscsatorna.hu" site_id="HATOS_CSATORNA">Hatoscsatorna</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="HBO2Hungary.hu" site_id="HBO2">HBO 2</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="HBO3Hungary.hu" site_id="HBO3">HBO 3</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="HBOHungary.hu" site_id="HBO">HBO</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="HegyvidekTV.hu" site_id="HEGYVIDEK_TV">Hegyvidék TV</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="HetiTV.hu" site_id="HETI_TV">Heti TV</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="HGTVPanregional.us" site_id="HGTV">HGTV</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="HirTV.hu" site_id="HIRTV">Hír TV</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="HistoryHungary.hu" site_id="HISTORY">History</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="HtMusicChannelHungary.hu" site_id="HIT_MUSIC">H!T Music</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="InvestigationDiscoveryHungary.hu" site_id="ID">ID</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="IzauraTV.hu" site_id="IZAURA_TV">Izaura TV</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="JimJamHungary.hu" site_id="JIMJAM">JimJam</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="JockyTV.hu" site_id="JOCKYTV">Jocky TV</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="KaposTV.hu" site_id="KAPOS_TV">Kapos TV</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="KolcseyTV.hu" site_id="KOLCSEY_TV">Kölcsey TV</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="LifeTV.hu" site_id="LIFE_TV">Life TV</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="LoveNature.ca" site_id="LOVE_NATURE">Love Nature</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="M1.hu" site_id="M1">M1</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="M2.hu" site_id="M2">M2 / Petőfi</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="M4Sport.hu" site_id="M4_SPORT">M4 Sport</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="M4SportPlus.hu" site_id="M4_SPORT_PLUSZ">M4 Sport+</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="M5.hu" site_id="M5">M5</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="MagyarMoziTV.hu" site_id="MAGYAR_MOZI_TV">Magyar Mozi TV</channel>   
+  <channel site="musor.tv" lang="hu" xmltv_id="Match4.hu" site_id="MATCH4">Match4</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="MAX4.hu" site_id="MAX4">MAX4</channel>   
+  <channel site="musor.tv" lang="hu" xmltv_id="Mezzo.fr" site_id="MEZZO">Mezzo</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="MezzoLiveHD.fr" site_id="MEZZOHD">Mezzo Live</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="MinimaxHungary.hu" site_id="MINIMAX">Minimax</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="MoziPlus.hu" site_id="MOZI_PLUSZ">Mozi+</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="Moziverzum.hu" site_id="MOZIVERZUM">Moziverzum</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="MTV80s.uk" site_id="MTV80S">MTV 80s</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="MusicChannelHungary.hu" site_id="MUSICCHANNEL">1 Music Channel</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="MuzsikaTV.hu" site_id="MUZSIKATV">Muzsika TV</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="NationalGeographicHungary.hu" site_id="NATGEO">National Geographic</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="NationalGeographicWildHungary.hu" site_id="NATGEOWILD">National Geographic Wild</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="NauticalChannel.it" site_id="NAUTICAL_CHANNEL">Nautical Channel</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="NickelodeonHungary.hu" site_id="NICKELODEON">Nickelodeon</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="NickJrHungary.hu" site_id="NICKJR">Nick Jr</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="NicktoonsRomania.ro" site_id="NICKTOONS">Nicktoons</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="OzoneTV.hu" site_id="OZONE_TV">Ozone TV</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="PannonTV.rs" site_id="PANNON_TV">Pannon TV (Vajdaság)</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="ParamountNetworkHungary.hu" site_id="PARAMOUNT">Paramount Network</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="PaxTV.hu" site_id="PAX">PAX TV</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="PestiTV.hu" site_id="PESTI_TV">Pesti TV</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="Prime.hu" site_id="PRIME">Prime</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="RTLGold.hu" site_id="RTL_GOLD">RTL Gold</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="RTLHAROM.hu" site_id="RTL_PLUSZ">RTL HÁROM</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="RTLHungary.hu" site_id="RTL">RTL</channel>   
+  <channel site="musor.tv" lang="hu" xmltv_id="RTLKETTO.hu" site_id="RTL2">RTL KETTŐ</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="SlagerTV.hu" site_id="SLAGERTV">Sláger TV</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="SorozatPlus.hu" site_id="SOROZAT">Sorozat+</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="SpektrumHomeHungary.hu" site_id="SPEKTRUMHOME">Spektrum Home</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="SpektrumHungary.hu" site_id="SPEKTRUM">Spektrum</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="Spiler1TV.hu" site_id="SPILER_TV">Spíler1 TV</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="Spiler2TV.hu" site_id="SPILER2_TV">Spíler2 TV</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="Sport1Hungary.hu" site_id="SPORT1">Sport1</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="Sport2Hungary.hu" site_id="SPORT2">Sport2</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="StingrayiConcerts.ca" site_id="ICONCERTS">Stingray iConcerts</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="Story4.hu" site_id="STORY4">Story4</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="SuperTV2.hu" site_id="SUPERTV2">Super TV2</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="SzegedTV.hu" site_id="SZEGED_TV">Szeged TV</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="TeenNickHungary.hu" site_id="TEENNICK">TeenNick</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="TheFishingHuntingChannel.hu" site_id="FISHING_HUNTING">Fishing &amp; Hunting Channel</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="TLCHungary.hu" site_id="TLC">TLC</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="TravelChannelEMEA.uk" site_id="TRAVEL">Travel Channel</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="TV2.hu" site_id="TV2">TV2</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="TV21Ungvar.ua" site_id="TV21_UNGVAR">TV21 Ungvár (Kárpátalja)</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="TV2Comedy.hu" site_id="TV2_COMEDY">TV2 Comedy</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="TV2Kids.hu" site_id="TV2_KIDS">TV2 Kids</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="TV2Sef.hu" site_id="TV2_SEF">TV2 Séf</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="TV4.hu" site_id="TV4">TV4</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="TVEger.hu" site_id="TV_EGER">TV Eger</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="TVPaprikaHungary.hu" site_id="PAPRIKA">TV Paprika</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="UjbudaTV.hu" site_id="UJBUDA_TV">Újbuda TV</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="Viasat2.hu" site_id="VIASAT2">Viasat2</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="Viasat3.hu" site_id="VIASAT3">Viasat3</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="Viasat6.hu" site_id="VIASAT6">Viasat6</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="ViasatExploreHungary.hu" site_id="VIASATEXP">Viasat Explore</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="ViasatFilm.hu" site_id="VIASATFILM">Viasat Film</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="ViasatHistoryHungary.hu" site_id="VIASATHIST">Viasat History</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="ViasatNatureHungary.hu" site_id="VIASATNAT">Viasat Nature</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="ZalaegerszegiTV.hu" site_id="ZEG_TV">Zalaegerszegi TV</channel>
+  <channel site="musor.tv" lang="hu" xmltv_id="Zenebutik.hu" site_id="ZENEBUTIK">Zenebutik TV</channel>
+</channels>

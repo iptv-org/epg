@@ -12,7 +12,7 @@ dayjs.extend(customParseFormat)
 module.exports = {
   site: 'dishtv.in',
   days: 2,
-  url: `https://www.dishtv.in/WhatsonIndiaWebService.asmx/LoadPagginResultDataForProgram`,
+  url: 'https://www.dishtv.in/WhatsonIndiaWebService.asmx/LoadPagginResultDataForProgram',
   request: {
     method: 'POST',
     data({ channel, date }) {
@@ -23,7 +23,7 @@ module.exports = {
       }
     }
   },
-  parser: function ({ content, channel, date }) {
+  parser: function ({ content, date }) {
     let programs = []
     const data = parseContent(content)
     const items = parseItems(data)
@@ -44,7 +44,7 @@ module.exports = {
   },
   async channels() {
     const channelguide = await axios
-      .get(`https://www.dishtv.in/channelguide/`)
+      .get('https://www.dishtv.in/channelguide/')
       .then(r => r.data)
       .catch(console.log)
     const $channelguide = cheerio.load(channelguide)
@@ -60,7 +60,7 @@ module.exports = {
 
     const channels = {}
     const channelList = await axios
-      .post(`https://www.dishtv.in/WebServiceMethod.aspx/GetChannelListFromMobileAPI`, {
+      .post('https://www.dishtv.in/WebServiceMethod.aspx/GetChannelListFromMobileAPI', {
         strChannel: ''
       })
       .then(r => r.data)
@@ -82,7 +82,7 @@ module.exports = {
     for (let id of ids) {
       const promise = axios
         .post(
-          `https://www.dishtv.in/WhatsonIndiaWebService.asmx/LoadPagginResultDataForProgram`,
+          'https://www.dishtv.in/WhatsonIndiaWebService.asmx/LoadPagginResultDataForProgram',
           {
             Channelarr: id,
             fromdate: date.format('YYYYMMDD[0000]'),
@@ -117,10 +117,10 @@ function parseTitle(item) {
   return $('a').text()
 }
 
-function parseStart(item, date) {
+function parseStart(item) {
   const $ = cheerio.load(item)
   const onclick = $('i.fa-circle').attr('onclick')
-  const [_, time] = onclick.match(/RecordingEnteryOpen\('.*','.*','(.*)','.*',.*\)/)
+  const [, time] = onclick.match(/RecordingEnteryOpen\('.*','.*','(.*)','.*',.*\)/)
 
   return dayjs.tz(time, 'YYYYMMDDHHmm', 'Asia/Kolkata')
 }

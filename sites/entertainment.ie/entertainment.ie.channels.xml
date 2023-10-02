@@ -1,113 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<site site="entertainment.ie">
-  <channels>
-    <!-- <channel lang="en" xmltv_id="" site_id="bbc-one-ni">BBC One NI</channel> -->
-    <!-- <channel lang="en" xmltv_id="" site_id="bbc-two-northern-ireland">BBC Two NI</channel> -->
-    <!-- <channel lang="en" xmltv_id="" site_id="bt-sportespn">BT Sport/ESPN</channel> -->
-    <!-- <channel lang="en" xmltv_id="" site_id="e-entertainment">E! Entertainment</channel> -->
-    <!-- <channel lang="en" xmltv_id="" site_id="film4">FilmFour</channel> -->
-    <!-- <channel lang="en" xmltv_id="" site_id="great-action">Great! Action</channel> -->
-    <!-- <channel lang="en" xmltv_id="" site_id="great-movies-romance">Great! Movies Romance</channel> -->
-    <!-- <channel lang="en" xmltv_id="" site_id="home">Home</channel> -->
-    <!-- <channel lang="en" xmltv_id="" site_id="sky-cinema-batman">Sky Cinema Batman</channel> -->
-    <!-- <channel lang="en" xmltv_id="" site_id="sky-cinema-gangsters">Sky Cinema Gangsters</channel> -->
-    <!-- <channel lang="en" xmltv_id="" site_id="sky-cinema-superheroes">Sky Cinema Superheroes</channel> -->
-    <!-- <channel lang="en" xmltv_id="" site_id="sky-sports-f1">Sky Sports F1</channel> -->
-    <!-- <channel lang="en" xmltv_id="" site_id="tcm">Turner Classic Movies</channel> -->
-    <channel lang="en" xmltv_id="4Music.uk" site_id="4music">4Music</channel>
-    <channel lang="en" xmltv_id="Alibi.uk" site_id="alibi">Alibi</channel>
-    <channel lang="en" xmltv_id="AnimalPlanetUK.uk" site_id="animal-planet">Animal Planet</channel>
-    <channel lang="en" xmltv_id="BBCFour.uk" site_id="bbc-four">BBC Four</channel>
-    <channel lang="en" xmltv_id="BBCThree.uk" site_id="bbc-three">BBC Three</channel>
-    <channel lang="en" xmltv_id="BoomerangUK.uk" site_id="boomerang">Boomerang</channel>
-    <channel lang="en" xmltv_id="BoxNation.uk" site_id="box-nation">Box Nation</channel>
-    <channel lang="en" xmltv_id="CartoonNetworkUK.uk" site_id="cartoon-network">Cartoon Network</channel>
-    <channel lang="en" xmltv_id="CBBC.uk" site_id="cbbc">CBBC</channel>
-    <channel lang="en" xmltv_id="CBeebies.uk" site_id="cbeebies">CBeebies</channel>
-    <channel lang="en" xmltv_id="CBSDramaUK.uk" site_id="cbs-drama">CBS Drama</channel>
-    <channel lang="en" xmltv_id="CBSRealityUK.uk" site_id="cbs-reality">CBS Reality</channel>
-    <channel lang="en" xmltv_id="Challenge.uk" site_id="challenge">Challenge</channel>
-    <channel lang="en" xmltv_id="Channel4.uk" site_id="channel-4">Channel 4</channel>
-    <channel lang="en" xmltv_id="Channel5.uk" site_id="channel-5">Channel 5</channel>
-    <channel lang="en" xmltv_id="ComedyCentralExtra.uk" site_id="comedy-central-extra">Comedy Central Extra</channel>
-    <channel lang="en" xmltv_id="ComedyCentralUK.uk" site_id="comedy-central">Comedy Central</channel>
-    <channel lang="en" xmltv_id="Dave.uk" site_id="dave">Dave</channel>
-    <channel lang="en" xmltv_id="DiscoveryChannelUK.uk" site_id="discovery-channel">Discovery Channel</channel>
-    <channel lang="en" xmltv_id="DiscoveryHistory.uk" site_id="discovery-history">Discovery History</channel>
-    <channel lang="en" xmltv_id="DiscoveryScienceUK.uk" site_id="discovery-science">Discovery Science</channel>
-    <channel lang="en" xmltv_id="DiscoveryTurboUK.uk" site_id="discovery-turbo">Discovery Turbo</channel>
-    <channel lang="en" xmltv_id="DMAXUK.uk" site_id="dmax">DMAX</channel>
-    <channel lang="en" xmltv_id="Drama.uk" site_id="drama">Drama</channel>
-    <channel lang="en" xmltv_id="E4.uk" site_id="e4">E4</channel>
-    <channel lang="en" xmltv_id="E4Extra.uk" site_id="e4-extra">E4 Extra</channel>
-    <channel lang="en" xmltv_id="Eden.uk" site_id="eden">Eden</channel>
-    <channel lang="en" xmltv_id="Eurosport1UK.uk" site_id="eurosport-1">Eurosport 1</channel>
-    <channel lang="en" xmltv_id="Eurosport2UK.uk" site_id="eurosport-2">Eurosport 2</channel>
-    <channel lang="en" xmltv_id="FreeSports.uk" site_id="free-sports">Free Sports</channel>
-    <channel lang="en" xmltv_id="Gold.uk" site_id="gold">GOLD</channel>
-    <channel lang="en" xmltv_id="GreatMovies.uk" site_id="great-movies">Great! Movies</channel>
-    <channel lang="en" xmltv_id="GreatTV.uk" site_id="great-tv">Great! TV</channel>
-    <channel lang="en" xmltv_id="HorrorXtra.uk" site_id="horrorxtra">HorrorXtra</channel>
-    <channel lang="en" xmltv_id="InvestigationDiscoveryUK.uk" site_id="investigation-discovery">Investigation Discovery</channel>
-    <channel lang="en" xmltv_id="ITV2.uk" site_id="itv2">ITV2</channel>
-    <channel lang="en" xmltv_id="ITV3.uk" site_id="itv3">ITV3</channel>
-    <channel lang="en" xmltv_id="ITV4.uk" site_id="itv4">ITV4</channel>
-    <channel lang="en" xmltv_id="LaLigaTV.es" site_id="la-liga-tv">La Liga TV</channel>
-    <channel lang="en" xmltv_id="Legend.uk" site_id="legend">Legend</channel>
-    <channel lang="en" xmltv_id="More4.uk" site_id="more4">More4</channel>
-    <channel lang="en" xmltv_id="MTVUK.uk" site_id="mtv">MTV</channel>
-    <channel lang="en" xmltv_id="NationalGeographicUK.uk" site_id="national-geographic">National Geographic</channel>
-    <channel lang="en" xmltv_id="NationalGeographicWildUK.uk" site_id="national-geographic-wild">National Geographic Wild</channel>
-    <channel lang="en" xmltv_id="NickelodeonUK.uk" site_id="nickelodeon">Nickelodeon</channel>
-    <channel lang="en" xmltv_id="NicktoonsUK.uk" site_id="nicktoons">Nicktoons</channel>
-    <channel lang="en" xmltv_id="Pick.uk" site_id="pick">Pick</channel>
-    <channel lang="en" xmltv_id="PremierSports1Ireland.ie" site_id="premier-sports-1">Premier Sports 1</channel>
-    <channel lang="en" xmltv_id="PremierSports2Ireland.ie" site_id="premier-sports-2">Premier Sports 2</channel>
-    <channel lang="en" xmltv_id="Really.uk" site_id="really">Really</channel>
-    <channel lang="en" xmltv_id="RTE2.ie" site_id="rte2">RTÉ2</channel>
-    <channel lang="en" xmltv_id="RTEjr.ie" site_id="rte-jr">RTÉ Jr</channel>
-    <channel lang="en" xmltv_id="RTEOne.ie" site_id="rte-one">RTÉ One</channel>
-    <channel lang="en" xmltv_id="SkyArts.uk" site_id="sky-arts">Sky Arts</channel>
-    <channel lang="en" xmltv_id="SkyAtlantic.uk" site_id="sky-atlantic">Sky Atlantic</channel>
-    <channel lang="en" xmltv_id="SkyCinemaComedy.uk" site_id="sky-cinema-comedy">Sky Cinema Comedy</channel>
-    <channel lang="en" xmltv_id="SkyCinemaDrama.uk" site_id="sky-cinema-drama">Sky Cinema Drama</channel>
-    <channel lang="en" xmltv_id="SkyCinemaFamily.uk" site_id="sky-cinema-family">Sky Cinema Family</channel>
-    <channel lang="en" xmltv_id="SkyCinemaGreats.uk" site_id="sky-cinema-greats">Sky Cinema Greats</channel>
-    <channel lang="en" xmltv_id="SkyCinemaHits.uk" site_id="sky-cinema-hits">Sky Cinema Hits</channel>
-    <channel lang="en" xmltv_id="SkyCinemaPremiere.uk" site_id="sky-cinema-premiere">Sky Cinema Premiere</channel>
-    <channel lang="en" xmltv_id="SkyCinemaSciFiHorror.uk" site_id="sky-cinema-sci-fi-horror">Sky Cinema Sci-Fi - Horror</channel>
-    <channel lang="en" xmltv_id="SkyCinemaThriller.uk" site_id="sky-cinema-thriller">Sky Cinema Thriller</channel>
-    <channel lang="en" xmltv_id="SkyComedy.uk" site_id="sky-comedy">Sky Comedy</channel>
-    <channel lang="en" xmltv_id="SkyCrime.uk" site_id="sky-crime">Sky Crime</channel>
-    <channel lang="en" xmltv_id="SkyDocumentaries.uk" site_id="sky-documentaries">Sky Documentaries</channel>
-    <channel lang="en" xmltv_id="SkyHistory.uk" site_id="sky-history">Sky History</channel>
-    <channel lang="en" xmltv_id="SkyHistory2.uk" site_id="sky-history-2">Sky History 2</channel>
-    <channel lang="en" xmltv_id="SkyMax.uk" site_id="sky-max">Sky Max</channel>
-    <channel lang="en" xmltv_id="SkyNature.uk" site_id="sky-nature">Sky Nature</channel>
-    <channel lang="en" xmltv_id="SkyReplay.uk" site_id="sky-replay">Sky Replay</channel>
-    <channel lang="en" xmltv_id="SkySciFi.uk" site_id="sky-sci-fi">Sky Sci-Fi</channel>
-    <channel lang="en" xmltv_id="SkyShowcase.uk" site_id="sky-showcase">Sky Showcase</channel>
-    <channel lang="en" xmltv_id="SkySportsArena.uk" site_id="sky-sports-arena-hd">Sky Sports Arena HD</channel>
-    <channel lang="en" xmltv_id="SkySportsCricket.uk" site_id="sky-sports-cricket">Sky Sports Cricket</channel>
-    <channel lang="en" xmltv_id="SkySportsFootball.uk" site_id="sky-sports-football">Sky Sports Football</channel>
-    <channel lang="en" xmltv_id="SkySportsGolf.uk" site_id="sky-sports-golf">Sky Sports Golf</channel>
-    <channel lang="en" xmltv_id="SkySportsMainEvent.uk" site_id="sky-sports-main-event">Sky Sports Main Event</channel>
-    <channel lang="en" xmltv_id="SkySportsMix.uk" site_id="sky-sports-mix">Sky Sports Mix</channel>
-    <channel lang="en" xmltv_id="SkySportsNFL.uk" site_id="sky-sports-nfl">Sky Sports NFL</channel>
-    <channel lang="en" xmltv_id="SkySportsPremierLeague.uk" site_id="sky-sports-premier-league-roi">Sky Sports Premier League ROI</channel>
-    <channel lang="en" xmltv_id="SkyWitness.uk" site_id="sky-witness">Sky Witness</channel>
-    <channel lang="en" xmltv_id="TG4.ie" site_id="tg4">TG4</channel>
-    <channel lang="en" xmltv_id="TLCUK.uk" site_id="tlc">TLC</channel>
-    <channel lang="en" xmltv_id="TNTSports1.uk" site_id="bt-sport-1">TNT Sports 1</channel>
-    <channel lang="en" xmltv_id="TNTSports2.uk" site_id="bt-sport-2">TNT Sports 2</channel>
-    <channel lang="en" xmltv_id="TNTSports3.uk" site_id="bt-sport-3">TNT Sports 3</channel>
-    <channel lang="en" xmltv_id="UTV.uk" site_id="utv">UTV</channel>
-    <channel lang="en" xmltv_id="VirginMediaFour.ie" site_id="virgin-media-four">Virgin Media Four</channel>
-    <channel lang="en" xmltv_id="VirginMediaMore.ie" site_id="virgin-media-more">Virgin Media More</channel>
-    <channel lang="en" xmltv_id="VirginMediaOne.ie" site_id="virgin-media-one">Virgin Media One</channel>
-    <channel lang="en" xmltv_id="VirginMediaThree.ie" site_id="virgin-media-three">Virgin Media Three</channel>
-    <channel lang="en" xmltv_id="VirginMediaTwo.ie" site_id="virgin-media-two">Virgin Media Two</channel>
-    <channel lang="en" xmltv_id="W.uk" site_id="w">W</channel>
-    <channel lang="en" xmltv_id="Yesterday.uk" site_id="yesterday">Yesterday</channel>
-  </channels>
-</site>
+<channels>
+  <!-- <channel site="entertainment.ie" lang="en" xmltv_id="" site_id="bbc-one-ni">BBC One NI</channel> -->
+  <!-- <channel site="entertainment.ie" lang="en" xmltv_id="" site_id="bbc-two-northern-ireland">BBC Two NI</channel> -->
+  <!-- <channel site="entertainment.ie" lang="en" xmltv_id="" site_id="bt-sportespn">BT Sport/ESPN</channel> -->
+  <!-- <channel site="entertainment.ie" lang="en" xmltv_id="" site_id="e-entertainment">E! Entertainment</channel> -->
+  <!-- <channel site="entertainment.ie" lang="en" xmltv_id="" site_id="film4">FilmFour</channel> -->
+  <!-- <channel site="entertainment.ie" lang="en" xmltv_id="" site_id="great-action">Great! Action</channel> -->
+  <!-- <channel site="entertainment.ie" lang="en" xmltv_id="" site_id="great-movies-romance">Great! Movies Romance</channel> -->
+  <!-- <channel site="entertainment.ie" lang="en" xmltv_id="" site_id="home">Home</channel> -->
+  <!-- <channel site="entertainment.ie" lang="en" xmltv_id="" site_id="sky-cinema-batman">Sky Cinema Batman</channel> -->
+  <!-- <channel site="entertainment.ie" lang="en" xmltv_id="" site_id="sky-cinema-gangsters">Sky Cinema Gangsters</channel> -->
+  <!-- <channel site="entertainment.ie" lang="en" xmltv_id="" site_id="sky-cinema-superheroes">Sky Cinema Superheroes</channel> -->
+  <!-- <channel site="entertainment.ie" lang="en" xmltv_id="" site_id="sky-sports-f1">Sky Sports F1</channel> -->
+  <!-- <channel site="entertainment.ie" lang="en" xmltv_id="" site_id="tcm">Turner Classic Movies</channel> -->
+  <channel site="entertainment.ie" lang="en" xmltv_id="4Music.uk" site_id="4music">4Music</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="Alibi.uk" site_id="alibi">Alibi</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="AnimalPlanetUK.uk" site_id="animal-planet">Animal Planet</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="BBCFour.uk" site_id="bbc-four">BBC Four</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="BBCThree.uk" site_id="bbc-three">BBC Three</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="BoomerangUK.uk" site_id="boomerang">Boomerang</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="BoxNation.uk" site_id="box-nation">Box Nation</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="CartoonNetworkUK.uk" site_id="cartoon-network">Cartoon Network</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="CBBC.uk" site_id="cbbc">CBBC</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="CBeebies.uk" site_id="cbeebies">CBeebies</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="CBSDramaUK.uk" site_id="cbs-drama">CBS Drama</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="CBSRealityUK.uk" site_id="cbs-reality">CBS Reality</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="Challenge.uk" site_id="challenge">Challenge</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="Channel4.uk" site_id="channel-4">Channel 4</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="Channel5.uk" site_id="channel-5">Channel 5</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="ComedyCentralExtra.uk" site_id="comedy-central-extra">Comedy Central Extra</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="ComedyCentralUK.uk" site_id="comedy-central">Comedy Central</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="Dave.uk" site_id="dave">Dave</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="DiscoveryChannelUK.uk" site_id="discovery-channel">Discovery Channel</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="DiscoveryHistory.uk" site_id="discovery-history">Discovery History</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="DiscoveryScienceUK.uk" site_id="discovery-science">Discovery Science</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="DiscoveryTurboUK.uk" site_id="discovery-turbo">Discovery Turbo</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="DMAXUK.uk" site_id="dmax">DMAX</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="Drama.uk" site_id="drama">Drama</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="E4.uk" site_id="e4">E4</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="E4Extra.uk" site_id="e4-extra">E4 Extra</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="Eden.uk" site_id="eden">Eden</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="Eurosport1UK.uk" site_id="eurosport-1">Eurosport 1</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="Eurosport2UK.uk" site_id="eurosport-2">Eurosport 2</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="FreeSports.uk" site_id="free-sports">Free Sports</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="Gold.uk" site_id="gold">GOLD</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="GreatMovies.uk" site_id="great-movies">Great! Movies</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="GreatTV.uk" site_id="great-tv">Great! TV</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="HorrorXtra.uk" site_id="horrorxtra">HorrorXtra</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="InvestigationDiscoveryUK.uk" site_id="investigation-discovery">Investigation Discovery</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="ITV2.uk" site_id="itv2">ITV2</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="ITV3.uk" site_id="itv3">ITV3</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="ITV4.uk" site_id="itv4">ITV4</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="LaLigaTV.es" site_id="la-liga-tv">La Liga TV</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="Legend.uk" site_id="legend">Legend</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="More4.uk" site_id="more4">More4</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="MTVUK.uk" site_id="mtv">MTV</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="NationalGeographicUK.uk" site_id="national-geographic">National Geographic</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="NationalGeographicWildUK.uk" site_id="national-geographic-wild">National Geographic Wild</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="NickelodeonUK.uk" site_id="nickelodeon">Nickelodeon</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="NicktoonsUK.uk" site_id="nicktoons">Nicktoons</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="Pick.uk" site_id="pick">Pick</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="PremierSports1Ireland.ie" site_id="premier-sports-1">Premier Sports 1</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="PremierSports2Ireland.ie" site_id="premier-sports-2">Premier Sports 2</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="Really.uk" site_id="really">Really</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="RTE2.ie" site_id="rte2">RTÉ2</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="RTEjr.ie" site_id="rte-jr">RTÉ Jr</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="RTEOne.ie" site_id="rte-one">RTÉ One</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="SkyArts.uk" site_id="sky-arts">Sky Arts</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="SkyAtlantic.uk" site_id="sky-atlantic">Sky Atlantic</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="SkyCinemaComedy.uk" site_id="sky-cinema-comedy">Sky Cinema Comedy</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="SkyCinemaDrama.uk" site_id="sky-cinema-drama">Sky Cinema Drama</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="SkyCinemaFamily.uk" site_id="sky-cinema-family">Sky Cinema Family</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="SkyCinemaGreats.uk" site_id="sky-cinema-greats">Sky Cinema Greats</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="SkyCinemaHits.uk" site_id="sky-cinema-hits">Sky Cinema Hits</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="SkyCinemaPremiere.uk" site_id="sky-cinema-premiere">Sky Cinema Premiere</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="SkyCinemaSciFiHorror.uk" site_id="sky-cinema-sci-fi-horror">Sky Cinema Sci-Fi - Horror</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="SkyCinemaThriller.uk" site_id="sky-cinema-thriller">Sky Cinema Thriller</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="SkyComedy.uk" site_id="sky-comedy">Sky Comedy</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="SkyCrime.uk" site_id="sky-crime">Sky Crime</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="SkyDocumentaries.uk" site_id="sky-documentaries">Sky Documentaries</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="SkyHistory.uk" site_id="sky-history">Sky History</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="SkyHistory2.uk" site_id="sky-history-2">Sky History 2</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="SkyMax.uk" site_id="sky-max">Sky Max</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="SkyNature.uk" site_id="sky-nature">Sky Nature</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="SkyReplay.uk" site_id="sky-replay">Sky Replay</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="SkySciFi.uk" site_id="sky-sci-fi">Sky Sci-Fi</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="SkyShowcase.uk" site_id="sky-showcase">Sky Showcase</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="SkySportsArena.uk" site_id="sky-sports-arena-hd">Sky Sports Arena HD</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="SkySportsCricket.uk" site_id="sky-sports-cricket">Sky Sports Cricket</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="SkySportsFootball.uk" site_id="sky-sports-football">Sky Sports Football</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="SkySportsGolf.uk" site_id="sky-sports-golf">Sky Sports Golf</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="SkySportsMainEvent.uk" site_id="sky-sports-main-event">Sky Sports Main Event</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="SkySportsMix.uk" site_id="sky-sports-mix">Sky Sports Mix</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="SkySportsNFL.uk" site_id="sky-sports-nfl">Sky Sports NFL</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="SkySportsPremierLeague.uk" site_id="sky-sports-premier-league-roi">Sky Sports Premier League ROI</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="SkyWitness.uk" site_id="sky-witness">Sky Witness</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="TG4.ie" site_id="tg4">TG4</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="TLCUK.uk" site_id="tlc">TLC</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="TNTSports1.uk" site_id="bt-sport-1">TNT Sports 1</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="TNTSports2.uk" site_id="bt-sport-2">TNT Sports 2</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="TNTSports3.uk" site_id="bt-sport-3">TNT Sports 3</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="UTV.uk" site_id="utv">UTV</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="VirginMediaFour.ie" site_id="virgin-media-four">Virgin Media Four</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="VirginMediaMore.ie" site_id="virgin-media-more">Virgin Media More</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="VirginMediaOne.ie" site_id="virgin-media-one">Virgin Media One</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="VirginMediaThree.ie" site_id="virgin-media-three">Virgin Media Three</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="VirginMediaTwo.ie" site_id="virgin-media-two">Virgin Media Two</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="W.uk" site_id="w">W</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="Yesterday.uk" site_id="yesterday">Yesterday</channel>
+</channels>

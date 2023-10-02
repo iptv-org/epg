@@ -14,13 +14,15 @@ module.exports = {
     }
   },
   url({ date }) {
-    return `https://www.singtel.com/etc/singtel/public/tv/epg-parsed-data/${date.format('DDMMYYYY')}.json`
+    return `https://www.singtel.com/etc/singtel/public/tv/epg-parsed-data/${date.format(
+      'DDMMYYYY'
+    )}.json`
   },
   parser({ content, channel }) {
     let programs = []
     const items = parseItems(content, channel)
     items.forEach(item => {
-      const start = dayjs.tz(item.startDateTime,'Asia/Singapore')
+      const start = dayjs.tz(item.startDateTime, 'Asia/Singapore')
       const stop = start.add(item.duration, 's')
       programs.push({
         title: item.program.title,

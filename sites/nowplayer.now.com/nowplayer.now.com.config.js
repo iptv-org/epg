@@ -35,7 +35,7 @@ module.exports = {
   },
   async channels({ lang }) {
     const html = await axios
-      .get(`https://nowplayer.now.com/channels`, { headers: { Accept: 'text/html' } })
+      .get('https://nowplayer.now.com/channels', { headers: { Accept: 'text/html' } })
       .then(r => r.data)
       .catch(console.log)
 

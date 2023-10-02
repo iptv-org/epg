@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/mujtvprogram.cz/mujtvprogram.cz.config.js --channels=sites/mujtvprogram.cz/mujtvprogram.cz.channels.xml --output=guide.xml --days=2
+// npm run grab -- --site=mujtvprogram.cz
 
 const { parser, url } = require('./mujtvprogram.cz.config.js')
 const fs = require('fs')
@@ -37,8 +37,9 @@ it('can parse response', () => {
     return p
   })
   expect(results[3]).toMatchObject({
-    title: `Čepice`,
-    description: `Jarka (J. Bohdalová) vyčítá manželovi Jiřímu (F. Řehák), že jí nepomáhá při předvánočním úklidu. Vzápětí ale náhodou najde ve skříni ukrytou dámskou čepici a napadne ji, že jde o Jiřího dárek pro ni pod stromeček. Její chování se ihned změní. Jen muži naznačí, že by chtěla čepici jiné barvy. Manžel jí ovšem řekne, že čepici si u něj schoval kamarád Venca (M. Šulc). Zklamaná žena to prozradí Vencově manželce Božce (A. Tománková). Na Štědrý den však Božka najde pod stromečkem jen rtěnku...`,
+    title: 'Čepice',
+    description:
+      'Jarka (J. Bohdalová) vyčítá manželovi Jiřímu (F. Řehák), že jí nepomáhá při předvánočním úklidu. Vzápětí ale náhodou najde ve skříni ukrytou dámskou čepici a napadne ji, že jde o Jiřího dárek pro ni pod stromeček. Její chování se ihned změní. Jen muži naznačí, že by chtěla čepici jiné barvy. Manžel jí ovšem řekne, že čepici si u něj schoval kamarád Venca (M. Šulc). Zklamaná žena to prozradí Vencově manželce Božce (A. Tománková). Na Štědrý den však Božka najde pod stromečkem jen rtěnku...',
     category: 'film',
     date: '1983',
     director: ['Mudra F.'],

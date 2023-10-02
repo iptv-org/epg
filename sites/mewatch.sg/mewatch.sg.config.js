@@ -40,7 +40,7 @@ function parseStop(item) {
 function parseRating(info) {
   const classification = info.classification
   if (classification && classification.code) {
-    const [_, system, value] = classification.code.match(/^([A-Z]+)\-([A-Z0-9]+)/) || [
+    const [, system, value] = classification.code.match(/^([A-Z]+)-([A-Z0-9]+)/) || [
       null,
       null,
       null

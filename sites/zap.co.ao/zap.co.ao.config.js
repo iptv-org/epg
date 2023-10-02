@@ -4,7 +4,6 @@ const axios = require('axios')
 module.exports = {
   site: 'zap.co.ao',
   days: 2,
-  maxConnections: 200,
   url: function ({ date, channel }) {
     return `https://zapon.zapsi.net/ao/m/api/epg/events?date=${date.format('YYYYMMDD')}&channel=${
       channel.site_id
@@ -28,7 +27,7 @@ module.exports = {
   },
   async channels() {
     const channels = await axios
-      .get(`https://zapon.zapsi.net/ao/m/api/epg/channels`)
+      .get('https://zapon.zapsi.net/ao/m/api/epg/channels')
       .then(r => r.data.data)
       .catch(console.log)
 

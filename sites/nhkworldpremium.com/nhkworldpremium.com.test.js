@@ -1,10 +1,9 @@
-// npx epg-grabber --config=sites/nhkworldpremium.com/nhkworldpremium.com.config.js --channels=sites/nhkworldpremium.com/nhkworldpremium.com_en.channels.xml --output=guide.xml
-// npx epg-grabber --config=sites/nhkworldpremium.com/nhkworldpremium.com.config.js --channels=sites/nhkworldpremium.com/nhkworldpremium.com_ja.channels.xml --output=guide.xml
+// npm run grab -- --site=nhkworldpremium.com
+// npm run grab -- --site=nhkworldpremium.com
 
-const { parser, url, request } = require('./nhkworldpremium.com.config.js')
+const { parser, url } = require('./nhkworldpremium.com.config.js')
 const fs = require('fs')
 const path = require('path')
-const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')

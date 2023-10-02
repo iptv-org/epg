@@ -51,7 +51,7 @@ module.exports = {
   },
   async channels() {
     const xml = await axios
-      .get(`https://www.visionplus.id/sitemap-channels.xml`)
+      .get('https://www.visionplus.id/sitemap-channels.xml')
       .then(r => r.data)
       .catch(console.log)
 

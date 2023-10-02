@@ -10,7 +10,7 @@ dayjs.extend(timezone)
 module.exports = {
   site: 'novasports.gr',
   days: 2,
-  url: function ({ date, channel }) {
+  url: function ({ date }) {
     return `https://www.novasports.gr/wp-admin/admin-ajax.php?action=nova_get_template&template=tv-program/broadcast&dt=${date.format(
       'YYYY-MM-DD'
     )}`
@@ -43,13 +43,13 @@ module.exports = {
   async channels() {
     const html = await axios
       .get(
-        `https://www.novasports.gr/wp-admin/admin-ajax.php?action=nova_get_template&template=tv-program/broadcast&dt=2022-10-29`
+        'https://www.novasports.gr/wp-admin/admin-ajax.php?action=nova_get_template&template=tv-program/broadcast&dt=2022-10-29'
       )
       .then(r => r.data)
       .catch(console.log)
     const $ = cheerio.load(html)
     const items = $(
-      `#mc-broadcast-content:nth-child(2) > div > #channelist-slider > div.channelist-wrapper.slider-wrapper.content > div > div`
+      '#mc-broadcast-content:nth-child(2) > div > #channelist-slider > div.channelist-wrapper.slider-wrapper.content > div > div'
     ).toArray()
     return items.map(item => {
       const name = $(item).find('.channel').text().trim()

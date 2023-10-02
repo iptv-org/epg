@@ -47,7 +47,7 @@ module.exports = {
 }
 
 function parseItems(content, channel) {
-  const [_, channelId] = channel.site_id.split('#')
+  const [, channelId] = channel.site_id.split('#')
   const data = JSON.parse(content)
   if (!data || !Array.isArray(data.channels)) return []
   const channelData = data.channels.find(i => i.id === channelId)

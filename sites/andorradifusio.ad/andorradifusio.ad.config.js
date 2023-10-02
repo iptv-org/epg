@@ -47,8 +47,8 @@ function parseItems(content, date) {
     .parent()
     .parent()
   const items = []
-  const titles = column.find(`p`).toArray()
-  column.find(`h4`).each((i, time) => {
+  const titles = column.find('p').toArray()
+  column.find('h4').each((i, time) => {
     items.push({
       time: $(time).text(),
       title: $(titles[i]).text()

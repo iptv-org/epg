@@ -1,5 +1,5 @@
 // npm run channels:parse -- --config=./sites/tv.vera.com.uy/tv.vera.com.uy.config.js --output=./sites/tv.vera.com.uy/tv.vera.com.uy.channels.xml
-// npx epg-grabber --config=sites/tv.vera.com.uy/tv.vera.com.uy.config.js --channels=sites/tv.vera.com.uy/tv.vera.com.uy.channels.xml --output=guide.xml --days=2
+// npm run grab -- --site=tv.vera.com.uy
 
 const { parser, url, request } = require('./tv.vera.com.uy.config.js')
 const fs = require('fs')
@@ -45,7 +45,7 @@ it('can generate valid url', async () => {
   const result = await url({ date, channel })
 
   expect(result).toBe(
-    `https://cds-frontend.vera.com.uy/api-contenidos/canales/epg/2s6nd?limit=500&dias_siguientes=0&fecha=2023-02-11&token=MpDY52p1V6g511VSABp1015B`
+    'https://cds-frontend.vera.com.uy/api-contenidos/canales/epg/2s6nd?limit=500&dias_siguientes=0&fecha=2023-02-11&token=MpDY52p1V6g511VSABp1015B'
   )
 })
 

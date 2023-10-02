@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<site site="frikanalen.no">
-  <channels>
-    <channel lang="no" xmltv_id="Frikanalen.no" site_id="#">Frikanalen</channel>
-  </channels>
-</site>
+<channels>
+  <channel site="frikanalen.no" lang="no" xmltv_id="Frikanalen.no" site_id="#">Frikanalen</channel>
+</channels>

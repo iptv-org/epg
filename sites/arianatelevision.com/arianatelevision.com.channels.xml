@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<site site="arianatelevision.com">
-  <channels>
-    <channel lang="en" xmltv_id="ATNNational.af" site_id="#">Ariana TV National</channel>
-  </channels>
-</site>
+<channels>
+  <channel site="arianatelevision.com" lang="en" xmltv_id="ATNNational.af" site_id="#">Ariana TV National</channel>
+</channels>

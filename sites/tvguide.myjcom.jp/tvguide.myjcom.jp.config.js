@@ -10,9 +10,6 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'tvguide.myjcom.jp',
-  request: {
-    timeout: 30000 // 30 seconds
-  },
   days: 2,
   url: function ({ date, channel }) {
     const id = `${channel.site_id}_${date.format('YYYYMMDD')}`
@@ -38,19 +35,19 @@ module.exports = {
   async channels() {
     const requests = [
       axios.get(
-        `https://tvguide.myjcom.jp/api/mypage/getEpgChannelList/?channelType=2&area=108&channelGenre&course&chart&is_adult=true`
+        'https://tvguide.myjcom.jp/api/mypage/getEpgChannelList/?channelType=2&area=108&channelGenre&course&chart&is_adult=true'
       ),
       axios.get(
-        `https://tvguide.myjcom.jp/api/mypage/getEpgChannelList/?channelType=3&area=108&channelGenre&course&chart&is_adult=true`
+        'https://tvguide.myjcom.jp/api/mypage/getEpgChannelList/?channelType=3&area=108&channelGenre&course&chart&is_adult=true'
       ),
       axios.get(
-        `https://tvguide.myjcom.jp/api/mypage/getEpgChannelList/?channelType=5&area=108&channelGenre&course&chart&is_adult=true`
+        'https://tvguide.myjcom.jp/api/mypage/getEpgChannelList/?channelType=5&area=108&channelGenre&course&chart&is_adult=true'
       ),
       axios.get(
-        `https://tvguide.myjcom.jp/api/mypage/getEpgChannelList/?channelType=120&area=108&channelGenre&course&chart&is_adult=true`
+        'https://tvguide.myjcom.jp/api/mypage/getEpgChannelList/?channelType=120&area=108&channelGenre&course&chart&is_adult=true'
       ),
       axios.get(
-        `https://tvguide.myjcom.jp/api/mypage/getEpgChannelList/?channelType=200&area=108&channelGenre&course&chart&is_adult=true`
+        'https://tvguide.myjcom.jp/api/mypage/getEpgChannelList/?channelType=200&area=108&channelGenre&course&chart&is_adult=true'
       )
     ]
 

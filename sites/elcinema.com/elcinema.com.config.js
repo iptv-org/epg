@@ -11,7 +11,6 @@ dayjs.extend(utc)
 
 module.exports = {
   site: 'elcinema.com',
-  skip: true, // NOTE: the guide shows the wrong time (https://github.com/iptv-org/epg/issues/994)
   days: 2,
   url({ channel }) {
     const lang = channel.lang === 'en' ? 'en/' : '/'
