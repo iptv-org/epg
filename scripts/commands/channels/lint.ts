@@ -1,18 +1,10 @@
-const chalk = require('chalk')
-const libxml = require('libxmljs2')
-const { program } = require('commander')
-const { logger, file } = require('../../core')
+import chalk from 'chalk'
+import libxml, { ValidationError } from 'libxmljs2'
+import { program } from 'commander'
+import { Logger, Storage, File } from '@freearhey/core'
 
 const xsd = `<?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
-  <xs:element name="site">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element ref="channels"/>
-      </xs:sequence>
-      <xs:attribute name="site" use="required" type="xs:string"/>
-    </xs:complexType>
-  </xs:element>
   <xs:element name="channels">
     <xs:complexType>
       <xs:sequence>
@@ -22,43 +14,53 @@ const xsd = `<?xml version="1.0" encoding="UTF-8"?>
   </xs:element>
   <xs:element name="channel">
     <xs:complexType mixed="true">
+      <xs:attribute name="site" use="required" type="xs:string"/>
       <xs:attribute name="lang" use="required" type="xs:string"/>
       <xs:attribute name="site_id" use="required" type="xs:string"/>
       <xs:attribute name="xmltv_id" use="required" type="xs:string"/>
+      <xs:attribute name="logo" type="xs:string"/>
     </xs:complexType>
   </xs:element>
 </xs:schema>`
 
-program.argument('<filepath>', 'Path to file to validate').parse(process.argv)
+program
+  .option(
+    '-c, --channels <path>',
+    'Path to channels.xml file to validate',
+    'sites/**/*.channels.xml'
+  )
+  .parse(process.argv)
+
+const options = program.opts()
 
 async function main() {
-  if (!program.args.length) {
-    logger.error('required argument "filepath" not specified')
-  }
+  const logger = new Logger()
+  const storage = new Storage()
 
-  let errors = []
+  logger.info('options:')
+  logger.tree(options)
 
-  for (const filepath of program.args) {
-    if (!filepath.endsWith('.xml')) continue
+  let errors: ValidationError[] = []
 
-    const xml = await file.read(filepath)
+  let files: string[] = await storage.list(options.channels)
+  for (const filepath of files) {
+    const file = new File(filepath)
+    if (file.extension() !== 'xml') continue
 
-    let localErrors = []
+    const xml = await storage.load(filepath)
 
-    try {
-      const xsdDoc = libxml.parseXml(xsd)
-      const doc = libxml.parseXml(xml)
+    let localErrors: ValidationError[] = []
 
-      if (!doc.validate(xsdDoc)) {
-        localErrors = doc.validationErrors
-      }
-    } catch (error) {
-      localErrors.push(error)
+    const xsdDoc = libxml.parseXml(xsd)
+    const doc = libxml.parseXml(xml)
+
+    if (!doc.validate(xsdDoc)) {
+      localErrors = doc.validationErrors
     }
 
     if (localErrors.length) {
       console.log(`\n${chalk.underline(filepath)}`)
-      localErrors.forEach(error => {
+      localErrors.forEach((error: ValidationError) => {
         const position = `${error.line}:${error.column}`
         console.log(` ${chalk.gray(position.padEnd(4, ' '))} ${error.message.trim()}`)
       })

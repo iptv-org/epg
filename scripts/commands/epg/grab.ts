@@ -1,0 +1,115 @@
+import { Logger, Timer, Storage, Collection } from '@freearhey/core'
+import { program } from 'commander'
+import { CronJob } from 'cron'
+import { Queue, Job, ChannelsParser } from '../../core'
+import { Channel } from 'epg-grabber'
+import path from 'path'
+import { SITES_DIR } from '../../constants'
+
+program
+  .option('-s, --site <name>', 'Name of the site to parse')
+  .option(
+    '-c, --channels <path>',
+    'Path to *.channels.xml file (required if the "--site" attribute is not specified)'
+  )
+  .option('-o, --output <path>', 'Path to output file', 'guide.xml')
+  .option('-l, --lang <code>', 'Filter channels by language (ISO 639-2 code)')
+  .option('-t, --timeout <milliseconds>', 'Override the default timeout for each request')
+  .option(
+    '--days <days>',
+    'Override the number of days for which the program will be loaded (defaults to the value from the site config)',
+    value => parseInt(value)
+  )
+  .option(
+    '--maxConnections <number>',
+    'Limit on the number of concurrent requests',
+    value => parseInt(value),
+    1
+  )
+  .option('--cron <expression>', 'Schedule a script run (example: "0 0 * * *")')
+  .option('--gzip', 'Create a compressed version of the guide as well', false)
+  .parse(process.argv)
+
+export type GrabOptions = {
+  site?: string
+  channels?: string
+  output: string
+  gzip: boolean
+  maxConnections: number
+  timeout?: string
+  lang?: string
+  days?: number
+  cron?: string
+}
+
+const options: GrabOptions = program.opts()
+
+async function main() {
+  if (!options.site && !options.channels)
+    throw new Error('One of the arguments must be presented: `--site` or `--channels`')
+
+  const logger = new Logger()
+
+  logger.start('staring...')
+
+  logger.info('config:')
+  logger.tree(options)
+
+  logger.info(`loading channels...`)
+  const storage = new Storage()
+  const parser = new ChannelsParser({ storage })
+
+  let files: string[] = []
+  if (options.site) {
+    files = await storage.list(path.join(SITES_DIR, `${options.site}/*.channels.xml`))
+  } else if (options.channels) {
+    files = await storage.list(options.channels)
+  }
+
+  let parsedChannels = new Collection()
+  for (let filepath of files) {
+    parsedChannels = parsedChannels.concat(await parser.parse(filepath))
+  }
+  if (options.lang) {
+    parsedChannels = parsedChannels.filter((channel: Channel) => channel.lang === options.lang)
+  }
+  logger.info(`  found ${parsedChannels.count()} channels`)
+
+  logger.info('creating queue...')
+  const queue = new Queue({
+    parsedChannels,
+    logger,
+    options
+  })
+  await queue.create()
+  logger.info(`  added ${queue.size()} items`)
+
+  const job = new Job({
+    queue,
+    logger,
+    options
+  })
+
+  let runIndex = 1
+  if (options.cron) {
+    const cronJob = new CronJob(options.cron, async () => {
+      logger.info(`run #${runIndex}:`)
+      const timer = new Timer()
+      timer.start()
+      await job.run()
+      runIndex++
+      logger.success(`  done in ${timer.format('HH[h] mm[m] ss[s]')}`)
+    })
+    cronJob.start()
+  } else {
+    logger.info(`run #${runIndex}:`)
+    const timer = new Timer()
+    timer.start()
+    await job.run()
+    logger.success(`  done in ${timer.format('HH[h] mm[m] ss[s]')}`)
+  }
+
+  logger.info('finished')
+}
+
+main()

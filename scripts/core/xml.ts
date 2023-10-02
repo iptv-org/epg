@@ -1,25 +1,36 @@
-const xml = {}
+import { Collection } from '@freearhey/core'
+import { Channel } from 'epg-grabber'
 
-xml.create = function (items, site) {
-  let output = `<?xml version="1.0" encoding="UTF-8"?>\r\n<site site="${site}">\r\n  <channels>\r\n`
+export class XML {
+  items: Collection
+  site: string
 
-  items.forEach(channel => {
-    const logo = channel.logo ? ` logo="${channel.logo}"` : ''
-    const xmltv_id = channel.xmltv_id || ''
-    const lang = channel.lang || ''
-    const site_id = channel.site_id || ''
-    output += `    <channel lang="${lang}" xmltv_id="${escapeString(
-      xmltv_id
-    )}" site_id="${site_id}"${logo}>${escapeString(channel.name)}</channel>\r\n`
-  })
+  constructor(items: Collection, site: string) {
+    this.items = items
+    this.site = site
+  }
 
-  output += `  </channels>\r\n</site>\r\n`
+  toString() {
+    let output = '<?xml version="1.0" encoding="UTF-8"?>\r\n<channels>\r\n'
 
-  return output
+    this.items.forEach((channel: Channel) => {
+      const logo = channel.logo ? ` logo="${channel.logo}"` : ''
+      const xmltv_id = channel.xmltv_id || ''
+      const lang = channel.lang || ''
+      const site_id = channel.site_id || ''
+      output += `  <channel site="${this.site}" lang="${lang}" xmltv_id="${escapeString(
+        xmltv_id
+      )}" site_id="${site_id}"${logo}>${escapeString(channel.name)}</channel>\r\n`
+    })
+
+    output += '</channels>\r\n'
+
+    return output
+  }
 }
 
-function escapeString(string, defaultValue = '') {
-  if (!string) return defaultValue
+function escapeString(value: string, defaultValue: string = '') {
+  if (!value) return defaultValue
 
   const regex = new RegExp(
     '((?:[\0-\x08\x0B\f\x0E-\x1F\uFFFD\uFFFE\uFFFF]|[\uD800-\uDBFF](?![\uDC00-\uDFFF])|(?:[^\uD800-\uDBFF]|^)[\uDC00-\uDFFF]))|([\\x7F-\\x84]|[\\x86-\\x9F]|[\\uFDD0-\\uFDEF]|(?:\\uD83F[\\uDFFE\\uDFFF])|(?:\\uD87F[\\uDF' +
@@ -33,9 +44,9 @@ function escapeString(string, defaultValue = '') {
     'g'
   )
 
-  string = String(string || '').replace(regex, '')
+  value = String(value || '').replace(regex, '')
 
-  return string
+  return value
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
@@ -45,5 +56,3 @@ function escapeString(string, defaultValue = '') {
     .replace(/  +/g, ' ')
     .trim()
 }
-
-module.exports = xml
