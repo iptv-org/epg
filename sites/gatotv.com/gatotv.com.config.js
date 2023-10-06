@@ -63,7 +63,7 @@ module.exports = {
 }
 
 function parseTitle($item) {
-  return $item('td:nth-child(4) > div > div > a > span,td:nth-child(3) > div > div > span').text()
+  return $item('td:nth-child(4) > div > div > a > span,td:nth-child(3) > div > div > span,td:nth-child(3) > div > div > a > span').text()
 }
 
 function parseDescription($item) {
