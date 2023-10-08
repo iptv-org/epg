@@ -38,7 +38,7 @@ module.exports = {
   },
   async channels() {
     let items = await axios
-      .get(`https://m.tving.com/guide/schedule.tving`)
+      .get('https://m.tving.com/guide/schedule.tving')
       .then(r => r.data)
       .then(html => {
         let $ = cheerio.load(html)
@@ -51,7 +51,7 @@ module.exports = {
       let $item = cheerio.load(item)
       let [, site_id] = $item('a')
         .attr('href')
-        .match(/\?id\=(.*)/) || [null, null]
+        .match(/\?id=(.*)/) || [null, null]
       let name = $item('img').attr('alt')
 
       return {
@@ -68,11 +68,11 @@ function parseIcon(item) {
 }
 
 function parseStart(item) {
-  return dayjs.tz(item.broadcast_start_time.toString(), `YYYYMMDDHHmmss`, 'Asia/Seoul')
+  return dayjs.tz(item.broadcast_start_time.toString(), 'YYYYMMDDHHmmss', 'Asia/Seoul')
 }
 
 function parseStop(item) {
-  return dayjs.tz(item.broadcast_end_time.toString(), `YYYYMMDDHHmmss`, 'Asia/Seoul')
+  return dayjs.tz(item.broadcast_end_time.toString(), 'YYYYMMDDHHmmss', 'Asia/Seoul')
 }
 
 function parseCategories(item) {

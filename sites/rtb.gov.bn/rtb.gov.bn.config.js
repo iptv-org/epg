@@ -9,12 +9,9 @@ dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
 module.exports = {
-  skip: true, // INFO: guide is not available on the site
   site: 'rtb.gov.bn',
   days: 2,
   url: function ({ channel, date }) {
-    const [position] = channel.site_id.split('#')
-
     return encodeURI(
       `http://www.rtb.gov.bn/PublishingImages/SitePages/Programme Guide/${
         channel.site_id
@@ -53,7 +50,13 @@ function parseStart(item, date) {
 }
 
 async function parseItems(buffer) {
-  const data = await pdf(buffer).catch(err => null)
+  let data
+  try {
+    data = await pdf(buffer)
+  } catch (err) {
+    return []
+  }
+
   if (!data) return []
 
   return data.text
@@ -64,7 +67,7 @@ async function parseItems(buffer) {
       return string && /^\d{2}:\d{2}/.test(string)
     })
     .map(s => {
-      const [_, time, title] = s.trim().match(/^(\d{2}:\d{2}) (.*)/) || [null, null, null]
+      const [, time, title] = s.trim().match(/^(\d{2}:\d{2}) (.*)/) || [null, null, null]
 
       return { time, title }
     })

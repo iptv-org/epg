@@ -3,13 +3,12 @@ const dayjs = require('dayjs')
 module.exports = {
   site: 'mbc.net',
   days: 2,
-  skip: true, // NOTE: there is no program on the site
   url({ date, channel }) {
     return `https://www.mbc.net/.rest/api/channel/grids?from=${date.valueOf()}&to=${date
       .add(1, 'd')
       .valueOf()}&channel=${channel.site_id}`
   },
-  parser: function ({ content, channel, date }) {
+  parser: function ({ content }) {
     let programs = []
     const items = parseItems(content)
     items.forEach(item => {

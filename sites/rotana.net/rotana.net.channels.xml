@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<site site="rotana.net">
-  <channels>
-    <channel lang="ar" xmltv_id="LBC.sa" site_id="LBC-15">LBC</channel>
-    <channel lang="ar" xmltv_id="RotanaAflamPlusHD.sa" site_id="AFLAM-1-1">Rotana Aflam+</channel>
-    <channel lang="ar" xmltv_id="RotanaAmerica.sa" site_id="AMERICA-11">Rotana America</channel>
-    <channel lang="ar" xmltv_id="RotanaCinemaEgypt.eg" site_id="CINEMA-EGY-11">Rotana Cinema Egypt</channel>
-    <channel lang="ar" xmltv_id="RotanaCinemaKSA.sa" site_id="CINEMA-10">Rotana Cinema KSA</channel>
-    <channel lang="ar" xmltv_id="RotanaClassic.sa" site_id="CLASSIC-12">Rotana Classic</channel>
-    <channel lang="ar" xmltv_id="RotanaComedy.sa" site_id="COMEDY-13">Rotana Comedy</channel>
-    <channel lang="ar" xmltv_id="RotanaDrama.sa" site_id="DRAMA-13">Rotana Drama</channel>
-    <channel lang="ar" xmltv_id="RotanaKhalijia.sa" site_id="KHALIJIA-11">Rotana Khalejia</channel>
-    <channel lang="ar" xmltv_id="RotanaKids.sa" site_id="KIDS-12">Rotana Kids</channel>
-    <channel lang="ar" xmltv_id="RotanaPlusHD.sa" site_id="ROTANA-HD-11">Rotana+</channel>
-  </channels>
-</site>
+<channels>
+  <channel site="rotana.net" lang="ar" xmltv_id="LBC.sa" site_id="LBC-15">LBC</channel>
+  <channel site="rotana.net" lang="ar" xmltv_id="RotanaAflamPlusHD.sa" site_id="AFLAM-1-1">Rotana Aflam+</channel>
+  <channel site="rotana.net" lang="ar" xmltv_id="RotanaAmerica.sa" site_id="AMERICA-11">Rotana America</channel>
+  <channel site="rotana.net" lang="ar" xmltv_id="RotanaCinemaEgypt.eg" site_id="CINEMA-EGY-11">Rotana Cinema Egypt</channel>
+  <channel site="rotana.net" lang="ar" xmltv_id="RotanaCinemaKSA.sa" site_id="CINEMA-10">Rotana Cinema KSA</channel>
+  <channel site="rotana.net" lang="ar" xmltv_id="RotanaClassic.sa" site_id="CLASSIC-12">Rotana Classic</channel>
+  <channel site="rotana.net" lang="ar" xmltv_id="RotanaComedy.sa" site_id="COMEDY-13">Rotana Comedy</channel>
+  <channel site="rotana.net" lang="ar" xmltv_id="RotanaDrama.sa" site_id="DRAMA-13">Rotana Drama</channel>
+  <channel site="rotana.net" lang="ar" xmltv_id="RotanaKhalijia.sa" site_id="KHALIJIA-11">Rotana Khalejia</channel>
+  <channel site="rotana.net" lang="ar" xmltv_id="RotanaKids.sa" site_id="KIDS-12">Rotana Kids</channel>
+  <channel site="rotana.net" lang="ar" xmltv_id="RotanaPlusHD.sa" site_id="ROTANA-HD-11">Rotana+</channel>
+</channels>

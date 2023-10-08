@@ -44,7 +44,7 @@ module.exports = {
   },
   async channels() {
     const data = await axios
-      .get(`https://www.mon-programme-tv.be/chaine/toutes-les-chaines-television.html`)
+      .get('https://www.mon-programme-tv.be/chaine/toutes-les-chaines-television.html')
       .then(r => r.data)
       .catch(console.log)
     const $ = cheerio.load(data)

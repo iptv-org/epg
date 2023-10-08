@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/astro.com.my/astro.com.my.config.js --channels=sites/astro.com.my/astro.com.my.channels.xml --output=guide.xml --timeout=30000 --days=2
+// npm run grab -- --site=astro.com.my
 
 const { parser, url } = require('./astro.com.my.config.js')
 const fs = require('fs')

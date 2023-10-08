@@ -1,199 +1,197 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<site site="chaines-tv.orange.fr">
-  <channels>
-    <channel lang="fr" xmltv_id="01TV.fr" site_id="2942">01 TV</channel>
-    <channel lang="fr" xmltv_id="2MInternational.ma" site_id="340">2M Monde</channel>
-    <channel lang="fr" xmltv_id="3sat.de" site_id="960">3sat</channel>
-    <channel lang="fr" xmltv_id="6ter.fr" site_id="1403">6ter</channel>
-    <channel lang="fr" xmltv_id="AB1.fr" site_id="5">AB 1</channel>
-    <channel lang="fr" xmltv_id="Action.fr" site_id="10">Action</channel>
-    <channel lang="fr" xmltv_id="AlJazeeraEnglish.qa" site_id="525">Aljazeera English</channel>
-    <channel lang="fr" xmltv_id="Animaux.fr" site_id="12">Animaux</channel>
-    <channel lang="fr" xmltv_id="APlusKidsTV.uk" site_id="2293">A+ Kids TV</channel>
-    <channel lang="fr" xmltv_id="ARTEFrance.fr" site_id="111">ARTE Français</channel>
-    <channel lang="fr" xmltv_id="Automotolachaine.fr" site_id="15">Automoto la chaîne</channel>
-    <channel lang="fr" xmltv_id="BBCEntertainment.uk" site_id="18">BBC Entertainment Europe</channel>
-    <channel lang="fr" xmltv_id="BBCWorldNewsEurope.uk" site_id="19">BBC World News Europe</channel>
-    <channel lang="fr" xmltv_id="beINSports1France.fr" site_id="1290">BeIn Sports 1 France</channel>
-    <channel lang="fr" xmltv_id="beINSports2France.fr" site_id="1304">BeIn Sports 2 France</channel>
-    <channel lang="fr" xmltv_id="beINSports3France.fr" site_id="1335">BeIn Sports 3 France</channel>
-    <channel lang="fr" xmltv_id="beINSportsMax4France.fr" site_id="1336">BeIn Sports Max 4 France</channel>
-    <channel lang="fr" xmltv_id="beINSportsMax5France.fr" site_id="1337">BeIn Sports Max 5 France</channel>
-    <channel lang="fr" xmltv_id="beINSportsMax6France.fr" site_id="1338">BeIn Sports Max 6 France</channel>
-    <channel lang="fr" xmltv_id="beINSportsMax7France.fr" site_id="1339">BeIn Sports Max 7 France</channel>
-    <channel lang="fr" xmltv_id="beINSportsMax8France.fr" site_id="1340">BeIn Sports Max 8 France</channel>
-    <channel lang="fr" xmltv_id="beINSportsMax9France.fr" site_id="1341">BeIn Sports Max 9 France</channel>
-    <channel lang="fr" xmltv_id="beINSportsMax10France.fr" site_id="1342">BeIn Sports Max 10 France</channel>
-    <channel lang="fr" xmltv_id="BETFrance.fr" site_id="1960">BET France</channel>
-    <channel lang="fr" xmltv_id="BFMBusiness.fr" site_id="1073">BFM Business</channel>
-    <channel lang="fr" xmltv_id="BFMTV.fr" site_id="481">BFM TV</channel>
-    <channel lang="fr" xmltv_id="BloombergTVEurope.uk" site_id="410">Bloomberg TV Europe</channel>
-    <channel lang="fr" xmltv_id="BoingFrance.fr" site_id="924">Boing France</channel>
-    <channel lang="fr" xmltv_id="BoomerangFrance.fr" site_id="321">Boomerang France</channel>
-    <channel lang="fr" xmltv_id="BoomerangFrancePlus1.fr" site_id="928">Boomerang France +1</channel>
-    <channel lang="fr" xmltv_id="C8.fr" site_id="445">C8</channel>
-    <channel lang="fr" xmltv_id="CanalJ.fr" site_id="32">Canal J</channel>
-    <channel lang="fr" xmltv_id="CanalPlusCinemaFrance.fr" site_id="33">Canal + Cinéma France</channel>
-    <channel lang="fr" xmltv_id="CanalPlusDecale.fr" site_id="30">Canal + Décalé</channel>
-    <channel lang="fr" xmltv_id="CanalPlusDocs.fr" site_id="3347">Canal + Docs</channel>
-    <channel lang="fr" xmltv_id="CanalPlusFrance.fr" site_id="34">Canal + France</channel>
-    <channel lang="fr" xmltv_id="CanalPlusGrandEcran.fr" site_id="3349">Canal + Grand Ecran</channel>
-    <channel lang="fr" xmltv_id="CanalPlusKids.fr" site_id="3348">Canal + Kids</channel>
-    <channel lang="fr" xmltv_id="CanalPlusSeriesFrance.fr" site_id="1563">Canal + Séries</channel>
-    <channel lang="fr" xmltv_id="CanalPlusSportFrance.fr" site_id="35">Canal + Sport</channel>
-    <channel lang="fr" xmltv_id="CanalQ.pt" site_id="2046">Canal Q</channel>
-    <channel lang="fr" xmltv_id="CartoonNetworkFrance.fr" site_id="36">Cartoon Network France</channel>
-    <channel lang="fr" xmltv_id="ChassePeche.fr" site_id="38">Chasse &amp; Pêche</channel>
-    <channel lang="fr" xmltv_id="Cherie25.fr" site_id="1399">Chérie 25</channel>
-    <channel lang="fr" xmltv_id="CinePlusClassic.fr" site_id="287">Cine + Classic</channel>
-    <channel lang="fr" xmltv_id="CinePlusClub.fr" site_id="285">Cine + Club</channel>
-    <channel lang="fr" xmltv_id="CinePlusEmotion.fr" site_id="283">Cine + Émotion</channel>
-    <channel lang="fr" xmltv_id="CinePlusFamiz.fr" site_id="401">Cine + Famiz</channel>
-    <channel lang="fr" xmltv_id="CinePlusFrisson.fr" site_id="284">Cine + Frisson</channel>
-    <channel lang="fr" xmltv_id="CinePlusPremier.fr" site_id="282">Cine + Premier</channel>
-    <channel lang="fr" xmltv_id="CliqueTV.fr" site_id="2781">Clique TV</channel>
-    <channel lang="fr" xmltv_id="ClubbingTV.fr" site_id="1989">Clubbing TV</channel>
-    <channel lang="fr" xmltv_id="CNBCEurope.uk" site_id="51">CNBC Europe</channel>
-    <channel lang="fr" xmltv_id="CNews.fr" site_id="226">C News</channel>
-    <channel lang="fr" xmltv_id="CNNInternationalEurope.us" site_id="53">CNN International Europe</channel>
-    <channel lang="fr" xmltv_id="ComediePlus.fr" site_id="54">Comédie +</channel>
-    <channel lang="fr" xmltv_id="ComedyCentralFrance.fr" site_id="2752">Comedy Central France</channel>
-    <channel lang="fr" xmltv_id="CrimeDistrict.fr" site_id="2037">Crime District</channel>
-    <channel lang="fr" xmltv_id="CStar.fr" site_id="458">C Star</channel>
-    <channel lang="fr" xmltv_id="DasErste.de" site_id="13">Das Erste</channel>
-    <channel lang="fr" xmltv_id="DemainTV.fr" site_id="57">Demain TV</channel>
-    <channel lang="fr" xmltv_id="DisneyChannelFrance.fr" site_id="58">Disney Channel France</channel>
-    <channel lang="fr" xmltv_id="DisneyChannelFrancePlus1.fr" site_id="2974">Disney Channel France +1</channel>
-    <channel lang="fr" xmltv_id="DisneyJuniorFrance.fr" site_id="300">Disney Junior France</channel>
-    <channel lang="fr" xmltv_id="DWEnglish.de" site_id="61">DW English</channel>
-    <channel lang="fr" xmltv_id="Equidia.fr" site_id="64">Equidia</channel>
-    <channel lang="fr" xmltv_id="MGGTV.fr" site_id="2353">ES1</channel>
-    <channel lang="fr" xmltv_id="Eurochannel.uk" site_id="1190">Eurochannel</channel>
-    <channel lang="fr" xmltv_id="EuronewsFrench.fr" site_id="140">EuroNews Français</channel>
-    <channel lang="fr" xmltv_id="FashionTVEurope.fr" site_id="1996">FashionTV Europe</channel>
-    <channel lang="fr" xmltv_id="France2.fr" site_id="4">France 2</channel>
-    <channel lang="fr" xmltv_id="France3.fr" site_id="80">France 3</channel>
-    <channel lang="fr" xmltv_id="France3Alpes.fr" site_id="655">France 3 Alpes</channel>
-    <channel lang="fr" xmltv_id="France3Alsace.fr" site_id="249">France 3 Alsace</channel>
-    <channel lang="fr" xmltv_id="France3Aquitaine.fr" site_id="304">France 3 Aquitaine</channel>
-    <channel lang="fr" xmltv_id="France3Auvergne.fr" site_id="649">France 3 Auvergne</channel>
-    <channel lang="fr" xmltv_id="France3Bourgogne.fr" site_id="636">France 3 Bourgogne</channel>
-    <channel lang="fr" xmltv_id="France3Bretagne.fr" site_id="634">France 3 Bretagne</channel>
-    <channel lang="fr" xmltv_id="France3CentreValdeLoire.fr" site_id="306">France 3 Centre-Val de Loire</channel>
-    <channel lang="fr" xmltv_id="France3ChampagneArdenne.fr" site_id="641">France 3 Champagne-Ardenne</channel>
-    <channel lang="fr" xmltv_id="France3CorseViaStella.fr" site_id="308">France 3 Corse Via Stella</channel>
-    <channel lang="fr" xmltv_id="France3CotedAzur.fr" site_id="642">France 3 Côte d&apos;Azur</channel>
-    <channel lang="fr" xmltv_id="France3FrancheComte.fr" site_id="637">France 3 Franche-Comté</channel>
-    <channel lang="fr" xmltv_id="France3LanguedocRoussillon.fr" site_id="650">France 3 Languedoc-Roussillon</channel>
-    <channel lang="fr" xmltv_id="France3Limousin.fr" site_id="638">France 3 Limousin</channel>
-    <channel lang="fr" xmltv_id="France3Lorraine.fr" site_id="640">France 3 Lorraine</channel>
-    <channel lang="fr" xmltv_id="France3MidiPyrenees.fr" site_id="651">France 3 Midi-Pyrénées</channel>
-    <channel lang="fr" xmltv_id="France3NordPasdeCalais.fr" site_id="644">France 3 Nord Pas-de-Calais</channel>
-    <channel lang="fr" xmltv_id="France3ParisIledeFrance.fr" site_id="313">France 3 Paris Ile-de-France</channel>
-    <channel lang="fr" xmltv_id="France3PaysdelaLoire.fr" site_id="635">France 3 Pays de la Loire</channel>
-    <channel lang="fr" xmltv_id="France3Picardie.fr" site_id="645">France 3 Picardie</channel>
-    <channel lang="fr" xmltv_id="France3PoitouCharentes.fr" site_id="639">France 3 Poitou-Charentes</channel>
-    <channel lang="fr" xmltv_id="France3ProvenceAlpes.fr" site_id="643">France 3 Provence-Alpes</channel>
-    <channel lang="fr" xmltv_id="France3RhoneAlpes.fr" site_id="648">France 3 Rhône-Alpes</channel>
-    <channel lang="fr" xmltv_id="France4.fr" site_id="78">France 4</channel>
-    <channel lang="fr" xmltv_id="France5.fr" site_id="47">France 5</channel>
-    <channel lang="fr" xmltv_id="France24English.fr" site_id="671">France 24 English</channel>
-    <channel lang="fr" xmltv_id="France24French.fr" site_id="529">France 24 Français</channel>
-    <channel lang="fr" xmltv_id="Franceinfo.fr" site_id="2111">Franceinfo:</channel>
-    <channel lang="fr" xmltv_id="GameOne.fr" site_id="87">Game One</channel>
-    <channel lang="fr" xmltv_id="GameOnePlus1.fr" site_id="1167">Game One +1</channel>
-    <channel lang="fr" xmltv_id="GolfChannelFrance.fr" site_id="1166">Golf Channel France</channel>
-    <channel lang="fr" xmltv_id="Gulli.fr" site_id="482">Gulli</channel>
-    <channel lang="fr" xmltv_id="HistoireTV.fr" site_id="88">Histoire TV</channel>
-    <channel lang="fr" xmltv_id="I24NewsFrench.il" site_id="781">I24 News Français</channel>
-    <channel lang="fr" xmltv_id="JOne.fr" site_id="1585">J-One</channel>
-    <channel lang="fr" xmltv_id="KTO.fr" site_id="110">KTO</channel>
-    <channel lang="fr" xmltv_id="LCI.fr" site_id="112">LCI</channel>
-    <channel lang="fr" xmltv_id="LCP.fr" site_id="992">LCP Assemblée Nationale</channel>
-    <channel lang="fr" xmltv_id="PublicSenat.fr" site_id="234">LCP Public Sénat</channel>
-    <channel lang="fr" xmltv_id="LEquipe.fr" site_id="1401">L&apos;Équipe</channel>
-    <channel lang="fr" xmltv_id="LuckyJacktv.lu" site_id="1061">Lucky Jack.tv</channel>
-    <channel lang="fr" xmltv_id="LuxeTV.lu" site_id="531">Luxe TV</channel>
-    <channel lang="fr" xmltv_id="M6.fr" site_id="118">M6</channel>
-    <channel lang="fr" xmltv_id="M6Music.fr" site_id="453">M6 Music</channel>
-    <channel lang="fr" xmltv_id="MaisonTravauxTV.fr" site_id="3360">Maison &amp; Travaux TV</channel>
-    <channel lang="fr" xmltv_id="Mangas.fr" site_id="6">Mangas</channel>
-    <channel lang="fr" xmltv_id="MCM.fr" site_id="121">MCM France</channel>
-    <channel lang="fr" xmltv_id="Melody.fr" site_id="265">Melody</channel>
-    <channel lang="fr" xmltv_id="MelodydAfrique.fr" site_id="2321">Melody d&apos;Afrique</channel>
-    <channel lang="fr" xmltv_id="Mezzo.fr" site_id="125">Mezzo</channel>
-    <channel lang="fr" xmltv_id="MezzoLiveHD.fr" site_id="907">Mezzo Live HD</channel>
-    <channel lang="fr" xmltv_id="MTVFrance.fr" site_id="128">MTV France</channel>
-    <channel lang="fr" xmltv_id="MTVHitsFrance.fr" site_id="2006">MTV Hits France</channel>
-    <channel lang="fr" xmltv_id="MuseumTV.fr" site_id="1072">Museum</channel>
-    <channel lang="fr" xmltv_id="MyZenTV.fr" site_id="829">MyZen TV</channel>
-    <channel lang="fr" xmltv_id="NationalGeographicFrance.fr" site_id="508">National Geographic France</channel>
-    <channel lang="fr" xmltv_id="NationalGeographicWildFrance.fr" site_id="719">National Geographic Wild France</channel>
-    <channel lang="fr" xmltv_id="NHKWorldJapan.jp" site_id="830">NHK World Japan</channel>
-    <channel lang="fr" xmltv_id="NickelodeonFrance.fr" site_id="473">Nickelodeon France</channel>
-    <channel lang="fr" xmltv_id="NickelodeonFrancePlus1.fr" site_id="2065">Nickelodeon France +1</channel>
-    <channel lang="fr" xmltv_id="NickelodeonJunior.fr" site_id="888">Nickelodeon Junior France</channel>
-    <channel lang="fr" xmltv_id="NickelodeonTeen.fr" site_id="1746">Nickelodeon Teen</channel>
-    <channel lang="fr" xmltv_id="Nitro.de" site_id="2311">Nitro Deutschland</channel>
-    <channel lang="fr" xmltv_id="NollywoodTV.fr" site_id="1461">Nollywood TV</channel>
-    <channel lang="fr" xmltv_id="NovelasTV.fr" site_id="1832">Novelas TV</channel>
-    <channel lang="fr" xmltv_id="NRJ12.fr" site_id="444">NRJ 12</channel>
-    <channel lang="fr" xmltv_id="NRJHits.fr" site_id="605">NRJ Hits</channel>
-    <channel lang="fr" xmltv_id="OCSChoc.fr" site_id="732">OCS choc</channel>
-    <channel lang="fr" xmltv_id="OCSCity.fr" site_id="733">OCS City</channel>
-    <channel lang="fr" xmltv_id="OCSGeants.fr" site_id="734">OCS geants</channel>
-    <channel lang="fr" xmltv_id="OCSMax.fr" site_id="730">OCS max</channel>
-    <channel lang="fr" xmltv_id="OlympiaTV.fr" site_id="2958">Olympia TV</channel>
-    <channel lang="fr" xmltv_id="One.de" site_id="979">One</channel>
-    <channel lang="fr" xmltv_id="ParamountChannelOffset.fr" site_id="2072">Paramount Channel Décalé</channel>
-    <channel lang="fr" xmltv_id="ParamountChannelFrance.fr" site_id="1562">Paramount Channel France</channel>
-    <channel lang="fr" xmltv_id="ParisPremiere.fr" site_id="145">Paris Première</channel>
-    <channel lang="fr" xmltv_id="PiwiPlus.fr" site_id="344">Piwi +</channel>
-    <channel lang="fr" xmltv_id="PlanetePlus.fr" site_id="147">Planète +</channel>
-    <channel lang="fr" xmltv_id="PlanetePlusAE.fr" site_id="402">Planète + A&amp;E</channel>
-    <channel lang="fr" xmltv_id="PlanetePlusCI.fr" site_id="662">Planète + CI</channel>
-    <channel lang="fr" xmltv_id="PolarPlus.fr" site_id="2326">Polar +</channel>
-    <channel lang="fr" xmltv_id="ProSieben.de" site_id="964">ProSieben Deutschland</channel>
-    <channel lang="fr" xmltv_id="Rai1.it" site_id="156">Rai 1</channel>
-    <channel lang="fr" xmltv_id="Rai2.it" site_id="154">Rai 2</channel>
-    <channel lang="fr" xmltv_id="Rai3.it" site_id="155">Rai 3</channel>
-    <channel lang="fr" xmltv_id="RaiNews24.it" site_id="1129">Rai News 24</channel>
-    <channel lang="fr" xmltv_id="RMCDecouverte.fr" site_id="1400">RMC Découverte</channel>
-    <channel lang="fr" xmltv_id="RMCStory.fr" site_id="1402">RMC Story</channel>
-    <channel lang="fr" xmltv_id="RTL9.lu" site_id="115">RTL 9</channel>
-    <channel lang="fr" xmltv_id="RTLZwei.de" site_id="966">RTL Zwei Deutschland</channel>
-    <channel lang="fr" xmltv_id="RTPInternacional.pt" site_id="169">RTP Internacional Europa</channel>
-    <channel lang="fr" xmltv_id="ScienceVieTV.fr" site_id="63">Science &amp; Vie TV</channel>
-    <channel lang="fr" xmltv_id="SerieClub.fr" site_id="49">Série Club</channel>
-    <channel lang="fr" xmltv_id="SportenFrance.fr" site_id="2837">Sport en France</channel>
-    <channel lang="fr" xmltv_id="StingrayClassica.ca" site_id="1353">Stingray Classica</channel>
-    <channel lang="fr" xmltv_id="SunuYeuf.sn" site_id="2908">Sunu Yeuf</channel>
-    <channel lang="fr" xmltv_id="SuperRTL.de" site_id="1854">Super RTL Deutschland</channel>
-    <channel lang="fr" xmltv_id="TCMCinema.fr" site_id="185">TCM Cinéma</channel>
-    <channel lang="fr" xmltv_id="TeletoonPlus.fr" site_id="197">TéléToon +</channel>
-    <channel lang="fr" xmltv_id="TeletoonPlus1.fr" site_id="293">TéléToon + 1</channel>
-    <channel lang="fr" xmltv_id="Teva.fr" site_id="191">Téva</channel>
-    <channel lang="fr" xmltv_id="TF1.fr" site_id="192">TF 1</channel>
-    <channel lang="fr" xmltv_id="TF1Plus1.fr" site_id="2441">TF 1 +1</channel>
-    <channel lang="fr" xmltv_id="TF1SeriesFilms.fr" site_id="1404">TF 1 Séries Films</channel>
-    <channel lang="fr" xmltv_id="TFX.fr" site_id="446">TFX</channel>
-    <channel lang="fr" xmltv_id="TheIsraeliNetwork.il" site_id="2000">The Israeli Network</channel>
-    <channel lang="fr" xmltv_id="TiJi.fr" site_id="229">Tiji</channel>
-    <channel lang="fr" xmltv_id="TMC.fr" site_id="195">TMC</channel>
-    <channel lang="fr" xmltv_id="TMCPlus1.fr" site_id="2442">TMC +1</channel>
-    <channel lang="fr" xmltv_id="ToonamiFrance.fr" site_id="2040">Toonami France</channel>
-    <channel lang="fr" xmltv_id="ToutelHistoire.fr" site_id="7">Toute l&apos;Histoire</channel>
-    <channel lang="fr" xmltv_id="TV5MondeFranceBelgiumSwitzerland.fr" site_id="205">TV5Monde France Belgique Suisse</channel>
-    <channel lang="fr" xmltv_id="TVBreizh.fr" site_id="225">TV Breizh</channel>
-    <channel lang="fr" xmltv_id="TVEInternacionalEuropeAsia.es" site_id="208">TVE Internacional Europa</channel>
-    <channel lang="fr" xmltv_id="TVPitchoun.fr" site_id="2803">TV Pitchoun</channel>
-    <channel lang="fr" xmltv_id="UltraNature.fr" site_id="2094">Ultra Nature</channel>
-    <channel lang="fr" xmltv_id="UshuaiaTV.fr" site_id="451">Ushuaïa TV</channel>
-    <channel lang="fr" xmltv_id="VoxAfrica.uk" site_id="1133">Voxafrica Afrique</channel>
-    <channel lang="fr" xmltv_id="VoxGermany.de" site_id="971">Vox Deutschland</channel>
-    <channel lang="fr" xmltv_id="W9.fr" site_id="119">W9</channel>
-    <channel lang="fr" xmltv_id="WarnerTVFrance.fr" site_id="2334">Warner TV France</channel>
-    <channel lang="fr" xmltv_id="ZDF.de" site_id="219">ZDF</channel>
-    <channel lang="fr" xmltv_id="ZDFneo.de" site_id="973">ZDF Neo</channel>
-  </channels>
-</site>
+<channels>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="01TV.fr" site_id="2942">01 TV</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="2MInternational.ma" site_id="340">2M Monde</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="3sat.de" site_id="960">3sat</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="6ter.fr" site_id="1403">6ter</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="AB1.fr" site_id="5">AB 1</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="Action.fr" site_id="10">Action</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="AlJazeeraEnglish.qa" site_id="525">Aljazeera English</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="Animaux.fr" site_id="12">Animaux</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="APlusKidsTV.uk" site_id="2293">A+ Kids TV</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="ARTEFrance.fr" site_id="111">ARTE Français</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="Automotolachaine.fr" site_id="15">Automoto la chaîne</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="BBCEntertainment.uk" site_id="18">BBC Entertainment Europe</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="BBCWorldNewsEurope.uk" site_id="19">BBC World News Europe</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="beINSports1France.fr" site_id="1290">BeIn Sports 1 France</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="beINSports2France.fr" site_id="1304">BeIn Sports 2 France</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="beINSports3France.fr" site_id="1335">BeIn Sports 3 France</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="beINSportsMax10France.fr" site_id="1342">BeIn Sports Max 10 France</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="beINSportsMax4France.fr" site_id="1336">BeIn Sports Max 4 France</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="beINSportsMax5France.fr" site_id="1337">BeIn Sports Max 5 France</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="beINSportsMax6France.fr" site_id="1338">BeIn Sports Max 6 France</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="beINSportsMax7France.fr" site_id="1339">BeIn Sports Max 7 France</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="beINSportsMax8France.fr" site_id="1340">BeIn Sports Max 8 France</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="beINSportsMax9France.fr" site_id="1341">BeIn Sports Max 9 France</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="BETFrance.fr" site_id="1960">BET France</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="BFMBusiness.fr" site_id="1073">BFM Business</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="BFMTV.fr" site_id="481">BFM TV</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="BloombergTVEurope.uk" site_id="410">Bloomberg TV Europe</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="BoingFrance.fr" site_id="924">Boing France</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="BoomerangFrance.fr" site_id="321">Boomerang France</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="BoomerangFrancePlus1.fr" site_id="928">Boomerang France +1</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="C8.fr" site_id="445">C8</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="CanalJ.fr" site_id="32">Canal J</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="CanalPlusCinemaFrance.fr" site_id="33">Canal + Cinéma France</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="CanalPlusDecale.fr" site_id="30">Canal + Décalé</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="CanalPlusDocs.fr" site_id="3347">Canal + Docs</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="CanalPlusFrance.fr" site_id="34">Canal + France</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="CanalPlusGrandEcran.fr" site_id="3349">Canal + Grand Ecran</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="CanalPlusKids.fr" site_id="3348">Canal + Kids</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="CanalPlusSeriesFrance.fr" site_id="1563">Canal + Séries</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="CanalPlusSportFrance.fr" site_id="35">Canal + Sport</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="CanalQ.pt" site_id="2046">Canal Q</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="CartoonNetworkFrance.fr" site_id="36">Cartoon Network France</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="ChassePeche.fr" site_id="38">Chasse &amp; Pêche</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="Cherie25.fr" site_id="1399">Chérie 25</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="CinePlusClassic.fr" site_id="287">Cine + Classic</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="CinePlusClub.fr" site_id="285">Cine + Club</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="CinePlusEmotion.fr" site_id="283">Cine + Émotion</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="CinePlusFamiz.fr" site_id="401">Cine + Famiz</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="CinePlusFrisson.fr" site_id="284">Cine + Frisson</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="CinePlusPremier.fr" site_id="282">Cine + Premier</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="CliqueTV.fr" site_id="2781">Clique TV</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="ClubbingTV.fr" site_id="1989">Clubbing TV</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="CNBCEurope.uk" site_id="51">CNBC Europe</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="CNews.fr" site_id="226">C News</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="CNNInternationalEurope.us" site_id="53">CNN International Europe</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="ComediePlus.fr" site_id="54">Comédie +</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="ComedyCentralFrance.fr" site_id="2752">Comedy Central France</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="CrimeDistrict.fr" site_id="2037">Crime District</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="CStar.fr" site_id="458">C Star</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="DasErste.de" site_id="13">Das Erste</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="DemainTV.fr" site_id="57">Demain TV</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="DisneyChannelFrance.fr" site_id="58">Disney Channel France</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="DisneyChannelFrancePlus1.fr" site_id="2974">Disney Channel France +1</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="DisneyJuniorFrance.fr" site_id="300">Disney Junior France</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="DWEnglish.de" site_id="61">DW English</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="Equidia.fr" site_id="64">Equidia</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="Eurochannel.uk" site_id="1190">Eurochannel</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="EuronewsFrench.fr" site_id="140">EuroNews Français</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="FashionTVEurope.fr" site_id="1996">FashionTV Europe</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="France2.fr" site_id="4">France 2</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="France24English.fr" site_id="671">France 24 English</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="France24French.fr" site_id="529">France 24 Français</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="France3.fr" site_id="80">France 3</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="France3Alpes.fr" site_id="655">France 3 Alpes</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="France3Alsace.fr" site_id="249">France 3 Alsace</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="France3Aquitaine.fr" site_id="304">France 3 Aquitaine</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="France3Auvergne.fr" site_id="649">France 3 Auvergne</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="France3Bourgogne.fr" site_id="636">France 3 Bourgogne</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="France3Bretagne.fr" site_id="634">France 3 Bretagne</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="France3CentreValdeLoire.fr" site_id="306">France 3 Centre-Val de Loire</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="France3ChampagneArdenne.fr" site_id="641">France 3 Champagne-Ardenne</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="France3CorseViaStella.fr" site_id="308">France 3 Corse Via Stella</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="France3CotedAzur.fr" site_id="642">France 3 Côte d&apos;Azur</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="France3FrancheComte.fr" site_id="637">France 3 Franche-Comté</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="France3LanguedocRoussillon.fr" site_id="650">France 3 Languedoc-Roussillon</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="France3Limousin.fr" site_id="638">France 3 Limousin</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="France3Lorraine.fr" site_id="640">France 3 Lorraine</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="France3MidiPyrenees.fr" site_id="651">France 3 Midi-Pyrénées</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="France3NordPasdeCalais.fr" site_id="644">France 3 Nord Pas-de-Calais</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="France3ParisIledeFrance.fr" site_id="313">France 3 Paris Ile-de-France</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="France3PaysdelaLoire.fr" site_id="635">France 3 Pays de la Loire</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="France3Picardie.fr" site_id="645">France 3 Picardie</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="France3PoitouCharentes.fr" site_id="639">France 3 Poitou-Charentes</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="France3ProvenceAlpes.fr" site_id="643">France 3 Provence-Alpes</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="France3RhoneAlpes.fr" site_id="648">France 3 Rhône-Alpes</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="France4.fr" site_id="78">France 4</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="France5.fr" site_id="47">France 5</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="Franceinfo.fr" site_id="2111">Franceinfo:</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="GameOne.fr" site_id="87">Game One</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="GameOnePlus1.fr" site_id="1167">Game One +1</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="GolfChannelFrance.fr" site_id="1166">Golf Channel France</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="Gulli.fr" site_id="482">Gulli</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="HistoireTV.fr" site_id="88">Histoire TV</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="I24NewsFrench.il" site_id="781">I24 News Français</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="JOne.fr" site_id="1585">J-One</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="KTO.fr" site_id="110">KTO</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="LCI.fr" site_id="112">LCI</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="LCP.fr" site_id="992">LCP Assemblée Nationale</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="LEquipe.fr" site_id="1401">L&apos;Équipe</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="LuckyJacktv.lu" site_id="1061">Lucky Jack.tv</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="LuxeTV.lu" site_id="531">Luxe TV</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="M6.fr" site_id="118">M6</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="M6Music.fr" site_id="453">M6 Music</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="MaisonTravauxTV.fr" site_id="3360">Maison &amp; Travaux TV</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="Mangas.fr" site_id="6">Mangas</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="MCM.fr" site_id="121">MCM France</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="Melody.fr" site_id="265">Melody</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="MelodydAfrique.fr" site_id="2321">Melody d&apos;Afrique</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="Mezzo.fr" site_id="125">Mezzo</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="MezzoLiveHD.fr" site_id="907">Mezzo Live HD</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="MGGTV.fr" site_id="2353">ES1</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="MTVFrance.fr" site_id="128">MTV France</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="MTVHitsFrance.fr" site_id="2006">MTV Hits France</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="MuseumTV.fr" site_id="1072">Museum</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="MyZenTV.fr" site_id="829">MyZen TV</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="NationalGeographicFrance.fr" site_id="508">National Geographic France</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="NationalGeographicWildFrance.fr" site_id="719">National Geographic Wild France</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="NHKWorldJapan.jp" site_id="830">NHK World Japan</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="NickelodeonFrance.fr" site_id="473">Nickelodeon France</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="NickelodeonFrancePlus1.fr" site_id="2065">Nickelodeon France +1</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="NickelodeonJunior.fr" site_id="888">Nickelodeon Junior France</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="NickelodeonTeen.fr" site_id="1746">Nickelodeon Teen</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="Nitro.de" site_id="2311">Nitro Deutschland</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="NollywoodTV.fr" site_id="1461">Nollywood TV</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="NovelasTV.fr" site_id="1832">Novelas TV</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="NRJ12.fr" site_id="444">NRJ 12</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="NRJHits.fr" site_id="605">NRJ Hits</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="OCSChoc.fr" site_id="732">OCS choc</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="OCSCity.fr" site_id="733">OCS City</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="OCSGeants.fr" site_id="734">OCS geants</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="OCSMax.fr" site_id="730">OCS max</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="OlympiaTV.fr" site_id="2958">Olympia TV</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="One.de" site_id="979">One</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="ParamountChannelFrance.fr" site_id="1562">Paramount Channel France</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="ParamountChannelOffset.fr" site_id="2072">Paramount Channel Décalé</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="ParisPremiere.fr" site_id="145">Paris Première</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="PiwiPlus.fr" site_id="344">Piwi +</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="PlanetePlus.fr" site_id="147">Planète +</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="PlanetePlusAE.fr" site_id="402">Planète + A&amp;E</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="PlanetePlusCI.fr" site_id="662">Planète + CI</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="PolarPlus.fr" site_id="2326">Polar +</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="ProSieben.de" site_id="964">ProSieben Deutschland</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="PublicSenat.fr" site_id="234">LCP Public Sénat</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="Rai1.it" site_id="156">Rai 1</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="Rai2.it" site_id="154">Rai 2</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="Rai3.it" site_id="155">Rai 3</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="RaiNews24.it" site_id="1129">Rai News 24</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="RMCDecouverte.fr" site_id="1400">RMC Découverte</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="RMCStory.fr" site_id="1402">RMC Story</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="RTL9.lu" site_id="115">RTL 9</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="RTLZwei.de" site_id="966">RTL Zwei Deutschland</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="RTPInternacional.pt" site_id="169">RTP Internacional Europa</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="ScienceVieTV.fr" site_id="63">Science &amp; Vie TV</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="SerieClub.fr" site_id="49">Série Club</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="SportenFrance.fr" site_id="2837">Sport en France</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="StingrayClassica.ca" site_id="1353">Stingray Classica</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="SunuYeuf.sn" site_id="2908">Sunu Yeuf</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="SuperRTL.de" site_id="1854">Super RTL Deutschland</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="TCMCinema.fr" site_id="185">TCM Cinéma</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="TeletoonPlus.fr" site_id="197">TéléToon +</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="TeletoonPlus1.fr" site_id="293">TéléToon + 1</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="Teva.fr" site_id="191">Téva</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="TF1.fr" site_id="192">TF 1</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="TF1Plus1.fr" site_id="2441">TF 1 +1</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="TF1SeriesFilms.fr" site_id="1404">TF 1 Séries Films</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="TFX.fr" site_id="446">TFX</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="TheIsraeliNetwork.il" site_id="2000">The Israeli Network</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="TiJi.fr" site_id="229">Tiji</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="TMC.fr" site_id="195">TMC</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="TMCPlus1.fr" site_id="2442">TMC +1</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="ToonamiFrance.fr" site_id="2040">Toonami France</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="ToutelHistoire.fr" site_id="7">Toute l&apos;Histoire</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="TV5MondeFranceBelgiumSwitzerland.fr" site_id="205">TV5Monde France Belgique Suisse</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="TVBreizh.fr" site_id="225">TV Breizh</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="TVEInternacionalEuropeAsia.es" site_id="208">TVE Internacional Europa</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="TVPitchoun.fr" site_id="2803">TV Pitchoun</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="UltraNature.fr" site_id="2094">Ultra Nature</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="UshuaiaTV.fr" site_id="451">Ushuaïa TV</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="VoxAfrica.uk" site_id="1133">Voxafrica Afrique</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="VoxGermany.de" site_id="971">Vox Deutschland</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="W9.fr" site_id="119">W9</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="WarnerTVFrance.fr" site_id="2334">Warner TV France</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="ZDF.de" site_id="219">ZDF</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="ZDFneo.de" site_id="973">ZDF Neo</channel>
+</channels>

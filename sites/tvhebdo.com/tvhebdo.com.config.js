@@ -5,7 +5,6 @@ const { DateTime } = require('luxon')
 module.exports = {
   site: 'tvhebdo.com',
   days: 2,
-  timeout: 30000, // 30s
   url: function ({ channel, date }) {
     return `https://www.tvhebdo.com/horaire-tele/${channel.site_id}/date/${date.format(
       'YYYY-MM-DD'
@@ -64,7 +63,7 @@ module.exports = {
         'alt'
       )
       const url = $item('.gr_row_head > div > div.gr_row_head_poste > a').attr('href')
-      const [_, site_id] = url.match(/horaire-tele\/(.*)/) || [null, null]
+      const [, site_id] = url.match(/horaire-tele\/(.*)/) || [null, null]
       return {
         lang: 'fr',
         site_id,

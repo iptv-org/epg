@@ -1,10 +1,9 @@
 // npm run channels:parse -- --config=./sites/zuragt.mn/zuragt.mn.config.js --output=./sites/zuragt.mn/zuragt.mn.channels.xml
-// npx epg-grabber --config=sites/zuragt.mn/zuragt.mn.config.js --channels=sites/zuragt.mn/zuragt.mn.channels.xml --output=guide.xml --days=2
+// npm run grab -- --site=zuragt.mn
 
 const { parser, url, request } = require('./zuragt.mn.config.js')
 const fs = require('fs')
 const path = require('path')
-const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')

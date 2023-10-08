@@ -8,7 +8,7 @@ module.exports = {
       channel.site_id
     }/${date.unix()}/86400/4`
   },
-  parser: function ({ content, date, channel }) {
+  parser: function ({ content, channel }) {
     const programs = []
     const items = parseItems(content, channel)
 

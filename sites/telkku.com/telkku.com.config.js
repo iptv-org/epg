@@ -28,7 +28,7 @@ module.exports = {
   },
   async channels() {
     const data = await axios
-      .get(`https://telkku.com/api/channel-groups`)
+      .get('https://telkku.com/api/channel-groups')
       .then(r => r.data)
       .catch(console.log)
 
@@ -62,7 +62,7 @@ function getStop(item) {
 }
 
 function getItems(content, channel) {
-  const [_, channelId] = channel.site_id.split('#')
+  const [, channelId] = channel.site_id.split('#')
   const data = JSON.parse(content)
   if (!data || !data.response || !Array.isArray(data.response.publicationsByChannel)) return []
   const channelData = data.response.publicationsByChannel.find(i => i.channel.id === channelId)

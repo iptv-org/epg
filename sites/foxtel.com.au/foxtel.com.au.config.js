@@ -3,7 +3,6 @@ const dayjs = require('dayjs')
 const cheerio = require('cheerio')
 
 module.exports = {
-  skip: true, // returns "Access Denied" or nothing
   site: 'foxtel.com.au',
   days: 2,
   url({ channel, date }) {
@@ -17,13 +16,13 @@ module.exports = {
       Cookie: 'AAMC_foxtel_0=REGION|6'
     }
   },
-  parser: function ({ content }) {
+  parser: function ({ content, date }) {
     let programs = []
     const items = parseItems(content)
     for (let item of items) {
       const $item = cheerio.load(item)
       const prev = programs[programs.length - 1]
-      const start = parseStart($item)
+      let start = parseStart($item)
       if (prev) {
         if (start.isBefore(prev.start)) {
           start = start.add(1, 'd')
@@ -48,7 +47,7 @@ module.exports = {
   },
   async channels() {
     const data = await axios
-      .get(`https://www.foxtel.com.au/webepg/ws/foxtel/channels?regionId=8336`, {
+      .get('https://www.foxtel.com.au/webepg/ws/foxtel/channels?regionId=8336', {
         headers: {
           'Accept-Language': 'en-US,en;',
           Cookie: 'AAMC_foxtel_0=REGION|6'
@@ -58,11 +57,11 @@ module.exports = {
       .catch(console.log)
 
     return data.channels.forEach(item => {
-      let name = item.name.replace(/\+/g, '-').replace(/\&/g, '')
+      let name = item.name.replace(/\+/g, '-').replace(/&/g, '')
       const slug = name.replace(/[^a-z0-9\s]/gi, '').replace(/[^a-z0-9]/i, '-')
 
       return {
-        name: item.name.replace(/\&/g, '&amp;'),
+        name: item.name.replace(/&/g, '&amp;'),
         site_id: `${slug}/${item.channelTag}`
       }
     })
@@ -72,7 +71,7 @@ module.exports = {
 function parseSeason($item) {
   let seasonString = $item('.epg-event-description > div > abbr:nth-child(1)').attr('title')
   if (!seasonString) return null
-  let [_, season] = seasonString.match(/^Season: (\d+)/) || [null, null]
+  let [, season] = seasonString.match(/^Season: (\d+)/) || [null, null]
 
   return season ? parseInt(season) : null
 }
@@ -80,7 +79,7 @@ function parseSeason($item) {
 function parseEpisode($item) {
   let episodeString = $item('.epg-event-description > div > abbr:nth-child(2)').attr('title')
   if (!episodeString) return null
-  let [_, episode] = episodeString.match(/^Episode: (\d+)/) || [null, null]
+  let [, episode] = episodeString.match(/^Episode: (\d+)/) || [null, null]
 
   return episode ? parseInt(episode) : null
 }
@@ -104,14 +103,14 @@ function parseSubTitle($item) {
     .split(',')
 
   subtitle = subtitle.pop()
-  const [_, rating] = subtitle.match(/\(([^)]+)\)$/) || [null, null]
+  const [, rating] = subtitle.match(/\(([^)]+)\)$/) || [null, null]
 
   return subtitle.replace(`(${rating})`, '').trim()
 }
 
 function parseRating($item) {
   const subtitle = $item('.epg-event-description > div').text().trim()
-  const [_, rating] = subtitle.match(/\(([^)]+)\)$/) || [null, null]
+  const [, rating] = subtitle.match(/\(([^)]+)\)$/) || [null, null]
 
   return rating
     ? {
@@ -131,5 +130,5 @@ function parseItems(content) {
   if (!content) return []
   const $ = cheerio.load(content)
 
-  return $(`#epg-channel-events > a`).toArray()
+  return $('#epg-channel-events > a').toArray()
 }

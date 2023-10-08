@@ -64,7 +64,7 @@ module.exports = {
           const $ = cheerio.load(r.data)
 
           $('.sgtvchannellist_mainContainer .sgtvchannel_divCell a').each((i, link) => {
-            let [_, site_id] = $(link)
+            let [, site_id] = $(link)
               .attr('href')
               .match(/guida-programmi-tv-(.*)\/$/) || [null, null]
             let name = $(link).find('.pchannel').text().trim()
@@ -92,7 +92,7 @@ function parseStart($item, date) {
     .text()
     .trim()
 
-  return DateTime.fromFormat(`${date.format('YYYY-MM-DD')} ${hours}`, `yyyy-MM-dd HH:mm`, {
+  return DateTime.fromFormat(`${date.format('YYYY-MM-DD')} ${hours}`, 'yyyy-MM-dd HH:mm', {
     zone: 'Europe/Rome'
   }).toUTC()
 }
@@ -103,7 +103,7 @@ function parseTitle($item) {
 
 function parseCategory($item) {
   const eventType = $item('.sgtvchannelplan_spanEventType').text().trim()
-  const [_, category] = eventType.match(/(^[^\(]+)/) || [null, '']
+  const [, category] = eventType.match(/(^[^(]+)/) || [null, '']
 
   return category.trim()
 }

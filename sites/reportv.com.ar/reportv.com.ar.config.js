@@ -32,7 +32,7 @@ module.exports = {
       return formData
     }
   },
-  url: `https://www.reportv.com.ar/buscador/ProgXSenial.php`,
+  url: 'https://www.reportv.com.ar/buscador/ProgXSenial.php',
   parser: async function ({ content, date }) {
     let programs = []
     const items = parseItems(content, date)
@@ -58,7 +58,7 @@ module.exports = {
   },
   async channels() {
     const content = await axios
-      .get(`https://www.reportv.com.ar/buscador/Buscador.php?aid=2694`)
+      .get('https://www.reportv.com.ar/buscador/Buscador.php?aid=2694')
       .then(r => r.data)
       .catch(console.log)
     const $ = cheerio.load(content)
@@ -77,7 +77,7 @@ async function loadProgramDetails($item) {
   const onclick = $item('*').attr('onclick')
   const regexp = /detallePrograma\((\d+),(\d+),(\d+),(\d+),'([^']+)'\);/g
   const match = [...onclick.matchAll(regexp)]
-  const [_, id, idc, id_alineacion, idp, title] = match[0]
+  const [, id, idc, id_alineacion, idp, title] = match[0]
   if (!id || !idc || !id_alineacion || !idp || !title) return Promise.resolve({})
   const formData = new URLSearchParams()
   formData.append('id', id)
@@ -86,7 +86,7 @@ async function loadProgramDetails($item) {
   formData.append('idp', idp)
   formData.append('title', title)
   const content = await axios
-    .post(`https://www.reportv.com.ar/buscador/DetallePrograma.php`, formData)
+    .post('https://www.reportv.com.ar/buscador/DetallePrograma.php', formData)
     .then(r => r.data.toString())
     .catch(console.error)
   if (!content) return Promise.resolve({})
@@ -139,7 +139,7 @@ function parseIcon($) {
 }
 
 function parseTitle($item) {
-  const [_, title] = $item('div:nth-child(1) > span').text().split(' - ')
+  const [, title] = $item('div:nth-child(1) > span').text().split(' - ')
 
   return title
 }
@@ -149,7 +149,7 @@ function parseCategory($item) {
 }
 
 function parseStart($item, date) {
-  const [time, _] = $item('div:nth-child(1) > span').text().split(' - ')
+  const [time] = $item('div:nth-child(1) > span').text().split(' - ')
 
   return dayjs.tz(`${date.format('YYYY-MM-DD')} ${time}`, 'YYYY-MM-DD HH:mm', 'America/Caracas')
 }

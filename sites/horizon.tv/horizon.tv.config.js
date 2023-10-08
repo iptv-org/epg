@@ -1,7 +1,7 @@
 const axios = require('axios')
 const dayjs = require('dayjs')
 
-const API_ENDPOINT = `https://legacy-static.oesp.horizon.tv/oesp/v4/SK/slk/web`
+const API_ENDPOINT = 'https://legacy-static.oesp.horizon.tv/oesp/v4/SK/slk/web'
 
 module.exports = {
   site: 'horizon.tv',
@@ -87,7 +87,7 @@ function parseStop(item) {
 
 function parseItems(content, channel) {
   if (!content) return []
-  const data = (typeof content === 'string') ? JSON.parse(content) : content
+  const data = typeof content === 'string' ? JSON.parse(content) : content
   if (!data || !Array.isArray(data.entries)) return []
   const entity = data.entries.find(e => e.o === `lgi-obolite-sk-prod-master:${channel.site_id}`)
   return entity ? entity.l : []

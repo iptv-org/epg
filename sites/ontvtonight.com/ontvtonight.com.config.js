@@ -20,7 +20,7 @@ module.exports = {
   days: 2,
   url: function ({ date, channel }) {
     const [region, id] = channel.site_id.split('#')
-    let url = `https://www.ontvtonight.com`
+    let url = 'https://www.ontvtonight.com'
     if (region) url += `/${region}`
     url += `/guide/listings/channel/${id}.html?dt=${date.format('YYYY-MM-DD')}`
 
@@ -32,7 +32,7 @@ module.exports = {
     items.forEach(item => {
       const prev = programs[programs.length - 1]
       const $item = cheerio.load(item)
-      const start = parseStart($item, date, channel)
+      let start = parseStart($item, date, channel)
       if (prev) {
         if (start.isBefore(prev.start)) {
           start = start.add(1, 'd')
@@ -54,7 +54,7 @@ module.exports = {
 }
 
 function parseStart($item, date, channel) {
-  const [region, id] = channel.site_id.split('#')
+  const [region] = channel.site_id.split('#')
   const timezone = region ? tz[region] : tz['uk']
   const timeString = $item('td:nth-child(1) > h5').text().trim()
   const dateString = `${date.format('YYYY-MM-DD')} ${timeString}`

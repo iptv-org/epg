@@ -1,7 +1,7 @@
 // npm run channels:parse -- --config=./sites/tving.com/tving.com.config.js --output=./sites/tving.com/tving.com.channels.xml
-// npx epg-grabber --config=sites/tving.com/tving.com.config.js --channels=sites/tving.com/tving.com.channels.xml --output=guide.xml --days=2
+// npm run grab -- --site=tving.com
 
-const { parser, url, request } = require('./tving.com.config.js')
+const { parser, url } = require('./tving.com.config.js')
 const fs = require('fs')
 const path = require('path')
 const dayjs = require('dayjs')
@@ -18,7 +18,7 @@ const channel = {
 
 it('can generate valid url', () => {
   expect(url({ channel, date })).toBe(
-    `https://api.tving.com/v2/media/schedules/C00551/20230123?callback=cb&pageNo=1&pageSize=500&screenCode=CSSD0200&networkCode=CSND0900&osCode=CSOD0900&teleCode=CSCD0900&apiKey=4263d7d76161f4a19a9efe9ca7903ec4`
+    'https://api.tving.com/v2/media/schedules/C00551/20230123?callback=cb&pageNo=1&pageSize=500&screenCode=CSSD0200&networkCode=CSND0900&osCode=CSOD0900&teleCode=CSCD0900&apiKey=4263d7d76161f4a19a9efe9ca7903ec4'
   )
 })
 

@@ -11,7 +11,6 @@ dayjs.extend(customParseFormat)
 module.exports = {
   site: 'mediagenie.co.kr',
   days: 1,
-  skip: true, // NOTE: the guide appears on the site after the end of the daily update (https://github.com/iptv-org/epg/actions/workflows/mediagenie.co.kr.yml)
   url({ channel, date }) {
     return `https://mediagenie.co.kr/${channel.site_id}/?qd=${date.format('YYYYMMDD')}`
   },
@@ -22,11 +21,11 @@ module.exports = {
   },
   parser({ content, date }) {
     const programs = []
-    const items = parseItems(content, date)
+    const items = parseItems(content)
     items.forEach(item => {
       const $item = cheerio.load(item)
       const prev = programs[programs.length - 1]
-      const start = parseStart($item, date)
+      let start = parseStart($item, date)
       if (!start) return
       if (prev) {
         if (start.isBefore(prev.start)) {
@@ -71,7 +70,7 @@ function parseStart($item, date) {
   return dayjs.tz(`${date.format('YYYY-MM-DD')} ${time}`, 'YYYY-MM-DD HH:mm', 'Asia/Seoul')
 }
 
-function parseItems(content, channel, date) {
+function parseItems(content) {
   const $ = cheerio.load(content)
 
   return $('.tbl > tbody > tr').toArray()

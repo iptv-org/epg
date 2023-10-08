@@ -1,21 +1,28 @@
 # Contributing Guide
 
-### How do I add a program guide for the channel?
+- [How to?](#how-to)
+- [Project Structure](#project-structure)
+- [Scripts](#scripts)
 
-First, open the [/sites](/sites) folder and select the source that you know has the guide for the channel you want.
+## How to?
+
+### How to add a channel to the guide?
+
+Open the [/sites](/sites) folder and select the source that you know has the guide for the channel you want.
 
 Then in the selected folder open the file `*.channels.xml` and add to it:
 
 ```xml
-<channel lang="LANGUAGE_CODE" xmltv_id="CHANNEL_ID" site_id="SITE_ID">CHANNEL_NAME</channel>
+<channel site="SITE" lang="LANGUAGE_CODE" xmltv_id="CHANNEL_ID" site_id="SITE_ID">CHANNEL_NAME</channel>
 ```
 
-| Attribute     | Description                                                                                                                                                        | Example     |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------- |
-| LANGUAGE_CODE | Language of the guide ([ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) code).                                                                   | `en`        |
-| CHANNEL_ID    | Channel ID from [iptv-org/database](https://github.com/iptv-org/database). A complete list of supported channels can also be found at https://iptv-org.github.io/. | `BBCOne.uk` |
-| SITE_ID       | Unique ID of the channel used in the source.                                                                                                                       | `bbc1`      |
-| CHANNEL_NAME  | Name of the channel used in the source.                                                                                                                            | `BBC 1`     |
+| Attribute     | Description                                                                                                                                                        | Example       |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------- |
+| SITE          | Site domain name.                                                                                                                                                  | `example.com` |
+| LANGUAGE_CODE | Language of the guide ([ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) code).                                                                   | `en`          |
+| CHANNEL_ID    | Channel ID from [iptv-org/database](https://github.com/iptv-org/database). A complete list of supported channels can also be found at https://iptv-org.github.io/. | `BBCOne.uk`   |
+| SITE_ID       | Unique ID of the channel used in the source.                                                                                                                       | `bbc1`        |
+| CHANNEL_NAME  | Name of the channel used in the source.                                                                                                                            | `BBC 1`       |
 
 After that just commit all changes and send a pull request.
 
@@ -31,13 +38,13 @@ This file describes what kind of request we need to send to get the guide for a 
 
 ```js
 module.exports = {
-	site: 'example.com',
-	url: function ({ channel, date }) {
-		return `https://example.com/api/${channel.site_id}/${date.format('YYYY-MM-DD')}`
-	},
-	parser: function ({ content }) {
-		return JSON.parse(content)
-	}
+  site: 'example.com',
+  url: function ({ channel, date }) {
+    return `https://example.com/api/${channel.site_id}/${date.format('YYYY-MM-DD')}`
+  },
+  parser: function ({ content }) {
+    return JSON.parse(content)
+  }
 }
 ```
 
@@ -61,26 +68,26 @@ const date = dayjs.utc('2022-11-18', 'YYYY-MM-DD').startOf('d')
 const channel = { site_id: 'bbc1', xmltv_id: 'BBCOne.uk', lang: 'en' }
 
 it('can generate valid url', () => {
-	expect(url({ channel, date })).toBe('https://example.com/api/bbc1/2022-11-18')
+  expect(url({ channel, date })).toBe('https://example.com/api/bbc1/2022-11-18')
 })
 
 it('can parse response', () => {
-	const content = `[{"start":"2022-11-18T01:30:00.000Z","stop":"2022-11-18T02:00:00.000Z","title":"Program 1"}]`
-	const results = parser({ content })
+  const content = `[{"start":"2022-11-18T01:30:00.000Z","stop":"2022-11-18T02:00:00.000Z","title":"Program 1"}]`
+  const results = parser({ content })
 
-	expect(results).toMatchObject([
-		{
-			start: '2022-11-18T01:30:00.000Z',
-			stop: '2022-11-18T02:00:00.000Z',
-			title: 'Program 1'
-		}
-	])
+  expect(results).toMatchObject([
+    {
+      start: '2022-11-18T01:30:00.000Z',
+      stop: '2022-11-18T02:00:00.000Z',
+      title: 'Program 1'
+    }
+  ])
 })
 
 it('can handle empty guide', () => {
-	const results = parser({ content: '' })
+  const results = parser({ content: '' })
 
-	expect(results).toMatchObject([])
+  expect(results).toMatchObject([])
 })
 ```
 
@@ -102,11 +109,9 @@ This file contains a list of channels available at the source.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
-<site site="example.com">
- <channels>
-   <channel lang="en" xmltv_id="BBCOne.uk" site_id="bbc1">BBC 1</channel>
- </channels>
-</site>
+<channels>
+ <channel site="example.com" lang="en" xmltv_id="BBCOne.uk" site_id="bbc1">BBC 1</channel>
+</channels>
 ```
 
 </details>
@@ -114,9 +119,39 @@ This file contains a list of channels available at the source.
 After creating all the files we can make sure that the guide loads correctly and has no errors using the command:
 
 ```sh
-npx epg-grabber --config=sites/example.com/example.com.config.js --channels=sites/example.com/example.com.channels.xml --output=guide.xml --days=2
+npm run grab -- --site=example.com
 ```
 
 If the download is successful, the `guide.xml` file with the ready to use program should appear in the root directory.
 
 After that, all that remains is to commit all the changes and send a pull request.
+
+## Project Structure
+
+- `.github/`
+  - `ISSUE_TEMPLATE/`: issue templates for the repository.
+  - `CODE_OF_CONDUCT.md`: rules you shouldn't break if you don't want to get banned.
+- `scripts/`: contains all scripts used in the repository.
+- `sites/`: contains configurations, channel lists and tests for all sites.
+- `tests/`: contains tests to check the scripts.
+- `CONTRIBUTING.md`: file you are currently reading.
+- `README.md`: project description displayed on the home page.
+- `SITES.md`: list of all supported sites and their current status.
+
+## Scripts
+
+These scripts are created to automate routine processes in the repository and make it a bit easier to maintain.
+
+For scripts to work, you must have [Node.js](https://nodejs.org/en) installed on your computer.
+
+To run scripts use the `npm run <script-name>` command.
+
+- `api:load`: downloads the latest channels data from the [iptv-org/api](https://github.com/iptv-org/api).
+- `channels:lint`: сhecks the channel lists for syntax errors.
+- `channels:parse`: generates a list of channels based on the site configuration.
+- `channels:editor`: utility for quick channels markup.
+- `channels:validate`: checks the description of channels for errors.
+- `grab`: downloads a program from a specified source.
+- `serve`: starts the [web server](https://github.com/vercel/serve).
+- `lint`: сhecks the scripts for syntax errors.
+- `test`: runs a test of all the scripts described above.

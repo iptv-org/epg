@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/berrymedia.co.kr/berrymedia.co.kr.config.js --channels=sites/berrymedia.co.kr/berrymedia.co.kr.channels.xml --output=guide.xml --days=2
+// npm run grab -- --site=berrymedia.co.kr
 
 const { parser, url, request } = require('./berrymedia.co.kr.config.js')
 const fs = require('fs')
@@ -49,7 +49,7 @@ it('can parse response', () => {
   expect(results[0]).toMatchObject({
     start: '2023-01-25T15:00:00.000Z',
     stop: '2023-01-25T16:00:00.000Z',
-    title: `더트롯쇼`,
+    title: '더트롯쇼',
     category: '연예/오락',
     rating: {
       system: 'KMRB',
@@ -60,7 +60,7 @@ it('can parse response', () => {
   expect(results[17]).toMatchObject({
     start: '2023-01-26T13:50:00.000Z',
     stop: '2023-01-26T14:20:00.000Z',
-    title: `나는 자연인이다`,
+    title: '나는 자연인이다',
     category: '교양',
     rating: {
       system: 'KMRB',

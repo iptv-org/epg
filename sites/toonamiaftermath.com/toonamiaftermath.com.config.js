@@ -3,7 +3,7 @@ process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0'
 const dayjs = require('dayjs')
 const axios = require('axios')
 
-const API_ENDPOINT = `https://api.toonamiaftermath.com`
+const API_ENDPOINT = 'https://api.toonamiaftermath.com'
 
 module.exports = {
   site: 'toonamiaftermath.com',
@@ -22,7 +22,7 @@ module.exports = {
 
     return `${API_ENDPOINT}/playlist?id=${playlist._id}&addInfo=true`
   },
-  parser({ content, date }) {
+  parser({ content }) {
     let programs = []
     const items = parseItems(content)
     items.forEach(item => {
@@ -44,18 +44,17 @@ function parseItems(content) {
   const data = JSON.parse(content)
   if (!data || !data.playlist) return []
 
-  return data.playlist.blocks
-    .reduce((acc, curr) => {
-      acc = acc.concat(curr.mediaList)
+  return data.playlist.blocks.reduce((acc, curr) => {
+    acc = acc.concat(curr.mediaList)
 
-      return acc
-    }, [])
+    return acc
+  }, [])
 }
 
 function parseEpisode(item) {
-  return (item && item.info && item.info.episode) ? item.info.episode : null
+  return item && item.info && item.info.episode ? item.info.episode : null
 }
 
 function parseIcon(item) {
-  return (item && item.info && item.info.image) ? item.info.image : null
+  return item && item.info && item.info.image ? item.info.image : null
 }

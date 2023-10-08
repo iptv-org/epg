@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/mbc.net/mbc.net.config.js --channels=sites/mbc.net/mbc.net.channels.xml --output=guide.xml --days=2
+// npm run grab -- --site=mbc.net
 
 const { parser, url } = require('./mbc.net.config.js')
 const dayjs = require('dayjs')
@@ -12,7 +12,8 @@ const channel = {
   site_id: 'mbc1',
   xmltv_id: 'MBC.ae'
 }
-const content = `[{"id":3140240,"channelBCMId":"1","channelLabel":"MBC1","showPageTitle":"اختطاف","showPageGenreInArabic":" دراما","showPageAboutInArabic":".يستضيف برنامج تلفزيوني والدة لينا وشقيقتها، ولدى مشاهدتها الحلقة، تكتشف والدة ماجد الحقيقة، بينما تتعرض العنود لحادث سير مروع","startTime":1636155131000,"endTime":1636157806000,"startTimeInMilliseconds":1636155131000,"endTimeInMilliseconds":1636157806200,"premiereMode":"Fast Repeat","showingNow":false}]`
+const content =
+  '[{"id":3140240,"channelBCMId":"1","channelLabel":"MBC1","showPageTitle":"اختطاف","showPageGenreInArabic":" دراما","showPageAboutInArabic":".يستضيف برنامج تلفزيوني والدة لينا وشقيقتها، ولدى مشاهدتها الحلقة، تكتشف والدة ماجد الحقيقة، بينما تتعرض العنود لحادث سير مروع","startTime":1636155131000,"endTime":1636157806000,"startTimeInMilliseconds":1636155131000,"endTimeInMilliseconds":1636157806200,"premiereMode":"Fast Repeat","showingNow":false}]'
 
 it('can generate valid url', () => {
   const result = url({ date, channel })
@@ -39,7 +40,7 @@ it('can handle empty guide', () => {
   const result = parser({
     date,
     channel,
-    content: `[]`
+    content: '[]'
   })
   expect(result).toMatchObject([])
 })

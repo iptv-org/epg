@@ -13,7 +13,7 @@ module.exports = {
   parser: function ({ buffer, date }) {
     const programs = []
     const items = parseItems(buffer)
-    items.forEach((item, i) => {
+    items.forEach(item => {
       const prev = programs[programs.length - 1]
       const $item = cheerio.load(item)
       let start = parseStart($item, date)

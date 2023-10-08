@@ -1,5 +1,5 @@
 // npm run channels:parse -- --config=./sites/telkku.com/telkku.com.config.js --output=./sites/telkku.com/telkku.com.channels.xml
-// npx epg-grabber --config=sites/telkku.com/telkku.com.config.js --channels=sites/telkku.com/telkku.com.channels.xml --output=guide.xml --days=2
+// npm run grab -- --site=telkku.com
 
 const { parser, url } = require('./telkku.com.config.js')
 const fs = require('fs')

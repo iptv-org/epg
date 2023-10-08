@@ -1,5 +1,5 @@
 // npm run channels:parse -- --config=sites/startv.com/startv.com.config.js --output=sites/startv.com/startv.com.channels.xml
-// npx epg-grabber --config=sites/startv.com/startv.com.config.js --channels=sites/startv.com/startv.com.channels.xml --output=guide.xml --days=2
+// npm run grab -- --site=startv.com
 
 const { parser, url, request } = require('./startv.com.config.js')
 const dayjs = require('dayjs')
@@ -37,7 +37,8 @@ it('can generate valid request data', () => {
 })
 
 it('can parse response', () => {
-  const content = `"{\\"ScheduleGrid\\":{\\"channel\\":[{\\"id\\":null,\\"displayname\\":null,\\"channelid\\":\\"10000000000080000\\",\\"channellogourl\\":\\"http://imagesstartv.whatsonindia.com/dasimages/channel/landscape/100x75/wHtcYVRZ.png\\",\\"channelgenre\\":\\"Hindi Entertainment\\",\\"channelweburl\\":\\"\\",\\"channeldisplayname\\":\\"STAR PLUS\\",\\"lcn\\":\\"1\\",\\"isfav\\":\\"0\\",\\"programme\\":[{\\"programmeid\\":\\"30000000550792674\\",\\"title\\":\\"Imlie\\",\\"start\\":\\"202203310000\\",\\"stop\\":\\"202203310030\\",\\"desc\\":\\"Imlie finds herself in deep trouble when she gets tied up before the wedding. Meanwhile, Aryan assumes that he is getting married to Imlie and performs the wedding rituals.\\",\\"programmeurl\\":\\"http://imagesstartv.whatsonindia.com/dasimages/landscape/360x270/59A9215E5DE13ABF4B05C59A6C87768AD61CA608M.jpg\\",\\"channelid\\":\\"10000000000080000\\",\\"date\\":\\"20220331\\",\\"episodenum\\":null,\\"subtitle\\":null,\\"scheduleid\\":\\"10000069158583187\\",\\"genre\\":\\"TV Show\\",\\"subgenre\\":\\"Drama\\",\\"programmescore\\":\\"0.083309\\",\\"languagename\\":\\"Hindi\\",\\"dubbedlanguageid\\":\\"10000000000040000\\",\\"timestring\\":\\"12:00 AM, Tomorrow\\",\\"duration\\":\\"30\\",\\"episodeshorttitle\\":\\"\\"}]}]}}"`
+  const content =
+    '"{\\"ScheduleGrid\\":{\\"channel\\":[{\\"id\\":null,\\"displayname\\":null,\\"channelid\\":\\"10000000000080000\\",\\"channellogourl\\":\\"http://imagesstartv.whatsonindia.com/dasimages/channel/landscape/100x75/wHtcYVRZ.png\\",\\"channelgenre\\":\\"Hindi Entertainment\\",\\"channelweburl\\":\\"\\",\\"channeldisplayname\\":\\"STAR PLUS\\",\\"lcn\\":\\"1\\",\\"isfav\\":\\"0\\",\\"programme\\":[{\\"programmeid\\":\\"30000000550792674\\",\\"title\\":\\"Imlie\\",\\"start\\":\\"202203310000\\",\\"stop\\":\\"202203310030\\",\\"desc\\":\\"Imlie finds herself in deep trouble when she gets tied up before the wedding. Meanwhile, Aryan assumes that he is getting married to Imlie and performs the wedding rituals.\\",\\"programmeurl\\":\\"http://imagesstartv.whatsonindia.com/dasimages/landscape/360x270/59A9215E5DE13ABF4B05C59A6C87768AD61CA608M.jpg\\",\\"channelid\\":\\"10000000000080000\\",\\"date\\":\\"20220331\\",\\"episodenum\\":null,\\"subtitle\\":null,\\"scheduleid\\":\\"10000069158583187\\",\\"genre\\":\\"TV Show\\",\\"subgenre\\":\\"Drama\\",\\"programmescore\\":\\"0.083309\\",\\"languagename\\":\\"Hindi\\",\\"dubbedlanguageid\\":\\"10000000000040000\\",\\"timestring\\":\\"12:00 AM, Tomorrow\\",\\"duration\\":\\"30\\",\\"episodeshorttitle\\":\\"\\"}]}]}}"'
   const result = parser({ content, channel }).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
@@ -59,7 +60,7 @@ it('can parse response', () => {
 
 it('can handle empty guide', () => {
   const result = parser({
-    content: `""`
+    content: '""'
   })
   expect(result).toMatchObject([])
 })

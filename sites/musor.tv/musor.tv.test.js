@@ -1,5 +1,5 @@
 // npm run channels:parse -- --config=./sites/musor.tv/musor.tv.config.js --output=./sites/musor.tv/musor.tv.channels.xml
-// npx epg-grabber --config=sites/musor.tv/musor.tv.config.js --channels=sites/musor.tv/musor.tv.channels.xml --output=guide.xml --days=2
+// npm run grab -- --site=musor.tv
 
 const { parser, url } = require('./musor.tv.config.js')
 const fs = require('fs')
@@ -38,7 +38,7 @@ it('can parse response', () => {
   expect(results[0]).toMatchObject({
     start: '2022-11-19T23:00:00.000Z',
     stop: '2022-11-19T23:30:00.000Z',
-    title: `Egészségtér`,
+    title: 'Egészségtér',
     description:
       'Egészségtér címmel új természetgyógyászattal foglalkozó magazinműsor indult hetente fél órás időtartamban a hatoscsatornán. A műsor derűs, objektív hangvételével és szakmailag magas színvonalú ismeretterjesztő jellegével az e'
   })
@@ -46,7 +46,7 @@ it('can parse response', () => {
   expect(results[1]).toMatchObject({
     start: '2022-11-19T23:30:00.000Z',
     stop: '2022-11-20T00:00:00.000Z',
-    title: `Tradíció Klipek`,
+    title: 'Tradíció Klipek',
     description: 'Tradíció Klipek Birinyi József néprajzi, vallási, népzenei, népszokás filmjeiből.'
   })
 })
@@ -54,7 +54,7 @@ it('can parse response', () => {
 it('can handle empty guide', () => {
   const result = parser({
     date,
-    content: `<!DOCTYPE html><html><head></head><body></body></html>`
+    content: '<!DOCTYPE html><html><head></head><body></body></html>'
   })
   expect(result).toMatchObject([])
 })

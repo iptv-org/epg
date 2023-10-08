@@ -32,7 +32,7 @@ module.exports = {
 }
 
 function parseContent(content) {
-  const [_, initialState] = content.match(/window.__INITIAL_STATE__ = (.*);/i) || [null, null]
+  const [, initialState] = content.match(/window.__INITIAL_STATE__ = (.*);/i) || [null, null]
   if (!initialState) return null
   const data = JSON.parse(initialState)
   if (!data) return null

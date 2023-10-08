@@ -75,11 +75,13 @@ function parseStart(item, date) {
   return DateTime.fromFormat(
     `${date.format('YYYY-MM-DD')} ${item.time} ${meridiem}`,
     'yyyy-MM-dd hh:mm a',
-    { zone: 'Asia/Hong_Kong' }
+    {
+      zone: 'Asia/Hong_Kong'
+    }
   ).toUTC()
 }
 
-function parseItems(content, date) {
+function parseItems(content) {
   const data = JSON.parse(content)
   if (!data || !Array.isArray(data.epgs)) return []
 

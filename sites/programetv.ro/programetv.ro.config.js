@@ -20,7 +20,7 @@ module.exports = {
 
     return `https://www.programetv.ro/post/${channel.site_id}/${daysOfWeek[day]}/`
   },
-  parser: function ({ content, channel }) {
+  parser: function ({ content }) {
     let programs = []
     const data = parseContent(content)
     if (!data || !data.shows) return programs
@@ -57,7 +57,7 @@ function parseStop(item) {
 }
 
 function parseContent(content) {
-  const [_, data] = content.match(/var pageData = ((.|[\r\n])+);\n/) || [null, null]
+  const [, data] = content.match(/var pageData = ((.|[\r\n])+);\n/) || [null, null]
 
   return data ? JSON.parse(data) : {}
 }

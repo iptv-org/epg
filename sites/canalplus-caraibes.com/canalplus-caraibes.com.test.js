@@ -1,5 +1,5 @@
 // [Geo-blocked] node ./scripts/channels.js --config=./sites/canalplus-caraibes.com/canalplus-caraibes.com.config.js --output=./sites/canalplus-caraibes.com/canalplus-caraibes.com.channels.xml
-// npx epg-grabber --config=sites/canalplus-caraibes.com/canalplus-caraibes.com.config.js --channels=sites/canalplus-caraibes.com/canalplus-caraibes.com.channels.xml --output=guide.xml --days=2
+// npm run grab -- --site=canalplus-caraibes.com
 
 const { parser, url } = require('./canalplus-caraibes.com.config.js')
 const axios = require('axios')
@@ -31,7 +31,8 @@ it('can generate valid url for tomorrow', () => {
 })
 
 it('can parse response', done => {
-  const content = `{"timeSlices":[{"contents":[{"title":"Rugby - Leinster / La Rochelle","subtitle":"Rugby","thirdTitle":"BEIN SPORTS 1 HD","startTime":1660815000,"endTime":1660816800,"onClick":{"displayTemplate":"miniDetail","displayName":"Rugby - Leinster / La Rochelle","URLPage":"https://service.canal-overseas.com/ott-frontend/vector/53001/event/140377765","URLVitrine":"https://service.canal-overseas.com/ott-frontend/vector/53001/program/224515801/recommendations"},"programID":224515801,"diffusionID":"140377765","URLImageDefault":"https://service.canal-overseas.com/image-api/v1/image/75fca4586fdc3458930dd1ab6fc2e643","URLImage":"https://service.canal-overseas.com/image-api/v1/image/7854e20fb6efecd398598653c57cc771"}],"timeSlice":"4"}]}`
+  const content =
+    '{"timeSlices":[{"contents":[{"title":"Rugby - Leinster / La Rochelle","subtitle":"Rugby","thirdTitle":"BEIN SPORTS 1 HD","startTime":1660815000,"endTime":1660816800,"onClick":{"displayTemplate":"miniDetail","displayName":"Rugby - Leinster / La Rochelle","URLPage":"https://service.canal-overseas.com/ott-frontend/vector/53001/event/140377765","URLVitrine":"https://service.canal-overseas.com/ott-frontend/vector/53001/program/224515801/recommendations"},"programID":224515801,"diffusionID":"140377765","URLImageDefault":"https://service.canal-overseas.com/image-api/v1/image/75fca4586fdc3458930dd1ab6fc2e643","URLImage":"https://service.canal-overseas.com/image-api/v1/image/7854e20fb6efecd398598653c57cc771"}],"timeSlice":"4"}]}'
   axios.get.mockImplementation(url => {
     if (url === 'https://service.canal-overseas.com/ott-frontend/vector/53001/event/140377765') {
       return Promise.resolve({
@@ -125,7 +126,8 @@ it('can parse response', done => {
 
 it('can handle empty guide', done => {
   parser({
-    content: `{"currentPage":{"displayTemplate":"error","BOName":"Page introuvable"},"title":"Page introuvable","text":"La page que vous demandez est introuvable. Si le problème persiste, vous pouvez contacter l'assistance de CANAL+/CANALSAT.","code":404}`
+    content:
+      '{"currentPage":{"displayTemplate":"error","BOName":"Page introuvable"},"title":"Page introuvable","text":"La page que vous demandez est introuvable. Si le problème persiste, vous pouvez contacter l\'assistance de CANAL+/CANALSAT.","code":404}'
   })
     .then(result => {
       expect(result).toMatchObject([])

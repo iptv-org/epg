@@ -1,7 +1,7 @@
 const axios = require('axios')
 const dayjs = require('dayjs')
 
-const API_ENDPOINT = `https://static.spark.ziggogo.tv/eng/web/epg-service-lite`
+const API_ENDPOINT = 'https://static.spark.ziggogo.tv/eng/web/epg-service-lite'
 
 module.exports = {
   site: 'ziggogo.tv',
@@ -76,7 +76,7 @@ module.exports = {
   async channels() {
     const data = await axios
       .get(
-        `https://prod.spark.ziggogo.tv/eng/web/linear-service/v2/channels?cityId=65535&language=en&productClass=Orion-DASH`
+        'https://prod.spark.ziggogo.tv/eng/web/linear-service/v2/channels?cityId=65535&language=en&productClass=Orion-DASH'
       )
       .then(r => r.data)
       .catch(console.log)

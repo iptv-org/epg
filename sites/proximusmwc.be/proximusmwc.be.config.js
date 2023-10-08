@@ -4,7 +4,6 @@ const dayjs = require('dayjs')
 module.exports = {
   site: 'proximusmwc.be',
   days: 2,
-  skip: true, // site is not working (https://github.com/iptv-org/epg/runs/5505070902?check_suite_focus=true)
   url: 'https://api.proximusmwc.be/v2/graphql',
   request: {
     headers: {
@@ -23,7 +22,7 @@ module.exports = {
       }
     }
   },
-  parser: function ({ content, date, channel }) {
+  parser: function ({ content }) {
     const programs = []
     const items = parseItems(content)
     items.forEach(item => {
@@ -47,7 +46,7 @@ module.exports = {
         'query getPlayableChannels($language: String!, $queryParams: ChannelQueryParams, $id: String) { playableChannels(language: $language, queryParams: $queryParams, id: $id) { id name language radio }}'
     }
     const data = await axios
-      .post(`https://api.proximusmwc.be/v2/graphql`, query)
+      .post('https://api.proximusmwc.be/v2/graphql', query)
       .then(r => r.data)
       .catch(console.log)
 

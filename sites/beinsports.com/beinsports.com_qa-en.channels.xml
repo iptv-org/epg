@@ -1,24 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<site site="beinsports.com">
-  <channels>
-    <channel lang="en" xmltv_id="beINSports.qa" site_id="#1">BeIn Sports</channel>
-    <channel lang="en" xmltv_id="beINSportsNews.qa" site_id="#2">BeIn Sports News</channel>
-    <channel lang="en" xmltv_id="beINSports2.qa" site_id="#3">BeIn Sports 2</channel>
-    <channel lang="en" xmltv_id="beINSports3.qa" site_id="#4">BeIn Sports 3</channel>
-    <channel lang="en" xmltv_id="beINSports4.qa" site_id="#5">BeIn Sports 4</channel>
-    <channel lang="en" xmltv_id="beINSports5.qa" site_id="#6">BeIn Sports 5</channel>
-    <channel lang="en" xmltv_id="beINSports6.qa" site_id="#7">BeIn Sports 6</channel>
-    <channel lang="en" xmltv_id="beINSports7.qa" site_id="#8">BeIn Sports 7</channel>
-    <channel lang="en" xmltv_id="beINSportsPremium3.qa" site_id="#9">BeIn Sports Premium 3</channel>
-    <channel lang="en" xmltv_id="beINSportsXtra1.qa" site_id="#10">BeIn Sports Xtra 1</channel>
-    <channel lang="en" xmltv_id="beINSportsXtra2.qa" site_id="#11">BeIn Sports Xtra 2</channel>
-    <channel lang="en" xmltv_id="beIN4K.qa" site_id="#12">BeIn 4K</channel>
-    <channel lang="en" xmltv_id="beINSportsNBA.qa" site_id="#13">BeIn NBA</channel>
-    <channel lang="en" xmltv_id="beINSportsEnglish1.qa" site_id="#14">BeIn Sports English 1</channel>
-    <channel lang="en" xmltv_id="beINSportsEnglish2.qa" site_id="#15">BeIn Sports English 2</channel>
-    <channel lang="en" xmltv_id="beINSportsEnglish3.qa" site_id="#16">BeIn Sports English 3</channel>
-    <channel lang="fr" xmltv_id="beINSportsFrench1.qa" site_id="#17">BeIn Sports French 1</channel>
-    <channel lang="fr" xmltv_id="beINSportsFrench2.qa" site_id="#18">BeIn Sports French 2</channel>
-    <channel lang="fr" xmltv_id="beINSportsFrench3.qa" site_id="#19">BeIn Sports French 3</channel>
-  </channels>
-</site>
+<channels>
+  <channel site="beinsports.com" lang="en" xmltv_id="beINSports.qa" site_id="#1">BeIn Sports</channel>
+  <channel site="beinsports.com" lang="en" xmltv_id="beINSportsNews.qa" site_id="#2">BeIn Sports News</channel>
+  <channel site="beinsports.com" lang="en" xmltv_id="beINSports2.qa" site_id="#3">BeIn Sports 2</channel>
+  <channel site="beinsports.com" lang="en" xmltv_id="beINSports3.qa" site_id="#4">BeIn Sports 3</channel>
+  <channel site="beinsports.com" lang="en" xmltv_id="beINSports4.qa" site_id="#5">BeIn Sports 4</channel>
+  <channel site="beinsports.com" lang="en" xmltv_id="beINSports5.qa" site_id="#6">BeIn Sports 5</channel>
+  <channel site="beinsports.com" lang="en" xmltv_id="beINSports6.qa" site_id="#7">BeIn Sports 6</channel>
+  <channel site="beinsports.com" lang="en" xmltv_id="beINSports7.qa" site_id="#8">BeIn Sports 7</channel>
+  <channel site="beinsports.com" lang="en" xmltv_id="beINSportsPremium3.qa" site_id="#9">BeIn Sports Premium 3</channel>
+  <channel site="beinsports.com" lang="en" xmltv_id="beINSportsXtra1.qa" site_id="#10">BeIn Sports Xtra 1</channel>
+  <channel site="beinsports.com" lang="en" xmltv_id="beINSportsXtra2.qa" site_id="#11">BeIn Sports Xtra 2</channel>
+  <channel site="beinsports.com" lang="en" xmltv_id="beIN4K.qa" site_id="#12">BeIn 4K</channel>
+  <channel site="beinsports.com" lang="en" xmltv_id="beINSportsNBA.qa" site_id="#13">BeIn NBA</channel>
+  <channel site="beinsports.com" lang="en" xmltv_id="beINSportsEnglish1.qa" site_id="#14">BeIn Sports English 1</channel>
+  <channel site="beinsports.com" lang="en" xmltv_id="beINSportsEnglish2.qa" site_id="#15">BeIn Sports English 2</channel>
+  <channel site="beinsports.com" lang="en" xmltv_id="beINSportsEnglish3.qa" site_id="#16">BeIn Sports English 3</channel>
+  <channel site="beinsports.com" lang="fr" xmltv_id="beINSportsFrench1.qa" site_id="#17">BeIn Sports French 1</channel>
+  <channel site="beinsports.com" lang="fr" xmltv_id="beINSportsFrench2.qa" site_id="#18">BeIn Sports French 2</channel>
+  <channel site="beinsports.com" lang="fr" xmltv_id="beINSportsFrench3.qa" site_id="#19">BeIn Sports French 3</channel>
+</channels>

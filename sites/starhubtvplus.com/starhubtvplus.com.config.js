@@ -22,7 +22,8 @@ module.exports = {
       dateFrom: date.format('YYYY-MM-DD'),
       dateTo: date.add(1, 'd').format('YYYY-MM-DD')
     })
-    const query = `query webFilteredEpg($category: String, $dateFrom: DateWithoutTime, $dateTo: DateWithoutTime!) { nagraEpg(category: $category) { items { id: tvChannel image name: longName programs: programsByDate(dateFrom: $dateFrom, dateTo: $dateTo) { id title description Categories startTime endTime }}}}`
+    const query =
+      'query webFilteredEpg($category: String, $dateFrom: DateWithoutTime, $dateTo: DateWithoutTime!) { nagraEpg(category: $category) { items { id: tvChannel image name: longName programs: programsByDate(dateFrom: $dateFrom, dateTo: $dateTo) { id title description Categories startTime endTime }}}}'
 
     const params = `operationName=webFilteredEpg&variables=${encodeURIComponent(
       variables
@@ -30,7 +31,7 @@ module.exports = {
 
     return `https://api.starhubtvplus.com/epg?${params}`
   },
-  parser: function ({ content, channel, cached }) {
+  parser: function ({ content, channel }) {
     let programs = []
     const items = parseItems(content, channel)
     items.forEach(item => {
@@ -48,7 +49,7 @@ module.exports = {
   async channels() {
     const items = await axios
       .get(
-        `https://api.starhubtvplus.com/epg?operationName=webFilteredEpg&variables=%7B%22category%22%3A%22%22,%22dateFrom%22%3A%222022-05-10%22,%22dateTo%22%3A%222022-05-11%22%7D&query=query%20webFilteredEpg(%24category%3A%20String)%20%7B%20nagraEpg(category%3A%20%24category)%20%7B%20items%20%7B%20id%3A%20tvChannel%20image%20name%3A%20longName%20%7D%7D%7D`,
+        'https://api.starhubtvplus.com/epg?operationName=webFilteredEpg&variables=%7B%22category%22%3A%22%22,%22dateFrom%22%3A%222022-05-10%22,%22dateTo%22%3A%222022-05-11%22%7D&query=query%20webFilteredEpg(%24category%3A%20String)%20%7B%20nagraEpg(category%3A%20%24category)%20%7B%20items%20%7B%20id%3A%20tvChannel%20image%20name%3A%20longName%20%7D%7D%7D',
         {
           headers: {
             'x-application-key': APP_KEY,

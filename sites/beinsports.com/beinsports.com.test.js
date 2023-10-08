@@ -1,6 +1,6 @@
 // npm run channels:parse -- --config=./sites/beinsports.com/beinsports.com.config.js --output=./sites/beinsports.com/beinsports.com_qa-ar.channels.xml --set=lang:ar --set=region:ar
-// npx epg-grabber --config=sites/beinsports.com/beinsports.com.config.js --channels=sites/beinsports.com/beinsports.com_qa-en.channels.xml --output=guide.xml --timeout=30000 --days=2
-// npx epg-grabber --config=sites/beinsports.com/beinsports.com.config.js --channels=sites/beinsports.com/beinsports.com_us-en.channels.xml --output=guide.xml --timeout=30000 --days=2
+// npm run grab -- --site=beinsports.com
+// npm run grab -- --site=beinsports.com
 
 const { parser, url } = require('./beinsports.com.config.js')
 const fs = require('fs')

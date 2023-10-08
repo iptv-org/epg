@@ -1,5 +1,5 @@
 // npm run channels:parse -- --config=./sites/canalplus.com/canalplus.com.config.js --output=./sites/canalplus.com/canalplus.com.channels.xml
-// npx epg-grabber --config=sites/canalplus.com/canalplus.com.config.js --channels=sites/canalplus.com/canalplus.com.channels.xml --output=guide.xml
+// npm run grab -- --site=canalplus.com
 
 const { parser, url } = require('./canalplus.com.config.js')
 const fs = require('fs')
@@ -97,7 +97,8 @@ it('can parse response', done => {
           start: '2023-01-12T06:28:00.000Z',
           stop: '2023-01-12T12:06:00.000Z',
           title: 'Le cercle',
-          description: `Tant qu'il y aura du cinéma, LE CERCLE sera là. C'est la seule émission télévisée de débats critiques 100% consacrée au cinéma et elle rentre dans sa 18e saison. Chaque semaine, elle offre des joutes enflammées, joyeuses et sans condescendance, sur les films à l'affiche ; et invite avec \"Le questionnaire du CERCLE\" les réalisatrices et réalisateurs à venir partager leur passion cinéphile.`,
+          description:
+            "Tant qu'il y aura du cinéma, LE CERCLE sera là. C'est la seule émission télévisée de débats critiques 100% consacrée au cinéma et elle rentre dans sa 18e saison. Chaque semaine, elle offre des joutes enflammées, joyeuses et sans condescendance, sur les films à l'affiche ; et invite avec \"Le questionnaire du CERCLE\" les réalisatrices et réalisateurs à venir partager leur passion cinéphile.",
           icon: 'https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/filters:quality({imageQualityPercentage})/img-hapi.canalplus.pro:80/ServiceImage/ImageID/107297573',
           presenter: ['Lily Bloom'],
           rating: {
@@ -109,7 +110,8 @@ it('can parse response', done => {
           start: '2023-01-12T12:06:00.000Z',
           stop: '2023-01-12T13:06:00.000Z',
           title: 'Illusions perdues',
-          description: `Pendant la Restauration, Lucien de Rubempré, jeune provincial d'Angoulême, se rêve poète. Il débarque à Paris en quête de gloire. Il a le soutien de Louise de Bargeton, une aristocrate qui croit en son talent. Pour gagner sa vie, Lucien trouve un emploi dans le journal dirigé par le peu scrupuleux Etienne Lousteau...`,
+          description:
+            "Pendant la Restauration, Lucien de Rubempré, jeune provincial d'Angoulême, se rêve poète. Il débarque à Paris en quête de gloire. Il a le soutien de Louise de Bargeton, une aristocrate qui croit en son talent. Pour gagner sa vie, Lucien trouve un emploi dans le journal dirigé par le peu scrupuleux Etienne Lousteau...",
           icon: 'https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/filters:quality({imageQualityPercentage})/img-hapi.canalplus.pro:80/ServiceImage/ImageID/107356485',
           director: ['Xavier Giannoli'],
           actors: [

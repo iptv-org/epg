@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/siba.com.co/siba.com.co.config.js --channels=sites/siba.com.co/siba.com.co.channels.xml --output=guide.xml --days=2
+// npm run grab -- --site=siba.com.co
 
 const { parser, url, request } = require('./siba.com.co.config.js')
 const dayjs = require('dayjs')
@@ -12,7 +12,8 @@ const channel = {
   site_id: '395',
   xmltv_id: 'CanalClaro.cl'
 }
-const content = `{"list":[{"id":"395","nom":"CANAL CLARO","num":"102","logo":"7c4b9e8566a6e867d1db4c7ce845f1f4.jpg","cat":"Exclusivos Claro","prog":[{"id":"665724465","nom":"Worst Cooks In America","ini":1636588800,"fin":1636592400}]}],"error":null}`
+const content =
+  '{"list":[{"id":"395","nom":"CANAL CLARO","num":"102","logo":"7c4b9e8566a6e867d1db4c7ce845f1f4.jpg","cat":"Exclusivos Claro","prog":[{"id":"665724465","nom":"Worst Cooks In America","ini":1636588800,"fin":1636592400}]}],"error":null}'
 
 it('can generate valid url', () => {
   expect(url).toBe('http://devportal.siba.com.co/index.php?action=grilla')
@@ -47,7 +48,7 @@ it('can handle empty guide', () => {
   const result = parser({
     date,
     channel,
-    content: `{"list":[],"error":null}`
+    content: '{"list":[],"error":null}'
   })
   expect(result).toMatchObject([])
 })

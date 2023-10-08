@@ -1,7 +1,7 @@
 // npm run channels:parse -- --config=./sites/tv.movistar.com.pe/tv.movistar.com.pe.config.js --output=./sites/tv.movistar.com.pe/tv.movistar.com.pe.channels.xml
-// npx epg-grabber --config=sites/tv.movistar.com.pe/tv.movistar.com.pe.config.js --channels=sites/tv.movistar.com.pe/tv.movistar.com.pe.channels.xml --output=guide.xml --days=2
+// npm run grab -- --site=tv.movistar.com.pe
 
-const { parser, url, request } = require('./tv.movistar.com.pe.config.js')
+const { parser, url } = require('./tv.movistar.com.pe.config.js')
 const fs = require('fs')
 const path = require('path')
 const dayjs = require('dayjs')

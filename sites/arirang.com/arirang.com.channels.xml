@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<site site="arirang.com">
-    <channels>
-        <channel lang="en" xmltv_id="ArirangTV.kr" site_id="CH_K" logo="https://i.imgur.com/Asu5pE9.png">Arirang TV</channel>
-        <channel lang="en" xmltv_id="ArirangUN.kr" site_id="CH_Z" logo="https://i.imgur.com/Jdy3WNm.png">Arirang UN</channel>
-        <channel lang="en" xmltv_id="ArirangWorld.kr" site_id="CH_W" logo="https://i.imgur.com/5Aoithj.png">Arirang World</channel>
-    </channels>
-</site>
+<channels>
+  <channel site="arirang.com" lang="en" xmltv_id="ArirangTV.kr" site_id="CH_K">Arirang TV</channel>
+  <channel site="arirang.com" lang="en" xmltv_id="ArirangUN.kr" site_id="CH_Z">Arirang UN</channel>
+  <channel site="arirang.com" lang="en" xmltv_id="ArirangWorld.kr" site_id="CH_W">Arirang World</channel>
+</channels>

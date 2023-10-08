@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<site site="programme-tv.vini.pf">
-  <channels>
-    <channel lang="fr" xmltv_id="Polynesie1ere.pf" site_id="polynesie-1ere">Polynésie 1ère</channel>
-    <channel lang="fr" xmltv_id="TNTV.pf" site_id="tntv-local">Tahiti Nui TV</channel>
-  </channels>
-</site>
+<channels>
+  <channel site="programme-tv.vini.pf" lang="fr" xmltv_id="Polynesie1ere.pf" site_id="polynesie-1ere">Polynésie 1ère</channel>
+  <channel site="programme-tv.vini.pf" lang="fr" xmltv_id="TNTV.pf" site_id="tntv-local">Tahiti Nui TV</channel>
+</channels>

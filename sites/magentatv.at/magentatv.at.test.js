@@ -1,5 +1,5 @@
 // npm run channels:parse -- --config=./sites/magentatv.at/magentatv.at.config.js --output=./sites/magentatv.at/magentatv.at.channels.xml
-// npx epg-grabber --config=sites/magentatv.at/magentatv.at.config.js --channels=sites/magentatv.at/magentatv.at.channels.xml --output=guide.xml --days=2
+// npm run grab -- --site=magentatv.at
 
 const { parser, url } = require('./magentatv.at.config.js')
 const fs = require('fs')
@@ -91,7 +91,7 @@ it('can parse response', async () => {
 })
 
 it('can handle empty guide', async () => {
-  let results = await parser({ content: ``, channel, date })
+  let results = await parser({ content: '', channel, date })
 
   expect(results).toMatchObject([])
 })

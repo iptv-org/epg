@@ -10,7 +10,7 @@ dayjs.extend(customParseFormat)
 module.exports = {
   site: 'unifi.com.my',
   days: 2,
-  url: `https://unifi.com.my/tv/api/tv`,
+  url: 'https://unifi.com.my/tv/api/tv',
   request: {
     cache: {
       ttl: 60 * 60 * 1000 // 1 hour

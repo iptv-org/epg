@@ -58,7 +58,7 @@ function parseStart($item) {
 
 function parseStop($item) {
   const date = $item('.card-body').clone().children().remove().end().text().trim()
-  const [_, time] = date.split(' - ')
+  const [, time] = date.split(' - ')
 
   return dayjs.tz(time, 'YYYY-MM-DD HH:mm:ss [PST]', 'PST').utc()
 }
@@ -66,5 +66,5 @@ function parseStop($item) {
 function parseItems(content) {
   const $ = cheerio.load(content)
 
-  return $(`.container`).toArray()
+  return $('.container').toArray()
 }

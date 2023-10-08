@@ -52,7 +52,7 @@ function parseItems(content, date) {
 
   return data[0]
     .map(row => {
-      const [_, time, title] = row['0'].replace(/\s\s/g, ' ').match(/^(\d{2}:\d{2}) (.*)/) || [
+      const [, time, title] = row['0'].replace(/\s\s/g, ' ').match(/^(\d{2}:\d{2}) (.*)/) || [
         null,
         null,
         null

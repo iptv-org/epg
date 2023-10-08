@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/unifi.com.my/unifi.com.my.config.js --channels=sites/unifi.com.my/unifi.com.my.channels.xml --output=guide.xml --days=2 --timeout=30000
+// npm run grab -- --site=unifi.com.my
 
 const { parser, url, request } = require('./unifi.com.my.config.js')
 const fs = require('fs')
@@ -16,7 +16,7 @@ const channel = {
 }
 
 it('can generate valid url', () => {
-  expect(url).toBe(`https://unifi.com.my/tv/api/tv`)
+  expect(url).toBe('https://unifi.com.my/tv/api/tv')
 })
 
 it('can generate valid request method', () => {

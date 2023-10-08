@@ -49,7 +49,7 @@ module.exports = {
 
     return programs
   },
-  async channels({ lang }) {
+  async channels() {
     const session = await loadSessionDetails()
     if (!session || !session.jwt || !session.token) return null
 

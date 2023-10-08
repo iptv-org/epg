@@ -47,7 +47,7 @@ module.exports = {
   },
   async channels() {
     let html = await axios
-      .get(`https://tv24.se/x/settings/addremove`)
+      .get('https://tv24.se/x/settings/addremove')
       .then(r => r.data)
       .catch(console.log)
     let $ = cheerio.load(html)
@@ -55,7 +55,7 @@ module.exports = {
       .toArray()
       .map(item => $(item).data('channel'))
     html = await axios
-      .get(`https://tv24.se`, {
+      .get('https://tv24.se', {
         headers: {
           Cookie: `selectedChannels=${nums.join(',')}`
         }
@@ -68,7 +68,7 @@ module.exports = {
     return items.map(item => {
       const name = $(item).find('h3').text().trim()
       const link = $(item).find('.channel').attr('href')
-      const [_, site_id] = link.match(/\/kanal\/(.*)/) || [null, null]
+      const [, site_id] = link.match(/\/kanal\/(.*)/) || [null, null]
 
       return {
         lang: 'sv',
@@ -101,13 +101,13 @@ async function loadProgramDetails($item) {
 
 function parseIcon($) {
   const style = $('.image > .actual').attr('style')
-  const [_, url] = style.match(/background-image\: url\('([^']+)'\)/)
+  const [, url] = style.match(/background-image: url\('([^']+)'\)/)
 
   return url
 }
 
 function parseSeason($) {
-  const [_, season] = $('.sub-title')
+  const [, season] = $('.sub-title')
     .text()
     .trim()
     .match(/Säsong (\d+)/) || [null, '']
@@ -116,7 +116,7 @@ function parseSeason($) {
 }
 
 function parseEpisode($) {
-  const [_, episode] = $('.sub-title')
+  const [, episode] = $('.sub-title')
     .text()
     .trim()
     .match(/Avsnitt (\d+)/) || [null, '']
@@ -125,7 +125,7 @@ function parseEpisode($) {
 }
 
 function parseSubTitle($) {
-  const [_, subtitle] = $('.sub-title').text().trim().split(': ')
+  const [, subtitle] = $('.sub-title').text().trim().split(': ')
 
   return subtitle
 }

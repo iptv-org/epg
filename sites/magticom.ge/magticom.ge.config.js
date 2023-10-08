@@ -42,9 +42,9 @@ module.exports = {
 
     return programs
   },
-  async channels({ country, lang }) {
+  async channels() {
     const html = await axios
-      .get(`https://www.magticom.ge/en/tv/tv-services/tv-guide`)
+      .get('https://www.magticom.ge/en/tv/tv-services/tv-guide')
       .then(r => r.data)
       .catch(console.log)
 
@@ -77,7 +77,9 @@ function parseItems(content) {
   let data
   try {
     data = JSON.parse(content)
-  } catch (err) {}
+  } catch (error) {
+    console.log(error.message)
+  }
   if (!data || !Array.isArray(data)) return []
 
   return data

@@ -27,7 +27,7 @@ module.exports = {
       'YYYY-MM-DD'
     )}${packageName}&country=${region}`
   },
-  async parser({ content, channel, cached }) {
+  async parser({ content, channel }) {
     let programs = []
     const items = parseItems(content, channel)
     for (const item of items) {
@@ -91,7 +91,7 @@ async function loadProgramDetails(item) {
 }
 
 function parseItems(content, channel) {
-  const [_, channelId] = channel.site_id.split('#')
+  const [, channelId] = channel.site_id.split('#')
   const data = JSON.parse(content)
   if (!data || !Array.isArray(data.Channels)) return []
   const channelData = data.Channels.find(c => c.Number === channelId)

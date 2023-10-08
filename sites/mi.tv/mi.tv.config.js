@@ -66,7 +66,7 @@ function parseDescription($item) {
 
 function parseIcon($item) {
   const backgroundImage = $item('a > div.image-parent > div.image').css('background-image')
-  const [_, icon] = backgroundImage.match(/url\(\'(.*)'\)/) || [null, null]
+  const [, icon] = backgroundImage.match(/url\('(.*)'\)/) || [null, null]
 
   return icon
 }

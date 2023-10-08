@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<site site="novasports.gr">
-  <channels>
-    <channel lang="el" xmltv_id="Eurosport1Greece.gr" site_id="Eurosport 1 HD">Eurosport 1 HD</channel>
-    <channel lang="el" xmltv_id="Eurosport2Greece.gr" site_id="Eurosport 2 HD">Eurosport 2 HD</channel>
-    <channel lang="el" xmltv_id="Novasports1.gr" site_id="Novasports1HD">Novasports1HD</channel>
-    <channel lang="el" xmltv_id="Novasports2.gr" site_id="Novasports2HD">Novasports2HD</channel>
-    <channel lang="el" xmltv_id="Novasports3.gr" site_id="Novasports3HD">Novasports3HD</channel>
-    <channel lang="el" xmltv_id="Novasports4.gr" site_id="Novasports4HD">Novasports4HD</channel>
-    <channel lang="el" xmltv_id="Novasports5.gr" site_id="Novasports5HD">Novasports5HD</channel>
-    <channel lang="el" xmltv_id="Novasports6.gr" site_id="Novasports6HD">Novasports6HD</channel>
-    <channel lang="el" xmltv_id="NovasportsExtra1.gr" site_id="Novasports Εxtra1">Novasports Εxtra1</channel>
-    <channel lang="el" xmltv_id="NovasportsExtra2.gr" site_id="Novasports Extra2">Novasports Extra2</channel>
-    <channel lang="el" xmltv_id="NovasportsExtra3.gr" site_id="Novasports Extra3">Novasports Extra3</channel>
-    <channel lang="el" xmltv_id="NovasportsExtra4.gr" site_id="Novasports Extra4">Novasports Extra4</channel>
-    <channel lang="el" xmltv_id="NovasportsNews.gr" site_id="ΝovasportsNews">ΝovasportsNews</channel>
-    <channel lang="el" xmltv_id="NovasportsPremierLeague.gr" site_id="Novasports Premier League">Novasports Premier League</channel>
-    <channel lang="el" xmltv_id="NovasportsPrime.gr" site_id="Novasports Prime">Novasports Prime</channel>
-    <channel lang="el" xmltv_id="NovasportsStart.gr" site_id="ΝovasportsStart">ΝovasportsStart</channel>
-  </channels>
-</site>
+<channels>
+  <channel site="novasports.gr" lang="el" xmltv_id="Eurosport1Greece.gr" site_id="Eurosport 1 HD">Eurosport 1 HD</channel>
+  <channel site="novasports.gr" lang="el" xmltv_id="Eurosport2Greece.gr" site_id="Eurosport 2 HD">Eurosport 2 HD</channel>
+  <channel site="novasports.gr" lang="el" xmltv_id="Novasports1.gr" site_id="Novasports1HD">Novasports1HD</channel>
+  <channel site="novasports.gr" lang="el" xmltv_id="Novasports2.gr" site_id="Novasports2HD">Novasports2HD</channel>
+  <channel site="novasports.gr" lang="el" xmltv_id="Novasports3.gr" site_id="Novasports3HD">Novasports3HD</channel>
+  <channel site="novasports.gr" lang="el" xmltv_id="Novasports4.gr" site_id="Novasports4HD">Novasports4HD</channel>
+  <channel site="novasports.gr" lang="el" xmltv_id="Novasports5.gr" site_id="Novasports5HD">Novasports5HD</channel>
+  <channel site="novasports.gr" lang="el" xmltv_id="Novasports6.gr" site_id="Novasports6HD">Novasports6HD</channel>
+  <channel site="novasports.gr" lang="el" xmltv_id="NovasportsExtra1.gr" site_id="Novasports Εxtra1">Novasports Εxtra1</channel>
+  <channel site="novasports.gr" lang="el" xmltv_id="NovasportsExtra2.gr" site_id="Novasports Extra2">Novasports Extra2</channel>
+  <channel site="novasports.gr" lang="el" xmltv_id="NovasportsExtra3.gr" site_id="Novasports Extra3">Novasports Extra3</channel>
+  <channel site="novasports.gr" lang="el" xmltv_id="NovasportsExtra4.gr" site_id="Novasports Extra4">Novasports Extra4</channel>
+  <channel site="novasports.gr" lang="el" xmltv_id="NovasportsNews.gr" site_id="ΝovasportsNews">ΝovasportsNews</channel>
+  <channel site="novasports.gr" lang="el" xmltv_id="NovasportsPremierLeague.gr" site_id="Novasports Premier League">Novasports Premier League</channel>
+  <channel site="novasports.gr" lang="el" xmltv_id="NovasportsPrime.gr" site_id="Novasports Prime">Novasports Prime</channel>
+  <channel site="novasports.gr" lang="el" xmltv_id="NovasportsStart.gr" site_id="ΝovasportsStart">ΝovasportsStart</channel>
+</channels>

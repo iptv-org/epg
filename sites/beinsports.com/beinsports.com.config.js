@@ -26,7 +26,7 @@ module.exports = {
       'YYYY-MM-DD'
     )}`
   },
-  parser: function ({ content, channel, date, cached }) {
+  parser: function ({ content, channel, date }) {
     let programs = []
     const items = parseItems(content, channel)
     let i = 0
@@ -68,15 +68,15 @@ module.exports = {
       .then(r => r.data)
       .catch(console.log)
     const $ = cheerio.load(content)
-    const items = $(`.container > div, #epg_div > div`).toArray()
+    const items = $('.container > div, #epg_div > div').toArray()
     return items
       .map(item => {
         const $item = cheerio.load(item)
         const id = $item('*').attr('id')
-        if (!/^channels\_[0-9]+$/.test(id)) return null
+        if (!/^channels_[0-9]+$/.test(id)) return null
         const channelId = id.replace('channels_', '')
         const imgSrc = $item('img').attr('src')
-        const [_, __, name] = imgSrc.match(/(\/|)([a-z0-9-_.]+)(.png|.svg)$/i) || [null, null, '']
+        const [, , name] = imgSrc.match(/(\/|)([a-z0-9-_.]+)(.png|.svg)$/i) || [null, null, '']
 
         return {
           lang,
@@ -103,7 +103,7 @@ function parseCategory($item) {
 function parseStart($item, date) {
   let time = $item('.time').text()
   if (!time) return null
-  let [_, start, period] = time.match(/^(\d{2}:\d{2})( AM| PM|)/) || [null, null, null]
+  let [, start, period] = time.match(/^(\d{2}:\d{2})( AM| PM|)/) || [null, null, null]
   if (!start) return null
   start = `${date.format('YYYY-MM-DD')} ${start}${period}`
   const format = period ? 'YYYY-MM-DD hh:mm A' : 'YYYY-MM-DD HH:mm'
@@ -114,7 +114,7 @@ function parseStart($item, date) {
 function parseStop($item, date) {
   let time = $item('.time').text()
   if (!time) return null
-  let [_, stop, period] = time.match(/(\d{2}:\d{2})( AM| PM|)$/) || [null, null, null]
+  let [, stop, period] = time.match(/(\d{2}:\d{2})( AM| PM|)$/) || [null, null, null]
   if (!stop) return null
   stop = `${date.format('YYYY-MM-DD')} ${stop}${period}`
   const format = period ? 'YYYY-MM-DD hh:mm A' : 'YYYY-MM-DD HH:mm'
@@ -123,7 +123,7 @@ function parseStop($item, date) {
 }
 
 function parseItems(content, channel) {
-  const [_, channelId] = channel.site_id.split('#')
+  const [, channelId] = channel.site_id.split('#')
   const $ = cheerio.load(content)
 
   return $(`#channels_${channelId} .slider > ul:first-child > li`).toArray()

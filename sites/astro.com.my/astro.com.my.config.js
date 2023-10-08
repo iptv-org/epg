@@ -4,7 +4,7 @@ const utc = require('dayjs/plugin/utc')
 
 dayjs.extend(utc)
 
-const API_ENDPOINT = `https://contenthub-api.eco.astro.com.my`
+const API_ENDPOINT = 'https://contenthub-api.eco.astro.com.my'
 
 module.exports = {
   site: 'astro.com.my',
@@ -41,13 +41,13 @@ module.exports = {
 }
 
 function parseEpisode(item) {
-  const [_, number] = item.title.match(/Ep(\d+)$/) || [null, null]
+  const [, number] = item.title.match(/Ep(\d+)$/) || [null, null]
 
   return number ? parseInt(number) : null
 }
 
 function parseSeason(details) {
-  const [_, season] = details.title ? details.title.match(/ S(\d+)/) || [null, null] : [null, null]
+  const [, season] = details.title ? details.title.match(/ S(\d+)/) || [null, null] : [null, null]
 
   return season ? parseInt(season) : null
 }
@@ -116,7 +116,7 @@ async function loadProgramDetails(item) {
   const data = await axios
     .get(url)
     .then(r => r.data)
-    .catch(err => {})
+    .catch(error => console.log(error.message))
   if (!data) return {}
 
   return data.response || {}
