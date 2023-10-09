@@ -1,41 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<site site="ontvtonight.com">
-  <channels>
-	<channel lang="en" xmltv_id="ABCEast.us" site_id="#69048344/abc">ABC East</channel>
-	<channel lang="en" xmltv_id="ACCNetwork.us" site_id="#7224220194/acc-network">ACC Network</channel>
-	<channel lang="en" xmltv_id="ActionMaxEast.us" site_id="#69046784/actionmax-east">ActionMAX (East)</channel>
-	<channel lang="en" xmltv_id="AMCEast.us" site_id="#69047124/amc-east">AMC (East)</channel>
-	<channel lang="en" xmltv_id="AnimalPlanetEast.us" site_id="#69047235/animal-planet-east">Animal Planet (East)</channel>
-	<channel lang="en" xmltv_id="BBCAmericaEast.us" site_id="#69044423/bbc-america-east">BBC America (East)</channel>
-	<channel lang="en" xmltv_id="beINSportsUSA.us" site_id="#317907389/bein-sports-english">beIN Sports (English)</channel>
-	<channel lang="en" xmltv_id="BETHerWest.us" site_id="#5353620887/bet-her-west">BET Her West</channel>
-	<channel lang="en" xmltv_id="BETJams.us" site_id="#69047127/bet-jams">BET Jams</channel>	
-	<channel lang="en" xmltv_id="BETSoul.us" site_id="#69047129/bet-soul">BET Soul</channel>
-	<channel lang="en" xmltv_id="BigTenNetwork.us" site_id="#69030398/big-ten-network-national">Big Ten Network (National)</channel>
-	<channel lang="en" xmltv_id="CheddarNews.us" site_id="#4461087412/cheddar-busines">Cheddar News</channel>
-	<channel lang="es" xmltv_id="DePeliculaClasico.mx" site_id="#69024616/de-pelicula-clasico">De Película Clásico</channel>
-	<channel lang="es" xmltv_id="DePeliculaLatinAmerica.mx" site_id="#69046812/de-pelicula">De Película</channel>
-	<channel lang="es" xmltv_id="DePeliculaUS.us" site_id="#69029250/de-pelicula-eua-usa">De Película EUA (USA)</channel>
-	<channel lang="en" xmltv_id="InvestigationDiscoveryWest.us" site_id="#526619150/investigation-discovery-west">Investigation Discovery West</channel>
-	<channel lang="en" xmltv_id="K16IWD12.us" site_id="#1700805265/k16iw-cmc-usa">K16IW CMC-USA</channel>
-	<channel lang="en" xmltv_id="K16IWD13.us" site_id="#1700812761/k16iw-cmc-tv">K16IW CMC-TV</channel>
-	<channel lang="en" xmltv_id="KDNULD5.us" site_id="#12053070876/kdnu-sports-news-highlights">Sports News Highlights (KDNU-LD5) Las Vegas, NV</channel>
-	<channel lang="en" xmltv_id="KITVDT2.us" site_id="#3922513892/kitv-metv-hdtv">MeTV (KITV-DT2) Honolulu, HI</channel>
-	<channel lang="en" xmltv_id="KITVDT3.us" site_id="#6356553523/kitv-news-hdtv">Hawaii TV (KITV-DT3) Honolulu, HI</channel>
-	<channel lang="en" xmltv_id="KREGDT1.us" site_id="#69024779/kreg-me-tv-hdtv">MeTV (KREG-TV) Glenwood Springs, CO</channel>
-	<channel lang="en" xmltv_id="KYAZDT1.us" site_id="31716558649/kyaz-metv">KYAZ MeTV+</channel>
-	<channel lang="en" xmltv_id="MSGWesternNewYork.us" site_id="#69048605/madison-square-garden-zone-3">MSG WNY</channel>
-	<channel lang="en" xmltv_id="News12Bronx.us" site_id="#3742593884/news-12-bronx-hdtv">News12 Bronx</channel>
-	<channel lang="en" xmltv_id="News12Brooklyn.us" site_id="#3742601267/news-12-brooklyn-hdtv">News12 Brooklyn</channel>
-	<channel lang="en" xmltv_id="News12NewJersey.us" site_id="#69030688/news-12-new-jersey">News12 New Jersey</channel>
-	<channel lang="en" xmltv_id="News12HudsonValley.us" site_id="#69045750/news-12-hudson-valley">News 12 Hudson Valley</channel>
-	<channel lang="en" xmltv_id="News12Westchester.us" site_id="3760999176/news-12-westchester-hdtv">News12 Westchester</channel>
-	<channel lang="en" xmltv_id="LifetimeMoviesWest.us" site_id="#69030144/lmn-hdtv-west">Lifetime Movies West</channel>
-	<channel lang="en" xmltv_id="LifetimeWest.us" site_id="#69035696/lifetime-television-west">Lifetime West</channel>	
-	<channel lang="en" xmltv_id="TBSEast.us" site_id="#69046986/tbs-superstation-east">TBS Superstation (East)</channel>
-	<channel lang="en" xmltv_id="truTVWest.us" site_id="#69045208/trutv-hdtv-west">truTV HDTV (West)</channel>
-	<channel lang="en" xmltv_id="WCBSDT1.us" site_id="#69021345/wcbs">CBS (WCBS)</channel>
-	<channel lang="es" xmltv_id="XEWTTDT.mx" site_id="#69023835/xewt-12-bc">XEWT 12 BC</channel>
-	<channel lang="es" xmltv_id="XHBCTDT.mx" site_id="#795396454/xhbc-tu-canal-hdtv-bc">XHBC Tu Canal HDTV</channel>
-  </channels>
-</site>
+<channels>
+	<channel site="ontvtonight.com" lang="en" xmltv_id="ABCEast.us" site_id="#69048344/abc">ABC East</channel>
+	<channel site="ontvtonight.com" lang="en" xmltv_id="ACCNetwork.us" site_id="#7224220194/acc-network">ACC Network</channel>
+	<channel site="ontvtonight.com" lang="en" xmltv_id="ActionMaxEast.us" site_id="#69046784/actionmax-east">ActionMAX (East)</channel>
+	<channel site="ontvtonight.com" lang="en" xmltv_id="AMCEast.us" site_id="#69047124/amc-east">AMC (East)</channel>
+	<channel site="ontvtonight.com" lang="en" xmltv_id="AnimalPlanetEast.us" site_id="#69047235/animal-planet-east">Animal Planet (East)</channel>
+	<channel site="ontvtonight.com" lang="en" xmltv_id="BBCAmericaEast.us" site_id="#69044423/bbc-america-east">BBC America (East)</channel>
+	<channel site="ontvtonight.com" lang="en" xmltv_id="beINSportsUSA.us" site_id="#317907389/bein-sports-english">beIN Sports (English)</channel>
+	<channel site="ontvtonight.com" lang="en" xmltv_id="BETHerWest.us" site_id="#5353620887/bet-her-west">BET Her West</channel>
+	<channel site="ontvtonight.com" lang="en" xmltv_id="BETJams.us" site_id="#69047127/bet-jams">BET Jams</channel>	
+	<channel site="ontvtonight.com" lang="en" xmltv_id="BETSoul.us" site_id="#69047129/bet-soul">BET Soul</channel>
+	<channel site="ontvtonight.com" lang="en" xmltv_id="BigTenNetwork.us" site_id="#69030398/big-ten-network-national">Big Ten Network (National)</channel>
+	<channel site="ontvtonight.com" lang="en" xmltv_id="CheddarNews.us" site_id="#4461087412/cheddar-busines">Cheddar News</channel>
+	<channel site="ontvtonight.com" lang="en" xmltv_id="InvestigationDiscoveryWest.us" site_id="#526619150/investigation-discovery-west">Investigation Discovery West</channel>
+	<channel site="ontvtonight.com" lang="en" xmltv_id="K16IWD12.us" site_id="#1700805265/k16iw-cmc-usa">K16IW CMC-USA</channel>
+	<channel site="ontvtonight.com" lang="en" xmltv_id="K16IWD13.us" site_id="#1700812761/k16iw-cmc-tv">K16IW CMC-TV</channel>
+	<channel site="ontvtonight.com" lang="en" xmltv_id="KDNULD5.us" site_id="#12053070876/kdnu-sports-news-highlights">Sports News Highlights (KDNU-LD5) Las Vegas, NV</channel>
+	<channel site="ontvtonight.com" lang="en" xmltv_id="KITVDT2.us" site_id="#3922513892/kitv-metv-hdtv">MeTV (KITV-DT2) Honolulu, HI</channel>
+	<channel site="ontvtonight.com" lang="en" xmltv_id="KITVDT3.us" site_id="#6356553523/kitv-news-hdtv">Hawaii TV (KITV-DT3) Honolulu, HI</channel>
+	<channel site="ontvtonight.com" lang="en" xmltv_id="KREGDT1.us" site_id="#69024779/kreg-me-tv-hdtv">MeTV (KREG-TV) Glenwood Springs, CO</channel>
+	<channel site="ontvtonight.com" lang="en" xmltv_id="KYAZDT1.us" site_id="31716558649/kyaz-metv">KYAZ MeTV+</channel>
+	<channel site="ontvtonight.com" lang="en" xmltv_id="LifetimeMoviesWest.us" site_id="#69030144/lmn-hdtv-west">Lifetime Movies West</channel>
+	<channel site="ontvtonight.com" lang="en" xmltv_id="LifetimeWest.us" site_id="#69035696/lifetime-television-west">Lifetime West</channel>	
+	<channel site="ontvtonight.com" lang="en" xmltv_id="MSGWesternNewYork.us" site_id="#69048605/madison-square-garden-zone-3">MSG WNY</channel>
+	<channel site="ontvtonight.com" lang="en" xmltv_id="News12Bronx.us" site_id="#3742593884/news-12-bronx-hdtv">News12 Bronx</channel>
+	<channel site="ontvtonight.com" lang="en" xmltv_id="News12Brooklyn.us" site_id="#3742601267/news-12-brooklyn-hdtv">News12 Brooklyn</channel>
+	<channel site="ontvtonight.com" lang="en" xmltv_id="News12HudsonValley.us" site_id="#69045750/news-12-hudson-valley">News 12 Hudson Valley</channel>
+	<channel site="ontvtonight.com" lang="en" xmltv_id="News12NewJersey.us" site_id="#69030688/news-12-new-jersey">News12 New Jersey</channel>
+	<channel site="ontvtonight.com" lang="en" xmltv_id="News12Westchester.us" site_id="3760999176/news-12-westchester-hdtv">News12 Westchester</channel>
+	<channel site="ontvtonight.com" lang="en" xmltv_id="TBSEast.us" site_id="#69046986/tbs-superstation-east">TBS Superstation (East)</channel>
+	<channel site="ontvtonight.com" lang="en" xmltv_id="truTVWest.us" site_id="#69045208/trutv-hdtv-west">truTV HDTV (West)</channel>
+	<channel site="ontvtonight.com" lang="en" xmltv_id="WCBSDT1.us" site_id="#69021345/wcbs">CBS (WCBS)</channel>
+	<channel site="ontvtonight.com" lang="es" xmltv_id="DePeliculaClasico.mx" site_id="#69024616/de-pelicula-clasico">De Película Clásico</channel>
+	<channel site="ontvtonight.com" lang="es" xmltv_id="DePeliculaLatinAmerica.mx" site_id="#69046812/de-pelicula">De Película</channel>
+	<channel site="ontvtonight.com" lang="es" xmltv_id="DePeliculaUS.us" site_id="#69029250/de-pelicula-eua-usa">De Película EUA (USA)</channel>
+	<channel site="ontvtonight.com" lang="es" xmltv_id="XEWTTDT.mx" site_id="#69023835/xewt-12-bc">XEWT 12 BC</channel>
+	<channel site="ontvtonight.com" lang="es" xmltv_id="XHBCTDT.mx" site_id="#795396454/xhbc-tu-canal-hdtv-bc">XHBC Tu Canal HDTV</channel>
+</channels>

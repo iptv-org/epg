@@ -1,7 +1,7 @@
 const axios = require('axios')
 const dayjs = require('dayjs')
 
-const API_ENDPOINT = `https://prod.oesp.virginmedia.com/oesp/v4/GB/eng/web`
+const API_ENDPOINT = 'https://prod.oesp.virginmedia.com/oesp/v4/GB/eng/web'
 
 module.exports = {
   site: 'virginmedia.com',

@@ -47,7 +47,7 @@ module.exports = {
   },
   async channels() {
     const html = await axios
-      .get(`https://www.clickthecity.com/tv/channels/`)
+      .get('https://www.clickthecity.com/tv/channels/')
       .then(r => r.data)
       .catch(console.log)
     const $ = cheerio.load(html)
@@ -56,7 +56,7 @@ module.exports = {
     return items.map(item => {
       const name = $(item).find('.card-body').text().trim()
       const url = $(item).find('a').attr('href')
-      const [_, site_id] = url.match(/netid=(\d+)/) || [null, null]
+      const [, site_id] = url.match(/netid=(\d+)/) || [null, null]
 
       return {
         site_id,
@@ -72,7 +72,7 @@ function parseTitle($item) {
 
 function parseStart($item, date) {
   const url = $item('td.cPrg > a').attr('href') || ''
-  let [_, time] = url.match(/starttime=(\d{1,2}%3A\d{2}\+(AM|PM))/) || [null, null]
+  let [, time] = url.match(/starttime=(\d{1,2}%3A\d{2}\+(AM|PM))/) || [null, null]
   if (!time) return null
   time = `${date.format('YYYY-MM-DD')} ${time.replace('%3A', ':').replace('+', ' ')}`
 
@@ -81,7 +81,7 @@ function parseStart($item, date) {
 
 function parseStop($item, date) {
   const url = $item('td.cPrg > a').attr('href') || ''
-  let [_, time] = url.match(/endtime=(\d{1,2}%3A\d{2}\+(AM|PM))/) || [null, null]
+  let [, time] = url.match(/endtime=(\d{1,2}%3A\d{2}\+(AM|PM))/) || [null, null]
   if (!time) return null
   time = `${date.format('YYYY-MM-DD')} ${time.replace('%3A', ':').replace('+', ' ')}`
 
@@ -91,7 +91,7 @@ function parseStop($item, date) {
 function parseItems(content) {
   const $ = cheerio.load(content)
 
-  return $(`#tvlistings > tbody > tr`)
+  return $('#tvlistings > tbody > tr')
     .filter(function () {
       return $(this).find('td.cPrg').length
     })

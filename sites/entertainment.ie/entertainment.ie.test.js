@@ -1,5 +1,5 @@
 // npm run channels:parse -- --config=./sites/entertainment.ie/entertainment.ie.config.js --output=./sites/entertainment.ie/entertainment.ie.channels.xml
-// npx epg-grabber --config=sites/entertainment.ie/entertainment.ie.config.js --channels=sites/entertainment.ie/entertainment.ie.channels.xml --output=guide.xml
+// npm run grab -- --site=entertainment.ie
 
 const fs = require('fs')
 const path = require('path')

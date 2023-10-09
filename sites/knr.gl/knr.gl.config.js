@@ -40,7 +40,7 @@ function parseStart(item, date) {
   return dayjs.tz(time, 'YYYY-MM-DD HH:mm', 'America/Godthab')
 }
 
-function parseItems(content, date) {
+function parseItems(content) {
   const data = JSON.parse(content)
   if (!data.program_list) return []
   const $ = cheerio.load(data.program_list)

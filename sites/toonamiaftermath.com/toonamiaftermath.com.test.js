@@ -1,6 +1,6 @@
-// npx epg-grabber --config=sites/toonamiaftermath.com/toonamiaftermath.com.config.js --channels=sites/toonamiaftermath.com/toonamiaftermath.com.channels.xml --output=guide.xml --days=2
+// npm run grab -- --site=toonamiaftermath.com
 
-const { parser, url, request } = require('./toonamiaftermath.com.config.js')
+const { parser, url } = require('./toonamiaftermath.com.config.js')
 const fs = require('fs')
 const path = require('path')
 const axios = require('axios')
@@ -12,7 +12,7 @@ dayjs.extend(utc)
 
 jest.mock('axios')
 
-const API_ENDPOINT = `https://api.toonamiaftermath.com`
+const API_ENDPOINT = 'https://api.toonamiaftermath.com'
 
 const date = dayjs.utc('2022-11-29', 'YYYY-MM-DD').startOf('d')
 const channel = {

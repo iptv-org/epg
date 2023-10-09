@@ -1,7 +1,7 @@
 // npm run channels:parse -- --config=./sites/gatotv.com/gatotv.com.config.js --output=./sites/gatotv.com/gatotv.com.channels.xml
-// npx epg-grabber --config=sites/gatotv.com/gatotv.com.config.js --channels=sites/gatotv.com/gatotv.com.channels.xml --output=guide.xml
+// npm run grab -- --site=gatotv.com
 
-const { parser, url, request } = require('./gatotv.com.config.js')
+const { parser, url } = require('./gatotv.com.config.js')
 const fs = require('fs')
 const path = require('path')
 const dayjs = require('dayjs')

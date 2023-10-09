@@ -1,19 +1,16 @@
-// npx epg-grabber --config=sites/ionplustv.com/ionplustv.com.config.js --channels=sites/ionplustv.com/ionplustv.com.channels.xml --output=guide.xml --days=2
+// npm run grab -- --site=ionplustv.com
 
-const { parser, url, request } = require('./ionplustv.com.config.js')
+const { parser, url } = require('./ionplustv.com.config.js')
 const fs = require('fs')
 const path = require('path')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
+
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
 const date = dayjs.utc('2022-11-08', 'YYYY-MM-DD').startOf('d')
-const channel = {
-  site_id: '#',
-  xmltv_id: 'IONPlus.us'
-}
 
 it('can generate valid url', () => {
   expect(url({ date })).toBe('https://ionplustv.com/schedule/2022-11-08')

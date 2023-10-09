@@ -44,7 +44,7 @@ function parseStop(item) {
 }
 
 function parseContent(content, channel) {
-  const [_, channelId] = channel.site_id.split('#')
+  const [, channelId] = channel.site_id.split('#')
   const data = JSON.parse(content)
   if (!data || !Array.isArray(data.channels)) return null
 

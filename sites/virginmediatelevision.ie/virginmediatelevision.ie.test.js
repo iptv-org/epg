@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/virginmediatelevision.ie/virginmediatelevision.ie.config.js --channels=sites/virginmediatelevision.ie/virginmediatelevision.ie.channels.xml --output=guide.xml --days=2
+// npm run grab -- --site=virginmediatelevision.ie
 
 const { parser, url } = require('./virginmediatelevision.ie.config.js')
 const fs = require('fs')
@@ -34,9 +34,10 @@ it('can parse response', () => {
   expect(results[0]).toMatchObject({
     start: '2023-01-31T00:00:00.000Z',
     stop: '2023-01-31T01:00:00.000Z',
-    title: `Chasing Shadows`,
+    title: 'Chasing Shadows',
     sub_title: '',
-    description: `A detective sergeant and expert in the field of serial killers working for the Missing Persons Bureau tries to protect the general public from evil.`,
+    description:
+      'A detective sergeant and expert in the field of serial killers working for the Missing Persons Bureau tries to protect the general public from evil.',
     icon: 'https://bcboltvirgin.akamaized.net/player/shows/1498_517x291_1528141264.jpg'
   })
 })
@@ -45,7 +46,7 @@ it('can handle empty guide', () => {
   const results = parser({
     date,
     channel,
-    content: `<!DOCTYPE html><html><head></head><body></body></html>`
+    content: '<!DOCTYPE html><html><head></head><body></body></html>'
   })
 
   expect(results).toMatchObject([])

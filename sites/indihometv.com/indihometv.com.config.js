@@ -43,7 +43,7 @@ module.exports = {
 
 function parseStart($item, date) {
   const timeString = $item('p').text()
-  const [_, start] = timeString.match(/(\d{2}:\d{2}) -/) || [null, null]
+  const [, start] = timeString.match(/(\d{2}:\d{2}) -/) || [null, null]
   const dateString = `${date.format('YYYY-MM-DD')} ${start}`
 
   return dayjs.tz(dateString, 'YYYY-MM-DD HH:mm', 'Asia/Jakarta')
@@ -51,7 +51,7 @@ function parseStart($item, date) {
 
 function parseStop($item, date) {
   const timeString = $item('p').text()
-  const [_, stop] = timeString.match(/- (\d{2}:\d{2})/) || [null, null]
+  const [, stop] = timeString.match(/- (\d{2}:\d{2})/) || [null, null]
   const dateString = `${date.format('YYYY-MM-DD')} ${stop}`
 
   return dayjs.tz(dateString, 'YYYY-MM-DD HH:mm', 'Asia/Jakarta')

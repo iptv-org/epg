@@ -1,46 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<site site="mi.tv">
-  <channels>
-    <channel lang="es" xmltv_id="AlientoVision.us" site_id="co#aliento-vision">Aliento Vision</channel>
-    <channel lang="es" xmltv_id="AXNAndes.us" site_id="co#axn">AXN</channel>
-    <channel lang="es" xmltv_id="AzMundo.mx" site_id="co#az-mundo-hd">Az Mundo HD</channel>
-    <channel lang="es" xmltv_id="Canal1.co" site_id="co#canal-uno">Canal 1</channel>
-    <channel lang="es" xmltv_id="CanalC.co" site_id="co#canal-c">Canal C</channel>
-    <channel lang="es" xmltv_id="CaliTV.co" site_id="co#cali-tv">Canal CaliTV</channel>
-    <channel lang="es" xmltv_id="CanalCapital.co" site_id="co#canal-capital">Canal Capital</channel>
-    <channel lang="es" xmltv_id="CanalCartagena.co" site_id="co#canal-cartagena">Canal Cartagena</channel>
-    <channel lang="es" xmltv_id="CanalTRO.co" site_id="co#tro">Canal TRO</channel>
-    <channel lang="es" xmltv_id="CanalU.co" site_id="co#canal-u">Canal U</channel>
-    <channel lang="es" xmltv_id="CaracolTV.co" site_id="co#caracol">Caracol TV</channel>
-    <channel lang="es" xmltv_id="ComedyCentralNorth.us" site_id="co#comedy-central-hd">Comedy Central HD</channel>
-    <channel lang="es" xmltv_id="Cosmovision.co" site_id="co#cosmovision">Cosmovisión</channel>
-    <channel lang="es" xmltv_id="Cristovision.co" site_id="co#cristo-vision">Cristovisión</channel>
-    <channel lang="es" xmltv_id="DiscoveryKidsPanregional.us" site_id="co#discovery-kids">Discovery Kids</channel>
-    <channel lang="es" xmltv_id="EnlaceJuvenil.cr" site_id="co#enlace-juvenil">Enlace Juvenil</channel>
-    <channel lang="es" xmltv_id="FashionOne.uk" site_id="co#fashion-one-hd">Fashion One HD</channel>
-    <channel lang="es" xmltv_id="FoxSports2South.us" site_id="co#fox-sports-2-hd">Fox Sports 2 HD</channel>
-    <channel lang="es" xmltv_id="FXPanregional.us" site_id="co#fx-hd">FX HD</channel>
-    <channel lang="es" xmltv_id="GoldenPremier.mx" site_id="co#golden-premier-hd">Golden Premier HD</channel>
-    <channel lang="es" xmltv_id="HBOLatinAmerica.us" site_id="co#hbo-hd-este">HBO HD Este</channel>
-    <channel lang="es" xmltv_id="InvestigationDiscoveryPanregional.us" site_id="co#discovery-id-hd">Investigation Discovery HD</channel>
-    <channel lang="es" xmltv_id="MTVLive.uk" site_id="co#mtv-live-hd">MTV Live HD</channel>
-    <channel lang="es" xmltv_id="CanalRCN.co" site_id="co#canal-rcn-hd">RCN TV HD</channel>
-    <!-- <channel lang="es" xmltv_id="" site_id="co#sony">Sony Channel</channel> -->
-    <channel lang="es" xmltv_id="StarAction.us" site_id="co#fox-action">Star Action</channel>
-    <channel lang="es" xmltv_id="StarChannelColombia.co" site_id="co#fox">Star Channel</channel>
-    <channel lang="es" xmltv_id="StarFun.us" site_id="co#fox-family">Star Fun</channel>
-    <channel lang="es" xmltv_id="StarLifePanregional.us" site_id="co#fox-life">Star Life</channel>
-    <channel lang="es" xmltv_id="StarSeries.us" site_id="co#fox-1-hd">Star Series</channel>
-    <channel lang="es" xmltv_id="SunChannel.ve" site_id="co#sun-channel">Sun Channel</channel>
-    <channel lang="es" xmltv_id="Teleantioquia.co" site_id="co#teleantioquia-hd">Teleantioquia HD</channel>
-    <channel lang="es" xmltv_id="Telemedellin.co" site_id="co#telemedellin-hd">Telemedellín HD</channel>
-    <channel lang="es" xmltv_id="TeleNostalgia.co" site_id="co#tele-nostalgia">Tele Nostalgia</channel>
-    <channel lang="es" xmltv_id="TeleVid.co" site_id="co#televid-hd">Tele Vid HD</channel>
-    <channel lang="es" xmltv_id="TLCLatinAmerica.us" site_id="co#discovery-tlc">TLC</channel>
-    <channel lang="es" xmltv_id="TNTSeriesPanregional.us" site_id="co#tnt-series">TNT Series</channel>
-    <channel lang="es" xmltv_id="TraceSportStars.fr" site_id="co#trace-sports-stars">Trace Sport Stars</channel>
-    <channel lang="es" xmltv_id="Trece.co" site_id="co#canal-tr3ce">Trece</channel>
-    <channel lang="es" xmltv_id="VePlusPanregional.ve" site_id="co#ve-plus-tv">Ve Plus</channel>
-    <channel lang="es" xmltv_id="WinSports.co" site_id="co#win-sports-hd">Win Sports HD</channel>
-  </channels>
-</site>
+<channels>
+  <!-- <channel site="mi.tv" lang="es" xmltv_id="" site_id="co#sony">Sony Channel</channel> -->
+  <channel site="mi.tv" lang="es" xmltv_id="AlientoVision.us" site_id="co#aliento-vision">Aliento Vision</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="AXNAndes.us" site_id="co#axn">AXN</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="AzMundo.mx" site_id="co#az-mundo-hd">Az Mundo HD</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="CaliTV.co" site_id="co#cali-tv">Canal CaliTV</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Canal1.co" site_id="co#canal-uno">Canal 1</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="CanalC.co" site_id="co#canal-c">Canal C</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="CanalCapital.co" site_id="co#canal-capital">Canal Capital</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="CanalCartagena.co" site_id="co#canal-cartagena">Canal Cartagena</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="CanalRCN.co" site_id="co#canal-rcn-hd">RCN TV HD</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="CanalTRO.co" site_id="co#tro">Canal TRO</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="CanalU.co" site_id="co#canal-u">Canal U</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="CaracolTV.co" site_id="co#caracol">Caracol TV</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="ComedyCentralNorth.us" site_id="co#comedy-central-hd">Comedy Central HD</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Cosmovision.co" site_id="co#cosmovision">Cosmovisión</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Cristovision.co" site_id="co#cristo-vision">Cristovisión</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="DiscoveryKidsPanregional.us" site_id="co#discovery-kids">Discovery Kids</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="EnlaceJuvenil.cr" site_id="co#enlace-juvenil">Enlace Juvenil</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="FashionOne.uk" site_id="co#fashion-one-hd">Fashion One HD</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="FoxSports2South.us" site_id="co#fox-sports-2-hd">Fox Sports 2 HD</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="FXPanregional.us" site_id="co#fx-hd">FX HD</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="GoldenPremier.mx" site_id="co#golden-premier-hd">Golden Premier HD</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="HBOLatinAmerica.us" site_id="co#hbo-hd-este">HBO HD Este</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="InvestigationDiscoveryPanregional.us" site_id="co#discovery-id-hd">Investigation Discovery HD</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="MTVLive.uk" site_id="co#mtv-live-hd">MTV Live HD</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="StarAction.us" site_id="co#fox-action">Star Action</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="StarChannelColombia.co" site_id="co#fox">Star Channel</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="StarFun.us" site_id="co#fox-family">Star Fun</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="StarLifePanregional.us" site_id="co#fox-life">Star Life</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="StarSeries.us" site_id="co#fox-1-hd">Star Series</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="SunChannel.ve" site_id="co#sun-channel">Sun Channel</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Teleantioquia.co" site_id="co#teleantioquia-hd">Teleantioquia HD</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Telemedellin.co" site_id="co#telemedellin-hd">Telemedellín HD</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="TeleNostalgia.co" site_id="co#tele-nostalgia">Tele Nostalgia</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="TeleVid.co" site_id="co#televid-hd">Tele Vid HD</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="TLCLatinAmerica.us" site_id="co#discovery-tlc">TLC</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="TNTSeriesPanregional.us" site_id="co#tnt-series">TNT Series</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="TraceSportStars.fr" site_id="co#trace-sports-stars">Trace Sport Stars</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Trece.co" site_id="co#canal-tr3ce">Trece</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="VePlusPanregional.ve" site_id="co#ve-plus-tv">Ve Plus</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="WinSports.co" site_id="co#win-sports-hd">Win Sports HD</channel>
+</channels>

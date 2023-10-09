@@ -4,7 +4,6 @@ const { DateTime } = require('luxon')
 module.exports = {
   site: 'bein.com',
   days: 2,
-  timeout: 30000, // 30 seconds
   request: {
     cache: {
       ttl: 60 * 60 * 1000 // 1 hour
@@ -63,7 +62,7 @@ function parseCategory($item) {
 }
 
 function parseTime($item, date) {
-  let [_, time] = $item('.time')
+  let [, time] = $item('.time')
     .text()
     .match(/^(\d{2}:\d{2})/) || [null, null]
   if (!time) return null
@@ -73,7 +72,7 @@ function parseTime($item, date) {
 }
 
 function parseItems(content, channel) {
-  const [_, channelId] = channel.site_id.split('#')
+  const [, channelId] = channel.site_id.split('#')
   const $ = cheerio.load(content)
 
   return $(`#channels_${channelId} .slider > ul:first-child > li`).toArray()

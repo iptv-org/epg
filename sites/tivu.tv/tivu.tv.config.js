@@ -1,4 +1,3 @@
-const dayjs = require('dayjs')
 const cheerio = require('cheerio')
 const { DateTime } = require('luxon')
 
@@ -43,13 +42,13 @@ module.exports = {
 }
 
 function parseTitle($item) {
-  const [title, _, __] = $item('a').html().split('<br>')
+  const [title] = $item('a').html().split('<br>')
 
   return title
 }
 
 function parseStart($item, date) {
-  const [_, __, time] = $item('a').html().split('<br>')
+  const [, , time] = $item('a').html().split('<br>')
   if (!time) return null
 
   return DateTime.fromFormat(`${date.format('YYYY-MM-DD')} ${time}`, 'yyyy-MM-dd HH:mm', {
@@ -57,7 +56,7 @@ function parseStart($item, date) {
   }).toUTC()
 }
 
-function parseItems(content, channel, date) {
+function parseItems(content, channel) {
   if (!content) return []
   const $ = cheerio.load(content)
 

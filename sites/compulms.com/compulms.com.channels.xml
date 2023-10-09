@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<site site="compulms.com">
-  <channels>
-    <channel lang="es" xmltv_id="CCPRadio.cl" site_id="EnerGeek Animate">EnerGeek Animate</channel>
-    <channel lang="es" xmltv_id="EnerGeek.cl" site_id="EnerGeek Retro">EnerGeek Retro</channel>
-    <channel lang="es" xmltv_id="EnerGeekRadio.cl" site_id="EnerGeek Radio TV">EnerGeek Radio TV</channel>
-    <channel lang="es" xmltv_id="FanpopTV.cl" site_id="EnerGeek Fanpop">EnerGeek Fanpop</channel>
-  </channels>
-</site>
+<channels>
+  <channel site="compulms.com" lang="es" xmltv_id="CCPRadio.cl" site_id="EnerGeek Animate">EnerGeek Animate</channel>
+  <channel site="compulms.com" lang="es" xmltv_id="EnerGeek.cl" site_id="EnerGeek Retro">EnerGeek Retro</channel>
+  <channel site="compulms.com" lang="es" xmltv_id="EnerGeekRadio.cl" site_id="EnerGeek Radio TV">EnerGeek Radio TV</channel>
+  <channel site="compulms.com" lang="es" xmltv_id="FanpopTV.cl" site_id="EnerGeek Fanpop">EnerGeek Fanpop</channel>
+</channels>

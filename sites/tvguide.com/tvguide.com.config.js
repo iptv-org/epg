@@ -17,7 +17,7 @@ module.exports = {
 
     return url
   },
-  async parser({ content, channel }) {
+  async parser({ content }) {
     const programs = []
     const items = parseItems(content)
     for (let item of items) {

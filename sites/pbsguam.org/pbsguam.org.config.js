@@ -23,9 +23,14 @@ module.exports = {
 }
 
 function parseItems(content, date) {
-  const [_, json] = content.match(/EventsSchedule_1 = (.*);/i) || [null, null]
-  if (!json) return []
-  const data = JSON.parse(json)
+  const [, json] = content.match(/EventsSchedule_1 = (.*);/i) || [null, '']
+  let data
+  try {
+    data = JSON.parse(json)
+  } catch (error) {
+    return []
+  }
+
   if (!data || !Array.isArray(data.feed)) return []
 
   return data.feed.filter(

@@ -1,5 +1,5 @@
-// node ./scripts/channels.js --config=./sites/rev.bs/rev.bs.config.js --output=./sites/rev.bs/rev.bs.channels.xml
-// npx epg-grabber --config=sites/rev.bs/rev.bs.config.js --channels=sites/rev.bs/rev.bs.channels.xml --output=guide.xml --days=2
+// npm run channels:parse -- --config=./sites/rev.bs/rev.bs.config.js --output=./sites/rev.bs/rev.bs.channels.xml
+// npm run grab -- --site=rev.bs
 
 const { parser, url } = require('./rev.bs.config.js')
 const axios = require('axios')
@@ -29,17 +29,18 @@ it('can parse response', done => {
     if (url === 'https://www.rev.bs/wp-content/uploads/tv-guide/2021-11-21_1.json') {
       return Promise.resolve({
         data: Buffer.from(
-          `{"status":"OK","data":{"schedule":{"206":[{"title":"Talk Stoop","sid":43599836,"s":"330.0000","duration":30,"rating":"TVPG"}]}}}`
+          '{"status":"OK","data":{"schedule":{"206":[{"title":"Talk Stoop","sid":43599836,"s":"330.0000","duration":30,"rating":"TVPG"}]}}}'
         )
       })
     } else {
       return Promise.resolve({
-        data: Buffer.from(`{"status":"OK","data":{"schedule":{}}}`)
+        data: Buffer.from('{"status":"OK","data":{"schedule":{}}}')
       })
     }
   })
 
-  const content = `{"status":"OK","data":{"schedule":{"205":[{"title":"Rev Pulse 5 - Online Classifieds","sid":43576112,"s":"-120.0000","duration":120,"rating":""}],"206":[{"title":"Saturday Night Live","sid":43599827,"s":"-31.0000","duration":93,"rating":"TV14"}]}}}`
+  const content =
+    '{"status":"OK","data":{"schedule":{"205":[{"title":"Rev Pulse 5 - Online Classifieds","sid":43576112,"s":"-120.0000","duration":120,"rating":""}],"206":[{"title":"Saturday Night Live","sid":43599827,"s":"-31.0000","duration":93,"rating":"TV14"}]}}}'
   parser({ content, channel, date })
     .then(result => {
       result = result.map(p => {
@@ -51,12 +52,12 @@ it('can parse response', done => {
         {
           start: '2021-11-21T04:29:00.000Z',
           stop: '2021-11-21T06:02:00.000Z',
-          title: `Saturday Night Live`
+          title: 'Saturday Night Live'
         },
         {
           start: '2021-11-21T10:30:00.000Z',
           stop: '2021-11-21T11:00:00.000Z',
-          title: `Talk Stoop`
+          title: 'Talk Stoop'
         }
       ])
       done()
@@ -70,7 +71,7 @@ it('can handle empty guide', done => {
   parser({
     date,
     channel,
-    content: `<html lang="en"><head></head><body></body></html>`
+    content: '<html lang="en"><head></head><body></body></html>'
   })
     .then(result => {
       expect(result).toMatchObject([])

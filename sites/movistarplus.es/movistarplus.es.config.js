@@ -15,12 +15,16 @@ module.exports = {
       let startTime = DateTime.fromFormat(
         `${guideDate.format('YYYY-MM-DD')} ${item.HORA_INICIO}`,
         'yyyy-MM-dd HH:mm',
-        { zone: 'Europe/Madrid' }
+        {
+          zone: 'Europe/Madrid'
+        }
       ).toUTC()
       let stopTime = DateTime.fromFormat(
         `${guideDate.format('YYYY-MM-DD')} ${item.HORA_FIN}`,
         'yyyy-MM-dd HH:mm',
-        { zone: 'Europe/Madrid' }
+        {
+          zone: 'Europe/Madrid'
+        }
       ).toUTC()
       if (stopTime < startTime) {
         guideDate = guideDate.add(1, 'd')

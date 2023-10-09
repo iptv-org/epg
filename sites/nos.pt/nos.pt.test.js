@@ -1,5 +1,5 @@
 // npm run channels:parse -- --config=./sites/nos.pt/nos.pt.config.js --output=./sites/nos.pt/nos.pt.channels.xml
-// npx epg-grabber --config=sites/nos.pt/nos.pt.config.js --channels=sites/nos.pt/nos.pt.channels.xml --output=guide.xml --days=2
+// npm run grab -- --site=nos.pt
 
 const { parser, url } = require('./nos.pt.config.js')
 const fs = require('fs')
@@ -74,7 +74,7 @@ it('can parse response', async () => {
   expect(results[0]).toMatchObject({
     start: '2023-01-27T23:50:00.000Z',
     stop: '2023-01-28T00:36:00.000Z',
-    title: `Anatomia de Grey T.17 Ep.3`,
+    title: 'Anatomia de Grey T.17 Ep.3',
     description:
       'Os médicos do Grey Sloan continuam a enfrentar a nova realidade do COVID-19 e lidam com um paciente conhecido e teimoso. Koracick fica encarregue dos internos e Link opera um terapeuta sexual.',
     icon: 'https://images.nos.pt/b6fd27f4bd0b404abd4c3fc4faa79024_resized_352x198.jpg'
@@ -83,7 +83,7 @@ it('can parse response', async () => {
   expect(results[21]).toMatchObject({
     start: '2023-01-28T21:38:00.000Z',
     stop: '2023-01-29T00:05:00.000Z',
-    title: `MasterChef Portugal T.1 Ep.10`,
+    title: 'MasterChef Portugal T.1 Ep.10',
     description:
       'A maior competição de cozinha do mundo arranca ao comando de três dos mais conceituados chefs portugueses: Pedro Pena Bastos, Noélia Jerónimo e Ricardo Costa, que nos vão transmitir os seus conhecimentos e a sua paixão pela cozinha.',
     icon: 'https://images.nos.pt/8aa511d697f0401a88a0cb1ec2718cc3_resized_352x198.jpg'

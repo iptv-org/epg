@@ -15,7 +15,6 @@ module.exports = {
     const items = parseItems(content)
     date = date.subtract(1, 'd')
     items.forEach((item, i) => {
-      const prev = programs[programs.length - 1]
       const $item = cheerio.load(item)
       let start = parseStart($item, date)
       if (i === 0 && start.hour >= 5) {
@@ -41,7 +40,7 @@ module.exports = {
   },
   async channels() {
     const data = await axios
-      .get(`https://www.gatotv.com/guia_tv/completa`)
+      .get('https://www.gatotv.com/guia_tv/completa')
       .then(response => response.data)
       .catch(console.log)
 

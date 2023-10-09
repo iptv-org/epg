@@ -21,25 +21,19 @@ module.exports = {
     if (!items.length) return programs
     const promises = [
       axios.get(
-        `${API_STATIC_ENDPOINT}/de/events/segments/${date
-          .add(6, 'h')
-          .format('YYYYMMDDHHmmss')}`,
+        `${API_STATIC_ENDPOINT}/de/events/segments/${date.add(6, 'h').format('YYYYMMDDHHmmss')}`,
         {
           responseType: 'arraybuffer'
         }
       ),
       axios.get(
-        `${API_STATIC_ENDPOINT}/de/events/segments/${date
-          .add(12, 'h')
-          .format('YYYYMMDDHHmmss')}`,
+        `${API_STATIC_ENDPOINT}/de/events/segments/${date.add(12, 'h').format('YYYYMMDDHHmmss')}`,
         {
           responseType: 'arraybuffer'
         }
       ),
       axios.get(
-        `${API_STATIC_ENDPOINT}/de/events/segments/${date
-          .add(18, 'h')
-          .format('YYYYMMDDHHmmss')}`,
+        `${API_STATIC_ENDPOINT}/de/events/segments/${date.add(18, 'h').format('YYYYMMDDHHmmss')}`,
         {
           responseType: 'arraybuffer'
         }

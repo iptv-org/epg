@@ -1,7 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<site site="taiwanplus.com">
-    <channels>
-        <channel lang="en" xmltv_id="TaiwanPlusTV.tw" site_id="#"
-            logo="https://i.imgur.com/SfcZyqm.png">Taiwan Plus TV</channel>
-    </channels>
-</site>
+<channels>
+  <channel site="taiwanplus.com" lang="en" xmltv_id="TaiwanPlusTV.tw" site_id="#">Taiwan Plus TV</channel>
+</channels>

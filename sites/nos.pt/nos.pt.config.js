@@ -20,7 +20,6 @@ module.exports = {
     const items = parseItems(content, date)
     date = date.subtract(1, 'd')
     for (let item of items) {
-      const prev = programs[programs.length - 1]
       const $item = cheerio.load(item)
 
       const channelAcronym = parseChannelAcronym(content)
@@ -38,9 +37,9 @@ module.exports = {
 
     return programs
   },
-  async channels({ country }) {
+  async channels() {
     const html = await axios
-      .get(`https://www.nos.pt/particulares/televisao/guia-tv/Pages/default.aspx`)
+      .get('https://www.nos.pt/particulares/televisao/guia-tv/Pages/default.aspx')
       .then(r => r.data)
       .catch(console.log)
 
@@ -63,7 +62,7 @@ async function loadProgramDetails(channelAcronym, programId) {
   if (!channelAcronym || !programId) return {}
   const data = await axios
     .post(
-      `https://www.nos.pt/_layouts/15/Armstrong/ApplicationPages/EPGGetProgramsAndDetails.aspx/GetProgramDetails`,
+      'https://www.nos.pt/_layouts/15/Armstrong/ApplicationPages/EPGGetProgramsAndDetails.aspx/GetProgramDetails',
       {
         programId,
         channelAcronym,

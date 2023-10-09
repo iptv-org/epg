@@ -1,5 +1,5 @@
 // npm run channels:parse -- --config=sites/superguidatv.it/superguidatv.it.config.js --output=sites/superguidatv.it/superguidatv.it.channels.xml
-// npx epg-grabber --config=sites/superguidatv.it/superguidatv.it.config.js --channels=sites/superguidatv.it/superguidatv.it.channels.xml --output=guide.xml
+// npm run grab -- --site=superguidatv.it
 
 const { parser, url } = require('./superguidatv.it.config.js')
 const fs = require('fs')
@@ -46,14 +46,14 @@ it('can parse response', () => {
   expect(results[0]).toMatchObject({
     start: '2023-01-11T01:00:00.000Z',
     stop: '2023-01-11T05:00:00.000Z',
-    title: `All Nite Rock`,
+    title: 'All Nite Rock',
     category: 'Musica'
   })
 
   expect(results[13]).toMatchObject({
     start: '2023-01-12T05:00:00.000Z',
     stop: '2023-01-12T05:30:00.000Z',
-    title: `Free Rock`,
+    title: 'Free Rock',
     category: 'Musica'
   })
 })

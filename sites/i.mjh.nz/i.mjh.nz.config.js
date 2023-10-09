@@ -13,7 +13,6 @@ module.exports = {
   site: 'i.mjh.nz',
   days: 2,
   request: {
-    timeout: 30000, // 30s
     cache: {
       ttl: 3 * 60 * 60 * 1000 // 3h
     },
@@ -24,7 +23,7 @@ module.exports = {
 
     return `${API_ENDPOINT}/${path}.xml`
   },
-  parser: function ({ content, channel, date, cached }) {
+  parser: function ({ content, channel, date }) {
     const items = parseItems(content, channel, date)
 
     let programs = items.map(item => {
@@ -94,7 +93,7 @@ function parseItems(content, channel, date) {
   try {
     const curr_day = date
     const next_day = date.add(1, 'd')
-    const [_, site_id] = channel.site_id.split('#')
+    const [, site_id] = channel.site_id.split('#')
     const data = parser.parse(content)
     if (!data || !Array.isArray(data.programs)) return []
 

@@ -8,8 +8,7 @@ const COOKIE =
 module.exports = {
   site: 'magentatv.de',
   days: 2,
-  skip: true, // the site uses a constantly updated session ID
-  url: `https://api.prod.sngtv.magentatv.de/EPG/JSON/PlayBillList`,
+  url: 'https://api.prod.sngtv.magentatv.de/EPG/JSON/PlayBillList',
   request: {
     method: 'POST',
     headers: {
@@ -54,7 +53,7 @@ module.exports = {
   async channels() {
     const data = await axios
       .post(
-        `https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel`,
+        'https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel',
         {
           channelNamespace: 2,
           filterlist: [

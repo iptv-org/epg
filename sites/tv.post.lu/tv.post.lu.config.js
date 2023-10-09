@@ -7,7 +7,7 @@ module.exports = {
   url({ channel, date }) {
     return `https://tv.post.lu/api/channels?id=${channel.site_id}&date=${date.format('YYYY-MM-DD')}`
   },
-  parser({ content, channel, date }) {
+  parser({ content }) {
     let programs = []
     const items = parseItems(content)
     items.forEach(item => {

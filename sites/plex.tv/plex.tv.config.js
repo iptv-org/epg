@@ -12,7 +12,7 @@ module.exports = {
     }
   },
   url: function ({ channel, date }) {
-    const [_, channelGridKey] = channel.site_id.split('-')
+    const [, channelGridKey] = channel.site_id.split('-')
 
     return `${API_ENDPOINT}/grid?channelGridKey=${channelGridKey}&date=${date.format('YYYY-MM-DD')}`
   },
@@ -32,7 +32,7 @@ module.exports = {
 
     return programs
   },
-  async channels({ lang }) {
+  async channels() {
     const data = await axios
       .get(`${API_ENDPOINT}/lineups/plex/channels?X-Plex-Token=zb85PfdNQLmsry9kQLBR`)
       .then(r => r.data)
@@ -66,7 +66,7 @@ function parseItems(content) {
   const items = []
   metadata.forEach(item => {
     let segments = []
-    item.Media.sort(byTime).forEach((media, i) => {
+    item.Media.sort(byTime).forEach(media => {
       let prevSegment = segments[segments.length - 1]
       if (prevSegment && prevSegment.endsAt === media.beginsAt) {
         prevSegment.endsAt = media.endsAt

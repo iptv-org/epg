@@ -32,7 +32,9 @@ module.exports = {
   site: 'digiturk.com.tr',
   days: 2,
   url: function ({ date, channel }) {
-    return `https://www.digiturk.com.tr/_Ajax/getBroadcast.aspx?channelNo=${channel.site_id}&date=${date.format('DD.MM.YYYY')}&tomorrow=false&primetime=false`
+    return `https://www.digiturk.com.tr/_Ajax/getBroadcast.aspx?channelNo=${
+      channel.site_id
+    }&date=${date.format('DD.MM.YYYY')}&tomorrow=false&primetime=false`
   },
   request: {
     method: 'GET',
@@ -48,7 +50,7 @@ module.exports = {
         title: item.PName,
         // description: item.LongDescription,
         // category: parseCategory(item),
-        start :parseTime(item.PStartTime),
+        start: parseTime(item.PStartTime),
         stop: parseTime(item.PEndTime)
       })
     })
@@ -59,8 +61,7 @@ module.exports = {
   }
 }
 
-
-function parseTime(time){
+function parseTime(time) {
   let timestamp = parseInt(time.replace('/Date(', '').replace('+0300)/', ''))
   return dayjs(timestamp)
 }
@@ -72,5 +73,5 @@ function parseTime(time){
 function parseItems(content) {
   if (!content) return []
   const data = JSON.parse(content)
-  return (data && data.BChannels && data.BChannels[0].CPrograms) ? data.BChannels[0].CPrograms : []
+  return data && data.BChannels && data.BChannels[0].CPrograms ? data.BChannels[0].CPrograms : []
 }

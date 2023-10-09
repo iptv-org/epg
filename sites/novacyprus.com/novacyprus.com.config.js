@@ -13,7 +13,7 @@ dayjs.extend(customParseFormat)
 module.exports = {
   site: 'novacyprus.com',
   days: 2,
-  url({ channel, date }) {
+  url({ date }) {
     return `https://www.novacyprus.com/api/v1/tvprogram/from/${date.format('YYYYMMDD')}/to/${date
       .add(1, 'd')
       .format('YYYYMMDD')}`
@@ -35,9 +35,9 @@ module.exports = {
 
     return programs
   },
-  async channels({ country, lang }) {
+  async channels() {
     const channels = await axios
-      .get(`https://www.novacyprus.com/api/v1/guide/dailychannels`)
+      .get('https://www.novacyprus.com/api/v1/guide/dailychannels')
       .then(r => r.data)
       .catch(console.log)
 

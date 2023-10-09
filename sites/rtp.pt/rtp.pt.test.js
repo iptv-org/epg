@@ -1,5 +1,5 @@
 // npm run channels:parse -- --config=./sites/rtp.pt/rtp.pt.config.js --output=./sites/rtp.pt/rtp.pt.channels.xml
-// npx epg-grabber --config=sites/rtp.pt/rtp.pt.config.js --channels=sites/rtp.pt/rtp.pt.channels.xml --output=guide.xml --days=2
+// npm run grab -- --site=rtp.pt
 
 const { parser, url } = require('./rtp.pt.config.js')
 const fs = require('fs')

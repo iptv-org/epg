@@ -1,5 +1,5 @@
 // npm run channels:parse -- --config=./sites/tv.yettel.hu/tv.yettel.hu.config.js --output=./sites/tv.yettel.hu/tv.yettel.hu.channels.xml
-// npx epg-grabber --config=sites/tv.yettel.hu/tv.yettel.hu.config.js --channels=sites/tv.yettel.hu/tv.yettel.hu.channels.xml --output=guide.xml --days=2
+// npm run grab -- --site=tv.yettel.hu
 
 const { parser, url } = require('./tv.yettel.hu.config.js')
 const dayjs = require('dayjs')
@@ -77,7 +77,7 @@ it('can parse response', () => {
 
 it('can handle empty guide', () => {
   const result = parser({
-    content: `{"Content":[],"HttpStatusCode":200,"StatusCode":0,"StatusMessage":"OK","Severity":1}`
+    content: '{"Content":[],"HttpStatusCode":200,"StatusCode":0,"StatusMessage":"OK","Severity":1}'
   })
   expect(result).toMatchObject([])
 })

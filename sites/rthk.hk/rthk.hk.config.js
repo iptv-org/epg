@@ -1,4 +1,3 @@
-const axios = require('axios')
 const dayjs = require('dayjs')
 const cheerio = require('cheerio')
 const utc = require('dayjs/plugin/utc')
@@ -50,7 +49,7 @@ function parseIcon($item) {
 
 function parseCategories($item) {
   let cate = $item('.single-wrap').data('cate') || ''
-  let [_, categories] = cate.match(/^\|(.*)\|$/) || [null, '']
+  let [, categories] = cate.match(/^\|(.*)\|$/) || [null, '']
 
   return categories.split('||').filter(Boolean)
 }
@@ -65,7 +64,7 @@ function parseSubTitle($item) {
 
 function parseStart($item, date) {
   const timeRow = $item('.timeRow').text().trim()
-  const [_, HH, mm] = timeRow.match(/^(\d+):(\d+)-/) || [null, null, null]
+  const [, HH, mm] = timeRow.match(/^(\d+):(\d+)-/) || [null, null, null]
   if (!HH || !mm) return null
 
   return dayjs.tz(`${date.format('YYYY-MM-DD')} ${HH}:${mm}`, 'YYYY-MM-DD HH:mm', 'Asia/Hong_Kong')
@@ -73,7 +72,7 @@ function parseStart($item, date) {
 
 function parseStop($item, date) {
   const timeRow = $item('.timeRow').text().trim()
-  const [_, HH, mm] = timeRow.match(/-(\d+):(\d+)$/) || [null, null, null]
+  const [, HH, mm] = timeRow.match(/-(\d+):(\d+)$/) || [null, null, null]
   if (!HH || !mm) return null
 
   return dayjs.tz(`${date.format('YYYY-MM-DD')} ${HH}:${mm}`, 'YYYY-MM-DD HH:mm', 'Asia/Hong_Kong')

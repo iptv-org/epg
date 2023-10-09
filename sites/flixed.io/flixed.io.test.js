@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/flixed.io/flixed.io.config.js --channels=sites/flixed.io/flixed.io.channels.xml --output=guide.xml --days=1
+// npm run grab -- --site=flixed.io
 
 const { parser, url } = require('./flixed.io.config.js')
 const fs = require('fs')
@@ -17,7 +17,7 @@ const channel = {
 
 it('can generate valid url', () => {
   expect(url({ date, channel })).toBe(
-    `https://tv-guide.vercel.app/api/stationAirings?stationId=108970&startDateTime=2023-01-19T00:00:00.000Z`
+    'https://tv-guide.vercel.app/api/stationAirings?stationId=108970&startDateTime=2023-01-19T00:00:00.000Z'
   )
 })
 
@@ -42,7 +42,7 @@ it('can parse response', () => {
 
 it('can handle empty guide', () => {
   const results = parser({
-    content: `[]`
+    content: '[]'
   })
 
   expect(results).toMatchObject([])

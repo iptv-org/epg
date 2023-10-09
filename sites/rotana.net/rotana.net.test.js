@@ -1,6 +1,6 @@
-// npx epg-grabber --config=sites/rotana.net/rotana.net.config.js --channels=sites/rotana.net/rotana.net.channels.xml --output=guide.xml --days=2
+// npm run grab -- --site=rotana.net
 
-const { parser, url, request } = require('./rotana.net.config.js')
+const { parser, url } = require('./rotana.net.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -31,7 +31,7 @@ it('can parse response', done => {
           stop: '2021-11-08T03:00:00.000Z',
           title: 'كورة',
           category: 'Generic',
-          description: ``
+          description: ''
         }
       ])
       done()
@@ -45,7 +45,7 @@ it('can handle empty guide', done => {
   parser({
     date,
     channel,
-    buffer: Buffer.from(`<!DOCTYPE html><html><head></head><body></body></html>`)
+    buffer: Buffer.from('<!DOCTYPE html><html><head></head><body></body></html>')
   })
     .then(result => {
       expect(result).toMatchObject([])

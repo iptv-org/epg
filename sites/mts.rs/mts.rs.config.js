@@ -18,7 +18,7 @@ module.exports = {
       'X-Requested-With': 'XMLHttpRequest'
     }
   },
-  parser: function ({ content, channel, date }) {
+  parser: function ({ content, channel }) {
     let programs = []
     const data = parseContent(content, channel)
     const items = parseItems(data)
@@ -38,21 +38,23 @@ module.exports = {
 }
 
 function parseContent(content, channel) {
-  const [_, site_id] = channel.site_id.split('#')
+  const [, site_id] = channel.site_id.split('#')
   let data
   try {
     data = JSON.parse(content)
-  } catch (e) {}
+  } catch (error) {
+    console.log(error)
+  }
   if (!data || !data.channels || !data.channels.length) return null
 
   return data.channels.find(c => c.id === site_id) || null
 }
 
-function parseStart(item, date) {
+function parseStart(item) {
   return dayjs.tz(item.full_start, 'Europe/Belgrade')
 }
 
-function parseStop(item, date) {
+function parseStop(item) {
   return dayjs.tz(item.full_end, 'Europe/Belgrade')
 }
 

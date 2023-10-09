@@ -14,7 +14,6 @@ module.exports = {
   days: 2,
   url: API_ENDPOINT,
   request: {
-    timeout: 30000, // 30 seconds
     method: 'POST',
     headers({ channel }) {
       return {
@@ -103,7 +102,7 @@ function parseDescription($item) {
 
 function parseStart($item, date) {
   let eventDataDate = $item('.event-data-date').text().trim()
-  let [_, time] = eventDataDate.match(/(\d{2}:\d{2})/) || [null, null]
+  let [, time] = eventDataDate.match(/(\d{2}:\d{2})/) || [null, null]
   if (!time) return null
 
   return dayjs.utc(`${date.format('YYYY-MM-DD')} ${time}`, 'YYYY-MM-DD HH:mm')
@@ -111,7 +110,7 @@ function parseStart($item, date) {
 
 function parseDuration($item) {
   let eventDataInfo = $item('.event-data-info').text().trim()
-  let [_, h, m] = eventDataInfo.match(/(\d{2})h(\d{2})/) || [null, 0, 0]
+  let [, h, m] = eventDataInfo.match(/(\d{2})h(\d{2})/) || [null, 0, 0]
 
   return parseInt(h) * 60 + parseInt(m)
 }

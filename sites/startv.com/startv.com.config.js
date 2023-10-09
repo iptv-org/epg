@@ -13,7 +13,6 @@ const API_ENDPOINT = 'https://www.startv.com/umbraco/api/startvguideproxy'
 module.exports = {
   site: 'startv.com',
   days: 2,
-  skip: true, // REASON: Request failed with status code 405
   url: `${API_ENDPOINT}/GetTvGuideSchedule`,
   request: {
     method: 'POST',

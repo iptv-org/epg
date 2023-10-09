@@ -1,66 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<site site="allente.se">
-  <channels>
-    <channel lang="da" xmltv_id="6eren.dk" site_id="dk#568">6&apos;eren</channel>
-    <channel lang="da" xmltv_id="BoomerangNordic.uk" site_id="dk#0017">Boomerang Nordic</channel>
-    <channel lang="da" xmltv_id="Canal9.dk" site_id="dk#0368">Canal 9</channel>
-    <channel lang="da" xmltv_id="CartoonNetworkScandinavia.uk" site_id="dk#0028">Cartoon Network Nordic</channel>
-    <channel lang="da" xmltv_id="CMoreFirst.se" site_id="dk#968">C More First</channel>
-    <channel lang="da" xmltv_id="CMoreHits.se" site_id="dk#969">C More Hits</channel>
-    <channel lang="da" xmltv_id="CMoreSeries.se" site_id="dk#971">C More Series</channel>
-    <channel lang="da" xmltv_id="CMoreStars.se" site_id="dk#970">C More Stars</channel>
-    <channel lang="da" xmltv_id="DisneyChannelScandinavia.uk" site_id="dk#0037">Disney Channel Scandinavia</channel>
-    <channel lang="da" xmltv_id="DisneyJuniorScandinavia.uk" site_id="dk#0307">Disney Junior Scandinavia</channel>
-    <channel lang="da" xmltv_id="dk4.dk" site_id="dk#0376">DK 4</channel>
-    <channel lang="da" xmltv_id="DR1.dk" site_id="dk#452">DR 1</channel>
-    <channel lang="da" xmltv_id="DR2.dk" site_id="dk#0051">DR 2</channel>
-    <channel lang="da" xmltv_id="DRRamasjang.dk" site_id="dk#0048">DR Ramasjang</channel>
-    <channel lang="da" xmltv_id="EEurope.us" site_id="dk#0052">E! Europe</channel>
-    <channel lang="da" xmltv_id="EuronewsEnglish.fr" site_id="dk#0281">EuroNews English</channel>
-    <channel lang="da" xmltv_id="Eurosport2Danmark.dk" site_id="dk#0367">Eurosport 2 Danmark</channel>
-    <channel lang="da" xmltv_id="GodTV.uk" site_id="dk#0058">God TV Scandinavia</channel>
-    <channel lang="da" xmltv_id="Kanal4.dk" site_id="dk#0064">Kanal 4</channel>
-    <channel lang="da" xmltv_id="Kanal5.dk" site_id="dk#0065">Kanal 5</channel>
-    <channel lang="da" xmltv_id="MTV00s.uk" site_id="dk#0246">MTV 00s</channel>
-    <channel lang="da" xmltv_id="MTV80s.uk" site_id="dk#604">MTV 80s</channel>
-    <channel lang="da" xmltv_id="MTVGlobal.uk" site_id="dk#0076">MTV Nordic</channel>
-    <channel lang="da" xmltv_id="MTVHitsEurope.uk" site_id="dk#0077">MTV Hits Europe</channel>
-    <channel lang="da" xmltv_id="NationalGeographicDenmark.dk" site_id="dk#0317">National Geographic Danmark</channel>
-    <channel lang="da" xmltv_id="NationalGeographicWildDenmark.dk" site_id="dk#0082">National Geographic Wild Europe</channel>
-    <channel lang="da" xmltv_id="NickelodeonDenmark.dk" site_id="dk#0087">Nickelodeon Danmark</channel>
-    <channel lang="da" xmltv_id="NickJrScandinavia.nl" site_id="dk#0088">Nick Jr Scandinavia</channel>
-    <channel lang="da" xmltv_id="NicktoonsScandinavia.nl" site_id="dk#570">Nicktoons Scandinavia</channel>
-    <channel lang="da" xmltv_id="NRK1.no" site_id="dk#0090">NRK1</channel>
-    <channel lang="da" xmltv_id="ParamountNetworkDenmark.dk" site_id="dk#450">Paramount Network Danmark</channel>
-    <channel lang="da" xmltv_id="SFkanalen.se" site_id="dk#972">SF-kanalen</channel>
-    <channel lang="da" xmltv_id="SkyNewsInternational.uk" site_id="dk#0008">Sky News International</channel>
-    <channel lang="da" xmltv_id="SVT1.se" site_id="dk#0121">SVT 1</channel>
-    <channel lang="da" xmltv_id="TV2.dk" site_id="dk#0297">TV 2</channel>
-    <channel lang="da" xmltv_id="TV2Charlie.dk" site_id="dk#0180">TV 2 Charlie</channel>
-    <channel lang="da" xmltv_id="TV2Fri.dk" site_id="dk#0378">TV 2 Fri</channel>
-    <channel lang="da" xmltv_id="TV2News.dk" site_id="dk#0190">TV 2 News</channel>
-    <channel lang="da" xmltv_id="TV2Sport.dk" site_id="dk#454">TV 2 Sport</channel>
-    <channel lang="da" xmltv_id="TV2Zulu.dk" site_id="dk#0209">TV 2 Zulu</channel>
-    <channel lang="da" xmltv_id="TV3Danmark.dk" site_id="dk#0359">TV 3 Danmark</channel>
-    <channel lang="da" xmltv_id="TV3Max.dk" site_id="dk#0374">TV 3 Max</channel>
-    <channel lang="da" xmltv_id="TV3Plus.dk" site_id="dk#0248">TV3+</channel>
-    <channel lang="da" xmltv_id="TV3Puls.dk" site_id="dk#665">TV 3 Puls</channel>
-    <channel lang="da" xmltv_id="TV3SportDenmark.dk" site_id="dk#0200">TV 3 Sport</channel>
-    <channel lang="da" xmltv_id="TV4.se" site_id="dk#0227">TV 4</channel>
-    <channel lang="da" xmltv_id="VFilmAction.se" site_id="dk#0299">V Film Action</channel>
-    <channel lang="da" xmltv_id="VFilmFamily.se" site_id="dk#0308">V Film Family</channel>
-    <channel lang="da" xmltv_id="VFilmHits.se" site_id="dk#0322">V Film Hits</channel>
-    <channel lang="da" xmltv_id="VFilmPremiere.se" site_id="dk#0321">V Film Premiere</channel>
-    <channel lang="da" xmltv_id="ViasatExplore.se" site_id="dk#0358">Viasat Explore</channel>
-    <channel lang="da" xmltv_id="ViasatHistory.se" site_id="dk#0357">Viasat History HD</channel>
-    <channel lang="da" xmltv_id="ViasatNature.se" site_id="dk#0250">Viasat Nature</channel>
-    <channel lang="da" xmltv_id="VSeries.se" site_id="dk#0320">V Series</channel>
-    <channel lang="da" xmltv_id="VSportGolf.se" site_id="dk#0364">V Sport Golf</channel>
-    <channel lang="da" xmltv_id="VSportUltraHD.se" site_id="dk#418">V Sport Ultra HD</channel>
-    <channel lang="da" xmltv_id="Xee.dk" site_id="dk#707">Xee</channel>
-    <channel lang="en" xmltv_id="AlJazeeraEnglish.qa" site_id="dk#0344">Aljazeera English</channel>
-    <channel lang="en" xmltv_id="BBCWorldNewsEurope.uk" site_id="dk#0016">BBC World News Europe</channel>
-    <channel lang="en" xmltv_id="CNBCEurope.uk" site_id="dk#0032">CNBC Europe</channel>
-    <channel lang="en" xmltv_id="CNNInternationalEurope.us" site_id="dk#0033">CNN International Europe</channel>
-  </channels>
-</site>
+<channels>
+  <channel site="allente.se" lang="da" xmltv_id="6eren.dk" site_id="dk#568">6&apos;eren</channel>
+  <channel site="allente.se" lang="da" xmltv_id="BoomerangNordic.uk" site_id="dk#0017">Boomerang Nordic</channel>
+  <channel site="allente.se" lang="da" xmltv_id="Canal9.dk" site_id="dk#0368">Canal 9</channel>
+  <channel site="allente.se" lang="da" xmltv_id="CartoonNetworkScandinavia.uk" site_id="dk#0028">Cartoon Network Nordic</channel>
+  <channel site="allente.se" lang="da" xmltv_id="CMoreFirst.se" site_id="dk#968">C More First</channel>
+  <channel site="allente.se" lang="da" xmltv_id="CMoreHits.se" site_id="dk#969">C More Hits</channel>
+  <channel site="allente.se" lang="da" xmltv_id="CMoreSeries.se" site_id="dk#971">C More Series</channel>
+  <channel site="allente.se" lang="da" xmltv_id="CMoreStars.se" site_id="dk#970">C More Stars</channel>
+  <channel site="allente.se" lang="da" xmltv_id="DisneyChannelScandinavia.uk" site_id="dk#0037">Disney Channel Scandinavia</channel>
+  <channel site="allente.se" lang="da" xmltv_id="DisneyJuniorScandinavia.uk" site_id="dk#0307">Disney Junior Scandinavia</channel>
+  <channel site="allente.se" lang="da" xmltv_id="dk4.dk" site_id="dk#0376">DK 4</channel>
+  <channel site="allente.se" lang="da" xmltv_id="DR1.dk" site_id="dk#452">DR 1</channel>
+  <channel site="allente.se" lang="da" xmltv_id="DR2.dk" site_id="dk#0051">DR 2</channel>
+  <channel site="allente.se" lang="da" xmltv_id="DRRamasjang.dk" site_id="dk#0048">DR Ramasjang</channel>
+  <channel site="allente.se" lang="da" xmltv_id="EEurope.us" site_id="dk#0052">E! Europe</channel>
+  <channel site="allente.se" lang="da" xmltv_id="EuronewsEnglish.fr" site_id="dk#0281">EuroNews English</channel>
+  <channel site="allente.se" lang="da" xmltv_id="Eurosport2Danmark.dk" site_id="dk#0367">Eurosport 2 Danmark</channel>
+  <channel site="allente.se" lang="da" xmltv_id="GodTV.uk" site_id="dk#0058">God TV Scandinavia</channel>
+  <channel site="allente.se" lang="da" xmltv_id="Kanal4.dk" site_id="dk#0064">Kanal 4</channel>
+  <channel site="allente.se" lang="da" xmltv_id="Kanal5.dk" site_id="dk#0065">Kanal 5</channel>
+  <channel site="allente.se" lang="da" xmltv_id="MTV00s.uk" site_id="dk#0246">MTV 00s</channel>
+  <channel site="allente.se" lang="da" xmltv_id="MTV80s.uk" site_id="dk#604">MTV 80s</channel>
+  <channel site="allente.se" lang="da" xmltv_id="MTVGlobal.uk" site_id="dk#0076">MTV Nordic</channel>
+  <channel site="allente.se" lang="da" xmltv_id="MTVHitsEurope.uk" site_id="dk#0077">MTV Hits Europe</channel>
+  <channel site="allente.se" lang="da" xmltv_id="NationalGeographicDenmark.dk" site_id="dk#0317">National Geographic Danmark</channel>
+  <channel site="allente.se" lang="da" xmltv_id="NationalGeographicWildDenmark.dk" site_id="dk#0082">National Geographic Wild Europe</channel>
+  <channel site="allente.se" lang="da" xmltv_id="NickelodeonDenmark.dk" site_id="dk#0087">Nickelodeon Danmark</channel>
+  <channel site="allente.se" lang="da" xmltv_id="NickJrScandinavia.nl" site_id="dk#0088">Nick Jr Scandinavia</channel>
+  <channel site="allente.se" lang="da" xmltv_id="NicktoonsScandinavia.nl" site_id="dk#570">Nicktoons Scandinavia</channel>
+  <channel site="allente.se" lang="da" xmltv_id="NRK1.no" site_id="dk#0090">NRK1</channel>
+  <channel site="allente.se" lang="da" xmltv_id="ParamountNetworkDenmark.dk" site_id="dk#450">Paramount Network Danmark</channel>
+  <channel site="allente.se" lang="da" xmltv_id="SFkanalen.se" site_id="dk#972">SF-kanalen</channel>
+  <channel site="allente.se" lang="da" xmltv_id="SkyNewsInternational.uk" site_id="dk#0008">Sky News International</channel>
+  <channel site="allente.se" lang="da" xmltv_id="SVT1.se" site_id="dk#0121">SVT 1</channel>
+  <channel site="allente.se" lang="da" xmltv_id="TV2.dk" site_id="dk#0297">TV 2</channel>
+  <channel site="allente.se" lang="da" xmltv_id="TV2Charlie.dk" site_id="dk#0180">TV 2 Charlie</channel>
+  <channel site="allente.se" lang="da" xmltv_id="TV2Fri.dk" site_id="dk#0378">TV 2 Fri</channel>
+  <channel site="allente.se" lang="da" xmltv_id="TV2News.dk" site_id="dk#0190">TV 2 News</channel>
+  <channel site="allente.se" lang="da" xmltv_id="TV2Sport.dk" site_id="dk#454">TV 2 Sport</channel>
+  <channel site="allente.se" lang="da" xmltv_id="TV2Zulu.dk" site_id="dk#0209">TV 2 Zulu</channel>
+  <channel site="allente.se" lang="da" xmltv_id="TV3Danmark.dk" site_id="dk#0359">TV 3 Danmark</channel>
+  <channel site="allente.se" lang="da" xmltv_id="TV3Max.dk" site_id="dk#0374">TV 3 Max</channel>
+  <channel site="allente.se" lang="da" xmltv_id="TV3Plus.dk" site_id="dk#0248">TV3+</channel>
+  <channel site="allente.se" lang="da" xmltv_id="TV3Puls.dk" site_id="dk#665">TV 3 Puls</channel>
+  <channel site="allente.se" lang="da" xmltv_id="TV3SportDenmark.dk" site_id="dk#0200">TV 3 Sport</channel>
+  <channel site="allente.se" lang="da" xmltv_id="TV4.se" site_id="dk#0227">TV 4</channel>
+  <channel site="allente.se" lang="da" xmltv_id="VFilmAction.se" site_id="dk#0299">V Film Action</channel>
+  <channel site="allente.se" lang="da" xmltv_id="VFilmFamily.se" site_id="dk#0308">V Film Family</channel>
+  <channel site="allente.se" lang="da" xmltv_id="VFilmHits.se" site_id="dk#0322">V Film Hits</channel>
+  <channel site="allente.se" lang="da" xmltv_id="VFilmPremiere.se" site_id="dk#0321">V Film Premiere</channel>
+  <channel site="allente.se" lang="da" xmltv_id="ViasatExplore.se" site_id="dk#0358">Viasat Explore</channel>
+  <channel site="allente.se" lang="da" xmltv_id="ViasatHistory.se" site_id="dk#0357">Viasat History HD</channel>
+  <channel site="allente.se" lang="da" xmltv_id="ViasatNature.se" site_id="dk#0250">Viasat Nature</channel>
+  <channel site="allente.se" lang="da" xmltv_id="VSeries.se" site_id="dk#0320">V Series</channel>
+  <channel site="allente.se" lang="da" xmltv_id="VSportGolf.se" site_id="dk#0364">V Sport Golf</channel>
+  <channel site="allente.se" lang="da" xmltv_id="VSportUltraHD.se" site_id="dk#418">V Sport Ultra HD</channel>
+  <channel site="allente.se" lang="da" xmltv_id="Xee.dk" site_id="dk#707">Xee</channel>
+  <channel site="allente.se" lang="en" xmltv_id="AlJazeeraEnglish.qa" site_id="dk#0344">Aljazeera English</channel>
+  <channel site="allente.se" lang="en" xmltv_id="BBCWorldNewsEurope.uk" site_id="dk#0016">BBC World News Europe</channel>
+  <channel site="allente.se" lang="en" xmltv_id="CNBCEurope.uk" site_id="dk#0032">CNBC Europe</channel>
+  <channel site="allente.se" lang="en" xmltv_id="CNNInternationalEurope.us" site_id="dk#0033">CNN International Europe</channel>
+</channels>

@@ -1,12 +1,13 @@
 // npm run channels:parse -- --config=./sites/tv.post.lu/tv.post.lu.config.js --output=./sites/tv.post.lu/tv.post.lu.channels.xml
-// npx epg-grabber --config=sites/tv.post.lu/tv.post.lu.config.js --channels=sites/tv.post.lu/tv.post.lu.channels.xml --output=guide.xml --days=2
+// npm run grab -- --site=tv.post.lu
 
-const { parser, url, request } = require('./tv.post.lu.config.js')
+const { parser, url } = require('./tv.post.lu.config.js')
 const fs = require('fs')
 const path = require('path')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
+
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
@@ -18,7 +19,7 @@ const channel = {
 
 it('can generate valid url', () => {
   expect(url({ channel, date })).toBe(
-    `https://tv.post.lu/api/channels?id=269695d0-8076-11e9-b5ca-f345a2ed0fbe&date=2023-01-16`
+    'https://tv.post.lu/api/channels?id=269695d0-8076-11e9-b5ca-f345a2ed0fbe&date=2023-01-16'
   )
 })
 

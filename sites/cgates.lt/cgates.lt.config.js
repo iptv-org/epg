@@ -42,7 +42,7 @@ module.exports = {
   },
   async channels() {
     let html = await axios
-      .get(`https://www.cgates.lt/televizija/tv-programa-savaitei/`)
+      .get('https://www.cgates.lt/televizija/tv-programa-savaitei/')
       .then(r => r.data)
       .catch(console.log)
     let $ = cheerio.load(html)
@@ -51,7 +51,7 @@ module.exports = {
     return items.map(item => {
       const name = $(item).find('h6').text().trim()
       const link = $(item).find('a').attr('href')
-      const [_, site_id] = link.match(/\/tv-kanalai\/(.*)\//) || [null, null]
+      const [, site_id] = link.match(/\/tv-kanalai\/(.*)\//) || [null, null]
 
       return {
         lang: 'lt',

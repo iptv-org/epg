@@ -1,5 +1,5 @@
 // npm run channels:parse -- --config=./sites/zap.co.ao/zap.co.ao.config.js --output=./sites/zap.co.ao/zap.co.ao.channels.xml
-// npx epg-grabber --config=sites/zap.co.ao/zap.co.ao.config.js --channels=sites/zap.co.ao/zap.co.ao.channels.xml --output=guide.xml
+// npm run grab -- --site=zap.co.ao
 
 const { parser, url } = require('./zap.co.ao.config.js')
 const fs = require('fs')
@@ -33,7 +33,7 @@ it('can parse response', () => {
   expect(results[0]).toMatchObject({
     start: '2023-05-27T23:00:00.000Z',
     stop: '2023-05-28T00:00:00.000Z',
-    title: `Jornal da Meia-Noite`,
+    title: 'Jornal da Meia-Noite',
     description:
       'Um jornal diferente do Telejornal, por conter análise, comentários e coluna com jornalistas experientes sobre factos do dia a dia.',
     category: 'Noticiário'
@@ -42,7 +42,7 @@ it('can parse response', () => {
 
 it('can handle empty guide', () => {
   const results = parser({
-    content: `[]`
+    content: '[]'
   })
   expect(results).toMatchObject([])
 })

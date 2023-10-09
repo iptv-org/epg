@@ -3,6 +3,7 @@ const { DateTime } = require('luxon')
 module.exports = {
   site: 'tv.mail.ru',
   days: 2,
+  delay: 1000,
   url({ channel, date }) {
     return `https://tv.mail.ru/ajax/channel/?region_id=70&channel_id=${
       channel.site_id

@@ -2,7 +2,6 @@ const axios = require('axios')
 const cheerio = require('cheerio')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
-const timezone = require('dayjs/plugin/timezone')
 
 dayjs.extend(utc)
 
@@ -34,13 +33,13 @@ module.exports = {
   },
   async channels() {
     const html = await axios
-      .get(`https://www.canalplus-caraibes.com/bl/guide-tv-ce-soir`)
+      .get('https://www.canalplus-caraibes.com/bl/guide-tv-ce-soir')
       .then(r => r.data)
       .catch(console.log)
 
     const $ = cheerio.load(html)
     const script = $('body > script:nth-child(2)').html()
-    const [_, json] = script.match(/window.APP_STATE=(.*);/) || [null, null]
+    const [, json] = script.match(/window.APP_STATE=(.*);/) || [null, null]
     const data = JSON.parse(json)
     const items = data.tvGuide.channels.byZapNumber
 

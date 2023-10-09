@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/transvision.co.id/transvision.co.id.config.js --channels=sites/transvision.co.id/transvision.co.id.channels.xml --output=guide.xml --days=2
+// npm run grab -- --site=transvision.co.id
 
 const { parser, url, request } = require('./transvision.co.id.config.js')
 const dayjs = require('dayjs')
@@ -10,7 +10,8 @@ const channel = {
   site_id: 'TRIS',
   xmltv_id: 'nsert.id'
 }
-const content = `<!doctype html><html class="no-js" lang="zxx"> <head></head> <body> <div class="wrapper"> <div id="content"> <div class="epg-area bg-white ptb-80"> <div class="container"> <div class="row"> <div class="col-sm-12"> <div class="component"> <div style="overflow: auto;"> <table> <tbody> <tr> <th>00:00:00</th> <td>Insert Today</td><td>Insert adalah program infotainment yang menceritakan berita-berita kehidupan selebriti serta gosip-gosipnya dan disajikan secara aktual dan faktual dengan suasana yang santai.</td></tr><tr> <th>01:00:00</th> <td>Brownis</td><td>Brownis atau obrolan manis merupakan program talkshow segar yang dipandu oleh Ruben Onsu bersama Ivan Gunawan.</td></tr><tr> <th>01:30:00</th> <td>Warga +62</td><td>Warga +62 menghadirkan trend penyebaran video/momen lucu yang juga dikenal sebagai video lucu Indonesia yang tersebar di media sosial.</td></tr><tr> <th>23:00:00</th> <td>Insert</td><td>Insert adalah program infotainment yang menceritakan berita-berita kehidupan selebriti serta gosip-gosipnya dan disajikan secara aktual dan faktual dengan suasana yang santai.</td></tr></tbody> </table> </div></div></div></div></div></div></div></div></body></html>`
+const content =
+  '<!doctype html><html class="no-js" lang="zxx"> <head></head> <body> <div class="wrapper"> <div id="content"> <div class="epg-area bg-white ptb-80"> <div class="container"> <div class="row"> <div class="col-sm-12"> <div class="component"> <div style="overflow: auto;"> <table> <tbody> <tr> <th>00:00:00</th> <td>Insert Today</td><td>Insert adalah program infotainment yang menceritakan berita-berita kehidupan selebriti serta gosip-gosipnya dan disajikan secara aktual dan faktual dengan suasana yang santai.</td></tr><tr> <th>01:00:00</th> <td>Brownis</td><td>Brownis atau obrolan manis merupakan program talkshow segar yang dipandu oleh Ruben Onsu bersama Ivan Gunawan.</td></tr><tr> <th>01:30:00</th> <td>Warga +62</td><td>Warga +62 menghadirkan trend penyebaran video/momen lucu yang juga dikenal sebagai video lucu Indonesia yang tersebar di media sosial.</td></tr><tr> <th>23:00:00</th> <td>Insert</td><td>Insert adalah program infotainment yang menceritakan berita-berita kehidupan selebriti serta gosip-gosipnya dan disajikan secara aktual dan faktual dengan suasana yang santai.</td></tr></tbody> </table> </div></div></div></div></div></div></div></div></body></html>'
 
 it('can generate valid url', () => {
   expect(url).toBe('https://www.transvision.co.id/jadwalacara/epg')
@@ -75,7 +76,7 @@ it('can parse response', () => {
 
 it('can handle empty guide', () => {
   const result = parser({
-    content: `<!doctype html><html class="no-js" lang="zxx"><head></head><body></body></html>`
+    content: '<!doctype html><html class="no-js" lang="zxx"><head></head><body></body></html>'
   })
   expect(result).toMatchObject([])
 })

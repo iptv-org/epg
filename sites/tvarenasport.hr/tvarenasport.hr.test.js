@@ -1,5 +1,5 @@
-// node ./scripts/channels.js --config=./sites/tvarenasport.hr/tvarenasport.hr.config.js --output=./sites/tvarenasport.hr/tvarenasport.hr.channels.xml
-// npx epg-grabber --config=sites/tvarenasport.hr/tvarenasport.hr.config.js --channels=sites/tvarenasport.hr/tvarenasport.hr.channels.xml --output=guide.xml --days=2
+// npm run channels:parse -- --config=./sites/tvarenasport.hr/tvarenasport.hr.config.js --output=./sites/tvarenasport.hr/tvarenasport.hr.channels.xml
+// npm run grab -- --site=tvarenasport.hr
 
 const { parser, url } = require('./tvarenasport.hr.config.js')
 const dayjs = require('dayjs')
@@ -19,7 +19,8 @@ it('can generate valid url', () => {
 })
 
 it('can parse response', () => {
-  const content = `{"items":[{"id":6104,"title":"NAJAVA PROGRAMA","start":"2021-11-16T23:00:00Z","end":"2021-11-17T23:00:00Z","sport":"Najava programa","league":"NAJAVA PROGRAMA","group":"1294","isLive":false,"doNotMiss":false,"domain":"cro"},{"id":6000,"title":" DIJON - UNICAJA","start":"2021-11-16T23:30:00Z","end":"2021-11-17T01:00:00Z","sport":"Košarka","league":" LIGA PRVAKA","group":"380","isLive":false,"doNotMiss":false,"domain":"cro"}]}`
+  const content =
+    '{"items":[{"id":6104,"title":"NAJAVA PROGRAMA","start":"2021-11-16T23:00:00Z","end":"2021-11-17T23:00:00Z","sport":"Najava programa","league":"NAJAVA PROGRAMA","group":"1294","isLive":false,"doNotMiss":false,"domain":"cro"},{"id":6000,"title":" DIJON - UNICAJA","start":"2021-11-16T23:30:00Z","end":"2021-11-17T01:00:00Z","sport":"Košarka","league":" LIGA PRVAKA","group":"380","isLive":false,"doNotMiss":false,"domain":"cro"}]}'
   const result = parser({ channel, content }).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
@@ -41,7 +42,7 @@ it('can handle empty guide', () => {
   const result = parser({
     date,
     channel,
-    content: `{"channels":[]}`
+    content: '{"channels":[]}'
   })
   expect(result).toMatchObject([])
 })

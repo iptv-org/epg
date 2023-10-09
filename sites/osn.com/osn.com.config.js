@@ -6,10 +6,9 @@ dayjs.extend(utc)
 dayjs.extend(timezone)
 
 module.exports = {
-  skip: true, // NOTE: return an HTTP error 302 on requests from GitHub server (https://github.com/iptv-org/epg/issues/1654#issuecomment-1382915005)
   site: 'osn.com',
   days: 2,
-  url: `https://www.osn.com/CMSPages/TVScheduleWebService.asmx/GetTVChannelsProgramTimeTable`,
+  url: 'https://www.osn.com/CMSPages/TVScheduleWebService.asmx/GetTVChannelsProgramTimeTable',
   request: {
     method: 'POST',
     headers: {
@@ -58,7 +57,7 @@ function parseDuration(item) {
   return parseInt(item.TotalDivWidth / 4.8)
 }
 
-function parseStart(item, channel) {
+function parseStart(item) {
   const time = item.StartDateTime
 
   return dayjs.tz(time, 'DD MMM YYYY, HH:mm', 'Asia/Dubai')

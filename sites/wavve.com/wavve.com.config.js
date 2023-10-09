@@ -4,7 +4,6 @@ const { DateTime } = require('luxon')
 module.exports = {
   site: 'wavve.com',
   days: 2,
-  maxConnections: 200,
   url: function ({ channel, date }) {
     return `https://apis.pooq.co.kr/live/epgs/channels/${
       channel.site_id
@@ -25,12 +24,12 @@ module.exports = {
 
     return programs
   },
-  async channels({ country }) {
+  async channels() {
     const channels = []
 
     const data = await axios
       .get(
-        `https://apis.pooq.co.kr/live/epgs?enddatetime=2022-04-17%2019%3A00&genre=all&limit=500&startdatetime=2022-04-17%2016%3A00&apikey=E5F3E0D30947AA5440556471321BB6D9`
+        'https://apis.pooq.co.kr/live/epgs?enddatetime=2022-04-17%2019%3A00&genre=all&limit=500&startdatetime=2022-04-17%2016%3A00&apikey=E5F3E0D30947AA5440556471321BB6D9'
       )
       .then(r => r.data)
       .catch(console.log)

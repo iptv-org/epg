@@ -1,5 +1,5 @@
 // npm run channels:parse -- --config=./sites/cablego.com.pe/cablego.com.pe.config.js --output=./sites/cablego.com.pe/cablego.com.pe.channels.xml
-// npx epg-grabber --config=sites/cablego.com.pe/cablego.com.pe.config.js --channels=sites/cablego.com.pe/cablego.com.pe.channels.xml --output=guide.xml --days=2
+// npm run grab -- --site=cablego.com.pe
 
 const { parser, url, request } = require('./cablego.com.pe.config.js')
 const fs = require('fs')

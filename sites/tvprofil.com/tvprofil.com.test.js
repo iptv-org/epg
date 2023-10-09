@@ -1,4 +1,4 @@
-// npx epg-grabber --config=sites/tvprofil.com/tvprofil.com.config.js --channels=sites/tvprofil.com/tvprofil.com.channels.xml --output=guide.xml --days=2
+// npm run grab -- --site=tvprofil.com
 
 const { parser, url, request } = require('./tvprofil.com.config.js')
 const fs = require('fs')
@@ -17,7 +17,7 @@ const channel = {
 
 it('can generate valid url', () => {
   expect(url({ channel, date })).toBe(
-    `https://tvprofil.com/bg/tv-programa/program/?datum=2023-01-12&kanal=24kitchen-bg&callback=cb&b55=747917`
+    'https://tvprofil.com/bg/tv-programa/program/?datum=2023-01-12&kanal=24kitchen-bg&callback=cb&b55=747917'
   )
 })
 
