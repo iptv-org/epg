@@ -1,12 +1,12 @@
 {
   "name": "epg",
   "scripts": {
-    "api:load": "ts-node scripts/commands/api/load.ts",
-    "channels:lint": "ts-node scripts/commands/channels/lint.ts",
-    "channels:parse": "ts-node scripts/commands/channels/parse.ts",
-    "channels:editor": "ts-node scripts/commands/channels/editor.ts",
-    "channels:validate": "ts-node scripts/commands/channels/validate.ts",
-    "grab": "ts-node scripts/commands/epg/grab.ts",
+    "api:load": "npx tsx scripts/commands/api/load.ts",
+    "channels:lint": "npx tsx scripts/commands/channels/lint.ts",
+    "channels:parse": "npx tsx scripts/commands/channels/parse.ts",
+    "channels:editor": "npx tsx scripts/commands/channels/editor.ts",
+    "channels:validate": "npx tsx scripts/commands/channels/validate.ts",
+    "grab": "npx tsx scripts/commands/epg/grab.ts",
     "serve": "npx serve",
     "lint": "npx eslint ./scripts/**/*.ts ./sites/**/*.js ./tests/**/*.ts ./tests/**/*.js",
     "test": "TZ=Pacific/Nauru npx jest --runInBand",
@@ -74,7 +74,7 @@
     "tough-cookie": "^4.1.3",
     "transliteration": "^2.2.0",
     "ts-jest": "^29.1.1",
-    "ts-node": "^10.9.1",
+    "tsx": "^3.13.0",
     "unzipit": "^1.4.0",
     "wildcard-match": "^5.1.2"
   }
