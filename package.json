@@ -10,7 +10,7 @@
     "serve": "npx serve",
     "lint": "npx eslint ./scripts/**/*.ts ./sites/**/*.js ./tests/**/*.ts ./tests/**/*.js",
     "test": "run-script-os",
-    "test:win32": "SET TZ=Pacific/Nauru && npx jest --runInBand",
+    "test:win32": "SET \"TZ=Pacific/Nauru\" && npx jest --runInBand",
     "test:default": "TZ=Pacific/Nauru npx jest --runInBand",
     "postinstall": "npm run api:load"
   },
