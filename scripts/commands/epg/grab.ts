@@ -61,7 +61,9 @@ async function main() {
 
   let files: string[] = []
   if (options.site) {
-    files = await storage.list(path.join(SITES_DIR, `${options.site}/*.channels.xml`))
+    let pattern = path.join(SITES_DIR, options.site, '*.channels.xml')
+    pattern = pattern.replace(/\\/g, '/')
+    files = await storage.list(pattern)
   } else if (options.channels) {
     files = await storage.list(options.channels)
   }
