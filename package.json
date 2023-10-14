@@ -9,7 +9,9 @@
     "grab": "npx tsx scripts/commands/epg/grab.ts",
     "serve": "npx serve",
     "lint": "npx eslint ./scripts/**/*.ts ./sites/**/*.js ./tests/**/*.ts ./tests/**/*.js",
-    "test": "TZ=Pacific/Nauru npx jest --runInBand",
+    "test": "run-script-os",
+    "test:win32": "SET TZ=Pacific/Nauru && npx jest --runInBand",
+    "test:default": "TZ=Pacific/Nauru npx jest --runInBand",
     "postinstall": "npm run api:load"
   },
   "private": true,
@@ -77,5 +79,8 @@
     "tsx": "^3.13.0",
     "unzipit": "^1.4.0",
     "wildcard-match": "^5.1.2"
+  },
+  "devDependencies": {
+    "run-script-os": "^1.1.6"
   }
 }
