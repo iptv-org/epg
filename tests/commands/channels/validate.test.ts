@@ -1,20 +1,21 @@
 import { execSync } from 'child_process'
+import os from 'os'
 
 type ExecError = {
   status: number
   stdout: string
 }
 
+let ENV_VAR = 'DATA_DIR=tests/__data__/input/temp/data'
+if (os.platform() === 'win32') {
+  ENV_VAR = 'SET "DATA_DIR=tests/__data__/input/temp/data" &&'
+}
+
 describe('channels:validate', () => {
   it('will show a message if the file contains a duplicate', () => {
     try {
-      const stdout = execSync(
-        'DATA_DIR=tests/__data__/input/temp/data npm run channels:validate -- --channels=tests/__data__/input/channels-validate/duplicate.channels.xml',
-        {
-          encoding: 'utf8'
-        }
-      )
-      console.log(stdout)
+      const cmd = `${ENV_VAR} npm run channels:validate -- --channels=tests/__data__/input/channels-validate/duplicate.channels.xml`
+      execSync(cmd, { encoding: 'utf8' })
       process.exit(1)
     } catch (error) {
       expect((error as ExecError).status).toBe(1)
@@ -33,13 +34,8 @@ describe('channels:validate', () => {
 
   it('will show a message if the file contains a channel with wrong xmltv_id', () => {
     try {
-      const stdout = execSync(
-        'DATA_DIR=tests/__data__/input/temp/data npm run channels:validate -- --channels=tests/__data__/input/channels-validate/wrong_xmltv_id.channels.xml',
-        {
-          encoding: 'utf8'
-        }
-      )
-      console.log(stdout)
+      const cmd = `${ENV_VAR} npm run channels:validate -- --channels=tests/__data__/input/channels-validate/wrong_xmltv_id.channels.xml`
+      execSync(cmd, { encoding: 'utf8' })
       process.exit(1)
     } catch (error) {
       expect((error as ExecError).status).toBe(1)
