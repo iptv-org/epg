@@ -1,7 +1,7 @@
 import { Logger, Timer, Storage, Collection } from '@freearhey/core'
 import { program } from 'commander'
 import { CronJob } from 'cron'
-import { Queue, Job, ChannelsParser } from '../../core'
+import { QueueCreator, Job, ChannelsParser } from '../../core'
 import { Channel } from 'epg-grabber'
 import path from 'path'
 import { SITES_DIR } from '../../constants'
@@ -78,12 +78,12 @@ async function main() {
   logger.info(`  found ${parsedChannels.count()} channels`)
 
   logger.info('creating queue...')
-  const queue = new Queue({
+  const queueCreator = new QueueCreator({
     parsedChannels,
     logger,
     options
   })
-  await queue.create()
+  const queue = await queueCreator.create()
   logger.info(`  added ${queue.size()} items`)
 
   const job = new Job({
