@@ -17,7 +17,6 @@ const programOptions = program.opts()
 const defaultCountry = programOptions.country.toLowerCase()
 const newLabel = ` [new]`
 
-let site: string
 let options = new Collection()
 
 async function main() {
@@ -119,7 +118,7 @@ function save() {
     .filter((option: { channel: Channel; delete: boolean }) => !option.delete)
     .map((option: { channel: Channel; delete: boolean }) => option.channel)
 
-  const xml = new XML(channels, site)
+  const xml = new XML(channels)
 
   storage.saveSync(filepath, xml.toString())
 

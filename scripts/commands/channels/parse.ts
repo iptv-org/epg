@@ -50,6 +50,11 @@ async function main() {
   if (isPromise(parsedChannels)) {
     parsedChannels = await parsedChannels
   }
+  parsedChannels = parsedChannels.map((channel: Channel) => {
+    channel.site = config.site
+
+    return channel
+  })
 
   channels = channels
     .mergeBy(
@@ -62,7 +67,7 @@ async function main() {
       (channel: Channel) => channel.site_id
     ])
 
-  const xml = new XML(channels, config.site)
+  const xml = new XML(channels)
 
   await storage.save(outputFilepath, xml.toString())
 

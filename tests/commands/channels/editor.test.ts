@@ -1,6 +1,7 @@
 import fs from 'fs-extra'
 import { execSync } from 'child_process'
 import os from 'os'
+import path from 'path'
 
 beforeEach(() => {
   fs.emptyDirSync('tests/__data__/output')
@@ -25,5 +26,14 @@ describe('channels:editor', () => {
     expect(stdout).toContain('Overwrite')
     expect(stdout).toContain('Skip')
     expect(stdout).toContain("File 'tests/__data__/output/channels.xml' successfully saved")
+    expect(content('tests/__data__/output/channels.xml')).toEqual(
+      content('tests/__data__/expected/sites/channels-editor/channels-editor.channels.xml')
+    )
   })
 })
+
+function content(filepath: string) {
+  return fs.readFileSync(path.resolve(filepath), {
+    encoding: 'utf8'
+  })
+}

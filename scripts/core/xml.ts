@@ -3,11 +3,9 @@ import { Channel } from 'epg-grabber'
 
 export class XML {
   items: Collection
-  site: string
 
-  constructor(items: Collection, site: string) {
+  constructor(items: Collection) {
     this.items = items
-    this.site = site
   }
 
   toString() {
@@ -18,7 +16,7 @@ export class XML {
       const xmltv_id = channel.xmltv_id || ''
       const lang = channel.lang || ''
       const site_id = channel.site_id || ''
-      output += `  <channel site="${this.site}" lang="${lang}" xmltv_id="${escapeString(
+      output += `  <channel site="${channel.site}" lang="${lang}" xmltv_id="${escapeString(
         xmltv_id
       )}" site_id="${site_id}"${logo}>${escapeString(channel.name)}</channel>\r\n`
     })
