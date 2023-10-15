@@ -19,16 +19,13 @@ describe('channels:validate', () => {
       process.exit(1)
     } catch (error) {
       expect((error as ExecError).status).toBe(1)
-      expect(
-        (error as ExecError).stdout
-          .includes(`tests/__data__/input/channels-validate/duplicate.channels.xml
+      expect((error as ExecError).stdout).toContain(`duplicate.channels.xml
 ┌─────────┬─────────────┬──────┬────────────────┬─────────┬─────────┐
 │ (index) │    type     │ lang │    xmltv_id    │ site_id │  name   │
 ├─────────┼─────────────┼──────┼────────────────┼─────────┼─────────┤
 │    0    │ 'duplicate' │ 'en' │ 'BravoEast.us' │  '140'  │ 'Bravo' │
 └─────────┴─────────────┴──────┴────────────────┴─────────┴─────────┘
 \n1 error(s) in 1 file(s)\n`)
-      ).toBe(true)
     }
   })
 
@@ -39,16 +36,13 @@ describe('channels:validate', () => {
       process.exit(1)
     } catch (error) {
       expect((error as ExecError).status).toBe(1)
-      expect(
-        (error as ExecError).stdout
-          .includes(`tests/__data__/input/channels-validate/wrong_xmltv_id.channels.xml
+      expect((error as ExecError).stdout).toContain(`wrong_xmltv_id.channels.xml
 ┌─────────┬──────────────────┬──────┬────────────────────┬─────────┬─────────────────────┐
 │ (index) │       type       │ lang │      xmltv_id      │ site_id │        name         │
 ├─────────┼──────────────────┼──────┼────────────────────┼─────────┼─────────────────────┤
 │    0    │ 'wrong_xmltv_id' │ 'en' │ 'CNNInternational' │  '140'  │ 'CNN International' │
 └─────────┴──────────────────┴──────┴────────────────────┴─────────┴─────────────────────┘
 \n1 error(s) in 1 file(s)\n`)
-      ).toBe(true)
     }
   })
 })
