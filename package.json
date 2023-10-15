@@ -8,7 +8,7 @@
     "channels:validate": "npx tsx scripts/commands/channels/validate.ts",
     "grab": "npx tsx scripts/commands/epg/grab.ts",
     "serve": "npx serve",
-    "lint": "npx eslint ./scripts/**/*.ts ./sites/**/*.js ./tests/**/*.ts ./tests/**/*.js",
+    "lint": "npx eslint \"{scripts,tests}/**/*.{ts,js}\"",
     "test": "run-script-os",
     "test:win32": "SET \"TZ=Pacific/Nauru\" && npx jest --runInBand",
     "test:default": "TZ=Pacific/Nauru npx jest --runInBand",
