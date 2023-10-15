@@ -55,7 +55,7 @@ async function main() {
   logger.info('config:')
   logger.tree(options)
 
-  logger.info(`loading channels...`)
+  logger.info('loading channels...')
   const storage = new Storage()
   const parser = new ChannelsParser({ storage })
 
@@ -69,7 +69,7 @@ async function main() {
   }
 
   let parsedChannels = new Collection()
-  for (let filepath of files) {
+  for (const filepath of files) {
     parsedChannels = parsedChannels.concat(await parser.parse(filepath))
   }
   if (options.lang) {

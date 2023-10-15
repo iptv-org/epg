@@ -1,7 +1,7 @@
 import { Logger, File, Collection, Storage } from '@freearhey/core'
 import { ChannelsParser, XML } from '../../core'
 import { Channel } from 'epg-grabber'
-import { Command, OptionValues } from 'commander'
+import { Command } from 'commander'
 import path from 'path'
 
 const program = new Command()
@@ -36,7 +36,7 @@ async function main() {
   }
 
   const args: {
-    [key: string]: any
+    [key: string]: string
   } = {}
 
   if (Array.isArray(options.set)) {
@@ -76,6 +76,10 @@ async function main() {
 
 main()
 
-function isPromise(promise: any) {
-  return !!promise && typeof promise.then === 'function'
+function isPromise(promise: object[] | Promise<object[]>) {
+  return (
+    !!promise &&
+    typeof promise === 'object' &&
+    typeof (promise as Promise<object[]>).then === 'function'
+  )
 }
