@@ -15,7 +15,7 @@ describe('channels:lint', () => {
     } catch (error) {
       expect((error as ExecError).status).toBe(1)
       expect((error as ExecError).stdout).toContain(
-        "tests/__data__/input/channels-lint/channels-lint.channels.xml\n 3:0  Element 'channel': The attribute 'lang' is required but missing.\n\n1 error(s)\n"
+        "channels-lint.channels.xml\n 3:0  Element 'channel': The attribute 'lang' is required but missing.\n\n1 error(s)\n"
       )
     }
   })
