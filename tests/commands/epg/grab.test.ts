@@ -41,8 +41,8 @@ describe('epg:grab', () => {
       content('tests/__data__/expected/guide.xml')
     )
 
-    expect(content('tests/__data__/output/guide.xml.gz')).toEqual(
-      content('tests/__data__/expected/guide.xml.gz')
+    expect(fs.readFileSync('tests/__data__/output/guide.xml.gz')).toEqual(
+      fs.readFileSync('tests/__data__/expected/guide.xml.gz')
     )
   })
 
