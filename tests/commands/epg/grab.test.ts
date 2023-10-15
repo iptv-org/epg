@@ -2,6 +2,7 @@ import { execSync } from 'child_process'
 import fs from 'fs-extra'
 import path from 'path'
 import os from 'os'
+import { Zip } from '@freearhey/core'
 
 let ENV_VAR =
   'SITES_DIR=tests/__data__/input/epg-grab/sites CURR_DATE=2022-10-20 DATA_DIR=tests/__data__/input/temp/data'
@@ -33,7 +34,7 @@ describe('epg:grab', () => {
     )
   })
 
-  it('can grab epg with gzip option enabled', () => {
+  it('can grab epg with gzip option enabled', async () => {
     const cmd = `${ENV_VAR} npm run grab -- --channels=tests/__data__/input/epg-grab/sites/**/*.channels.xml --output=tests/__data__/output/guide.xml --gzip`
     execSync(cmd, { encoding: 'utf8' })
 
@@ -41,9 +42,10 @@ describe('epg:grab', () => {
       content('tests/__data__/expected/guide.xml')
     )
 
-    expect(fs.readFileSync('tests/__data__/output/guide.xml.gz')).toEqual(
-      fs.readFileSync('tests/__data__/expected/guide.xml.gz')
-    )
+    const zip = new Zip()
+    const expected = await zip.decompress(fs.readFileSync('tests/__data__/output/guide.xml.gz'))
+    const result = await zip.decompress(fs.readFileSync('tests/__data__/expected/guide.xml.gz'))
+    expect(expected).toEqual(result)
   })
 
   it('can grab epg with wildcard as output', () => {
