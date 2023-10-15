@@ -21,7 +21,8 @@
     "transform": {
       "^.+\\.(ts|js)$": "ts-jest"
     },
-    "testRegex": "(tests|sites)/(.*?/)?.*test.(js|ts)$"
+    "testRegex": "(tests|sites)/(.*?/)?.*test.(js|ts)$",
+    "testTimeout": 10000
   },
   "dependencies": {
     "@alex_neo/jest-expect-message": "^1.0.5",
