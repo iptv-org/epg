@@ -42,7 +42,7 @@ async function main() {
 
   let errors: ValidationError[] = []
 
-  let files: string[] = await storage.list(options.channels)
+  const files: string[] = await storage.list(options.channels)
   for (const filepath of files) {
     const file = new File(filepath)
     if (file.extension() !== 'xml') continue

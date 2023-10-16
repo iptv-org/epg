@@ -1,9 +1,11 @@
 import { SiteConfig } from 'epg-grabber'
 import _ from 'lodash'
+import { pathToFileURL } from 'url'
 
 export class ConfigLoader {
   async load(filepath: string): Promise<SiteConfig> {
-    const config = (await import(filepath)).default
+    const fileUrl = pathToFileURL(filepath).toString()
+    const config = (await import(fileUrl)).default
 
     return _.merge(
       {
