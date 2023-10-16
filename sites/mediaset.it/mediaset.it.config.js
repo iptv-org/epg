@@ -21,20 +21,10 @@ module.exports = {
     if (!data.events) return programs
 
     data.events.forEach(item => {
-      if (item.title && item.startTime && item.endTime) {
-        const start = dayjs
-          .utc(item.startTime, 'HH:mm')
-          .set('D', date.get('D'))
-          .set('M', date.get('M'))
-          .set('y', date.get('y'))
-          .toString()
-
-        const stop = dayjs
-          .utc(item.endTime, 'HH:mm')
-          .set('D', date.get('D'))
-          .set('M', date.get('M'))
-          .set('y', date.get('y'))
-          .toString()
+      if (item.title && item.startTime && item.duration) {
+        const start = parseStart(item, date)
+        const duration = parseInt(item.duration)
+        const stop = start.add(duration, 'm')
 
         programs.push({
           title: item.displayTitle || item.title,
