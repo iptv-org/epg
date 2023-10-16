@@ -15,9 +15,8 @@ program
 const filepath = program.args[0]
 const programOptions = program.opts()
 const defaultCountry = programOptions.country.toLowerCase()
-const newLabel = ` [new]`
+const newLabel = ' [new]'
 
-let site: string
 let options = new Collection()
 
 async function main() {
@@ -50,10 +49,10 @@ async function main() {
       }
       return
     }
-    let choices = getOptions(channels, channel)
+    const choices = getOptions(channels, channel)
     const question: QuestionCollection = {
       name: 'option',
-      message: `Choose an option:`,
+      message: 'Choose an option:',
       type: 'list',
       choices,
       pageSize: 10
@@ -119,7 +118,7 @@ function save() {
     .filter((option: { channel: Channel; delete: boolean }) => !option.delete)
     .map((option: { channel: Channel; delete: boolean }) => option.channel)
 
-  const xml = new XML(channels, site)
+  const xml = new XML(channels)
 
   storage.saveSync(filepath, xml.toString())
 
@@ -152,13 +151,13 @@ function getOptions(channels: Collection, channel: Channel) {
   variants.add(`${channel.name.trim()} | ${channelId}${newLabel}`)
   similar.forEach((_channel: ApiChannel) => {
     const altNames = _channel.altNames.notEmpty() ? ` (${_channel.altNames.join(',')})` : ''
-    const closed = _channel.closed ? `[closed:${_channel.closed}]` : ``
+    const closed = _channel.closed ? `[closed:${_channel.closed}]` : ''
     const replacedBy = _channel.replacedBy ? `[replaced_by:${_channel.replacedBy}]` : ''
 
     variants.add(`${_channel.name}${altNames} | ${_channel.id} ${closed}${replacedBy}[api]`)
   })
-  variants.add(`Overwrite`)
-  variants.add(`Skip`)
+  variants.add('Overwrite')
+  variants.add('Skip')
 
   return variants.all()
 }
@@ -174,7 +173,7 @@ function getSimilar(channels: Collection, channelId: string) {
 function generateCode(name: string, country: string) {
   const channelId: string = transliterate(name)
     .replace(/\+/gi, 'Plus')
-    .replace(/^\&/gi, 'And')
+    .replace(/^&/gi, 'And')
     .replace(/[^a-z\d]+/gi, '')
 
   return `${channelId}.${country}`

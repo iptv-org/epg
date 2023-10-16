@@ -1,7 +1,7 @@
 import { Logger, File, Collection, Storage } from '@freearhey/core'
 import { ChannelsParser, XML } from '../../core'
 import { Channel } from 'epg-grabber'
-import { Command, OptionValues } from 'commander'
+import { Command } from 'commander'
 import path from 'path'
 
 const program = new Command()
@@ -36,7 +36,7 @@ async function main() {
   }
 
   const args: {
-    [key: string]: any
+    [key: string]: string
   } = {}
 
   if (Array.isArray(options.set)) {
@@ -50,6 +50,11 @@ async function main() {
   if (isPromise(parsedChannels)) {
     parsedChannels = await parsedChannels
   }
+  parsedChannels = parsedChannels.map((channel: Channel) => {
+    channel.site = config.site
+
+    return channel
+  })
 
   channels = channels
     .mergeBy(
@@ -62,7 +67,7 @@ async function main() {
       (channel: Channel) => channel.site_id
     ])
 
-  const xml = new XML(channels, config.site)
+  const xml = new XML(channels)
 
   await storage.save(outputFilepath, xml.toString())
 
@@ -71,6 +76,10 @@ async function main() {
 
 main()
 
-function isPromise(promise: any) {
-  return !!promise && typeof promise.then === 'function'
+function isPromise(promise: object[] | Promise<object[]>) {
+  return (
+    !!promise &&
+    typeof promise === 'object' &&
+    typeof (promise as Promise<object[]>).then === 'function'
+  )
 }

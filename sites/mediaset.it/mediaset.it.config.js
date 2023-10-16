@@ -1,7 +1,6 @@
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
-const timezone = require('dayjs/plugin/timezone')
 
 dayjs.extend(utc)
 dayjs.extend(customParseFormat)
@@ -21,10 +20,20 @@ module.exports = {
     if (!data.events) return programs
 
     data.events.forEach(item => {
-      if (item.title && item.startTime && item.duration) {
-        const start = parseStart(item, date)
-        const duration = parseInt(item.duration)
-        const stop = start.add(duration, 'm')
+      if (item.title && item.startTime && item.endTime) {
+        const start = dayjs
+          .utc(item.startTime, 'HH:mm')
+          .set('D', date.get('D'))
+          .set('M', date.get('M'))
+          .set('y', date.get('y'))
+          .toString()
+
+        const stop = dayjs
+          .utc(item.endTime, 'HH:mm')
+          .set('D', date.get('D'))
+          .set('M', date.get('M'))
+          .set('y', date.get('y'))
+          .toString()
 
         programs.push({
           title: item.displayTitle || item.title,
