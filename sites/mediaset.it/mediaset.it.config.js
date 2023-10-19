@@ -1,9 +1,11 @@
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
+const timezone = require('dayjs/plugin/timezone')
 
 dayjs.extend(utc)
 dayjs.extend(customParseFormat)
+dayjs.extend(timezone)
 
 module.exports = {
   site: 'mediaset.it',
@@ -15,24 +17,13 @@ module.exports = {
   },
   parser: function ({ content, date }) {
     const programs = []
-    const data = JSON.parse(content)
-    if (!data.events) return programs
+    const items = getItems(content)
 
-    data.events.forEach(item => {
-      if (item.title && item.startTime && item.endTime) {
-        const start = dayjs
-          .utc(item.startTime, 'HH:mm')
-          .set('D', date.get('D'))
-          .set('M', date.get('M'))
-          .set('y', date.get('y'))
-          .toString()
-
-        const stop = dayjs
-          .utc(item.endTime, 'HH:mm')
-          .set('D', date.get('D'))
-          .set('M', date.get('M'))
-          .set('y', date.get('y'))
-          .toString()
+    items.forEach(item => {
+      if (item.title && item.startTime && item.duration) {
+        const start = parseStart(item, date)
+        const duration = parseInt(item.duration)
+        const stop = start.add(duration, 'm')
 
         programs.push({
           title: item.displayTitle || item.title,
@@ -46,4 +37,23 @@ module.exports = {
 
     return programs
   }
+}
+
+function parseStart(item, date) {
+  return dayjs.tz(
+    `${date.format('YYYY-MM-DD')} ${item.startTime}`,
+    'YYYY-MM-DD HH:mm',
+    'Europe/Rome'
+  )
+}
+
+function getItems(content) {
+  let data
+  try {
+    data = JSON.parse(content)
+  } catch (err) {
+    return []
+  }
+
+  return data && Array.isArray(data.events) ? data.events : []
 }
