@@ -15,6 +15,7 @@ program
   .option('-o, --output <path>', 'Path to output file', 'guide.xml')
   .option('-l, --lang <code>', 'Filter channels by language (ISO 639-2 code)')
   .option('-t, --timeout <milliseconds>', 'Override the default timeout for each request')
+  .option('-d, --delay <milliseconds>', 'Override the default delay between request')
   .option(
     '--days <days>',
     'Override the number of days for which the program will be loaded (defaults to the value from the site config)',
@@ -37,6 +38,7 @@ export type GrabOptions = {
   gzip: boolean
   maxConnections: number
   timeout?: string
+  delay?: string
   lang?: string
   days?: number
   cron?: string

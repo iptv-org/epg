@@ -43,6 +43,11 @@ export class Grabber {
               config.request = { ...config.request, ...{ timeout } }
             }
 
+            if (this.options.delay !== undefined) {
+              const delay = parseInt(this.options.delay)
+              config.delay = delay
+            }
+
             const grabber =
               process.env.NODE_ENV === 'test' ? new EPGGrabberMock(config) : new EPGGrabber(config)
             const _programs = await grabber.grab(
