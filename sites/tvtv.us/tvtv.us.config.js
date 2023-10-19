@@ -5,9 +5,7 @@ dayjs.extend(utc)
 
 module.exports = {
   site: 'tvtv.us',
-  request: {
-    delay: 1500 // 1500 ms
-  },
+  delay: 1500, // 1500 ms
   days: 2,
   url: function ({ date, channel }) {
     return `https://www.tvtv.us/api/v1/lineup/USA-NY71652-DEFAULT/grid/${date.toJSON()}/${date
