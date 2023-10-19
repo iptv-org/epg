@@ -6,7 +6,7 @@ dayjs.extend(utc)
 module.exports = {
   site: 'tvtv.us',
   request: {
-    delay: 500 // 500 ms
+    delay: 1500 // 1500 ms
   },
   days: 2,
   url: function ({ date, channel }) {
