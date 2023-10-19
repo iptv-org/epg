@@ -87,7 +87,7 @@
 | mytvsuper.com              | 🟢     |                                                                                          |
 | nhk.or.jp                  | 🟢     |                                                                                          |
 | nhkworldpremium.com        | 🟢     |                                                                                          |
-| nos.pt                     | 🟢     |                                                                                          |
+| nos.pt                     | 🟡     | https://github.com/iptv-org/epg/issues/2183                                              |
 | novacyprus.com             | 🟢     |                                                                                          |
 | novasports.gr              | 🟢     |                                                                                          |
 | nowplayer.now.com          | 🟢     |                                                                                          |
