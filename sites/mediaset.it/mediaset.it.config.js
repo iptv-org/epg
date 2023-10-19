@@ -17,10 +17,9 @@ module.exports = {
   },
   parser: function ({ content, date }) {
     const programs = []
-    const data = JSON.parse(content)
-    if (!data.events) return programs
+    const items = getItems(content)
 
-    data.events.forEach(item => {
+    items.forEach(item => {
       if (item.title && item.startTime && item.duration) {
         const start = parseStart(item, date)
         const duration = parseInt(item.duration)
@@ -41,5 +40,20 @@ module.exports = {
 }
 
 function parseStart(item, date) {
-  return dayjs.tz(`${date.format('YYYY-MM-DD')} ${item.startTime}`, 'YYYY-MM-DD HH:mm', 'Europe/Rome')
+  return dayjs.tz(
+    `${date.format('YYYY-MM-DD')} ${item.startTime}`,
+    'YYYY-MM-DD HH:mm',
+    'Europe/Rome'
+  )
+}
+
+function getItems(content) {
+  let data
+  try {
+    data = JSON.parse(content)
+  } catch (err) {
+    return []
+  }
+
+  return data && Array.isArray(data.events) ? data.events : []
 }
