@@ -1,7 +1,7 @@
 import { Logger, Timer, Storage, Collection } from '@freearhey/core'
 import { program } from 'commander'
 import { CronJob } from 'cron'
-import { Queue, Job, ChannelsParser } from '../../core'
+import { QueueCreator, Job, ChannelsParser } from '../../core'
 import { Channel } from 'epg-grabber'
 import path from 'path'
 import { SITES_DIR } from '../../constants'
@@ -55,19 +55,21 @@ async function main() {
   logger.info('config:')
   logger.tree(options)
 
-  logger.info(`loading channels...`)
+  logger.info('loading channels...')
   const storage = new Storage()
   const parser = new ChannelsParser({ storage })
 
   let files: string[] = []
   if (options.site) {
-    files = await storage.list(path.join(SITES_DIR, `${options.site}/*.channels.xml`))
+    let pattern = path.join(SITES_DIR, options.site, '*.channels.xml')
+    pattern = pattern.replace(/\\/g, '/')
+    files = await storage.list(pattern)
   } else if (options.channels) {
     files = await storage.list(options.channels)
   }
 
   let parsedChannels = new Collection()
-  for (let filepath of files) {
+  for (const filepath of files) {
     parsedChannels = parsedChannels.concat(await parser.parse(filepath))
   }
   if (options.lang) {
@@ -76,12 +78,12 @@ async function main() {
   logger.info(`  found ${parsedChannels.count()} channels`)
 
   logger.info('creating queue...')
-  const queue = new Queue({
+  const queueCreator = new QueueCreator({
     parsedChannels,
     logger,
     options
   })
-  await queue.create()
+  const queue = await queueCreator.create()
   logger.info(`  added ${queue.size()} items`)
 
   const job = new Job({

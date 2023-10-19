@@ -11,9 +11,5 @@
       "./src/types"
     ],
     "allowJs": true
-  },
-  "ts-node": {
-    "esm": true,
-    "transpileOnly": true
   }
 }
