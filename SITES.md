@@ -107,7 +107,7 @@
 | raiplay.it                 | 🟢     |                                                                                          |
 | reportv.com.ar             | 🟢     |                                                                                          |
 | rev.bs                     | 🟢     |                                                                                          |
-| rotana.net                 | 🟢     |                                                                                          |
+| rotana.net                 | 🟡     | https://github.com/iptv-org/epg/issues/2187                                              |
 | rtb.gov.bn                 | 🟢     |                                                                                          |
 | rthk.hk                    | 🟢     |                                                                                          |
 | rtmklik.rtm.gov.my         | 🟢     |                                                                                          |
