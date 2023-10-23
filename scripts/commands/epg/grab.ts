@@ -77,41 +77,41 @@ async function main() {
   if (options.lang) {
     parsedChannels = parsedChannels.filter((channel: Channel) => channel.lang === options.lang)
   }
-  logger.info(`  found ${parsedChannels.count()} channels`)
+  logger.info(`  found ${parsedChannels.count()} channel(s)`)
 
-  logger.info('creating queue...')
+  let runIndex = 1
+  if (options.cron) {
+    const cronJob = new CronJob(options.cron, async () => {
+      logger.info(`run #${runIndex}:`)
+      await runJob({ logger, parsedChannels })
+      runIndex++
+    })
+    cronJob.start()
+  } else {
+    logger.info(`run #${runIndex}:`)
+    runJob({ logger, parsedChannels })
+  }
+}
+
+main()
+
+async function runJob({ logger, parsedChannels }: { logger: Logger; parsedChannels: Collection }) {
+  const timer = new Timer()
+  timer.start()
+
   const queueCreator = new QueueCreator({
     parsedChannels,
     logger,
     options
   })
   const queue = await queueCreator.create()
-  logger.info(`  added ${queue.size()} items`)
-
   const job = new Job({
     queue,
     logger,
     options
   })
 
-  let runIndex = 1
-  if (options.cron) {
-    const cronJob = new CronJob(options.cron, async () => {
-      logger.info(`run #${runIndex}:`)
-      const timer = new Timer()
-      timer.start()
-      await job.run()
-      runIndex++
-      logger.success(`  done in ${timer.format('HH[h] mm[m] ss[s]')}`)
-    })
-    cronJob.start()
-  } else {
-    logger.info(`run #${runIndex}:`)
-    const timer = new Timer()
-    timer.start()
-    await job.run()
-    logger.success(`  done in ${timer.format('HH[h] mm[m] ss[s]')}`)
-  }
-}
+  await job.run()
 
-main()
+  logger.success(`  done in ${timer.format('HH[h] mm[m] ss[s]')}`)
+}
