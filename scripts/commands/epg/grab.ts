@@ -112,8 +112,6 @@ async function main() {
     await job.run()
     logger.success(`  done in ${timer.format('HH[h] mm[m] ss[s]')}`)
   }
-
-  logger.info('finished')
 }
 
 main()
