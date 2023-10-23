@@ -1,7 +1,6 @@
 import { Collection, Logger, DateTime, Storage, Zip } from '@freearhey/core'
 import { Channel } from 'epg-grabber'
 import { XMLTV } from '../core'
-import { CURR_DATE } from '../constants'
 
 type GuideProps = {
   channels: Collection
@@ -34,10 +33,13 @@ export class Guide {
     )
     const programs = this.programs
 
+    const currDate = new DateTime(process.env.CURR_DATE || new Date().toISOString(), {
+      zone: 'UTC'
+    })
     const xmltv = new XMLTV({
       channels,
       programs,
-      date: new DateTime(CURR_DATE, { zone: 'UTC' })
+      date: currDate
     })
 
     const xmlFilepath = this.filepath

@@ -1,6 +1,6 @@
 import { Storage, Collection, DateTime, Logger } from '@freearhey/core'
 import { ChannelsParser, ConfigLoader, ApiChannel, Queue } from './'
-import { SITES_DIR, DATA_DIR, CURR_DATE } from '../constants'
+import { SITES_DIR, DATA_DIR } from '../constants'
 import { SiteConfig } from 'epg-grabber'
 import path from 'path'
 import { GrabOptions } from '../commands/epg/grab'
@@ -19,7 +19,6 @@ export class QueueCreator {
   parser: ChannelsParser
   parsedChannels: Collection
   options: GrabOptions
-  date: DateTime
 
   constructor({ parsedChannels, logger, options }: QueueCreatorProps) {
     this.parsedChannels = parsedChannels
@@ -27,7 +26,6 @@ export class QueueCreator {
     this.sitesStorage = new Storage()
     this.dataStorage = new Storage(DATA_DIR)
     this.parser = new ChannelsParser({ storage: new Storage() })
-    this.date = new DateTime(CURR_DATE)
     this.options = options
     this.configLoader = new ConfigLoader()
   }
@@ -52,7 +50,8 @@ export class QueueCreator {
       }
 
       const days = this.options.days || config.days || 1
-      const dates = Array.from({ length: days }, (_, day) => this.date.add(day, 'd'))
+      const currDate = new DateTime(process.env.CURR_DATE || new Date().toISOString())
+      const dates = Array.from({ length: days }, (_, day) => currDate.add(day, 'd'))
       dates.forEach((date: DateTime) => {
         const dateString = date.toJSON()
         const key = `${channel.site}:${channel.lang}:${channel.xmltv_id}:${dateString}`
