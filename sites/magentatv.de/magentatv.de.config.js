@@ -1,9 +1,14 @@
 const axios = require('axios')
 const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const customParseFormat = require('dayjs/plugin/customParseFormat')
 
-const X_CSRFTOKEN = 'e0a032d1c9df6c3fb8c8352399d32c40ddb17ccceb5142fe'
+const X_CSRFTOKEN = '6da89c6b271b8c0fabd133b2722ee9e1ddba9564010af8e3'
 const COOKIE =
-  'JSESSIONID=93892A98DBCCEBD83EDC4C23EBEB23B6; CSESSIONID=4A36799EF09D80539BBA8E8211FA80D3; CSRFSESSION=e0a032d1c9df6c3fb8c8352399d32c40ddb17ccceb5142fe; JSESSIONID=93892A98DBCCEBD83EDC4C23EBEB23B6'
+  'JSESSIONID=CDE7D4E5E7C05900BBEAD7DF8FB1DBB0; CSESSIONID=D36E1BF69875141F63B3240B86AFB9B7; CSRFSESSION=6da89c6b271b8c0fabd133b2722ee9e1ddba9564010af8e3; JSESSIONID=CDE7D4E5E7C05900BBEAD7DF8FB1DBB0'
+
+dayjs.extend(utc)
+dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'magentatv.de',
@@ -16,6 +21,7 @@ module.exports = {
       'Content-Type': 'application/json',
       Cookie: COOKIE
     },
+    
     data({ channel, date }) {
       return {
         count: -1,
@@ -47,7 +53,6 @@ module.exports = {
         stop: parseStop(item)
       })
     })
-
     return programs
   },
   async channels() {
@@ -108,11 +113,11 @@ function parseIcon(item) {
 }
 
 function parseStart(item) {
-  return dayjs(item.starttime)
+  return dayjs(item.starttime, 'YYYY-MM-DD HH:mm:ss')
 }
 
 function parseStop(item) {
-  return dayjs(item.endtime)
+  return dayjs.utc(item.endtime, 'YYYY-MM-DD HH:mm:ss')
 }
 
 function parseItems(content) {
