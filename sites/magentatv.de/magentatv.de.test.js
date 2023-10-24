@@ -64,7 +64,7 @@ it('can parse response', () => {
 
   expect(result).toMatchObject([
     {
-      start: '2023-10-23T11:58:55.000Z',
+      start: '2023-10-23T23:58:55.000Z',
       stop: '2023-10-24T00:11:05.000Z',
       title: 'Twenty Foot Plus',
       description:
