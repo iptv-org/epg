@@ -2,10 +2,13 @@ const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
+const fetch = require('node-fetch');
 
-const X_CSRFTOKEN = '6da89c6b271b8c0fabd133b2722ee9e1ddba9564010af8e3'
-const COOKIE =
-  'JSESSIONID=CDE7D4E5E7C05900BBEAD7DF8FB1DBB0; CSESSIONID=D36E1BF69875141F63B3240B86AFB9B7; CSRFSESSION=6da89c6b271b8c0fabd133b2722ee9e1ddba9564010af8e3; JSESSIONID=CDE7D4E5E7C05900BBEAD7DF8FB1DBB0'
+
+let X_CSRFTOKEN;
+let COOKIE;
+const cookiesToExtract = ['JSESSIONID', 'CSESSIONID', 'CSRFSESSION'];
+const extractedCookies = {};
 
 dayjs.extend(utc)
 dayjs.extend(customParseFormat)
@@ -16,10 +19,8 @@ module.exports = {
   url: 'https://api.prod.sngtv.magentatv.de/EPG/JSON/PlayBillList',
   request: {
     method: 'POST',
-    headers: {
-      X_CSRFToken: X_CSRFTOKEN,
-      'Content-Type': 'application/json',
-      Cookie: COOKIE
+     headers: function () {
+      return setHeaders();
     },
     
     data({ channel, date }) {
@@ -97,6 +98,7 @@ module.exports = {
   }
 }
 
+
 function parseCategory(item) {
   return item.genres
     ? item.genres
@@ -113,7 +115,7 @@ function parseIcon(item) {
 }
 
 function parseStart(item) {
-  return dayjs(item.starttime, 'YYYY-MM-DD HH:mm:ss')
+  return dayjs.utc(item.starttime, 'YYYY-MM-DD HH:mm:ss')
 }
 
 function parseStop(item) {
@@ -125,4 +127,65 @@ function parseItems(content) {
   if (!data || !Array.isArray(data.playbilllist)) return []
 
   return data.playbilllist
+}
+
+// Function to try to fetch COOKIE and X_CSRFTOKEN  
+function fetchCookieAndToken() {
+  return fetch("https://api.prod.sngtv.magentatv.de/EPG/JSON/Authenticate?SID=firstup&T=Windows_chrome_118", {
+  "headers": {
+    "accept": "application/json, text/javascript, */*; q=0.01",
+    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin",
+    "x-requested-with": "XMLHttpRequest",
+    "Referer": "https://api.prod.sngtv.magentatv.de/EPG/",
+    "Referrer-Policy": "strict-origin-when-cross-origin"
+  },
+  "body": "{\"terminalid\":\"00:00:00:00:00:00\",\"mac\":\"00:00:00:00:00:00\",\"terminaltype\":\"WEBTV\",\"utcEnable\":1,\"timezone\":\"Etc/GMT0\",\"userType\":3,\"terminalvendor\":\"Unknown\"}",
+  "method": "POST" })
+ .then(response => {
+    // Check if the response status is OK (2xx)
+    if (!response.ok) {
+      throw new Error('HTTP request failed');
+    }
+
+    // Extract the set-cookie header
+    const setCookieHeader = response.headers.raw()['set-cookie'];
+
+    // Extract the cookies specified in cookiesToExtract
+    cookiesToExtract.forEach(cookieName => {
+      const regex = new RegExp(`${cookieName}=(.+?)(;|$)`);
+      const match = setCookieHeader.find(header => regex.test(header));
+
+      if (match) {
+        const cookieValue = regex.exec(match)[1];
+        extractedCookies[cookieName] = cookieValue;
+      }
+    });
+
+    return response.json();
+  })
+ .then(data => {
+    if (data.csrfToken) {
+      X_CSRFTOKEN = data.csrfToken
+      COOKIE = `JSESSIONID=${extractedCookies.JSESSIONID}; CSESSIONID=${extractedCookies.CSESSIONID}; CSRFSESSION=${extractedCookies.CSRFSESSION}; JSESSIONID=${extractedCookies.JSESSIONID};`
+    } else {
+      console.log('csrfToken not found in the response.');
+    }
+  })
+  .catch(error => {
+    console.error(error);
+  });
+}
+
+function setHeaders() {
+  return fetchCookieAndToken()
+    .then(() => {
+      return {
+        X_CSRFTOKEN: X_CSRFTOKEN,
+        'Content-Type': 'application/json',
+        Cookie: COOKIE,
+      };
+    });
 }
