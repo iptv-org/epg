@@ -115,7 +115,7 @@ function parseIcon(item) {
 }
 
 function parseStart(item) {
-  return dayjs(item.starttime, 'YYYY-MM-DD HH:mm:ss')
+  return dayjs.utc(item.starttime, 'YYYY-MM-DD HH:mm:ss')
 }
 
 function parseStop(item) {
