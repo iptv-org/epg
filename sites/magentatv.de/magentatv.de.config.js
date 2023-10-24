@@ -142,7 +142,7 @@ function fetchCookieAndToken() {
     "Referer": "https://api.prod.sngtv.magentatv.de/EPG/",
     "Referrer-Policy": "strict-origin-when-cross-origin"
   },
-  "body": "{\"terminalid\":\"00:00:00:00:00:00\",\"mac\":\"00:00:00:00:00:00\",\"terminaltype\":\"WEBTV\",\"utcEnable\":1,\"timezone\":\"America/Chicago\",\"userType\":3,\"terminalvendor\":\"Unknown\"}",
+  "body": "{\"terminalid\":\"00:00:00:00:00:00\",\"mac\":\"00:00:00:00:00:00\",\"terminaltype\":\"WEBTV\",\"utcEnable\":1,\"timezone\":\"Etc/GMT0\",\"userType\":3,\"terminalvendor\":\"Unknown\"}",
   "method": "POST" })
  .then(response => {
     // Check if the response status is OK (2xx)
