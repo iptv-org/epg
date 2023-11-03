@@ -9,9 +9,9 @@ module.exports = {
   site: 'firstmedia.com',
   days: 1,
   url: function ({ channel, date }) {
-    return `https://www.firstmedia.com/ajax/schedule?date=${date.format('DD/MM/YYYY')}&channel=${
+    return `https://api.firstmedia.com/api/content/tv-guide/list?date=${date.format('DD/MM/YYYY')}&channel=${
       channel.site_id
-    }&start_time=1&end_time=24&need_channels=0`
+    }&startTime=0&endTime=24`
   },
   parser: function ({ content, channel }) {
     if (!content || !channel) return []
@@ -32,7 +32,7 @@ module.exports = {
 }
 
 function parseItems(content, channel) {
-  return JSON.parse(content.trim()).entries[channel]
+  return JSON.parse(content.trim()).data.entries[channel] || []
 }
 
 function parseTitle(item) {
@@ -44,9 +44,9 @@ function parseDescription(item) {
 }
 
 function parseStart(item) {
-  return dayjs.tz(item.start_time, 'YYYY-MM-DD HH:mm:ss', 'Asia/Jakarta')
+  return dayjs.tz(item.startTime, 'YYYY-MM-DD HH:mm:ss', 'Asia/Jakarta')
 }
 
 function parseStop(item) {
-  return dayjs.tz(item.end_time, 'YYYY-MM-DD HH:mm:ss', 'Asia/Jakarta')
+  return dayjs.tz(item.endTime, 'YYYY-MM-DD HH:mm:ss', 'Asia/Jakarta')
 }
