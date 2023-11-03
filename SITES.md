@@ -74,7 +74,7 @@
 | meo.pt                     | 🟢     |                                                                     |
 | mewatch.sg                 | 🟢     |                                                                     |
 | mi.tv                      | 🟢     |                                                                     |
-| mncvision.id               | 🟡     | https://github.com/iptv-org/epg/issues/2196                         |
+| mncvision.id               | 🟢     |                                                                     |
 | moji.id                    | 🟢     |                                                                     |
 | mon-programme-tv.be        | 🟢     |                                                                     |
 | movistarplus.es            | 🟢     |                                                                     |
