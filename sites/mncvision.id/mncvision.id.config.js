@@ -13,7 +13,7 @@ dayjs.extend(customParseFormat)
 module.exports = {
   site: 'mncvision.id',
   days: 2,
-  url: 'https://mncvision.id/schedule/table',
+  url: 'https://www.mncvision.id/schedule/table',
   request: {
     method: 'POST',
     data: function ({ channel, date }) {
