@@ -26,7 +26,7 @@ const headers = {
 }
 
 it('can generate valid url', () => {
-  expect(url).toBe('https://mncvision.id/schedule/table')
+  expect(url).toBe('https://www.mncvision.id/schedule/table')
 })
 
 it('can generate valid request method', () => {
