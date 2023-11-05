@@ -8,26 +8,19 @@ dayjs.extend(timezone)
 module.exports = {
   site: 'osn.com',
   days: 2,
-  url: 'https://www.osn.com/CMSPages/TVScheduleWebService.asmx/GetTVChannelsProgramTimeTable',
-  request: {
-    method: 'POST',
-    headers: {
+  headers({ channel }) {
+    return {
       'Content-Type': 'application/json; charset=UTF-8',
-      Referer: 'https://www.osn.com'
-    },
-    data({ channel, date }) {
-      return {
-        newDate: date.format('MM/DD/YYYY'),
-        selectedCountry: 'AE',
-        channelCode: channel.site_id,
-        isMobile: false,
-        hoursForMobile: 0
-      }
-    },
-    jar: null
+      Referer: `https://www.osn.com/${channel.lang}-ae/watch/tv-schedule`,
+    }
   },
-  parser: function ({ content, channel }) {
-    let programs = []
+  url({ channel, date }) {
+    return `https://www.osn.com/api/TVScheduleWebService.asmx/GetTVChannelsProgramTimeTable?newDate=${
+      encodeURIComponent(date.format('MM/DD/YYYY'))
+    }&selectedCountry=AE&channelCode=${channel.site_id}&isMobile=false&hoursForMobile=6`
+  },
+  parser({ content, channel }) {
+    const programs = []
     const items = parseItems(content)
     items.forEach(item => {
       const start = parseStart(item, channel)
@@ -64,8 +57,5 @@ function parseStart(item) {
 }
 
 function parseItems(content) {
-  if (!content) return []
-  const json = JSON.parse(content)
-
-  return json.d ? JSON.parse(json.d) : []
+  return content ? JSON.parse(content) : []
 }
