@@ -104,7 +104,7 @@
 | programme-tv.vini.pf       | 🟢     |                                                                     |
 | programme.tvb.com          | 🟢     |                                                                     |
 | programtv.onet.pl          | 🟢     |                                                                     |
-| proximusmwc.be             | 🟢     |                                                                     |
+| proximusmwc.be             | 🟢     | https://github.com/iptv-org/epg/issues/2212                         |
 | raiplay.it                 | 🟢     |                                                                     |
 | reportv.com.ar             | 🟢     |                                                                     |
 | rev.bs                     | 🟢     |                                                                     |
