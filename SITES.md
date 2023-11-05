@@ -27,6 +27,7 @@
 | compulms.com               | 🟢     |                                                                     |
 | comteco.com.bo             | 🟢     |                                                                     |
 | cosmote.gr                 | 🟢     |                                                                     |
+| cubmu.com                  | 🟢     |                                                                     |
 | delta.nl                   | 🟢     |                                                                     |
 | digiturk.com.tr            | 🟢     |                                                                     |
 | directv.com                | 🟢     |                                                                     |
