@@ -38,6 +38,28 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels() {
+    const axios = require('axios')
+    const cheerio = require('cheerio')
+    const data = await axios
+      .get('https://www.indihometv.com/tvod')
+      .then(response => response.data)
+      .catch(console.error)
+
+    const $ = cheerio.load(data)
+    const items = $('#channelContainer a.channel-item').toArray()
+    const channels = items.map(item => {
+      const $item = $(item)
+
+      return {
+        lang: 'id',
+        site_id: $item.data('url').substr($item.data('url').lastIndexOf('/') + 1),
+        name: $item.data('name')
+      }
+    })
+
+    return channels
   }
 }
 
