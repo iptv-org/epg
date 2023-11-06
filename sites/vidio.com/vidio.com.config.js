@@ -31,7 +31,33 @@ module.exports = {
     })
 
     return programs
-  }
+  },
+  async channels() {
+    const axios = require('axios')
+    const cheerio = require('cheerio')
+    const result = await axios
+      .get('https://www.vidio.com/categories/276-daftar-channel-tv-radio-live-sports')
+      .then(response => response.data)
+      .catch(console.error)
+
+    const $ = cheerio.load(result)
+    const items = $('.home-content a').toArray()
+    const channels = []
+    items.forEach(item => {
+      const $item = $(item)
+
+      const name = $item.find('p').text()
+      if (name.toUpperCase().indexOf('FM') < 0 && name.toUpperCase().indexOf('RADIO') < 0) {
+        channels.push({
+          lang: 'id',
+          site_id: $item.attr('href').substr($item.attr('href').lastIndexOf('/') + 1).split('-')[0],
+          name
+        })
+      }
+    })
+
+    return channels
+  }  
 }
 
 function parseStart($item, date) {

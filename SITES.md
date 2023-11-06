@@ -27,6 +27,7 @@
 | compulms.com               | 🟢     |                                                                     |
 | comteco.com.bo             | 🟢     |                                                                     |
 | cosmote.gr                 | 🟢     |                                                                     |
+| cubmu.com                  | 🟢     |                                                                     |
 | delta.nl                   | 🟢     |                                                                     |
 | digiturk.com.tr            | 🟢     |                                                                     |
 | directv.com                | 🟢     |                                                                     |
@@ -103,7 +104,7 @@
 | programme-tv.vini.pf       | 🟢     |                                                                     |
 | programme.tvb.com          | 🟢     |                                                                     |
 | programtv.onet.pl          | 🟢     |                                                                     |
-| proximusmwc.be             | 🟢     |                                                                     |
+| proximusmwc.be             | 🟢     | https://github.com/iptv-org/epg/issues/2212                         |
 | raiplay.it                 | 🟢     |                                                                     |
 | reportv.com.ar             | 🟢     |                                                                     |
 | rev.bs                     | 🟢     |                                                                     |
