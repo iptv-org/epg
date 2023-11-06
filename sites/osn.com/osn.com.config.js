@@ -8,16 +8,17 @@ dayjs.extend(timezone)
 module.exports = {
   site: 'osn.com',
   days: 2,
-  headers({ channel }) {
-    return {
-      'Content-Type': 'application/json; charset=UTF-8',
-      Referer: `https://www.osn.com/${channel.lang}-ae/watch/tv-schedule`,
-    }
-  },
   url({ channel, date }) {
-    return `https://www.osn.com/api/TVScheduleWebService.asmx/GetTVChannelsProgramTimeTable?newDate=${
-      encodeURIComponent(date.format('MM/DD/YYYY'))
-    }&selectedCountry=AE&channelCode=${channel.site_id}&isMobile=false&hoursForMobile=6`
+    return `https://www.osn.com/api/TVScheduleWebService.asmx/GetTVChannelsProgramTimeTable?newDate=${encodeURIComponent(
+      date.format('MM/DD/YYYY')
+    )}&selectedCountry=AE&channelCode=${channel.site_id}&isMobile=false&hoursForMobile=0`
+  },
+  request: {
+    headers({ channel }) {
+      return {
+        Referer: `https://www.osn.com/${channel.lang}-ae/watch/tv-schedule`
+      }
+    }
   },
   parser({ content, channel }) {
     const programs = []
@@ -35,6 +36,23 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels({ lang = 'ar' }) {
+    const axios = require('axios')
+    const result = await axios
+      .get('https://www.osn.com/api/tvchannels.ashx?culture=en-US&packageId=3519&country=AE')
+      .then(response => response.data)
+      .catch(console.error)
+
+    const channels = result.map(channel => {
+      return {
+        lang: lang,
+        site_id: channel.channelCode,
+        name: channel.channeltitle
+      }
+    })
+
+    return channels
   }
 }
 
