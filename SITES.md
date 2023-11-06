@@ -94,7 +94,7 @@
 | nowplayer.now.com          | 🟢     |                                                                     |
 | nuevosiglo.com.uy          | 🟢     |                                                                     |
 | ontvtonight.com            | 🟢     |                                                                     |
-| osn.com                    | 🟡     | https://github.com/iptv-org/epg/issues/2157                         |
+| osn.com                    | 🟢     |                                                                     |
 | pbsguam.org                | 🟢     |                                                                     |
 | plex.tv                    | 🟢     |                                                                     |
 | programacion-tv.elpais.com | 🟢     |                                                                     |
