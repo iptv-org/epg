@@ -8,26 +8,20 @@ dayjs.extend(timezone)
 module.exports = {
   site: 'osn.com',
   days: 2,
-  url: 'https://www.osn.com/CMSPages/TVScheduleWebService.asmx/GetTVChannelsProgramTimeTable',
-  request: {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json; charset=UTF-8',
-      Referer: 'https://www.osn.com'
-    },
-    data({ channel, date }) {
-      return {
-        newDate: date.format('MM/DD/YYYY'),
-        selectedCountry: 'AE',
-        channelCode: channel.site_id,
-        isMobile: false,
-        hoursForMobile: 0
-      }
-    },
-    jar: null
+  url({ channel, date }) {
+    return `https://www.osn.com/api/TVScheduleWebService.asmx/GetTVChannelsProgramTimeTable?newDate=${encodeURIComponent(
+      date.format('MM/DD/YYYY')
+    )}&selectedCountry=AE&channelCode=${channel.site_id}&isMobile=false&hoursForMobile=0`
   },
-  parser: function ({ content, channel }) {
-    let programs = []
+  request: {
+    headers({ channel }) {
+      return {
+        Referer: `https://www.osn.com/${channel.lang}-ae/watch/tv-schedule`
+      }
+    }
+  },
+  parser({ content, channel }) {
+    const programs = []
     const items = parseItems(content)
     items.forEach(item => {
       const start = parseStart(item, channel)
@@ -42,6 +36,23 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels({ lang = 'ar' }) {
+    const axios = require('axios')
+    const result = await axios
+      .get('https://www.osn.com/api/tvchannels.ashx?culture=en-US&packageId=3519&country=AE')
+      .then(response => response.data)
+      .catch(console.error)
+
+    const channels = result.map(channel => {
+      return {
+        lang: lang,
+        site_id: channel.channelCode,
+        name: channel.channeltitle
+      }
+    })
+
+    return channels
   }
 }
 
@@ -64,8 +75,5 @@ function parseStart(item) {
 }
 
 function parseItems(content) {
-  if (!content) return []
-  const json = JSON.parse(content)
-
-  return json.d ? JSON.parse(json.d) : []
+  return content ? JSON.parse(content) : []
 }

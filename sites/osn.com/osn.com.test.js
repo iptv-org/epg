@@ -10,32 +10,20 @@ dayjs.extend(utc)
 const date = dayjs.utc('2021-10-24', 'YYYY-MM-DD').startOf('d')
 const channelAR = { site_id: 'AAN', xmltv_id: 'AlAanTV.ae', lang: 'ar' }
 const channelEN = { site_id: 'AAN', xmltv_id: 'AlAanTV.ae', lang: 'en' }
-const content = JSON.stringify({
-  d: '[{"IsPlaying":"0","Durationtime":null,"StartMinute":0,"EndMinute":0,"EmptyDivWidth":1152,"TotalDivWidth":576,"IsTodayDate":false,"IsLastRow":false,"StartDateTime":"24 Oct 2021, 22:00","EndDateTime":"\\/Date(-62135596800000)\\/","Title":"Al Aan TV","Arab_Title":"تلفزيون الآن","GenreEnglishName":null,"GenreArabicName":null,"ChannelNumber":140,"ChannelCode":"AAN","Duration":"\\/Date(-62135596800000)\\/","Showtime":"\\/Date(-62135596800000)\\/","EpisodeId":738257,"ProgramType":null,"EPGUNIQID":"AAN202110271800738257"}]'
-})
-
-it('can generate valid request data', () => {
-  const result = request.data({ channel: channelAR, date })
-  expect(result).toMatchObject({
-    newDate: '10/24/2021',
-    selectedCountry: 'AE',
-    channelCode: 'AAN',
-    isMobile: false,
-    hoursForMobile: 0
-  })
-})
+const content =
+  '[{"IsPlaying":"0","Durationtime":null,"StartMinute":0,"EndMinute":0,"EmptyDivWidth":1152,"TotalDivWidth":576,"IsTodayDate":false,"IsLastRow":false,"StartDateTime":"24 Oct 2021, 22:00","EndDateTime":"\\/Date(-62135596800000)\\/","Title":"Al Aan TV","Arab_Title":"تلفزيون الآن","GenreEnglishName":null,"GenreArabicName":null,"ChannelNumber":140,"ChannelCode":"AAN","Duration":"\\/Date(-62135596800000)\\/","Showtime":"\\/Date(-62135596800000)\\/","EpisodeId":738257,"ProgramType":null,"EPGUNIQID":"AAN202110271800738257"}]'
 
 it('can generate valid request headers', () => {
-  const result = request.headers
+  const result = request.headers({ channel: channelAR, date })
   expect(result).toMatchObject({
-    'Content-Type': 'application/json; charset=UTF-8',
-    Referer: 'https://www.osn.com'
+    Referer: 'https://www.osn.com/ar-ae/watch/tv-schedule'
   })
 })
 
 it('can generate valid url', () => {
-  expect(url).toBe(
-    'https://www.osn.com/CMSPages/TVScheduleWebService.asmx/GetTVChannelsProgramTimeTable'
+  const result = url({ channel: channelAR, date })
+  expect(result).toBe(
+    'https://www.osn.com/api/TVScheduleWebService.asmx/GetTVChannelsProgramTimeTable?newDate=10%2F24%2F2021&selectedCountry=AE&channelCode=AAN&isMobile=false&hoursForMobile=0'
   )
 })
 
@@ -64,6 +52,6 @@ it('can parse response (en)', () => {
 })
 
 it('can handle empty guide', () => {
-  const result = parser({ date, channel: channelAR, content: JSON.stringify({ d: '[]' }) })
+  const result = parser({ date, channel: channelAR, content: '[]' })
   expect(result).toMatchObject([])
 })
