@@ -7,24 +7,36 @@ dayjs.extend(utc)
 
 module.exports = {
   site: 'firstmedia.com',
-  days: 1,
-  url: function ({ channel, date }) {
+  days: 2,
+  url({ channel, date }) {
     return `https://api.firstmedia.com/api/content/tv-guide/list?date=${date.format('DD/MM/YYYY')}&channel=${
       channel.site_id
     }&startTime=0&endTime=24`
   },
-  parser: function ({ content, channel }) {
+  parser({ content, channel, date }) {
     if (!content || !channel) return []
 
-    let programs = []
+    const programs = []
     const items = parseItems(content, channel.site_id)
-    items.forEach(item => {
-      programs.push({
-        title: parseTitle(item),
-        description: parseDescription(item),
-        start: parseStart(item).toISOString(),
-        stop: parseStop(item).toISOString()
+      .map(item => {
+        item.start = toDelta(item.date, item.startTime)
+        item.stop = toDelta(item.date, item.endTime)
+        return item
       })
+      .sort((a, b) => a.start - b.start)
+
+    const dt = date.tz('Asia/Jakarta').startOf('d')
+    let lastStop
+    items.forEach(item => {
+      if (lastStop === undefined || item.start >= lastStop) {
+        lastStop = item.stop
+        programs.push({
+          title: parseTitle(item),
+          description: parseDescription(item),
+          start: asDate(parseStart({ item, date: dt })),
+          stop: asDate(parseStop({ item, date: dt }))
+        })
+      }
     })
 
     return programs
@@ -66,10 +78,22 @@ function parseDescription(item) {
   return item.long_description
 }
 
-function parseStart(item) {
-  return dayjs.tz(item.startTime, 'YYYY-MM-DD HH:mm:ss', 'Asia/Jakarta')
+function parseStart({ item, date }) {
+  return date.add(item.start, 'ms')
 }
 
-function parseStop(item) {
-  return dayjs.tz(item.endTime, 'YYYY-MM-DD HH:mm:ss', 'Asia/Jakarta')
+function parseStop({ item, date }) {
+  return date.add(item.stop, 'ms')
+}
+
+function toDelta(from, to) {
+  return toDate(to).diff(toDate(from), 'milliseconds')
+}
+
+function toDate(date) {
+  return dayjs(date, 'YYYY-MM-DD HH:mm:ss')
+}
+
+function asDate(date) {
+  return date.toISOString()
 }
