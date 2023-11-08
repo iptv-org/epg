@@ -9,12 +9,12 @@ module.exports = {
   site: 'firstmedia.com',
   days: 2,
   url({ channel, date }) {
-    return `https://api.firstmedia.com/api/content/tv-guide/list?date=${date.format('DD/MM/YYYY')}&channel=${
-      channel.site_id
-    }&startTime=0&endTime=24`
+    return `https://api.firstmedia.com/api/content/tv-guide/list?date=${date.format(
+      'DD/MM/YYYY'
+    )}&channel=${channel.site_id}&startTime=0&endTime=24`
   },
   parser({ content, channel, date }) {
-    if (!content || !channel) return []
+    if (!content || !channel || !date) return []
 
     const programs = []
     const items = parseItems(content, channel.site_id)
@@ -45,7 +45,11 @@ module.exports = {
     const axios = require('axios')
     const cheerio = require('cheerio')
     const result = await axios
-      .get(`https://api.firstmedia.com/api/content/tv-guide/list?date=${dayjs().format('DD/MM/YYYY')}&channel=&startTime=0&endTime=24`)
+      .get(
+        `https://api.firstmedia.com/api/content/tv-guide/list?date=${dayjs().format(
+          'DD/MM/YYYY'
+        )}&channel=&startTime=0&endTime=24`
+      )
       .then(response => response.data)
       .catch(console.error)
 
