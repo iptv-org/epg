@@ -11,7 +11,7 @@ module.exports = {
   url({ channel, date }) {
     return `https://api.firstmedia.com/api/content/tv-guide/list?date=${date.format(
       'DD/MM/YYYY'
-    )}&channel=${channel.site_id}&startTime=0&endTime=24`
+    )}&channel=${channel.site_id}&startTime=1&endTime=24`
   },
   parser({ content, channel, date }) {
     if (!content || !channel || !date) return []

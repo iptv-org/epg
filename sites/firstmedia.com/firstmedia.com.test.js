@@ -8,7 +8,7 @@ const channel = { site_id: '243', xmltv_id: 'AlJazeeraEnglish.qa', lang: 'id' }
 
 it('can generate valid url', () => {
   expect(url({ channel, date })).toBe(
-    'https://api.firstmedia.com/api/content/tv-guide/list?date=08/11/2023&channel=243&startTime=0&endTime=24'
+    'https://api.firstmedia.com/api/content/tv-guide/list?date=08/11/2023&channel=243&startTime=1&endTime=24'
   )
 })
 
