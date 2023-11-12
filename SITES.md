@@ -39,7 +39,7 @@
 | elcinema.com               | 🟢     |                                                                     |
 | ena.skylifetv.co.kr        | 🟢     |                                                                     |
 | entertainment.ie           | 🟢     |                                                                     |
-| epg.i-cable.com            | 🟢     |                                                                     |
+| epg.i-cable.com            | 🟡     | https://github.com/iptv-org/epg/issues/2228                         |
 | firstmedia.com             | 🟢     |                                                                     |
 | flixed.io                  | 🟢     |                                                                     |
 | foxsports.com.au           | 🟢     |                                                                     |
