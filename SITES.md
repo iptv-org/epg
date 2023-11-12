@@ -115,6 +115,7 @@
 | rtp.pt                     | 🟢     |                                                                     |
 | ruv.is                     | 🟢     |                                                                     |
 | sat.tv                     | 🟢     |                                                                     |
+| shahid.mbc.net             | 🟢     |                                                                     |
 | siba.com.co                | 🟢     |                                                                     |
 | singtel.com                | 🟢     |                                                                     |
 | sjonvarp.is                | 🟢     |                                                                     |
