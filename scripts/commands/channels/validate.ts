@@ -51,7 +51,7 @@ async function main() {
     const bufferBySiteId = new Dictionary()
     const errors: ValidationError[] = []
     parsedChannels.forEach((channel: Channel) => {
-      const bufferId: string = `${channel.xmltv_id}:${channel.lang}`
+      const bufferId: string = `${channel.xmltv_id}:${channel.lang}:${channel.site_id}`
       if (bufferById.missing(bufferId)) {
         bufferById.set(bufferId, true)
       } else {
