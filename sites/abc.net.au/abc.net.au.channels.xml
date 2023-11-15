@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <!-- <channel site="abc.net.au" lang="en" xmltv_id="ABCTV.au" site_id="ABCHD">ABC TV HD</channel> -->
-  <!-- <channel site="abc.net.au" lang="en" xmltv_id="Channel10.au" site_id="TENHD">Channel 10 HD</channel> -->
-  <!-- <channel site="abc.net.au" lang="en" xmltv_id="Channel7.au" site_id="7HD">Channel 7 HD</channel> -->
-  <!-- <channel site="abc.net.au" lang="en" xmltv_id="Channel9.au" site_id="9HD">Channel 9 HD</channel> -->
-  <!-- <channel site="abc.net.au" lang="en" xmltv_id="SBS.au" site_id="SBSHD">SBS HD</channel> -->
-  <channel site="abc.net.au" lang="en" xmltv_id="10Bold.au" site_id="ONE">10 Bold</channel>
-  <channel site="abc.net.au" lang="en" xmltv_id="10Peach.au" site_id="11">10 Peach</channel>
-  <channel site="abc.net.au" lang="en" xmltv_id="10Shake.au" site_id="SHAKE">10 Shake</channel>
-  <channel site="abc.net.au" lang="en" xmltv_id="7flix.au" site_id="7flix">7flix</channel>
-  <channel site="abc.net.au" lang="en" xmltv_id="7mate.au" site_id="7MATE">7mate</channel>
-  <channel site="abc.net.au" lang="en" xmltv_id="7two.au" site_id="7TWO">7two</channel>
-  <channel site="abc.net.au" lang="en" xmltv_id="9Gem.au" site_id="GEM">9 Gem</channel>
-  <channel site="abc.net.au" lang="en" xmltv_id="9Go.au" site_id="GO">9 Go!</channel>
-  <channel site="abc.net.au" lang="en" xmltv_id="9Life.au" site_id="9Life">9 Life</channel>
-  <channel site="abc.net.au" lang="en" xmltv_id="9Rush.au" site_id="9Rush">9 Rush</channel>
-  <channel site="abc.net.au" lang="en" xmltv_id="ABCKids.au" site_id="ABC4KIDS">ABC Kids</channel>
-  <channel site="abc.net.au" lang="en" xmltv_id="ABCMe.au" site_id="ABC3">ABC ME</channel>
-  <channel site="abc.net.au" lang="en" xmltv_id="ABCNewsAustralia.au" site_id="ABCN">ABC News</channel>
-  <channel site="abc.net.au" lang="en" xmltv_id="ABCTV.au" site_id="ABC1">ABC TV</channel>
-  <channel site="abc.net.au" lang="en" xmltv_id="ABCTVPlus.au" site_id="ABC2">ABC TV Plus</channel>
-  <channel site="abc.net.au" lang="en" xmltv_id="Channel10.au" site_id="10">Channel 10</channel>
-  <channel site="abc.net.au" lang="en" xmltv_id="Channel7.au" site_id="7">Channel 7</channel>
-  <channel site="abc.net.au" lang="en" xmltv_id="Channel9.au" site_id="9">Channel 9</channel>
-  <channel site="abc.net.au" lang="en" xmltv_id="NITV.au" site_id="NITV">NITV</channel>
+  <channel site="abc.net.au" lang="en" xmltv_id="10BoldSydney.au" site_id="ONE">10 Bold</channel>
+  <channel site="abc.net.au" lang="en" xmltv_id="10PeachSydney.au" site_id="11">10 Peach</channel>
+  <channel site="abc.net.au" lang="en" xmltv_id="10ShakeSydney.au" site_id="SHAKE">10 Shake</channel>
+  <channel site="abc.net.au" lang="en" xmltv_id="7flixSydney.au" site_id="7flix">7flix</channel>
+  <channel site="abc.net.au" lang="en" xmltv_id="7mateSydney.au" site_id="7MATE">7mate</channel>
+  <channel site="abc.net.au" lang="en" xmltv_id="7twoSydney.au" site_id="7TWO">7two</channel>
+  <channel site="abc.net.au" lang="en" xmltv_id="9GemSydney.au" site_id="GEM">9 Gem</channel>
+  <channel site="abc.net.au" lang="en" xmltv_id="9GoSydney.au" site_id="GO">9 Go!</channel>
+  <channel site="abc.net.au" lang="en" xmltv_id="9LifeSydney.au" site_id="9Life">9 Life</channel>
+  <channel site="abc.net.au" lang="en" xmltv_id="9RushSydney.au" site_id="9Rush">9 Rush</channel>
+  <channel site="abc.net.au" lang="en" xmltv_id="ABCAustralia.au" site_id="ABCN">ABC News</channel>
+  <channel site="abc.net.au" lang="en" xmltv_id="ABCKidsSydney.au" site_id="ABC4KIDS">ABC Kids</channel>
+  <channel site="abc.net.au" lang="en" xmltv_id="ABCMESydney.au" site_id="ABC3">ABC ME</channel>
+  <channel site="abc.net.au" lang="en" xmltv_id="ABCTVPlusSydney.au" site_id="ABC2">ABC TV Plus</channel>
+  <channel site="abc.net.au" lang="en" xmltv_id="ABCTVSydney.au" site_id="ABC1">ABC TV</channel>
+  <channel site="abc.net.au" lang="en" xmltv_id="ABCTVSydney.au" site_id="ABCHD">ABC TV HD</channel>
+  <channel site="abc.net.au" lang="en" xmltv_id="Channel10Sydney.au" site_id="10">Channel 10</channel>
+  <channel site="abc.net.au" lang="en" xmltv_id="Channel10Sydney.au" site_id="TENHD">Channel 10 HD</channel>
+  <channel site="abc.net.au" lang="en" xmltv_id="Channel7Sydney.au" site_id="7">Channel 7</channel>
+  <channel site="abc.net.au" lang="en" xmltv_id="Channel7Sydney.au" site_id="7HD">Channel 7 HD</channel>
+  <channel site="abc.net.au" lang="en" xmltv_id="Channel9Sydney.au" site_id="9">Channel 9</channel>
+  <channel site="abc.net.au" lang="en" xmltv_id="Channel9Sydney.au" site_id="9HD">Channel 9 HD</channel>
+  <channel site="abc.net.au" lang="en" xmltv_id="NITVSydney.au" site_id="NITV">NITV</channel>
   <channel site="abc.net.au" lang="en" xmltv_id="Racingcom.au" site_id="RTV">Racing.com</channel>
-  <channel site="abc.net.au" lang="en" xmltv_id="SBS.au" site_id="SBS">SBS One</channel>
-  <channel site="abc.net.au" lang="en" xmltv_id="SBSFood.au" site_id="SBS3">SBS Food</channel>
-  <channel site="abc.net.au" lang="en" xmltv_id="SBSViceland.au" site_id="VICHD">SBS Viceland</channel>
-  <channel site="abc.net.au" lang="en" xmltv_id="SBSWorldMovies.au" site_id="SBS2">SBS World Movies</channel>
-  <channel site="abc.net.au" lang="en" xmltv_id="SBSWorldWatch.au" site_id="SBSWW">SBS World Watch</channel>
+  <channel site="abc.net.au" lang="en" xmltv_id="SBSFoodSydney.au" site_id="SBS3">SBS Food</channel>
+  <channel site="abc.net.au" lang="en" xmltv_id="SBSSydney.au" site_id="SBS">SBS One</channel>
+  <channel site="abc.net.au" lang="en" xmltv_id="SBSSydney.au" site_id="SBSHD">SBS HD</channel>
+  <channel site="abc.net.au" lang="en" xmltv_id="SBSVicelandSydney.au" site_id="VICHD">SBS Viceland</channel>
+  <channel site="abc.net.au" lang="en" xmltv_id="SBSWorldMoviesSydney.au" site_id="SBS2">SBS World Movies</channel>
+  <channel site="abc.net.au" lang="en" xmltv_id="SBSWorldWatchSydney.au" site_id="SBSWW">SBS World Watch</channel>
   <channel site="abc.net.au" lang="en" xmltv_id="SpreeTV.au" site_id="SPREE">Spree TV</channel>
   <channel site="abc.net.au" lang="en" xmltv_id="TVSN.au" site_id="TVSN">TSVN</channel>
 </channels>
