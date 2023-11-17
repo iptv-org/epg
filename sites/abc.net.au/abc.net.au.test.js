@@ -1,3 +1,4 @@
+// npm run channels:parse -- --config=./sites/abc.net.au/abc.net.au.config.js --output=./sites/abc.net.au/abc.net.au.channels.xml
 // npm run grab -- --site=abc.net.au
 
 const { parser, url } = require('./abc.net.au.config.js')
@@ -7,11 +8,11 @@ dayjs.extend(utc)
 
 const date = dayjs.utc('2022-12-22', 'YYYY-MM-DD').startOf('d')
 const channel = {
-  site_id: 'ABC1',
+  site_id: 'Sydney#ABC1',
   xmltv_id: 'ABCTV.au'
 }
 it('can generate valid url', () => {
-  expect(url({ date })).toBe('https://epg.abctv.net.au/processed/Sydney_2022-12-22.json')
+  expect(url({ date, channel })).toBe('https://epg.abctv.net.au/processed/Sydney_2022-12-22.json')
 })
 
 it('can parse response', () => {

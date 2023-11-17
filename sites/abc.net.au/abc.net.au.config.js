@@ -1,3 +1,4 @@
+const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
@@ -15,8 +16,10 @@ module.exports = {
       ttl: 60 * 60 * 1000 // 1 hour
     }
   },
-  url({ date }) {
-    return `https://epg.abctv.net.au/processed/Sydney_${date.format('YYYY-MM-DD')}.json`
+  url({ date, channel }) {
+    const [region] = channel.site_id.split('#')
+
+    return `https://epg.abctv.net.au/processed/${region}_${date.format('YYYY-MM-DD')}.json`
   },
   parser({ content, channel }) {
     let programs = []
@@ -37,6 +40,46 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels() {
+    const now = dayjs()
+    const regions = [
+      'Sydney',
+      'Melbourne',
+      'Brisbane',
+      'GoldCoast',
+      'Perth',
+      'Adelaide',
+      'Hobart',
+      'Darwin',
+      'Canberra',
+      'New South Wales',
+      'Victoria',
+      'Townsville',
+      'Queensland',
+      'Western Australia',
+      'South Australia',
+      'Tasmania',
+      'Northern Territory'
+    ]
+
+    let channels = []
+    for (let region of regions) {
+      const data = await axios
+        .get(`https://epg.abctv.net.au/processed/${region}_${now.format('YYYY-MM-DD')}.json`)
+        .then(r => r.data)
+        .catch(console.log)
+
+      for (let item of data.schedule) {
+        channels.push({
+          lang: 'en',
+          site_id: `${region}#${item.channel}`,
+          name: item.channel
+        })
+      }
+    }
+
+    return channels
   }
 }
 
@@ -46,7 +89,8 @@ function parseItems(content, channel) {
     if (!data) return []
     if (!Array.isArray(data.schedule)) return []
 
-    const channelData = data.schedule.find(i => i.channel == channel.site_id)
+    const [, channelId] = channel.site_id.split('#')
+    const channelData = data.schedule.find(i => i.channel == channelId)
     return channelData.listing && Array.isArray(channelData.listing) ? channelData.listing : []
   } catch (err) {
     return []
