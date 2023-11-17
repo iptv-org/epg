@@ -1,7 +1,7 @@
 import { Storage, Collection, DateTime, Logger } from '@freearhey/core'
 import { ChannelsParser, ConfigLoader, ApiChannel, Queue } from './'
 import { SITES_DIR, DATA_DIR } from '../constants'
-import { SiteConfig } from 'epg-grabber'
+import { Channel, SiteConfig } from 'epg-grabber'
 import path from 'path'
 import { GrabOptions } from '../commands/epg/grab'
 
@@ -47,6 +47,7 @@ export class QueueCreator {
       )
       if (found) {
         channel.logo = found.logo
+        channel.name = found.name
       }
 
       const days = this.options.days || config.days || 1

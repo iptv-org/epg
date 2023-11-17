@@ -32,7 +32,7 @@ module.exports = {
   },
   async channels({ country, lang }) {
     const data = await axios
-      .get(`https://cs-vcb.allente.${country}/epg/events?date=2021-11-17`)
+      .get(`https://cs-vcb.allente.${country}/epg/events?date=${dayjs().format('YYYY-MM-DD')}`)
       .then(r => r.data)
       .catch(console.log)
 

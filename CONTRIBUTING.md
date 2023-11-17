@@ -130,6 +130,7 @@ After that, all that remains is to commit all the changes and send a pull reques
 
 - `.github/`
   - `ISSUE_TEMPLATE/`: issue templates for the repository.
+  - `workflows`: contains [GitHub actions](https://docs.github.com/en/actions/quickstart) workflows.
   - `CODE_OF_CONDUCT.md`: rules you shouldn't break if you don't want to get banned.
 - `scripts/`: contains all scripts used in the repository.
 - `sites/`: contains configurations, channel lists and tests for all sites.
@@ -146,7 +147,9 @@ For scripts to work, you must have [Node.js](https://nodejs.org/en) installed on
 
 To run scripts use the `npm run <script-name>` command.
 
+- `act:update`: allows to test the [update](https://github.com/iptv-org/iptv/blob/master/.github/workflows/update.yml) workflow locally. Depends on [nektos/act](https://github.com/nektos/act).
 - `api:load`: downloads the latest channels data from the [iptv-org/api](https://github.com/iptv-org/api).
+- `api:generate`: generates a JSON file with all channels for the [iptv-org/api](https://github.com/iptv-org/api) repository.
 - `channels:lint`: сhecks the channel lists for syntax errors.
 - `channels:parse`: generates a list of channels based on the site configuration.
 - `channels:editor`: utility for quick channels markup.
