@@ -9,7 +9,6 @@ program
   .requiredOption('-c, --config <config>', 'Config file')
   .option('-s, --set [args...]', 'Set custom arguments')
   .option('-o, --output <output>', 'Output file')
-  .option('--clean', 'Delete the previous *.channels.xml if exists')
   .parse(process.argv)
 
 type ParseOptions = {
@@ -31,7 +30,7 @@ async function main() {
   const outputFilepath = options.output || `${dir}/${config.site}.channels.xml`
 
   let channels = new Collection()
-  if (!options.clean && (await storage.exists(outputFilepath))) {
+  if (await storage.exists(outputFilepath)) {
     channels = await parser.parse(outputFilepath)
   }
 
@@ -56,18 +55,27 @@ async function main() {
     return channel
   })
 
-  channels = channels
-    .mergeBy(
-      new Collection(parsedChannels),
-      (channel: Channel) => channel.site_id.toString() + channel.lang
+  let output = new Collection()
+  parsedChannels.forEach((channel: Channel) => {
+    const found: Channel | undefined = channels.first(
+      (_channel: Channel) => _channel.site_id === channel.site_id
     )
-    .orderBy([
-      (channel: Channel) => channel.lang,
-      (channel: Channel) => (channel.xmltv_id ? channel.xmltv_id.toLowerCase() : '_'),
-      (channel: Channel) => channel.site_id
-    ])
 
-  const xml = new XML(channels)
+    if (found) {
+      channel.name = found.name
+      channel.xmltv_id = found.xmltv_id
+    }
+
+    output.add(channel)
+  })
+
+  output = output.orderBy([
+    (channel: Channel) => channel.lang,
+    (channel: Channel) => (channel.xmltv_id ? channel.xmltv_id.toLowerCase() : '_'),
+    (channel: Channel) => channel.site_id
+  ])
+
+  const xml = new XML(output)
 
   await storage.save(outputFilepath, xml.toString())
 
