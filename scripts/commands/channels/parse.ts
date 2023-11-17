@@ -62,7 +62,6 @@ async function main() {
     )
 
     if (found) {
-      channel.name = found.name
       channel.xmltv_id = found.xmltv_id
     }
 
@@ -71,7 +70,7 @@ async function main() {
 
   output = output.orderBy([
     (channel: Channel) => channel.lang,
-    (channel: Channel) => (channel.xmltv_id ? channel.xmltv_id.toLowerCase() : '_'),
+    (channel: Channel) => (channel.xmltv_id ? channel.xmltv_id.toLowerCase() : '!'),
     (channel: Channel) => channel.site_id
   ])
 
