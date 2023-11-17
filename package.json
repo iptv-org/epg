@@ -1,7 +1,9 @@
 {
   "name": "epg",
   "scripts": {
+    "act:update": "act workflow_dispatch -W .github/workflows/update.yml",
     "api:load": "npx tsx scripts/commands/api/load.ts",
+    "api:generate": "npx tsx scripts/commands/api/generate.ts",
     "channels:lint": "npx tsx scripts/commands/channels/lint.ts",
     "channels:parse": "npx tsx scripts/commands/channels/parse.ts",
     "channels:editor": "npx tsx scripts/commands/channels/editor.ts",
