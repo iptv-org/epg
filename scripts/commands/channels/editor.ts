@@ -29,7 +29,7 @@ async function main() {
   const parser = new ChannelsParser({ storage })
 
   const parsedChannels = await parser.parse(filepath)
-  options = parsedChannels.map((channel: Channel) => {
+  options = parsedChannels.map((channel: Channel): { channel: Channel; delete: boolean } => {
     return {
       channel,
       delete: false
@@ -41,18 +41,18 @@ async function main() {
   const channels = new Collection(channelsContent).map(data => new ApiChannel(data))
 
   const buffer = new Dictionary()
-  options.forEach(async (option: { channel: Channel; delete: boolean }) => {
-    const channel = option.channel
+  for (let option of options.all()) {
+    const channel: Channel = option.channel
     if (channel.xmltv_id) {
       if (channel.xmltv_id !== '-') {
         buffer.set(`${channel.xmltv_id}/${channel.lang}`, true)
       }
-      return
+      continue
     }
     const choices = getOptions(channels, channel)
     const question: QuestionCollection = {
       name: 'option',
-      message: 'Choose an option:',
+      message: `Choose xmltv_id for "${channel.name}" (${channel.site_id}):`,
       type: 'list',
       choices,
       pageSize: 10
@@ -103,7 +103,7 @@ async function main() {
         }
       }
     })
-  })
+  }
 }
 
 main()
@@ -154,7 +154,7 @@ function getOptions(channels: Collection, channel: Channel) {
     const closed = _channel.closed ? `[closed:${_channel.closed}]` : ''
     const replacedBy = _channel.replacedBy ? `[replaced_by:${_channel.replacedBy}]` : ''
 
-    variants.add(`${_channel.name}${altNames} | ${_channel.id} ${closed}${replacedBy}[api]`)
+    variants.add(`${_channel.name}${altNames} | ${_channel.id}${closed}${replacedBy}`)
   })
   variants.add('Overwrite')
   variants.add('Skip')
