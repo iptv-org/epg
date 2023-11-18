@@ -58,7 +58,7 @@ async function main() {
   let output = new Collection()
   parsedChannels.forEach((channel: Channel) => {
     const found: Channel | undefined = channels.first(
-      (_channel: Channel) => _channel.site_id === channel.site_id
+      (_channel: Channel) => _channel.site_id == channel.site_id
     )
 
     if (found) {
