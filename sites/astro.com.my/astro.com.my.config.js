@@ -37,6 +37,20 @@ module.exports = {
     }
 
     return programs
+  },
+  async channels() {
+    const data = await axios
+      .get(`https://contenthub-api.eco.astro.com.my/channel/all.json`)
+      .then(r => r.data)
+      .catch(console.log)
+
+    return data.response.map(item => {
+      return {
+        lang: 'ms',
+        site_id: item.id,
+        name: item.title
+      }
+    })
   }
 }
 
