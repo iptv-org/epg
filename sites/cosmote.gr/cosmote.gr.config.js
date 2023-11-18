@@ -1,3 +1,4 @@
+const axios = require('axios')
 const cheerio = require('cheerio')
 const { DateTime } = require('luxon')
 
@@ -38,6 +39,30 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels() {
+    const data = await axios
+      .get(`https://www.cosmotetv.gr/portal/residential/program`)
+      .then(r => r.data)
+      .catch(console.log)
+
+    let channels = []
+    const $ = cheerio.load(data)
+    $('#program-channels-selectbox > option').each((i, el) => {
+      const value = $(el).attr('value')
+      if (!value || value == '-1') return
+
+      const url = new URL(decodeURIComponent(value))
+      const site_id = url.searchParams.get('_channelprogram_WAR_OTETVportlet_articleTitleUrl')
+
+      channels.push({
+        lang: 'el',
+        site_id,
+        name: $(el).text().trim()
+      })
+    })
+
+    return channels
   }
 }
 
