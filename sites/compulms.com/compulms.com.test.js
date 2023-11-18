@@ -1,6 +1,6 @@
-// npm run grab -- --site=energeek.cl
+// npm run grab -- --site=compulms.com
 
-const { parser, url } = require('./energeek.cl.config.js')
+const { parser, url } = require('./compulms.com.config.js')
 const fs = require('fs')
 const path = require('path')
 const dayjs = require('dayjs')
