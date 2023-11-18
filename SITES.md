@@ -23,7 +23,7 @@
 | chaines-tv.orange.fr       | 🟢     |                                             |
 | clickthecity.com           | 🟢     |                                             |
 | compulms.com               | 🟢     |                                             |
-| comteco.com.bo             | 🟢     |                                             |
+| comteco.com.bo             | 🟡     | https://github.com/iptv-org/epg/issues/2239 |
 | cosmote.gr                 | 🟢     |                                             |
 | cubmu.com                  | 🟢     |                                             |
 | delta.nl                   | 🟢     |                                             |
