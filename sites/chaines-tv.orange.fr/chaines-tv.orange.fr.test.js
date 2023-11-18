@@ -1,3 +1,4 @@
+// npm run channels:parse -- --config=./sites/chaines-tv.orange.fr/chaines-tv.orange.fr.config.js --output=./sites/chaines-tv.orange.fr/chaines-tv.orange.fr.channels.xml
 // npm run grab -- --site=chaines-tv.orange.fr
 
 const { parser, url } = require('./chaines-tv.orange.fr.config.js')
