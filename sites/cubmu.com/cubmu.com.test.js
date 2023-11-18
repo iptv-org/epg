@@ -1,3 +1,6 @@
+// [Geo-restricted] npm run channels:parse -- --config=./sites/cubmu.com/cubmu.com.config.js --output=./sites/cubmu.com/cubmu.com.channels.xml
+// npm run grab -- --site=cubmu.com
+
 const { url, parser } = require('./cubmu.com.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
@@ -23,7 +26,7 @@ it('can parse response', () => {
       stop: '2023-11-04T19:00:00.000Z',
       title: 'CNN Tech News',
       description:
-        "CNN Indonesia Tech News adalah berita teknologi yang membawa pemirsa ke dunia teknologi yang penuh dengan informasi, pendidikan, hiburan sampai informasi kesehatan terkini."
+        'CNN Indonesia Tech News adalah berita teknologi yang membawa pemirsa ke dunia teknologi yang penuh dengan informasi, pendidikan, hiburan sampai informasi kesehatan terkini.'
     }
   ])
 })
