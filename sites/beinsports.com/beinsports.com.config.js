@@ -19,9 +19,11 @@ module.exports = {
     }
   },
   url: function ({ date, channel }) {
-    return `https://www.beinsports.com/api/opta/tv-event?&startBefore=${date.add(1, 'd').format(
-    "YYYY-MM-DDTHH:mm:ss.SSS")}Z&endAfter=${date.format(
-    "YYYY-MM-DDTHH:mm:ss.SSS")}Z&channelIds=${channel.site_id}`
+    return `https://www.beinsports.com/api/opta/tv-event?&startBefore=${date
+      .add(1, 'd')
+      .format('YYYY-MM-DDTHH:mm:ss.SSS')}Z&endAfter=${date.format(
+      'YYYY-MM-DDTHH:mm:ss.SSS'
+    )}Z&channelIds=${channel.site_id}`
   },
   parser: function ({ content }) {
     let programs = []
@@ -39,6 +41,20 @@ module.exports = {
       })
     }
     return programs
+  },
+  async channels({ region, lang }) {
+    const data = await axios
+      .get(`https://www.beinsports.com/api/opta/tv-channel?region=${lang}-${region}`, this.request)
+      .then(r => r.data)
+      .catch(console.log)
+
+    return data.rows.map(item => {
+      return {
+        lang,
+        site_id: item.id,
+        name: item.name
+      }
+    })
   }
 }
 
