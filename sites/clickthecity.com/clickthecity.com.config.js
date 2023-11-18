@@ -59,6 +59,7 @@ module.exports = {
       const [, site_id] = url.match(/netid=(\d+)/) || [null, null]
 
       return {
+        lang: 'en',
         site_id,
         name
       }
