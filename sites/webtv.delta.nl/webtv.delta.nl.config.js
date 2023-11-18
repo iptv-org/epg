@@ -2,7 +2,7 @@ const axios = require('axios')
 const dayjs = require('dayjs')
 
 module.exports = {
-  site: 'delta.nl',
+  site: 'webtv.delta.nl',
   days: 2,
   url: function ({ channel, date }) {
     return `https://clientapi.tv.delta.nl/guide/channels/list?start=${date.unix()}&end=${date
