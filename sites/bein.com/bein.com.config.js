@@ -1,3 +1,5 @@
+const axios = require('axios')
+const dayjs = require('dayjs')
 const cheerio = require('cheerio')
 const { DateTime } = require('luxon')
 
@@ -50,6 +52,35 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels({ lang }) {
+    const categories = ['entertainment', 'sports']
+
+    let channels = []
+    for (let category of categories) {
+      const url = `https://www.bein.com/en/epg-ajax-template/?action=epg_fetch&offset=0&category=${category}&serviceidentity=bein.net&mins=00&cdate=${dayjs().format(
+        'YYYY-MM-DD'
+      )}&language=${lang.toUpperCase()}&postid=25356&loadindex=0`
+      const data = await axios
+        .get(url)
+        .then(r => r.data)
+        .catch(console.log)
+
+      const $ = cheerio.load(data)
+      $('.container-tvguide > div').each((i, el) => {
+        const id = $(el).attr('id')
+        if (!id || !/^channels_\d+/.test(id)) return
+        const [, channelId] = id.split('_')
+
+        channels.push({
+          lang,
+          site_id: `${category}#${channelId}`,
+          name: channelId
+        })
+      })
+    }
+
+    return channels
   }
 }
 
