@@ -1,7 +1,7 @@
 const parser = require('epg-parser')
 
 module.exports = {
-  site: 'compulms.com',
+  site: 'energeek.cl',
   days: 2,
   request: {
     cache: {
@@ -14,8 +14,8 @@ module.exports = {
     const items = parseItems(content, channel, date)
     items.forEach(item => {
       programs.push({
-        title: item.title?.[0].value,
-        description: item.desc?.[0].value,
+        title: item.title?.[0]?.value,
+        description: item.desc?.[0]?.value,
         icon: item.icon?.[0],
         start: item.start,
         stop: item.stop
