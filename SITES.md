@@ -17,7 +17,7 @@
 | bt.com                     | 🟡     | https://github.com/iptv-org/epg/issues/2221 |
 | cablego.com.pe             | 🟢     |                                             |
 | cableplus.com.uy           | 🟢     |                                             |
-| canalplus-caraibes.com     | 🟢     |                                             |
+| canalplus-caraibes.com     | 🟡     | https://github.com/iptv-org/epg/issues/2236 |
 | canalplus-haiti.com        | 🟢     |                                             |
 | canalplus-reunion.com      | 🟢     |                                             |
 | canalplus.com              | 🟢     |                                             |
