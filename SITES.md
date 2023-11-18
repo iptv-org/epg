@@ -18,8 +18,8 @@
 | cablego.com.pe             | 🟢     |                                             |
 | cableplus.com.uy           | 🟢     |                                             |
 | canalplus-caraibes.com     | 🟡     | https://github.com/iptv-org/epg/issues/2236 |
-| canalplus-haiti.com        | 🟢     |                                             |
-| canalplus-reunion.com      | 🟢     |                                             |
+| canalplus-haiti.com        | 🟡     | https://github.com/iptv-org/epg/issues/2237 |
+| canalplus-reunion.com      | 🟡     | https://github.com/iptv-org/epg/issues/2238 |
 | canalplus.com              | 🟢     |                                             |
 | cgates.lt                  | 🟢     |                                             |
 | chaines-tv.orange.fr       | 🟢     |                                             |
