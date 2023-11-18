@@ -46,7 +46,7 @@ module.exports = {
       .then(r => r.data)
       .catch(console.log)
     let $ = cheerio.load(html)
-    const items = $('.kanalas_wrap').toArray()
+    const items = $('.vc_tta-panel.vc_active .kanalas_wrap').toArray()
 
     return items.map(item => {
       const name = $(item).find('h6').text().trim()
