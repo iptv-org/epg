@@ -26,7 +26,6 @@
 | comteco.com.bo             | 🟡     | https://github.com/iptv-org/epg/issues/2239 |
 | cosmote.gr                 | 🟢     |                                             |
 | cubmu.com                  | 🟢     |                                             |
-| delta.nl                   | 🟢     |                                             |
 | digiturk.com.tr            | 🟢     |                                             |
 | directv.com                | 🟢     |                                             |
 | directv.com.ar             | 🟢     |                                             |
@@ -180,6 +179,7 @@
 | walesi.com.fj              | 🟢     |                                             |
 | watchyour.tv               | 🟢     |                                             |
 | wavve.com                  | 🟢     |                                             |
+| webtv.delta.nl             | 🟢     |                                             |
 | worldfishingnetwork.com    | 🟢     |                                             |
 | xumo.tv                    | 🟢     |                                             |
 | zap.co.ao                  | 🟢     |                                             |
