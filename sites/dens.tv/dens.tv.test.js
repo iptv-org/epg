@@ -1,3 +1,6 @@
+// npm run channels:parse -- --config=./sites/dens.tv/dens.tv.config.js --output=./sites/dens.tv/dens.tv.channels.xml
+// npm run grab -- --site=dens.tv
+
 const { url, parser } = require('./dens.tv.config.js')
 const fs = require('fs')
 const path = require('path')
@@ -25,13 +28,13 @@ it('can parse response', () => {
 
   expect(results[0]).toMatchObject({
     start: '2023-11-09T17:00:00.000Z',
-    stop : '2023-11-09T17:05:00.000Z',
+    stop: '2023-11-09T17:05:00.000Z',
     title: 'Follow Up'
   })
 
   expect(results[12]).toMatchObject({
     start: '2023-11-10T04:05:00.000Z',
-    stop : '2023-11-10T06:05:00.000Z',
+    stop: '2023-11-10T06:05:00.000Z',
     title: 'Metro Siang'
   })
 })
