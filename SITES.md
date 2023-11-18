@@ -13,7 +13,7 @@
 | astro.com.my               | 🟢     |                                             |
 | bein.com                   | 🟢     |                                             |
 | beinsports.com             | 🟢     |                                             |
-| berrymedia.co.kr           | 🟢     |                                             |
+| berrymedia.co.kr           | 🟡     | https://github.com/iptv-org/epg/issues/2235 |
 | bt.com                     | 🟡     | https://github.com/iptv-org/epg/issues/2221 |
 | cablego.com.pe             | 🟢     |                                             |
 | cableplus.com.uy           | 🟢     |                                             |
