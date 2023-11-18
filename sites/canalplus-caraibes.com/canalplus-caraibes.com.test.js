@@ -1,4 +1,4 @@
-// [Geo-blocked] node ./scripts/channels.js --config=./sites/canalplus-caraibes.com/canalplus-caraibes.com.config.js --output=./sites/canalplus-caraibes.com/canalplus-caraibes.com.channels.xml
+// [Geo-blocked] npm run channels:parse -- --config=./sites/canalplus-caraibes.com/canalplus-caraibes.com.config.js --output=./sites/canalplus-caraibes.com/canalplus-caraibes.com.channels.xml
 // npm run grab -- --site=canalplus-caraibes.com
 
 const { parser, url } = require('./canalplus-caraibes.com.config.js')
