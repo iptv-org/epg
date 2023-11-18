@@ -15,7 +15,8 @@ module.exports = {
   request: {
     method: 'POST',
     headers: {
-      'x-requested-with': 'XMLHttpRequest'
+      'x-requested-with': 'XMLHttpRequest',
+      cookie: '_nss=1'
     },
     cache: {
       ttl: 60 * 60 * 1000 // 1 hour
@@ -54,35 +55,33 @@ module.exports = {
     return programs
   },
   async channels() {
-    const promises = [0, 1, 2, 3, 4].map(page => {
-      return axios.post(
-        `https://cablego.com.pe/epg/default/2022-11-28?page=${page}&do=loadPage`,
-        null,
-        {
-          headers: {
-            'x-requested-with': 'XMLHttpRequest'
-          }
-        }
-      )
-    })
+    const pages = [0, 1, 2, 3, 4]
 
-    const channels = []
-    await Promise.allSettled(promises).then(results => {
-      results.forEach((r, page) => {
-        if (r.status === 'fulfilled') {
-          const html = r.value.data.snippets['snippet--channelGrid']
-          const $ = cheerio.load(html)
-          $('.epg-channel-strip').each((i, el) => {
-            const channelId = $(el).find('.epg-channel-logo').attr('id')
-            channels.push({
-              lang: 'es',
-              site_id: `${page}#${channelId}`,
-              name: $(el).find('img').attr('alt')
-            })
-          })
-        }
+    let channels = []
+    for (const page of pages) {
+      const url = `https://cablego.com.pe/epg/default/${dayjs().format(
+        'YYYY-MM-DD'
+      )}?page=${page}&do=loadPage`
+      const data = await axios
+        .post(url, null, {
+          headers: {
+            'x-requested-with': 'XMLHttpRequest',
+            cookie: '_nss=1'
+          }
+        })
+        .then(r => r.data)
+        .catch(console.log)
+
+      const $ = cheerio.load(data.snippets['snippet--channelGrid'])
+      $('.epg-channel-strip').each((i, el) => {
+        const channelId = $(el).find('.epg-channel-logo').attr('id')
+        channels.push({
+          lang: 'es',
+          site_id: `${page}#${channelId}`,
+          name: $(el).find('img').attr('alt')
+        })
       })
-    })
+    }
 
     return channels
   }
