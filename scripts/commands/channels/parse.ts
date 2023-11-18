@@ -63,6 +63,7 @@ async function main() {
 
     if (found) {
       channel.xmltv_id = found.xmltv_id
+      channel.lang = found.lang
     }
 
     output.add(channel)
