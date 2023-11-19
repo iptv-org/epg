@@ -1,3 +1,4 @@
+// npm run channels:parse -- --config=./sites/guidatv.sky.it/guidatv.sky.it.config.js --output=./sites/guidatv.sky.it/guidatv.sky.it.channels.xml
 // npm run grab -- --site=guidatv.sky.it
 
 const { parser, url } = require('./guidatv.sky.it.config.js')
