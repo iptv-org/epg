@@ -6,6 +6,7 @@ import { transliterate } from 'transliteration'
 import nodeCleanup from 'node-cleanup'
 import { program } from 'commander'
 import inquirer, { QuestionCollection } from 'inquirer'
+import sj from '@freearhey/search-js'
 
 program
   .argument('<filepath>', 'Path to *.channels.xml file to edit')
@@ -38,7 +39,8 @@ async function main() {
 
   const dataStorage = new Storage(DATA_DIR)
   const channelsContent = await dataStorage.json('channels.json')
-  const channels = new Collection(channelsContent).map(data => new ApiChannel(data))
+
+  const channelsIndex = sj.createIndex(channelsContent)
 
   const buffer = new Dictionary()
   for (let option of options.all()) {
@@ -49,7 +51,7 @@ async function main() {
       }
       continue
     }
-    const choices = getOptions(channels, channel)
+    const choices = getOptions(channelsIndex, channel)
     const question: QuestionCollection = {
       name: 'option',
       message: `Choose xmltv_id for "${channel.name}" (${channel.site_id}):`,
@@ -143,9 +145,10 @@ async function getInput(channel: Channel) {
   return { name, xmltv_id: input['xmltv_id'] }
 }
 
-function getOptions(channels: Collection, channel: Channel) {
+function getOptions(channelsIndex, channel: Channel) {
   const channelId = generateCode(channel.name, defaultCountry)
-  const similar = getSimilar(channels, channelId)
+  const query = channel.name.replace(/\s(SD|TV|HD)$/i, '')
+  const similar = channelsIndex.search(query).map(item => new ApiChannel(item))
 
   const variants = new Collection()
   variants.add(`${channel.name.trim()} | ${channelId}${newLabel}`)
@@ -160,14 +163,6 @@ function getOptions(channels: Collection, channel: Channel) {
   variants.add('Skip')
 
   return variants.all()
-}
-
-function getSimilar(channels: Collection, channelId: string) {
-  const normChannelId = channelId.split('.')[0].slice(0, 8).toLowerCase()
-
-  return channels.filter((channel: ApiChannel) =>
-    channel.id.split('.')[0].toLowerCase().startsWith(normChannelId)
-  )
 }
 
 function generateCode(name: string, country: string) {

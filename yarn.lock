@@ -381,6 +381,13 @@
     object-treeify "^2.1.1"
     signale "^1.4.0"
 
+"@freearhey/search-js@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.npmjs.org/@freearhey/search-js/-/search-js-0.1.1.tgz"
+  integrity sha512-nmXhqBg5lh6GxMT2g1hgmSc/pbXGw0P4ZxXaPt/cnuZYtvPHSo0CPOF65iNC9LEqvrrnLig4RFlG1dBDPNAU0g==
+  dependencies:
+    lodash "^4.17.21"
+
 "@humanwhocodes/config-array@^0.9.2":
   version "0.9.5"
   resolved "https://registry.npmjs.org/@humanwhocodes/config-array/-/config-array-0.9.5.tgz"
