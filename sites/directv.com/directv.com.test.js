@@ -1,5 +1,5 @@
-// node ./scripts/commands/parse-channels.js --config=./sites/directv.com/directv.com.config.js --output=./sites/directv.com/directv.com.channels.xml --set=zip:10001
-// npm run grab -- --site=directv.com
+// [Geo-blocked] npm run channels:parse -- --config=./sites/directv.com/directv.com.config.js --output=./sites/directv.com/directv.com.channels.xml --set=zip:10001
+// [Geo-blocked] npm run grab -- --site=directv.com
 
 const { parser, url } = require('./directv.com.config.js')
 const fs = require('fs')
