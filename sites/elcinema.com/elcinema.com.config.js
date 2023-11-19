@@ -35,6 +35,30 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels({ lang }) {
+    const axios = require('axios')
+    const data = await axios
+      .get(`https://elcinema.com/${lang}/tvguide/`)
+      .then(r => r.data)
+      .catch(console.log)
+
+    const $ = cheerio.load(data)
+
+    return $('.tv-line')
+      .map((i, el) => {
+        const link = $(el).find('.channel > div > div.hide-for-small-only > a')
+        const name = $(link).text()
+        const href = $(link).attr('href')
+        const [, site_id] = href.match(/\/(\d+)\/$/)
+
+        return {
+          lang,
+          site_id,
+          name
+        }
+      })
+      .get()
   }
 }
 
