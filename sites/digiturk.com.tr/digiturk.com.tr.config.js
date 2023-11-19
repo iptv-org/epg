@@ -31,6 +31,7 @@ dayjs.extend(timezone)
 module.exports = {
   site: 'digiturk.com.tr',
   days: 2,
+  delay: 1000, // NOTE: under heavy load the server starts blocking requests
   url: function ({ date, channel }) {
     return `https://www.digiturk.com.tr/_Ajax/getBroadcast.aspx?channelNo=${
       channel.site_id
@@ -58,6 +59,35 @@ module.exports = {
     programs = _.sortBy(programs, 'start')
 
     return programs
+  },
+  async channels() {
+    const axios = require('axios')
+    const cheerio = require('cheerio')
+
+    const data = await axios
+      .get(`https://www.digiturk.com.tr/`, {
+        headers: {
+          'User-Agent':
+            'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36'
+        }
+      })
+      .then(r => r.data)
+      .catch(console.log)
+
+    let channels = []
+    const $ = cheerio.load(data)
+    $('#chosen-select-channel > option').each((i, el) => {
+      const site_id = $(el).attr('value')
+      const name = $(el).text().trim()
+
+      channels.push({
+        lang: 'tr',
+        site_id,
+        name
+      })
+    })
+
+    return channels
   }
 }
 

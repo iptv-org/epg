@@ -1,3 +1,4 @@
+// npm run channels:parse -- --config=./sites/digiturk.com.tr/digiturk.com.tr.config.js --output=./sites/digiturk.com.tr/digiturk.com.tr.channels.xml
 // npm run grab -- --site=digiturk.com.tr
 
 const { parser, url } = require('./digiturk.com.tr.config.js')
