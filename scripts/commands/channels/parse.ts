@@ -70,7 +70,7 @@ async function main() {
   })
 
   output = output.orderBy([
-    (channel: Channel) => channel.lang,
+    (channel: Channel) => channel.lang || '_',
     (channel: Channel) => (channel.xmltv_id ? channel.xmltv_id.toLowerCase() : '0'),
     (channel: Channel) => channel.site_id
   ])
