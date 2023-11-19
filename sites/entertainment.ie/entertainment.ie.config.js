@@ -46,6 +46,7 @@ module.exports = {
 
     return channels.map(c => {
       return {
+        lang: 'en',
         site_id: c.slug,
         name: c.name
       }
