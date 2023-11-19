@@ -46,7 +46,7 @@ module.exports = {
   },
   async channels({ country }) {
     const data = await axios
-      .get(`${API_ENDPOINT}/GetProgrammes?d=2022-03-10&package=DStv%20Premium&country=${country}`)
+      .get(`${API_ENDPOINT}/GetProgrammes?d=${dayjs().format('YYYY-MM-DD')}&country=${country}`)
       .then(r => r.data)
       .catch(console.log)
 

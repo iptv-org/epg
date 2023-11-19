@@ -1,4 +1,5 @@
-// npm run channels:parse -- --config=./sites/dstv.com/dstv.com.config.js --output=./sites/dstv.com/dstv.com.channels.xml --set=country:zaf
+// npm run channels:parse -- --config=./sites/dstv.com/dstv.com.config.js --output=./sites/dstv.com/dstv.com_nga.channels.xml --set=country:nga
+// npm run channels:parse -- --config=./sites/dstv.com/dstv.com.config.js --output=./sites/dstv.com/dstv.com_zaf.channels.xml --set=country:zaf
 // npm run grab -- --site=dstv.com
 
 const { parser, url } = require('./dstv.com.config.js')
