@@ -49,19 +49,22 @@ module.exports = {
     const data = await axios
       .get('https://www.foxtel.com.au/webepg/ws/foxtel/channels?regionId=8336', {
         headers: {
-          'Accept-Language': 'en-US,en;',
-          Cookie: 'AAMC_foxtel_0=REGION|6'
+          'User-Agent': 'insomnia/2022.7.5'
         }
       })
       .then(r => r.data)
       .catch(console.log)
 
-    return data.channels.forEach(item => {
-      let name = item.name.replace(/\+/g, '-').replace(/&/g, '')
-      const slug = name.replace(/[^a-z0-9\s]/gi, '').replace(/[^a-z0-9]/i, '-')
+    return data.channels.map(item => {
+      const slug = item.name
+        .replace(/\+/g, '-')
+        .replace(/&/g, '')
+        .replace(/[^a-z0-9\s]/gi, '')
+        .replace(/\s/g, '-')
 
       return {
-        name: item.name.replace(/&/g, '&amp;'),
+        lang: 'en',
+        name: item.name,
         site_id: `${slug}/${item.channelTag}`
       }
     })
