@@ -1,4 +1,4 @@
-// npm run grab -- --site=directv.com.uy
+// [Geo-blocked] npm run grab -- --site=directv.com.uy
 
 const { parser, url, request } = require('./directv.com.uy.config.js')
 const fs = require('fs')
