@@ -151,7 +151,7 @@ function getOptions(channels: Collection, channel: Channel) {
   variants.add(`${channel.name.trim()} | ${channelId}${newLabel}`)
   similar.forEach((_channel: ApiChannel) => {
     const altNames = _channel.altNames.notEmpty() ? ` (${_channel.altNames.join(',')})` : ''
-    const closed = _channel.closed ? `[closed:${_channel.closed}]` : ''
+    const closed = _channel.closed ? ` [closed:${_channel.closed}]` : ''
     const replacedBy = _channel.replacedBy ? `[replaced_by:${_channel.replacedBy}]` : ''
 
     variants.add(`${_channel.name}${altNames} | ${_channel.id}${closed}${replacedBy}`)
