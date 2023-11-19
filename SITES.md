@@ -45,7 +45,6 @@
 | gatotv.com                 | 🟢     |                                             |
 | getafteritmedia.com        | 🟢     |                                             |
 | guidatv.sky.it             | 🟢     |                                             |
-| guide.dstv.com             | 🟢     |                                             |
 | hd-plus.de                 | 🟡     | https://github.com/iptv-org/epg/issues/2173 |
 | horizon.tv                 | 🟢     |                                             |
 | i.mjh.nz                   | 🟢     |                                             |
