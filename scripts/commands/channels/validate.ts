@@ -59,10 +59,23 @@ async function main() {
         totalErrors++
       }
 
-      if (channels.missing((_channel: ApiChannel) => _channel.id === channel.xmltv_id)) {
+      const foundChannel = channels.first(
+        (_channel: ApiChannel) => _channel.id === channel.xmltv_id
+      )
+      if (!foundChannel) {
         errors.push({ type: 'wrong_xmltv_id', ...channel })
         totalErrors++
       }
+
+      // if (foundChannel && foundChannel.replacedBy) {
+      //   errors.push({ type: 'replaced', ...channel })
+      //   totalErrors++
+      // }
+
+      // if (foundChannel && foundChannel.closed && !foundChannel.replacedBy) {
+      //   errors.push({ type: 'closed', ...channel })
+      //   totalErrors++
+      // }
 
       if (!langs.where('1', channel.lang)) {
         errors.push({ type: 'wrong_lang', ...channel })
