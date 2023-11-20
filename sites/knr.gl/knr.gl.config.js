@@ -11,8 +11,20 @@ dayjs.extend(customParseFormat)
 module.exports = {
   site: 'knr.gl',
   days: 2,
-  url({ date }) {
-    return `https://knr.gl/admin/knr/TV/program/${date.format('YYYY-MM-DD')}/gl`
+  url: 'https://knr.gl/kl/tv/aallakaatitassat?ajax_form=1',
+  request: {
+    method: 'POST',
+    headers: {
+      'content-type': 'application/x-www-form-urlencoded; charset=UTF-8'
+    },
+    data({ date }) {
+      const params = new URLSearchParams()
+      params.append('list_date', date.format('YYYY-MM-DD'))
+      params.append('form_id', 'knr_radio_tv_program_overview_form')
+      params.append('_triggering_element_name', 'list_date')
+
+      return params
+    }
   },
   parser({ content, date }) {
     let programs = []
@@ -37,27 +49,29 @@ module.exports = {
 function parseStart(item, date) {
   const time = `${date.format('YYYY-MM-DD')} ${item.time}`
 
-  return dayjs.tz(time, 'YYYY-MM-DD HH:mm', 'America/Godthab')
+  return dayjs.tz(time, 'YYYY-MM-DD HH:mm', 'America/Nuuk')
 }
 
 function parseItems(content) {
   const data = JSON.parse(content)
-  if (!data.program_list) return []
-  const $ = cheerio.load(data.program_list)
+  if (data.length !== 1 || !data[0].data) return []
+  const $ = cheerio.load(data[0].data)
+
   const items = []
-  $('dt').each(function () {
-    const titleElem = $(this)
-      .contents()
-      .filter(function () {
-        return this.nodeType === 3
-      })[0]
+  $('.overview-program__list__item').each((i, el) => {
+    const title = $(el).find('.overview-program__text').text().trim()
+    const description = $(el)
+      .find('.overview-program__sublist__item')
+      .first()
+      .text()
+      .trim()
+      .replace(/(\r\n|\n|\r)/gm, ' ')
+    const time = $(el).find('.overview-program__time').text().trim()
+
     items.push({
-      title: titleElem.nodeValue.trim(),
-      description: $(this)
-        .next('dd')
-        .text()
-        .replace(/(\r\n|\n|\r)/gm, ' '),
-      time: $(this, 'strong').text().trim()
+      title,
+      description,
+      time
     })
   })
 
