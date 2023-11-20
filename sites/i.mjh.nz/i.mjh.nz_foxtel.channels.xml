@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <!-- <channel site="i.mjh.nz" lang="en" xmltv_id="" site_id="Foxtel/epg#FXW">SKY Weather</channel> -->
-  <!-- <channel site="i.mjh.nz" lang="en" xmltv_id="" site_id="Foxtel/epg#NPO">Looney Tunes Kids Pop-Up Channel)</channel> -->
-  <!-- <channel site="i.mjh.nz" lang="en" xmltv_id="" site_id="Foxtel/epg#PBS">PBS KIDS</channel> -->
-  <channel site="i.mjh.nz" lang="en" xmltv_id="AE.au" site_id="Foxtel/epg#AES">A&amp;E</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="AE.au" site_id="Foxtel/epg#AES">A&amp;amp;E</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="AnimalPlanet.au" site_id="Foxtel/epg#ANI">Animal Planet</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="BBCEarth.au" site_id="Foxtel/epg#BBK">BBC Earth</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="BBCFirst.au" site_id="Foxtel/epg#BSF">BBC First</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="BBCNewsAsiaPacific.uk" site_id="Foxtel/epg#BBC">BBC News</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="BBCUKTV.au" site_id="Foxtel/epg#UKT">UKTV</channel>
-  <channel site="i.mjh.nz" lang="en" xmltv_id="BBCNewsAsiaPacific.uk" site_id="Foxtel/epg#BBC">BBC World News</channel>
-  <channel site="i.mjh.nz" lang="en" xmltv_id="beINSports1.au" site_id="Foxtel/epg#B1E">beIN SPORTS 1</channel>
-  <channel site="i.mjh.nz" lang="en" xmltv_id="beINSports2.au" site_id="Foxtel/epg#B2E">beIN SPORTS 2</channel>
-  <channel site="i.mjh.nz" lang="en" xmltv_id="beINSports3.au" site_id="Foxtel/epg#B3E">beIN SPORTS 3</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="BloombergTVAustralia.au" site_id="Foxtel/epg#BLM">Bloomberg Television</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="Boomerang.au" site_id="Foxtel/epg#BOO">Boomerang</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="BoxSets.au" site_id="Foxtel/epg#BXS">BoxSets</channel>
@@ -24,25 +18,24 @@
   <channel site="i.mjh.nz" lang="en" xmltv_id="CrimePlusInvestigation.au" site_id="Foxtel/epg#CIN">CRIME+INVESTIGATION</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="DiscoveryChannel.au" site_id="Foxtel/epg#DIS">Discovery Channel</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="DiscoveryTurbo.au" site_id="Foxtel/epg#DIT">Discovery Turbo</channel>
-  <channel site="i.mjh.nz" lang="en" xmltv_id="DreamWorksChannelAsia.us" site_id="Foxtel/epg#DRM">DreamWorks</channel>
-  <channel site="i.mjh.nz" lang="en" xmltv_id="E.au" site_id="Foxtel/epg#ETV">E!</channel>
-  <channel site="i.mjh.nz" lang="en" xmltv_id="ESPN2.au" site_id="Foxtel/epg#ES2">ESPN2</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="Docos.au" site_id="Foxtel/epg#HAR">Docos HD</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="DoctorWho.us" site_id="Foxtel/epg#UP2">Doctor Who</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="DreamWorksChannel.au" site_id="Foxtel/epg#DRM">DreamWorks</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="ESPN.au" site_id="Foxtel/epg#ESP">ESPN</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="ESPN2.au" site_id="Foxtel/epg#ES2">ESPN2</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="Fox8.au" site_id="Foxtel/epg#FOX">FOX8</channel>
-  <channel site="i.mjh.nz" lang="en" xmltv_id="FoxArena.au" site_id="Foxtel/epg#ARN">FOX ARENA</channel>
-  <channel site="i.mjh.nz" lang="en" xmltv_id="FoxClassics.au" site_id="Foxtel/epg#FKC">FOX Classics</channel>
-  <channel site="i.mjh.nz" lang="en" xmltv_id="FoxComedy.au" site_id="Foxtel/epg#HIT">FOX Comedy</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="Arena.au" site_id="Foxtel/epg#ARN">Arena</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="Classics.au" site_id="Foxtel/epg#FKC">Classics</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="Comedy.au" site_id="Foxtel/epg#HIT">Comedy</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="FoxCricket.au" site_id="Foxtel/epg#FS1">FOX CRICKET</channel>
-  <channel site="i.mjh.nz" lang="en" xmltv_id="FoxCrime.au" site_id="Foxtel/epg#IOI">FOX Crime</channel>
-  <channel site="i.mjh.nz" lang="en" xmltv_id="Docos.au" site_id="Foxtel/epg#HAR">FOX DOCOS</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="Crime.au" site_id="Foxtel/epg#IOI">Crime</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="FoxFooty.au" site_id="Foxtel/epg#FAF">FOX Footy</channel>
-  <channel site="i.mjh.nz" lang="en" xmltv_id="FoxFunny.au" site_id="Foxtel/epg#FFS">FOX Funny</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="FoxLeague.au" site_id="Foxtel/epg#SP2">FOX League</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="FoxNewsChannel.us" site_id="Foxtel/epg#FNC">FOX News</channel>
-  <channel site="i.mjh.nz" lang="en" xmltv_id="FoxOne.au" site_id="Foxtel/epg#F1S">FOX One</channel>
-  <channel site="i.mjh.nz" lang="en" xmltv_id="FoxSciFi.au" site_id="Foxtel/epg#FIS">FOX Sci Fi</channel>
-  <channel site="i.mjh.nz" lang="en" xmltv_id="FoxShowcase.au" site_id="Foxtel/epg#SHC">FOX SHOWCASE</channel>
-  <channel site="i.mjh.nz" lang="en" xmltv_id="FoxSleuth.au" site_id="Foxtel/epg#FSU">FOX Sleuth</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="FoxtelOne.au" site_id="Foxtel/epg#F1S">Foxtel One</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="SciFi.au" site_id="Foxtel/epg#FIS">SciFi</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="Showcase.au" site_id="Foxtel/epg#SHC">Showcase</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="Sleuth.au" site_id="Foxtel/epg#FSU">Sleuth</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="FoxSports503.au" site_id="Foxtel/epg#FS3">Fox Sports 503</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="FoxSports505.au" site_id="Foxtel/epg#FSP">Fox Sports 505</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="FoxSports506.au" site_id="Foxtel/epg#SPS">Fox Sports 506</channel>
@@ -54,7 +47,6 @@
   <channel site="i.mjh.nz" lang="en" xmltv_id="FoxtelMoviesFamily.au" site_id="Foxtel/epg#SHF">Movies Family</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="FoxtelMoviesGreats.au" site_id="Foxtel/epg#GRR">Movies Greats</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="FoxtelMoviesHits.au" site_id="Foxtel/epg#MVS">Movies Hits</channel>
-  <channel site="i.mjh.nz" lang="en" xmltv_id="FoxtelMoviesKids.au" site_id="Foxtel/epg#MO9">Movies Kids</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="FoxtelMoviesPremiere.au" site_id="Foxtel/epg#SHO">Movies Premiere</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="FoxtelMoviesRomance.au" site_id="Foxtel/epg#SHD">Movies Romance</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="FoxtelMoviesThriller.au" site_id="Foxtel/epg#SHH">Movies Thriller</channel>
@@ -65,22 +57,22 @@
   <channel site="i.mjh.nz" lang="en" xmltv_id="LifestyleFood.au" site_id="Foxtel/epg#FOD">LifeStyle Food</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="LifestyleHome.au" site_id="Foxtel/epg#LHO">LifeStyle Home</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="LMN.au" site_id="Foxtel/epg#LMS">LMN</channel>
-  <channel site="i.mjh.nz" lang="en" xmltv_id="MTV.au" site_id="Foxtel/epg#MTV">MTV</channel>
-  <channel site="i.mjh.nz" lang="en" xmltv_id="MTVClassic.au" site_id="Foxtel/epg#MTC">MTV Classic</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="MSNBC.us" site_id="Foxtel/epg#MSN">MSNBC</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="MTVClassic.au" site_id="Foxtel/epg#MTC">MTV 80s</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="MTVHits.au" site_id="Foxtel/epg#TMF">MTV Hits</channel>
-  <channel site="i.mjh.nz" lang="en" xmltv_id="NationalGeographic.au" site_id="Foxtel/epg#NGE">National Geographic</channel>
-  <channel site="i.mjh.nz" lang="en" xmltv_id="NationalGeographicWild.au" site_id="Foxtel/epg#NGW">Nat Geo WILD</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="NHKWorldJapan.jp" site_id="Foxtel/epg#NHK">NHK World</channel>
-  <channel site="i.mjh.nz" lang="en" xmltv_id="Nickelodeon.au" site_id="Foxtel/epg#NIC">Nickelodeon</channel>
-  <channel site="i.mjh.nz" lang="en" xmltv_id="NickJr.au" site_id="Foxtel/epg#NJR">Nick Jr.</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="NickMusic.au" site_id="Foxtel/epg#NMU">Nick Music</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="Racingcom.au" site_id="Foxtel/epg#RTV">RACING.COM</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="RealLife.au" site_id="Foxtel/epg#RLS">Real Life</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="SkyNews.uk" site_id="Foxtel/epg#SUK">SKY NEWS UK</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="SkyNewsAustralia.au" site_id="Foxtel/epg#SKY">SKY NEWS</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="SkyNewsExtra.au" site_id="Foxtel/epg#ASP">Sky News Extra</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="SkyNewsWeatherChannel.au" site_id="Foxtel/epg#FXW">SKY Weather</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="SkyRacing1.au" site_id="Foxtel/epg#SRA">Sky Racing 1</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="SkyRacing2.au" site_id="Foxtel/epg#SR2">Sky Racing 2</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="SkyThoroughbredCentral.au" site_id="Foxtel/epg#SRW">Sky Racing Thoroughbred Central</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="TLC.au" site_id="Foxtel/epg#DTA">TLC</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="TVSN.au" site_id="Foxtel/epg#TVS">TVSN</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="UniversalTV.au" site_id="Foxtel/epg#HAL">Universal TV</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="WWENetwork.us" site_id="Foxtel/epg#WWS">WWE</channel>
 </channels>

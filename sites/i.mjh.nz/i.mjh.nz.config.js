@@ -39,20 +39,91 @@ module.exports = {
 
     return programs
   },
-  async channels({ path, lang = 'en' }) {
-    let xml = await axios
-      .get(`${API_ENDPOINT}/${path}.xml`)
-      .then(r => r.data)
-      .catch(console.log)
-    let data = parser.parse(xml)
+  async channels({ provider }) {
+    const providers = {
+      pluto: [
+        { path: 'PlutoTV/br', lang: 'pt' },
+        { path: 'PlutoTV/ca', lang: 'en' },
+        { path: 'PlutoTV/cl', lang: 'es' },
+        { path: 'PlutoTV/de', lang: 'de' },
+        { path: 'PlutoTV/dk', lang: 'da' },
+        { path: 'PlutoTV/es', lang: 'es' },
+        { path: 'PlutoTV/fr', lang: 'fr' },
+        { path: 'PlutoTV/gb', lang: 'en' },
+        { path: 'PlutoTV/it', lang: 'it' },
+        { path: 'PlutoTV/mx', lang: 'es' },
+        { path: 'PlutoTV/no', lang: 'no' },
+        { path: 'PlutoTV/se', lang: 'sv' },
+        { path: 'PlutoTV/us', lang: 'en' }
+      ],
+      plex: [
+        { path: 'Plex/au', lang: 'en' },
+        { path: 'Plex/ca', lang: 'en' },
+        { path: 'Plex/es', lang: 'es' },
+        { path: 'Plex/mx', lang: 'es' },
+        { path: 'Plex/nz', lang: 'en' },
+        { path: 'Plex/us', lang: 'en' }
+      ],
+      samsung: [
+        { path: 'SamsungTVPlus/at', lang: 'de' },
+        { path: 'SamsungTVPlus/ca', lang: 'en' },
+        { path: 'SamsungTVPlus/ch', lang: 'de' },
+        { path: 'SamsungTVPlus/de', lang: 'de' },
+        { path: 'SamsungTVPlus/es', lang: 'es' },
+        { path: 'SamsungTVPlus/fr', lang: 'fr' },
+        { path: 'SamsungTVPlus/gb', lang: 'en' },
+        { path: 'SamsungTVPlus/in', lang: 'en' },
+        { path: 'SamsungTVPlus/it', lang: 'it' },
+        { path: 'SamsungTVPlus/kr', lang: 'ko' },
+        { path: 'SamsungTVPlus/us', lang: 'en' }
+      ],
+      skygo: [{ path: 'SkyGo/epg', lang: 'en' }],
+      stirr: [{ path: 'Stirr/all', lang: 'en' }],
+      foxtel: [{ path: 'Foxtel/epg', lang: 'en' }],
+      binge: [{ path: 'Binge/epg', lang: 'en' }],
+      dstv: [{ path: 'DStv/za', lang: 'en' }],
+      flash: [{ path: 'Flash/epg', lang: 'en' }],
+      kayo: [{ path: 'Kayo/epg', lang: 'en' }],
+      metv: [{ path: 'MeTV/epg', lang: 'en' }],
+      optus: [{ path: 'Optus/epg', lang: 'en' }],
+      pbs: [{ path: 'PBS/all', lang: 'en' }],
+      roku: [{ path: 'Roku/epg', lang: 'en' }],
+      singtel: [{ path: 'Singtel/epg', lang: 'en' }],
+      skysportnow: [{ path: 'SkySportNow/epg', lang: 'en' }],
+      au: [
+        { path: 'au/Adelaide/epg', lang: 'en' },
+        { path: 'au/Brisbane/epg', lang: 'en' },
+        { path: 'au/Canberra/epg', lang: 'en' },
+        { path: 'au/Darwin/epg', lang: 'en' },
+        { path: 'au/Hobart/epg', lang: 'en' },
+        { path: 'au/Melbourne/epg', lang: 'en' },
+        { path: 'au/Perth/epg', lang: 'en' },
+        { path: 'au/Sydney/epg', lang: 'en' }
+      ],
+      hgtvgo: [{ path: 'hgtv_go/epg', lang: 'en' }],
+      nz: [{ path: 'nz/epg', lang: 'en' }]
+    }
 
-    return data.channels.map(channel => {
-      return {
-        lang,
-        site_id: `${path}#${channel.id}`,
-        name: channel.name[0].value
-      }
-    })
+    let channels = []
+
+    const providerOptions = providers[provider]
+    for (const option of providerOptions) {
+      const xml = await axios
+        .get(`${API_ENDPOINT}/${option.path}.xml`)
+        .then(r => r.data)
+        .catch(console.log)
+      const data = parser.parse(xml)
+
+      data.channels.forEach(item => {
+        channels.push({
+          lang: option.lang,
+          site_id: `${option.path}#${item.id}`,
+          name: item.name[0].value
+        })
+      })
+    }
+
+    return channels
   }
 }
 

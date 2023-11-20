@@ -1,5 +1,23 @@
-// npm run channels:parse -- --config=./sites/i.mjh.nz/i.mjh.nz.config.js --output=./sites/i.mjh.nz/i.mjh.nz_pluto.channels.xml --set=path:PlutoTV/all
-// npm run grab -- --site=i.mjh.nz
+// npm run channels:parse -- --config=./sites/i.mjh.nz/i.mjh.nz.config.js --output=./sites/i.mjh.nz/i.mjh.nz_au.channels.xml --set=provider:au
+// npm run channels:parse -- --config=./sites/i.mjh.nz/i.mjh.nz.config.js --output=./sites/i.mjh.nz/i.mjh.nz_binge.channels.xml --set=provider:binge
+// npm run channels:parse -- --config=./sites/i.mjh.nz/i.mjh.nz.config.js --output=./sites/i.mjh.nz/i.mjh.nz_dstv.channels.xml --set=provider:dstv
+// npm run channels:parse -- --config=./sites/i.mjh.nz/i.mjh.nz.config.js --output=./sites/i.mjh.nz/i.mjh.nz_flash.channels.xml --set=provider:flash
+// npm run channels:parse -- --config=./sites/i.mjh.nz/i.mjh.nz.config.js --output=./sites/i.mjh.nz/i.mjh.nz_foxtel.channels.xml --set=provider:foxtel
+// npm run channels:parse -- --config=./sites/i.mjh.nz/i.mjh.nz.config.js --output=./sites/i.mjh.nz/i.mjh.nz_hgtvgo.channels.xml --set=provider:hgtvgo
+// npm run channels:parse -- --config=./sites/i.mjh.nz/i.mjh.nz.config.js --output=./sites/i.mjh.nz/i.mjh.nz_kayo.channels.xml --set=provider:kayo
+// npm run channels:parse -- --config=./sites/i.mjh.nz/i.mjh.nz.config.js --output=./sites/i.mjh.nz/i.mjh.nz_metv.channels.xml --set=provider:metv
+// npm run channels:parse -- --config=./sites/i.mjh.nz/i.mjh.nz.config.js --output=./sites/i.mjh.nz/i.mjh.nz_nz.channels.xml --set=provider:nz
+// npm run channels:parse -- --config=./sites/i.mjh.nz/i.mjh.nz.config.js --output=./sites/i.mjh.nz/i.mjh.nz_optus.channels.xml --set=provider:optus
+// npm run channels:parse -- --config=./sites/i.mjh.nz/i.mjh.nz.config.js --output=./sites/i.mjh.nz/i.mjh.nz_pbs.channels.xml --set=provider:pbs
+// npm run channels:parse -- --config=./sites/i.mjh.nz/i.mjh.nz.config.js --output=./sites/i.mjh.nz/i.mjh.nz_plex.channels.xml --set=provider:plex
+// npm run channels:parse -- --config=./sites/i.mjh.nz/i.mjh.nz.config.js --output=./sites/i.mjh.nz/i.mjh.nz_pluto.channels.xml --set=provider:pluto
+// npm run channels:parse -- --config=./sites/i.mjh.nz/i.mjh.nz.config.js --output=./sites/i.mjh.nz/i.mjh.nz_roku.channels.xml --set=provider:roku
+// npm run channels:parse -- --config=./sites/i.mjh.nz/i.mjh.nz.config.js --output=./sites/i.mjh.nz/i.mjh.nz_samsung.channels.xml --set=provider:samsung
+// npm run channels:parse -- --config=./sites/i.mjh.nz/i.mjh.nz.config.js --output=./sites/i.mjh.nz/i.mjh.nz_singtel.channels.xml --set=provider:singtel
+// npm run channels:parse -- --config=./sites/i.mjh.nz/i.mjh.nz.config.js --output=./sites/i.mjh.nz/i.mjh.nz_skygo.channels.xml --set=provider:skygo
+// npm run channels:parse -- --config=./sites/i.mjh.nz/i.mjh.nz.config.js --output=./sites/i.mjh.nz/i.mjh.nz_skysportnow.channels.xml --set=provider:skysportnow
+// npm run channels:parse -- --config=./sites/i.mjh.nz/i.mjh.nz.config.js --output=./sites/i.mjh.nz/i.mjh.nz_stirr.channels.xml --set=provider:stirr
+// npm run grab -- --channels=./sites/i.mjh.nz/i.mjh.nz_pluto.channels.xml
 
 const { parser, url } = require('./i.mjh.nz.config.js')
 const fs = require('fs')
