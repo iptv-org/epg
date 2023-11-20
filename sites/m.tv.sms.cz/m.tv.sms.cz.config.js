@@ -34,6 +34,28 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels() {
+    const axios = require('axios')
+    const data = await axios
+      .get(`https://m.tv.sms.cz/?zmen_stanice=true`)
+      .then(r => r.data)
+      .catch(console.log)
+
+    let channels = []
+    const $ = cheerio.load(data)
+    $('.stanice').each((i, el) => {
+      const name = $(el).attr('title')
+      const site_id = $(el).find('input').attr('value')
+
+      channels.push({
+        lang: 'cs',
+        site_id,
+        name
+      })
+    })
+
+    return channels
   }
 }
 
