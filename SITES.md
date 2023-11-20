@@ -56,7 +56,7 @@
 | knr.gl                     | 🟢     |                                             |
 | kplus.vn                   | 🟡     | https://github.com/iptv-org/epg/issues/2240 |
 | kvf.fo                     | 🟢     |                                             |
-| m.tv.sms.cz                | 🟢     |                                             |
+| m.tv.sms.cz                | 🟡     | https://github.com/iptv-org/epg/issues/2241 |
 | magentatv.at               | 🟢     |                                             |
 | magentatv.de               | 🟢     |                                             |
 | magticom.ge                | 🟢     |                                             |
