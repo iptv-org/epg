@@ -1,3 +1,4 @@
+// npm run channels:parse -- --config=./sites/ipko.com/ipko.com.config.js --output=./sites/ipko.com/ipko.com.channels.xml
 // npm run grab -- --site=ipko.com
 
 const { parser, url } = require('./ipko.com.config.js')

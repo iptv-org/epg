@@ -26,6 +26,25 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels() {
+    const axios = require('axios')
+
+    const data = await axios
+      .get(`https://www.ipko.com/epg/admin/channels.php`)
+      .then(r => r.data)
+      .catch(console.log)
+
+    let channels = []
+    data.element.forEach(item => {
+      channels.push({
+        lang: 'sq',
+        site_id: item.channel_id,
+        name: item.channel_name
+      })
+    })
+
+    return channels
   }
 }
 
