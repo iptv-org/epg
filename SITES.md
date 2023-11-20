@@ -54,7 +54,7 @@
 | ipko.com                   | 🟢     |                                             |
 | kan.org.il                 | 🟢     |                                             |
 | knr.gl                     | 🟢     |                                             |
-| kplus.vn                   | 🟢     |                                             |
+| kplus.vn                   | 🟡     | https://github.com/iptv-org/epg/issues/2240 |
 | kvf.fo                     | 🟢     |                                             |
 | m.tv.sms.cz                | 🟢     |                                             |
 | magentatv.at               | 🟢     |                                             |
