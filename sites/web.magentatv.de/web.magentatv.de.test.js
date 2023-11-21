@@ -1,7 +1,7 @@
-// npm run channels:parse -- --config=./sites/magentatv.de/magentatv.de.config.js --output=./sites/magentatv.de/magentatv.de.channels.xml
-// npm run grab -- --site=magentatv.de
+// npm run channels:parse -- --config=./sites/web.magentatv.de/web.magentatv.de.config.js --output=./sites/web.magentatv.de/web.magentatv.de.channels.xml
+// npm run grab -- --site=web.magentatv.de
 
-const { parser, url, request } = require('./magentatv.de.config.js')
+const { parser, url, request } = require('./web.magentatv.de.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -23,17 +23,17 @@ it('can generate valid request method', () => {
 })
 
 it('can generate valid request headers', async () => {
-  const headers = await request.headers(); 
+  const headers = await request.headers()
 
-  expect(headers).toHaveProperty('Cookie');
-  expect(headers).toHaveProperty('X_CSRFTOKEN');
-  
-  expect(headers.Cookie).toMatch(/JSESSIONID=[\dA-F]+;/i);
-  expect(headers.Cookie).toMatch(/CSESSIONID=[\dA-F]+;/i);
-  expect(headers.Cookie).toMatch(/CSRFSESSION=[\dA-F]+;/i);
-  expect(headers.Cookie).toMatch(/JSESSIONID=[\dA-F]+;/i);
-  expect(headers.X_CSRFTOKEN).toMatch(/[\dA-F]/i);
-});
+  expect(headers).toHaveProperty('Cookie')
+  expect(headers).toHaveProperty('X_CSRFTOKEN')
+
+  expect(headers.Cookie).toMatch(/JSESSIONID=[\dA-F]+;/i)
+  expect(headers.Cookie).toMatch(/CSESSIONID=[\dA-F]+;/i)
+  expect(headers.Cookie).toMatch(/CSRFSESSION=[\dA-F]+;/i)
+  expect(headers.Cookie).toMatch(/JSESSIONID=[\dA-F]+;/i)
+  expect(headers.X_CSRFTOKEN).toMatch(/[\dA-F]/i)
+})
 
 it('can generate valid request data', () => {
   expect(request.data({ channel, date })).toMatchObject({

@@ -2,27 +2,26 @@ const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
-const fetch = require('node-fetch');
+const fetch = require('node-fetch')
 
-
-let X_CSRFTOKEN;
-let COOKIE;
-const cookiesToExtract = ['JSESSIONID', 'CSESSIONID', 'CSRFSESSION'];
-const extractedCookies = {};
+let X_CSRFTOKEN
+let COOKIE
+const cookiesToExtract = ['JSESSIONID', 'CSESSIONID', 'CSRFSESSION']
+const extractedCookies = {}
 
 dayjs.extend(utc)
 dayjs.extend(customParseFormat)
 
 module.exports = {
-  site: 'magentatv.de',
+  site: 'web.magentatv.de',
   days: 2,
   url: 'https://api.prod.sngtv.magentatv.de/EPG/JSON/PlayBillList',
   request: {
     method: 'POST',
-     headers: function () {
-      return setHeaders();
+    headers: function () {
+      return setHeaders()
     },
-    
+
     data({ channel, date }) {
       return {
         count: -1,
@@ -98,7 +97,6 @@ module.exports = {
   }
 }
 
-
 function parseCategory(item) {
   return item.genres
     ? item.genres
@@ -129,63 +127,66 @@ function parseItems(content) {
   return data.playbilllist
 }
 
-// Function to try to fetch COOKIE and X_CSRFTOKEN  
+// Function to try to fetch COOKIE and X_CSRFTOKEN
 function fetchCookieAndToken() {
-  return fetch("https://api.prod.sngtv.magentatv.de/EPG/JSON/Authenticate?SID=firstup&T=Windows_chrome_118", {
-  "headers": {
-    "accept": "application/json, text/javascript, */*; q=0.01",
-    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
-    "sec-fetch-dest": "empty",
-    "sec-fetch-mode": "cors",
-    "sec-fetch-site": "same-origin",
-    "x-requested-with": "XMLHttpRequest",
-    "Referer": "https://api.prod.sngtv.magentatv.de/EPG/",
-    "Referrer-Policy": "strict-origin-when-cross-origin"
-  },
-  "body": "{\"terminalid\":\"00:00:00:00:00:00\",\"mac\":\"00:00:00:00:00:00\",\"terminaltype\":\"WEBTV\",\"utcEnable\":1,\"timezone\":\"Etc/GMT0\",\"userType\":3,\"terminalvendor\":\"Unknown\"}",
-  "method": "POST" })
- .then(response => {
-    // Check if the response status is OK (2xx)
-    if (!response.ok) {
-      throw new Error('HTTP request failed');
+  return fetch(
+    'https://api.prod.sngtv.magentatv.de/EPG/JSON/Authenticate?SID=firstup&T=Windows_chrome_118',
+    {
+      headers: {
+        accept: 'application/json, text/javascript, */*; q=0.01',
+        'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
+        'sec-fetch-dest': 'empty',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-site': 'same-origin',
+        'x-requested-with': 'XMLHttpRequest',
+        Referer: 'https://api.prod.sngtv.magentatv.de/EPG/',
+        'Referrer-Policy': 'strict-origin-when-cross-origin'
+      },
+      body: '{"terminalid":"00:00:00:00:00:00","mac":"00:00:00:00:00:00","terminaltype":"WEBTV","utcEnable":1,"timezone":"Etc/GMT0","userType":3,"terminalvendor":"Unknown"}',
+      method: 'POST'
     }
-
-    // Extract the set-cookie header
-    const setCookieHeader = response.headers.raw()['set-cookie'];
-
-    // Extract the cookies specified in cookiesToExtract
-    cookiesToExtract.forEach(cookieName => {
-      const regex = new RegExp(`${cookieName}=(.+?)(;|$)`);
-      const match = setCookieHeader.find(header => regex.test(header));
-
-      if (match) {
-        const cookieValue = regex.exec(match)[1];
-        extractedCookies[cookieName] = cookieValue;
+  )
+    .then(response => {
+      // Check if the response status is OK (2xx)
+      if (!response.ok) {
+        throw new Error('HTTP request failed')
       }
-    });
 
-    return response.json();
-  })
- .then(data => {
-    if (data.csrfToken) {
-      X_CSRFTOKEN = data.csrfToken
-      COOKIE = `JSESSIONID=${extractedCookies.JSESSIONID}; CSESSIONID=${extractedCookies.CSESSIONID}; CSRFSESSION=${extractedCookies.CSRFSESSION}; JSESSIONID=${extractedCookies.JSESSIONID};`
-    } else {
-      console.log('csrfToken not found in the response.');
-    }
-  })
-  .catch(error => {
-    console.error(error);
-  });
+      // Extract the set-cookie header
+      const setCookieHeader = response.headers.raw()['set-cookie']
+
+      // Extract the cookies specified in cookiesToExtract
+      cookiesToExtract.forEach(cookieName => {
+        const regex = new RegExp(`${cookieName}=(.+?)(;|$)`)
+        const match = setCookieHeader.find(header => regex.test(header))
+
+        if (match) {
+          const cookieValue = regex.exec(match)[1]
+          extractedCookies[cookieName] = cookieValue
+        }
+      })
+
+      return response.json()
+    })
+    .then(data => {
+      if (data.csrfToken) {
+        X_CSRFTOKEN = data.csrfToken
+        COOKIE = `JSESSIONID=${extractedCookies.JSESSIONID}; CSESSIONID=${extractedCookies.CSESSIONID}; CSRFSESSION=${extractedCookies.CSRFSESSION}; JSESSIONID=${extractedCookies.JSESSIONID};`
+      } else {
+        console.log('csrfToken not found in the response.')
+      }
+    })
+    .catch(error => {
+      console.error(error)
+    })
 }
 
 function setHeaders() {
-  return fetchCookieAndToken()
-    .then(() => {
-      return {
-        X_CSRFTOKEN: X_CSRFTOKEN,
-        'Content-Type': 'application/json',
-        Cookie: COOKIE,
-      };
-    });
+  return fetchCookieAndToken().then(() => {
+    return {
+      X_CSRFTOKEN: X_CSRFTOKEN,
+      'Content-Type': 'application/json',
+      Cookie: COOKIE
+    }
+  })
 }
