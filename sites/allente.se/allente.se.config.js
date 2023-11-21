@@ -1,4 +1,3 @@
-const axios = require('axios')
 const dayjs = require('dayjs')
 
 module.exports = {
@@ -31,6 +30,7 @@ module.exports = {
     return programs
   },
   async channels({ country, lang }) {
+    const axios = require('axios')
     const data = await axios
       .get(`https://cs-vcb.allente.${country}/epg/events?date=${dayjs().format('YYYY-MM-DD')}`)
       .then(r => r.data)
