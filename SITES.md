@@ -57,7 +57,6 @@
 | kplus.vn                   | 🟡     | https://github.com/iptv-org/epg/issues/2240 |
 | kvf.fo                     | 🟢     |                                             |
 | m.tv.sms.cz                | 🟡     | https://github.com/iptv-org/epg/issues/2241 |
-| magentatv.de               | 🟢     |                                             |
 | magticom.ge                | 🟢     |                                             |
 | mako.co.il                 | 🟢     |                                             |
 | maxtv.hrvatskitelekom.hr   | 🟢     |                                             |
@@ -178,6 +177,7 @@
 | walesi.com.fj              | 🟢     |                                             |
 | watchyour.tv               | 🟢     |                                             |
 | wavve.com                  | 🟢     |                                             |
+| web.magentatv.de           | 🟢     |                                             |
 | webtv.delta.nl             | 🟢     |                                             |
 | worldfishingnetwork.com    | 🟢     |                                             |
 | xumo.tv                    | 🟢     |                                             |
