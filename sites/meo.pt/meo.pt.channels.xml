@@ -1,140 +1,172 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="meo.pt" lang="en" xmltv_id="EuronewsGerman.fr" site_id="EURNA">EuroNews Deutsch</channel>
-  <channel site="meo.pt" lang="en" xmltv_id="France24English.fr" site_id="FR24I">France 24 English</channel>    
-  <channel site="meo.pt" lang="en" xmltv_id="KBSWorld.kr" site_id="KBS">KBS World</channel>    
+  <channel site="meo.pt" lang="en" xmltv_id="EuronewsGerman.fr" site_id="EURNA">Euronews (A)</channel>
+  <channel site="meo.pt" lang="en" xmltv_id="France24English.fr" site_id="FR24I">France 24 (I)</channel>
+  <channel site="meo.pt" lang="en" xmltv_id="KBSWorld.kr" site_id="KBS">KBS World</channel>
   <channel site="meo.pt" lang="en" xmltv_id="MTV00s.uk" site_id="MTV00S">MTV 00s</channel>
-  <channel site="meo.pt" lang="en" xmltv_id="MTVLive.uk" site_id="MTVLIVE">MTV Live HD</channel>    
-  <channel site="meo.pt" lang="en" xmltv_id="NHKWorldJapan.jp" site_id="NHKHD">NHK World Japan</channel>    
-  <channel site="meo.pt" lang="en" xmltv_id="SkyNewsInternational.uk" site_id="SKYN">Sky News</channel>    
-  <channel site="meo.pt" lang="en" xmltv_id="TPAi.ao" site_id="TPA">TPA</channel>
-  <channel site="meo.pt" lang="en" xmltv_id="TRTWorld.tr" site_id="TRTWHD">TRT World</channel>    
-  <channel site="meo.pt" lang="pt" xmltv_id="24Kitchen.pt" site_id="24KITC">24 Kitchen</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="3sat.de" site_id="3SAT">3sat</channel>
+  <channel site="meo.pt" lang="en" xmltv_id="MTVLive.uk" site_id="MTVLIVE">MTV Live</channel>
+  <channel site="meo.pt" lang="en" xmltv_id="NHKWorldJapan.jp" site_id="NHKHD">NHK World Japan</channel>
+  <channel site="meo.pt" lang="en" xmltv_id="SkyNewsInternational.uk" site_id="SKYN">Sky News</channel>
+  <channel site="meo.pt" lang="en" xmltv_id="TPAi.ao" site_id="TPA">TPA Internacional</channel>
+  <channel site="meo.pt" lang="en" xmltv_id="TRTWorld.tr" site_id="TRTWHD">TRT World</channel>
+  <!-- <channel site="meo.pt" lang="pt" xmltv_id="" site_id="1E1INT">1+1 International</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="1E1UNEW">1+1 United News</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="24KTHD">24Kitchen</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="ALJAZHD">Aljazeera</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="AMCBRE">AMC Break</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="AMCCRI">AMC Crime</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="AMCHD">AMC</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="ARIRANG">Arirang</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="AXNHD">AXN</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="AXNMHD">AXN Movies</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="AXWHD">AXN White</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="AZORES">Azores TV</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="C180">CANAL 180</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="CAÇAPHD">Caça e Pesca</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="CAÇAVHD">Caçavision</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="CASACOZ">Casa e Cozinha</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="CCTV4HD">CCTV 4</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="CGTNHD">CGTN</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="CINEHD">Cinemundo</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="CLUBHD">Clubbing TV</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="CNITO">Cartoonito</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="DEST">MEO Destaques</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="DISCVHD">Discovery Channel</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="DOGTVHD">Dog TV</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="DUCKTV">Duck TV</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="DWTVHD">Deutsche Welle (I)</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="E! HD">E! Entertainment</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="ENGLISH">English Club TV</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="EURHD">Eurosport 1</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="EURNIHD">Euronews (I)</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="EURS2HD">Eurosport 2</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="FLIFEH">FOX Life</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="FOXCHD">FOX Crime</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="FOXCOH">FOX Comedy</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="FOXHD">FOX</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="FOXMH">FOX Movies</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="FREEDOM">Freedom</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="FTVHD">FTV</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="GALERIA">Galeria</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="GOSPEL">Gospel TV</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="HGTV">Home &amp; Garden TV</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="HISPA4K">Hispasat</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="HISTHD">História</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="HOLHD">Hollywood</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="HOTHD">HOT</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="ID">Investigation Discovery</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="ITALIA">RAI Italia</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="KVARTV">Kvartal TV International</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="LVTVHD">Localvisão TV</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="MCMTHD">MCM Top</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="MCSUHD">MCS TV Ultra HD</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="MTVPHD">MTV Portugal</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="NGHD">National Geographic</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="NICKJR">Nick Jr.</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="NOVOT">Novo Tempo</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="ODISSHD">Odisseia</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="ONETORO">OneToro TV</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="PBTVHD">Playboy TV</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="QHD">Q</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="REC HD">Record TV</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="SCPHD">Sporting TV</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="SLBHD">BTV</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="SPT1HD">Sport TV1</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="SPT2HD">Sport TV2</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="SPT3HD">Sport TV3</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="SPT4HD">Sport TV4</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="SPT5HD">Sport TV5</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="SPT6HD">Sport TV6</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="SPTVHD">Sport TV+</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="SYFHD">SyFy</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="TAGES24">Tagesschau24</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="TRAHD">Trace Urban</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="TRAXP">Travelxp HD</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="TRAXP4K">Travelxp 4K HDR</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="TV5HD">TV5 Monde</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="TVA">Televisão África</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="TVE24HD">TVE 24H</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="TVEIHD">TVEi</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="UNIFE">Unifé TV</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="VOD">MEO VideoClube</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="WILDHD">National Geographic Wild</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="" site_id="WSPORT">W-Sport</channel> -->
+  <channel site="meo.pt" lang="pt" xmltv_id="3sat.de" site_id="3SAT">3SAT</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="ABolaTV.pt" site_id="ABOLA">A Bola TV</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="ADVNCE.pt" site_id="ADVNCE">ADVNCE</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="AfroMusicChannel.pt" site_id="AFRO">Afro Music Channel</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="AlJazeeraEnglish.qa" site_id="ALJAZ">Aljazeera English</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="AfroMusicChannel.pt" site_id="AFRO">Afro Music</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="AlmaLusa.pt" site_id="ALMALUS">Alma Lusa</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="AMC.pt" site_id="AMC">AMC</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="Antena3Internacional.es" site_id="A3INTER">Antena 3 Internacional</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="ARTE.fr" site_id="ARTEHD">ARTE Français</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="ARTV.pt" site_id="ARTV">AR TV Canal Parlamento</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="Atrescine.es" site_id="A3CINE">Atrecine</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="Atreseries.es" site_id="A3SERIE">Atreseries</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="AXNMovies.pt" site_id="AXNM">AXN Movies</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="AXN.pt" site_id="AXN">AXN</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="AXNWhite.pt" site_id="AXNWH">AXN White</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="ARTE.fr" site_id="ARTEHD">Arte</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="ARTV.pt" site_id="ARTV">ARTV</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="BabyTV.uk" site_id="BABYT">Baby TV</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="BBCEntertainment.uk" site_id="BBC E">BBC Entertainment</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="BenficaTV.pt" site_id="SLB">Benfica TV</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="BFMBusiness.fr" site_id="BFMB">BFM Business</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="BFMTV.fr" site_id="BFM">BFM TV</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="Biggs.pt" site_id="BIGGS">Biggs</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="AMCBreak.pt" site_id="BLAZE">Blaze</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="BloombergTVEurope.uk" site_id="BLOOM">Bloomberg TV</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="BloombergTVEurope.uk" site_id="BLOOM">Bloomberg</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="BNT4.bg" site_id="BNT4">BNT 4</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="BodySex.pt" site_id="BODYSEX">Body Sex HD</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="BomSomTV.pt" site_id="BOMSOM">Bom Som TV</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="Boomerang.pt" site_id="BOOM">Boomerang</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="BodySex.pt" site_id="BODYSEX">BODY SEX</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="BomSomTV.pt" site_id="BOMSOM">BomSom TV</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="BVN.nl" site_id="BVN">BVN</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="Cacavision.es" site_id="CAÇAV">Caçavision</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="Canal11.pt" site_id="C11">Canal 11</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="24Horas.es" site_id="TVE24">Canal 24 Horas</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="CanalCocina.es" site_id="CCOCINA">Canal Cocina</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="CanalHollywood.pt" site_id="HOLLW">Canal Hollywood</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="CanalPanda.pt" site_id="PANDA">Canal Panda</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="CanalQ.pt" site_id="Q">Canal Q</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="CanalUmEuropa.pt" site_id="UME">Canal Um Europa</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="Canal11.pt" site_id="C11">11</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="CanalPanda.pt" site_id="PANDA">Panda</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="CanalUmEuropa.pt" site_id="UME">UM Europa</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="CartoonNetwork.pt" site_id="CART">Cartoon Network</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="CazayPesca.es" site_id="CAÇAP">Caza y Pesca</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="CBSRealityEMEA.uk" site_id="CBSR">CBS Reality</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="CCTV4Europe.cn" site_id="CCTV4">CCTV 4 Europe</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="CGTN.cn" site_id="CGTN">CGTN</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="CGTNDocumentary.cn" site_id="CGTNDHD">CGTN Documentary</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="ChannelOne.ru" site_id="1RUSS">Perviy kanal</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="CineMundo.pt" site_id="CINE">Cine Mundo</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="ClubbingTV.fr" site_id="CLUBB">Clubbing TV</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="CMTV.pt" site_id="CMTV">CM TV</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="CNBCEurope.uk" site_id="CNBC">CNBC Europe</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="ChannelOne.ru" site_id="1RUSS">Channel 1 Russia</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="CMTV.pt" site_id="CMTV">CMTV</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="CNBCEurope.uk" site_id="CNBC">CNBC</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="CNNInternationalEurope.us" site_id="CNN">CNN</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="CNNPortugal.pt" site_id="CNNPT">CNN Portugal</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="CubavisionInternacional.cu" site_id="CUBAV">Cubavisión Internacional</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="DasErste.de" site_id="ARD">Das Erste</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="Decasa.es" site_id="DECASA">Decasa</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="DiscoveryChannel.pt" site_id="DISCV">Discovery Channel</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="CubavisionInternacional.cu" site_id="CUBAV">Cubavision</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="DasErste.de" site_id="ARD">ARD</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="DisneyChannel.pt" site_id="DISNY">Disney Channel</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="DisneyJunior.pt" site_id="DISNYJ">Disney Junior</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="TimelessDiziChannel.ro" site_id="DIZI">Dizi</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="DogTV.us" site_id="DOGTV">Dog TV</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="DWDeutsch.de" site_id="DWTVA">DW Deutsch</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="DWEnglish.de" site_id="DW-TV">DW English</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="EEurope.nl" site_id="E!">E!</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="Eleven1.pt" site_id="ELEVEN1">Eleven 1</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="Eleven2.pt" site_id="ELEVEN2">Eleven 2</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="Eleven3.pt" site_id="ELEVEN3">Eleven 3</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="Eleven4.pt" site_id="ELEVEN4">Eleven 4</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="Eleven5.pt" site_id="ELEVEN5">Eleven 5</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="Eleven6.pt" site_id="ELEVEN6">Eleven 6</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="EuronewsEnglish.fr" site_id="EURNI">EuroNews English</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="EuronewsPortuguese.fr" site_id="EURN">EuroNews</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="Eurosport1.fr" site_id="EURSP">Eurosport 1</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="Eurosport2.fr" site_id="EURS2">Eurosport 2</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="FashionTVEurope.fr" site_id="FTV">FashionTV</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="DWDeutsch.de" site_id="DWTVA">Deutsche Welle (A)</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="DWEnglish.de" site_id="DW-TV">DEUTSCHE WELLE</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="Eleven1.pt" site_id="ELEVEN1">DAZN Eleven 1</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="Eleven2.pt" site_id="ELEVEN2">DAZN Eleven 2</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="Eleven3.pt" site_id="ELEVEN3">DAZN Eleven 3</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="Eleven4.pt" site_id="ELEVEN4">DAZN Eleven 4</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="Eleven5.pt" site_id="ELEVEN5">DAZN Eleven 5</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="Eleven6.pt" site_id="ELEVEN6">DAZN Eleven 6</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="EuronewsPortuguese.fr" site_id="EURN">Euronews</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="FightSports.us" site_id="FIGHTSP">Fight Sports</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="FoxComedy.pt" site_id="FOXCOM">Fox Comedy</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="FoxCrime.pt" site_id="FOXCR">Fox Crime</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="FoxLife.pt" site_id="FLIFE">Fox Life</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="FoxMovies.pt" site_id="FOXM">Fox Movies</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="Fox.pt" site_id="FOX">Fox</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="France2.fr" site_id="FR2HD">France 2</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="France24French.fr" site_id="FR24F">France 24 Français</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="France3.fr" site_id="FR3HD">France 3</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="France5.fr" site_id="FR5HD">France 5</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="France24French.fr" site_id="FR24F">France 24 (F)</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="FUELTV.at" site_id="FUELTV">Fuel TV</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="GaliciaTVEuropa.es" site_id="TVGAL">Galicia TV</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="GaliciaTVEuropa.es" site_id="TVGAL">TV Galicia</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="Gametoon.nl" site_id="GAMET">Gametoon</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="GloboNews.br" site_id="GNEWS">Globo News</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="Historia.pt" site_id="HIST">História</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="HotMan.pt" site_id="HOTMAN">Hot Man</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="HotTaboo.pt" site_id="HOTTAB">Hot Taboo</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="HOTTV.pt" site_id="HOT">Hot</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="I24NewsEnglish.il" site_id="I24I">I24 News English</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="I24NewsFrench.il" site_id="I24F">I24 News Français</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="InterPlus.ua" site_id="IHTEP">Inter +</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="JimJamEurope.uk" site_id="JJAM">JimJam</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="HotMan.pt" site_id="HOTMAN">HOT Man</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="HotTaboo.pt" site_id="HOTTAB">HOT Taboo</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="I24NewsEnglish.il" site_id="I24I">i24 News (I)</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="I24NewsFrench.il" site_id="I24F">i24 News (F)</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="KiKA.de" site_id="KIKA">KIKA</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="KuriakosTV.pt" site_id="KURIAKO">Kuriakos TV</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="LocalVisaoTV.pt" site_id="LVTV">LocalVisão TV</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="LollyKids.uk" site_id="LOLLY">Lolly Kids</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="MasChicPanregional.ar" site_id="MCHIC">Más Chic</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="LollyKids.uk" site_id="LOLLY">Lolly kids</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="MasChicPanregional.ar" site_id="MCHIC">Mas Chic</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="MCMPop.fr" site_id="MCM P">MCM Pop</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="MCMTop.fr" site_id="MCM T">MCM Top</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="Mezzo.fr" site_id="MEZZO">Mezzo</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="MezzoLive.fr" site_id="MEZHD">Mezzo Live HD</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="MTV.pt" site_id="MTV">MTV</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="NationalGeographic.pt" site_id="NGC">National Geographic</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="NationalGeographicWild.pt" site_id="WILD">National Geographic Wild</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="MezzoLive.fr" site_id="MEZHD">Mezzo Live</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="NBATV.us" site_id="NBATVHD">NBA TV</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="Nickelodeon.es" site_id="NICKELO">Nickelodeon</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="Odisseia.pt" site_id="ODISS">Odisseia</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="PandaKids.pt" site_id="PANDAK">Panda Kids</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="PenthouseGold.us" site_id="PENTHG">Penthouse Gold</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="PFCInternacional.br" site_id="PFC">PFC</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="PhoenixCNEChannel.hk" site_id="PHCNE">Phoenix CNE</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="PlayboyTVEurope.us" site_id="PLAY">Playboy TV</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="PortoCanal.pt" site_id="PORTO">Porto Canal</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="PROTVInternational.ro" site_id="PROTV">Pro TV</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="Rai1.it" site_id="RAI1">Rai 1</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="Rai2.it" site_id="RAI2">Rai 2</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="Rai3.it" site_id="RAI3">Rai 3</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="RaiNews24.it" site_id="RAINEWS">Rai News 24</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="RaiScuola.it" site_id="SCUOLA">Rai Scuola</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="RaiStoria.it" site_id="STORIA">Rai Storia</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="PROTVInternational.ro" site_id="PROTV">PRO TV Internacional</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="Rai1.it" site_id="RAI1">RAI 1</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="Rai2.it" site_id="RAI2">RAI 2</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="Rai3.it" site_id="RAI3">RAI 3</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="RaiNews24.it" site_id="RAINEWS">RAI News</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="RaiScuola.it" site_id="SCUOLA">RAI Scuola</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="RaiStoria.it" site_id="STORIA">RAI Storia</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="RecordNews.br" site_id="RECNEW">Record News</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="RecordTVEuropa.pt" site_id="TVREC">Record TV</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="RedeGlobo.br" site_id="GLOB">Rede Globo</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="RT.ru" site_id="RUSSTHD">RT News</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="RedeGlobo.br" site_id="GLOB">Globo</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="RT.ru" site_id="RUSSTHD">Russia Today</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="RTP1.pt" site_id="RTP1">RTP 1</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="RTP2.pt" site_id="RTP2">RTP 2</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="RTP3.pt" site_id="RTP3">RTP 3</channel>
@@ -142,63 +174,43 @@
   <channel site="meo.pt" lang="pt" xmltv_id="RTPAfrica.pt" site_id="RTPA">RTP África</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="RTPMadeira.pt" site_id="RTPMA">RTP Madeira</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="RTPMemoria.pt" site_id="RTPM">RTP Memória</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="Rybalka.ua" site_id="RYBALKA">Rybalka Telekanal</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="Sextreme.br" site_id="SEXTRM">Sextreme</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="Sextreme.br" site_id="SEXTRM">SexTreme</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="SIC.pt" site_id="SIC">SIC</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="SICCaras.pt" site_id="SICC">SIC Caras</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="SICK.pt" site_id="SICK">SIC K</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="SICMulher.pt" site_id="SICM">SIC Mulher</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="SICNoticias.pt" site_id="SICN">SIC Notícias</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="SICRadical.pt" site_id="SICR">SIC Radical</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="SolMusica.es" site_id="SOLMUSI">Sol Música</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="Somos.es" site_id="SOMOS">Somos</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="SonyEntertainmentTelevisionAsia.uk" site_id="SETAS">SET Asia</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="SonyMaxUK.uk" site_id="MAX">Sony Max UK</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="SonyEntertainmentTelevisionAsia.uk" site_id="SETAS">SET ASIA</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="SonyMaxUK.uk" site_id="MAX">SET MAX</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="SPlus.pt" site_id="SMAISHD">S+</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="SportingTV.pt" site_id="SCP">Sporting TV</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="SportTV1.pt" site_id="SPTV1">Sport TV 1</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="SportTV2.pt" site_id="SPTV2">Sport TV 2</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="SportTV3.pt" site_id="SPTV3">Sport TV 3</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="SportTV4.pt" site_id="SPTV4">Sport TV 4</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="SportTV5.pt" site_id="SPTV5">Sport TV 5</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="SportTV6.pt" site_id="SPTV6">Sport TV 6</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="SportTVPlus.pt" site_id="SPTV">Sport TV +</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="StarCinema.ua" site_id="STARCIN">Star Cinema</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="StarFamily.ru" site_id="STARFAM">Star Family</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="StingrayClassica.ca" site_id="CLASSIC">Stingray Classica</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="StingrayDJAZZ.ca" site_id="DJAZZ">Stingray Djazz</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="StingrayiConcerts.ca" site_id="ICOHD">Stingray IConcerts</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="StingrayiConcerts.ca" site_id="ICOHD">Stingray iConcerts</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="StingrayLoud.ca" site_id="LOUD">Stingray Loud</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="StingrayRetro.ca" site_id="RETRO">Stingray Retro</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="Syfy.pt" site_id="SYFY">Syfy</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="TCVInternacional.cv" site_id="TCV">TCV</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="TCVInternacional.cv" site_id="TCV">TCV Internacional</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="Telesur.ve" site_id="TELESUR">Telesur</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="TimelessDiziChannel.ro" site_id="DIZI">Dizi Channel</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="TLC.pt" site_id="TLC">TLC</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="Toros.es" site_id="TOROTV">Toros TV</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="TraceBrazuca.fr" site_id="TRACEBR">Trace Brazuca</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="TraceBrazuca.fr" site_id="TRACEBR">Trace Brasil</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="TraceToca.fr" site_id="TRACETC">Trace Toca</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="TraceUrban.fr" site_id="TRACE">Trace Urban</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="TV2.no" site_id="NLOTV2">TV 2</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="TV5MondeEurope.fr" site_id="TV5">TV5Monde Europe</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="TVCancaoNova.pt" site_id="CNOVA">TV Canção Nova</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="TVCancaoNova.pt" site_id="CNOVA">Canção Nova</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="TVCineAction.pt" site_id="TVCACTH">TVCine Action</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="TVCineEdition.pt" site_id="TVCEDIH">TVCine Edition</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="TVCineEmotion.pt" site_id="TVCEMOH">TVCine Emotion</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="TVCineTop.pt" site_id="TVCTOPH">TVCine Top</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="TVEInternacionalEuropeAsia.es" site_id="TVEI">TVE Internacional</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="TVCineTop.pt" site_id="TVCTOPH">TVCine TOP</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="TVI.pt" site_id="TVI">TVI</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="CNNPortugal.pt" site_id="TVI24">TVI 24</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="TVIFiccao.pt" site_id="TVIFIC">TVI Ficção</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="TVIReality.pt" site_id="TVIR">TVI Reality</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="TVVerdade.pt" site_id="TVVERHD">TV Verdade</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="Ukraina24.ua" site_id="UKR24">Ukraïna 24</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="Ukraine1.ua" site_id="UKR1">Ukraine 1</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="Ukraine2.ua" site_id="UKR2">Ukraine 2</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="Venus.ar" site_id="VENUS">Venus</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="VividREDHD.us" site_id="VIVID">Vivid Red</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="VividREDHD.us" site_id="VIVID">VIVID RED</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="XSport.ua" site_id="XSPORT">X Sport</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="ZDF.de" site_id="ZDF">ZDF</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="ZDFneo.de" site_id="ZDFNEO">ZDFNEO</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="ZeeCinemaUK.uk" site_id="ZEECIN">Zee Cinema</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="ZeeTVUK.uk" site_id="ZEETV">Zee TV</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="ZeeCinemaUK.uk" site_id="ZEECIN">ZEE CINEMA</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="ZeeTVUK.uk" site_id="ZEETV">ZEE TV</channel>
 </channels>

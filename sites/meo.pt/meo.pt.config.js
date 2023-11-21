@@ -36,6 +36,27 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels() {
+    const axios = require('axios')
+    const data = await axios
+      .post(`https://authservice.apps.meo.pt/Services/GridTv/GridTvMng.svc/getGridAnon`, null, {
+        headers: {
+          Origin: 'https://www.meo.pt'
+        }
+      })
+      .then(r => r.data)
+      .catch(console.log)
+
+    return data.d.channels
+      .map(item => {
+        return {
+          lang: 'pt',
+          site_id: item.sigla,
+          name: item.name
+        }
+      })
+      .filter(channel => channel.site_id)
   }
 }
 

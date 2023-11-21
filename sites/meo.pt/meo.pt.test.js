@@ -1,3 +1,4 @@
+// npm run channels:parse -- --config=./sites/meo.pt/meo.pt.config.js --output=./sites/meo.pt/meo.pt.channels.xml
 // npm run grab -- --site=meo.pt
 
 const { parser, url, request } = require('./meo.pt.config.js')
