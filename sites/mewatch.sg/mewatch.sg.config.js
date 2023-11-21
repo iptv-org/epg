@@ -26,6 +26,30 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels() {
+    const axios = require('axios')
+    const cheerio = require('cheerio')
+    const data = await axios
+      .get(`https://www.mewatch.sg/channel-guide`)
+      .then(r => r.data)
+      .catch(console.log)
+
+    let channels = []
+    const $ = cheerio.load(data)
+    $('#side-nav > div > div > div > nav:nth-child(1) > ul > li > ul > li').each((i, el) => {
+      const name = $(el).find('a > span').text()
+      const url = $(el).find('a').attr('href')
+      const [, site_id] = url.match(/\/(\d+)\?player-fullscreen/)
+
+      channels.push({
+        lang: 'en',
+        name,
+        site_id
+      })
+    })
+
+    return channels
   }
 }
 
