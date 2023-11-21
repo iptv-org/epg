@@ -17,7 +17,7 @@ const channel = {
 
 it('can generate valid url', () => {
   expect(url({ channel, date })).toBe(
-    'https://tvprofil.com/bg/tv-programa/program/?datum=2023-01-12&kanal=24kitchen-bg&callback=cb&b55=747917'
+    'https://tvprofil.com/bg/tv-programa/program/?datum=2023-01-12&kanal=24kitchen-bg&callback=cb&b51=818933'
   )
 })
 
