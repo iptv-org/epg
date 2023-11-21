@@ -1,54 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="AlfaTV.mk" site_id="28">Alfa TV</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="AlJazeeraBalkans.ba" site_id="127">Aljazeera Balkans</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="Alsat.mk" site_id="68">Alsat-M</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="ArenaFight.rs" site_id="3671498">Arena Fight</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="ArenaSport1Premium.rs" site_id="3652505">Arena Premium 1</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="ArenaSport1.rs" site_id="27">Arena Sport 1</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="ArenaSport2Premium.rs" site_id="3652489">Arena Premium 2</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="ArenaSport2.rs" site_id="79">Arena Sport 2</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="ArenaSport3Premium.rs" site_id="3652529">Arena Premium 3</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="ArenaSport3.rs" site_id="60">Arena Sport 3</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="ArenaSport4.rs" site_id="100">Arena Sport 4</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="ArenaSport5.rs" site_id="2145177">Arena Sport 5</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="BalkanikaTV.bg" site_id="24">Balkanika Music TV</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="BalkanMusicTV.mk" site_id="3186681">Balkan Music TV</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="DaVinci.de" site_id="103">Da Vinci</channel>
+  <!-- <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="37">KOHA</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="48">Nickelodeon HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="3188274">Vavoom Test</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="3188319">N1 HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="3188753">SK 3 HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="3190231">Travel Channel</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="3191448">SK HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="3191947">SK 2 HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="3191949">Cinemania HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="3191951">SK 1 HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="3192578">Lov i ribolov</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="3193050">SK 6 HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="3193071">SK 5 HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="3193095">SK 4 HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="3193098">Pikaboo HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="3511559">Nova S HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="3511562">BRAINZ HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="3511565">SK Esports HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="3511566">IDJ TV</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="3519406">RTV 21</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="3547501">RTV 21 M HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="3655191">ИНФО КАНАЛ</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="3659494">Vavoom HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="3780858">Sport Klub 3 HD Harmonic</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="3780913">Arena 1 HD Harmonic</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="3828995">Eurosport HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="3828997">Eurosport 2 HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="3839243">Discovery HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="3839289">TLC HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="3984290">SK Fight</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="3984336">SK 7 HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="3984352">SK 8 HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="3984379">SK 9 HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="3984380">SK 10 HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="3984395">SK GOLF HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="3999187">Nova Sport HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="4111440">Pickbox TV HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="4111463">Luxe TV HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="4337855">Disney Channel</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="4337877">Disney Junior</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="4455266">Superstar HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="4455278">Superstar 2 HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="4506848">Balkan Trip HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="4509510">Arena Esports HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="4509512">Toxic TV HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="4509553">Toxic Folk HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="4509556">Toxic Rap HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="4509558">BBC First HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="4516783">Action M HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="4516825">Fantasy M HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="4554665">M1 Family HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="4554667">Super M HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="4638558">MUZZIK</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="4638560">MOBA</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="4638591">POP STAR</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="4638593">ZZ TV</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="4638595">ROCK</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="4638598">WWM</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="4638616">FLASHBACK</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="4638617">JEKA</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="4687363">ВИСТЕЛ</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="" site_id="4698794">CGTN HD</channel> -->
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="AlfaTV.mk" site_id="28">Алфа HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="AlJazeeraBalkans.ba" site_id="127">Aljazeera Balkans HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="Alsat.mk" site_id="68">Алсат М HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="ArenaFight.rs" site_id="3671498">Arena Fight HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="ArenaSport1.rs" site_id="27">Arena Sport 1 HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="ArenaSport1Premium.rs" site_id="3652505">Arena Premium 1 HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="ArenaSport2.rs" site_id="79">Arena Sport 2 HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="ArenaSport2Premium.rs" site_id="3652489">Arena Premium 2 HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="ArenaSport3.rs" site_id="60">Arena Sport 3 HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="ArenaSport3Premium.rs" site_id="3652529">Arena Premium 3 HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="ArenaSport4.rs" site_id="100">Arena Sport 4 HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="ArenaSport5.rs" site_id="2145177">Arena Sport 5 HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="BalkanikaTV.bg" site_id="24">Balkanika</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="BalkanMusicTV.mk" site_id="3186681">Balkan Music HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="DaVinci.de" site_id="103">DA VINCHI LEARNING HD</channel>
   <channel site="maxtvgo.mk" lang="mk" xmltv_id="DMSat.rs" site_id="19">DM Sat</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="FoxCrime.rs" site_id="610330">Fox Crime</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="FoxLife.rs" site_id="610327">Fox Life</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="FoxMovies.rs" site_id="610328">Fox Movies</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="Fox.rs" site_id="610324">Fox</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="Fox.rs" site_id="610324">STAR CHANNEL HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="FoxCrime.rs" site_id="610330">STAR CRIME HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="FoxLife.rs" site_id="610327">STAR LIFE HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="FoxMovies.rs" site_id="610328">STAR MOVIES HD</channel>
   <channel site="maxtvgo.mk" lang="mk" xmltv_id="HayatFolk.ba" site_id="46">Hayat Folk</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="Kanal5.mk" site_id="22">Kanal 5</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="KlanMacedonia.mk" site_id="16">Klan Macedonia</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="M1Film.hr" site_id="84">M1 Film</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="Kanal5.mk" site_id="22">Канал 5 HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="KlanMacedonia.mk" site_id="16">Klan Macedonia HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="M1Film.hr" site_id="84">M1</channel>
   <channel site="maxtvgo.mk" lang="mk" xmltv_id="M1Gold.hr" site_id="131">M1 Gold</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="MinimaxCEE.cz" site_id="43">Minimax Serbia</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="MRT1.mk" site_id="105">MRT 1</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="MRT2.mk" site_id="57">MRT 2</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="MRT3.mk" site_id="3301185">MRT 3</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="MRT4.mk" site_id="3197876">MRT 4</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="MRT5.mk" site_id="3197879">MRT 5</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="MRTSobraniskikanal.mk" site_id="73">MRT Sobraniski kanal</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="MinimaxCEE.cz" site_id="43">Minimax</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="MRT1.mk" site_id="105">Македонска ТВ 1 HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="MRT2.mk" site_id="57">МАКЕДОНСКА ТВ 2 HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="MRT3.mk" site_id="3301185">МРТ 3 HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="MRT4.mk" site_id="3197876">МРТ 4 HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="MRT5.mk" site_id="3197879">МРТ 5 HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="MRTSobraniskikanal.mk" site_id="73">МРТ СОБРАНИСКИ КАНАЛ</channel>
   <channel site="maxtvgo.mk" lang="mk" xmltv_id="MTV00s.uk" site_id="33">MTV 00s</channel>
   <channel site="maxtvgo.mk" lang="mk" xmltv_id="MTV80s.uk" site_id="104">MTV 80s</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="NasaTV.mk" site_id="54">Nasa TV</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="NationalGeographic.gr" site_id="610332">National Geographic Channel HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="NasaTV.mk" site_id="54">Наша ТВ</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="NationalGeographic.gr" site_id="610332">National Geographic HD</channel>
   <channel site="maxtvgo.mk" lang="mk" xmltv_id="NationalGeographicWild.gr" site_id="610333">National Geographic Wild</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="Sitel.mk" site_id="13">Sitel TV</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="TelmaTV.mk" site_id="36">Telma</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="TeraTV.mk" site_id="92">Tera TV</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="TringAction.al" site_id="124">Tring Action</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="TringFantasy.al" site_id="126">Tring Fantasy</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="vijuTV1000.ru" site_id="96">TV 1000 Balkan</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="TV24.mk" site_id="29">TV 24</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="TVEdo.mk" site_id="76">TV Edo</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="TVIris.mk" site_id="94">TV Iris</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="TVShenja.mk" site_id="80">TV Shenja</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="TVSonce.mk" site_id="40">TV Sonce</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="Sitel.mk" site_id="13">Сител HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="TelmaTV.mk" site_id="36">Телма HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="TeraTV.mk" site_id="92">TERA</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="TV24.mk" site_id="29">ТВ 24 HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="TVEdo.mk" site_id="76">TV EDO</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="TVShenja.mk" site_id="80">TV SHENJA</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="TVSonce.mk" site_id="40">ТВ Сонце</channel>
   <channel site="maxtvgo.mk" lang="mk" xmltv_id="ViasatExplore.se" site_id="123">Viasat Explore</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="ViasatHistory.se" site_id="128">Viasat History HD</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="ViasatHistory.se" site_id="128">Viasat History</channel>
   <channel site="maxtvgo.mk" lang="mk" xmltv_id="ViasatNature.se" site_id="122">Viasat Nature</channel>
+  <channel site="maxtvgo.mk" lang="mk" xmltv_id="vijuTV1000.ru" site_id="96">TV 1000 HD</channel>
 </channels>
