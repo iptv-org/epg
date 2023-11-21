@@ -56,34 +56,30 @@ module.exports = {
     return programs
   },
   async channels() {
-    const data = await axios
-      .post(
-        'https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel',
+    const url = 'https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel'
+    const body = {
+      channelNamespace: 2,
+      filterlist: [
         {
-          channelNamespace: 2,
-          filterlist: [
-            {
-              key: 'IsHide',
-              value: '-1'
-            }
-          ],
-          metaDataVer: 'Channel/1.1',
-          properties: [
-            {
-              include: '/channellist/logicalChannel/contentId,/channellist/logicalChannel/name',
-              name: 'logicalChannel'
-            }
-          ],
-          returnSatChannel: 0
-        },
-        {
-          headers: {
-            X_CSRFToken: X_CSRFTOKEN,
-            'Content-Type': 'application/json',
-            Cookie: COOKIE
-          }
+          key: 'IsHide',
+          value: '-1'
         }
-      )
+      ],
+      metaDataVer: 'Channel/1.1',
+      properties: [
+        {
+          include: '/channellist/logicalChannel/contentId,/channellist/logicalChannel/name',
+          name: 'logicalChannel'
+        }
+      ],
+      returnSatChannel: 0
+    }
+    const params = {
+      headers: await setHeaders()
+    }
+
+    const data = await axios
+      .post(url, body, params)
       .then(r => r.data)
       .catch(console.log)
 
