@@ -1,7 +1,7 @@
-// npm run channels:parse -- --config=./sites/magentatv.at/magentatv.at.config.js --output=./sites/magentatv.at/magentatv.at.channels.xml
-// npm run grab -- --site=magentatv.at
+// npm run channels:parse -- --config=./sites/tv.magenta.at/tv.magenta.at.config.js --output=./sites/tv.magenta.at/tv.magenta.at.channels.xml
+// npm run grab -- --site=tv.magenta.at
 
-const { parser, url } = require('./magentatv.at.config.js')
+const { parser, url } = require('./tv.magenta.at.config.js')
 const fs = require('fs')
 const path = require('path')
 const axios = require('axios')
@@ -23,44 +23,66 @@ const channel = {
 }
 
 it('can generate valid url', () => {
-  expect(url({ date, channel })).toBe(`${API_ENDPOINT}/epg/channel/schedules/v2?station_ids=206969383991&date=2022-10-30&hour_offset=0&hour_range=3&natco_code=at`)
+  expect(url({ date, channel })).toBe(
+    `${API_ENDPOINT}/epg/channel/schedules/v2?station_ids=206969383991&date=2022-10-30&hour_offset=0&hour_range=3&natco_code=at`
+  )
 })
 
 it('can parse response', async () => {
   const content = fs.readFileSync(path.resolve(__dirname, '__data__/content_0000.json'))
 
   axios.get.mockImplementation(url => {
-    if (url === `${API_ENDPOINT}/epg/channel/schedules/v2?date=2023-11-15&hour_offset=0&hour_range=3&station_ids=206969383991&natco_code=at`) {
+    if (
+      url ===
+      `${API_ENDPOINT}/epg/channel/schedules/v2?date=2023-11-15&hour_offset=0&hour_range=3&station_ids=206969383991&natco_code=at`
+    ) {
       return Promise.resolve({
         data: fs.readFileSync(path.resolve(__dirname, '__data__/content_0300.json'))
       })
-    } else if (url === `${API_ENDPOINT}/epg/channel/schedules/v2?date=2023-11-15&hour_offset=3&hour_range=3&station_ids=206969383991&natco_code=at`) {
+    } else if (
+      url ===
+      `${API_ENDPOINT}/epg/channel/schedules/v2?date=2023-11-15&hour_offset=3&hour_range=3&station_ids=206969383991&natco_code=at`
+    ) {
       return Promise.resolve({
         data: fs.readFileSync(path.resolve(__dirname, '__data__/content_0600.json'))
       })
-    } else if (url === `${API_ENDPOINT}/epg/channel/schedules/v2?date=2023-11-15&hour_offset=6&hour_range=3&station_ids=206969383991&natco_code=at`) {
+    } else if (
+      url ===
+      `${API_ENDPOINT}/epg/channel/schedules/v2?date=2023-11-15&hour_offset=6&hour_range=3&station_ids=206969383991&natco_code=at`
+    ) {
       return Promise.resolve({
         data: fs.readFileSync(path.resolve(__dirname, '__data__/content_0900.json'))
       })
-    } else if (url === `${API_ENDPOINT}/epg/channel/schedules/v2?date=2023-11-15&hour_offset=9&hour_range=3&station_ids=206969383991&natco_code=at`) {
+    } else if (
+      url ===
+      `${API_ENDPOINT}/epg/channel/schedules/v2?date=2023-11-15&hour_offset=9&hour_range=3&station_ids=206969383991&natco_code=at`
+    ) {
       return Promise.resolve({
         data: fs.readFileSync(path.resolve(__dirname, '__data__/content_1200.json'))
       })
-    } else if (url === `${API_ENDPOINT}/epg/channel/schedules/v2?date=2023-11-15&hour_offset=12&hour_range=3&station_ids=206969383991&natco_code=at`) {
+    } else if (
+      url ===
+      `${API_ENDPOINT}/epg/channel/schedules/v2?date=2023-11-15&hour_offset=12&hour_range=3&station_ids=206969383991&natco_code=at`
+    ) {
       return Promise.resolve({
         data: fs.readFileSync(path.resolve(__dirname, '__data__/content_1500.json'))
       })
-    } else if (url === `${API_ENDPOINT}/epg/channel/schedules/v2?date=2023-11-15&hour_offset=15&hour_range=3&station_ids=206969383991&natco_code=at`) {
+    } else if (
+      url ===
+      `${API_ENDPOINT}/epg/channel/schedules/v2?date=2023-11-15&hour_offset=15&hour_range=3&station_ids=206969383991&natco_code=at`
+    ) {
       return Promise.resolve({
         data: fs.readFileSync(path.resolve(__dirname, '__data__/content_1800.json'))
       })
-    } else if (url === `${API_ENDPOINT}/epg/channel/schedules/v2?date=2023-11-15&hour_offset=18&hour_range=3&station_ids=206969383991&natco_code=at`) {
+    } else if (
+      url ===
+      `${API_ENDPOINT}/epg/channel/schedules/v2?date=2023-11-15&hour_offset=18&hour_range=3&station_ids=206969383991&natco_code=at`
+    ) {
       return Promise.resolve({
         data: fs.readFileSync(path.resolve(__dirname, '__data__/content_2100.json'))
       })
     } else if (
-      url ===
-      `${API_ENDPOINT}/details/series/gn.tv-24101298-EP048489190016?natco_code=at`
+      url === `${API_ENDPOINT}/details/series/gn.tv-24101298-EP048489190016?natco_code=at`
     ) {
       return Promise.resolve({
         data: JSON.parse(fs.readFileSync(path.resolve(__dirname, '__data__/program.json')))

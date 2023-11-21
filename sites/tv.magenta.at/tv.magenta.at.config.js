@@ -6,14 +6,14 @@ const API_ENDPOINT = 'https://tv-at-prod.yo-digital.com/at-bifrost'
 
 const headers = {
   'Device-Id': crypto.randomUUID(),
-  'app_key': 'CTnKA63ruKM0JM1doxAXwwyQLLmQiEiy',
-  'app_version': '02.0.830',
+  app_key: 'CTnKA63ruKM0JM1doxAXwwyQLLmQiEiy',
+  app_version: '02.0.830',
   'X-User-Agent': 'web|web|Firefox-120|02.0.830|1',
   'x-request-tracking-id': crypto.randomUUID()
 }
 
 module.exports = {
-  site: 'magentatv.at',
+  site: 'tv.magenta.at',
   days: 2,
   request: {
     headers,
@@ -22,7 +22,9 @@ module.exports = {
     }
   },
   url: function ({ channel, date }) {
-    return `${API_ENDPOINT}/epg/channel/schedules/v2?station_ids=${channel.site_id}&date=${date.format('YYYY-MM-DD')}&hour_offset=${date.format('H')}&hour_range=3&natco_code=at`
+    return `${API_ENDPOINT}/epg/channel/schedules/v2?station_ids=${
+      channel.site_id
+    }&date=${date.format('YYYY-MM-DD')}&hour_offset=${date.format('H')}&hour_range=3&natco_code=at`
   },
   async parser({ content, channel, date }) {
     let programs = []
@@ -32,7 +34,13 @@ module.exports = {
     if (!items.length) return programs
 
     const promises = [3, 6, 9, 12, 15, 18, 21].map(i =>
-        axios.get(`${API_ENDPOINT}/epg/channel/schedules/v2?station_ids=${channel.site_id}&date=${date.format('YYYY-MM-DD')}&hour_offset=${i}&hour_range=3&natco_code=at`, {headers}))
+      axios.get(
+        `${API_ENDPOINT}/epg/channel/schedules/v2?station_ids=${channel.site_id}&date=${date.format(
+          'YYYY-MM-DD'
+        )}&hour_offset=${i}&hour_range=3&natco_code=at`,
+        { headers }
+      )
+    )
 
     await Promise.allSettled(promises)
       .then(results => {
@@ -68,7 +76,7 @@ module.exports = {
   },
   async channels() {
     const data = await axios
-      .get(`${API_ENDPOINT}/epg/channel?natco_code=at`, {headers})
+      .get(`${API_ENDPOINT}/epg/channel?natco_code=at`, { headers })
       .then(r => r.data)
       .catch(console.log)
 
@@ -86,7 +94,7 @@ async function loadProgramDetails(item) {
   if (!item.program_id) return {}
   const url = `${API_ENDPOINT}/details/series/${item.program_id}?natco_code=at`
   const data = await axios
-    .get(url, {headers})
+    .get(url, { headers })
     .then(r => r.data)
     .catch(console.log)
 
@@ -118,13 +126,13 @@ function parseCategory(item) {
 }
 
 function parseSeason(item) {
-  if(item.season_display_number === 'Folgen') return null
+  if (item.season_display_number === 'Folgen') return null
   return item.season_number
 }
 
 function parseEpisode(item) {
-  if(item.episode_number) return parseInt(item.episode_number)
-  if(item.season_display_number === 'Folgen') return item.season_number
+  if (item.episode_number) return parseInt(item.episode_number)
+  if (item.season_display_number === 'Folgen') return item.season_number
   return null
 }
 
@@ -135,7 +143,5 @@ function parseDescription(item) {
 
 function parseRoles(item, role_name) {
   if (!item.roles) return null
-  return item.roles
-      .filter(role => role.role_name === role_name)
-      .map(role => role.person_name)
+  return item.roles.filter(role => role.role_name === role_name).map(role => role.person_name)
 }
