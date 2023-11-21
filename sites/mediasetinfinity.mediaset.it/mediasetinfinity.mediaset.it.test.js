@@ -1,6 +1,6 @@
-// [Geo-blocked] npm run grab -- --site=mediaset.it
+// [Geo-blocked] npm run grab -- --site=mediasetinfinity.mediaset.it
 
-const { parser, url } = require('./mediaset.it.config.js')
+const { parser, url } = require('./mediasetinfinity.mediaset.it.config.js')
 const fs = require('fs')
 const path = require('path')
 const dayjs = require('dayjs')

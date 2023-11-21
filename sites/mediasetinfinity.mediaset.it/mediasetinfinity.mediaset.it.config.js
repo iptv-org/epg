@@ -8,7 +8,7 @@ dayjs.extend(customParseFormat)
 dayjs.extend(timezone)
 
 module.exports = {
-  site: 'mediaset.it',
+  site: 'mediasetinfinity.mediaset.it',
   days: 2,
   url: function ({ date, channel }) {
     return `http://www.mediaset.it/guidatv/inc/canali/${date.format('YYYYMM')}/${date.format(
