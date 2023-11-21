@@ -61,7 +61,6 @@
 | mako.co.il                 | 🟢     |                                             |
 | maxtv.hrvatskitelekom.hr   | 🟢     |                                             |
 | maxtvgo.mk                 | 🟢     |                                             |
-| mbc.net                    | 🟢     |                                             |
 | mediagenie.co.kr           | 🟢     |                                             |
 | mediaklikk.hu              | 🟢     |                                             |
 | mediaset.it                | 🟢     |                                             |
