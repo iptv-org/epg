@@ -1,4 +1,4 @@
-// npm run grab -- --site=mediaset.it
+// [Geo-blocked] npm run grab -- --site=mediaset.it
 
 const { parser, url } = require('./mediaset.it.config.js')
 const fs = require('fs')
