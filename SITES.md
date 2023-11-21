@@ -131,7 +131,6 @@
 | telsu.fi                   | 🟢     |                                             |
 | tivu.tv                    | 🟢     |                                             |
 | toonamiaftermath.com       | 🟢     |                                             |
-| transvision.co.id          | 🟢     |                                             |
 | turksatkablo.com.tr        | 🟢     |                                             |
 | tv.blue.ch                 | 🟢     |                                             |
 | tv.cctv.com                | 🟢     |                                             |
