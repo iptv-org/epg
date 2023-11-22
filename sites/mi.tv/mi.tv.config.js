@@ -41,6 +41,32 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels({ country, lang }) {
+    const axios = require('axios')
+    const data = await axios
+      .get(`https://mi.tv/${country}/sitemap`)
+      .then(r => r.data)
+      .catch(console.log)
+
+    const $ = cheerio.load(data)
+
+    let channels = []
+    $(`#page-contents a[href*="${country}/canales"], a[href*="${country}/canais"]`).each(
+      (i, el) => {
+        const name = $(el).text()
+        const url = $(el).attr('href')
+        const [, , , channelId] = url.split('/')
+
+        channels.push({
+          lang,
+          name,
+          site_id: `${country}#${channelId}`
+        })
+      }
+    )
+
+    return channels
   }
 }
 

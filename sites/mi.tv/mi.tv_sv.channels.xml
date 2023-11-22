@@ -1,15 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="mi.tv" lang="es" xmltv_id="Canal10.sv" site_id="sv#canal-10-nacional">Canal 10</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="Canal12.sv" site_id="sv#canal-12-nacional">Canal 12</channel>
+  <!-- <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#a-e-mundo">A&amp;E</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#amc">AMC</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#animal-planet">Animal Planet</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#axn">AXN</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#az-corazon">Az Corazón</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#azteca-13">Azteca 13</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#bandamax">Bandamax</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#bbc-world">BBC World</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#boomerang-cartoon">Cartoonito</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#canal-de-las-estrellas">Las Estrellas</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#cartoon-network">Cartoon Network</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#cine-latino">Cinelatino</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#cinecanal">Cinecanal</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#cinecanal-hd">Cinecanal HD</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#cinemax">Cinemax</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#cnn">CNN</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#cnn-en-espanol">CNN en Español</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#concert-channel">Concert Channel</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#de-pelicula">De Película</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#discovery-channel">Discovery Channel</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#discovery-channel-1">DISCOVERY CHANNEL</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#discovery-home-and-health">Discovery Home &amp; Health</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#discovery-id">Investigation Discovery</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#discovery-kids">Discovery Kids</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#discovery-tlc">TLC</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#discovery-world-hd">Discovery World</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#disney">Disney Channel</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#disney-jr-norte">Disney Junior</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#disney-xd">Disney XD</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#el-gourmet">El Gourmet</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#enlace-tbn">Enlace</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#entertainment">E!</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#espn">ESPN</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#espn-2">ESPN 2</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#espn-hd">ESPN+ HD</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#ewtn">EWTN</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#fox">Star Channel</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#fox-life">Star Life</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#fox-sports">FOX Sports</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#fox-sports-2">FOX Sports 2</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#fox-sports-3">FOX Sports 3</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#fx">FX</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#fx-movies">FX Movies</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#golden">Golden</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#h2">History 2</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#hbo">HBO</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#hbo-2">HBO 2</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#history">History</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#htv">HTV</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#lifetime">Lifetime</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#m-tv">MTV</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#mas-chic">Más Chic</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#max">HBO Mundi</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#multipremier">Multipremier</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#national-geographic">National Geographic</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#nickelodeon">Nick</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#rai">Rai Italia</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#ritmoson-latino">RMS</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#sony">Sony</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#space">Space</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#studio-universal">Studio Universal</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#tabernaculo-biblico-bautista">Tabernaculo Biblico Bautista</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#tbs-veryfunny">TBS</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#tcm">TCM</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#tdn">TDN</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#telemundo">Telemundo</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#telesur">teleSUR</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#tlnovelas">TLNovelas</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#tnt">TNT</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#tnt-series">TNT Series</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#tve">TVE</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#tvn-chile">TVN Chile</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#universal-channel">Universal TV</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#ve-plus-tv">Ve Plus TV</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#vh1">VH1</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="" site_id="sv#warner">Warner Channel</channel> -->
   <channel site="mi.tv" lang="es" xmltv_id="Canal2.sv" site_id="sv#canal-2-nacional">Canal 2</channel>
   <channel site="mi.tv" lang="es" xmltv_id="Canal4.sv" site_id="sv#canal-4-nacional">Canal 4</channel>
   <channel site="mi.tv" lang="es" xmltv_id="Canal6.sv" site_id="sv#canal-6-nacional">Canal 6</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Canal10.sv" site_id="sv#canal-10-nacional">Canal 10</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Canal12.sv" site_id="sv#canal-12-nacional">Canal 12</channel>
   <channel site="mi.tv" lang="es" xmltv_id="CanalClaro.cl" site_id="sv#canal-claro">Canal Claro</channel>
   <channel site="mi.tv" lang="es" xmltv_id="Genteve.sv" site_id="sv#genteve-canal-29">Gentevé</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="MegavisionCanal19.sv" site_id="sv#canal-19-nacional">Megavisión Canal 19</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="MegavisionCanal21.sv" site_id="sv#canal-21-nacional">Megavisión Canal 21</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="MegavisionCanal19.sv" site_id="sv#canal-19-nacional">Canal 19</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="MegavisionCanal21.sv" site_id="sv#canal-21-nacional">Canal 21</channel>
   <channel site="mi.tv" lang="es" xmltv_id="TVOCanal23.sv" site_id="sv#23-tv-oriente">TVO Canal 23</channel>
   <channel site="mi.tv" lang="es" xmltv_id="TVX.sv" site_id="sv#canal-23-tvx">TVX</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="VTVCanal35.sv" site_id="sv#vtv">VTV Canal 35</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="VTVCanal35.sv" site_id="sv#vtv">VTV</channel>
 </channels>
