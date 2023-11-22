@@ -1,5 +1,6 @@
-// npm run channels:parse -- --config=./sites/mncvision.id/mncvision.id.config.js --output=./sites/mncvision.id/mncvision.id.channels.xml
-// npm run grab -- --site=mncvision.id
+// npm run channels:parse -- --config=./sites/mncvision.id/mncvision.id.config.js --output=./sites/mncvision.id/mncvision.id_id.channels.xml --set=lang:id
+// npm run channels:parse -- --config=./sites/mncvision.id/mncvision.id.config.js --output=./sites/mncvision.id/mncvision.id_en.channels.xml --set=lang:en
+// npm run grab -- --site=mncvision.id --lang=id
 
 const { parser, url, request } = require('./mncvision.id.config.js')
 const fs = require('fs')
@@ -43,8 +44,7 @@ axios.get.mockImplementation((url, opts) => {
     })
   }
   if (
-    url ===
-      'https://www.mncvision.id/schedule/detail/20231119001500154/Blue-Bloods-S13-Ep-19/1'
+    url === 'https://www.mncvision.id/schedule/detail/20231119001500154/Blue-Bloods-S13-Ep-19/1'
   ) {
     if (opts.headers['Cookie'] === indonesiaHeaders['set-cookie'][0]) {
       return Promise.resolve({
@@ -86,12 +86,13 @@ it('can generate valid request data', () => {
 
 it('can parse response', async () => {
   const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.html'))
-  const indonesiaResults = (await parser({ date, content, channel, headers: indonesiaHeaders }))
-    .map(p => {
-      p.start = p.start.toJSON()
-      p.stop = p.stop.toJSON()
-      return p
-    })
+  const indonesiaResults = (
+    await parser({ date, content, channel, headers: indonesiaHeaders })
+  ).map(p => {
+    p.start = p.start.toJSON()
+    p.stop = p.stop.toJSON()
+    return p
+  })
   expect(indonesiaResults[0]).toMatchObject({
     start: '2023-11-18T17:15:00.000Z',
     stop: '2023-11-18T18:05:00.000Z',
@@ -101,12 +102,13 @@ it('can parse response', async () => {
       'Jamie bekerja sama dengan FDNY untuk menemukan pelaku pembakaran yang bertanggung jawab atas kebakaran hebat yang terjadi di fasilitas penyimpanan bukti milik NYPD.'
   })
 
-  const englishResults = (await parser({ date, content, channel: { ...channel, lang: 'en' }, headers: englishHeaders }))
-    .map(p => {
-      p.start = p.start.toJSON()
-      p.stop = p.stop.toJSON()
-      return p
-    })
+  const englishResults = (
+    await parser({ date, content, channel: { ...channel, lang: 'en' }, headers: englishHeaders })
+  ).map(p => {
+    p.start = p.start.toJSON()
+    p.stop = p.stop.toJSON()
+    return p
+  })
   expect(englishResults[0]).toMatchObject({
     start: '2023-11-18T17:15:00.000Z',
     stop: '2023-11-18T18:05:00.000Z',
