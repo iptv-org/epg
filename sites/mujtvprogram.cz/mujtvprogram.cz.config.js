@@ -31,6 +31,48 @@ module.exports = {
       })
     })
     return programs
+  },
+  async channels() {
+    const cheerio = require('cheerio')
+    const axios = require('axios')
+
+    let channels = []
+
+    const categories = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    for (let category of categories) {
+      const params = new URLSearchParams()
+      params.append('localization', 1)
+      params.append('list_for_selector', 1)
+      params.append('category_kid', category)
+
+      const data = await axios
+        .post(
+          `https://services.mujtvprogram.cz/tvprogram2services/services/tvchannellist_mobile.php`,
+          params,
+          {
+            headers: {
+              'Content-Type': 'application/x-www-form-urlencoded'
+            }
+          }
+        )
+        .then(r => r.data)
+        .catch(console.log)
+
+      const $ = cheerio.load(data, { xmlMode: true })
+
+      $('channel').each((i, el) => {
+        let lang = $(el).find('lang').text()
+        if (lang === 'cz') lang = 'cs'
+
+        channels.push({
+          lang,
+          site_id: $(el).find('cid').text(),
+          name: $(el).find('name').text()
+        })
+      })
+    }
+
+    return channels
   }
 }
 

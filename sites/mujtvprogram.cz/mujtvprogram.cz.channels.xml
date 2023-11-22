@@ -1,272 +1,220 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <!-- <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="149">MTV Europe CZ</channel> -->
-  <!-- <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="168">ČT1 HD<channel> -->
-  <!-- <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="169">ORF1</channel> -->
-  <!-- <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="170">ORF2</channel> -->
-  <!-- <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="171">SAT.1</channel> -->
-  <!-- <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="172">Sport1</channel> -->
-  <!-- <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="186">AXN</channel> -->
-  <!-- <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="187">Polsat</channel> -->
-  <!-- <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="189">Spektrum</channel> -->
-  <!-- <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="190">Sport 1</channel> -->
-  <!-- <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="191">Discovery</channel> -->
-  <!-- <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="194">National Geographic</channel> -->
-  <!-- <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="196">Viasat History/channel> -->
-  <!-- <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="197">Viasat Explorer</channel> -->
-  <!-- <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="198">HBO 2</channel> -->
-  <!-- <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="199">HBO</channel> -->
-  <!-- <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="200">FilmBox</channel> -->
-  <!-- <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="201">Film+</channel> -->
-  <!-- <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="203">Cinemax</channel> -->
-  <!-- <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="204">Eurosport 1</channel> -->
-  <!-- <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="214">National Geographic HD</channel> -->
-  <!-- <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="236">Animal Planet</channel> -->
-  <!-- <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="238">CS Film</channel> -->
-  <!-- <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="239">ČT sport</channel> -->
-  <!-- <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="244">Eurosport 2</channel> -->
-  <!-- <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="245">FilmBox Plus</channel> -->
-  <!-- <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="246">FilmBox Extra HD</channel> -->
-  <!-- <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="247">Fishing and Hunting</channel> -->
-  <!-- <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="249">History Channel</channel> -->
-  <!-- <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="252">National Geographic Wild</channel> -->
-  <!-- <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="254">TV Paprika</channel> -->
-  <!-- <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="260">Sport 2</channel> -->
-  <!-- <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="266">Viasat Nature</channel> -->
-  <!-- <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="269">National Geographic Wild HD</channel> -->
-  <!-- <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="305">TV Liptov</channel> -->
-  <!-- <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="324">CBS Reality</channel> -->
-  <!-- <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="332">FilmEurope</channel> -->
-  <!-- <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="395">AMC</channel> -->
-  <!-- <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="405">FILMpro</channel> -->
-  <!-- <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="407">V1</channel> -->
-  <!-- <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="409">TV Morava</channel> -->
-  <!-- <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="44">BR3</channel> -->
-  <!-- <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="448">FilmBox Family</channel> -->
-  <!-- <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="51">PRO7</channel> -->
-  <!-- <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="96">AXN Digi</channel> -->
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="3sat.de" site_id="46">3SAT</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="AMC.cz" site_id="394">AMC</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="AnimalPlanetEurope.uk" site_id="11">Animal Planet</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="arte.de" site_id="47">ARTE</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="automotorundsportchannel.de" site_id="315">Auto Motor Sport HD</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="AXNBlack.us" site_id="369">AXN Black</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="AXNEurope.gr" site_id="9">AXN</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="AXNWhite.us" site_id="370">AXN White</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="BarrandovKrimi.cz" site_id="455">Barrandov Krimi</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="24Horas.es" site_id="288">Canal 24 Horas</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="CanalPlusDomo.pl" site_id="835">CANAL+ Domo</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="CartoonNetwork.cz" site_id="326">Cartoon Network</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="CBSRealityEMEA.uk" site_id="323">CBS Reality</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="Cinemax2CentralEuropeHD.hu" site_id="112">Cinemax2</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="CinemaxCentralEuropeHD.hu" site_id="7">Cinemax</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="CNBCEurope.uk" site_id="152">CNBC Europe</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="CNNPrimaNews.cz" site_id="818">CNN Prima NEWS HD</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="CrimePlusInvestigationCEE.uk" site_id="368">Crime &amp; Investigation</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="CSFilm.cz" site_id="15">CS Film</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="CSHistory.cz" site_id="755">CS History</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="CSHorror.cz" site_id="756">CS Horror</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="CSMystery.cz" site_id="757">CS Mystery</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="CT1.cz" site_id="1">ČT1 HD</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="CT2.cz" site_id="2">ČT2 HD</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="CT24.cz" site_id="24">ČT24 HD</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="CT3.cz" site_id="804">ČT3 HD</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="CTart.cz" site_id="358">ČT art HD</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="CTDecko.cz" site_id="357">ČT :D HD</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="CTSport.cz" site_id="18">ČT Sport HD</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="DasErste.de" site_id="42">ARD - Das Erste</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="DiscoveryChannel.cz" site_id="12">Discovery Channel</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="DiscoveryScience.cz" site_id="98">Discovery Science</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="DisneyChannel.cz" site_id="31">Disney Channel</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="ducktv.sk" site_id="273">Duck TV</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="Duna.hu" site_id="243">Duna SK</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="EEurope.nl" site_id="410">E! Europe</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="EpicDrama.se" site_id="601">Epic Drama HD</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="Eurosport1.fr" site_id="16">Eurosport 1</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="Eurosport2.fr" site_id="25">Eurosport 2</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="FashionBox.nl" site_id="338">FashionBox.nl</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="FilmBox.cz" site_id="64">FilmBox</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="FilmBoxExtra.cz" site_id="121">FilmBox Extra HD</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="FilmBoxFamily.nl" site_id="271">FilmBox Family</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="FilmBoxPremium.cz" site_id="397">FilmBox Premium HD</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="FilmBoxStars.cz" site_id="65">FilmBox Stars</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="FilmEurope.cz" site_id="272">Film Europe HD</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="FilmEuropePlus.cz" site_id="816">Film Europe+ HD</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="FilmPlus.cz" site_id="63">Film+</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="FoodNetworkEMEA.us" site_id="471">Food Network</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="GolfChannel.us" site_id="225">Golf Channel</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="HBO2CentralEuropeHD.hu" site_id="6">HBO2</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="HBO3CentralEuropeHD.hu" site_id="512">HBO3</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="HBOCentralEuropeHD.hu" site_id="5">HBO</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="History.cz" site_id="125">History HD</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="HTV1.vn" site_id="399">HTV1</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="HTV2.vn" site_id="400">HTV2</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="InvestigationDiscoveryEurope.us" site_id="384">Investigation Discovery</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="JimJamEurope.uk" site_id="77">JimJam</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="JOJCinema.sk" site_id="460">JOJ Cinema HD</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="kabeleins.de" site_id="54">Kabel1</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="KiKA.de" site_id="354">KiKA</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="KinoBarrandov.cz" site_id="454">Kino Barrandov</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="LalaTV.sk" site_id="728">LALA TV</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="LEOTV.cz" site_id="127">LEO TV</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="M1.hu" site_id="307">M1</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="M2.hu" site_id="356">M2</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="MarkizaInternational.sk" site_id="495">Markíza International</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="MDRFernsehenSachsen.de" site_id="45">MDR</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="MinimaxCEE.cz" site_id="32">Minimax</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="MnamTV.cz" site_id="423">Mňam TV</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="MnauTV.cz" site_id="568">MnauTV.cz</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="MTVGlobal.uk" site_id="20">MTV</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="MTVLive.uk" site_id="232">MTV Live</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="A11.cz" site_id="296">Náš region TV</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="NationalGeographic.cz" site_id="21">National Geographic</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="NationalGeographicWild.cz" site_id="82">National Geographic Wild</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="Nickelodeon.cz" site_id="624">Nickelodeon</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="NickJr.cz" site_id="622">Nick Jr Czech</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="Nicktoons.cz" site_id="759">Nicktoons</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="NovaAction.cz" site_id="558">Nova Action HD</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="NovaCinema.cz" site_id="78">Nova Cinema HD</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="NovaFun.cz" site_id="560">Nova Fun HD</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="NovaGold.cz" site_id="559">Nova Gold</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="NovaInternational.cz" site_id="494">Nova International</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="NovaLady.cz" site_id="921">Nova Lady</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="NovaSport1.cz" site_id="17">Nova Sport 1 HD</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="NovaSport2.cz" site_id="466">Nova Sport 2 HD</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="NovaSport3.cz" site_id="904">Nova Sport 3</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="NovaSport4.cz" site_id="905">Nova Sport 4</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="Ocko.cz" site_id="19">ÓČKO</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="OckoBlack.cz" site_id="727">ÓČKO BLACK HD</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="OckoExpres.cz" site_id="371">ÓČKO EXPRES HD</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="OckoStar.cz" site_id="352">ÓČKO STAR</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="ORF1.at" site_id="40">ORF1</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="ORF2.at" site_id="41">ORF2</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="ParamountNetwork.cz" site_id="475">Paramount Network</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="Polsat.pl" site_id="39">Polsat</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="PowerTV.pl" site_id="699">Power TV</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="PrahaTV.cz" site_id="387">Praha TV</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="PremierSport1.sk" site_id="528">Premier Sport 1</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="PremierSport2.sk" site_id="902">Premier Sport 2</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="Prima.cz" site_id="4">Prima HD</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="PrimaCool.cz" site_id="92">Prima COOL HD</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="PrimaKrimi.cz" site_id="608">Prima KRIMI HD</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="PrimaLove.cz" site_id="226">Prima LOVE HD</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="PrimaMax.cz" site_id="474">Prima MAX HD</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="PrimaPlus.cz" site_id="556">PrimaPlus.cz</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="PrimaShow.cz" site_id="923">Prima Show</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="PrimaStar.cz" site_id="897">Prima STAR</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="PrimaZoom.cz" site_id="333">Prima ZOOM HD</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="ProSieben.de" site_id="174">PRO7</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="Rebel.cz" site_id="365">Rebel</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="Relax.cz" site_id="314">RELAX</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="RetroMusicTV.cz" site_id="206">Retro</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="RTL.de" site_id="49">RTL</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="RTL.hu" site_id="259">RTL Hungary</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="RTLZwei.de" site_id="50">RTL2</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="SAT1.de" site_id="52">SAT.1</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="SAT1Gold.de" site_id="408">SAT.1 Gold</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="Skylink7.sk" site_id="723">Skylink 7</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="SlagerOriginal.cz" site_id="389">Šláger Originál</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="SlagerPremium.cz" site_id="841">Šlágr Premium HD</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="Spektrum.cz" site_id="10">Spektrum HD</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="SpektrumHome.cz" site_id="30">Spektrum Home</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="Sport1.cz" site_id="61">Sport 1</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="Sport1.de" site_id="48">Sport1</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="Sport2.cz" site_id="93">Sport 2</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="Sport5.cz" site_id="91">SPORT5</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="TelevizeSeznam.cz" site_id="606">Televize Seznam</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="TheFishingHuntingChannel.hu" site_id="102">Fishing and Hunting</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="TLCPanregional.us" site_id="276">TLC</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="TravelChannelEMEA.uk" site_id="105">Travel Channel</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="Travelxp.in" site_id="582">Travelxp HD</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="TVBarrandov.cz" site_id="89">TV Barrandov HD</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="TVCentral.sk" site_id="401">TV Central</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="TVNoe.cz" site_id="75">TV Noe HD</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="TVNova.cz" site_id="3">Nova HD</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="TVP1.pl" site_id="37">TVP 1</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="TVP2.pl" site_id="38">TVP 2</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="TVPaprika.cz" site_id="29">TV Paprika</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="UpNetwork.cz" site_id="570">UP NETWORK</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="ViasatExplore.cz" site_id="13">Viasat Explore</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="ViasatHistory.cz" site_id="14">Viasat History</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="ViasatNature.cz" site_id="207">Viasat Nature</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="VOX.de" site_id="53">VOX</channel>
-  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="ZDF.de" site_id="393">ZDF</channel>
-  <channel site="mujtvprogram.cz" lang="de" xmltv_id="BoomerangEMEA.us" site_id="303">BoomerangEMEA.us</channel>
-  <channel site="mujtvprogram.cz" lang="de" xmltv_id="DMAX.de" site_id="151">DMAX</channel>
-  <channel site="mujtvprogram.cz" lang="de" xmltv_id="ZDFneo.de" site_id="216">ZDF NEO</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="360TuneBox.nl" site_id="367">360TuneBox</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="AdultChannel.uk" site_id="95">Adult Channel</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="AlJazeeraEnglish.qa" site_id="217">Al Jazeera</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="BabyTV.uk" site_id="108">BabyTV</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="BBCNewsEurope.uk" site_id="97">BBC World News HD</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="BloombergTVEurope.uk" site_id="284">Bloomberg Europe</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="BlueHustler.nl" site_id="146">Blue Hustler</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="BoomerangCEE.us" site_id="73">Boomerang</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="BrazzersTVEurope.us" site_id="377">Brazzers TV Europe</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="ClubMTVEurope.uk" site_id="131">Club MTV Europe</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="CNNInternationalEurope.us" site_id="23">CNN International Europe</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="DeluxeMusic.de" site_id="235">Deluxe Music</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="DisneyChannel.cz" site_id="218">Disney Channel</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="DisneyJunior.cz" site_id="355">Disney Junior</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="DocuBox.nl" site_id="317">DocuBox</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="DorcelTV.nl" site_id="533">Dorcel TV</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="DorcelXXX.nl" site_id="761">Dorcel XXX</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="DWEnglish.de" site_id="162">Deutsche Welle English</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="EnglishClubTV.uk" site_id="406">English Club TV</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="EroX.nl" site_id="300">Erox</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="EroXXX.nl" site_id="328">Eroxxx</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="EuronewsEnglish.fr" site_id="117">EuroNews</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="ExtremeSportsChannel.nl" site_id="85">Extreme Sports Channel</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="FashionTVEurope.fr" site_id="119">Fashion TV Europe</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="FastFunBox.nl" site_id="404">Fast&amp;FunBox</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="FightBox.nl" site_id="301">FightBox</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="France24English.fr" site_id="396">France 24 HD</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="GINXEsportsTV.uk" site_id="376">Ginx eSports TV</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="HustlerHD.nl" site_id="375">Hustler HD</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="HustlerTVEurope.nl" site_id="72">Hustler</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="LoveNature.ca" site_id="808">Love Nature HD</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="MTV00s.uk" site_id="66">MTV 00s</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="MTV80s.uk" site_id="106">MTV 80s</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="MTV90s.uk" site_id="158">MTV 90s</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="MTVHitsEurope.uk" site_id="159">MTVHitsEurope.uk</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="MusicBoxRussia.ru" site_id="132">Music Box</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="PlayboyTVEurope.us" site_id="103">Playboy TV Europe</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="PrivateTV.nl" site_id="74">Private TV</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="RT.ru" site_id="137">Russia Today</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="RTDoc.ru" site_id="329">RT Doc</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="SkyNewsInternational.uk" site_id="138">Sky News International</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="StingrayClassica.ca" site_id="233">Stingray Classica HD</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="StingrayCMusic.ca" site_id="110">Stingray CMusic</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="StingrayiConcerts.ca" site_id="234">Stingray iConcerts HD</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="VixenTV.ca" site_id="892">VIXEN HD</channel>
-  <channel site="mujtvprogram.cz" lang="fr" xmltv_id="France24French.fr" site_id="122">France 24</channel>
-  <channel site="mujtvprogram.cz" lang="fr" xmltv_id="Mezzo.fr" site_id="67">Mezzo HD</channel>
-  <channel site="mujtvprogram.cz" lang="fr" xmltv_id="MezzoLive.fr" site_id="383">Mezzo Live HD</channel>
-  <channel site="mujtvprogram.cz" lang="fr" xmltv_id="TV5MondeEurope.fr" site_id="141">TV5 Monde</channel>
-  <channel site="mujtvprogram.cz" lang="hu" xmltv_id="CoolTV.hu" site_id="366">Cool TV</channel>
-  <channel site="mujtvprogram.cz" lang="hu" xmltv_id="Duna.hu" site_id="360">Duna</channel>
-  <channel site="mujtvprogram.cz" lang="hu" xmltv_id="RTL.hu" site_id="361">RTL Hungary</channel>
-  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="ArenaSport1.sk" site_id="344">Arena Sport 1 HD</channel>
-  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="ArenaSport2.sk" site_id="379">Arena Sport 2</channel>
-  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="ducktv.sk" site_id="109">Duck TV</channel>
-  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="Dvojka.sk" site_id="180">Dvojka HD</channel>
-  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="FilmBoxPremium.cz" site_id="449">FilmBox Premium</channel>
-  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="HBO3CentralEuropeHD.hu" site_id="525">HBO3</channel>
-  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="Jednotka.sk" site_id="181">Jednotka HD</channel>
-  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="JOJCinema.sk" site_id="459">JOJCinema.sk</channel>
-  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="JOJFamily.sk" site_id="532">JOJ Family HD</channel>
-  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="Jojko.sk" site_id="398">Jojko.sk</channel>
-  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="JOJPlus.sk" site_id="184">JOJ Plus</channel>
-  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="JOJSport.sk" site_id="924">JOJSport.sk</channel>
-  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="JOJWAU.sk" site_id="349">JOJWAU.sk</channel>
-  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="Markiza.sk" site_id="183">Markíza</channel>
-  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="MarkizaDajto.sk" site_id="308">Markiza Dajto</channel>
-  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="MarkizaDoma.sk" site_id="182">Markíza Doma</channel>
-  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="Senzi.sk" site_id="364">Senzi</channel>
-  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="Spektrum.cz" site_id="451">Spektrum</channel>
-  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="Sport.sk" site_id="928">Sport.sk</channel>
-  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="TA3.sk" site_id="192">TA3 HD</channel>
-  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="TV8.sk" site_id="268">TV8 HD</channel>
-  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="TVJOJ.sk" site_id="185">JOJ</channel>
-  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="TVLux.sk" site_id="304">TV Lux HD</channel>
+  <!-- <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="149">MTV Europe CZhudební</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="214">National Geographic HDdokumentární</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="453">Auto Motor Sport HDsportovní</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="1040">CANAL+ Sportsportovní</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="1049">Canal+ Actionfilmové</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="" site_id="1050">Story 4všeobecné české</channel> -->
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="3sat.de" site_id="46">3SATostatní</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="24Horas.es" site_id="288">Canal 24 Horasostatní</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="A11.cz" site_id="296">A11všeobecné české</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="AMC.cz" site_id="394">AMCfilmové</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="AnimalPlanetEurope.uk" site_id="11">Animal Planetdokumentární</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="arte.de" site_id="47">ARTEostatní</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="AXNBlack.us" site_id="369">AXN Blackfilmové</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="AXNEurope.gr" site_id="9">AXNfilmové</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="AXNWhite.us" site_id="370">AXN Whitefilmové</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="BarrandovKrimi.cz" site_id="455">Barrandov Krimivšeobecné české</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="CartoonNetwork.cz" site_id="326">Cartoon Networkdětské</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="CBSRealityEMEA.uk" site_id="323">CBS Realitydokumentární</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="Cinemax2CentralEuropeHD.hu" site_id="112">Cinemax 2filmové</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="CinemaxCentralEuropeHD.hu" site_id="7">Cinemaxfilmové</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="CNBCEurope.uk" site_id="152">CNBC Europeostatní</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="CNNPrimaNews.cz" site_id="818">CNN Prima Newsvšeobecné české</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="CrimePlusInvestigationCEE.uk" site_id="368">Crime &amp; Investigationdokumentární</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="CSFilm.cz" site_id="15">CS Filmfilmové</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="CSHistory.cz" site_id="755">CS Historydokumentární</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="CSHorror.cz" site_id="756">CS Horrorfilmové</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="CSMystery.cz" site_id="757">CS Mysterydokumentární</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="CT1.cz" site_id="1">ČT1všeobecné české</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="CT2.cz" site_id="2">ČT2všeobecné české</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="CT24.cz" site_id="24">ČT24všeobecné české</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="CTart.cz" site_id="358">ČT artvšeobecné české</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="CTDecko.cz" site_id="357">ČT :Ddětské</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="CTSport.cz" site_id="18">ČT sportsportovní</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="DasErste.de" site_id="42">ARDostatní</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="DiscoveryChannel.cz" site_id="12">Discoverydokumentární</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="DiscoveryScience.cz" site_id="98">Discovery Sciencedokumentární</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="DisneyChannel.cz" site_id="31">Disney Channeldětské</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="Duna.hu" site_id="243">Duna (SK)ostatní</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="EEurope.nl" site_id="410">E! Entertainment lifestylové</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="EpicDrama.se" site_id="601">Epic Dramafilmové</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="Eurosport1.fr" site_id="16">Eurosport 1sportovní</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="Eurosport2.fr" site_id="25">Eurosport 2sportovní</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="FashionBox.nl" site_id="338">FashionBox HDlifestylové</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="FilmBox.cz" site_id="64">FilmBoxfilmové</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="FilmBoxExtra.cz" site_id="121">FilmBox Extra HDfilmové</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="FilmBoxFamily.nl" site_id="271">FilmBox Familyfilmové</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="FilmBoxPremium.cz" site_id="397">FilmBox Premiumfilmové</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="FilmBoxStars.cz" site_id="65">FilmBox Plusfilmové</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="FilmEurope.cz" site_id="272">Film Europefilmové</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="FilmEuropePlus.cz" site_id="816">Film Europe + HDfilmové</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="FilmPlus.cz" site_id="63">Film+filmové</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="FoodNetworkEMEA.us" site_id="471">Food Networklifestylové</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="GolfChannel.us" site_id="225">Golf Channelsportovní</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="HBO2CentralEuropeHD.hu" site_id="6">HBO2filmové</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="HBO3CentralEuropeHD.hu" site_id="512">HBO3filmové</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="HBOCentralEuropeHD.hu" site_id="5">HBOfilmové</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="History.cz" site_id="125">History Channeldokumentární</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="HTV1.vn" site_id="399">HTV1ostatní</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="HTV2.vn" site_id="400">HTV2ostatní</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="InvestigationDiscoveryEurope.us" site_id="384">Investigation Discoverydokumentární</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="JimJamEurope.uk" site_id="77">JimJamdětské</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="kabeleins.de" site_id="54">Kabel1ostatní</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="KiKA.de" site_id="354">KiKAostatní</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="KinoBarrandov.cz" site_id="454">Kino Barrandovfilmové</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="LalaTV.sk" site_id="728">LALA TVdětské</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="LEOTV.cz" site_id="127">LEO TVerotické</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="M1.hu" site_id="307">M1ostatní</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="M2.hu" site_id="356">M2ostatní</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="MarkizaInternational.sk" site_id="495">Markíza Internationalvšeobecné slovenské</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="MinimaxCEE.cz" site_id="32">Minimaxdětské</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="MnamTV.cz" site_id="423">Mňam TVlifestylové</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="MnauTV.cz" site_id="568">Mňau TVlifestylové</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="MTVGlobal.uk" site_id="20">MTV Europehudební</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="MTVLive.uk" site_id="232">MTV Live HDhudební</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="NationalGeographic.cz" site_id="21">National Geographicdokumentární</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="NationalGeographicWild.cz" site_id="82">National Geographic Wilddokumentární</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="Nickelodeon.cz" site_id="624">Nickelodeondětské</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="NickJr.cz" site_id="622">Nick Jr. Czechdětské</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="Nicktoons.cz" site_id="759">Nicktoonsdětské</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="NovaAction.cz" site_id="558">Nova Actionvšeobecné české</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="NovaCinema.cz" site_id="78">Nova Cinemafilmové</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="NovaFun.cz" site_id="560">Nova Funvšeobecné české</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="NovaGold.cz" site_id="559">Nova Goldvšeobecné české</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="NovaInternational.cz" site_id="494">Nova Internationalvšeobecné české</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="NovaLady.cz" site_id="921">Nova Ladyvšeobecné české</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="NovaSport1.cz" site_id="17">Nova Sport 1sportovní</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="NovaSport2.cz" site_id="466">Nova Sport 2sportovní</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="NovaSport3.cz" site_id="904">Nova Sport 3sportovní</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="NovaSport4.cz" site_id="905">Nova Sport 4sportovní</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="Ocko.cz" site_id="19">ÓČKO hudební</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="OckoBlack.cz" site_id="727">Óčko Black HDhudební</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="OckoExpres.cz" site_id="371">ÓČKO EXPREShudební</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="OckoStar.cz" site_id="352">ÓČKO STARhudební</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="ORF1.at" site_id="40">ORF1ostatní</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="ORF2.at" site_id="41">ORF2ostatní</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="ParamountNetwork.cz" site_id="475">Paramount Networkvšeobecné české</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="Polsat.pl" site_id="39">Polsatostatní</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="PowerTV.pl" site_id="699">Power TVhudební</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="PremierSport1.sk" site_id="528">Premier Sportsportovní</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="PremierSport2.sk" site_id="902">Premier Sport 2sportovní</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="Prima.cz" site_id="4">Primavšeobecné české</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="PrimaCool.cz" site_id="92">Prima COOLvšeobecné české</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="PrimaKrimi.cz" site_id="608">Prim KRIMIvšeobecné české</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="PrimaLove.cz" site_id="226">Prima Lovevšeobecné české</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="PrimaMax.cz" site_id="474">Prima MAXfilmové</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="PrimaPlus.cz" site_id="556">Prima PLUSvšeobecné české</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="PrimaShow.cz" site_id="923">Prima Showvšeobecné české</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="PrimaStar.cz" site_id="897">Prima STARvšeobecné české</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="PrimaZoom.cz" site_id="333">Prima ZOOMdokumentární</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="ProSieben.de" site_id="174">PRO7ostatní</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="Rebel.cz" site_id="365">Rebelhudební</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="Relax.cz" site_id="314">RELAXvšeobecné české</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="RetroMusicTV.cz" site_id="206">Retrohudební</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="RTL.de" site_id="49">RTLostatní</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="RTL.hu" site_id="259">RTLostatní</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="RTLZwei.de" site_id="50">RTL2ostatní</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="SAT1.de" site_id="52">SAT1ostatní</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="SAT1Gold.de" site_id="408">SAT.1 Goldostatní</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="Skylink7.sk" site_id="723">Skylink 7všeobecné české</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="SlagerPremium.cz" site_id="841">Šlágr Premiumhudební</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="Spektrum.cz" site_id="10">Spektrumdokumentární</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="SpektrumHome.cz" site_id="30">Spektrum Homedokumentární</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="Sport1.cz" site_id="61">Sport 1sportovní</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="Sport2.cz" site_id="93">Sport 2sportovní</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="TelevizeSeznam.cz" site_id="606">Televize Seznamvšeobecné české</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="TheFishingHuntingChannel.hu" site_id="102">Fishing &amp; Huntingdokumentární</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="TLCPanregional.us" site_id="276">TLCdokumentární</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="TravelChannelEMEA.uk" site_id="105">Travel Channeldokumentární</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="Travelxp.in" site_id="582">Travelxp HDdokumentární</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="TVBarrandov.cz" site_id="89">TV Barrandovvšeobecné české</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="TVNoe.cz" site_id="75">TV Noevšeobecné české</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="TVNova.cz" site_id="3">Novavšeobecné české</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="TVP1.pl" site_id="37">TVP 1ostatní</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="TVP2.pl" site_id="38">TVP 2ostatní</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="TVPaprika.cz" site_id="29">TV Paprikalifestylové</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="ViasatExplore.cz" site_id="13">Viasat Explorerdokumentární</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="ViasatHistory.cz" site_id="14">Viasat Historydokumentární</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="ViasatNature.cz" site_id="207">Viasat Naturedokumentární</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="VOX.de" site_id="53">VOXostatní</channel>
+  <channel site="mujtvprogram.cz" lang="cs" xmltv_id="ZDF.de" site_id="393">ZDFostatní</channel>
+  <channel site="mujtvprogram.cz" lang="de" xmltv_id="BoomerangEMEA.us" site_id="303">SUPER RTLostatní</channel>
+  <channel site="mujtvprogram.cz" lang="de" xmltv_id="DMAX.de" site_id="151">DMAXostatní</channel>
+  <channel site="mujtvprogram.cz" lang="de" xmltv_id="ZDFneo.de" site_id="216">ZDF NEOostatní</channel>
+  <channel site="mujtvprogram.cz" lang="en" xmltv_id="360TuneBox.nl" site_id="367">360TuneBoxhudební</channel>
+  <channel site="mujtvprogram.cz" lang="en" xmltv_id="AlJazeeraEnglish.qa" site_id="217">Al Jazeera Englishostatní</channel>
+  <channel site="mujtvprogram.cz" lang="en" xmltv_id="BabyTV.uk" site_id="108">Baby TVdětské</channel>
+  <channel site="mujtvprogram.cz" lang="en" xmltv_id="BBCNewsEurope.uk" site_id="97">BBC World Newsostatní</channel>
+  <channel site="mujtvprogram.cz" lang="en" xmltv_id="BloombergTVEurope.uk" site_id="284">Bloombergostatní</channel>
+  <channel site="mujtvprogram.cz" lang="en" xmltv_id="BlueHustler.nl" site_id="146">Blue Hustlererotické</channel>
+  <channel site="mujtvprogram.cz" lang="en" xmltv_id="BoomerangCEE.us" site_id="73">Cartoonitodětské</channel>
+  <channel site="mujtvprogram.cz" lang="en" xmltv_id="BrazzersTVEurope.us" site_id="377">Brazzers TV Europeerotické</channel>
+  <channel site="mujtvprogram.cz" lang="en" xmltv_id="ClubMTVEurope.uk" site_id="131">Club MTVhudební</channel>
+  <channel site="mujtvprogram.cz" lang="en" xmltv_id="CNNInternationalEurope.us" site_id="23">CNNostatní</channel>
+  <channel site="mujtvprogram.cz" lang="en" xmltv_id="DeluxeMusic.de" site_id="235">Deluxe Musichudební</channel>
+  <channel site="mujtvprogram.cz" lang="en" xmltv_id="DisneyJunior.cz" site_id="355">Disney Juniordětské</channel>
+  <channel site="mujtvprogram.cz" lang="en" xmltv_id="DocuBox.nl" site_id="317">DocuBoxdokumentární</channel>
+  <channel site="mujtvprogram.cz" lang="en" xmltv_id="DorcelTV.nl" site_id="533">Dorcel TVerotické</channel>
+  <channel site="mujtvprogram.cz" lang="en" xmltv_id="DorcelXXX.nl" site_id="761">Dorcel XXXerotické</channel>
+  <channel site="mujtvprogram.cz" lang="en" xmltv_id="DWEnglish.de" site_id="162">Deutsche Welleostatní</channel>
+  <channel site="mujtvprogram.cz" lang="en" xmltv_id="EnglishClubTV.uk" site_id="406">English Club TVostatní</channel>
+  <channel site="mujtvprogram.cz" lang="en" xmltv_id="EroX.nl" site_id="300">Erox HDerotické</channel>
+  <channel site="mujtvprogram.cz" lang="en" xmltv_id="EroXXX.nl" site_id="328">EroXXX HDerotické</channel>
+  <channel site="mujtvprogram.cz" lang="en" xmltv_id="EuronewsEnglish.fr" site_id="117">Euronewsostatní</channel>
+  <channel site="mujtvprogram.cz" lang="en" xmltv_id="ExtremeSportsChannel.nl" site_id="85">Extreme Sports Channelsportovní</channel>
+  <channel site="mujtvprogram.cz" lang="en" xmltv_id="FashionTVEurope.fr" site_id="119">Fashion TVlifestylové</channel>
+  <channel site="mujtvprogram.cz" lang="en" xmltv_id="FastFunBox.nl" site_id="404">Fast&amp;FunBox HDsportovní</channel>
+  <channel site="mujtvprogram.cz" lang="en" xmltv_id="FightBox.nl" site_id="301">FightBox HDsportovní</channel>
+  <channel site="mujtvprogram.cz" lang="en" xmltv_id="France24English.fr" site_id="396">France 24 (EN)ostatní</channel>
+  <channel site="mujtvprogram.cz" lang="en" xmltv_id="GINXEsportsTV.uk" site_id="376">Ginx eSports TVsportovní</channel>
+  <channel site="mujtvprogram.cz" lang="en" xmltv_id="HustlerTVEurope.nl" site_id="72">Hustlererotické</channel>
+  <channel site="mujtvprogram.cz" lang="en" xmltv_id="LoveNature.ca" site_id="808">Love Nature HDdokumentární</channel>
+  <channel site="mujtvprogram.cz" lang="en" xmltv_id="MTV00s.uk" site_id="66">MTV 00shudební</channel>
+  <channel site="mujtvprogram.cz" lang="en" xmltv_id="MTV80s.uk" site_id="106">MTV 80shudební</channel>
+  <channel site="mujtvprogram.cz" lang="en" xmltv_id="MTV90s.uk" site_id="158">MTV 90shudební</channel>
+  <channel site="mujtvprogram.cz" lang="en" xmltv_id="MTVHitsEurope.uk" site_id="159">MTV Hitshudební</channel>
+  <channel site="mujtvprogram.cz" lang="en" xmltv_id="MusicBoxRussia.ru" site_id="132">Music Boxhudební</channel>
+  <channel site="mujtvprogram.cz" lang="en" xmltv_id="PlayboyTVEurope.us" site_id="103">Playboyerotické</channel>
+  <channel site="mujtvprogram.cz" lang="en" xmltv_id="PrivateTV.nl" site_id="74">Private TVerotické</channel>
+  <channel site="mujtvprogram.cz" lang="en" xmltv_id="RT.ru" site_id="137">RTostatní</channel>
+  <channel site="mujtvprogram.cz" lang="en" xmltv_id="SkyNewsInternational.uk" site_id="138">Sky Newsostatní</channel>
+  <channel site="mujtvprogram.cz" lang="en" xmltv_id="StingrayClassica.ca" site_id="233">Stingray Classicahudební</channel>
+  <channel site="mujtvprogram.cz" lang="en" xmltv_id="StingrayCMusic.ca" site_id="110">Stingray CMusichudební</channel>
+  <channel site="mujtvprogram.cz" lang="en" xmltv_id="StingrayiConcerts.ca" site_id="234">Stingray iConcertshudební</channel>
+  <channel site="mujtvprogram.cz" lang="en" xmltv_id="VixenTV.ca" site_id="892">Vixenerotické</channel>
+  <channel site="mujtvprogram.cz" lang="fr" xmltv_id="France24French.fr" site_id="122">France 24 (FR)ostatní</channel>
+  <channel site="mujtvprogram.cz" lang="fr" xmltv_id="Mezzo.fr" site_id="67">Mezzohudební</channel>
+  <channel site="mujtvprogram.cz" lang="fr" xmltv_id="MezzoLive.fr" site_id="383">Mezzo Live HDhudební</channel>
+  <channel site="mujtvprogram.cz" lang="fr" xmltv_id="TV5MondeEurope.fr" site_id="141">TV5 Mondeostatní</channel>
+  <channel site="mujtvprogram.cz" lang="hu" xmltv_id="CoolTV.hu" site_id="366">Cool TVostatní</channel>
+  <channel site="mujtvprogram.cz" lang="hu" xmltv_id="Duna.hu" site_id="360">Duna (H)ostatní</channel>
+  <channel site="mujtvprogram.cz" lang="hu" xmltv_id="RTL.hu" site_id="361">RTLostatní</channel>
+  <!-- <channel site="mujtvprogram.cz" lang="sk" xmltv_id="" site_id="189">Spectrumostatní</channel>
+  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="" site_id="1016">RTVS 24všeobecné slovenské</channel>
+  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="" site_id="1017">Markíza Krimivšeobecné slovenské</channel>
+  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="" site_id="1042">JOJ 24všeobecné slovenské</channel>
+  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="" site_id="1051">TV Sparkdokumentární</channel>
+  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="" site_id="1060">JOJ Svetdokumentární</channel> -->
+  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="ArenaSport1.sk" site_id="344">Arena Sport 1sportovní</channel>
+  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="ArenaSport2.sk" site_id="379">Arena Sport 2sportovní</channel>
+  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="ducktv.sk" site_id="109">Ducktvdětské</channel>
+  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="Dvojka.sk" site_id="180">Dvojkavšeobecné slovenské</channel>
+  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="Jednotka.sk" site_id="181">Jednotkavšeobecné slovenské</channel>
+  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="JOJCinema.sk" site_id="459">JOJ Cinemafilmové</channel>
+  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="JOJFamily.sk" site_id="532">JOJ Familyvšeobecné slovenské</channel>
+  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="Jojko.sk" site_id="398">Jojkodětské</channel>
+  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="JOJPlus.sk" site_id="184">PLUSvšeobecné slovenské</channel>
+  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="JOJSport.sk" site_id="924">JOJ Športsportovní</channel>
+  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="JOJWAU.sk" site_id="349">WAUvšeobecné slovenské</channel>
+  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="Markiza.sk" site_id="183">Markízavšeobecné slovenské</channel>
+  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="MarkizaDajto.sk" site_id="308">Dajtovšeobecné slovenské</channel>
+  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="MarkizaDoma.sk" site_id="182">Domavšeobecné slovenské</channel>
+  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="Senzi.sk" site_id="364">Senzihudební</channel>
+  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="Sport.sk" site_id="928">RTVS Šport sportovní</channel>
+  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="TA3.sk" site_id="192">TA3všeobecné slovenské</channel>
+  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="TV8.sk" site_id="268">TV 8všeobecné slovenské</channel>
+  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="TVJOJ.sk" site_id="185">JOJvšeobecné slovenské</channel>
+  <channel site="mujtvprogram.cz" lang="sk" xmltv_id="TVLux.sk" site_id="304">TV Luxvšeobecné slovenské</channel>
 </channels>
