@@ -66,6 +66,7 @@
 | mediaset.it                | 🟢     |                                             |
 | melita.com                 | 🟢     |                                             |
 | meo.pt                     | 🟢     |                                             |
+| meuguia.tv                 | 🟢     |                                             |
 | mewatch.sg                 | 🟢     |                                             |
 | mi.tv                      | 🟢     |                                             |
 | mncvision.id               | 🟢     |                                             |
