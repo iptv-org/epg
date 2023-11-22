@@ -1,5 +1,5 @@
-// npm run grab -- --site=myafn.dodmedia.osd.mil
 // npm run channels:parse -- --config=./sites/myafn.dodmedia.osd.mil/myafn.dodmedia.osd.mil.config.js --output=./sites/myafn.dodmedia.osd.mil/myafn.dodmedia.osd.mil.channels.xml
+// npm run grab -- --site=myafn.dodmedia.osd.mil
 
 const { parser, url } = require('./myafn.dodmedia.osd.mil.config.js')
 const dayjs = require('dayjs')
