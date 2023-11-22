@@ -513,7 +513,7 @@
   <channel site="m.tv.sms.cz" lang="bs" xmltv_id="BNTV.ba" site_id="BN+Televizija">BN Televizija</channel>
   <channel site="m.tv.sms.cz" lang="cs" xmltv_id="AMC.cz" site_id="AMC">AMC</channel>
   <channel site="m.tv.sms.cz" lang="cs" xmltv_id="AnimalPlanetEurope.uk" site_id="AnimalPlanet">AnimalPlanet</channel>
-  <channel site="m.tv.sms.cz" lang="cs" xmltv_id="AutoMotorundSport.de" site_id="Auto+Motor+Sport">Auto Motor Sport</channel>
+  <channel site="m.tv.sms.cz" lang="cs" xmltv_id="automotorundsportchannel.de" site_id="Auto+Motor+Sport">Auto Motor Sport</channel>
   <channel site="m.tv.sms.cz" lang="cs" xmltv_id="AXNBlack.us" site_id="AXN+Black">AXN Black</channel>
   <channel site="m.tv.sms.cz" lang="cs" xmltv_id="AXNEurope.gr" site_id="AXN">AXN</channel>
   <channel site="m.tv.sms.cz" lang="cs" xmltv_id="AXNWhite.us" site_id="AXN+White">AXN White</channel>
@@ -726,7 +726,7 @@
   <channel site="m.tv.sms.cz" lang="cs" xmltv_id="RaiSportHD.it" site_id="Rai+Sport+2">Rai Sport 2</channel>
   <channel site="m.tv.sms.cz" lang="cs" xmltv_id="RaiStoria.it" site_id="Rai+Storia">Rai Storia</channel>
   <channel site="m.tv.sms.cz" lang="cs" xmltv_id="RaiYoyo.it" site_id="Rai+Yoyo">Rai Yoyo</channel>
-  <channel site="m.tv.sms.cz" lang="cs" xmltv_id="RBBBerlin.de" site_id="RBB+Berlin">RBB Berlin</channel>
+  <channel site="m.tv.sms.cz" lang="cs" xmltv_id="rbbFernsehenBerlin.de" site_id="RBB+Berlin">RBB Berlin</channel>
   <channel site="m.tv.sms.cz" lang="cs" xmltv_id="Rebel.cz" site_id="Rebel">Rebel</channel>
   <channel site="m.tv.sms.cz" lang="cs" xmltv_id="RedCarpetTV.pl" site_id="Red+Carpet">Red Carpet</channel>
   <channel site="m.tv.sms.cz" lang="cs" xmltv_id="RedlightHD.nl" site_id="Redlight+HD">Redlight HD</channel>
@@ -751,9 +751,9 @@
   <channel site="m.tv.sms.cz" lang="cs" xmltv_id="RTVi.ru" site_id="RTVi">RTVi</channel>
   <channel site="m.tv.sms.cz" lang="cs" xmltv_id="Russia24.ru" site_id="Russia+24">Russia 24</channel>
   <channel site="m.tv.sms.cz" lang="cs" xmltv_id="SAT1.de" site_id="SAT1">SAT1</channel>
-  <channel site="m.tv.sms.cz" lang="cs" xmltv_id="SAT1GOLD.de" site_id="SAT1+Gold">SAT1 Gold</channel>
+  <channel site="m.tv.sms.cz" lang="cs" xmltv_id="SAT1Gold.de" site_id="SAT1+Gold">SAT1 Gold</channel>
   <channel site="m.tv.sms.cz" lang="cs" xmltv_id="Senzi.sk" site_id="SENZI">SENZI</channel>
-  <channel site="m.tv.sms.cz" lang="cs" xmltv_id="Sixx.de" site_id="Sixx">Sixx</channel>
+  <channel site="m.tv.sms.cz" lang="cs" xmltv_id="sixx.de" site_id="Sixx">Sixx</channel>
   <channel site="m.tv.sms.cz" lang="cs" xmltv_id="SlagerMuzika.cz" site_id="%8Al%E1gr+Muzika">lgr Muzika</channel>
   <channel site="m.tv.sms.cz" lang="cs" xmltv_id="SlagerOriginal.cz" site_id="%8Al%E1gr+Origin%E1l">lgr Originl</channel>
   <channel site="m.tv.sms.cz" lang="cs" xmltv_id="SlagerPremium.cz" site_id="%8Al%E1gr+Premium">lgr Premium</channel>
@@ -773,7 +773,7 @@
   <channel site="m.tv.sms.cz" lang="cs" xmltv_id="StopklatkaTV.pl" site_id="Stopklatka+TV">Stopklatka TV</channel>
   <channel site="m.tv.sms.cz" lang="cs" xmltv_id="Story4.hu" site_id="Story4">Story4</channel>
   <channel site="m.tv.sms.cz" lang="cs" xmltv_id="SuperPolsat.pl" site_id="Super+Polsat">Super Polsat</channel>
-  <channel site="m.tv.sms.cz" lang="cs" xmltv_id="SuperRTL.de" site_id="Super+RTL">Super RTL</channel>
+  <channel site="m.tv.sms.cz" lang="cs" xmltv_id="RTLSuper.de" site_id="Super+RTL">Super RTL</channel>
   <channel site="m.tv.sms.cz" lang="cs" xmltv_id="SuperTV2.hu" site_id="SuperTV2">SuperTV2</channel>
   <channel site="m.tv.sms.cz" lang="cs" xmltv_id="SuperyachtTV.mc" site_id="Superyacht">Superyacht</channel>
   <channel site="m.tv.sms.cz" lang="cs" xmltv_id="TA3.sk" site_id="TA3">TA3</channel>
@@ -859,10 +859,10 @@
   <channel site="m.tv.sms.cz" lang="de" xmltv_id="ARDalpha.de" site_id="ARD-alpha">ARD-alpha</channel>
   <channel site="m.tv.sms.cz" lang="de" xmltv_id="DasErste.de" site_id="ARD">ARD</channel>
   <channel site="m.tv.sms.cz" lang="de" xmltv_id="DisneyChannel.de" site_id="Disney+Channel+%28de%29">Disney Channel (de)</channel>
-  <channel site="m.tv.sms.cz" lang="de" xmltv_id="HRFernsehen.de" site_id="HR-fernsehen">HR-fernsehen</channel>
+  <channel site="m.tv.sms.cz" lang="de" xmltv_id="hrfernsehen.de" site_id="HR-fernsehen">HR-fernsehen</channel>
   <channel site="m.tv.sms.cz" lang="de" xmltv_id="KiKA.de" site_id="Kika">Kika</channel>
   <channel site="m.tv.sms.cz" lang="de" xmltv_id="Nitro.de" site_id="RTL+Nitro">RTL Nitro</channel>
-  <channel site="m.tv.sms.cz" lang="de" xmltv_id="Phoenix.de" site_id="Phoenix">Phoenix</channel>
+  <channel site="m.tv.sms.cz" lang="de" xmltv_id="phoenix.de" site_id="Phoenix">Phoenix</channel>
   <channel site="m.tv.sms.cz" lang="de" xmltv_id="RTL.de" site_id="RTL">RTL</channel>
   <channel site="m.tv.sms.cz" lang="de" xmltv_id="WELT.de" site_id="Welt">Welt</channel>
   <channel site="m.tv.sms.cz" lang="de" xmltv_id="ZDF.de" site_id="ZDF">ZDF</channel>
