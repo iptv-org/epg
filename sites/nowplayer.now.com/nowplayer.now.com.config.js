@@ -39,17 +39,18 @@ module.exports = {
       .then(r => r.data)
       .catch(console.log)
 
-    const $ = cheerio.load(html)
-    const channels = $('body > div.container > .tv-guide-s-g > div > div').toArray()
+    let channels = []
 
-    return channels.map(item => {
-      const $item = cheerio.load(item)
-      return {
+    const $ = cheerio.load(html)
+    $('body > div.container > .tv-guide-s-g > div > div').each((i, el) => {
+      channels.push({
         lang,
-        site_id: $item('.guide-g-play > p.channel').text().replace('CH', ''),
-        name: $item('.thumbnail > a > span.image > p').text()
-      }
+        site_id: $(el).find('.guide-g-play > p.channel').text().replace('CH', ''),
+        name: $(el).find('.thumbnail > a > span.image > p').text()
+      })
     })
+
+    return channels
   }
 }
 

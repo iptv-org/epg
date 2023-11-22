@@ -1,5 +1,6 @@
-// npm run channels:parse -- --config=./sites/nowplayer.now.com/nowplayer.now.com.config.js --output=./sites/nowplayer.now.com/nowplayer.now.com.channels.xml --set=lang:zh
-// npm run grab -- --site=nowplayer.now.com
+// npm run channels:parse -- --config=./sites/nowplayer.now.com/nowplayer.now.com.config.js --output=./sites/nowplayer.now.com/nowplayer.now.com_en.channels.xml --set=lang:en
+// npm run channels:parse -- --config=./sites/nowplayer.now.com/nowplayer.now.com.config.js --output=./sites/nowplayer.now.com/nowplayer.now.com_zh.channels.xml --set=lang:zh
+// npm run grab -- --site=nowplayer.now.com --lang=zh
 
 const { parser, url, request } = require('./nowplayer.now.com.config.js')
 const dayjs = require('dayjs')
