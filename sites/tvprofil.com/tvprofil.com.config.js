@@ -77,19 +77,20 @@ function buildQuery(site_id, date) {
     callback: 'cb'
   }
 
-  const a = query.datum + query.kanal
+  let c = 3
+  const a = query.datum + query.kanal + c
   const ua = query.kanal + query.datum
 
   let i = a.length,
-    b = 2,
-    c = 2
+    b = 2
 
-  for (var j = 0; j < ua.length; j++) c += ua.charCodeAt(j)
+  for (let j = 0; j < ua.length; j++) c += ua.charCodeAt(j)
   while (i--) {
     b += (a.charCodeAt(i) + c * 2) * i
   }
 
-  const key = 'b' + b.toString().charCodeAt(2)
+  b = b.toString()
+  const key = 'b' + b.charCodeAt(b.length-1)
 
   query[key] = b
 
