@@ -1,5 +1,5 @@
-// npm run channels:parse -- --config=./sites/nuevosiglo.com.uy/nuevosiglo.com.uy.config.js --output=./sites/nuevosiglo.com.uy/nuevosiglo.com.uy.channels.xml
-// npm run grab -- --site=nuevosiglo.com.uy
+// [Geo-blocked] npm run channels:parse -- --config=./sites/nuevosiglo.com.uy/nuevosiglo.com.uy.config.js --output=./sites/nuevosiglo.com.uy/nuevosiglo.com.uy.channels.xml
+// [Geo-blocked] npm run grab -- --site=nuevosiglo.com.uy
 
 const { parser, url } = require('./nuevosiglo.com.uy.config.js')
 const fs = require('fs')
