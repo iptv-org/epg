@@ -1,5 +1,4 @@
-// npm run grab -- --site=nhkworldpremium.com
-// npm run grab -- --site=nhkworldpremium.com
+// npm run grab -- --site=nhkworldpremium.com --lang=ja
 
 const { parser, url } = require('./nhkworldpremium.com.config.js')
 const fs = require('fs')
