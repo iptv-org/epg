@@ -85,7 +85,7 @@
 | nos.pt                     | 🟡     | https://github.com/iptv-org/epg/issues/2183 |
 | novacyprus.com             | 🟢     |                                             |
 | novasports.gr              | 🟢     |                                             |
-| nowplayer.now.com          | 🟢     |                                             |
+| nowplayer.now.com          | 🟡     | https://github.com/iptv-org/epg/issues/2247 |
 | nuevosiglo.com.uy          | 🟢     |                                             |
 | ontvtonight.com            | 🟢     |                                             |
 | osn.com                    | 🟢     |                                             |
