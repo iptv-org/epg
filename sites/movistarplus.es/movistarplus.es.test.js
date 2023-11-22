@@ -1,3 +1,4 @@
+// npm run channels:parse -- --config=./sites/movistarplus.es/movistarplus.es.config.js --output=./sites/movistarplus.es/movistarplus.es.channels.xml
 // npm run grab -- --site=movistarplus.es
 
 const { parser, url } = require('./movistarplus.es.config.js')
