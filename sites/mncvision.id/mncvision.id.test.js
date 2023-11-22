@@ -8,22 +8,58 @@ const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
+
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
 jest.mock('axios')
 
-const date = dayjs.utc('2022-10-05', 'YYYY-MM-DD').startOf('d')
+const date = dayjs.utc('2023-11-19').startOf('d')
 const channel = {
-  site_id: '38',
-  xmltv_id: 'MiaoMi.hk',
+  site_id: '154',
+  xmltv_id: 'AXN.id',
   lang: 'id'
 }
-const headers = {
+const indonesiaHeaders = {
   'set-cookie': [
-    's1nd0vL=05e9pr6gi112tdmutsn7big93o75r0b0; expires=Wed, 05-Oct-2022 14:18:22 GMT; Max-Age=7200; path=/; HttpOnly'
+    's1nd0vL=uo6gsashc1rmloqbb50m6b13qkglfvpl; expires=Sat, 18-Nov-2023 20:45:02 GMT; Max-Age=7200; path=/; HttpOnly'
   ]
 }
+const englishHeaders = {
+  'set-cookie': [
+    's1nd0vL=imtot2v1cs0pbemaohj9fee3hlbqo699; expires=Sat, 18-Nov-2023 20:38:31 GMT; Max-Age=7200; path=/; HttpOnly'
+  ]
+}
+
+axios.get.mockImplementation((url, opts) => {
+  if (url === 'https://www.mncvision.id/language_switcher/setlang/indonesia/') {
+    return Promise.resolve({
+      headers: indonesiaHeaders
+    })
+  }
+  if (url === 'https://www.mncvision.id/language_switcher/setlang/english/') {
+    return Promise.resolve({
+      headers: englishHeaders
+    })
+  }
+  if (
+    url ===
+      'https://www.mncvision.id/schedule/detail/20231119001500154/Blue-Bloods-S13-Ep-19/1'
+  ) {
+    if (opts.headers['Cookie'] === indonesiaHeaders['set-cookie'][0]) {
+      return Promise.resolve({
+        data: fs.readFileSync(path.resolve(__dirname, '__data__/program_id.html'))
+      })
+    }
+    if (opts.headers['Cookie'] === englishHeaders['set-cookie'][0]) {
+      return Promise.resolve({
+        data: fs.readFileSync(path.resolve(__dirname, '__data__/program_en.html'))
+      })
+    }
+  }
+
+  return Promise.resolve({ data: '' })
+})
 
 it('can generate valid url', () => {
   expect(url).toBe('https://www.mncvision.id/schedule/table')
@@ -33,8 +69,8 @@ it('can generate valid request method', () => {
   expect(request.method).toBe('POST')
 })
 
-it('can generate valid request headers', () => {
-  expect(request.headers).toMatchObject({
+it('can generate valid request headers', async () => {
+  expect(await request.headers({ channel })).toMatchObject({
     'Content-Type': 'application/x-www-form-urlencoded'
   })
 })
@@ -43,108 +79,51 @@ it('can generate valid request data', () => {
   const data = request.data({ channel, date })
   expect(data.get('search_model')).toBe('channel')
   expect(data.get('af0rmelement')).toBe('aformelement')
-  expect(data.get('fdate')).toBe('2022-10-05')
-  expect(data.get('fchannel')).toBe('38')
+  expect(data.get('fdate')).toBe('2023-11-19')
+  expect(data.get('fchannel')).toBe('154')
   expect(data.get('submit')).toBe('Search')
 })
 
 it('can parse response', async () => {
   const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.html'))
-  const indonesiaHeaders = {
-    'set-cookie': [
-      's1nd0vL=e3vjb0oaf9vijiqsg7cml4i7fdkq16db; expires=Wed, 05-Oct-2022 14:54:16 GMT; Max-Age=7200; path=/; HttpOnly'
-    ]
-  }
-  const englishHeaders = {
-    'set-cookie': [
-      's1nd0vL=hfd6hpnpr6gvgart0d8rf7ef6t4gi7nr; expires=Wed, 05-Oct-2022 15:08:55 GMT; Max-Age=7200; path=/; HttpOnly'
-    ]
-  }
-  axios.get.mockImplementation((url, opts) => {
-    if (
-      url === 'https://www.mncvision.id/schedule/table/startno/50' &&
-      opts.headers['Cookie'] === headers['set-cookie'][0]
-    ) {
-      return Promise.resolve({
-        data: fs.readFileSync(path.resolve(__dirname, '__data__/content_p2.html'))
-      })
-    } else if (url === 'https://www.mncvision.id/language_switcher/setlang/indonesia/') {
-      return Promise.resolve({
-        headers: indonesiaHeaders
-      })
-    } else if (url === 'https://www.mncvision.id/language_switcher/setlang/english/') {
-      return Promise.resolve({
-        headers: englishHeaders
-      })
-    } else if (
-      url ===
-        'https://mncvision.id/schedule/detail/2022100500000038/Adventures-With-Miao-Mi-Ep-1/1' &&
-      opts.headers['Cookie'] === indonesiaHeaders['set-cookie'][0]
-    ) {
-      return Promise.resolve({
-        data: fs.readFileSync(path.resolve(__dirname, '__data__/program_id.html'))
-      })
-    } else if (
-      url ===
-        'https://mncvision.id/schedule/detail/2022100500000038/Adventures-With-Miao-Mi-Ep-1/1' &&
-      opts.headers['Cookie'] === englishHeaders['set-cookie'][0]
-    ) {
-      return Promise.resolve({
-        data: fs.readFileSync(path.resolve(__dirname, '__data__/program_en.html'))
-      })
-    }
-
-    return Promise.resolve({ data: '' })
-  })
-
-  let indonesiaResults = await parser({ date, content, channel, headers })
-  indonesiaResults = indonesiaResults.map(p => {
-    p.start = p.start.toJSON()
-    p.stop = p.stop.toJSON()
-    return p
-  })
-
+  const indonesiaResults = (await parser({ date, content, channel, headers: indonesiaHeaders }))
+    .map(p => {
+      p.start = p.start.toJSON()
+      p.stop = p.stop.toJSON()
+      return p
+    })
   expect(indonesiaResults[0]).toMatchObject({
-    start: '2022-10-04T17:00:00.000Z',
-    stop: '2022-10-04T17:06:00.000Z',
-    title: 'Adventures With Miao Mi, Ep 1',
-    episode: 1,
+    start: '2023-11-18T17:15:00.000Z',
+    stop: '2023-11-18T18:05:00.000Z',
+    title: 'Blue Bloods S13, Ep 19',
+    episode: 19,
     description:
-      'Ketika anak-anak mulai menghilang, sekelompok anak kecil harus menghadapi ketakutan terbesar mereka ketika mereka melawan sesosok badut pembunuh yang jahat.'
+      'Jamie bekerja sama dengan FDNY untuk menemukan pelaku pembakaran yang bertanggung jawab atas kebakaran hebat yang terjadi di fasilitas penyimpanan bukti milik NYPD.'
   })
 
-  expect(indonesiaResults[4]).toMatchObject({
-    start: '2022-10-04T17:33:00.000Z',
-    stop: '2022-10-04T17:46:00.000Z',
-    title: 'Leo Wildlife Ranger S2, Ep 27',
-    season: 2,
-    episode: 27
-  })
-
-  let englishResults = await parser({ date, content, channel: { ...channel, lang: 'en' }, headers })
-  englishResults = englishResults.map(p => {
-    p.start = p.start.toJSON()
-    p.stop = p.stop.toJSON()
-    return p
-  })
-
+  const englishResults = (await parser({ date, content, channel: { ...channel, lang: 'en' }, headers: englishHeaders }))
+    .map(p => {
+      p.start = p.start.toJSON()
+      p.stop = p.stop.toJSON()
+      return p
+    })
   expect(englishResults[0]).toMatchObject({
-    start: '2022-10-04T17:00:00.000Z',
-    stop: '2022-10-04T17:06:00.000Z',
-    title: 'Adventures With Miao Mi, Ep 1',
-    episode: 1,
+    start: '2023-11-18T17:15:00.000Z',
+    stop: '2023-11-18T18:05:00.000Z',
+    title: 'Blue Bloods S13, Ep 19',
+    episode: 19,
     description:
-      'When children begin to disappear, a group of young kids have to face their biggest fears when they square off against a murderous, evil clown.'
+      'Jamie partners with the FDNY to find the arsonist responsible for a massive fire at an NYPD evidence storage facility.'
   })
 })
 
 it('can handle empty guide', async () => {
   const content = fs.readFileSync(path.resolve(__dirname, '__data__/no_content.html'))
-  let results = await parser({
+  const results = await parser({
     date,
     channel,
     content,
-    headers
+    headers: indonesiaHeaders
   })
   expect(results).toMatchObject([])
 })
