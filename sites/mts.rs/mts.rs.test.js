@@ -1,3 +1,4 @@
+// npm run channels:parse -- --config=./sites/mts.rs/mts.rs.config.js --output=./sites/mts.rs/mts.rs.channels.xml
 // npm run grab -- --site=mts.rs
 
 const { parser, url, request } = require('./mts.rs.config.js')
