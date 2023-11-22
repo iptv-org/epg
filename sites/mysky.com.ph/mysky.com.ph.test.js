@@ -1,5 +1,5 @@
-// npm run grab -- --site=mysky.com.ph
 // npm run channels:parse -- --config=./sites/mysky.com.ph/mysky.com.ph.config.js --output=./sites/mysky.com.ph/mysky.com.ph.channels.xml
+// npm run grab -- --site=mysky.com.ph
 
 const { parser, url } = require('./mysky.com.ph.config.js')
 const dayjs = require('dayjs')
