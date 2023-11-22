@@ -60,6 +60,8 @@ module.exports = {
         .attr('title')
         .match(/Programme TV ce soir (.*)/) || [null, null]
 
+      if (!site_id || !name) return
+
       channels.push({
         site_id,
         name,
