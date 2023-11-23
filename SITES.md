@@ -44,6 +44,7 @@
 | frikanalen.no              | 🟢     |                                             |
 | gatotv.com                 | 🟢     |                                             |
 | getafteritmedia.com        | 🟢     |                                             |
+| guida.tv                   | 🟢     |                                             |
 | guidatv.sky.it             | 🟢     |                                             |
 | hd-plus.de                 | 🟡     | https://github.com/iptv-org/epg/issues/2173 |
 | horizon.tv                 | 🟢     |                                             |
