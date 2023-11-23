@@ -153,6 +153,7 @@
 | tva.tv                     | 🟢     |                                             |
 | tvarenasport.com           | 🟢     |                                             |
 | tvarenasport.hr            | 🟢     |                                             |
+| tvcesoir.fr                | 🟢     |                                             |
 | tvcubana.icrt.cu           | 🟢     |                                             |
 | tvgids.nl                  | 🟢     |                                             |
 | tvguide.com                | 🟢     |                                             |
