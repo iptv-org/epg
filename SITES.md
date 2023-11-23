@@ -87,6 +87,7 @@
 | novasports.gr              | 🟢     |                                             |
 | nowplayer.now.com          | 🟡     | https://github.com/iptv-org/epg/issues/2247 |
 | nuevosiglo.com.uy          | 🟢     |                                             |
+| nzxmltv.com                | 🟢     |                                             |
 | ontvtonight.com            | 🟢     |                                             |
 | osn.com                    | 🟢     |                                             |
 | pbsguam.org                | 🟢     |                                             |
