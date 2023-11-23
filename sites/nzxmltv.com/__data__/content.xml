@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tv SYSTEM "nzxmltv.dtd">
+<tv date="2023-11-22 04:00:15" source-info-url="https://freeviewnz.tv/tvguide/whats-on/" source-info-name="NZXMLTV (Freeview)" source-data-url="https://freeviewnz.tv/localservices/opg/schedule" generator-info-url="https://nzxmltv.com/xmltv/" generator-info-name="NZXMLTV Freeview 3.0">
+<channel id="1">
+<display-name lang="en_NZ">TVNZ 1</display-name>
+<url>https://helptvnz.zendesk.com/hc/en-us/requests/new</url>
+<icon src="https://freeviewnz.tv/nonumbracoimages/ChannelsThumb/TVNZ1100x100.png" />
+<!-- Start NZXMLTV Custom Tags -->
+<desc lang="en_NZ">As New Zealand&apos;s leading producer of local entertainment programmes, news and current affairs, and national television events. TVNZ 1 is uniquely positioned to deliver the content New Zealanders value and celebrate. Selected programmes on TVNZ 1 are broadcast in HD via UHF.  To access HD programming, you will need UHF coverage and use a UHF aerial.</desc>
+<lcn>1</lcn>
+<!-- End NZXMLTV Custom Tags -->
+</channel>
+<programme start="20231121103000 +0000" stop="20231121112500 +0000" channel="1">
+<title>Sunday</title>
+<sub-title>Sunday</sub-title>
+<desc>On Sunday, an unmissable show with stories about divorce, weight loss, and the incomprehensible devastation of Gaza.</desc>
+<date></date>
+<category>Documentary</category>
+<keyword>series</keyword>
+<icon src="https://www.thetvdb.com/banners/posters/5dbebff2986f2.jpg" />
+<country>New Zealand</country>
+<episode-num system="dd_seriesid">1035483</episode-num>
+<episode-num system="dd_progid">10681949</episode-num>
+<episode-num system="freeviewnz.tv">episode/28725468-c065-4355-86ce-093f5d09dd14</episode-num>
+<episode-num system="freeviewnz.tv">show/a9fa9bab-883b-4b22-b890-b61ee34338a1</episode-num>
+<episode-num system="original-air-date">2023-11-19 19:30:00</episode-num>
+<episode-num system="themoviedb.com">tv/11796</episode-num>
+<episode-num system="thetvdb.com">series/358626</episode-num>
+<episode-num system="xmltv_ns">2022.36.0</episode-num>
+<episode-num system="tvnz.co.nz">show/ibms+show:320</episode-num>
+<video>
+<present>yes</present>
+<colour>yes</colour>
+<aspect>16:9</aspect>
+<quality>768x576</quality>
+</video>
+<audio>
+<present>yes</present>
+<stereo>stereo</stereo>
+</audio>
+<previously-shown />
+<subtitles type="teletext">
+<language lang="en_NZ">English (NZ)</language>
+</subtitles>
+<star-rating system="themoviedb.org">
+<value>0/10</value>
+</star-rating>
+<series-desc>Join Miriama Kamo and the team as they delve into the subjects that matter to you.
+</series-desc>
+</programme>
+<programme start="20231121112500 +0000" stop="20231121121000 +0000" channel="1">
+<title>Rich House, Poor House</title>
+<sub-title>Wildes/ Pickston</sub-title>
+<desc>Kim and Dave have risked everything by converting a field in Northumberland into an organic farm, but rarely have time off and money is tight. They swap with millionaire businesswoman Ampika.</desc>
+<date>2017</date>
+<category>Documentary</category>
+<category>Factual</category>
+<keyword>series</keyword>
+<icon src="https://image.tmdb.org/t/p/original/s7ej2zgGVidwrnyBblHnVRCqS0R.jpg" />
+<country>United Kingdom</country>
+<episode-num system="dd_seriesid">1034142</episode-num>
+<episode-num system="dd_progid">10649234</episode-num>
+<episode-num system="freeviewnz.tv">episode/1abb3ded-e6c4-4457-9fef-f66015837aa5</episode-num>
+<episode-num system="freeviewnz.tv">show/dd2c2dee-2c78-47ad-9a98-6e1e91a33de4</episode-num>
+<episode-num system="original-air-date">2023-06-22 20:30:00</episode-num>
+<episode-num system="themoviedb.com">tv/70899</episode-num>
+<episode-num system="thetvdb.com">series/325959</episode-num>
+<episode-num system="xmltv_ns">7.5.0</episode-num>
+<episode-num system="tvnz.co.nz">show/ibms+show:3839</episode-num>
+<video>
+<present>yes</present>
+<colour>yes</colour>
+<aspect>16:9</aspect>
+<quality>HDTV</quality>
+</video>
+<audio>
+<present>yes</present>
+<stereo>stereo</stereo>
+</audio>
+<previously-shown />
+<subtitles type="teletext">
+<language lang="en_NZ">English (NZ)</language>
+</subtitles>
+<rating system="New Zealand">
+<value>G</value>
+</rating>
+<star-rating system="themoviedb.org">
+<value>7/10</value>
+</star-rating>
+<series-desc>Two families find out how the other half lives, swapping homes, social status and budgets with people from opposite ends of the financial spectrum and class divide.</series-desc>
+<audio-description lang="en_NZ" />
+</programme>
+</tv>
