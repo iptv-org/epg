@@ -160,6 +160,7 @@
 | tvheute.at                 | 🟢     |                                             |
 | tvim.tv                    | 🟢     |                                             |
 | tving.com                  | 🟢     |                                             |
+| tvireland.ie               | 🟢     |                                             |
 | tvmi.mt                    | 🟢     |                                             |
 | tvmusor.hu                 | 🟢     |                                             |
 | tvpassport.com             | 🟡     | https://github.com/iptv-org/epg/issues/2175 |
