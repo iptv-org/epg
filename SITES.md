@@ -80,6 +80,7 @@
 | musor.tv                   | 🟢     |                                             |
 | myafn.dodmedia.osd.mil     | 🟢     |                                             |
 | mysky.com.ph               | 🟢     |                                             |
+| mytelly.co.uk              | 🟢     |                                             |
 | mytvsuper.com              | 🟢     |                                             |
 | nhk.or.jp                  | 🟢     |                                             |
 | nhkworldpremium.com        | 🟢     |                                             |
