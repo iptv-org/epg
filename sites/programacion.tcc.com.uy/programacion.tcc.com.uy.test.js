@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/programacion.tcc.com.uy/programacion.tcc.com.uy.config.js --output=./sites/programacion.tcc.com.uy/programacion.tcc.com.uy.channels.xml
-// npm run grab -- --site=programacion.tcc.com.uy
-
 const { parser, url } = require('./programacion.tcc.com.uy.config.js')
 const fs = require('fs')
 const path = require('path')
