@@ -93,7 +93,7 @@
 | ontvtonight.com            | 🟢     |                                             |
 | osn.com                    | 🟢     |                                             |
 | pbsguam.org                | 🟢     |                                             |
-| plex.tv                    | 🟢     |                                             |
+| [plex.tv](sites/plex.tv)   | 🟢     |                                             |
 | programacion-tv.elpais.com | 🟢     |                                             |
 | programacion.tcc.com.uy    | 🟢     |                                             |
 | programetv.ro              | 🟢     |                                             |
