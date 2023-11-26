@@ -32,9 +32,9 @@ module.exports = {
 
     return programs
   },
-  async channels() {
+  async channels({ token }) {
     const data = await axios
-      .get(`${API_ENDPOINT}/lineups/plex/channels?X-Plex-Token=zb85PfdNQLmsry9kQLBR`)
+      .get(`${API_ENDPOINT}/lineups/plex/channels?X-Plex-Token=${token}`)
       .then(r => r.data)
       .catch(console.error)
 

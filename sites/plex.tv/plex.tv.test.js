@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/plex.tv/plex.tv.config.js --output=./sites/plex.tv/plex.tv.channels.xml
-// npm run grab -- --site=plex.tv
-
 const { parser, url, request } = require('./plex.tv.config.js')
 const fs = require('fs')
 const path = require('path')
