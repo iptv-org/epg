@@ -45,20 +45,6 @@ module.exports = {
     })
 
     return programs
-  },
-  async channels() {
-    const items = await axios
-      .get('https://www.rtp.pt/EPG/json/rtp-home-page/list-channels/tv')
-      .then(r => r.data.result)
-      .catch(console.error)
-
-    return items.map(i => {
-      return {
-        lang: 'pt',
-        site_id: i.channel_code,
-        name: i.channel_name
-      }
-    })
   }
 }
 

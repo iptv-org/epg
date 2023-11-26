@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/rtp.pt/rtp.pt.config.js --output=./sites/rtp.pt/rtp.pt.channels.xml
-// npm run grab -- --site=rtp.pt
-
 const { parser, url } = require('./rtp.pt.config.js')
 const fs = require('fs')
 const path = require('path')
