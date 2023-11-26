@@ -99,7 +99,7 @@
 | [programetv.ro](sites/programetv.ro)                           | 🟢     |                                             |
 | [programme-tv.net](sites/programme-tv.net)                     | 🟢     |                                             |
 | [programme-tv.vini.pf](sites/programme-tv.vini.pf)             | 🟢     |                                             |
-| [programme.tvb.com](sites/programme.tvb.com)                   | 🟢     |                                             |
+| [programme.tvb.com](sites/programme.tvb.com)                   | 🟡     | https://github.com/iptv-org/epg/issues/2254 |
 | [programtv.onet.pl](sites/programtv.onet.pl)                   | 🟢     |                                             |
 | [proximusmwc.be](sites/proximusmwc.be)                         | 🟡     | https://github.com/iptv-org/epg/issues/2212 |
 | [raiplay.it](sites/raiplay.it)                                 | 🟢     |                                             |
