@@ -1,5 +1,3 @@
-// npm run grab -- --site=pbsguam.org
-
 const { parser, url } = require('./pbsguam.org.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')

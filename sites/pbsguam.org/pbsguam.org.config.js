@@ -5,7 +5,7 @@ dayjs.extend(isBetween)
 
 module.exports = {
   site: 'pbsguam.org',
-  days: 2, // the program is only available Thursday through Sunday
+  days: 2,
   url: 'https://pbsguam.org/calendar/',
   parser: function ({ content, date }) {
     let programs = []
