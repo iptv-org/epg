@@ -1,5 +1,7 @@
-// npm run grab -- --site=ontvtonight.com
-// npm run grab -- --site=ontvtonight.com
+// npm run channels:parse -- --config=./sites/ontvtonight.com/ontvtonight.com.config.js --output=./sites/ontvtonight.com/ontvtonight.com_au.channels.xml --set=country:au
+// npm run channels:parse -- --config=./sites/ontvtonight.com/ontvtonight.com.config.js --output=./sites/ontvtonight.com/ontvtonight.com_ca.channels.xml --set=country:ca
+// npm run channels:parse -- --config=./sites/ontvtonight.com/ontvtonight.com.config.js --output=./sites/ontvtonight.com/ontvtonight.com_us.channels.xml --set=country:us
+// npm run grab -- --channels=./sites/ontvtonight.com/ontvtonight.com_ca.channels.xml
 
 const { parser, url } = require('./ontvtonight.com.config.js')
 const dayjs = require('dayjs')
