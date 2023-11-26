@@ -1,5 +1,3 @@
-// npm run grab -- --site=rtmklik.rtm.gov.my
-
 const { parser, url } = require('./rtmklik.rtm.gov.my.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
