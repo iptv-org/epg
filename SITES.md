@@ -106,7 +106,7 @@
 | [reportv.com.ar](sites/reportv.com.ar)                         | 🟢     |                                             |
 | [rev.bs](sites/rev.bs)                                         | 🟡     | https://github.com/iptv-org/epg/issues/2255 |
 | [rotana.net](sites/rotana.net)                                 | 🟡     | https://github.com/iptv-org/epg/issues/2256 |
-| [rtb.gov.bn](sites/rtb.gov.bn)                                 | 🟢     |                                             |
+| [rtb.gov.bn](sites/rtb.gov.bn)                                 | 🟡     | https://github.com/iptv-org/epg/issues/2257 |
 | [rthk.hk](sites/rthk.hk)                                       | 🟢     |                                             |
 | [rtmklik.rtm.gov.my](sites/rtmklik.rtm.gov.my)                 | 🟢     |                                             |
 | [rtp.pt](sites/rtp.pt)                                         | 🟢     |                                             |
