@@ -147,7 +147,10 @@ async function getInput(channel: Channel) {
 
 function getOptions(channelsIndex, channel: Channel) {
   const channelId = generateCode(channel.name, defaultCountry)
-  const query = channel.name.replace(/\s(SD|TV|HD|SD\/HD|\(|\))$/i, '').replace(/\+/gi, '')
+  const query = channel.name
+    .replace(/\s(SD|TV|HD|SD\/HD|HDTV)$/i, '')
+    .replace(/(\(|\)|,)/gi, '')
+    .replace(/\+/gi, '')
   const similar = channelsIndex.search(query).map(item => new ApiChannel(item))
 
   const variants = new Collection()
