@@ -28,7 +28,7 @@
 | cubmu.com                  | 🟢     |                                             |
 | digiturk.com.tr            | 🟢     |                                             |
 | directv.com                | 🟢     |                                             |
-| directv.com.ar             | 🟢     |                                             |
+| directv.com.ar             | 🟡     | https://github.com/iptv-org/epg/issues/2248 |
 | directv.com.uy             | 🟢     |                                             |
 | dishtv.in                  | 🟢     |                                             |
 | dsmart.com.tr              | 🟢     |                                             |
@@ -101,7 +101,7 @@
 | programme-tv.vini.pf       | 🟢     |                                             |
 | programme.tvb.com          | 🟢     |                                             |
 | programtv.onet.pl          | 🟢     |                                             |
-| proximusmwc.be             | 🟢     | https://github.com/iptv-org/epg/issues/2212 |
+| proximusmwc.be             | 🟡     | https://github.com/iptv-org/epg/issues/2212 |
 | raiplay.it                 | 🟢     |                                             |
 | reportv.com.ar             | 🟢     |                                             |
 | rev.bs                     | 🟢     |                                             |
@@ -113,7 +113,7 @@
 | ruv.is                     | 🟢     |                                             |
 | sat.tv                     | 🟢     |                                             |
 | shahid.mbc.net             | 🟢     |                                             |
-| siba.com.co                | 🟢     |                                             |
+| siba.com.co                | 🟡     | https://github.com/iptv-org/epg/issues/2249 |
 | singtel.com                | 🟢     |                                             |
 | sjonvarp.is                | 🟢     |                                             |
 | sky.co.nz                  | 🟢     |                                             |
