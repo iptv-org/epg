@@ -150,6 +150,7 @@ function getOptions(channelsIndex, channel: Channel) {
   const query = channel.name
     .replace(/\s(SD|TV|HD|SD\/HD|HDTV)$/i, '')
     .replace(/(\(|\)|,)/gi, '')
+    .replace(/\-/gi, ' ')
     .replace(/\+/gi, '')
   const similar = channelsIndex.search(query).map(item => new ApiChannel(item))
 
