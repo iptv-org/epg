@@ -1,4 +1,6 @@
-// NODE_OPTIONS=--insecure-http-parser npx epg-grabber --config=sites/osn.com/osn.com.config.js --channels=sites/osn.com/osn.com.channels.xml --output=guide.xml --days=2
+// [Geo-blocked] npm run channels:parse -- --config=./sites/osn.com/osn.com.config.js --output=./sites/osn.com/osn.com_ar.channels.xml --set=lang:ar
+// [Geo-blocked] npm run channels:parse -- --config=./sites/osn.com/osn.com.config.js --output=./sites/osn.com/osn.com_en.channels.xml --set=lang:en
+// [Geo-blocked] npm run grab -- --site=osn.com --lang=ar
 
 const { parser, url, request } = require('./osn.com.config.js')
 const dayjs = require('dayjs')
