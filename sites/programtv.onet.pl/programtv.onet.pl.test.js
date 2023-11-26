@@ -1,5 +1,3 @@
-// npm run grab -- --site=programtv.onet.pl
-
 const MockDate = require('mockdate')
 const { parser, url } = require('./programtv.onet.pl.config.js')
 const dayjs = require('dayjs')
