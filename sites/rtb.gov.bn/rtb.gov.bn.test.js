@@ -1,5 +1,3 @@
-// npm run grab -- --site=rtb.gov.bn
-
 const { parser, url } = require('./rtb.gov.bn.config.js')
 const path = require('path')
 const fs = require('fs')
