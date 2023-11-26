@@ -104,7 +104,7 @@
 | [proximusmwc.be](sites/proximusmwc.be)                         | 🟡     | https://github.com/iptv-org/epg/issues/2212 |
 | [raiplay.it](sites/raiplay.it)                                 | 🟢     |                                             |
 | [reportv.com.ar](sites/reportv.com.ar)                         | 🟢     |                                             |
-| [rev.bs](sites/rev.bs)                                         | 🟢     |                                             |
+| [rev.bs](sites/rev.bs)                                         | 🟡     | https://github.com/iptv-org/epg/issues/2255 |
 | [rotana.net](sites/rotana.net)                                 | 🟢     |                                             |
 | [rtb.gov.bn](sites/rtb.gov.bn)                                 | 🟢     |                                             |
 | [rthk.hk](sites/rthk.hk)                                       | 🟢     |                                             |
