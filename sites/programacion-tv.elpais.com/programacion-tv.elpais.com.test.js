@@ -1,6 +1,3 @@
-// npm run grab -- --site=programacion-tv.elpais.com
-// npm run channels:parse -- --config=./sites/programacion-tv.elpais.com/programacion-tv.elpais.com.config.js --output=./sites/programacion-tv.elpais.com/programacion-tv.elpais.com.channels.xml
-
 const { parser, url } = require('./programacion-tv.elpais.com.config.js')
 const axios = require('axios')
 const fs = require('fs')
