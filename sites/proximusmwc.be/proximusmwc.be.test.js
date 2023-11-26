@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/proximusmwc.be/proximusmwc.be.config.js --output=./sites/proximusmwc.be/proximusmwc.be.channels.xml
-// npm run grab -- --site=proximusmwc.be
-
 const { parser, url, request } = require('./proximusmwc.be.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
