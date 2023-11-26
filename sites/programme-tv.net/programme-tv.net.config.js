@@ -13,6 +13,11 @@ dayjs.extend(customParseFormat)
 module.exports = {
   site: 'programme-tv.net',
   days: 2,
+  request: {
+    headers: {
+      cookie: 'authId=b7154156fe4fb8acdb6f38e1207c6231'
+    }
+  },
   url: function ({ date, channel }) {
     return `https://www.programme-tv.net/programme/chaine/${date.format('YYYY-MM-DD')}/programme-${
       channel.site_id
@@ -34,6 +39,39 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels() {
+    const axios = require('axios')
+    const data = await axios
+      .get(
+        `https://www.programme-tv.net/_esi/channel-list/${dayjs().format(
+          'YYYY-MM-DD'
+        )}/?bouquet=perso&modal=0`,
+        {
+          headers: {
+            cookie: 'authId=b7154156fe4fb8acdb6f38e1207c6231'
+          }
+        }
+      )
+      .then(r => r.data)
+      .catch(console.error)
+
+    let channels = []
+
+    const $ = cheerio.load(data)
+    $('.channelList-listItemsLink').each((i, el) => {
+      const name = $(el).attr('title')
+      const url = $(el).attr('href')
+      const [, site_id] = url.match(/\/programme\-(.*)\.html$/i)
+
+      channels.push({
+        lang: 'fr',
+        site_id,
+        name
+      })
+    })
+
+    return channels
   }
 }
 
@@ -59,7 +97,7 @@ function parseIcon($item) {
 }
 
 function parseCategory($item) {
-  return $item('.mainBroadcastCard-genre').first().text().trim()
+  return $item('.mainBroadcastCard-format').first().text().trim()
 }
 
 function parseTitle($item) {
