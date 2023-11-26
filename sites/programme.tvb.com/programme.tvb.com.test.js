@@ -1,5 +1,3 @@
-// npm run grab -- --site=programme.tvb.com
-
 const { parser, url } = require('./programme.tvb.com.config.js')
 const fs = require('fs')
 const path = require('path')
