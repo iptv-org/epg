@@ -1,6 +1,3 @@
-// npm run grab -- --site=reportv.com.ar
-// npm run channels:parse -- --config=./sites/reportv.com.ar/reportv.com.ar.config.js --output=./sites/reportv.com.ar/reportv.com.ar.channels.xml
-
 const { parser, url, request } = require('./reportv.com.ar.config.js')
 const fs = require('fs')
 const path = require('path')
