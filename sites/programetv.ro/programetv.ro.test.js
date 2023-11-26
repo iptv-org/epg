@@ -1,5 +1,3 @@
-// npm run grab -- --site=programetv.ro
-
 const { parser, url } = require('./programetv.ro.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')

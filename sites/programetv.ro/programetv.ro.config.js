@@ -45,6 +45,21 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels({ country, lang }) {
+    const axios = require('axios')
+    const data = await axios
+      .get(`https://www.programetv.ro/api/station/index/`)
+      .then(r => r.data)
+      .catch(console.log)
+
+    return data.map(item => {
+      return {
+        lang: 'ro',
+        site_id: item.slug,
+        name: item.displayName
+      }
+    })
   }
 }
 
