@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/rev.bs/rev.bs.config.js --output=./sites/rev.bs/rev.bs.channels.xml
-// npm run grab -- --site=rev.bs
-
 const { parser, url } = require('./rev.bs.config.js')
 const axios = require('axios')
 const dayjs = require('dayjs')
