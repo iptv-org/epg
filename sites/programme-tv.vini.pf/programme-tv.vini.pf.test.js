@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/programme-tv.vini.pf/programme-tv.vini.pf.config.js --output=./sites/programme-tv.vini.pf/programme-tv.vini.pf.channels.xml
-// npm run grab -- --site=programme-tv.vini.pf
-
 const { parser, url, request } = require('./programme-tv.vini.pf.config.js')
 const axios = require('axios')
 const dayjs = require('dayjs')

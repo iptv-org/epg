@@ -50,11 +50,13 @@ module.exports = {
       .catch(console.log)
 
     return data.programmes.map(item => {
-      const channelId = item.url.replace('/', '')
+      const site_id = item.url.replace('/', '')
+      const name = site_id.replace(/\-/gi, ' ')
+
       return {
         lang: 'fr',
-        site_id: channelId,
-        name: channelId
+        site_id,
+        name
       }
     })
   }
