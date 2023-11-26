@@ -1,5 +1,3 @@
-// npm run grab -- --site=rthk.hk
-
 const { parser, url, request } = require('./rthk.hk.config.js')
 const fs = require('fs')
 const path = require('path')
