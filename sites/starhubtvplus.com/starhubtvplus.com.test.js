@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=sites/starhubtvplus.com/starhubtvplus.com.config.js --output=sites/starhubtvplus.com/starhubtvplus.com.channels.xml
-// npm run grab -- --site=starhubtvplus.com
-
 const { parser, url, request } = require('./starhubtvplus.com.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
