@@ -1,6 +1,4 @@
-// npm run grab -- --site=sportsnet.ca
-
-const { parser, url } = require('./sportsnet.ca.config.js')
+const { parser, url } = require('./watch.sportsnet.ca.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')

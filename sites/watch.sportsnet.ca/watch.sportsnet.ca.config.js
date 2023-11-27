@@ -4,7 +4,7 @@ const utc = require('dayjs/plugin/utc')
 dayjs.extend(utc)
 
 module.exports = {
-  site: 'sportsnet.ca',
+  site: 'watch.sportsnet.ca',
   days: 2,
   url: function ({ channel, date }) {
     return `https://production-cdn.sportsnet.ca/api/schedules?channels=${
