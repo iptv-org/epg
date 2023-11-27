@@ -119,7 +119,6 @@
 | [sky.co.nz](sites/sky.co.nz)                                   | 🟢     |                                             |
 | [sky.com](sites/sky.com)                                       | 🟢     |                                             |
 | [sky.de](sites/sky.de)                                         | 🟢     |                                             |
-| [sportsnet.ca](sites/sportsnet.ca)                             | 🟢     |                                             |
 | [starhubtvplus.com](sites/starhubtvplus.com)                   | 🟢     |                                             |
 | [startimestv.com](sites/startimestv.com)                       | 🟢     |                                             |
 | [startv.com](sites/startv.com)                                 | 🟢     |                                             |
@@ -179,6 +178,7 @@
 | [vivacom.bg](sites/vivacom.bg)                                 | 🟢     |                                             |
 | [vtm.be](sites/vtm.be)                                         | 🟢     |                                             |
 | [walesi.com.fj](sites/walesi.com.fj)                           | 🟢     |                                             |
+| [watch.sportsnet.ca](sites/watch.sportsnet.ca)                 | 🟢     |                                             |
 | [watchyour.tv](sites/watchyour.tv)                             | 🟢     |                                             |
 | [wavve.com](sites/wavve.com)                                   | 🟢     |                                             |
 | [web.magentatv.de](sites/web.magentatv.de)                     | 🟢     |                                             |
