@@ -25,6 +25,25 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels() {
+    const axios = require('axios')
+    const html = await axios
+      .get(`https://watch.sportsnet.ca/schedule/tvlistings`)
+      .then(r => r.data)
+      .catch(console.log)
+
+    let [, __data] = html.match(/window\.__data \= ([^<]+)<\/script>/)
+    const func = new Function(`"use strict";return ${__data}`)
+    const data = func()
+
+    return data.cache.list['678|page_size=24'].list.items.map(item => {
+      return {
+        lang: 'en',
+        site_id: item.id,
+        name: item.title
+      }
+    })
   }
 }
 
