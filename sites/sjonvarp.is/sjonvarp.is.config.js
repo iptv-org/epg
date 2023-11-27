@@ -38,6 +38,32 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels() {
+    const axios = require('axios')
+    const cheerio = require('cheerio')
+
+    const data = await axios
+      .get(`https://sjonvarp.is/`)
+      .then(r => r.data)
+      .catch(console.log)
+
+    let channels = []
+
+    const $ = cheerio.load(data)
+    $('.listing-row').each((i, el) => {
+      const site_id = $(el).attr('id')
+      const title = $(el).find('a.channel').first().attr('title')
+      const [, name] = title.match(/^Skoða dagskránna á (.*) í dag$/)
+
+      channels.push({
+        lang: 'is',
+        site_id,
+        name
+      })
+    })
+
+    return channels
   }
 }
 
