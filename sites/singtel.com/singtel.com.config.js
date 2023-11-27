@@ -34,6 +34,27 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels() {
+    const axios = require('axios')
+    const cheerio = require('cheerio')
+
+    const data = await axios
+      .get(`https://www.singtel.com/personal/products-services/tv/tv-programme-guide`)
+      .then(r => r.data)
+      .catch(console.log)
+
+    const $ = cheerio.load(data)
+    let datamodel = $('ux-tv-channel-epg').attr('datamodel')
+    datamodel = JSON.parse(datamodel)
+
+    return datamodel.tvChannelLists.map(item => {
+      return {
+        lang: 'en',
+        site_id: item.epgChannelId,
+        name: item.title.trim()
+      }
+    })
   }
 }
 

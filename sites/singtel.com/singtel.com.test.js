@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/singtel.com/singtel.com.config.js --output=./sites/singtel.com/singtel.com.channels.xml
-// npm run grab -- --site=singtel.com
-
 const { parser, url } = require('./singtel.com.config.js')
 const fs = require('fs')
 const path = require('path')
