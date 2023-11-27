@@ -8,10 +8,10 @@ dayjs.extend(utc)
 dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
-const API_ENDPOINT = 'https://www.startv.com/umbraco/api/startvguideproxy'
+const API_ENDPOINT = 'https://www.disneystar.com/umbraco/api/startvguideproxy'
 
 module.exports = {
-  site: 'startv.com',
+  site: 'disneystar.com',
   days: 2,
   url: `${API_ENDPOINT}/GetTvGuideSchedule`,
   request: {

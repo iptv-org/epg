@@ -1,7 +1,4 @@
-// npm run channels:parse -- --config=sites/startv.com/startv.com.config.js --output=sites/startv.com/startv.com.channels.xml
-// npm run grab -- --site=startv.com
-
-const { parser, url, request } = require('./startv.com.config.js')
+const { parser, url, request } = require('./disneystar.com.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -15,7 +12,7 @@ const channel = {
 }
 
 it('can generate valid url', () => {
-  expect(url).toBe('https://www.startv.com/umbraco/api/startvguideproxy/GetTvGuideSchedule')
+  expect(url).toBe('https://www.disneystar.com/umbraco/api/startvguideproxy/GetTvGuideSchedule')
 })
 
 it('can generate valid request method', () => {
