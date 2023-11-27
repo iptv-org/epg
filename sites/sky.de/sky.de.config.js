@@ -35,6 +35,34 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels() {
+    const axios = require('axios')
+    const data = await axios
+      .post(
+        'https://www.sky.de/sgtvg/service/getChannelList',
+        { dom: 'de', s: 0, feed: 1 },
+        {
+          headers: {
+            'Content-Type': 'application/json',
+            Referer: 'https://www.sky.de/tvguide-7599',
+            'X-Requested-With': 'XMLHttpRequest'
+          }
+        }
+      )
+      .then(r => r.data)
+      .catch(console.log)
+
+    let channels = []
+    data.cl.forEach(item => {
+      channels.push({
+        lang: 'de',
+        name: item.cn,
+        site_id: item.ci
+      })
+    })
+
+    return channels
   }
 }
 
