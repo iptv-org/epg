@@ -32,43 +32,38 @@ module.exports = {
 
     return programs
   },
-  async channels({ country }) {
-    const area = {
-      ke: 6,
-      ng: 2,
-      tz: 3,
-      ug: 4,
-      rw: 5,
-      gh: 32,
-      mw: 14,
-      ci: 22,
-      gn: 12,
-      bi: 9,
-      cg: 16,
-      cd: 11,
-      mg: 13,
-      mz: 15,
-      cm: 20,
-      ga: 19
-    }
-    const data = await axios
-      .get('https://www.startimestv.com/tv_guide.html', {
-        headers: {
-          Cookie: `default_areaID=${area[country]}`
-        }
-      })
-      .then(r => r.data)
-      .catch(console.log)
-    const $ = cheerio.load(data)
-    const script = $('body > script:nth-child(10)').html()
-    let [, json] = script.match(/var obj = eval\( '(.*)' \);/) || [null, null]
-    json = json.replace(/\\'/g, '')
-    const items = JSON.parse(json)
+  async channels() {
+    const _ = require('lodash')
 
-    return items.map(i => ({
-      name: i.name,
-      site_id: i.id
-    }))
+    const areas = [6, 2, 3, 4, 5, 32, 14, 22, 12, 9, 16, 11, 13, 15, 20, 19]
+
+    const channels = []
+    for (let area of areas) {
+      const data = await axios
+        .get('https://www.startimestv.com/tv_guide.html', {
+          headers: {
+            Cookie: `default_areaID=${area}`
+          }
+        })
+        .then(r => r.data)
+        .catch(console.log)
+
+      const $ = cheerio.load(data)
+      const script = $('body > script:nth-child(10)').html()
+      let [, json] = script.match(/var obj = eval\( '(.*)' \);/) || [null, null]
+      json = json.replace(/\\'/g, '')
+      const items = JSON.parse(json)
+
+      items.forEach(item => {
+        channels.push({
+          lang: 'en',
+          name: item.name,
+          site_id: item.id
+        })
+      })
+    }
+
+    return _.uniqBy(channels, 'site_id')
   }
 }
 

@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/startimestv.com/startimestv.com.config.js --output=./sites/startimestv.com/startimestv.com.channels.xml --set=country:ke
-// npm run grab -- --site=startimestv.com
-
 const { parser, url } = require('./startimestv.com.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
