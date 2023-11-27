@@ -31,6 +31,7 @@
 | [directv.com.ar](sites/directv.com.ar)                         | 🟡     | https://github.com/iptv-org/epg/issues/2248 |
 | [directv.com.uy](sites/directv.com.uy)                         | 🟢     |                                             |
 | [dishtv.in](sites/dishtv.in)                                   | 🟢     |                                             |
+| [disneystar.com](sites/disneystar.com)                         | 🟢     |                                             |
 | [dsmart.com.tr](sites/dsmart.com.tr)                           | 🟢     |                                             |
 | [dstv.com](sites/dstv.com)                                     | 🟢     |                                             |
 | [elcinema.com](sites/elcinema.com)                             | 🟢     |                                             |
@@ -121,7 +122,6 @@
 | [sky.de](sites/sky.de)                                         | 🟢     |                                             |
 | [starhubtvplus.com](sites/starhubtvplus.com)                   | 🟢     |                                             |
 | [startimestv.com](sites/startimestv.com)                       | 🟢     |                                             |
-| [startv.com](sites/startv.com)                                 | 🟢     |                                             |
 | [streamingtvguides.com](sites/streamingtvguides.com)           | 🟢     |                                             |
 | [superguidatv.it](sites/superguidatv.it)                       | 🟢     |                                             |
 | [taiwanplus.com](sites/taiwanplus.com)                         | 🟢     |                                             |
