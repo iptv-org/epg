@@ -23,6 +23,31 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels() {
+    const axios = require('axios')
+    const cheerio = require('cheerio')
+
+    const data = await axios
+      .get(`https://www.sky.com/tv-guide/`)
+      .then(r => r.data)
+      .catch(console.log)
+
+    let channels = []
+
+    const $ = cheerio.load(data)
+    let initialData = $('#initialData').text()
+    initialData = JSON.parse(decodeURIComponent(initialData))
+
+    initialData.state.epgData.channelsForRegion.forEach(item => {
+      channels.push({
+        lang: 'en',
+        site_id: item.sid,
+        name: item.t
+      })
+    })
+
+    return channels
   }
 }
 

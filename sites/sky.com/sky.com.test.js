@@ -1,5 +1,3 @@
-// npm run grab -- --site=sky.com
-
 const { parser, url } = require('./sky.com.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
