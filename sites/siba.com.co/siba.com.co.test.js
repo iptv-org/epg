@@ -1,5 +1,3 @@
-// npm run grab -- --site=siba.com.co
-
 const { parser, url, request } = require('./siba.com.co.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
