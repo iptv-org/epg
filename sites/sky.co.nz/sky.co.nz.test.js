@@ -1,5 +1,3 @@
-// npm run grab -- --site=sky.co.nz
-
 const { parser, url } = require('./sky.co.nz.config.js')
 const fs = require('fs')
 const path = require('path')
