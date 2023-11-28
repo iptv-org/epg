@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/tv.magenta.at/tv.magenta.at.config.js --output=./sites/tv.magenta.at/tv.magenta.at.channels.xml
-// npm run grab -- --site=tv.magenta.at
-
 const { parser, url } = require('./tv.magenta.at.config.js')
 const fs = require('fs')
 const path = require('path')
