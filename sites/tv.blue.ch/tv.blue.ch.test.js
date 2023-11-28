@@ -1,6 +1,3 @@
-// node ./scripts/commands/parse-channels.js --config=./sites/tv.blue.ch/tv.blue.ch.config.js --output=./sites/tv.blue.ch/tv.blue.ch.channels.xml
-// npm run grab -- --site=tv.blue.ch
-
 const { parser, url } = require('./tv.blue.ch.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
