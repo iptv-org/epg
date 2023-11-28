@@ -38,6 +38,31 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels() {
+    const axios = require('axios')
+    const html = await axios
+      .get('https://www.tivu.tv/epg_ajax_sat.aspx?d=0')
+      .then(r => r.data)
+      .catch(console.log)
+
+    let channels = []
+
+    const $ = cheerio.load(html)
+    $('.q').each((i, el) => {
+      const site_id = $(el).attr('id')
+      const name = $(el).find('a').first().data('channel')
+
+      if (!name) return
+
+      channels.push({
+        lang: 'it',
+        site_id,
+        name
+      })
+    })
+
+    return channels
   }
 }
 
