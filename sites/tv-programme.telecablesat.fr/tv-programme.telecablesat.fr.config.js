@@ -5,7 +5,7 @@ const { DateTime } = require('luxon')
 const API_ENDPOINT = 'https://tv-programme.telecablesat.fr/chaine'
 
 module.exports = {
-  site: 'telecablesat.fr',
+  site: 'tv-programme.telecablesat.fr',
   days: 2,
   delay: 5000,
   url: function ({ channel, date }) {

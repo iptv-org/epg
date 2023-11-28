@@ -1,7 +1,4 @@
-// npm run channels:parse -- --config=./sites/telecablesat.fr/telecablesat.fr.config.js --output=./sites/telecablesat.fr/telecablesat.fr.channels.xml
-// npm run grab -- --site=telecablesat.fr
-
-const { parser, url } = require('./telecablesat.fr.config.js')
+const { parser, url } = require('./tv-programme.telecablesat.fr.config.js')
 const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
