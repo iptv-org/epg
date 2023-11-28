@@ -1,6 +1,3 @@
-// node ./scripts/commands/parse-channels.js --config=./sites/tv.dir.bg/tv.dir.bg.config.js --output=./sites/tv.dir.bg/tv.dir.bg.channels.xml
-// npm run grab -- --site=tv.dir.bg
-
 const { parser, url } = require('./tv.dir.bg.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
