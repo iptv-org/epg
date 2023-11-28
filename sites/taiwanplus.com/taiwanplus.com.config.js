@@ -13,7 +13,6 @@ module.exports = {
   output: 'taiwanplus.com.guide.xml',
   channels: 'taiwanplus.com.channels.xml',
   lang: 'en',
-  delay: 5000,
 
   url: function () {
     return 'https://www.taiwanplus.com/api/video/live/schedule/0'
@@ -22,11 +21,7 @@ module.exports = {
   request: {
     method: 'GET',
     timeout: 5000,
-    cache: { ttl: 60 * 60 * 1000 }, // 60 * 60 seconds = 1 hour
-    headers: {
-      'User-Agent':
-        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36'
-    }
+    cache: { ttl: 60 * 60 * 1000 } // 60 * 60 seconds = 1 hour
   },
 
   logo: function (context) {

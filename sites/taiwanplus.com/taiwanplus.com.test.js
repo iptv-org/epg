@@ -1,6 +1,3 @@
-// npm run grab -- --site=taiwanplus.com
-// npx jest taiwanplus.com.test.js
-
 const { url, parser } = require('./taiwanplus.com.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
