@@ -3,13 +3,21 @@ const axios = require('axios')
 const { DateTime } = require('luxon')
 
 const API_ENDPOINT = 'https://tv-programme.telecablesat.fr/chaine'
+const headers = {
+  'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:47.0) Gecko/20100101 Firefox/47.0'
+}
 
 module.exports = {
   site: 'tv-programme.telecablesat.fr',
   days: 2,
   delay: 5000,
+  request: {
+    headers
+  },
   url: function ({ channel, date }) {
-    return `${API_ENDPOINT}/${channel.site_id}/index.html?date=${date.format('YYYY-MM-DD')}`
+    return `${API_ENDPOINT}/${channel.site_id}/index.html?date=${date.format(
+      'YYYY-MM-DD'
+    )}&period=morning`
   },
   async parser({ content, date, channel }) {
     let programs = []
@@ -17,8 +25,8 @@ module.exports = {
     if (!items.length) return programs
     const url = `${API_ENDPOINT}/${channel.site_id}/index.html`
     const promises = [
-      axios.get(`${url}?date=${date.format('YYYY-MM-DD')}&period=noon`),
-      axios.get(`${url}?date=${date.format('YYYY-MM-DD')}&period=afternoon`)
+      axios.get(`${url}?date=${date.format('YYYY-MM-DD')}&period=noon`, { headers }),
+      axios.get(`${url}?date=${date.format('YYYY-MM-DD')}&period=afternoon`, { headers })
     ]
     await Promise.allSettled(promises).then(results => {
       results.forEach(r => {
@@ -52,7 +60,7 @@ module.exports = {
   },
   async channels() {
     const data = await axios
-      .get('https://tv-programme.telecablesat.fr/')
+      .get('https://tv-programme.telecablesat.fr/', { headers })
       .then(r => r.data)
       .catch(console.log)
 
