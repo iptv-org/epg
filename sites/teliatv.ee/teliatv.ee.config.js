@@ -35,7 +35,7 @@ module.exports = {
     return Object.values(data.channels).map(item => {
       return {
         lang,
-        site_id: item.id,
+        site_id: `${lang}#${item.id}`,
         name: item.title
       }
     })

@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/teliatv.ee/teliatv.ee.config.js --output=./sites/teliatv.ee/teliatv.ee.channels.xml --set=lang:et
-// npm run grab -- --site=teliatv.ee
-
 const { parser, url } = require('./teliatv.ee.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
