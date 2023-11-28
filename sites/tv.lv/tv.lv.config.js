@@ -25,6 +25,27 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels() {
+    const axios = require('axios')
+    const groups = await axios
+      .get('https://www.tv.lv/data/channels/lvall')
+      .then(r => r.data)
+      .catch(console.log)
+
+    let channels = []
+
+    groups.forEach(group => {
+      group.channels.forEach(item => {
+        channels.push({
+          lang: 'lv',
+          site_id: item.slug,
+          name: item.name
+        })
+      })
+    })
+
+    return channels
   }
 }
 

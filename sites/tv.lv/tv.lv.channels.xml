@@ -1,23 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="tv.lv" lang="lv" xmltv_id="TV3Plus.lv" site_id="3-1">3+</channel>
-  <channel site="tv.lv" lang="lv" xmltv_id="ChannelOne.ru" site_id="pbk-1">Perviy kanal</channel>
-  <channel site="tv.lv" lang="lv" xmltv_id="EpicDrama.se" site_id="epic-drama-cee">Epic Drama</channel>
+  <!-- <channel site="tv.lv" lang="lv" xmltv_id="" site_id="arte">Arte</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="bbc-world">BBC World</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="boomerang-baltic-cee">Boomerang Baltic (CEE)</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="cartoon-network-rse">Cartoon Network RSE</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="detskii-klub-100">Детский - Клуб 100</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="deutche-welle">Deutche Welle</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="discovery-channel-ce">Discovery Channel CE</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="discovery-hd-showcase">Discovery HD Showcase</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="discovery-id-xtra">Discovery ID XTRA</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="discovery-life">Discovery Life</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="discovery-science-eu">Discovery Science EU</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="discovery-world-eu">Discovery World EU</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="disney-channel">Disney Channel</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="disney-junior">Disney Junior</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="disney-xd">Disney XD</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="djazztv">DJAZZ.tv</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="duo-3-baltic">Duo 3 Baltic</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="duo-3-blt">Duo 3 BLT</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="e-entertainment">E! Entertainment</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="esportstv">eSportsTV</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="euronews">Euronews</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="eurosport-2-bundesliga">Eurosport 2 (Bundesliga)</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="eurosport-deutchland">Eurosport Deutchland</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="extreme-sports">Extreme Sports</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="fashion-one">Fashion One</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="fight-sports-tv">Fight Sports TV</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="filmzone-lv">Filmzone LV</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="food-network-hd-emea">Food Network HD (EMEA)</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="fox">Fox</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="fox-life">Fox Life</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="france-24-uk">France 24 UK</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="futbol">Футбол</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="gulli">Gulli</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="history-europe">History Europe</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="kanal-7-lv">Kanal 7 LV</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="kidzone-mini-baltic">Kidzone Mini Baltic</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="kidzonetv-latvija">KidzoneTV Latvija</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="luxetv-hd">Luxe.TV HD</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="mcm-top">MCM TOP</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="mezzo">Mezzo</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="motorsport-tv">Motorsport TV</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="mtv-dance">MTV Dance</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="mtv-europe">MTV Europe</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="mtv-hits">MTV Hits</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="mtv-live-hd">MTV Live HD</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="mtv-music">MTV Music</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="mtv-rocks">MTV Rocks</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="mtv-sport-1">MTV Sport 1</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="mtv-sport-2">MTV sport 2</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="mvk">MVK</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="n-tv">N-TV</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="nat-geo-wild-europe">Nat Geo Wild Europe</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="national-geographic-baltic">National Geographic Baltic</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="national-geographic-channel-hd">National Geographic Channel HD</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="nautical-channel">Nautical Channel</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="nick-jr">Nick Jr.</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="nickelodeon-euro">Nickelodeon EURO</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="nickelodeon-latvia">Nickelodeon Latvia</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="pro-7">PRO 7</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="riga-tv24">Riga TV24</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="rtl">RTL</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="rtl-2">RTL 2</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="sat-1">SAT 1</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="smartzone-baltic-lithuania">Smartzone Baltic Lithuania</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="sport-1">Sport 1</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="sport1">Sport1</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="sportacentrs">Sportacentrs</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="stv-latvija">STV Latvija</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="tiji">TiJi</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="tlc-germany">TLC Germany</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="trace-sports">Trace Sports</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="travel-channel">Travel Channel</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="travel-channel-hd">Travel Channel HD</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="tv-21">TV-21</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="tv-kurzeme">TV Kurzeme</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="tve">TVE</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="unian">Униан</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="vh1-euro-imm">VH1 Euro IMM</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="viasat-golf">Viasat Golf</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="viasat-kino">Viasat Kino</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="viasat-kino-action">Viasat Kino Action</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="viasat-kino-comedy">Viasat Kino Comedy</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="viasat-kino-world">Viasat Kino World</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="viasat-naturehistory-hd">Viasat Nature/History HD</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="viasat-sport">Viasat Sport</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="viasat-sport-east">VIASAT Sport East</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="" site_id="vox">VOX</channel> -->
+  <channel site="tv.lv" lang="lv" xmltv_id="360TV.lv" site_id="360">360</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="3sat.de" site_id="3sat">3SAT</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="8TV.lv" site_id="8tv">8TV</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="AlJazeeraEnglish.qa" site_id="al-jazeera">Al Jazeera</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="AnimalPlanetEurope.uk" site_id="animal-planet-eu">Animal Planet EU</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="AnimalPlanetEuropeHD.uk" site_id="animal-planet-hd">Animal Planet HD</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="ARDalpha.de" site_id="ard">ARD</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="ArenaHDBaltic.lt" site_id="arena-hd-baltic">Arena HD Baltic</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="ArirangTV.kr" site_id="arirang-tv">Arirang TV</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="BBCEntertainment.uk" site_id="bbc-entertainment">BBC Entertainment</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="BloombergTVEurope.uk" site_id="bloomberg">Bloomberg</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="CBSReality.uk" site_id="cbs-reality">CBS Reality</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="CNBCEurope.uk" site_id="cnbc-europe">CNBC Europe</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="CNNInternationalEurope.us" site_id="cnn">CNN</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="Duo6.lv" site_id="duo-6-lv">Duo 6 LV</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="EpicDrama.se" site_id="epic-drama-cee">Epic Drama CEE</channel>
   <channel site="tv.lv" lang="lv" xmltv_id="Eurosport1.fr" site_id="eurosport-1">Eurosport 1</channel>
   <channel site="tv.lv" lang="lv" xmltv_id="Eurosport2.fr" site_id="eurosport-2">Eurosport 2</channel>
-  <channel site="tv.lv" lang="lv" xmltv_id="Go3Films.lv" site_id="tv3-film">TV 3 Film</channel>
-  <channel site="tv.lv" lang="lv" xmltv_id="LTV1.lv" site_id="ltv1">LTV 1</channel>
-  <channel site="tv.lv" lang="lv" xmltv_id="LTV7.lv" site_id="ltv7">LTV 7</channel>
-  <channel site="tv.lv" lang="lv" xmltv_id="RENTVBaltic.lv" site_id="rentv-baltic">REN TV Baltic</channel>
-  <channel site="tv.lv" lang="lv" xmltv_id="vijuTV1000.ru" site_id="tv1000-cee">TV 1000 CEE</channel>
-  <channel site="tv.lv" lang="lv" xmltv_id="vijuTV1000russkoe.ru" site_id="tv1000-kino">TV 1000 Russkoe Kino</channel>
-  <channel site="tv.lv" lang="lv" xmltv_id="TV3.lv" site_id="tv3-1">TV 3</channel>
-  <channel site="tv.lv" lang="lv" xmltv_id="TV3Life.lv" site_id="tv3-life">TV 3 Life</channel>
-  <channel site="tv.lv" lang="lv" xmltv_id="TV3Mini.lv" site_id="tv3-mini">TV 3 Mini</channel>
-  <channel site="tv.lv" lang="lv" xmltv_id="TV3Sport.uk" site_id="tv3-sport">TV 3 Sport</channel>
-  <channel site="tv.lv" lang="lv" xmltv_id="TV3Sport2.uk" site_id="tv3-sport-2">TV 3 Sport 2</channel>
-  <channel site="tv.lv" lang="lv" xmltv_id="TV6.lv" site_id="tv6-1">TV 6</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="FashionTVEurope.fr" site_id="fashion-tv-europe">Fashion TV Europe</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="FilmzonePlus.ee" site_id="filmzone">Filmzone +</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="Go3Films.ee" site_id="go3-films">GO3 Films</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="Go3Sport.ee" site_id="go3-sport">GO3 Sport</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="Go3Sport2.ee" site_id="go3-sport-2">GO3 Sport 2</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="Go3Sport3.ee" site_id="go3-sport-3">GO3 Sport 3</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="Go3Sport4.ee" site_id="go3-sport-4">GO3 Sport 4</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="KiKA.de" site_id="kika">KIKA</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="LoloTV.lv" site_id="lolo-tv-lv">Lolo TV (LV)</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="LTV1.lv" site_id="ltv1">LTV1</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="LTV7.lv" site_id="ltv7">LTV7</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="N24Doku.de" site_id="n24-doku">N24 Doku</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="Nitro.de" site_id="rtl-nitro">RTL Nitro</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="ORF1.at" site_id="orf1">ORF1</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="ORF2.at" site_id="orf2">ORF2</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="RealityXtra.uk" site_id="cbs-drama">CBS Drama</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="ReTV.lv" site_id="retv">ReTV</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="RTLSuper.de" site_id="super-rtl">Super RTL</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="SAT1Gold.de" site_id="sat1-gold">SAT.1 Gold</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="sixx.de" site_id="sixx">SIXX</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="StingrayCMusic.ca" site_id="c-music-tv">C Music TV</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="TraceUrban.fr" site_id="trace-urban">Trace Urban</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="TV3.lv" site_id="tv3-1">TV3</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="TV3Life.lv" site_id="tv3-life">TV3 Life</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="TV3Mini.lv" site_id="tv3-mini">TV3 Mini</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="TV3Plus.lv" site_id="3">3+</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="TV6.lv" site_id="tv6-1">TV6</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="VH1ClassicEurope.uk" site_id="vh1-classic-europe">VH1 Classic Europe</channel>
   <channel site="tv.lv" lang="lv" xmltv_id="ViasatExplore.se" site_id="viasat-explore-nordic">Viasat Explore Nordic</channel>
   <channel site="tv.lv" lang="lv" xmltv_id="ViasatHistory.se" site_id="viasat-history-cee">Viasat History CEE</channel>
-  <channel site="tv.lv" lang="lv" xmltv_id="ViasatNature.se" site_id="viasat-nature-cee">Viasat Nature CEE</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="ViasatNature.se" site_id="viasat-nature-cee">VIASAT Nature CEE</channel>
+  <channel site="tv.lv" lang="lv" xmltv_id="ZDF.de" site_id="zdf">ZDF</channel>
 </channels>
