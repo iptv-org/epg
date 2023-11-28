@@ -166,7 +166,7 @@
 | [tvireland.ie](sites/tvireland.ie)                                 | 🟢     |                                             |
 | [tvmi.mt](sites/tvmi.mt)                                           | 🟢     |                                             |
 | [tvmusor.hu](sites/tvmusor.hu)                                     | 🟢     |                                             |
-| [tvpassport.com](sites/tvpassport.com)                             | 🟡     | https://github.com/iptv-org/epg/issues/2175 |
+| [tvpassport.com](sites/tvpassport.com)                             | 🟢     |                                             |
 | [tvplus.com.tr](sites/tvplus.com.tr)                               | 🟢     |                                             |
 | [tvprofil.com](sites/tvprofil.com)                                 | 🟢     |                                             |
 | [tvtv.us](sites/tvtv.us)                                           | 🟡     | https://github.com/iptv-org/epg/issues/2176 |
