@@ -4,6 +4,9 @@ const dayjs = require('dayjs')
 module.exports = {
   site: 'tapdmv.com',
   days: 2,
+  request: {
+    maxContentLength: 10485760 // 10 Mb
+  },
   url({ channel, date }) {
     return `https://epg.tapdmv.com/calendar/${
       channel.site_id

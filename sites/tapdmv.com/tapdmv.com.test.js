@@ -1,6 +1,3 @@
-// npm run grab -- --site=tapdmv.com
-// npm run channels:parse -- --config=./sites/tapdmv.com/tapdmv.com.config.js --output=./sites/tapdmv.com/tapdmv.com.channels.xml
-
 const { parser, url } = require('./tapdmv.com.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
