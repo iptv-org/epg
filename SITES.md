@@ -51,6 +51,7 @@
 | [horizon.tv](sites/horizon.tv)                                     | 🟢     |                                             |
 | [i.mjh.nz](sites/i.mjh.nz)                                         | 🟢     |                                             |
 | [i24news.tv](sites/i24news.tv)                                     | 🟢     |                                             |
+| [iltalehti.fi](sites/iltalehti.fi)                                 | 🟢     |                                             |
 | [indihometv.com](sites/indihometv.com)                             | 🟢     |                                             |
 | [ionplustv.com](sites/ionplustv.com)                               | 🟢     |                                             |
 | [ipko.com](sites/ipko.com)                                         | 🟢     |                                             |
@@ -128,7 +129,6 @@
 | [tapdmv.com](sites/tapdmv.com)                                     | 🟢     |                                             |
 | [telenet.tv](sites/telenet.tv)                                     | 🟢     |                                             |
 | [teliatv.ee](sites/teliatv.ee)                                     | 🟢     |                                             |
-| [telkku.com](sites/telkku.com)                                     | 🟢     |                                             |
 | [telkussa.fi](sites/telkussa.fi)                                   | 🟢     |                                             |
 | [telsu.fi](sites/telsu.fi)                                         | 🟢     |                                             |
 | [tivu.tv](sites/tivu.tv)                                           | 🟢     |                                             |
