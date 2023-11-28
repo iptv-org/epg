@@ -13,7 +13,7 @@
 | [astro.com.my](sites/astro.com.my)                                 | 🟢     |                                             |
 | [bein.com](sites/bein.com)                                         | 🟢     |                                             |
 | [beinsports.com](sites/beinsports.com)                             | 🟢     |                                             |
-| [berrymedia.co.kr](sites/berrymedia.co.kr)                         | 🟡     | https://github.com/iptv-org/epg/issues/2235 |
+| [berrymedia.co.kr](sites/berrymedia.co.kr)                         | 🟢     |                                             |
 | [bt.com](sites/bt.com)                                             | 🟡     | https://github.com/iptv-org/epg/issues/2221 |
 | [cablego.com.pe](sites/cablego.com.pe)                             | 🟢     |                                             |
 | [cableplus.com.uy](sites/cableplus.com.uy)                         | 🟢     |                                             |
