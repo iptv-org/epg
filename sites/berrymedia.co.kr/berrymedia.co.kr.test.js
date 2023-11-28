@@ -1,5 +1,3 @@
-// npm run grab -- --site=berrymedia.co.kr
-
 const { parser, url, request } = require('./berrymedia.co.kr.config.js')
 const fs = require('fs')
 const path = require('path')
