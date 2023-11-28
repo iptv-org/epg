@@ -2,12 +2,17 @@ const axios = require('axios')
 const dayjs = require('dayjs')
 
 module.exports = {
-  site: 'telkku.com',
+  site: 'iltalehti.fi',
   days: 2,
+  request: {
+    cache: {
+      ttl: 60 * 60 * 1000 // 1 hour
+    }
+  },
   url: function ({ channel, date }) {
     const [group] = channel.site_id.split('#')
 
-    return `https://telkku.com/api/channel-groups/${group}/offering?startTime=00%3A00%3A00.000&duration=PT24H&inclusionPolicy=IncludeOngoingAlso&limit=1000&tvDate=${date.format(
+    return `https://telkku.com/api/channel-groups/default_builtin_channelgroup${group}/offering?startTime=00%3A00%3A00.000&duration=PT24H&inclusionPolicy=IncludeOngoingAlso&limit=1000&tvDate=${date.format(
       'YYYY-MM-DD'
     )}&view=PublicationDetails`
   },
