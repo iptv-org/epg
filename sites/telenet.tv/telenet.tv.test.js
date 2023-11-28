@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/telenet.tv/telenet.tv.config.js --output=./sites/telenet.tv/telenet.tv.channels.xml
-// npm run grab -- --site=telenet.tv
-
 const { parser, url } = require('./telenet.tv.config.js')
 const fs = require('fs')
 const path = require('path')
