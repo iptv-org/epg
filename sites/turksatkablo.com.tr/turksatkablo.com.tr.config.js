@@ -7,7 +7,10 @@ module.exports = {
     return `https://www.turksatkablo.com.tr/userUpload/EPG/y.json?_=${date.valueOf()}`
   },
   request: {
-    timeout: 60000
+    timeout: 60000,
+    cache: {
+      ttl: 60 * 60 * 1000 // 1 hour
+    }
   },
   parser: function ({ content, channel, date }) {
     let programs = []
@@ -32,6 +35,25 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels() {
+    const axios = require('axios')
+    const data = await axios
+      .get('https://www.turksatkablo.com.tr/userUpload/EPG/y.json')
+      .then(r => r.data)
+      .catch(console.log)
+
+    let channels = []
+
+    data.k.forEach(item => {
+      channels.push({
+        lang: 'tr',
+        site_id: item.x,
+        name: item.n
+      })
+    })
+
+    return channels
   }
 }
 

@@ -1,5 +1,3 @@
-// npm run grab -- --site=turksatkablo.com.tr
-
 const { parser, url } = require('./turksatkablo.com.tr.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
