@@ -36,6 +36,7 @@ function parseStart(item) {
 
 function parseItems(content, channel) {
   const data = JSON.parse(content)
+  if (!data || !data.data) return []
 
   return data.data[channel.site_id].list || []
 }
