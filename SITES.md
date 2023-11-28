@@ -115,7 +115,7 @@
 | [ruv.is](sites/ruv.is)                                             | 🟢     |                                             |
 | [sat.tv](sites/sat.tv)                                             | 🟢     |                                             |
 | [shahid.mbc.net](sites/shahid.mbc.net)                             | 🟢     |                                             |
-| [siba.com.co](sites/siba.com.co)                                   | 🟡     | https://github.com/iptv-org/epg/issues/2249 |
+| [siba.com.co](sites/siba.com.co)                                   | 🟢     |                                             |
 | [singtel.com](sites/singtel.com)                                   | 🟢     |                                             |
 | [sjonvarp.is](sites/sjonvarp.is)                                   | 🟢     |                                             |
 | [sky.co.nz](sites/sky.co.nz)                                       | 🟢     |                                             |
