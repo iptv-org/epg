@@ -1,5 +1,3 @@
-// npm run grab -- --site=toonamiaftermath.com
-
 const { parser, url } = require('./toonamiaftermath.com.config.js')
 const fs = require('fs')
 const path = require('path')
