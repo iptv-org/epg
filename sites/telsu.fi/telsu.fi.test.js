@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/telsu.fi/telsu.fi.config.js --output=./sites/telsu.fi/telsu.fi.channels.xml
-// npm run grab -- --site=telsu.fi
-
 const { parser, url } = require('./telsu.fi.config.js')
 const fs = require('fs')
 const path = require('path')
