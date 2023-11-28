@@ -7,9 +7,13 @@ module.exports = {
     cache: {
       ttl: 3600000 // 1 hour
     },
-    maxContentLength: 10485760 // 10 MB
+    maxContentLength: 104857600 // 100 MB
   },
-  url: 'https://nzxmltv.com/xmltv/guide.xml',
+  url({ channel }) {
+    const [path] = channel.site_id.split('#')
+
+    return `https://nzxmltv.com/${path}.xml`
+  },
   parser({ content, channel, date }) {
     const programs = []
     parseItems(content, channel, date).forEach(item => {
@@ -35,21 +39,32 @@ module.exports = {
 
     return programs
   },
-  async channels() {
+  async channels({ provider }) {
     const axios = require('axios')
     const cheerio = require('cheerio')
+
+    const providers = {
+      freeview: 'xmltv/guide',
+      sky: 'sky/guide',
+      redbull: 'iptv/redbull',
+      pluto: 'iptv/plutotv'
+    }
+
+    const channels = []
+    const path = providers[provider]
     const xml = await axios
-      .get('https://nzxmltv.com/xmltv/guide.xml')
+      .get(`https://nzxmltv.com/${path}.xml`)
       .then(r => r.data)
       .catch(console.error)
 
-    const channels = []
     const $ = cheerio.load(xml)
     $('tv channel').each((i, el) => {
       const disp = $(el).find('display-name')
+      const channelId = $(el).attr('id')
+
       channels.push({
         lang: disp.attr('lang').substr(0, 2),
-        site_id: $(el).attr('id'),
+        site_id: `${path}#${channelId}`,
         name: disp.text().trim()
       })
     })
@@ -60,6 +75,7 @@ module.exports = {
 
 function parseItems(content, channel, date) {
   const { programs } = parser.parse(content)
+  const [, channelId] = channel.site_id.split('#')
 
-  return programs.filter(p => p.channel === channel.site_id && date.isSame(p.start, 'day'))
+  return programs.filter(p => p.channel === channelId && date.isSame(p.start, 'day'))
 }

@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/nzxmltv.com/nzxmltv.com.config.js --output=./sites/nzxmltv.com/nzxmltv.com.channels.xml
-// npm run grab -- --site=nzxmltv.com
-
 const { parser, url } = require('./nzxmltv.com.config.js')
 const fs = require('fs')
 const path = require('path')
@@ -13,12 +10,12 @@ dayjs.extend(utc)
 
 const date = dayjs.utc('2023-11-21').startOf('d')
 const channel = {
-  site_id: '1',
+  site_id: 'xmltv/guide#1',
   xmltv_id: 'TVNZ1.nz'
 }
 
 it('can generate valid url', () => {
-  expect(url).toBe('https://nzxmltv.com/xmltv/guide.xml')
+  expect(url({ channel })).toBe('https://nzxmltv.com/xmltv/guide.xml')
 })
 
 it('can parse response', () => {
