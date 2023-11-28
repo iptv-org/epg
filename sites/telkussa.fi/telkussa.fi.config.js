@@ -19,12 +19,27 @@ module.exports = {
         programs.push({
           title: item.name,
           description: item.description,
-          start: start.toString(),
-          stop: stop.toString()
+          start,
+          stop
         })
       }
     })
 
     return programs
+  },
+  async channels({ lang }) {
+    const axios = require('axios')
+    const data = await axios
+      .get(`https://telkussa.fi/API/Channels`)
+      .then(r => r.data)
+      .catch(console.log)
+
+    return data.map(item => {
+      return {
+        lang: 'fi',
+        site_id: item.id,
+        name: item.name
+      }
+    })
   }
 }
