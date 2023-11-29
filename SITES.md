@@ -146,7 +146,7 @@
 | [tv.post.lu](sites/tv.post.lu)                                     | 🟢     |                                             |
 | [tv.trueid.net](sites/tv.trueid.net)                               | 🟡     | https://github.com/iptv-org/epg/issues/2164 |
 | [tv.vera.com.uy](sites/tv.vera.com.uy)                             | 🟢     |                                             |
-| [tv.yandex.ru](sites/tv.yandex.ru)                                 | 🟡     | https://github.com/iptv-org/epg/issues/2170 |
+| [tv.yandex.ru](sites/tv.yandex.ru)                                 | 🟢     |                                             |
 | [tv.yettel.hu](sites/tv.yettel.hu)                                 | 🟢     |                                             |
 | [tv2go.t-2.net](sites/tv2go.t-2.net)                               | 🟢     |                                             |
 | [tv24.co.uk](sites/tv24.co.uk)                                     | 🟢     |                                             |
