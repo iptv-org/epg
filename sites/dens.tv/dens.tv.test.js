@@ -1,14 +1,12 @@
-// npm run channels:parse -- --config=./sites/dens.tv/dens.tv.config.js --output=./sites/dens.tv/dens.tv.channels.xml
-// npm run grab -- --site=dens.tv
-
 const { url, parser } = require('./dens.tv.config.js')
 const fs = require('fs')
 const path = require('path')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
+
 dayjs.extend(utc)
 
-const date = dayjs.utc('2023-11-10', 'YYYY-MM-DD').startOf('d')
+const date = dayjs.utc('2023-11-10').startOf('d')
 const channel = { site_id: '6', xmltv_id: 'MetroTV.id', lang: 'id' }
 
 it('can generate valid url', () => {
