@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/tvgids.nl/tvgids.nl.config.js --output=./sites/tvgids.nl/tvgids.nl.channels.xml
-// npm run grab -- --site=tvgids.nl
-
 const { parser, url } = require('./tvgids.nl.config.js')
 const fs = require('fs')
 const path = require('path')

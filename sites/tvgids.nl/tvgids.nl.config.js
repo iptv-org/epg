@@ -7,7 +7,7 @@ module.exports = {
   days: 2,
   url: function ({ date, channel }) {
     const path =
-      DateTime.now().day === DateTime.fromMillis(date.valueOf()).day
+      DateTime.utc().day === DateTime.fromMillis(date.valueOf()).day
         ? ''
         : `${date.format('DD-MM-YYYY')}/`
 
@@ -48,7 +48,7 @@ module.exports = {
     const $ = cheerio.load(data)
 
     const channels = []
-    $('#channel-container > div').each((i, el) => {
+    $('.guide__channel-logo-container').each((i, el) => {
       channels.push({
         site_id: $(el).find('a').attr('id'),
         name: $(el).find('img').attr('title'),
