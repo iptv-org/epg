@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/tvcesoir.fr/tvcesoir.fr.config.js --output=./sites/tvcesoir.fr/tvcesoir.fr.channels.xml
-// npm run grab -- --site=tvcesoir.fr
-
 const { parser, url } = require('./tvcesoir.fr.config.js')
 const fs = require('fs')
 const path = require('path')
