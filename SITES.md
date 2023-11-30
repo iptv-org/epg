@@ -6,6 +6,7 @@
 | [abc.net.au](sites/abc.net.au)                                     | 🟢     |                                             |
 | [allente.se](sites/allente.se)                                     | 🟢     |                                             |
 | [andorradifusio.ad](sites/andorradifusio.ad)                       | 🟢     |                                             |
+| [anteltv.com.uy](sites/anteltv.com.uy)                             | 🟢     |                                             |
 | [arianaafgtv.com](sites/arianaafgtv.com)                           | 🟢     |                                             |
 | [arianatelevision.com](sites/arianatelevision.com)                 | 🟢     |                                             |
 | [arirang.com](sites/arirang.com)                                   | 🟢     |                                             |
@@ -146,7 +147,6 @@
 | [tv.nu](sites/tv.nu)                                               | 🟢     |                                             |
 | [tv.post.lu](sites/tv.post.lu)                                     | 🟢     |                                             |
 | [tv.trueid.net](sites/tv.trueid.net)                               | 🟡     | https://github.com/iptv-org/epg/issues/2164 |
-| [tv.vera.com.uy](sites/tv.vera.com.uy)                             | 🟢     |                                             |
 | [tv.yandex.ru](sites/tv.yandex.ru)                                 | 🟢     |                                             |
 | [tv.yettel.hu](sites/tv.yettel.hu)                                 | 🟢     |                                             |
 | [tv2go.t-2.net](sites/tv2go.t-2.net)                               | 🟢     |                                             |
