@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/tvarenasport.com/tvarenasport.com.config.js --output=./sites/tvarenasport.com/tvarenasport.com.channels.xml --set=country:rs
-// npm run grab -- --site=tvarenasport.com
-
 const { parser, url } = require('./tvarenasport.com.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
