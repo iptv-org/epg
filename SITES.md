@@ -153,8 +153,8 @@
 | [tv24.co.uk](sites/tv24.co.uk)                                     | 🟢     |                                             |
 | [tv24.se](sites/tv24.se)                                           | 🟢     |                                             |
 | [tva.tv](sites/tva.tv)                                             | 🟡     | https://github.com/iptv-org/epg/issues/2264 |
-| [tvarenasport.com](sites/tvarenasport.com)                         | 🟢     |                                             |
-| [tvarenasport.hr](sites/tvarenasport.hr)                           | 🟢     |                                             |
+| [tvarenasport.com](sites/tvarenasport.com)                         | 🟡     | https://github.com/iptv-org/epg/issues/2266 |
+| [tvarenasport.hr](sites/tvarenasport.hr)                           | 🟡     | https://github.com/iptv-org/epg/issues/2267 |
 | [tvcesoir.fr](sites/tvcesoir.fr)                                   | 🟢     |                                             |
 | [tvcubana.icrt.cu](sites/tvcubana.icrt.cu)                         | 🟢     |                                             |
 | [tvgids.nl](sites/tvgids.nl)                                       | 🟢     |                                             |
