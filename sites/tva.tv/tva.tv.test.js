@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/tva.tv/tva.tv.config.js --output=./sites/tva.tv/tva.tv.channels.xml
-// npm run grab -- --site=tva.tv
-
 const { parser, url } = require('./tva.tv.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
