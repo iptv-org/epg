@@ -26,6 +26,7 @@
 | [comteco.com.bo](sites/comteco.com.bo)                             | 🟡     | https://github.com/iptv-org/epg/issues/2239 |
 | [cosmote.gr](sites/cosmote.gr)                                     | 🟢     |                                             |
 | [cubmu.com](sites/cubmu.com)                                       | 🟢     |                                             |
+| [dens.tv](sites/dens.tv)                                           | 🟢     |                                             |
 | [digiturk.com.tr](sites/digiturk.com.tr)                           | 🟢     |                                             |
 | [directv.com](sites/directv.com)                                   | 🟢     |                                             |
 | [directv.com.ar](sites/directv.com.ar)                             | 🟡     | https://github.com/iptv-org/epg/issues/2248 |
