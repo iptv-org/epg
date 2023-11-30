@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/tv.yettel.hu/tv.yettel.hu.config.js --output=./sites/tv.yettel.hu/tv.yettel.hu.channels.xml
-// npm run grab -- --site=tv.yettel.hu
-
 const { parser, url } = require('./tv.yettel.hu.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
