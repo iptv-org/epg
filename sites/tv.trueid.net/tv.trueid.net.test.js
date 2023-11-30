@@ -1,5 +1,3 @@
-// NODE_OPTIONS=--insecure-http-parser npx epg-grabber --config=sites/tv.trueid.net/tv.trueid.net.config.js --channels=sites/tv.trueid.net/tv.trueid.net.channels.xml --output=guide.xml --timeout=30000 --days=2
-
 const { parser, url } = require('./tv.trueid.net.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')

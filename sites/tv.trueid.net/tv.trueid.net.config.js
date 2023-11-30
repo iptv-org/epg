@@ -27,6 +27,35 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels({ token }) {
+    const axios = require('axios')
+
+    const ACCESS_TOKEN =
+      'MTM4MDY0NGUwZjFmYjZiMTRjODI4OTRhMGM2ODJkMTQ3ZTAxNWM5ZDoxZmI2YjE0YzgyODk0YTBjNjgyZDE0N2UwMTVjOWQ='
+
+    const data = await axios
+      .get(`https://tv.trueid.net/api/channel/getChannelListByAllCate`, {
+        params: {
+          lang: 'en',
+          country: 'th'
+        },
+        headers: {
+          authorization: `Basic ${ACCESS_TOKEN}`
+        }
+      })
+      .then(r => r.data)
+      .catch(console.log)
+
+    return data.data.channelsList
+      .find(i => i.catSlug === 'TrueID : All')
+      .channels.map(item => {
+        return {
+          lang: 'th',
+          site_id: item.slug,
+          name: item.title
+        }
+      })
   }
 }
 
