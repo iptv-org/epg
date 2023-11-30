@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/tvarenasport.hr/tvarenasport.hr.config.js --output=./sites/tvarenasport.hr/tvarenasport.hr.channels.xml
-// npm run grab -- --site=tvarenasport.hr
-
 const { parser, url } = require('./tvarenasport.hr.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
