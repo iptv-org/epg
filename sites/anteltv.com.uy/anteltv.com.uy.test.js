@@ -1,7 +1,4 @@
-// npm run channels:parse -- --config=./sites/tv.vera.com.uy/tv.vera.com.uy.config.js --output=./sites/tv.vera.com.uy/tv.vera.com.uy.channels.xml
-// npm run grab -- --site=tv.vera.com.uy
-
-const { parser, url, request } = require('./tv.vera.com.uy.config.js')
+const { parser, url, request } = require('./anteltv.com.uy.config.js')
 const fs = require('fs')
 const axios = require('axios')
 const path = require('path')

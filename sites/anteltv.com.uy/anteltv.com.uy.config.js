@@ -11,7 +11,7 @@ dayjs.extend(customParseFormat)
 const API_ENDPOINT = 'https://cds-frontend.vera.com.uy/api-contenidos'
 
 module.exports = {
-  site: 'tv.vera.com.uy',
+  site: 'anteltv.com.uy',
   days: 2,
   async url({ date, channel }) {
     const session = await loadSessionDetails()
