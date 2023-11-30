@@ -36,6 +36,29 @@ module.exports = {
     }
 
     return programs
+  },
+  async channels() {
+    const providers = [9100001138]
+
+    let channels = []
+    for (let providerId of providers) {
+      const data = await axios
+        .get(
+          `https://fandom-prod.apigee.net/v1/xapi/tvschedules/tvguide/serviceprovider/${providerId}/sources/web`
+        )
+        .then(r => r.data)
+        .catch(console.log)
+
+      data.data.items.forEach(item => {
+        channels.push({
+          lang: 'en',
+          site_id: `${providerId}#${item.sourceId}`,
+          name: item.fullName
+        })
+      })
+    }
+
+    return channels
   }
 }
 
