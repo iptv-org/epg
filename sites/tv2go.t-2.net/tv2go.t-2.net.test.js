@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/tv2go.t-2.net/tv2go.t-2.net.config.js --output=./sites/tv2go.t-2.net/tv2go.t-2.net.channels.xml
-// npm run grab -- --site=tv2go.t-2.net
-
 const { parser, url, request } = require('./tv2go.t-2.net.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
