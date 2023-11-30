@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/tv24.co.uk/tv24.co.uk.config.js --output=./sites/tv24.co.uk/tv24.co.uk.channels.xml
-// npm run grab -- --site=tv24.co.uk
-
 const { parser, url } = require('./tv24.co.uk.config.js')
 const fs = require('fs')
 const path = require('path')
