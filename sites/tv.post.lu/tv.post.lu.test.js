@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/tv.post.lu/tv.post.lu.config.js --output=./sites/tv.post.lu/tv.post.lu.channels.xml
-// npm run grab -- --site=tv.post.lu
-
 const { parser, url } = require('./tv.post.lu.config.js')
 const fs = require('fs')
 const path = require('path')
