@@ -1,5 +1,3 @@
-// npm run grab -- --site=tvcubana.icrt.cu
-
 const { parser, url } = require('./tvcubana.icrt.cu.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
