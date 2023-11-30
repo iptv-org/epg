@@ -1,5 +1,3 @@
-// npm run grab -- --site=tv.mail.ru
-
 const { parser, url } = require('./tv.mail.ru.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
