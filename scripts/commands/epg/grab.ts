@@ -52,7 +52,7 @@ async function main() {
 
   const logger = new Logger()
 
-  logger.start('staring...')
+  logger.start('starting...')
 
   logger.info('config:')
   logger.tree(options)
