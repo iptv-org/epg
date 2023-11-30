@@ -152,7 +152,7 @@
 | [tv2go.t-2.net](sites/tv2go.t-2.net)                               | 🟢     |                                             |
 | [tv24.co.uk](sites/tv24.co.uk)                                     | 🟢     |                                             |
 | [tv24.se](sites/tv24.se)                                           | 🟢     |                                             |
-| [tva.tv](sites/tva.tv)                                             | 🟢     |                                             |
+| [tva.tv](sites/tva.tv)                                             | 🟡     | https://github.com/iptv-org/epg/issues/2264 |
 | [tvarenasport.com](sites/tvarenasport.com)                         | 🟢     |                                             |
 | [tvarenasport.hr](sites/tvarenasport.hr)                           | 🟢     |                                             |
 | [tvcesoir.fr](sites/tvcesoir.fr)                                   | 🟢     |                                             |
