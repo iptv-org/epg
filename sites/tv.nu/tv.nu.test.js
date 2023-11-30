@@ -1,5 +1,3 @@
-// npm run grab -- --site=tv.nu
-
 const { parser, url } = require('./tv.nu.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')

@@ -1,39 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
+  <!-- <channel site="tv.nu" lang="sv" xmltv_id="" site_id="adult-channel-nightly">Adult Channel Nightly</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="" site_id="bbc-news">BBC News</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="" site_id="bloomberg-tv-hd-uk">Bloomberg TV HD (UK)</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="" site_id="curiosity-stream-eu">Curiosity Stream EU</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="" site_id="disney-junior-lang-tabla">Disney Junior (lång tablå)</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="" site_id="history-hd-internationell">History HD (Internationell)</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="" site_id="mitteldeutscher-rundfunk">Mitteldeutscher Rundfunk (MDF)</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="" site_id="mtv-00s-europe">MTV 00s Europe</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="" site_id="national-geographic-3">National Geographic (International)</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="" site_id="national-geographic-hd-3">National Geographic HD</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="" site_id="national-geographic-hd-30242">National Geographic HD</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="" site_id="nick-jr-lang-tabla">Nick JR (lång tablå)</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="" site_id="true-crime">True Crime</channel> -->
   <channel site="tv.nu" lang="sv" xmltv_id="3sat.de" site_id="3sat">3sat</channel>
-  <channel site="tv.nu" lang="sv" xmltv_id="AdultChannel.uk" site_id="adult-channel">Adult Channel (UK)</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="AdultChannel.uk" site_id="adult-channel">Adult Channel</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="AlJazeeraEnglish.qa" site_id="al-jazeera-english">Al Jazeera English</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="AnimalPlanetNordic.uk" site_id="animal-planet">Animal Planet</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="arte.fr" site_id="arte">ARTE</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="ATGLive.se" site_id="atg-live">ATG Live</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="AxessTV.se" site_id="axess-tv">Axess TV</channel>
-  <channel site="tv.nu" lang="sv" xmltv_id="BBCBrit.se" site_id="bbc-brit">BBC Brit</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="BBCEarthNordic.uk" site_id="bbc-earth">BBC Earth</channel>
-  <channel site="tv.nu" lang="sv" xmltv_id="BBCNewsEurope.uk" site_id="bbc-world-news">BBC World News</channel>
-  <channel site="tv.nu" lang="sv" xmltv_id="BloombergTVEurope.uk" site_id="bloomberg-tv-hd">Bloomberg TV HD</channel>
-  <channel site="tv.nu" lang="sv" xmltv_id="BoomerangNordic.uk" site_id="boomerang">Boomerang</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="BBCNordic.uk" site_id="bbc-nordic">BBC Nordic</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="BrazzersTVEurope.us" site_id="brazzers-tv-plus">BraZZers TV Plus</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="Cartoonito.se" site_id="cartoonito">Cartoonito</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="CartoonNetworkScandinavia.uk" site_id="cartoon-network">Cartoon Network</channel>
-  <channel site="tv.nu" lang="sv" xmltv_id="CBSRealityEMEA.uk" site_id="cbs-reality">CBS Reality</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="CGTNDocumentary.cn" site_id="china-global-television-network-9-documentary">China Global Television Network 9 Documentary</channel>
-  <channel site="tv.nu" lang="sv" xmltv_id="CGTNEurope.cn" site_id="china-global-television-network">China Global Television Network (Europe)</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="CGTNEurope.cn" site_id="china-global-television-network">China Global Television Network</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="ClubMTVEurope.uk" site_id="club-mtv">Club MTV</channel>
-  <channel site="tv.nu" lang="sv" xmltv_id="CMoreFirst.se" site_id="c-more-first">C More First</channel>
-  <channel site="tv.nu" lang="sv" xmltv_id="CMoreFotboll.se" site_id="c-more-fotboll">C More Fotboll</channel>
-  <channel site="tv.nu" lang="sv" xmltv_id="CMoreGolf.se" site_id="c-more-golf">C More Mix</channel>
-  <channel site="tv.nu" lang="sv" xmltv_id="CMoreHits.se" site_id="c-more-hits">C More Hits</channel>
-  <channel site="tv.nu" lang="sv" xmltv_id="CMoreHockey.se" site_id="c-more-hockey">C More Hockey</channel>
-  <channel site="tv.nu" lang="sv" xmltv_id="CMoreLive.se" site_id="c-more-live">C More Live</channel>
-  <channel site="tv.nu" lang="sv" xmltv_id="CMoreLive2.se" site_id="c-more-live-2">C More Live 2</channel>
-  <channel site="tv.nu" lang="sv" xmltv_id="CMoreLive3.se" site_id="c-more-live-3">C More Live 3</channel>
-  <channel site="tv.nu" lang="sv" xmltv_id="CMoreLive4.se" site_id="c-more-live-4">C More Live 4</channel>
-  <channel site="tv.nu" lang="sv" xmltv_id="TV4Tennis.se" site_id="c-more-live-5">C More Live 5</channel>
-  <channel site="tv.nu" lang="sv" xmltv_id="CMoreMix.se" site_id="c-more-mix">C More Mix</channel>
-  <channel site="tv.nu" lang="sv" xmltv_id="CMoreSeries.se" site_id="c-more-series">C More Series</channel>
-  <channel site="tv.nu" lang="sv" xmltv_id="CMoreStars.se" site_id="c-more-stars">C More Stars</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="CNBCEurope.uk" site_id="cnbc">CNBC</channel>
-  <channel site="tv.nu" lang="sv" xmltv_id="CNNInternationalEurope.us" site_id="cnn">CNN</channel>
-  <channel site="tv.nu" lang="sv" xmltv_id="CuriosityChannel.us" site_id="curiositystream">Curiosity Stream Channel</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="CNNInternationalEurope.us" site_id="cnn-international">CNN International</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="CuriosityChannel.us" site_id="curiositystream">CuriosityStream</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="DasErste.de" site_id="das-erste">Das Erste</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="DiscoveryChannel.se" site_id="discovery-channel">Discovery Channel</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="DiscoveryPlusExtra1.se" site_id="discovery-extra-1">Discovery+ Extra 1</channel>
@@ -47,13 +44,19 @@
   <channel site="tv.nu" lang="sv" xmltv_id="DiscoveryScience.uk" site_id="discovery-science">Discovery Science</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="DisneyChannelScandinavia.uk" site_id="disney-channel">Disney Channel</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="DisneyJuniorScandinavia.uk" site_id="disney-junior">Disney Junior</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="dk4.dk" site_id="dk4">DK4</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="dk4HD.dk" site_id="dk4-hd">DK4 HD</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="DMAX.de" site_id="dmax">DMAX</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="DR1.dk" site_id="dr1">DR1</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="DR2.dk" site_id="dr2">DR2</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="DR3.dk" site_id="dr3">DR3</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="DRK.dk" site_id="dr-k">DR K</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="DRRamasjang.dk" site_id="dr-ramasjang">DR Ramasjang</channel>
-  <channel site="tv.nu" lang="sv" xmltv_id="DWEnglish.de" site_id="dw">DW</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="DRUltra.dk" site_id="dr-ultra">DR Ultra</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="DWDeutsch.de" site_id="dw-en-aleman">DW en alemán</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="EEurope.nl" site_id="e">E!</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="eSports1.de" site_id="esportsone">eSportsone</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="eSportsTVHD.se" site_id="esportstv-hd">eSportsTV HD</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="EuronewsEnglish.fr" site_id="euro-news">Euro News</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="Eurosport1.fr" site_id="eurosport-1">Eurosport 1</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="Eurosport2.fr" site_id="eurosport-2">Eurosport 2</channel>
@@ -62,34 +65,39 @@
   <channel site="tv.nu" lang="sv" xmltv_id="FashionTVEurope.fr" site_id="ftv">FTV</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="FightSports.us" site_id="fight-sports">Fight Sports</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="France2.fr" site_id="france-2">France 2</channel>
-  <channel site="tv.nu" lang="sv" xmltv_id="France24English.fr" site_id="france-24-english-hd">France 24 English HD</channel>
-  <channel site="tv.nu" lang="sv" xmltv_id="FUELTV.at" site_id="fuel-tv">FULE TV</channel>
-  <channel site="tv.nu" lang="sv" xmltv_id="GINXEsportsTV.uk" site_id="inx-esports-tv">GINX eSports TV</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="France24EnglishHD.fr" site_id="france-24-english-hd">France 24 English HD</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="FUELTV.at" site_id="fuel-tv">FUEL TV</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="GINXEsportsTV.uk" site_id="ginx-esports-tv">GINX eSports TV</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="Godare.se" site_id="godare">Godare</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="GODTV.uk" site_id="god-tv">GOD TV</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="HighTV3D.us" site_id="high-tv-3d">High TV 3D</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="History2Nordic.us" site_id="h2">H2</channel>
-  <channel site="tv.nu" lang="sv" xmltv_id="History.se" site_id="history-dh">Histrory HD</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="HistoryHD.se" site_id="history-hd">History HD</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="HorseCountryTV.uk" site_id="horse-country-tv">Horse &amp; Country TV</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="HRT1.hr" site_id="hrt1">HRT1</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="HustlerHD.nl" site_id="hustler-tv">Hustler TV</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="InvestigationDiscovery.se" site_id="investigation-discovery">Investigation Discovery</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="Kanal10.se" site_id="kanal-10">Kanal 10</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="Kanal11.se" site_id="kanal-11">Kanal 11</channel>
-  <channel site="tv.nu" lang="sv" xmltv_id="Kanal4.dk" site_id="kanal-4">Kanal 4 Danmark</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="Kanal4.dk" site_id="kanal-4">Kanal 4</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="Kanal5.dk" site_id="kanal-5-danmark">Kanal 5 Danmark</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="Kanal5.se" site_id="kanal-5">Kanal 5</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="Kanal9.se" site_id="kanal-9">Kanal 9</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="Kunskapskanalen.se" site_id="kunskapskanalen">Kunskapskanalen</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="LoveNature4K.ca" site_id="love-nature-4k-uhd">Love Nature 4K UHD</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="Mezzo.fr" site_id="mezzo">Mezzo</channel>
-  <channel site="tv.nu" lang="sv" xmltv_id="MezzoLive.fr" site_id="mezzo-live-hd">Mezzo Live HD</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="MezzoLive.fr" site_id="mezzo-live">Mezzo Live</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="Motorvision.de" site_id="motorvision-tv">Motorvision TV</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="Motorvision.de" site_id="motorvision-tv-30230">Motorvision TV (DE)</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="MTV3.fi" site_id="mtv3">MTV3</channel>
-  <channel site="tv.nu" lang="sv" xmltv_id="MTV90s.uk" site_id="mtv-rocks-3">MTV 90s</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="MTV80s.uk" site_id="mtv-80s">MTV 80s</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="MTV90s.uk" site_id="mtv-90s">MTV 90s</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="MTVAitio.se" site_id="mtv-aitio">MTV Aitio</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="MTVGlobal.uk" site_id="mtv">MTV</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="MTVHitsEurope.uk" site_id="mtv-hits">MTV Hits</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="MTVLive.uk" site_id="mtv-live-hd">MTV Live HD</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="MTVViihde.se" site_id="mtv-viihde">MTV Viihde</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="NationalGeographic.se" site_id="national-geographic">National Geographic</channel>
-  <channel site="tv.nu" lang="sv" xmltv_id="NationalGeographic.uk" site_id="national-geographic-hd-3">National Geographic HD (UK)</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="NationalGeographicWild.se" site_id="national-geographic-wild">National Geographic Wild</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="NauticalChannel.it" site_id="nautical-channel">Nautical Channel</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="Nelonen.fi" site_id="nelonen">Nelonen</channel>
@@ -101,28 +109,28 @@
   <channel site="tv.nu" lang="sv" xmltv_id="NRK1.no" site_id="nrk1">NRK1</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="NRK2.no" site_id="nrk2">NRK2</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="NRK3.no" site_id="nrk3">NRK3</channel>
-  <channel site="tv.nu" lang="sv" xmltv_id="OutdoorChannelInternational.us" site_id="outdoor-channel-hd">Outdoor Channel HD</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="NRKSuperNRK3HD.no" site_id="nrk-super-nrk3-hd">NRK Super / NRK3 HD</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="OUTtv.nl" site_id="outtv">OUTtv</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="ParamountNetwork.se" site_id="paramount-network-30228">Paramount Network</channel>
-  <channel site="tv.nu" lang="sv" xmltv_id="ParamountPlusMovies.se" site_id="paramount-movies">Paramount+ Movies</channel>
-  <channel site="tv.nu" lang="sv" xmltv_id="ParamountPlusSeries.se" site_id="paramount-series">Paramount+ Series</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="PenthouseHD1.us" site_id="penthouse-hd-1">Penthouse HD 1</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="PenthouseHD2.us" site_id="penthouse-hd-2">Penthouse HD 2</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="PinkPlus.rs" site_id="pink-plus">Pink Plus</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="PlayboyTVEurope.us" site_id="playboy-tv-europe">Playboy TV Europe</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="ProSieben.de" site_id="prosieben">ProSieben</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="Rai1.it" site_id="rai-1">Rai 1</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="Rai2.it" site_id="rai-2">Rai 2</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="RTL.de" site_id="rtl">RTL</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="RTLSuper.de" site_id="super-rtl">Super RTL</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="RTLZwei.de" site_id="rtlzwei">RTLZWEI</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="SFkanalen.se" site_id="c-more-sport-sf-kanalen">SF-Kanalen</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="SFkanalen.se" site_id="sf-kanalen">SF Kanalen</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="Sjuan.se" site_id="sjuan">Sjuan</channel>
-  <channel site="tv.nu" lang="sv" xmltv_id="SkyHistory.uk" site_id="history-uk">Histrory (UK)</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="SkyHistory.uk" site_id="history-uk">History (UK)</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="SkyNewsInternational.uk" site_id="sky-news">Sky News</channel>
-  <channel site="tv.nu" lang="sv" xmltv_id="SkyShowtime1.se" site_id="skyshowtime-1">Sky Showtime 1</channel>
-  <channel site="tv.nu" lang="sv" xmltv_id="SkyShowtime2.se" site_id="skyshowtime-2">Sky Showtime 2</channel>
-  <channel site="tv.nu" lang="sv" xmltv_id="Sportkanalen.se" site_id="sportkanalen">Sportkanalen</channel>
-  <channel site="tv.nu" lang="sv" xmltv_id="StingrayClassica.ca" site_id="stingray-classic">Stingray Classica</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="SkyShowtime1.se" site_id="skyshowtime-1">SkyShowtime 1</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="SkyShowtime2.se" site_id="skyshowtime-2">SkyShowtime 2</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="StingrayClassica.ca" site_id="stingray-classica">Stingray Classica</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="StingrayDJAZZ.ca" site_id="djazz-hd">Djazz HD</channel>
-  <channel site="tv.nu" lang="sv" xmltv_id="RTLSuper.de" site_id="super-rtl">Super RTL</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="SVT1.se" site_id="svt1">SVT1</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="SVT2.se" site_id="svt2">SVT2</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="SVT24.se" site_id="svt24">SVT24</channel>
@@ -133,26 +141,41 @@
   <channel site="tv.nu" lang="sv" xmltv_id="TV10.se" site_id="tv10">TV10</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="TV12.se" site_id="tv12">TV12</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="TV2.dk" site_id="tv2">TV2</channel>
-  <channel site="tv.nu" lang="sv" xmltv_id="TV2.no" site_id="tv2 (Norge)">TV2</channel>
-  <channel site="tv.nu" lang="sv" xmltv_id="TV3.se" site_id="tv3">TV3</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="TV2Direkte.no" site_id="tv2-norge">TV2 (Norge)</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="TV3.dk" site_id="tv3-danmark">TV3 Danmark</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="TV3.no" site_id="tv3-norge">TV3 Norge</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="TV3.se" site_id="tv3">TV3</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="TV3Plus.dk" site_id="3-plus-danmark">3 Plus Danmark</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="TV3Plus.no" site_id="tv3-30147">TV3+</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="TV4.se" site_id="tv4">TV4</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="TV4Fakta.se" site_id="tv4-fakta">TV4 Fakta</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="TV4Film.se" site_id="tv4-film">TV4 Film</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="TV4Fotboll.se" site_id="tv4-fotboll">TV4 Fotboll</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="TV4Guld.se" site_id="tv4-guld">TV4 Guld</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="TV4Hits.se" site_id="tv4-hits">TV4 Hits</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="TV4Hockey.se" site_id="tv4-hockey">TV4 Hockey</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="TV4Motor.se" site_id="tv4-motor">TV4 Motor</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="TV4Sportkanalen.se" site_id="tv4-sportkanalen">TV4 Sportkanalen</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="TV4SportLive1.se" site_id="tv4-sport-live-1">TV4 Sport Live 1</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="TV4SportLive2.se" site_id="tv4-sport-live-2">TV4 Sport Live 2</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="TV4SportLive3.se" site_id="tv4-sport-live-3">TV4 Sport Live 3</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="TV4SportLive4.se" site_id="tv4-sport-live-4">TV4 Sport Live 4</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="TV4Stars.se" site_id="tv4-stars">TV4 Stars</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="TV4Tennis.se" site_id="tv4-tennis">TV4 Tennis</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="TV5HD.fi" site_id="tv5-hd">TV5 HD</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="TV5MondeEurope.fr" site_id="tv5-monde-europe">TV5 Monde Europe</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="TV6.se" site_id="tv6">TV6</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="TV8.se" site_id="tv8">TV8</channel>
-  <channel site="tv.nu" lang="sv" xmltv_id="TVChile.cl" site_id="tv-chile-internacional">TV Chile Internacional</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="TVChile.cl" site_id="tv-chile">TV Chile</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="TVEInternacionalEuropeAsia.es" site_id="tve-internacional">TVE Internacional</channel>
-  <channel site="tv.nu" lang="sv" xmltv_id="TVPPolonia.pl" site_id="tv-polonia">TV Polonia</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="TVFinland.fi" site_id="tv-finland">TV Finland</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="TVNorgeHD.no" site_id="tv-norge-hd">TV Norge HD</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="TVPPolonia.pl" site_id="tvp-polonia">TVP Polonia</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="TVVisionSverige.se" site_id="vision-sverige">Vision Sverige</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="VFilmAction.se" site_id="v-film-action">V Film Action</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="VFilmFamily.se" site_id="v-film-family">V Film Family</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="VFilmHits.se" site_id="v-film-hits">V Film Hits</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="VFilmPremiere.se" site_id="v-film-premiere">V Film Premiere</channel>
-  <channel site="tv.nu" lang="sv" xmltv_id="MTV00s.uk" site_id="vh1">VH1</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="ViasatExplore.se" site_id="viasat-explore">Viasat Explore</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="ViasatHistory.se" site_id="viasat-history">Viasat History</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="ViasatNature.se" site_id="viasat-nature">Viasat Nature</channel>
@@ -161,9 +184,8 @@
   <channel site="tv.nu" lang="sv" xmltv_id="VSeries.se" site_id="v-series">V Series</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="VSport1.se" site_id="v-sport-1">V Sport 1</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="VSportExtra.se" site_id="v-sport-extra">V Sport Extra</channel>
-  <channel site="tv.nu" lang="sv" xmltv_id="VSportFootball.se" site_id="v-sport-football">V Sport Fotball</channel>
+  <channel site="tv.nu" lang="sv" xmltv_id="VSportFootball.se" site_id="v-sport-football">V Sport Football</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="VSportGolf.se" site_id="v-sport-golf">V Sport Golf</channel>
-  <channel site="tv.nu" lang="sv" xmltv_id="VSportVinter.se" site_id="v-sport-hockey">V Sport Hockey</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="VSportLive1.se" site_id="v-sport-live-1">V Sport Live 1</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="VSportLive2.se" site_id="v-sport-live-2">V Sport Live 2</channel>
   <channel site="tv.nu" lang="sv" xmltv_id="VSportLive3.se" site_id="v-sport-live-3">V Sport Live 3</channel>
