@@ -55,30 +55,46 @@ module.exports = {
     return programs
   },
   async channels() {
-    const content = await axios
-      .get('https://www.tvpassport.com/tv-listings', {
-        headers: {
-          Cookie: 'cisession=317b3a464bfe449650b7cc4b16ccf900a6646d88;'
-        }
-      })
+    const xml = await axios
+      .get('https://www.tvpassport.com/sitemap.stations.xml')
       .then(r => r.data)
-      .catch(console.log)
-    const $ = cheerio.load(content)
+      .catch(console.error)
 
-    return $('.channel_cell')
-      .map((i, el) => {
-        const site_id = $(el)
-          .find('a')
-          .attr('href')
-          .replace('https://www.tvpassport.com/tv-listings/stations/', '')
-        const name = $(el).find('.sr-only').text().trim()
+    let channels = []
 
-        return {
-          site_id,
-          name
-        }
+    const $ = cheerio.load(xml)
+
+    const elements = $('loc').toArray()
+
+    let total = elements.length
+    let i = 1
+    for (let el of elements) {
+      const url = $(el).text()
+      const [, site_id] = url.match(/\/tv\-listings\/stations\/(.*)$/)
+
+      console.log(`[${i}/${total}]`, url)
+
+      const channelPage = await axios
+        .get(url)
+        .then(r => r.data)
+        .catch(err => console.error(err.message))
+
+      if (!channelPage) continue
+
+      const $channelPage = cheerio.load(channelPage)
+      const title = $channelPage('meta[property="og:title"]').attr('content')
+      const name = title.replace('TV Schedule for ', '')
+
+      channels.push({
+        lang: 'en',
+        site_id,
+        name
       })
-      .get()
+
+      i++
+    }
+
+    return channels
   }
 }
 

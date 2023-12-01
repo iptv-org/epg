@@ -1,6 +1,3 @@
-// npm run grab -- --site=tvpassport.com
-// npm run channels:parse -- --config=./sites/tvpassport.com/tvpassport.com.config.js --output=./sites/tvpassport.com/tvpassport.com.channels.xml
-
 const { parser, url, request } = require('./tvpassport.com.config.js')
 const fs = require('fs')
 const path = require('path')
