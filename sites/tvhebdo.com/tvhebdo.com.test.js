@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/tvhebdo.com/tvhebdo.com.config.js --output=./sites/tvhebdo.com/tvhebdo.com.channels.xml
-// npm run grab -- --site=tvhebdo.com
-
 const { parser, url } = require('./tvhebdo.com.config.js')
 const fs = require('fs')
 const path = require('path')

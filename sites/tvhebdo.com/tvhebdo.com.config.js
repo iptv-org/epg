@@ -34,6 +34,8 @@ module.exports = {
     return programs
   },
   async channels() {
+    const _ = require('lodash')
+
     let items = []
     const offsets = [
       0, 20, 40, 60, 80, 100, 120, 140, 160, 180, 200, 220, 240, 260, 280, 300, 320, 340, 360
@@ -55,21 +57,22 @@ module.exports = {
       items = items.concat(rows)
     }
 
-    console.log(`Found ${items.length} channels`)
-
-    return items.map(item => {
+    let channels = []
+    items.forEach(item => {
       const $item = cheerio.load(item)
       const name = $item('.gr_row_head > div > a.gr_row_head_logo.link_to_station > img').attr(
         'alt'
       )
       const url = $item('.gr_row_head > div > div.gr_row_head_poste > a').attr('href')
       const [, site_id] = url.match(/horaire-tele\/(.*)/) || [null, null]
-      return {
+      channels.push({
         lang: 'fr',
         site_id,
         name
-      }
+      })
     })
+
+    return _.uniqBy(channels, 'site_id')
   }
 }
 
