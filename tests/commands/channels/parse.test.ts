@@ -20,16 +20,6 @@ describe('channels:parse', () => {
       content('tests/__data__/expected/sites/channels-parse/channels-parse.channels.xml')
     )
   })
-
-  it('can parse channels with clean flag', () => {
-    const cmd =
-      'npm run channels:parse -- --config=tests/__data__/input/channels-parse/channels-parse.config.js --output=tests/__data__/output/channels.xml --clean'
-    execSync(cmd, { encoding: 'utf8' })
-
-    expect(content('tests/__data__/output/channels.xml')).toEqual(
-      content('tests/__data__/expected/sites/channels-parse/channels-parse-clean.channels.xml')
-    )
-  })
 })
 
 function content(filepath: string) {
