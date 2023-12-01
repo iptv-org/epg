@@ -1,5 +1,3 @@
-// npm run grab -- --site=tvheute.at
-
 const { parser, url } = require('./tvheute.at.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')

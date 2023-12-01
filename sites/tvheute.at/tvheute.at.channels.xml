@@ -1,55 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="tvheute.at" lang="de" xmltv_id="3sat.de" site_id="3sat">3sat</channel>
-  <channel site="tvheute.at" lang="de" xmltv_id="arte.fr" site_id="arte">ARTE Deutsch</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="3sat.de" site_id="3sat">3SAT</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="arte.fr" site_id="arte">ARTE</channel>
   <channel site="tvheute.at" lang="de" xmltv_id="ATV.at" site_id="atv">ATV</channel>
-  <channel site="tvheute.at" lang="de" xmltv_id="ATV2.at" site_id="atv2">ATV 2</channel>
-  <channel site="tvheute.at" lang="de" xmltv_id="BRFernsehenSud.de" site_id="br">Bayerisches Fernsehen Süd</channel>
-  <channel site="tvheute.at" lang="de" xmltv_id="DasErste.de" site_id="ard">Das Erste</channel>
-  <channel site="tvheute.at" lang="de" xmltv_id="DAZN1.de" site_id="dazn">DAZN 1 Deutschland</channel>
-  <channel site="tvheute.at" lang="de" xmltv_id="DisneyChannel.de" site_id="disney">Disney Channel Deutschland</channel>
-  <channel site="tvheute.at" lang="de" xmltv_id="DMAX.de" site_id="dmax">DMAX Austria</channel>
-  <channel site="tvheute.at" lang="de" xmltv_id="Eurosport1.de" site_id="euro">Eurosport 1 Germany</channel>
-  <channel site="tvheute.at" lang="de" xmltv_id="hrfernsehen.de" site_id="hr">HR Fernsehen</channel>
-  <channel site="tvheute.at" lang="de" xmltv_id="kabeleinsAustria.at" site_id="k1">Kabel Eins Austria</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="ATV2.at" site_id="atv2">ATV2</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="BRFernsehenSud.de" site_id="br">BR</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="CanalPlusFirst.at" site_id="canal+">CANAL+</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="DasErste.de" site_id="ard">ARD</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="DAZN1.de" site_id="dazn">DAZN</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="DisneyChannel.de" site_id="disney">Disney</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="DMAX.de" site_id="dmax">DMAX</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="Eurosport1.de" site_id="euro">EURO</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="hrfernsehen.de" site_id="hr">HR</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="kabeleinsAustria.at" site_id="k1">K1</channel>
   <channel site="tvheute.at" lang="de" xmltv_id="KiKA.de" site_id="kika">KIKA</channel>
-  <channel site="tvheute.at" lang="de" xmltv_id="MDRFernsehenSachsenAnhalt.de" site_id="mdr">MDR Fernsehen Sachsen-Anhalt</channel>
-  <channel site="tvheute.at" lang="de" xmltv_id="NDRFernsehenNiedersachsen.de" site_id="ndr">NDR Fernsehen Niedersachsen</channel>
-  <channel site="tvheute.at" lang="de" xmltv_id="NickelodeonAustria.at" site_id="nick">Nickelodeon Austria</channel>
-  <channel site="tvheute.at" lang="de" xmltv_id="Nitro.de" site_id="nitro">Nitro Austria</channel>
-  <channel site="tvheute.at" lang="de" xmltv_id="ntv.at" site_id="ntv">N-TV Austria</channel>
-  <channel site="tvheute.at" lang="de" xmltv_id="oe24TV.at" site_id="oe24tv">Oe24 TV</channel>
-  <channel site="tvheute.at" lang="de" xmltv_id="One.de" site_id="one">One</channel>
-  <channel site="tvheute.at" lang="de" xmltv_id="ORF1.at" site_id="orf1">ORF 1</channel>
-  <channel site="tvheute.at" lang="de" xmltv_id="ORF2.at" site_id="orf2">ORF 2</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="MDRFernsehenSachsenAnhalt.de" site_id="mdr">MDR</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="NDRFernsehenNiedersachsen.de" site_id="ndr">NDR</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="NickelodeonAustria.at" site_id="nick">NICK</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="Nitro.de" site_id="nitro">NITRO</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="ntv.at" site_id="ntv">NTV</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="oe24TV.at" site_id="oe24tv">OE24TV</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="One.de" site_id="one">ONE</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="ORF1.at" site_id="orf1">ORF1</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="ORF2.at" site_id="orf2">ORF2</channel>
   <channel site="tvheute.at" lang="de" xmltv_id="ORFIII.at" site_id="orf_iii">ORF III</channel>
-  <channel site="tvheute.at" lang="de" xmltv_id="ORFSportPlus.at" site_id="orf_+">ORF Sport +</channel>
-  <channel site="tvheute.at" lang="de" xmltv_id="phoenix.de" site_id="phoenix">Phoenix</channel>
-  <channel site="tvheute.at" lang="de" xmltv_id="ProSiebenAustria.at" site_id="pro7">ProSieben Austria</channel>
-  <channel site="tvheute.at" lang="de" xmltv_id="ProSiebenMaxxAustria.at" site_id="7maxx">ProSieben Maxx Austria</channel>
-  <channel site="tvheute.at" lang="de" xmltv_id="Puls4.at" site_id="puls_4">Puls 4</channel>
-  <channel site="tvheute.at" lang="de" xmltv_id="rbbFernsehenBerlin.de" site_id="rbb">RBB Berlin</channel>
-  <channel site="tvheute.at" lang="de" xmltv_id="RTLCrime.de" site_id="rtlcrime">RTL Crime Deutschland</channel>
-  <channel site="tvheute.at" lang="de" xmltv_id="RTL.de" site_id="rtl">RTL Austria</channel>
-  <channel site="tvheute.at" lang="de" xmltv_id="RTLLiving.de" site_id="rtlliving">RTL Living Deutschland</channel>
-  <channel site="tvheute.at" lang="de" xmltv_id="RTLZwei.de" site_id="rtl2">RTL Zwei Austria</channel>
-  <channel site="tvheute.at" lang="de" xmltv_id="SAT1Austria.at" site_id="sat1">Sat. 1 Österreich</channel>
-  <channel site="tvheute.at" lang="de" xmltv_id="SAT1GoldAustria.at" site_id="sat1gold">Sat. 1 Gold Österreich</channel>
-  <channel site="tvheute.at" lang="de" xmltv_id="ServusTV.at" site_id="servustv">Servus TV Österreich</channel>
-  <channel site="tvheute.at" lang="de" xmltv_id="sixxAustria.at" site_id="sixx">Sixx Austria</channel>
-  <channel site="tvheute.at" lang="de" xmltv_id="SkyCinemaPremieren.de" site_id="skyci">Sky Cinema Premieren</channel>
-  <channel site="tvheute.at" lang="de" xmltv_id="SkySport1.de" site_id="skysp1">Sky Sport 1</channel>
-  <channel site="tvheute.at" lang="de" xmltv_id="SkySport2.de" site_id="skysp2">Sky Sport 2</channel>
-  <channel site="tvheute.at" lang="de" xmltv_id="SkySportAustria1.at" site_id="skyaut">Sky Sport Austria 1</channel>
-  <channel site="tvheute.at" lang="de" xmltv_id="SkySportBundesliga1.de" site_id="skybl">Sky Sport Bundesliga 1</channel>
-  <channel site="tvheute.at" lang="de" xmltv_id="Sport1.de" site_id="sport1">Sport 1</channel>
-  <channel site="tvheute.at" lang="de" xmltv_id="RTLSuper.de" site_id="rtls">Super RTL Austria</channel>
-  <channel site="tvheute.at" lang="de" xmltv_id="SWRFernsehenBadenWurttemberg.de" site_id="swr">SWR Fernsehen Baden-Württemberg</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="ORFSportPlus.at" site_id="orf_+">ORF +</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="phoenix.de" site_id="phoenix">PHOENIX</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="ProSiebenAustria.at" site_id="pro7">PRO7</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="ProSiebenMaxxAustria.at" site_id="7maxx">7MAXX</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="Puls4.at" site_id="puls_4">PULS 4</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="rbbFernsehenBerlin.de" site_id="rbb">rbb</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="RTL.de" site_id="rtl">RTL</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="RTLCrime.de" site_id="rtlcrime">RTLCrime</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="RTLLiving.de" site_id="rtlliving">RTLLiving</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="RTLSuper.de" site_id="rtls">RTLS</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="RTLZwei.de" site_id="rtl2">RTL2</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="SAT1Austria.at" site_id="sat1">SAT1</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="SAT1GoldAustria.at" site_id="sat1gold">Sat1Gold</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="ServusTV.at" site_id="servustv">ServusTV</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="sixxAustria.at" site_id="sixx">sixx</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="SkyCinemaPremieren.de" site_id="skyci">SKYci</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="SkySport1.de" site_id="skysp1">SKYsp1</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="SkySport2.de" site_id="skysp2">SKYsp2</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="SkySportAustria1.at" site_id="skyaut">SKYaut</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="SkySportBundesliga1.de" site_id="skybl">SKYbl</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="Sport1.de" site_id="sport1">Sport1</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="SWRFernsehenBadenWurttemberg.de" site_id="swr">SWR</channel>
   <channel site="tvheute.at" lang="de" xmltv_id="TELE5.de" site_id="tele_5">Tele 5</channel>
-  <channel site="tvheute.at" lang="de" xmltv_id="VOX.at" site_id="vox">Vox Austria</channel>
-  <channel site="tvheute.at" lang="de" xmltv_id="WDRFernsehenKoln.de" site_id="wdr">WDR Fernsehen Köln</channel>
-  <channel site="tvheute.at" lang="de" xmltv_id="WELT.de" site_id="welt">Welt</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="VOX.at" site_id="vox">VOX</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="WDRFernsehenKoln.de" site_id="wdr">WDR</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="WELT.de" site_id="welt">WELT</channel>
   <channel site="tvheute.at" lang="de" xmltv_id="ZDF.de" site_id="zdf">ZDF</channel>
-  <channel site="tvheute.at" lang="de" xmltv_id="ZDFinfo.de" site_id="zdfinfo">ZDF Info</channel>
-  <channel site="tvheute.at" lang="de" xmltv_id="ZDFneo.de" site_id="zdfneo">ZDF Neo</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="ZDFinfo.de" site_id="zdfinfo">ZDFinfo</channel>
+  <channel site="tvheute.at" lang="de" xmltv_id="ZDFneo.de" site_id="zdfneo">ZDFneo</channel>
 </channels>
