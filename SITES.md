@@ -62,6 +62,7 @@
 | [kplus.vn](sites/kplus.vn)                                         | 🟡     | https://github.com/iptv-org/epg/issues/2240 |
 | [kvf.fo](sites/kvf.fo)                                             | 🟢     |                                             |
 | [m.tv.sms.cz](sites/m.tv.sms.cz)                                   | 🟡     | https://github.com/iptv-org/epg/issues/2241 |
+| [m.tving.com](sites/m.tving.com)                                   | 🟢     |                                             |
 | [magticom.ge](sites/magticom.ge)                                   | 🟢     |                                             |
 | [mako.co.il](sites/mako.co.il)                                     | 🟢     |                                             |
 | [maxtv.hrvatskitelekom.hr](sites/maxtv.hrvatskitelekom.hr)         | 🟢     |                                             |
@@ -163,7 +164,6 @@
 | [tvhebdo.com](sites/tvhebdo.com)                                   | 🟢     |                                             |
 | [tvheute.at](sites/tvheute.at)                                     | 🟢     |                                             |
 | [tvim.tv](sites/tvim.tv)                                           | 🟢     |                                             |
-| [tving.com](sites/tving.com)                                       | 🟢     |                                             |
 | [tvireland.ie](sites/tvireland.ie)                                 | 🟢     |                                             |
 | [tvmi.mt](sites/tvmi.mt)                                           | 🟢     |                                             |
 | [tvmusor.hu](sites/tvmusor.hu)                                     | 🟢     |                                             |
