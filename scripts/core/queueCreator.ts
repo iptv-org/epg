@@ -36,18 +36,22 @@ export class QueueCreator {
 
     const queue = new Queue()
     for (const channel of this.parsedChannels.all()) {
-      if (!channel.site || !channel.xmltv_id) continue
+      if (!channel.site || !channel.site_id || !channel.name) continue
       if (this.options.lang && channel.lang !== this.options.lang) continue
 
       const configPath = path.resolve(SITES_DIR, `${channel.site}/${channel.site}.config.js`)
       const config: SiteConfig = await this.configLoader.load(configPath)
 
-      const found: ApiChannel = channels.first(
-        (_channel: ApiChannel) => _channel.id === channel.xmltv_id
-      )
-      if (found) {
-        channel.logo = found.logo
-        channel.name = found.name
+      if (channel.xmltv_id) {
+        const found: ApiChannel = channels.first(
+          (_channel: ApiChannel) => _channel.id === channel.xmltv_id
+        )
+        if (found) {
+          channel.logo = found.logo
+          channel.name = found.name
+        }
+      } else {
+        channel.xmltv_id = channel.site_id
       }
 
       const days = this.options.days || config.days || 1
