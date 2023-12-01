@@ -1,5 +1,3 @@
-// npm run grab -- --site=tvplus.com.tr
-
 const { parser, url, request } = require('./tvplus.com.tr.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
