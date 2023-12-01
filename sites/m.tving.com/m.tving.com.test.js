@@ -1,7 +1,4 @@
-// npm run channels:parse -- --config=./sites/tving.com/tving.com.config.js --output=./sites/tving.com/tving.com.channels.xml
-// npm run grab -- --site=tving.com
-
-const { parser, url } = require('./tving.com.config.js')
+const { parser, url } = require('./m.tving.com.config.js')
 const fs = require('fs')
 const path = require('path')
 const dayjs = require('dayjs')

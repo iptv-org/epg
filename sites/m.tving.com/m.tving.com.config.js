@@ -10,7 +10,7 @@ dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
 module.exports = {
-  site: 'tving.com',
+  site: 'm.tving.com',
   days: 2,
   url: function ({ channel, date }) {
     return `https://api.tving.com/v2/media/schedules/${channel.site_id}/${date.format(
