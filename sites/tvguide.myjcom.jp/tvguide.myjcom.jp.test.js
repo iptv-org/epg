@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/tvguide.myjcom.jp/tvguide.myjcom.jp.config.js --output=./sites/tvguide.myjcom.jp/tvguide.myjcom.jp.channels.xml
-// npm run grab -- --site=tvguide.myjcom.jp
-
 const { parser, url } = require('./tvguide.myjcom.jp.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
