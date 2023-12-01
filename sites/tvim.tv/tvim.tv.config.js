@@ -25,6 +25,24 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels() {
+    const axios = require('axios')
+    const data = await axios
+      .get(`https://www.tvim.tv/script/epg/category_channels?category=all&filter=playable`)
+      .then(r => r.data)
+      .catch(console.log)
+
+    let channels = []
+    data.data.forEach(item => {
+      channels.push({
+        lang: 'sq',
+        site_id: item.epg_id,
+        name: item.name
+      })
+    })
+
+    return channels
   }
 }
 

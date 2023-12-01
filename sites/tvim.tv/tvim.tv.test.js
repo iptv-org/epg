@@ -1,5 +1,3 @@
-// npm run grab -- --site=tvim.tv
-
 const { parser, url } = require('./tvim.tv.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
