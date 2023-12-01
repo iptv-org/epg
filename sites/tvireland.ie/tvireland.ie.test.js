@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/tvireland.ie/tvireland.ie.config.js --output=./sites/tvireland.ie/tvireland.ie.channels.xml
-// npm run grab -- --site=tvireland.ie
-
 const { parser, url } = require('./tvireland.ie.config.js')
 const fs = require('fs')
 const path = require('path')

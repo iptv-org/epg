@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
+  <!-- <channel site="tvireland.ie" lang="en" xmltv_id="" site_id="874/nickspongebob">NickSpongeBob</channel>
+  <channel site="tvireland.ie" lang="en" xmltv_id="" site_id="1031/legend-xtra">Legend Xtra</channel>
+  <channel site="tvireland.ie" lang="en" xmltv_id="" site_id="1318/sky-cinema-hits">Sky Cinema Hits</channel>
+  <channel site="tvireland.ie" lang="en" xmltv_id="" site_id="1327/sky-cinema-best-of-2023">Sky Cinema Best of 2023</channel>
+  <channel site="tvireland.ie" lang="en" xmltv_id="" site_id="1437/legend-xtra-1">Legend Xtra +1</channel>
+  <channel site="tvireland.ie" lang="en" xmltv_id="" site_id="1512/true-crime">True Crime</channel>
+  <channel site="tvireland.ie" lang="en" xmltv_id="" site_id="1514/sky-cinema-best-of-2023-hd">Sky Cinema Best of 2023 HD</channel>
+  <channel site="tvireland.ie" lang="en" xmltv_id="" site_id="1517/true-crime-1">True Crime +1</channel>
+  <channel site="tvireland.ie" lang="en" xmltv_id="" site_id="1518/true-crime-xtra">True Crime Xtra</channel>
+  <channel site="tvireland.ie" lang="en" xmltv_id="" site_id="1536/sky-cinema-hits-hd">Sky Cinema Hits HD</channel>
+  <channel site="tvireland.ie" lang="en" xmltv_id="" site_id="2400/best-xmas-music">Best Xmas Music</channel> -->
   <channel site="tvireland.ie" lang="en" xmltv_id="4Music.uk" site_id="1438/4music">4Music</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="alibi.uk" site_id="154/alibi">Alibi</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="alibiHD.uk" site_id="1739/alibi-hd">Alibi HD</channel>
@@ -40,8 +51,6 @@
   <channel site="tvireland.ie" lang="en" xmltv_id="CBBCHD.uk" site_id="1849/cbbc-hd">CBBC HD</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="CBeebies.uk" site_id="734/cbeebies">CBeebies</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="CBeebiesHD.uk" site_id="1850/cbeebies-hd">CBeebies HD</channel>
-  <channel site="tvireland.ie" lang="en" xmltv_id="CBSReality.uk" site_id="1512/cbs-reality">CBS Reality</channel>
-  <channel site="tvireland.ie" lang="en" xmltv_id="CBSRealityPlus1.uk" site_id="1517/cbs-reality-1">CBS Reality +1</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="Challenge.uk" site_id="170/challenge">Challenge</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="Channel4.uk" site_id="53/channel-4">Channel 4</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="Channel4HD.uk" site_id="1404/channel-4-hd">Channel 4 HD</channel>
@@ -78,11 +87,11 @@
   <channel site="tvireland.ie" lang="en" xmltv_id="DMAX.uk" site_id="1405/dmax">DMAX</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="DMAXPlus1.uk" site_id="1538/dmax-1">DMAX +1</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="Drama.uk" site_id="1798/drama">Drama</channel>
-  <channel site="tvireland.ie" lang="en" xmltv_id="E.uk" site_id="934/e-entertainment">E! Entertainment</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="E4.uk" site_id="605/e4">E4</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="E4Extra.uk" site_id="914/e4-extra">E4 Extra</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="E4HD.uk" site_id="1534/e4-hd">E4 HD</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="E4Plus1.uk" site_id="1055/e4-1">E4 +1</channel>
+  <channel site="tvireland.ie" lang="en" xmltv_id="E.uk" site_id="934/e-entertainment">E! Entertainment</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="EarthxTV.us" site_id="2385/earthx-tv">Earthx TV</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="Eden.uk" site_id="993/eden">Eden</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="EdenPlus1.uk" site_id="1003/eden-1">Eden +1</channel>
@@ -116,8 +125,6 @@
   <channel site="tvireland.ie" lang="en" xmltv_id="GREATtvPlus1.uk" site_id="1785/great-tv-1">GREAT! tv +1</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="HGTV.uk" site_id="89/hgtv">HGTV</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="HGTVPlus1.uk" site_id="756/hgtv-1">HGTV +1</channel>
-  <channel site="tvireland.ie" lang="en" xmltv_id="HorrorXtra.uk" site_id="1031/horrorxtra">HorrorXtra</channel>
-  <channel site="tvireland.ie" lang="en" xmltv_id="HorrorXtraPlus1.uk" site_id="1437/horrorxtra-1">HorrorXtra +1</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="InvestigationDiscovery.uk" site_id="1460/investigation-discovery">Investigation Discovery</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="InvestigationDiscoveryPlus1.uk" site_id="1795/investigation-discovery-1">Investigation Discovery +1</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="ITV3.uk" site_id="1065/itv3">ITV3</channel>
@@ -133,10 +140,10 @@
   <channel site="tvireland.ie" lang="en" xmltv_id="More4Plus1.uk" site_id="1168/more4-1">More4 +1</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="Movies24.uk" site_id="1226/christmas-24">Christmas 24</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="Movies24Plus.uk" site_id="1526/christmas-24">Christmas 24+</channel>
-  <channel site="tvireland.ie" lang="en" xmltv_id="MTV.ie" site_id="1986/mtv-ireland">MTV Ireland</channel>
-  <channel site="tvireland.ie" lang="en" xmltv_id="MTV.uk" site_id="64/mtv">MTV</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="MTV80s.uk" site_id="151/mtv-80s">MTV 80s</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="MTV90s.uk" site_id="63/mtv-90s">MTV 90s</channel>
+  <channel site="tvireland.ie" lang="en" xmltv_id="MTV.ie" site_id="1986/mtv-ireland">MTV Ireland</channel>
+  <channel site="tvireland.ie" lang="en" xmltv_id="MTV.uk" site_id="64/mtv">MTV</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="MTVHD.uk" site_id="1672/mtv-hd">MTV HD</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="MTVHits.uk" site_id="59/mtv-hits">MTV Hits</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="MTVMusic.uk" site_id="1632/mtv-music">MTV Music</channel>
@@ -158,7 +165,6 @@
   <channel site="tvireland.ie" lang="en" xmltv_id="NickJrHD.uk" site_id="2017/nick-jr-hd">Nick Jr. HD</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="NickJrPlus1.uk" site_id="1763/nick-jr-1">Nick Jr. +1</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="NickJrToo.uk" site_id="1531/nick-jr-peppa">Nick Jr. Peppa</channel>
-  <channel site="tvireland.ie" lang="en" xmltv_id="Nicktoons.uk" site_id="874/nickloudhouse">NickLoudHouse</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="OireachtasTV.ie" site_id="1947/oireachtas-tv">Oireachtas TV</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="PBSAmerica.uk" site_id="1660/pbs-america">PBS America</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="PhoenixCNEChannelHD.hk" site_id="2356/phoenix-cne-channel-hd">Phoenix CNE Channel HD</channel>
@@ -177,7 +183,6 @@
   <channel site="tvireland.ie" lang="en" xmltv_id="QVCStyleHD.uk" site_id="2409/qvc-style-hd">QVC Style HD</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="RacingTV.uk" site_id="1051/racing-tv">Racing TV</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="RacingTVHD.uk" site_id="1992/racing-tv-hd">Racing TV HD</channel>
-  <channel site="tvireland.ie" lang="en" xmltv_id="RealityXtra.uk" site_id="1518/realityxtra">RealityXtra</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="Really.uk" site_id="1084/really">Really</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="RTE2.ie" site_id="82/rte2">RTE2</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="RTE2HD.ie" site_id="1648/rte2-hd">RTE2 HD</channel>
@@ -205,15 +210,11 @@
   <channel site="tvireland.ie" lang="en" xmltv_id="SkyCinemaFamilyHD.uk" site_id="1448/sky-cinema-family-hd">Sky Cinema Family HD</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="SkyCinemaGreats.uk" site_id="1326/sky-cinema-80s-icons">Sky Cinema 80s Icons</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="SkyCinemaGreatsHD.uk" site_id="1446/sky-cinema-80s-icons-hd">Sky Cinema 80s Icons HD</channel>
-  <channel site="tvireland.ie" lang="en" xmltv_id="SkyCinemaHits.uk" site_id="1318/sky-cinema-mockingjay">Sky Cinema Mockingjay</channel>
-  <channel site="tvireland.ie" lang="en" xmltv_id="SkyCinemaHitsHD.uk" site_id="1536/sky-cinema-mockingjay-hd">Sky Cinema Mockingjay HD</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="SkyCinemaPremiere.uk" site_id="1320/sky-cinema-premiere">Sky Cinema Premiere</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="SkyCinemaPremiereHD.uk" site_id="1417/sky-cinema-premiere-hd">Sky Cinema Premiere HD</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="SkyCinemaPremierePlus1.uk" site_id="1321/sky-cinema-premiere-1">Sky Cinema Premiere +1</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="SkyCinemaSciFiHorror.uk" site_id="1329/sky-cinema-sci-fihorror">Sky Cinema Sci-fi/Horror</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="SkyCinemaSciFiHorrorHD.uk" site_id="1447/sky-cinema-sci-fihorror-hd">Sky Cinema Sci-fi/Horror HD</channel>
-  <channel site="tvireland.ie" lang="en" xmltv_id="SkyCinemaSelect.uk" site_id="1327/sky-cinema-tolkien">Sky Cinema Tolkien</channel>
-  <channel site="tvireland.ie" lang="en" xmltv_id="SkyCinemaSelectHD.uk" site_id="1514/sky-cinema-tolkien-hd">Sky Cinema Tolkien HD</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="SkyCinemaThriller.uk" site_id="1319/sky-cinema-thriller">Sky Cinema Thriller</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="SkyCinemaThrillerHD.uk" site_id="1537/sky-cinema-thriller-hd">Sky Cinema Thriller HD</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="SkyComedy.uk" site_id="2305/sky-comedy">Sky Comedy</channel>
@@ -223,9 +224,9 @@
   <channel site="tvireland.ie" lang="en" xmltv_id="SkyCrimePlus1.uk" site_id="1470/sky-crime-1">Sky Crime +1</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="SkyDocumentaries.uk" site_id="2315/sky-documentaries">Sky Documentaries</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="SkyDocumentariesHD.uk" site_id="2316/sky-documentaries-hd">Sky Documentaries HD</channel>
-  <channel site="tvireland.ie" lang="en" xmltv_id="SkyHistory.uk" site_id="171/sky-history">Sky History</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="SkyHistory2.uk" site_id="1435/sky-history-2">Sky History 2</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="SkyHistory2HD.uk" site_id="2042/sky-history-2-hd">Sky History 2 HD</channel>
+  <channel site="tvireland.ie" lang="en" xmltv_id="SkyHistory.uk" site_id="171/sky-history">Sky History</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="SkyHistoryHD.uk" site_id="1354/sky-history-hd">Sky History HD</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="SkyHistoryPlus1.uk" site_id="702/sky-history-1">Sky History +1</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="SkyKidsHD.uk" site_id="2395/sky-kids-hd">Sky Kids HD</channel>
@@ -285,9 +286,8 @@
   <channel site="tvireland.ie" lang="en" xmltv_id="TG4HD.ie" site_id="1773/tg4-hd">TG4 HD</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="TG4Plus1.ie" site_id="2433/tg4-1">TG4 +1</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="Thats60s.uk" site_id="2384/thats-60s">That&apos;s 60s</channel>
-  <channel site="tvireland.ie" lang="en" xmltv_id="Thats80s.uk" site_id="2400/thats-80s">That&apos;s 80s</channel>
-  <channel site="tvireland.ie" lang="en" xmltv_id="Thats90s.uk" site_id="2437/thats-90s">That&apos;s 90s</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="Thats70s.uk" site_id="2442/thats-christmas">That&apos;s Christmas</channel>
+  <channel site="tvireland.ie" lang="en" xmltv_id="Thats90s.uk" site_id="2437/thats-90s">That&apos;s 90s</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="ThatsTV.uk" site_id="2351/thats-tv">That&apos;s TV</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="TheBox.uk" site_id="93/the-box">The Box</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="TinyPop.uk" site_id="1402/tiny-pop">Tiny Pop</channel>
@@ -332,6 +332,6 @@
   <channel site="tvireland.ie" lang="en" xmltv_id="Yesterday.uk" site_id="908/yesterday">Yesterday</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="YesterdayPlus1.uk" site_id="1068/yesterday-1">Yesterday +1</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="ZeeCinemaUK.uk" site_id="1571/zee-cinema">Zee Cinema</channel>
-  <channel site="tvireland.ie" lang="en" xmltv_id="ZeeTVUK.uk" site_id="71/zee-tv">Zee TV</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="ZeeTVHDUK.uk" site_id="2137/zee-tv-hd">Zee TV HD</channel>
+  <channel site="tvireland.ie" lang="en" xmltv_id="ZeeTVUK.uk" site_id="71/zee-tv">Zee TV</channel>
 </channels>
