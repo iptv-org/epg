@@ -1,5 +1,3 @@
-// npm run grab -- --site=tvprofil.com
-
 const { parser, url, request } = require('./tvprofil.com.config.js')
 const fs = require('fs')
 const path = require('path')
