@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/tvmusor.hu/tvmusor.hu.config.js --output=./sites/tvmusor.hu/tvmusor.hu.channels.xml
-// npm run grab -- --site=tvmusor.hu
-
 const { parser, url, request } = require('./tvmusor.hu.config.js')
 const fs = require('fs')
 const path = require('path')
