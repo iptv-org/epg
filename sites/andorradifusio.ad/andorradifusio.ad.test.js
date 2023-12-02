@@ -1,5 +1,3 @@
-// npm run grab -- --site=andorradifusio.ad
-
 const { parser, url } = require('./andorradifusio.ad.config.js')
 const fs = require('fs')
 const path = require('path')
