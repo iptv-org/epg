@@ -1,4 +1,4 @@
-const { parser, url, request } = require('./unifi.com.my.config.js')
+const { parser, url, request } = require('./playtv.unifi.com.my.config.js')
 const fs = require('fs')
 const path = require('path')
 const dayjs = require('dayjs')

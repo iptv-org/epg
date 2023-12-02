@@ -8,7 +8,7 @@ dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
 module.exports = {
-  site: 'unifi.com.my',
+  site: 'playtv.unifi.com.my',
   days: 2,
   url: 'https://unifi.com.my/tv/api/tv',
   request: {
