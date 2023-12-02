@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/walesi.com.fj/walesi.com.fj.config.js --output=./sites/walesi.com.fj/walesi.com.fj.channels.xml
-// npm run grab -- --site=walesi.com.fj
-
 const { parser, url, request } = require('./walesi.com.fj.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
