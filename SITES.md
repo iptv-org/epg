@@ -176,7 +176,7 @@
 | [virginmediatelevision.ie](sites/virginmediatelevision.ie)         | 🟢     |                                             |
 | [virgintvgo.virginmedia.com](sites/virgintvgo.virginmedia.com)     | 🟢     |                                             |
 | [visionplus.id](sites/visionplus.id)                               | 🟢     |                                             |
-| [vivacom.bg](sites/vivacom.bg)                                     | 🟢     |                                             |
+| [vivacom.bg](sites/vivacom.bg)                                     | 🟡     | https://github.com/iptv-org/epg/issues/2270 |
 | [vtm.be](sites/vtm.be)                                             | 🟢     |                                             |
 | [walesi.com.fj](sites/walesi.com.fj)                               | 🟢     |                                             |
 | [watch.sportsnet.ca](sites/watch.sportsnet.ca)                     | 🟢     |                                             |
