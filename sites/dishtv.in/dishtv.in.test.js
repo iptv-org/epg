@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/dishtv.in/dishtv.in.config.js --output=./sites/dishtv.in/dishtv.in.channels.xml
-// npm run grab -- --site=dishtv.in
-
 const { parser, url, request } = require('./dishtv.in.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
