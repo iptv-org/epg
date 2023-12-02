@@ -1,5 +1,3 @@
-// npm run grab -- --site=vidio.com
-
 const { parser, url } = require('./vidio.com.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
