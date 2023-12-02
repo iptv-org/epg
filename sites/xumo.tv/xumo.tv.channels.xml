@@ -1,310 +1,353 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="0#9995107">WFTV Orlando</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="0#9995108">Boston 25</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="0#9995109">WHIO Dayton</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="0#9995110">Action News Jax</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="0#9995111">FOX13 Memphis</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="0#9995112">KIRO Seattle</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="0#99951169">ABC7 New York</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="0#99951170">ABC7 Los Angeles</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="0#99951171">ABC7 Chicago</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="0#99951172">6abc Philadelphia</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="0#99951173">ABC7 Bay Area</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="0#99951174">KTRK ABC13&apos;s 24/7 Streaming Channel</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="0#99951175">WTVD ABC11 24/7 Streaming Channel</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="0#99951176">KFSN ABC30 Central CA</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="0#99991105">Free Comedy TV</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="0#99991116">TIME</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="0#99991176">Just for Laughs</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="0#99991220">Cheddar News</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="0#99991276">CBC NEWS</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="0#99991287">USA TODAY News</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="0#99991377">ABC News Live</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="0#99991649">AccuWeather NOW</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="0#99991689">WPXI Pittsburgh</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="0#99991690">WSB Atlanta</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="0#99991691">WSOC Charlotte</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="0#99991692">FOX23 Tulsa</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="100#9995105">Snowy River</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="100#99951123">GlewedTV Sci-Fi</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="100#99951126">Supermarket Sweep</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="100#99951137">All Real</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="100#99951145">The Girls Next Door Channel</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="100#99951160">Cowboy Way</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="100#99951192">Anger Management Channel</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="100#99991232">Family Feud</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="100#99991346">Divorce Court</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="100#99991356">eSports Revolution</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="100#99991357">Real Crime</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="100#99991364">Free Reality TV</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="100#99991368">REELZ Famous &amp; Infamous</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="100#99991384">Free Crime TV</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="100#99991621">The Rotten Tomatoes Channel</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="100#99991623">The Walking Dead Universe</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="100#99991625">All Weddings WE tv</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="100#99991639">Free Game Show TV</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="100#99991659">Game Show A Go-Go</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="100#99991670">Mixible</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="100#99991681">Hell&apos;s Kitchen</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="100#99991688">El Rey</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="100#99991741">Topic Crime &amp; Thrillers</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="100#99991765">Xplore</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="100#99991769">Paranormal Files</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="100#99991781">Impossible – Quiz Show</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="100#99991784">Free Action &amp; Drama TV</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="150#99951131">GoUSA TV</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="150#99951135">Great American Adventures</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="150#99951143">TED</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="150#99951151">Lidia&apos;s Kitchen</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="150#99951152">Grit Xtra</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="150#9995117">Free Food TV</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="150#99951178">BBC Home &amp; Garden</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="150#99951195">PBS Nature</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="150#99951196">MotorTrend FAST TV</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="150#99991111">Free Travel &amp; Lifestyle TV</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="150#99991140">Bon Appétit</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="150#99991160">PBS Digital Studios</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="150#99991197">NatureVision</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="150#99991338">JTV Jewelry Love</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="150#99991379">Combat War Channel</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="150#99991693">Homeful</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="200#99951138">McLeod&apos;s Daughters</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="200#99951139">The Weather Channel En Español</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="200#99951140">AMERICATEVÉ</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="200#99951141">JLTV</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="200#99951148">Barney and Friends</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="200#99951156">At Home with Family Handyman</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="200#99951184">Sony KAL</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="200#99951189">BibleStream</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="200#99951206">PBS Antiques Roadshow</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="200#99991107">Free Kids TV</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="200#99991142">Cine Romántico</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="200#99991253">HooplaKidzTV</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="200#99991348">KOCOWA K-Drama</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="200#99991353">Free Family Movies</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="200#99991627">Billiard TV</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="200#99991662">El Tribunal del Pueblo</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="200#99991671">Little Baby Bum and Friends</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="200#99991674">Canela Tv Clasicos</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="200#99991687">Los Pitufos</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="200#99991708">Trinity Broadcast Network</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="200#99991746">EstrellaTV</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="200#99991747">Telemundo Al Día</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="200#99991748">Lo Mejor de Telemundo</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="200#99991749">Historias de Amor</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="200#99991756">Free Bollywood &amp; Indian Cinema</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="200#99991759">Today&apos;s Homeowner</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="200#99991762">Sony Canal Competencias</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="200#99991772">EncourageTV</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="200#99991775">Love Nature en Español</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="200#99991779">Jubao</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="200#99991950">Madre</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="250#9995100">iHeart90s</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="250#9995101">iHeart Alternative Radio</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="250#9995102">iHeartCountry</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="250#99951122">Vevo ’70s</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="250#99951134">UFC</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="250#99951142">Women&apos;s Sports Network</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="250#99951154">Boxing TV</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="250#99951179">CampusLore Sports</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="250#99951180">Strongman Champions League</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="250#99951203">PFL MMA</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="250#99991118">Stingray Hot Country Christmas</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="250#99991120">Stingray Greatest Holiday Hits</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="250#99991249">World Surf League</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="250#99991284">Hard Knocks Fighting Championship</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="250#99991315">ACC Digital Network</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="250#99991389">USGA</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="250#99991661">SpartanTV</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="250#99991675">Racing America</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="250#99991696">Swerve Sports</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="250#99991786">Origin Sports</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="300#9995103">iHeartRadio The Beat</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="300#9995104">iHeartRadio Latino Hits</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="300#99951198">iHeart North Pole Radio</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="300#99951199">iHeart Christmas</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="300#99951200">iHeart Christmas Jazz</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="300#99991665">XUMO Holiday Classics</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="300#99991666">XUMO Christian Christmas</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="50#9995106">Shades of Black</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="50#99951128">Xfinity What to Watch</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="50#99951146">Family Affair Channel</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="50#99951147">The Elvis Presley Channel</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="50#99991123">LOL Network</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="50#99991124">Dry Bar Comedy</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="50#99991125">Her Free Movies</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="50#99991157">The Johnny Carson Show</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="50#99991270">Above Average</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="50#99991290">HISTORY</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="50#99991299">Free Movies</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="50#99991300">Alice Movies</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="50#99991334">Movies Page - DRM</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="50#99991337">FilmRise</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="50#99991350">Free Horror &amp; Thriller Movies</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="50#99991351">Free Comedy Movies</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="50#99991352">Free Action Movies</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="50#99991362">Free Sci-Fi &amp; Fantasy Movies</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="50#99991363">Free Black Cinema</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="50#99991392">Free Documentaries</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="50#99991393">Samuel Goldwyn Films</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="50#99991397">Free Westerns</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="50#99991638">DOCUMENTARY+</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="50#99991650">True History Channel</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="50#99991667">Are We There Yet?</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="50#99991755">Tribeca Channel</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="50#99991951">Holiday Movie Channel</channel> -->
-  <!-- <channel site="xumo.tv" lang="en" xmltv_id="" site_id="50#9999614">ION Plus</channel> -->
-  <channel site="xumo.tv" lang="en" xmltv_id="ACLCornholeTV.us" site_id="250#99991697">ACL Cornhole TV</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="AdventureSportsNetwork.us" site_id="250#99991285">Adventure Sports Network</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="Ameba.us" site_id="200#99991283">Ameba</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="AmericanClassics.us" site_id="50#99991354">American Classics</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="0#9995106">Shades of Black</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="0#99951139">The Weather Channel En Español</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="0#99951197">Reuters Now</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="0#99951223">Sky News</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="0#99951248">Classic Doctor Who</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="0#99951250">OuterSphere by Lionsgate</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="0#99951251">MovieSphere by Lionsgate</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="0#99951256">Alfred Hitchcock Presents</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="0#99951283">Salem News Channel</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="0#99991125">Xumo Free Holiday Romance</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="0#99991220">Cheddar News</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="0#99991276">CBC NEWS</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="0#99991282">Local Now</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="0#99991287">USA TODAY News</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="0#99991292">Alien Nation by DUST</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="0#99991299">Xumo Free Movies</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="0#99991300">Alice Movies</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="0#99991302">Hi-Yah!</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="0#99991312">Gravitas Movies</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="0#99991331">The Asylum</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="0#99991334">Movies Page - DRM</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="0#99991336">Maverick Black Cinema</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="0#99991337">FilmRise</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="0#99991350">Xumo Free Horror &amp; Thriller Movies</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="0#99991351">Xumo Free Comedy Movies</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="0#99991352">Xumo Free Action Movies</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="0#99991362">Xumo Free Sci-Fi &amp; Fantasy Movies</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="0#99991363">Xumo Free Black Cinema</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="0#99991372">WEATHERSPY</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="0#99991377">ABC News Live</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="0#99991392">Xumo Free Documentaries</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="0#99991393">Samuel Goldwyn Films</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="0#99991399">CineLife</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="0#99991638">DOCUMENTARY+</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="0#99991649">AccuWeather NOW</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="0#99991683">PATTRN</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="0#99991709">Hallmark Movies &amp; More</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="0#99991714">Crackle</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="0#99991745">Wu Tang Collection TV</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="0#99991755">Tribeca Channel</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="0#99991951">Xumo Free Holiday Movie Channel</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99951123">GlewedTV Sci-Fi</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99951132">Fight Network</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99951134">UFC</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99951142">Women&apos;s Sports Network</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99951154">Boxing TV</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99951180">Strongman Champions League</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99951196">MotorTrend FAST TV</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99951203">PFL MMA</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99951207">Fifth Gear</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99951249">Top Gear</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99951253">NBC Sports</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99951264">Universal Monsters</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99951265">DraftKings Network</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99951266">FanDuel TV Extra</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99951268">SPEEDVISION</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99951269">MAVTV Select</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99951277">Ghost Hunters Channel</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99991143">Pac-12 Insider</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99991175">People Are Awesome</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99991189">Outside</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99991196">FOX Sports</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99991249">World Surf League</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99991278">GLORY Kickboxing</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99991281">PGA TOUR</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99991291">PowerNation</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99991294">Nitro Circus</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99991315">ACC Digital Network</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99991317">World Poker Tour</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99991325">Motorvision</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99991341">IMPACT Wrestling Channel</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99991356">eSports Revolution</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99991358">WaypointTV</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99991374">Outdoor America</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99991384">Xumo Free Crime TV</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99991387">beIN SPORTS XTRA</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99991389">USGA</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99991623">The Walking Dead Universe</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99991626">Dateline 24/7</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99991627">Billiard TV</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99991633">PokerGO</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99991645">CBS Sports HQ</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99991648">PursuitUp</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99991660">GOLFPASS</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99991680">Unsolved Mysteries</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99991696">Swerve Combat</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99991697">ACL Cornhole TV</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99991738">NFL Channel</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99991769">Paranormal Files</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="50#99991786">Origin Sports</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="100#9999613">Bounce XL</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="100#9999614">ION Plus</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="100#99951133">Baywatch</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="100#99951157">ION Mystery</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="100#99951158">ION</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="100#99951192">Anger Management Channel</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="100#99951195">PBS Nature</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="100#99951199">iHeart Christmas</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="100#99951200">iHeart Christmas Jazz</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="100#99951204">Xumo Fireplace for the Holidays</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="100#99951213">BritBox Mysteries</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="100#99951218">Xumo Free Nature &amp; Wildlife TV</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="100#99951231">BBC Earth</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="100#99951232">Laff More</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="100#99951233">Court TV Legendary Trials</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="100#99951234">Oxygen True Crime Archives</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="100#99951236">SNL Vault</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="100#99951244">TNBC</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="100#99951245">Universal Crime</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="100#99951246">American Crimes</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="100#99951247">Saved by the Bell</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="100#99951254">Universal Action</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="100#99991105">Xumo Free Comedy TV</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="100#99991123">LOL Network</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="100#99991124">Dry Bar Comedy</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="100#99991153">FailArmy</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="100#99991157">The Johnny Carson Show</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="100#99991174">The Pet Collective</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="100#99991176">Just for Laughs TV</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="100#99991187">Funny or Die</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="100#99991190">Comedy Dynamics</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="100#99991197">NatureVision</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="100#99991204">Just for Laughs Gags</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="100#99991252">Stingray Naturescape</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="100#99991320">Law &amp; Crime</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="100#99991349">It&apos;s Showtime at the Apollo</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="100#99991357">Real Crime</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="100#99991367">Forensic Files</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="100#99991368">REELZ Famous &amp; Infamous</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="100#99991624">Slightly Off IFC</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="100#99991665">Xumo Free Holiday Classics</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="100#99991666">Xumo Free Christian Christmas</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="100#99991667">Are We There Yet?</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="100#99991784">Xumo Free Action &amp; Drama TV</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="150#9995105">Snowy River</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="150#9995114">Heartland</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="150#9995117">Xumo Free Food TV</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="150#99951124">BUZZR</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="150#99951125">The Price is Right: The Barker Era</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="150#99951126">Supermarket Sweep</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="150#99951129">Wipeout Xtra</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="150#99951130">Fear Factor</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="150#99951138">McLeod&apos;s Daughters</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="150#99951151">Lidia&apos;s Kitchen</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="150#99951152">Grit Xtra</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="150#99951156">At Home with Family Handyman</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="150#99951160">Cowboy Way</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="150#99951178">BBC Home &amp; Garden</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="150#99951210">CraftsyTV</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="150#99951212">Gardening with Monty Don</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="150#99951215">Love Wine</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="150#99951216">The Rifleman</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="150#99951221">Property &amp; Reno</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="150#99951224">The Celebrity Name Game Channel</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="150#99951237">Million Dollar Listing Vault</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="150#99951238">Top Chef Vault</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="150#99951240">Little House on the Prairie</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="150#99951255">Universal Westerns</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="150#99951258">The Lone Ranger</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="150#99991113">Deal Or No Deal</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="150#99991131">Circle</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="150#99991140">Bon Appétit</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="150#99991232">Family Feud</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="150#99991397">Xumo Free Westerns</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="150#99991639">Xumo Free Game Show TV</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="150#99991651">NBC LX Home</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="150#99991659">Game Show A Go-Go</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="150#99991693">Homeful</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="150#99991750">Game Show Central</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="150#99991759">Today&apos;s Homeowner</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="150#99991765">Xplore</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="150#99991775">Love Nature en Español</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="150#99991781">Impossible – Quiz Show</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="200#9995104">iHeartRadio Beso</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="200#9995118">Tastemade Travel Channel</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="200#99951131">GoUSA TV</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="200#99951135">Great American Adventures</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="200#99951137">Love Quest: Powered by Banijay</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="200#99951140">AMERICATEVÉ</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="200#99951145">The Girls Next Door Channel</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="200#99951206">PBS Antiques Roadshow</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="200#99951217">AspireTV Life</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="200#99951235">E! Keeping Up</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="200#99951241">Bad Girls Club</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="200#99951242">Bravo Vault</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="200#99951243">Real Housewives Vault</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="200#99951252">Cheaters</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="200#99951257">Made in Chelsea</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="200#99951260">4 Emergency</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="200#99951261">4 Adventure</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="200#99951262">Real Disaster Channel</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="200#99991111">Xumo Free Travel &amp; Lifestyle TV</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="200#99991142">Cine Romántico</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="200#99991262">Journy</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="200#99991271">HSN</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="200#99991280">eScapes</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="200#99991290">HISTORY</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="200#99991303">Backstage</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="200#99991338">JTV Jewelry Love</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="200#99991344">QVC</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="200#99991346">Divorce Court</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="200#99991364">Xumo Free Reality TV</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="200#99991365">DangerTV</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="200#99991370">ShopLC</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="200#99991380">Hungry</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="200#99991383">GoTraveler</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="200#99991664">Dabl</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="200#99991674">Canela.TV</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="200#99991687">MojiTV</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="200#99991746">EstrellaTV</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="200#99991747">Telemundo Al Día</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="200#99991748">Lo Mejor de Telemundo</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="200#99991749">Historias de Amor</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="200#99991762">Sony Canal Competencias</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="200#99991785">beIN SPORTS XTRA en Español</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="200#99991950">Madre</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99951141">JLTV</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99951146">Family Affair Channel</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99951148">Barney and Friends</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99951155">REVOLT Mixtape</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99951184">Sony KAL</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99951189">BibleStream</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99951209">Baby Shark TV</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99951211">STELLAR</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99951214">AfroLandTV</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99951229">Ninja Kidz TV</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99951239">Murder, She Wrote</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99951259">Lassie</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99951280">Sensical Jr.</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99951281">Sensical Makers</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99991103">FOX Soul</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99991107">Xumo Free Kids TV</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99991108">theGRIO</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99991122">The Bob Ross Channel</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99991135">WIRED</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99991137">GQ</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99991138">Vogue</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99991160">PBS Digital Studios</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99991253">All Babies Channel</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99991265">Shout! TV</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99991268">Toon Goggles</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99991273">batteryPOP</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99991283">Ameba</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99991296">Revry</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99991310">The Archive</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99991326">pocket.watch</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99991327">Kartoon Channel!</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99991333">Dove Channel</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99991348">KOCOWA K-Drama</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99991353">Xumo Free Family Movies</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99991354">American Classics</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99991366">Nosey</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99991379">Combat War Channel</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99991382">MagellanTV Now</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99991388">Judge Nosey</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99991616">Mystery Science Theater 3000 (MST3K)</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99991621">The Rotten Tomatoes Channel</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99991625">All Weddings WE tv</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99991650">True History Channel</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99991670">Mixible</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99991671">Little Baby Bum and Friends</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99991681">Hell&apos;s Kitchen</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99991708">Trinity Broadcast Network</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99991756">Xumo Free Bollywood &amp; Indian Cinema</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99991761">Teletubbies</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="250#99991772">EncourageTV</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#9995100">iHeart90s</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#9995101">iHeart Alternative Radio</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#9995102">iHeartCountry</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#9995103">iHeartRadio Hip Hop Beats</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#9995107">WFTV Orlando</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#9995108">Boston 25</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#9995110">Action News Jax</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#9995112">KIRO Seattle</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#99951122">Vevo ’70s</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#99951127">Vevo Country</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#99951162">NBC Bay Area News</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#99951163">NBC New York News</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#99951165">NBC Chicago News</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#99951166">NBC Philadelphia News</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#99951167">NBC South Florida News</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#99951168">NBC Boston News</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#99951169">ABC7 New York</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#99951170">ABC7 Los Angeles</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#99951171">ABC7 Chicago</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#99951172">6abc Philadelphia</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#99951173">ABC7 Bay Area</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#99951174">KTRK ABC13&apos;s 24/7 Streaming Channel</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#99951175">WTVD ABC11 24/7 Streaming Channel</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#99951176">KFSN ABC30 Central CA</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#99951181">NBC Washington, DC News</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#99951182">NBC Dallas Fort Worth News</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#99951222">News 12 New York</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#99951225">Telemundo Noticias California</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#99951226">Telemundo Noticias Texas</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#99951227">Telemundo Noticias Florida</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#99951228">Telemundo Noticias Noreste</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#99991117">Stingray Hitlist</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#99991118">Stingray Hot Country Christmas</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#99991119">Stingray Classic Rock</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#99991120">Stingray Greatest Holiday Hits</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#99991121">Stingray Soul Storm Christmas</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#99991132">Vevo &apos;80s</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#99991381">Demand Africa</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#99991386">NEW Korean MOVIES &amp; SERIES</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#99991391">Vevo Pop</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#99991641">CBS News New York</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#99991642">CBS News Los Angeles</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#99991643">CBS News Chicago</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#99991655">CBS News Bay Area</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#99991656">CBS News Boston</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#99991689">WPXI Pittsburgh</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#99991690">WSB Atlanta</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#99991691">WSOC Charlotte</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#99991742">Stingray Remember the 80s</channel>
+  <channel site="xumo.tv" lang="" xmltv_id="" site_id="300#99991779">Jubao</channel>
   <channel site="xumo.tv" lang="en" xmltv_id="AmericasTestKitchen.us" site_id="150#99991369">America&apos;s Test Kitchen</channel>
   <channel site="xumo.tv" lang="en" xmltv_id="AntiquesRoadshowUK.us" site_id="200#99991783">Antiques Roadshow UK</channel>
   <channel site="xumo.tv" lang="en" xmltv_id="ArchitecturalDigest.us" site_id="150#99991229">Architectural Digest</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="AXSTVNOW.us" site_id="250#99951136">AXS TV NOW</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="Backstage.us" site_id="250#99991303">Backstage</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="BatteryPopXUMO.us" site_id="200#99991273">batteryPOP</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="Baywatch.us" site_id="50#99951133">Baywatch</channel>
   <channel site="xumo.tv" lang="en" xmltv_id="BBCFood.us" site_id="150#99951177">BBC Food</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="beINSPORTSXTRA.us" site_id="250#99991387">beIN SPORTS XTRA</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="beINSPORTSXTRAenEspanol.us" site_id="250#99991785">beIN SPORTS XTRA en Español</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="BloombergTV.us" site_id="0#99991149">Bloomberg Television</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="BounceXL.us" site_id="50#9999613">Bounce XL</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="Buzzr.us" site_id="100#99951124">BUZZR</channel>
+  <channel site="xumo.tv" lang="en" xmltv_id="BloombergTV.us" site_id="0#99991149">Bloomberg Originals</channel>
   <channel site="xumo.tv" lang="en" xmltv_id="CBSNews.us" site_id="0#99991158">CBS News</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="CBSNewsBayArea.us" site_id="0#99991655">CBS News Bay Area</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="CBSNewsBoston.us" site_id="0#99991656">CBS News Boston</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="CBSNewsChicago.us" site_id="0#99991643">CBS News Chicago</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="CBSNewsLosAngeles.us" site_id="0#99991642">CBS News Los Angeles</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="CBSNewsNewYork.us" site_id="0#99991641">CBS News New York</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="CBSSportsHQ.us" site_id="250#99991645">CBS Sports HQ</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="ChiveTV.us" site_id="0#99991375">CHIVE TV</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="CineLife.us" site_id="50#99991399">CineLife</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="Circle.us" site_id="250#99991131">Circle</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="ComedyDynamics.us" site_id="50#99991190">Comedy Dynamics</channel>
   <channel site="xumo.tv" lang="en" xmltv_id="CourtTV.us" site_id="100#99991713">Court TV</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="Crackle.us" site_id="50#99991714">Crackle</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="Dabl.us" site_id="150#99991664">Dabl</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="DangerTV.us" site_id="150#99991365">DangerTV</channel>
   <channel site="xumo.tv" lang="en" xmltv_id="DarkMatterTV.us" site_id="50#9999615">Dark Matter TV</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="Dateline247.us" site_id="0#99991626">Dateline 24/7</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="DealorNoDeal.us" site_id="100#99991113">Deal Or No Deal</channel>
   <channel site="xumo.tv" lang="en" xmltv_id="Degrassi.us" site_id="100#99991634">Degrassi</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="DemandAfrica.us" site_id="200#99991381">Demand Africa</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="DoveChannel.us" site_id="200#99991333">Dove Channel</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="DUST.us" site_id="100#99991292">DUST</channel>
   <channel site="xumo.tv" lang="en" xmltv_id="ElectricNow.us" site_id="100#99991378">ElectricNOW</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="eScapesXUMO.us" site_id="150#99991280">eScapes</channel>
   <channel site="xumo.tv" lang="en" xmltv_id="EstrellaNews.us" site_id="200#99991776">Estrella News</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="FailArmy.us" site_id="0#99991153">FailArmy</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="FearFactor.us" site_id="100#99951130">Fear Factor</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="FightNetwork.ca" site_id="250#99951132">Fight Network</channel>
   <channel site="xumo.tv" lang="en" xmltv_id="Filmex.mx" site_id="200#99951120">FILMEX</channel>
   <channel site="xumo.tv" lang="en" xmltv_id="FilmexClasico.mx" site_id="200#99981121">FILMEX CLASICO</channel>
   <channel site="xumo.tv" lang="en" xmltv_id="Food52.us" site_id="150#99991340">Food52</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="ForensicFiles.us" site_id="50#99991367">Forensic Files</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="FoxSoul.us" site_id="100#99991103">FOX Soul</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="FoxSports.us" site_id="250#99991196">FOX Sports</channel>
   <channel site="xumo.tv" lang="en" xmltv_id="FoxWeather.us" site_id="0#99991694">Fox Weather</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="FuboSportsNetwork.us" site_id="250#99991359">fubo Sports Network</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="FunnyorDie.us" site_id="0#99991187">Funny or Die</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="GameShowCentral.us" site_id="100#99991750">Game Show Central</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="Glamour.us" site_id="150#99991139">Glamour</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="GloryKickboxing.us" site_id="250#99991278">GLORY Kickboxing</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="GoTraveler.us" site_id="150#99991383">GoTraveler</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="GQ.us" site_id="150#99991137">GQ</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="GravitasMovies.us" site_id="50#99991312">Gravitas Movies</channel>
   <channel site="xumo.tv" lang="en" xmltv_id="GustoTV.us" site_id="150#99991328">GustoTV</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="HallmarkMoviesMore.us" site_id="50#99991709">Hallmark Movies &amp; More</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="HeartlandWebFeed.us" site_id="100#9995114">Heartland</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="HSN.us" site_id="150#99991271">HSN</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="Hungry.us" site_id="150#99991380">Hungry</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="IMPACTWrestling.us" site_id="250#99991341">IMPACT Wrestling Channel</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="IONTVEast.us" site_id="50#99951158">ION</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="ItsShowtimeattheApollo.us" site_id="50#99991349">It&apos;s Showtime at the Apollo</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="Journy.us" site_id="150#99991262">Journy</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="JustforLaughsGags.us" site_id="0#99991204">Just for Laughs Gags</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="kabillion.us" site_id="200#99991295">Kabillion</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="KartoonChannel.us" site_id="200#99991327">Kartoon Channel!</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="KweliTV.us" site_id="50#99991695">kweliTV</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="LawCrime.us" site_id="0#99991320">Law &amp; Crime</channel>
   <channel site="xumo.tv" lang="en" xmltv_id="LiveNOWfromFOX.us" site_id="0#99991635">LiveNOW from FOX</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="Localish.us" site_id="0#99951149">Localish</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="Loupe.us" site_id="150#99991773">Loupe</channel>
   <channel site="xumo.tv" lang="en" xmltv_id="LoveNature.ca" site_id="150#99991398">Love Nature</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="MagellanTVNow.us" site_id="150#99991382">MagellanTV Now</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="MaverickBlackCinema.us" site_id="50#99991336">Maverick Black Cinema</channel>
   <channel site="xumo.tv" lang="en" xmltv_id="MidsomerMurders.us" site_id="100#99991698">Midsomer Murders</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="Motorvision.de" site_id="150#99991325">MOTORVISION.TV</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="MysteryScienceTheater3000.us" site_id="50#99991616">Mystery Science Theater 3000 (MST3K)</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="NBCLX.us" site_id="0#99991651">NBCLX</channel>
   <channel site="xumo.tv" lang="en" xmltv_id="NBCNewsNOW.us" site_id="0#99991247">NBC News NOW</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="NEWKMOVIES.us" site_id="200#99991386">NEW KMOVIES</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="NewsmaxTV.us" site_id="0#99991194">Newsmax TV</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="Newsy.us" site_id="0#99991148">Newsy</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="NitroCircus.us" site_id="250#99991294">Nitro Circus</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="Nosey.us" site_id="100#99991366">Nosey</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="OutdoorAmerica.us" site_id="250#99991374">Outdoor America</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="OutsideTV.us" site_id="250#99991189">Outside</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="Pac12Insider.us" site_id="250#99991143">Pac-12 Insider</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="Pattrn.us" site_id="150#99991683">PATTRN</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="PeopleAreAwesome.us" site_id="100#99991175">People Are Awesome</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="PeopleTV.us" site_id="100#99991193">PeopleTV</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="PGATour.us" site_id="250#99991281">PGA TOUR</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="PlayersTV.ca" site_id="250#99991109">PlayersTV</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="pocketwatch.us" site_id="200#99991326">pocket.watch</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="PokerGo.us" site_id="200#99991633">PokerGO</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="PowerNationTV.us" site_id="150#99991291">PowerNation</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="PursuitUP.us" site_id="250#99991648">PursuitUp</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="QVC.us" site_id="150#99991344">QVC</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="RealNosey.us" site_id="100#99991388">Real Nosey</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="Revry.us" site_id="150#99991296">Revry</channel>
+  <channel site="xumo.tv" lang="en" xmltv_id="NewsmaxTV.us" site_id="0#99991194">Newsmax2</channel>
+  <channel site="xumo.tv" lang="en" xmltv_id="Newsy.us" site_id="0#99991148">Scripps News</channel>
   <channel site="xumo.tv" lang="en" xmltv_id="RiffTrax.us" site_id="100#99991106">RiffTrax</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="Runtime.us" site_id="50#99991321">Runtime</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="ShopLC.us" site_id="150#99991370">ShopLC</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="ShoutFactoryTV.us" site_id="50#99991265">Shout! Factory TV</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="SlightlyOffIFC.us" site_id="0#99991624">Slightly Off IFC</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="SoYummy.us" site_id="150#99991101">So Yummy</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="SportsGrid.us" site_id="250#99991188">SportsGrid</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="Stadium.us" site_id="250#99991319">Stadium</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="StingrayClassicRock.ca" site_id="250#99991119">Stingray Classic Rock</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="StingrayHitList.ca" site_id="250#99991117">Stingray Hitlist</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="StingrayNaturescape.ca" site_id="150#99991252">Stingray Naturescape</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="StingrayRememberthe80s.ca" site_id="250#99991742">Stingray Remember the 80s</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="StingraySoulStorm.ca" site_id="250#99991121">Stingray Soul Storm</channel>
   <channel site="xumo.tv" lang="en" xmltv_id="StoriesbyAMC.us" site_id="100#99991622">Stories by AMC</channel>
   <channel site="xumo.tv" lang="en" xmltv_id="Tastemade.us" site_id="150#99991202">Tastemade</channel>
   <channel site="xumo.tv" lang="en" xmltv_id="TastemadeenEspanol.us" site_id="200#99991743">Tastemade en Español</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="TastemadeTravel.us" site_id="150#9995118">Tastemade Travel Channel</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="Teletubbies.uk" site_id="200#99991761">Teletubbies</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="TheArchive.us" site_id="50#99991310">The Archive</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="TheAsylum.us" site_id="50#99991331">The Asylum</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="TheBobRossChannel.us" site_id="150#99991122">The Bob Ross Channel</channel>
   <channel site="xumo.tv" lang="en" xmltv_id="TheDesignNetwork.us" site_id="150#99991390">The Design Network</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="TheGrioTV.us" site_id="0#99991108">theGRIO</channel>
   <channel site="xumo.tv" lang="en" xmltv_id="TheJamieOliverChannel.us" site_id="150#99951153">The Jamie Oliver Channel</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="ThePetCollective.us" site_id="50#99991174">The Pet Collective</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="ThePriceIsRightTheBarkerEra.us" site_id="100#99951125">The Price is Right: The Barker Era</channel>
   <channel site="xumo.tv" lang="en" xmltv_id="ThisOldHouse.us" site_id="150#99991293">This Old House</channel>
   <channel site="xumo.tv" lang="en" xmltv_id="TODAYAllDay.us" site_id="0#99991245">TODAY All Day</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="ToonGoggles.us" site_id="200#99991268">Toon Goggles</channel>
   <channel site="xumo.tv" lang="en" xmltv_id="TYTNetwork.us" site_id="0#99991147">TYT</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="UnsolvedMysteries.us" site_id="100#99991680">Unsolved Mysteries</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="VanityFair.us" site_id="100#99991141">Vanity Fair</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="Vevo80s.us" site_id="250#99991132">Vevo &apos;80s</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="VevoCountry.us" site_id="250#99951127">Vevo Country</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="VevoHoliday.us" site_id="300#99951204">Vevo Holiday</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="VevoPop.us" site_id="250#99991391">Vevo Pop</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="Vogue.us" site_id="150#99991138">Vogue</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="WaypointTV.us" site_id="250#99991358">WaypointTV</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="WeatherSpy.us" site_id="150#99991372">WEATHERSPY</channel>
   <channel site="xumo.tv" lang="en" xmltv_id="WildEarth.uk" site_id="150#99991628">WildEarth</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="WipeoutXtra.us" site_id="100#99951129">Wipeout Xtra</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="Wired.us" site_id="100#99991135">WIRED</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="WorldPokerTour.us" site_id="200#99991317">World Poker Tour</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="WPXNDT3.us" site_id="50#99951157">ION Mystery</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="WuTangCollection.us" site_id="100#99991745">Wu Tang Collection TV</channel>
   <channel site="xumo.tv" lang="es" xmltv_id="CineSureno.us" site_id="200#99991739">Cine Sureño</channel>
   <channel site="xumo.tv" lang="es" xmltv_id="SonyCanalComedias.us" site_id="200#99951194">Sony Canal Comedias</channel>
 </channels>

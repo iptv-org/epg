@@ -90,6 +90,7 @@ module.exports = {
         }
 
         output.push({
+          lang: 'en',
           site_id: `${i * 50}#${item.channelId}`,
           name: info.title
         })
