@@ -5,6 +5,7 @@
 | [9tv.co.il](sites/9tv.co.il)                                       | 🟢     |                                             |
 | [abc.net.au](sites/abc.net.au)                                     | 🟢     |                                             |
 | [allente.dk](sites/allente.dk)                                     | 🟢     |                                             |
+| [allente.fi](sites/allente.fi)                                     | 🟢     |                                             |
 | [allente.se](sites/allente.se)                                     | 🟢     |                                             |
 | [andorradifusio.ad](sites/andorradifusio.ad)                       | 🟢     |                                             |
 | [anteltv.com.uy](sites/anteltv.com.uy)                             | 🟢     |                                             |
