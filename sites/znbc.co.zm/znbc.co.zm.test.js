@@ -1,5 +1,3 @@
-// npm run grab -- --site=znbc.co.zm
-
 const { parser, url } = require('./znbc.co.zm.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
