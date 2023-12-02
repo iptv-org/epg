@@ -8,16 +8,16 @@ dayjs.extend(utc)
 module.exports = {
   site: 'cubmu.com',
   days: 2,
-  url: function ({ channel, date }) {
+  url({ channel, date }) {
     return `https://servicebuss.transvision.co.id/v2/cms/getEPGData?app_id=cubmu&tvs_platform_id=standalone&schedule_date=${date.format('YYYY-MM-DD')}&channel_id=${channel.site_id}`
   },
-  parser({ content }) {
+  parser({ content, channel }) {
     const programs = []
     const items = parseItems(content)
     items.forEach(item => {
       programs.push({
         title: parseTitle(item),
-        description: parseDescription(item),
+        description: parseDescription(item, channel.lang),
         episode: parseEpisode(item),
         start: parseStart(item).toISOString(),
         stop: parseStop(item).toISOString()
@@ -26,7 +26,7 @@ module.exports = {
 
     return programs
   },
-  async channels() {
+  async channels({ lang = 'id' }) {
     const axios = require('axios')
     const cheerio = require('cheerio')
     const result = await axios
@@ -57,15 +57,19 @@ module.exports = {
       .catch(console.error)
 
     const channels = []
+    const included = []
     if (Array.isArray(subscribedChannels.channelPackageList)) {
       subscribedChannels.channelPackageList.forEach(pkg => {
-        channels.push(...pkg.channelList.map(channel => {
-          return {
-            lang: 'id',
-            site_id: channel.id,
-            name: channel.name
+        pkg.channelList.forEach(channel => {
+          if (included.indexOf(channel.id) < 0) {
+            included.push(channel.id)
+            channels.push({
+              lang,
+              site_id: channel.id,
+              name: channel.name
+            })
           }
-        }))
+        })
       })
     }
 
@@ -81,8 +85,8 @@ function parseTitle(item) {
   return item.scehedule_title
 }
 
-function parseDescription(item) {
-  return item.schedule_json.primarySynopsis
+function parseDescription(item, lang = 'id') {
+  return lang === 'id' ? item.schedule_json.primarySynopsis : item.schedule_json.secondarySynopsis
 }
 
 function parseEpisode(item) {
