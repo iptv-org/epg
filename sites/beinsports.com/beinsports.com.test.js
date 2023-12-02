@@ -1,13 +1,3 @@
-// npm run channels:parse -- --config=./sites/beinsports.com/beinsports.com.config.js --output=./sites/beinsports.com/beinsports.com_mena-ar.channels.xml --set=region:mena --set=lang:ar
-// npm run channels:parse -- --config=./sites/beinsports.com/beinsports.com.config.js --output=./sites/beinsports.com/beinsports.com_mena-en.channels.xml --set=region:mena --set=lang:en
-// npm run channels:parse -- --config=./sites/beinsports.com/beinsports.com.config.js --output=./sites/beinsports.com/beinsports.com_fr-fr.channels.xml --set=region:fr --set=lang:fr
-// npm run channels:parse -- --config=./sites/beinsports.com/beinsports.com.config.js --output=./sites/beinsports.com/beinsports.com_my-en.channels.xml --set=region:my --set=lang:en
-// npm run channels:parse -- --config=./sites/beinsports.com/beinsports.com.config.js --output=./sites/beinsports.com/beinsports.com_us-en.channels.xml --set=region:us --set=lang:en
-// npm run channels:parse -- --config=./sites/beinsports.com/beinsports.com.config.js --output=./sites/beinsports.com/beinsports.com_us-es.channels.xml --set=region:us --set=lang:es
-// npm run channels:parse -- --config=./sites/beinsports.com/beinsports.com.config.js --output=./sites/beinsports.com/beinsports.com_au-en.channels.xml --set=region:au --set=lang:en
-// npm run channels:parse -- --config=./sites/beinsports.com/beinsports.com.config.js --output=./sites/beinsports.com/beinsports.com_nz-en.channels.xml --set=region:nz --set=lang:en
-// npm run grab -- --site=beinsports.com
-
 const { parser, url } = require('./beinsports.com.config.js')
 const fs = require('fs')
 const path = require('path')

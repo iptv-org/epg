@@ -59,9 +59,16 @@ module.exports = {
 }
 
 function parseItems(content) {
-  const data = JSON.parse(content)
-  if (data.length === 0) {
+  let data
+  try {
+    data = JSON.parse(content)
+  } catch (error) {
     return []
   }
-  return data['rows']
+
+  if (!data || !data['rows']) {
+    return []
+  }
+
+  return data.rows
 }
