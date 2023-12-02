@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/abc.net.au/abc.net.au.config.js --output=./sites/abc.net.au/abc.net.au.channels.xml
-// npm run grab -- --site=abc.net.au
-
 const { parser, url } = require('./abc.net.au.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
