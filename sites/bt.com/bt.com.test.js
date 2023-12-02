@@ -1,5 +1,3 @@
-// npm run grab -- --site=bt.com
-
 const { parser, url } = require('./bt.com.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
