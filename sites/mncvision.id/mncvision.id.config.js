@@ -34,8 +34,10 @@ module.exports = {
       const headers = {
         'Content-Type': 'application/x-www-form-urlencoded'
       }
-      if (channel && !cookies[channel.lang]) {
-        cookies[channel.lang] = await loadLangCookies(channel)
+      if (channel) {
+        if (!cookies[channel.lang]) {
+          cookies[channel.lang] = await loadLangCookies(channel)
+        }
         if (cookies[channel.lang]) {
           headers.Cookie = cookies[channel.lang]
         }
@@ -44,7 +46,7 @@ module.exports = {
     },
     jar: null
   },
-  async parser({ content, headers, date, channel}) {
+  async parser({ content, headers, date, channel }) {
     const programs = []
 
     if (!cookies[channel.lang]) {
@@ -69,7 +71,7 @@ module.exports = {
 
     return programs
   },
-  async channels({lang = 'id'}) {
+  async channels({ lang = 'id' }) {
     const axios = require('axios')
     const cheerio = require('cheerio')
     const result = await axios
@@ -161,5 +163,11 @@ async function loadDescription($item, cookies) {
 }
 
 function parseCookies(headers) {
-  return Array.isArray(headers['set-cookie']) ? headers['set-cookie'].join(';') : null
+  const cookies = []
+  if (Array.isArray(headers['set-cookie'])) {
+    headers['set-cookie'].forEach(cookie => {
+      cookies.push(cookie.split('; ')[0])
+    })
+  }
+  return cookies.length ? cookies.join('; ') : null
 }
