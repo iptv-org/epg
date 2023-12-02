@@ -1,5 +1,3 @@
-// npm run grab -- --site=vtm.be
-
 const { parser, url } = require('./vtm.be.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
