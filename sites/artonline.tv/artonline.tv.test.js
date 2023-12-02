@@ -1,5 +1,3 @@
-// npm run grab -- --site=artonline.tv
-
 const { parser, url, request } = require('./artonline.tv.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
