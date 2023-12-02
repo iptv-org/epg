@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/entertainment.ie/entertainment.ie.config.js --output=./sites/entertainment.ie/entertainment.ie.channels.xml
-// npm run grab -- --site=entertainment.ie
-
 const fs = require('fs')
 const path = require('path')
 const { parser, url } = require('./entertainment.ie.config.js')
