@@ -6,6 +6,11 @@ const API_ENDPOINT = 'https://prod.oesp.virginmedia.com/oesp/v4/GB/eng/web'
 module.exports = {
   site: 'virginmedia.com',
   days: 2,
+  request: {
+    cache: {
+      ttl: 60 * 60 * 1000 // 1 hour
+    }
+  },
   url: function ({ date }) {
     return `${API_ENDPOINT}/programschedules/${date.format('YYYYMMDD')}/1`
   },
@@ -53,7 +58,7 @@ module.exports = {
 
     return data.channels.map(item => {
       return {
-        lang: 'be',
+        lang: 'en',
         site_id: item.id.replace('lgi-gb-prodobo-master:40980-', ''),
         name: item.title
       }

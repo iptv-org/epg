@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/virginmedia.com/virginmedia.com.config.js --output=./sites/virginmedia.com/virginmedia.com.channels.xml
-// npm run grab -- --site=virginmedia.com
-
 const { parser, url } = require('./virginmedia.com.config.js')
 const axios = require('axios')
 const dayjs = require('dayjs')
