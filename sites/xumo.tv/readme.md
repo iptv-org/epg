@@ -1,6 +1,6 @@
 # xumo.tv
 
-https://www.xumo.com/ _[Geo-blocked]_
+https://www.xumo.tv/ _[Geo-blocked]_
 
 ### Download the guide
 
