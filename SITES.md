@@ -181,7 +181,7 @@
 | [walesi.com.fj](sites/walesi.com.fj)                               | 🟢     |                                             |
 | [watch.sportsnet.ca](sites/watch.sportsnet.ca)                     | 🟢     |                                             |
 | [watchyour.tv](sites/watchyour.tv)                                 | 🟢     |                                             |
-| [wavve.com](sites/wavve.com)                                       | 🟢     |                                             |
+| [wavve.com](sites/wavve.com)                                       | 🟡     | https://github.com/iptv-org/epg/issues/2271 |
 | [web.magentatv.de](sites/web.magentatv.de)                         | 🟢     |                                             |
 | [webtv.delta.nl](sites/webtv.delta.nl)                             | 🟢     |                                             |
 | [worldfishingnetwork.com](sites/worldfishingnetwork.com)           | 🟢     |                                             |
