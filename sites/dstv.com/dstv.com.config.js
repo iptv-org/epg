@@ -45,14 +45,68 @@ module.exports = {
     return programs
   },
   async channels({ country }) {
+    const countries = {
+      ao: 'ago',
+      bj: 'ben',
+      bw: 'bwa',
+      bf: 'bfa',
+      bi: 'bdi',
+      cm: 'cmr',
+      cv: 'cpv',
+      td: 'tcd',
+      cf: 'caf',
+      km: 'com',
+      cd: 'cod',
+      dj: 'dji',
+      gq: 'gnq',
+      er: 'eri',
+      sz: 'swz',
+      et: 'eth',
+      ga: 'gab',
+      gm: 'gmb',
+      gh: 'gha',
+      gn: 'gin',
+      gw: 'gnb',
+      ci: 'civ',
+      ke: 'ken',
+      lr: 'lbr',
+      mg: 'mdg',
+      mw: 'mwi',
+      ml: 'mli',
+      mr: 'mrt',
+      mu: 'mus',
+      mz: 'moz',
+      na: 'nam',
+      ne: 'ner',
+      ng: 'nga',
+      cg: 'cog',
+      rw: 'rwa',
+      st: 'stp',
+      sn: 'sen',
+      sc: 'syc',
+      sl: 'sle',
+      so: 'som',
+      za: 'zaf',
+      ss: 'ssd',
+      sd: 'sdn',
+      tz: 'tza',
+      tg: 'tgo',
+      ug: 'uga',
+      zm: 'zmb',
+      zw: 'zwe'
+    }
+
+    const code = countries[country]
+
     const data = await axios
-      .get(`${API_ENDPOINT}/GetProgrammes?d=${dayjs().format('YYYY-MM-DD')}&country=${country}`)
+      .get(`${API_ENDPOINT}/GetProgrammes?d=${dayjs().format('YYYY-MM-DD')}&country=${code}`)
       .then(r => r.data)
       .catch(console.log)
 
     return data.Channels.map(item => {
       return {
-        site_id: `${country}#${item.Number}`,
+        lang: 'en',
+        site_id: `${code}#${item.Number}`,
         name: item.Name
       }
     })
@@ -60,11 +114,57 @@ module.exports = {
 }
 
 function parseTime(time, channel) {
-  const [region] = channel.site_id.split('#')
   const tz = {
+    ago: 'Africa/Luanda',
+    ben: 'Africa/Porto-Novo',
+    bwa: 'Africa/Gaborone',
+    bfa: 'Africa/Ouagadougou',
+    bdi: 'Africa/Bujumbura',
+    cmr: 'Africa/Douala',
+    cpv: 'CVT',
+    tcd: 'Africa/Ndjamena',
+    caf: 'Africa/Bangui',
+    com: 'Indian/Comoro',
+    cod: 'Africa/Kinshasa',
+    dji: 'Africa/Djibouti',
+    gnq: 'Africa/Malabo',
+    eri: 'Africa/Asmara',
+    swz: 'SAST',
+    eth: 'Africa/Addis_Ababa',
+    gap: 'Africa/Libreville',
+    gmb: 'Africa/Banjul',
+    gha: 'Africa/Accra',
+    gin: 'Africa/Conakry',
+    gnb: 'Africa/Bissau',
+    civ: 'Africa/Abidjan',
+    ken: 'Africa/Nairobi',
+    lbr: 'Africa/Monrovia',
+    mdg: 'Indian/Antananarivo',
+    mwi: 'Africa/Blantyre',
+    mli: 'Africa/Bamako',
+    mrt: 'Africa/Nouakchott',
+    mus: 'Indian/Mauritius',
+    moz: 'Africa/Maputo',
+    nam: 'Africa/Windhoek',
+    ner: 'Africa/Niamey',
+    nga: 'Africa/Lagos',
+    cog: 'Africa/Brazzaville',
+    rwa: 'Africa/Kigali',
+    stp: 'Africa/Sao_Tome',
+    sen: 'Africa/Dakar',
+    syc: 'Indian/Mahe',
+    sle: 'Africa/Freetown',
+    som: 'Africa/Mogadishu',
     zaf: 'Africa/Johannesburg',
-    nga: 'Africa/Lagos'
+    ssd: 'Africa/Juba',
+    sdn: 'Africa/Khartoum',
+    tza: 'Africa/Dar_es_Salaam',
+    tgo: 'Africa/Lome',
+    uga: 'Africa/Kampala',
+    zmb: 'Africa/Lusaka',
+    zwe: 'Africa/Harare'
   }
+  const [region] = channel.site_id.split('#')
 
   return dayjs.tz(time, 'YYYY-MM-DDTHH:mm:ss', tz[region])
 }
