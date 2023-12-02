@@ -3,10 +3,13 @@ const dayjs = require('dayjs')
 module.exports = {
   site: 'allente.se',
   days: 2,
-  url({ date, channel }) {
-    const [country] = channel.site_id.split('#')
-
-    return `https://cs-vcb.allente.${country}/epg/events?date=${date.format('YYYY-MM-DD')}`
+  request: {
+    cache: {
+      ttl: 60 * 60 * 1000 // 1 hour
+    }
+  },
+  url({ date }) {
+    return `https://cs-vcb.allente.se/epg/events?date=${date.format('YYYY-MM-DD')}`
   },
   parser({ content, channel }) {
     let programs = []
@@ -29,17 +32,17 @@ module.exports = {
 
     return programs
   },
-  async channels({ country, lang }) {
+  async channels() {
     const axios = require('axios')
     const data = await axios
-      .get(`https://cs-vcb.allente.${country}/epg/events?date=${dayjs().format('YYYY-MM-DD')}`)
+      .get(`https://cs-vcb.allente.se/epg/events?date=${dayjs().format('YYYY-MM-DD')}`)
       .then(r => r.data)
       .catch(console.log)
 
     return data.channels.map(item => {
       return {
-        lang,
-        site_id: `${country}#${item.id}`,
+        lang: 'sv',
+        site_id: item.id,
         name: item.name
       }
     })
@@ -47,10 +50,9 @@ module.exports = {
 }
 
 function parseItems(content, channel) {
-  const [, channelId] = channel.site_id.split('#')
   const data = JSON.parse(content)
   if (!data || !Array.isArray(data.channels)) return []
-  const channelData = data.channels.find(i => i.id === channelId)
+  const channelData = data.channels.find(i => i.id === channel.site_id)
 
   return channelData && Array.isArray(channelData.events) ? channelData.events : []
 }

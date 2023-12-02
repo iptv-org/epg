@@ -1,9 +1,3 @@
-// npm run channels:parse -- --config=./sites/allente.se/allente.se.config.js --output=./sites/allente.se/allente.se_se.channels.xml --set=country:se --set=lang:sv
-// npm run channels:parse -- --config=./sites/allente.se/allente.se.config.js --output=./sites/allente.se/allente.se_fi.channels.xml --set=country:fi --set=lang:fi
-// npm run channels:parse -- --config=./sites/allente.se/allente.se.config.js --output=./sites/allente.se/allente.se_no.channels.xml --set=country:no --set=lang:no
-// npm run channels:parse -- --config=./sites/allente.se/allente.se.config.js --output=./sites/allente.se/allente.se_dk.channels.xml --set=country:dk --set=lang:da
-// npm run grab -- --site=allente.se
-
 const { parser, url } = require('./allente.se.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
@@ -13,19 +7,12 @@ dayjs.extend(utc)
 
 const date = dayjs.utc('2021-11-17', 'YYYY-MM-DD').startOf('d')
 const channel = {
-  site_id: 'se#0148',
+  site_id: '0148',
   xmltv_id: 'SVT1.se'
 }
 
 it('can generate valid url', () => {
   expect(url({ date, channel })).toBe('https://cs-vcb.allente.se/epg/events?date=2021-11-17')
-})
-
-it('can generate valid url for different country', () => {
-  const dkChannel = { site_id: 'dk#0148' }
-  expect(url({ date, channel: dkChannel })).toBe(
-    'https://cs-vcb.allente.dk/epg/events?date=2021-11-17'
-  )
 })
 
 it('can parse response', () => {
