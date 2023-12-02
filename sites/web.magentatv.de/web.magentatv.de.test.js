@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/web.magentatv.de/web.magentatv.de.config.js --output=./sites/web.magentatv.de/web.magentatv.de.channels.xml
-// npm run grab -- --site=web.magentatv.de
-
 const { parser, url, request } = require('./web.magentatv.de.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <!-- <channel site="web.magentatv.de" lang="de" xmltv_id="" site_id="132">Jukebox (Sky)</channel>
+  <channel site="web.magentatv.de" lang="de" xmltv_id="" site_id="132">Jukebox (Sky)</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="" site_id="134">Heimatkanal (Sky)</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="" site_id="161">a.tv</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="" site_id="179">Testkanal L04</channel>
@@ -99,10 +99,10 @@
   <channel site="web.magentatv.de" lang="de" xmltv_id="" site_id="6002">France 2</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="" site_id="6003">France 3</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="" site_id="6047">RTL Bayern</channel>
-  <channel site="web.magentatv.de" lang="de" xmltv_id="" site_id="6048">RTL Rhein-Neckar</channel> -->
+  <channel site="web.magentatv.de" lang="de" xmltv_id="" site_id="6048">RTL Rhein-Neckar</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="3sat.de" site_id="392">3sat</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="13thStreetUniversal.de" site_id="255">13TH STREET</channel>
-  <!-- <channel site="web.magentatv.de" lang="de" xmltv_id="123tv.de" site_id="4724">1-2-3.tv</channel>
+  <channel site="web.magentatv.de" lang="de" xmltv_id="123tv.de" site_id="4724">1-2-3.tv</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="1730SAT1Bayern.de" site_id="146">SAT.1 Bayern</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="1730SAT1LIVE.de" site_id="145">SAT.1 Rheinland-Pfalz und Hessen</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="1730SAT1REGIONALHamburgSchleswigHolstein.de" site_id="142">SAT.1 Hamburg und Schleswig-Holstein</channel>
@@ -227,8 +227,8 @@
   <channel site="web.magentatv.de" lang="de" xmltv_id="Rai1.it" site_id="43">Rai 1</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="Rai2.it" site_id="46">Rai 2</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="Rai3.it" site_id="210">Rai 3</channel>
-  <channel site="web.magentatv.de" lang="de" xmltv_id="rbbFernsehenBerlin.de" site_id="384">rbb fernsehen Berlin</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="RBBBrandenburg.de" site_id="242">rbb fernsehen Brandenburg</channel>
+  <channel site="web.magentatv.de" lang="de" xmltv_id="rbbFernsehenBerlin.de" site_id="384">rbb fernsehen Berlin</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="RedBullTV.at" site_id="5027">Red Bull TV</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="RennsteigTV.de" site_id="2609">Rennsteig.TV</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="RFH.de" site_id="4723">RFH Regionalfernsehen Harz</channel>
@@ -243,6 +243,7 @@
   <channel site="web.magentatv.de" lang="de" xmltv_id="RTLNordHamburgSchleswigHolstein.de" site_id="102">RTL Hamburg &amp; Schleswig-Holstein</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="RTLNordNiedersachsenBremen.de" site_id="100">RTL Bremen &amp; Niedersachsen</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="RTLPassion.de" site_id="209">RTL Passion</channel>
+  <channel site="web.magentatv.de" lang="de" xmltv_id="RTLSuper.de" site_id="403">Super RTL</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="RTLup.de" site_id="542">RTLup</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="RTLWest.de" site_id="478">RTL Nordrhein-Westfalen</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="RTLZwei.de" site_id="382">RTLZWEI</channel>
@@ -265,7 +266,7 @@
   <channel site="web.magentatv.de" lang="de" xmltv_id="SkyCinemaClassics.de" site_id="200">Sky Cinema Classics</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="SkyCinemaFamily.de" site_id="572">Sky Cinema Family</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="SkyCinemaFun.de" site_id="235">Sky Cinema Fun</channel>
-  <channel site="web.magentatv.de" lang="de" xmltv_id="SkyCinemaMittelerde.de" site_id="3844">Sky Cinema Harry Potter</channel>
+  <channel site="web.magentatv.de" lang="de" xmltv_id="SkyCinemaMittelerde.de" site_id="3844">Sky Cinema Special</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="SkyCinemaPremieren.de" site_id="195">Sky Cinema Premieren</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="SkyCinemaPremierenPlus24.de" site_id="202">Sky Cinema Premieren +24</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="SkyCinemaThriller.de" site_id="4356">Sky Cinema Thriller</channel>
@@ -305,7 +306,6 @@
   <channel site="web.magentatv.de" lang="de" xmltv_id="SportdigitalFUSSBALL.de" site_id="194">SPORTDIGITAL FUSSBALL</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="SRFernsehen.de" site_id="379">SR Fernsehen</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="Studio47.de" site_id="2616">Studio 47</channel>
-  <channel site="web.magentatv.de" lang="de" xmltv_id="RTLSuper.de" site_id="403">Super RTL</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="SWRFernsehenBadenWurttemberg.de" site_id="398">SWR Fernsehen BW</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="SWRFernsehenRheinlandPfalz.de" site_id="393">SWR Fernsehen RP</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="SYFY.de" site_id="133">SYFY</channel>
@@ -347,5 +347,5 @@
   <channel site="web.magentatv.de" lang="de" xmltv_id="WWTV.de" site_id="580">WWTV</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="ZDF.de" site_id="408">ZDF</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="ZDFinfo.de" site_id="378">ZDFinfo</channel>
-  <channel site="web.magentatv.de" lang="de" xmltv_id="ZDFneo.de" site_id="391">ZDFneo</channel> -->
+  <channel site="web.magentatv.de" lang="de" xmltv_id="ZDFneo.de" site_id="391">ZDFneo</channel>
 </channels>
