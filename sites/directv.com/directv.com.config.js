@@ -46,30 +46,35 @@ module.exports = {
 
     return programs
   },
-  async channels({ zip }) {
-    const html = await axios
-      .get('https://www.directv.com/guide', {
-        headers: {
-          cookie: `dtve-prospect-zip=${zip}`
-        }
+  async channels() {
+    const codes = [10001]
+
+    let channels = []
+    for (let code of codes) {
+      const html = await axios
+        .get('https://www.directv.com/guide', {
+          headers: {
+            cookie: `dtve-prospect-zip=${code}`
+          }
+        })
+        .then(r => r.data)
+        .catch(console.log)
+
+      const $ = cheerio.load(html)
+      const script = $('#dtvClientData').html()
+      const [, json] = script.match(/var dtvClientData = (.*);/) || [null, null]
+      const data = JSON.parse(json)
+
+      data.guideData.channels.forEach(item => {
+        channels.push({
+          lang: 'en',
+          site_id: item.chNum,
+          name: item.chName
+        })
       })
-      .then(r => r.data)
-      .catch(console.log)
+    }
 
-    const $ = cheerio.load(html)
-    const script = $('#dtvClientData').html()
-    const [, json] = script.match(/var dtvClientData = (.*);/) || [null, null]
-    const data = JSON.parse(json)
-
-    let items = data.guideData.channels
-
-    return items.map(item => {
-      return {
-        lang: 'en',
-        site_id: item.chNum,
-        name: item.chName
-      }
-    })
+    return channels
   }
 }
 
