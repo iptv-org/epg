@@ -14,7 +14,6 @@
 | [arianatelevision.com](sites/arianatelevision.com)                 | 🟢     |                                             |
 | [arirang.com](sites/arirang.com)                                   | 🟢     |                                             |
 | [artonline.tv](sites/artonline.tv)                                 | 🟢     |                                             |
-| [astro.com.my](sites/astro.com.my)                                 | 🟢     |                                             |
 | [bein.com](sites/bein.com)                                         | 🟢     |                                             |
 | [beinsports.com](sites/beinsports.com)                             | 🟢     |                                             |
 | [berrymedia.co.kr](sites/berrymedia.co.kr)                         | 🟢     |                                             |
@@ -28,6 +27,7 @@
 | [clickthecity.com](sites/clickthecity.com)                         | 🟢     |                                             |
 | [compulms.com](sites/compulms.com)                                 | 🟢     |                                             |
 | [comteco.com.bo](sites/comteco.com.bo)                             | 🟡     | https://github.com/iptv-org/epg/issues/2239 |
+| [content.astro.com.my](sites/content.astro.com.my)                 | 🟢     |                                             |
 | [cosmote.gr](sites/cosmote.gr)                                     | 🟢     |                                             |
 | [cubmu.com](sites/cubmu.com)                                       | 🟢     |                                             |
 | [dens.tv](sites/dens.tv)                                           | 🟢     |                                             |
