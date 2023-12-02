@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/zuragt.mn/zuragt.mn.config.js --output=./sites/zuragt.mn/zuragt.mn.channels.xml
-// npm run grab -- --site=zuragt.mn
-
 const { parser, url, request } = require('./zuragt.mn.config.js')
 const fs = require('fs')
 const path = require('path')
