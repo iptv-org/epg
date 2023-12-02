@@ -1,5 +1,3 @@
-// npm run grab -- --site=comteco.com.bo
-
 const { parser, url, request } = require('./comteco.com.bo.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
