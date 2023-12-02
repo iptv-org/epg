@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/visionplus.id/visionplus.id.config.js --output=./sites/visionplus.id/visionplus.id.channels.xml
-// npm run grab -- --site=visionplus.id
-
 const { parser, url, request } = require('./visionplus.id.config.js')
 const fs = require('fs')
 const path = require('path')
