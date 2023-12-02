@@ -173,8 +173,8 @@
 | [tvprofil.com](sites/tvprofil.com)                                 | 🟢     |                                             |
 | [tvtv.us](sites/tvtv.us)                                           | 🟡     | https://github.com/iptv-org/epg/issues/2176 |
 | [vidio.com](sites/vidio.com)                                       | 🟢     |                                             |
-| [virginmedia.com](sites/virginmedia.com)                           | 🟢     |                                             |
 | [virginmediatelevision.ie](sites/virginmediatelevision.ie)         | 🟢     |                                             |
+| [virgintvgo.virginmedia.com](sites/virgintvgo.virginmedia.com)     | 🟢     |                                             |
 | [visionplus.id](sites/visionplus.id)                               | 🟢     |                                             |
 | [vivacom.bg](sites/vivacom.bg)                                     | 🟢     |                                             |
 | [vtm.be](sites/vtm.be)                                             | 🟢     |                                             |
