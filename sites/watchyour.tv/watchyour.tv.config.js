@@ -34,6 +34,7 @@ module.exports = {
       .catch(console.log)
 
     return data.map(item => ({
+      lang: 'en',
       site_id: item.id,
       name: item.name
     }))
