@@ -1,5 +1,3 @@
-// npm run grab -- --site=unifi.com.my
-
 const { parser, url, request } = require('./unifi.com.my.config.js')
 const fs = require('fs')
 const path = require('path')
@@ -36,7 +34,7 @@ it('can generate valid request data', () => {
 })
 
 it('can parse response', () => {
-  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'))
+  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'), 'utf8')
   const results = parser({ content, date, channel }).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()

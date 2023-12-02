@@ -38,12 +38,37 @@ module.exports = {
       })
     })
     return programs
+  },
+  async channels() {
+    const axios = require('axios')
+    const data = await axios
+      .post(
+        `https://playtv.unifi.com.my:7053/VSP/V3/QueryAllChannel`,
+        { isReturnAllMedia: '0' },
+        {
+          params: {
+            userFilter: '-1880777955',
+            from: 'inMSAAccess'
+          }
+        }
+      )
+      .then(r => r.data)
+      .catch(console.log)
+
+    return data.channelDetails.map(item => {
+      return {
+        lang: 'en',
+        site_id: item.ID,
+        name: item.name
+      }
+    })
   }
 }
 
 function parseItems(content, channel) {
   try {
-    const data = JSON.parse(content)
+    const [, string] = content.match(/initializeClient(.*)$/)
+    const data = JSON.parse(string)
     if (!data) return []
     if (!Array.isArray(data)) return []
 
