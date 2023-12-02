@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/canalplus.com/canalplus.com.config.js --output=./sites/canalplus.com/canalplus.com.channels.xml
-// npm run grab -- --site=canalplus.com
-
 const { parser, url } = require('./canalplus.com.config.js')
 const fs = require('fs')
 const path = require('path')

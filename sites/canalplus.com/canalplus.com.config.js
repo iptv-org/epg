@@ -47,7 +47,7 @@ module.exports = {
 
     return programs
   },
-  async channels() {
+  async channels({ country }) {
     const paths = {
       ad: 'cpafr/ad',
       bf: 'cpafr/bf',
@@ -90,25 +90,24 @@ module.exports = {
     }
 
     let channels = []
-    for (let [region, path] of Object.entries(paths)) {
-      const url = `https://secure-webtv-static.canal-plus.com/metadata/${path}/all/v2.2/globalchannels.json`
-      const data = await axios
-        .get(url)
-        .then(r => r.data)
-        .catch(console.log)
+    const path = paths[country]
+    const url = `https://secure-webtv-static.canal-plus.com/metadata/${path}/all/v2.2/globalchannels.json`
+    const data = await axios
+      .get(url)
+      .then(r => r.data)
+      .catch(console.log)
 
-      data.channels.forEach(channel => {
-        const site_id = region === 'fr' ? `#${channel.id}` : `${region}#${channel.id}`
+    data.channels.forEach(channel => {
+      const site_id = country === 'fr' ? `#${channel.id}` : `${country}#${channel.id}`
 
-        if (channel.name === '.') return
+      if (channel.name === '.') return
 
-        channels.push({
-          lang: 'fr',
-          site_id,
-          name: channel.name
-        })
+      channels.push({
+        lang: 'fr',
+        site_id,
+        name: channel.name
       })
-    }
+    })
 
     return channels
   }
