@@ -1,5 +1,3 @@
-// npm run grab -- --site=worldfishingnetwork.com
-
 const { parser, url } = require('./worldfishingnetwork.com.config.js')
 const fs = require('fs')
 const path = require('path')
