@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/dsmart.com.tr/dsmart.com.tr.config.js --output=./sites/dsmart.com.tr/dsmart.com.tr.channels.xml
-// npm run grab -- --site=dsmart.com.tr
-
 const { parser, url } = require('./dsmart.com.tr.config.js')
 const dayjs = require('dayjs')
 const fs = require('fs')
