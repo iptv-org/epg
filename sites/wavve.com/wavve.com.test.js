@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=sites/wavve.com/wavve.com.config.js --output=sites/wavve.com/wavve.com.channels.xml
-// npm run grab -- --site=wavve.com
-
 const { parser, url } = require('./wavve.com.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
