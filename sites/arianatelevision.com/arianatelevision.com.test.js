@@ -1,5 +1,3 @@
-// npm run grab -- --site=arianatelevision.com
-
 const { parser, url } = require('./arianatelevision.com.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
