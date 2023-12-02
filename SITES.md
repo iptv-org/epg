@@ -98,6 +98,7 @@
 | [ontvtonight.com](sites/ontvtonight.com)                           | 🟢     |                                             |
 | [osn.com](sites/osn.com)                                           | 🟢     |                                             |
 | [pbsguam.org](sites/pbsguam.org)                                   | 🟢     |                                             |
+| [playtv.unifi.com.my](sites/playtv.unifi.com.my)                   | 🟢     |                                             |
 | [plex.tv](sites/plex.tv)                                           | 🟢     |                                             |
 | [programacion-tv.elpais.com](sites/programacion-tv.elpais.com)     | 🟢     |                                             |
 | [programacion.tcc.com.uy](sites/programacion.tcc.com.uy)           | 🟢     |                                             |
@@ -171,7 +172,6 @@
 | [tvplus.com.tr](sites/tvplus.com.tr)                               | 🟢     |                                             |
 | [tvprofil.com](sites/tvprofil.com)                                 | 🟢     |                                             |
 | [tvtv.us](sites/tvtv.us)                                           | 🟡     | https://github.com/iptv-org/epg/issues/2176 |
-| [unifi.com.my](sites/unifi.com.my)                                 | 🟢     |                                             |
 | [vidio.com](sites/vidio.com)                                       | 🟢     |                                             |
 | [virginmedia.com](sites/virginmedia.com)                           | 🟢     |                                             |
 | [virginmediatelevision.ie](sites/virginmediatelevision.ie)         | 🟢     |                                             |
