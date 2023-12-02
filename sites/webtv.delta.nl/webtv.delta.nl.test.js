@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/webtv.delta.nl/webtv.delta.nl.config.js --output=./sites/webtv.delta.nl/webtv.delta.nl.channels.xml
-// npm run grab -- --site=webtv.delta.nl
-
 const { parser, url } = require('./webtv.delta.nl.config.js')
 const axios = require('axios')
 const dayjs = require('dayjs')
