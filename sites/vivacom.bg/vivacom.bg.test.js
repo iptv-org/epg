@@ -1,5 +1,3 @@
-// npm run grab -- --site=vivacom.bg
-
 const { parser, url } = require('./vivacom.bg.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
