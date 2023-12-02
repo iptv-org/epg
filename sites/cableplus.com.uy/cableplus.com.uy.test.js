@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/cableplus.com.uy/cableplus.com.uy.config.js --output=./sites/cableplus.com.uy/cableplus.com.uy.channels.xml
-// npm run grab -- --site=cableplus.com.uy
-
 const { parser, url, request } = require('./cableplus.com.uy.config.js')
 const fs = require('fs')
 const path = require('path')
