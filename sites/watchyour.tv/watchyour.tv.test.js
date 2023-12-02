@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/watchyour.tv/watchyour.tv.config.js --output=./sites/watchyour.tv/watchyour.tv.channels.xml
-// npm run grab -- --site=watchyour.tv
-
 const { parser, url } = require('./watchyour.tv.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
