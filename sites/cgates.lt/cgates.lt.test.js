@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/cgates.lt/cgates.lt.config.js --output=./sites/cgates.lt/cgates.lt.channels.xml
-// npm run grab -- --site=cgates.lt
-
 const { parser, url } = require('./cgates.lt.config.js')
 const fs = require('fs')
 const path = require('path')
