@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/zap.co.ao/zap.co.ao.config.js --output=./sites/zap.co.ao/zap.co.ao.channels.xml
-// npm run grab -- --site=zap.co.ao
-
 const { parser, url } = require('./zap.co.ao.config.js')
 const fs = require('fs')
 const path = require('path')
