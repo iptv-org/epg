@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/clickthecity.com/clickthecity.com.config.js --output=./sites/clickthecity.com/clickthecity.com.channels.xml
-// npm run grab -- --site=clickthecity.com
-
 const { parser, url, request } = require('./clickthecity.com.config.js')
 const fs = require('fs')
 const path = require('path')
