@@ -1,7 +1,3 @@
-// npm run channels:parse -- --config=./sites/bein.com/bein.com.config.js --output=./sites/bein.com/bein.com_ar.channels.xml --set=lang:ar
-// npm run channels:parse -- --config=./sites/bein.com/bein.com.config.js --output=./sites/bein.com/bein.com_en.channels.xml --set=lang:en
-// npm run grab -- --site=bein.com
-
 const fs = require('fs')
 const path = require('path')
 const { parser, url } = require('./bein.com.config.js')
