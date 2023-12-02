@@ -1,6 +1,3 @@
-// [Geo-blocked] npm run channels:parse -- --config=./sites/cosmote.gr/cosmote.gr.config.js --output=./sites/cosmote.gr/cosmote.gr.channels.xml
-// [Geo-blocked] npm run grab -- --site=cosmote.gr
-
 const { parser, url } = require('./cosmote.gr.config.js')
 const fs = require('fs')
 const path = require('path')
