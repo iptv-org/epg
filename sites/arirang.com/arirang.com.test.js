@@ -1,6 +1,3 @@
-// npm run grab -- --site=arirang.com
-// npx jest arirang.com.test.js
-
 const { url, parser } = require('./arirang.com.config.js')
 const fs = require('fs')
 const path = require('path')
