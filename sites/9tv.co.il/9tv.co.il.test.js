@@ -1,5 +1,3 @@
-// npm run grab -- --site=9tv.co.il
-
 const { parser, url } = require('./9tv.co.il.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
