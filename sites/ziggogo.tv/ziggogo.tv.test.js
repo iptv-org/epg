@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/ziggogo.tv/ziggogo.tv.config.js --output=./sites/ziggogo.tv/ziggogo.tv.channels.xml
-// npm run grab -- --site=ziggogo.tv
-
 const { parser, url } = require('./ziggogo.tv.config.js')
 const fs = require('fs')
 const path = require('path')
