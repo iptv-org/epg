@@ -1,4 +1,4 @@
-const { parser, url } = require('./astro.com.my.config.js')
+const { parser, url } = require('./content.astro.com.my.config.js')
 const fs = require('fs')
 const path = require('path')
 const axios = require('axios')

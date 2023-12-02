@@ -7,7 +7,7 @@ dayjs.extend(utc)
 const API_ENDPOINT = 'https://contenthub-api.eco.astro.com.my'
 
 module.exports = {
-  site: 'astro.com.my',
+  site: 'content.astro.com.my',
   days: 2,
   url: function ({ channel }) {
     return `${API_ENDPOINT}/channel/${channel.site_id}.json`
