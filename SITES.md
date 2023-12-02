@@ -6,6 +6,7 @@
 | [abc.net.au](sites/abc.net.au)                                     | 🟢     |                                             |
 | [allente.dk](sites/allente.dk)                                     | 🟢     |                                             |
 | [allente.fi](sites/allente.fi)                                     | 🟢     |                                             |
+| [allente.no](sites/allente.no)                                     | 🟢     |                                             |
 | [allente.se](sites/allente.se)                                     | 🟢     |                                             |
 | [andorradifusio.ad](sites/andorradifusio.ad)                       | 🟢     |                                             |
 | [anteltv.com.uy](sites/anteltv.com.uy)                             | 🟢     |                                             |
