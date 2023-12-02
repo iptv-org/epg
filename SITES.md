@@ -60,7 +60,7 @@
 | [indihometv.com](sites/indihometv.com)                             | 🟢     |                                             |
 | [ionplustv.com](sites/ionplustv.com)                               | 🟢     |                                             |
 | [ipko.com](sites/ipko.com)                                         | 🟢     |                                             |
-| [kan.org.il](sites/kan.org.il)                                     | 🟢     |                                             |
+| [kan.org.il](sites/kan.org.il)                                     | 🟡     | https://github.com/iptv-org/epg/issues/2273 |
 | [knr.gl](sites/knr.gl)                                             | 🟢     |                                             |
 | [kplus.vn](sites/kplus.vn)                                         | 🟡     | https://github.com/iptv-org/epg/issues/2240 |
 | [kvf.fo](sites/kvf.fo)                                             | 🟢     |                                             |
@@ -184,7 +184,7 @@
 | [walesi.com.fj](sites/walesi.com.fj)                               | 🟢     |                                             |
 | [watch.sportsnet.ca](sites/watch.sportsnet.ca)                     | 🟢     |                                             |
 | [watchyour.tv](sites/watchyour.tv)                                 | 🟢     |                                             |
-| [wavve.com](sites/wavve.com)                                       | 🟡     | https://github.com/iptv-org/epg/issues/2271 |
+| [wavve.com](sites/wavve.com)                                       | 🟢     |                                             |
 | [web.magentatv.de](sites/web.magentatv.de)                         | 🟢     |                                             |
 | [webtv.delta.nl](sites/webtv.delta.nl)                             | 🟢     |                                             |
 | [worldfishingnetwork.com](sites/worldfishingnetwork.com)           | 🟢     |                                             |
