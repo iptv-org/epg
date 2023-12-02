@@ -1,7 +1,7 @@
 const parser = require('epg-parser')
 
 module.exports = {
-  site: 'compulms.com',
+  site: 'energeek.cl',
   days: 2,
   request: {
     cache: {

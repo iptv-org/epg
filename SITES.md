@@ -25,7 +25,6 @@
 | [cgates.lt](sites/cgates.lt)                                       | 🟢     |                                             |
 | [chaines-tv.orange.fr](sites/chaines-tv.orange.fr)                 | 🟢     |                                             |
 | [clickthecity.com](sites/clickthecity.com)                         | 🟢     |                                             |
-| [compulms.com](sites/compulms.com)                                 | 🟢     |                                             |
 | [comteco.com.bo](sites/comteco.com.bo)                             | 🟡     | https://github.com/iptv-org/epg/issues/2239 |
 | [content.astro.com.my](sites/content.astro.com.my)                 | 🟢     |                                             |
 | [cosmote.gr](sites/cosmote.gr)                                     | 🟢     |                                             |
@@ -41,6 +40,7 @@
 | [dstv.com](sites/dstv.com)                                         | 🟢     |                                             |
 | [elcinema.com](sites/elcinema.com)                                 | 🟢     |                                             |
 | [ena.skylifetv.co.kr](sites/ena.skylifetv.co.kr)                   | 🟢     |                                             |
+| [energeek.cl](sites/energeek.cl)                                   | 🟢     |                                             |
 | [entertainment.ie](sites/entertainment.ie)                         | 🟢     |                                             |
 | [epg.i-cable.com](sites/epg.i-cable.com)                           | 🟡     | https://github.com/iptv-org/epg/issues/2228 |
 | [firstmedia.com](sites/firstmedia.com)                             | 🟢     |                                             |
