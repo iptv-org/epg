@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/astro.com.my/astro.com.my.config.js --output=./sites/astro.com.my/astro.com.my.channels.xml
-// npm run grab -- --site=astro.com.my
-
 const { parser, url } = require('./astro.com.my.config.js')
 const fs = require('fs')
 const path = require('path')
