@@ -1,6 +1,3 @@
-// [Geo-blocked] npm run channels:parse -- --config=./sites/canalplus-haiti.com/canalplus-haiti.com.config.js --output=./sites/canalplus-haiti.com/canalplus-haiti.com.channels.xml
-// npm run grab -- --site=canalplus-haiti.com
-
 const { parser, url } = require('./canalplus-haiti.com.config.js')
 const axios = require('axios')
 const dayjs = require('dayjs')
