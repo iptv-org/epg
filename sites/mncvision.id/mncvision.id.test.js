@@ -1,7 +1,3 @@
-// npm run channels:parse -- --config=./sites/mncvision.id/mncvision.id.config.js --output=./sites/mncvision.id/mncvision.id_id.channels.xml --set=lang:id
-// npm run channels:parse -- --config=./sites/mncvision.id/mncvision.id.config.js --output=./sites/mncvision.id/mncvision.id_en.channels.xml --set=lang:en
-// npm run grab -- --site=mncvision.id --lang=id
-
 const { parser, url, request } = require('./mncvision.id.config.js')
 const fs = require('fs')
 const path = require('path')
@@ -46,12 +42,17 @@ axios.get.mockImplementation((url, opts) => {
   if (
     url === 'https://www.mncvision.id/schedule/detail/20231119001500154/Blue-Bloods-S13-Ep-19/1'
   ) {
-    if (opts.headers['Cookie'] === indonesiaHeaders['set-cookie'][0]) {
+    const getCookie = headers => {
+      if (Array.isArray(headers['set-cookie'])) {
+        return headers['set-cookie'][0].split('; ')[0]
+      }
+    }
+    if (opts.headers['Cookie'] === getCookie(indonesiaHeaders)) {
       return Promise.resolve({
         data: fs.readFileSync(path.resolve(__dirname, '__data__/program_id.html'))
       })
     }
-    if (opts.headers['Cookie'] === englishHeaders['set-cookie'][0]) {
+    if (opts.headers['Cookie'] === getCookie(englishHeaders)) {
       return Promise.resolve({
         data: fs.readFileSync(path.resolve(__dirname, '__data__/program_en.html'))
       })
