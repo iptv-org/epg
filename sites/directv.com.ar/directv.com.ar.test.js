@@ -1,5 +1,3 @@
-// [Geo-blocked] npm run grab -- --site=directv.com.ar
-
 const { parser, url, request } = require('./directv.com.ar.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
