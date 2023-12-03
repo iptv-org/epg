@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/mewatch.sg/mewatch.sg.config.js --output=./sites/mewatch.sg/mewatch.sg.channels.xml
-// npm run grab -- --site=mewatch.sg
-
 const { parser, url } = require('./mewatch.sg.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
