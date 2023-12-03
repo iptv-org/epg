@@ -1,7 +1,3 @@
-// npm run channels:parse -- --config=./sites/mytvsuper.com/mytvsuper.com.config.js --output=./sites/mytvsuper.com/mytvsuper.com_en.channels.xml --set=lang:en
-// npm run channels:parse -- --config=./sites/mytvsuper.com/mytvsuper.com.config.js --output=./sites/mytvsuper.com/mytvsuper.com_zh.channels.xml --set=lang:zh
-// npm run grab -- --site=mytvsuper.com --lang=zh
-
 const { parser, url } = require('./mytvsuper.com.config.js')
 const fs = require('fs')
 const path = require('path')
