@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/novasports.gr/novasports.gr.config.js --output=./sites/novasports.gr/novasports.gr.channels.xml
-// npm run grab -- --site=novasports.gr
-
 const { parser, url } = require('./novasports.gr.config.js')
 const fs = require('fs')
 const path = require('path')
