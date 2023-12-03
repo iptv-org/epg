@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/epg.i-cable.com/epg.i-cable.com.config.js --output=./sites/epg.i-cable.com/epg.i-cable.com.channels.xml --set=lang:zh
-// npm run grab -- --site=epg.i-cable.com
-
 const { parser, url } = require('./epg.i-cable.com.config.js')
 const fs = require('fs')
 const path = require('path')
