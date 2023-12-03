@@ -1,5 +1,3 @@
-// npm run grab -- --site=mako.co.il
-
 const { parser, url } = require('./mako.co.il.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
