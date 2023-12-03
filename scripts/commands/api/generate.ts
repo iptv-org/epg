@@ -5,7 +5,7 @@ import { SITES_DIR, API_DIR } from '../../constants'
 import { Channel } from 'epg-grabber'
 
 type OutputItem = {
-  channel: string
+  channel: string | null
   site: string
   site_id: string
   site_name: string
@@ -33,7 +33,7 @@ async function main() {
 
   const output = parsedChannels.map((channel: Channel): OutputItem => {
     return {
-      channel: channel.xmltv_id || '',
+      channel: channel.xmltv_id || null,
       site: channel.site || '',
       site_id: channel.site_id || '',
       site_name: channel.name,
