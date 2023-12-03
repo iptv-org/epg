@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/mytelly.co.uk/mytelly.co.uk.config.js --output=./sites/mytelly.co.uk/mytelly.co.uk.channels.xml
-// npm run grab -- --site=mytelly.co.uk
-
 const { parser, url } = require('./mytelly.co.uk.config.js')
 const fs = require('fs')
 const path = require('path')
