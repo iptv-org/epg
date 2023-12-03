@@ -1,5 +1,3 @@
-// npm run grab -- --site=i24news.tv
-
 const { parser, url } = require('./i24news.tv.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
