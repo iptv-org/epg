@@ -1,5 +1,3 @@
-// npm run grab -- --site=ionplustv.com
-
 const { parser, url } = require('./ionplustv.com.config.js')
 const fs = require('fs')
 const path = require('path')
