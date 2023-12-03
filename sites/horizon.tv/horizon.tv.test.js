@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/horizon.tv/horizon.tv.config.js --output=./sites/horizon.tv/horizon.tv.channels.xml
-// npm run grab -- --site=horizon.tv
-
 const { parser, url } = require('./horizon.tv.config.js')
 const axios = require('axios')
 const dayjs = require('dayjs')
