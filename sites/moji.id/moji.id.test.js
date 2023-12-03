@@ -1,6 +1,3 @@
-// npm run grab -- --site=moji.id
-// npx jest moji.id.test.js
-
 const { url, parser } = require('./moji.id.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
