@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/firstmedia.com/firstmedia.com.config.js --output=./sites/firstmedia.com/firstmedia.com.channels.xml
-// npm run grab -- --site=firstmedia.com
-
 const { url, parser } = require('./firstmedia.com.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
