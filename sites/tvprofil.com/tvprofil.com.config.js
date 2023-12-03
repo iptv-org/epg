@@ -49,7 +49,7 @@ module.exports = {
       hu: { channelsPath: '/hu', progsPath: 'hu/tvmusor', lang: 'hu' },
       ie: { channelsPath: '/ie', progsPath: 'ie/tvschedule', lang: 'en' },
       it: { channelsPath: '/it', progsPath: 'it/guida-tv', lang: 'it' },
-      ks: { channelsPath: '/ks', progsPath: 'ks/programacioni', lang: 'al' },
+      ks: { channelsPath: '/ks', progsPath: 'ks/programacioni', lang: 'sq' },
       me: { channelsPath: '/me', progsPath: 'me/tvprogram', lang: 'en' },
       mk: { channelsPath: '/mk', progsPath: 'mk/tv-raspored', lang: 'mk' },
       pl: { channelsPath: '/pl', progsPath: 'pl/program', lang: 'pl' },
