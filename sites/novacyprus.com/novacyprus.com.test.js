@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/novacyprus.com/novacyprus.com.config.js --output=./sites/novacyprus.com/novacyprus.com.channels.xml
-// npm run grab -- --site=novacyprus.com
-
 const { parser, url } = require('./novacyprus.com.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
