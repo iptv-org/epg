@@ -42,7 +42,10 @@ module.exports = {
 
     return programs
   },
-  async channels({ country, lang }) {
+  async channels({ country }) {
+    let lang = 'es'
+    if (country === 'br') lang = 'pt'
+
     const axios = require('axios')
     const data = await axios
       .get(`https://mi.tv/${country}/sitemap`)

@@ -1,15 +1,3 @@
-// npm run channels:parse -- --config=./sites/mi.tv/mi.tv.config.js --output=./sites/mi.tv/mi.tv_ar.channels.xml --set=country:ar --set=lang:es
-// npm run channels:parse -- --config=./sites/mi.tv/mi.tv.config.js --output=./sites/mi.tv/mi.tv_br.channels.xml --set=country:br --set=lang:pt
-// npm run channels:parse -- --config=./sites/mi.tv/mi.tv.config.js --output=./sites/mi.tv/mi.tv_cl.channels.xml --set=country:cl --set=lang:es
-// npm run channels:parse -- --config=./sites/mi.tv/mi.tv.config.js --output=./sites/mi.tv/mi.tv_co.channels.xml --set=country:co --set=lang:es
-// npm run channels:parse -- --config=./sites/mi.tv/mi.tv.config.js --output=./sites/mi.tv/mi.tv_gt.channels.xml --set=country:gt --set=lang:es
-// npm run channels:parse -- --config=./sites/mi.tv/mi.tv.config.js --output=./sites/mi.tv/mi.tv_hn.channels.xml --set=country:hn --set=lang:es
-// npm run channels:parse -- --config=./sites/mi.tv/mi.tv.config.js --output=./sites/mi.tv/mi.tv_mx.channels.xml --set=country:mx --set=lang:es
-// npm run channels:parse -- --config=./sites/mi.tv/mi.tv.config.js --output=./sites/mi.tv/mi.tv_pe.channels.xml --set=country:pe --set=lang:es
-// npm run channels:parse -- --config=./sites/mi.tv/mi.tv.config.js --output=./sites/mi.tv/mi.tv_py.channels.xml --set=country:py --set=lang:es
-// npm run channels:parse -- --config=./sites/mi.tv/mi.tv.config.js --output=./sites/mi.tv/mi.tv_sv.channels.xml --set=country:sv --set=lang:es
-// npm run grab -- --channels=./sites/mi.tv/mi.tv_py.channels.xml
-
 const { parser, url } = require('./mi.tv.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
