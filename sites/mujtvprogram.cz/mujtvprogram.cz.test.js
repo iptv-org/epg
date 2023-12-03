@@ -1,6 +1,3 @@
-// [Geo-blocked] npm run channels:parse -- --config=./sites/mujtvprogram.cz/mujtvprogram.cz.config.js --output=./sites/mujtvprogram.cz/mujtvprogram.cz.channels.xml
-// [Geo-blocked] npm run grab -- --site=mujtvprogram.cz
-
 const { parser, url } = require('./mujtvprogram.cz.config.js')
 const fs = require('fs')
 const path = require('path')
