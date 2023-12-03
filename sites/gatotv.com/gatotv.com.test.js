@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/gatotv.com/gatotv.com.config.js --output=./sites/gatotv.com/gatotv.com.channels.xml
-// npm run grab -- --site=gatotv.com
-
 const { parser, url } = require('./gatotv.com.config.js')
 const fs = require('fs')
 const path = require('path')
