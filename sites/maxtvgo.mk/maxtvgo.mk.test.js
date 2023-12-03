@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/maxtvgo.mk/maxtvgo.mk.config.js --output=./sites/maxtvgo.mk/maxtvgo.mk.channels.xml
-// npm run grab -- --site=maxtvgo.mk
-
 const { parser, url } = require('./maxtvgo.mk.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
