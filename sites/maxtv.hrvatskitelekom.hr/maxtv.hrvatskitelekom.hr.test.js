@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/maxtv.hrvatskitelekom.hr/maxtv.hrvatskitelekom.hr.config.js --output=./sites/maxtv.hrvatskitelekom.hr/maxtv.hrvatskitelekom.hr.channels.xml
-// npm run grab -- --site=maxtv.hrvatskitelekom.hr
-
 const { parser, url, request } = require('./maxtv.hrvatskitelekom.hr.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
