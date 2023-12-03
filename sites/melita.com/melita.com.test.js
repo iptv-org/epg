@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/melita.com/melita.com.config.js --output=./sites/melita.com/melita.com.channels.xml
-// npm run grab -- --site=melita.com
-
 const { parser, url } = require('./melita.com.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
