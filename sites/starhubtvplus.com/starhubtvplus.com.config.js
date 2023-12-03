@@ -61,6 +61,7 @@ module.exports = {
       .catch(console.log)
 
     return items.map(item => ({
+      lang: 'en',
       site_id: item.id,
       name: item.name.replace('_DASH', '')
     }))
