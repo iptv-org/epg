@@ -66,6 +66,7 @@ module.exports = {
 
     return items.map(item => {
       return {
+        lang: 'es',
         site_id: $(item).attr('value'),
         name: $(item).text()
       }
