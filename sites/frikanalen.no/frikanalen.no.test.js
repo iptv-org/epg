@@ -1,5 +1,3 @@
-// npm run grab -- --site=frikanalen.no
-
 const { parser, url } = require('./frikanalen.no.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
