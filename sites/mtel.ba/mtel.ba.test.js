@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/mtel.ba/mtel.ba.config.js --output=./sites/mtel.ba/mtel.ba.channels.xml
-// npm run grab -- --site=mtel.ba
-
 const { parser, url, request } = require('./mtel.ba.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
