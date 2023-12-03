@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/meuguia.tv/meuguia.tv.config.js --output=./sites/meuguia.tv/meuguia.tv.channels.xml
-// npm run grab -- --site=meuguia.tv
-
 const { parser, url } = require('./meuguia.tv.config.js')
 const fs = require('fs')
 const path = require('path')
@@ -37,7 +34,8 @@ it('can parse response', () => {
       episode: 4
     },
     {
-      title: 'Hawaii Five-0 : T10 EP5 - Don\'t Blame Ghosts and Spirits for One\'s Troubles; A Human Is Responsible',
+      title:
+        "Hawaii Five-0 : T10 EP5 - Don't Blame Ghosts and Spirits for One's Troubles; A Human Is Responsible",
       start: '2023-11-21T22:15:00.000Z',
       stop: '2023-11-21T23:10:00.000Z',
       season: 10,
