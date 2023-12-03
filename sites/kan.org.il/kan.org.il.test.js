@@ -1,5 +1,3 @@
-// npm run grab -- --site=kan.org.il
-
 const { parser, url } = require('./kan.org.il.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
