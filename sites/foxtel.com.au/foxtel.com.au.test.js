@@ -1,6 +1,3 @@
-// [Geo-blocked] npm run channels:parse -- --config=./sites/foxtel.com.au/foxtel.com.au.config.js --output=./sites/foxtel.com.au/foxtel.com.au.channels.xml
-// [Geo-blocked] npm run grab -- --site=foxtel.com.au
-
 const { parser, url, request } = require('./foxtel.com.au.config.js')
 const fs = require('fs')
 const path = require('path')
