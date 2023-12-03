@@ -40,6 +40,7 @@ module.exports = {
 
     return data.MediaContainer.Channel.map(c => {
       return {
+        lang: 'en',
         site_id: c.id,
         name: c.title
       }
