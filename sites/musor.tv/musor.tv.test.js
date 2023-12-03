@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/musor.tv/musor.tv.config.js --output=./sites/musor.tv/musor.tv.channels.xml
-// npm run grab -- --site=musor.tv
-
 const { parser, url } = require('./musor.tv.config.js')
 const fs = require('fs')
 const path = require('path')
