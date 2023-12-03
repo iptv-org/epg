@@ -1,7 +1,3 @@
-// npm run channels:parse -- --config=./sites/elcinema.com/elcinema.com.config.js --output=./sites/elcinema.com/elcinema.com_ar.channels.xml --set=lang:ar
-// npm run channels:parse -- --config=./sites/elcinema.com/elcinema.com.config.js --output=./sites/elcinema.com/elcinema.com_en.channels.xml --set=lang:en
-// npm run grab -- --site=elcinema.com
-
 const { parser, url } = require('./elcinema.com.config.js')
 const fs = require('fs')
 const path = require('path')
