@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/magticom.ge/magticom.ge.config.js --output=./sites/magticom.ge/magticom.ge.channels.xml
-// npm run grab -- --site=magticom.ge
-
 const { parser, url, request } = require('./magticom.ge.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
