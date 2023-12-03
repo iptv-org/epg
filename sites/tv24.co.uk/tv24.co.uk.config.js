@@ -64,6 +64,7 @@ module.exports = {
       const [, site_id] = link.match(/\/channel\/(.*)/) || [null, null]
 
       return {
+        lang: 'en',
         site_id,
         name
       }
