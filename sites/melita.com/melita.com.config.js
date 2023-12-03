@@ -39,6 +39,7 @@ module.exports = {
       .filter(i => !i.audioOnly && i.enabled)
       .map(i => {
         return {
+          lang: 'en',
           name: i.name,
           site_id: i.id
         }
