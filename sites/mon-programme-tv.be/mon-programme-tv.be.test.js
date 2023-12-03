@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/mon-programme-tv.be/mon-programme-tv.be.config.js --output=./sites/mon-programme-tv.be/mon-programme-tv.be.channels.xml
-// npm run grab -- --site=mon-programme-tv.be
-
 const { parser, url } = require('./mon-programme-tv.be.config.js')
 const fs = require('fs')
 const path = require('path')
