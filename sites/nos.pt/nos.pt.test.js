@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/nos.pt/nos.pt.config.js --output=./sites/nos.pt/nos.pt.channels.xml
-// npm run grab -- --site=nos.pt
-
 const { parser, url } = require('./nos.pt.config.js')
 const fs = require('fs')
 const path = require('path')
