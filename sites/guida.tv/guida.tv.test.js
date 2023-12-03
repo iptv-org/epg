@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/guida.tv/guida.tv.config.js --output=./sites/guida.tv/guida.tv.channels.xml
-// npm run grab -- --site=guida.tv
-
 const { parser, url } = require('./guida.tv.config.js')
 const fs = require('fs')
 const path = require('path')
