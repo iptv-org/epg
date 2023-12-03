@@ -1,4 +1,4 @@
-const { url, parser } = require('./nhk.or.jp.config.js')
+const { url, parser } = require('./www3.nhk.or.jp.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 dayjs.extend(utc)

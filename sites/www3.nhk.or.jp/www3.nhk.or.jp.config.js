@@ -1,10 +1,8 @@
 const dayjs = require('dayjs')
 
 module.exports = {
-  site: 'nhk.or.jp',
+  site: 'www3.nhk.or.jp',
   days: 5,
-  output: 'nhk.or.jp.guide.xml',
-  channels: 'nhk.or.jp.channels.xml',
   lang: 'en',
   delay: 5000,
 
