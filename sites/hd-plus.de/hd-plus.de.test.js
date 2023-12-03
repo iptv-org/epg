@@ -1,5 +1,3 @@
-// npm run grab -- --site=hd-plus.de
-
 const { parser, url } = require('./hd-plus.de.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
