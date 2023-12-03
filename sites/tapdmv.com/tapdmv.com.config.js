@@ -39,6 +39,7 @@ module.exports = {
     return items.map(item => {
       const [, name] = item.name.match(/epg-tapgo-([^.]+).json/)
       return {
+        lang: 'en',
         site_id: item.id,
         name
       }
