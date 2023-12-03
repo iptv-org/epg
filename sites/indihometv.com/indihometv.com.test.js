@@ -1,6 +1,3 @@
-// [Connection timeout] npm run channels:parse -- --config=./sites/indihometv.com/indihometv.com.config.js --output=./sites/indihometv.com/indihometv.com.channels.xml
-// [Connection timeout] npm run grab -- --site=indihometv.com
-
 const { parser, url } = require('./indihometv.com.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
