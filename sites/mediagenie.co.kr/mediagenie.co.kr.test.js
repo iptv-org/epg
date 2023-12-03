@@ -1,5 +1,3 @@
-// npm run grab -- --site=mediagenie.co.kr
-
 const { parser, url, request } = require('./mediagenie.co.kr.config.js')
 const fs = require('fs')
 const path = require('path')
