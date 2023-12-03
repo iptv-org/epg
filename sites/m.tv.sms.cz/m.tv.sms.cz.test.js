@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/m.tv.sms.cz/m.tv.sms.cz.config.js --output=./sites/m.tv.sms.cz/m.tv.sms.cz.channels.xml
-// npm run grab -- --site=m.tv.sms.cz
-
 const { parser, url } = require('./m.tv.sms.cz.config.js')
 const iconv = require('iconv-lite')
 const fs = require('fs')
