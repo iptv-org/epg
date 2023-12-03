@@ -1,5 +1,3 @@
-// npm run grab -- --site=ena.skylifetv.co.kr
-
 const { parser, url } = require('./ena.skylifetv.co.kr.config.js')
 const fs = require('fs')
 const path = require('path')
