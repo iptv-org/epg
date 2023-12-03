@@ -59,6 +59,13 @@ async function main() {
         totalErrors++
       }
 
+      if (!langs.where('1', channel.lang)) {
+        errors.push({ type: 'wrong_lang', ...channel })
+        totalErrors++
+      }
+
+      if (!channel.xmltv_id) return
+
       const foundChannel = channels.first(
         (_channel: ApiChannel) => _channel.id === channel.xmltv_id
       )
@@ -76,11 +83,6 @@ async function main() {
       //   errors.push({ type: 'closed', ...channel })
       //   totalErrors++
       // }
-
-      if (!langs.where('1', channel.lang)) {
-        errors.push({ type: 'wrong_lang', ...channel })
-        totalErrors++
-      }
     })
 
     if (errors.length) {
