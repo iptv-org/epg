@@ -62,7 +62,7 @@ module.exports = {
 
     return items.map(item => {
       return {
-        lang: 'jp',
+        lang: 'ja',
         site_id: `${item.channel_type}_${item.channel_id}_${item.network_id}`,
         name: item.channel_name
       }
