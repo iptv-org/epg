@@ -7,7 +7,7 @@ dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
 module.exports = {
-  site: 'myafn.dodmedia.osd.mil',
+  site: 'v3.myafn.dodmedia.osd.mil',
   days: 2,
   request: {
     cache: {

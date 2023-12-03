@@ -1,4 +1,4 @@
-const { parser, url } = require('./myafn.dodmedia.osd.mil.config.js')
+const { parser, url } = require('./v3.myafn.dodmedia.osd.mil.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
