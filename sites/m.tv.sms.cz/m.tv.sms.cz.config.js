@@ -46,7 +46,9 @@ module.exports = {
     const $ = cheerio.load(data)
     $('.stanice').each((i, el) => {
       const name = $(el).attr('title')
-      const site_id = $(el).find('input').attr('value')
+      const site_id = $(el).find('input').attr('value').replace(/\|/g, '')
+
+      if (!name) return
 
       channels.push({
         lang: 'cs',

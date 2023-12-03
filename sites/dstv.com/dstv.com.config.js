@@ -45,6 +45,8 @@ module.exports = {
     return programs
   },
   async channels({ country }) {
+    const _ = require('lodash')
+
     const countries = {
       ao: 'ago',
       bj: 'ben',
@@ -103,13 +105,16 @@ module.exports = {
       .then(r => r.data)
       .catch(console.log)
 
-    return data.Channels.map(item => {
-      return {
+    let channels = []
+    data.Channels.forEach(item => {
+      channels.push({
         lang: 'en',
         site_id: `${code}#${item.Number}`,
         name: item.Name
-      }
+      })
     })
+
+    return _.uniqBy(channels, 'site_id')
   }
 }
 
