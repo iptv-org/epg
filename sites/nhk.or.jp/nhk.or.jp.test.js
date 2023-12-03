@@ -1,6 +1,3 @@
-// npm run grab -- --site=nhk.or.jp
-// npx jest nhk.or.jp.test.js
-
 const { url, parser } = require('./nhk.or.jp.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
