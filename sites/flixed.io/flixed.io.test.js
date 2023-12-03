@@ -1,5 +1,3 @@
-// npm run grab -- --site=flixed.io
-
 const { parser, url } = require('./flixed.io.config.js')
 const fs = require('fs')
 const path = require('path')
