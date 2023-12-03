@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/foxsports.com.au/foxsports.com.au.config.js --output=./sites/foxsports.com.au/foxsports.com.au.channels.xml
-// npm run grab -- --site=foxsports.com.au
-
 const { parser, url } = require('./foxsports.com.au.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
