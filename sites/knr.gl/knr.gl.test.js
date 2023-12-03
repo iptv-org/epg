@@ -1,5 +1,3 @@
-// npm run grab -- --site=knr.gl
-
 const { parser, url, request } = require('./knr.gl.config.js')
 const fs = require('fs')
 const path = require('path')
