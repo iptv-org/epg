@@ -10,9 +10,9 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'indihometv.com',
-  days: 2,
+  days: 1,
   url({ channel }) {
-    return `https://www.indihometv.com/tvod/${channel.site_id}`
+    return `https://www.indihometv.com/livetv/${channel.site_id}`
   },
   parser({ content, date }) {
     const programs = []
@@ -43,7 +43,7 @@ module.exports = {
     const axios = require('axios')
     const cheerio = require('cheerio')
     const data = await axios
-      .get('https://www.indihometv.com/tvod')
+      .get('https://www.indihometv.com/tv/live')
       .then(response => response.data)
       .catch(console.error)
 
