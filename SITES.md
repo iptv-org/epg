@@ -75,7 +75,7 @@
 | [mediaset.it](sites/mediaset.it)                                   | 🟢     |                                             |
 | [melita.com](sites/melita.com)                                     | 🟢     |                                             |
 | [meo.pt](sites/meo.pt)                                             | 🟢     |                                             |
-| [meuguia.tv](sites/meuguia.tv)                                     | 🟢     |                                             |
+| [meuguia.tv](sites/meuguia.tv)                                     | 🔴     | https://github.com/iptv-org/epg/issues/2275 |
 | [mewatch.sg](sites/mewatch.sg)                                     | 🟢     |                                             |
 | [mi.tv](sites/mi.tv)                                               | 🟢     |                                             |
 | [mncvision.id](sites/mncvision.id)                                 | 🟢     |                                             |
