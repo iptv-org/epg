@@ -67,7 +67,7 @@ module.exports = {
         channels.push({
           lang,
           site_id: $(el).find('cid').text(),
-          name: $(el).find('name').text()
+          name: $(el).find('name').first().text()
         })
       })
     }
