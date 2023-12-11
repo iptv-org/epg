@@ -1,4 +1,7 @@
 const { parser, url, request } = require('./rotana.net.config.js')
+const fs = require('fs')
+const path = require('path')
+const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -6,17 +9,30 @@ const customParseFormat = require('dayjs/plugin/customParseFormat')
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
-const date = dayjs.utc('2023-11-11').startOf('d')
+jest.mock('axios')
+
+const date = dayjs.utc('2023-12-10').startOf('d')
 const channel = {
   lang: 'en',
   site_id: '439',
   xmltv_id: 'RotanaCinemaMasr.sa'
 }
-const channelAr = {
-  lang: 'ar',
-  site_id: '439',
-  xmltv_id: 'RotanaCinemaMasr.sa'
-}
+const channelAr = Object.assign({}, channel, { lang: 'ar' })
+
+axios.get.mockImplementation((url, opts) => {
+  if (url === 'https://rotana.net/en/streams?channel=439&itemId=239849') {
+    return Promise.resolve({
+      data: fs.readFileSync(path.resolve(__dirname, '__data__/program_en.html'))
+    })
+  }
+  if (url === 'https://rotana.net/ar/streams?channel=439&itemId=239849') {
+    return Promise.resolve({
+      data: fs.readFileSync(path.resolve(__dirname, '__data__/program_ar.html'))
+    })
+  }
+
+  return Promise.resolve({ data: '' })
+})
 
 it('can use defined user agent', () => {
   const result = request.headers['User-Agent']
@@ -27,56 +43,48 @@ it('can use defined user agent', () => {
 
 it('can generate valid english url', () => {
   const result = url({ channel, date })
-  expect(result).toBe('https://rotana.net/en/streams?channel=439')
+  expect(result).toBe('https://rotana.net/en/streams?channel=439&tz=')
 })
 
 it('can generate valid arabic url', () => {
   const result = url({ channel: channelAr, date })
-  expect(result).toBe('https://rotana.net/ar/streams?channel=439')
+  expect(result).toBe('https://rotana.net/ar/streams?channel=439&tz=')
 })
 
-it('can parse english response', () => {
-  const fs = require('fs')
-  const path = require('path')
-
-  const result = parser({
+it('can parse english response', async () => {
+  const result = await parser({
     channel,
     date,
     content: fs.readFileSync(path.join(__dirname, '/__data__/content_en.html'))
   })
-  expect(result).toMatchObject([
-    {
-      start: '2023-11-10T23:00:00.000Z',
-      stop: '2023-11-11T01:00:00.000Z',
-      title: 'Harim Karim',
-      description:
-        'Karim and Jihan separate after a year of marriage due to her discovering his betrayal in her home. Karim tries to get his wife back, but she refuses. Karim calls his old colleague Maha to help him. Ho...'
-    }
-  ])
+  expect(result[0]).toMatchObject({
+    start: '2023-12-09T21:36:00.000Z',
+    stop: '2023-12-09T23:46:00.000Z',
+    title: 'Katkout',
+    description:
+      'In a comic framework, the events of the film revolve around (Katkoot) Al-Saedi, whose aunt, the eldest of the Al-Saedi family, tries to force him to kill himself in order to ransom his family. A time...',
+    icon: 'https://imgsrv.rotana.net/spider_storage/1398X1000/1690882129.webp?w=450&fit=max'
+  })
 })
 
-it('can parse arabic response', () => {
-  const fs = require('fs')
-  const path = require('path')
-
-  const result = parser({
-    channelAr,
+it('can parse arabic response', async () => {
+  const result = await parser({
+    channel: channelAr,
     date,
     content: fs.readFileSync(path.join(__dirname, '/__data__/content_ar.html'))
   })
-  expect(result).toMatchObject([
-    {
-      start: '2023-11-10T23:00:00.000Z',
-      stop: '2023-11-11T01:00:00.000Z',
-      title: 'حريم كريم',
-      description:
-        'كريم وجيهان ينفصلا بعد عام من الزواج بسبب اكتشافها لخيانته في منزلها، يحاول كريم استعادة زوجته، لكنها ترفض، فيتصل كريم بزميلته القديمة مها، لتساعده، لكن متاعب تحدث بين مها وزوجها، فتأتي لتعيش مع كريم،...'
-    }
-  ])
+  expect(result[0]).toMatchObject({
+    start: '2023-12-09T21:36:00.000Z',
+    stop: '2023-12-09T23:46:00.000Z',
+    title: 'كتكوت',
+    description:
+      'في إطار كوميدي تدور أحداث الفيلم، حول (كتكوت) الصعيدي الذي تحاول عمته كبيرة العائلة الصعيدية إجباره على تقديم نفسه للقتل ليفدي عائلته، ولكنه يهرب وتخطفه جهة أمنية لاكتشاف شبه كبير بينه وبين (يوسف خوري...',
+    icon: 'https://imgsrv.rotana.net/spider_storage/1398X1000/1690882129.webp?w=450&fit=max'
+  })
 })
 
-it('can handle empty guide', () => {
-  const result = parser({
+it('can handle empty guide', async () => {
+  const result = await parser({
     content: '<!DOCTYPE html><html><head></head><body></body></html>',
     date,
     channel
