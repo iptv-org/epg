@@ -1,38 +1,57 @@
 const { parser, url } = require('./tv.trueid.net.config.js')
+const fs = require('fs')
+const path = require('path')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
+
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
-const date = dayjs.utc('2021-10-28', 'YYYY-MM-DD').startOf('d')
+const date = dayjs.utc('2023-12-11').startOf('d')
 const channel = {
-  site_id: 'tv-nfl-nba',
-  xmltv_id: 'NFLNBATV.us',
-  name: 'NFL &amp; NBA TV'
+  lang: 'en',
+  site_id: 'true-movie-hits',
+  xmltv_id: 'TrueMovieHits.th'
 }
-const content =
-  '<!DOCTYPE html><html lang="th"><head></head><body><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"lang":"th","listEPG":{"status":200,"data":[{"cmsId":"eXlvvZ4EA5aY","channelCode":"t513","logo":"https://cms.dmpcdn.com/livetv/2021/09/28/2c9c41c0-203b-11ec-9346-6f50de6452df_webp_original.png","title":"NFL \\u0026 NBA TV","slug":"tv-nfl-nba","url":"https://tv.trueid.net/live/tv-nfl-nba","programList":[{"title_id":"710569","title":"NBA 2021/22","displayTime":"02:00 - 04:00","time":120,"channel_code":"t513","detail":{"title_id":"710569","title":"NBA 2021/22","display_date":"Fri","start_date":"2021-10-28T19:00:00.000Z","end_date":"2021-10-28T21:00:00.000Z","thumb":"https://epgthumb.dmpcdn.com/thumbnail_large/t513/20211029/20211029_020000.jpg","ep_no":"43","ep_name":"043:MIAMI VS BROOKLYN 28 OCT"},"no":3,"status":true}]}]},"category_name":"all","nowDate":"2021-10-29","metaTitle":"ผังรายการทีวีช่องทีวีทั้งหมด วันที่ 29/10/2021"},"lang":"th","currentUrl":"https://tv.trueid.net/tvguide/all\\u0026is_gcp=false"}}</script></body></html>'
+const channelTh = Object.assign({}, channel, { lang: 'th' })
+const data = fs.readFileSync(path.resolve(__dirname, '__data__/data.json'))
 
 it('can generate valid url', () => {
   const result = url({ channel, date })
-  expect(result).toBe('https://tv.trueid.net/tvguide/all/tv-nfl-nba/2021-10-28')
+  expect(result).toBe('https://tv.trueid.net/_next/data/1380644e0f1fb6b14c82894a0c682d147e015c9d/th-en.json?channelSlug=true-movie-hits&path=true-movie-hits')
 })
 
-it('can parse response', () => {
-  const result = parser({ date, channel, content }).map(p => {
+it('can parse English response', () => {
+  const result = parser({ date, channel, content: data }).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
     return p
   })
-  expect(result).toMatchObject([
-    {
-      start: '2021-10-28T19:00:00.000Z',
-      stop: '2021-10-28T21:00:00.000Z',
-      title: 'NBA 2021/22',
-      icon: 'https://epgthumb.dmpcdn.com/thumbnail_large/t513/20211029/20211029_020000.jpg'
-    }
-  ])
+  expect(result[0]).toMatchObject({
+    start: '2023-12-11T19:05:00.000Z',
+    stop: '2023-12-11T20:55:00.000Z',
+    title: 'The Last Witch Hunter',
+    description:
+      'A young man is all that stands between humanity and the most horrifying witches in history.',
+    icon: 'https://bms.dmpcdn.com/uploads/pic/381f853da5f4a310bf248357fed21a57.jpg'
+  })
+})
+
+it('can parse Thai response', () => {
+  const result = parser({ date, channel: channelTh, content: data }).map(p => {
+    p.start = p.start.toJSON()
+    p.stop = p.stop.toJSON()
+    return p
+  })
+  expect(result[0]).toMatchObject({
+    start: '2023-12-11T19:05:00.000Z',
+    stop: '2023-12-11T20:55:00.000Z',
+    title: 'The Last Witch Hunter',
+    description:
+      'หนุ่มนักล่าแม่มดถูกสาปให้เป็นอมตะจนกระทั่งราชินีแม่มดได้ฟื้นคืนชีพขึ้นมาจึงมีเพียงเขาคนเดียวเท่านั้นที่จะสามารถกอบกู้มวลมนุษยชาติได้',
+    icon: 'https://bms.dmpcdn.com/uploads/pic/381f853da5f4a310bf248357fed21a57.jpg'
+  })
 })
 
 it('can handle empty guide', () => {
