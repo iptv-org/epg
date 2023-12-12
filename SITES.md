@@ -92,7 +92,7 @@
 | [mytvsuper.com](sites/mytvsuper.com)                               | 🟢     |                                             |
 | [nhk.or.jp](sites/nhk.or.jp)                                       | 🟢     |                                             |
 | [nhkworldpremium.com](sites/nhkworldpremium.com)                   | 🟢     |                                             |
-| [nos.pt](sites/nos.pt)                                             | 🔴     | https://github.com/iptv-org/epg/issues/2183 |
+| [nostv.pt](sites/nostv.pt)                                         | 🟢     |                                             |
 | [novacyprus.com](sites/novacyprus.com)                             | 🟢     |                                             |
 | [novasports.gr](sites/novasports.gr)                               | 🟢     |                                             |
 | [nowplayer.now.com](sites/nowplayer.now.com)                       | 🔴     | https://github.com/iptv-org/epg/issues/2247 |
