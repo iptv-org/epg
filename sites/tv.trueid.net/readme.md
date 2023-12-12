@@ -4,6 +4,8 @@ https://tv.trueid.net/
 
 ### Download the guide
 
+**NOTE:** This site only provides guides for today at current time, so it is necessary to get the guide at proper time (0:00 of Asia/Bangkok) to get the complete guides.
+
 Thai:
 
 ```sh
