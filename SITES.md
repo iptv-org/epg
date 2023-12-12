@@ -151,7 +151,7 @@
 | [tv.movistar.com.pe](sites/tv.movistar.com.pe)                     | 🟢     |                                             |
 | [tv.nu](sites/tv.nu)                                               | 🟢     |                                             |
 | [tv.post.lu](sites/tv.post.lu)                                     | 🟢     |                                             |
-| [tv.trueid.net](sites/tv.trueid.net)                               | 🔴     | https://github.com/iptv-org/epg/issues/2164 |
+| [tv.trueid.net](sites/tv.trueid.net)                               | 🟢     |                                             |
 | [tv.yandex.ru](sites/tv.yandex.ru)                                 | 🟢     |                                             |
 | [tv.yettel.hu](sites/tv.yettel.hu)                                 | 🔴     | https://github.com/iptv-org/epg/issues/2263 |
 | [tv2go.t-2.net](sites/tv2go.t-2.net)                               | 🟢     |                                             |
