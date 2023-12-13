@@ -101,6 +101,7 @@
 | [ontvtonight.com](sites/ontvtonight.com)                           | 🟢     |                                             |
 | [osn.com](sites/osn.com)                                           | 🟢     |                                             |
 | [pbsguam.org](sites/pbsguam.org)                                   | 🟢     |                                             |
+| [pickx.be](sites/pickx.be)                                         | 🟢     |                                             |
 | [playtv.unifi.com.my](sites/playtv.unifi.com.my)                   | 🟢     |                                             |
 | [plex.tv](sites/plex.tv)                                           | 🟢     |                                             |
 | [programacion-tv.elpais.com](sites/programacion-tv.elpais.com)     | 🟢     |                                             |
@@ -110,7 +111,6 @@
 | [programme-tv.vini.pf](sites/programme-tv.vini.pf)                 | 🟢     |                                             |
 | [programme.tvb.com](sites/programme.tvb.com)                       | 🔴     | https://github.com/iptv-org/epg/issues/2254 |
 | [programtv.onet.pl](sites/programtv.onet.pl)                       | 🟢     |                                             |
-| [proximusmwc.be](sites/proximusmwc.be)                             | 🔴     | https://github.com/iptv-org/epg/issues/2212 |
 | [raiplay.it](sites/raiplay.it)                                     | 🟢     |                                             |
 | [reportv.com.ar](sites/reportv.com.ar)                             | 🟢     |                                             |
 | [rev.bs](sites/rev.bs)                                             | 🔴     | https://github.com/iptv-org/epg/issues/2255 |
