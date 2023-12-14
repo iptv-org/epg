@@ -17,7 +17,6 @@
 | [bein.com](sites/bein.com)                                         | 🟢     |                                             |
 | [beinsports.com](sites/beinsports.com)                             | 🟢     |                                             |
 | [berrymedia.co.kr](sites/berrymedia.co.kr)                         | 🟢     |                                             |
-| [bt.com](sites/bt.com)                                             | 🔴     | https://github.com/iptv-org/epg/issues/2221 |
 | [cablego.com.pe](sites/cablego.com.pe)                             | 🟢     |                                             |
 | [cableplus.com.uy](sites/cableplus.com.uy)                         | 🟢     |                                             |
 | [canalplus-haiti.com](sites/canalplus-haiti.com)                   | 🔴     | https://github.com/iptv-org/epg/issues/2237 |
@@ -101,6 +100,7 @@
 | [ontvtonight.com](sites/ontvtonight.com)                           | 🟢     |                                             |
 | [osn.com](sites/osn.com)                                           | 🟢     |                                             |
 | [pbsguam.org](sites/pbsguam.org)                                   | 🟢     |                                             |
+| [player.ee.co.uk](sites/player.ee.co.uk)                           | 🟢     |                                             |
 | [pickx.be](sites/pickx.be)                                         | 🟢     |                                             |
 | [playtv.unifi.com.my](sites/playtv.unifi.com.my)                   | 🟢     |                                             |
 | [plex.tv](sites/plex.tv)                                           | 🟢     |                                             |
