@@ -74,7 +74,7 @@
 | [mediaset.it](sites/mediaset.it)                                   | 🟢     |                                             |
 | [melita.com](sites/melita.com)                                     | 🟢     |                                             |
 | [meo.pt](sites/meo.pt)                                             | 🟢     |                                             |
-| [meuguia.tv](sites/meuguia.tv)                                     | 🔴     | https://github.com/iptv-org/epg/issues/2275 |
+| [meuguia.tv](sites/meuguia.tv)                                     | 🟢     |                                             |
 | [mewatch.sg](sites/mewatch.sg)                                     | 🟢     |                                             |
 | [mi.tv](sites/mi.tv)                                               | 🟢     |                                             |
 | [mncvision.id](sites/mncvision.id)                                 | 🟢     |                                             |
@@ -91,7 +91,7 @@
 | [mytvsuper.com](sites/mytvsuper.com)                               | 🟢     |                                             |
 | [nhk.or.jp](sites/nhk.or.jp)                                       | 🟢     |                                             |
 | [nhkworldpremium.com](sites/nhkworldpremium.com)                   | 🟢     |                                             |
-| [nos.pt](sites/nos.pt)                                             | 🔴     | https://github.com/iptv-org/epg/issues/2183 |
+| [nostv.pt](sites/nostv.pt)                                         | 🟢     |                                             |
 | [novacyprus.com](sites/novacyprus.com)                             | 🟢     |                                             |
 | [novasports.gr](sites/novasports.gr)                               | 🟢     |                                             |
 | [nowplayer.now.com](sites/nowplayer.now.com)                       | 🔴     | https://github.com/iptv-org/epg/issues/2247 |
@@ -101,6 +101,7 @@
 | [osn.com](sites/osn.com)                                           | 🟢     |                                             |
 | [pbsguam.org](sites/pbsguam.org)                                   | 🟢     |                                             |
 | [player.ee.co.uk](sites/player.ee.co.uk)                           | 🟢     |                                             |
+| [pickx.be](sites/pickx.be)                                         | 🟢     |                                             |
 | [playtv.unifi.com.my](sites/playtv.unifi.com.my)                   | 🟢     |                                             |
 | [plex.tv](sites/plex.tv)                                           | 🟢     |                                             |
 | [programacion-tv.elpais.com](sites/programacion-tv.elpais.com)     | 🟢     |                                             |
@@ -110,11 +111,10 @@
 | [programme-tv.vini.pf](sites/programme-tv.vini.pf)                 | 🟢     |                                             |
 | [programme.tvb.com](sites/programme.tvb.com)                       | 🔴     | https://github.com/iptv-org/epg/issues/2254 |
 | [programtv.onet.pl](sites/programtv.onet.pl)                       | 🟢     |                                             |
-| [proximusmwc.be](sites/proximusmwc.be)                             | 🔴     | https://github.com/iptv-org/epg/issues/2212 |
 | [raiplay.it](sites/raiplay.it)                                     | 🟢     |                                             |
 | [reportv.com.ar](sites/reportv.com.ar)                             | 🟢     |                                             |
 | [rev.bs](sites/rev.bs)                                             | 🔴     | https://github.com/iptv-org/epg/issues/2255 |
-| [rotana.net](sites/rotana.net)                                     | 🔴     | https://github.com/iptv-org/epg/issues/2256 |
+| [rotana.net](sites/rotana.net)                                     | 🟢     |                                             |
 | [rtb.gov.bn](sites/rtb.gov.bn)                                     | 🔴     | https://github.com/iptv-org/epg/issues/2257 |
 | [rthk.hk](sites/rthk.hk)                                           | 🟢     |                                             |
 | [rtmklik.rtm.gov.my](sites/rtmklik.rtm.gov.my)                     | 🟢     |                                             |
@@ -151,7 +151,7 @@
 | [tv.movistar.com.pe](sites/tv.movistar.com.pe)                     | 🟢     |                                             |
 | [tv.nu](sites/tv.nu)                                               | 🟢     |                                             |
 | [tv.post.lu](sites/tv.post.lu)                                     | 🟢     |                                             |
-| [tv.trueid.net](sites/tv.trueid.net)                               | 🔴     | https://github.com/iptv-org/epg/issues/2164 |
+| [tv.trueid.net](sites/tv.trueid.net)                               | 🟢     |                                             |
 | [tv.yandex.ru](sites/tv.yandex.ru)                                 | 🟢     |                                             |
 | [tv.yettel.hu](sites/tv.yettel.hu)                                 | 🔴     | https://github.com/iptv-org/epg/issues/2263 |
 | [tv2go.t-2.net](sites/tv2go.t-2.net)                               | 🟢     |                                             |

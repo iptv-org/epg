@@ -1,25 +1,21 @@
-const cheerio = require('cheerio')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 
 dayjs.extend(utc)
 
 module.exports = {
-  delay: 5000,
+  delay: 1000,
   site: 'tv.trueid.net',
-  days: 2,
-  url: function ({ channel, date }) {
-    return `https://tv.trueid.net/tvguide/all/${channel.site_id}/${date.format('YYYY-MM-DD')}`
+  days: 1,
+  url({ channel }) {
+    return `https://tv.trueid.net/_next/data/1380644e0f1fb6b14c82894a0c682d147e015c9d/th-${channel.lang}.json?channelSlug=${channel.site_id}&path=${channel.site_id}`
   },
-  request: {
-    jar: null
-  },
-  parser: function ({ content, channel }) {
-    let programs = []
-    const items = parseItems(content, channel)
-    items.forEach(item => {
+  parser({ content, channel }) {
+    const programs = []
+    parseItems(content, channel).forEach(item => {
       programs.push({
         title: item.title,
+        description: parseDescription(item, channel.lang),
         icon: parseIcon(item),
         start: parseStart(item),
         stop: parseStop(item)
@@ -28,30 +24,25 @@ module.exports = {
 
     return programs
   },
-  async channels({ token }) {
+  async channels({ token, lang = en }) {
     const axios = require('axios')
-
-    const ACCESS_TOKEN =
+    const ACCESS_TOKEN = token ? token :
       'MTM4MDY0NGUwZjFmYjZiMTRjODI4OTRhMGM2ODJkMTQ3ZTAxNWM5ZDoxZmI2YjE0YzgyODk0YTBjNjgyZDE0N2UwMTVjOWQ='
 
     const data = await axios
-      .get(`https://tv.trueid.net/api/channel/getChannelListByAllCate`, {
-        params: {
-          lang: 'en',
-          country: 'th'
-        },
+      .get(`https://tv.trueid.net/api/channel/getChannelListByAllCate?lang=${lang}&country=th`, {
         headers: {
           authorization: `Basic ${ACCESS_TOKEN}`
         }
       })
       .then(r => r.data)
-      .catch(console.log)
+      .catch(console.error)
 
     return data.data.channelsList
       .find(i => i.catSlug === 'TrueID : All')
       .channels.map(item => {
         return {
-          lang: 'th',
+          lang,
           site_id: item.slug,
           name: item.title
         }
@@ -59,37 +50,24 @@ module.exports = {
   }
 }
 
+function parseDescription(item, lang) {
+  const description = item.info?.[`synopsis_${lang}`]
+  return description && description !== '.' ? description : null;
+}
+
 function parseIcon(item) {
-  return item.detail ? item.detail.thumb : null
+  return item.info?.image || null
 }
 
 function parseStart(item) {
-  return item.detail ? dayjs.utc(item.detail.start_date) : null
+  return item.start_date ? dayjs.utc(item.start_date) : null
 }
 
 function parseStop(item) {
-  return item.detail ? dayjs.utc(item.detail.end_date) : null
+  return item.end_date ? dayjs.utc(item.end_date) : null
 }
 
-function parseContent(content, channel) {
-  const $ = cheerio.load(content)
-  const nextData = $('#__NEXT_DATA__').html()
-  const data = JSON.parse(nextData)
-  if (
-    !data ||
-    !data.props ||
-    !data.props.pageProps ||
-    !data.props.pageProps.listEPG ||
-    !Array.isArray(data.props.pageProps.listEPG.data)
-  )
-    return null
-
-  return data.props.pageProps.listEPG.data.find(ch => ch.slug === channel.site_id)
-}
-
-function parseItems(content, channel) {
-  const data = parseContent(content, channel)
-  if (!data || !Array.isArray(data.programList)) return []
-
-  return data.programList
+function parseItems(content) {
+  const data = content ? JSON.parse(content) : null;
+  return data?.pageProps?.epgList || []
 }
