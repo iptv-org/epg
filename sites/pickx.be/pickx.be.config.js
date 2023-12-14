@@ -1,0 +1,111 @@
+const axios = require('axios')
+const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+
+dayjs.extend(utc)
+
+module.exports = {
+  site: 'pickx.be',
+  days: 2,
+  url({ channel, date }) {
+    return `https://px-epg.azureedge.net/airings/11702375189765v.4.2/${date.format('YYYY-MM-DD')}/channel/${channel.site_id}?timezone=Europe%2FBrussels`
+  },
+  request: {
+    headers: {
+      Origin: 'https://www.pickx.be',
+      Referer: 'https://www.pickx.be/'
+    }
+  },
+  parser({ channel, content }) {
+    const programs = []
+    if (content) {
+      const items = JSON.parse(content)
+      items.forEach(item => {
+        programs.push({
+          title: item.program.title,
+          sub_title: item.program.episodeTitle,
+          description: item.program.description,
+          category: item.program.translatedCategory?.[channel.lang] ?
+            item.program.translatedCategory[channel.lang] : item.program.category.split('.')[1],
+          icon: item.program.posterFileName ?
+            `https://experience-cache.proximustv.be/posterserver/poster/EPG/w-166_h-110/${item.program.posterFileName}` : null,
+          season: item.program.seasonNumber,
+          episode: item.program.episodeNumber,
+          actors: item.program.actors,
+          director: item.program.director ? [item.program.director] : null,
+          start: dayjs.utc(item.programScheduleStart),
+          stop: dayjs.utc(item.programScheduleEnd)
+        })
+      })
+    }
+
+    return programs
+  },
+  async channels({ lang = ''}) {
+    const query = {
+      operationName: 'getChannels',
+      variables: {
+        language: lang,
+        queryParams: {},
+        'id': '0',
+        params: {
+          shouldReadFromCache: true
+        }
+      },
+      query:
+        `query getChannels($language: String!, $queryParams: ChannelQueryParams, $id: String, $params: ChannelParams) {
+          channels(language: $language, queryParams: $queryParams, id: $id, params: $params) {
+            id
+            channelReferenceNumber
+            name
+            callLetter
+            number
+            logo {
+              key
+              url
+              __typename
+            }
+            language
+            hd
+            radio
+            replayable
+            ottReplayable
+            playable
+            ottPlayable
+            recordable
+            subscribed
+            cloudRecordable
+            catchUpWindowInHours
+            isOttNPVREnabled
+            ottNPVRStart
+            subscription {
+              channelRef
+              subscribed
+              upselling {
+                upsellable
+                packages
+                __typename
+              }
+              __typename
+            }
+            packages
+            __typename
+          }
+        }`
+    }
+    const result = await axios
+      .post('https://api.proximusmwc.be/tiams/v2/graphql', query)
+      .then(r => r.data)
+      .catch(console.error)
+
+    return result?.data?.channels
+      .filter(channel => !channel.radio && (!lang || channel.language === (lang === 'de' ? 'ger' : lang)))
+      .map(channel => {
+        return {
+          lang: channel.language === 'ger' ? 'de' : channel.language,
+          site_id: channel.id,
+          name: channel.name
+        }
+      }) || []
+  }
+}
