@@ -98,7 +98,7 @@
 | [nuevosiglo.com.uy](sites/nuevosiglo.com.uy)                       | 🟢     |                                             |
 | [nzxmltv.com](sites/nzxmltv.com)                                   | 🟢     |                                             |
 | [ontvtonight.com](sites/ontvtonight.com)                           | 🟢     |                                             |
-| [osn.com](sites/osn.com)                                           | 🟢     |                                             |
+| [osn.com](sites/osn.com)                                           | 🔴     | https://github.com/iptv-org/epg/issues/2282 |
 | [pbsguam.org](sites/pbsguam.org)                                   | 🟢     |                                             |
 | [player.ee.co.uk](sites/player.ee.co.uk)                           | 🟢     |                                             |
 | [pickx.be](sites/pickx.be)                                         | 🟢     |                                             |
