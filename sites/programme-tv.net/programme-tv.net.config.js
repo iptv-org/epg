@@ -93,6 +93,10 @@ function parseIcon($item) {
   const value = img.attr('srcset') || img.data('srcset')
   const obj = value ? srcset.parse(value).find(i => i.width === 128) : {}
 
+  if (obj.url) {
+    obj.url = obj.url.replace('128x180', '960x540');
+  }
+
   return obj.url
 }
 
