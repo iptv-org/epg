@@ -16,7 +16,7 @@ module.exports = {
       const start = parseStart(item)
       const stop = parseStop(item, start)
       programs.push({
-        title: item.title,
+        title: item.season?.serie?.title ? item.season.serie.title : item.title,
         category: item.genreDetailed,
         description: item.synopsis,
         icon: parseIcon(item),
