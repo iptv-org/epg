@@ -14,7 +14,7 @@ const channel = {
 
 it('can generate valid url', () => {
   expect(url({ channel, date })).toBe(
-    'https://www.tvtv.us/api/v1/lineup/USA-NY71652-DEFAULT/grid/2022-09-20T00:00:00.000Z/2022-09-21T00:00:00.000Z/62670'
+    'https://www.tvtv.us/api/v1/lineup/USA-NY71652-X/grid/2022-09-20T00:00:00.000Z/2022-09-21T00:00:00.000Z/62670'
   )
 })
 
