@@ -2,13 +2,33 @@ const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 
-dayjs.extend(utc)
+let apiVersion;
+let isApiVersionFetched = false;
 
+(async () => {
+  try {
+    await fetchApiVersion();
+    isApiVersionFetched = true;
+
+  } catch (error) {
+    console.error('Error during script initialization:', error);
+  }
+})();
+
+dayjs.extend(utc)
+  
 module.exports = {
   site: 'pickx.be',
   days: 2,
-  url({ channel, date }) {
-    return `https://px-epg.azureedge.net/airings/11702375189765v.4.2/${date.format('YYYY-MM-DD')}/channel/${channel.site_id}?timezone=Europe%2FBrussels`
+  apiVersion: function () {
+    return apiVersion; 
+  },
+  fetchApiVersion: fetchApiVersion,  // Export fetchApiVersion
+  url: async function ({ channel, date }) {
+    while (!isApiVersionFetched) {
+      await new Promise(resolve => setTimeout(resolve, 100)); // Wait for 100 milliseconds
+    }
+    return `https://px-epg.azureedge.net/airings/${apiVersion}/${date.format('YYYY-MM-DD')}/channel/${channel.site_id}?timezone=Europe%2FBrussels`;
   },
   request: {
     headers: {
@@ -108,4 +128,27 @@ module.exports = {
         }
       }) || []
   }
+}
+function fetchApiVersion() {
+  return new Promise(async (resolve, reject) => {
+    try {
+      const response = await axios.get('https://px-epg.azureedge.net/version', {
+        headers: {
+          'Origin': 'https://www.pickx.be',
+          'Referer': 'https://www.pickx.be/'
+        }
+      });
+
+      if (response.status === 200) {
+        apiVersion = response.data.version;
+        resolve();
+      } else {
+        console.error(`Failed to fetch API version. Status: ${response.status}`);
+        reject(`Failed to fetch API version. Status: ${response.status}`);
+      }
+    } catch (error) {
+      console.error('Error fetching API version:', error.message);
+      reject(error);
+    }
+  });
 }
