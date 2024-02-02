@@ -1,10 +1,12 @@
-const { parser, url, request } = require('./pickx.be.config.js')
+const { parser, url, request, fetchApiVersion, apiVersion } = require('./pickx.be.config.js')
 const fs = require('fs')
 const path = require('path')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 
+
 dayjs.extend(utc)
+
 
 const date = dayjs.utc('2023-12-13').startOf('d')
 const channel = {
@@ -13,10 +15,12 @@ const channel = {
   xmltv_id: 'Vedia.be'
 }
 
-it('can generate valid url', () => {
-  expect(url({channel, date}))
-    .toBe('https://px-epg.azureedge.net/airings/11702375189765v.4.2/2023-12-13/channel/UID0118?timezone=Europe%2FBrussels')
-})
+it('can generate valid url', async () => {
+  await fetchApiVersion();
+  const generatedUrl = await url({ channel, date });
+  const resolvedApiVersion = apiVersion(); 
+  expect(generatedUrl).toBe(`https://px-epg.azureedge.net/airings/${resolvedApiVersion}/2023-12-13/channel/UID0118?timezone=Europe%2FBrussels`);
+});
 
 it('can generate valid request headers', () => {
   expect(request.headers).toMatchObject({
