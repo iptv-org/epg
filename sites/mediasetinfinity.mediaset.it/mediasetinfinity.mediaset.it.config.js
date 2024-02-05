@@ -11,49 +11,40 @@ module.exports = {
   site: 'mediasetinfinity.mediaset.it',
   days: 2,
   url: function ({ date, channel }) {
-    return `http://www.mediaset.it/guidatv/inc/canali/${date.format('YYYYMM')}/${date.format(
-      'YYYYMMDD'
-    )}_${channel.site_id}.sjson`
+    // Get the epoch timestamp
+    const todayEpoch = date.startOf('day').utc().valueOf();
+    // Get the epoch timestamp for the next day
+    const nextDayEpoch = date.add(1, 'day').startOf('day').utc().valueOf();
+    return `https://api-ott-prod-fe.mediaset.net/PROD/play/feed/allListingFeedEpg/v2.0?byListingTime=${todayEpoch}~${nextDayEpoch}&byCallSign=${channel.site_id}`
   },
   parser: function ({ content, date }) {
-    const programs = []
-    const items = getItems(content)
+    const programs = [];
+    const data = JSON.parse(content);
 
-    items.forEach(item => {
-      if (item.title && item.startTime && item.duration) {
-        const start = parseStart(item, date)
-        const duration = parseInt(item.duration)
-        const stop = start.add(duration, 'm')
+    if (!data.response || !data.response.entries || !data.response.entries[0] || !data.response.entries[0].listings) {
+      // If the structure is not as expected, return an empty array
+      return programs;
+    }
+
+    const listings = data.response.entries[0].listings;
+
+    listings.forEach((listing) => {
+      if (listing.program.title && listing.startTime && listing.endTime) {
+        const start = parseTime(listing.startTime);
+        const stop = parseTime(listing.endTime);
 
         programs.push({
-          title: item.displayTitle || item.title,
-          description: item.description,
-          category: item.genere,
+          title: listing.program.title,
+          description: listing.program.description,
           start,
           stop
-        })
+        });
       }
-    })
-
-    return programs
+    });
+    return programs;
   }
 }
 
-function parseStart(item, date) {
-  return dayjs.tz(
-    `${date.format('YYYY-MM-DD')} ${item.startTime}`,
-    'YYYY-MM-DD HH:mm',
-    'Europe/Rome'
-  )
-}
-
-function getItems(content) {
-  let data
-  try {
-    data = JSON.parse(content)
-  } catch (err) {
-    return []
-  }
-
-  return data && Array.isArray(data.events) ? data.events : []
+function parseTime(timestamp) {
+  return dayjs(timestamp).utc().format('YYYY-MM-DD HH:mm');
 }
