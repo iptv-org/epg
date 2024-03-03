@@ -8,13 +8,11 @@ services:
       - 80:80
   epg:
     image: agarciadealba/epg
-    command: ["npm", "run", "grab", "--", "--site=gatotv.com", "--output=epg/gatotv.xml", "--cron=*/5 * * * *"]
+    command: ["npm", "run", "grab", "--", "--site=gatotv.com", "--output=epg/gatotv.xml", "--cron=0 6,18 *  * *"]
     # command: ["sleep", "3600"]
     volumes:
       - epg-data:/home/node/app/epg:rw
     environment:
       NODE_ENV: production
-      # SITE_GATO: gatotv.com
-      # SITE_DENS: dens.tv
 volumes:
   epg-data:
