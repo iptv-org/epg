@@ -8,8 +8,8 @@ services:
       - 80:80
   epg:
     image: agarciadealba/epg
-    # command: ["npm", "run", "grab", "--", "--site=gatotv.com", "--output=epg/gatotv.xml", "--cron=*/5 * * * *"]
-    command: ["sleep", "3600"]
+    command: ["npm", "run", "grab", "--", "--site=gatotv.com", "--output=epg/gatotv.xml", "--cron=*/5 * * * *"]
+    # command: ["sleep", "3600"]
     volumes:
       - epg-data:/home/node/app/epg
     environment:

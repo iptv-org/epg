@@ -10,10 +10,9 @@ USER node
 
 WORKDIR /home/node/app
 
-COPY . .
+COPY --chown=node: . .
 
-RUN --mount=type=cache,target=/root/.npm \
-    yarn install --production --frozen-lockfile
+RUN yarn install --production --frozen-lockfile
 
 # Run the application.
 # ENTRYPOINT [ "sh", "entrypoint.sh" ]
