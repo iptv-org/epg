@@ -10,6 +10,7 @@ services:
     image: agarciadealba/epg
     # command: ["npm", "run", "grab", "--", "--site=gatotv.com", "--output=epg/gatotv.xml", "--cron=*/5 * * * *"]
     command: ["sleep", "3600"]
+    user: node
     volumes:
       - epg-data:/home/node/app/epg:rw
     environment:
