@@ -9,13 +9,13 @@ services:
   epg:
     build:
       context: .
-    command: ["npm", "run", "grab", "--", "--site=gatotv.com", "--output=epg/gatotv.com.xml", "--cron=*/5 * * * *"]
-    # command: ["sleep", "3600"]
+    # command: ["npm", "run", "grab", "--", "--site=gatotv.com", "--output=epg/gatotv.xml", "--cron=*/5 * * * *"]
+    command: ["sleep", "3600"]
     volumes:
       - epg-data:/home/node/app/epg
     environment:
       NODE_ENV: production
-      SITE_GATO: gatotv.com
-      SITE_DENS: dens.tv
+      # SITE_GATO: gatotv.com
+      # SITE_DENS: dens.tv
 volumes:
   epg-data:
