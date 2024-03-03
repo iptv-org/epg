@@ -7,8 +7,7 @@ services:
     ports:
       - 80:80
   epg:
-    build:
-      context: .
+    image: agarciadealba/epg
     # command: ["npm", "run", "grab", "--", "--site=gatotv.com", "--output=epg/gatotv.xml", "--cron=*/5 * * * *"]
     command: ["sleep", "3600"]
     volumes:
