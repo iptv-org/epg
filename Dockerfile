@@ -6,11 +6,9 @@ FROM node:${NODE_VERSION}-alpine
 
 ENV NODE_ENV production
 
-USER node
-
 WORKDIR /home/node/app
 
-COPY --chown=node: . .
+COPY . .
 
 RUN yarn install --production --frozen-lockfile
 
