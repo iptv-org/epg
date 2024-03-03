@@ -10,12 +10,22 @@ services:
     image: agarciadealba/epg
     # command: ["npm", "run", "grab", "--", "--site=gatotv.com", "--output=epg/gatotv.xml", "--cron=*/5 * * * *"]
     command: ["sleep", "3600"]
-    user: node
     volumes:
       - epg-data:/home/node/app/epg:rw
+    depends_on:
+      change-vol-ownership:
+        condition: service_completed_successfully
     environment:
       NODE_ENV: production
       # SITE_GATO: gatotv.com
       # SITE_DENS: dens.tv
+  change-vol-ownership:
+    image: ubuntu
+    user: "root"
+    group_add:
+      - '1000'
+    volumes:
+      - epg-data:/tmp/change-ownership
+    command: chown -R ${USER_ID}:${GROUP_ID} /tmp/change-ownership
 volumes:
   epg-data:
