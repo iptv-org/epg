@@ -1,6 +1,6 @@
 services:
   nginx:
-    image: nginx:1.23.3-alpine
+    image: nginx:1.25.4-alpine3.18
     restart: always
     volumes:
       - epg-data:/usr/share/nginx/html/epg:ro
@@ -11,7 +11,7 @@ services:
     # command: ["npm", "run", "grab", "--", "--site=gatotv.com", "--output=epg/gatotv.xml", "--cron=*/5 * * * *"]
     command: ["sleep", "3600"]
     volumes:
-      - epg-data:/home/node/app/epg
+      - epg-data:/home/node/app/epg:rw
     environment:
       NODE_ENV: production
       # SITE_GATO: gatotv.com
