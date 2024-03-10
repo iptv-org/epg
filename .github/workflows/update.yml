@@ -21,7 +21,7 @@ jobs:
       - name: setup git
         run: |
           git config user.name "iptv-bot[bot]"
-          git config user.email "84861620+iptv-bot[bot]@users.noreply.github.com"
+          git config user.email "jamiepita2@gmail.com"
       - uses: actions/setup-node@v3
         if: ${{ !env.ACT }}
         with:
@@ -46,4 +46,4 @@ jobs:
           git-config-name: iptv-bot[bot]
           git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
           commit-message: '[Bot] Deploy to iptv-org/api'
-          clean: false
+          clean: true
