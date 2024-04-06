@@ -23,7 +23,7 @@ services:
       NODE_ENV: production
   mitv:
     image: agarciadealba/epg
-    command: ["npm", "run", "grab", "--", "--site=mi.tv", "--output=epg/mitv.xml", "--cron=10 6,18 * * *"]
+    command: ["npm", "run", "grab", "--", "--site=mi.tv", "--output=epg/mitv.xml", "--cron=10 0 * * *"]
     volumes:
       - epg-data:/home/node/app/epg:rw
     environment:
