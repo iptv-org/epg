@@ -1,5 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
+  <channel site="visionplus.id" lang="en" xmltv_id="RCTI.id" site_id="2">RCTI</channel>
+  <channel site="visionplus.id" lang="en" xmltv_id="GTV.id" site_id="3">GTV</channel>
+  <channel site="visionplus.id" lang="en" xmltv_id="MNCTV.id" site_id="4">MNC TV</channel>
+  <channel site="visionplus.id" lang="en" xmltv_id="iNews.id" site_id="5">iNews</channel>
+  <channel site="visionplus.id" lang="en" xmltv_id="ANTV.id" site_id="12">ANTV</channel>
+  <channel site="visionplus.id" lang="en" xmltv_id="TransTV.id" site_id="6">Trans TV</channel>
+  <channel site="visionplus.id" lang="en" xmltv_id="Trans7.id" site_id="11">Trans 7</channel>
+  <channel site="visionplus.id" lang="en" xmltv_id="tvOne.id" site_id="8">TV One</channel>
+  <channel site="visionplus.id" lang="en" xmltv_id="tvOne.id" site_id="41846">TV One</channel>
+  <channel site="visionplus.id" lang="en" xmltv_id="MetroTV.id" site_id="10">Metro TV</channel>
+  <channel site="visionplus.id" lang="en" xmltv_id="MetroTV.id" site_id="41834">Metro TV</channel>
+  <channel site="visionplus.id" lang="en" xmltv_id="RajawaliTV.id" site_id="2901">RTV</channel>
+  <channel site="visionplus.id" lang="en" xmltv_id="KompasTV.id" site_id="2909">Kompas TV</channel>
+  <channel site="visionplus.id" lang="en" xmltv_id="KompasTV.id" site_id="41841">Kompas TV</channel>
+  <channel site="visionplus.id" lang="en" xmltv_id="TVRINasional.id" site_id="13">TVRI</channel>
+  <channel site="visionplus.id" lang="en" xmltv_id="JakTV.id" site_id="2767">Jak TV</channel>
+  <channel site="visionplus.id" lang="en" xmltv_id="JTV.id" site_id="2836">JTV</channel>
+  <channel site="visionplus.id" lang="en" xmltv_id="BaliTV.id" site_id="2839">Bali TV</channel>
+  <channel site="visionplus.id" lang="en" xmltv_id="DAAITV.id" site_id="2827">DAAI TV</channel>
+  <channel site="visionplus.id" lang="en" xmltv_id="BandungTV.id" site_id="35132">Bandung TV</channel>
+  <channel site="visionplus.id" lang="en" xmltv_id="NET.id" site_id="2830">NET.</channel>
+
+
+
+
+
   <channel site="visionplus.id" lang="en" xmltv_id="" site_id="22">CELEBRITIES TV</channel>
   <channel site="visionplus.id" lang="en" xmltv_id="" site_id="6569">OKEZONETV</channel>
   <channel site="visionplus.id" lang="en" xmltv_id="" site_id="41881">CELEBRITIES TV</channel>
@@ -8,13 +34,13 @@
   <channel site="visionplus.id" lang="en" xmltv_id="AlQuranAlKareemTV.sa" site_id="6545">Al Quran Al Kareem</channel>
   <channel site="visionplus.id" lang="en" xmltv_id="AnhuiTV.cn" site_id="7435">Anhui TV</channel>
   <channel site="visionplus.id" lang="en" xmltv_id="AnimaxAsia.sg" site_id="71">Animax</channel>
-  <channel site="visionplus.id" lang="en" xmltv_id="ANTV.id" site_id="12">ANTV</channel>
+  
   <channel site="visionplus.id" lang="en" xmltv_id="ArirangTV.kr" site_id="2446">Arirang</channel>
   <channel site="visionplus.id" lang="en" xmltv_id="ArirangTV.kr" site_id="41862">Arirang</channel>
   <channel site="visionplus.id" lang="en" xmltv_id="AXN.id" site_id="70">AXN</channel>
   <channel site="visionplus.id" lang="en" xmltv_id="BabyTV.uk" site_id="26">Baby TV</channel>
-  <channel site="visionplus.id" lang="en" xmltv_id="BaliTV.id" site_id="2839">Bali TV</channel>
-  <channel site="visionplus.id" lang="en" xmltv_id="BandungTV.id" site_id="35132">Bandung TV</channel>
+  
+  
   <channel site="visionplus.id" lang="en" xmltv_id="BBCEarthAsia.uk" site_id="2737">BBC Earth</channel>
   <channel site="visionplus.id" lang="en" xmltv_id="BBCNewsAsiaPacific.uk" site_id="2740">BBC World News</channel>
   <channel site="visionplus.id" lang="en" xmltv_id="BloombergTVAsia.hk" site_id="2749">Bloomberg</channel>
@@ -33,7 +59,7 @@
   <channel site="visionplus.id" lang="en" xmltv_id="CNA.sg" site_id="67">Channel News Asia</channel>
   <channel site="visionplus.id" lang="en" xmltv_id="CNBCIndonesia.id" site_id="45">CNBC</channel>
   <channel site="visionplus.id" lang="en" xmltv_id="CrimePlusInvestigationAsia.sg" site_id="51">Crime Investigation</channel>
-  <channel site="visionplus.id" lang="en" xmltv_id="DAAITV.id" site_id="2827">DAAI TV</channel>
+  
   <channel site="visionplus.id" lang="en" xmltv_id="DragonTV.cn" site_id="7426">Shanghai Dragon TV</channel>
   <channel site="visionplus.id" lang="en" xmltv_id="DreamWorksChannelAsia.us" site_id="62877">Dreamworks</channel>
   <channel site="visionplus.id" lang="en" xmltv_id="DWEnglish.de" site_id="2452">DW</channel>
@@ -48,27 +74,25 @@
   <channel site="visionplus.id" lang="en" xmltv_id="Galaxy.id" site_id="42046">Galaxy</channel>
   <channel site="visionplus.id" lang="en" xmltv_id="GalaxyPremium.id" site_id="42039">Galaxy Premium</channel>
   <channel site="visionplus.id" lang="en" xmltv_id="GlobalTrekker.sg" site_id="62834">Global Trekker</channel>
-  <channel site="visionplus.id" lang="en" xmltv_id="GTV.id" site_id="3">GTV</channel>
+  
   <channel site="visionplus.id" lang="en" xmltv_id="HistoryAsia.us" site_id="89">History</channel>
   <channel site="visionplus.id" lang="en" xmltv_id="HITS.sg" site_id="48">HITS</channel>
   <channel site="visionplus.id" lang="en" xmltv_id="HITSMovies.sg" site_id="6537">Hits Movies</channel>
   <channel site="visionplus.id" lang="en" xmltv_id="HunanTV.cn" site_id="7420">Hunan TV</channel>
   <channel site="visionplus.id" lang="en" xmltv_id="IDXChannel.id" site_id="62">IDX Channel</channel>
   <channel site="visionplus.id" lang="en" xmltv_id="IMC.id" site_id="42050">IMC</channel>
-  <channel site="visionplus.id" lang="en" xmltv_id="iNews.id" site_id="5">iNews</channel>
-  <channel site="visionplus.id" lang="en" xmltv_id="JakTV.id" site_id="2767">Jak TV</channel>
+  
+  
   <channel site="visionplus.id" lang="en" xmltv_id="JiangsuTV.cn" site_id="7414">Jiangsu TV</channel>
-  <channel site="visionplus.id" lang="en" xmltv_id="JTV.id" site_id="2836">JTV</channel>
+  
   <channel site="visionplus.id" lang="en" xmltv_id="KidsTV.id" site_id="38">Kids TV</channel>
   <channel site="visionplus.id" lang="en" xmltv_id="KIX.hk" site_id="2770">KIX</channel>
-  <channel site="visionplus.id" lang="en" xmltv_id="KompasTV.id" site_id="2909">Kompas TV</channel>
-  <channel site="visionplus.id" lang="en" xmltv_id="KompasTV.id" site_id="41841">Kompas TV</channel>
+  
   <channel site="visionplus.id" lang="en" xmltv_id="Life.id" site_id="46">Life</channel>
   <channel site="visionplus.id" lang="en" xmltv_id="LifetimeAsia.us" site_id="68">Lifetime</channel>
   <channel site="visionplus.id" lang="en" xmltv_id="LifetimeAsia.us" site_id="41868">Lifetime</channel>
-  <channel site="visionplus.id" lang="en" xmltv_id="MetroTV.id" site_id="10">Metro TV</channel>
-  <channel site="visionplus.id" lang="en" xmltv_id="MetroTV.id" site_id="41834">Metro TV</channel>
-  <channel site="visionplus.id" lang="en" xmltv_id="MNCTV.id" site_id="4">MNC TV</channel>
+  
+  
   <channel site="visionplus.id" lang="en" xmltv_id="MTV90s.uk" site_id="63371">MTV 90s</channel>
   <channel site="visionplus.id" lang="en" xmltv_id="MTVLive.uk" site_id="63367">MTV Live</channel>
   <channel site="visionplus.id" lang="en" xmltv_id="MusicTV.id" site_id="55">Music TV</channel>
@@ -80,7 +104,7 @@
   <channel site="visionplus.id" lang="en" xmltv_id="MyKidz.id" site_id="61938">My Kidz</channel>
   <channel site="visionplus.id" lang="en" xmltv_id="NationalGeographic.id" site_id="42">National Geographic</channel>
   <channel site="visionplus.id" lang="en" xmltv_id="NationalGeographicWild.id" site_id="79">Nat Geo Wild</channel>
-  <channel site="visionplus.id" lang="en" xmltv_id="NET.id" site_id="2830">Net.</channel>
+  
   <channel site="visionplus.id" lang="en" xmltv_id="NHKWorldJapan.jp" site_id="2925">NHK World Japan</channel>
   <channel site="visionplus.id" lang="en" xmltv_id="NHKWorldPremium.jp" site_id="2776">NHK World Premium</channel>
   <channel site="visionplus.id" lang="en" xmltv_id="NickelodeonAsia.sg" site_id="40">Nick</channel>
@@ -88,8 +112,8 @@
   <channel site="visionplus.id" lang="en" xmltv_id="OKTV.id" site_id="2374">OK TV</channel>
   <channel site="visionplus.id" lang="en" xmltv_id="ONE.sg" site_id="74">One</channel>
   <channel site="visionplus.id" lang="en" xmltv_id="ParamountNetwork.id" site_id="63366">Paramount Network</channel>
-  <channel site="visionplus.id" lang="en" xmltv_id="RajawaliTV.id" site_id="2901">RTV</channel>
-  <channel site="visionplus.id" lang="en" xmltv_id="RCTI.id" site_id="2">RCTI</channel>
+  
+  
   <channel site="visionplus.id" lang="en" xmltv_id="Reformed21.id" site_id="27984">Reformed 21</channel>
   <channel site="visionplus.id" lang="en" xmltv_id="ROCKAction.sg" site_id="62821">Rock Action</channel>
   <channel site="visionplus.id" lang="en" xmltv_id="ROCKEntertainment.sg" site_id="62813">Rock Entertainment</channel>
@@ -105,17 +129,16 @@
   <channel site="visionplus.id" lang="en" xmltv_id="SPOTV.kr" site_id="41788">SPOTV</channel>
   <channel site="visionplus.id" lang="en" xmltv_id="TawafTV.id" site_id="19613">Tawaf TV</channel>
   <channel site="visionplus.id" lang="en" xmltv_id="Thrill.hk" site_id="2440">Thrill</channel>
-  <channel site="visionplus.id" lang="en" xmltv_id="Trans7.id" site_id="11">Trans 7</channel>
-  <channel site="visionplus.id" lang="en" xmltv_id="TransTV.id" site_id="6">Trans TV</channel>
+  
   <channel site="visionplus.id" lang="en" xmltv_id="TRTWorld.tr" site_id="2854">TRT World</channel>
   <channel site="visionplus.id" lang="en" xmltv_id="TV5MondeAsia.fr" site_id="28685">TV5 Monde</channel>
   <channel site="visionplus.id" lang="en" xmltv_id="TV9Nusantara.id" site_id="3738">TV9</channel>
   <channel site="visionplus.id" lang="en" xmltv_id="TVMu.id" site_id="7438">TVMu</channel>
   <channel site="visionplus.id" lang="en" xmltv_id="tvN.kr" site_id="6549">tvN</channel>
   <channel site="visionplus.id" lang="en" xmltv_id="tvNMoviesAsia.hk" site_id="6553">tvN Movies</channel>
-  <channel site="visionplus.id" lang="en" xmltv_id="tvOne.id" site_id="8">TV One</channel>
-  <channel site="visionplus.id" lang="en" xmltv_id="tvOne.id" site_id="41846">TV One</channel>
-  <channel site="visionplus.id" lang="en" xmltv_id="TVRINasional.id" site_id="13">TVRI</channel>
+  
+  
+  
   <channel site="visionplus.id" lang="en" xmltv_id="VisionPrime.id" site_id="19881">Vision Prime</channel>
   <channel site="visionplus.id" lang="en" xmltv_id="XingKongChina.cn" site_id="7432">Xing Kong TV</channel>
   <channel site="visionplus.id" lang="en" xmltv_id="ZeeBioskop.id" site_id="2449">Zee Bioskop</channel>
