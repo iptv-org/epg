@@ -132,7 +132,11 @@ module.exports = {
 function fetchApiVersion() {
   return new Promise(async (resolve, reject) => {
     try {
-      const response = await axios.get('https://px-epg.azureedge.net/version', {
+
+      // https://px-epg.azureedge.net/version is deprecated
+      // probably the version url will be changed around over time
+      const versionUrl = 'https://www.pickx.be/api/s-3b36540f3cef64510112f3f95c2c0cdca321997ed2b1042ad778523235e155eb'
+      const response = await axios.get(versionUrl, {
         headers: {
           'Origin': 'https://www.pickx.be',
           'Referer': 'https://www.pickx.be/'
