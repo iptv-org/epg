@@ -135,7 +135,11 @@ function fetchApiVersion() {
 
       // https://px-epg.azureedge.net/version is deprecated
       // probably the version url will be changed around over time
-      const versionUrl = 'https://www.pickx.be/api/s-3b36540f3cef64510112f3f95c2c0cdca321997ed2b1042ad778523235e155eb'
+
+      //history of used version urls
+      //const versionUrl = 'https://www.pickx.be/api/s-3b36540f3cef64510112f3f95c2c0cdca321997ed2b1042ad778523235e155eb'
+
+      const versionUrl = 'https://www.pickx.be/api/s-671f172425e1bc74cd0440fd67aaa6cbe68b582f3f401186c2f46ae97e80516b'
       const response = await axios.get(versionUrl, {
         headers: {
           'Origin': 'https://www.pickx.be',
