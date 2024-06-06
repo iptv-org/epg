@@ -135,7 +135,7 @@ function fetchCookieAndToken() {
         'sec-fetch-mode': 'cors',
         'sec-fetch-site': 'same-origin',
         'x-requested-with': 'XMLHttpRequest',
-        Referer: 'https://api.prod.sngtv.magentatv.de/EPG/',
+        Referer: 'https://web.magentatv.de/',
         'Referrer-Policy': 'strict-origin-when-cross-origin'
       },
       body: '{"terminalid":"00:00:00:00:00:00","mac":"00:00:00:00:00:00","terminaltype":"WEBTV","utcEnable":1,"timezone":"Etc/GMT0","userType":3,"terminalvendor":"Unknown"}',
