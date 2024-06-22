@@ -174,7 +174,7 @@
 | [tvpassport.com](sites/tvpassport.com)                             | 🟢     |                                                                                          |
 | [tvplus.com.tr](sites/tvplus.com.tr)                               | 🔴     | https://github.com/iptv-org/epg/issues/2377                                              |
 | [tvprofil.com](sites/tvprofil.com)                                 | 🟢     |                                                                                          |
-| [tvtv.us](sites/tvtv.us)                                           | 🟢     |                                                                                          |
+| [tvtv.us](sites/tvtv.us)                                           | 🟡     | https://github.com/iptv-org/epg/issues/2357                                              |
 | [vidio.com](sites/vidio.com)                                       | 🟢     |                                                                                          |
 | [virginmediatelevision.ie](sites/virginmediatelevision.ie)         | 🟢     |                                                                                          |
 | [virgintvgo.virginmedia.com](sites/virgintvgo.virginmedia.com)     | 🟢     |                                                                                          |
