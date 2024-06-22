@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/tvgids.nl/tvgids.nl.config.js --output=./sites/tvgids.nl/tvgids.nl.channels.xml
-// npx epg-grabber --config=sites/tvgids.nl/tvgids.nl.config.js --channels=sites/tvgids.nl/tvgids.nl.channels.xml --output=guide.xml
-
 const { parser, url } = require('./tvgids.nl.config.js')
 const fs = require('fs')
 const path = require('path')
@@ -54,7 +51,7 @@ it('can parse response', () => {
 
 it('can handle empty guide', () => {
   const result = parser({
-    content: ``,
+    content: '',
     date
   })
   expect(result).toMatchObject([])

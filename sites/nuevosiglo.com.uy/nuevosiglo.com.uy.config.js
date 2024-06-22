@@ -30,8 +30,6 @@ module.exports = {
       const programId = parseProgramId($item)
       const details = await loadProgramDetails(programId)
       if (!details) continue
-      const start = parseStart(details)
-      const stop = parseStop(details)
       programs.push({
         title: details.main_title,
         description: details.short_argument,
@@ -57,7 +55,7 @@ module.exports = {
       .map(function () {
         return {
           lang: 'es',
-          site_id: $(this).attr('alt').replace('&', '&amp;'),
+          site_id: $(this).attr('alt').replace(/\&/gi, '&amp;'),
           name: $(this).attr('alt')
         }
       })

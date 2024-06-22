@@ -1,5 +1,3 @@
-// npx epg-grabber --config=sites/tvmi.mt/tvmi.mt.config.js --channels=sites/tvmi.mt/tvmi.mt.channels.xml --output=guide.xml --days=2
-
 const { parser, url } = require('./tvmi.mt.config.js')
 const fs = require('fs')
 const path = require('path')
@@ -46,7 +44,7 @@ it('can parse response', () => {
 
 it('can handle empty guide', () => {
   const result = parser({
-    content: `<!doctype html><html><head></head><body></body></html>`,
+    content: '<!doctype html><html><head></head><body></body></html>',
     channel
   })
   expect(result).toMatchObject([])

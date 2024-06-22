@@ -6,7 +6,7 @@ module.exports = {
   url: function ({ date, channel }) {
     return `https://telkussa.fi/API/Channel/${channel.site_id}/${date.format('YYYYMMDD')}`
   },
-  parser: function ({ content, date, channel }) {
+  parser: function ({ content }) {
     const programs = []
     const items = JSON.parse(content)
     if (!items.length) return programs
@@ -19,12 +19,27 @@ module.exports = {
         programs.push({
           title: item.name,
           description: item.description,
-          start: start.toString(),
-          stop: stop.toString()
+          start,
+          stop
         })
       }
     })
 
     return programs
+  },
+  async channels({ lang }) {
+    const axios = require('axios')
+    const data = await axios
+      .get(`https://telkussa.fi/API/Channels`)
+      .then(r => r.data)
+      .catch(console.log)
+
+    return data.map(item => {
+      return {
+        lang: 'fi',
+        site_id: item.id,
+        name: item.name
+      }
+    })
   }
 }

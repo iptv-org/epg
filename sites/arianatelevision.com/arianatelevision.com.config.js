@@ -4,7 +4,7 @@ const { DateTime } = require('luxon')
 module.exports = {
   site: 'arianatelevision.com',
   days: 2,
-  url: `https://www.arianatelevision.com/program-schedule/`,
+  url: 'https://www.arianatelevision.com/program-schedule/',
   parser({ content, date }) {
     const programs = []
     const items = parseItems(content, date)
@@ -37,8 +37,6 @@ function parseStart(item, date) {
 }
 
 function parseItems(content, date) {
-  const items = []
-  const col = date.day()
   const $ = cheerio.load(content)
   const settings = $('#jtrt_table_settings_508').text()
   if (!settings) return []

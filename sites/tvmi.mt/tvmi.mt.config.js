@@ -64,7 +64,7 @@ function parseStart($item, date) {
   )
     .text()
     .trim()
-  const [_, HH, mm] = timeString.match(/^(\d{2}):(\d{2})/) || [null, null, null]
+  const [, HH, mm] = timeString.match(/^(\d{2}):(\d{2})/) || [null, null, null]
   if (!HH || !mm) return null
 
   return dayjs.tz(`${date.format('YYYY-MM-DD')} ${HH}:${mm}`, 'YYYY-MM-DD HH:mm', 'Europe/Malta')

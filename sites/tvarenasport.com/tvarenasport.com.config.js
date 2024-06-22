@@ -4,7 +4,7 @@ const dayjs = require('dayjs')
 module.exports = {
   site: 'tvarenasport.com',
   days: 2,
-  url: function ({ channel, date }) {
+  url: function ({ date }) {
     return `https://www.tvarenasport.com/api/schedule?date=${date.format('DD-MM-YYYY')}`
   },
   parser: function ({ content, channel }) {
@@ -24,7 +24,7 @@ module.exports = {
   },
   async channels() {
     const data = await axios
-      .get(`https://www.tvarenasport.com/api/schedule`)
+      .get('https://www.tvarenasport.com/api/schedule')
       .then(r => r.data)
       .catch(console.log)
 

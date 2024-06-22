@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<site site="kvf.fo">
-  <channels>
-    <channel lang="fo" xmltv_id="KVFSjonvarp.fo" site_id="#">KVF Sjónvarp</channel>
-  </channels>
-</site>
+<channels>
+  <channel site="kvf.fo" lang="fo" xmltv_id="KringvarpForoya.fo" site_id="#">KVF</channel>
+</channels>

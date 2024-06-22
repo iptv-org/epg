@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<site site="knr.gl">
-  <channels>
-    <channel lang="kl" xmltv_id="KNR1.gl" site_id="#">KNR TV</channel>
-  </channels>
-</site>
+<channels>
+  <channel site="knr.gl" lang="kl" xmltv_id="KNR1.gl" site_id="#">KNR</channel>
+</channels>

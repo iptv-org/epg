@@ -12,7 +12,7 @@ dayjs.extend(customParseFormat)
 module.exports = {
   site: 'dishtv.in',
   days: 2,
-  url: `https://www.dishtv.in/WhatsonIndiaWebService.asmx/LoadPagginResultDataForProgram`,
+  url: 'https://www.dishtv.in/WhatsonIndiaWebService.asmx/LoadPagginResultDataForProgram',
   request: {
     method: 'POST',
     data({ channel, date }) {
@@ -23,7 +23,7 @@ module.exports = {
       }
     }
   },
-  parser: function ({ content, channel, date }) {
+  parser: function ({ content, date }) {
     let programs = []
     const data = parseContent(content)
     const items = parseItems(data)
@@ -43,72 +43,90 @@ module.exports = {
     return programs
   },
   async channels() {
-    const channelguide = await axios
-      .get(`https://www.dishtv.in/channelguide/`)
-      .then(r => r.data)
-      .catch(console.log)
-    const $channelguide = cheerio.load(channelguide)
+    let channels = []
 
-    let ids = []
-    $channelguide('#MainContent_recordPagging li').each((i, item) => {
-      const onclick = $channelguide(item).find('a').attr('onclick')
-      const [, list] = onclick.match(/ShowNextPageResult\('([^']+)/) || [null, null]
-
-      ids = ids.concat(list.split(','))
-    })
-    ids = ids.filter(Boolean)
-
-    const channels = {}
-    const channelList = await axios
-      .post(`https://www.dishtv.in/WebServiceMethod.aspx/GetChannelListFromMobileAPI`, {
-        strChannel: ''
-      })
-      .then(r => r.data)
-      .catch(console.log)
-    const $channelList = cheerio.load(channelList.d)
-    $channelList('#tblpackChnl > div').each((i, item) => {
-      let num = $channelList(item).find('p:nth-child(2)').text().trim()
-      const name = $channelList(item).find('p').first().text().trim()
-
-      if (num === '') return
-
-      channels[parseInt(num)] = {
-        name
-      }
-    })
-
-    const date = dayjs().add(1, 'd')
-    const promises = []
-    for (let id of ids) {
-      const promise = axios
+    const pages = await loadPageList()
+    for (let page of pages) {
+      const data = await axios
         .post(
-          `https://www.dishtv.in/WhatsonIndiaWebService.asmx/LoadPagginResultDataForProgram`,
-          {
-            Channelarr: id,
-            fromdate: date.format('YYYYMMDD[0000]'),
-            todate: date.format('YYYYMMDD[2300]')
-          },
-          { timeout: 5000 }
+          'https://www.dishtv.in/WhatsonIndiaWebService.asmx/LoadPagginResultDataForProgram',
+          page,
+          { timeout: 30000 }
         )
         .then(r => r.data)
-        .then(data => {
-          const $channelGuide = cheerio.load(data.d)
-
-          const num = $channelGuide('.cnl-fav > a > span').text().trim()
-
-          if (channels[num]) {
-            channels[num].site_id = id
-          }
-        })
         .catch(console.log)
 
-      promises.push(promise)
+      const $ = cheerio.load(data.d)
+      $('.pgrid').each((i, el) => {
+        const onclick = $(el).find('.chnl-logo').attr('onclick')
+        const number = $(el).find('.cnl-fav > a > span').text().trim()
+        const [, name, site_id] = onclick.match(/ShowChannelGuid\('([^']+)','([^']+)'/) || [
+          null,
+          '',
+          ''
+        ]
+
+        channels.push({
+          lang: 'en',
+          number,
+          site_id
+        })
+      })
     }
 
-    await Promise.allSettled(promises)
+    const names = await loadChannelNames()
+    channels = channels
+      .map(channel => {
+        channel.name = names[channel.number]
 
-    return Object.values(channels)
+        return channel
+      })
+      .filter(channel => channel.name)
+
+    return channels
   }
+}
+
+async function loadPageList() {
+  const data = await axios
+    .get('https://www.dishtv.in/channelguide/')
+    .then(r => r.data)
+    .catch(console.log)
+
+  let pages = []
+  const $ = cheerio.load(data)
+  $('#MainContent_recordPagging li').each((i, el) => {
+    const onclick = $(el).find('a').attr('onclick')
+    const [, Channelarr, fromdate, todate] = onclick.match(
+      /ShowNextPageResult\('([^']+)','([^']+)','([^']+)'/
+    ) || [null, '', '', '']
+
+    pages.push({ Channelarr, fromdate, todate })
+  })
+
+  return pages
+}
+
+async function loadChannelNames() {
+  const names = {}
+  const data = await axios
+    .post('https://www.dishtv.in/WebServiceMethod.aspx/GetChannelListFromMobileAPI', {
+      strChannel: ''
+    })
+    .then(r => r.data)
+    .catch(console.log)
+
+  const $ = cheerio.load(data.d)
+  $('#tblpackChnl > div').each((i, el) => {
+    const num = $(el).find('p:nth-child(2)').text().trim()
+    const name = $(el).find('p').first().text().trim()
+
+    if (num === '') return
+
+    names[num] = name
+  })
+
+  return names
 }
 
 function parseTitle(item) {
@@ -117,10 +135,10 @@ function parseTitle(item) {
   return $('a').text()
 }
 
-function parseStart(item, date) {
+function parseStart(item) {
   const $ = cheerio.load(item)
   const onclick = $('i.fa-circle').attr('onclick')
-  const [_, time] = onclick.match(/RecordingEnteryOpen\('.*','.*','(.*)','.*',.*\)/)
+  const [, time] = onclick.match(/RecordingEnteryOpen\('.*','.*','(.*)','.*',.*\)/)
 
   return dayjs.tz(time, 'YYYYMMDDHHmm', 'Asia/Kolkata')
 }

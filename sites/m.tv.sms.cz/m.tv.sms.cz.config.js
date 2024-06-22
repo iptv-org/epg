@@ -13,7 +13,7 @@ module.exports = {
   parser: function ({ buffer, date }) {
     const programs = []
     const items = parseItems(buffer)
-    items.forEach((item, i) => {
+    items.forEach(item => {
       const prev = programs[programs.length - 1]
       const $item = cheerio.load(item)
       let start = parseStart($item, date)
@@ -34,6 +34,30 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels() {
+    const axios = require('axios')
+    const data = await axios
+      .get(`https://m.tv.sms.cz/?zmen_stanice=true`)
+      .then(r => r.data)
+      .catch(console.log)
+
+    let channels = []
+    const $ = cheerio.load(data)
+    $('.stanice').each((i, el) => {
+      const name = $(el).attr('title')
+      const site_id = $(el).find('input').attr('value').replace(/\|/g, '')
+
+      if (!name) return
+
+      channels.push({
+        lang: 'cs',
+        site_id,
+        name
+      })
+    })
+
+    return channels
   }
 }
 

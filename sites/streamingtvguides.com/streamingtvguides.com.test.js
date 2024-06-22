@@ -1,5 +1,3 @@
-// npx epg-grabber --config=sites/streamingtvguides.com/streamingtvguides.com.config.js --channels=sites/streamingtvguides.com/streamingtvguides.com.channels.xml --output=guide.xml
-
 const { parser, url } = require('./streamingtvguides.com.config.js')
 const fs = require('fs')
 const path = require('path')
@@ -33,14 +31,14 @@ it('can parse response', () => {
   expect(results[0]).toMatchObject({
     start: '2023-06-27T00:40:00.000Z',
     stop: '2023-06-27T02:00:00.000Z',
-    title: `24 Oras`,
+    title: '24 Oras',
     description: 'Up to the minute news around the world.'
   })
 
   expect(results[37]).toMatchObject({
     start: '2023-06-27T21:50:00.000Z',
     stop: '2023-06-28T00:00:00.000Z',
-    title: `Eat Bulaga`,
+    title: 'Eat Bulaga',
     description: 'Rousing and engrossing segments with engaging hosts.'
   })
 })

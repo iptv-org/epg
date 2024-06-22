@@ -9,7 +9,7 @@ module.exports = {
       channel.site_id
     }&start=${date.valueOf()}&end=${date.add(1, 'day').valueOf()}&limit=20000`
   },
-  parser({ content, channel }) {
+  parser({ content }) {
     let programs = []
     const items = parseItems(content)
     items.forEach(item => {
@@ -27,7 +27,7 @@ module.exports = {
   },
   async channels() {
     const data = await axios
-      .get(`https://skywebconfig.msl-prod.skycloud.co.nz/sky/json/channels.prod.json`)
+      .get('https://skywebconfig.msl-prod.skycloud.co.nz/sky/json/channels.prod.json')
       .then(r => r.data)
       .catch(console.log)
 

@@ -1,5 +1,3 @@
-// npx epg-grabber --config=sites/ena.skylifetv.co.kr/ena.skylifetv.co.kr.config.js --channels=sites/ena.skylifetv.co.kr/ena.skylifetv.co.kr.channels.xml --output=guide.xml --days=2
-
 const { parser, url } = require('./ena.skylifetv.co.kr.config.js')
 const fs = require('fs')
 const path = require('path')
@@ -31,7 +29,7 @@ it('can parse response', () => {
   expect(results[0]).toMatchObject({
     start: '2023-01-26T16:05:00.000Z',
     stop: '2023-01-26T17:20:00.000Z',
-    title: `법쩐 6화`,
+    title: '법쩐 6화',
     rating: {
       system: 'KMRB',
       value: '15'
@@ -41,7 +39,7 @@ it('can parse response', () => {
   expect(results[17]).toMatchObject({
     start: '2023-01-27T14:10:00.000Z',
     stop: '2023-01-27T15:25:00.000Z',
-    title: `남이 될 수 있을까 4화`,
+    title: '남이 될 수 있을까 4화',
     rating: {
       system: 'KMRB',
       value: '15'

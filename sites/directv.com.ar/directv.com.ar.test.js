@@ -1,5 +1,3 @@
-// npx epg-grabber --config=sites/directv.com.ar/directv.com.ar.config.js --channels=sites/directv.com.ar/directv.com.ar.channels.xml --output=guide.xml --days=2
-
 const { parser, url, request } = require('./directv.com.ar.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
@@ -47,7 +45,8 @@ it('can generate valid request data', () => {
 })
 
 it('can parse response', () => {
-  const content = `{"d":[{"ChannelSection":"","ChannelFullName":"A&E HD","IsFavorite":false,"ChannelName":"A&EHD","ChannelNumber":207,"ProgramList":[{"_channelSection":"","eventId":"120289890767","titleId":"SH0110397700000001","title":"Chicas guapas","programId":null,"description":"Un espacio destinado a la belleza y los distintos estilos de vida, que muestra el trabajo inspiracional de la moda latinoamericana.","episodeTitle":null,"channelNumber":120,"channelName":"AME2","channelFullName":"América TV (ARG)","channelSection":"","contentChannelID":120,"startTime":"/Date(-62135578800000)/","endTime":"/Date(-62135578800000)/","GMTstartTime":"/Date(-62135578800000)/","GMTendTime":"/Date(-62135578800000)/","css":16,"language":null,"tmsId":"SH0110397700000001","rating":"NR","categoryId":"Tipos de Programas","categoryName":0,"subCategoryId":0,"subCategoryName":"Series","serviceExpiration":"/Date(-62135578800000)/","crId":null,"promoUrl1":null,"promoUrl2":null,"price":0,"isPurchasable":"N","videoUrl":"","imageUrl":"https://dnqt2wx2urq99.cloudfront.net/ondirectv/LOGOS/Canales/AR/120.png","titleSecond":"Chicas guapas","isHD":"N","DetailsURL":null,"BuyURL":null,"ProgramServiceId":null,"SearchDateTime":null,"startTimeString":"6/19/2022 12:00:00 AM","endTimeString":"6/19/2022 12:15:00 AM","DurationInMinutes":null,"castDetails":null,"scheduleDetails":null,"seriesDetails":null,"processedSeasonDetails":null}]}]}`
+  const content =
+    '{"d":[{"ChannelSection":"","ChannelFullName":"A&E HD","IsFavorite":false,"ChannelName":"A&EHD","ChannelNumber":207,"ProgramList":[{"_channelSection":"","eventId":"120289890767","titleId":"SH0110397700000001","title":"Chicas guapas","programId":null,"description":"Un espacio destinado a la belleza y los distintos estilos de vida, que muestra el trabajo inspiracional de la moda latinoamericana.","episodeTitle":null,"channelNumber":120,"channelName":"AME2","channelFullName":"América TV (ARG)","channelSection":"","contentChannelID":120,"startTime":"/Date(-62135578800000)/","endTime":"/Date(-62135578800000)/","GMTstartTime":"/Date(-62135578800000)/","GMTendTime":"/Date(-62135578800000)/","css":16,"language":null,"tmsId":"SH0110397700000001","rating":"NR","categoryId":"Tipos de Programas","categoryName":0,"subCategoryId":0,"subCategoryName":"Series","serviceExpiration":"/Date(-62135578800000)/","crId":null,"promoUrl1":null,"promoUrl2":null,"price":0,"isPurchasable":"N","videoUrl":"","imageUrl":"https://dnqt2wx2urq99.cloudfront.net/ondirectv/LOGOS/Canales/AR/120.png","titleSecond":"Chicas guapas","isHD":"N","DetailsURL":null,"BuyURL":null,"ProgramServiceId":null,"SearchDateTime":null,"startTimeString":"6/19/2022 12:00:00 AM","endTimeString":"6/19/2022 12:15:00 AM","DurationInMinutes":null,"castDetails":null,"scheduleDetails":null,"seriesDetails":null,"processedSeasonDetails":null}]}]}'
   const result = parser({ content, channel }).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
@@ -71,7 +70,7 @@ it('can parse response', () => {
 
 it('can handle empty guide', () => {
   const result = parser({
-    content: ``,
+    content: '',
     channel
   })
   expect(result).toMatchObject([])

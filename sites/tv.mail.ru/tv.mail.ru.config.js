@@ -1,8 +1,10 @@
 const { DateTime } = require('luxon')
+const axios = require('axios')
 
 module.exports = {
   site: 'tv.mail.ru',
   days: 2,
+  delay: 1000,
   url({ channel, date }) {
     return `https://tv.mail.ru/ajax/channel/?region_id=70&channel_id=${
       channel.site_id
@@ -31,7 +33,53 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels() {
+    const _ = require('lodash')
+
+    const regions = [5506, 1096, 1125, 285]
+
+    let channels = []
+    for (let region of regions) {
+      const totalPages = await getTotalPageCount(region)
+      const pages = Array.from(Array(totalPages).keys())
+      for (let page of pages) {
+        const data = await axios
+          .get('https://tv.mail.ru/ajax/channel/list/', {
+            params: { page },
+            headers: {
+              cookie: `s=fver=0|geo=${region};`
+            }
+          })
+          .then(r => r.data)
+          .catch(console.log)
+
+        data.channels.forEach(item => {
+          channels.push({
+            lang: 'ru',
+            name: item.name,
+            site_id: item.id
+          })
+        })
+      }
+    }
+
+    return _.uniqBy(channels, 'site_id')
   }
+}
+
+async function getTotalPageCount(region) {
+  const data = await axios
+    .get(`https://tv.mail.ru/ajax/channel/list/`, {
+      params: { page: 0 },
+      headers: {
+        cookie: `s=fver=0|geo=${region};`
+      }
+    })
+    .then(r => r.data)
+    .catch(console.log)
+
+  return data.total
 }
 
 function parseStart(item, date) {

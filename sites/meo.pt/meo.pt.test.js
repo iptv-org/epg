@@ -1,5 +1,3 @@
-// npx epg-grabber --config=sites/meo.pt/meo.pt.config.js --channels=sites/meo.pt/meo.pt.channels.xml --output=guide.xml
-
 const { parser, url, request } = require('./meo.pt.config.js')
 const fs = require('fs')
 const path = require('path')

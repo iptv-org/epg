@@ -27,7 +27,7 @@ module.exports = {
   async channels() {
     const items = await axios
       .get(
-        `https://contentapi-pe.cdn.telefonica.com/28/default/es-PE/contents/all?contentTypes=LCH&fields=Pid,Name&orderBy=contentOrder&limit=1000`
+        'https://contentapi-pe.cdn.telefonica.com/28/default/es-PE/contents/all?contentTypes=LCH&fields=Pid,Name&orderBy=contentOrder&limit=1000'
       )
       .then(r => r.data.Content.List)
       .catch(console.error)
@@ -50,7 +50,7 @@ function parseTime(timestamp) {
   return dayjs.unix(timestamp)
 }
 
-function parseItems(content, channel) {
+function parseItems(content) {
   const data = JSON.parse(content)
 
   return data.Content || []

@@ -20,7 +20,7 @@ module.exports = {
 
     return `https://www.programetv.ro/post/${channel.site_id}/${daysOfWeek[day]}/`
   },
-  parser: function ({ content, channel }) {
+  parser: function ({ content }) {
     let programs = []
     const data = parseContent(content)
     if (!data || !data.shows) return programs
@@ -45,6 +45,21 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels({ country, lang }) {
+    const axios = require('axios')
+    const data = await axios
+      .get(`https://www.programetv.ro/api/station/index/`)
+      .then(r => r.data)
+      .catch(console.log)
+
+    return data.map(item => {
+      return {
+        lang: 'ro',
+        site_id: item.slug,
+        name: item.displayName
+      }
+    })
   }
 }
 
@@ -57,7 +72,7 @@ function parseStop(item) {
 }
 
 function parseContent(content) {
-  const [_, data] = content.match(/var pageData = ((.|[\r\n])+);\n/) || [null, null]
+  const [, data] = content.match(/var pageData = ({.+});\n/) || [null, null]
 
   return data ? JSON.parse(data) : {}
 }

@@ -1,14 +1,13 @@
-// npx epg-grabber --config=sites/tivu.tv/tivu.tv.config.js --channels=sites/tivu.tv/tivu.tv.channels.xml --output=guide.xml
-
-const { parser, url, request } = require('./tivu.tv.config.js')
+const { parser, url } = require('./tivu.tv.config.js')
 const fs = require('fs')
 const path = require('path')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
+
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
-const axios = require('axios')
+
 jest.mock('axios')
 
 const channel = {

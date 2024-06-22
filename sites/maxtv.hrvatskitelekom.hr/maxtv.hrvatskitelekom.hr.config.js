@@ -28,6 +28,21 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels() {
+    const axios = require('axios')
+    const data = await axios
+      .get(`https://player.maxtvtogo.tportal.hr:8082/OTT4Proxy/proxy/epg/channels`)
+      .then(r => r.data)
+      .catch(console.log)
+
+    return data.data.channels.map(item => {
+      return {
+        lang: 'hr',
+        site_id: item.channelId,
+        name: item.title
+      }
+    })
   }
 }
 

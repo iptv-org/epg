@@ -16,7 +16,7 @@ module.exports = {
   },
   parser({ content, date }) {
     const programs = []
-    const items = parseItems(content, date)
+    const items = parseItems(content)
     items.forEach(item => {
       let $item = cheerio.load(item)
       const prev = programs[programs.length - 1]
@@ -72,7 +72,7 @@ function parseStart($item, date) {
   )
 }
 
-function parseItems(content, channel, date) {
+function parseItems(content) {
   const $ = cheerio.load(content)
 
   return $('.show-item').toArray()

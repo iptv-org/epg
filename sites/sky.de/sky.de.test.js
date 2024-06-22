@@ -1,5 +1,3 @@
-// npx epg-grabber --config=sites/sky.de/sky.de.config.js --channels=sites/sky.de/sky.de.channels.xml --output=guide.xml --days=2
-
 const { parser, url, request } = require('./sky.de.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
@@ -11,7 +9,8 @@ const channel = {
   xmltv_id: 'WarnerTVComedyHD.de'
 }
 
-const content = `{"cl":[{"ci":522,"el":[{"ei":122309300,"bsdt":1645916700000,"bst":"00:05","bedt":1645918200000,"len":25,"et":"King of Queens","ec":"Comedyserie","cop":"USA","yop":2001,"fsk":"ab 0 Jahre","epit":"Der Experte","sn":"4","en":"11","pu":"/static/img/program_guide/1522936_s.jpg"},{"ei":122309301,"bsdt":1645918200000,"bst":"00:30","bedt":1645919700000,"len":25,"et":"King of Queens","ec":"Comedyserie","cop":"USA","yop":2001,"fsk":"ab 0 Jahre","epit":"Speedy Gonzales","sn":"4","en":"12","pu":"/static/img/program_guide/1522937_s.jpg"}]}]}`
+const content =
+  '{"cl":[{"ci":522,"el":[{"ei":122309300,"bsdt":1645916700000,"bst":"00:05","bedt":1645918200000,"len":25,"et":"King of Queens","ec":"Comedyserie","cop":"USA","yop":2001,"fsk":"ab 0 Jahre","epit":"Der Experte","sn":"4","en":"11","pu":"/static/img/program_guide/1522936_s.jpg"},{"ei":122309301,"bsdt":1645918200000,"bst":"00:30","bedt":1645919700000,"len":25,"et":"King of Queens","ec":"Comedyserie","cop":"USA","yop":2001,"fsk":"ab 0 Jahre","epit":"Speedy Gonzales","sn":"4","en":"12","pu":"/static/img/program_guide/1522937_s.jpg"}]}]}'
 
 it('can generate valid url', () => {
   expect(url).toBe('https://www.sky.de/sgtvg/service/getBroadcastsForGrid')
@@ -61,7 +60,7 @@ it('can parse response', () => {
 
 it('can handle empty guide', () => {
   const result = parser({
-    content: `[]`
+    content: '[]'
   })
   expect(result).toMatchObject([])
 })

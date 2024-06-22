@@ -52,6 +52,30 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels() {
+    const cheerio = require('cheerio')
+
+    const channels = []
+    const data = await axios
+      .get(`https://tvplus.com.tr/canli-tv/yayin-akisi`)
+      .then(r => r.data)
+      .catch(console.log)
+
+    const $ = cheerio.load(data)
+    $('.channelListItem').each((i, el) => {
+      const name = $(el).find('.channelName').text()
+      const url = $(el).find('.channelLink').attr('href')
+      const [, site_id] = url.match(/\-\-(\d+)$/)
+
+      channels.push({
+        lang: 'tr',
+        name,
+        site_id
+      })
+    })
+
+    return channels
   }
 }
 

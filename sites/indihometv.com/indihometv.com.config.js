@@ -10,9 +10,9 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'indihometv.com',
-  days: 2,
+  days: 1,
   url({ channel }) {
-    return `https://www.indihometv.com/tvod/${channel.site_id}`
+    return `https://www.indihometv.com/livetv/${channel.site_id}`
   },
   parser({ content, date }) {
     const programs = []
@@ -38,12 +38,34 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels() {
+    const axios = require('axios')
+    const cheerio = require('cheerio')
+    const data = await axios
+      .get('https://www.indihometv.com/tv/live')
+      .then(response => response.data)
+      .catch(console.error)
+
+    const $ = cheerio.load(data)
+    const items = $('#channelContainer a.channel-item').toArray()
+    const channels = items.map(item => {
+      const $item = $(item)
+
+      return {
+        lang: 'id',
+        site_id: $item.data('url').substr($item.data('url').lastIndexOf('/') + 1),
+        name: $item.data('name')
+      }
+    })
+
+    return channels
   }
 }
 
 function parseStart($item, date) {
   const timeString = $item('p').text()
-  const [_, start] = timeString.match(/(\d{2}:\d{2}) -/) || [null, null]
+  const [, start] = timeString.match(/(\d{2}:\d{2}) -/) || [null, null]
   const dateString = `${date.format('YYYY-MM-DD')} ${start}`
 
   return dayjs.tz(dateString, 'YYYY-MM-DD HH:mm', 'Asia/Jakarta')
@@ -51,7 +73,7 @@ function parseStart($item, date) {
 
 function parseStop($item, date) {
   const timeString = $item('p').text()
-  const [_, stop] = timeString.match(/- (\d{2}:\d{2})/) || [null, null]
+  const [, stop] = timeString.match(/- (\d{2}:\d{2})/) || [null, null]
   const dateString = `${date.format('YYYY-MM-DD')} ${stop}`
 
   return dayjs.tz(dateString, 'YYYY-MM-DD HH:mm', 'Asia/Jakarta')

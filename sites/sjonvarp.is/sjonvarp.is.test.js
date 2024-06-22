@@ -1,5 +1,3 @@
-// npx epg-grabber --config=sites/sjonvarp.is/sjonvarp.is.config.js --channels=sites/sjonvarp.is/sjonvarp.is.channels.xml --output=guide.xml --days=2
-
 const { parser, url } = require('./sjonvarp.is.config.js')
 const fs = require('fs')
 const path = require('path')

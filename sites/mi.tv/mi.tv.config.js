@@ -41,6 +41,35 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels({ country }) {
+    let lang = 'es'
+    if (country === 'br') lang = 'pt'
+
+    const axios = require('axios')
+    const data = await axios
+      .get(`https://mi.tv/${country}/sitemap`)
+      .then(r => r.data)
+      .catch(console.log)
+
+    const $ = cheerio.load(data)
+
+    let channels = []
+    $(`#page-contents a[href*="${country}/canales"], a[href*="${country}/canais"]`).each(
+      (i, el) => {
+        const name = $(el).text()
+        const url = $(el).attr('href')
+        const [, , , channelId] = url.split('/')
+
+        channels.push({
+          lang,
+          name,
+          site_id: `${country}#${channelId}`
+        })
+      }
+    )
+
+    return channels
   }
 }
 
@@ -66,7 +95,7 @@ function parseDescription($item) {
 
 function parseIcon($item) {
   const backgroundImage = $item('a > div.image-parent > div.image').css('background-image')
-  const [_, icon] = backgroundImage.match(/url\(\'(.*)'\)/) || [null, null]
+  const [, icon] = backgroundImage.match(/url\('(.*)'\)/) || [null, null]
 
   return icon
 }

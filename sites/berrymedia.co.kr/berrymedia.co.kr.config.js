@@ -86,7 +86,7 @@ function parseRating($item) {
     : null
 }
 
-function parseItems(content, channel, date) {
+function parseItems(content) {
   const $ = cheerio.load(content)
 
   return $('.sc_time dd').toArray()

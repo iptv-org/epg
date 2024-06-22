@@ -40,7 +40,7 @@ module.exports = {
   },
   async channels() {
     let html = await axios
-      .get(`https://tv24.co.uk/x/settings/addremove`)
+      .get('https://tv24.co.uk/x/settings/addremove')
       .then(r => r.data)
       .catch(console.log)
     let $ = cheerio.load(html)
@@ -48,7 +48,7 @@ module.exports = {
       .toArray()
       .map(item => $(item).data('channel'))
     html = await axios
-      .get(`https://tv24.co.uk`, {
+      .get('https://tv24.co.uk', {
         headers: {
           Cookie: `selectedChannels=${nums.join(',')}`
         }
@@ -61,9 +61,10 @@ module.exports = {
     return items.map(item => {
       const name = $(item).find('h3').text().trim()
       const link = $(item).find('.channel').attr('href')
-      const [_, site_id] = link.match(/\/channel\/(.*)/) || [null, null]
+      const [, site_id] = link.match(/\/channel\/(.*)/) || [null, null]
 
       return {
+        lang: 'en',
         site_id,
         name
       }

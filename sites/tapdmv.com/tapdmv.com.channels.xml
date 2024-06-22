@@ -1,34 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<site site="tapdmv.com">
-  <channels>
-    <channel lang="en" xmltv_id="ANC.ph" site_id="ee9500aa-a198-4ea8-8aa8-3a60070457f3">anc</channel>
-    <channel lang="en" xmltv_id="AsianFoodNetwork.sg" site_id="f3d648ca-f988-4f1d-bdf2-eebff8b8a334">asianfoodchannel</channel>
-    <channel lang="en" xmltv_id="CinemaWorld.my" site_id="c703509c-392a-4eec-bcb0-513a30a3b933">cinemaworld</channel>
-    <channel lang="en" xmltv_id="EDGEsportPhilippines.ph" site_id="470085cd-91c6-4878-9233-6f8c894538ef">edgesport</channel>
-    <channel lang="en" xmltv_id="KBSWorld.kr" site_id="ebb29a3b-ba35-45d8-981d-f690434935c5">kbsworld</channel>
-    <channel lang="en" xmltv_id="KnowledgeChannel.ph" site_id="e78dde4a-ed1b-4118-9453-7752de4dde62">knowledgechannel</channel>
-    <channel lang="en" xmltv_id="PremierFootball.ph" site_id="3ceaf9fa-5f4e-4263-ad6b-925061275d24">premierfootball</channel>
-    <channel lang="en" xmltv_id="PremierSports.ph" site_id="24249e64-374c-4c32-bc02-1bfa953fa5ea">premiersports1</channel>
-    <channel lang="en" xmltv_id="PremierSports2.ph" site_id="c8997290-0446-455e-9b55-ca3c749786b6">premiersports2</channel>
-    <channel lang="en" xmltv_id="TAPActionFlix.ph" site_id="94b7db9b-5bbd-47d3-a2d3-ce792342a756">tapactionflix</channel>
-    <channel lang="en" xmltv_id="TAPEdge.ph" site_id="94905664-50bb-4d4a-8ba2-d06a2ccd71c3">tapedge</channel>
-    <channel lang="en" xmltv_id="TAPMovies.ph" site_id="848ee7a7-f082-436c-9e10-128dd9e52e05">tapmovies</channel>
-    <channel lang="en" xmltv_id="TAPSports.ph" site_id="40457bed-1f64-4833-adc9-1ff9015788a4">tapsports</channel>
-    <channel lang="en" xmltv_id="TAPTV.ph" site_id="fb372a75-1595-4e41-82af-d731c4353b8b">taptv</channel>
-    <channel lang="en" xmltv_id="TeleRadyo.ph" site_id="bb90c36c-7f9f-4df9-97c5-c8f05c3ee767">teleradyo</channel>
-    <!-- <channel lang="en" xmltv_id="" site_id="08220d6a-1597-4d6d-b35b-d575e5361b2e">paramountnetwork</channel> -->
-    <!-- <channel lang="en" xmltv_id="" site_id="3e4ab1a8-c898-4a8b-82bf-7e4438d64a9a">dmax</channel> -->
-    <!-- <channel lang="en" xmltv_id="" site_id="538051ca-9faf-4a61-b28c-387cc9529971">nickelodeon</channel> -->
-    <!-- <channel lang="en" xmltv_id="" site_id="59050ed4-7885-4159-87de-2ee5735c61f4">cnbc</channel> -->
-    <!-- <channel lang="en" xmltv_id="" site_id="7b7ecc4e-5c43-44b5-afc9-fb4dc1ad64ab">hgtv</channel> -->
-    <!-- <channel lang="en" xmltv_id="" site_id="7bcedd9b-2544-4c3c-b6a9-e2951a7e7143">animax</channel> -->
-    <!-- <channel lang="en" xmltv_id="" site_id="a845a4bd-7539-4c4c-bfa9-d977ea9465db">davincikids</channel> -->
-    <!-- <channel lang="en" xmltv_id="" site_id="b725a8bd-dcf3-4fa9-a85b-8423fb9229be">kartoonchannel</channel> -->
-    <!-- <channel lang="en" xmltv_id="" site_id="c9c7dc62-a2f3-4c25-a6c6-a5d14870b204">tlc</channel> -->
-    <!-- <channel lang="en" xmltv_id="" site_id="cb13167a-16b5-44a9-9056-bb3380cbab04">aniplus</channel> -->
-    <!-- <channel lang="en" xmltv_id="" site_id="e2c11771-36e1-4eed-aea7-2653fe78af20">discoveryscience</channel> -->
-    <!-- <channel lang="en" xmltv_id="" site_id="ee09a248-6c17-4424-8aa6-0cf70ebcc308">dreamworks</channel> -->
-    <!-- <channel lang="en" xmltv_id="" site_id="ef6fe7d2-7dfd-403a-9531-510f3b56e5e7">discoverychannel</channel> -->
-    <!-- <channel lang="en" xmltv_id="" site_id="f08995d0-11b6-484d-97cd-f3211c12b941">animalplanet</channel> -->
-  </channels>
-</site>
+<channels>
+  <channel site="tapdmv.com" lang="en" xmltv_id="" site_id="0ecd2d73-178c-43fd-aaa1-a24921cd8920">laff</channel>
+  <channel site="tapdmv.com" lang="en" xmltv_id="" site_id="4c1b2629-0c93-4eb7-96c0-03cc698ae082">usatodaysports</channel>
+  <channel site="tapdmv.com" lang="en" xmltv_id="" site_id="7b7ecc4e-5c43-44b5-afc9-fb4dc1ad64ab">hgtv</channel>
+  <channel site="tapdmv.com" lang="en" xmltv_id="" site_id="7bcedd9b-2544-4c3c-b6a9-e2951a7e7143">animax</channel>
+  <channel site="tapdmv.com" lang="en" xmltv_id="" site_id="7fff40e4-b5eb-43f8-9b1f-d7f6667ff19d">talkshows</channel>
+  <channel site="tapdmv.com" lang="en" xmltv_id="" site_id="9d68438c-33d5-4082-b4d1-ae9a78bf673f">wtaaccess</channel>
+  <channel site="tapdmv.com" lang="en" xmltv_id="" site_id="18b7c90a-8f9f-4083-930a-e2c45db7f4f2">outdoorchannel</channel>
+  <channel site="tapdmv.com" lang="en" xmltv_id="" site_id="021efa5a-ea90-4dcd-928b-d96e3aa9c0e1">comicu</channel>
+  <channel site="tapdmv.com" lang="en" xmltv_id="" site_id="59c16960-d7f4-4d4c-9de5-19384ba86bf9">crimetv</channel>
+  <channel site="tapdmv.com" lang="en" xmltv_id="" site_id="71d697cf-54e7-44af-852d-eb9683be4222">blastcinema</channel>
+  <channel site="tapdmv.com" lang="en" xmltv_id="" site_id="154d67d1-3b8d-47a7-acf9-3b51af8193f5">fightticket</channel>
+  <channel site="tapdmv.com" lang="en" xmltv_id="" site_id="196ad303-d8dd-42df-8b08-92b8084cf113">nickjr</channel>
+  <channel site="tapdmv.com" lang="en" xmltv_id="" site_id="362c355c-5233-4c00-9009-3477a0d86f72">realitytv</channel>
+  <channel site="tapdmv.com" lang="en" xmltv_id="" site_id="08220d6a-1597-4d6d-b35b-d575e5361b2e">paramountnetwork</channel>
+  <channel site="tapdmv.com" lang="en" xmltv_id="" site_id="46549cb5-3908-459f-8350-e9d3d00c7494">blastaction</channel>
+  <channel site="tapdmv.com" lang="en" xmltv_id="" site_id="59050ed4-7885-4159-87de-2ee5735c61f4">cnbc</channel>
+  <channel site="tapdmv.com" lang="en" xmltv_id="" site_id="65402ad9-8c23-4177-8d31-4fdafc3a3fb7">fear</channel>
+  <channel site="tapdmv.com" lang="en" xmltv_id="" site_id="538051ca-9faf-4a61-b28c-387cc9529971">nickelodeon</channel>
+  <channel site="tapdmv.com" lang="en" xmltv_id="" site_id="586119a0-27c4-4fb9-8f2d-dd017e0b260e">usatodaynews</channel>
+  <channel site="tapdmv.com" lang="en" xmltv_id="" site_id="11966493-c6ca-4dae-bf31-ed5b61fb13b0">blastfc</channel>
+  <channel site="tapdmv.com" lang="en" xmltv_id="" site_id="a6ce5d86-f87d-4fbd-bba1-9dadfe9f30d7">globaltrekker</channel>
+  <channel site="tapdmv.com" lang="en" xmltv_id="" site_id="a75ded3f-c5e4-46e2-b782-d5e83b786bbf">rockaction</channel>
+  <channel site="tapdmv.com" lang="en" xmltv_id="" site_id="ae0285bd-dca1-4ee3-8795-462c495aa376">golfplus</channel>
+  <channel site="tapdmv.com" lang="en" xmltv_id="" site_id="b5254804-2ba8-44a0-bbf9-ca40ce086fd3">ufctv</channel>
+  <channel site="tapdmv.com" lang="en" xmltv_id="" site_id="c08b7266-878f-451c-a05a-6ffbb38ba3db">showcasedramas</channel>
+  <channel site="tapdmv.com" lang="en" xmltv_id="" site_id="dd8792d2-fe27-46e5-87de-36967197cc2d">gameshowcentral</channel>
+  <channel site="tapdmv.com" lang="en" xmltv_id="" site_id="e39a3e27-96a2-4764-84c3-31d33104cb76">cue</channel>
+  <channel site="tapdmv.com" lang="en" xmltv_id="" site_id="e604eaa0-7fb4-488b-abfe-caca27cc5f85">rockentertainment</channel>
+  <channel site="tapdmv.com" lang="en" xmltv_id="" site_id="e7418313-0d31-48ae-9005-838bbd7c4269">mtv90s</channel>
+  <channel site="tapdmv.com" lang="en" xmltv_id="" site_id="ee09a248-6c17-4424-8aa6-0cf70ebcc308">dreamworks</channel>
+  <channel site="tapdmv.com" lang="en" xmltv_id="" site_id="f01e1047-e7eb-4322-a664-8e5910ac5926">familymovies</channel>
+  <channel site="tapdmv.com" lang="en" xmltv_id="" site_id="f19d5e7a-3d27-42a8-aff6-2431138dac38">sportsplus</channel>
+  <channel site="tapdmv.com" lang="en" xmltv_id="AsianFoodNetwork.sg" site_id="f3d648ca-f988-4f1d-bdf2-eebff8b8a334">asianfoodchannel</channel>
+  <channel site="tapdmv.com" lang="en" xmltv_id="KBSWorld.kr" site_id="ebb29a3b-ba35-45d8-981d-f690434935c5">kbsworld</channel>
+  <channel site="tapdmv.com" lang="en" xmltv_id="PremierFootball.ph" site_id="3ceaf9fa-5f4e-4263-ad6b-925061275d24">premierfootball</channel>
+  <channel site="tapdmv.com" lang="en" xmltv_id="PremierSports2.ph" site_id="c8997290-0446-455e-9b55-ca3c749786b6">premiersports2</channel>
+  <channel site="tapdmv.com" lang="en" xmltv_id="PremierSports.ph" site_id="24249e64-374c-4c32-bc02-1bfa953fa5ea">premiersports1</channel>
+  <channel site="tapdmv.com" lang="en" xmltv_id="TAPEdge.ph" site_id="470085cd-91c6-4878-9233-6f8c894538ef">edgesport</channel>
+  <channel site="tapdmv.com" lang="en" xmltv_id="TAPSports.ph" site_id="40457bed-1f64-4833-adc9-1ff9015788a4">tapsports</channel>
+</channels>

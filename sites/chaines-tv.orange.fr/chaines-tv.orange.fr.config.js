@@ -1,3 +1,4 @@
+const axios = require('axios')
 const dayjs = require('dayjs')
 
 module.exports = {
@@ -15,7 +16,7 @@ module.exports = {
       const start = parseStart(item)
       const stop = parseStop(item, start)
       programs.push({
-        title: item.title,
+        title: item.season?.serie?.title ? item.season.serie.title : item.title,
         category: item.genreDetailed,
         description: item.synopsis,
         icon: parseIcon(item),
@@ -25,6 +26,26 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels() {
+    const html = await axios
+      .get(`https://chaines-tv.orange.fr/programme-tv?filtres=all`)
+      .then(r => r.data)
+      .catch(console.log)
+
+    const [, nuxtFunc] = html.match(/window\.__NUXT__=([^<]+)/) || [null, null]
+    const func = new Function(`"use strict";return ${nuxtFunc}`)
+
+    const data = func()
+    const items = data.state.channels.channels
+
+    return items.map(item => {
+      return {
+        lang: 'fr',
+        site_id: item.idEPG,
+        name: item.name
+      }
+    })
   }
 }
 

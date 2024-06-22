@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/nuevosiglo.com.uy/nuevosiglo.com.uy.config.js --output=./sites/nuevosiglo.com.uy/nuevosiglo.com.uy.channels.xml
-// npx epg-grabber --config=sites/nuevosiglo.com.uy/nuevosiglo.com.uy.config.js --channels=sites/nuevosiglo.com.uy/nuevosiglo.com.uy.channels.xml --output=guide.xml --days=2
-
 const { parser, url } = require('./nuevosiglo.com.uy.config.js')
 const fs = require('fs')
 const path = require('path')
@@ -51,7 +48,7 @@ it('can parse response', async () => {
   expect(results[0]).toMatchObject({
     start: '2023-02-10T01:11:00.000Z',
     stop: '2023-02-10T03:46:00.000Z',
-    title: `Jurassic World: Dominion`,
+    title: 'Jurassic World: Dominion',
     description:
       'Años después de la destrucción de Isla Nublar, los dinosaurios viven y cazan junto a los humanos. Este equilibrio determinará, si los humanos seguirán siendo los depredadores máximos en un planeta que comparten con las criaturas temibles.',
     icon: 'https://img-ns.s3.amazonaws.com/grid_data/23354476.jpg',
@@ -66,7 +63,7 @@ it('can parse response', async () => {
   expect(results[1]).toMatchObject({
     start: '2023-02-11T02:06:00.000Z',
     stop: '2023-02-11T04:16:00.000Z',
-    title: `Black Adam`,
+    title: 'Black Adam',
     description:
       'Black Adam es liberado de su tumba casi cinco mil años después de haber sido encarcelado y recibir sus poderes de los antiguos dioses. Ahora está listo para desatar su forma única de justicia en el mundo.',
     icon: 'https://img-ns.s3.amazonaws.com/grid_data/24638423.jpg',
@@ -93,7 +90,7 @@ it('can parse response', async () => {
 it('can handle empty guide', async () => {
   const results = await parser({
     channel,
-    content: ``
+    content: ''
   })
 
   expect(results).toMatchObject([])

@@ -43,7 +43,7 @@ module.exports = {
   },
   async channels() {
     const html = await axios
-      .get(`https://www.telsu.fi/`)
+      .get('https://www.telsu.fi/')
       .then(r => r.data)
       .catch(console.log)
     const $ = cheerio.load(html)
@@ -77,7 +77,7 @@ function parseIcon($item) {
 
 function parseStart($item, date) {
   const subtitle = $item('.h > h2').clone().children().remove().end().text().trim()
-  const [_, HH, mm] = subtitle.match(/(\d{2})\.(\d{2}) - (\d{2})\.(\d{2})$/) || [null, null, null]
+  const [, HH, mm] = subtitle.match(/(\d{2})\.(\d{2}) - (\d{2})\.(\d{2})$/) || [null, null, null]
   if (!HH || !mm) return null
 
   return dayjs.tz(`${date.format('YYYY-MM-DD')} ${HH}:${mm}`, 'YYYY-MM-DD HH:mm', 'Europe/Helsinki')
@@ -85,7 +85,7 @@ function parseStart($item, date) {
 
 function parseStop($item, date) {
   const subtitle = $item('.h > h2').clone().children().remove().end().text().trim()
-  const [_, HH, mm] = subtitle.match(/ - (\d{2})\.(\d{2})$/) || [null, null, null]
+  const [, HH, mm] = subtitle.match(/ - (\d{2})\.(\d{2})$/) || [null, null, null]
   if (!HH || !mm) return null
 
   return dayjs.tz(`${date.format('YYYY-MM-DD')} ${HH}:${mm}`, 'YYYY-MM-DD HH:mm', 'Europe/Helsinki')

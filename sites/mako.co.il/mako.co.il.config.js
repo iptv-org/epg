@@ -36,12 +36,6 @@ function parseStart(item) {
   return dayjs(item.StartTimeUTC)
 }
 
-function parseStop(item) {
-  if (!item.end_time) return null
-
-  return dayjs.tz(item.end_time, 'YYYY-MM-DDTHH:mm:ss', 'Asia/Jerusalem')
-}
-
 function parseItems(content, date) {
   const data = JSON.parse(content)
   if (!data || !Array.isArray(data.programs)) return []

@@ -1,281 +1,338 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<site site="tv2go.t-2.net">
-  <channels>
-    <channel lang="sl" xmltv_id="24KitchenSlovenia.si" site_id="1000307">24 Kitchen</channel>
-    <channel lang="sl" xmltv_id="360TuneBox.nl" site_id="1000558">360 Tune Box</channel>
-    <channel lang="sl" xmltv_id="3sat.de" site_id="1000640">3sat</channel>
-    <channel lang="sl" xmltv_id="AgroTV.rs" site_id="1000686">Agro TV</channel>
-    <channel lang="sl" xmltv_id="AlJazeeraBalkans.ba" site_id="1000180">Al Jazeera Balk</channel>
-    <channel lang="sl" xmltv_id="Alsat.mk" site_id="1000219">Alsat-M</channel>
-    <channel lang="sl" xmltv_id="AMCSlovenia.si" site_id="1000523">AMC HD</channel>
-    <channel lang="sl" xmltv_id="AnixeHDSerie.de" site_id="1000057">Anixe HD Serie</channel>
-    <channel lang="sl" xmltv_id="ArenaEsportSerbia.rs" site_id="1000683">Arena Esport</channel>
-    <channel lang="sl" xmltv_id="ArenaFightSerbia.rs" site_id="1000777">Arena Fight</channel>
-    <channel lang="sl" xmltv_id="ArenaSport1Serbia.rs" site_id="1000688">Arena Sport 1</channel>
-    <channel lang="sl" xmltv_id="ArenaSport2Serbia.rs" site_id="1000689">Arena Sport 2</channel>
-    <channel lang="sl" xmltv_id="ArenaSport3Serbia.rs" site_id="1000787">Arena Sport 3</channel>
-    <channel lang="sl" xmltv_id="ArenaSport4Serbia.rs" site_id="1000788">Arena Sport 4</channel>
-    <channel lang="sl" xmltv_id="ARTEFrance.fr" site_id="1000026">ARTE Français</channel>
-    <channel lang="sl" xmltv_id="ATMTV.si" site_id="1000001">ATM TV</channel>
-    <channel lang="sl" xmltv_id="B92.rs" site_id="1000207">B92</channel>
-    <channel lang="sl" xmltv_id="BabyTV.uk" site_id="82">Baby TV</channel>
-    <channel lang="sl" xmltv_id="BalkanErotic.si" site_id="1000645">Balkan Erotic HD</channel>
-    <channel lang="sl" xmltv_id="BalkanikaMusicTV.bg" site_id="2000000027">Balkanika Music TV</channel>
-    <channel lang="sl" xmltv_id="BalkanTrip.rs" site_id="1000685">Balkan Trip</channel>
-    <channel lang="sl" xmltv_id="BBCEarthRomania.ro" site_id="1000482">BBC Earth HD</channel>
-    <channel lang="sl" xmltv_id="BBCFirstPoland.pl" site_id="1000652">BBC First HD</channel>
-    <channel lang="sl" xmltv_id="BHT1.ba" site_id="1000182">BHT 1</channel>
-    <channel lang="sl" xmltv_id="BKTV.si" site_id="1000265">BK TV</channel>
-    <channel lang="sl" xmltv_id="Bliss.si" site_id="1000669">Bliss 4K</channel>
-    <channel lang="sl" xmltv_id="BNMusic.ba" site_id="1000067">BN Music</channel>
-    <channel lang="sl" xmltv_id="BNTV2.ba" site_id="129">BN 2</channel>
-    <channel lang="sl" xmltv_id="BoomerangCEE.us" site_id="2000000032">Boomerang</channel>
-    <channel lang="sl" xmltv_id="BoomTV.si" site_id="124">Boom TV</channel>
-    <channel lang="sl" xmltv_id="Brio.si" site_id="1000368">Brio</channel>
-    <channel lang="sl" xmltv_id="CBSRealityEMEA.uk" site_id="44">CBS Reality</channel>
-    <channel lang="sl" xmltv_id="CGTN.cn" site_id="125">CGTN</channel>
-    <channel lang="sl" xmltv_id="ChannelOne.ru" site_id="1000272">Perviy kanal</channel>
-    <channel lang="sl" xmltv_id="CineStarTV1Serbia.rs" site_id="1000085">CineStar TV 1</channel>
-    <channel lang="sl" xmltv_id="CineStarTVActionSerbia.rs" site_id="1000427">CineStar TV Action</channel>
-    <channel lang="sl" xmltv_id="CineStarTVComedyCroatia.hr" site_id="1000617">CineStar TV Comedy</channel>
-    <channel lang="sl" xmltv_id="CineStarTVFantasyCroatia.hr" site_id="1000618">CineStar TV Fantasy</channel>
-    <channel lang="sl" xmltv_id="CineStarTVPremiere1Croatia.hr" site_id="1000431">CineStar TV Premiere 1</channel>
-    <channel lang="sl" xmltv_id="CineStarTVPremiere2Croatia.hr" site_id="1000430">CineStar TV Premiere 2</channel>
-    <channel lang="sl" xmltv_id="ClubMTVEurope.uk" site_id="126">Club MTV</channel>
-    <channel lang="sl" xmltv_id="CMCTV.hr" site_id="1000156">CMC TV</channel>
-    <channel lang="sl" xmltv_id="CNNInternationalEurope.us" site_id="25">CNN</channel>
-    <channel lang="sl" xmltv_id="CrimePlusInvestigationUK.uk" site_id="1000153">Crime + Investigation UK</channel>
-    <channel lang="sl" xmltv_id="DasErste.de" site_id="1000059">Das Erste</channel>
-    <channel lang="sl" xmltv_id="DaVinci.de" site_id="1000055">Da Vinci</channel>
-    <channel lang="sl" xmltv_id="DivaAdria.us" site_id="2000000040">Diva</channel>
-    <channel lang="sl" xmltv_id="DMSat.rs" site_id="2000000026">DM Sat</channel>
-    <channel lang="sl" xmltv_id="DocuBox.nl" site_id="1000551">DocuBox HD</channel>
-    <channel lang="sl" xmltv_id="DomKino.ru" site_id="1000274">Dom Kino</channel>
-    <channel lang="sl" xmltv_id="DorcelXXX.nl" site_id="1000486">Dorcel TV XXX HD</channel>
-    <channel lang="sl" xmltv_id="DrFit.bg" site_id="1000391">Dr. Fit</channel>
-    <!-- <channel lang="sl" xmltv_id="" site_id="1000506">DTX HD</channel> -->
-    <channel lang="sl" xmltv_id="DunaTV.hu" site_id="1000648">Duna TV</channel>
-    <channel lang="sl" xmltv_id="DunaWorld.hu" site_id="1000786">Duna World</channel>
-    <channel lang="sl" xmltv_id="Dusk.nl" site_id="1000373">Dusk</channel>
-    <channel lang="sl" xmltv_id="EEurope.us" site_id="1000161">E! Europe</channel>
-    <channel lang="sl" xmltv_id="ELTA2.ba" site_id="1000179">Elta 2</channel>
-    <channel lang="sl" xmltv_id="ELTAHD.ba" site_id="1000240">Elta TV</channel>
-    <channel lang="sl" xmltv_id="EpicDrama.se" site_id="1000501">Epic Drama</channel>
-    <channel lang="sl" xmltv_id="ePosavjeTV.si" site_id="1000651">ePosavje TV</channel>
-    <channel lang="sl" xmltv_id="Erox.nl" site_id="1000559">Erox HD</channel>
-    <channel lang="sl" xmltv_id="Eroxxx.nl" site_id="1000553">Eroxxx HD</channel>
-    <channel lang="sl" xmltv_id="ETV.si" site_id="1000641">ETV</channel>
-    <channel lang="sl" xmltv_id="EuronewsEnglish.fr" site_id="1000764">EuroNews HD</channel>
-    <channel lang="sl" xmltv_id="Eurosport1.fr" site_id="1000025">Eurosport HD</channel>
-    <channel lang="sl" xmltv_id="Eurosport1Germany.de" site_id="1000044">Eurosport 1 (NEM)</channel>
-    <channel lang="sl" xmltv_id="Eurosport2.fr" site_id="1000504">Eurosport 2 HD</channel>
-    <channel lang="sl" xmltv_id="Eurosport4K.fr" site_id="1000728">Eurosport 4K</channel>
-    <channel lang="sl" xmltv_id="EWTNEurope.us" site_id="36">EWTN Europe</channel>
-    <channel lang="sl" xmltv_id="ExodusTV.si" site_id="1000455">Exodus TV</channel>
-    <channel lang="sl" xmltv_id="ExtasyTV.cz" site_id="1000682">Extasy 4K</channel>
-    <channel lang="sl" xmltv_id="Extreme.si" site_id="1000646">Extreme HD</channel>
-    <channel lang="sl" xmltv_id="ExtremeSportsChannelEurope.nl" site_id="37">Extreme Sports Channel</channel>
-    <channel lang="sl" xmltv_id="FashionBox.nl" site_id="1000556">FashionBox HD</channel>
-    <channel lang="sl" xmltv_id="FashionTVEurope.fr" site_id="1000056">FashionTV Europe</channel>
-    <channel lang="sl" xmltv_id="FastFunBox.nl" site_id="1000552">Fast &amp; FunBox HD</channel>
-    <channel lang="sl" xmltv_id="FederalnaTV.ba" site_id="1000183">Federalna TV</channel>
-    <channel lang="sl" xmltv_id="FenFolk.bg" site_id="1000545">Fen Folk</channel>
-    <channel lang="sl" xmltv_id="FenTV.bg" site_id="1000544">Fen TV</channel>
-    <channel lang="sl" xmltv_id="FightBox.nl" site_id="1000550">FightBox HD</channel>
-    <channel lang="sl" xmltv_id="FilmBoxArthouse.nl" site_id="1000557">FilmBox Arthouse</channel>
-    <channel lang="sl" xmltv_id="FilmBoxExtraBulgaria.bg" site_id="1000548">FilmBox Extra HD</channel>
-    <channel lang="sl" xmltv_id="FilmBoxStarsBulgaria.bg" site_id="1000549">FilmBox Stars</channel>
-    <channel lang="sl" xmltv_id="FoxCrimeSerbia.rs" site_id="1000310">Fox Crime</channel>
-    <channel lang="sl" xmltv_id="FoxLifeSerbia.rs" site_id="1000309">Fox Life</channel>
-    <channel lang="sl" xmltv_id="FoxMoviesSlovenia.si" site_id="1000311">Fox Movies</channel>
-    <channel lang="sl" xmltv_id="FoxSerbia.rs" site_id="1000308">Fox</channel>
-    <channel lang="sl" xmltv_id="France2.fr" site_id="1000639">France 2</channel>
-    <channel lang="sl" xmltv_id="France24English.fr" site_id="1000159">France 24 English</channel>
-    <channel lang="sl" xmltv_id="France24French.fr" site_id="1000158">France 24 Français</channel>
-    <channel lang="sl" xmltv_id="FunBoxUHD.nl" site_id="1000521">FunBox UHD</channel>
-    <channel lang="sl" xmltv_id="Gametoon.nl" site_id="1000554">Gametoon</channel>
-    <channel lang="sl" xmltv_id="GeaTV.si" site_id="1000034">Gea TV</channel>
-    <channel lang="sl" xmltv_id="GoldTV.si" site_id="1000407">Gold TV</channel>
-    <channel lang="sl" xmltv_id="GolicaTV.si" site_id="2000000056">Golica TV</channel>
-    <channel lang="sl" xmltv_id="Happy.rs" site_id="1000209">Happy</channel>
-    <channel lang="sl" xmltv_id="Hayat.ba" site_id="1000236">Hayat</channel>
-    <channel lang="sl" xmltv_id="HayatFolk.ba" site_id="1000284">Hayat Folk</channel>
-    <channel lang="sl" xmltv_id="HemaTV.ba" site_id="1000233">Hema TV</channel>
-    <channel lang="sl" xmltv_id="HGTVPanregional.us" site_id="1000730">HGTV</channel>
-    <channel lang="sl" xmltv_id="History2Poland.pl" site_id="1000619">H2 HD</channel>
-    <channel lang="sl" xmltv_id="HotPleasure.si" site_id="1000644">Hot Pleasure HD</channel>
-    <channel lang="sl" xmltv_id="HotXXL.si" site_id="1000643">Hot XXL HD</channel>
-    <channel lang="sl" xmltv_id="HRT1.hr" site_id="105">HRT 1</channel>
-    <channel lang="sl" xmltv_id="HRT2.hr" site_id="106">HRT 2</channel>
-    <channel lang="sl" xmltv_id="HustlerHD.nl" site_id="1000306">Hustler TV HD</channel>
-    <channel lang="sl" xmltv_id="HustlerTVEurope.nl" site_id="1000018">Hustler TV</channel>
-    <channel lang="sl" xmltv_id="JimJamEurope.uk" site_id="1000509">JimJam</channel>
-    <channel lang="sl" xmltv_id="JugotonTV.hr" site_id="1000285">Jugoton TV</channel>
-    <channel lang="sl" xmltv_id="kabeleins.de" site_id="61">Kabel Eins</channel>
-    <channel lang="sl" xmltv_id="Kanal5.mk" site_id="1000268">Kanal 5</channel>
-    <channel lang="sl" xmltv_id="KanalA.si" site_id="1000370">Kanal A</channel>
-    <channel lang="sl" xmltv_id="Kanali7.al" site_id="1000174">Kanali 7</channel>
-    <channel lang="sl" xmltv_id="Karusel.ru" site_id="1000273">Karusel</channel>
-    <channel lang="sl" xmltv_id="KCN1.rs" site_id="1000078">K CN 1</channel>
-    <channel lang="sl" xmltv_id="KCN2.rs" site_id="1000103">K CN 2</channel>
-    <channel lang="sl" xmltv_id="KCN3.rs" site_id="2000000046">K CN 3</channel>
-    <channel lang="sl" xmltv_id="Kino.si" site_id="1000366">Kino</channel>
-    <channel lang="sl" xmltv_id="KlasikTV.hr" site_id="1000154">Klasik TV</channel>
-    <channel lang="sl" xmltv_id="KoroskaTV.si" site_id="1000474">Koroška TV</channel>
-    <channel lang="sl" xmltv_id="Legal.si" site_id="1000676">Legal HD</channel>
-    <channel lang="sl" xmltv_id="LjubljanaTV.si" site_id="1000495">Ljubljana TV</channel>
-    <channel lang="sl" xmltv_id="M1.hu" site_id="1000647">M1</channel>
-    <channel lang="sl" xmltv_id="M2.hu" site_id="1000050">M2</channel>
-    <channel lang="sl" xmltv_id="M5.hu" site_id="1000650">M5</channel>
-    <channel lang="sl" xmltv_id="Mezzo.fr" site_id="91">Mezzo</channel>
-    <channel lang="sl" xmltv_id="MezzoLiveHD.fr" site_id="1000518">Mezzo Live HD</channel>
-    <channel lang="sl" xmltv_id="MilfTV.si" site_id="1000491">Milf TV HD</channel>
-    <channel lang="sl" xmltv_id="MinimaxCEE.cz" site_id="1000262">Minimax</channel>
-    <channel lang="sl" xmltv_id="MrezaTV.hr" site_id="1000193">Mreža TV</channel>
-    <channel lang="sl" xmltv_id="MRT1.mk" site_id="1000222">MRT 1</channel>
-    <channel lang="sl" xmltv_id="MRT2.mk" site_id="1000199">MRT 2</channel>
-    <channel lang="sl" xmltv_id="MTV00s.uk" site_id="50">MTV 00s</channel>
-    <channel lang="sl" xmltv_id="MTV80s.uk" site_id="51">MTV 80s</channel>
-    <channel lang="sl" xmltv_id="MTV90s.uk" site_id="136">MTV 90s</channel>
-    <channel lang="sl" xmltv_id="MTVGlobal.uk" site_id="1000496">MTV Global</channel>
-    <channel lang="sl" xmltv_id="MTVHitsEurope.uk" site_id="127">MTV Hits</channel>
-    <channel lang="sl" xmltv_id="MTVLive.uk" site_id="1000497">MTV Live</channel>
-    <channel lang="sl" xmltv_id="MuzikaPervogo.ru" site_id="1000275">Muzika Pervogo</channel>
-    <channel lang="sl" xmltv_id="MyZenTV.fr" site_id="1000014">MyZen TV</channel>
-    <channel lang="sl" xmltv_id="MyZenTV4K.fr" site_id="1000692">MyZen TV 4K</channel>
-    <channel lang="sl" xmltv_id="NarodnaTV.rs" site_id="1000269">Narodna TV</channel>
-    <channel lang="sl" xmltv_id="NationalGeographicSlovenia.si" site_id="1000049">National Geographic Channel HD</channel>
-    <channel lang="sl" xmltv_id="NationalGeographicWildSlovenia.si" site_id="1000167">National Geographic Wild HD</channel>
-    <channel lang="sl" xmltv_id="Naughty.si" site_id="1000674">Naughty HD</channel>
-    <channel lang="sl" xmltv_id="NetTV.si" site_id="12">Net TV</channel>
-    <channel lang="sl" xmltv_id="NetXXL.si" site_id="1000228">Net XXL</channel>
-    <channel lang="sl" xmltv_id="NHKWorldJapan.jp" site_id="1000102">NHK World Japan</channel>
-    <channel lang="sl" xmltv_id="NickelodeonSlovenia.si" site_id="1000301">Nickelodeon</channel>
-    <channel lang="sl" xmltv_id="NickJrSlovenia.si" site_id="1000426">Nick Jr</channel>
-    <channel lang="sl" xmltv_id="Nova24TV.si" site_id="1000432">Nova 24 TV</channel>
-    <channel lang="sl" xmltv_id="Nova24TV2.si" site_id="1000531">Nova 24 TV 2</channel>
-    <channel lang="sl" xmltv_id="NTVICKakanj.ba" site_id="1000235">NTV IC Kakanj</channel>
-    <channel lang="sl" xmltv_id="OBN.ba" site_id="152">OBN</channel>
-    <channel lang="sl" xmltv_id="OKanal.ba" site_id="1000186">O Kanal</channel>
-    <channel lang="sl" xmltv_id="ORF1.at" site_id="66">ORF 1 HD</channel>
-    <channel lang="sl" xmltv_id="ORF2Europe.at" site_id="67">ORF 2 HD</channel>
-    <channel lang="sl" xmltv_id="OronTV.si" site_id="1000360">Oron TV</channel>
-    <channel lang="sl" xmltv_id="OTO.si" site_id="1000365">Oto</channel>
-    <channel lang="sl" xmltv_id="OTV.hr" site_id="1000190">OTV</channel>
-    <channel lang="sl" xmltv_id="OTVValentino.ba" site_id="1000073">OTV Valentino</channel>
-    <channel lang="sl" xmltv_id="PeTV.si" site_id="1000101">PeTV</channel>
-    <channel lang="sl" xmltv_id="PinkExtra.rs" site_id="1000095">Pink Extra</channel>
-    <channel lang="sl" xmltv_id="PinkFilm.rs" site_id="1000096">Pink Film</channel>
-    <channel lang="sl" xmltv_id="PinkFolk1.rs" site_id="1000094">Pink Folk 1</channel>
-    <channel lang="sl" xmltv_id="PinkHits.rs" site_id="1000789">Pink Hits</channel>
-    <channel lang="sl" xmltv_id="PinkMusic.rs" site_id="1000097">Pink Music</channel>
-    <channel lang="sl" xmltv_id="PinkPlus.rs" site_id="107">Pink Plus</channel>
-    <channel lang="sl" xmltv_id="PinkReality.rs" site_id="1000351">Pink Reality</channel>
-    <channel lang="sl" xmltv_id="PinkSI.rs" site_id="1000361">Pink SI</channel>
-    <channel lang="sl" xmltv_id="PinkWorld.rs" site_id="1000352">Pink World</channel>
-    <channel lang="sl" xmltv_id="PinkZabava.rs" site_id="1000353">Pink Zabava</channel>
-    <channel lang="sl" xmltv_id="PlanetEarth.bg" site_id="1000393">Planet Earth</channel>
-    <channel lang="sl" xmltv_id="PlanetEva.si" site_id="1000494">Planet Eva</channel>
-    <channel lang="sl" xmltv_id="PlanetTV.si" site_id="1000278">Planet TV</channel>
-    <channel lang="sl" xmltv_id="PlanetTV2.si" site_id="1000485">Planet TV 2</channel>
-    <channel lang="sl" xmltv_id="PlayHouse.si" site_id="1000294">Play House HD</channel>
-    <channel lang="sl" xmltv_id="PopTV.si" site_id="1000371">Pop TV</channel>
-    <channel lang="sl" xmltv_id="ProSieben.de" site_id="69">Pro 7</channel>
-    <channel lang="sl" xmltv_id="PrvaSrpskaTV.rs" site_id="1000210">Prva Srpska TV</channel>
-    <channel lang="sl" xmltv_id="Rai1.it" site_id="1000625">Rai 1</channel>
-    <channel lang="sl" xmltv_id="Rai2.it" site_id="1000626">Rai 2</channel>
-    <channel lang="sl" xmltv_id="Rai3.it" site_id="1000627">Rai 3</channel>
-    <channel lang="sl" xmltv_id="RedXXX.si" site_id="1000490">RED xxx HD</channel>
-    <channel lang="sl" xmltv_id="RT.ru" site_id="2000000028">RT</channel>
-    <channel lang="sl" xmltv_id="RTK1.xk" site_id="2000000015">RTK 1</channel>
-    <channel lang="sl" xmltv_id="RTL2Croatia.hr" site_id="1000322">RTL 2 HR</channel>
-    <channel lang="sl" xmltv_id="RTLCroatia.hr" site_id="1000314">RTL</channel>
-    <channel lang="sl" xmltv_id="RTLGermany.de" site_id="70">RTL Deutschland</channel>
-    <channel lang="sl" xmltv_id="RTLKETTO.hu" site_id="71">RTL KETTŐ</channel>
-    <channel lang="sl" xmltv_id="RTLKockica.hr" site_id="1000355">RTL Kockica</channel>
-    <channel lang="sl" xmltv_id="RTLLivingGermany.de" site_id="1000323">RTL Living</channel>
-    <channel lang="sl" xmltv_id="RTRSTV.ba" site_id="1000185">RTRS TV</channel>
-    <channel lang="sl" xmltv_id="RTS1.rs" site_id="1000211">RTS 1</channel>
-    <channel lang="sl" xmltv_id="RTS2.rs" site_id="1000212">RTS 2</channel>
-    <channel lang="sl" xmltv_id="RTSKlasika.rs" site_id="108">RTS Klasika</channel>
-    <channel lang="sl" xmltv_id="RTVi.ru" site_id="1000666">RTVi Europe</channel>
-    <channel lang="sl" xmltv_id="RTVVikom.ba" site_id="1000188">RTV Vikom</channel>
-    <channel lang="sl" xmltv_id="SAT1.de" site_id="72">Sat. 1</channel>
-    <channel lang="sl" xmltv_id="ScifiSerbia.rs" site_id="1000614">Scifi Srbija</channel>
-    <channel lang="sl" xmltv_id="ServusTV.at" site_id="1000086">Servus TV Österreich</channel>
-    <channel lang="sl" xmltv_id="SexationTV.si" site_id="1000408">Sexation HD</channel>
-    <channel lang="sl" xmltv_id="SIPTV.si" site_id="1000498">SIP TV</channel>
-    <channel lang="sl" xmltv_id="Sitel.mk" site_id="1000201">Sitel TV</channel>
-    <channel lang="sl" xmltv_id="SkyNewsInternational.uk" site_id="2000000002">Sky News</channel>
-    <channel lang="sl" xmltv_id="Sport1.de" site_id="60">Sport 1</channel>
-    <channel lang="sl" xmltv_id="SportTV1.si" site_id="1000338">Sport TV 1</channel>
-    <channel lang="sl" xmltv_id="SportTV2.si" site_id="1000339">Sport TV 2</channel>
-    <channel lang="sl" xmltv_id="SportTV3.si" site_id="1000384">Sport TV 3</channel>
-    <channel lang="sl" xmltv_id="StingrayFestival4K.ca" site_id="1000527">Stingray Festival 4K</channel>
-    <channel lang="sl" xmltv_id="STVSkledar.si" site_id="1000052">S-TV Skledar</channel>
-    <channel lang="sl" xmltv_id="SuperOne.hu" site_id="1000342">SuperOne HD</channel>
-    <channel lang="sl" xmltv_id="SuperRTL.de" site_id="73">Super RTL</channel>
-    <channel lang="sl" xmltv_id="T2Info.si" site_id="1000543">T-2 Info</channel>
-    <channel lang="sl" xmltv_id="Telecafe.ru" site_id="1000456">Telecafé</channel>
-    <channel lang="sl" xmltv_id="TelmaTV.mk" site_id="1000226">Telma</channel>
-    <channel lang="sl" xmltv_id="TLCBalkan.us" site_id="1000763">TLC</channel>
-    <channel lang="sl" xmltv_id="TlnovelasEuropa.mx" site_id="100">Tlnovelas</channel>
-    <channel lang="sl" xmltv_id="TNTComedy.ru" site_id="1000400">TNT Comedy</channel>
-    <channel lang="sl" xmltv_id="TNTMusic.ru" site_id="1000664">TNT Music</channel>
-    <channel lang="sl" xmltv_id="TopTV.si" site_id="1000356">Top TV</channel>
-    <channel lang="sl" xmltv_id="ToxicTV.rs" site_id="1000684">Toxic TV</channel>
-    <channel lang="sl" xmltv_id="TraceSportStars.fr" site_id="1000169">Trace Sport Stars</channel>
-    <channel lang="sl" xmltv_id="TraceUrban.fr" site_id="47">Trace Urban</channel>
-    <channel lang="sl" xmltv_id="TravelChannelEMEA.uk" site_id="1000168">Travel Channel</channel>
-    <channel lang="sl" xmltv_id="Travelxp.in" site_id="1000500">Travelxp HD</channel>
-    <channel lang="sl" xmltv_id="Travelxp4KEurope.in" site_id="1000511">Travelxp 4K</channel>
-    <channel lang="sl" xmltv_id="TringAction.al" site_id="1000227">Tring Action</channel>
-    <channel lang="sl" xmltv_id="TringShqip.al" site_id="1000216">Tring Shqip</channel>
-    <channel lang="sl" xmltv_id="TringTring.al" site_id="1000217">Tring Tring</channel>
-    <channel lang="sl" xmltv_id="TrzicTV.si" site_id="1000620">Tržič TV</channel>
-    <channel lang="sl" xmltv_id="TV1000East.ru" site_id="1000010">TV1000</channel>
-    <channel lang="sl" xmltv_id="TV24.mk" site_id="1000772">TV 24</channel>
-    <channel lang="sl" xmltv_id="TV3Slovenia.si" site_id="1000510">TV 3</channel>
-    <channel lang="sl" xmltv_id="TV8.si" site_id="1000405">TV 8</channel>
-    <channel lang="sl" xmltv_id="TVArena.si" site_id="1000529">TV Arena</channel>
-    <channel lang="sl" xmltv_id="TVAS.si" site_id="122">TV AS</channel>
-    <channel lang="sl" xmltv_id="TVCelje.si" site_id="1000065">TV Celje</channel>
-    <channel lang="sl" xmltv_id="TVCentrInternational.ru" site_id="1000665">TV Centr</channel>
-    <channel lang="sl" xmltv_id="TVCGMNE.me" site_id="109">TVCG Sat</channel>
-    <channel lang="sl" xmltv_id="TVDugaPlus.rs" site_id="1000035">TV Duga +</channel>
-    <channel lang="sl" xmltv_id="TVEInternacionalEuropeAsia.es" site_id="98">TVE</channel>
-    <channel lang="sl" xmltv_id="TVGaleja.si" site_id="1000343">TV Galeja</channel>
-    <channel lang="sl" xmltv_id="TVIDEA.si" site_id="123">TV IDEA</channel>
-    <channel lang="sl" xmltv_id="TVJadran.hr" site_id="1000194">TV Jadran</channel>
-    <channel lang="sl" xmltv_id="TVKomenda.si" site_id="1000381">TV Komenda</channel>
-    <channel lang="sl" xmltv_id="TVKoperCapodistria.si" site_id="1000624">TV Koper-Capodistria</channel>
-    <channel lang="sl" xmltv_id="TVMaribor.si" site_id="1000623">TV Maribor</channel>
-    <channel lang="sl" xmltv_id="TVMiklavz.si" site_id="1000727">TV Miklavž</channel>
-    <channel lang="sl" xmltv_id="TVSA.ba" site_id="1000187">TVSA</channel>
-    <channel lang="sl" xmltv_id="TVSlonExtra.ba" site_id="1000776">TV Slon Extra</channel>
-    <channel lang="sl" xmltv_id="TVSLO1.si" site_id="1000259">TV Slovenija 1</channel>
-    <channel lang="sl" xmltv_id="TVSLO2.si" site_id="1000260">TV Slovenija 2</channel>
-    <channel lang="sl" xmltv_id="TVSLO3.si" site_id="1000555">TV Slovenija 3</channel>
-    <channel lang="sl" xmltv_id="TVVijesti.me" site_id="1000775">TV Vijesti</channel>
-    <channel lang="sl" xmltv_id="VasKanal.si" site_id="1000002">Vaš Kanal</channel>
-    <channel lang="sl" xmltv_id="VeseljakTV.si" site_id="13">Veseljak TV</channel>
-    <channel lang="sl" xmltv_id="ViasatExplore.se" site_id="1000045">Viasat Explore HD</channel>
-    <channel lang="sl" xmltv_id="ViasatHistory.se" site_id="1000046">Viasat History HD</channel>
-    <channel lang="sl" xmltv_id="ViasatNature.se" site_id="1000081">Viasat Nature HD</channel>
-    <channel lang="sl" xmltv_id="Vitel.si" site_id="2000000048">Vitel</channel>
-    <channel lang="sl" xmltv_id="VividRed.us" site_id="1000508">Vivid Red HD</channel>
-    <channel lang="sl" xmltv_id="VividTVEurope.uk" site_id="1000489">Vivid TV</channel>
-    <channel lang="sl" xmltv_id="VizionPlus.al" site_id="1000079">Vizion Plus</channel>
-    <channel lang="sl" xmltv_id="VoxGermany.de" site_id="78">VOX</channel>
-    <channel lang="sl" xmltv_id="Vremya.ru" site_id="1000276">Vremya</channel>
-    <channel lang="sl" xmltv_id="VTV.si" site_id="2000000044">VTV</channel>
-    <channel lang="sl" xmltv_id="vZIVOsi.si" site_id="2000000043">vŽIVO.si</channel>
-    <channel lang="sl" xmltv_id="Welt.de" site_id="113">Welt</channel>
-    <channel lang="sl" xmltv_id="Woman.bg" site_id="1000392">Woman</channel>
-    <channel lang="sl" xmltv_id="Z1.hr" site_id="151">Z1</channel>
-    <channel lang="sl" xmltv_id="ZDF.de" site_id="1000064">ZDF</channel>
-    <channel lang="sl" xmltv_id="ZdravaTV.si" site_id="1000616">Zdrava TV HD</channel>
-    <channel lang="sl" xmltv_id="ZdravaTV7Croatia.hr" site_id="1000266">Zdrava Televizija</channel>
-    <!-- <channel lang="sl" xmltv_id="" site_id="1000547">FilmBox Premium HD</channel> -->
-  </channels>
-</site>
+<channels>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="14">RTS Maribor</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="17">TV Veseljak Golica</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="26">Discovery Channel</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="110">Hayat Plus</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000028">AMC</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000043">History Channel</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000048">History Channel</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000074">Disney Channel</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000080">Folk Plus</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000155">Disney Junior</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000181">Alfa TV MAK</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000223">MTV 3</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000224">Naša TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000267">Alfa TV BiH</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000283">INFO TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000291">Animal Planet</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000302">Nickelodeon</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000470">TV Nakupi</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000477">HBO</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000478">HBO 2</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000479">HBO 3</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000480">Cinemax</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000481">Cinemax 2</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000503">RT Doc</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000505">Discovery Science</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000506">DTX</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000507">ID</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000517">Freedom</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000547">Filmbox Premium</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000615">E!</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000765">Pink Serije</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000766">Pink Koncert</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000767">Pink’n’Roll</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000792">Sonce TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000793">Prva World</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000794">Prva Max</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000795">Happy Reality</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000796">Happy Reality 2</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000797">Prva Files</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000798">Prva Kick</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000799">Prva Life</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000800">Prva Plus</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000801">Adria</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000802">One Adria</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000803">Folx Slovenija</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000807">BBC News</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000808">Dom TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000812">Espreso TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000813">Duck TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000814">Non Stop</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000815">Hit TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000816">Bloomberg Adria</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000817">Arena Sport 1 Premium</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000818">Megafon TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000820">CineStar TV 2</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000821">LH TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000825">English Club TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000826">Harmonika TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000827">GLAM</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000828">XXXTazy</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000829">Angels</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000830">BooB</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000831">Capable Hole</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000832">Devils Home</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000833">Foxy Dolls</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000834">MIxxx</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000835">Prva TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000868">BIR TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000870">KIC TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000871">Kitchen TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000874">Mediaset Italia</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="1000875">TgCom24</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="2000000001">R Kanal+</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="2000000039">Cartoon Network</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="2000000041">RTV Shqiptar</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="2000000045">Europe by Satellite</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="" site_id="2000000050">RTV Atlas</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="3sat.de" site_id="1000640">3SAT</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="24Kitchen.si" site_id="1000307">24Kitchen Adria</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="360TuneBox.nl" site_id="1000558">360 Tunebox</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="AgroTV.rs" site_id="1000686">Agro TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="AlJazeeraBalkans.ba" site_id="1000180">Al Jazeera Balkans</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="Alsat.mk" site_id="1000219">Alsat Macedoniae</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="AMC.si" site_id="1000523">AMC</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="AnixeHDSerie.de" site_id="1000057">Anixe</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="ArenaEsport.rs" site_id="1000683">TV Arena Esport</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="ArenaFight.rs" site_id="1000777">Arena Fight</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="ArenaSport1.rs" site_id="1000688">Arena Sport 1</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="ArenaSport2.rs" site_id="1000689">Arena Sport 2</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="ArenaSport3.rs" site_id="1000787">Arena Sport 3</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="ArenaSport4.rs" site_id="1000788">Arena Sport 4</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="arte.fr" site_id="1000026">Arte</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="ATMTV.si" site_id="1000001">ATM Kranjska Gora</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="B92.rs" site_id="1000207">B92</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="BabyTV.uk" site_id="82">Baby TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="BalkanEroticHD.si" site_id="1000645">Balkan Erotic</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="BalkanikaTV.bg" site_id="2000000027">Balkanika Music TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="BalkanTripTV.rs" site_id="1000685">TV Balkan Trip</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="BBCEarth.ro" site_id="1000482">BBC Earth</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="BBCFirst.pl" site_id="1000652">BBC First</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="BHT1.ba" site_id="1000182">BHT 1</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="BKTV.si" site_id="1000265">BK TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="BN2.ba" site_id="129">BN TV 2</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="BNMusic.ba" site_id="1000067">BN Music</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="BoomerangCEE.uk" site_id="2000000032">Cartoonito</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="BoomTV.si" site_id="124">Aktual TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="BRIO.si" site_id="1000368">BRIO</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="Carousel.ru" site_id="1000273">Karousel</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="CBSRealityEMEA.uk" site_id="44">CBS Reality</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="CGTN.cn" site_id="125">CGTN</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="ChannelOne.ru" site_id="1000272">Channel One Russia</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="CineStarTV1.rs" site_id="1000085">CineStar TV 1</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="CineStarTVAction.rs" site_id="1000427">Cinestar Action &amp; Thriller</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="CineStarTVComedy.hr" site_id="1000617">Cinestar Comedy</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="CineStarTVFantasy.hr" site_id="1000618">Cinestar Fantasy</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="CineStarTVPremiere1.hr" site_id="1000431">Cinestar Premiere</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="CineStarTVPremiere2.hr" site_id="1000430">Cinestar Premiere 2</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="ClubMTVEurope.uk" site_id="126">Club MTV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="CMCTV.hr" site_id="1000156">CMC - Croatian Music Channel</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="CNNInternationalEurope.us" site_id="25">CNN International</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="CrimePlusInvestigation.uk" site_id="1000153">Crime &amp; Investigation Channel</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="DasErste.de" site_id="1000059">Das Erste (ARD)</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="DaVinci.de" site_id="1000055">Da Vinci</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="DivaAdria.us" site_id="2000000040">Diva</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="DMSat.rs" site_id="2000000026">DM SAT Televizija</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="DocuBox.nl" site_id="1000551">Docubox</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="Domkino.ru" site_id="1000274">Dom Kino</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="DorcelXXX.nl" site_id="1000486">Dorcel TV XXX</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="Duna.hu" site_id="1000648">Duna</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="DunaWorld.hu" site_id="1000786">Duna World</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="DuskTV.nl" site_id="1000373">Dusk</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="ELTA2.ba" site_id="1000179">Elta 2</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="ELTAHD.ba" site_id="1000240">Elta TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="EpicDrama.se" site_id="1000501">Epic Drama</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="ePosavjeTV.si" site_id="1000651">ePosavje TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="EroX.nl" site_id="1000559">Erox</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="EroXXX.nl" site_id="1000553">Eroxxx</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="ETV.si" site_id="1000641">ETV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="EuronewsEnglish.fr" site_id="1000764">Euronews</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="Eurosport1.de" site_id="1000044">Eurosport (NEM)</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="Eurosport1.fr" site_id="1000025">Eurosport</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="Eurosport2.fr" site_id="1000504">Eurosport 2</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="Eurosport4K.fr" site_id="1000728">Eurosport</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="EWTNEurope.us" site_id="36">EWTN Europe</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="ExodusTV.si" site_id="1000455">Exodus</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="ExtremeHD.si" site_id="1000646">Extreme</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="ExtremeSportsChannel.nl" site_id="37">Extreme Sports</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="FashionBox.nl" site_id="1000556">Fashionbox</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="FashionTVEurope.fr" site_id="1000056">Fashion TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="FastFunBox.nl" site_id="1000552">Fastnfunbox</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="Federalnatelevizija.ba" site_id="1000183">FTV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="FenFolkTV.bg" site_id="1000545">FenFolk TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="FenTV.bg" site_id="1000544">FEN TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="FightBox.nl" site_id="1000550">Fightbox</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="FilmBoxArthouse.nl" site_id="1000557">Filmbox Art House</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="FilmBoxExtra.bg" site_id="1000548">Filmbox Extra</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="FilmBoxStars.bg" site_id="1000549">Filmbox Stars</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="Fox.rs" site_id="1000308">STAR</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="FoxCrime.rs" site_id="1000310">STAR Crime</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="FoxLife.rs" site_id="1000309">STAR Life</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="FoxMovies.si" site_id="1000311">STAR Movies</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="France2.fr" site_id="1000639">FR2</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="France24English.fr" site_id="1000159">France 24 English</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="France24French.fr" site_id="1000158">France 24 French</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="FunBoxUHD.nl" site_id="1000521">Funbox</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="Gametoon.nl" site_id="1000554">Gametoon</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="GeaTV.si" site_id="1000034">Gea TV Plus</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="GOLDTV.si" site_id="1000407">GOLD TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="GolicaTV.si" site_id="2000000056">TV Zlati zvoki</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="Happy.rs" site_id="1000209">Happy TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="Hayat.ba" site_id="1000236">Hayat</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="HayatFolk.ba" site_id="1000284">Hayat Folk</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="HemaTV.ba" site_id="1000233">Hema</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="HGTVPanregional.us" site_id="1000730">HGTV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="History2.pl" site_id="1000619">H2</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="HotPleasure.si" site_id="1000644">Hot Pleasure</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="HotXXLHD.si" site_id="1000643">Hot XXL</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="HRT1.hr" site_id="105">HRT 1</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="HRT2.hr" site_id="106">HRT 2</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="HustlerHD.nl" site_id="1000306">Hustler TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="HustlerTVEurope.nl" site_id="1000018">Hustler TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="JimJamEurope.uk" site_id="1000509">Jim Jam</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="JugotonTV.hr" site_id="1000285">Jugoton TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="kabeleins.de" site_id="61">Kabel 1</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="Kanal5.mk" site_id="1000268">Kanal 5</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="KanalA.si" site_id="1000370">Kanal A</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="Kanali7.al" site_id="1000174">Tring 7</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="KINO.si" site_id="1000366">KINO</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="Klasik.hr" site_id="1000154">Klasik</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="KoroskaTV.si" site_id="1000474">Koroška TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="M1.hu" site_id="1000647">M1</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="M2.hu" site_id="1000050">M2</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="M5.hu" site_id="1000650">M5</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="Mezzo.fr" site_id="91">Mezzo</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="MezzoLive.fr" site_id="1000518">Mezzo Live</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="MilfTVHD.si" site_id="1000491">Milf TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="MinimaxCEE.cz" site_id="1000262">Minimax</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="MrezaTV.hr" site_id="1000193">Mreža TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="MRT1.mk" site_id="1000222">MTV 1</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="MRT2.mk" site_id="1000199">MTV 2</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="MTV00s.uk" site_id="50">MTV 00s</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="MTV80s.uk" site_id="51">MTV 80s</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="MTV90s.uk" site_id="136">MTV 90s</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="MTVGlobal.uk" site_id="1000496">MTV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="MTVHitsEurope.uk" site_id="127">MTV Hits</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="MTVLive.uk" site_id="1000497">MTV Live</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="MuzykaPervogo.ru" site_id="1000275">Muzika Pervogo</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="NarodnaTV.rs" site_id="1000269">Narodna TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="NationalGeographic.si" site_id="1000049">National Geographic</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="NationalGeographicWild.si" site_id="1000167">National Geographic Wild</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="NetTV.si" site_id="12">Net TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="NetXXL.si" site_id="1000228">Net XXL</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="NHKWorldJapan.jp" site_id="1000102">NHK World</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="Nickelodeon.si" site_id="1000301">Nickelodeon</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="NickJr.si" site_id="1000426">Nick JR</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="Nova24TV2.si" site_id="1000531">Nova 24 TV 2</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="Nova24TV.si" site_id="1000432">Nova 24 TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="NTVICKakanj.ba" site_id="1000235">NTV IC Kakanj</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="OBN.ba" site_id="152">OBN</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="OKanal.ba" site_id="1000186">O Kanal</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="ORF1.at" site_id="66">ORF1</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="ORF2Europe.at" site_id="67">ORF2</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="OronTV.si" site_id="1000360">TV Oron</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="OTO.si" site_id="1000365">OTO</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="OTV.hr" site_id="1000190">OTV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="OTVValentino.ba" site_id="1000073">OTV Valentino</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="PeTV.si" site_id="1000101">PETV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="PinkExtra.rs" site_id="1000095">Pink Extra</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="PinkFilm.rs" site_id="1000096">Pink Film</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="PinkFolk1.rs" site_id="1000094">Pink Folk</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="PinkHits.rs" site_id="1000789">Pink Hits</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="PinkMusic.rs" site_id="1000097">Pink Music</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="PinkPlus.rs" site_id="107">Pink Plus</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="PinkReality.rs" site_id="1000351">Pink Reality</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="PinkSI.rs" site_id="1000361">Pink SI</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="PinkWorld.rs" site_id="1000352">Pink World</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="PinkZabava.rs" site_id="1000353">Pink Zabava</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="PlanetEva.si" site_id="1000494">Planet Eva</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="PlanetTV2.si" site_id="1000485">Planet TV 2</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="PlanetTV.si" site_id="1000278">Planet TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="PlayHouseHD.si" site_id="1000294">Play House</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="POPTV.si" site_id="1000371">POP TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="ProSieben.de" site_id="69">Pro 7</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="Prva.rs" site_id="1000210">Prva</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="Rai1.it" site_id="1000625">RAI 1</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="Rai2.it" site_id="1000626">RAI 2</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="Rai3.it" site_id="1000627">RAI 3</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="REDxxxHD.si" site_id="1000490">RED xxx</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="RT.ru" site_id="2000000028">RT</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="RTK1.xk" site_id="2000000015">RTK Kosova</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="RTL2.hr" site_id="1000322">RTL 2 HR</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="RTL.de" site_id="70">RTL</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="RTL.hr" site_id="1000314">RTL Televizija</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="RTLKetto.hu" site_id="71">RTL2</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="RTLKockica.hr" site_id="1000355">RTL Kockica</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="RTLLiving.de" site_id="1000323">RTL Living</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="RTLSuper.de" site_id="73">Super RTL</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="RTRSTV.ba" site_id="1000185">RTRS</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="RTS1.rs" site_id="1000211">RTS 1</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="RTS2.rs" site_id="1000212">RTS 2</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="RTSKlasika.rs" site_id="108">RTS</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="RTVi.ru" site_id="1000666">RTVi</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="RTVVikom.ba" site_id="1000188">Vikom TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="SAT1.de" site_id="72">SAT1</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="SciFi.rs" site_id="1000614">Sci Fi</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="ServusTV.at" site_id="1000086">Servus TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="SexationHD.si" site_id="1000408">Sexation</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="SIPTV.si" site_id="1000498">SIP TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="Sitel.mk" site_id="1000201">TV Sitel</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="SkyNewsInternational.uk" site_id="2000000002">Sky News</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="Sport1.de" site_id="60">SPORT1</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="SportTV1.si" site_id="1000338">Šport TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="SportTV2.si" site_id="1000339">Šport TV 2</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="SportTV3.si" site_id="1000384">Šport TV 3</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="StingrayFestival4K.ca" site_id="1000527">Festival</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="SuperONEHD.hu" site_id="1000342">Super One</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="T2Info.si" site_id="1000543">T-2 Info</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="Telecafe.ru" site_id="1000456">Telecafe</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="TelmaTV.mk" site_id="1000226">Telma TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="TLCBalkan.us" site_id="1000763">TLC</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="TlnovelasEuropa.mx" site_id="100">TL Novelas Europe</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="TNTMusic.ru" site_id="1000664">TNT Music</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="TopTV.si" site_id="1000356">TOP TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="ToxicTV.rs" site_id="1000684">TV Toxic</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="TraceSportStars.fr" site_id="1000169">Trace Sport Stars</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="TraceUrban.fr" site_id="47">Trace Urban</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="TravelChannelEMEA.uk" site_id="1000168">Travel Channel</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="Travelxp4KEurope.in" site_id="1000511">Travelxp</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="Travelxp.in" site_id="1000500">Travelxp</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="TringAction.al" site_id="1000227">Tring Action</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="TringShqip.al" site_id="1000216">Tring Shqip</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="TringTring.al" site_id="1000217">Tring Tring</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="TrzicTV.si" site_id="1000620">Tržič TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="TV3.si" site_id="1000510">TV 3</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="TV8.si" site_id="1000405">TV 8</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="TV24.mk" site_id="1000772">24 Vesti</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="TVArena.si" site_id="1000529">Arena TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="TVAS.si" site_id="122">TV AS</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="TVCelje.si" site_id="1000065">TV Celje</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="TVCGMNE.me" site_id="109">MNE</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="TVDugaPlus.rs" site_id="1000035">TV Duga Novi Sad</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="TVEInternacionalEuropeAsia.es" site_id="98">TVE</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="TVGaleja.si" site_id="1000343">TV Galeja</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="TVIDEA.si" site_id="123">TV IDEA</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="TVJadran.hr" site_id="1000194">TV Jadran</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="TVKCN1.rs" site_id="1000078">KCN</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="TVKCN2.rs" site_id="1000103">KCN Music</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="TVKCN3.rs" site_id="2000000046">KCN 3</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="TVKoperCapodistria.si" site_id="1000624">TV Koper</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="TVMaribor.si" site_id="1000623">TV Maribor</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="TVMiklavz.si" site_id="1000727">TV Miklavž</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="TVSA.ba" site_id="1000187">TV Sarajevo</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="TVSLO1.si" site_id="1000259">SLO 1</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="TVSLO2.si" site_id="1000260">SLO 2</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="TVSLO3.si" site_id="1000555">SLO 3</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="TVSlonExtra.ba" site_id="1000776">TV Slon</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="TVVijesti.me" site_id="1000775">Vijesti</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="Vaskanal.si" site_id="1000002">Vaš kanal</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="VeseljakTV.si" site_id="13">Best TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="ViasatExplore.se" site_id="1000045">Viasat Explore</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="ViasatHistory.se" site_id="1000046">Viasat History</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="ViasatNature.se" site_id="1000081">Viasat Nature</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="vijuTV1000.ru" site_id="1000010">TV1000</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="Vitel.si" site_id="2000000048">Vitel</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="VividREDHD.us" site_id="1000508">Vivid Red</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="VividTVEurope.uk" site_id="1000489">Vivid TV</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="VizionPlus.al" site_id="1000079">Tring Vizion+</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="VOX.de" site_id="78">VOX</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="Vremya.ru" site_id="1000276">Vremya</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="VTV.si" site_id="2000000044">VTV Velenje</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="vZIVOsi.si" site_id="2000000043">vŽivo.si</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="Z1.hr" site_id="151">Z1 televizija</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="ZDF.de" site_id="1000064">ZDF</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="ZdravaTV7.hr" site_id="1000266">Zdrava Televizija</channel>
+  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="ZdravaTV.si" site_id="1000616">Zdrava TV</channel>
+</channels>

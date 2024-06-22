@@ -1,119 +1,243 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<site site="magticom.ge">
-  <channels>
-    <channel lang="en" xmltv_id="360TuneBox.nl" site_id="264">360 Tune Box</channel>
-    <channel lang="en" xmltv_id="BBCWorldNewsEurope.uk" site_id="284">BBC World News Europe</channel>
-    <channel lang="en" xmltv_id="CNBCEurope.uk" site_id="79">CNBC Europe</channel>
-    <channel lang="en" xmltv_id="CNNInternationalEurope.us" site_id="140">CNN International Europe</channel>
-    <channel lang="en" xmltv_id="Erox.nl" site_id="2">Erox HD</channel>
-    <channel lang="en" xmltv_id="FashionBox.nl" site_id="272">FashionBox HD</channel>
-    <channel lang="en" xmltv_id="France24English.fr" site_id="161">France 24 English</channel>
-    <channel lang="en" xmltv_id="MTV80s.uk" site_id="49">MTV 80s</channel>
-    <channel lang="en" xmltv_id="MTVRussia.ru" site_id="99">MTV Russia</channel>
-    <channel lang="en" xmltv_id="RT.ru" site_id="154">RT News</channel>
-    <channel lang="ka" xmltv_id="2TV.ge" site_id="167">2 TV</channel>
-    <channel lang="ka" xmltv_id="Adjarasport1.ge" site_id="121">Adjarasport 1</channel>
-    <channel lang="ka" xmltv_id="Adjarasport2.ge" site_id="66003">Adjarasport 2</channel>
-    <channel lang="ka" xmltv_id="AjaraTV.ge" site_id="27">Ajara TV</channel>
-    <channel lang="ka" xmltv_id="BrazzersTVEurope.us" site_id="206">Brazzers TV Europe</channel>
-    <channel lang="ka" xmltv_id="ChveniMagti.ge" site_id="248">Chveni Magti</channel>
-    <channel lang="ka" xmltv_id="ComedyTV.ge" site_id="58000">Comedy TV</channel>
-    <channel lang="ka" xmltv_id="Dardimandi.ge" site_id="199">Dardimandi</channel>
-    <channel lang="ka" xmltv_id="EnkiBenki.ge" site_id="83">Enki Benki</channel>
-    <channel lang="ka" xmltv_id="Ertsulovneba.ge" site_id="72">Ertsulovneba</channel>
-    <channel lang="ka" xmltv_id="1TV.ge" site_id="3">1 TV</channel>
-    <channel lang="ka" xmltv_id="Formula.ge" site_id="63000">Formula</channel>
-    <channel lang="ka" xmltv_id="GDSTV.ge" site_id="144">GDS TV</channel>
-    <channel lang="ka" xmltv_id="GurjaaniTV.ge" site_id="286">Gurjaani TV</channel>
-    <channel lang="ka" xmltv_id="ImediTV.ge" site_id="4">Imedi TV</channel>
-    <channel lang="ka" xmltv_id="KavkasiaTV.ge" site_id="135">Kavkasia TV</channel>
-    <channel lang="ka" xmltv_id="Maestro.ge" site_id="141">Maestro</channel>
-    <channel lang="ka" xmltv_id="MagtiHiti.ge" site_id="249">Magti Hiti</channel>
-    <channel lang="ka" xmltv_id="MagtiKino.ge" site_id="247">Magti Kino</channel>
-    <channel lang="ka" xmltv_id="MaraoTV.ge" site_id="137">Marao TV</channel>
-    <channel lang="ka" xmltv_id="MtavariArkhi.ge" site_id="61000">Mtavari Arkhi</channel>
-    <channel lang="ka" xmltv_id="ObieqtiviTV.ge" site_id="85">Obieqtivi TV</channel>
-    <channel lang="ka" xmltv_id="PalitraNews.ge" site_id="87">Palitra News</channel>
-    <channel lang="ka" xmltv_id="PosTV.ge" site_id="65000">Pos TV</channel>
-    <channel lang="ka" xmltv_id="QartuliArkhi.ge" site_id="195">Qartuli Arkhi</channel>
-    <channel lang="ka" xmltv_id="QualityChannel.ge" site_id="96">Quality Channel</channel>
-    <channel lang="ka" xmltv_id="RedlightHD.nl" site_id="7">Redlight HD</channel>
-    <channel lang="ka" xmltv_id="RioniTV.ge" site_id="197">Rioni TV</channel>
-    <channel lang="ka" xmltv_id="RugbyTV.ge" site_id="288">Rugby TV</channel>
-    <channel lang="ka" xmltv_id="Rustavi2.ge" site_id="1">Rustavi 2</channel>
-    <channel lang="ka" xmltv_id="SaperaviTV.ge" site_id="240">Saperavi TV HD</channel>
-    <channel lang="ka" xmltv_id="SetantaSportsGeorgia.ge" site_id="68351">Setanta Sports Georgia</channel>
-    <channel lang="ka" xmltv_id="SetantaSportsPlusGeorgia.ge" site_id="68352">Setanta Sports + Georgia</channel>
-    <channel lang="ka" xmltv_id="SilkUniversal.ge" site_id="287">Silk Universal</channel>
-    <channel lang="ka" xmltv_id="TV25.ge" site_id="285">TV 25</channel>
-    <channel lang="ka" xmltv_id="TVPirveli.ge" site_id="207">TV Pirveli</channel>
-    <channel lang="ru" xmltv_id="A1.ru" site_id="219">A1</channel>
-    <channel lang="ru" xmltv_id="A2.ru" site_id="156">A2</channel>
-    <channel lang="ru" xmltv_id="AmediaHit.ru" site_id="76">Amedia Hit</channel>
-    <channel lang="ru" xmltv_id="AmediaPremium.ru" site_id="122">Amedia Premium</channel>
-    <channel lang="ru" xmltv_id="Armenia1.am" site_id="84">Armenia 1 TV</channel>
-    <channel lang="ru" xmltv_id="AVTO24.ru" site_id="294">Avto 24</channel>
-    <channel lang="ru" xmltv_id="AzTV.az" site_id="101">Az TV</channel>
-    <channel lang="ru" xmltv_id="BollywoodHD.ru" site_id="260">Bollywood TV Rossiya</channel>
-    <channel lang="ru" xmltv_id="CartoonNetworkRussia.ru" site_id="41">Cartoon Network Russia &amp; South East Europe</channel>
-    <channel lang="ru" xmltv_id="Cinema.ru" site_id="230">Cinéma</channel>
-    <channel lang="ru" xmltv_id="CTCInternational.ru" site_id="65">STS International</channel>
-    <channel lang="ru" xmltv_id="CurrentTimeTV.cz" site_id="280">Nastoyashcheye Vremya</channel>
-    <channel lang="ru" xmltv_id="DaVinci.de" site_id="225">Da Vinci</channel>
-    <channel lang="ru" xmltv_id="DiscoveryScienceRussia.ru" site_id="46">Discovery Science Rossiya</channel>
-    <channel lang="ru" xmltv_id="DocuBox.nl" site_id="262">DocuBox HD</channel>
-    <channel lang="ru" xmltv_id="Domashniy.ru" site_id="1336">Domashniy</channel>
-    <channel lang="ru" xmltv_id="DomKino.ru" site_id="185">Dom Kino</channel>
-    <channel lang="ru" xmltv_id="DomKinoPremium.ru" site_id="269">Dom Kino Premium</channel>
-    <channel lang="ru" xmltv_id="DTXRussia.ru" site_id="45">DTX Rossiya</channel>
-    <channel lang="ru" xmltv_id="DuckTV.sk" site_id="251">Duck TV SD</channel>
-    <channel lang="ru" xmltv_id="EuronewsRussian.fr" site_id="52">EuroNews Russkiy</channel>
-    <channel lang="ru" xmltv_id="Evrokino.ru" site_id="19">Evrokino</channel>
-    <channel lang="ru" xmltv_id="FastFunBox.nl" site_id="267">Fast &amp; FunBox HD</channel>
-    <channel lang="ru" xmltv_id="FightBox.nl" site_id="252">FightBox HD</channel>
-    <channel lang="ru" xmltv_id="FilmBoxArthouse.nl" site_id="254">FilmBox Arthouse Worldwide</channel>
-    <channel lang="ru" xmltv_id="FilmBoxRussia.ru" site_id="253">FilmBox Russia</channel>
-    <channel lang="ru" xmltv_id="FoxRussia.ru" site_id="39">Fox Russia</channel>
-    <channel lang="ru" xmltv_id="FridayInternational.ru" site_id="124">Pyatnitsa! International</channel>
-    <channel lang="ru" xmltv_id="GulliGirl.ru" site_id="16">Gulli Girl</channel>
-    <channel lang="ru" xmltv_id="HollywoodHD.ru" site_id="142">Hollywood HD</channel>
-    <channel lang="ru" xmltv_id="IllusionPlus.ru" site_id="295">Illusion +</channel>
-    <channel lang="ru" xmltv_id="InvestigationDiscoveryRussia.ru" site_id="159">Investigation Discovery Rossiya</channel>
-    <channel lang="ru" xmltv_id="Istoriya.ru" site_id="261">Istoriya</channel>
-    <channel lang="ru" xmltv_id="Karusel.ru" site_id="184">Karusel International</channel>
-    <channel lang="ru" xmltv_id="Mezzo.fr" site_id="50">Mezzo</channel>
-    <channel lang="ru" xmltv_id="MoyaPlaneta.ru" site_id="256">Moya Planeta</channel>
-    <channel lang="ru" xmltv_id="Mult.ru" site_id="265">Mult</channel>
-    <channel lang="ru" xmltv_id="NationalGeographicRussia.ru" site_id="55">National Geographic Russia</channel>
-    <channel lang="ru" xmltv_id="NationalGeographicWildRussia.ru" site_id="33">National Geographic Wild Russia</channel>
-    <channel lang="ru" xmltv_id="Nauka.ru" site_id="258">Nauka</channel>
-    <channel lang="ru" xmltv_id="NickelodeonCIS.ru" site_id="54">Nickelodeon CIS</channel>
-    <channel lang="ru" xmltv_id="NickJrCIS.ru" site_id="171">Nick Jr CIS</channel>
-    <channel lang="ru" xmltv_id="NST.ru" site_id="214">NST</channel>
-    <channel lang="ru" xmltv_id="O.ru" site_id="302">Telekanal O!</channel>
-    <channel lang="ru" xmltv_id="Ohotnikirybolov.ru" site_id="174">Ohotnik i Rybolov</channel>
-    <channel lang="ru" xmltv_id="ParamountChannelRussia.ru" site_id="172">Paramount Channel Russia</channel>
-    <channel lang="ru" xmltv_id="ParamountComedyRussia.ru" site_id="173">Paramount Comedy Russia</channel>
-    <channel lang="ru" xmltv_id="PeretzInternational.ru" site_id="220">Peretz International</channel>
-    <channel lang="ru" xmltv_id="RBKTV.ru" site_id="90">RBK TV</channel>
-    <channel lang="ru" xmltv_id="RTRPlaneta.ru" site_id="63">RTR Planeta</channel>
-    <channel lang="ru" xmltv_id="RTVi.ru" site_id="30">RTVi Europe</channel>
-    <channel lang="ru" xmltv_id="Russia24.ru" site_id="153">Rossiya 24</channel>
-    <channel lang="ru" xmltv_id="RussiaK.ru" site_id="69">Rossiya K</channel>
-    <channel lang="ru" xmltv_id="RusskiyIllusion.ru" site_id="213">Russkiy Illusion</channel>
-    <channel lang="ru" xmltv_id="Sarafan.ru" site_id="268">Sarafan</channel>
-    <channel lang="ru" xmltv_id="TiJiRussia.ru" site_id="15">Tiji Russia</channel>
-    <channel lang="ru" xmltv_id="TNTMusic.ru" site_id="1345">TNT Music</channel>
-    <channel lang="ru" xmltv_id="TV1000ActionEast.ru" site_id="20">TV 1000 Action</channel>
-    <channel lang="ru" xmltv_id="TV1000East.ru" site_id="21">TV 1000 East</channel>
-    <channel lang="ru" xmltv_id="TV1000RusskoeKino.ru" site_id="25">TV 1000 Russkoe Kino</channel>
-    <channel lang="ru" xmltv_id="TVXXI.lv" site_id="18">TV XXI</channel>
-    <channel lang="ru" xmltv_id="ViasatExplore.se" site_id="22">Viasat Explore East</channel>
-    <channel lang="ru" xmltv_id="ViasatHistory.se" site_id="23">Viasat History</channel>
-    <channel lang="ru" xmltv_id="ViasatNature.se" site_id="77">Viasat Nature East</channel>
-    <channel lang="ru" xmltv_id="ViasatSport.ru" site_id="24">Viasat Sport East</channel>
-    <channel lang="ru" xmltv_id="Zagorodnyy.ru" site_id="1340">Zagorodny International</channel>
-    <channel lang="ru" xmltv_id="ZhivayaPlaneta.ru" site_id="263">Zhivaya Planeta</channel>
-    <!-- <channel lang="ru" xmltv_id="" site_id="5">Perviy kanal CIS</channel> -->
-  </channels>
-</site>
+<channels>
+  <channel site="magticom.ge" lang="en" xmltv_id="360TuneBox.nl" site_id="264">360TuneBox</channel>
+  <channel site="magticom.ge" lang="en" xmltv_id="BBCNewsEurope.uk" site_id="284">BBC News</channel>
+  <channel site="magticom.ge" lang="en" xmltv_id="CNBCEurope.uk" site_id="79">CNBC</channel>
+  <channel site="magticom.ge" lang="en" xmltv_id="CNNInternationalEurope.us" site_id="140">CNN</channel>
+  <channel site="magticom.ge" lang="en" xmltv_id="EroX.nl" site_id="2">Erox</channel>
+  <channel site="magticom.ge" lang="en" xmltv_id="FashionBox.nl" site_id="272">FashionBox</channel>
+  <channel site="magticom.ge" lang="en" xmltv_id="France24English.fr" site_id="161">France 24</channel>
+  <channel site="magticom.ge" lang="en" xmltv_id="MTV.ru" site_id="99">MTV Live HD</channel>
+  <channel site="magticom.ge" lang="en" xmltv_id="RT.ru" site_id="154">Russia Today</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="5">1 Канал</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="17">Зоопарk</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="36">Discovery Channel</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="51">MTV 00s</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="53">Bloomberg</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="68">Alt Info</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="70">Dorcel TV</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="71">Шансон TV</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="73">აფხაზეთის ხმა</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="89">NHK</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="91">ATV</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="95">RT Д</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="97">TLC</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="98">თრიალეთი TV</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="100">არტარეა</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="102">CBC</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="117">Охота и Рыбалка</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="128">Eurosport 1 HD</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="136">Inter +</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="146">Silk Way</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="164">TVRain</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="168">Music Box</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="169">Animal Planet</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="186">Телекафе</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="187">Музыка Первого</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="192">ბასტი–ბუბუ</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="193">Stereo+</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="198">სდასუ TV</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="201">TV 4</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="202">TV 24</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="203">Starvision</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="204">Mega TV</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="208">Mall TV</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="215">MMA-TV.com</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="217">Eurosport 2 HD</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="218">Уникум</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="229">Техно 24</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="239">პულსი</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="243">ТВ 8</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="270">Мир Сериала</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="273">Мама</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="276">Радость Моя</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="277">Бобёр</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="278">Music Box RU</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="279">Deutsche Welle</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="283">JimJam</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="289">O2 - ჟანგბადი</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="291">Драйв</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="293">Fuel HD</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="296">Детский Мир</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="297">Любимое Кино</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="298">Психология</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="299">Вопросы Ответы</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="300">Домашние Животные</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="303">Мир HD</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="304">Мир 24</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="305">FreeДом</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="307">EU Music</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="309">iConcerts HD</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="311">Здоровое ТВ</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="312">Усадьба</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="313">English Club</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="315">CBS Reality</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="316">РЕН ТВ</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="317">НТВ Мир</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="319">Ретро</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="320">Время</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="322">Fashion &amp; LifeStyle</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="327">DXXX</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="328">Playboy HD</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="329">Motorsport TV</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="333">ლილო ტვ</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="335">Nicktoons</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="336">PKTV</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="1337">Viju+ Megahit</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="1338">Viju+ Premiere</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="1339">Viju+ Comedy</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="1344">Охотник и Рыбалов</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="1346">მარნეული ტვ</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="54000">იმერვიზია</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="57000">გურია ტვ</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="58001">გირჩი</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="58003">ტვ საფერავი</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="58004">აგრო გარემო</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="58005">Tok TV</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="58006">რადიო იმედი</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="59000">ბათუმი ტვ</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="59001">ჭადრაკი TV</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="60000">მედია მონიტორინგი</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="61001">Поехали</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="62000">Adjara Sport 1</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="62001">Adjara Sport 2</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="65001">არგო</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="66000">meteo24</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="66001">მეცხრე ტალღა</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="66004">GMTV</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="68000">ერი მედია</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="68001">თანამგზავრი TV</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="68002">Euronews Georgia</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="68003">GMS</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="68004">Green TV - Chkhenkeli</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="68050">ქართული TV</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="68051">Tafu TV</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="68052">თავისუფალი არხი</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="68100">მეხუთე არხი</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="68350">ჯორჯიან თაიმსი</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="69350">E TV</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="70352">სეზონი ტვ</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="70353">BMG</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="71350">Black</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="71351">Red</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="71352">Sci-Fi</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="72350">Viju+ Serial</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="72351">Plan B</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="72352">Спортивный</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="72353">М Золотая Коллекция</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="74352">Espreso TV</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="75350">TV12-აჭარა</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="76350">კოლხეთი89</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="76351">ეგრისიTV</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="76352">TVC</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="76353">Сапфир</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="76354">ტვ პლიუსი</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="76356">სფერო TV</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="76358">ახალი ფორმულა</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="76359">Первый Вегетарианский</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="76360">პარლამენტის არხი</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="76361">4ever Music</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="76362">Sumiko</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="" site_id="76363">Кинеко</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="1TV.ge" site_id="3">პირველი არხი</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="2TV.ge" site_id="167">პირველი არხი/ტელესკოლა</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="Adjarasport1.ge" site_id="121">Setanta Sports 3</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="AjaraTV.ge" site_id="27">აჭარა</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="BrazzersTVEurope.us" site_id="206">Brazzers TV</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="ChveniMagti.ge" site_id="248">ჩვენი მაგთი</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="ComedyTV.ge" site_id="58000">კომედი არხი</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="Dardimandi.ge" site_id="199">დარდიმანდი</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="EnkiBenki.ge" site_id="83">ენკი-ბენკი</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="Ertsulovneba.ge" site_id="72">ერთსულოვნება</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="Formula.ge" site_id="63000">ფორმულა</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="GDSTV.ge" site_id="144">GDS HD</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="GurjaaniTV.ge" site_id="286">გურჯაანი</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="ImediTV.ge" site_id="4">იმედი</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="KavkasiaTV.ge" site_id="135">კავკასია</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="Maestro.ge" site_id="141">მაესტრო</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="MagtiHiti.ge" site_id="249">მაგთი ჰიტი</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="MagtiKino.ge" site_id="247">მაგთი კინო</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="MaraoTV.ge" site_id="137">მარაო</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="MtavariArkhi.ge" site_id="61000">მთავარი არხი</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="ObieqtiviTV.ge" site_id="85">ობიექტივი</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="PalitraNews.ge" site_id="87">Palitra News</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="PosTV.ge" site_id="65000">პოსTV</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="QartuliArkhi.ge" site_id="195">ქართული არხი</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="QualityChannel.ge" site_id="96">სამეფო არხი</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="RedlightHD.nl" site_id="7">Redlight HD</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="RioniTV.ge" site_id="197">რიონი</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="RugbyTV.ge" site_id="288">რაგბი ტვ</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="Rustavi2.ge" site_id="1">რუსთავი 2</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="SaperaviTV.ge" site_id="240">აგროTV</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="SetantaSportsGeorgia.ge" site_id="68351">Setanta Sports 1</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="SetantaSportsPlusGeorgia.ge" site_id="68352">Setanta Sports 2</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="SilkUniversal.ge" site_id="287">Silk უნივერსალი</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="TV25.ge" site_id="285">TV 25</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="TVPirveli.ge" site_id="207">TV პირველი</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="A1.ru" site_id="219">Amedia 1</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="A2.ru" site_id="156">Amedia 2</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="AmediaHit.ru" site_id="76">Amedia Hit HD</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="AmediaPremium.ru" site_id="122">Amedia Premium HD</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="Armenia1.am" site_id="84">Armenia 1</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="Avto24.ru" site_id="294">Авто 24</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="AzTV.az" site_id="101">AzTV</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="BollywoodHD.ru" site_id="260">Bollywood HD</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="Carousel.ru" site_id="184">Карусель</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="CartoonNetwork.ru" site_id="41">Cartoon Network</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="Cinema.ru" site_id="230">Синема</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="CurrentTimeTV.cz" site_id="280">Настоящее Время</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="DaVinci.de" site_id="225">Da Vinci</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="DiscoveryScience.ru" site_id="46">Discovery Science</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="DocuBox.nl" site_id="262">Docubox HD</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="Domashniy.ru" site_id="1336">Домашний</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="Domkino.ru" site_id="185">Дом Кино</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="DomkinoPremium.ru" site_id="269">Дом Кино ПремиумHD</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="DTX.ru" site_id="45">DTX</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="ducktv.sk" site_id="251">СТС Kids</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="EuronewsRussian.fr" site_id="52">EuroNews</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="Evrokino.ru" site_id="19">ЕвроКино</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="FastFunBox.nl" site_id="267">Fast Funbox HD</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="FightBox.nl" site_id="252">FightBox HD</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="FilmBox.ru" site_id="253">Filmbox</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="FilmBoxArthouse.nl" site_id="254">Filmbox Arthouse</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="Fox.ru" site_id="39">Fox</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="FridayInternational.ru" site_id="124">Пятница</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="GulliGirl.ru" site_id="16">Gulli Girl</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="HollywoodHD.ru" site_id="142">Hollywood HD</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="IllusionPlus.ru" site_id="295">Иллюзион+</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="InvestigationDiscovery.ru" site_id="159">ID Investigation Discovery</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="Istoriya.ru" site_id="261">История</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="Mezzo.fr" site_id="50">Mezzo</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="MoyaPlaneta.ru" site_id="256">Моя Планета</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="Mult.ru" site_id="265">Мульт</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="NationalGeographic.ru" site_id="55">Nat Geo</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="NationalGeographicWild.ru" site_id="33">Nat Geo Wild</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="Nauka.ru" site_id="258">Наука 2.0</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="NickelodeonCIS.ru" site_id="54">Nickelodeon HD</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="NickJr.ru" site_id="171">Nick Jr.</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="NST.ru" site_id="214">НСТ</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="O.ru" site_id="302">O!</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="Ohotnikirybolov.ru" site_id="174">ნადირობა და თევზაობა HD</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="ParamountComedy.ru" site_id="173">Comedy Central</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="PeretzInternational.ru" site_id="220">Перец</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="RBKTV.ru" site_id="90">РБК</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="RTRPlaneta.ru" site_id="63">Planeta RTR</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="RTVi.ru" site_id="30">RTVI</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="Russia24.ru" site_id="153">Россия 24</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="RussiaK.ru" site_id="69">Культура</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="RusskiyIllusion.ru" site_id="213">Русский Иллюзион</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="Sarafan.ru" site_id="268">Сарафан+</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="STSInternational.ru" site_id="65">CTC</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="TiJi.ru" site_id="15">TiJi</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="TNTMusic.ru" site_id="1345">THT Music</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="TVXXI.lv" site_id="18">ТВ-21</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="ViasatExplore.se" site_id="22">Viju Explore</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="ViasatHistory.se" site_id="23">Viju History</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="ViasatNature.se" site_id="77">Viju Nature</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="vijuPlusSport.ru" site_id="24">Viju+ Sport</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="vijuTV1000.ru" site_id="21">Viju TV1000</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="vijuTV1000action.ru" site_id="20">Viju TV1000 Action</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="vijuTV1000russkoe.ru" site_id="25">Viju TV1000 Russian</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="Zagorodnyy.ru" site_id="1340">Загородный</channel>
+  <channel site="magticom.ge" lang="ru" xmltv_id="ZhivayaPlaneta.ru" site_id="263">Живая Планета</channel>
+</channels>

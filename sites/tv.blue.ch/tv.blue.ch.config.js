@@ -1,5 +1,4 @@
 const axios = require('axios')
-const cheerio = require('cheerio')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 
@@ -34,7 +33,7 @@ module.exports = {
   },
   async channels() {
     const items = await axios
-      .get(`https://services.sg101.prd.sctv.ch/portfolio/tv/channels`)
+      .get('https://services.sg101.prd.sctv.ch/portfolio/tv/channels')
       .then(r => r.data)
       .catch(console.log)
 

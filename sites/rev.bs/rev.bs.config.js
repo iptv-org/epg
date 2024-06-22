@@ -58,7 +58,10 @@ function parseItems(content, channel) {
   let data
   try {
     data = JSON.parse(content)
-  } catch (err) {}
+  } catch (error) {
+    return []
+  }
+
   if (!data || data.status !== 'OK') return []
 
   return data.data.schedule[channel.site_id] || []

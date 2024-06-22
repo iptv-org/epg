@@ -35,7 +35,7 @@ module.exports = {
 }
 
 function parseContent(content) {
-  const [_, json] = content.match(/window.__EPG_REDUX_DATA__=(.*);\n/i) || [null, null]
+  const [, json] = content.match(/window.__EPG_REDUX_DATA__=(.*);\n/i) || [null, null]
   const data = JSON.parse(json)
 
   return data

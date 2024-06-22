@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/entertainment.ie/entertainment.ie.config.js --output=./sites/entertainment.ie/entertainment.ie.channels.xml
-// npx epg-grabber --config=sites/entertainment.ie/entertainment.ie.config.js --channels=sites/entertainment.ie/entertainment.ie.channels.xml --output=guide.xml
-
 const fs = require('fs')
 const path = require('path')
 const { parser, url } = require('./entertainment.ie.config.js')

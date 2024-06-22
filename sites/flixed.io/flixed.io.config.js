@@ -40,6 +40,6 @@ function parseStop(item) {
   return dayjs(item.endTime)
 }
 
-function parseItems(content, channel) {
+function parseItems(content) {
   return JSON.parse(content)
 }

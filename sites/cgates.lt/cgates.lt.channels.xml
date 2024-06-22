@@ -1,124 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<site site="cgates.lt">
-  <channels>
-    <channel lang="lt" xmltv_id="1Plus1.ua" site_id="1plus1">1+1</channel>
-    <channel lang="lt" xmltv_id="1Plus2.lv" site_id="1plus2">1+2</channel>
-    <channel lang="lt" xmltv_id="2TV.lt" site_id="2tv">2TV</channel>
-    <channel lang="lt" xmltv_id="366TV.ua" site_id="36-6-tv">36.6 TV</channel>
-    <channel lang="lt" xmltv_id="ArirangTV.kr" site_id="arirang-tv">Arirang TV</channel>
-    <channel lang="en" xmltv_id="BBCWorldNewsEurope.uk" site_id="bbc-world-news">BBC World News</channel>
-    <channel lang="lt" xmltv_id="BTV.lt" site_id="btv-hd">BTV HD</channel>
-    <channel lang="en" xmltv_id="BabyTV.uk" site_id="baby-tv">Baby TV</channel>
-    <channel lang="lt" xmltv_id="BalticumAuksinis.lt" site_id="balticum-auksinis">Balticum Auksinis</channel>
-    <channel lang="lt" xmltv_id="BalticumPlatinum.lt" site_id="balticum-platinum-hd">Balticum Platinum HD</channel>
-    <channel lang="lt" xmltv_id="BalticumTV.lt" site_id="balticum-tv">Balticum TV</channel>
-    <channel lang="en" xmltv_id="BloombergTVEurope.uk" site_id="bloomberg-television">Bloomberg Television</channel>
-    <channel lang="lt" xmltv_id="BlueHustler.nl" site_id="blue-hustler">Blue Hustler</channel>
-    <channel lang="en" xmltv_id="CBSRealityEMEA.uk" site_id="cbs-reality">CBS Reality</channel>
-    <channel lang="en" xmltv_id="CNBCEurope.uk" site_id="cnbc-europe">CNBC Europe</channel>
-    <channel lang="en" xmltv_id="CNNInternationalEurope.us" site_id="cnn-international">CNN International</channel>
-    <channel lang="lt" xmltv_id="CurrentTimeTV.cz" site_id="nastojashcheje-vremya">Nastojashcheje Vremya</channel>
-    <!-- <channel lang="lt" xmltv_id="" site_id="dtx-hd">DTX HD</channel> -->
-    <channel lang="lt" xmltv_id="Dacha.ua" site_id="dacha">Dacha</channel>
-    <channel lang="lt" xmltv_id="DelfiTV.ee" site_id="delfi-tv-hd">Delfi TV HD</channel>
-    <channel lang="en" xmltv_id="DiscoveryChannelLatvia.lv" site_id="discovery-channel-hd">Discovery Channel HD</channel>
-    <channel lang="en" xmltv_id="DocuBox.nl" site_id="docubox-hd">DocuBox HD</channel>
-    <channel lang="en" xmltv_id="Duo3.ee" site_id="sony-channel-hd">Duo 3 HD</channel>
-    <channel lang="en" xmltv_id="Duo6.ee" site_id="sony-turbo-hd">Duo 6 HD</channel>
-    <channel lang="lt" xmltv_id="Duo7.ee" site_id="duo-7">Kanal 7</channel>
-    <channel lang="lt" xmltv_id="DzukijosTV.lt" site_id="dzukijos-tv">Dzūkijos TV</channel>
-    <channel lang="en" xmltv_id="EpicDrama.se" site_id="epic-drama-hd">Epic Drama HD</channel>
-    <channel lang="en" xmltv_id="Eurochannel.uk" site_id="eurochannel">Eurochannel</channel>
-    <channel lang="en" xmltv_id="EuronewsRussian.fr" site_id="euronews-2">Euronews RU</channel>
-    <channel lang="en" xmltv_id="ExtremeSportsChannelEurope.nl" site_id="extreme-sports">Extreme Sports</channel>
-    <channel lang="en" xmltv_id="FashionTVEurope.fr" site_id="fashion-tv">Fashion TV</channel>
-    <channel lang="en" xmltv_id="FastFunBox.nl" site_id="fastfun-box-hd">Fast&amp;Fun Box HD</channel>
-    <channel lang="en" xmltv_id="FightSports.us" site_id="fight-sports-hd">Fight Sports HD</channel>
-    <channel lang="en" xmltv_id="FilmBoxArthouse.nl" site_id="filmbox-arthouse">FilmBox ArtHouse</channel>
-    <channel lang="lt" xmltv_id="FilmUADrama.ua" site_id="film-ua-drama">Film UA Drama</channel>
-    <channel lang="en" xmltv_id="Filmzone.ee" site_id="filmzone">FilmZone</channel>
-    <channel lang="lt" xmltv_id="FilmzonePlus.ee" site_id="filmzone-hd">FilmZone+ HD</channel>
-    <channel lang="en" xmltv_id="France24French.fr" site_id="france-24">France 24</channel>
-    <channel lang="en" xmltv_id="Gametoon.nl" site_id="game-toon-hd">Game Toon HD</channel>
-    <channel lang="lt" xmltv_id="GulliGirl.ru" site_id="gulli-girl">Gulli Girl</channel>
-    <channel lang="lt" xmltv_id="InfoTV.lt" site_id="info-tv-hd">Info TV HD</channel>
-    <channel lang="lt" xmltv_id="InterPlus.ua" site_id="inter-plus">Inter+</channel>
-    <channel lang="en" xmltv_id="JimJamEurope.uk" site_id="jim-jam">Jim Jam</channel>
-    <channel lang="en" xmltv_id="KidZoneMini.ee" site_id="kidzone-plus-hd">KidZone Mini HD</channel>
-    <channel lang="en" xmltv_id="KidZoneTV.ee" site_id="kidzone-tv">KidZone TV</channel>
-    <channel lang="lt" xmltv_id="KusKus.ua" site_id="kus-kus">Kus-Kus</channel>
-    <channel lang="lt" xmltv_id="LNK.lt" site_id="lnk-hd">LNK HD</channel>
-    <channel lang="lt" xmltv_id="LRTLituanica.lt" site_id="lrt-lituanica">LRT Lituanica</channel>
-    <channel lang="lt" xmltv_id="LRTPlius.lt" site_id="lrt-kultura-hd">LRT Plius HD</channel>
-    <channel lang="lt" xmltv_id="LRTTV.lt" site_id="lrt-televizija-hd">LRT Televizija HD</channel>
-    <channel lang="lt" xmltv_id="LietuvosRytasTV.lt" site_id="lietuvos-ryto-tv-hd">Lietuvos ryto TV HD</channel>
-    <channel lang="en" xmltv_id="LuxeTV.lu" site_id="luxe-tv-hd">Luxe.TV HD</channel>
-    <channel lang="en" xmltv_id="MTV00s.uk" site_id="vh1">MTV 00s</channel>
-    <channel lang="en" xmltv_id="MTVHitsEurope.uk" site_id="mtv-hits">MTV Hits</channel>
-    <channel lang="lt" xmltv_id="MarijampolesTV.lt" site_id="marijampoles-tv">Marijampolės TV</channel>
-    <channel lang="en" xmltv_id="Mezzo.fr" site_id="mezzo">Mezzo</channel>
-    <channel lang="en" xmltv_id="PlayboyTVEurope.us" site_id="playboy-tv">Playboy TV</channel>
-    <channel lang="en" xmltv_id="SetantaSports1Evraziya.ie" site_id="setanta-sports-hd">Setanta Sports 1 HD</channel>
-    <channel lang="lt" xmltv_id="SiauliuTV.lt" site_id="siauliu-televizija">Šiaulių televizija</channel>
-    <channel lang="en" xmltv_id="Smartzone.ee" site_id="smartzone-hd">Smartzone HD</channel>
-    <channel lang="lt" xmltv_id="Sport1.lt" site_id="sport-1-hd">Sport 1 HD</channel>
-    <channel lang="lt" xmltv_id="StarCinema.ua" site_id="star-cinema">Star Cinema</channel>
-    <channel lang="lt" xmltv_id="StarFamily.ua" site_id="star-family">Star Family</channel>
-    <channel lang="en" xmltv_id="TV1000ActionEast.ru" site_id="tv-1000-action">TV 1000 Action</channel>
-    <channel lang="en" xmltv_id="TV1000East.ru" site_id="tv-1000">TV 1000</channel>
-    <channel lang="en" xmltv_id="TV1000WorldKino.ru" site_id="tv-1000-world-kino">TV 1000 World Kino</channel>
-    <channel lang="lt" xmltv_id="TV1.lt" site_id="tv1-hd">TV1 HD</channel>
-    <channel lang="lt" xmltv_id="TV3Film.lv" site_id="tv-1000-premium-hd">TV3 Film HD</channel>
-    <channel lang="lt" xmltv_id="TV3Lithuania.lt" site_id="tv3-hd">TV3 HD</channel>
-    <channel lang="lt" xmltv_id="TV3Plus.lv" site_id="tv3-plus-hd">TV3 Plus HD</channel>
-    <channel lang="en" xmltv_id="TV3Sport.uk" site_id="viasat-sport-baltic-hd">TV3 Sport HD</channel>
-    <channel lang="en" xmltv_id="TV3Sport2.uk" site_id="tvplay-sports-plus-hd">TV3 Sport 2 HD</channel>
-    <channel lang="en" xmltv_id="TV3SportOpen.uk" site_id="tv3-sport-open-hd">TV3 Sport Open HD</channel>
-    <channel lang="lt" xmltv_id="TV6Lithuania.lt" site_id="tv6-hd">TV6 HD</channel>
-    <channel lang="lt" xmltv_id="TV8Lithuania.lt" site_id="tv8-hd">TV8 HD</channel>
-    <channel lang="lt" xmltv_id="TVBolt.ua" site_id="bolt">Bolt</channel>
-    <channel lang="lt" xmltv_id="TVPInfo.pl" site_id="tvp-info">TVP Info</channel>
-    <channel lang="lt" xmltv_id="TVPPolonia.pl" site_id="tvp-polonia">TVP Polonia</channel>
-    <channel lang="lt" xmltv_id="TiJiRussia.ru" site_id="tiji">Tiji</channel>
-    <channel lang="lt" xmltv_id="VIPComedy.ru" site_id="vip-comedy">ViP Comedy</channel>
-    <channel lang="en" xmltv_id="VividTouch.uk" site_id="vivid-touch">Vivid Touch</channel>
-    <!-- <channel lang="lt" xmltv_id="" site_id="amc">AMC</channel> -->
-    <!-- <channel lang="lt" xmltv_id="" site_id="animal-planet-hd">Animal Planet HD</channel> -->
-    <!-- <channel lang="lt" xmltv_id="" site_id="boomerang">Boomerang</channel> -->
-    <!-- <channel lang="lt" xmltv_id="" site_id="cartoon-network">Cartoon Network</channel> -->
-    <!-- <channel lang="lt" xmltv_id="" site_id="da-vinci-learning">Da Vinci Learning</channel> -->
-    <!-- <channel lang="lt" xmltv_id="" site_id="deutsche-welle">Deutsche Welle</channel> -->
-    <!-- <channel lang="lt" xmltv_id="" site_id="discovery-science-hd">Discovery Science HD</channel> -->
-    <!-- <channel lang="lt" xmltv_id="" site_id="euronews">Euronews HD</channel> -->
-    <!-- <channel lang="lt" xmltv_id="" site_id="eurosport-1-hd">Eurosport 1 HD</channel> -->
-    <!-- <channel lang="lt" xmltv_id="" site_id="eurosport-2-hd">Eurosport 2 HD</channel> -->
-    <!-- <channel lang="lt" xmltv_id="" site_id="film-ua-live">Film UA Live</channel> -->
-    <!-- <channel lang="lt" xmltv_id="" site_id="filmbox">FilmBox</channel> -->
-    <!-- <channel lang="lt" xmltv_id="" site_id="food-network">Food Network</channel> -->
-    <!-- <channel lang="lt" xmltv_id="" site_id="fox">FOX</channel> -->
-    <!-- <channel lang="lt" xmltv_id="" site_id="fox-hd">FOX HD</channel> -->
-    <!-- <channel lang="lt" xmltv_id="" site_id="fox-life">FOX Life</channel> -->
-    <!-- <channel lang="lt" xmltv_id="" site_id="hgtv-hd">HGTV HD</channel> -->
-    <!-- <channel lang="lt" xmltv_id="" site_id="history-channel-hd">History Channel HD</channel> -->
-    <!-- <channel lang="lt" xmltv_id="" site_id="id-xtra-hd">Investigation Discovery HD</channel> -->
-    <!-- <channel lang="lt" xmltv_id="" site_id="mtv-live-hd">MTV Live HD</channel> -->
-    <!-- <channel lang="lt" xmltv_id="" site_id="nat-geo-wild">Nat Geo Wild</channel> -->
-    <!-- <channel lang="lt" xmltv_id="" site_id="national-geographic-channel">National Geographic Channel</channel> -->
-    <!-- <channel lang="lt" xmltv_id="" site_id="national-geographic-hd">National Geographic HD</channel> -->
-    <!-- <channel lang="lt" xmltv_id="" site_id="nick-jr">Nick Jr.</channel> -->
-    <!-- <channel lang="lt" xmltv_id="" site_id="nick-toons">Nick Toons</channel> -->
-    <!-- <channel lang="lt" xmltv_id="" site_id="nickelodeon">Nickelodeon</channel> -->
-    <!-- <channel lang="lt" xmltv_id="" site_id="quiz-tv">Quiz TV</channel> -->
-    <!-- <channel lang="lt" xmltv_id="" site_id="rtl">RTL</channel> -->
-    <!-- <channel lang="lt" xmltv_id="" site_id="rtv-international">RTV International</channel> -->
-    <!-- <channel lang="lt" xmltv_id="" site_id="seimas-tiesiogiai">Seimas tiesiogiai</channel> -->
-    <!-- <channel lang="lt" xmltv_id="" site_id="tlc">TLC</channel> -->
-    <!-- <channel lang="lt" xmltv_id="" site_id="travel-channel-hd">Travel Channel HD</channel> -->
-    <!-- <channel lang="lt" xmltv_id="" site_id="tv7">TV7</channel> -->
-    <!-- <channel lang="lt" xmltv_id="" site_id="tvp-wilno">TVP Wilno</channel> -->
-    <!-- <channel lang="lt" xmltv_id="" site_id="ukraine-24">Ukraine 24</channel> -->
-    <!-- <channel lang="lt" xmltv_id="" site_id="viasat-explore-hd">Viasat Explore HD</channel> -->
-    <!-- <channel lang="lt" xmltv_id="" site_id="viasat-history-hd">Viasat History HD</channel> -->
-    <!-- <channel lang="lt" xmltv_id="" site_id="viasat-nature">Viasat Nature HD</channel> -->
-  </channels>
-</site>
+<channels>
+  <channel site="cgates.lt" lang="en" xmltv_id="BBCNewsEurope.uk" site_id="bbc-world-news">BBC World News</channel>
+  <channel site="cgates.lt" lang="en" xmltv_id="BloombergTVEurope.uk" site_id="bloomberg-television">Bloomberg Television</channel>
+  <channel site="cgates.lt" lang="en" xmltv_id="CNNInternationalEurope.us" site_id="cnn-international">CNN International</channel>
+  <channel site="cgates.lt" lang="en" xmltv_id="DiscoveryChannel.lv" site_id="discovery-channel-hd">Discovery Channel HD</channel>
+  <channel site="cgates.lt" lang="en" xmltv_id="DocuBox.nl" site_id="docubox-hd">DocuBox HD</channel>
+  <channel site="cgates.lt" lang="en" xmltv_id="Duo3.ee" site_id="sony-channel-hd">Duo 3 HD</channel>
+  <channel site="cgates.lt" lang="en" xmltv_id="Duo6.ee" site_id="sony-turbo-hd">Duo 6 HD</channel>
+  <channel site="cgates.lt" lang="en" xmltv_id="EpicDrama.se" site_id="epic-drama-hd">Epic Drama HD</channel>
+  <channel site="cgates.lt" lang="en" xmltv_id="Eurochannel.uk" site_id="eurochannel">Eurochannel</channel>
+  <channel site="cgates.lt" lang="en" xmltv_id="EuronewsRussian.fr" site_id="euronews-2">Euronews RU</channel>
+  <channel site="cgates.lt" lang="en" xmltv_id="ExtremeSportsChannel.nl" site_id="extreme-sports">Extreme Sports</channel>
+  <channel site="cgates.lt" lang="en" xmltv_id="FashionTVEurope.fr" site_id="fashion-tv">Fashion TV</channel>
+  <channel site="cgates.lt" lang="en" xmltv_id="FastFunBox.nl" site_id="fastfun-box-hd">Fast&amp;Fun Box HD</channel>
+  <channel site="cgates.lt" lang="en" xmltv_id="FightSports.us" site_id="fight-sports-hd">Fight Sports HD</channel>
+  <channel site="cgates.lt" lang="en" xmltv_id="FilmBoxArthouse.nl" site_id="filmbox-arthouse">FilmBox ArtHouse</channel>
+  <channel site="cgates.lt" lang="en" xmltv_id="Filmzone.ee" site_id="filmzone">FilmZone</channel>
+  <channel site="cgates.lt" lang="en" xmltv_id="France24French.fr" site_id="france-24">France 24</channel>
+  <channel site="cgates.lt" lang="en" xmltv_id="Gametoon.nl" site_id="game-toon-hd">Game Toon HD</channel>
+  <channel site="cgates.lt" lang="en" xmltv_id="Go3SportOpen.ee" site_id="tv3-sport-open-hd">Go3 Sport Open HD</channel>
+  <channel site="cgates.lt" lang="en" xmltv_id="KidZoneMax.ee" site_id="kidzone-tv">Kidzone Max</channel>
+  <channel site="cgates.lt" lang="en" xmltv_id="KidZoneMini.ee" site_id="kidzone-plus-hd">KidZone Mini HD</channel>
+  <channel site="cgates.lt" lang="en" xmltv_id="LuxeTV.lu" site_id="luxe-tv-hd">Luxe.TV HD</channel>
+  <channel site="cgates.lt" lang="en" xmltv_id="Mezzo.fr" site_id="mezzo">Mezzo</channel>
+  <channel site="cgates.lt" lang="en" xmltv_id="MTV00s.uk" site_id="vh1">MTV 00s</channel>
+  <channel site="cgates.lt" lang="en" xmltv_id="MTVHitsEurope.uk" site_id="mtv-hits">MTV Hits</channel>
+  <channel site="cgates.lt" lang="en" xmltv_id="" site_id="setanta-sports-hd">Setanta Sports 1 HD</channel>
+  <channel site="cgates.lt" lang="en" xmltv_id="Smartzone.ee" site_id="smartzone-hd">Smartzone HD</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="" site_id="animal-planet-hd">Animal Planet HD</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="" site_id="cartoon-network">Cartoon Network</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="" site_id="cartoonito">Cartoonito</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="" site_id="deutsche-welle">Deutsche Welle</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="" site_id="discovery-science-hd">Discovery Science HD</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="" site_id="dtx-hd">DTX HD</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="" site_id="euronews">Euronews HD</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="" site_id="eurosport-1-hd">Eurosport 1 HD</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="" site_id="eurosport-2-hd">Eurosport 2 HD</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="" site_id="filmbox">FilmBox</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="" site_id="food-network">Food Network</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="" site_id="fox-hd">FOX HD</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="" site_id="fox-life">FOX Life</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="" site_id="freedom-tv">Freedom TV</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="" site_id="geru-naujienu-televizija">Gerų naujienų televizija</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="" site_id="hgtv-hd">HGTV HD</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="" site_id="id-xtra-hd">Investigation Discovery HD</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="" site_id="inter">Inter</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="" site_id="kvartal-tv-hd">Kvartal TV HD</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="" site_id="mtv-live-hd">MTV Live HD</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="" site_id="national-geographic-hd">National Geographic HD</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="" site_id="nick-jr">Nick Jr.</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="" site_id="nick-toons">Nick Toons</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="" site_id="nickelodeon">Nickelodeon</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="" site_id="quiz-tv">Quiz TV</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="" site_id="rtl">RTL</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="" site_id="rtv-international">RTV International</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="" site_id="seimas-tiesiogiai">Seimas tiesiogiai HD</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="" site_id="setanta-sports-2">Setanta Sports 2 HD</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="" site_id="super-baltik-hd">Super Baltik HD</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="" site_id="super-plius-hd">Super+ HD</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="" site_id="tlc">TLC</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="" site_id="travel-channel-hd">Travel Channel HD</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="" site_id="tv7">TV7</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="" site_id="tvp-wilno">TVP Wilno</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="" site_id="ukraine-24">Ukraine 24</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="" site_id="viasat-explore-hd">Viasat Explore HD</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="" site_id="viasat-history-hd">Viasat History HD</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="" site_id="viasat-kino-comedy">Viasat Kino Comedy</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="" site_id="viasat-nature">Viasat Nature HD</channel>
+  <channel site="cgates.lt" lang="uk" xmltv_id="1Plus1.ua" site_id="1plus1">1+1</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="2TV.lt" site_id="2tv">2TV HD</channel>
+  <channel site="cgates.lt" lang="en" xmltv_id="ArirangTVHD.kr" site_id="arirang-tv">Arirang TV HD</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="BalticumAuksinis.lt" site_id="balticum-auksinis">Balticum Auksinis</channel>
+  <channel site="cgates.lt" lang="uk" xmltv_id="BalticumPlatinumHD.lt" site_id="balticum-platinum-hd">Balticum Platinum HD</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="BalticumTV.lt" site_id="balticum-tv">Balticum TV</channel>
+  <channel site="cgates.lt" lang="en" xmltv_id="BlueHustler.nl" site_id="blue-hustler">Blue Hustler</channel>
+  <channel site="cgates.lt" lang="uk" xmltv_id="Bolt.ua" site_id="bolt">Bolt</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="BTVHD.lt" site_id="btv-hd">BTV HD</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="CurrentTimeTV.cz" site_id="nastojashcheje-vremya">Nastojashcheje Vremya</channel>
+  <channel site="cgates.lt" lang="uk" xmltv_id="Dacha.ua" site_id="dacha">Dacha</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="DelfiTV.lt" site_id="delfi-tv-hd">Delfi TV HD</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="DzukijosTV.lt" site_id="dzukijos-tv">Dzūkijos TV</channel>
+  <channel site="cgates.lt" lang="uk" xmltv_id="FilmUADrama.ua" site_id="film-ua-drama">Film UA Drama</channel>
+  <channel site="cgates.lt" lang="en" xmltv_id="FilmzonePlus.ee" site_id="filmzone-hd">FilmZone+ HD</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="InfoTV.lt" site_id="info-tv-hd">Info TV HD</channel>
+  <channel site="cgates.lt" lang="ru" xmltv_id="Kanal7.ee" site_id="duo-7">Kanal 7</channel>
+  <channel site="cgates.lt" lang="uk" xmltv_id="KusKus.ua" site_id="kus-kus">Kus-Kus</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="LietuvosRytasTV.lt" site_id="lietuvos-ryto-tv-hd">Lietuvos ryto TV HD</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="LNKHD.lt" site_id="lnk-hd">LNK HD</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="LRTLituanica.lt" site_id="lrt-lituanica">LRT Lituanica</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="LRTPlius.lt" site_id="lrt-kultura-hd">LRT Plius HD</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="LRTTV.lt" site_id="lrt-televizija-hd">LRT Televizija HD</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="MarijampolesTV.lt" site_id="marijampoles-tv">Marijampolės TV</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="SiauliuTV.lt" site_id="siauliu-televizija">Šiaulių televizija</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="Sport1.lt" site_id="sport-1-hd">Sport 1 HD</channel>
+  <channel site="cgates.lt" lang="uk" xmltv_id="StarCinema.ua" site_id="star-cinema">Star Cinema</channel>
+  <channel site="cgates.lt" lang="ru" xmltv_id="StarFamily.ru" site_id="star-family">Star Family</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="TV1.lt" site_id="tv1-hd">TV1 HD</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="TV3.lt" site_id="tv3-hd">TV3 HD</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="TV3Plus.lv" site_id="tv3-plus-hd">TV3 Plus HD</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="TV6.lt" site_id="tv6-hd">TV6 HD</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="TV8.lt" site_id="tv8-hd">TV8 HD</channel>
+  <channel site="cgates.lt" lang="pl" xmltv_id="TVPInfo.pl" site_id="tvp-info">TVP Info HD</channel>
+  <channel site="cgates.lt" lang="pl" xmltv_id="TVPPolonia.pl" site_id="tvp-polonia">TVP Polonia</channel>
+</channels>

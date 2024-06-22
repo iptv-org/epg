@@ -9,7 +9,7 @@ module.exports = {
       'DD-MM-YYYY'
     )}`
   },
-  parser: function ({ content, channel, date }) {
+  parser: function ({ content }) {
     let programs = []
     const items = parseItems(content)
     items.forEach(item => {
@@ -24,6 +24,29 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels() {
+    const axios = require('axios')
+    const html = await axios
+      .get(`https://tvheute.at/part/channel-selection`)
+      .then(r => r.data)
+      .catch(console.log)
+
+    let channels = []
+
+    const $ = cheerio.load(html)
+    $('.sortable-list > li').each((i, el) => {
+      const name = $(el).find('label').text()
+      const site_id = $(el).find('input').attr('value')
+
+      channels.push({
+        lang: 'de',
+        site_id,
+        name
+      })
+    })
+
+    return channels
   }
 }
 

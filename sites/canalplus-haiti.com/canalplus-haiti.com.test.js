@@ -1,6 +1,3 @@
-// [Geo-blocked] npm run channels:parse --config=./sites/canalplus-haiti.com/canalplus-haiti.com.config.js --output=./sites/canalplus-haiti.com/canalplus-haiti.com.channels.xml
-// npx epg-grabber --config=sites/canalplus-haiti.com/canalplus-haiti.com.config.js --channels=sites/canalplus-haiti.com/canalplus-haiti.com.channels.xml --output=guide.xml --days=2
-
 const { parser, url } = require('./canalplus-haiti.com.config.js')
 const axios = require('axios')
 const dayjs = require('dayjs')
@@ -165,7 +162,8 @@ it('can parse response', done => {
 
 it('can handle empty guide', done => {
   parser({
-    content: `{"currentPage":{"displayTemplate":"error","BOName":"Page introuvable"},"title":"Page introuvable","text":"La page que vous demandez est introuvable. Si le problème persiste, vous pouvez contacter l'assistance de CANAL+/CANALSAT.","code":404}`
+    content:
+      '{"currentPage":{"displayTemplate":"error","BOName":"Page introuvable"},"title":"Page introuvable","text":"La page que vous demandez est introuvable. Si le problème persiste, vous pouvez contacter l\'assistance de CANAL+/CANALSAT.","code":404}'
   })
     .then(result => {
       expect(result).toMatchObject([])

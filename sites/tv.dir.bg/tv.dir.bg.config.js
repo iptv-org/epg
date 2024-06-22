@@ -35,8 +35,8 @@ module.exports = {
   },
   async channels() {
     const requests = [
-      axios.get(`https://tv.dir.bg/programata.php?t=0`),
-      axios.get(`https://tv.dir.bg/programata.php?t=1`)
+      axios.get('https://tv.dir.bg/programata.php?t=0'),
+      axios.get('https://tv.dir.bg/programata.php?t=1')
     ]
 
     const items = await Promise.all(requests)

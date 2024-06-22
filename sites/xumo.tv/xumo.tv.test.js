@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/xumo.tv/xumo.tv.config.js --output=./sites/xumo.tv/xumo.tv.channels.xml
-// npx epg-grabber --config=sites/xumo.tv/xumo.tv.config.js --channels=sites/xumo.tv/xumo.tv.channels.xml --output=guide.xml --days=2
-
 const { parser, url } = require('./xumo.tv.config.js')
 const fs = require('fs')
 const path = require('path')
@@ -19,7 +16,7 @@ jest.mock('axios', () => {
   }
 })
 
-const API_ENDPOINT = `https://valencia-app-mds.xumo.com/v2`
+const API_ENDPOINT = 'https://valencia-app-mds.xumo.com/v2'
 
 const date = dayjs.utc('2022-11-06', 'YYYY-MM-DD').startOf('d')
 const channel = {

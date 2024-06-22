@@ -16,7 +16,6 @@ module.exports = {
     }/ChannelSchedule?dateStart=${date.format('YYYY-MM-DD')}&dateEnd=${date.format(
       'YYYY-MM-DD'
     )}&timezone=0`
-    // return `https://rtm.glueapi.io/v3/epg/99/ChannelSchedule?dateStart=${date.format('YYYY-MM-DD')}&dateEnd=${date.format('YYYY-MM-DD')}&timezone=0`
   },
   parser: function ({ content }) {
     const programs = []

@@ -1,5 +1,3 @@
-// npx epg-grabber --config=sites/ruv.is/ruv.is.config.js --channels=sites/ruv.is/ruv.is.channels.xml --output=guide.xml --days=2
-
 const { parser, url } = require('./ruv.is.config.js')
 const fs = require('fs')
 const path = require('path')
@@ -32,7 +30,7 @@ it('can parse response', () => {
   expect(results[0]).toMatchObject({
     start: '2023-01-17T13:00:00.000Z',
     stop: '2023-01-17T13:10:00.000Z',
-    title: `Heimaleikfimi`,
+    title: 'Heimaleikfimi',
     description:
       'Góð ráð og æfingar sem tilvalið er að gera heima. Íris Rut Garðarsdóttir sjúkraþjálfari hefur umsjón með leikfiminni. e.',
     icon: 'https://d38kdhuogyllre.cloudfront.net/fit-in/480x/filters:quality(65)/hd_posters/91pvig-3p3hig.jpg'

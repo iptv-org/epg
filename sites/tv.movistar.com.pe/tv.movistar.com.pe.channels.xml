@@ -1,243 +1,285 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<site site="tv.movistar.com.pe">
-  <channels>
-    <channel lang="es" xmltv_id="AmericaTelevision.pe" site_id="lch2208">AMERICA TELEVISION</channel>
-    <channel lang="es" xmltv_id="Antena3Internacional.es" site_id="lch6292">ANTENA 3</channel>
-    <channel lang="es" xmltv_id="ATV.pe" site_id="lch2211">ATV</channel>
-    <channel lang="es" xmltv_id="ATVPlus.pe" site_id="lch2220">ATV+</channel>
-    <channel lang="es" xmltv_id="AzCinema.mx" site_id="lch5706">AZ Cinema HD</channel>
-    <channel lang="es" xmltv_id="AzCorazon.mx" site_id="lch6314">AZ CORAZON</channel>
-    <channel lang="es" xmltv_id="AzMundo.mx" site_id="lch6315">AZ MUNDO</channel>
-    <channel lang="es" xmltv_id="CanalJ.pe" site_id="lch5667">CANAL J</channel>
-    <channel lang="es" xmltv_id="CanalN.pe" site_id="lch2169">CANAL N</channel>
-    <channel lang="es" xmltv_id="CongresoTV.pe" site_id="lch6310">CONGRESO</channel>
-    <channel lang="es" xmltv_id="ElTiempoTV.co" site_id="lch5660">EL TIEMPO</channel>
-    <channel lang="es" xmltv_id="Eurochannel.uk" site_id="lch6290">EUROCHANNEL</channel>
-    <channel lang="es" xmltv_id="EuropaEuropa.ar" site_id="lch5707">Europa Europa HD</channel>
-    <channel lang="es" xmltv_id="ExitosaTV.pe" site_id="lch6311">EXITOSA TV</channel>
-    <channel lang="es" xmltv_id="GlobalTV.pe" site_id="lch6309">GLOBAL TV</channel>
-    <channel lang="es" xmltv_id="GolPeru.pe" site_id="lch2425">GOLPERU</channel>
-    <channel lang="es" xmltv_id="JusticiaTV.pe" site_id="lch2307">PODER JUDICIAL</channel>
-    <channel lang="es" xmltv_id="KanalDDrama.tr" site_id="lch3964">KANAL D DRAMA</channel>
-    <channel lang="es" xmltv_id="KDrama.id" site_id="lch6295">K-DRAMA</channel>
-    <channel lang="es" xmltv_id="Latina.pe" site_id="lch2207">LATINA</channel>
-    <channel lang="es" xmltv_id="LollyKids.uk" site_id="lch5653">LOLLY KIDS</channel>
-    <channel lang="es" xmltv_id="LoveNature.ca" site_id="lch5703">Love Nature HD</channel>
-    <channel lang="es" xmltv_id="MovistarPlus.pe" site_id="lch3302">M PLUS</channel>
-    <channel lang="es" xmltv_id="PanamericanaTV.pe" site_id="lch2209">PANAMERICANA TELEVISION</channel>
-    <channel lang="es" xmltv_id="PasionesLatinAmerica.us" site_id="lch5701">Pasiones HD</channel>
-    <channel lang="es" xmltv_id="PaxTV.pe" site_id="lch5611">PAXTV</channel>
-    <channel lang="es" xmltv_id="PXSports.mx" site_id="lch6293">PX SPORTS</channel>
-    <channel lang="es" xmltv_id="QualityChannel.ge" site_id="lch2463">QUALITY CHANNEL</channel>
-    <channel lang="es" xmltv_id="RaiItaliaAmerica.it" site_id="lch6291">RAI ITALIA</channel>
-    <channel lang="es" xmltv_id="RPPTV.pe" site_id="lch2212">RPP TV</channel>
-    <channel lang="es" xmltv_id="Sextreme.br" site_id="lch2391">SEXTREME</channel>
-    <channel lang="es" xmltv_id="Tooncast.us" site_id="lch5652">TOONCAST</channel>
-    <channel lang="es" xmltv_id="Toros.es" site_id="lch2301">TOROS TV</channel>
-    <channel lang="es" xmltv_id="TVChile.cl" site_id="lch2377">TV CHILE</channel>
-    <channel lang="es" xmltv_id="TVPeru.pe" site_id="lch2210">TV PERU</channel>
-    <channel lang="es" xmltv_id="TVPeruNoticias.pe" site_id="lch2214">TV PERU 7.3</channel>
-    <channel lang="es" xmltv_id="UCL.uy" site_id="lch5659">UCL</channel>
-    <channel lang="es" xmltv_id="UniversitarioTV.pe" site_id="lch5657">Universitario TV</channel>
-    <channel lang="es" xmltv_id="USMPTV.pe" site_id="lch4105">USMP TV</channel>
-    <channel lang="es" xmltv_id="Venus.ar" site_id="lch2390">VENUS</channel>
-    <channel lang="es" xmltv_id="WillaxTV.pe" site_id="lch2219">WILLAX</channel>
-    <channel lang="es" xmltv_id="WOBI.ar" site_id="lch6300">WOBI</channel>
-    <channel lang="es" xmltv_id="ZeeMundo.in" site_id="lch3965">ZEE MUNDO</channel>
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2171">ESPN INTERNACIONAL</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2174">ESPN 3</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2188">Cartoon Network HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2189">TNT HD OTT</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2204">TV PERU HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2205">ATV HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2215">GLOBAL</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2218">LA TELE PERU</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2221">TNT</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2222">TNT SERIES</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2224">TNT SERIES HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2225">SONY</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2226">WARNER CHANNEL</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2227">STAR CHANNEL</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2228">AXN</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2229">UNIVERSAL CHANNEL</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2230">TBS VERY FUNNY</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2232">FX</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2236">INVESTIGATION DISCOVERY</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2237">TRU TV</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2238">TCM</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2239">SPACE</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2241">PARAMOUNT</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2242">I-SAT</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2245">STUDIO UNIVERSAL</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2247">EUROCHANNEL</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2249">CINECANAL</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2250">CINEMAX</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2251">HBO</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2252">HBO SIGNATURE</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2253">HBO FAMILY ESTE</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2254">HBO 2</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2255">HBO MUNDI</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2257">HBO PLUS ESTE</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2259">HBO XTREME</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2268">DISCOVERY CHANNEL</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2269">HISTORY CHANNEL</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2270">NAT GEO</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2271">HISTORY 2</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2273">DISCOVERY SCIENCE</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2275">DISCOVERY TURBO</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2277">TLC</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2278">HOME &amp; HEALTH</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2281">GLITZ</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2284">CARTOON NETWORK</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2285">DISCOVERY KIDS</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2287">CARTOONITO</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2288">NICKELODEON</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2290">ANIMAL PLANET</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2291">DISNEY JUNIOR</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2294">FOX SPORTS PREMIUM</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2295">FOX SPORTS 2</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2296">FOX SPORTS 3</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2297">ESPN 2</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2298">GOL TV</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2299">GOLF CHANNEL</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2300">JCP</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2303">CNN ESPAÑOL</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2304">CNN INTERNACIONAL</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2305">FOX NEWS</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2308">CAPITAL TV</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2311">ENLACE TBN</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2312">ORBE 21</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2313">MTV</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2314">MTV HITS</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2315">HTV</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2318">CANAL N HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2319">GOLPERU HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2320">STAR CHANNEL HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2322">WARNER CHANNEL HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2325">FX HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2327">ID HD - INVESTIGATION DISCOVERY HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2328">COMEDY CENTRAL HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2330">SPACE HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2333">PARAMOUNT HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2335">CINECANAL HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2336">CINEMAX HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2339">ESPN 4</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2340">FOX SPORTS 2 HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2341">FOX SPORTS 3 HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2342">GOL TV HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2343">DISCOVERY HD THEATER</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2344">DISCOVERY HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2347">NAT GEO HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2349">TRU TV HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2351">FASHION ONE HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2352">ATRES SERIES HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2353">DISCOVERY WORLD HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2354">HOME &amp; HEALTH HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2356">DISCOVERY KIDS HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2357">DISNEY CHANNEL HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2358">NICK HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2359">MTV HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2360">MTV 00S</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2362">HBO HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2363">HBO POP</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2365">HBO XTREME HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2366">HBO 2 HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2374">GLOBO TV</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2375">TELEFE</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2376">EL TRECE</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2378">TELESUR</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2379">NUESTRA TELE</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2380">TVE</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2381">ANTENA3</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2382">DEUTSCHE WELLE</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2383">RAI TV</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2384">TV5</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2385">NHK</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2386">CCTV</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2387">ARTV</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2388">VOA</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2389">PLAYBOY</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2392">PLAYBOY HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2424">A&amp;E</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2448">ESPN 2 HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2459">RPP HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2461">HBO HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2491">BABY TV</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2492">EL GOURMET HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2770">BBC WORLD NEWS</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2775">ESPN HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2776">ESPN 3 HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2796">SPACE REGIONAL DTH LIVE</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2812">GOL PERU HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch2813">ESPN EXTRA HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch3091">ANIMAL PLANET HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch3102">TNT HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch3297">M PLUS HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch3298">M DEPORTES HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch3300">M DEPORTES</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch3325">NICK JR OTT</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch3357">CABLE NOTICIAS</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch3446">HBO PLUS ESTE HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch3447">HBO SIGNATURE HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch3448">CAPITAL TV HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch3451">ATV+ HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch3489">NAT GEO HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch3661">TEST01</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch3662">TEST02</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch3947">TBS VERY FUNNY HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch3952">ESPN 2</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch4007">DISCOVERY HOME &amp; GARDEN</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch4038">FOOD NETWORK</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch4128">MOVISTAR EVENTOS 2</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch5483">MOVISTAR EVENTOS</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch5593">Food Network HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch5598">INFO STAR PREMIUM</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch5601">VE PLUS TV</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch5602">HGTV</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch5605">NICKELODEON</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch5606">DISNEY</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch5608">FRANCE24</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch5610">EWTN</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch5612">MOVISTAR EVENTOS HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch5613">TV PERÚ 7.3 HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch5615">ESPN 4 HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch5616">HGTV HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch5618">CARTOONITO HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch5619">CANAL J HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch5620">RUSIA TODAY HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch5621">TVN CHILE</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch5622">RUSIA TODAY</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch5623">CLOVER</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch5643">QUIALITY CHANNEL</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch5649">CLOVER</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch5650">CLOVER</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch5651">DISNEY JUNIOR</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch5654">Alianza Lima TV</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch5655">Alianza Lima TV</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch5664">Alianza TV</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch5665">U TV</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch5666">TV PERU HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch5699">AMC HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch5700">Star TVE HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch5702">Film &amp; Arts HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch5704">Via X Esports HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch5705">Mas Chic HD</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch6289">EWTN</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch6294">TVE</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch6296">I-SAT</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch6297">GLITZ</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch6298">HTV</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch6299">TV5</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch6301">NUESTRA TELE</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch6302">FRANCE24</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch6303">TV GLOBO</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch6304">TVN CHILE</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch6305">VE PLUS</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch6306">TELEFÉ INTERNACIONAL</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch6307">ATV+</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch6308">BABY TV</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch6313">TRU TV</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch6316">ENLACE TBN</channel> -->
-    <!-- <channel lang="es" xmltv_id="" site_id="lch6317">TBS VERY FUNNY</channel> -->
-  </channels>
-</site>
+<channels>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2171">ESPN INTERNACIONAL</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2174">ESPN 3</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2188">Cartoon Network HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2189">TNT HD OTT</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2201">LATINA HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2202">AMERICA TELEVISION HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2203">PANAMERICANA TELEVISION HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2204">TV PERU HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2205">ATV HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2215">GLOBAL</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2218">LA TELE PERU</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2221">TNT</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2222">TNT SERIES</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2224">TNT SERIES HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2225">SONY</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2226">WARNER CHANNEL</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2227">STAR CHANNEL</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2228">AXN</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2229">UNIVERSAL CHANNEL</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2232">FX</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2236">INVESTIGATION DISCOVERY</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2237">TRU TV</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2238">TCM</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2239">SPACE</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2241">PARAMOUNT</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2242">I-SAT</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2245">STUDIO UNIVERSAL</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2247">EUROCHANNEL</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2249">CINECANAL</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2250">CINEMAX</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2251">HBO</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2252">HBO SIGNATURE</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2253">HBO FAMILY ESTE</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2254">HBO 2</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2255">HBO MUNDI</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2257">HBO PLUS ESTE</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2259">HBO XTREME</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2268">DISCOVERY CHANNEL</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2269">HISTORY CHANNEL</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2270">NAT GEO</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2271">HISTORY 2</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2273">DISCOVERY SCIENCE</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2275">DISCOVERY TURBO</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2277">TLC</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2278">HOME &amp; HEALTH</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2281">GLITZ</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2284">CARTOON NETWORK</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2285">DISCOVERY KIDS</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2287">CARTOONITO</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2288">NICKELODEON</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2290">ANIMAL PLANET</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2291">DISNEY JUNIOR</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2294">FOX SPORTS PREMIUM</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2295">FOX SPORTS 2</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2296">FOX SPORTS 3</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2297">ESPN 2</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2298">GOL TV</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2299">GOLF CHANNEL</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2300">JCP</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2302">WOBI</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2303">CNN ESPAÑOL</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2304">CNN INTERNACIONAL</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2305">FOX NEWS</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2308">CAPITAL TV</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2311">ENLACE TBN</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2312">ORBE 21</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2313">MTV</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2314">MTV HITS</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2315">HTV</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2318">CANAL N HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2319">GOLPERU HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2320">STAR CHANNEL HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2322">WARNER CHANNEL HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2325">FX HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2327">ID HD - INVESTIGATION DISCOVERY HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2328">COMEDY CENTRAL HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2330">SPACE HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2333">PARAMOUNT HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2335">CINECANAL HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2336">CINEMAX HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2339">ESPN 4</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2340">FOX SPORTS 2 HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2341">FOX SPORTS 3 HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2342">GOL TV HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2343">DISCOVERY THEATER HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2344">DISCOVERY HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2347">NAT GEO HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2349">TRU TV HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2351">FASHION ONE HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2352">ATRES SERIES HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2353">DISCOVERY WORLD HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2354">HOME &amp; HEALTH HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2356">DISCOVERY KIDS HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2357">DISNEY CHANNEL HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2358">NICK HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2359">MTV HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2360">MTV 00S</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2374">GLOBO TV</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2375">TELEFE</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2376">EL TRECE</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2378">TELESUR</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2379">NUESTRA TELE</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2380">TVE</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2381">ANTENA3</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2382">DEUTSCHE WELLE</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2383">RAI TV</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2384">TV5</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2385">NHK</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2386">CCTV</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2387">ARTV</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2388">VOA</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2389">PLAYBOY</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2392">PLAYBOY HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2400">CONGRESO</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2424">A&amp;E</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2448">ESPN 2 HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2459">RPP HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2461">HBO HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2491">BABY TV</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2492">EL GOURMET HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2770">BBC WORLD NEWS</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2775">ESPN HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2776">ESPN 3 HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2796">SPACE REGIONAL DTH LIVE</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2812">GOL PERU</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch2813">ESPN EXTRA HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch3091">ANIMAL PLANET HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch3102">TNT HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch3297">M PLUS HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch3298">M DEPORTES HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch3300">M DEPORTES</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch3325">NICK JR OTT</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch3357">CABLE NOTICIAS</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch3446">HBO PLUS ESTE HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch3447">HBO SIGNATURE HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch3448">CAPITAL TV HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch3451">ATV+ HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch3489">NAT GEO HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch3661">TEST01</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch3662">TEST02</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch3753">CANAL J</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch3952">ESPN 2</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch4007">DISCOVERY HOME &amp; GARDEN</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch4038">FOOD NETWORK</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch4128">MOVISTAR EVENTOS 2</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch5483">MOVISTAR EVENTOS</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch5593">Food Network HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch5594">Exitosa TV</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch5595">Exitosa TV</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch5598">INFO STAR PREMIUM</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch5600">AZ CORAZON</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch5601">VE PLUS TV</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch5602">HGTV</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch5603">AZ MUNDO</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch5605">NICKELODEON</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch5606">DISNEY</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch5607">PX SPORTS</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch5608">FRANCE24</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch5609">JUSTICIA TV</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch5610">EWTN</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch5612">MOVISTAR EVENTOS HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch5613">TV PERÚ 7.3 HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch5614">WILLAX TV HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch5615">ESPN 4 HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch5616">HGTV HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch5618">CARTOONITO HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch5619">CANAL J HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch5620">RUSIA TODAY HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch5621">TVN CHILE</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch5622">RUSIA TODAY</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch5623">CLOVER</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch5624">UCL</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch5625">TOONCAST</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch5626">LOLLY KIDS</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch5643">QUIALITY CHANNEL</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch5649">CLOVER</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch5650">CLOVER</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch5651">DISNEY JUNIOR</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch5654">Alianza Lima TV</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch5655">Alianza Lima TV</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch5656">Universitario TV</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch5658">UCL</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch5664">Alianza TV</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch5665">U TV</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch5666">TV PERU HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch5699">AMC HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch5700">Star TVE HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch5702">Film &amp; Arts HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch5704">Via X Esports HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch5705">Mas Chic HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6289">EWTN</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6294">TVE</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6296">I-SAT</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6297">GLITZ</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6298">HTV</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6299">TV5</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6301">NUESTRA TELE</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6302">FRANCE24</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6303">TV GLOBO</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6304">TVN CHILE</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6305">VE PLUS</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6306">Telefe Internacional</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6307">ATV+</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6308">BABY TV</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6312">JUSTICIA TV</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6313">ADULT SWIM</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6316">ENLACE TBN</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6468">TV PERU 7.3</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6469">IPe</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6470">VIVA TV</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6471">La Tele</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6472">JCP-JNE</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6473">SOL TV</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6474">QUALITY TV</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6475">JN19 TELEJUAN</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6476">NUEVO TIEMPO</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6477">PAXTV</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6478">DEUTSCHE WELLE</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6479">CCTV</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6480">VOA</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6489">TNT NOVELAS HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6490">HBO</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6491">HBO 2</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6492">HBO PLUS</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6493">HBO FAMILY</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6494">HBO POP</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6495">HBO SIGNATURE</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6496">HBO XTREME</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6507">CTC</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6508">RTV EL DIARIO</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6509">ATV SUR</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6510">UNSA TV</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6513">NHK</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6517">las estrellas</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6518">Tl Novelas</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6519">Nativa Tv</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6526">Amazon</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6527">Netflix</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6528">Disney+</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6529">YouTube</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6530">Youtube Kids</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="" site_id="lch6531">Star+</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="AmericaTelevision.pe" site_id="lch2208">AMERICA TELEVISION</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="Antena3Internacional.es" site_id="lch6292">ANTENA 3</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="ATV.pe" site_id="lch2211">ATV</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="ATVPlus.pe" site_id="lch2220">ATV+</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="CanalJ.pe" site_id="lch5667">CANAL J</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="CanalN.pe" site_id="lch2169">CANAL N</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="CongresoTV.pe" site_id="lch6310">CONGRESO</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="ElTiempoTV.co" site_id="lch5660">EL TIEMPO</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="Eurochannel.uk" site_id="lch6290">EUROCHANNEL</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="EuropaEuropa.ar" site_id="lch5707">Europa Europa HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="ExitosaTV.pe" site_id="lch6311">EXITOSA TV</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="GlobalTV.pe" site_id="lch6309">GLOBAL TV</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="GolPeru.pe" site_id="lch2425">GOLPERU</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="JusticiaTV.pe" site_id="lch2307">PODER JUDICIAL</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="KanalDDrama.tr" site_id="lch3964">KANAL D DRAMA</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="KDrama.id" site_id="lch6295">K-DRAMA</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="Latina.pe" site_id="lch2207">LATINA</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="LollyKids.uk" site_id="lch5653">LOLLY KIDS</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="LoveNature.ca" site_id="lch5703">Love Nature HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="MovistarPlus.pe" site_id="lch3302">M PLUS</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="PanamericanaTV.pe" site_id="lch2209">PANAMERICANA TELEVISION</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="PasionesLatinAmerica.us" site_id="lch5701">Pasiones HD</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="PaxTV.pe" site_id="lch5611">PAXTV</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="PXSports.mx" site_id="lch6293">PX SPORTS</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="QualityChannel.ge" site_id="lch2463">QUALITY CHANNEL</channel>
+  <channel site="tv.movistar.com.pe" lang="it" xmltv_id="RaiItaliaAmerica.it" site_id="lch6291">RAI ITALIA</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="RPPTV.pe" site_id="lch2212">RPP TV</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="Sextreme.br" site_id="lch2391">SEXTREME</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="Tooncast.us" site_id="lch5652">TOONCAST</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="Toros.es" site_id="lch2301">TOROS TV</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="TVChile.cl" site_id="lch2377">TV CHILE</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="TVPeru.pe" site_id="lch2210">TV PERU</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="TVPeruNoticias.pe" site_id="lch2214">TV PERU 7.3</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="UCL.uy" site_id="lch5659">UCL</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="UniversitarioTV.pe" site_id="lch5657">Universitario TV</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="USMPTV.pe" site_id="lch4105">USMP TV</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="Venus.ar" site_id="lch2390">VENUS</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="WillaxTV.pe" site_id="lch2219">WILLAX</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="WOBI.ar" site_id="lch6300">WOBI</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="ZeeMundo.in" site_id="lch3965">ZEE MUNDO</channel>
+</channels>

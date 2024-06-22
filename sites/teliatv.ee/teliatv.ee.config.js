@@ -6,9 +6,7 @@ module.exports = {
   days: 2,
   url({ date, channel }) {
     const [lang, channelId] = channel.site_id.split('#')
-    return `https://api.teliatv.ee/dtv-api/3.2/${lang}/epg/guide?channelIds=${
-      channelId
-    }&relations=programmes&images=webGuideItemLarge&startAt=${date
+    return `https://api.teliatv.ee/dtv-api/3.2/${lang}/epg/guide?channelIds=${channelId}&relations=programmes&images=webGuideItemLarge&startAt=${date
       .add(1, 'd')
       .format('YYYY-MM-DDTHH:mm')}&startAtOp=lte&endAt=${date.format(
       'YYYY-MM-DDTHH:mm'
@@ -37,7 +35,7 @@ module.exports = {
     return Object.values(data.channels).map(item => {
       return {
         lang,
-        site_id: item.id,
+        site_id: `${lang}#${item.id}`,
         name: item.title
       }
     })

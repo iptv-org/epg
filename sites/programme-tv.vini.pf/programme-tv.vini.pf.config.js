@@ -1,7 +1,7 @@
 const dayjs = require('dayjs')
 const axios = require('axios')
 
-const apiUrl = `https://programme-tv.vini.pf/programmesJSON`
+const apiUrl = 'https://programme-tv.vini.pf/programmesJSON'
 
 module.exports = {
   site: 'programme-tv.vini.pf',
@@ -9,7 +9,6 @@ module.exports = {
   url: apiUrl,
   request: {
     method: 'POST',
-    timeout: 30000,
     data({ date }) {
       return {
         dateDebut: `${date.subtract(10, 'h').format('YYYY-MM-DDTHH:mm:ss')}-10:00`
@@ -44,18 +43,20 @@ module.exports = {
 
     return programs
   },
-  async channels({ country, lang }) {
+  async channels() {
     const data = await axios
-      .post(`https://programme-tv.vini.pf/programmesJSON`)
+      .post('https://programme-tv.vini.pf/programmesJSON')
       .then(r => r.data)
       .catch(console.log)
 
     return data.programmes.map(item => {
-      const channelId = item.url.replace('/', '')
+      const site_id = item.url.replace('/', '')
+      const name = site_id.replace(/\-/gi, ' ')
+
       return {
         lang: 'fr',
-        site_id: channelId,
-        name: channelId
+        site_id,
+        name
       }
     })
   }

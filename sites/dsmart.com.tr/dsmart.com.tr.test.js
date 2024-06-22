@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/dsmart.com.tr/dsmart.com.tr.config.js --output=./sites/dsmart.com.tr/dsmart.com.tr.channels.xml
-// npx epg-grabber --config=sites/dsmart.com.tr/dsmart.com.tr.config.js --channels=sites/dsmart.com.tr/dsmart.com.tr.channels.xml --output=guide.xml --timeout=30000 --days=2
-
 const { parser, url } = require('./dsmart.com.tr.config.js')
 const dayjs = require('dayjs')
 const fs = require('fs')
@@ -35,7 +32,8 @@ it('can parse response', () => {
     stop: '2023-01-15T23:45:00.000Z',
     title: 'Bizi Ayıran Her Şey',
     category: 'sinema/genel',
-    description: `Issızlığın ortasında yer alan orta sınıf bir evde bir anne kız yaşamaktadır. Çevrelerindeki taşları insanlarla yaşadıkları çatışmalar, anne-kızın hayatını olumsuz yönde etkilemektedir. Kızının ansızın ortadan kaybolması, bu çatışmaların seviyesini artıracak ve anne, kızını bulmak için her türlü yola başvuracaktır.`
+    description:
+      'Issızlığın ortasında yer alan orta sınıf bir evde bir anne kız yaşamaktadır. Çevrelerindeki taşları insanlarla yaşadıkları çatışmalar, anne-kızın hayatını olumsuz yönde etkilemektedir. Kızının ansızın ortadan kaybolması, bu çatışmaların seviyesini artıracak ve anne, kızını bulmak için her türlü yola başvuracaktır.'
   })
 
   expect(results[1]).toMatchObject({
@@ -43,7 +41,8 @@ it('can parse response', () => {
     stop: '2023-01-16T01:30:00.000Z',
     title: 'Pixie',
     category: 'sinema/genel',
-    description: `Annesinin intikamını almak isteyen Pixie, dahiyane bir soygun planlar. Fakat işler planladığı gibi gitmeyince kendini İrlanda’nın vahşi gangsterleri tarafından kovalanan iki adamla birlikte kaçarken bulur.`
+    description:
+      'Annesinin intikamını almak isteyen Pixie, dahiyane bir soygun planlar. Fakat işler planladığı gibi gitmeyince kendini İrlanda’nın vahşi gangsterleri tarafından kovalanan iki adamla birlikte kaçarken bulur.'
   })
 
   expect(results[12]).toMatchObject({
@@ -51,7 +50,8 @@ it('can parse response', () => {
     stop: '2023-01-16T22:30:00.000Z',
     title: 'Seberg',
     category: 'sinema/genel',
-    description: `Başrolünde ünlü yıldız Kristen Stewart’ın yer aldığı politik gerilim, 1960’ların sonunda insan hakları aktivisti Hakim Jamal ile yaşadığı politik ve romantik ilişki sebebiyle FBI tarafından hedef alınan, Fransız Yeni Dalgası’nın sevilen yüzü ve Serseri Aşıklar’ın yıldızı Jean Seberg’ün çarpıcı hikayesini anlatıyor.`
+    description:
+      'Başrolünde ünlü yıldız Kristen Stewart’ın yer aldığı politik gerilim, 1960’ların sonunda insan hakları aktivisti Hakim Jamal ile yaşadığı politik ve romantik ilişki sebebiyle FBI tarafından hedef alınan, Fransız Yeni Dalgası’nın sevilen yüzü ve Serseri Aşıklar’ın yıldızı Jean Seberg’ün çarpıcı hikayesini anlatıyor.'
   })
 })
 

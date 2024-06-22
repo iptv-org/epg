@@ -28,7 +28,7 @@ module.exports = {
   },
   async channels() {
     const data = await axios
-      .get(`https://dev.mytvback.com/api/19/default/hu-HU/content/CHA_LIVE_MYTV2_HU/children`)
+      .get('https://dev.mytvback.com/api/19/default/hu-HU/content/CHA_LIVE_MYTV2_HU/children')
       .then(r => r.data)
       .catch(console.log)
 

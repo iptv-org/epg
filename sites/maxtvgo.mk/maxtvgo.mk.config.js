@@ -30,10 +30,10 @@ module.exports = {
 
     return programs
   },
-  async channels({ country, lang }) {
+  async channels() {
     const channels = await axios
       .get(
-        `https://prd-static-mkt.spectar.tv/rev-1636968171/client_api.php/channel/all/application_id/deep_blue/device_configuration/2/instance_id/1/language/mk/http_proto/https/format/json`
+        'https://prd-static-mkt.spectar.tv/rev-1636968171/client_api.php/channel/all/application_id/deep_blue/device_configuration/2/instance_id/1/language/mk/http_proto/https/format/json'
       )
       .then(r => r.data)
       .catch(console.log)
@@ -64,7 +64,7 @@ function parseIcon(item) {
   return item.icon['@attributes'].src
 }
 
-function parseItems(content, channel) {
+function parseItems(content) {
   const data = JSON.parse(content)
   if (!data || !Array.isArray(data.programme)) return []
 

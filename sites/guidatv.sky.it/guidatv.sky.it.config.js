@@ -29,6 +29,32 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels() {
+    const axios = require('axios')
+    const cheerio = require('cheerio')
+
+    const data = await axios
+      .get(`https://guidatv.sky.it/canali`)
+      .then(r => r.data)
+      .catch(console.log)
+
+    const $ = cheerio.load(data)
+
+    let channels = []
+    $('.c-channelsCard__container').each((i, el) => {
+      const name = $(el).find('.c-channelsCard__title').text()
+      const url = $(el).find('.c-channelsCard__link').attr('href')
+      const [, channelId] = url.match(/\/(\d+)$/)
+
+      channels.push({
+        lang: 'it',
+        site_id: `DTH#${channelId}`,
+        name
+      })
+    })
+
+    return channels
   }
 }
 

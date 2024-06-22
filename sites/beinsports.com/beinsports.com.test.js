@@ -1,7 +1,3 @@
-// npm run channels:parse -- --config=./sites/beinsports.com/beinsports.com.config.js --output=./sites/beinsports.com/beinsports.com_qa-ar.channels.xml --set=lang:ar --set=region:ar
-// npx epg-grabber --config=sites/beinsports.com/beinsports.com.config.js --channels=sites/beinsports.com/beinsports.com_qa-en.channels.xml --output=guide.xml --timeout=30000 --days=2
-// npx epg-grabber --config=sites/beinsports.com/beinsports.com.config.js --channels=sites/beinsports.com/beinsports.com_us-en.channels.xml --output=guide.xml --timeout=30000 --days=2
-
 const { parser, url } = require('./beinsports.com.config.js')
 const fs = require('fs')
 const path = require('path')
@@ -11,81 +7,39 @@ const customParseFormat = require('dayjs/plugin/customParseFormat')
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
-const date = dayjs.utc('2022-05-08', 'YYYY-MM-DD').startOf('d')
-const channel = { site_id: '#2', xmltv_id: 'BeINSports.qa' }
+const date = dayjs.utc('2023-10-22T00:00:00.000', '"YYYY-MM-DDTHH:mm:ss.SSS').startOf('d')
+const channel = { site_id: 'C244C48D-3B54-406A-94C9-D63B16318267', xmltv_id: 'beINSportsUSA.us' }
 
 it('can generate valid url', () => {
   const result = url({ date, channel })
   expect(result).toBe(
-    'https://epg.beinsports.com/utctime.php?mins=00&serviceidentity=beinsports.com&cdate=2022-05-08'
+    'https://www.beinsports.com/api/opta/tv-event?&startBefore=2023-10-23T00:00:00.000Z&endAfter=2023-10-22T00:00:00.000Z&channelIds=C244C48D-3B54-406A-94C9-D63B16318267'
   )
 })
 
-it('can generate valid url for arabic guide', () => {
-  const channel = { site_id: 'ar#1', xmltv_id: 'BeINSports.qa' }
-  const result = url({ date, channel })
-  expect(result).toBe(
-    'https://epg.beinsports.com/utctime_ar.php?mins=00&serviceidentity=beinsports.com&cdate=2022-05-08'
-  )
-})
+const content =
+  '{"count":1,"rows":[{"data":{"eventId":"2028126","eventDate":"2023-10-21T10:30:00","utcEventDate":"2023-10-20T23:30:00","duration":"90","programId":"106230","programTypeId":"5","title":"ATP 500"},"duration":5400000,"title":"Tokyo Day 5 QF 2","startDate":"2023-10-20T23:30:00.000Z","endDate":"2023-10-21T01:00:00.000Z","description":"Exclusive coverage of the 2023 ATP Tour on beIN SPORTS","channelId":"164C0EDA-EBCE-4AA6-9DDA-D603E0948B9F"}]}'
 
 it('can parse response', () => {
-  const content = fs.readFileSync(path.resolve('sites/beinsports.com/__data__/content.html'))
-  const results = parser({ date, channel, content }).map(p => {
+  const result = parser({ content, channel, date }).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
     return p
   })
 
-  expect(results[0]).toMatchObject({
-    start: '2022-05-07T19:30:00.000Z',
-    stop: '2022-05-07T21:20:00.000Z',
-    title: 'Lorient vs Marseille',
-    category: ['Ligue 1 2021/22']
-  })
-})
-
-it('can parse response for tomorrow', () => {
-  const date = dayjs.utc('2022-05-09', 'YYYY-MM-DD').startOf('d')
-  const content = fs.readFileSync(
-    path.resolve('sites/beinsports.com/__data__/content_tomorrow.html')
-  )
-  const results = parser({ date, channel, content }).map(p => {
-    p.start = p.start.toJSON()
-    p.stop = p.stop.toJSON()
-    return p
-  })
-
-  expect(results[0]).toMatchObject({
-    start: '2022-05-08T21:20:00.000Z',
-    stop: '2022-05-08T23:10:00.000Z',
-    title: 'Celtic vs Hearts',
-    category: ['SPFL Premiership 2021/22']
-  })
-})
-
-it('can parse US response', () => {
-  const content = fs.readFileSync(path.resolve('sites/beinsports.com/__data__/content_us.html'))
-  const results = parser({ date, channel, content }).map(p => {
-    p.start = p.start.toJSON()
-    p.stop = p.stop.toJSON()
-    return p
-  })
-
-  expect(results[0]).toMatchObject({
-    start: '2022-05-07T20:00:00.000Z',
-    stop: '2022-05-07T22:00:00.000Z',
-    title: 'Basaksehir vs. Galatasaray',
-    category: ['Fútbol Turco Superliga', 'Soccer']
-  })
+  expect(result).toMatchObject([
+    {
+      start: '2023-10-20T23:30:00.000Z',
+      stop: '2023-10-21T01:00:00.000Z',
+      title: 'Tokyo Day 5 QF 2',
+      description: 'Exclusive coverage of the 2023 ATP Tour on beIN SPORTS'
+    }
+  ])
 })
 
 it('can handle empty guide', () => {
-  const noContent = fs.readFileSync(path.resolve('sites/beinsports.com/__data__/no-content.html'))
   const result = parser({
-    date,
-    channel,
-    content: noContent
+    content: '[]'
   })
   expect(result).toMatchObject([])
 })

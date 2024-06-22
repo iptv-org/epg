@@ -1,6 +1,4 @@
-// npx epg-grabber --config=sites/elcinema.com/elcinema.com.config.js --channels=sites/elcinema.com/elcinema.com.channels.xml --output=guide.xml --days=2
-
-const { parser, url, request } = require('./elcinema.com.config.js')
+const { parser, url } = require('./elcinema.com.config.js')
 const fs = require('fs')
 const path = require('path')
 const dayjs = require('dayjs')
@@ -63,7 +61,7 @@ it('can handle empty guide', () => {
   const result = parser({
     date,
     channel: channelEN,
-    content: `<!DOCTYPE html><html lang="ar" dir="rtl"><head></head><body></body></html>`
+    content: '<!DOCTYPE html><html lang="ar" dir="rtl"><head></head><body></body></html>'
   })
   expect(result).toMatchObject([])
 })

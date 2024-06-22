@@ -4,6 +4,9 @@ const dayjs = require('dayjs')
 module.exports = {
   site: 'tapdmv.com',
   days: 2,
+  request: {
+    maxContentLength: 10485760 // 10 Mb
+  },
   url({ channel, date }) {
     return `https://epg.tapdmv.com/calendar/${
       channel.site_id
@@ -29,13 +32,14 @@ module.exports = {
   },
   async channels() {
     const items = await axios
-      .get(`https://epg.tapdmv.com/calendar?$limit=10000&$sort[createdAt]=-1`)
+      .get('https://epg.tapdmv.com/calendar?$limit=10000&$sort[createdAt]=-1')
       .then(r => r.data.data)
       .catch(console.log)
 
     return items.map(item => {
-      const [_, name] = item.name.match(/epg-tapgo-([^\.]+).json/)
+      const [, name] = item.name.match(/epg-tapgo-([^.]+).json/)
       return {
+        lang: 'en',
         site_id: item.id,
         name
       }

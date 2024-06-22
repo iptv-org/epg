@@ -37,7 +37,7 @@ module.exports = {
   },
   async channels() {
     const html = await axios
-      .get(`https://musor.tv/`)
+      .get('https://musor.tv/')
       .then(r => r.data)
       .catch(console.log)
 

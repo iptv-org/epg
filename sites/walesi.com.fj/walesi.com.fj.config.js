@@ -12,7 +12,6 @@ dayjs.extend(customParseFormat)
 module.exports = {
   site: 'walesi.com.fj',
   days: 2,
-  skip: true, // the program is no longer available on the website
   url: 'https://www.walesi.com.fj/wp-admin/admin-ajax.php',
   request: {
     method: 'POST',
@@ -48,7 +47,7 @@ module.exports = {
   },
   async channels() {
     const data = await axios
-      .get(`https://www.walesi.com.fj/channel-guide/`)
+      .get('https://www.walesi.com.fj/channel-guide/')
       .then(r => r.data)
       .catch(console.log)
 
@@ -58,7 +57,7 @@ module.exports = {
     ).toArray()
     return channels.map(item => {
       const $item = cheerio.load(item)
-      const [_, name] = $item('span')
+      const [, name] = $item('span')
         .text()
         .trim()
         .match(/\d+\. (.*)/) || [null, null]

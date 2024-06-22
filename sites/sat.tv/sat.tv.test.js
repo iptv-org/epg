@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=sites/sat.tv/sat.tv.config.js --output=sites/sat.tv/sat.tv.channels.xml --set=lang:ar --set=satSatellite:1 --set=satLineup:38
-// npx epg-grabber --config=sites/sat.tv/sat.tv.config.js --channels=sites/sat.tv/sat.tv.channels.xml --output=guide.xml
-
 const { parser, url, request } = require('./sat.tv.config.js')
 const fs = require('fs')
 const path = require('path')

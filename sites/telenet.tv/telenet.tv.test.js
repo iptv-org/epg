@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/telenet.tv/telenet.tv.config.js --output=./sites/telenet.tv/telenet.tv.channels.xml
-// npx epg-grabber --config=sites/telenet.tv/telenet.tv.config.js --channels=sites/telenet.tv/telenet.tv.channels.xml --output=guide.xml --days=2
-
 const { parser, url } = require('./telenet.tv.config.js')
 const fs = require('fs')
 const path = require('path')
@@ -85,7 +82,7 @@ it('can parse response', async () => {
 })
 
 it('can handle empty guide', async () => {
-  let results = await parser({ content: ``, channel, date })
+  let results = await parser({ content: '', channel, date })
 
   expect(results).toMatchObject([])
 })

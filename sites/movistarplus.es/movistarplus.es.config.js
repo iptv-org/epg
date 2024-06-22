@@ -15,12 +15,16 @@ module.exports = {
       let startTime = DateTime.fromFormat(
         `${guideDate.format('YYYY-MM-DD')} ${item.HORA_INICIO}`,
         'yyyy-MM-dd HH:mm',
-        { zone: 'Europe/Madrid' }
+        {
+          zone: 'Europe/Madrid'
+        }
       ).toUTC()
       let stopTime = DateTime.fromFormat(
         `${guideDate.format('YYYY-MM-DD')} ${item.HORA_FIN}`,
         'yyyy-MM-dd HH:mm',
-        { zone: 'Europe/Madrid' }
+        {
+          zone: 'Europe/Madrid'
+        }
       ).toUTC()
       if (stopTime < startTime) {
         guideDate = guideDate.add(1, 'd')
@@ -34,6 +38,22 @@ module.exports = {
       })
     })
     return programs
+  },
+  async channels() {
+    const axios = require('axios')
+    const dayjs = require('dayjs')
+    const data = await axios
+      .get(`https://www.movistarplus.es/programacion-tv/${dayjs().format('YYYY-MM-DD')}?v=json`)
+      .then(r => r.data)
+      .catch(console.log)
+
+    return Object.values(data.data).map(item => {
+      return {
+        lang: 'es',
+        site_id: item.DATOS_CADENA.CODIGO,
+        name: item.DATOS_CADENA.NOMBRE
+      }
+    })
   }
 }
 

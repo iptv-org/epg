@@ -14,13 +14,15 @@ module.exports = {
     }
   },
   url({ date }) {
-    return `https://www.singtel.com/etc/singtel/public/tv/epg-parsed-data/${date.format('DDMMYYYY')}.json`
+    return `https://www.singtel.com/etc/singtel/public/tv/epg-parsed-data/${date.format(
+      'DDMMYYYY'
+    )}.json`
   },
   parser({ content, channel }) {
     let programs = []
     const items = parseItems(content, channel)
     items.forEach(item => {
-      const start = dayjs.tz(item.startDateTime,'Asia/Singapore')
+      const start = dayjs.tz(item.startDateTime, 'Asia/Singapore')
       const stop = start.add(item.duration, 's')
       programs.push({
         title: item.program.title,
@@ -32,6 +34,27 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels() {
+    const axios = require('axios')
+    const cheerio = require('cheerio')
+
+    const data = await axios
+      .get(`https://www.singtel.com/personal/products-services/tv/tv-programme-guide`)
+      .then(r => r.data)
+      .catch(console.log)
+
+    const $ = cheerio.load(data)
+    let datamodel = $('ux-tv-channel-epg').attr('datamodel')
+    datamodel = JSON.parse(datamodel)
+
+    return datamodel.tvChannelLists.map(item => {
+      return {
+        lang: 'en',
+        site_id: item.epgChannelId,
+        name: item.title.trim()
+      }
+    })
   }
 }
 

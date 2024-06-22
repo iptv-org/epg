@@ -24,7 +24,7 @@ module.exports = {
     )}&channel_ids=${channel.site_id}`
   },
   parser({ content, channel, date }) {
-    let programs = []
+    const programs = []
     const items = parseItems(content, channel, date)
     items.forEach(item => {
       let prev = programs[programs.length - 1]
@@ -51,7 +51,7 @@ module.exports = {
   },
   async channels() {
     const xml = await axios
-      .get(`https://www.visionplus.id/sitemap-channels.xml`)
+      .get('https://www.visionplus.id/sitemap-channels.xml')
       .then(r => r.data)
       .catch(console.log)
 
@@ -64,6 +64,7 @@ module.exports = {
       const [, site_id] = loc.match(/channel\/(\d+)\//) || [null, null]
 
       return {
+        lang: 'en',
         site_id,
         name: $item('video\\:title').text().trim()
       }

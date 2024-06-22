@@ -1,5 +1,3 @@
-// npx epg-grabber --config=sites/getafteritmedia.com/getafteritmedia.com.config.js --channels=sites/getafteritmedia.com/getafteritmedia.com.channels.xml --output=guide.xml --days=2
-
 const { parser, url } = require('./getafteritmedia.com.config.js')
 const fs = require('fs')
 const path = require('path')
@@ -33,7 +31,7 @@ it('can parse response', () => {
   expect(results[0]).toMatchObject({
     start: '2022-11-26T05:00:00.000Z',
     stop: '2022-11-26T05:30:00.000Z',
-    title: `The Appraisers`
+    title: 'The Appraisers'
   })
 })
 
@@ -41,7 +39,7 @@ it('can handle empty guide', () => {
   const result = parser({
     date,
     channel,
-    content: `<!DOCTYPE html><html><head></head><body></body></html>`
+    content: '<!DOCTYPE html><html><head></head><body></body></html>'
   })
   expect(result).toMatchObject([])
 })

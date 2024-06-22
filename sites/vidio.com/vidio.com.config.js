@@ -31,12 +31,38 @@ module.exports = {
     })
 
     return programs
-  }
+  },
+  async channels() {
+    const axios = require('axios')
+    const cheerio = require('cheerio')
+    const result = await axios
+      .get('https://www.vidio.com/categories/276-daftar-channel-tv-radio-live-sports')
+      .then(response => response.data)
+      .catch(console.error)
+
+    const $ = cheerio.load(result)
+    const items = $('.home-content a').toArray()
+    const channels = []
+    items.forEach(item => {
+      const $item = $(item)
+
+      const name = $item.find('p').text()
+      if (name.toUpperCase().indexOf('FM') < 0 && name.toUpperCase().indexOf('RADIO') < 0) {
+        channels.push({
+          lang: 'id',
+          site_id: $item.attr('href').substr($item.attr('href').lastIndexOf('/') + 1).split('-')[0],
+          name
+        })
+      }
+    })
+
+    return channels
+  }  
 }
 
 function parseStart($item, date) {
   const timeString = $item('div.b-livestreaming-daily-schedule__item-content-caption').text()
-  const [_, start] = timeString.match(/(\d{2}:\d{2}) -/) || [null, null]
+  const [, start] = timeString.match(/(\d{2}:\d{2}) -/) || [null, null]
   const dateString = `${date.format('YYYY-MM-DD')} ${start}`
 
   return DateTime.fromFormat(dateString, 'yyyy-MM-dd HH:mm', { zone: 'Asia/Jakarta' }).toUTC()
@@ -44,7 +70,7 @@ function parseStart($item, date) {
 
 function parseStop($item, date) {
   const timeString = $item('div.b-livestreaming-daily-schedule__item-content-caption').text()
-  const [_, stop] = timeString.match(/- (\d{2}:\d{2}) WIB/) || [null, null]
+  const [, stop] = timeString.match(/- (\d{2}:\d{2}) WIB/) || [null, null]
   const dateString = `${date.format('YYYY-MM-DD')} ${stop}`
 
   return DateTime.fromFormat(dateString, 'yyyy-MM-dd HH:mm', { zone: 'Asia/Jakarta' }).toUTC()

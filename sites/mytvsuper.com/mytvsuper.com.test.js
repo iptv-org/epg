@@ -1,10 +1,6 @@
-// npm run channels:parse -- --config=./sites/mytvsuper.com/mytvsuper.com.config.js --output=./sites/mytvsuper.com/mytvsuper.com.channels.xml --set=lang:zh
-// npx epg-grabber --config=sites/mytvsuper.com/mytvsuper.com.config.js --channels=sites/mytvsuper.com/mytvsuper.com.channels.xml --output=guide.xml --days=2
-
 const { parser, url } = require('./mytvsuper.com.config.js')
 const fs = require('fs')
 const path = require('path')
-const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')

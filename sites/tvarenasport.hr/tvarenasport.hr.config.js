@@ -4,8 +4,7 @@ const dayjs = require('dayjs')
 module.exports = {
   site: 'tvarenasport.hr',
   days: 2,
-  skip: true, // there is no current program on the website
-  url: function ({ channel, date }) {
+  url: function ({ date }) {
     return `https://www.tvarenasport.hr/api/schedule?date=${date.format('DD-MM-YYYY')}`
   },
   parser: function ({ content, channel }) {
@@ -23,9 +22,9 @@ module.exports = {
 
     return programs
   },
-  async channels({ country, lang }) {
+  async channels() {
     const data = await axios
-      .get(`https://www.tvarenasport.hr/api/schedule`)
+      .get('https://www.tvarenasport.hr/api/schedule')
       .then(r => r.data)
       .catch(console.log)
 

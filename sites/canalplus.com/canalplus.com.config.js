@@ -1,19 +1,23 @@
 const dayjs = require('dayjs')
 const axios = require('axios')
+const utc = require('dayjs/plugin/utc')
 
-// TODO: calculate API_KEY based on the current date
-//
-// const API_KEY = 'f55e5c7ddf0afba59d1c64581358910d' // 03.2022
-//const API_KEY = 'c71b6b8eb30125dab9d10a3850131ac6' // 05.2022
-const API_KEY = 'da2291af3b10e9900d1c55e1a65d3388' // 10.2022
+dayjs.extend(utc)
 
 module.exports = {
   site: 'canalplus.com',
   days: 2,
-  url: function ({ channel, date }) {
+  url: async function ({ channel, date }) {
+    const [region, site_id] = channel.site_id.split('#')
+    const data = await axios
+      .get(`https://www.canalplus.com/${region}/programme-tv/`)
+      .then(r => r.data.toString())
+      .catch(err => console.log(err))
+    const token = parseToken(data)
+
     const diff = date.diff(dayjs.utc().startOf('d'), 'd')
 
-    return `https://hodor.canalplus.pro/api/v2/mycanal/channels/${API_KEY}/${channel.site_id}/broadcasts/day/${diff}`
+    return `https://hodor.canalplus.pro/api/v2/mycanal/channels/${token}/${site_id}/broadcasts/day/${diff}`
   },
   async parser({ content }) {
     let programs = []
@@ -29,11 +33,11 @@ module.exports = {
         title: item.title,
         description: parseDescription(info),
         icon: parseIcon(info),
-        actors: parseCast(info,"Avec :"),
-        director: parseCast(info,"De :"),
-        writer: parseCast(info,"Scénario :"),
-        composer: parseCast(info,"Musique :"),
-        presenter: parseCast(info,"Présenté par :"),
+        actors: parseCast(info, 'Avec :'),
+        director: parseCast(info, 'De :'),
+        writer: parseCast(info, 'Scénario :'),
+        composer: parseCast(info, 'Musique :'),
+        presenter: parseCast(info, 'Présenté par :'),
         date: parseDate(info),
         rating: parseRating(info),
         start,
@@ -43,20 +47,76 @@ module.exports = {
 
     return programs
   },
-  async channels() {
+  async channels({ country }) {
+    const paths = {
+      ad: 'cpafr/ad',
+      bf: 'cpafr/bf',
+      bi: 'cpafr/bi',
+      bj: 'cpafr/bj',
+      bl: 'cpant/bl',
+      cd: 'cpafr/cd',
+      cf: 'cpafr/cf',
+      cg: 'cpafr/cg',
+      ch: 'cpche',
+      ci: 'cpafr/ci',
+      cm: 'cpafr/cm',
+      cv: 'cpafr/cv',
+      dj: 'cpafr/dj',
+      fr: 'cpfra',
+      ga: 'cpafr/ga',
+      gf: 'cpant/gf',
+      gh: 'cpafr/gh',
+      gm: 'cpafr/gm',
+      gn: 'cpafr/gn',
+      gp: 'cpafr/gp',
+      gw: 'cpafr/gw',
+      mf: 'cpant/mf',
+      mg: 'cpafr/mg',
+      ml: 'cpafr/ml',
+      mq: 'cpant/mq',
+      mr: 'cpafr/mr',
+      mu: 'cpmus/mu',
+      nc: 'cpncl/nc',
+      ne: 'cpafr/ne',
+      pl: 'cppol',
+      re: 'cpreu/re',
+      rw: 'cpafr/rw',
+      sl: 'cpafr/sl',
+      sn: 'cpafr/sn',
+      td: 'cpafr/td',
+      tg: 'cpafr/tg',
+      wf: 'cpncl/wf',
+      yt: 'cpreu/yt'
+    }
+
+    let channels = []
+    const path = paths[country]
+    const url = `https://secure-webtv-static.canal-plus.com/metadata/${path}/all/v2.2/globalchannels.json`
     const data = await axios
-      .get(`https://secure-webtv-static.canal-plus.com/metadata/cpfra/all/v2.2/globalchannels.json`)
+      .get(url)
       .then(r => r.data)
       .catch(console.log)
 
-    return data.channels.map(item => {
-      return {
+    data.channels.forEach(channel => {
+      const site_id = country === 'fr' ? `#${channel.id}` : `${country}#${channel.id}`
+
+      if (channel.name === '.') return
+
+      channels.push({
         lang: 'fr',
-        site_id: item.id,
-        name: item.name
-      }
+        site_id,
+        name: channel.name
+      })
     })
+
+    return channels
   }
+}
+
+function parseToken(data) {
+  const [, token] = data.match(/"token":"([^"]+)/) || [null, null]
+
+  return token
 }
 
 function parseStart(item) {
@@ -101,7 +161,7 @@ function parseCast(info, type) {
   if (info && info.personnalities) {
     const personnalities = info.personnalities.find(i => i.prefix == type)
     if (!personnalities) return people
-    for(let person of personnalities.personnalitiesList) {
+    for (let person of personnalities.personnalitiesList) {
       people.push(person.title)
     }
   }
@@ -109,20 +169,20 @@ function parseCast(info, type) {
 }
 
 function parseDate(info) {
-  return (info && info.productionYear) ? info.productionYear : null
+  return info && info.productionYear ? info.productionYear : null
 }
 
 function parseRating(info) {
-    if (!info || !info.parentalRatings) return null
-    let rating = info.parentalRatings.find(i => i.authority === 'CSA')
-    if (!rating || Array.isArray(rating)) return null
-    if (rating.value === '1') return null
-    if (rating.value === '2') rating.value = '-10'
-    if (rating.value === '3') rating.value = '-12'
-    if (rating.value === '4') rating.value = '-16'
-    if (rating.value === '5') rating.value = '-18'
-    return {
-        system: rating.authority,
-        value: rating.value
-    }
+  if (!info || !info.parentalRatings) return null
+  let rating = info.parentalRatings.find(i => i.authority === 'CSA')
+  if (!rating || Array.isArray(rating)) return null
+  if (rating.value === '1') return null
+  if (rating.value === '2') rating.value = '-10'
+  if (rating.value === '3') rating.value = '-12'
+  if (rating.value === '4') rating.value = '-16'
+  if (rating.value === '5') rating.value = '-18'
+  return {
+    system: rating.authority,
+    value: rating.value
+  }
 }

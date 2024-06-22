@@ -1,4 +1,3 @@
-const cheerio = require('cheerio')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
@@ -72,7 +71,7 @@ function parseStop(item, date) {
   )
 }
 
-function parseItems(content, channel, date) {
+function parseItems(content) {
   const data = JSON.parse(content)
   if (!data || !Array.isArray(data.data.Schedule.events)) return []
 

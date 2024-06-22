@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=sites/starhubtvplus.com/starhubtvplus.com.config.js --output=sites/starhubtvplus.com/starhubtvplus.com.channels.xml
-// npx epg-grabber --config=sites/starhubtvplus.com/starhubtvplus.com.config.js --channels=sites/starhubtvplus.com/starhubtvplus.com.channels.xml --output=guide.xml --days=2
-
 const { parser, url, request } = require('./starhubtvplus.com.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
@@ -34,7 +31,8 @@ it('can generate valid cache settings', () => {
 })
 
 it('can parse response', () => {
-  const content = `{"data":{"nagraEpg":{"items":[{"id":102,"name":"Channel 5 HD_DASH","programs":[{"id":"GLOBAL_TC0021650123","title":"Luke Nguyen's Vietnam","description":"Luke leaves the hustle and bustle of Hanoi behind for the mystical mountains of Sapa. There, he prepares some black chicken in and amongst the local streets. He cooks buffalo for a salad in the busy Sapa markets, as well as a tofu-and-tomato dish high up in the rice paddy fields with the most spectacular backdrop.","Categories":["Others"],"startTime":1652110200000,"endTime":1652112000000}]}]}}}`
+  const content =
+    '{"data":{"nagraEpg":{"items":[{"id":102,"name":"Channel 5 HD_DASH","programs":[{"id":"GLOBAL_TC0021650123","title":"Luke Nguyen\'s Vietnam","description":"Luke leaves the hustle and bustle of Hanoi behind for the mystical mountains of Sapa. There, he prepares some black chicken in and amongst the local streets. He cooks buffalo for a salad in the busy Sapa markets, as well as a tofu-and-tomato dish high up in the rice paddy fields with the most spectacular backdrop.","Categories":["Others"],"startTime":1652110200000,"endTime":1652112000000}]}]}}}'
   const result = parser({ content, channel }).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
@@ -55,7 +53,8 @@ it('can parse response', () => {
 
 it('can handle empty guide', () => {
   const result = parser({
-    content: `{"errors":[{"code":"A9999","message":"Syntax, request headers or server error","extendedLogging":{"message":"Cannot read property 'operation' of undefined"}}]}`
+    content:
+      '{"errors":[{"code":"A9999","message":"Syntax, request headers or server error","extendedLogging":{"message":"Cannot read property \'operation\' of undefined"}}]}'
   })
   expect(result).toMatchObject([])
 })

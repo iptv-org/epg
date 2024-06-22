@@ -32,6 +32,33 @@ module.exports = {
     programs = _.orderBy(_.uniqBy(programs, 'start'), 'start')
 
     return programs
+  },
+  async channels({ country, lang }) {
+    const axios = require('axios')
+    const data = await axios
+      .get(`https://streamingtvguides.com/Preferences`)
+      .then(r => r.data)
+      .catch(console.log)
+
+    let channels = []
+
+    const $ = cheerio.load(data)
+    $('#channel-group-all > div > div').each((i, el) => {
+      const site_id = $(el).find('input').attr('value').replace('&', '&amp;')
+      const label = $(el).text().trim()
+      const svgTitle = $(el).find('svg').attr('alt')
+      const name = (label || svgTitle || '').replace(site_id, '').trim()
+
+      if (!name || !site_id) return
+
+      channels.push({
+        lang: 'en',
+        site_id,
+        name
+      })
+    })
+
+    return channels
   }
 }
 
@@ -58,7 +85,7 @@ function parseStart($item) {
 
 function parseStop($item) {
   const date = $item('.card-body').clone().children().remove().end().text().trim()
-  const [_, time] = date.split(' - ')
+  const [, time] = date.split(' - ')
 
   return dayjs.tz(time, 'YYYY-MM-DD HH:mm:ss [PST]', 'PST').utc()
 }
@@ -66,5 +93,5 @@ function parseStop($item) {
 function parseItems(content) {
   const $ = cheerio.load(content)
 
-  return $(`.container`).toArray()
+  return $('.container').toArray()
 }

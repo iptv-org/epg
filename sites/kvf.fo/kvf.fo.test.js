@@ -1,5 +1,3 @@
-// npx epg-grabber --config=sites/kvf.fo/kvf.fo.config.js --channels=sites/kvf.fo/kvf.fo.channels.xml --output=guide.xml --days=2
-
 const { parser, url } = require('./kvf.fo.config.js')
 const fs = require('fs')
 const path = require('path')
@@ -30,7 +28,7 @@ it('can parse response', () => {
   expect(result[2]).toMatchObject({
     start: '2021-11-21T18:05:00.000Z',
     stop: '2021-11-21T18:30:00.000Z',
-    title: `Letibygd 13`
+    title: 'Letibygd 13'
   })
 })
 
@@ -38,7 +36,7 @@ it('can handle empty guide', () => {
   const result = parser({
     date,
     channel,
-    content: `<!DOCTYPE html><html> <head></head> <body></body></html>`
+    content: '<!DOCTYPE html><html> <head></head> <body></body></html>'
   })
   expect(result).toMatchObject([])
 })

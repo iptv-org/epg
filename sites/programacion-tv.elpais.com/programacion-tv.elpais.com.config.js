@@ -50,7 +50,7 @@ module.exports = {
   },
   async channels() {
     const data = await axios
-      .get(`https://programacion-tv.elpais.com/data/canales.json`)
+      .get('https://programacion-tv.elpais.com/data/canales.json')
       .then(r => r.data)
       .catch(console.log)
 

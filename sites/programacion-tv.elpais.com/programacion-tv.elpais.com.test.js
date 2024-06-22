@@ -1,6 +1,3 @@
-// npx epg-grabber --config=sites/programacion-tv.elpais.com/programacion-tv.elpais.com.config.js --channels=sites/programacion-tv.elpais.com/programacion-tv.elpais.com.channels.xml --output=guide.xml --days=2
-// npm run channels:parse -- --config=./sites/programacion-tv.elpais.com/programacion-tv.elpais.com.config.js --output=./sites/programacion-tv.elpais.com/programacion-tv.elpais.com.channels.xml
-
 const { parser, url } = require('./programacion-tv.elpais.com.config.js')
 const axios = require('axios')
 const fs = require('fs')
@@ -67,7 +64,7 @@ it('can parse response', async () => {
 
 it('can handle empty guide', async () => {
   const result = await parser({
-    content: ``,
+    content: '',
     channel
   })
   expect(result).toMatchObject([])

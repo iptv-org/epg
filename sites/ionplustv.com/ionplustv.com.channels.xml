@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<site site="ionplustv.com">
-  <channels>
-    <channel lang="en" xmltv_id="IONPlusEast.us" site_id="#">ION Plus</channel>
-  </channels>
-</site>
+<channels>
+  <channel site="ionplustv.com" lang="en" xmltv_id="IONPlusEast.us" site_id="#">ION Plus</channel>
+</channels>

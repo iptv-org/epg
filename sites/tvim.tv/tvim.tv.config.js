@@ -8,7 +8,7 @@ module.exports = {
       channel.site_id
     }&server_time=true`
   },
-  parser: function ({ content, channel, date }) {
+  parser: function ({ content }) {
     let programs = []
     const items = parseItems(content)
     items.forEach(item => {
@@ -25,6 +25,24 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels() {
+    const axios = require('axios')
+    const data = await axios
+      .get(`https://www.tvim.tv/script/epg/category_channels?category=all&filter=playable`)
+      .then(r => r.data)
+      .catch(console.log)
+
+    let channels = []
+    data.data.forEach(item => {
+      channels.push({
+        lang: 'sq',
+        site_id: item.epg_id,
+        name: item.name
+      })
+    })
+
+    return channels
   }
 }
 
@@ -36,7 +54,7 @@ function parseStop(item) {
   return dayjs.unix(item.end_utc)
 }
 
-function parseItems(content, channel) {
+function parseItems(content) {
   const parsed = JSON.parse(content)
 
   return parsed.data.prog || []

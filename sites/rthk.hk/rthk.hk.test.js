@@ -1,9 +1,6 @@
-// npx epg-grabber --config=sites/rthk.hk/rthk.hk.config.js --channels=sites/rthk.hk/rthk.hk.channels.xml --output=guide.xml --days=2
-
 const { parser, url, request } = require('./rthk.hk.config.js')
 const fs = require('fs')
 const path = require('path')
-const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')

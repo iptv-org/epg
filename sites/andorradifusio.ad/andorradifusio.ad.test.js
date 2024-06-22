@@ -1,5 +1,3 @@
-// npx epg-grabber --config=sites/andorradifusio.ad/andorradifusio.ad.config.js --channels=sites/andorradifusio.ad/andorradifusio.ad.channels.xml --output=guide.xml
-
 const { parser, url } = require('./andorradifusio.ad.config.js')
 const fs = require('fs')
 const path = require('path')
@@ -30,20 +28,20 @@ it('can parse response', () => {
   expect(results[0]).toMatchObject({
     start: '2023-06-07T05:00:00.000Z',
     stop: '2023-06-07T06:00:00.000Z',
-    title: `Club Piolet`
+    title: 'Club Piolet'
   })
 
   expect(results[20]).toMatchObject({
     start: '2023-06-07T23:00:00.000Z',
     stop: '2023-06-08T00:00:00.000Z',
-    title: `Àrea Andorra Difusió`
+    title: 'Àrea Andorra Difusió'
   })
 })
 
 it('can handle empty guide', () => {
   const result = parser({
     date,
-    content: `<!DOCTYPE html><html><head></head><body></body></html>`
+    content: '<!DOCTYPE html><html><head></head><body></body></html>'
   })
   expect(result).toMatchObject([])
 })

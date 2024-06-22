@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/i.mjh.nz/i.mjh.nz.config.js --output=./sites/i.mjh.nz/i.mjh.nz_pluto.channels.xml --set=path:PlutoTV/all
-// npx epg-grabber --config=sites/i.mjh.nz/i.mjh.nz.config.js --channels=sites/i.mjh.nz/i.mjh.nz_plex.channels.xml --output=guide.xml
-
 const { parser, url } = require('./i.mjh.nz.config.js')
 const fs = require('fs')
 const path = require('path')
@@ -42,7 +39,7 @@ it('can parse response', () => {
 
 it('can handle empty guide', () => {
   const result = parser({
-    content: `404: Not Found`,
+    content: '404: Not Found',
     channel,
     date
   })

@@ -48,11 +48,11 @@ module.exports = {
   },
   async channels() {
     const data = await axios
-      .get(`http://www.tvmusor.hu/most/`)
+      .get('http://www.tvmusor.hu/most/')
       .then(r => r.data)
       .catch(console.log)
 
-    const [_, channelData] = data.match(/const CHANNEL_DATA = (.*);/)
+    const [, channelData] = data.match(/const CHANNEL_DATA = (.*);/)
     const json = channelData.replace('},}', '}}').replace(/(\d+):/g, '"$1":')
     const channels = JSON.parse(json)
 

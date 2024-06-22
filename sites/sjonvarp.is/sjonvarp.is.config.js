@@ -8,7 +8,6 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'sjonvarp.is',
-  skip: true, // NOTE: there is no program on the website
   days: 2,
   url: function ({ channel, date }) {
     return `http://www.sjonvarp.is/index.php?Tm=%3F&p=idag&c=${channel.site_id}&y=${date.format(
@@ -39,6 +38,32 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels() {
+    const axios = require('axios')
+    const cheerio = require('cheerio')
+
+    const data = await axios
+      .get(`https://sjonvarp.is/`)
+      .then(r => r.data)
+      .catch(console.log)
+
+    let channels = []
+
+    const $ = cheerio.load(data)
+    $('.listing-row').each((i, el) => {
+      const site_id = $(el).attr('id')
+      const title = $(el).find('a.channel').first().attr('title')
+      const [, name] = title.match(/^Skoða dagskránna á (.*) í dag$/)
+
+      channels.push({
+        lang: 'is',
+        site_id,
+        name
+      })
+    })
+
+    return channels
   }
 }
 

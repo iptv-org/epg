@@ -1,4 +1,3 @@
-const dayjs = require('dayjs')
 const cheerio = require('cheerio')
 const { DateTime } = require('luxon')
 
@@ -39,17 +38,42 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels() {
+    const axios = require('axios')
+    const html = await axios
+      .get('https://www.tivu.tv/epg_ajax_sat.aspx?d=0')
+      .then(r => r.data)
+      .catch(console.log)
+
+    let channels = []
+
+    const $ = cheerio.load(html)
+    $('.q').each((i, el) => {
+      const site_id = $(el).attr('id')
+      const name = $(el).find('a').first().data('channel')
+
+      if (!name) return
+
+      channels.push({
+        lang: 'it',
+        site_id,
+        name
+      })
+    })
+
+    return channels
   }
 }
 
 function parseTitle($item) {
-  const [title, _, __] = $item('a').html().split('<br>')
+  const [title] = $item('a').html().split('<br>')
 
   return title
 }
 
 function parseStart($item, date) {
-  const [_, __, time] = $item('a').html().split('<br>')
+  const [, , time] = $item('a').html().split('<br>')
   if (!time) return null
 
   return DateTime.fromFormat(`${date.format('YYYY-MM-DD')} ${time}`, 'yyyy-MM-dd HH:mm', {
@@ -57,7 +81,7 @@ function parseStart($item, date) {
   }).toUTC()
 }
 
-function parseItems(content, channel, date) {
+function parseItems(content, channel) {
   if (!content) return []
   const $ = cheerio.load(content)
 

@@ -1,5 +1,3 @@
-// npx epg-grabber --config=sites/m.tv.sms.cz/m.tv.sms.cz.config.js --channels=sites/m.tv.sms.cz/m.tv.sms.cz.channels.xml --output=guide.xml
-
 const { parser, url } = require('./m.tv.sms.cz.config.js')
 const iconv = require('iconv-lite')
 const fs = require('fs')
@@ -34,14 +32,14 @@ it('can parse response', () => {
   expect(results[0]).toMatchObject({
     start: '2023-06-11T03:21:00.000Z',
     stop: '2023-06-11T04:08:00.000Z',
-    title: `Conspiraciones al descubierto: La bomba atómica alemana y el hundimiento del Titanic`,
+    title: 'Conspiraciones al descubierto: La bomba atómica alemana y el hundimiento del Titanic',
     description: 'Documentales'
   })
 
   expect(results[25]).toMatchObject({
     start: '2023-06-12T02:23:00.000Z',
     stop: '2023-06-12T03:23:00.000Z',
-    title: `Rapa I (6)`,
+    title: 'Rapa I (6)',
     description: 'Series'
   })
 })
@@ -50,7 +48,7 @@ it('can handle empty guide', () => {
   const result = parser({
     buffer: iconv.encode(
       Buffer.from(
-        `<!DOCTYPE html><html><head></head><body><textarea data-jtrt-table-id="508" id="jtrt_table_settings_508" cols="30" rows="10"></textarea></body></html>`
+        '<!DOCTYPE html><html><head></head><body><textarea data-jtrt-table-id="508" id="jtrt_table_settings_508" cols="30" rows="10"></textarea></body></html>'
       ),
       'win1250'
     )

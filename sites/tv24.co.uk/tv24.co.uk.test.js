@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/tv24.co.uk/tv24.co.uk.config.js --output=./sites/tv24.co.uk/tv24.co.uk.channels.xml
-// npx epg-grabber --config=sites/tv24.co.uk/tv24.co.uk.config.js --channels=sites/tv24.co.uk/tv24.co.uk.channels.xml --output=guide.xml --days=2
-
 const { parser, url } = require('./tv24.co.uk.config.js')
 const fs = require('fs')
 const path = require('path')

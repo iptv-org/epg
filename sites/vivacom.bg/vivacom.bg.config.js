@@ -11,7 +11,6 @@ dayjs.extend(customParseFormat)
 module.exports = {
   site: 'vivacom.bg',
   days: 2,
-  skip: true, // INFO: no longer available
   url({ date, channel }) {
     const [page] = channel.site_id.split('#')
 
@@ -35,7 +34,7 @@ module.exports = {
 
 function parseStart(item, date) {
   const $ = cheerio.load(item)
-  let [_, time] = $('span')
+  let [, time] = $('span')
     .text()
     .match(/^(\d{2}:\d{2}:\d{2})/) || [null, null]
   if (!time) return null
@@ -44,9 +43,9 @@ function parseStart(item, date) {
   return dayjs.tz(time, 'YYYY-MM-DD HH:mm:ss', 'Europe/Sofia').toJSON()
 }
 
-function parseStop(item, date, pm) {
+function parseStop(item, date) {
   const $ = cheerio.load(item)
-  let [_, time] = $('span')
+  let [, time] = $('span')
     .text()
     .match(/(\d{2}:\d{2}:\d{2})$/) || [null, null]
   if (!time) return null
@@ -69,10 +68,10 @@ function parseDescription(item) {
 }
 
 function parseItems(content, channel) {
-  const [_, channelId] = channel.site_id.split('#')
+  const [, channelId] = channel.site_id.split('#')
   const $ = cheerio.load(content)
   const listItem = $(`#scroll-vertical > li[title="${channelId}"]`)
-  const i = $(`#scroll-vertical > li`).index(listItem)
+  const i = $('#scroll-vertical > li').index(listItem)
 
   return $(`#scroll-horizontal > ul:nth-child(${i + 1}) li`).toArray()
 }

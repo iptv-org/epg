@@ -1,7 +1,7 @@
 const axios = require('axios')
 const dayjs = require('dayjs')
 
-const API_ENDPOINT = `https://static.spark.ziggogo.tv/eng/web/epg-service-lite`
+const API_ENDPOINT = 'https://static.spark.ziggogo.tv/eng/web/epg-service-lite'
 
 module.exports = {
   site: 'ziggogo.tv',
@@ -11,8 +11,8 @@ module.exports = {
       ttl: 60 * 60 * 1000 // 1 hour
     }
   },
-  url: function ({ date, channel }) {
-    return `${API_ENDPOINT}/nl/${channel.lang}/events/segments/${date.format('YYYYMMDDHHmmss')}`
+  url: function ({ date }) {
+    return `${API_ENDPOINT}/nl/en/events/segments/${date.format('YYYYMMDDHHmmss')}`
   },
   async parser({ content, channel, date }) {
     let programs = []
@@ -20,25 +20,19 @@ module.exports = {
     if (!items.length) return programs
     const promises = [
       axios.get(
-        `${API_ENDPOINT}/nl/${channel.lang}/events/segments/${date
-          .add(6, 'h')
-          .format('YYYYMMDDHHmmss')}`,
+        `${API_ENDPOINT}/nl/en/events/segments/${date.add(6, 'h').format('YYYYMMDDHHmmss')}`,
         {
           responseType: 'arraybuffer'
         }
       ),
       axios.get(
-        `${API_ENDPOINT}/nl/${channel.lang}/events/segments/${date
-          .add(12, 'h')
-          .format('YYYYMMDDHHmmss')}`,
+        `${API_ENDPOINT}/nl/en/events/segments/${date.add(12, 'h').format('YYYYMMDDHHmmss')}`,
         {
           responseType: 'arraybuffer'
         }
       ),
       axios.get(
-        `${API_ENDPOINT}/nl/${channel.lang}/events/segments/${date
-          .add(18, 'h')
-          .format('YYYYMMDDHHmmss')}`,
+        `${API_ENDPOINT}/nl/en/events/segments/${date.add(18, 'h').format('YYYYMMDDHHmmss')}`,
         {
           responseType: 'arraybuffer'
         }
@@ -76,14 +70,14 @@ module.exports = {
   async channels() {
     const data = await axios
       .get(
-        `https://prod.spark.ziggogo.tv/eng/web/linear-service/v2/channels?cityId=65535&language=en&productClass=Orion-DASH`
+        'https://prod.spark.ziggogo.tv/eng/web/linear-service/v2/channels?cityId=65535&language=en&productClass=Orion-DASH'
       )
       .then(r => r.data)
       .catch(console.log)
 
-    return data.channels.map(item => {
+    return data.map(item => {
       return {
-        lang: 'be',
+        lang: 'nl',
         site_id: item.id,
         name: item.name
       }
@@ -93,7 +87,7 @@ module.exports = {
 
 async function loadProgramDetails(item, channel) {
   if (!item.id) return {}
-  const url = `https://prod.spark.ziggogo.tv/eng/web/linear-service/v2/replayEvent/${item.id}?returnLinearContent=true&language=${channel.lang}`
+  const url = `https://prod.spark.ziggogo.tv/eng/web/linear-service/v2/replayEvent/${item.id}?returnLinearContent=true&language=en`
   const data = await axios
     .get(url)
     .then(r => r.data)

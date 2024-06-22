@@ -1,5 +1,3 @@
-// npx epg-grabber --config=sites/directv.com.uy/directv.com.uy.config.js --channels=sites/directv.com.uy/directv.com.uy.channels.xml --output=guide.xml --days=2
-
 const { parser, url, request } = require('./directv.com.uy.config.js')
 const fs = require('fs')
 const path = require('path')
@@ -71,7 +69,7 @@ it('can parse response', () => {
 
 it('can handle empty guide', () => {
   const result = parser({
-    content: ``,
+    content: '',
     channel
   })
   expect(result).toMatchObject([])

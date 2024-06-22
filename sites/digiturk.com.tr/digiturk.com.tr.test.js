@@ -1,5 +1,3 @@
-// npx epg-grabber --config=sites/digiturk.com.tr/digiturk.com.tr.config.js --channels=sites/digiturk.com.tr/digiturk.com.tr.channels.xml --output=guide.xml --days=2
-
 const { parser, url } = require('./digiturk.com.tr.config.js')
 const fs = require('fs')
 const path = require('path')
@@ -17,7 +15,9 @@ const channel = {
 
 it('can generate valid url', () => {
   const result = url({ date, channel })
-  expect(result).toBe('https://www.digiturk.com.tr/_Ajax/getBroadcast.aspx?channelNo=14&date=19.01.2023&tomorrow=false&primetime=false')
+  expect(result).toBe(
+    'https://www.digiturk.com.tr/_Ajax/getBroadcast.aspx?channelNo=14&date=19.01.2023&tomorrow=false&primetime=false'
+  )
 })
 
 it('can parse response', () => {
@@ -42,6 +42,6 @@ it('can parse response', () => {
 })
 
 it('can handle empty guide', () => {
-  const result = parser({ content: `` })
+  const result = parser({ content: '' })
   expect(result).toMatchObject([])
 })

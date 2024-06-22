@@ -11,9 +11,7 @@ dayjs.extend(customParseFormat)
 module.exports = {
   site: 'arianaafgtv.com',
   days: 2,
-  url() {
-    return `https://www.arianaafgtv.com/index.html`
-  },
+  url: 'https://www.arianaafgtv.com/index.html',
   parser({ content, date }) {
     const programs = []
     const items = parseItems(content, date)

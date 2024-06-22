@@ -10,13 +10,17 @@ dayjs.extend(utc)
 dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
+const languages = { en: 'english', id: 'indonesia' }
+const cookies = {}
+const timeout = 30000
+
 module.exports = {
   site: 'mncvision.id',
   days: 2,
-  url: 'https://mncvision.id/schedule/table',
+  url: 'https://www.mncvision.id/schedule/table',
   request: {
     method: 'POST',
-    data: function ({ channel, date }) {
+    data({ channel, date }) {
       const formData = new URLSearchParams()
       formData.append('search_model', 'channel')
       formData.append('af0rmelement', 'aformelement')
@@ -26,32 +30,35 @@ module.exports = {
 
       return formData
     },
-    headers: {
-      'Content-Type': 'application/x-www-form-urlencoded'
+    async headers({ channel }) {
+      const headers = {
+        'Content-Type': 'application/x-www-form-urlencoded'
+      }
+      if (channel) {
+        if (!cookies[channel.lang]) {
+          cookies[channel.lang] = await loadLangCookies(channel)
+        }
+        if (cookies[channel.lang]) {
+          headers.Cookie = cookies[channel.lang]
+        }
+      }
+      return headers
     },
     jar: null
   },
-  async parser({ content, date, headers, channel }) {
+  async parser({ content, headers, date, channel }) {
     const programs = []
-    const cookies = parseCookies(headers)
-    if (!cookies) return programs
-    let items = parseItems(content)
-    if (!items.length) return programs
 
-    const pages = parsePages(content)
-    for (let url of pages) {
-      items = items.concat(parseItems(await loadNextPage(url, cookies)))
+    if (!cookies[channel.lang]) {
+      cookies[channel.lang] = parseCookies(headers)
     }
-
-    const langCookies = await loadLangCookies(channel)
-    if (!langCookies) return programs
-
+    const [$, items] = parseItems(content)
     for (const item of items) {
-      const $item = cheerio.load(item)
+      const $item = $(item)
       const start = parseStart($item, date)
       const duration = parseDuration($item)
       const stop = start.add(duration, 'm')
-      const description = await loadDescription($item, langCookies)
+      const description = await loadDescription($item, cookies[channel.lang])
       programs.push({
         title: parseTitle($item),
         season: parseSeason($item),
@@ -64,21 +71,23 @@ module.exports = {
 
     return programs
   },
-  async channels() {
-    const data = await axios
+  async channels({ lang = 'id' }) {
+    const axios = require('axios')
+    const cheerio = require('cheerio')
+    const result = await axios
       .get('https://www.mncvision.id/schedule')
       .then(response => response.data)
       .catch(console.error)
 
-    const $ = cheerio.load(data)
+    const $ = cheerio.load(result)
     const items = $('select[name="fchannel"] option').toArray()
     const channels = items.map(item => {
-      const $item = cheerio.load(item)
+      const $item = $(item)
 
       return {
-        lang: 'id',
-        site_id: $item('*').attr('value'),
-        name: $item('*').text()
+        lang,
+        site_id: $item.attr('value'),
+        name: $item.text().split(' - ')[0].trim()
       }
     })
 
@@ -88,20 +97,20 @@ module.exports = {
 
 function parseSeason($item) {
   const title = parseTitle($item)
-  const [_, season] = title.match(/ S(\d+)/) || [null, null]
+  const [, season] = title.match(/ S(\d+)/) || [null, null]
 
   return season ? parseInt(season) : null
 }
 
 function parseEpisode($item) {
   const title = parseTitle($item)
-  const [_, episode] = title.match(/ Ep (\d+)/) || [null, null]
+  const [, episode] = title.match(/ Ep (\d+)/) || [null, null]
 
   return episode ? parseInt(episode) : null
 }
 
 function parseDuration($item) {
-  let duration = $item('td:nth-child(3)').text()
+  let duration = $item.find('td:nth-child(3)').text()
   const match = duration.match(/(\d{2}):(\d{2})/)
   const hours = parseInt(match[1])
   const minutes = parseInt(match[2])
@@ -110,67 +119,41 @@ function parseDuration($item) {
 }
 
 function parseStart($item, date) {
-  let time = $item('td:nth-child(1)').text()
+  let time = $item.find('td:nth-child(1)').text()
   time = `${date.format('DD/MM/YYYY')} ${time}`
 
   return dayjs.tz(time, 'DD/MM/YYYY HH:mm', 'Asia/Jakarta')
 }
 
 function parseTitle($item) {
-  return $item('td:nth-child(2) > a').text()
+  return $item.find('td:nth-child(2) > a').text()
 }
 
 function parseItems(content) {
   const $ = cheerio.load(content)
 
-  return $('tr[valign="top"]').toArray()
-}
-
-function parsePages(content) {
-  const $ = cheerio.load(content)
-  const links = $('#schedule > div.schedule_search_result_container > div.box.well > a')
-    .map((i, el) => {
-      return $(el).attr('href')
-    })
-    .get()
-
-  return _.uniq(links)
-}
-
-function loadNextPage(url, cookies) {
-  return axios
-    .get(url, { headers: { Cookie: cookies }, timeout: 30000 })
-    .then(r => r.data)
-    .catch(err => {
-      console.log(err.message)
-
-      return null
-    })
+  return [$, $('tr[valign="top"]').toArray()]
 }
 
 function loadLangCookies(channel) {
-  const languages = {
-    en: 'english',
-    id: 'indonesia'
-  }
   const url = `https://www.mncvision.id/language_switcher/setlang/${languages[channel.lang]}/`
 
   return axios
-    .get(url, { timeout: 30000 })
+    .get(url, { timeout })
     .then(r => parseCookies(r.headers))
-    .catch(err => null)
+    .catch(error => console.error(error.message))
 }
 
 async function loadDescription($item, cookies) {
-  const url = $item('a').attr('href')
+  const url = $item.find('a').attr('href')
   if (!url) return null
   const content = await axios
     .get(url, {
       headers: { 'X-Requested-With': 'XMLHttpRequest', Cookie: cookies },
-      timeout: 30000
+      timeout
     })
     .then(r => r.data)
-    .catch(err => null)
+    .catch(error => console.error(error.message))
   if (!content) return null
 
   const $page = cheerio.load(content)
@@ -180,5 +163,11 @@ async function loadDescription($item, cookies) {
 }
 
 function parseCookies(headers) {
-  return Array.isArray(headers['set-cookie']) ? headers['set-cookie'].join(';') : null
+  const cookies = []
+  if (Array.isArray(headers['set-cookie'])) {
+    headers['set-cookie'].forEach(cookie => {
+      cookies.push(cookie.split('; ')[0])
+    })
+  }
+  return cookies.length ? cookies.join('; ') : null
 }

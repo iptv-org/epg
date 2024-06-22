@@ -1,5 +1,3 @@
-// npx epg-grabber --config=sites/tvguide.com/tvguide.com.config.js --channels=sites/tvguide.com/tvguide.com.channels.xml --output=guide.xml
-
 const { parser, url } = require('./tvguide.com.config.js')
 const fs = require('fs')
 const path = require('path')

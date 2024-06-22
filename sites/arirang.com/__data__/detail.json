@@ -1,0 +1,187 @@
+{
+    "resultCode": {
+        "code": 200000,
+        "http_status": 200,
+        "timestamp": 0,
+        "message": null,
+        "trace": null,
+        "access_token": null,
+        "expire_time": 0
+    },
+    "program_id": 173,
+    "order": 21,
+    "is_news_allow": true,
+    "bis_program": [
+        {
+            "bis_program_code": "2023003T",
+            "bis_program_title": "WITHIN THE FRAME [L]"
+        },
+        {
+            "bis_program_code": "2023004T",
+            "bis_program_title": "WITHIN THE FRAME [R]"
+        }
+    ],
+    "bis_bundle_program_code": "2023003T",
+    "bis_category_code": "시사보도",
+    "program_type": "tv",
+    "category_Info": [
+        {
+            "category_id": 29,
+            "local": "en",
+            "title": "Current Affairs"
+        },
+        {
+            "category_id": 29,
+            "local": "ko",
+            "title": "Current Affairs"
+        }
+    ],
+    "title": [
+        {
+            "lan_code": "en",
+            "text": "WITHIN THE FRAME [L]"
+        },
+        {
+            "lan_code": "ko",
+            "text": "WITHIN THE FRAME [L]"
+        }
+    ],
+    "content": [
+        {
+            "lan_code": "en",
+            "text": "NEWS<div></div>"
+        },
+        {
+            "lan_code": "ko",
+            "text": "NEWS 대담<div></div>"
+        }
+    ],
+    "property": {
+        "open_status": {
+            "is_allow": true,
+            "is_origin_allow": null,
+            "start_date": null,
+            "end_date": null
+        },
+        "is_onair": true,
+        "is_teaser_allow": false,
+        "running_time": 30,
+        "schedule": [
+            {
+                "week": [
+                    "Mon",
+                    "Tue",
+                    "Wed",
+                    "Thu",
+                    "Fri"
+                ],
+                "start_time": 1110
+            },
+            {
+                "week": [
+                    ""
+                ],
+                "start_time": -1
+            },
+            {
+                "week": [
+                    ""
+                ],
+                "start_time": -1
+            },
+            {
+                "week": [
+                    ""
+                ],
+                "start_time": -1
+            },
+            {
+                "week": [
+                    ""
+                ],
+                "start_time": -1
+            },
+            {
+                "week": [
+                    ""
+                ],
+                "start_time": -1
+            },
+            {
+                "week": [
+                    ""
+                ],
+                "start_time": -1
+            },
+            {
+                "week": [
+                    ""
+                ],
+                "start_time": -1
+            },
+            {
+                "week": [
+                    ""
+                ],
+                "start_time": -1
+            },
+            {
+                "week": [
+                    ""
+                ],
+                "start_time": -1
+            }
+        ]
+    },
+    "platform": {
+        "is_aos_allow": true,
+        "is_ios_allow": true,
+        "is_smat_tv_allow": true
+    },
+    "image": [
+        {
+            "order": 0,
+            "type": "horizontal",
+            "name": "2080840096998752900.png",
+            "action": null,
+            "url": "https://img.arirang.com/v1/AUTH_d52449c16d3b4bbca17d4fffd9fc44af/public/images/202308/2080840096998752900.png"
+        },
+        {
+            "order": 0,
+            "type": "vertical",
+            "name": "1773516657138860509.png",
+            "action": null,
+            "url": "https://img.arirang.com/v1/AUTH_d52449c16d3b4bbca17d4fffd9fc44af/public/images/202301/1773516657138860509.png"
+        },
+        {
+            "order": 0,
+            "type": "mobile",
+            "name": "1773516657893835229.png",
+            "action": null,
+            "url": "https://img.arirang.com/v1/AUTH_d52449c16d3b4bbca17d4fffd9fc44af/public/images/202301/1773516657893835229.png"
+        },
+        {
+            "order": 0,
+            "type": "pc",
+            "name": "1773742773929771485.png",
+            "action": null,
+            "url": "https://img.arirang.com/v1/AUTH_d52449c16d3b4bbca17d4fffd9fc44af/public/images/202301/1773742773929771485.png"
+        },
+        {
+            "order": 0,
+            "type": "smarttv",
+            "name": "1773742775607493085.png",
+            "action": null,
+            "url": "https://img.arirang.com/v1/AUTH_d52449c16d3b4bbca17d4fffd9fc44af/public/images/202301/1773742775607493085.png"
+        },
+        {
+            "order": 0,
+            "type": "square",
+            "name": "1773742767839642077.png",
+            "action": null,
+            "url": "https://img.arirang.com/v1/AUTH_d52449c16d3b4bbca17d4fffd9fc44af/public/images/202301/1773742767839642077.png"
+        }
+    ],
+    "reg_date": "2023-01-03 10:21:56.0",
+    "update_date": "2023-08-03 10:55:34.0"
+}

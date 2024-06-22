@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/foxtel.com.au/foxtel.com.au.config.js --output=./sites/foxtel.com.au/foxtel.com.au.channels.xml
-// npx epg-grabber --config=sites/foxtel.com.au/foxtel.com.au.config.js --channels=sites/foxtel.com.au/foxtel.com.au.channels.xml --output=guide.xml --days=2
-
 const { parser, url, request } = require('./foxtel.com.au.config.js')
 const fs = require('fs')
 const path = require('path')

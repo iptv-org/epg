@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/cableplus.com.uy/cableplus.com.uy.config.js --output=./sites/cableplus.com.uy/cableplus.com.uy.channels.xml
-// npx epg-grabber --config=sites/cableplus.com.uy/cableplus.com.uy.config.js --channels=sites/cableplus.com.uy/cableplus.com.uy.channels.xml --output=guide.xml --days=2
-
 const { parser, url, request } = require('./cableplus.com.uy.config.js')
 const fs = require('fs')
 const path = require('path')
@@ -53,7 +50,7 @@ it('can parse response', () => {
   expect(results[0]).toMatchObject({
     start: '2023-02-12T09:30:00.000Z',
     stop: '2023-02-12T10:30:00.000Z',
-    title: `Revista agropecuaria`,
+    title: 'Revista agropecuaria',
     icon: 'https://www.reportv.com.ar/buscador/img/Programas/2797844.jpg',
     categories: []
   })
@@ -61,7 +58,7 @@ it('can parse response', () => {
   expect(results[4]).toMatchObject({
     start: '2023-02-12T12:30:00.000Z',
     stop: '2023-02-12T13:30:00.000Z',
-    title: `De pago en pago`,
+    title: 'De pago en pago',
     icon: 'https://www.reportv.com.ar/buscador/img/Programas/3772835.jpg',
     categories: ['Cultural']
   })

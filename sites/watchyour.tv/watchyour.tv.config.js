@@ -4,7 +4,7 @@ const axios = require('axios')
 module.exports = {
   site: 'watchyour.tv',
   days: 2,
-  url: `https://www.watchyour.tv/guide.json`,
+  url: 'https://www.watchyour.tv/guide.json',
   request: {
     cache: {
       ttl: 60 * 60 * 1000 // 1 hour
@@ -29,11 +29,12 @@ module.exports = {
   },
   async channels() {
     const data = await axios
-      .get(`https://www.watchyour.tv/guide.json`)
+      .get('https://www.watchyour.tv/guide.json')
       .then(r => r.data)
       .catch(console.log)
 
     return data.map(item => ({
+      lang: 'en',
       site_id: item.id,
       name: item.name
     }))

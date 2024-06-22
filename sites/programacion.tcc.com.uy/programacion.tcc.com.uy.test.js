@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/programacion.tcc.com.uy/programacion.tcc.com.uy.config.js --output=./sites/programacion.tcc.com.uy/programacion.tcc.com.uy.channels.xml
-// npx epg-grabber --config=sites/programacion.tcc.com.uy/programacion.tcc.com.uy.config.js --channels=sites/programacion.tcc.com.uy/programacion.tcc.com.uy.channels.xml --output=guide.xml --timeout=30000 --days=2
-
 const { parser, url } = require('./programacion.tcc.com.uy.config.js')
 const fs = require('fs')
 const path = require('path')
@@ -18,7 +15,7 @@ const channel = {
 
 it('can generate valid url', () => {
   expect(url({ date })).toBe(
-    `https://www.tccvivo.com.uy/api/v1/navigation_filter/1575/filter/?cable_operator=1&emission_start=2023-02-11T00:00:00Z&emission_end=2023-02-12T00:00:00Z&format=json`
+    'https://www.tccvivo.com.uy/api/v1/navigation_filter/1575/filter/?cable_operator=1&emission_start=2023-02-11T00:00:00Z&emission_end=2023-02-12T00:00:00Z&format=json'
   )
 })
 

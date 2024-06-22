@@ -47,7 +47,7 @@ module.exports = {
   },
   async channels() {
     let html = await axios
-      .get(`https://www.zuragt.mn/`)
+      .get('https://www.zuragt.mn/')
       .then(r => r.data)
       .catch(console.log)
     let $ = cheerio.load(html)
@@ -60,7 +60,7 @@ module.exports = {
 
         if (!link) return null
 
-        const [_, site_id] = link.match(/\/channel\/(.*)\//) || [null, null]
+        const [, site_id] = link.match(/\/channel\/(.*)\//) || [null, null]
 
         return {
           lang: 'mn',

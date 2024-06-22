@@ -1,6 +1,3 @@
-// node ./scripts/channels.js --config=./sites/tvarenasport.com/tvarenasport.com.config.js --output=./sites/tvarenasport.com/tvarenasport.com.channels.xml --set=country:rs
-// npx epg-grabber --config=sites/tvarenasport.com/tvarenasport.com.config.js --channels=sites/tvarenasport.com/tvarenasport.com.channels.xml --output=guide.xml --days=2
-
 const { parser, url } = require('./tvarenasport.com.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
@@ -19,7 +16,8 @@ it('can generate valid url', () => {
 })
 
 it('can parse response', () => {
-  const content = `{"items":[{"id":2857,"title":"Crvena zvezda mts - Partizan NIS","start":"2021-11-16T23:30:00Z","end":"2021-11-17T01:30:00Z","sport":"ABA LIGA","league":"Ko\u0161arka","group":"380","isLive":false,"doNotMiss":false,"domain":"srb"},{"id":3155,"title":"Sao Paulo - Flamengo","start":"2021-11-17T00:00:00Z","end":"2021-11-17T02:00:00Z","sport":"BRAZILSKA LIGA","league":"Fudbal","group":"381","isLive":false,"doNotMiss":false,"domain":"srb"}]}`
+  const content =
+    '{"items":[{"id":2857,"title":"Crvena zvezda mts - Partizan NIS","start":"2021-11-16T23:30:00Z","end":"2021-11-17T01:30:00Z","sport":"ABA LIGA","league":"Ko\u0161arka","group":"380","isLive":false,"doNotMiss":false,"domain":"srb"},{"id":3155,"title":"Sao Paulo - Flamengo","start":"2021-11-17T00:00:00Z","end":"2021-11-17T02:00:00Z","sport":"BRAZILSKA LIGA","league":"Fudbal","group":"381","isLive":false,"doNotMiss":false,"domain":"srb"}]}'
   const result = parser({ channel, content }).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
@@ -41,7 +39,7 @@ it('can handle empty guide', () => {
   const result = parser({
     date,
     channel,
-    content: `{"channels":[]}`
+    content: '{"channels":[]}'
   })
   expect(result).toMatchObject([])
 })

@@ -51,14 +51,14 @@ module.exports = {
 }
 
 function parseStart(item) {
-  const [_, M, D, YYYY] = item.adddate.match(/(\d+)\/(\d+)\/(\d+) /)
+  const [, M, D, YYYY] = item.adddate.match(/(\d+)\/(\d+)\/(\d+) /)
   const [HH, mm] = item.start_Time.split(':')
 
   return dayjs.tz(`${YYYY}-${M}-${D}T${HH}:${mm}:00`, 'YYYY-M-DTHH:mm:ss', 'Asia/Riyadh')
 }
 
 function parseDuration(item) {
-  const [__, HH, mm, ss] = item.duration.match(/(\d+):(\d+):(\d+)/)
+  const [, HH, mm, ss] = item.duration.match(/(\d+):(\d+):(\d+)/)
 
   return parseInt(HH) * 3600 + parseInt(mm) * 60 + parseInt(ss)
 }

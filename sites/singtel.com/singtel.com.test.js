@@ -1,13 +1,10 @@
-// npm run channels:parse -- --config=./sites/singtel.com/singtel.com.config.js --output=./sites/singtel.com/singtel.com.channels.xml
-// npx epg-grabber --config=sites/singtel.com/singtel.com.config.js --channels=sites/singtel.com/singtel.com.channels.xml --output=guide.xml --days=2
-
-const { parser, url, request } = require('./singtel.com.config.js')
+const { parser, url } = require('./singtel.com.config.js')
 const fs = require('fs')
 const path = require('path')
-const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
+
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
@@ -25,10 +22,9 @@ it('can generate valid url', () => {
   )
 })
 
-
 it('can parse response', () => {
   const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'))
-  let results = parser({ content, channel})
+  let results = parser({ content, channel })
   results = results.map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
@@ -41,7 +37,7 @@ it('can parse response', () => {
     stop: '2023-01-28T17:30:00.000Z',
     title: 'Hip Hop Family Christmas Wedding',
     description:
-      `Hip Hop's most famous family is back, and this time Christmas wedding bells are ringing! Jessica and Jayson are getting ready to say their "I do's".`,
+      'Hip Hop\'s most famous family is back, and this time Christmas wedding bells are ringing! Jessica and Jayson are getting ready to say their "I do\'s".',
     category: 'Specials'
   })
 
@@ -50,10 +46,9 @@ it('can parse response', () => {
     stop: '2023-01-29T01:30:00.000Z',
     title: 'The Daily Show',
     description:
-      "The Daily Show correspondents tackle the biggest stories in news, politics and pop culture.",
+      'The Daily Show correspondents tackle the biggest stories in news, politics and pop culture.',
     category: 'English Entertainment'
   })
-
 })
 
 it('can handle empty guide', () => {

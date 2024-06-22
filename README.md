@@ -1,78 +1,138 @@
 # EPG
 
-Utilities for downloading the EPG (Electronic Program Guide) for thousands of TV channels from hundreds of sources.
-
-__IMPORTANT:__ We are no longer able to provide pre-made guides due to the disabling of GitHub Actions (Read more: https://github.com/orgs/iptv-org/discussions/12#discussioncomment-5219050). This repository now contains only utilities and configurations for downloading guides yourself.
+Tools for downloading the EPG (Electronic Program Guide) for thousands of TV channels from hundreds of sources.
 
 ## Table of contents
 
-- 🚀 [How to use?](#how-to-use)
+- ✨ [Installation](#installation)
+- 🚀 [Usage](#usage)
+- 💫 [Update](#update)
 - 📺 [Playlists](#playlists)
 - 🗄 [Database](#database)
 - 👨‍💻 [API](#api)
 - 📚 [Resources](#resources)
 - 💬 [Discussions](#discussions)
 - 🛠 [Contribution](#contribution)
-- © [License](#license)
+- 📄 [License](#license)
 
-## How to use?
+## Installation
 
-To download the guide from one of the supported sites you must have [Node.js](https://nodejs.org/en) installed on your computer first.
+First, you need to install [Node.js](https://nodejs.org/en) on your computer. You will also need to install [Git](https://git-scm.com/downloads) to follow these instructions.
 
-You will also need to install [Git](https://git-scm.com/downloads) to follow these instructions.
-
-After installing them, you need to open the [Console](https://en.wikipedia.org/wiki/Windows_Console) (or [Terminal](https://en.wikipedia.org/wiki/Terminal_(macOS)) if you have macOS) and type the following command:
+After that open the [Console](https://en.wikipedia.org/wiki/Windows_Console) (or [Terminal](<https://en.wikipedia.org/wiki/Terminal_(macOS)>) if you have macOS) and type the following command:
 
 ```sh
 git clone --depth 1 -b master https://github.com/iptv-org/epg.git
 ```
 
-Then also through the Console navigate to the just downloaded `epg` folder:
+Then navigate to the downloaded `epg` folder:
 
 ```sh
 cd epg
 ```
 
-And install all the necessary dependencies:
+And install all the dependencies:
 
 ```sh
 npm install
 ```
 
-Now choose one of the sources (their complete list can be found in the [/sites](https://github.com/iptv-org/epg/tree/master/sites) folder) and start downloading the guide using the command:
+## Usage
+
+To start the download of the guide, select one of the [supported sites](SITES.md) and paste its name into the command below:
 
 ```sh
-# Windows
-set SITE=example.com&& npm run grab
-
-# Linux/macOS
-SITE=example.com npm run grab
+npm run grab -- --site=example.com
 ```
 
-After the download is completed in the current directory will appear a new folder `guides`, which will store all XML files:
+And once the download is complete, the guide will be saved to the `guide.xml` file.
 
 ```sh
-guides
-└── en
-    └── example.com.xml
+Usage: npm run grab -- [options]
+
+Options:
+  -s, --site <name>             Name of the site to parse
+  -c, --channels <path>         Path to *.channels.xml file (required if the "--site" attribute is
+                                not specified)
+  -o, --output <path>           Path to output file (default: "guide.xml")
+  -l, --lang <code>             Filter channels by language (ISO 639-2 code)
+  -t, --timeout <milliseconds>  Override the default timeout for each request
+  -d, --delay <milliseconds>    Override the default delay between request
+  --days <days>                 Override the number of days for which the program will be loaded
+                                (defaults to the value from the site config)
+  --maxConnections <number>     Limit on the number of concurrent requests (default: 1)
+  --cron <expression>           Schedule a script run (example: "0 0 * * *")
+  --gzip                        Create a compressed version of the guide as well (default: false)
 ```
 
-Also you can make these guides available via URL by running your own server:
+### Access the guide by URL
+
+You can make the guide available via URL by running your own server:
 
 ```sh
 npm run serve
 ```
 
-After that all the downloaded guides will be available at a link like this:
+After that, the guide will be available at the link:
 
 ```
-http://localhost:3000/guides/en/example.com.xml
+http://localhost:3000/guide.xml
 ```
 
-In addition, they will be available on your local network at:
+In addition it will be available to other devices on the same local network at the address:
 
 ```
-http://<your_local_ip_address>:3000/guides/en/example.com.xml
+http://<your_local_ip_address>:3000/guide.xml
+```
+
+### Parallel downloading
+
+By default, the guide for each channel is downloaded one by one, but you can change this behavior by increasing the number of simultaneous requests using the `--maxConnections` attribute:
+
+```sh
+npm run grab -- --site=example.com --maxConnections=10
+```
+
+But be aware that under heavy load, some sites may start return an error or completely block your access.
+
+### Use custom channel list
+
+Create an XML file and copy the descriptions of all the channels you need from the [/sites](sites) into it:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<channels>
+  <channel site="arirang.com" lang="en" xmltv_id="ArirangTV.kr" site_id="CH_K">Arirang TV</channel>
+  ...
+</channels>
+```
+
+And then specify the path to that file via the `--channels` attribute:
+
+```sh
+npm run grab -- --channels=path/to/custom.channels.xml
+```
+
+### Run on schedule
+
+If you want to download the guide automatically on a schedule, you need to pass a valid [cron expression](https://crontab.guru/) to the script using the `--cron` attribute:
+
+```sh
+npm run grab -- --site=example.com --cron="0 0 * * *"
+```
+
+## Update
+
+If you have downloaded the repository code according to the instructions above, then to update it will be enough to run the command:
+
+```sh
+git pull
+```
+
+And then update all the dependencies:
+
+```sh
+npm install
 ```
 
 ## Playlists

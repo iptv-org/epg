@@ -1,4 +1,7 @@
 const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+
+dayjs.extend(utc)
 
 module.exports = {
   site: 'foxsports.com.au',
@@ -28,6 +31,30 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels() {
+    const axios = require('axios')
+    const data = await axios
+      .get(
+        `https://tvguide.foxsports.com.au/granite-api/programmes.json?from=${dayjs().format(
+          'YYYY-MM-DD'
+        )}&to=${dayjs().add(1, 'd').format('YYYY-MM-DD')}`
+      )
+      .then(r => r.data)
+      .catch(console.log)
+
+    let channels = {}
+    data['channel-programme'].forEach(item => {
+      if (channels[item.channelId]) return
+
+      channels[item.channelId] = {
+        lang: 'en',
+        site_id: item.channelId,
+        name: item.channelName
+      }
+    })
+
+    return Object.values(channels)
   }
 }
 

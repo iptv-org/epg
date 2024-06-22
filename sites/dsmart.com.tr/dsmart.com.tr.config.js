@@ -17,10 +17,9 @@ module.exports = {
     return `${API_ENDPOINT}?page=${page}&limit=1&day=${date.format('YYYY-MM-DD')}`
   },
   parser: function ({ content, channel }) {
-    let offset = -1
     let programs = []
     const items = parseItems(content, channel)
-    items.forEach((item, i) => {
+    items.forEach(item => {
       const prev = programs[programs.length - 1]
       let start
       if (prev) {
@@ -90,7 +89,7 @@ function parseStart(item, date) {
 }
 
 function parseDuration(item) {
-  const [_, H, mm, ss] = item.duration.match(/(\d+):(\d+):(\d+)$/)
+  const [, H, mm, ss] = item.duration.match(/(\d+):(\d+):(\d+)$/)
 
   return parseInt(H) * 3600 + parseInt(mm) * 60 + parseInt(ss)
 }

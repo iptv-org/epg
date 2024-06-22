@@ -1,12 +1,10 @@
+const axios = require('axios')
 const cheerio = require('cheerio')
 const { DateTime } = require('luxon')
 
 module.exports = {
   site: 'cosmote.gr',
   days: 2,
-  request: {
-    timeout: 30000 // 30 seconds
-  },
   url: function ({ date, channel }) {
     return `https://www.cosmotetv.gr/portal/residential/program/epg/programchannel?p_p_id=channelprogram_WAR_OTETVportlet&p_p_lifecycle=0&_channelprogram_WAR_OTETVportlet_platform=IPTV&_channelprogram_WAR_OTETVportlet_date=${date.format(
       'DD-MM-YYYY'
@@ -41,6 +39,30 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels() {
+    const data = await axios
+      .get(`https://www.cosmotetv.gr/portal/residential/program`)
+      .then(r => r.data)
+      .catch(console.log)
+
+    let channels = []
+    const $ = cheerio.load(data)
+    $('#program-channels-selectbox > option').each((i, el) => {
+      const value = $(el).attr('value')
+      if (!value || value == '-1') return
+
+      const url = new URL(decodeURIComponent(value))
+      const site_id = url.searchParams.get('_channelprogram_WAR_OTETVportlet_articleTitleUrl')
+
+      channels.push({
+        lang: 'el',
+        site_id,
+        name: $(el).text().trim()
+      })
+    })
+
+    return channels
   }
 }
 
@@ -55,7 +77,7 @@ function parseCategory($item) {
     .end()
     .text()
     .trim()
-  const [_, category] = typeString.match(/\| (.*)/) || [null, null]
+  const [, category] = typeString.match(/\| (.*)/) || [null, null]
 
   return category
 }

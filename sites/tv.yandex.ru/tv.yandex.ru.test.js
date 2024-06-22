@@ -1,34 +1,71 @@
-// npx epg-grabber --config=sites/tv.yandex.ru/tv.yandex.ru.config.js --channels=sites/tv.yandex.ru/tv.yandex.ru.channels.xml --output=guide.xml --days=2
-
 const { parser, url, request } = require('./tv.yandex.ru.config.js')
+const fs = require('fs')
+const path = require('path')
+const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
+
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
-const date = dayjs.utc('2021-11-25', 'YYYY-MM-DD').startOf('d')
+jest.mock('axios')
+
+const date = dayjs.utc('2023-11-26').startOf('d')
 const channel = {
-  site_id: '162#31-kanal-429',
-  xmltv_id: '31Kanal.kz'
+  site_id: '16',
+  xmltv_id: 'ChannelOne.ru'
 }
-const content = `<!DOCTYPE html><html lang="ru" class="device_not-touch device_not-svg"> <head></head> <body class="page page_controller_channel"> <script nonce="llVCGFBPYt0ZRILmUsvJAQ=="> window.__EXPERIMENTS__={};window.__INITIAL_STATE__ = {"channel":{"channel":{"title":"31 канал","familyTitle":"31 канал","transliteratedFamilyTitle":"31-kanal-429","logo":{"original":{"src":"//avatars.mds.yandex.net/get-tv-channel-logos/30303/2a00000170e2a3ef22bf7cfa4ff11e8405de/orig","original":true},"sizes":{"38":{"src":"//avatars.mds.yandex.net/get-tv-channel-logos/30303/2a00000170e2a3ef22bf7cfa4ff11e8405de/small"},"48":{"src":"//avatars.mds.yandex.net/get-tv-channel-logos/30303/2a00000170e2a3ef22bf7cfa4ff11e8405de/48x72"},"64":{"src":"//avatars.mds.yandex.net/get-tv-channel-logos/30303/2a00000170e2a3ef22bf7cfa4ff11e8405de/64x36"},"80":{"src":"//avatars.mds.yandex.net/get-tv-channel-logos/30303/2a00000170e2a3ef22bf7cfa4ff11e8405de/80x60"},"114":{"src":"//avatars.mds.yandex.net/get-tv-channel-logos/30303/2a00000170e2a3ef22bf7cfa4ff11e8405de/114x80"},"130":{"src":"//avatars.mds.yandex.net/get-tv-channel-logos/30303/2a00000170e2a3ef22bf7cfa4ff11e8405de/130x80"},"160":{"src":"//avatars.mds.yandex.net/get-tv-channel-logos/30303/2a00000170e2a3ef22bf7cfa4ff11e8405de/170x100"}},"originalSize":{"src":"//avatars.mds.yandex.net/get-tv-channel-logos/30303/2a00000170e2a3ef22bf7cfa4ff11e8405de/orig","original":true},"maxSize":{"src":"//avatars.mds.yandex.net/get-tv-channel-logos/30303/2a00000170e2a3ef22bf7cfa4ff11e8405de/170x100"}},"synonyms":[],"familyId":429,"id":129,"genres":[],"type":"regional","description":"31 канал - общенациональный казахстанский телеканал. Сетка вещания состоит из программных продуктов местного и зарубежного производства. Основной контент канала – развлекательные шоу, мультфильмы, художественные фильмы и сериалы. Также в эфире выпуски новостей, сообщающие о событиях в стране и мире. Вещание ведется на казахском и русском языках.","url":"/162/channel/31-kanal-429?date=2021-11-25","isFavorite":false,"hasBroadcasting":false,"broadcastingUrl":"","hasBroadcastingPlayer":false,"broadcastingPlayerUrl":""},"schedule":{"finish":"2021-11-29T05:00:00+06:00","hasFinished":false,"events":[{"id":187687780,"channelId":129,"channelFamilyId":429,"live":false,"episode":{"id":4191488,"description":"","title":"Ризамын (каз.)."},"program":{"trailers":[],"onlines":[],"id":4191488,"type":{"id":6,"name":"досуг","alias":"entertain","isFilm":false,"isSerial":false,"isForChildren":false},"title":"Ризамын (каз.).","transliteratedTitle":"rizamyn-kaz-4191488","description":"kLX6FVKAIiDCGBFE","favourite":false,"tags":[],"displayIfNoEvents":false,"duplicateIds":[4191488],"url":"/162/program/rizamyn-kaz-4191488","images":[]},"start":"2021-11-25T05:00:00+06:00","finish":"2021-11-25T05:58:00+06:00","yacFamilyId":0,"title":"Ризамын (каз.).","programTitle":"","episodeTitle":"Ризамын (каз.).","seasonTitle":"","url":"/162/program/rizamyn-kaz-4191488?eventId=187687780","hasDescription":false,"hasReminder":false,"hasReminderButton":false,"startTime":"05:00","hasStarted":true,"isNow":true,"hasFinished":true,"progress":100,"humanDate":"25 ноября, четверг, 05:00 — 05:58"}]},"recommendedAll":[]},"favoriteChannels":[],"recommendedAll":[],"reminders":{"items":[]},"wannaSee":{"items":[]}};window.__INITIAL_SK__={key: '429d0d0e3e22742c71eaa3cf71a440780c91cdd2:1637801857060', expire: 1637888257060}window.__INIT_APP__=true window.__USER_SESSION_ID__='d1451a74-4dd1-4bd6-9b19-18de14bc6dd0' window.__AAB__=true window.process={env:{YANDEX_ENV: 'production', IS_ADAPTIVE: false, IS_DEVELOP: false, IS_QA: false, IS_PRODUCTION: true}}</script> </body></html>`
+axios.get.mockImplementation((url, opts) => {
+  if (url === 'https://tv.yandex.ru/?date=2023-11-26&grid=all&period=all-day') {
+    return Promise.resolve({
+      headers: {},
+      data: fs.readFileSync(path.resolve(__dirname, '__data__/content.html'))
+    })
+  }
+  if (url === 'https://tv.yandex.ru/api/120809?date=2023-11-26&grid=all&period=all-day') {
+    return Promise.resolve({
+      headers: {},
+      data: JSON.parse(fs.readFileSync(path.resolve(__dirname, '__data__/schedule.json')))
+    })
+  }
+  if (url === 'https://tv.yandex.ru/api/120809/main/chunk?page=0&date=2023-11-26&period=all-day&offset=0&limit=11') {
+    return Promise.resolve({
+      headers: {},
+      data: JSON.parse(fs.readFileSync(path.resolve(__dirname, '__data__/schedule0.json')))
+    })
+  }
+  if (url === 'https://tv.yandex.ru/api/120809/event?eventId=217749657&programCoId=') {
+    return Promise.resolve({
+      headers: {},
+      data: JSON.parse(fs.readFileSync(path.resolve(__dirname, '__data__/program.json')))
+    })
+  }
+})
 
 it('can generate valid url', () => {
-  expect(url({ channel, date })).toBe(
-    'https://tv.yandex.ru/162/channel/31-kanal-429?date=2021-11-25'
+  expect(url({ date })).toBe(
+    'https://tv.yandex.ru/?date=2023-11-26&grid=all&period=all-day'
   )
 })
 
 it('can generate valid request headers', () => {
   expect(request.headers).toMatchObject({
     Cookie:
-      'yandexuid=8747786251615498142; Expires=Tue, 11 Mar 2031 21:29:02 GMT; Domain=yandex.ru; Path=/'
+      'cycada=3w11iWu+2+o6iIIiI/S1/k9lFIb6y+G6SW6hsbLoPJg=; ' +
+      'i=0nUBW1d6GpFmpLRIuHYGulEA4alIC2j4WS+WYGcusydL7lcrG9loWX8qrFEBOqg54KZxGwCVaZhZ1THYgoIo0T69iCY=; ' +
+      'spravka=dD0xNzAxMjI3MTk1O2k9MzYuODQuOTguMTcxO0Q9Njk4NDQwRkRDODk5QUEzMDJCNzI5NTJBMTM4RTY2ODNEMzQyNkM1MjI5QTkyNDI3NUJGMzMzQUJEMUZFQjMyQzczM0I2QzE0QTRDQkJFODY5Nzk0MjhGNkEzQjQ5NDJBMzcxQzIzMjE3RTRENkVDOUU1NEE1RDVFNDg0RUQ1RTI3OUNGNzlCMEYzNzUyMDcyNDhGQkVCNkIyMDg5NTMwMzc1QkZEQTlGNEU7dT0xNzAxMjI3MTk1NDg5NDIyODkzO2g9OTRmN2FiNTMxZmJjNDg5MjM4ZDk4Y2ZkN2E0ZmY0YmI=; ' +
+      'yandexuid=7536067781700842414; ' +
+      'yashr=7271154091700842416; ' +
+      'user_display=696'
   })
 })
 
-it('can parse response', () => {
-  const result = parser({ content }).map(p => {
+it('can parse response', async () => {
+  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.html'))
+  const result = (
+    await parser({ content, date, channel })
+  ).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
     return p
@@ -36,20 +73,20 @@ it('can parse response', () => {
 
   expect(result).toMatchObject([
     {
-      start: '2021-11-24T23:00:00.000Z',
-      stop: '2021-11-24T23:58:00.000Z',
-      title: `Ризамын (каз.).`,
+      start: '2023-11-26T01:35:00.000Z',
+      stop: '2023-11-26T02:10:00.000Z',
+      title: 'ПОДКАСТ.ЛАБ. Мелодии моей жизни',
       category: 'досуг',
-      description: 'kLX6FVKAIiDCGBFE'
+      description: 'Впереди вся ночь и есть о чем поговорить. Фильмы, музыка, любовь, звезды, еда, мода, анекдоты, спорт, деньги, настоящее, будущее - все это в творческом эксперименте.\nЛариса Гузеева читает любовные письма. Леонид Якубович рассказывает, кого не берут в пилоты. Арина Холина - какой секс способен довести до мужа или до развода. Валерий Сюткин на ходу сочиняет песню для Карины Кросс и Вали Карнавал. Дмитрий Дибров дарит новую жизнь любимой \"Антропологии\". Денис Казанский - все о футболе, хоккее и не только.\n\"ПОДКАСТЫ. ЛАБ\" - серия подкастов разной тематики, которые невозможно проспать. Интеллектуальные дискуссии после полуночи с самыми компетентными экспертами и актуальными спикерами.'
     }
   ])
 })
 
-it('can handle empty guide', () => {
-  const result = parser({
+it('can handle empty guide', async () => {
+  const result = await parser({
     date,
     channel,
-    content: `<!DOCTYPE html><html><head></head><body></body></html>`
+    content: '<!DOCTYPE html><html><head></head><body></body></html>'
   })
   expect(result).toMatchObject([])
 })

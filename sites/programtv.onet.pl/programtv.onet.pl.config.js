@@ -36,6 +36,30 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels() {
+    const axios = require('axios')
+    const data = await axios
+      .get('https://programtv.onet.pl/stacje')
+      .then(r => r.data)
+      .catch(console.log)
+
+    let channels = []
+
+    const $ = cheerio.load(data)
+    $('ul.channelList a').each((i, el) => {
+      const name = $(el).text()
+      const url = $(el).attr('href')
+      const [, site_id] = url.match(/^\/program\-tv\/(.*)$/i)
+
+      channels.push({
+        lang: 'pl',
+        site_id,
+        name
+      })
+    })
+
+    return channels
   }
 }
 

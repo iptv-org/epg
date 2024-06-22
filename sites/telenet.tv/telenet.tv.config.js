@@ -2,7 +2,7 @@ const axios = require('axios')
 const dayjs = require('dayjs')
 
 const API_STATIC_ENDPOINT = 'https://static.spark.telenet.tv/eng/web/epg-service-lite/be'
-const API_PROD_ENDPOINT = 'https://prod.spark.telenet.tv/eng/web/linear-service/v2'
+const API_PROD_ENDPOINT = 'https://spark-prod-be.gnp.cloud.telenet.tv/eng/web/linear-service/v2'
 
 module.exports = {
   site: 'telenet.tv',
@@ -76,13 +76,13 @@ module.exports = {
   },
   async channels() {
     const data = await axios
-      .get(`${API_PROD_ENDPOINT}/channels?cityId=65535&language=en&productClass=Orion-DASH`)
+      .get(`${API_PROD_ENDPOINT}/channels?cityId=28001&language=en&productClass=Orion-DASH`)
       .then(r => r.data)
       .catch(console.log)
 
-    return data.channels.map(item => {
+    return data.map(item => {
       return {
-        lang: 'be',
+        lang: 'nl',
         site_id: item.id,
         name: item.name
       }

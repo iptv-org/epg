@@ -1,6 +1,3 @@
-// npm run channels:parse -- --config=./sites/dstv.com/dstv.com.config.js --output=./sites/dstv.com/dstv.com.channels.xml --set=country:zaf
-// npx epg-grabber --config=sites/dstv.com/dstv.com.config.js --channels=sites/dstv.com/dstv.com.channels.xml --output=guide.xml --days=2
-
 const { parser, url } = require('./dstv.com.config.js')
 const axios = require('axios')
 const fs = require('fs')
@@ -101,7 +98,7 @@ it('can parse response for NG', async () => {
 
 it('can handle empty guide', done => {
   parser({
-    content: `{"Total":0,"Channels":[]}`,
+    content: '{"Total":0,"Channels":[]}',
     channel: channelZA
   })
     .then(result => {

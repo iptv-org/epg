@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<site site="rtmklik.rtm.gov.my">
-  <channels>
-    <channel lang="ms" xmltv_id="TV1.my" site_id="1">TV1</channel>
-    <channel lang="ms" xmltv_id="TV2.my" site_id="2">TV2</channel>
-    <channel lang="ms" xmltv_id="Okey.my" site_id="3">RTM TV Okey</channel>
-    <channel lang="ms" xmltv_id="SukanRTM.my" site_id="4">Sukan RTM</channel>
-    <channel lang="ms" xmltv_id="BeritaRTM.my" site_id="7">Berita RTM</channel>
-    <channel lang="ms" xmltv_id="TV6.my" site_id="8">TV6</channel>
-    <!-- <channel lang="ms" xmltv_id="[-TBA-]" site_id="9">RTM Parlimen Dewan Rakyat</channel> -->
-    <!-- <channel lang="ms" xmltv_id="[-TBA-]" site_id="10">RTM Parlimen Dewan Negara</channel> -->
-  </channels>
-</site>
+<channels>
+  <channel site="rtmklik.rtm.gov.my" lang="ms" xmltv_id="" site_id="10">Dewan Negara</channel>
+  <channel site="rtmklik.rtm.gov.my" lang="ms" xmltv_id="" site_id="9">Dewan Rakyat</channel>
+  <channel site="rtmklik.rtm.gov.my" lang="ms" xmltv_id="BeritaRTM.my" site_id="7">Berita RTM</channel>
+  <channel site="rtmklik.rtm.gov.my" lang="ms" xmltv_id="Okey.my" site_id="3">Okey</channel>
+  <channel site="rtmklik.rtm.gov.my" lang="ms" xmltv_id="SukanRTM.my" site_id="4">Sukan RTM</channel>
+  <channel site="rtmklik.rtm.gov.my" lang="ms" xmltv_id="TV1.my" site_id="1">TV1</channel>
+  <channel site="rtmklik.rtm.gov.my" lang="ms" xmltv_id="TV2.my" site_id="2">TV2</channel>
+  <channel site="rtmklik.rtm.gov.my" lang="ms" xmltv_id="TV6.my" site_id="8">TV6</channel>
+</channels>

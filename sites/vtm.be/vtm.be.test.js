@@ -1,5 +1,3 @@
-// npx epg-grabber --config=sites/vtm.be/vtm.be.config.js --channels=sites/vtm.be/vtm.be.channels.xml --output=guide.xml --days=2
-
 const { parser, url } = require('./vtm.be.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
@@ -28,7 +26,8 @@ it('can parse response', () => {
       stop: '2021-11-11T00:20:00.000Z',
       title: 'Wooninspiraties',
       icon: 'https://images4.persgroep.net/rcs/z5qrZHumkjuN5rWzoaRJ_BTdL7A/diocontent/209688322/_fill/600/400?appId=da11c75db9b73ea0f41f0cd0da631c71',
-      description: `Een team gaat op pad om inspiratie op te doen over alles wat met wonen en leven te maken heeft; Ze trekken heel het land door om de laatste trends en tips op het gebied van wonen te achterhalen.`,
+      description:
+        'Een team gaat op pad om inspiratie op te doen over alles wat met wonen en leven te maken heeft; Ze trekken heel het land door om de laatste trends en tips op het gebied van wonen te achterhalen.',
       category: 'Magazine'
     }
   ])
@@ -38,7 +37,7 @@ it('can handle empty guide', () => {
   const result = parser({
     date,
     channel,
-    content: `<html lang="nl"> <head></head> <body></body></html>`
+    content: '<html lang="nl"> <head></head> <body></body></html>'
   })
   expect(result).toMatchObject([])
 })

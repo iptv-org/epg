@@ -1,116 +1,262 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<site site="telenet.tv">
-  <channels>
-    <channel lang="en" xmltv_id="2MInternational.ma" site_id="2mmonde">2M Monde</channel>
-    <channel lang="fr" xmltv_id="AB3.be" site_id="ab3">AB 3</channel>
-    <channel lang="en" xmltv_id="AlJazeeraEnglish.qa" site_id="aljazeeraeng">Al Jazeera English</channel>
-    <channel lang="nl" xmltv_id="AnimalPlanetNetherlands.nl" site_id="animalplanethd">Animal Planet Europe</channel>
-    <!-- <channel lang="nl" xmltv_id="" site_id="artebelgique">ARTE Belgique</channel> -->
-    <channel lang="nl" xmltv_id="ATV.be" site_id="atv">ATV</channel>
-    <channel lang="nl" xmltv_id="AVSGent.be" site_id="avsgent">AVS Gent</channel>
-    <channel lang="nl" xmltv_id="BabyTV.uk" site_id="babytv">Baby TV Europe</channel>
-    <channel lang="nl" xmltv_id="BBCEntertainment.uk" site_id="bbcprime">BBC Entertainment Europe</channel>
-    <channel lang="nl" xmltv_id="BBCFirstBenelux.uk" site_id="bbcfirst">BBC First Nederland</channel>
-    <channel lang="en" xmltv_id="BBCOneEngland.uk" site_id="bbc1">BBC One</channel>
-    <channel lang="en" xmltv_id="BBCTwoEngland.uk" site_id="bbc2">BBC Two</channel>
-    <channel lang="en" xmltv_id="BBCWorldNewsEurope.uk" site_id="bbcworld">BBC World News Europe</channel>
-    <channel lang="fr" xmltv_id="Be1.be" site_id="be1hd">Be 1</channel>
-    <channel lang="fr" xmltv_id="Be1Plus1hr.be" site_id="be1p1h">Be 1 +1h</channel>    
-    <channel lang="fr" xmltv_id="BeCine.be" site_id="becinehd">Be Ciné</channel>
-    <channel lang="fr" xmltv_id="BeSeries.be" site_id="beserieshd">Be Séries</channel>
-    <channel lang="en" xmltv_id="BloombergTVEurope.uk" site_id="bloomberg">Bloomberg TV Europe</channel>
-    <channel lang="fr" xmltv_id="C8.fr" site_id="c8">C8</channel>
-    <channel lang="nl" xmltv_id="Canvas.be" site_id="ketnetcanvashd">Canvas</channel>
-    <channel lang="en" xmltv_id="CGTN.cn" site_id="cctv">CGTN</channel>
-    <channel lang="fr" xmltv_id="CinePlusClassic.be" site_id="cinecinemacl">Ciné+ Classic</channel>
-    <channel lang="fr" xmltv_id="CinePlusFrisson.be" site_id="cinecinemafr">Ciné+ Frisson</channel>
-    <channel lang="fr" xmltv_id="CinePlusPremier.be" site_id="cinecinemapre">Ciné+ Premier</channel>
-    <channel lang="fr" xmltv_id="ClubRTL.be" site_id="clubrtlhd">Club RTL</channel>
-    <channel lang="en" xmltv_id="CNBCEurope.uk" site_id="cnbceurope">CNBC Europe</channel>
-    <channel lang="en" xmltv_id="CNNInternationalEurope.us" site_id="cnn">CNN International Europe</channel>
-    <channel lang="fr" xmltv_id="DiscoveryChannelFrance.fr" site_id="discoveryfr">Discovery Channel France</channel>
-    <channel lang="nl" xmltv_id="DobbitTVNL.be" site_id="dobbittv">Dobbit TV NL</channel>
-    <channel lang="en" xmltv_id="DorcelTV.nl" site_id="penthousehd2">Dorcel TV</channel>
-    <channel lang="nl" xmltv_id="EclipsTV.be" site_id="evenaar">Eclips TV</channel>
-    <channel lang="nl" xmltv_id="Een.be" site_id="eenhd">Één</channel>
-    <channel lang="nl" xmltv_id="EEurope.us" site_id="e">E! Europe</channel>
-    <channel lang="fr" xmltv_id="ElevenProLeague1.be" site_id="jplnl01">Eleven Pro League 1 NL</channel>
-    <channel lang="nl" xmltv_id="ElevenProLeague2.be" site_id="jplnl02">Eleven Pro League 2 NL</channel>
-    <channel lang="nl" xmltv_id="ElevenProLeague3.be" site_id="jplnl03">Eleven Pro League 3 NL</channel>
-    <channel lang="nl" xmltv_id="Eleven1Belgium.be" site_id="11football">Eleven Sports 1 NL</channel>
-    <channel lang="nl" xmltv_id="Eleven2Belgium.be" site_id="11sports">Eleven Sports 2 NL</channel>
-    <channel lang="nl" xmltv_id="Eleven3Belgium.be" site_id="11sports3">Eleven Sports 3 NL</channel>
-    <channel lang="en" xmltv_id="EuronewsFrench.fr" site_id="euronews">Euronews Français</channel>
-    <channel lang="fr" xmltv_id="France2.fr" site_id="france2">France 2</channel>
-    <channel lang="fr" xmltv_id="France3.fr" site_id="france3">France 3</channel>
-    <channel lang="fr" xmltv_id="France4.fr" site_id="france4">France 4</channel>
-    <channel lang="fr" xmltv_id="France5.fr" site_id="france5">France 5</channel>
-    <channel lang="nl" xmltv_id="FocusWTV.be" site_id="wtv">Focus-WTV</channel>
-    <channel lang="nl" xmltv_id="HistoryNetherlands.nl" site_id="history">History Europe</channel>
-    <channel lang="en" xmltv_id="HustlerHD.nl" site_id="hustlerhd">Hustler HD Europe</channel>
-    <channel lang="nl" xmltv_id="KanaalZ.be" site_id="kanaalz">Kanaal Z</channel>
-    <channel lang="nl" xmltv_id="Ketnet.be" site_id="ketnet">Ketnet</channel>
-    <channel lang="fr" xmltv_id="LaTrois.be" site_id="latrois">La Trois</channel>
-    <channel lang="fr" xmltv_id="LaUne.be" site_id="launehd">La Une</channel>
-    <channel lang="fr" xmltv_id="LCI.fr" site_id="lci">LCI</channel>
-    <channel lang="fr" xmltv_id="LN24.be" site_id="ln24">LN24</channel>
-    <channel lang="nl" xmltv_id="MaghrebTV.be" site_id="almaghrebtv">Maghreb TV</channel>
-    <channel lang="it" xmltv_id="MediasetItalia.it" site_id="mediasetint">Mediaset Italia</channel>
-    <channel lang="nl" xmltv_id="MentTV.be" site_id="menttv">Ment TV</channel>
-    <channel lang="fr" xmltv_id="MezzoLiveHD.fr" site_id="mezzo">Mezzo Live HD</channel>
-    <channel lang="en" xmltv_id="MTV00s.uk" site_id="vh1">MTV 00s</channel>
-    <channel lang="en" xmltv_id="MTVLive.uk" site_id="mtvnhd">MTV Live</channel>
-    <channel lang="nl" xmltv_id="NationalGeographicWildNetherlands.nl" site_id="natgeowild">Nat Geo Wild Europe</channel>
-    <channel lang="fr" xmltv_id="NickelodeonFrance.fr" site_id="nickelodeonfr">Nickelodeon France</channel>
-    <channel lang="nl" xmltv_id="NickelodeonJunior.fr" site_id="nickjr">Nick Jr</channel>
-    <channel lang="nl" xmltv_id="Njam.be" site_id="njam">Njam!</channel>
-    <channel lang="nl" xmltv_id="NPO1.nl" site_id="ned1">NPO 1</channel>
-    <channel lang="nl" xmltv_id="NPO2.nl" site_id="ned2">NPO 2</channel>
-    <channel lang="nl" xmltv_id="NPO3.nl" site_id="ned3">NPO 3</channel>
-    <channel lang="de" xmltv_id="ntv.de" site_id="ntv">N-TV</channel>
-    <channel lang="nl" xmltv_id="OUTtv.nl" site_id="outtv">OutTV</channel>
-    <channel lang="en" xmltv_id="PenthouseGold.us" site_id="penthousehd1">Penthouse Gold</channel>
-    <channel lang="en" xmltv_id="PenthousePassion.us" site_id="penthousehd">Penthouse Passion</channel>
-    <channel lang="nl" xmltv_id="PlattelandsTV.be" site_id="plattelandstv">PlattelandsTv</channel>
-    <channel lang="nl" xmltv_id="Play247.be" site_id="bigbrother247">Play 24/7</channel>
-    <channel lang="nl" xmltv_id="Play4.be" site_id="vierhd">Play 4</channel>
-    <channel lang="nl" xmltv_id="Play5.be" site_id="vijfhd">Play 5</channel>
-    <channel lang="nl" xmltv_id="Play6.be" site_id="zes">Play 6</channel>
-    <channel lang="nl" xmltv_id="Play7.be" site_id="zeven">Play 7</channel>
-    <channel lang="en" xmltv_id="PlayboyTVEurope.us" site_id="playboytv">Playboy TV Europe</channel>
-    <channel lang="nl" xmltv_id="PlayMoreBlack.be" site_id="channel6">Play More Black</channel>
-    <channel lang="nl" xmltv_id="PlayMoreCinema.be" site_id="primestarhd">Play More Cinema</channel>
-    <channel lang="nl" xmltv_id="PlayMoreKicks.be" site_id="primeaction">Play More Kicks</channel>
-    <channel lang="nl" xmltv_id="PlaySports1.be" site_id="primesporthd">Play Sports 1</channel>
-    <channel lang="nl" xmltv_id="PlaySports2.be" site_id="sportinghd2">Play Sports 2</channel>
-    <channel lang="nl" xmltv_id="PlaySports3.be" site_id="sporting3">Play Sports 3</channel>
-    <channel lang="nl" xmltv_id="PlaySports4.be" site_id="sporting4">Play Sports 4</channel>
-    <channel lang="en" xmltv_id="PlaySports5PremierLeague.be" site_id="sporting5">Play Sports 5</channel>
-    <channel lang="nl" xmltv_id="PlaySportsGolf.be" site_id="primegolf">Play Sports Golf</channel>
-    <channel lang="nl" xmltv_id="PlaySportsOpen.be" site_id="rexrioinfo">Play Sports Open</channel>
-    <channel lang="fr" xmltv_id="PlugRTL.be" site_id="plugrtl">Plug RTL</channel>
-    <channel lang="nl" xmltv_id="QMusic.be" site_id="qmusic">Q-Music</channel>
-    <channel lang="fr" xmltv_id="RadioContact.be" site_id="rcontactvision">Radio Contact</channel>
-    <channel lang="it" xmltv_id="Rai1.it" site_id="raiuno">Rai 1</channel>
-    <channel lang="fr" xmltv_id="RTLTVI.be" site_id="rtltvihd">RTL TVI</channel>
-    <channel lang="en" xmltv_id="ShortsTV.uk" site_id="shortshd">Shorts TV</channel>
-    <channel lang="fr" xmltv_id="TFX.fr" site_id="tfx">TFX</channel>
-    <channel lang="en" xmltv_id="TheIsraeliNetwork.il" site_id="theisraelinetwork">The Israeli Network</channel>
-    <channel lang="fr" xmltv_id="TV5MondeEurope.fr" site_id="tv5monde">TV5Monde Europe</channel>
-    <channel lang="fr" xmltv_id="TVBreizh.fr" site_id="tvbreizh">TV Breizh</channel>
-    <channel lang="nl" xmltv_id="TVLimburg.be" site_id="tvlimburg">TV Limburg</channel>
-    <channel lang="nl" xmltv_id="TVOost.be" site_id="tvoostdender">TV Oost</channel>
-    <channel lang="nl" xmltv_id="VlaamsParlementTV.be" site_id="actuatv">Vlaams Parlement TV</channel>
-    <channel lang="fr" xmltv_id="VOOsportWorld1.be" site_id="besport1hd">VOOsport World 1</channel>
-    <channel lang="fr" xmltv_id="VOOsportWorld2.be" site_id="besport2">VOOsport World 2</channel>
-    <channel lang="fr" xmltv_id="VOOsportWorld3.be" site_id="besport3">VOOsport World 3</channel>
-    <channel lang="fr" xmltv_id="VOOsportWorld4.be" site_id="vsw4">VOOsport World 4</channel>
-    <channel lang="nl" xmltv_id="VTM.be" site_id="vtmhd">VTM</channel>
-    <channel lang="nl" xmltv_id="VTM2.be" site_id="2behd">VTM 2</channel>
-    <channel lang="nl" xmltv_id="VTM3.be" site_id="vitaya">VTM 3</channel>
-    <channel lang="nl" xmltv_id="VTM4.be" site_id="acht">VTM 4</channel>
-    <channel lang="nl" xmltv_id="VTMGold.be" site_id="caz2">VTM Gold</channel>
-    <channel lang="nl" xmltv_id="VTMKids.be" site_id="vtmkzoom">VTM Kids</channel>
-    <channel lang="nl" xmltv_id="XITE.nl" site_id="xite">Xite</channel>
-  </channels>
-</site>
+<channels>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="1live">1LIVE</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="3fm">NPO 3FM</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="11footbetv">DAZN Eleven Sports 1 FR</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="11sports3betv">DAZN Eleven Sports 3 FR</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="11sportsbetv">DAZN Eleven Sports 2 FR</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="ard">ARD</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="artebelgique">Arte Belgique</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="bbcradio1">BBC Radio 1</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="bbcradio2">BBC Radio 2</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="bbcradio3">BBC Radio 3</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="bbcworldservice">BBC World Service</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="belrtl">Bel RTL</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="boomerang">Cartoonito</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="brava">Stingray Classica</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="brf1">BRF 1</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="cartoonnetwork">Cartoon.Network</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="classic21">Classic21</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="clubfm">ROXX</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="contact">Contact</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="crimeinvestigation">Crime + Investigation</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="dicoveryhd">Discovery Vl HD</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="discoveryid">Disc ID</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="discoverysci">Disc science</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="disneyvl">Disney VL</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="eurosport2">Eurosport 2 HD</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="eurosportfr">Eurosport.FR</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="eurosporthd">Eurosport HD</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="familyradio">Family Radio</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="foxbelgium">STAR Channel</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="franceculture">France Culture</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="franceinternational">France Inter</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="francemuzique">France Musique</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="hitfm">Be One</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="horse">Horse &amp; Country</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="joe80">Joe 80s &amp; 90s</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="joe90">Willy Class X</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="joe6070">Joe 60s-70s</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="joeeasy">Joe Easy</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="joefm">JOE fm</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="jplfr01">DAZN Eleven Pro League 1 FR</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="jplfr02">DAZN Eleven Pro League 2 FR</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="jplfr03">DAZN Eleven Pro League 3 FR</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="klara">Klara</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="klaracontinuo">Klara Continuo</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="ladeuxhd">Tipik</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="lapremiere">La Première</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="mc90s">90s</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="mcalldayparty">All Day Party</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="mcbassbreaks">Bass Breaks &amp; Beats</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="mcbelpop">Belpop</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="mcclassarch">Classical Orchestral</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="mcclasscalm">Classical Calm</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="mcclassgreats">Classical Greats</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="mcclassrock">Classic Rock</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="mccocktaillou">Cocktail Lounge</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="mccooljazz">Cool Jazz</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="mccountrystars">Hot Country</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="mcdancefloor">Dancefloor Fillers</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="mcdinnerparty">Drive</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="mcfrancofonie">Chansons</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="mcfreedom">Freedom</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="mcharderthan">Headbangers</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="mchiphop">Hip Hop</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="mchitsfrance">Total Hits - France</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="mchitsgermany">Total Hits - German</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="mchitsitaly">Total Hits - Italy</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="mchitsnordic">Total Hits - Nordic</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="mchitsspain">Total Hits - Spain</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="mcindieclassics">Indie Classics</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="mcjazzclassics">Jazz Classics</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="mcjustchillout">Chillout</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="mckiller80s">80s</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="mcmagnific70s">70s</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="mcreggaevibra">Reggae Vibra</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="mcrevival">Revival</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="mcrockandroll">Rock n Roll</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="mcrockanthems">Rock Anthems</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="mcschlager">Schlager</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="mcsoulclassics">Classic RnB &amp; Soul</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="mcstillgotthe">Blues</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="mcstrictly60s">Strictly 60s</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="mcthealternative">Stingray Specials</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="mcthelovecoll">Silk</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="mctotalhits">Total Hits - UK</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="mcturkmuzigi">Türk Müzigi</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="mcultimateurban">Ultimate Urban</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="mcundergroove">Groove (Disco&amp;Funk)</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="mcworldcarniv">World Carnival</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="mint">Mint</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="mnm">MNM</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="mnmhits">MNM Hits</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="mtv">MTV VL</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="musiq3">Musiq3</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="natgeofr">Nat Geo FR</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="natgeohd">Nat Geo HD</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="netflix">Netflix</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="nickelodeon">Nickelodeon</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="nickhits">Nick Music Global</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="nickjrfr">Nick Jr. FR</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="nicktoons">NickToons</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="nickukraine">Nickelodeon Ukraine</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="nieuwsplus">nieuws+</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="nostalgie">Nostalgie</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="nostalgieplus">Nostalgie+</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="nrj">NRJ</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="ntv">n-tv</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="oneworldradio">One World Radio</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="playhousedisney">Disney JR</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="purefm">Tipik radio</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="qfouteradio">Q-Foute Radio</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="qmaximum">Q Maximum Hits</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="qmusicradio">Q-music radio</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="radio1">Radio 1</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="radio1ned">NPO Radio 1</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="radio2antw">Radio 2 Antw.</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="radio2limb">Radio 2 Limb.</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="radio2ned">NPO Radio 2</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="radio2ovl">Radio 2 O. Vl.</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="radio2vlbr">Radio 2 Vl. Br.</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="radio2wvl">Radio 2 W. Vl.</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="radio4ned">NPO Radio 4</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="radiojudaica">Radio Judaïca</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="radiomaria">Radio Maria</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="rfi">RFI</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="rtbfmix">RTBF Mix</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="rtltele">RTL Tele</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="rtvmechelen">RTV Mechelen</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="sport10">Sport 10</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="sporza">De Tijdloze</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="stadsradio">Stadsradio Vlaanderen</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="stories">TV.Plus</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="stubru">StuBru</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="studio100tv">Studio 100 TV</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="telenet1">Telenet 1</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="telenet2">Telenet 2</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="telenet3">Telenet 3</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="telenet4">Telenet 4</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="telenet5">Telenet 5</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="tf1hd">TF1 HD</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="tlcvlaanderen">TLC</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="tmc">TMC</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="tmf">Comedy Central</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="topradio">TOPradio</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="trt">TRT</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="tve">TVE</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="vivacite">VivaCité</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="vox">VOX</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="wdr2">WDR 2</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="wdr3">WDR 3</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="wdr4">WDR 4</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="wdr5">WDR 5</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="willy">Willy</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="wsport">W Sport</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="xmo">X-MO</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="zdf">ZDF</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="" site_id="zenfm">ZEN</channel>
+  <channel site="telenet.tv" lang="en" xmltv_id="2MInternational.ma" site_id="2mmonde">2M Monde</channel>
+  <channel site="telenet.tv" lang="en" xmltv_id="AlJazeeraEnglish.qa" site_id="aljazeeraeng">Al Jazeera Eng.</channel>
+  <channel site="telenet.tv" lang="en" xmltv_id="BBCNewsEurope.uk" site_id="bbcworld">BBC News</channel>
+  <channel site="telenet.tv" lang="en" xmltv_id="BBCOne.uk" site_id="bbc1">BBC 1</channel>
+  <channel site="telenet.tv" lang="en" xmltv_id="BBCTwo.uk" site_id="bbc2">BBC 2</channel>
+  <channel site="telenet.tv" lang="en" xmltv_id="BloombergTVEurope.uk" site_id="bloomberg">Bloomberg</channel>
+  <channel site="telenet.tv" lang="en" xmltv_id="CGTN.cn" site_id="cctv">CGTN</channel>
+  <channel site="telenet.tv" lang="en" xmltv_id="CNBCEurope.uk" site_id="cnbceurope">CNBC Europe</channel>
+  <channel site="telenet.tv" lang="en" xmltv_id="CNNInternationalEurope.us" site_id="cnn">CNN</channel>
+  <channel site="telenet.tv" lang="en" xmltv_id="DorcelTV.nl" site_id="penthousehd2">Dorcel TV</channel>
+  <channel site="telenet.tv" lang="en" xmltv_id="EuronewsFrench.fr" site_id="euronews">Euronews</channel>
+  <channel site="telenet.tv" lang="en" xmltv_id="HustlerHD.nl" site_id="hustlerhd">Hustler HD</channel>
+  <channel site="telenet.tv" lang="en" xmltv_id="MTV00s.uk" site_id="vh1">MTV 00s</channel>
+  <channel site="telenet.tv" lang="en" xmltv_id="MTVLive.uk" site_id="mtvnhd">MTV Live</channel>
+  <channel site="telenet.tv" lang="en" xmltv_id="PenthouseGold.us" site_id="penthousehd1">Penthouse Gold</channel>
+  <channel site="telenet.tv" lang="en" xmltv_id="PenthousePassion.us" site_id="penthousehd">Penthouse Passion</channel>
+  <channel site="telenet.tv" lang="en" xmltv_id="PlayboyTVEurope.us" site_id="playboytv">Playboy TV</channel>
+  <channel site="telenet.tv" lang="en" xmltv_id="PlaySports5PremierLeague.be" site_id="sporting5">Play Sports Premier League</channel>
+  <channel site="telenet.tv" lang="en" xmltv_id="ShortsTV.uk" site_id="shortshd">ShortsTV</channel>
+  <channel site="telenet.tv" lang="en" xmltv_id="TheIsraeliNetwork.il" site_id="theisraelinetwork">The Israëli Network</channel>
+  <channel site="telenet.tv" lang="fr" xmltv_id="AB3.be" site_id="ab3">AB3</channel>
+  <channel site="telenet.tv" lang="fr" xmltv_id="Be1.be" site_id="be1hd">Be 1</channel>
+  <channel site="telenet.tv" lang="fr" xmltv_id="Be1Plus1hr.be" site_id="be1p1h">Be 1+1h</channel>
+  <channel site="telenet.tv" lang="fr" xmltv_id="BeCine.be" site_id="becinehd">Be Ciné</channel>
+  <channel site="telenet.tv" lang="fr" xmltv_id="BeSeries.be" site_id="beserieshd">Be Séries</channel>
+  <channel site="telenet.tv" lang="fr" xmltv_id="C8.fr" site_id="c8">C8</channel>
+  <channel site="telenet.tv" lang="fr" xmltv_id="CinePlusClassicBelgium.be" site_id="cinecinemacl">Ciné+ Classic</channel>
+  <channel site="telenet.tv" lang="fr" xmltv_id="CinePlusFrissonBelgium.be" site_id="cinecinemafr">Ciné+ Frisson</channel>
+  <channel site="telenet.tv" lang="fr" xmltv_id="CinePlusPremierBelgium.be" site_id="cinecinemapre">Ciné+ Premier</channel>
+  <channel site="telenet.tv" lang="fr" xmltv_id="ClubRTL.be" site_id="clubrtlhd">RTL club</channel>
+  <channel site="telenet.tv" lang="fr" xmltv_id="DiscoveryChannel.fr" site_id="discoveryfr">Discovery FR</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="ElevenProLeague1.be" site_id="jplnl01">DAZN Eleven Pro League 1 NL</channel>
+  <channel site="telenet.tv" lang="fr" xmltv_id="France2.fr" site_id="france2">France 2</channel>
+  <channel site="telenet.tv" lang="fr" xmltv_id="France3.fr" site_id="france3">France 3</channel>
+  <channel site="telenet.tv" lang="fr" xmltv_id="France4.fr" site_id="france4">France 4</channel>
+  <channel site="telenet.tv" lang="fr" xmltv_id="France5.fr" site_id="france5">France 5</channel>
+  <channel site="telenet.tv" lang="fr" xmltv_id="LaTrois.be" site_id="latrois">La Trois</channel>
+  <channel site="telenet.tv" lang="fr" xmltv_id="LaUne.be" site_id="launehd">La Une HD</channel>
+  <channel site="telenet.tv" lang="fr" xmltv_id="LCI.fr" site_id="lci">LCI</channel>
+  <channel site="telenet.tv" lang="fr" xmltv_id="LN24.be" site_id="ln24">LN24</channel>
+  <channel site="telenet.tv" lang="fr" xmltv_id="MezzoLive.fr" site_id="mezzo">Mezzo Live HD</channel>
+  <channel site="telenet.tv" lang="fr" xmltv_id="Nickelodeon.fr" site_id="nickelodeonfr">Nickelodeon FR</channel>
+  <channel site="telenet.tv" lang="fr" xmltv_id="PlugRTL.be" site_id="plugrtl">RTL plug</channel>
+  <channel site="telenet.tv" lang="fr" xmltv_id="RadioContact.be" site_id="rcontactvision">R. Contact Vision</channel>
+  <channel site="telenet.tv" lang="fr" xmltv_id="RTLTVI.be" site_id="rtltvihd">RTL tvi</channel>
+  <channel site="telenet.tv" lang="fr" xmltv_id="TFX.fr" site_id="tfx">TFX</channel>
+  <channel site="telenet.tv" lang="fr" xmltv_id="TV5MondeEurope.fr" site_id="tv5monde">TV5Monde</channel>
+  <channel site="telenet.tv" lang="fr" xmltv_id="TVBreizh.fr" site_id="tvbreizh">TV Breizh</channel>
+  <channel site="telenet.tv" lang="fr" xmltv_id="VOOsportWorld1.be" site_id="besport1hd">VOO Sport World 1</channel>
+  <channel site="telenet.tv" lang="fr" xmltv_id="VOOsportWorld2.be" site_id="besport2">VOO Sport World 2</channel>
+  <channel site="telenet.tv" lang="fr" xmltv_id="VOOsportWorld3.be" site_id="besport3">VOO Sport World 3</channel>
+  <channel site="telenet.tv" lang="fr" xmltv_id="VOOsportWorld4.be" site_id="vsw4">VOO Sport World 4</channel>
+  <channel site="telenet.tv" lang="it" xmltv_id="MediasetItalia.it" site_id="mediasetint">Mediaset Italia</channel>
+  <channel site="telenet.tv" lang="it" xmltv_id="Rai1.it" site_id="raiuno">Rai Uno</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="AnimalPlanet.nl" site_id="animalplanethd">Animal Planet</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="BabyTV.uk" site_id="babytv">Baby TV</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="BBCEntertainment.uk" site_id="bbcprime">BBC Entertainment</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="BBCFirstBenelux.uk" site_id="bbcfirst">BBC First</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="Canvas.be" site_id="ketnetcanvashd">VRT CANVAS</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="DobbitTVNL.be" site_id="dobbittv">DOBBIT TV</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="EclipsTV.be" site_id="evenaar">Eclips TV</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="Een.be" site_id="eenhd">VRT 1</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="EEurope.nl" site_id="e">E! Ent</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="Eleven1.be" site_id="11football">DAZN Eleven Sports 1</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="Eleven2.be" site_id="11sports">DAZN Eleven Sports 2</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="Eleven3.be" site_id="11sports3">DAZN Eleven Sports 3</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="ElevenProLeague2.be" site_id="jplnl02">DAZN Eleven Pro League 2 NL</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="ElevenProLeague3.be" site_id="jplnl03">DAZN Eleven Pro League 3 NL</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="History.nl" site_id="history">History.TV</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="KanaalZ.be" site_id="kanaalz">KanaalZ</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="Ketnet.be" site_id="ketnet">Ketnet</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="MaghrebTV.be" site_id="almaghrebtv">Al Maghreb TV</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="MentTV.be" site_id="menttv">MENT TV</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="NationalGeographicWild.nl" site_id="natgeowild">Nat Geo Wild</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="NickelodeonJunior.fr" site_id="nickjr">Nick Jr.</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="Njam.be" site_id="njam">njam!</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="NPO1.nl" site_id="ned1">NPO 1</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="NPO2.nl" site_id="ned2">NPO 2</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="NPO3.nl" site_id="ned3">NPO 3</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="OUTtv.nl" site_id="outtv">OUT TV</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="PlattelandsTV.be" site_id="plattelandstv">PlattelandsTv</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="Play4.be" site_id="vierhd">Play4</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="Play5.be" site_id="vijfhd">Play5</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="Play6.be" site_id="zes">Play6</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="Play7.be" site_id="zeven">Play7</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="PlayMoreBlack.be" site_id="channel6">Play More Black</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="PlayMoreCinema.be" site_id="primestarhd">Play More Cinema</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="PlayMoreKicks.be" site_id="primeaction">Play More Kicks</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="PlaySports1.be" site_id="primesporthd">Play Sports HD1</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="PlaySports2.be" site_id="sportinghd2">Play Sports HD2</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="PlaySports3.be" site_id="sporting3">Play Sports HD3</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="PlaySports4.be" site_id="sporting4">Play Sports HD4</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="PlaySportsGolf.be" site_id="primegolf">Play Sports Golf</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="PlaySportsOpen.be" site_id="rexrioinfo">Play Sports Open</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="QMusic.be" site_id="qmusic">Q-music</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="VlaamsParlementTV.be" site_id="actuatv">Vlaams Parlement TV</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="VTM2.be" site_id="2behd">VTM 2</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="VTM3.be" site_id="vitaya">VTM 3</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="VTM4.be" site_id="acht">VTM 4</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="VTM.be" site_id="vtmhd">vtm HD</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="VTMGold.be" site_id="caz2">VTM GOLD</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="VTMKids.be" site_id="vtmkzoom">VTM NON-STOP DOKTERS</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="XITE.nl" site_id="xite">Xite</channel>
+</channels>

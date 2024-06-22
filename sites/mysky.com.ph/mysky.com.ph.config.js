@@ -33,11 +33,12 @@ module.exports = {
   },
   async channels() {
     const items = await axios
-      .get(`https://skyepg.mysky.com.ph/Main/getEventsbyType`)
+      .get('https://skyepg.mysky.com.ph/Main/getEventsbyType')
       .then(r => r.data.location)
       .catch(console.log)
 
     return items.map(item => ({
+      lang: 'en',
       site_id: item.id,
       name: item.name
     }))

@@ -1,6 +1,3 @@
-// node ./scripts/channels.js --config=./sites/tv2go.t-2.net/tv2go.t-2.net.config.js --output=./sites/tv2go.t-2.net/tv2go.t-2.net.channels.xml
-// npx epg-grabber --config=sites/tv2go.t-2.net/tv2go.t-2.net.config.js --channels=sites/tv2go.t-2.net/tv2go.t-2.net.channels.xml --output=guide.xml --days=2
-
 const { parser, url, request } = require('./tv2go.t-2.net.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
@@ -39,7 +36,8 @@ it('can generate valid request data', () => {
 })
 
 it('can parse response', () => {
-  const content = `{"entries":[{"channelId":1000259,"startTimestamp":"1637283000000","endTimestamp":"1637284500000","name":"Dnevnik Slovencev v Italiji","nameSingleLine":"Dnevnik Slovencev v Italiji","description":"Informativni","images":[{"url":"/static/media/img/epg/max_crop/EPG_IMG_2927405.jpg","width":1008,"height":720,"averageColor":[143,147,161]}],"show":{"id":51991133,"title":"Dnevnik Slovencev v Italiji","originalTitle":"Dnevnik Slovencev v Italiji","shortDescription":"Dnevnik Slovencev v Italiji je informativna oddaja, v kateri novinarji poročajo predvsem o dnevnih dogodkih med Slovenci v Italiji.","longDescription":"Pomembno ogledalo vsakdana, v katerem opozarjajo na težave, s katerimi se soočajo, predstavljajo pa tudi pestro kulturno, športno in družbeno življenje slovenske narodne skupnosti. V oddajo so vključene tudi novice iz matične domovine.","type":{"id":10,"name":"Show"},"productionFrom":"1609502400000","countries":[{"id":"SI","name":"Slovenija"}],"languages":[{"languageId":2,"name":"Slovenščina"}],"genres":[{"id":1000002,"name":"Informativni"}]}}]}`
+  const content =
+    '{"entries":[{"channelId":1000259,"startTimestamp":"1637283000000","endTimestamp":"1637284500000","name":"Dnevnik Slovencev v Italiji","nameSingleLine":"Dnevnik Slovencev v Italiji","description":"Informativni","images":[{"url":"/static/media/img/epg/max_crop/EPG_IMG_2927405.jpg","width":1008,"height":720,"averageColor":[143,147,161]}],"show":{"id":51991133,"title":"Dnevnik Slovencev v Italiji","originalTitle":"Dnevnik Slovencev v Italiji","shortDescription":"Dnevnik Slovencev v Italiji je informativna oddaja, v kateri novinarji poročajo predvsem o dnevnih dogodkih med Slovenci v Italiji.","longDescription":"Pomembno ogledalo vsakdana, v katerem opozarjajo na težave, s katerimi se soočajo, predstavljajo pa tudi pestro kulturno, športno in družbeno življenje slovenske narodne skupnosti. V oddajo so vključene tudi novice iz matične domovine.","type":{"id":10,"name":"Show"},"productionFrom":"1609502400000","countries":[{"id":"SI","name":"Slovenija"}],"languages":[{"languageId":2,"name":"Slovenščina"}],"genres":[{"id":1000002,"name":"Informativni"}]}}]}'
   const result = parser({ content, channel }).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
@@ -50,9 +48,10 @@ it('can parse response', () => {
     {
       start: '2021-11-19T00:50:00.000Z',
       stop: '2021-11-19T01:15:00.000Z',
-      title: `Dnevnik Slovencev v Italiji`,
+      title: 'Dnevnik Slovencev v Italiji',
       category: ['Informativni'],
-      description: `Dnevnik Slovencev v Italiji je informativna oddaja, v kateri novinarji poročajo predvsem o dnevnih dogodkih med Slovenci v Italiji.`,
+      description:
+        'Dnevnik Slovencev v Italiji je informativna oddaja, v kateri novinarji poročajo predvsem o dnevnih dogodkih med Slovenci v Italiji.',
       icon: 'https://tv2go.t-2.net/static/media/img/epg/max_crop/EPG_IMG_2927405.jpg'
     }
   ])
@@ -62,7 +61,7 @@ it('can handle empty guide', () => {
   const result = parser({
     date,
     channel,
-    content: `Invalid API client identifier`
+    content: 'Invalid API client identifier'
   })
   expect(result).toMatchObject([])
 })
