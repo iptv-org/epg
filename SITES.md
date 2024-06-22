@@ -25,7 +25,7 @@
 | [chaines-tv.orange.fr](sites/chaines-tv.orange.fr)                 | 🟢     |                                             |
 | [clickthecity.com](sites/clickthecity.com)                         | 🟢     |                                             |
 | [comteco.com.bo](sites/comteco.com.bo)                             | 🔴     | https://github.com/iptv-org/epg/issues/2239 |
-| [content.astro.com.my](sites/content.astro.com.my)                 | 🔴     | https://github.com/iptv-org/epg/issues/2361 |
+| [content.astro.com.my](sites/content.astro.com.my)                 | 🟡     | https://github.com/iptv-org/epg/issues/2363 |
 | [cosmote.gr](sites/cosmote.gr)                                     | 🟢     |                                             |
 | [cubmu.com](sites/cubmu.com)                                       | 🟢     |                                             |
 | [dens.tv](sites/dens.tv)                                           | 🟢     |                                             |
