@@ -126,7 +126,7 @@
 | [singtel.com](sites/singtel.com)                                   | 🟢     |                                                                                          |
 | [sjonvarp.is](sites/sjonvarp.is)                                   | 🟢     |                                                                                          |
 | [sky.co.nz](sites/sky.co.nz)                                       | 🟢     |                                                                                          |
-| [sky.com](sites/sky.com)                                           | 🟢     |                                                                                          |
+| [sky.com](sites/sky.com)                                           | 🟡     | https://github.com/iptv-org/epg/issues/2325                                              |
 | [sky.de](sites/sky.de)                                             | 🟢     |                                                                                          |
 | [starhubtvplus.com](sites/starhubtvplus.com)                       | 🔴     | https://github.com/iptv-org/epg/issues/2365                                              |
 | [startimestv.com](sites/startimestv.com)                           | 🔴     | https://github.com/iptv-org/epg/issues/2296                                              |
