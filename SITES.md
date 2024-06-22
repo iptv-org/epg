@@ -128,7 +128,7 @@
 | [sky.co.nz](sites/sky.co.nz)                                       | 🟢     |                                             |
 | [sky.com](sites/sky.com)                                           | 🟢     |                                             |
 | [sky.de](sites/sky.de)                                             | 🟢     |                                             |
-| [starhubtvplus.com](sites/starhubtvplus.com)                       | 🟢     |                                             |
+| [starhubtvplus.com](sites/starhubtvplus.com)                       | 🔴     | https://github.com/iptv-org/epg/issues/2365 |
 | [startimestv.com](sites/startimestv.com)                           | 🔴     | https://github.com/iptv-org/epg/issues/2296 |
 | [streamingtvguides.com](sites/streamingtvguides.com)               | 🟢     |                                             |
 | [superguidatv.it](sites/superguidatv.it)                           | 🟢     |                                             |
