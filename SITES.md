@@ -84,7 +84,7 @@
 | [mtel.ba](sites/mtel.ba)                                           | 🟢     |                                             |
 | [mts.rs](sites/mts.rs)                                             | 🟢     |                                             |
 | [mujtvprogram.cz](sites/mujtvprogram.cz)                           | 🟢     |                                             |
-| [musor.tv](sites/musor.tv)                                         | 🟢     |                                             |
+| [musor.tv](sites/musor.tv)                                         | 🔴     | https://github.com/iptv-org/epg/issues/2306 |
 | [myafn.dodmedia.osd.mil](sites/myafn.dodmedia.osd.mil)             | 🟢     |                                             |
 | [mysky.com.ph](sites/mysky.com.ph)                                 | 🟢     |                                             |
 | [mytelly.co.uk](sites/mytelly.co.uk)                               | 🟡     | https://github.com/iptv-org/epg/issues/2276 |
