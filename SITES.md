@@ -134,7 +134,7 @@
 | [superguidatv.it](sites/superguidatv.it)                           | 🟢     |                                                                                          |
 | [taiwanplus.com](sites/taiwanplus.com)                             | 🟢     |                                                                                          |
 | [tapdmv.com](sites/tapdmv.com)                                     | 🟢     |                                                                                          |
-| [telenet.tv](sites/telenet.tv)                                     | 🟢     |                                                                                          |
+| [telenet.tv](sites/telenet.tv)                                     | 🔴     | https://github.com/iptv-org/epg/issues/2394                                              |
 | [teliatv.ee](sites/teliatv.ee)                                     | 🟢     |                                                                                          |
 | [telkussa.fi](sites/telkussa.fi)                                   | 🟢     |                                                                                          |
 | [telsu.fi](sites/telsu.fi)                                         | 🟢     |                                                                                          |
