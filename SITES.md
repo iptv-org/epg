@@ -22,7 +22,7 @@
 | [canalplus-haiti.com](sites/canalplus-haiti.com)                   | 🔴     | https://github.com/iptv-org/epg/issues/2237                                              |
 | [canalplus.com](sites/canalplus.com)                               | 🟢     |                                                                                          |
 | [cgates.lt](sites/cgates.lt)                                       | 🟢     |                                                                                          |
-| [chaines-tv.orange.fr](sites/chaines-tv.orange.fr)                 | 🟢     |                                                                                          |
+| [chaines-tv.orange.fr](sites/chaines-tv.orange.fr)                 | 🔴     | https://github.com/iptv-org/epg/issues/2395                                              |
 | [clickthecity.com](sites/clickthecity.com)                         | 🟢     |                                                                                          |
 | [comteco.com.bo](sites/comteco.com.bo)                             | 🔴     | https://github.com/iptv-org/epg/issues/2239                                              |
 | [content.astro.com.my](sites/content.astro.com.my)                 | 🟡     | https://github.com/iptv-org/epg/issues/2363                                              |
