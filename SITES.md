@@ -190,6 +190,6 @@
 | [worldfishingnetwork.com](sites/worldfishingnetwork.com)           | 🟢     |                                                                                          |
 | [xumo.tv](sites/xumo.tv)                                           | 🟢     |                                                                                          |
 | [zap.co.ao](sites/zap.co.ao)                                       | 🟢     |                                                                                          |
-| [ziggogo.tv](sites/ziggogo.tv)                                     | 🟢     |                                                                                          |
+| [ziggogo.tv](sites/ziggogo.tv)                                     | 🔴     | https://github.com/iptv-org/epg/issues/2393                                              |
 | [znbc.co.zm](sites/znbc.co.zm)                                     | 🟢     |                                                                                          |
 | [zuragt.mn](sites/zuragt.mn)                                       | 🟢     |                                                                                          |
