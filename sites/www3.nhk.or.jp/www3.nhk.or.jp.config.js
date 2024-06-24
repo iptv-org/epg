@@ -37,7 +37,7 @@ module.exports = {
         start: parseStart(item),
         stop: parseStop(item),
         description: item.description,
-        icon: parseIcon(item),
+        image: parseImage(item),
         sub_title: item.subtitle
       })
     })
@@ -63,6 +63,6 @@ function parseStop(item) {
   return dayjs.unix(parseInt(item.endDate) / 1000)
 }
 
-function parseIcon(item) {
+function parseImage(item) {
   return 'https://www.nhk.or.jp' + item.thumbnail
 }

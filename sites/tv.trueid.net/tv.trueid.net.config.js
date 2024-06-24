@@ -16,7 +16,7 @@ module.exports = {
       programs.push({
         title: item.title,
         description: parseDescription(item, channel.lang),
-        icon: parseIcon(item),
+        image: parseImage(item),
         start: parseStart(item),
         stop: parseStop(item)
       })
@@ -26,8 +26,9 @@ module.exports = {
   },
   async channels({ token, lang = en }) {
     const axios = require('axios')
-    const ACCESS_TOKEN = token ? token :
-      'MTM4MDY0NGUwZjFmYjZiMTRjODI4OTRhMGM2ODJkMTQ3ZTAxNWM5ZDoxZmI2YjE0YzgyODk0YTBjNjgyZDE0N2UwMTVjOWQ='
+    const ACCESS_TOKEN = token
+      ? token
+      : 'MTM4MDY0NGUwZjFmYjZiMTRjODI4OTRhMGM2ODJkMTQ3ZTAxNWM5ZDoxZmI2YjE0YzgyODk0YTBjNjgyZDE0N2UwMTVjOWQ='
 
     const data = await axios
       .get(`https://tv.trueid.net/api/channel/getChannelListByAllCate?lang=${lang}&country=th`, {
@@ -52,10 +53,10 @@ module.exports = {
 
 function parseDescription(item, lang) {
   const description = item.info?.[`synopsis_${lang}`]
-  return description && description !== '.' ? description : null;
+  return description && description !== '.' ? description : null
 }
 
-function parseIcon(item) {
+function parseImage(item) {
   return item.info?.image || null
 }
 
@@ -68,6 +69,6 @@ function parseStop(item) {
 }
 
 function parseItems(content) {
-  const data = content ? JSON.parse(content) : null;
+  const data = content ? JSON.parse(content) : null
   return data?.pageProps?.epgList || []
 }

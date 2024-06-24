@@ -67,7 +67,8 @@ it('can parse response', () => {
       title: 'Ma reggel',
       description:
         'A Ma reggel az MTVA saját gyártású, minden hétköznap jelentkező reggeli politikai és közéleti témákkal foglalkozó műsora.',
-      icon: 'https://static.mytvback.com/userfiles/c/0/c01d48a36b913a7afb0dcb5edba33849_thum_100x144.jpg'
+      image:
+        'https://static.mytvback.com/userfiles/c/0/c01d48a36b913a7afb0dcb5edba33849_thum_100x144.jpg'
     }
   ])
 })

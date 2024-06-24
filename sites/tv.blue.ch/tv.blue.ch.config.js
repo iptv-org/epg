@@ -23,7 +23,7 @@ module.exports = {
       programs.push({
         title,
         description: parseDescription(item),
-        icon: parseIcon(item),
+        image: parseImage(item),
         start: parseStart(item),
         stop: parseStop(item)
       })
@@ -55,7 +55,7 @@ function parseDescription(item) {
   return item.Content.Description.Summary
 }
 
-function parseIcon(item) {
+function parseImage(item) {
   const image = item.Content.Nodes ? item.Content.Nodes.Items.find(i => i.Kind === 'Image') : null
   const path = image ? image.ContentPath : null
 

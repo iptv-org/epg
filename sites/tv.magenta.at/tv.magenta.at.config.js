@@ -61,7 +61,7 @@ module.exports = {
         description: parseDescription(detail),
         date: parseDate(item),
         category: parseCategory(item),
-        icon: detail.poster_image_url,
+        image: detail.poster_image_url,
         actors: parseRoles(detail, 'Schauspieler'),
         directors: parseRoles(detail, 'Regisseur'),
         producers: parseRoles(detail, 'Produzent'),

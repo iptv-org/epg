@@ -57,7 +57,7 @@ it('can parse response', async () => {
       category: 'Ocio-Cultura/Cocina',
       season: 1,
       episode: 23,
-      icon: 'https://programacion-tv.elpais.com/imagenes/programas/2099957.jpg'
+      image: 'https://programacion-tv.elpais.com/imagenes/programas/2099957.jpg'
     }
   ])
 })

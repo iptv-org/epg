@@ -67,7 +67,8 @@ it('can parse response', async () => {
     title: 'Tagesschau',
     description:
       'Die Tagesschau ist eine Institution in der deutschen Fernsehlandschaft. Seit 1952 wird kurz und bündig von aktuellen Geschehnissen in Deutschland und der Welt berichtet. Bis heute ist die Redaktion der sachlichen Berichterstattung treu geblieben und...',
-    icon: 'https://tv.cdnartwhere.eu/cache/i2/Dc5BDoMgEADAv3Cuwoqy4Fu4LLho24hEaNK06d_rcW7zFYEqi1lsrZU6e-nlXrqyHe2oXVxyT5_Xybys3GduXsYjN7pnPqdkI0CkJbk4gnKWMQFAQLQUtHZesuEwOgWa7DCkKV4cGFEBG0eQrCJSwY3YP8oqbmKn-rwexuBb20n8_g.jpg'
+    image:
+      'https://tv.cdnartwhere.eu/cache/i2/Dc5BDoMgEADAv3Cuwoqy4Fu4LLho24hEaNK06d_rcW7zFYEqi1lsrZU6e-nlXrqyHe2oXVxyT5_Xybys3GduXsYjN7pnPqdkI0CkJbk4gnKWMQFAQLQUtHZesuEwOgWa7DCkKV4cGFEBG0eQrCJSwY3YP8oqbmKn-rwexuBb20n8_g.jpg'
   })
 
   expect(results[36]).toMatchObject({
@@ -75,7 +76,8 @@ it('can parse response', async () => {
     stop: '2023-12-01T05:30:00.000Z',
     title: 'ZDF-Morgenmagazin',
     description: 'Für einen guten Start in den Tag',
-    icon: 'https://tv.cdnartwhere.eu/cache/i2/Dc5BDoMgEADAv3CuIiIu-BYuu7Bo24hEaNK06d_rbY7zFYSVxSK21kpdvPRyL13ZjnbULsTc4-d1MseV-8zNy3DkhvfMp0k2KBUwJhcmNTjLkJRSBGCRtHZe2gQTYXRhJNCoL1NyyiTiSI6IhtHADOT6R1nFTexYn9djnuGtrRG_Pw.jpg'
+    image:
+      'https://tv.cdnartwhere.eu/cache/i2/Dc5BDoMgEADAv3CuIiIu-BYuu7Bo24hEaNK06d_rbY7zFYSVxSK21kpdvPRyL13ZjnbULsTc4-d1MseV-8zNy3DkhvfMp0k2KBUwJhcmNTjLkJRSBGCRtHZe2gQTYXRhJNCoL1NyyiTiSI6IhtHADOT6R1nFTexYn9djnuGtrRG_Pw.jpg'
   })
 })
 

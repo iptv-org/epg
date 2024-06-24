@@ -41,7 +41,7 @@ it('can parse response', done => {
           title: 'NOS Journaal',
           description:
             'Nederlands lifestyleprogramma uit 2022 (ook in HD) met dagelijkse inspiratie voor een lekker leven in en om het huis.\nPresentatrice Froukje de Both, kok Hugo Kennis en een team van experts, onder wie tuinman Tom Groot, geven praktische tips op het gebied van wonen, lifestyle, tuinieren en koken. Daarmee kun je zelf direct aan de slag om je leven leuker én gezonder te maken. Afl. 15 van seizoen 4.',
-          icon: 'https://cdn.gvidi.tv/img/booxmedia/e19c/static/NOS%20Journaal5.jpg'
+          image: 'https://cdn.gvidi.tv/img/booxmedia/e19c/static/NOS%20Journaal5.jpg'
         }
       ])
       done()

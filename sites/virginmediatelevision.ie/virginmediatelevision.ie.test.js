@@ -36,7 +36,7 @@ it('can parse response', () => {
     sub_title: '',
     description:
       'A detective sergeant and expert in the field of serial killers working for the Missing Persons Bureau tries to protect the general public from evil.',
-    icon: 'https://bcboltvirgin.akamaized.net/player/shows/1498_517x291_1528141264.jpg'
+    image: 'https://bcboltvirgin.akamaized.net/player/shows/1498_517x291_1528141264.jpg'
   })
 })
 

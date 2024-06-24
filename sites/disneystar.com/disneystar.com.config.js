@@ -34,7 +34,7 @@ module.exports = {
       programs.push({
         title: item.title,
         description: item.desc,
-        icon: item.programmeurl,
+        image: item.programmeurl,
         category: item.subgenre,
         start: parseStart(item),
         stop: parseStop(item)

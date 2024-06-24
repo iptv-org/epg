@@ -43,7 +43,8 @@ it('can parse response', () => {
       start: '2021-11-19T22:05:00.000Z',
       stop: '2021-11-19T22:55:00.000Z',
       title: 'Inimjaht',
-      icon: 'https://inet-static.mw.elion.ee/resized/ri93Qj4OLXXvg7QAsUOcKMnIb3g=/570x330/filters:format(jpeg)/inet-static.mw.elion.ee/epg_images/9/b/17e48b3966e65c02.jpg'
+      image:
+        'https://inet-static.mw.elion.ee/resized/ri93Qj4OLXXvg7QAsUOcKMnIb3g=/570x330/filters:format(jpeg)/inet-static.mw.elion.ee/epg_images/9/b/17e48b3966e65c02.jpg'
     }
   ])
 })

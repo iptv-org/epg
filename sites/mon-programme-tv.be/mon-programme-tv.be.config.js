@@ -34,7 +34,7 @@ module.exports = {
         title: parseTitle($item),
         description: parseDescription($item),
         category: parseCategory($item),
-        icon: parseIcon($item),
+        image: parseImage($item),
         start,
         stop
       })
@@ -85,7 +85,7 @@ function parseCategory($item) {
   return $item('.type').text().trim()
 }
 
-function parseIcon($item) {
+function parseImage($item) {
   return $item('.image img').data('src')
 }
 

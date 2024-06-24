@@ -16,7 +16,7 @@ module.exports = {
       programs.push({
         title: parseTitle(item),
         description: parseDescription(item),
-        icon: parseIcon(item),
+        image: parseImage(item),
         category: parseCategory(item),
         start: parseStart(item).toJSON(),
         stop: parseStop(item).toJSON()
@@ -68,7 +68,7 @@ function parseCategory(item) {
   return $('.station-col > .type').text()
 }
 
-function parseIcon(item) {
+function parseImage(item) {
   const $ = cheerio.load(item)
   const imgSrc = $('.title-col .image img').data('src-desktop')
 

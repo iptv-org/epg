@@ -31,14 +31,14 @@ it('can parse response', () => {
       start: '2022-03-06T04:30:00.000Z',
       stop: '2022-03-06T07:10:00.000Z',
       title: 'Слепая',
-      icon: 'https://www.9tv.co.il/download/pictures/img_id=8484.jpg',
+      image: 'https://www.9tv.co.il/download/pictures/img_id=8484.jpg',
       description:
         'Она не очень любит говорить о себе или о том, кто и зачем к ней обращается. Живет уединенно, в глуши. Но тех, кто приходит -принимает. Она видит судьбы.'
     },
     {
       start: '2022-03-06T07:10:00.000Z',
       stop: '2022-03-06T08:10:00.000Z',
-      icon: 'https://www.9tv.co.il/download/pictures/img_id=23694.jpg',
+      image: 'https://www.9tv.co.il/download/pictures/img_id=23694.jpg',
       title: 'Орел и решка. Морской сезон',
       description: 'Орел и решка. Морской сезон. Ведущие -Алина Астровская и Коля Серга.'
     }

@@ -52,7 +52,7 @@ it('can parse response', () => {
       category: ['Informativni'],
       description:
         'Dnevnik Slovencev v Italiji je informativna oddaja, v kateri novinarji poročajo predvsem o dnevnih dogodkih med Slovenci v Italiji.',
-      icon: 'https://tv2go.t-2.net/static/media/img/epg/max_crop/EPG_IMG_2927405.jpg'
+      image: 'https://tv2go.t-2.net/static/media/img/epg/max_crop/EPG_IMG_2927405.jpg'
     }
   ])
 })

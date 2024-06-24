@@ -32,7 +32,8 @@ it('can parse response', () => {
       stop: '2021-11-17T06:10:00.000Z',
       title: 'Δεσμοί Αίματος',
       description: 'Θρίλερ Μυστηρίου',
-      icon: 'http://cache-forthnet.secure.footprint.net/linear/3/0/305608_COMMOBLOOX_GUIDE_STILL.jpg'
+      image:
+        'http://cache-forthnet.secure.footprint.net/linear/3/0/305608_COMMOBLOOX_GUIDE_STILL.jpg'
     }
   ])
 })

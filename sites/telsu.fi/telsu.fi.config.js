@@ -33,7 +33,7 @@ module.exports = {
       programs.push({
         title: parseTitle($item),
         description: parseDescription($item),
-        icon: parseIcon($item),
+        image: parseImage($item),
         start,
         stop
       })
@@ -69,7 +69,7 @@ function parseDescription($item) {
   return $item('.t > div').clone().children().remove().end().text().trim()
 }
 
-function parseIcon($item) {
+function parseImage($item) {
   const imgSrc = $item('.t > div > div.ps > a > img').attr('src')
 
   return imgSrc ? `https://www.telsu.fi${imgSrc}` : null

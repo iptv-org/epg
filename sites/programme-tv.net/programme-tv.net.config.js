@@ -29,13 +29,13 @@ module.exports = {
     items.forEach(item => {
       const $item = cheerio.load(item)
       const title = parseTitle($item)
-      const icon = parseIcon($item)
+      const image = parseImage($item)
       const category = parseCategory($item)
       const start = parseStart($item, date)
       const duration = parseDuration($item)
       const stop = start.add(duration, 'ms')
 
-      programs.push({ title, icon, category, start, stop })
+      programs.push({ title, image, category, start, stop })
     })
 
     return programs
@@ -88,13 +88,13 @@ function parseDuration($item) {
   return durationParser(duration)
 }
 
-function parseIcon($item) {
+function parseImage($item) {
   const img = $item('.mainBroadcastCard-imageContent').first().find('img')
   const value = img.attr('srcset') || img.data('srcset')
   const obj = value ? srcset.parse(value).find(i => i.width === 128) : {}
 
   if (obj.url) {
-    obj.url = obj.url.replace('128x180', '960x540');
+    obj.url = obj.url.replace('128x180', '960x540')
   }
 
   return obj.url

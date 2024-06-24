@@ -33,7 +33,7 @@ module.exports = {
         title: parseTitle($item),
         description: details.description,
         actors: details.actors,
-        icon: details.icon,
+        image: details.image,
         category: details.category,
         sub_title: details.sub_title,
         season: details.season,
@@ -89,7 +89,7 @@ async function loadProgramDetails($item) {
   const $ = cheerio.load(data.contentBefore + data.contentAfter)
 
   return Promise.resolve({
-    icon: parseIcon($),
+    image: parseImage($),
     actors: parseActors($),
     description: parseDescription($),
     category: parseCategory($),
@@ -99,7 +99,7 @@ async function loadProgramDetails($item) {
   })
 }
 
-function parseIcon($) {
+function parseImage($) {
   const style = $('.image > .actual').attr('style')
   const [, url] = style.match(/background-image: url\('([^']+)'\)/)
 

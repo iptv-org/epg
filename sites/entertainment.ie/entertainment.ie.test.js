@@ -31,7 +31,8 @@ it('can parse response', () => {
     stop: '2023-06-29T08:00:00.000Z',
     title: 'EuroNews',
     description: 'European and international headlines live via satellite',
-    icon: 'https://img.resized.co/entertainment/eyJkYXRhIjoie1widXJsXCI6XCJodHRwczpcXFwvXFxcL3R2LmFzc2V0cy5wcmVzc2Fzc29jaWF0aW9uLmlvXFxcLzcxZDdkYWY2LWQxMjItNTliYy1iMGRjLTFkMjc2ODg1MzhkNC5qcGdcIixcIndpZHRoXCI6NDgwLFwiaGVpZ2h0XCI6Mjg4LFwiZGVmYXVsdFwiOlwiaHR0cHM6XFxcL1xcXC9lbnRlcnRhaW5tZW50LmllXFxcL2ltYWdlc1xcXC9uby1pbWFnZS5wbmdcIn0iLCJoYXNoIjoiZDhjYzA0NzFhMGZhOTI1Yjc5ODI0M2E3OWZjMGI2ZGJmMDIxMjllNyJ9/71d7daf6-d122-59bc-b0dc-1d27688538d4.jpg',
+    image:
+      'https://img.resized.co/entertainment/eyJkYXRhIjoie1widXJsXCI6XCJodHRwczpcXFwvXFxcL3R2LmFzc2V0cy5wcmVzc2Fzc29jaWF0aW9uLmlvXFxcLzcxZDdkYWY2LWQxMjItNTliYy1iMGRjLTFkMjc2ODg1MzhkNC5qcGdcIixcIndpZHRoXCI6NDgwLFwiaGVpZ2h0XCI6Mjg4LFwiZGVmYXVsdFwiOlwiaHR0cHM6XFxcL1xcXC9lbnRlcnRhaW5tZW50LmllXFxcL2ltYWdlc1xcXC9uby1pbWFnZS5wbmdcIn0iLCJoYXNoIjoiZDhjYzA0NzFhMGZhOTI1Yjc5ODI0M2E3OWZjMGI2ZGJmMDIxMjllNyJ9/71d7daf6-d122-59bc-b0dc-1d27688538d4.jpg',
     categories: ['Factual']
   })
 
@@ -40,7 +41,8 @@ it('can parse response', () => {
     stop: '2023-06-30T06:00:00.000Z',
     title: 'EuroNews',
     description: 'European and international headlines live via satellite',
-    icon: 'https://img.resized.co/entertainment/eyJkYXRhIjoie1widXJsXCI6XCJodHRwczpcXFwvXFxcL3R2LmFzc2V0cy5wcmVzc2Fzc29jaWF0aW9uLmlvXFxcLzcxZDdkYWY2LWQxMjItNTliYy1iMGRjLTFkMjc2ODg1MzhkNC5qcGdcIixcIndpZHRoXCI6NDgwLFwiaGVpZ2h0XCI6Mjg4LFwiZGVmYXVsdFwiOlwiaHR0cHM6XFxcL1xcXC9lbnRlcnRhaW5tZW50LmllXFxcL2ltYWdlc1xcXC9uby1pbWFnZS5wbmdcIn0iLCJoYXNoIjoiZDhjYzA0NzFhMGZhOTI1Yjc5ODI0M2E3OWZjMGI2ZGJmMDIxMjllNyJ9/71d7daf6-d122-59bc-b0dc-1d27688538d4.jpg',
+    image:
+      'https://img.resized.co/entertainment/eyJkYXRhIjoie1widXJsXCI6XCJodHRwczpcXFwvXFxcL3R2LmFzc2V0cy5wcmVzc2Fzc29jaWF0aW9uLmlvXFxcLzcxZDdkYWY2LWQxMjItNTliYy1iMGRjLTFkMjc2ODg1MzhkNC5qcGdcIixcIndpZHRoXCI6NDgwLFwiaGVpZ2h0XCI6Mjg4LFwiZGVmYXVsdFwiOlwiaHR0cHM6XFxcL1xcXC9lbnRlcnRhaW5tZW50LmllXFxcL2ltYWdlc1xcXC9uby1pbWFnZS5wbmdcIn0iLCJoYXNoIjoiZDhjYzA0NzFhMGZhOTI1Yjc5ODI0M2E3OWZjMGI2ZGJmMDIxMjllNyJ9/71d7daf6-d122-59bc-b0dc-1d27688538d4.jpg',
     categories: ['Factual']
   })
 })

@@ -27,7 +27,7 @@ module.exports = {
       programs.push({
         title: item.title,
         description: item.description,
-        icon: parseIcon(item),
+        image: parseImage(item),
         start,
         stop
       })
@@ -55,7 +55,7 @@ function parseStart(item) {
   return dayjs.tz(item.datetime, 'YYYY-MM-DD HH:mm:ss', 'Asia/Nicosia')
 }
 
-function parseIcon(item) {
+function parseImage(item) {
   return item.mediaItems.length ? item.mediaItems[0].CdnUrl : null
 }
 

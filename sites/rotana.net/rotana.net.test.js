@@ -63,7 +63,7 @@ it('can parse english response', async () => {
     title: 'Katkout',
     description:
       'In a comic framework, the events of the film revolve around (Katkoot) Al-Saedi, whose aunt, the eldest of the Al-Saedi family, tries to force him to kill himself in order to ransom his family. A time...',
-    icon: 'https://imgsrv.rotana.net/spider_storage/1398X1000/1690882129.webp?w=450&fit=max'
+    image: 'https://imgsrv.rotana.net/spider_storage/1398X1000/1690882129.webp?w=450&fit=max'
   })
 })
 
@@ -79,7 +79,7 @@ it('can parse arabic response', async () => {
     title: 'كتكوت',
     description:
       'في إطار كوميدي تدور أحداث الفيلم، حول (كتكوت) الصعيدي الذي تحاول عمته كبيرة العائلة الصعيدية إجباره على تقديم نفسه للقتل ليفدي عائلته، ولكنه يهرب وتخطفه جهة أمنية لاكتشاف شبه كبير بينه وبين (يوسف خوري...',
-    icon: 'https://imgsrv.rotana.net/spider_storage/1398X1000/1690882129.webp?w=450&fit=max'
+    image: 'https://imgsrv.rotana.net/spider_storage/1398X1000/1690882129.webp?w=450&fit=max'
   })
 })
 

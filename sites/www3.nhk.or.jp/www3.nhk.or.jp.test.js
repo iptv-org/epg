@@ -29,7 +29,8 @@ it('can parse response', () => {
       stop: dayjs(1682727000000),
       description:
         "NHK WORLD-JAPAN's flagship hourly news program delivers the latest world news, business and weather, with a focus on Japan and the rest of Asia.",
-      icon: 'https://www.nhk.or.jp/nhkworld/upld/thumbnails/en/tv/regular_program/340aed63308aafd1178172abf6325231_large.jpg',
+      image:
+        'https://www.nhk.or.jp/nhkworld/upld/thumbnails/en/tv/regular_program/340aed63308aafd1178172abf6325231_large.jpg',
       sub_title: ''
     }
   ])

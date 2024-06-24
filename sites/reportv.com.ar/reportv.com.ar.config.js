@@ -44,7 +44,7 @@ module.exports = {
       programs.push({
         title: parseTitle($item),
         category: parseCategory($item),
-        icon: details.icon,
+        image: details.image,
         description: details.description,
         directors: details.directors,
         actors: details.actors,
@@ -94,7 +94,7 @@ async function loadProgramDetails($item) {
   const $ = cheerio.load(content)
 
   return Promise.resolve({
-    icon: parseIcon($),
+    image: parseImage($),
     actors: parseActors($),
     directors: parseDirectors($),
     description: parseDescription($)
@@ -131,7 +131,7 @@ function parseDescription($) {
   return $('#Sinopsis > div').text().trim()
 }
 
-function parseIcon($) {
+function parseImage($) {
   const src = $('#ImgProg').attr('src')
   const url = new URL(src, 'https://www.reportv.com.ar/buscador/')
 

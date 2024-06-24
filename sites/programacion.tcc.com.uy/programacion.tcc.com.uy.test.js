@@ -36,7 +36,7 @@ it('can parse response', () => {
     season: 3,
     episode: 3,
     categories: [],
-    icon: 'https://zpapi.zetatv.com.uy/media/images/2b45d2675389f2e4f7f6fe0655ccc968.jpg',
+    image: 'https://zpapi.zetatv.com.uy/media/images/2b45d2675389f2e4f7f6fe0655ccc968.jpg',
     description:
       'Cada episodio relata un lugar y una historia diferente pero siguiendo la línea de una investigación basada en una leyenda la cual es guiada por una pareja. Estos dos personajes no son necesariamente ambos policías, pero se ven obligados a colaborar a pesar de los primeros informes difíciles.'
   })
@@ -48,7 +48,7 @@ it('can parse response', () => {
     season: null,
     episode: null,
     categories: ['Drama'],
-    icon: 'https://zpapi.zetatv.com.uy/media/images/8cab42d88691edaa8a4001b91f809d91.jpg',
+    image: 'https://zpapi.zetatv.com.uy/media/images/8cab42d88691edaa8a4001b91f809d91.jpg',
     description:
       'Basada en la novela de Charles Dickens, cuenta la historia del pintor Finn que persigue obsesionado a su amor de la niñez, la bella y rica Estella. Gracias a un misterioso benefactor, Finn es enviado a Nueva York, donde se reúne con la hermosa y fría joven.'
   })
@@ -60,7 +60,7 @@ it('can parse response', () => {
     season: null,
     episode: null,
     categories: ['Comedia', 'Drama'],
-    icon: 'https://zpapi.zetatv.com.uy/media/images/51684d91ed33cb9b0c1863b7a9b097e9.jpg',
+    image: 'https://zpapi.zetatv.com.uy/media/images/51684d91ed33cb9b0c1863b7a9b097e9.jpg',
     description:
       'Una pareja de lesbianas conciben a un niño y una niña por inseminacion artificial. Al paso del tiempo, los chicos deciden conocer a su verdadero padre a espaldas de sus madres. Tras localizarlo intentan integrar toda una familia. Podran lograrlo?.'
   })

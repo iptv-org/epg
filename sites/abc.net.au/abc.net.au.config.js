@@ -33,7 +33,7 @@ module.exports = {
         season: parseSeason(item),
         episode: parseEpisode(item),
         rating: parseRating(item),
-        icon: parseIcon(item),
+        image: parseImage(item),
         start: parseTime(item.start_time),
         stop: parseTime(item.end_time)
       })
@@ -106,7 +106,7 @@ function parseEpisode(item) {
 function parseTime(time) {
   return dayjs.tz(time, 'YYYY-MM-DD HH:mm', 'Australia/Sydney')
 }
-function parseIcon(item) {
+function parseImage(item) {
   return item.image_file
     ? `https://www.abc.net.au/tv/common/images/publicity/${item.image_file}`
     : null

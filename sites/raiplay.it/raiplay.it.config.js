@@ -35,7 +35,7 @@ module.exports = {
         url: parseURL(item),
         start,
         stop,
-        icon: parseIcon(item)
+        image: parseImage(item)
       })
     })
 
@@ -47,7 +47,7 @@ function parseStart(item, date) {
   return dayjs.tz(`${date.format('YYYY-MM-DD')} ${item.hour}`, 'YYYY-MM-DD HH:mm', 'Europe/Rome')
 }
 
-function parseIcon(item) {
+function parseImage(item) {
   let cover = null
   if (item.image) {
     cover = `https://www.raiplay.it${item.image}`
