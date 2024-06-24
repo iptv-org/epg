@@ -55,7 +55,7 @@
 | [horizon.tv](sites/horizon.tv)                                     | 🟢     |                                                                                          |
 | [i.mjh.nz](sites/i.mjh.nz)                                         | 🟢     |                                                                                          |
 | [i24news.tv](sites/i24news.tv)                                     | 🟢     |                                                                                          |
-| [iltalehti.fi](sites/iltalehti.fi)                                 | 🟢     |                                                                                          |
+| [iltalehti.fi](sites/iltalehti.fi)                                 | 🔴     | https://github.com/iptv-org/epg/issues/2396                                              |
 | [indihometv.com](sites/indihometv.com)                             | 🟢     |                                                                                          |
 | [ionplustv.com](sites/ionplustv.com)                               | 🟢     |                                                                                          |
 | [ipko.com](sites/ipko.com)                                         | 🟢     |                                                                                          |
