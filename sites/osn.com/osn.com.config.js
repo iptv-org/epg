@@ -49,7 +49,7 @@ module.exports = {
     name: channel.channeltitle
     }));
 
-    return channels;
+    return channels
   }
 }
 
