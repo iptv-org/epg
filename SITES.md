@@ -78,7 +78,7 @@
 | [mewatch.sg](sites/mewatch.sg)                                     | 🟢     |                                                                                          |
 | [mi.tv](sites/mi.tv)                                               | 🟢     |                                                                                          |
 | [mncvision.id](sites/mncvision.id)                                 | 🟢     |                                                                                          |
-| [moji.id](sites/moji.id)                                           | 🟢     |                                                                                          |
+| [moji.id](sites/moji.id)                                           | 🔴     | https://github.com/iptv-org/epg/issues/2392                                              |
 | [mon-programme-tv.be](sites/mon-programme-tv.be)                   | 🟢     |                                                                                          |
 | [movistarplus.es](sites/movistarplus.es)                           | 🟢     |                                                                                          |
 | [mtel.ba](sites/mtel.ba)                                           | 🟢     |                                                                                          |
