@@ -28,7 +28,7 @@ module.exports = {
         date: item.year,
         season: item.season_number,
         episode: item.episode_number,
-        icon: parseIcon(item),
+        image: parseImage(item),
         start: parseStart(item),
         stop: parseStop(item)
       })
@@ -78,7 +78,7 @@ function parseCategories(item) {
     .filter(Boolean)
 }
 
-function parseIcon(item) {
+function parseImage(item) {
   const uri = item.images[0] ? item.images[0].image_media.file : null
 
   return uri ? `https:${uri}` : null

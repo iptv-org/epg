@@ -35,7 +35,8 @@ it('can parse response', () => {
       stop: '2021-11-07T01:00:00.000Z',
       title: '24 Portre',
       category: 'Yaşam',
-      icon: 'https://izmottvsc23.tvplus.com.tr:33207/CPS/images/universal/film/program/202111/20211104/35/20211104000026695lh5.jpg',
+      image:
+        'https://izmottvsc23.tvplus.com.tr:33207/CPS/images/universal/film/program/202111/20211104/35/20211104000026695lh5.jpg',
       description:
         'Kendi alanında büyük başarılar elde etmiş insanların kendi ağzından hayat hikayeleri ekrana geliyor.'
     }

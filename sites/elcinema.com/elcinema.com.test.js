@@ -35,7 +35,8 @@ it('can parse response (en)', () => {
     start: '2022-08-27T14:25:00.000Z',
     stop: '2022-08-27T15:15:00.000Z',
     title: 'Station 19 S5',
-    icon: 'https://media.elcinema.com/uploads/_150x200_ec30d1a2251c8edf83334be4860184c74d2534d7ba508a334ad66fa59acc4926.jpg',
+    image:
+      'https://media.elcinema.com/uploads/_150x200_ec30d1a2251c8edf83334be4860184c74d2534d7ba508a334ad66fa59acc4926.jpg',
     category: 'Series'
   })
 })
@@ -52,7 +53,8 @@ it('can parse response (ar)', () => {
     start: '2022-08-27T14:25:00.000Z',
     stop: '2022-08-27T15:15:00.000Z',
     title: 'Station 19 S5',
-    icon: 'https://media.elcinema.com/uploads/_150x200_ec30d1a2251c8edf83334be4860184c74d2534d7ba508a334ad66fa59acc4926.jpg',
+    image:
+      'https://media.elcinema.com/uploads/_150x200_ec30d1a2251c8edf83334be4860184c74d2534d7ba508a334ad66fa59acc4926.jpg',
     category: 'مسلسل'
   })
 })

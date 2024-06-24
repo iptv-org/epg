@@ -33,7 +33,8 @@ it('can parse response', () => {
       title: 'Open Homes S3 - EP 2',
       description:
         'Mike heads down to the Sydney beaches to visit a beachside renovation with all the bells and whistles, we see a kitchen tip and recipe anyone can do at home. We finish up in the prestigious Byron bay to visit a multi million dollar award winning home.',
-      icon: "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='jpg'&Quality=85&ImageId='4853697'&EntityType='LinearSchedule'&EntityId='788a7dd9-9b12-446f-91b4-c8ac9fec95e5'&Width=1280&Height=720&device=web_browser&subscriptions=Anonymous&segmentationTags=all",
+      image:
+        "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='jpg'&Quality=85&ImageId='4853697'&EntityType='LinearSchedule'&EntityId='788a7dd9-9b12-446f-91b4-c8ac9fec95e5'&Width=1280&Height=720&device=web_browser&subscriptions=Anonymous&segmentationTags=all",
       episode: 2,
       season: 3,
       rating: {

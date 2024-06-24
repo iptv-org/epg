@@ -35,7 +35,7 @@ module.exports = {
         title: item.titreP,
         description: item.desc,
         category: item.categorieP,
-        icon: item.srcP,
+        image: item.srcP,
         start: dayjs.unix(item.timestampDeb),
         stop: dayjs.unix(item.timestampFin)
       })

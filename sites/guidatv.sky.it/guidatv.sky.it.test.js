@@ -35,7 +35,8 @@ it('can parse response', () => {
         "S6 Ep26 La resa dei conti - Fino all'ultimo la sfida tra Ardenzi e Carrano, nemici di vecchia data, riserva clamorosi colpi di scena. E si scopre che non e' tutto come sembrava.",
       season: 6,
       episode: 26,
-      icon: 'https://guidatv.sky.it/uuid/77c630aa-4744-44cb-a88e-3e871c6b73d9/cover?md5ChecksumParam=61135b999a63e3d3f4a933b9edeb0c1b',
+      image:
+        'https://guidatv.sky.it/uuid/77c630aa-4744-44cb-a88e-3e871c6b73d9/cover?md5ChecksumParam=61135b999a63e3d3f4a933b9edeb0c1b',
       category: 'Intrattenimento/Fiction',
       url: 'https://guidatv.sky.it/serie-tv/distretto-di-polizia/stagione-6/episodio-26/77c630aa-4744-44cb-a88e-3e871c6b73d9'
     }

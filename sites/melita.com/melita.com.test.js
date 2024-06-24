@@ -35,7 +35,8 @@ it('can parse response', () => {
         'Symphony of Illumination - Robin gets some bad news and decides to keep it to herself. Marshall decorates the house.',
       season: 7,
       episode: 12,
-      icon: 'https://androme.melitacable.com/media/images/epg/bc/07/p8953134_e_h10_ad.jpg?form=epg-card-6',
+      image:
+        'https://androme.melitacable.com/media/images/epg/bc/07/p8953134_e_h10_ad.jpg?form=epg-card-6',
       category: ['comedy']
     }
   ])

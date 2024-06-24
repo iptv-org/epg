@@ -39,7 +39,8 @@ it('can parse response', () => {
     stop: '2023-11-27T05:30:00.000Z',
     title: 'Programmes de la nuit',
     category: 'Autre',
-    icon: 'https://www.programme-tv.net/imgre/fit/~2~program~978eb86d5b99cee0.jpg/960x540/quality/80/programmes-de-la-nuit.jpg'
+    image:
+      'https://www.programme-tv.net/imgre/fit/~2~program~978eb86d5b99cee0.jpg/960x540/quality/80/programmes-de-la-nuit.jpg'
   })
 
   expect(results[27]).toMatchObject({
@@ -47,7 +48,8 @@ it('can parse response', () => {
     stop: '2023-11-27T23:45:00.000Z',
     title: 'Coup de foudre chez le Père Noël',
     category: 'Téléfilm',
-    icon: 'https://www.programme-tv.net/imgre/fit/~2~program~5a4e78779c4a3fac.jpg/960x540/quality/80/coup-de-foudre-chez-le-pere-noel.jpg'
+    image:
+      'https://www.programme-tv.net/imgre/fit/~2~program~5a4e78779c4a3fac.jpg/960x540/quality/80/coup-de-foudre-chez-le-pere-noel.jpg'
   })
 })
 

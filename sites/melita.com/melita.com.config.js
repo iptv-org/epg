@@ -18,7 +18,7 @@ module.exports = {
       programs.push({
         title: item.title,
         description: item.shortSynopsis,
-        icon: parseIcon(item),
+        image: parseImage(item),
         category: item.tags,
         season: item.season,
         episode: item.episode,
@@ -59,7 +59,7 @@ function parseStop(item) {
   return dayjs(item.published.end)
 }
 
-function parseIcon(item) {
+function parseImage(item) {
   return item.posterImage ? item.posterImage + '?form=epg-card-6' : null
 }
 

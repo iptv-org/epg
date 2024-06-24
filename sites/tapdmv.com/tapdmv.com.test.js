@@ -34,7 +34,7 @@ it('can parse response', () => {
       description:
         'In Italy, a woman becomes involved in a series of unauthorized exorcisms during her mission to discover what happened to her mother, who allegedly murdered three people during her own exorcism.',
       category: 'Horror',
-      icon: 'https://s3.ap-southeast-1.amazonaws.com/epg.tapdmv.com/tapactionflix.png'
+      image: 'https://s3.ap-southeast-1.amazonaws.com/epg.tapdmv.com/tapactionflix.png'
     }
   ])
 })

@@ -19,7 +19,7 @@ module.exports = {
         title: item.season?.serie?.title ? item.season.serie.title : item.title,
         category: item.genreDetailed,
         description: item.synopsis,
-        icon: parseIcon(item),
+        image: parseImage(item),
         start: start.toJSON(),
         stop: stop.toJSON()
       })
@@ -49,7 +49,7 @@ module.exports = {
   }
 }
 
-function parseIcon(item) {
+function parseImage(item) {
   return item.covers && item.covers.length ? item.covers[0].url : null
 }
 

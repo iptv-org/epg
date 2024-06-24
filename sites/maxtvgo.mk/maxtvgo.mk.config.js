@@ -22,7 +22,7 @@ module.exports = {
         title: item.title,
         category: item.category,
         description: parseDescription(item),
-        icon: parseIcon(item),
+        image: parseImage(item),
         start: parseStart(item),
         stop: parseStop(item)
       })
@@ -60,7 +60,7 @@ function parseDescription(item) {
   return typeof item.desc === 'string' ? item.desc : null
 }
 
-function parseIcon(item) {
+function parseImage(item) {
   return item.icon['@attributes'].src
 }
 

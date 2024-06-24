@@ -28,7 +28,7 @@ it('can parse response', () => {
       stop: dayjs.utc('2023/08/21 00:00', 'YYYY/MM/DD HH:mm'),
       description:
         'From blockchain to Buddha statues, Taiwan’s culture is a kaleidoscope of old and new just waiting to be discovered.',
-      icon: 'https://prod-img.taiwanplus.com/live-schedule/Single/S30668_20230810104937.webp',
+      image: 'https://prod-img.taiwanplus.com/live-schedule/Single/S30668_20230810104937.webp',
       category: 'TaiwanPlus ✕ Discovery',
       rating: '0+'
     }

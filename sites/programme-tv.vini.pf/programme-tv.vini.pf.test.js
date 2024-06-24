@@ -62,7 +62,8 @@ it('can parse response', done => {
           category: 'Magazine',
           description:
             "Pour faire face à la crise du logement, aux loyers toujours plus élevés, à la solitude ou pour les gardes d'enfants, les colocations ont le vent en poupe, Pour mieux comprendre ce nouveau phénomène, une équipe a partagé le quotidien de quatre foyers : une retraitée qui héberge des étudiants, des mamans solos, enceintes, qui partagent un appartement associatif, trois générations de la même famille sur un domaine viticole et une étudiante qui intègre une colocation XXL.",
-          icon: 'https://programme-tv.vini.pf/sites/default/files/img-icones/52ada51ed86b7e7bc11eaee83ff2192785989d77.jpg'
+          image:
+            'https://programme-tv.vini.pf/sites/default/files/img-icones/52ada51ed86b7e7bc11eaee83ff2192785989d77.jpg'
         },
         {
           start: '2021-11-21T01:10:00.000Z',
@@ -71,7 +72,8 @@ it('can parse response', done => {
           category: 'Magazine',
           description:
             'Un documentaire français réalisé en 2019, Cindy Sander, Myriam Abel, Mario, Michal ou encore Magali Vaé ont fait les grandes heures des premières émissions de télécrochet modernes, dans les années 2000, Des années après leur passage, que reste-t-il de leur notoriété ? Comment ces candidats ont-ils vécu leur soudaine médiatisation ? Quels rapports entretenaient-ils avec les autres participants et les membres du jury, souvent intransigeants ?',
-          icon: 'https://programme-tv.vini.pf/sites/default/files/img-icones/6e64cfbc55c1f4cbd11e3011401403d4dc08c6d2.jpg'
+          image:
+            'https://programme-tv.vini.pf/sites/default/files/img-icones/6e64cfbc55c1f4cbd11e3011401403d4dc08c6d2.jpg'
         },
         {
           start: '2021-11-21T02:30:00.000Z',
@@ -80,7 +82,8 @@ it('can parse response', done => {
           category: 'Magazine',
           description:
             "50'INSIDE, c'est toute l'actualité des stars résumée, chaque samedi, Le rendez-vous glamour pour retrouver toujours,,",
-          icon: 'https://programme-tv.vini.pf/sites/default/files/img-icones/3d7e252312dacb5fb7a1a786fa0022ca1be15499.jpg'
+          image:
+            'https://programme-tv.vini.pf/sites/default/files/img-icones/3d7e252312dacb5fb7a1a786fa0022ca1be15499.jpg'
         }
       ])
       done()

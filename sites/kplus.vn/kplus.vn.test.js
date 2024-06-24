@@ -42,14 +42,15 @@ it('can parse response', () => {
       start: '2022-03-14T23:15:00.000Z',
       stop: '2022-03-15T00:00:00.000Z',
       title: 'WEEKLY FILMS AND STARS, EP740',
-      icon: 'https://img.kplus.vn/images?filename=Media/HDVN/2022_02/ENT_DOC_LNO_21_2649421_2652183_2652183.jpg',
+      image:
+        'https://img.kplus.vn/images?filename=Media/HDVN/2022_02/ENT_DOC_LNO_21_2649421_2652183_2652183.jpg',
       category: 'Documentary'
     },
     {
       start: '2022-03-15T00:00:00.000Z',
       stop: '2022-03-15T01:00:00.000Z',
       title: 'ST. VINCENT',
-      icon: 'https://img.kplus.vn/images?filename=Media/HDVN/2020_05/MOV_COM__2632318_2632318.jpg',
+      image: 'https://img.kplus.vn/images?filename=Media/HDVN/2020_05/MOV_COM__2632318_2632318.jpg',
       category: 'Comedy'
     }
   ])

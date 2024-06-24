@@ -52,7 +52,7 @@ it('can parse response', () => {
       title: 'الراقصه و السياسي',
       description:
         'تقرر الراقصه سونيا انشاء دار حضانه للأطفال اليتامى و عندما تتقدم بمشورعها للمسئول يرفض فتتحداه ، تلجأ للوزير عبد الحميد رأفت تربطه بها علاقة قديمة ، يخشى على مركزه و يرفض مساعدتها فتقرر كتابة مذكراتها بمساعدة أحد الصحفيين ، يتخوف عبد الحميد و المسئولين ثم يفاجأ عبد الحميد بحصول سونيا على الموافقه للمشورع و البدء في تنفيذه و ذلك لعلاقتها بأحد كبار المسئولين .',
-      icon: 'https://www.artonline.tv/UploadImages/Channel/ARTAFLAM1/03/AlRaqesaWaAlSeyasi.jpg'
+      image: 'https://www.artonline.tv/UploadImages/Channel/ARTAFLAM1/03/AlRaqesaWaAlSeyasi.jpg'
     }
   ])
 })

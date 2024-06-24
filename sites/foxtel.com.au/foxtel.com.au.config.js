@@ -34,7 +34,7 @@ module.exports = {
       programs.push({
         title: parseTitle($item),
         sub_title: parseSubTitle($item),
-        icon: parseIcon($item),
+        image: parseImage($item),
         rating: parseRating($item),
         season: parseSeason($item),
         episode: parseEpisode($item),
@@ -87,7 +87,7 @@ function parseEpisode($item) {
   return episode ? parseInt(episode) : null
 }
 
-function parseIcon($item) {
+function parseImage($item) {
   return $item('.epg-event-thumbnail > img').attr('src')
 }
 

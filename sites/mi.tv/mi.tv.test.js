@@ -33,7 +33,7 @@ it('can parse response', () => {
       title: 'Trasnoche de 24/7',
       category: 'Interés general',
       description: 'Lo más visto de la semana en nuestra pantalla.',
-      icon: 'https://cdn.mitvstatic.com/programs/fallback_other_l_m.jpg'
+      image: 'https://cdn.mitvstatic.com/programs/fallback_other_l_m.jpg'
     },
     {
       start: '2021-11-24T23:00:00.000Z',
@@ -42,7 +42,7 @@ it('can parse response', () => {
       category: 'Noticiero',
       description:
         'Cerramos el día con un completo resumen de los temas más relevantes con columnistas y análisis especiales para terminar el día.',
-      icon: 'https://cdn.mitvstatic.com/programs/fallback_other_l_m.jpg'
+      image: 'https://cdn.mitvstatic.com/programs/fallback_other_l_m.jpg'
     },
     {
       start: '2021-11-25T01:00:00.000Z',
@@ -51,7 +51,7 @@ it('can parse response', () => {
       category: 'Cultural',
       description:
         'La energía tiene mucho para mostrar. Este programa reúne a las principales empresas y protagonistas de la actividad que esta revolucionando la región.',
-      icon: 'https://cdn.mitvstatic.com/programs/fallback_other_l_m.jpg'
+      image: 'https://cdn.mitvstatic.com/programs/fallback_other_l_m.jpg'
     }
   ])
 })

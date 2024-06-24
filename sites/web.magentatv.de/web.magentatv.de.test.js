@@ -66,7 +66,8 @@ it('can parse response', () => {
       title: 'Twenty Foot Plus',
       description:
         'Die besten Big-Wave-Surfer werden bei ihrer Suche nach der nächsten großen Welle begleitet.',
-      icon: 'http://ngiss.t-online.de/cm1s/media/gracenote/2/4/p24832950_e_h9_aa_2023-06-22T10_12_01.jpg',
+      image:
+        'http://ngiss.t-online.de/cm1s/media/gracenote/2/4/p24832950_e_h9_aa_2023-06-22T10_12_01.jpg',
       category: ['Sport']
     }
   ])
