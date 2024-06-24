@@ -1,4 +1,3 @@
-const _ = require('lodash')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
@@ -56,7 +55,7 @@ module.exports = {
       })
     })
 
-    programs = _.sortBy(programs, 'start')
+    programs.sort((a, b) => new Date(a.start) - new Date(b.start))
 
     return programs
   },

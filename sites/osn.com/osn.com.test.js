@@ -21,7 +21,7 @@ it('can generate valid request headers', () => {
 it('can generate valid url', () => {
   const result = url({ channel: channelAR, date })
   expect(result).toBe(
-    'https://www.osn.com/api/TVScheduleWebService.asmx/GetTVChannelsProgramTimeTable?newDate=10%2F24%2F2021&selectedCountry=AE&channelCode=AAN&isMobile=false&hoursForMobile=0'
+    'https://www.osn.com/api/TVScheduleWebService.asmx/time?dt=10%2F24%2F2021&co=AE&ch=AAN&mo=false&hr=0'
   )
 })
 

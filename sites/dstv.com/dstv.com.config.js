@@ -45,8 +45,6 @@ module.exports = {
     return programs
   },
   async channels({ country }) {
-    const _ = require('lodash')
-
     const countries = {
       ao: 'ago',
       bj: 'ben',
@@ -114,7 +112,7 @@ module.exports = {
       })
     })
 
-    return _.uniqBy(channels, 'site_id')
+    return [...new Map(channels.map(item => [item.site_id, item])).values()];
   }
 }
 

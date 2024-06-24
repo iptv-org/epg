@@ -9,9 +9,9 @@ module.exports = {
   site: 'osn.com',
   days: 2,
   url({ channel, date }) {
-    return `https://www.osn.com/api/TVScheduleWebService.asmx/GetTVChannelsProgramTimeTable?newDate=${encodeURIComponent(
+    return `https://www.osn.com/api/TVScheduleWebService.asmx/time?dt=${encodeURIComponent(
       date.format('MM/DD/YYYY')
-    )}&selectedCountry=AE&channelCode=${channel.site_id}&isMobile=false&hoursForMobile=0`
+    )}&co=AE&ch=${channel.site_id}&mo=false&hr=0`
   },
   request: {
     headers({ channel }) {
@@ -39,20 +39,17 @@ module.exports = {
   },
   async channels({ lang = 'ar' }) {
     const axios = require('axios')
-    const result = await axios
-      .get('https://www.osn.com/api/tvchannels.ashx?culture=en-US&packageId=3519&country=AE')
-      .then(response => response.data)
-      .catch(console.error)
+    const pages = Array.from({ length: 9 }, (_, i) => i + 1);
+    const results = await Promise.all(pages.map(pg => axios.get(`https://www.osn.com/api/TVScheduleWebService.asmx/chnl?pg=${pg}&pk=0&gn=0&cu=ar-AE&bx=1&dt=${encodeURIComponent(
+      date.format('MM/DD/YYYY'))}`).then(response => response.data).catch(console.error)));
 
-    const channels = result.map(channel => {
-      return {
-        lang: lang,
-        site_id: channel.channelCode,
-        name: channel.channeltitle
-      }
-    })
+    const channels = results.flat().filter(Boolean).map(channel => ({
+    lang: lang,
+    site_id: channel.channelCode,
+    name: channel.channeltitle
+    }));
 
-    return channels
+    return channels;
   }
 }
 
