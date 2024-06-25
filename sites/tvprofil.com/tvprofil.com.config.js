@@ -144,7 +144,7 @@ function buildQuery(site_id, date) {
     callback: 'cb'
   }
 
-  let c = 3
+  let c = 4
   const a = query.datum + query.kanal + c
   const ua = query.kanal + query.datum
 
