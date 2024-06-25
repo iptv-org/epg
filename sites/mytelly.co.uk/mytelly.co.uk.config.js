@@ -42,7 +42,6 @@ module.exports = {
   },
   async channels() {
     const axios = require('axios')
-    const _ = require('lodash')
 
     const providers = [
       '-3000053',
@@ -111,7 +110,7 @@ module.exports = {
       }
     }
 
-    return _.uniqBy(channels, 'site_id')
+    return [...new Map(channels.map(item => [item.site_id, item])).values()]
   }
 }
 

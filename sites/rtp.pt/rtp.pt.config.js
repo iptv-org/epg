@@ -1,4 +1,3 @@
-const _ = require('lodash')
 const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
@@ -63,5 +62,5 @@ function parseItems(content) {
   if (!content) return []
   const data = JSON.parse(content)
 
-  return _.flatten(Object.values(data.result))
+  return Object.values(data.result).flat();
 }

@@ -2,7 +2,6 @@ const cheerio = require('cheerio')
 const dayjs = require('dayjs')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
 const timezone = require('dayjs/plugin/timezone')
-const _ = require('lodash')
 
 dayjs.extend(customParseFormat)
 dayjs.extend(timezone)
@@ -29,7 +28,8 @@ module.exports = {
       })
     })
 
-    programs = _.orderBy(_.uniqBy(programs, 'start'), 'start')
+    programs = [...new Map(programs.map(program => [program.start, program])).values()]
+    .sort((a, b) => new Date(a.start) - new Date(b.start))
 
     return programs
   },

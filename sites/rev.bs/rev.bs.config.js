@@ -1,4 +1,3 @@
-const _ = require('lodash')
 const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
@@ -20,7 +19,8 @@ module.exports = {
     const items1 = parseItems(await loadNextItems(date, 1), channel)
     const items2 = parseItems(await loadNextItems(date, 2), channel)
     const items3 = parseItems(await loadNextItems(date, 3), channel)
-    const items = _.unionBy(items0, items1, items2, items3, 'sid')
+    const unionBy = (key, ...arrays) => [...new Map(arrays.flat().map(item => [item[key], item])).values()];
+    const items = unionBy('sid', items0, items1, items2, items3);
     items.forEach(item => {
       const start = parseStart(item, date)
       const stop = start.add(item.duration, 'm')

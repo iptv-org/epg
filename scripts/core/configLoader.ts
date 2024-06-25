@@ -1,5 +1,4 @@
 import { SiteConfig } from 'epg-grabber'
-import _ from 'lodash'
 import { pathToFileURL } from 'url'
 
 export class ConfigLoader {
@@ -28,6 +27,6 @@ export class ConfigLoader {
       channels: undefined
     }
 
-    return _.merge(defaultConfig, config)
+    return { ...defaultConfig, ...config }
   }
 }

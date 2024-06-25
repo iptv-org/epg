@@ -35,8 +35,6 @@ module.exports = {
     return programs
   },
   async channels() {
-    const _ = require('lodash')
-
     const regions = [5506, 1096, 1125, 285]
 
     let channels = []
@@ -64,7 +62,7 @@ module.exports = {
       }
     }
 
-    return _.uniqBy(channels, 'site_id')
+    return [...new Map(channels.map(channel => [channel.site_id, channel])).values()]
   }
 }
 

@@ -5,7 +5,6 @@ const cheerio = require('cheerio')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
-const _ = require('lodash')
 
 dayjs.extend(utc)
 dayjs.extend(timezone)
@@ -164,7 +163,8 @@ function parseDuration($item) {
 function parseItems(content, date) {
   if (!content) return []
   const $ = cheerio.load(content)
-  const d = _.startCase(date.locale('es').format('DD MMMM YYYY'))
+  const d = new Intl.DateTimeFormat('es', { day: '2-digit', month: 'long', year: 'numeric' })
+  .format(new Date()).replace(/\b\w/g, char => char.toUpperCase());
 
   return $(`.trProg[title*="${d}"]`).toArray()
 }

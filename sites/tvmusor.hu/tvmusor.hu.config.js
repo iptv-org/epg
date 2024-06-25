@@ -1,6 +1,5 @@
 const axios = require('axios')
 const dayjs = require('dayjs')
-const _ = require('lodash')
 
 module.exports = {
   site: 'tvmusor.hu',
@@ -77,5 +76,5 @@ function parseItems(content, channel, date) {
   const blockId = `${channel.site_id}_${date.format('YYYY-MM-DD')}`
   if (!Array.isArray(blocks[blockId])) return []
 
-  return _.uniqBy(_.uniqBy(blocks[blockId], 'e'), 'b')
+  return [...new Map(blocks[blockId].map(item => [item.e, item])).values()].map(item => item.b)
 }
