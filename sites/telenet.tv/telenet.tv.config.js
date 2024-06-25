@@ -63,7 +63,7 @@ module.exports = {
       const detail = await loadProgramDetails(item, channel)
       programs.push({
         title: item.title,
-        icon: detail.icon,
+        icon: parseIcon(item),
         description: detail.longDescription,
         category: detail.genres,
         actors: detail.actors,
@@ -94,15 +94,10 @@ module.exports = {
 
 async function loadProgramDetails(item, channel) {
   if (!item.id) return {}
-  const url = `${API_PROD_ENDPOINT}/replayEvent/${item.id}?returnLinearContent=true&language=${channel.lang}`
+    const url = `${API_PROD_ENDPOINT}/replayEvent/${item.id}?returnLinearContent=true&language=${channel.lang}`
   const data = await axios
     .get(url)
-    .then(r => {
-      var icon = `${API_IMAGE_ENDPOINT}/intent/${item.id}/posterTile`;
-
-      return { icon: icon, ...r.data };
-
-    })
+    .then(r => r.data)
     .catch(console.log)
 
   return data || {}
@@ -136,4 +131,8 @@ function parseEpisode(detail) {
   if (!detail.episodeNumber) return null
   if (String(detail.episodeNumber).length > 3) return null
   return detail.episodeNumber
+}
+
+function parseIcon(item) {
+  return `${API_IMAGE_ENDPOINT}/intent/${item.id}/posterTile`;
 }
