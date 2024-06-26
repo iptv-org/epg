@@ -134,6 +134,7 @@ module.exports = {
             let name = $(el).find('center > a:eq(1)').text()
             name = name.replace(/\-\-/gi, '-')
             const url = $(el).find('center > a:eq(1)').attr('href')
+            if (!url) return
             const [, number, slug] = url.match(/\/(\d+)\/(.*)\.html$/)
 
             channels.push({
