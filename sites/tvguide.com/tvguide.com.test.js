@@ -18,7 +18,7 @@ const channel = {
 
 it('can generate valid url', () => {
   expect(url({ date, channel })).toBe(
-    'https://fandom-prod.apigee.net/v1/xapi/tvschedules/tvguide/9100001138/web?start=1667088000&duration=1440&channelSourceIds=9200018514'
+    'https://internal-prod.apigee.fandom.net/v1/xapi/tvschedules/tvguide/9100001138/web?start=1667088000&duration=1440&channelSourceIds=9200018514'
   )
 })
 
