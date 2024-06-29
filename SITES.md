@@ -14,6 +14,7 @@
 | [arianatelevision.com](sites/arianatelevision.com)                 | 🟢     |                                                                                          |
 | [arirang.com](sites/arirang.com)                                   | 🟢     |                                                                                          |
 | [artonline.tv](sites/artonline.tv)                                 | 🟢     |                                                                                          |
+| [awilime.com](sites/awilime.com)                                   | 🟢     |                                                                                          |
 | [bein.com](sites/bein.com)                                         | 🟢     |                                                                                          |
 | [beinsports.com](sites/beinsports.com)                             | 🟢     |                                                                                          |
 | [berrymedia.co.kr](sites/berrymedia.co.kr)                         | 🟢     |                                                                                          |
