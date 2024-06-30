@@ -28,7 +28,7 @@ module.exports = {
         title: parseTitle(item),
         description: parseDescription(item),
         category: parseCategory(item),
-        icon: parseIcon(item),
+        image: parseImage(item),
         start,
         stop
       })
@@ -62,7 +62,7 @@ module.exports = {
   }
 }
 
-function parseIcon(item) {
+function parseImage(item) {
   const $ = cheerio.load(item)
   const imgSrc =
     $('.row > div.columns.small-3.large-1 > a > img').data('src') ||

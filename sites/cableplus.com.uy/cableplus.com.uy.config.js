@@ -48,7 +48,7 @@ module.exports = {
       programs.push({
         title: parseTitle($item),
         categories: parseCategories($item),
-        icon: parseIcon($item),
+        image: parseImage($item),
         start,
         stop
       })
@@ -84,7 +84,7 @@ function parseTitle($item) {
     .trim()
 }
 
-function parseIcon($item) {
+function parseImage($item) {
   return $item('img').data('src') || $item('img').attr('src') || null
 }
 

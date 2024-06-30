@@ -38,7 +38,7 @@ module.exports = {
         title: item.j,
         category: item.h,
         description: item.c,
-        icon: parseIcon(item),
+        image: parseImage(item),
         start,
         stop
       })
@@ -66,7 +66,7 @@ module.exports = {
   }
 }
 
-function parseIcon(item) {
+function parseImage(item) {
   return item.z ? `http://www.tvmusor.hu/images/events/408/${item.z}` : null
 }
 

@@ -34,7 +34,8 @@ it('can parse response', () => {
       category: 'Останато',
       description:
         'Екстремниот рибар, Џереми Вејд, е во потрага по слатководни риби кои јадат човечко месо. Со форензички методи, Џереми им илустрира на гледачите како овие нови чудовишта се создадени да убиваат.',
-      icon: 'https://prd-static-mkt.spectar.tv/rev-1636968170/image_transform.php/transform/1/epg_program_id/21949063/instance_id/1'
+      image:
+        'https://prd-static-mkt.spectar.tv/rev-1636968170/image_transform.php/transform/1/epg_program_id/21949063/instance_id/1'
     }
   ])
 })
@@ -55,7 +56,8 @@ it('can parse response with no description', () => {
       title: 'Палмето - игран филм',
       category: 'Останато',
       description: null,
-      icon: 'https://prd-static-mkt.spectar.tv/rev-1636968170/image_transform.php/transform/1/epg_program_id/21949063/instance_id/1'
+      image:
+        'https://prd-static-mkt.spectar.tv/rev-1636968170/image_transform.php/transform/1/epg_program_id/21949063/instance_id/1'
     }
   ])
 })

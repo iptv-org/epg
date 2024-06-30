@@ -49,7 +49,7 @@ module.exports = {
       programs.push({
         title: parseTitle($item),
         description: parseDescription($item),
-        icon: parseIcon($item),
+        image: parseImage($item),
         start,
         stop
       })
@@ -130,7 +130,7 @@ module.exports = {
   }
 }
 
-function parseIcon($item) {
+function parseImage($item) {
   const src = $item('.event-logo img:not(.no-img)').attr('src')
 
   return src ? `https://sat.tv${src}` : null

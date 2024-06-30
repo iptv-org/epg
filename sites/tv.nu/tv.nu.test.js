@@ -33,7 +33,7 @@ it('can parse response', () => {
       title: 'CSI: Den Tätern auf der Spur',
       description:
         'Hellseherin Sedona Wiley wird tot aufgefunden. Die Ermittlungen führen zu einem alten Mord. Gordon Wallace wurde vor 15 Jahren beschuldigt, seine Frau getötet zu haben, jedoch wurde nie eine Leiche gefunden.',
-      icon: 'https://new.static.tv.nu/13119997',
+      image: 'https://new.static.tv.nu/13119997',
       category: ['Action', 'Kriminaldrama', 'Mysterium', 'Spänning', 'Thriller'],
       season: 6,
       episode: 19

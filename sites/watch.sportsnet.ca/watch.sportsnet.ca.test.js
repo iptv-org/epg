@@ -33,7 +33,8 @@ it('can parse response', () => {
       title: 'Calgary Flames at Colorado Avalanche',
       description:
         'Johnny Gaudreau and the Flames pay a visit to the Avalanche. Calgary won 4-3 in overtime March 5.',
-      icon: "https://production-static.sportsnet-static.com/shain/v1/dataservice/ResizeImage/$value?Format='jpg'&Quality=85&ImageId='785305'&EntityType='LinearSchedule'&EntityId='826cb731-9de4-4cf3-bcca-d548d8a33d16'&Width=3840&Height=2160"
+      image:
+        "https://production-static.sportsnet-static.com/shain/v1/dataservice/ResizeImage/$value?Format='jpg'&Quality=85&ImageId='785305'&EntityType='LinearSchedule'&EntityId='826cb731-9de4-4cf3-bcca-d548d8a33d16'&Width=3840&Height=2160"
     }
   ])
 })

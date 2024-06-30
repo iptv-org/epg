@@ -35,7 +35,7 @@ module.exports = {
       programs.push({
         title: item.Title,
         description: parseDescription(details),
-        icon: parseIcon(details),
+        image: parseImage(details),
         category: parseCategory(details),
         start: parseTime(item.StartTime, channel),
         stop: parseTime(item.EndTime, channel)
@@ -178,7 +178,7 @@ function parseDescription(details) {
   return details ? details.Synopsis : null
 }
 
-function parseIcon(details) {
+function parseImage(details) {
   return details ? details.ThumbnailUri : null
 }
 

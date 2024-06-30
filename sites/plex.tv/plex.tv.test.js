@@ -43,7 +43,7 @@ it('can parse response', () => {
     title: 'Violet & Daisy',
     description:
       'Two teenage assassins accept what they think will be a quick-and-easy job, until an unexpected target throws them off their plan.',
-    icon: 'https://provider-static.plex.tv/epg/images/ott_channels/arts/darkmatter-tv-about.jpg',
+    image: 'https://provider-static.plex.tv/epg/images/ott_channels/arts/darkmatter-tv-about.jpg',
     categories: ['Movies']
   })
 })

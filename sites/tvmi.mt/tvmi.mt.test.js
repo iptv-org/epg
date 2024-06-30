@@ -31,14 +31,16 @@ it('can parse response', () => {
     title: 'Bizzilla',
     description:
       'Storja ta’ tliet familji, tnejn minnhom miżżewġin bejniethom, u familja oħra li għalkemm mhijiex, b’daqshekk ma jfissirx li mhijiex parti ntegrali fil-kompliċitá li ilha għaddejja bejniethom għal dawn l-aħħar tletin sena.',
-    icon: 'https://dist4.tvmi.mt/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjMyNjEwNywiYXVkIjoiMTg4LjI0Mi40OC45MyIsImV4cCI6MTY2NzAxNjM1OH0.N4de761te_pRvWwSUnF6httRAzdukup5syejwXTUv8g/vod/663927/image.jpg'
+    image:
+      'https://dist4.tvmi.mt/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjMyNjEwNywiYXVkIjoiMTg4LjI0Mi40OC45MyIsImV4cCI6MTY2NzAxNjM1OH0.N4de761te_pRvWwSUnF6httRAzdukup5syejwXTUv8g/vod/663927/image.jpg'
   })
 
   expect(results[1]).toMatchObject({
     start: '2022-10-29T04:00:00.000Z',
     stop: '2022-10-29T04:30:00.000Z',
     title: 'The Adventures of Puss in Boots',
-    icon: 'https://dist4.tvmi.mt/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjMyNjEwNywiYXVkIjoiMTg4LjI0Mi40OC45MyIsImV4cCI6MTY2NzAxNjM1OH0.N4de761te_pRvWwSUnF6httRAzdukup5syejwXTUv8g/vod/747336/image.jpg'
+    image:
+      'https://dist4.tvmi.mt/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjMyNjEwNywiYXVkIjoiMTg4LjI0Mi40OC45MyIsImV4cCI6MTY2NzAxNjM1OH0.N4de761te_pRvWwSUnF6httRAzdukup5syejwXTUv8g/vod/747336/image.jpg'
   })
 })
 

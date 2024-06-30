@@ -33,7 +33,7 @@ it('can parse response', () => {
       title: 'ארץ מולדת - בין תורכיה לבריטניה',
       description:
         "קבוצת תלמידים מתארגנת בפרוץ מלחמת העולם הראשונה להגיש עזרה לישוב. באמצעות התלמידים לומד הצופה על בעיותיו של הישוב בתקופת המלחמה, והתלבטותו בין נאמנות לשלטון העות'מאני לבין תקוותיו מהבריטים הכובשים.",
-      icon: 'https://kanweb.blob.core.windows.net/download/pictures/2021/1/20/imgid=45847_Z.jpeg'
+      image: 'https://kanweb.blob.core.windows.net/download/pictures/2021/1/20/imgid=45847_Z.jpeg'
     }
   ])
 })

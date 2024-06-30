@@ -24,7 +24,7 @@ module.exports = {
         title: item.title,
         description: item.commentary,
         category: parseCategory(item),
-        icon: parseIcon(item),
+        image: parseImage(item),
         start: parseStart(item),
         stop: parseStop(item)
       })
@@ -70,7 +70,7 @@ module.exports = {
   }
 }
 
-function parseIcon(item) {
+function parseImage(item) {
   return item.imgPath ? `https://tvguide.myjcom.jp${item.imgPath}` : null
 }
 

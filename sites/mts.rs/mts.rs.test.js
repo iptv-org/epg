@@ -36,7 +36,8 @@ it('can parse response', () => {
       stop: '2021-11-07T00:43:00.000Z',
       title: 'Zaboravljeni zlo\u010din',
       category: 'Bioskopski film',
-      icon: 'https://mts.rs/oec/images/epg/2_abb81cc24d8ce957eece50f991a31e59780e4e53_E7D8ECDE568E84E3C86CCDBDB647355E.jpg',
+      image:
+        'https://mts.rs/oec/images/epg/2_abb81cc24d8ce957eece50f991a31e59780e4e53_E7D8ECDE568E84E3C86CCDBDB647355E.jpg',
       description:
         'Novinarka-fotoreporter, D\u017ein, istra\u017euje okrutno i senzacionalno, nere\u0161eno ubistvo sekirom iz davne 1873. godine. Ubistvo koje koincidira sa nedavnim identi\u010dnim brutalnim dvostrukim ubistvom. Zaplet se odvija izme\u0111u pri\u010de o\u010devica iz toga doba - pri\u010de iz novinske arhive i D\u017einine privatne borbe sa ljubomorom i sumnjom koje prate njen brak.'
     }

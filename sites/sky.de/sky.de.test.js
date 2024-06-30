@@ -43,7 +43,7 @@ it('can parse response', () => {
       stop: '2022-02-26T23:30:00.000Z',
       season: '4',
       episode: '11',
-      icon: 'http://sky.de/static/img/program_guide/1522936_s.jpg'
+      image: 'http://sky.de/static/img/program_guide/1522936_s.jpg'
     },
     {
       title: 'King of Queens',
@@ -53,7 +53,7 @@ it('can parse response', () => {
       stop: '2022-02-26T23:55:00.000Z',
       season: '4',
       episode: '12',
-      icon: 'http://sky.de/static/img/program_guide/1522937_s.jpg'
+      image: 'http://sky.de/static/img/program_guide/1522937_s.jpg'
     }
   ])
 })

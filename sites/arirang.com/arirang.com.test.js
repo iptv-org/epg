@@ -64,7 +64,8 @@ it('can parse response', async () => {
     title: 'WITHIN THE FRAME [R]',
     start: dayjs.tz(date, 'Asia/Seoul'),
     stop: dayjs.tz(date, 'Asia/Seoul').add(30, 'minute'),
-    icon: 'https://img.arirang.com/v1/AUTH_d52449c16d3b4bbca17d4fffd9fc44af/public/images/202308/2080840096998752900.png',
+    image:
+      'https://img.arirang.com/v1/AUTH_d52449c16d3b4bbca17d4fffd9fc44af/public/images/202308/2080840096998752900.png',
     description: 'NEWS',
     category: 'Current Affairs'
   })

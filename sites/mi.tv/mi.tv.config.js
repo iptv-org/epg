@@ -34,7 +34,7 @@ module.exports = {
         title: parseTitle($item),
         category: parseCategory($item),
         description: parseDescription($item),
-        icon: parseIcon($item),
+        image: parseImage($item),
         start,
         stop
       })
@@ -93,11 +93,11 @@ function parseDescription($item) {
   return $item('a > div.content > p.synopsis').text().trim()
 }
 
-function parseIcon($item) {
+function parseImage($item) {
   const backgroundImage = $item('a > div.image-parent > div.image').css('background-image')
-  const [, icon] = backgroundImage.match(/url\('(.*)'\)/) || [null, null]
+  const [, image] = backgroundImage.match(/url\('(.*)'\)/) || [null, null]
 
-  return icon
+  return image
 }
 
 function parseItems(content) {

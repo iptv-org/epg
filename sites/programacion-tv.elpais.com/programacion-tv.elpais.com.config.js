@@ -31,7 +31,7 @@ module.exports = {
         sub_title: details.episode_title,
         description: details.episode_description || item.description,
         category: parseCategory(details),
-        icon: parseIcon(details),
+        image: parseImage(details),
         director: parseList(details.director),
         actors: parseList(details.actors),
         writer: parseList(details.script),
@@ -70,7 +70,7 @@ function parseList(str) {
   return typeof str === 'string' ? str.split(', ') : []
 }
 
-function parseIcon(details) {
+function parseImage(details) {
   const url = new URL(details.image, 'https://programacion-tv.elpais.com/')
 
   return url.href

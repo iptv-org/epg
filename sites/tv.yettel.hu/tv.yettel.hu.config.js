@@ -18,7 +18,7 @@ module.exports = {
       programs.push({
         title: item.Title,
         description: item.ShortDescription,
-        icon: parseIcon(item),
+        image: parseImage(item),
         start: parseStart(item),
         stop: parseStop(item)
       })
@@ -45,7 +45,7 @@ module.exports = {
   }
 }
 
-function parseIcon(item) {
+function parseImage(item) {
   if (Array.isArray(item.Images.Cover) && item.Images.Cover.length) {
     return item.Images.Cover[0].Url
   }

@@ -24,7 +24,7 @@ module.exports = {
         title: item.title,
         description: item.synopsis,
         category: item.genre,
-        icon: item.imageUrl,
+        image: item.imageUrl,
         start: dayjs(item.from).toJSON(),
         stop: dayjs(item.to).toJSON()
       })

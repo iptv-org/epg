@@ -29,7 +29,7 @@ module.exports = {
       programs.push({
         title: item.name,
         sub_title: parseEpisode(item),
-        icon: parseIcon(item),
+        image: parseImage(item),
         start: dayjs(item.startDate),
         stop: dayjs(item.endDate)
       })
@@ -55,6 +55,6 @@ function parseEpisode(item) {
   return item && item.info && item.info.episode ? item.info.episode : null
 }
 
-function parseIcon(item) {
+function parseImage(item) {
   return item && item.info && item.info.image ? item.info.image : null
 }
