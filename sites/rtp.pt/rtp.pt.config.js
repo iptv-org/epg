@@ -38,7 +38,7 @@ module.exports = {
       programs.push({
         title: item.name,
         description: item.description,
-        icon: parseIcon(item),
+        image: parseImage(item),
         start,
         stop
       })
@@ -48,7 +48,7 @@ module.exports = {
   }
 }
 
-function parseIcon(item) {
+function parseImage(item) {
   const last = item.image.pop()
   if (!last) return null
   return last.src

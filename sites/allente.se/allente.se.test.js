@@ -32,7 +32,8 @@ it('can parse response', () => {
       category: ['other'],
       description:
         'Svenskt träningsprogram från 2021. Styrka. Sofia Åhman leder SVT:s hemmagympapass. Denna gång fokuserar vi på styrka.',
-      icon: 'https://viasatps.api.comspace.se/PS/channeldate/image/viasat.ps/21/2022-08-22/se.cs.svt1.event.A_41214031600.jpg?size=2560x1440',
+      image:
+        'https://viasatps.api.comspace.se/PS/channeldate/image/viasat.ps/21/2022-08-22/se.cs.svt1.event.A_41214031600.jpg?size=2560x1440',
       season: 4,
       episode: 1
     }

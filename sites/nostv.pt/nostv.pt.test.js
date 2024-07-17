@@ -22,12 +22,11 @@ it('can generate valid url', () => {
 
 it('can parse response', () => {
   const content = fs.readFileSync(path.resolve(__dirname, '__data__/data.json'))
-  const results = parser({ content })
-    .map(p => {
-      p.start = p.start.toJSON()
-      p.stop = p.stop.toJSON()
-      return p
-    })
+  const results = parser({ content }).map(p => {
+    p.start = p.start.toJSON()
+    p.stop = p.stop.toJSON()
+    return p
+  })
 
   expect(results[0]).toMatchObject({
     start: '2023-12-11T16:30:00.000Z',
@@ -37,7 +36,8 @@ it('can parse response', () => {
       'A história de dois melhores amigos veterinários e o seu extraordinário trabalho na Austrália.',
     season: 1,
     episode: 12,
-    icon: 'https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http://vip.pam.local.internal/PAM.Images/Store/8329ed1aec5d4c0faa2056972256ff9f&profile=ott_1_452x340&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI'
+    image:
+      'https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http://vip.pam.local.internal/PAM.Images/Store/8329ed1aec5d4c0faa2056972256ff9f&profile=ott_1_452x340&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI'
   })
 })
 

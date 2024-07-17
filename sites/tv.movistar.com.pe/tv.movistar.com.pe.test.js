@@ -33,7 +33,8 @@ it('can parse response', () => {
     title: 'Willax noticias edición central',
     description:
       'Edición central con el desarrollo y cobertura noticiosa de todos los acontecimientos nacionales e internacionales.',
-    icon: 'http://media.gvp.telefonica.com/storagearea0/IMAGES/00/13/00/13003906_281B2DAB18B01955.jpg'
+    image:
+      'http://media.gvp.telefonica.com/storagearea0/IMAGES/00/13/00/13003906_281B2DAB18B01955.jpg'
   })
 })
 

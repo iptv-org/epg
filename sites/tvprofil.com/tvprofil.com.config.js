@@ -25,9 +25,9 @@ module.exports = {
       const start = parseStart($item)
       const duration = parseDuration($item)
       const stop = start.add(duration, 's')
-      const icon = parseIcon($item)
+      const image = parseImage($item)
 
-      programs.push({ title, category, start, stop, icon })
+      programs.push({ title, category, start, stop, image })
     })
 
     return programs
@@ -101,7 +101,7 @@ module.exports = {
   }
 }
 
-function parseIcon($item) {
+function parseImage($item) {
   return $item(':root').data('image')
 }
 
@@ -144,7 +144,7 @@ function buildQuery(site_id, date) {
     callback: 'cb'
   }
 
-  let c = 3
+  let c = 4
   const a = query.datum + query.kanal + c
   const ua = query.kanal + query.datum
 

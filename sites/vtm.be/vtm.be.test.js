@@ -25,7 +25,8 @@ it('can parse response', () => {
       start: '2021-11-10T23:45:00.000Z',
       stop: '2021-11-11T00:20:00.000Z',
       title: 'Wooninspiraties',
-      icon: 'https://images4.persgroep.net/rcs/z5qrZHumkjuN5rWzoaRJ_BTdL7A/diocontent/209688322/_fill/600/400?appId=da11c75db9b73ea0f41f0cd0da631c71',
+      image:
+        'https://images4.persgroep.net/rcs/z5qrZHumkjuN5rWzoaRJ_BTdL7A/diocontent/209688322/_fill/600/400?appId=da11c75db9b73ea0f41f0cd0da631c71',
       description:
         'Een team gaat op pad om inspiratie op te doen over alles wat met wonen en leven te maken heeft; Ze trekken heel het land door om de laatste trends en tips op het gebied van wonen te achterhalen.',
       category: 'Magazine'

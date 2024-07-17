@@ -26,7 +26,7 @@ it('can parse response', () => {
       stop: '2022-03-07T00:39:00.000Z',
       title: 'רוקדים עם כוכבים - בר זומר',
       description: 'מהדורת החדשות המרכזית של הבוקר, האנשים הפרשנויות והכותרות שיעשו את היום.',
-      icon: 'https://img.mako.co.il/2022/02/13/DancingWithStars2022_EPG.jpg'
+      image: 'https://img.mako.co.il/2022/02/13/DancingWithStars2022_EPG.jpg'
     }
   ])
 })

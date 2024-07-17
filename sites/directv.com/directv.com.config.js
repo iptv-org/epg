@@ -38,7 +38,7 @@ module.exports = {
         category: item.subcategoryList,
         season: item.seasonNumber,
         episode: item.episodeNumber,
-        icon: parseIcon(item),
+        image: parseImage(item),
         start,
         stop
       })
@@ -92,7 +92,7 @@ function parseRating(item) {
       }
     : null
 }
-function parseIcon(item) {
+function parseImage(item) {
   return item.primaryImageUrl ? `https://www.directv.com${item.primaryImageUrl}` : null
 }
 function loadProgramDetail(programID) {

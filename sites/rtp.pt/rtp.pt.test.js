@@ -32,7 +32,7 @@ it('can parse response', () => {
     stop: '2022-12-03T00:00:00.000Z',
     title: 'Telejornal Madeira',
     description: 'Informação de proximidade. De confiança!',
-    icon: 'https://cdn-images.rtp.pt/EPG/imagens/15790_43438_8820.png?w=384&h=216'
+    image: 'https://cdn-images.rtp.pt/EPG/imagens/15790_43438_8820.png?w=384&h=216'
   })
 })
 

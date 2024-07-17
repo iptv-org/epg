@@ -74,7 +74,7 @@ it('can parse response', async () => {
     stop: '2022-10-03T05:00:00.000Z',
     title: '¿Quién tiene la razón?',
     category: 'Talk Show',
-    icon: 'https://www.reportv.com.ar/buscador/img/Programas/4401882.jpg',
+    image: 'https://www.reportv.com.ar/buscador/img/Programas/4401882.jpg',
     actors: ['Nancy Álvarez'],
     description:
       'Espacio que dará de qué hablar cuando la doctora Nancy Álvarez y Carmen Jara, acompañadas de un jurado implacable, lleguen a escuchar y a resolver los problemas de las partes en conflicto para luego decidir quién tiene la razón.'
@@ -85,7 +85,7 @@ it('can parse response', async () => {
     stop: '2022-10-04T04:00:00.000Z',
     title: 'Valeria',
     category: 'Comedia',
-    icon: 'https://www.reportv.com.ar/buscador/img/Programas/18788047.jpg',
+    image: 'https://www.reportv.com.ar/buscador/img/Programas/18788047.jpg',
     directors: ['Inma Torrente'],
     actors: [
       'Diana Gómez',

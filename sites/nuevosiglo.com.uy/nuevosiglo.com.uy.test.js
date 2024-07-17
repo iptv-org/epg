@@ -51,7 +51,7 @@ it('can parse response', async () => {
     title: 'Jurassic World: Dominion',
     description:
       'Años después de la destrucción de Isla Nublar, los dinosaurios viven y cazan junto a los humanos. Este equilibrio determinará, si los humanos seguirán siendo los depredadores máximos en un planeta que comparten con las criaturas temibles.',
-    icon: 'https://img-ns.s3.amazonaws.com/grid_data/23354476.jpg',
+    image: 'https://img-ns.s3.amazonaws.com/grid_data/23354476.jpg',
     date: '2022',
     rating: {
       system: 'MPAA',
@@ -66,7 +66,7 @@ it('can parse response', async () => {
     title: 'Black Adam',
     description:
       'Black Adam es liberado de su tumba casi cinco mil años después de haber sido encarcelado y recibir sus poderes de los antiguos dioses. Ahora está listo para desatar su forma única de justicia en el mundo.',
-    icon: 'https://img-ns.s3.amazonaws.com/grid_data/24638423.jpg',
+    image: 'https://img-ns.s3.amazonaws.com/grid_data/24638423.jpg',
     date: '2022',
     rating: {
       system: 'MPAA',

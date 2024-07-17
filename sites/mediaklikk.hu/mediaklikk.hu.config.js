@@ -34,7 +34,7 @@ module.exports = {
       programs.push({
         title: parseTitle($item),
         description: parseDescription($item),
-        icon: parseIcon($item),
+        image: parseImage($item),
         start,
         stop
       })
@@ -69,13 +69,13 @@ function parseDescription($item) {
   return $item('.program_about > .program_description > p').text().trim()
 }
 
-function parseIcon($item) {
+function parseImage($item) {
   const backgroundImage = $item('.program_about > .program_photo').css('background-image')
   if (!backgroundImage) return null
-  const [, icon] = backgroundImage.match(/url\('(.*)'\)/) || [null, null]
-  if (!icon) return null
+  const [, imageUrl] = backgroundImage.match(/url\('(.*)'\)/) || [null, null]
+  if (!imageUrl) return null
 
-  return `https:${icon}`
+  return `https:${imageUrl}`
 }
 
 function parseItems(content) {

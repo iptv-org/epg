@@ -16,7 +16,7 @@ module.exports = {
         title: item.program.title,
         description: item.program.longDescription,
         category: item.program.subType,
-        icon: parseIcon(item),
+        image: parseImage(item),
         start: parseStart(item),
         stop: parseStop(item)
       })
@@ -26,7 +26,7 @@ module.exports = {
   }
 }
 
-function parseIcon(item) {
+function parseImage(item) {
   const uri = item.program.preferredImage.uri
 
   return uri ? `https://adma.tmsimg.com/assets/${uri}` : null

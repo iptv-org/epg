@@ -33,7 +33,7 @@ it('can parse response', () => {
     stop: '2023-01-19T06:00:00.000Z',
     title: 'The Greg Peterson Experience',
     category: 'Sports non-event',
-    icon: 'https://adma.tmsimg.com/assets/assets/p20628892_b_v13_aa.jpg?w=270&h=360',
+    image: 'https://adma.tmsimg.com/assets/assets/p20628892_b_v13_aa.jpg?w=270&h=360',
     description: 'A different kind of sports betting.'
   })
 })

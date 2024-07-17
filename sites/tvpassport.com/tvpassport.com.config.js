@@ -41,7 +41,7 @@ module.exports = {
         title,
         sub_title,
         description: parseDescription($item),
-        icon: parseIcon($item),
+        image: parseImage($item),
         category: parseCategory($item),
         rating: parseRating($item),
         actors: parseActors($item),
@@ -102,7 +102,7 @@ function parseDescription($item) {
   return $item('*').data('description')
 }
 
-function parseIcon($item) {
+function parseImage($item) {
   const showpicture = $item('*').data('showpicture')
   const url = new URL(showpicture, 'https://cdn.tvpassport.com/image/show/960x540/')
 

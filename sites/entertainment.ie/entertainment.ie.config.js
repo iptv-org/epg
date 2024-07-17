@@ -27,7 +27,7 @@ module.exports = {
         title: parseTitle($item),
         description: parseDescription($item),
         categories: parseCategories($item),
-        icon: parseIcon($item),
+        image: parseImage($item),
         start,
         stop
       })
@@ -54,7 +54,7 @@ module.exports = {
   }
 }
 
-function parseIcon($item) {
+function parseImage($item) {
   return $item('.text-holder > .btn-hold > .btn-wrap > a.btn-share').data('img')
 }
 

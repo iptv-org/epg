@@ -19,7 +19,9 @@ const data = fs.readFileSync(path.resolve(__dirname, '__data__/data.json'))
 
 it('can generate valid url', () => {
   const result = url({ channel, date })
-  expect(result).toBe('https://tv.trueid.net/_next/data/1380644e0f1fb6b14c82894a0c682d147e015c9d/th-en.json?channelSlug=true-movie-hits&path=true-movie-hits')
+  expect(result).toBe(
+    'https://tv.trueid.net/_next/data/1380644e0f1fb6b14c82894a0c682d147e015c9d/th-en.json?channelSlug=true-movie-hits&path=true-movie-hits'
+  )
 })
 
 it('can parse English response', () => {
@@ -34,7 +36,7 @@ it('can parse English response', () => {
     title: 'The Last Witch Hunter',
     description:
       'A young man is all that stands between humanity and the most horrifying witches in history.',
-    icon: 'https://bms.dmpcdn.com/uploads/pic/381f853da5f4a310bf248357fed21a57.jpg'
+    image: 'https://bms.dmpcdn.com/uploads/pic/381f853da5f4a310bf248357fed21a57.jpg'
   })
 })
 
@@ -50,7 +52,7 @@ it('can parse Thai response', () => {
     title: 'The Last Witch Hunter',
     description:
       'หนุ่มนักล่าแม่มดถูกสาปให้เป็นอมตะจนกระทั่งราชินีแม่มดได้ฟื้นคืนชีพขึ้นมาจึงมีเพียงเขาคนเดียวเท่านั้นที่จะสามารถกอบกู้มวลมนุษยชาติได้',
-    icon: 'https://bms.dmpcdn.com/uploads/pic/381f853da5f4a310bf248357fed21a57.jpg'
+    image: 'https://bms.dmpcdn.com/uploads/pic/381f853da5f4a310bf248357fed21a57.jpg'
   })
 })
 

@@ -45,7 +45,7 @@ module.exports = {
         title: item.name,
         category: item.genres,
         description: item.introduce,
-        icon: parseIcon(item),
+        image: parseImage(item),
         start: start.toJSON(),
         stop: stop.toJSON()
       })
@@ -79,7 +79,7 @@ module.exports = {
   }
 }
 
-function parseIcon(item) {
+function parseImage(item) {
   return item.pictures && item.pictures.length ? item.pictures[0].href : null
 }
 

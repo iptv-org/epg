@@ -41,7 +41,7 @@ module.exports = {
       programs.push({
         title: item.title,
         description: item.description,
-        icon: parseIcon(item),
+        image: parseImage(item),
         start,
         stop
       })
@@ -51,7 +51,7 @@ module.exports = {
   }
 }
 
-function parseIcon(item) {
+function parseImage(item) {
   return item.image.replace('$$IMAGESIZE$$', '480')
 }
 

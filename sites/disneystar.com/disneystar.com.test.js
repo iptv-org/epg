@@ -49,7 +49,8 @@ it('can parse response', () => {
       title: 'Imlie',
       description:
         'Imlie finds herself in deep trouble when she gets tied up before the wedding. Meanwhile, Aryan assumes that he is getting married to Imlie and performs the wedding rituals.',
-      icon: 'http://imagesstartv.whatsonindia.com/dasimages/landscape/360x270/59A9215E5DE13ABF4B05C59A6C87768AD61CA608M.jpg',
+      image:
+        'http://imagesstartv.whatsonindia.com/dasimages/landscape/360x270/59A9215E5DE13ABF4B05C59A6C87768AD61CA608M.jpg',
       category: 'Drama'
     }
   ])

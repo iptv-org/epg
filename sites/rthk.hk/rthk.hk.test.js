@@ -49,7 +49,7 @@ it('can parse response', () => {
     title: '問天',
     sub_title: '第十四集',
     categories: ['戲劇'],
-    icon: 'https://www.rthk.hk/assets/images/rthk/dtt31/thegreataerospace/10239_1920_s.jpg'
+    image: 'https://www.rthk.hk/assets/images/rthk/dtt31/thegreataerospace/10239_1920_s.jpg'
   })
 })
 
@@ -68,7 +68,7 @@ it('can parse response in English', () => {
     title: 'The Great Aerospace',
     sub_title: 'Episode 14',
     categories: ['戲劇'],
-    icon: 'https://www.rthk.hk/assets/images/rthk/dtt31/thegreataerospace/10239_1920_s.jpg'
+    image: 'https://www.rthk.hk/assets/images/rthk/dtt31/thegreataerospace/10239_1920_s.jpg'
   })
 })
 

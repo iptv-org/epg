@@ -47,7 +47,7 @@ module.exports = {
       programs.push({
         title: item.name,
         description: item.introduce,
-        icon: parseIcon(item),
+        image: parseImage(item),
         category: parseCategory(item),
         start: parseStart(item),
         stop: parseStop(item)
@@ -102,7 +102,7 @@ function parseCategory(item) {
     : []
 }
 
-function parseIcon(item) {
+function parseImage(item) {
   if (!Array.isArray(item.pictures) || !item.pictures.length) return null
 
   return item.pictures[0].href
@@ -135,7 +135,7 @@ function fetchCookieAndToken() {
         'sec-fetch-mode': 'cors',
         'sec-fetch-site': 'same-origin',
         'x-requested-with': 'XMLHttpRequest',
-        Referer: 'https://api.prod.sngtv.magentatv.de/EPG/',
+        Referer: 'https://web.magentatv.de/',
         'Referrer-Policy': 'strict-origin-when-cross-origin'
       },
       body: '{"terminalid":"00:00:00:00:00:00","mac":"00:00:00:00:00:00","terminaltype":"WEBTV","utcEnable":1,"timezone":"Etc/GMT0","userType":3,"terminalvendor":"Unknown"}',

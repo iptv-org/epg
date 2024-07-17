@@ -11,7 +11,8 @@ dayjs.extend(utc)
 dayjs.extend(customParseFormat)
 
 const headers = {
-  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 OPR/104.0.0.0'
+  'User-Agent':
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 OPR/104.0.0.0'
 }
 const cookies = {}
 
@@ -64,10 +65,10 @@ async function parseProgram(item, channel, options = {}) {
   const top = item.find('.iq-accordion-block')
   const info = top.find('.iq-accordion-title .big-title span')
   if (info.length) {
-    const [ time, title ] = info.text().split('\n')
-    const [ d, m, y ] = item._date.split('-')
+    const [time, title] = info.text().split('\n')
+    const [d, m, y] = item._date.split('-')
     const start = dayjs.tz(`${y}-${m}-${d} ${time.trim()}`, 'YYYY-MM-DD HH:mm', 'Asia/Riyadh')
-    let description, icon, stop
+    let description, image, stop
     if (deep) {
       const pid = top.attr('id').split('-')[1]
       if (pid) {
@@ -89,7 +90,7 @@ async function parseProgram(item, channel, options = {}) {
         }
         const img = $('.row > div > img')
         if (img.length) {
-          icon = img.attr('src')
+          image = img.attr('src')
         }
       }
       if (item._next) {
@@ -102,7 +103,7 @@ async function parseProgram(item, channel, options = {}) {
     return {
       title: title?.trim(),
       description: description?.trim(),
-      icon: icon,
+      image,
       start: raw ? start : start?.toISOString(),
       stop: raw ? stop : stop?.toISOString()
     }
@@ -125,7 +126,7 @@ function parseItems(content, date) {
       if (lastId === expectedId) {
         // set next item
         if (result.length) {
-          result[result.length - 1]._next = $item;
+          result[result.length - 1]._next = $item
         }
         result.push($item)
       } else if (result.length && !result[result.length - 1]._next) {

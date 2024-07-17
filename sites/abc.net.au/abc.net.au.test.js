@@ -35,7 +35,7 @@ it('can parse response', () => {
       },
       season: 22,
       episode: 4,
-      icon: 'https://www.abc.net.au/tv/common/images/publicity/ZW2178A004S00_460.jpg',
+      image: 'https://www.abc.net.au/tv/common/images/publicity/ZW2178A004S00_460.jpg',
       start: '2022-12-21T13:46:00.000Z',
       stop: '2022-12-21T14:44:00.000Z'
     }

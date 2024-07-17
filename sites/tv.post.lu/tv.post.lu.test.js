@@ -33,7 +33,8 @@ it('can parse response', () => {
     description:
       'Das Flaggschiff unter den deutschen Nachrichtensendungen ist gleichzeitig die "dienstälteste" noch bestehende Sendung im deutschen Fernsehen. In bis zu 20 am Tag produzierten Sendungen wird die Komplexität des Weltgeschehens verständlich erklärt und in komprimierter Form über aktuelle politische, wirtschaftliche, soziale, kulturelle, sportliche und sonstige Ereignisse berichtet.',
     category: 'Nachrichten',
-    icon: 'https://mp-photos-cdn.azureedge.net/container3cc71e4948ac40ab803c26e0abc2e3e5/original/e6eb49013a822f5c6eb2e7701e69a1f80aa0b947.jpg',
+    image:
+      'https://mp-photos-cdn.azureedge.net/container3cc71e4948ac40ab803c26e0abc2e3e5/original/e6eb49013a822f5c6eb2e7701e69a1f80aa0b947.jpg',
     start: '2023-01-16T00:05:00.000Z',
     stop: '2023-01-16T00:10:00.000Z'
   })

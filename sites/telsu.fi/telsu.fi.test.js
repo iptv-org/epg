@@ -31,7 +31,7 @@ it('can parse response', () => {
     title: 'Antiikkikaksintaistelu',
     description:
       'Kausi 6, osa 5/12. Antiikkikaksintaistelu jatkuu Løkkenissä. Uusi taistelupari Rikke Fog ja Lasse Franck saavat kumpikin 10 000 kruunua ja viisi tuntia aikaa ostaa alueelta hyvää tavaraa halvalla.',
-    icon: 'https://www.telsu.fi/s/antiikkikaksintaistelu_11713730.jpg'
+    image: 'https://www.telsu.fi/s/antiikkikaksintaistelu_11713730.jpg'
   })
 })
 

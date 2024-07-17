@@ -18,7 +18,7 @@ module.exports = {
       programs.push({
         title: item.item.title,
         description: item.item.shortDescription,
-        icon: parseIcon(item),
+        image: parseImage(item),
         start: parseStart(item),
         stop: parseStop(item)
       })
@@ -47,7 +47,7 @@ module.exports = {
   }
 }
 
-function parseIcon(item) {
+function parseImage(item) {
   if (!item.item || !item.item.images) return null
 
   return item.item.images.tile

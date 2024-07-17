@@ -37,7 +37,7 @@ it('can parse response', () => {
       season: '3',
       episode: '5',
       sub_title: 'La prima volta',
-      icon: 'https://www.raiplay.it/dl/img/2020/03/09/1583748471860_dddddd.jpg',
+      image: 'https://www.raiplay.it/dl/img/2020/03/09/1583748471860_dddddd.jpg',
       url: 'https://www.raiplay.it/dirette/rai2/The-Good-Doctor-S3E5---La-prima-volta-2f81030d-803b-456a-9ea5-40233234fd9d.html'
     }
   ])

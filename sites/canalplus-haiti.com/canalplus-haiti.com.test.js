@@ -149,7 +149,8 @@ it('can parse response', done => {
           start: '2022-08-17T23:55:00.000Z',
           stop: '2022-08-18T00:40:00.000Z',
           title: 'New Amsterdam - S3 - Ep7',
-          icon: 'https://service.canal-overseas.com/image-api/v1/image/52a18a209e28380b199201961c27097e',
+          image:
+            'https://service.canal-overseas.com/image-api/v1/image/52a18a209e28380b199201961c27097e',
           category: 'Série Hôpital',
           description:
             "C'est la journée nationale de dépistage du VIH et Max offre des soins gratuits à tous les malades séropositifs qui se présentent à New Amsterdam."

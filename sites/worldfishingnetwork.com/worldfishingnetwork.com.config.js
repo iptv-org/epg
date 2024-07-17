@@ -33,7 +33,7 @@ module.exports = {
         title: parseTitle($item),
         sub_title: parseSubTitle($item),
         description: parseDescription($item),
-        icon: parseIcon($item),
+        image: parseImage($item),
         start,
         stop
       })
@@ -55,7 +55,7 @@ function parseDescription($item) {
   return $item('.show-title > p').text().trim()
 }
 
-function parseIcon($item) {
+function parseImage($item) {
   const url = $item('.show-img > img').attr('src')
 
   return url ? `https:${url}` : null

@@ -23,7 +23,7 @@ module.exports = {
         title: item.title,
         description: parseDescription(detail),
         category: parseCategory(detail),
-        icon: parseIcon(item),
+        image: parseImage(item),
         start: parseStart(item),
         stop: parseStop(item)
       })
@@ -70,7 +70,7 @@ function parseDescription(detail) {
 function parseCategory(detail) {
   return detail.detail.informations.subGenre || null
 }
-function parseIcon(item) {
+function parseImage(item) {
   return item.URLImage || item.URLImageDefault
 }
 

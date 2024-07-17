@@ -18,7 +18,7 @@ module.exports = {
     items.forEach(item => {
       programs.push({
         title: item.name,
-        icon: parseIcon(item),
+        image: parseImage(item),
         start: dayjs(item.startAt),
         stop: dayjs(item.endAt)
       })
@@ -42,7 +42,7 @@ module.exports = {
   }
 }
 
-function parseIcon(item) {
+function parseImage(item) {
   return item.images.webGuideItemLarge
     ? `https://inet-static.mw.elion.ee${item.images.webGuideItemLarge}`
     : null
