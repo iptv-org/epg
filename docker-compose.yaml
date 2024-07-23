@@ -28,5 +28,12 @@ services:
       - epg-data:/home/node/app/epg:rw
     environment:
       NODE_ENV: production
+  ontvtonight:
+    image: agarciadealba/epg
+    command: ["npm", "run", "grab", "--", "--site=ontvtonight.com", "--output=epg/ontvtonight.xml", "--cron=5 0 * * *"]
+    volumes:
+      - epg-data:/home/node/app/epg:rw
+    environment:
+      NODE_ENV: production
 volumes:
   epg-data:
