@@ -8,6 +8,7 @@ services:
       - 80:80
   gatotv:
     image: agarciadealba/epg
+    restart: always
     command: ["npm", "run", "grab", "--", "--site=gatotv.com", "--output=epg/gatotv.xml", "--cron=0 6,18 * * *"]
     # command: ["sleep", "3600"]
     volumes:
@@ -16,6 +17,7 @@ services:
       NODE_ENV: production
   xumotv:
     image: agarciadealba/epg
+    restart: always
     command: ["npm", "run", "grab", "--", "--site=xumo.tv", "--output=epg/xumotv.xml", "--cron=5 6,18 * * *"]
     volumes:
       - epg-data:/home/node/app/epg:rw
@@ -23,6 +25,7 @@ services:
       NODE_ENV: production
   mitv:
     image: agarciadealba/epg
+    restart: always
     command: ["npm", "run", "grab", "--", "--site=mi.tv", "--output=epg/mitv.xml", "--cron=10 0 * * *"]
     volumes:
       - epg-data:/home/node/app/epg:rw
@@ -30,6 +33,7 @@ services:
       NODE_ENV: production
   ontvtonight:
     image: agarciadealba/epg
+    restart: always
     command: ["npm", "run", "grab", "--", "--site=ontvtonight.com", "--output=epg/ontvtonight.xml", "--cron=5 0 * * *"]
     volumes:
       - epg-data:/home/node/app/epg:rw
