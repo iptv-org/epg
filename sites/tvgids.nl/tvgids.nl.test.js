@@ -35,7 +35,7 @@ it('can parse response', () => {
     start: '2023-06-12T21:57:00.000Z',
     stop: '2023-06-12T22:58:00.000Z',
     title: 'Op1',
-    icon: 'https://tvgidsassets.nl/v301/upload/o/carrousel/op1-451542641.jpg',
+    image: 'https://tvgidsassets.nl/v301/upload/o/carrousel/op1-451542641.jpg',
     description: "Talkshow met wisselende presentatieduo's, live vanuit Amsterdam."
   })
 
@@ -43,7 +43,7 @@ it('can parse response', () => {
     start: '2023-06-14T00:18:00.000Z',
     stop: '2023-06-14T00:48:00.000Z',
     title: 'NOS Journaal',
-    icon: 'https://tvgidsassets.nl/v301/upload/n/carrousel/nos-journaal-452818771.jpg',
+    image: 'https://tvgidsassets.nl/v301/upload/n/carrousel/nos-journaal-452818771.jpg',
     description:
       'Met het laatste nieuws, gebeurtenissen van nationaal en internationaal belang en de weersverwachting voor vandaag.'
   })

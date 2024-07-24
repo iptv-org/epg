@@ -33,7 +33,7 @@ module.exports = {
       programs.push({
         title: details.main_title,
         description: details.short_argument,
-        icon: parseIcon(details),
+        image: parseImage(details),
         actors: parseActors(details),
         rating: parseRating(details),
         date: details.year,
@@ -87,7 +87,7 @@ function parseActors(details) {
   return details.actors.split(', ')
 }
 
-function parseIcon(details) {
+function parseImage(details) {
   return details.image ? `https://img-ns.s3.amazonaws.com/grid_data/${details.image}` : null
 }
 

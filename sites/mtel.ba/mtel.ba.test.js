@@ -32,7 +32,7 @@ it('can parse response', () => {
       start: '2021-11-09T22:29:00.000Z',
       stop: '2021-11-09T23:46:00.000Z',
       title: 'Šuma',
-      icon: 'https://mtel.ba/oec/images/epg/60881491.jpg',
+      image: 'https://mtel.ba/oec/images/epg/60881491.jpg',
       description:
         'Krajem decembra 1947. godine jugoslovenski predsjednik Josip Broz Tito prvi put je posjetio Rumuniju. Da bi učvrstili novo socijalističko prijateljstvo, rumunski zvaničnici su poklonili Titu sliku velikog rumunskog umjetnika Jona Andreskua pod nazivom Šuma. Mnogo godina kasnije ta slika je umješana u napetu špijunsku priču i otkriva tajnu koja će uzdrmati temelje i Jugoslavije i Rumunije. Film je svjedok kompleksnosti i raznovrsnosti glasova koji čine ono što zovemo stvarnošću.',
       category: 'Televizijski film'

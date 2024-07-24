@@ -54,7 +54,7 @@ it('can parse response', () => {
     title: 'تعظيم البلد الحرام',
     description: `الناس, دين, ثقافة
 يلقي صانع الفيلم الضوء على مشروع تعظيم البلد الحرام في مكة من العائلة الملكية في المملكة العربية السعودية، والذي يهدف لإبراز حرمته لدى المسلمين حول العالم.`,
-    icon: null
+    image: null
   })
 
   expect(results[34]).toMatchObject({
@@ -63,7 +63,8 @@ it('can parse response', () => {
     title: 'الأخبار',
     description: `نشرة
 .يطرح أهم القضايا والأحداث على الساحة السعودية والعالمية`,
-    icon: 'https://sat.tv/wp-content/themes/twentytwenty-child/data_lineups/nilesat/images3/epg-3077892.jpg'
+    image:
+      'https://sat.tv/wp-content/themes/twentytwenty-child/data_lineups/nilesat/images3/epg-3077892.jpg'
   })
 })
 
@@ -87,7 +88,8 @@ it('can parse response in english', () => {
     title: 'News',
     description: `Newscast
 The most important issues and events on the Saudi and the world.`,
-    icon: 'https://sat.tv/wp-content/themes/twentytwenty-child/data_lineups/nilesat/images3/epg-3077892.jpg'
+    image:
+      'https://sat.tv/wp-content/themes/twentytwenty-child/data_lineups/nilesat/images3/epg-3077892.jpg'
   })
 
   expect(results[31]).toMatchObject({
@@ -98,7 +100,8 @@ The most important issues and events on the Saudi and the world.`,
 2022
 Abdelhamid's family struggles to deal with the challenges of life that keep flowing one by one. they manage to stay strong-armed with their love and trust for each other.
 Sayed Ragab, Sawsan  Badr, Medhat Saleh, Nermine Al Feqy, Mohamed Adel, Khaled Kamal, Rania Farid, Hani Kamal, Hani Kamal`,
-    icon: 'https://sat.tv/wp-content/themes/twentytwenty-child/data_lineups/nilesat/images3/epg-3157177.jpg'
+    image:
+      'https://sat.tv/wp-content/themes/twentytwenty-child/data_lineups/nilesat/images3/epg-3157177.jpg'
   })
 })
 

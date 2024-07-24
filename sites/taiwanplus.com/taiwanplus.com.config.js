@@ -46,7 +46,7 @@ module.exports = {
                 ? dayjs.utc(scheduleDate.schedule[i + 1].dateTime, 'YYYY/MM/DD HH:mm')
                 : dayjs.utc(program.dateTime, 'YYYY/MM/DD HH:mm').add(1, 'day').startOf('day'),
             description: program.description,
-            icon: program.image,
+            image: program.image,
             category: program.categoryName,
             rating: program.ageRating
           })

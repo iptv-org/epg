@@ -41,7 +41,7 @@ it('can parse response', () => {
     title: 'Charlie Moore: No Offense',
     sub_title: 'Under the Influencer',
     category: ['Sports', 'Outdoors'],
-    icon: 'https://cdn.tvpassport.com/image/show/960x540/69103.jpg',
+    image: 'https://cdn.tvpassport.com/image/show/960x540/69103.jpg',
     rating: {
       system: 'MPA',
       value: 'TV-G'

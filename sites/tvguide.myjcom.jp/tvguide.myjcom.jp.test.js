@@ -33,7 +33,8 @@ it('can parse response', () => {
       title: '[5.1]フードロア：タマリンド',
       description:
         'ＨＢＯ（Ｒ）アジア製作。日本の齊藤工などアジアの監督が、各国の食をテーマに描いたアンソロジーシリーズ。（全８話）（１９年　シンガポール　５６分）',
-      icon: 'https://tvguide.myjcom.jp/monomedia/si/2022/20220114/7305523/image/7743d17b655b8d2274ca58b74f2f095c.jpg',
+      image:
+        'https://tvguide.myjcom.jp/monomedia/si/2022/20220114/7305523/image/7743d17b655b8d2274ca58b74f2f095c.jpg',
       category: 'ドラマ'
     }
   ])

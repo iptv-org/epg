@@ -23,7 +23,7 @@ module.exports = {
       programs.push({
         title: item.show.title,
         description: item.show.body,
-        icon: parseIcon(item),
+        image: parseImage(item),
         start: parseStart(item, date),
         stop: parseStop(item, date)
       })
@@ -33,7 +33,7 @@ module.exports = {
   }
 }
 
-function parseIcon(item) {
+function parseImage(item) {
   return item.show.image ? item.show.image.href : null
 }
 

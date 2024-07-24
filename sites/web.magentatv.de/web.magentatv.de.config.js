@@ -47,7 +47,7 @@ module.exports = {
       programs.push({
         title: item.name,
         description: item.introduce,
-        icon: parseIcon(item),
+        image: parseImage(item),
         category: parseCategory(item),
         start: parseStart(item),
         stop: parseStop(item)
@@ -102,7 +102,7 @@ function parseCategory(item) {
     : []
 }
 
-function parseIcon(item) {
+function parseImage(item) {
   if (!Array.isArray(item.pictures) || !item.pictures.length) return null
 
   return item.pictures[0].href

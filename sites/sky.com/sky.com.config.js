@@ -18,7 +18,7 @@ module.exports = {
         description: item.d,
         start: dayjs.unix(item.s),
         stop: dayjs.unix(item.s + item.m[1]),
-        icon: item.img ? `http://epgstatic.sky.com/epgdata/1.0/paimage/46/1/${item.img}` : null
+        image: item.img ? `http://epgstatic.sky.com/epgdata/1.0/paimage/46/1/${item.img}` : null
       })
     })
 

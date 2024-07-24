@@ -23,7 +23,7 @@ module.exports = {
       programs.push({
         title: item.title,
         description: item.description,
-        icon: getIcon(item),
+        image: getImage(item),
         start: getStart(item),
         stop: getStop(item)
       })
@@ -52,7 +52,7 @@ module.exports = {
   }
 }
 
-function getIcon(item) {
+function getImage(item) {
   const image = item.images.find(i => i.type === 'default' && i.sizeTag === '1200x630')
 
   return image ? image.url : null

@@ -22,7 +22,7 @@ module.exports = {
       programs.push({
         title: item.title,
         description: item.live_desc,
-        icon: item.picture_code,
+        image: item.picture_code,
         start: parseStart(item),
         stop: parseStop(item)
       })

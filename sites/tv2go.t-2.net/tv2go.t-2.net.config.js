@@ -47,7 +47,7 @@ const config = {
         title: item.name,
         category: parseCategory(item),
         description: parseDescription(item),
-        icon: parseIcon(item),
+        image: parseImage(item),
         start: parseStart(item),
         stop: parseStop(item)
       })
@@ -93,7 +93,7 @@ function parseStop(item) {
   return dayjs(parseInt(item.endTimestamp))
 }
 
-function parseIcon(item) {
+function parseImage(item) {
   return item.images && item.images[0] ? `https://tv2go.t-2.net${item.images[0].url}` : null
 }
 

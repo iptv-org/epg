@@ -30,7 +30,7 @@ it('can parse response', () => {
   expect(results[0]).toMatchObject({
     title: '외계+인 1부',
     description: '외계+인 1부',
-    icon: 'https://image.tving.com/upload/cms/caip/CAIP0200/P001661154.jpg',
+    image: 'https://image.tving.com/upload/cms/caip/CAIP0200/P001661154.jpg',
     date: 2022,
     categories: [],
     directors: ['최동훈'],

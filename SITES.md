@@ -14,6 +14,7 @@
 | [arianatelevision.com](sites/arianatelevision.com)                 | 🟢     |                                                                                          |
 | [arirang.com](sites/arirang.com)                                   | 🟢     |                                                                                          |
 | [artonline.tv](sites/artonline.tv)                                 | 🟢     |                                                                                          |
+| [awilime.com](sites/awilime.com)                                   | 🟢     |                                                                                          |
 | [bein.com](sites/bein.com)                                         | 🟢     |                                                                                          |
 | [beinsports.com](sites/beinsports.com)                             | 🟢     |                                                                                          |
 | [berrymedia.co.kr](sites/berrymedia.co.kr)                         | 🟢     |                                                                                          |
@@ -128,6 +129,7 @@
 | [sky.co.nz](sites/sky.co.nz)                                       | 🟢     |                                                                                          |
 | [sky.com](sites/sky.com)                                           | 🟡     | https://github.com/iptv-org/epg/issues/2325                                              |
 | [sky.de](sites/sky.de)                                             | 🟢     |                                                                                          |
+| [skylife.co.kr](sites/skylife.co.kr)                               | 🟢     |                                                                                          |
 | [starhubtvplus.com](sites/starhubtvplus.com)                       | 🔴     | https://github.com/iptv-org/epg/issues/2365                                              |
 | [startimestv.com](sites/startimestv.com)                           | 🔴     | https://github.com/iptv-org/epg/issues/2296                                              |
 | [streamingtvguides.com](sites/streamingtvguides.com)               | 🟢     |                                                                                          |

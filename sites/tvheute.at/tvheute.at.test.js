@@ -26,7 +26,7 @@ it('can parse response', () => {
       category: 'Kids',
       description:
         'Roger hat sich Ärger mit Dr. Bellows eingehandelt, der ihn für einen Monat strafversetzen möchte. Einmal mehr hadert Roger mit dem Schicksal, dass er keinen eigenen Flaschengeist besitzt, der ihm aus der Patsche helfen kann. Jeannie schlägt vor, ihm Cousine Marilla zu schicken. Doch Tony ist strikt dagegen. Als ein Zaubererpärchen im exotischen Bühnenoutfit für die Zeit von Rogers Abwesenheit sein Apartment in Untermiete bezieht, glaubt Roger, Jeannie habe ihm ihre Verwandte doch noch gesandt.',
-      icon: 'https://tvheute.at/images/orf1/monchhichi_kids--1895216560-00.jpg'
+      image: 'https://tvheute.at/images/orf1/monchhichi_kids--1895216560-00.jpg'
     },
     {
       start: '2021-11-08T17:00:00.000Z',

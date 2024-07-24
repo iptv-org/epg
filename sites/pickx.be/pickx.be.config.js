@@ -2,33 +2,34 @@ const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 
-let apiVersion;
-let isApiVersionFetched = false;
+let apiVersion
+let isApiVersionFetched = false
 
-(async () => {
+;(async () => {
   try {
-    await fetchApiVersion();
-    isApiVersionFetched = true;
-
+    await fetchApiVersion()
+    isApiVersionFetched = true
   } catch (error) {
-    console.error('Error during script initialization:', error);
+    console.error('Error during script initialization:', error)
   }
-})();
+})()
 
 dayjs.extend(utc)
-  
+
 module.exports = {
   site: 'pickx.be',
   days: 2,
   apiVersion: function () {
-    return apiVersion; 
+    return apiVersion
   },
-  fetchApiVersion: fetchApiVersion,  // Export fetchApiVersion
+  fetchApiVersion: fetchApiVersion, // Export fetchApiVersion
   url: async function ({ channel, date }) {
     while (!isApiVersionFetched) {
-      await new Promise(resolve => setTimeout(resolve, 100)); // Wait for 100 milliseconds
+      await new Promise(resolve => setTimeout(resolve, 100)) // Wait for 100 milliseconds
     }
-    return `https://px-epg.azureedge.net/airings/${apiVersion}/${date.format('YYYY-MM-DD')}/channel/${channel.site_id}?timezone=Europe%2FBrussels`;
+    return `https://px-epg.azureedge.net/airings/${apiVersion}/${date.format(
+      'YYYY-MM-DD'
+    )}/channel/${channel.site_id}?timezone=Europe%2FBrussels`
   },
   request: {
     headers: {
@@ -45,10 +46,12 @@ module.exports = {
           title: item.program.title,
           sub_title: item.program.episodeTitle,
           description: item.program.description,
-          category: item.program.translatedCategory?.[channel.lang] ?
-            item.program.translatedCategory[channel.lang] : item.program.category.split('.')[1],
-          icon: item.program.posterFileName ?
-            `https://experience-cache.proximustv.be/posterserver/poster/EPG/w-166_h-110/${item.program.posterFileName}` : null,
+          category: item.program.translatedCategory?.[channel.lang]
+            ? item.program.translatedCategory[channel.lang]
+            : item.program.category.split('.')[1],
+          image: item.program.posterFileName
+            ? `https://experience-cache.proximustv.be/posterserver/poster/EPG/w-166_h-110/${item.program.posterFileName}`
+            : null,
           season: item.program.seasonNumber,
           episode: item.program.episodeNumber,
           actors: item.program.actors,
@@ -61,19 +64,18 @@ module.exports = {
 
     return programs
   },
-  async channels({ lang = ''}) {
+  async channels({ lang = '' }) {
     const query = {
       operationName: 'getChannels',
       variables: {
         language: lang,
         queryParams: {},
-        'id': '0',
+        id: '0',
         params: {
           shouldReadFromCache: true
         }
       },
-      query:
-        `query getChannels($language: String!, $queryParams: ChannelQueryParams, $id: String, $params: ChannelParams) {
+      query: `query getChannels($language: String!, $queryParams: ChannelQueryParams, $id: String, $params: ChannelParams) {
           channels(language: $language, queryParams: $queryParams, id: $id, params: $params) {
             id
             channelReferenceNumber
@@ -118,21 +120,25 @@ module.exports = {
       .then(r => r.data)
       .catch(console.error)
 
-    return result?.data?.channels
-      .filter(channel => !channel.radio && (!lang || channel.language === (lang === 'de' ? 'ger' : lang)))
-      .map(channel => {
-        return {
-          lang: channel.language === 'ger' ? 'de' : channel.language,
-          site_id: channel.id,
-          name: channel.name
-        }
-      }) || []
+    return (
+      result?.data?.channels
+        .filter(
+          channel =>
+            !channel.radio && (!lang || channel.language === (lang === 'de' ? 'ger' : lang))
+        )
+        .map(channel => {
+          return {
+            lang: channel.language === 'ger' ? 'de' : channel.language,
+            site_id: channel.id,
+            name: channel.name
+          }
+        }) || []
+    )
   }
 }
 function fetchApiVersion() {
   return new Promise(async (resolve, reject) => {
     try {
-
       // https://px-epg.azureedge.net/version is deprecated
       // probably the version url will be changed around over time
 
@@ -145,25 +151,26 @@ function fetchApiVersion() {
       //const versionUrl = 'https://www.pickx.be/api/s-626d8fdabfb1d44e5a614cd69f4b45d6843fdb63566fc80ea4f97f40e4ea3152';
       //the new strategy to break the provider is to leave old version url's available and to return invalid results on those endpoints
 
-      const versionUrl = 'https://www.pickx.be//api/s-cefaf96e249e53648c4895c279e7a621233c50b4357d62b0bdf6bff45f31b5c0';
+      const versionUrl =
+        'https://www.pickx.be//api/s-cefaf96e249e53648c4895c279e7a621233c50b4357d62b0bdf6bff45f31b5c0'
 
       const response = await axios.get(versionUrl, {
         headers: {
-          'Origin': 'https://www.pickx.be',
-          'Referer': 'https://www.pickx.be/'
+          Origin: 'https://www.pickx.be',
+          Referer: 'https://www.pickx.be/'
         }
-      });
+      })
 
       if (response.status === 200) {
-        apiVersion = response.data.version;
-        resolve();
+        apiVersion = response.data.version
+        resolve()
       } else {
-        console.error(`Failed to fetch API version. Status: ${response.status}`);
-        reject(`Failed to fetch API version. Status: ${response.status}`);
+        console.error(`Failed to fetch API version. Status: ${response.status}`)
+        reject(`Failed to fetch API version. Status: ${response.status}`)
       }
     } catch (error) {
-      console.error('Error fetching API version:', error.message);
-      reject(error);
+      console.error('Error fetching API version:', error.message)
+      reject(error)
     }
-  });
+  })
 }

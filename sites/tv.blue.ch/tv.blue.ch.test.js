@@ -33,7 +33,8 @@ it('can parse response', () => {
       title: 'Weekend on the Rocks',
       description:
         ' - «R.E.S.P.E.C.T», lieber Charles Nguela. Der Comedian tourt fleissig durch die Schweiz, macht für uns aber einen Halt, um in der neuen Ausgabe von «Weekend on the Rocks» mit Moderatorin Vania Spescha über die Entertainment-News der Woche zu plaudern.',
-      icon: 'https://services.sg101.prd.sctv.ch/content/images/tv/broadcast/1221/t1221ddc59247d45_landscape_w1920.webp'
+      image:
+        'https://services.sg101.prd.sctv.ch/content/images/tv/broadcast/1221/t1221ddc59247d45_landscape_w1920.webp'
     }
   ])
 })

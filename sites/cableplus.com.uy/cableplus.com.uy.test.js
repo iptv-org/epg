@@ -51,7 +51,7 @@ it('can parse response', () => {
     start: '2023-02-12T09:30:00.000Z',
     stop: '2023-02-12T10:30:00.000Z',
     title: 'Revista agropecuaria',
-    icon: 'https://www.reportv.com.ar/buscador/img/Programas/2797844.jpg',
+    image: 'https://www.reportv.com.ar/buscador/img/Programas/2797844.jpg',
     categories: []
   })
 
@@ -59,7 +59,7 @@ it('can parse response', () => {
     start: '2023-02-12T12:30:00.000Z',
     stop: '2023-02-12T13:30:00.000Z',
     title: 'De pago en pago',
-    icon: 'https://www.reportv.com.ar/buscador/img/Programas/3772835.jpg',
+    image: 'https://www.reportv.com.ar/buscador/img/Programas/3772835.jpg',
     categories: ['Cultural']
   })
 })

@@ -32,7 +32,7 @@ it('can parse response', () => {
     stop: '2023-01-19T05:55:00.000Z',
     title: 'LN Matin',
     category: 'Magazine Actualité',
-    icon: 'https://dnsmptv-img.pragma-consult.be/imgs/picto/132/Reportage_1.jpg'
+    image: 'https://dnsmptv-img.pragma-consult.be/imgs/picto/132/Reportage_1.jpg'
   })
 
   expect(results[1]).toMatchObject({
@@ -40,7 +40,7 @@ it('can parse response', () => {
     stop: '2023-01-19T06:00:00.000Z',
     title: 'Météo',
     category: 'Météo',
-    icon: 'https://dnsmptv-img.pragma-consult.be/imgs/picto/132/Meteo.jpg'
+    image: 'https://dnsmptv-img.pragma-consult.be/imgs/picto/132/Meteo.jpg'
   })
 
   expect(results[8]).toMatchObject({
@@ -49,7 +49,7 @@ it('can parse response', () => {
     title: 'Le journal',
     description: "L'information de la mi-journée avec des JT...",
     category: 'Journal',
-    icon: 'https://dnsmptv-img.pragma-consult.be/imgs/picto/132/journal.jpg'
+    image: 'https://dnsmptv-img.pragma-consult.be/imgs/picto/132/journal.jpg'
   })
 })
 

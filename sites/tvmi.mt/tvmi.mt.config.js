@@ -30,7 +30,7 @@ module.exports = {
       programs.push({
         title: parseTitle($item),
         description: parseDescription($item),
-        icon: parseIcon($item),
+        image: parseImage($item),
         start,
         stop
       })
@@ -52,7 +52,7 @@ function parseDescription($item) {
     .trim()
 }
 
-function parseIcon($item) {
+function parseImage($item) {
   const bg = $item('div > div:nth-child(1) > div > div,a > div:nth-child(1) > div').data('bg')
 
   return bg ? `https:${bg}` : null

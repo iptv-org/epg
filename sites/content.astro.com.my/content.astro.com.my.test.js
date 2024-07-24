@@ -52,7 +52,7 @@ it('can parse response', async () => {
       'This classic drama depicts the many aspects of two complicated relationships set against an airline company. Will those involved ever find true love?',
     actors: ['Francis Ng Chun Yu', 'Joe Ma Tak Chung', 'Flora Chan Wai San'],
     directors: ['Joe Ma Tak Chung'],
-    icon: 'https://s3-ap-southeast-1.amazonaws.com/ams-astro/production/images/1035X328883.jpg',
+    image: 'https://s3-ap-southeast-1.amazonaws.com/ams-astro/production/images/1035X328883.jpg',
     rating: {
       system: 'LPF',
       value: 'U'

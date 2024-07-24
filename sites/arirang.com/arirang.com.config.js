@@ -62,7 +62,7 @@ module.exports = {
         title: item.displayNm,
         start: parseStart(item),
         stop: parseStop(item),
-        icon: parseIcon(programDetail),
+        image: parseImage(programDetail),
         category: parseCategory(programDetail),
         description: parseDescription(programDetail)
       })
@@ -121,7 +121,7 @@ async function parseProgramDetail(item) {
     })
 }
 
-function parseIcon(programDetail) {
+function parseImage(programDetail) {
   if (programDetail && programDetail.image && programDetail.image[0].url) {
     return programDetail.image[0].url
   } else {

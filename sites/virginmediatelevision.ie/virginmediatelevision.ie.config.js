@@ -33,7 +33,7 @@ module.exports = {
         title: parseTitle($item),
         description: parseDescription($item),
         sub_title: parseSubTitle($item),
-        icon: parseIcon($item),
+        image: parseImage($item),
         start,
         stop
       })
@@ -55,7 +55,7 @@ function parseSubTitle($item) {
   return $item('.info').data('subtitle')
 }
 
-function parseIcon($item) {
+function parseImage($item) {
   return $item('.info').data('image')
 }
 

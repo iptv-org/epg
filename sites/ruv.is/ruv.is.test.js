@@ -33,7 +33,8 @@ it('can parse response', () => {
     title: 'Heimaleikfimi',
     description:
       'Góð ráð og æfingar sem tilvalið er að gera heima. Íris Rut Garðarsdóttir sjúkraþjálfari hefur umsjón með leikfiminni. e.',
-    icon: 'https://d38kdhuogyllre.cloudfront.net/fit-in/480x/filters:quality(65)/hd_posters/91pvig-3p3hig.jpg'
+    image:
+      'https://d38kdhuogyllre.cloudfront.net/fit-in/480x/filters:quality(65)/hd_posters/91pvig-3p3hig.jpg'
   })
 })
 

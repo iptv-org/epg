@@ -33,7 +33,8 @@ it('can parse response', () => {
     title: 'Puoli seitsemän',
     description:
       'Vieraana näyttelijä Elias Salonen. Puoli seiskassa vietetään sekä halloweeniä että joulua, kun Olli-Pekka tapaa todellisen jouluttajan. Juontajina Anniina Valtonen, Tuulianna Tola ja Olli-Pekka Kursi.',
-    icon: 'https://thumbor.prod.telkku.com/YTglotoUl7aJtzPtYnvM9tH03sY=/1200x630/smart/filters:quality(86):format(jpeg)/img.prod.telkku.com/program-images/0f885238ac16ce167a9d80eace450254.jpg'
+    image:
+      'https://thumbor.prod.telkku.com/YTglotoUl7aJtzPtYnvM9tH03sY=/1200x630/smart/filters:quality(86):format(jpeg)/img.prod.telkku.com/program-images/0f885238ac16ce167a9d80eace450254.jpg'
   })
 })
 

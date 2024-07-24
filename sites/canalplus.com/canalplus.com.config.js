@@ -32,7 +32,7 @@ module.exports = {
       programs.push({
         title: item.title,
         description: parseDescription(info),
-        icon: parseIcon(info),
+        image: parseImage(info),
         actors: parseCast(info, 'Avec :'),
         director: parseCast(info, 'De :'),
         writer: parseCast(info, 'Scénario :'),
@@ -123,7 +123,7 @@ function parseStart(item) {
   return item && item.startTime ? dayjs(item.startTime) : null
 }
 
-function parseIcon(info) {
+function parseImage(info) {
   return info ? info.URLImage : null
 }
 

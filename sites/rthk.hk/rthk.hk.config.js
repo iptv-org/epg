@@ -33,7 +33,7 @@ module.exports = {
         title: parseTitle($item),
         sub_title: parseSubTitle($item),
         categories: parseCategories($item),
-        icon: parseIcon($item),
+        image: parseImage($item),
         start: parseStart($item, date),
         stop: parseStop($item, date)
       })
@@ -43,7 +43,7 @@ module.exports = {
   }
 }
 
-function parseIcon($item) {
+function parseImage($item) {
   return $item('.single-wrap').data('p')
 }
 

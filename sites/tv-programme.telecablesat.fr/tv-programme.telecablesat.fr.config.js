@@ -50,7 +50,7 @@ module.exports = {
       programs.push({
         title: parseTitle($item),
         description: parseDescription($item),
-        icon: parseIcon($item),
+        image: parseImage($item),
         start,
         stop
       })
@@ -92,7 +92,7 @@ function parseStart($item, date) {
   }).toUTC()
 }
 
-function parseIcon($item) {
+function parseImage($item) {
   const imgSrc = $item('img').attr('src')
 
   return imgSrc ? `https:${imgSrc}` : null

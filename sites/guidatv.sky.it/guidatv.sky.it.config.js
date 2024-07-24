@@ -24,7 +24,7 @@ module.exports = {
         start: parseStart(item),
         stop: parseStop(item),
         url: parseURL(item),
-        icon: parseIcon(item)
+        image: parseImage(item)
       })
     })
 
@@ -79,7 +79,7 @@ function parseURL(item) {
   return item.content.url ? `https://guidatv.sky.it${item.content.url}` : null
 }
 
-function parseIcon(item) {
+function parseImage(item) {
   const cover = item.content.imagesMap ? item.content.imagesMap.find(i => i.key === 'cover') : null
 
   return cover && cover.img && cover.img.url ? `https://guidatv.sky.it${cover.img.url}` : null
