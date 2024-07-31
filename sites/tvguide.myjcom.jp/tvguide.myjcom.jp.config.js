@@ -11,6 +11,7 @@ dayjs.extend(customParseFormat)
 module.exports = {
   site: 'tvguide.myjcom.jp',
   days: 2,
+  lang: 'ja',
   url: function ({ date, channel }) {
     const id = `${channel.site_id}_${date.format('YYYYMMDD')}`
 
