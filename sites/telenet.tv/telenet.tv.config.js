@@ -3,6 +3,7 @@ const dayjs = require('dayjs')
 
 const API_STATIC_ENDPOINT = 'https://static.spark.telenet.tv/eng/web/epg-service-lite/be'
 const API_PROD_ENDPOINT = 'https://spark-prod-be.gnp.cloud.telenet.tv/eng/web/linear-service/v2'
+const API_IMAGE_ENDPOINT = 'https://staticqbr-prod-be.gnp.cloud.telenet.tv/image-service';
 
 module.exports = {
   site: 'telenet.tv',
@@ -62,6 +63,7 @@ module.exports = {
       const detail = await loadProgramDetails(item, channel)
       programs.push({
         title: item.title,
+        icon: parseIcon(item),
         description: detail.longDescription,
         category: detail.genres,
         actors: detail.actors,
@@ -92,7 +94,7 @@ module.exports = {
 
 async function loadProgramDetails(item, channel) {
   if (!item.id) return {}
-  const url = `${API_PROD_ENDPOINT}/replayEvent/${item.id}?returnLinearContent=true&language=${channel.lang}`
+    const url = `${API_PROD_ENDPOINT}/replayEvent/${item.id}?returnLinearContent=true&language=${channel.lang}`
   const data = await axios
     .get(url)
     .then(r => r.data)
@@ -129,4 +131,8 @@ function parseEpisode(detail) {
   if (!detail.episodeNumber) return null
   if (String(detail.episodeNumber).length > 3) return null
   return detail.episodeNumber
+}
+
+function parseIcon(item) {
+  return `${API_IMAGE_ENDPOINT}/intent/${item.id}/posterTile`;
 }
