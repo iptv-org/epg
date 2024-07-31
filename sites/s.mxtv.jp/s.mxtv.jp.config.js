@@ -1,4 +1,3 @@
-const axios = require('axios')
 const dayjs = require('dayjs')
 const duration = require("dayjs/plugin/duration")
 const utc = require('dayjs/plugin/utc')
@@ -13,6 +12,7 @@ dayjs.extend(duration)
 module.exports = {
     site: 's.mxtv.jp',
     days: 1,
+    lang: 'ja',
     url: function ({ date, channel }) {
         const id = `SV${channel.site_id}EPG${date.format('YYYYMMDD')}`
         return `https://s.mxtv.jp/bangumi_file/json01/${id}.json`
