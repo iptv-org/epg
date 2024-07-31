@@ -13,12 +13,16 @@ dayjs.extend(duration)
 
 module.exports = {
     site: 'www.skyperfectv.co.jp',
-    days: 7,
+    days: 1,
     lang: 'ja',
     url: function ({ date, channel }) {
         let [type, ...code] = channel.site_id.split('_')
         code = code.join('_')
+        console.log(`https://www.skyperfectv.co.jp/program/schedule/${type}/channel:${code}/date:${date.format('YYMMDD')}`)
         return `https://www.skyperfectv.co.jp/program/schedule/${type}/channel:${code}/date:${date.format('YYMMDD')}`
+    },
+    logo: function ({channel}) {
+        return `https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/m_${channel.site_id.toLowerCase()}.gif`
     },
     parser: function ({ content, date }) {
         const $ = cheerio.load(content)
@@ -67,7 +71,6 @@ module.exports = {
         
         return programs
     },
-
     async channels() {
         const pageParser = (content, type) => {
             // type: "basic" | "premium"
