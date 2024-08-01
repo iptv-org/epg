@@ -75,7 +75,7 @@
   <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="MusicAir.jp" site_id="120_161_65406">ミュージック・エア</channel>
   <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="NationalGeographic.jp" site_id="120_142_65406">ナショナル ジオグラフィック</channel>
   <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="NHKBS1.jp" site_id="3_101_4">ＮＨＫＢＳ１</channel>
-  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="" site_id="3_101_11">NHK BS4K</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="NHKBSP4K.jp" site_id="3_101_11">NHK BS4K</channel>
   <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="NHKBSPremium.jp" site_id="3_103_4">ＮＨＫＢＳプレミアム</channel>
   <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="NHKEducationalTV.jp" site_id="2_1032_32737">NHK東京　教育</channel>
   <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="NHKGeneralTV.jp" site_id="2_1024_32736">NHK東京　総合</channel>
@@ -120,20 +120,20 @@
   <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="" site_id="120_033_65406">ご案内チャンネル</channel>
   <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="" site_id="120_034_65406">オンデマンドチャンネル290</channel>
   <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="" site_id="120_039_65406">オンデマンドチャンネル440</channel>
-  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="" site_id="120_129_65406">ショップチャンネル プラス</channel>
-  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="" site_id="120_150_65406">MTV HD</channel>
-  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="" site_id="120_153_65406">ミステリーチャンネル</channel>
-  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="" site_id="120_156_65406">音楽・ライブ！　スペースシャワーTV HD</channel>
-  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="" site_id="120_160_65406">MONDOTV HD</channel>
-  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="" site_id="120_185_65406">日経CNBC</channel>
-  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="" site_id="120_191_65406">パチンコ★パチスロTV！</channel>
-  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="" site_id="120_192_65406">ジュエリー☆GSTV</channel>
-  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="" site_id="120_412_65527">JSPORTS1 (4K)</channel>
-  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="" site_id="120_413_65527">JSPORTS2 (4K)</channel>
-  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="" site_id="120_414_65527">JSPORTS3 (4K)</channel>
-  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="" site_id="120_415_65527">JSPORTS4 (4K)</channel>
-  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="" site_id="120_416_65527">ショップチャンネル ４Ｋ</channel>
-  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="" site_id="120_417_65527">4Ｋ QVC</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="ShopChannelPlus.jp" site_id="120_129_65406">ショップチャンネル プラス</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="MTV.jp" site_id="120_150_65406">MTV HD</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="MysteryChannel.jp" site_id="120_153_65406">ミステリーチャンネル</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="SpaceShowerTV.jp" site_id="120_156_65406">音楽・ライブ！　スペースシャワーTV HD</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="MONDOTV.jp" site_id="120_160_65406">MONDOTV HD</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="NikkeiCNBC.jp" site_id="120_185_65406">日経CNBC</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="PachinkoPachisloTV.jp" site_id="120_191_65406">パチンコ★パチスロTV！</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="GSTV.jp" site_id="120_192_65406">ジュエリー☆GSTV</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="JSPORTS1.jp" site_id="120_412_65527">JSPORTS1 (4K)</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="JSPORTS2.jp" site_id="120_413_65527">JSPORTS2 (4K)</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="JSPORTS3.jp" site_id="120_414_65527">JSPORTS3 (4K)</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="JSPORTS4.jp" site_id="120_415_65527">JSPORTS4 (4K)</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="ShopChannel.jp" site_id="120_416_65527">ショップチャンネル ４Ｋ</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="QVC.jp" site_id="120_417_65527">4Ｋ QVC</channel>
   <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="NHKBSP4K.jp" site_id="5_101_11">ＮＨＫ　ＢＳＰ４Ｋ</channel>
   <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="NHKBS.jp" site_id="3_101_4">ＮＨＫ　ＢＳ</channel>
   <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="MTV.jp" site_id="120_150_65406">MTV HD</channel>
@@ -149,4 +149,5 @@
   <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="JOBRDTV.jp" site_id="2_42032_32102">KBS京都</channel>
   <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="JOIXDTV.jp" site_id="2_2088_32725">読売テレビ</channel>
   <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="JOUHDTV.jp" site_id="2_43056_32086">サンテレビ</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="TSS.jp" site_id="2_47144_32021">ＴＳＳ</channel>
 </channels>
