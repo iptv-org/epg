@@ -18,11 +18,11 @@ module.exports = {
     url: function ({ date, channel }) {
         let [type, ...code] = channel.site_id.split('_')
         code = code.join('_')
-        console.log(`https://skyperfectv.co.jp/program/schedule/${type}/channel:${code}/date:${date.format('YYMMDD')}`)
-        return `https://skyperfectv.co.jp/program/schedule/${type}/channel:${code}/date:${date.format('YYMMDD')}`
+        console.log(`https://www.skyperfectv.co.jp/program/schedule/${type}/channel:${code}/date:${date.format('YYMMDD')}`)
+        return `https://www.skyperfectv.co.jp/program/schedule/${type}/channel:${code}/date:${date.format('YYMMDD')}`
     },
     logo: function ({channel}) {
-        return `https://skyperfectv.co.jp/library/common/img/channel/icon/basic/m_${channel.site_id.toLowerCase()}.gif`
+        return `https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/m_${channel.site_id.toLowerCase()}.gif`
     },
     parser: function ({ content, date }) {
         const $ = cheerio.load(content)
@@ -89,7 +89,7 @@ module.exports = {
         }
 
         const getChannels = async (type) => {
-            const response = await axios.get(`https://skyperfectv.co.jp/program/schedule/${type}/`)
+            const response = await axios.get(`https://www.skyperfectv.co.jp/program/schedule/${type}/`)
             return pageParser(response.data, type)
         }
 

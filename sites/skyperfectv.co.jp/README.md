@@ -1,6 +1,6 @@
 # skyperfectv.co.jp
 
-<https://skyperfectv.co.jp>
+<https://www.skyperfectv.co.jp>
 
 ## Index
 
