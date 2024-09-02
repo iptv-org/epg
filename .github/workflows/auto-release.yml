@@ -1,0 +1,116 @@
+name: Create Guide XML and Release
+
+on:
+  schedule:
+    - cron: '30 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        
+    - name: Setup MSVC environment
+      uses: ilammy/msvc-dev-cmd@v1
+      with:
+        arch: amd64
+
+    - name: NPM install
+      run: npm install
+
+    - name: Generate guide.xml.gz
+      run: npm run grab -- --channels=updated_channels.xml --maxConnections=5 --days=7 --gzip
+    
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: binary
+        path: guide.xml.gz
+
+    - name: Set release date
+      run: echo "RELEASE_DATE=$(date +%d-%m-%Y)" >> $GITHUB_ENV
+
+    - name: Download Artifact
+      uses: actions/download-artifact@v4
+      with:
+        name: binary
+
+    - name: Delete Existing Release
+      id: delete_release
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const owner = context.repo.owner;
+          const repo = context.repo.repo;
+          const tag = "xml";
+    
+          // List all releases and find the release by tag
+          const releases = await github.rest.repos.listReleases({
+            owner: owner,
+            repo: repo,
+          });
+    
+          const release = releases.data.find(release => release.tag_name === tag);
+    
+          // Check if the release exists and delete it
+          if (release) {
+            await github.rest.repos.deleteRelease({
+              owner: owner,
+              repo: repo,
+              release_id: release.id,
+            });
+            console.log(`Deleted release with ID ${release.id}`);
+          } else {
+            console.log("No existing release to delete");
+          }
+    
+          // Delete the tag
+          try {
+            await github.rest.git.deleteRef({
+              owner: owner,
+              repo: repo,
+              ref: `tags/${tag}`,
+            });
+            console.log(`Deleted tag ${tag}`);
+          } catch (error) {
+            console.error(`Error deleting tag: ${error.message}`);
+          }
+
+    - name: Echo build sha256
+      id: build_sha
+      run: |
+        if command -v sha256sum >/dev/null 2>&1; then
+          sha256sum guide.xml.gz > sha256.checksum
+        elif command -v shasum >/dev/null 2>&1; then
+          shasum -a 256 guide.xml.gz > sha256.checksum
+        else
+          echo "SHA256 checksum tool not found"
+          exit 1
+        fi
+        echo "build_sha=$(cat sha256.checksum)" >> $GITHUB_OUTPUT
+        cat sha256.checksum
+        
+    - name: Guide Release
+      uses: softprops/action-gh-release@v1
+      with:
+        name: TV Guide ${{ env.RELEASE_DATE }}
+        tag_name: xml
+        body: |
+          **This release has been built by Github Actions**
+          [Link to build](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
+          Build SHA256:
+          ```
+          ${{ steps.build_sha.outputs.build_sha }}
+          ```
+          To verify the build SHA256 during the action, click the build link, go-to "Create Release", open the Echo build sha256 step and read the sha256.
+          You can download the build artifacts, generate a SHA256 checksum and compare it with the below binary.
+        files: guide.xml.gz
+        draft: false

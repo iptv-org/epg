@@ -1,0 +1,43 @@
+name: Update XML
+
+on:
+  schedule:
+    - cron: '10 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  update_xml:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+    
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+    
+      - name: Install dependencies
+        run: |
+          pip install requests
+    
+      - name: Remove existing XML file
+        run: |
+            if [ -f updated_channels.xml ]; then
+              rm updated_channels.xml
+            fi
+    
+      - name: Run Python script to generate XML
+        run: python generate_channels.py
+    
+      - name: Check Git status
+        run: git status
+    
+      - name: Add and commit XML file
+        run: |
+            git config user.name "GitHub Actions"
+            git config user.email "actions@github.com"
+            git add updated_channels.xml
+            git status
+            git commit -m "Update updated_channels.xml" || echo "No changes to commit"
+            git push
