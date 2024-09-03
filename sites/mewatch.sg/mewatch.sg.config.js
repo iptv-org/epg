@@ -40,7 +40,11 @@ module.exports = {
     $('#side-nav > div > div > div > nav:nth-child(1) > ul > li > ul > li').each((i, el) => {
       const name = $(el).find('a > span').text()
       const url = $(el).find('a').attr('href')
-      const [, site_id] = url.match(/\/(\d+)\?player-fullscreen/)
+      const [, site_id = null] = url.match(/\/(\d+)\?player-fullscreen/) ?? []
+
+      if (!site_id) {
+        return
+      }
 
       channels.push({
         lang: 'en',
