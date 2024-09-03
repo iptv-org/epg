@@ -1,12 +1,23 @@
 const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
+const customParseFormat = require('dayjs/plugin/customParseFormat')
+
+dayjs.extend(utc)
+dayjs.extend(timezone)
+dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'mewatch.sg',
   days: 2,
   url: function ({ channel, date }) {
-    return `https://cdn.mewatch.sg/api/schedules?channels=${channel.site_id}&date=${date.format(
+    const utcDate = date.isUTC() ? date.tz(dayjs.tz.guess(), true).utc() : date.utc()
+
+    return `https://cdn.mewatch.sg/api/schedules?channels=${channel.site_id}&date=${utcDate.format(
       'YYYY-MM-DD'
-    )}&duration=24&ff=idp,ldp,rpt,cd&hour=21&intersect=true&lang=en&segments=all`
+    )}&duration=24&ff=idp,ldp,rpt,cd&hour=${utcDate.format(
+      'HH'
+    )}&intersect=true&lang=en&segments=all`
   },
   parser: function ({ content, channel }) {
     let programs = []
