@@ -9,7 +9,7 @@ dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
 const API_STATIC_ENDPOINT = 'https://static.spark.telenet.tv/eng/web/epg-service-lite/be'
-const API_PROD_ENDPOINT = 'https://prod.spark.telenet.tv/eng/web/linear-service/v2'
+const API_PROD_ENDPOINT = 'https://spark-prod-be.gnp.cloud.telenet.tv/eng/web/linear-service/v2'
 
 jest.mock('axios')
 
@@ -63,6 +63,7 @@ it('can parse response', async () => {
     start: '2022-10-29T23:56:00.000Z',
     stop: '2022-10-30T01:44:00.000Z',
     title: 'Queer as Folk USA',
+    icon: 'https://staticqbr-prod-be.gnp.cloud.telenet.tv/image-service/intent/crid:~~2F~~2Fgn.tv~~2F2459095~~2FEP036477800004,imi:0a2f4207b03c16c70b7fb3be8e07881aafe44106/posterTile',
     description:
       "Justin belandt in de gevangenis, Brian en Brandon banen zich een weg door de lijst, Ben treurt, Melanie en Lindsay proberen een interne scheiding en Emmett's stalker onthult zichzelf.",
     category: ['Dramaserie', 'LHBTI'],

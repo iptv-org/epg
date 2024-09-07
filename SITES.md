@@ -35,7 +35,7 @@
 | [directv.com.ar](sites/directv.com.ar)                             | 🔴     | https://github.com/iptv-org/epg/issues/2248                                              |
 | [directv.com.uy](sites/directv.com.uy)                             | 🟢     |                                                                                          |
 | [dishtv.in](sites/dishtv.in)                                       | 🟢     |                                                                                          |
-| [disneystar.com](sites/disneystar.com)                             | 🟢     |                                                                                          |
+| [disneystar.com](sites/disneystar.com)                             | 🔴     | https://github.com/iptv-org/epg/issues/2408                                              |
 | [dsmart.com.tr](sites/dsmart.com.tr)                               | 🟢     |                                                                                          |
 | [dstv.com](sites/dstv.com)                                         | 🟢     |                                                                                          |
 | [elcinema.com](sites/elcinema.com)                                 | 🟢     |                                                                                          |
@@ -98,11 +98,11 @@
 | [nowplayer.now.com](sites/nowplayer.now.com)                       | 🔴     | https://github.com/iptv-org/epg/issues/2247                                              |
 | [nuevosiglo.com.uy](sites/nuevosiglo.com.uy)                       | 🟢     |                                                                                          |
 | [nzxmltv.com](sites/nzxmltv.com)                                   | 🟢     |                                                                                          |
-| [ontvtonight.com](sites/ontvtonight.com)                           | 🟢     |                                                                                          |
+| [ontvtonight.com](sites/ontvtonight.com)                           | 🔴     | https://github.com/iptv-org/epg/issues/2416                                              |
 | [osn.com](sites/osn.com)                                           | 🔴     | https://github.com/iptv-org/epg/issues/2282, https://github.com/iptv-org/epg/issues/2358 |
 | [pbsguam.org](sites/pbsguam.org)                                   | 🟢     |                                                                                          |
 | [player.ee.co.uk](sites/player.ee.co.uk)                           | 🟢     |                                                                                          |
-| [pickx.be](sites/pickx.be)                                         | 🟢     |                                                                                          |
+| [pickx.be](sites/pickx.be)                                         | 🔴     | https://github.com/iptv-org/epg/issues/2428                                              |
 | [playtv.unifi.com.my](sites/playtv.unifi.com.my)                   | 🟢     |                                                                                          |
 | [plex.tv](sites/plex.tv)                                           | 🟢     |                                                                                          |
 | [programacion-tv.elpais.com](sites/programacion-tv.elpais.com)     | 🟢     |                                                                                          |
@@ -173,13 +173,13 @@
 | [tvireland.ie](sites/tvireland.ie)                                 | 🟢     |                                                                                          |
 | [tvmi.mt](sites/tvmi.mt)                                           | 🟢     |                                                                                          |
 | [tvmusor.hu](sites/tvmusor.hu)                                     | 🟢     |                                                                                          |
-| [tvpassport.com](sites/tvpassport.com)                             | 🟢     |                                                                                          |
+| [tvpassport.com](sites/tvpassport.com)                             | 🔴     | https://github.com/iptv-org/epg/issues/2349                                              |
 | [tvplus.com.tr](sites/tvplus.com.tr)                               | 🔴     | https://github.com/iptv-org/epg/issues/2377                                              |
 | [tvprofil.com](sites/tvprofil.com)                                 | 🟡     | https://github.com/iptv-org/epg/issues/2399                                              |
-| [tvtv.us](sites/tvtv.us)                                           | 🟡     | https://github.com/iptv-org/epg/issues/2357                                              |
+| [tvtv.us](sites/tvtv.us)                                           | 🟡     | https://github.com/iptv-org/epg/issues/2357, https://github.com/iptv-org/epg/issues/2353 |
 | [vidio.com](sites/vidio.com)                                       | 🟢     |                                                                                          |
 | [virginmediatelevision.ie](sites/virginmediatelevision.ie)         | 🟢     |                                                                                          |
-| [virgintvgo.virginmedia.com](sites/virgintvgo.virginmedia.com)     | 🟢     |                                                                                          |
+| [virgintvgo.virginmedia.com](sites/virgintvgo.virginmedia.com)     | 🟡     | https://github.com/iptv-org/epg/issues/2310                                              |
 | [visionplus.id](sites/visionplus.id)                               | 🟢     |                                                                                          |
 | [vivacom.bg](sites/vivacom.bg)                                     | 🔴     | https://github.com/iptv-org/epg/issues/2270                                              |
 | [vtm.be](sites/vtm.be)                                             | 🟢     |                                                                                          |
