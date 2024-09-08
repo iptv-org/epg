@@ -1594,7 +1594,7 @@
   <channel site="tvpassport.com" lang="en" xmltv_id="KGWLDT1.us" site_id="cbs-kgwl-lander-wy/4290">CBS (KGWL) Lander, WY</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="KGWNDT1.us" site_id="cbs-kgwn-cheyenne-wy-hd/7546">CBS (KGWN) Cheyenne, WY HD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="KGWNDT1.us" site_id="cbs-kgwn-cheyenne-wy/2571">CBS (KGWN) Cheyenne, WY</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="cbs-kgwn-dt2-northern-colorado-co/13511">NBC (KGWN-DT2) Cheyenne, WY</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KGWNDT2.us" site_id="cbs-kgwn-dt2-northern-colorado-co/13511">NBC (KGWN-DT2) Cheyenne, WY</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="KGWRDT1.us" site_id="cbs-kgwr-rock-springs-wy-hd/8813">CBS (KGWR) Rock Springs, WY HD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="KGWRDT1.us" site_id="cbs-kgwr-rock-springs-wy/4289">CBS (KGWR) Rock Springs, WY</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="KHOUDT1.us" site_id="cbs-khou-houston-tx-hd/7903">CBS (KHOU) Houston, TX HD</channel>
@@ -2143,7 +2143,7 @@
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="cmt-us-on-demand/7948">CMT US On Demand</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="cnbc-canada-hd/8429">CNBC Canada HD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="cnbc-canada/3561">CNBC Canada</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="cnbc-usa-hd/6119">CNBC USA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="CNBC.us" site_id="cnbc-usa-hd/6119">CNBC USA HD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="cnn-duplicate-feed/9097">CNN (Duplicate Feed)</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="cnn-espanol/2096">CNN Español</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="cnn-hd/4724">CNN HD</channel>
@@ -2204,25 +2204,25 @@
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="comcast-ondemand/6100">Comcast OnDemand</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="comcast-sportsnet-baltimore-hd/7214">Monumental Sports Network Baltimore HD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="comcast-sportsnet-baltimore/7213">Monumental Sports Network Baltimore</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="comcast-sportsnet-bay-area-hd/6305">NBC Sports Bay Area HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="comcast-sportsnet-bay-area/1117">NBC Sports Bay Area</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="NBCSportsBayArea.us" site_id="comcast-sportsnet-bay-area-hd/6305">NBC Sports Bay Area HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="NBCSportsBayArea.us" site_id="comcast-sportsnet-bay-area/1117">NBC Sports Bay Area</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="comcast-sportsnet-bay-areacalifornia-plus-hd/9363">NBC Sports Bay Area/California Plus HD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="comcast-sportsnet-bay-areacalifornia-plus/9362">NBC Sports Bay Area/California Plus</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="comcast-sportsnet-california-hd/6410">NBC Sports California HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="comcast-sportsnet-california/2836">NBC Sports California</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="comcast-sportsnet-chicago-hd/6409">NBC Sports Chicago HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="comcast-sportsnet-chicago-plus-hd/14414">NBC Sports Chicago Plus HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="comcast-sportsnet-chicago-plus/9969">NBC Sports Chicago Plus</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="comcast-sportsnet-chicago/4020">NBC Sports Chicago</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="NBCSportsCalifornia.us" site_id="comcast-sportsnet-california-hd/6410">NBC Sports California HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="NBCSportsCalifornia.us" site_id="comcast-sportsnet-california/2836">NBC Sports California</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="NBCSportsChicago.us" site_id="comcast-sportsnet-chicago-hd/6409">NBC Sports Chicago HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="NBCSportsChicagoPlus.us" site_id="comcast-sportsnet-chicago-plus-hd/14414">NBC Sports Chicago Plus HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="NBCSportsChicagoPlus.us" site_id="comcast-sportsnet-chicago-plus/9969">NBC Sports Chicago Plus</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="NBCSportsChicago.us" site_id="comcast-sportsnet-chicago/4020">NBC Sports Chicago</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="comcast-sportsnet-mid-atlantic-hd/6411">Monumental Sports Network HD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="comcast-sportsnet-mid-atlantic-plus/11404">Monumental Sports Network 2 HD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="comcast-sportsnet-mid-atlantic/1564">Monumental Sports Network</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="comcast-sportsnet-new-england-hd/4534">NBC Sports Boston HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="comcast-sportsnet-new-england/4529">NBC Sports Boston</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="NBCSportsBoston.us" site_id="comcast-sportsnet-new-england-hd/4534">NBC Sports Boston HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="NBCSportsBoston.us" site_id="comcast-sportsnet-new-england/4529">NBC Sports Boston</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="comcast-sportsnet-new-york-sny/4187">Comcast Sportsnet New York (SNY)</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="comcast-sportsnet-northwest/4747">NBC Sports NorthWest</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="comcast-sportsnet-philadelphia-hd/6413">NBC Sports Philadelphia HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="comcast-sportsnet-philadelphia/6014">NBC Sports Philadelphia</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="NBCSportsNorthwest.us" site_id="comcast-sportsnet-northwest/4747">NBC Sports NorthWest</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="NBCSportsPhiladelphia.us" site_id="comcast-sportsnet-philadelphia-hd/6413">NBC Sports Philadelphia HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="NBCSportsPhiladelphia.us" site_id="comcast-sportsnet-philadelphia/6014">NBC Sports Philadelphia</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="ComedyCentralEast.us" site_id="comedy-central-hd--eastern-feed/6957">Comedy Central HD - Eastern Feed</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="ComedyCentralWest.us" site_id="comedy-central-hd--pacific-feed/16224">Comedy Central HD - Pacific Feed</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="comedy-central-on-demand/4781">Comedy Central on Demand</channel>
@@ -6699,7 +6699,7 @@
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="metv-kmvu-dt2-medfordklamath-falls-or/10325">MeTV (KMVU-DT2) Medford/Klamath Falls, OR</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="metv-kmya-dt-little-rock-ar-hd/10644">MeTV (KMYA-DT) Little Rock, AR HD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="metv-kmya-dt-little-rock-ar/10444">MeTV (KMYA-DT) Little Rock, AR</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="metv-knep-dt2-scottsbluff-ne/8304">NBC (KNEP2) Scottsbluff, NE</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KNEPDT2.us" site_id="nbc-knep2-scottsbluff-ne/8304">NBC (KNEP2) Scottsbluff, NE</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="metv-koco-dt2-oklahoma-city-ok/11779">MeTV (KOCO-TV2) Oklahoma City, OK</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="metv-kofy-dt2-san-francisco-ca/10662">CHARGE! (KOFY-DT2) San Francisco, CA</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="metv-koki-dt2-tulsa-ok/10990">MeTV (KOKI-TV2) Tulsa, OK</channel>
@@ -7224,7 +7224,7 @@
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="mnt-wrdc-raleigh-nc/1299">MNT (WRDC) Raleigh, NC</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="mnt-wrde-dt2-salisbury-md/17604">MNT (WRDE-LD2) Salisbury, MD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="mnt-wrdw-dt2-augusta-ga-hd/6677">MNT (WRDW-DT2) Augusta, GA HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="mnt-wrdw-dt2-augusta-ga/5983">NBC (WRDW-DT2) Augusta, GA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WRDWDT2.us" site_id="nbc-wrdwdt2-augusta-ga/5983">NBC (WRDW-DT2) Augusta, GA</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="mnt-wrgt-dt2-dayton-oh-hd/6678">TBD TV (WRGT-TV2) Dayton, OH HD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="mnt-wrgt-dt2-dayton-oh/3810">TBD TV (WRGT-TV2) Dayton, OH</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="mnt-wrlh-tv2-richmond-va-hd/7351">MNT (WRLH-TV2) Richmond, VA HD</channel>
@@ -7507,463 +7507,463 @@
   <channel site="tvpassport.com" lang="en" xmltv_id="NBATVCanada.ca" site_id="nba-tv-canada-tv-hd/3615">NBA TV Canada TV HD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="NBATV.us" site_id="nba-tv-usa-hd/5645">NBA TV USA HD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="NBATV.us" site_id="nba-tv-usa/3116">NBA TV USA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc--central/9912">NBC - Central</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc--mountain/9913">NBC - Mountain</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc--network-eastern/1227">NBC - Network Eastern</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc--network-pacific/4410">NBC - Network Pacific</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="NBCCentral.us" site_id="nbc--central/9912">NBC - Central</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="NBCMountain.us" site_id="nbc--mountain/9913">NBC - Mountain</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="NBCEast.us" site_id="nbc--network-eastern/1227">NBC - Network Eastern</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="NBCWest.us" site_id="nbc--network-pacific/4410">NBC - Network Pacific</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-atv-oranjestad-aruba/5097">NBC (ATV) Oranjestad, Aruba</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-k13xd-dt2-fairbanks-ak/17760">NBC (K13XD-DT2) Fairbanks, AK</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-k14lz-minneapolis-mn/11865">NBC (K14LZ) Minneapolis, MN</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-k18ir-minneapolis-mn/11867">NBC (K18IR) Minneapolis, MN</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-k21dg-minneapolis-mn/11869">NBC (K21DG) Minneapolis, MN</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-k21hx-minneapolis-mn/11870">NBC (K21HX) Minneapolis, MN</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-k31ef-minneapolis-mn/11866">NBC (K31EF) Minneapolis, MN</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-k32ig-d-ellensburg-wa/15126">NBC (K32IG-D) Ellensburg, WA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-k35bw-lewiston-id/7252">NBC (K35BW) Lewiston, ID</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-k36kw-minneapolis-mn/11868">NBC (K36KW) Minneapolis, MN</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-k39fe-minneapolis-mn/11871">NBC (K39FE) Minneapolis, MN</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="K13XDD2.us" site_id="nbc-k13xd-dt2-fairbanks-ak/17760">NBC (K13XD-DT2) Fairbanks, AK</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="K14LZD1.us" site_id="nbc-k14lz-minneapolis-mn/11865">NBC (K14LZ) Minneapolis, MN</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="K18IRD1.us" site_id="nbc-k18ir-minneapolis-mn/11867">NBC (K18IR) Minneapolis, MN</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="K21DGD1.us" site_id="nbc-k21dg-minneapolis-mn/11869">NBC (K21DG) Minneapolis, MN</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="K21HXD1.us" site_id="nbc-k21hx-minneapolis-mn/11870">NBC (K21HX) Minneapolis, MN</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="K31EFD1.us" site_id="nbc-k31ef-minneapolis-mn/11866">NBC (K31EF) Minneapolis, MN</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="K32IGD1.us" site_id="nbc-k32ig-d-ellensburg-wa/15126">NBC (K32IG-D) Ellensburg, WA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="K35BWD1.us" site_id="nbc-k35bw-lewiston-id/7252">NBC (K35BW) Lewiston, ID</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="K36KWD1.us" site_id="nbc-k36kw-minneapolis-mn/11868">NBC (K36KW) Minneapolis, MN</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="K39FED1.us" site_id="nbc-k39fe-minneapolis-mn/11871">NBC (K39FE) Minneapolis, MN</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-k65bv-lihue-hi/5114">NBC (K65BV) Lihue, HI</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kadn-dt2-lafayette-la/17158">NBC (KADN-TV2) Lafayette, LA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kags-bryan-tx-hd/11425">NBC (KAGS) Bryan, TX HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kags-bryan-tx/11295">NBC (KAGS) Bryan, TX</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kait-dt2-jonesboro-ar/14363">NBC (KAIT-DT2) Jonesboro, AR</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kalb-alexandria-la/2455">NBC (KALB) Alexandria, LA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kamr-amarillo-tx-hd/6261">NBC (KAMR) Amarillo, TX HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kamr-amarillo-tx/2361">NBC (KAMR) Amarillo, TX</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kare-minneapolis-mn-hd/4774">NBC (KARE) Minneapolis, MN HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kark-little-rock-ar-hd/6262">NBC (KARK) Little Rock, AR HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kark-little-rock-ar/1690">NBC (KARK) Little Rock, AR</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kath-juneau-ak/5100">NBC (KATH) Juneau, AK</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kavu-dt2-victoria-tx/17396">NBC (KAVU-DT2) Victoria, TX</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kbgf-great-falls-mt-hd/7000">NBC (KBGF) Great Falls, MT HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kbgf-great-falls-mt/3032">NBC (KBGF) Great Falls, MT</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kbjr-duluth-mn-hd/6263">NBC (KBJR) Duluth, MN HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kbjr-duluth-mn/283">NBC (KBJR) Duluth, MN</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kbmt-dt2-beaumont-tx-hd/6999">NBC (KBMT-DT2) Beaumont, TX HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kbmt-dt2-beaumont-tx/6017">NBC (KBMT-DT2) Beaumont, TX</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kcbd-lubbock-tx-hd/6148">NBC (KCBD) Lubbock, TX HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kcbd-lubbock-tx/2357">NBC (KCBD) Lubbock, TX</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kcen-temple-tx-hd/5849">NBC (KCEN) Temple, TX HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kcen-temple-tx/2418">NBC (KCEN) Temple, TX</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kcfw-kalispell-mt-hd/8923">NBC (KCFW) Kalispell, MT HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kcfw-kalispell-mt/264">NBC (KCFW) Kalispell, MT</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kcra-sacramento-ca-hd/6260">NBC (KCRA) Sacramento, CA HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kcwy-casper-wy-hd/6264">NBC (KCWY) Casper, WY HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kcwy-casper-wy/2195">NBC (KCWY) Casper, WY</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kdbz-cd-bozeman-mt/30698">NBC (KDBZ-CD) Bozeman, MT</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kdlt-sioux-falls-sd-hd/6265">NBC (KDLT) Sioux Falls, SD HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kdlt-sioux-falls-sd/1060">NBC (KDLT) Sioux Falls, SD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kdlv-mitchell-sd/5101">NBC (KDLV) Mitchell, SD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-keci-missoula-mt-hd/8924">NBC (KECI) Missoula, MT HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kenv-dt2-elko-nv/18046">NBC (KENV-DT2) Elko, NV</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kenv-elko-nv-hd/5141">NBC (KENV) Elko, NV HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ketk-east-texas-tx-hd/6266">NBC (KETK) East Texas, TX HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ketk-east-texas-tx/2232">NBC (KETK) East Texas, TX</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kfdx-wichita-falls-tx-hd/6267">NBC (KFDX) Wichita Falls, TX HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kfdx-wichita-falls-tx/3149">NBC (KFDX) Wichita Falls, TX</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kfor-oklahoma-city-ok-hd/6268">NBC (KFOR) Oklahoma City, OK HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kfor-oklahoma-city-ok/1502">NBC (KFOR) Oklahoma City, OK</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kfta-dt2-ft-smith-ar/11710">NBC (KFTA-DT2) Ft. Smith, AR</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kfyr-bismarck-nd-hd/8334">NBC (KFYR) Bismarck, ND HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kfyr-bismarck-nd/1380">NBC (KFYR) Bismarck, ND</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kget-bakersfield-ca-hd/7562">NBC (KGET) Bakersfield, CA HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kget-bakersfield-ca/2280">NBC (KGET) Bakersfield, CA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kgin-dt2-hastings-ne/18553">NBC (KGIN-DT2) Hastings, NE</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kgns-laredo-tx-hd/9482">NBC (KGNS) Laredo, TX HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kgns-laredo-tx/3076">NBC (KGNS) Laredo, TX</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kgw-portland-or-hd/3729">NBC (KGW) Portland, OR HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kgw-portland-or/1310">NBC (KGW) Portland, OR</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-khbc-hilo-hi/5103">NBC (KHBC) Hilo, HI</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-khnl-honolulu-hi-hd/7674">NBC (KHNL) Honolulu, HI HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-khq-spokane-wa-hd/6270">NBC (KHQ) Spokane, WA HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-khq-spokane-wa/171">NBC (KHQ) Spokane, WA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kiem-eureka-ca-hd/6982">NBC (KIEM) Eureka, CA HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kiem-eureka-ca/2312">NBC (KIEM) Eureka, CA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-king-seattle-wa-dv/3948">NBC (KING) Seattle, WA DV</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-king-seattle-wa-hd/2831">NBC (KING) Seattle, WA HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kjac-kvhp-ld2-jasper-tx/31336">NBC KJAC (KVHP-LD2) Jasper, TX</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kjrh-tulsa-ok-hd/6271">NBC (KJRH) Tulsa, OK HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kjrh-tulsa-ok/1473">NBC (KJRH) Tulsa, OK</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KADNDT2.us" site_id="nbc-kadn-dt2-lafayette-la/17158">NBC (KADN-TV2) Lafayette, LA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KAGSLD1.us" site_id="nbc-kags-bryan-tx-hd/11425">NBC (KAGS) Bryan, TX HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KAGSLD1.us" site_id="nbc-kags-bryan-tx/11295">NBC (KAGS) Bryan, TX</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KAITDT2.us" site_id="nbc-kait-dt2-jonesboro-ar/14363">NBC (KAIT-DT2) Jonesboro, AR</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KALBDT1.us" site_id="nbc-kalb-alexandria-la/2455">NBC (KALB) Alexandria, LA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KAMRDT1.us" site_id="nbc-kamr-amarillo-tx-hd/6261">NBC (KAMR) Amarillo, TX HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KAMRDT1.us" site_id="nbc-kamr-amarillo-tx/2361">NBC (KAMR) Amarillo, TX</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KAREDT1.us" site_id="nbc-kare-minneapolis-mn-hd/4774">NBC (KARE) Minneapolis, MN HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KARKDT1.us" site_id="nbc-kark-little-rock-ar-hd/6262">NBC (KARK) Little Rock, AR HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KARKDT1.us" site_id="nbc-kark-little-rock-ar/1690">NBC (KARK) Little Rock, AR</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KATHLD1.us" site_id="nbc-kath-juneau-ak/5100">NBC (KATH) Juneau, AK</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KAVUDT2.us" site_id="nbc-kavu-dt2-victoria-tx/17396">NBC (KAVU-DT2) Victoria, TX</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KBGFLD1.us" site_id="nbc-kbgf-great-falls-mt-hd/7000">NBC (KBGF) Great Falls, MT HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KBGFLD1.us" site_id="nbc-kbgf-great-falls-mt/3032">NBC (KBGF) Great Falls, MT</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KBJRDT1.us" site_id="nbc-kbjr-duluth-mn-hd/6263">NBC (KBJR) Duluth, MN HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KBJRDT1.us" site_id="nbc-kbjr-duluth-mn/283">NBC (KBJR) Duluth, MN</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KBMTDT2.us" site_id="nbc-kbmt-dt2-beaumont-tx-hd/6999">NBC (KBMT-DT2) Beaumont, TX HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KBMTDT2.us" site_id="nbc-kbmt-dt2-beaumont-tx/6017">NBC (KBMT-DT2) Beaumont, TX</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KCBDDT1.us" site_id="nbc-kcbd-lubbock-tx-hd/6148">NBC (KCBD) Lubbock, TX HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KCBDDT1.us" site_id="nbc-kcbd-lubbock-tx/2357">NBC (KCBD) Lubbock, TX</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KCENDT1.us" site_id="nbc-kcen-temple-tx-hd/5849">NBC (KCEN) Temple, TX HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KCENDT1.us" site_id="nbc-kcen-temple-tx/2418">NBC (KCEN) Temple, TX</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KCFWDT1.us" site_id="nbc-kcfw-kalispell-mt-hd/8923">NBC (KCFW) Kalispell, MT HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KCFWDT1.us" site_id="nbc-kcfw-kalispell-mt/264">NBC (KCFW) Kalispell, MT</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KCRADT1.us" site_id="nbc-kcra-sacramento-ca-hd/6260">NBC (KCRA) Sacramento, CA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KCWYDT1.us" site_id="nbc-kcwy-casper-wy-hd/6264">NBC (KCWY) Casper, WY HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KCWYDT1.us" site_id="nbc-kcwy-casper-wy/2195">NBC (KCWY) Casper, WY</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KDBZCD1.us" site_id="nbc-kdbz-cd-bozeman-mt/30698">NBC (KDBZ-CD) Bozeman, MT</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KDLTDT1.us" site_id="nbc-kdlt-sioux-falls-sd-hd/6265">NBC (KDLT) Sioux Falls, SD HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KDLTDT1.us" site_id="nbc-kdlt-sioux-falls-sd/1060">NBC (KDLT) Sioux Falls, SD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KDLVDT1.us" site_id="nbc-kdlv-mitchell-sd/5101">NBC (KDLV) Mitchell, SD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KECIDT1.us" site_id="nbc-keci-missoula-mt-hd/8924">NBC (KECI) Missoula, MT HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KENVDT2.us" site_id="nbc-kenv-dt2-elko-nv/18046">NBC (KENV-DT2) Elko, NV</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KENVDT1.us" site_id="nbc-kenv-elko-nv-hd/5141">NBC (KENV) Elko, NV HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KETKDT1.us" site_id="nbc-ketk-east-texas-tx-hd/6266">NBC (KETK) East Texas, TX HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KETKDT1.us" site_id="nbc-ketk-east-texas-tx/2232">NBC (KETK) East Texas, TX</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KFDXDT1.us" site_id="nbc-kfdx-wichita-falls-tx-hd/6267">NBC (KFDX) Wichita Falls, TX HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KFDXDT1.us" site_id="nbc-kfdx-wichita-falls-tx/3149">NBC (KFDX) Wichita Falls, TX</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KFORDT1.us" site_id="nbc-kfor-oklahoma-city-ok-hd/6268">NBC (KFOR) Oklahoma City, OK HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KFORDT1.us" site_id="nbc-kfor-oklahoma-city-ok/1502">NBC (KFOR) Oklahoma City, OK</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KFTADT2.us" site_id="nbc-kfta-dt2-ft-smith-ar/11710">NBC (KFTA-DT2) Ft. Smith, AR</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KFYRDT1.us" site_id="nbc-kfyr-bismarck-nd-hd/8334">NBC (KFYR) Bismarck, ND HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KFYRDT1.us" site_id="nbc-kfyr-bismarck-nd/1380">NBC (KFYR) Bismarck, ND</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KGETDT1.us" site_id="nbc-kget-bakersfield-ca-hd/7562">NBC (KGET) Bakersfield, CA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KGETDT1.us" site_id="nbc-kget-bakersfield-ca/2280">NBC (KGET) Bakersfield, CA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KGINDT2.us" site_id="nbc-kgin-dt2-hastings-ne/18553">NBC (KGIN-DT2) Hastings, NE</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KGNSDT1.us" site_id="nbc-kgns-laredo-tx-hd/9482">NBC (KGNS) Laredo, TX HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KGNSDT1.us" site_id="nbc-kgns-laredo-tx/3076">NBC (KGNS) Laredo, TX</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KGWDT1.us" site_id="nbc-kgw-portland-or-hd/3729">NBC (KGW) Portland, OR HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KGWDT1.us" site_id="nbc-kgw-portland-or/1310">NBC (KGW) Portland, OR</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KHBCDT1.us" site_id="nbc-khbc-hilo-hi/5103">NBC (KHBC) Hilo, HI</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KHNLDT1.us" site_id="nbc-khnl-honolulu-hi-hd/7674">NBC (KHNL) Honolulu, HI HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KHQDT1.us" site_id="nbc-khq-spokane-wa-hd/6270">NBC (KHQ) Spokane, WA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KHQDT1.us" site_id="nbc-khq-spokane-wa/171">NBC (KHQ) Spokane, WA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KIEMDT1.us" site_id="nbc-kiem-eureka-ca-hd/6982">NBC (KIEM) Eureka, CA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KIEMDT1.us" site_id="nbc-kiem-eureka-ca/2312">NBC (KIEM) Eureka, CA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KINGDT1.us" site_id="nbc-king-seattle-wa-dv/3948">NBC (KING) Seattle, WA DV</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KINGDT1.us" site_id="nbc-king-seattle-wa-hd/2831">NBC (KING) Seattle, WA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KVHPLD2.us" site_id="nbc-kjac-kvhp-ld2-jasper-tx/31336">NBC KJAC (KVHP-LD2) Jasper, TX</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KJRHDT1.us" site_id="nbc-kjrh-tulsa-ok-hd/6271">NBC (KJRH) Tulsa, OK HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KJRHDT1.us" site_id="nbc-kjrh-tulsa-ok/1473">NBC (KJRH) Tulsa, OK</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kjwy-jackson-wy/5104">NBC (KJWY) Jackson, WY</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kkco-grand-junction-co-hd/6983">NBC (KKCO) Grand Junction, CO HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kkco-grand-junction-co/3382">NBC (KKCO) Grand Junction, CO</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-klaf-lafayette-la-hd/9927">NBC (KLAF) Lafayette, LA HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-klaf-lafayette-la/8051">NBC (KLAF) Lafayette, LA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KKCODT1.us" site_id="nbc-kkco-grand-junction-co-hd/6983">NBC (KKCO) Grand Junction, CO HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KKCODT1.us" site_id="nbc-kkco-grand-junction-co/3382">NBC (KKCO) Grand Junction, CO</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KLAFLD1.us" site_id="nbc-klaf-lafayette-la-hd/9927">NBC (KLAF) Lafayette, LA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KLAFLD1.us" site_id="nbc-klaf-lafayette-la/8051">NBC (KLAF) Lafayette, LA</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kmay-bryan-tx/5055">NBC (KMAY) Bryan, TX</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kmcb-coos-bay-or/5105">NBC (KMCB) Coos Bay, OR</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kmir-palm-springs-ca-hd/4934">NBC (KMIR) Palm Springs, CA HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kmir-palm-springs-ca/2601">NBC (KMIR) Palm Springs, CA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kmol-victoria-tx-hd/17151">NBC (KMOL) Victoria, TX HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kmol-victoria-tx/2486">NBC (KMOL) Victoria, TX</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kmot-minot-nd-hd/8319">NBC (KMOT) Minot, ND HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kmot-minot-nd/576">NBC (KMOT) Minot, ND</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kmtr-eugene-or-hd/19100">NBC (KMTR) Eugene, OR HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kmtr-eugene-or/2275">NBC (KMTR) Eugene, OR</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-knaz-flagstaff-az/1177">NBC (KNAZ) Flagstaff, AZ</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-knbc-los-angeles-ca-hd/4558">NBC (KNBC) Los Angeles, CA HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-knbn-rapid-city-sd-hd/6182">NBC (KNBN) Rapid City, SD HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-knbn-rapid-city-sd/5107">NBC (KNBN) Rapid City, SD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kndo-tri-cities-wa-hd/8625">NBC (KNDO) Tri-Cities, WA HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kndo-tri-cities-wa/2235">NBC (KNDO) Tri-Cities, WA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kndu-tri-cities-wa-hd/7972">NBC (KNDU) Tri-Cities, WA HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kndu-tri-cities-wa/2138">NBC (KNDU) Tri-Cities, WA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-knop-north-platte-ne-hd/9566">NBC (KNOP) North Platte, NE HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-knop-north-platte-ne/3117">NBC (KNOP) North Platte, NE</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-knsd-san-diego-ca-hd/6929">NBC (KNSD) San Diego, CA HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-knsd-san-diego-ca/2619">NBC (KNSD) San Diego, CA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kntv-san-francisco-ca-hd/6871">NBC (KNTV) San Francisco, CA HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-knvn-chico-ca-hd/6872">NBC (KNVN) Chico, CA HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-knvn-chico-ca/2154">NBC (KNVN) Chico, CA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-knwa-ft-smith-ar-hd/6873">NBC (KNWA) Ft. Smith, AR HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-knwa-ft-smith-ar/1677">NBC (KNWA) Ft. Smith, AR</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-koaa-colorado-springs-co-hd/6874">NBC (KOAA) Colorado Springs, CO HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-koaa-colorado-springs-co/3335">NBC (KOAA) Colorado Springs, CO</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kob-albuquerque-nm-hd/5108">NBC (KOB) Albuquerque, NM HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kob-albuquerque-nm/4367">NBC (KOB) Albuquerque, NM</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kobf-farmington-nm-hd/6875">NBC (KOBF) Farmington, NM HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kobf-farmington-nm/5109">NBC (KOBF) Farmington, NM</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kobi-medford-or-hd/10330">NBC (KOBI) Medford, OR HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kobi-medford-or/5112">NBC (KOBI) Medford, OR</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kobr-albuquerque-nm-hd/8008">NBC (KOBR) Roswell, NM HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kobr-albuquerque-nm/5111">NBC (KOBR) Roswell, NM</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kogg-wailuku-hi/5113">NBC (KOGG) Wailuku, HI</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-komu-columbia-mo-hd/6877">NBC (KOMU) Columbia, MO HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-komu-columbia-mo/2721">NBC (KOMU) Columbia, MO</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-koti-klamath-falls-or-hd/7965">NBC (KOTI) Klamath Falls, OR HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-koti-klamath-falls-or/5115">NBC (KOTI) Klamath Falls, OR</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kplc-lake-charles-la-hd/6878">NBC (KPLC) Lake Charles, LA HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kplc-lake-charles-la/2321">NBC (KPLC) Lake Charles, LA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kpnx-phoenix-az-hd/6318">NBC (KPNX) Phoenix, AZ HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kprc-houston-tx-hd/7902">NBC (KPRC) Houston, TX HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kprc-houston-tx/2400">NBC (KPRC) Houston, TX</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kpsn-ld-payson-az/26700">NBC (KPSN-LD) Payson, AZ</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kpvi-pocatello-id-hd/7555">NBC (KPVI) Pocatello, ID HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kpvi-pocatello-id/1972">NBC (KPVI) Pocatello, ID</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kqcd-dickinson-nd-hd/8046">NBC (KQCD) Dickinson, ND HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kqcd-dickinson-nd/1668">NBC (KQCD) Dickinson, ND</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-krbc-abilene-tx-hd/17135">NBC (KRBC) Abilene, TX HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-krbc-abilene-tx/2355">NBC (KRBC) Abilene, TX</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-krii-chisholm-mn/5116">NBC (KRII) Chisholm, MN</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kris-corpus-christi-tx-hd/4750">NBC (KRIS) Corpus Christi, TX HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kris-corpus-christi-tx/3092">NBC (KRIS) Corpus Christi, TX</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-krnv-reno-nv-hd/6230">NBC (KRNV) Reno, NV HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ksan-san-angelo-tx-hd/17156">NBC (KSAN) San Angelo, TX HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ksan-san-angelo-tx/5117">NBC (KSAN) San Angelo, TX</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ksbw-monterey-ca-hd/13483">NBC (KSBW) Monterey, CA HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ksbw-monterey-ca/5118">NBC (KSBW) Monterey, CA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ksby-santa-barbara-ca-hd/8097">NBC (KSBY) Santa Barbara, CA HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ksby-santa-barbara-ca/2309">NBC (KSBY) Santa Barbara, CA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ksct-sitka-ak/5119">NBC (KSCT) Sitka, AK</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ksdk-st-louis-mo-hd/6623">NBC (KSDK) St. Louis, MO HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ksdk-st-louis-mo/2949">NBC (KSDK) St. Louis, MO</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ksee-dt1-fresno-ca-hd/6624">NBC (KSEE-DT1) Fresno, CA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KMCBDT1.us" site_id="nbc-kmcb-coos-bay-or/5105">NBC (KMCB) Coos Bay, OR</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KMIRDT1.us" site_id="nbc-kmir-palm-springs-ca-hd/4934">NBC (KMIR) Palm Springs, CA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KMIRDT1.us" site_id="nbc-kmir-palm-springs-ca/2601">NBC (KMIR) Palm Springs, CA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KMOLLD1.us" site_id="nbc-kmol-victoria-tx-hd/17151">NBC (KMOL) Victoria, TX HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KMOLLD1.us" site_id="nbc-kmol-victoria-tx/2486">NBC (KMOL) Victoria, TX</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KMOTDT1.us" site_id="nbc-kmot-minot-nd-hd/8319">NBC (KMOT) Minot, ND HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KMOTDT1.us" site_id="nbc-kmot-minot-nd/576">NBC (KMOT) Minot, ND</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KMTRDT1.us" site_id="nbc-kmtr-eugene-or-hd/19100">NBC (KMTR) Eugene, OR HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KMTRDT1.us" site_id="nbc-kmtr-eugene-or/2275">NBC (KMTR) Eugene, OR</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KNAZDT1.us" site_id="nbc-knaz-flagstaff-az/1177">NBC (KNAZ) Flagstaff, AZ</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KNBCDT1.us" site_id="nbc-knbc-los-angeles-ca-hd/4558">NBC (KNBC) Los Angeles, CA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KNBNDT1.us" site_id="nbc-knbn-rapid-city-sd-hd/6182">NBC (KNBN) Rapid City, SD HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KNBNDT1.us" site_id="nbc-knbn-rapid-city-sd/5107">NBC (KNBN) Rapid City, SD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KNDODT1.us" site_id="nbc-kndo-tri-cities-wa-hd/8625">NBC (KNDO) Tri-Cities, WA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KNDODT1.us" site_id="nbc-kndo-tri-cities-wa/2235">NBC (KNDO) Tri-Cities, WA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KNDUDT1.us" site_id="nbc-kndu-tri-cities-wa-hd/7972">NBC (KNDU) Tri-Cities, WA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KNDUDT1.us" site_id="nbc-kndu-tri-cities-wa/2138">NBC (KNDU) Tri-Cities, WA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KNOPDT1.us" site_id="nbc-knop-north-platte-ne-hd/9566">NBC (KNOP) North Platte, NE HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KNOPDT1.us" site_id="nbc-knop-north-platte-ne/3117">NBC (KNOP) North Platte, NE</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KNSDDT1.us" site_id="nbc-knsd-san-diego-ca-hd/6929">NBC (KNSD) San Diego, CA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KNSDDT1.us" site_id="nbc-knsd-san-diego-ca/2619">NBC (KNSD) San Diego, CA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KNTVDT1.us" site_id="nbc-kntv-san-francisco-ca-hd/6871">NBC (KNTV) San Francisco, CA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KNVNDT1.us" site_id="nbc-knvn-chico-ca-hd/6872">NBC (KNVN) Chico, CA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KNVNDT1.us" site_id="nbc-knvn-chico-ca/2154">NBC (KNVN) Chico, CA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KNWADT1.us" site_id="nbc-knwa-ft-smith-ar-hd/6873">NBC (KNWA) Ft. Smith, AR HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KNWADT1.us" site_id="nbc-knwa-ft-smith-ar/1677">NBC (KNWA) Ft. Smith, AR</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KOAADT1.us" site_id="nbc-koaa-colorado-springs-co-hd/6874">NBC (KOAA) Colorado Springs, CO HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KOAADT1.us" site_id="nbc-koaa-colorado-springs-co/3335">NBC (KOAA) Colorado Springs, CO</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KOBDT1.us" site_id="nbc-kob-albuquerque-nm-hd/5108">NBC (KOB) Albuquerque, NM HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KOBDT1.us" site_id="nbc-kob-albuquerque-nm/4367">NBC (KOB) Albuquerque, NM</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KOBFDT1.us" site_id="nbc-kobf-farmington-nm-hd/6875">NBC (KOBF) Farmington, NM HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KOBFDT1.us" site_id="nbc-kobf-farmington-nm/5109">NBC (KOBF) Farmington, NM</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KOBIDT1.us" site_id="nbc-kobi-medford-or-hd/10330">NBC (KOBI) Medford, OR HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KOBIDT1.us" site_id="nbc-kobi-medford-or/5112">NBC (KOBI) Medford, OR</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KOBRDT1.us" site_id="nbc-kobr-albuquerque-nm-hd/8008">NBC (KOBR) Roswell, NM HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KOBRDT1.us" site_id="nbc-kobr-albuquerque-nm/5111">NBC (KOBR) Roswell, NM</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KOGGDT1.us" site_id="nbc-kogg-wailuku-hi/5113">NBC (KOGG) Wailuku, HI</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KOMUDT1.us" site_id="nbc-komu-columbia-mo-hd/6877">NBC (KOMU) Columbia, MO HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KOMUDT1.us" site_id="nbc-komu-columbia-mo/2721">NBC (KOMU) Columbia, MO</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KOTIDT1.us" site_id="nbc-koti-klamath-falls-or-hd/7965">NBC (KOTI) Klamath Falls, OR HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KOTIDT1.us" site_id="nbc-koti-klamath-falls-or/5115">NBC (KOTI) Klamath Falls, OR</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KPLCDT1.us" site_id="nbc-kplc-lake-charles-la-hd/6878">NBC (KPLC) Lake Charles, LA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KPLCDT1.us" site_id="nbc-kplc-lake-charles-la/2321">NBC (KPLC) Lake Charles, LA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KPNXDT1.us" site_id="nbc-kpnx-phoenix-az-hd/6318">NBC (KPNX) Phoenix, AZ HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KPRCDT1.us" site_id="nbc-kprc-houston-tx-hd/7902">NBC (KPRC) Houston, TX HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KPRCDT1.us" site_id="nbc-kprc-houston-tx/2400">NBC (KPRC) Houston, TX</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KPSNLD1.us" site_id="nbc-kpsn-ld-payson-az/26700">NBC (KPSN-LD) Payson, AZ</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KPVIDT1.us" site_id="nbc-kpvi-pocatello-id-hd/7555">NBC (KPVI) Pocatello, ID HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KPVIDT1.us" site_id="nbc-kpvi-pocatello-id/1972">NBC (KPVI) Pocatello, ID</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KQCDDT1.us" site_id="nbc-kqcd-dickinson-nd-hd/8046">NBC (KQCD) Dickinson, ND HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KQCDDT1.us" site_id="nbc-kqcd-dickinson-nd/1668">NBC (KQCD) Dickinson, ND</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KRBCDT1.us" site_id="nbc-krbc-abilene-tx-hd/17135">NBC (KRBC) Abilene, TX HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KRBCDT1.us" site_id="nbc-krbc-abilene-tx/2355">NBC (KRBC) Abilene, TX</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KRIIDT1.us" site_id="nbc-krii-chisholm-mn/5116">NBC (KRII) Chisholm, MN</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KRISDT1.us" site_id="nbc-kris-corpus-christi-tx-hd/4750">NBC (KRIS) Corpus Christi, TX HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KRISDT1.us" site_id="nbc-kris-corpus-christi-tx/3092">NBC (KRIS) Corpus Christi, TX</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KRNVDT1.us" site_id="nbc-krnv-reno-nv-hd/6230">NBC (KRNV) Reno, NV HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KSANDT1.us" site_id="nbc-ksan-san-angelo-tx-hd/17156">NBC (KSAN) San Angelo, TX HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KSANDT1.us" site_id="nbc-ksan-san-angelo-tx/5117">NBC (KSAN) San Angelo, TX</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KSBWDT1.us" site_id="nbc-ksbw-monterey-ca-hd/13483">NBC (KSBW) Monterey, CA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KSBWDT1.us" site_id="nbc-ksbw-monterey-ca/5118">NBC (KSBW) Monterey, CA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KSBYDT1.us" site_id="nbc-ksby-santa-barbara-ca-hd/8097">NBC (KSBY) Santa Barbara, CA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KSBYDT1.us" site_id="nbc-ksby-santa-barbara-ca/2309">NBC (KSBY) Santa Barbara, CA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KSCTLP1.us" site_id="nbc-ksct-sitka-ak/5119">NBC (KSCT) Sitka, AK</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KSDKDT1.us" site_id="nbc-ksdk-st-louis-mo-hd/6623">NBC (KSDK) St. Louis, MO HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KSDKDT1.us" site_id="nbc-ksdk-st-louis-mo/2949">NBC (KSDK) St. Louis, MO</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KSEEDT1.us" site_id="nbc-ksee-dt1-fresno-ca-hd/6624">NBC (KSEE-DT1) Fresno, CA HD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ksee-dt2-fresno-ca-sd/2684">Bounce (KSEE2) Fresno, CA SD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kshb-kansas-city-mo-hd/6625">NBC (KSHB) Kansas City, MO HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kshb-kansas-city-mo/2433">NBC (KSHB) Kansas City, MO</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ksl-salt-lake-city-ut-hd/4462">NBC (KSL) Salt Lake City, UT HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ksl-salt-lake-city-ut/3717">NBC (KSL) Salt Lake City, UT</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ksnb-hastings-ne-hd/6269">NBC (KSNB) Hastings, NE HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ksnb-hastings-ne/1593">NBC (KSNB) Hastings, NE</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ksnc-great-bend-ks-hd/8164">NBC (KSNC) Great Bend, KS HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ksnc-great-bend-ks/1588">NBC (KSNC) Great Bend, KS</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ksnf-joplin-mo-hd/6626">NBC (KSNF) Joplin, MO HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ksnf-joplin-mo/2327">NBC (KSNF) Joplin, MO</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ksng-garden-city-ks-hd/17273">NBC (KSNG) Garden City, KS HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ksng-garden-city-ks/1589">NBC (KSNG) Garden City, KS</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ksnk-mccook-ne/1590">NBC (KSNK) McCook, NE</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ksnl-salina-ks-hd/8168">NBC (KSNL) Salina, KS HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ksnl-salina-ks/8167">NBC (KSNL) Salina, KS</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ksnt-topeka-ks-hd/6627">NBC (KSNT) Topeka, KS HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ksnt-topeka-ks/2428">NBC (KSNT) Topeka, KS</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ksnv-las-vegas-nv-hd/17245">NBC (KSNV) Las Vegas, NV HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ksnv-las-vegas-nv/14399">NBC (KSNV) Las Vegas, NV</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ksnw-wichita-ks-hd/8134">NBC (KSNW) Wichita, KS HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ksnw-wichita-ks/1542">NBC (KSNW) Wichita, KS</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kstf-dt2-casper-wy/18441">NBC (KSTF-DT2) Casper, WY</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ksts-dt3-san-francisco-ca/18438">NBC (KSTS-DT3) San Francisco, CA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ktal-shreveport-la-hd/6628">NBC (KTAL) Shreveport, LA HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ktal-shreveport-la/2298">NBC (KTAL) Shreveport, LA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ktcw-roseburg-or/5106">NBC (KTCW) Roseburg, OR</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kten-ada-ok-hd/8044">NBC (KTEN) Ada, OK HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kten-ada-ok/1998">NBC (KTEN) Ada, Ok</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ktft-twin-falls-id-hd/10136">NBC (KTFT) Twin Falls, ID HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ktft-twin-falls-id/3177">NBC (KTFT-LD7) Twin Falls, ID</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ktiv-sioux-city-ia-hd/4636">NBC (KTIV) Sioux City, IA HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ktiv-sioux-city-ia/1738">NBC (KTIV) Sioux City, IA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ktsm-el-paso-tx-hd/13534">NBC (KTSM) El Paso, TX HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ktsm-el-paso-tx/3108">NBC (KTSM) El Paso, TX</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kttc-rochester-mn-hd/7870">NBC (KTTC) Rochester, MN HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kttc-rochester-mn/1541">NBC (KTTC) Rochester, MN</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ktuu-anchorage-ak-hd/9443">NBC (KTUU) Anchorage, AK HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ktuu-anchorage-ak/5120">NBC (KTUU) Anchorage, AK</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ktvb-boise-id-hd/10384">NBC (KTVB) Boise, ID HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ktvb-boise-id/3398">NBC (KTVB) Boise, ID</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ktve-monroe-la-hd/7900">NBC (KTVE) Monroe, LA HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ktve-monroe-la/2292">NBC (KTVE) Monroe, LA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ktvh-helena-mt-hd/9199">NBC (KTVH) Helena, MT HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ktvh-helena-mt/2197">NBC (KTVH) Helena, MT</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ktvm-butte-mt-hd/8925">NBC (KTVM) Butte, MT HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ktvm-butte-mt/5054">NBC (KTVM) Butte, MT</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ktvz-bend-or-hd/8222">NBC (KTVZ) Bend, OR HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-ktvz-bend-or/5122">NBC (KTVZ) Bend, OR</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kuam-hagatna-guam/5123">NBC (KUAM) Hagatna, Guam</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kulr-billings-mt-hd/7548">NBC (KULR) Billings, MT HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kulr-billings-mt/4317">NBC (KULR) Billings, MT</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kumv-williston-nd-hd/8554">NBC (KUMV) Williston, ND HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kumv-williston-nd/5098">NBC (KUMV) Williston, ND</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kusa-denver-co-hd/8024">NBC (KUSA) Denver, CO HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kusa-denver-co/1569">NBC (KUSA) Denver, CO</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kveo-brownsville-tx-hd/4686">NBC (KVEO) Brownsville, TX HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kveo-brownsville-tx/3141">NBC (KVEO) Brownsville, TX</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kvly-fargo-nd-hd/7517">NBC (KVLY) Fargo, ND HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kvly-fargo-nd/1582">NBC (KVLY) Fargo, ND</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kvoa-tucson-az-hd/7633">NBC (KVOA) Tucson, AZ HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kvoa-tucson-az/2242">NBC (KVOA) Tucson, AZ</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kwab-newswest-9-big-spring-tx/5139">NBC (KWAB)</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kwes-midland-tx-hd/6161">NBC (KWES) Midland, TX HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kwes-newswest-9-midland-tx/2370">NBC (KWES)</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kwqc-quad-cities-ia-hd/4487">NBC (KWQC) Quad Cities, IA HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kwqc-quad-cities-ia/4486">NBC (KWQC) Quad Cities, IA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kwwl-waterloo-ia-hd/8225">NBC (KWWL) Waterloo, IA HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kwwl-waterloo-ia/3841">NBC (KWWL) Waterloo, IA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kwym-lp-laramie-wy/26758">NBC (KWYM-LP) Laramie, WY</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kxan-austin-tx-hd/7913">NBC (KXAN) Austin, TX HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kxan-austin-tx/2471">NBC (KXAN) Austin, TX</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kxas-fort-worth-tx-hd/5415">NBC (KXAS) Fort Worth, TX HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kxas-fort-worth-tx/1656">NBC (KXAS) Fort Worth, TX</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kxgn-dt2-glendive-mt/13189">NBC (KXGN-TV2) Glendive, MT</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kxgn-dt2-hd-glendive-mt/19261">NBC (KXGN-DT2) HD Glendive, MT</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kyma-yuma-az/1812">NBC (KYMA2) Yuma, AZ</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kytv-springfield-mo-hd/8083">NBC (KYTV) Springfield, MO HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kytv-springfield-mo/1446">NBC (KYTV) Springfield, MO</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-kyus-miles-city-mt/5143">NBC (KYUS) Miles City, MT</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KSHBDT1.us" site_id="nbc-kshb-kansas-city-mo-hd/6625">NBC (KSHB) Kansas City, MO HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KSHBDT1.us" site_id="nbc-kshb-kansas-city-mo/2433">NBC (KSHB) Kansas City, MO</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KSLDT1.us" site_id="nbc-ksl-salt-lake-city-ut-hd/4462">NBC (KSL) Salt Lake City, UT HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KSLDT1.us" site_id="nbc-ksl-salt-lake-city-ut/3717">NBC (KSL) Salt Lake City, UT</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KSNBDT1.us" site_id="nbc-ksnb-hastings-ne-hd/6269">NBC (KSNB) Hastings, NE HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KSNBDT1.us" site_id="nbc-ksnb-hastings-ne/1593">NBC (KSNB) Hastings, NE</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KSNCDT1.us" site_id="nbc-ksnc-great-bend-ks-hd/8164">NBC (KSNC) Great Bend, KS HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KSNCDT1.us" site_id="nbc-ksnc-great-bend-ks/1588">NBC (KSNC) Great Bend, KS</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KSNFDT1.us" site_id="nbc-ksnf-joplin-mo-hd/6626">NBC (KSNF) Joplin, MO HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KSNFDT1.us" site_id="nbc-ksnf-joplin-mo/2327">NBC (KSNF) Joplin, MO</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KSNGDT1.us" site_id="nbc-ksng-garden-city-ks-hd/17273">NBC (KSNG) Garden City, KS HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KSNGDT1.us" site_id="nbc-ksng-garden-city-ks/1589">NBC (KSNG) Garden City, KS</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KSNKDT1.us" site_id="nbc-ksnk-mccook-ne/1590">NBC (KSNK) McCook, NE</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KSNLLD1.us" site_id="nbc-ksnl-salina-ks-hd/8168">NBC (KSNL) Salina, KS HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KSNLLD1.us" site_id="nbc-ksnl-salina-ks/8167">NBC (KSNL) Salina, KS</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KSNTDT1.us" site_id="nbc-ksnt-topeka-ks-hd/6627">NBC (KSNT) Topeka, KS HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KSNTDT1.us" site_id="nbc-ksnt-topeka-ks/2428">NBC (KSNT) Topeka, KS</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KSNVDT1.us" site_id="nbc-ksnv-las-vegas-nv-hd/17245">NBC (KSNV) Las Vegas, NV HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KSNVDT1.us" site_id="nbc-ksnv-las-vegas-nv/14399">NBC (KSNV) Las Vegas, NV</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KSNWDT1.us" site_id="nbc-ksnw-wichita-ks-hd/8134">NBC (KSNW) Wichita, KS HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KSNWDT1.us" site_id="nbc-ksnw-wichita-ks/1542">NBC (KSNW) Wichita, KS</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KSTFDT2.us" site_id="nbc-kstf-dt2-casper-wy/18441">NBC (KSTF-DT2) Casper, WY</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KSTSDT3.us" site_id="nbc-ksts-dt3-san-francisco-ca/18438">NBC (KSTS-DT3) San Francisco, CA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KTALDT1.us" site_id="nbc-ktal-shreveport-la-hd/6628">NBC (KTAL) Shreveport, LA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KTALDT1.us" site_id="nbc-ktal-shreveport-la/2298">NBC (KTAL) Shreveport, LA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KTCWDT1.us" site_id="nbc-ktcw-roseburg-or/5106">NBC (KTCW) Roseburg, OR</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KTENDT1.us" site_id="nbc-kten-ada-ok-hd/8044">NBC (KTEN) Ada, OK HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KTENDT1.us" site_id="nbc-kten-ada-ok/1998">NBC (KTEN) Ada, Ok</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KTFTLD7.us" site_id="nbc-ktft-twin-falls-id-hd/10136">NBC (KTFT) Twin Falls, ID HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KTFTLD7.us" site_id="nbc-ktft-twin-falls-id/3177">NBC (KTFT-LD7) Twin Falls, ID</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KTIVDT1.us" site_id="nbc-ktiv-sioux-city-ia-hd/4636">NBC (KTIV) Sioux City, IA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KTIVDT1.us" site_id="nbc-ktiv-sioux-city-ia/1738">NBC (KTIV) Sioux City, IA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KTSMDT1.us" site_id="nbc-ktsm-el-paso-tx-hd/13534">NBC (KTSM) El Paso, TX HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KTSMDT1.us" site_id="nbc-ktsm-el-paso-tx/3108">NBC (KTSM) El Paso, TX</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KTTCDT1.us" site_id="nbc-kttc-rochester-mn-hd/7870">NBC (KTTC) Rochester, MN HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KTTCDT1.us" site_id="nbc-kttc-rochester-mn/1541">NBC (KTTC) Rochester, MN</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KTUUDT1.us" site_id="nbc-ktuu-anchorage-ak-hd/9443">NBC (KTUU) Anchorage, AK HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KTUUDT1.us" site_id="nbc-ktuu-anchorage-ak/5120">NBC (KTUU) Anchorage, AK</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KTVBDT1.us" site_id="nbc-ktvb-boise-id-hd/10384">NBC (KTVB) Boise, ID HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KTVBDT1.us" site_id="nbc-ktvb-boise-id/3398">NBC (KTVB) Boise, ID</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KTVEDT1.us" site_id="nbc-ktve-monroe-la-hd/7900">NBC (KTVE) Monroe, LA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KTVEDT1.us" site_id="nbc-ktve-monroe-la/2292">NBC (KTVE) Monroe, LA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KTVHDT1.us" site_id="nbc-ktvh-helena-mt-hd/9199">NBC (KTVH) Helena, MT HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KTVHDT1.us" site_id="nbc-ktvh-helena-mt/2197">NBC (KTVH) Helena, MT</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KTVMDT1.us" site_id="nbc-ktvm-butte-mt-hd/8925">NBC (KTVM) Butte, MT HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KTVMDT1.us" site_id="nbc-ktvm-butte-mt/5054">NBC (KTVM) Butte, MT</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KTVZDT1.us" site_id="nbc-ktvz-bend-or-hd/8222">NBC (KTVZ) Bend, OR HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KTVZDT1.us" site_id="nbc-ktvz-bend-or/5122">NBC (KTVZ) Bend, OR</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KUAMDT1.gu" site_id="nbc-kuam-hagatna-guam/5123">NBC (KUAM) Hagatna, Guam</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KULRDT1.us" site_id="nbc-kulr-billings-mt-hd/7548">NBC (KULR) Billings, MT HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KULRDT1.us" site_id="nbc-kulr-billings-mt/4317">NBC (KULR) Billings, MT</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KUMVDT1.us" site_id="nbc-kumv-williston-nd-hd/8554">NBC (KUMV) Williston, ND HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KUMVDT1.us" site_id="nbc-kumv-williston-nd/5098">NBC (KUMV) Williston, ND</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KUSADT1.us" site_id="nbc-kusa-denver-co-hd/8024">NBC (KUSA) Denver, CO HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KUSADT1.us" site_id="nbc-kusa-denver-co/1569">NBC (KUSA) Denver, CO</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KVEODT1.us" site_id="nbc-kveo-brownsville-tx-hd/4686">NBC (KVEO) Brownsville, TX HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KVEODT1.us" site_id="nbc-kveo-brownsville-tx/3141">NBC (KVEO) Brownsville, TX</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KVLYDT1.us" site_id="nbc-kvly-fargo-nd-hd/7517">NBC (KVLY) Fargo, ND HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KVLYDT1.us" site_id="nbc-kvly-fargo-nd/1582">NBC (KVLY) Fargo, ND</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KVOADT1.us" site_id="nbc-kvoa-tucson-az-hd/7633">NBC (KVOA) Tucson, AZ HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KVOADT1.us" site_id="nbc-kvoa-tucson-az/2242">NBC (KVOA) Tucson, AZ</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KWABDT1.us" site_id="nbc-kwab-newswest-9-big-spring-tx/5139">NBC (KWAB)</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KWESDT1.us" site_id="nbc-kwes-midland-tx-hd/6161">NBC (KWES) Midland, TX HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KWESDT1.us" site_id="nbc-kwes-newswest-9-midland-tx/2370">NBC (KWES)</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KWQCDT1.us" site_id="nbc-kwqc-quad-cities-ia-hd/4487">NBC (KWQC) Quad Cities, IA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KWQCDT1.us" site_id="nbc-kwqc-quad-cities-ia/4486">NBC (KWQC) Quad Cities, IA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KWWLDT1.us" site_id="nbc-kwwl-waterloo-ia-hd/8225">NBC (KWWL) Waterloo, IA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KWWLDT1.us" site_id="nbc-kwwl-waterloo-ia/3841">NBC (KWWL) Waterloo, IA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KWYMLP1.us" site_id="nbc-kwym-lp-laramie-wy/26758">NBC (KWYM-LP) Laramie, WY</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KXANDT1.us" site_id="nbc-kxan-austin-tx-hd/7913">NBC (KXAN) Austin, TX HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KXANDT1.us" site_id="nbc-kxan-austin-tx/2471">NBC (KXAN) Austin, TX</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KXASDT1.us" site_id="nbc-kxas-fort-worth-tx-hd/5415">NBC (KXAS) Fort Worth, TX HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KXASDT1.us" site_id="nbc-kxas-fort-worth-tx/1656">NBC (KXAS) Fort Worth, TX</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KXGNDT2.us" site_id="nbc-kxgn-dt2-glendive-mt/13189">NBC (KXGN-TV2) Glendive, MT</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KXGNDT2.us" site_id="nbc-kxgn-dt2-hd-glendive-mt/19261">NBC (KXGN-DT2) HD Glendive, MT</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KYMADT2.us" site_id="nbc-kyma-yuma-az/1812">NBC (KYMA2) Yuma, AZ</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KYTVDT1.us" site_id="nbc-kytv-springfield-mo-hd/8083">NBC (KYTV) Springfield, MO HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KYTVDT1.us" site_id="nbc-kytv-springfield-mo/1446">NBC (KYTV) Springfield, MO</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KYUSDT1.us" site_id="nbc-kyus-miles-city-mt/5143">NBC (KYUS) Miles City, MT</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-sports-network-hd/4710">NBC Sports Network HD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-sports-network/1386">NBC Sports Network</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-universo--eastern-feed/1797">NBC Universo - Eastern feed</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-universo-hd--eastern/16418">NBC Universo HD - Eastern</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="NBCUniversoEast.us" site_id="nbc-universo--eastern-feed/1797">NBC Universo - Eastern feed</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="NBCUniversoEast.us" site_id="nbc-universo-hd--eastern/16418">NBC Universo HD - Eastern</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-vsb-hamilton-bermuda/5137">NBC (VSB) Hamilton, Bermuda</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-w10ak-spruce-pine-sc/20214">NBC (W10AK) Spruce Pine, SC</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-waff-hunstville-al-hd/6724">NBC (WAFF) Hunstville, AL HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-waff-hunstville-al/3216">NBC (WAFF) Hunstville, AL</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wagt-augusta-ga-hd/6683">NBC (WAGT) Augusta, GA HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wagt-augusta-ga/1099">NBC (WAGT) Augusta, GA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wagt-cd-augusta-ga/28140">NBC (WAGT-CD) Augusta, GA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-walb-albany-ga-hd/6364">NBC (WALB) Albany, GA HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-walb-albany-ga/1345">NBC (WALB) Albany, GA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wand-decatur-il-hd/4585">NBC (WAND) Decatur, IL HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wand-decatur-il/3801">NBC (WAND) Decatur, IL</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wave-louisville-ky-hd/6725">NBC (WAVE) Louisville, KY HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wave-louisville-ky/1419">NBC (WAVE) Louisville, KY</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wavy-hampton-roads-va-hd/6365">NBC (WAVY) Hampton Roads, VA HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wavy-hampton-roads-va/2388">NBC (WAVY) Hampton Roads, VA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wbal-baltimore-md-hd/6366">NBC (WBAL) Baltimore, MD HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wbbh-fort-myers-fl-hd/4807">NBC (WBBH) Fort Myers, FL HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wbbh-fort-myers-fl/2638">NBC (WBBH) Fort Myers, FL</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wbgh-binghampton-ny-hd/4743">NBC (WBGH) Binghamton, NY HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wbgh-binghampton-ny/2924">NBC (WBGH) Binghamton, NY</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wbir-knoxville-tn-hd/6367">NBC (WBIR) Knoxville, TN HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wbir-knoxville-tn/1672">NBC (WBIR) Knoxville, TN</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wboy-clarksburg-wv-hd/6368">NBC (WBOY) Clarksburg, WV HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wboy-clarksburg-wv/1396">NBC (WBOY) Clarksburg, WV</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wbre-wilkes-barre-pa-hd/6369">NBC (WBRE) Wilkes-Barre, PA HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wbre-wilkes-barre-pa/1642">NBC (WBRE) Wilkes-Barre, PA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WAFFDT1.us" site_id="nbc-waff-hunstville-al-hd/6724">NBC (WAFF) Hunstville, AL HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WAFFDT1.us" site_id="nbc-waff-hunstville-al/3216">NBC (WAFF) Hunstville, AL</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WAGTCD1.us" site_id="nbc-wagt-augusta-ga-hd/6683">NBC (WAGT) Augusta, GA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WAGTCD1.us" site_id="nbc-wagt-augusta-ga/1099">NBC (WAGT) Augusta, GA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WAGTCD1.us" site_id="nbc-wagt-cd-augusta-ga/28140">NBC (WAGT-CD) Augusta, GA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WALBDT1.us" site_id="nbc-walb-albany-ga-hd/6364">NBC (WALB) Albany, GA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WALBDT1.us" site_id="nbc-walb-albany-ga/1345">NBC (WALB) Albany, GA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WANDDT1.us" site_id="nbc-wand-decatur-il-hd/4585">NBC (WAND) Decatur, IL HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WANDDT1.us" site_id="nbc-wand-decatur-il/3801">NBC (WAND) Decatur, IL</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WAVEDT1.us" site_id="nbc-wave-louisville-ky-hd/6725">NBC (WAVE) Louisville, KY HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WAVEDT1.us" site_id="nbc-wave-louisville-ky/1419">NBC (WAVE) Louisville, KY</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WAVYDT1.us" site_id="nbc-wavy-hampton-roads-va-hd/6365">NBC (WAVY) Hampton Roads, VA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WAVYDT1.us" site_id="nbc-wavy-hampton-roads-va/2388">NBC (WAVY) Hampton Roads, VA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WBALDT1.us" site_id="nbc-wbal-baltimore-md-hd/6366">NBC (WBAL) Baltimore, MD HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WBBHDT1.us" site_id="nbc-wbbh-fort-myers-fl-hd/4807">NBC (WBBH) Fort Myers, FL HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WBBHDT1.us" site_id="nbc-wbbh-fort-myers-fl/2638">NBC (WBBH) Fort Myers, FL</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WBGHCD1.us" site_id="nbc-wbgh-binghampton-ny-hd/4743">NBC (WBGH) Binghamton, NY HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WBGHCD1.us" site_id="nbc-wbgh-binghampton-ny/2924">NBC (WBGH) Binghamton, NY</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WBIRDT1.us" site_id="nbc-wbir-knoxville-tn-hd/6367">NBC (WBIR) Knoxville, TN HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WBIRDT1.us" site_id="nbc-wbir-knoxville-tn/1672">NBC (WBIR) Knoxville, TN</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WBOYDT1.us" site_id="nbc-wboy-clarksburg-wv-hd/6368">NBC (WBOY) Clarksburg, WV HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WBOYDT1.us" site_id="nbc-wboy-clarksburg-wv/1396">NBC (WBOY) Clarksburg, WV</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WBREDT1.us" site_id="nbc-wbre-wilkes-barre-pa-hd/6369">NBC (WBRE) Wilkes-Barre, PA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WBREDT1.us" site_id="nbc-wbre-wilkes-barre-pa/1642">NBC (WBRE) Wilkes-Barre, PA</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wbsf-dt2-flint-mi/18181">NBC (WBSF2) Flint, MI</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wbtd-ld-suffolk-va/26856">NBC (WBTD-LD) Suffolk, VA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wbts-ld-boston-ma-hd/30964">NBC (WBTS-CD) Nashua, NH HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wbts-ld-boston-ma/30951">NBC (WBTS-CD) Nashua, NH</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WBTSCD1.us" site_id="nbc-wbts-ld-boston-ma-hd/30964">NBC (WBTS-CD) Nashua, NH HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WBTSCD1.us" site_id="nbc-wbts-ld-boston-ma/30951">NBC (WBTS-CD) Nashua, NH</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="WCAUDT1.us" site_id="nbc-wcau-philadelphia-pa-hd/6370">NBC (WCAU) Philadelphia, PA HD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="WCAUDT1.us" site_id="nbc-wcau-philadelphia-pa/1639">NBC (WCAU) Philadelphia, PA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wcbd-charleston-sc-hd/6690">NBC (WCBD) Charleston, SC HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wcbd-charleston-sc/3066">NBC (WCBD) Charleston, SC</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wcmh-columbus-oh-hd/3685">NBC (WCMH) Columbus, OH HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wcmh-columbus-oh/2991">NBC (WCMH) Columbus, OH</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wcnc-charlotte-nc-hd/5257">NBC (WCNC) Charlotte, NC HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wcnc-charlotte-nc/1819">NBC (WCNC) Charlotte, NC</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wcsh-portland-me-hd/4760">NBC (WCSH) Portland, ME HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wctx-cd-virginia-beach-va/25596">NBC (WCTX-CD) Virginia Beach, VA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wcyb-bristol-va-hd/6894">NBC (WCYB) Bristol, VA HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wcyb-bristol-va/3699">NBC (WCYB) Bristol, VA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wdam-laurel-ms-hd/6895">NBC (WDAM) Laurel, MS HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wdam-laurel-ms/4305">NBC (WDAM) Laurel, MS</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wdiv-detroit-mi-dv/3946">NBC (WDIV) Detroit, MI DV</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wdiv-detroit-mi-hd/2816">NBC (WDIV) Detroit, MI HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wdsu-new-orleans-la-hd/6896">NBC (WDSU) New Orleans, LA HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wdsu-new-orleans-la/1744">NBC (WDSU) New Orleans, LA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wdtn-dayton-oh-hd/7415">NBC (WDTN) Dayton, OH HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wdtn-dayton-oh/2986">NBC (WDTN) Dayton, OH</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-weau-eau-claire-wi-hd/8248">NBC (WEAU) Eau Claire, WI HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-weau-eau-claire-wi/1617">NBC (WEAU) Eau Claire, WI</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wect-wilmington-nc-hd/4800">NBC (WECT) Wilmington, NC HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wect-wilmington-nc/2941">NBC (WECT) Wilmington, NC</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-week-bloomington-il-hd/4602">NBC (WEEK) Bloomington, IL HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-week-bloomington-il/4601">NBC (WEEK) Bloomington, IL</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wesh-winter-park-fl-hd/7022">NBC (WESH) Daytona Beach, FL HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wesh-winter-park-fl/2490">NBC (WESH) Daytona Beach, FL</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wetm-elmira-ny-hd/7021">NBC (WETM) Elmira, NY HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wetm-elmira-ny/2922">NBC (WETM) Elmira, NY</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-weyi-flint-mi-hd/7020">NBC (WEYI) Flint, MI HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wfie-evansville-in-hd/7019">NBC (WFIE) Evansville, IN HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wfie-evansville-in/1808">NBC (WFIE) Evansville, IN</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wfla-tampa-bay-fl-hd/6699">NBC (WFLA) Tampa Bay, FL HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wfla-tampa-bay-fl/2547">NBC (WFLA) Tampa Bay, FL</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wfmj-youngstown-oh-hd/6700">NBC (WFMJ) Youngstown, OH HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wfmj-youngstown-oh/3019">NBC (WFMJ) Youngstown, OH</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wfxq-springfield-ma/11881">NBC (WFXQ) Springfield, MA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wgal-lancaster-pa-hd/6701">NBC (WGAL) Lancaster, PA HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wgal-lancaster-pa/3235">NBC (WGAL) Lancaster, PA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wgba-green-bay-wi-hd/4899">NBC (WGBA) Green Bay, WI HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wgba-green-bay-wi/3158">NBC (WGBA) Green Bay, WI</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wgbc-dt2-meridian-ms-hd/6702">NBC (WGBC-DT2) Meridian, MS HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wgbc-dt2-meridian-ms/2134">NBC (WGBC-DT2) Meridian, MS</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wgem-quincy-il-hd/8015">NBC (WGEM) Quincy, IL HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wgem-quincy-il/5135">NBC (WGEM) Quincy, IL</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wgrz-buffalo-ny-hd/3582">NBC (WGRZ) Buffalo, NY HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wgtq-dt2-traverse-city-mi/17951">NBC (WGTQ-DT2) Traverse City, MI</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wgtu-dt2-traverse-city-mi/17954">NBC (WGTU2) Traverse City, MI</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-whec-rochester-ny-hd/13762">NBC (WHEC) Rochester, NY HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-whiz-zanesville-oh-hd/7416">NBC (WHIZ) Zanesville, OH HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-whiz-zanesville-oh/3003">NBC (WHIZ) Zanesville, OH</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-who-des-moines-ia-hd/6388">NBC (WHO) Des Moines, IA HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-who-des-moines-ia/2670">NBC (WHO) Des Moines, IA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wicu-erie-pa-hd/6390">NBC (WICU) Erie, PA HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wilx-lansing-mi-hd/7162">NBC (WILX) Lansing, MI HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wilx-lansing-mi/5134">NBC (WILX) Lansing, MI</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wis-columbia-sc-hd/4763">NBC (WIS) Columbia, SC HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wis-columbia-sc/1903">NBC (WIS) Columbia, SC</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-witd-cd-chesapeake-va/29463">NBC (WITD-CD) Chesapeake, VA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-witn-greenville-nc-hd/6393">NBC (WITN) Greenville, NC HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-witn-greenville-nc/1283">NBC (WITN) Greenville, NC</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wivt-dt2-binghampton-ny/17722">NBC (WIVT-DT2) Binghampton, NY</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wjac-johnstown-pa-hd/6394">NBC (WJAC) Johnstown, PA HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wjar-cranston-ri-hd/6396">NBC (WJAR) Cranston, RI HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wjfw-wausau-wi-hd/6398">NBC (WJFW) Wausau, WI HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wjfw-wausau-wi/5133">NBC (WJFW) Wausau, WI</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wjhg-panama-city-beach-fl-hd/6714">NBC (WJHG) Panama City Beach, FL HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wjhg-panama-city-beach-fl/2434">NBC (WJHG) Panama City Beach, FL</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wkaq-dt3-san-juan-pr/17692">NBC (WKAQ-DT3) San Juan, PR</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wktd-portsmouth-va/19455">NBC (WKTD) Portsmouth, VA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wktv-utica-ny-hd/7160">NBC (WKTV) Utica, NY HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wktv-utica-ny/2839">NBC (WKTV) Utica, NY</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wkyc-cleveland-oh-hd/3676">NBC (WKYC) Cleveland, OH HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wkyc-cleveland-oh/216">NBC (WKYC) Cleveland, OH</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wlbt-jackson-ms-hd/7161">NBC (WLBT) Jackson, MS HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wlbt-jackson-ms/1334">NBC (WLBT) Jackson, MS</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wlbz-bangor-me-hd/3641">NBC (WLBZ) Bangor, ME HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wlex-lexington-ky-hd/6242">NBC (WLEX) Lexington, KY HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wlex-lexington-ky/2008">NBC (WLEX) Lexington, KY</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wlio-lima-oh-hd/7408">NBC (WLIO) Lima, OH HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wlio-lima-oh/3002">NBC (WLIO) Lima, OH</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wltz-columbus-ga-hd/6491">NBC (WLTZ) Columbus, GA HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wltz-columbus-ga/2537">NBC (WLTZ) Columbus, GA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wluc-upper-michigan-mi-hd/19898">NBC (WLUC) Upper Michigan, MI HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wlwk-cd-sturgeon-bay-wi/29625">NBC (WLWK-CD) Sturgeon Bay, WI</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wlwt-cincinnati-oh-hd/3672">NBC (WLWT) Cincinnati, OH HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wlwt-cincinnati-oh/1362">NBC (WLWT) Cincinnati, OH</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wmaq-chicago-il-hd/6492">NBC (WMAQ) Chicago, IL HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wmbf-myrtle-beach-sc-hd/6493">NBC (WMBF) Myrtle Beach, SC HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wmbf-myrtle-beach-sc/5868">NBC (WMBF) Myrtle Beach, SC</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wmc-memphis-tn-hd/7871">NBC (WMC) Memphis, TN HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wmgt-macon-ga-hd/6494">NBC (WMGT) Macon, GA HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wmgt-macon-ga/2445">NBC (WMGT) Macon, GA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wmtv-madison-wi-hd/9104">NBC (WMTV) Madison, WI HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wmtv-madison-wi/5131">NBC (WMTV) Madison, WI</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WCBDDT1.us" site_id="nbc-wcbd-charleston-sc-hd/6690">NBC (WCBD) Charleston, SC HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WCBDDT1.us" site_id="nbc-wcbd-charleston-sc/3066">NBC (WCBD) Charleston, SC</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WCMHDT1.us" site_id="nbc-wcmh-columbus-oh-hd/3685">NBC (WCMH) Columbus, OH HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WCMHDT1.us" site_id="nbc-wcmh-columbus-oh/2991">NBC (WCMH) Columbus, OH</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WCNCDT1.us" site_id="nbc-wcnc-charlotte-nc-hd/5257">NBC (WCNC) Charlotte, NC HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WCNCDT1.us" site_id="nbc-wcnc-charlotte-nc/1819">NBC (WCNC) Charlotte, NC</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WCSHDT1.us" site_id="nbc-wcsh-portland-me-hd/4760">NBC (WCSH) Portland, ME HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WCTXCD1.us" site_id="nbc-wctx-cd-virginia-beach-va/25596">NBC (WCTX-CD) Virginia Beach, VA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WCYBDT1.us" site_id="nbc-wcyb-bristol-va-hd/6894">NBC (WCYB) Bristol, VA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WCYBDT1.us" site_id="nbc-wcyb-bristol-va/3699">NBC (WCYB) Bristol, VA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WDAMDT1.us" site_id="nbc-wdam-laurel-ms-hd/6895">NBC (WDAM) Laurel, MS HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WDAMDT1.us" site_id="nbc-wdam-laurel-ms/4305">NBC (WDAM) Laurel, MS</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WDIVDT1.us" site_id="nbc-wdiv-detroit-mi-dv/3946">NBC (WDIV) Detroit, MI DV</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WDIVDT1.us" site_id="nbc-wdiv-detroit-mi-hd/2816">NBC (WDIV) Detroit, MI HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WDSUDT1.us" site_id="nbc-wdsu-new-orleans-la-hd/6896">NBC (WDSU) New Orleans, LA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WDSUDT1.us" site_id="nbc-wdsu-new-orleans-la/1744">NBC (WDSU) New Orleans, LA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WDTNDT1.us" site_id="nbc-wdtn-dayton-oh-hd/7415">NBC (WDTN) Dayton, OH HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WDTNDT1.us" site_id="nbc-wdtn-dayton-oh/2986">NBC (WDTN) Dayton, OH</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WEAUDT1.us" site_id="nbc-weau-eau-claire-wi-hd/8248">NBC (WEAU) Eau Claire, WI HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WEAUDT1.us" site_id="nbc-weau-eau-claire-wi/1617">NBC (WEAU) Eau Claire, WI</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WECTDT1.us" site_id="nbc-wect-wilmington-nc-hd/4800">NBC (WECT) Wilmington, NC HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WECTDT1.us" site_id="nbc-wect-wilmington-nc/2941">NBC (WECT) Wilmington, NC</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WEEKDT1.us" site_id="nbc-week-bloomington-il-hd/4602">NBC (WEEK) Bloomington, IL HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WEEKDT1.us" site_id="nbc-week-bloomington-il/4601">NBC (WEEK) Bloomington, IL</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WESHDT1.us" site_id="nbc-wesh-winter-park-fl-hd/7022">NBC (WESH) Daytona Beach, FL HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WESHDT1.us" site_id="nbc-wesh-winter-park-fl/2490">NBC (WESH) Daytona Beach, FL</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WETMDT1.us" site_id="nbc-wetm-elmira-ny-hd/7021">NBC (WETM) Elmira, NY HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WETMDT1.us" site_id="nbc-wetm-elmira-ny/2922">NBC (WETM) Elmira, NY</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WEYIDT1.us" site_id="nbc-weyi-flint-mi-hd/7020">NBC (WEYI) Flint, MI HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WFIEDT1.us" site_id="nbc-wfie-evansville-in-hd/7019">NBC (WFIE) Evansville, IN HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WFIEDT1.us" site_id="nbc-wfie-evansville-in/1808">NBC (WFIE) Evansville, IN</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WFLADT1.us" site_id="nbc-wfla-tampa-bay-fl-hd/6699">NBC (WFLA) Tampa Bay, FL HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WFLADT1.us" site_id="nbc-wfla-tampa-bay-fl/2547">NBC (WFLA) Tampa Bay, FL</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WFMJDT1.us" site_id="nbc-wfmj-youngstown-oh-hd/6700">NBC (WFMJ) Youngstown, OH HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WFMJDT1.us" site_id="nbc-wfmj-youngstown-oh/3019">NBC (WFMJ) Youngstown, OH</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WFXQCD1.us" site_id="nbc-wfxq-springfield-ma/11881">NBC (WFXQ) Springfield, MA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WGALDT1.us" site_id="nbc-wgal-lancaster-pa-hd/6701">NBC (WGAL) Lancaster, PA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WGALDT1.us" site_id="nbc-wgal-lancaster-pa/3235">NBC (WGAL) Lancaster, PA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WGBADT1.us" site_id="nbc-wgba-green-bay-wi-hd/4899">NBC (WGBA) Green Bay, WI HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WGBADT1.us" site_id="nbc-wgba-green-bay-wi/3158">NBC (WGBA) Green Bay, WI</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WGBCDT2.us" site_id="nbc-wgbc-dt2-meridian-ms-hd/6702">NBC (WGBC-DT2) Meridian, MS HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WGBCDT2.us" site_id="nbc-wgbc-dt2-meridian-ms/2134">NBC (WGBC-DT2) Meridian, MS</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WGEMDT1.us" site_id="nbc-wgem-quincy-il-hd/8015">NBC (WGEM) Quincy, IL HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WGEMDT1.us" site_id="nbc-wgem-quincy-il/5135">NBC (WGEM) Quincy, IL</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WGRZDT1.us" site_id="nbc-wgrz-buffalo-ny-hd/3582">NBC (WGRZ) Buffalo, NY HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WGTQDT2.us" site_id="nbc-wgtq-dt2-traverse-city-mi/17951">NBC (WGTQ-DT2) Traverse City, MI</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WGTUDT2.us" site_id="nbc-wgtu-dt2-traverse-city-mi/17954">NBC (WGTU2) Traverse City, MI</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WHECDT1.us" site_id="nbc-whec-rochester-ny-hd/13762">NBC (WHEC) Rochester, NY HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WHIZDT1.us" site_id="nbc-whiz-zanesville-oh-hd/7416">NBC (WHIZ) Zanesville, OH HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WHIZDT1.us" site_id="nbc-whiz-zanesville-oh/3003">NBC (WHIZ) Zanesville, OH</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WHODT1.us" site_id="nbc-who-des-moines-ia-hd/6388">NBC (WHO) Des Moines, IA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WHODT1.us" site_id="nbc-who-des-moines-ia/2670">NBC (WHO) Des Moines, IA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WICUDT1.us" site_id="nbc-wicu-erie-pa-hd/6390">NBC (WICU) Erie, PA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WILXDT1.us" site_id="nbc-wilx-lansing-mi-hd/7162">NBC (WILX) Lansing, MI HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WILXDT1.us" site_id="nbc-wilx-lansing-mi/5134">NBC (WILX) Lansing, MI</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WISDT1.us" site_id="nbc-wis-columbia-sc-hd/4763">NBC (WIS) Columbia, SC HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WISDT1.us" site_id="nbc-wis-columbia-sc/1903">NBC (WIS) Columbia, SC</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WITDCD1.us" site_id="nbc-witd-cd-chesapeake-va/29463">NBC (WITD-CD) Chesapeake, VA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WITNDT1.us" site_id="nbc-witn-greenville-nc-hd/6393">NBC (WITN) Greenville, NC HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WITNDT1.us" site_id="nbc-witn-greenville-nc/1283">NBC (WITN) Greenville, NC</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WIVTDT2.us" site_id="nbc-wivt-dt2-binghampton-ny/17722">NBC (WIVT-DT2) Binghampton, NY</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WJACDT1.us" site_id="nbc-wjac-johnstown-pa-hd/6394">NBC (WJAC) Johnstown, PA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WJARDT1.us" site_id="nbc-wjar-cranston-ri-hd/6396">NBC (WJAR) Cranston, RI HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WJFWDT1.us" site_id="nbc-wjfw-wausau-wi-hd/6398">NBC (WJFW) Wausau, WI HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WJFWDT1.us" site_id="nbc-wjfw-wausau-wi/5133">NBC (WJFW) Wausau, WI</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WJHGDT1.us" site_id="nbc-wjhg-panama-city-beach-fl-hd/6714">NBC (WJHG) Panama City Beach, FL HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WJHGDT1.us" site_id="nbc-wjhg-panama-city-beach-fl/2434">NBC (WJHG) Panama City Beach, FL</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WKAQDT3.pr" site_id="nbc-wkaq-dt3-san-juan-pr/17692">NBC (WKAQ-DT3) San Juan, PR</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WKTDCD1.us" site_id="nbc-wktd-portsmouth-va/19455">NBC (WKTD) Portsmouth, VA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WKTVDT1.us" site_id="nbc-wktv-utica-ny-hd/7160">NBC (WKTV) Utica, NY HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WKTVDT1.us" site_id="nbc-wktv-utica-ny/2839">NBC (WKTV) Utica, NY</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WKYCDT1.us" site_id="nbc-wkyc-cleveland-oh-hd/3676">NBC (WKYC) Cleveland, OH HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WKYCDT1.us" site_id="nbc-wkyc-cleveland-oh/216">NBC (WKYC) Cleveland, OH</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WLBTDT1.us" site_id="nbc-wlbt-jackson-ms-hd/7161">NBC (WLBT) Jackson, MS HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WLBTDT1.us" site_id="nbc-wlbt-jackson-ms/1334">NBC (WLBT) Jackson, MS</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WLBZDT1.us" site_id="nbc-wlbz-bangor-me-hd/3641">NBC (WLBZ) Bangor, ME HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WLEXDT1.us" site_id="nbc-wlex-lexington-ky-hd/6242">NBC (WLEX) Lexington, KY HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WLEXDT1.us" site_id="nbc-wlex-lexington-ky/2008">NBC (WLEX) Lexington, KY</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WLIODT1.us" site_id="nbc-wlio-lima-oh-hd/7408">NBC (WLIO) Lima, OH HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WLIODT1.us" site_id="nbc-wlio-lima-oh/3002">NBC (WLIO) Lima, OH</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WLTZDT1.us" site_id="nbc-wltz-columbus-ga-hd/6491">NBC (WLTZ) Columbus, GA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WLTZDT1.us" site_id="nbc-wltz-columbus-ga/2537">NBC (WLTZ) Columbus, GA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WLUCDT1.us" site_id="nbc-wluc-upper-michigan-mi-hd/19898">NBC (WLUC) Upper Michigan, MI HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WLWKCD1.us" site_id="nbc-wlwk-cd-sturgeon-bay-wi/29625">NBC (WLWK-CD) Sturgeon Bay, WI</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WLWTDT1.us" site_id="nbc-wlwt-cincinnati-oh-hd/3672">NBC (WLWT) Cincinnati, OH HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WLWTDT1.us" site_id="nbc-wlwt-cincinnati-oh/1362">NBC (WLWT) Cincinnati, OH</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WMAQDT1.us" site_id="nbc-wmaq-chicago-il-hd/6492">NBC (WMAQ) Chicago, IL HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WMBFDT1.us" site_id="nbc-wmbf-myrtle-beach-sc-hd/6493">NBC (WMBF) Myrtle Beach, SC HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WMBFDT1.us" site_id="nbc-wmbf-myrtle-beach-sc/5868">NBC (WMBF) Myrtle Beach, SC</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WMCDT1.us" site_id="nbc-wmc-memphis-tn-hd/7871">NBC (WMC) Memphis, TN HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WMGTDT1.us" site_id="nbc-wmgt-macon-ga-hd/6494">NBC (WMGT) Macon, GA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WMGTDT1.us" site_id="nbc-wmgt-macon-ga/2445">NBC (WMGT) Macon, GA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WMTVDT1.us" site_id="nbc-wmtv-madison-wi-hd/9104">NBC (WMTV) Madison, WI HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WMTVDT1.us" site_id="nbc-wmtv-madison-wi/5131">NBC (WMTV) Madison, WI</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="WNBCDT1.us" site_id="nbc-wnbc-new-york-ny-hd/4559">NBC (WNBC) New York, NY HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wnbd-lp-grenada-ms-hd/8806">NBC (WNBD-LP) Grenada, MS HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wnbd-lp-grenada-ms/8805">NBC (WNBD-LP) Grenada, MS</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wnbj-ld-jackson-tn/25992">NBC (WNBJ-LD) Jackson, TN</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wnbw-dt-gainesville-fl-hd/8106">NBC (WNBW-DT) Gainesville, FL HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wnbw-dt-gainesville-fl/8105">NBC (WNBW-DT) Gainesville, FL</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wndu-south-bend-in-hd/6495">NBC (WNDU) South Bend, IN HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wndu-south-bend-in/1600">NBC (WNDU) South Bend, IN</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WNBDLD1.us" site_id="nbc-wnbd-lp-grenada-ms-hd/8806">NBC (WNBD-LP) Grenada, MS HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WNBDLD1.us" site_id="nbc-wnbd-lp-grenada-ms/8805">NBC (WNBD-LP) Grenada, MS</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WNBJLD1.us" site_id="nbc-wnbj-ld-jackson-tn/25992">NBC (WNBJ-LD) Jackson, TN</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WNBWDT1.us" site_id="nbc-wnbw-dt-gainesville-fl-hd/8106">NBC (WNBW-DT) Gainesville, FL HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WNBWDT1.us" site_id="nbc-wnbw-dt-gainesville-fl/8105">NBC (WNBW-DT) Gainesville, FL</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WNDUDT1.us" site_id="nbc-wndu-south-bend-in-hd/6495">NBC (WNDU) South Bend, IN HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WNDUDT1.us" site_id="nbc-wndu-south-bend-in/1600">NBC (WNDU) South Bend, IN</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wneu-dt2-boston-ma/11271">TeleXitos (WNEU2) Boston, MA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wnky-bowling-green-ky-hd/8278">NBC (WNKY) Bowling Green, KY HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wnky-bowling-green-ky/5130">NBC (WNKY) Bowling Green, KY</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WNKYDT1.us" site_id="nbc-wnky-bowling-green-ky-hd/8278">NBC (WNKY) Bowling Green, KY HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WNKYDT1.us" site_id="nbc-wnky-bowling-green-ky/5130">NBC (WNKY) Bowling Green, KY</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wnne-hanover-nh-hd/6496">CW+ (WNNE) Hanover, NH HD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wnne-hanover-nh/1123">CW+ (WNNE) Hanover, NH</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wnwo-toledo-oh-hd/3683">NBC (WNWO) Toledo, OH HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wnyt-albany-ny-hd/3707">NBC (WNYT) Albany, NY HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wnyt-albany-ny/1122">NBC (WNYT) Albany, NY</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-woai-san-antonio-tx-hd/4871">NBC (WOAI) San Antonio, TX HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-woai-san-antonio-tx/3072">NBC (WOAI) San Antonio, TX</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wogc-cd-holland-mi/27224">NBC (WOGC-CD) Holland, MI</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wood-grand-rapids-mi-hd/9339">NBC (WOOD) Grand Rapids, MI HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wood-grand-rapids-mi/1914">NBC (WOOD) Grand Rapids, MI</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wowt-omaha-ne-hd/4738">NBC (WOWT) Omaha, NE HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wowt-omaha-ne/1246">NBC (WOWT) Omaha, NE</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wpbn-traverse-city-mi-hd/11453">NBC (WPBN) Traverse City, MI HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wpbn-traverse-city-mi/482">NBC (WPBN) Traverse City, MI</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wpmi-mobile-al-hd/7602">NBC (WPMI) Mobile, AL HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wpmi-mobile-al/2435">NBC (WPMI) Mobile, AL</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wpsd-paducah-ky-hd/6154">NBC (WPSD) Paducah, KY HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wpsd-paducah-ky/1442">NBC (WPSD) Paducah, KY</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wpta-dt2-ft-wayne-in/5977">NBC (WPTA-DT2) Ft. Wayne, IN</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wptv-west-palm-beach-fl-hd/8258">NBC (WPTV) West Palm Beach, FL HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wptv-west-palm-beach-fl/2300">NBC (WPTV) West Palm Beach, FL</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wptz-plattsburg-ny-hd/4527">NBC (WPTZ) Plattsburg, NY HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wpxi-pittsburgh-pa-hd/3714">NBC (WPXI) Pittsburgh, PA HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wral-raleigh-durham-nc-hd/4826">NBC (WRAL) Raleigh-Durham, NC HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wral-raleigh-durham-nc/1281">NBC (WRAL) Raleigh-Durham, NC</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wrc-district-of-columbia-hd/3739">NBC (WRC) District of Columbia HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wrc-district-of-columbia/1553">NBC (WRC) District of Columbia</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wrcb-chattanooga-tn-hd/9894">NBC (WRCB) Chattanooga, TN HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wrcb-chattanooga-tn/3225">NBC (WRCB) Chattanooga, TN</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wrde-salisbury-md/20002">NBC (WRDE) Salisbury, MD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wrde-salisbury-md/20003">NBC (WRDE) Salisbury, MD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wrex-rockford-il-hd/19136">NBC (WREX) Rockford, IL HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wrex-rockford-il/5129">NBC (WREX) Rockford, IL</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wrgx-dothan-al-hd/19093">NBC (WRGX) Dothan, AL HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wrgx-dothan-al/11884">NBC (WRGX) Dothan, AL</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wsav-savannah-ga-hd/7184">NBC (WSAV) Savannah, GA HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wsav-savannah-ga/1990">NBC (WSAV) Savannah, GA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wsaz-huntington-wv-hd/6116">NBC (WSAZ) Huntington, WV HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wsaz-huntington-wv/1037">NBC (WSAZ) Huntington, WV</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wsfa-montgomery-al-hd/6569">NBC (WSFA) Montgomery, AL HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wsfa-montgomery-al/2528">NBC (WSFA) Montgomery, AL</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wsls-roanoke-va-hd/6570">NBC (WSLS) Roanoke, VA HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wsls-roanoke-va/1325">NBC (WSLS) Roanoke, VA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wsmv-nashville-tn-hd/6571">NBC (WSMV) Nashville, TN HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wstm-syracuse-ny-hd/3663">NBC (WSTM) Syracuse, NY HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wstm-syracuse-ny/465">NBC (WSTM) Syracuse, NY</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WNWODT1.us" site_id="nbc-wnwo-toledo-oh-hd/3683">NBC (WNWO) Toledo, OH HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WNYTDT1.us" site_id="nbc-wnyt-albany-ny-hd/3707">NBC (WNYT) Albany, NY HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WNYTDT1.us" site_id="nbc-wnyt-albany-ny/1122">NBC (WNYT) Albany, NY</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WOAIDT1.us" site_id="nbc-woai-san-antonio-tx-hd/4871">NBC (WOAI) San Antonio, TX HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WOAIDT1.us" site_id="nbc-woai-san-antonio-tx/3072">NBC (WOAI) San Antonio, TX</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WOGCCD1.us" site_id="nbc-wogc-cd-holland-mi/27224">NBC (WOGC-CD) Holland, MI</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WOODDT1.us" site_id="nbc-wood-grand-rapids-mi-hd/9339">NBC (WOOD) Grand Rapids, MI HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WOODDT1.us" site_id="nbc-wood-grand-rapids-mi/1914">NBC (WOOD) Grand Rapids, MI</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WOWTDT1.us" site_id="nbc-wowt-omaha-ne-hd/4738">NBC (WOWT) Omaha, NE HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WOWTDT1.us" site_id="nbc-wowt-omaha-ne/1246">NBC (WOWT) Omaha, NE</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WPBNDT1.us" site_id="nbc-wpbn-traverse-city-mi-hd/11453">NBC (WPBN) Traverse City, MI HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WPBNDT1.us" site_id="nbc-wpbn-traverse-city-mi/482">NBC (WPBN) Traverse City, MI</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WPMIDT1.us" site_id="nbc-wpmi-mobile-al-hd/7602">NBC (WPMI) Mobile, AL HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WPMIDT1.us" site_id="nbc-wpmi-mobile-al/2435">NBC (WPMI) Mobile, AL</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WPSDDT1.us" site_id="nbc-wpsd-paducah-ky-hd/6154">NBC (WPSD) Paducah, KY HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WPSDDT1.us" site_id="nbc-wpsd-paducah-ky/1442">NBC (WPSD) Paducah, KY</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WPTADT2.us" site_id="nbc-wpta-dt2-ft-wayne-in/5977">NBC (WPTA-DT2) Ft. Wayne, IN</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WPTVDT1.us" site_id="nbc-wptv-west-palm-beach-fl-hd/8258">NBC (WPTV) West Palm Beach, FL HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WPTVDT1.us" site_id="nbc-wptv-west-palm-beach-fl/2300">NBC (WPTV) West Palm Beach, FL</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WPTZDT1.us" site_id="nbc-wptz-plattsburg-ny-hd/4527">NBC (WPTZ) Plattsburg, NY HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WPXIDT1.us" site_id="nbc-wpxi-pittsburgh-pa-hd/3714">NBC (WPXI) Pittsburgh, PA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WRALDT1.us" site_id="nbc-wral-raleigh-durham-nc-hd/4826">NBC (WRAL) Raleigh-Durham, NC HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WRALDT1.us" site_id="nbc-wral-raleigh-durham-nc/1281">NBC (WRAL) Raleigh-Durham, NC</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WRCDT1.us" site_id="nbc-wrc-district-of-columbia-hd/3739">NBC (WRC) District of Columbia HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WRCDT1.us" site_id="nbc-wrc-district-of-columbia/1553">NBC (WRC) District of Columbia</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WRCBDT1.us" site_id="nbc-wrcb-chattanooga-tn-hd/9894">NBC (WRCB) Chattanooga, TN HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WRCBDT1.us" site_id="nbc-wrcb-chattanooga-tn/3225">NBC (WRCB) Chattanooga, TN</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WRDELD1.us" site_id="nbc-wrde-salisbury-md/20002">NBC (WRDE) Salisbury, MD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WRDELD1.us" site_id="nbc-wrde-salisbury-md/20003">NBC (WRDE) Salisbury, MD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WREXDT1.us" site_id="nbc-wrex-rockford-il-hd/19136">NBC (WREX) Rockford, IL HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WREXDT1.us" site_id="nbc-wrex-rockford-il/5129">NBC (WREX) Rockford, IL</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WRGXLD1.us" site_id="nbc-wrgx-dothan-al-hd/19093">NBC (WRGX) Dothan, AL HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WRGXLD1.us" site_id="nbc-wrgx-dothan-al/11884">NBC (WRGX) Dothan, AL</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WSAVDT1.us" site_id="nbc-wsav-savannah-ga-hd/7184">NBC (WSAV) Savannah, GA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WSAVDT1.us" site_id="nbc-wsav-savannah-ga/1990">NBC (WSAV) Savannah, GA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WSAZDT1.us" site_id="nbc-wsaz-huntington-wv-hd/6116">NBC (WSAZ) Huntington, WV HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WSAZDT1.us" site_id="nbc-wsaz-huntington-wv/1037">NBC (WSAZ) Huntington, WV</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WSFADT1.us" site_id="nbc-wsfa-montgomery-al-hd/6569">NBC (WSFA) Montgomery, AL HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WSFADT1.us" site_id="nbc-wsfa-montgomery-al/2528">NBC (WSFA) Montgomery, AL</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WSLSDT1.us" site_id="nbc-wsls-roanoke-va-hd/6570">NBC (WSLS) Roanoke, VA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WSLSDT1.us" site_id="nbc-wsls-roanoke-va/1325">NBC (WSLS) Roanoke, VA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WSMVDT1.us" site_id="nbc-wsmv-nashville-tn-hd/6571">NBC (WSMV) Nashville, TN HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WSTMDT1.us" site_id="nbc-wstm-syracuse-ny-hd/3663">NBC (WSTM) Syracuse, NY HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WSTMDT1.us" site_id="nbc-wstm-syracuse-ny/465">NBC (WSTM) Syracuse, NY</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wsze-saipan-northern-mariana-islands/5128">NBC (WSZE) Saipan, Northern Mariana Islands</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wtap-parkersburg-wv-hd/6572">NBC (WTAP) Parkersburg, WV HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wtap-parkersburg-wv/5127">NBC (WTAP) Parkersburg, WV</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wthr-indianapolis-in-hd/7680">NBC (WTHR) Indianapolis, IN HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wthr-indianapolis-in/1367">NBC (WTHR) Indianapolis, IN</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wtlv-jacksonville-fl-hd/5824">NBC (WTLV) Jacksonville, FL HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wtmj-milwaukee-wi-hd/6849">NBC (WTMJ) Milwaukee, WI HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wtmj-milwaukee-wi/3165">NBC (WTMJ) Milwaukee, WI</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wtom-traverse-city-mi/5126">NBC (WTOM) Traverse City, MI</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wtov-steubenville-oh-hd/6850">NBC (WTOV) Steubenville, OH HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wtov-steubenville-oh/3029">NBC (WTOV) Steubenville, OH</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wtva-tupelo-ms-hd/6851">NBC (WTVA) Tupelo, MS HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wtva-tupelo-ms/1336">NBC (WTVA) Tupelo, MS</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wtvj-miramar-fl-hd/6852">NBC (WTVJ) Miami, FL HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wtvj-miramar-fl/3374">NBC (WTVJ) Miami, FL</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wtvy-dt4-dothan-al/11885">NBC (WTVY-DT4) Dothan, AL</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wtwc-tallahassee-fl-hd/8552">NBC (WTWC) Tallahassee, FL HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wtwc-tallahassee-fl/1347">NBC (WTWC) Tallahassee, FL</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wtwo-terre-haute-in-hd/7526">NBC (WTWO) Terre Haute, IN HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wtwo-terre-haute-in/1800">NBC (WTWO) Terre Haute, IN</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wvgn-charlotte-amalie-vi/5125">NBC (WVGN) Charlotte Amalie, VI</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wvir-charlottesville-va-hd/3746">NBC (WVIR) Charlottesville, VA HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wvir-charlottesville-va/2015">NBC (WVIR) Charlottesville, VA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wvit-w-hartford-ct-hd/7715">NBC (WVIT) W. Hartford, CT HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wvla-baton-rouge-la-hd/8058">NBC (WVLA) Baton Rouge, LA HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wvla-baton-rouge-la/1750">NBC (WVLA) Baton Rouge, LA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wvtm-birmingham-al-hd/7576">NBC (WVTM) Birmingham, AL HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wvtm-birmingham-al/2519">NBC (WVTM) Birmingham, AL</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wvva-bluefield-va-hd/8294">NBC (WVVA) Bluefield, VA HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wvva-bluefield-va/1323">NBC (WVVA) Bluefield, VA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wwbt-richmond-va-hd/8193">NBC (WWBT) Richmond, VA HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wwbt-richmond-va/1697">NBC (WWBT) Richmond, VA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wwlp-springfield-ma-hd/7730">NBC (WWLP) Springfield, MA HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wwlp-springfield-ma/2508">NBC (WWLP) Springfield, MA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wxia-atlanta-ga-hd/9904">NBC (WXIA) Atlanta, GA HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wxia-atlanta-ga/1709">NBC (WXIA) Atlanta, GA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wxii-winston-salem-nc-hd/4721">NBC (WXII) Winston-Salem, NC HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wxii-winston-salem-nc/1413">NBC (WXII) Winston-Salem, NC</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wyff-greenville-sc-hd/7196">NBC (WYFF) Greenville, SC HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="nbc-wyff-greenville-sc/1726">NBC (WYFF) Greenville, SC</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WTAPDT1.us" site_id="nbc-wtap-parkersburg-wv-hd/6572">NBC (WTAP) Parkersburg, WV HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WTAPDT1.us" site_id="nbc-wtap-parkersburg-wv/5127">NBC (WTAP) Parkersburg, WV</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WTHRDT1.us" site_id="nbc-wthr-indianapolis-in-hd/7680">NBC (WTHR) Indianapolis, IN HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WTHRDT1.us" site_id="nbc-wthr-indianapolis-in/1367">NBC (WTHR) Indianapolis, IN</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WTLVDT1.us" site_id="nbc-wtlv-jacksonville-fl-hd/5824">NBC (WTLV) Jacksonville, FL HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WTMJDT1.us" site_id="nbc-wtmj-milwaukee-wi-hd/6849">NBC (WTMJ) Milwaukee, WI HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WTMJDT1.us" site_id="nbc-wtmj-milwaukee-wi/3165">NBC (WTMJ) Milwaukee, WI</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WTOMDT1.us" site_id="nbc-wtom-traverse-city-mi/5126">NBC (WTOM) Traverse City, MI</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WTOVDT1.us" site_id="nbc-wtov-steubenville-oh-hd/6850">NBC (WTOV) Steubenville, OH HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WTOVDT1.us" site_id="nbc-wtov-steubenville-oh/3029">NBC (WTOV) Steubenville, OH</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WTVADT1.us" site_id="nbc-wtva-tupelo-ms-hd/6851">NBC (WTVA) Tupelo, MS HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WTVADT1.us" site_id="nbc-wtva-tupelo-ms/1336">NBC (WTVA) Tupelo, MS</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WTVJDT1.us" site_id="nbc-wtvj-miramar-fl-hd/6852">NBC (WTVJ) Miami, FL HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WTVJDT1.us" site_id="nbc-wtvj-miramar-fl/3374">NBC (WTVJ) Miami, FL</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WTVYDT4.us" site_id="nbc-wtvy-dt4-dothan-al/11885">NBC (WTVY-DT4) Dothan, AL</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WTWCDT1.us" site_id="nbc-wtwc-tallahassee-fl-hd/8552">NBC (WTWC) Tallahassee, FL HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WTWCDT1.us" site_id="nbc-wtwc-tallahassee-fl/1347">NBC (WTWC) Tallahassee, FL</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WTWODT1.us" site_id="nbc-wtwo-terre-haute-in-hd/7526">NBC (WTWO) Terre Haute, IN HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WTWODT1.us" site_id="nbc-wtwo-terre-haute-in/1800">NBC (WTWO) Terre Haute, IN</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WVGNLD1.us" site_id="nbc-wvgn-charlotte-amalie-vi/5125">NBC (WVGN) Charlotte Amalie, VI</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WVIRDT1.us" site_id="nbc-wvir-charlottesville-va-hd/3746">NBC (WVIR) Charlottesville, VA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WVIRDT1.us" site_id="nbc-wvir-charlottesville-va/2015">NBC (WVIR) Charlottesville, VA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WVITDT1.us" site_id="nbc-wvit-w-hartford-ct-hd/7715">NBC (WVIT) W. Hartford, CT HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WVLADT1.us" site_id="nbc-wvla-baton-rouge-la-hd/8058">NBC (WVLA) Baton Rouge, LA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WVLADT1.us" site_id="nbc-wvla-baton-rouge-la/1750">NBC (WVLA) Baton Rouge, LA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WVTMDT1.us" site_id="nbc-wvtm-birmingham-al-hd/7576">NBC (WVTM) Birmingham, AL HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WVTMDT1.us" site_id="nbc-wvtm-birmingham-al/2519">NBC (WVTM) Birmingham, AL</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WVVADT1.us" site_id="nbc-wvva-bluefield-va-hd/8294">NBC (WVVA) Bluefield, VA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WVVADT1.us" site_id="nbc-wvva-bluefield-va/1323">NBC (WVVA) Bluefield, VA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WWBTDT1.us" site_id="nbc-wwbt-richmond-va-hd/8193">NBC (WWBT) Richmond, VA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WWBTDT1.us" site_id="nbc-wwbt-richmond-va/1697">NBC (WWBT) Richmond, VA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WWLPDT1.us" site_id="nbc-wwlp-springfield-ma-hd/7730">NBC (WWLP) Springfield, MA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WWLPDT1.us" site_id="nbc-wwlp-springfield-ma/2508">NBC (WWLP) Springfield, MA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WXIADT1.us" site_id="nbc-wxia-atlanta-ga-hd/9904">NBC (WXIA) Atlanta, GA HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WXIADT1.us" site_id="nbc-wxia-atlanta-ga/1709">NBC (WXIA) Atlanta, GA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WXIIDT1.us" site_id="nbc-wxii-winston-salem-nc-hd/4721">NBC (WXII) Winston-Salem, NC HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WXIIDT1.us" site_id="nbc-wxii-winston-salem-nc/1413">NBC (WXII) Winston-Salem, NC</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WYFFDT1.us" site_id="nbc-wyff-greenville-sc-hd/7196">NBC (WYFF) Greenville, SC HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WYFFDT1.us" site_id="nbc-wyff-greenville-sc/1726">NBC (WYFF) Greenville, SC</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="ncw-life-channel/20073">NCW Life Channel</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="ncw-life-kwcc-ld-wenatchee-wa/11940">NCW Life (KWCC-LD) Wenatchee, WA</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="necn-hd/7723">necn HD</channel>
@@ -9316,7 +9316,7 @@
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="qubo-kpxo-honolulu-hi/12026">Court TV (KPXO-TV2) Honolulu, HI</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="qubo-kpxr-dt2-cedar-rapids-ia/8236">Grit TV (KPXR-TV2) Cedar Rapids, IA</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="qubo-kspx-sacramento-modesto-ca/12018">Court TV (KSPX-TV2) Sacramento-Modesto, CA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="qubo-ktpx-tulsa-ok/12005">NBC (KTPX-TV2) Tulsa, OK HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="KTPXDT2.us" site_id="nbc-ktpxtv2-tulsa-ok-hd/12005">NBC (KTPX-TV2) Tulsa, OK HD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="qubo-kupx-salt-lake-city-ut/12040">Grit TV (KUPX-TV2) Salt Lake City, UT</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="qubo-kwpx-seattle-wa/12000">Court TV (KWPX-TV2) Seattle, WA</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="qubo-wbna-dt5-louisville-ky/12004">CBN News (WBNA5) Louisville, KY</channel>
@@ -10633,7 +10633,7 @@
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="tct-hd-wlnm-ld2-lansing-mi/31428">H&amp;I (WLNM-LD2) Lansing, MI</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="tct-hd-wnib-ld2-rochester-ny/31426">SonLife (WNIB-LD2) Rochester, NY</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="tct-kdmi-des-moines-ia/3773">TCT (KDMI) Des Moines, IA HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="tct-sd-wlnm-ld-lansing-mi/25292">NBC (WLNM-LD) Lansing, MI</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WLNMLD1.us" site_id="nbc-wlnmld-lansing-mi/25292">NBC (WLNM-LD) Lansing, MI</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="tct-sd-wnib-ld-rochester-ny/25882">TCT (WNIB-LD) Rochester, NY</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="tct-waqp-dt2-muskegon-mi/12480">SonLife Network (WAQP2) Muskegon, MI</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="tct-waqp-muskegon-mi/5404">TCT (WAQP) Muskegon, MI</channel>
@@ -10889,8 +10889,8 @@
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="tfo-sur-demande/10766">TFO Sur Demande</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="the-comcast-network-mid-atlantic-washington-hd/9067">Monumental Sports Network 2 HD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="the-comcast-network-mid-atlantic-washington/9066">Monumental Sports Network 2</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="the-comcast-network-philadelphia-hd/10978">NBC Sports Philadelphia+ HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="the-comcast-network-philadelphia/10977">NBC Sports Philadelphia+</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="NBCSportsPhiladelphiaPlus.us" site_id="the-comcast-network-philadelphia-hd/10978">NBC Sports Philadelphia+ HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="NBCSportsPhiladelphiaPlus.us" site_id="the-comcast-network-philadelphia/10977">NBC Sports Philadelphia+</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="CookingChannel.us" site_id="the-cooking-channel-hd/8113">The Cooking Channel HD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="the-cooking-channel-on-demand/7781">The Cooking Channel On Demand</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="CookingChannel.us" site_id="the-cooking-channel/4226">The Cooking Channel</channel>
