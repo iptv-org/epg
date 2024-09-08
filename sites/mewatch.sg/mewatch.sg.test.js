@@ -13,7 +13,7 @@ const channel = {
 
 it('can generate valid url', () => {
   expect(url({ channel, date })).toBe(
-    'https://cdn.mewatch.sg/api/schedules?channels=97098&date=2022-06-11&duration=24&ff=idp,ldp,rpt,cd&hour=21&intersect=true&lang=en&segments=all'
+    'https://cdn.mewatch.sg/api/schedules?channels=97098&date=2022-06-10&duration=24&ff=idp,ldp,rpt,cd&hour=12&intersect=true&lang=en&segments=all'
   )
 })
 
