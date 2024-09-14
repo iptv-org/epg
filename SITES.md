@@ -35,7 +35,6 @@
 | [directv.com.ar](sites/directv.com.ar)                             | 🔴     | https://github.com/iptv-org/epg/issues/2248                                              |
 | [directv.com.uy](sites/directv.com.uy)                             | 🟢     |                                                                                          |
 | [dishtv.in](sites/dishtv.in)                                       | 🟢     |                                                                                          |
-| [disneystar.com](sites/disneystar.com)                             | 🔴     | https://github.com/iptv-org/epg/issues/2408                                              |
 | [dsmart.com.tr](sites/dsmart.com.tr)                               | 🟢     |                                                                                          |
 | [dstv.com](sites/dstv.com)                                         | 🟢     |                                                                                          |
 | [elcinema.com](sites/elcinema.com)                                 | 🟢     |                                                                                          |
