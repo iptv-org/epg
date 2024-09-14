@@ -524,13 +524,13 @@
   <channel site="tvpassport.com" lang="en" xmltv_id="WHEHLD5.us" site_id="accuweather-wheh-ld5-lumberton-nc/31060">Infomercials (WHEH-LD5) Lumberton, NC</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="WRCZLD6.us" site_id="accuweather-wrcz-ld6-ocala-fl/31062">ION Mystery (WRCZ-LD6) Ocala, FL</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="WTXLDT3.us" site_id="accuweather-wtxl-dt3-tallahassee-fl/17446">Grit TV (WTXL-TV3) Tallahassee, FL</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="action--east-hd/7336">Adult Swim - East HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="action--east/607">Adult Swim - East</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="action--west/16799">Adult Swim - West HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="actionmax--eastern-hd/7094">ActionMax - Eastern HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="actionmax--eastern/1377">ActionMax - Eastern</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="actionmax--pacific-hd/8473">ActionMax - Pacific HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="actionmax--pacific/2582">ActionMax - Pacific</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="AdultSwimEast.us" site_id="action--east-hd/7336">Adult Swim - East HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="AdultSwimEast.us" site_id="action--east/607">Adult Swim - East</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="AdultSwimWest.us" site_id="action--west/16799">Adult Swim - West HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="ActionMaxEast.us" site_id="actionmax--eastern-hd/7094">ActionMax - Eastern HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="ActionMaxEast.us" site_id="actionmax--eastern/1377">ActionMax - Eastern</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="ActionMaxWest.us" site_id="actionmax--pacific-hd/8473">ActionMax - Pacific HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="ActionMaxWest.us" site_id="actionmax--pacific/2582">ActionMax - Pacific</channel>
   <channel site="tvpassport.com" lang="fr" xmltv_id="" site_id="addik-tv-hd/6059">Addik TV HD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="adult-on-demand-hd/7136">Adult On Demand HD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="adult-on-demand/6480">Adult On Demand</channel>
@@ -635,7 +635,7 @@
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="ami-tv-east-hd/13774">AMI-tv East HD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="ami-tv-east/6056">AMI-tv East</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="ami-tv-west/10756">AMI-tv West</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="amp2/13283">AMP2</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="AMP2.us" site_id="amp2/13283">AMP2</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="AnimalPlanetHD.ca" site_id="animal-planet-canada-hd/10044">Animal Planet Canada HD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="animal-planet-caribbean/8362">Animal Planet Caribbean English</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="AnimalPlanetEast.us" site_id="animal-planet-us--east/645">Animal Planet US - East</channel>
@@ -2049,7 +2049,7 @@
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="charge-wtwc-dt3-tallahassee-fl/10106">CHARGE! (WTWC-TV3) Tallahassee, FL</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="charge-wucw-dt3-st-paul-mn/9326">CHARGE! (WUCW3) St. Paul, MN</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="charge-wzme-dt2-bridgeport-ct/15811">Story (WZME2) Bridgeport, CT</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="charge/15228">CHARGE!</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="Charge.us" site_id="charge/15228">CHARGE!</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="charter-on-demand/6741">Spectrum On Demand</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="chat-medicine-hat-ab-hd/10861">CHAT Medicine Hat, AB HD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="chat-medicine-hat-ab/571">CHAT Medicine Hat, AB</channel>
@@ -3311,8 +3311,8 @@
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="cw-wyow-dt2-wausau-wi/17316">CW (WYOW2) Wausau, WI</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="cw50-chicago-il/1840">My50 Chicago, IL</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="cw50chicago-il-hd/7042">My50Chicago, IL HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="daystar--network-hd/13634">Daystar - Network HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="daystar--network/6828">Daystar - Network</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="DaystarTV.us" site_id="daystar--network-hd/13634">Daystar - Network HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="DaystarTV.us" site_id="daystar--network/6828">Daystar - Network</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="daystar-canada/3431">Daystar Canada</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="daystar-hd-wkdc-ld-columbia-sc/30534">Daystar HD (WKDC-LD) Columbia, SC</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="daystar-k02qp-keyes-ca/15194">Daystar (K02QP) Keyes. CA</channel>
@@ -3792,7 +3792,7 @@
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="dtour-on-demand/10885">DTOUR On Demand</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="duck-tv-on-demand/11318">Duck TV On Demand</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="duplicate-tmn-encore-2-west/5842">Duplicate STARZ2 West</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="dw-english/426">DW English</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="DWEnglish.de" site_id="dw-english/426">DW English</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="e-canada-dv/8396">E! Canada DV</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="e-canada-hd/8558">E! Canada HD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="EEast.us" site_id="e-entertainment-usa--eastern-feed/617">E! Entertainment USA - Eastern Feed</channel>
@@ -4084,12 +4084,12 @@
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="estrella-wsvn-dt2-miami-fl/14677">The Grio (WSVN2) Miami, FL</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="estrella-wxcw-dt2-fort-myers-fl-hd/19120">Estrella (WXCW-DT2) Fort Myers, FL HD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="estrella-wxcw-dt2-fort-myers-fl/12553">Estrella (WXCW-DT2) Fort Myers, FL</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="estv-hd/18805">ES.TV HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="estv/14987">ES.TV</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="euronews--francais/3900">Euronews - Français</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="ESTV.us" site_id="estv-hd/18805">ES.TV HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="ESTV.us" site_id="estv/14987">ES.TV</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="EuronewsFrench.fr" site_id="euronews--francais/3900">Euronews - Français</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="euronews-kbid-lp-coalinga-ca/4201">Al Jazeera (KBID-LP) Coalinga, CA</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="euronews-kmsg-ld-fresno-ca/18629">EuroNews (KMSG-LD3) Fresno, CA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="euronews/2121">EuroNews</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="EuronewsEnglish.fr" site_id="euronews/2121">EuroNews</channel>
   <channel site="tvpassport.com" lang="fr" xmltv_id="" site_id="evasion-hd/6468">Evasion HD</channel>
   <channel site="tvpassport.com" lang="fr" xmltv_id="" site_id="evasion-sur-demande/31477">Evasion Sur Demande</channel>
   <channel site="tvpassport.com" lang="fr" xmltv_id="" site_id="evasion-sur-demande/9057">Evasion Sur Demande</channel>
@@ -4098,7 +4098,7 @@
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="evine-kgbs-dt2-austin-tx/18547">Comet TV (KGBS-CD2) Austin, TX</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="evine-kzmm-cd2-fresno-ca/18301">SHOPHQ (KZMM-CD2) Fresno, CA</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="evine-woth-cd8/30984">SHOPHQ (WOTH-CD8)</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="evine/1523">SHOPHQ</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="ShopHQ.us" site_id="evine/1523">SHOPHQ</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="ewtn-canada/619">EWTN Canada</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="ewtn-espanol-hd/13508">EWTN Espanol HD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="ewtn-espanol/1878">EWTN Espanol</channel>
@@ -4823,7 +4823,7 @@
   <channel site="tvpassport.com" lang="en" xmltv_id="WZTVDT1.us" site_id="fox-wztv-nashville-tn-hd/6727">FOX (WZTV) Nashville, TN HD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="fox-xhrio-matamoros-mx-hd/6728">FOX (XHRIO) Matamoros, MX HD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="fox-xhrio-matamoros-mx/3139">FOX (XHRIO) Matamoros, MX</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="france-24-english/14114">France 24 English</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="France24English.fr" site_id="france-24-english/14114">France 24 English</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="france-24-francais/14115">France 24 Français</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="france-24-k31ct-dt5-cortez-co/18252">France 24 (K31CT-DT5) Cortez, CO</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="france-24-kcsm-dt2-san-mateo-ca/10637">France 24 (KPJK-DT2) San Mateo, CA</channel>
@@ -6149,7 +6149,7 @@
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="juce-tv-wudl-dt5-detroit-mi/18262">QVC (WUDL-LD5) Detroit, MI</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="juce-tv-wwrs-dt3-mayville-wi/15634">Smile (WWRS-TV3) Mayville, WI</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="juce-tv-wwto-dt3-chicago-il/14446">Enlace (WWTO-TV3) Chicago, IL</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="juce-tv/4456">PosiTiV</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="PositivTV.us" site_id="juce-tv/4456">PosiTiV</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="jucesoac-kpaz-dt3-phoenix-az/14634">Smile (KPAZ-TV3) Phoenix, AZ</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="jucesoac-ktbw-dt3-tacoma-wa/15162">Smile (KTBW-TV3) Tacoma, WA</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="juicy-on-demand/10267">Juicy On Demand</channel>
@@ -8132,6 +8132,7 @@
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="on-demand/7712">On Demand</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="one-get-fit-hd/3958">ONE TV HD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="one-get-fit/444">ONE TV</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="OneAmericaNewsNetwork.us" site_id="one-america-news-network/12614">One America News Network</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="one-world-sports-hd/13469">Next Level Sports HD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="one-world-sports/13463">Next Level Sports</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="ontario-legislature-dv/10376">Ontario Legislature DV</channel>
@@ -8143,7 +8144,7 @@
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="ontv4u-wiwn-dt2-fond-du-lac-wi/15638">The Grio (WIWN2) Fond du Lac, WI</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="ontv4u-wkob-dt8-new-york-ny/17491">ONTV4U (WKOB-DT8) New York, NY</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="ontv4u-wyga-dt1-atlanta-ga/15521">Shop LC (WYGA-CD) Atlanta, GA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="ontv4u/13142">ONTV4U</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="OnTV4U.us" site_id="ontv4u/13142">ONTV4U</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="opb-plus-dt2-oregon-public-broadcasting/5475">OPB Plus-DT2 Oregon Public Broadcasting</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="opb-plus-kepb-tv2-eugene-or/14336">OPB Plus (KEPB-TV2) Eugene, OR</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="opb-plus-koab-tv2-bend-or/14337">OPB Plus (KOAB-TV2) Bend, OR</channel>
@@ -9363,7 +9364,7 @@
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="qubo-wzpx-grand-rapids-mi/12039">Court TV (WZPX-TV2) Grand Rapids, MI</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="qubo-wzrb-columbia-sc/12051">Court TV (WZRB2) Columbia, SC</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="qubo/6335">Qubo</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="qvc-hd/6115">QVC HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="QVC.us" site_id="qvc-hd/6115">QVC HD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="qvc-k11vz-dt5-chico-ca/18240">QVC (K11VZ-D5) Chico, CA</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="qvc-kahc-ld5-sacramento-ca/31360">QVC (KAHC-LD5) Sacramento, CA</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="qvc-kajr-ld6-des-moines-ia/31362">QVC (KAJR-LD6) Des Moines, IA</channel>
@@ -9413,7 +9414,7 @@
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="qvc-kwpx-seattle-wa/12240">Defy (KWPX-TV5) Seattle, WA</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="qvc-kymb-ld3-monterey-ca/17775">GetTV (KYMB-LD3) Monterey, CA</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="qvc-kypk-dt7-yakima-wa/11030">QVC (KYPK-LD4) Yakima, WA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="qvc-plus-hd/19969">QVC2 HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="QVC2.us" site_id="qvc-plus-hd/19969">QVC2 HD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="qvc-plus-kahc-ld6-sacramento-ca/31376">QVC2 (KAHC-LD6) Sacramento, CA</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="qvc-plus-kauo-ld6-amarillo-tx/31377">QVC2 (KAUO-LD6) Amarillo, TX</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="qvc-plus-kbzc-ld6-oklahoma-city-ok/31378">QVC2 (KBZC-LD6) Oklahoma City, OK</channel>
@@ -9431,7 +9432,7 @@
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="qvc-plus-wudz-ld6-terre-haute-in/31390">Cheddar (WUDZ-LD6) Terre Haute, IN</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="qvc-plus-wveb-ld6-charlotte-nc/31391">Infomercials (WVEB-LD6) Charlotte, NC</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="qvc-plus-wzck-ld7-madison-middleton-wi/31392">Infomercials (WZCK-LD7) Madison-Middleton, WI</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="qvc-plus/13442">QVC2</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="QVC.us" site_id="qvc-plus/13442">QVC2</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="qvc-waay-dt3-huntsville-al/18230">DABL (WAAY-TV3) Huntsville, AL</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="qvc-wbgt-dt6-rochester-ny/18193">QVC (WBGT-CD6) Rochester, NY</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="qvc-wboa-cd-pittsburgh-pa/27786">QVC (WBOA-CD) Pittsburgh, PA</channel>
@@ -9493,7 +9494,7 @@
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="qvc-wzck-ld6-madison-middleton-wi/31374">Infomercials (WZCK-LD6) Madison-Middleton, WI</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="qvc-wzpx-grand-rapids-mi/12283">ION Mystery (WZPX-TV5) Grand Rapids, MI</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="qvc-wzrb-columbia-sc/12299">QVC (WZRB5) Columbia, SC</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="qvc/14683">QVC</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="QVC.us" site_id="qvc/14683">QVC</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="radio-985-fm-montreal/5966">Radio: 98.5 FM Montréal</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="radio-cbc-radio-2-english/5964">Radio: CBC Radio 2 English</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="radio-cbc-radio-2-toronto/13630">Radio: CBC Radio 2 Toronto</channel>
@@ -10700,9 +10701,9 @@
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="telemag/569">Télémag</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="telemagino-hd/9191">Télémagino HD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="telemagino-sur-demande/10238">Télémagino Sur Demande</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="telemundo--eastern-feed/1521">Telemundo - Eastern Feed</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="TelemundoEast.us" site_id="telemundo--eastern-feed/1521">Telemundo - Eastern Feed</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="telemundo--mountain-feed/1875">Telemundo - Mountain Feed</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="telemundo--pacific-feed/2013">Telemundo - Pacific Feed</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="TelemundoWest.us" site_id="telemundo--pacific-feed/2013">Telemundo - Pacific Feed</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="telemundo-k22ja-corpus-christi-tx/18743">Telemundo (K22JA) Corpus Christi, TX</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="telemundo-kajl-fort-smith-ar-hd/17301">Stadium (KAJL) Fort Smith, AR HD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="telemundo-kajl-fort-smith-ar/17299">Shop LC (KAJL) Fort Smith, AR</channel>
@@ -10933,7 +10934,7 @@
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="the-family-channel-kutb-ld2-salt-lake-city-ut/31179">The Family Channel (KUTB-LD2) Salt Lake City, UT</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="the-family-channel-kyht-ld3-lake-charles-la/31180">The Family Channel (KYHT-LD3) Lake Charles, LA</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="the-family-channel-wqqz-cd2-ponce-pr/31181">The Family Channel (WQQZ-CD2) Ponce, PR</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="the-hillsong-channel/19522">TBN Inspire</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="TBNInspire.us" site_id="the-hillsong-channel/19522">TBN Inspire</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="the-n-on-demand/7947">The N On Demand</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="the-real-estate-network--duplicate/19494">The Real Estate Network - duplicate</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="the-real-estate-network--pei/20213">The Real Estate Network - PEI</channel>
@@ -11378,8 +11379,8 @@
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="tyc-sports-hd/16302">TyC Sports HD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="tyc-sports/4578">TyC Sports</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="uctv-265-north-georgia/6978">UCTV 265 North Georgia</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="uni-deportes-hd/11146">TUDN HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="uni-deportes/11145">TUDN</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="TUDN.us" site_id="uni-deportes-hd/11146">TUDN HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="TUDN.us" site_id="uni-deportes/11145">TUDN</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="uni-k31ct-dt9-cortez-co/18251">UNI (K31CT-DT9) Cortez, CO</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="uni-kabe-bakersfield-ca-hd/16320">UNI (KABE) Bakersfield, CA HD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="uni-kabe-bakersfield-ca/2285">UNI (KABE) Bakersfield, CA</channel>
@@ -11631,12 +11632,12 @@
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="unis--ouest/14322">Unis - Ouest</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="unis-hd/13773">Unis HD - Est</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="university-of-hawaii-uhtv/6053">University of Hawaii (UHTV)</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="univision--eastern-feed-hd/8136">Univision - Eastern Feed HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="univision--eastern-feed/1305">Univision - Eastern Feed</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="UnivisionEast.us" site_id="univision--eastern-feed-hd/8136">Univision - Eastern Feed HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="UnivisionEast.us" site_id="univision--eastern-feed/1305">Univision - Eastern Feed</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="univision--mountain-feed-hd/9497">Univision - Mountain Feed HD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="univision--mountain-feed/9496">Univision - Mountain Feed</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="univision--pacific-feed-hd/8137">Univision - Pacific Feed HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="univision--pacific-feed/1306">Univision - Pacific Feed</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="UnivisionWest.us" site_id="univision--pacific-feed-hd/8137">Univision - Pacific Feed HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="UnivisionWest.us" site_id="univision--pacific-feed/1306">Univision - Pacific Feed</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="univision-canada-hd/19654">Univision Canada HD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="univision-kftu-dt2-douglas-az/31457">UNI (KFTU-DT2) Douglas, AZ</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="univision-kuve-cd-tucson-az/29595">UNI (KUVE-CD) Tucson, AZ</channel>
@@ -11819,7 +11820,7 @@
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="weathernation-wrob-dt6-topeka-ks/17576">WeatherNation (WROB-DT6) Topeka, KS</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="weathernation-wtvc-dt3-chattanooga-tn/17463">TBD TV (WTVC3) Chattanooga, TN</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="weathernation-wztv-dt2-nashville-tn/15467">CW (WZTV-DT2) Nashville, TN</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="weathernation/13501">WeatherNation</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WeatherNation.us" site_id="weathernation/13501">WeatherNation</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="WFMZDT1.us" site_id="wfmz-allentown-pa-hd/7787">WFMZ-Allentown, PA HD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="WFMZDT1.us" site_id="wfmz-allentown-pa/2567">WFMZ-Allentown, PA</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="wfn-world-fishing-network-hd/6307">WFN-World Fishing Network HD</channel>
