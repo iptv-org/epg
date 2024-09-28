@@ -12,7 +12,7 @@ module.exports = {
   url({ date, channel }) {
     const [country, id] = channel.site_id.split('#')
 
-    return `https://mi.tv/${country}/async/channel/${id}/${date.format('YYYY-MM-DD')}/0`
+    return `https://mi.tv/${country}/async/channel/${id}/-240`
   },
   parser({ content, date }) {
     const programs = []
