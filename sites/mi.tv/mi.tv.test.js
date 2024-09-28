@@ -15,7 +15,7 @@ const content =
 
 it('can generate valid url', () => {
   expect(url({ channel, date })).toBe(
-    'https://mi.tv/ar/async/channel/24-7-canal-de-noticias/2021-11-24/0'
+    'https://mi.tv/ar/async/channel/24-7-canal-de-noticias/-240'
   )
 })
 
