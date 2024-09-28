@@ -5,7 +5,7 @@ const API_ENDPOINT = 'https://www.tccvivo.com.uy/api/v1/navigation_filter/1575/f
 
 module.exports = {
   site: 'programacion.tcc.com.uy',
-  days: 2,
+  days: 3,
   request: {
     cache: {
       ttl: 60 * 60 * 1000 // 1 hour
@@ -25,10 +25,10 @@ module.exports = {
         title: parseTitle(item),
         description: parseDescription(item),
         categories: parseCategories(item),
-        date: item.year,
+        date: parseYear(item), // Se agrega la llamada a parseYear
         season: item.season_number,
         episode: item.episode_number,
-        image: parseImage(item),
+        icon: parseIcon(item),
         start: parseStart(item),
         stop: parseStop(item)
       })
@@ -56,6 +56,15 @@ module.exports = {
   }
 }
 
+// Nueva función parseYear que valida el año
+function parseYear(item) {
+  // Verifica si existe el campo year y lo convierte en string si está presente
+  const year = item.year ? item.year.toString() : ''
+  
+  // Verifica que el año tenga exactamente 4 dígitos
+  return /^[0-9]{4}$/.test(year) ? year : ''
+}
+
 function parseTitle(item) {
   const localized = item.localized.find(i => i.language === 'es')
 
@@ -78,7 +87,7 @@ function parseCategories(item) {
     .filter(Boolean)
 }
 
-function parseImage(item) {
+function parseIcon(item) {
   const uri = item.images[0] ? item.images[0].image_media.file : null
 
   return uri ? `https:${uri}` : null
