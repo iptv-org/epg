@@ -41,7 +41,7 @@
 | [ena.skylifetv.co.kr](sites/ena.skylifetv.co.kr)                   | 🟢     |                                                                                          |
 | [energeek.cl](sites/energeek.cl)                                   | 🟢     |                                                                                          |
 | [entertainment.ie](sites/entertainment.ie)                         | 🟢     |                                                                                          |
-| [epg.i-cable.com](sites/epg.i-cable.com)                           | 🔴     | https://github.com/iptv-org/epg/issues/2228                                              |
+| [hoy.tv](sites/hoy.tv)                                             | 🟢     |                                                                                          |
 | [firstmedia.com](sites/firstmedia.com)                             | 🟢     |                                                                                          |
 | [flixed.io](sites/flixed.io)                                       | 🟢     |                                                                                          |
 | [foxsports.com.au](sites/foxsports.com.au)                         | 🟢     |                                                                                          |
