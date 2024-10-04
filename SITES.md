@@ -35,14 +35,13 @@
 | [directv.com.ar](sites/directv.com.ar)                             | 🔴     | https://github.com/iptv-org/epg/issues/2248                                              |
 | [directv.com.uy](sites/directv.com.uy)                             | 🟢     |                                                                                          |
 | [dishtv.in](sites/dishtv.in)                                       | 🟢     |                                                                                          |
-| [disneystar.com](sites/disneystar.com)                             | 🔴     | https://github.com/iptv-org/epg/issues/2408                                              |
 | [dsmart.com.tr](sites/dsmart.com.tr)                               | 🟢     |                                                                                          |
 | [dstv.com](sites/dstv.com)                                         | 🟢     |                                                                                          |
 | [elcinema.com](sites/elcinema.com)                                 | 🟢     |                                                                                          |
 | [ena.skylifetv.co.kr](sites/ena.skylifetv.co.kr)                   | 🟢     |                                                                                          |
 | [energeek.cl](sites/energeek.cl)                                   | 🟢     |                                                                                          |
 | [entertainment.ie](sites/entertainment.ie)                         | 🟢     |                                                                                          |
-| [epg.i-cable.com](sites/epg.i-cable.com)                           | 🔴     | https://github.com/iptv-org/epg/issues/2228                                              |
+| [hoy.tv](sites/hoy.tv)                                             | 🟢     |                                                                                          |
 | [firstmedia.com](sites/firstmedia.com)                             | 🟢     |                                                                                          |
 | [flixed.io](sites/flixed.io)                                       | 🟢     |                                                                                          |
 | [foxsports.com.au](sites/foxsports.com.au)                         | 🟢     |                                                                                          |
@@ -173,7 +172,7 @@
 | [tvireland.ie](sites/tvireland.ie)                                 | 🟢     |                                                                                          |
 | [tvmi.mt](sites/tvmi.mt)                                           | 🟢     |                                                                                          |
 | [tvmusor.hu](sites/tvmusor.hu)                                     | 🟢     |                                                                                          |
-| [tvpassport.com](sites/tvpassport.com)                             | 🔴     | https://github.com/iptv-org/epg/issues/2349                                              |
+| [tvpassport.com](sites/tvpassport.com)                             | 🟢     |                                                                                          |
 | [tvplus.com.tr](sites/tvplus.com.tr)                               | 🔴     | https://github.com/iptv-org/epg/issues/2377                                              |
 | [tvprofil.com](sites/tvprofil.com)                                 | 🟡     | https://github.com/iptv-org/epg/issues/2399                                              |
 | [tvtv.us](sites/tvtv.us)                                           | 🟡     | https://github.com/iptv-org/epg/issues/2357, https://github.com/iptv-org/epg/issues/2353 |
