@@ -149,10 +149,12 @@ function fetchApiVersion() {
       //const versionUrl = 'https://www.pickx.be/api/s-8546c5fd136241d42aab714d2fe3ccc5671fd899035efae07cd0b8f4eb23994e'
       //const versionUrl = 'https://www.pickx.be/api/s-64464ad9a3bc117af5dca620027216ecade6a51c230135a0f134c0ee042ff407';
       //const versionUrl = 'https://www.pickx.be/api/s-626d8fdabfb1d44e5a614cd69f4b45d6843fdb63566fc80ea4f97f40e4ea3152';
+      //const versionUrl = 'https://www.pickx.be/api/s-cefaf96e249e53648c4895c279e7a621233c50b4357d62b0bdf6bff45f31b5c0';
+      //const versionUrl = 'https://www.pickx.be/api/s-7fa35253080e9665f9c7d9d85e707d6fb1d1bf07ede11965e859fcb57c723949';
       //the new strategy to break the provider is to leave old version url's available and to return invalid results on those endpoints
 
-      const versionUrl =
-        'https://www.pickx.be//api/s-cefaf96e249e53648c4895c279e7a621233c50b4357d62b0bdf6bff45f31b5c0'
+      const versionUrl = 'https://www.pickx.be/api/s-0e58be3938175b6b900dfb5233bd5cfc0bcf915b633fe57b935f7ce8dbe5f6eb';
+
 
       const response = await axios.get(versionUrl, {
         headers: {
