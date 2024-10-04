@@ -41,23 +41,30 @@ module.exports = {
       .catch(console.error)
 
     const $ = cheerio.load(result)
-    const items = $('.home-content a').toArray()
+    const itemGroups = $('.home-content').toArray()
     const channels = []
-    items.forEach(item => {
-      const $item = $(item)
+    const processedIds = []
 
-      const name = $item.find('p').text()
-      if (name.toUpperCase().indexOf('FM') < 0 && name.toUpperCase().indexOf('RADIO') < 0) {
-        channels.push({
-          lang: 'id',
-          site_id: $item.attr('href').substr($item.attr('href').lastIndexOf('/') + 1).split('-')[0],
-          name
-        })
+    itemGroups.forEach(group => {
+      const $group = $(group)
+      const props = $group.data('ahoy-props')
+      const name = props.content_title
+      const siteId = props.content_id
+
+      if (props.section.includes('Radio') || processedIds.includes(siteId)) {
+        return
       }
+
+      channels.push({
+        lang: 'id',
+        site_id: siteId,
+        name: name
+      })
+      processedIds.push(siteId)
     })
 
     return channels
-  }  
+  }
 }
 
 function parseStart($item, date) {
