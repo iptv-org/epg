@@ -1,16 +1,20 @@
 const { DateTime } = require('luxon')
 
+const API_PROD_ENDPOINT = 'https://www.movistarplus.es/programacion-tv'
+const API_IMAGE_ENDPOINT = 'https://www.movistarplus.es/recorte/n/caratulaH/';
+
 module.exports = {
   site: 'movistarplus.es',
   days: 2,
   url: function ({ date }) {
-    return `https://www.movistarplus.es/programacion-tv/${date.format('YYYY-MM-DD')}?v=json`
+    return `${API_PROD_ENDPOINT}/${date.format('YYYY-MM-DD')}?v=json`
   },
   parser({ content, channel, date }) {
     let programs = []
     let items = parseItems(content, channel)
     if (!items.length) return programs
     let guideDate = date
+
     items.forEach(item => {
       let startTime = DateTime.fromFormat(
         `${guideDate.format('YYYY-MM-DD')} ${item.HORA_INICIO}`,
@@ -32,6 +36,7 @@ module.exports = {
       }
       programs.push({
         title: item.TITULO,
+        icon: parseIcon(item, channel),
         category: item.GENERO,
         start: startTime,
         stop: stopTime
@@ -43,7 +48,7 @@ module.exports = {
     const axios = require('axios')
     const dayjs = require('dayjs')
     const data = await axios
-      .get(`https://www.movistarplus.es/programacion-tv/${dayjs().format('YYYY-MM-DD')}?v=json`)
+      .get(`${API_PROD_ENDPOINT}/${dayjs().format('YYYY-MM-DD')}?v=json`)
       .then(r => r.data)
       .catch(console.log)
 
@@ -55,6 +60,10 @@ module.exports = {
       }
     })
   }
+}
+
+function parseIcon(item, channel) {
+  return `${API_IMAGE_ENDPOINT}/M${channel.site_id}P${item.ELEMENTO}`;
 }
 
 function parseItems(content, channel) {
