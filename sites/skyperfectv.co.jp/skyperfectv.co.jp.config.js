@@ -11,7 +11,7 @@ dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 dayjs.extend(duration)
 
-module.exports = {
+const exported = {
     site: 'skyperfectv.co.jp',
     days: 1,
     lang: 'ja',
@@ -25,7 +25,7 @@ module.exports = {
     },
     // Specific function that permits to gather NSFW channels (needs confirmation)
     async fetchSchedule({ date, channel }) {
-        const url = this.url({ date, channel })
+        const url = exported.url({ date, channel })
         const response = await axios.get(url, {
             headers: {
                 'Cookie': 'adult_auth=true'
@@ -33,9 +33,8 @@ module.exports = {
         })
         return response.data
     },
-    async parser({ date, channel }) {
-        const sched = await this.fetchSchedule({ date, channel })
-        const $ = cheerio.load(sched)
+    parser({ content, date }) {
+        const $ = cheerio.load(content)
         const programs = []
 
         const sections = [
@@ -111,3 +110,5 @@ module.exports = {
         return await fetchAllChannels()
     }
 }
+
+module.exports = exported
