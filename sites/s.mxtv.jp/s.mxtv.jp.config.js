@@ -17,9 +17,9 @@ module.exports = {
         const id = `SV${channel.site_id}EPG${date.format('YYYYMMDD')}`
         return `https://s.mxtv.jp/bangumi_file/json01/${id}.json`
     },
-    parser: function ({ content, channel, date }) {
+    parser: function ({ content }) {
         let programs = []
-        const items = parseItems(content, channel, date)
+        const items = parseItems(content)
         items.forEach(item => {
             programs.push({
                 title: item.Event_name,
@@ -32,7 +32,7 @@ module.exports = {
         })
         return programs
     },
-    async channels() {
+    channels() {
         return [
             {
                 lang: 'ja',
