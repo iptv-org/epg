@@ -2333,7 +2333,7 @@
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="comet-tv-wwho-dt3-columbus-oh/16827">Comet TV (WWHO3) Columbus, OH</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="comet-tv-wwmt-dt3-grand-rapids-mi/17352">TBD TV (WWMT3) Grand Rapids, MI</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="comet-tv-wzme-dt3-bridgeport-ct/15812">Comet TV (WZME3) Bridgeport, CT</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="comet-tv/16811">Comet TV</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="Comet.us" site_id="comet-tv/16811">Comet TV</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="commstream-tv-guide/10993">Commstream TV Guide</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="community-channel-hd/6926">Community Channel HD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="community-channel/492">Community Channel</channel>
@@ -4105,7 +4105,7 @@
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="ewtn-k16hy-dt2-minneapolis-mn/17896">EWTN (K16HY-DT2) Minneapolis, MN</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="ewtn-usa-hd/8517">EWTN USA HD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="ewtn-usa-kjcs-colorado-springs-co/5642">EWTN USA (KJCS) Colorado Springs, CO</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="ewtn-usa/620">EWTN USA</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="EWTN.us" site_id="ewtn-usa/620">EWTN USA</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="exercise-ondemand/6843">Exercise OnDemand</channel>
   <channel site="tvpassport.com" lang="fr" xmltv_id="" site_id="explora-hd/10299">Explora HD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="explore-w34dq-dt2-pittsburg-nh/14924">Explore (W34DQ-DT2) Pittsburg, NH</channel>
@@ -5537,7 +5537,7 @@
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="hope-channel-wpsj-cd4-hammonton-nj/16558">Hope Channel (WPSJ-CD4) Hammonton, NJ</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="hope-channel-wtpm-dt2-puerto-rico/17467">Hope Channel (WTPM-DT2) Puerto Rico</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="hope-channel-wygn-dt4-south-bend-in/17325">Hope Channel (WYGN-DT4) South Bend, IN</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="hope-channel/6827">Hope Channel</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="HopeChannelNorthAmerica.us" site_id="hope-channel/6827">Hope Channel</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="hope-tv/5329">FaithTV</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="hopenow-tv-wffp-dt3-lynchburg-va/19519">Catchy Comedy (WZBJ3) Lynchburg, VA</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="hopenow-tv-wlhg-cd-lynchburg-va/1330">MNT (WZBJ-CD) Lynchburg, VA</channel>
@@ -5554,7 +5554,7 @@
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="hpitv-canada/2860">HPItv Canada</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="hpitv/1152">HPItv</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="hsn--home-shopping-network-hd/7237">HSN - Home Shopping Network HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="hsn--home-shopping-network/14985">HSN - Home Shopping Network</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="HSN.us" site_id="hsn--home-shopping-network/14985">HSN - Home Shopping Network</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="hsn-2-w41do-d-new-york-ny/16465">HSN 2 (W41DO-D) New York, NY</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="hsn-k15dd-wichita-ks/11693">HSN (K15DD) Wichita, KS</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="hsn-k21cx-tucson-az/11664">HSN (K35OU-D) Tucson, AZ</channel>
@@ -9364,7 +9364,8 @@
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="qubo-wzpx-grand-rapids-mi/12039">Court TV (WZPX-TV2) Grand Rapids, MI</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="qubo-wzrb-columbia-sc/12051">Court TV (WZRB2) Columbia, SC</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="qubo/6335">Qubo</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="QVC.us" site_id="qvc-hd/6115">QVC HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="QVC.us" site_id="qvc/14683">QVC</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="qvc-hd/6115">QVC HD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="qvc-k11vz-dt5-chico-ca/18240">QVC (K11VZ-D5) Chico, CA</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="qvc-kahc-ld5-sacramento-ca/31360">QVC (KAHC-LD5) Sacramento, CA</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="qvc-kajr-ld6-des-moines-ia/31362">QVC (KAJR-LD6) Des Moines, IA</channel>
@@ -10033,7 +10034,7 @@
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="smile-wtpc-dt5-virginia-beach-va/15729">Smile (WTPC-TV5) Virginia Beach, VA</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="smile-wudl-dt2-detroit-mi/18259">SonLife Network (WUDL-LD2) Detroit, MI</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="smile-wwrs-dt5-mayville-wi/15636">PosiTiV (WWRS-TV5) Mayville, WI</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="smile/5275">Smile</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="Smile.us" site_id="smile/5275">Smile</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="smithsonian-channel-canada-hd/11405">Smithsonian Channel Canada HD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="smithsonian-channel-usa-hd/6237">Smithsonian Channel USA HD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="smithsonian-channel-usa/4679">Smithsonian Channel USA</channel>
@@ -10547,7 +10548,7 @@
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="tbd-tv-wuhf-dt4-rochester-ny/31576">TBD TV (WUHF-DT4) Rochester, NY</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="tbd-tv/31478">TBD TV</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="tbd-wset-tv4-lynchburg-va/5914">TBD TV (WSET-TV4) Lynchburg, VA</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="tbn--trinity-broadcasting-network--east/1119">TBN - Trinity Broadcasting Network - East</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="TBNEast.us" site_id="tbn--trinity-broadcasting-network--east/1119">TBN - Trinity Broadcasting Network - East</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="tbn--trinity-broadcasting-network--pacific/8092">TBN - Trinity Broadcasting Network - Pacific</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="tbn--trinity-broadcasting-network-hd--east/8467">TBN - Trinity Broadcasting Network HD - East</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="" site_id="tbn--trinity-broadcasting-network-hd--pacific/8468">TBN - Trinity Broadcasting Network HD - Pacific</channel>
@@ -12422,4 +12423,19 @@
   <channel site="tvpassport.com" lang="fr" xmltv_id="" site_id="amitele/13775">AMI-télé</channel>
   <channel site="tvpassport.com" lang="hu" xmltv_id="ERTWorld.ca" site_id="ert-world-canada/3419">ERT World (Canada)</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="MediasetItalia.ca" site_id="mediaset-italia/8436">Mediaset Italia</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="CourtTV.us" site_id="court-tv-network/33650">Court TV Network</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="DWEnglish.de" site_id="dw-english/426">DW English</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="EnlaceTBN.us" site_id="enlace/3256">Enlace</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="FoxWeather.us" site_id="fox-weather/37620">Fox Weather</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="JewelryTV.us" site_id="jewelry-television/3000">Jewelry Television</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="LawCrime.us" site_id="law--crime-network/32823">Law &amp; Crime Network</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="MeritStreet.us" site_id="merit-street/37699">Merit Street</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="PBSKids.us" site_id="pbs-kids-247/31867">PBS KIDS 24/7</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WorldChannel.us" site_id="pbs-world/10214">PBS World</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="PositivTV.us" site_id="positiv/4456">PosiTiV</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="ScrippsNews.us" site_id="scripps-news/5999">Scripps News</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="ShopLC.us" site_id="shop-lc/36273">Shop LC</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="TBD.us" site_id="tbd-tv/31478">TBD TV</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="TheGrioTV.us" site_id="the-grio-eastern-feed/32034">The Grio - Eastern Feed</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="TheNest.us" site_id="the-nest/14118">The Nest</channel>
 </channels>
