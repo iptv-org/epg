@@ -109,11 +109,7 @@ async function fetchImageUrl(url) {
       const firstMatch = imageMatches[0];
       const srcMatch = firstMatch.match(/src="([^"]*?)"/);
       if (srcMatch && srcMatch[1]) {
-        // Obtener la URL original y reemplazar "/galeria/" con "/detallegaleriah/"
-        imageUrl = srcMatch[1].replace('/galeria/', '/detallegaleriah/');
-        
-        // Aumentar el último número en la URL
-        imageUrl = incrementLastNumber(imageUrl);
+        imageUrl = srcMatch[1].replace('/galeria/', '/detalleh/');
       }
     }
 
@@ -122,9 +118,4 @@ async function fetchImageUrl(url) {
     // No imprimir el error en la terminal
     return 'No image URL available';
   }
-}
-
-// Función para aumentar el último dígito de la URL
-function incrementLastNumber(url) {
-  return url.replace(/(\d+)(?!.*\d)/, (match) => (parseInt(match) + 1).toString());
 }
