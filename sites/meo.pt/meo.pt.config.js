@@ -1,4 +1,5 @@
 const { DateTime } = require('luxon')
+const axios = require('axios')
 
 module.exports = {
   site: 'meo.pt',
@@ -31,14 +32,15 @@ module.exports = {
       programs.push({
         title: item.name,
         start,
-        stop
+        stop,
+        description: item.description || '',  // Inclui a descrição se existir
+        icon: item.icon || ''  // Inclui o ícone se existir
       })
     })
 
     return programs
   },
   async channels() {
-    const axios = require('axios')
     const data = await axios
       .post(`https://authservice.apps.meo.pt/Services/GridTv/GridTvMng.svc/getGridAnon`, null, {
         headers: {
@@ -60,6 +62,7 @@ module.exports = {
   }
 }
 
+// Funções utilitárias
 function parseStart(item) {
   return DateTime.fromFormat(`${item.date} ${item.timeIni}`, 'd-M-yyyy HH:mm', {
     zone: 'Europe/Lisbon'
