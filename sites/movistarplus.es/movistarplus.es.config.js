@@ -4,7 +4,7 @@ const dayjs = require('dayjs');
 
 module.exports = {
   site: 'movistarplus.es',
-  days: 2,
+  days: 3,
 
   url: function ({ date }) {
     return `https://www.movistarplus.es/programacion-tv/${date.format('YYYY-MM-DD')}?v=json`;
@@ -109,7 +109,11 @@ async function fetchImageUrl(url) {
       const firstMatch = imageMatches[0];
       const srcMatch = firstMatch.match(/src="([^"]*?)"/);
       if (srcMatch && srcMatch[1]) {
-        imageUrl = srcMatch[1].replace('/galeria/', '/detalleh/');
+        // Obtener la URL original y reemplazar "/galeria/" con "/detallegaleriah/"
+        imageUrl = srcMatch[1].replace('/galeria/', '/detallegaleriah/');
+        
+        // Aumentar el último número en la URL
+        imageUrl = incrementLastNumber(imageUrl);
       }
     }
 
@@ -118,4 +122,9 @@ async function fetchImageUrl(url) {
     // No imprimir el error en la terminal
     return 'No image URL available';
   }
+}
+
+// Función para aumentar el último dígito de la URL
+function incrementLastNumber(url) {
+  return url.replace(/(\d+)(?!.*\d)/, (match) => (parseInt(match) + 1).toString());
 }
