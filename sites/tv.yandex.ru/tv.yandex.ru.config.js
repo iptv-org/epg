@@ -6,11 +6,14 @@ const detailedGuide = true
 
 // update this data by heading to https://tv.yandex.ru and change the values accordingly
 const cookies = {
-  cycada: '3w11iWu+2+o6iIIiI/S1/k9lFIb6y+G6SW6hsbLoPJg=',
-  i: '0nUBW1d6GpFmpLRIuHYGulEA4alIC2j4WS+WYGcusydL7lcrG9loWX8qrFEBOqg54KZxGwCVaZhZ1THYgoIo0T69iCY=',
-  spravka: 'dD0xNzAxMjI3MTk1O2k9MzYuODQuOTguMTcxO0Q9Njk4NDQwRkRDODk5QUEzMDJCNzI5NTJBMTM4RTY2ODNEMzQyNkM1MjI5QTkyNDI3NUJGMzMzQUJEMUZFQjMyQzczM0I2QzE0QTRDQkJFODY5Nzk0MjhGNkEzQjQ5NDJBMzcxQzIzMjE3RTRENkVDOUU1NEE1RDVFNDg0RUQ1RTI3OUNGNzlCMEYzNzUyMDcyNDhGQkVCNkIyMDg5NTMwMzc1QkZEQTlGNEU7dT0xNzAxMjI3MTk1NDg5NDIyODkzO2g9OTRmN2FiNTMxZmJjNDg5MjM4ZDk4Y2ZkN2E0ZmY0YmI=',
-  yandexuid: '7536067781700842414',
-  yashr: '7271154091700842416',
+  yuidss: '2832850201715994330',
+  is_gdpr: '0',
+  is_gdpr_b: 'CIKREhDM/AE=',
+  i: 'a4pvyrQJNZhPbBe3ohQgb//ebZCIFVdQK/vEN28FvQTF1Ssqetwt1zp8cC4h5pAeWW4mlMJB2RQLd1+ymw/nWOVb8vM=',
+  bh: 'EigiTm90LUEuQnJhbmQiO3Y9Ijk5IiwgIkNocm9taXVtIjt2PSIxMjQiKgI/MToJIkFuZHJvaWQiYJDYsLUGah7cyqXsBs+fnO8Liv/v6wP8ua//B9/978cM5bXNhwg=',
+  yandexuid: '2832850201715994330',
+  yashr: '326716401715994330',
+  amcuid: '3768111411721627144',
   user_display: 696
 }
 const headers = {
