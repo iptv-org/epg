@@ -13,7 +13,7 @@ module.exports = {
   days: 2,
   url: function ({ date, channel }) {
     const [providerId, channelSourceIds] = channel.site_id.split('##')
-    const url = `https://internal-prod.apigee.fandom.net/v1/xapi/tvschedules/tvguide/${providerId}/web?start=${date
+    const url = `https://backend.tvguide.com//v1/xapi/tvschedules/tvguide/${providerId}/web?start=${date
       .startOf('d')
       .unix()}&duration=1440&channelSourceIds=${channelSourceIds}`
 
@@ -52,7 +52,7 @@ module.exports = {
     for (let provider of providers) {
       const data = await axios
         .get(
-          `https://internal-prod.apigee.fandom.net/v1/xapi/tvschedules/tvguide/serviceprovider/${provider.id}/sources/web`
+          `https://backend.tvguide.com//v1/xapi/tvschedules/tvguide/serviceprovider/${provider.id}/sources/web`
         )
         .then(r => r.data)
         .catch(console.log)
@@ -106,7 +106,7 @@ function parseItems(content) {
 }
 
 async function loadProgramItem(item) {
-  item.programDetails = item.programDetails.replace('player1-backend-prod-internal.apigee.net', 'internal-prod.apigee.fandom.net')
+  item.programDetails = item.programDetails.replace('player1-backend-prod-internal.apigee.net', 'backend.tvguide.com')
   const data = await axios
     .get(item.programDetails)
     .then(r => r.data)
