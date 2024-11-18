@@ -8,8 +8,6 @@ dayjs.extend(utc)
 dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
-const currentYear = new Date().getFullYear()
-
 module.exports = {
   site: 'moji.id',
   days: 4,
@@ -44,8 +42,8 @@ module.exports = {
       programs.push({
         title: item.progTitle,
         description: item.progDesc,
-        start: item.progStart,
-        stop: item.progStop
+        start: item.progStart.toISOString(), // Convert to ISO string
+        stop: item.progStop.toISOString()    // Convert to ISO string
       })
     })
 
@@ -59,14 +57,15 @@ function parseItems(context) {
   const schPrograms = $('.desc-slider .list-slider').toArray()
   const monthDate = dayjs(context.date).format('MMM DD')
   const items = []
+  const year = dayjs(context.date).year()
 
   schDayMonths.forEach(function (schDayMonth, i) {
     if (monthDate == $(schDayMonth).text()) {
       let schDayPrograms = $(schPrograms[i]).find('.accordion').toArray()
       schDayPrograms.forEach(function (program, i) {
         let itemDay = {
-          progStart: parseStart(schDayMonth, program),
-          progStop: parseStop(schDayMonth, program, schDayPrograms[i + 1]),
+          progStart: parseStart(schDayMonth, program, year),
+          progStop: parseStop(schDayMonth, program, schDayPrograms[i + 1], year),
           progTitle: parseTitle(program),
           progDesc: parseDescription(program)
         }
@@ -86,37 +85,58 @@ function parseDescription(item) {
   return cheerio.load(item)('.content-acc span').text()
 }
 
-function parseStart(schDayMonth, item) {
-  let monthDate = cheerio.load(schDayMonth).text().split(' ')
-  let startTime = cheerio.load(item)('.pkl').text()
-  let progStart = dayjs.tz(
-    currentYear + ' ' + monthDate[0] + ' ' + monthDate[1] + ' ' + startTime,
-    'YYYY MMM DD HH:mm',
-    'Asia/Jakarta'
-  )
-  return progStart
+function parseStart(schDayMonth, item, year) {
+  try {
+    let monthDate = cheerio.load(schDayMonth).text().split(' ')
+    let startTime = cheerio.load(item)('.pkl').text()
+    let progStart = dayjs.tz(
+      `${year} ${monthDate[0]} ${monthDate[1]} ${startTime}`,
+      'YYYY MMM DD HH:mm',
+      'Asia/Jakarta'
+    )
+
+    if (!progStart.isValid()) {
+      throw new Error('Invalid start time created from input')
+    }
+
+    return progStart
+  } catch (error) {
+    console.error('Error in parseStart:', error)
+    throw error
+  }
 }
 
-function parseStop(schDayMonth, itemCurrent, itemNext) {
-  let monthDate = cheerio.load(schDayMonth).text().split(' ')
+function parseStop(schDayMonth, itemCurrent, itemNext, year) {
+  try {
+    let monthDate = cheerio.load(schDayMonth).text().split(' ')
+    let currentDate = dayjs.tz(
+      `${year} ${monthDate[0]} ${monthDate[1]}`,
+      'YYYY MMM DD',
+      'Asia/Jakarta'
+    )
 
-  if (itemNext) {
-    let stopTime = cheerio.load(itemNext)('.pkl').text()
-    return dayjs.tz(
-      currentYear + ' ' + monthDate[0] + ' ' + monthDate[1] + ' ' + stopTime,
-      'YYYY MMM DD HH:mm',
-      'Asia/Jakarta'
-    )
-  } else {
-    return dayjs.tz(
-      currentYear +
-        ' ' +
-        monthDate[0] +
-        ' ' +
-        (parseInt(monthDate[1]) + 1).toString().padStart(2, '0') +
-        ' 00:00',
-      'YYYY MMM DD HH:mm',
-      'Asia/Jakarta'
-    )
+    if (!currentDate.isValid()) {
+      throw new Error('Invalid date created from input')
+    }
+
+    if (itemNext) {
+      let stopTime = cheerio.load(itemNext)('.pkl').text()
+      let stopDate = dayjs.tz(
+        `${year} ${monthDate[0]} ${monthDate[1]} ${stopTime}`,
+        'YYYY MMM DD HH:mm',
+        'Asia/Jakarta'
+      )
+
+      if (!stopDate.isValid()) {
+        throw new Error('Invalid stop time created from input')
+      }
+
+      return stopDate
+    } else {
+      return currentDate.add(1, 'day').startOf('day')
+    }
+  } catch (error) {
+    console.error('Error in parseStop:', error)
+    throw error
   }
 }

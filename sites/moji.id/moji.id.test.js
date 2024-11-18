@@ -1,9 +1,11 @@
 const { url, parser } = require('./moji.id.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
 dayjs.extend(utc)
+dayjs.extend(timezone)
 
-const date = dayjs.utc('2023-08-18', 'YYYY-MM-DD').startOf('d')
+const date = dayjs.utc('2023-08-18').format('YYYY-MM-DD')
 const channel = {
   site_id: '0',
   xmltv_id: 'moji.id',
@@ -28,8 +30,8 @@ it('can parse response', () => {
 
   expect(results[0]).toMatchObject({
     title: 'TRUST',
-    start: dayjs.tz('2023 Aug 18 00:00', 'YYYY MMM DD HH:mm', 'Asia/Jakarta'),
-    stop: dayjs.tz('2023 Aug 18 00:30', 'YYYY MMM DD HH:mm', 'Asia/Jakarta'),
+    start: dayjs.tz('2023 Aug 18 00:00', 'YYYY MMM DD HH:mm', 'Asia/Jakarta').toISOString(),
+    stop: dayjs.tz('2023 Aug 18 00:30', 'YYYY MMM DD HH:mm', 'Asia/Jakarta').toISOString(),
     description: 'Informasi seputar menjaga vitalitas pria'
   })
 })

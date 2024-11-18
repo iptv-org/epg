@@ -119,7 +119,7 @@ module.exports = {
                 provider,
                 region,
                 zipcode,
-                TVperiod: 'Night',
+                TVperiod: '',
                 date: dayjs().format('YYYY-MM-DD'),
                 st: 0,
                 is_mobile: 1

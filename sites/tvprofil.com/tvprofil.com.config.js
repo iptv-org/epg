@@ -35,6 +35,9 @@ module.exports = {
   async channels() {
     const axios = require('axios')
 
+    // https://tvprofil.com/al/channels/getChannels?callback=cb
+    // potential https://tvprofil.com/tvprogram/kanali/?callback=cb
+
     // prettier-ignore
     const countries = {
       al: { channelsPath: '/al', progsPath: 'al/programacioni', lang: 'sq' },
@@ -66,16 +69,12 @@ module.exports = {
       const config = countries[country]
       const lang = config.lang
 
-      const url = `https://tvprofil.com${config.channelsPath}/channels/getChannels/`
+      const url = `https://tvprofil.com${config.channelsPath}/channels/getChannels/?callback=cb`
 
       console.log(url)
 
       const cb = await axios
-        .get(url, {
-          params: {
-            callback: 'cb'
-          }
-        })
+        .get(url)
         .then(r => r.data)
         .catch(err => {
           console.error(err.message)
