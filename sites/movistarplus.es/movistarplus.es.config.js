@@ -1,13 +1,29 @@
 const { DateTime } = require('luxon')
 
-const API_PROD_ENDPOINT = 'https://www.movistarplus.es/programacion-tv'
+const API_CHANNEL_ENDPOINT = 'https://www.movistarplus.es/programacion-tv'
+const API_PROGRAM_ENDPOINT = 'https://comunicacion.movistarplus.es'
 const API_IMAGE_ENDPOINT = 'https://www.movistarplus.es/recorte/n/caratulaH/';
 
 module.exports = {
   site: 'movistarplus.es',
   days: 2,
-  url: function ({ date }) {
-    return `${API_PROD_ENDPOINT}/${date.format('YYYY-MM-DD')}?v=json`
+  url: function ({ channel, date }) {
+    return `${API_PROGRAM_ENDPOINT}/wp-admin/admin-ajax.php`
+  },
+  request: {
+    method: 'POST',
+    headers: {
+      Origin: API_PROGRAM_ENDPOINT,
+      Referer: `${API_PROGRAM_ENDPOINT}/programacion/`,
+      "Content-Type" : 'application/x-www-form-urlencoded; charset=UTF-8'
+    },
+    data: function ({ channel, date }) {
+      return {
+        action: 'getProgramation',
+        day: date.format('YYYY-MM-DD'),
+        "channels[]": channel.site_id
+      }
+    }
   },
   parser({ content, channel, date }) {
     let programs = []
@@ -17,15 +33,15 @@ module.exports = {
 
     items.forEach(item => {
       let startTime = DateTime.fromFormat(
-        `${guideDate.format('YYYY-MM-DD')} ${item.HORA_INICIO}`,
-        'yyyy-MM-dd HH:mm',
+        `${item.f_evento_rejilla}`,
+        'yyyy-MM-dd HH:mm:ss',
         {
           zone: 'Europe/Madrid'
         }
       ).toUTC()
       let stopTime = DateTime.fromFormat(
-        `${guideDate.format('YYYY-MM-DD')} ${item.HORA_FIN}`,
-        'yyyy-MM-dd HH:mm',
+        `${item.f_fin_evento_rejilla}`,
+        'yyyy-MM-dd HH:mm:ss',
         {
           zone: 'Europe/Madrid'
         }
@@ -35,9 +51,9 @@ module.exports = {
         stopTime = stopTime.plus({ days: 1 })
       }
       programs.push({
-        title: item.TITULO,
+        title: item.des_evento_rejilla,
         icon: parseIcon(item, channel),
-        category: item.GENERO,
+        category: item.des_genero,
         start: startTime,
         stop: stopTime
       })
@@ -68,7 +84,9 @@ function parseIcon(item, channel) {
 
 function parseItems(content, channel) {
   const json = typeof content === 'string' ? JSON.parse(content) : content
-  if (!(`${channel.site_id}-CODE` in json.data)) return []
-  const data = json.data[`${channel.site_id}-CODE`]
-  return data ? data.PROGRAMAS : []
+  const data = json.channelsProgram;
+
+  if(data.length != 1)
+    return []
+  return data[0];
 }
