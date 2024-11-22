@@ -28,7 +28,7 @@ it('can parse response', () => {
     start: '2024-11-21T12:00:00.000Z',
     stop: '2024-11-21T13:00:00.000Z',
     title: 'On The Fly',
-    category: 'Sports non-event',
+    category: 'Sports',
   })
 })
 

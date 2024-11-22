@@ -13,7 +13,7 @@ module.exports = {
       programs.push({
         title: item.title,
         description: item.description === item.title ? undefined : item.description,
-        category: item.title === "NHL Game" ? "Sports event" : "Sports non-event",
+        category: "Sports",
         // image: parseImage(item),
         start: parseStart(item),
         stop: parseStop(item)
