@@ -64,7 +64,7 @@ module.exports = {
     const axios = require('axios')
     const dayjs = require('dayjs')
     const data = await axios
-      .get(`${API_PROD_ENDPOINT}/${dayjs().format('YYYY-MM-DD')}?v=json`)
+      .get(`${API_CHANNEL_ENDPOINT}/${dayjs().format('YYYY-MM-DD')}?v=json`)
       .then(r => r.data)
       .catch(console.log)
 
