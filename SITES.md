@@ -91,6 +91,7 @@
 | [mytvsuper.com](sites/mytvsuper.com)                               | 🟢     |                                                                                          |
 | [nhk.or.jp](sites/nhk.or.jp)                                       | 🟢     |                                                                                          |
 | [nhkworldpremium.com](sites/nhkworldpremium.com)                   | 🟢     |                                                                                          |
+| [nhl.com](sites/nhl.com)                                           | 🟢     |                                                                                          |
 | [nostv.pt](sites/nostv.pt)                                         | 🟢     |                                                                                          |
 | [novacyprus.com](sites/novacyprus.com)                             | 🟢     |                                                                                          |
 | [novasports.gr](sites/novasports.gr)                               | 🟢     |                                                                                          |
