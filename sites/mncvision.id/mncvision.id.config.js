@@ -13,6 +13,7 @@ dayjs.extend(customParseFormat)
 const languages = { en: 'english', id: 'indonesia' }
 const cookies = {}
 const timeout = 30000
+const nworker = 25
 
 module.exports = {
   site: 'mncvision.id',
@@ -47,29 +48,11 @@ module.exports = {
     jar: null
   },
   async parser({ content, headers, date, channel }) {
-    const programs = []
-
     if (!cookies[channel.lang]) {
       cookies[channel.lang] = parseCookies(headers)
     }
-    const [$, items] = parseItems(content)
-    for (const item of items) {
-      const $item = $(item)
-      const start = parseStart($item, date)
-      const duration = parseDuration($item)
-      const stop = start.add(duration, 'm')
-      const description = await loadDescription($item, cookies[channel.lang])
-      programs.push({
-        title: parseTitle($item),
-        season: parseSeason($item),
-        episode: parseEpisode($item),
-        description,
-        start,
-        stop
-      })
-    }
 
-    return programs
+    return await parseItems(content, date, cookies[channel.lang])
   },
   async channels({ lang = 'id' }) {
     const axios = require('axios')
@@ -129,10 +112,51 @@ function parseTitle($item) {
   return $item.find('td:nth-child(2) > a').text()
 }
 
-function parseItems(content) {
+async function parseItems(content, date, cookies) {
+  const programs = []
   const $ = cheerio.load(content)
+  const items = $('tr[valign="top"]').toArray()
+  if (items.length) {
+    const workers = []
+    const n = Math.min(nworker, items.length)
+    while (workers.length < n) {
+      const worker = () => {
+        if (items.length) {
+          const $item = $(items.shift())
+          const done = (description = null) => {
+            const start = parseStart($item, date)
+            const duration = parseDuration($item)
+            const stop = start.add(duration, 'm')
+            programs.push({
+              title: parseTitle($item),
+              season: parseSeason($item),
+              episode: parseEpisode($item),
+              description,
+              start,
+              stop
+            })
+            worker()
+          }
+          loadDescription($item, cookies)
+            .then(description => done(description))
+        } else {
+          workers.splice(workers.indexOf(worker), 1)
+        }
+      }
+      workers.push(worker)
+      worker()
+    }
+    await new Promise(resolve => {
+      const interval = setInterval(() => {
+        if (workers.length === 0) {
+          clearInterval(interval)
+          resolve()
+        }
+      }, 500)
+    })
+  }
 
-  return [$, $('tr[valign="top"]').toArray()]
+  return programs
 }
 
 function loadLangCookies(channel) {
