@@ -34,7 +34,7 @@
 | [directv.com](sites/directv.com)                                   | 🟡     | https://github.com/iptv-org/epg/issues/2284                                              |
 | [directv.com.ar](sites/directv.com.ar)                             | 🔴     | https://github.com/iptv-org/epg/issues/2248                                              |
 | [directv.com.uy](sites/directv.com.uy)                             | 🟢     |                                                                                          |
-| [dishtv.in](sites/dishtv.in)                                       | 🟢     |                                                                                          |
+| [dishtv.in](sites/dishtv.in)                                       | 🔴     | https://github.com/iptv-org/epg/issues/2445                                              |
 | [dsmart.com.tr](sites/dsmart.com.tr)                               | 🟢     |                                                                                          |
 | [dstv.com](sites/dstv.com)                                         | 🟢     |                                                                                          |
 | [elcinema.com](sites/elcinema.com)                                 | 🟢     |                                                                                          |
@@ -58,7 +58,7 @@
 | [iltalehti.fi](sites/iltalehti.fi)                                 | 🟡     | https://github.com/iptv-org/epg/issues/2396                                              |
 | [indihometv.com](sites/indihometv.com)                             | 🟢     |                                                                                          |
 | [ionplustv.com](sites/ionplustv.com)                               | 🟢     |                                                                                          |
-| [ipko.com](sites/ipko.com)                                         | 🟢     |                                                                                          |
+| [ipko.com](sites/ipko.com)                                         | 🔴     | https://github.com/iptv-org/epg/issues/2454                                              |
 | [kan.org.il](sites/kan.org.il)                                     | 🔴     | https://github.com/iptv-org/epg/issues/2273                                              |
 | [knr.gl](sites/knr.gl)                                             | 🟢     |                                                                                          |
 | [kplus.vn](sites/kplus.vn)                                         | 🔴     | https://github.com/iptv-org/epg/issues/2240                                              |
@@ -73,7 +73,7 @@
 | [mediaklikk.hu](sites/mediaklikk.hu)                               | 🟢     |                                                                                          |
 | [mediaset.it](sites/mediaset.it)                                   | 🟢     |                                                                                          |
 | [melita.com](sites/melita.com)                                     | 🟢     |                                                                                          |
-| [meo.pt](sites/meo.pt)                                             | 🟢     |                                                                                          |
+| [meo.pt](sites/meo.pt)                                             | 🟡     | https://github.com/iptv-org/epg/issues/2446                                              |
 | [meuguia.tv](sites/meuguia.tv)                                     | 🟢     |                                                                                          |
 | [mewatch.sg](sites/mewatch.sg)                                     | 🟢     |                                                                                          |
 | [mi.tv](sites/mi.tv)                                               | 🟢     |                                                                                          |
@@ -153,7 +153,7 @@
 | [tv.nu](sites/tv.nu)                                               | 🟢     |                                                                                          |
 | [tv.post.lu](sites/tv.post.lu)                                     | 🟢     |                                                                                          |
 | [tv.trueid.net](sites/tv.trueid.net)                               | 🟢     |                                                                                          |
-| [tv.yandex.ru](sites/tv.yandex.ru)                                 | 🟢     |                                                                                          |
+| [tv.yandex.ru](sites/tv.yandex.ru)                                 | 🔴     | https://github.com/iptv-org/epg/issues/2451                                              |
 | [tv.yettel.hu](sites/tv.yettel.hu)                                 | 🔴     | https://github.com/iptv-org/epg/issues/2263                                              |
 | [tv2go.t-2.net](sites/tv2go.t-2.net)                               | 🟢     |                                                                                          |
 | [tv24.co.uk](sites/tv24.co.uk)                                     | 🟢     |                                                                                          |
