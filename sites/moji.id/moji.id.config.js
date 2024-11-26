@@ -42,8 +42,8 @@ module.exports = {
       programs.push({
         title: item.progTitle,
         description: item.progDesc,
-        start: item.progStart.toISOString(), // Convert to ISO string
-        stop: item.progStop.toISOString()    // Convert to ISO string
+        start: item.progStart.toISOString(),
+        stop: item.progStop.toISOString()
       })
     })
 

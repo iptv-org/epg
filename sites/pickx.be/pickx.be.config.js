@@ -139,38 +139,59 @@ module.exports = {
 function fetchApiVersion() {
   return new Promise(async (resolve, reject) => {
     try {
-      // https://px-epg.azureedge.net/version is deprecated
-      // probably the version url will be changed around over time
+      // you'll never find what happened here :)
+      // load pickx bundle and get react version hash (regex).
+      // it's not the best way to get the version but it's the only way to get it.
 
-      //history of used version urls
-      //const versionUrl = 'https://www.pickx.be/api/s-3b36540f3cef64510112f3f95c2c0cdca321997ed2b1042ad778523235e155eb'
-      //const versionUrl = 'https://www.pickx.be/api/s-671f172425e1bc74cd0440fd67aaa6cbe68b582f3f401186c2f46ae97e80516b'
-      //const versionUrl = 'https://www.pickx.be/api/s-a6b4b4fefaa20e438523a6167e63b8504d96b9df8303473349763c4418cffe30'
-      //const versionUrl = 'https://www.pickx.be/api/s-8546c5fd136241d42aab714d2fe3ccc5671fd899035efae07cd0b8f4eb23994e'
-      //const versionUrl = 'https://www.pickx.be/api/s-64464ad9a3bc117af5dca620027216ecade6a51c230135a0f134c0ee042ff407';
-      //const versionUrl = 'https://www.pickx.be/api/s-626d8fdabfb1d44e5a614cd69f4b45d6843fdb63566fc80ea4f97f40e4ea3152';
-      //the new strategy to break the provider is to leave old version url's available and to return invalid results on those endpoints
-
-      const versionUrl =
-        'https://www.pickx.be//api/s-cefaf96e249e53648c4895c279e7a621233c50b4357d62b0bdf6bff45f31b5c0'
-
-      const response = await axios.get(versionUrl, {
-        headers: {
-          Origin: 'https://www.pickx.be',
-          Referer: 'https://www.pickx.be/'
-        }
+      // find bundle version
+      const minBundleVer = "https://www.pickx.be/minimal-bundle-version"
+      const bundleVerData = await axios.get(minBundleVer, {
+          headers: {
+            Origin: 'https://www.pickx.be',
+            Referer: 'https://www.pickx.be/'
+          }
       })
 
-      if (response.status === 200) {
-        apiVersion = response.data.version
-        resolve()
+      if (bundleVerData.status !== 200) {
+        console.error(`Failed to fetch bundle version. Status: ${bundleVerData.status}`)
+        reject(`Failed to fetch bundle version. Status: ${bundleVerData.status}`)
       } else {
-        console.error(`Failed to fetch API version. Status: ${response.status}`)
-        reject(`Failed to fetch API version. Status: ${response.status}`)
+        const bundleVer = bundleVerData.data.version
+        // get the minified JS app bundle
+        const bundleUrl = `https://components.pickx.be/pxReactPlayer/${bundleVer}/bundle.min.js`
+
+        // now, find the react hash inside the bundle URL
+        const bundle = await axios.get(bundleUrl).then(r => {
+          const re = /REACT_APP_VERSION_HASH:"([^"]+)"/
+          const match = r.data.match(re)
+          if (match && match[1]) {
+            return match[1]
+          } else {
+            throw new Error('React app version hash not found')
+          }
+        }).catch(console.error)
+
+        const versionUrl = `https://www.pickx.be/api/s-${bundle.replace('/REACT_APP_VERSION_HASH:"', '')}`
+
+        const response = await axios.get(versionUrl, {
+          headers: {
+            Origin: 'https://www.pickx.be',
+            Referer: 'https://www.pickx.be/'
+          }
+        })
+
+        if (response.status === 200) {
+          apiVersion = response.data.version
+          resolve()
+        } else {
+          console.error(`Failed to fetch API version. Status: ${response.status}`)
+          reject(`Failed to fetch API version. Status: ${response.status}`)
+        }
       }
     } catch (error) {
-      console.error('Error fetching API version:', error.message)
+      console.error('Error during fetchApiVersion:', error)
       reject(error)
     }
   })
 }
+  

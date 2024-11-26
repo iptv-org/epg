@@ -102,7 +102,7 @@ function parseStart(item, initDate) {
 
   time = `${initDate.format('YYYY-MM-DD')} ${time}`
 
-  return dayjs.tz(time, 'YYYY-MM-DD hh:mm A', dayjs.tz.guess())
+  return dayjs.tz(time, 'YYYY-MM-DD hh:mm A', 'Africa/Cairo')
 }
 
 function parseTitle(item) {
