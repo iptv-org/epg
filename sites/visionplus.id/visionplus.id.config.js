@@ -47,18 +47,20 @@ module.exports = {
   },
   async channels({ lang = 'id' }) {
     const result = []
-    const fs = require('fs')
-    const path = require('path')
-    const channelFile = path.join(__dirname, 'channels.json')
-    if (fs.existsSync(channelFile)) {
-      const items = JSON.parse(fs.readFileSync(channelFile))
-      Object.values(items).forEach(item => {
+    const axios = require('axios')
+    const json = await axios
+      .get(`https://www.visionplus.id/managetv/tvinfo/channels/get?language=${languages[lang]}`)
+      .then(response => response.data)
+      .catch(console.error)
+
+    if (Array.isArray(json?.chs)) {
+      for (const ch of json.chs) {
         result.push({
           lang,
-          site_id: item.serviceId,
-          name: item.name
+          site_id: ch.sid,
+          name: ch.loc[0].nam
         })
-      })
+      }
     }
 
     return result
