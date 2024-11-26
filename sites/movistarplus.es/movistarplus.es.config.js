@@ -1,7 +1,7 @@
 const { DateTime } = require('luxon')
 
 const API_PROGRAM_ENDPOINT = 'https://comunicacion.movistarplus.es'
-const API_IMAGE_ENDPOINT = 'https://www.movistarplus.es/recorte/n/caratulaH/';
+const API_IMAGE_ENDPOINT = 'https://www.movistarplus.es/recorte/n/externov';
 
 module.exports = {
   site: 'movistarplus.es',
@@ -61,7 +61,12 @@ module.exports = {
 }
 
 function parseIcon(item, channel) {
-  return `${API_IMAGE_ENDPOINT}/M${channel.site_id}P${item.cod_evento_rejilla}`;
+  if(item.cod_elemento_emision)
+  {
+    	return `${API_IMAGE_ENDPOINT}/M${channel.site_id}P${item.cod_elemento_emision}`
+  }
+  
+  return ''
 }
 
 function parseItems(content, channel) {
