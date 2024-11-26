@@ -6,15 +6,15 @@ const detailedGuide = true
 
 // update this data by heading to https://tv.yandex.ru and change the values accordingly
 const cookies = {
-  cycada: '3w11iWu+2+o6iIIiI/S1/k9lFIb6y+G6SW6hsbLoPJg=',
-  i: '0nUBW1d6GpFmpLRIuHYGulEA4alIC2j4WS+WYGcusydL7lcrG9loWX8qrFEBOqg54KZxGwCVaZhZ1THYgoIo0T69iCY=',
-  spravka: 'dD0xNzAxMjI3MTk1O2k9MzYuODQuOTguMTcxO0Q9Njk4NDQwRkRDODk5QUEzMDJCNzI5NTJBMTM4RTY2ODNEMzQyNkM1MjI5QTkyNDI3NUJGMzMzQUJEMUZFQjMyQzczM0I2QzE0QTRDQkJFODY5Nzk0MjhGNkEzQjQ5NDJBMzcxQzIzMjE3RTRENkVDOUU1NEE1RDVFNDg0RUQ1RTI3OUNGNzlCMEYzNzUyMDcyNDhGQkVCNkIyMDg5NTMwMzc1QkZEQTlGNEU7dT0xNzAxMjI3MTk1NDg5NDIyODkzO2g9OTRmN2FiNTMxZmJjNDg5MjM4ZDk4Y2ZkN2E0ZmY0YmI=',
-  yandexuid: '7536067781700842414',
-  yashr: '7271154091700842416',
-  user_display: 696
+  i: 'dkim62pClrWWC4CShVQYMpVw1ELNVw4XJdL/lzT4E2r05IgcST1GtCA4ho/UyGgW2AO4qftDfZzGX2OHqCzwY7GUkpM=',
+  spravka: 'dD0xNzMyMzg1MjQ4O2k9MTgwLjI0Ny4yNDEuNzA7RD1DMjQ4OTYzRURBNEE1NjVEMjg0Rjc5MDQyNEYzMjdGRDVERTg0MkQ2ODBCOUNCREUwQjk4OEYzRThDREIwQjVBNTUwRjc1OTFCRkMwRTRBRTM3RDA4MjZCMDAyNzhDMjEwMUYzOTE0NEQ5NjhBNjJGNENDRTYwM0ZDQUY4QjBBRTA0NDRGNjNENTQ0OUQ5MzkxMTdFRTMyQkVEMDM2RUJBRkEyNDhDMTM7dT0xNzMyMzg1MjQ4NDQ3MDkzNTg1O2g9MmZlZDc2M2EyNDA5NDFkMzIwYWIwYjI3ZThlYmExYWE=; tvoid=1; bltsr=1; user_display=563; _yasc=2xvlftNDZixh3JWMMTAAGeCgprMjSRqe/D5O+sz+USg0zxL17E9zLMzQXmTAy7BsF92BMrYAfh0NfQ==; bh=EjkiQ2hyb21pdW0iO3Y9IjEyOCIsICJOb3Q7QT1CcmFuZCI7dj0iMjQiLCAiT3BlcmEiO3Y9IjExNCIqAj8wOgkiV2luZG93cyJgh+uVugZqIdzK4f8IktihsQOfz+HqA/v68OcN6//99g+2xsyHCKWEAg==',
+  yandexuid: '1197179041732383499',
+  yashr: '4682342911732383504',
+  yuidss: '1197179041732383499',
+  user_display: 563
 }
 const headers = {
-  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 OPR/104.0.0.0',
+  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
 }
 const caches = {}
 
@@ -85,19 +85,27 @@ module.exports = {
 async function fetchSchedules({ date, content = null }) {
   const schedules = []
   const queues = []
+  const fetches = []
   const url = getUrl(date)
 
   let mainApi
   // parse content as schedules and add to queue if more requests is needed
-  const f = data => {
+  const f = (data, src) => {
+    if (src) {
+      fetches.push(src)
+    }
     const [q, s] = parseContent(data, date)
     if (!mainApi) {
       mainApi = true
       if (caches.region) {
-        queues.push(`https://tv.yandex.ru/api/${caches.region}?date=${date.format('YYYY-MM-DD')}&grid=all&period=all-day`)
+        queues.push(getUrl(date, caches.region))
       }
     }
-    queues.push(...q)
+    for (const url of q) {
+      if (fetches.indexOf(url) < 0) {
+        queues.push(url)
+      }
+    }
     schedules.push(...s)
   }
   // is main html already fetched?
@@ -120,7 +128,7 @@ async function fetchPrograms({ schedules, date, channel }) {
       queues.push(
         ...schedule.events
           .filter(event => date.isSame(event.start, 'day'))
-          .map(event => `https://tv.yandex.ru/api/${caches.region}/event?eventId=${event.id}&programCoId=`)
+          .map(event => getUrl(null, caches.region, null, event))
       )
     })
   await doFetch(queues, getUrl(date), content => {
@@ -151,21 +159,25 @@ async function doFetch(queues, referer, cb) {
     }
     const url = queues.shift()
     debug(`Fetching ${url}`)
-    const data = url.indexOf('api') > 0 ? {
-      'Referer': referer,
+    const data = {
       'Origin': 'https://tv.yandex.ru',
-      'X-Requested-With': 'XMLHttpRequest'
-    } : {}
-    const params = { headers: getHeaders(data) }
+    }
+    if (referer) {
+      data['Referer'] = referer
+    }
+    if (url.indexOf('api') > 0) {
+      data['X-Requested-With'] = 'XMLHttpRequest'
+    }
+    const headers = getHeaders(data)
     const content = await axios
-      .get(url, params)
+      .get(url, { headers })
       .then(response => {
         parseCookies(response.headers)
         return response.data
       })
       .catch(err => console.error(err.message))
 
-    cb(content)
+    cb(content, url)
   }
 }
 
@@ -186,7 +198,7 @@ function parseContent(content, date, checkOnly = false) {
       if (content.schedule) {
         // fetch next request based on schedule map
         if (Array.isArray(content.schedule.scheduleMap)) {
-          queues.push(...content.schedule.scheduleMap.map(m => `https://tv.yandex.ru/api/${caches.region}/main/chunk?page=${m.id}&date=${date.format('YYYY-MM-DD')}&period=all-day&offset=${m.offset}&limit=${m.limit}`))
+          queues.push(...content.schedule.scheduleMap.map(m => getUrl(date, caches.region, m)))
         }
         // find some schedules?
         if (Array.isArray(content.schedule.schedules)) {
@@ -244,10 +256,29 @@ function getSchedules(schedules) {
 
 function getHeaders(data = {}) {
   return Object.assign({}, headers, {
-    'Cookie': Object.keys(cookies).map(cookie => `${cookie}=${cookies[cookie]}`).join('; ')
+    Cookie: Object.keys(cookies).map(cookie => `${cookie}=${cookies[cookie]}`).join('; ')
   }, data)
 }
 
-function getUrl(date) {
-  return `https://tv.yandex.ru/?date=${date.format('YYYY-MM-DD')}&grid=all&period=all-day`
+function getUrl(date, region = null, page = null, event = null) {
+  let url = 'https://tv.yandex.ru/'
+  if (region) {
+    url += `api/${region}`
+  }
+  if (page && page.id !== undefined) {
+    url += `${url.endsWith('/') ? '' : '/'}main/chunk?page=${page.id}`
+  }
+  if (event && event.id !== undefined) {
+    url += `${url.endsWith('/') ? '' : '/'}event?eventId=${event.id}&programCoId=`
+  }
+  if (date) {
+    url += `${url.indexOf('?') < 0 ? '?' : '&'}date=${date.format('YYYY-MM-DD')}&grid=all&period=all-day`
+  }
+  if (page && page.id !== undefined && page.offset !== undefined) {
+    url += `${url.indexOf('?') < 0 ? '?' : '&'}offset=${page.offset}`
+  }
+  if (page && page.id !== undefined && page.limit !== undefined) {
+    url += `${url.indexOf('?') < 0 ? '?' : '&'}limit=${page.limit}`
+  }
+  return url
 }
