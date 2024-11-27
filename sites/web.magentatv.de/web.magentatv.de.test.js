@@ -1,4 +1,6 @@
 const { parser, url, request } = require('./web.magentatv.de.config.js')
+const fs = require('fs')
+const path = require('path')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -39,7 +41,7 @@ it('can generate valid request data', () => {
     offset: 0,
     properties: [
       {
-        include: 'endtime,genres,id,name,starttime,channelid,pictures,introduce',
+        include: 'endtime,genres,id,name,starttime,channelid,pictures,introduce,subName,seasonNum,subNum,cast,country,producedate,externalIds',
         name: 'playbill'
       }
     ],
@@ -51,8 +53,7 @@ it('can generate valid request data', () => {
 })
 
 it('can parse response', () => {
-  const content =
-    '{"playbilllist":[{"id":"39328203","name":"Twenty Foot Plus","introduce":"Die besten Big-Wave-Surfer werden bei ihrer Suche nach der nächsten großen Welle begleitet.","channelid":"5027","starttime":"2023-10-23 23:58:55 UTC+00:00","endtime":"2023-10-24 00:11:05 UTC+00:00","genres":"Sport","pictures":[{"rel":"image","href":"http://ngiss.t-online.de/cm1s/media/gracenote/2/4/p24832950_e_h9_aa_2023-06-22T10_12_01.jpg","imageType":"1","mimeType":"image/jpeg","resolution":["1440","1080"]}]}]}'
+  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'), 'utf8')
   const result = parser({ content }).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
@@ -69,6 +70,30 @@ it('can parse response', () => {
       image:
         'http://ngiss.t-online.de/cm1s/media/gracenote/2/4/p24832950_e_h9_aa_2023-06-22T10_12_01.jpg',
       category: ['Sport']
+    },
+    {
+      start: '2024-11-05T15:37:03.000Z',
+      stop: '2024-11-05T16:03:48.000Z',
+      title: 'The Big Bang Theory',
+      sub_title: 'Tritte unter dem Tisch',
+      description:
+        'Amy arbeitet für eine Weile in Sheldons Universität, er freut sich darüber, doch sie warnt ihn, dass sie sich jetzt häufiger zu Gesicht bekommen. Als Leonard, Sheldon, Raj und Howard zusammen sitzen, diskutieren sie darüber. Sheldon lässt auf sich einreden und informiert Amy, dass er ein Problem mit ihr auf seiner Arbeit hat. Sie ist enttäuscht, während Bernadette mit Howard darüber spricht, warum er auf Sheldon eingeredet hat.',
+      season: "7",
+      episode: "5",
+      image:
+        'http://ngiss.t-online.de/cm1s/media/gracenote/1/0/p10262968_e_h9_ah_2021-10-20T07_16_16.jpg',
+      category: ['Sitcom'],
+      directors: ["Mark Cendrowski"],
+      producers: ["Chuck Lorre","Bill Prady","Steven Molaro"],
+      adapters: ["Steven Molaro","Steve Holland","Maria Ferrari","Chuck Lorre","Eric Kaplan","Jim Reynolds"],
+      country: 'US',
+      date: "2013-01-01",
+      urls: [
+        {
+          system: "imdb",
+          value: "https://www.imdb.com/title/tt0898266"
+        }
+      ]
     }
   ])
 })
