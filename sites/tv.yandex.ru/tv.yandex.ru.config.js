@@ -3,15 +3,16 @@ const debug = require('debug')('site:tv.yandex.ru')
 
 // enable to fetch guide description but its take a longer time
 const detailedGuide = true
+const nworker = 10
 
 // update this data by heading to https://tv.yandex.ru and change the values accordingly
 const cookies = {
   i: 'dkim62pClrWWC4CShVQYMpVw1ELNVw4XJdL/lzT4E2r05IgcST1GtCA4ho/UyGgW2AO4qftDfZzGX2OHqCzwY7GUkpM=',
-  spravka: 'dD0xNzMyMzg1MjQ4O2k9MTgwLjI0Ny4yNDEuNzA7RD1DMjQ4OTYzRURBNEE1NjVEMjg0Rjc5MDQyNEYzMjdGRDVERTg0MkQ2ODBCOUNCREUwQjk4OEYzRThDREIwQjVBNTUwRjc1OTFCRkMwRTRBRTM3RDA4MjZCMDAyNzhDMjEwMUYzOTE0NEQ5NjhBNjJGNENDRTYwM0ZDQUY4QjBBRTA0NDRGNjNENTQ0OUQ5MzkxMTdFRTMyQkVEMDM2RUJBRkEyNDhDMTM7dT0xNzMyMzg1MjQ4NDQ3MDkzNTg1O2g9MmZlZDc2M2EyNDA5NDFkMzIwYWIwYjI3ZThlYmExYWE=; tvoid=1; bltsr=1; user_display=563; _yasc=2xvlftNDZixh3JWMMTAAGeCgprMjSRqe/D5O+sz+USg0zxL17E9zLMzQXmTAy7BsF92BMrYAfh0NfQ==; bh=EjkiQ2hyb21pdW0iO3Y9IjEyOCIsICJOb3Q7QT1CcmFuZCI7dj0iMjQiLCAiT3BlcmEiO3Y9IjExNCIqAj8wOgkiV2luZG93cyJgh+uVugZqIdzK4f8IktihsQOfz+HqA/v68OcN6//99g+2xsyHCKWEAg==',
+  spravka: 'dD0xNzMyNjgzMTEwO2k9MTgwLjI0OC41OS40MDtEPTkyOUM2MkQ0Mzc3OUNBMUFCNzg3NTIyMEQ4OEJBMEVBMzQ2RUNGNUU5Q0FEQUM5RUVDMTFCNjc1ODA2MThEQTQ3RTY3RTUyRUNBRDdBMTY2OTY1MjMzRDU1QjNGMTc1MDA0NDM3MjBGMUNGQTM5RjA3OUQwRjE2MzQxMUNFOTgxQ0E0RjNGRjRGODNCMEM1QjlGNTg5RkI4NDk0NEM2QjNDQUQ5NkJGRTBFNTVCQ0Y1OTEzMEY0O3U9MTczMjY4MzExMDY3MTA1MzIzNDtoPTA1YWJmMTY0ZmI2MGViNTBhMDUwZWUwMThmYWNiYjhm',
   yandexuid: '1197179041732383499',
   yashr: '4682342911732383504',
   yuidss: '1197179041732383499',
-  user_display: 563
+  user_display: 930,
 }
 const headers = {
   'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
@@ -152,33 +153,58 @@ async function fetchPrograms({ schedules, date, channel }) {
 }
 
 async function doFetch(queues, referer, cb) {
-  const axios = require('axios')
-  while (true) {
-    if (!queues.length) {
-      break
+  if (queues.length) {
+    const workers = []
+    let n = Math.min(nworker, queues.length)
+    while (workers.length < n) {
+      const worker = () => {
+        if (queues.length) {
+          const url = queues.shift()
+          debug(`Fetching ${url}`)
+          const data = {
+            'Origin': 'https://tv.yandex.ru',
+          }
+          if (referer) {
+            data['Referer'] = referer
+          }
+          if (url.indexOf('api') > 0) {
+            data['X-Requested-With'] = 'XMLHttpRequest'
+          }
+          const headers = getHeaders(data)
+          doRequest(url, { headers })
+            .then(res => {
+              cb(res, url)
+              worker()
+            })
+        } else {
+          workers.splice(workers.indexOf(worker), 1)
+        }
+      }
+      workers.push(worker)
+      worker()
     }
-    const url = queues.shift()
-    debug(`Fetching ${url}`)
-    const data = {
-      'Origin': 'https://tv.yandex.ru',
-    }
-    if (referer) {
-      data['Referer'] = referer
-    }
-    if (url.indexOf('api') > 0) {
-      data['X-Requested-With'] = 'XMLHttpRequest'
-    }
-    const headers = getHeaders(data)
-    const content = await axios
-      .get(url, { headers })
-      .then(response => {
-        parseCookies(response.headers)
-        return response.data
-      })
-      .catch(err => console.error(err.message))
-
-    cb(content, url)
+    await new Promise(resolve => {
+      const interval = setInterval(() => {
+        if (workers.length === 0) {
+          clearInterval(interval)
+          resolve()
+        }
+      }, 500)
+    })
   }
+}
+
+async function doRequest(url, params) {
+  const axios = require('axios')
+  const content = await axios
+    .get(url, params)
+    .then(response => {
+      parseCookies(response.headers)
+      return response.data
+    })
+    .catch(err => console.error(err.message))
+
+  return content
 }
 
 function parseContent(content, date, checkOnly = false) {
