@@ -138,6 +138,19 @@ async function fetchProgramDetails(programUrl) {
     } else if (imgElements.length >= 2) {
       // Si no hay 3, seleccionamos la segunda imagen
       iconUrl = imgElements.eq(1).attr('src');
+    } else {
+      // Si no existen ni la tercera ni la segunda imagen, buscar la URL en el esquema JSON
+      const jsonLd = $('script[type="application/ld+json"]').html(); // Obtener el JSON-LD del contenido
+      if (jsonLd) {
+        try {
+          const parsedData = JSON.parse(jsonLd); // Parsear el JSON
+          if (parsedData.image) {
+            iconUrl = parsedData.image; // Usar la URL de "image" si está disponible
+          }
+        } catch (error) {
+          console.error('Error al analizar JSON-LD:', error);
+        }
+      }
     }
 
     // Reemplazar 'galeria' por 'detallegaleriah' en la URL, si la imagen se encuentra
