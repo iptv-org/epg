@@ -13,48 +13,51 @@ module.exports = {
     return `https://www.movistarplus.es/programacion-tv/${channel.site_id}/${dayjs(date).format('YYYY-MM-DD')}?v=json`;
   },
 
-  // Función parser para manejar múltiples días
-  async parser({ content, channel, date }) {
-    let programs = [];
+// Función parser para manejar múltiples días
+async parser({ content, channel, date }) {
+  let programs = [];
 
-    const jsonData = await extractJSONFromHTML(content);
-    if (!jsonData || !jsonData.itemListElement) {
-      console.error('No se encontraron elementos de la programación.');
-      return programs;
-    }
-
-    // Cargar el HTML para obtener la URL correspondiente
-    const $ = cheerio.load(content);
-
-    for (const item of jsonData.itemListElement) {
-      if (item.item && item.item.startDate && item.item.endDate) {
-        const startTime = DateTime.fromISO(item.item.startDate, { zone: 'Europe/Madrid' });
-        const stopTime = DateTime.fromISO(item.item.endDate, { zone: 'Europe/Madrid' });
-
-        // Buscar el enlace correspondiente en el HTML que coincide con la hora
-        const programTime = startTime.toFormat('HH:mm');
-        const programLink = $(`li.time:contains(${programTime})`).closest('a.j_ficha').attr('href');
-
-        // Si se encuentra un enlace, obtener los detalles del programa
-        let programDetails = { description: 'Sin descripción', image: 'Sin imagen', category: 'Sin categoría' };
-        if (programLink) {
-          programDetails = await fetchProgramDetails(programLink);
-        }
-
-        // Añadir el programa a la lista
-        programs.push({
-          title: item.item.name,
-          category: programDetails.category,
-          start: startTime.toISO(),
-          stop: stopTime.toISO(),
-          description: item.item.description || programDetails.description,
-          icon: programDetails.image,
-        });
-      }
-    }
-
+  const jsonData = await extractJSONFromHTML(content);
+  if (!jsonData || !jsonData.itemListElement) {
+    console.error('No se encontraron elementos de la programación.');
     return programs;
-  },
+  }
+
+  // Cargar el HTML para obtener el género y otros detalles del programa
+  const $ = cheerio.load(content);
+
+  for (const item of jsonData.itemListElement) {
+    if (item.item && item.item.startDate && item.item.endDate) {
+      const startTime = DateTime.fromISO(item.item.startDate, { zone: 'Europe/Madrid' });
+      const stopTime = DateTime.fromISO(item.item.endDate, { zone: 'Europe/Madrid' });
+
+      // Buscar el enlace correspondiente en el HTML que coincide con la hora
+      const programTime = startTime.toFormat('HH:mm');
+      const containerBox = $(`li.time:contains(${programTime})`).closest('.container_box');
+
+      const programLink = containerBox.find('a').first().attr('href');
+      const genre = containerBox.find('li.genre').text().trim() || 'Sin clasificar';
+
+      // Si se encuentra un enlace, obtener los detalles del programa
+      let programDetails = { description: 'Sin descripción', image: 'Sin imagen' };
+      if (programLink) {
+        programDetails = await fetchProgramDetails(programLink);
+      }
+
+      // Añadir el programa a la lista
+      programs.push({
+        title: item.item.name,
+        start: startTime.toISO(),
+        stop: stopTime.toISO(),
+        description: item.item.description || programDetails.description,
+        icon: programDetails.image,
+        category: genre, // Incluimos el género en la información del programa
+      });
+    }
+  }
+
+  return programs;
+},
 
   async channels() {
     return [
@@ -67,21 +70,28 @@ module.exports = {
   },
 };
 
-// Función genérica para reintentar una tarea
-async function retryTask(taskFn, maxRetries = 5, delayMs = 1000) {
-  let attempt = 0;
-  while (attempt < maxRetries) {
+// Función genérica para reintentar una tarea hasta un número de veces con un retraso
+async function retryTask(taskFn, maxRetries = 5, delay = 2000) {
+  let attempts = 0;
+  while (attempts < maxRetries) {
     try {
-      return await taskFn();
+      return await taskFn(); // Intentar ejecutar la tarea
     } catch (error) {
-      console.error(`Intento ${attempt + 1} fallido:`, error.message);
-      attempt++;
-      if (attempt < maxRetries) {
-        await new Promise((resolve) => setTimeout(resolve, delayMs)); // Esperar antes de reintentar
+      attempts++;
+      console.error(`Error al intentar la tarea (intento ${attempts}):`, error.message);
+
+      // Si se trata de un error de red (ECONNRESET, ECONNREFUSED, socket hang up), reintentar
+      if (error.code === 'ECONNRESET' || error.code === 'ECONNREFUSED' || error.message.includes('socket hang up')) {
+        console.log(`Reintentando en ${delay} ms...`);
+        await new Promise(resolve => setTimeout(resolve, delay)); // Esperar antes de reintentar
+      } else {
+        // Si el error no es de red, detener los reintentos
+        console.error('Error desconocido:', error.message);
+        break;
       }
     }
   }
-  throw new Error(`La tarea falló después de ${maxRetries} intentos.`);
+  throw new Error('Número máximo de intentos alcanzado.');
 }
 
 // Función para extraer JSON del HTML
@@ -104,7 +114,7 @@ async function fetchContent(url) {
     const response = await axios.get(url, {
       headers: {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36',
-        'Accept': 'text/html,application/xhtml+xml,application/json;q=0.9,*/*;q=0.8',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
       },
     });
     if (!response.data) throw new Error('La respuesta está vacía.');
@@ -138,22 +148,7 @@ async function fetchProgramDetails(programUrl) {
     // Obtener la descripción
     const description = $('meta[name="description"]').attr('content');
 
-    // Obtener las categorías desde los <span itemprop="name">, segunda y tercera aparición
-    const categories = [];
-    const nameElements = $('span[itemprop="name"]');
-
-    if (nameElements.length >= 2) {
-      categories.push(nameElements.eq(1).text().trim()); // Segunda aparición
-    }
-
-    if (nameElements.length >= 3) {
-      categories.push(nameElements.eq(2).text().trim()); // Tercera aparición
-    }
-
-    // Si se encontraron categorías, las usamos
-    const category = categories.join(' / ') || 'Sin categoría';
-
-    return { description: description || 'Sin descripción', image: iconUrl, category };
+    return { description: description || 'Sin descripción', image: iconUrl };
   }, 5, 2000); // Reintentar hasta 5 veces con un retraso de 2 segundos entre intentos
 }
 
@@ -178,5 +173,4 @@ async function fetchProgramDetails(programUrl) {
       }
     }
   }
-
 })();
