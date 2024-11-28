@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <!--
   <channel site="dens.tv" lang="id" xmltv_id="" site_id="3">Live Streaming 1</channel>
-  <channel site="dens.tv" lang="id" xmltv_id="" site_id="78">TBN</channel>
-  <channel site="dens.tv" lang="id" xmltv_id="" site_id="104">FREEDOM</channel>
   <channel site="dens.tv" lang="id" xmltv_id="" site_id="120">MotoRRacing TV</channel>
-  <channel site="dens.tv" lang="id" xmltv_id="" site_id="123">W-Sport</channel>
   <channel site="dens.tv" lang="id" xmltv_id="" site_id="127">crema.tv</channel>
-  <channel site="dens.tv" lang="id" xmltv_id="" site_id="130">Dance TV</channel>
-  -->
   <channel site="dens.tv" lang="id" xmltv_id="AlJazeera.qa" site_id="27">Al Jazeera Arabic</channel>
   <channel site="dens.tv" lang="id" xmltv_id="AlJazeeraEnglish.qa" site_id="56">Al Jazeera English</channel>
   <channel site="dens.tv" lang="id" xmltv_id="AlQuranAlKareemTV.sa" site_id="82">Quran TV</channel>
@@ -16,27 +10,32 @@
   <channel site="dens.tv" lang="id" xmltv_id="AniplusAsia.sg" site_id="38">ANIPLUS HD</channel>
   <channel site="dens.tv" lang="id" xmltv_id="ANTV.id" site_id="8">antv</channel>
   <channel site="dens.tv" lang="id" xmltv_id="BTV.id" site_id="80">BTV</channel>
-  <channel site="dens.tv" lang="id" xmltv_id="CCM.hk" site_id="110">CCM (Celestial Classic MV)</channel>
   <channel site="dens.tv" lang="id" xmltv_id="CCTV4Asia.cn" site_id="85">CCTV-4</channel>
+  <channel site="dens.tv" lang="id" xmltv_id="CelestialClassicMovies.id" site_id="110">CCM (Celestial Classic MV)</channel>
   <channel site="dens.tv" lang="id" xmltv_id="CelestialMoviesIndonesia.id" site_id="99">Celestial Movies HD</channel>
   <channel site="dens.tv" lang="id" xmltv_id="CGTN.cn" site_id="16">CGTN Documentary</channel>
-  <channel site="dens.tv" lang="id" xmltv_id="CinemaWorld.my" site_id="87">CinemaWorld HD</channel>
+  <channel site="dens.tv" lang="id" xmltv_id="ChannelJowo.id" site_id="137">Channel Jowo</channel>
   <channel site="dens.tv" lang="id" xmltv_id="CNA.sg" site_id="61">CNA</channel>
   <channel site="dens.tv" lang="id" xmltv_id="DAAITV.id" site_id="23">DAAI TV</channel>
+  <channel site="dens.tv" lang="id" xmltv_id="DanceTelevision.nl" site_id="130">Dance TV</channel>
   <channel site="dens.tv" lang="id" xmltv_id="DeluxeLoungeHD.de" site_id="129">Deluxe Lounge</channel>
   <channel site="dens.tv" lang="id" xmltv_id="DensFoodChannel.id" site_id="117">DensFood Channel</channel>
   <channel site="dens.tv" lang="id" xmltv_id="DensLearningKnowledge.id" site_id="1">DensKnowledge</channel>
   <channel site="dens.tv" lang="id" xmltv_id="DensLifeStyle.id" site_id="42">DensLife &amp; Style</channel>
   <channel site="dens.tv" lang="id" xmltv_id="DensPlay.id" site_id="107">DensPlay</channel>
   <channel site="dens.tv" lang="id" xmltv_id="DensShowBiz.id" site_id="102">DensShowBiz</channel>
+  <channel site="dens.tv" lang="id" xmltv_id="DIM.ua" site_id="132">DIM TV</channel>
   <channel site="dens.tv" lang="id" xmltv_id="DWEnglish.de" site_id="81">DW-TV</channel>
   <channel site="dens.tv" lang="id" xmltv_id="ElshintaTV.id" site_id="94">Elshinta TV</channel>
   <channel site="dens.tv" lang="id" xmltv_id="FightSports.us" site_id="60">FIGHT SPORTS HD</channel>
   <channel site="dens.tv" lang="id" xmltv_id="France24English.fr" site_id="69">France 24</channel>
-  <channel site="dens.tv" lang="id" xmltv_id="HITS.sg" site_id="101">HITS HD</channel>
-  <channel site="dens.tv" lang="id" xmltv_id="HITSMovies.sg" site_id="119">HITS MOVIES</channel>
+  <channel site="dens.tv" lang="id" xmltv_id="FREEDOM.ua" site_id="104">FREEDOM</channel>
   <channel site="dens.tv" lang="id" xmltv_id="HorizonSports.us" site_id="121">HorizonSports</channel>
+  <channel site="dens.tv" lang="id" xmltv_id="IDTV.id" site_id="131">IDTV</channel>
+  <channel site="dens.tv" lang="id" xmltv_id="IndonesianaTV.id" site_id="136">Indonesiana TV</channel>
   <channel site="dens.tv" lang="id" xmltv_id="JakTV.id" site_id="112">Jak tv</channel>
+  <channel site="dens.tv" lang="id" xmltv_id="KBSKorea.kr" site_id="133">KBS Korea</channel>
+  <channel site="dens.tv" lang="id" xmltv_id="KBSWorld.kr" site_id="134">KBS World</channel>
   <channel site="dens.tv" lang="id" xmltv_id="KIX.hk" site_id="49">KIX HD</channel>
   <channel site="dens.tv" lang="id" xmltv_id="KompasTV.id" site_id="14">Kompas TV</channel>
   <channel site="dens.tv" lang="id" xmltv_id="KPlus.sg" site_id="100">K-PLUS HD</channel>
@@ -48,15 +47,15 @@
   <channel site="dens.tv" lang="id" xmltv_id="MyCinemaEurope.ch" site_id="92">My Cinema Europe HD</channel>
   <channel site="dens.tv" lang="id" xmltv_id="MyFamily.id" site_id="114">My Family Channel</channel>
   <channel site="dens.tv" lang="id" xmltv_id="MyKidz.id" site_id="96">My Kidz HD</channel>
-  <channel site="dens.tv" lang="id" xmltv_id="NaDooCommerce.id" site_id="75">NaDoo Commerce</channel>
-  <channel site="dens.tv" lang="id" xmltv_id="NaDooKorean.id" site_id="126">NaDooKorean</channel>
   <channel site="dens.tv" lang="id" xmltv_id="NET.id" site_id="13">NET.</channel>
   <channel site="dens.tv" lang="id" xmltv_id="NHKWorldJapan.jp" site_id="77">NHK WORLD-JAPAN</channel>
+  <channel site="dens.tv" lang="id" xmltv_id="NusantaraTV.id" site_id="138">Nusantara TV (NTV)</channel>
   <channel site="dens.tv" lang="id" xmltv_id="RajawaliTV.id" site_id="22">RTV</channel>
   <channel site="dens.tv" lang="id" xmltv_id="ROCKAction.sg" site_id="44">ROCK Action</channel>
   <channel site="dens.tv" lang="id" xmltv_id="ROCKEntertainment.sg" site_id="39">ROCK Entertainment HD</channel>
   <channel site="dens.tv" lang="id" xmltv_id="RodjaTV.id" site_id="21">RodjaTV</channel>
   <channel site="dens.tv" lang="id" xmltv_id="StingrayClassica.ca" site_id="128">Stingray Classica</channel>
+  <channel site="dens.tv" lang="id" xmltv_id="TBN.ru" site_id="78">TBN</channel>
   <channel site="dens.tv" lang="id" xmltv_id="Thrill.hk" site_id="55">Thrill</channel>
   <channel site="dens.tv" lang="id" xmltv_id="TRTWorld.tr" site_id="41">TRT World</channel>
   <channel site="dens.tv" lang="id" xmltv_id="TV5MondeAsia.fr" site_id="90">TV5MONDE ASIE</channel>
@@ -67,4 +66,5 @@
   <channel site="dens.tv" lang="id" xmltv_id="TVRINasional.id" site_id="17">TVRI</channel>
   <channel site="dens.tv" lang="id" xmltv_id="TVRISport.id" site_id="118">TVRI Sport</channel>
   <channel site="dens.tv" lang="id" xmltv_id="WION.in" site_id="79">WION</channel>
+  <channel site="dens.tv" lang="id" xmltv_id="WSport.za" site_id="123">W-Sport</channel>
 </channels>
