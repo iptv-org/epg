@@ -11,5 +11,5 @@ npm run grab -- --site=tvtv.us
 ### Test
 
 ```sh
-npm test -- tvprofil.com
+npm test -- tvtv.us
 ```
