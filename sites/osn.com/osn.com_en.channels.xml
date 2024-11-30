@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
   <channel site="osn.com" lang="en" xmltv_id="" site_id="DWR">DWRR 101.9</channel>
+  <channel site="osn.com" lang="en" xmltv_id="" site_id="OBG">OSN TV Crime</channel>
+  <channel site="osn.com" lang="en" xmltv_id="" site_id="OCM">OSNtv Movies Horror</channel>
+  <channel site="osn.com" lang="en" xmltv_id="" site_id="OFM">OSN TV Movies Family</channel>
+  <channel site="osn.com" lang="en" xmltv_id="" site_id="OLH">OSN TV Now</channel>
+  <channel site="osn.com" lang="en" xmltv_id="" site_id="OMC">OSN TV Movies Comedy</channel>
+  <channel site="osn.com" lang="en" xmltv_id="" site_id="OST">OSN TV Showcase Classics</channel>
+  <channel site="osn.com" lang="en" xmltv_id="" site_id="OTO">OSN TV One</channel>
   <channel site="osn.com" lang="en" xmltv_id="AksyonTVInternational.ph" site_id="AKS">Kapatid TV5</channel>
   <channel site="osn.com" lang="en" xmltv_id="AlfaSeries.ae" site_id="SE2">Alfa Series +2</channel>
   <channel site="osn.com" lang="en" xmltv_id="AlfaSeriesPlus2.ae" site_id="SER">Alfa Series Channel</channel>
   <channel site="osn.com" lang="en" xmltv_id="AlSafwa.ae" site_id="SAF">Al Safwa</channel>
   <channel site="osn.com" lang="en" xmltv_id="AlYawm.ae" site_id="YAW">Alfa Al Yawm</channel>
   <channel site="osn.com" lang="en" xmltv_id="ANC.ph" site_id="ANC">ANC</channel>
-  <channel site="osn.com" lang="en" xmltv_id="BabyTV.uk" site_id="BAB">BabyTV</channel>
+  <channel site="osn.com" lang="en" xmltv_id="AnimalPlanet.ae" site_id="APL">Animal Planet</channel>
   <channel site="osn.com" lang="en" xmltv_id="BloombergTVEurope.uk" site_id="BTV">Bloomberg</channel>
+  <channel site="osn.com" lang="en" xmltv_id="CartoonNetworkArabic.ae" site_id="TCN">Cartoon Network</channel>
   <channel site="osn.com" lang="en" xmltv_id="Cinema1.ae" site_id="CM1">Alfa Cinema 1</channel>
   <channel site="osn.com" lang="en" xmltv_id="Cinema2.ae" site_id="CM2">Alfa Cinema 2</channel>
   <channel site="osn.com" lang="en" xmltv_id="CinemaOneGlobal.ph" site_id="COG">Cinema One Global</channel>
@@ -17,11 +25,9 @@
   <channel site="osn.com" lang="en" xmltv_id="CNNArabic.ae" site_id="CNN">CNN</channel>
   <channel site="osn.com" lang="en" xmltv_id="CrimePlusInvestigation.uk" site_id="CAI">Crime &amp; Investigation Network</channel>
   <channel site="osn.com" lang="en" xmltv_id="DiscoveryChannelMiddleEastAfrica.us" site_id="DSC">Discovery HD</channel>
-  <channel site="osn.com" lang="en" xmltv_id="DiscoveryScienceMiddleEast.uk" site_id="SCI">Discovery Science HD</channel>
-  <channel site="osn.com" lang="en" xmltv_id="DisneyChannelMENA.uk" site_id="DIS">Disney HD</channel>
-  <channel site="osn.com" lang="en" xmltv_id="DisneyJuniorMENA.uk" site_id="DJR">Disney Junior</channel>
   <channel site="osn.com" lang="en" xmltv_id="EMiddleEast.us" site_id="ETV">E! Entertainment</channel>
   <channel site="osn.com" lang="en" xmltv_id="Fann.ae" site_id="FAN">Alfa Fann</channel>
+  <channel site="osn.com" lang="en" xmltv_id="Fatafeat.ae" site_id="FTF">Fatafeat</channel>
   <channel site="osn.com" lang="en" xmltv_id="GMALifeTV.ph" site_id="GML">GMA Life TV</channel>
   <channel site="osn.com" lang="en" xmltv_id="GMANewsTV.ph" site_id="GMN">GMA News TV</channel>
   <channel site="osn.com" lang="en" xmltv_id="GMAPinoyTVMiddleEast.ph" site_id="GMA">GMA Pinoy TV</channel>
@@ -33,33 +39,23 @@
   <channel site="osn.com" lang="en" xmltv_id="MTVLive.uk" site_id="MTL">MTV Live HD</channel>
   <channel site="osn.com" lang="en" xmltv_id="MusicNow.ae" site_id="NOW">Music Now</channel>
   <channel site="osn.com" lang="en" xmltv_id="MyxMiddleEast.ph" site_id="MYX">Myx</channel>
-  <channel site="osn.com" lang="en" xmltv_id="NationalGeographicMiddleEast.uk" site_id="NGO">Nat Geo HD</channel>
-  <channel site="osn.com" lang="en" xmltv_id="NationalGeographicWildMiddleEast.uk" site_id="NHD">Nat Geo Wild HD</channel>
   <channel site="osn.com" lang="en" xmltv_id="NickelodeonArabia.ae" site_id="NIC">Nickelodeon HD</channel>
-  <channel site="osn.com" lang="en" xmltv_id="NickJrArabia.ae" site_id="NJR">Nick Jr.</channel>
+  <channel site="osn.com" lang="en" xmltv_id="NickJrArabia.ae" site_id="NJR">Nick Jr</channel>
   <channel site="osn.com" lang="en" xmltv_id="NicktoonsArabia.ae" site_id="NKT">NickToons HD</channel>
   <channel site="osn.com" lang="en" xmltv_id="OSNComedy.ae" site_id="OCO">OSN TV Comedy</channel>
-  <channel site="osn.com" lang="en" xmltv_id="" site_id="OBG">OSN TV Crime</channel>
   <channel site="osn.com" lang="en" xmltv_id="OSNKids.ae" site_id="OMK">OSN TV Kids</channel>
   <channel site="osn.com" lang="en" xmltv_id="OSNKidzone.ae" site_id="KDZ">OSN TV Kidzone</channel>
   <channel site="osn.com" lang="en" xmltv_id="OSNMezze.ae" site_id="OMZ">OSN TV Mezze</channel>
   <channel site="osn.com" lang="en" xmltv_id="OSNMoviesAction.ae" site_id="AHD">OSN TV Movies Action</channel>
-  <channel site="osn.com" lang="en" xmltv_id="" site_id="OMC">OSN TV Movies Comedy</channel>
-  <channel site="osn.com" lang="en" xmltv_id="" site_id="OFM">OSN TV Movies Family</channel>
   <channel site="osn.com" lang="en" xmltv_id="OSNMoviesHollywood.ae" site_id="OPR">OSN TV Movies Hollywood</channel>
   <channel site="osn.com" lang="en" xmltv_id="OSNMoviesPremiere.ae" site_id="OM1">OSN TV Movies Premiere</channel>
   <channel site="osn.com" lang="en" xmltv_id="OSNNews.ae" site_id="ONS">OSN TV News</channel>
-  <channel site="osn.com" lang="en" xmltv_id="" site_id="OLH">OSN TV Now</channel>
-  <channel site="osn.com" lang="en" xmltv_id="" site_id="OTO">OSN TV One</channel>
   <channel site="osn.com" lang="en" xmltv_id="OSNShowcase.ae" site_id="OFH">OSN TV Showcase</channel>
-  <channel site="osn.com" lang="en" xmltv_id="" site_id="OST">OSN TV Showcase Classics</channel>
   <channel site="osn.com" lang="en" xmltv_id="OSNYahala.ae" site_id="OYH">OSN TV Yahala</channel>
   <channel site="osn.com" lang="en" xmltv_id="OSNYahalaAflam.ae" site_id="OYC">OSN TV Yahala Aflam</channel>
   <channel site="osn.com" lang="en" xmltv_id="OSNYahalaBilArabi.ae" site_id="OYA">OSN TV Yahala Bil Arabi</channel>
   <channel site="osn.com" lang="en" xmltv_id="PBARush.ph" site_id="PBA">PBA Rush</channel>
   <channel site="osn.com" lang="en" xmltv_id="SkyNewsInternational.uk" site_id="SKH">Sky News HD</channel>
-  <channel site="osn.com" lang="en" xmltv_id="StarMoviesMiddleEast.ae" site_id="STM">Star Movies HD</channel>
-  <channel site="osn.com" lang="en" xmltv_id="StarWorldMiddleEast.ae" site_id="STW">Star World HD</channel>
   <channel site="osn.com" lang="en" xmltv_id="TeleRadyoGlobal.ph" site_id="DZM">DZMM Teleradyo</channel>
   <channel site="osn.com" lang="en" xmltv_id="TheFilipinoChannelMiddleEast.us" site_id="TFC">TFC</channel>
   <channel site="osn.com" lang="en" xmltv_id="TLCArabia.us" site_id="TLC">TLC HD</channel>
