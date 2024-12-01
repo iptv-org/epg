@@ -298,7 +298,7 @@ function getUrl(date, region = null, page = null, event = null) {
     url += `${url.endsWith('/') ? '' : '/'}event?eventId=${event.id}&programCoId=`
   }
   if (date) {
-    url += `${url.indexOf('?') < 0 ? '?' : '&'}date=${date.format('YYYY-MM-DD')}&grid=all&period=all-day`
+    url += `${url.indexOf('?') < 0 ? '?' : '&'}date=${date.format('YYYY-MM-DD')}${!page ? '&grid=all' : ''}&period=all-day`
   }
   if (page && page.id !== undefined && page.offset !== undefined) {
     url += `${url.indexOf('?') < 0 ? '?' : '&'}offset=${page.offset}`
