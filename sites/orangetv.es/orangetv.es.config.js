@@ -65,7 +65,7 @@ function parseIcon(item){
 }
 
 function parseItems(content, channel) {
-  const json = typeof content === 'string' ? JSON.parse(content) : content
+  const json = typeof content === 'string' ? JSON.parse(content) : []
 
   const channelData = json.find(i => i.channelExternalId == channel.site_id);
 
