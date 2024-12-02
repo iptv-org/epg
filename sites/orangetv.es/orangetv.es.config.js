@@ -1,4 +1,5 @@
 const dayjs = require('dayjs')
+const axios = require('axios')
 
 const API_PROGRAM_ENDPOINT = 'https://epg.orangetv.orange.es/epg/Smartphone_Android/1_PRO'
 const API_CHANNEL_ENDPOINT = 'https://pc.orangetv.orange.es/pc/api/rtv/v1/GetChannelList?bouquet_id=1&model_external_id=PC&filter_unsupported_channels=false&client=json'
@@ -17,9 +18,34 @@ module.exports = {
   url({ date }) {
     return `${API_PROGRAM_ENDPOINT}/${date.format('YYYYMMDD')}_8h_1.json`
   },
-  parser: function ({ content, channel }) {
+  async parser({ content, channel, date }) {
+    let items = []
+
+    const promises = [
+      axios.get(
+        `${API_PROGRAM_ENDPOINT}/${date.format('YYYYMMDD')}_8h_1.json`,
+      ),
+      axios.get(
+        `${API_PROGRAM_ENDPOINT}/${date.format('YYYYMMDD')}_8h_2.json`,
+      ),
+      axios.get(
+        `${API_PROGRAM_ENDPOINT}/${date.format('YYYYMMDD')}_8h_3.json`,
+      ),
+    ]
+
+    await Promise.all(promises)
+    .then(results => {
+      results.forEach(r => {
+        const responseContent = r.data
+        items = items.concat(parseItems(responseContent, channel))
+      })
+    })
+    .catch(console.error)
+
+    // remove duplicates
+    items = items.filter((item, index) => items.findIndex(oi => oi.id === item.id) === index);
+
     let programs = []
-    const items = parseItems(content, channel)
     items.forEach(item => {
       programs.push({
         title: item.name,
@@ -65,7 +91,7 @@ function parseIcon(item){
 }
 
 function parseItems(content, channel) {
-  const json = typeof content === 'string' ? JSON.parse(content) : []
+  const json = typeof content === 'string' ? JSON.parse(content) : typeof content === 'object' ? content : []
 
   const channelData = json.find(i => i.channelExternalId == channel.site_id);
 
