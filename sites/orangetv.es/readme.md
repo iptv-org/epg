@@ -16,7 +16,7 @@ npm run channels:parse -- --config=./sites/orangetv.es/orangetv.es.config.js --o
 
 ### Test
 
-No tests available yet
+npm test -- orangetv.es
 
 ### Todo
 
