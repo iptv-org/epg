@@ -78,7 +78,6 @@ module.exports = {
       .then(r => r.data)
       .catch(console.log)
 
-      console.log('data', data)
 
     return Object.values(data).map(item => {
       return {
