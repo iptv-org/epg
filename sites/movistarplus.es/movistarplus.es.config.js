@@ -58,7 +58,38 @@ module.exports = {
 
     return programs
   },
+  async channels() {
+    const axios = require('axios')
+    //const dayjs = require('dayjs')
+    const data = await axios
+      .post(`${API_PROGRAM_ENDPOINT}/wp-admin/admin-ajax.php`,
+        {
+          action: 'getChannels',
+        },
+        {
+          headers: {
+            Origin: API_PROGRAM_ENDPOINT,
+            Referer: `${API_PROGRAM_ENDPOINT}/programacion/`,
+            "Content-Type" : 'application/x-www-form-urlencoded; charset=UTF-8',
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36 Edg/79.0.309.71'
+          }
+        }
+      )
+      .then(r => r.data)
+      .catch(console.log)
+
+      console.log('data', data)
+
+    return Object.values(data).map(item => {
+      return {
+        lang: 'es',
+        site_id: item.cod_cadena_tv,
+        name: item.des_cadena_tv
+      }
+    })
+  }
 }
+
 
 function parseIcon(item, channel) {
   if(item.cod_elemento_emision)
