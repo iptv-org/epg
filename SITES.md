@@ -71,7 +71,7 @@
 | [maxtvgo.mk](sites/maxtvgo.mk)                                     | 🟢     |                                                                                          |
 | [mediagenie.co.kr](sites/mediagenie.co.kr)                         | 🟢     |                                                                                          |
 | [mediaklikk.hu](sites/mediaklikk.hu)                               | 🟢     |                                                                                          |
-| [mediaset.it](sites/mediaset.it)                                   | 🟢     |                                                                                          |
+| [mediasetinfinity.mediaset.it](sites/mediasetinfinity.mediaset.it) | 🟢     |                                                                                          |
 | [melita.com](sites/melita.com)                                     | 🟢     |                                                                                          |
 | [meo.pt](sites/meo.pt)                                             | 🟡     | https://github.com/iptv-org/epg/issues/2446                                              |
 | [meuguia.tv](sites/meuguia.tv)                                     | 🟢     |                                                                                          |
