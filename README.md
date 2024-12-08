@@ -7,6 +7,7 @@ Tools for downloading the EPG (Electronic Program Guide) for thousands of TV cha
 - ✨ [Installation](#installation)
 - 🚀 [Usage](#usage)
 - 💫 [Update](#update)
+- 🐋 [Using Docker](#using-docker)
 - 📺 [Playlists](#playlists)
 - 🗄 [Database](#database)
 - 👨‍💻 [API](#api)
@@ -134,6 +135,11 @@ And then update all the dependencies:
 ```sh
 npm install
 ```
+
+## Using Docker
+
+Using Docker can simplify EPG usage, see [docker-epg](https://github.com/tohenk/docker-epg) on how to prepare, configure,
+and automate EPG tasks in Docker.
 
 ## Playlists
 
