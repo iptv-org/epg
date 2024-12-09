@@ -80,7 +80,7 @@
 | [mncvision.id](sites/mncvision.id)                                 | 🟢     |                                                                                          |
 | [moji.id](sites/moji.id)                                           | 🔴     | https://github.com/iptv-org/epg/issues/2392                                              |
 | [mon-programme-tv.be](sites/mon-programme-tv.be)                   | 🟢     |                                                                                          |
-| [movistarplus.es](sites/movistarplus.es)                           | 🟢     |                                                                                          |
+| [movistarplus.es](sites/movistarplus.es)                           | 🔴     | https://github.com/iptv-org/epg/issues/2498                                              |
 | [mtel.ba](sites/mtel.ba)                                           | 🟢     |                                                                                          |
 | [mts.rs](sites/mts.rs)                                             | 🟢     |                                                                                          |
 | [mujtvprogram.cz](sites/mujtvprogram.cz)                           | 🟢     |                                                                                          |
