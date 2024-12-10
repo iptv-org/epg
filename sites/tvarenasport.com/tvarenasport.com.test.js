@@ -14,6 +14,10 @@ const channel = {
   xmltv_id: 'ArenaSport1Premium.rs'
 }
 
+it('can generate valid url', () => {
+  expect(url).toBe('https://www.tvarenasport.com/tv-scheme')
+})
+
 it('can parse response', () => {
   const content = fs.readFileSync(path.join(__dirname, '__data__', 'content.html'))
   const result = parser({ channel, date, content }).map(p => {
