@@ -9,10 +9,10 @@ dayjs.extend(utc)
 dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
-const tz = 'Europe/Belgrade'
-
 module.exports = {
   site: 'tvarenasport.com',
+  tz: 'Europe/Belgrade',
+  lang: 'sr',
   days: 2,
   request: {
     cache: {
@@ -40,7 +40,7 @@ module.exports = {
         .siblings('.tv-scheme-new-slider-wrapper')
         .find('.tv-scheme-new-slider-item').toArray()
           .forEach((el, i) => {
-            programs.push(...parseSchedules($(el), dates[i]))
+            programs.push(...parseSchedules($(el), dates[i], module.exports.tz))
           })
       programs.forEach((s, i) => {
         if (i < programs.length - 2) {
@@ -57,7 +57,7 @@ module.exports = {
   async channels() {
     const channels = []
     const data = await axios
-      .get('https://www.tvarenasport.com/tv-scheme')
+      .get(this.url)
       .then(r => r.data)
       .catch(console.error)
 
@@ -84,7 +84,7 @@ module.exports = {
         const [, id] = $(item).attr('src').match(/chanel-([a-z0-9]+)\.png/) || [null, null]
         if (id) {
           channels.push({
-            lang: 'sr',
+            lang: this.lang,
             site_id: id,
             name: names(id)
           })
@@ -96,18 +96,18 @@ module.exports = {
   }
 }
 
-function parseSchedules($s, date) {
+function parseSchedules($s, date, tz) {
   const schedules = []
   const $ = $s._make
   $s.find('.slider-content').toArray()
     .forEach(el => {
-      schedules.push(parseSchedule($(el), date))
+      schedules.push(parseSchedule($(el), date, tz))
     })
 
   return schedules
 }
 
-function parseSchedule($s, date) {
+function parseSchedule($s, date, tz) {
   const time = $s.find('.slider-content-top span').text()
   const start = dayjs.tz(`${date.format('YYYY-MM-DD')} ${time}`, 'YYYY-MM-DD HH:mm', tz)
   const category = $s.find('.slider-content-middle span').text()
