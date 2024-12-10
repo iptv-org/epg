@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="
+  HD,Live,Video,Online Streaming,Football Matches,TV series,Movies,Bouquets,Africa,Smart TV
+  " />
+    <meta name="description" content="
+  StarTimes have highlighted trendy TV programs, movies and marvelous sports content for the audience regardless of the device's type you are using. 
+  " />
+    <meta name="author" content="https://www.startimestv.com/" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/Public/static/images/icon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/Public/static/images/icon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/Public/static/images/icon/favicon-16x16.png" />
+    <link href="/Public/static/themes/css/global.css" rel="stylesheet" type="text/css" />
+    <script src="/Public/static/themes/js/jquery-3.4.1.min.js"></script>
+    <script src="/Public/static/themes/js/global.js"></script>
+    <script src="/Public/static/themes/js/date.format.js"></script>
+    <script src="/Public/static/themes/js/plus/jquery.mScroll.js"></script>
+    <title>kui</title>
+    <script>
+        ; (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r
+                ; (i[r] =
+                    i[r] ||
+                    function () {
+                        ; (i[r].q = i[r].q || []).push(arguments)
+                    }),
+                    (i[r].l = 1 * new Date())
+                ; (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0])
+            a.async = 1
+            a.src = g
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga')
+        ga('create', 'UA-55969660-2', 'auto')
+        ga('send', 'pageview', { dimension1: '6' })
+        //获得登陆用户时区与GMT时区的差值
+        var exp = new Date()
+        var gmtHours = -(exp.getTimezoneOffset() / 60)
+        setCookie('customer_timezone', gmtHours, 1)
+    </script>
+    <!-- Facebook Pixel Code -->
+    <script>
+        !(function (f, b, e, v, n, t, s) {
+            if (f.fbq) return
+            n = f.fbq = function () {
+                n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            }
+            if (!f._fbq) f._fbq = n
+            n.push = n
+            n.loaded = !0
+            n.version = '2.0'
+            n.queue = []
+            t = b.createElement(e)
+            t.async = !0
+            t.src = v
+            s = b.getElementsByTagName(e)[0]
+            s.parentNode.insertBefore(t, s)
+        })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js')
+        fbq('init', '768875227213487')
+        fbq('track', 'PageView')
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3756276545638940"
+        crossorigin="anonymous"></script>
+    <!-- End Facebook Pixel Code -->
+
+</head>
+
+<body>
+    <style>
+        #header .block .nav_main .widget-area-notice {
+            width: 529px !important;
+        }
+    </style>
+    <div id="header">
+        <div class="block" style="height: 50px;">
+            <div id="widget-area-article-channeldetail-index-674b36827248d1904"
+                uniqid="article-channeldetail-index-674b36827248d1904" class="widget-area logo"
+                style="background:none;"><a href="/"
+                    style="background:url(/Uploads/Picture/2016/08/23/s57bc2bb73663d.png) center center no-repeat;display:block;width:133px;height:60px;background-size:133px;"></a>
+            </div>
+            <ul id="widget-area-article-channeldetail-index-674b3682757403762"
+                uniqid="article-channeldetail-index-674b3682757403762" class="widget-area nav_main">
+                <li class="l1 ">
+                    <a href="/">Home</a>
+                </li>
+                <li class="l2 ">
+                    <a href="http://www.startimestv.com/startimeson" target="_blank">StarTimes ON</a>
+                </li>
+                <li class="l3 ">
+                    <a href="/tv_guide.html">TV Guide</a>
+                </li>
+                <li class="l4 ">
+                    <a href="/bouquet.html">Bouquets</a>
+                </li>
+                <li class="l5 ">
+                    <a href="/product.html">Products</a>
+                    <p>
+                        <a href="http://icc.startimestv.com/icc-tv/html/" target="_blank">Digital TV</a>
+                        <a href="https://www.startimestv.com/solar" target="_blank">StarTimes Solar Power System</a>
+                    </p>
+                </li>
+                <li class="l6 ">
+                    <a href="http://www.startimestv.com/bund.html" target="_blank">Bundesliga</a>
+                </li>
+                <li class="l7 ">
+                    <a href="/newslist.html">Blog</a>
+                </li>
+                <li class="l8 ">
+                    <a href="/problem.html">Support</a>
+                    <p>
+                        <a href="/problem.html" target="_blank">FAQ</a>
+                        <a href="/self-service.html">Self Service</a>
+                        <a href="/contact-us.html">Contact us</a>
+                    </p>
+                </li>
+            </ul>
+            <div class="right">
+                <div class="search">
+                    <a class="btn"></a>
+                    <div class="bar">
+                        <div class="ipt"><input id='header-search' type="text"> </div>
+                        <button id="headerSearchBut"></button>
+                    </div>
+                </div>
+                <div id="widget-area-article-channeldetail-index-674b368277b81528"
+                    uniqid="article-channeldetail-index-674b368277b81528" class="widget-area share"><a class="a2"
+                        target="_blank" href="https://www.facebook.com/startimeskenya/"></a><a class="a1"
+                        target="_blank" href="https://twitter.com/StarTimesKenya"></a><a class="a5" target="_blank"
+                        href="https://www.instagram.com/startimeskenya/"></a><a class="a6" target="_blank"
+                        href="https://www.youtube.com/channel/UCZPGzKbEBAM5hpg5YumYHrg"></a></div>
+                <div class="log">
+                    <a class="a"></a>
+                </div>
+                <div id="widget-area-article-channeldetail-index-674b36827a0848157"
+                    uniqid="article-channeldetail-index-674b36827a0848157" class="widget-area grid">
+                    <style>
+                        .update-areaID {
+                            color: #F86F00;
+                            cursor: pointer;
+                            line-height: 32px;
+                            margin-top: 10px;
+                            padding-top: 4px;
+                            padding-bottom: 6px;
+                            padding-left: 20px;
+                        }
+
+                        .update-areaID:hover {
+                            color: #FFFFFF;
+                            background-color: #F86F00
+                        }
+
+                        .update-areaID1 {
+                            color: #FFFFFF;
+                            background-color: #F86F00;
+                        }
+
+                        .update-areaID1:hover {
+                            background-color: #F86F00;
+                            color: #FFFFFF
+                        }
+
+                        .update-areaID1 .span {
+                            color: #ffffff;
+                        }
+                    </style>
+                    <a id="btnimg" class="btn"
+                        style="width:30px;height:30px;background: url(/Public/static/images/logo-6.svg);background-size: 30px; margin-top: 0px;"></a>
+                    <div class="panel" style="margin-top:14px; padding: 0px;padding-bottom: 10px;">
+                        <table style="padding: 0px;">
+                            <tr>
+                                <td align="left">
+                                    <dd class="update-areaID update-areaID1" area-id="6">
+                                        <img style="width: 32px;height: 32px;" src="/Public/static/images/logo-6.svg" />
+                                        <span style="padding-left: 10px;">Kenya</span>
+                                    </dd>
+                                    <dd class="update-areaID" area-id="2"> <img style="width: 32px;height: 32px;"
+                                            src="/Public/static/images/logo-2.svg" />
+                                        <span style="padding-left: 10px;">Nigeria</span>
+                                    </dd>
+                                    <dd class="update-areaID" area-id="3"> <img style="width: 32px;height: 32px;"
+                                            src="/Public/static/images/logo-3.svg" />
+                                        <span style="padding-left: 10px;">Tanzania</span>
+                                    </dd>
+                                    <dd class="update-areaID" area-id="4"> <img style="width: 32px;height: 32px;"
+                                            src="/Public/static/images/logo-4.svg" />
+                                        <span style="padding-left: 10px;">Uganda</span>
+                                    </dd>
+                                    <dd class="update-areaID" area-id="5"> <img style="width: 32px;height: 32px;"
+                                            src="/Public/static/images/logo-5.svg" />
+                                        <span style="padding-left: 10px;">Rwanda</span>
+                                    </dd>
+                                    <dd class="update-areaID" area-id="32"> <img style="width: 32px;height: 32px;"
+                                            src="/Public/static/images/logo-32.svg" />
+                                        <span style="padding-left: 10px;">Ghana</span>
+                                    </dd>
+                                    <dd class="update-areaID" area-id="14"> <img style="width: 32px;height: 32px;"
+                                            src="/Public/static/images/logo-14.svg" />
+                                        <span style="padding-left: 10px;">Malawi</span>
+                                    </dd>
+                                    <dd class="update-areaID" area-id="18"> <img style="width: 32px;height: 32px;"
+                                            src="/Public/static/images/logo-18.svg" />
+                                        <span style="padding-left: 10px;">Zambia</span>
+                                    </dd>
+                                    <dd class="update-areaID" area-id="22"> <img style="width: 32px;height: 32px;"
+                                            src="/Public/static/images/logo-22.svg" />
+                                        <span style="padding-left: 10px;">Ivory Coast</span>
+                                    </dd>
+                                    <dd class="update-areaID" area-id="12"> <img style="width: 32px;height: 32px;"
+                                            src="/Public/static/images/logo-12.svg" />
+                                        <span style="padding-left: 10px;">Guinea</span>
+                                    </dd>
+                                    <dd class="update-areaID" area-id="9"> <img style="width: 32px;height: 32px;"
+                                            src="/Public/static/images/logo-9.svg" />
+                                        <span style="padding-left: 10px;">Burundi</span>
+                                    </dd>
+                                    <dd class="update-areaID" area-id="16"> <img style="width: 32px;height: 32px;"
+                                            src="/Public/static/images/logo-16.svg" />
+                                        <span style="padding-left: 10px;">Congo</span>
+                                    </dd>
+                                    <dd class="update-areaID" area-id="11"> <img style="width: 32px;height: 32px;"
+                                            src="/Public/static/images/logo-11.svg" />
+                                        <span style="padding-left: 10px;">DRC</span>
+                                    </dd>
+                                    <dd class="update-areaID" area-id="13"> <img style="width: 32px;height: 32px;"
+                                            src="/Public/static/images/logo-13.svg" />
+                                        <span style="padding-left: 10px;">Madagascar</span>
+                                    </dd>
+                                    <dd class="update-areaID" area-id="15"> <img style="width: 32px;height: 32px;"
+                                            src="/Public/static/images/logo-15.svg" />
+                                        <span style="padding-left: 10px;">Mozambique</span>
+                                    </dd>
+                                    <dd class="update-areaID" area-id="20"> <img style="width: 32px;height: 32px;"
+                                            src="/Public/static/images/logo-20.svg" />
+                                        <span style="padding-left: 10px;">Cameroon</span>
+                                    </dd>
+                                    <dd class="update-areaID" area-id="19"> <img style="width: 32px;height: 32px;"
+                                            src="/Public/static/images/logo-19.svg" />
+                                        <span style="padding-left: 10px;">Gabon</span>
+                                    </dd>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <script>
+                        $('.update-areaID').click(function () {
+                            var areaID = $(this).attr('area-id')
+                            if (areaID == 18) {
+                                window.location.href = 'http://www.topstar.co.zm'
+                                return
+                            }
+                            setCookie('default_areaID', areaID, 3600 * 24 * 365)
+                            setCookie('startimes_web_token', '', -1)
+                            if (areaID == 15) {
+                                window.location.href = '/home.html?l=pt-pt'
+                            } else {
+                                window.location.href = '/home.html'
+                            }
+                        })
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function () {
+
+            $("#header .log .a").click(function () {
+                if ($('.log .logst').length <= 0) {
+                    $(this).addClass("act");
+                    showlayer(".login");
+                    $("#body,#focus,#footer").addClass("blur");
+                }
+            });
+
+            // 退出登录
+            $('#logout').click(function () {
+                $.post("/Member/Passport/logout.html", {}, function (data) {
+                    if (data.status == 1) {
+                        window.location.href = "/"
+                    }
+                })
+            })
+            $('#headerSearchBut').click(function (event) {
+                var k = $('#header-search').val()
+                window.location.href = "/Member/Index/search.html?keys=" + encodeURI(k)
+            })
+            $("#header-search").keyup(function (event) {
+                var keycode = (event.keyCode ? event.keyCode : event.which)
+                var k = $(this).val()
+                if (keycode == '13') {
+                    window.location.href = "/Member/Index/search.html?keys=" + encodeURI(k)
+                }
+            })
+        })
+    </script>
+
+
+    <style>
+        .channel .tv_gui .list .box {
+            min-width: 1px;
+        }
+
+        .wap-list i {
+            background: url(/Public/static/themes/image/tvguide_ic_information.png) center center no-repeat;
+            width: 100%;
+            height: 278px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .channel .des .inf .box a {
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .channel .des .inf {
+            width: 300px;
+        }
+
+        .channel .tv_gui .time span {
+            text-align: left;
+        }
+    </style>
+
+    <div id="body" class="page">
+        <div class="block">
+            <div class="channel">
+                <div class="title1">
+                    <h3 style="text-transform:uppercase;">ZEE ONE</h3>
+                </div>
+                <div class="content">
+                    <div class="des" style="background-color:#FFAB00">
+                        <div class="sdw"></div>
+                        <div class="inner clearfix">
+                            <div class="pic">
+                                <img src="http://cdn.startimestv.com/static/files/console/ddd316ab-4b08-4dc2-bf20-a92d5a90137c.png"
+                                    onerror="onerror=null;src='/Public/static/images/channellogo.png'">
+                            </div>
+                            <div class="inf">
+                                <h3 style="text-transform:uppercase;">ZEE ONE</h3>
+                                <div class="num">
+                                    <img style="width: 22px;height: 22px;margin-left: -2px;margin-bottom:3px;"
+                                        src="/Public/static/themes/image/ic_dtt_channel.png"><span
+                                        style="margin-left: 5px;margin-right:10px; padding: 1px; background-color:#FFFFFF;color: #6fc500;border-radius:3px;">509</span><img
+                                        style="width: 22px;height: 22px;margin-left: -2px;margin-bottom:3px;"
+                                        src="/Public/static/themes/image/ic_dth_channel.png"><span
+                                        style="margin-left: 5px;margin-right:10px; padding: 1px; background-color:#FFFFFF;color: #6fc500;border-radius:3px;">553</span>
+                                </div>
+                                <div class="box">
+                                    <p class="rate" data="">Rate: <i></i><i></i><i></i><i></i><i></i></p>
+
+                                    <p>Category:
+                                        Series&nbsp;&nbsp; </p>
+                                    <a style="font-style: normal;font-size: 12px;"
+                                        href="/packages/417.html?platformTypes=1">DTH: DTH_Smart</a><br /><a
+                                        style="font-style: normal;font-size: 12px;"
+                                        href="/packages/30.html?platformTypes=0">DTT: DTT_Classic</a>
+                                </div>
+                            </div>
+                            <div class="txt">
+                                <p>Zee One brings you the best Bollywood telenovelas, movies, series & lifestyle shows.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tv_gui">
+                        <div class="time">
+                            <div class="inner">
+                                <i class="now"></i>
+                                <span>&nbsp;&nbsp;&nbsp;00:00</span><span>&nbsp;&nbsp;&nbsp;01:00</span><span>&nbsp;&nbsp;&nbsp;02:00</span><span>&nbsp;&nbsp;&nbsp;03:00</span><span>&nbsp;&nbsp;&nbsp;04:00</span><span>&nbsp;&nbsp;&nbsp;05:00</span><span>&nbsp;&nbsp;&nbsp;06:00</span><span>&nbsp;&nbsp;&nbsp;07:00</span><span>&nbsp;&nbsp;&nbsp;08:00</span><span>&nbsp;&nbsp;&nbsp;09:00</span><span>&nbsp;&nbsp;&nbsp;10:00</span><span>&nbsp;&nbsp;&nbsp;11:00</span><span>&nbsp;&nbsp;&nbsp;12:00</span><span>&nbsp;&nbsp;&nbsp;13:00</span><span>&nbsp;&nbsp;&nbsp;14:00</span><span>&nbsp;&nbsp;&nbsp;15:00</span><span>&nbsp;&nbsp;&nbsp;16:00</span><span>&nbsp;&nbsp;&nbsp;17:00</span><span>&nbsp;&nbsp;&nbsp;18:00</span><span>&nbsp;&nbsp;&nbsp;19:00</span><span>&nbsp;&nbsp;&nbsp;20:00</span><span>&nbsp;&nbsp;&nbsp;21:00</span><span>&nbsp;&nbsp;&nbsp;22:00</span><span>&nbsp;&nbsp;&nbsp;23:00</span>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="inner wap-list">
+
+
+                                <div class="box" style="width:157.6px">
+
+                                    <div class="in">
+                                        <h3>Deserted S1 E37</h3>
+                                        <div class="t">00:00-01:00</div>
+                                        <p>Tora approaches Tubri for help, but she expresses her helplessness in seeking
+                                            assistance from Arjun. Meanwhile, other family members are caught in the
+                                            crossfire, trying to navigate their own positions within the household.</p>
+                                    </div>
+                                    <div class="mask">
+                                        <h4>00:00-01:00 Deserted S1 E37</h4>
+                                        <p>Tora approaches Tubri for help, but she expresses her helplessness in seeking
+                                            assistance from Arjun. Meanwhile, other family members are caught in the
+                                            crossfire, trying to navigate their own positions within the household.</p>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="box" style="width:157.6px">
+
+                                    <div class="in">
+                                        <h3>The Pain Of Loving You S1 E87</h3>
+                                        <div class="t">01:00-02:00</div>
+                                        <p>Simple devises a plan to trouble Desho and secure a permanent place for
+                                            herself in the office. She secretly removes important papers from a file,
+                                            causing Desho to panic.</p>
+                                    </div>
+                                    <div class="mask">
+                                        <h4>01:00-02:00 The Pain Of Loving You S1 E87</h4>
+                                        <p>Simple devises a plan to trouble Desho and secure a permanent place for
+                                            herself in the office. She secretly removes important papers from a file,
+                                            causing Desho to panic.</p>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="box" style="width:157.6px">
+
+                                    <div class="in">
+                                        <h3>Gangaa S2 E74</h3>
+                                        <div class="t">02:00-03:00</div>
+                                        <p>Gangaa is out on the streets? Who will save her from the humiliation she is
+                                            facing?</p>
+                                    </div>
+                                    <div class="mask">
+                                        <h4>02:00-03:00 Gangaa S2 E74</h4>
+                                        <p>Gangaa is out on the streets? Who will save her from the humiliation she is
+                                            facing?</p>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="box" style="width:397px">
+
+                                    <div class="in">
+                                        <h3>Lakshya</h3>
+                                        <div class="t">03:00-05:30</div>
+                                        <p>A irresponsible and immature young man's life changes forever, after he joins
+                                            the army and becomes a battlefield hero.</p>
+                                    </div>
+                                    <div class="mask">
+                                        <h4>03:00-05:30 Lakshya</h4>
+                                        <p>A irresponsible and immature young man's life changes forever, after he joins
+                                            the army and becomes a battlefield hero.</p>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="box" style="width:77.8px">
+
+                                    <div class="in">
+                                        <h3>Shonar Bengal S1 E05</h3>
+                                        <div class="t">05:30-06:00</div>
+                                        <p>Take a look inside Bengal's vibrant culture, delicious food and interesting
+                                            destinations with Sumona Chakravarti</p>
+                                    </div>
+                                    <div class="mask">
+                                        <h4>05:30-06:00 Shonar Bengal S1 E05</h4>
+                                        <p>Take a look inside Bengal's vibrant culture, delicious food and interesting
+                                            destinations with Sumona Chakravarti</p>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="box" style="width:154.94px">
+
+                                    <div class="in">
+                                        <h3>36 Reasons S1 E78</h3>
+                                        <div class="t">06:00-06:59</div>
+                                        <p>Amartya suggests Vedant and Amulya to put up an act of being in a
+                                            fake relationship to convince Vedant's grandma. Both of them reluctantly
+                                            agree. Amulya however, puts forth conditions.</p>
+                                    </div>
+                                    <div class="mask">
+                                        <h4>06:00-06:59 36 Reasons S1 E78</h4>
+                                        <p>Amartya suggests Vedant and Amulya to put up an act of being in a
+                                            fake relationship to convince Vedant's grandma. Both of them reluctantly
+                                            agree. Amulya however, puts forth conditions.</p>
+                                    </div>
+
+                                </div>
+
+                                <div class="box" style="width:0.66px"></div>
+
+                                <div class="box" style="width:157.6px">
+
+                                    <div class="in">
+                                        <h3>The Pain Of Loving You S1 E87</h3>
+                                        <div class="t">07:00-08:00</div>
+                                        <p>Simple devises a plan to trouble Desho and secure a permanent place for
+                                            herself in the office. She secretly removes important papers from a file,
+                                            causing Desho to panic.</p>
+                                    </div>
+                                    <div class="mask">
+                                        <h4>07:00-08:00 The Pain Of Loving You S1 E87</h4>
+                                        <p>Simple devises a plan to trouble Desho and secure a permanent place for
+                                            herself in the office. She secretly removes important papers from a file,
+                                            causing Desho to panic.</p>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="box" style="width:157.6px">
+
+                                    <div class="in">
+                                        <h3>Gangaa S2 E74</h3>
+                                        <div class="t">08:00-09:00</div>
+                                        <p>Gangaa is out on the streets? Who will save her from the humiliation she is
+                                            facing?</p>
+                                    </div>
+                                    <div class="mask">
+                                        <h4>08:00-09:00 Gangaa S2 E74</h4>
+                                        <p>Gangaa is out on the streets? Who will save her from the humiliation she is
+                                            facing?</p>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="box" style="width:157.6px">
+
+                                    <div class="in">
+                                        <h3>Deserted S1 E37</h3>
+                                        <div class="t">09:00-10:00</div>
+                                        <p>Tora approaches Tubri for help, but she expresses her helplessness in seeking
+                                            assistance from Arjun. Meanwhile, other family members are caught in the
+                                            crossfire, trying to navigate their own positions within the household.</p>
+                                    </div>
+                                    <div class="mask">
+                                        <h4>09:00-10:00 Deserted S1 E37</h4>
+                                        <p>Tora approaches Tubri for help, but she expresses her helplessness in seeking
+                                            assistance from Arjun. Meanwhile, other family members are caught in the
+                                            crossfire, trying to navigate their own positions within the household.</p>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="box" style="width:157.6px">
+
+                                    <div class="in">
+                                        <h3>36 Reasons S1 E78</h3>
+                                        <div class="t">10:00-11:00</div>
+                                        <p>Amartya suggests Vedant and Amulya to put up an act of being in a
+                                            fake relationship to convince Vedant's grandma. Both of them reluctantly
+                                            agree. Amulya however, puts forth conditions.</p>
+                                    </div>
+                                    <div class="mask">
+                                        <h4>10:00-11:00 36 Reasons S1 E78</h4>
+                                        <p>Amartya suggests Vedant and Amulya to put up an act of being in a
+                                            fake relationship to convince Vedant's grandma. Both of them reluctantly
+                                            agree. Amulya however, puts forth conditions.</p>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="box" style="width:157.6px">
+
+                                    <div class="in">
+                                        <h3>The Pain Of Loving You S1 E87</h3>
+                                        <div class="t">11:00-12:00</div>
+                                        <p>Simple devises a plan to trouble Desho and secure a permanent place for
+                                            herself in the office. She secretly removes important papers from a file,
+                                            causing Desho to panic.</p>
+                                    </div>
+                                    <div class="mask">
+                                        <h4>11:00-12:00 The Pain Of Loving You S1 E87</h4>
+                                        <p>Simple devises a plan to trouble Desho and secure a permanent place for
+                                            herself in the office. She secretly removes important papers from a file,
+                                            causing Desho to panic.</p>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="box" style="width:157.6px">
+
+                                    <div class="in">
+                                        <h3>Gangaa S2 E74</h3>
+                                        <div class="t">12:00-13:00</div>
+                                        <p>Gangaa is out on the streets? Who will save her from the humiliation she is
+                                            facing?</p>
+                                    </div>
+                                    <div class="mask">
+                                        <h4>12:00-13:00 Gangaa S2 E74</h4>
+                                        <p>Gangaa is out on the streets? Who will save her from the humiliation she is
+                                            facing?</p>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="box" style="width:157.6px">
+
+                                    <div class="in">
+                                        <h3>Deserted S1 E37</h3>
+                                        <div class="t">13:00-14:00</div>
+                                        <p>Tora approaches Tubri for help, but she expresses her helplessness in seeking
+                                            assistance from Arjun. Meanwhile, other family members are caught in the
+                                            crossfire, trying to navigate their own positions within the household.</p>
+                                    </div>
+                                    <div class="mask">
+                                        <h4>13:00-14:00 Deserted S1 E37</h4>
+                                        <p>Tora approaches Tubri for help, but she expresses her helplessness in seeking
+                                            assistance from Arjun. Meanwhile, other family members are caught in the
+                                            crossfire, trying to navigate their own positions within the household.</p>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="box" style="width:157.6px">
+
+                                    <div class="in">
+                                        <h3>36 Reasons S1 E78</h3>
+                                        <div class="t">14:00-15:00</div>
+                                        <p>Amartya suggests Vedant and Amulya to put up an act of being in a
+                                            fake relationship to convince Vedant's grandma. Both of them reluctantly
+                                            agree. Amulya however, puts forth conditions.</p>
+                                    </div>
+                                    <div class="mask">
+                                        <h4>14:00-15:00 36 Reasons S1 E78</h4>
+                                        <p>Amartya suggests Vedant and Amulya to put up an act of being in a
+                                            fake relationship to convince Vedant's grandma. Both of them reluctantly
+                                            agree. Amulya however, puts forth conditions.</p>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="box" style="width:157.6px">
+
+                                    <div class="in">
+                                        <h3>Deserted S1 E37</h3>
+                                        <div class="t">15:00-16:00</div>
+                                        <p>Tora approaches Tubri for help, but she expresses her helplessness in seeking
+                                            assistance from Arjun. Meanwhile, other family members are caught in the
+                                            crossfire, trying to navigate their own positions within the household.</p>
+                                    </div>
+                                    <div class="mask">
+                                        <h4>15:00-16:00 Deserted S1 E37</h4>
+                                        <p>Tora approaches Tubri for help, but she expresses her helplessness in seeking
+                                            assistance from Arjun. Meanwhile, other family members are caught in the
+                                            crossfire, trying to navigate their own positions within the household.</p>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="box" style="width:157.6px">
+
+                                    <div class="in">
+                                        <h3>Gangaa S2 E74</h3>
+                                        <div class="t">16:00-17:00</div>
+                                        <p>Gangaa is out on the streets? Who will save her from the humiliation she is
+                                            facing?</p>
+                                    </div>
+                                    <div class="mask">
+                                        <h4>16:00-17:00 Gangaa S2 E74</h4>
+                                        <p>Gangaa is out on the streets? Who will save her from the humiliation she is
+                                            facing?</p>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="box" style="width:157.6px">
+
+                                    <div class="in">
+                                        <h3>36 Reasons S1 E78</h3>
+                                        <div class="t">17:00-18:00</div>
+                                        <p>Amartya suggests Vedant and Amulya to put up an act of being in a
+                                            fake relationship to convince Vedant's grandma. Both of them reluctantly
+                                            agree. Amulya however, puts forth conditions.</p>
+                                    </div>
+                                    <div class="mask">
+                                        <h4>17:00-18:00 36 Reasons S1 E78</h4>
+                                        <p>Amartya suggests Vedant and Amulya to put up an act of being in a
+                                            fake relationship to convince Vedant's grandma. Both of them reluctantly
+                                            agree. Amulya however, puts forth conditions.</p>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="box" style="width:157.6px">
+
+                                    <div class="in">
+                                        <h3>The Pain Of Loving You S1 E87</h3>
+                                        <div class="t">18:00-19:00</div>
+                                        <p>Simple devises a plan to trouble Desho and secure a permanent place for
+                                            herself in the office. She secretly removes important papers from a file,
+                                            causing Desho to panic.</p>
+                                    </div>
+                                    <div class="mask">
+                                        <h4>18:00-19:00 The Pain Of Loving You S1 E87</h4>
+                                        <p>Simple devises a plan to trouble Desho and secure a permanent place for
+                                            herself in the office. She secretly removes important papers from a file,
+                                            causing Desho to panic.</p>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="box" style="width:157.6px">
+
+                                    <div class="in">
+                                        <h3>Mehek E07</h3>
+                                        <div class="t">19:00-20:00</div>
+                                        <p>Norah is devastated to find that Julius has moved on after their breakup.
+                                            Mehek's cooking saves the day.</p>
+                                    </div>
+                                    <div class="mask">
+                                        <h4>19:00-20:00 Mehek E07</h4>
+                                        <p>Norah is devastated to find that Julius has moved on after their breakup.
+                                            Mehek's cooking saves the day.</p>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="box" style="width:397px">
+
+                                    <div class="in">
+                                        <h3>No Entry</h3>
+                                        <div class="t">20:00-22:30</div>
+                                        <p>Tired of listening to his moralistic pals, Prem a promiscuous married man
+                                            introduces his friend to an attractive prostitute for temptation.</p>
+                                    </div>
+                                    <div class="mask">
+                                        <h4>20:00-22:30 No Entry</h4>
+                                        <p>Tired of listening to his moralistic pals, Prem a promiscuous married man
+                                            introduces his friend to an attractive prostitute for temptation.</p>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="box" style="width:77.8px">
+
+                                    <div class="in">
+                                        <h3>Shonar Bengal S1 E06</h3>
+                                        <div class="t">22:30-23:00</div>
+                                        <p>Take a look inside Bengal's vibrant culture, delicious food and interesting
+                                            destinations with Sumona Chakravarti</p>
+                                    </div>
+                                    <div class="mask">
+                                        <h4>22:30-23:00 Shonar Bengal S1 E06</h4>
+                                        <p>Take a look inside Bengal's vibrant culture, delicious food and interesting
+                                            destinations with Sumona Chakravarti</p>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="box" style="width:157.6px">
+
+                                    <div class="in">
+                                        <h3>36 Reasons S1 E79</h3>
+                                        <div class="t">23:00-00:00</div>
+                                        <p>Purushottam shows at up Vedant's office to boast about the money he recovered
+                                            and for fleecing more money. Amulya cheers Vedant and takes him to a café.
+                                        </p>
+                                    </div>
+                                    <div class="mask">
+                                        <h4>23:00-00:00 36 Reasons S1 E79</h4>
+                                        <p>Purushottam shows at up Vedant's office to boast about the money he recovered
+                                            and for fleecing more money. Amulya cheers Vedant and takes him to a café.
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="block clearfix">
+            <div class="part">
+                <h2>Contact us</h2>
+                <div class="text">
+                    <p>
+                        Telephone:<br>
+                        0719077077,7:00-24:00<br />Email: info.ke＠startimes.com.cn<br /> </p>
+                </div>
+            </div>
+            <div id="widget-area-article-channeldetail-index-674b36827ee182792"
+                uniqid="article-channeldetail-index-674b36827ee182792" class="widget-area part">
+                <h2>SITEMAP</h2>
+                <ul>
+                    <li><a href="/" target="_blank">Home</a></li>
+                    <li><a href="/tv_guide" target="_blank">TV Guide</a></li>
+                    <li><a href="/product" target="_blank">Products</a></li>
+                    <li><a href="/bouquet" target="_blank">Bouquet</a></li>
+                    <li><a href="/legal" target="_blank">Legal Terms</a></li>
+                    <li><a href="/newslist" target="_blank">News</a></li>
+                </ul>
+            </div>
+            <div id="widget-area-article-channeldetail-index-674b36828a3001248"
+                uniqid="article-channeldetail-index-674b36828a3001248" class="widget-area part">
+                <h2>HELP</h2>
+                <ul>
+                    <li><a href="/problem" target="_blank">FAQ</a></li>
+                    <li><a href="/contact-us" target="_blank">Feedback</a></li>
+                    <li><a href="/contact-us" target="_blank">Find Shops</a></li>
+                </ul>
+            </div>
+            <div class="part">
+                <h2>SOCIAL</h2>
+                <div id="widget-area-article-channeldetail-index-674b368277b81528"
+                    uniqid="article-channeldetail-index-674b368277b81528" class="widget-area btn"><a class="a2"
+                        target="_blank" href="https://www.facebook.com/startimeskenya/"></a><a class="a1"
+                        target="_blank" href="https://twitter.com/StarTimesKenya"></a><a class="a5" target="_blank"
+                        href="https://www.instagram.com/startimeskenya/"></a><a class="a6" target="_blank"
+                        href="https://www.youtube.com/channel/UCZPGzKbEBAM5hpg5YumYHrg"></a></div>
+            </div>
+        </div>
+        <div style="color:#d5d5d5;text-align: center;line-height: 40px;">Copyright &copy; 2015 - 2024 Union Shine
+            Holdings All Rights Reserved.</div>
+    </div>
+    <div class="shadow"></div>
+    <div class="login">
+        <a href="javascript:;" class="close"></a>
+        <div class="inner">
+            <div class="logo"><img src="/Public/static/themes/image/STlogo_WHT.png"></div>
+            <div class="form">
+                <div class="line">
+                    <div class="ipt ico1">
+                        <input id="login_username" name="username" type="text" style="width:235px;"
+                            placeholder="E-mail/phone number" value="">
+                    </div>
+                    <p id="login_username_msg"></p>
+                </div>
+                <div class="line">
+                    <div class="ipt ico2">
+                        <div class="passwd">
+                            <input type="password" id="login_pwd" name="pwd" style="width:235px;text-align:left;"
+                                class="a">
+                            <input type="text" style="width:235px;" placeholder="Password" class="b">
+                        </div>
+                    </div>
+                    <p id="login_pwd_msg"></p>
+                </div>
+            </div>
+            <div class="button"><a class="btn_head_login" href="javascript:;">Log in</a></div>
+            <div class="logbtn" id="third">
+                <h3><a href="/passport/forget_password.html">Forget Password?</a></h3>
+                <p></p>
+            </div>
+            <div class="b">Don't have an account? <a style="border-bottom:1px solid #fff;"
+                    href="/passport/signup.html">Sign up</a></div>
+        </div>
+    </div>
+    <script>
+        $(function () {
+
+            $('body').on('click', '.btn_head_login', function () {
+
+                $('#login_username_msg').html("")
+                $('#login_pwd_msg').html("")
+
+                var login_username = $.trim($('#login_username').val())
+                var login_pwd = $.trim($('#login_pwd').val())
+
+                if (login_username == "") {
+                    $('#login_username_msg').html("Please fill out the phone number or email")
+                    return false
+                }
+                if (login_pwd == "") {
+                    $('#login_pwd_msg').html("Please fill in the password")
+                    return false
+                }
+
+                if (login_username.indexOf("@") == -1) {
+                    var type = 10
+                } else {
+                    var type = 0
+                }
+                $.post("/Member/Passport/login.html", {
+                    username: login_username,
+                    pwd: login_pwd,
+                    type: type
+                }, function (data) {
+                    if (data.code == 0) {
+                        window.location.reload()
+                    } else {
+                        $('#login_pwd_msg').html(data.message)
+                    }
+                })
+            })
+
+            document.onkeydown = function (e) {
+                var theEvent = window.event || e
+                var code = theEvent.keyCode || theEvent.which
+                if (code == 13) {
+                    $(".btn_head_login").click()
+                }
+            }
+
+            $(".login .close").click(function () {
+                hidelayer(".login")
+                $("#header .log .a").removeClass("act")
+            })
+
+            if (getQueryVariable('isLogin') == 1) {
+                $(".shadow").css({ 'display': 'block' })
+                $(".login").css({ 'display': 'block' })
+            }
+
+        })
+
+        function getQueryVariable(variable) {
+            var query = window.location.search.substring(1)
+            var vars = query.split("&")
+            for (var i = 0; i < vars.length; i++) {
+                var pair = vars[i].split("=")
+                if (pair[0] == variable) { return pair[1] }
+            }
+            return (false)
+        }
+    </script>
+
+
+    <script>
+
+        var _width = 0;
+
+        $('.wap-list').find('.box').each(function () {
+            _width += $(this).width() + 2;
+        })
+
+        $('.wap-list').css({ "width": _width + 2 });
+        $('.wap-list .box').last().css({ "border-right": "1px solid #fff" });
+
+        $(".rate i").slice(0, parseInt($(".rate").attr("data"))).addClass("act");
+
+        $(".tv_gui .list").scroll(function () {
+            $(".tv_gui .time").scrollLeft($(this).scrollLeft());
+        });
+
+        $(".tv_gui .time").scrollLeft("1355" * 0.06);
+        $(".tv_gui .list").scrollLeft("1355" * 2.66);
+
+        var now_time_flag = (1355 * 2.66);
+
+        if (now_time_flag > 3834) {
+            now_time_flag = 3834;
+        }
+        $(".inner .now").css("left", now_time_flag + 'px');
+
+        $('.wap-list').find('.pro_remove').each(function () {
+            var prev_width = $(this).prev().width();
+            var this_width = $(this).width();
+
+            $(this).prev().css({ 'width': prev_width + this_width + 2 + 'px' });
+            $(this).remove();
+        })
+    </script>
+
+</body>
+
+</html>
