@@ -10,34 +10,44 @@ dayjs.extend(timezone)
 
 module.exports = {
   site: 'tvguide.com',
-  days: 2,
+  days: 2,  // Número de días que deseas
   url: function ({ date, channel }) {
-    const [providerId, channelSourceIds] = channel.site_id.split('##')
-    const url = `https://backend.tvguide.com//v1/xapi/tvschedules/tvguide/${providerId}/web?start=${date
-      .startOf('d')
-      .unix()}&duration=20160&channelSourceIds=${channelSourceIds}`
-
-    return url
+    const [providerId, channelSourceIds] = channel.site_id.split('##');
+    
+    // `start` es la fecha actual, y `duration` sigue siendo 20160 (14 días)
+    const url = `https://backend.tvguide.com/v1/xapi/tvschedules/tvguide/${providerId}/web?start=${date.startOf('d').unix()}&duration=20160&channelSourceIds=${channelSourceIds}&apiKey=${API_KEY}`;
+    
+    return url;
   },
+
   async parser({ content }) {
     const programs = []
     const items = parseItems(content)
+
+    // Obtener la fecha de inicio del filtro
+    const endDate = dayjs().add(this.days, 'day');  // Fecha de fin ajustada por el número de días
+
     for (let item of items) {
       const itemData = await loadProgramItem(item)
-      programs.push({
-        title: item.title,
-        date: extractYear(itemData), // Usa extractYear para obtener el año
-        description: itemData.description,
-        season: getSeasonNumber(itemData),
-        episode: getEpisodeNumber(itemData),
-        rating: parseRating(item),
-        categories: parseCategories(itemData),
-        start: parseTime(item.startTime),
-        stop: parseTime(item.endTime)
-      })
+
+      // Filtramos los programas solo para los días que queremos
+      const startDate = dayjs.unix(item.startTime);
+      if (startDate.isBefore(endDate)) {
+        programs.push({
+          title: item.title,
+          date: extractYear(itemData),
+          description: itemData.description,
+          season: getSeasonNumber(itemData),
+          episode: getEpisodeNumber(itemData),
+          rating: parseRating(item),
+          categories: parseCategories(itemData),
+          start: parseTime(item.startTime),
+          stop: parseTime(item.endTime)
+        })
+      }
     }
 
-    return programs
+    return programs;
   },
   async channels() {
     const configPath = process.argv.find(arg => arg.startsWith('--channels='))?.split('=')[1]
