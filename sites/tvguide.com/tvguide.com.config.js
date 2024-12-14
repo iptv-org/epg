@@ -13,7 +13,7 @@ module.exports = {
     const [providerId, channelSourceIds] = channel.site_id.split('#')
     const url = `https://internal-prod.apigee.fandom.net/v1/xapi/tvschedules/tvguide/${providerId}/web?start=${date
       .startOf('d')
-      .unix()}&duration=1440&channelSourceIds=${channelSourceIds}`
+      .unix()}&duration=20160&channelSourceIds=${channelSourceIds}`
 
     return url
   },
