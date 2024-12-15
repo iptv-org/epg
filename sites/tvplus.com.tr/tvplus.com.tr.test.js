@@ -1,6 +1,7 @@
 const { parser, url } = require('./tvplus.com.tr.config.js')
 const fs = require('fs')
 const path = require('path')
+const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -8,15 +9,25 @@ const customParseFormat = require('dayjs/plugin/customParseFormat')
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
+jest.mock('axios')
+
 const date = dayjs.utc('2024-12-15', 'YYYY-MM-DD').startOf('d')
 const channel = {
   lang: 'tr',
-  site_id: 'wOhzpck_jO2kKrDfRHmHs/nick-jr/4353',
+  site_id: 'nick-jr/4353',
   xmltv_id: 'NickJr.tr'
 }
 
-it('can generate valid url', () => {
-  expect(url({ channel })).toBe('https://tvplus.com.tr/_next/data/wOhzpck_jO2kKrDfRHmHs/tr/canli-tv/yayin-akisi/nick-jr--4353.json?title=nick-jr--4353')
+axios.get.mockImplementation((url, opts) => {
+  if (url === 'https://tvplus.com.tr/canli-tv/yayin-akisi') {
+    return Promise.resolve({
+      data: fs.readFileSync(path.join(__dirname, '__data__', 'build.html')).toString()
+    })
+  }
+})
+
+it('can generate valid url', async () => {
+  expect(await url({ channel })).toBe('https://tvplus.com.tr/_next/data/kUzvz_bbQJNaShlFUkrR3/tr/canli-tv/yayin-akisi/nick-jr--4353.json?title=nick-jr--4353')
 })
 
 it('can parse response', () => {
