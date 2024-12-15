@@ -1,9 +1,12 @@
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
+const debug = require('debug')('site:tvplus.com.tr')
 
 dayjs.extend(utc)
 dayjs.extend(customParseFormat)
+
+const channelsUrl = 'https://tvplus.com.tr/canli-tv/yayin-akisi'
 
 module.exports = {
   site: 'tvplus.com.tr',
@@ -58,7 +61,7 @@ module.exports = {
     const axios = require('axios')
     const channels = []
     const data = await axios
-      .get(`https://tvplus.com.tr/canli-tv/yayin-akisi`)
+      .get(channelsUrl)
       .then(r => r.data)
       .catch(console.error)
 
@@ -80,5 +83,21 @@ module.exports = {
       })
 
     return channels
+  },
+  async fetchBuildId() {
+    const data = await axios
+      .get(channelsUrl)
+      .then(r => r.data)
+      .catch(console.error)
+
+    if (data) {
+      const $ = cheerio.load(data)
+      const nextData = JSON.parse($('#__NEXT_DATA__').text())
+      return nextData?.buildId || null
+    } else {
+      return null
+    }
+  }
+}
   }
 }
