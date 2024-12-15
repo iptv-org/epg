@@ -19,13 +19,21 @@ describe('channels:validate', () => {
       process.exit(1)
     } catch (error) {
       expect((error as ExecError).status).toBe(1)
-      expect((error as ExecError).stdout).toContain(`duplicate.channels.xml
+      expect((error as ExecError).stdout).toContain(`
+> channels:validate
+> npx tsx scripts/commands/channels/validate.ts --channels=tests/__data__/input/channels-validate/duplicate.channels.xml
+
+options:
+  channels: tests/__data__/input/channels-validate/duplicate.channels.xml
+tests/__data__/input/channels-validate/duplicate.channels.xml
 ┌─────────┬─────────────┬──────┬────────────────┬─────────┬─────────┐
-│ (index) │    type     │ lang │    xmltv_id    │ site_id │  name   │
+│ (index) │ type        │ lang │ xmltv_id       │ site_id │ name    │
 ├─────────┼─────────────┼──────┼────────────────┼─────────┼─────────┤
-│    0    │ 'duplicate' │ 'en' │ 'BravoEast.us' │  '140'  │ 'Bravo' │
+│ 0       │ 'duplicate' │ 'en' │ 'BravoEast.us' │ '140'   │ 'Bravo' │
 └─────────┴─────────────┴──────┴────────────────┴─────────┴─────────┘
-\n1 error(s) in 1 file(s)\n`)
+
+1 error(s) in 1 file(s)
+`)
     }
   })
 
@@ -36,13 +44,21 @@ describe('channels:validate', () => {
       process.exit(1)
     } catch (error) {
       expect((error as ExecError).status).toBe(1)
-      expect((error as ExecError).stdout).toContain(`wrong_xmltv_id.channels.xml
+      expect((error as ExecError).stdout).toContain(`
+> channels:validate
+> npx tsx scripts/commands/channels/validate.ts --channels=tests/__data__/input/channels-validate/wrong_xmltv_id.channels.xml
+
+options:
+  channels: tests/__data__/input/channels-validate/wrong_xmltv_id.channels.xml
+tests/__data__/input/channels-validate/wrong_xmltv_id.channels.xml
 ┌─────────┬──────────────────┬──────┬────────────────────┬─────────┬─────────────────────┐
-│ (index) │       type       │ lang │      xmltv_id      │ site_id │        name         │
+│ (index) │ type             │ lang │ xmltv_id           │ site_id │ name                │
 ├─────────┼──────────────────┼──────┼────────────────────┼─────────┼─────────────────────┤
-│    0    │ 'wrong_xmltv_id' │ 'en' │ 'CNNInternational' │  '140'  │ 'CNN International' │
+│ 0       │ 'wrong_xmltv_id' │ 'en' │ 'CNNInternational' │ '140'   │ 'CNN International' │
 └─────────┴──────────────────┴──────┴────────────────────┴─────────┴─────────────────────┘
-\n1 error(s) in 1 file(s)\n`)
+
+1 error(s) in 1 file(s)
+`)
     }
   })
 })
