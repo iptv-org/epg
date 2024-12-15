@@ -47,7 +47,7 @@ export class QueueCreator {
           (_channel: ApiChannel) => _channel.id === channel.xmltv_id
         )
         if (found) {
-          channel.logo = found.logo
+          channel.icon = found.logo
           channel.name = found.name
         }
       } else {
