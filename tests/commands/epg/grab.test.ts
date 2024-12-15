@@ -17,7 +17,9 @@ beforeEach(() => {
 
 describe('epg:grab', () => {
   it('can grab epg by site name', () => {
-    const cmd = `${ENV_VAR} npm run grab --- --site=example.com --output=tests/__data__/output/guide.xml`
+    const cmd = `${ENV_VAR} npm run grab --- --site=example.com --output=${path.resolve(
+      'tests/__data__/output/guide.xml'
+    )}`
     execSync(cmd, { encoding: 'utf8' })
 
     expect(content('tests/__data__/output/guide.xml')).toEqual(
@@ -35,7 +37,9 @@ describe('epg:grab', () => {
   })
 
   it('can grab epg with gzip option enabled', async () => {
-    const cmd = `${ENV_VAR} npm run grab --- --channels=tests/__data__/input/epg-grab/sites/**/*.channels.xml --output=tests/__data__/output/guide.xml --gzip`
+    const cmd = `${ENV_VAR} npm run grab --- --channels=tests/__data__/input/epg-grab/sites/**/*.channels.xml --output=${path.resolve(
+      'tests/__data__/output/guide.xml'
+    )} --gzip`
     execSync(cmd, { encoding: 'utf8' })
 
     expect(content('tests/__data__/output/guide.xml')).toEqual(
