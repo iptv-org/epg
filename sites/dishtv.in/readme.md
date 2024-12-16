@@ -1,6 +1,6 @@
 # dishtv.in
 
-https://www.dishtv.in/channelguide/
+https://www.dishtv.in/channel-guide.html
 
 ### Download the guide
 
