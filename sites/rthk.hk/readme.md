@@ -7,17 +7,17 @@ https://www.rthk.hk/
 Chinese:
 
 ```sh
-npm run grab -- --site=rthk.hk --lang=zh
+npm run grab --- --site=rthk.hk --lang=zh
 ```
 
 English:
 
 ```sh
-npm run grab -- --site=rthk.hk --lang=en
+npm run grab --- --site=rthk.hk --lang=en
 ```
 
 ### Test
 
 ```sh
-npm test -- rthk.hk
+npm test --- rthk.hk
 ```

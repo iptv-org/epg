@@ -11,19 +11,19 @@ https://www.ontvtonight.com/guide/ (US)
 Australia:
 
 ```sh
-npm run grab -- --channels=sites/ontvtonight.com/ontvtonight.com_au.channels.xml
+npm run grab --- --channels=sites/ontvtonight.com/ontvtonight.com_au.channels.xml
 ```
 
 Canada:
 
 ```sh
-npm run grab -- --channels=sites/ontvtonight.com/ontvtonight.com_ca.channels.xml
+npm run grab --- --channels=sites/ontvtonight.com/ontvtonight.com_ca.channels.xml
 ```
 
 US:
 
 ```sh
-npm run grab -- --channels=sites/ontvtonight.com/ontvtonight.com_us.channels.xml
+npm run grab --- --channels=sites/ontvtonight.com/ontvtonight.com_us.channels.xml
 ```
 
 ### Update channel list
@@ -31,23 +31,23 @@ npm run grab -- --channels=sites/ontvtonight.com/ontvtonight.com_us.channels.xml
 Australia:
 
 ```sh
-npm run channels:parse -- --config=./sites/ontvtonight.com/ontvtonight.com.config.js --output=./sites/ontvtonight.com/ontvtonight.com_au.channels.xml --set=country:au
+npm run channels:parse --- --config=./sites/ontvtonight.com/ontvtonight.com.config.js --output=./sites/ontvtonight.com/ontvtonight.com_au.channels.xml --set=country:au
 ```
 
 Canada:
 
 ```sh
-npm run channels:parse -- --config=./sites/ontvtonight.com/ontvtonight.com.config.js --output=./sites/ontvtonight.com/ontvtonight.com_ca.channels.xml --set=country:ca
+npm run channels:parse --- --config=./sites/ontvtonight.com/ontvtonight.com.config.js --output=./sites/ontvtonight.com/ontvtonight.com_ca.channels.xml --set=country:ca
 ```
 
 US:
 
 ```sh
-npm run channels:parse -- --config=./sites/ontvtonight.com/ontvtonight.com.config.js --output=./sites/ontvtonight.com/ontvtonight.com_us.channels.xml --set=country:us
+npm run channels:parse --- --config=./sites/ontvtonight.com/ontvtonight.com.config.js --output=./sites/ontvtonight.com/ontvtonight.com_us.channels.xml --set=country:us
 ```
 
 ### Test
 
 ```sh
-npm test -- ontvtonight.com
+npm test --- ontvtonight.com
 ```

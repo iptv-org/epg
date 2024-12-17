@@ -5,17 +5,17 @@ https://www.dishtv.in/channelguide/
 ### Download the guide
 
 ```sh
-npm run grab -- --site=dishtv.in
+npm run grab --- --site=dishtv.in
 ```
 
 ### Update channel list
 
 ```sh
-npm run channels:parse -- --config=./sites/dishtv.in/dishtv.in.config.js --output=./sites/dishtv.in/dishtv.in.channels.xml
+npm run channels:parse --- --config=./sites/dishtv.in/dishtv.in.config.js --output=./sites/dishtv.in/dishtv.in.channels.xml
 ```
 
 ### Test
 
 ```sh
-npm test -- dishtv.in
+npm test --- dishtv.in
 ```
