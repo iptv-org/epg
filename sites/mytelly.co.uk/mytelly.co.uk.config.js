@@ -3,15 +3,17 @@ const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
+const doFetch = require('../../scripts/core/fetch')
 const debug = require('debug')('site:mytelly.co.uk')
 
 dayjs.extend(utc)
 dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
+doFetch.setDebugger(debug)
+
 const detailedGuide = true
 const tz = 'Europe/London'
-const nworker = 25
 
 module.exports = {
   site: 'mytelly.co.uk',
@@ -108,7 +110,6 @@ module.exports = {
   },
   async channels() {
     const channels = {}
-    const axios = require('axios')
     const queues = [{ t: 'p', m: 'post', u: 'https://www.mytelly.co.uk/getform' }]
     await doFetch(queues, (queue, res) => {
       // process form -> provider
@@ -191,67 +192,3 @@ function parseText($item) {
 
   return text
 }
-
-async function doFetch(queues, cb) {
-  const axios = require('axios')
-
-  let n = Math.min(nworker, queues.length)
-  const workers = []
-  const adjustWorker = () => {
-    if (queues.length > workers.length && workers.length < nworker) {
-      let nw = Math.min(nworker, queues.length)
-      if (n < nw) {
-        n = nw
-        createWorker()
-      }
-    }
-  }
-  const createWorker = () => {
-    while (workers.length < n) {
-      startWorker()
-    }
-  }
-  const startWorker = () => {
-    const worker = () => {
-      if (queues.length) {
-        const queue = queues.shift()
-        const done = res => {
-          if (res) {
-            cb(queue, res)
-            adjustWorker()
-          }
-          worker()
-        }
-        const url = typeof queue === 'string' ? queue : queue.u
-        const params = typeof queue === 'object' && queue.params ? queue.params : {}
-        const method = typeof queue === 'object' && queue.m ? queue.m : 'get'
-        debug(`fetch %s with %s`, url, JSON.stringify(params))
-        if (method === 'post') {
-          axios
-            .post(url, params)
-            .then(response => done(response.data))
-            .catch(console.error)
-        } else {
-          axios
-            .get(url, params)
-            .then(response => done(response.data))
-            .catch(console.error)
-        }
-      } else {
-        workers.splice(workers.indexOf(worker), 1)
-      }
-    }
-    workers.push(worker)
-    worker()
-  }
-  createWorker()
-  await new Promise(resolve => {
-    const interval = setInterval(() => {
-      if (workers.length === 0) {
-        clearInterval(interval)
-        resolve()
-      }
-    }, 500)
-  })
-}
-
