@@ -164,36 +164,36 @@ function fetchApiVersion() {
         console.error(`Using default bundle version: ${bundleVer} since API could not be contacted.`)
       } else {
         bundleVer = bundleVerData.data.version
-        // get the minified JS app bundle
-        const bundleUrl = `https://components.pickx.be/pxReactPlayer/${bundleVer}/bundle.min.js`
+      }
+      // get the minified JS app bundle
+      const bundleUrl = `https://components.pickx.be/pxReactPlayer/${bundleVer}/bundle.min.js`
 
-        // now, find the react hash inside the bundle URL
-        const bundle = await axios.get(bundleUrl).then(r => {
-          const re = /REACT_APP_VERSION_HASH:"([^"]+)"/
-          const match = r.data.match(re)
-          if (match && match[1]) {
-            return match[1]
-          } else {
-            throw new Error('React app version hash not found')
-          }
-        }).catch(console.error)
-
-        const versionUrl = `https://www.pickx.be/api/s-${bundle.replace('/REACT_APP_VERSION_HASH:"', '')}`
-
-        const response = await axios.get(versionUrl, {
-          headers: {
-            Origin: 'https://www.pickx.be',
-            Referer: 'https://www.pickx.be/'
-          }
-        })
-
-        if (response.status === 200) {
-          apiVersion = response.data.version
-          resolve()
+      // now, find the react hash inside the bundle URL
+      const bundle = await axios.get(bundleUrl).then(r => {
+        const re = /REACT_APP_VERSION_HASH:"([^"]+)"/
+        const match = r.data.match(re)
+        if (match && match[1]) {
+          return match[1]
         } else {
-          console.error(`Failed to fetch API version. Status: ${response.status}`)
-          reject(`Failed to fetch API version. Status: ${response.status}`)
+          throw new Error('React app version hash not found')
         }
+      }).catch(console.error)
+
+      const versionUrl = `https://www.pickx.be/api/s-${bundle.replace('/REACT_APP_VERSION_HASH:"', '')}`
+
+      const response = await axios.get(versionUrl, {
+        headers: {
+          Origin: 'https://www.pickx.be',
+          Referer: 'https://www.pickx.be/'
+        }
+      })
+
+      if (response.status === 200) {
+        apiVersion = response.data.version
+        resolve()
+      } else {
+        console.error(`Failed to fetch API version. Status: ${response.status}`)
+        reject(`Failed to fetch API version. Status: ${response.status}`)
       }
     } catch (error) {
       console.error('Error during fetchApiVersion:', error)
