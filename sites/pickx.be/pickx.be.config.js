@@ -161,8 +161,7 @@ function fetchApiVersion() {
 
       if (bundleVerData.status !== 200) {
         bundleVer = "6.1"; // default value in case there's an issue with the API
-        console.error(`Failed to fetch bundle version. Status: ${bundleVerData.status}`)
-        reject(`Failed to fetch bundle version. Status: ${bundleVerData.status}`)
+        console.error(`Using default bundle version: ${bundleVer} since API could not be contacted.`)
       } else {
         bundleVer = bundleVerData.data.version
         // get the minified JS app bundle
