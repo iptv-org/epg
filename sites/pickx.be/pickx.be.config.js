@@ -42,6 +42,7 @@ module.exports = {
   },
   parser({ channel, content }) {
     const programs = []
+    const programIds = new Set()
     if (!content) return programs
     const data = JSON.parse(content)
     const airings = data.airings.data
@@ -49,21 +50,24 @@ module.exports = {
 
     airings.forEach(airing => {
       const programReferenceNumber = airing[2]
-      const program = programsData.find(p => p[13] === programReferenceNumber)
-      if (program) {
-      programs.push({
-        title: program[20],
-        sub_title: program[11],
-        description: program[8],
-        category: program[24]?.[channel.lang] ? program[24][channel.lang] : program[7].split('.')[1],
-        image: program[12] ? `https://experience-cache.proximustv.be/posterserver/poster/EPG/w-166_h-110/${program[12]}` : null,
-        season: program[16],
-        episode: program[10],
-        actors: program[0],
-        director: program[9] ? [program[9]] : null,
-        start: dayjs.utc(airing[3]),
-        stop: dayjs.utc(airing[4])
-      })
+      if (!programIds.has(programReferenceNumber)) {
+        const program = programsData.find(p => p[13] === programReferenceNumber)
+        if (program) {
+          programs.push({
+            title: program[20],
+            sub_title: program[11],
+            description: program[8],
+            category: program[24]?.[channel.lang] ? program[24][channel.lang] : program[7].split('.')[1],
+            image: program[12] ? `https://experience-cache.proximustv.be/posterserver/poster/EPG/w-166_h-110/${program[12]}` : null,
+            season: program[16],
+            episode: program[10],
+            actors: program[0],
+            director: program[9] ? [program[9]] : null,
+            start: dayjs.utc(airing[3]),
+            stop: dayjs.utc(airing[4])
+          })
+          programIds.add(programReferenceNumber)
+        }
       }
     })
 
