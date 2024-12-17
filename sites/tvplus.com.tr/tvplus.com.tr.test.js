@@ -1,54 +1,76 @@
-const { parser, url, request } = require('./tvplus.com.tr.config.js')
+const { parser, url } = require('./tvplus.com.tr.config.js')
+const fs = require('fs')
+const path = require('path')
+const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
+
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
-const date = dayjs.utc('2021-11-07', 'YYYY-MM-DD').startOf('d')
-const channel = {
-  site_id: '32',
-  xmltv_id: '24TV.tr'
-}
-const content =
-  '{"counttotal":"23","playbilllist":[{"country":"","starttime":"20211107000000","type":"PROGRAM","isBlackout":"0","rerun":"0","ppvsubscribed":"0","foreignsn":"134383557","isLive":"0","ratingid":"0","episodeTotalCount":"0","id":"134383557","keyword":"24 Portre","contentType":"0","isnpvr":"1","slsType":"0","iscpvr":"0","advisory":[],"genreIds":["1179"],"istvod":"0","name":"24 Portre","tvodStatus":"0","pictures":[{"href":"https://izmottvsc23.tvplus.com.tr:33207/CPS/images/universal/film/program/202111/20211104/35/20211104000026695lh5.jpg","resolution":["null","null"],"imageType":"0"}],"externalContentCode":"105445035962202111070300","genres":"Yaşam","visittimes":"0","issubscribed":"0","programType":"program","gapFiller":"0","introduce":"Kendi alanında büyük başarılar elde etmiş insanların kendi ağzından hayat hikayeleri ekrana geliyor.","priceType":[{"value":"0","key":"BTV"},{"value":"0","key":"TVOD"}],"endtime":"20211107010000","seasonTotalCount":"0","recordedMediaIds":[],"picture":{},"isLoyalty":"0","isppv":"0","mainGenre":"0","contentRight":"[{\\"mediaId\\":\\"3000435\\",\\"businessType\\":\\"13\\",\\"enable\\":\\"0\\"},{\\"mediaId\\":\\"3000435\\",\\"businessType\\":\\"14\\",\\"enable\\":\\"0\\"},{\\"mediaId\\":\\"3000435\\",\\"businessType\\":\\"15\\",\\"enable\\":\\"1\\"},{\\"mediaId\\":\\"100067919\\",\\"businessType\\":\\"13\\",\\"enable\\":\\"0\\"},{\\"mediaId\\":\\"100067919\\",\\"businessType\\":\\"14\\",\\"enable\\":\\"0\\"},{\\"mediaId\\":\\"100067919\\",\\"businessType\\":\\"15\\",\\"enable\\":\\"1\\"}]","channelid":"32"}],"playbillVersion":[{"channelId":"32","date":"20211108","version":"20211106000043"},{"channelId":"32","date":"20211107","version":"20211105000027"}]}'
+jest.mock('axios')
 
-it('can generate valid url', () => {
-  expect(url).toBe('https://izmottvsc23.tvplus.com.tr:33207/EPG/JSON/PlayBillList')
+const date = dayjs.utc('2024-12-15', 'YYYY-MM-DD').startOf('d')
+const channel = {
+  lang: 'tr',
+  site_id: 'nick-jr/4353',
+  xmltv_id: 'NickJr.tr'
+}
+
+axios.get.mockImplementation((url, opts) => {
+  if (url === 'https://tvplus.com.tr/canli-tv/yayin-akisi') {
+    return Promise.resolve({
+      data: fs.readFileSync(path.join(__dirname, '__data__', 'build.html')).toString()
+    })
+  }
 })
 
-it('can generate valid request data', () => {
-  const result = request.data({ date, channel })
-  expect(result).toMatchObject({
-    type: '2',
-    channelid: '32',
-    begintime: '20211107000000',
-    endtime: '20211108000000'
-  })
+it('can generate valid url', async () => {
+  expect(await url({ channel })).toBe('https://tvplus.com.tr/_next/data/kUzvz_bbQJNaShlFUkrR3/tr/canli-tv/yayin-akisi/nick-jr--4353.json?title=nick-jr--4353')
 })
 
 it('can parse response', () => {
-  const result = parser({ date, channel, content })
-  expect(result).toMatchObject([
-    {
-      start: '2021-11-07T00:00:00.000Z',
-      stop: '2021-11-07T01:00:00.000Z',
-      title: '24 Portre',
-      category: 'Yaşam',
-      image:
-        'https://izmottvsc23.tvplus.com.tr:33207/CPS/images/universal/film/program/202111/20211104/35/20211104000026695lh5.jpg',
-      description:
-        'Kendi alanında büyük başarılar elde etmiş insanların kendi ağzından hayat hikayeleri ekrana geliyor.'
-    }
-  ])
+  const content = fs.readFileSync(path.join(__dirname, '__data__', 'content.json'))
+  const results = parser({ date, channel, content })
+    .map(p => {
+      p.start = p.start.toJSON()
+      p.stop = p.stop.toJSON()
+      return p
+    })
+
+  expect(results.length).toBe(88)
+  expect(results[0]).toMatchObject({
+    start: '2024-12-14T21:10:00.000Z',
+    stop: '2024-12-14T21:20:00.000Z',
+    title: 'Camgöz (2020)',
+    description:
+      'Max\'in Camgöz adında yarı köpek balığı yarı köpek eşsiz bir evcil havyanı vardır. İlk başlarda Camgöz\'ü saklamaya çalışsa da Sisli Pınarlar\'da, en iyi arkadaşlar, meraklı komşular ve hatta Max\'in ailesi bile yaramaz yeni arkadaşını fark edecektir.',
+    image:
+      'https://gbzeottvsc01.tvplus.com.tr:33207/CPS/images/universal/film/program/202412/20241209/21/2126356250845eb88428_0_XL.jpg',
+    category: 'Çocuk',
+    season: 1,
+    episode: 116
+  })
+  expect(results[10]).toMatchObject({
+    start: '2024-12-14T23:00:00.000Z',
+    stop: '2024-12-14T23:25:00.000Z',
+    title: 'Blaze ve Yol Canavarları',
+    description:
+      'Blaze ve Yol Canavarları, dünyanın en büyük canavar kamyonu Blaze ve en iyi arkadaşı ve sürücüsü AJ adında bir çocuk hakkındaki interaktif bir anaokulu animasyon dizisidir.',
+    image:
+      'https://gbzeottvsc01.tvplus.com.tr:33207/CPS/images/universal/film/program/202412/20241209/94/2126356271145eb88428_0_XL.jpg',
+    category: 'Çocuk',
+    season: 6,
+    episode: 617
+  })
 })
 
 it('can handle empty guide', () => {
   const result = parser({
     date,
     channel,
-    content:
-      '{"counttotal":"0","playbilllist":[],"playbillVersion":[{"channelId":"10000","date":"20211108","version":"20211107163253"},{"channelId":"10000","date":"20211107","version":"20211107163253"}]}'
+    content: ''
   })
   expect(result).toMatchObject([])
 })
