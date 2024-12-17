@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/tvarenasport.com/tvarenasport.com.co
 ### Test
 
 ```sh
-npm test ---tvarenasport.com
+npm test --- tvarenasport.com
 ```

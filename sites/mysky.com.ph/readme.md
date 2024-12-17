@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/mysky.com.ph/mysky.com.ph.config.js 
 ### Test
 
 ```sh
-npm test ---mysky.com.ph
+npm test --- mysky.com.ph
 ```

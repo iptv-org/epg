@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/m.tv.sms.cz/m.tv.sms.cz.config.js --
 ### Test
 
 ```sh
-npm test ---m.tv.sms.cz
+npm test --- m.tv.sms.cz
 ```

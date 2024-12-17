@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/dsmart.com.tr/dsmart.com.tr.config.j
 ### Test
 
 ```sh
-npm test ---dsmart.com.tr
+npm test --- dsmart.com.tr
 ```

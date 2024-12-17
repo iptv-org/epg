@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/telsu.fi/telsu.fi.config.js --output
 ### Test
 
 ```sh
-npm test ---telsu.fi
+npm test --- telsu.fi
 ```

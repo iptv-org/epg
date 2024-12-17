@@ -19,5 +19,5 @@ npm run grab --- --site=rthk.hk --lang=en
 ### Test
 
 ```sh
-npm test ---rthk.hk
+npm test --- rthk.hk
 ```

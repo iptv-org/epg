@@ -11,5 +11,5 @@ npm run grab --- --site=kan.org.il
 ### Test
 
 ```sh
-npm test ---kan.org.il
+npm test --- kan.org.il
 ```

@@ -11,5 +11,5 @@ npm run grab --- --site=hd-plus.de
 ### Test
 
 ```sh
-npm test ---hd-plus.de
+npm test --- hd-plus.de
 ```

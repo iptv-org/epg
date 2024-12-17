@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/kplus.vn/kplus.vn.config.js --output
 ### Test
 
 ```sh
-npm test ---kplus.vn
+npm test --- kplus.vn
 ```

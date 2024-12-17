@@ -11,5 +11,5 @@ npm run grab --- --site=energeek.cl
 ### Test
 
 ```sh
-npm test ---energeek.cl
+npm test --- energeek.cl
 ```

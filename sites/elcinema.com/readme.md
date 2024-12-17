@@ -35,5 +35,5 @@ npm run channels:parse --- --config=./sites/elcinema.com/elcinema.com.config.js 
 ### Test
 
 ```sh
-npm test ---elcinema.com
+npm test --- elcinema.com
 ```

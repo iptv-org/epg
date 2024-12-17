@@ -11,5 +11,5 @@ npm run grab --- --site=vivacom.bg
 ### Test
 
 ```sh
-npm test ---vivacom.bg
+npm test --- vivacom.bg
 ```

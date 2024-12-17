@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/guida.tv/guida.tv.config.js --output
 ### Test
 
 ```sh
-npm test ---guida.tv
+npm test --- guida.tv
 ```

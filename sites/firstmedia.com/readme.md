@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/firstmedia.com/firstmedia.com.config
 ### Test
 
 ```sh
-npm test ---firstmedia.com
+npm test --- firstmedia.com
 ```

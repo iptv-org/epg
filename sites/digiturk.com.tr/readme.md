@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/digiturk.com.tr/digiturk.com.tr.conf
 ### Test
 
 ```sh
-npm test ---digiturk.com.tr
+npm test --- digiturk.com.tr
 ```

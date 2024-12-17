@@ -11,5 +11,5 @@ npm run grab --- --site=frikanalen.no
 ### Test
 
 ```sh
-npm test ---frikanalen.no
+npm test --- frikanalen.no
 ```

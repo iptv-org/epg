@@ -19,5 +19,5 @@ npm run channels:parse --- --config=./sites/tv.mail.ru/tv.mail.ru.config.js --ou
 ### Test
 
 ```sh
-npm test ---tv.mail.ru
+npm test --- tv.mail.ru
 ```

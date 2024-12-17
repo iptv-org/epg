@@ -11,5 +11,5 @@ npm run grab --- --site=mediaklikk.hu
 ### Test
 
 ```sh
-npm test ---mediaklikk.hu
+npm test --- mediaklikk.hu
 ```

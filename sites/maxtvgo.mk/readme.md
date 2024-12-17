@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/maxtvgo.mk/maxtvgo.mk.config.js --ou
 ### Test
 
 ```sh
-npm test ---maxtvgo.mk
+npm test --- maxtvgo.mk
 ```

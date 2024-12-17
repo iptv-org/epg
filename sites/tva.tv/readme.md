@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/tva.tv/tva.tv.config.js --output=./s
 ### Test
 
 ```sh
-npm test ---tva.tv
+npm test --- tva.tv
 ```

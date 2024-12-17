@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/meuguia.tv/meuguia.tv.config.js --ou
 ### Test
 
 ```sh
-npm test ---meuguia.tv
+npm test --- meuguia.tv
 ```

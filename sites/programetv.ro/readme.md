@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/programetv.ro/programetv.ro.config.j
 ### Test
 
 ```sh
-npm test ---programetv.ro
+npm test --- programetv.ro
 ```

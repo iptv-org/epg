@@ -11,5 +11,5 @@ npm run grab --- --site=9tv.co.il
 ### Test
 
 ```sh
-npm test ---9tv.co.il
+npm test --- 9tv.co.il
 ```
