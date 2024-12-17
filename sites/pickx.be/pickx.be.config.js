@@ -19,15 +19,18 @@ dayjs.extend(utc)
 module.exports = {
   site: 'pickx.be',
   days: 2,
-  apiVersion: function () {
+  setApiVersion: function (version) {
+    apiVersion = version
+  },
+  getApiVersion: function () {
     return apiVersion
   },
-  fetchApiVersion: fetchApiVersion, // Export fetchApiVersion
+  fetchApiVersion: fetchApiVersion,
   url: async function ({ channel, date }) {
-    while (!isApiVersionFetched) {
-      await new Promise(resolve => setTimeout(resolve, 100)) // Wait for 100 milliseconds
+    if (!apiVersion) {
+      await fetchApiVersion()
     }
-    return `https://px-epg.azureedge.net/airings/${apiVersion}/${date.format(
+    return `https://px-epg.azureedge.net/minified-airings/${apiVersion}/${date.format(
       'YYYY-MM-DD'
     )}/channel/${channel.site_id}?timezone=Europe%2FBrussels`
   },
@@ -39,28 +42,30 @@ module.exports = {
   },
   parser({ channel, content }) {
     const programs = []
-    if (content) {
-      const items = JSON.parse(content)
-      items.forEach(item => {
-        programs.push({
-          title: item.program.title,
-          sub_title: item.program.episodeTitle,
-          description: item.program.description,
-          category: item.program.translatedCategory?.[channel.lang]
-            ? item.program.translatedCategory[channel.lang]
-            : item.program.category.split('.')[1],
-          image: item.program.posterFileName
-            ? `https://experience-cache.proximustv.be/posterserver/poster/EPG/w-166_h-110/${item.program.posterFileName}`
-            : null,
-          season: item.program.seasonNumber,
-          episode: item.program.episodeNumber,
-          actors: item.program.actors,
-          director: item.program.director ? [item.program.director] : null,
-          start: dayjs.utc(item.programScheduleStart),
-          stop: dayjs.utc(item.programScheduleEnd)
-        })
+    if (!content) return programs
+    const data = JSON.parse(content)
+    const airings = data.airings.data
+    const programsData = data.programs.data
+
+    airings.forEach(airing => {
+      const programReferenceNumber = airing[2]
+      const program = programsData.find(p => p[13] === programReferenceNumber)
+      if (program) {
+      programs.push({
+        title: program[20],
+        sub_title: program[11],
+        description: program[8],
+        category: program[24]?.[channel.lang] ? program[24][channel.lang] : program[7].split('.')[1],
+        image: program[12] ? `https://experience-cache.proximustv.be/posterserver/poster/EPG/w-166_h-110/${program[12]}` : null,
+        season: program[16],
+        episode: program[10],
+        actors: program[0],
+        director: program[9] ? [program[9]] : null,
+        start: dayjs.utc(airing[3]),
+        stop: dayjs.utc(airing[4])
       })
-    }
+      }
+    })
 
     return programs
   },
@@ -116,7 +121,7 @@ module.exports = {
         }`
     }
     const result = await axios
-      .post('https://api.proximusmwc.be/tiams/v2/graphql', query)
+      .post('https://api.proximusmwc.be/tiams/v3/graphql', query)
       .then(r => r.data)
       .catch(console.error)
 
@@ -136,6 +141,7 @@ module.exports = {
     )
   }
 }
+
 function fetchApiVersion() {
   return new Promise(async (resolve, reject) => {
     try {
@@ -144,6 +150,7 @@ function fetchApiVersion() {
       // it's not the best way to get the version but it's the only way to get it.
 
       // find bundle version
+      let bundleVer = "" // default 
       const minBundleVer = "https://www.pickx.be/minimal-bundle-version"
       const bundleVerData = await axios.get(minBundleVer, {
           headers: {
@@ -153,10 +160,11 @@ function fetchApiVersion() {
       })
 
       if (bundleVerData.status !== 200) {
+        bundleVer = "6.1"; // default value in case there's an issue with the API
         console.error(`Failed to fetch bundle version. Status: ${bundleVerData.status}`)
         reject(`Failed to fetch bundle version. Status: ${bundleVerData.status}`)
       } else {
-        const bundleVer = bundleVerData.data.version
+        bundleVer = bundleVerData.data.version
         // get the minified JS app bundle
         const bundleUrl = `https://components.pickx.be/pxReactPlayer/${bundleVer}/bundle.min.js`
 
