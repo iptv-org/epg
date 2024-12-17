@@ -33,5 +33,5 @@ npm run channels:parse --- --config=sites/programme.tvb.com/programme.tvb.com.co
 ### Test
 
 ```sh
-npm test ---programme.tvb.com
+npm test --- programme.tvb.com
 ```

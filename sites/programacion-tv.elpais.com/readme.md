@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/programacion-tv.elpais.com/programac
 ### Test
 
 ```sh
-npm test ---programacion-tv.elpais.com
+npm test --- programacion-tv.elpais.com
 ```

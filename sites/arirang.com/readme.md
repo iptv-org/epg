@@ -11,5 +11,5 @@ npm run grab --- --site=arirang.com
 ### Test
 
 ```sh
-npm test ---arirang.com
+npm test --- arirang.com
 ```

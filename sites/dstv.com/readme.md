@@ -66,5 +66,5 @@ npm run channels:parse --- --config=./sites/dstv.com/dstv.com.config.js --output
 ### Test
 
 ```sh
-npm test ---dstv.com
+npm test --- dstv.com
 ```

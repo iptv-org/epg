@@ -11,5 +11,5 @@ npm run grab --- --site=rtp.pt
 ### Test
 
 ```sh
-npm test ---rtp.pt
+npm test --- rtp.pt
 ```

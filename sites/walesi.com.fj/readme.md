@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/walesi.com.fj/walesi.com.fj.config.j
 ### Test
 
 ```sh
-npm test ---walesi.com.fj
+npm test --- walesi.com.fj
 ```

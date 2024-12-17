@@ -11,5 +11,5 @@ npm run grab --- --site=mako.co.il
 ### Test
 
 ```sh
-npm test ---mako.co.il
+npm test --- mako.co.il
 ```

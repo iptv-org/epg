@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/tvplus.com.tr/tvplus.com.tr.config.j
 ### Test
 
 ```sh
-npm test ---tvplus.com.tr
+npm test --- tvplus.com.tr
 ```

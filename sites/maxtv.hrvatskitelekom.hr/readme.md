@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/maxtv.hrvatskitelekom.hr/maxtv.hrvat
 ### Test
 
 ```sh
-npm test ---maxtv.hrvatskitelekom.hr
+npm test --- maxtv.hrvatskitelekom.hr
 ```

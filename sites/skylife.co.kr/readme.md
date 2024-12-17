@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/skylife.co.kr/skylife.co.kr.config.j
 ### Test
 
 ```sh
-npm test ---skylife.co.kr
+npm test --- skylife.co.kr
 ```

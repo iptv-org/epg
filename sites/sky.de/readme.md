@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/sky.de/sky.de.config.js --output=./s
 ### Test
 
 ```sh
-npm test ---sky.de
+npm test --- sky.de
 ```

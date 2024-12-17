@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/tvguide.myjcom.jp/tvguide.myjcom.jp.
 ### Test
 
 ```sh
-npm test ---tvguide.myjcom.jp
+npm test --- tvguide.myjcom.jp
 ```

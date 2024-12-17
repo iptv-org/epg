@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/sjonvarp.is/sjonvarp.is.config.js --
 ### Test
 
 ```sh
-npm test ---sjonvarp.is
+npm test --- sjonvarp.is
 ```

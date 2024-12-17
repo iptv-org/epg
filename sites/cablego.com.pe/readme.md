@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/cablego.com.pe/cablego.com.pe.config
 ### Test
 
 ```sh
-npm test ---cablego.com.pe
+npm test --- cablego.com.pe
 ```

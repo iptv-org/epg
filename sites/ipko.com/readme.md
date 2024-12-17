@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/ipko.com/ipko.com.config.js --output
 ### Test
 
 ```sh
-npm test ---ipko.com
+npm test --- ipko.com
 ```

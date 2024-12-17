@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/mewatch.sg/mewatch.sg.config.js --ou
 ### Test
 
 ```sh
-npm test ---mewatch.sg
+npm test --- mewatch.sg
 ```

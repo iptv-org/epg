@@ -11,5 +11,5 @@ npm run grab --- --site=virginmediatelevision.ie
 ### Test
 
 ```sh
-npm test ---virginmediatelevision.ie
+npm test --- virginmediatelevision.ie
 ```

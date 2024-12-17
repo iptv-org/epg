@@ -11,5 +11,5 @@ npm run grab --- --site=worldfishingnetwork.com
 ### Test
 
 ```sh
-npm test ---worldfishingnetwork.com
+npm test --- worldfishingnetwork.com
 ```

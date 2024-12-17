@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/foxtel.com.au/foxtel.com.au.config.j
 ### Test
 
 ```sh
-npm test ---foxtel.com.au
+npm test --- foxtel.com.au
 ```

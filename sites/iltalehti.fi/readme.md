@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/iltalehti.fi/iltalehti.fi.config.js 
 ### Test
 
 ```sh
-npm test ---iltalehti.fi
+npm test --- iltalehti.fi
 ```

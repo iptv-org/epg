@@ -11,5 +11,5 @@ npm run grab --- --site=rev.bs
 ### Test
 
 ```sh
-npm test ---rev.bs
+npm test --- rev.bs
 ```

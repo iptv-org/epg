@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/tv.yettel.hu/tv.yettel.hu.config.js 
 ### Test
 
 ```sh
-npm test ---tv.yettel.hu
+npm test --- tv.yettel.hu
 ```

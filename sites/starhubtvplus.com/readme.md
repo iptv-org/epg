@@ -33,5 +33,5 @@ npm run channels:parse --- --config=sites/starhubtvplus.com/starhubtvplus.com.co
 ### Test
 
 ```sh
-npm test ---starhubtvplus.com
+npm test --- starhubtvplus.com
 ```

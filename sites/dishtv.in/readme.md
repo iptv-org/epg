@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/dishtv.in/dishtv.in.config.js --outp
 ### Test
 
 ```sh
-npm test ---dishtv.in
+npm test --- dishtv.in
 ```

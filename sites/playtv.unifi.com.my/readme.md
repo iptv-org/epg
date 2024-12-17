@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/playtv.unifi.com.my/playtv.unifi.com
 ### Test
 
 ```sh
-npm test ---playtv.unifi.com.my
+npm test --- playtv.unifi.com.my
 ```

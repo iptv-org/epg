@@ -11,5 +11,5 @@ npm run grab --- --site=flixed.io
 ### Test
 
 ```sh
-npm test ---flixed.io
+npm test --- flixed.io
 ```

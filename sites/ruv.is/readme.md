@@ -11,5 +11,5 @@ npm run grab --- --site=ruv.is
 ### Test
 
 ```sh
-npm test ---ruv.is
+npm test --- ruv.is
 ```

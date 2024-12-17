@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/reportv.com.ar/reportv.com.ar.config
 ### Test
 
 ```sh
-npm test ---reportv.com.ar
+npm test --- reportv.com.ar
 ```

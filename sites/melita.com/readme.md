@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/melita.com/melita.com.config.js --ou
 ### Test
 
 ```sh
-npm test ---melita.com
+npm test --- melita.com
 ```

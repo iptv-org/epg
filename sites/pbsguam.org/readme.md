@@ -13,5 +13,5 @@ npm run grab --- --site=pbsguam.org
 ### Test
 
 ```sh
-npm test ---pbsguam.org
+npm test --- pbsguam.org
 ```

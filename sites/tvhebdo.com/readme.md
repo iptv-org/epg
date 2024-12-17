@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/tvhebdo.com/tvhebdo.com.config.js --
 ### Test
 
 ```sh
-npm test ---tvhebdo.com
+npm test --- tvhebdo.com
 ```

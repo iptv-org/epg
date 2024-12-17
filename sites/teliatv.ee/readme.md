@@ -49,5 +49,5 @@ npm run channels:parse --- --config=./sites/teliatv.ee/teliatv.ee.config.js --ou
 ### Test
 
 ```sh
-npm test ---teliatv.ee
+npm test --- teliatv.ee
 ```

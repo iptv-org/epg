@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/webtv.delta.nl/webtv.delta.nl.config
 ### Test
 
 ```sh
-npm test ---webtv.delta.nl
+npm test --- webtv.delta.nl
 ```

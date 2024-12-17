@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/directv.com/directv.com.config.js --
 ### Test
 
 ```sh
-npm test ---directv.com
+npm test --- directv.com
 ```

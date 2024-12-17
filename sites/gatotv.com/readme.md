@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/gatotv.com/gatotv.com.config.js --ou
 ### Test
 
 ```sh
-npm test ---gatotv.com
+npm test --- gatotv.com
 ```

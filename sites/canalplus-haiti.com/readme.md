@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/canalplus-haiti.com/canalplus-haiti.
 ### Test
 
 ```sh
-npm test ---canalplus-haiti.com
+npm test --- canalplus-haiti.com
 ```

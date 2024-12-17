@@ -33,5 +33,5 @@ npm run channels:parse --- --config=./sites/sat.tv/sat.tv.config.js --output=./s
 ### Test
 
 ```sh
-npm test ---sat.tv
+npm test --- sat.tv
 ```
