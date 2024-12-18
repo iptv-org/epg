@@ -7,13 +7,13 @@ https://cubmu.com/live-tv _[Geo-restricted]_
 Indonesian:
 
 ```sh
-npm run grab -- --site=cubmu.com --lang=id
+npm run grab --- --site=cubmu.com --lang=id
 ```
 
 English:
 
 ```sh
-npm run grab -- --site=cubmu.com --lang=en
+npm run grab --- --site=cubmu.com --lang=en
 ```
 
 ### Update channel list
@@ -21,17 +21,17 @@ npm run grab -- --site=cubmu.com --lang=en
 Indonesian:
 
 ```sh
-npm run channels:parse -- --config=sites/cubmu.com/cubmu.com.config.js --output=sites/cubmu.com/cubmu.com_id.channels.xml --set=lang:id
+npm run channels:parse --- --config=sites/cubmu.com/cubmu.com.config.js --output=sites/cubmu.com/cubmu.com_id.channels.xml --set=lang:id
 ```
 
 English:
 
 ```sh
-npm run channels:parse -- --config=sites/cubmu.com/cubmu.com.config.js --output=sites/cubmu.com/cubmu.com_en.channels.xml --set=lang:en
+npm run channels:parse --- --config=sites/cubmu.com/cubmu.com.config.js --output=sites/cubmu.com/cubmu.com_en.channels.xml --set=lang:en
 ```
 
 ### Test
 
 ```sh
-npm test -- cubmu.com
+npm test --- cubmu.com
 ```

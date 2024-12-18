@@ -4,7 +4,7 @@ const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
-const doFetch = require('../../scripts/core/fetch')
+const doFetch = require('@ntlab/sfetch')
 const debug = require('debug')('site:mncvision.id')
 
 dayjs.extend(utc)
@@ -127,7 +127,7 @@ async function parseItems(content, date, cookies) {
         'X-Requested-With': 'XMLHttpRequest',
         Cookie: cookies,
       }
-      queues.push({ i: $item, u: url, params: { headers, timeout } })
+      queues.push({ i: $item, url, params: { headers, timeout } })
     }
     await doFetch(queues, (queue, res) => {
       const $item = queue.i

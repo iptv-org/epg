@@ -42,13 +42,13 @@ npm install
 To start the download of the guide, select one of the [supported sites](SITES.md) and paste its name into the command below:
 
 ```sh
-npm run grab -- --site=example.com
+npm run grab --- --site=example.com
 ```
 
 And once the download is complete, the guide will be saved to the `guide.xml` file.
 
 ```sh
-Usage: npm run grab -- [options]
+Usage: npm run grab --- [options]
 
 Options:
   -s, --site <name>             Name of the site to parse
@@ -90,7 +90,7 @@ http://<your_local_ip_address>:3000/guide.xml
 By default, the guide for each channel is downloaded one by one, but you can change this behavior by increasing the number of simultaneous requests using the `--maxConnections` attribute:
 
 ```sh
-npm run grab -- --site=example.com --maxConnections=10
+npm run grab --- --site=example.com --maxConnections=10
 ```
 
 But be aware that under heavy load, some sites may start return an error or completely block your access.
@@ -110,7 +110,7 @@ Create an XML file and copy the descriptions of all the channels you need from t
 And then specify the path to that file via the `--channels` attribute:
 
 ```sh
-npm run grab -- --channels=path/to/custom.channels.xml
+npm run grab --- --channels=path/to/custom.channels.xml
 ```
 
 ### Run on schedule
@@ -118,7 +118,7 @@ npm run grab -- --channels=path/to/custom.channels.xml
 If you want to download the guide automatically on a schedule, you need to pass a valid [cron expression](https://crontab.guru/) to the script using the `--cron` attribute:
 
 ```sh
-npm run grab -- --site=example.com --cron="0 0 * * *"
+npm run grab --- --site=example.com --cron="0 0 * * *"
 ```
 
 ## Update

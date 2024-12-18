@@ -1,6 +1,7 @@
 import { Collection, Logger, DateTime, Storage, Zip } from '@freearhey/core'
 import { Channel } from 'epg-grabber'
 import { XMLTV } from '../core'
+import path from 'path'
 
 type GuideProps = {
   channels: Collection
@@ -22,7 +23,7 @@ export class Guide {
     this.channels = channels
     this.programs = programs
     this.logger = logger
-    this.storage = new Storage()
+    this.storage = new Storage(path.dirname(filepath))
     this.filepath = filepath
     this.gzip = gzip || false
   }
@@ -43,15 +44,17 @@ export class Guide {
     })
 
     const xmlFilepath = this.filepath
+    const xmlFilename = path.basename(xmlFilepath)
     this.logger.info(`  saving to "${xmlFilepath}"...`)
-    await this.storage.save(xmlFilepath, xmltv.toString())
+    await this.storage.save(xmlFilename, xmltv.toString())
 
     if (this.gzip) {
       const zip = new Zip()
       const compressed = await zip.compress(xmltv.toString())
       const gzFilepath = `${this.filepath}.gz`
+      const gzFilename = path.basename(gzFilepath)
       this.logger.info(`  saving to "${gzFilepath}"...`)
-      await this.storage.save(gzFilepath, compressed)
+      await this.storage.save(gzFilename, compressed)
     }
   }
 }

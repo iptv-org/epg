@@ -5,11 +5,11 @@ https://knr.gl/kl/tv/aallakaatitassat
 ### Download the guide
 
 ```sh
-npm run grab -- --site=knr.gl
+npm run grab --- --site=knr.gl
 ```
 
 ### Test
 
 ```sh
-npm test -- knr.gl
+npm test --- knr.gl
 ```

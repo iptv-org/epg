@@ -13,7 +13,7 @@ beforeEach(() => {
 describe('channels:parse', () => {
   it('can parse channels', () => {
     const cmd =
-      'npm run channels:parse -- --config=tests/__data__/input/channels-parse/channels-parse.config.js --output=tests/__data__/output/channels.xml'
+      'npm run channels:parse --- --config=tests/__data__/input/channels-parse/channels-parse.config.js --output=tests/__data__/output/channels.xml'
     execSync(cmd, { encoding: 'utf8' })
 
     expect(content('tests/__data__/output/channels.xml')).toEqual(
