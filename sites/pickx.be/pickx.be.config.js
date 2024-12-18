@@ -5,15 +5,6 @@ const utc = require('dayjs/plugin/utc')
 let apiVersion
 let isApiVersionFetched = false
 
-;(async () => {
-  try {
-    await fetchApiVersion()
-    isApiVersionFetched = true
-  } catch (error) {
-    console.error('Error during script initialization:', error)
-  }
-})()
-
 dayjs.extend(utc)
 
 module.exports = {
@@ -30,7 +21,7 @@ module.exports = {
     if (!apiVersion) {
       await fetchApiVersion()
     }
-    return `https://px-epg.azureedge.net/minified-airings/${apiVersion}/${date.format(
+    return `https://px-epg.azureedge.net/airings/${apiVersion}/${date.format(
       'YYYY-MM-DD'
     )}/channel/${channel.site_id}?timezone=Europe%2FBrussels`
   },
@@ -42,39 +33,29 @@ module.exports = {
   },
   parser({ channel, content }) {
     const programs = []
-    const programIds = new Set()
-    if (!content) return programs
-    const data = JSON.parse(content)
-    const airings = data.airings.data
-    const programsData = data.programs.data
-  
-    airings.forEach(airing => {
-      const programReferenceNumber = airing[2]
-      const start = dayjs.utc(airing[3]).format()
-      const stop = dayjs.utc(airing[4]).format()
-      const uniqueId = `${programReferenceNumber}-${start}-${stop}`
-  
-      if (!programIds.has(uniqueId)) {
-        const program = programsData.find(p => p[13] === programReferenceNumber)
-        if (program) {
-          programs.push({
-            title: program[20],
-            sub_title: program[11],
-            description: program[8],
-            category: program[24]?.[channel.lang] ? program[24][channel.lang] : program[7].split('.')[1],
-            image: program[12] ? `https://experience-cache.proximustv.be/posterserver/poster/EPG/w-166_h-110/${program[12]}` : null,
-            season: program[16],
-            episode: program[10],
-            actors: program[0],
-            director: program[9] ? [program[9]] : null,
-            start: dayjs.utc(airing[3]),
-            stop: dayjs.utc(airing[4])
-          })
-          programIds.add(uniqueId)
-        }
-      }
-    })
-  
+    if (content) {
+      const items = JSON.parse(content)
+      items.forEach(item => {
+        programs.push({
+          title: item.program.title,
+          sub_title: item.program.episodeTitle,
+          description: item.program.description,
+          category: item.program.translatedCategory?.[channel.lang]
+            ? item.program.translatedCategory[channel.lang]
+            : item.program.category.split('.')[1],
+          image: item.program.posterFileName
+            ? `https://experience-cache.proximustv.be/posterserver/poster/EPG/w-166_h-110/${item.program.posterFileName}`
+            : null,
+          season: item.program.seasonNumber,
+          episode: item.program.episodeNumber,
+          actors: item.program.actors,
+          director: item.program.director ? [item.program.director] : null,
+          start: dayjs.utc(item.programScheduleStart),
+          stop: dayjs.utc(item.programScheduleEnd)
+        })
+      })
+    }
+
     return programs
   },
   async channels({ lang = '' }) {
@@ -149,7 +130,6 @@ module.exports = {
     )
   }
 }
-
 function fetchApiVersion() {
   return new Promise(async (resolve, reject) => {
     try {
@@ -157,38 +137,22 @@ function fetchApiVersion() {
       // load pickx bundle and get react version hash (regex).
       // it's not the best way to get the version but it's the only way to get it.
 
-      // find bundle version
-      let bundleVer = "" // default 
-      const minBundleVer = "https://www.pickx.be/minimal-bundle-version"
-      const bundleVerData = await axios.get(minBundleVer, {
-          headers: {
-            Origin: 'https://www.pickx.be',
-            Referer: 'https://www.pickx.be/'
-          }
-      })
+      const hashUrl = 'https://www.pickx.be/nl/televisie/tv-gids';
 
-      if (bundleVerData.status !== 200) {
-        bundleVer = "6.1"; // default value in case there's an issue with the API
-        console.error(`Using default bundle version: ${bundleVer} since API could not be contacted.`)
-      } else {
-        bundleVer = bundleVerData.data.version
-      }
-      // get the minified JS app bundle
-      const bundleUrl = `https://components.pickx.be/pxReactPlayer/${bundleVer}/bundle.min.js`
-
-      // now, find the react hash inside the bundle URL
-      const bundle = await axios.get(bundleUrl).then(r => {
-        const re = /REACT_APP_VERSION_HASH:"([^"]+)"/
+      const hashData = await axios.get(hashUrl)
+      .then(r => {
+        const re = /"hashes":\["(.*)"\]/
         const match = r.data.match(re)
         if (match && match[1]) {
           return match[1]
         } else {
           throw new Error('React app version hash not found')
         }
-      }).catch(console.error)
+      })
+      .catch(console.error);
 
-      const versionUrl = `https://www.pickx.be/api/s-${bundle.replace('/REACT_APP_VERSION_HASH:"', '')}`
-
+      const versionUrl = `https://www.pickx.be/api/s-${hashData}`
+   
       const response = await axios.get(versionUrl, {
         headers: {
           Origin: 'https://www.pickx.be',

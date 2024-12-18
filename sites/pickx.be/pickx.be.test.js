@@ -36,7 +36,7 @@ beforeEach(() => {
 it('can generate valid url', async () => {
   const generatedUrl = await url({ channel, date })
   expect(generatedUrl).toBe(
-    `https://px-epg.azureedge.net/minified-airings/mockedApiVersion/2023-12-13/channel/UID0118?timezone=Europe%2FBrussels`
+    `https://px-epg.azureedge.net/airings/mockedApiVersion/2023-12-13/channel/UID0118?timezone=Europe%2FBrussels`
   )
 })
 
@@ -56,13 +56,13 @@ it('can parse response', () => {
   })
 
   expect(result[0]).toMatchObject({
-    start: '2024-12-11T23:55:00.000Z',
-    stop: '2024-12-12T00:15:00.000Z',
-    title: 'Le 22H30',
-    description: 'Condensé de l\'actualité quotidienne des 12 médias de proximité de la fédération Wallonie-Bruxelles (15\')',
+    start: '2023-12-12T23:55:00.000Z',
+    stop: '2023-12-13T00:15:00.000Z',
+    title: 'Le 22h30',
+    description: 'Le journal de vivre ici.',
     category: 'Info',
     image:
-      'https://experience-cache.proximustv.be/posterserver/poster/EPG/w-166_h-110/250_250_B28E198691F3F640FE989D6524EA42AA.jpg'
+      'https://experience-cache.proximustv.be/posterserver/poster/EPG/w-166_h-110/250_250_4B990CC58066A7B2A660AFA0BDDE5C41.jpg'
   })
 })
 
