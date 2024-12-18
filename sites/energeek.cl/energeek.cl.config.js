@@ -16,7 +16,7 @@ module.exports = {
       programs.push({
         title: item.title?.[0]?.value,
         description: item.desc?.[0]?.value,
-        icon: item.icon?.[0]?.src,
+        icon: item.icon?.[0]?.src || item.icon?.[0],
         start: item.start,
         stop: item.stop
       })
