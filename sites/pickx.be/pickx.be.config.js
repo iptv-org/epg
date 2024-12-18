@@ -133,7 +133,7 @@ function fetchApiVersion() {
   return new Promise(async (resolve, reject) => {
     try {
       // you'll never find what happened here :)
-      // load pickx bundle and get react version hash (regex).
+      // load the pickx page and get the hash from the MWC configuration.
       // it's not the best way to get the version but it's the only way to get it.
 
       const hashUrl = 'https://www.pickx.be/nl/televisie/tv-gids';
