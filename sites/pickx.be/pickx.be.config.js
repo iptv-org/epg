@@ -2,17 +2,7 @@ const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 
-let apiVersion
-let isApiVersionFetched = false
-
-;(async () => {
-  try {
-    await fetchApiVersion()
-    isApiVersionFetched = true
-  } catch (error) {
-    console.error('Error during script initialization:', error)
-  }
-})()
+let apiVersion = null
 
 dayjs.extend(utc)
 
@@ -47,10 +37,14 @@ module.exports = {
     const data = JSON.parse(content)
     const airings = data.airings.data
     const programsData = data.programs.data
-
+  
     airings.forEach(airing => {
       const programReferenceNumber = airing[2]
-      if (!programIds.has(programReferenceNumber)) {
+      const start = dayjs.utc(airing[3]).format()
+      const stop = dayjs.utc(airing[4]).format()
+      const uniqueId = `${programReferenceNumber}-${start}-${stop}`
+  
+      if (!programIds.has(uniqueId)) {
         const program = programsData.find(p => p[13] === programReferenceNumber)
         if (program) {
           programs.push({
@@ -66,11 +60,11 @@ module.exports = {
             start: dayjs.utc(airing[3]),
             stop: dayjs.utc(airing[4])
           })
-          programIds.add(programReferenceNumber)
+          programIds.add(uniqueId)
         }
       }
     })
-
+  
     return programs
   },
   async channels({ lang = '' }) {
