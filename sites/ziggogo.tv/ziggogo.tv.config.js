@@ -52,7 +52,7 @@ module.exports = {
       .catch(console.error)
 
     for (let item of items) {
-      const detail = await loadProgramDetails(item, channel)
+      const detail = await loadProgramDetails(item)
       programs.push({
         title: item.title,
         description: detail.longDescription,
@@ -70,7 +70,7 @@ module.exports = {
   async channels() {
     const data = await axios
       .get(
-        'https://prod.spark.ziggogo.tv/eng/web/linear-service/v2/channels?cityId=65535&language=en&productClass=Orion-DASH'
+        'https://spark-prod-nl.gnp.cloud.ziggogo.tv/eng/web/linear-service/v2/channels?cityId=65535&language=en&productClass=Orion-DASH'
       )
       .then(r => r.data)
       .catch(console.log)
@@ -85,15 +85,26 @@ module.exports = {
   }
 }
 
-async function loadProgramDetails(item, channel) {
-  if (!item.id) return {}
-  const url = `https://prod.spark.ziggogo.tv/eng/web/linear-service/v2/replayEvent/${item.id}?returnLinearContent=true&language=en`
-  const data = await axios
-    .get(url)
-    .then(r => r.data)
-    .catch(console.log)
-
-  return data || {}
+async function loadProgramDetails(event) {
+  if (!event || !event.id) {
+    console.log("Invalid event object:", event)
+    return {}
+  }
+  
+  try {
+    const response = await fetch(`https://spark-prod-nl.gnp.cloud.ziggogo.tv/eng/web/linear-service/v2/replayEvent/${event.id}?returnLinearContent=true&language=nl`)
+    const data = await response.json()
+    
+    if (data && typeof data === 'object' && Object.keys(data).length > 0) {
+      return data
+    } else {
+      console.log("No data in response")
+      return {}
+    }
+  } catch (error) {
+    console.log("Error fetching data:", error)
+    return {}
+  }
 }
 
 function parseStart(item) {
