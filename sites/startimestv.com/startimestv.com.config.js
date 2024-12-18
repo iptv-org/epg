@@ -2,7 +2,7 @@ const cheerio = require('cheerio')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
-const doFetch = require('../../scripts/core/fetch')
+const doFetch = require('@ntlab/sfetch')
 const debug = require('debug')('site:startimestv.com')
 
 dayjs.extend(utc)
@@ -48,7 +48,7 @@ module.exports = {
   },
   async channels() {
     const channels = {}
-    const queues = [{ t: 'a', u: 'https://www.startimestv.com/tv_guide.html' }]
+    const queues = [{ t: 'a', url: 'https://www.startimestv.com/tv_guide.html' }]
     await doFetch(queues, (queue, res) => {
       // process area-id
       if (queue.t === 'a') {
@@ -59,7 +59,7 @@ module.exports = {
             const areaId = dd.attr('area-id')
             queues.push({
               t: 's',
-              u: 'https://www.startimestv.com/tv_guide.html',
+              url: 'https://www.startimestv.com/tv_guide.html',
               params: {
                 headers: {
                   cookie: `default_areaID=${areaId}`

@@ -1,7 +1,7 @@
 const cheerio = require('cheerio')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
-const doFetch = require('../../scripts/core/fetch')
+const doFetch = require('@ntlab/sfetch')
 const debug = require('debug')('site:sky.com')
 
 dayjs.extend(utc)
@@ -49,7 +49,7 @@ module.exports = {
   },
   async channels() {
     const channels = {}
-    const queues = [{ t: 'r', u: 'https://www.sky.com/tv-guide' }]
+    const queues = [{ t: 'r', url: 'https://www.sky.com/tv-guide' }]
     await doFetch(queues, (queue, res) => {
       // process regions
       if (queue.t === 'r') {
@@ -57,7 +57,7 @@ module.exports = {
         const initialData = JSON.parse(decodeURIComponent($('#initialData').text()))
         initialData.state.epgData.regions
           .forEach(region => {
-            queues.push({ t: 'c', u: `https://awk.epgsky.com/hawk/linear/services/${region.bouquet}/${region.subBouquet}` })
+            queues.push({ t: 'c', url: `https://awk.epgsky.com/hawk/linear/services/${region.bouquet}/${region.subBouquet}` })
           })
       }
       // process channels
