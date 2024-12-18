@@ -7,13 +7,13 @@ https://www.visionplus.id/channel
 Indonesian:
 
 ```sh
-npm run grab -- --site=visionplus.id --lang=id
+npm run grab --- --site=visionplus.id --lang=id
 ```
 
 English:
 
 ```sh
-npm run grab -- --site=visionplus.id --lang=en
+npm run grab --- --site=visionplus.id --lang=en
 ```
 
 ### Update channel list
@@ -21,17 +21,17 @@ npm run grab -- --site=visionplus.id --lang=en
 Indonesian:
 
 ```sh
-npm run channels:parse -- --config=./sites/visionplus.id/visionplus.id.config.js --output=./sites/visionplus.id/visionplus.id_id.channels.xml --set=lang:id
+npm run channels:parse --- --config=./sites/visionplus.id/visionplus.id.config.js --output=./sites/visionplus.id/visionplus.id_id.channels.xml --set=lang:id
 ```
 
 English:
 
 ```sh
-npm run channels:parse -- --config=./sites/visionplus.id/visionplus.id.config.js --output=./sites/visionplus.id/visionplus.id_en.channels.xml --set=lang:en
+npm run channels:parse --- --config=./sites/visionplus.id/visionplus.id.config.js --output=./sites/visionplus.id/visionplus.id_en.channels.xml --set=lang:en
 ```
 
 ### Test
 
 ```sh
-npm test -- visionplus.id
+npm test --- visionplus.id
 ```

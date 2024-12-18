@@ -94,7 +94,7 @@ it('can handle empty guide', () => {
 To run the tests you can use the following command:
 
 ```sh
-npm test -- example.com
+npm test --- example.com
 ```
 
 Detailed documentation for the tests can be found here: https://jestjs.io/docs/using-matchers
@@ -119,7 +119,7 @@ This file contains a list of channels available at the source.
 After creating all the files we can make sure that the guide loads correctly and has no errors using the command:
 
 ```sh
-npm run grab -- --site=example.com
+npm run grab --- --site=example.com
 ```
 
 If the download is successful, the `guide.xml` file with the ready to use program should appear in the root directory.

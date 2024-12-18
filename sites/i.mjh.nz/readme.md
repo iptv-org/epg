@@ -27,17 +27,17 @@
 ### Download the guide
 
 ```sh
-npm run grab -- --channels=sites/i.mjh.nz/i.mjh.nz_<PROVIDER_CODE>.channels.xml
+npm run grab --- --channels=sites/i.mjh.nz/i.mjh.nz_<PROVIDER_CODE>.channels.xml
 ```
 
 ### Update channel list
 
 ```sh
-npm run channels:parse -- --config=./sites/i.mjh.nz/i.mjh.nz.config.js --output=./sites/i.mjh.nz/i.mjh.nz_<PROVIDER_CODE>.channels.xml --set=provider:<PROVIDER_CODE>
+npm run channels:parse --- --config=./sites/i.mjh.nz/i.mjh.nz.config.js --output=./sites/i.mjh.nz/i.mjh.nz_<PROVIDER_CODE>.channels.xml --set=provider:<PROVIDER_CODE>
 ```
 
 ### Test
 
 ```sh
-npm test -- i.mjh.nz
+npm test --- i.mjh.nz
 ```

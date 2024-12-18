@@ -14,17 +14,17 @@
 ### Download the guide
 
 ```sh
-npm run grab -- --channels=sites/beinsports.com/beinsports.com_<REGION_CODE>-<LANGUAGE_CODE>.channels.xml
+npm run grab --- --channels=sites/beinsports.com/beinsports.com_<REGION_CODE>-<LANGUAGE_CODE>.channels.xml
 ```
 
 ### Update channel list
 
 ```sh
-npm run channels:parse -- --config=./sites/beinsports.com/beinsports.com.config.js --output=./sites/beinsports.com/beinsports.com_<REGION_CODE>-<LANGUAGE_CODE>.channels.xml --set=region:<REGION_CODE> --set=lang:<LANGUAGE_CODE>
+npm run channels:parse --- --config=./sites/beinsports.com/beinsports.com.config.js --output=./sites/beinsports.com/beinsports.com_<REGION_CODE>-<LANGUAGE_CODE>.channels.xml --set=region:<REGION_CODE> --set=lang:<LANGUAGE_CODE>
 ```
 
 ### Test
 
 ```sh
-npm test -- beinsports.com
+npm test --- beinsports.com
 ```

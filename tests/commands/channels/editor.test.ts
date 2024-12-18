@@ -24,7 +24,7 @@ describe('channels:editor', () => {
     }
 
     try {
-      const cmd = `${ENV_VAR} npm run channels:editor -- tests/__data__/output/channels.xml`
+      const cmd = `${ENV_VAR} npm run channels:editor --- tests/__data__/output/channels.xml`
       execSync(cmd, { encoding: 'utf8' })
     } catch (error) {
       expect((error as ExecError).status).toBe(1)

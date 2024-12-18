@@ -11,19 +11,19 @@ https://shahid.mbc.net/fr/livestream (French)
 Arabic:
 
 ```sh
-npm run grab -- --site=shahid.mbc.net --lang=ar
+npm run grab --- --site=shahid.mbc.net --lang=ar
 ```
 
 English:
 
 ```sh
-npm run grab -- --site=shahid.mbc.net --lang=en
+npm run grab --- --site=shahid.mbc.net --lang=en
 ```
 
 French:
 
 ```sh
-npm run grab -- --site=shahid.mbc.net --lang=fr
+npm run grab --- --site=shahid.mbc.net --lang=fr
 ```
 
 ### Update channel list
@@ -31,23 +31,23 @@ npm run grab -- --site=shahid.mbc.net --lang=fr
 Arabic:
 
 ```sh
-npm run channels:parse -- --config=./sites/shahid.mbc.net/shahid.mbc.net.config.js --output=./sites/shahid.mbc.net/shahid.mbc.net_ar.channels.xml --set=lang:ar
+npm run channels:parse --- --config=./sites/shahid.mbc.net/shahid.mbc.net.config.js --output=./sites/shahid.mbc.net/shahid.mbc.net_ar.channels.xml --set=lang:ar
 ```
 
 English:
 
 ```sh
-npm run channels:parse -- --config=./sites/shahid.mbc.net/shahid.mbc.net.config.js --output=./sites/shahid.mbc.net/shahid.mbc.net_en.channels.xml --set=lang:en
+npm run channels:parse --- --config=./sites/shahid.mbc.net/shahid.mbc.net.config.js --output=./sites/shahid.mbc.net/shahid.mbc.net_en.channels.xml --set=lang:en
 ```
 
 French:
 
 ```sh
-npm run channels:parse -- --config=./sites/shahid.mbc.net/shahid.mbc.net.config.js --output=./sites/shahid.mbc.net/shahid.mbc.net_fr.channels.xml --set=lang:fr
+npm run channels:parse --- --config=./sites/shahid.mbc.net/shahid.mbc.net.config.js --output=./sites/shahid.mbc.net/shahid.mbc.net_fr.channels.xml --set=lang:fr
 ```
 
 ### Test
 
 ```sh
-npm test -- shahid.mbc.net
+npm test --- shahid.mbc.net
 ```

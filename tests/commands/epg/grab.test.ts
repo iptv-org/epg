@@ -17,7 +17,9 @@ beforeEach(() => {
 
 describe('epg:grab', () => {
   it('can grab epg by site name', () => {
-    const cmd = `${ENV_VAR} npm run grab -- --site=example.com --output=tests/__data__/output/guide.xml`
+    const cmd = `${ENV_VAR} npm run grab --- --site=example.com --output=${path.resolve(
+      'tests/__data__/output/guide.xml'
+    )}`
     execSync(cmd, { encoding: 'utf8' })
 
     expect(content('tests/__data__/output/guide.xml')).toEqual(
@@ -26,7 +28,7 @@ describe('epg:grab', () => {
   })
 
   it('can grab epg with multiple channels.xml files', () => {
-    const cmd = `${ENV_VAR} npm run grab -- --channels=tests/__data__/input/epg-grab/sites/**/*.channels.xml --output=tests/__data__/output/guide.xml`
+    const cmd = `${ENV_VAR} npm run grab --- --channels=tests/__data__/input/epg-grab/sites/**/*.channels.xml --output=tests/__data__/output/guide.xml`
     execSync(cmd, { encoding: 'utf8' })
 
     expect(content('tests/__data__/output/guide.xml')).toEqual(
@@ -35,7 +37,9 @@ describe('epg:grab', () => {
   })
 
   it('can grab epg with gzip option enabled', async () => {
-    const cmd = `${ENV_VAR} npm run grab -- --channels=tests/__data__/input/epg-grab/sites/**/*.channels.xml --output=tests/__data__/output/guide.xml --gzip`
+    const cmd = `${ENV_VAR} npm run grab --- --channels=tests/__data__/input/epg-grab/sites/**/*.channels.xml --output=${path.resolve(
+      'tests/__data__/output/guide.xml'
+    )} --gzip`
     execSync(cmd, { encoding: 'utf8' })
 
     expect(content('tests/__data__/output/guide.xml')).toEqual(
@@ -49,7 +53,7 @@ describe('epg:grab', () => {
   })
 
   it('can grab epg with wildcard as output', () => {
-    const cmd = `${ENV_VAR} npm run grab -- --channels=tests/__data__/input/epg-grab/sites/example.com/example.com.channels.xml --output=tests/__data__/output/guides/{lang}/{site}.xml`
+    const cmd = `${ENV_VAR} npm run grab --- --channels=tests/__data__/input/epg-grab/sites/example.com/example.com.channels.xml --output=tests/__data__/output/guides/{lang}/{site}.xml`
     execSync(cmd, { encoding: 'utf8' })
 
     expect(content('tests/__data__/output/guides/en/example.com.xml')).toEqual(
@@ -62,7 +66,7 @@ describe('epg:grab', () => {
   })
 
   it('can grab epg then language filter enabled', () => {
-    const cmd = `${ENV_VAR} npm run grab -- --channels=tests/__data__/input/epg-grab/sites/example.com/example.com.channels.xml --output=tests/__data__/output/guides/{lang}/{site}.xml --lang=fr`
+    const cmd = `${ENV_VAR} npm run grab --- --channels=tests/__data__/input/epg-grab/sites/example.com/example.com.channels.xml --output=tests/__data__/output/guides/{lang}/{site}.xml --lang=fr`
     execSync(cmd, { encoding: 'utf8' })
 
     expect(content('tests/__data__/output/guides/fr/example.com.xml')).toEqual(
@@ -71,7 +75,7 @@ describe('epg:grab', () => {
   })
 
   it('can grab epg using custom channels list', () => {
-    const cmd = `${ENV_VAR} npm run grab -- --channels=tests/__data__/input/epg-grab/custom.channels.xml --output=tests/__data__/output/guide.xml`
+    const cmd = `${ENV_VAR} npm run grab --- --channels=tests/__data__/input/epg-grab/custom.channels.xml --output=tests/__data__/output/guide.xml`
     execSync(cmd, { encoding: 'utf8' })
 
     expect(content('tests/__data__/output/guide.xml')).toEqual(
@@ -80,7 +84,7 @@ describe('epg:grab', () => {
   })
 
   it('it will raise an error if the timeout is exceeded', () => {
-    const cmd = `${ENV_VAR} npm run grab -- --channels=tests/__data__/input/epg-grab/custom.channels.xml --output=tests/__data__/output/guide.xml --timeout=0`
+    const cmd = `${ENV_VAR} npm run grab --- --channels=tests/__data__/input/epg-grab/custom.channels.xml --output=tests/__data__/output/guide.xml --timeout=0`
     const stdout = execSync(cmd, { encoding: 'utf8' })
 
     expect(stdout).toContain('ERR: Connection timeout')
