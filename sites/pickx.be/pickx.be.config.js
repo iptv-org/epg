@@ -3,7 +3,6 @@ const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 
 let apiVersion
-let isApiVersionFetched = false
 
 dayjs.extend(utc)
 
