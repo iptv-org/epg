@@ -1,5 +1,5 @@
 const dayjs = require('dayjs')
-const doFetch = require('../../scripts/core/fetch')
+const doFetch = require('@ntlab/sfetch')
 const debug = require('debug')('site:tv.yandex.ru')
 
 doFetch
@@ -276,7 +276,7 @@ function getQueue(url, referer) {
   }
   const headers = getHeaders(data)
   return {
-    u: url,
+    url,
     params: { headers }
   }
 }

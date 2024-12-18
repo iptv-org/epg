@@ -3,7 +3,7 @@ const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
-const doFetch = require('../../scripts/core/fetch')
+const doFetch = require('@ntlab/sfetch')
 const debug = require('debug')('site:mytelly.co.uk')
 
 dayjs.extend(utc)
@@ -110,7 +110,7 @@ module.exports = {
   },
   async channels() {
     const channels = {}
-    const queues = [{ t: 'p', m: 'post', u: 'https://www.mytelly.co.uk/getform' }]
+    const queues = [{ t: 'p', method: 'post', url: 'https://www.mytelly.co.uk/getform' }]
     await doFetch(queues, (queue, res) => {
       // process form -> provider
       if (queue.t === 'p') {
@@ -119,7 +119,7 @@ module.exports = {
           .forEach(el => {
             const opt = $(el)
             const provider = opt.attr('value')
-            queues.push({ t: 'r', m: 'post', u: 'https://www.mytelly.co.uk/getregions', params: { provider } })
+            queues.push({ t: 'r', method: 'post', url: 'https://www.mytelly.co.uk/getregions', params: { provider } })
           })
       }
       // process provider -> region
@@ -135,7 +135,7 @@ module.exports = {
             u_time: now.format('HHmm'),
             is_mobile: 1
           }
-          queues.push({ t: 's', m: 'post', u: 'https://www.mytelly.co.uk/tv-guide/schedule', params })
+          queues.push({ t: 's', method: 'post', url: 'https://www.mytelly.co.uk/tv-guide/schedule', params })
         }
       }
       // process schedule -> channels

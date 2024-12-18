@@ -4,7 +4,7 @@ const dayjs = require('dayjs')
 const timezone = require('dayjs/plugin/timezone')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
-const doFetch = require('../../scripts/core/fetch')
+const doFetch = require('@ntlab/sfetch')
 const debug = require('debug')('site:rotana.net')
 
 dayjs.extend(timezone)
@@ -50,7 +50,7 @@ module.exports = {
             cookie: cookies[channel.lang],
           }
         }
-        queues.push({ i: item, u: url, params })
+        queues.push({ i: item, url, params })
       }
       await doFetch(queues, (queue, res) => {
         programs.push(parseProgram(queue.i, res))
