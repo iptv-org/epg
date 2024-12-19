@@ -1,14 +1,16 @@
-const axios = require('axios')
 const cheerio = require('cheerio')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
+const doFetch = require('@ntlab/sfetch')
 const debug = require('debug')('site:startimestv.com')
 
 dayjs.extend(utc)
 dayjs.extend(customParseFormat)
 
-const nworker = 5
+doFetch
+  .setDebugger(debug)
+  .setMaxWorker(5)
 
 module.exports = {
   site: 'startimestv.com',
@@ -46,7 +48,7 @@ module.exports = {
   },
   async channels() {
     const channels = {}
-    const queues = [{ t: 'a', u: 'https://www.startimestv.com/tv_guide.html' }]
+    const queues = [{ t: 'a', url: 'https://www.startimestv.com/tv_guide.html' }]
     await doFetch(queues, (queue, res) => {
       // process area-id
       if (queue.t === 'a') {
@@ -57,7 +59,7 @@ module.exports = {
             const areaId = dd.attr('area-id')
             queues.push({
               t: 's',
-              u: 'https://www.startimestv.com/tv_guide.html',
+              url: 'https://www.startimestv.com/tv_guide.html',
               params: {
                 headers: {
                   cookie: `default_areaID=${areaId}`
@@ -109,67 +111,4 @@ function parseText($item) {
   }
 
   return text
-}
-
-async function doFetch(queues, cb) {
-  const axios = require('axios')
-
-  let n = Math.min(nworker, queues.length)
-  const workers = []
-  const adjustWorker = () => {
-    if (queues.length > workers.length && workers.length < nworker) {
-      let nw = Math.min(nworker, queues.length)
-      if (n < nw) {
-        n = nw
-        createWorker()
-      }
-    }
-  }
-  const createWorker = () => {
-    while (workers.length < n) {
-      startWorker()
-    }
-  }
-  const startWorker = () => {
-    const worker = () => {
-      if (queues.length) {
-        const queue = queues.shift()
-        const done = res => {
-          if (res) {
-            cb(queue, res)
-            adjustWorker()
-          }
-          worker()
-        }
-        const url = typeof queue === 'string' ? queue : queue.u
-        const params = typeof queue === 'object' && queue.params ? queue.params : {}
-        const method = typeof queue === 'object' && queue.m ? queue.m : 'get'
-        debug(`fetch %s with %s`, url, JSON.stringify(params))
-        if (method === 'post') {
-          axios
-            .post(url, params)
-            .then(response => done(response.data))
-            .catch(console.error)
-        } else {
-          axios
-            .get(url, params)
-            .then(response => done(response.data))
-            .catch(console.error)
-        }
-      } else {
-        workers.splice(workers.indexOf(worker), 1)
-      }
-    }
-    workers.push(worker)
-    worker()
-  }
-  createWorker()
-  await new Promise(resolve => {
-    const interval = setInterval(() => {
-      if (workers.length === 0) {
-        clearInterval(interval)
-        resolve()
-      }
-    }, 500)
-  })
 }

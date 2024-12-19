@@ -1,16 +1,13 @@
-const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
-const cheerio = require('cheerio')
 
 dayjs.extend(utc)
 dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
 const languages = { en: 'ENG', id: 'IND' }
-const tz = 'Asia/Jakarta'
 
 module.exports = {
   site: 'visionplus.id',
@@ -22,7 +19,7 @@ module.exports = {
       'YYYY-MM-DD'
     )}T00%3A00%3A00Z&view=cd-events-grid-view`
   },
-  parser({ content, channel, date }) {
+  parser({ content, channel }) {
     const programs = []
     const json = JSON.parse(content)
     if (Array.isArray(json.evs)) {
