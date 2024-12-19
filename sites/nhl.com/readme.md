@@ -5,11 +5,11 @@ https://www.nhl.com/nhl-network/programming-schedule
 ### Download the guide
 
 ```sh
-npm run grab -- --site=nhl.com
+npm run grab --- --site=nhl.com
 ```
 
 ### Test
 
 ```sh
-npm test -- nhl.com
+npm test --- nhl.com
 ```

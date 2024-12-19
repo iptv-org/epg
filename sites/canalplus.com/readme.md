@@ -44,17 +44,17 @@
 ### Download the guide
 
 ```sh
-npm run grab -- --channels=sites/canalplus.com/canalplus.com_<COUNTRY_CODE>.channels.xml
+npm run grab --- --channels=sites/canalplus.com/canalplus.com_<COUNTRY_CODE>.channels.xml
 ```
 
 ### Update channel list
 
 ```sh
-npm run channels:parse -- --config=./sites/canalplus.com/canalplus.com.config.js --output=./sites/canalplus.com/canalplus.com_<COUNTRY_CODE>.channels.xml --set=country:<COUNTRY_CODE>
+npm run channels:parse --- --config=./sites/canalplus.com/canalplus.com.config.js --output=./sites/canalplus.com/canalplus.com_<COUNTRY_CODE>.channels.xml --set=country:<COUNTRY_CODE>
 ```
 
 ### Test
 
 ```sh
-npm test -- canalplus.com
+npm test --- canalplus.com
 ```

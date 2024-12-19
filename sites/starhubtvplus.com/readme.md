@@ -7,13 +7,13 @@ https://www.starhubtvplus.com/
 English:
 
 ```sh
-npm run grab -- --site=starhubtvplus.com --lang=en
+npm run grab --- --site=starhubtvplus.com --lang=en
 ```
 
 Chinese:
 
 ```sh
-npm run grab -- --site=starhubtvplus.com --lang=zh
+npm run grab --- --site=starhubtvplus.com --lang=zh
 ```
 
 ### Update channel list
@@ -21,17 +21,17 @@ npm run grab -- --site=starhubtvplus.com --lang=zh
 English:
 
 ```sh
-npm run channels:parse -- --config=sites/starhubtvplus.com/starhubtvplus.com.config.js --output=sites/starhubtvplus.com/starhubtvplus.com_en.channels.xml --set=lang:en
+npm run channels:parse --- --config=sites/starhubtvplus.com/starhubtvplus.com.config.js --output=sites/starhubtvplus.com/starhubtvplus.com_en.channels.xml --set=lang:en
 ```
 
 Chinese:
 
 ```sh
-npm run channels:parse -- --config=sites/starhubtvplus.com/starhubtvplus.com.config.js --output=sites/starhubtvplus.com/starhubtvplus.com_zh.channels.xml --set=lang:zh
+npm run channels:parse --- --config=sites/starhubtvplus.com/starhubtvplus.com.config.js --output=sites/starhubtvplus.com/starhubtvplus.com_zh.channels.xml --set=lang:zh
 ```
 
 ### Test
 
 ```sh
-npm test -- starhubtvplus.com
+npm test --- starhubtvplus.com
 ```

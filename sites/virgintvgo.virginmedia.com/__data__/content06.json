@@ -1,0 +1,63 @@
+{
+    "duration": 21600,
+    "entries": [
+        {
+            "channelId": "1958",
+            "events": [
+                {
+                    "audioLanguages": [
+                        {
+                            "lang": "en"
+                        }
+                    ],
+                    "endTime": 1734172200,
+                    "hasReplayTV": false,
+                    "hasReplayTVOTT": false,
+                    "id": "crid:~~2F~~2Fgn.tv~~2F501178~~2FSH012613290000~~2F331597494,imi:7509d470dc1ea76c2dd793aca0aa6762bd661724",
+                    "isPlaceHolder": true,
+                    "mergedId": "501178|en-GB",
+                    "minimumAge": 8,
+                    "replayAvailabilityEnd": 1734172200,
+                    "replayTVMinAge": 18,
+                    "startTime": 1734148800,
+                    "title": "Teleshopping"
+                },
+                {
+                    "audioLanguages": [
+                        {
+                            "lang": "en"
+                        }
+                    ],
+                    "endTime": 1734176100,
+                    "hasReplayTV": false,
+                    "hasReplayTVOTT": false,
+                    "id": "crid:~~2F~~2Fgn.tv~~2F16244933~~2FEP012911720221,imi:fd3eb460d4a3e60c13565fc88c6857b5d812e710",
+                    "mergedId": "8162912|en-GB",
+                    "replayAvailabilityEnd": 1734176100,
+                    "replayTVMinAge": 11,
+                    "seriesPremiereAirings": true,
+                    "startTime": 1734172200,
+                    "title": "Police Interceptors"
+                },
+                {
+                    "audioLanguages": [
+                        {
+                            "lang": "en"
+                        }
+                    ],
+                    "endTime": 1734179700,
+                    "hasReplayTV": false,
+                    "hasReplayTVOTT": false,
+                    "id": "crid:~~2F~~2Fgn.tv~~2F16298951~~2FEP012911720224,imi:36a6bdc9c192673d8205be38402082c4770c34ab",
+                    "mergedId": "8162912|en-GB",
+                    "replayAvailabilityEnd": 1734179700,
+                    "replayTVMinAge": 11,
+                    "seriesPremiereAirings": true,
+                    "startTime": 1734176100,
+                    "title": "Police Interceptors"
+                }
+            ]
+        }
+   ],
+    "time": 1734156000
+}

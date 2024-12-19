@@ -7,25 +7,25 @@ https://www.pickx.be/fr/television/programme-tv
 Dutch:
 
 ```sh
-npm run grab -- --site=pickx.be --lang=nl
+npm run grab --- --site=pickx.be --lang=nl
 ```
 
 English:
 
 ```sh
-npm run grab -- --site=pickx.be --lang=en
+npm run grab --- --site=pickx.be --lang=en
 ```
 
 French:
 
 ```sh
-npm run grab -- --site=pickx.be --lang=fr
+npm run grab --- --site=pickx.be --lang=fr
 ```
 
 German:
 
 ```sh
-npm run grab -- --site=pickx.be --lang=de
+npm run grab --- --site=pickx.be --lang=de
 ```
 
 ### Update channel list
@@ -33,29 +33,29 @@ npm run grab -- --site=pickx.be --lang=de
 Dutch:
 
 ```sh
-npm run channels:parse -- --config=./sites/pickx.be/pickx.be.config.js --output=./sites/pickx.be/pickx.be_nl.channels.xml --set=lang:nl
+npm run channels:parse --- --config=./sites/pickx.be/pickx.be.config.js --output=./sites/pickx.be/pickx.be_nl.channels.xml --set=lang:nl
 ```
 
 English:
 
 ```sh
-npm run channels:parse -- --config=./sites/pickx.be/pickx.be.config.js --output=./sites/pickx.be/pickx.be_en.channels.xml --set=lang:en
+npm run channels:parse --- --config=./sites/pickx.be/pickx.be.config.js --output=./sites/pickx.be/pickx.be_en.channels.xml --set=lang:en
 ```
 
 French:
 
 ```sh
-npm run channels:parse -- --config=./sites/pickx.be/pickx.be.config.js --output=./sites/pickx.be/pickx.be_fr.channels.xml --set=lang:fr
+npm run channels:parse --- --config=./sites/pickx.be/pickx.be.config.js --output=./sites/pickx.be/pickx.be_fr.channels.xml --set=lang:fr
 ```
 
 German:
 
 ```sh
-npm run channels:parse -- --config=./sites/pickx.be/pickx.be.config.js --output=./sites/pickx.be/pickx.be_de.channels.xml --set=lang:de
+npm run channels:parse --- --config=./sites/pickx.be/pickx.be.config.js --output=./sites/pickx.be/pickx.be_de.channels.xml --set=lang:de
 ```
 
 ### Test
 
 ```sh
-npm test -- pickx.be
+npm test --- pickx.be
 ```
