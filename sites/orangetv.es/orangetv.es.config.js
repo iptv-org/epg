@@ -52,6 +52,7 @@ module.exports = {
       programs.push({
         title: item.name,
         description: item.description,
+        category: parseGenres(item),
         season: item.seriesSeason || null,
         episode: item.episodeId || null,
         icon: parseIcon(item),
@@ -90,6 +91,10 @@ function parseIcon(item){
   }
 
   return ''
+}
+
+function parseGenres(item){
+  return item.genres.map(i => i.name);
 }
 
 function parseItems(content, channel) {
