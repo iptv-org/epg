@@ -20,8 +20,8 @@ module.exports = {
         subTitle: item.season?.serie?.title,
         category: item.genreDetailed,
         description: item.synopsis,
-        season: item.season?.number,
-        episode: item.season?.episodeNumber,
+        season: parseSeason(item),
+        episode: parseEpisode(item),
         image: parseImage(item),
         start: start.toJSON(),
         stop: stop.toJSON()
@@ -62,6 +62,14 @@ function parseStart(item) {
 
 function parseStop(item, start) {
   return start.add(item.duration, 's')
+}
+
+function parseSeason(item) {
+  return item.season?.number
+}
+
+function parseEpisode(item) {
+  return item.episodeNumber
 }
 
 function parseItems(content, channel) {
