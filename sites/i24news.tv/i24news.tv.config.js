@@ -11,9 +11,7 @@ module.exports = {
   site: 'i24news.tv',
   days: 2,
   url: function ({ channel }) {
-    const [lang] = channel.site_id.split('#')
-
-    return `https://api.i24news.tv/v2/${lang}/schedules`
+    return `https://api.i24news.tv/v2/${channel.site_id}/schedules`
   },
   parser: function ({ content, date }) {
     let programs = []
