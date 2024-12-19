@@ -1,0 +1,19 @@
+# vivoplay.com.br
+
+https://www.vivoplay.com.br/channels
+
+### Download the guide
+
+```sh
+npm run grab --- --site=vivoplay.com.br
+```
+
+### Update channel list
+
+```sh
+npm run channels:parse --- --config=./sites/vivoplay.com.br/vivoplay.com.br.config.js --output=./sites/vivoplay.com.br/vivoplay.com.br.channels.xml
+```
+
+### Test
+
+No test available
