@@ -26,7 +26,7 @@ jobs:
           npm install
           #npm run channels:parse -- --config=./sites/canalplus.com/canalplus.com.config.js --output=./sites/canalplus.com/canalplus.com_mu.channels.xml --set=country:mu
           #npm run grab -- --channels=../sites/canalplus.com/canalplus.com_cm.channels.xml--maxConnections=20 --gzip --output=guides/propg.net.xml --days=2 --timeout=90000
-          npm run channels:parse -- --config=./sites/sportklub.si/sportklub.si.config.js --output=./sites/sportklub.si/sportklub.si.channels.xml
+          npm run channels:parse -- --config=./sites/stod2.is/stod2.is.config.js --output=./sites/stod2.is/stod2.is.channels.xml
           #npm run channels:parse -- --config=./sites/tv.magenta.me/tv.magenta.me.config.js --output=./sites/tv.magenta.me/tv.magenta.me.channels.xml
           #npm run grab -- --site=tv.magenta.mk --maxConnections=20 --gzip --output=guides/tv.magenta.mk.xml --days=1 --timeout=90000
           #npm run grab -- --site=propg.net --maxConnections=20 --gzip --output=guides/propg.net.xml --days=2 --timeout=90000
@@ -41,6 +41,6 @@ jobs:
         #git add -f guides/tv.magenta.mk.xml
         #git add -f guides/hot.net.il.xml
         #git add -f guides/ipko.tv.xml
-        git add -f sites/sportklub.si/sportklub.si.channels.xml
+        git add -f sites/stod2.is/stod2.is.channels.xml
         git commit -m "Update xml"
         git push
