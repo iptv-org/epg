@@ -93,13 +93,16 @@ function parseIcon(item){
 }
 
 function parseItems(content, channel) {
-  const json = typeof content === 'string' ? JSON.parse(content) : typeof content === 'object' ? content : []
+  const json = typeof content === 'string' ? JSON.parse(content) : Array.isArray(content) ? content : []
+
+  if (!Array.isArray(json)) {
+    return [];
+  }
 
   const channelData = json.find(i => i.channelExternalId == channel.site_id);
 
   if(!channelData)
     return [];
-
 
   return channelData.programs;
 }
