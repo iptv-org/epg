@@ -17,9 +17,11 @@ module.exports = {
       const stop = parseStop(item, start)
       programs.push({
         title: item.title,
-        subTitle: item?.season?.serie?.title,
+        subTitle: item.season?.serie?.title,
         category: item.genreDetailed,
         description: item.synopsis,
+        season: item.season?.number,
+        episode: item.season?.episodeNumber,
         image: parseImage(item),
         start: start.toJSON(),
         stop: stop.toJSON()
