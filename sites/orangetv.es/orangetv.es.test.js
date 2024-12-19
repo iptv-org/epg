@@ -17,45 +17,33 @@ it('can generate valid url', () => {
   expect(url({ date })).toBe(`https://epg.orangetv.orange.es/epg/Smartphone_Android/1_PRO/${date.format('YYYYMMDD')}_8h_1.json`)
 })
 
-it('can parse response', () => {
+it('can parse response', async () => {
   const content =  fs.readFileSync(path.resolve(__dirname, '__data__/data.json')).toString()
-  const results = parser({ content, channel, date }).map(p => {
+  let results = await parser({ content, channel, date })
+  results = results.map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
     return p
   })
 
-  expect(results.length).toBe(21)
+  expect(results.length).toBe(4)
 
   var sampleResult = results[0];
 
-  expect(sampleResult).toMatchObject([
-    {
-      start: '2022-03-11T05:00:00.000Z',
-      stop: '2022-03-11T07:30:00.000Z',
-      category: 'Información',
-      title: 'Telediario Matinal'
-    },
-    {
-      start: '2022-03-11T21:15:00.000Z',
-      stop: '2022-03-11T23:30:00.000Z',
-      category: 'Información',
-      title: 'Las Claves del Siglo XXI: Episodio 8'
-    },
-    {
-      start: '2022-03-12T02:10:00.000Z',
-      stop: '2022-03-12T05:00:00.000Z',
-      category: 'Información',
-      title: 'Noticias 24H'
-    }
-  ])
+  expect(sampleResult).toMatchObject({
+    start: '2024-11-30T22:36:51.000Z',
+    stop: '2024-11-30T23:57:25.000Z',
+    category: ['Cine', 'Romance', 'Comedia', 'Comedia Romántica'],
+    description: 'Charlie trabaja como director en una escuela de primaria y goza de una placentera existencia junto a sus amigos. A pesar de ello, no es feliz porque cada vez que se enamora pierde la cordura.',
+    title: 'Loco de amor'
+  })
 })
 
 it('can handle empty guide', () => {
   const result = parser({
     date,
     channel,
-    content: '[]'
+    content: '{}'
   })
-  expect(result).toMatchObject([])
+  expect(result).toMatchObject({})
 })
