@@ -12,7 +12,7 @@ const channel = {
 }
 
 it('can generate valid url', () => {
-  expect(url({ channel })).toBe('https://api.i24news.tv/v2/ar/schedules/world')
+  expect(url({ channel })).toBe('https://api.i24news.tv/v2/ar/schedules')
 })
 
 it('can parse response', () => {
