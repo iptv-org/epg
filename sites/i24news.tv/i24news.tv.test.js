@@ -7,7 +7,7 @@ dayjs.extend(utc)
 
 const date = dayjs.utc('2022-03-06', 'YYYY-MM-DD').startOf('d')
 const channel = {
-  site_id: 'ar#',
+  site_id: 'ar',
   xmltv_id: 'I24NewsArabic.il'
 }
 
