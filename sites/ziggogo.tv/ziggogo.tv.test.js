@@ -10,7 +10,7 @@ dayjs.extend(utc)
 
 jest.mock('axios')
 
-const date = dayjs.utc('2022-10-28', 'YYYY-MM-DD').startOf('d')
+const date = dayjs.utc('2024-12-17', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: 'NL_000001_019401',
   xmltv_id: 'NPO1.nl',
@@ -19,7 +19,7 @@ const channel = {
 
 it('can generate valid url', () => {
   expect(url({ date, channel })).toBe(
-    'https://static.spark.ziggogo.tv/eng/web/epg-service-lite/nl/nl/events/segments/20221028000000'
+    'https://static.spark.ziggogo.tv/eng/web/epg-service-lite/nl/en/events/segments/20241217000000'
   )
 })
 
@@ -29,28 +29,28 @@ it('can parse response', async () => {
   axios.get.mockImplementation(url => {
     if (
       url ===
-      'https://static.spark.ziggogo.tv/eng/web/epg-service-lite/nl/nl/events/segments/20221028060000'
+      'https://static.spark.ziggogo.tv/eng/web/epg-service-lite/nl/en/events/segments/20241217060000'
     ) {
       return Promise.resolve({
         data: fs.readFileSync(path.resolve(__dirname, '__data__/content_0600.json'))
       })
     } else if (
       url ===
-      'https://static.spark.ziggogo.tv/eng/web/epg-service-lite/nl/nl/events/segments/20221028120000'
+      'https://static.spark.ziggogo.tv/eng/web/epg-service-lite/nl/en/events/segments/20241217120000'
     ) {
       return Promise.resolve({
         data: fs.readFileSync(path.resolve(__dirname, '__data__/content_1200.json'))
       })
     } else if (
       url ===
-      'https://static.spark.ziggogo.tv/eng/web/epg-service-lite/nl/nl/events/segments/20221028180000'
+      'https://static.spark.ziggogo.tv/eng/web/epg-service-lite/nl/en/events/segments/20241217180000'
     ) {
       return Promise.resolve({
         data: fs.readFileSync(path.resolve(__dirname, '__data__/content_1800.json'))
       })
     } else if (
       url ===
-      'https://prod.spark.ziggogo.tv/eng/web/linear-service/v2/replayEvent/crid:~~2F~~2Fgn.tv~~2F817615~~2FSH010806510000~~2F144222201,imi:ea187e3432c4a98b5ea45bcc5525c7a93c77b47b?returnLinearContent=true&language=nl'
+      'https://prod.spark.ziggogo.tv/eng/web/linear-service/v2/replayEvent/crid:~~2F~~2Fgn.tv~~2F817615~~2FSH010806510000~~2F333033007,imi:b6a840f6a097abe22220e1e29a2310c343a3b519?returnLinearContent=true&language=nl'
     ) {
       return Promise.resolve({
         data: JSON.parse(fs.readFileSync(path.resolve(__dirname, '__data__/program.json')))
@@ -68,22 +68,23 @@ it('can parse response', async () => {
   })
 
   expect(results[0]).toMatchObject({
-    start: '2022-10-27T23:40:00.000Z',
-    stop: '2022-10-28T00:07:00.000Z',
+    start: '2024-12-16T23:40:00.000Z',
+    stop: '2024-12-17T00:10:00.000Z',
     title: 'NOS Journaal',
     description:
       'Met het laatste nieuws, gebeurtenissen van nationaal en internationaal belang en de weersverwachting voor de avond en komende dagen.',
     category: ['Nieuws'],
     actors: [
-      'Malou Petter',
-      'Mark Visser',
-      'Rob Trip',
-      'Jeroen Overbeek',
-      'Simone Weimans',
-      'Annechien Steenhuizen',
-      'Jeroen Tjepkema',
-      'Saïda Maggé',
-      'Winfried Baijens'
+      "Afke Boven",
+      "Annechien Steenhuizen",
+      "Iris De Graaf",
+      "Jeroen Overbeek",
+      "Malou Petter",
+      "Rob Trip",
+      "Saïda Maggé",
+      "Jeroen Tjepkema",
+      "Mark Visser",
+      "Simone Weimans"
     ]
   })
 })
