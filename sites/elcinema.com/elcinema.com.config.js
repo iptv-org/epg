@@ -84,7 +84,7 @@ function parseDuration(item) {
     $('.row > div.columns.small-3.large-2 > ul > li:nth-child(2) > span').text() ||
     $('.row > div.columns.small-7.large-11 > ul > li:nth-child(2) > span').text()
 
-  return duration.replace(/\D/g, '') || ''
+  return parseInt(duration.replace(/\D/g, ''), 10) || 0
 }
 
 function parseStart(item, initDate) {
@@ -111,6 +111,7 @@ function parseTitle(item) {
   return (
     $('.row > div.columns.small-6.large-3 > ul > li:nth-child(1) > a').text() ||
     $('.row > div.columns.small-7.large-11 > ul > li:nth-child(1)').text() ||
+    $('.row > div.columns.small-6.large-3 > ul > li:nth-child(1)').text() ||
     null
   )
 }

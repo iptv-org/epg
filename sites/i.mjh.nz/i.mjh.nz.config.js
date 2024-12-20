@@ -31,7 +31,8 @@ module.exports = {
         ...item,
         title: getTitle(item),
         description: getDescription(item),
-        categories: getCategories(item)
+        categories: getCategories(item),
+        icon: getIcon(item)
       }
     })
 
@@ -158,6 +159,10 @@ function getDescription(item) {
 
 function getCategories(item) {
   return item.category.map(c => c.value)
+}
+
+function getIcon(item) {
+  return item.icon && item.icon.length ? item.icon[0].src : null
 }
 
 function parseItems(content, channel, date) {

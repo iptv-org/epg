@@ -27,6 +27,9 @@ it('can parse response', () => {
       start: '2021-11-07T23:35:00.000Z',
       stop: '2021-11-08T00:20:00.000Z',
       title: 'Tête de liste',
+      subTitle: 'Esprits criminels',
+      season: 10,
+      episode: 12,
       description:
         "Un tueur en série prend un plaisir pervers à prévenir les autorités de Tallahassee avant chaque nouveau meurtre. Rossi apprend le décès d'un de ses vieux amis.",
       category: 'Série Suspense',
