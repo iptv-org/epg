@@ -16,9 +16,12 @@ module.exports = {
       const start = parseStart(item)
       const stop = parseStop(item, start)
       programs.push({
-        title: item.season?.serie?.title ? item.season.serie.title : item.title,
+        title: item.title,
+        subTitle: item.season?.serie?.title,
         category: item.genreDetailed,
         description: item.synopsis,
+        season: parseSeason(item),
+        episode: parseEpisode(item),
         image: parseImage(item),
         start: start.toJSON(),
         stop: stop.toJSON()
@@ -59,6 +62,14 @@ function parseStart(item) {
 
 function parseStop(item, start) {
   return start.add(item.duration, 's')
+}
+
+function parseSeason(item) {
+  return item.season?.number
+}
+
+function parseEpisode(item) {
+  return item.episodeNumber
 }
 
 function parseItems(content, channel) {
