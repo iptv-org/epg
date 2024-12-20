@@ -43,7 +43,6 @@ module.exports = {
   },
   async channels() {
     const axios = require('axios')
-    const cheerio = require('cheerio')
     const result = await axios
       .get(
         `https://api.firstmedia.com/api/content/tv-guide/list?date=${dayjs().format(
