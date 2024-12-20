@@ -1,19 +1,23 @@
-const _ = require('lodash')
 const axios = require('axios')
 const cheerio = require('cheerio')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
+const doFetch = require('@ntlab/sfetch')
+const debug = require('debug')('site:mncvision.id')
 
 dayjs.extend(utc)
 dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
+doFetch
+  .setCheckResult(false)
+  .setDebugger(debug)
+
 const languages = { en: 'english', id: 'indonesia' }
 const cookies = {}
 const timeout = 30000
-const nworker = 25
 
 module.exports = {
   site: 'mncvision.id',
@@ -55,8 +59,6 @@ module.exports = {
     return await parseItems(content, date, cookies[channel.lang])
   },
   async channels({ lang = 'id' }) {
-    const axios = require('axios')
-    const cheerio = require('cheerio')
     const result = await axios
       .get('https://www.mncvision.id/schedule')
       .then(response => response.data)
@@ -117,42 +119,31 @@ async function parseItems(content, date, cookies) {
   const $ = cheerio.load(content)
   const items = $('tr[valign="top"]').toArray()
   if (items.length) {
-    const workers = []
-    const n = Math.min(nworker, items.length)
-    while (workers.length < n) {
-      const worker = () => {
-        if (items.length) {
-          const $item = $(items.shift())
-          const done = (description = null) => {
-            const start = parseStart($item, date)
-            const duration = parseDuration($item)
-            const stop = start.add(duration, 'm')
-            programs.push({
-              title: parseTitle($item),
-              season: parseSeason($item),
-              episode: parseEpisode($item),
-              description,
-              start,
-              stop
-            })
-            worker()
-          }
-          loadDescription($item, cookies)
-            .then(description => done(description))
-        } else {
-          workers.splice(workers.indexOf(worker), 1)
-        }
+    const queues = []
+    for (const item of items) {
+      const $item = $(item)
+      const url = $item.find('a').attr('href')
+      const headers = {
+        'X-Requested-With': 'XMLHttpRequest',
+        Cookie: cookies,
       }
-      workers.push(worker)
-      worker()
+      queues.push({ i: $item, url, params: { headers, timeout } })
     }
-    await new Promise(resolve => {
-      const interval = setInterval(() => {
-        if (workers.length === 0) {
-          clearInterval(interval)
-          resolve()
-        }
-      }, 500)
+    await doFetch(queues, (queue, res) => {
+      const $item = queue.i
+      const $page = cheerio.load(res)
+      const description = $page('.synopsis').text().trim()
+      const start = parseStart($item, date)
+      const duration = parseDuration($item)
+      const stop = start.add(duration, 'm')
+      programs.push({
+        title: parseTitle($item),
+        season: parseSeason($item),
+        episode: parseEpisode($item),
+        description: description && description !== '-' ? description : null,
+        start,
+        stop
+      })
     })
   }
 
@@ -166,24 +157,6 @@ function loadLangCookies(channel) {
     .get(url, { timeout })
     .then(r => parseCookies(r.headers))
     .catch(error => console.error(error.message))
-}
-
-async function loadDescription($item, cookies) {
-  const url = $item.find('a').attr('href')
-  if (!url) return null
-  const content = await axios
-    .get(url, {
-      headers: { 'X-Requested-With': 'XMLHttpRequest', Cookie: cookies },
-      timeout
-    })
-    .then(r => r.data)
-    .catch(error => console.error(error.message))
-  if (!content) return null
-
-  const $page = cheerio.load(content)
-  const description = $page('.synopsis').text().trim()
-
-  return description !== '-' ? description : null
 }
 
 function parseCookies(headers) {

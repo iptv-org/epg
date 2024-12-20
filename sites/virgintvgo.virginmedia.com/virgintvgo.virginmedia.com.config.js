@@ -1,11 +1,13 @@
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
+const doFetch = require('@ntlab/sfetch')
 const debug = require('debug')('site:virgintvgo.virginmedia.com')
 
 dayjs.extend(utc)
 
+doFetch.setDebugger(debug)
+
 const detailedGuide = true
-const nworker = 25
 
 module.exports = {
   site: 'virgintvgo.virginmedia.com',
@@ -109,67 +111,4 @@ module.exports = {
 
     return channels
   }
-}
-
-async function doFetch(queues, cb) {
-  const axios = require('axios')
-
-  let n = Math.min(nworker, queues.length)
-  const workers = []
-  const adjustWorker = () => {
-    if (queues.length > workers.length && workers.length < nworker) {
-      let nw = Math.min(nworker, queues.length)
-      if (n < nw) {
-        n = nw
-        createWorker()
-      }
-    }
-  }
-  const createWorker = () => {
-    while (workers.length < n) {
-      startWorker()
-    }
-  }
-  const startWorker = () => {
-    const worker = () => {
-      if (queues.length) {
-        const queue = queues.shift()
-        const done = res => {
-          if (res) {
-            cb(queue, res)
-            adjustWorker()
-          }
-          worker()
-        }
-        const url = typeof queue === 'string' ? queue : queue.u
-        const params = typeof queue === 'object' && queue.params ? queue.params : {}
-        const method = typeof queue === 'object' && queue.m ? queue.m : 'get'
-        debug(`fetch %s with %s`, url, JSON.stringify(params))
-        if (method === 'post') {
-          axios
-            .post(url, params)
-            .then(response => done(response.data))
-            .catch(console.error)
-        } else {
-          axios
-            .get(url, params)
-            .then(response => done(response.data))
-            .catch(console.error)
-        }
-      } else {
-        workers.splice(workers.indexOf(worker), 1)
-      }
-    }
-    workers.push(worker)
-    worker()
-  }
-  createWorker()
-  await new Promise(resolve => {
-    const interval = setInterval(() => {
-      if (workers.length === 0) {
-        clearInterval(interval)
-        resolve()
-      }
-    }, 500)
-  })
 }

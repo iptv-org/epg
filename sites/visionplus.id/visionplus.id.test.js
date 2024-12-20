@@ -1,9 +1,10 @@
-const { parser, url, request } = require('./visionplus.id.config.js')
+const { parser, url } = require('./visionplus.id.config.js')
 const fs = require('fs')
 const path = require('path')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
+
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
@@ -17,7 +18,6 @@ const channel = {
 }
 const channelId = { ...channel,  lang: 'id' }
 
-
 it('can generate valid url', () => {
   expect(url({ channel, date })).toBe(
     'https://www.visionplus.id/managetv/tvinfo/events/schedule?language=ENG&serviceId=00000000000000000079&start=2024-11-24T00%3A00%3A00Z&end=2024-11-25T00%3A00%3A00Z&view=cd-events-grid-view'
@@ -30,11 +30,11 @@ it('can generate valid url', () => {
 it('can parse response', () => {
   let content = fs.readFileSync(path.resolve(__dirname, '__data__/content_en.json'))
   let results = parser({ content, channel, date })
-  results = results.map(p => {
-    p.start = p.start.toJSON()
-    p.stop = p.stop.toJSON()
-    return p
-  })
+    .map(p => {
+      p.start = p.start.toJSON()
+      p.stop = p.stop.toJSON()
+      return p
+    })
 
   expect(results.length).toBe(1)
   expect(results[0]).toMatchObject({
@@ -48,11 +48,11 @@ it('can parse response', () => {
 
   content = fs.readFileSync(path.resolve(__dirname, '__data__/content_id.json'))
   results = parser({ content, channel: channelId, date })
-  results = results.map(p => {
-    p.start = p.start.toJSON()
-    p.stop = p.stop.toJSON()
-    return p
-  })
+    .map(p => {
+      p.start = p.start.toJSON()
+      p.stop = p.stop.toJSON()
+      return p
+    })
 
   expect(results.length).toBe(1)
   expect(results[0]).toMatchObject({
