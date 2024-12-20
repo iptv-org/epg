@@ -8,7 +8,6 @@ const fs = require('fs')
 const path = require('path')
 dayjs.extend(utc)
 dayjs.extend(timezone)
-dayjs.extend(customParseFormat)
 
 const date = dayjs.utc('2024-12-19', 'YYYY-MM-DD').startOf('d')
 const channel = { site_id: '1208', xmltv_id: 'AlAoula.ma', lang: 'ar' }
@@ -18,7 +17,7 @@ it('can generate valid url', () => {
 })
 
 it('can parse response', () => {
-  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.html'))
+  const content = fs.readFileSync(path.resolve(__dirname, '_data_/content.html'))
   const results = parser({ date, content }).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
