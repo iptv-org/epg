@@ -7,12 +7,12 @@ dayjs.extend(utc)
 
 const date = dayjs.utc('2022-03-06', 'YYYY-MM-DD').startOf('d')
 const channel = {
-  site_id: 'ar#',
+  site_id: 'ar',
   xmltv_id: 'I24NewsArabic.il'
 }
 
 it('can generate valid url', () => {
-  expect(url({ channel })).toBe('https://api.i24news.tv/v2/ar/schedules/world')
+  expect(url({ channel })).toBe('https://api.i24news.tv/v2/ar/schedules')
 })
 
 it('can parse response', () => {
