@@ -2198,12 +2198,13 @@ epg-parser@^0.1.6:
   dependencies:
     xml-js "^1.6.11"
 
-epg-parser@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.npmjs.org/epg-parser/-/epg-parser-0.2.0.tgz"
-  integrity sha512-+wmWylP9RPK1tzZKRZ291H8+vDd4LB1ZY0UP16bACyqpwmMu/xkE92jUaXm6wBMn6lpfSepYmT2mgLLi+NCsHQ==
+epg-parser@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.npmjs.org/epg-parser/-/epg-parser-0.3.1.tgz"
+  integrity sha512-y131hXfDthUdSeKbN0Ru1wiFF5er4t/TLT+IaAnHF2CYB0cnygHTJteQMDYIlHWHDsGj+z9ejm1cU3saFNF3nQ==
   dependencies:
     dayjs "^1.11.6"
+    lodash "^4.17.21"
     xml-js "^1.6.11"
 
 err-code@^2.0.2:
