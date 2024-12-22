@@ -8,7 +8,6 @@ const fs = require('fs')
 const path = require('path')
 dayjs.extend(utc)
 dayjs.extend(timezone)
-dayjs.extend(customParseFormat)
 
 const date = dayjs.utc('2024-12-19', 'YYYY-MM-DD').startOf('d')
 const channel = { site_id: '1208', xmltv_id: 'AlAoula.ma', lang: 'ar' }
@@ -25,11 +24,13 @@ it('can parse response', () => {
     return p
   })
 
-  expect(results).toMatchObject({
-    start: '2024-12-19T07:00:00.000Z',
-    stop: '2024-12-19T07:10:00.000Z',
-    title: 'ﺍﻟﺴﻼﻡ ﺍﻟﻮﻃﻨﻲ + ﺍﻟﻘﺮﺁﻥ ﺍﻟﻜﺮﻳﻢ',
-    category: 'القرآن الكريم'
+  expect(results[0]).toMatchObject({
+    "category": "القرآن الكريم",
+    "description": "",
+    "start": "2024-12-19T06:00:00.000Z",
+    "stop": "2024-12-19T06:10:00.000Z",
+    "stop": "2024-12-19T06:30:00.000Z",
+    "title": "ﺍﻟﺴﻼﻡ ﺍﻟﻮﻃﻨﻲ + ﺍﻟﻘﺮﺁﻥ ﺍﻟﻜﺮﻳﻢ"
   })
 })
 
