@@ -1,18 +1,22 @@
 const dayjs = require('dayjs')
+const doFetch = require('@ntlab/sfetch')
 const debug = require('debug')('site:tv.yandex.ru')
+
+doFetch
+  .setDebugger(debug)
+  .setMaxWorker(10)
 
 // enable to fetch guide description but its take a longer time
 const detailedGuide = true
-const nworker = 10
 
 // update this data by heading to https://tv.yandex.ru and change the values accordingly
 const cookies = {
-  i: 'dkim62pClrWWC4CShVQYMpVw1ELNVw4XJdL/lzT4E2r05IgcST1GtCA4ho/UyGgW2AO4qftDfZzGX2OHqCzwY7GUkpM=',
-  spravka: 'dD0xNzMyNjgzMTEwO2k9MTgwLjI0OC41OS40MDtEPTkyOUM2MkQ0Mzc3OUNBMUFCNzg3NTIyMEQ4OEJBMEVBMzQ2RUNGNUU5Q0FEQUM5RUVDMTFCNjc1ODA2MThEQTQ3RTY3RTUyRUNBRDdBMTY2OTY1MjMzRDU1QjNGMTc1MDA0NDM3MjBGMUNGQTM5RjA3OUQwRjE2MzQxMUNFOTgxQ0E0RjNGRjRGODNCMEM1QjlGNTg5RkI4NDk0NEM2QjNDQUQ5NkJGRTBFNTVCQ0Y1OTEzMEY0O3U9MTczMjY4MzExMDY3MTA1MzIzNDtoPTA1YWJmMTY0ZmI2MGViNTBhMDUwZWUwMThmYWNiYjhm',
+  i: 'eIUfSP+/mzQWXcH+Cuz8o1vY+D2K8fhBd6Sj0xvbPZeO4l3cY+BvMp8fFIuM17l6UE1Z5+R2a18lP00ex9iYVJ+VT+c=',
+  spravka: 'dD0xNzM0MjA0NjM4O2k9MTI1LjE2NC4xNDkuMjAwO0Q9QTVCQ0IyOTI5RDQxNkU5NkEyOTcwMTNDMzZGMDAzNjRDNTFFNDM4QkE2Q0IyOTJDRjhCOTZDRDIzODdBQzk2MzRFRDc5QTk2Qjc2OEI1MUY5MTM5M0QzNkY3OEQ2OUY3OTUwNkQ3RjBCOEJGOEJDMjAwMTQ0RDUwRkFCMDNEQzJFMDI2OEI5OTk5OUJBNEFERUYwOEQ1MjUwQTE0QTI3RDU1MEQwM0U0O3U9MTczNDIwNDYzODUyNDYyNzg1NDtoPTIxNTc0ZTc2MDQ1ZjcwMDBkYmY0NTVkM2Q2ZWMyM2Y1',
   yandexuid: '1197179041732383499',
   yashr: '4682342911732383504',
   yuidss: '1197179041732383499',
-  user_display: 930,
+  user_display: 824,
 }
 const headers = {
   'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
@@ -91,32 +95,35 @@ async function fetchSchedules({ date, content = null }) {
 
   let mainApi
   // parse content as schedules and add to queue if more requests is needed
-  const f = (data, src) => {
+  const f = (src, res, headers) => {
     if (src) {
       fetches.push(src)
     }
-    const [q, s] = parseContent(data, date)
+    if (headers) {
+      parseCookies(headers)
+    }
+    const [q, s] = parseContent(res, date)
     if (!mainApi) {
       mainApi = true
       if (caches.region) {
-        queues.push(getUrl(date, caches.region))
+        queues.push(getQueue(getUrl(date, caches.region), src))
       }
     }
     for (const url of q) {
       if (fetches.indexOf(url) < 0) {
-        queues.push(url)
+        queues.push(getQueue(url, src))
       }
     }
     schedules.push(...s)
   }
   // is main html already fetched?
   if (content) {
-    f(content)
+    f(url, content)
   } else {
-    queues.push(url)
+    queues.push(getQueue(url, 'https://tv.yandex.ru/'))
   }
   // fetch all queues
-  await doFetch(queues, url, f)
+  await doFetch(queues, f)
 
   return schedules
 }
@@ -129,17 +136,20 @@ async function fetchPrograms({ schedules, date, channel }) {
       queues.push(
         ...schedule.events
           .filter(event => date.isSame(event.start, 'day'))
-          .map(event => getUrl(null, caches.region, null, event))
+          .map(event => getQueue(getUrl(null, caches.region, null, event), 'https://tv.yandex.ru/'))
       )
     })
-  await doFetch(queues, getUrl(date), content => {
+  await doFetch(queues, (queue, res, headers) => {
+    if (headers) {
+      parseCookies(headers)
+    }
     // is it a program?
-    if (content?.program) {
+    if (res?.program) {
       let updated = false
       schedules.forEach(schedule => {
         schedule.events.forEach(event => {
-          if (event.channelFamilyId === content.channelFamilyId && event.id === content.id) {
-            Object.assign(event, content)
+          if (event.channelFamilyId === res.channelFamilyId && event.id === res.id) {
+            Object.assign(event, res)
             updated = true
             return true
           }
@@ -150,61 +160,6 @@ async function fetchPrograms({ schedules, date, channel }) {
       })
     }
   })
-}
-
-async function doFetch(queues, referer, cb) {
-  if (queues.length) {
-    const workers = []
-    let n = Math.min(nworker, queues.length)
-    while (workers.length < n) {
-      const worker = () => {
-        if (queues.length) {
-          const url = queues.shift()
-          debug(`Fetching ${url}`)
-          const data = {
-            'Origin': 'https://tv.yandex.ru',
-          }
-          if (referer) {
-            data['Referer'] = referer
-          }
-          if (url.indexOf('api') > 0) {
-            data['X-Requested-With'] = 'XMLHttpRequest'
-          }
-          const headers = getHeaders(data)
-          doRequest(url, { headers })
-            .then(res => {
-              cb(res, url)
-              worker()
-            })
-        } else {
-          workers.splice(workers.indexOf(worker), 1)
-        }
-      }
-      workers.push(worker)
-      worker()
-    }
-    await new Promise(resolve => {
-      const interval = setInterval(() => {
-        if (workers.length === 0) {
-          clearInterval(interval)
-          resolve()
-        }
-      }, 500)
-    })
-  }
-}
-
-async function doRequest(url, params) {
-  const axios = require('axios')
-  const content = await axios
-    .get(url, params)
-    .then(response => {
-      parseCookies(response.headers)
-      return response.data
-    })
-    .catch(err => console.error(err.message))
-
-  return content
 }
 
 function parseContent(content, date, checkOnly = false) {
@@ -307,4 +262,21 @@ function getUrl(date, region = null, page = null, event = null) {
     url += `${url.indexOf('?') < 0 ? '?' : '&'}limit=${page.limit}`
   }
   return url
+}
+
+function getQueue(url, referer) {
+  const data = {
+    'Origin': 'https://tv.yandex.ru',
+  }
+  if (referer) {
+    data['Referer'] = referer
+  }
+  if (url.indexOf('api') > 0) {
+    data['X-Requested-With'] = 'XMLHttpRequest'
+  }
+  const headers = getHeaders(data)
+  return {
+    url,
+    params: { headers }
+  }
 }
