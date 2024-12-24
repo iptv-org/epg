@@ -189,6 +189,7 @@
 | [wavve.com](sites/wavve.com)                                       | 🟢     |                                                                                          |
 | [web.magentatv.de](sites/web.magentatv.de)                         | 🟢     |                                                                                          |
 | [webtv.delta.nl](sites/webtv.delta.nl)                             | 🟢     |                                                                                          |
+| [winplay.co](sites/winplay.co)                                     | 🟢     |                                                                                          |
 | [worldfishingnetwork.com](sites/worldfishingnetwork.com)           | 🟢     |                                                                                          |
 | [xumo.tv](sites/xumo.tv)                                           | 🟢     |                                                                                          |
 | [zap.co.ao](sites/zap.co.ao)                                       | 🟢     |                                                                                          |
