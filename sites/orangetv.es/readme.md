@@ -22,14 +22,4 @@ npm test -- orangetv.es
 
 Some channels of this provider are not added to the channel database :
 
-- RuntimeSeries.es
-- RuntimeCineSeries.es
-- RuntimeCineTerror.es
-- RuntimeAccion.es
-- RuntimeComedia.es
-- RuntimeCrimen.es
-- RuntimeRomance.es
-- RunTimeClasico.es
-- CinesVerdiTV.es
-- CineFeelGood.es
-- Gametoon.es
+- Gametoon.es (not sure whether this is the same channel as Gametoon.com)
