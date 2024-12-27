@@ -1,103 +1,81 @@
-const axios = require('axios')
-const cheerio = require('cheerio')
-const { DateTime } = require('luxon')
+const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const customParseFormat = require('dayjs/plugin/customParseFormat')
+const timezone = require('dayjs/plugin/timezone')
+
+dayjs.extend(utc)
+dayjs.extend(customParseFormat)
+dayjs.extend(timezone)
 
 module.exports = {
   site: 'cosmote.gr',
-  days: 2,
-  url: function ({ date, channel }) {
-    return `https://www.cosmotetv.gr/portal/residential/program/epg/programchannel?p_p_id=channelprogram_WAR_OTETVportlet&p_p_lifecycle=0&_channelprogram_WAR_OTETVportlet_platform=IPTV&_channelprogram_WAR_OTETVportlet_date=${date.format(
-      'DD-MM-YYYY'
-    )}&_channelprogram_WAR_OTETVportlet_articleTitleUrl=${channel.site_id}`
+  days: 5,
+  request: {
+    cache: {
+      ttl: 60 * 60 * 1000 // 1 hour
+    },
+    method: 'GET',
+    headers: {
+      'referer': 'https://www.cosmotetv.gr/',
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
+      'Accept': '*/*',
+      'Accept-Language': 'en-US,en;q=0.9',
+      'Accept-Encoding': 'gzip, deflate, br, zstd',
+      'Origin': 'https://www.cosmotetv.gr',
+      'Sec-Ch-Ua': '"Not.A/Brand";v="24", "Chromium";v="131", "Google Chrome";v="131"',
+      'Sec-Ch-Ua-Mobile': '?0',
+      'Sec-Ch-Ua-Platform': '"Windows"',
+      'Sec-Fetch-Dest': 'empty',
+      'Sec-Fetch-Mode': 'cors',
+      'Sec-Fetch-Site': 'cross-site'
+    }
+  },
+  url: function ({date, channel}) {
+    const startOfDay = dayjs(date).startOf('day').utc().unix()
+    const endOfDay = dayjs(date).endOf('day').utc().unix()
+    return `https://mwapi-prod.cosmotetvott.gr/api/v3.4/epg/listings/el?from=${startOfDay}&to=${endOfDay}&callSigns=${channel.site_id}&endingIncludedInRange=false`
   },
   parser: function ({ date, content }) {
     let programs = []
-    const items = parseItems(content)
-    items.forEach((item, i) => {
-      const prev = programs[programs.length - 1]
-      const $item = cheerio.load(item)
-      let start = parseStart($item, date)
-      if (i === 0 && start.hour > 12 && start.hour < 21) {
-        date = date.subtract(1, 'd')
-        start = start.minus({ days: 1 })
-      }
-      if (prev && start < prev.start) {
-        start = start.plus({ days: 1 })
-        date = date.add(1, 'd')
-      }
-      let stop = parseStop($item, date)
-      if (stop < start) {
-        stop = stop.plus({ days: 1 })
-        date = date.add(1, 'd')
-      }
-      programs.push({
-        title: parseTitle($item),
-        category: parseCategory($item),
-        start,
-        stop
+    const data = JSON.parse(content)
+    data.channels.forEach(channel => {
+      channel.items.forEach(item => {
+        const start = dayjs(item.startTime).utc().toISOString()
+        const stop = dayjs(item.endTime).utc().toISOString()
+        programs.push({
+          title: item.title,
+          description: item.description || 'No description available',
+          category: item.qoe.genre,
+          image: item.thumbnails.standard,
+          start,
+          stop
+        })
       })
     })
-
     return programs
   },
   async channels() {
-    const data = await axios
-      .get(`https://www.cosmotetv.gr/portal/residential/program`)
-      .then(r => r.data)
-      .catch(console.log)
-
-    let channels = []
-    const $ = cheerio.load(data)
-    $('#program-channels-selectbox > option').each((i, el) => {
-      const value = $(el).attr('value')
-      if (!value || value == '-1') return
-
-      const url = new URL(decodeURIComponent(value))
-      const site_id = url.searchParams.get('_channelprogram_WAR_OTETVportlet_articleTitleUrl')
-
-      channels.push({
-        lang: 'el',
-        site_id,
-        name: $(el).text().trim()
+    const axios = require('axios')
+    try {
+      const response = await axios.get('https://mwapi-prod.cosmotetvott.gr/api/v3.4/epg/channels/all/el', {
+      headers: this.request.headers
       })
-    })
+      const data = response.data
 
-    return channels
+      if (data && data.channels) {
+        return data.channels.map(item => ({
+          lang: 'el',
+          site_id: item.callSign,
+          name: item.title,
+          //logo: item.logos.square
+        }))
+      } else {
+        console.error('Unexpected response structure:', data)
+        return []
+      }
+    } catch (error) {
+      console.error('Error fetching channel data:', error)
+      return []
+    }
   }
-}
-
-function parseTitle($item) {
-  return $item('.channel_program-table--program > a').text()
-}
-
-function parseCategory($item) {
-  const typeString = $item('.channel_program-table--program_type')
-    .children()
-    .remove()
-    .end()
-    .text()
-    .trim()
-  const [, category] = typeString.match(/\| (.*)/) || [null, null]
-
-  return category
-}
-
-function parseStart($item, date) {
-  const timeString = $item('span.start-time').text()
-  const dateString = `${date.format('YYYY-MM-DD')} ${timeString}`
-
-  return DateTime.fromFormat(dateString, 'yyyy-MM-dd HH:mm', { zone: 'Europe/Athens' }).toUTC()
-}
-
-function parseStop($item, date) {
-  const timeString = $item('span.end-time').text()
-  const dateString = `${date.format('YYYY-MM-DD')} ${timeString}`
-
-  return DateTime.fromFormat(dateString, 'yyyy-MM-dd HH:mm', { zone: 'Europe/Athens' }).toUTC()
-}
-
-function parseItems(content) {
-  const $ = cheerio.load(content)
-
-  return $('#_channelprogram_WAR_OTETVportlet_programs > tr.d-sm-table-row').toArray()
 }
