@@ -23,6 +23,7 @@
 | [canalplus-haiti.com](sites/canalplus-haiti.com)                   | 🔴     | https://github.com/iptv-org/epg/issues/2237                                              |
 | [canalplus.com](sites/canalplus.com)                               | 🟢     |                                                                                          |
 | [cgates.lt](sites/cgates.lt)                                       | 🟢     |                                                                                          |
+| [chada.ma](sites/chada.ma)                                         | 🟢     |                                                                                          |
 | [chaines-tv.orange.fr](sites/chaines-tv.orange.fr)                 | 🟡     | https://github.com/iptv-org/epg/issues/2395                                              |
 | [clickthecity.com](sites/clickthecity.com)                         | 🟢     |                                                                                          |
 | [comteco.com.bo](sites/comteco.com.bo)                             | 🔴     | https://github.com/iptv-org/epg/issues/2239                                              |
@@ -41,9 +42,8 @@
 | [ena.skylifetv.co.kr](sites/ena.skylifetv.co.kr)                   | 🟢     |                                                                                          |
 | [energeek.cl](sites/energeek.cl)                                   | 🟢     |                                                                                          |
 | [entertainment.ie](sites/entertainment.ie)                         | 🟢     |                                                                                          |
-| [hoy.tv](sites/hoy.tv)                                             | 🟢     |                                                                                          |
 | [firstmedia.com](sites/firstmedia.com)                             | 🟢     |                                                                                          |
-| [flixed.io](sites/flixed.io)                                       | 🟢     |                                                                                          |
+| [flixed.io](sites/flixed.io)                                       | 🟡     | https://github.com/iptv-org/epg/issues/2543                                              |
 | [foxsports.com.au](sites/foxsports.com.au)                         | 🟢     |                                                                                          |
 | [foxtel.com.au](sites/foxtel.com.au)                               | 🟢     |                                                                                          |
 | [frikanalen.no](sites/frikanalen.no)                               | 🟢     |                                                                                          |
@@ -53,6 +53,7 @@
 | [guidatv.sky.it](sites/guidatv.sky.it)                             | 🟢     |                                                                                          |
 | [hd-plus.de](sites/hd-plus.de)                                     | 🔴     | https://github.com/iptv-org/epg/issues/2173                                              |
 | [horizon.tv](sites/horizon.tv)                                     | 🟢     |                                                                                          |
+| [hoy.tv](sites/hoy.tv)                                             | 🟢     |                                                                                          |
 | [i.mjh.nz](sites/i.mjh.nz)                                         | 🟢     |                                                                                          |
 | [i24news.tv](sites/i24news.tv)                                     | 🟡     | https://github.com/iptv-org/epg/issues/2398                                              |
 | [iltalehti.fi](sites/iltalehti.fi)                                 | 🟡     | https://github.com/iptv-org/epg/issues/2396                                              |
@@ -85,11 +86,10 @@
 | [mts.rs](sites/mts.rs)                                             | 🟢     |                                                                                          |
 | [mujtvprogram.cz](sites/mujtvprogram.cz)                           | 🟢     |                                                                                          |
 | [musor.tv](sites/musor.tv)                                         | 🔴     | https://github.com/iptv-org/epg/issues/2306                                              |
-| [myafn.dodmedia.osd.mil](sites/myafn.dodmedia.osd.mil)             | 🟢     |                                                                                          |
 | [mysky.com.ph](sites/mysky.com.ph)                                 | 🟢     |                                                                                          |
 | [mytelly.co.uk](sites/mytelly.co.uk)                               | 🟡     | https://github.com/iptv-org/epg/issues/2276                                              |
 | [mytvsuper.com](sites/mytvsuper.com)                               | 🟢     |                                                                                          |
-| [nhk.or.jp](sites/nhk.or.jp)                                       | 🟢     |                                                                                          |
+| [neo.io](sites/neo.io)                                             | 🟢     |                                                                                          |
 | [nhkworldpremium.com](sites/nhkworldpremium.com)                   | 🟢     |                                                                                          |
 | [nhl.com](sites/nhl.com)                                           | 🟢     |                                                                                          |
 | [nostv.pt](sites/nostv.pt)                                         | 🟢     |                                                                                          |
@@ -101,8 +101,8 @@
 | [ontvtonight.com](sites/ontvtonight.com)                           | 🔴     | https://github.com/iptv-org/epg/issues/2416                                              |
 | [osn.com](sites/osn.com)                                           | 🔴     | https://github.com/iptv-org/epg/issues/2282, https://github.com/iptv-org/epg/issues/2358 |
 | [pbsguam.org](sites/pbsguam.org)                                   | 🟢     |                                                                                          |
-| [player.ee.co.uk](sites/player.ee.co.uk)                           | 🟢     |                                                                                          |
 | [pickx.be](sites/pickx.be)                                         | 🔴     | https://github.com/iptv-org/epg/issues/2428                                              |
+| [player.ee.co.uk](sites/player.ee.co.uk)                           | 🟢     |                                                                                          |
 | [playtv.unifi.com.my](sites/playtv.unifi.com.my)                   | 🟢     |                                                                                          |
 | [plex.tv](sites/plex.tv)                                           | 🟢     |                                                                                          |
 | [programacion-tv.elpais.com](sites/programacion-tv.elpais.com)     | 🟢     |                                                                                          |
@@ -121,6 +121,7 @@
 | [rtmklik.rtm.gov.my](sites/rtmklik.rtm.gov.my)                     | 🟢     |                                                                                          |
 | [rtp.pt](sites/rtp.pt)                                             | 🟢     |                                                                                          |
 | [ruv.is](sites/ruv.is)                                             | 🟢     |                                                                                          |
+| [s.mxtv.jp](sites/s.mxtv.jp)                                       | 🟢     |                                                                                          |
 | [sat.tv](sites/sat.tv)                                             | 🟢     |                                                                                          |
 | [shahid.mbc.net](sites/shahid.mbc.net)                             | 🟢     |                                                                                          |
 | [siba.com.co](sites/siba.com.co)                                   | 🟢     |                                                                                          |
@@ -130,6 +131,7 @@
 | [sky.com](sites/sky.com)                                           | 🟡     | https://github.com/iptv-org/epg/issues/2325                                              |
 | [sky.de](sites/sky.de)                                             | 🟢     |                                                                                          |
 | [skylife.co.kr](sites/skylife.co.kr)                               | 🟢     |                                                                                          |
+| [skyperfecttv.co.jp](sites/skyperfecttv.co.jp)                     | 🟢     |                                                                                          |
 | [sporttv.pt](sites/sporttv.pt)                                     | 🟢     |                                                                                          |
 | [starhubtvplus.com](sites/starhubtvplus.com)                       | 🔴     | https://github.com/iptv-org/epg/issues/2365                                              |
 | [startimestv.com](sites/startimestv.com)                           | 🔴     | https://github.com/iptv-org/epg/issues/2296                                              |
@@ -157,9 +159,9 @@
 | [tv.trueid.net](sites/tv.trueid.net)                               | 🟢     |                                                                                          |
 | [tv.yandex.ru](sites/tv.yandex.ru)                                 | 🔴     | https://github.com/iptv-org/epg/issues/2451                                              |
 | [tv.yettel.hu](sites/tv.yettel.hu)                                 | 🔴     | https://github.com/iptv-org/epg/issues/2263                                              |
-| [tv2go.t-2.net](sites/tv2go.t-2.net)                               | 🟢     |                                                                                          |
 | [tv24.co.uk](sites/tv24.co.uk)                                     | 🟢     |                                                                                          |
 | [tv24.se](sites/tv24.se)                                           | 🟢     |                                                                                          |
+| [tv2go.t-2.net](sites/tv2go.t-2.net)                               | 🟢     |                                                                                          |
 | [tva.tv](sites/tva.tv)                                             | 🔴     | https://github.com/iptv-org/epg/issues/2264                                              |
 | [tvarenasport.com](sites/tvarenasport.com)                         | 🔴     | https://github.com/iptv-org/epg/issues/2266                                              |
 | [tvarenasport.hr](sites/tvarenasport.hr)                           | 🔴     | https://github.com/iptv-org/epg/issues/2267                                              |
@@ -178,6 +180,7 @@
 | [tvplus.com.tr](sites/tvplus.com.tr)                               | 🔴     | https://github.com/iptv-org/epg/issues/2377                                              |
 | [tvprofil.com](sites/tvprofil.com)                                 | 🟡     | https://github.com/iptv-org/epg/issues/2399                                              |
 | [tvtv.us](sites/tvtv.us)                                           | 🟡     | https://github.com/iptv-org/epg/issues/2357, https://github.com/iptv-org/epg/issues/2353 |
+| [v3.myafn.dodmedia.osd.mil](sites/v3.myafn.dodmedia.osd.mil)       | 🟢     |                                                                                          |
 | [vidio.com](sites/vidio.com)                                       | 🟢     |                                                                                          |
 | [virginmediatelevision.ie](sites/virginmediatelevision.ie)         | 🟢     |                                                                                          |
 | [virgintvgo.virginmedia.com](sites/virgintvgo.virginmedia.com)     | 🟡     | https://github.com/iptv-org/epg/issues/2310                                              |
@@ -191,6 +194,7 @@
 | [web.magentatv.de](sites/web.magentatv.de)                         | 🟢     |                                                                                          |
 | [webtv.delta.nl](sites/webtv.delta.nl)                             | 🟢     |                                                                                          |
 | [worldfishingnetwork.com](sites/worldfishingnetwork.com)           | 🟢     |                                                                                          |
+| [www3.nhk.or.jp](sites/www3.nhk.or.jp)                             | 🟢     |                                                                                          |
 | [xumo.tv](sites/xumo.tv)                                           | 🟢     |                                                                                          |
 | [zap.co.ao](sites/zap.co.ao)                                       | 🟢     |                                                                                          |
 | [ziggogo.tv](sites/ziggogo.tv)                                     | 🟡     | https://github.com/iptv-org/epg/issues/2393                                              |
