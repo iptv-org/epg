@@ -31,14 +31,14 @@
 | [cosmote.gr](sites/cosmote.gr)                                     | 🟢     |                                                                                          |
 | [cubmu.com](sites/cubmu.com)                                       | 🟢     |                                                                                          |
 | [dens.tv](sites/dens.tv)                                           | 🟢     |                                                                                          |
-| [digiturk.com.tr](sites/digiturk.com.tr)                           | 🟢     |                                                                                          |
-| [directv.com](sites/directv.com)                                   | 🟡     | https://github.com/iptv-org/epg/issues/2284                                              |
+| [digiturk.com.tr](sites/digiturk.com.tr)                           | 🔴     | https://github.com/iptv-org/epg/issues/2304, https://github.com/iptv-org/epg/issues/2547 |
+| [directv.com](sites/directv.com)                                   | 🔴     | https://github.com/iptv-org/epg/issues/2284                                              |
 | [directv.com.ar](sites/directv.com.ar)                             | 🔴     | https://github.com/iptv-org/epg/issues/2248                                              |
 | [directv.com.uy](sites/directv.com.uy)                             | 🟢     |                                                                                          |
 | [dishtv.in](sites/dishtv.in)                                       | 🔴     | https://github.com/iptv-org/epg/issues/2445                                              |
-| [dsmart.com.tr](sites/dsmart.com.tr)                               | 🟢     |                                                                                          |
+| [dsmart.com.tr](sites/dsmart.com.tr)                               | 🟡     | https://github.com/iptv-org/epg/issues/2303                                              |
 | [dstv.com](sites/dstv.com)                                         | 🟢     |                                                                                          |
-| [elcinema.com](sites/elcinema.com)                                 | 🟢     |                                                                                          |
+| [elcinema.com](sites/elcinema.com)                                 | 🔴     | https://github.com/iptv-org/epg/issues/2541                                              |
 | [ena.skylifetv.co.kr](sites/ena.skylifetv.co.kr)                   | 🟢     |                                                                                          |
 | [energeek.cl](sites/energeek.cl)                                   | 🟢     |                                                                                          |
 | [entertainment.ie](sites/entertainment.ie)                         | 🟢     |                                                                                          |
@@ -68,7 +68,7 @@
 | [m.tving.com](sites/m.tving.com)                                   | 🟢     |                                                                                          |
 | [magticom.ge](sites/magticom.ge)                                   | 🟢     |                                                                                          |
 | [mako.co.il](sites/mako.co.il)                                     | 🟢     |                                                                                          |
-| [maxtv.hrvatskitelekom.hr](sites/maxtv.hrvatskitelekom.hr)         | 🟢     |                                                                                          |
+| [maxtv.hrvatskitelekom.hr](sites/maxtv.hrvatskitelekom.hr)         | 🔴     | https://github.com/iptv-org/epg/issues/2509                                              |
 | [maxtvgo.mk](sites/maxtvgo.mk)                                     | 🟢     |                                                                                          |
 | [mediagenie.co.kr](sites/mediagenie.co.kr)                         | 🟢     |                                                                                          |
 | [mediaklikk.hu](sites/mediaklikk.hu)                               | 🟢     |                                                                                          |
@@ -128,7 +128,7 @@
 | [singtel.com](sites/singtel.com)                                   | 🟢     |                                                                                          |
 | [sjonvarp.is](sites/sjonvarp.is)                                   | 🟢     |                                                                                          |
 | [sky.co.nz](sites/sky.co.nz)                                       | 🟢     |                                                                                          |
-| [sky.com](sites/sky.com)                                           | 🟢     |                                                                                          |
+| [sky.com](sites/sky.com)                                           | 🟡     | https://github.com/iptv-org/epg/issues/2501, https://github.com/iptv-org/epg/issues/2516 |
 | [sky.de](sites/sky.de)                                             | 🟢     |                                                                                          |
 | [skylife.co.kr](sites/skylife.co.kr)                               | 🟢     |                                                                                          |
 | [skyperfecttv.co.jp](sites/skyperfecttv.co.jp)                     | 🟢     |                                                                                          |
@@ -168,7 +168,7 @@
 | [tvcesoir.fr](sites/tvcesoir.fr)                                   | 🟢     |                                                                                          |
 | [tvcubana.icrt.cu](sites/tvcubana.icrt.cu)                         | 🟢     |                                                                                          |
 | [tvgids.nl](sites/tvgids.nl)                                       | 🟡     | https://github.com/iptv-org/epg/issues/2400                                              |
-| [tvguide.com](sites/tvguide.com)                                   | 🟢     |                                                                                          |
+| [tvguide.com](sites/tvguide.com)                                   | 🔴     | https://github.com/iptv-org/epg/issues/2542                                              |
 | [tvguide.myjcom.jp](sites/tvguide.myjcom.jp)                       | 🟢     |                                                                                          |
 | [tvhebdo.com](sites/tvhebdo.com)                                   | 🟢     |                                                                                          |
 | [tvheute.at](sites/tvheute.at)                                     | 🟢     |                                                                                          |
@@ -179,7 +179,7 @@
 | [tvpassport.com](sites/tvpassport.com)                             | 🟢     |                                                                                          |
 | [tvplus.com.tr](sites/tvplus.com.tr)                               | 🟢     |                                                                                          |
 | [tvprofil.com](sites/tvprofil.com)                                 | 🟡     | https://github.com/iptv-org/epg/issues/2399                                              |
-| [tvtv.us](sites/tvtv.us)                                           | 🟡     | https://github.com/iptv-org/epg/issues/2357, https://github.com/iptv-org/epg/issues/2353 |
+| [tvtv.us](sites/tvtv.us)                                           | 🟢     |                                                                                          |
 | [v3.myafn.dodmedia.osd.mil](sites/v3.myafn.dodmedia.osd.mil)       | 🟢     |                                                                                          |
 | [vidio.com](sites/vidio.com)                                       | 🟢     |                                                                                          |
 | [virginmediatelevision.ie](sites/virginmediatelevision.ie)         | 🟢     |                                                                                          |
