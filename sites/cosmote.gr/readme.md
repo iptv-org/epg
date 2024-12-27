@@ -1,6 +1,6 @@
 # cosmote.gr
 
-https://www.cosmote.gr/ _[Geo-blocked]_
+https://www.cosmotetv.gr/portal/program
 
 ### Download the guide
 
