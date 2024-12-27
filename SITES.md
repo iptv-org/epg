@@ -58,7 +58,7 @@
 | [iltalehti.fi](sites/iltalehti.fi)                                 | 🟡     | https://github.com/iptv-org/epg/issues/2396                                              |
 | [indihometv.com](sites/indihometv.com)                             | 🟢     |                                                                                          |
 | [ionplustv.com](sites/ionplustv.com)                               | 🟢     |                                                                                          |
-| [ipko.com](sites/ipko.com)                                         | 🔴     | https://github.com/iptv-org/epg/issues/2454                                              |
+| [ipko.tv](sites/ipko.tv)                                           | 🟢     |                                             |
 | [kan.org.il](sites/kan.org.il)                                     | 🔴     | https://github.com/iptv-org/epg/issues/2273                                              |
 | [knr.gl](sites/knr.gl)                                             | 🟢     |                                                                                          |
 | [kplus.vn](sites/kplus.vn)                                         | 🔴     | https://github.com/iptv-org/epg/issues/2240                                              |
