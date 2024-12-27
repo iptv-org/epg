@@ -5,7 +5,7 @@ FROM node:18-alpine
 WORKDIR /epg
 
 # Install Python, build tools, bash, and dcron (lightweight cron daemon)
-RUN apk add --no-cache python3 make g++ bash dcron
+RUN apk add --no-cache python3 make g++ bash dcron sed
 
 # Copy all project files into the container
 COPY . .
