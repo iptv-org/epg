@@ -20,7 +20,7 @@ const data = fs.readFileSync(path.resolve(__dirname, '__data__/data.json'))
 it('can generate valid url', () => {
   const result = url({ channel, date })
   expect(result).toBe(
-    'https://tv.trueid.net/_next/data/1380644e0f1fb6b14c82894a0c682d147e015c9d/th-en.json?channelSlug=true-movie-hits&path=true-movie-hits'
+    'https://tv.trueid.net/_next/data/9d13441bf2f87fe680d62c50845f1037632855a3/th-en.json?channelSlug=true-movie-hits&path=true-movie-hits'
   )
 })
 
