@@ -8,7 +8,7 @@ module.exports = {
   site: 'tv.trueid.net',
   days: 1,
   url({ channel }) {
-    return `https://tv.trueid.net/_next/data/1380644e0f1fb6b14c82894a0c682d147e015c9d/th-${channel.lang}.json?channelSlug=${channel.site_id}&path=${channel.site_id}`
+    return `https://tv.trueid.net/_next/data/9d13441bf2f87fe680d62c50845f1037632855a3/th-${channel.lang}.json?channelSlug=${channel.site_id}&path=${channel.site_id}`
   },
   parser({ content, channel }) {
     const programs = []
@@ -28,7 +28,7 @@ module.exports = {
     const axios = require('axios')
     const ACCESS_TOKEN = token
       ? token
-      : 'MTM4MDY0NGUwZjFmYjZiMTRjODI4OTRhMGM2ODJkMTQ3ZTAxNWM5ZDoxZmI2YjE0YzgyODk0YTBjNjgyZDE0N2UwMTVjOWQ='
+      : 'OWQxMzQ0MWJmMmY4N2ZlNjgwZDYyYzUwODQ1ZjEwMzc2MzI4NTVhMzpmODdmZTY4MGQ2MmM1MDg0NWYxMDM3NjMyODU1YTM='
 
     const data = await axios
       .get(`https://tv.trueid.net/api/channel/getChannelListByAllCate?lang=${lang}&country=th`, {
