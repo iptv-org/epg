@@ -3,12 +3,13 @@ const axios = require('axios');
 
 module.exports = {
   site: 'pluto.tv',
-  days: 2, 
+  days: 2,
 
   url: function ({ date, channel }) {
     const channelId = channel.site_id;
-    const startTime = dayjs.utc(date.startTime).startOf('day').subtract(1, 'day').toISOString();
-    const endTime = dayjs(date).add(this.days - 1, 'day').endOf('day').toISOString();
+    const startTime = dayjs.utc(date).startOf('day').toISOString();
+    const endTime = dayjs.utc(date).add(this.days - 1, 'day').endOf('day').toISOString();
+
     const generatedUrl = `https://api.pluto.tv/v2/channels/${channelId}?start=${startTime}&stop=${endTime}`;
     return generatedUrl;
   },
