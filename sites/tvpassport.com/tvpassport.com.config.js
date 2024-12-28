@@ -11,7 +11,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'tvpassport.com',
-  days: 3,
+  days: 2,
   url({ channel, date }) {
     return `https://www.tvpassport.com/tv-listings/stations/${channel.site_id}/${date.format(
       'YYYY-MM-DD'
@@ -41,12 +41,13 @@ module.exports = {
         title,
         sub_title,
         description: parseDescription($item),
-        image: parseImage($item),
+        icon: parseImage($item),
         category: parseCategory($item),
         rating: parseRating($item),
         actors: parseActors($item),
         guest: parseGuest($item),
         director: parseDirector($item),
+        date: parseYear($item),  // Agregar `data-year`
         start,
         stop
       })
@@ -96,6 +97,14 @@ module.exports = {
 
     return channels
   }
+}
+
+function parseYear($item) {
+  // Obtiene el año desde `data-year`
+  const year = $item('*').data('year') ? $item('*').data('year').toString() : '';
+  
+  // Verifica que el año tenga exactamente 4 dígitos
+  return /^[0-9]{4}$/.test(year) ? year : ''; 
 }
 
 function parseDescription($item) {

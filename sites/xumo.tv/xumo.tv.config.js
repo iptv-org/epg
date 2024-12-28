@@ -53,7 +53,8 @@ module.exports = {
         sub_title: item.episodeTitle,
         description: parseDescription(item),
         start: parseStart(item),
-        stop: parseStop(item)
+        stop: parseStop(item),
+        icon: parseIcon(item) // Añadir la URL del icono
       })
     })
 
@@ -90,7 +91,6 @@ module.exports = {
         }
 
         output.push({
-          lang: 'en',
           site_id: `${i * 50}#${item.channelId}`,
           name: info.title
         })
@@ -99,6 +99,12 @@ module.exports = {
 
     return output
   }
+}
+
+// Función para obtener la URL del icono
+function parseIcon(item) {
+  const imageId = item.assetId; // Suponiendo que assetId contiene el ID de la imagen
+  return imageId ? `https://image.xumo.com/v1/assets/asset/${imageId}/960x540.jpg` : null; // Generar la URL con la resolución deseada
 }
 
 function parseDescription(item) {

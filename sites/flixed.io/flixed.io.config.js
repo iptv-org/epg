@@ -14,9 +14,13 @@ module.exports = {
     items.forEach(item => {
       programs.push({
         title: item.program.title,
+		sub_title: item.program.episodeTitle,
         description: item.program.longDescription,
-        category: item.program.subType,
-        image: parseImage(item),
+		episode: item.program.episodeNum,
+		season: item.program.seasonNum,
+        category: item.program.genres,
+		actor: item.program.topCast,
+        icon: parseImage(item),
         start: parseStart(item),
         stop: parseStop(item)
       })

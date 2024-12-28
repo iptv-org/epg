@@ -20,11 +20,24 @@ module.exports = {
     const programs = []
     const items = parseItems(content)
     for (let item of items) {
+      let iconImage = null;
+      const coverArtImage = item.Image.find(image => image.type === 'coverArt')
+      const snapshotImage = item.Image.find(image => image.type === 'snapshot')
+      
+      if (coverArtImage && coverArtImage.url !== 'https://provider-static.plex.tv/epg/cms/production/22c54df5-30e4-415c-bff1-8d0728398cb1/TD_HERO_BCKGND_HOR.jpg') {
+        iconImage = coverArtImage.url;
+      } else if (snapshotImage) {
+        iconImage = snapshotImage.url;
+      }
+
       programs.push({
-        title: item.title,
+        title: item.grandparentTitle || item.title,
+        sub_title: item.title,
         description: item.summary,
+        episode: item.index,
+        season: item.parentIndex,
         categories: parseCategories(item),
-        image: item.art,
+        icon: iconImage,
         start: parseStart(item),
         stop: parseStop(item)
       })
@@ -40,7 +53,6 @@ module.exports = {
 
     return data.MediaContainer.Channel.map(c => {
       return {
-        lang: 'en',
         site_id: c.id,
         name: c.title
       }
@@ -77,15 +89,20 @@ function parseItems(content) {
     })
 
     segments.forEach(segment => {
-      items.push({ ...item, segments, beginsAt: segment.beginsAt, endsAt: segment.endsAt })
+      items.push({ 
+        ...item, 
+        segments, 
+        beginsAt: segment.beginsAt, 
+        endsAt: segment.endsAt
+      })
     })
   })
 
   return items.sort(byTime)
+}
 
-  function byTime(a, b) {
-    if (a.beginsAt > b.beginsAt) return 1
-    if (a.beginsAt < b.beginsAt) return -1
-    return 0
-  }
+function byTime(a, b) {
+  if (a.beginsAt > b.beginsAt) return 1
+  if (a.beginsAt < b.beginsAt) return -1
+  return 0
 }
