@@ -1,0 +1,622 @@
+{
+  "data": {
+    "getLives": [
+      {
+        "_id": "529cff6f6bd2ea6b610000e0",
+        "logo": "https://platform-static.cdn.mdstrm.com/player/logo/s-live-529cff6f6bd2ea6b610000e0.png?c=20241223",
+        "name": "Win+ Fútbol",
+        "schedules": [
+          {
+            "_id": "67633cf2cd9263fa4fde8fd2",
+            "name": "Mejores partidos 2024: América vs. Nacional",
+            "date_start": "2024-12-23T22:30:00.000Z",
+            "date_end": "2024-12-24T00:30:00.000Z",
+            "current": true,
+            "match": null,
+            "show": null,
+            "live": {
+              "_id": "529cff6f6bd2ea6b610000e0",
+              "dvr": true,
+              "type": "video",
+              "purchased": -1,
+              "__typename": "Live"
+            },
+            "__typename": "Schedule"
+          },
+          {
+            "_id": "67633d28a1137afadc036ae7",
+            "name": "Los Disruptivos de Win",
+            "date_start": "2024-12-24T00:30:00.000Z",
+            "date_end": "2024-12-24T02:30:00.000Z",
+            "current": false,
+            "match": null,
+            "show": null,
+            "live": {
+              "_id": "529cff6f6bd2ea6b610000e0",
+              "dvr": true,
+              "type": "video",
+              "purchased": -1,
+              "__typename": "Live"
+            },
+            "__typename": "Schedule"
+          },
+          {
+            "_id": "67633ecd895d155a3913f983",
+            "name": "WIn Noticias",
+            "date_start": "2024-12-24T02:30:00.000Z",
+            "date_end": "2024-12-24T03:30:00.000Z",
+            "current": false,
+            "match": null,
+            "show": null,
+            "live": {
+              "_id": "529cff6f6bd2ea6b610000e0",
+              "dvr": true,
+              "type": "video",
+              "purchased": -1,
+              "__typename": "Live"
+            },
+            "__typename": "Schedule"
+          },
+          {
+            "_id": "67633ef7a449f4fa09408d69",
+            "name": "Repetición Programación Win",
+            "date_start": "2024-12-24T03:30:00.000Z",
+            "date_end": "2024-12-24T14:00:00.000Z",
+            "current": false,
+            "match": null,
+            "show": null,
+            "live": {
+              "_id": "529cff6f6bd2ea6b610000e0",
+              "dvr": true,
+              "type": "video",
+              "purchased": -1,
+              "__typename": "Live"
+            },
+            "__typename": "Schedule"
+          },
+          {
+            "_id": "6763402d863cc2faffa72beb",
+            "name": "Repetición Copa Win Sports Masc Sub 15 (Final)",
+            "date_start": "2024-12-24T14:00:00.000Z",
+            "date_end": "2024-12-24T16:00:00.000Z",
+            "current": false,
+            "match": null,
+            "show": null,
+            "live": {
+              "_id": "529cff6f6bd2ea6b610000e0",
+              "dvr": true,
+              "type": "video",
+              "purchased": -1,
+              "__typename": "Live"
+            },
+            "__typename": "Schedule"
+          },
+          {
+            "_id": "6763404ef696ae58fdb91b9e",
+            "name": "Win Noticias",
+            "date_start": "2024-12-24T16:00:00.000Z",
+            "date_end": "2024-12-24T17:00:00.000Z",
+            "current": false,
+            "match": null,
+            "show": null,
+            "live": {
+              "_id": "529cff6f6bd2ea6b610000e0",
+              "dvr": true,
+              "type": "video",
+              "purchased": -1,
+              "__typename": "Live"
+            },
+            "__typename": "Schedule"
+          },
+          {
+            "_id": "6765cc4c6c5458ca73ebe46f",
+            "name": "Repetición Copa BetPlay Dimayor 2017",
+            "date_start": "2024-12-24T17:00:00.000Z",
+            "date_end": "2024-12-24T19:00:00.000Z",
+            "current": false,
+            "match": null,
+            "show": null,
+            "live": {
+              "_id": "529cff6f6bd2ea6b610000e0",
+              "dvr": true,
+              "type": "video",
+              "purchased": -1,
+              "__typename": "Live"
+            },
+            "__typename": "Schedule"
+          },
+          {
+            "_id": "6765cc681e8e2bc9c8b91b96",
+            "name": "Detrás de la Gloria",
+            "date_start": "2024-12-24T19:00:00.000Z",
+            "date_end": "2024-12-24T20:00:00.000Z",
+            "current": false,
+            "match": null,
+            "show": null,
+            "live": {
+              "_id": "529cff6f6bd2ea6b610000e0",
+              "dvr": true,
+              "type": "video",
+              "purchased": -1,
+              "__typename": "Live"
+            },
+            "__typename": "Schedule"
+          },
+          {
+            "_id": "6765cca85fbec49a96d9735d",
+            "name": "Repetición Torneo BetPlay Dimayor 2024-I (Final Ida)",
+            "date_start": "2024-12-24T20:00:00.000Z",
+            "date_end": "2024-12-24T22:00:00.000Z",
+            "current": false,
+            "match": null,
+            "show": null,
+            "live": {
+              "_id": "529cff6f6bd2ea6b610000e0",
+              "dvr": true,
+              "type": "video",
+              "purchased": -1,
+              "__typename": "Live"
+            },
+            "__typename": "Schedule"
+          },
+          {
+            "_id": "6765ccc8ef60d7ca50bf7f72",
+            "name": "Llaneros Campeón",
+            "date_start": "2024-12-24T22:00:00.000Z",
+            "date_end": "2024-12-24T23:00:00.000Z",
+            "current": false,
+            "match": null,
+            "show": null,
+            "live": {
+              "_id": "529cff6f6bd2ea6b610000e0",
+              "dvr": true,
+              "type": "video",
+              "purchased": -1,
+              "__typename": "Live"
+            },
+            "__typename": "Schedule"
+          },
+          {
+            "_id": "6765cd0d88e8c2fb6532ad9d",
+            "name": "Repetición Torneo BetPlay Dimayor 2024-I (Final Vuelta)",
+            "date_start": "2024-12-24T23:00:00.000Z",
+            "date_end": "2024-12-25T01:00:00.000Z",
+            "current": false,
+            "match": null,
+            "show": null,
+            "live": {
+              "_id": "529cff6f6bd2ea6b610000e0",
+              "dvr": true,
+              "type": "video",
+              "purchased": -1,
+              "__typename": "Live"
+            },
+            "__typename": "Schedule"
+          },
+          {
+            "_id": "6765cd3f7010a15941eee1f7",
+            "name": "Win Noticias",
+            "date_start": "2024-12-25T01:00:00.000Z",
+            "date_end": "2024-12-25T02:00:00.000Z",
+            "current": false,
+            "match": null,
+            "show": null,
+            "live": {
+              "_id": "529cff6f6bd2ea6b610000e0",
+              "dvr": true,
+              "type": "video",
+              "purchased": -1,
+              "__typename": "Live"
+            },
+            "__typename": "Schedule"
+          },
+          {
+            "_id": "6765cd73cf81e69c6f938fb7",
+            "name": "Repetición Programación Win",
+            "date_start": "2024-12-25T02:00:00.000Z",
+            "date_end": "2024-12-25T14:00:00.000Z",
+            "current": false,
+            "match": null,
+            "show": null,
+            "live": {
+              "_id": "529cff6f6bd2ea6b610000e0",
+              "dvr": true,
+              "type": "video",
+              "purchased": -1,
+              "__typename": "Live"
+            },
+            "__typename": "Schedule"
+          },
+          {
+            "_id": "6765cd9690f3e6c93ff24f88",
+            "name": "Repetición Copa Win Sports Fem Sub 13",
+            "date_start": "2024-12-25T14:00:00.000Z",
+            "date_end": "2024-12-25T16:00:00.000Z",
+            "current": false,
+            "match": null,
+            "show": null,
+            "live": {
+              "_id": "529cff6f6bd2ea6b610000e0",
+              "dvr": true,
+              "type": "video",
+              "purchased": -1,
+              "__typename": "Live"
+            },
+            "__typename": "Schedule"
+          },
+          {
+            "_id": "6765cdb9958caf9ad827b698",
+            "name": "Win Noticias",
+            "date_start": "2024-12-25T16:00:00.000Z",
+            "date_end": "2024-12-25T17:00:00.000Z",
+            "current": false,
+            "match": null,
+            "show": null,
+            "live": {
+              "_id": "529cff6f6bd2ea6b610000e0",
+              "dvr": true,
+              "type": "video",
+              "purchased": -1,
+              "__typename": "Live"
+            },
+            "__typename": "Schedule"
+          },
+          {
+            "_id": "6765cdde6c5458ca73ec0bb5",
+            "name": "Repetición Copa BetPlay Dimayor 2018",
+            "date_start": "2024-12-25T17:00:00.000Z",
+            "date_end": "2024-12-25T19:00:00.000Z",
+            "current": false,
+            "match": null,
+            "show": null,
+            "live": {
+              "_id": "529cff6f6bd2ea6b610000e0",
+              "dvr": true,
+              "type": "video",
+              "purchased": -1,
+              "__typename": "Live"
+            },
+            "__typename": "Schedule"
+          },
+          {
+            "_id": "6765cdf63ac862cf29b0948f",
+            "name": "Detrás de la Gloria",
+            "date_start": "2024-12-25T19:00:00.000Z",
+            "date_end": "2024-12-25T20:00:00.000Z",
+            "current": false,
+            "match": null,
+            "show": null,
+            "live": {
+              "_id": "529cff6f6bd2ea6b610000e0",
+              "dvr": true,
+              "type": "video",
+              "purchased": -1,
+              "__typename": "Live"
+            },
+            "__typename": "Schedule"
+          },
+          {
+            "_id": "6765ce19a449f4fa096d669f",
+            "name": "Liga BetPlay Dimayor 2024-I (Final Ida)",
+            "date_start": "2024-12-25T20:00:00.000Z",
+            "date_end": "2024-12-25T22:00:00.000Z",
+            "current": false,
+            "match": null,
+            "show": null,
+            "live": {
+              "_id": "529cff6f6bd2ea6b610000e0",
+              "dvr": true,
+              "type": "video",
+              "purchased": -1,
+              "__typename": "Live"
+            },
+            "__typename": "Schedule"
+          },
+          {
+            "_id": "6765ce3994a83798b6aaab0e",
+            "name": "Bucaramanga Campeón",
+            "date_start": "2024-12-25T22:00:00.000Z",
+            "date_end": "2024-12-25T23:00:00.000Z",
+            "current": false,
+            "match": null,
+            "show": null,
+            "live": {
+              "_id": "529cff6f6bd2ea6b610000e0",
+              "dvr": true,
+              "type": "video",
+              "purchased": -1,
+              "__typename": "Live"
+            },
+            "__typename": "Schedule"
+          }
+        ],
+        "__typename": "Live"
+      },
+      {
+        "_id": "5265a8f3af1ecb9d320000ee",
+        "logo": "https://platform-static.cdn.mdstrm.com/player/logo/s-live-5265a8f3af1ecb9d320000ee.png?c=20241223",
+        "name": "Win Sports",
+        "schedules": [
+          {
+            "_id": "6763030f777e099d5ee2869e",
+            "name": "Saque Largo",
+            "date_start": "2024-12-23T21:00:00.000Z",
+            "date_end": "2024-12-24T00:30:00.000Z",
+            "current": true,
+            "match": null,
+            "show": null,
+            "live": {
+              "_id": "5265a8f3af1ecb9d320000ee",
+              "dvr": true,
+              "type": "video",
+              "purchased": -1,
+              "__typename": "Live"
+            },
+            "__typename": "Schedule"
+          },
+          {
+            "_id": "6769957ef1d3bc4c15c374ad",
+            "name": "Repetición Liga BetPlay Dimayor 2024-II: Nacional vs Tolima (Final Vuelta)",
+            "date_start": "2024-12-24T00:30:00.000Z",
+            "date_end": "2024-12-24T02:30:00.000Z",
+            "current": false,
+            "match": null,
+            "show": null,
+            "live": {
+              "_id": "5265a8f3af1ecb9d320000ee",
+              "dvr": true,
+              "type": "video",
+              "purchased": -1,
+              "__typename": "Live"
+            },
+            "__typename": "Schedule"
+          },
+          {
+            "_id": "676995b4ce095c2598505dab",
+            "name": "Win Noticias",
+            "date_start": "2024-12-24T02:30:00.000Z",
+            "date_end": "2024-12-24T03:30:00.000Z",
+            "current": false,
+            "match": null,
+            "show": null,
+            "live": {
+              "_id": "5265a8f3af1ecb9d320000ee",
+              "dvr": true,
+              "type": "video",
+              "purchased": -1,
+              "__typename": "Live"
+            },
+            "__typename": "Schedule"
+          },
+          {
+            "_id": "67699621857fab2481285bb5",
+            "name": "Repetición Programación Win",
+            "date_start": "2024-12-24T03:30:00.000Z",
+            "date_end": "2024-12-24T14:00:00.000Z",
+            "current": false,
+            "match": null,
+            "show": null,
+            "live": {
+              "_id": "5265a8f3af1ecb9d320000ee",
+              "dvr": true,
+              "type": "video",
+              "purchased": -1,
+              "__typename": "Live"
+            },
+            "__typename": "Schedule"
+          },
+          {
+            "_id": "6769964e7d230225db2f0f78",
+            "name": "Repetición Evento 1995 - 2011",
+            "date_start": "2024-12-24T14:00:00.000Z",
+            "date_end": "2024-12-24T16:00:00.000Z",
+            "current": false,
+            "match": null,
+            "show": null,
+            "live": {
+              "_id": "5265a8f3af1ecb9d320000ee",
+              "dvr": true,
+              "type": "video",
+              "purchased": -1,
+              "__typename": "Live"
+            },
+            "__typename": "Schedule"
+          },
+          {
+            "_id": "67699689bd14cf50b8f0ec65",
+            "name": "Win Noticias",
+            "date_start": "2024-12-24T16:00:00.000Z",
+            "date_end": "2024-12-24T18:00:00.000Z",
+            "current": false,
+            "match": null,
+            "show": null,
+            "live": {
+              "_id": "5265a8f3af1ecb9d320000ee",
+              "dvr": true,
+              "type": "video",
+              "purchased": -1,
+              "__typename": "Live"
+            },
+            "__typename": "Schedule"
+          },
+          {
+            "_id": "676996b8c0036c5606f6b08f",
+            "name": "De Colección FPC",
+            "date_start": "2024-12-24T18:00:00.000Z",
+            "date_end": "2024-12-24T19:00:00.000Z",
+            "current": false,
+            "match": null,
+            "show": null,
+            "live": {
+              "_id": "5265a8f3af1ecb9d320000ee",
+              "dvr": true,
+              "type": "video",
+              "purchased": -1,
+              "__typename": "Live"
+            },
+            "__typename": "Schedule"
+          },
+          {
+            "_id": "676998e3857fab2481289303",
+            "name": "Mejor partido Colombia: Colombia vs. Gran Bretaña",
+            "date_start": "2024-12-24T19:00:00.000Z",
+            "date_end": "2024-12-24T21:00:00.000Z",
+            "current": false,
+            "match": null,
+            "show": null,
+            "live": {
+              "_id": "5265a8f3af1ecb9d320000ee",
+              "dvr": true,
+              "type": "video",
+              "purchased": -1,
+              "__typename": "Live"
+            },
+            "__typename": "Schedule"
+          },
+          {
+            "_id": "67699907149eb85649e1694b",
+            "name": "Mejor partido Colombia: Colombia vs. Italia",
+            "date_start": "2024-12-24T21:00:00.000Z",
+            "date_end": "2024-12-24T23:00:00.000Z",
+            "current": false,
+            "match": null,
+            "show": null,
+            "live": {
+              "_id": "5265a8f3af1ecb9d320000ee",
+              "dvr": true,
+              "type": "video",
+              "purchased": -1,
+              "__typename": "Live"
+            },
+            "__typename": "Schedule"
+          },
+          {
+            "_id": "6769993e07024c257874e517",
+            "name": "Creyentes: Siempre Adelante, ni un paso atrás",
+            "date_start": "2024-12-24T23:00:00.000Z",
+            "date_end": "2024-12-25T00:00:00.000Z",
+            "current": false,
+            "match": null,
+            "show": null,
+            "live": {
+              "_id": "5265a8f3af1ecb9d320000ee",
+              "dvr": true,
+              "type": "video",
+              "purchased": -1,
+              "__typename": "Live"
+            },
+            "__typename": "Schedule"
+          },
+          {
+            "_id": "676999729f609656290acf12",
+            "name": "Repetición Liga Betplay Dimayor 2024-I: Bucaramanga vs. Sata Fe",
+            "date_start": "2024-12-25T00:00:00.000Z",
+            "date_end": "2024-12-25T02:00:00.000Z",
+            "current": false,
+            "match": null,
+            "show": null,
+            "live": {
+              "_id": "5265a8f3af1ecb9d320000ee",
+              "dvr": true,
+              "type": "video",
+              "purchased": -1,
+              "__typename": "Live"
+            },
+            "__typename": "Schedule"
+          },
+          {
+            "_id": "676999918d38e9b76a940868",
+            "name": "Bucaramanga Campeón",
+            "date_start": "2024-12-25T02:00:00.000Z",
+            "date_end": "2024-12-25T03:00:00.000Z",
+            "current": false,
+            "match": null,
+            "show": null,
+            "live": {
+              "_id": "5265a8f3af1ecb9d320000ee",
+              "dvr": true,
+              "type": "video",
+              "purchased": -1,
+              "__typename": "Live"
+            },
+            "__typename": "Schedule"
+          },
+          {
+            "_id": "676999b5076f85b69b3593f5",
+            "name": "Repetición Programación Win",
+            "date_start": "2024-12-25T03:00:00.000Z",
+            "date_end": "2024-12-25T16:00:00.000Z",
+            "current": false,
+            "match": null,
+            "show": null,
+            "live": {
+              "_id": "5265a8f3af1ecb9d320000ee",
+              "dvr": true,
+              "type": "video",
+              "purchased": -1,
+              "__typename": "Live"
+            },
+            "__typename": "Schedule"
+          }
+        ],
+        "__typename": "Live"
+      },
+      {
+        "_id": "66bcd350d222a8a780862ec3",
+        "logo": "https://ott-assets.mdstrm.com/526590f532b8fca13200005c/66563a476780f218bb74c7cc/assets/Logo_Play.png",
+        "name": "Liga BetPlay de Baloncesto 2024 - II",
+        "schedules": [],
+        "__typename": "Live"
+      },
+      {
+        "_id": "64627247f7aaba0882296a20",
+        "logo": "https://ott-assets.mdstrm.com/526590f532b8fca13200005c/66563a476780f218bb74c7cc/assets/Logo_Play.png",
+        "name": "Señal Backup final Win básica",
+        "schedules": [],
+        "__typename": "Live"
+      },
+      {
+        "_id": "627c589eafdeb0082d4ea3de",
+        "logo": "https://ott-assets.mdstrm.com/526590f532b8fca13200005c/66563a476780f218bb74c7cc/assets/Logo_Play.png",
+        "name": "Rueda prensa FMS",
+        "schedules": [],
+        "__typename": "Live"
+      },
+      {
+        "_id": "61c3c92309dce808f216d778",
+        "logo": "https://ott-assets.mdstrm.com/526590f532b8fca13200005c/66563a476780f218bb74c7cc/assets/Logo_Play.png",
+        "name": "Liga BetPlay Dimayor 2024 - II: Pereira vs. Equidad",
+        "schedules": [],
+        "__typename": "Live"
+      },
+      {
+        "_id": "627c5650637d89088290fedf",
+        "logo": "https://ott-assets.mdstrm.com/526590f532b8fca13200005c/66563a476780f218bb74c7cc/assets/Logo_Play.png",
+        "name": "Premier 12",
+        "schedules": [],
+        "__typename": "Live"
+      },
+      {
+        "_id": "66195b77c7c13360bdaed72f",
+        "logo": "https://ott-assets.mdstrm.com/526590f532b8fca13200005c/66563a476780f218bb74c7cc/assets/Logo_Play.png",
+        "name": "Liga BetPlay de Baloncesto 2024 - II",
+        "schedules": [],
+        "__typename": "Live"
+      },
+      {
+        "_id": "662bd720450e3008a5f385d2",
+        "logo": "https://ott-assets.mdstrm.com/526590f532b8fca13200005c/66563a476780f218bb74c7cc/assets/Logo_Play.png",
+        "name": "Liga BetPlay Dimayor 2024 - II: Fortaleza vs. Águilas Doradas",
+        "schedules": [],
+        "__typename": "Live"
+      },
+      {
+        "_id": "66bcd3855e7418050351d810",
+        "logo": "https://ott-assets.mdstrm.com/526590f532b8fca13200005c/66563a476780f218bb74c7cc/assets/Logo_Play.png",
+        "name": "Liga BetPlay Dimayor 2024 - II: Alianza vs. Bucaramanga",
+        "schedules": [],
+        "__typename": "Live"
+      }
+    ]
+  }
+}

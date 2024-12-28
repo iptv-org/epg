@@ -1,0 +1,67 @@
+{
+  "playbilllist": [
+    {
+      "id": "39328203",
+      "name": "Twenty Foot Plus",
+      "introduce": "Die besten Big-Wave-Surfer werden bei ihrer Suche nach der nächsten großen Welle begleitet.",
+      "channelid": "5027",
+      "starttime": "2023-10-23 23:58:55 UTC+00:00",
+      "endtime": "2023-10-24 00:11:05 UTC+00:00",
+      "genres": "Sport",
+      "pictures": [
+        {
+          "rel": "image",
+          "href": "http://ngiss.t-online.de/cm1s/media/gracenote/2/4/p24832950_e_h9_aa_2023-06-22T10_12_01.jpg",
+          "imageType": "1",
+          "mimeType": "image/jpeg",
+          "resolution": ["1440", "1080"]
+        }
+      ]
+    },
+    {
+      "id": "45113316",
+      "name": "The Big Bang Theory",
+      "introduce": "Amy arbeitet für eine Weile in Sheldons Universität, er freut sich darüber, doch sie warnt ihn, dass sie sich jetzt häufiger zu Gesicht bekommen. Als Leonard, Sheldon, Raj und Howard zusammen sitzen, diskutieren sie darüber. Sheldon lässt auf sich einreden und informiert Amy, dass er ein Problem mit ihr auf seiner Arbeit hat. Sie ist enttäuscht, während Bernadette mit Howard darüber spricht, warum er auf Sheldon eingeredet hat.",
+      "channelid": "374",
+      "starttime": "2024-11-05 15:37:03 UTC+01:00",
+      "endtime": "2024-11-05 16:03:48 UTC+01:00",
+      "cast": {
+        "actor": "Johnny Galecki,Jim Parsons,Kaley Cuoco,Simon Helberg,Kunal Nayyar,Mayim Bialik,Melissa Rauch,Todd Eric Andrews,Ayumi Iizuka",
+        "director": "Mark Cendrowski",
+        "producer": "Chuck Lorre,Bill Prady,Steven Molaro",
+        "adaptor": "Steven Molaro,Steve Holland,Maria Ferrari,Chuck Lorre,Eric Kaplan,Jim Reynolds"
+      },
+      "subName": "Tritte unter dem Tisch",
+      "subNum": "5",
+      "genres": "Sitcom",
+      "seasonNum": "7",
+      "country": "us",
+      "producedate": "2013-01-01",
+      "externalIds": "[{\"id\":\"tt0898266\",\"type\":\"imdb\"},{\"id\":\"EP019370140103\",\"type\":\"gnProgram\"},{\"id\":\"615:1:45137\",\"type\":\"dvbEventTriplet\"}]",
+      "pictures": [
+        {
+          "rel": "image",
+          "href": "http://ngiss.t-online.de/cm1s/media/gracenote/1/0/p10262968_e_h9_ah_2021-10-20T07_16_16.jpg",
+          "imageType": "1",
+          "copyrightNotice": "(c) ProSiebenSat.1",
+          "mimeType": "image/jpeg",
+          "resolution": [
+            "1440",
+            "1080"
+          ]
+        },
+        {
+          "rel": "image",
+          "href": "http://ngiss.t-online.de/cm1s/media/gracenote/1/0/p10262968_e_h10_ac_2021-10-20T07_07_06.jpg",
+          "imageType": "17",
+          "copyrightNotice": "(c) ProSiebenSat.1",
+          "mimeType": "image/jpeg",
+          "resolution": [
+            "1920",
+            "1080"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,4 +1,20 @@
-const { parser, url, request, fetchApiVersion, apiVersion } = require('./pickx.be.config.js')
+jest.mock('./pickx.be.config.js', () => {
+  const originalModule = jest.requireActual('./pickx.be.config.js')
+  return {
+    ...originalModule,
+    fetchApiVersion: jest.fn(() => Promise.resolve())
+  }
+})
+
+const {
+  parser,
+  url,
+  request,
+  fetchApiVersion,
+  setApiVersion,
+  getApiVersion
+} = require('./pickx.be.config.js')
+
 const fs = require('fs')
 const path = require('path')
 const dayjs = require('dayjs')
@@ -13,12 +29,14 @@ const channel = {
   xmltv_id: 'Vedia.be'
 }
 
+beforeEach(() => {
+  setApiVersion('mockedApiVersion')
+})
+
 it('can generate valid url', async () => {
-  await fetchApiVersion()
   const generatedUrl = await url({ channel, date })
-  const resolvedApiVersion = apiVersion()
   expect(generatedUrl).toBe(
-    `https://px-epg.azureedge.net/airings/${resolvedApiVersion}/2023-12-13/channel/UID0118?timezone=Europe%2FBrussels`
+    `https://px-epg.azureedge.net/airings/mockedApiVersion/2023-12-13/channel/UID0118?timezone=Europe%2FBrussels`
   )
 })
 

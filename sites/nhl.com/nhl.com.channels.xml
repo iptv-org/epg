@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<channels>
+  <!--
+    `site_id` is not relevant for this configuration as nhl.com only has a guide for one channel.
+    nonetheless I elected to use "network" here because:
+    1) a blank value causes the record to be skipped
+    2) "network" is a keyword in the API endpoint
+  -->
+  <channel site="nhl.com" lang="en" xmltv_id="NHLNetwork.us" site_id="network">NHL Network</channel>
+</channels>

@@ -9,7 +9,7 @@ dayjs.extend(utc)
 
 const date = dayjs.utc('2022-10-29', 'YYYY-MM-DD').startOf('d')
 const channel = {
-  site_id: 'default_builtin_channelgroup1#yle-tv1',
+  site_id: '1#yle-tv1',
   xmltv_id: 'YleTV1.fi'
 }
 

@@ -3,29 +3,22 @@ const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 
 let apiVersion
-let isApiVersionFetched = false
-
-;(async () => {
-  try {
-    await fetchApiVersion()
-    isApiVersionFetched = true
-  } catch (error) {
-    console.error('Error during script initialization:', error)
-  }
-})()
 
 dayjs.extend(utc)
 
 module.exports = {
   site: 'pickx.be',
   days: 2,
-  apiVersion: function () {
+  setApiVersion: function (version) {
+    apiVersion = version
+  },
+  getApiVersion: function () {
     return apiVersion
   },
-  fetchApiVersion: fetchApiVersion, // Export fetchApiVersion
+  fetchApiVersion: fetchApiVersion,
   url: async function ({ channel, date }) {
-    while (!isApiVersionFetched) {
-      await new Promise(resolve => setTimeout(resolve, 100)) // Wait for 100 milliseconds
+    if (!apiVersion) {
+      await fetchApiVersion()
     }
     return `https://px-epg.azureedge.net/airings/${apiVersion}/${date.format(
       'YYYY-MM-DD'
@@ -116,7 +109,7 @@ module.exports = {
         }`
     }
     const result = await axios
-      .post('https://api.proximusmwc.be/tiams/v2/graphql', query)
+      .post('https://api.proximusmwc.be/tiams/v3/graphql', query)
       .then(r => r.data)
       .catch(console.error)
 
@@ -139,21 +132,26 @@ module.exports = {
 function fetchApiVersion() {
   return new Promise(async (resolve, reject) => {
     try {
-      // https://px-epg.azureedge.net/version is deprecated
-      // probably the version url will be changed around over time
+      // you'll never find what happened here :)
+      // load the pickx page and get the hash from the MWC configuration.
+      // it's not the best way to get the version but it's the only way to get it.
 
-      //history of used version urls
-      //const versionUrl = 'https://www.pickx.be/api/s-3b36540f3cef64510112f3f95c2c0cdca321997ed2b1042ad778523235e155eb'
-      //const versionUrl = 'https://www.pickx.be/api/s-671f172425e1bc74cd0440fd67aaa6cbe68b582f3f401186c2f46ae97e80516b'
-      //const versionUrl = 'https://www.pickx.be/api/s-a6b4b4fefaa20e438523a6167e63b8504d96b9df8303473349763c4418cffe30'
-      //const versionUrl = 'https://www.pickx.be/api/s-8546c5fd136241d42aab714d2fe3ccc5671fd899035efae07cd0b8f4eb23994e'
-      //const versionUrl = 'https://www.pickx.be/api/s-64464ad9a3bc117af5dca620027216ecade6a51c230135a0f134c0ee042ff407';
-      //const versionUrl = 'https://www.pickx.be/api/s-626d8fdabfb1d44e5a614cd69f4b45d6843fdb63566fc80ea4f97f40e4ea3152';
-      //the new strategy to break the provider is to leave old version url's available and to return invalid results on those endpoints
+      const hashUrl = 'https://www.pickx.be/nl/televisie/tv-gids';
 
-      const versionUrl =
-        'https://www.pickx.be//api/s-cefaf96e249e53648c4895c279e7a621233c50b4357d62b0bdf6bff45f31b5c0'
+      const hashData = await axios.get(hashUrl)
+      .then(r => {
+        const re = /"hashes":\["(.*)"\]/
+        const match = r.data.match(re)
+        if (match && match[1]) {
+          return match[1]
+        } else {
+          throw new Error('React app version hash not found')
+        }
+      })
+      .catch(console.error);
 
+      const versionUrl = `https://www.pickx.be/api/s-${hashData}`
+   
       const response = await axios.get(versionUrl, {
         headers: {
           Origin: 'https://www.pickx.be',
@@ -169,7 +167,7 @@ function fetchApiVersion() {
         reject(`Failed to fetch API version. Status: ${response.status}`)
       }
     } catch (error) {
-      console.error('Error fetching API version:', error.message)
+      console.error('Error during fetchApiVersion:', error)
       reject(error)
     }
   })

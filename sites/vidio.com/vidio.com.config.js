@@ -1,5 +1,14 @@
 const cheerio = require('cheerio')
-const { DateTime } = require('luxon')
+const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
+const customParseFormat = require('dayjs/plugin/customParseFormat')
+
+dayjs.extend(utc)
+dayjs.extend(timezone)
+dayjs.extend(customParseFormat)
+
+const tz = 'Asia/Jakarta'
 
 module.exports = {
   site: 'vidio.com',
@@ -15,12 +24,12 @@ module.exports = {
       const $item = cheerio.load(item)
       let start = parseStart($item, date)
       if (prev && start < prev.start) {
-        start = start.plus({ days: 1 })
+        start = start.add(1, 'd')
         date = date.add(1, 'd')
       }
       let stop = parseStop($item, date)
       if (stop < start) {
-        stop = stop.plus({ days: 1 })
+        stop = stop.add(1, 'd')
         date = date.add(1, 'd')
       }
       programs.push({
@@ -36,44 +45,56 @@ module.exports = {
     const axios = require('axios')
     const cheerio = require('cheerio')
     const result = await axios
-      .get('https://www.vidio.com/categories/276-daftar-channel-tv-radio-live-sports')
+      .get('https://www.vidio.com/categories/daftar-channel-tv-radio-live-sports')
       .then(response => response.data)
       .catch(console.error)
 
     const $ = cheerio.load(result)
-    const items = $('.home-content a').toArray()
+    const itemGroups = $('div[data-variation="circle_horizontal"] ul').toArray()
     const channels = []
-    items.forEach(item => {
-      const $item = $(item)
 
-      const name = $item.find('p').text()
-      if (name.toUpperCase().indexOf('FM') < 0 && name.toUpperCase().indexOf('RADIO') < 0) {
-        channels.push({
+    itemGroups.forEach(group => {
+      const $group = $(group)
+      let skip = false
+      const sites = []
+      const items = $group.find('a[data-testid="circle-card"]').toArray()
+      items.forEach(item => {
+        const name = $(item).find('span[data-testid="circle-title"]').text()
+        // skip radio channels
+        if (name.toLowerCase().indexOf('fm') >= 0 || name.toLowerCase().indexOf('radio') >= 0) {
+          skip = true
+          return true
+        }
+        let url = $(item).attr('href')
+        url = url.substr(url.lastIndexOf('/') + 1)
+        const matches = url.match(/(\d+)/)
+        sites.push({
           lang: 'id',
-          site_id: $item.attr('href').substr($item.attr('href').lastIndexOf('/') + 1).split('-')[0],
-          name
+          site_id: matches[0],
+          name: name
         })
+      })
+      if (!skip && sites.length) {
+        channels.push(...sites)
       }
     })
 
     return channels
-  }  
+  }
 }
 
 function parseStart($item, date) {
   const timeString = $item('div.b-livestreaming-daily-schedule__item-content-caption').text()
   const [, start] = timeString.match(/(\d{2}:\d{2}) -/) || [null, null]
-  const dateString = `${date.format('YYYY-MM-DD')} ${start}`
 
-  return DateTime.fromFormat(dateString, 'yyyy-MM-dd HH:mm', { zone: 'Asia/Jakarta' }).toUTC()
+  return dayjs.tz(`${date.format('YYYY-MM-DD')} ${start}`, 'YYYY-MM-DD HH:mm', tz)
 }
 
 function parseStop($item, date) {
   const timeString = $item('div.b-livestreaming-daily-schedule__item-content-caption').text()
   const [, stop] = timeString.match(/- (\d{2}:\d{2}) WIB/) || [null, null]
-  const dateString = `${date.format('YYYY-MM-DD')} ${stop}`
 
-  return DateTime.fromFormat(dateString, 'yyyy-MM-dd HH:mm', { zone: 'Asia/Jakarta' }).toUTC()
+  return dayjs.tz(`${date.format('YYYY-MM-DD')} ${stop}`, 'YYYY-MM-DD HH:mm', tz)
 }
 
 function parseTitle($item) {

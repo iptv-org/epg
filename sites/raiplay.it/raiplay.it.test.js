@@ -1,4 +1,4 @@
-// npm run grab -- --site=raiplay.it
+// npm run grab --- --site=raiplay.it
 
 const { parser, url } = require('./raiplay.it.config.js')
 const dayjs = require('dayjs')
