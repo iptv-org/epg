@@ -1,138 +1,114 @@
-const axios = require('axios')
 const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const doFetch = require('@ntlab/sfetch')
+const debug = require('debug')('site:ziggogo.tv')
 
-const API_ENDPOINT = 'https://static.spark.ziggogo.tv/eng/web/epg-service-lite'
+dayjs.extend(utc)
+
+doFetch.setDebugger(debug)
+
+const detailedGuide = true
 
 module.exports = {
   site: 'ziggogo.tv',
   days: 2,
   request: {
     cache: {
-      ttl: 60 * 60 * 1000 // 1 hour
+      ttl: 24 * 60 * 60 * 1000 // 1 day
     }
   },
-  url: function ({ date }) {
-    return `${API_ENDPOINT}/nl/en/events/segments/${date.format('YYYYMMDDHHmmss')}`
+  url({ date, segment = 0 }) {
+    return `https://static.spark.ziggogo.tv/eng/web/epg-service-lite/nl/en/events/segments/${
+      date.format('YYYYMMDD')
+    }${
+      segment.toString().padStart(2, '0')
+    }0000`
   },
   async parser({ content, channel, date }) {
-    let programs = []
-    let items = parseItems(content, channel)
-    if (!items.length) return programs
-    const promises = [
-      axios.get(
-        `${API_ENDPOINT}/nl/en/events/segments/${date.add(6, 'h').format('YYYYMMDDHHmmss')}`,
-        {
-          responseType: 'arraybuffer'
-        }
-      ),
-      axios.get(
-        `${API_ENDPOINT}/nl/en/events/segments/${date.add(12, 'h').format('YYYYMMDDHHmmss')}`,
-        {
-          responseType: 'arraybuffer'
-        }
-      ),
-      axios.get(
-        `${API_ENDPOINT}/nl/en/events/segments/${date.add(18, 'h').format('YYYYMMDDHHmmss')}`,
-        {
-          responseType: 'arraybuffer'
-        }
-      )
-    ]
-
-    await Promise.allSettled(promises)
-      .then(results => {
-        results.forEach(r => {
-          if (r.status === 'fulfilled') {
-            const parsed = parseItems(r.value.data, channel)
-
-            items = items.concat(parsed)
+    const programs = []
+    if (content) {
+      const items = typeof content === 'string' ? JSON.parse(content) : content
+      if (Array.isArray(items.entries)) {
+        // fetch other segments
+        const queues = [
+          module.exports.url({ date, segment: 6}),
+          module.exports.url({ date, segment: 12}),
+          module.exports.url({ date, segment: 18}),
+        ]
+        await doFetch(queues, (url, res) => {
+          if (Array.isArray(res.entries)) {
+            items.entries.push(...res.entries)
           }
         })
-      })
-      .catch(console.error)
-
-    for (let item of items) {
-      const detail = await loadProgramDetails(item)
-      programs.push({
-        title: item.title,
-        description: detail.longDescription,
-        category: detail.genres,
-        actors: detail.actors,
-        season: parseSeason(detail),
-        episode: parseEpisode(detail),
-        start: parseStart(item),
-        stop: parseStop(item)
-      })
+        items.entries
+          .filter(item => item.channelId === channel.site_id)
+          .forEach(item => {
+            if (Array.isArray(item.events)){
+              if (detailedGuide) {
+                queues.push(...item.events
+                  .map(event =>
+                    `https://spark-prod-nl.gnp.cloud.ziggogo.tv/eng/web/linear-service/v2/replayEvent/${
+                      event.id
+                    }?returnLinearContent=true&forceLinearResponse=true&language=nl`
+                  )
+                )
+              } else {
+                item.events.forEach(event => {
+                  programs.push({
+                    title: event.title,
+                    start: dayjs.utc(event.startTime * 1000),
+                    stop: dayjs.utc(event.endTime * 1000)
+                  })
+                })
+              }
+            }
+          })
+        // fetch detailed guide
+        if (queues.length) {
+          await doFetch(queues, (url, res) => {
+            programs.push({
+              title: res.title,
+              subTitle: res.episodeName,
+              description: res.longDescription ? res.longDescription : res.shortDescription,
+              category: res.genres,
+              season: res.seasonNumber,
+              episode: res.episodeNumber,
+              country: res.countryOfOrigin,
+              actor: res.actors,
+              director: res.directors,
+              producer: res.producers,
+              date: res.productionDate,
+              start: dayjs.utc(res.startTime * 1000),
+              stop: dayjs.utc(res.endTime * 1000)
+            })
+          })
+        }
+      }
     }
 
     return programs
   },
   async channels() {
-    const data = await axios
-      .get(
-        'https://spark-prod-nl.gnp.cloud.ziggogo.tv/eng/web/linear-service/v2/channels?cityId=65535&language=en&productClass=Orion-DASH'
-      )
+    const channels = []
+    const axios = require('axios')
+    const res = await axios
+      .get('https://spark-prod-nl.gnp.cloud.ziggogo.tv/eng/web/linear-service/v2/channels?cityId=65535&language=en&productClass=Orion-DASH&platform=web')
       .then(r => r.data)
-      .catch(console.log)
+      .catch(console.error)
 
-    return data.map(item => {
-      return {
-        lang: 'nl',
-        site_id: item.id,
-        name: item.name
-      }
-    })
-  }
-}
-
-async function loadProgramDetails(event) {
-  if (!event || !event.id) {
-    console.log("Invalid event object:", event)
-    return {}
-  }
-  
-  try {
-    const response = await fetch(`https://spark-prod-nl.gnp.cloud.ziggogo.tv/eng/web/linear-service/v2/replayEvent/${event.id}?returnLinearContent=true&language=nl`)
-    const data = await response.json()
-    
-    if (data && typeof data === 'object' && Object.keys(data).length > 0) {
-      return data
-    } else {
-      console.log("No data in response")
-      return {}
+    if (Array.isArray(res)) {
+      channels.push(...res
+        .filter(item => !item.isHidden)
+        .map(item => {
+          return {
+            lang: 'nl',
+            site_id: item.id,
+            name: item.name
+          }
+        })
+      )
     }
-  } catch (error) {
-    console.log("Error fetching data:", error)
-    return {}
+
+    return channels
   }
-}
-
-function parseStart(item) {
-  return dayjs.unix(item.startTime)
-}
-
-function parseStop(item) {
-  return dayjs.unix(item.endTime)
-}
-
-function parseItems(content, channel) {
-  if (!content) return []
-  const data = JSON.parse(content)
-  if (!data || !Array.isArray(data.entries)) return []
-  const channelData = data.entries.find(e => e.channelId === channel.site_id)
-  if (!channelData) return []
-
-  return Array.isArray(channelData.events) ? channelData.events : []
-}
-
-function parseSeason(detail) {
-  if (!detail.seasonNumber) return null
-  if (String(detail.seasonNumber).length > 2) return null
-  return detail.seasonNumber
-}
-
-function parseEpisode(detail) {
-  if (!detail.episodeNumber) return null
-  if (String(detail.episodeNumber).length > 3) return null
-  return detail.episodeNumber
 }
