@@ -17,7 +17,7 @@ const channel = {
 it('can generate valid url', () => {
   const url = config.url({ date, channel });
   expect(url).toBe(
-    'https://api.pluto.tv/v2/channels/5ee92e72fb286e0007285fec?start=2024-12-27T00:00:00.000Z&stop=2024-12-29T23:59:59.999Z'
+    'https://api.pluto.tv/v2/channels/5ee92e72fb286e0007285fec?start=2024-12-28T00:00:00.000Z&stop=2024-12-29T23:59:59.999Z'
   );
 });
 
