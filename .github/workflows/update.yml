@@ -25,13 +25,24 @@ jobs:
       - uses: actions/setup-node@v3
         if: ${{ !env.ACT }}
         with:
-          node-version: 18
+          node-version: 22
           cache: 'npm'
       - name: install dependencies
         run: npm install
       - name: check *.channels.xml
         run: |
           npm run channels:lint
+      - name: update sites.md
+        run: npm run sites:update
+      - run: git status
+      - name: commit changes to sites.md
+        run: |
+          git add SITES.md
+          git status
+          git commit --allow-empty -m "[Bot] Update SITES.md" -m "Committed by [iptv-bot](https://github.com/apps/iptv-bot) via [update](https://github.com/iptv-org/epg/actions/runs/${{ github.run_id }}) workflow." --no-verify
+      - name: push all changes to the repository
+        if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
+        run: git push
       - name: generate .api/guides.json
         run: npm run api:generate
       - run: git status
