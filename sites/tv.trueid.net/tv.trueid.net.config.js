@@ -1,14 +1,31 @@
+const cheerio = require('cheerio')
+const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
+const customParseFormat = require('dayjs/plugin/customParseFormat')
+const debug = require('debug')('site:tv.trueid.net')
 
 dayjs.extend(utc)
+dayjs.extend(customParseFormat)
+
+const channelsUrl = 'https://tv.trueid.net/th-th'
 
 module.exports = {
   delay: 1000,
   site: 'tv.trueid.net',
-  days: 1,
-  url({ channel }) {
-    return `https://tv.trueid.net/_next/data/1380644e0f1fb6b14c82894a0c682d147e015c9d/th-${channel.lang}.json?channelSlug=${channel.site_id}&path=${channel.site_id}`
+  days: 2,
+  request: {
+    cache: {
+      ttl: 24 * 60 * 60 * 1000 // 1 day
+    }
+  },
+  async url({ channel }) {
+    if (module.exports.buildId === undefined) {
+      module.exports.buildId = await module.exports.fetchBuildId()
+      debug('Got build id', module.exports.buildId)
+    }
+    const channelId = channel.site_id.replace('/', '--')
+    return `https://tv.trueid.net/_next/data/${module.exports.buildId}/th-${channel.lang}.json?channelSlug=${channel.site_id}&path=${channel.site_id}`
   },
   parser({ content, channel }) {
     const programs = []
@@ -28,7 +45,7 @@ module.exports = {
     const axios = require('axios')
     const ACCESS_TOKEN = token
       ? token
-      : 'MTM4MDY0NGUwZjFmYjZiMTRjODI4OTRhMGM2ODJkMTQ3ZTAxNWM5ZDoxZmI2YjE0YzgyODk0YTBjNjgyZDE0N2UwMTVjOWQ='
+      : 'OWQxMzQ0MWJmMmY4N2ZlNjgwZDYyYzUwODQ1ZjEwMzc2MzI4NTVhMzpmODdmZTY4MGQ2MmM1MDg0NWYxMDM3NjMyODU1YTM='
 
     const data = await axios
       .get(`https://tv.trueid.net/api/channel/getChannelListByAllCate?lang=${lang}&country=th`, {
@@ -48,6 +65,20 @@ module.exports = {
           name: item.title
         }
       })
+  },
+  async fetchBuildId() {
+    const data = await axios
+      .get(channelsUrl)
+      .then(r => r.data)
+      .catch(console.error)
+
+    if (data) {
+      const $ = cheerio.load(data)
+      const nextData = JSON.parse($('#__NEXT_DATA__').text())
+      return nextData?.buildId || null
+    } else {
+      return null
+    }
   }
 }
 
