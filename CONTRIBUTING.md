@@ -154,6 +154,7 @@ To run scripts use the `npm run <script-name>` command.
 - `channels:parse`: generates a list of channels based on the site configuration.
 - `channels:editor`: utility for quick channels markup.
 - `channels:validate`: checks the description of channels for errors.
+- `sites:update`: updates the list of sites and their status in [SITES.md](SITES.md).
 - `grab`: downloads a program from a specified source.
 - `serve`: starts the [web server](https://github.com/vercel/serve).
 - `lint`: сhecks the scripts for syntax errors.
