@@ -9,7 +9,7 @@ const API_CHANNEL_ENDPOINT = 'https://pc.orangetv.orange.es/pc/api/rtv/v1/GetCha
 const API_IMAGE_ENDPOINT = 'https://pc.orangetv.orange.es/pc/api/rtv/v1/images'
 
 module.exports = {
-  site: 'orangetv.es',
+  site: 'orangetv.orange.es',
   days: 2,
   request: {
     cache: {

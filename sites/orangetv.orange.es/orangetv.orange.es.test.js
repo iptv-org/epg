@@ -1,4 +1,4 @@
-const { parser, url } = require('./orangetv.es.config.js')
+const { parser, url } = require('./orangetv.orange.es.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
