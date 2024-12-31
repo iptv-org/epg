@@ -1,22 +1,30 @@
-const dayjs = require('dayjs');
-const axios = require('axios');
+const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
+const axios = require('axios')
+
+dayjs.extend(utc)
+dayjs.extend(timezone)
 
 module.exports = {
   site: 'pluto.tv',
-  days: 2,
+  days: 3,
 
   url: function ({ date, channel }) {
-    const channelId = channel.site_id;
-    const startTime = dayjs.utc(date).startOf('day').toISOString();
-    const endTime = dayjs.utc(date).add(this.days - 1, 'day').endOf('day').toISOString();
+    const channelId = channel.site_id
 
-    const generatedUrl = `https://api.pluto.tv/v2/channels/${channelId}?start=${startTime}&stop=${endTime}`;
-    return generatedUrl;
+    const localTimezone = dayjs.tz.guess()
+
+    const startTime = dayjs(date).tz(localTimezone).startOf('day').toISOString()
+    const endTime = dayjs(date).tz(localTimezone).add(this.days, 'day').endOf('day').toISOString()
+
+    const generatedUrl = `https://api.pluto.tv/v2/channels/${channelId}?start=${startTime}&stop=${endTime}`
+    return generatedUrl
   },
 
   parser: function ({ content }) {
-    const data = JSON.parse(content);
-    const programs = [];
+    const data = JSON.parse(content)
+    const programs = []
 
     if (data.timelines) {
       data.timelines.forEach(item => {
@@ -33,10 +41,10 @@ module.exports = {
           icon: item.episode?.series?.tile?.path || '',
           start: item.start,
           stop: item.stop
-        });
-      });
+        })
+      })
     }
 
-    return programs;
+    return programs
   }
-};
+}
