@@ -1,4 +1,4 @@
-module.exports = [
+export default [
   {
     url: 'https://api.github.com/repos/iptv-org/epg/issues/2543',
     repository_url: 'https://api.github.com/repos/iptv-org/epg',
