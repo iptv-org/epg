@@ -21,7 +21,6 @@ jobs:
             tests/**/*.{js,ts}
             scripts/**/*.{js,ts}
             sites/**/*.{js,ts}
-      - run: echo ${{ steps.files.outputs.all_changed_files }}
       - uses: actions/setup-node@v4
         if: ${{ !env.ACT && steps.files.outputs.any_changed == 'true' }}
         with:
