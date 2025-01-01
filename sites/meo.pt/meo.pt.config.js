@@ -40,7 +40,7 @@ module.exports = {
   async channels() {
     const axios = require('axios')
     const data = await axios
-      .post(`https://authservice.apps.meo.pt/Services/GridTv/GridTvMng.svc/getGridAnon`, null, {
+      .post('https://authservice.apps.meo.pt/Services/GridTv/GridTvMng.svc/getGridAnon', null, {
         headers: {
           Origin: 'https://www.meo.pt'
         }

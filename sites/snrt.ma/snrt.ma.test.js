@@ -1,6 +1,4 @@
 const { parser, url } = require('./snrt.ma.config.js')
-const cheerio = require('cheerio')
-const { DateTime } = require('luxon')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
@@ -25,15 +23,13 @@ it('can parse response', () => {
   })
 
   expect(results[0]).toMatchObject({
-    "category": "القرآن الكريم",
-    "description": "",
-    "start": "2024-12-19T06:00:00.000Z",
-    "stop": "2024-12-19T06:10:00.000Z",
-    "stop": "2024-12-19T06:30:00.000Z",
-    "title": "ﺍﻟﺴﻼﻡ ﺍﻟﻮﻃﻨﻲ + ﺍﻟﻘﺮﺁﻥ ﺍﻟﻜﺮﻳﻢ"
+    category: 'القرآن الكريم',
+    description: '',
+    start: '2024-12-19T06:00:00.000Z',
+    stop: '2024-12-19T06:30:00.000Z',
+    title: 'ﺍﻟﺴﻼﻡ ﺍﻟﻮﻃﻨﻲ + ﺍﻟﻘﺮﺁﻥ ﺍﻟﻜﺮﻳﻢ'
   })
 })
-
 
 it('can handle empty guide', () => {
   const result = parser({

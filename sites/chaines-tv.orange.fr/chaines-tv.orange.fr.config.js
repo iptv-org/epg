@@ -29,7 +29,7 @@ module.exports = {
   },
   async channels() {
     const html = await axios
-      .get(`https://chaines-tv.orange.fr/programme-tv?filtres=all`)
+      .get('https://chaines-tv.orange.fr/programme-tv?filtres=all')
       .then(r => r.data)
       .catch(console.log)
 

@@ -87,9 +87,7 @@ const content = `<?xml version="1.0" encoding="UTF-8" ?>
 </ProgramGuide>`
 
 it('can generate valid url', () => {
-  expect(url({ channel, date })).toBe(
-    'https://epg-file.hoy.tv/hoy/OTT7620240913.xml'
-  )
+  expect(url({ channel, date })).toBe('https://epg-file.hoy.tv/hoy/OTT7620240913.xml')
 })
 
 it('can parse response', () => {
@@ -104,13 +102,14 @@ it('can parse response', () => {
       start: '2024-09-13T03:30:00.000Z',
       stop: '2024-09-13T04:30:00.000Z',
       title: '點講都係一家人[PG]',
-      sub_title: '第46集',
+      sub_title: '第46集'
     },
     {
       start: '2024-09-13T04:30:00.000Z',
       stop: '2024-09-13T05:30:00.000Z',
       title: '麝香之路',
-      description: 'Ep. 2 .The Secret of disappeared kingdom.shows the mysterious disappearance of the ancient Tibetan kingdom which gained world',
+      description:
+        'Ep. 2 .The Secret of disappeared kingdom.shows the mysterious disappearance of the ancient Tibetan kingdom which gained world'
     }
   ])
 })

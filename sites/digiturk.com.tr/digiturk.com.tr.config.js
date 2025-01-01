@@ -65,7 +65,7 @@ module.exports = {
     const cheerio = require('cheerio')
 
     const data = await axios
-      .get(`https://www.digiturk.com.tr/`, {
+      .get('https://www.digiturk.com.tr/', {
         headers: {
           'User-Agent':
             'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36'

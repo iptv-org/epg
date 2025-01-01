@@ -129,36 +129,34 @@ module.exports = {
     )
   }
 }
-function fetchApiVersion() {
-  return new Promise(async (resolve, reject) => {
+async function fetchApiVersion() {
+  // you'll never find what happened here :)
+  // load the pickx page and get the hash from the MWC configuration.
+  // it's not the best way to get the version but it's the only way to get it.
+  const hashUrl = 'https://www.pickx.be/nl/televisie/tv-gids'
+  const hashData = await axios
+    .get(hashUrl)
+    .then(r => {
+      const re = /"hashes":\["(.*)"\]/
+      const match = r.data.match(re)
+      if (match && match[1]) {
+        return match[1]
+      } else {
+        throw new Error('React app version hash not found')
+      }
+    })
+    .catch(console.error)
+
+  const versionUrl = `https://www.pickx.be/api/s-${hashData}`
+  const response = await axios.get(versionUrl, {
+    headers: {
+      Origin: 'https://www.pickx.be',
+      Referer: 'https://www.pickx.be/'
+    }
+  })
+
+  return new Promise((resolve, reject) => {
     try {
-      // you'll never find what happened here :)
-      // load the pickx page and get the hash from the MWC configuration.
-      // it's not the best way to get the version but it's the only way to get it.
-
-      const hashUrl = 'https://www.pickx.be/nl/televisie/tv-gids';
-
-      const hashData = await axios.get(hashUrl)
-      .then(r => {
-        const re = /"hashes":\["(.*)"\]/
-        const match = r.data.match(re)
-        if (match && match[1]) {
-          return match[1]
-        } else {
-          throw new Error('React app version hash not found')
-        }
-      })
-      .catch(console.error);
-
-      const versionUrl = `https://www.pickx.be/api/s-${hashData}`
-   
-      const response = await axios.get(versionUrl, {
-        headers: {
-          Origin: 'https://www.pickx.be',
-          Referer: 'https://www.pickx.be/'
-        }
-      })
-
       if (response.status === 200) {
         apiVersion = response.data.version
         resolve()

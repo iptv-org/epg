@@ -16,12 +16,13 @@ module.exports = {
     },
     method: 'GET',
     headers: {
-      'referer': 'https://www.cosmotetv.gr/',
-      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
-      'Accept': '*/*',
+      referer: 'https://www.cosmotetv.gr/',
+      'User-Agent':
+        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
+      Accept: '*/*',
       'Accept-Language': 'en-US,en;q=0.9',
       'Accept-Encoding': 'gzip, deflate, br, zstd',
-      'Origin': 'https://www.cosmotetv.gr',
+      Origin: 'https://www.cosmotetv.gr',
       'Sec-Ch-Ua': '"Not.A/Brand";v="24", "Chromium";v="131", "Google Chrome";v="131"',
       'Sec-Ch-Ua-Mobile': '?0',
       'Sec-Ch-Ua-Platform': '"Windows"',
@@ -30,12 +31,12 @@ module.exports = {
       'Sec-Fetch-Site': 'cross-site'
     }
   },
-  url: function ({date, channel}) {
+  url: function ({ date, channel }) {
     const startOfDay = dayjs(date).startOf('day').utc().unix()
     const endOfDay = dayjs(date).endOf('day').utc().unix()
     return `https://mwapi-prod.cosmotetvott.gr/api/v3.4/epg/listings/el?from=${startOfDay}&to=${endOfDay}&callSigns=${channel.site_id}&endingIncludedInRange=false`
   },
-  parser: function ({ date, content }) {
+  parser: function ({ content }) {
     let programs = []
     const data = JSON.parse(content)
     data.channels.forEach(channel => {
@@ -57,16 +58,19 @@ module.exports = {
   async channels() {
     const axios = require('axios')
     try {
-      const response = await axios.get('https://mwapi-prod.cosmotetvott.gr/api/v3.4/epg/channels/all/el', {
-      headers: this.request.headers
-      })
+      const response = await axios.get(
+        'https://mwapi-prod.cosmotetvott.gr/api/v3.4/epg/channels/all/el',
+        {
+          headers: this.request.headers
+        }
+      )
       const data = response.data
 
       if (data && data.channels) {
         return data.channels.map(item => ({
           lang: 'el',
           site_id: item.callSign,
-          name: item.title,
+          name: item.title
           //logo: item.logos.square
         }))
       } else {

@@ -32,7 +32,7 @@ axios.get.mockImplementation(url => {
     'https://spark-prod-nl.gnp.cloud.ziggogo.tv/eng/web/linear-service/v2/replayEvent/crid:~~2F~~2Fgn.tv~~2F28842707~~2FEP022675661065,imi:33138a61bfa639696f386a5b8da9052e98cffdf8?returnLinearContent=true&forceLinearResponse=true&language=nl':
       'program02.json',
     'https://spark-prod-nl.gnp.cloud.ziggogo.tv/eng/web/linear-service/v2/replayEvent/crid:~~2F~~2Fgn.tv~~2F28728829~~2FEP052397600066,imi:34a0b026912de96e3546b15ad2983070a250dfd5?returnLinearContent=true&forceLinearResponse=true&language=nl':
-      'program03.json',
+      'program03.json'
   }
   let data = ''
   if (urls[url] !== undefined) {
@@ -51,15 +51,15 @@ it('can generate valid url', () => {
 })
 
 it('can parse response', async () => {
-  const content = await axios.get(url({ date }))
+  const content = await axios
+    .get(url({ date }))
     .then(response => response.data)
     .catch(console.error)
-  const result = (await parser({ content, channel, date }))
-    .map(p => {
-      p.start = p.start.toJSON()
-      p.stop = p.stop.toJSON()
-      return p
-    })
+  const result = (await parser({ content, channel, date })).map(p => {
+    p.start = p.start.toJSON()
+    p.stop = p.stop.toJSON()
+    return p
+  })
 
   expect(result.length).toBe(3)
   expect(result[0]).toMatchObject({
@@ -91,11 +91,7 @@ it('can parse response', async () => {
     category: ['Talkshow'],
     season: 1,
     episode: 65,
-    actor: [
-      'Sophie Hilbrand',
-      'Jeroen Pauw',
-      'Tim de Wit'
-    ]
+    actor: ['Sophie Hilbrand', 'Jeroen Pauw', 'Tim de Wit']
   })
 })
 

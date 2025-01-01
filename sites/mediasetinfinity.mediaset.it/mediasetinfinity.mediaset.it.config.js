@@ -10,30 +10,34 @@ dayjs.extend(timezone)
 module.exports = {
   site: 'mediasetinfinity.mediaset.it',
   days: 2,
-  url: function ({date, channel}) {
+  url: function ({ date, channel }) {
     // Get the epoch timestamp
     const todayEpoch = date.startOf('day').utc().valueOf()
     // Get the epoch timestamp for the next day
     const nextDayEpoch = date.add(1, 'day').startOf('day').utc().valueOf()
     return `https://api-ott-prod-fe.mediaset.net/PROD/play/feed/allListingFeedEpg/v2.0?byListingTime=${todayEpoch}~${nextDayEpoch}&byCallSign=${channel.site_id}`
   },
-  parser: function ({content}) {
+  parser: function ({ content }) {
     const programs = []
     const data = JSON.parse(content)
 
-    if (!data.response || !data.response.entries || !data.response.entries[0] || !data.response.entries[0].listings) {
+    if (
+      !data.response ||
+      !data.response.entries ||
+      !data.response.entries[0] ||
+      !data.response.entries[0].listings
+    ) {
       // If the structure is not as expected, return an empty array
       return programs
     }
 
     const listings = data.response.entries[0].listings
 
-    listings.forEach((listing) => {
+    listings.forEach(listing => {
       const title = listing.mediasetlisting$epgTitle
       const subTitle = listing.program.title
       const season = parseSeason(listing)
       const episode = parseEpisode(listing)
-
 
       if (listing.program.title && listing.startTime && listing.endTime) {
         programs.push({
@@ -53,7 +57,6 @@ module.exports = {
     return programs
   }
 }
-
 
 function parseTime(timestamp) {
   return dayjs(timestamp).utc().format('YYYY-MM-DD HH:mm')
@@ -77,17 +80,18 @@ function getMaxResolutionThumbnails(item) {
 
   for (const key in thumbnails) {
     const type = key.split('-')[0] // Estrarre il tipo di thumbnail
-    const {width, height, url, title} = thumbnails[key]
+    const { width, height, url, title } = thumbnails[key]
 
-    if (!maxResolutionThumbnails[type] ||
-      (width * height > maxResolutionThumbnails[type].width * maxResolutionThumbnails[type].height)) {
-      maxResolutionThumbnails[type] = {width, height, url, title}
+    if (
+      !maxResolutionThumbnails[type] ||
+      width * height > maxResolutionThumbnails[type].width * maxResolutionThumbnails[type].height
+    ) {
+      maxResolutionThumbnails[type] = { width, height, url, title }
     }
   }
   if (maxResolutionThumbnails.image_keyframe_poster)
     return maxResolutionThumbnails.image_keyframe_poster.url
   else if (maxResolutionThumbnails.image_header_poster)
     return maxResolutionThumbnails.image_header_poster.url
-  else
-    return null
+  else return null
 }

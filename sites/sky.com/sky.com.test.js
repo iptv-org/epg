@@ -15,9 +15,7 @@ const channel = {
 }
 
 it('can generate valid url', () => {
-  expect(url({ channel, date })).toBe(
-    'https://awk.epgsky.com/hawk/linear/schedule/20241214/4086'
-  )
+  expect(url({ channel, date })).toBe('https://awk.epgsky.com/hawk/linear/schedule/20241214/4086')
 })
 
 it('can parse response', () => {
@@ -34,7 +32,7 @@ it('can parse response', () => {
     stop: '2024-12-13T23:00:00.000Z',
     title: 'The UnXplained With...',
     description:
-      'The Hunt for Jack the Ripper: Jack the Ripper\'s identity has eluded police, historians and armchair detectives for over a century. What do we know about the notorious killer? (S3, ep 21)',
+      "The Hunt for Jack the Ripper: Jack the Ripper's identity has eluded police, historians and armchair detectives for over a century. What do we know about the notorious killer? (S3, ep 21)",
     season: 4,
     episode: 14
   })

@@ -70,7 +70,7 @@ module.exports = {
 
 async function getTotalPageCount(region) {
   const data = await axios
-    .get(`https://tv.mail.ru/ajax/channel/list/`, {
+    .get('https://tv.mail.ru/ajax/channel/list/', {
       params: { page: 0 },
       headers: {
         cookie: `s=fver=0|geo=${region};`
