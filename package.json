@@ -11,7 +11,7 @@
     "sites:update": "npx tsx scripts/commands/sites/update.ts",
     "grab": "npx tsx scripts/commands/epg/grab.ts",
     "serve": "npx serve",
-    "lint": "npx eslint \"{scripts,tests}/**/*.{ts,js}\"",
+    "lint": "npx eslint \"{scripts,tests,sites}/**/*.{ts,js}\"",
     "test": "run-script-os",
     "test:win32": "SET \"TZ=Pacific/Nauru\" && npx jest --runInBand",
     "test:default": "TZ=Pacific/Nauru npx jest --runInBand",
