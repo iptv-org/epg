@@ -29,6 +29,8 @@
   },
   "dependencies": {
     "@alex_neo/jest-expect-message": "^1.0.5",
+    "@eslint/eslintrc": "^3.2.0",
+    "@eslint/js": "^9.17.0",
     "@freearhey/core": "^0.3.1",
     "@freearhey/search-js": "^0.1.1",
     "@ntlab/sfetch": "^1.0.0",
@@ -60,6 +62,7 @@
     "form-data": "^4.0.0",
     "fs-extra": "^10.0.1",
     "glob": "^7.2.0",
+    "globals": "^15.14.0",
     "iconv-lite": "^0.4.24",
     "inquirer": "^8.2.6",
     "jest": "^29.7.0",
