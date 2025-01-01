@@ -1,6 +1,7 @@
 {
   "name": "epg",
   "scripts": {
+    "act:check": "act pull_request -W .github/workflows/check.yml",
     "act:update": "act workflow_dispatch -W .github/workflows/update.yml",
     "api:load": "npx tsx scripts/commands/api/load.ts",
     "api:generate": "npx tsx scripts/commands/api/generate.ts",
@@ -15,7 +16,8 @@
     "test": "run-script-os",
     "test:win32": "SET \"TZ=Pacific/Nauru\" && npx jest --runInBand",
     "test:default": "TZ=Pacific/Nauru npx jest --runInBand",
-    "postinstall": "npm run api:load"
+    "postinstall": "npm run api:load",
+    "prepare": "husky"
   },
   "private": true,
   "author": "Arhey",
@@ -63,6 +65,7 @@
     "fs-extra": "^10.0.1",
     "glob": "^7.2.0",
     "globals": "^15.14.0",
+    "husky": "^9.1.7",
     "iconv-lite": "^0.4.24",
     "inquirer": "^8.2.6",
     "jest": "^29.7.0",
