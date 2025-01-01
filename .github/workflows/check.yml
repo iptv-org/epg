@@ -16,6 +16,7 @@ jobs:
       - uses: tj-actions/changed-files@v45
         id: files
         with:
+          since_last_remote_commit: true
           files: |
             tests/**/*.{js,ts}
             scripts/**/*.{js,ts}
