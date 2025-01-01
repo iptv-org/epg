@@ -26,7 +26,7 @@ async function main() {
   const logger = new Logger()
   const file = new File(options.config)
   const dir = file.dirname()
-  const config = require(path.resolve(options.config))
+  const config = (await import(path.resolve(options.config))).default
   const outputFilepath = options.output || `${dir}/${config.site}.channels.xml`
 
   let channels = new Collection()

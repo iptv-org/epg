@@ -47,7 +47,6 @@ async function main() {
 
     const parsedChannels = await parser.parse(filepath)
 
-    const bufferById = new Dictionary()
     const bufferBySiteId = new Dictionary()
     const errors: ValidationError[] = []
     parsedChannels.forEach((channel: Channel) => {

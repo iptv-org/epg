@@ -16,7 +16,7 @@ beforeEach(() => {
 })
 
 it('can update SITES.md', () => {
-  const stdout = execSync('DOT_SITES_DIR=tests/__data__/output/.sites npm run sites:update', {
+  execSync('DOT_SITES_DIR=tests/__data__/output/.sites npm run sites:update', {
     encoding: 'utf8'
   })
 
