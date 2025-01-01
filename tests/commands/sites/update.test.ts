@@ -16,9 +16,12 @@ beforeEach(() => {
 })
 
 it('can update SITES.md', () => {
-  execSync('DOT_SITES_DIR=tests/__data__/output/.sites npm run sites:update', {
-    encoding: 'utf8'
-  })
+  execSync(
+    'DOT_SITES_DIR=tests/__data__/output/.sites SITES_DIR=tests/__data__/input/sites-update/sites npm run sites:update',
+    {
+      encoding: 'utf8'
+    }
+  )
 
   expect(content('tests/__data__/output/sites.md')).toEqual(
     content('tests/__data__/expected/_sites.md')
