@@ -2,12 +2,11 @@ const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
-const { upperCase, method, head } = require('lodash')
+const { upperCase } = require('lodash')
 
 let X_CSRFTOKEN
 let COOKIE
 const cookiesToExtract = ['JSESSIONID', 'CSESSIONID', 'CSRFSESSION']
-const extractedCookies = {}
 
 dayjs.extend(utc)
 dayjs.extend(customParseFormat)
@@ -165,6 +164,11 @@ function parseItems(content) {
 }
 
 async function fetchCookieAndToken() {
+  // Only fetch the cookies and csrfToken if they are not already set
+  if (X_CSRFTOKEN && COOKIE) {
+    return
+  }
+
   try {
     const response = await axios.request({
       url: 'https://api.prod.sngtv.magentatv.de/EPG/JSON/Authenticate',
@@ -215,11 +219,12 @@ async function fetchCookieAndToken() {
   }
 }
 
-async function setHeaders() {
-  await fetchCookieAndToken()
-  return {
-    X_CSRFTOKEN: X_CSRFTOKEN,
-    'Content-Type': 'application/json',
-    Cookie: COOKIE
-  }
+function setHeaders() {
+  return fetchCookieAndToken().then(() => {
+    return {
+      X_CSRFTOKEN: X_CSRFTOKEN,
+      'Content-Type': 'application/json',
+      Cookie: COOKIE
+    }
+  })
 }
