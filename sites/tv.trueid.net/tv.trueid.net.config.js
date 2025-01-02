@@ -24,7 +24,6 @@ module.exports = {
       module.exports.buildId = await module.exports.fetchBuildId()
       debug('Got build id', module.exports.buildId)
     }
-    const channelId = channel.site_id.replace('/', '--')
     return `https://tv.trueid.net/_next/data/${module.exports.buildId}/th-${channel.lang}.json?channelSlug=${channel.site_id}&path=${channel.site_id}`
   },
   parser({ content, channel }) {
