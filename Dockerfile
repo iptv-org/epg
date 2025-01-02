@@ -20,7 +20,6 @@ RUN apk update \
     && mkdir /public
 RUN apk del git curl \
   && rm -rf /var/cache/apk/*
-COPY pm2.config.js $WORKDIR
 WORKDIR $WORKDIR
 EXPOSE 3000
 CMD [ "pm2-runtime", "pm2.config.js" ]
