@@ -5,6 +5,8 @@ ARG WORKDIR=/epg
 ENV CRON_SCHEDULE="0 0 * * *"
 ENV GZIP=false
 ENV MAX_CONNECTIONS=1
+ENV TIMEOUT=
+ENV DELAY=
 ENV DAYS=
 RUN apk update \
     && apk upgrade --available \
