@@ -2,6 +2,8 @@ const grabArgs = [
   '--channels=channels.xml',
   '--output=public/guide.xml',
   process.env.MAX_CONNECTIONS ? `--maxConnections=${process.env.MAX_CONNECTIONS}` : null,
+  process.env.TIMEOUT ? `--timeout=${process.env.TIMEOUT}` : null,
+  process.env.DELAY ? `--delay=${process.env.DELAY}` : null,
   process.env.DAYS ? `--days=${process.env.DAYS}` : null,
   process.env.GZIP === 'true' ? '--gzip' : null
 ]
