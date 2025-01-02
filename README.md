@@ -6,7 +6,10 @@ Tools for downloading the EPG (Electronic Program Guide) for thousands of TV cha
 
 - ✨ [Installation](#installation)
 - 🚀 [Usage](#usage)
+- ⚙️ [Configuration](#configuration)
 - 💫 [Update](#update)
+- 🌎 [Serve](#serve)
+- 🐋 [Docker](#docker)
 - 📺 [Playlists](#playlists)
 - 🗄 [Database](#database)
 - 👨‍💻 [API](#api)
@@ -39,13 +42,17 @@ npm install
 
 ## Usage
 
-To start the download of the guide, select one of the [supported sites](SITES.md) and paste its name into the command below:
+To start the download of the guide, select one of the supported sites from [SITES.md](SITES.md) file and paste its name into the command below:
 
 ```sh
 npm run grab --- --site=example.com
 ```
 
-And once the download is complete, the guide will be saved to the `guide.xml` file.
+Then run it and wait for the guide to finish downloading. When finished, a new `guide.xml` file will appear in the current directory.
+
+## Configuration
+
+To customize `grab` behavior, you can add a few more options at the end of the command:
 
 ```sh
 Usage: npm run grab --- [options]
@@ -55,34 +62,12 @@ Options:
   -c, --channels <path>         Path to *.channels.xml file (required if the "--site" attribute is
                                 not specified)
   -o, --output <path>           Path to output file (default: "guide.xml")
-  -l, --lang <code>             Filter channels by language (ISO 639-2 code)
-  -t, --timeout <milliseconds>  Override the default timeout for each request
-  -d, --delay <milliseconds>    Override the default delay between request
-  --days <days>                 Override the number of days for which the program will be loaded
-                                (defaults to the value from the site config)
-  --maxConnections <number>     Limit on the number of concurrent requests (default: 1)
-  --cron <expression>           Schedule a script run (example: "0 0 * * *")
-  --gzip                        Create a compressed version of the guide as well (default: false)
-```
-
-### Access the guide by URL
-
-You can make the guide available via URL by running your own server:
-
-```sh
-npm run serve
-```
-
-After that, the guide will be available at the link:
-
-```
-http://localhost:3000/guide.xml
-```
-
-In addition it will be available to other devices on the same local network at the address:
-
-```
-http://<your_local_ip_address>:3000/guide.xml
+  -l, --lang <code>             Allows to limit the download to channels in the specified language only (ISO 639-2 code)
+  -t, --timeout <milliseconds>  Timeout for each request in milliseconds (default: 0)
+  -d, --delay <milliseconds>    Delay between request in milliseconds (default: 0)
+  --days <days>                 Number of days for which the program will be loaded (defaults to the value from the site config)
+  --maxConnections <number>     Number of concurrent requests (default: 1)
+  --gzip                        Specifies whether or not to create a compressed version of the guide (default: false)
 ```
 
 ### Parallel downloading
@@ -113,14 +98,6 @@ And then specify the path to that file via the `--channels` attribute:
 npm run grab --- --channels=path/to/custom.channels.xml
 ```
 
-### Run on schedule
-
-If you want to download the guide automatically on a schedule, you need to pass a valid [cron expression](https://crontab.guru/) to the script using the `--cron` attribute:
-
-```sh
-npm run grab --- --site=example.com --cron="0 0 * * *"
-```
-
 ## Update
 
 If you have downloaded the repository code according to the instructions above, then to update it will be enough to run the command:
@@ -134,6 +111,80 @@ And then update all the dependencies:
 ```sh
 npm install
 ```
+
+## Serve
+
+You can make the guide available via URL by running your own server:
+
+```sh
+npm run serve
+```
+
+After that, the guide will be available at the link:
+
+```
+http://localhost:3000/guide.xml
+```
+
+In addition it will be available to other devices on the same local network at the address:
+
+```
+http://<your_local_ip_address>:3000/guide.xml
+```
+
+## Docker
+
+### Build an image
+
+```sh
+docker build -t iptv-org/epg --no-cache .
+```
+
+### Create and run container
+
+```sh
+docker run -p 3000:3000 -v /path/to/channels.xml:/epg/channels.xml iptv-org/epg
+```
+
+By default, the guide will be downloaded every day at 00:00 UTC and saved to the `/epg/public/guide.xml` file inside the container.
+
+From the outside, it will be available at this link:
+
+```
+http://localhost:3000/guide.xml
+```
+
+or
+
+```
+http://<your_local_ip_address>:3000/guide.xml
+```
+
+### Environment Variables
+
+To fine-tune the execution, you can pass environment variables to the container as follows:
+
+```sh
+docker run \
+-p 5000:3000 \
+-v /path/to/channels.xml:/epg/channels.xml \
+-e CRON_SCHEDULE="0 0,12 * * *" \
+-e MAX_CONNECTIONS=10 \
+-e GZIP=true \
+-e DAYS=14 \
+-e TIMEOUT=5 \
+-e DELAY=2 \
+iptv-org/epg
+```
+
+| Variable        | Description                                                                                                        |
+| --------------- | ------------------------------------------------------------------------------------------------------------------ |
+| CRON_SCHEDULE   | A [cron expression](https://crontab.guru/) describing the schedule of the guide loadings (default: "0 0 \* \* \*") |
+| MAX_CONNECTIONS | Limit on the number of concurrent requests (default: 1)                                                            |
+| GZIP            | Boolean value indicating whether to create a compressed version of the guide (default: false)                      |
+| DAYS            | Number of days for which the guide will be loaded (defaults to the value from the site config)                     |
+| TIMEOUT         | Timeout for each request in milliseconds (default: 0)                                                              |
+| DELAY           | Delay between request in milliseconds (default: 0)                                                                 |
 
 ## Playlists
 
