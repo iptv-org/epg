@@ -14,7 +14,7 @@ module.exports = {
   apps: [
     {
       name: 'serve',
-      script: 'npm run serve -- public',
+      script: 'npx serve -- public',
       instances: 1,
       watch: false,
       autorestart: true
