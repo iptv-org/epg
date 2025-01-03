@@ -35,7 +35,7 @@ module.exports = {
     const cheerio = require('cheerio')
 
     const data = await axios
-      .get(`https://guidatv.sky.it/canali`)
+      .get('https://guidatv.sky.it/canali')
       .then(r => r.data)
       .catch(console.log)
 

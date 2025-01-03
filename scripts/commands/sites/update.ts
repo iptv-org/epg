@@ -1,4 +1,4 @@
-import { Logger, Storage, Collection, Dictionary } from '@freearhey/core'
+import { Logger, Storage, Collection } from '@freearhey/core'
 import { IssueLoader, HTMLTable, Markdown } from '../../core'
 import { Issue, Site } from '../../models'
 import { SITES_DIR, DOT_SITES_DIR } from '../../constants'
@@ -28,7 +28,7 @@ async function main() {
   })
 
   logger.info('creating sites table...')
-  let data = new Collection()
+  const data = new Collection()
   sites.forEach((site: Site) => {
     data.add([
       `<a href="sites/${site.domain}">${site.domain}</a>`,

@@ -70,7 +70,7 @@ module.exports = {
     let i = 1
     for (let el of elements) {
       const url = $(el).text()
-      const [, site_id] = url.match(/\/tv\-listings\/stations\/(.*)$/)
+      const [, site_id] = url.match(/\/tv-listings\/stations\/(.*)$/)
 
       console.log(`[${i}/${total}]`, url)
 

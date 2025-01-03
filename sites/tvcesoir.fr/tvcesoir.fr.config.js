@@ -49,7 +49,7 @@ module.exports = {
     const channels = []
     for (let provider of providers) {
       const data = await axios
-        .post(`https://www.tvcesoir.fr/guide/schedule`, null, {
+        .post('https://www.tvcesoir.fr/guide/schedule', null, {
           params: {
             provider,
             region: 'France',
@@ -81,7 +81,7 @@ module.exports = {
   }
 }
 
-function parseStart($item, date, channel) {
+function parseStart($item, date) {
   const timeString = $item('td:eq(0)').text().trim()
   const dateString = `${date.format('YYYY-MM-DD')} ${timeString}`
 

@@ -28,7 +28,8 @@ module.exports = {
         offset: 0,
         properties: [
           {
-            include: 'endtime,genres,id,name,starttime,channelid,pictures,introduce,subName,seasonNum,subNum,cast,country,producedate,externalIds',
+            include:
+              'endtime,genres,id,name,starttime,channelid,pictures,introduce,subName,seasonNum,subNum,cast,country,producedate,externalIds',
             name: 'playbill'
           }
         ],
@@ -111,15 +112,15 @@ function parseCategory(item) {
 }
 
 function parseDirectors(item) {
-  if (!item.cast || !item.cast.director) return [];
+  if (!item.cast || !item.cast.director) return []
   return item.cast.director
     .replace('und', ',')
     .split(',')
-    .map(i => i.trim());
+    .map(i => i.trim())
 }
 
 function parseProducers(item) {
-  if (!item.cast || !item.cast.producer) return [];
+  if (!item.cast || !item.cast.producer) return []
   return item.cast.producer
     .replace('und', ',')
     .split(',')
@@ -127,7 +128,7 @@ function parseProducers(item) {
 }
 
 function parseAdapters(item) {
-  if (!item.cast || !item.cast.adaptor) return [];
+  if (!item.cast || !item.cast.adaptor) return []
   return item.cast.adaptor
     .replace('und', ',')
     .split(',')
@@ -136,7 +137,7 @@ function parseAdapters(item) {
 
 function parseUrls(item) {
   // currently only a imdb id is returned by the api, thus we can construct the url here
-  if (!item.externalIds) return [];
+  if (!item.externalIds) return []
   return JSON.parse(item.externalIds)
     .filter(externalId => externalId.type === 'imdb' && externalId.id)
     .map(externalId => ({ system: 'imdb', value: `https://www.imdb.com/title/${externalId.id}` }))

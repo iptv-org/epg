@@ -1,5 +1,4 @@
 const _ = require('lodash')
-const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')

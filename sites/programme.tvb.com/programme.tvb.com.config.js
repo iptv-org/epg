@@ -13,19 +13,17 @@ module.exports = {
   site: 'programme.tvb.com',
   days: 2,
   url({ channel, date, time = null }) {
-    return `https://programme.tvb.com/api/schedule?input_date=${
-      date.format('YYYYMMDD')
-    }&network_code=${channel.site_id}&_t=${time ? time : parseInt(Date.now() / 1000)}`
+    return `https://programme.tvb.com/api/schedule?input_date=${date.format(
+      'YYYYMMDD'
+    )}&network_code=${channel.site_id}&_t=${time ? time : parseInt(Date.now() / 1000)}`
   },
   parser({ content, channel, date }) {
     const programs = []
     const data = content ? JSON.parse(content) : {}
     if (Array.isArray(data.data?.list)) {
-      const dt = date.format('YYYY-MM-DD')
       for (const d of data.data.list) {
         if (Array.isArray(d.schedules)) {
-          const schedules = d.schedules
-            .filter(s => s.network_code === channel.site_id)
+          const schedules = d.schedules.filter(s => s.network_code === channel.site_id)
           schedules.forEach((s, i) => {
             const start = dayjs.tz(s.event_datetime, 'YYYY-MM-DD HH:mm:ss', tz)
             let stop
@@ -64,7 +62,7 @@ module.exports = {
           if (assets) {
             queues.push(...assets.map(a => base + '/' + a))
           } else {
-            const metadata = content.match(/e\=(\[(.*?)\])/)
+            const metadata = content.match(/e=(\[(.*?)\])/)
             if (metadata) {
               const infos = eval(metadata[1])
               if (Array.isArray(infos)) {

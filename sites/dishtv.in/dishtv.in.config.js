@@ -60,7 +60,7 @@ module.exports = {
       $('.pgrid').each((i, el) => {
         const onclick = $(el).find('.chnl-logo').attr('onclick')
         const number = $(el).find('.cnl-fav > a > span').text().trim()
-        const [, name, site_id] = onclick.match(/ShowChannelGuid\('([^']+)','([^']+)'/) || [
+        const [, , site_id] = onclick.match(/ShowChannelGuid\('([^']+)','([^']+)'/) || [
           null,
           '',
           ''

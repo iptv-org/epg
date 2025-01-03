@@ -12,27 +12,30 @@ module.exports = {
   site: 'neo.io',
   timezone: 'Europe/Ljubljana',
   days: 5,
-  url({ date, channel }) { return 'https://stargate.telekom.si/api/titan.tv.WebEpg/GetWebEpgData' },
+  url() {
+    return 'https://stargate.telekom.si/api/titan.tv.WebEpg/GetWebEpgData'
+  },
   request: {
     method: 'POST',
     headers: {
-      'Host': 'stargate.telekom.si',
-      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0',
-      'Accept': 'application/json, text/plain, */*',
+      Host: 'stargate.telekom.si',
+      'User-Agent':
+        'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0',
+      Accept: 'application/json, text/plain, */*',
       'Accept-Language': 'nl,en-US;q=0.7,en;q=0.3',
       'Content-Type': 'application/json',
       'X-AppLayout': '1',
       'x-language': 'sl',
-      'Origin': 'https://neo.io',
+      Origin: 'https://neo.io',
       'Sec-Fetch-Dest': 'empty',
       'Sec-Fetch-Mode': 'cors',
       'Sec-Fetch-Site': 'cross-site',
       'Sec-GPC': '1',
-      'Connection': 'keep-alive'
+      Connection: 'keep-alive'
     },
     data({ channel, date }) {
-      const todayEpoch = date.startOf('day').unix();
-      const nextDayEpoch = date.add(1, 'day').startOf('day').unix();
+      const todayEpoch = date.startOf('day').unix()
+      const nextDayEpoch = date.add(1, 'day').startOf('day').unix()
       return JSON.stringify({
         ch_ext_id: channel.site_id,
         from: todayEpoch,
@@ -41,11 +44,11 @@ module.exports = {
     }
   },
   parser: function ({ content }) {
-    const programs = [];
-    const data = JSON.parse(content);
+    const programs = []
+    const data = JSON.parse(content)
     data.shows.forEach(show => {
-      const start = dayjs.unix(show.show_start).utc();
-      const stop = dayjs.unix(show.show_end).utc();
+      const start = dayjs.unix(show.show_start).utc()
+      const stop = dayjs.unix(show.show_end).utc()
       const programData = {
         title: show.title,
         description: show.summary || 'No description available',
@@ -58,15 +61,19 @@ module.exports = {
     return programs
   },
   async channels() {
-    const response = await axios.post('https://stargate.telekom.si/api/titan.tv.WebEpg/ZapList', JSON.stringify({ includeRadioStations: true }), {
-      headers: this.request.headers
-    });
+    const response = await axios.post(
+      'https://stargate.telekom.si/api/titan.tv.WebEpg/ZapList',
+      JSON.stringify({ includeRadioStations: true }),
+      {
+        headers: this.request.headers
+      }
+    )
 
-    const data = response.data.data;
+    const data = response.data.data
     return data.map(item => ({
       lang: 'sq',
       name: String(item.channel.title),
-      site_id: String(item.channel.id),
+      site_id: String(item.channel.id)
       //logo: String(item.channel.logo)
     }))
   }

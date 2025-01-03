@@ -1,6 +1,7 @@
 {
   "name": "epg",
   "scripts": {
+    "act:check": "act pull_request -W .github/workflows/check.yml",
     "act:update": "act workflow_dispatch -W .github/workflows/update.yml",
     "api:load": "npx tsx scripts/commands/api/load.ts",
     "api:generate": "npx tsx scripts/commands/api/generate.ts",
@@ -11,11 +12,12 @@
     "sites:update": "npx tsx scripts/commands/sites/update.ts",
     "grab": "npx tsx scripts/commands/epg/grab.ts",
     "serve": "npx serve",
-    "lint": "npx eslint \"{scripts,tests}/**/*.{ts,js}\"",
+    "lint": "npx eslint \"{scripts,tests,sites}/**/*.{ts,js}\"",
     "test": "run-script-os",
     "test:win32": "SET \"TZ=Pacific/Nauru\" && npx jest --runInBand",
     "test:default": "TZ=Pacific/Nauru npx jest --runInBand",
-    "postinstall": "npm run api:load"
+    "postinstall": "test -n \"$SKIP_POSTINSTALL\" || npm run api:load",
+    "prepare": "husky"
   },
   "private": true,
   "author": "Arhey",
@@ -29,6 +31,8 @@
   },
   "dependencies": {
     "@alex_neo/jest-expect-message": "^1.0.5",
+    "@eslint/eslintrc": "^3.2.0",
+    "@eslint/js": "^9.17.0",
     "@freearhey/core": "^0.3.1",
     "@freearhey/search-js": "^0.1.1",
     "@ntlab/sfetch": "^1.0.0",
@@ -60,6 +64,8 @@
     "form-data": "^4.0.0",
     "fs-extra": "^10.0.1",
     "glob": "^7.2.0",
+    "globals": "^15.14.0",
+    "husky": "^9.1.7",
     "iconv-lite": "^0.4.24",
     "inquirer": "^8.2.6",
     "jest": "^29.7.0",

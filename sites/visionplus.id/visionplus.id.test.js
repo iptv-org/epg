@@ -16,7 +16,7 @@ const channel = {
   xmltv_id: 'AXN.id',
   lang: 'en'
 }
-const channelId = { ...channel,  lang: 'id' }
+const channelId = { ...channel, lang: 'id' }
 
 it('can generate valid url', () => {
   expect(url({ channel, date })).toBe(
@@ -29,37 +29,37 @@ it('can generate valid url', () => {
 
 it('can parse response', () => {
   let content = fs.readFileSync(path.resolve(__dirname, '__data__/content_en.json'))
-  let results = parser({ content, channel, date })
-    .map(p => {
-      p.start = p.start.toJSON()
-      p.stop = p.stop.toJSON()
-      return p
-    })
+  let results = parser({ content, channel, date }).map(p => {
+    p.start = p.start.toJSON()
+    p.stop = p.stop.toJSON()
+    return p
+  })
 
   expect(results.length).toBe(1)
   expect(results[0]).toMatchObject({
     start: '2024-11-23T23:30:00.000Z',
     stop: '2024-11-24T00:15:00.000Z',
     title: 'FBI: Most Wanted S4, Ep 18',
-    description: 'After two agents from the Bureau of Land Management go missing while executing a land seizure warrant in Wyoming, the Fugitive Task Force heads west to track them down in an unwelcoming county.',
+    description:
+      'After two agents from the Bureau of Land Management go missing while executing a land seizure warrant in Wyoming, the Fugitive Task Force heads west to track them down in an unwelcoming county.',
     season: 4,
     episode: 18
   })
 
   content = fs.readFileSync(path.resolve(__dirname, '__data__/content_id.json'))
-  results = parser({ content, channel: channelId, date })
-    .map(p => {
-      p.start = p.start.toJSON()
-      p.stop = p.stop.toJSON()
-      return p
-    })
+  results = parser({ content, channel: channelId, date }).map(p => {
+    p.start = p.start.toJSON()
+    p.stop = p.stop.toJSON()
+    return p
+  })
 
   expect(results.length).toBe(1)
   expect(results[0]).toMatchObject({
     start: '2024-11-23T23:30:00.000Z',
     stop: '2024-11-24T00:15:00.000Z',
     title: 'FBI: Most Wanted S4, Ep 18',
-    description: 'Satgas Buronan pergi ke wilayah barat untuk melacak keberadaan dua petugas Biro Pengelolaan Lahan yang menghilang saat menjalankan perintah penyitaan lahan di negara bagian yang tak ramah, Wyoming.',
+    description:
+      'Satgas Buronan pergi ke wilayah barat untuk melacak keberadaan dua petugas Biro Pengelolaan Lahan yang menghilang saat menjalankan perintah penyitaan lahan di negara bagian yang tak ramah, Wyoming.',
     season: 4,
     episode: 18
   })

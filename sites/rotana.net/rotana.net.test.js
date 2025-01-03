@@ -19,7 +19,7 @@ const channel = {
 }
 const channelAr = Object.assign({}, channel, { lang: 'ar' })
 
-axios.get.mockImplementation((url, opts) => {
+axios.get.mockImplementation(url => {
   if (url === 'https://rotana.net/en/streams?channel=439&itemId=736970') {
     return Promise.resolve({
       data: fs.readFileSync(path.resolve(__dirname, '__data__/program_en.html'))
@@ -52,11 +52,13 @@ it('can generate valid arabic url', () => {
 })
 
 it('can parse english response', async () => {
-  const result = (await parser({
-    channel,
-    date,
-    content: fs.readFileSync(path.join(__dirname, '/__data__/content_en.html'))
-  })).map(a => {
+  const result = (
+    await parser({
+      channel,
+      date,
+      content: fs.readFileSync(path.join(__dirname, '/__data__/content_en.html'))
+    })
+  ).map(a => {
     a.start = a.start.toJSON()
     a.stop = a.stop.toJSON()
     return a
@@ -69,17 +71,20 @@ it('can parse english response', async () => {
     title: 'Khiyana Mashroua',
     description:
       'Hisham knows that his father has given all his wealth to his elder brother. This leads him to plan to kill his brother to make it look like a defense of honor, which he does by killing his wife along...',
-    image: 'https://s3.eu-central-1.amazonaws.com/rotana.website/spider_storage/1398X1000/1687084565',
+    image:
+      'https://s3.eu-central-1.amazonaws.com/rotana.website/spider_storage/1398X1000/1687084565',
     category: 'Movie'
   })
 })
 
 it('can parse arabic response', async () => {
-  const result = (await parser({
-    channel: channelAr,
-    date,
-    content: fs.readFileSync(path.join(__dirname, '/__data__/content_ar.html'))
-  })).map(a => {
+  const result = (
+    await parser({
+      channel: channelAr,
+      date,
+      content: fs.readFileSync(path.join(__dirname, '/__data__/content_ar.html'))
+    })
+  ).map(a => {
     a.start = a.start.toJSON()
     a.stop = a.stop.toJSON()
     return a
@@ -92,7 +97,8 @@ it('can parse arabic response', async () => {
     title: 'خيانة مشروعة',
     description:
       'يعلم هشام البحيري أن والده قد حرمه من الميراث، ووهب كل ثروته لشقيقه اﻷكبر، وهو ما يدفعه لتدبير جريمة قتل شقيقه لتبدو وكأنها دفاع عن الشرف، وذلك حين يقتل هشام زوجته مع شقيقه.',
-    image: 'https://s3.eu-central-1.amazonaws.com/rotana.website/spider_storage/1398X1000/1687084565',
+    image:
+      'https://s3.eu-central-1.amazonaws.com/rotana.website/spider_storage/1398X1000/1687084565',
     category: 'فيلم'
   })
 })

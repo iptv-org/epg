@@ -40,7 +40,7 @@ module.exports = {
         let offset = 0
         while (offset !== undefined) {
           const data = await axios
-            .get(`https://web-api.tv.nu/tableauLinearChannels`, {
+            .get('https://web-api.tv.nu/tableauLinearChannels', {
               params: {
                 modules,
                 date: dayjs().format('YYYY-MM-DD'),

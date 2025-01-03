@@ -11,7 +11,8 @@ const channel = {
   name: 'Tokyo MX2',
   xmltv_id: 'TokyoMX2.jp'
 }
-const content = `[{ "Event_id": "0x6a57", "Start_time": "2024年07月27日05時00分00秒", "Duration": "01:00:00", "Event_name": "ヒーリングタイム＆ヘッドラインニュース", "Event_text": "ねこの足跡", "Component": "480i 16:9 パンベクトルなし", "Sound": "ステレオ", "Event_detail": ""}]`
+const content =
+  '[{ "Event_id": "0x6a57", "Start_time": "2024年07月27日05時00分00秒", "Duration": "01:00:00", "Event_name": "ヒーリングタイム＆ヘッドラインニュース", "Event_text": "ねこの足跡", "Component": "480i 16:9 パンベクトルなし", "Sound": "ステレオ", "Event_detail": ""}]'
 
 it('can generate valid url', () => {
   const result = url({ date, channel })

@@ -38,7 +38,7 @@ module.exports = {
   async channels() {
     const axios = require('axios')
     const data = await axios
-      .get(`https://m.tv.sms.cz/?zmen_stanice=true`)
+      .get('https://m.tv.sms.cz/?zmen_stanice=true')
       .then(r => r.data)
       .catch(console.log)
 

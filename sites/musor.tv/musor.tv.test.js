@@ -26,12 +26,11 @@ it('can generate valid url for today', () => {
 
 it('can parse response', () => {
   const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.html'))
-  const results = parser({ content, date })
-    .map(p => {
-      p.start = p.start.toJSON()
-      p.stop = p.stop.toJSON()
-      return p
-    })
+  const results = parser({ content, date }).map(p => {
+    p.start = p.start.toJSON()
+    p.stop = p.stop.toJSON()
+    return p
+  })
 
   expect(results[0]).toMatchObject({
     start: '2022-11-19T23:00:00.000Z',

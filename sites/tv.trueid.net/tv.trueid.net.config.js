@@ -24,7 +24,7 @@ module.exports = {
 
     return programs
   },
-  async channels({ token, lang = en }) {
+  async channels({ token, lang = 'en' }) {
     const axios = require('axios')
     const ACCESS_TOKEN = token
       ? token

@@ -24,15 +24,7 @@ module.exports = {
       debug('Got build id', module.exports.buildId)
     }
     const channelId = channel.site_id.replace('/', '--')
-    return `https://tvplus.com.tr/_next/data/${
-      module.exports.buildId
-    }/${
-      channel.lang
-    }/canli-tv/yayin-akisi/${
-      channelId
-    }.json?title=${
-      channelId
-    }`
+    return `https://tvplus.com.tr/_next/data/${module.exports.buildId}/${channel.lang}/canli-tv/yayin-akisi/${channelId}.json?title=${channelId}`
   },
   parser({ content, date }) {
     const programs = []
@@ -43,7 +35,9 @@ module.exports = {
           .filter(i => i.length && i[0].starttime.startsWith(date.format('YYYY-MM-DD')))
           .forEach(i => {
             for (const schedule of i) {
-              const [, season, episode] = schedule.seasonInfo?.match(/(\d+)\. Sezon \- (\d+)\. Bölüm/) || [null, null, null]
+              const [, season, episode] = schedule.seasonInfo?.match(
+                /(\d+)\. Sezon - (\d+)\. Bölüm/
+              ) || [null, null, null]
               programs.push({
                 title: schedule.name,
                 description: schedule.introduce,
@@ -69,14 +63,19 @@ module.exports = {
       .catch(console.error)
 
     const $ = cheerio.load(data)
-    $('.channel-list-item a').toArray()
+    $('.channel-list-item a')
+      .toArray()
       .forEach(el => {
         const a = $(el)
         channels.push({
           lang: 'tr',
-          name: a.attr('title').replace(/Yayın Akışı/, '').trim(),
-          site_id: a.attr('href')
-            .replace(/\/canli\-tv\/yayin\-akisi\//, '')
+          name: a
+            .attr('title')
+            .replace(/Yayın Akışı/, '')
+            .trim(),
+          site_id: a
+            .attr('href')
+            .replace(/\/canli-tv\/yayin-akisi\//, '')
             .replace('--', '/') // change -- to / as it used in xml comment
         })
       })

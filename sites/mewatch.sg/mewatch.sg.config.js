@@ -42,7 +42,7 @@ module.exports = {
     const axios = require('axios')
     const cheerio = require('cheerio')
     const data = await axios
-      .get(`https://www.mewatch.sg/channel-guide`)
+      .get('https://www.mewatch.sg/channel-guide')
       .then(r => r.data)
       .catch(console.log)
 

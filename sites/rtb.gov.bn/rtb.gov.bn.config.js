@@ -53,7 +53,7 @@ async function parseItems(buffer) {
   let data
   try {
     data = await pdf(buffer)
-  } catch (err) {
+  } catch {
     return []
   }
 

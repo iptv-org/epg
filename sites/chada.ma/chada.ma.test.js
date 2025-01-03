@@ -1,7 +1,5 @@
 const { parser, url } = require('./chada.ma.config.js')
-const axios = require('axios')
 const dayjs = require('dayjs')
-const cheerio = require('cheerio')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -27,11 +25,11 @@ const mockHtmlContent = `
       <div class="ssprogramme row"></div>
     </div>
   </div>
-`;
+`
 
 it('can generate valid url', () => {
   expect(url()).toBe('https://chada.ma/fr/chada-tv/grille-tv/')
-});
+})
 
 it('can parse response', () => {
   const content = mockHtmlContent
@@ -44,8 +42,8 @@ it('can parse response', () => {
 
   expect(result).toMatchObject([
     {
-      title: "Bloc Prime + Clips",
-      description: "No description available",
+      title: 'Bloc Prime + Clips',
+      description: 'No description available',
       start: dayjs.tz('00:00', 'HH:mm', 'Africa/Casablanca').format('YYYY-MM-DDTHH:mm:ssZ'),
       stop: dayjs.tz('09:00', 'HH:mm', 'Africa/Casablanca').format('YYYY-MM-DDTHH:mm:ssZ')
     }

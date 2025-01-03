@@ -33,14 +33,17 @@ it('can parse response', () => {
     start: '2024-12-28T00:21:00.000Z',
     stop: '2024-12-28T00:48:00.000Z',
     title: 'Naruto: El Tercer Hokage, Eternamente',
-    description: 'Gaara y Naruto continúan combatiendo con todas sus fuerzas. Decidido a proteger a Sakura, Naruto ataca a Gaara una y otra vez.',
+    description:
+      'Gaara y Naruto continúan combatiendo con todas sus fuerzas. Decidido a proteger a Sakura, Naruto ataca a Gaara una y otra vez.',
     subTitle: 'El Tercer Hokage, Eternamente',
     episode: 80,
     season: 2,
-    actors: ["Isabel Martion (Naruto Uzumaki)",
-            "Christine Byrd (Sakura Haruno)",
-            "Victor Ugarte (Sasuke Uchiha)",
-            "Alfonso Obreg (Kakashi Hatake)"],
+    actors: [
+      'Isabel Martion (Naruto Uzumaki)',
+      'Christine Byrd (Sakura Haruno)',
+      'Victor Ugarte (Sasuke Uchiha)',
+      'Alfonso Obreg (Kakashi Hatake)'
+    ],
     categories: ['Anime', 'Anime Action & Adventure'],
     rating: 'TV-14',
     date: '2004-04-21T00:00:00.000Z',

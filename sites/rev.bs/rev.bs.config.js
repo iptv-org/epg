@@ -58,7 +58,7 @@ function parseItems(content, channel) {
   let data
   try {
     data = JSON.parse(content)
-  } catch (error) {
+  } catch {
     return []
   }
 

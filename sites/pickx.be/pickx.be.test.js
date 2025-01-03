@@ -6,14 +6,7 @@ jest.mock('./pickx.be.config.js', () => {
   }
 })
 
-const {
-  parser,
-  url,
-  request,
-  fetchApiVersion,
-  setApiVersion,
-  getApiVersion
-} = require('./pickx.be.config.js')
+const { parser, url, request, setApiVersion } = require('./pickx.be.config.js')
 
 const fs = require('fs')
 const path = require('path')
@@ -36,7 +29,7 @@ beforeEach(() => {
 it('can generate valid url', async () => {
   const generatedUrl = await url({ channel, date })
   expect(generatedUrl).toBe(
-    `https://px-epg.azureedge.net/airings/mockedApiVersion/2023-12-13/channel/UID0118?timezone=Europe%2FBrussels`
+    'https://px-epg.azureedge.net/airings/mockedApiVersion/2023-12-13/channel/UID0118?timezone=Europe%2FBrussels'
   )
 })
 

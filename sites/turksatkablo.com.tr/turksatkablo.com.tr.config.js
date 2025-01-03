@@ -73,7 +73,7 @@ function parseItems(content, channel) {
   let parsed
   try {
     parsed = JSON.parse(content)
-  } catch (error) {
+  } catch {
     return []
   }
   if (!parsed || !parsed.k) return []

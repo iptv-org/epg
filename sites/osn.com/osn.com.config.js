@@ -5,7 +5,12 @@ const timezone = require('dayjs/plugin/timezone')
 dayjs.extend(utc)
 dayjs.extend(timezone)
 
-const packages = { 'OSNTV CONNECT': 3720, 'OSNTV PRIME': 3733, 'ALFA': 1281, 'OSN PINOY PLUS EXTRA': 3519 }
+const packages = {
+  'OSNTV CONNECT': 3720,
+  'OSNTV PRIME': 3733,
+  ALFA: 1281,
+  'OSN PINOY PLUS EXTRA': 3519
+}
 const country = 'AE'
 const tz = 'Asia/Dubai'
 
@@ -13,11 +18,9 @@ module.exports = {
   site: 'osn.com',
   days: 2,
   url({ channel, date }) {
-    return `https://www.osn.com/api/TVScheduleWebService.asmx/time?dt=${
-      encodeURIComponent(date.format('MM/DD/YYYY'))
-    }&co=${country}&ch=${
-      channel.site_id
-    }&mo=false&hr=0`
+    return `https://www.osn.com/api/TVScheduleWebService.asmx/time?dt=${encodeURIComponent(
+      date.format('MM/DD/YYYY')
+    )}&co=${country}&ch=${channel.site_id}&mo=false&hr=0`
   },
   request: {
     headers({ channel }) {
@@ -46,7 +49,9 @@ module.exports = {
     const axios = require('axios')
     for (const pkg of Object.values(packages)) {
       const channels = await axios
-        .get(`https://www.osn.com/api/tvchannels.ashx?culture=en-US&packageId=${pkg}&country=${country}`)
+        .get(
+          `https://www.osn.com/api/tvchannels.ashx?culture=en-US&packageId=${pkg}&country=${country}`
+        )
         .then(response => response.data)
         .catch(console.error)
 

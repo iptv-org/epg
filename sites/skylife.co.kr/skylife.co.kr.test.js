@@ -1,4 +1,4 @@
-const { parser, url, request } = require('./skylife.co.kr.config.js')
+const { parser, url } = require('./skylife.co.kr.config.js')
 const fs = require('fs')
 const path = require('path')
 const dayjs = require('dayjs')

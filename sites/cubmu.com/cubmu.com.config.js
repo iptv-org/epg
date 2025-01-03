@@ -9,7 +9,9 @@ module.exports = {
   site: 'cubmu.com',
   days: 2,
   url({ channel, date }) {
-    return `https://servicebuss.transvision.co.id/v2/cms/getEPGData?app_id=cubmu&tvs_platform_id=standalone&schedule_date=${date.format('YYYY-MM-DD')}&channel_id=${channel.site_id}`
+    return `https://servicebuss.transvision.co.id/v2/cms/getEPGData?app_id=cubmu&tvs_platform_id=standalone&schedule_date=${date.format(
+      'YYYY-MM-DD'
+    )}&channel_id=${channel.site_id}`
   },
   parser({ content, channel }) {
     const programs = []
@@ -46,13 +48,19 @@ module.exports = {
       }
     }
     // login to service bus
-    const token = await axios
-      .post(`https://servicebuss.transvision.co.id/tvs/login/external?email=${config.email}&password=${config.password}&deviceId=${config.deviceId}&deviceType=${config.deviceType}&deviceModel=${config.deviceModel}&deviceToken=&serial=&platformId=${config.platformId}`, options)
+    await axios
+      .post(
+        `https://servicebuss.transvision.co.id/tvs/login/external?email=${config.email}&password=${config.password}&deviceId=${config.deviceId}&deviceType=${config.deviceType}&deviceModel=${config.deviceModel}&deviceToken=&serial=&platformId=${config.platformId}`,
+        options
+      )
       .then(response => response.data)
       .catch(console.error)
     // list channels
     const subscribedChannels = await axios
-      .post(`https://servicebuss.transvision.co.id/tvs/subscribe_product/list?platformId=${config.platformId}`, options)
+      .post(
+        `https://servicebuss.transvision.co.id/tvs/subscribe_product/list?platformId=${config.platformId}`,
+        options
+      )
       .then(response => response.data)
       .catch(console.error)
 
@@ -98,5 +106,9 @@ function parseStart(item) {
 }
 
 function parseStop(item) {
-  return dayjs.tz([item.schedule_date.split(' ')[0], item.schedule_end_time].join(' '), 'YYYY-MM-DD HH:mm:ss', 'Asia/Jakarta')
+  return dayjs.tz(
+    [item.schedule_date.split(' ')[0], item.schedule_end_time].join(' '),
+    'YYYY-MM-DD HH:mm:ss',
+    'Asia/Jakarta'
+  )
 }

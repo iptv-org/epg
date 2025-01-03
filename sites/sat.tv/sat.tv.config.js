@@ -114,7 +114,7 @@ module.exports = {
       const $ = cheerio.load(data)
       $('.main-container-channels-events > .container-channel-events').each((i, el) => {
         const name = $(el).find('.channel-title').text().trim()
-        const channelId = name.replace(/\s\&\s/gi, ' &amp; ')
+        const channelId = name.replace(/\s&\s/gi, ' &amp; ')
 
         if (!name) return
 

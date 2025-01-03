@@ -1,7 +1,7 @@
 import { Storage, Collection, DateTime, Logger } from '@freearhey/core'
 import { ChannelsParser, ConfigLoader, ApiChannel, Queue } from './'
 import { SITES_DIR, DATA_DIR } from '../constants'
-import { Channel, SiteConfig } from 'epg-grabber'
+import { SiteConfig } from 'epg-grabber'
 import path from 'path'
 import { GrabOptions } from '../commands/epg/grab'
 

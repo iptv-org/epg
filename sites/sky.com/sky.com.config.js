@@ -12,9 +12,7 @@ module.exports = {
   site: 'sky.com',
   days: 2,
   url({ date, channel }) {
-    return `https://awk.epgsky.com/hawk/linear/schedule/${
-      date.format('YYYYMMDD')
-    }/${
+    return `https://awk.epgsky.com/hawk/linear/schedule/${date.format('YYYYMMDD')}/${
       channel.site_id
     }`
   },
@@ -41,6 +39,7 @@ module.exports = {
                     })
                   }
                 })
+              })
             }
           })
       }
@@ -56,10 +55,12 @@ module.exports = {
       if (queue.t === 'r') {
         const $ = cheerio.load(res)
         const initialData = JSON.parse(decodeURIComponent($('#initialData').text()))
-        initialData.state.epgData.regions
-          .forEach(region => {
-            queues.push({ t: 'c', url: `https://awk.epgsky.com/hawk/linear/services/${region.bouquet}/${region.subBouquet}` })
+        initialData.state.epgData.regions.forEach(region => {
+          queues.push({
+            t: 'c',
+            url: `https://awk.epgsky.com/hawk/linear/services/${region.bouquet}/${region.subBouquet}`
           })
+        })
       }
       // process channels
       if (queue.t === 'c') {

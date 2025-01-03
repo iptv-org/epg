@@ -43,7 +43,7 @@ async function main() {
   const channelsIndex = sj.createIndex(channelsContent)
 
   const buffer = new Dictionary()
-  for (let option of options.all()) {
+  for (const option of options.all()) {
     const channel: Channel = option.channel
     if (channel.xmltv_id) {
       if (channel.xmltv_id !== '-') {
@@ -150,7 +150,7 @@ function getOptions(channelsIndex, channel: Channel) {
   const query = channel.name
     .replace(/\s(SD|TV|HD|SD\/HD|HDTV)$/i, '')
     .replace(/(\(|\)|,)/gi, '')
-    .replace(/\-/gi, ' ')
+    .replace(/-/gi, ' ')
     .replace(/\+/gi, '')
   const similar = channelsIndex.search(query).map(item => new ApiChannel(item))
 

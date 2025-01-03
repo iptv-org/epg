@@ -62,7 +62,7 @@ module.exports = {
     $('.channelList-listItemsLink').each((i, el) => {
       const name = $(el).attr('title')
       const url = $(el).attr('href')
-      const [, site_id] = url.match(/\/programme\-(.*)\.html$/i)
+      const [, site_id] = url.match(/\/programme-(.*)\.html$/i)
 
       channels.push({
         lang: 'fr',

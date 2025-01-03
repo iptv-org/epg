@@ -18,11 +18,9 @@ module.exports = {
     }
   },
   url({ date, segment = 0 }) {
-    return `https://static.spark.ziggogo.tv/eng/web/epg-service-lite/nl/en/events/segments/${
-      date.format('YYYYMMDD')
-    }${
-      segment.toString().padStart(2, '0')
-    }0000`
+    return `https://static.spark.ziggogo.tv/eng/web/epg-service-lite/nl/en/events/segments/${date.format(
+      'YYYYMMDD'
+    )}${segment.toString().padStart(2, '0')}0000`
   },
   async parser({ content, channel, date }) {
     const programs = []
@@ -31,9 +29,9 @@ module.exports = {
       if (Array.isArray(items.entries)) {
         // fetch other segments
         const queues = [
-          module.exports.url({ date, segment: 6}),
-          module.exports.url({ date, segment: 12}),
-          module.exports.url({ date, segment: 18}),
+          module.exports.url({ date, segment: 6 }),
+          module.exports.url({ date, segment: 12 }),
+          module.exports.url({ date, segment: 18 })
         ]
         await doFetch(queues, (url, res) => {
           if (Array.isArray(res.entries)) {
@@ -43,13 +41,12 @@ module.exports = {
         items.entries
           .filter(item => item.channelId === channel.site_id)
           .forEach(item => {
-            if (Array.isArray(item.events)){
+            if (Array.isArray(item.events)) {
               if (detailedGuide) {
-                queues.push(...item.events
-                  .map(event =>
-                    `https://spark-prod-nl.gnp.cloud.ziggogo.tv/eng/web/linear-service/v2/replayEvent/${
-                      event.id
-                    }?returnLinearContent=true&forceLinearResponse=true&language=nl`
+                queues.push(
+                  ...item.events.map(
+                    event =>
+                      `https://spark-prod-nl.gnp.cloud.ziggogo.tv/eng/web/linear-service/v2/replayEvent/${event.id}?returnLinearContent=true&forceLinearResponse=true&language=nl`
                   )
                 )
               } else {
@@ -92,20 +89,23 @@ module.exports = {
     const channels = []
     const axios = require('axios')
     const res = await axios
-      .get('https://spark-prod-nl.gnp.cloud.ziggogo.tv/eng/web/linear-service/v2/channels?cityId=65535&language=en&productClass=Orion-DASH&platform=web')
+      .get(
+        'https://spark-prod-nl.gnp.cloud.ziggogo.tv/eng/web/linear-service/v2/channels?cityId=65535&language=en&productClass=Orion-DASH&platform=web'
+      )
       .then(r => r.data)
       .catch(console.error)
 
     if (Array.isArray(res)) {
-      channels.push(...res
-        .filter(item => !item.isHidden)
-        .map(item => {
-          return {
-            lang: 'nl',
-            site_id: item.id,
-            name: item.name
-          }
-        })
+      channels.push(
+        ...res
+          .filter(item => !item.isHidden)
+          .map(item => {
+            return {
+              lang: 'nl',
+              site_id: item.id,
+              name: item.name
+            }
+          })
       )
     }
 

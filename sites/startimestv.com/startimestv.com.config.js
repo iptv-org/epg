@@ -8,9 +8,7 @@ const debug = require('debug')('site:startimestv.com')
 dayjs.extend(utc)
 dayjs.extend(customParseFormat)
 
-doFetch
-  .setDebugger(debug)
-  .setMaxWorker(5)
+doFetch.setDebugger(debug).setMaxWorker(5)
 
 module.exports = {
   site: 'startimestv.com',
@@ -24,7 +22,8 @@ module.exports = {
     const programs = []
     if (content) {
       const $ = cheerio.load(content)
-      $('.box .mask').toArray()
+      $('.box .mask')
+        .toArray()
         .forEach(el => {
           let title = parseText($(el).find('h4'))
           const [s, e] = title.substr(0, title.indexOf(' ')).split('-') || [null, null]
@@ -53,7 +52,8 @@ module.exports = {
       // process area-id
       if (queue.t === 'a') {
         const $ = cheerio.load(res)
-        $('dd.update-areaID').toArray()
+        $('dd.update-areaID')
+          .toArray()
           .forEach(el => {
             const dd = $(el)
             const areaId = dd.attr('area-id')
@@ -72,7 +72,8 @@ module.exports = {
       if (queue.t === 's') {
         if (res) {
           const $ = cheerio.load(res)
-          $(`.channl .c`).toArray()
+          $('.channl .c')
+            .toArray()
             .forEach(el => {
               // only process channel with schedule only
               const clazz = $(el).attr('class')
@@ -98,13 +99,10 @@ module.exports = {
 }
 
 function parseText($item) {
-  let text = $item.text()
-    .replace(/\t/g, '')
-    .replace(/\n/g, ' ')
-    .trim()
+  let text = $item.text().replace(/\t/g, '').replace(/\n/g, ' ').trim()
   while (true) {
-    if (text.match(/  /)) {
-      text = text.replace(/  /g, ' ')
+    if (text.match(/\s\s/)) {
+      text = text.replace(/\s\s/g, ' ')
       continue
     }
     break

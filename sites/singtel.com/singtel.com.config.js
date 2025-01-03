@@ -40,7 +40,7 @@ module.exports = {
     const cheerio = require('cheerio')
 
     const data = await axios
-      .get(`https://www.singtel.com/personal/products-services/tv/tv-programme-guide`)
+      .get('https://www.singtel.com/personal/products-services/tv/tv-programme-guide')
       .then(r => r.data)
       .catch(console.log)
 
@@ -62,7 +62,7 @@ function parseItems(content, channel) {
   try {
     const data = JSON.parse(content)
     return data && data[channel.site_id] ? data[channel.site_id] : []
-  } catch (err) {
+  } catch {
     return []
   }
 }

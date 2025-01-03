@@ -92,7 +92,7 @@ function parseItems(content, channel) {
     const [, channelId] = channel.site_id.split('#')
     const channelData = data.schedule.find(i => i.channel == channelId)
     return channelData.listing && Array.isArray(channelData.listing) ? channelData.listing : []
-  } catch (err) {
+  } catch {
     return []
   }
 }
