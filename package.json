@@ -16,7 +16,7 @@
     "test": "run-script-os",
     "test:win32": "SET \"TZ=Pacific/Nauru\" && npx jest --runInBand",
     "test:default": "TZ=Pacific/Nauru npx jest --runInBand",
-    "postinstall": "npm run api:load",
+    "postinstall": "test -n \"$SKIP_POSTINSTALL\" || npm run api:load",
     "prepare": "husky"
   },
   "private": true,
