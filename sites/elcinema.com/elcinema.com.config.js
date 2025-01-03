@@ -9,9 +9,14 @@ dayjs.extend(customParseFormat)
 dayjs.extend(timezone)
 dayjs.extend(utc)
 
+const headers = {
+  'User-Agent':
+'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 OPR/115.0.0.0' }
+
 module.exports = {
   site: 'elcinema.com',
   days: 2,
+  request: { headers },
   url({ channel }) {
     const lang = channel.lang === 'en' ? 'en/' : '/'
 
