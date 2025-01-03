@@ -51,11 +51,15 @@ async function main() {
 
     let localErrors: ValidationError[] = []
 
-    const xsdDoc = libxml.parseXml(xsd)
-    const doc = libxml.parseXml(xml)
+    try {
+      const xsdDoc = libxml.parseXml(xsd)
+      const doc = libxml.parseXml(xml)
 
-    if (!doc.validate(xsdDoc)) {
-      localErrors = doc.validationErrors
+      if (!doc.validate(xsdDoc)) {
+        localErrors = doc.validationErrors
+      }
+    } catch (error) {
+      localErrors.push(error)
     }
 
     if (localErrors.length) {
