@@ -6,9 +6,7 @@ Tools for downloading the EPG (Electronic Program Guide) for thousands of TV cha
 
 - ✨ [Installation](#installation)
 - 🚀 [Usage](#usage)
-- ⚙️ [Configuration](#configuration)
 - 💫 [Update](#update)
-- 🌎 [Serve](#serve)
 - 🐋 [Docker](#docker)
 - 📺 [Playlists](#playlists)
 - 🗄 [Database](#database)
@@ -50,9 +48,7 @@ npm run grab --- --site=example.com
 
 Then run it and wait for the guide to finish downloading. When finished, a new `guide.xml` file will appear in the current directory.
 
-## Configuration
-
-To customize `grab` behavior, you can add a few more options at the end of the command:
+You can also customize the behavior of the script using this options:
 
 ```sh
 Usage: npm run grab --- [options]
@@ -98,26 +94,28 @@ And then specify the path to that file via the `--channels` attribute:
 npm run grab --- --channels=path/to/custom.channels.xml
 ```
 
-## Update
+### Run on schedule
 
-If you have downloaded the repository code according to the instructions above, then to update it will be enough to run the command:
+To download the guide on a schedule, you can use the included process manager. Just run it with desire [cron expression](https://crontab.guru/) and the `grab` options:
 
 ```sh
-git pull
+npx pm2 start npm --no-autorestart --cron-restart="0 0,12 * * *" -- run grab --- --site=example.com
 ```
 
-And then update all the dependencies:
+To track the process, you can use the command:
 
 ```sh
-npm install
+npx pm2 logs
 ```
 
-## Serve
+For more info go to [pm2](https://pm2.keymetrics.io/docs/usage/quick-start/) documentation.
 
-You can make the guide available via URL by running your own server:
+### Access the guide by URL
+
+You can make the guide available via URL by running your own server. The easiest way to do this is to run this command:
 
 ```sh
-npm run serve
+npx serve
 ```
 
 After that, the guide will be available at the link:
@@ -130,6 +128,22 @@ In addition it will be available to other devices on the same local network at t
 
 ```
 http://<your_local_ip_address>:3000/guide.xml
+```
+
+For more info go to [serve](https://github.com/vercel/serve) documentation.
+
+## Update
+
+If you have downloaded the repository code according to the instructions above, then to update it will be enough to run the command:
+
+```sh
+git pull
+```
+
+And then update all the dependencies:
+
+```sh
+npm install
 ```
 
 ## Docker
