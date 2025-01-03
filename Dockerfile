@@ -17,10 +17,10 @@ RUN npm install
 RUN chmod +x /epg/myepg.sh
 
 # Add the cron job to run the shell script every day at 5:00 AM UTC
-RUN echo "0 5 * * * /epg/myepg.sh" >> /etc/crontab
+RUN echo "0 5 * * * /epg/myepg.sh >> /var/log/cron.log 2>&1" > /etc/crontabs/root
 
 # Expose the port that will be used by the server
 EXPOSE 80
 
-# Start the dcron service and run the shell script at container start, then run the server
-CMD /epg/myepg.sh && crond && npx serve -l 80 /epg/serve && tail -f /dev/null
+# Start both crond and the server
+CMD crond -f & npx serve -l 80 /epg/serve
