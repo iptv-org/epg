@@ -12,7 +12,6 @@ RUN apk update \
     && apk upgrade --available \
     && apk add curl git tzdata bash \
     && npm install -g npm@latest \
-    && npm install pm2 -g \
     && mkdir $(echo "${WORKDIR}") -p \
     && cd $WORKDIR \
     && git clone --depth 1 -b $(echo "${GIT_BRANCH} ${GIT_REPO}") . \
@@ -22,4 +21,4 @@ RUN apk del git curl \
   && rm -rf /var/cache/apk/*
 WORKDIR $WORKDIR
 EXPOSE 3000
-CMD [ "pm2-runtime", "pm2.config.js" ]
+CMD [ "npx", "pm2-runtime", "pm2.config.js" ]
