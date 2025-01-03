@@ -10,7 +10,6 @@
     "channels:validate": "npx tsx scripts/commands/channels/validate.ts",
     "sites:update": "npx tsx scripts/commands/sites/update.ts",
     "grab": "npx tsx scripts/commands/epg/grab.ts",
-    "serve": "npx serve",
     "lint": "npx eslint \"{scripts,tests}/**/*.{ts,js}\"",
     "test": "run-script-os",
     "test:win32": "SET \"TZ=Pacific/Nauru\" && npx jest --runInBand",
@@ -74,6 +73,8 @@
     "numeral": "^2.0.6",
     "parse-duration": "^1.0.0",
     "pdf-parse": "^1.1.1",
+    "pm2": "^5.4.3",
+    "run-script-os": "^1.1.6",
     "serve": "^14.2.4",
     "signale": "^1.4.0",
     "srcset": "^4.0.0",
@@ -85,8 +86,5 @@
     "tsx": "^4.19.2",
     "unzipit": "^1.4.0",
     "wildcard-match": "^5.1.2"
-  },
-  "devDependencies": {
-    "run-script-os": "^1.1.6"
   }
 }
