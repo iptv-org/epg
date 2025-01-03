@@ -1,203 +1,212 @@
 # Sites
 
-| Site                                                               | Status | Notes                                                                                    |
-| ------------------------------------------------------------------ | ------ | ---------------------------------------------------------------------------------------- |
-| [9tv.co.il](sites/9tv.co.il)                                       | 🟢     |                                                                                          |
-| [abc.net.au](sites/abc.net.au)                                     | 🟢     |                                                                                          |
-| [allente.dk](sites/allente.dk)                                     | 🟢     |                                                                                          |
-| [allente.fi](sites/allente.fi)                                     | 🟢     |                                                                                          |
-| [allente.no](sites/allente.no)                                     | 🟢     |                                                                                          |
-| [allente.se](sites/allente.se)                                     | 🟢     |                                                                                          |
-| [andorradifusio.ad](sites/andorradifusio.ad)                       | 🟢     |                                                                                          |
-| [anteltv.com.uy](sites/anteltv.com.uy)                             | 🟢     |                                                                                          |
-| [arianaafgtv.com](sites/arianaafgtv.com)                           | 🟢     |                                                                                          |
-| [arianatelevision.com](sites/arianatelevision.com)                 | 🟢     |                                                                                          |
-| [arirang.com](sites/arirang.com)                                   | 🟢     |                                                                                          |
-| [artonline.tv](sites/artonline.tv)                                 | 🟢     |                                                                                          |
-| [awilime.com](sites/awilime.com)                                   | 🟢     |                                                                                          |
-| [bein.com](sites/bein.com)                                         | 🟢     |                                                                                          |
-| [beinsports.com](sites/beinsports.com)                             | 🟢     |                                                                                          |
-| [berrymedia.co.kr](sites/berrymedia.co.kr)                         | 🟢     |                                                                                          |
-| [cablego.com.pe](sites/cablego.com.pe)                             | 🟢     |                                                                                          |
-| [cableplus.com.uy](sites/cableplus.com.uy)                         | 🟢     |                                                                                          |
-| [canalplus-haiti.com](sites/canalplus-haiti.com)                   | 🔴     | https://github.com/iptv-org/epg/issues/2237                                              |
-| [canalplus.com](sites/canalplus.com)                               | 🟢     |                                                                                          |
-| [cgates.lt](sites/cgates.lt)                                       | 🟢     |                                                                                          |
-| [chada.ma](sites/chada.ma)                                         | 🟢     |                                                                                          |
-| [chaines-tv.orange.fr](sites/chaines-tv.orange.fr)                 | 🟡     | https://github.com/iptv-org/epg/issues/2395                                              |
-| [clickthecity.com](sites/clickthecity.com)                         | 🟢     |                                                                                          |
-| [comteco.com.bo](sites/comteco.com.bo)                             | 🔴     | https://github.com/iptv-org/epg/issues/2239                                              |
-| [content.astro.com.my](sites/content.astro.com.my)                 | 🟢     |                                                                                          |
-| [cosmote.gr](sites/cosmote.gr)                                     | 🟢     |                                                                                          |
-| [cubmu.com](sites/cubmu.com)                                       | 🟢     |                                                                                          |
-| [dens.tv](sites/dens.tv)                                           | 🟢     |                                                                                          |
-| [digiturk.com.tr](sites/digiturk.com.tr)                           | 🔴     | https://github.com/iptv-org/epg/issues/2304, https://github.com/iptv-org/epg/issues/2547 |
-| [directv.com](sites/directv.com)                                   | 🔴     | https://github.com/iptv-org/epg/issues/2284                                              |
-| [directv.com.ar](sites/directv.com.ar)                             | 🔴     | https://github.com/iptv-org/epg/issues/2248                                              |
-| [directv.com.uy](sites/directv.com.uy)                             | 🟢     |                                                                                          |
-| [dishtv.in](sites/dishtv.in)                                       | 🔴     | https://github.com/iptv-org/epg/issues/2445                                              |
-| [dsmart.com.tr](sites/dsmart.com.tr)                               | 🟡     | https://github.com/iptv-org/epg/issues/2303                                              |
-| [dstv.com](sites/dstv.com)                                         | 🟢     |                                                                                          |
-| [elcinema.com](sites/elcinema.com)                                 | 🔴     | https://github.com/iptv-org/epg/issues/2541                                              |
-| [ena.skylifetv.co.kr](sites/ena.skylifetv.co.kr)                   | 🟢     |                                                                                          |
-| [energeek.cl](sites/energeek.cl)                                   | 🟢     |                                                                                          |
-| [entertainment.ie](sites/entertainment.ie)                         | 🟢     |                                                                                          |
-| [firstmedia.com](sites/firstmedia.com)                             | 🟢     |                                                                                          |
-| [flixed.io](sites/flixed.io)                                       | 🟡     | https://github.com/iptv-org/epg/issues/2543                                              |
-| [foxsports.com.au](sites/foxsports.com.au)                         | 🟢     |                                                                                          |
-| [foxtel.com.au](sites/foxtel.com.au)                               | 🟢     |                                                                                          |
-| [frikanalen.no](sites/frikanalen.no)                               | 🟢     |                                                                                          |
-| [gatotv.com](sites/gatotv.com)                                     | 🟢     |                                                                                          |
-| [getafteritmedia.com](sites/getafteritmedia.com)                   | 🟢     |                                                                                          |
-| [guida.tv](sites/guida.tv)                                         | 🟢     |                                                                                          |
-| [guidatv.sky.it](sites/guidatv.sky.it)                             | 🟢     |                                                                                          |
-| [hd-plus.de](sites/hd-plus.de)                                     | 🔴     | https://github.com/iptv-org/epg/issues/2173                                              |
-| [horizon.tv](sites/horizon.tv)                                     | 🟢     |                                                                                          |
-| [hoy.tv](sites/hoy.tv)                                             | 🟢     |                                                                                          |
-| [i.mjh.nz](sites/i.mjh.nz)                                         | 🟢     |                                                                                          |
-| [i24news.tv](sites/i24news.tv)                                     | 🟢     |                                                                                          |
-| [iltalehti.fi](sites/iltalehti.fi)                                 | 🟡     | https://github.com/iptv-org/epg/issues/2396                                              |
-| [indihometv.com](sites/indihometv.com)                             | 🟢     |                                                                                          |
-| [ionplustv.com](sites/ionplustv.com)                               | 🟢     |                                                                                          |
-| [ipko.tv](sites/ipko.tv)                                           | 🟢     |                                             |
-| [kan.org.il](sites/kan.org.il)                                     | 🔴     | https://github.com/iptv-org/epg/issues/2273                                              |
-| [knr.gl](sites/knr.gl)                                             | 🟢     |                                                                                          |
-| [kplus.vn](sites/kplus.vn)                                         | 🔴     | https://github.com/iptv-org/epg/issues/2240                                              |
-| [kvf.fo](sites/kvf.fo)                                             | 🟢     |                                                                                          |
-| [m.tv.sms.cz](sites/m.tv.sms.cz)                                   | 🔴     | https://github.com/iptv-org/epg/issues/2241                                              |
-| [m.tving.com](sites/m.tving.com)                                   | 🟢     |                                                                                          |
-| [magticom.ge](sites/magticom.ge)                                   | 🟢     |                                                                                          |
-| [mako.co.il](sites/mako.co.il)                                     | 🟢     |                                                                                          |
-| [maxtv.hrvatskitelekom.hr](sites/maxtv.hrvatskitelekom.hr)         | 🔴     | https://github.com/iptv-org/epg/issues/2509                                              |
-| [maxtvgo.mk](sites/maxtvgo.mk)                                     | 🟢     |                                                                                          |
-| [mediagenie.co.kr](sites/mediagenie.co.kr)                         | 🟢     |                                                                                          |
-| [mediaklikk.hu](sites/mediaklikk.hu)                               | 🟢     |                                                                                          |
-| [mediasetinfinity.mediaset.it](sites/mediasetinfinity.mediaset.it) | 🟢     |                                                                                          |
-| [melita.com](sites/melita.com)                                     | 🟢     |                                                                                          |
-| [meo.pt](sites/meo.pt)                                             | 🟡     | https://github.com/iptv-org/epg/issues/2446                                              |
-| [meuguia.tv](sites/meuguia.tv)                                     | 🟢     |                                                                                          |
-| [mewatch.sg](sites/mewatch.sg)                                     | 🟢     |                                                                                          |
-| [mi.tv](sites/mi.tv)                                               | 🟢     |                                                                                          |
-| [mncvision.id](sites/mncvision.id)                                 | 🟢     |                                                                                          |
-| [moji.id](sites/moji.id)                                           | 🟢     |                                                                                          |
-| [mon-programme-tv.be](sites/mon-programme-tv.be)                   | 🟢     |                                                                                          |
-| [movistarplus.es](sites/movistarplus.es)                           | 🔴     | https://github.com/iptv-org/epg/issues/2498                                              |
-| [mtel.ba](sites/mtel.ba)                                           | 🟢     |                                                                                          |
-| [mts.rs](sites/mts.rs)                                             | 🟢     |                                                                                          |
-| [mujtvprogram.cz](sites/mujtvprogram.cz)                           | 🟢     |                                                                                          |
-| [musor.tv](sites/musor.tv)                                         | 🟢     |                                                                                          |
-| [mysky.com.ph](sites/mysky.com.ph)                                 | 🟢     |                                                                                          |
-| [mytelly.co.uk](sites/mytelly.co.uk)                               | 🟢     |                                                                                          |
-| [mytvsuper.com](sites/mytvsuper.com)                               | 🟢     |                                                                                          |
-| [neo.io](sites/neo.io)                                             | 🟢     |                                                                                          |
-| [nhkworldpremium.com](sites/nhkworldpremium.com)                   | 🟢     |                                                                                          |
-| [nhl.com](sites/nhl.com)                                           | 🟢     |                                                                                          |
-| [nostv.pt](sites/nostv.pt)                                         | 🟢     |                                                                                          |
-| [novacyprus.com](sites/novacyprus.com)                             | 🟢     |                                                                                          |
-| [novasports.gr](sites/novasports.gr)                               | 🟢     |                                                                                          |
-| [nowplayer.now.com](sites/nowplayer.now.com)                       | 🟢     |                                                                                          |
-| [nuevosiglo.com.uy](sites/nuevosiglo.com.uy)                       | 🟢     |                                                                                          |
-| [nzxmltv.com](sites/nzxmltv.com)                                   | 🟢     |                                                                                          |
-| [ontvtonight.com](sites/ontvtonight.com)                           | 🟢     |                                                                                          |
-| [osn.com](sites/osn.com)                                           | 🟢     |                                                                                          |
-| [pbsguam.org](sites/pbsguam.org)                                   | 🟢     |                                                                                          |
-| [pickx.be](sites/pickx.be)                                         | 🟢     |                                                                                          |
-| [player.ee.co.uk](sites/player.ee.co.uk)                           | 🟢     |                                                                                          |
-| [playtv.unifi.com.my](sites/playtv.unifi.com.my)                   | 🟢     |                                                                                          |
-| [plex.tv](sites/plex.tv)                                           | 🟢     |                                                                                          |
-| [programacion-tv.elpais.com](sites/programacion-tv.elpais.com)     | 🟢     |                                                                                          |
-| [programacion.tcc.com.uy](sites/programacion.tcc.com.uy)           | 🟢     |                                                                                          |
-| [programetv.ro](sites/programetv.ro)                               | 🟢     |                                                                                          |
-| [programme-tv.net](sites/programme-tv.net)                         | 🟢     |                                                                                          |
-| [programme-tv.vini.pf](sites/programme-tv.vini.pf)                 | 🟢     |                                                                                          |
-| [programme.tvb.com](sites/programme.tvb.com)                       | 🟢     |                                                                                          |
-| [programtv.onet.pl](sites/programtv.onet.pl)                       | 🟢     |                                                                                          |
-| [raiplay.it](sites/raiplay.it)                                     | 🟢     |                                                                                          |
-| [reportv.com.ar](sites/reportv.com.ar)                             | 🟢     |                                                                                          |
-| [rev.bs](sites/rev.bs)                                             | 🔴     | https://github.com/iptv-org/epg/issues/2255                                              |
-| [rotana.net](sites/rotana.net)                                     | 🟢     |                                                                                          |
-| [rtb.gov.bn](sites/rtb.gov.bn)                                     | 🔴     | https://github.com/iptv-org/epg/issues/2257                                              |
-| [rthk.hk](sites/rthk.hk)                                           | 🟢     |                                                                                          |
-| [rtmklik.rtm.gov.my](sites/rtmklik.rtm.gov.my)                     | 🟢     |                                                                                          |
-| [rtp.pt](sites/rtp.pt)                                             | 🟢     |                                                                                          |
-| [ruv.is](sites/ruv.is)                                             | 🟢     |                                                                                          |
-| [s.mxtv.jp](sites/s.mxtv.jp)                                       | 🟢     |                                                                                          |
-| [sat.tv](sites/sat.tv)                                             | 🟢     |                                                                                          |
-| [shahid.mbc.net](sites/shahid.mbc.net)                             | 🟢     |                                                                                          |
-| [siba.com.co](sites/siba.com.co)                                   | 🟢     |                                                                                          |
-| [singtel.com](sites/singtel.com)                                   | 🟢     |                                                                                          |
-| [sjonvarp.is](sites/sjonvarp.is)                                   | 🟢     |                                                                                          |
-| [sky.co.nz](sites/sky.co.nz)                                       | 🟢     |                                                                                          |
-| [sky.com](sites/sky.com)                                           | 🟡     | https://github.com/iptv-org/epg/issues/2501, https://github.com/iptv-org/epg/issues/2516 |
-| [sky.de](sites/sky.de)                                             | 🟢     |                                                                                          |
-| [skylife.co.kr](sites/skylife.co.kr)                               | 🟢     |                                                                                          |
-| [skyperfecttv.co.jp](sites/skyperfecttv.co.jp)                     | 🟢     |                                                                                          |
-| [sporttv.pt](sites/sporttv.pt)                                     | 🟢     |                                                                                          |
-| [starhubtvplus.com](sites/starhubtvplus.com)                       | 🟢     |                                                                                          |
-| [startimestv.com](sites/startimestv.com)                           | 🟢     |                                                                                          |
-| [streamingtvguides.com](sites/streamingtvguides.com)               | 🟢     |                                                                                          |
-| [superguidatv.it](sites/superguidatv.it)                           | 🟢     |                                                                                          |
-| [taiwanplus.com](sites/taiwanplus.com)                             | 🟢     |                                                                                          |
-| [tapdmv.com](sites/tapdmv.com)                                     | 🟢     |                                                                                          |
-| [telenet.tv](sites/telenet.tv)                                     | 🟢     |                                                                                          |
-| [teliatv.ee](sites/teliatv.ee)                                     | 🟢     |                                                                                          |
-| [telkussa.fi](sites/telkussa.fi)                                   | 🟢     |                                                                                          |
-| [telsu.fi](sites/telsu.fi)                                         | 🟢     |                                                                                          |
-| [tivu.tv](sites/tivu.tv)                                           | 🟢     |                                                                                          |
-| [toonamiaftermath.com](sites/toonamiaftermath.com)                 | 🟢     |                                                                                          |
-| [turksatkablo.com.tr](sites/turksatkablo.com.tr)                   | 🟢     |                                                                                          |
-| [tv-programme.telecablesat.fr](sites/tv-programme.telecablesat.fr) | 🟢     |                                                                                          |
-| [tv.blue.ch](sites/tv.blue.ch)                                     | 🟢     |                                                                                          |
-| [tv.cctv.com](sites/tv.cctv.com)                                   | 🟢     |                                                                                          |
-| [tv.dir.bg](sites/tv.dir.bg)                                       | 🟢     |                                                                                          |
-| [tv.lv](sites/tv.lv)                                               | 🟢     |                                                                                          |
-| [tv.magenta.at](sites/tv.magenta.at)                               | 🟢     |                                                                                          |
-| [tv.mail.ru](sites/tv.mail.ru)                                     | 🟢     |                                                                                          |
-| [tv.movistar.com.pe](sites/tv.movistar.com.pe)                     | 🟢     |                                                                                          |
-| [tv.nu](sites/tv.nu)                                               | 🟢     |                                                                                          |
-| [tv.post.lu](sites/tv.post.lu)                                     | 🟢     |                                                                                          |
-| [tv.trueid.net](sites/tv.trueid.net)                               | 🟢     |                                                                                          |
-| [tv.yandex.ru](sites/tv.yandex.ru)                                 | 🟢     |                                                                                          |
-| [tv.yettel.hu](sites/tv.yettel.hu)                                 | 🔴     | https://github.com/iptv-org/epg/issues/2263                                              |
-| [tv24.co.uk](sites/tv24.co.uk)                                     | 🟢     |                                                                                          |
-| [tv24.se](sites/tv24.se)                                           | 🟢     |                                                                                          |
-| [tv2go.t-2.net](sites/tv2go.t-2.net)                               | 🟢     |                                                                                          |
-| [tva.tv](sites/tva.tv)                                             | 🔴     | https://github.com/iptv-org/epg/issues/2264                                              |
-| [tvarenasport.com](sites/tvarenasport.com)                         | 🟢     |                                                                                          |
-| [tvarenasport.hr](sites/tvarenasport.hr)                           | 🟢     |                                                                                          |
-| [tvcesoir.fr](sites/tvcesoir.fr)                                   | 🟢     |                                                                                          |
-| [tvcubana.icrt.cu](sites/tvcubana.icrt.cu)                         | 🟢     |                                                                                          |
-| [tvgids.nl](sites/tvgids.nl)                                       | 🟡     | https://github.com/iptv-org/epg/issues/2400                                              |
-| [tvguide.com](sites/tvguide.com)                                   | 🔴     | https://github.com/iptv-org/epg/issues/2542                                              |
-| [tvguide.myjcom.jp](sites/tvguide.myjcom.jp)                       | 🟢     |                                                                                          |
-| [tvhebdo.com](sites/tvhebdo.com)                                   | 🟢     |                                                                                          |
-| [tvheute.at](sites/tvheute.at)                                     | 🟢     |                                                                                          |
-| [tvim.tv](sites/tvim.tv)                                           | 🟢     |                                                                                          |
-| [tvireland.ie](sites/tvireland.ie)                                 | 🟢     |                                                                                          |
-| [tvmi.mt](sites/tvmi.mt)                                           | 🟢     |                                                                                          |
-| [tvmusor.hu](sites/tvmusor.hu)                                     | 🟢     |                                                                                          |
-| [tvpassport.com](sites/tvpassport.com)                             | 🟢     |                                                                                          |
-| [tvplus.com.tr](sites/tvplus.com.tr)                               | 🟢     |                                                                                          |
-| [tvprofil.com](sites/tvprofil.com)                                 | 🟡     | https://github.com/iptv-org/epg/issues/2399                                              |
-| [tvtv.us](sites/tvtv.us)                                           | 🟢     |                                                                                          |
-| [v3.myafn.dodmedia.osd.mil](sites/v3.myafn.dodmedia.osd.mil)       | 🟢     |                                                                                          |
-| [vidio.com](sites/vidio.com)                                       | 🟢     |                                                                                          |
-| [virginmediatelevision.ie](sites/virginmediatelevision.ie)         | 🟢     |                                                                                          |
-| [virgintvgo.virginmedia.com](sites/virgintvgo.virginmedia.com)     | 🟢     |                                                                                          |
-| [visionplus.id](sites/visionplus.id)                               | 🟢     |                                                                                          |
-| [vivacom.bg](sites/vivacom.bg)                                     | 🔴     | https://github.com/iptv-org/epg/issues/2270                                              |
-| [vtm.be](sites/vtm.be)                                             | 🟢     |                                                                                          |
-| [walesi.com.fj](sites/walesi.com.fj)                               | 🟢     |                                                                                          |
-| [watch.sportsnet.ca](sites/watch.sportsnet.ca)                     | 🟢     |                                                                                          |
-| [watchyour.tv](sites/watchyour.tv)                                 | 🟢     |                                                                                          |
-| [wavve.com](sites/wavve.com)                                       | 🟢     |                                                                                          |
-| [web.magentatv.de](sites/web.magentatv.de)                         | 🟢     |                                                                                          |
-| [webtv.delta.nl](sites/webtv.delta.nl)                             | 🟢     |                                                                                          |
-| [winplay.co](sites/winplay.co)                                     | 🟢     |                                                                                          |
-| [worldfishingnetwork.com](sites/worldfishingnetwork.com)           | 🟢     |                                                                                          |
-| [www3.nhk.or.jp](sites/www3.nhk.or.jp)                             | 🟢     |                                                                                          |
-| [xumo.tv](sites/xumo.tv)                                           | 🟢     |                                                                                          |
-| [zap.co.ao](sites/zap.co.ao)                                       | 🟢     |                                                                                          |
-| [ziggogo.tv](sites/ziggogo.tv)                                     | 🟡     | https://github.com/iptv-org/epg/issues/2393                                              |
-| [znbc.co.zm](sites/znbc.co.zm)                                     | 🟢     |                                                                                          |
-| [zuragt.mn](sites/zuragt.mn)                                       | 🟢     |                                                                                          |
+<!-- prettier-ignore -->
+<table>
+  <thead>
+    <tr><th align="left">Site</th><th align="left">Status</th><th align="left">Notes</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="sites/9tv.co.il">9tv.co.il</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/abc.net.au">abc.net.au</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/allente.dk">allente.dk</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/allente.fi">allente.fi</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/allente.no">allente.no</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/allente.se">allente.se</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/andorradifusio.ad">andorradifusio.ad</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/anteltv.com.uy">anteltv.com.uy</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/arianaafgtv.com">arianaafgtv.com</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/arianatelevision.com">arianatelevision.com</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/arirang.com">arirang.com</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/artonline.tv">artonline.tv</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/awilime.com">awilime.com</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/bein.com">bein.com</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/beinsports.com">beinsports.com</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/berrymedia.co.kr">berrymedia.co.kr</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/cablego.com.pe">cablego.com.pe</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/cableplus.com.uy">cableplus.com.uy</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/canalplus-haiti.com">canalplus-haiti.com</a></td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2237</td></tr>
+    <tr><td><a href="sites/canalplus.com">canalplus.com</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/cgates.lt">cgates.lt</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/chada.ma">chada.ma</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/chaines-tv.orange.fr">chaines-tv.orange.fr</a></td><td>🟡</td><td>https://github.com/iptv-org/epg/issues/2395</td></tr>
+    <tr><td><a href="sites/clickthecity.com">clickthecity.com</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/comteco.com.bo">comteco.com.bo</a></td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2239</td></tr>
+    <tr><td><a href="sites/content.astro.com.my">content.astro.com.my</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/cosmotetv.gr">cosmotetv.gr</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/cubmu.com">cubmu.com</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/dens.tv">dens.tv</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/digiturk.com.tr">digiturk.com.tr</a></td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2304, https://github.com/iptv-org/epg/issues/2547</td></tr>
+    <tr><td><a href="sites/directv.com">directv.com</a></td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2284</td></tr>
+    <tr><td><a href="sites/directv.com.ar">directv.com.ar</a></td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2339</td></tr>
+    <tr><td><a href="sites/directv.com.uy">directv.com.uy</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/dishtv.in">dishtv.in</a></td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2445</td></tr>
+    <tr><td><a href="sites/dsmart.com.tr">dsmart.com.tr</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/dstv.com">dstv.com</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/elcinema.com">elcinema.com</a></td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2541</td></tr>
+    <tr><td><a href="sites/ena.skylifetv.co.kr">ena.skylifetv.co.kr</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/energeek.cl">energeek.cl</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/entertainment.ie">entertainment.ie</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/firstmedia.com">firstmedia.com</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/flixed.io">flixed.io</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/foxsports.com.au">foxsports.com.au</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/foxtel.com.au">foxtel.com.au</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/frikanalen.no">frikanalen.no</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/gatotv.com">gatotv.com</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/getafteritmedia.com">getafteritmedia.com</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/guida.tv">guida.tv</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/guidatv.sky.it">guidatv.sky.it</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/hd-plus.de">hd-plus.de</a></td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2173</td></tr>
+    <tr><td><a href="sites/horizon.tv">horizon.tv</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/hoy.tv">hoy.tv</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/i.mjh.nz">i.mjh.nz</a></td><td>🟡</td><td>https://github.com/iptv-org/epg/issues/2556</td></tr>
+    <tr><td><a href="sites/i24news.tv">i24news.tv</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/iltalehti.fi">iltalehti.fi</a></td><td>🟡</td><td>https://github.com/iptv-org/epg/issues/2396</td></tr>
+    <tr><td><a href="sites/indihometv.com">indihometv.com</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/ionplustv.com">ionplustv.com</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/ipko.tv">ipko.tv</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/kan.org.il">kan.org.il</a></td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2273</td></tr>
+    <tr><td><a href="sites/knr.gl">knr.gl</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/kplus.vn">kplus.vn</a></td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2240</td></tr>
+    <tr><td><a href="sites/kvf.fo">kvf.fo</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/m.tv.sms.cz">m.tv.sms.cz</a></td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2241</td></tr>
+    <tr><td><a href="sites/m.tving.com">m.tving.com</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/magticom.ge">magticom.ge</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/mako.co.il">mako.co.il</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/maxtv.hrvatskitelekom.hr">maxtv.hrvatskitelekom.hr</a></td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2509</td></tr>
+    <tr><td><a href="sites/maxtvgo.mk">maxtvgo.mk</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/mediagenie.co.kr">mediagenie.co.kr</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/mediaklikk.hu">mediaklikk.hu</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/mediasetinfinity.mediaset.it">mediasetinfinity.mediaset.it</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/melita.com">melita.com</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/meo.pt">meo.pt</a></td><td>🟡</td><td>https://github.com/iptv-org/epg/issues/2446</td></tr>
+    <tr><td><a href="sites/meuguia.tv">meuguia.tv</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/mewatch.sg">mewatch.sg</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/mi.tv">mi.tv</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/mncvision.id">mncvision.id</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/moji.id">moji.id</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/mon-programme-tv.be">mon-programme-tv.be</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/movistarplus.es">movistarplus.es</a></td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2498</td></tr>
+    <tr><td><a href="sites/mtel.ba">mtel.ba</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/mts.rs">mts.rs</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/mujtvprogram.cz">mujtvprogram.cz</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/musor.tv">musor.tv</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/mysky.com.ph">mysky.com.ph</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/mytelly.co.uk">mytelly.co.uk</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/mytvsuper.com">mytvsuper.com</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/neo.io">neo.io</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/nhkworldpremium.com">nhkworldpremium.com</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/nhl.com">nhl.com</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/nostv.pt">nostv.pt</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/novacyprus.com">novacyprus.com</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/novasports.gr">novasports.gr</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/nowplayer.now.com">nowplayer.now.com</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/nuevosiglo.com.uy">nuevosiglo.com.uy</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/nzxmltv.com">nzxmltv.com</a></td><td>🟡</td><td>https://github.com/iptv-org/epg/issues/2557</td></tr>
+    <tr><td><a href="sites/ontvtonight.com">ontvtonight.com</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/orangetv.orange.es">orangetv.orange.es</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/osn.com">osn.com</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/pbsguam.org">pbsguam.org</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/pickx.be">pickx.be</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/player.ee.co.uk">player.ee.co.uk</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/playtv.unifi.com.my">playtv.unifi.com.my</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/plex.tv">plex.tv</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/programacion-tv.elpais.com">programacion-tv.elpais.com</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/programacion.tcc.com.uy">programacion.tcc.com.uy</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/programetv.ro">programetv.ro</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/programme-tv.net">programme-tv.net</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/programme-tv.vini.pf">programme-tv.vini.pf</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/programme.tvb.com">programme.tvb.com</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/programtv.onet.pl">programtv.onet.pl</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/raiplay.it">raiplay.it</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/reportv.com.ar">reportv.com.ar</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/rev.bs">rev.bs</a></td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2255</td></tr>
+    <tr><td><a href="sites/rotana.net">rotana.net</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/rtb.gov.bn">rtb.gov.bn</a></td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2257</td></tr>
+    <tr><td><a href="sites/rthk.hk">rthk.hk</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/rtmklik.rtm.gov.my">rtmklik.rtm.gov.my</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/rtp.pt">rtp.pt</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/ruv.is">ruv.is</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/s.mxtv.jp">s.mxtv.jp</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/sat.tv">sat.tv</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/shahid.mbc.net">shahid.mbc.net</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/siba.com.co">siba.com.co</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/singtel.com">singtel.com</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/sjonvarp.is">sjonvarp.is</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/sky.co.nz">sky.co.nz</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/sky.com">sky.com</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/sky.de">sky.de</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/skylife.co.kr">skylife.co.kr</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/skyperfectv.co.jp">skyperfectv.co.jp</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/snrt.ma">snrt.ma</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/sporttv.pt">sporttv.pt</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/starhubtvplus.com">starhubtvplus.com</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/startimestv.com">startimestv.com</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/streamingtvguides.com">streamingtvguides.com</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/superguidatv.it">superguidatv.it</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/taiwanplus.com">taiwanplus.com</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/tapdmv.com">tapdmv.com</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/telenet.tv">telenet.tv</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/teliatv.ee">teliatv.ee</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/telkussa.fi">telkussa.fi</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/telsu.fi">telsu.fi</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/tivie.id">tivie.id</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/tivu.tv">tivu.tv</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/toonamiaftermath.com">toonamiaftermath.com</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/turksatkablo.com.tr">turksatkablo.com.tr</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/tv-programme.telecablesat.fr">tv-programme.telecablesat.fr</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/tv.blue.ch">tv.blue.ch</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/tv.cctv.com">tv.cctv.com</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/tv.dir.bg">tv.dir.bg</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/tv.lv">tv.lv</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/tv.magenta.at">tv.magenta.at</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/tv.mail.ru">tv.mail.ru</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/tv.movistar.com.pe">tv.movistar.com.pe</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/tv.nu">tv.nu</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/tv.post.lu">tv.post.lu</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/tv.trueid.net">tv.trueid.net</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/tv.yandex.ru">tv.yandex.ru</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/tv.yettel.hu">tv.yettel.hu</a></td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2263</td></tr>
+    <tr><td><a href="sites/tv24.co.uk">tv24.co.uk</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/tv24.se">tv24.se</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/tv2go.t-2.net">tv2go.t-2.net</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/tva.tv">tva.tv</a></td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2264</td></tr>
+    <tr><td><a href="sites/tvarenasport.com">tvarenasport.com</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/tvarenasport.hr">tvarenasport.hr</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/tvcesoir.fr">tvcesoir.fr</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/tvcubana.icrt.cu">tvcubana.icrt.cu</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/tvgids.nl">tvgids.nl</a></td><td>🟡</td><td>https://github.com/iptv-org/epg/issues/2400</td></tr>
+    <tr><td><a href="sites/tvguide.com">tvguide.com</a></td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2542</td></tr>
+    <tr><td><a href="sites/tvguide.myjcom.jp">tvguide.myjcom.jp</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/tvhebdo.com">tvhebdo.com</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/tvheute.at">tvheute.at</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/tvim.tv">tvim.tv</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/tvireland.ie">tvireland.ie</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/tvmi.mt">tvmi.mt</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/tvmusor.hu">tvmusor.hu</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/tvpassport.com">tvpassport.com</a></td><td>🟡</td><td>https://github.com/iptv-org/epg/issues/2272</td></tr>
+    <tr><td><a href="sites/tvplus.com.tr">tvplus.com.tr</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/tvprofil.com">tvprofil.com</a></td><td>🟡</td><td>https://github.com/iptv-org/epg/issues/2399</td></tr>
+    <tr><td><a href="sites/tvtv.us">tvtv.us</a></td><td>🟡</td><td>https://github.com/iptv-org/epg/issues/2176</td></tr>
+    <tr><td><a href="sites/v3.myafn.dodmedia.osd.mil">v3.myafn.dodmedia.osd.mil</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/vidio.com">vidio.com</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/virginmediatelevision.ie">virginmediatelevision.ie</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/virgintvgo.virginmedia.com">virgintvgo.virginmedia.com</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/visionplus.id">visionplus.id</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/vivacom.bg">vivacom.bg</a></td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2270</td></tr>
+    <tr><td><a href="sites/vtm.be">vtm.be</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/walesi.com.fj">walesi.com.fj</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/watch.sportsnet.ca">watch.sportsnet.ca</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/watchyour.tv">watchyour.tv</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/wavve.com">wavve.com</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/web.magentatv.de">web.magentatv.de</a></td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2555</td></tr>
+    <tr><td><a href="sites/webtv.delta.nl">webtv.delta.nl</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/winplay.co">winplay.co</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/worldfishingnetwork.com">worldfishingnetwork.com</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/www3.nhk.or.jp">www3.nhk.or.jp</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/xumo.tv">xumo.tv</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/zap.co.ao">zap.co.ao</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/ziggogo.tv">ziggogo.tv</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/znbc.co.zm">znbc.co.zm</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/zuragt.mn">zuragt.mn</a></td><td>🟢</td><td></td></tr>
+  </tbody>
+</table>
