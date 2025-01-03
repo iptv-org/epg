@@ -17,19 +17,26 @@ jobs:
         id: files
         with:
           since_last_remote_commit: true
-          files: |
-            tests/**/*.{js,ts}
-            scripts/**/*.{js,ts}
-            sites/**/*.{js,ts}
+          files_yaml: |
+            js:
+              - tests/**/*.{js,ts}
+              - scripts/**/*.{js,ts}
+              - sites/**/*.{js,ts}
+            channels:
+              - sites/**/*.channels.xml
       - uses: actions/setup-node@v4
-        if: ${{ !env.ACT && steps.files.outputs.any_changed == 'true' }}
+        if: ${{ !env.ACT && (steps.files.outputs.js_any_changed == 'true' || steps.files.outputs.channels_any_changed == 'true') }}
         with:
           node-version: 22
           cache: 'npm'
       - name: install dependencies
-        if: steps.files.outputs.any_changed == 'true'
-        run: npm install
-      - name: check changed files
-        if: steps.files.outputs.any_changed == 'true'
+        if: steps.files.outputs.js_any_changed == 'true' || steps.files.outputs.channels_any_changed == 'true'
+        run: SKIP_POSTINSTALL=1 npm install
+      - name: check changed js-files
+        if: steps.files.outputs.js_any_changed == 'true'
         run: |
-          npx eslint ${{ steps.files.outputs.all_changed_files }}
+          npx eslint ${{ steps.files.outputs.js_all_changed_files }}
+      - name: check changed *.channels.xml
+        if: steps.files.outputs.channels_any_changed == 'true'
+        run: |
+          npm run channels:lint -- ${{ steps.files.outputs.channels_all_changed_files }}
