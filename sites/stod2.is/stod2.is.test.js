@@ -3,13 +3,10 @@ const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
 const timezone = require('dayjs/plugin/timezone')
-const axios = require('axios')
 
 dayjs.extend(utc)
 dayjs.extend(customParseFormat)
 dayjs.extend(timezone)
-
-jest.mock('axios')
 
 const date = dayjs.utc('2025-01-03', 'YYYY-MM-DD').startOf('day')
 const channel = { site_id: 'stod2', xmltv_id: 'Stod2.is' }

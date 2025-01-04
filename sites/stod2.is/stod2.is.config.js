@@ -6,7 +6,6 @@ dayjs.extend(utc)
 
 module.exports = {
   site: 'stod2.is',
-  channels: 'stod2.is.channels.xml',
   days: 7,
   request: {
     cache: {
