@@ -52,12 +52,11 @@ it('can generate valid arabic url', () => {
 })
 
 it('can parse english response', async () => {
-  let result = await parser({
+  const result = (await parser({
     channel,
     date,
     content: fs.readFileSync(path.join(__dirname, '/__data__/content_en.html'))
-  })
-  result = result.map(a => {
+  })).map(a => {
     a.start = a.start.toJSON()
     a.stop = a.stop.toJSON()
     return a
@@ -76,12 +75,11 @@ it('can parse english response', async () => {
 })
 
 it('can parse arabic response', async () => {
-  let result = await parser({
+  const result = (await parser({
     channel: channelAr,
     date,
     content: fs.readFileSync(path.join(__dirname, '/__data__/content_ar.html'))
-  })
-  result = result.map(a => {
+  })).map(a => {
     a.start = a.start.toJSON()
     a.stop = a.stop.toJSON()
     return a

@@ -18,7 +18,7 @@ module.exports = {
     }
     const day = date.day()
 
-    return `https://www.programetv.ro/post/${channel.site_id}/${daysOfWeek[day]}/`
+    return `https://www.programetv.ro/program-tv/${channel.site_id}/${daysOfWeek[day]}/`
   },
   parser: function ({ content }) {
     let programs = []

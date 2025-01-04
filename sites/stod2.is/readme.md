@@ -1,6 +1,6 @@
 # stod2.is
 
-https://stod2.is/framundan-i-beinni/
+https://stod2.is/dagskra/
 
 ### Download the guide
 
