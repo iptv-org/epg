@@ -13,8 +13,9 @@ const channel = {
 
 it('can generate valid url', () => {
   const generatedUrl = url({ date, channel })
-  console.log('Generated URL:', generatedUrl)
-  expect(generatedUrl).toBe('https://epg.cyta.com.cy/api/mediacatalog/fetchEpg?startTimeEpoch=1735862400000&endTimeEpoch=1735948800000&language=1&channelIds=561066')
+  expect(generatedUrl).toBe(
+    'https://epg.cyta.com.cy/api/mediacatalog/fetchEpg?startTimeEpoch=1735862400000&endTimeEpoch=1735948800000&language=1&channelIds=561066'
+  )
 })
 
 it('can parse response', () => {
@@ -37,9 +38,9 @@ it('can parse response', () => {
 
   expect(result).toMatchObject([
     {
-      title: "Πρώτη Ενημέρωση",
-      start: "2025-01-03T04:45:00.000Z",
-      stop: "2025-01-03T07:30:00.000Z"
+      title: 'Πρώτη Ενημέρωση',
+      start: '2025-01-03T04:45:00.000Z',
+      stop: '2025-01-03T07:30:00.000Z'
     }
   ])
 })
