@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="id">
+<body class="font-sans text-black text-opacity-80 antialiased bg-slate-50">
+    <div class="min-h-screen max-w-lg mx-auto bg-white relative flex flex-col">
+        <main id="main-content" class="flex-grow w-full">
+            <div class="">
+                <div class="flex flex-col">
+                    <div class="relative order-first">
+                        <!-- /.sticky -->
+                        <div class="px-4 py-1 relative top-20 -mt-20">
+                            <ul x-data="{
+                            current: 1735659949671,
+                            offset: 0,
+                            playing: [],
+                            duration: 0,
+                            start: 0,
+                            end: 0,
+                            next: false,
+                            running: 0,
+                            percentage: 100,
+                            calcPercentage(numb, base) {
+                                return base > 0 ? (numb/base*100).toFixed(2) : 0;
+                            },
+                        }" x-init="
+                            fetch('https://tivie.id/api/channel?id=axn&amp;date=2024-12-31')
+                                .then(response => response.json())
+                                .then(data => {
+                                    if( data ) {
+                                        playing = data;
+                                        current = data.current;
+                                        next = data.next;
+                                        duration = data.duration;
+                                        start = data.str;
+                                        end = start + duration;
+                                        running = current - start;
+                                        percentage = calcPercentage(running, duration);
+                                        const a = document.getElementById('appbar').getBoundingClientRect().height;
+                                        const b = document.getElementById('date-ctrl').getBoundingClientRect().height;
+                                        const y = document.getElementById('event-' + playing.id).getBoundingClientRect().top + window.scrollY;
+                                        window.scroll({
+                                            top: y - a - b + 2,
+                                            behavior: 'smooth'
+                                        });
+                                    }
+                                });
+                            offset = current - new Date().getTime();
+                            setInterval(() => {
+                                current = new Date().getTime() + offset;
+                                $dispatch('current');
+                            }, 1234);
+                        " @current.window="
+                            running = current - start;
+                            percentage = calcPercentage(running, duration);
+                            if( end && end < current ) {
+                                if( !next ) {
+                                    percentage = 0;
+                                    fetch('https://tivie.id/api/channel?id=axn&amp;date=2024-12-31')
+                                        .then(response => response.json())
+                                        .then(data => {
+                                            if( data ) {
+                                                playing = data;
+                                                current = data.current;
+                                                next = data.next;
+                                                duration = data.duration;
+                                                start = data.str;
+                                                end = start + duration;
+                                                running = current - start;
+                                                percentage = calcPercentage(running, duration);
+                                            } else {
+                                                end = 0;
+                                            }
+                                        });
+                                } else {
+                                    location.reload();
+                                }
+                            }
+                        " class="divide-y">
+                                <li x-data="{ itemId: 1735578000482996, title: $refs.title.innerHTML, url: $refs.url ? $refs.url.href : '' }"
+                                    class="py-2" id="event-1735578000482996">
+                                    <div class="flex items-start w-full bg-white">
+                                        <div
+                                            class="w-13 font-medium flex justify-center items-center text-center shrink-0 leading-tight opacity-90 mr-3">
+                                            <span before=":"
+                                                class="shrink-0 w-1 h-4 leading-4 flex flex-col items-center overflow-hidden before:content-[attr(before)] before:w-full before:scale-90">00:00</span>
+                                            <span before="0" after="0"
+                                                class="order-first flex w-1/2 flex justify-end -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span before="0" after="0"
+                                                class="flex w-1/2 flex justify-start -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span class="text-xs tracking-wider opacity-75 pt-px px-1">WIB</span>
+                                        </div>
+                                        <div class="flex-grow overflow-x-clip">
+                                            <h5 x-show="!playing || playing.id !== itemId" x-ref="title"
+                                                class="font-medium leading-tight">
+                                                <a href="https://tivie.id/film/white-house-down-nwzDnwz9nAv6"
+                                                    x-ref="url">
+                                                    White House <span class="inline-flex items-center">Down<svg
+                                                            xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                                            class="h-3.5 text-yellow-600 ml-1.5">
+                                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                                d="M3.375 19.5h17.25m-17.25 0a1.125 1.125 0 01-1.125-1.125M3.375 19.5h1.5C5.496 19.5 6 18.996 6 18.375m-3.75 0V5.625m0 12.75v-1.5c0-.621.504-1.125 1.125-1.125m18.375 2.625V5.625m0 12.75c0 .621-.504 1.125-1.125 1.125m1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125m0 3.75h-1.5A1.125 1.125 0 0118 18.375M20.625 4.5H3.375m17.25 0c.621 0 1.125.504 1.125 1.125M20.625 4.5h-1.5C18.504 4.5 18 5.004 18 5.625m3.75 0v1.5c0 .621-.504 1.125-1.125 1.125M3.375 4.5c-.621 0-1.125.504-1.125 1.125M3.375 4.5h1.5C5.496 4.5 6 5.004 6 5.625m-3.75 0v1.5c0 .621.504 1.125 1.125 1.125m0 0h1.5m-1.5 0c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125m1.5-3.75C5.496 8.25 6 7.746 6 7.125v-1.5M4.875 8.25C5.496 8.25 6 8.754 6 9.375v1.5m0-5.25v5.25m0-5.25C6 5.004 6.504 4.5 7.125 4.5h9.75c.621 0 1.125.504 1.125 1.125m1.125 2.625h1.5m-1.5 0A1.125 1.125 0 0118 7.125v-1.5m1.125 2.625c-.621 0-1.125.504-1.125 1.125v1.5m2.625-2.625c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125M18 5.625v5.25M7.125 12h9.75m-9.75 0A1.125 1.125 0 016 10.875M7.125 12C6.504 12 6 12.504 6 13.125m0-2.25C6 11.496 5.496 12 4.875 12M18 10.875c0 .621-.504 1.125-1.125 1.125M18 10.875c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125m-12 5.25v-5.25m0 5.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125m-12 0v-1.5c0-.621-.504-1.125-1.125-1.125M18 18.375v-5.25m0 5.25v-1.5c0-.621.504-1.125 1.125-1.125M18 13.125v1.5c0 .621.504 1.125 1.125 1.125M18 13.125c0-.621.504-1.125 1.125-1.125M6 13.125v1.5c0 .621-.504 1.125-1.125 1.125M6 13.125C6 12.504 5.496 12 4.875 12m-1.5 0h1.5m-1.5 0c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125M19.125 12h1.5m0 0c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h1.5m14.25 0h1.5" />
+                                                        </svg></span>
+                                                </a>
+                                            </h5>
+                                            <div class="flex w-full" :class="{'cursor-pointer': url}"
+                                                @click="url ? window.location.href = url : ''"
+                                                x-show="playing && playing.id === itemId" style="display:none">
+                                                <div
+                                                    class="shrink-0 order-last self-start w-32 aspect-video bg-gray-100 flex items-center justify-center rounded-sm overflow-hidden">
+                                                    <img :src="playing.image" alt="" class="w-full h-auto lazyload"
+                                                        x-show="playing && playing.id === itemId && playing.image">
+                                                </div>
+                                                <div class="flex-grow flex flex-col pr-2">
+                                                    <div class="mt-auto mb-px order-last pr-1">
+                                                        <div class="bg-gray-300 rounded-sm overflow-hidden">
+                                                            <div class="h-1 bg-teal-700 rounded-sm transition-all duration-1000 ease-linear"
+                                                                :style="{ width: (playing && playing.id === itemId ? percentage : 0) + '%' }">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <h4 x-html="playing && playing.id === itemId ? title : ''"
+                                                        class="text-lg font-bold leading-tight -mt-0.5 mb-2"></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li x-data="{ itemId: 1735578300482997, title: $refs.title.innerHTML, url: $refs.url ? $refs.url.href : '' }"
+                                    class="py-2" id="event-1735578300482997">
+                                    <div class="flex items-start w-full bg-white">
+                                        <div
+                                            class="w-13 font-medium flex justify-center items-center text-center shrink-0 leading-tight opacity-90 mr-3">
+                                            <span before=":"
+                                                class="shrink-0 w-1 h-4 leading-4 flex flex-col items-center overflow-hidden before:content-[attr(before)] before:w-full before:scale-90">00:05</span>
+                                            <span before="0" after="0"
+                                                class="order-first flex w-1/2 flex justify-end -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span before="0" after="5"
+                                                class="flex w-1/2 flex justify-start -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span class="text-xs tracking-wider opacity-75 pt-px px-1">WIB</span>
+                                        </div>
+                                        <div class="flex-grow overflow-x-clip">
+                                            <h5 x-show="!playing || playing.id !== itemId" x-ref="title"
+                                                class="font-medium leading-tight">
+                                                <a href="https://tivie.id/program/s-w-a-t-s8-e3-nwzDnwv8nwb7"
+                                                    x-ref="url">
+                                                    S.W.A.T. S8, Ep. <span class="inline-flex items-center">3</span>
+                                                </a>
+                                            </h5>
+                                            <div class="flex w-full" :class="{'cursor-pointer': url}"
+                                                @click="url ? window.location.href = url : ''"
+                                                x-show="playing && playing.id === itemId" style="display:none">
+                                                <div
+                                                    class="shrink-0 order-last self-start w-32 aspect-video bg-gray-100 flex items-center justify-center rounded-sm overflow-hidden">
+                                                    <img :src="playing.image" alt="" class="w-full h-auto lazyload"
+                                                        x-show="playing && playing.id === itemId && playing.image">
+                                                </div>
+                                                <div class="flex-grow flex flex-col pr-2">
+                                                    <div class="mt-auto mb-px order-last pr-1">
+                                                        <div class="bg-gray-300 rounded-sm overflow-hidden">
+                                                            <div class="h-1 bg-teal-700 rounded-sm transition-all duration-1000 ease-linear"
+                                                                :style="{ width: (playing && playing.id === itemId ? percentage : 0) + '%' }">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <h4 x-html="playing && playing.id === itemId ? title : ''"
+                                                        class="text-lg font-bold leading-tight -mt-0.5 mb-2"></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li x-data="{ itemId: 1735581600482998, title: $refs.title.innerHTML, url: $refs.url ? $refs.url.href : '' }"
+                                    class="py-2" id="event-1735581600482998">
+                                    <div class="flex items-start w-full bg-white">
+                                        <div
+                                            class="w-13 font-medium flex justify-center items-center text-center shrink-0 leading-tight opacity-90 mr-3">
+                                            <span before=":"
+                                                class="shrink-0 w-1 h-4 leading-4 flex flex-col items-center overflow-hidden before:content-[attr(before)] before:w-full before:scale-90">01:00</span>
+                                            <span before="0" after="1"
+                                                class="order-first flex w-1/2 flex justify-end -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span before="0" after="0"
+                                                class="flex w-1/2 flex justify-start -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span class="text-xs tracking-wider opacity-75 pt-px px-1">WIB</span>
+                                        </div>
+                                        <div class="flex-grow overflow-x-clip">
+                                            <h5 x-show="!playing || playing.id !== itemId" x-ref="title"
+                                                class="font-medium leading-tight">
+                                                <a href="https://tivie.id/program/hudson-rex-s6-e14-nwzDnwvBmQr9"
+                                                    x-ref="url">
+                                                    Hudson & Rex S6, Ep. <span
+                                                        class="inline-flex items-center">14</span>
+                                                </a>
+                                            </h5>
+                                            <div class="flex w-full" :class="{'cursor-pointer': url}"
+                                                @click="url ? window.location.href = url : ''"
+                                                x-show="playing && playing.id === itemId" style="display:none">
+                                                <div
+                                                    class="shrink-0 order-last self-start w-32 aspect-video bg-gray-100 flex items-center justify-center rounded-sm overflow-hidden">
+                                                    <img :src="playing.image" alt="" class="w-full h-auto lazyload"
+                                                        x-show="playing && playing.id === itemId && playing.image">
+                                                </div>
+                                                <div class="flex-grow flex flex-col pr-2">
+                                                    <div class="mt-auto mb-px order-last pr-1">
+                                                        <div class="bg-gray-300 rounded-sm overflow-hidden">
+                                                            <div class="h-1 bg-teal-700 rounded-sm transition-all duration-1000 ease-linear"
+                                                                :style="{ width: (playing && playing.id === itemId ? percentage : 0) + '%' }">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <h4 x-html="playing && playing.id === itemId ? title : ''"
+                                                        class="text-lg font-bold leading-tight -mt-0.5 mb-2"></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li x-data="{ itemId: 1735584900482999, title: $refs.title.innerHTML, url: $refs.url ? $refs.url.href : '' }"
+                                    class="py-2" id="event-1735584900482999">
+                                    <div class="flex items-start w-full bg-white">
+                                        <div
+                                            class="w-13 font-medium flex justify-center items-center text-center shrink-0 leading-tight opacity-90 mr-3">
+                                            <span before=":"
+                                                class="shrink-0 w-1 h-4 leading-4 flex flex-col items-center overflow-hidden before:content-[attr(before)] before:w-full before:scale-90">01:55</span>
+                                            <span before="0" after="1"
+                                                class="order-first flex w-1/2 flex justify-end -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span before="5" after="5"
+                                                class="flex w-1/2 flex justify-start -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span class="text-xs tracking-wider opacity-75 pt-px px-1">WIB</span>
+                                        </div>
+                                        <div class="flex-grow overflow-x-clip">
+                                            <h5 x-show="!playing || playing.id !== itemId" x-ref="title"
+                                                class="font-medium leading-tight">
+                                                <a href="https://tivie.id/program/american-ninja-warrior-s13-nwzDnwz6mgnB"
+                                                    x-ref="url">
+                                                    American Ninja Warrior S13, Ep. <span
+                                                        class="inline-flex items-center">13</span>
+                                                </a>
+                                            </h5>
+                                            <div class="flex w-full" :class="{'cursor-pointer': url}"
+                                                @click="url ? window.location.href = url : ''"
+                                                x-show="playing && playing.id === itemId" style="display:none">
+                                                <div
+                                                    class="shrink-0 order-last self-start w-32 aspect-video bg-gray-100 flex items-center justify-center rounded-sm overflow-hidden">
+                                                    <img :src="playing.image" alt="" class="w-full h-auto lazyload"
+                                                        x-show="playing && playing.id === itemId && playing.image">
+                                                </div>
+                                                <div class="flex-grow flex flex-col pr-2">
+                                                    <div class="mt-auto mb-px order-last pr-1">
+                                                        <div class="bg-gray-300 rounded-sm overflow-hidden">
+                                                            <div class="h-1 bg-teal-700 rounded-sm transition-all duration-1000 ease-linear"
+                                                                :style="{ width: (playing && playing.id === itemId ? percentage : 0) + '%' }">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <h4 x-html="playing && playing.id === itemId ? title : ''"
+                                                        class="text-lg font-bold leading-tight -mt-0.5 mb-2"></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li x-data="{ itemId: 1735588200483000, title: $refs.title.innerHTML, url: $refs.url ? $refs.url.href : '' }"
+                                    class="py-2" id="event-1735588200483000">
+                                    <div class="flex items-start w-full bg-white">
+                                        <div
+                                            class="w-13 font-medium flex justify-center items-center text-center shrink-0 leading-tight opacity-90 mr-3">
+                                            <span before=":"
+                                                class="shrink-0 w-1 h-4 leading-4 flex flex-col items-center overflow-hidden before:content-[attr(before)] before:w-full before:scale-90">02:50</span>
+                                            <span before="0" after="2"
+                                                class="order-first flex w-1/2 flex justify-end -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span before="5" after="0"
+                                                class="flex w-1/2 flex justify-start -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span class="text-xs tracking-wider opacity-75 pt-px px-1">WIB</span>
+                                        </div>
+                                        <div class="flex-grow overflow-x-clip">
+                                            <h5 x-show="!playing || playing.id !== itemId" x-ref="title"
+                                                class="font-medium leading-tight">
+                                                <a href="https://tivie.id/program/whacked-out-sports-s16-nwzDnwzBmgb6"
+                                                    x-ref="url">
+                                                    Whacked Out Sports S16, Ep. <span
+                                                        class="inline-flex items-center">6</span>
+                                                </a>
+                                            </h5>
+                                            <div class="flex w-full" :class="{'cursor-pointer': url}"
+                                                @click="url ? window.location.href = url : ''"
+                                                x-show="playing && playing.id === itemId" style="display:none">
+                                                <div
+                                                    class="shrink-0 order-last self-start w-32 aspect-video bg-gray-100 flex items-center justify-center rounded-sm overflow-hidden">
+                                                    <img :src="playing.image" alt="" class="w-full h-auto lazyload"
+                                                        x-show="playing && playing.id === itemId && playing.image">
+                                                </div>
+                                                <div class="flex-grow flex flex-col pr-2">
+                                                    <div class="mt-auto mb-px order-last pr-1">
+                                                        <div class="bg-gray-300 rounded-sm overflow-hidden">
+                                                            <div class="h-1 bg-teal-700 rounded-sm transition-all duration-1000 ease-linear"
+                                                                :style="{ width: (playing && playing.id === itemId ? percentage : 0) + '%' }">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <h4 x-html="playing && playing.id === itemId ? title : ''"
+                                                        class="text-lg font-bold leading-tight -mt-0.5 mb-2"></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li x-data="{ itemId: 1735590000483022, title: $refs.title.innerHTML, url: $refs.url ? $refs.url.href : '' }"
+                                    class="py-2" id="event-1735590000483022">
+                                    <div class="flex items-start w-full bg-white">
+                                        <div
+                                            class="w-13 font-medium flex justify-center items-center text-center shrink-0 leading-tight opacity-90 mr-3">
+                                            <span before=":"
+                                                class="shrink-0 w-1 h-4 leading-4 flex flex-col items-center overflow-hidden before:content-[attr(before)] before:w-full before:scale-90">03:20</span>
+                                            <span before="0" after="3"
+                                                class="order-first flex w-1/2 flex justify-end -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span before="2" after="0"
+                                                class="flex w-1/2 flex justify-start -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span class="text-xs tracking-wider opacity-75 pt-px px-1">WIB</span>
+                                        </div>
+                                        <div class="flex-grow overflow-x-clip">
+                                            <h5 x-show="!playing || playing.id !== itemId" x-ref="title"
+                                                class="font-medium leading-tight">
+                                                <a href="https://tivie.id/program/coroner-s4-e10-nwzDnwv7mwPD"
+                                                    x-ref="url">
+                                                    Coroner S4, Ep. <span class="inline-flex items-center">10</span>
+                                                </a>
+                                            </h5>
+                                            <div class="flex w-full" :class="{'cursor-pointer': url}"
+                                                @click="url ? window.location.href = url : ''"
+                                                x-show="playing && playing.id === itemId" style="display:none">
+                                                <div
+                                                    class="shrink-0 order-last self-start w-32 aspect-video bg-gray-100 flex items-center justify-center rounded-sm overflow-hidden">
+                                                    <img :src="playing.image" alt="" class="w-full h-auto lazyload"
+                                                        x-show="playing && playing.id === itemId && playing.image">
+                                                </div>
+                                                <div class="flex-grow flex flex-col pr-2">
+                                                    <div class="mt-auto mb-px order-last pr-1">
+                                                        <div class="bg-gray-300 rounded-sm overflow-hidden">
+                                                            <div class="h-1 bg-teal-700 rounded-sm transition-all duration-1000 ease-linear"
+                                                                :style="{ width: (playing && playing.id === itemId ? percentage : 0) + '%' }">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <h4 x-html="playing && playing.id === itemId ? title : ''"
+                                                        class="text-lg font-bold leading-tight -mt-0.5 mb-2"></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li x-data="{ itemId: 1735593000483001, title: $refs.title.innerHTML, url: $refs.url ? $refs.url.href : '' }"
+                                    class="py-2" id="event-1735593000483001">
+                                    <div class="flex items-start w-full bg-white">
+                                        <div
+                                            class="w-13 font-medium flex justify-center items-center text-center shrink-0 leading-tight opacity-90 mr-3">
+                                            <span before=":"
+                                                class="shrink-0 w-1 h-4 leading-4 flex flex-col items-center overflow-hidden before:content-[attr(before)] before:w-full before:scale-90">04:10</span>
+                                            <span before="0" after="4"
+                                                class="order-first flex w-1/2 flex justify-end -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span before="1" after="0"
+                                                class="flex w-1/2 flex justify-start -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span class="text-xs tracking-wider opacity-75 pt-px px-1">WIB</span>
+                                        </div>
+                                        <div class="flex-grow overflow-x-clip">
+                                            <h5 x-show="!playing || playing.id !== itemId" x-ref="title"
+                                                class="font-medium leading-tight">
+                                                <a href="https://tivie.id/program/fantasy-island-s2-e3-nwzDnwz7nQXD"
+                                                    x-ref="url">
+                                                    Fantasy Island S2, Ep. <span
+                                                        class="inline-flex items-center">3</span>
+                                                </a>
+                                            </h5>
+                                            <div class="flex w-full" :class="{'cursor-pointer': url}"
+                                                @click="url ? window.location.href = url : ''"
+                                                x-show="playing && playing.id === itemId" style="display:none">
+                                                <div
+                                                    class="shrink-0 order-last self-start w-32 aspect-video bg-gray-100 flex items-center justify-center rounded-sm overflow-hidden">
+                                                    <img :src="playing.image" alt="" class="w-full h-auto lazyload"
+                                                        x-show="playing && playing.id === itemId && playing.image">
+                                                </div>
+                                                <div class="flex-grow flex flex-col pr-2">
+                                                    <div class="mt-auto mb-px order-last pr-1">
+                                                        <div class="bg-gray-300 rounded-sm overflow-hidden">
+                                                            <div class="h-1 bg-teal-700 rounded-sm transition-all duration-1000 ease-linear"
+                                                                :style="{ width: (playing && playing.id === itemId ? percentage : 0) + '%' }">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <h4 x-html="playing && playing.id === itemId ? title : ''"
+                                                        class="text-lg font-bold leading-tight -mt-0.5 mb-2"></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li x-data="{ itemId: 1735596000483002, title: $refs.title.innerHTML, url: $refs.url ? $refs.url.href : '' }"
+                                    class="py-2" id="event-1735596000483002">
+                                    <div class="flex items-start w-full bg-white">
+                                        <div
+                                            class="w-13 font-medium flex justify-center items-center text-center shrink-0 leading-tight opacity-90 mr-3">
+                                            <span before=":"
+                                                class="shrink-0 w-1 h-4 leading-4 flex flex-col items-center overflow-hidden before:content-[attr(before)] before:w-full before:scale-90">05:00</span>
+                                            <span before="0" after="5"
+                                                class="order-first flex w-1/2 flex justify-end -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span before="0" after="0"
+                                                class="flex w-1/2 flex justify-start -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span class="text-xs tracking-wider opacity-75 pt-px px-1">WIB</span>
+                                        </div>
+                                        <div class="flex-grow overflow-x-clip">
+                                            <h5 x-show="!playing || playing.id !== itemId" x-ref="title"
+                                                class="font-medium leading-tight">
+                                                <a href="https://tivie.id/program/american-ninja-warrior-s13-nwzDnwz6mgnB"
+                                                    x-ref="url">
+                                                    American Ninja Warrior S13, Ep. <span
+                                                        class="inline-flex items-center">13</span>
+                                                </a>
+                                            </h5>
+                                            <div class="flex w-full" :class="{'cursor-pointer': url}"
+                                                @click="url ? window.location.href = url : ''"
+                                                x-show="playing && playing.id === itemId" style="display:none">
+                                                <div
+                                                    class="shrink-0 order-last self-start w-32 aspect-video bg-gray-100 flex items-center justify-center rounded-sm overflow-hidden">
+                                                    <img :src="playing.image" alt="" class="w-full h-auto lazyload"
+                                                        x-show="playing && playing.id === itemId && playing.image">
+                                                </div>
+                                                <div class="flex-grow flex flex-col pr-2">
+                                                    <div class="mt-auto mb-px order-last pr-1">
+                                                        <div class="bg-gray-300 rounded-sm overflow-hidden">
+                                                            <div class="h-1 bg-teal-700 rounded-sm transition-all duration-1000 ease-linear"
+                                                                :style="{ width: (playing && playing.id === itemId ? percentage : 0) + '%' }">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <h4 x-html="playing && playing.id === itemId ? title : ''"
+                                                        class="text-lg font-bold leading-tight -mt-0.5 mb-2"></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li x-data="{ itemId: 1735599000483003, title: $refs.title.innerHTML, url: $refs.url ? $refs.url.href : '' }"
+                                    class="py-2" id="event-1735599000483003">
+                                    <div class="flex items-start w-full bg-white">
+                                        <div
+                                            class="w-13 font-medium flex justify-center items-center text-center shrink-0 leading-tight opacity-90 mr-3">
+                                            <span before=":"
+                                                class="shrink-0 w-1 h-4 leading-4 flex flex-col items-center overflow-hidden before:content-[attr(before)] before:w-full before:scale-90">05:50</span>
+                                            <span before="0" after="5"
+                                                class="order-first flex w-1/2 flex justify-end -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span before="5" after="0"
+                                                class="flex w-1/2 flex justify-start -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span class="text-xs tracking-wider opacity-75 pt-px px-1">WIB</span>
+                                        </div>
+                                        <div class="flex-grow overflow-x-clip">
+                                            <h5 x-show="!playing || playing.id !== itemId" x-ref="title"
+                                                class="font-medium leading-tight">
+                                                <a href="https://tivie.id/program/cyril-simply-magic-nwzDnwz4nwj7"
+                                                    x-ref="url">
+                                                    Cyril: Simply Magic, Ep. <span
+                                                        class="inline-flex items-center">1</span>
+                                                </a>
+                                            </h5>
+                                            <div class="flex w-full" :class="{'cursor-pointer': url}"
+                                                @click="url ? window.location.href = url : ''"
+                                                x-show="playing && playing.id === itemId" style="display:none">
+                                                <div
+                                                    class="shrink-0 order-last self-start w-32 aspect-video bg-gray-100 flex items-center justify-center rounded-sm overflow-hidden">
+                                                    <img :src="playing.image" alt="" class="w-full h-auto lazyload"
+                                                        x-show="playing && playing.id === itemId && playing.image">
+                                                </div>
+                                                <div class="flex-grow flex flex-col pr-2">
+                                                    <div class="mt-auto mb-px order-last pr-1">
+                                                        <div class="bg-gray-300 rounded-sm overflow-hidden">
+                                                            <div class="h-1 bg-teal-700 rounded-sm transition-all duration-1000 ease-linear"
+                                                                :style="{ width: (playing && playing.id === itemId ? percentage : 0) + '%' }">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <h4 x-html="playing && playing.id === itemId ? title : ''"
+                                                        class="text-lg font-bold leading-tight -mt-0.5 mb-2"></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li x-data="{ itemId: 1735602300483004, title: $refs.title.innerHTML, url: $refs.url ? $refs.url.href : '' }"
+                                    class="py-2" id="event-1735602300483004">
+                                    <div class="flex items-start w-full bg-white">
+                                        <div
+                                            class="w-13 font-medium flex justify-center items-center text-center shrink-0 leading-tight opacity-90 mr-3">
+                                            <span before=":"
+                                                class="shrink-0 w-1 h-4 leading-4 flex flex-col items-center overflow-hidden before:content-[attr(before)] before:w-full before:scale-90">06:45</span>
+                                            <span before="0" after="6"
+                                                class="order-first flex w-1/2 flex justify-end -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span before="4" after="5"
+                                                class="flex w-1/2 flex justify-start -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span class="text-xs tracking-wider opacity-75 pt-px px-1">WIB</span>
+                                        </div>
+                                        <div class="flex-grow overflow-x-clip">
+                                            <h5 x-show="!playing || playing.id !== itemId" x-ref="title"
+                                                class="font-medium leading-tight">
+                                                <a href="https://tivie.id/program/coroner-s4-e10-nwzDnwv7mwPD"
+                                                    x-ref="url">
+                                                    Coroner S4, Ep. <span class="inline-flex items-center">10</span>
+                                                </a>
+                                            </h5>
+                                            <div class="flex w-full" :class="{'cursor-pointer': url}"
+                                                @click="url ? window.location.href = url : ''"
+                                                x-show="playing && playing.id === itemId" style="display:none">
+                                                <div
+                                                    class="shrink-0 order-last self-start w-32 aspect-video bg-gray-100 flex items-center justify-center rounded-sm overflow-hidden">
+                                                    <img :src="playing.image" alt="" class="w-full h-auto lazyload"
+                                                        x-show="playing && playing.id === itemId && playing.image">
+                                                </div>
+                                                <div class="flex-grow flex flex-col pr-2">
+                                                    <div class="mt-auto mb-px order-last pr-1">
+                                                        <div class="bg-gray-300 rounded-sm overflow-hidden">
+                                                            <div class="h-1 bg-teal-700 rounded-sm transition-all duration-1000 ease-linear"
+                                                                :style="{ width: (playing && playing.id === itemId ? percentage : 0) + '%' }">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <h4 x-html="playing && playing.id === itemId ? title : ''"
+                                                        class="text-lg font-bold leading-tight -mt-0.5 mb-2"></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="w-[300px] aspect-square mx-auto"
+                                        x-data="{ url: 'https://vt.tokopedia.com/t/ZSjT28s8n/' }"
+                                        @click="window.open(url, '_blank')">
+                                        <img src="https://tivie.id/uploads/transvision-xstream.gif" alt="" class="">
+                                    </div>
+                                </li>
+                                <li x-data="{ itemId: 1735605300483005, title: $refs.title.innerHTML, url: $refs.url ? $refs.url.href : '' }"
+                                    class="py-2" id="event-1735605300483005">
+                                    <div class="flex items-start w-full bg-white">
+                                        <div
+                                            class="w-13 font-medium flex justify-center items-center text-center shrink-0 leading-tight opacity-90 mr-3">
+                                            <span before=":"
+                                                class="shrink-0 w-1 h-4 leading-4 flex flex-col items-center overflow-hidden before:content-[attr(before)] before:w-full before:scale-90">07:35</span>
+                                            <span before="0" after="7"
+                                                class="order-first flex w-1/2 flex justify-end -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span before="3" after="5"
+                                                class="flex w-1/2 flex justify-start -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span class="text-xs tracking-wider opacity-75 pt-px px-1">WIB</span>
+                                        </div>
+                                        <div class="flex-grow overflow-x-clip">
+                                            <h5 x-show="!playing || playing.id !== itemId" x-ref="title"
+                                                class="font-medium leading-tight">
+                                                <a href="https://tivie.id/program/fantasy-island-s2-e4-nwzDnwz7lwnC"
+                                                    x-ref="url">
+                                                    Fantasy Island S2, Ep. <span
+                                                        class="inline-flex items-center">4</span>
+                                                </a>
+                                            </h5>
+                                            <div class="flex w-full" :class="{'cursor-pointer': url}"
+                                                @click="url ? window.location.href = url : ''"
+                                                x-show="playing && playing.id === itemId" style="display:none">
+                                                <div
+                                                    class="shrink-0 order-last self-start w-32 aspect-video bg-gray-100 flex items-center justify-center rounded-sm overflow-hidden">
+                                                    <img :src="playing.image" alt="" class="w-full h-auto lazyload"
+                                                        x-show="playing && playing.id === itemId && playing.image">
+                                                </div>
+                                                <div class="flex-grow flex flex-col pr-2">
+                                                    <div class="mt-auto mb-px order-last pr-1">
+                                                        <div class="bg-gray-300 rounded-sm overflow-hidden">
+                                                            <div class="h-1 bg-teal-700 rounded-sm transition-all duration-1000 ease-linear"
+                                                                :style="{ width: (playing && playing.id === itemId ? percentage : 0) + '%' }">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <h4 x-html="playing && playing.id === itemId ? title : ''"
+                                                        class="text-lg font-bold leading-tight -mt-0.5 mb-2"></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li x-data="{ itemId: 1735608300483006, title: $refs.title.innerHTML, url: $refs.url ? $refs.url.href : '' }"
+                                    class="py-2" id="event-1735608300483006">
+                                    <div class="flex items-start w-full bg-white">
+                                        <div
+                                            class="w-13 font-medium flex justify-center items-center text-center shrink-0 leading-tight opacity-90 mr-3">
+                                            <span before=":"
+                                                class="shrink-0 w-1 h-4 leading-4 flex flex-col items-center overflow-hidden before:content-[attr(before)] before:w-full before:scale-90">08:25</span>
+                                            <span before="0" after="8"
+                                                class="order-first flex w-1/2 flex justify-end -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span before="2" after="5"
+                                                class="flex w-1/2 flex justify-start -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span class="text-xs tracking-wider opacity-75 pt-px px-1">WIB</span>
+                                        </div>
+                                        <div class="flex-grow overflow-x-clip">
+                                            <h5 x-show="!playing || playing.id !== itemId" x-ref="title"
+                                                class="font-medium leading-tight">
+                                                <a href="https://tivie.id/program/hudson-rex-s6-e14-nwzDnwvBmQr9"
+                                                    x-ref="url">
+                                                    Hudson & Rex S6, Ep. <span
+                                                        class="inline-flex items-center">14</span>
+                                                </a>
+                                            </h5>
+                                            <div class="flex w-full" :class="{'cursor-pointer': url}"
+                                                @click="url ? window.location.href = url : ''"
+                                                x-show="playing && playing.id === itemId" style="display:none">
+                                                <div
+                                                    class="shrink-0 order-last self-start w-32 aspect-video bg-gray-100 flex items-center justify-center rounded-sm overflow-hidden">
+                                                    <img :src="playing.image" alt="" class="w-full h-auto lazyload"
+                                                        x-show="playing && playing.id === itemId && playing.image">
+                                                </div>
+                                                <div class="flex-grow flex flex-col pr-2">
+                                                    <div class="mt-auto mb-px order-last pr-1">
+                                                        <div class="bg-gray-300 rounded-sm overflow-hidden">
+                                                            <div class="h-1 bg-teal-700 rounded-sm transition-all duration-1000 ease-linear"
+                                                                :style="{ width: (playing && playing.id === itemId ? percentage : 0) + '%' }">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <h4 x-html="playing && playing.id === itemId ? title : ''"
+                                                        class="text-lg font-bold leading-tight -mt-0.5 mb-2"></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li x-data="{ itemId: 1735611300483007, title: $refs.title.innerHTML, url: $refs.url ? $refs.url.href : '' }"
+                                    class="py-2" id="event-1735611300483007">
+                                    <div class="flex items-start w-full bg-white">
+                                        <div
+                                            class="w-13 font-medium flex justify-center items-center text-center shrink-0 leading-tight opacity-90 mr-3">
+                                            <span before=":"
+                                                class="shrink-0 w-1 h-4 leading-4 flex flex-col items-center overflow-hidden before:content-[attr(before)] before:w-full before:scale-90">09:15</span>
+                                            <span before="0" after="9"
+                                                class="order-first flex w-1/2 flex justify-end -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span before="1" after="5"
+                                                class="flex w-1/2 flex justify-start -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span class="text-xs tracking-wider opacity-75 pt-px px-1">WIB</span>
+                                        </div>
+                                        <div class="flex-grow overflow-x-clip">
+                                            <h5 x-show="!playing || playing.id !== itemId" x-ref="title"
+                                                class="font-medium leading-tight">
+                                                <a href="https://tivie.id/program/fbi-most-wanted-s4-e17-nwzDnwzBnQjA"
+                                                    x-ref="url">
+                                                    FBI: Most Wanted S4, Ep. <span
+                                                        class="inline-flex items-center">17</span>
+                                                </a>
+                                            </h5>
+                                            <div class="flex w-full" :class="{'cursor-pointer': url}"
+                                                @click="url ? window.location.href = url : ''"
+                                                x-show="playing && playing.id === itemId" style="display:none">
+                                                <div
+                                                    class="shrink-0 order-last self-start w-32 aspect-video bg-gray-100 flex items-center justify-center rounded-sm overflow-hidden">
+                                                    <img :src="playing.image" alt="" class="w-full h-auto lazyload"
+                                                        x-show="playing && playing.id === itemId && playing.image">
+                                                </div>
+                                                <div class="flex-grow flex flex-col pr-2">
+                                                    <div class="mt-auto mb-px order-last pr-1">
+                                                        <div class="bg-gray-300 rounded-sm overflow-hidden">
+                                                            <div class="h-1 bg-teal-700 rounded-sm transition-all duration-1000 ease-linear"
+                                                                :style="{ width: (playing && playing.id === itemId ? percentage : 0) + '%' }">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <h4 x-html="playing && playing.id === itemId ? title : ''"
+                                                        class="text-lg font-bold leading-tight -mt-0.5 mb-2"></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li x-data="{ itemId: 1735614300483008, title: $refs.title.innerHTML, url: $refs.url ? $refs.url.href : '' }"
+                                    class="py-2" id="event-1735614300483008">
+                                    <div class="flex items-start w-full bg-white">
+                                        <div
+                                            class="w-13 font-medium flex justify-center items-center text-center shrink-0 leading-tight opacity-90 mr-3">
+                                            <span before=":"
+                                                class="shrink-0 w-1 h-4 leading-4 flex flex-col items-center overflow-hidden before:content-[attr(before)] before:w-full before:scale-90">10:05</span>
+                                            <span before="1" after="0"
+                                                class="order-first flex w-1/2 flex justify-end -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span before="0" after="5"
+                                                class="flex w-1/2 flex justify-start -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span class="text-xs tracking-wider opacity-75 pt-px px-1">WIB</span>
+                                        </div>
+                                        <div class="flex-grow overflow-x-clip">
+                                            <h5 x-show="!playing || playing.id !== itemId" x-ref="title"
+                                                class="font-medium leading-tight">
+                                                <a href="https://tivie.id/program/coroner-s4-e10-nwzDnwv7mwPD"
+                                                    x-ref="url">
+                                                    Coroner S4, Ep. <span class="inline-flex items-center">10</span>
+                                                </a>
+                                            </h5>
+                                            <div class="flex w-full" :class="{'cursor-pointer': url}"
+                                                @click="url ? window.location.href = url : ''"
+                                                x-show="playing && playing.id === itemId" style="display:none">
+                                                <div
+                                                    class="shrink-0 order-last self-start w-32 aspect-video bg-gray-100 flex items-center justify-center rounded-sm overflow-hidden">
+                                                    <img :src="playing.image" alt="" class="w-full h-auto lazyload"
+                                                        x-show="playing && playing.id === itemId && playing.image">
+                                                </div>
+                                                <div class="flex-grow flex flex-col pr-2">
+                                                    <div class="mt-auto mb-px order-last pr-1">
+                                                        <div class="bg-gray-300 rounded-sm overflow-hidden">
+                                                            <div class="h-1 bg-teal-700 rounded-sm transition-all duration-1000 ease-linear"
+                                                                :style="{ width: (playing && playing.id === itemId ? percentage : 0) + '%' }">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <h4 x-html="playing && playing.id === itemId ? title : ''"
+                                                        class="text-lg font-bold leading-tight -mt-0.5 mb-2"></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li x-data="{ itemId: 1735617600483009, title: $refs.title.innerHTML, url: $refs.url ? $refs.url.href : '' }"
+                                    class="py-2" id="event-1735617600483009">
+                                    <div class="flex items-start w-full bg-white">
+                                        <div
+                                            class="w-13 font-medium flex justify-center items-center text-center shrink-0 leading-tight opacity-90 mr-3">
+                                            <span before=":"
+                                                class="shrink-0 w-1 h-4 leading-4 flex flex-col items-center overflow-hidden before:content-[attr(before)] before:w-full before:scale-90">11:00</span>
+                                            <span before="1" after="1"
+                                                class="order-first flex w-1/2 flex justify-end -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span before="0" after="0"
+                                                class="flex w-1/2 flex justify-start -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span class="text-xs tracking-wider opacity-75 pt-px px-1">WIB</span>
+                                        </div>
+                                        <div class="flex-grow overflow-x-clip">
+                                            <h5 x-show="!playing || playing.id !== itemId" x-ref="title"
+                                                class="font-medium leading-tight">
+                                                <a href="https://tivie.id/program/hudson-rex-s6-e14-nwzDnwvBmQr9"
+                                                    x-ref="url">
+                                                    Hudson & Rex S6, Ep. <span
+                                                        class="inline-flex items-center">14</span>
+                                                </a>
+                                            </h5>
+                                            <div class="flex w-full" :class="{'cursor-pointer': url}"
+                                                @click="url ? window.location.href = url : ''"
+                                                x-show="playing && playing.id === itemId" style="display:none">
+                                                <div
+                                                    class="shrink-0 order-last self-start w-32 aspect-video bg-gray-100 flex items-center justify-center rounded-sm overflow-hidden">
+                                                    <img :src="playing.image" alt="" class="w-full h-auto lazyload"
+                                                        x-show="playing && playing.id === itemId && playing.image">
+                                                </div>
+                                                <div class="flex-grow flex flex-col pr-2">
+                                                    <div class="mt-auto mb-px order-last pr-1">
+                                                        <div class="bg-gray-300 rounded-sm overflow-hidden">
+                                                            <div class="h-1 bg-teal-700 rounded-sm transition-all duration-1000 ease-linear"
+                                                                :style="{ width: (playing && playing.id === itemId ? percentage : 0) + '%' }">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <h4 x-html="playing && playing.id === itemId ? title : ''"
+                                                        class="text-lg font-bold leading-tight -mt-0.5 mb-2"></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li x-data="{ itemId: 1735620600483010, title: $refs.title.innerHTML, url: $refs.url ? $refs.url.href : '' }"
+                                    class="py-2" id="event-1735620600483010">
+                                    <div class="flex items-start w-full bg-white">
+                                        <div
+                                            class="w-13 font-medium flex justify-center items-center text-center shrink-0 leading-tight opacity-90 mr-3">
+                                            <span before=":"
+                                                class="shrink-0 w-1 h-4 leading-4 flex flex-col items-center overflow-hidden before:content-[attr(before)] before:w-full before:scale-90">11:50</span>
+                                            <span before="1" after="1"
+                                                class="order-first flex w-1/2 flex justify-end -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span before="5" after="0"
+                                                class="flex w-1/2 flex justify-start -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span class="text-xs tracking-wider opacity-75 pt-px px-1">WIB</span>
+                                        </div>
+                                        <div class="flex-grow overflow-x-clip">
+                                            <h5 x-show="!playing || playing.id !== itemId" x-ref="title"
+                                                class="font-medium leading-tight">
+                                                <a href="https://tivie.id/program/fantasy-island-s2-e4-nwzDnwz7lwnC"
+                                                    x-ref="url">
+                                                    Fantasy Island S2, Ep. <span
+                                                        class="inline-flex items-center">4</span>
+                                                </a>
+                                            </h5>
+                                            <div class="flex w-full" :class="{'cursor-pointer': url}"
+                                                @click="url ? window.location.href = url : ''"
+                                                x-show="playing && playing.id === itemId" style="display:none">
+                                                <div
+                                                    class="shrink-0 order-last self-start w-32 aspect-video bg-gray-100 flex items-center justify-center rounded-sm overflow-hidden">
+                                                    <img :src="playing.image" alt="" class="w-full h-auto lazyload"
+                                                        x-show="playing && playing.id === itemId && playing.image">
+                                                </div>
+                                                <div class="flex-grow flex flex-col pr-2">
+                                                    <div class="mt-auto mb-px order-last pr-1">
+                                                        <div class="bg-gray-300 rounded-sm overflow-hidden">
+                                                            <div class="h-1 bg-teal-700 rounded-sm transition-all duration-1000 ease-linear"
+                                                                :style="{ width: (playing && playing.id === itemId ? percentage : 0) + '%' }">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <h4 x-html="playing && playing.id === itemId ? title : ''"
+                                                        class="text-lg font-bold leading-tight -mt-0.5 mb-2"></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li x-data="{ itemId: 1735623600483011, title: $refs.title.innerHTML, url: $refs.url ? $refs.url.href : '' }"
+                                    class="py-2" id="event-1735623600483011">
+                                    <div class="flex items-start w-full bg-white">
+                                        <div
+                                            class="w-13 font-medium flex justify-center items-center text-center shrink-0 leading-tight opacity-90 mr-3">
+                                            <span before=":"
+                                                class="shrink-0 w-1 h-4 leading-4 flex flex-col items-center overflow-hidden before:content-[attr(before)] before:w-full before:scale-90">12:40</span>
+                                            <span before="1" after="2"
+                                                class="order-first flex w-1/2 flex justify-end -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span before="4" after="0"
+                                                class="flex w-1/2 flex justify-start -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span class="text-xs tracking-wider opacity-75 pt-px px-1">WIB</span>
+                                        </div>
+                                        <div class="flex-grow overflow-x-clip">
+                                            <h5 x-show="!playing || playing.id !== itemId" x-ref="title"
+                                                class="font-medium leading-tight">
+                                                <a href="https://tivie.id/program/fbi-most-wanted-s4-e17-nwzDnwzBnQjA"
+                                                    x-ref="url">
+                                                    FBI: Most Wanted S4, Ep. <span
+                                                        class="inline-flex items-center">17</span>
+                                                </a>
+                                            </h5>
+                                            <div class="flex w-full" :class="{'cursor-pointer': url}"
+                                                @click="url ? window.location.href = url : ''"
+                                                x-show="playing && playing.id === itemId" style="display:none">
+                                                <div
+                                                    class="shrink-0 order-last self-start w-32 aspect-video bg-gray-100 flex items-center justify-center rounded-sm overflow-hidden">
+                                                    <img :src="playing.image" alt="" class="w-full h-auto lazyload"
+                                                        x-show="playing && playing.id === itemId && playing.image">
+                                                </div>
+                                                <div class="flex-grow flex flex-col pr-2">
+                                                    <div class="mt-auto mb-px order-last pr-1">
+                                                        <div class="bg-gray-300 rounded-sm overflow-hidden">
+                                                            <div class="h-1 bg-teal-700 rounded-sm transition-all duration-1000 ease-linear"
+                                                                :style="{ width: (playing && playing.id === itemId ? percentage : 0) + '%' }">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <h4 x-html="playing && playing.id === itemId ? title : ''"
+                                                        class="text-lg font-bold leading-tight -mt-0.5 mb-2"></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li x-data="{ itemId: 1735626600483012, title: $refs.title.innerHTML, url: $refs.url ? $refs.url.href : '' }"
+                                    class="py-2" id="event-1735626600483012">
+                                    <div class="flex items-start w-full bg-white">
+                                        <div
+                                            class="w-13 font-medium flex justify-center items-center text-center shrink-0 leading-tight opacity-90 mr-3">
+                                            <span before=":"
+                                                class="shrink-0 w-1 h-4 leading-4 flex flex-col items-center overflow-hidden before:content-[attr(before)] before:w-full before:scale-90">13:30</span>
+                                            <span before="1" after="3"
+                                                class="order-first flex w-1/2 flex justify-end -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span before="3" after="0"
+                                                class="flex w-1/2 flex justify-start -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span class="text-xs tracking-wider opacity-75 pt-px px-1">WIB</span>
+                                        </div>
+                                        <div class="flex-grow overflow-x-clip">
+                                            <h5 x-show="!playing || playing.id !== itemId" x-ref="title"
+                                                class="font-medium leading-tight">
+                                                <a href="https://tivie.id/program/coroner-s4-e10-nwzDnwv7mwPD"
+                                                    x-ref="url">
+                                                    Coroner S4, Ep. <span class="inline-flex items-center">10</span>
+                                                </a>
+                                            </h5>
+                                            <div class="flex w-full" :class="{'cursor-pointer': url}"
+                                                @click="url ? window.location.href = url : ''"
+                                                x-show="playing && playing.id === itemId" style="display:none">
+                                                <div
+                                                    class="shrink-0 order-last self-start w-32 aspect-video bg-gray-100 flex items-center justify-center rounded-sm overflow-hidden">
+                                                    <img :src="playing.image" alt="" class="w-full h-auto lazyload"
+                                                        x-show="playing && playing.id === itemId && playing.image">
+                                                </div>
+                                                <div class="flex-grow flex flex-col pr-2">
+                                                    <div class="mt-auto mb-px order-last pr-1">
+                                                        <div class="bg-gray-300 rounded-sm overflow-hidden">
+                                                            <div class="h-1 bg-teal-700 rounded-sm transition-all duration-1000 ease-linear"
+                                                                :style="{ width: (playing && playing.id === itemId ? percentage : 0) + '%' }">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <h4 x-html="playing && playing.id === itemId ? title : ''"
+                                                        class="text-lg font-bold leading-tight -mt-0.5 mb-2"></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li x-data="{ itemId: 1735629900483013, title: $refs.title.innerHTML, url: $refs.url ? $refs.url.href : '' }"
+                                    class="py-2" id="event-1735629900483013">
+                                    <div class="flex items-start w-full bg-white">
+                                        <div
+                                            class="w-13 font-medium flex justify-center items-center text-center shrink-0 leading-tight opacity-90 mr-3">
+                                            <span before=":"
+                                                class="shrink-0 w-1 h-4 leading-4 flex flex-col items-center overflow-hidden before:content-[attr(before)] before:w-full before:scale-90">14:25</span>
+                                            <span before="1" after="4"
+                                                class="order-first flex w-1/2 flex justify-end -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span before="2" after="5"
+                                                class="flex w-1/2 flex justify-start -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span class="text-xs tracking-wider opacity-75 pt-px px-1">WIB</span>
+                                        </div>
+                                        <div class="flex-grow overflow-x-clip">
+                                            <h5 x-show="!playing || playing.id !== itemId" x-ref="title"
+                                                class="font-medium leading-tight">
+                                                <a href="https://tivie.id/film/paul-blart-mall-cop-2-nwzDnwz9nwvB"
+                                                    x-ref="url">
+                                                    Paul Blart: Mall Cop <span class="inline-flex items-center">2<svg
+                                                            xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                                            class="h-3.5 text-yellow-600 ml-1.5">
+                                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                                d="M3.375 19.5h17.25m-17.25 0a1.125 1.125 0 01-1.125-1.125M3.375 19.5h1.5C5.496 19.5 6 18.996 6 18.375m-3.75 0V5.625m0 12.75v-1.5c0-.621.504-1.125 1.125-1.125m18.375 2.625V5.625m0 12.75c0 .621-.504 1.125-1.125 1.125m1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125m0 3.75h-1.5A1.125 1.125 0 0118 18.375M20.625 4.5H3.375m17.25 0c.621 0 1.125.504 1.125 1.125M20.625 4.5h-1.5C18.504 4.5 18 5.004 18 5.625m3.75 0v1.5c0 .621-.504 1.125-1.125 1.125M3.375 4.5c-.621 0-1.125.504-1.125 1.125M3.375 4.5h1.5C5.496 4.5 6 5.004 6 5.625m-3.75 0v1.5c0 .621.504 1.125 1.125 1.125m0 0h1.5m-1.5 0c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125m1.5-3.75C5.496 8.25 6 7.746 6 7.125v-1.5M4.875 8.25C5.496 8.25 6 8.754 6 9.375v1.5m0-5.25v5.25m0-5.25C6 5.004 6.504 4.5 7.125 4.5h9.75c.621 0 1.125.504 1.125 1.125m1.125 2.625h1.5m-1.5 0A1.125 1.125 0 0118 7.125v-1.5m1.125 2.625c-.621 0-1.125.504-1.125 1.125v1.5m2.625-2.625c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125M18 5.625v5.25M7.125 12h9.75m-9.75 0A1.125 1.125 0 016 10.875M7.125 12C6.504 12 6 12.504 6 13.125m0-2.25C6 11.496 5.496 12 4.875 12M18 10.875c0 .621-.504 1.125-1.125 1.125M18 10.875c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125m-12 5.25v-5.25m0 5.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125m-12 0v-1.5c0-.621-.504-1.125-1.125-1.125M18 18.375v-5.25m0 5.25v-1.5c0-.621.504-1.125 1.125-1.125M18 13.125v1.5c0 .621.504 1.125 1.125 1.125M18 13.125c0-.621.504-1.125 1.125-1.125M6 13.125v1.5c0 .621-.504 1.125-1.125 1.125M6 13.125C6 12.504 5.496 12 4.875 12m-1.5 0h1.5m-1.5 0c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125M19.125 12h1.5m0 0c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h1.5m14.25 0h1.5" />
+                                                        </svg></span>
+                                                </a>
+                                            </h5>
+                                            <div class="flex w-full" :class="{'cursor-pointer': url}"
+                                                @click="url ? window.location.href = url : ''"
+                                                x-show="playing && playing.id === itemId" style="display:none">
+                                                <div
+                                                    class="shrink-0 order-last self-start w-32 aspect-video bg-gray-100 flex items-center justify-center rounded-sm overflow-hidden">
+                                                    <img :src="playing.image" alt="" class="w-full h-auto lazyload"
+                                                        x-show="playing && playing.id === itemId && playing.image">
+                                                </div>
+                                                <div class="flex-grow flex flex-col pr-2">
+                                                    <div class="mt-auto mb-px order-last pr-1">
+                                                        <div class="bg-gray-300 rounded-sm overflow-hidden">
+                                                            <div class="h-1 bg-teal-700 rounded-sm transition-all duration-1000 ease-linear"
+                                                                :style="{ width: (playing && playing.id === itemId ? percentage : 0) + '%' }">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <h4 x-html="playing && playing.id === itemId ? title : ''"
+                                                        class="text-lg font-bold leading-tight -mt-0.5 mb-2"></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li x-data="{ itemId: 1735636200483014, title: $refs.title.innerHTML, url: $refs.url ? $refs.url.href : '' }"
+                                    class="py-2" id="event-1735636200483014">
+                                    <div class="flex items-start w-full bg-white">
+                                        <div
+                                            class="w-13 font-medium flex justify-center items-center text-center shrink-0 leading-tight opacity-90 mr-3">
+                                            <span before=":"
+                                                class="shrink-0 w-1 h-4 leading-4 flex flex-col items-center overflow-hidden before:content-[attr(before)] before:w-full before:scale-90">16:10</span>
+                                            <span before="1" after="6"
+                                                class="order-first flex w-1/2 flex justify-end -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span before="1" after="0"
+                                                class="flex w-1/2 flex justify-start -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span class="text-xs tracking-wider opacity-75 pt-px px-1">WIB</span>
+                                        </div>
+                                        <div class="flex-grow overflow-x-clip">
+                                            <h5 x-show="!playing || playing.id !== itemId" x-ref="title"
+                                                class="font-medium leading-tight">
+                                                <a href="https://tivie.id/program/hudson-rex-s6-e15-nwzDnwvBmQr7"
+                                                    x-ref="url">
+                                                    Hudson & Rex S6, Ep. <span
+                                                        class="inline-flex items-center">15</span>
+                                                </a>
+                                            </h5>
+                                            <div class="flex w-full" :class="{'cursor-pointer': url}"
+                                                @click="url ? window.location.href = url : ''"
+                                                x-show="playing && playing.id === itemId" style="display:none">
+                                                <div
+                                                    class="shrink-0 order-last self-start w-32 aspect-video bg-gray-100 flex items-center justify-center rounded-sm overflow-hidden">
+                                                    <img :src="playing.image" alt="" class="w-full h-auto lazyload"
+                                                        x-show="playing && playing.id === itemId && playing.image">
+                                                </div>
+                                                <div class="flex-grow flex flex-col pr-2">
+                                                    <div class="mt-auto mb-px order-last pr-1">
+                                                        <div class="bg-gray-300 rounded-sm overflow-hidden">
+                                                            <div class="h-1 bg-teal-700 rounded-sm transition-all duration-1000 ease-linear"
+                                                                :style="{ width: (playing && playing.id === itemId ? percentage : 0) + '%' }">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <h4 x-html="playing && playing.id === itemId ? title : ''"
+                                                        class="text-lg font-bold leading-tight -mt-0.5 mb-2"></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li x-data="{ itemId: 1735639500483015, title: $refs.title.innerHTML, url: $refs.url ? $refs.url.href : '' }"
+                                    class="py-2" id="event-1735639500483015">
+                                    <div class="flex items-start w-full bg-white">
+                                        <div
+                                            class="w-13 font-medium flex justify-center items-center text-center shrink-0 leading-tight opacity-90 mr-3">
+                                            <span before=":"
+                                                class="shrink-0 w-1 h-4 leading-4 flex flex-col items-center overflow-hidden before:content-[attr(before)] before:w-full before:scale-90">17:05</span>
+                                            <span before="1" after="7"
+                                                class="order-first flex w-1/2 flex justify-end -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span before="0" after="5"
+                                                class="flex w-1/2 flex justify-start -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span class="text-xs tracking-wider opacity-75 pt-px px-1">WIB</span>
+                                        </div>
+                                        <div class="flex-grow overflow-x-clip">
+                                            <h5 x-show="!playing || playing.id !== itemId" x-ref="title"
+                                                class="font-medium leading-tight">
+                                                <a href="https://tivie.id/program/s-w-a-t-s8-e3-nwzDnwv8nwb7"
+                                                    x-ref="url">
+                                                    S.W.A.T. S8, Ep. <span class="inline-flex items-center">3</span>
+                                                </a>
+                                            </h5>
+                                            <div class="flex w-full" :class="{'cursor-pointer': url}"
+                                                @click="url ? window.location.href = url : ''"
+                                                x-show="playing && playing.id === itemId" style="display:none">
+                                                <div
+                                                    class="shrink-0 order-last self-start w-32 aspect-video bg-gray-100 flex items-center justify-center rounded-sm overflow-hidden">
+                                                    <img :src="playing.image" alt="" class="w-full h-auto lazyload"
+                                                        x-show="playing && playing.id === itemId && playing.image">
+                                                </div>
+                                                <div class="flex-grow flex flex-col pr-2">
+                                                    <div class="mt-auto mb-px order-last pr-1">
+                                                        <div class="bg-gray-300 rounded-sm overflow-hidden">
+                                                            <div class="h-1 bg-teal-700 rounded-sm transition-all duration-1000 ease-linear"
+                                                                :style="{ width: (playing && playing.id === itemId ? percentage : 0) + '%' }">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <h4 x-html="playing && playing.id === itemId ? title : ''"
+                                                        class="text-lg font-bold leading-tight -mt-0.5 mb-2"></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li x-data="{ itemId: 1735642800483016, title: $refs.title.innerHTML, url: $refs.url ? $refs.url.href : '' }"
+                                    class="py-2" id="event-1735642800483016">
+                                    <div class="flex items-start w-full bg-white">
+                                        <div
+                                            class="w-13 font-medium flex justify-center items-center text-center shrink-0 leading-tight opacity-90 mr-3">
+                                            <span before=":"
+                                                class="shrink-0 w-1 h-4 leading-4 flex flex-col items-center overflow-hidden before:content-[attr(before)] before:w-full before:scale-90">18:00</span>
+                                            <span before="1" after="8"
+                                                class="order-first flex w-1/2 flex justify-end -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span before="0" after="0"
+                                                class="flex w-1/2 flex justify-start -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span class="text-xs tracking-wider opacity-75 pt-px px-1">WIB</span>
+                                        </div>
+                                        <div class="flex-grow overflow-x-clip">
+                                            <h5 x-show="!playing || playing.id !== itemId" x-ref="title"
+                                                class="font-medium leading-tight">
+                                                <a href="https://tivie.id/program/american-ninja-warrior-s13-nwzDnwz6mgnB"
+                                                    x-ref="url">
+                                                    American Ninja Warrior S13, Ep. <span
+                                                        class="inline-flex items-center">14</span>
+                                                </a>
+                                            </h5>
+                                            <div class="flex w-full" :class="{'cursor-pointer': url}"
+                                                @click="url ? window.location.href = url : ''"
+                                                x-show="playing && playing.id === itemId" style="display:none">
+                                                <div
+                                                    class="shrink-0 order-last self-start w-32 aspect-video bg-gray-100 flex items-center justify-center rounded-sm overflow-hidden">
+                                                    <img :src="playing.image" alt="" class="w-full h-auto lazyload"
+                                                        x-show="playing && playing.id === itemId && playing.image">
+                                                </div>
+                                                <div class="flex-grow flex flex-col pr-2">
+                                                    <div class="mt-auto mb-px order-last pr-1">
+                                                        <div class="bg-gray-300 rounded-sm overflow-hidden">
+                                                            <div class="h-1 bg-teal-700 rounded-sm transition-all duration-1000 ease-linear"
+                                                                :style="{ width: (playing && playing.id === itemId ? percentage : 0) + '%' }">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <h4 x-html="playing && playing.id === itemId ? title : ''"
+                                                        class="text-lg font-bold leading-tight -mt-0.5 mb-2"></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li x-data="{ itemId: 1735646100483017, title: $refs.title.innerHTML, url: $refs.url ? $refs.url.href : '' }"
+                                    class="py-2" id="event-1735646100483017">
+                                    <div class="flex items-start w-full bg-white">
+                                        <div
+                                            class="w-13 font-medium flex justify-center items-center text-center shrink-0 leading-tight opacity-90 mr-3">
+                                            <span before=":"
+                                                class="shrink-0 w-1 h-4 leading-4 flex flex-col items-center overflow-hidden before:content-[attr(before)] before:w-full before:scale-90">18:55</span>
+                                            <span before="1" after="8"
+                                                class="order-first flex w-1/2 flex justify-end -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span before="5" after="5"
+                                                class="flex w-1/2 flex justify-start -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span class="text-xs tracking-wider opacity-75 pt-px px-1">WIB</span>
+                                        </div>
+                                        <div class="flex-grow overflow-x-clip">
+                                            <h5 x-show="!playing || playing.id !== itemId" x-ref="title"
+                                                class="font-medium leading-tight">
+                                                <a href="https://tivie.id/program/fbi-most-wanted-s4-e18-nwzDnwzBmgb4"
+                                                    x-ref="url">
+                                                    FBI: Most Wanted S4, Ep. <span
+                                                        class="inline-flex items-center">18</span>
+                                                </a>
+                                            </h5>
+                                            <div class="flex w-full" :class="{'cursor-pointer': url}"
+                                                @click="url ? window.location.href = url : ''"
+                                                x-show="playing && playing.id === itemId" style="display:none">
+                                                <div
+                                                    class="shrink-0 order-last self-start w-32 aspect-video bg-gray-100 flex items-center justify-center rounded-sm overflow-hidden">
+                                                    <img :src="playing.image" alt="" class="w-full h-auto lazyload"
+                                                        x-show="playing && playing.id === itemId && playing.image">
+                                                </div>
+                                                <div class="flex-grow flex flex-col pr-2">
+                                                    <div class="mt-auto mb-px order-last pr-1">
+                                                        <div class="bg-gray-300 rounded-sm overflow-hidden">
+                                                            <div class="h-1 bg-teal-700 rounded-sm transition-all duration-1000 ease-linear"
+                                                                :style="{ width: (playing && playing.id === itemId ? percentage : 0) + '%' }">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <h4 x-html="playing && playing.id === itemId ? title : ''"
+                                                        class="text-lg font-bold leading-tight -mt-0.5 mb-2"></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li x-data="{ itemId: 1735649400483018, title: $refs.title.innerHTML, url: $refs.url ? $refs.url.href : '' }"
+                                    class="py-2" id="event-1735649400483018">
+                                    <div class="flex items-start w-full bg-white">
+                                        <div
+                                            class="w-13 font-medium flex justify-center items-center text-center shrink-0 leading-tight opacity-90 mr-3">
+                                            <span before=":"
+                                                class="shrink-0 w-1 h-4 leading-4 flex flex-col items-center overflow-hidden before:content-[attr(before)] before:w-full before:scale-90">19:50</span>
+                                            <span before="1" after="9"
+                                                class="order-first flex w-1/2 flex justify-end -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span before="5" after="0"
+                                                class="flex w-1/2 flex justify-start -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span class="text-xs tracking-wider opacity-75 pt-px px-1">WIB</span>
+                                        </div>
+                                        <div class="flex-grow overflow-x-clip">
+                                            <h5 x-show="!playing || playing.id !== itemId" x-ref="title"
+                                                class="font-medium leading-tight">
+                                                <a href="https://tivie.id/program/coroner-s4-e11-nwzDnwv7mwPC"
+                                                    x-ref="url">
+                                                    Coroner S4, Ep. <span class="inline-flex items-center">11</span>
+                                                </a>
+                                            </h5>
+                                            <div class="flex w-full" :class="{'cursor-pointer': url}"
+                                                @click="url ? window.location.href = url : ''"
+                                                x-show="playing && playing.id === itemId" style="display:none">
+                                                <div
+                                                    class="shrink-0 order-last self-start w-32 aspect-video bg-gray-100 flex items-center justify-center rounded-sm overflow-hidden">
+                                                    <img :src="playing.image" alt="" class="w-full h-auto lazyload"
+                                                        x-show="playing && playing.id === itemId && playing.image">
+                                                </div>
+                                                <div class="flex-grow flex flex-col pr-2">
+                                                    <div class="mt-auto mb-px order-last pr-1">
+                                                        <div class="bg-gray-300 rounded-sm overflow-hidden">
+                                                            <div class="h-1 bg-teal-700 rounded-sm transition-all duration-1000 ease-linear"
+                                                                :style="{ width: (playing && playing.id === itemId ? percentage : 0) + '%' }">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <h4 x-html="playing && playing.id === itemId ? title : ''"
+                                                        class="text-lg font-bold leading-tight -mt-0.5 mb-2"></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li x-data="{ itemId: 1735652700483019, title: $refs.title.innerHTML, url: $refs.url ? $refs.url.href : '' }"
+                                    class="py-2" id="event-1735652700483019">
+                                    <div class="flex items-start w-full bg-white">
+                                        <div
+                                            class="w-13 font-medium flex justify-center items-center text-center shrink-0 leading-tight opacity-90 mr-3">
+                                            <span before=":"
+                                                class="shrink-0 w-1 h-4 leading-4 flex flex-col items-center overflow-hidden before:content-[attr(before)] before:w-full before:scale-90">20:45</span>
+                                            <span before="2" after="0"
+                                                class="order-first flex w-1/2 flex justify-end -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span before="4" after="5"
+                                                class="flex w-1/2 flex justify-start -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span class="text-xs tracking-wider opacity-75 pt-px px-1">WIB</span>
+                                        </div>
+                                        <div class="flex-grow overflow-x-clip">
+                                            <h5 x-show="!playing || playing.id !== itemId" x-ref="title"
+                                                class="font-medium leading-tight">
+                                                <a href="https://tivie.id/film/bad-boys-ride-or-die-nwzDnwvAlwj8"
+                                                    x-ref="url">
+                                                    Bad Boys: Ride or <span class="inline-flex items-center">Die<svg
+                                                            xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                                            class="h-3.5 text-yellow-600 ml-1.5">
+                                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                                d="M3.375 19.5h17.25m-17.25 0a1.125 1.125 0 01-1.125-1.125M3.375 19.5h1.5C5.496 19.5 6 18.996 6 18.375m-3.75 0V5.625m0 12.75v-1.5c0-.621.504-1.125 1.125-1.125m18.375 2.625V5.625m0 12.75c0 .621-.504 1.125-1.125 1.125m1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125m0 3.75h-1.5A1.125 1.125 0 0118 18.375M20.625 4.5H3.375m17.25 0c.621 0 1.125.504 1.125 1.125M20.625 4.5h-1.5C18.504 4.5 18 5.004 18 5.625m3.75 0v1.5c0 .621-.504 1.125-1.125 1.125M3.375 4.5c-.621 0-1.125.504-1.125 1.125M3.375 4.5h1.5C5.496 4.5 6 5.004 6 5.625m-3.75 0v1.5c0 .621.504 1.125 1.125 1.125m0 0h1.5m-1.5 0c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125m1.5-3.75C5.496 8.25 6 7.746 6 7.125v-1.5M4.875 8.25C5.496 8.25 6 8.754 6 9.375v1.5m0-5.25v5.25m0-5.25C6 5.004 6.504 4.5 7.125 4.5h9.75c.621 0 1.125.504 1.125 1.125m1.125 2.625h1.5m-1.5 0A1.125 1.125 0 0118 7.125v-1.5m1.125 2.625c-.621 0-1.125.504-1.125 1.125v1.5m2.625-2.625c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125M18 5.625v5.25M7.125 12h9.75m-9.75 0A1.125 1.125 0 016 10.875M7.125 12C6.504 12 6 12.504 6 13.125m0-2.25C6 11.496 5.496 12 4.875 12M18 10.875c0 .621-.504 1.125-1.125 1.125M18 10.875c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125m-12 5.25v-5.25m0 5.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125m-12 0v-1.5c0-.621-.504-1.125-1.125-1.125M18 18.375v-5.25m0 5.25v-1.5c0-.621.504-1.125 1.125-1.125M18 13.125v1.5c0 .621.504 1.125 1.125 1.125M18 13.125c0-.621.504-1.125 1.125-1.125M6 13.125v1.5c0 .621-.504 1.125-1.125 1.125M6 13.125C6 12.504 5.496 12 4.875 12m-1.5 0h1.5m-1.5 0c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125M19.125 12h1.5m0 0c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h1.5m14.25 0h1.5" />
+                                                        </svg></span>
+                                                </a>
+                                            </h5>
+                                            <div class="flex w-full" :class="{'cursor-pointer': url}"
+                                                @click="url ? window.location.href = url : ''"
+                                                x-show="playing && playing.id === itemId" style="display:none">
+                                                <div
+                                                    class="shrink-0 order-last self-start w-32 aspect-video bg-gray-100 flex items-center justify-center rounded-sm overflow-hidden">
+                                                    <img :src="playing.image" alt="" class="w-full h-auto lazyload"
+                                                        x-show="playing && playing.id === itemId && playing.image">
+                                                </div>
+                                                <div class="flex-grow flex flex-col pr-2">
+                                                    <div class="mt-auto mb-px order-last pr-1">
+                                                        <div class="bg-gray-300 rounded-sm overflow-hidden">
+                                                            <div class="h-1 bg-teal-700 rounded-sm transition-all duration-1000 ease-linear"
+                                                                :style="{ width: (playing && playing.id === itemId ? percentage : 0) + '%' }">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <h4 x-html="playing && playing.id === itemId ? title : ''"
+                                                        class="text-lg font-bold leading-tight -mt-0.5 mb-2"></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <script async
+                                        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7024487184083415"
+                                        crossorigin="anonymous"></script>
+                                    <ins class="adsbygoogle" style="display:block; text-align:center;"
+                                        data-ad-layout="in-article" data-ad-format="fluid"
+                                        data-ad-client="ca-pub-7024487184083415" data-ad-slot="3702712377"></ins>
+                                    <script>
+                                        (adsbygoogle = window.adsbygoogle || []).push({});
+                                    </script>
+                                </li>
+                                <li x-data="{ itemId: 1735660200483020, title: $refs.title.innerHTML, url: $refs.url ? $refs.url.href : '' }"
+                                    class="py-2" id="event-1735660200483020">
+                                    <div class="flex items-start w-full bg-white">
+                                        <div
+                                            class="w-13 font-medium flex justify-center items-center text-center shrink-0 leading-tight opacity-90 mr-3">
+                                            <span before=":"
+                                                class="shrink-0 w-1 h-4 leading-4 flex flex-col items-center overflow-hidden before:content-[attr(before)] before:w-full before:scale-90">22:50</span>
+                                            <span before="2" after="2"
+                                                class="order-first flex w-1/2 flex justify-end -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span before="5" after="0"
+                                                class="flex w-1/2 flex justify-start -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span class="text-xs tracking-wider opacity-75 pt-px px-1">WIB</span>
+                                        </div>
+                                        <div class="flex-grow overflow-x-clip">
+                                            <h5 x-show="!playing || playing.id !== itemId" x-ref="title"
+                                                class="font-medium leading-tight">
+                                                <a href="https://tivie.id/program/ncis-origins-e3-nwzDnwv9lwv8"
+                                                    x-ref="url">
+                                                    NCIS: Origins S1, Ep. <span
+                                                        class="inline-flex items-center">3</span>
+                                                </a>
+                                            </h5>
+                                            <div class="flex w-full" :class="{'cursor-pointer': url}"
+                                                @click="url ? window.location.href = url : ''"
+                                                x-show="playing && playing.id === itemId" style="display:none">
+                                                <div
+                                                    class="shrink-0 order-last self-start w-32 aspect-video bg-gray-100 flex items-center justify-center rounded-sm overflow-hidden">
+                                                    <img :src="playing.image" alt="" class="w-full h-auto lazyload"
+                                                        x-show="playing && playing.id === itemId && playing.image">
+                                                </div>
+                                                <div class="flex-grow flex flex-col pr-2">
+                                                    <div class="mt-auto mb-px order-last pr-1">
+                                                        <div class="bg-gray-300 rounded-sm overflow-hidden">
+                                                            <div class="h-1 bg-teal-700 rounded-sm transition-all duration-1000 ease-linear"
+                                                                :style="{ width: (playing && playing.id === itemId ? percentage : 0) + '%' }">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <h4 x-html="playing && playing.id === itemId ? title : ''"
+                                                        class="text-lg font-bold leading-tight -mt-0.5 mb-2"></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li x-data="{ itemId: 1735663200483021, title: $refs.title.innerHTML, url: $refs.url ? $refs.url.href : '' }"
+                                    class="py-2" id="event-1735663200483021">
+                                    <div class="flex items-start w-full bg-white">
+                                        <div
+                                            class="w-13 font-medium flex justify-center items-center text-center shrink-0 leading-tight opacity-90 mr-3">
+                                            <span before=":"
+                                                class="shrink-0 w-1 h-4 leading-4 flex flex-col items-center overflow-hidden before:content-[attr(before)] before:w-full before:scale-90">23:40</span>
+                                            <span before="2" after="3"
+                                                class="order-first flex w-1/2 flex justify-end -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span before="4" after="0"
+                                                class="flex w-1/2 flex justify-start -space-x-px before:content-[attr(before)] before:block before:shrink-0 before:w-2.5 before:scale-90 after:content-[attr(after)] after:block after:shrink-0 after:w-2.5 after:scale-90"></span>
+                                            <span class="text-xs tracking-wider opacity-75 pt-px px-1">WIB</span>
+                                        </div>
+                                        <div class="flex-grow overflow-x-clip">
+                                            <h5 x-show="!playing || playing.id !== itemId" x-ref="title"
+                                                class="font-medium leading-tight">
+                                                <a href="https://tivie.id/program/fantasy-island-s2-e4-nwzDnwz7lwnC"
+                                                    x-ref="url">
+                                                    Fantasy Island S2, Ep. <span
+                                                        class="inline-flex items-center">4</span>
+                                                </a>
+                                            </h5>
+                                            <div class="flex w-full" :class="{'cursor-pointer': url}"
+                                                @click="url ? window.location.href = url : ''"
+                                                x-show="playing && playing.id === itemId" style="display:none">
+                                                <div
+                                                    class="shrink-0 order-last self-start w-32 aspect-video bg-gray-100 flex items-center justify-center rounded-sm overflow-hidden">
+                                                    <img :src="playing.image" alt="" class="w-full h-auto lazyload"
+                                                        x-show="playing && playing.id === itemId && playing.image">
+                                                </div>
+                                                <div class="flex-grow flex flex-col pr-2">
+                                                    <div class="mt-auto mb-px order-last pr-1">
+                                                        <div class="bg-gray-300 rounded-sm overflow-hidden">
+                                                            <div class="h-1 bg-teal-700 rounded-sm transition-all duration-1000 ease-linear"
+                                                                :style="{ width: (playing && playing.id === itemId ? percentage : 0) + '%' }">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <h4 x-html="playing && playing.id === itemId ? title : ''"
+                                                        class="text-lg font-bold leading-tight -mt-0.5 mb-2"></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

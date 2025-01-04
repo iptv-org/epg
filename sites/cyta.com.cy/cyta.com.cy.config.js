@@ -10,7 +10,7 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'cyta.com.cy',
-  days: 7, // Adjust the number of days as needed
+  days: 7,
   request: {
     cache: {
       ttl: 60 * 60 * 1000 // 1 hour

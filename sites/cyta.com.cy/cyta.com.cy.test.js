@@ -1,41 +1,52 @@
 const { url, parser } = require('./cyta.com.cy.config.js')
-const fs = require('fs')
-const path = require('path')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
-const timezone = require('dayjs/plugin/timezone')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
-const cheerio = require('cheerio')
-
 dayjs.extend(utc)
-dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
-const date = dayjs.utc('2024-12-19', 'YYYY-MM-DD').startOf('d')
-const channel = { site_id: '561066', xmltv_id: 'RIK1.cy', lang: 'el' }
+const date = dayjs.utc('2025-01-03', 'YYYY-MM-DD').startOf('day')
+const channel = {
+  site_id: '561066',
+  xmltv_id: 'RIK1.cy'
+}
 
 it('can generate valid url', () => {
-  expect(url({ channel, date })).toBe('https://epg.cyta.com.cy/api/mediacatalog/fetchEpg?startTimeEpoch=1734584400000&endTimeEpoch=1734670799000&language=1&channelIds=561066')
+  const generatedUrl = url({ date, channel })
+  console.log('Generated URL:', generatedUrl)
+  expect(generatedUrl).toBe('https://epg.cyta.com.cy/api/mediacatalog/fetchEpg?startTimeEpoch=1735862400000&endTimeEpoch=1735948800000&language=1&channelIds=561066')
 })
 
 it('can parse response', () => {
-  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'), 'utf8')
-  const results = parser({content, date}).map(p => {
+  const content = `
+  {
+    "channelEpgs": [
+        {
+            "epgPlayables": [
+                { "name": "Πρώτη Ενημέρωση", "startTime": 1735879500000, "endTime": 1735889400000 }
+            ]
+        }
+    ]
+  }`
+
+  const result = parser({ content }).map(p => {
+    p.start = p.start
+    p.stop = p.stop
     return p
   })
 
-  expect(results).toMatchObject([
+  expect(result).toMatchObject([
     {
-      start: '2024-12-19T01:30:00.000Z',
-      stop: '2024-12-19T02:00:00.000Z',
-      title: 'Πρώτη Ενημέρωση'
+      title: "Πρώτη Ενημέρωση",
+      start: "2025-01-03T04:45:00.000Z",
+      stop: "2025-01-03T07:30:00.000Z"
     }
   ])
 })
 
 it('can handle empty guide', () => {
   const result = parser({
-    content: '[]'
+    content: '{"channelEpgs":[]}'
   })
   expect(result).toMatchObject([])
 })
