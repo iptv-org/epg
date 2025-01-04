@@ -16,7 +16,7 @@
     "test": "run-script-os",
     "test:win32": "SET \"TZ=Pacific/Nauru\" && npx jest --runInBand",
     "test:default": "TZ=Pacific/Nauru npx jest --runInBand",
-    "postinstall": "test -n \"$SKIP_POSTINSTALL\" || npm run api:load",
+    "postinstall": "skip-postinstall || npm run api:load",
     "prepare": "husky"
   },
   "private": true,
@@ -83,6 +83,7 @@
     "pdf-parse": "^1.1.1",
     "serve": "^14.2.4",
     "signale": "^1.4.0",
+    "skip-postinstall": "^1.0.0",
     "srcset": "^4.0.0",
     "table2array": "^0.0.2",
     "tabletojson": "^2.0.7",
