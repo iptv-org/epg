@@ -25,20 +25,18 @@ module.exports = {
           .filter(schedule => schedule.sid === channel.site_id)
           .forEach(schedule => {
             if (Array.isArray(schedule.events)) {
-              schedule.events
-                .forEach(event => {
-                  const start = dayjs.utc(event.st * 1000)
-                  if (start.isSame(date, 'd')) {
-                    programs.push({
-                      title: event.t,
-                      description: event.sy,
-                      season: event.seasonnumber,
-                      episode: event.episodenumber,
-                      start,
-                      stop: start.add(event.d, 's')
-                    })
-                  }
-                })
+              schedule.events.forEach(event => {
+                const start = dayjs.utc(event.st * 1000)
+                if (start.isSame(date, 'd')) {
+                  programs.push({
+                    title: event.t,
+                    description: event.sy,
+                    season: event.seasonnumber,
+                    episode: event.episodenumber,
+                    start,
+                    stop: start.add(event.d, 's')
+                  })
+                }
               })
             }
           })
