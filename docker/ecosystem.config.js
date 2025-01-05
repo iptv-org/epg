@@ -16,7 +16,7 @@ if (process.env.CRON) {
         autorestart: false,
         filter_env: ["CRON"],
     })
-    // run a grab according to the cron schedule
+    // run a grab according to the cron schedule and let pm2 restart if it fails
     apps.push({
         name: "grab-cron",
         script: "npm run grab",
@@ -26,6 +26,7 @@ if (process.env.CRON) {
     apps.push({
         name: "grab",
         script: "npm run grab",
+        autorestart: false,
     })
 }
 
