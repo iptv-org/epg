@@ -1,5 +1,10 @@
 #!/bin/bash
 
+#!/bin/bash
+
+# Change to script directory
+cd /epg
+
 # serve location
 SERVE="/epg/serve/"
 INPUT_FILE="guide.xml"
