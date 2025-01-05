@@ -160,7 +160,7 @@ docker build -t iptv-org/epg --no-cache .
 docker run -p 3000:3000 -v /path/to/channels.xml:/epg/channels.xml iptv-org/epg
 ```
 
-By default, the guide will be downloaded every day at 00:00 UTC and saved to the `/epg/public/guide.xml` file inside the container.
+By default, the guide will be downloaded only once and saved to the `/epg/public/guide.xml` file inside the container.
 
 From the outside, it will be available at this link:
 
@@ -191,14 +191,14 @@ docker run \
 iptv-org/epg
 ```
 
-| Variable        | Description                                                                                                        |
-| --------------- | ------------------------------------------------------------------------------------------------------------------ |
-| CRON            | A [cron expression](https://crontab.guru/) describing the schedule of the guide loadings (default: "0 0 \* \* \*") |
-| MAX_CONNECTIONS | Limit on the number of concurrent requests (default: 1)                                                            |
-| GZIP            | Boolean value indicating whether to create a compressed version of the guide (default: false)                      |
-| DAYS            | Number of days for which the guide will be loaded (defaults to the value from the site config)                     |
-| TIMEOUT         | Timeout for each request in milliseconds (default: 0)                                                              |
-| DELAY           | Delay between request in milliseconds (default: 0)                                                                 |
+| Variable        | Description                                                                                                         |
+| --------------- | ------------------------------------------------------------------------------------------------------------------- |
+| CRON            | A [cron expression](https://crontab.guru/) describing the schedule of the guide loadings (by default will run once) |
+| MAX_CONNECTIONS | Limit on the number of concurrent requests (default: 1)                                                             |
+| GZIP            | Boolean value indicating whether to create a compressed version of the guide (default: false)                       |
+| DAYS            | Number of days for which the guide will be loaded (defaults to the value from the site config)                      |
+| TIMEOUT         | Timeout for each request in milliseconds (default: 0)                                                               |
+| DELAY           | Delay between request in milliseconds (default: 0)                                                                  |
 
 ## Playlists
 
