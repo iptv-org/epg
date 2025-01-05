@@ -1,6 +1,6 @@
 import { execSync } from 'child_process'
 import fs from 'fs-extra'
-import path from 'path'
+import { pathToFileURL } from 'node:url'
 
 beforeEach(() => {
   fs.emptyDirSync('tests/__data__/output')
@@ -24,7 +24,7 @@ describe('channels:parse', () => {
 })
 
 function content(filepath: string) {
-  return fs.readFileSync(path.resolve(filepath), {
+  return fs.readFileSync(pathToFileURL(filepath), {
     encoding: 'utf8'
   })
 }

@@ -1,5 +1,6 @@
 import { execSync } from 'child_process'
 import fs from 'fs-extra'
+import { pathToFileURL } from 'node:url'
 import path from 'path'
 import os from 'os'
 import { Zip } from '@freearhey/core'
@@ -99,7 +100,7 @@ describe('epg:grab', () => {
 })
 
 function content(filepath: string) {
-  return fs.readFileSync(path.resolve(filepath), {
+  return fs.readFileSync(pathToFileURL(filepath), {
     encoding: 'utf8'
   })
 }

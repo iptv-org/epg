@@ -1,6 +1,6 @@
 import { execSync } from 'child_process'
 import fs from 'fs-extra'
-import path from 'path'
+import { pathToFileURL } from 'node:url'
 import os from 'os'
 
 let ENV_VAR = 'SITES_DIR=tests/__data__/input/epg-grab/sites API_DIR=tests/__data__/output'
@@ -26,7 +26,7 @@ describe('api:generate', () => {
 })
 
 function content(filepath: string) {
-  return fs.readFileSync(path.resolve(filepath), {
+  return fs.readFileSync(pathToFileURL(filepath), {
     encoding: 'utf8'
   })
 }

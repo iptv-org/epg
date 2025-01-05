@@ -1,7 +1,7 @@
 import fs from 'fs-extra'
 import { execSync } from 'child_process'
 import os from 'os'
-import path from 'path'
+import { pathToFileURL } from 'node:url'
 
 type ExecError = {
   status: number
@@ -46,7 +46,7 @@ describe('channels:editor', () => {
 })
 
 function content(filepath: string) {
-  return fs.readFileSync(path.resolve(filepath), {
+  return fs.readFileSync(pathToFileURL(filepath), {
     encoding: 'utf8'
   })
 }
