@@ -31,7 +31,7 @@ describe('channels:editor', () => {
       expect((error as ExecError).status).toBe(1)
       expect((error as ExecError).stdout).toContain('CNN International | CNNInternational.us [new]')
       expect((error as ExecError).stdout).toContain(
-        'CNN International Europe | CNNInternationalEurope.us [api]'
+        'CNN International Europe | CNNInternationalEurope.us'
       )
       expect((error as ExecError).stdout).toContain('Overwrite')
       expect((error as ExecError).stdout).toContain('Skip')
