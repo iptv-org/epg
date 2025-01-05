@@ -1,0 +1,5489 @@
+// 20241219150305
+// https://epg.cyta.com.cy/api/mediacatalog/fetchEpg?startTimeEpoch=1734584400000&endTimeEpoch=1734670799000&language=1&channelIds=561066,561078,608096,54111184,54184415,289530,39337317,289568,561166,561178,574264,216630,206750,2221,289555,289542,289607,2743,2266,2374
+
+{
+  "channelEpgs": [
+    {
+      "channelId": "561066",
+      "epgPlayables": [
+        {
+          "id": "82348554",
+          "channelId": "561066",
+          "name": "Πρώτη Ενημέρωση",
+          "startTime": 1734583500000,
+          "endTime": 1734593400000,
+          "included": true,
+          "rating": "K"
+        },
+        {
+          "id": "82348560",
+          "channelId": "561066",
+          "name": "Όμορφη Μέρα",
+          "startTime": 1734593400000,
+          "endTime": 1734598800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82348566",
+          "channelId": "561066",
+          "name": "Από μέρα σε μέρα",
+          "startTime": 1734598800000,
+          "endTime": 1734609600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82348572",
+          "channelId": "561066",
+          "name": "Ειδήσεις",
+          "startTime": 1734609600000,
+          "endTime": 1734611400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82348578",
+          "channelId": "561066",
+          "name": "Εμείς κι ο Κόσμος μας",
+          "startTime": 1734611400000,
+          "endTime": 1734615000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82348584",
+          "channelId": "561066",
+          "name": "Καμώματα τζι Αρώματα",
+          "startTime": 1734615000000,
+          "endTime": 1734618600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82348590",
+          "channelId": "561066",
+          "name": "Γκρο Πλαν",
+          "startTime": 1734618600000,
+          "endTime": 1734624000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82348596",
+          "channelId": "561066",
+          "name": "Ειδήσεις",
+          "startTime": 1734624000000,
+          "endTime": 1734625800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82348602",
+          "channelId": "561066",
+          "name": "Ειρήνη Πάσι",
+          "startTime": 1734625800000,
+          "endTime": 1734627600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82348608",
+          "channelId": "561066",
+          "name": "Τρικυμία",
+          "startTime": 1734627600000,
+          "endTime": 1734631200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82348614",
+          "channelId": "561066",
+          "name": "Ειδήσεις",
+          "startTime": 1734631200000,
+          "endTime": 1734634800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82348620",
+          "channelId": "561066",
+          "name": "UEFA Conference League",
+          "startTime": 1734634800000,
+          "endTime": 1734638400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82348626",
+          "channelId": "561066",
+          "name": "UEFA Conference League",
+          "startTime": 1734638400000,
+          "endTime": 1734645600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82348632",
+          "channelId": "561066",
+          "name": "UEFA Conference League",
+          "startTime": 1734645600000,
+          "endTime": 1734647400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82348638",
+          "channelId": "561066",
+          "name": "Θρησκευτικές Ομάδες στην Κύπρο(E)",
+          "startTime": 1734647400000,
+          "endTime": 1734647700000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82348644",
+          "channelId": "561066",
+          "name": "Τρικυμία(E)",
+          "startTime": 1734647700000,
+          "endTime": 1734651000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82348650",
+          "channelId": "561066",
+          "name": "Ειρήνη Πάσι(E)",
+          "startTime": 1734651000000,
+          "endTime": 1734652800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82348656",
+          "channelId": "561066",
+          "name": "Καμώματα τζι Αρώματα(E)",
+          "startTime": 1734652800000,
+          "endTime": 1734656400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82348662",
+          "channelId": "561066",
+          "name": "Ειδήσεις(E)",
+          "startTime": 1734656400000,
+          "endTime": 1734660000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82348668",
+          "channelId": "561066",
+          "name": "Όμορφη Μέρα(E)",
+          "startTime": 1734660000000,
+          "endTime": 1734665400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82348674",
+          "channelId": "561066",
+          "name": "Ειρήνη Πάσι(E)",
+          "startTime": 1734665400000,
+          "endTime": 1734667200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82348680",
+          "channelId": "561066",
+          "name": "Tρικυμία(E)",
+          "startTime": 1734667200000,
+          "endTime": 1734669900000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82348686",
+          "channelId": "561066",
+          "name": "Πρώτη Ενημέρωση",
+          "startTime": 1734669900000,
+          "endTime": 1734679800000,
+          "included": false,
+          "rating": "K"
+        }
+      ]
+    },
+    {
+      "channelId": "561078",
+      "epgPlayables": [
+        {
+          "id": "82350999",
+          "channelId": "561078",
+          "name": "Φλίπερ (Flipper)",
+          "startTime": 1734582600000,
+          "endTime": 1734585300000,
+          "included": true,
+          "rating": "K"
+        },
+        {
+          "id": "82351005",
+          "channelId": "561078",
+          "name": "Τα Οκτώ παιδιά μου (Eight is Enough)",
+          "startTime": 1734585300000,
+          "endTime": 1734588300000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82351011",
+          "channelId": "561078",
+          "name": "Ο μικρός Μαλαμπάρ (Little Malabar)",
+          "startTime": 1734588300000,
+          "endTime": 1734589200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82351017",
+          "channelId": "561078",
+          "name": "Ούμκα (Oomka)",
+          "startTime": 1734589200000,
+          "endTime": 1734590400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82351023",
+          "channelId": "561078",
+          "name": "Yeti Tales",
+          "startTime": 1734590400000,
+          "endTime": 1734591900000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82351029",
+          "channelId": "561078",
+          "name": "Μάγια η Μέλισσα (Maya the Bee) ΕΠ23",
+          "startTime": 1734591900000,
+          "endTime": 1734593400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82351035",
+          "channelId": "561078",
+          "name": "Χάιντι (Heidi)",
+          "startTime": 1734593400000,
+          "endTime": 1734594900000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82351041",
+          "channelId": "561078",
+          "name": "Οι Μόνσικιτς (Monsikids )",
+          "startTime": 1734594900000,
+          "endTime": 1734595800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82351047",
+          "channelId": "561078",
+          "name": "Η Μάρσι και ο μαγεμένος γάτος (Meowgic)",
+          "startTime": 1734595800000,
+          "endTime": 1734596700000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82351053",
+          "channelId": "561078",
+          "name": "Zig’s Space Rangers (Mighty Pawa)",
+          "startTime": 1734596700000,
+          "endTime": 1734598200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82351059",
+          "channelId": "561078",
+          "name": "The Looney Tunes Show",
+          "startTime": 1734598200000,
+          "endTime": 1734599700000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82351065",
+          "channelId": "561078",
+          "name": "Τα Στρουμφάκια (The Smurfs)",
+          "startTime": 1734599700000,
+          "endTime": 1734601200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82351071",
+          "channelId": "561078",
+          "name": "Ο μικρός Μαλαμπάρ (Little Malabar)",
+          "startTime": 1734601200000,
+          "endTime": 1734602100000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82351077",
+          "channelId": "561078",
+          "name": "Ούμκα (Oomka)",
+          "startTime": 1734602100000,
+          "endTime": 1734603600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82351083",
+          "channelId": "561078",
+          "name": "Yeti Tales",
+          "startTime": 1734603600000,
+          "endTime": 1734605100000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82351089",
+          "channelId": "561078",
+          "name": "Μάγια η Μέλισσα (Maya the Bee) ΕΠ23",
+          "startTime": 1734605100000,
+          "endTime": 1734606600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82351095",
+          "channelId": "561078",
+          "name": "Χάιντι (Heidi)",
+          "startTime": 1734606600000,
+          "endTime": 1734608100000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82351101",
+          "channelId": "561078",
+          "name": "Οι Μόνσικιτς (Monsikids )",
+          "startTime": 1734608100000,
+          "endTime": 1734609000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82351107",
+          "channelId": "561078",
+          "name": "Η Μάρσι και ο μαγεμένος γάτος (Meowgic)",
+          "startTime": 1734609000000,
+          "endTime": 1734609900000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82351113",
+          "channelId": "561078",
+          "name": "Zig’s Space Rangers (Mighty Pawa)",
+          "startTime": 1734609900000,
+          "endTime": 1734611400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82351119",
+          "channelId": "561078",
+          "name": "The Looney Tunes Show",
+          "startTime": 1734611400000,
+          "endTime": 1734612900000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82351125",
+          "channelId": "561078",
+          "name": "Τα Στρουμφάκια (The Smurfs)",
+          "startTime": 1734612900000,
+          "endTime": 1734614400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82351131",
+          "channelId": "561078",
+          "name": "Φλίπερ (Flipper)",
+          "startTime": 1734614400000,
+          "endTime": 1734617100000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82351137",
+          "channelId": "561078",
+          "name": "Full House",
+          "startTime": 1734617100000,
+          "endTime": 1734618600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82351143",
+          "channelId": "561078",
+          "name": "Step by Step",
+          "startTime": 1734618600000,
+          "endTime": 1734620400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82351149",
+          "channelId": "561078",
+          "name": "Euromaxx on Vacation",
+          "startTime": 1734620400000,
+          "endTime": 1734622200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82351155",
+          "channelId": "561078",
+          "name": "UEFA CONFERENCE LEAGUE MAGAZINE",
+          "startTime": 1734622200000,
+          "endTime": 1734626400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82351161",
+          "channelId": "561078",
+          "name": "Unlocking the Past",
+          "startTime": 1734626400000,
+          "endTime": 1734630000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82351167",
+          "channelId": "561078",
+          "name": "Ειδήσεις στην αγγλική",
+          "startTime": 1734630000000,
+          "endTime": 1734630600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82351173",
+          "channelId": "561078",
+          "name": "Ειδήσεις στην τουρκική",
+          "startTime": 1734630600000,
+          "endTime": 1734631200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82351179",
+          "channelId": "561078",
+          "name": "Κεντρικό Δελτίο Ειδήσεων στη Νοηματική",
+          "startTime": 1734631200000,
+          "endTime": 1734634800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82351185",
+          "channelId": "561078",
+          "name": "Death in Paradise",
+          "startTime": 1734634800000,
+          "endTime": 1734640800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82351191",
+          "channelId": "561078",
+          "name": "Full House",
+          "startTime": 1734640800000,
+          "endTime": 1734642300000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82351197",
+          "channelId": "561078",
+          "name": "Step by Step",
+          "startTime": 1734642300000,
+          "endTime": 1734643800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82351203",
+          "channelId": "561078",
+          "name": "Εμείς κι ο Κόσμος μας (E)",
+          "startTime": 1734643800000,
+          "endTime": 1734647400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82351209",
+          "channelId": "561078",
+          "name": "Ειδήσεις στην αγγλική & τουρκική(επανάληψη)",
+          "startTime": 1734647400000,
+          "endTime": 1734648300000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82351215",
+          "channelId": "561078",
+          "name": "Από Μέρα σε Μέρα (E)",
+          "startTime": 1734648300000,
+          "endTime": 1734659100000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82351221",
+          "channelId": "561078",
+          "name": "Death in Paradise (E)",
+          "startTime": 1734659100000,
+          "endTime": 1734665700000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82351227",
+          "channelId": "561078",
+          "name": "Unlocking the Past(E)",
+          "startTime": 1734665700000,
+          "endTime": 1734669000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82351233",
+          "channelId": "561078",
+          "name": "Φίλοι για Πάντα(E)",
+          "startTime": 1734669000000,
+          "endTime": 1734670800000,
+          "included": false,
+          "rating": "K"
+        }
+      ]
+    },
+    {
+      "channelId": "608096",
+      "epgPlayables": [
+        {
+          "id": "83076979",
+          "channelId": "608096",
+          "name": "Πρώτη Ενημέρωση",
+          "startTime": 1734583500000,
+          "endTime": 1734593400000,
+          "included": true,
+          "rating": "K"
+        },
+        {
+          "id": "83076985",
+          "channelId": "608096",
+          "name": "Όμορφη Μέρα",
+          "startTime": 1734593400000,
+          "endTime": 1734598800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83076991",
+          "channelId": "608096",
+          "name": "Από μέρα σε μέρα",
+          "startTime": 1734598800000,
+          "endTime": 1734609600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83076997",
+          "channelId": "608096",
+          "name": "Ειδήσεις",
+          "startTime": 1734609600000,
+          "endTime": 1734611400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83077003",
+          "channelId": "608096",
+          "name": "Εμείς κι ο Κόσμος μας",
+          "startTime": 1734611400000,
+          "endTime": 1734615000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83077009",
+          "channelId": "608096",
+          "name": "Καμώματα τζι Αρώματα",
+          "startTime": 1734615000000,
+          "endTime": 1734618600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83077015",
+          "channelId": "608096",
+          "name": "Γκρο Πλαν",
+          "startTime": 1734618600000,
+          "endTime": 1734624000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83077021",
+          "channelId": "608096",
+          "name": "Ειδήσεις",
+          "startTime": 1734624000000,
+          "endTime": 1734625800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83077027",
+          "channelId": "608096",
+          "name": "Ειρήνη Πάσι",
+          "startTime": 1734625800000,
+          "endTime": 1734627600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83077033",
+          "channelId": "608096",
+          "name": "Τρικυμία",
+          "startTime": 1734627600000,
+          "endTime": 1734631200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83077039",
+          "channelId": "608096",
+          "name": "Ειδήσεις",
+          "startTime": 1734631200000,
+          "endTime": 1734634800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83077045",
+          "channelId": "608096",
+          "name": "UEFA Conference League",
+          "startTime": 1734634800000,
+          "endTime": 1734638400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83077051",
+          "channelId": "608096",
+          "name": "UEFA Conference League",
+          "startTime": 1734638400000,
+          "endTime": 1734645600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83077057",
+          "channelId": "608096",
+          "name": "UEFA Conference League",
+          "startTime": 1734645600000,
+          "endTime": 1734647400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83077063",
+          "channelId": "608096",
+          "name": "Θρησκευτικές Ομάδες στην Κύπρο(E)",
+          "startTime": 1734647400000,
+          "endTime": 1734647700000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83077069",
+          "channelId": "608096",
+          "name": "Τρικυμία(E)",
+          "startTime": 1734647700000,
+          "endTime": 1734651000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83077075",
+          "channelId": "608096",
+          "name": "Ειρήνη Πάσι(E)",
+          "startTime": 1734651000000,
+          "endTime": 1734652800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83077081",
+          "channelId": "608096",
+          "name": "Καμώματα τζι Αρώματα(E)",
+          "startTime": 1734652800000,
+          "endTime": 1734656400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83077087",
+          "channelId": "608096",
+          "name": "Ειδήσεις(E)",
+          "startTime": 1734656400000,
+          "endTime": 1734660000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83077093",
+          "channelId": "608096",
+          "name": "Όμορφη Μέρα(E)",
+          "startTime": 1734660000000,
+          "endTime": 1734665400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83077099",
+          "channelId": "608096",
+          "name": "Ειρήνη Πάσι(E)",
+          "startTime": 1734665400000,
+          "endTime": 1734667200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83077105",
+          "channelId": "608096",
+          "name": "Tρικυμία(E)",
+          "startTime": 1734667200000,
+          "endTime": 1734669900000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83077111",
+          "channelId": "608096",
+          "name": "Πρώτη Ενημέρωση",
+          "startTime": 1734669900000,
+          "endTime": 1734679800000,
+          "included": false,
+          "rating": "K"
+        }
+      ]
+    },
+    {
+      "channelId": "54111184",
+      "epgPlayables": [
+        {
+          "id": "82661429",
+          "channelId": "54111184",
+          "name": "Open ΤΩΡΑ",
+          "startTime": 1734584400000,
+          "endTime": 1734590700000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82661435",
+          "channelId": "54111184",
+          "name": "Breakfast at Star",
+          "startTime": 1734590700000,
+          "endTime": 1734601500000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82661441",
+          "channelId": "54111184",
+          "name": "ΕΝΗΜΕΡΩΣΗ ΤΩΡΑ",
+          "startTime": 1734601500000,
+          "endTime": 1734607800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82661447",
+          "channelId": "54111184",
+          "name": "ΕΛΑ ΝΑ ΔΕΙΣ",
+          "startTime": 1734607800000,
+          "endTime": 1734613200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82661453",
+          "channelId": "54111184",
+          "name": "ΑΙΧΜΕΣ",
+          "startTime": 1734613200000,
+          "endTime": 1734618000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82661459",
+          "channelId": "54111184",
+          "name": "Cuisinovia",
+          "startTime": 1734618000000,
+          "endTime": 1734621300000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82661465",
+          "channelId": "54111184",
+          "name": "SHOPPING STAR",
+          "startTime": 1734621300000,
+          "endTime": 1734624000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82661471",
+          "channelId": "54111184",
+          "name": "OMEGA NEWS",
+          "startTime": 1734624000000,
+          "endTime": 1734624300000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82661477",
+          "channelId": "54111184",
+          "name": "Shopping Star (ΣΥΝΈΧΕΙΑ)",
+          "startTime": 1734624300000,
+          "endTime": 1734627300000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82661483",
+          "channelId": "54111184",
+          "name": "ΤΡΟΧΟΣ ΤΗΣ ΤΥΧΗΣ",
+          "startTime": 1734627300000,
+          "endTime": 1734631800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82661489",
+          "channelId": "54111184",
+          "name": "OMEGA NEWS",
+          "startTime": 1734631800000,
+          "endTime": 1734635400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82661495",
+          "channelId": "54111184",
+          "name": "The Social Experiment",
+          "startTime": 1734635400000,
+          "endTime": 1734639000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82661501",
+          "channelId": "54111184",
+          "name": "King Arthur: Legend of the Sword",
+          "startTime": 1734639000000,
+          "endTime": 1734647400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82661507",
+          "channelId": "54111184",
+          "name": "ΥΠΟΘΕΣΕΙΣ",
+          "startTime": 1734647400000,
+          "endTime": 1734654600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82661513",
+          "channelId": "54111184",
+          "name": "ΠΡΩΙΝΟ ΣΟΥ ΣΟΥ",
+          "startTime": 1734654600000,
+          "endTime": 1734663600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82661519",
+          "channelId": "54111184",
+          "name": "Shopping Star (E)",
+          "startTime": 1734663600000,
+          "endTime": 1734667200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82661525",
+          "channelId": "54111184",
+          "name": "ΣΑΝ ΨΕΜΑ (E)",
+          "startTime": 1734667200000,
+          "endTime": 1734670800000,
+          "included": false,
+          "rating": "K"
+        }
+      ]
+    },
+    {
+      "channelId": "54184415",
+      "epgPlayables": [
+        {
+          "id": "82501462",
+          "channelId": "54184415",
+          "name": "ΒΑΛΣ ΜΕ 12 ΘΕΟΥΣ II (E)",
+          "startTime": 1734582000000,
+          "endTime": 1734584700000,
+          "included": true,
+          "rating": "K"
+        },
+        {
+          "id": "82501468",
+          "channelId": "54184415",
+          "name": "ΧΩΡΙΣ ΕΣΕΝΑ (E)",
+          "startTime": 1734584700000,
+          "endTime": 1734587700000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82501474",
+          "channelId": "54184415",
+          "name": "Ο ΠΡΩΤΟΣ ΑΠΌ ΕΜΑΣ (E)",
+          "startTime": 1734587700000,
+          "endTime": 1734591600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82501480",
+          "channelId": "54184415",
+          "name": "ΤΟ ΠΡΩ1ΝΟ",
+          "startTime": 1734591600000,
+          "endTime": 1734595200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82501486",
+          "channelId": "54184415",
+          "name": "5X5 IV (E)",
+          "startTime": 1734595200000,
+          "endTime": 1734598800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82501492",
+          "channelId": "54184415",
+          "name": "ΜΕΡΑ ΜΕΣΗΜΕΡΙ",
+          "startTime": 1734598800000,
+          "endTime": 1734609600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82501498",
+          "channelId": "54184415",
+          "name": "ΚΩΝΣΤΑΝΤΙΝΟΥ ΚΑΙ ΕΛΕΝΗΣ II (E)",
+          "startTime": 1734609600000,
+          "endTime": 1734612600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82501504",
+          "channelId": "54184415",
+          "name": "ΤΟ ΚΑΦΕ ΤΗΣ ΧΑΡΑΣ II (E)",
+          "startTime": 1734612600000,
+          "endTime": 1734616200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82501510",
+          "channelId": "54184415",
+          "name": "ΑΙΓΙΑ Fuxia (E)",
+          "startTime": 1734616200000,
+          "endTime": 1734619500000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82501516",
+          "channelId": "54184415",
+          "name": "Rouk Zouk VIII",
+          "startTime": 1734619500000,
+          "endTime": 1734624000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82501522",
+          "channelId": "54184415",
+          "name": "ΤΑ ΝΕΑ ΣΕ 10'",
+          "startTime": 1734624000000,
+          "endTime": 1734624300000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82929850",
+          "channelId": "54184415",
+          "name": "5X5 IV (E)",
+          "startTime": 1734624300000,
+          "endTime": 1734628500000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82501534",
+          "channelId": "54184415",
+          "name": "ΠΟΙΟΣ ΘΕΛΕΙ ΝΑ ΓΙΝΕΙ ΕΚΑΤΟΜΜΥΡΙΟΥΧΟΣ; ΙΙ (E)",
+          "startTime": 1734628500000,
+          "endTime": 1734632100000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82501540",
+          "channelId": "54184415",
+          "name": "ΤΑ ΝΕΑ ΤΟΥ ΑΝΤΕΝΝΑ",
+          "startTime": 1734632100000,
+          "endTime": 1734636600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82501546",
+          "channelId": "54184415",
+          "name": "Η ΘΕΤΙΚΗ ΠΛΕΥΡΑ ΤΗΣ ΖΩΗΣ (the Upside)",
+          "startTime": 1734636600000,
+          "endTime": 1734645000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82501552",
+          "channelId": "54184415",
+          "name": "The 2NIGHT Show IX",
+          "startTime": 1734645000000,
+          "endTime": 1734652200000,
+          "included": false,
+          "rating": "12"
+        },
+        {
+          "id": "82501558",
+          "channelId": "54184415",
+          "name": "ΚΑΙ ΟΙ ΠΑΝΤΡΕΜΕΝΟΙ ΕΧΟΥΝ ΨΥΧΗ Ιiι (E)",
+          "startTime": 1734652200000,
+          "endTime": 1734655200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82501564",
+          "channelId": "54184415",
+          "name": "ΒΑΜΜΕΝΑ ΚΟΚΚΙΝΑ ΜΑΛΛΙΑ (E)",
+          "startTime": 1734655200000,
+          "endTime": 1734658200000,
+          "included": false,
+          "rating": "15"
+        },
+        {
+          "id": "82501570",
+          "channelId": "54184415",
+          "name": "ΤΟ ΚΑΦΕΝΕΙΟ (E)",
+          "startTime": 1734658200000,
+          "endTime": 1734660000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82501576",
+          "channelId": "54184415",
+          "name": "ΠΑΝΣΕΛΗΝΟΣ II (E)",
+          "startTime": 1734660000000,
+          "endTime": 1734662400000,
+          "included": false,
+          "rating": "12"
+        },
+        {
+          "id": "82501582",
+          "channelId": "54184415",
+          "name": "ΣΤΡΙΒΕΙΝ ΔΙΑ ΤΟΥ ΑΡΡΑΒΩΝΟΣ (E)",
+          "startTime": 1734662400000,
+          "endTime": 1734665400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82501588",
+          "channelId": "54184415",
+          "name": "ΝΙΩΣΕ ΜΕ (E)",
+          "startTime": 1734665400000,
+          "endTime": 1734668400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82501594",
+          "channelId": "54184415",
+          "name": "ΒΑΛΣ ΜΕ 12 ΘΕΟΥΣ II (E)",
+          "startTime": 1734668400000,
+          "endTime": 1734671100000,
+          "included": false,
+          "rating": "K"
+        }
+      ]
+    },
+    {
+      "channelId": "289530",
+      "epgPlayables": [
+        {
+          "id": "82546960",
+          "channelId": "289530",
+          "name": "ΠΡΩΤΟΣΕΛΙΔΟ ΜΕ ΤΟΝ ΑΝΔΡΕΑ ΔΗΜΗΤΡΟΠΟΥΛΟ",
+          "startTime": 1734583500000,
+          "endTime": 1734595200000,
+          "included": true,
+          "rating": "K"
+        },
+        {
+          "id": "82546966",
+          "channelId": "289530",
+          "name": "ΧΡΥΣΩΜΑΓΕΙΡΕΜΑΤΑ ΜΕ ΤΗ ΧΡΥΣΩ ΛΕΦΟΥ",
+          "startTime": 1734595200000,
+          "endTime": 1734598800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82546972",
+          "channelId": "289530",
+          "name": "ΜΕΣΗΜΕΡΙ ΚΑΙ ΚΑΤΙ ΜΕ ΤΟΝ ΧΡΗΣΤΟ ΜΙΧΑΛΑΡΟ",
+          "startTime": 1734598800000,
+          "endTime": 1734607800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82546978",
+          "channelId": "289530",
+          "name": "ΗΡΘΕ ΚΙ ΕΔΕΣΕ ΜΕ ΤΗ ΓΙΩΤΑ ΔΑΜΙΑΝΟΥ",
+          "startTime": 1734607800000,
+          "endTime": 1734614400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82546984",
+          "channelId": "289530",
+          "name": "Η ΜΑΜΑ ΜΟΥ ΜΑΓΕΙΡΕΥΕΙ ΚΑΛΥΤΕΡΑ ΑΠΌ ΤΗ ΔΙΚΗ ΣΟΥ",
+          "startTime": 1734614400000,
+          "endTime": 1734619200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82546990",
+          "channelId": "289530",
+          "name": "My Style Rocks",
+          "startTime": 1734619200000,
+          "endTime": 1734624000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82546996",
+          "channelId": "289530",
+          "name": "ΓΕΓΟΝΟΤΑ ΣΕ ΣΥΝΤΟΜΙΑ",
+          "startTime": 1734624000000,
+          "endTime": 1734624300000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82547002",
+          "channelId": "289530",
+          "name": "My Style Rocks",
+          "startTime": 1734624300000,
+          "endTime": 1734627600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82547008",
+          "channelId": "289530",
+          "name": "Still Standing ΜΕ ΤΟΝ ΧΡΗΣΤΟ ΦΕΡΕΝΤΙΝΟ",
+          "startTime": 1734627600000,
+          "endTime": 1734630600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82547014",
+          "channelId": "289530",
+          "name": "ΤΟΜΕΣ ΣΤΑ ΓΕΓΟΝΟΤΑ",
+          "startTime": 1734630600000,
+          "endTime": 1734634800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82547020",
+          "channelId": "289530",
+          "name": "Tron: Legacy",
+          "startTime": 1734634800000,
+          "endTime": 1734642900000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82547026",
+          "channelId": "289530",
+          "name": "Murder on the Orient Express",
+          "startTime": 1734642900000,
+          "endTime": 1734649200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82547032",
+          "channelId": "289530",
+          "name": "Η ΜΑΜΑ ΜΟΥ ΜΑΓΕΙΡΕΥΕΙ ΚΑΛΥΤΕΡΑ ΑΠΌ ΤΗ ΔΙΚΗ ΣΟΥ",
+          "startTime": 1734649200000,
+          "endTime": 1734653700000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82547038",
+          "channelId": "289530",
+          "name": "My Style Rocks (E)",
+          "startTime": 1734653700000,
+          "endTime": 1734661200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82547044",
+          "channelId": "289530",
+          "name": "Still Standing ΜΕ ΤΟΝ ΧΡΗΣΤΟ ΦΕΡΕΝΤΙΝΟ",
+          "startTime": 1734661200000,
+          "endTime": 1734663600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82547050",
+          "channelId": "289530",
+          "name": "ΑΣΠΡΑ ΜΠΑΛΟΝΙΑ (E)",
+          "startTime": 1734663600000,
+          "endTime": 1734667200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82547056",
+          "channelId": "289530",
+          "name": "ΟΙ ΑΔΙΑΦΘΟΡΟΙ (E)",
+          "startTime": 1734667200000,
+          "endTime": 1734669600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82547062",
+          "channelId": "289530",
+          "name": "ΠΡΩΤΟΣΕΛΙΔΟ ΜΕ ΤΟΝ ΑΝΔΡΕΑ ΔΗΜΗΤΡΟΠΟΥΛΟ",
+          "startTime": 1734669600000,
+          "endTime": 1734681600000,
+          "included": false,
+          "rating": "K"
+        }
+      ]
+    },
+    {
+      "channelId": "39337317",
+      "epgPlayables": [
+        {
+          "id": "82458712",
+          "channelId": "39337317",
+          "name": "ALPHA ΚΑΛΗΜΕΡΑ",
+          "startTime": 1734583500000,
+          "endTime": 1734592800000,
+          "included": true,
+          "rating": "K"
+        },
+        {
+          "id": "82458718",
+          "channelId": "39337317",
+          "name": "SUPER ΚΑΤΕΡΙΝΑ",
+          "startTime": 1734592800000,
+          "endTime": 1734598800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82458724",
+          "channelId": "39337317",
+          "name": "ALPHA ΕΝΗΜΕΡΩΣΗ",
+          "startTime": 1734598800000,
+          "endTime": 1734608100000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82458730",
+          "channelId": "39337317",
+          "name": "ΑΜΦΙΒΟΛΙΕΣ (E)",
+          "startTime": 1734608100000,
+          "endTime": 1734610800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82458736",
+          "channelId": "39337317",
+          "name": "ΤΟ ΣΟΙ ΣΟΥ (E)",
+          "startTime": 1734610800000,
+          "endTime": 1734614100000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82458742",
+          "channelId": "39337317",
+          "name": "ΜΕ ΑΓΑΠΗ ΧΡΙΣΤΙΑΝΑ",
+          "startTime": 1734614100000,
+          "endTime": 1734620400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82458748",
+          "channelId": "39337317",
+          "name": "DEAL",
+          "startTime": 1734620400000,
+          "endTime": 1734623700000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82458754",
+          "channelId": "39337317",
+          "name": "ΕΙΔΗΣΕΙΣ ΚΑΙ ΔΕΛΤΙΟ ΣΤΗ ΝΟΗΜΑΤΙΚΗ",
+          "startTime": 1734623700000,
+          "endTime": 1734624000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82458760",
+          "channelId": "39337317",
+          "name": "ΟΙΚΟΓΕΝΕΙΑΚΕΣ ΙΣΤΟΡΙΕΣ",
+          "startTime": 1734624000000,
+          "endTime": 1734627600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82458766",
+          "channelId": "39337317",
+          "name": "THE CHASE GR",
+          "startTime": 1734627600000,
+          "endTime": 1734631200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82458772",
+          "channelId": "39337317",
+          "name": "ALPHA NEWS",
+          "startTime": 1734631200000,
+          "endTime": 1734634800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82458778",
+          "channelId": "39337317",
+          "name": "ΑΓΙΟΣ ΕΡΩΤΑΣ ΕΠ44",
+          "startTime": 1734634800000,
+          "endTime": 1734640200000,
+          "included": false,
+          "rating": "12"
+        },
+        {
+          "id": "82458784",
+          "channelId": "39337317",
+          "name": "Ο ΤΙΜΩΡΟΣ ΕΠ25",
+          "startTime": 1734640200000,
+          "endTime": 1734643800000,
+          "included": false,
+          "rating": "12"
+        },
+        {
+          "id": "82458790",
+          "channelId": "39337317",
+          "name": "ΝΙΚΟΣ ΜΟΥΤΣΙΝΑΣ ΒΡΑΔΙΑΤΙΚΑ",
+          "startTime": 1734643800000,
+          "endTime": 1734650100000,
+          "included": false,
+          "rating": "12"
+        },
+        {
+          "id": "82458796",
+          "channelId": "39337317",
+          "name": "ΜΑΥΡΟ ΡΟΔΟ (E)",
+          "startTime": 1734650100000,
+          "endTime": 1734653700000,
+          "included": false,
+          "rating": "12"
+        },
+        {
+          "id": "82458802",
+          "channelId": "39337317",
+          "name": "ΟΙ ΙΣΤΟΡΙΕΣ ΤΟΥ ΑΣΤΥΝΟΜΟΥ ΜΠΕΚΑ (E)",
+          "startTime": 1734653700000,
+          "endTime": 1734657300000,
+          "included": false,
+          "rating": "12"
+        },
+        {
+          "id": "82458808",
+          "channelId": "39337317",
+          "name": "ΔΕΚΑ ΛΕΠΤΑ ΚΗΡΥΓΜΑ (E)",
+          "startTime": 1734657300000,
+          "endTime": 1734662700000,
+          "included": false,
+          "rating": "12"
+        },
+        {
+          "id": "82458814",
+          "channelId": "39337317",
+          "name": "ΜΕ ΑΓΑΠΗ ΧΡΙΣΤΙΑΝΑ",
+          "startTime": 1734662700000,
+          "endTime": 1734667200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82458820",
+          "channelId": "39337317",
+          "name": "DEAL (E)",
+          "startTime": 1734667200000,
+          "endTime": 1734669900000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82458826",
+          "channelId": "39337317",
+          "name": "ALPHA ΚΑΛΗΜΕΡΑ",
+          "startTime": 1734669900000,
+          "endTime": 1734679200000,
+          "included": false,
+          "rating": "K"
+        }
+      ]
+    },
+    {
+      "channelId": "289568",
+      "epgPlayables": [
+        {
+          "id": "81309628",
+          "channelId": "289568",
+          "name": "Ξενη Κωμικη Σειρα",
+          "startTime": 1734583500000,
+          "endTime": 1734585300000,
+          "included": true,
+          "rating": "K"
+        },
+        {
+          "id": "81309634",
+          "channelId": "289568",
+          "name": "Ξενη Οικογενειακη Κωμικη Σειρα",
+          "startTime": 1734585300000,
+          "endTime": 1734587100000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81309640",
+          "channelId": "289568",
+          "name": "Εξυπνες Γευσεις (Smart Γευσεισ) (E)",
+          "startTime": 1734587100000,
+          "endTime": 1734589800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81309646",
+          "channelId": "289568",
+          "name": "Ξενη Οικογενειακη Σειρα",
+          "startTime": 1734589800000,
+          "endTime": 1734591600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81309652",
+          "channelId": "289568",
+          "name": "Ξενη Οικογενειακη Κοινωνικη Σειρα",
+          "startTime": 1734591600000,
+          "endTime": 1734593400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81309658",
+          "channelId": "289568",
+          "name": "Ξενη Οικογενειακη Νεανικη Σειρα",
+          "startTime": 1734593400000,
+          "endTime": 1734595200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81309664",
+          "channelId": "289568",
+          "name": "Ξενη Οικογενειακη Κοινωνικη Σειρα",
+          "startTime": 1734595200000,
+          "endTime": 1734598800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81309670",
+          "channelId": "289568",
+          "name": "Τηλεαγορα",
+          "startTime": 1734598800000,
+          "endTime": 1734606000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81309676",
+          "channelId": "289568",
+          "name": "Ξενη Οικογενειακη Κωμικη Σειρα",
+          "startTime": 1734606000000,
+          "endTime": 1734607800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81309682",
+          "channelId": "289568",
+          "name": "Ξενη Κωμικη Σειρα",
+          "startTime": 1734607800000,
+          "endTime": 1734609300000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81309688",
+          "channelId": "289568",
+          "name": "Ξενη Οικογενειακη Ταινια",
+          "startTime": 1734609300000,
+          "endTime": 1734615000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81309694",
+          "channelId": "289568",
+          "name": "Τηλεαγορα",
+          "startTime": 1734615000000,
+          "endTime": 1734624600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81309700",
+          "channelId": "289568",
+          "name": "Συντομο Δελτιο Ειδησεων",
+          "startTime": 1734624600000,
+          "endTime": 1734625500000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81309706",
+          "channelId": "289568",
+          "name": "Ξενη Κωμικη Σειρα",
+          "startTime": 1734625500000,
+          "endTime": 1734627300000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81309712",
+          "channelId": "289568",
+          "name": "Τηλεαγορα",
+          "startTime": 1734627300000,
+          "endTime": 1734629400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81309718",
+          "channelId": "289568",
+          "name": "Ειδησεις Στο Plus",
+          "startTime": 1734629400000,
+          "endTime": 1734631500000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81309724",
+          "channelId": "289568",
+          "name": "Ο Καιρος",
+          "startTime": 1734631500000,
+          "endTime": 1734632400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81309730",
+          "channelId": "289568",
+          "name": "ΞΕΝΗ ΟΙΚΟΓΕΝΕΙΑΚΗ ΣΕΙΡΑ",
+          "startTime": 1734632400000,
+          "endTime": 1734636600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81309736",
+          "channelId": "289568",
+          "name": "Μαγειρευουμε Παρεα, Season Ιi. Με Τον Σεφ Ανδρέα Κωνσταντίνου",
+          "startTime": 1734636600000,
+          "endTime": 1734641100000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81309742",
+          "channelId": "289568",
+          "name": "Ξενη Tαινια",
+          "startTime": 1734641100000,
+          "endTime": 1734650400000,
+          "included": false,
+          "rating": "15"
+        },
+        {
+          "id": "81309748",
+          "channelId": "289568",
+          "name": "Ξενη Σειρα",
+          "startTime": 1734650400000,
+          "endTime": 1734653400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81309754",
+          "channelId": "289568",
+          "name": "Ξενη Σειρα",
+          "startTime": 1734653400000,
+          "endTime": 1734656100000,
+          "included": false,
+          "rating": "12"
+        },
+        {
+          "id": "81309760",
+          "channelId": "289568",
+          "name": "Ξενη Σειρα",
+          "startTime": 1734656100000,
+          "endTime": 1734658800000,
+          "included": false,
+          "rating": "12"
+        },
+        {
+          "id": "81309766",
+          "channelId": "289568",
+          "name": "Ξενη Σειρα",
+          "startTime": 1734658800000,
+          "endTime": 1734661500000,
+          "included": false,
+          "rating": "12"
+        },
+        {
+          "id": "81309772",
+          "channelId": "289568",
+          "name": "Ξενη Σειρα",
+          "startTime": 1734661500000,
+          "endTime": 1734663900000,
+          "included": false,
+          "rating": "15"
+        },
+        {
+          "id": "81309778",
+          "channelId": "289568",
+          "name": "Αορατος Φακος",
+          "startTime": 1734663900000,
+          "endTime": 1734664200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81309784",
+          "channelId": "289568",
+          "name": "Μαγειρευουμε Παρεα, Season Ιι ( E ) Με Τον Σεφ Ανδρέα Κωνσταντίνου",
+          "startTime": 1734664200000,
+          "endTime": 1734666600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81309790",
+          "channelId": "289568",
+          "name": "Το Ταξιδι Της Ζωης (E)",
+          "startTime": 1734666600000,
+          "endTime": 1734669900000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81309796",
+          "channelId": "289568",
+          "name": "Ξενη Κωμικη Σειρα",
+          "startTime": 1734669900000,
+          "endTime": 1734671700000,
+          "included": false,
+          "rating": "K"
+        }
+      ]
+    },
+    {
+      "channelId": "561166",
+      "epgPlayables": [
+        {
+          "id": "82017858",
+          "channelId": "561166",
+          "name": "Βασιλικά Χριστούγεννα – χριστουγεννιάτικη ρομαντική κωμωδία",
+          "startTime": 1734579300000,
+          "endTime": 1734584700000,
+          "included": true,
+          "rating": "K"
+        },
+        {
+          "id": "82017864",
+          "channelId": "561166",
+          "name": "Τηλεαγορα ΤvΜall",
+          "startTime": 1734584700000,
+          "endTime": 1734588000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82017870",
+          "channelId": "561166",
+          "name": "MARIA MERCEDES",
+          "startTime": 1734588000000,
+          "endTime": 1734591300000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82017876",
+          "channelId": "561166",
+          "name": "Ο ΠΑΠΠΟΥΣ Ο ΤΑΣΟΣ ΜΑΓΕΙΡΕΥΕΙ – Εκπομπή Μαγειρικής",
+          "startTime": 1734591300000,
+          "endTime": 1734593400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82017882",
+          "channelId": "561166",
+          "name": "JUANA – Τηλενουβέλα (E)",
+          "startTime": 1734593400000,
+          "endTime": 1734596400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82017888",
+          "channelId": "561166",
+          "name": "Τηλεαγορα ΤvΜall",
+          "startTime": 1734596400000,
+          "endTime": 1734600600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82017894",
+          "channelId": "561166",
+          "name": "Ο ταυρομάχος προχωρεί (E)",
+          "startTime": 1734600600000,
+          "endTime": 1734606000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82017900",
+          "channelId": "561166",
+          "name": "Ο ΚΡΑΧΤΗΣ (E)",
+          "startTime": 1734606000000,
+          "endTime": 1734612300000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82017906",
+          "channelId": "561166",
+          "name": "Τηλεαγορα ΤvΜall",
+          "startTime": 1734612300000,
+          "endTime": 1734613200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82017912",
+          "channelId": "561166",
+          "name": "ΤΣΑΓΚΑΡΑΚΗΣ ΤΗΛΕΑΓΟΡΑ",
+          "startTime": 1734613200000,
+          "endTime": 1734620400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82017918",
+          "channelId": "561166",
+          "name": "Τηλεαγορα ΤvΜall",
+          "startTime": 1734620400000,
+          "endTime": 1734624000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82017924",
+          "channelId": "561166",
+          "name": "ΤΙΤΛΟΙ ΕΙΔΗΣΕΩΝ",
+          "startTime": 1734624000000,
+          "endTime": 1734624600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82017930",
+          "channelId": "561166",
+          "name": "ISABELLA",
+          "startTime": 1734624600000,
+          "endTime": 1734628500000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82017936",
+          "channelId": "561166",
+          "name": "ΚΕΝΤΡΙΚΟ ΔΕΛΤΙΟ ΕΙΔΗΣΕΩΝ",
+          "startTime": 1734628500000,
+          "endTime": 1734630600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82017942",
+          "channelId": "561166",
+          "name": "ΕΙΔΗΣΕΙΣ ΣΤΗ ΝΟΗΜΑΤΙΚΗ",
+          "startTime": 1734630600000,
+          "endTime": 1734631200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82017948",
+          "channelId": "561166",
+          "name": "ΥΓΕΙΑ & ΖΩΗ – Με τη Νίκη Λαζαρίδου",
+          "startTime": 1734631200000,
+          "endTime": 1734634800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82017954",
+          "channelId": "561166",
+          "name": "Η απολογία",
+          "startTime": 1734634800000,
+          "endTime": 1734641700000,
+          "included": false,
+          "rating": "15"
+        },
+        {
+          "id": "82017960",
+          "channelId": "561166",
+          "name": "Η ΠΑΓΙΔΑ",
+          "startTime": 1734641700000,
+          "endTime": 1734647700000,
+          "included": false,
+          "rating": "15"
+        },
+        {
+          "id": "82017966",
+          "channelId": "561166",
+          "name": "Σκουριασμένο ρυάκι",
+          "startTime": 1734647700000,
+          "endTime": 1734654300000,
+          "included": false,
+          "rating": "15"
+        },
+        {
+          "id": "82017972",
+          "channelId": "561166",
+          "name": "ΞΕΝΗ ΤΑΙΝΙΑ",
+          "startTime": 1734654300000,
+          "endTime": 1734660300000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82017978",
+          "channelId": "561166",
+          "name": "Χριστουγεννιάτικο εξπρές – χριστουγεννιάτικο ρομαντικό δράμα",
+          "startTime": 1734660300000,
+          "endTime": 1734666600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82017984",
+          "channelId": "561166",
+          "name": "Ταξίδι στα Χριστούγεννα του χθες – χριστουγεννιάτικο ρομαντικό δράμα",
+          "startTime": 1734666600000,
+          "endTime": 1734672000000,
+          "included": false,
+          "rating": "K"
+        }
+      ]
+    },
+    {
+      "channelId": "561178",
+      "epgPlayables": [
+        {
+          "id": "82809165",
+          "channelId": "561178",
+          "name": "ΑΠΕΥΘΕΙΑΣ ΣΥΝΔΕΣΗ SMILE",
+          "startTime": 1734577200000,
+          "endTime": 1734590700000,
+          "included": true,
+          "rating": "K"
+        },
+        {
+          "id": "82809171",
+          "channelId": "561178",
+          "name": "ΥΓΕΙΑ ΚΑΙ ΠΡΟΛΗΨΗ",
+          "startTime": 1734590700000,
+          "endTime": 1734591600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82809177",
+          "channelId": "561178",
+          "name": "ΕΛΛΗΝΙΚΗ ΚΙΝΗΜΑΤΟΓΡΑΦΙΚΗ ΤΑΙΝΙΑ",
+          "startTime": 1734591600000,
+          "endTime": 1734597000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82809183",
+          "channelId": "561178",
+          "name": "ΕΞΙΛΕΩΣΗ",
+          "startTime": 1734597000000,
+          "endTime": 1734600600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82809189",
+          "channelId": "561178",
+          "name": "ΤΗΛΕΠΩΛΗΣΕΙΣ",
+          "startTime": 1734600600000,
+          "endTime": 1734602400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82809195",
+          "channelId": "561178",
+          "name": "ΕΛΛΗΝΙΚΗ ΚΙΝΗΜΑΤΟΓΡΑΦΙΚΗ ΤΑΙΝΙΑ",
+          "startTime": 1734602400000,
+          "endTime": 1734607800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82809201",
+          "channelId": "561178",
+          "name": "ΑΠΕΥΘΕΙΑΣ ΣΥΝΔΕΣΗ SMILE",
+          "startTime": 1734607800000,
+          "endTime": 1734613200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82809207",
+          "channelId": "561178",
+          "name": "ΑΠΡΟΣΜΕΝΟΣ ΕΡΩΤΑΣ",
+          "startTime": 1734613200000,
+          "endTime": 1734618600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82809213",
+          "channelId": "561178",
+          "name": "ΤΗΛΕΠΩΛΗΣΕΙΣ",
+          "startTime": 1734618600000,
+          "endTime": 1734620400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82809219",
+          "channelId": "561178",
+          "name": "ΑΠΕΥΘΕΙΑΣ ΣΥΝΔΕΣΗ ONE CHANNEL GR",
+          "startTime": 1734620400000,
+          "endTime": 1734627600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82809225",
+          "channelId": "561178",
+          "name": "ΕΛΛΗΝΙΚΗ ΚΙΝΗΜΑΤΟΓΡΑΦΙΚΗ ΤΑΙΝΙΑ",
+          "startTime": 1734627600000,
+          "endTime": 1734634800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82809231",
+          "channelId": "561178",
+          "name": "ΜΑΥΡΗ ΘΑΛΑΣΣΑ",
+          "startTime": 1734634800000,
+          "endTime": 1734640200000,
+          "included": false,
+          "rating": "15"
+        },
+        {
+          "id": "82809237",
+          "channelId": "561178",
+          "name": "ΞΕΝΗ ΚΙΝΗΜΑΤΟΓΡΑΦΙΚΗ ΤΑΙΝΙΑ",
+          "startTime": 1734640200000,
+          "endTime": 1734645600000,
+          "included": false,
+          "rating": "15"
+        },
+        {
+          "id": "82809243",
+          "channelId": "561178",
+          "name": "ΞΕΝΗ ΚΙΝΗΜΑΤΟΓΡΑΦΙΚΗ ΤΑΙΝΙΑ",
+          "startTime": 1734645600000,
+          "endTime": 1734652800000,
+          "included": false,
+          "rating": "15"
+        },
+        {
+          "id": "82809249",
+          "channelId": "561178",
+          "name": "ΞΕΝΗ ΚΙΝΗΜΑΤΟΓΡΑΦΙΚΗ ΤΑΙΝΙΑ",
+          "startTime": 1734652800000,
+          "endTime": 1734660000000,
+          "included": false,
+          "rating": "15"
+        },
+        {
+          "id": "82809255",
+          "channelId": "561178",
+          "name": "ΞΕΝΗ ΚΙΝΗΜΑΤΟΓΡΑΦΙΚΗ ΤΑΙΝΙΑ",
+          "startTime": 1734660000000,
+          "endTime": 1734663600000,
+          "included": false,
+          "rating": "15"
+        },
+        {
+          "id": "82809261",
+          "channelId": "561178",
+          "name": "ΑΠΕΥΘΕΙΑΣ ΣΥΝΔΕΣΗ SMILE",
+          "startTime": 1734663600000,
+          "endTime": 1734677100000,
+          "included": false,
+          "rating": "K"
+        }
+      ]
+    },
+    {
+      "channelId": "574264",
+      "epgPlayables": [
+        {
+          "id": "82352020",
+          "channelId": "574264",
+          "name": "ΣΥΝΔΕΣΕΙΣ",
+          "startTime": 1734579000000,
+          "endTime": 1734591600000,
+          "included": true,
+          "rating": "12"
+        },
+        {
+          "id": "82352026",
+          "channelId": "574264",
+          "name": "Πρωίαν Σε Είδον",
+          "startTime": 1734591600000,
+          "endTime": 1734602400000,
+          "included": false,
+          "rating": "12"
+        },
+        {
+          "id": "82352032",
+          "channelId": "574264",
+          "name": "ΕΙΔΗΣΕΙΣ - ΑΘΛΗΤΙΚΑ - ΚΑΙΡΟΣ",
+          "startTime": 1734602400000,
+          "endTime": 1734606000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82352038",
+          "channelId": "574264",
+          "name": "Switch Κ3",
+          "startTime": 1734606000000,
+          "endTime": 1734609900000,
+          "included": false,
+          "rating": "12"
+        },
+        {
+          "id": "82352044",
+          "channelId": "574264",
+          "name": "Ποπ Μαγειρική Κ8 ΕΠ21",
+          "startTime": 1734609900000,
+          "endTime": 1734613200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82352050",
+          "channelId": "574264",
+          "name": "ΕΙΔΗΣΕΙΣ - ΑΘΛΗΤΙΚΑ - ΚΑΙΡΟΣ",
+          "startTime": 1734613200000,
+          "endTime": 1734616800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82352056",
+          "channelId": "574264",
+          "name": "Close Up (E)",
+          "startTime": 1734616800000,
+          "endTime": 1734620400000,
+          "included": false,
+          "rating": "12"
+        },
+        {
+          "id": "82352062",
+          "channelId": "574264",
+          "name": "#Start ΕΠ1",
+          "startTime": 1734620400000,
+          "endTime": 1734624000000,
+          "included": false,
+          "rating": "12"
+        },
+        {
+          "id": "82352068",
+          "channelId": "574264",
+          "name": "Αναλυτικό Δελτίο Ειδήσεων",
+          "startTime": 1734624000000,
+          "endTime": 1734627600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82352074",
+          "channelId": "574264",
+          "name": "Φουκαράδες Και Λεφτάδες - Ελληνική Ταινία",
+          "startTime": 1734627600000,
+          "endTime": 1734634800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82352080",
+          "channelId": "574264",
+          "name": "ΕΙΔΗΣΕΙΣ - ΑΘΛΗΤΙΚΑ - ΚΑΙΡΟΣ",
+          "startTime": 1734634800000,
+          "endTime": 1734638400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82352086",
+          "channelId": "574264",
+          "name": "Ο Όρκος ΙΙ Κ3",
+          "startTime": 1734638400000,
+          "endTime": 1734645600000,
+          "included": false,
+          "rating": "12"
+        },
+        {
+          "id": "82352092",
+          "channelId": "574264",
+          "name": "ERTWorld Cinema - Ladies in Black",
+          "startTime": 1734645600000,
+          "endTime": 1734651900000,
+          "included": false,
+          "rating": "12"
+        },
+        {
+          "id": "82352098",
+          "channelId": "574264",
+          "name": "Φουκαράδες Και Λεφτάδες - Ελληνική Ταινία",
+          "startTime": 1734651900000,
+          "endTime": 1734658200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82352104",
+          "channelId": "574264",
+          "name": "Ειδήσεις - Αθλητικά - Καιρός (Μ)",
+          "startTime": 1734658200000,
+          "endTime": 1734660000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82352110",
+          "channelId": "574264",
+          "name": "Switch (E) Κ3",
+          "startTime": 1734660000000,
+          "endTime": 1734665400000,
+          "included": false,
+          "rating": "12"
+        },
+        {
+          "id": "82352116",
+          "channelId": "574264",
+          "name": "ΣΥΝΔΕΣΕΙΣ",
+          "startTime": 1734665400000,
+          "endTime": 1734678000000,
+          "included": false,
+          "rating": "12"
+        }
+      ]
+    },
+    {
+      "channelId": "216630",
+      "epgPlayables": [
+        {
+          "id": "81601744",
+          "channelId": "216630",
+          "name": "ΕΠΑΝΑΛΗΨΗ ΠΡΟΓΡΑΜΜΑΤΟΣ",
+          "startTime": 1734570000000,
+          "endTime": 1734591300000,
+          "included": true,
+          "rating": "K"
+        },
+        {
+          "id": "81601750",
+          "channelId": "216630",
+          "name": "ΣΑΝ ΣΗΜΕΡΑ ΣΤΗΝ ΠΟΛΙΤΙΚΗ",
+          "startTime": 1734591300000,
+          "endTime": 1734591600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81601756",
+          "channelId": "216630",
+          "name": "ΠΡΩΙΝΗ ΕΠΙΣΚΟΠΗΣΗ",
+          "startTime": 1734591600000,
+          "endTime": 1734595200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81601762",
+          "channelId": "216630",
+          "name": "ΚΟΙΝΟΒΟΥΛΕΥΤΙΚΟ ΕΡΓΟ",
+          "startTime": 1734595200000,
+          "endTime": 1734638400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81601768",
+          "channelId": "216630",
+          "name": "ΤΑ ΜΙΚΡΑ ΜΥΣΤΙΚΑ ΤΩΝ ΜΕΓΑΛΩΝ ΖΩΓΡΑΦΩΝ : ΠΟΛΥΧΡΩΜΗ ΖΩΗ ΤΟΥ ΒΑΣΙΛΙ ΚΑΝΤΙΝΣΚΙ",
+          "startTime": 1734638400000,
+          "endTime": 1734640200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81601774",
+          "channelId": "216630",
+          "name": "ΟΙ ΜΕΓΑΛΟΙ ΕΛΛΗΝΙΚΟΙ ΜΥΘΟΙ, Η ΟΔΥΣΣΕΙΑ: ΕΠ. 8/10 ΜΕ ΣΤΟΧΟ ΤΗΝ ΙΘΑΚΗ",
+          "startTime": 1734640200000,
+          "endTime": 1734642000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81601780",
+          "channelId": "216630",
+          "name": "ΤΙ ΛΕΕΙ Ο ΝΟΜΟΣ /ΒΟΥΛΗΣ ΒΗΜΑ (Ε)",
+          "startTime": 1734642000000,
+          "endTime": 1734647400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81601786",
+          "channelId": "216630",
+          "name": "ΛΟΓΩ ΤΕΧΝΗΣ (Ε)",
+          "startTime": 1734647400000,
+          "endTime": 1734649200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81601792",
+          "channelId": "216630",
+          "name": "ΝΤ 9351 Ο ΛΟΓΟΣ ΤΗΣ ΓΡΑΦΗΣ: ΧΡΙΣΤΟΦΟΡΟΣ ΛΙΟΝΤΑΚΗΣ",
+          "startTime": 1734649200000,
+          "endTime": 1734652800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81601798",
+          "channelId": "216630",
+          "name": "ΠΡΩΙΝΗ ΕΠΙΣΚΟΠΗΣΗ (Ε)",
+          "startTime": 1734652800000,
+          "endTime": 1734656400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81601804",
+          "channelId": "216630",
+          "name": "ΕΠΑΝΑΛΗΨΗ ΠΡΟΓΡΑΜΜΑΤΟΣ",
+          "startTime": 1734656400000,
+          "endTime": 1734675900000,
+          "included": false,
+          "rating": "K"
+        }
+      ]
+    },
+    {
+      "channelId": "206750",
+      "epgPlayables": [
+        {
+          "id": "82113860",
+          "channelId": "206750",
+          "name": "ΩΔΕΣ ΔΩΔΕΚΑΗΜΕΡΟΥ",
+          "startTime": 1734583500000,
+          "endTime": 1734585300000,
+          "included": true,
+          "rating": "K"
+        },
+        {
+          "id": "82113866",
+          "channelId": "206750",
+          "name": "ΑΚΟΛΟΥΘΙΑ ΤΟΥ ΜΕΣΟΝΥΚΤΙΚΟΥ",
+          "startTime": 1734585300000,
+          "endTime": 1734587700000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82113872",
+          "channelId": "206750",
+          "name": "ΕΘΝΙΚΟΣ ΥΜΝΟΣ",
+          "startTime": 1734587700000,
+          "endTime": 1734588000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82113878",
+          "channelId": "206750",
+          "name": "ΑΚΟΛΟΥΘΙΑ ΤΟΥ ΟΡΘΡΟΥ",
+          "startTime": 1734588000000,
+          "endTime": 1734591900000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82113884",
+          "channelId": "206750",
+          "name": "ΤΗΛΕΣΧΟΛΕΙΟ ΨΑΛΤΙΚΗΣ",
+          "startTime": 1734591900000,
+          "endTime": 1734596100000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82970624",
+          "channelId": "206750",
+          "name": "ΑΝΑΔΡΟΜΕΣ ΣΤΟ ΜΕΛΛΟΝ",
+          "startTime": 1734596100000,
+          "endTime": 1734599700000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82113896",
+          "channelId": "206750",
+          "name": "ΕΞ ΕΡΗΜΟΥ ΔΙΑΤΥΠΩΣΕΙΣ: ΣΠΟΥΔΗ ΣΤΟΝ ΕΥΕΡΓΕΤΙΝΟ",
+          "startTime": 1734599700000,
+          "endTime": 1734602400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82970630",
+          "channelId": "206750",
+          "name": "ΛΟΓΙΑ ΤΗΣ ΠΛΩΡΗΣ",
+          "startTime": 1734602400000,
+          "endTime": 1734606000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82113908",
+          "channelId": "206750",
+          "name": "ΙΑΤΡΙΚΗ ΕΝΗΜΕΡΩΣΗ",
+          "startTime": 1734606000000,
+          "endTime": 1734610500000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82113914",
+          "channelId": "206750",
+          "name": "ΓΛΥΚΕΣ ΔΗΜΙΟΥΡΓΙΕΣ",
+          "startTime": 1734610500000,
+          "endTime": 1734611400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82113920",
+          "channelId": "206750",
+          "name": "ΕΝΑΤΗ ΩΡΑ",
+          "startTime": 1734611400000,
+          "endTime": 1734612600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82113926",
+          "channelId": "206750",
+          "name": "ΗΜΕΡΟΛΟΓΙΟ",
+          "startTime": 1734612600000,
+          "endTime": 1734613200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82970636",
+          "channelId": "206750",
+          "name": "ΕΠ1",
+          "startTime": 1734613200000,
+          "endTime": 1734616800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82113938",
+          "channelId": "206750",
+          "name": "ΠΑΡΑΚΛΗΤΙΚΟΣ ΚΑΝΟΝΑΣ ΣΤΟΥΣ ΔΩΔΕΚΑ ΑΠΟΣΤΟΛΟΥΣ",
+          "startTime": 1734616800000,
+          "endTime": 1734619200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82113944",
+          "channelId": "206750",
+          "name": "ΑΓΙΟΓΡΑΦΙΚΑ ΑΝΑΓΝΩΣΜΑΤΑ",
+          "startTime": 1734619200000,
+          "endTime": 1734620400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82970642",
+          "channelId": "206750",
+          "name": "ΛΟΓΟΣ ΛΕΙΤΟΥΡΓΙΚΟΣ",
+          "startTime": 1734620400000,
+          "endTime": 1734624000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82113956",
+          "channelId": "206750",
+          "name": "ΑΚΟΛΟΥΘΙΑ ΤΟΥ ΕΣΠΕΡΙΝΟΥ",
+          "startTime": 1734624000000,
+          "endTime": 1734627000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82113962",
+          "channelId": "206750",
+          "name": "ΕΚΠΑΙΔΕΥΤΙΚΗ ΤΗΛΕΟΡΑΣΗ ΓΙΑ ΠΑΙΔΙΑ",
+          "startTime": 1734627000000,
+          "endTime": 1734628200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82113968",
+          "channelId": "206750",
+          "name": "ΩΔΕΣ ΔΩΔΕΚΑΗΜΕΡΟΥ",
+          "startTime": 1734628200000,
+          "endTime": 1734629400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82970648",
+          "channelId": "206750",
+          "name": "ΚΟΙΤΩΝΤΑΣ ΓΥΡΩ ΜΑΣ",
+          "startTime": 1734629400000,
+          "endTime": 1734631200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82113980",
+          "channelId": "206750",
+          "name": "ΠΝΕΥΜΑΤΙΚΗ ΟΔΟΙΠΟΡΙΑ",
+          "startTime": 1734631200000,
+          "endTime": 1734634800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82113986",
+          "channelId": "206750",
+          "name": "ΘΕΑΤΡΙΚΗ ΠΑΡΑΣΤΑΣΗ",
+          "startTime": 1734634800000,
+          "endTime": 1734638400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82113992",
+          "channelId": "206750",
+          "name": "ΝΕΑΝΙΚΟ ΑΡΧΟΝΤΑΡΙΚΙ",
+          "startTime": 1734638400000,
+          "endTime": 1734641100000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82113998",
+          "channelId": "206750",
+          "name": "ΠΡΟΣΕΥΧΟΜΑΣΤΕ ΜΑΖΙ",
+          "startTime": 1734641100000,
+          "endTime": 1734642000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82114004",
+          "channelId": "206750",
+          "name": "ΜΙΚΡΟ ΑΠΟΔΕΙΠΝΟ",
+          "startTime": 1734642000000,
+          "endTime": 1734644700000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82970654",
+          "channelId": "206750",
+          "name": "ΕΠ1",
+          "startTime": 1734644700000,
+          "endTime": 1734649200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82114016",
+          "channelId": "206750",
+          "name": "ΣΗΜΕΙΑ ΤΩΝ ΚΑΙΡΩΝ",
+          "startTime": 1734649200000,
+          "endTime": 1734656400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82970660",
+          "channelId": "206750",
+          "name": "ΑΙΧΜΗ ΤΟΥ ΔΟΡΑΤΟΣ",
+          "startTime": 1734656400000,
+          "endTime": 1734660000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82114028",
+          "channelId": "206750",
+          "name": "ΙΑΤΡΙΚΗ ΕΝΗΜΕΡΩΣΗ",
+          "startTime": 1734660000000,
+          "endTime": 1734663600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82114034",
+          "channelId": "206750",
+          "name": "ΓΛΥΚΕΣ ΔΗΜΙΟΥΡΓΙΕΣ",
+          "startTime": 1734663600000,
+          "endTime": 1734664500000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82114040",
+          "channelId": "206750",
+          "name": "ΠΑΡΑΚΛΗΤΙΚΟΣ ΚΑΝΟΝΑΣ ΣΤΟΥΣ ΔΩΔΕΚΑ ΑΠΟΣΤΟΛΟΥΣ",
+          "startTime": 1734664500000,
+          "endTime": 1734667200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82970666",
+          "channelId": "206750",
+          "name": "ΛΟΓΟΣ ΛΕΙΤΟΥΡΓΙΚΟΣ",
+          "startTime": 1734667200000,
+          "endTime": 1734670500000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82114052",
+          "channelId": "206750",
+          "name": "ΕΚΠΑΙΔΕΥΤΙΚΗ ΤΗΛΕΟΡΑΣΗ ΓΙΑ ΠΑΙΔΙΑ",
+          "startTime": 1734670500000,
+          "endTime": 1734671700000,
+          "included": false,
+          "rating": "K"
+        }
+      ]
+    },
+    {
+      "channelId": "2221",
+      "epgPlayables": [
+        {
+          "id": "82934577",
+          "channelId": "2221",
+          "name": "Kate and Mim Mim",
+          "startTime": 1734584400000,
+          "endTime": 1734586200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82934583",
+          "channelId": "2221",
+          "name": "INVENTION STORY",
+          "startTime": 1734586200000,
+          "endTime": 1734602400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82934589",
+          "channelId": "2221",
+          "name": "ΤΗΛΕΑΓΟΡΕΣ",
+          "startTime": 1734602400000,
+          "endTime": 1734613200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82934595",
+          "channelId": "2221",
+          "name": "TAINIA",
+          "startTime": 1734613200000,
+          "endTime": 1734624000000,
+          "included": false,
+          "rating": "12"
+        },
+        {
+          "id": "82934601",
+          "channelId": "2221",
+          "name": "ΕΙΔΗΣΕΙΣ",
+          "startTime": 1734624000000,
+          "endTime": 1734631200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82934607",
+          "channelId": "2221",
+          "name": "ΤΑΙΝΙΑ",
+          "startTime": 1734631200000,
+          "endTime": 1734642000000,
+          "included": false,
+          "rating": "12"
+        },
+        {
+          "id": "82934613",
+          "channelId": "2221",
+          "name": "ΤΑΙΝΙΑ",
+          "startTime": 1734642000000,
+          "endTime": 1734649200000,
+          "included": false,
+          "rating": "12"
+        },
+        {
+          "id": "82934619",
+          "channelId": "2221",
+          "name": "TAINIA",
+          "startTime": 1734649200000,
+          "endTime": 1734656400000,
+          "included": false,
+          "rating": "12"
+        },
+        {
+          "id": "82934625",
+          "channelId": "2221",
+          "name": "TAINIA",
+          "startTime": 1734656400000,
+          "endTime": 1734663600000,
+          "included": false,
+          "rating": "12"
+        },
+        {
+          "id": "82934631",
+          "channelId": "2221",
+          "name": "Chloe's Closet",
+          "startTime": 1734663600000,
+          "endTime": 1734665400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82934637",
+          "channelId": "2221",
+          "name": "Vroomiz",
+          "startTime": 1734665400000,
+          "endTime": 1734667200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82934643",
+          "channelId": "2221",
+          "name": "PET PALS",
+          "startTime": 1734667200000,
+          "endTime": 1734669000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82934649",
+          "channelId": "2221",
+          "name": "POPPLES",
+          "startTime": 1734669000000,
+          "endTime": 1734670800000,
+          "included": false,
+          "rating": "K"
+        }
+      ]
+    },
+    {
+      "channelId": "289555",
+      "epgPlayables": [
+        {
+          "id": "82660697",
+          "channelId": "289555",
+          "name": "Open ΤΩΡΑ",
+          "startTime": 1734584400000,
+          "endTime": 1734590700000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82660703",
+          "channelId": "289555",
+          "name": "Breakfast at Star",
+          "startTime": 1734590700000,
+          "endTime": 1734601500000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82660709",
+          "channelId": "289555",
+          "name": "ΕΝΗΜΕΡΩΣΗ ΤΩΡΑ",
+          "startTime": 1734601500000,
+          "endTime": 1734607800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82660715",
+          "channelId": "289555",
+          "name": "ΕΛΑ ΝΑ ΔΕΙΣ",
+          "startTime": 1734607800000,
+          "endTime": 1734613200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82660721",
+          "channelId": "289555",
+          "name": "ΑΙΧΜΕΣ",
+          "startTime": 1734613200000,
+          "endTime": 1734618000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82660727",
+          "channelId": "289555",
+          "name": "Cuisinovia",
+          "startTime": 1734618000000,
+          "endTime": 1734621300000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82660733",
+          "channelId": "289555",
+          "name": "SHOPPING STAR",
+          "startTime": 1734621300000,
+          "endTime": 1734624000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82660739",
+          "channelId": "289555",
+          "name": "OMEGA NEWS",
+          "startTime": 1734624000000,
+          "endTime": 1734624300000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82660745",
+          "channelId": "289555",
+          "name": "Shopping Star (ΣΥΝΈΧΕΙΑ)",
+          "startTime": 1734624300000,
+          "endTime": 1734627300000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82660751",
+          "channelId": "289555",
+          "name": "ΤΡΟΧΟΣ ΤΗΣ ΤΥΧΗΣ",
+          "startTime": 1734627300000,
+          "endTime": 1734631800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82660757",
+          "channelId": "289555",
+          "name": "OMEGA NEWS",
+          "startTime": 1734631800000,
+          "endTime": 1734635400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82660763",
+          "channelId": "289555",
+          "name": "The Social Experiment",
+          "startTime": 1734635400000,
+          "endTime": 1734639000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82660769",
+          "channelId": "289555",
+          "name": "King Arthur: Legend of the Sword",
+          "startTime": 1734639000000,
+          "endTime": 1734647400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82660775",
+          "channelId": "289555",
+          "name": "ΥΠΟΘΕΣΕΙΣ",
+          "startTime": 1734647400000,
+          "endTime": 1734654600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82660781",
+          "channelId": "289555",
+          "name": "ΠΡΩΙΝΟ ΣΟΥ ΣΟΥ",
+          "startTime": 1734654600000,
+          "endTime": 1734663600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82660787",
+          "channelId": "289555",
+          "name": "Shopping Star (E)",
+          "startTime": 1734663600000,
+          "endTime": 1734667200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82660793",
+          "channelId": "289555",
+          "name": "ΣΑΝ ΨΕΜΑ (E)",
+          "startTime": 1734667200000,
+          "endTime": 1734670800000,
+          "included": false,
+          "rating": "K"
+        }
+      ]
+    },
+    {
+      "channelId": "289542",
+      "epgPlayables": [
+        {
+          "id": "82502161",
+          "channelId": "289542",
+          "name": "ΒΑΛΣ ΜΕ 12 ΘΕΟΥΣ II (E)",
+          "startTime": 1734582000000,
+          "endTime": 1734584700000,
+          "included": true,
+          "rating": "K"
+        },
+        {
+          "id": "82502167",
+          "channelId": "289542",
+          "name": "ΧΩΡΙΣ ΕΣΕΝΑ (E)",
+          "startTime": 1734584700000,
+          "endTime": 1734587700000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82502173",
+          "channelId": "289542",
+          "name": "Ο ΠΡΩΤΟΣ ΑΠΌ ΕΜΑΣ (E)",
+          "startTime": 1734587700000,
+          "endTime": 1734591600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82502179",
+          "channelId": "289542",
+          "name": "ΤΟ ΠΡΩ1ΝΟ",
+          "startTime": 1734591600000,
+          "endTime": 1734595200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82502185",
+          "channelId": "289542",
+          "name": "5X5 IV (E)",
+          "startTime": 1734595200000,
+          "endTime": 1734598800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82502191",
+          "channelId": "289542",
+          "name": "ΜΕΡΑ ΜΕΣΗΜΕΡΙ",
+          "startTime": 1734598800000,
+          "endTime": 1734609600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82502197",
+          "channelId": "289542",
+          "name": "ΚΩΝΣΤΑΝΤΙΝΟΥ ΚΑΙ ΕΛΕΝΗΣ II (E)",
+          "startTime": 1734609600000,
+          "endTime": 1734612600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82502203",
+          "channelId": "289542",
+          "name": "ΤΟ ΚΑΦΕ ΤΗΣ ΧΑΡΑΣ II (E)",
+          "startTime": 1734612600000,
+          "endTime": 1734616200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82502209",
+          "channelId": "289542",
+          "name": "ΑΙΓΙΑ Fuxia (E)",
+          "startTime": 1734616200000,
+          "endTime": 1734619500000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82502215",
+          "channelId": "289542",
+          "name": "Rouk Zouk VIII",
+          "startTime": 1734619500000,
+          "endTime": 1734624000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82502221",
+          "channelId": "289542",
+          "name": "ΤΑ ΝΕΑ ΣΕ 10'",
+          "startTime": 1734624000000,
+          "endTime": 1734624300000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82929817",
+          "channelId": "289542",
+          "name": "5X5 IV (E)",
+          "startTime": 1734624300000,
+          "endTime": 1734628500000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82502233",
+          "channelId": "289542",
+          "name": "ΠΟΙΟΣ ΘΕΛΕΙ ΝΑ ΓΙΝΕΙ ΕΚΑΤΟΜΜΥΡΙΟΥΧΟΣ; ΙΙ (E)",
+          "startTime": 1734628500000,
+          "endTime": 1734632100000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82502239",
+          "channelId": "289542",
+          "name": "ΤΑ ΝΕΑ ΤΟΥ ΑΝΤΕΝΝΑ",
+          "startTime": 1734632100000,
+          "endTime": 1734636600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82502245",
+          "channelId": "289542",
+          "name": "Η ΘΕΤΙΚΗ ΠΛΕΥΡΑ ΤΗΣ ΖΩΗΣ (the Upside)",
+          "startTime": 1734636600000,
+          "endTime": 1734645000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82502251",
+          "channelId": "289542",
+          "name": "The 2NIGHT Show IX",
+          "startTime": 1734645000000,
+          "endTime": 1734652200000,
+          "included": false,
+          "rating": "12"
+        },
+        {
+          "id": "82502257",
+          "channelId": "289542",
+          "name": "ΚΑΙ ΟΙ ΠΑΝΤΡΕΜΕΝΟΙ ΕΧΟΥΝ ΨΥΧΗ Ιiι (E)",
+          "startTime": 1734652200000,
+          "endTime": 1734655200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82502263",
+          "channelId": "289542",
+          "name": "ΒΑΜΜΕΝΑ ΚΟΚΚΙΝΑ ΜΑΛΛΙΑ (E)",
+          "startTime": 1734655200000,
+          "endTime": 1734658200000,
+          "included": false,
+          "rating": "15"
+        },
+        {
+          "id": "82502269",
+          "channelId": "289542",
+          "name": "ΤΟ ΚΑΦΕΝΕΙΟ (E)",
+          "startTime": 1734658200000,
+          "endTime": 1734660000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82502275",
+          "channelId": "289542",
+          "name": "ΠΑΝΣΕΛΗΝΟΣ II (E)",
+          "startTime": 1734660000000,
+          "endTime": 1734662400000,
+          "included": false,
+          "rating": "12"
+        },
+        {
+          "id": "82502281",
+          "channelId": "289542",
+          "name": "ΣΤΡΙΒΕΙΝ ΔΙΑ ΤΟΥ ΑΡΡΑΒΩΝΟΣ (E)",
+          "startTime": 1734662400000,
+          "endTime": 1734665400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82502287",
+          "channelId": "289542",
+          "name": "ΝΙΩΣΕ ΜΕ (E)",
+          "startTime": 1734665400000,
+          "endTime": 1734668400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82502293",
+          "channelId": "289542",
+          "name": "ΒΑΛΣ ΜΕ 12 ΘΕΟΥΣ II (E)",
+          "startTime": 1734668400000,
+          "endTime": 1734671100000,
+          "included": false,
+          "rating": "K"
+        }
+      ]
+    },
+    {
+      "channelId": "289607",
+      "epgPlayables": [
+        {
+          "id": "82459467",
+          "channelId": "289607",
+          "name": "ALPHA ΚΑΛΗΜΕΡΑ",
+          "startTime": 1734583500000,
+          "endTime": 1734592800000,
+          "included": true,
+          "rating": "K"
+        },
+        {
+          "id": "82459473",
+          "channelId": "289607",
+          "name": "SUPER ΚΑΤΕΡΙΝΑ",
+          "startTime": 1734592800000,
+          "endTime": 1734598800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82459479",
+          "channelId": "289607",
+          "name": "ALPHA ΕΝΗΜΕΡΩΣΗ",
+          "startTime": 1734598800000,
+          "endTime": 1734608100000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82459485",
+          "channelId": "289607",
+          "name": "ΑΜΦΙΒΟΛΙΕΣ (E)",
+          "startTime": 1734608100000,
+          "endTime": 1734610800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82459491",
+          "channelId": "289607",
+          "name": "ΤΟ ΣΟΙ ΣΟΥ (E)",
+          "startTime": 1734610800000,
+          "endTime": 1734614100000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82459497",
+          "channelId": "289607",
+          "name": "ΜΕ ΑΓΑΠΗ ΧΡΙΣΤΙΑΝΑ",
+          "startTime": 1734614100000,
+          "endTime": 1734620400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82459503",
+          "channelId": "289607",
+          "name": "DEAL",
+          "startTime": 1734620400000,
+          "endTime": 1734623700000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82459509",
+          "channelId": "289607",
+          "name": "ΕΙΔΗΣΕΙΣ ΚΑΙ ΔΕΛΤΙΟ ΣΤΗ ΝΟΗΜΑΤΙΚΗ",
+          "startTime": 1734623700000,
+          "endTime": 1734624000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82459515",
+          "channelId": "289607",
+          "name": "ΟΙΚΟΓΕΝΕΙΑΚΕΣ ΙΣΤΟΡΙΕΣ",
+          "startTime": 1734624000000,
+          "endTime": 1734627600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82459521",
+          "channelId": "289607",
+          "name": "THE CHASE GR",
+          "startTime": 1734627600000,
+          "endTime": 1734631200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82459527",
+          "channelId": "289607",
+          "name": "ALPHA NEWS",
+          "startTime": 1734631200000,
+          "endTime": 1734634800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82459533",
+          "channelId": "289607",
+          "name": "ΑΓΙΟΣ ΕΡΩΤΑΣ ΕΠ44",
+          "startTime": 1734634800000,
+          "endTime": 1734640200000,
+          "included": false,
+          "rating": "12"
+        },
+        {
+          "id": "82459539",
+          "channelId": "289607",
+          "name": "Ο ΤΙΜΩΡΟΣ ΕΠ25",
+          "startTime": 1734640200000,
+          "endTime": 1734643800000,
+          "included": false,
+          "rating": "12"
+        },
+        {
+          "id": "82459545",
+          "channelId": "289607",
+          "name": "ΝΙΚΟΣ ΜΟΥΤΣΙΝΑΣ ΒΡΑΔΙΑΤΙΚΑ",
+          "startTime": 1734643800000,
+          "endTime": 1734650100000,
+          "included": false,
+          "rating": "12"
+        },
+        {
+          "id": "82459551",
+          "channelId": "289607",
+          "name": "ΜΑΥΡΟ ΡΟΔΟ (E)",
+          "startTime": 1734650100000,
+          "endTime": 1734653700000,
+          "included": false,
+          "rating": "12"
+        },
+        {
+          "id": "82459557",
+          "channelId": "289607",
+          "name": "ΟΙ ΙΣΤΟΡΙΕΣ ΤΟΥ ΑΣΤΥΝΟΜΟΥ ΜΠΕΚΑ (E)",
+          "startTime": 1734653700000,
+          "endTime": 1734657300000,
+          "included": false,
+          "rating": "12"
+        },
+        {
+          "id": "82459563",
+          "channelId": "289607",
+          "name": "ΔΕΚΑ ΛΕΠΤΑ ΚΗΡΥΓΜΑ (E)",
+          "startTime": 1734657300000,
+          "endTime": 1734662700000,
+          "included": false,
+          "rating": "12"
+        },
+        {
+          "id": "82459569",
+          "channelId": "289607",
+          "name": "ΜΕ ΑΓΑΠΗ ΧΡΙΣΤΙΑΝΑ",
+          "startTime": 1734662700000,
+          "endTime": 1734667200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82459575",
+          "channelId": "289607",
+          "name": "DEAL (E)",
+          "startTime": 1734667200000,
+          "endTime": 1734669900000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "82459581",
+          "channelId": "289607",
+          "name": "ALPHA ΚΑΛΗΜΕΡΑ",
+          "startTime": 1734669900000,
+          "endTime": 1734679200000,
+          "included": false,
+          "rating": "K"
+        }
+      ]
+    },
+    {
+      "channelId": "2743",
+      "epgPlayables": [
+        {
+          "id": "81141908",
+          "channelId": "2743",
+          "name": "Καλημερούδια με τους φίλους του BabyTV",
+          "startTime": 1734584400000,
+          "endTime": 1734586200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81141914",
+          "channelId": "2743",
+          "name": "Καλημερούδια με τους φίλους του BabyTV",
+          "startTime": 1734586200000,
+          "endTime": 1734588000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81141920",
+          "channelId": "2743",
+          "name": "Good-Morning Stretch",
+          "startTime": 1734588000000,
+          "endTime": 1734589800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81141926",
+          "channelId": "2743",
+          "name": "Good-Morning Stretch",
+          "startTime": 1734589800000,
+          "endTime": 1734591600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81141932",
+          "channelId": "2743",
+          "name": "Ξεκινήστε τη μέρα σας με τους φίλους του BabyTV",
+          "startTime": 1734591600000,
+          "endTime": 1734593400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81141938",
+          "channelId": "2743",
+          "name": "Walter & Dude and Other Stories",
+          "startTime": 1734593400000,
+          "endTime": 1734595200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81141944",
+          "channelId": "2743",
+          "name": "Welcome to the Island",
+          "startTime": 1734595200000,
+          "endTime": 1734597000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81141950",
+          "channelId": "2743",
+          "name": "Ώρα για τέχνη, δραστηριότητες και μουσική",
+          "startTime": 1734597000000,
+          "endTime": 1734598800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81141956",
+          "channelId": "2743",
+          "name": "Οι μαγικές πρώτες ανακαλύψεις",
+          "startTime": 1734598800000,
+          "endTime": 1734600600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81141962",
+          "channelId": "2743",
+          "name": "Η παιδική χαρά της φαντασίας",
+          "startTime": 1734600600000,
+          "endTime": 1734602400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81141968",
+          "channelId": "2743",
+          "name": "Exploring with Jungle Book",
+          "startTime": 1734602400000,
+          "endTime": 1734604200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81141974",
+          "channelId": "2743",
+          "name": "Τούτι, Φρούτι και Άλλες Ιστορίες",
+          "startTime": 1734604200000,
+          "endTime": 1734606000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81141980",
+          "channelId": "2743",
+          "name": "Η σχολική τάξη του Τίνι και του Τάινι",
+          "startTime": 1734606000000,
+          "endTime": 1734607800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81141986",
+          "channelId": "2743",
+          "name": "Ώρα για τέχνη, δραστηριότητες και μουσική",
+          "startTime": 1734607800000,
+          "endTime": 1734609600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81141992",
+          "channelId": "2743",
+          "name": "Οι μαγικές πρώτες ανακαλύψεις",
+          "startTime": 1734609600000,
+          "endTime": 1734611400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81141998",
+          "channelId": "2743",
+          "name": "Η παιδική χαρά της φαντασίας",
+          "startTime": 1734611400000,
+          "endTime": 1734613200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81142004",
+          "channelId": "2743",
+          "name": "Exploring with Jungle Book",
+          "startTime": 1734613200000,
+          "endTime": 1734615000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81142010",
+          "channelId": "2743",
+          "name": "Walter & Dude and Other Stories",
+          "startTime": 1734615000000,
+          "endTime": 1734616800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81142016",
+          "channelId": "2743",
+          "name": "Η σχολική τάξη του Τίνι και του Τάινι",
+          "startTime": 1734616800000,
+          "endTime": 1734618600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81142022",
+          "channelId": "2743",
+          "name": "Ώρα για τέχνη, δραστηριότητες και μουσική",
+          "startTime": 1734618600000,
+          "endTime": 1734620400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81142028",
+          "channelId": "2743",
+          "name": "Οι μαγικές πρώτες ανακαλύψεις",
+          "startTime": 1734620400000,
+          "endTime": 1734622200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81142034",
+          "channelId": "2743",
+          "name": "Η παιδική χαρά της φαντασίας",
+          "startTime": 1734622200000,
+          "endTime": 1734624000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81142040",
+          "channelId": "2743",
+          "name": "Exploring with Jungle Book",
+          "startTime": 1734624000000,
+          "endTime": 1734625800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81142046",
+          "channelId": "2743",
+          "name": "Ανακαλύψεις με τον Τσάρλι και την Αλφάβητο",
+          "startTime": 1734625800000,
+          "endTime": 1734627600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81142052",
+          "channelId": "2743",
+          "name": "Play & Learn with Yoyo the Magician",
+          "startTime": 1734627600000,
+          "endTime": 1734629400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81142058",
+          "channelId": "2743",
+          "name": "Guessing Games with the Egg Band & Friends",
+          "startTime": 1734629400000,
+          "endTime": 1734631200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81142064",
+          "channelId": "2743",
+          "name": "Ώρα για οικογενειακό παιχνίδι και ρίμες",
+          "startTime": 1734631200000,
+          "endTime": 1734633000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81142070",
+          "channelId": "2743",
+          "name": "Ώρα για οικογενειακό παιχνίδι και ρίμες",
+          "startTime": 1734633000000,
+          "endTime": 1734634800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81142076",
+          "channelId": "2743",
+          "name": "Τέχνη, δημιουργία και μουσική με το BabyTV",
+          "startTime": 1734634800000,
+          "endTime": 1734636600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81142082",
+          "channelId": "2743",
+          "name": "Κλασική μουσική, νανουρίσματα και ιστορίες",
+          "startTime": 1734636600000,
+          "endTime": 1734638400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81142088",
+          "channelId": "2743",
+          "name": "Χαλαρώστε και αφεθείτε",
+          "startTime": 1734638400000,
+          "endTime": 1734640200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81142094",
+          "channelId": "2743",
+          "name": "Χαλαρώστε και αφεθείτε",
+          "startTime": 1734640200000,
+          "endTime": 1734642000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81142100",
+          "channelId": "2743",
+          "name": "Όνειρα γλυκά",
+          "startTime": 1734642000000,
+          "endTime": 1734643800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81142106",
+          "channelId": "2743",
+          "name": "Όνειρα γλυκά",
+          "startTime": 1734643800000,
+          "endTime": 1734645600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81155312",
+          "channelId": "2743",
+          "name": "Ονειρεμένες νύχτες",
+          "startTime": 1734645600000,
+          "endTime": 1734647400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81155318",
+          "channelId": "2743",
+          "name": "Ονειρεμένες νύχτες",
+          "startTime": 1734647400000,
+          "endTime": 1734649200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81155324",
+          "channelId": "2743",
+          "name": "Ονειρεμένες νύχτες",
+          "startTime": 1734649200000,
+          "endTime": 1734651000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81155330",
+          "channelId": "2743",
+          "name": "Ονειρεμένες νύχτες",
+          "startTime": 1734651000000,
+          "endTime": 1734652800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81155336",
+          "channelId": "2743",
+          "name": "Ονειρεμένες νύχτες",
+          "startTime": 1734652800000,
+          "endTime": 1734654600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81155342",
+          "channelId": "2743",
+          "name": "Φεγγάρι και αστέρια",
+          "startTime": 1734654600000,
+          "endTime": 1734656400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81155348",
+          "channelId": "2743",
+          "name": "Βραδινές μελωδίες του BabyTV",
+          "startTime": 1734656400000,
+          "endTime": 1734658200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81155354",
+          "channelId": "2743",
+          "name": "Όνειρα γλυκά",
+          "startTime": 1734658200000,
+          "endTime": 1734660000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81155360",
+          "channelId": "2743",
+          "name": "Καληνύχτες και αγκαλιές",
+          "startTime": 1734660000000,
+          "endTime": 1734661800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81155366",
+          "channelId": "2743",
+          "name": "Ονειρεμένες νύχτες",
+          "startTime": 1734661800000,
+          "endTime": 1734663600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81155372",
+          "channelId": "2743",
+          "name": "Φεγγάρι και αστέρια",
+          "startTime": 1734663600000,
+          "endTime": 1734665400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81155378",
+          "channelId": "2743",
+          "name": "Ηρεμιστικοί ήχοι",
+          "startTime": 1734665400000,
+          "endTime": 1734667200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81155384",
+          "channelId": "2743",
+          "name": "Από τη νύχτα στη μέρα",
+          "startTime": 1734667200000,
+          "endTime": 1734669000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81155390",
+          "channelId": "2743",
+          "name": "Από τη νύχτα στη μέρα",
+          "startTime": 1734669000000,
+          "endTime": 1734670800000,
+          "included": false,
+          "rating": "K"
+        }
+      ]
+    },
+    {
+      "channelId": "2266",
+      "epgPlayables": [
+        {
+          "id": "83081474",
+          "channelId": "2266",
+          "name": "Batwheels Κ2 ΕΠ14",
+          "startTime": 1734584160000,
+          "endTime": 1734585000000,
+          "included": true,
+          "rating": "K"
+        },
+        {
+          "id": "83081480",
+          "channelId": "2266",
+          "name": "Batwheels Κ1 ΕΠ18",
+          "startTime": 1734585000000,
+          "endTime": 1734585600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081486",
+          "channelId": "2266",
+          "name": "Bugs Bunny Builders: Hard Hat Time Κ1 ΕΠ9",
+          "startTime": 1734585600000,
+          "endTime": 1734586200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081492",
+          "channelId": "2266",
+          "name": "Bugs Bunny Builders Κ1 ΕΠ1",
+          "startTime": 1734586200000,
+          "endTime": 1734586800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081498",
+          "channelId": "2266",
+          "name": "Bugs Bunny Builders Κ1 ΕΠ9",
+          "startTime": 1734586800000,
+          "endTime": 1734588000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081504",
+          "channelId": "2266",
+          "name": "Interstellar Ella Κ1 ΕΠ34",
+          "startTime": 1734588000000,
+          "endTime": 1734588600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081510",
+          "channelId": "2266",
+          "name": "Interstellar Ella Κ1 ΕΠ43",
+          "startTime": 1734588600000,
+          "endTime": 1734589800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081516",
+          "channelId": "2266",
+          "name": "Τομ και Τζέρι Κ2 ΕΠ61",
+          "startTime": 1734589800000,
+          "endTime": 1734590100000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081522",
+          "channelId": "2266",
+          "name": "Τομ και Τζέρι Κ2 ΕΠ62",
+          "startTime": 1734590100000,
+          "endTime": 1734590400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081528",
+          "channelId": "2266",
+          "name": "Τομ και Τζέρι Κ2 ΕΠ61",
+          "startTime": 1734590400000,
+          "endTime": 1734591000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081534",
+          "channelId": "2266",
+          "name": "Moley: Squirm & Manny Κ1 ΕΠ6",
+          "startTime": 1734591000000,
+          "endTime": 1734591600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081540",
+          "channelId": "2266",
+          "name": "Mr Bean: ιστορίες κινουμένων σχεδίων Κ3",
+          "startTime": 1734591600000,
+          "endTime": 1734592200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081546",
+          "channelId": "2266",
+          "name": "Mr Bean: ιστορίες κινουμένων σχεδίων Κ3",
+          "startTime": 1734592200000,
+          "endTime": 1734593400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081552",
+          "channelId": "2266",
+          "name": "Mr Bean: ιστορίες κινουμένων σχεδίων Κ3",
+          "startTime": 1734593400000,
+          "endTime": 1734594000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081558",
+          "channelId": "2266",
+          "name": "Mr Bean: ιστορίες κινουμένων σχεδίων Κ3 ΕΠ22",
+          "startTime": 1734594000000,
+          "endTime": 1734594600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081564",
+          "channelId": "2266",
+          "name": "Lu & The Bally Bunch - Shorts Κ1 ΕΠ4",
+          "startTime": 1734594600000,
+          "endTime": 1734595200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081570",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ2 ΕΠ34",
+          "startTime": 1734595200000,
+          "endTime": 1734595500000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081576",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ2 ΕΠ35",
+          "startTime": 1734595500000,
+          "endTime": 1734596100000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081582",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ2 ΕΠ36",
+          "startTime": 1734596100000,
+          "endTime": 1734596700000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081588",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ2 ΕΠ37",
+          "startTime": 1734596700000,
+          "endTime": 1734597300000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081594",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ2 ΕΠ39",
+          "startTime": 1734597300000,
+          "endTime": 1734597600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081600",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ2 ΕΠ40",
+          "startTime": 1734597600000,
+          "endTime": 1734598500000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081606",
+          "channelId": "2266",
+          "name": "Batwheels Κ2 ΕΠ14",
+          "startTime": 1734598500000,
+          "endTime": 1734599400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081612",
+          "channelId": "2266",
+          "name": "Batwheels Κ1 ΕΠ38",
+          "startTime": 1734599400000,
+          "endTime": 1734600300000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081618",
+          "channelId": "2266",
+          "name": "Bugs Bunny Builders Κ2 ΕΠ5",
+          "startTime": 1734600300000,
+          "endTime": 1734600900000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081624",
+          "channelId": "2266",
+          "name": "Bugs Bunny Builders Κ2 ΕΠ6",
+          "startTime": 1734600900000,
+          "endTime": 1734602100000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081630",
+          "channelId": "2266",
+          "name": "Mr Bean: ιστορίες κινουμένων σχεδίων Κ3 ΕΠ3",
+          "startTime": 1734602100000,
+          "endTime": 1734602700000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081636",
+          "channelId": "2266",
+          "name": "Mr Bean: ιστορίες κινουμένων σχεδίων Κ3",
+          "startTime": 1734602700000,
+          "endTime": 1734603900000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081642",
+          "channelId": "2266",
+          "name": "Mr Bean: ιστορίες κινουμένων σχεδίων Κ3",
+          "startTime": 1734603900000,
+          "endTime": 1734604500000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081648",
+          "channelId": "2266",
+          "name": "Mr Bean: ιστορίες κινουμένων σχεδίων Κ3 ΕΠ7",
+          "startTime": 1734604500000,
+          "endTime": 1734605100000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081654",
+          "channelId": "2266",
+          "name": "Bugs Bunny Builders: Hard Hat Time Κ1 ΕΠ2",
+          "startTime": 1734605100000,
+          "endTime": 1734605700000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081660",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ2 ΕΠ68",
+          "startTime": 1734605700000,
+          "endTime": 1734606300000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081666",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ2 ΕΠ69",
+          "startTime": 1734606300000,
+          "endTime": 1734606600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081672",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ2 ΕΠ71",
+          "startTime": 1734606600000,
+          "endTime": 1734607500000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081678",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ2 ΕΠ72",
+          "startTime": 1734607500000,
+          "endTime": 1734608100000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081684",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ2 ΕΠ73",
+          "startTime": 1734608100000,
+          "endTime": 1734608400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081690",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ2 ΕΠ74",
+          "startTime": 1734608400000,
+          "endTime": 1734608700000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081696",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ3",
+          "startTime": 1734608700000,
+          "endTime": 1734609600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081702",
+          "channelId": "2266",
+          "name": "Batwheels Κ2 ΕΠ15",
+          "startTime": 1734609600000,
+          "endTime": 1734610200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081708",
+          "channelId": "2266",
+          "name": "Batwheels Κ1 ΕΠ38",
+          "startTime": 1734610200000,
+          "endTime": 1734610800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081714",
+          "channelId": "2266",
+          "name": "Lu & The Bally Bunch - Shorts Κ1 ΕΠ9",
+          "startTime": 1734610800000,
+          "endTime": 1734611400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081720",
+          "channelId": "2266",
+          "name": "Bugs Bunny Builders Κ1 ΕΠ27",
+          "startTime": 1734611400000,
+          "endTime": 1734612000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081726",
+          "channelId": "2266",
+          "name": "Bugs Bunny Builders Κ1 ΕΠ32",
+          "startTime": 1734612000000,
+          "endTime": 1734613200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081732",
+          "channelId": "2266",
+          "name": "Interstellar Ella Κ1 ΕΠ6",
+          "startTime": 1734613200000,
+          "endTime": 1734613800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081738",
+          "channelId": "2266",
+          "name": "Interstellar Ella Κ1 ΕΠ9",
+          "startTime": 1734613800000,
+          "endTime": 1734615000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081744",
+          "channelId": "2266",
+          "name": "Τομ και Τζέρι Κ2 ΕΠ61",
+          "startTime": 1734615000000,
+          "endTime": 1734615300000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081750",
+          "channelId": "2266",
+          "name": "Τομ και Τζέρι Κ2 ΕΠ62",
+          "startTime": 1734615300000,
+          "endTime": 1734615600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081756",
+          "channelId": "2266",
+          "name": "Τομ και Τζέρι Κ2 ΕΠ61",
+          "startTime": 1734615600000,
+          "endTime": 1734616200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081762",
+          "channelId": "2266",
+          "name": "Moley: Squirm & Manny Κ1 ΕΠ14",
+          "startTime": 1734616200000,
+          "endTime": 1734616800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081768",
+          "channelId": "2266",
+          "name": "Mr Bean: ιστορίες κινουμένων σχεδίων Κ3",
+          "startTime": 1734616800000,
+          "endTime": 1734617400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081774",
+          "channelId": "2266",
+          "name": "Mr Bean: ιστορίες κινουμένων σχεδίων Κ3",
+          "startTime": 1734617400000,
+          "endTime": 1734618600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081780",
+          "channelId": "2266",
+          "name": "Mr Bean: ιστορίες κινουμένων σχεδίων Κ3",
+          "startTime": 1734618600000,
+          "endTime": 1734619200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081786",
+          "channelId": "2266",
+          "name": "Mr Bean: ιστορίες κινουμένων σχεδίων Κ3 ΕΠ22",
+          "startTime": 1734619200000,
+          "endTime": 1734619800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081792",
+          "channelId": "2266",
+          "name": "Lu & The Bally Bunch - Shorts Κ1 ΕΠ24",
+          "startTime": 1734619800000,
+          "endTime": 1734620400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081798",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ3 ΕΠ70",
+          "startTime": 1734620400000,
+          "endTime": 1734620700000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081804",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ3",
+          "startTime": 1734620700000,
+          "endTime": 1734621300000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081810",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ3 ΕΠ72",
+          "startTime": 1734621300000,
+          "endTime": 1734621900000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081816",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ3 ΕΠ73",
+          "startTime": 1734621900000,
+          "endTime": 1734622500000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081822",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ3",
+          "startTime": 1734622500000,
+          "endTime": 1734622800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081828",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ3 ΕΠ75",
+          "startTime": 1734622800000,
+          "endTime": 1734623400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081834",
+          "channelId": "2266",
+          "name": "Meet the Batwheels Κ1 ΕΠ22",
+          "startTime": 1734623400000,
+          "endTime": 1734624000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081840",
+          "channelId": "2266",
+          "name": "Batwheels Κ2 ΕΠ15",
+          "startTime": 1734624000000,
+          "endTime": 1734624600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081846",
+          "channelId": "2266",
+          "name": "Batwheels Κ1 ΕΠ27",
+          "startTime": 1734624600000,
+          "endTime": 1734625200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081852",
+          "channelId": "2266",
+          "name": "Moley: Squirm & Manny Κ1 ΕΠ12",
+          "startTime": 1734625200000,
+          "endTime": 1734625800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081858",
+          "channelId": "2266",
+          "name": "Bugs Bunny Builders Κ1 ΕΠ15",
+          "startTime": 1734625800000,
+          "endTime": 1734626400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081864",
+          "channelId": "2266",
+          "name": "Bugs Bunny Builders Κ1 ΕΠ13",
+          "startTime": 1734626400000,
+          "endTime": 1734627600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081870",
+          "channelId": "2266",
+          "name": "Interstellar Ella Κ1 ΕΠ26",
+          "startTime": 1734627600000,
+          "endTime": 1734628200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081876",
+          "channelId": "2266",
+          "name": "Interstellar Ella Κ1 ΕΠ24",
+          "startTime": 1734628200000,
+          "endTime": 1734629400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081882",
+          "channelId": "2266",
+          "name": "Interstellar Ella Κ1 ΕΠ22",
+          "startTime": 1734629400000,
+          "endTime": 1734630000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081888",
+          "channelId": "2266",
+          "name": "Interstellar Ella Κ1 ΕΠ36",
+          "startTime": 1734630000000,
+          "endTime": 1734631200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081894",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ2 ΕΠ27",
+          "startTime": 1734631200000,
+          "endTime": 1734631500000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081900",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ2 ΕΠ28",
+          "startTime": 1734631500000,
+          "endTime": 1734631800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081906",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ2 ΕΠ29",
+          "startTime": 1734631800000,
+          "endTime": 1734632700000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081912",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ2 ΕΠ31",
+          "startTime": 1734632700000,
+          "endTime": 1734633300000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081918",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ2 ΕΠ32",
+          "startTime": 1734633300000,
+          "endTime": 1734633600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081924",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ2 ΕΠ33",
+          "startTime": 1734633600000,
+          "endTime": 1734634500000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081930",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ2 ΕΠ34",
+          "startTime": 1734634500000,
+          "endTime": 1734634800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081936",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ2 ΕΠ35",
+          "startTime": 1734634800000,
+          "endTime": 1734635400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081942",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ2 ΕΠ36",
+          "startTime": 1734635400000,
+          "endTime": 1734635700000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081948",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ2 ΕΠ37",
+          "startTime": 1734635700000,
+          "endTime": 1734636600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081954",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ2 ΕΠ39",
+          "startTime": 1734636600000,
+          "endTime": 1734637200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081960",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ2 ΕΠ40",
+          "startTime": 1734637200000,
+          "endTime": 1734637500000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081966",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ2 ΕΠ41",
+          "startTime": 1734637500000,
+          "endTime": 1734638400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081972",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ2 ΕΠ42",
+          "startTime": 1734638400000,
+          "endTime": 1734638700000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081978",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ2 ΕΠ43",
+          "startTime": 1734638700000,
+          "endTime": 1734639300000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081984",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ2 ΕΠ44",
+          "startTime": 1734639300000,
+          "endTime": 1734639600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081990",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ2 ΕΠ45",
+          "startTime": 1734639600000,
+          "endTime": 1734640200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83081996",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ2 ΕΠ46",
+          "startTime": 1734640200000,
+          "endTime": 1734640500000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082002",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ2 ΕΠ47",
+          "startTime": 1734640500000,
+          "endTime": 1734641100000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082008",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ2 ΕΠ48",
+          "startTime": 1734641100000,
+          "endTime": 1734641400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082014",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ2 ΕΠ49",
+          "startTime": 1734641400000,
+          "endTime": 1734641700000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082020",
+          "channelId": "2266",
+          "name": "Kral Şakir Κ1 ΕΠ2",
+          "startTime": 1734641700000,
+          "endTime": 1734642600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082026",
+          "channelId": "2266",
+          "name": "Kral Şakir Κ1 ΕΠ3",
+          "startTime": 1734642600000,
+          "endTime": 1734643200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082032",
+          "channelId": "2266",
+          "name": "Kral Şakir Κ1 ΕΠ4",
+          "startTime": 1734643200000,
+          "endTime": 1734643800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082038",
+          "channelId": "2266",
+          "name": "Kral Şakir Κ1 ΕΠ5",
+          "startTime": 1734643800000,
+          "endTime": 1734644700000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082044",
+          "channelId": "2266",
+          "name": "Kral Şakir Κ1 ΕΠ6",
+          "startTime": 1734644700000,
+          "endTime": 1734645300000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082050",
+          "channelId": "2266",
+          "name": "Kral Şakir Κ1 ΕΠ7",
+          "startTime": 1734645300000,
+          "endTime": 1734645900000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082056",
+          "channelId": "2266",
+          "name": "Kral Şakir Κ1 ΕΠ9",
+          "startTime": 1734645900000,
+          "endTime": 1734646500000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082062",
+          "channelId": "2266",
+          "name": "Kral Şakir Κ1 ΕΠ10",
+          "startTime": 1734646500000,
+          "endTime": 1734647400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082068",
+          "channelId": "2266",
+          "name": "Kral Şakir Κ1 ΕΠ4",
+          "startTime": 1734647400000,
+          "endTime": 1734648000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082074",
+          "channelId": "2266",
+          "name": "Kral Şakir Κ1 ΕΠ13",
+          "startTime": 1734648000000,
+          "endTime": 1734648600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082080",
+          "channelId": "2266",
+          "name": "Kral Şakir Κ1 ΕΠ14",
+          "startTime": 1734648600000,
+          "endTime": 1734649500000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082086",
+          "channelId": "2266",
+          "name": "Kral Şakir Κ1 ΕΠ15",
+          "startTime": 1734649500000,
+          "endTime": 1734650100000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082092",
+          "channelId": "2266",
+          "name": "Kral Şakir Κ1 ΕΠ16",
+          "startTime": 1734650100000,
+          "endTime": 1734651000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082098",
+          "channelId": "2266",
+          "name": "Kral Şakir Κ1 ΕΠ18",
+          "startTime": 1734651000000,
+          "endTime": 1734651600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082104",
+          "channelId": "2266",
+          "name": "Kral Şakir Κ1 ΕΠ19",
+          "startTime": 1734651600000,
+          "endTime": 1734652200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082110",
+          "channelId": "2266",
+          "name": "Kral Şakir Κ1 ΕΠ20",
+          "startTime": 1734652200000,
+          "endTime": 1734652800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082116",
+          "channelId": "2266",
+          "name": "Kral Şakir Κ1 ΕΠ23",
+          "startTime": 1734652800000,
+          "endTime": 1734653700000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082122",
+          "channelId": "2266",
+          "name": "Kral Şakir Κ1 ΕΠ25",
+          "startTime": 1734653700000,
+          "endTime": 1734654300000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082128",
+          "channelId": "2266",
+          "name": "Kral Şakir Κ1 ΕΠ5",
+          "startTime": 1734654300000,
+          "endTime": 1734654900000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082134",
+          "channelId": "2266",
+          "name": "Kral Şakir Κ1 ΕΠ27",
+          "startTime": 1734654900000,
+          "endTime": 1734655800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082140",
+          "channelId": "2266",
+          "name": "Kral Şakir Κ1 ΕΠ29",
+          "startTime": 1734655800000,
+          "endTime": 1734656400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082146",
+          "channelId": "2266",
+          "name": "Kral Şakir Κ1 ΕΠ30",
+          "startTime": 1734656400000,
+          "endTime": 1734657000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082152",
+          "channelId": "2266",
+          "name": "Kral Şakir Κ1 ΕΠ32",
+          "startTime": 1734657000000,
+          "endTime": 1734657600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082158",
+          "channelId": "2266",
+          "name": "Kral Şakir Κ1 ΕΠ33",
+          "startTime": 1734657600000,
+          "endTime": 1734658200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082164",
+          "channelId": "2266",
+          "name": "Kral Şakir Κ1 ΕΠ35",
+          "startTime": 1734658200000,
+          "endTime": 1734658800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082170",
+          "channelId": "2266",
+          "name": "Kral Şakir Κ1 ΕΠ38",
+          "startTime": 1734658800000,
+          "endTime": 1734659700000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082176",
+          "channelId": "2266",
+          "name": "Meet the Batwheels Κ1 ΕΠ1",
+          "startTime": 1734659700000,
+          "endTime": 1734659760000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082182",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ2 ΕΠ5",
+          "startTime": 1734659760000,
+          "endTime": 1734660300000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082188",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ2 ΕΠ6",
+          "startTime": 1734660300000,
+          "endTime": 1734660600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082194",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ2 ΕΠ8",
+          "startTime": 1734660600000,
+          "endTime": 1734661140000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082200",
+          "channelId": "2266",
+          "name": "Moley: Squirm & Manny Κ1 ΕΠ4",
+          "startTime": 1734661140000,
+          "endTime": 1734661200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082206",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ2 ΕΠ9",
+          "startTime": 1734661200000,
+          "endTime": 1734661500000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082212",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ2 ΕΠ10",
+          "startTime": 1734661500000,
+          "endTime": 1734662100000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082218",
+          "channelId": "2266",
+          "name": "Meet the Batwheels Κ1 ΕΠ12",
+          "startTime": 1734662100000,
+          "endTime": 1734662160000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082224",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ2 ΕΠ11",
+          "startTime": 1734662160000,
+          "endTime": 1734662700000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082230",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ2",
+          "startTime": 1734662700000,
+          "endTime": 1734663000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082236",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ2",
+          "startTime": 1734663000000,
+          "endTime": 1734663600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082242",
+          "channelId": "2266",
+          "name": "Mr Bean: ιστορίες κινουμένων σχεδίων Κ3 ΕΠ7",
+          "startTime": 1734663600000,
+          "endTime": 1734664200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082248",
+          "channelId": "2266",
+          "name": "Mr Bean: ιστορίες κινουμένων σχεδίων Κ3",
+          "startTime": 1734664200000,
+          "endTime": 1734664800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082254",
+          "channelId": "2266",
+          "name": "Mr Bean: ιστορίες κινουμένων σχεδίων Κ3 ΕΠ9",
+          "startTime": 1734664800000,
+          "endTime": 1734665700000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082260",
+          "channelId": "2266",
+          "name": "Mr Bean: ιστορίες κινουμένων σχεδίων Κ3 ΕΠ10",
+          "startTime": 1734665700000,
+          "endTime": 1734666300000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082266",
+          "channelId": "2266",
+          "name": "Mr Bean: ιστορίες κινουμένων σχεδίων Κ3 ΕΠ11",
+          "startTime": 1734666300000,
+          "endTime": 1734666900000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082272",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ2 ΕΠ28",
+          "startTime": 1734666900000,
+          "endTime": 1734667500000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082278",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ2 ΕΠ29",
+          "startTime": 1734667500000,
+          "endTime": 1734667800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082284",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ2 ΕΠ31",
+          "startTime": 1734667800000,
+          "endTime": 1734668100000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082290",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ2 ΕΠ32",
+          "startTime": 1734668100000,
+          "endTime": 1734668700000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082296",
+          "channelId": "2266",
+          "name": "Ο Γκρίζι και τα λέμινγκ Κ2 ΕΠ33",
+          "startTime": 1734668700000,
+          "endTime": 1734669000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082302",
+          "channelId": "2266",
+          "name": "Τομ και Τζέρι Κ4 ΕΠ40",
+          "startTime": 1734669000000,
+          "endTime": 1734669600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082308",
+          "channelId": "2266",
+          "name": "Τομ και Τζέρι Κ4 ΕΠ41",
+          "startTime": 1734669600000,
+          "endTime": 1734669900000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082314",
+          "channelId": "2266",
+          "name": "Τομ και Τζέρι Κ4",
+          "startTime": 1734669900000,
+          "endTime": 1734670500000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082320",
+          "channelId": "2266",
+          "name": "Meet the Batwheels Κ1 ΕΠ23",
+          "startTime": 1734670500000,
+          "endTime": 1734670560000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "83082326",
+          "channelId": "2266",
+          "name": "Batwheels Κ2 ΕΠ15",
+          "startTime": 1734670560000,
+          "endTime": 1734671400000,
+          "included": false,
+          "rating": "K"
+        }
+      ]
+    },
+    {
+      "channelId": "2374",
+      "epgPlayables": [
+        {
+          "id": "81447283",
+          "channelId": "2374",
+          "name": "Totally Spies! Κ7 ΕΠ7",
+          "startTime": 1734584400000,
+          "endTime": 1734585900000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81447289",
+          "channelId": "2374",
+          "name": "Totally Spies! Κ7 ΕΠ8",
+          "startTime": 1734585900000,
+          "endTime": 1734587400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81447295",
+          "channelId": "2374",
+          "name": "Teen Titans Go! Κ7",
+          "startTime": 1734587400000,
+          "endTime": 1734589800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81447301",
+          "channelId": "2374",
+          "name": "LEGO DREAMZzz Κ2",
+          "startTime": 1734589800000,
+          "endTime": 1734591300000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81447307",
+          "channelId": "2374",
+          "name": "Craig of The Creek Κ6",
+          "startTime": 1734591300000,
+          "endTime": 1734592800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81447313",
+          "channelId": "2374",
+          "name": "We Baby Bears Κ1",
+          "startTime": 1734592800000,
+          "endTime": 1734595500000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81447319",
+          "channelId": "2374",
+          "name": "The Heroic Quest of the Valiant Prince Ivandoe Κ2",
+          "startTime": 1734595500000,
+          "endTime": 1734598200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81447325",
+          "channelId": "2374",
+          "name": "The Amazing World of Gumball Κ5",
+          "startTime": 1734598200000,
+          "endTime": 1734600300000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81447331",
+          "channelId": "2374",
+          "name": "LEGO DREAMZzz Κ2",
+          "startTime": 1734600300000,
+          "endTime": 1734601800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81447337",
+          "channelId": "2374",
+          "name": "Craig of The Creek Κ6",
+          "startTime": 1734601800000,
+          "endTime": 1734603000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81447343",
+          "channelId": "2374",
+          "name": "Totally Spies! Κ7 ΕΠ6",
+          "startTime": 1734603000000,
+          "endTime": 1734604500000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81447349",
+          "channelId": "2374",
+          "name": "Tiny Toons Looniversity Κ1 ΕΠ9",
+          "startTime": 1734604500000,
+          "endTime": 1734606000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81447355",
+          "channelId": "2374",
+          "name": "Teen Titans Go! Κ6",
+          "startTime": 1734606000000,
+          "endTime": 1734607800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81447361",
+          "channelId": "2374",
+          "name": "The Amazing World of Gumball: The Gumball Chronicles Κ1 ΕΠ7",
+          "startTime": 1734607800000,
+          "endTime": 1734608400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81447367",
+          "channelId": "2374",
+          "name": "The Amazing World of Gumball: The Gumball Chronicles Κ1 ΕΠ8",
+          "startTime": 1734608400000,
+          "endTime": 1734609000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81447373",
+          "channelId": "2374",
+          "name": "Teen Titans Go! Κ6",
+          "startTime": 1734609000000,
+          "endTime": 1734609600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81447379",
+          "channelId": "2374",
+          "name": "Teen Titans Go! Κ7",
+          "startTime": 1734609600000,
+          "endTime": 1734610500000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81447385",
+          "channelId": "2374",
+          "name": "The Amazing World of Gumball Κ4 ΕΠ1",
+          "startTime": 1734610500000,
+          "endTime": 1734611100000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81447391",
+          "channelId": "2374",
+          "name": "The Amazing World of Gumball Κ4 ΕΠ2",
+          "startTime": 1734611100000,
+          "endTime": 1734612000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81447397",
+          "channelId": "2374",
+          "name": "Teen Titans Go! Κ7 ΕΠ2",
+          "startTime": 1734612000000,
+          "endTime": 1734612600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81447403",
+          "channelId": "2374",
+          "name": "Teen Titans Go! Κ7",
+          "startTime": 1734612600000,
+          "endTime": 1734613200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81447409",
+          "channelId": "2374",
+          "name": "Craig of The Creek Κ6",
+          "startTime": 1734613200000,
+          "endTime": 1734614400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81447415",
+          "channelId": "2374",
+          "name": "LEGO DREAMZzz Κ2",
+          "startTime": 1734614400000,
+          "endTime": 1734615900000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81447421",
+          "channelId": "2374",
+          "name": "Totally Spies! Κ7 ΕΠ7",
+          "startTime": 1734615900000,
+          "endTime": 1734617400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81447427",
+          "channelId": "2374",
+          "name": "Totally Spies! Κ7 ΕΠ8",
+          "startTime": 1734617400000,
+          "endTime": 1734618600000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81447433",
+          "channelId": "2374",
+          "name": "Teen Titans Go! Κ7",
+          "startTime": 1734618600000,
+          "endTime": 1734621300000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81447439",
+          "channelId": "2374",
+          "name": "LEGO DREAMZzz Κ2",
+          "startTime": 1734621300000,
+          "endTime": 1734622800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81447445",
+          "channelId": "2374",
+          "name": "Craig of The Creek Κ6",
+          "startTime": 1734622800000,
+          "endTime": 1734624000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81447451",
+          "channelId": "2374",
+          "name": "Hero Inside Κ1",
+          "startTime": 1734624000000,
+          "endTime": 1734625500000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81447457",
+          "channelId": "2374",
+          "name": "Tiny Toons Looniversity Κ1 ΕΠ10",
+          "startTime": 1734625500000,
+          "endTime": 1734627000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81447463",
+          "channelId": "2374",
+          "name": "The Amazing World of Gumball Κ5",
+          "startTime": 1734627000000,
+          "endTime": 1734629100000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81447469",
+          "channelId": "2374",
+          "name": "LEGO DREAMZzz Κ2",
+          "startTime": 1734629100000,
+          "endTime": 1734630300000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81447475",
+          "channelId": "2374",
+          "name": "Craig of The Creek Κ6",
+          "startTime": 1734630300000,
+          "endTime": 1734631800000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81447481",
+          "channelId": "2374",
+          "name": "Teen Titans Go! Κ7",
+          "startTime": 1734631800000,
+          "endTime": 1734634500000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81447487",
+          "channelId": "2374",
+          "name": "Totally Spies! Κ7 ΕΠ7",
+          "startTime": 1734634500000,
+          "endTime": 1734635700000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81447493",
+          "channelId": "2374",
+          "name": "Totally Spies! Κ7 ΕΠ8",
+          "startTime": 1734635700000,
+          "endTime": 1734637200000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81447499",
+          "channelId": "2374",
+          "name": "Ninjago: Dragons Rising Κ2 ΕΠ14",
+          "startTime": 1734637200000,
+          "endTime": 1734638400000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81447505",
+          "channelId": "2374",
+          "name": "Be Cool, Scooby-Doo! Κ2 ΕΠ3",
+          "startTime": 1734638400000,
+          "endTime": 1734639900000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81447511",
+          "channelId": "2374",
+          "name": "Be Cool, Scooby-Doo! Κ2 ΕΠ4",
+          "startTime": 1734639900000,
+          "endTime": 1734641100000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81447517",
+          "channelId": "2374",
+          "name": "The Amazing World of Gumball Κ6",
+          "startTime": 1734641100000,
+          "endTime": 1734660000000,
+          "included": false,
+          "rating": "K"
+        },
+        {
+          "id": "81447523",
+          "channelId": "2374",
+          "name": "The Amazing World of Gumball Κ4",
+          "startTime": 1734660000000,
+          "endTime": 1734671100000,
+          "included": false,
+          "rating": "K"
+        }
+      ]
+    }
+  ]
+}
