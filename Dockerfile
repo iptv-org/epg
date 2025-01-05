@@ -1,4 +1,4 @@
-FROM node:lts-bookworm-slim AS build
+FROM node:lts-bookworm-slim
 
 WORKDIR /build
 
@@ -12,7 +12,7 @@ COPY . .
 COPY docker/ecosystem.config.js ./ecosystem.config.js
 COPY docker/serve.json ./serve.json
 
-RUN npm install pm2 -g \
+RUN npm install pm2 -g && \
     npm run postinstall
 
 # Set some application defaults
