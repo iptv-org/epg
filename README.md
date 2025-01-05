@@ -51,18 +51,21 @@ And once the download is complete, the guide will be saved to the `guide.xml` fi
 Usage: npm run grab --- [options]
 
 Options:
-  -s, --site <name>             Name of the site to parse
+  -s, --site <name>             Name of the site to parse (env: SITE)
   -c, --channels <path>         Path to *.channels.xml file (required if the "--site" attribute is
-                                not specified)
-  -o, --output <path>           Path to output file (default: "guide.xml")
-  -l, --lang <code>             Filter channels by language (ISO 639-2 code)
-  -t, --timeout <milliseconds>  Override the default timeout for each request
-  -d, --delay <milliseconds>    Override the default delay between request
+                                not specified) (env: CHANNELS)
+  -o, --output <path>           Path to output file (default: "guide.xml", env: OUTPUT)
+  -l, --lang <code>             Filter channels by language (ISO 639-2 code) (env: LANG)
+  -t, --timeout <milliseconds>  Override the default timeout for each request (env: TIMEOUT)
+  -d, --delay <milliseconds>    Override the default delay between request (env: DELAY)
   --days <days>                 Override the number of days for which the program will be loaded
-                                (defaults to the value from the site config)
-  --maxConnections <number>     Limit on the number of concurrent requests (default: 1)
-  --cron <expression>           Schedule a script run (example: "0 0 * * *")
-  --gzip                        Create a compressed version of the guide as well (default: false)
+                                (defaults to the value from the site config) (env: DAYS)
+  --maxConnections <number>     Limit on the number of concurrent requests (default: 5, env:
+                                MAX_CONNECTIONS)
+  --cron <expression>           Schedule a script run (example: "0 0 * * *") (env: CRON)
+  --gzip                        Create a compressed version of the guide as well (default: false,
+                                env: GZIP)
+  -h, --help                    display help for command
 ```
 
 ### Access the guide by URL

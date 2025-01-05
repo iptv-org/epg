@@ -1,3 +1,5 @@
-node_modules
-.github
-.tests
+/node_modules/
+/temp
+/.github/
+/.tests/
+/.sites/
