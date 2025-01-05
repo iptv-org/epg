@@ -182,7 +182,7 @@ To fine-tune the execution, you can pass environment variables to the container 
 docker run \
 -p 5000:3000 \
 -v /path/to/channels.xml:/epg/channels.xml \
--e CRON_SCHEDULE="0 0,12 * * *" \
+-e CRON="0 0,12 * * *" \
 -e MAX_CONNECTIONS=10 \
 -e GZIP=true \
 -e DAYS=14 \
@@ -193,7 +193,7 @@ iptv-org/epg
 
 | Variable        | Description                                                                                                        |
 | --------------- | ------------------------------------------------------------------------------------------------------------------ |
-| CRON_SCHEDULE   | A [cron expression](https://crontab.guru/) describing the schedule of the guide loadings (default: "0 0 \* \* \*") |
+| CRON            | A [cron expression](https://crontab.guru/) describing the schedule of the guide loadings (default: "0 0 \* \* \*") |
 | MAX_CONNECTIONS | Limit on the number of concurrent requests (default: 1)                                                            |
 | GZIP            | Boolean value indicating whether to create a compressed version of the guide (default: false)                      |
 | DAYS            | Number of days for which the guide will be loaded (defaults to the value from the site config)                     |
