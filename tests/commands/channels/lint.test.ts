@@ -9,7 +9,8 @@ describe('channels:lint', () => {
   it('will show a message if the file contains a syntax error', () => {
     try {
       const cmd = 'npm run channels:lint --- tests/__data__/input/channels-lint/error.channels.xml'
-      execSync(cmd, { encoding: 'utf8' })
+      const stdout = execSync(cmd, { encoding: 'utf8' })
+      if (process.env.DEBUG === 'true') console.log(stdout)
       process.exit(1)
     } catch (error) {
       expect((error as ExecError).status).toBe(1)
@@ -23,7 +24,8 @@ describe('channels:lint', () => {
     try {
       const cmd =
         'npm run channels:lint --- tests/__data__/input/channels-lint/invalid.channels.xml'
-      execSync(cmd, { encoding: 'utf8' })
+      const stdout = execSync(cmd, { encoding: 'utf8' })
+      if (process.env.DEBUG === 'true') console.log(stdout)
       process.exit(1)
     } catch (error) {
       expect((error as ExecError).status).toBe(1)
@@ -37,7 +39,8 @@ describe('channels:lint', () => {
     try {
       const cmd =
         'npm run channels:lint --- tests/__data__/input/channels-lint/error.channels.xml tests/__data__/input/channels-lint/invalid.channels.xml'
-      execSync(cmd, { encoding: 'utf8' })
+      const stdout = execSync(cmd, { encoding: 'utf8' })
+      if (process.env.DEBUG === 'true') console.log(stdout)
       process.exit(1)
     } catch (error) {
       expect((error as ExecError).status).toBe(1)

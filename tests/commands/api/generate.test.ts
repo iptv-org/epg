@@ -16,7 +16,8 @@ beforeEach(() => {
 describe('api:generate', () => {
   it('can generate guides.json', () => {
     const cmd = `${ENV_VAR} npm run api:generate`
-    execSync(cmd, { encoding: 'utf8' })
+    const stdout = execSync(cmd, { encoding: 'utf8' })
+    if (process.env.DEBUG === 'true') console.log(stdout)
 
     expect(content('tests/__data__/output/guides.json')).toEqual(
       content('tests/__data__/expected/guides.json')

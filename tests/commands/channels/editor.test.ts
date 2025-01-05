@@ -25,7 +25,8 @@ describe('channels:editor', () => {
 
     try {
       const cmd = `${ENV_VAR} npm run channels:editor --- tests/__data__/output/channels.xml`
-      execSync(cmd, { encoding: 'utf8' })
+      const stdout = execSync(cmd, { encoding: 'utf8' })
+      if (process.env.DEBUG === 'true') console.log(stdout)
     } catch (error) {
       expect((error as ExecError).status).toBe(1)
       expect((error as ExecError).stdout).toContain('CNN International | CNNInternational.us [new]')
