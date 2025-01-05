@@ -2,12 +2,6 @@ FROM node:22-alpine
 ARG GIT_REPO=https://github.com/iptv-org/epg.git
 ARG GIT_BRANCH=master
 ARG WORKDIR=/epg
-ENV CRON_SCHEDULE="0 0 * * *"
-ENV GZIP=false
-ENV MAX_CONNECTIONS=1
-ENV TIMEOUT=
-ENV DELAY=
-ENV DAYS=
 RUN apk update \
     && apk upgrade --available \
     && apk add curl git tzdata bash \
