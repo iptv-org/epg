@@ -1,5 +1,6 @@
 FROM node:lts-bookworm-slim
 
+RUN mkdir -p /build && chown node:node /build
 WORKDIR /build
 
 COPY yarn.lock ./yarn.lock
@@ -12,8 +13,9 @@ COPY . .
 COPY docker/ecosystem.config.js ./ecosystem.config.js
 COPY docker/serve.json ./serve.json
 
-RUN npm install pm2 -g && \
-    npm run postinstall
+RUN npm install pm2 -g
+USER node
+RUN npm run postinstall
 
 # Set some application defaults
 ENV NODE_ENV=production \
