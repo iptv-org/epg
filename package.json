@@ -23,6 +23,9 @@
   "author": "Arhey",
   "license": "UNLICENSED",
   "jest": {
+    "setupFiles": [
+      "<rootDir>/node_modules/jest-offline"
+    ],
     "transform": {
       "^.+\\.(ts|js)$": "ts-jest"
     },
@@ -69,6 +72,7 @@
     "iconv-lite": "^0.4.24",
     "inquirer": "^8.2.6",
     "jest": "^29.7.0",
+    "jest-offline": "^1.0.1",
     "langs": "^2.0.0",
     "libxmljs2": "^0.35.0",
     "lodash": "^4.17.21",
