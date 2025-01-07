@@ -15,7 +15,7 @@ describe('channels:parse', () => {
     const cmd =
       'npm run channels:parse --- --config=tests/__data__/input/channels-parse/channels-parse.config.js --output=tests/__data__/output/channels.xml'
     const stdout = execSync(cmd, { encoding: 'utf8' })
-    if (process.env.DEBUG === 'true') console.log(stdout)
+    if (process.env.DEBUG === 'true') console.log(cmd, stdout)
 
     expect(content('tests/__data__/output/channels.xml')).toEqual(
       content('tests/__data__/expected/sites/channels-parse/channels-parse.channels.xml')

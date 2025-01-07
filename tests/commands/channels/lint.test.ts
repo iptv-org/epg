@@ -10,7 +10,7 @@ describe('channels:lint', () => {
     try {
       const cmd = 'npm run channels:lint --- tests/__data__/input/channels-lint/error.channels.xml'
       const stdout = execSync(cmd, { encoding: 'utf8' })
-      if (process.env.DEBUG === 'true') console.log(stdout)
+      if (process.env.DEBUG === 'true') console.log(cmd, stdout)
       process.exit(1)
     } catch (error) {
       expect((error as ExecError).status).toBe(1)
@@ -25,7 +25,7 @@ describe('channels:lint', () => {
       const cmd =
         'npm run channels:lint --- tests/__data__/input/channels-lint/invalid.channels.xml'
       const stdout = execSync(cmd, { encoding: 'utf8' })
-      if (process.env.DEBUG === 'true') console.log(stdout)
+      if (process.env.DEBUG === 'true') console.log(cmd, stdout)
       process.exit(1)
     } catch (error) {
       expect((error as ExecError).status).toBe(1)
@@ -40,7 +40,7 @@ describe('channels:lint', () => {
       const cmd =
         'npm run channels:lint --- tests/__data__/input/channels-lint/error.channels.xml tests/__data__/input/channels-lint/invalid.channels.xml'
       const stdout = execSync(cmd, { encoding: 'utf8' })
-      if (process.env.DEBUG === 'true') console.log(stdout)
+      if (process.env.DEBUG === 'true') console.log(cmd, stdout)
       process.exit(1)
     } catch (error) {
       expect((error as ExecError).status).toBe(1)

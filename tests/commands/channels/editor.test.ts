@@ -8,6 +8,11 @@ type ExecError = {
   stdout: string
 }
 
+let ENV_VAR = 'DATA_DIR=tests/__data__/input/temp/data'
+if (os.platform() === 'win32') {
+  ENV_VAR = 'SET "DATA_DIR=tests/__data__/input/temp/data" &&'
+}
+
 beforeEach(() => {
   fs.emptyDirSync('tests/__data__/output')
   fs.copySync(
@@ -18,16 +23,12 @@ beforeEach(() => {
 
 describe('channels:editor', () => {
   it('shows list of options for a channel', () => {
-    let ENV_VAR = 'DATA_DIR=tests/__data__/input/temp/data'
-    if (os.platform() === 'win32') {
-      ENV_VAR = 'SET "DATA_DIR=tests/__data__/input/temp/data" &&'
-    }
-
     try {
       const cmd = `${ENV_VAR} npm run channels:editor --- tests/__data__/output/channels.xml`
       const stdout = execSync(cmd, { encoding: 'utf8' })
-      if (process.env.DEBUG === 'true') console.log(stdout)
+      if (process.env.DEBUG === 'true') console.log(cmd, stdout)
     } catch (error) {
+      if (process.env.DEBUG === 'true') console.log(cmd, error)
       expect((error as ExecError).status).toBe(1)
       expect((error as ExecError).stdout).toContain('CNN International | CNNInternational.us [new]')
       expect((error as ExecError).stdout).toContain(
