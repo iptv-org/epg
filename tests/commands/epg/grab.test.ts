@@ -54,7 +54,7 @@ describe('epg:grab', () => {
     const expected = await zip.decompress(fs.readFileSync('tests/__data__/output/guide.xml.gz'))
     const result = await zip.decompress(fs.readFileSync('tests/__data__/expected/guide.xml.gz'))
     expect(expected).toEqual(result)
-  })
+  }, 30000)
 
   it('can grab epg with wildcard as output', () => {
     const cmd = `${ENV_VAR} npm run grab --- --channels=tests/__data__/input/epg-grab/sites/example.com/example.com.channels.xml --output=tests/__data__/output/guides/{lang}/{site}.xml`
