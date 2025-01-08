@@ -11,9 +11,7 @@ dayjs.extend(timezone)
 dayjs.extend(utc)
 dayjs.extend(customParseFormat)
 
-doFetch
-  .setCheckResult(false)
-  .setDebugger(debug)
+doFetch.setCheckResult(false).setDebugger(debug)
 
 const tz = 'Asia/Riyadh'
 const defaultHeaders = {
@@ -47,7 +45,7 @@ module.exports = {
           headers: {
             ...defaultHeaders,
             'X-Requested-With': 'XMLHttpRequest',
-            cookie: cookies[channel.lang],
+            cookie: cookies[channel.lang]
           }
         }
         queues.push({ i: item, url, params })
@@ -61,7 +59,7 @@ module.exports = {
   },
   async channels({ lang = 'en' }) {
     const result = await axios
-      .get(`https://rotana.net/api/channels`)
+      .get('https://rotana.net/api/channels')
       .then(response => response.data)
       .catch(console.error)
 
@@ -88,34 +86,37 @@ function parseProgram(item, result) {
               item.description = desc
             }
           }
-          break;
+          break
         case 'Element':
           if (el.name === 'span') {
-            const [k, v] = $(el).text().split(':').map(a => a.trim())
+            const [k, v] = $(el)
+              .text()
+              .split(':')
+              .map(a => a.trim())
             switch (k) {
               case 'Category':
               case 'التصنيف':
-                item.category = v;
-                break;
+                item.category = v
+                break
               case 'Country':
               case 'البلد':
-                item.country = v;
-                break;
+                item.country = v
+                break
               case 'Director':
               case 'المخرج':
-                item.director = v;
-                break;
+                item.director = v
+                break
               case 'Language':
               case 'اللغة':
-                item.language = v;
-                break;
+                item.language = v
+                break
               case 'Release Year':
               case 'سنة الإصدار':
-                item.date = v;
-                break;
+                item.date = v
+                break
             }
           }
-          break;
+          break
       }
     }
   }
@@ -142,7 +143,9 @@ function parseItems(content, date) {
       const heading = top.find('.iq-accordion-title .big-title')
       if (heading.length) {
         const progId = top.attr('id')
-        const title = heading.find('span:eq(1)').text()
+        const title = heading
+          .find('span:eq(1)')
+          .text()
           .split('\n')
           .map(a => a.trim())
           .join(' ')
@@ -151,7 +154,7 @@ function parseItems(content, date) {
         items.push({
           program: progId.substr(progId.indexOf('-') + 1),
           title: title ? title.trim() : title,
-          start: `${y}-${m}-${d} ${time.trim()}`,
+          start: `${y}-${m}-${d} ${time.trim()}`
         })
       }
     }

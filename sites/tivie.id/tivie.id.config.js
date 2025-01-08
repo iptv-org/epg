@@ -11,8 +11,7 @@ dayjs.extend(utc)
 dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
-doFetch
-  .setDebugger(debug)
+doFetch.setDebugger(debug)
 
 const tz = 'Asia/Jakarta'
 
@@ -20,17 +19,14 @@ module.exports = {
   site: 'tivie.id',
   days: 2,
   url({ channel, date }) {
-    return `https://tivie.id/channel/${
-      channel.site_id
-    }/${
-      date.format('YYYYMMDD')
-    }`
+    return `https://tivie.id/channel/${channel.site_id}/${date.format('YYYYMMDD')}`
   },
   async parser({ content, date }) {
     const programs = []
     if (content) {
       const $ = cheerio.load(content)
-      const items = $('ul[x-data] > li[id*="event-"] > div.w-full').toArray()
+      const items = $('ul[x-data] > li[id*="event-"] > div.w-full')
+        .toArray()
         .map(item => {
           const $item = $(item)
           const time = $item.find('div:nth-child(1) span:nth-child(1)')
@@ -47,7 +43,12 @@ module.exports = {
             p.title = parseText(info)
           }
           if (p.title) {
-            const [, , season, episode] = p.title.match(/( S(\d+))?, Ep\. (\d+)/) || [null, null, null, null]
+            const [, , season, episode] = p.title.match(/( S(\d+))?, Ep\. (\d+)/) || [
+              null,
+              null,
+              null,
+              null
+            ]
             if (season) {
               p.season = parseInt(season)
             }
@@ -63,7 +64,7 @@ module.exports = {
         .map(i => {
           const url = i.url
           delete i.url
-          return {i, url}
+          return { i, url }
         })
       if (queues.length) {
         await doFetch(queues, (queue, res) => {
@@ -84,7 +85,11 @@ module.exports = {
         if (i < items.length - 1) {
           items[i].stop = items[i + 1].start
         } else {
-          items[i].stop = dayjs.tz(`${date.add(1, 'd').format('YYYY-MM-DD')} 00:00`, 'YYYY-MM-DD HH:mm', tz)
+          items[i].stop = dayjs.tz(
+            `${date.add(1, 'd').format('YYYY-MM-DD')} 00:00`,
+            'YYYY-MM-DD HH:mm',
+            tz
+          )
         }
       }
       // add programs
@@ -116,13 +121,10 @@ module.exports = {
 }
 
 function parseText($item) {
-  let text = $item.text()
-    .replace(/\t/g, '')
-    .replace(/\n/g, ' ')
-    .trim()
+  let text = $item.text().replace(/\t/g, '').replace(/\n/g, ' ').trim()
   while (true) {
-    if (text.match(/  /)) {
-      text = text.replace(/  /g, ' ')
+    if (text.match(/\s\s/)) {
+      text = text.replace(/\s\s/g, ' ')
       continue
     }
     break

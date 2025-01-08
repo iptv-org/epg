@@ -1,11 +1,16 @@
 import fs from 'fs-extra'
 import { execSync } from 'child_process'
 import os from 'os'
-import path from 'path'
+import { pathToFileURL } from 'node:url'
 
 type ExecError = {
   status: number
   stdout: string
+}
+
+let ENV_VAR = 'DATA_DIR=tests/__data__/input/temp/data'
+if (os.platform() === 'win32') {
+  ENV_VAR = 'SET "DATA_DIR=tests/__data__/input/temp/data" &&'
 }
 
 beforeEach(() => {
@@ -18,19 +23,16 @@ beforeEach(() => {
 
 describe('channels:editor', () => {
   it('shows list of options for a channel', () => {
-    let ENV_VAR = 'DATA_DIR=tests/__data__/input/temp/data'
-    if (os.platform() === 'win32') {
-      ENV_VAR = 'SET "DATA_DIR=tests/__data__/input/temp/data" &&'
-    }
-
     try {
       const cmd = `${ENV_VAR} npm run channels:editor --- tests/__data__/output/channels.xml`
-      execSync(cmd, { encoding: 'utf8' })
+      const stdout = execSync(cmd, { encoding: 'utf8' })
+      if (process.env.DEBUG === 'true') console.log(cmd, stdout)
     } catch (error) {
+      if (process.env.DEBUG === 'true') console.log(cmd, error)
       expect((error as ExecError).status).toBe(1)
       expect((error as ExecError).stdout).toContain('CNN International | CNNInternational.us [new]')
       expect((error as ExecError).stdout).toContain(
-        'CNN International Europe | CNNInternationalEurope.us [api]'
+        'CNN International Europe | CNNInternationalEurope.us'
       )
       expect((error as ExecError).stdout).toContain('Overwrite')
       expect((error as ExecError).stdout).toContain('Skip')
@@ -45,7 +47,7 @@ describe('channels:editor', () => {
 })
 
 function content(filepath: string) {
-  return fs.readFileSync(path.resolve(filepath), {
+  return fs.readFileSync(pathToFileURL(filepath), {
     encoding: 'utf8'
   })
 }

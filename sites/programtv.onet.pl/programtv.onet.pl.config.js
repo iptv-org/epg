@@ -50,7 +50,7 @@ module.exports = {
     $('ul.channelList a').each((i, el) => {
       const name = $(el).text()
       const url = $(el).attr('href')
-      const [, site_id] = url.match(/^\/program\-tv\/(.*)$/i)
+      const [, site_id] = url.match(/^\/program-tv\/(.*)$/i)
 
       channels.push({
         lang: 'pl',

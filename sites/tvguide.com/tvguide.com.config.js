@@ -82,7 +82,10 @@ function parseItems(content) {
 }
 
 async function loadProgramDetails(item) {
-  item.programDetails = item.programDetails.replace('player1-backend-prod-internal.apigee.net', 'internal-prod.apigee.fandom.net')
+  item.programDetails = item.programDetails.replace(
+    'player1-backend-prod-internal.apigee.net',
+    'internal-prod.apigee.fandom.net'
+  )
   const data = await axios
     .get(item.programDetails)
     .then(r => r.data)

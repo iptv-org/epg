@@ -20,10 +20,8 @@ const channel = {
 
 axios.get.mockImplementation(url => {
   const urls = {
-    'https://tivie.id/film/white-house-down-nwzDnwz9nAv6':
-      'program01.html',
-    'https://tivie.id/program/hudson-rex-s6-e14-nwzDnwvBmQr9':
-      'program02.html',
+    'https://tivie.id/film/white-house-down-nwzDnwz9nAv6': 'program01.html',
+    'https://tivie.id/program/hudson-rex-s6-e14-nwzDnwvBmQr9': 'program02.html'
   }
   let data = ''
   if (urls[url] !== undefined) {
@@ -38,9 +36,7 @@ it('can generate valid url', () => {
 
 it('can parse response', async () => {
   const content = fs.readFileSync(path.join(__dirname, '__data__', 'content.html'))
-  const results = (
-    await parser({ date, content, channel })
-  ).map(p => {
+  const results = (await parser({ date, content, channel })).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
     return p
@@ -53,7 +49,8 @@ it('can parse response', async () => {
     title: 'White House Down',
     description:
       'Saat melakukan tur di Gedung Putih bersama putrinya yang masih kecil, seorang perwira polisi beraksi untuk melindungi anaknya dan presiden dari sekelompok penjajah paramiliter bersenjata lengkap.',
-    image: 'https://i0.wp.com/is3.cloudhost.id/tivie/poster/2023/09/65116c78791c2-1695640694.jpg?resize=480,270',
+    image:
+      'https://i0.wp.com/is3.cloudhost.id/tivie/poster/2023/09/65116c78791c2-1695640694.jpg?resize=480,270'
   })
   expect(results[2]).toMatchObject({
     start: '2024-12-30T18:00:00.000Z',
@@ -61,9 +58,10 @@ it('can parse response', async () => {
     title: 'Hudson & Rex S6, Ep. 14',
     description:
       'Saat guru musik Jesse terbunuh di studio rekamannya, Charlie dan Rex menghubungkan kejahatan tersebut dengan pembunuhan yang tampaknya tak ada hubungannya.',
-    image: 'https://i0.wp.com/is3.cloudhost.id/tivie/poster/2024/07/668b7ced47b25-1720417517.jpg?resize=480,270',
+    image:
+      'https://i0.wp.com/is3.cloudhost.id/tivie/poster/2024/07/668b7ced47b25-1720417517.jpg?resize=480,270',
     season: 6,
-    episode: 14,
+    episode: 14
   })
 })
 
@@ -71,7 +69,7 @@ it('can handle empty guide', async () => {
   const results = await parser({
     date,
     channel,
-    content: '',
+    content: ''
   })
   expect(results).toMatchObject([])
 })

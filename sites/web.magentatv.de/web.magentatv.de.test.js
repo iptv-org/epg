@@ -41,7 +41,8 @@ it('can generate valid request data', () => {
     offset: 0,
     properties: [
       {
-        include: 'endtime,genres,id,name,starttime,channelid,pictures,introduce,subName,seasonNum,subNum,cast,country,producedate,externalIds',
+        include:
+          'endtime,genres,id,name,starttime,channelid,pictures,introduce,subName,seasonNum,subNum,cast,country,producedate,externalIds',
         name: 'playbill'
       }
     ],
@@ -78,20 +79,27 @@ it('can parse response', () => {
       sub_title: 'Tritte unter dem Tisch',
       description:
         'Amy arbeitet für eine Weile in Sheldons Universität, er freut sich darüber, doch sie warnt ihn, dass sie sich jetzt häufiger zu Gesicht bekommen. Als Leonard, Sheldon, Raj und Howard zusammen sitzen, diskutieren sie darüber. Sheldon lässt auf sich einreden und informiert Amy, dass er ein Problem mit ihr auf seiner Arbeit hat. Sie ist enttäuscht, während Bernadette mit Howard darüber spricht, warum er auf Sheldon eingeredet hat.',
-      season: "7",
-      episode: "5",
+      season: '7',
+      episode: '5',
       image:
         'http://ngiss.t-online.de/cm1s/media/gracenote/1/0/p10262968_e_h9_ah_2021-10-20T07_16_16.jpg',
       category: ['Sitcom'],
-      directors: ["Mark Cendrowski"],
-      producers: ["Chuck Lorre","Bill Prady","Steven Molaro"],
-      adapters: ["Steven Molaro","Steve Holland","Maria Ferrari","Chuck Lorre","Eric Kaplan","Jim Reynolds"],
+      directors: ['Mark Cendrowski'],
+      producers: ['Chuck Lorre', 'Bill Prady', 'Steven Molaro'],
+      adapters: [
+        'Steven Molaro',
+        'Steve Holland',
+        'Maria Ferrari',
+        'Chuck Lorre',
+        'Eric Kaplan',
+        'Jim Reynolds'
+      ],
       country: 'US',
-      date: "2013-01-01",
+      date: '2013-01-01',
       urls: [
         {
-          system: "imdb",
-          value: "https://www.imdb.com/title/tt0898266"
+          system: 'imdb',
+          value: 'https://www.imdb.com/title/tt0898266'
         }
       ]
     }

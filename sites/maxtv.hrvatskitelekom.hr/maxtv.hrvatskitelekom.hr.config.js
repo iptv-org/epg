@@ -32,7 +32,7 @@ module.exports = {
   async channels() {
     const axios = require('axios')
     const data = await axios
-      .get(`https://player.maxtvtogo.tportal.hr:8082/OTT4Proxy/proxy/epg/channels`)
+      .get('https://player.maxtvtogo.tportal.hr:8082/OTT4Proxy/proxy/epg/channels')
       .then(r => r.data)
       .catch(console.log)
 

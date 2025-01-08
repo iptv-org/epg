@@ -10,7 +10,9 @@ const date = dayjs.utc('2024-11-24').startOf('d')
 const channel = { site_id: '38', xmltv_id: 'AniplusAsia.sg', lang: 'id' }
 
 it('can generate valid url', () => {
-  expect(url({ channel, date })).toBe('https://www.dens.tv/api/dens3/tv/TvChannels/listEpgByDate?date=2024-11-24&id_channel=38&app_type=10')
+  expect(url({ channel, date })).toBe(
+    'https://www.dens.tv/api/dens3/tv/TvChannels/listEpgByDate?date=2024-11-24&id_channel=38&app_type=10'
+  )
 })
 
 it('can parse response', () => {

@@ -5,7 +5,8 @@ module.exports = {
   // I'm not sure what `endDate` represents but they only return 1 day of
   // results, with `endTime`s ocassionally in the following day.
   days: 1,
-  url: ({ date }) => `https://api-web.nhle.com/v1/network/tv-schedule/${date.toJSON().split("T")[0]}`,
+  url: ({ date }) =>
+    `https://api-web.nhle.com/v1/network/tv-schedule/${date.toJSON().split('T')[0]}`,
   parser({ content }) {
     const programs = []
     const items = parseItems(content)
@@ -13,7 +14,7 @@ module.exports = {
       programs.push({
         title: item.title,
         description: item.description === item.title ? undefined : item.description,
-        category: "Sports",
+        category: 'Sports',
         // image: parseImage(item),
         start: parseStart(item),
         stop: parseStop(item)

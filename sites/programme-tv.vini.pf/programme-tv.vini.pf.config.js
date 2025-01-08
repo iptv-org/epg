@@ -51,7 +51,7 @@ module.exports = {
 
     return data.programmes.map(item => {
       const site_id = item.url.replace('/', '')
-      const name = site_id.replace(/\-/gi, ' ')
+      const name = site_id.replace(/-/gi, ' ')
 
       return {
         lang: 'fr',

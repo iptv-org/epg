@@ -15,9 +15,7 @@ const channel = {
 }
 
 it('can generate valid url', () => {
-  expect(url({ channel, date })).toBe(
-    'https://awk.epgsky.com/hawk/linear/schedule/20241214/4086'
-  )
+  expect(url({ channel, date })).toBe('https://awk.epgsky.com/hawk/linear/schedule/20241214/4086')
 })
 
 it('can parse response', () => {

@@ -147,6 +147,7 @@ For scripts to work, you must have [Node.js](https://nodejs.org/en) installed on
 
 To run scripts use the `npm run <script-name>` command.
 
+- `act:check`: allows to test the [check](https://github.com/iptv-org/iptv/blob/master/.github/workflows/check.yml) workflow locally. Depends on [nektos/act](https://github.com/nektos/act).
 - `act:update`: allows to test the [update](https://github.com/iptv-org/iptv/blob/master/.github/workflows/update.yml) workflow locally. Depends on [nektos/act](https://github.com/nektos/act).
 - `api:load`: downloads the latest channels data from the [iptv-org/api](https://github.com/iptv-org/api).
 - `api:generate`: generates a JSON file with all channels for the [iptv-org/api](https://github.com/iptv-org/api) repository.
