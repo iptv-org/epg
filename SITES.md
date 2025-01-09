@@ -28,12 +28,13 @@
     <tr><td><a href="sites/canalplus.com">canalplus.com</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/cgates.lt">cgates.lt</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/chada.ma">chada.ma</a></td><td>🟢</td><td></td></tr>
-    <tr><td><a href="sites/chaines-tv.orange.fr">chaines-tv.orange.fr</a></td><td>🟡</td><td>https://github.com/iptv-org/epg/issues/2395</td></tr>
+    <tr><td><a href="sites/chaines-tv.orange.fr">chaines-tv.orange.fr</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/clickthecity.com">clickthecity.com</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/comteco.com.bo">comteco.com.bo</a></td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2239</td></tr>
     <tr><td><a href="sites/content.astro.com.my">content.astro.com.my</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/cosmotetv.gr">cosmotetv.gr</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/cubmu.com">cubmu.com</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/cyta.com.cy">cyta.com.cy</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/dens.tv">dens.tv</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/digiturk.com.tr">digiturk.com.tr</a></td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2304, https://github.com/iptv-org/epg/issues/2547</td></tr>
     <tr><td><a href="sites/directv.com">directv.com</a></td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2284</td></tr>
@@ -42,7 +43,7 @@
     <tr><td><a href="sites/dishtv.in">dishtv.in</a></td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2445</td></tr>
     <tr><td><a href="sites/dsmart.com.tr">dsmart.com.tr</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/dstv.com">dstv.com</a></td><td>🟢</td><td></td></tr>
-    <tr><td><a href="sites/elcinema.com">elcinema.com</a></td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2541</td></tr>
+    <tr><td><a href="sites/elcinema.com">elcinema.com</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/ena.skylifetv.co.kr">ena.skylifetv.co.kr</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/energeek.cl">energeek.cl</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/entertainment.ie">entertainment.ie</a></td><td>🟢</td><td></td></tr>
@@ -110,6 +111,7 @@
     <tr><td><a href="sites/player.ee.co.uk">player.ee.co.uk</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/playtv.unifi.com.my">playtv.unifi.com.my</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/plex.tv">plex.tv</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/pluto.tv">pluto.tv</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/programacion-tv.elpais.com">programacion-tv.elpais.com</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/programacion.tcc.com.uy">programacion.tcc.com.uy</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/programetv.ro">programetv.ro</a></td><td>🟢</td><td></td></tr>
@@ -141,6 +143,7 @@
     <tr><td><a href="sites/sporttv.pt">sporttv.pt</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/starhubtvplus.com">starhubtvplus.com</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/startimestv.com">startimestv.com</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/stod2.is">stod2.is</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/streamingtvguides.com">streamingtvguides.com</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/superguidatv.it">superguidatv.it</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/taiwanplus.com">taiwanplus.com</a></td><td>🟢</td><td></td></tr>
@@ -198,7 +201,7 @@
     <tr><td><a href="sites/watch.sportsnet.ca">watch.sportsnet.ca</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/watchyour.tv">watchyour.tv</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/wavve.com">wavve.com</a></td><td>🟢</td><td></td></tr>
-    <tr><td><a href="sites/web.magentatv.de">web.magentatv.de</a></td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2555</td></tr>
+    <tr><td><a href="sites/web.magentatv.de">web.magentatv.de</a></td><td>🟡</td><td>https://github.com/iptv-org/epg/issues/2570</td></tr>
     <tr><td><a href="sites/webtv.delta.nl">webtv.delta.nl</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/winplay.co">winplay.co</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/worldfishingnetwork.com">worldfishingnetwork.com</a></td><td>🟢</td><td></td></tr>
