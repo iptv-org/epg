@@ -92,7 +92,7 @@ async function main() {
   }
   logger.info(`  found ${parsedChannels.count()} channel(s)`)
 
-  logger.info(`run:`)
+  logger.info('run:')
   runJob({ logger, parsedChannels })
 }
 
