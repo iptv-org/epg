@@ -1,5 +1,9 @@
 /node_modules/
-/temp
+/temp/
+/.git/
 /.github/
 /.tests/
 /.sites/
+/Dockerfile
+/.dockerignore
+/.gitignore
