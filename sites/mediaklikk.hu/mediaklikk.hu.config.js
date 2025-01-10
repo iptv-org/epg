@@ -56,7 +56,7 @@ function parseStop($item) {
 
   try {
     return dayjs(timeString, 'YYYY-MM-DD HH:mm:ssZZ')
-  } catch (err) {
+  } catch {
     return null
   }
 }

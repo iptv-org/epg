@@ -33,10 +33,10 @@ module.exports = {
 
     return programs
   },
-  async channels({ country, lang }) {
+  async channels() {
     const axios = require('axios')
     const data = await axios
-      .get(`https://streamingtvguides.com/Preferences`)
+      .get('https://streamingtvguides.com/Preferences')
       .then(r => r.data)
       .catch(console.log)
 

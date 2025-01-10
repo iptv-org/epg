@@ -1,7 +1,6 @@
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
-const axios = require('axios')
 
 dayjs.extend(utc)
 dayjs.extend(timezone)

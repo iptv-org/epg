@@ -1,7 +1,7 @@
 import chalk from 'chalk'
 import libxml, { ValidationError } from 'libxmljs2'
 import { program } from 'commander'
-import { Logger, Storage, File } from '@freearhey/core'
+import { Storage, File } from '@freearhey/core'
 
 const xsd = `<?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
@@ -23,26 +23,14 @@ const xsd = `<?xml version="1.0" encoding="UTF-8"?>
   </xs:element>
 </xs:schema>`
 
-program
-  .option(
-    '-c, --channels <path>',
-    'Path to channels.xml file to validate',
-    'sites/**/*.channels.xml'
-  )
-  .parse(process.argv)
-
-const options = program.opts()
+program.argument('[filepath]', 'Path to *.channels.xml files to validate').parse(process.argv)
 
 async function main() {
-  const logger = new Logger()
   const storage = new Storage()
-
-  logger.info('options:')
-  logger.tree(options)
 
   let errors: ValidationError[] = []
 
-  const files: string[] = await storage.list(options.channels)
+  const files = program.args.length ? program.args : await storage.list('sites/**/*.channels.xml')
   for (const filepath of files) {
     const file = new File(filepath)
     if (file.extension() !== 'xml') continue
@@ -51,11 +39,15 @@ async function main() {
 
     let localErrors: ValidationError[] = []
 
-    const xsdDoc = libxml.parseXml(xsd)
-    const doc = libxml.parseXml(xml)
+    try {
+      const xsdDoc = libxml.parseXml(xsd)
+      const doc = libxml.parseXml(xml)
 
-    if (!doc.validate(xsdDoc)) {
-      localErrors = doc.validationErrors
+      if (!doc.validate(xsdDoc)) {
+        localErrors = doc.validationErrors
+      }
+    } catch (error) {
+      localErrors.push(error)
     }
 
     if (localErrors.length) {

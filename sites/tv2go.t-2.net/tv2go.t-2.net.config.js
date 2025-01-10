@@ -109,7 +109,7 @@ function parseItems(content) {
   let data
   try {
     data = JSON.parse(content)
-  } catch (e) {
+  } catch {
     return []
   }
   if (!data || !Array.isArray(data.entries)) return []

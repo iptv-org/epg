@@ -2,7 +2,7 @@ import { Logger, File, Collection, Storage } from '@freearhey/core'
 import { ChannelsParser, XML } from '../../core'
 import { Channel } from 'epg-grabber'
 import { Command } from 'commander'
-import path from 'path'
+import { pathToFileURL } from 'node:url'
 
 const program = new Command()
 program
@@ -26,7 +26,7 @@ async function main() {
   const logger = new Logger()
   const file = new File(options.config)
   const dir = file.dirname()
-  const config = require(path.resolve(options.config))
+  const config = (await import(pathToFileURL(options.config))).default
   const outputFilepath = options.output || `${dir}/${config.site}.channels.xml`
 
   let channels = new Collection()

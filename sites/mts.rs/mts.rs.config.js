@@ -43,7 +43,7 @@ module.exports = {
     const pages = Array.from(Array(totalPages).keys())
     for (let page of pages) {
       const data = await axios
-        .get(`https://mts.rs/oec/epg/program`, {
+        .get('https://mts.rs/oec/epg/program', {
           params: { page, date: dayjs().format('YYYY-MM-DD') },
           headers: {
             'X-Requested-With': 'XMLHttpRequest'
@@ -67,7 +67,7 @@ module.exports = {
 
 async function getTotalPageCount() {
   const data = await axios
-    .get(`https://mts.rs/oec/epg/program`, {
+    .get('https://mts.rs/oec/epg/program', {
       params: { page: 0, date: dayjs().format('YYYY-MM-DD') },
       headers: {
         'X-Requested-With': 'XMLHttpRequest'
@@ -84,8 +84,8 @@ function parseContent(content, channel) {
   let data
   try {
     data = JSON.parse(content)
-  } catch (error) {
-    console.log(error)
+  } catch {
+    return []
   }
   if (!data || !data.channels || !data.channels.length) return null
 

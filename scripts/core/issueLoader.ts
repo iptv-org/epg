@@ -15,10 +15,11 @@ export class IssueLoader {
     if (TESTING) {
       switch (labels) {
         case 'broken guide,status:warning':
-          issues = require('../../tests/__data__/input/issues/broken_guide_warning.js')
+          issues = (await import('../../tests/__data__/input/issues/broken_guide_warning.mjs'))
+            .default
           break
         case 'broken guide,status:down':
-          issues = require('../../tests/__data__/input/issues/broken_guide_down.js')
+          issues = (await import('../../tests/__data__/input/issues/broken_guide_down.mjs')).default
           break
       }
     } else {

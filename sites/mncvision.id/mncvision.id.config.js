@@ -11,9 +11,7 @@ dayjs.extend(utc)
 dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
-doFetch
-  .setCheckResult(false)
-  .setDebugger(debug)
+doFetch.setCheckResult(false).setDebugger(debug)
 
 const languages = { en: 'english', id: 'indonesia' }
 const cookies = {}
@@ -125,7 +123,7 @@ async function parseItems(content, date, cookies) {
       const url = $item.find('a').attr('href')
       const headers = {
         'X-Requested-With': 'XMLHttpRequest',
-        Cookie: cookies,
+        Cookie: cookies
       }
       queues.push({ i: $item, url, params: { headers, timeout } })
     }

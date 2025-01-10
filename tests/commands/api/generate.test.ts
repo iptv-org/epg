@@ -1,6 +1,6 @@
 import { execSync } from 'child_process'
 import fs from 'fs-extra'
-import path from 'path'
+import { pathToFileURL } from 'node:url'
 import os from 'os'
 
 let ENV_VAR = 'SITES_DIR=tests/__data__/input/epg-grab/sites API_DIR=tests/__data__/output'
@@ -16,7 +16,8 @@ beforeEach(() => {
 describe('api:generate', () => {
   it('can generate guides.json', () => {
     const cmd = `${ENV_VAR} npm run api:generate`
-    execSync(cmd, { encoding: 'utf8' })
+    const stdout = execSync(cmd, { encoding: 'utf8' })
+    if (process.env.DEBUG === 'true') console.log(cmd, stdout)
 
     expect(content('tests/__data__/output/guides.json')).toEqual(
       content('tests/__data__/expected/guides.json')
@@ -25,7 +26,7 @@ describe('api:generate', () => {
 })
 
 function content(filepath: string) {
-  return fs.readFileSync(path.resolve(filepath), {
+  return fs.readFileSync(pathToFileURL(filepath), {
     encoding: 'utf8'
   })
 }

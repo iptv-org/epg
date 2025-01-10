@@ -55,7 +55,7 @@ module.exports = {
       .map(function () {
         return {
           lang: 'es',
-          site_id: $(this).attr('alt').replace(/\&/gi, '&amp;'),
+          site_id: $(this).attr('alt').replace(/&/gi, '&amp;'),
           name: $(this).attr('alt')
         }
       })

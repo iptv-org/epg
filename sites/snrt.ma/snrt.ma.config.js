@@ -1,5 +1,4 @@
 const cheerio = require('cheerio')
-const { DateTime } = require('luxon')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
@@ -8,15 +7,6 @@ const customParseFormat = require('dayjs/plugin/customParseFormat')
 dayjs.extend(utc)
 dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
-
-const channel = [{ site_id: '1208', xmltv_id: 'AlAoula.ma', lang: 'ar' },
-                 { site_id: '4069', xmltv_id: 'Laayoune.ma', lang: 'ar' },
-                 { site_id: '4070', xmltv_id: 'Arryadia.ma', lang: 'ar' },
-                 { site_id: '4071', xmltv_id: 'Athaqafia.ma', lang: 'ar' },
-                 { site_id: '4072', xmltv_id: 'AlMaghribia.ma', lang: 'ar' },
-                 { site_id: '4073', xmltv_id: 'Assadissa.ma', lang: 'ar' },
-                 { site_id: '4075', xmltv_id: 'Tamazight.ma', lang: 'ar' }]
-
 
 module.exports = {
   site: 'snrt.ma',
@@ -68,7 +58,7 @@ module.exports = {
 }
 
 function parseStart($item, date) {
-  const timeString  = $item('.grille-time').text().trim()
+  const timeString = $item('.grille-time').text().trim()
   const [hours, minutes] = timeString.split('H').map(Number)
   const formattedTime = `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:00`
 
@@ -76,7 +66,6 @@ function parseStart($item, date) {
 
   return dayjs.tz(dateString, 'YYYY-MM-DD HH:mm:ss', 'Africa/Casablanca')
 }
-
 
 function parseTitle($item) {
   return $item('.program-title-sm').text().trim()
