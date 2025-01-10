@@ -59,9 +59,12 @@ module.exports = {
 
 function parseStart($item, date) {
   const timeString = $item('.grille-time').text().trim()
-  const [hours, minutes] = timeString.split('H').map(Number)
-  const formattedTime = `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:00`
 
+  const [hours, minutes] = timeString.includes('H') 
+    ? timeString.split('H').map(Number) 
+    : timeString.split(':').map(Number)
+
+  const formattedTime = `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:00`
   const dateString = `${date.format('YYYY-MM-DD')} ${formattedTime}`
 
   return dayjs.tz(dateString, 'YYYY-MM-DD HH:mm:ss', 'Africa/Casablanca')
