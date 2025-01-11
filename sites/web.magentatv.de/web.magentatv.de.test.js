@@ -1,17 +1,42 @@
 const { parser, url, request } = require('./web.magentatv.de.config.js')
 const fs = require('fs')
 const path = require('path')
+const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
+
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
+
+jest.mock('axios')
 
 const date = dayjs.utc('2022-03-09', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: '255',
   xmltv_id: '13thStreet.de'
 }
+
+axios.request.mockImplementation(req => {
+  const result = {}
+  if (req.url === 'https://api.prod.sngtv.magentatv.de/EPG/JSON/Authenticate') {
+    Object.assign(result, {
+      headers: {
+        'set-cookie': [
+          'JSESSIONID=2147EBA9C59BCDC33822CFD2764E5C0B; Path=/EPG; HttpOnly; SameSite=None; Secure',
+          'JSESSIONID=2147EBA9C59BCDC33822CFD2764E5C0B; Path=/EPG/; HttpOnly; SameSite=None; Secure',
+          'CSESSIONID=1CF187ABCA12ED1B01ADF84C691048ED; Path=/EPG/; Secure; HttpOnly; SameSite=None',
+          'CSRFSESSION=ea2329ba213271192bffd77c2fa276086a8e828c1a4ee379; Path=/EPG/; SameSite=None; Secure'
+        ] 
+      },
+      data: {
+        csrfToken: '6f678415702493d2c28813747c413aa05c87d8f87ecf05fe'
+      }
+    })
+  }
+
+  return Promise.resolve(result)
+})
 
 it('can generate valid url', () => {
   expect(url).toBe('https://api.prod.sngtv.magentatv.de/EPG/JSON/PlayBillList')
@@ -30,7 +55,6 @@ it('can generate valid request headers', async () => {
   expect(headers.Cookie).toMatch(/JSESSIONID=[\dA-F]+;/i)
   expect(headers.Cookie).toMatch(/CSESSIONID=[\dA-F]+;/i)
   expect(headers.Cookie).toMatch(/CSRFSESSION=[\dA-F]+;/i)
-  expect(headers.Cookie).toMatch(/JSESSIONID=[\dA-F]+;/i)
   expect(headers.X_CSRFTOKEN).toMatch(/[\dA-F]/i)
 })
 
