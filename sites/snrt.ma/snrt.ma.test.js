@@ -4,14 +4,15 @@ const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
 const fs = require('fs')
 const path = require('path')
+
 dayjs.extend(utc)
 dayjs.extend(timezone)
 
-const date = dayjs.utc('2024-12-19', 'YYYY-MM-DD').startOf('d')
-const channel = { site_id: '1208', xmltv_id: 'AlAoula.ma', lang: 'ar' }
+const date = dayjs.utc('2025-01-13', 'YYYY-MM-DD').startOf('d')
+const channel = { site_id: '4075', xmltv_id: 'Tamazight.ma', lang: 'ar' }
 
 it('can generate valid url', () => {
-  expect(url({ channel })).toBe('https://www.snrt.ma/ar/node/1208')
+  expect(url({ channel })).toBe('https://www.snrt.ma/ar/node/4075')
 })
 
 it('can parse response', () => {
@@ -22,12 +23,17 @@ it('can parse response', () => {
     return p
   })
 
+  expect(results.length).toBe(27)
   expect(results[0]).toMatchObject({
-    category: 'القرآن الكريم',
-    description: '',
-    start: '2024-12-19T06:00:00.000Z',
-    stop: '2024-12-19T06:30:00.000Z',
-    title: 'ﺍﻟﺴﻼﻡ ﺍﻟﻮﻃﻨﻲ + ﺍﻟﻘﺮﺁﻥ ﺍﻟﻜﺮﻳﻢ'
+    start: '2025-01-12T23:15:00.000Z',
+    stop: '2025-01-12T23:30:00.000Z',
+    title: 'الموعد الرياضي'
+  })
+  expect(results[26]).toMatchObject({
+    start: '2025-01-13T21:30:00.000Z',
+    stop: '2025-01-13T23:00:00.000Z',
+    title: 'سهرة خاصة براس السنة الامازيغية',
+    category: 'ترفيه'
   })
 })
 
