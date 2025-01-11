@@ -16,8 +16,6 @@ module.exports = {
     items.forEach(item => {
       programs.push({
         title: item.title?.[0]?.value,
-        description: item.desc?.[0]?.value,
-        icon: item.icon?.[0]?.src,
         start: item.start,
         stop: item.stop
       })
