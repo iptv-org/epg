@@ -160,7 +160,7 @@ function getCategories(item) {
 }
 
 function getIcon(item) {
-  return item.icon && item.icon.length ? item.icon[0] : null
+  return item.icon && item.icon.length ? item.icon[0].src : null
 }
 
 function parseItems(content, channel, date) {
