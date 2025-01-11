@@ -139,7 +139,7 @@
     <tr><td><a href="sites/sky.de">sky.de</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/skylife.co.kr">skylife.co.kr</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/skyperfectv.co.jp">skyperfectv.co.jp</a></td><td>🟢</td><td></td></tr>
-    <tr><td><a href="sites/snrt.ma">snrt.ma</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/snrt.ma">snrt.ma</a></td><td>🟡</td><td>https://github.com/iptv-org/epg/issues/2571</td></tr>
     <tr><td><a href="sites/sporttv.pt">sporttv.pt</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/starhubtvplus.com">starhubtvplus.com</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/startimestv.com">startimestv.com</a></td><td>🟢</td><td></td></tr>
