@@ -28,22 +28,29 @@ After that just commit all changes and send a pull request.
 
 ### How to add a new source to the repository?
 
-To do this, you must create a new folder in the [/sites](/sites) with at least 3 files:
+To do this, you will need to create a new folder in the [/sites](/sites) directory with at least 4 files:
 
 <details>
 <summary>example.com.config.js</summary>
 <br>
 
-This file describes what kind of request we need to send to get the guide for a particular channel on a certain date. It also describes how to parse the response.
+This file describes what kind of request we need to send to get the guide for a particular channel on a certain date and how to parse the response.
 
 ```js
 module.exports = {
   site: 'example.com',
-  url: function ({ channel, date }) {
+  url({ channel, date }) {
     return `https://example.com/api/${channel.site_id}/${date.format('YYYY-MM-DD')}`
   },
-  parser: function ({ content }) {
-    return JSON.parse(content)
+  parser({ content }) {
+    try {
+      return JSON.parse(content)
+    } catch {
+      return []
+    }
+  },
+  channels() {
+    return []
   }
 }
 ```
@@ -59,39 +66,51 @@ More detailed instructions for this file can be found here: https://github.com/f
 With this file we can test the previously created config and make sure it works as you expect.
 
 ```js
-const { url, parser } = require('./example.com.config.js')
+const { parser, url } = require('./example.com.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
+const customParseFormat = require('dayjs/plugin/customParseFormat')
+dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
-const date = dayjs.utc('2022-11-18', 'YYYY-MM-DD').startOf('d')
-const channel = { site_id: 'bbc1', xmltv_id: 'BBCOne.uk', lang: 'en' }
+const date = dayjs.utc('2025-01-12', 'YYYY-MM-DD').startOf('d')
+const channel = { site_id: 'bbc1', xmltv_id: 'BBCOne.uk' }
 
 it('can generate valid url', () => {
-  expect(url({ channel, date })).toBe('https://example.com/api/bbc1/2022-11-18')
+  expect(url({ channel, date })).toBe('https://example.com/api/bbc1/2025-01-12')
 })
 
 it('can parse response', () => {
-  const content = `[{"start":"2022-11-18T01:30:00.000Z","stop":"2022-11-18T02:00:00.000Z","title":"Program 1"}]`
+  const content =
+    '[{"title":"Program 1","start":"2025-01-12T00:00:00.000Z","stop":"2025-01-12T00:30:00.000Z"},{"title":"Program 2","start":"2025-01-12T00:30:00.000Z","stop":"2025-01-12T01:00:00.000Z"}]'
+
   const results = parser({ content })
 
-  expect(results).toMatchObject([
-    {
-      start: '2022-11-18T01:30:00.000Z',
-      stop: '2022-11-18T02:00:00.000Z',
-      title: 'Program 1'
-    }
-  ])
+  expect(results.length).toBe(2)
+  expect(results[0]).toMatchObject({
+    title: 'Program 1',
+    start: '2025-01-12T00:00:00.000Z',
+    stop: '2025-01-12T00:30:00.000Z'
+  })
+  expect(results[1]).toMatchObject({
+    title: 'Program 2',
+    start: '2025-01-12T00:30:00.000Z',
+    stop: '2025-01-12T01:00:00.000Z'
+  })
 })
 
 it('can handle empty guide', () => {
-  const results = parser({ content: '' })
+  const result = parser({
+    date,
+    channel,
+    content: ''
+  })
 
-  expect(results).toMatchObject([])
+  expect(result).toMatchObject([])
 })
 ```
 
-To run the tests you can use the following command:
+To run all of these tests use the following command:
 
 ```sh
 npm test --- example.com
@@ -116,15 +135,45 @@ This file contains a list of channels available at the source.
 
 </details>
 
-After creating all the files we can make sure that the guide loads correctly and has no errors using the command:
+<details>
+<summary>readme.md</summary>
+<br>
+
+This file contains instructions on how to use this config.
+
+````
+# example.com
+
+https://example.com
+
+### Download the guide
 
 ```sh
 npm run grab --- --site=example.com
 ```
 
-If the download is successful, the `guide.xml` file with the ready to use program should appear in the root directory.
+### Update channel list
 
-After that, all that remains is to commit all the changes and send a pull request.
+```sh
+npm run channels:parse --- --config=./sites/example.com/example.com.config.js --output=./sites/example.com/example.com.channels.xml
+```
+
+### Test
+
+```sh
+npm test --- example.com
+```
+````
+
+</details>
+
+The fastest way to create all these files is to use the command:
+
+```sh
+npm run sites:init --- example.com
+```
+
+Once you are done working on the config make sure the tests pass, the guide downloads and just send us a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
 
 ## Project Structure
 
