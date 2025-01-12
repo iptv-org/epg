@@ -9,6 +9,7 @@
     "channels:parse": "npx tsx scripts/commands/channels/parse.ts",
     "channels:editor": "npx tsx scripts/commands/channels/editor.ts",
     "channels:validate": "npx tsx scripts/commands/channels/validate.ts",
+    "sites:init": "npx tsx scripts/commands/sites/init.ts",
     "sites:update": "npx tsx scripts/commands/sites/update.ts",
     "grab": "npx tsx scripts/commands/epg/grab.ts",
     "serve": "npx serve",
@@ -29,14 +30,14 @@
     "transform": {
       "^.+\\.(ts|js)$": "@swc/jest"
     },
-    "testRegex": "(tests|sites)/(.*?/)?.*test.(js|ts)$",
+    "testMatch": ["<rootDir>/sites/**/*.test.(js|ts)", "<rootDir>/tests/commands/**/*.test.(js|ts)"],
     "testTimeout": 10000
   },
   "dependencies": {
     "@alex_neo/jest-expect-message": "^1.0.5",
     "@eslint/eslintrc": "^3.2.0",
     "@eslint/js": "^9.17.0",
-    "@freearhey/core": "^0.3.1",
+    "@freearhey/core": "^0.4.0",
     "@freearhey/search-js": "^0.1.1",
     "@ntlab/sfetch": "^1.0.0",
     "@octokit/plugin-paginate-rest": "^11.3.6",
