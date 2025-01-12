@@ -5,7 +5,7 @@ import { Channel } from 'epg-grabber'
 import nodeCleanup from 'node-cleanup'
 import { program } from 'commander'
 import inquirer, { QuestionCollection } from 'inquirer'
-import sj from '@freearhey/search-js'
+import Fuse from 'fuse.js'
 
 program.argument('<filepath>', 'Path to *.channels.xml file to edit').parse(process.argv)
 
@@ -25,15 +25,15 @@ async function main() {
 
   const dataStorage = new Storage(DATA_DIR)
   const channelsContent = await dataStorage.json('channels.json')
-  const channelsIndex = sj.createIndex(channelsContent)
+  const searchIndex = new Fuse(channelsContent, { keys: ['name', 'alt_names'], threshold: 0.4 })
 
   for (const channel of channels.all()) {
     if (channel.xmltv_id) continue
     const question: QuestionCollection = {
       name: 'option',
-      message: `"${channel.name}" (${channel.site_id}):`,
+      message: `Select xmltv_id for "${channel.name}" (${channel.site_id}):`,
       type: 'list',
-      choices: getOptions(channelsIndex, channel),
+      choices: getOptions(searchIndex, channel),
       pageSize: 10
     }
 
@@ -94,8 +94,7 @@ async function getInput(channel: Channel) {
 }
 
 function getOptions(index, channel: Channel) {
-  const query = prepareQuery(channel.name)
-  const similar = index.search(query).map(item => new ApiChannel(item))
+  const similar = index.search(channel.name).map(result => new ApiChannel(result.item))
 
   const variants = new Collection()
   similar.forEach((_channel: ApiChannel) => {
@@ -109,12 +108,4 @@ function getOptions(index, channel: Channel) {
   variants.add('Skip')
 
   return variants.all()
-}
-
-function prepareQuery(channelName: string) {
-  return channelName
-    .replace(/\s(SD|TV|HD|SD\/HD|HDTV)$/i, '')
-    .replace(/(\(|\)|,)/gi, '')
-    .replace(/-/gi, ' ')
-    .replace(/\+/gi, '')
 }

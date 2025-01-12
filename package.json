@@ -30,7 +30,10 @@
     "transform": {
       "^.+\\.(ts|js)$": "@swc/jest"
     },
-    "testMatch": ["<rootDir>/sites/**/*.test.(js|ts)", "<rootDir>/tests/commands/**/*.test.(js|ts)"],
+    "testMatch": [
+      "<rootDir>/sites/**/*.test.(js|ts)",
+      "<rootDir>/tests/commands/**/*.test.(js|ts)"
+    ],
     "testTimeout": 10000
   },
   "dependencies": {
@@ -38,7 +41,6 @@
     "@eslint/eslintrc": "^3.2.0",
     "@eslint/js": "^9.17.0",
     "@freearhey/core": "^0.4.0",
-    "@freearhey/search-js": "^0.1.1",
     "@ntlab/sfetch": "^1.0.0",
     "@octokit/plugin-paginate-rest": "^11.3.6",
     "@octokit/plugin-rest-endpoint-methods": "^13.2.6",
@@ -69,6 +71,7 @@
     "eslint-config-prettier": "^9.0.0",
     "form-data": "^4.0.0",
     "fs-extra": "^10.0.1",
+    "fuse.js": "^7.0.0",
     "glob": "^7.2.0",
     "globals": "^15.14.0",
     "husky": "^9.1.7",
