@@ -47,6 +47,7 @@
     <tr><td><a href="sites/ena.skylifetv.co.kr">ena.skylifetv.co.kr</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/energeek.cl">energeek.cl</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/entertainment.ie">entertainment.ie</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/epg.112114.xyz">epg.112114.xyz</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/firstmedia.com">firstmedia.com</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/flixed.io">flixed.io</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/foxsports.com.au">foxsports.com.au</a></td><td>🟢</td><td></td></tr>
@@ -59,7 +60,7 @@
     <tr><td><a href="sites/hd-plus.de">hd-plus.de</a></td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2173</td></tr>
     <tr><td><a href="sites/horizon.tv">horizon.tv</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/hoy.tv">hoy.tv</a></td><td>🟢</td><td></td></tr>
-    <tr><td><a href="sites/i.mjh.nz">i.mjh.nz</a></td><td>🟡</td><td>https://github.com/iptv-org/epg/issues/2556</td></tr>
+    <tr><td><a href="sites/i.mjh.nz">i.mjh.nz</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/i24news.tv">i24news.tv</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/iltalehti.fi">iltalehti.fi</a></td><td>🟡</td><td>https://github.com/iptv-org/epg/issues/2396</td></tr>
     <tr><td><a href="sites/indihometv.com">indihometv.com</a></td><td>🟢</td><td></td></tr>
@@ -102,9 +103,9 @@
     <tr><td><a href="sites/novasports.gr">novasports.gr</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/nowplayer.now.com">nowplayer.now.com</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/nuevosiglo.com.uy">nuevosiglo.com.uy</a></td><td>🟢</td><td></td></tr>
-    <tr><td><a href="sites/nzxmltv.com">nzxmltv.com</a></td><td>🟡</td><td>https://github.com/iptv-org/epg/issues/2557</td></tr>
+    <tr><td><a href="sites/nzxmltv.com">nzxmltv.com</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/ontvtonight.com">ontvtonight.com</a></td><td>🟢</td><td></td></tr>
-    <tr><td><a href="sites/orangetv.orange.es">orangetv.orange.es</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/orangetv.orange.es">orangetv.orange.es</a></td><td>🟡</td><td>https://github.com/iptv-org/epg/issues/2576</td></tr>
     <tr><td><a href="sites/osn.com">osn.com</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/pbsguam.org">pbsguam.org</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/pickx.be">pickx.be</a></td><td>🟢</td><td></td></tr>
@@ -139,7 +140,7 @@
     <tr><td><a href="sites/sky.de">sky.de</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/skylife.co.kr">skylife.co.kr</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/skyperfectv.co.jp">skyperfectv.co.jp</a></td><td>🟢</td><td></td></tr>
-    <tr><td><a href="sites/snrt.ma">snrt.ma</a></td><td>🟡</td><td>https://github.com/iptv-org/epg/issues/2571</td></tr>
+    <tr><td><a href="sites/snrt.ma">snrt.ma</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/sporttv.pt">sporttv.pt</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/starhubtvplus.com">starhubtvplus.com</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/startimestv.com">startimestv.com</a></td><td>🟢</td><td></td></tr>
@@ -201,7 +202,7 @@
     <tr><td><a href="sites/watch.sportsnet.ca">watch.sportsnet.ca</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/watchyour.tv">watchyour.tv</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/wavve.com">wavve.com</a></td><td>🟢</td><td></td></tr>
-    <tr><td><a href="sites/web.magentatv.de">web.magentatv.de</a></td><td>🟡</td><td>https://github.com/iptv-org/epg/issues/2570</td></tr>
+    <tr><td><a href="sites/web.magentatv.de">web.magentatv.de</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/webtv.delta.nl">webtv.delta.nl</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/winplay.co">winplay.co</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/worldfishingnetwork.com">worldfishingnetwork.com</a></td><td>🟢</td><td></td></tr>
