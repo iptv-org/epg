@@ -16,15 +16,15 @@ if (os.platform() === 'win32') {
 beforeEach(() => {
   fs.emptyDirSync('tests/__data__/output')
   fs.copySync(
-    'tests/__data__/input/channels-editor/channels-editor.channels.xml',
+    'tests/__data__/input/channels-edit/example.com.channels.xml',
     'tests/__data__/output/channels.xml'
   )
 })
 
-describe('channels:editor', () => {
+describe('channels:edit', () => {
   it('shows list of options for a channel', () => {
     try {
-      const cmd = `${ENV_VAR} npm run channels:editor --- tests/__data__/output/channels.xml`
+      const cmd = `${ENV_VAR} npm run channels:edit --- tests/__data__/output/channels.xml`
       const stdout = execSync(cmd, { encoding: 'utf8' })
       if (process.env.DEBUG === 'true') console.log(cmd, stdout)
     } catch (error) {
@@ -40,7 +40,7 @@ describe('channels:editor', () => {
         "File 'tests/__data__/output/channels.xml' successfully saved"
       )
       expect(content('tests/__data__/output/channels.xml')).toEqual(
-        content('tests/__data__/expected/sites/channels-editor/channels-editor.channels.xml')
+        content('tests/__data__/expected/sites/channels-edit/example.com.channels.xml')
       )
     }
   })

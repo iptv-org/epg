@@ -7,7 +7,7 @@
     "api:generate": "npx tsx scripts/commands/api/generate.ts",
     "channels:lint": "npx tsx scripts/commands/channels/lint.ts",
     "channels:parse": "npx tsx scripts/commands/channels/parse.ts",
-    "channels:editor": "npx tsx scripts/commands/channels/editor.ts",
+    "channels:edit": "npx tsx scripts/commands/channels/edit.ts",
     "channels:validate": "npx tsx scripts/commands/channels/validate.ts",
     "sites:init": "npx tsx scripts/commands/sites/init.ts",
     "sites:update": "npx tsx scripts/commands/sites/update.ts",
