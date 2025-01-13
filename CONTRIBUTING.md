@@ -8,12 +8,19 @@
 
 ### How to add a channel to the guide?
 
-Open the [/sites](/sites) folder and select the source that you know has the guide for the channel you want.
+First, select a site from the [SITES.md](SITES.md) that you know has a guide for the channel you need. Then go to the folder with its config and open the file `*.channels.xml`.
 
-Then in the selected folder open the file `*.channels.xml` and add to it:
+Check the channel list and make sure that the channel you want is in it and that it has the correct `xmltv_id`. The full list of supported channels and their IDs can be found at [iptv-org.github.io](https://iptv-org.github.io/). If the channel is not in our database yet, you can add it to it through this [form](https://github.com/iptv-org/database/issues/new?assignees=&labels=channels%3Aadd&projects=&template=__channels_add.yml&title=Add%3A+).
+
+If the desired channel is not in `*.channels.xml`, just add a new line with its description to it:
 
 ```xml
-<channel site="SITE" lang="LANGUAGE_CODE" xmltv_id="CHANNEL_ID" site_id="SITE_ID">CHANNEL_NAME</channel>
+<?xml version="1.0" encoding="UTF-8"?>
+<channels>
+  ...
+  <channel site="SITE" lang="LANGUAGE_CODE" xmltv_id="CHANNEL_ID" site_id="SITE_ID">CHANNEL_NAME</channel>
+  ...
+</channels>
 ```
 
 | Attribute     | Description                                                                                                                                                        | Example       |
@@ -22,9 +29,33 @@ Then in the selected folder open the file `*.channels.xml` and add to it:
 | LANGUAGE_CODE | Language of the guide ([ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) code).                                                                   | `en`          |
 | CHANNEL_ID    | Channel ID from [iptv-org/database](https://github.com/iptv-org/database). A complete list of supported channels can also be found at https://iptv-org.github.io/. | `BBCOne.uk`   |
 | SITE_ID       | Unique ID of the channel used in the source.                                                                                                                       | `bbc1`        |
-| CHANNEL_NAME  | Name of the channel used in the source.                                                                                                                            | `BBC 1`       |
+| CHANNEL_NAME  | Name of the channel used in the source.                                                                                                                            | `BBC One`     |
 
-After that just commit all changes and send a pull request.
+After that just [commit](https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/about-commits) all changes and send a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
+
+### How to map the channels?
+
+In order for the guides to be linked with playlists from [iptv-org/iptv](https://github.com/iptv-org/iptv) and also with our other projects, each channel must have the same ID in the description as in our [iptv-org/database](https://github.com/iptv-org/database).
+
+To check this, select one of the sites in the [SITES.md](SITES.md), open its `*.channels.xml` file and check that all channels have a valid `xmltv_id`. If it is missing somewhere, just copy the matching ID from the [iptv-org.github.io](https://iptv-org.github.io/). If the channel is not in our database yet, you can add it to it through this [form](https://github.com/iptv-org/database/issues/new?assignees=&labels=channels%3Aadd&projects=&template=__channels_add.yml&title=Add%3A+).
+
+If the `*.channels.xml` file contains many channels without `xmltv_id`, you can speed up the process by running the command in the [Console](https://en.wikipedia.org/wiki/Windows_Console) (or [Terminal](<https://en.wikipedia.org/wiki/Terminal_(macOS)>) if you have macOS):
+
+```sh
+npm run channels:edit path/to/channels.xml
+```
+
+This way, you can map channels by simply selecting the proper ID from the list:
+
+```sh
+? Select xmltv_id for "BBC One" (bbc1): (Use arrow keys)
+❯ BBC One (BBC1, BBC Television, BBC Television Service) | BBCOne.uk
+  BBC One HD | BBCOneHD.uk
+  Type...
+  Skip
+```
+
+Once complete, [commit](https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/about-commits) all changes and send a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
 
 ### How to add a new source to the repository?
 
@@ -48,9 +79,6 @@ module.exports = {
     } catch {
       return []
     }
-  },
-  channels() {
-    return []
   }
 }
 ```
@@ -129,7 +157,7 @@ This file contains a list of channels available at the source.
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
 <channels>
- <channel site="example.com" lang="en" xmltv_id="BBCOne.uk" site_id="bbc1">BBC 1</channel>
+  <channel site="example.com" lang="en" xmltv_id="BBCOne.uk" site_id="bbc1">BBC One</channel>
 </channels>
 ```
 
@@ -152,12 +180,6 @@ https://example.com
 npm run grab --- --site=example.com
 ```
 
-### Update channel list
-
-```sh
-npm run channels:parse --- --config=./sites/example.com/example.com.config.js --output=./sites/example.com/example.com.channels.xml
-```
-
 ### Test
 
 ```sh
@@ -173,7 +195,7 @@ The fastest way to create all these files is to use the command:
 npm run sites:init --- example.com
 ```
 
-Once you are done working on the config make sure the tests pass, the guide downloads and just send us a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
+Once you are done working on the config make sure the tests pass, the guide downloads correctly, [commit](https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/about-commits) all changes and send us a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
 
 ## Project Structure
 
@@ -202,8 +224,9 @@ To run scripts use the `npm run <script-name>` command.
 - `api:generate`: generates a JSON file with all channels for the [iptv-org/api](https://github.com/iptv-org/api) repository.
 - `channels:lint`: сhecks the channel lists for syntax errors.
 - `channels:parse`: generates a list of channels based on the site configuration.
-- `channels:editor`: utility for quick channels markup.
+- `channels:edit`: utility for quick channels mapping.
 - `channels:validate`: checks the description of channels for errors.
+- `sites:init`: creates a new site config from the template.
 - `sites:update`: updates the list of sites and their status in [SITES.md](SITES.md).
 - `grab`: downloads a program from a specified source.
 - `serve`: starts the [web server](https://github.com/vercel/serve).
