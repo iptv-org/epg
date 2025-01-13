@@ -1,4 +1,4 @@
-import { Storage, Collection, Dictionary, File, Logger } from '@freearhey/core'
+import { Storage, Collection, Dictionary, File } from '@freearhey/core'
 import { ChannelsParser, ApiChannel } from '../../core'
 import { program } from 'commander'
 import chalk from 'chalk'
@@ -6,15 +6,7 @@ import langs from 'langs'
 import { DATA_DIR } from '../../constants'
 import { Channel } from 'epg-grabber'
 
-program
-  .option(
-    '-c, --channels <path>',
-    'Path to channels.xml file to validate',
-    'sites/**/*.channels.xml'
-  )
-  .parse(process.argv)
-
-const options = program.opts()
+program.argument('[filepath]', 'Path to *.channels.xml files to validate').parse(process.argv)
 
 type ValidationError = {
   type: 'duplicate' | 'wrong_xmltv_id' | 'wrong_lang'
@@ -26,11 +18,6 @@ type ValidationError = {
 }
 
 async function main() {
-  const logger = new Logger()
-
-  logger.info('options:')
-  logger.tree(options)
-
   const parser = new ChannelsParser({ storage: new Storage() })
 
   const dataStorage = new Storage(DATA_DIR)
@@ -39,8 +26,9 @@ async function main() {
 
   let totalFiles = 0
   let totalErrors = 0
+
   const storage = new Storage()
-  const files: string[] = await storage.list(options.channels)
+  const files = program.args.length ? program.args : await storage.list('sites/**/*.channels.xml')
   for (const filepath of files) {
     const file = new File(filepath)
     if (file.extension() !== 'xml') continue
