@@ -40,3 +40,5 @@ jobs:
         if: steps.files.outputs.channels_any_changed == 'true'
         run: |
           npm run channels:lint -- ${{ steps.files.outputs.channels_all_changed_files }}
+          npm run postinstall
+          npm run channels:validate -- ${{ steps.files.outputs.channels_all_changed_files }}
