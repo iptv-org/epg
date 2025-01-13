@@ -107,7 +107,7 @@ module.exports = {
     await doFetch(queues, (url, res) => {
       if (!pages && res.data.total) {
         pages = Math.ceil(res.data.total / pageLimit)
-        while (page <= pages) {
+        while (page < pages) {
           queues.push(f(++page))
         }
       }
