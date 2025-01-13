@@ -1,213 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="dsmart.com.tr" lang="en" xmltv_id="BBCNewsEurope.uk" site_id="50#58d29bb0eefad3db9c6062c6">BBC World News</channel>
-  <channel site="dsmart.com.tr" lang="en" xmltv_id="CNNInternationalEurope.us" site_id="49#58d29bb0eefad3db9c6062b8">CNN International</channel>
-  <channel site="dsmart.com.tr" lang="en" xmltv_id="NBATV.us" site_id="69#58d29bb0eefad3db9c60626e">NBA TV</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="102#58d29bb0eefad3db9c60623c">NR1</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="104#58d29bb0eefad3db9c606245">NR1 Türk</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="105#5c7fda31cfef0b6cb7a578af">Türkçe Müzik</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="106#5c7fda93cfef0b6cb7a5793b">Turkish Silk</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="111#58d29bb0eefad3db9c6062b9">Cartoonito</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="112#58d29bb0eefad3db9c6062b7">Baby TV</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="115#58d29bb0eefad3db9c6062b6">Da Vinci Learning</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="116#6540d968cfef0b02d2dbb177">Moonbug</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="117#5fedddcecfef0b159330996e">Disney Junior</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="123#5e75c6f5cfef0b15938bc9b9">TRT EBA TV İlkokul</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="124#5e75c923cfef0b15938bc9cc">TRT EBA TV Ortaokul</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="125#5e75c9d1cfef0b15938bc9d1">TRT EBA TV Lise</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="126#59dca805cfef0b4d80a47c2c">Vizyon Türk</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="131#59dca8e2cfef0b4d80a47c34">RTV 23</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="135#5df20d44cfef0b19df84668e">Bahartürk</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="139#59dcaaaccfef0b4d80a47d7e">Çifçi TV</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="150#59dcbc42cfef0b4d80a49628">Kanal 16</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="151#5dea10f3cfef0b49bf6de6fa">Kanal 35</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="158#59dcbd54cfef0b4d80a4963a">Uzay TV</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="159#59dcbd97cfef0b4d80a4963e">Kanal 28</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="163#6163ee3dcfef0b1593d572b0">Flash Haber</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="166#5de50035cfef0b49bf6ba4e7">Ege Tv</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="167#59dcbe60cfef0b4d80a4964a">KKTC Kanal T</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="168#59dcbe7dcfef0b4d80a4964c">Yeni Kocaeli TV</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="175#59dcbf24cfef0b4d80a49652">Saudi Quran TV</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="176#59dcbf4acfef0b4d80a49654">Saudi Sunnah TV</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="181#58d29bb0eefad3db9c60624f">NHK World English</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="198#58d29bb0eefad3db9c606247">ATV Turkiye SD</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="206#5d25dbe5cfef0b5761a051db">Test</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="207#5e7865eacfef0b15938c1bb0">TRT EBA TV İlkokul SD</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="208#5e78662ecfef0b15938c1c03">TRT EBA TV Ortaokul SD</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="209#5e7866dfcfef0b15938c1c1b">TRT EBA TV Lise SD</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="210#618bd2bbcfef0b1593e5d42c">45&apos;lik</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="60#61a408d7cfef0b1593ed2812">History Channel</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="63#64edfc67cfef0b02d2c038c5">Tarih Tv</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="64#59dca29fcfef0b4d80a47a61">Nature Escape</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="67#59dca3b2cfef0b4d80a47b77">Fashion TV</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="87#63ecd91acfef0b02d2687aed">SZC</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="89#6486edd4cfef0b02d29f163e">Cadde TV</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="90#6481bce5cfef0b02d29e23d1">Cine 1</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="93#58d29bb0eefad3db9c606231">TRT 3 Spor</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="99#58d29bb0eefad3db9c6062c5">Dream Tv</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="24Kitchen.tr" site_id="53#58d29bb0eefad3db9c60627b">24Kitchen</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="24TV.tr" site_id="33#58d29bb0eefad3db9c60622e">24</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="360.tr" site_id="42#58d29bb0eefad3db9c606236">360</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="A2TV.tr" site_id="165#59dcbe14cfef0b4d80a49646">a2</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="AgroTV.tr" site_id="140#5fa3d0a9cfef0b15930f7742">Agro Tv</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="AHaber.tr" site_id="199#58d29bb0eefad3db9c60625d">A Haber SD</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="AHaber.tr" site_id="34#58d29bb0eefad3db9c60625e">a Haber</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="AkitTV.tr" site_id="91#59dca630cfef0b4d80a47b82">Akit TV</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="AlJazeera.qa" site_id="184#59dcc114cfef0b4d80a49a0a">Al Jazeera Arabic</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="AlJazeeraEnglish.qa" site_id="185#59dcc133cfef0b4d80a49a0c">Al Jazeera English</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="AltasTV.tr" site_id="153#59dcbc79cfef0b4d80a4962c">Altaş TV</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="ANews.tr" site_id="177#59638e5fcfef0b43f0fd31b5">a News</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="APara.tr" site_id="51#5b9fb1eecfef0b35341b7eb7">A Para</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="ASpor.tr" site_id="204#58d29bb0eefad3db9c6062a3">A Spor SD</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="ASpor.tr" site_id="77#58d29bb0eefad3db9c6062b2">a Spor</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="ASTV.tr" site_id="147#59dcbbf3cfef0b4d80a49622">AS TV</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="ATV.tr" site_id="24#58d29bb0eefad3db9c60625f">ATV</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="BBCEarth.tr" site_id="55#58d29bb0eefad3db9c6062bc">BBC Earth</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="BBNTurk.tr" site_id="37#5fd318b4cfef0b15932230d0">BBN Türk</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="BenguturkTV.tr" site_id="129#59cb8a67cfef0b15ae760a92">Bengütürk TV</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="BeyazTV.tr" site_id="39#58d29bb0eefad3db9c606298">Beyaz TV</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="BeykentTV.tr" site_id="154#59dcbc90cfef0b4d80a4962e">Beykent TV</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="BloombergHT.tr" site_id="43#58d29bb0eefad3db9c60623e">Bloomberg HT</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="BRT1.cy" site_id="169#59dcbe9acfef0b4d80a4964e">BRT 1</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="CartoonNetwork.tr" site_id="109#58d29bb0eefad3db9c6062c8">Cartoon Network</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="CemTV.tr" site_id="152#5d2dde88cfef0b39db6ab393">Cem Tv</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="CNNTurk.tr" site_id="205#59dca1f3cfef0b4d80a47a5f">CNN Türk SD</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="CNNTurk.tr" site_id="29#5f2fc688cfef0b1593e08b76">CNN TÜRK</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="CocukSmart.tr" site_id="110#58d29bb0eefad3db9c6062b5">Çocuk Smart</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="DiscoveryChannel.tr" site_id="58#58d29bb0eefad3db9c606248">Discovery</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="DiscoveryScience.tr" site_id="59#58d29bb0eefad3db9c60628e">Discovery Science</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="DisneyChannel.tr" site_id="118#58d29bb0eefad3db9c60626c">Disney Channel</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="DiyanetTV.tr" site_id="186#58d29bb0eefad3db9c606262">Diyanet Tv Sd</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="DiyanetTV.tr" site_id="94#5ac73ebbcfef0b34db533a95">Diyanet Tv</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="DiziSmartMax.tr" site_id="19#58d29bb0eefad3db9c606278">Dizi Smart Max</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="DiziSmartPremium.tr" site_id="16#58d29bb0eefad3db9c60625a">Dizi Smart Premium</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="DMAX.tr" site_id="197#58d29bb0eefad3db9c606246">DMAX SD</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="DMAX.tr" site_id="45#58d29bb0eefad3db9c606282">DMAX</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="DocuBox.nl" site_id="57#58d29bb0eefad3db9c6062be">DocuScreen</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="DreamTurk.tr" site_id="100#58d29bb0eefad3db9c60628d">Dream Türk</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="Ekoturk.tr" site_id="47#5c6e8e0ecfef0b613d9ff782">Ekotürk</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="ESTV.tr" site_id="160#59dcbdaecfef0b4d80a49640">Es TV</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="EuroD.tr" site_id="179#59dcbfdccfef0b4d80a4974a">Euro D</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="Eurosport1.fr" site_id="72#58d29bb0eefad3db9c6062aa">Eurosport</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="Eurosport2.fr" site_id="73#58d29bb0eefad3db9c606281">Eurosport 2</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="EuroStar.tr" site_id="180#59dcc000cfef0b4d80a4974d">Euro Star</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="FastFunBox.nl" site_id="68#58d29bb0eefad3db9c6062bf">GameScreen</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="FBTV.tr" site_id="80#58d29bb0eefad3db9c606235">FB TV</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="FightBox.nl" site_id="78#58d29bb0eefad3db9c6062b4">FightScreen</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="FilmBox.tr" site_id="13#58d29bb0eefad3db9c6062ba">FilmBox</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="Fox.tr" site_id="195#58d29bb0eefad3db9c60623b">FOX SD</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="Fox.tr" site_id="28#58d29bb0eefad3db9c6062a0">FOX</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="FoxCrime.tr" site_id="18#58d29bb0eefad3db9c606268">FOXCRIME</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="FX.us" site_id="17#58d29bb0eefad3db9c606269">FX</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="HaberGlobal.tr" site_id="41#5bac7dedcfef0b02fac035fd">Haber Global</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="HaberturkTV.tr" site_id="192#58d29bb0eefad3db9c606232">Haberturk SD</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="HaberturkTV.tr" site_id="32#58d29bb0eefad3db9c60629d">Haber Türk</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="HalkTV.tr" site_id="161#58d29bb0eefad3db9c606288">Halk TV</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="InsightTV.nl" site_id="66#5dfc6dc2cfef0b201d222aa0">Insight TV</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="KadirgaTV.tr" site_id="128#59dca8b8cfef0b4d80a47c32">Kadırga TV</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="Kanal26.tr" site_id="148#59dcbc08cfef0b4d80a49624">Kanal 26</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="Kanal3.tr" site_id="120#59dca70bcfef0b4d80a47b86">Kanal 3</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="Kanal42.tr" site_id="141#59dcab38cfef0b4d80a47e24">Kanal 42</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="Kanal7.tr" site_id="194#58d29bb0eefad3db9c606239">Kanal 7 SD</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="Kanal7.tr" site_id="26#58d29bb0eefad3db9c60629c">Kanal 7</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="KanalB.tr" site_id="85#58d29bb0eefad3db9c606240">Kanal B</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="KanalD.tr" site_id="187#58d29bb0eefad3db9c60622b">Kanal D SD</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="KanalD.tr" site_id="21#58d29bb0eefad3db9c606258">Kanal D</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="KanalFirat.tr" site_id="134#59dca9ddcfef0b4d80a47c3c">Kanal Fırat</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="KanalV.tr" site_id="137#59dcaa71cfef0b4d80a47c42">Kanal V</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="KardelenTV.tr" site_id="136#5d44406ecfef0b71b1d3885b">Kardelen Tv</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="KoyTV.tr" site_id="138#59dcaa91cfef0b4d80a47d7c">Köy TV</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="KozaTV.tr" site_id="149#59dcbc2fcfef0b4d80a49626">Koza TV</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="KRT.tr" site_id="127#59dca881cfef0b4d80a47c30">KRT</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="LiderHaber.tr" site_id="97#61517908cfef0b1593cd5f9e">Lider Haber</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="LineTV.tr" site_id="130#59b7c231cfef0b07291c2aa2">Line TV</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="LoveNature.ca" site_id="70#5dfc9faacfef0b201d2246b5">Love Nature</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="LuysTV.tr" site_id="133#61605578cfef0b1593d4a81f">Luys Tv</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="MaviKaradenizTV.tr" site_id="155#59dcbc9fcfef0b4d80a49630">Mavi Karadeniz</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="MilyonTV.tr" site_id="121#5c9889b0cfef0b4cffc475b4">Milyon</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="MinikaCocuk.tr" site_id="119#58d29bb0eefad3db9c60626d">Minika Çocuk</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="MinikaGo.tr" site_id="113#58d29bb0eefad3db9c606257">Minika GO</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="MovieSmartClassic.tr" site_id="14#58d29bb0eefad3db9c60629a">MovieSmart Classic</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="MovieSmartPremium.tr" site_id="1#58d29bb0eefad3db9c606290">MovieSmart Premium</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="MovieSmartPremium2.tr" site_id="2#58d29bb0eefad3db9c606291">MovieSmart Premium 2</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="MovieSmartTurk.tr" site_id="15#58d29bb0eefad3db9c606299">MovieSmart Türk</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="NationalGeographic.tr" site_id="61#58d29bb0eefad3db9c6062a4">National Geographic</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="NationalGeographicWild.tr" site_id="62#58d29bb0eefad3db9c6062a5">National Geographic WILD</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="NTV.tr" site_id="30#58d29bb0eefad3db9c60623a">NTV</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="On4TV.tr" site_id="145#5dde8c07cfef0b2f64b09f0e">On4</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="PowerTurkTV.tr" site_id="107#58d29bb0eefad3db9c6062ac">Power Türk</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="PowerTV.tr" site_id="108#58d29bb0eefad3db9c6062b3">Power TV</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="RTRPlaneta.ru" site_id="183#5d25b34fcfef0b75bced8a6e">Rtr Planeta</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="RumeliTV.tr" site_id="157#5d75f3bacfef0b29f5225f0e">Rumeli Tv</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="Russia24.ru" site_id="182#59dcc0d0cfef0b4d80a498cf">Russia-24</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="Sat7Turk.cy" site_id="132#59dca98dcfef0b4d80a47c3a">Sat 7 Türk</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="ShowMax.tr" site_id="88#59dca5fdcfef0b4d80a47b80">ShowMax</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="ShowTV.tr" site_id="188#58d29bb0eefad3db9c60622c">Show TV SD</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="ShowTV.tr" site_id="22#58d29bb0eefad3db9c60629b">Show TV</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="Sinema1001.tr" site_id="11#5fe07f5dcfef0b1593275822">Sinema TV 1001</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="Sinema1002.tr" site_id="12#5fe07f72cfef0b159327585a">Sinema TV 1002</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="Sinema2.tr" site_id="4#5fe07d9fcfef0b1593275754">Sinema TV 2</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="SinemaAile.tr" site_id="7#5fe07e42cfef0b15932757a3">Sinema TV Aile</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="SinemaAile2.tr" site_id="8#5fe07eabcfef0b15932757a6">Sinema TV Aile 2</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="SinemaAksiyon.tr" site_id="5#5fe07dd5cfef0b1593275758">Sinema TV Aksiyon</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="SinemaAksiyon2.tr" site_id="6#5fe07e23cfef0b15932757a1">Sinema TV Aksiyon 2</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="SinemaKomedi.tr" site_id="9#5fe07f29cfef0b1593275800">Sinema TV Comedy</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="SinemaKomedi2.tr" site_id="10#5fe07f45cfef0b159327581f">Sinema TV Comedy 2</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="SinemaTV.tr" site_id="3#5fe07d7acfef0b1593275751">Sinema TV</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="SporSmart.tr" site_id="74#58d29bb0eefad3db9c60628a">Spor Smart</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="SporSmart2.tr" site_id="79#5fcb6bd2cfef0b15931fcdf8">SPOR SMART 2</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="SportsTV.tr" site_id="81#58d29bb0eefad3db9c606296">Sports Tv</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="SSport.tr" site_id="75#5ff5d18bcfef0b1593364e28">S Sport</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="SSport2.tr" site_id="76#5ff5d2c8cfef0b15933651c7">S Sport 2</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="StarTV.tr" site_id="189#58d29bb0eefad3db9c60622d">STAR TV SD</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="StarTV.tr" site_id="23#58d29bb0eefad3db9c606259">Star</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TatlisesTV.tr" site_id="103#644a774dcfef0b02d28abccb">Tatlıses Tv</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TAYTV.tr" site_id="71#59dca4d8cfef0b4d80a47b7a">TAY TV</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="Tele1.tr" site_id="162#59dcbddccfef0b4d80a49642">Tele 1</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TempoTV.tr" site_id="144#61f935e5cfef0b1593123810">Tempo Tv</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="Teve2.tr" site_id="20#58d29bb0eefad3db9c6062a1">teve2</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="Teve2.tr" site_id="203#58d29bb0eefad3db9c60627a">teve2 SD</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TGRTBelgesel.tr" site_id="122#59dca751cfef0b4d80a47b88">TGRT Belgesel</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TGRTEU.tr" site_id="178#59dcbfb6cfef0b4d80a49748">TGRT EU</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TGRTHaber.tr" site_id="44#58d29bb0eefad3db9c60623d">TGRT Haber</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="Tivi6.tr" site_id="142#618bd28fcfef0b1593e5d42a">Tivi6</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TLC.tr" site_id="35#58d29bb0eefad3db9c606238">TLC</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TMB.tr" site_id="101#58d29bb0eefad3db9c606272">TMB</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TRT1.tr" site_id="190#58d29bb0eefad3db9c60622f">TRT 1 SD</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TRT1.tr" site_id="25#58d29bb0eefad3db9c606274">TRT 1</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TRT2.tr" site_id="95#58d29bb0eefad3db9c606263">trt 2</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TRT4K.tr" site_id="174#59dcbee1cfef0b4d80a49650">TRT 4K</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TRTArabi.tr" site_id="173#58d29bb0eefad3db9c606265">TRT Arabi</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TRTAvaz.tr" site_id="172#58d29bb0eefad3db9c60624b">TRT Avaz</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TRTBelgesel.tr" site_id="200#58d29bb0eefad3db9c606264">Trt Belgesel SD</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TRTBelgesel.tr" site_id="65#58d29bb0eefad3db9c6062a8">TRT Belgesel</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TRTCocuk.tr" site_id="114#58d29bb0eefad3db9c606255">TRT Çocuk</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TRTHaber.tr" site_id="191#58d29bb0eefad3db9c606230">TRT Haber SD</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TRTHaber.tr" site_id="31#58d29bb0eefad3db9c606289">TRT Haber</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TRTKurdi.tr" site_id="171#58d29bb0eefad3db9c60624a">TRT Kurdi</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TRTMuzik.tr" site_id="98#58d29bb0eefad3db9c606266">TRT Müzik</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TRTSpor.tr" site_id="201#58d29bb0eefad3db9c606270">Trt Spor SD</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TRTSpor.tr" site_id="82#58d29bb0eefad3db9c6062a9">TRT Spor</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TRTSporYildiz.tr" site_id="83#5da87214cfef0b4df9157780">Trt Spor Yıldız</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TRTTurk.tr" site_id="96#58d29bb0eefad3db9c60624c">TRT Türk</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TRTWorld.tr" site_id="170#58d29bb0eefad3db9c6062cc">TRT World</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TV100.tr" site_id="36#5ccfd6adcfef0b6021816941">Tv 100</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TV4.tr" site_id="84#59dca577cfef0b4d80a47b7c">TV4</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TV5.tr" site_id="92#5bf6b074cfef0b7351c27d14">Tv 5</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TV52.tr" site_id="146#5db29993cfef0b4df918bc9e">Tv 52</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TV8.tr" site_id="193#58d29bb0eefad3db9c606233">TV 8 SD</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TV8.tr" site_id="27#58d29bb0eefad3db9c6062ae">TV8</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TV85.tr" site_id="46#58d29bb0eefad3db9c6062cb">TV 8,5</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TVDen.tr" site_id="143#5975e329cfef0b50e2627904">TV Den</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TVNET.tr" site_id="202#58d29bb0eefad3db9c606276">Tvnet SD</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TVNET.tr" site_id="40#58d29bb0eefad3db9c60629e">TV Net</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="UcanKusTV.tr" site_id="38#58d29bb0eefad3db9c6062b0">Uçankuş TV</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="UlkeTV.tr" site_id="196#58d29bb0eefad3db9c606243">ULKE TV SD</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="UlkeTV.tr" site_id="48#58d29bb0eefad3db9c60629f">Ülke TV</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="UlusalKanal.tr" site_id="86#58d29bb0eefad3db9c606242">Ulusal TV</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="UniversiteTV.tr" site_id="164#65142dbbcfef0b02d2cc14b7">Üniversite Tv</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="VatanTV.tr" site_id="156#59dcbcb5cfef0b4d80a49632">Vatan TV</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="VavTV.tr" site_id="54#6071fb3bcfef0b159373a531">Vav Tv</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="ViasatHistory.tr" site_id="56#58d29bb0eefad3db9c6062bd">Viasat History</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="WomanTV.tr" site_id="52#61f934e2cfef0b1593123808">Woman TV</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="5d25dbe5cfef0b5761a051db">Test</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="58d29bb0eefad3db9c6062b4">CosmoSports</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="58d29bb0eefad3db9c6062ba">FilmScreen</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="58d29bb0eefad3db9c6062bf">Azoomee</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="58d29bb0eefad3db9c606231">TRT 3 Spor</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="58d29bb0eefad3db9c606247">ATV Turkiye SD</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="59dca29fcfef0b4d80a47a61">Nature Escape</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="61a408d7cfef0b1593ed2812">History Channel</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="6540d968cfef0b02d2dbb177">Moonbug</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="66337391cfef0b02d78776c8">Ekol Tv</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="66e7e5cdcfef0b374461c45b">Spor Çoklu Ekran</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="66e7e50dcfef0b374461c36e">Ulusal Çoklu Ekran</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="66e7e54ccfef0b374461c370">Haber Çoklu Ekran</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="" site_id="5e75c923cfef0b15938bc9cc">TRT EBA TV</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="24TV.tr" site_id="58d29bb0eefad3db9c60622e">24</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="360.tr" site_id="58d29bb0eefad3db9c606236">360</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="A2TV.tr" site_id="59dcbe14cfef0b4d80a49646">a2</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="AHaber.tr" site_id="58d29bb0eefad3db9c60625e">a Haber</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="ANews.tr" site_id="59638e5fcfef0b43f0fd31b5">a News</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="APara.tr" site_id="5b9fb1eecfef0b35341b7eb7">A Para</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="ASpor.tr" site_id="58d29bb0eefad3db9c6062b2">a Spor</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="ATV.tr" site_id="58d29bb0eefad3db9c60625f">ATV</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="BabyTV.fr" site_id="58d29bb0eefad3db9c6062b7">Baby TV</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="BBCEarth.tr" site_id="58d29bb0eefad3db9c6062bc">BBC Earth</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="BBCNewsEurope.uk" site_id="58d29bb0eefad3db9c6062c6">BBC World News</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="BeyazTV.tr" site_id="58d29bb0eefad3db9c606298">Beyaz TV</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="BloombergHT.tr" site_id="58d29bb0eefad3db9c60623e">Bloomberg HT</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="Cartoonito.uk" site_id="58d29bb0eefad3db9c6062b9">Cartoonito</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="CartoonNetwork.tr" site_id="58d29bb0eefad3db9c6062c8">Cartoon Network</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="CNBCEurope.uk" site_id="66630f98cfef0b02d797d815">CNBC-e</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="CNNInternationalEurope.us" site_id="58d29bb0eefad3db9c6062b8">CNN International</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="CNNTurk.tr" site_id="59dca1f3cfef0b4d80a47a5f">CNN Türk SD</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="CocukSmart.tr" site_id="58d29bb0eefad3db9c6062b5">Çocuk Smart</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="DaVinci.de" site_id="58d29bb0eefad3db9c6062b6">Da Vinci Learning</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="DiscoveryChannel.tr" site_id="58d29bb0eefad3db9c606248">Discovery</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="DisneyJunior.tr" site_id="5fedddcecfef0b159330996e">Disney Junior</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="DiziSmartMax.tr" site_id="58d29bb0eefad3db9c606278">Dizi Smart Max</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="DiziSmartPremium.tr" site_id="58d29bb0eefad3db9c60625a">Dizi Smart Premium</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="DMAX.tr" site_id="58d29bb0eefad3db9c606282">DMAX</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="DocuBox.nl" site_id="58d29bb0eefad3db9c6062be">DocuScreen</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="DreamTurk.tr" site_id="58d29bb0eefad3db9c6062c5">Dream Tv</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="DreamTurk.tr" site_id="58d29bb0eefad3db9c60628d">Dream Türk</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="Ekoturk.tr" site_id="5c6e8e0ecfef0b613d9ff782">Ekotürk</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="EuroD.tr" site_id="59dcbfdccfef0b4d80a4974a">Euro D</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="Eurosport1.tr" site_id="58d29bb0eefad3db9c6062aa">Eurosport</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="Eurosport2.tr" site_id="58d29bb0eefad3db9c606281">Eurosport 2</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="FashionTVEurope.fr" site_id="59dca3b2cfef0b4d80a47b77">Fashion TV</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="FX.us" site_id="58d29bb0eefad3db9c606269">FX</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="HaberGlobal.tr" site_id="5bac7dedcfef0b02fac035fd">Haber Global</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="HaberturkTV.tr" site_id="58d29bb0eefad3db9c60629d">Haber Türk</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="HTSporTV.tr" site_id="66d839a0cfef0b37445c6db1">HT Spor</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="InvestigationDiscoveryEurope.us" site_id="58d29bb0eefad3db9c60628e">Discovery ID</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="Kanal7.tr" site_id="58d29bb0eefad3db9c60629c">Kanal 7</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="KanalD.tr" site_id="58d29bb0eefad3db9c606258">Kanal D</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="LoveNature.ca" site_id="5dfc9faacfef0b201d2246b5">Love Nature</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="MinikaGo.tr" site_id="58d29bb0eefad3db9c606257">Minika GO</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="MovieSmartClassic.tr" site_id="58d29bb0eefad3db9c60629a">MovieSmart Classic</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="MovieSmartTurk.tr" site_id="58d29bb0eefad3db9c606299">MovieSmart Türk</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="NationalGeographic.tr" site_id="58d29bb0eefad3db9c6062a4">National Geographic</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="NationalGeographicWild.tr" site_id="58d29bb0eefad3db9c6062a5">National Geographic WILD</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="NBATV.us" site_id="58d29bb0eefad3db9c60626e">NBA TV</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="NOWTV.tr" site_id="58d29bb0eefad3db9c6062a0">NOW</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="NTV.tr" site_id="58d29bb0eefad3db9c60623a">NTV</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="ShowTV.tr" site_id="58d29bb0eefad3db9c60629b">Show TV</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="Sinema2.tr" site_id="5fe07d9fcfef0b1593275754">Sinema TV 2</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="Sinema1001.tr" site_id="5fe07f5dcfef0b1593275822">Sinema TV 1001</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="Sinema1002.tr" site_id="5fe07f72cfef0b159327585a">Sinema TV 1002</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="SinemaAile2.tr" site_id="5fe07eabcfef0b15932757a6">Sinema TV Aile 2</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="SinemaAile.tr" site_id="5fe07e42cfef0b15932757a3">Sinema TV Aile</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="SinemaAksiyon2.tr" site_id="5fe07e23cfef0b15932757a1">Sinema TV Aksiyon 2</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="SinemaAksiyon.tr" site_id="5fe07dd5cfef0b1593275758">Sinema TV Aksiyon</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="SinemaKomedi2.tr" site_id="5fe07f45cfef0b159327581f">Sinema TV Comedy 2</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="SinemaKomedi.tr" site_id="5fe07f29cfef0b1593275800">Sinema TV Comedy</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="SinemaTV.tr" site_id="5fe07d7acfef0b1593275751">Sinema TV</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="SozcuTV.tr" site_id="63ecd91acfef0b02d2687aed">SZC</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="SporSmart2.tr" site_id="5fcb6bd2cfef0b15931fcdf8">SPOR SMART 2</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="SporSmart.tr" site_id="58d29bb0eefad3db9c60628a">Spor Smart</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="StarTV.tr" site_id="58d29bb0eefad3db9c606259">Star</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TarihTV.tr" site_id="64edfc67cfef0b02d2c038c5">Tarih Tv</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="Tele1.tr" site_id="59dcbddccfef0b4d80a49642">Tele 1</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="Teve2.tr" site_id="58d29bb0eefad3db9c6062a1">teve2</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TGRTHaber.tr" site_id="58d29bb0eefad3db9c60623d">TGRT Haber</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TLC.tr" site_id="58d29bb0eefad3db9c606238">TLC</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TMB.tr" site_id="58d29bb0eefad3db9c606272">TMB</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TRT1.tr" site_id="58d29bb0eefad3db9c606274">TRT 1</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TRT2.tr" site_id="58d29bb0eefad3db9c606263">trt 2</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TRT4K.tr" site_id="59dcbee1cfef0b4d80a49650">TRT 4K</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TRTAvaz.tr" site_id="58d29bb0eefad3db9c60624b">TRT Avaz</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TRTBelgesel.tr" site_id="58d29bb0eefad3db9c6062a8">TRT Belgesel</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TRTCocuk.tr" site_id="58d29bb0eefad3db9c606255">TRT Çocuk</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TRTHaber.tr" site_id="58d29bb0eefad3db9c606289">TRT Haber</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TRTKurdi.tr" site_id="58d29bb0eefad3db9c60624a">TRT Kurdi</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TRTMuzik.tr" site_id="58d29bb0eefad3db9c606266">TRT Müzik</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TRTSpor.tr" site_id="58d29bb0eefad3db9c6062a9">TRT Spor</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TRTSporYildiz.tr" site_id="5da87214cfef0b4df9157780">Trt Spor Yıldız</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TRTTurk.tr" site_id="58d29bb0eefad3db9c60624c">TRT Türk</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TV4.tr" site_id="59dca577cfef0b4d80a47b7c">TV4</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TV8.tr" site_id="58d29bb0eefad3db9c6062ae">TV8</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TV85.tr" site_id="58d29bb0eefad3db9c6062cb">TV 8,5</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TV100.tr" site_id="5ccfd6adcfef0b6021816941">Tv 100</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TVNET.tr" site_id="58d29bb0eefad3db9c60629e">TV Net</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="UlkeTV.tr" site_id="58d29bb0eefad3db9c60629f">Ülke TV</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="VavTV.tr" site_id="6071fb3bcfef0b159373a531">Vav Tv</channel>
+  <channel site="dsmart.com.tr" lang="tr" xmltv_id="ViasatHistory.tr" site_id="58d29bb0eefad3db9c6062bd">Viasat History</channel>
 </channels>
