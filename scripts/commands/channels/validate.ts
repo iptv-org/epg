@@ -50,9 +50,9 @@ async function main() {
     const bufferBySiteId = new Dictionary()
     const errors: ValidationError[] = []
     parsedChannels.forEach((channel: Channel) => {
-      const bufferSiteId: string = `${channel.site_id}:${channel.lang}`
-      if (bufferBySiteId.missing(bufferSiteId)) {
-        bufferBySiteId.set(bufferSiteId, true)
+      const bufferId: string = channel.site_id
+      if (bufferBySiteId.missing(bufferId)) {
+        bufferBySiteId.set(bufferId, true)
       } else {
         errors.push({ type: 'duplicate', ...channel })
         totalErrors++
@@ -72,16 +72,6 @@ async function main() {
         errors.push({ type: 'wrong_xmltv_id', ...channel })
         totalErrors++
       }
-
-      // if (foundChannel && foundChannel.replacedBy) {
-      //   errors.push({ type: 'replaced', ...channel })
-      //   totalErrors++
-      // }
-
-      // if (foundChannel && foundChannel.closed && !foundChannel.replacedBy) {
-      //   errors.push({ type: 'closed', ...channel })
-      //   totalErrors++
-      // }
     })
 
     if (errors.length) {
