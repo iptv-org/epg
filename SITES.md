@@ -36,7 +36,7 @@
     <tr><td><a href="sites/cubmu.com">cubmu.com</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/cyta.com.cy">cyta.com.cy</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/dens.tv">dens.tv</a></td><td>🟢</td><td></td></tr>
-    <tr><td><a href="sites/digiturk.com.tr">digiturk.com.tr</a></td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2304, https://github.com/iptv-org/epg/issues/2547</td></tr>
+    <tr><td><a href="sites/digiturk.com.tr">digiturk.com.tr</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/directv.com">directv.com</a></td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2284</td></tr>
     <tr><td><a href="sites/directv.com.ar">directv.com.ar</a></td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2339</td></tr>
     <tr><td><a href="sites/directv.com.uy">directv.com.uy</a></td><td>🟢</td><td></td></tr>
@@ -52,9 +52,11 @@
     <tr><td><a href="sites/flixed.io">flixed.io</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/foxsports.com.au">foxsports.com.au</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/foxtel.com.au">foxtel.com.au</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/freeview.co.uk">freeview.co.uk</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/frikanalen.no">frikanalen.no</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/gatotv.com">gatotv.com</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/getafteritmedia.com">getafteritmedia.com</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/gigatv.3bbtv.co.th">gigatv.3bbtv.co.th</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/guida.tv">guida.tv</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/guidatv.sky.it">guidatv.sky.it</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/hd-plus.de">hd-plus.de</a></td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2173</td></tr>
@@ -105,7 +107,7 @@
     <tr><td><a href="sites/nuevosiglo.com.uy">nuevosiglo.com.uy</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/nzxmltv.com">nzxmltv.com</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/ontvtonight.com">ontvtonight.com</a></td><td>🟢</td><td></td></tr>
-    <tr><td><a href="sites/orangetv.orange.es">orangetv.orange.es</a></td><td>🟡</td><td>https://github.com/iptv-org/epg/issues/2576</td></tr>
+    <tr><td><a href="sites/orangetv.orange.es">orangetv.orange.es</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/osn.com">osn.com</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/pbsguam.org">pbsguam.org</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/pickx.be">pickx.be</a></td><td>🟢</td><td></td></tr>
