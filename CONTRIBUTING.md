@@ -10,16 +10,13 @@
 
 First, select a site from the [SITES.md](SITES.md) that you know has a guide for the channel you need. Then go to the folder with its config and open the file `*.channels.xml`.
 
-Check the channel list and make sure that the channel you want is in it and that it has the correct `xmltv_id`. The full list of supported channels and their IDs can be found at [iptv-org.github.io](https://iptv-org.github.io/). If the channel is not in our database yet, you can add it to it through this [form](https://github.com/iptv-org/database/issues/new?assignees=&labels=channels%3Aadd&projects=&template=__channels_add.yml&title=Add%3A+).
-
-If the desired channel is not in `*.channels.xml`, just add a new line with its description to it:
+Make sure that the desired channel is not already in the list. If it is not, simply add its description to the end of the list as shown here:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
   ...
   <channel site="SITE" lang="LANGUAGE_CODE" xmltv_id="CHANNEL_ID" site_id="SITE_ID">CHANNEL_NAME</channel>
-  ...
 </channels>
 ```
 
