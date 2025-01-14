@@ -32,22 +32,20 @@ module.exports = {
     return programs
   },
   async channels() {
-    const buffer = await axios
-      .get('https://iptvx.one/epg/epg_noarch.xml.gz', {
-        responseType: 'arraybuffer'
-      })
+    const data = await axios
+      .get('https://epg.iptvx.one/api/channels.json')
       .then(r => r.data)
       .catch(console.log)
 
-    const data = ungzip(buffer)
-    const decoded = iconv.decode(data, 'utf8')
-    const { channels } = parser.parse(decoded)
+    return data.channels.map(channel => {
+      const [name] = channel.chan_names.split(' • ')
 
-    return channels.map(channel => ({
-      lang: 'ru',
-      site_id: channel.id,
-      name: channel.displayName[0].value
-    }))
+      return {
+        lang: 'ru',
+        site_id: channel.chan_id,
+        name
+      }
+    })
   }
 }
 
