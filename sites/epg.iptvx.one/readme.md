@@ -4,10 +4,16 @@ https://epg.iptvx.one/
 
 ### Download the guide
 
-Windows:
+Windows (Command Prompt):
 
 ```sh
 SET "NODE_OPTIONS=--max-old-space-size=5000" && npm run grab --- --site=epg.iptvx.one
+```
+
+Windows (PowerShell):
+
+```sh
+$env:NODE_OPTIONS="--max-old-space-size=5000"; npm run grab --- --site=epg.iptvx.one
 ```
 
 Linux and macOS:
