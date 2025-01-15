@@ -91,6 +91,7 @@
     "numeral": "^2.0.6",
     "parse-duration": "^1.0.0",
     "pdf-parse": "^1.1.1",
+    "run-script-os": "^1.1.6",
     "serve": "^14.2.4",
     "signale": "^1.4.0",
     "skip-postinstall": "^1.0.0",
@@ -102,8 +103,5 @@
     "tsx": "^4.19.2",
     "unzipit": "^1.4.0",
     "wildcard-match": "^5.1.2"
-  },
-  "devDependencies": {
-    "run-script-os": "^1.1.6"
   }
 }
