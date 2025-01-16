@@ -28,6 +28,9 @@ describe('channels:edit', () => {
       const stdout = execSync(cmd, { encoding: 'utf8' })
       if (process.env.DEBUG === 'true') console.log(cmd, stdout)
       checkStdout(stdout)
+      expect(content('tests/__data__/output/channels.xml')).toEqual(
+        content('tests/__data__/expected/sites/channels-edit/example.com.channels.xml')
+      )
     } catch (error) {
       // NOTE: for Windows only
       if (process.env.DEBUG === 'true') console.log(cmd, error)
