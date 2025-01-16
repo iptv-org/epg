@@ -6,6 +6,18 @@ import nodeCleanup from 'node-cleanup'
 import { program } from 'commander'
 import inquirer, { QuestionCollection } from 'inquirer'
 import Fuse from 'fuse.js'
+import readline from 'readline'
+
+if (process.platform === 'win32') {
+  readline
+    .createInterface({
+      input: process.stdin,
+      output: process.stdout
+    })
+    .on('SIGINT', function () {
+      process.emit('SIGINT')
+    })
+}
 
 program.argument('<filepath>', 'Path to *.channels.xml file to edit').parse(process.argv)
 
