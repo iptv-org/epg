@@ -48,7 +48,7 @@ module.exports = {
   },
   async channels() {
     try {
-      const response = await axios.get(`https://galam.server-api.lfstrm.tv/channels-now`)
+      const response = await axios.get('https://galam.server-api.lfstrm.tv/channels-now')
       return response.data.channels.map(item => {
         return {
           lang: 'kk',

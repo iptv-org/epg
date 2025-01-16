@@ -1,4 +1,4 @@
-const { parser, url, channels } = require('./galamtv.kz.config.js')
+const { parser, url } = require('./galamtv.kz.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -13,7 +13,11 @@ const channel = {
 }
 
 it('can generate valid url', () => {
-  expect(url({ date, channel })).toBe(`https://galam.server-api.lfstrm.tv/channels/${channel.site_id}/programs?period=${date.unix()}:${date.add(1, 'day').unix()}`)
+  expect(url({ date, channel })).toBe(
+    `https://galam.server-api.lfstrm.tv/channels/${
+      channel.site_id
+    }/programs?period=${date.unix()}:${date.add(1, 'day').unix()}`
+  )
 })
 
 it('can parse response', () => {
@@ -21,8 +25,8 @@ it('can parse response', () => {
     programs: [
       {
         metaInfo: {
-          title: "Гимн",
-          description: "Государственный гимн Республики Казахстан"
+          title: 'Гимн',
+          description: 'Государственный гимн Республики Казахстан'
         },
         scheduleInfo: {
           start: 1736470800,
@@ -31,7 +35,7 @@ it('can parse response', () => {
         mediaInfo: {
           thumbnails: [
             {
-              url: "http://galam.server-img.lfstrm.tv:80/image/aHR0cDovL2dhbGFtLmltZy1vcmlnaW5hbHMubGZzdHJtLnR2OjgwL3R2aW1hZ2VzL3RodW1iL2YyNWFmYWY2ZDkzYjU5YjdkMjBiZDNiODhiZjg4NWI0X29yaWcuanBn"
+              url: 'http://galam.server-img.lfstrm.tv:80/image/aHR0cDovL2dhbGFtLmltZy1vcmlnaW5hbHMubGZzdHJtLnR2OjgwL3R2aW1hZ2VzL3RodW1iL2YyNWFmYWY2ZDkzYjU5YjdkMjBiZDNiODhiZjg4NWI0X29yaWcuanBn'
             }
           ]
         }
@@ -51,7 +55,8 @@ it('can parse response', () => {
       stop: '2025-01-10T01:05:00.000Z',
       title: 'Гимн',
       description: 'Государственный гимн Республики Казахстан',
-      image: 'http://galam.server-img.lfstrm.tv:80/image/aHR0cDovL2dhbGFtLmltZy1vcmlnaW5hbHMubGZzdHJtLnR2OjgwL3R2aW1hZ2VzL3RodW1iL2YyNWFmYWY2ZDkzYjU5YjdkMjBiZDNiODhiZjg4NWI0X29yaWcuanBn',
+      image:
+        'http://galam.server-img.lfstrm.tv:80/image/aHR0cDovL2dhbGFtLmltZy1vcmlnaW5hbHMubGZzdHJtLnR2OjgwL3R2aW1hZ2VzL3RodW1iL2YyNWFmYWY2ZDkzYjU5YjdkMjBiZDNiODhiZjg4NWI0X29yaWcuanBn'
     }
   ])
 })
