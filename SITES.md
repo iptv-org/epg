@@ -30,7 +30,6 @@
     <tr><td><a href="sites/chada.ma">chada.ma</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/chaines-tv.orange.fr">chaines-tv.orange.fr</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/clickthecity.com">clickthecity.com</a></td><td>🟢</td><td></td></tr>
-    <tr><td><a href="sites/comteco.com.bo">comteco.com.bo</a></td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2239</td></tr>
     <tr><td><a href="sites/content.astro.com.my">content.astro.com.my</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/cosmotetv.gr">cosmotetv.gr</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/cubmu.com">cubmu.com</a></td><td>🟢</td><td></td></tr>
@@ -41,6 +40,7 @@
     <tr><td><a href="sites/directv.com.ar">directv.com.ar</a></td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2339</td></tr>
     <tr><td><a href="sites/directv.com.uy">directv.com.uy</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/dishtv.in">dishtv.in</a></td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2445</td></tr>
+    <tr><td><a href="sites/dna.fi">dna.fi</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/dsmart.com.tr">dsmart.com.tr</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/dstv.com">dstv.com</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/elcinema.com">elcinema.com</a></td><td>🟢</td><td></td></tr>
@@ -59,7 +59,6 @@
     <tr><td><a href="sites/gigatv.3bbtv.co.th">gigatv.3bbtv.co.th</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/guida.tv">guida.tv</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/guidatv.sky.it">guidatv.sky.it</a></td><td>🟢</td><td></td></tr>
-    <tr><td><a href="sites/hd-plus.de">hd-plus.de</a></td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2173</td></tr>
     <tr><td><a href="sites/horizon.tv">horizon.tv</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/hoy.tv">hoy.tv</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/i.mjh.nz">i.mjh.nz</a></td><td>🟢</td><td></td></tr>
@@ -124,7 +123,6 @@
     <tr><td><a href="sites/programtv.onet.pl">programtv.onet.pl</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/raiplay.it">raiplay.it</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/reportv.com.ar">reportv.com.ar</a></td><td>🟢</td><td></td></tr>
-    <tr><td><a href="sites/rev.bs">rev.bs</a></td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2255</td></tr>
     <tr><td><a href="sites/rotana.net">rotana.net</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/rtb.gov.bn">rtb.gov.bn</a></td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2257</td></tr>
     <tr><td><a href="sites/rthk.hk">rthk.hk</a></td><td>🟢</td><td></td></tr>
@@ -151,6 +149,7 @@
     <tr><td><a href="sites/superguidatv.it">superguidatv.it</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/taiwanplus.com">taiwanplus.com</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/tapdmv.com">tapdmv.com</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/telebilbao.es">telebilbao.es</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/telenet.tv">telenet.tv</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/teliatv.ee">teliatv.ee</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/telkussa.fi">telkussa.fi</a></td><td>🟢</td><td></td></tr>
@@ -160,6 +159,7 @@
     <tr><td><a href="sites/toonamiaftermath.com">toonamiaftermath.com</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/turksatkablo.com.tr">turksatkablo.com.tr</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/tv-programme.telecablesat.fr">tv-programme.telecablesat.fr</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/tv-spored.siol.net">tv-spored.siol.net</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/tv.blue.ch">tv.blue.ch</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/tv.cctv.com">tv.cctv.com</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/tv.dir.bg">tv.dir.bg</a></td><td>🟢</td><td></td></tr>
@@ -189,6 +189,7 @@
     <tr><td><a href="sites/tvireland.ie">tvireland.ie</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/tvmi.mt">tvmi.mt</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/tvmusor.hu">tvmusor.hu</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/tvmustra.hu">tvmustra.hu</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/tvpassport.com">tvpassport.com</a></td><td>🟡</td><td>https://github.com/iptv-org/epg/issues/2272</td></tr>
     <tr><td><a href="sites/tvplus.com.tr">tvplus.com.tr</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/tvprofil.com">tvprofil.com</a></td><td>🟡</td><td>https://github.com/iptv-org/epg/issues/2399</td></tr>
