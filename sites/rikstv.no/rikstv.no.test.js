@@ -14,7 +14,11 @@ const channel = {
 
 describe('rikstv.no Module Tests', () => {
   it('can generate valid url', () => {
-    expect(url({ date, channel })).toBe(`https://play.rikstv.no/api/content-search/1/channel/${channel.site_id}/epg/${date.format('YYYY-MM-DD')}`)
+    expect(url({ date, channel })).toBe(
+      `https://play.rikstv.no/api/content-search/1/channel/${channel.site_id}/epg/${date.format(
+        'YYYY-MM-DD'
+      )}`
+    )
   })
 
   it('can parse response', () => {
@@ -22,7 +26,8 @@ describe('rikstv.no Module Tests', () => {
       {
         seriesName: 'Vakre og ville Oman',
         name: 'Vakre og ville Oman',
-        description: 'Oman er eit arabisk skattkammer av unike habitat og variert dyreliv. Rev, kvalhai, reptil og skjelpadder er blant skapningane du finn her.',
+        description:
+          'Oman er eit arabisk skattkammer av unike habitat og variert dyreliv. Rev, kvalhai, reptil og skjelpadder er blant skapningane du finn her.',
         season: 1,
         episode: 1,
         genres: ['Dokumentar', 'Fakta', 'Natur'],
@@ -44,7 +49,8 @@ describe('rikstv.no Module Tests', () => {
       {
         title: 'Vakre og ville Oman',
         sub_title: 'Vakre og ville Oman',
-        description: 'Oman er eit arabisk skattkammer av unike habitat og variert dyreliv. Rev, kvalhai, reptil og skjelpadder er blant skapningane du finn her.',
+        description:
+          'Oman er eit arabisk skattkammer av unike habitat og variert dyreliv. Rev, kvalhai, reptil og skjelpadder er blant skapningane du finn her.',
         season: 1,
         episode: 1,
         category: ['Dokumentar', 'Fakta', 'Natur'],
