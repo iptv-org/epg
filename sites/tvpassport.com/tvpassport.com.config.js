@@ -31,15 +31,15 @@ module.exports = {
       const duration = parseDuration($item)
       const stop = start.add(duration, 'm')
       let title = parseTitle($item)
-      let sub_title = parseSubTitle($item)
+      let subtitle = parseSubTitle($item)
       if (title === 'Movie') {
-        title = sub_title
-        sub_title = null
+        title = subtitle
+        subtitle = null
       }
 
       programs.push({
         title,
-        sub_title,
+        subtitle,
         description: parseDescription($item),
         image: parseImage($item),
         category: parseCategory($item),
@@ -47,6 +47,7 @@ module.exports = {
         actors: parseActors($item),
         guest: parseGuest($item),
         director: parseDirector($item),
+        year: parseYear($item),
         start,
         stop
       })
@@ -110,11 +111,15 @@ function parseImage($item) {
 }
 
 function parseTitle($item) {
-  return $item('*').data('showname')
+  return $item('*').data('showname').toString()
 }
 
 function parseSubTitle($item) {
-  return $item('*').data('episodetitle')
+  return $item('*').data('episodetitle').toString() || null
+}
+
+function parseYear($item) {
+  return $item('*').data('year').toString() || null
 }
 
 function parseCategory($item) {
