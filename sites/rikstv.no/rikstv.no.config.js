@@ -13,8 +13,10 @@ module.exports = {
     }
   },
   url({ channel, date }) {
-    return `https://play.rikstv.no/api/content-search/1/channel/${channel.site_id}/epg/${date.format('YYYY-MM-DD')}`
-  },  
+    return `https://play.rikstv.no/api/content-search/1/channel/${
+      channel.site_id
+    }/epg/${date.format('YYYY-MM-DD')}`
+  },
   parser: function ({ content }) {
     let data
     try {
@@ -51,22 +53,24 @@ module.exports = {
     return programs
   },
   async channels() {
-  try {
-    const response = await axios.get('https://play.rikstv.no/api/content-search/1/channel?includePrograms=false')
-    if (!response.data || !Array.isArray(response.data)) {
-      console.error('Error: No channels data found')
-      return []
+    try {
+      const response = await axios.get(
+        'https://play.rikstv.no/api/content-search/1/channel?includePrograms=false'
+      )
+      if (!response.data || !Array.isArray(response.data)) {
+        console.error('Error: No channels data found')
+        return []
       }
-    return response.data.map(item => {
-      return {
-        lang: 'no',
-        site_id: item.channelId,
-        name: item.serviceName
+      return response.data.map(item => {
+        return {
+          lang: 'no',
+          site_id: item.channelId,
+          name: item.serviceName
         }
       })
     } catch (error) {
-    console.error('Error fetching channels:', error)
-    return []
+      console.error('Error fetching channels:', error)
+      return []
     }
   }
 }
