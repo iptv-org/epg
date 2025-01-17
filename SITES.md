@@ -48,12 +48,14 @@
     <tr><td><a href="sites/energeek.cl">energeek.cl</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/entertainment.ie">entertainment.ie</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/epg.112114.xyz">epg.112114.xyz</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/epg.iptvx.one">epg.iptvx.one</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/firstmedia.com">firstmedia.com</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/flixed.io">flixed.io</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/foxsports.com.au">foxsports.com.au</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/foxtel.com.au">foxtel.com.au</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/freeview.co.uk">freeview.co.uk</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/frikanalen.no">frikanalen.no</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/galamtv.kz">galamtv.kz</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/gatotv.com">gatotv.com</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/getafteritmedia.com">getafteritmedia.com</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/gigatv.3bbtv.co.th">gigatv.3bbtv.co.th</a></td><td>🟢</td><td></td></tr>
@@ -123,6 +125,7 @@
     <tr><td><a href="sites/programtv.onet.pl">programtv.onet.pl</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/raiplay.it">raiplay.it</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/reportv.com.ar">reportv.com.ar</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/rikstv.no">rikstv.no</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/rotana.net">rotana.net</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/rtb.gov.bn">rtb.gov.bn</a></td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2257</td></tr>
     <tr><td><a href="sites/rthk.hk">rthk.hk</a></td><td>🟢</td><td></td></tr>
@@ -169,6 +172,7 @@
     <tr><td><a href="sites/tv.movistar.com.pe">tv.movistar.com.pe</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/tv.nu">tv.nu</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/tv.post.lu">tv.post.lu</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/tv.sfr.fr">tv.sfr.fr</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/tv.trueid.net">tv.trueid.net</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/tv.yandex.ru">tv.yandex.ru</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/tv.yettel.hu">tv.yettel.hu</a></td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2263</td></tr>
