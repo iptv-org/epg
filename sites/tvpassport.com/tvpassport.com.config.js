@@ -4,6 +4,7 @@ const cheerio = require('cheerio')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
+const doFetch = require('@ntlab/sfetch')
 
 dayjs.extend(utc)
 dayjs.extend(timezone)
@@ -56,33 +57,36 @@ module.exports = {
     return programs
   },
   async channels() {
+    function wait(ms) {
+      return new Promise(resolve => {
+        setTimeout(resolve, ms)
+      })
+    }
+
     const xml = await axios
       .get('https://www.tvpassport.com/sitemap.stations.xml')
       .then(r => r.data)
       .catch(console.error)
 
-    let channels = []
-
     const $ = cheerio.load(xml)
 
     const elements = $('loc').toArray()
+    const queue = elements.map(el => $(el).text())
+    const total = queue.length
 
-    let total = elements.length
     let i = 1
-    for (let el of elements) {
-      const url = $(el).text()
+    const channels = []
+
+    await doFetch(queue, async (url, res) => {
+      if (!res) return
+
       const [, site_id] = url.match(/\/tv-listings\/stations\/(.*)$/)
 
       console.log(`[${i}/${total}]`, url)
 
-      const channelPage = await axios
-        .get(url)
-        .then(r => r.data)
-        .catch(err => console.error(err.message))
+      await wait(1000)
 
-      if (!channelPage) continue
-
-      const $channelPage = cheerio.load(channelPage)
+      const $channelPage = cheerio.load(res)
       const title = $channelPage('meta[property="og:title"]').attr('content')
       const name = title.replace('TV Schedule for ', '')
 
@@ -93,7 +97,7 @@ module.exports = {
       })
 
       i++
-    }
+    })
 
     return channels
   }
