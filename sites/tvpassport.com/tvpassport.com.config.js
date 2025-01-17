@@ -19,6 +19,7 @@ module.exports = {
     )}`
   },
   request: {
+    timeout: 30000,
     headers: {
       Cookie: 'cisession=e49ff13191d6875887193cae9e324b44ef85768d;'
     }
