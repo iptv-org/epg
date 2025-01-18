@@ -9,7 +9,11 @@ module.exports = {
     },
     {
       name: 'grab',
-      script: `npm run grab -- --channels=channels.xml --output=public/guide.xml`,
+      script: process.env.SITE
+        ? `npm run grab -- --site=${process.env.SITE} ${
+            process.env.CLANG ? `--lang=${process.env.CLANG}` : ''
+          }`
+        : 'npm run grab -- --channels=channels.xml --output=public/guide.xml',
       cron_restart: process.env.CRON || null,
       instances: 1,
       watch: false,
