@@ -1,8 +1,11 @@
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
-const axios = require('axios')
+const doFetch = require('@ntlab/sfetch')
+const debug = require('debug')('site:orangetv.orange.es')
 
 dayjs.extend(utc)
+
+doFetch.setDebugger(debug)
 
 const API_PROGRAM_ENDPOINT = 'https://epg.orangetv.orange.es/epg/Smartphone_Android/1_PRO'
 const API_CHANNEL_ENDPOINT =
@@ -14,49 +17,39 @@ module.exports = {
   days: 2,
   request: {
     cache: {
-      ttl: 60 * 60 * 1000 // 1 hour
+      ttl: 24 * 60 * 60 * 1000 // 1 day
     }
   },
-  url({ date }) {
-    return `${API_PROGRAM_ENDPOINT}/${date.format('YYYYMMDD')}_8h_1.json`
+  url({ date, segment = 1 }) {
+    return `${API_PROGRAM_ENDPOINT}/${date.format('YYYYMMDD')}_8h_${segment}.json`
   },
   async parser({ content, channel, date }) {
-    let programs = []
-    let items = parseItems(content, channel)
-    if (!items.length) return programs
-
-    const promises = [
-      axios.get(`${API_PROGRAM_ENDPOINT}/${date.format('YYYYMMDD')}_8h_1.json`),
-      axios.get(`${API_PROGRAM_ENDPOINT}/${date.format('YYYYMMDD')}_8h_2.json`),
-      axios.get(`${API_PROGRAM_ENDPOINT}/${date.format('YYYYMMDD')}_8h_3.json`)
-    ]
-
-    await Promise.allSettled(promises)
-      .then(results => {
-        results.forEach(r => {
-          if (r.status === 'fulfilled') {
-            const parsed = parseItems(r.value.data, channel)
-
-            items = items
-              .filter((item, index) => items.findIndex(oi => oi.id === item.id) === index)
-              .concat(parsed)
+    const programs = []
+    const items = parseItems(content, channel)
+    if (items.length) {
+      const queues = [
+        module.exports.url({ date, segment: 2 }),
+        module.exports.url({ date, segment: 3 })
+      ]
+      await doFetch(queues, (url, res) => {
+        items.push(...parseItems(res, channel))
+      })
+      programs.push(
+        ...items.map(item => {
+          return {
+            title: item.name,
+            sub_title: item.seriesName,
+            description: item.description,
+            category: parseGenres(item),
+            season: item.seriesSeason ? parseInt(item.seriesSeason) : null,
+            episode: item.episodeId ? parseInt(item.episodeId) : null,
+            icon: parseIcon(item),
+            start: dayjs.utc(item.startDate),
+            stop: dayjs.utc(item.endDate)
           }
         })
-      })
-      .catch(console.error)
-
-    items.forEach(item => {
-      programs.push({
-        title: item.name,
-        description: item.description,
-        category: parseGenres(item),
-        season: item.seriesSeason || null,
-        episode: item.episodeId || null,
-        icon: parseIcon(item),
-        start: dayjs.utc(item.startDate) || null,
-        stop: dayjs.utc(item.endDate) || null
-      })
-    })
+      )
+    }
 
     return programs
   },
@@ -65,7 +58,8 @@ module.exports = {
     const data = await axios
       .get(API_CHANNEL_ENDPOINT)
       .then(r => r.data)
-      .catch(console.log)
+      .catch(console.error)
+
     return data.response.map(item => {
       return {
         lang: 'es',
@@ -77,15 +71,12 @@ module.exports = {
 }
 
 function parseIcon(item) {
-  if (item.attachments.length > 0) {
-    const cover = item.attachments.find(i => i.name === 'COVER' || i.name === 'cover')
-
+  if (item.attachments.length) {
+    const cover = item.attachments.find(i => i.name.match(/cover/i))
     if (cover) {
       return `${API_IMAGE_ENDPOINT}${cover.value}`
     }
   }
-
-  return ''
 }
 
 function parseGenres(item) {
@@ -93,16 +84,16 @@ function parseGenres(item) {
 }
 
 function parseItems(content, channel) {
+  const result = []
   const json =
     typeof content === 'string' ? JSON.parse(content) : Array.isArray(content) ? content : []
-
-  if (!Array.isArray(json)) {
-    return []
+  if (Array.isArray(json)) {
+    json
+      .filter(i => i.channelExternalId === channel.site_id)
+      .forEach(i => {
+        result.push(...i.programs)
+      })
   }
 
-  const channelData = json.find(i => i.channelExternalId == channel.site_id)
-
-  if (!channelData) return []
-
-  return channelData.programs
+  return result
 }

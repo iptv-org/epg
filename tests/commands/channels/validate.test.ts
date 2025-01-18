@@ -14,7 +14,7 @@ if (os.platform() === 'win32') {
 describe('channels:validate', () => {
   it('will show a message if the file contains a duplicate', () => {
     try {
-      const cmd = `${ENV_VAR} npm run channels:validate --- --channels=tests/__data__/input/channels-validate/duplicate.channels.xml`
+      const cmd = `${ENV_VAR} npm run channels:validate --- tests/__data__/input/channels-validate/duplicate.channels.xml`
       const stdout = execSync(cmd, { encoding: 'utf8' })
       if (process.env.DEBUG === 'true') console.log(cmd, stdout)
       process.exit(1)
@@ -34,7 +34,7 @@ describe('channels:validate', () => {
 
   it('will show a message if the file contains a channel with wrong xmltv_id', () => {
     try {
-      const cmd = `${ENV_VAR} npm run channels:validate --- --channels=tests/__data__/input/channels-validate/wrong_xmltv_id.channels.xml`
+      const cmd = `${ENV_VAR} npm run channels:validate --- tests/__data__/input/channels-validate/wrong_xmltv_id.channels.xml`
       const stdout = execSync(cmd, { encoding: 'utf8' })
       if (process.env.DEBUG === 'true') console.log(cmd, stdout)
       process.exit(1)

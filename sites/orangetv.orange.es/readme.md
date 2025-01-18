@@ -5,18 +5,20 @@ https://orangetv.orange.es/epg
 ### Download the guide
 
 ```sh
-npm run grab -- --site=orangetv.orange.es
+npm run grab --- --site=orangetv.orange.es
 ```
 
 ### Update channel list
 
 ```sh
-npm run channels:parse -- --config=./sites/orangetv.orange.es/orangetv.orange.es.config.js --output=./sites/orangetv.orange.es/orangetv.orange.es.channels.xml
+npm run channels:parse --- --config=./sites/orangetv.orange.es/orangetv.orange.es.config.js --output=./sites/orangetv.orange.es/orangetv.orange.es.channels.xml
 ```
 
 ### Test
 
-npm test -- orangetv.orange.es
+```sh
+npm test --- orangetv.orange.es
+```
 
 ### Todo
 

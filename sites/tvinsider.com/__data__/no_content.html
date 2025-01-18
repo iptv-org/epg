@@ -1,0 +1,1772 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="//ads.blogherads.com" crossorigin />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+      href="https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0bf8pkAg.woff2"
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+      href="https://fonts.gstatic.com/s/ibmplexsans/v8/zYX9KVElMYYaJe8bpLHnCwDKjQ76AIFsdP3pBms.woff2"
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+      href="https://fonts.gstatic.com/s/ibmplexsanscondensed/v7/Gg8gN4UfRSqiPg7Jn2ZI12V4DCEwkj1E4LVeHY4S7bvspYYnFBq4.woff2"
+    />
+    <style>
+      @font-face {
+        font-family: 'IBMPlexSans';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src:
+          local('IBM Plex Sans'),
+          local('IBMPlexSans'),
+          url(https://fonts.gstatic.com/s/ibmplexsans/v8/zYXgKVElMYYaJe8bpLHnCwDKhdHeFaxOedc.woff2)
+            format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+          U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: 'IBMPlexSans';
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src:
+          local('IBM Plex Sans Medium'),
+          local('IBMPlexSans-Medium'),
+          url(https://fonts.gstatic.com/s/ibmplexsans/v8/zYX9KVElMYYaJe8bpLHnCwDKjSL9AIFsdP3pBms.woff2)
+            format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+          U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: 'IBMPlexSans';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src:
+          local('IBM Plex Sans SemiBold'),
+          local('IBMPlexSans-SemiBold'),
+          url(https://fonts.gstatic.com/s/ibmplexsans/v8/zYX9KVElMYYaJe8bpLHnCwDKjQ76AIFsdP3pBms.woff2)
+            format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+          U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: 'IBMPlexSansCondensed';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src:
+          local('IBM Plex Sans Condensed Bold'),
+          local('IBMPlexSansCond-Bold'),
+          url(https://fonts.gstatic.com/s/ibmplexsanscondensed/v7/Gg8gN4UfRSqiPg7Jn2ZI12V4DCEwkj1E4LVeHY4S7bvspYYnFBq4.woff2)
+            format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+          U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: 'Objet';
+        font-display: swap;
+        src: url('https://www.tvinsider.com/wp-content/themes/tv/fonts/Objet-Regular.woff2')
+          format('woff2');
+        font-weight: 400;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'OpenSans';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src:
+          local('Open Sans Regular'),
+          local('Open-Sans-Regular'),
+          url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0bf8pkAg.woff2)
+            format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+          U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: 'OpenSans';
+        font-style: italic;
+        font-weight: 400;
+        font-display: swap;
+        src:
+          local('Open Sans Italic'),
+          local('Open-Sans-Italic'),
+          url(https://fonts.gstatic.com/s/opensans/v17/mem6YaGs126MiZpBA-UFUK0Zdc1GAK6b.woff2)
+            format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+          U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      /* actually using the semi-bold typeface in the url here */
+      @font-face {
+        font-family: 'OpenSans';
+        font-style: normal;
+        font-weight: bold;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/opensans/v20/mem5YaGs126MiZpBA-UNirkOUuhpKKSTjw.woff2)
+          format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+          U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      @font-face {
+        font-family: 'OpenSans';
+        font-style: italic;
+        font-weight: bold;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/opensans/v20/memnYaGs126MiZpBA-UFUKXGUdhrIqOxjaPX.woff2)
+          format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+          U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+    </style>
+    <link
+      rel="shortcut icon"
+      href="https://www.tvinsider.com/wp-content/themes/tv/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      href="https://www.tvinsider.com/wp-content/themes/tv/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-site-verification" content="u5Ue-P2oV1f9Pq2AURnZ4gpuZ1Nrgcgwn09AmMPLgCE" />
+    <meta name="google-site-verification" content="it2r-MRipevefeCYWkPlW540pNwHDj9JpbST3-LAA-o" />
+    <meta name="pocket-site-verification" content="c2d9d3d73032bf0b0959f31688efb2" />
+    <meta name="google-site-verification" content="FsdlLOvbsiYf4t8sZFZgs9am050TrtgyydB9KbUhYvU" />
+    <meta property="fb:pages" content="112199118797264" />
+    <meta property="fb:app_id" content="2128917200700396" />
+    <meta property="og:site_name" content="TV Insider" />
+    <meta name="theme-color" content="#00aeef" />
+    <meta name="robots" content="max-image-preview:large" />
+    <style>
+      img:is([sizes='auto' i], [sizes^='auto,' i]) {
+        contain-intrinsic-size: 3000px 1500px;
+      }
+    </style>
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="TV Insider &raquo; Feed"
+      href="https://www.tvinsider.com/feed/"
+    />
+    <script
+      type="text/javascript"
+      id="wpp-js"
+      src="https://www.tvinsider.com/wp-content/plugins/wordpress-popular-posts/assets/js/wpp.min.js?ver=7.2.0"
+      data-sampling="1"
+      data-sampling-rate="100"
+      data-api-url="https://www.tvinsider.com/wp-json/wordpress-popular-posts"
+      data-post-id="0"
+      data-token="5a661f22f8"
+      data-lang="0"
+      data-debug="0"
+    ></script>
+    <style id="classic-theme-styles-inline-css" type="text/css">
+      /*! This file is auto-generated */
+      .wp-block-button__link {
+        color: #fff;
+        background-color: #32373c;
+        border-radius: 9999px;
+        box-shadow: none;
+        text-decoration: none;
+        padding: calc(0.667em + 2px) calc(1.333em + 2px);
+        font-size: 1.125em;
+      }
+      .wp-block-file__button {
+        background: #32373c;
+        color: #fff;
+        text-decoration: none;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      id="sheknows-infuse-css"
+      href="https://www.tvinsider.com/wp-content/plugins/sheknows-infuse/public/css/style.css?ver=1.0.42"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="base-style-css"
+      href="https://www.tvinsider.com/wp-content/themes/tv/style.css?ver=1329"
+      type="text/css"
+      media="all"
+    />
+    <script>
+      !(function (o, _name) {
+        ;(o[_name] =
+          o[_name] ||
+          function $() {
+            ;($.q = $.q || []).push(arguments)
+          }),
+          (o[_name].v = o[_name].v || 2)
+        !(function (o, t, e, n, c, a) {
+          function f(n, c) {
+            ;(n = (function (t, e) {
+              try {
+                if (
+                  (e = (t = o.localStorage).getItem('_aQS01ODhGOEZCQjAxRjgyQjdBMzk0MjhGMjItOTAx'))
+                )
+                  return JSON.parse(e).lgk || []
+                if (
+                  (
+                    t.getItem(
+                      decodeURI(
+                        decodeURI('%25%37%36%34%61%256%33%31%2565%25%36%39%255%61%25%37%32%2530')
+                      )
+                    ) || ''
+                  ).split(',')[4] > 0
+                )
+                  return [[_name + '-engaged', 'true']]
+              } catch (n) {}
+            })()) &&
+              typeof n.forEach === e &&
+              (c = o[t].pubads()) &&
+              n.forEach(function (o) {
+                o && o[0] && c.setTargeting(o[0], o[1] || '')
+              })
+          }
+          try {
+            ;((a = o[t] = o[t] || {}).cmd = a.cmd || []),
+              typeof a.pubads === e
+                ? f()
+                : typeof a.cmd.unshift === e
+                ? a.cmd.unshift(f)
+                : a.cmd.push(f)
+          } catch (i) {}
+        })(window, 'googletag', 'function')
+      })(window, decodeURI(decodeURI('a%25%36%34%256d%2569%2572a%25%36%63')))
+      !(function (t, c, i) {
+        ;(i = t.createElement(c)),
+          (t = t.getElementsByTagName(c)[0]),
+          (i.async = 1),
+          (i.src =
+            'https://absentairport.com/chunks/39e8d6d4b4/a216c1cf9d948c6d545180ca42bee3d3b6a0a1.js'),
+          t.parentNode.insertBefore(i, t)
+      })(document, 'script')
+    </script>
+    <script
+      type="text/javascript"
+      src="https://www.tvinsider.com/wp-content/plugins/she-media-cli-script/inc/connatix-player.js?ver=1736973322"
+      id="connatix-js"
+    ></script>
+    <!-- Begin Boomerang header tag -->
+    <script type="text/javascript">
+      var blogherads = blogherads || {}
+      blogherads.adq = blogherads.adq || []
+
+      blogherads.adq.push(function () {
+        if (blogherads.setADmantXData) {
+          blogherads.setADmantXData(null, 'not_ready')
+        }
+      })
+    </script>
+    <script
+      type="text/javascript"
+      async="async"
+      data-cfasync="false"
+      src="https://ads.blogherads.com/static/blogherads.js"
+    ></script>
+    <script
+      type="text/javascript"
+      async="async"
+      data-cfasync="false"
+      src="https://ads.blogherads.com/sk/12/122/1228136/26554/header.js"
+    ></script>
+    <!-- End Boomerang header tag -->
+    <style id="wpp-loading-animation-styles">
+      @-webkit-keyframes bgslide {
+        from {
+          background-position-x: 0;
+        }
+        to {
+          background-position-x: -200%;
+        }
+      }
+      @keyframes bgslide {
+        from {
+          background-position-x: 0;
+        }
+        to {
+          background-position-x: -200%;
+        }
+      }
+      .wpp-widget-block-placeholder,
+      .wpp-shortcode-placeholder {
+        margin: 0 auto;
+        width: 60px;
+        height: 3px;
+        background: #dd3737;
+        background: linear-gradient(90deg, #dd3737 0%, #571313 10%, #dd3737 100%);
+        background-size: 200% auto;
+        border-radius: 3px;
+        -webkit-animation: bgslide 1s infinite linear;
+        animation: bgslide 1s infinite linear;
+      }
+    </style>
+
+    <title>404 - TV Insider</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+      defer
+      src="https://cmp.osano.com/16BcscRpZUDCE2Y0Z/31c52822-b314-450c-9a60-45b2cd6ac22e/osano.js"
+    ></script>
+    <script defer src="https://www.tvinsider.com/wp-content/themes/tv/js/lity.min.js"></script>
+
+    <!-- Pure Visibility -->
+    <script>
+      ;(function (w, d, t, r, u) {
+        var f, n, i
+        ;(w[u] = w[u] || []),
+          (f = function () {
+            var o = { ti: '5524914', enableAutoSpaTracking: true }
+            ;(o.q = w[u]), (w[u] = new UET(o)), w[u].push('pageLoad')
+          }),
+          (n = d.createElement(t)),
+          (n.src = r),
+          (n.async = 1),
+          (n.onload = n.onreadystatechange =
+            function () {
+              var s = this.readyState
+              ;(s && s !== 'loaded' && s !== 'complete') ||
+                (f(), (n.onload = n.onreadystatechange = null))
+            }),
+          (i = d.getElementsByTagName(t)[0]),
+          i.parentNode.insertBefore(n, i)
+      })(window, document, 'script', '//bat.bing.com/bat.js', 'uetq')
+    </script>
+  </head>
+  <body class="error404">
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return
+        n = f.fbq = function () {
+          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        }
+        if (!f._fbq) f._fbq = n
+        n.push = n
+        n.loaded = !0
+        n.version = '2.0'
+        n.queue = []
+        t = b.createElement(e)
+        t.async = !0
+        t.src = v
+        s = b.getElementsByTagName(e)[0]
+        s.parentNode.insertBefore(t, s)
+      })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js')
+      fbq('init', '2150724991788914')
+      fbq('track', 'PageView')
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=2150724991788914&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!-- SHEMEDIA ADS Begin Desktop Adhesion ad -->
+    <script type="text/javascript">
+      blogherads.adq.push('frame2')
+    </script>
+
+    <header id="header">
+      <nav class="top-nav">
+        <a href="/search/">Search</a> <span>•</span> <a href="/shop/">Shop</a> <span>•</span>
+        <a href="/tv-games-puzzles-quizzes/">Games</a> <span>•</span>
+        <a href="/shows/calendar/">Calendar</a> <span>•</span>
+        <a href="/newsletter-subscription/">Newsletters</a> <span>•</span>
+        <a href="/lists/">Lists</a> <span>•</span> <a href="/trailers/">Trailers</a> <span>•</span>
+        <a href="/login/">Login</a>
+      </nav>
+      <div class="logo">
+        <button href="" aria-label="Navigation" id="hamburger-button"></button>
+        <a href="https://www.tvinsider.com/"
+          ><img
+            width="400"
+            height="74"
+            src="https://www.tvinsider.com/wp-content/themes/tv/images/tvinsider-logo-horizontal-white.svg"
+            alt="TV Insider Logo"
+        /></a>
+      </div>
+      <nav class="nav">
+        <ul id="menu-new-menu" class="menu">
+          <li
+            id="menu-item-1105701"
+            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1105701"
+          >
+            <a href="https://www.tvinsider.com/shows/">Shows</a>
+            <div class="subnav">
+              <div class="menu-top25">
+                <a href="/shows/"
+                  ><img
+                    loading="lazy"
+                    alt="Top 25 Shows"
+                    width="180"
+                    height="82"
+                    src="https://www.tvinsider.com/wp-content/themes/tv/images/top-25-shows1.png"
+                /></a>
+                <ol>
+                  <li><a href="/show/severance/">Severance</a></li>
+                  <li><a href="/show/the-couple-next-door/">The Couple Next Door</a></li>
+                  <li><a href="/show/hollywood-squares-2025/">Hollywood Squares</a></li>
+                  <li><a href="/show/the-pitt/">The Pitt</a></li>
+                  <li><a href="/show/back-in-action/">Back In Action</a></li>
+                  <li>
+                    <a href="/show/law-order-special-victims-unit/"
+                      >Law &amp; Order: Special Victims Unit</a
+                    >
+                  </li>
+                  <li><a href="/show/xo-kitty/">XO, Kitty</a></li>
+                  <li><a href="/show/the-rookie/">The Rookie</a></li>
+                  <li><a href="/show/unstoppable-2025/">Unstoppable</a></li>
+                  <li>
+                    <a href="/show/diddy-the-making-of-a-bad-boy/"
+                      >Diddy: The Making of a Bad Boy</a
+                    >
+                  </li>
+                </ol>
+                <a class="basic-button" href="https://www.tvinsider.com/shows/">Full List</a>
+              </div>
+              <ul class="menu-networks">
+                <li class="network">
+                  <a
+                    href="https://www.tvinsider.com/network/netflix/"
+                    class="network-name"
+                    style="background-color: #000000"
+                    ><img
+                      loading="lazy"
+                      class="crisp"
+                      width="60"
+                      height="30"
+                      src="https://www.tvinsider.com/wp-content/uploads/2022/07/netflix.png"
+                      alt="Netflix"
+                  /></a>
+                  <ul>
+                    <li
+                      id="menu-item-1147714"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147714"
+                    >
+                      <a href="https://www.tvinsider.com/show/emily-in-paris/">Emily in Paris</a>
+                    </li>
+                    <li
+                      id="menu-item-1147715"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147715"
+                    >
+                      <a href="https://www.tvinsider.com/show/love-is-blind-uk/"
+                        >Love Is Blind: UK</a
+                      >
+                    </li>
+                    <li
+                      id="menu-item-1147717"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147717"
+                    >
+                      <a href="https://www.tvinsider.com/show/cobra-kai/">Cobra Kai</a>
+                    </li>
+                    <li
+                      id="menu-item-1147718"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147718"
+                    >
+                      <a href="https://www.tvinsider.com/show/that-90s-show/"
+                        >That &#8217;90s Show</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="network">
+                  <a
+                    href="https://www.tvinsider.com/network/hulu/"
+                    class="network-name"
+                    style="background-color: #38ce7f"
+                    ><img
+                      loading="lazy"
+                      class="crisp"
+                      width="60"
+                      height="30"
+                      src="https://www.tvinsider.com/wp-content/uploads/2022/07/hulu.png"
+                      alt="Hulu"
+                  /></a>
+                  <ul>
+                    <li
+                      id="menu-item-1147723"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147723"
+                    >
+                      <a href="https://www.tvinsider.com/show/tell-me-lies/">Tell Me Lies</a>
+                    </li>
+                    <li
+                      id="menu-item-1147721"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147721"
+                    >
+                      <a href="https://www.tvinsider.com/show/reasonable-doubt-2022/"
+                        >Reasonable Doubt</a
+                      >
+                    </li>
+                    <li
+                      id="menu-item-1147722"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147722"
+                    >
+                      <a href="https://www.tvinsider.com/show/only-murders-in-the-building/"
+                        >Only Murders in the Building</a
+                      >
+                    </li>
+                    <li
+                      id="menu-item-1147724"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147724"
+                    >
+                      <a href="https://www.tvinsider.com/show/the-handmaids-tale/"
+                        >The Handmaid&#8217;s Tale</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="network">
+                  <a
+                    href="https://www.tvinsider.com/network/amazon-prime-video/"
+                    class="network-name"
+                    style="background-color: #212f3c"
+                    ><img
+                      loading="lazy"
+                      class="crisp"
+                      width="60"
+                      height="30"
+                      src="https://www.tvinsider.com/wp-content/uploads/2022/07/prime-video.png"
+                      alt="Prime Video"
+                  /></a>
+                  <ul>
+                    <li
+                      id="menu-item-1147725"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147725"
+                    >
+                      <a
+                        href="https://www.tvinsider.com/show/the-lord-of-the-rings-the-rings-of-power/"
+                        >The Lord of the Rings: The Rings of Power</a
+                      >
+                    </li>
+                    <li
+                      id="menu-item-1147726"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147726"
+                    >
+                      <a href="https://www.tvinsider.com/show/the-boys/">The Boys</a>
+                    </li>
+                    <li
+                      id="menu-item-1147727"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147727"
+                    >
+                      <a href="https://www.tvinsider.com/show/my-lady-jane/">My Lady Jane</a>
+                    </li>
+                    <li
+                      id="menu-item-1147728"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147728"
+                    >
+                      <a href="https://www.tvinsider.com/show/the-legend-of-vox-machina/"
+                        >The Legend of Vox Machina</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="network">
+                  <a
+                    href="https://www.tvinsider.com/network/max/"
+                    class="network-name"
+                    style="background-color: #003af0"
+                    ><img
+                      loading="lazy"
+                      class="crisp"
+                      width="60"
+                      height="30"
+                      src="https://www.tvinsider.com/wp-content/uploads/2023/05/max.png"
+                      alt="Max"
+                  /></a>
+                  <ul>
+                    <li
+                      id="menu-item-1147731"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147731"
+                    >
+                      <a href="https://www.tvinsider.com/show/industry/">Industry</a>
+                    </li>
+                    <li
+                      id="menu-item-1147729"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147729"
+                    >
+                      <a href="https://www.tvinsider.com/show/the-penguin/">The Penguin</a>
+                    </li>
+                    <li
+                      id="menu-item-1147732"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147732"
+                    >
+                      <a href="https://www.tvinsider.com/show/house-of-the-dragon/"
+                        >House of the Dragon</a
+                      >
+                    </li>
+                    <li
+                      id="menu-item-1124714"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1124714"
+                    >
+                      <a href="https://www.tvinsider.com/show/and-just-like-that/"
+                        >And Just Like That&#8230;</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="network">
+                  <a
+                    href="https://www.tvinsider.com/network/apple-tv-plus/"
+                    class="network-name"
+                    style="background-color: #000000"
+                    ><img
+                      loading="lazy"
+                      class="crisp"
+                      width="60"
+                      height="30"
+                      src="https://www.tvinsider.com/wp-content/uploads/2022/07/apple-tv-plus.png"
+                      alt="Apple TV+"
+                  /></a>
+                  <ul>
+                    <li
+                      id="menu-item-1147735"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147735"
+                    >
+                      <a href="https://www.tvinsider.com/show/bad-monkey/">Bad Monkey</a>
+                    </li>
+                    <li
+                      id="menu-item-1147737"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147737"
+                    >
+                      <a href="https://www.tvinsider.com/show/slow-horses/">Slow Horses</a>
+                    </li>
+                    <li
+                      id="menu-item-1147738"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147738"
+                    >
+                      <a href="https://www.tvinsider.com/show/shrinking/">Shrinking</a>
+                    </li>
+                    <li
+                      id="menu-item-1147739"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147739"
+                    >
+                      <a href="https://www.tvinsider.com/show/presumed-innocent/"
+                        >Presumed Innocent</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="network">
+                  <a
+                    href="https://www.tvinsider.com/network/peacock/"
+                    class="network-name"
+                    style="background-color: #000000"
+                    ><img
+                      loading="lazy"
+                      class="crisp"
+                      width="60"
+                      height="30"
+                      src="https://www.tvinsider.com/wp-content/uploads/2022/07/peacock.png"
+                      alt="Peacock"
+                  /></a>
+                  <ul>
+                    <li
+                      id="menu-item-1147745"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147745"
+                    >
+                      <a href="https://www.tvinsider.com/show/love-island/">Love Island USA</a>
+                    </li>
+                    <li
+                      id="menu-item-1147746"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147746"
+                    >
+                      <a href="https://www.tvinsider.com/show/mr-throwback/">Mr. Throwback</a>
+                    </li>
+                    <li
+                      id="menu-item-1147747"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147747"
+                    >
+                      <a href="https://www.tvinsider.com/show/days-of-our-lives/"
+                        >Days of our Lives</a
+                      >
+                    </li>
+                    <li
+                      id="menu-item-1147749"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147749"
+                    >
+                      <a href="https://www.tvinsider.com/show/law-order-organized-crime/"
+                        >Law &amp; Order: Organized Crime</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="network">
+                  <a
+                    href="https://www.tvinsider.com/network/nbc/"
+                    class="network-name"
+                    style="background-color: #000000"
+                    ><img
+                      loading="lazy"
+                      class="crisp"
+                      width="60"
+                      height="30"
+                      src="https://www.tvinsider.com/wp-content/uploads/2022/07/nbc.png"
+                      alt="NBC"
+                  /></a>
+                  <ul>
+                    <li
+                      id="menu-item-1147751"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147751"
+                    >
+                      <a href="https://www.tvinsider.com/show/americas-got-talent/"
+                        >America&#8217;s Got Talent</a
+                      >
+                    </li>
+                    <li
+                      id="menu-item-1124724"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1124724"
+                    >
+                      <a href="https://www.tvinsider.com/show/one-chicago/">One Chicago</a>
+                    </li>
+                    <li
+                      id="menu-item-1147752"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147752"
+                    >
+                      <a href="https://www.tvinsider.com/show/found-2023/">Found</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="network">
+                  <a
+                    href="https://www.tvinsider.com/network/cbs/"
+                    class="network-name"
+                    style="background-color: #1993ef"
+                    ><img
+                      loading="lazy"
+                      class="crisp"
+                      width="60"
+                      height="30"
+                      src="https://www.tvinsider.com/wp-content/uploads/2022/07/cbs.png"
+                      alt="CBS"
+                  /></a>
+                  <ul>
+                    <li
+                      id="menu-item-1147753"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147753"
+                    >
+                      <a href="https://www.tvinsider.com/show/big-brother/">Big Brother</a>
+                    </li>
+                    <li
+                      id="menu-item-1124727"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1124727"
+                    >
+                      <a href="https://www.tvinsider.com/show/ncis/">NCIS</a>
+                    </li>
+                    <li
+                      id="menu-item-1124728"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1124728"
+                    >
+                      <a href="https://www.tvinsider.com/show/ghosts/">Ghosts</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="network">
+                  <a
+                    href="https://www.tvinsider.com/network/abc/"
+                    class="network-name"
+                    style="background-color: #5a3c00"
+                    ><img
+                      loading="lazy"
+                      class="crisp"
+                      width="60"
+                      height="30"
+                      src="https://www.tvinsider.com/wp-content/uploads/2022/07/abc.png"
+                      alt="ABC"
+                  /></a>
+                  <ul>
+                    <li
+                      id="menu-item-1147754"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147754"
+                    >
+                      <a href="https://www.tvinsider.com/show/the-bachelorette/"
+                        >The Bachelorette</a
+                      >
+                    </li>
+                    <li
+                      id="menu-item-1147756"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147756"
+                    >
+                      <a href="https://www.tvinsider.com/show/general-hospital/"
+                        >General Hospital</a
+                      >
+                    </li>
+                    <li
+                      id="menu-item-1147755"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147755"
+                    >
+                      <a href="https://www.tvinsider.com/show/claim-to-fame/">Claim to Fame</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="network">
+                  <a
+                    href="https://www.tvinsider.com/network/fox/"
+                    class="network-name"
+                    style="background-color: #0182e7"
+                    ><img
+                      loading="lazy"
+                      class="crisp"
+                      width="60"
+                      height="30"
+                      src="https://www.tvinsider.com/wp-content/uploads/2022/07/fox.png"
+                      alt="FOX"
+                  /></a>
+                  <ul>
+                    <li
+                      id="menu-item-1147759"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147759"
+                    >
+                      <a href="https://www.tvinsider.com/show/masterchef/">MasterChef</a>
+                    </li>
+                    <li
+                      id="menu-item-1147757"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147757"
+                    >
+                      <a href="https://www.tvinsider.com/show/rescue-hi-surf/">Rescue: HI-Surf</a>
+                    </li>
+                    <li
+                      id="menu-item-1147758"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147758"
+                    >
+                      <a href="https://www.tvinsider.com/show/9-1-1-lone-star/">9-1-1: Lone Star</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="network">
+                  <a
+                    href="https://www.tvinsider.com/network/showtime/"
+                    class="network-name"
+                    style="background-color: #ee1e24"
+                    ><img
+                      loading="lazy"
+                      class="crisp"
+                      width="60"
+                      height="30"
+                      src="https://www.tvinsider.com/wp-content/uploads/2022/07/showtime.png"
+                      alt="Showtime"
+                  /></a>
+                  <ul>
+                    <li
+                      id="menu-item-1147760"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147760"
+                    >
+                      <a href="https://www.tvinsider.com/show/dexter-original-sin/"
+                        >Dexter: Original Sin</a
+                      >
+                    </li>
+                    <li
+                      id="menu-item-1147761"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147761"
+                    >
+                      <a href="https://www.tvinsider.com/show/a-gentleman-in-moscow/"
+                        >A Gentleman in Moscow</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="network">
+                  <a
+                    href="https://www.tvinsider.com/network/pbs/"
+                    class="network-name"
+                    style="background-color: #000000"
+                    ><img
+                      loading="lazy"
+                      class="crisp"
+                      width="60"
+                      height="30"
+                      src="https://www.tvinsider.com/wp-content/uploads/2022/07/pbs.png"
+                      alt="PBS"
+                  /></a>
+                  <ul>
+                    <li
+                      id="menu-item-1147764"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147764"
+                    >
+                      <a href="https://www.tvinsider.com/show/di-ray/">DI Ray</a>
+                    </li>
+                    <li
+                      id="menu-item-1147763"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147763"
+                    >
+                      <a href="https://www.tvinsider.com/show/van-der-valk/">Van der Valk</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="network">
+                  <a
+                    href="https://www.tvinsider.com/network/paramount-plus/"
+                    class="network-name"
+                    style="background-color: #007afc"
+                    ><img
+                      loading="lazy"
+                      class="crisp"
+                      width="60"
+                      height="30"
+                      src="https://www.tvinsider.com/wp-content/uploads/2022/07/paramount-plus.png"
+                      alt="Parmount+"
+                  /></a>
+                  <ul>
+                    <li
+                      id="menu-item-1147765"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147765"
+                    >
+                      <a href="https://www.tvinsider.com/show/seal-team/">SEAL Team</a>
+                    </li>
+                    <li
+                      id="menu-item-1147766"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147766"
+                    >
+                      <a href="https://www.tvinsider.com/show/evil/">Evil</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="network">
+                  <a
+                    href="https://www.tvinsider.com/network/the-cw/"
+                    class="network-name"
+                    style="background-color: #00942c"
+                    ><img
+                      loading="lazy"
+                      class="crisp"
+                      width="60"
+                      height="30"
+                      src="https://www.tvinsider.com/wp-content/uploads/2022/07/cw.png"
+                      alt="The CW"
+                  /></a>
+                  <ul>
+                    <li
+                      id="menu-item-1147769"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147769"
+                    >
+                      <a href="https://www.tvinsider.com/show/all-american/">All American</a>
+                    </li>
+                    <li
+                      id="menu-item-1147768"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147768"
+                    >
+                      <a href="https://www.tvinsider.com/show/the-chosen/">The Chosen</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="network">
+                  <a
+                    href="https://www.tvinsider.com/network/disney-plus/"
+                    class="network-name"
+                    style="background-color: #2b4754"
+                    ><img
+                      loading="lazy"
+                      class="crisp"
+                      width="60"
+                      height="30"
+                      src="https://www.tvinsider.com/wp-content/uploads/2024/03/disney-plus.png"
+                      alt="Disney+"
+                  /></a>
+                  <ul>
+                    <li
+                      id="menu-item-1147770"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147770"
+                    >
+                      <a href="https://www.tvinsider.com/show/agatha-darkhold-diaries/"
+                        >Agatha All Along</a
+                      >
+                    </li>
+                    <li
+                      id="menu-item-1147771"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147771"
+                    >
+                      <a href="https://www.tvinsider.com/show/star-wars-the-acolyte/"
+                        >Star Wars: The Acolyte</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="network">
+                  <a
+                    href="https://www.tvinsider.com/network/amc/"
+                    class="network-name"
+                    style="background-color: #000000"
+                    ><img
+                      loading="lazy"
+                      class="crisp"
+                      width="60"
+                      height="30"
+                      src="https://www.tvinsider.com/wp-content/uploads/2022/07/amc.png"
+                      alt="AMC"
+                  /></a>
+                  <ul>
+                    <li
+                      id="menu-item-1147772"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147772"
+                    >
+                      <a href="https://www.tvinsider.com/show/the-walking-dead-daryl-dixon/"
+                        >The Walking Dead: Daryl Dixon</a
+                      >
+                    </li>
+                    <li
+                      id="menu-item-1108888"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1108888"
+                    >
+                      <a href="https://www.tvinsider.com/show/interview-with-the-vampire/"
+                        >Interview With the Vampire</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="network">
+                  <a
+                    href="https://www.tvinsider.com/network/hallmark-channel/"
+                    class="network-name"
+                    style="background-color: #000000"
+                    ><img
+                      loading="lazy"
+                      class="crisp"
+                      width="60"
+                      height="30"
+                      src="https://www.tvinsider.com/wp-content/uploads/2022/07/hallmark.png"
+                      alt="Hallmark Channel"
+                  /></a>
+                  <ul>
+                    <li
+                      id="menu-item-1093255"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1093255"
+                    >
+                      <a href="https://www.tvinsider.com/show/when-calls-the-heart/"
+                        >When Calls the Heart</a
+                      >
+                    </li>
+                    <li
+                      id="menu-item-1147773"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147773"
+                    >
+                      <a href="https://www.tvinsider.com/show/holidazed/">Holidazed</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="network">
+                  <a
+                    href="https://www.tvinsider.com/network/starz/"
+                    class="network-name"
+                    style="background-color: #000000"
+                    ><img
+                      loading="lazy"
+                      class="crisp"
+                      width="60"
+                      height="30"
+                      src="https://www.tvinsider.com/wp-content/uploads/2020/05/starz.png"
+                      alt="Starz"
+                  /></a>
+                  <ul>
+                    <li
+                      id="menu-item-1036860"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1036860"
+                    >
+                      <a href="https://www.tvinsider.com/show/outlander/">Outlander</a>
+                    </li>
+                    <li
+                      id="menu-item-1147774"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147774"
+                    >
+                      <a href="https://www.tvinsider.com/show/power-book-ii-ghost/"
+                        >Power Book II: Ghost</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="network">
+                  <a
+                    href="https://www.tvinsider.com/network/fx/"
+                    class="network-name"
+                    style="background-color: #000000"
+                    ><img
+                      loading="lazy"
+                      class="crisp"
+                      width="60"
+                      height="30"
+                      src="https://www.tvinsider.com/wp-content/uploads/2020/05/fx.png"
+                      alt="FX"
+                  /></a>
+                  <ul>
+                    <li
+                      id="menu-item-1147776"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147776"
+                    >
+                      <a href="https://www.tvinsider.com/show/the-old-man/">The Old Man</a>
+                    </li>
+                    <li
+                      id="menu-item-1147780"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147780"
+                    >
+                      <a href="https://www.tvinsider.com/show/american-sports-story/"
+                        >American Sports Story: Aaron Hernandez</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="network">
+                  <a
+                    href="https://www.tvinsider.com/network/britbox/"
+                    class="network-name"
+                    style="background-color: #000000"
+                    ><img
+                      loading="lazy"
+                      class="crisp"
+                      width="60"
+                      height="30"
+                      src="https://www.tvinsider.com/wp-content/uploads/2022/07/britbox.png"
+                      alt="BritBox"
+                  /></a>
+                  <ul>
+                    <li
+                      id="menu-item-1147781"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147781"
+                    >
+                      <a href="https://www.tvinsider.com/show/the-responder/">The Responder</a>
+                    </li>
+                    <li
+                      id="menu-item-1147782"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147782"
+                    >
+                      <a href="https://www.tvinsider.com/show/after-the-flood/">After The Flood</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="network">
+                  <a
+                    href="https://www.tvinsider.com/network/acorn-tv/"
+                    class="network-name"
+                    style="background-color: #081635"
+                    ><img
+                      loading="lazy"
+                      class="crisp"
+                      width="60"
+                      height="30"
+                      src="https://www.tvinsider.com/wp-content/uploads/2022/07/acorn.png"
+                      alt="Acorn"
+                  /></a>
+                  <ul>
+                    <li
+                      id="menu-item-1147783"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147783"
+                    >
+                      <a href="https://www.tvinsider.com/show/murdoch-mysteries/"
+                        >Murdoch Mysteries</a
+                      >
+                    </li>
+                    <li
+                      id="menu-item-1147784"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147784"
+                    >
+                      <a href="https://www.tvinsider.com/show/harry-wild/">Harry Wild</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="network">
+                  <a
+                    href="https://www.tvinsider.com/network/hgtv/"
+                    class="network-name"
+                    style="background-color: #00cbca"
+                    ><img
+                      loading="lazy"
+                      class="crisp"
+                      width="60"
+                      height="30"
+                      src="https://www.tvinsider.com/wp-content/uploads/2022/07/hgtv.png"
+                      alt="HGTV"
+                  /></a>
+                  <ul>
+                    <li
+                      id="menu-item-1147785"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147785"
+                    >
+                      <a href="https://www.tvinsider.com/show/celebrity-iou/">Celebrity IOU</a>
+                    </li>
+                    <li
+                      id="menu-item-1147786"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147786"
+                    >
+                      <a href="https://www.tvinsider.com/show/good-bones/">Good Bones</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="network">
+                  <a
+                    href="https://www.tvinsider.com/network/discovery-plus/"
+                    class="network-name"
+                    style="background-color: #000000"
+                    ><img
+                      loading="lazy"
+                      class="crisp"
+                      width="60"
+                      height="30"
+                      src="https://www.tvinsider.com/wp-content/uploads/2022/07/discovery-plus.png"
+                      alt="Discovery+"
+                  /></a>
+                  <ul>
+                    <li
+                      id="menu-item-1124765"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1124765"
+                    >
+                      <a href="https://www.tvinsider.com/show/90-day-fiance/">90 Day Fiancé</a>
+                    </li>
+                    <li
+                      id="menu-item-1147787"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1147787"
+                    >
+                      <a href="https://www.tvinsider.com/show/deadliest-catch/">Deadliest Catch</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="network">
+                  <a
+                    href="https://www.tvinsider.com/network/bbc-america/"
+                    class="network-name"
+                    style="background-color: #000000"
+                    ><img
+                      loading="lazy"
+                      class="crisp"
+                      width="60"
+                      height="30"
+                      src="https://www.tvinsider.com/wp-content/uploads/2022/07/bbc-america.png"
+                      alt="BBC America"
+                  /></a>
+                  <ul>
+                    <li
+                      id="menu-item-1124766"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1124766"
+                    >
+                      <a href="https://www.tvinsider.com/show/doctor-who/">Doctor Who</a>
+                    </li>
+                    <li
+                      id="menu-item-1061411"
+                      class="menu-item menu-item-type-taxonomy menu-item-object-show menu-item-1061411"
+                    >
+                      <a href="https://www.tvinsider.com/show/orphan-black-echoes/"
+                        >Orphan Black: Echoes</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="show-search">
+                <form action="/">
+                  <input
+                    type="search"
+                    aria-label="Search"
+                    placeholder="Enter show name..."
+                    name="search"
+                  />
+                  <input type="hidden" name="type" value="show" />
+                  <input type="submit" value="search" />
+                </form>
+              </div>
+            </div>
+          </li>
+          <li
+            id="menu-item-1073127"
+            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1073127"
+          >
+            <a href="/movies/">Movies</a>
+          </li>
+          <li
+            id="menu-item-1036875"
+            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1036875"
+          >
+            <a href="https://www.tvinsider.com/what-to-watch/">What to Watch</a>
+          </li>
+          <li
+            id="menu-item-1162260"
+            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1162260"
+          >
+            <a href="https://www.tvinsider.com/category/game-shows/">Game Shows</a>
+          </li>
+          <li
+            id="menu-item-1036877"
+            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1036877"
+          >
+            <a href="https://www.tvinsider.com/category/reviews/">Reviews</a>
+          </li>
+          <li
+            id="menu-item-1110680"
+            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1110680"
+          >
+            <a href="https://www.swooon.com/">Swooon</a>
+          </li>
+          <li id="searchlink"><a href="https://www.tvinsider.com/?search=">Search</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <style>
+      .menu li {
+        position: relative;
+      }
+      .menu li.menu-item-has-children {
+        position: static;
+      }
+    </style>
+    <style>
+      p a {
+        color: #00aeef;
+        font-weight: bold;
+      }
+    </style>
+    <main>
+      <section>
+        <div style="margin-top: 134px; text-align: center">
+          <img
+            alt="Ron Swanson 404 Error"
+            src="https://www.tvinsider.com/wp-content/uploads/2020/08/ron-swanson-404.jpg"
+          />
+          <p style="margin-top: 32px">
+            Why the frumpy face?<br /><a href="/">Try the homepage</a> or
+            <a href="/shows/">find a show to watch</a>.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="footer-left">
+          <h4>Newsletter</h4>
+          <p>Keep up with your favorite shows... delivered to your inbox!</p>
+          <form
+            class="subscribe-block validate mc4wp-form mc4wp-form-87"
+            action="//tvinsider.us10.list-manage.com/subscribe/post?u=a35d27604ff7f9b1358c4e8d7&amp;id=3576f8ead4"
+            method="post"
+            id="mc4wp-form-1"
+            name="mc-embedded-subscribe-form"
+            target="_blank"
+            novalidate
+          >
+            <div class="mc4wp-form-fields">
+              <div>
+                <input
+                  type="email"
+                  value=""
+                  name="EMAIL"
+                  placeholder="Enter your email"
+                  id="mce-EMAIL"
+                />
+                <input id="email-submit-button" type="submit" value="SIGN UP" />
+              </div>
+              <div class="newsletter-options">
+                <div>
+                  <input
+                    type="checkbox"
+                    value="2"
+                    name="group[29][2]"
+                    id="mce-group1"
+                    checked="checked"
+                  />
+                  <label for="mce-group1">The Daily</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    value="1"
+                    name="group[29][1]"
+                    id="mce-group0"
+                    checked="checked"
+                  />
+                  <label for="mce-group0">What's Worth Watching</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    value="4"
+                    name="group[29][4]"
+                    id="mce-group2"
+                    checked="checked"
+                  />
+                  <label for="mce-group2">Breaking News Alerts</label>
+                </div>
+              </div>
+              <input type="hidden" name="SLOC" value="footer" />
+            </div>
+            <div style="position: absolute; left: -5000px">
+              <input
+                aria-hidden="true"
+                id="hidden-input"
+                type="text"
+                name="b_a35d27604ff7f9b1358c4e8d7_3576f8ead4"
+                tabindex="-1"
+                value=""
+              />
+            </div>
+            <a class="more-button" href="https://www.tvinsider.com/newsletter-subscription/"
+              >More Newsletters</a
+            >
+          </form>
+          <!-- better form
+      <form id="subscribe-form">
+        <div>
+          <input type="email" value="" name="email" placeholder="Enter your email" />
+          <input type="submit" value="Subscribe" id="email-submit-button" />
+          <input type="hidden" name="SLOC" value="footer" />
+        </div>
+        <div class="newsletter-options">
+          <div>
+            <input class="newslettercheck" type="checkbox" value="8fac24a06a" name="groupid" id="mce-group0" checked="checked" />
+            <label for="mce-group0">The Daily</label>
+          </div>
+          <div>
+            <input class="newslettercheck" type="checkbox" value="07ddc60d5d" name="groupid" id="mce-group1" checked="checked" />
+            <label for="mce-group1">What's Worth Watching</label>
+          </div>
+          <div>
+            <input class="newslettercheck" type="checkbox" value="3952b7cf05" name="groupid" id="mce-group2" checked="checked" />
+            <label for="mce-group2">Breaking News Alerts</label>
+          </div>
+        </div>
+        <div id="result-text"></div>
+      </form>
+       -->
+        </div>
+        <div class="footer-right">
+          <div>
+            <h4>Follow us</h4>
+            <ul class="social-footer social-icons">
+              <li>
+                <a target="_blank" href="https://www.youtube.com/tvinsider/"
+                  ><img
+                    loading="lazy"
+                    class="icon-youtube"
+                    alt="icon - youtube"
+                    height="32"
+                    width="32"
+                    src="https://www.tvinsider.com/wp-content/themes/tv/images/icon-youtube.svg"
+                /></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.facebook.com/tvinsider/"
+                  ><img
+                    loading="lazy"
+                    class="icon-facebook"
+                    alt="icon - facebook"
+                    height="32"
+                    width="32"
+                    src="https://www.tvinsider.com/wp-content/themes/tv/images/icon-facebook.svg"
+                /></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://twitter.com/tvinsider/"
+                  ><img
+                    loading="lazy"
+                    class="icon-twitter"
+                    alt="icon - twitter"
+                    height="32"
+                    width="32"
+                    src="https://www.tvinsider.com/wp-content/themes/tv/images/icon-twitter.svg"
+                /></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.instagram.com/tvinsider/"
+                  ><img
+                    loading="lazy"
+                    class="icon-instagram"
+                    alt="icon - instagram"
+                    height="32"
+                    width="32"
+                    src="https://www.tvinsider.com/wp-content/themes/tv/images/icon-instagram.svg"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>Quick Links</h4>
+            <ul class="list-links">
+              <li><a href="https://www.tvinsider.com/about-us/">About</a></li>
+              <li><a href="https://www.tvinsider.com/advertise-with-us/">Advertise</a></li>
+              <li><a href="https://www.tvinsider.com/privacy-policy/">Privacy</a></li>
+              <li><a href="https://www.tvinsider.com/terms-of-use/">Terms of Service</a></li>
+              <li><a href="https://www.tvinsider.com/dsar/">Do Not Sell</a></li>
+              <li><a href="https://www.tvinsider.com/contact-us/">Contact Us</a></li>
+              <li>
+                <a
+                  id="osano-link"
+                  href="#"
+                  onclick="Osano.cm.showDrawer('osano-cm-dom-info-dialog-open'); return false;"
+                  >Cookie Prefs</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4><a href="/magazines/">Our Publications</a></h4>
+            <ul class="list-partners">
+              <li>
+                <a target="_blank" href="https://www.tvguidemagazine.com/"
+                  ><img
+                    loading="lazy"
+                    src="https://www.tvinsider.com/wp-content/themes/tv/images/logo-tv-guide.png"
+                    height="27"
+                    width="35"
+                    alt="TV Guide Magazine Logo"
+                /></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://tvpuzzler.com/tvipz"
+                  ><img
+                    loading="lazy"
+                    src="https://www.tvinsider.com/wp-content/themes/tv/images/logo-puzzler.png"
+                    height="25"
+                    width="110"
+                    alt="Puzzler"
+                /></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.iwantmytvmagazine.com/"
+                  ><img
+                    loading="lazy"
+                    src="https://www.tvinsider.com/wp-content/themes/tv/images/logo-tv-weekly.png"
+                    height="25"
+                    width="32"
+                    alt="TV Weekly Logo"
+                /></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.channelguidemag.com/"
+                  ><img
+                    loading="lazy"
+                    src="https://www.tvinsider.com/wp-content/themes/tv/images/logo-channel-guide.png"
+                    height="25"
+                    width="106"
+                    alt="Channel Guide Logo"
+                /></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.ondishmag.com/"
+                  ><img
+                    loading="lazy"
+                    src="https://www.tvinsider.com/wp-content/themes/tv/images/logo-on-dish.png"
+                    height="25"
+                    width="113"
+                    alt="OnDISH Logo"
+                /></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.remindmagazine.com/tvirm"
+                  ><img
+                    loading="lazy"
+                    src="https://www.tvinsider.com/wp-content/themes/tv/images/logo-remind.png"
+                    height="25"
+                    width="97"
+                    alt="Remind Logo"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="">
+          <span class="copyright">Copyright &copy; 2025 NTVB Media, Inc., All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Navigation & Search -->
+
+    <script>
+      $('.search-area #search-form').hover(function () {
+        $('#search-form-input').focus()
+      })
+      $('#hamburger-button').click(function () {
+        $('.menu').toggleClass('responsive')
+        $('#hamburger-button').toggleClass('responsive')
+        return false
+      })
+      $(window).on('resize', function () {
+        if ($(window).width() > 1024) {
+          $('.menu').removeClass('responsive')
+          $('#hamburger-button').removeClass('responsive')
+        }
+      })
+    </script>
+
+    <!-- Comscore -->
+    <script>
+      var _comscore = _comscore || []
+      _comscore.push({ c1: '2', c2: '19587797' })
+      ;(function () {
+        var s = document.createElement('script'),
+          el = document.getElementsByTagName('script')[0]
+        s.async = true
+        s.src =
+          (document.location.protocol == 'https:' ? 'https://sb' : 'http://b') +
+          '.scorecardresearch.com/beacon.js'
+        el.parentNode.insertBefore(s, el)
+      })()
+    </script>
+
+    <!-- Chartbeat -->
+
+    <script type="text/javascript">
+      ;(function () {
+        /** CONFIGURATION START **/
+        var _sf_async_config = (window._sf_async_config = window._sf_async_config || {})
+        _sf_async_config.uid = 62629
+        _sf_async_config.domain = 'tvinsider.com'
+        _sf_async_config.useCanonical = true
+        _sf_async_config.useCanonicalDomain = true
+        /** CONFIGURATION END **/
+        function loadChartbeat() {
+          var e = document.createElement('script')
+          var n = document.getElementsByTagName('script')[0]
+          e.type = 'text/javascript'
+          e.async = true
+          e.src = '//static.chartbeat.com/js/chartbeat.js'
+          n.parentNode.insertBefore(e, n)
+        }
+        loadChartbeat()
+      })()
+    </script>
+
+    <!-- Google Analytics - G4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DB9HERH5PW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+
+      var userType = 'unregistered'
+      gtag('config', 'G-DB9HERH5PW', {
+        user_properties: {
+          user_type: userType
+        }
+      })
+    </script>
+
+    <!-- Registration Promo -->
+
+    <div id="reg-promo" class="personalize-modal" style="display: none">
+      <div class="personalize-modal-content">
+        <button class="close-modal">X</button>
+        <h3>Benefits to Registering & Following</h3>
+        <ul class="benefits">
+          <li class="icon-watchlist">
+            <img
+              height="100"
+              width="100"
+              src="https://www.tvinsider.com/wp-content/themes/tv/images/icon-watchlist-alert.png?x=10"
+            /><b>Watchlist</b> Easy access to only the shows you care about — all in one simple
+            place
+          </li>
+          <li class="icon-tv-alerts">
+            <img
+              height="100"
+              width="100"
+              src="https://www.tvinsider.com/wp-content/themes/tv/images/icon-notification.png?x=10"
+            /><b>Alerts</b> Only important notifications — when a show is returning, when it becomes
+            available to stream, and more.
+          </li>
+          <li class="icon-special-offers">
+            <img
+              height="100"
+              width="100"
+              src="https://www.tvinsider.com/wp-content/themes/tv/images/icon-offer.png?x=10"
+            /><b>Special Offers</b> Exclusive products we release related to your favorite shows and
+            streaming services
+          </li>
+        </ul>
+        <p>
+          <a class="basic-button" href="https://www.tvinsider.com/register/?showid=0">Sign Up</a>
+        </p>
+        <p>(It's free!)</p>
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        // REGISTRATION MODAL
+
+        // Open Modal
+        $('.why-watchlist a').click(function () {
+          $('#reg-promo').css('display', 'block')
+          return false
+        })
+
+        // Close Modal
+        $('.close-modal').click(function () {
+          $('#reg-promo').css('display', 'none')
+        })
+
+        // Close Modal When Clicking Outside
+        $(window).click(function (e) {
+          if ($(e.target).is('#reg-promo')) {
+            $('#reg-promo').css('display', 'none')
+          }
+        })
+
+        // WATCHLIST
+
+        var isPanelOpen = false
+
+        $('.add-to-watchlist-wrapper .add-to-watchlist').click(function () {
+          // if user logged in
+          if ($('body').hasClass('logged-in')) {
+            if ($(this).hasClass('selected')) {
+              removeShowFromWatchlist()
+            } else {
+              togglePanel()
+              addShowToWatchlist()
+            }
+            // otherwise launch registration
+          } else {
+            $('.why-watchlist a').click()
+          }
+        })
+
+        $('.close-panel').click(function () {
+          togglePanel()
+        })
+
+        $('.open-watchlist-btn').click(function () {
+          if (isPanelOpen) {
+            togglePanel()
+          } else {
+            togglePanel()
+            getShowWatchlist()
+          }
+        })
+
+        function togglePanel() {
+          if (isPanelOpen) {
+            $('.watchlist-panel').css('transform', 'translateX(100%)')
+            $('body > *:not(.watchlist-panel)').css('filter', 'none')
+            isPanelOpen = false
+          } else {
+            $('.watchlist-panel').css('transform', 'translateX(0%)')
+            $('body > *:not(.watchlist-panel)').css('filter', 'blur(5px)')
+            isPanelOpen = true
+          }
+        }
+      })
+    </script>
+  </body>
+</html>
