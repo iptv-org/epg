@@ -14,7 +14,7 @@ program
     )
   )
   .addOption(new Option('-o, --output <path>', 'Path to output file').default('guide.xml'))
-  .addOption(new Option('-l, --lang <code>', 'Filter channels by language (ISO 639-2 code)'))
+  .addOption(new Option('-l, --lang <code>', 'Filter channels by language (ISO 639-1 code)'))
   .addOption(
     new Option('-t, --timeout <milliseconds>', 'Override the default timeout for each request').env(
       'TIMEOUT'
