@@ -21,6 +21,7 @@
 | Ghana                    | `gh` | https://www.canalplus.com/gh/programme-tv/ |
 | Guinea-Bissau            | `gw` | https://www.canalplus.com/gw/programme-tv/ |
 | Guinea                   | `gn` | https://www.canalplus.com/gn/programme-tv/ |
+| Haiti                    | `ht` | https://www.canalplus.com/ht/programme-tv/ |
 | Ivory Coast              | `ci` | https://www.canalplus.com/ci/programme-tv/ |
 | Madagascar               | `mg` | https://www.canalplus.com/mg/programme-tv/ |
 | Mali                     | `ml` | https://www.canalplus.com/ml/programme-tv/ |
