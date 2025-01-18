@@ -5,7 +5,6 @@ dayjs.extend(utc)
 
 module.exports = {
   site: 'tvtv.us',
-  delay: 1500, // 1500 ms (otherwise the server returns error 429: https://github.com/iptv-org/epg/issues/2176)
   days: 2,
   url: function ({ date, channel }) {
     if (!dayjs.isDayjs(date)) {
