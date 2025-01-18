@@ -58,7 +58,7 @@ Options:
   -c, --channels <path>         Path to *.channels.xml file (required if the "--site" attribute is
                                 not specified)
   -o, --output <path>           Path to output file (default: "guide.xml")
-  -l, --lang <code>             Allows to limit the download to channels in the specified language only (ISO 639-2 code)
+  -l, --lang <code>             Allows to limit the download to channels in the specified language only (ISO 639-1 code)
   -t, --timeout <milliseconds>  Timeout for each request in milliseconds (default: 0)
   -d, --delay <milliseconds>    Delay between request in milliseconds (default: 0)
   --days <days>                 Number of days for which the program will be loaded (defaults to the value from the site config)
@@ -157,6 +157,12 @@ docker build -t iptv-org/epg --no-cache .
 ### Create and run container
 
 ```sh
+docker run -p 3000:3000 -e SITE=example.com iptv-org/epg
+```
+
+To use your [custom channel list](#use-custom-channel-list) pass the path to it via the [--volume](https://docs.docker.com/engine/storage/volumes/#options-for---volume) option:
+
+```sh
 docker run -p 3000:3000 -v /path/to/channels.xml:/epg/channels.xml iptv-org/epg
 ```
 
@@ -174,14 +180,15 @@ or
 http://<your_local_ip_address>:3000/guide.xml
 ```
 
-### Environment Variables
+### Configuration
 
 To fine-tune the execution, you can pass environment variables to the container as follows:
 
 ```sh
 docker run \
 -p 5000:3000 \
--v /path/to/channels.xml:/epg/channels.xml \
+-e SITE=example.com \
+-e CLANG=fr \
 -e CRON="0 0,12 * * *" \
 -e MAX_CONNECTIONS=10 \
 -e GZIP=true \
@@ -191,14 +198,18 @@ docker run \
 iptv-org/epg
 ```
 
-| Variable        | Description                                                                                                         |
-| --------------- | ------------------------------------------------------------------------------------------------------------------- |
-| CRON            | A [cron expression](https://crontab.guru/) describing the schedule of the guide loadings (by default will run once) |
-| MAX_CONNECTIONS | Limit on the number of concurrent requests (default: 1)                                                             |
-| GZIP            | Boolean value indicating whether to create a compressed version of the guide (default: false)                       |
-| DAYS            | Number of days for which the guide will be loaded (defaults to the value from the site config)                      |
-| TIMEOUT         | Timeout for each request in milliseconds (default: 0)                                                               |
-| DELAY           | Delay between request in milliseconds (default: 0)                                                                  |
+| Variable        | Description                                                                                                               |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| SITE            | Name of the site to parse                                                                                                 |
+| CLANG           | Limit the download to channels in the specified language only ([ISO 639-1](https://en.wikipedia.org/wiki/ISO_639-1) code) |
+| CRON            | A [cron expression](https://crontab.guru/) describing the schedule of the guide loadings (by default will run once)       |
+| MAX_CONNECTIONS | Limit on the number of concurrent requests (default: 1)                                                                   |
+| GZIP            | Boolean value indicating whether to create a compressed version of the guide (default: false)                             |
+| DAYS            | Number of days for which the guide will be loaded (defaults to the value from the site config)                            |
+| TIMEOUT         | Timeout for each request in milliseconds (default: 0)                                                                     |
+| DELAY           | Delay between request in milliseconds (default: 0)                                                                        |
+
+For more info go to [Docker](https://docs.docker.com/get-started/) documentation.
 
 ## Playlists
 
