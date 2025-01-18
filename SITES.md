@@ -65,7 +65,7 @@
     <tr><td><a href="sites/hoy.tv">hoy.tv</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/i.mjh.nz">i.mjh.nz</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/i24news.tv">i24news.tv</a></td><td>🟢</td><td></td></tr>
-    <tr><td><a href="sites/iltalehti.fi">iltalehti.fi</a></td><td>🟡</td><td>https://github.com/iptv-org/epg/issues/2396</td></tr>
+    <tr><td><a href="sites/iltalehti.fi">iltalehti.fi</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/indihometv.com">indihometv.com</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/ionplustv.com">ionplustv.com</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/ipko.tv">ipko.tv</a></td><td>🟢</td><td></td></tr>
@@ -203,7 +203,6 @@
     <tr><td><a href="sites/virginmediatelevision.ie">virginmediatelevision.ie</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/virgintvgo.virginmedia.com">virgintvgo.virginmedia.com</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/visionplus.id">visionplus.id</a></td><td>🟢</td><td></td></tr>
-    <tr><td><a href="sites/vivacom.bg">vivacom.bg</a></td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2270</td></tr>
     <tr><td><a href="sites/vtm.be">vtm.be</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/walesi.com.fj">walesi.com.fj</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/watch.sportsnet.ca">watch.sportsnet.ca</a></td><td>🟢</td><td></td></tr>
