@@ -16,35 +16,38 @@ if (os.platform() === 'win32') {
 beforeEach(() => {
   fs.emptyDirSync('tests/__data__/output')
   fs.copySync(
-    'tests/__data__/input/channels-editor/channels-editor.channels.xml',
+    'tests/__data__/input/channels-edit/example.com.channels.xml',
     'tests/__data__/output/channels.xml'
   )
 })
 
-describe('channels:editor', () => {
+describe('channels:edit', () => {
   it('shows list of options for a channel', () => {
+    const cmd = `${ENV_VAR} npm run channels:edit --- tests/__data__/output/channels.xml`
     try {
-      const cmd = `${ENV_VAR} npm run channels:editor --- tests/__data__/output/channels.xml`
       const stdout = execSync(cmd, { encoding: 'utf8' })
       if (process.env.DEBUG === 'true') console.log(cmd, stdout)
-    } catch (error) {
-      if (process.env.DEBUG === 'true') console.log(cmd, error)
-      expect((error as ExecError).status).toBe(1)
-      expect((error as ExecError).stdout).toContain('CNN International | CNNInternational.us [new]')
-      expect((error as ExecError).stdout).toContain(
-        'CNN International Europe | CNNInternationalEurope.us'
-      )
-      expect((error as ExecError).stdout).toContain('Overwrite')
-      expect((error as ExecError).stdout).toContain('Skip')
-      expect((error as ExecError).stdout).toContain(
-        "File 'tests/__data__/output/channels.xml' successfully saved"
-      )
+      checkStdout(stdout)
       expect(content('tests/__data__/output/channels.xml')).toEqual(
-        content('tests/__data__/expected/sites/channels-editor/channels-editor.channels.xml')
+        content('tests/__data__/expected/sites/channels-edit/example.com.channels.xml')
+      )
+    } catch (error) {
+      // NOTE: for Windows only
+      if (process.env.DEBUG === 'true') console.log(cmd, error)
+      checkStdout((error as ExecError).stdout)
+      expect(content('tests/__data__/output/channels.xml')).toEqual(
+        content('tests/__data__/expected/sites/channels-edit/example.com.channels.xml')
       )
     }
   })
 })
+
+function checkStdout(stdout: string) {
+  expect(stdout).toContain('CNN International Europe | CNNInternationalEurope.us')
+  expect(stdout).toContain('Type...')
+  expect(stdout).toContain('Skip')
+  expect(stdout).toContain("File 'tests/__data__/output/channels.xml' successfully saved")
+}
 
 function content(filepath: string) {
   return fs.readFileSync(pathToFileURL(filepath), {

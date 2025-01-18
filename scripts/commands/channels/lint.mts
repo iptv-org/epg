@@ -1,7 +1,7 @@
 import chalk from 'chalk'
-import libxml, { ValidationError } from 'libxmljs2'
 import { program } from 'commander'
 import { Storage, File } from '@freearhey/core'
+import { XmlDocument, XsdValidator, XmlValidateError, ErrorDetail } from 'libxml2-wasm'
 
 const xsd = `<?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
@@ -23,12 +23,12 @@ const xsd = `<?xml version="1.0" encoding="UTF-8"?>
   </xs:element>
 </xs:schema>`
 
-program.argument('[filepath]', 'Path to *.channels.xml files to validate').parse(process.argv)
+program.argument('[filepath]', 'Path to *.channels.xml files to check').parse(process.argv)
 
 async function main() {
   const storage = new Storage()
 
-  let errors: ValidationError[] = []
+  let errors: ErrorDetail[] = []
 
   const files = program.args.length ? program.args : await storage.list('sites/**/*.channels.xml')
   for (const filepath of files) {
@@ -37,23 +37,28 @@ async function main() {
 
     const xml = await storage.load(filepath)
 
-    let localErrors: ValidationError[] = []
+    let localErrors: ErrorDetail[] = []
 
     try {
-      const xsdDoc = libxml.parseXml(xsd)
-      const doc = libxml.parseXml(xml)
+      const schema = XmlDocument.fromString(xsd)
+      const validator = XsdValidator.fromDoc(schema)
+      const doc = XmlDocument.fromString(xml)
 
-      if (!doc.validate(xsdDoc)) {
-        localErrors = doc.validationErrors
-      }
-    } catch (error) {
-      localErrors.push(error)
+      validator.validate(doc)
+
+      schema.dispose()
+      validator.dispose()
+      doc.dispose()
+    } catch (_error) {
+      const error = _error as XmlValidateError
+
+      localErrors = localErrors.concat(error.details)
     }
 
     if (localErrors.length) {
       console.log(`\n${chalk.underline(filepath)}`)
-      localErrors.forEach((error: ValidationError) => {
-        const position = `${error.line}:${error.column}`
+      localErrors.forEach((error: ErrorDetail) => {
+        const position = `${error.line}:${error.col}`
         console.log(` ${chalk.gray(position.padEnd(4, ' '))} ${error.message.trim()}`)
       })
 
