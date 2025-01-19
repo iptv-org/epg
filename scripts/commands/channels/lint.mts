@@ -14,13 +14,34 @@ const xsd = `<?xml version="1.0" encoding="UTF-8"?>
   </xs:element>
   <xs:element name="channel">
     <xs:complexType mixed="true">
-      <xs:attribute name="site" use="required" type="xs:string"/>
-      <xs:attribute name="lang" use="required" type="xs:string"/>
-      <xs:attribute name="site_id" use="required" type="xs:string"/>
+      <xs:attribute use="required" ref="site"/>
+      <xs:attribute use="required" ref="lang"/>
+      <xs:attribute use="required" ref="site_id"/>
       <xs:attribute name="xmltv_id" use="required" type="xs:string"/>
       <xs:attribute name="logo" type="xs:string"/>
     </xs:complexType>
   </xs:element>
+  <xs:attribute name="site">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:minLength value="1"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="site_id">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:minLength value="1"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="lang">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:minLength value="1"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
 </xs:schema>`
 
 program.argument('[filepath]', 'Path to *.channels.xml files to check').parse(process.argv)
