@@ -74,6 +74,8 @@ module.exports = {
     let channels = []
     await doFetch(queue, (url, data) => {
       data.assets.forEach(channel => {
+        if (!channel?.params?.params?.id) return
+
         channels.push({
           lang: 'vi',
           name: channel.params.internalTitle.replace('Channels_', ''),
