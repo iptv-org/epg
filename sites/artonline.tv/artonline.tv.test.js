@@ -6,7 +6,7 @@ dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
 const channel = {
-  site_id: 'Aflam2',
+  site_id: '#Aflam2',
   xmltv_id: 'ARTAflam2.sa'
 }
 
