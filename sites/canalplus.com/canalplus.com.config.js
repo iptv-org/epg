@@ -70,6 +70,7 @@ module.exports = {
       gn: 'cpafr/gn',
       gp: 'cpafr/gp',
       gw: 'cpafr/gw',
+      ht: 'cpant/ht',
       mf: 'cpant/mf',
       mg: 'cpafr/mg',
       ml: 'cpafr/ml',
