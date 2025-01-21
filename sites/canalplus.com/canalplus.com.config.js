@@ -9,29 +9,22 @@ module.exports = {
   days: 2,
   url: async function ({ channel, date }) {
     const [region, site_id] = channel.site_id.split('#')
-    let data = ''
-    if (region === 'pl') {
-      data = await axios
-      .get('https://www.canalplus.com/pl/program-tv/')
+
+    const baseUrl =
+      region === 'pl'
+        ? 'https://www.canalplus.com/pl/program-tv/'
+        : `https://www.canalplus.com/${region}/programme-tv/`
+
+    const data = await axios
+      .get(baseUrl)
       .then(r => r.data.toString())
       .catch(err => console.log(err))
 
-      const token = parseToken(data)
+    const token = parseToken(data)
+    const path = region === 'pl' ? 'mycanalint' : 'mycanal'
+    const diff = date.diff(dayjs.utc().startOf('d'), 'd')
 
-      const diff = date.diff(dayjs.utc().startOf('d'), 'd')
-
-      return `https://hodor.canalplus.pro/api/v2/mycanalint/channels/${token}/${site_id}/broadcasts/day/${diff}`
-    } else {
-      data = await axios
-      .get(`https://www.canalplus.com/${region}/programme-tv/`)
-      .then(r => r.data.toString())
-      .catch(err => console.log(err))
-      const token = parseToken(data)
-
-      const diff = date.diff(dayjs.utc().startOf('d'), 'd')
-
-      return `https://hodor.canalplus.pro/api/v2/mycanal/channels/${token}/${site_id}/broadcasts/day/${diff}`
-    }
+    return `https://hodor.canalplus.pro/api/v2/${path}/channels/${token}/${site_id}/broadcasts/day/${diff}`
   },
   async parser({ content }) {
     let programs = []
