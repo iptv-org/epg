@@ -14,15 +14,21 @@ type Status = {
 
 type SiteProps = {
   domain: string
+  totalChannels?: number
+  markedChannels?: number
   issues: Collection
 }
 
 export class Site {
   domain: string
+  totalChannels: number
+  markedChannels: number
   issues: Collection
 
-  constructor({ domain, issues }: SiteProps) {
+  constructor({ domain, totalChannels = 0, markedChannels = 0, issues }: SiteProps) {
     this.domain = domain
+    this.totalChannels = totalChannels
+    this.markedChannels = markedChannels
     this.issues = issues
   }
 
