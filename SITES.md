@@ -82,7 +82,6 @@
     <tr><td><a href="sites/m.tving.com">m.tving.com</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/magticom.ge">magticom.ge</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/mako.co.il">mako.co.il</a></td><td>🟢</td><td></td></tr>
-    <tr><td><a href="sites/maxtv.hrvatskitelekom.hr">maxtv.hrvatskitelekom.hr</a></td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2509</td></tr>
     <tr><td><a href="sites/maxtvgo.mk">maxtvgo.mk</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/mediagenie.co.kr">mediagenie.co.kr</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/mediaklikk.hu">mediaklikk.hu</a></td><td>🟢</td><td></td></tr>
@@ -94,10 +93,11 @@
     <tr><td><a href="sites/mi.tv">mi.tv</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/mncvision.id">mncvision.id</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/moji.id">moji.id</a></td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/mojmaxtv.hrvatskitelekom.hr">mojmaxtv.hrvatskitelekom.hr</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/mon-programme-tv.be">mon-programme-tv.be</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/movistarplus.es">movistarplus.es</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/mtel.ba">mtel.ba</a></td><td>🟢</td><td></td></tr>
-    <tr><td><a href="sites/mts.rs">mts.rs</a></td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2637</td></tr>
+    <tr><td><a href="sites/mts.rs">mts.rs</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/mujtvprogram.cz">mujtvprogram.cz</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/musor.tv">musor.tv</a></td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/mysky.com.ph">mysky.com.ph</a></td><td>🟢</td><td></td></tr>
