@@ -86,7 +86,7 @@ describe('epg:grab', () => {
     if (process.env.DEBUG === 'true') console.log(cmd, stdout)
 
     expect(content('tests/__data__/output/guide.xml')).toEqual(
-      content('tests/__data__/expected/guide.xml')
+      content('tests/__data__/expected/custom_guide.xml')
     )
   })
 
