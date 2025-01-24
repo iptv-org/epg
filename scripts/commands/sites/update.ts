@@ -40,19 +40,20 @@ async function main() {
   const data = new Collection()
   sites.forEach((site: Site) => {
     data.add([
-      `<a href="sites/${site.domain}">${site.domain}</a>`,
-      `${site.totalChannels} / ${site.markedChannels}`,
-      site.getStatus().emoji,
-      site.getIssues().all().join(', ')
+      { value: `<a href="sites/${site.domain}">${site.domain}</a>` },
+      { value: site.totalChannels, align: 'right' },
+      { value: site.markedChannels, align: 'right' },
+      { value: site.getStatus().emoji, align: 'center' },
+      { value: site.getIssues().all().join(', ') }
     ])
   })
 
   logger.info('updating sites.md...')
   const table = new HTMLTable(data.all(), [
-    { name: 'Site' },
-    { name: 'Channels *', align: 'center' },
-    { name: 'Status' },
-    { name: 'Notes' }
+    { name: 'Site', align: 'left' },
+    { name: 'Channels<br>(total / with xmltv-id)', colspan: 2, align: 'left' },
+    { name: 'Status', align: 'left' },
+    { name: 'Notes', align: 'left' }
   ])
   const rootStorage = new Storage(ROOT_DIR)
   const sitesTemplate = await new Storage().load('scripts/templates/_sites.md')
