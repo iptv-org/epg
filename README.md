@@ -58,6 +58,7 @@ Options:
   -l, --lang <code>             Filter channels by language (ISO 639-2 code)
   -t, --timeout <milliseconds>  Override the default timeout for each request
   -d, --delay <milliseconds>    Override the default delay between request
+  -x, --proxy <url>             Use the specified proxy (example: "socks5://username:password@127.0.0.1:1234")
   --days <days>                 Override the number of days for which the program will be loaded
                                 (defaults to the value from the site config)
   --maxConnections <number>     Limit on the number of concurrent requests (default: 1)
