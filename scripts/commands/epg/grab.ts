@@ -16,6 +16,7 @@ program
   .option('-l, --lang <code>', 'Filter channels by language (ISO 639-2 code)')
   .option('-t, --timeout <milliseconds>', 'Override the default timeout for each request')
   .option('-d, --delay <milliseconds>', 'Override the default delay between request')
+  .option('-x, --proxy <url>', 'Use the specified proxy')
   .option(
     '--days <days>',
     'Override the number of days for which the program will be loaded (defaults to the value from the site config)',
@@ -42,6 +43,7 @@ export type GrabOptions = {
   lang?: string
   days?: number
   cron?: string
+  proxy?: string
 }
 
 const options: GrabOptions = program.opts()
