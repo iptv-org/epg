@@ -191,7 +191,7 @@
     <tr><td><a href="sites/tvcesoir.fr">tvcesoir.fr</a></td><td align="center">135 / 133</td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/tvcubana.icrt.cu">tvcubana.icrt.cu</a></td><td align="center">10 / 10</td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/tvgids.nl">tvgids.nl</a></td><td align="center">115 / 90</td><td>🟢</td><td></td></tr>
-    <tr><td><a href="sites/tvguide.com">tvguide.com</a></td><td align="center">153 / 150</td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/tvguide.com">tvguide.com</a></td><td align="center">153 / 150</td><td>🟡</td><td>https://github.com/iptv-org/epg/issues/2644</td></tr>
     <tr><td><a href="sites/tvguide.myjcom.jp">tvguide.myjcom.jp</a></td><td align="center">145 / 140</td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/tvhebdo.com">tvhebdo.com</a></td><td align="center">317 / 215</td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/tvheute.at">tvheute.at</a></td><td align="center">53 / 53</td><td>🟢</td><td></td></tr>
