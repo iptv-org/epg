@@ -14,7 +14,7 @@ RUN echo '#!/bin/sh' > /entrypoint.sh && \
     echo 'crond -f & npx serve -l 80 /epg/serve' >> /entrypoint.sh && \
     chmod +x /entrypoint.sh
 
-RUN echo "0 5 * * * . /etc/environment; /epg/myepg.sh >> /var/log/cron.log 2>&1" > /etc/crontabs/root
+RUN echo "0 5 * * * /epg/myepg.sh" > /etc/crontabs/root
 
 EXPOSE 80
 
