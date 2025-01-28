@@ -10,6 +10,7 @@ Tools for downloading the EPG (Electronic Program Guide) for thousands of TV cha
 - 📺 [Playlists](#playlists)
 - 🗄 [Database](#database)
 - 👨‍💻 [API](#api)
+- 🐋 [Docker](#docker)
 - 📚 [Resources](#resources)
 - 💬 [Discussions](#discussions)
 - 🛠 [Contribution](#contribution)
@@ -51,18 +52,21 @@ And once the download is complete, the guide will be saved to the `guide.xml` fi
 Usage: npm run grab --- [options]
 
 Options:
-  -s, --site <name>             Name of the site to parse
+  -s, --site <name>             Name of the site to parse (env: SITE)
   -c, --channels <path>         Path to *.channels.xml file (required if the "--site" attribute is
-                                not specified)
-  -o, --output <path>           Path to output file (default: "guide.xml")
-  -l, --lang <code>             Filter channels by language (ISO 639-2 code)
-  -t, --timeout <milliseconds>  Override the default timeout for each request
-  -d, --delay <milliseconds>    Override the default delay between request
+                                not specified) (env: CHANNELS)
+  -o, --output <path>           Path to output file (default: "guide.xml", env: OUTPUT)
+  -l, --lang <code>             Filter channels by language (ISO 639-2 code) (env: LANG)
+  -t, --timeout <milliseconds>  Override the default timeout for each request (env: TIMEOUT)
+  -d, --delay <milliseconds>    Override the default delay between request (env: DELAY)
   --days <days>                 Override the number of days for which the program will be loaded
-                                (defaults to the value from the site config)
-  --maxConnections <number>     Limit on the number of concurrent requests (default: 1)
-  --cron <expression>           Schedule a script run (example: "0 0 * * *")
-  --gzip                        Create a compressed version of the guide as well (default: false)
+                                (defaults to the value from the site config) (env: DAYS)
+  --maxConnections <number>     Limit on the number of concurrent requests (default: 5, env:
+                                MAX_CONNECTIONS)
+  --cron <expression>           Schedule a script run (example: "0 0 * * *") (env: CRON)
+  --gzip                        Create a compressed version of the guide as well (default: false,
+                                env: GZIP)
+  -h, --help                    display help for command
 ```
 
 ### Access the guide by URL
@@ -146,6 +150,47 @@ All channel data is taken from the [iptv-org/database](https://github.com/iptv-o
 ## API
 
 The API documentation can be found in the [iptv-org/api](https://github.com/iptv-org/api) repository.
+
+## Docker
+
+This repository provides a `Dockerfile` that you can use to build a Docker image. To do this, you need to have [Docker](https://docs.docker.com/get-docker/) installed on your computer.
+
+Build your image using the following command:
+
+```sh
+docker build -t epg .
+```
+You can then run the image. The container supports currently two modes:
+
+- If you supply an `CRON` environment variable, the container will start in cron-mode. The container will grab an initial set of EPG data according to your configuration, start a webserver on port 3000 and then run the cron job according to your `CRON` configuration.
+
+  Example:
+  ```sh
+  docker run -d -e CRON="0 0 * * *" -e SITE=example.com -p 3000:3000 --name epg epg
+  ```
+
+  This will grab the EPG data from `example.com` every day at midnight, store the file inside the container at `/build/public/guide.xml` and `/build/public/guide.xml.gz`, and start a webserver on port 3000 to serve the files via http.
+
+- If you don't supply a `CRON` environment variable, the container will start in an one-off mode. The container will grab an initial set of EPG data according to your configuration and then exit.
+
+  Example:
+  ```sh
+  docker run --rm -e SITE=example.com -v "${PWD}:/build/public" epg
+  ```
+
+  This will grab the EPG data from `example.com` and store the file in your current working directory.
+
+### Configuration
+
+You can configure the `grab` command by setting environment variables. All available options are listed in the [Usage](#usage) section with the corresponding environment variable names. Docker uses the same defaults of the options like the script with the execption of the `OUTPUT` and the `GZIP` option. The most important environment values are:
+
+| Environment variable | Default value | `npm run` option  |
+| -------------------- | ------------- | ----------------- |
+| `OUTPUT`             | `/build/public/guide.xml`   | `--output`        |
+| `GZIP`               | `true`        | `--gzip`          |
+| `SITE`               |               | `--site`          |
+| `CRON`               |               | `--cron`          |
+
 
 ## Resources
 
