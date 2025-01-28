@@ -86,6 +86,7 @@ module.exports = {
       mu: 'cpmus/mu',
       nc: 'cpncl/nc',
       ne: 'cpafr/ne',
+      pf: 'cppyf/pf',
       pl: 'cppol',
       re: 'cpreu/re',
       rw: 'cpafr/rw',

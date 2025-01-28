@@ -16,6 +16,7 @@
 | Equatorial Guinea        | `gp` | https://www.canalplus.com/gp/programme-tv/ |
 | France                   | `fr` | https://www.canalplus.com/programme-tv/    |
 | French Guiana            | `gf` | https://www.canalplus.com/gf/programme-tv/ |
+| French Polynesia         | `pf` | https://www.canalplus.com/pf/programme-tv/ |
 | Gabon                    | `ga` | https://www.canalplus.com/ga/programme-tv/ |
 | Gambia                   | `gm` | https://www.canalplus.com/gm/programme-tv/ |
 | Ghana                    | `gh` | https://www.canalplus.com/gh/programme-tv/ |
