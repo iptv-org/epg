@@ -129,7 +129,7 @@
     <tr><td><a href="sites/programme-tv.net">programme-tv.net</a></td><td align="center">295 / 197</td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/programme-tv.vini.pf">programme-tv.vini.pf</a></td><td align="center">58 / 2</td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/programme.tvb.com">programme.tvb.com</a></td><td align="center">8 / 6</td><td>🟢</td><td></td></tr>
-    <tr><td><a href="sites/programtv.onet.pl">programtv.onet.pl</a></td><td align="center">589 / 315</td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/programtv.onet.pl">programtv.onet.pl</a></td><td align="center">590 / 361</td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/raiplay.it">raiplay.it</a></td><td align="center">17 / 13</td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/reportv.com.ar">reportv.com.ar</a></td><td align="center">163 / 97</td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/rikstv.no">rikstv.no</a></td><td align="center">80 / 0</td><td>🟢</td><td></td></tr>
