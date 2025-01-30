@@ -43,7 +43,7 @@
     <tr><td><a href="sites/directv.com">directv.com</a></td><td align="center">1043 / 698</td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2284</td></tr>
     <tr><td><a href="sites/directv.com.ar">directv.com.ar</a></td><td align="center">412 / 229</td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2339</td></tr>
     <tr><td><a href="sites/directv.com.uy">directv.com.uy</a></td><td align="center">143 / 142</td><td>🟢</td><td></td></tr>
-    <tr><td><a href="sites/dishtv.in">dishtv.in</a></td><td align="center">394 / 287</td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2445</td></tr>
+    <tr><td><a href="sites/dishtv.in">dishtv.in</a></td><td align="center">453 / 212</td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/dna.fi">dna.fi</a></td><td align="center">122 / 0</td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/dsmart.com.tr">dsmart.com.tr</a></td><td align="center">104 / 90</td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/dstv.com">dstv.com</a></td><td align="center">6983 / 181</td><td>🟢</td><td></td></tr>
@@ -114,7 +114,7 @@
     <tr><td><a href="sites/nuevosiglo.com.uy">nuevosiglo.com.uy</a></td><td align="center">173 / 47</td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/nzxmltv.com">nzxmltv.com</a></td><td align="center">532 / 118</td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/ontvtonight.com">ontvtonight.com</a></td><td align="center">5177 / 532</td><td>🟢</td><td></td></tr>
-    <tr><td><a href="sites/opto.sic.pt">opto.sic.pt</a></td><td align="center">4 / 2</td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/opto.sic.pt">opto.sic.pt</a></td><td align="center">4 / 4</td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/orangetv.orange.es">orangetv.orange.es</a></td><td align="center">168 / 165</td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/osn.com">osn.com</a></td><td align="center">118 / 98</td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/pbsguam.org">pbsguam.org</a></td><td align="center">1 / 1</td><td>🟢</td><td></td></tr>
@@ -195,6 +195,7 @@
     <tr><td><a href="sites/tvguide.myjcom.jp">tvguide.myjcom.jp</a></td><td align="center">145 / 140</td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/tvhebdo.com">tvhebdo.com</a></td><td align="center">317 / 215</td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/tvheute.at">tvheute.at</a></td><td align="center">53 / 53</td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/tvi.iol.pt">tvi.iol.pt</a></td><td align="center">6 / 6</td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/tvim.tv">tvim.tv</a></td><td align="center">25 / 19</td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/tvinsider.com">tvinsider.com</a></td><td align="center">374 / 0</td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/tvireland.ie">tvireland.ie</a></td><td align="center">334 / 304</td><td>🟢</td><td></td></tr>
