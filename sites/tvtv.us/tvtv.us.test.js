@@ -32,7 +32,7 @@ it('can generate valid url', () => {
 it('can parse response', async () => {
   const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'))
 
-  let results = await parser({ content })
+  let results = await parser({ content, request: { agent: null } })
   results = results.map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
@@ -164,7 +164,8 @@ it('can parse response', async () => {
 
 it('can handle empty guide', async () => {
   const results = await parser({
-    content: '[]'
+    content: '[]',
+    request: { agent: null }
   })
 
   expect(results).toMatchObject([])
