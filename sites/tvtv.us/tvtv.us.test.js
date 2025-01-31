@@ -10,8 +10,8 @@ dayjs.extend(utc)
 
 jest.mock('axios')
 
-axios.get.mockImplementation(url => {
-  if (url === 'https://tvtv.us/api/v1/programs/EP009311820269') {
+axios.mockImplementation(req => {
+  if (req.url === 'https://tvtv.us/api/v1/programs/EP009311820269') {
     return Promise.resolve({
       data: JSON.parse(fs.readFileSync(path.resolve(__dirname, '__data__/program_1.json')))
     })
