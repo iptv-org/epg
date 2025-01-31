@@ -2,9 +2,15 @@ type Column = {
   name: string
   nowrap?: boolean
   align?: string
+  colspan?: number
 }
 
-type DataItem = string[]
+type DataItem = {
+  value: string
+  nowrap?: boolean
+  align?: string
+  colspan?: number
+}[]
 
 export class HTMLTable {
   data: DataItem[]
@@ -20,20 +26,23 @@ export class HTMLTable {
 
     output += '  <thead>\r\n    <tr>'
     for (const column of this.columns) {
-      output += `<th align="left">${column.name}</th>`
+      const nowrap = column.nowrap ? ' nowrap' : ''
+      const align = column.align ? ` align="${column.align}"` : ''
+      const colspan = column.colspan ? ` colspan="${column.colspan}"` : ''
+
+      output += `<th${align}${nowrap}${colspan}>${column.name}</th>`
     }
     output += '</tr>\r\n  </thead>\r\n'
 
     output += '  <tbody>\r\n'
-    for (const item of this.data) {
+    for (const row of this.data) {
       output += '    <tr>'
-      let i = 0
-      for (const prop in item) {
-        const column = this.columns[i]
-        const nowrap = column.nowrap ? ' nowrap' : ''
-        const align = column.align ? ` align="${column.align}"` : ''
-        output += `<td${align}${nowrap}>${item[prop]}</td>`
-        i++
+      for (const item of row) {
+        const nowrap = item.nowrap ? ' nowrap' : ''
+        const align = item.align ? ` align="${item.align}"` : ''
+        const colspan = item.colspan ? ` colspan="${item.colspan}"` : ''
+
+        output += `<td${align}${nowrap}${colspan}>${item.value}</td>`
       }
       output += '</tr>\r\n'
     }

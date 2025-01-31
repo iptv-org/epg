@@ -28,7 +28,7 @@
     <tr><td><a href="sites/berrymedia.co.kr">berrymedia.co.kr</a></td><td align="center">5 / 5</td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/cablego.com.pe">cablego.com.pe</a></td><td align="center">100 / 20</td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/cableplus.com.uy">cableplus.com.uy</a></td><td align="center">171 / 47</td><td>🟢</td><td></td></tr>
-    <tr><td><a href="sites/canalplus.com">canalplus.com</a></td><td align="center">11591 / 212</td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/canalplus.com">canalplus.com</a></td><td align="center">11720 / 212</td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/cgates.lt">cgates.lt</a></td><td align="center">102 / 61</td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/chada.ma">chada.ma</a></td><td align="center">1 / 1</td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/chaines-tv.orange.fr">chaines-tv.orange.fr</a></td><td align="center">296 / 147</td><td>🟢</td><td></td></tr>
@@ -191,7 +191,7 @@
     <tr><td><a href="sites/tvcesoir.fr">tvcesoir.fr</a></td><td align="center">135 / 133</td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/tvcubana.icrt.cu">tvcubana.icrt.cu</a></td><td align="center">10 / 10</td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/tvgids.nl">tvgids.nl</a></td><td align="center">115 / 90</td><td>🟢</td><td></td></tr>
-    <tr><td><a href="sites/tvguide.com">tvguide.com</a></td><td align="center">153 / 150</td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/tvguide.com">tvguide.com</a></td><td align="center">153 / 150</td><td>🟡</td><td>https://github.com/iptv-org/epg/issues/2644</td></tr>
     <tr><td><a href="sites/tvguide.myjcom.jp">tvguide.myjcom.jp</a></td><td align="center">145 / 140</td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/tvhebdo.com">tvhebdo.com</a></td><td align="center">317 / 215</td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/tvheute.at">tvheute.at</a></td><td align="center">53 / 53</td><td>🟢</td><td></td></tr>
