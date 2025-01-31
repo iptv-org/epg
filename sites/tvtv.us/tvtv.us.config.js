@@ -1,5 +1,4 @@
 const dayjs = require('dayjs')
-const doFetch = require('@ntlab/sfetch')
 
 let cachedPrograms = {}
 
@@ -11,12 +10,23 @@ module.exports = {
       .add(1, 'day')
       .toJSON()}/${channel.site_id}`
   },
-  async parser({ content }) {
+  request: {
+    headers: {
+      Accept: '*/*',
+      Connection: 'keep-alive',
+      'User-Agent':
+        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36',
+      'sec-ch-ua': '"Not.A/Brand";v="8", "Chromium";v="114", "Google Chrome";v="114"',
+      'sec-ch-ua-mobile': '?0',
+      'sec-ch-ua-platform': '"Windows"'
+    }
+  },
+  async parser({ content, request }) {
     let programs = []
     let queue = []
 
     const items = parseItems(content)
-    items.forEach(item => {
+    for (const item of items) {
       const start = dayjs(item.startTime)
       const stop = start.add(item.duration, 'minute')
 
@@ -31,16 +41,26 @@ module.exports = {
       if (item.programId && !cachedPrograms[item.programId]) {
         queue.push({
           programId: item.programId,
-          url: `https://tvtv.us/api/v1/programs/${item.programId}`
+          url: `https://tvtv.us/api/v1/programs/${item.programId}`,
+          httpAgent: request.agent,
+          httpsAgent: request.agent,
+          headers: module.exports.request.headers
         })
       }
-    })
+    }
 
-    await doFetch(queue, (req, data) => {
-      if (!data || !data.title) return
+    const axios = require('axios')
+    for (const req of queue) {
+      await wait(5000)
+
+      const data = await axios(req)
+        .then(r => r.data)
+        .catch(console.error)
+
+      if (!data || !data.title) continue
 
       cachedPrograms[req.programId] = data
-    })
+    }
 
     programs.forEach(program => {
       const data = cachedPrograms[program.id]
@@ -81,10 +101,12 @@ function parseSeason(data) {
 }
 
 function parseRatings(data) {
-  return data.ratings.map(rating => ({
-    value: rating.code,
-    system: rating.body
-  }))
+  return Array.isArray(data.ratings)
+    ? data.ratings.map(rating => ({
+        value: rating.code,
+        system: rating.body
+      }))
+    : []
 }
 
 function parseWriters(data) {
@@ -117,4 +139,10 @@ function parseItems(content) {
   } catch {
     return []
   }
+}
+
+function wait(ms) {
+  return new Promise(resolve => {
+    setTimeout(resolve, ms)
+  })
 }
