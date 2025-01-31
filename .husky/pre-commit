@@ -1,2 +1,3 @@
-.husky/check_scripts.sh
-.husky/check_channels.sh
+.husky/scripts_lint.sh
+.husky/channels_lint.sh
+.husky/channels_validate.sh
