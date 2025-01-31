@@ -142,6 +142,8 @@ function parseItems(content) {
 }
 
 function wait(ms) {
+  if (process.env.NODE_ENV === 'test') return
+
   return new Promise(resolve => {
     setTimeout(resolve, ms)
   })
