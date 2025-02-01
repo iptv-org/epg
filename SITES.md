@@ -8,7 +8,7 @@
   </thead>
   <tbody>
     <tr><td><a href="sites/9tv.co.il">9tv.co.il</a></td><td align="center">1 / 1</td><td>🟢</td><td></td></tr>
-    <tr><td><a href="sites/abc.net.au">abc.net.au</a></td><td align="center">540 / 55</td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/abc.net.au">abc.net.au</a></td><td align="center">540 / 55</td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2652</td></tr>
     <tr><td><a href="sites/allente.dk">allente.dk</a></td><td align="center">74 / 44</td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/allente.fi">allente.fi</a></td><td align="center">71 / 25</td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/allente.no">allente.no</a></td><td align="center">84 / 53</td><td>🟢</td><td></td></tr>
@@ -26,7 +26,7 @@
     <tr><td><a href="sites/bein.com">bein.com</a></td><td align="center">160 / 160</td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/beinsports.com">beinsports.com</a></td><td align="center">104 / 81</td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/berrymedia.co.kr">berrymedia.co.kr</a></td><td align="center">5 / 5</td><td>🟢</td><td></td></tr>
-    <tr><td><a href="sites/cablego.com.pe">cablego.com.pe</a></td><td align="center">100 / 20</td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/cablego.com.pe">cablego.com.pe</a></td><td align="center">100 / 20</td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2667</td></tr>
     <tr><td><a href="sites/cableplus.com.uy">cableplus.com.uy</a></td><td align="center">171 / 47</td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/canalplus.com">canalplus.com</a></td><td align="center">11720 / 212</td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/cgates.lt">cgates.lt</a></td><td align="center">102 / 61</td><td>🟢</td><td></td></tr>
@@ -97,7 +97,7 @@
     <tr><td><a href="sites/mojmaxtv.hrvatskitelekom.hr">mojmaxtv.hrvatskitelekom.hr</a></td><td align="center">243 / 0</td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/mon-programme-tv.be">mon-programme-tv.be</a></td><td align="center">111 / 95</td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/movistarplus.es">movistarplus.es</a></td><td align="center">178 / 0</td><td>🟢</td><td></td></tr>
-    <tr><td><a href="sites/mtel.ba">mtel.ba</a></td><td align="center">417 / 220</td><td>🟢</td><td></td></tr>
+    <tr><td><a href="sites/mtel.ba">mtel.ba</a></td><td align="center">417 / 220</td><td>🔴</td><td>https://github.com/iptv-org/epg/issues/2658</td></tr>
     <tr><td><a href="sites/mts.rs">mts.rs</a></td><td align="center">457 / 0</td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/mujtvprogram.cz">mujtvprogram.cz</a></td><td align="center">216 / 203</td><td>🟢</td><td></td></tr>
     <tr><td><a href="sites/musor.tv">musor.tv</a></td><td align="center">181 / 146</td><td>🟢</td><td></td></tr>
