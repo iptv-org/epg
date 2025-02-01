@@ -396,10 +396,10 @@
   dependencies:
     levn "^0.4.1"
 
-"@freearhey/core@^0.5.0":
-  version "0.5.0"
-  resolved "https://registry.npmjs.org/@freearhey/core/-/core-0.5.0.tgz"
-  integrity sha512-FcA5Pv9RvFvLYAwNmD/2vlSR49Rx+kihJ+xbIUgIACHY6lBUptfbNznm00DQoUyWRJG/cfT3dkYCwIxSUsdP+w==
+"@freearhey/core@^0.5.1":
+  version "0.5.1"
+  resolved "https://registry.npmjs.org/@freearhey/core/-/core-0.5.1.tgz"
+  integrity sha512-UDKIOyrtcUXaiAeIvjNFTI6DlempiOQaRB83CqHNF1VPRHNBiNhGhERWyInHE2cjLp/cc0CA/IykOYS39kBK7Q==
   dependencies:
     "@types/fs-extra" "^11.0.2"
     "@types/lodash" "^4.14.198"
@@ -741,10 +741,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@ntlab/sfetch@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/@ntlab/sfetch/-/sfetch-1.0.0.tgz"
-  integrity sha512-AWrC43z1TncvB7S7dl9Wn8xZpCqdKFBfXqaN3BXPfJeS3gxV9Fm86eAsW95YdXTOgPWbCC/GAgVuXi6Aot6DkQ==
+"@ntlab/sfetch@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.npmjs.org/@ntlab/sfetch/-/sfetch-1.2.0.tgz"
+  integrity sha512-9SE4NnqWo8l6mG0rnAkgng6ozSamIpF3EC+GOTQGGa6eAC0tNJvzrylMz6YRjjEGH6mOfn7ZBAuKj5WIZUul6A==
   dependencies:
     axios "^1.7.9"
 
@@ -1271,7 +1271,7 @@ acorn-walk@^8.1.1:
   resolved "https://registry.npmjs.org/acorn/-/acorn-8.14.0.tgz"
   integrity sha512-cl669nCJTZBsL97OF4kUQm5g5hC2uihk0NxY3WENAC0TYdILVkAyHymAntgxGkl7K+t0cXIrH5siy5S4XkFycA==
 
-agent-base@^7.1.3:
+agent-base@^7.1.2, agent-base@^7.1.3:
   version "7.1.3"
   resolved "https://registry.npmjs.org/agent-base/-/agent-base-7.1.3.tgz"
   integrity sha512-jRR5wdylq8CkOe6hei19GGZnxM6rBGwFl3Bg0YItGDimvjGtAvdZk4Pu6Cl4u4Igsws4a1fd1Vq3ezrhn4KmFw==
@@ -2158,10 +2158,10 @@ entities@^4.2.0, entities@^4.3.0, entities@^4.4.0:
   resolved "https://registry.npmjs.org/entities/-/entities-4.4.0.tgz"
   integrity sha512-oYp7156SP8LkeGD0GF85ad1X9Ai79WtRsZ2gxJqtBuzH+98YUV6jkHEKlZkMbcrjJjIVJNIDP/3WL9wQkoPbWA==
 
-epg-grabber@^0.37.4:
-  version "0.37.4"
-  resolved "https://registry.npmjs.org/epg-grabber/-/epg-grabber-0.37.4.tgz"
-  integrity sha512-PS104bH9tHRa9kivSwx47AKMkfHwKy51XQTx+GO6sIXvIp2Z4LBpwMEXGcfPoAsdIGxgs2Wrl0dZ/QGL+7x6YQ==
+epg-grabber@^0.38.0:
+  version "0.38.0"
+  resolved "https://registry.npmjs.org/epg-grabber/-/epg-grabber-0.38.0.tgz"
+  integrity sha512-jbwTgi6G7e+zrb2oNC0C7mcQYoRkFnvhXCurexeICaEy4avRB6WS5rD/yfqYoiqaXOM3x1BNBpCKFYoS7Ob5YA==
   dependencies:
     axios "^1.6.1"
     axios-cache-interceptor "^0.10.3"
@@ -2176,6 +2176,7 @@ epg-grabber@^0.37.4:
     http-cookie-agent "^6.0.8"
     lodash "^4.17.21"
     node-gzip "^1.1.2"
+    socks-proxy-agent "^8.0.5"
     tough-cookie "^5.0.0"
     winston "^3.3.3"
     xml-js "^1.6.11"
@@ -2835,6 +2836,14 @@ inquirer@^8.2.6:
     through "^2.3.6"
     wrap-ansi "^6.0.1"
 
+ip-address@^9.0.5:
+  version "9.0.5"
+  resolved "https://registry.npmjs.org/ip-address/-/ip-address-9.0.5.tgz"
+  integrity sha512-zHtQzGojZXTwZTHQqra+ETKd4Sn3vgi7uBmlPoXVWZqYvuKmtI0l/VZTjqGmJY9x88GGOaZ9+G9ES8hC4T4X8g==
+  dependencies:
+    jsbn "1.1.0"
+    sprintf-js "^1.1.3"
+
 is-arrayish@^0.2.1:
   version "0.2.1"
   resolved "https://registry.npmjs.org/is-arrayish/-/is-arrayish-0.2.1.tgz"
@@ -3372,6 +3381,11 @@ js-yaml@^4.1.0:
   integrity sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==
   dependencies:
     argparse "^2.0.1"
+
+jsbn@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.npmjs.org/jsbn/-/jsbn-1.1.0.tgz"
+  integrity sha512-4bYVV3aAMtDTTu4+xsDYa6sy9GyJ69/amsu9sYF2zqjiEoZA5xJi3BrfX3uY+/IekIu7MwdObdbDWpoZdBv3/A==
 
 jsesc@^2.5.1:
   version "2.5.2"
@@ -4393,6 +4407,28 @@ slash@^3.0.0:
   resolved "https://registry.npmjs.org/slash/-/slash-3.0.0.tgz"
   integrity sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==
 
+smart-buffer@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.npmjs.org/smart-buffer/-/smart-buffer-4.2.0.tgz"
+  integrity sha512-94hK0Hh8rPqQl2xXc3HsaBoOXKV20MToPkcXvwbISWLEs+64sBq5kFgn2kJDHb1Pry9yrP0dxrCI9RRci7RXKg==
+
+socks-proxy-agent@^8.0.5:
+  version "8.0.5"
+  resolved "https://registry.npmjs.org/socks-proxy-agent/-/socks-proxy-agent-8.0.5.tgz"
+  integrity sha512-HehCEsotFqbPW9sJ8WVYB6UbmIMv7kUUORIF2Nncq4VQvBfNBLibW9YZR5dlYCSUhwcD628pRllm7n+E+YTzJw==
+  dependencies:
+    agent-base "^7.1.2"
+    debug "^4.3.4"
+    socks "^2.8.3"
+
+socks@^2.8.3:
+  version "2.8.3"
+  resolved "https://registry.npmjs.org/socks/-/socks-2.8.3.tgz"
+  integrity sha512-l5x7VUUWbjVFbafGLxPWkYsHIhEvmF85tbIeFZWc8ZPtoMyybuEhL7Jye/ooC4/d48FgOjSJXgsF/AJPYCW8Zw==
+  dependencies:
+    ip-address "^9.0.5"
+    smart-buffer "^4.2.0"
+
 source-map-support@0.5.13:
   version "0.5.13"
   resolved "https://registry.npmjs.org/source-map-support/-/source-map-support-0.5.13.tgz"
@@ -4405,6 +4441,11 @@ source-map@^0.6.0, source-map@^0.6.1:
   version "0.6.1"
   resolved "https://registry.npmjs.org/source-map/-/source-map-0.6.1.tgz"
   integrity sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
+
+sprintf-js@^1.1.3:
+  version "1.1.3"
+  resolved "https://registry.npmjs.org/sprintf-js/-/sprintf-js-1.1.3.tgz"
+  integrity sha512-Oo+0REFV59/rz3gfJNKQiBlwfHaSESl1pcGyABQsnnIfWOFt6JNj5gCog2U6MLZ//IGYD+nA8nI+mTShREReaA==
 
 sprintf-js@~1.0.2:
   version "1.0.3"
