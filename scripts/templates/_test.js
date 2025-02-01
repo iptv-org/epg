@@ -6,7 +6,7 @@ dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
 const date = dayjs.utc('2025-01-12', 'YYYY-MM-DD').startOf('d')
-const channel = { site_id: 'bbc1', xmltv_id: 'BBCOne.uk' }
+const channel = { site_id: 'bbc1' }
 
 it('can generate valid url', () => {
   expect(url({ channel, date })).toBe('https://example.com/api/bbc1/2025-01-12')
@@ -32,11 +32,7 @@ it('can parse response', () => {
 })
 
 it('can handle empty guide', () => {
-  const result = parser({
-    date,
-    channel,
-    content: ''
-  })
+  const results = parser({ content: '' })
 
-  expect(result).toMatchObject([])
+  expect(results).toMatchObject([])
 })

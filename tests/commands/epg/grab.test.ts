@@ -86,7 +86,7 @@ describe('epg:grab', () => {
     if (process.env.DEBUG === 'true') console.log(cmd, stdout)
 
     expect(content('tests/__data__/output/guide.xml')).toEqual(
-      content('tests/__data__/expected/guide.xml')
+      content('tests/__data__/expected/custom_guide.xml')
     )
   })
 
@@ -96,6 +96,30 @@ describe('epg:grab', () => {
     if (process.env.DEBUG === 'true') console.log(cmd, stdout)
 
     expect(stdout).toContain('ERR: Connection timeout')
+  })
+
+  it('can grab epg via https proxy', () => {
+    const cmd = `${ENV_VAR} npm run grab --- --site=example.com --proxy=https://bob:123456@proxy.com:1234 --output="${path.resolve(
+      'tests/__data__/output/guide.xml'
+    )}"`
+    const stdout = execSync(cmd, { encoding: 'utf8' })
+    if (process.env.DEBUG === 'true') console.log(cmd, stdout)
+
+    expect(content('tests/__data__/output/guide.xml')).toEqual(
+      content('tests/__data__/expected/guide2.xml')
+    )
+  })
+
+  it('can grab epg via socks5 proxy', () => {
+    const cmd = `${ENV_VAR} npm run grab --- --site=example.com --proxy=socks5://bob:123456@proxy.com:1234 --output="${path.resolve(
+      'tests/__data__/output/guide.xml'
+    )}"`
+    const stdout = execSync(cmd, { encoding: 'utf8' })
+    if (process.env.DEBUG === 'true') console.log(cmd, stdout)
+
+    expect(content('tests/__data__/output/guide.xml')).toEqual(
+      content('tests/__data__/expected/guide2.xml')
+    )
   })
 })
 

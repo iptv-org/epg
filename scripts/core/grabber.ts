@@ -1,8 +1,9 @@
 import { EPGGrabber, GrabCallbackData, EPGGrabberMock, SiteConfig, Channel } from 'epg-grabber'
 import { Logger, Collection } from '@freearhey/core'
-import { Queue } from './'
+import { Queue, ProxyParser } from './'
 import { GrabOptions } from '../commands/epg/grab'
 import { TaskQueue, PromisyClass } from 'cwait'
+import { SocksProxyAgent } from 'socks-proxy-agent'
 
 type GrabberProps = {
   logger: Logger
@@ -14,6 +15,7 @@ export class Grabber {
   logger: Logger
   queue: Queue
   options: GrabOptions
+  grabber: EPGGrabber | EPGGrabberMock
 
   constructor({ logger, queue, options }: GrabberProps) {
     this.logger = logger
@@ -23,6 +25,7 @@ export class Grabber {
   }
 
   async grab(): Promise<{ channels: Collection; programs: Collection }> {
+    const proxyParser = new ProxyParser()
     const taskQueue = new TaskQueue(Promise as PromisyClass, this.options.maxConnections)
 
     const total = this.queue.size()
@@ -47,6 +50,24 @@ export class Grabber {
             if (this.options.delay !== undefined) {
               const delay = parseInt(this.options.delay)
               config.delay = delay
+            }
+
+            if (this.options.proxy !== undefined) {
+              const proxy = proxyParser.parse(this.options.proxy)
+
+              if (
+                proxy.protocol &&
+                ['socks', 'socks5', 'socks5h', 'socks4', 'socks4a'].includes(String(proxy.protocol))
+              ) {
+                const socksProxyAgent = new SocksProxyAgent(this.options.proxy)
+
+                config.request = {
+                  ...config.request,
+                  ...{ httpAgent: socksProxyAgent, httpsAgent: socksProxyAgent }
+                }
+              } else {
+                config.request = { ...config.request, ...{ proxy } }
+              }
             }
 
             const _programs = await this.grabber.grab(

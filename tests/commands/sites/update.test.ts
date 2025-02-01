@@ -3,24 +3,14 @@ import fs from 'fs-extra'
 import { pathToFileURL } from 'node:url'
 import os from 'os'
 
-let ENV_VAR =
-  'DOT_SITES_DIR=tests/__data__/output/.sites SITES_DIR=tests/__data__/input/sites-update/sites'
+let ENV_VAR = 'SITES_DIR=tests/__data__/input/sites-update/sites ROOT_DIR=tests/__data__/output'
 if (os.platform() === 'win32') {
   ENV_VAR =
-    'SET "DOT_SITES_DIR=tests/__data__/output/.sites" && SET "SITES_DIR=tests/__data__/input/sites-update/sites" &&'
+    'SET "SITES_DIR=tests/__data__/input/sites-update/sites" && SET "ROOT_DIR=tests/__data__/output" &&'
 }
 
 beforeEach(() => {
   fs.emptyDirSync('tests/__data__/output')
-  fs.mkdirSync('tests/__data__/output/.sites')
-  fs.copyFileSync(
-    'tests/__data__/input/.sites/config.json',
-    'tests/__data__/output/.sites/config.json'
-  )
-  fs.copyFileSync(
-    'tests/__data__/input/.sites/template.md',
-    'tests/__data__/output/.sites/template.md'
-  )
 })
 
 it('can update SITES.md', () => {
@@ -29,11 +19,9 @@ it('can update SITES.md', () => {
   const stdout = execSync(cmd, { encoding: 'utf8' })
   if (process.env.DEBUG === 'true') console.log(cmd, stdout)
 
-  expect(content('tests/__data__/output/sites.md')).toEqual(
-    content('tests/__data__/expected/_sites.md')
+  expect(content('tests/__data__/output/SITES.md')).toEqual(
+    content('tests/__data__/expected/SITES.md')
   )
-
-  expect(true).toBe(true)
 })
 
 function content(filepath: string) {

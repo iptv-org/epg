@@ -61,6 +61,7 @@ Options:
   -l, --lang <code>             Allows to limit the download to channels in the specified language only (ISO 639-1 code)
   -t, --timeout <milliseconds>  Timeout for each request in milliseconds (default: 0)
   -d, --delay <milliseconds>    Delay between request in milliseconds (default: 0)
+  -x, --proxy <url>             Use the specified proxy (example: "socks5://username:password@127.0.0.1:1234")
   --days <days>                 Number of days for which the program will be loaded (defaults to the value from the site config)
   --maxConnections <number>     Number of concurrent requests (default: 1)
   --gzip                        Specifies whether or not to create a compressed version of the guide (default: false)

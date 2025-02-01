@@ -7,7 +7,7 @@ const customParseFormat = require('dayjs/plugin/customParseFormat')
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
-const date = dayjs.utc('2023-01-12', 'YYYY-MM-DD').startOf('d')
+const date = dayjs.utc('2025-01-19', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: 'bg/tv-programa#24kitchen-bg',
   xmltv_id: '24KitchenBulgaria.bg'
@@ -15,7 +15,7 @@ const channel = {
 
 it('can generate valid url', () => {
   expect(url({ channel, date })).toBe(
-    'https://tvprofil.com/bg/tv-programa/program/?datum=2023-01-12&kanal=24kitchen-bg&callback=cb&b51=818933'
+    'https://tvprofil.com/bg/tv-programa/program/?datum=2025-01-19&kanal=24kitchen-bg&callback=cb&b52=824084'
   )
 })
 

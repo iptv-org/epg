@@ -25,6 +25,7 @@ program
       'DELAY'
     )
   )
+  .addOption(new Option('-x, --proxy <url>', 'Use the specified proxy').env('PROXY'))
   .addOption(
     new Option(
       '--days <days>',
@@ -55,6 +56,7 @@ export type GrabOptions = {
   delay?: string
   lang?: string
   days?: number
+  proxy?: string
 }
 
 const options: GrabOptions = program.opts()
