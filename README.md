@@ -191,6 +191,7 @@ docker run \
 -e SITE=example.com \
 -e CLANG=fr \
 -e CRON="0 0,12 * * *" \
+-e PROXY="socks5://username:password@127.0.0.1:1234" \
 -e MAX_CONNECTIONS=10 \
 -e GZIP=true \
 -e DAYS=14 \
@@ -204,6 +205,7 @@ iptv-org/epg
 | SITE            | Name of the site to parse                                                                                                 |
 | CLANG           | Limit the download to channels in the specified language only ([ISO 639-1](https://en.wikipedia.org/wiki/ISO_639-1) code) |
 | CRON            | A [cron expression](https://crontab.guru/) describing the schedule of the guide loadings (by default will run once)       |
+| PROXY           | Use the specified proxy                                                                                                   |
 | MAX_CONNECTIONS | Limit on the number of concurrent requests (default: 1)                                                                   |
 | GZIP            | Boolean value indicating whether to create a compressed version of the guide (default: false)                             |
 | DAYS            | Number of days for which the guide will be loaded (defaults to the value from the site config)                            |
