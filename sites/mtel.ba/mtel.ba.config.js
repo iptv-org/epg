@@ -1,23 +1,33 @@
-const axios = require('axios')
+const _ = require('lodash')
+const doFetch = require('@ntlab/sfetch')
 const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
+const customParseFormat = require('dayjs/plugin/customParseFormat')
 
+dayjs.extend(utc)
 dayjs.extend(timezone)
+dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'mtel.ba',
   days: 2,
-  url: function ({ channel, date }) {
-    const [position] = channel.site_id.split('#')
+  url({ channel, date }) {
+    const [platform] = channel.site_id.split('#')
 
-    return `https://mtel.ba/oec/epg/program?date=${date.format('YYYY-MM-DD')}&position=${position}`
+    return `https://mtel.ba/hybris/ecommerce/b2c/v1/products/channels/epg?platform=tv-${platform}&currentPage=0&pageSize=1000&date=${date.format(
+      'YYYY-MM-DD'
+    )}`
   },
   request: {
-    headers: {
-      'X-Requested-With': 'XMLHttpRequest'
+    timeout: 20000, // 20 seconds
+    maxContentLength: 10000000, // 10 Mb
+    cache: {
+      interpretHeader: false,
+      ttl: 24 * 60 * 60 * 1000 // 1 day
     }
   },
-  parser: function ({ content, channel }) {
+  parser({ content, channel }) {
     let programs = []
     const items = parseItems(content, channel)
     items.forEach(item => {
@@ -25,76 +35,76 @@ module.exports = {
       programs.push({
         title: item.title,
         description: item.description,
-        category: item.category,
-        image: item.image,
-        start: parseStart(item).toJSON(),
-        stop: parseStop(item).toJSON()
+        categories: parseCategories(item),
+        image: parseImage(item),
+        start: parseStart(item),
+        stop: parseStop(item)
       })
     })
 
     return programs
   },
-  async channels() {
+  async channels({ platform = 'msat' }) {
+    const platforms = {
+      msat: 'https://mtel.ba/hybris/ecommerce/b2c/v1/products/channels/search?pageSize=100&currentPage=<CURRENT_PAGE>&query=:relevantno:tv-kategorija:tv-msat',
+      iptv: 'https://mtel.ba/hybris/ecommerce/b2c/v1/products/channels/search?pageSize=100&currentPage=<CURRENT_PAGE>&query=:relevantno:tv-kategorija:tv-iptv:tv-iptv-paket:Svi+kanali'
+    }
+
+    const queue = [
+      {
+        platform,
+        url: platforms[platform].replace('<CURRENT_PAGE>', 0)
+      }
+    ]
+
     let channels = []
-
-    const totalPages = await getTotalPageCount()
-    const pages = Array.from(Array(totalPages).keys())
-    for (let page of pages) {
-      const data = await axios
-        .get('https://mtel.ba/oec/epg/program', {
-          params: { page, date: dayjs().format('YYYY-MM-DD') },
-          headers: {
-            'X-Requested-With': 'XMLHttpRequest'
-          }
+    await doFetch(queue, (req, data) => {
+      if (data && data.pagination.currentPage < data.pagination.totalPages) {
+        queue.push({
+          platform: req.platform,
+          url: platforms[req.platform].replace('<CURRENT_PAGE>', ++data.pagination.currentPage)
         })
-        .then(r => r.data)
-        .catch(console.log)
+      }
 
-      data.channels.forEach(item => {
+      data.products.forEach(channel => {
         channels.push({
           lang: 'bs',
-          site_id: `${item.position}#${item.id}`,
-          name: item.name
+          name: channel.name,
+          site_id: `${req.platform}#${channel.code}`
         })
       })
-    }
+    })
 
     return channels
   }
 }
 
-async function getTotalPageCount() {
-  const data = await axios
-    .get('https://mtel.ba/oec/epg/program', {
-      params: { page: 0, date: dayjs().format('YYYY-MM-DD') },
-      headers: {
-        'X-Requested-With': 'XMLHttpRequest'
-      }
-    })
-    .then(r => r.data)
-    .catch(console.log)
-
-  return data.total_pages
-}
-
 function parseStart(item) {
-  return dayjs.tz(item.full_start, 'Europe/Sarajevo')
+  return dayjs.tz(item.start, 'YYYY-MM-DD HH:mm', 'Europe/Sarajevo')
 }
 
 function parseStop(item) {
-  return dayjs.tz(item.full_end, 'Europe/Sarajevo')
+  return dayjs.tz(item.end, 'YYYY-MM-DD HH:mm', 'Europe/Sarajevo')
 }
 
-function parseContent(content, channel) {
-  const [, channelId] = channel.site_id.split('#')
-  const data = JSON.parse(content)
-  if (!data || !Array.isArray(data.channels)) return null
+function parseCategories(item) {
+  return item.category ? item.category.split(' / ') : []
+}
 
-  return data.channels.find(i => i.id === channelId)
+function parseImage(item) {
+  return item?.picture?.url ? item.picture.url : null
 }
 
 function parseItems(content, channel) {
-  const data = parseContent(content, channel)
+  try {
+    const data = JSON.parse(content)
+    if (!data || !Array.isArray(data.products)) return []
+    const [, channelId] = channel.site_id.split('#')
+    const channelData = data.products.find(channel => channel.code === channelId)
+    if (!channelData || !Array.isArray(channelData.programs)) return []
 
-  return data ? data.items : []
+    return _.sortBy(channelData.programs, p => parseStart(p).valueOf())
+  } catch {
+    return []
+  }
 }
