@@ -6,7 +6,7 @@
   </thead>
   <tbody>
     <tr><td><a href="sites/9tv.co.il">9tv.co.il</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/abc.net.au">abc.net.au</a></td><td align="right">540</td><td align="right">55</td><td align="center">🔴</td><td>https://github.com/iptv-org/epg/issues/2652</td></tr>
+    <tr><td><a href="sites/abc.net.au">abc.net.au</a></td><td align="right">548</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/allente.dk">allente.dk</a></td><td align="right">74</td><td align="right">44</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/allente.fi">allente.fi</a></td><td align="right">71</td><td align="right">25</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/allente.no">allente.no</a></td><td align="right">84</td><td align="right">53</td><td align="center">🟢</td><td></td></tr>
@@ -24,7 +24,6 @@
     <tr><td><a href="sites/bein.com">bein.com</a></td><td align="right">160</td><td align="right">160</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/beinsports.com">beinsports.com</a></td><td align="right">104</td><td align="right">81</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/berrymedia.co.kr">berrymedia.co.kr</a></td><td align="right">5</td><td align="right">5</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/cablego.com.pe">cablego.com.pe</a></td><td align="right">100</td><td align="right">20</td><td align="center">🔴</td><td>https://github.com/iptv-org/epg/issues/2667</td></tr>
     <tr><td><a href="sites/cableplus.com.uy">cableplus.com.uy</a></td><td align="right">171</td><td align="right">47</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/canalplus.com">canalplus.com</a></td><td align="right">11720</td><td align="right">212</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/cgates.lt">cgates.lt</a></td><td align="right">102</td><td align="right">61</td><td align="center">🟢</td><td></td></tr>
@@ -95,7 +94,7 @@
     <tr><td><a href="sites/mojmaxtv.hrvatskitelekom.hr">mojmaxtv.hrvatskitelekom.hr</a></td><td align="right">243</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/mon-programme-tv.be">mon-programme-tv.be</a></td><td align="right">111</td><td align="right">95</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/movistarplus.es">movistarplus.es</a></td><td align="right">178</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/mtel.ba">mtel.ba</a></td><td align="right">417</td><td align="right">220</td><td align="center">🔴</td><td>https://github.com/iptv-org/epg/issues/2658</td></tr>
+    <tr><td><a href="sites/mtel.ba">mtel.ba</a></td><td align="right">501</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/mts.rs">mts.rs</a></td><td align="right">457</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/mujtvprogram.cz">mujtvprogram.cz</a></td><td align="right">216</td><td align="right">203</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/musor.tv">musor.tv</a></td><td align="right">181</td><td align="right">146</td><td align="center">🟢</td><td></td></tr>
@@ -158,6 +157,7 @@
     <tr><td><a href="sites/taiwanplus.com">taiwanplus.com</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tapdmv.com">tapdmv.com</a></td><td align="right">39</td><td align="right">7</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/telebilbao.es">telebilbao.es</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/teleboy.ch">teleboy.ch</a></td><td align="right">325</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/telenet.tv">telenet.tv</a></td><td align="right">260</td><td align="right">91</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/teliatv.ee">teliatv.ee</a></td><td align="right">342</td><td align="right">233</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/telkussa.fi">telkussa.fi</a></td><td align="right">66</td><td align="right">32</td><td align="center">🟢</td><td></td></tr>
@@ -222,6 +222,7 @@
     <tr><td><a href="sites/www3.nhk.or.jp">www3.nhk.or.jp</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/xem.kplus.vn">xem.kplus.vn</a></td><td align="right">77</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/xumo.tv">xumo.tv</a></td><td align="right">350</td><td align="right">32</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/yes.co.il">yes.co.il</a></td><td align="right">174</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/zap.co.ao">zap.co.ao</a></td><td align="right">114</td><td align="right">64</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/ziggogo.tv">ziggogo.tv</a></td><td align="right">152</td><td align="right">130</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/znbc.co.zm">znbc.co.zm</a></td><td align="right">4</td><td align="right">4</td><td align="center">🟢</td><td></td></tr>
