@@ -104,7 +104,7 @@
     <tr><td><a href="sites/neo.io">neo.io</a></td><td align="right">337</td><td align="right">241</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/nhkworldpremium.com">nhkworldpremium.com</a></td><td align="right">2</td><td align="right">2</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/nhl.com">nhl.com</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/nostv.pt">nostv.pt</a></td><td align="right">168</td><td align="right">141</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/nostv.pt">nostv.pt</a></td><td align="right">168</td><td align="right">141</td><td align="center">🔴</td><td>https://github.com/iptv-org/epg/issues/2674</td></tr>
     <tr><td><a href="sites/novacyprus.com">novacyprus.com</a></td><td align="right">29</td><td align="right">24</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/novasports.gr">novasports.gr</a></td><td align="right">16</td><td align="right">16</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/nowplayer.now.com">nowplayer.now.com</a></td><td align="right">288</td><td align="right">229</td><td align="center">🟢</td><td></td></tr>
@@ -115,7 +115,7 @@
     <tr><td><a href="sites/orangetv.orange.es">orangetv.orange.es</a></td><td align="right">168</td><td align="right">165</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/osn.com">osn.com</a></td><td align="right">118</td><td align="right">98</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/pbsguam.org">pbsguam.org</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/pickx.be">pickx.be</a></td><td align="right">378</td><td align="right">332</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/pickx.be">pickx.be</a></td><td align="right">404</td><td align="right">391</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/player.ee.co.uk">player.ee.co.uk</a></td><td align="right">241</td><td align="right">206</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/playtv.unifi.com.my">playtv.unifi.com.my</a></td><td align="right">66</td><td align="right">61</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/plex.tv">plex.tv</a></td><td align="right">170</td><td align="right">119</td><td align="center">🟢</td><td></td></tr>
