@@ -1,14 +1,17 @@
 const { DateTime } = require('luxon')
 
+const headers = {
+  Origin: 'https://www.meo.pt',
+  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.246'
+}
+
 module.exports = {
   site: 'meo.pt',
   days: 2,
   url: 'https://authservice.apps.meo.pt/Services/GridTv/GridTvMng.svc/getProgramsFromChannels',
   request: {
     method: 'POST',
-    headers: {
-      Origin: 'https://www.meo.pt'
-    },
+    headers,
     data: function ({ channel, date }) {
       return {
         service: 'channelsguide',
@@ -41,9 +44,7 @@ module.exports = {
     const axios = require('axios')
     const data = await axios
       .post('https://authservice.apps.meo.pt/Services/GridTv/GridTvMng.svc/getGridAnon', null, {
-        headers: {
-          Origin: 'https://www.meo.pt'
-        }
+        headers
       })
       .then(r => r.data)
       .catch(console.log)
