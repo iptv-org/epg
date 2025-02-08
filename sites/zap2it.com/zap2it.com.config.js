@@ -1,13 +1,11 @@
 const dayjs = require('dayjs')
 const timezone = require('dayjs/plugin/timezone')
-const utc = require('dayjs/plugin/utc');
+const utc = require('dayjs/plugin/utc')
 const isBetween = require('dayjs/plugin/isBetween')
 
-dayjs.extend(timezone);
-dayjs.extend(utc);
-dayjs.extend(isBetween);
-
-const localTimezone = dayjs.tz.guess()
+dayjs.extend(timezone)
+dayjs.extend(utc)
+dayjs.extend(isBetween)
 
 module.exports = {
   site: 'zap2it.com',
@@ -45,12 +43,12 @@ module.exports = {
         DSTStart: '2025-03-09T02:00Z',
         DSTEnd: '2025-11-02T02:00Z',
         languagecode: 'en-us',
-      };
+      }
     },
   },
   parser: function ({ content, date }) {
-    const data = JSON.parse(content);
-    const programs = [];
+    const data = JSON.parse(content)
+    const programs = []
 
     Object.keys(data).forEach(dateKey => {
       data[dateKey].forEach(item => {
@@ -66,10 +64,10 @@ module.exports = {
           season: item.program.season || '',
           episode: item.program.episode || '',
           date: item.program.releaseYear || '',
-        });
-      });
-    });
+        })
+      })
+    })
 
     return programs.filter(p => dayjs(p.start).isBetween(date.startOf('day').utc(), date.endOf('day').utc(), 'second', '[]'))
   }
-};
+}
