@@ -16,13 +16,10 @@ module.exports = {
     headers: {
       'Content-Type': 'application/json',
       'Accept': 'application/json',
+	  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36',
     },
     data({ date, channel }) {
       const [device, lineupId, headendId, countryCode, postalCode, prgsvcid] = channel.site_id.split('/')
-      
-      if (!device || !lineupId || !headendId || !countryCode || !postalCode || !prgsvcid) {
-        throw new Error('El site_id no contiene todos los valores obligatorios.')
-      }
 
       const timestamp = dayjs(date).unix().toString()
 
