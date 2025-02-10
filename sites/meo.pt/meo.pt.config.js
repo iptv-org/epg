@@ -7,7 +7,8 @@ module.exports = {
   request: {
     method: 'POST',
     headers: {
-      Origin: 'https://www.meo.pt'
+      Origin: 'https://www.meo.pt',
+      'User-Agent': 'Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; en-US Trident/4.0)'
     },
     data: function ({ channel, date }) {
       return {
