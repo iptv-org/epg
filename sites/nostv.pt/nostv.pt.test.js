@@ -16,7 +16,7 @@ const channel = {
 
 it('can generate valid url', () => {
   expect(url({ channel, date })).toBe(
-    'https://tyr-prod.apigee.net/nostv/ott/schedule/range/contents/guest?channels=510&minDate=2023-12-11T00:00:00Z&maxDate=2023-12-11T23:59:59Z&isDateInclusive=true&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI'
+    'https://api.clg.nos.pt/nostv/ott/schedule/range/contents/guest?channels=510&minDate=2023-12-11T00:00:00Z&maxDate=2023-12-11T23:59:59Z&isDateInclusive=true&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI'
   )
 })
 
