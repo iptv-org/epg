@@ -65,6 +65,6 @@ module.exports = {
       })
     })
 
-    return programs.filter(p => dayjs(p.start).add(dayjs(p.start).utcOffset(), 'minute').isBetween(date.startOf('day').utc(), date.endOf('day').utc(), 'second', '[]'))
+    return programs.filter(p => dayjs(p.start).add(dayjs(p.start).utcOffset(), 'minute').isBetween(date.startOf('day').add(5, 'hour').utc(), date.endOf('day').add(5, 'hour').utc(), 'second', '[]'))
   }
 }
