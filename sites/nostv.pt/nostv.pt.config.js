@@ -6,7 +6,7 @@ dayjs.extend(utc)
 
 const headers = {
   'X-Apikey': 'xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI',
-  'X-Core-Appversion': '2.14.0.1',
+  'X-Core-Appversion': '2.20.0.3',
   'X-Core-Contentratinglimit': '0',
   'X-Core-Deviceid': '',
   'X-Core-Devicetype': 'web',
@@ -19,7 +19,7 @@ module.exports = {
   site: 'nostv.pt',
   days: 2,
   url({ channel, date }) {
-    return `https://tyr-prod.apigee.net/nostv/ott/schedule/range/contents/guest?channels=${
+    return `https://api.clg.nos.pt/nostv/ott/schedule/range/contents/guest?channels=${
       channel.site_id
     }&minDate=${date.format('YYYY-MM-DD')}T00:00:00Z&maxDate=${date.format(
       'YYYY-MM-DD'
@@ -51,7 +51,7 @@ module.exports = {
   async channels() {
     const result = await axios
       .get(
-        `https://tyr-prod.apigee.net/nostv/ott/channels/guest?client_id=${headers['X-Apikey']}`,
+        `https://api.clg.nos.pt/nostv/ott/channels/guest?client_id=${headers['X-Apikey']}`,
         { headers }
       )
       .then(r => r.data)
