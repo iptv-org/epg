@@ -5,11 +5,17 @@ const dayjs = require('dayjs')
 const API_ENDPOINT = 'https://tv-at-prod.yo-digital.com/at-bifrost'
 
 const headers = {
+  'app_key': 'CTnKA63ruKM0JM1doxAXwwyQLLmQiEiy',
+  'app_version': '02.0.1080',
   'Device-Id': crypto.randomUUID(),
-  app_key: 'CTnKA63ruKM0JM1doxAXwwyQLLmQiEiy',
-  app_version: '02.0.830',
-  'X-User-Agent': 'web|web|Firefox-120|02.0.830|1',
-  'x-request-tracking-id': crypto.randomUUID()
+  'tenant': 'tv',
+  'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36',
+  'x-call-type': 'GUEST_USER',
+  'x-tv-flow': 'EPG',
+  'x-tv-step': 'EPG_SCHEDULES',
+  'X-User-Agent': 'web|web|Firefox-120|02.0.1080|1',
+  'x-request-tracking-id': crypto.randomUUID(),
+  'x-request-session-id': crypto.randomUUID()
 }
 
 module.exports = {
