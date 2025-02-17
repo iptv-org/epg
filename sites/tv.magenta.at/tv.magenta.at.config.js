@@ -13,7 +13,7 @@ const headers = {
   'x-call-type': 'GUEST_USER',
   'x-tv-flow': 'EPG',
   'x-tv-step': 'EPG_SCHEDULES',
-  'X-User-Agent': 'web|web|Firefox-120|02.0.1080|1',
+  'X-User-Agent': 'web|web|Chrome-133|02.0.1080|1',
   'x-request-tracking-id': crypto.randomUUID(),
   'x-request-session-id': crypto.randomUUID()
 }
