@@ -81,6 +81,7 @@
     <tr><td><a href="sites/m.tving.com">m.tving.com</a></td><td align="right">30</td><td align="right">26</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/magticom.ge">magticom.ge</a></td><td align="right">240</td><td align="right">110</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/mako.co.il">mako.co.il</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/makrodigitaltelevision.com">makrodigitaltelevision.com</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/maxtvgo.mk">maxtvgo.mk</a></td><td align="right">110</td><td align="right">48</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/mediagenie.co.kr">mediagenie.co.kr</a></td><td align="right">5</td><td align="right">4</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/mediaklikk.hu">mediaklikk.hu</a></td><td align="right">8</td><td align="right">8</td><td align="center">🟢</td><td></td></tr>
@@ -105,7 +106,7 @@
     <tr><td><a href="sites/neo.io">neo.io</a></td><td align="right">337</td><td align="right">241</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/nhkworldpremium.com">nhkworldpremium.com</a></td><td align="right">2</td><td align="right">2</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/nhl.com">nhl.com</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/nostv.pt">nostv.pt</a></td><td align="right">168</td><td align="right">141</td><td align="center">🔴</td><td>https://github.com/iptv-org/epg/issues/2674</td></tr>
+    <tr><td><a href="sites/nostv.pt">nostv.pt</a></td><td align="right">168</td><td align="right">141</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/novacyprus.com">novacyprus.com</a></td><td align="right">29</td><td align="right">24</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/novasports.gr">novasports.gr</a></td><td align="right">16</td><td align="right">16</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/nowplayer.now.com">nowplayer.now.com</a></td><td align="right">288</td><td align="right">229</td><td align="center">🟢</td><td></td></tr>
@@ -138,7 +139,7 @@
     <tr><td><a href="sites/rtp.pt">rtp.pt</a></td><td align="right">10</td><td align="right">10</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/ruv.is">ruv.is</a></td><td align="right">2</td><td align="right">2</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/s.mxtv.jp">s.mxtv.jp</a></td><td align="right">2</td><td align="right">2</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/sat.tv">sat.tv</a></td><td align="right">31173</td><td align="right">277</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/sat.tv">sat.tv</a></td><td align="right">31173</td><td align="right">277</td><td align="center">🔴</td><td>https://github.com/iptv-org/epg/issues/2685</td></tr>
     <tr><td><a href="sites/shahid.mbc.net">shahid.mbc.net</a></td><td align="right">306</td><td align="right">120</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/siba.com.co">siba.com.co</a></td><td align="right">98</td><td align="right">96</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/singtel.com">singtel.com</a></td><td align="right">155</td><td align="right">113</td><td align="center">🟢</td><td></td></tr>
@@ -225,6 +226,7 @@
     <tr><td><a href="sites/xumo.tv">xumo.tv</a></td><td align="right">350</td><td align="right">32</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/yes.co.il">yes.co.il</a></td><td align="right">174</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/zap.co.ao">zap.co.ao</a></td><td align="right">114</td><td align="right">64</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/zap2it.com">zap2it.com</a></td><td align="right">595</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/ziggogo.tv">ziggogo.tv</a></td><td align="right">152</td><td align="right">130</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/znbc.co.zm">znbc.co.zm</a></td><td align="right">4</td><td align="right">4</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/zuragt.mn">zuragt.mn</a></td><td align="right">36</td><td align="right">25</td><td align="center">🟢</td><td></td></tr>
