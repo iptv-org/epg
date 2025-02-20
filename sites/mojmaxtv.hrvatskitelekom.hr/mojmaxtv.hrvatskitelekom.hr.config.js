@@ -176,7 +176,7 @@ function parseCategories(item) {
   if (!item.details?.metadata) return []
 
   const genreMetadata = item.details.metadata.find(meta =>
-    meta.type === "GENRES"
+    meta.type === 'GENRES'
   )
 
   if (!genreMetadata?.value) return []
