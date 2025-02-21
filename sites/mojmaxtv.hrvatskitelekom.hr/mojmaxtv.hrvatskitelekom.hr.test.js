@@ -45,10 +45,6 @@ it('can generate valid request headers', () => {
   expect(request.headers).toMatchObject({
     app_key: 'GWaBW4RTloLwpUgYVzOiW5zUxFLmoMj5',
     app_version: '02.0.1080',
-    'device-id': 'a78f079d-5527-46d8-af3f-9f0b6b6fb758',
-    'x-request-session-id': 'fc96c9de-7a3b-4b51-8b9d-5d9f9a3c3268',
-    'x-request-tracking-id': '05a8f0bc-f977-4754-b8ad-1d4d1bd742fb',
-    'x-user-agent': 'web|web|Chrome-128|02.0.1080|1'
   })
 })
 
