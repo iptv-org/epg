@@ -50,26 +50,6 @@ const getHeaders = () => ({
 
 const unknownRoles = new Map()
 
-function detectUnknownRoles(item) {
-  if (!item.roles) return
-
-  item.roles.forEach(role => {
-    if (!KNOWN_ROLES.has(role.role_name)) {
-      const count = unknownRoles.get(role.role_name) || 0
-      unknownRoles.set(role.role_name, count + 1)
-
-      // Log the first occurrence of each unknown role with an example
-      if (count === 0) {
-        console.log('New role type detected:', {
-          role_name: role.role_name,
-          example_person: role.person_name,
-          program_id: item.program_id
-        })
-      }
-    }
-  })
-}
-
 module.exports = {
   site: SITE_URL,
   url({ date }) {
