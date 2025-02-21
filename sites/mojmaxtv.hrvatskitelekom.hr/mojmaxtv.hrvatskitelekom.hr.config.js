@@ -28,9 +28,6 @@ const API_ENDPOINT = `https://tv-${NATCO_CODE}-prod.yo-digital.com/${NATCO_CODE}
 const DEVICE_ID = crypto.randomUUID()
 const SESSION_ID = crypto.randomUUID()
 
-// Set of known role names for quick lookup
-const KNOWN_ROLES = new Set(Object.values(ROLE_TYPES))
-
 const cached = {}
 
 const getHeaders = () => ({
