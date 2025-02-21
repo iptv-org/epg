@@ -48,8 +48,6 @@ const getHeaders = () => ({
   'x-user-agent': `web|web|Chrome-133|${APP_VERSION}|1`
 })
 
-const unknownRoles = new Map()
-
 module.exports = {
   site: SITE_URL,
   url({ date }) {
