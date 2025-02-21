@@ -6,10 +6,20 @@ const crypto = require('crypto')
 
 // API Configuration Constants
 const NATCO_CODE = 'hr'
+const APP_LANGUAGE = 'hr'
 const APP_KEY = 'GWaBW4RTloLwpUgYVzOiW5zUxFLmoMj5'
 const APP_VERSION = '02.0.1080'
 const NATCO_KEY = 'l2lyvGVbUm2EKJE96ImQgcc8PKMZWtbE'
 const SITE_URL = 'mojmaxtv.hrvatskitelekom.hr'
+
+// Role Types
+const ROLE_TYPES = {
+  ACTOR: 'GLUMI',      // Croatian for "ACTS"
+  DIRECTOR: 'REŽIJA',  // Croatian for "DIRECTOR"
+  PRODUCER: 'PRODUKCIJA', // Croatian for "PRODUCER"
+  WRITER: 'AUTOR',
+  SCENARIO: 'SCENARIJ'
+}
 
 // Dynamic API Endpoint based on NATCO_CODE
 const API_ENDPOINT = `https://tv-${NATCO_CODE}-prod.yo-digital.com/${NATCO_CODE}-bifrost`
@@ -17,6 +27,9 @@ const API_ENDPOINT = `https://tv-${NATCO_CODE}-prod.yo-digital.com/${NATCO_CODE}
 // Session/Device IDs
 const DEVICE_ID = crypto.randomUUID()
 const SESSION_ID = crypto.randomUUID()
+
+// Set of known role names for quick lookup
+const KNOWN_ROLES = new Set(Object.values(ROLE_TYPES))
 
 const cached = {}
 
@@ -35,12 +48,34 @@ const getHeaders = () => ({
   'x-user-agent': `web|web|Chrome-133|${APP_VERSION}|1`
 })
 
+const unknownRoles = new Map()
+
+function detectUnknownRoles(item) {
+  if (!item.roles) return
+
+  item.roles.forEach(role => {
+    if (!KNOWN_ROLES.has(role.role_name)) {
+      const count = unknownRoles.get(role.role_name) || 0
+      unknownRoles.set(role.role_name, count + 1)
+
+      // Log the first occurrence of each unknown role with an example
+      if (count === 0) {
+        console.log('New role type detected:', {
+          role_name: role.role_name,
+          example_person: role.person_name,
+          program_id: item.program_id
+        })
+      }
+    }
+  })
+}
+
 module.exports = {
   site: SITE_URL,
   url({ date }) {
     return `${API_ENDPOINT}/epg/channel/schedules?date=${date.format(
       'YYYY-MM-DD'
-    )}&hour_offset=0&hour_range=3&channelMap_id&filler=true&app_language=${NATCO_CODE}&natco_code=${NATCO_CODE}`
+    )}&hour_offset=0&hour_range=3&channelMap_id&filler=true&app_language=${APP_LANGUAGE}&natco_code=${NATCO_CODE}`
   },
   request: {
     headers: getHeaders(),
@@ -82,15 +117,19 @@ module.exports = {
     const programs = []
     for (let item of items) {
       const detail = await loadProgramDetails(item)
+
+//      detectUnknownRoles(detail)
+
       programs.push({
         title: item.description,
+        sub_title: item.episode_name,
         description: parseDescription(detail),
-        categories: parseCategories(detail),
+        categories: Array.isArray(item.genres) ? item.genres.map(g => g.name) : [],
         date: parseDate(item),
         image: detail.poster_image_url,
-        actors: parseRoles(detail, 'GLUMI'),
-        directors: parseRoles(detail, 'REŽIJA'),
-        producers: parseRoles(detail, 'Producent'),
+        actors: parseRoles(detail, ROLE_TYPES.ACTOR),
+        directors: parseRoles(detail, ROLE_TYPES.DIRECTOR),
+        producers: parseRoles(detail, ROLE_TYPES.PRODUCER),
         season: parseSeason(item),
         episode: parseEpisode(item),
         rating: parseRating(item),
@@ -104,7 +143,7 @@ module.exports = {
   async channels() {
     const data = await axios
       .get(
-        `${API_ENDPOINT}/epg/channel?channelMap_id=&includeVirtualChannels=false&natco_key=${NATCO_KEY}&app_language=${NATCO_CODE}&natco_code=${NATCO_CODE}`,
+        `${API_ENDPOINT}/epg/channel?channelMap_id=&includeVirtualChannels=false&natco_key=${NATCO_KEY}&app_language=${APP_LANGUAGE}&natco_code=${NATCO_CODE}`,
         { ...module.exports.request, headers: getHeaders() }
       )
       .then(r => r.data)
@@ -170,18 +209,6 @@ function parseEpisode(item) {
 function parseDescription(item) {
   if (!item.details) return null
   return item.details.description
-}
-
-function parseCategories(item) {
-  if (!item.details?.metadata) return []
-
-  const genreMetadata = item.details.metadata.find(meta =>
-    meta.type === 'GENRES'
-  )
-
-  if (!genreMetadata?.value) return []
-
-  return genreMetadata.value.split(', ').filter(Boolean)
 }
 
 function parseRoles(item, role_name) {
