@@ -44,6 +44,7 @@
     <tr><td><a href="sites/dna.fi">dna.fi</a></td><td align="right">122</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/dsmart.com.tr">dsmart.com.tr</a></td><td align="right">104</td><td align="right">90</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/dstv.com">dstv.com</a></td><td align="right">6983</td><td align="right">181</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/dtv8.net">dtv8.net</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/elcinema.com">elcinema.com</a></td><td align="right">224</td><td align="right">193</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/ena.skylifetv.co.kr">ena.skylifetv.co.kr</a></td><td align="right">6</td><td align="right">6</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/energeek.cl">energeek.cl</a></td><td align="right">6</td><td align="right">3</td><td align="center">🟢</td><td></td></tr>
