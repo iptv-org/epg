@@ -76,6 +76,18 @@ async function main() {
       localErrors = localErrors.concat(error.details)
     }
 
+    xml.split('\n').forEach((line: string, lineIndex: number) => {
+      const found = line.match(/='/)
+      if (found) {
+        const colIndex = found.index || 0
+        localErrors.push({
+          line: lineIndex + 1,
+          col: colIndex + 1,
+          message: 'Single quotes cannot be used in attributes'
+        })
+      }
+    })
+
     if (localErrors.length) {
       console.log(`\n${chalk.underline(filepath)}`)
       localErrors.forEach((error: ErrorDetail) => {
