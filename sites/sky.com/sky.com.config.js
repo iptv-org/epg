@@ -28,13 +28,18 @@ module.exports = {
               schedule.events.forEach(event => {
                 const start = dayjs.utc(event.st * 1000)
                 if (start.isSame(date, 'd')) {
+                  const image = `https://images.metadata.sky.com/pd-image/${event.programmeuuid}/16-9/640`
                   programs.push({
                     title: event.t,
                     description: event.sy,
                     season: event.seasonnumber,
                     episode: event.episodenumber,
                     start,
-                    stop: start.add(event.d, 's')
+                    stop: start.add(event.d, 's'),
+                    icon: {
+                      src: image
+                    },
+                    image,
                   })
                 }
               })
