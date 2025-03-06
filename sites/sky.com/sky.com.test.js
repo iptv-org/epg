@@ -34,7 +34,9 @@ it('can parse response', () => {
     description:
       'A Sale Of Two Cities: Emily brings her mother along with her to Walnut, and Darrell wastes no time finding an advantage. Ivy and Ivy jr clean up with their locker. (S12, ep 4)',
     season: 12,
-    episode: 4
+    episode: 4,
+    icon: 'https://images.metadata.sky.com/pd-image/b9572a38-8db7-471e-a2d7-462e1dd26af2/16-9/640',
+    image: 'https://images.metadata.sky.com/pd-image/b9572a38-8db7-471e-a2d7-462e1dd26af2/16-9/640'
   })
   expect(result[2]).toMatchObject({
     start: '2024-12-14T01:00:00.000Z',
@@ -43,7 +45,9 @@ it('can parse response', () => {
     description:
       'Not All That Glitters Is Gourd: Back in the city of Orange, the Vegas Ladies arrive in vintage style - though not everyone agrees. (S12, ep 6)',
     season: 12,
-    episode: 6
+    episode: 6,
+    icon: 'https://images.metadata.sky.com/pd-image/e9521ccc-bdcc-4075-9c2e-bc835247148b/16-9/640',
+    image: 'https://images.metadata.sky.com/pd-image/e9521ccc-bdcc-4075-9c2e-bc835247148b/16-9/640'
   })
 })
 

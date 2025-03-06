@@ -3,6 +3,7 @@ const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const doFetch = require('@ntlab/sfetch')
 const debug = require('debug')('site:sky.com')
+const _ = require('lodash')
 
 dayjs.extend(utc)
 
@@ -25,16 +26,19 @@ module.exports = {
           .filter(schedule => schedule.sid === channel.site_id)
           .forEach(schedule => {
             if (Array.isArray(schedule.events)) {
-              schedule.events.forEach(event => {
+              _.sortBy(schedule.events, 'st').forEach(event => {
                 const start = dayjs.utc(event.st * 1000)
                 if (start.isSame(date, 'd')) {
+                  const image = `https://images.metadata.sky.com/pd-image/${event.programmeuuid}/16-9/640`
                   programs.push({
                     title: event.t,
                     description: event.sy,
                     season: event.seasonnumber,
                     episode: event.episodenumber,
                     start,
-                    stop: start.add(event.d, 's')
+                    stop: start.add(event.d, 's'),
+                    icon: image,
+                    image
                   })
                 }
               })
