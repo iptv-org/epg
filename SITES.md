@@ -200,6 +200,7 @@
     <tr><td><a href="sites/tvim.tv">tvim.tv</a></td><td align="right">25</td><td align="right">19</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tvinsider.com">tvinsider.com</a></td><td align="right">374</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tvireland.ie">tvireland.ie</a></td><td align="right">334</td><td align="right">304</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/tvkaista.org">tvkaista.org</a></td><td align="right">149</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tvmi.mt">tvmi.mt</a></td><td align="right">3</td><td align="right">3</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tvmusor.hu">tvmusor.hu</a></td><td align="right">99</td><td align="right">68</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tvmustra.hu">tvmustra.hu</a></td><td align="right">188</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
