@@ -7,6 +7,7 @@ Tools for downloading the EPG (Electronic Program Guide) for thousands of TV cha
 - ✨ [Installation](#installation)
 - 🚀 [Usage](#usage)
 - 💫 [Update](#update)
+- 🐋 [Docker](#docker)
 - 📺 [Playlists](#playlists)
 - 🗄 [Database](#database)
 - 👨‍💻 [API](#api)
@@ -39,13 +40,15 @@ npm install
 
 ## Usage
 
-To start the download of the guide, select one of the [supported sites](SITES.md) and paste its name into the command below:
+To start the download of the guide, select one of the supported sites from [SITES.md](SITES.md) file and paste its name into the command below:
 
 ```sh
 npm run grab --- --site=example.com
 ```
 
-And once the download is complete, the guide will be saved to the `guide.xml` file.
+Then run it and wait for the guide to finish downloading. When finished, a new `guide.xml` file will appear in the current directory.
+
+You can also customize the behavior of the script using this options:
 
 ```sh
 Usage: npm run grab --- [options]
@@ -55,35 +58,13 @@ Options:
   -c, --channels <path>         Path to *.channels.xml file (required if the "--site" attribute is
                                 not specified)
   -o, --output <path>           Path to output file (default: "guide.xml")
-  -l, --lang <code>             Filter channels by language (ISO 639-2 code)
-  -t, --timeout <milliseconds>  Override the default timeout for each request
-  -d, --delay <milliseconds>    Override the default delay between request
+  -l, --lang <code>             Allows to limit the download to channels in the specified language only (ISO 639-1 code)
+  -t, --timeout <milliseconds>  Timeout for each request in milliseconds (default: 0)
+  -d, --delay <milliseconds>    Delay between request in milliseconds (default: 0)
   -x, --proxy <url>             Use the specified proxy (example: "socks5://username:password@127.0.0.1:1234")
-  --days <days>                 Override the number of days for which the program will be loaded
-                                (defaults to the value from the site config)
-  --maxConnections <number>     Limit on the number of concurrent requests (default: 1)
-  --cron <expression>           Schedule a script run (example: "0 0 * * *")
-  --gzip                        Create a compressed version of the guide as well (default: false)
-```
-
-### Access the guide by URL
-
-You can make the guide available via URL by running your own server:
-
-```sh
-npm run serve
-```
-
-After that, the guide will be available at the link:
-
-```
-http://localhost:3000/guide.xml
-```
-
-In addition it will be available to other devices on the same local network at the address:
-
-```
-http://<your_local_ip_address>:3000/guide.xml
+  --days <days>                 Number of days for which the program will be loaded (defaults to the value from the site config)
+  --maxConnections <number>     Number of concurrent requests (default: 1)
+  --gzip                        Specifies whether or not to create a compressed version of the guide (default: false)
 ```
 
 ### Parallel downloading
@@ -116,11 +97,41 @@ npm run grab --- --channels=path/to/custom.channels.xml
 
 ### Run on schedule
 
-If you want to download the guide automatically on a schedule, you need to pass a valid [cron expression](https://crontab.guru/) to the script using the `--cron` attribute:
+To download the guide on a schedule, you can use the included process manager. Just run it with desire [cron expression](https://crontab.guru/) and the `grab` options:
 
 ```sh
-npm run grab --- --site=example.com --cron="0 0 * * *"
+npx pm2 start npm --no-autorestart --cron-restart="0 0,12 * * *" -- run grab --- --site=example.com
 ```
+
+To track the process, you can use the command:
+
+```sh
+npx pm2 logs
+```
+
+For more info go to [pm2](https://pm2.keymetrics.io/docs/usage/quick-start/) documentation.
+
+### Access the guide by URL
+
+You can make the guide available via URL by running your own server. The easiest way to do this is to run this command:
+
+```sh
+npx serve
+```
+
+After that, the guide will be available at the link:
+
+```
+http://localhost:3000/guide.xml
+```
+
+In addition it will be available to other devices on the same local network at the address:
+
+```
+http://<your_local_ip_address>:3000/guide.xml
+```
+
+For more info go to [serve](https://github.com/vercel/serve) documentation.
 
 ## Update
 
@@ -135,6 +146,73 @@ And then update all the dependencies:
 ```sh
 npm install
 ```
+
+## Docker
+
+### Build an image
+
+```sh
+docker build -t iptv-org/epg --no-cache .
+```
+
+### Create and run container
+
+```sh
+docker run -p 3000:3000 -e SITE=example.com iptv-org/epg
+```
+
+To use your [custom channel list](#use-custom-channel-list) pass the path to it via the [--volume](https://docs.docker.com/engine/storage/volumes/#options-for---volume) option:
+
+```sh
+docker run -p 3000:3000 -v /path/to/channels.xml:/epg/channels.xml iptv-org/epg
+```
+
+By default, the guide will be downloaded only once and saved to the `/epg/public/guide.xml` file inside the container.
+
+From the outside, it will be available at this link:
+
+```
+http://localhost:3000/guide.xml
+```
+
+or
+
+```
+http://<your_local_ip_address>:3000/guide.xml
+```
+
+### Configuration
+
+To fine-tune the execution, you can pass environment variables to the container as follows:
+
+```sh
+docker run \
+-p 5000:3000 \
+-e SITE=example.com \
+-e CLANG=fr \
+-e CRON="0 0,12 * * *" \
+-e PROXY="socks5://username:password@127.0.0.1:1234" \
+-e MAX_CONNECTIONS=10 \
+-e GZIP=true \
+-e DAYS=14 \
+-e TIMEOUT=5 \
+-e DELAY=2 \
+iptv-org/epg
+```
+
+| Variable        | Description                                                                                                               |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| SITE            | Name of the site to parse                                                                                                 |
+| CLANG           | Limit the download to channels in the specified language only ([ISO 639-1](https://en.wikipedia.org/wiki/ISO_639-1) code) |
+| CRON            | A [cron expression](https://crontab.guru/) describing the schedule of the guide loadings (by default will run once)       |
+| PROXY           | Use the specified proxy                                                                                                   |
+| MAX_CONNECTIONS | Limit on the number of concurrent requests (default: 1)                                                                   |
+| GZIP            | Boolean value indicating whether to create a compressed version of the guide (default: false)                             |
+| DAYS            | Number of days for which the guide will be loaded (defaults to the value from the site config)                            |
+| TIMEOUT         | Timeout for each request in milliseconds (default: 0)                                                                     |
+| DELAY           | Delay between request in milliseconds (default: 0)                                                                        |
+
+For more info go to [Docker](https://docs.docker.com/get-started/) documentation.
 
 ## Playlists
 
