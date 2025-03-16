@@ -1,0 +1,56 @@
+import xml.etree.ElementTree as ET
+from xml.dom import minidom
+import os
+
+def extract_program_title_and_icon(xml_file, output_file):
+    # Parse the input XML file
+    tree = ET.parse(xml_file)
+    root = tree.getroot()
+
+    # Create a set to track titles that have already been processed
+    existing_titles = set()
+
+    # If the output file exists, read it and extract existing titles
+    if os.path.exists(output_file):
+        output_tree = ET.parse(output_file)
+        output_root = output_tree.getroot()
+        
+        for programme in output_root.findall('programme'):
+            title = programme.find('title').text
+            if title:
+                existing_titles.add(title)
+
+    # Create a new XML structure for the output
+    if not os.path.exists(output_file):
+        output_root = ET.Element('programmes')
+    else:
+        output_root = output_tree.getroot()
+
+    # Loop through each <programme> element in the input XML, excluding <channel> elements
+    for programme in root.findall('programme'):
+        title = programme.find('title').text if programme.find('title') is not None else 'No title'
+        icon = programme.find('icon').get('src') if programme.find('icon') is not None else 'No icon'
+
+        # If the title is not already in the output file, add it
+        if title not in existing_titles:
+            programme_element = ET.SubElement(output_root, 'programme')
+            title_element = ET.SubElement(programme_element, 'title')
+            title_element.text = title
+            icon_element = ET.SubElement(programme_element, 'icon')
+            icon_element.text = icon
+            existing_titles.add(title)
+
+    # Convert the output tree to a string and pretty-print it
+    output_str = ET.tostring(output_root, encoding='utf-8').decode('utf-8')
+    pretty_str = minidom.parseString(output_str).toprettyxml(indent="  ")
+
+    # Write the pretty XML to the output file
+    with open(output_file, 'w', encoding='utf-8') as f:
+        f.write(pretty_str)
+
+    print(f"XML data has been written to {output_file}")
+
+# Example usage
+xml_file = 'meta.xml'  # Replace with your XML file path
+output_file = 'programmes.xml'  # Replace with your desired output file path
+extract_program_title_and_icon(xml_file, output_file)
