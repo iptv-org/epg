@@ -129,8 +129,7 @@ async function parseItems(content, date, cookies) {
     }
     await doFetch(queues, (queue, res) => {
       const $item = queue.i
-      const $page = cheerio.load(res)
-      const description = $page('.synopsis').text().trim()
+      const description = res ? cheerio.load(res)('.synopsis').text().trim() : null
       const start = parseStart($item, date)
       const duration = parseDuration($item)
       const stop = start.add(duration, 'm')
