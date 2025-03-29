@@ -16,7 +16,8 @@ module.exports = {
   request: {
     cache: {
       ttl: 24 * 60 * 60 * 1000 // 1 day
-    }
+    },
+    maxContentLength: 100000000 // 100 MB
   },
   parser({ buffer, channel, date, cached }) {
     if (!cached) cachedContent = undefined
