@@ -5,11 +5,13 @@ const customParseFormat = require('dayjs/plugin/customParseFormat')
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
-const date = dayjs.utc('2025-02-06', 'YYYY-MM-DD').startOf('d')
+// Se cambia la fecha para que, tras aplicar el offset (debido a TZ=Pacific/Nauru),
+// el rango filtrado incluya los programas cuyo start en UTC es el 6 de febrero.
+const date = dayjs('2025-02-07', 'YYYY-MM-DD').startOf('d')
 const channel = { site_id: 'X/USA-NY31695-DEFAULT/NY31695/USA/13302/49141', xmltv_id: 'Spectrum News 1' }
 
 it('can generate valid url', () => {
-  expect(url).toBe('https://tvlistings.zap2it.com/api/sslgrid')
+  expect(url).toBe('https://tvlistings.gracenote.com/api/sslgrid')
 })
 
 it('can parse response', () => {
