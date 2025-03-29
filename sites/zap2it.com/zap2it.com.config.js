@@ -10,7 +10,7 @@ dayjs.extend(isBetween)
 module.exports = {
   site: 'zap2it.com',
   days: 2,
-  url: 'https://tvlistings.zap2it.com/api/sslgrid',
+  url: 'https://tvlistings.gracenote.com/api/sslgrid',
   request: {
     method: 'POST',
     headers: {
