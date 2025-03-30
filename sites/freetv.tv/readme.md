@@ -1,6 +1,6 @@
 # freetv.tv
 
-https://example.com
+https://freetv.tv/
 
 ### Download the guide
 
