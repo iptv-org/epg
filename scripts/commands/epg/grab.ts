@@ -1,35 +1,49 @@
 import { Logger, Timer, Storage, Collection } from '@freearhey/core'
-import { program } from 'commander'
-import { CronJob } from 'cron'
+import { Option, program } from 'commander'
 import { QueueCreator, Job, ChannelsParser } from '../../core'
 import { Channel } from 'epg-grabber'
 import path from 'path'
 import { SITES_DIR } from '../../constants'
 
 program
-  .option('-s, --site <name>', 'Name of the site to parse')
-  .option(
-    '-c, --channels <path>',
-    'Path to *.channels.xml file (required if the "--site" attribute is not specified)'
+  .addOption(new Option('-s, --site <name>', 'Name of the site to parse'))
+  .addOption(
+    new Option(
+      '-c, --channels <path>',
+      'Path to *.channels.xml file (required if the "--site" attribute is not specified)'
+    )
   )
-  .option('-o, --output <path>', 'Path to output file', 'guide.xml')
-  .option('-l, --lang <code>', 'Filter channels by language (ISO 639-2 code)')
-  .option('-t, --timeout <milliseconds>', 'Override the default timeout for each request')
-  .option('-d, --delay <milliseconds>', 'Override the default delay between request')
-  .option('-x, --proxy <url>', 'Use the specified proxy')
-  .option(
-    '--days <days>',
-    'Override the number of days for which the program will be loaded (defaults to the value from the site config)',
-    value => parseInt(value)
+  .addOption(new Option('-o, --output <path>', 'Path to output file').default('guide.xml'))
+  .addOption(new Option('-l, --lang <code>', 'Filter channels by language (ISO 639-1 code)'))
+  .addOption(
+    new Option('-t, --timeout <milliseconds>', 'Override the default timeout for each request').env(
+      'TIMEOUT'
+    )
   )
-  .option(
-    '--maxConnections <number>',
-    'Limit on the number of concurrent requests',
-    value => parseInt(value),
-    1
+  .addOption(
+    new Option('-d, --delay <milliseconds>', 'Override the default delay between request').env(
+      'DELAY'
+    )
   )
-  .option('--cron <expression>', 'Schedule a script run (example: "0 0 * * *")')
-  .option('--gzip', 'Create a compressed version of the guide as well', false)
+  .addOption(new Option('-x, --proxy <url>', 'Use the specified proxy').env('PROXY'))
+  .addOption(
+    new Option(
+      '--days <days>',
+      'Override the number of days for which the program will be loaded (defaults to the value from the site config)'
+    )
+      .argParser(value => parseInt(value))
+      .env('DAYS')
+  )
+  .addOption(
+    new Option('--maxConnections <number>', 'Limit on the number of concurrent requests')
+      .default(1)
+      .env('MAX_CONNECTIONS')
+  )
+  .addOption(
+    new Option('--gzip', 'Create a compressed version of the guide as well')
+      .default(false)
+      .env('GZIP')
+  )
   .parse(process.argv)
 
 export type GrabOptions = {
@@ -42,7 +56,6 @@ export type GrabOptions = {
   delay?: string
   lang?: string
   days?: number
-  cron?: string
   proxy?: string
 }
 
@@ -81,18 +94,8 @@ async function main() {
   }
   logger.info(`  found ${parsedChannels.count()} channel(s)`)
 
-  let runIndex = 1
-  if (options.cron) {
-    const cronJob = new CronJob(options.cron, async () => {
-      logger.info(`run #${runIndex}:`)
-      await runJob({ logger, parsedChannels })
-      runIndex++
-    })
-    cronJob.start()
-  } else {
-    logger.info(`run #${runIndex}:`)
-    runJob({ logger, parsedChannels })
-  }
+  logger.info('run:')
+  runJob({ logger, parsedChannels })
 }
 
 main()
