@@ -16,7 +16,7 @@ const channel = {
 
 it('can generate valid url', () => {
   expect(url({ channel, date })).toBe(
-    'https://tyr-prod.apigee.net/nostv/ott/schedule/range/contents/guest?channels=510&minDate=2023-12-11T00:00:00Z&maxDate=2023-12-11T23:59:59Z&isDateInclusive=true&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI'
+    'https://api.clg.nos.pt/nostv/ott/schedule/range/contents/guest?channels=510&minDate=2023-12-11T00:00:00Z&maxDate=2023-12-11T23:59:59Z&isDateInclusive=true&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI'
   )
 })
 
@@ -28,6 +28,8 @@ it('can parse response', () => {
     return p
   })
 
+  const image = 'https://mage.stream.nos.pt/mage/v1/Images?sourceUri=http://vip.pam.local.internal/PAM.Images/Store/8329ed1aec5d4c0faa2056972256ff9f&profile=ott_1_452x340&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI'
+
   expect(results[0]).toMatchObject({
     start: '2023-12-11T16:30:00.000Z',
     stop: '2023-12-11T17:00:00.000Z',
@@ -36,8 +38,10 @@ it('can parse response', () => {
       'A história de dois melhores amigos veterinários e o seu extraordinário trabalho na Austrália.',
     season: 1,
     episode: 12,
-    image:
-      'https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=http://vip.pam.local.internal/PAM.Images/Store/8329ed1aec5d4c0faa2056972256ff9f&profile=ott_1_452x340&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI'
+    icon: {
+      src: image
+    },
+    image
   })
 })
 
