@@ -21,11 +21,11 @@ module.exports = {
       'sec-ch-ua-platform': '"Windows"'
     }
   },
-  async parser({ content, request }) {
+  async parser(ctx) {
     let programs = []
     let queue = []
 
-    const items = parseItems(content)
+    const items = parseItems(ctx.content)
     for (const item of items) {
       const start = dayjs(item.startTime)
       const stop = start.add(item.duration, 'minute')
@@ -38,15 +38,16 @@ module.exports = {
         stop
       })
 
-      if (item.programId && !cachedPrograms[item.programId]) {
-        queue.push({
-          programId: item.programId,
-          url: `https://tvtv.us/api/v1/programs/${item.programId}`,
-          httpAgent: request.agent,
-          httpsAgent: request.agent,
-          headers: module.exports.request.headers
-        })
-      }
+      // NOTE: This part of the code is commented out because loading additional data leads either to error 429 Too Many Requests or to even greater delays between requests.
+      // if (item.programId && !cachedPrograms[item.programId]) {
+      //   queue.push({
+      //     programId: item.programId,
+      //     url: `https://tvtv.us/api/v1/programs/${item.programId}`,
+      //     httpAgent: ctx.request.agent,
+      //     httpsAgent: ctx.request.agent,
+      //     headers: module.exports.request.headers
+      //   })
+      // }
     }
 
     const axios = require('axios')
