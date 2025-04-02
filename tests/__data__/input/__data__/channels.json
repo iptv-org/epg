@@ -1,34 +1,36 @@
 [
   {
-    "id": "BravoEast.us",
-    "name": "Bravo East",
+    "id": "Bravo.us",
+    "name": "Bravo",
     "network": null,
     "country": "US",
     "subdivision": null,
     "city": null,
-    "broadcast_area": [
-      "c/US"
-    ],
-    "languages": [
-      "eng"
-    ],
+    "categories": [],
+    "is_nsfw": false,
+    "closed": "2020-01-01",
+    "replaced_by": "R6.co",
+    "logo": "https://www.directv.com/images/logos/channels/dark/large/579.png"
+  },
+  {
+    "id": "Bravos.us",
+    "name": "Bravos",
+    "network": null,
+    "country": "US",
+    "subdivision": null,
+    "city": null,
     "categories": [],
     "is_nsfw": false,
     "logo": "https://www.directv.com/images/logos/channels/dark/large/579.png"
   },
   {
-    "id": "CNNInternationalEurope.us",
-    "name": "CNN International Europe",
+    "id": "CNNInternational.us",
+    "name": "CNN International",
+    "alt_names": ["CNN", "CNN Int"],
     "network": null,
     "country": "US",
     "subdivision": null,
     "city": null,
-    "broadcast_area": [
-      "r/EUR"
-    ],
-    "languages": [
-      "eng"
-    ],
     "categories": [
       "news"
     ],
@@ -42,12 +44,6 @@
     "country": "ZA",
     "subdivision": null,
     "city": null,
-    "broadcast_area": [
-      "c/ZA"
-    ],
-    "languages": [
-      "afr"
-    ],
     "categories": [],
     "is_nsfw": false,
     "logo": "https://rndcdn.dstv.com/dstvcms/2020/08/31/M-Net_Movies_2_Logo_4-3_lightbackground_xlrg.png"
@@ -61,12 +57,6 @@
     "country": "US",
     "subdivision": null,
     "city": null,
-    "broadcast_area": [
-      "c/US"
-    ],
-    "languages": [
-      "eng"
-    ],
     "categories": [],
     "is_nsfw": false,
     "logo": "https://www.directv.com/images/logos/channels/dark/large/579.png"

@@ -1,6 +1,6 @@
 module.exports = {
-  site: 'parse-channels.com',
-  url: 'https://parse-channels.com',
+  site: 'example.com',
+  url: 'https://example.com',
   parser() {
     return []
   },
