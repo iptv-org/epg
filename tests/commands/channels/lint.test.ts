@@ -8,7 +8,7 @@ type ExecError = {
 describe('channels:lint', () => {
   it('will show a message if the file contains a syntax error', () => {
     try {
-      const cmd = 'npm run channels:lint --- tests/__data__/input/channels-lint/error.channels.xml'
+      const cmd = 'npm run channels:lint --- tests/__data__/input/channels_lint/error.channels.xml'
       const stdout = execSync(cmd, { encoding: 'utf8' })
       if (process.env.DEBUG === 'true') console.log(cmd, stdout)
       process.exit(1)
@@ -23,7 +23,7 @@ describe('channels:lint', () => {
   it('will show a message if an error occurred while parsing an xml file', () => {
     try {
       const cmd =
-        'npm run channels:lint --- tests/__data__/input/channels-lint/invalid.channels.xml'
+        'npm run channels:lint --- tests/__data__/input/channels_lint/invalid.channels.xml'
       const stdout = execSync(cmd, { encoding: 'utf8' })
       if (process.env.DEBUG === 'true') console.log(cmd, stdout)
       process.exit(1)
@@ -38,7 +38,7 @@ describe('channels:lint', () => {
   it('can test multiple files at ones', () => {
     try {
       const cmd =
-        'npm run channels:lint --- tests/__data__/input/channels-lint/error.channels.xml tests/__data__/input/channels-lint/invalid.channels.xml'
+        'npm run channels:lint --- tests/__data__/input/channels_lint/error.channels.xml tests/__data__/input/channels_lint/invalid.channels.xml'
       const stdout = execSync(cmd, { encoding: 'utf8' })
       if (process.env.DEBUG === 'true') console.log(cmd, stdout)
       process.exit(1)
@@ -57,7 +57,7 @@ describe('channels:lint', () => {
   it('will show a message if the file contains single quotes', () => {
     try {
       const cmd =
-        'npm run channels:lint --- tests/__data__/input/channels-lint/single_quotes.channels.xml'
+        'npm run channels:lint --- tests/__data__/input/channels_lint/single_quotes.channels.xml'
       const stdout = execSync(cmd, { encoding: 'utf8' })
       if (process.env.DEBUG === 'true') console.log(cmd, stdout)
       process.exit(1)
@@ -72,7 +72,7 @@ describe('channels:lint', () => {
 
   it('does not display errors if there are none', () => {
     try {
-      const cmd = 'npm run channels:lint --- tests/__data__/input/channels-lint/valid.channels.xml'
+      const cmd = 'npm run channels:lint --- tests/__data__/input/channels_lint/valid.channels.xml'
       const stdout = execSync(cmd, { encoding: 'utf8' })
       if (process.env.DEBUG === 'true') console.log(cmd, stdout)
     } catch (error) {
