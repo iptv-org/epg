@@ -1,27 +1,22 @@
-import { Collection } from '@freearhey/core'
 import { restEndpointMethods } from '@octokit/plugin-rest-endpoint-methods'
 import { paginateRest } from '@octokit/plugin-paginate-rest'
+import { TESTING, OWNER, REPO } from '../constants'
+import { Collection } from '@freearhey/core'
 import { Octokit } from '@octokit/core'
 import { IssueParser } from './'
-import { TESTING, OWNER, REPO } from '../constants'
 
 const CustomOctokit = Octokit.plugin(paginateRest, restEndpointMethods)
 const octokit = new CustomOctokit()
 
 export class IssueLoader {
-  async load({ labels }: { labels: string[] | string }) {
-    labels = Array.isArray(labels) ? labels.join(',') : labels
+  async load(props?: { labels: string[] | string }) {
+    let labels = ''
+    if (props && props.labels) {
+      labels = Array.isArray(props.labels) ? props.labels.join(',') : props.labels
+    }
     let issues: object[] = []
     if (TESTING) {
-      switch (labels) {
-        case 'broken guide,status:warning':
-          issues = (await import('../../tests/__data__/input/issues/broken_guide_warning.mjs'))
-            .default
-          break
-        case 'broken guide,status:down':
-          issues = (await import('../../tests/__data__/input/issues/broken_guide_down.mjs')).default
-          break
-      }
+      issues = (await import('../../tests/__data__/input/sites_update/issues.mjs')).default
     } else {
       issues = await octokit.paginate(octokit.rest.issues.listForRepo, {
         owner: OWNER,

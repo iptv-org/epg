@@ -2,10 +2,11 @@ import { Logger, Storage, Collection } from '@freearhey/core'
 import { ChannelsParser } from '../../core'
 import path from 'path'
 import { SITES_DIR, API_DIR } from '../../constants'
-import { Channel } from 'epg-grabber'
+import epgGrabber from 'epg-grabber'
 
 type OutputItem = {
   channel: string | null
+  feed: string | null
   site: string
   site_id: string
   site_name: string
@@ -31,9 +32,13 @@ async function main() {
 
   logger.info(`  found ${parsedChannels.count()} channel(s)`)
 
-  const output = parsedChannels.map((channel: Channel): OutputItem => {
+  const output = parsedChannels.map((channel: epgGrabber.Channel): OutputItem => {
+    const xmltv_id = channel.xmltv_id || ''
+    const [channelId, feedId] = xmltv_id.split('@')
+
     return {
-      channel: channel.xmltv_id || null,
+      channel: channelId || null,
+      feed: feedId || null,
       site: channel.site || '',
       site_id: channel.site_id || '',
       site_name: channel.name,

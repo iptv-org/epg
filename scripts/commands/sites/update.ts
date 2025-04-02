@@ -1,8 +1,8 @@
-import { Channel } from 'epg-grabber'
-import { Logger, Storage, Collection } from '@freearhey/core'
 import { IssueLoader, HTMLTable, ChannelsParser } from '../../core'
-import { Issue, Site } from '../../models'
+import { Logger, Storage, Collection } from '@freearhey/core'
 import { SITES_DIR, ROOT_DIR } from '../../constants'
+import { Issue, Site } from '../../models'
+import { Channel } from 'epg-grabber'
 
 async function main() {
   const logger = new Logger({ disabled: true })
@@ -15,11 +15,17 @@ async function main() {
   const folders = await sitesStorage.list('*/')
 
   logger.info('loading issues...')
-  const issues = await loadIssues(loader)
+  const issues = await loader.load()
 
   logger.info('putting the data together...')
+  const brokenGuideReports = issues.filter(issue =>
+    issue.labels.find((label: string) => label === 'broken guide')
+  )
   for (const domain of folders) {
-    const filteredIssues = issues.filter((issue: Issue) => domain === issue.data.get('site'))
+    const filteredIssues = brokenGuideReports.filter(
+      (issue: Issue) => domain === issue.data.get('site')
+    )
+
     const site = new Site({
       domain,
       issues: filteredIssues
@@ -62,10 +68,3 @@ async function main() {
 }
 
 main()
-
-async function loadIssues(loader: IssueLoader) {
-  const issuesWithStatusWarning = await loader.load({ labels: ['broken guide', 'status:warning'] })
-  const issuesWithStatusDown = await loader.load({ labels: ['broken guide', 'status:down'] })
-
-  return issuesWithStatusWarning.concat(issuesWithStatusDown)
-}
