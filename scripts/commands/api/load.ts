@@ -7,6 +7,7 @@ async function main() {
 
   const requests = [
     client.download('channels.json'),
+    client.download('feeds.json'),
     client.download('countries.json'),
     client.download('regions.json'),
     client.download('subdivisions.json')

@@ -1,0 +1,24 @@
+name: ✨ Feature request
+description: Ask for a feature to be added to the guide
+labels: ['feature request']
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please fill out the issue template as much as you can so we could efficiently process your request.
+
+  - type: input
+    attributes:
+      label: Site
+      description: The name of the site
+      placeholder: 'guidatv.sky.it'
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Description
+      description: Detailed description of the feature.
+    validations:
+      required: true

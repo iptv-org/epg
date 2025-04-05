@@ -1,9 +1,10 @@
 import { Storage, Collection, DateTime, Logger } from '@freearhey/core'
-import { ChannelsParser, ConfigLoader, ApiChannel, Queue } from './'
+import { ChannelsParser, ConfigLoader, Queue } from './'
 import { SITES_DIR, DATA_DIR } from '../constants'
 import { SiteConfig } from 'epg-grabber'
 import path from 'path'
 import { GrabOptions } from '../commands/epg/grab'
+import { Channel } from '../models'
 
 type QueueCreatorProps = {
   logger: Logger
@@ -32,7 +33,7 @@ export class QueueCreator {
 
   async create(): Promise<Queue> {
     const channelsContent = await this.dataStorage.json('channels.json')
-    const channels = new Collection(channelsContent).map(data => new ApiChannel(data))
+    const channels = new Collection(channelsContent).map(data => new Channel(data))
 
     const queue = new Queue()
     for (const channel of this.parsedChannels.all()) {
@@ -44,8 +45,8 @@ export class QueueCreator {
 
       if (channel.xmltv_id) {
         if (!channel.icon) {
-          const found: ApiChannel = channels.first(
-            (_channel: ApiChannel) => _channel.id === channel.xmltv_id
+          const found: Channel = channels.first(
+            (_channel: Channel) => _channel.id === channel.xmltv_id
           )
 
           if (found) {

@@ -1,4 +1,4 @@
-const durationParser = require('parse-duration')
+const durationParser = require('parse-duration').default
 const cheerio = require('cheerio')
 const srcset = require('srcset')
 const dayjs = require('dayjs')

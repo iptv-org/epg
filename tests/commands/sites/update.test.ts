@@ -3,10 +3,10 @@ import fs from 'fs-extra'
 import { pathToFileURL } from 'node:url'
 import os from 'os'
 
-let ENV_VAR = 'SITES_DIR=tests/__data__/input/sites-update/sites ROOT_DIR=tests/__data__/output'
+let ENV_VAR = 'SITES_DIR=tests/__data__/input/sites_update/sites ROOT_DIR=tests/__data__/output'
 if (os.platform() === 'win32') {
   ENV_VAR =
-    'SET "SITES_DIR=tests/__data__/input/sites-update/sites" && SET "ROOT_DIR=tests/__data__/output" &&'
+    'SET "SITES_DIR=tests/__data__/input/sites_update/sites" && SET "ROOT_DIR=tests/__data__/output" &&'
 }
 
 beforeEach(() => {
@@ -20,7 +20,7 @@ it('can update SITES.md', () => {
   if (process.env.DEBUG === 'true') console.log(cmd, stdout)
 
   expect(content('tests/__data__/output/SITES.md')).toEqual(
-    content('tests/__data__/expected/SITES.md')
+    content('tests/__data__/expected/sites_update/SITES.md')
   )
 })
 

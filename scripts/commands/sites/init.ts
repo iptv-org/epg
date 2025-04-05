@@ -1,8 +1,8 @@
 import { Logger, Storage } from '@freearhey/core'
-import { program } from 'commander'
 import { SITES_DIR } from '../../constants'
-import fs from 'fs-extra'
 import { pathToFileURL } from 'node:url'
+import { program } from 'commander'
+import fs from 'fs-extra'
 
 program.argument('<site>', 'Domain name of the site').parse(process.argv)
 
