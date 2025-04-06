@@ -1,7 +1,7 @@
 const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
-const parseDuration = require('parse-duration')
+const parseDuration = require('parse-duration').default
 
 dayjs.extend(utc)
 

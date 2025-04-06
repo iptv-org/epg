@@ -1,10 +1,11 @@
 import { Storage, Collection, Dictionary, File } from '@freearhey/core'
-import { ChannelsParser, ApiChannel } from '../../core'
+import { ChannelsParser } from '../../core'
+import { Channel } from '../../models'
 import { program } from 'commander'
 import chalk from 'chalk'
 import langs from 'langs'
 import { DATA_DIR } from '../../constants'
-import { Channel } from 'epg-grabber'
+import epgGrabber from 'epg-grabber'
 
 program.argument('[filepath]', 'Path to *.channels.xml files to validate').parse(process.argv)
 
@@ -21,8 +22,9 @@ async function main() {
   const parser = new ChannelsParser({ storage: new Storage() })
 
   const dataStorage = new Storage(DATA_DIR)
-  const channelsContent = await dataStorage.json('channels.json')
-  const channels = new Collection(channelsContent).map(data => new ApiChannel(data))
+  const channelsData = await dataStorage.json('channels.json')
+  const channels = new Collection(channelsData).map(data => new Channel(data))
+  const channelsGroupedById = channels.groupBy((channel: Channel) => channel.id)
 
   let totalFiles = 0
   let totalErrors = 0
@@ -37,7 +39,7 @@ async function main() {
 
     const bufferBySiteId = new Dictionary()
     const errors: ValidationError[] = []
-    parsedChannels.forEach((channel: Channel) => {
+    parsedChannels.forEach((channel: epgGrabber.Channel) => {
       const bufferId: string = channel.site_id
       if (bufferBySiteId.missing(bufferId)) {
         bufferBySiteId.set(bufferId, true)
@@ -52,10 +54,8 @@ async function main() {
       }
 
       if (!channel.xmltv_id) return
-
-      const foundChannel = channels.first(
-        (_channel: ApiChannel) => _channel.id === channel.xmltv_id
-      )
+      const [channelId] = channel.xmltv_id.split('@')
+      const foundChannel = channelsGroupedById.get(channelId)
       if (!foundChannel) {
         errors.push({ type: 'wrong_xmltv_id', ...channel })
         totalErrors++

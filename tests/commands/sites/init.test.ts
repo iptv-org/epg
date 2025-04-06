@@ -24,13 +24,13 @@ it('can create new site config from template', () => {
   expect(exists('tests/__data__/output/sites/example.com/example.com.config.js')).toBe(true)
   expect(exists('tests/__data__/output/sites/example.com/readme.md')).toBe(true)
   expect(content('tests/__data__/output/sites/example.com/example.com.test.js')).toEqual(
-    content('tests/__data__/expected/sites/sites-init/example.com.test.js')
+    content('tests/__data__/expected/sites_init/example.com.test.js')
   )
   expect(content('tests/__data__/output/sites/example.com/example.com.config.js')).toEqual(
-    content('tests/__data__/expected/sites/sites-init/example.com.config.js')
+    content('tests/__data__/expected/sites_init/example.com.config.js')
   )
   expect(content('tests/__data__/output/sites/example.com/readme.md')).toEqual(
-    content('tests/__data__/expected/sites/sites-init/readme.md')
+    content('tests/__data__/expected/sites_init/readme.md')
   )
 })
 
