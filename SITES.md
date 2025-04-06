@@ -50,10 +50,10 @@
     <tr><td><a href="sites/energeek.cl">energeek.cl</a></td><td align="right">6</td><td align="right">3</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/entertainment.ie">entertainment.ie</a></td><td align="right">109</td><td align="right">95</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/epg.112114.xyz">epg.112114.xyz</a></td><td align="right">930</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/epg.iptvx.one">epg.iptvx.one</a></td><td align="right">2862</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/epg.iptvx.one">epg.iptvx.one</a></td><td align="right">2862</td><td align="right">747</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/epg.telemach.ba">epg.telemach.ba</a></td><td align="right">259</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/epg.telemach.me">epg.telemach.me</a></td><td align="right">216</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/epgshare01.online">epgshare01.online</a></td><td align="right">20970</td><td align="right">11</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/epgshare01.online">epgshare01.online</a></td><td align="right">20970</td><td align="right">17</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/firstmedia.com">firstmedia.com</a></td><td align="right">116</td><td align="right">101</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/foxsports.com.au">foxsports.com.au</a></td><td align="right">7</td><td align="right">7</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/foxtel.com.au">foxtel.com.au</a></td><td align="right">155</td><td align="right">87</td><td align="center">🟢</td><td></td></tr>
