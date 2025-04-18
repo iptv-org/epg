@@ -82,6 +82,16 @@ describe('epg:grab', () => {
     )
   })
 
+  it('can grab epg then using a multi-language filter', () => {
+    const cmd = `${ENV_VAR} npm run grab --- --channels=tests/__data__/input/epg_grab/example.com/example.com.channels.xml --output=tests/__data__/output/guides/{site}.xml --lang=fr,it`
+    const stdout = execSync(cmd, { encoding: 'utf8' })
+    if (process.env.DEBUG === 'true') console.log(cmd, stdout)
+
+    expect(content('tests/__data__/output/guides/example.com.xml')).toEqual(
+      content('tests/__data__/expected/epg_grab/guide_4.xml')
+    )
+  })
+
   it('can grab epg using custom channels list', () => {
     const cmd = `${ENV_VAR} npm run grab --- --channels=tests/__data__/input/epg_grab/custom.channels.xml --output=tests/__data__/output/guide.xml`
     const stdout = execSync(cmd, { encoding: 'utf8' })
