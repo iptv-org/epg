@@ -391,9 +391,9 @@ npm run channels:edit path/to/channels.xml
 This way, you can map channels by simply selecting the proper ID from the list:
 
 ```sh
-? Select xmltv_id for "BBC One" (bbc1): (Use arrow keys)
-❯ BBC One (BBC1, BBC Television, BBC Television Service) | BBCOne.uk
-  BBC One HD | BBCOneHD.uk
+? Select channel ID for "BBC One" (bbc1): (Use arrow keys)
+❯ BBCOne.uk (BBC One, BBC1, BBC Television, BBC Television Service)
+  BBCOneHD.uk (BBC One HD)
   Type...
   Skip
 ```
