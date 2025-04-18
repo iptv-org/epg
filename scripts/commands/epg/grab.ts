@@ -14,7 +14,7 @@ program
     )
   )
   .addOption(new Option('-o, --output <path>', 'Path to output file').default('guide.xml'))
-  .addOption(new Option('-l, --lang <code>', 'Filter channels by language (ISO 639-1 code)'))
+  .addOption(new Option('-l, --lang <codes>', 'Filter channels by languages (ISO 639-1 codes)'))
   .addOption(
     new Option('-t, --timeout <milliseconds>', 'Override the default timeout for each request').env(
       'TIMEOUT'
@@ -90,7 +90,11 @@ async function main() {
     parsedChannels = parsedChannels.concat(await parser.parse(filepath))
   }
   if (options.lang) {
-    parsedChannels = parsedChannels.filter((channel: Channel) => channel.lang === options.lang)
+    parsedChannels = parsedChannels.filter((channel: Channel) => {
+      if (!options.lang || !channel.lang) return true
+
+      return options.lang.includes(channel.lang)
+    })
   }
   logger.info(`  found ${parsedChannels.count()} channel(s)`)
 

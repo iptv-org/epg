@@ -38,7 +38,6 @@ export class QueueCreator {
     const queue = new Queue()
     for (const channel of this.parsedChannels.all()) {
       if (!channel.site || !channel.site_id || !channel.name) continue
-      if (this.options.lang && channel.lang !== this.options.lang) continue
 
       const configPath = path.resolve(SITES_DIR, `${channel.site}/${channel.site}.config.js`)
       const config: SiteConfig = await this.configLoader.load(configPath)
