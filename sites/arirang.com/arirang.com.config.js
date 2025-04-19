@@ -59,7 +59,7 @@ module.exports = {
       const programDetail = await parseProgramDetail(item)
 
       programs.push({
-        title: item.displayNm,
+        title: parseTitle(programDetail),
         start: parseStart(item),
         stop: parseStop(item),
         image: parseImage(programDetail),
@@ -119,6 +119,14 @@ async function parseProgramDetail(item) {
     .catch(error => {
       console.log(error)
     })
+}
+
+function parseTitle(programDetail) {
+  if (programDetail && programDetail.title && programDetail.title[0] && programDetail.title[0].text) {
+    return programDetail.title[0].text
+  } else {
+    return ''
+  }
 }
 
 function parseImage(programDetail) {
