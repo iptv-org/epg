@@ -114,10 +114,12 @@ async function parseProgramDetail(item) {
       }
     )
     .then(response => {
+      // console.log('Retrieved program detail: bis_program_code ' + item.pgmCd)
       return response.data
     })
-    .catch(error => {
-      console.log(error)
+    .catch(function () {
+      // The provider/server may not have details on every single programs.
+      // console.log('Unavailable program detail: bis_program_code ' + item.pgmCd)
     })
 }
 
