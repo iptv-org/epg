@@ -57,7 +57,7 @@ Options:
   -c, --channels <path>         Path to *.channels.xml file (required if the "--site" attribute is
                                 not specified)
   -o, --output <path>           Path to output file (default: "guide.xml")
-  -l, --lang <code>             Allows to limit the download to channels in the specified language only (ISO 639-1 code)
+  -l, --lang <codes>            Allows you to restrict downloading to channels in specified languages only (example: "en,id")
   -t, --timeout <milliseconds>  Timeout for each request in milliseconds (default: 0)
   -d, --delay <milliseconds>    Delay between request in milliseconds (default: 0)
   -x, --proxy <url>             Use the specified proxy (example: "socks5://username:password@127.0.0.1:1234")
