@@ -19,14 +19,14 @@
   <channel site="melita.com" lang="de" xmltv_id="RTL.de" site_id="38de6f81-d9ff-49ba-aa33-b147166ca454">RTL</channel>
   <channel site="melita.com" lang="de" xmltv_id="RTLZwei.de" site_id="ef81f5fd-d6ac-4464-92f3-2474735aa6d3">RTL II</channel>
   <channel site="melita.com" lang="en" xmltv_id="AlJazeera.qa" site_id="786fa95a-4988-4c02-8daa-6d352cc31073">Al Jazeera Arabic</channel>
-  <channel site="melita.com" lang="en" xmltv_id="AlJazeeraEnglish.qa" site_id="6981b50c-5b06-4a9e-891e-1c1e979be554">Al Jazeera English</channel>
+  <channel site="melita.com" lang="en" xmltv_id="AlJazeera.qa@English" site_id="6981b50c-5b06-4a9e-891e-1c1e979be554">Al Jazeera English</channel>
   <channel site="melita.com" lang="en" xmltv_id="AnimalPlanetEurope.uk" site_id="100b35e6-bd16-40c9-bde9-32184e3ab560">Animal Planet HD</channel>
   <channel site="melita.com" lang="en" xmltv_id="BabyTV.uk" site_id="0bf046ac-c11d-47ba-a5de-bddba08820f8">Baby TV</channel>
-  <channel site="melita.com" lang="en" xmltv_id="BBCEarth.gr" site_id="8de17b4d-1798-402f-927e-cac7e1d38103">BBC Earth HD</channel>
+  <channel site="melita.com" lang="en" xmltv_id="BBCEarth.uk@Greece" site_id="8de17b4d-1798-402f-927e-cac7e1d38103">BBC Earth HD</channel>
   <channel site="melita.com" lang="en" xmltv_id="BBCEntertainment.uk" site_id="42226fcd-6032-4c80-aaa6-8ae8cccda900">BBC Entertainment</channel>
-  <channel site="melita.com" lang="en" xmltv_id="BBCNewsEurope.uk" site_id="9b3f6254-4f89-4a4b-9046-dc4c4f03b928">BBC News</channel>
-  <channel site="melita.com" lang="en" xmltv_id="BloombergTVEurope.uk" site_id="913609ee-157a-49c1-8d8b-bc73872ff9a5">Bloomberg</channel>
-  <channel site="melita.com" lang="en" xmltv_id="BoomerangCEE.uk" site_id="dac0cc07-c3f1-4753-a1b6-fd9465ba2e20">Boomerang</channel>
+  <channel site="melita.com" lang="en" xmltv_id="BBCNews.uk@Europe" site_id="9b3f6254-4f89-4a4b-9046-dc4c4f03b928">BBC News</channel>
+  <channel site="melita.com" lang="en" xmltv_id="BloombergTV.us@Europe" site_id="913609ee-157a-49c1-8d8b-bc73872ff9a5">Bloomberg</channel>
+  <channel site="melita.com" lang="en" xmltv_id="CartoonitoCEE.uk" site_id="dac0cc07-c3f1-4753-a1b6-fd9465ba2e20">Boomerang</channel>
   <channel site="melita.com" lang="en" xmltv_id="Cartoonito.it" site_id="1bf0f7db-9320-4a5a-b465-c033bbf10be8">Cartoonito</channel>
   <channel site="melita.com" lang="en" xmltv_id="CartoonNetworkMENA.uk" site_id="4cc8d963-e42b-431e-b4d0-730da5505f21">Cartoon Network</channel>
   <channel site="melita.com" lang="en" xmltv_id="CBeebiesMiddleEast.uk" site_id="8a2323cc-73de-4824-b6a7-98aaee0cfdc5">CBeeBies HD</channel>
@@ -34,30 +34,30 @@
   <channel site="melita.com" lang="en" xmltv_id="CGTN.cn" site_id="aa9aa3c5-8858-4b69-b152-d41ec3ed030b">CGTN</channel>
   <channel site="melita.com" lang="en" xmltv_id="ClubMTVEurope.uk" site_id="77cd57a0-ede3-49c1-81b7-c94731d83aab">Club MTV</channel>
   <channel site="melita.com" lang="en" xmltv_id="CNBCEurope.uk" site_id="562b19ba-feb2-47a9-ad43-edde262e3d7a">CNBC</channel>
-  <channel site="melita.com" lang="en" xmltv_id="CNNInternationalEurope.us" site_id="66675e6f-942d-4789-96fd-49a06d43a1d1">CNN International</channel>
+  <channel site="melita.com" lang="en" xmltv_id="CNNInternational.us@MENA" site_id="66675e6f-942d-4789-96fd-49a06d43a1d1">CNN International</channel>
   <channel site="melita.com" lang="en" xmltv_id="CrimePlusInvestigation.uk" site_id="7a34bac0-f2dd-4c51-830d-52560dbd5520">Crime + Investigation</channel>
   <channel site="melita.com" lang="en" xmltv_id="DaystarTV.us" site_id="c71c545c-f9b4-42f7-9d9f-3fe8861a4b19">Daystar Network HD</channel>
   <channel site="melita.com" lang="en" xmltv_id="DiscoveryChannel.it" site_id="40210ac8-89e1-40ad-9dc2-8f905ef1fab1">Discovery HD</channel>
-  <channel site="melita.com" lang="en" xmltv_id="DiscoveryChannel.mt" site_id="e5e0148d-ca55-4ab5-a0f3-fb303fd39ee9">Discovery Channel</channel>
-  <channel site="melita.com" lang="en" xmltv_id="DiscoveryScience.it" site_id="ea7aaadc-6667-4d97-93a0-a927de332814">Discovery Science</channel>
-  <channel site="melita.com" lang="en" xmltv_id="DisneyChannelMENA.uk" site_id="3e2db904-efad-4904-ab64-7d1ddabb251f">Disney Channel</channel>
+  <channel site="melita.com" lang="en" xmltv_id="DiscoveryChannelEurope.uk@Malta" site_id="e5e0148d-ca55-4ab5-a0f3-fb303fd39ee9">Discovery Channel</channel>
+  <channel site="melita.com" lang="en" xmltv_id="DiscoveryScienceEurope.uk@Italy" site_id="ea7aaadc-6667-4d97-93a0-a927de332814">Discovery Science</channel>
+  <channel site="melita.com" lang="en" xmltv_id="DisneyChannelEMEA.uk" site_id="3e2db904-efad-4904-ab64-7d1ddabb251f">Disney Channel</channel>
   <channel site="melita.com" lang="en" xmltv_id="DisneyJunior.gr" site_id="b21b88e9-159f-49e3-911a-40b442fbb95c">Disney Junior</channel>
   <channel site="melita.com" lang="en" xmltv_id="DubaiOne.ae" site_id="b41afdcb-2204-48ee-b40a-a0db64e4bd91">Dubai One</channel>
   <channel site="melita.com" lang="en" xmltv_id="ducktv.sk" site_id="aeb3011d-9106-4621-b5e8-693dec45f33e">Duck TV</channel>
-  <channel site="melita.com" lang="en" xmltv_id="DWEnglish.de" site_id="8a1ea95b-49fb-4fe8-9fc9-06d0f7567f76">Deutsche Welle HD</channel>
+  <channel site="melita.com" lang="en" xmltv_id="DW.de@English" site_id="8a1ea95b-49fb-4fe8-9fc9-06d0f7567f76">Deutsche Welle HD</channel>
   <channel site="melita.com" lang="en" xmltv_id="EEurope.nl" site_id="60338dfb-5bf1-4824-a1f9-92ff5f78d105">E! Entertainment HD</channel>
   <channel site="melita.com" lang="en" xmltv_id="EuronewsEnglish.fr" site_id="aa11df2b-37b0-442d-a7d6-fab4ef03e48f">Euronews HD</channel>
   <channel site="melita.com" lang="en" xmltv_id="Eurosport1.fr" site_id="9b2ff2da-b9d9-4ef7-be19-c16f7b6981f3">Eurosport HD</channel>
   <channel site="melita.com" lang="en" xmltv_id="Eurosport2.fr" site_id="ddd38bf4-0324-4a46-9174-b7023c632c60">Eurosport 2</channel>
-  <channel site="melita.com" lang="en" xmltv_id="EWTNEurope.us" site_id="f3ff65cf-ac72-42e1-bb2d-438f4c77590e">EWTN</channel>
+  <channel site="melita.com" lang="en" xmltv_id="EWTN.us@Europe" site_id="f3ff65cf-ac72-42e1-bb2d-438f4c77590e">EWTN</channel>
   <channel site="melita.com" lang="en" xmltv_id="ExtremeSportsChannel.nl" site_id="b17bc110-1dce-40bd-80e1-53716927776d">Extreme Sports</channel>
   <channel site="melita.com" lang="en" xmltv_id="FashionTVEurope.fr" site_id="b99f05b1-f4c9-4a23-a2fe-f891a9a95cee">FTV HD</channel>
   <channel site="melita.com" lang="en" xmltv_id="FLivingChannel.mt" site_id="00144de1-557a-418f-90ce-f518aa195f35">f Living</channel>
   <channel site="melita.com" lang="en" xmltv_id="FoodNetworkEMEA.us" site_id="f18b81d1-e948-47a6-94d2-73ae397c34bd">Food Network HD</channel>
   <channel site="melita.com" lang="en" xmltv_id="Fox.gr" site_id="d85ef97b-4075-4d0d-bcb1-d740554b95e6">FOX HD</channel>
   <channel site="melita.com" lang="en" xmltv_id="FoxLife.gr" site_id="603f6712-f7bf-47b6-8143-b9380cab4586">FOX LIFE HD</channel>
-  <channel site="melita.com" lang="en" xmltv_id="France24English.fr" site_id="3e7cac2b-4039-4d6d-8be4-6305458a2798">France 24 in English</channel>
-  <channel site="melita.com" lang="en" xmltv_id="GINXEsportsTV.uk" site_id="1365ad29-e9af-4d6e-8229-ac18b12d6db1">Ginx TV</channel>
+  <channel site="melita.com" lang="en" xmltv_id="France24.fr@English" site_id="3e7cac2b-4039-4d6d-8be4-6305458a2798">France 24 in English</channel>
+  <channel site="melita.com" lang="en" xmltv_id="GINXTV.uk" site_id="1365ad29-e9af-4d6e-8229-ac18b12d6db1">Ginx TV</channel>
   <channel site="melita.com" lang="en" xmltv_id="GODTV.uk" site_id="024900dd-988d-4875-b86d-b1615556dfe4">GOD TV</channel>
   <channel site="melita.com" lang="en" xmltv_id="GREATaction.uk" site_id="3d095c1b-5747-431d-a40c-b16d5d1f2b68">GREAT! Movies Action</channel>
   <channel site="melita.com" lang="en" xmltv_id="HGTV.it" site_id="6d7fbb66-a86a-46ef-9cb4-bee3594bfc39">HGTV HD</channel>
@@ -86,7 +86,7 @@
   <channel site="melita.com" lang="en" xmltv_id="SmashTV.mt" site_id="90866e92-bb52-4842-b00d-ae2bad9dfec6">Smash TV</channel>
   <channel site="melita.com" lang="en" xmltv_id="StingrayCMusic.ca" site_id="1e973c21-a4de-4fd8-9130-3a554f33e345">C Music TV</channel>
   <channel site="melita.com" lang="en" xmltv_id="StingrayiConcerts.ca" site_id="f47884ed-751b-4656-99a7-26dc294476de">iConcerts HD</channel>
-  <channel site="melita.com" lang="en" xmltv_id="TLCPanregional.us" site_id="a81f5b50-a9d0-488a-bd11-0c4eb83b3b54">TLC</channel>
+  <channel site="melita.com" lang="en" xmltv_id="TLCLatinAmerica.us@Panregional" site_id="a81f5b50-a9d0-488a-bd11-0c4eb83b3b54">TLC</channel>
   <channel site="melita.com" lang="en" xmltv_id="TraceUrban.fr" site_id="9e3f35f3-a5d7-473c-bb5d-669682145d1c">TRACE Urban HD</channel>
   <channel site="melita.com" lang="en" xmltv_id="TravelChannelEMEA.uk" site_id="20a97618-b583-4c7c-8e16-df68d0a6384e">Travel HD</channel>
   <channel site="melita.com" lang="en" xmltv_id="TSN1.mt" site_id="d71d5637-86da-4c38-a434-ed119cf0e83c">TSN1</channel>
@@ -99,7 +99,7 @@
   <channel site="melita.com" lang="en" xmltv_id="TSN8.mt" site_id="7de33233-5eec-4418-8928-1c6f9fc21f8c">TSN8</channel>
   <channel site="melita.com" lang="es" xmltv_id="TVEInternacionalEuropeAsia.es" site_id="fb8b9877-9af9-449e-9e6d-ee5cb1e2d417">TVE Internacional</channel>
   <channel site="melita.com" lang="fr" xmltv_id="France2.fr" site_id="a990d4ab-1a2b-47ec-b622-b28075d1f1ba">France 2 HD</channel>
-  <channel site="melita.com" lang="fr" xmltv_id="France24French.fr" site_id="bce83c2d-b975-41cc-b863-ff53dc7fab9f">France 24 in French</channel>
+  <channel site="melita.com" lang="fr" xmltv_id="France24.fr@French" site_id="bce83c2d-b975-41cc-b863-ff53dc7fab9f">France 24 in French</channel>
   <channel site="melita.com" lang="fr" xmltv_id="Mezzo.fr" site_id="6705d6b4-cc73-4476-93f1-4c9660334f68">Mezzo HD</channel>
   <channel site="melita.com" lang="fr" xmltv_id="TV5MondeEurope.fr" site_id="3287b927-3407-4b26-80e0-37044474b8b0">TV5 Monde</channel>
   <channel site="melita.com" lang="it" xmltv_id="Boing.it" site_id="9d2651e6-1f1f-4cc7-9d9c-6c37f7cfed5f">Boing</channel>
