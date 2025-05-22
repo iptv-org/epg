@@ -1,10 +1,11 @@
 const { DateTime } = require('luxon')
+const dayOfMonth = DateTime.now().toFormat('dd'); // Get the current day of the month (01-31)
 
 module.exports = {
   site: 'turksatkablo.com.tr',
   days: 2,
   url: function ({ date }) {
-    return `https://www.turksatkablo.com.tr/userUpload/EPG/y.json?_=${date.valueOf()}`
+    return `https://www.turksatkablo.com.tr/userUpload/EPG/${dayOfMonth}.json?_=${date.valueOf()}`
   },
   request: {
     timeout: 60000,
@@ -38,8 +39,9 @@ module.exports = {
   },
   async channels() {
     const axios = require('axios')
+
     const data = await axios
-      .get('https://www.turksatkablo.com.tr/userUpload/EPG/y.json')
+      .get('https://www.turksatkablo.com.tr/userUpload/EPG/${dayOfMonth}.json')
       .then(r => r.data)
       .catch(console.log)
 
