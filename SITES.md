@@ -35,6 +35,7 @@
     <tr><td><a href="sites/cubmu.com">cubmu.com</a></td><td align="right">174</td><td align="right">122</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/cyta.com.cy">cyta.com.cy</a></td><td align="right">116</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/dens.tv">dens.tv</a></td><td align="right">67</td><td align="right">64</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/derana.lk">derana.lk</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/digea.gr">digea.gr</a></td><td align="right">92</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/digiturk.com.tr">digiturk.com.tr</a></td><td align="right">108</td><td align="right">107</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/directv.com">directv.com</a></td><td align="right">1043</td><td align="right">696</td><td align="center">🔴</td><td>https://github.com/iptv-org/epg/issues/2284</td></tr>
@@ -54,7 +55,7 @@
     <tr><td><a href="sites/epg.telemach.ba">epg.telemach.ba</a></td><td align="right">259</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/epg.telemach.me">epg.telemach.me</a></td><td align="right">216</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/epgmaster.com">epgmaster.com</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/epgshare01.online">epgshare01.online</a></td><td align="right">20970</td><td align="right">17</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/epgshare01.online">epgshare01.online</a></td><td align="right">20971</td><td align="right">17</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/firstmedia.com">firstmedia.com</a></td><td align="right">116</td><td align="right">101</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/foxsports.com.au">foxsports.com.au</a></td><td align="right">7</td><td align="right">7</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/foxtel.com.au">foxtel.com.au</a></td><td align="right">155</td><td align="right">87</td><td align="center">🟢</td><td></td></tr>
