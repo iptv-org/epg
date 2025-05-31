@@ -6,21 +6,40 @@ module.exports = {
   site: 'movistarplus.es',
   days: 2,
   url({ channel, date }) {
-    return `https://www.movistarplus.es/programacion-tv/${channel.site_id}/${date.format(
-      'YYYY-MM-DD'
-    )}`
+    return `https://www.movistarplus.es/programacion-tv/${channel.site_id}/${date.format('YYYY-MM-DD')}`
   },
-  parser({ content }) {
+  async parser({ content }) {
     let programs = []
     let items = parseItems(content)
     if (!items.length) return programs
-    items.forEach(el => {
+
+    const $ = cheerio.load(content)
+    const programElements = $('div[id^="ele-"]').get()
+
+    for (let i = 0; i < items.length; i++) {
+      const el = items[i]
+      let description = null
+
+      if (programElements[i]) {
+        const programDiv = $(programElements[i])
+        const programLink = programDiv.find('a').attr('href')
+        
+        if (programLink) {
+          const idMatch = programLink.match(/id=(\d+)/)
+          if (idMatch && idMatch[1]) {
+            description = await getProgramDescription(programLink).catch(() => null)
+          }
+        }
+      }
+
       programs.push({
         title: el.item.name,
+        description: description,
         start: dayjs(el.item.startDate),
         stop: dayjs(el.item.endDate)
       })
-    })
+    }
+
     return programs
   },
   async channels() {
@@ -56,5 +75,23 @@ function parseItems(content) {
     return scheme.itemListElement
   } catch {
     return []
+  }
+}
+
+async function getProgramDescription(programUrl) {
+  try {
+    const response = await axios.get(programUrl, {
+      headers: {
+        'Referer': 'https://www.movistarplus.es/programacion-tv/'
+      }
+    })
+
+    const $ = cheerio.load(response.data)
+    const description = $('.show-content .text p').first().text().trim() || null
+
+    return description
+  } catch (error) {
+    console.error(`Error fetching description from ${programUrl}:`, error.message)
+    return null
   }
 }
