@@ -177,7 +177,7 @@
     <tr><td><a href="sites/tv-spored.siol.net">tv-spored.siol.net</a></td><td align="right">312</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv.blue.ch">tv.blue.ch</a></td><td align="right">1030</td><td align="right">565</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv.cctv.com">tv.cctv.com</a></td><td align="right">94</td><td align="right">88</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/tv.dir.bg">tv.dir.bg</a></td><td align="right">111</td><td align="right">93</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/tv.dir.bg">tv.dir.bg</a></td><td align="right">111</td><td align="right">93</td><td align="center">🟢</td><td>https://github.com/iptv-org/epg/issues/2779</td></tr>
     <tr><td><a href="sites/tv.lv">tv.lv</a></td><td align="right">137</td><td align="right">49</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv.magenta.at">tv.magenta.at</a></td><td align="right">307</td><td align="right">228</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv.mail.ru">tv.mail.ru</a></td><td align="right">664</td><td align="right">643</td><td align="center">🟢</td><td></td></tr>
