@@ -14,7 +14,7 @@ const channel = {
 }
 
 it('can generate valid url', () => {
-  expect(url).toBe('http://www.tvmusor.hu/a/get-events/')
+  expect(url).toBe('https://tvmusor.borsonline.hu/a/get-events/')
 })
 
 it('can generate valid request method', () => {
@@ -48,7 +48,7 @@ it('can parse response', () => {
     category: 'sportműsor',
     description: 'Forma-1 magazin. Hírek, információk, érdekességek a Forma-1 világából.',
     image:
-      'http://www.tvmusor.hu/images/events/408/f1e45193930943d9ee29769e0afa902aff0e4a90-better-call-saul.jpg'
+      'https://tvmusor.borsonline.hu/images/events/408/f1e45193930943d9ee29769e0afa902aff0e4a90-better-call-saul.jpg'
   })
 
   expect(results[1]).toMatchObject({
