@@ -15,7 +15,7 @@ const channel = {
 }
 
 it('can generate valid url', () => {
-  expect(url).toBe('https://sat.tv/wp-content/themes/twentytwenty-child/ajax_chaines.php')
+  expect(url).toBe('https://www.sat.tv/wp-content/themes/twentytwenty-child/ajax_chaines.php')
 })
 
 it('can generate valid request method', () => {
