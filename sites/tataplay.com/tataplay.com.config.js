@@ -24,18 +24,24 @@ module.exports = {
     }
   },
 
-  parser({ content }) {
-    const data = JSON.parse(content)
-    const programs = data?.data?.epg || []
+  parser(context) {
+    let data = []
+    try {
+      const json = JSON.parse(context.content)
+      const programs = json?.data?.epg || []
 
-    return programs.map(program => ({
-      title: program.title,
-      start: program.startTime,
-      stop: program.endTime,
-      description: program.desc,
-      category: program.category,
-      icon: program.boxCoverImage
-    }))
+      data = programs.map(program => ({
+        title: program.title,
+        start: program.startTime,
+        stop: program.endTime,
+        description: program.desc,
+        category: program.category,
+        icon: program.boxCoverImage
+      }))
+    } catch {
+      data = []
+    }
+    return data
   },
 
   async channels() {
@@ -49,20 +55,17 @@ module.exports = {
       'platform': 'web'
     }
 
-    const initialResponse = await axios.get(
-      'https://tm.tapi.videoready.tv/portal-search/pub/api/v1/channels/schedule?date=&languageFilters=&genreFilters=&limit=20&offset=0',
-      { headers }
-    )
-    const totalChannels = initialResponse.data?.data?.total || 0
+    const baseUrl = 'https://tm.tapi.videoready.tv/portal-search/pub/api/v1/channels/schedule'
+    const initialUrl = `${baseUrl}?date=&languageFilters=&genreFilters=&limit=20&offset=0`
+    const initialResponse = await axios.get(initialUrl, { headers })
+    const total = initialResponse.data?.data?.total || 0
     const channels = []
 
-    for (let offset = 0; offset < totalChannels; offset += 20) {
-      const response = await axios.get(
-        `https://tm.tapi.videoready.tv/portal-search/pub/api/v1/channels/schedule?date=&languageFilters=&genreFilters=&limit=20&offset=${offset}`,
-        { headers }
-      )
-      const pageChannels = response.data?.data?.channelList || []
-      channels.push(...pageChannels)
+    for (let offset = 0; offset < total; offset += 20) {
+      const url = `${baseUrl}?date=&languageFilters=&genreFilters=&limit=20&offset=${offset}`
+      const response = await axios.get(url, { headers })
+      const page = response.data?.data?.channelList || []
+      channels.push(...page)
     }
 
     return channels.map(channel => ({
