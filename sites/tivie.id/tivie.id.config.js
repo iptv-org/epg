@@ -76,7 +76,7 @@ module.exports = {
             queue.i.subTitle = parseText(info.find('h2:nth-child(2)'))
           }
           if (queue.url.startsWith('https://tivie.id/film/')) {
-            queue.i.description = parseText(info.find('div[class=""]:nth-child(4)').replace('TiViE.id | ', '')
+            queue.i.description = parseText(info.find('div[class=""]:nth-child(4)')).replace('TiViE.id | ', '')
             queue.i.date = parseText(info.find('h2:nth-child(3)'))
           } else {
             queue.i.description = parseText(info.find('div[class=""]:nth-child(3)')).replace('TiViE.id | ', '')
