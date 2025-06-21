@@ -7,7 +7,7 @@ const customParseFormat = require('dayjs/plugin/customParseFormat')
 dayjs.extend(utc)
 dayjs.extend(customParseFormat)
 
-const API_ENDPOINT = 'https://sat.tv/wp-content/themes/twentytwenty-child/ajax_chaines.php'
+const API_ENDPOINT = 'https://www.sat.tv/wp-content/themes/twentytwenty-child/ajax_chaines.php'
 
 module.exports = {
   site: 'sat.tv',
