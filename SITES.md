@@ -28,7 +28,7 @@
     <tr><td><a href="sites/canalplus.com">canalplus.com</a></td><td align="right">11720</td><td align="right">212</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/cgates.lt">cgates.lt</a></td><td align="right">102</td><td align="right">61</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/chada.ma">chada.ma</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/chaines-tv.orange.fr">chaines-tv.orange.fr</a></td><td align="right">296</td><td align="right">147</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/chaines-tv.orange.fr">chaines-tv.orange.fr</a></td><td align="right">295</td><td align="right">146</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/clickthecity.com">clickthecity.com</a></td><td align="right">32</td><td align="right">30</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/content.astro.com.my">content.astro.com.my</a></td><td align="right">157</td><td align="right">112</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/cosmotetv.gr">cosmotetv.gr</a></td><td align="right">108</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
@@ -143,7 +143,7 @@
     <tr><td><a href="sites/rtp.pt">rtp.pt</a></td><td align="right">10</td><td align="right">10</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/ruv.is">ruv.is</a></td><td align="right">2</td><td align="right">2</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/s.mxtv.jp">s.mxtv.jp</a></td><td align="right">2</td><td align="right">2</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/sat.tv">sat.tv</a></td><td align="right">31173</td><td align="right">277</td><td align="center">🔴</td><td>https://github.com/iptv-org/epg/issues/2685</td></tr>
+    <tr><td><a href="sites/sat.tv">sat.tv</a></td><td align="right">30308</td><td align="right">249</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/shahid.mbc.net">shahid.mbc.net</a></td><td align="right">231</td><td align="right">165</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/siba.com.co">siba.com.co</a></td><td align="right">98</td><td align="right">96</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/singtel.com">singtel.com</a></td><td align="right">155</td><td align="right">113</td><td align="center">🟢</td><td></td></tr>
