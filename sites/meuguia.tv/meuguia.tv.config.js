@@ -12,7 +12,7 @@ module.exports = {
   site: 'meuguia.tv',
   days: 2,
   url({ channel }) {
-    return `https://meuguia.tv/programacao/canal/${channel.site_id}`
+    return `https://meuguia.tv/programacao/canal/${site_id}`
   },
   parser({ content, date }) {
     const programs = []
