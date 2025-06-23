@@ -1434,6 +1434,11 @@
   dependencies:
     "@types/node" "*"
 
+"@types/langs@^2.0.5":
+  version "2.0.5"
+  resolved "https://registry.npmjs.org/@types/langs/-/langs-2.0.5.tgz"
+  integrity sha512-DIUKT4mkbTBxSrX6lmnQR888ObeFVVo1uNEqBH5/ddQHpnG4CA24DibpK7aO8QAcJEZUTcIx0F96TWuzVT9Z4g==
+
 "@types/lodash@^4.17.18":
   version "4.17.18"
   resolved "https://registry.npmjs.org/@types/lodash/-/lodash-4.17.18.tgz"

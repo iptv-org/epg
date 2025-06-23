@@ -48,7 +48,7 @@ async function main() {
         totalErrors++
       }
 
-      if (!langs.where('1', channel.lang)) {
+      if (!langs.where('1', channel.lang ?? '')) {
         errors.push({ type: 'wrong_lang', ...channel })
         totalErrors++
       }
