@@ -9,12 +9,29 @@ module.exports = {
       .add(1, 'd')
       .valueOf()}&after=${channel.site_id}&limit=1`
   },
-  parser: function ({ content, channel }) {
+  async parser({ content, channel }) {
     let programs = []
     const items = parseItems(content, channel)
-    items.forEach(item => {
+
+    for (const item of items) {
       const start = parseStart(item)
       const stop = parseStop(item, start)
+      const url = parseDetailURL(item)
+      let itemDetails = null
+      if (url) {    
+  	    try {
+          const response = await axios.get(url, {}, {
+  				headers: {
+    				'Accept': 'application/json',
+    				'Content-Type': 'application/json'
+  				}	
+			})
+		  itemDetails = response.data
+        } catch (err) {
+          console.error(`Erreur lors du fetch des détails pour l'item: ${url}`, err)
+        }
+  	  }
+      
       programs.push({
         title: item.title,
         subTitle: item.season?.serie?.title,
@@ -24,9 +41,13 @@ module.exports = {
         episode: parseEpisode(item),
         image: parseImage(item),
         start: start.toJSON(),
-        stop: stop.toJSON()
+        stop: stop.toJSON(),
+        date: itemDetails?.productionDate,
+        directors: parseDirectors(itemDetails),
+        actors: parseActors(itemDetails),
+        country: itemDetails?.productionCountries
       })
-    })
+    }
 
     return programs
   },
@@ -52,6 +73,28 @@ module.exports = {
   }
 }
 
+function parseDetailURL(item) {
+	return item.links && item.links.length ? item.links[0].href : null
+}
+
+function parseDirectors(itemDetails) {
+  if (!itemDetails) return []
+  if (!itemDetails?.contributors) return []
+  if (!itemDetails?.contributors?.directors) return []
+  // Add value in the array of directors instead of firstName + lastName see:
+  // https://www.npmjs.com/package/epg-grabber
+  return itemDetails?.contributors?.directors.map(director => ({value: `${director.firstName} ${director.lastName}`}))
+}
+
+function parseActors(itemDetails) {
+  if (!itemDetails) return []
+  if (!itemDetails?.contributors) return []
+  if (!itemDetails?.contributors?.actors) return []
+  // Add value in the array of actors instead of firstName + lastName see:
+  // https://www.npmjs.com/package/epg-grabber
+  return itemDetails?.contributors?.actors.map(actor => ({value: `${actor.firstName} ${actor.lastName}`}))
+}
+
 function parseImage(item) {
   return item.covers && item.covers.length ? item.covers[0].url : null
 }
@@ -74,6 +117,7 @@ function parseEpisode(item) {
 
 function parseItems(content, channel) {
   const data = JSON.parse(content)
+  //console.log(data) // For debug
 
   return data && data[channel.site_id] ? data[channel.site_id] : []
 }
