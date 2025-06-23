@@ -11,5 +11,5 @@ npm run grab --- --site=directv.com.ar
 ### Test
 
 ```sh
-npm test --- directv.com.ar
+npm run test:site directv.com.ar
 ```

@@ -1,16 +1,7 @@
 import { execSync } from 'child_process'
 import fs from 'fs-extra'
-import os from 'os'
 
-type ExecError = {
-  status: number
-  stdout: string
-}
-
-let ENV_VAR = 'DATA_DIR=tests/__data__/input/__data__'
-if (os.platform() === 'win32') {
-  ENV_VAR = 'SET "DATA_DIR=tests/__data__/input/__data__" &&'
-}
+const ENV_VAR = 'cross-env DATA_DIR=tests/__data__/input/__data__'
 
 beforeEach(() => {
   fs.emptyDirSync('tests/__data__/output')
@@ -27,10 +18,12 @@ describe('channels:edit', () => {
       const stdout = execSync(cmd, { encoding: 'utf8' })
       if (process.env.DEBUG === 'true') console.log(cmd, stdout)
       checkStdout(stdout)
-    } catch (error) {
+    } catch (error: unknown) {
       // NOTE: for Windows only
       if (process.env.DEBUG === 'true') console.log(cmd, error)
-      checkStdout((error as ExecError).stdout)
+      if (error && typeof error === 'object' && 'stdout' in error) {
+        checkStdout(error.stdout as string)
+      }
     }
   })
 })

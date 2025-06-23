@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/clickthecity.com/clickthecity.com.co
 ### Test
 
 ```sh
-npm test --- clickthecity.com
+npm run test:site clickthecity.com
 ```

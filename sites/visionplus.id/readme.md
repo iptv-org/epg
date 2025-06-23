@@ -33,5 +33,5 @@ npm run channels:parse --- --config=./sites/visionplus.id/visionplus.id.config.j
 ### Test
 
 ```sh
-npm test --- visionplus.id
+npm run test:site visionplus.id
 ```

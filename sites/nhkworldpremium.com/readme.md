@@ -21,5 +21,5 @@ npm run grab --- --site=nhkworldpremium.com --lang=ja
 ### Test
 
 ```sh
-npm test --- nhkworldpremium.com
+npm run test:site nhkworldpremium.com
 ```

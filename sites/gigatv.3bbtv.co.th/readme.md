@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/gigatv.3bbtv.co.th/gigatv.3bbtv.co.t
 ### Test
 
 ```sh
-npm test --- gigatv.3bbtv.co.th
+npm run test:site gigatv.3bbtv.co.th
 ```

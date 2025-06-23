@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/startimestv.com/startimestv.com.conf
 ### Test
 
 ```sh
-npm test --- startimestv.com
+npm run test:site startimestv.com
 ```

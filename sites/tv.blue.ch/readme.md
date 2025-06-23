@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/tv.blue.ch/tv.blue.ch.config.js --ou
 ### Test
 
 ```sh
-npm test --- tv.blue.ch
+npm run test:site tv.blue.ch
 ```

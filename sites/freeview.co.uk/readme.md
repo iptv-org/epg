@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/freeview.co.uk/freeview.co.uk.config
 ### Test
 
 ```sh
-npm test --- freeview.co.uk
+npm run test:site freeview.co.uk
 ```

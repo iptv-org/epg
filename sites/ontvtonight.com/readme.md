@@ -49,5 +49,5 @@ npm run channels:parse --- --config=./sites/ontvtonight.com/ontvtonight.com.conf
 ### Test
 
 ```sh
-npm test --- ontvtonight.com
+npm run test:site ontvtonight.com
 ```

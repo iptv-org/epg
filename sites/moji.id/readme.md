@@ -11,5 +11,5 @@ npm run grab --- --site=moji.id
 ### Test
 
 ```sh
-npm test --- moji.id
+npm run test:site moji.id
 ```

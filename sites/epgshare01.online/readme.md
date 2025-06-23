@@ -131,5 +131,5 @@ npm run channels:parse --- --config=./sites/epgshare01.online/epgshare01.online.
 ### Test
 
 ```sh
-npm test --- epgshare01.online
+npm run test:site epgshare01.online
 ```

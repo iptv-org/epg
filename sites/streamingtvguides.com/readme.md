@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/streamingtvguides.com/streamingtvgui
 ### Test
 
 ```sh
-npm test --- streamingtvguides.com
+npm run test:site streamingtvguides.com
 ```

@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/snrt.ma/snrt.ma.config.js --output=.
 ### Test
 
 ```sh
-npm test --- snrt.ma
+npm run test:site snrt.ma
 ```

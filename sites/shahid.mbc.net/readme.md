@@ -49,5 +49,5 @@ npm run channels:parse --- --config=./sites/shahid.mbc.net/shahid.mbc.net.config
 ### Test
 
 ```sh
-npm test --- shahid.mbc.net
+npm run test:site shahid.mbc.net
 ```

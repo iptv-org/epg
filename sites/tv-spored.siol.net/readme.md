@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/tv-spored.siol.net/tv-spored.siol.ne
 ### Test
 
 ```sh
-npm test --- tv-spored.siol.net
+npm run test:site tv-spored.siol.net
 ```

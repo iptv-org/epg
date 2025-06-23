@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/tivie.id/tivie.id.config.js --output
 ### Test
 
 ```sh
-npm test --- tivie.id
+npm run test:site tivie.id
 ```

@@ -91,7 +91,7 @@ function parseDuration($item) {
 function parseImage($item) {
   const img = $item('.mainBroadcastCard-imageContent').first().find('img')
   const value = img.attr('srcset') || img.data('srcset')
-  const obj = value ? srcset.parse(value).find(i => i.width === 128) : {}
+  const obj = value ? srcset.parseSrcset(value).find(i => i.width === 128) : {}
 
   if (obj.url) {
     obj.url = obj.url.replace('128x180', '960x540')

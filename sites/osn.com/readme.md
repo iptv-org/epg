@@ -33,5 +33,5 @@ npm run channels:parse --- --config=./sites/osn.com/osn.com.config.js --output=.
 ### Test
 
 ```sh
-npm test --- osn.com
+npm run test:site osn.com
 ```

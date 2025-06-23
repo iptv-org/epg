@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/tvmusor.hu/tvmusor.hu.config.js --ou
 ### Test
 
 ```sh
-npm test --- tvmusor.hu
+npm run test:site tvmusor.hu
 ```

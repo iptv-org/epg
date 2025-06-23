@@ -35,5 +35,5 @@ npm run channels:parse --- --config=./sites/rotana.net/rotana.net.config.js --ou
 ### Test
 
 ```sh
-npm test --- rotana.net
+npm run test:site rotana.net
 ```

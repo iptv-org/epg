@@ -39,5 +39,5 @@ npm run channels:parse --- --config=./sites/i.mjh.nz/i.mjh.nz.config.js --output
 ### Test
 
 ```sh
-npm test --- i.mjh.nz
+npm run test:site i.mjh.nz
 ```

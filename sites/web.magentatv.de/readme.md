@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/web.magentatv.de/web.magentatv.de.co
 ### Test
 
 ```sh
-npm test --- web.magentatv.de
+npm run test:site web.magentatv.de
 ```

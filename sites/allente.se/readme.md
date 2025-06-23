@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/allente.se/allente.se.config.js --ou
 ### Test
 
 ```sh
-npm test --- allente.se
+npm run test:site allente.se
 ```

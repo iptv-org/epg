@@ -342,7 +342,7 @@ npm run grab --- --site=example.com
 ### Test
 
 ```sh
-npm test --- example.com
+npm run test:site example.com
 ```
 ````
 

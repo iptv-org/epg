@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/yes.co.il/yes.co.il.config.js --outp
 ### Test
 
 ```sh
-npm test --- yes.co.il
+npm run test:site yes.co.il
 ```

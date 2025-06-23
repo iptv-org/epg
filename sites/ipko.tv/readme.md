@@ -11,5 +11,5 @@ npm run grab --- --site=ipko.tv
 ### Test
 
 ```sh
-npm test --- ipko.tv
+npm run test:site ipko.tv
 ```

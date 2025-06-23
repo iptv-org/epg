@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/tivu.tv/tivu.tv.config.js --output=.
 ### Test
 
 ```sh
-npm test --- tivu.tv
+npm run test:site tivu.tv
 ```

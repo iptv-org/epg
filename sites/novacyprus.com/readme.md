@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/novacyprus.com/novacyprus.com.config
 ### Test
 
 ```sh
-npm test --- novacyprus.com
+npm run test:site novacyprus.com
 ```

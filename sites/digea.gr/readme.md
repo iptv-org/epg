@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/digea.gr/digea.gr.config.js --output
 ### Test
 
 ```sh
-npm test --- digea.gr
+npm run test:site digea.gr
 ```

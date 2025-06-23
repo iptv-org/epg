@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/novasports.gr/novasports.gr.config.j
 ### Test
 
 ```sh
-npm test --- novasports.gr
+npm run test:site novasports.gr
 ```

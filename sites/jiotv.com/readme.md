@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/jiotv.com/jiotv.com.config.js --outp
 ### Test
 
 ```sh
-npm test --- jiotv.com
+npm run test:site jiotv.com
 ```

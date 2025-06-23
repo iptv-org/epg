@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/vidio.com/vidio.com.config.js --outp
 ### Test
 
 ```sh
-npm test --- vidio.com
+npm run test:site vidio.com
 ```

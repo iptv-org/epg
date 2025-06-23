@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/vivoplay.com.br/vivoplay.com.br.conf
 ### Test
 
 ```sh
-npm test --- vivoplay.com.br
+npm run test:site vivoplay.com.br
 ```

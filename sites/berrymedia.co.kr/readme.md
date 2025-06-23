@@ -11,5 +11,5 @@ npm run grab --- --site=berrymedia.co.kr
 ### Test
 
 ```sh
-npm test --- berrymedia.co.kr
+npm run test:site berrymedia.co.kr
 ```

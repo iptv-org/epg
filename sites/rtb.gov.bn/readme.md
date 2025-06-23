@@ -11,5 +11,5 @@ npm run grab --- --site=rtb.gov.bn
 ### Test
 
 ```sh
-npm test --- rtb.gov.bn
+npm run test:site rtb.gov.bn
 ```

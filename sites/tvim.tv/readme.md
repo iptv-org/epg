@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/tvim.tv/tvim.tv.config.js --output=.
 ### Test
 
 ```sh
-npm test --- tvim.tv
+npm run test:site tvim.tv
 ```

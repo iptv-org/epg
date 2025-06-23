@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/guidatv.sky.it/guidatv.sky.it.config
 ### Test
 
 ```sh
-npm test --- guidatv.sky.it
+npm run test:site guidatv.sky.it
 ```

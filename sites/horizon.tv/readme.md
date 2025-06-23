@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/horizon.tv/horizon.tv.config.js --ou
 ### Test
 
 ```sh
-npm test --- horizon.tv
+npm run test:site horizon.tv
 ```

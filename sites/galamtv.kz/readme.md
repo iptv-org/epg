@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/galamtv.kz/galamtv.kz.config.js --ou
 ### Test
 
 ```sh
-npm test --- galamtv.kz
+npm run test:site galamtv.kz
 ```

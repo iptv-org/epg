@@ -33,5 +33,5 @@ npm run channels:parse --- --config=sites/cubmu.com/cubmu.com.config.js --output
 ### Test
 
 ```sh
-npm test --- cubmu.com
+npm run test:site cubmu.com
 ```

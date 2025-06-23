@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/tvcesoir.fr/tvcesoir.fr.config.js --
 ### Test
 
 ```sh
-npm test --- tvcesoir.fr
+npm run test:site tvcesoir.fr
 ```

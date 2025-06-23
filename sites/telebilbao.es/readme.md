@@ -11,5 +11,5 @@ npm run grab --- --site=telebilbao.es
 ### Test
 
 ```sh
-npm test --- telebilbao.es
+npm run test:site telebilbao.es
 ```

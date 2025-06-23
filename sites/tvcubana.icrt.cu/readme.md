@@ -11,5 +11,5 @@ npm run grab --- --site=tvcubana.icrt.cu
 ### Test
 
 ```sh
-npm test --- tvcubana.icrt.cu
+npm run test:site tvcubana.icrt.cu
 ```

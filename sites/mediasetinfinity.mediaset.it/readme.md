@@ -11,5 +11,5 @@ npm run grab --- --site=mediasetinfinity.mediaset.it
 ### Test
 
 ```sh
-npm test --- mediasetinfinity.mediaset.it
+npm run test:site mediasetinfinity.mediaset.it
 ```

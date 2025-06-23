@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/zap.co.ao/zap.co.ao.config.js --outp
 ### Test
 
 ```sh
-npm test --- zap.co.ao
+npm run test:site zap.co.ao
 ```

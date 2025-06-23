@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/tv-programme.telecablesat.fr/tv-prog
 ### Test
 
 ```sh
-npm test --- tv-programme.telecablesat.fr
+npm run test:site tv-programme.telecablesat.fr
 ```

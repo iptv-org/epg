@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/chaines-tv.orange.fr/chaines-tv.oran
 ### Test
 
 ```sh
-npm test --- chaines-tv.orange.fr
+npm run test:site chaines-tv.orange.fr
 ```

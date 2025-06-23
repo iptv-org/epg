@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/m.tving.com/m.tving.com.config.js --
 ### Test
 
 ```sh
-npm test --- m.tving.com
+npm run test:site m.tving.com
 ```

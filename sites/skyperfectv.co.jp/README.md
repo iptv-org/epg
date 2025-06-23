@@ -24,5 +24,5 @@ npm run channels:parse --- --config=./sites/skyperfectv.co.jp/skyperfectv.co.jp.
 ## Test
 
 ```sh
-npm test --- skyperfectv.co.jp
+npm run test:site skyperfectv.co.jp
 ```

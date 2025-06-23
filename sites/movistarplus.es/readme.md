@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/movistarplus.es/movistarplus.es.conf
 ### Test
 
 ```sh
-npm test --- movistarplus.es
+npm run test:site movistarplus.es
 ```

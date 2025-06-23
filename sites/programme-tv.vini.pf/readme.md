@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/programme-tv.vini.pf/programme-tv.vi
 ### Test
 
 ```sh
-npm test --- programme-tv.vini.pf
+npm run test:site programme-tv.vini.pf
 ```

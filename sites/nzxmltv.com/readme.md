@@ -57,5 +57,5 @@ npm run channels:parse --- --config=./sites/nzxmltv.com/nzxmltv.com.config.js --
 ### Test
 
 ```sh
-npm test --- nzxmltv.com
+npm run test:site nzxmltv.com
 ```

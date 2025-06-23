@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/v3.myafn.dodmedia.osd.mil/v3.myafn.d
 ### Test
 
 ```sh
-npm test --- v3.myafn.dodmedia.osd.mil
+npm run test:site v3.myafn.dodmedia.osd.mil
 ```

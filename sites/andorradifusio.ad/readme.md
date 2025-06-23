@@ -11,5 +11,5 @@ npm run grab --- --site=andorradifusio.ad
 ### Test
 
 ```sh
-npm test --- andorradifusio.ad
+npm run test:site andorradifusio.ad
 ```

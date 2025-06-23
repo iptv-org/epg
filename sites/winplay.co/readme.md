@@ -11,5 +11,5 @@ npm run grab --- --site=winplay.co
 ### Test
 
 ```sh
-npm test --- winplay.co
+npm run test:site winplay.co
 ```

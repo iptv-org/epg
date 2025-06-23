@@ -26,5 +26,5 @@ npm run channels:parse --- --config=./sites/beinsports.com/beinsports.com.config
 ### Test
 
 ```sh
-npm test --- beinsports.com
+npm run test:site beinsports.com
 ```

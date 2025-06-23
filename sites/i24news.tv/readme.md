@@ -11,5 +11,5 @@ npm run grab --- --site=i24news.tv
 ### Test
 
 ```sh
-npm test --- i24news.tv
+npm run test:site i24news.tv
 ```

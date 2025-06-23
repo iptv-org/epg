@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/programacion.tcc.com.uy/programacion
 ### Test
 
 ```sh
-npm test --- programacion.tcc.com.uy
+npm run test:site programacion.tcc.com.uy
 ```

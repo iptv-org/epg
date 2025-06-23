@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/tv.post.lu/tv.post.lu.config.js --ou
 ### Test
 
 ```sh
-npm test --- tv.post.lu
+npm run test:site tv.post.lu
 ```

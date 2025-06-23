@@ -3,14 +3,8 @@ import { execSync } from 'child_process'
 import { Zip } from '@freearhey/core'
 import fs from 'fs-extra'
 import path from 'path'
-import os from 'os'
 
-let ENV_VAR =
-  'SITES_DIR=tests/__data__/input/epg_grab/sites CURR_DATE=2022-10-20 DATA_DIR=tests/__data__/input/__data__'
-if (os.platform() === 'win32') {
-  ENV_VAR =
-    'SET "SITES_DIR=tests/__data__/input/epg_grab/sites" && SET "CURR_DATE=2022-10-20" && SET "DATA_DIR=tests/__data__/input/__data__" &&'
-}
+const ENV_VAR = 'cross-env SITES_DIR=tests/__data__/input/epg_grab/sites CURR_DATE=2022-10-20 DATA_DIR=tests/__data__/input/__data__'
 
 beforeEach(() => {
   fs.emptyDirSync('tests/__data__/output')
@@ -103,7 +97,7 @@ describe('epg:grab', () => {
   })
 
   it('it will raise an error if the timeout is exceeded', () => {
-    const cmd = `${ENV_VAR} npm run grab --- --channels=tests/__data__/input/epg_grab/custom.channels.xml --output=tests/__data__/output/guide.xml --timeout=0`
+    const cmd = `${ENV_VAR} npm run grab --- --channels=tests/__data__/input/epg_grab/custom.channels.xml --output=tests/__data__/output/guide.xml --timeout=100`
     const stdout = execSync(cmd, { encoding: 'utf8' })
     if (process.env.DEBUG === 'true') console.log(cmd, stdout)
 

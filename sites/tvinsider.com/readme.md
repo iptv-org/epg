@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/tvinsider.com/tvinsider.com.config.j
 ### Test
 
 ```sh
-npm test --- tvinsider.com
+npm run test:site tvinsider.com
 ```

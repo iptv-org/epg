@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/ziggogo.tv/ziggogo.tv.config.js --ou
 ### Test
 
 ```sh
-npm test --- ziggogo.tv
+npm run test:site ziggogo.tv
 ```

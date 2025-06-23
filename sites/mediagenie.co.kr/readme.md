@@ -11,5 +11,5 @@ npm run grab --- --site=mediagenie.co.kr
 ### Test
 
 ```sh
-npm test --- mediagenie.co.kr
+npm run test:site mediagenie.co.kr
 ```

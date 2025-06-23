@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/dna.fi/dna.fi.config.js --output=./s
 ### Test
 
 ```sh
-npm test --- dna.fi
+npm run test:site dna.fi
 ```

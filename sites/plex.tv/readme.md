@@ -19,5 +19,5 @@ Where to get the Plex Token? https://www.plexopedia.com/plex-media-server/genera
 ### Test
 
 ```sh
-npm test --- plex.tv
+npm run test:site plex.tv
 ```
