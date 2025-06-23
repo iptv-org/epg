@@ -357,7 +357,7 @@ npm run sites:init --- example.com
 After you finish working on the files you can make sure that everything works by running the config test:
 
 ```
-npm test --- example.com
+npm run test:site example.com
 ```
 
 Then check that all channels have the correct `xmltv-id`:
