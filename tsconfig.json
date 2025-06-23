@@ -8,8 +8,11 @@
     "declaration": true,
     "typeRoots": [
       "./node_modules/@types",
-      "./src/types"
+      "./scripts/types"
     ],
-    "allowJs": true
-  }
+    "allowJs": true,
+    "outDir": "./"
+  },
+  "include": ["src/**/*", "scripts/types/**/*"],
+  "exclude": ["node_modules", "dist"]
 }
