@@ -435,3 +435,4 @@ To run scripts use the `npm run <script-name>` command.
 - `serve`: starts the [web server](https://github.com/vercel/serve).
 - `lint`: сhecks the scripts for syntax errors.
 - `test`: runs a test of all the scripts described above.
+- `test:site`: runs a test for a specific site.
