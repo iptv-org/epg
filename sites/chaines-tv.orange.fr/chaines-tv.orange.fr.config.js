@@ -9,7 +9,7 @@ module.exports = {
       .add(1, 'd')
       .valueOf()}&after=${channel.site_id}&limit=1`
   },
-  async parser({ content, channel }) {
+  parser: function ({ content, channel }) {
     let programs = []
     const items = parseItems(content, channel)
 
@@ -20,7 +20,7 @@ module.exports = {
       let itemDetails = null
       if (url) {    
   	    try {
-          const response = await axios.get(url, {}, {
+          const response = axios.get(url, {}, {
   				headers: {
     				'Accept': 'application/json',
     				'Content-Type': 'application/json'
@@ -74,7 +74,7 @@ module.exports = {
 }
 
 function parseDetailURL(item) {
-	return item.links && item.links.length ? item.links[0].href : null
+	return item?.links && item?.links.length ? item?.links[0]?.href : null
 }
 
 function parseDirectors(itemDetails) {
