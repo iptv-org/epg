@@ -20,8 +20,8 @@ it('can generate valid url', () => {
   )
 })
 
-it('can parse response', () => {
-  const result = parser({ date, channel, content })
+it('can parse response', async () => {
+  const result = await parser({ date, channel, content })
   expect(result).toMatchObject([
     {
       start: '2021-11-07T23:35:00.000Z',
@@ -38,8 +38,8 @@ it('can parse response', () => {
   ])
 })
 
-it('can handle empty guide', () => {
-  const result = parser({
+it('can handle empty guide', async () => {
+  const result = await parser({
     date,
     channel,
     content:

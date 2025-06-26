@@ -9,7 +9,7 @@ module.exports = {
       .add(1, 'd')
       .valueOf()}&after=${channel.site_id}&limit=1`
   },
-  parser: function ({ content, channel }) {
+  async parser({ content, channel }) {
     let programs = []
     const items = parseItems(content, channel)
 
@@ -20,7 +20,7 @@ module.exports = {
       let itemDetails = null
       if (url) {    
   	    try {
-          const response = axios.get(url, {}, {
+          const response = await axios.get(url, {}, {
   				headers: {
     				'Accept': 'application/json',
     				'Content-Type': 'application/json'
@@ -48,7 +48,6 @@ module.exports = {
         country: itemDetails?.productionCountries
       })
     }
-
     return programs
   },
   async channels() {
