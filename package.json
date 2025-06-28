@@ -3,15 +3,15 @@
   "scripts": {
     "act:check": "act pull_request -W .github/workflows/check.yml",
     "act:update": "act workflow_dispatch -W .github/workflows/update.yml",
-    "api:load": "npx tsx scripts/commands/api/load.ts",
-    "api:generate": "npx tsx scripts/commands/api/generate.ts",
-    "channels:lint": "npx tsx scripts/commands/channels/lint.mts",
-    "channels:parse": "npx tsx scripts/commands/channels/parse.ts",
-    "channels:edit": "npx tsx scripts/commands/channels/edit.ts",
-    "channels:validate": "npx tsx scripts/commands/channels/validate.ts",
-    "sites:init": "npx tsx scripts/commands/sites/init.ts",
-    "sites:update": "npx tsx scripts/commands/sites/update.ts",
-    "grab": "npx tsx scripts/commands/epg/grab.ts",
+    "api:load": "tsx scripts/commands/api/load.ts",
+    "api:generate": "tsx scripts/commands/api/generate.ts",
+    "channels:lint": "tsx scripts/commands/channels/lint.mts",
+    "channels:parse": "tsx scripts/commands/channels/parse.ts",
+    "channels:edit": "tsx scripts/commands/channels/edit.ts",
+    "channels:validate": "tsx scripts/commands/channels/validate.ts",
+    "sites:init": "tsx scripts/commands/sites/init.ts",
+    "sites:update": "tsx scripts/commands/sites/update.ts",
+    "grab": "tsx scripts/commands/epg/grab.ts",
     "lint": "npx eslint \"{scripts,tests,sites}/**/*.{ts,mts,js}\"",
     "test": "cross-env TZ=Pacific/Nauru npx jest --runInBand",
     "test:site": "cross-env TZ=Pacific/Nauru npx jest --runInBand --testPathPatterns",
@@ -55,6 +55,7 @@
     "@types/jest": "^30.0.0",
     "@types/langs": "^2.0.5",
     "@types/lodash": "^4.17.18",
+    "@types/node": "^24.0.7",
     "@types/node-cleanup": "^2.1.5",
     "@types/numeral": "^2.0.5",
     "@typescript-eslint/eslint-plugin": "^8.34.1",
@@ -108,7 +109,9 @@
     "tough-cookie": "^5.1.2",
     "transliteration": "^2.3.5",
     "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
     "unzipit": "^1.4.3",
     "wildcard-match": "^5.1.4"
-  }
+  },
+  "packageManager": "yarn@4.9.2"
 }

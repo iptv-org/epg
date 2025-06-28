@@ -44,7 +44,7 @@ program
       .default(false)
       .env('GZIP')
   )
-  .parse(process.argv)
+  .parse()
 
 export type GrabOptions = {
   site?: string
@@ -102,7 +102,10 @@ async function main() {
   runJob({ logger, parsedChannels })
 }
 
-main()
+main().catch(error => {
+  console.error('ERR:', error.message)
+  process.exit(1)
+})
 
 async function runJob({ logger, parsedChannels }: { logger: Logger; parsedChannels: Collection }) {
   const timer = new Timer()

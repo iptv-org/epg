@@ -11,8 +11,8 @@
       "./scripts/types"
     ],
     "allowJs": true,
-    "outDir": "./"
+    "outDir": "./dist"
   },
-  "include": ["src/**/*", "scripts/types/**/*"],
+  "include": ["scripts/**/*", "src/**/*"],
   "exclude": ["node_modules", "dist"]
 }

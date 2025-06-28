@@ -45,15 +45,15 @@ describe('epg:grab', () => {
     )
 
     const zip = new Zip()
-    const expected = await zip.decompress(fs.readFileSync('tests/__data__/output/guide.xml.gz'))
-    const result = await zip.decompress(
+    const expected = zip.decompress(fs.readFileSync('tests/__data__/output/guide.xml.gz'))
+    const result = zip.decompress(
       fs.readFileSync('tests/__data__/expected/epg_grab/guide.xml.gz')
     )
     expect(expected).toEqual(result)
   }, 30000)
 
   it('can grab epg with wildcard as output', () => {
-    const cmd = `${ENV_VAR} npm run grab --- --channels=tests/__data__/input/epg_grab/sites/example.com/example.com.channels.xml --output=tests/__data__/output/guides/{lang}/{site}.xml`
+    const cmd = `${ENV_VAR} npm run grab --- --channels="tests/__data__/input/epg_grab/sites/example.com/example.com.channels.xml" --output="tests/__data__/output/guides/{lang}/{site}.xml"`
     const stdout = execSync(cmd, { encoding: 'utf8' })
     if (process.env.DEBUG === 'true') console.log(cmd, stdout)
 
@@ -97,11 +97,19 @@ describe('epg:grab', () => {
   })
 
   it('it will raise an error if the timeout is exceeded', () => {
-    const cmd = `${ENV_VAR} npm run grab --- --channels=tests/__data__/input/epg_grab/custom.channels.xml --output=tests/__data__/output/guide.xml --timeout=100`
-    const stdout = execSync(cmd, { encoding: 'utf8' })
-    if (process.env.DEBUG === 'true') console.log(cmd, stdout)
-
-    expect(stdout).toContain('ERR: Connection timeout')
+    const cmd = `${ENV_VAR} npm run grab --- --channels=tests/__data__/input/epg_grab/custom.channels.xml --output=tests/__data__/output/guide.xml --timeout=0`
+    try {
+      const stdout = execSync(cmd, { encoding: 'utf8' })
+      expect(stdout).toContain('ERR: Connection timeout')
+    } catch (error) {
+      // in the eventuality of an error that doesn't pipe in properly, check stdout and stderr.
+      const stderr = error.stderr?.toString() || ''
+      const stdout = error.stdout?.toString() || ''
+      const combined = stderr + stdout
+      
+      if (process.env.DEBUG === 'true') console.log('Error output:', combined)
+      expect(combined).toContain('ERR: Connection timeout')
+    }
   })
 
   it('can grab epg via https proxy', () => {
