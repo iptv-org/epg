@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/cyta.com.cy/cyta.com.cy.config.js --
 ### Test
 
 ```sh
-npm run test:site cyta.com.cy
+npm test --- cyta.com.cy
 ```

@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/mujtvprogram.cz/mujtvprogram.cz.conf
 ### Test
 
 ```sh
-npm run test:site mujtvprogram.cz
+npm test --- mujtvprogram.cz
 ```

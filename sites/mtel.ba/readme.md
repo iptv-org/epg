@@ -20,5 +20,5 @@ npm run channels:parse --- --config=./sites/mtel.ba/mtel.ba.config.js --output=.
 ### Test
 
 ```sh
-npm run test:site mtel.ba
+npm test --- mtel.ba
 ```

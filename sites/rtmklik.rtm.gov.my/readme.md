@@ -11,5 +11,5 @@ npm run grab --- --site=rtmklik.rtm.gov.my
 ### Test
 
 ```sh
-npm run test:site rtmklik.rtm.gov.my
+npm test --- rtmklik.rtm.gov.my
 ```

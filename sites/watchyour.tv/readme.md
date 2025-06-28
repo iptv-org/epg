@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/watchyour.tv/watchyour.tv.config.js 
 ### Test
 
 ```sh
-npm run test:site watchyour.tv
+npm test --- watchyour.tv
 ```

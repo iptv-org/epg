@@ -11,5 +11,5 @@ npm run grab --- --site=makrodigitaltelevision.com
 ### Test
 
 ```sh
-npm run test:site makrodigitaltelevision.com
+npm test --- makrodigitaltelevision.com
 ```

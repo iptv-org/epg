@@ -11,5 +11,5 @@ npm run grab --- --site=kvf.fo
 ### Test
 
 ```sh
-npm run test:site kvf.fo
+npm test --- kvf.fo
 ```

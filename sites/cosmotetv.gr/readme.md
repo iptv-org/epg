@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/cosmotetv.gr/cosmotetv.gr.config.js 
 ### Test
 
 ```sh
-npm run test:site cosmotetv.gr
+npm test --- cosmotetv.gr
 ```

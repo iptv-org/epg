@@ -11,5 +11,5 @@ npm run grab --- --site=neo.io
 ### Test
 
 ```sh
-npm run test:site neo.io
+npm test --- neo.io
 ```

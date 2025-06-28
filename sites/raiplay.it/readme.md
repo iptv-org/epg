@@ -11,5 +11,5 @@ npm run grab --- --site=raiplay.it
 ### Test
 
 ```sh
-npm run test:site raiplay.it
+npm test --- raiplay.it
 ```

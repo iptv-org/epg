@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/singtel.com/singtel.com.config.js --
 ### Test
 
 ```sh
-npm run test:site singtel.com
+npm test --- singtel.com
 ```

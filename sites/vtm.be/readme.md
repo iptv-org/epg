@@ -11,5 +11,5 @@ npm run grab --- --site=vtm.be
 ### Test
 
 ```sh
-npm run test:site vtm.be
+npm test --- vtm.be
 ```

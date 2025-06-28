@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/tvarenasport.hr/tvarenasport.hr.conf
 ### Test
 
 ```sh
-npm run test:site tvarenasport.hr
+npm test --- tvarenasport.hr
 ```

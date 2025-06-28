@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/awilime.com/awilime.com.config.js --
 ### Test
 
 ```sh
-npm run test:site awilime.com
+npm test --- awilime.com
 ```

@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/tvpassport.com/tvpassport.com.config
 ### Test
 
 ```sh
-npm run test:site tvpassport.com
+npm test --- tvpassport.com
 ```

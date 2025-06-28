@@ -9,5 +9,5 @@ npm run grab --- --site=pluto.tv
 ### Test
 
 ```sh
-npm run test:site pluto.tv
+npm test --- pluto.tv
 ```

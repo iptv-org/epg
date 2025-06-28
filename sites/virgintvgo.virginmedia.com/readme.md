@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/virgintvgo.virginmedia.com/virgintvg
 ### Test
 
 ```sh
-npm run test:site virgintvgo.virginmedia.com
+npm test --- virgintvgo.virginmedia.com
 ```

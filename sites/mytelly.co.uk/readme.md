@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/mytelly.co.uk/mytelly.co.uk.config.j
 ### Test
 
 ```sh
-npm run test:site mytelly.co.uk
+npm test --- mytelly.co.uk
 ```

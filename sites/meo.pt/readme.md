@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/meo.pt/meo.pt.config.js --output=./s
 ### Test
 
 ```sh
-npm run test:site meo.pt
+npm test --- meo.pt
 ```

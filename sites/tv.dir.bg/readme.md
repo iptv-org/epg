@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/tv.dir.bg/tv.dir.bg.config.js --outp
 ### Test
 
 ```sh
-npm run test:site tv.dir.bg
+npm test --- tv.dir.bg
 ```

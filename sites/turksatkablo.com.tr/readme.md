@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/turksatkablo.com.tr/turksatkablo.com
 ### Test
 
 ```sh
-npm run test:site turksatkablo.com.tr
+npm test --- turksatkablo.com.tr
 ```

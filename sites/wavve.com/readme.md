@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/wavve.com/wavve.com.config.js --outp
 ### Test
 
 ```sh
-npm run test:site wavve.com
+npm test --- wavve.com
 ```

@@ -9,5 +9,5 @@ npm run grab --- --site=zap2it.com
 ### Test
 
 ```sh
-npm run test:site zap2it.com
+npm test --- zap2it.com
 ```

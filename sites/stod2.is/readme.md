@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/stod2.is/stod2.is.config.js --output
 ### Test
 
 ```sh
-npm run test:site stod2.is
+npm test --- stod2.is
 ```

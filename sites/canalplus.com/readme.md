@@ -58,5 +58,5 @@ npm run channels:parse --- --config=./sites/canalplus.com/canalplus.com.config.j
 ### Test
 
 ```sh
-npm run test:site canalplus.com
+npm test --- canalplus.com
 ```

@@ -17,7 +17,7 @@ npm run channels:parse --- --config=./sites/orangetv.orange.es/orangetv.orange.e
 ### Test
 
 ```sh
-npm run test:site orangetv.orange.es
+npm test --- orangetv.orange.es
 ```
 
 ### Todo

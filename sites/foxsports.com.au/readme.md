@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/foxsports.com.au/foxsports.com.au.co
 ### Test
 
 ```sh
-npm run test:site foxsports.com.au
+npm test --- foxsports.com.au
 ```

@@ -24,5 +24,5 @@ npm run channels:parse --- --config=./sites/s.mxtv.jp/s.mxtv.jp.config.js --outp
 ## Test
 
 ```sh
-npm run test:site s.mxtv.jp
+npm test --- s.mxtv.jp
 ```

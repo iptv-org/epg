@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/tv24.co.uk/tv24.co.uk.config.js --ou
 ### Test
 
 ```sh
-npm run test:site tv24.co.uk
+npm test --- tv24.co.uk
 ```

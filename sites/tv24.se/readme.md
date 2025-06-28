@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/tv24.se/tv24.se.config.js --output=.
 ### Test
 
 ```sh
-npm run test:site tv24.se
+npm test --- tv24.se
 ```

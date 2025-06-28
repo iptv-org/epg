@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/cgates.lt/cgates.lt.config.js --outp
 ### Test
 
 ```sh
-npm run test:site cgates.lt
+npm test --- cgates.lt
 ```

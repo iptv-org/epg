@@ -35,5 +35,5 @@ npm run channels:parse --- --config=./sites/mytvsuper.com/mytvsuper.com.config.j
 ### Test
 
 ```sh
-npm run test:site mytvsuper.com
+npm test --- mytvsuper.com
 ```

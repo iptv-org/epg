@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/anteltv.com.uy/anteltv.com.uy.config
 ### Test
 
 ```sh
-npm run test:site anteltv.com.uy
+npm test --- anteltv.com.uy
 ```

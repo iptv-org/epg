@@ -11,5 +11,5 @@ npm run grab --- --site=knr.gl
 ### Test
 
 ```sh
-npm run test:site knr.gl
+npm test --- knr.gl
 ```

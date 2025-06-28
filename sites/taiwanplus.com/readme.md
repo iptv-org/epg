@@ -11,5 +11,5 @@ npm run grab --- --site=taiwanplus.com
 ### Test
 
 ```sh
-npm run test:site taiwanplus.com
+npm test --- taiwanplus.com
 ```

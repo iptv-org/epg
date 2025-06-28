@@ -33,5 +33,5 @@ npm run channels:parse --- --config=./sites/nowplayer.now.com/nowplayer.now.com.
 ### Test
 
 ```sh
-npm run test:site nowplayer.now.com
+npm test --- nowplayer.now.com
 ```

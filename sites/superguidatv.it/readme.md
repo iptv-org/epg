@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/superguidatv.it/superguidatv.it.conf
 ### Test
 
 ```sh
-npm run test:site superguidatv.it
+npm test --- superguidatv.it
 ```

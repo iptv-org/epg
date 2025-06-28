@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/watch.sportsnet.ca/watch.sportsnet.c
 ### Test
 
 ```sh
-npm run test:site watch.sportsnet.ca
+npm test --- watch.sportsnet.ca
 ```

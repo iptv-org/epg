@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/rikstv.no/rikstv.no.config.js --outp
 ### Test
 
 ```sh
-npm run test:site rikstv.no
+npm test --- rikstv.no
 ```

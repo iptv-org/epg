@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/pickx.be/pickx.be.config.js --output
 ### Test
 
 ```sh
-npm run test:site pickx.be
+npm test --- pickx.be
 ```

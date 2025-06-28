@@ -11,5 +11,5 @@ npm run grab --- --site=artonline.tv
 ### Test
 
 ```sh
-npm run test:site artonline.tv
+npm test --- artonline.tv
 ```

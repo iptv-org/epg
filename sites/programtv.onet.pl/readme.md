@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/programtv.onet.pl/programtv.onet.pl.
 ### Test
 
 ```sh
-npm run test:site programtv.onet.pl
+npm test --- programtv.onet.pl
 ```

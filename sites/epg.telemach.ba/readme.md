@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/epg.telemach.ba/epg.telemach.ba.conf
 ### Test
 
 ```sh
-npm run test:site epg.telemach.ba
+npm test --- epg.telemach.ba
 ```

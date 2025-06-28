@@ -11,5 +11,5 @@ npm run grab --- --site=tv.cctv.com
 ### Test
 
 ```sh
-npm run test:site tv.cctv.com
+npm test --- tv.cctv.com
 ```

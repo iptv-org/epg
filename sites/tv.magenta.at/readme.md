@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/tv.magenta.at/tv.magenta.at.config.j
 ### Test
 
 ```sh
-npm run test:site tv.magenta.at
+npm test --- tv.magenta.at
 ```

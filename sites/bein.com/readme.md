@@ -35,5 +35,5 @@ npm run channels:parse --- --config=./sites/bein.com/bein.com.config.js --output
 ### Test
 
 ```sh
-npm run test:site bein.com
+npm test --- bein.com
 ```

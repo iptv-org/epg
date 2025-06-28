@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/telenet.tv/telenet.tv.config.js --ou
 ### Test
 
 ```sh
-npm run test:site telenet.tv
+npm test --- telenet.tv
 ```

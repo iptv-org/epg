@@ -31,5 +31,5 @@ npm run channels:parse --- --config=./sites/epg.iptvx.one/epg.iptvx.one.config.j
 ### Test
 
 ```sh
-npm run test:site epg.iptvx.one
+npm test --- epg.iptvx.one
 ```

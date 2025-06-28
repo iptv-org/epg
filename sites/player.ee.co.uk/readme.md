@@ -11,5 +11,5 @@ npm run grab --- --site=player.ee.co.uk
 ### Test
 
 ```sh
-npm run test:site player.ee.co.uk
+npm test --- player.ee.co.uk
 ```

@@ -17,5 +17,5 @@ npm run channels:parse --- --config=sites/dens.tv/dens.tv.config.js --output=sit
 ### Test
 
 ```sh
-npm run test:site dens.tv
+npm test --- dens.tv
 ```

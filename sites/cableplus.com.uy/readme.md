@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/cableplus.com.uy/cableplus.com.uy.co
 ### Test
 
 ```sh
-npm run test:site cableplus.com.uy
+npm test --- cableplus.com.uy
 ```

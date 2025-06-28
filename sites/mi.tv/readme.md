@@ -28,5 +28,5 @@ npm run channels:parse --- --config=./sites/mi.tv/mi.tv.config.js --output=./sit
 ### Test
 
 ```sh
-npm run test:site mi.tv
+npm test --- mi.tv
 ```

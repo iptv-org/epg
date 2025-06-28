@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/hoy.tv/hoy.tv.config.js --output=./s
 ### Test
 
 ```sh
-npm run test:site hoy.tv
+npm test --- hoy.tv
 ```

@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/tvgids.nl/tvgids.nl.config.js --outp
 ### Test
 
 ```sh
-npm run test:site tvgids.nl
+npm test --- tvgids.nl
 ```

@@ -11,5 +11,5 @@ npm run grab --- --site=dtv8.net
 ### Test
 
 ```sh
-npm run test:site dtv8.net
+npm test --- dtv8.net
 ```

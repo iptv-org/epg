@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/tv.sfr.fr/tv.sfr.fr.config.js --outp
 ### Test
 
 ```sh
-npm run test:site tv.sfr.fr
+npm test --- tv.sfr.fr
 ```

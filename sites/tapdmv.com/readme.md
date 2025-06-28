@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/tapdmv.com/tapdmv.com.config.js --ou
 ### Test
 
 ```sh
-npm run test:site tapdmv.com
+npm test --- tapdmv.com
 ```

@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/nostv.pt/nostv.pt.config.js --output
 ### Test
 
 ```sh
-npm run test:site nostv.pt
+npm test --- nostv.pt
 ```

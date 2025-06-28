@@ -45,5 +45,5 @@ NODE_OPTIONS='--tls-cipher-list=DEFAULT@SECLEVEL=0' npm run channels:parse --- -
 ### Test
 
 ```sh
-npm run test:site m.tv.sms.cz
+npm test --- m.tv.sms.cz
 ```

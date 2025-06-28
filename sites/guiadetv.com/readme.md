@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/guiadetv.com/guiadetv.com.config.js 
 ### Test
 
 ```sh
-npm run test:site guiadetv.com
+npm test --- guiadetv.com
 ```

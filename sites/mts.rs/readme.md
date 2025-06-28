@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/mts.rs/mts.rs.config.js --output=./s
 ### Test
 
 ```sh
-npm run test:site mts.rs
+npm test --- mts.rs
 ```

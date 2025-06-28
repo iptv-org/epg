@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/xumo.tv/xumo.tv.config.js --output=.
 ### Test
 
 ```sh
-npm run test:site xumo.tv
+npm test --- xumo.tv
 ```

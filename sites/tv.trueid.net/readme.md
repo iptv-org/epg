@@ -35,5 +35,5 @@ npm run channels:parse --- --config=./sites/tv.trueid.net/tv.trueid.net.config.j
 ### Test
 
 ```sh
-npm run test:site tv.trueid.net
+npm test --- tv.trueid.net
 ```

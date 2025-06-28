@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/freetv.tv/freetv.tv.config.js --outp
 ### Test
 
 ```sh
-npm run test:site freetv.tv
+npm test --- freetv.tv
 ```

@@ -11,5 +11,5 @@ npm run grab --- --site=antennasatellite.gr
 ### Test
 
 ```sh
-npm run test:site antennasatellite.gr
+npm test --- antennasatellite.gr
 ```

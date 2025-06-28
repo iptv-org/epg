@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/telkussa.fi/telkussa.fi.config.js --
 ### Test
 
 ```sh
-npm run test:site telkussa.fi
+npm test --- telkussa.fi
 ```

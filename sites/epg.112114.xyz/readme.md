@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/epg.112114.xyz/epg.112114.xyz.config
 ### Test
 
 ```sh
-npm run test:site epg.112114.xyz
+npm test --- epg.112114.xyz
 ```

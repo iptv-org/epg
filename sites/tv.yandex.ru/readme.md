@@ -42,5 +42,5 @@ npm run channels:parse --- --config=sites/tv.yandex.ru/tv.yandex.ru.config.js --
 ### Test
 
 ```sh
-npm run test:site tv.yandex.ru
+npm test --- tv.yandex.ru
 ```

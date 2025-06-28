@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/nuevosiglo.com.uy/nuevosiglo.com.uy.
 ### Test
 
 ```sh
-npm run test:site nuevosiglo.com.uy
+npm test --- nuevosiglo.com.uy
 ```

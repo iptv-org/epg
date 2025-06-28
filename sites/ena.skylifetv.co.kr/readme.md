@@ -11,5 +11,5 @@ npm run grab --- --site=ena.skylifetv.co.kr
 ### Test
 
 ```sh
-npm run test:site ena.skylifetv.co.kr
+npm test --- ena.skylifetv.co.kr
 ```

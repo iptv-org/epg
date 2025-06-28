@@ -13,5 +13,5 @@ npm run grab --- --site=tvtv.us --delay=2000
 ### Test
 
 ```sh
-npm run test:site tvtv.us
+npm test --- tvtv.us
 ```

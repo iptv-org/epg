@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/zuragt.mn/zuragt.mn.config.js --outp
 ### Test
 
 ```sh
-npm run test:site zuragt.mn
+npm test --- zuragt.mn
 ```

@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/entertainment.ie/entertainment.ie.co
 ### Test
 
 ```sh
-npm run test:site entertainment.ie
+npm test --- entertainment.ie
 ```

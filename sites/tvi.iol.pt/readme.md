@@ -11,5 +11,5 @@ npm run grab --- --site=tvi.iol.pt
 ### Test
 
 ```sh
-npm run test:site tvi.iol.pt
+npm test --- tvi.iol.pt
 ```

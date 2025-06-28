@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/tvkaista.org/tvkaista.org.config.js 
 ### Test
 
 ```sh
-npm run test:site tvkaista.org
+npm test --- tvkaista.org
 ```

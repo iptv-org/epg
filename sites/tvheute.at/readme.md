@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/tvheute.at/tvheute.at.config.js --ou
 ### Test
 
 ```sh
-npm run test:site tvheute.at
+npm test --- tvheute.at
 ```

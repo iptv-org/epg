@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/tvireland.ie/tvireland.ie.config.js 
 ### Test
 
 ```sh
-npm run test:site tvireland.ie
+npm test --- tvireland.ie
 ```

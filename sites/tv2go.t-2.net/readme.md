@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/tv2go.t-2.net/tv2go.t-2.net.config.j
 ### Test
 
 ```sh
-npm run test:site tv2go.t-2.net
+npm test --- tv2go.t-2.net
 ```

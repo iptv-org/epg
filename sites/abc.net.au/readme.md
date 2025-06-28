@@ -37,5 +37,5 @@ npm run channels:parse --- --config=./sites/abc.net.au/abc.net.au.config.js --ou
 ### Test
 
 ```sh
-npm run test:site abc.net.au
+npm test --- abc.net.au
 ```

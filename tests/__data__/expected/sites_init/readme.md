@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/example.com/example.com.config.js --
 ### Test
 
 ```sh
-npm run test:site example.com
+npm test --- example.com
 ```

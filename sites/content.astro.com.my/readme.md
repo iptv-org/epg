@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/content.astro.com.my/content.astro.c
 ### Test
 
 ```sh
-npm run test:site content.astro.com.my
+npm test --- content.astro.com.my
 ```

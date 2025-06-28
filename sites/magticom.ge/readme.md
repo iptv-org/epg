@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/magticom.ge/magticom.ge.config.js --
 ### Test
 
 ```sh
-npm run test:site magticom.ge
+npm test --- magticom.ge
 ```

@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/teleboy.ch/teleboy.ch.config.js --ou
 ### Test
 
 ```sh
-npm run test:site teleboy.ch
+npm test --- teleboy.ch
 ```

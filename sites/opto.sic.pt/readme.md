@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/opto.sic.pt/opto.sic.pt.config.js --
 ### Test
 
 ```sh
-npm run test:site opto.sic.pt
+npm test --- opto.sic.pt
 ```

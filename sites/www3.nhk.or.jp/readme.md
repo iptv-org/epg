@@ -11,5 +11,5 @@ npm run grab --- --site=www3.nhk.or.jp
 ### Test
 
 ```sh
-npm run test:site www3.nhk.or.jp
+npm test --- www3.nhk.or.jp
 ```

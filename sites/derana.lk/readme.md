@@ -11,5 +11,5 @@ npm run grab --- --site=derana.lk
 ### Test
 
 ```sh
-npm run test:site derana.lk
+npm test --- derana.lk
 ```
