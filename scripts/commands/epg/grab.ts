@@ -102,10 +102,7 @@ async function main() {
   runJob({ logger, parsedChannels })
 }
 
-main().catch(error => {
-  console.error('ERR:', error.message)
-  process.exit(1)
-})
+main()
 
 async function runJob({ logger, parsedChannels }: { logger: Logger; parsedChannels: Collection }) {
   const timer = new Timer()
