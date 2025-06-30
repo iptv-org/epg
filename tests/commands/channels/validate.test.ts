@@ -1,15 +1,11 @@
 import { execSync } from 'child_process'
-import os from 'os'
 
 type ExecError = {
   status: number
   stdout: string
 }
 
-let ENV_VAR = 'DATA_DIR=tests/__data__/input/__data__'
-if (os.platform() === 'win32') {
-  ENV_VAR = 'SET "DATA_DIR=tests/__data__/input/__data__" &&'
-}
+const ENV_VAR = 'cross-env DATA_DIR=tests/__data__/input/__data__'
 
 describe('channels:validate', () => {
   it('will show a message if the file contains a duplicate', () => {

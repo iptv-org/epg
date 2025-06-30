@@ -35,7 +35,7 @@ export class Guide {
     const programs = this.programs
 
     const currDate = new DateTime(process.env.CURR_DATE || new Date().toISOString(), {
-      zone: 'UTC'
+      timezone: 'UTC'
     })
     const xmltv = new XMLTV({
       channels,
@@ -50,7 +50,7 @@ export class Guide {
 
     if (this.gzip) {
       const zip = new Zip()
-      const compressed = await zip.compress(xmltv.toString())
+      const compressed = zip.compress(xmltv.toString())
       const gzFilepath = `${this.filepath}.gz`
       const gzFilename = path.basename(gzFilepath)
       this.logger.info(`  saving to "${gzFilepath}"...`)

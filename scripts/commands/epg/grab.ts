@@ -44,7 +44,7 @@ program
       .default(false)
       .env('GZIP')
   )
-  .parse(process.argv)
+  .parse()
 
 export type GrabOptions = {
   site?: string

@@ -3,13 +3,16 @@
     "strict": true,
     "module": "commonjs",
     "moduleResolution": "node",
-    "target": "es2020",
+    "target": "es2022",
     "esModuleInterop": true,
     "declaration": true,
     "typeRoots": [
       "./node_modules/@types",
-      "./src/types"
+      "./scripts/types"
     ],
-    "allowJs": true
-  }
+    "allowJs": true,
+    "outDir": "./dist"
+  },
+  "include": ["scripts/**/*", "src/**/*"],
+  "exclude": ["node_modules", "dist"]
 }

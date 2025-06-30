@@ -44,7 +44,7 @@ const xsd = `<?xml version="1.0" encoding="UTF-8"?>
   </xs:attribute>
 </xs:schema>`
 
-program.argument('[filepath]', 'Path to *.channels.xml files to check').parse(process.argv)
+program.argument('[filepath...]', 'Path to *.channels.xml files to check').parse(process.argv)
 
 async function main() {
   const storage = new Storage()

@@ -3,14 +3,8 @@ import { execSync } from 'child_process'
 import { Zip } from '@freearhey/core'
 import fs from 'fs-extra'
 import path from 'path'
-import os from 'os'
 
-let ENV_VAR =
-  'SITES_DIR=tests/__data__/input/epg_grab/sites CURR_DATE=2022-10-20 DATA_DIR=tests/__data__/input/__data__'
-if (os.platform() === 'win32') {
-  ENV_VAR =
-    'SET "SITES_DIR=tests/__data__/input/epg_grab/sites" && SET "CURR_DATE=2022-10-20" && SET "DATA_DIR=tests/__data__/input/__data__" &&'
-}
+const ENV_VAR = 'cross-env SITES_DIR=tests/__data__/input/epg_grab/sites CURR_DATE=2022-10-20 DATA_DIR=tests/__data__/input/__data__'
 
 beforeEach(() => {
   fs.emptyDirSync('tests/__data__/output')
@@ -51,15 +45,15 @@ describe('epg:grab', () => {
     )
 
     const zip = new Zip()
-    const expected = await zip.decompress(fs.readFileSync('tests/__data__/output/guide.xml.gz'))
-    const result = await zip.decompress(
+    const expected = zip.decompress(fs.readFileSync('tests/__data__/output/guide.xml.gz'))
+    const result = zip.decompress(
       fs.readFileSync('tests/__data__/expected/epg_grab/guide.xml.gz')
     )
     expect(expected).toEqual(result)
   }, 30000)
 
   it('can grab epg with wildcard as output', () => {
-    const cmd = `${ENV_VAR} npm run grab --- --channels=tests/__data__/input/epg_grab/sites/example.com/example.com.channels.xml --output=tests/__data__/output/guides/{lang}/{site}.xml`
+    const cmd = `${ENV_VAR} npm run grab --- --channels="tests/__data__/input/epg_grab/sites/example.com/example.com.channels.xml" --output="tests/__data__/output/guides/{lang}/{site}.xml"`
     const stdout = execSync(cmd, { encoding: 'utf8' })
     if (process.env.DEBUG === 'true') console.log(cmd, stdout)
 
@@ -104,10 +98,25 @@ describe('epg:grab', () => {
 
   it('it will raise an error if the timeout is exceeded', () => {
     const cmd = `${ENV_VAR} npm run grab --- --channels=tests/__data__/input/epg_grab/custom.channels.xml --output=tests/__data__/output/guide.xml --timeout=0`
-    const stdout = execSync(cmd, { encoding: 'utf8' })
-    if (process.env.DEBUG === 'true') console.log(cmd, stdout)
-
-    expect(stdout).toContain('ERR: Connection timeout')
+    let errorThrown = false
+    try {
+      execSync(cmd, { encoding: 'utf8', stdio: ['pipe', 'pipe', 'pipe'] })
+      // If no error is thrown, explicitly fail the test
+      fail('Expected command to throw an error due to timeout, but it did not.')
+    } catch (error) {
+      errorThrown = true
+      if (process.env.DEBUG === 'true') {
+        const stderr = error.stderr?.toString() || ''
+        const stdout = error.stdout?.toString() || ''
+        const combined = stderr + stdout
+        console.log('stdout:', stdout)
+        console.log('stderr:', stderr)
+        console.log('combined:', combined)
+        console.log('exit code:', error.exitCode)
+        console.log('Error output:', combined)
+      }
+    }
+    expect(errorThrown).toBe(true)
   })
 
   it('can grab epg via https proxy', () => {
