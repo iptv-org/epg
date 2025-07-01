@@ -163,6 +163,7 @@
     <tr><td><a href="sites/superguidatv.it">superguidatv.it</a></td><td align="right">204</td><td align="right">163</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/taiwanplus.com">taiwanplus.com</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tapdmv.com">tapdmv.com</a></td><td align="right">39</td><td align="right">7</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/tataplay.com">tataplay.com</a></td><td align="right">785</td><td align="right">401</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/telebilbao.es">telebilbao.es</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/teleboy.ch">teleboy.ch</a></td><td align="right">325</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/telenet.tv">telenet.tv</a></td><td align="right">260</td><td align="right">91</td><td align="center">🟢</td><td></td></tr>
@@ -170,7 +171,7 @@
     <tr><td><a href="sites/telkussa.fi">telkussa.fi</a></td><td align="right">66</td><td align="right">32</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/telsu.fi">telsu.fi</a></td><td align="right">17</td><td align="right">15</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/thesportplus.com">thesportplus.com</a></td><td align="right">3</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/tivie.id">tivie.id</a></td><td align="right">50</td><td align="right">49</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/tivie.id">tivie.id</a></td><td align="right">45</td><td align="right">44</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tivu.tv">tivu.tv</a></td><td align="right">69</td><td align="right">66</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/toonamiaftermath.com">toonamiaftermath.com</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/turksatkablo.com.tr">turksatkablo.com.tr</a></td><td align="right">177</td><td align="right">118</td><td align="center">🟢</td><td></td></tr>
