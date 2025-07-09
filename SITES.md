@@ -70,6 +70,7 @@
     <tr><td><a href="sites/guiadetv.com">guiadetv.com</a></td><td align="right">124</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/guida.tv">guida.tv</a></td><td align="right">88</td><td align="right">88</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/guidatv.sky.it">guidatv.sky.it</a></td><td align="right">168</td><td align="right">153</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/guidetnt.com">guidetnt.com</a></td><td align="right">69</td><td align="right">69</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/horizon.tv">horizon.tv</a></td><td align="right">184</td><td align="right">172</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/hoy.tv">hoy.tv</a></td><td align="right">3</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/i.mjh.nz">i.mjh.nz</a></td><td align="right">6458</td><td align="right">1488</td><td align="center">🟢</td><td></td></tr>
