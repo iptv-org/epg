@@ -33,7 +33,7 @@ it('can parse response', () => {
     start: '2025-01-18T02:05:00.000Z',
     stop: '2025-01-18T05:00:00.000Z',
     title: 'Programmes de la nuit',
-    subtitle: null,
+    subTitle: null,
     category: 'Programme indéterminé',
     description: 'Retrouvez tous vos programmes de nuit.',
     images: [
@@ -47,7 +47,7 @@ it('can parse response', () => {
     start: '2025-01-18T22:40:00.000Z',
     stop: '2025-01-19T00:00:00.000Z',
     title: 'Star Academy',
-    subtitle: 'Retour au château',
+    subTitle: 'Retour au château',
     category: 'Téléréalité',
     description:
       "C'est en direct du plateau que Nikos Aliagas revient sur les prestations des différents académiciens en compagnie du corps professoral. L'occasion de revenir en détails sur le déroulement du prime avec les aspects positifs mais également les éléments sur lesquels les élèves doivent progresser pour espérer faire la différence sur cette fin d'aventure.",
