@@ -1,5 +1,6 @@
 const { parser, url } = require('./tvheute.at.config.js')
 const dayjs = require('dayjs')
+const path = require('path')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
 const { readFileSync } = require('fs')
@@ -16,7 +17,7 @@ it('can generate valid url', () => {
 })
 
 it('can parse response', () => {
-  expect(parser({ date, channel, content: readFileSync('./__data__/content.html', 'utf8') })).toMatchObject([
+  expect(parser({ date, channel, content: readFileSync(path.resolve(__dirname, './__data__/content.html'), 'utf8') })).toMatchObject([
     {
       start: '2021-11-08T05:00:00.000Z',
       stop: '2021-11-08T05:10:00.000Z',
@@ -38,7 +39,7 @@ it('can handle empty guide', () => {
   const result = parser({
     date,
     channel,
-    content: readFileSync('./__data__/no_content.html', 'utf8')
+    content: readFileSync(path.resolve(__dirname, './__data__/no_content.html'), 'utf8')
   })
   expect(result).toMatchObject([])
 })
