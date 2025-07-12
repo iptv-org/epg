@@ -1,28 +1,80 @@
 const axios = require('axios')
 const cheerio = require('cheerio')
+const url = require('url')
 const { DateTime } = require('luxon')
+
+let cachedToken = null
+let tokenExpiry = null
+
+
+async function getToken() {
+  if (cachedToken && tokenExpiry && DateTime.now() < tokenExpiry) {
+    return cachedToken
+  }
+
+  try {
+    const response = await axios.get('https://tv.dir.bg/init')
+    
+    // Check different possible locations for the token
+    let token = null
+    if (response.data && response.data.csrfToken) {
+      token = response.data.csrfToken
+    }
+    
+    if (token) {
+      cachedToken = token
+      tokenExpiry = DateTime.now().plus({ hours: 1 })
+      return token
+    } else {
+      console.error('CSRF token not found in response structure:', Object.keys(response.data || {}))
+      return null
+    }
+  } catch (error) {
+    console.error('Error fetching token:', error.message)
+    return null
+  }
+}
 
 module.exports = {
   site: 'tv.dir.bg',
   days: 2,
-  url({ channel, date }) {
-    return `https://tv.dir.bg/tv_channel.php?id=${channel.site_id}&dd=${date.format('DD.MM')}`
+  async url({ channel, date }) {
+    const token = await getToken()
+    if (!token) {
+      throw new Error('Unable to retrieve CSRF token')
+    }
+    
+    const form = new url.URLSearchParams({ 
+      _token: token,
+      channel: channel.site_id, 
+      day: date.format('YYYY-MM-DD') 
+    })
+    
+    return axios.post('https://tv.dir.bg/load/programs', form.toString(), {
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+        'X-Requested-With': 'XMLHttpRequest'
+      }
+    })
   },
   parser({ content, date }) {
     const programs = []
     const items = parseItems(content)
+    
     items.forEach(item => {
       const $item = cheerio.load(item)
       const prev = programs[programs.length - 1]
       let start = parseStart($item, date)
       if (!start) return
+      
       if (prev) {
         if (start < prev.start) {
           start = start.plus({ days: 1 })
-          date = date.add(1, 'd')
+          date = date.plus({ days: 1 })
         }
         prev.stop = start
       }
+      
       const stop = start.plus({ minutes: 30 })
       programs.push({
         title: parseTitle($item),
@@ -34,55 +86,57 @@ module.exports = {
     return programs
   },
   async channels() {
-    const requests = [
-      axios.get('https://tv.dir.bg/programata.php?t=0'),
-      axios.get('https://tv.dir.bg/programata.php?t=1')
-    ]
-
-    const items = await Promise.all(requests)
-      .then(r => {
-        return r
-          .map(i => {
-            const html = i.data
-            const $ = cheerio.load(html)
-            return $('#programa-left > div > div > div > a').toArray()
+    try {
+      const response = await axios.get('https://tv.dir.bg/channels')
+      const $ = cheerio.load(response.data)
+      
+      const channels = []
+      
+      $('.channel_cont').each((index, element) => {
+        const $element = $(element)
+        
+        const $link = $element.find('a.channel_link')
+        const href = $link.attr('href')
+        
+        const $img = $element.find('img')
+        const name = $img.attr('alt')
+        const logo = $img.attr('src')
+        
+        const site_id = href ? href.match(/\/programa\/(\d+)/)?.[1] : ''
+        
+        if (site_id && name) {
+          channels.push({
+            lang: 'bg',
+            site_id: site_id,
+            name: name,
+            logo: logo
           })
-          .reduce((acc, curr) => {
-            acc = acc.concat(curr)
-            return acc
-          }, [])
+        }
       })
-      .catch(console.log)
-
-    const $ = cheerio.load('')
-    return items.map(item => {
-      const $item = $(item)
-      return {
-        lang: 'bg',
-        site_id: $item.attr('href').replace('tv_channel.php?id=', ''),
-        name: $item.find('div.thumbnail > img').attr('alt')
-      }
-    })
+    
+    return channels
+    
+  } catch (error) {
+    console.error('Error fetching channels:', error)
+    return []
   }
+}
 }
 
 function parseStart($item, date) {
-  const time = $item('i').text()
-  if (!time) return null
-  const dateString = `${date.format('MM/DD/YYYY')} ${time}`
-
-  return DateTime.fromFormat(dateString, 'MM/dd/yyyy HH.mm', { zone: 'Europe/Sofia' }).toUTC()
+  const timeText = $item('.broadcast-time').text().trim()
+  if (!timeText) return null
+  
+  const [hours, minutes] = timeText.split(':').map(Number)
+  const dateTime = date.isValid ? date : DateTime.fromISO(date)
+  return dateTime.set({ hour: hours, minute: minutes, second: 0, millisecond: 0 })
 }
 
 function parseTitle($item) {
-  return $item
-    .text()
-    .replace(/^\d{2}.\d{2}/, '')
-    .trim()
+  return $item('.broadcast-title').text().trim()
 }
 
 function parseItems(content) {
   const $ = cheerio.load(content)
-
-  return $('#events > li').toArray()
+  return $('.broadcast-item').toArray()
 }
