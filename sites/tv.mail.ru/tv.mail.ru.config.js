@@ -1,6 +1,21 @@
 const { DateTime } = require('luxon')
 const axios = require('axios')
 
+// Remove the big lodash dependency by implementing a simple uniqBy function
+// Complexity = O(n)
+const uniqBy = (arr, predicate) => {
+  const cb = typeof predicate === 'function' ? predicate : (o) => o[predicate]
+
+  return [...arr.reduce((map, item) => {
+    const key = (item === null || item === undefined) ?
+      item : cb(item)
+
+    if (!map.has(key)) map.set(key, item)
+
+    return map
+  }, new Map()).values()]
+}
+
 module.exports = {
   site: 'tv.mail.ru',
   days: 2,
@@ -35,8 +50,6 @@ module.exports = {
     return programs
   },
   async channels() {
-    const _ = require('lodash')
-
     const regions = [5506, 1096, 1125, 285]
 
     let channels = []
@@ -64,7 +77,7 @@ module.exports = {
       }
     }
 
-    return _.uniqBy(channels, 'site_id')
+    return uniqBy(channels, 'site_id')
   }
 }
 
