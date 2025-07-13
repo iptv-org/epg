@@ -215,7 +215,7 @@
     <tr><td><a href="sites/tvprofil.com">tvprofil.com</a></td><td align="right">5836</td><td align="right">455</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tvtv.us">tvtv.us</a></td><td align="right">2299</td><td align="right">2255</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/v3.myafn.dodmedia.osd.mil">v3.myafn.dodmedia.osd.mil</a></td><td align="right">8</td><td align="right">8</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/vidio.com">vidio.com</a></td><td align="right">47</td><td align="right">46</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/vidio.com">vidio.com</a></td><td align="right">57</td><td align="right">52</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/virginmediatelevision.ie">virginmediatelevision.ie</a></td><td align="right">5</td><td align="right">5</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/virgintvgo.virginmedia.com">virgintvgo.virginmedia.com</a></td><td align="right">238</td><td align="right">195</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/visionplus.id">visionplus.id</a></td><td align="right">250</td><td align="right">226</td><td align="center">🟢</td><td></td></tr>
