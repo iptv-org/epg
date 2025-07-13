@@ -14,7 +14,7 @@ module.exports = {
             process.env.CLANG ? `--lang=${process.env.CLANG}` : ''
           } --output=public/guide.xml`
         : 'npm run grab -- --channels=channels.xml --output=public/guide.xml',
-      cron_restart: process.env.CRON || null,
+      cron_restart: process.env.CRON_SCHEDULE || null,
       instances: 1,
       watch: false,
       autorestart: false
