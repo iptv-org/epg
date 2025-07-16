@@ -1,5 +1,5 @@
 import { SiteConfig } from 'epg-grabber'
-import _ from 'lodash'
+import { deepMerge } from '../functions/functions'
 import { pathToFileURL } from 'url'
 
 export class ConfigLoader {
@@ -28,6 +28,6 @@ export class ConfigLoader {
       channels: undefined
     }
 
-    return _.merge(defaultConfig, config)
+    return deepMerge(defaultConfig, config) as SiteConfig
   }
 }
