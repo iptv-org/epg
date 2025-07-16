@@ -1,5 +1,5 @@
 import { SiteConfig } from 'epg-grabber'
-import { deepMerge } from '../functions/functions'
+import { deepMerge } from '../functions'
 import { pathToFileURL } from 'url'
 
 export class ConfigLoader {

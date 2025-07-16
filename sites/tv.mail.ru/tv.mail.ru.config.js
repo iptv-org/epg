@@ -1,9 +1,6 @@
 const { DateTime } = require('luxon')
 const axios = require('axios')
-
-// Remove the big lodash dependency by implementing a simple uniqBy function
-// Complexity = O(n)
-const uniqBy = (arr, fn) => [...new Map(arr.map(x => [fn(x), x])).values()]
+const { uniqBy } = require('../../scripts/functions')
 
 module.exports = {
   site: 'tv.mail.ru',

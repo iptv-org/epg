@@ -3,9 +3,7 @@ const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
 const parseDuration = require('parse-duration').default
 const timezone = require('dayjs/plugin/timezone')
-
-// importing custom function sortBy
-const sortBy = require('../functions/functions')
+const { sortBy } = require('../../scripts/functions')
 
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)

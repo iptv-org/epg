@@ -11,8 +11,7 @@
  * const uniqueItems = uniqBy(items, item => item.id);
  * // uniqueItems will be [{ id: 1, name: 'A' }, { id: 2, name: 'B' }]
  */
-export const uniqBy = <T, K>(arr: T[], fn: (item: T) => K): T[] => 
-    Array.from(new Map(arr.map(item => [fn(item), item])).values())
+export const uniqBy = <T, K>(arr: T[], fn: (item: T) => K): T[] => [...new Map(arr.map(x => [fn(x), x])).values()]
 
 /**
  * Recursively merges multiple objects into a single object.
