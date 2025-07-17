@@ -18,15 +18,16 @@ jobs:
       - name: changed files
         id: files
         run: |
+          git fetch origin master:master
           JS_ANY_CHANGED=false
-          JS_ALL_CHANGED_FILES=$(git diff --name-only tests/**/*.js tests/**/*.ts scripts/**/*.js scripts/**/*.mts scripts/**/*.ts sites/**/*.js sites/**/*.ts | tr '\n' ' ')
+          JS_ALL_CHANGED_FILES=$(git diff --name-only master -- tests/**/*.js tests/**/*.ts scripts/**/*.js scripts/**/*.mts scripts/**/*.ts sites/**/*.js sites/**/*.ts | tr '\n' ' ')
           if [ -n "${JS_ALL_CHANGED_FILES}" ]; then
             JS_ANY_CHANGED=true
           fi
           echo "js_all_changed_files=$JS_ALL_CHANGED_FILES" >> "$GITHUB_OUTPUT"
           echo "js_any_changed=$JS_ANY_CHANGED" >> "$GITHUB_OUTPUT"
           CHANNELS_ANY_CHANGED=false
-          CHANNELS_ALL_CHANGED_FILES=$(git diff --name-only sites/**/*.channels.xml | tr '\n' ' ')
+          CHANNELS_ALL_CHANGED_FILES=$(git diff --name-only master --  sites/**/*.channels.xml | tr '\n' ' ')
           if [ -n "${CHANNELS_ALL_CHANGED_FILES}" ]; then
             CHANNELS_ANY_CHANGED=true
           fi
