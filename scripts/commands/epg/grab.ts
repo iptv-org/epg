@@ -31,7 +31,7 @@ program
       '--days <days>',
       'Override the number of days for which the program will be loaded (defaults to the value from the site config)'
     )
-      .argParser(value => parseInt(value))
+      .argParser(value => (value !== undefined ? parseInt(value) : undefined))
       .env('DAYS')
   )
   .addOption(
