@@ -151,7 +151,7 @@
     <tr><td><a href="sites/singtel.com">singtel.com</a></td><td align="right">155</td><td align="right">113</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/sjonvarp.is">sjonvarp.is</a></td><td align="right">13</td><td align="right">13</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/sky.co.nz">sky.co.nz</a></td><td align="right">111</td><td align="right">93</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/sky.com">sky.com</a></td><td align="right">559</td><td align="right">458</td><td align="center">🟢</td><td>https://github.com/iptv-org/epg/issues/2763</td></tr>
+    <tr><td><a href="sites/sky.com">sky.com</a></td><td align="right">559</td><td align="right">458</td><td align="center">🟡</td><td>https://github.com/iptv-org/epg/issues/2763</td></tr>
     <tr><td><a href="sites/sky.de">sky.de</a></td><td align="right">75</td><td align="right">75</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/skylife.co.kr">skylife.co.kr</a></td><td align="right">251</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/skyperfectv.co.jp">skyperfectv.co.jp</a></td><td align="right">137</td><td align="right">130</td><td align="center">🟢</td><td></td></tr>
@@ -180,7 +180,7 @@
     <tr><td><a href="sites/tv-spored.siol.net">tv-spored.siol.net</a></td><td align="right">312</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv.blue.ch">tv.blue.ch</a></td><td align="right">1030</td><td align="right">565</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv.cctv.com">tv.cctv.com</a></td><td align="right">94</td><td align="right">88</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/tv.dir.bg">tv.dir.bg</a></td><td align="right">111</td><td align="right">93</td><td align="center">🟢</td><td>https://github.com/iptv-org/epg/issues/2779</td></tr>
+    <tr><td><a href="sites/tv.dir.bg">tv.dir.bg</a></td><td align="right">111</td><td align="right">93</td><td align="center">🔴</td><td>https://github.com/iptv-org/epg/issues/2779</td></tr>
     <tr><td><a href="sites/tv.lv">tv.lv</a></td><td align="right">137</td><td align="right">49</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv.magenta.at">tv.magenta.at</a></td><td align="right">307</td><td align="right">228</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv.mail.ru">tv.mail.ru</a></td><td align="right">664</td><td align="right">643</td><td align="center">🟢</td><td></td></tr>
@@ -189,7 +189,7 @@
     <tr><td><a href="sites/tv.post.lu">tv.post.lu</a></td><td align="right">332</td><td align="right">242</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv.sfr.fr">tv.sfr.fr</a></td><td align="right">489</td><td align="right">456</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv.trueid.net">tv.trueid.net</a></td><td align="right">266</td><td align="right">74</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/tv.yandex.ru">tv.yandex.ru</a></td><td align="right">97</td><td align="right">67</td><td align="center">🟢</td><td>https://github.com/iptv-org/epg/issues/2803</td></tr>
+    <tr><td><a href="sites/tv.yandex.ru">tv.yandex.ru</a></td><td align="right">97</td><td align="right">67</td><td align="center">🔴</td><td>https://github.com/iptv-org/epg/issues/2803</td></tr>
     <tr><td><a href="sites/tv24.co.uk">tv24.co.uk</a></td><td align="right">1072</td><td align="right">39</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv24.se">tv24.se</a></td><td align="right">326</td><td align="right">157</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv2go.t-2.net">tv2go.t-2.net</a></td><td align="right">335</td><td align="right">254</td><td align="center">🟢</td><td></td></tr>
