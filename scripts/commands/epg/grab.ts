@@ -44,6 +44,7 @@ program
       .default(false)
       .env('GZIP')
   )
+  .addOption(new Option('--curl', 'Display each request as CURL').default(false).env('CURL'))
   .parse()
 
 export type GrabOptions = {
@@ -51,6 +52,7 @@ export type GrabOptions = {
   channels?: string
   output: string
   gzip: boolean
+  curl: boolean
   maxConnections: number
   timeout?: string
   delay?: string

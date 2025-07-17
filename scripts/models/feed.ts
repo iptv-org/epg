@@ -69,4 +69,8 @@ export class Feed {
 
     return `${this.channel.name} ${this.name}`
   }
+
+  getStreamId(): string {
+    return `${this.channelId}@${this.id}`
+  }
 }

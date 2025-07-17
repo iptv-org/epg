@@ -35,8 +35,10 @@ export class QueueCreator {
     const channelsContent = await this.dataStorage.json('channels.json')
     const channels = new Collection(channelsContent).map(data => new Channel(data))
 
+    let index = 0
     const queue = new Queue()
     for (const channel of this.parsedChannels.all()) {
+      channel.index = index++
       if (!channel.site || !channel.site_id || !channel.name) continue
 
       const configPath = path.resolve(SITES_DIR, `${channel.site}/${channel.site}.config.js`)

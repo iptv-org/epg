@@ -29,7 +29,7 @@ export class GuideManager {
     const pathTemplate = new StringTemplate(this.options.output)
 
     const groupedChannels = this.channels
-      .orderBy([(channel: Channel) => channel.xmltv_id])
+      .orderBy([(channel: Channel) => channel.index, (channel: Channel) => channel.xmltv_id])
       .uniqBy((channel: Channel) => `${channel.xmltv_id}:${channel.site}:${channel.lang}`)
       .groupBy((channel: Channel) => {
         return pathTemplate.format({ lang: channel.lang || 'en', site: channel.site || '' })

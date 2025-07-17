@@ -1,6 +1,6 @@
 import { Storage, Collection, Dictionary, File } from '@freearhey/core'
 import { ChannelsParser } from '../../core'
-import { Channel } from '../../models'
+import { Channel, Feed } from '../../models'
 import { program } from 'commander'
 import chalk from 'chalk'
 import langs from 'langs'
@@ -10,7 +10,7 @@ import epgGrabber from 'epg-grabber'
 program.argument('[filepath]', 'Path to *.channels.xml files to validate').parse(process.argv)
 
 type ValidationError = {
-  type: 'duplicate' | 'wrong_xmltv_id' | 'wrong_lang'
+  type: 'duplicate' | 'wrong_channel_id' | 'wrong_feed_id' | 'wrong_lang'
   name: string
   lang?: string
   xmltv_id?: string
@@ -24,7 +24,10 @@ async function main() {
   const dataStorage = new Storage(DATA_DIR)
   const channelsData = await dataStorage.json('channels.json')
   const channels = new Collection(channelsData).map(data => new Channel(data))
-  const channelsGroupedById = channels.groupBy((channel: Channel) => channel.id)
+  const channelsKeyById = channels.keyBy((channel: Channel) => channel.id)
+  const feedsData = await dataStorage.json('feeds.json')
+  const feeds = new Collection(feedsData).map(data => new Feed(data))
+  const feedsKeyByStreamId = feeds.keyBy((feed: Feed) => feed.getStreamId())
 
   let totalFiles = 0
   let totalErrors = 0
@@ -54,11 +57,20 @@ async function main() {
       }
 
       if (!channel.xmltv_id) return
-      const [channelId] = channel.xmltv_id.split('@')
-      const foundChannel = channelsGroupedById.get(channelId)
+      const [channelId, feedId] = channel.xmltv_id.split('@')
+
+      const foundChannel = channelsKeyById.get(channelId)
       if (!foundChannel) {
-        errors.push({ type: 'wrong_xmltv_id', ...channel })
+        errors.push({ type: 'wrong_channel_id', ...channel })
         totalErrors++
+      }
+
+      if (feedId) {
+        const foundFeed = feedsKeyByStreamId.get(channel.xmltv_id)
+        if (!foundFeed) {
+          errors.push({ type: 'wrong_feed_id', ...channel })
+          totalErrors++
+        }
       }
     })
 
