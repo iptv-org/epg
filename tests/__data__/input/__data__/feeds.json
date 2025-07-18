@@ -40,5 +40,19 @@
     ],
     "languages": [],
     "video_format": "480i"
+  },
+  {
+    "channel": "Channel4.us",
+    "id": "HD",
+    "name": "HD",
+    "is_main": true,
+    "broadcast_area": [
+      "r/EUR"
+    ],
+    "timezones": [
+      "America/New_York"
+    ],
+    "languages": [],
+    "video_format": "480i"
   }
 ]
