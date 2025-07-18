@@ -1,21 +1,25 @@
 import { IssueLoader, HTMLTable, ChannelsParser } from '../../core'
 import { Logger, Storage, Collection } from '@freearhey/core'
+import { ChannelList, Issue, Site } from '../../models'
 import { SITES_DIR, ROOT_DIR } from '../../constants'
-import { Issue, Site } from '../../models'
 import { Channel } from 'epg-grabber'
 
 async function main() {
-  const logger = new Logger({ disabled: true })
-  const loader = new IssueLoader()
+  const logger = new Logger({ level: -999 })
+  const issueLoader = new IssueLoader()
   const sitesStorage = new Storage(SITES_DIR)
-  const channelsParser = new ChannelsParser({ storage: sitesStorage })
   const sites = new Collection()
+
+  logger.info('loading channels...')
+  const channelsParser = new ChannelsParser({
+    storage: sitesStorage
+  })
 
   logger.info('loading list of sites')
   const folders = await sitesStorage.list('*/')
 
   logger.info('loading issues...')
-  const issues = await loader.load()
+  const issues = await issueLoader.load()
 
   logger.info('putting the data together...')
   const brokenGuideReports = issues.filter(issue =>
@@ -33,19 +37,21 @@ async function main() {
 
     const files = await sitesStorage.list(`${domain}/*.channels.xml`)
     for (const filepath of files) {
-      const channels = await channelsParser.parse(filepath)
+      const channelList: ChannelList = await channelsParser.parse(filepath)
 
-      site.totalChannels += channels.count()
-      site.markedChannels += channels.filter((channel: Channel) => channel.xmltv_id).count()
+      site.totalChannels += channelList.channels.count()
+      site.markedChannels += channelList.channels
+        .filter((channel: Channel) => channel.xmltv_id)
+        .count()
     }
 
     sites.add(site)
   }
 
   logger.info('creating sites table...')
-  const data = new Collection()
+  const tableData = new Collection()
   sites.forEach((site: Site) => {
-    data.add([
+    tableData.add([
       { value: `<a href="sites/${site.domain}">${site.domain}</a>` },
       { value: site.totalChannels, align: 'right' },
       { value: site.markedChannels, align: 'right' },
@@ -55,7 +61,7 @@ async function main() {
   })
 
   logger.info('updating sites.md...')
-  const table = new HTMLTable(data.all(), [
+  const table = new HTMLTable(tableData.all(), [
     { name: 'Site', align: 'left' },
     { name: 'Channels<br>(total / with xmltv-id)', colspan: 2, align: 'left' },
     { name: 'Status', align: 'left' },

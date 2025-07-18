@@ -65,6 +65,7 @@ Options:
   --days <days>                 Number of days for which the program will be loaded (defaults to the value from the site config)
   --maxConnections <number>     Number of concurrent requests (default: 1)
   --gzip                        Specifies whether or not to create a compressed version of the guide (default: false)
+  --curl                        Display each request as CURL (default: false)
 ```
 
 ### Parallel downloading
@@ -97,19 +98,15 @@ npm run grab --- --channels=path/to/custom.channels.xml
 
 ### Run on schedule
 
-To download the guide on a schedule, you can use the included process manager. Just run it with desire [cron expression](https://crontab.guru/) and the `grab` options:
+If you want to download guides on a schedule, you can use [cron](https://en.wikipedia.org/wiki/Cron) or any other task scheduler. Currently, we use a tool called `chronos` for this purpose.
+
+To start it, you only need to specify the necessary `grab` command and [cron expression](https://crontab.guru/):
 
 ```sh
-npx pm2 start npm --no-autorestart --cron-restart="0 0,12 * * *" -- run grab --- --site=example.com
+npx chronos --execute="npm run grab --- --site=example.com" --pattern="0 0,12 * * *" --log
 ```
 
-To track the process, you can use the command:
-
-```sh
-npx pm2 logs
-```
-
-For more info go to [pm2](https://pm2.keymetrics.io/docs/usage/quick-start/) documentation.
+For more info go to [chronos](https://github.com/freearhey/chronos) documentation.
 
 ### Access the guide by URL
 
@@ -186,6 +183,7 @@ docker run \
 -e CRON_SCHEDULE="0 0,12 * * *" \
 -e MAX_CONNECTIONS=10 \
 -e GZIP=true \
+-e CURL=true \
 -e PROXY="socks5://127.0.0.1:1234" \
 -e DAYS=14 \
 -e TIMEOUT=5 \
@@ -198,6 +196,7 @@ iptv-org/epg
 | CRON_SCHEDULE   | A [cron expression](https://crontab.guru/) describing the schedule of the guide loadings (default: "0 0 \* \* \*") |
 | MAX_CONNECTIONS | Limit on the number of concurrent requests (default: 1)                                                            |
 | GZIP            | Boolean value indicating whether to create a compressed version of the guide (default: false)                      |
+| CURL            | Display each request as CURL (default: false)                                                                      |
 | PROXY           | Use the specified proxy                                                                                            |
 | DAYS            | Number of days for which the guide will be loaded (defaults to the value from the site config)                     |
 | TIMEOUT         | Timeout for each request in milliseconds (default: 0)                                                              |

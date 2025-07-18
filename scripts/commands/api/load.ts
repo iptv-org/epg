@@ -17,7 +17,8 @@ async function main() {
     loader.download('feeds.json'),
     loader.download('timezones.json'),
     loader.download('guides.json'),
-    loader.download('streams.json')
+    loader.download('streams.json'),
+    loader.download('logos.json')
   ])
 }
 

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?><tv date="20221020">
+<channel id="Channel2.us"><display-name>Channel 2</display-name><icon src="https://i.imgur.com/qmRnD0M.png"/><url>https://example.com</url><lcn>36</lcn></channel>
+<channel id="Channel1.us"><display-name>Channel 1</display-name><url>https://example.com</url></channel>
+<channel id="Channel1.us"><display-name>Channel 1</display-name><url>https://example.com</url></channel>
+<channel id="Channel3.us"><display-name>Channel 3</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/6/64/6%27eren_2015.png"/><url>https://example2.com</url></channel>
+<channel id="Channel4.us@HD"><display-name>Channel 4</display-name><icon src="https://i.imgur.com/BPzH88J.png"/><url>https://example2.com</url></channel>
+<channel id="Channel1.us"><display-name>Channel 1</display-name><url>https://example2.com</url></channel>
+<programme start="20221019043000 +0000" stop="20221019071000 +0000" channel="Channel1.us"><title lang="fr">Programme1 (example.com)</title></programme>
+<programme start="20221019043100 +0000" stop="20221019071000 +0000" channel="Channel1.us"><title lang="en">Program1 (example.com)</title></programme>
+<programme start="20221019044000 +0000" stop="20221019071000 +0000" channel="Channel1.us"><title lang="fr">Programme1 (example2.com)</title></programme>
+<programme start="20221020043000 +0000" stop="20221020071000 +0000" channel="Channel1.us"><title lang="fr">Programme1 (example.com)</title></programme>
+<programme start="20221020043100 +0000" stop="20221020071000 +0000" channel="Channel1.us"><title lang="en">Program1 (example.com)</title></programme>
+<programme start="20221019043100 +0000" stop="20221019071000 +0000" channel="Channel3.us"><title lang="en">Program1 (example2.com)</title></programme>
+<programme start="20221019043100 +0000" stop="20221019071000 +0000" channel="Channel4.us@HD"><title lang="en">Program1 (example2.com)</title></programme>
+</tv>

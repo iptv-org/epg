@@ -20,7 +20,7 @@ module.exports = {
     return [
       {
         title: 'Program1 (example.com)',
-        start: `${date.format('YYYY-MM-DD')}T04:30:00.000Z`,
+        start: `${date.format('YYYY-MM-DD')}T04:31:00.000Z`,
         stop: `${date.format('YYYY-MM-DD')}T07:10:00.000Z`
       }
     ]

@@ -15,7 +15,6 @@ export type ChannelData = {
   closed: string
   replaced_by: string
   website: string
-  logo: string
 }
 
 export type ChannelSearchableData = {
