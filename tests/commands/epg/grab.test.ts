@@ -20,7 +20,7 @@ describe('epg:grab', () => {
     if (process.env.DEBUG === 'true') console.log(cmd, stdout)
 
     expect(content('tests/__data__/output/guide.xml')).toEqual(
-      content('tests/__data__/expected/epg_grab/guide_2.xml')
+      content('tests/__data__/expected/epg_grab/base.guide.xml')
     )
   })
 
@@ -77,7 +77,7 @@ describe('epg:grab', () => {
     if (process.env.DEBUG === 'true') console.log(cmd, stdout)
 
     expect(content('tests/__data__/output/guides/example.com.xml')).toEqual(
-      content('tests/__data__/expected/epg_grab/guide_4.xml')
+      content('tests/__data__/expected/epg_grab/lang.guide.xml')
     )
   })
 
@@ -89,7 +89,7 @@ describe('epg:grab', () => {
     if (process.env.DEBUG === 'true') console.log(cmd, stdout)
 
     expect(content('tests/__data__/output/guide.xml')).toEqual(
-      content('tests/__data__/expected/epg_grab/guide_2.xml')
+      content('tests/__data__/expected/epg_grab/proxy.guide.xml')
     )
   })
 
@@ -101,7 +101,7 @@ describe('epg:grab', () => {
     if (process.env.DEBUG === 'true') console.log(cmd, stdout)
 
     expect(content('tests/__data__/output/guide.xml')).toEqual(
-      content('tests/__data__/expected/epg_grab/guide_2.xml')
+      content('tests/__data__/expected/epg_grab/proxy.guide.xml')
     )
   })
 
@@ -112,7 +112,8 @@ describe('epg:grab', () => {
     const stdout = execSync(cmd, { encoding: 'utf8' })
     if (process.env.DEBUG === 'true') console.log(cmd, stdout)
 
-    expect(stdout).toContain('curl "https://example.com" -X GET')
+    expect(stdout).toContain(`curl https://example.com \\
+ -X GET`)
   })
 
   it('can grab epg with multiple channels.xml files', () => {
@@ -121,7 +122,7 @@ describe('epg:grab', () => {
     if (process.env.DEBUG === 'true') console.log(cmd, stdout)
 
     expect(content('tests/__data__/output/guide.xml')).toEqual(
-      content('tests/__data__/expected/epg_grab/guide.xml')
+      content('tests/__data__/expected/epg_grab/template.guide.xml')
     )
   })
 
@@ -131,7 +132,7 @@ describe('epg:grab', () => {
     if (process.env.DEBUG === 'true') console.log(cmd, stdout)
 
     expect(content('tests/__data__/output/guide.xml')).toEqual(
-      content('tests/__data__/expected/epg_grab/guide_3.xml')
+      content('tests/__data__/expected/epg_grab/custom_channels.guide.xml')
     )
   })
 
@@ -143,12 +144,14 @@ describe('epg:grab', () => {
     if (process.env.DEBUG === 'true') console.log(cmd, stdout)
 
     expect(content('tests/__data__/output/guide.xml')).toEqual(
-      content('tests/__data__/expected/epg_grab/guide.xml')
+      content('tests/__data__/expected/epg_grab/template.guide.xml')
     )
 
     const zip = new Zip()
     const expected = zip.decompress(fs.readFileSync('tests/__data__/output/guide.xml.gz'))
-    const result = zip.decompress(fs.readFileSync('tests/__data__/expected/epg_grab/guide.xml.gz'))
+    const result = zip.decompress(
+      fs.readFileSync('tests/__data__/expected/epg_grab/template.guide.xml.gz')
+    )
     expect(expected).toEqual(result)
   })
 })
