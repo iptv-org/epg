@@ -34,7 +34,7 @@ jobs:
           echo "channels_all_changed_files=$CHANNELS_ALL_CHANGED_FILES" >> "$GITHUB_OUTPUT"
           echo "channels_any_changed=$CHANNELS_ANY_CHANGED" >> "$GITHUB_OUTPUT"
       - uses: actions/setup-node@v4
-        if: ${{ !env.ACT && (steps.files.outputs.js_any_changed == 'true' || steps.files.outputs.channels_any_changed == 'true') }}
+        if: ${{ steps.files.outputs.js_any_changed == 'true' || steps.files.outputs.channels_any_changed == 'true' }}
         with:
           node-version: 22
           cache: 'npm'
