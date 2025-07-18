@@ -1,9 +1,10 @@
 import { Logger, Timer, Storage, Collection } from '@freearhey/core'
-import { Option, program } from 'commander'
 import { QueueCreator, Job, ChannelsParser } from '../../core'
+import { Option, program } from 'commander'
+import { SITES_DIR } from '../../constants'
 import { Channel } from 'epg-grabber'
 import path from 'path'
-import { SITES_DIR } from '../../constants'
+import { ChannelList } from '../../models'
 
 program
   .addOption(new Option('-s, --site <name>', 'Name of the site to parse'))
@@ -31,7 +32,7 @@ program
       '--days <days>',
       'Override the number of days for which the program will be loaded (defaults to the value from the site config)'
     )
-      .argParser(value => (value !== undefined ? parseInt(value) : undefined))
+      .argParser(value => parseInt(value))
       .env('DAYS')
   )
   .addOption(
@@ -87,31 +88,35 @@ async function main() {
     files = await storage.list(options.channels)
   }
 
-  let parsedChannels = new Collection()
+  let channels = new Collection()
   for (const filepath of files) {
-    parsedChannels = parsedChannels.concat(await parser.parse(filepath))
+    const channelList: ChannelList = await parser.parse(filepath)
+
+    channels = channels.concat(channelList.channels)
   }
+
   if (options.lang) {
-    parsedChannels = parsedChannels.filter((channel: Channel) => {
+    channels = channels.filter((channel: Channel) => {
       if (!options.lang || !channel.lang) return true
 
       return options.lang.includes(channel.lang)
     })
   }
-  logger.info(`  found ${parsedChannels.count()} channel(s)`)
+
+  logger.info(`  found ${channels.count()} channel(s)`)
 
   logger.info('run:')
-  runJob({ logger, parsedChannels })
+  runJob({ logger, channels })
 }
 
 main()
 
-async function runJob({ logger, parsedChannels }: { logger: Logger; parsedChannels: Collection }) {
+async function runJob({ logger, channels }: { logger: Logger; channels: Collection }) {
   const timer = new Timer()
   timer.start()
 
   const queueCreator = new QueueCreator({
-    parsedChannels,
+    channels,
     logger,
     options
   })

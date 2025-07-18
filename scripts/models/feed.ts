@@ -1,6 +1,6 @@
 import { Collection, Dictionary } from '@freearhey/core'
 import { FeedData } from '../types/feed'
-import { Channel } from './channel'
+import { Logo, Channel } from '.'
 
 export class Feed {
   channelId: string
@@ -12,8 +12,9 @@ export class Feed {
   languageCodes: Collection
   timezoneIds: Collection
   videoFormat: string
-  guides?: Collection
+  guideChannels?: Collection
   streams?: Collection
+  logos: Collection = new Collection()
 
   constructor(data: FeedData) {
     this.channelId = data.channel
@@ -42,20 +43,30 @@ export class Feed {
     return this
   }
 
-  withGuides(guidesGroupedByStreamId: Dictionary): this {
-    this.guides = new Collection(guidesGroupedByStreamId.get(`${this.channelId}@${this.id}`))
+  withGuideChannels(guideChannelsGroupedByStreamId: Dictionary): this {
+    this.guideChannels = new Collection(
+      guideChannelsGroupedByStreamId.get(`${this.channelId}@${this.id}`)
+    )
 
     if (this.isMain) {
-      this.guides = this.guides.concat(new Collection(guidesGroupedByStreamId.get(this.channelId)))
+      this.guideChannels = this.guideChannels.concat(
+        new Collection(guideChannelsGroupedByStreamId.get(this.channelId))
+      )
     }
 
     return this
   }
 
-  getGuides(): Collection {
-    if (!this.guides) return new Collection()
+  withLogos(logosGroupedByStreamId: Dictionary): this {
+    this.logos = new Collection(logosGroupedByStreamId.get(this.getStreamId()))
 
-    return this.guides
+    return this
+  }
+
+  getGuideChannels(): Collection {
+    if (!this.guideChannels) return new Collection()
+
+    return this.guideChannels
   }
 
   getStreams(): Collection {
@@ -72,5 +83,42 @@ export class Feed {
 
   getStreamId(): string {
     return `${this.channelId}@${this.id}`
+  }
+
+  getLogos(): Collection {
+    function format(logo: Logo): number {
+      const levelByFormat: { [key: string]: number } = {
+        SVG: 0,
+        PNG: 3,
+        APNG: 1,
+        WebP: 1,
+        AVIF: 1,
+        JPEG: 2,
+        GIF: 1
+      }
+
+      return logo.format ? levelByFormat[logo.format] : 0
+    }
+
+    function size(logo: Logo): number {
+      return Math.abs(512 - logo.width) + Math.abs(512 - logo.height)
+    }
+
+    return this.logos.orderBy([format, size], ['desc', 'asc'], false)
+  }
+
+  getLogo(): Logo | undefined {
+    return this.getLogos().first()
+  }
+
+  hasLogo(): boolean {
+    return this.getLogos().notEmpty()
+  }
+
+  getLogoUrl(): string {
+    const logo = this.getLogo()
+    if (!logo) return ''
+
+    return logo.url || ''
   }
 }
