@@ -1,5 +1,5 @@
 import type { GuideData } from '../types/guide'
-import { uniqueId } from 'lodash'
+import { v4 as uuidv4 } from 'uuid'
 
 export class Guide {
   channelId?: string
@@ -21,7 +21,7 @@ export class Guide {
   }
 
   getUUID(): string {
-    if (!this.getStreamId() || !this.siteId) return uniqueId()
+    if (!this.getStreamId() || !this.siteId) return uuidv4()
 
     return this.getStreamId() + this.siteId
   }

@@ -1,5 +1,4 @@
 import { SiteConfig } from 'epg-grabber'
-import { deepMerge } from '../functions'
 import { pathToFileURL } from 'url'
 
 export class ConfigLoader {
@@ -28,6 +27,6 @@ export class ConfigLoader {
       channels: undefined
     }
 
-    return deepMerge(defaultConfig, config) as SiteConfig
+    return { ...defaultConfig, ...config } as SiteConfig
   }
 }

@@ -28,7 +28,7 @@ module.exports = {
       }
     })
 
-    return programs.concat().sort(sortBy('start'))
+    return sortBy(programs, p => p.start.valueOf())
   }
 }
 

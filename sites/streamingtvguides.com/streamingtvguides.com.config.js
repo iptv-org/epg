@@ -29,7 +29,7 @@ module.exports = {
       })
     })
 
-    programs = sortBy(uniqBy(programs, p => p.start), 'start')
+    programs = sortBy(uniqBy(programs, p => p.start), p => p.start.valueOf())
 
     return programs
   },

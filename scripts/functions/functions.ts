@@ -1,42 +1,65 @@
-// Made to replace lodash functions with their native alternatives. Typed for better TypeScript support.
-
 /**
- * Creates a new array of unique items based on an specific identifier.
- * This function uses a Map to ensure that each item is unique based on the result of the provided function.
- * @param {Array} arr - The array to filter for unique items
- * @param {Function} fn - A function that takes an item and returns a unique identifier
- * @returns {Array} A new array containing only unique items based on the identifier
- * @example
- * const items = [{ id: 1, name: 'A' }, { id: 2, name: 'B' }, { id: 1, name: 'C' }];
- * const uniqueItems = uniqBy(items, item => item.id);
- * // uniqueItems will be [{ id: 1, name: 'A' }, { id: 2, name: 'B' }]
- */
-export const uniqBy = <T, K>(arr: T[], fn: (item: T) => K): T[] => [...new Map(arr.map(x => [fn(x), x])).values()]
-
-/**
- * Recursively merges multiple objects into a single object.
- * If the same key exists in multiple objects and the values are both objects,
- * they will be deep merged. Otherwise, the latter value will override the former.
+ * Sorts an array by the result of running each element through an iteratee function.
+ * Creates a shallow copy of the array before sorting to avoid mutating the original.
  * 
- * @param {...object[]} a - An array of objects to be merged
- * @returns {Record<string, unknown>} A new object containing all merged properties
+ * @param {Array} arr - The array to sort
+ * @param {Function} fn - The iteratee function to compute sort values
+ * @returns {Array} A new sorted array
  * 
  * @example
- * const obj1 = { a: { b: 2 }, c: 3 };
- * const obj2 = { a: { d: 4 }, e: 5 };
- * deepMerge(obj1, obj2); // { a: { b: 2, d: 4 }, c: 3, e: 5 }
+ * const users = [{name: 'john', age: 30}, {name: 'jane', age: 25}];
+ * sortBy(users, x => x.age); // [{name: 'jane', age: 25}, {name: 'john', age: 30}]
  */
-export const deepMerge = (...a: (object)[]): Record<string, unknown> => 
-    a.reduce((r: { [key: string]: unknown }, o) => 
-    (Object.entries(o).forEach(([k, v]) => { r[k] = r[k] && typeof r[k] === 'object' && typeof v === 'object' ? 
-        deepMerge(r[k], v) : v }), r), {} as Record<string, unknown>)
+export const sortBy = <T>(arr: T[], fn: (item: T) => number | string): T[] => [...arr].sort((a, b) => fn(a) > fn(b) ? 1 : -1)
 
 /**
- * Sort an array of objects by a specific key.
+ * Sorts an array by multiple criteria with customizable sort orders.
+ * Supports ascending (default) and descending order for each criterion.
  * 
- * @param {string} key - The key to sort by
- * @returns {function} A comparison function for sorting
+ * @param {Array} arr - The array to sort
+ * @param {Array<Function>} fns - Array of iteratee functions to compute sort values
+ * @param {Array<string>} orders - Array of sort orders ('asc' or 'desc'), defaults to all 'asc'
+ * @returns {Array} A new sorted array
+ * 
+ * @example
+ * const users = [{name: 'john', age: 30}, {name: 'jane', age: 25}, {name: 'bob', age: 30}];
+ * orderBy(users, [x => x.age, x => x.name], ['desc', 'asc']);
+ * // [{name: 'bob', age: 30}, {name: 'john', age: 30}, {name: 'jane', age: 25}]
  */
-export const sortBy = <T>(key: keyof T): ((a: T, b: T) => number) => {
-    return (a: T, b: T) => (a[key] > b[key]) ? 1 : ((b[key] > a[key]) ? -1 : 0)
-}
+export const orderBy = (arr: Array<unknown>, fns: Array<(item: unknown) => string | number>, orders: Array<string> = []): Array<unknown> => [...arr].sort((a, b) => 
+  fns.reduce((acc, fn, i) => 
+    acc || ((orders[i] === 'desc' ? fn(b) > fn(a) : fn(a) > fn(b)) ? 1 : fn(a) === fn(b) ? 0 : -1), 0)
+)
+
+/**
+ * Creates a duplicate-free version of an array using an iteratee function to generate
+ * the criterion by which uniqueness is computed. Only the first occurrence of each
+ * element is kept.
+ * 
+ * @param {Array} arr - The array to inspect
+ * @param {Function} fn - The iteratee function to compute uniqueness criterion
+ * @returns {Array} A new duplicate-free array
+ * 
+ * @example
+ * const users = [{id: 1, name: 'john'}, {id: 2, name: 'jane'}, {id: 1, name: 'john'}];
+ * uniqBy(users, x => x.id); // [{id: 1, name: 'john'}, {id: 2, name: 'jane'}]
+ */
+export const uniqBy = <T>(arr: T[], fn: (item: T) => unknown): T[] => arr.filter((item, index) => arr.findIndex(x => fn(x) === fn(item)) === index)
+
+/**
+ * Converts a string to start case (capitalizes the first letter of each word).
+ * Handles camelCase, snake_case, kebab-case, and regular spaces.
+ * 
+ * @param {string} str - The string to convert
+ * @returns {string} The start case string
+ * 
+ * @example
+ * startCase('hello_world'); // "Hello World"
+ * startCase('helloWorld'); // "Hello World"
+ * startCase('hello-world'); // "Hello World"
+ * startCase('hello world'); // "Hello World"
+ */
+export const startCase = (str: string): string => str
+  .replace(/([a-z])([A-Z])/g, '$1 $2')  // Split camelCase
+  .replace(/[_-]/g, ' ')                 // Replace underscores and hyphens with spaces
+  .replace(/\b\w/g, c => c.toUpperCase()) // Capitalize first letter of each word
