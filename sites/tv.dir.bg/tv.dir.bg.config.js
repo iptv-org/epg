@@ -6,35 +6,6 @@ const { DateTime } = require('luxon')
 let cachedToken = null
 let tokenExpiry = null
 
-
-async function getToken() {
-  if (cachedToken && tokenExpiry && DateTime.now() < tokenExpiry) {
-    return cachedToken
-  }
-
-  try {
-    const response = await axios.get('https://tv.dir.bg/init')
-    
-    // Check different possible locations for the token
-    let token = null
-    if (response.data && response.data.csrfToken) {
-      token = response.data.csrfToken
-    }
-    
-    if (token) {
-      cachedToken = token
-      tokenExpiry = DateTime.now().plus({ hours: 1 })
-      return token
-    } else {
-      console.error('CSRF token not found in response structure:', Object.keys(response.data || {}))
-      return null
-    }
-  } catch (error) {
-    console.error('Error fetching token:', error.message)
-    return null
-  }
-}
-
 module.exports = {
   site: 'tv.dir.bg',
   days: 2,
@@ -121,6 +92,34 @@ module.exports = {
     return []
   }
 }
+}
+
+async function getToken() {
+  if (cachedToken && tokenExpiry && DateTime.now() < tokenExpiry) {
+    return cachedToken
+  }
+
+  try {
+    const response = await axios.get('https://tv.dir.bg/init', { headers: {'X-Requested-With': 'XMLHttpRequest'} })
+
+    // Check different possible locations for the token
+    let token = null
+    if (response.data && response.data.csrfToken) {
+      token = response.data.csrfToken
+    }
+    
+    if (token) {
+      cachedToken = token
+      tokenExpiry = DateTime.now().plus({ hours: 1 })
+      return token
+    } else {
+      console.error('CSRF token not found in response structure:', Object.keys(response.data || {}))
+      return null
+    }
+  } catch (error) {
+    console.error('Error fetching token:', error.message)
+    return null
+  }
 }
 
 function parseStart($item, date) {
