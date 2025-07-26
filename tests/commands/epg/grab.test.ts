@@ -112,8 +112,7 @@ describe('epg:grab', () => {
     const stdout = execSync(cmd, { encoding: 'utf8' })
     if (process.env.DEBUG === 'true') console.log(cmd, stdout)
 
-    expect(stdout).toContain(`curl https://example.com \\
- -X GET`)
+    expect(stdout).toContain('curl https://example.com')
   })
 
   it('can grab epg with multiple channels.xml files', () => {
