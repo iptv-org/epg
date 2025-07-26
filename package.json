@@ -18,7 +18,6 @@
     "prepare": "husky"
   },
   "private": true,
-  "author": "Arhey",
   "license": "UNLICENSED",
   "jest": {
     "setupFiles": [
@@ -40,6 +39,7 @@
     "@alex_neo/jest-expect-message": "^1.0.5",
     "@eslint/eslintrc": "^3.3.1",
     "@eslint/js": "^9.31.0",
+    "@freearhey/chronos": "^0.0.1",
     "@freearhey/core": "^0.10.2",
     "@freearhey/search-js": "^0.1.2",
     "@ntlab/sfetch": "^1.2.0",
