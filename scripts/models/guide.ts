@@ -1,35 +1,35 @@
-import type { GuideData } from '../types/guide'
-import { uniqueId } from 'lodash'
+import { Collection, DateTime } from '@freearhey/core'
+import { generateXMLTV } from 'epg-grabber'
+
+type GuideData = {
+  channels: Collection
+  programs: Collection
+  filepath: string
+  gzip: boolean
+}
 
 export class Guide {
-  channelId?: string
-  feedId?: string
-  siteDomain?: string
-  siteId?: string
-  siteName?: string
-  languageCode?: string
+  channels: Collection
+  programs: Collection
+  filepath: string
+  gzip: boolean
 
-  constructor(data?: GuideData) {
-    if (!data) return
-
-    this.channelId = data.channel
-    this.feedId = data.feed
-    this.siteDomain = data.site
-    this.siteId = data.site_id
-    this.siteName = data.site_name
-    this.languageCode = data.lang
+  constructor({ channels, programs, filepath, gzip }: GuideData) {
+    this.channels = channels
+    this.programs = programs
+    this.filepath = filepath
+    this.gzip = gzip || false
   }
 
-  getUUID(): string {
-    if (!this.getStreamId() || !this.siteId) return uniqueId()
+  toString() {
+    const currDate = new DateTime(process.env.CURR_DATE || new Date().toISOString(), {
+      timezone: 'UTC'
+    })
 
-    return this.getStreamId() + this.siteId
-  }
-
-  getStreamId(): string | undefined {
-    if (!this.channelId) return undefined
-    if (!this.feedId) return this.channelId
-
-    return `${this.channelId}@${this.feedId}`
+    return generateXMLTV({
+      channels: this.channels.all(),
+      programs: this.programs.all(),
+      date: currDate.toJSON()
+    })
   }
 }

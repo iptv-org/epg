@@ -70,6 +70,10 @@ export class Grabber {
               }
             }
 
+            if (this.options.curl === true) {
+              config.curl = true
+            }
+
             const _programs = await this.grabber.grab(
               channel,
               date,

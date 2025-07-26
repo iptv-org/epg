@@ -1,26 +1,28 @@
 import { ChannelData, ChannelSearchableData } from '../types/channel'
 import { Collection, Dictionary } from '@freearhey/core'
-import { Stream, Guide, Feed } from './'
+import { Stream, Feed, Logo, GuideChannel } from './'
 
 export class Channel {
-  id: string
-  name: string
+  id?: string
+  name?: string
   altNames?: Collection
   network?: string
   owners?: Collection
-  countryCode: string
+  countryCode?: string
   subdivisionCode?: string
   cityName?: string
   categoryIds?: Collection
-  isNSFW: boolean
+  isNSFW: boolean = false
   launched?: string
   closed?: string
   replacedBy?: string
   website?: string
-  logo?: string
   feeds?: Collection
+  logos: Collection = new Collection()
 
-  constructor(data: ChannelData) {
+  constructor(data?: ChannelData) {
+    if (!data) return
+
     this.id = data.id
     this.name = data.name
     this.altNames = new Collection(data.alt_names)
@@ -35,11 +37,16 @@ export class Channel {
     this.closed = data.closed || undefined
     this.replacedBy = data.replaced_by || undefined
     this.website = data.website || undefined
-    this.logo = data.logo
   }
 
   withFeeds(feedsGroupedByChannelId: Dictionary): this {
-    this.feeds = new Collection(feedsGroupedByChannelId.get(this.id))
+    if (this.id) this.feeds = new Collection(feedsGroupedByChannelId.get(this.id))
+
+    return this
+  }
+
+  withLogos(logosGroupedByChannelId: Dictionary): this {
+    if (this.id) this.logos = new Collection(logosGroupedByChannelId.get(this.id))
 
     return this
   }
@@ -50,19 +57,19 @@ export class Channel {
     return this.feeds
   }
 
-  getGuides(): Collection {
-    let guides = new Collection()
+  getGuideChannels(): Collection {
+    let channels = new Collection()
 
     this.getFeeds().forEach((feed: Feed) => {
-      guides = guides.concat(feed.getGuides())
+      channels = channels.concat(feed.getGuideChannels())
     })
 
-    return guides
+    return channels
   }
 
-  getGuideNames(): Collection {
-    return this.getGuides()
-      .map((guide: Guide) => guide.siteName)
+  getGuideChannelNames(): Collection {
+    return this.getGuideChannels()
+      .map((channel: GuideChannel) => channel.siteName)
       .uniq()
   }
 
@@ -100,12 +107,56 @@ export class Channel {
     return this.altNames || new Collection()
   }
 
+  getLogos(): Collection {
+    function feed(logo: Logo): number {
+      if (!logo.feed) return 1
+      if (logo.feed.isMain) return 1
+
+      return 0
+    }
+
+    function format(logo: Logo): number {
+      const levelByFormat: { [key: string]: number } = {
+        SVG: 0,
+        PNG: 3,
+        APNG: 1,
+        WebP: 1,
+        AVIF: 1,
+        JPEG: 2,
+        GIF: 1
+      }
+
+      return logo.format ? levelByFormat[logo.format] : 0
+    }
+
+    function size(logo: Logo): number {
+      return Math.abs(512 - logo.width) + Math.abs(512 - logo.height)
+    }
+
+    return this.logos.orderBy([feed, format, size], ['desc', 'desc', 'asc'], false)
+  }
+
+  getLogo(): Logo | undefined {
+    return this.getLogos().first()
+  }
+
+  hasLogo(): boolean {
+    return this.getLogos().notEmpty()
+  }
+
+  getLogoUrl(): string {
+    const logo = this.getLogo()
+    if (!logo) return ''
+
+    return logo.url || ''
+  }
+
   getSearchable(): ChannelSearchableData {
     return {
       id: this.getId(),
       name: this.getName(),
       altNames: this.getAltNames().all(),
-      guideNames: this.getGuideNames().all(),
+      guideNames: this.getGuideChannelNames().all(),
       streamNames: this.getStreamNames().all(),
       feedFullNames: this.getFeedFullNames().all()
     }

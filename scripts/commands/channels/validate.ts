@@ -1,16 +1,18 @@
-import { Storage, Collection, Dictionary, File } from '@freearhey/core'
-import { ChannelsParser } from '../../core'
-import { Channel } from '../../models'
+import { ChannelsParser, DataLoader, DataProcessor } from '../../core'
+import { DataProcessorData } from '../../types/dataProcessor'
+import { Storage, Dictionary, File } from '@freearhey/core'
+import { DataLoaderData } from '../../types/dataLoader'
+import { ChannelList } from '../../models'
+import { DATA_DIR } from '../../constants'
+import epgGrabber from 'epg-grabber'
 import { program } from 'commander'
 import chalk from 'chalk'
 import langs from 'langs'
-import { DATA_DIR } from '../../constants'
-import epgGrabber from 'epg-grabber'
 
 program.argument('[filepath]', 'Path to *.channels.xml files to validate').parse(process.argv)
 
 type ValidationError = {
-  type: 'duplicate' | 'wrong_xmltv_id' | 'wrong_lang'
+  type: 'duplicate' | 'wrong_channel_id' | 'wrong_feed_id' | 'wrong_lang'
   name: string
   lang?: string
   xmltv_id?: string
@@ -19,12 +21,14 @@ type ValidationError = {
 }
 
 async function main() {
-  const parser = new ChannelsParser({ storage: new Storage() })
-
+  const processor = new DataProcessor()
   const dataStorage = new Storage(DATA_DIR)
-  const channelsData = await dataStorage.json('channels.json')
-  const channels = new Collection(channelsData).map(data => new Channel(data))
-  const channelsGroupedById = channels.groupBy((channel: Channel) => channel.id)
+  const loader = new DataLoader({ storage: dataStorage })
+  const data: DataLoaderData = await loader.load()
+  const { channelsKeyById, feedsKeyByStreamId }: DataProcessorData = processor.process(data)
+  const parser = new ChannelsParser({
+    storage: new Storage()
+  })
 
   let totalFiles = 0
   let totalErrors = 0
@@ -35,11 +39,11 @@ async function main() {
     const file = new File(filepath)
     if (file.extension() !== 'xml') continue
 
-    const parsedChannels = await parser.parse(filepath)
+    const channelList: ChannelList = await parser.parse(filepath)
 
     const bufferBySiteId = new Dictionary()
     const errors: ValidationError[] = []
-    parsedChannels.forEach((channel: epgGrabber.Channel) => {
+    channelList.channels.forEach((channel: epgGrabber.Channel) => {
       const bufferId: string = channel.site_id
       if (bufferBySiteId.missing(bufferId)) {
         bufferBySiteId.set(bufferId, true)
@@ -54,11 +58,20 @@ async function main() {
       }
 
       if (!channel.xmltv_id) return
-      const [channelId] = channel.xmltv_id.split('@')
-      const foundChannel = channelsGroupedById.get(channelId)
+      const [channelId, feedId] = channel.xmltv_id.split('@')
+
+      const foundChannel = channelsKeyById.get(channelId)
       if (!foundChannel) {
-        errors.push({ type: 'wrong_xmltv_id', ...channel })
+        errors.push({ type: 'wrong_channel_id', ...channel })
         totalErrors++
+      }
+
+      if (feedId) {
+        const foundFeed = feedsKeyByStreamId.get(channel.xmltv_id)
+        if (!foundFeed) {
+          errors.push({ type: 'wrong_feed_id', ...channel })
+          totalErrors++
+        }
       }
     })
 
