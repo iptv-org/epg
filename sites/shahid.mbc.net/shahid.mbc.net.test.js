@@ -1,4 +1,6 @@
 const { url, parser } = require('./shahid.mbc.net.config.js')
+const fs = require('fs')
+const path = require('path')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 
@@ -18,8 +20,7 @@ it('can generate valid url', () => {
 })
 
 it('can parse response', () => {
-  const content =
-    '{"items":[{"channelId":"996520","items":[{"actualFrom":"2023-11-11T00:00:00.000+00:00","actualTo":"2023-11-11T00:30:00.000+00:00","description":"The presenter reviews the most prominent episodes of news programs produced by the channel\'s team on a weekly basis, which include the most important global updates and developments at all levels.","duration":null,"emptySlot":false,"episodeNumber":194,"from":"2023-11-11T00:00:00.000+00:00","genres":["TV Show"],"productId":null,"productionYear":null,"productPoster":"https://imagesmbc.whatsonindia.com/dasimages/landscape/1920x1080/F968D4A39DB25793E9EED1BDAFBAD2EA8A8F9B30Z.jpg","productSubType":null,"productType":null,"replay":false,"restritectContent":null,"seasonId":null,"seasonNumber":"1","showId":null,"streamInfo":null,"title":"Menassaatona Fi Osboo\'","to":"2023-11-11T00:30:00.000+00:00"}]}]}'
+  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'))
   const result = parser({ content, channel, date })
 
   expect(result).toMatchObject([

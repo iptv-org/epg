@@ -1,4 +1,6 @@
 const { parser, url, request } = require('./sky.de.config.js')
+const fs = require('fs')
+const path = require('path')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 dayjs.extend(utc)
@@ -8,9 +10,6 @@ const channel = {
   site_id: '522',
   xmltv_id: 'WarnerTVComedyHD.de'
 }
-
-const content =
-  '{"cl":[{"ci":522,"el":[{"ei":122309300,"bsdt":1645916700000,"bst":"00:05","bedt":1645918200000,"len":25,"et":"King of Queens","ec":"Comedyserie","cop":"USA","yop":2001,"fsk":"ab 0 Jahre","epit":"Der Experte","sn":"4","en":"11","pu":"/static/img/program_guide/1522936_s.jpg"},{"ei":122309301,"bsdt":1645918200000,"bst":"00:30","bedt":1645919700000,"len":25,"et":"King of Queens","ec":"Comedyserie","cop":"USA","yop":2001,"fsk":"ab 0 Jahre","epit":"Speedy Gonzales","sn":"4","en":"12","pu":"/static/img/program_guide/1522937_s.jpg"}]}]}'
 
 it('can generate valid url', () => {
   expect(url).toBe('https://www.sky.de/sgtvg/service/getBroadcastsForGrid')
@@ -28,6 +27,7 @@ it('can generate valid request data', () => {
 })
 
 it('can parse response', () => {
+  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'))
   const result = parser({ content, channel }).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()

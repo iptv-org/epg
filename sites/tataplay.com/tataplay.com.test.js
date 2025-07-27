@@ -1,4 +1,6 @@
 const { parser, url, channels } = require('./tataplay.com.config.js')
+const fs = require('fs')
+const path = require('path')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -13,28 +15,7 @@ it('can generate valid url', () => {
 })
 
 it('can parse response', () => {
-  const content = JSON.stringify({
-    data: {
-      epg: [
-        {
-          title: 'Yeh Rishta Kya Kehlata Hai',
-          startTime: '2025-06-09T18:00:00.000Z',
-          endTime: '2025-06-09T18:30:00.000Z',
-          desc: 'The story of the Rajshri family and their journey through life.',
-          category: 'Drama',
-          boxCoverImage: 'https://img.tataplay.com/thumbnails/1001/yeh-rishta.jpg'
-        },
-        {
-          title: 'Anupamaa',
-          startTime: '2025-06-09T18:30:00.000Z',
-          endTime: '2025-06-09T19:00:00.000Z',
-          desc: 'The story of Anupamaa, a housewife who rediscovers herself.',
-          category: 'Drama',
-          boxCoverImage: 'https://img.tataplay.com/thumbnails/1001/anupamaa.jpg'
-        }
-      ]
-    }
-  })
+  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'))
 
   const results = parser({ content, date })
 
