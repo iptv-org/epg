@@ -1,4 +1,6 @@
 const { parser, url } = require('./indihometv.com.config.js')
+const fs = require('fs')
+const path = require('path')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 dayjs.extend(utc)
@@ -8,14 +10,13 @@ const channel = {
   site_id: 'metrotv',
   xmltv_id: 'MetroTV.id'
 }
-const content =
-  '<!DOCTYPE html><html><head></head><body><section class="live-tv-channels" id="top"><div><div class="schedule-list"><div id="pills-2022-08-08"><div class="row"><div><a class="schedule-item"><span class="replay"></span><p>07:00 - 07:05</p><b>Headline News</b></a></div><div><a class="schedule-item"><span class="replay"></span><p>07:05 - 07:30</p><b>Editorial Media Indonesia</b></a></div><div><a class="schedule-item"><span class="replay"></span><p>07:30 - 07:45</p><b>Editorial Media Indonesia</b></a></div><div><a class="schedule-item"><span class="replay"></span><p>07:45 - 08:00</p><b>Editorial Media Indonesia</b></a></div></div></div></div></div></section></body>'
 
 it('can generate valid url', () => {
   expect(url({ channel })).toBe('https://www.indihometv.com/livetv/metrotv')
 })
 
 it('can parse response', () => {
+  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.html'), 'utf8')
   const result = parser({ content, channel, date }).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
@@ -50,7 +51,7 @@ it('can handle empty guide', () => {
   const result = parser({
     date,
     channel,
-    content: '<!DOCTYPE html><html><head></head><body></body></html>'
+    content: fs.readFileSync(path.resolve(__dirname, '__data__/no_content.html'), 'utf8')
   })
   expect(result).toMatchObject([])
 })
