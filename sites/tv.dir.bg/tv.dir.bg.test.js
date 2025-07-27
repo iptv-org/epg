@@ -9,46 +9,42 @@ dayjs.extend(utc)
 
 const date = dayjs.utc('2025-06-30', 'YYYY-MM-DD').startOf('d')
 const channel = {
-  site_id: '12',
+  site_id: '61',
   xmltv_id: 'BTV.bg'
 }
 
 it('can generate valid url', () => {
-  expect(url({ channel, date })).toBe('https://tv.dir.bg/programa/12')
+  expect(url).toBe('https://tv.dir.bg/load/programs')
 })
 
 it('can parse response', () => {
-  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.html'))
-  const result = parser({ content, date }).map(p => {
+  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'))
+  const results = parser({ content, date }).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
     return p
   })
 
-  expect(result).toMatchObject([
-    {
-      start: '2025-06-30T08:00:00.000Z',
-      stop: '2025-06-30T10:00:00.000Z',
-      title: 'Купа на Франция: Еспали - Пари Сен Жермен'
-    },
-    {
-      start: '2025-06-30T10:00:00.000Z',
-      stop: '2025-06-30T12:00:00.000Z',
-      title: 'Ла Лига: Леганес - Реал Сосиедад'
-    },
-    {
-      start: '2025-06-30T12:00:00.000Z',
-      stop: '2025-06-30T13:00:00.000Z',
-      title: 'Пред Стадиона&quot; - спортно шоу'
-    }
-  ])
+ expect(results.length).toBe(63)
+
+ expect(results[0]).toMatchObject({
+  start: '2025-06-30T03:00:00.000Z',
+  stop: '2025-06-30T03:30:00.000Z',
+  title: 'Светът на здравето'
+ })
+
+ expect(results[62]).toMatchObject({
+  start: '2025-07-01T02:00:00.000Z',
+  stop: '2025-07-01T02:30:00.000Z',
+  title: 'Убийства в Рая , сезон 1 , епизод 7'
+ })
 })
 
 it('can handle empty guide', () => {
   const result = parser({
     date,
     channel,
-    content: fs.readFileSync(path.resolve(__dirname, '__data__/no_data.html'))
+    content: fs.readFileSync(path.resolve(__dirname, '__data__/no_content.json'))
   })
   expect(result).toMatchObject([])
 })
