@@ -102,12 +102,40 @@ function parseDescription($item) {
   return $item('a > div.content > p.synopsis').text().trim()
 }
 
-function parseImage($item) {
-  const backgroundImage = $item('a > div.image-parent > div.image').css('background-image')
-  const [, image] = backgroundImage.match(/url\('(.*)'\)/) || [null, null]
 
-  return image
+function parseImage($item) {
+  const styleAttr = $item('a > div.image-parent > div.image').attr('style')
+  
+  if (styleAttr) {
+    const match = styleAttr.match(/background-image:\s*url\(['"]?(.*?)['"]?\)/)
+    if (match) {
+      return cleanUrl(match[1])
+    }
+  }
+  
+  const backgroundImage = $item('a > div.image-parent > div.image').css('background-image')
+  
+  if (backgroundImage && backgroundImage !== 'none') {
+    const match = backgroundImage.match(/url\(['"]?(.*?)['"]?\)/)
+    if (match) {
+      return cleanUrl(match[1])
+    }
+  }
+  
+  return null
 }
+
+function cleanUrl(url) {
+  if (!url) return null
+  
+  return url
+    .replace(/^['"`\\]+/, '')
+    .replace(/['"`\\]+$/, '')
+    .replace(/\\'/g, "'")
+    .replace(/\\"/g, '"')
+    .replace(/\\\\/g, '\\')
+}
+
 
 function parseItems(content) {
   const $ = cheerio.load(content)
