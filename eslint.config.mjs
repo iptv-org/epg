@@ -36,7 +36,7 @@ export default [
       '@typescript-eslint/no-require-imports': 'off',
       '@typescript-eslint/no-var-requires': 'off',
       'no-case-declarations': 'off',
-      'linebreak-style': ['error', 'windows'],
+      'linebreak-style': ['error', process.platform === 'win32' ? 'windows' : 'unix'],
 
       quotes: [
         'error',
