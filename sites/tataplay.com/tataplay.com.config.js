@@ -4,7 +4,7 @@ module.exports = {
   site: 'tataplay.com',
   days: 1,
 
-  url({ channel, date }) {
+  url({ date }) {
     return `https://tm.tapi.videoready.tv/content-detail/pub/api/v2/channels/schedule?date=${date.format('DD-MM-YYYY')}`
   },
 

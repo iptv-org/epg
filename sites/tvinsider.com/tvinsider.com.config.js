@@ -14,7 +14,7 @@ module.exports = {
     items.forEach(item => {
       const prev = programs[programs.length - 1]
       const $item = cheerio.load(item)
-      const episodeInfo = parseEP($item);
+      const episodeInfo = parseEP($item)
       let start = parseStart($item, date)
       if (!start) return
       if (prev) {
@@ -68,15 +68,15 @@ function parseTitle($item) {
   return $item('h3').text().trim()
 }
 function parseEP($item){
-    const text = $item('h6').text().trim();
-    const match = text.match(/Season\s+(\d+)\s*•\s*Episode\s+(\d+)/i);
+    const text = $item('h6').text().trim()
+    const match = text.match(/Season\s+(\d+)\s*•\s*Episode\s+(\d+)/i)
 
-    if (!match) return {}; // Return an empty object if no match, so properties are undefined later
+    if (!match) return {} // Return an empty object if no match, so properties are undefined later
 
-    const season = parseInt(match[1], 10);
-    const episode = parseInt(match[2], 10);
+    const season = parseInt(match[1], 10)
+    const episode = parseInt(match[2], 10)
 
-    return { season, episode }; // Return an object with season and episode
+    return { season, episode } // Return an object with season and episode
 }
 
 function parseSubtitle($item) {
@@ -84,13 +84,13 @@ function parseSubtitle($item) {
 }
 
 function parsePreviously($item){
-  const h3Text = $item('h3').text().trim();
-  const isNewShow = /New$/.test(h3Text);
+  const h3Text = $item('h3').text().trim()
+  const isNewShow = /New$/.test(h3Text)
 
   if (isNewShow) {
-    return null;
+    return null
   } else {
-    return {};
+    return {}
   }
 }
 
