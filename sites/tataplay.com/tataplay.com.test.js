@@ -11,7 +11,9 @@ const date = dayjs.utc('2025-06-09', 'YYYY-MM-DD').startOf('d')
 const channel = { site_id: '1001' }
 
 it('can generate valid url', () => {
-  expect(url({ channel, date })).toBe('https://tm.tapi.videoready.tv/content-detail/pub/api/v2/channels/schedule?date=09-06-2025')
+  expect(url({ channel, date })).toBe(
+    'https://tm.tapi.videoready.tv/content-detail/pub/api/v2/channels/schedule?date=09-06-2025'
+  )
 })
 
 it('can parse response', () => {
