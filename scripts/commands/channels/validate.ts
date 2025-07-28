@@ -91,7 +91,9 @@ async function main() {
         `${totalProblems} problems (${totalErrors} errors, ${totalWarnings} warnings) in ${totalFiles} file(s)`
       )
     )
-    process.exit(1)
+    if (totalErrors > 0) {
+      process.exit(1)
+    }
   }
 }
 
