@@ -23,7 +23,7 @@ describe('channels:validate', () => {
 │ 0       │ 'duplicate' │ 'en' │ 'Bravo.us@East' │ '140'   │ 'Bravo' │
 └─────────┴─────────────┴──────┴─────────────────┴─────────┴─────────┘
 
-1 error(s) in 1 file(s)
+1 problems (1 errors, 0 warnings) in 1 file(s)
 `)
     }
   })
@@ -43,7 +43,7 @@ describe('channels:validate', () => {
 │ 0       │ 'wrong_channel_id' │ 'en' │ 'CNNInternational' │ '140'   │ 'CNN International' │
 └─────────┴────────────────────┴──────┴────────────────────┴─────────┴─────────────────────┘
 
-1 error(s) in 1 file(s)
+1 problems (0 errors, 1 warnings) in 1 file(s)
 `)
     }
   })
@@ -63,7 +63,7 @@ describe('channels:validate', () => {
 │ 0       │ 'wrong_feed_id' │ 'en' │ 'Bravo.us@West' │ '150'   │ 'Bravo' │
 └─────────┴─────────────────┴──────┴─────────────────┴─────────┴─────────┘
 
-1 error(s) in 1 file(s)
+1 problems (0 errors, 1 warnings) in 1 file(s)
 `)
     }
   })
