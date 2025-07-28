@@ -1,4 +1,4 @@
-export type LogoData = {
+export interface LogoData {
   channel: string
   feed: string | null
   tags: string[]

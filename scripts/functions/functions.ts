@@ -28,10 +28,10 @@ export const sortBy = <T>(arr: T[], fn: (item: T) => number | string): T[] =>
  * // [{name: 'bob', age: 30}, {name: 'john', age: 30}, {name: 'jane', age: 25}]
  */
 export const orderBy = (
-  arr: Array<unknown>,
-  fns: Array<(item: unknown) => string | number>,
-  orders: Array<string> = []
-): Array<unknown> =>
+  arr: unknown[],
+  fns: ((item: unknown) => string | number)[],
+  orders: string[] = []
+): unknown[] =>
   [...arr].sort((a, b) =>
     fns.reduce(
       (acc, fn, i) =>

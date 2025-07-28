@@ -1,4 +1,4 @@
-export type StreamData = {
+export interface StreamData {
   channel: string | null
   feed: string | null
   name?: string
