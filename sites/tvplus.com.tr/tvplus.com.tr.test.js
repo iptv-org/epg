@@ -14,7 +14,7 @@ jest.mock('axios')
 const date = dayjs.utc('2024-12-15', 'YYYY-MM-DD').startOf('d')
 const channel = {
   lang: 'tr',
-  site_id: 'nick-jr--4353',
+  site_id: 'nick-jr/4353',
   xmltv_id: 'NickJr.tr'
 }
 
