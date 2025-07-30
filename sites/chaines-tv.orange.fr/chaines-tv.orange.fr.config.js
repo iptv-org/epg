@@ -68,7 +68,11 @@ module.exports = {
         lang: 'fr',
         site_id: item.epgId,
         name: item.name,
-        logo: encodeURIComponent(item.logos[0]?.logoImageUrl)
+        logo: item.logos[0]?.logoImageUrl.replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&apos;')
       }
     })
   }
@@ -140,7 +144,6 @@ function parseEpisode(item) {
 
 function parseItems(content, channel) {
   const data = JSON.parse(content)
-  //console.log(data) // For debug
 
   return data && data[channel.site_id] ? data[channel.site_id] : []
 }
