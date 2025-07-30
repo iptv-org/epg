@@ -1,171 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="" site_id="DTH#10713">CNBC HD</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="" site_id="DTH#11216">Sky Crime</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="" site_id="DTH#11247">Sky Serie +1</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="" site_id="DTH#11490">Sky Sport</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="" site_id="DTH#11491">Sky Sport</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="" site_id="DTH#11492">Sky Sport</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="" site_id="DTH#11494">Sky Sport</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="" site_id="DTH#11496">Sky Sport</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="" site_id="DTH#11497">Sky Sport</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="" site_id="DTH#445">Sky News</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="" site_id="DTH#617">Sky Sport</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="" site_id="DTH#6862">NHK World TV HD</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="" site_id="DTH#8336">Sky Crime</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="" site_id="DTH#8453">Sky Atlantic +1</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="" site_id="DTH#9047">Heroes Collection</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="20.it@HD" site_id="DTH#10458">20Mediaset HD</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="ACISportTV.it" site_id="DTH#7587">ACI Sport Tv</channel>
-  <channel site="guidatv.sky.it" lang="en" xmltv_id="AlJazeera.qa@EnglishHD" site_id="DTH#5113">Al Jazeera Intl. HD</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="BBCNews.uk@Europe" site_id="DTH#891">BBC World News</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="BikeChannel.it" site_id="DTH#11278">BIKE</channel>
-  <channel site="guidatv.sky.it" lang="en" xmltv_id="BloombergTV.us@Europe" site_id="DTH#349">Bloomberg</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="Boing.it" site_id="DTH#6628">Boing</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="Boomerang.it" site_id="DTH#472">Boomerang</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="Boomerang.it@Plus1" site_id="DTH#479">Boomerang +1</channel>
-  <channel site="guidatv.sky.it" lang="en" xmltv_id="CNNInternational.us@MENA" site_id="DTH#312">CNN Intl.</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="CacciaePesca.it" site_id="DTH#520">CACCIA e Pesca</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="Canale5.it@HD" site_id="DTH#10354">Canale 5 HD</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="CartoonNetwork.it@HD" site_id="DTH#9693">Cartoon Network HD</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="CartoonNetwork.it@Plus1" site_id="DTH#476">Cartoon +1</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="Cartoonito.it" site_id="DTH#8132">CARTOONITO DTT</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="Cielo.it" site_id="DTH#8133">cielo</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="Cine34.it@HD" site_id="DTH#10893">Cine34 HD</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="ClassCNBC.it" site_id="DTH#308">Class CNBC</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="Classica.it@HD" site_id="DTH#11437">Classica HD</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="ComedyCentral.it" site_id="DTH#318">Comedy Central</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="ComedyCentral.it@Plus1" site_id="DTH#8353">Comedy +1</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="DMAX.it@HD" site_id="DTH#8933">DMAX HD</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="DeAJunior.it" site_id="DTH#7427">DeAJunior</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="Boomerang.it" site_id="DTH#367">Boomerang</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="Canale5.it" site_id="DTH#5435">Canale 5</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="CartoonNetwork.it" site_id="DTH#258">Cartoon Network</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="cielo.it" site_id="DTH#120">cielo</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="CNNIntl..it" site_id="DTH#211">CNN Intl.</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="ComedyCentral.it" site_id="DTH#404">Comedy Central</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="DeAJunior.it" site_id="DTH#313">DeAJunior</channel>
   <channel site="guidatv.sky.it" lang="it" xmltv_id="DeAKids.it" site_id="DTH#460">DeAKids</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="DeAKids.it@Plus1" site_id="DTH#364">DeAKids +1</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="DeejayTV.it" site_id="DTH#462">Deejay TV</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="DiscoveryChannel.it@HD" site_id="DTH#9059">Discovery HD</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="DiscoveryChannel.it@Plus1" site_id="DTH#331">Discovery +1</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="EQUtv.it" site_id="DTH#8293">EQUtv</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="EmiliaRomagna24.it" site_id="DTH#10615">Emilia Romagna 24</channel>
-  <channel site="guidatv.sky.it" lang="en" xmltv_id="EuronewsEnglish.fr" site_id="DTH#801">Euronews</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="Eurosport1.fr@Italy" site_id="DTH#9057">Eurosport HD</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="Eurosport2.fr@Italy" site_id="DTH#9060">Eurosport 2 HD</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="ExplorerHDChannel.it" site_id="DTH#11262">Explorer HD Channel</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="FashionTVEurope.fr" site_id="DTH#810">Fashion TV</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="Focus.it@HD" site_id="DTH#10470">Focus HD</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="FoodNetwork.it@HD" site_id="DTH#10534">Food Network HD</channel>
-  <channel site="guidatv.sky.it" lang="en" xmltv_id="FoxBusinessNetwork.us" site_id="DTH#6741">Fox Business</channel>
-  <channel site="guidatv.sky.it" lang="en" xmltv_id="FoxNewsChannel.us" site_id="DTH#446">Fox News</channel>
-  <channel site="guidatv.sky.it" lang="en" xmltv_id="France24.fr@EnglishHD" site_id="DTH#7968">France 24 English HD</channel>
-  <channel site="guidatv.sky.it" lang="fr" xmltv_id="France24.fr@FrenchHD" site_id="DTH#5119">France 24 Francais HD</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="Frisbee.it" site_id="DTH#6610">-frisbee-</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="GamberoRossoChannel.it@HD" site_id="DTH#9099">Gambero Rosso HD</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="GamberoRossoChannel.it@HD" site_id="DTH#11055">Gambero Rosso HD</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="Giallo.it@HD" site_id="DTH#8131">GIALLO HD</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="HGTV.it@HD" site_id="DTH#11154">HGTV HD</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="History.it@HD" site_id="DTH#9101">History HD</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="History.it@Plus1" site_id="DTH#123">History +1</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="HorseTVHD.it" site_id="DTH#6611">Horse TV HD</channel>
-  <channel site="guidatv.sky.it" lang="en" xmltv_id="i24NEWSEnglishWorld.il" site_id="DTH#8273">i24news</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="InterTV.it" site_id="DTH#9893">Inter TV</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="Iris.it@HD" site_id="DTH#10467">Iris HD</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="Italia1.it@HD" site_id="DTH#10454">Italia 1 HD</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="Italia2.it@HD" site_id="DTH#10469">Mediaset Italia2 HD</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="K2.it" site_id="DTH#6240">K2</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="LA7d.it" site_id="DTH#6624">LA7D</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="LA7d.it@HD" site_id="DTH#319">LA7 HD</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="La5.it@HD" site_id="DTH#10466">La 5 HD</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="LazioStyleChannel.it@HD" site_id="DTH#7527">Lazio Style HD</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="MTV.it@HD" site_id="DTH#9195">MTV HD</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="MTVMusic.it" site_id="DTH#528">MTV Music</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="MTVMusic.it" site_id="DTH#11054">MTV Music</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="MediasetExtra.it@HD" site_id="DTH#10465">Mediaset Extra HD</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="MilanTV.it" site_id="DTH#9513">Milan TV</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="MotorTrend.it@HD" site_id="DTH#8130">Motor Trend HD</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="NickJr.it" site_id="DTH#461">Nick Jr</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="NickJr.it@Plus1" site_id="DTH#6701">Nick Jr +1</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="GamberoRosso.it" site_id="DTH#228">Gambero Rosso</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="History.it" site_id="DTH#513">History</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="Italia1.it" site_id="DTH#5459">Italia 1</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="LA7.it" site_id="DTH#407">LA7</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="MTV.it" site_id="DTH#763">MTV</channel>
   <channel site="guidatv.sky.it" lang="it" xmltv_id="Nickelodeon.it" site_id="DTH#320">Nickelodeon</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="Nickelodeon.it@Plus1" site_id="DTH#6140">Nickelodeon +1</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="Nove.it@HD" site_id="DTH#9753">NOVE HD</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="PescaeCaccia.it" site_id="DTH#6220">Caccia e PESCA</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="QVC.it" site_id="DTH#6626">QVC</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="RTL1025TV.it@HD" site_id="DTH#6885">RTL 102.5 HD</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="RadioItaliaTV.it@HD" site_id="DTH#9833">Radio Italia TV HD</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="RadioItaliaTrendTVHD.it" site_id="DTH#10033">Radio Italia Trend Tv HD</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="RadioMonteCarloTV.it" site_id="DTH#10993">Radio Monte Carlo</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="RadioNorbaTV.it" site_id="DTH#8213">RADIONORBA TV</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="Radiofreccia.it@HD" site_id="DTH#10616">RADIOFRECCIA HD</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="Rai1.it@HD" site_id="DTH#899">Rai 1 HD</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="Rai2.it@HD" site_id="DTH#898">Rai 2 HD</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="Rai3.it@HD" site_id="DTH#897">Rai 3 HD</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="Rai4.it" site_id="DTH#6622">Rai 4</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="Rai5.it" site_id="DTH#6607">Rai 5</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="RaiGulp.it" site_id="DTH#6629">Rai Gulp</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="RaiMovie.it" site_id="DTH#6608">Rai Movie</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="RaiNews24.it" site_id="DTH#895">Rai News 24</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="RaiPremium.it" site_id="DTH#6623">Rai Premium</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="RaiSport.it" site_id="DTH#807">RAI Sport</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="RaiStoria.it" site_id="DTH#6630">Rai Storia</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="RaiYoyo.it" site_id="DTH#6609">Rai Yoyo</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="RealTime.it@HD" site_id="DTH#8173">Real Time HD</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="Rete4.it@HD" site_id="DTH#10464">Rete 4 HD</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="SanMarinoRTV.sm" site_id="DTH#6861">San Marino RTV</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyArteHD.it" site_id="DTH#7767">Sky Arte</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyArteHD.it" site_id="DTH#8473">Sky Arte</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyArtePlus1HD.it" site_id="DTH#11276">Sky Arte +1</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyArtePlus1HD.it" site_id="DTH#11277">Sky Arte +1</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyAtlantic.it" site_id="DTH#9095">Sky Atlantic</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyCinemaAction.it" site_id="DTH#9050">Sky Cinema Action</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyCinemaComedy.it" site_id="DTH#9039">Sky Cinema Comedy</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyCinemaDrama.it" site_id="DTH#10518">Sky Cinema Drama</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyCinemaDue.it" site_id="DTH#9034">Sky Cinema Due</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyCinemaDuePlus24.it" site_id="DTH#10517">Sky Cinema Due +24</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyCinemaFamily.it" site_id="DTH#9042">Sky Cinema Family</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyCinemaRomance.it" site_id="DTH#9055">Sky Cinema Romance</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyCinemaSuspense.it" site_id="DTH#10515">Sky Cinema Suspense</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyCinemaUno.it" site_id="DTH#9044">Sky Cinema Uno</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyCinemaUno.it@Plus24" site_id="DTH#9037">Sky Cinema Uno +24</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyDocumentaries.it" site_id="DTH#11239">Sky Documentaries</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyDocumentaries.it" site_id="DTH#11241">Sky Documentaries</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyDocumentaries.it@Plus1" site_id="DTH#11240">Sky Documentaries +1</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyDocumentaries.it@Plus1" site_id="DTH#11243">Sky Documentaries +1</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyInvestigation.it" site_id="DTH#11246">Sky Investigation</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyInvestigation.it@Plus1" site_id="DTH#11238">Sky Investigation +1 HD</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyMeteo24.it" site_id="DTH#321">Sky Meteo24</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyNature.it" site_id="DTH#11242">Sky Nature</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyNature.it" site_id="DTH#11245">Sky Nature</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkySerie.it" site_id="DTH#11244">Sky Serie</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkySport4K.it" site_id="DTH#10013">Sky Sport 4K</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkySport8.it" site_id="DTH#11386">Sky Sport</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkySport9.it" site_id="DTH#9046">Sky Sport</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkySport10.it" site_id="DTH#8613">Sky Sport</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkySport11.it" site_id="DTH#615">Sky Sport</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkySport24.it" site_id="DTH#929">Sky Sport24</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkySportArena.it" site_id="DTH#7507">Sky Sport Arena</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkySportCalcio.it" site_id="DTH#9113">Sky Sport Calcio</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkySportF1.it" site_id="DTH#9096">Sky Sport F1</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkySportGolf.it" site_id="DTH#10254">Sky Sport Golf</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkySportMax.it" site_id="DTH#9103">Sky Sport Max</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkySportMotoGP.it" site_id="DTH#8434">Sky Sport MotoGP</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkySportNBA.it" site_id="DTH#8753">Sky Sport NBA</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkySportTennis.it" site_id="DTH#11237">Sky Sport Tennis</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkySportUno.it" site_id="DTH#8714">Sky Sport Uno</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyTG24PrimoPiano.it" site_id="DTH#6510">TG24PrimoPiano</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyTG24.it" site_id="DTH#9117">Sky TG24</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyUno.it" site_id="DTH#9115">Sky Uno</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyUno.it@Plus1" site_id="DTH#9114">Sky Uno +1</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="Super.it" site_id="DTH#6460">Super!</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="SuperTennis.it@HD" site_id="DTH#6000">SuperTennis HD</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="TGNorba24.it" site_id="DTH#6481">TG NORBA 24</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="TGCom24.it@HD" site_id="DTH#10473">TgCom24 HD</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="TRMh24.it" site_id="DTH#9013">TRM h24</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="TV8.it@HD" site_id="DTH#8195">TV8 HD</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="TV2000.it@HD" site_id="DTH#7588">TV2000 HD</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="TopCrime.it@HD" site_id="DTH#10468">TOPcrime HD</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="Twentyseven.it@HD" site_id="DTH#11342">27Twentyseven HD</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="VH1.it@HD" site_id="DTH#10918">VH1 HD</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="VirginRadioTV.it" site_id="DTH#11344">Virgin Radio</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="ZonaDAZN2.it" site_id="DTH#11401">ZONA DAZN 2</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="ZonaDAZN3.it" site_id="DTH#11403">ZONA DAZN 3</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="ZonaDAZN4.it" site_id="DTH#11405">ZONA DAZN 4</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="ZonaDAZN5.it" site_id="DTH#11404">ZONA DAZN 5</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="ZonaDAZN.it" site_id="DTH#11402">ZONA DAZN</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="NickJr.it" site_id="DTH#424">Nick Jr</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="Rai1.it" site_id="DTH#899">Rai 1</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="Rai2.it" site_id="DTH#898">Rai 2</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="Rai3.it" site_id="DTH#897">Rai 3</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="Rete4.it" site_id="DTH#5464">Rete 4</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyAdventure.it" site_id="DTH#961">Sky Adventure</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyArte.it" site_id="DTH#74">Sky Arte</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyAtlantic.it" site_id="DTH#226">Sky Atlantic</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyCinemaAction.it" site_id="DTH#206">Sky Cinema Action</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyCinemaCollection.it" site_id="DTH#204">Sky Cinema Collection</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyCinemaComedy.it" site_id="DTH#30">Sky Cinema Comedy</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyCinemaDrama.it" site_id="DTH#769">Sky Cinema Drama</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyCinemaDue.it" site_id="DTH#564">Sky Cinema Due</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyCinemaFamily.it" site_id="DTH#255">Sky Cinema Family</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyCinemaRomance.it" site_id="DTH#231">Sky Cinema Romance</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyCinemaSuspense.it" site_id="DTH#47">Sky Cinema Suspense</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyCinemaUno.it" site_id="DTH#202">Sky Cinema Uno</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyCrime.it" site_id="DTH#249">Sky Crime</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyDocumentaries.it" site_id="DTH#697">Sky Documentaries</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyInvestigation.it" site_id="DTH#686">Sky Investigation</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyNature.it" site_id="DTH#695">Sky Nature</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkySerie.it" site_id="DTH#684">Sky Serie</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkySport24.it" site_id="DTH#35">Sky Sport24</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkySport251.it" site_id="DTH#917">Sky Sport 251</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkySport252.it" site_id="DTH#951">Sky Sport 252</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkySport253.it" site_id="DTH#233">Sky Sport 253</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkySport254.it" site_id="DTH#234">Sky Sport 254</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkySport255.it" site_id="DTH#910">Sky Sport 255</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkySport256.it" site_id="DTH#912">Sky Sport 256</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkySport257.it" site_id="DTH#775">Sky Sport 257</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkySport258.it" site_id="DTH#772">Sky Sport 258</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkySport259.it" site_id="DTH#613">Sky Sport 259</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkySportArena.it" site_id="DTH#24">Sky Sport Arena</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkySportCalcio.it" site_id="DTH#209">Sky Sport Calcio</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkySportF1.it" site_id="DTH#478">Sky Sport F1</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkySportGolf.it" site_id="DTH#768">Sky Sport Golf</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkySportLegend.it" site_id="DTH#578">Sky Sport Legend</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkySportMax.it" site_id="DTH#248">Sky Sport Max</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkySportMix.it" site_id="DTH#579">Sky Sport Mix</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkySportMotoGP.it" site_id="DTH#483">Sky Sport MotoGP</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkySportNBA.it" site_id="DTH#764">Sky Sport Basket</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkySportTennis.it" site_id="DTH#559">Sky Sport Tennis</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkySportUno.it" site_id="DTH#23">Sky Sport Uno</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyTG24.it" site_id="DTH#519">Sky TG24</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyUno.it" site_id="DTH#477">Sky Uno</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="SuperTennis.it" site_id="DTH#5246">SuperTennis</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="TV8.it" site_id="DTH#260">TV8</channel>
 </channels>
