@@ -2,22 +2,28 @@ const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
-const doFetch = require('@ntlab/sfetch')
 const debug = require('debug')('site:tvguide.com')
 
 dayjs.extend(utc)
 dayjs.extend(timezone)
 
-doFetch.setDebugger(debug).setCheckResult(false)
-
 const providerId = '9100001138'
 const maxDuration = 240
 const segments = 1440 / maxDuration
+const headers = {
+  'referer': 'https://www.tvguide.com/',
+  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36',
+}
 
 module.exports = {
   site: 'tvguide.com',
   days: 2,
   request: {
+    headers: function () {
+      return headers
+    },
+    responseType: 'application/json',
+    decompress: true,
     cache: {
       ttl: 24 * 60 * 60 * 1000 // 1 day
     }
@@ -40,7 +46,7 @@ module.exports = {
       `https://backend.tvguide.com/tvschedules/tvguide/${providerId}/web?${params.join('&')}` :
       `https://backend.tvguide.com/tvschedules/tvguide/serviceprovider/${providerId}/sources/web?${params.join('&')}`
   },
-  async parser({ content, date, channel }) {
+  async parser({ content, date, channel, fetchSegments = true }) {
     const programs = []
     const f = data => {
       const result = []
@@ -60,55 +66,66 @@ module.exports = {
       return result
     }
     const queues = f(content)
-    if (queues.length) {
-      const parts = []
-      for (let i = 2; i <= segments; i++) {
-        parts.push(await module.exports.url({ date, segment: i }))
+    if (queues.length && fetchSegments) {
+      for (let segment = 2; segment <= segments; segment++) {
+        const segmentUrl = await module.exports.url({ date, segment })
+        debug(`fetch segment ${segment}: ${segmentUrl}`)
+        try {
+          const res = await axios.get(segmentUrl, { headers })
+          queues.push(...f(res.data))
+        } catch (err) {
+          debug(`Failed to fetch segment ${segment}: ${err.message}`)
+        }
       }
-      await doFetch(parts, (url, res) => {
-        queues.push(...f(res))
-      })
-      await doFetch(queues, (queue, res) => {
-        const item = res?.data?.item ? res.data.item : queue.i 
+    }
+    for (const queue of queues) {
+      try {
+        const res = await axios.get(queue.url, { headers })
+        const item = res.data?.data?.item || queue.i
         programs.push({
-          title: item.title ? item.title : queue.i.title,
+          title: item.title || queue.i.title,
           sub_title: item.episodeNumber ? item.episodeTitle : null,
           description: item.description,
           season: item.seasonNumber,
           episode: item.episodeNumber,
           rating: item.rating ? { system: 'MPA', value: item.rating } : null,
           categories: Array.isArray(item.genres) ? item.genres.map(g => g.name) : null,
-          start: dayjs.unix(item.startTime ? item.startTime : queue.i.startTime),
-          stop: dayjs.unix(item.endTime ? item.endTime : queue.i.endTime)
+          start: dayjs.unix(item.startTime || queue.i.startTime),
+          stop: dayjs.unix(item.endTime || queue.i.endTime),
         })
-      })
+      } catch (err) {
+        debug(`Failed to fetch program details ${queue.url}: ${err.message}`)
+      }
     }
-
     return programs
   },
   async channels() {
     const channels = []
-    const data = await axios
-      .get(await this.url({}))
-      .then(r => r.data)
-      .catch(console.error)
-
-    data.data.items.forEach(item => {
-      channels.push({
-        lang: 'en',
-        site_id: item.sourceId,
-        name: item.fullName.replace(/Channel|Schedule/g, '').trim()
+    try {
+      const data = await axios
+        .get(await this.url({}), { headers })
+        .then(r => r.data)
+      data.data.items.forEach(item => {
+        channels.push({
+          lang: 'en',
+          site_id: item.sourceId,
+          name: item.fullName.replace(/Channel|Schedule/g, '').trim()
+        })
       })
-    })
-
+    } catch (err) {
+      console.error('Failed to fetch channels:', err.message)
+    }
     return channels
   },
   async fetchApiKey() {
-    const data = await axios
-      .get('https://www.tvguide.com/listings/')
-      .then(r => r.data)
-      .catch(console.error)
-
-    return data ? data.match(/apiKey=([a-zA-Z0-9]+)&/)[1] : null
+    try {
+      const data = await axios
+        .get('https://www.tvguide.com/listings/')
+        .then(r => r.data)
+      return data ? data.match(/apiKey=([a-zA-Z0-9]+)&/)[1] : null
+    } catch (err) {
+      console.error('Failed to fetch API key:', err.message)
+      return null
+    }
   }
 }
