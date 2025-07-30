@@ -38,6 +38,6 @@ it('can parse response', () => {
 })
 
 it('can handle empty guide', () => {
-  const result = parser({content: ''}, channel)
+  const result = parser({content: fs.readFileSync(path.resolve(__dirname, '__data__/no_content.json'))}, channel)
   expect(result).toMatchObject([])
 })

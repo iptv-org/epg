@@ -2,6 +2,8 @@ const { parser, url } = require('./allente.dk.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
+const { readFileSync } = require('fs')
+const { resolve } = require('path')
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
@@ -16,8 +18,7 @@ it('can generate valid url', () => {
 })
 
 it('can parse response', () => {
-  const content =
-    ''
+  const content = readFileSync(resolve(__dirname, '__data__/content.json'))
   const result = parser({ content, channel }).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
