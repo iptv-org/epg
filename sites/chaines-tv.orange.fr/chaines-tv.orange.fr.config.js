@@ -28,7 +28,7 @@ module.exports = {
 			})
 		  itemDetails = response.data
         } catch (err) {
-          console.error(`Erreur lors du fetch des détails pour l'item: ${url}`, err)
+          console.error(`Error fetching details for item: ${url}`, err)
         }
   	  }
       
