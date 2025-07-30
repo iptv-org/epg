@@ -51,25 +51,49 @@ module.exports = {
     return programs
   },
   async channels() {
-    const html = await axios
-      .get('https://chaines-tv.orange.fr/programme-tv?filtres=all')
+    const token = await getTVToken()
+    const json = await axios
+      .get('https://mediation-tv.orange.fr/all/api-gw/bff-live-player-rights/v1/auth/accountToken/livePlayerRights?customerOrangePopulation=OTT_Metro&deviceCategory=W_PC',{
+        headers: {'tv_token': 'Bearer ' + token, 
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36'
+        }})
       .then(r => r.data)
       .catch(console.log)
 
-    const [, nuxtFunc] = html.match(/window\.__NUXT__=([^<]+)/) || [null, null]
-    const func = new Function(`"use strict";return ${nuxtFunc}`)
-
-    const data = func()
-    const items = data.state.channels.channels
+    const data = json
+    const items = data.channels
 
     return items.map(item => {
       return {
         lang: 'fr',
-        site_id: item.idEPG,
-        name: item.name
+        site_id: item.epgId,
+        name: item.name,
+        logo: encodeURIComponent(item.logos[0]?.logoImageUrl)
       }
     })
   }
+}
+
+async function getTVToken() {
+    try {
+        const response = await axios.get('https://tv.orange.fr/')
+        const html = response.data
+        
+        // Look for window.__pinia = {...} specifically
+        const match = html.match(/window\.__pinia\s*=\s*({[^;]+})/)
+        
+        if (!match) {
+            console.log('__pinia pattern not found')
+            return null
+        }
+        
+        const [, piniaData] = match
+        const data = JSON.parse(piniaData)
+        return data.authStore?.authInitEw?.token
+    } catch (error) {
+        console.error('Error:', error)
+        return null
+    }
 }
 
 function parseDetailURL(item) {
