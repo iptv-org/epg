@@ -3,7 +3,7 @@ const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
 const parseDuration = require('parse-duration').default
 const timezone = require('dayjs/plugin/timezone')
-const { sortBy } = require('../../scripts/functions')
+const sortBy = require('lodash.sortby')
 
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)

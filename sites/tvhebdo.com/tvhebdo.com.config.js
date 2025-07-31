@@ -1,7 +1,7 @@
 const cheerio = require('cheerio')
 const axios = require('axios')
 const { DateTime } = require('luxon')
-const { uniqBy } = require('../../scripts/functions')
+const uniqBy = require('lodash.uniqby')
 
 module.exports = {
   site: 'tvhebdo.com',

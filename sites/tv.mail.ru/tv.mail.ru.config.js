@@ -1,6 +1,6 @@
 const { DateTime } = require('luxon')
 const axios = require('axios')
-const { uniqBy } = require('../../scripts/functions')
+const uniqBy = require('lodash.uniqby')
 
 module.exports = {
   site: 'tv.mail.ru',

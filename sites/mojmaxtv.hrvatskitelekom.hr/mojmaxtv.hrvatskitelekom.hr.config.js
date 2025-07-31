@@ -2,7 +2,7 @@ const doFetch = require('@ntlab/sfetch')
 const axios = require('axios')
 const dayjs = require('dayjs')
 const crypto = require('crypto')
-const { sortBy } = require('../../scripts/functions')
+const sortBy = require('lodash.sortby')
 
 // API Configuration Constants
 const NATCO_CODE = 'hr'

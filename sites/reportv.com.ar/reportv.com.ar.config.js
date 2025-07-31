@@ -5,7 +5,7 @@ const cheerio = require('cheerio')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
-const { startCase } = require('../../scripts/functions')
+const startCase = require('lodash.startcase')
 
 dayjs.extend(utc)
 dayjs.extend(timezone)

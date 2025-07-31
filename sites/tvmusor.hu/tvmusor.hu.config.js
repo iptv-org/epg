@@ -1,6 +1,6 @@
 const axios = require('axios')
 const dayjs = require('dayjs')
-const { uniqBy } = require('../../scripts/functions')
+const uniqBy = require('lodash.uniqby')
 
 module.exports = {
   site: 'tvmusor.hu',

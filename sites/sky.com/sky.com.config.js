@@ -3,7 +3,7 @@ const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const doFetch = require('@ntlab/sfetch')
 const debug = require('debug')('site:sky.com')
-const { sortBy } = require('../../scripts/functions')
+const sortBy = require('lodash.sortby')
 
 dayjs.extend(utc)
 
