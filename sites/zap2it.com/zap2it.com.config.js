@@ -34,7 +34,7 @@ module.exports = {
         postalCode,
         device,
         userId: '-',
-        aid: 'gapzap',
+        aid: 'orbebb',
         DSTUTCOffset: '-240',
         STDUTCOffset: '-300',
         DSTStart: '2025-03-09T02:00Z',
