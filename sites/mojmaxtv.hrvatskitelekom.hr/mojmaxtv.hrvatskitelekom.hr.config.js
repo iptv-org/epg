@@ -1,8 +1,8 @@
 const doFetch = require('@ntlab/sfetch')
 const axios = require('axios')
 const dayjs = require('dayjs')
-const _ = require('lodash')
 const crypto = require('crypto')
+const sortBy = require('lodash.sortby')
 
 // API Configuration Constants
 const NATCO_CODE = 'hr'
@@ -86,7 +86,7 @@ module.exports = {
       }
     })
 
-    items = _.sortBy(items, i => dayjs(i.start_time).valueOf())
+    items = sortBy(items, i => dayjs(i.start_time).valueOf())
 
     // Fetch program details for each item
     const programs = []

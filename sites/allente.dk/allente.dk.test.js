@@ -2,6 +2,8 @@ const { parser, url } = require('./allente.dk.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
+const { readFileSync } = require('fs')
+const { resolve } = require('path')
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
@@ -16,8 +18,7 @@ it('can generate valid url', () => {
 })
 
 it('can parse response', () => {
-  const content =
-    '{"channels":[{"id":"0148","icon":"//images.ctfassets.net/989y85n5kcxs/5uT9g9pdQWRZeDPQXVI9g6/9cc44da567f591822ed645c99ecdcb64/SVT_1_black_new__2_.png","name":"SVT1 HD (T)","events":[{"id":"0086202208220710","live":false,"time":"2022-08-22T07:10:00Z","title":"Hemmagympa med Sofia","details":{"title":"Hemmagympa med Sofia","image":"https://viasatps.api.comspace.se/PS/channeldate/image/viasat.ps/21/2022-08-22/se.cs.svt1.event.A_41214031600.jpg?size=2560x1440","description":"Svenskt träningsprogram från 2021. Styrka. Sofia Åhman leder SVT:s hemmagympapass. Denna gång fokuserar vi på styrka.","season":4,"episode":1,"categories":["other"],"duration":"20"}}]}]}'
+  const content = readFileSync(resolve(__dirname, '__data__/content.json'))
   const result = parser({ content, channel }).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()

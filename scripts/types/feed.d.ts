@@ -1,6 +1,6 @@
 import { Collection } from '@freearhey/core'
 
-export type FeedData = {
+export interface FeedData {
   channel: string
   id: string
   name: string

@@ -87,7 +87,7 @@ export class Feed {
 
   getLogos(): Collection {
     function format(logo: Logo): number {
-      const levelByFormat: { [key: string]: number } = {
+      const levelByFormat: Record<string, number> = {
         SVG: 0,
         PNG: 3,
         APNG: 1,

@@ -1,4 +1,6 @@
 const { parser, url } = require('./galamtv.kz.config.js')
+const fs = require('fs')
+const path = require('path')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -21,28 +23,7 @@ it('can generate valid url', () => {
 })
 
 it('can parse response', () => {
-  const content = JSON.stringify({
-    programs: [
-      {
-        metaInfo: {
-          title: 'Гимн',
-          description: 'Государственный гимн Республики Казахстан'
-        },
-        scheduleInfo: {
-          start: 1736470800,
-          end: 1736471100
-        },
-        mediaInfo: {
-          thumbnails: [
-            {
-              url: 'http://galam.server-img.lfstrm.tv:80/image/aHR0cDovL2dhbGFtLmltZy1vcmlnaW5hbHMubGZzdHJtLnR2OjgwL3R2aW1hZ2VzL3RodW1iL2YyNWFmYWY2ZDkzYjU5YjdkMjBiZDNiODhiZjg4NWI0X29yaWcuanBn'
-            }
-          ]
-        }
-      }
-    ]
-  })
-
+  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'))
   const result = parser({ content, channel }).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
@@ -65,7 +46,7 @@ it('can handle empty guide', () => {
   const result = parser({
     date,
     channel,
-    content: '{"programs":[]}'
+    content: fs.readFileSync(path.resolve(__dirname, '__data__/no_content.json'))
   })
   expect(result).toMatchObject([])
 })

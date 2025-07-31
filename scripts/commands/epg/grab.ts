@@ -48,7 +48,7 @@ program
   .addOption(new Option('--curl', 'Display each request as CURL').default(false).env('CURL'))
   .parse()
 
-export type GrabOptions = {
+export interface GrabOptions {
   site?: string
   channels?: string
   output: string

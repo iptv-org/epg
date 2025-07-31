@@ -1,6 +1,6 @@
 import { execSync } from 'child_process'
 
-type ExecError = {
+interface ExecError {
   status: number
   stdout: string
 }

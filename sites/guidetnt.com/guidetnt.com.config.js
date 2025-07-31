@@ -19,11 +19,11 @@ module.exports = {
     const now = dayjs()
     const demain = now.add(1, 'd')
     if (date && date.isSame(demain, 'day')) {
-        return `https://www.guidetnt.com/tv-demain/programme-${channel.site_id}`
+      return `https://www.guidetnt.com/tv-demain/programme-${channel.site_id}`
     } else if (!date || date.isSame(now, 'day')) {
-        return `https://www.guidetnt.com/tv/programme-${channel.site_id}`
+      return `https://www.guidetnt.com/tv/programme-${channel.site_id}`
     } else {
-        return null
+      return null
     }
   },
   async parser({ content, date }) {
@@ -57,8 +57,8 @@ module.exports = {
       let category = parseCategory($item)
       let description = parseDescription($item)
       const itemDetailsURL = parseDescriptionURL($item)
-      if(itemDetailsURL) {
-      	const url = 'https://www.guidetnt.com' + itemDetailsURL
+      if (itemDetailsURL) {
+        const url = 'https://www.guidetnt.com' + itemDetailsURL
         try {
           const response = await axios.get(url)
           itemDetails = parseItemDetails(response.data)
@@ -66,21 +66,21 @@ module.exports = {
           console.error(`Erreur lors du fetch des détails pour l'item: ${url}`, err)
         }
 
-         const timeRange = parseTimeRange(itemDetails?.programHour, date.format('YYYY-MM-DD'))
-         start = timeRange?.start
-         stop = timeRange?.stop
+        const timeRange = parseTimeRange(itemDetails?.programHour, date.format('YYYY-MM-DD'))
+        start = timeRange?.start
+        stop = timeRange?.stop
 
-         subTitle = itemDetails?.subTitle
-         if (title == subTitle) subTitle = null
-         description = itemDetails?.description
+        subTitle = itemDetails?.subTitle
+        if (title == subTitle) subTitle = null
+        description = itemDetails?.description
 
-         const categoryDetails = parseCategoryText(itemDetails?.category)
-         //duration = categoryDetails?.duration
-         country = categoryDetails?.country
-         productionDate = categoryDetails?.productionDate
-         season = categoryDetails?.season
-         episode = categoryDetails?.episode
-       }
+        const categoryDetails = parseCategoryText(itemDetails?.category)
+        //duration = categoryDetails?.duration
+        country = categoryDetails?.country
+        productionDate = categoryDetails?.productionDate
+        season = categoryDetails?.season
+        episode = categoryDetails?.episode
+      }
       // See https://www.npmjs.com/package/epg-parser for parameters
       programs.push({
         title,
@@ -110,119 +110,124 @@ module.exports = {
     // Look inside each .tvlogo container
     $('.tvlogo').each((i, el) => {
       // Find all descendants that have an alt attribute
-      $(el).find('[alt]').each((j, subEl) => {
-        const alt = $(subEl).attr('alt')
-        const href = $(subEl).attr('href')
-        if (href && alt && alt.trim() !== '') {
-          const name = alt.trim()
-          const site_id = href.replace(/^\/tv\/programme-/, '')
-          channels.push({
-            lang: 'fr',
-            name,
-            site_id
-          })
-        }
-      })
+      $(el)
+        .find('[alt]')
+        .each((j, subEl) => {
+          const alt = $(subEl).attr('alt')
+          const href = $(subEl).attr('href')
+          if (href && alt && alt.trim() !== '') {
+            const name = alt.trim()
+            const site_id = href.replace(/^\/tv\/programme-/, '')
+            channels.push({
+              lang: 'fr',
+              name,
+              site_id
+            })
+          }
+        })
     })
     return channels
   }
 }
 
 function parseTimeRange(timeRange, baseDate) {
-    // Split times
-    const [startStr, endStr] = timeRange.split(' - ').map(s => s.trim())
+  // Split times
+  const [startStr, endStr] = timeRange.split(' - ').map(s => s.trim())
 
-    // Parse with base date
-    const start = dayjs(`${baseDate} ${startStr}`, 'YYYY-MM-DD HH:mm')
-    let end = dayjs(`${baseDate} ${endStr}`, 'YYYY-MM-DD HH:mm')
+  // Parse with base date
+  const start = dayjs(`${baseDate} ${startStr}`, 'YYYY-MM-DD HH:mm')
+  let end = dayjs(`${baseDate} ${endStr}`, 'YYYY-MM-DD HH:mm')
 
-    // Handle possible day wrap (e.g., 23:30 - 00:15)
-    if (end.isBefore(start)) {
-          end = end.add(1, 'day')
-    }
+  // Handle possible day wrap (e.g., 23:30 - 00:15)
+  if (end.isBefore(start)) {
+    end = end.add(1, 'day')
+  }
 
-    // Calculate duration in minutes
-    const diffMinutes = end.diff(start, 'minute')
+  // Calculate duration in minutes
+  const diffMinutes = end.diff(start, 'minute')
 
-    return {
-        start: start.format(),
-        stop: end.format(),
-        duration: diffMinutes
-    }
+  return {
+    start: start.format(),
+    stop: end.format(),
+    duration: diffMinutes
+  }
 }
 
 function parseItemDetails(itemDetails) {
-    const $ = cheerio.load(itemDetails)
+  const $ = cheerio.load(itemDetails)
 
-    const program = $('.program-wrapper').first()
+  const program = $('.program-wrapper').first()
 
-    const programHour = program.find('.program-hour').text().trim()
-    const programTitle = program.find('.program-title').text().trim()
-    const programElementBold = program.find('.program-element-bold').text().trim()
-    const programArea1 = program.find('.program-element.program-area-1').text().trim()
+  const programHour = program.find('.program-hour').text().trim()
+  const programTitle = program.find('.program-title').text().trim()
+  const programElementBold = program.find('.program-element-bold').text().trim()
+  const programArea1 = program.find('.program-element.program-area-1').text().trim()
 
-    let description = ''
-    const programElements = $('.program-element').filter((i, el) => {
-        const classAttr = $(el).attr('class')
-        // Return true only if it is exactly "program-element" (no extra classes)
-        return classAttr.trim() === 'program-element'
-    })
+  let description = ''
+  const programElements = $('.program-element').filter((i, el) => {
+    const classAttr = $(el).attr('class')
+    // Return true only if it is exactly "program-element" (no extra classes)
+    return classAttr.trim() === 'program-element'
+  })
 
-    programElements.each((i, el) => {
-          description += $(el).text().trim()
-    })
+  programElements.each((i, el) => {
+    description += $(el).text().trim()
+  })
 
-    const area2Node = $('.program-area-2').first()
-    const area2 = $(area2Node)
-    const data = {}
-    let currentLabel = null
-    let texts = []
+  const area2Node = $('.program-area-2').first()
+  const area2 = $(area2Node)
+  const data = {}
+  let currentLabel = null
+  let texts = []
 
-    area2.contents().each((i, node) => {
-      if (node.type === 'tag' && node.name === 'strong') {
-        // If we had collected some text for the previous label, save it
-        if (currentLabel && texts.length) {
-              data[currentLabel] = texts.join('').trim().replace(/,\s*$/, '') // Remove trailing comma
-        }
-        // New label - get text without colon
-        currentLabel = $(node).text().replace(/:$/, '').trim()
-        texts = []
-      } else if (currentLabel) {
-        // Append the text content (text node or others)
-        if (node.type === 'text') {
-              texts.push(node.data)
-        } else if (node.type === 'tag' && node.name !== 'strong' && node.name !== 'br') {
-              texts.push($(node).text())
-        }
+  area2.contents().each((i, node) => {
+    if (node.type === 'tag' && node.name === 'strong') {
+      // If we had collected some text for the previous label, save it
+      if (currentLabel && texts.length) {
+        data[currentLabel] = texts.join('').trim().replace(/,\s*$/, '') // Remove trailing comma
+      }
+      // New label - get text without colon
+      currentLabel = $(node).text().replace(/:$/, '').trim()
+      texts = []
+    } else if (currentLabel) {
+      // Append the text content (text node or others)
+      if (node.type === 'text') {
+        texts.push(node.data)
+      } else if (node.type === 'tag' && node.name !== 'strong' && node.name !== 'br') {
+        texts.push($(node).text())
+      }
     }
-    })
+  })
 
-    // Save last label text
-    if (currentLabel && texts.length) {
-          data[currentLabel] = texts.join('').trim().replace(/,\s*$/, '')
-    }
+  // Save last label text
+  if (currentLabel && texts.length) {
+    data[currentLabel] = texts.join('').trim().replace(/,\s*$/, '')
+  }
 
-    const imgSrc = program.find('div[style*="float:left"]')?.find('img')?.attr('src') || null
+  const imgSrc = program.find('div[style*="float:left"]')?.find('img')?.attr('src') || null
 
-    return {
-        programHour,
-        title: programTitle,
-        subTitle: programElementBold,
-        category: programArea1,
-        description: description,
-        directorActors: data,
-        image: imgSrc
-    }
+  return {
+    programHour,
+    title: programTitle,
+    subTitle: programElementBold,
+    category: programArea1,
+    description: description,
+    directorActors: data,
+    image: imgSrc
+  }
 }
 
 function parseCategoryText(text) {
   if (!text) return null
 
-  const parts = text.split(',').map(s => s.trim()).filter(Boolean)
+  const parts = text
+    .split(',')
+    .map(s => s.trim())
+    .filter(Boolean)
   const len = parts.length
 
   const category = parts[0] || null
-  
+
   if (len < 3) {
     return {
       category: category,
@@ -252,18 +257,18 @@ function parseCategoryText(text) {
       //duration = [{ units: 'minutes', value: durationMinute }],
       durationIndex = i
     } else if (parts[i].toLowerCase().includes('épisode')) {
-        const match = text.match(/épisode\s+(\d+)(?:\/(\d+))?/i)
-        if (match) {
-          episode = parseInt(match[1], 10)
-        }
+      const match = text.match(/épisode\s+(\d+)(?:\/(\d+))?/i)
+      if (match) {
+        episode = parseInt(match[1], 10)
+      }
     } else if (parts[i].toLowerCase().includes('saison')) {
-        season = parts[i].replace('saison', '').trim()
+      season = parts[i].replace('saison', '').trim()
     }
   }
 
   // Country: second to last
   const countryIndex = len - 2
-  let country = (durationIndex === countryIndex) ? null : parts[countryIndex]
+  let country = durationIndex === countryIndex ? null : parts[countryIndex]
 
   return {
     category,
@@ -325,9 +330,9 @@ function parseItems(content) {
   const rows = $('.channel-row').toArray()
 
   return {
-      rows,
-      logoSrc,
-      title,
-      formattedDate
+    rows,
+    logoSrc,
+    title,
+    formattedDate
   }
 }

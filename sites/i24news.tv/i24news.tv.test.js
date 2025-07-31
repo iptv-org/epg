@@ -1,4 +1,6 @@
 const { parser, url } = require('./i24news.tv.config.js')
+const fs = require('fs')
+const path = require('path')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -16,8 +18,7 @@ it('can generate valid url', () => {
 })
 
 it('can parse response', () => {
-  const content =
-    '[{"id":348995,"startHour":"22:30","endHour":"23:00","day":5,"firstDiffusion":false,"override":false,"show":{"parsedBody":[{"type":"text","text":"Special Edition"}],"id":131,"title":"تغطية خاصة","body":"Special Edition","slug":"Special-Edition-تغطية-خاصة","visible":true,"image":{"id":1142467,"credit":"","legend":"","href":"https://cdn.i24news.tv/uploads/a1/be/85/20/69/6f/32/1c/ed/b0/f8/5c/f6/1c/40/f9/a1be8520696f321cedb0f85cf61c40f9.png"}}},{"id":349023,"startHour":"15:00","endHour":"15:28","day":6,"firstDiffusion":false,"override":false,"show":{"parsedBody":[{"type":"text","text":"Special Edition"}],"id":131,"title":"تغطية خاصة","body":"Special Edition","slug":"Special-Edition-تغطية-خاصة","visible":true,"image":{"id":1142467,"credit":"","legend":"","href":"https://cdn.i24news.tv/uploads/a1/be/85/20/69/6f/32/1c/ed/b0/f8/5c/f6/1c/40/f9/a1be8520696f321cedb0f85cf61c40f9.png"}}}]'
+  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'))
   const result = parser({ content, date }).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()

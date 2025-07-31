@@ -1,7 +1,7 @@
 import { Collection, DateTime } from '@freearhey/core'
 import { generateXMLTV } from 'epg-grabber'
 
-type GuideData = {
+interface GuideData {
   channels: Collection
   programs: Collection
   filepath: string

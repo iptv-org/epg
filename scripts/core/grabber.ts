@@ -5,7 +5,7 @@ import { GrabOptions } from '../commands/epg/grab'
 import { TaskQueue, PromisyClass } from 'cwait'
 import { SocksProxyAgent } from 'socks-proxy-agent'
 
-type GrabberProps = {
+interface GrabberProps {
   logger: Logger
   queue: Queue
   options: GrabOptions

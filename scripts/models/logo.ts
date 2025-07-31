@@ -7,8 +7,8 @@ export class Logo {
   feedId?: string
   feed?: Feed
   tags: Collection = new Collection()
-  width: number = 0
-  height: number = 0
+  width = 0
+  height = 0
   format?: string
   url?: string
 

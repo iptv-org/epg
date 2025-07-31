@@ -12,7 +12,7 @@ export class Channel {
   subdivisionCode?: string
   cityName?: string
   categoryIds?: Collection
-  isNSFW: boolean = false
+  isNSFW = false
   launched?: string
   closed?: string
   replacedBy?: string
@@ -116,7 +116,7 @@ export class Channel {
     }
 
     function format(logo: Logo): number {
-      const levelByFormat: { [key: string]: number } = {
+      const levelByFormat: Record<string, number> = {
         SVG: 0,
         PNG: 3,
         APNG: 1,

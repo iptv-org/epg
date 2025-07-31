@@ -1,4 +1,6 @@
 const { parser, url } = require('./mysky.com.ph.config.js')
+const fs = require('fs')
+const path = require('path')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -16,8 +18,7 @@ it('can generate valid url', () => {
 })
 
 it('can parse response', () => {
-  const content =
-    '{"events":[{"name":"TV PATROL","location":"8","start":"2022/10/04 19:00","end":"2022/10/04 20:00","userData":{"description":"Description example"}},{"name":"DARNA","location":"8","start":"2022/10/05 20:00","end":"2022/10/05 20:45","userData":{"description":""}},{"name":"Zoe Bakes S1","location":"22","start":"2022/10/04 20:30","end":"2022/10/04 21:00","userData":{"description":"Zo Franois Dad is a beekeeper. So for his birthday, she bakes him a special beehiveshaped cake."}}]}'
+  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'))
   const result = parser({ content, channel, date }).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()

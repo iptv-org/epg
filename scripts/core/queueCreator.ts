@@ -5,7 +5,7 @@ import { ConfigLoader, Queue } from './'
 import { SiteConfig } from 'epg-grabber'
 import path from 'path'
 
-type QueueCreatorProps = {
+interface QueueCreatorProps {
   logger: Logger
   options: GrabOptions
   channels: Collection

@@ -1,4 +1,6 @@
 const { parser, url } = require('./cosmotetv.gr.config.js')
+const fs = require('fs')
+const path = require('path')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -13,29 +15,6 @@ jest.mock('axios')
 const date = dayjs.utc('2024-12-26', 'YYYY-MM-DD').startOf('d')
 const channel = { site_id: 'vouli', xmltv_id: 'HellenicParliamentTV.gr' }
 
-const mockEpgData = {
-  channels: [
-    {
-      items: [
-        {
-          startTime: '2024-12-26T23:00:00+00:00',
-          endTime: '2024-12-27T00:00:00+00:00',
-          title: 'Τι Λέει ο Νόμος',
-          description:
-            'νημερωτική εκπομπή. Συζήτηση με τους εισηγητές των κομμάτων για το νομοθετικό έργο.',
-          qoe: {
-            genre: 'Special'
-          },
-          thumbnails: {
-            standard:
-              'https://gr-ermou-prod-cache05.static.cdn.cosmotetvott.gr/ote-prod/70/280/040029714812000800_1734415727199.jpg'
-          }
-        }
-      ]
-    }
-  ]
-}
-
 it('can generate valid url', () => {
   const startOfDay = dayjs(date).startOf('day').utc().unix()
   const endOfDay = dayjs(date).endOf('day').utc().unix()
@@ -45,7 +24,7 @@ it('can generate valid url', () => {
 })
 
 it('can parse response', () => {
-  const content = JSON.stringify(mockEpgData)
+  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'), 'utf8')
   const result = parser({ date, content }).map(p => {
     p.start = dayjs(p.start).toISOString()
     p.stop = dayjs(p.stop).toISOString()
@@ -70,7 +49,7 @@ it('can handle empty guide', () => {
   const result = parser({
     date,
     channel,
-    content: '{"date":"2024-12-26","categories":[],"channels":[]}'
+    content: fs.readFileSync(path.resolve(__dirname, '__data__/no_content.json'), 'utf8')
   })
   expect(result).toMatchObject([])
 })

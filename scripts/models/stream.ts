@@ -16,8 +16,8 @@ export class Stream {
   isInterlaced?: boolean
   referrer?: string
   userAgent?: string
-  groupTitle: string = 'Undefined'
-  removed: boolean = false
+  groupTitle = 'Undefined'
+  removed = false
 
   constructor(data: StreamData) {
     const id = data.channel && data.feed ? [data.channel, data.feed].join('@') : data.channel

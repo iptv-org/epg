@@ -2,7 +2,7 @@ import { Logger } from '@freearhey/core'
 import { Queue, Grabber, GuideManager } from '.'
 import { GrabOptions } from '../commands/epg/grab'
 
-type JobProps = {
+interface JobProps {
   options: GrabOptions
   logger: Logger
   queue: Queue

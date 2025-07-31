@@ -29,7 +29,7 @@ export class ChannelList {
   }
 
   toString() {
-    function escapeString(value: string, defaultValue: string = '') {
+    function escapeString(value: string, defaultValue = '') {
       if (!value) return defaultValue
 
       const regex = new RegExp(

@@ -2,7 +2,7 @@ import { parseChannels } from 'epg-grabber'
 import { Storage } from '@freearhey/core'
 import { ChannelList } from '../models'
 
-type ChannelsParserProps = {
+interface ChannelsParserProps {
   storage: Storage
 }
 

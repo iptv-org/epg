@@ -9,9 +9,9 @@ import { program } from 'commander'
 import chalk from 'chalk'
 import langs from 'langs'
 
-program.argument('[filepath]', 'Path to *.channels.xml files to validate').parse(process.argv)
+program.argument('[filepath...]', 'Path to *.channels.xml files to validate').parse(process.argv)
 
-type ValidationError = {
+interface ValidationError {
   type: 'duplicate' | 'wrong_channel_id' | 'wrong_feed_id' | 'wrong_lang'
   name: string
   lang?: string

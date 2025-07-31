@@ -1,10 +1,10 @@
 import { Storage } from '@freearhey/core'
 
-export type DataLoaderProps = {
+export interface DataLoaderProps {
   storage: Storage
 }
 
-export type DataLoaderData = {
+export interface DataLoaderData {
   countries: object | object[]
   regions: object | object[]
   subdivisions: object | object[]

@@ -12,7 +12,7 @@ const channel = { site_id: 'msat#ch-11-rtrs' }
 
 it('can generate valid url', () => {
   expect(url({ date, channel })).toBe(
-    'https://mtel.ba/hybris/ecommerce/b2c/v1/products/channels/epg?platform=tv-msat&currentPage=0&pageSize=1000&date=2025-02-04'
+    'https://mtel.ba/hybris/ecommerce/b2c/v1/products/channels/epg?platform=tv-msat&pageSize=999&date=2025-02-04'
   )
 })
 

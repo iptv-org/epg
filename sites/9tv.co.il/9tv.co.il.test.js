@@ -1,4 +1,6 @@
 const { parser, url } = require('./9tv.co.il.config.js')
+const fs = require('fs')
+const path = require('path')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -18,8 +20,7 @@ it('can generate valid url', () => {
 })
 
 it('can parse response', () => {
-  const content =
-    '<li> <a href="#" class="guide_list_link w-inline-block"> <div class="guide_list_time">06:30</div><div class="guide_info_group"> <div class="guide_info_pict" style="background-image: url(/download/pictures/img_id=8484.jpg);"></div><div class="guide_txt_group"> <h3 class="guide_info_title">Слепая</h3> <div>Она не очень любит говорить о себе или о том, кто и зачем к ней обращается. Живет уединенно, в глуши. Но тех, кто приходит -принимает. Она видит судьбы.&#160;</div></div></div></a></li><li> <a href="#" class="guide_list_link even w-inline-block"> <div class="guide_list_time">09:10</div><div class="guide_info_group"> <div class="guide_info_pict" style="background-image: url(/download/pictures/img_id=23694.jpg);"></div><div class="guide_txt_group"> <h3 class="guide_info_title">Орел и решка. Морской сезон</h3> <div>Орел и решка. Морской сезон. Ведущие -Алина Астровская и Коля Серга.</div></div></div></a></li>'
+  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.html'), 'utf8')
   const result = parser({ content, date }).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
@@ -49,7 +50,7 @@ it('can handle empty guide', () => {
   const result = parser({
     date,
     channel,
-    content: '<!DOCTYPE html><html><head></head><body></body></html>'
+    content: fs.readFileSync(path.resolve(__dirname, '__data__/no_content.html'), 'utf8')
   })
   expect(result).toMatchObject([])
 })

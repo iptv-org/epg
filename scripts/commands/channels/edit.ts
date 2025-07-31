@@ -13,8 +13,8 @@ import epgGrabber from 'epg-grabber'
 import { Command } from 'commander'
 import readline from 'readline'
 
-type ChoiceValue = { type: string; value?: Feed | Channel }
-type Choice = { name: string; short?: string; value: ChoiceValue; default?: boolean }
+interface ChoiceValue { type: string; value?: Feed | Channel }
+interface Choice { name: string; short?: string; value: ChoiceValue; default?: boolean }
 
 if (process.platform === 'win32') {
   readline
