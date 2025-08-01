@@ -51,7 +51,7 @@ module.exports = {
       de: { channelsPath: '/de', progsPath: 'de/tvprogramm', lang: 'de' },
       es: { channelsPath: '/es', progsPath: 'es/programacion-tv', lang: 'es' },
       fr: { channelsPath: '/fr', progsPath: 'fr/programme-tv', lang: 'fr' },
-      hr: { channelsPath: '', progsPath: 'tvprogram', lang: 'hr' },
+      hr: { channelsPath: '',    progsPath: 'tvprogram', lang: 'hr' },
       hu: { channelsPath: '/hu', progsPath: 'hu/tvmusor', lang: 'hu' },
       ie: { channelsPath: '/ie', progsPath: 'ie/tvschedule', lang: 'en' },
       it: { channelsPath: '/it', progsPath: 'it/guida-tv', lang: 'it' },
@@ -80,6 +80,12 @@ module.exports = {
         .get(url, {
           params: {
             callback: 'cb'
+          },
+          headers: {
+            'x-requested-with': 'XMLHttpRequest',
+            'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36',
+            'referer': 'https://tvprofil.com/programtv/',
+            'accept': 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
           }
         })
         .then(r => r.data)
@@ -97,6 +103,7 @@ module.exports = {
           channels.push({
             lang,
             site_id: `${config.progsPath}#${item.urlID}`,
+            xmltv_id: `${item.title.replaceAll(/[ '&]/g, '')}.${country}`,
             name: item.title
           })
         })
