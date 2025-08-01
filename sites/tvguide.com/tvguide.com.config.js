@@ -15,6 +15,24 @@ const headers = {
   'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36',
 }
 
+const east_channels = [
+  '5StarMax', 'ABC Network Feed', 'ActionMax', 'A&E', 'AMC', 'Animal Planet', 'BBC America',
+  'BET', 'BET Her', 'Bravo', 'Cartoon Network', 'CBS National', 'Cinemax', 'CMT', 'Comedy Central',
+  'Discovery', 'Disney', 'Disney Junior', 'Disney XD', 'E!', 'Flix', 'Food Network', 'FOX', 'Freeform',
+  'Fuse HD', 'FX', 'FXX', 'FYI', 'Game Show Network', 'Hallmark', 'Hallmark Mystery', 'HBO 2',
+  'HBO Comedy', 'HBO', 'HBO Family', 'HBO Signature', 'HBO Zone', 'HGTV', 'History', 'IFC',
+  'Investigation Discovery', 'ION', 'Lifetime', 'LMN', 'LOGO', 'MAGNOLIA Network', 'MGM+ Hits HD',
+  'MoreMax', 'MovieMax', 'MTV2', 'MTV', 'National Geographic', 'National Geographic Wild', 'NBC National',
+  'Nickelodeon', 'Nick Jr.', 'Nicktoons', 'OuterMax', 'OWN', 'Oxygen', 'Paramount Network', 'PBS HD',
+  'Pop Network', 'SHOWTIME 2', 'Paramount+ with Showtime', 'SHOWTIME EXTREME', 'SHOWTIME FAMILY ZONE',
+  'SHOWTIME NEXT', 'SHOWTIME SHOWCASE', 'SHOWTIME WOMEN', 'SHOxBET', 'Smithsonian', 'STARZ Cinema',
+  'STARZ Comedy', 'STARZ', 'STARZ Edge', 'STARZ ENCORE Action', 'STARZ ENCORE Black',
+  'STARZ ENCORE Classic', 'STARZ ENCORE', 'STARZ ENCORE Family', 'STARZ ENCORE Suspense',
+  'STARZ ENCORE Westerns', 'STARZ InBlack', 'STARZ Kids & Family', 'Sundance TV', 'Syfy', 'tbs',
+  'Turner Classic Movies', 'TeenNick', 'Telemundo', 'The Movie', 'The Movie Xtra', 'ThrillerMax', 'TLC',
+  'TNT', 'Travel', 'truTV', 'TV Land', 'Universal Kids', 'USA', 'VH1', 'WE tv', 'Univision'
+]
+
 module.exports = {
   site: 'tvguide.com',
   days: 2,
@@ -106,10 +124,13 @@ module.exports = {
         .get(await this.url({}), { headers })
         .then(r => r.data)
       data.data.items.forEach(item => {
+        const finalName = item.fullName.replace(/Channel|Schedule/g, '').trim()
+        const isEast = east_channels.some(name => name.toLowerCase().includes(finalName.toLowerCase()))
         channels.push({
           lang: 'en',
           site_id: item.sourceId,
-          name: item.fullName.replace(/Channel|Schedule/g, '').trim()
+          xmltv_id: finalName.replaceAll(/[ '&]/g, '') + '.us' + (isEast ? '@East' : ''),
+          name: finalName
         })
       })
     } catch (err) {
