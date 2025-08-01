@@ -64,9 +64,10 @@ module.exports = {
         const m = src.match(CHANNEL_LOGO_REGEX)
         if (!m) return null
         const id = m[1]
-        let displayName = getDisplayName(id)
-        let xmltvId = displayName.replaceAll(' ', '').replace(/Serbia$/, '.rs')
-        return { site_id: id, lang: this.lang, xmltv_id: xmltvId, name: displayName }
+        const displayName = getDisplayName(id)
+        const xmltvId = displayName.replaceAll(' ', '').replace(/Serbia$/, '.rs')
+        const logourl = `https://www.${this.site}${src}`
+        return { site_id: id, lang: this.lang, xmltv_id: xmltvId, name: displayName, logo: logourl }
       })
       .get()
   }
