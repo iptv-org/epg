@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9200009636">Great American Family</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9233001847">MyNetworkTV National</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9233010939">Hallmark Family</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="5StarMax.us@East" site_id="9233011931">5StarMax</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="ABC.us@East" site_id="9233011874">ABC Network Feed</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="ACCNetwork.us" site_id="9200017734">ACC Network</channel>
@@ -45,11 +42,11 @@
   <channel site="tvguide.com" lang="en" xmltv_id="FanDuelTV.us" site_id="9200012412">FanDuel TV</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="Flix.us@East" site_id="9233000217">Flix</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="FoodNetwork.us@East" site_id="9233009448">Food Network</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="FoxBusinessNetwork.us" site_id="9200009124">Fox Business Network</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="Fox.us@East" site_id="9233002271">FOX</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="FoxBusinessNetwork.us" site_id="9200009124">Fox Business Network</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="FoxNewsChannel.us" site_id="9233000410">Fox News</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="" site_id="9233008440">FOX Sports 1</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="FoxSports2LatinAmerica.us" site_id="9200009884">FOX Sports 2</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="FOXSports1.us" site_id="9233008440">FOX Sports 1</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="FOXSports2.us" site_id="9200009884">FOX Sports 2</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="Freeform.us@East" site_id="9200006942">Freeform</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="Fuse.us@East" site_id="9233011488">Fuse HD</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="FX.us@East" site_id="9200006932">FX</channel>
@@ -58,11 +55,13 @@
   <channel site="tvguide.com" lang="en" xmltv_id="FYI.us@East" site_id="9200020460">FYI</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="GameShowNetwork.us@East" site_id="9200019858">Game Show Network</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="GolfChannel.us" site_id="9233005443">Golf</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="GreatAmericanFamily.us" site_id="9200009636">Great American Family</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="HallmarkChannel.us@East" site_id="9200016034">Hallmark</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="HallmarkFamily.us" site_id="9233010939">Hallmark Family</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="HallmarkMoviesMysteries.us@East" site_id="9233013351">Hallmark Mystery</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="HBO2.us@East" site_id="9233003524">HBO 2</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="HBOComedy.us@East" site_id="9200006981">HBO Comedy</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="HBO.us@East" site_id="9200004886">HBO</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="HBOComedy.us@East" site_id="9200006981">HBO Comedy</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="HBOFamily.us@East" site_id="9200004595">HBO Family</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="HBOSignature.us@East" site_id="9233008160">HBO Signature</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="HBOZone.us@East" site_id="9233009866">HBO Zone</channel>
@@ -87,6 +86,7 @@
   <channel site="tvguide.com" lang="en" xmltv_id="MSNBC.us" site_id="9233006803">MSNBC</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="MTV2.us@East" site_id="9200000872">MTV2</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="MTV.us@East" site_id="9200014754">MTV</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="MyNetworkTVNational.us" site_id="9233001847">MyNetworkTV National</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="NationalGeographic.us@East" site_id="9233002310">National Geographic</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="NationalGeographicWild.us@East" site_id="9200004683">National Geographic Wild</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="NBATV.us" site_id="9200000070">NBA TV</channel>
@@ -117,14 +117,14 @@
   <channel site="tvguide.com" lang="en" xmltv_id="ShowtimeWomen.us@East" site_id="9200002975">SHOWTIME WOMEN</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="ShoxBet.us@East" site_id="9233017018">SHOxBET</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="SmithsonianChannel.us@East" site_id="9233002112">Smithsonian</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="Starz.us@East" site_id="9233013809">STARZ</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="StarzCinema.us@East" site_id="9233008357">STARZ Cinema</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="StarzComedy.us@East" site_id="9233003558">STARZ Comedy</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="Starz.us@East" site_id="9233013809">STARZ</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="StarzEdge.us@East" site_id="9233011247">STARZ Edge</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="StarzEncore.us@East" site_id="9200009649">STARZ ENCORE</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="StarzEncoreAction.us@East" site_id="9233005667">STARZ ENCORE Action</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="StarzEncoreBlack.us@East" site_id="9200001097">STARZ ENCORE Black</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="StarzEncoreClassic.us@East" site_id="9200003144">STARZ ENCORE Classic</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="StarzEncore.us@East" site_id="9200009649">STARZ ENCORE</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="StarzEncoreFamily.us@East" site_id="9200011867">STARZ ENCORE Family</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="StarzEncoreSuspense.us@East" site_id="9200011866">STARZ ENCORE Suspense</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="StarzEncoreWesterns.us@East" site_id="9233008131">STARZ ENCORE Westerns</channel>
@@ -147,7 +147,7 @@
   <channel site="tvguide.com" lang="en" xmltv_id="TravelChannel.us@East" site_id="9233000035">Travel</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="truTV.us@East" site_id="9200009547">truTV</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="TVLand.us@East" site_id="9233005468">TV Land</channel>
-  <channel site="tvguide.com" lang="en" xmltv_id="UniversalKids.us@East" site_id="9233003660">Universal Kids</channel>
+  <channel site="tvguide.com" lang="en" xmltv_id="UniversalKids.us@East" site_id="9233003660">Universal Kids (Off-Air)</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="USANetwork.us@East" site_id="9233004106">USA</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="VH1.us@East" site_id="9233000037">VH1</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="VICETV.us" site_id="9233002242">VICE</channel>
