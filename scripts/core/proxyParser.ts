@@ -1,6 +1,6 @@
 import { URL } from 'node:url'
 
-type ProxyParserResult = {
+interface ProxyParserResult {
   protocol: string | null
   auth?: {
     username?: string

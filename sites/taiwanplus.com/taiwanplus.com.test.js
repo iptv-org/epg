@@ -1,4 +1,6 @@
 const { url, parser } = require('./taiwanplus.com.config.js')
+const fs = require('fs')
+const path = require('path')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 dayjs.extend(utc)
@@ -16,8 +18,7 @@ it('can generate valid url', () => {
 })
 
 it('can parse response', () => {
-  const content =
-    '{"data":[{"date":"2023/08/20","weekday":"SUN","schedule":[{"programId":30668,"dateTime":"2023/08/20 00:00","time":"00:00","image":"https://prod-img.taiwanplus.com/live-schedule/Single/S30668_20230810104937.webp","title":"Master Class","shortDescription":"From blockchain to Buddha statues, Taiwan’s culture is a kaleidoscope of old and new just waiting to be discovered.","description":"From blockchain to Buddha statues, Taiwan’s culture is a kaleidoscope of old and new just waiting to be discovered.","ageRating":"0+","programWebSiteType":"4","url":"","vodId":null,"categoryId":90000474,"categoryType":2,"categoryName":"TaiwanPlus ✕ Discovery","categoryFullPath":"Originals/TaiwanPlus ✕ Discovery","encodedCategoryFullPath":"originals/taiwanplus-discovery"}]}],"success":true,"code":"0000","message":""}'
+  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'))
 
   const results = parser({ content, date })
 

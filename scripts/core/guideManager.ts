@@ -8,7 +8,7 @@ import { DataLoaderData } from '../types/dataLoader'
 import { DataProcessorData } from '../types/dataProcessor'
 import { DATA_DIR } from '../constants'
 
-type GuideManagerProps = {
+interface GuideManagerProps {
   options: OptionValues
   logger: Logger
   channels: Collection

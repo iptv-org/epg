@@ -1,6 +1,6 @@
 import { Collection, Dictionary } from '@freearhey/core'
 
-export type DataProcessorData = {
+export interface DataProcessorData {
   guideChannelsGroupedByStreamId: Dictionary
   feedsGroupedByChannelId: Dictionary
   logosGroupedByChannelId: Dictionary

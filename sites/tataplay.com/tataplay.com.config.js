@@ -4,20 +4,23 @@ module.exports = {
   site: 'tataplay.com',
   days: 1,
 
-  url({ channel, date }) {
-    return `https://tm.tapi.videoready.tv/content-detail/pub/api/v2/channels/schedule?date=${date.format('DD-MM-YYYY')}`
+  url({ date }) {
+    return `https://tm.tapi.videoready.tv/content-detail/pub/api/v2/channels/schedule?date=${date.format(
+      'DD-MM-YYYY'
+    )}`
   },
 
   request: {
     method: 'POST',
     headers: {
-      'Accept': '*/*',
-      'Origin': 'https://watch.tataplay.com',
-      'Referer': 'https://watch.tataplay.com/',
-      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+      Accept: '*/*',
+      Origin: 'https://watch.tataplay.com',
+      Referer: 'https://watch.tataplay.com/',
+      'User-Agent':
+        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
       'content-type': 'application/json',
-      'locale': 'ENG',
-      'platform': 'web'
+      locale: 'ENG',
+      platform: 'web'
     },
     data({ channel }) {
       return { id: channel.site_id }
@@ -46,13 +49,14 @@ module.exports = {
 
   async channels() {
     const headers = {
-      'Accept': '*/*',
-      'Origin': 'https://watch.tataplay.com',
-      'Referer': 'https://watch.tataplay.com/',
-      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+      Accept: '*/*',
+      Origin: 'https://watch.tataplay.com',
+      Referer: 'https://watch.tataplay.com/',
+      'User-Agent':
+        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
       'content-type': 'application/json',
-      'locale': 'ENG',
-      'platform': 'web'
+      locale: 'ENG',
+      platform: 'web'
     }
 
     const baseUrl = 'https://tm.tapi.videoready.tv/portal-search/pub/api/v1/channels/schedule'
