@@ -1,23 +1,18 @@
-import { Storage, Collection, Dictionary, File, Logger } from '@freearhey/core'
-import { ChannelsParser, ApiChannel } from '../../core'
+import { ChannelsParser, DataLoader, DataProcessor } from '../../core'
+import { DataProcessorData } from '../../types/dataProcessor'
+import { Storage, Dictionary, File } from '@freearhey/core'
+import { DataLoaderData } from '../../types/dataLoader'
+import { ChannelList } from '../../models'
+import { DATA_DIR } from '../../constants'
+import epgGrabber from 'epg-grabber'
 import { program } from 'commander'
 import chalk from 'chalk'
 import langs from 'langs'
-import { DATA_DIR } from '../../constants'
-import { Channel } from 'epg-grabber'
 
-program
-  .option(
-    '-c, --channels <path>',
-    'Path to channels.xml file to validate',
-    'sites/**/*.channels.xml'
-  )
-  .parse(process.argv)
+program.argument('[filepath...]', 'Path to *.channels.xml files to validate').parse(process.argv)
 
-const options = program.opts()
-
-type ValidationError = {
-  type: 'duplicate' | 'wrong_xmltv_id' | 'wrong_lang'
+interface ValidationError {
+  type: 'duplicate' | 'wrong_channel_id' | 'wrong_feed_id' | 'wrong_lang'
   name: string
   lang?: string
   xmltv_id?: string
@@ -26,63 +21,59 @@ type ValidationError = {
 }
 
 async function main() {
-  const logger = new Logger()
-
-  logger.info('options:')
-  logger.tree(options)
-
-  const parser = new ChannelsParser({ storage: new Storage() })
-
+  const processor = new DataProcessor()
   const dataStorage = new Storage(DATA_DIR)
-  const channelsContent = await dataStorage.json('channels.json')
-  const channels = new Collection(channelsContent).map(data => new ApiChannel(data))
+  const loader = new DataLoader({ storage: dataStorage })
+  const data: DataLoaderData = await loader.load()
+  const { channelsKeyById, feedsKeyByStreamId }: DataProcessorData = processor.process(data)
+  const parser = new ChannelsParser({
+    storage: new Storage()
+  })
 
   let totalFiles = 0
   let totalErrors = 0
+  let totalWarnings = 0
+
   const storage = new Storage()
-  const files: string[] = await storage.list(options.channels)
+  const files = program.args.length ? program.args : await storage.list('sites/**/*.channels.xml')
   for (const filepath of files) {
     const file = new File(filepath)
     if (file.extension() !== 'xml') continue
 
-    const parsedChannels = await parser.parse(filepath)
+    const channelList: ChannelList = await parser.parse(filepath)
 
-    const bufferById = new Dictionary()
     const bufferBySiteId = new Dictionary()
     const errors: ValidationError[] = []
-    parsedChannels.forEach((channel: Channel) => {
-      const bufferSiteId: string = `${channel.site_id}:${channel.lang}`
-      if (bufferBySiteId.missing(bufferSiteId)) {
-        bufferBySiteId.set(bufferSiteId, true)
+    channelList.channels.forEach((channel: epgGrabber.Channel) => {
+      const bufferId: string = channel.site_id
+      if (bufferBySiteId.missing(bufferId)) {
+        bufferBySiteId.set(bufferId, true)
       } else {
         errors.push({ type: 'duplicate', ...channel })
         totalErrors++
       }
 
-      if (!langs.where('1', channel.lang)) {
+      if (!langs.where('1', channel.lang ?? '')) {
         errors.push({ type: 'wrong_lang', ...channel })
         totalErrors++
       }
 
       if (!channel.xmltv_id) return
+      const [channelId, feedId] = channel.xmltv_id.split('@')
 
-      const foundChannel = channels.first(
-        (_channel: ApiChannel) => _channel.id === channel.xmltv_id
-      )
+      const foundChannel = channelsKeyById.get(channelId)
       if (!foundChannel) {
-        errors.push({ type: 'wrong_xmltv_id', ...channel })
-        totalErrors++
+        errors.push({ type: 'wrong_channel_id', ...channel })
+        totalWarnings++
       }
 
-      // if (foundChannel && foundChannel.replacedBy) {
-      //   errors.push({ type: 'replaced', ...channel })
-      //   totalErrors++
-      // }
-
-      // if (foundChannel && foundChannel.closed && !foundChannel.replacedBy) {
-      //   errors.push({ type: 'closed', ...channel })
-      //   totalErrors++
-      // }
+      if (feedId) {
+        const foundFeed = feedsKeyByStreamId.get(channel.xmltv_id)
+        if (!foundFeed) {
+          errors.push({ type: 'wrong_feed_id', ...channel })
+          totalWarnings++
+        }
+      }
     })
 
     if (errors.length) {
@@ -93,9 +84,16 @@ async function main() {
     }
   }
 
-  if (totalErrors > 0) {
-    console.log(chalk.red(`${totalErrors} error(s) in ${totalFiles} file(s)`))
-    process.exit(1)
+  const totalProblems = totalWarnings + totalErrors
+  if (totalProblems > 0) {
+    console.log(
+      chalk.red(
+        `${totalProblems} problems (${totalErrors} errors, ${totalWarnings} warnings) in ${totalFiles} file(s)`
+      )
+    )
+    if (totalErrors > 0) {
+      process.exit(1)
+    }
   }
 }
 

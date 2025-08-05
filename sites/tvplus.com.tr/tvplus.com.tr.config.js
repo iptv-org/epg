@@ -8,7 +8,7 @@ const debug = require('debug')('site:tvplus.com.tr')
 dayjs.extend(utc)
 dayjs.extend(customParseFormat)
 
-const channelsUrl = 'https://tvplus.com.tr/canli-tv/yayin-akisi'
+const baseUrl = 'https://tvplus.com.tr/canli-tv/yayin-akisi'
 
 module.exports = {
   site: 'tvplus.com.tr',
@@ -24,15 +24,7 @@ module.exports = {
       debug('Got build id', module.exports.buildId)
     }
     const channelId = channel.site_id.replace('/', '--')
-    return `https://tvplus.com.tr/_next/data/${
-      module.exports.buildId
-    }/${
-      channel.lang
-    }/canli-tv/yayin-akisi/${
-      channelId
-    }.json?title=${
-      channelId
-    }`
+    return `https://tvplus.com.tr/_next/data/${module.exports.buildId}/${channel.lang}/canli-tv/yayin-akisi/${channelId}.json?title=${channelId}`
   },
   parser({ content, date }) {
     const programs = []
@@ -43,7 +35,9 @@ module.exports = {
           .filter(i => i.length && i[0].starttime.startsWith(date.format('YYYY-MM-DD')))
           .forEach(i => {
             for (const schedule of i) {
-              const [, season, episode] = schedule.seasonInfo?.match(/(\d+)\. Sezon \- (\d+)\. Bölüm/) || [null, null, null]
+              const [, season, episode] = schedule.seasonInfo?.match(
+                /(\d+)\. Sezon - (\d+)\. Bölüm/
+              ) || [null, null, null]
               programs.push({
                 title: schedule.name,
                 description: schedule.introduce,
@@ -62,30 +56,38 @@ module.exports = {
     return programs
   },
   async channels() {
+    if (module.exports.buildId === undefined) {
+      module.exports.buildId = await module.exports.fetchBuildId()
+      debug('Got build id', module.exports.buildId)
+    }
     const channels = []
     const data = await axios
-      .get(channelsUrl)
+      .get(`https://tvplus.com.tr/_next/data/${module.exports.buildId}/canli-tv/yayin-akisi.json`)
       .then(r => r.data)
       .catch(console.error)
 
-    const $ = cheerio.load(data)
-    $('.channel-list-item a').toArray()
-      .forEach(el => {
-        const a = $(el)
-        channels.push({
-          lang: 'tr',
-          name: a.attr('title').replace(/Yayın Akışı/, '').trim(),
-          site_id: a.attr('href')
-            .replace(/\/canli\-tv\/yayin\-akisi\//, '')
-            .replace('--', '/') // change -- to / as it used in xml comment
-        })
+    const channels_json = data.pageProps.channelListSsr
+
+    channels_json.forEach(channel => {
+      channels.push({
+        lang: 'tr',
+        name: channel.name,
+        site_id: channel.name.normalize('NFD')  // Decompose accented characters
+        .replace(/[\u0300-\u036f]/g, '')        // Remove accent marks
+        .toLowerCase()
+        .replace(/\s+/g, '-')                   // Replace spaces with hyphens
+        .replace(/[^a-zA-Z0-9-]/g, '')          // Remove special chars but keep hyphens
+        .replace(/^-+|-+$/g, '')                // Remove leading/trailing hyphens
+        + '/' + channel.id,
+        logo: channel.channelLogo
       })
+    })
 
     return channels
   },
   async fetchBuildId() {
     const data = await axios
-      .get(channelsUrl)
+      .get(baseUrl)
       .then(r => r.data)
       .catch(console.error)
 

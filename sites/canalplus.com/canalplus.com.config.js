@@ -9,15 +9,22 @@ module.exports = {
   days: 2,
   url: async function ({ channel, date }) {
     const [region, site_id] = channel.site_id.split('#')
+
+    const baseUrl =
+      region === 'pl'
+        ? 'https://www.canalplus.com/pl/program-tv/'
+        : `https://www.canalplus.com/${region}/programme-tv/`
+
     const data = await axios
-      .get(`https://www.canalplus.com/${region}/programme-tv/`)
+      .get(baseUrl)
       .then(r => r.data.toString())
       .catch(err => console.log(err))
-    const token = parseToken(data)
 
+    const token = parseToken(data)
+    const path = region === 'pl' ? 'mycanalint' : 'mycanal'
     const diff = date.diff(dayjs.utc().startOf('d'), 'd')
 
-    return `https://hodor.canalplus.pro/api/v2/mycanal/channels/${token}/${site_id}/broadcasts/day/${diff}`
+    return `https://hodor.canalplus.pro/api/v2/${path}/channels/${token}/${site_id}/broadcasts/day/${diff}`
   },
   async parser({ content }) {
     let programs = []
@@ -70,6 +77,7 @@ module.exports = {
       gn: 'cpafr/gn',
       gp: 'cpafr/gp',
       gw: 'cpafr/gw',
+      ht: 'cpant/ht',
       mf: 'cpant/mf',
       mg: 'cpafr/mg',
       ml: 'cpafr/ml',
@@ -78,6 +86,7 @@ module.exports = {
       mu: 'cpmus/mu',
       nc: 'cpncl/nc',
       ne: 'cpafr/ne',
+      pf: 'cppyf/pf',
       pl: 'cppol',
       re: 'cpreu/re',
       rw: 'cpafr/rw',

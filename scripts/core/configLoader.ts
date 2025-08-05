@@ -1,5 +1,4 @@
 import { SiteConfig } from 'epg-grabber'
-import _ from 'lodash'
 import { pathToFileURL } from 'url'
 
 export class ConfigLoader {
@@ -7,7 +6,7 @@ export class ConfigLoader {
     const fileUrl = pathToFileURL(filepath).toString()
     const config = (await import(fileUrl)).default
     const defaultConfig = {
-      days: 2,
+      days: 1,
       delay: 0,
       output: 'guide.xml',
       request: {
@@ -28,6 +27,6 @@ export class ConfigLoader {
       channels: undefined
     }
 
-    return _.merge(defaultConfig, config)
+    return { ...defaultConfig, ...config } as SiteConfig
   }
 }

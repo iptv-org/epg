@@ -1,163 +1,167 @@
 const axios = require('axios')
-const cheerio = require('cheerio')
 const dayjs = require('dayjs')
-const utc = require('dayjs/plugin/utc')
-const timezone = require('dayjs/plugin/timezone')
-const customParseFormat = require('dayjs/plugin/customParseFormat')
 
-dayjs.extend(utc)
-dayjs.extend(timezone)
-dayjs.extend(customParseFormat)
+let authToken
 
 module.exports = {
   site: 'dishtv.in',
   days: 2,
-  url: 'https://www.dishtv.in/WhatsonIndiaWebService.asmx/LoadPagginResultDataForProgram',
+  url: 'https://epg.mysmartstick.com/dishtv/api/v1/epg/entities/programs',
   request: {
     method: 'POST',
+    async headers() {
+      await fetchToken()
+
+      return {
+        Authorization: authToken
+      }
+    },
     data({ channel, date }) {
       return {
-        Channelarr: channel.site_id,
-        fromdate: date.format('YYYYMMDDHHmm'),
-        todate: date.add(1, 'd').format('YYYYMMDDHHmm')
+        allowPastEvents: true,
+        channelid: channel.site_id,
+        date: date.format('DD/MM/YYYY')
       }
     }
   },
-  parser: function ({ content, date }) {
-    let programs = []
-    const data = parseContent(content)
-    const items = parseItems(data)
+  parser: ({ content }) => {
+    const programs = []
+    const items = parseItems(content)
     items.forEach(item => {
-      const title = parseTitle(item)
-      const start = parseStart(item, date)
-      const stop = parseStop(item, start)
-      if (title === 'No Information Available') return
-
       programs.push({
-        title,
-        start: start.toString(),
-        stop: stop.toString()
+        title: parseTitle(item),
+        description: parseDescription(item),
+        category: parseCategory(item),
+        actors: item.credits.actors,
+        directors: item.credits.directors,
+        producers: item.credits.producers,
+        date: item.productionyear,
+        icon: parseIcon(item),
+        image: parseImage(item),
+        episode: parseEpisode(item),
+        start: dayjs(item.start),
+        stop: dayjs(item.stop)
       })
     })
 
     return programs
   },
   async channels() {
-    let channels = []
+    await fetchToken()
 
-    const pages = await loadPageList()
-    for (let page of pages) {
-      const data = await axios
-        .post(
-          'https://www.dishtv.in/WhatsonIndiaWebService.asmx/LoadPagginResultDataForProgram',
-          page,
-          { timeout: 30000 }
-        )
+    const totalPages = await fetchPages()
+
+    const queue = Array.from(Array(totalPages).keys()).map(i => {
+      const data = new FormData()
+      data.append('pageNum', i + 1)
+
+      return {
+        method: 'post',
+        url: 'https://www.dishtv.in/services/epg/channels',
+        data,
+        headers: {
+          'authorization-token': authToken
+        }
+      }
+    })
+
+    const channels = []
+    for (let item of queue) {
+      const data = await axios(item)
         .then(r => r.data)
-        .catch(console.log)
+        .catch(console.error)
 
-      const $ = cheerio.load(data.d)
-      $('.pgrid').each((i, el) => {
-        const onclick = $(el).find('.chnl-logo').attr('onclick')
-        const number = $(el).find('.cnl-fav > a > span').text().trim()
-        const [, name, site_id] = onclick.match(/ShowChannelGuid\('([^']+)','([^']+)'/) || [
-          null,
-          '',
-          ''
-        ]
-
+      data.programDetailsByChannel.forEach(channel => {
         channels.push({
           lang: 'en',
-          number,
-          site_id
+          site_id: channel.channelid,
+          name: channel.channelname
         })
       })
     }
-
-    const names = await loadChannelNames()
-    channels = channels
-      .map(channel => {
-        channel.name = names[channel.number]
-
-        return channel
-      })
-      .filter(channel => channel.name)
 
     return channels
   }
 }
 
-async function loadPageList() {
-  const data = await axios
-    .get('https://www.dishtv.in/channelguide/')
-    .then(r => r.data)
-    .catch(console.log)
-
-  let pages = []
-  const $ = cheerio.load(data)
-  $('#MainContent_recordPagging li').each((i, el) => {
-    const onclick = $(el).find('a').attr('onclick')
-    const [, Channelarr, fromdate, todate] = onclick.match(
-      /ShowNextPageResult\('([^']+)','([^']+)','([^']+)'/
-    ) || [null, '', '', '']
-
-    pages.push({ Channelarr, fromdate, todate })
-  })
-
-  return pages
+function parseTitle(item) {
+  return Object.values(item.regional)
+    .map(region => ({
+      lang: region.languagecode,
+      value: region.title
+    }))
+    .filter(i => Boolean(i.value))
 }
 
-async function loadChannelNames() {
-  const names = {}
+function parseDescription(item) {
+  return Object.values(item.regional)
+    .map(region => ({
+      lang: region.languagecode,
+      value: region.desc
+    }))
+    .filter(i => Boolean(i.value))
+}
+
+function parseCategory(item) {
+  return Object.values(item.regional)
+    .map(region => ({
+      lang: region.languagecode,
+      value: region.genre
+    }))
+    .filter(i => Boolean(i.value))
+}
+
+function parseEpisode(item) {
+  return item['episode-num'] ? parseInt(item['episode-num']) : null
+}
+
+function parseIcon(item) {
+  return item.programmeurl || null
+}
+
+function parseImage(item) {
+  return item?.images?.landscape?.['1280x720'] ? item.images.landscape['1280x720'] : null
+}
+
+function parseItems(content) {
+  try {
+    const data = JSON.parse(content)
+
+    return Array.isArray(data) ? data : []
+  } catch {
+    return []
+  }
+}
+
+async function fetchToken() {
+  if (authToken) return
+
   const data = await axios
-    .post('https://www.dishtv.in/WebServiceMethod.aspx/GetChannelListFromMobileAPI', {
-      strChannel: ''
+    .post('https://www.dishtv.in/services/epg/signin', null, {
+      headers: {
+        'sec-fetch-dest': 'empty',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-site': 'same-origin',
+        'x-requested-with': 'XMLHttpRequest',
+        Referer: 'https://www.dishtv.in/channel-guide.html'
+      }
     })
     .then(r => r.data)
-    .catch(console.log)
+    .catch(console.error)
 
-  const $ = cheerio.load(data.d)
-  $('#tblpackChnl > div').each((i, el) => {
-    const num = $(el).find('p:nth-child(2)').text().trim()
-    const name = $(el).find('p').first().text().trim()
-
-    if (num === '') return
-
-    names[num] = name
-  })
-
-  return names
+  authToken = data.token
 }
 
-function parseTitle(item) {
-  const $ = cheerio.load(item)
+async function fetchPages() {
+  const formData = new FormData()
+  formData.append('pageNum', 1)
 
-  return $('a').text()
-}
+  const data = await axios
+    .post('https://www.dishtv.in/services/epg/channels', formData, {
+      headers: { 'authorization-token': authToken }
+    })
+    .then(r => r.data)
+    .catch(console.error)
 
-function parseStart(item) {
-  const $ = cheerio.load(item)
-  const onclick = $('i.fa-circle').attr('onclick')
-  const [, time] = onclick.match(/RecordingEnteryOpen\('.*','.*','(.*)','.*',.*\)/)
-
-  return dayjs.tz(time, 'YYYYMMDDHHmm', 'Asia/Kolkata')
-}
-
-function parseStop(item, start) {
-  const $ = cheerio.load(item)
-  const duration = $('*').data('time')
-
-  return start.add(duration, 'm')
-}
-
-function parseContent(content) {
-  const data = JSON.parse(content)
-
-  return data.d
-}
-
-function parseItems(data) {
-  const $ = cheerio.load(data)
-
-  return $('.datatime').toArray()
+  return data.totalPages ? parseInt(data.totalPages) : 0
 }

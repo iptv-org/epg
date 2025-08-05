@@ -39,7 +39,7 @@ it('can parse response', () => {
     start: '2022-10-04T10:00:00.000Z',
     stop: '2022-10-04T10:30:00.000Z',
     title: 'Charlie Moore: No Offense',
-    sub_title: 'Under the Influencer',
+    subtitle: 'Under the Influencer',
     category: ['Sports', 'Outdoors'],
     image: 'https://cdn.tvpassport.com/image/show/960x540/69103.jpg',
     rating: {
@@ -50,7 +50,23 @@ it('can parse response', () => {
     director: ['Rob McElhenney'],
     guest: ['Sean Penn'],
     description:
-      'Celebrity interviews while fishing in various locations throughout the United States.'
+      'Celebrity interviews while fishing in various locations throughout the United States.',
+    year: null
+  })
+
+  expect(results[1]).toMatchObject({
+    start: '2022-10-04T10:30:00.000Z',
+    stop: '2022-10-04T11:00:00.000Z',
+    title: '1900',
+    year: null
+  })
+
+  expect(results[2]).toMatchObject({
+    start: '2022-10-04T11:00:00.000Z',
+    stop: '2022-10-04T12:00:00.000Z',
+    title: 'The Mark of Zorro',
+    subtitle: null,
+    year: '1940'
   })
 })
 

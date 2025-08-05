@@ -1,64 +1,81 @@
 const { parser, url } = require('./dsmart.com.tr.config.js')
+const axios = require('axios')
 const dayjs = require('dayjs')
 const fs = require('fs')
 const path = require('path')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
+
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
-const date = dayjs.utc('2023-01-16', 'YYYY-MM-DD').startOf('d')
+jest.mock('axios')
+
+const date = dayjs.utc('2025-01-13', 'YYYY-MM-DD').startOf('d')
 const channel = {
-  site_id: '3#5fe07d7acfef0b1593275751',
-  xmltv_id: 'SinemaTV.tr'
+  site_id: '5fe07f5dcfef0b1593275822',
+  xmltv_id: 'Sinema1001.tr'
 }
 
+axios.get.mockImplementation(url => {
+  const result = {}
+  const urls = {
+    'https://www.dsmart.com.tr/api/v1/public/epg/schedules?page=1&limit=10&day=2025-01-13':
+      'content1.json',
+    'https://www.dsmart.com.tr/api/v1/public/epg/schedules?page=2&limit=10&day=2025-01-13':
+      'content2.json',
+  }
+  if (urls[url] !== undefined) {
+    result.data = fs.readFileSync(path.join(__dirname, '__data__', urls[url])).toString()
+    if (!urls[url].startsWith('content1')) {
+      result.data = JSON.parse(result.data)
+    }
+  }
+
+  return Promise.resolve(result)
+})
+
+
 it('can generate valid url', () => {
-  expect(url({ date, channel })).toBe(
-    'https://www.dsmart.com.tr/api/v1/public/epg/schedules?page=3&limit=1&day=2023-01-16'
+  expect(url({ date })).toBe(
+    'https://www.dsmart.com.tr/api/v1/public/epg/schedules?page=1&limit=10&day=2025-01-13'
   )
 })
 
-it('can parse response', () => {
-  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'))
-  const results = parser({ channel, content }).map(p => {
+it('can parse response', async () => {
+  const content = fs.readFileSync(path.join(__dirname, '__data__', 'content1.json')).toString()
+  const results = (await parser({ content, channel, date })).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
     return p
   })
 
+  expect(results.length).toBe(11)
+
   expect(results[0]).toMatchObject({
-    start: '2023-01-15T22:00:00.000Z',
-    stop: '2023-01-15T23:45:00.000Z',
-    title: 'Bizi Ayıran Her Şey',
-    category: 'sinema/genel',
+    start: '2025-01-12T21:30:00.000Z',
+    stop: '2025-01-12T23:30:00.000Z',
+    title: 'Taksi Şoförü',
     description:
-      'Issızlığın ortasında yer alan orta sınıf bir evde bir anne kız yaşamaktadır. Çevrelerindeki taşları insanlarla yaşadıkları çatışmalar, anne-kızın hayatını olumsuz yönde etkilemektedir. Kızının ansızın ortadan kaybolması, bu çatışmaların seviyesini artıracak ve anne, kızını bulmak için her türlü yola başvuracaktır.'
+      'Vietnam savaşının izlerinin etkisindeki bir asker ve New York sokakları. Travis Bickle, geceleri taksi şoförlüğü yaptığı New York’ta bir yandan da gündelik yaşama ayak uydurmaya çalışır. Çürümeye yüz tutmuş bir topluma karşı tutulan bir ayna niteliğindeki film, yönetmen Martin Scorsese’nin kariyerinin en önemli filmlerinden biri olarak kabul görür.',
+    category: ['Sinema', 'Genel']
   })
-
-  expect(results[1]).toMatchObject({
-    start: '2023-01-15T23:45:00.000Z',
-    stop: '2023-01-16T01:30:00.000Z',
-    title: 'Pixie',
-    category: 'sinema/genel',
+  expect(results[10]).toMatchObject({
+    start: '2025-01-13T19:00:00.000Z',
+    stop: '2025-01-13T21:00:00.000Z',
+    title: 'Senin Adın',
     description:
-      'Annesinin intikamını almak isteyen Pixie, dahiyane bir soygun planlar. Fakat işler planladığı gibi gitmeyince kendini İrlanda’nın vahşi gangsterleri tarafından kovalanan iki adamla birlikte kaçarken bulur.'
-  })
-
-  expect(results[12]).toMatchObject({
-    start: '2023-01-16T20:30:00.000Z',
-    stop: '2023-01-16T22:30:00.000Z',
-    title: 'Seberg',
-    category: 'sinema/genel',
-    description:
-      'Başrolünde ünlü yıldız Kristen Stewart’ın yer aldığı politik gerilim, 1960’ların sonunda insan hakları aktivisti Hakim Jamal ile yaşadığı politik ve romantik ilişki sebebiyle FBI tarafından hedef alınan, Fransız Yeni Dalgası’nın sevilen yüzü ve Serseri Aşıklar’ın yıldızı Jean Seberg’ün çarpıcı hikayesini anlatıyor.'
+      'Dağların sardığı bir bölgede yaşayan Mitsuha, hayatından çok da memnun olmayan liseli bir kızdır. Babası vali olarak çalışmakta ve seçim kampanyaları ile uğraşmaktadır. Evde kendisi, kardeşi ve büyükannesi dışında kimse yoktur. Kırsal kesimdeki yaşamı onu bunaltmaktadır ve esas isteği Tokyo\'nun muhteşem şehir hayatının bir parçası olmaktır. Diğer tarafta ise Taki vardır.',
+    category: ['Sinema', 'Genel']
   })
 })
 
-it('can handle empty guide', () => {
-  const results = parser({
+it('can handle empty guide', async () => {
+  const results = await parser({
     channel,
-    content: fs.readFileSync(path.resolve(__dirname, '__data__/no_content.json'))
+    date,
+    content: fs.readFileSync(path.join(__dirname, '__data__', 'no_content.json')).toString(),
+    useCache: false
   })
 
   expect(results).toMatchObject([])

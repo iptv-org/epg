@@ -18,24 +18,31 @@ const tz = 'Europe/London'
 module.exports = {
   site: 'mytelly.co.uk',
   days: 2,
+  request: {
+    headers: {
+      'User-Agent':
+        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 OPR/117.0.0.0'
+    }
+  },
   url({ date, channel }) {
     return `https://www.mytelly.co.uk/tv-guide/listings/channel/${
       channel.site_id
     }.html?dt=${date.format('YYYY-MM-DD')}`
   },
-  async parser({ content, date, channel }) {
+  async parser({ content, date }) {
     const programs = []
 
     if (content) {
       const queues = []
       const $ = cheerio.load(content)
 
-      $('table.table > tbody > tr').toArray()
+      $('table.table > tbody > tr')
+        .toArray()
         .forEach(el => {
           const td = $(el).find('td:eq(1)')
           const title = td.find('h5 a')
           if (detailedGuide) {
-            queues.push(title.attr('href'))
+            queues.push({ url: title.attr('href'), params: module.exports.request })
           } else {
             const subtitle = td.find('h6')
             const time = $(el).find('td:eq(0)')
@@ -66,12 +73,16 @@ module.exports = {
           const subTitle = parseText($('.tab-pane > h5 > strong'))
           const description = parseText($('.tab-pane > .tvbody > p'))
           const image = $('.program-media-image img').attr('src')
-          const category = $('.schedule-attributes-genres span').toArray()
+          const category = $('.schedule-attributes-genres span')
+            .toArray()
             .map(el => $(el).text())
-          const casts = $('.single-cast-head:not([id])').toArray()
+          const casts = $('.single-cast-head:not([id])')
+            .toArray()
             .map(el => {
               const cast = { name: parseText($(el).find('a')) }
-              const [, role] = $(el).text().match(/\((.*)\)/) || [null, null]
+              const [, role] = $(el)
+                .text()
+                .match(/\((.*)\)/) || [null, null]
               if (role) {
                 cast.role = role
               }
@@ -102,7 +113,7 @@ module.exports = {
             start,
             stop
           })
-      })
+        })
       }
     }
 
@@ -110,16 +121,21 @@ module.exports = {
   },
   async channels() {
     const channels = {}
-    const queues = [{ t: 'p', method: 'post', url: 'https://www.mytelly.co.uk/getform' }]
+    const queues = [{ t: 'p', url: 'https://www.mytelly.co.uk/getform', params: this.request }]
     await doFetch(queues, (queue, res) => {
       // process form -> provider
       if (queue.t === 'p') {
         const $ = cheerio.load(res)
-        $('#guide_provider option').toArray()
+        $('#guide_provider option')
+          .toArray()
           .forEach(el => {
             const opt = $(el)
             const provider = opt.attr('value')
-            queues.push({ t: 'r', method: 'post', url: 'https://www.mytelly.co.uk/getregions', params: { provider } })
+            queues.push({
+              t: 'r',
+              url: 'https://www.mytelly.co.uk/getregions',
+              params: { ...this.request, provider }
+            })
           })
       }
       // process provider -> region
@@ -135,26 +151,30 @@ module.exports = {
             u_time: now.format('HHmm'),
             is_mobile: 1
           }
-          queues.push({ t: 's', method: 'post', url: 'https://www.mytelly.co.uk/tv-guide/schedule', params })
+          queues.push({
+            t: 's',
+            method: 'post',
+            url: 'https://www.mytelly.co.uk/tv-guide/schedule',
+            params: { ...this.request, data: params }
+          })
         }
       }
       // process schedule -> channels
       if (queue.t === 's') {
         const $ = cheerio.load(res)
-        $('.channelname')
-          .each((i, el) => {
-            const name = $(el).find('center > a:eq(1)').text()
-            const url = $(el).find('center > a:eq(1)').attr('href')
-            const [, number, slug] = url.match(/\/(\d+)\/(.*)\.html$/)
-            const site_id = `${number}/${slug}`
-            if (channels[site_id] === undefined) {
-              channels[site_id] = {
-                lang: 'en',
-                site_id,
-                name
-              }
+        $('.channelname').each((i, el) => {
+          const name = $(el).find('center > a:eq(1)').text()
+          const url = $(el).find('center > a:eq(1)').attr('href')
+          const [, number, slug] = url.match(/\/(\d+)\/(.*)\.html$/)
+          const site_id = `${number}/${slug}`
+          if (channels[site_id] === undefined) {
+            channels[site_id] = {
+              lang: 'en',
+              site_id,
+              name
             }
-          })
+          }
+        })
       }
     })
 
@@ -178,13 +198,10 @@ function parseTime(date, time) {
 }
 
 function parseText($item) {
-  let text = $item.text()
-    .replace(/\t/g, '')
-    .replace(/\n/g, ' ')
-    .trim()
+  let text = $item.text().replace(/\t/g, '').replace(/\n/g, ' ').trim()
   while (true) {
-    if (text.match(/  /)) {
-      text = text.replace(/  /g, ' ')
+    if (text.match(/\s\s/)) {
+      text = text.replace(/\s\s/g, ' ')
       continue
     }
     break

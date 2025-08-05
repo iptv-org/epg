@@ -9,15 +9,9 @@ module.exports = {
   url({ date, channel }) {
     return `https://waf-starhub-metadata-api-p001.ifs.vubiquity.com/v3.1/epg/schedules?locale=${
       languages[channel.lang]
-    }&locale_default=${
-      languages[channel.lang]
-    }&device=1&in_channel_id=${
+    }&locale_default=${languages[channel.lang]}&device=1&in_channel_id=${
       channel.site_id
-    }&gt_end=${
-      date.unix()
-    }&lt_start=${
-      date.add(1, 'd').unix()
-    }&limit=100&page=1`
+    }&gt_end=${date.unix()}&lt_start=${date.add(1, 'd').unix()}&limit=100&page=1`
   },
   async parser({ content, date, channel }) {
     const programs = []
@@ -29,7 +23,11 @@ module.exports = {
         }
         if (res.page && res.page.current < res.page.total) {
           res = await axios
-            .get(module.exports.url({ date, channel }).replace(/page=(\d+)/, `page=${res.page.current + 1}`))
+            .get(
+              module.exports
+                .url({ date, channel })
+                .replace(/page=(\d+)/, `page=${res.page.current + 1}`)
+            )
             .then(r => r.data)
             .catch(console.error)
         } else {
@@ -39,7 +37,7 @@ module.exports = {
     }
     const season = s => {
       if (s) {
-        const [ , , n ] = s.match(/(S|Season )(\d+)/) || [null, null, null]
+        const [, , n] = s.match(/(S|Season )(\d+)/) || [null, null, null]
         if (n) {
           return parseInt(n)
         }
@@ -66,11 +64,9 @@ module.exports = {
     let page = 1
     while (true) {
       const items = await axios
-        .get(`https://waf-starhub-metadata-api-p001.ifs.vubiquity.com/v3.1/epg/channels?locale=${
-          languages[lang]
-        }&locale_default=${
-          languages[lang]
-        }&device=1&limit=50&page=${page}`)
+        .get(
+          `https://waf-starhub-metadata-api-p001.ifs.vubiquity.com/v3.1/epg/channels?locale=${languages[lang]}&locale_default=${languages[lang]}&device=1&limit=50&page=${page}`
+        )
         .then(r => r.data)
         .catch(console.error)
       if (items.resources) {

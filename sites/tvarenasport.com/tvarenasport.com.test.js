@@ -32,12 +32,12 @@ it('can parse response', () => {
     stop: '2024-12-07T05:00:00.000Z',
     title: 'EVROPSKO PRVENSTVO Ž',
     description: 'Francuska - Crna Gora',
-    category: 'Rukomet',
+    category: 'Rukomet'
   })
   expect(result[8]).toMatchObject({
     start: '2024-12-07T11:00:00.000Z',
     stop: '2024-12-07T11:05:00.000Z',
-    title: 'Arena News',
+    title: 'Arena News'
   })
 })
 

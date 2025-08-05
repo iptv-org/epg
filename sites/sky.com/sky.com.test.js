@@ -15,9 +15,7 @@ const channel = {
 }
 
 it('can generate valid url', () => {
-  expect(url({ channel, date })).toBe(
-    'https://awk.epgsky.com/hawk/linear/schedule/20241214/4086'
-  )
+  expect(url({ channel, date })).toBe('https://awk.epgsky.com/hawk/linear/schedule/20241214/4086')
 })
 
 it('can parse response', () => {
@@ -28,24 +26,28 @@ it('can parse response', () => {
     return p
   })
 
-  expect(result.length).toBe(33)
+  expect(result.length).toBe(31)
   expect(result[0]).toMatchObject({
-    start: '2024-12-13T22:00:00.000Z',
-    stop: '2024-12-13T23:00:00.000Z',
-    title: 'The UnXplained With...',
+    start: '2024-12-14T00:00:00.000Z',
+    stop: '2024-12-14T00:30:00.000Z',
+    title: 'Storage Wars',
     description:
-      'The Hunt for Jack the Ripper: Jack the Ripper\'s identity has eluded police, historians and armchair detectives for over a century. What do we know about the notorious killer? (S3, ep 21)',
-    season: 4,
-    episode: 14
+      'A Sale Of Two Cities: Emily brings her mother along with her to Walnut, and Darrell wastes no time finding an advantage. Ivy and Ivy jr clean up with their locker. (S12, ep 4)',
+    season: 12,
+    episode: 4,
+    icon: 'https://images.metadata.sky.com/pd-image/b9572a38-8db7-471e-a2d7-462e1dd26af2/16-9/640',
+    image: 'https://images.metadata.sky.com/pd-image/b9572a38-8db7-471e-a2d7-462e1dd26af2/16-9/640'
   })
-  expect(result[4]).toMatchObject({
+  expect(result[2]).toMatchObject({
     start: '2024-12-14T01:00:00.000Z',
     stop: '2024-12-14T01:30:00.000Z',
     title: 'Storage Wars',
     description:
       'Not All That Glitters Is Gourd: Back in the city of Orange, the Vegas Ladies arrive in vintage style - though not everyone agrees. (S12, ep 6)',
     season: 12,
-    episode: 6
+    episode: 6,
+    icon: 'https://images.metadata.sky.com/pd-image/e9521ccc-bdcc-4075-9c2e-bc835247148b/16-9/640',
+    image: 'https://images.metadata.sky.com/pd-image/e9521ccc-bdcc-4075-9c2e-bc835247148b/16-9/640'
   })
 })
 

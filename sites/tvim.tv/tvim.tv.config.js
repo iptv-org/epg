@@ -29,7 +29,7 @@ module.exports = {
   async channels() {
     const axios = require('axios')
     const data = await axios
-      .get(`https://www.tvim.tv/script/epg/category_channels?category=all&filter=playable`)
+      .get('https://www.tvim.tv/script/epg/category_channels?category=all&filter=playable')
       .then(r => r.data)
       .catch(console.log)
 

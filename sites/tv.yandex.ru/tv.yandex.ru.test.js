@@ -16,7 +16,7 @@ const channel = {
   site_id: '16',
   xmltv_id: 'ChannelOne.ru'
 }
-axios.get.mockImplementation((url, opts) => {
+axios.get.mockImplementation(url => {
   if (url === 'https://tv.yandex.ru/?date=2023-11-26&grid=all&period=all-day') {
     return Promise.resolve({
       headers: {},
@@ -29,7 +29,10 @@ axios.get.mockImplementation((url, opts) => {
       data: JSON.parse(fs.readFileSync(path.resolve(__dirname, '__data__/schedule.json')))
     })
   }
-  if (url === 'https://tv.yandex.ru/api/120809/main/chunk?page=0&date=2023-11-26&period=all-day&offset=0&limit=11') {
+  if (
+    url ===
+    'https://tv.yandex.ru/api/120809/main/chunk?page=0&date=2023-11-26&period=all-day&offset=0&limit=11'
+  ) {
     return Promise.resolve({
       headers: {},
       data: JSON.parse(fs.readFileSync(path.resolve(__dirname, '__data__/schedule0.json')))
@@ -44,9 +47,7 @@ axios.get.mockImplementation((url, opts) => {
 })
 
 it('can generate valid url', () => {
-  expect(url({ date })).toBe(
-    'https://tv.yandex.ru/?date=2023-11-26&grid=all&period=all-day'
-  )
+  expect(url({ date })).toBe('https://tv.yandex.ru/?date=2023-11-26&grid=all&period=all-day')
 })
 
 it('can generate valid request headers', () => {
@@ -63,9 +64,7 @@ it('can generate valid request headers', () => {
 
 it('can parse response', async () => {
   const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.html'))
-  const result = (
-    await parser({ content, date, channel })
-  ).map(p => {
+  const result = (await parser({ content, date, channel })).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
     return p
@@ -77,7 +76,8 @@ it('can parse response', async () => {
       stop: '2023-11-26T02:10:00.000Z',
       title: 'ПОДКАСТ.ЛАБ. Мелодии моей жизни',
       category: 'досуг',
-      description: 'Впереди вся ночь и есть о чем поговорить. Фильмы, музыка, любовь, звезды, еда, мода, анекдоты, спорт, деньги, настоящее, будущее - все это в творческом эксперименте.\nЛариса Гузеева читает любовные письма. Леонид Якубович рассказывает, кого не берут в пилоты. Арина Холина - какой секс способен довести до мужа или до развода. Валерий Сюткин на ходу сочиняет песню для Карины Кросс и Вали Карнавал. Дмитрий Дибров дарит новую жизнь любимой \"Антропологии\". Денис Казанский - все о футболе, хоккее и не только.\n\"ПОДКАСТЫ. ЛАБ\" - серия подкастов разной тематики, которые невозможно проспать. Интеллектуальные дискуссии после полуночи с самыми компетентными экспертами и актуальными спикерами.'
+      description:
+        'Впереди вся ночь и есть о чем поговорить. Фильмы, музыка, любовь, звезды, еда, мода, анекдоты, спорт, деньги, настоящее, будущее - все это в творческом эксперименте.\nЛариса Гузеева читает любовные письма. Леонид Якубович рассказывает, кого не берут в пилоты. Арина Холина - какой секс способен довести до мужа или до развода. Валерий Сюткин на ходу сочиняет песню для Карины Кросс и Вали Карнавал. Дмитрий Дибров дарит новую жизнь любимой "Антропологии". Денис Казанский - все о футболе, хоккее и не только.\n"ПОДКАСТЫ. ЛАБ" - серия подкастов разной тематики, которые невозможно проспать. Интеллектуальные дискуссии после полуночи с самыми компетентными экспертами и актуальными спикерами.'
     }
   ])
 })
@@ -86,7 +86,7 @@ it('can handle empty guide', async () => {
   const result = await parser({
     date,
     channel,
-    content: '<!DOCTYPE html><html><head></head><body></body></html>'
+    content: fs.readFileSync(path.resolve(__dirname, '__data__', 'no_content.html'), 'utf8')
   })
   expect(result).toMatchObject([])
 })

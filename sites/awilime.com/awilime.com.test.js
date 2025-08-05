@@ -1,4 +1,4 @@
-const { parser, url, request } = require('./awilime.com.config.js')
+const { parser, url } = require('./awilime.com.config.js')
 const fs = require('fs')
 const path = require('path')
 const dayjs = require('dayjs')

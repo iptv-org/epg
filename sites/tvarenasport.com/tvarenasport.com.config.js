@@ -26,22 +26,25 @@ module.exports = {
     if (content) {
       const dates = []
       const $ = cheerio.load(content)
-      const parent = $(`.tv-scheme-chanel-header img[src*="chanel-${channel.site_id}.png"]`)
-        .parents('div')
+      const parent = $(
+        `.tv-scheme-chanel-header img[src*="chanel-${channel.site_id}.png"]`
+      ).parents('div')
       parent
         .siblings('.tv-scheme-days')
-        .find('a').toArray()
-          .forEach(el => {
-            const a = $(el)
-            const dt = a.find('span:nth-child(3)').text()
-            dates.push(dayjs(dt + date.year(), 'DD.MM.YYYY')) 
-          })
+        .find('a')
+        .toArray()
+        .forEach(el => {
+          const a = $(el)
+          const dt = a.find('span:nth-child(3)').text()
+          dates.push(dayjs(dt + date.year(), 'DD.MM.YYYY'))
+        })
       parent
         .siblings('.tv-scheme-new-slider-wrapper')
-        .find('.tv-scheme-new-slider-item').toArray()
-          .forEach((el, i) => {
-            programs.push(...parseSchedules($(el), dates[i], module.exports.tz))
-          })
+        .find('.tv-scheme-new-slider-item')
+        .toArray()
+        .forEach((el, i) => {
+          programs.push(...parseSchedules($(el), dates[i], module.exports.tz))
+        })
       programs.forEach((s, i) => {
         if (i < programs.length - 2) {
           s.stop = programs[i + 1].start
@@ -51,8 +54,11 @@ module.exports = {
       })
     }
 
-    return programs
-      .filter(p => p.start.format('YYYY-MM-DD') === expectedDate || p.stop.format('YYYY-MM-DD') === expectedDate)
+    return programs.filter(
+      p =>
+        p.start.format('YYYY-MM-DD') === expectedDate ||
+        p.stop.format('YYYY-MM-DD') === expectedDate
+    )
   },
   async channels() {
     const channels = []
@@ -81,7 +87,9 @@ module.exports = {
       const $ = cheerio.load(data)
       const items = $('.tv-scheme-chanel-header img').toArray()
       for (const item of items) {
-        const [, id] = $(item).attr('src').match(/chanel-([a-z0-9]+)\.png/) || [null, null]
+        const [, id] = $(item)
+          .attr('src')
+          .match(/chanel-([a-z0-9]+)\.png/) || [null, null]
         if (id) {
           channels.push({
             lang: this.lang,
@@ -99,7 +107,8 @@ module.exports = {
 function parseSchedules($s, date, tz) {
   const schedules = []
   const $ = $s._make
-  $s.find('.slider-content').toArray()
+  $s.find('.slider-content')
+    .toArray()
     .forEach(el => {
       schedules.push(parseSchedule($(el), date, tz))
     })

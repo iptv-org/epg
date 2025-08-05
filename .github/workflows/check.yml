@@ -1,0 +1,53 @@
+name: check
+on:
+  workflow_dispatch:
+  pull_request:
+    types: [opened, synchronize, reopened, edited]
+    branches:
+      - master
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: changed files
+        id: files
+        run: |
+          git fetch origin master:master
+          JS_ANY_CHANGED=false
+          JS_ALL_CHANGED_FILES=$(git diff --name-only master -- tests/**/*.js tests/**/*.ts scripts/**/*.js scripts/**/*.mts scripts/**/*.ts sites/**/*.js sites/**/*.ts | tr '\n' ' ')
+          if [ -n "${JS_ALL_CHANGED_FILES}" ]; then
+            JS_ANY_CHANGED=true
+          fi
+          echo "js_all_changed_files=$JS_ALL_CHANGED_FILES" >> "$GITHUB_OUTPUT"
+          echo "js_any_changed=$JS_ANY_CHANGED" >> "$GITHUB_OUTPUT"
+          CHANNELS_ANY_CHANGED=false
+          CHANNELS_ALL_CHANGED_FILES=$(git diff --name-only master --  sites/**/*.channels.xml | tr '\n' ' ')
+          if [ -n "${CHANNELS_ALL_CHANGED_FILES}" ]; then
+            CHANNELS_ANY_CHANGED=true
+          fi
+          echo "channels_all_changed_files=$CHANNELS_ALL_CHANGED_FILES" >> "$GITHUB_OUTPUT"
+          echo "channels_any_changed=$CHANNELS_ANY_CHANGED" >> "$GITHUB_OUTPUT"
+      - uses: actions/setup-node@v4
+        if: ${{ steps.files.outputs.js_any_changed == 'true' || steps.files.outputs.channels_any_changed == 'true' }}
+        with:
+          node-version: 22
+          cache: 'npm'
+      - name: install dependencies
+        if: steps.files.outputs.js_any_changed == 'true' || steps.files.outputs.channels_any_changed == 'true'
+        run: SKIP_POSTINSTALL=1 npm install
+      - name: check changed js-files
+        if: steps.files.outputs.js_any_changed == 'true'
+        run: |
+          npx eslint ${{ steps.files.outputs.js_all_changed_files }}
+      - name: check changed *.channels.xml
+        if: steps.files.outputs.channels_any_changed == 'true'
+        run: |
+          npm run channels:lint -- ${{ steps.files.outputs.channels_all_changed_files }}
+          npm run postinstall
+          npm run channels:validate -- ${{ steps.files.outputs.channels_all_changed_files }}

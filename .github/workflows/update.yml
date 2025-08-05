@@ -7,14 +7,14 @@ jobs:
   main:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: tibdex/github-app-token@v1.8.2
         if: ${{ !env.ACT }}
         id: create-app-token
         with:
           app_id: ${{ secrets.APP_ID }}
           private_key: ${{ secrets.APP_PRIVATE_KEY }}
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         if: ${{ !env.ACT }}
         with:
           token: ${{ steps.create-app-token.outputs.token }}
@@ -22,16 +22,28 @@ jobs:
         run: |
           git config user.name "iptv-bot[bot]"
           git config user.email "84861620+iptv-bot[bot]@users.noreply.github.com"
-      - uses: actions/setup-node@v3
-        if: ${{ !env.ACT }}
+      - uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 22
           cache: 'npm'
       - name: install dependencies
         run: npm install
       - name: check *.channels.xml
         run: |
           npm run channels:lint
+      - name: update sites.md
+        run: npm run sites:update
+      - run: git status
+      - name: commit changes to sites.md
+        if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
+        run: |
+          SITE=SITES.md
+          CHANGED=$(git diff ${SITE})
+          if [ -n "${CHANGED}" ]; then
+            git add ${SITE}
+            git commit -m "[Bot] Update ${SITE}" -m "Committed by [iptv-bot](https://github.com/apps/iptv-bot) via [update](https://github.com/iptv-org/epg/actions/runs/${{ github.run_id }}) workflow." --no-verify
+            git push
+          fi
       - name: generate .api/guides.json
         run: npm run api:generate
       - run: git status

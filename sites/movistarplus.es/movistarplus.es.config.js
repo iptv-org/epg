@@ -1,65 +1,97 @@
-const { DateTime } = require('luxon')
+const axios = require('axios')
+const cheerio = require('cheerio')
+const dayjs = require('dayjs')
 
 module.exports = {
   site: 'movistarplus.es',
   days: 2,
-  url: function ({ date }) {
-    return `https://www.movistarplus.es/programacion-tv/${date.format('YYYY-MM-DD')}?v=json`
+  url({ channel, date }) {
+    return `https://www.movistarplus.es/programacion-tv/${channel.site_id}/${date.format('YYYY-MM-DD')}`
   },
-  parser({ content, channel, date }) {
+  async parser({ content }) {
     let programs = []
-    let items = parseItems(content, channel)
+    let items = parseItems(content)
     if (!items.length) return programs
-    let guideDate = date
-    items.forEach(item => {
-      let startTime = DateTime.fromFormat(
-        `${guideDate.format('YYYY-MM-DD')} ${item.HORA_INICIO}`,
-        'yyyy-MM-dd HH:mm',
-        {
-          zone: 'Europe/Madrid'
+
+    const $ = cheerio.load(content)
+    const programElements = $('div[id^="ele-"]').get()
+
+    for (let i = 0; i < items.length; i++) {
+      const el = items[i]
+      let description = null
+
+      if (programElements[i]) {
+        const programDiv = $(programElements[i])
+        const programLink = programDiv.find('a').attr('href')
+        
+        if (programLink) {
+          const idMatch = programLink.match(/id=(\d+)/)
+          if (idMatch && idMatch[1]) {
+            description = await getProgramDescription(programLink).catch(() => null)
+          }
         }
-      ).toUTC()
-      let stopTime = DateTime.fromFormat(
-        `${guideDate.format('YYYY-MM-DD')} ${item.HORA_FIN}`,
-        'yyyy-MM-dd HH:mm',
-        {
-          zone: 'Europe/Madrid'
-        }
-      ).toUTC()
-      if (stopTime < startTime) {
-        guideDate = guideDate.add(1, 'd')
-        stopTime = stopTime.plus({ days: 1 })
       }
+
       programs.push({
-        title: item.TITULO,
-        category: item.GENERO,
-        start: startTime,
-        stop: stopTime
+        title: el.item.name,
+        description: description,
+        start: dayjs(el.item.startDate),
+        stop: dayjs(el.item.endDate)
       })
-    })
+    }
+
     return programs
   },
   async channels() {
-    const axios = require('axios')
-    const dayjs = require('dayjs')
-    const data = await axios
-      .get(`https://www.movistarplus.es/programacion-tv/${dayjs().format('YYYY-MM-DD')}?v=json`)
+    const html = await axios
+      .get('https://www.movistarplus.es/programacion-tv')
       .then(r => r.data)
       .catch(console.log)
 
-    return Object.values(data.data).map(item => {
+    const $ = cheerio.load(html)
+    let scheme = $('script:contains(ItemList)').html()
+    scheme = JSON.parse(scheme)
+
+    return scheme.itemListElement.map(el => {
+      const urlParts = el.item.url.split('/')
+      const site_id = urlParts.pop().toLowerCase()
+
       return {
         lang: 'es',
-        site_id: item.DATOS_CADENA.CODIGO,
-        name: item.DATOS_CADENA.NOMBRE
+        name: el.item.name,
+        site_id
       }
     })
   }
 }
 
-function parseItems(content, channel) {
-  const json = typeof content === 'string' ? JSON.parse(content) : content
-  if (!(`${channel.site_id}-CODE` in json.data)) return []
-  const data = json.data[`${channel.site_id}-CODE`]
-  return data ? data.PROGRAMAS : []
+function parseItems(content) {
+  try {
+    const $ = cheerio.load(content)
+    let scheme = $('script:contains("@type": "ItemList")').html()
+    scheme = JSON.parse(scheme)
+    if (!scheme || !Array.isArray(scheme.itemListElement)) return []
+
+    return scheme.itemListElement
+  } catch {
+    return []
+  }
+}
+
+async function getProgramDescription(programUrl) {
+  try {
+    const response = await axios.get(programUrl, {
+      headers: {
+        'Referer': 'https://www.movistarplus.es/programacion-tv/'
+      }
+    })
+
+    const $ = cheerio.load(response.data)
+    const description = $('.show-content .text p').first().text().trim() || null
+
+    return description
+  } catch (error) {
+    console.error(`Error fetching description from ${programUrl}:`, error.message)
+    return null
+  }
 }

@@ -1,104 +1,1061 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="1-2-3-tv">1-2-3.tv</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="1-2-3-tv-hd">1-2-3.tv HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="3sat">3sat</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="3sat-hd">3sat HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="4music">E4 Extra</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="4seven-hd">4Seven HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="4seven-hd-1">4Seven HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="5-action-hd">5 Action HD</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="5-star">5*</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="adult-section">Adult Section</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="al-arabiya-1">Al Arabiya</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="5-star-1">5 Star +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="5-star-1-1">5 Star +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="5usa-1">5USA +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="5usa-2">5USA</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="5usa-scotland">5USA Scotland</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="92-news">92 News</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="a1-tv">A1 TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="adult-channel-nightly">Adult Channel Nightly</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="akaal-channel">Akaal Channel</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="al-arabiya">Al Arabiya</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="al-jazeera">Al Jazeera</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="al-jazeera-1">Al Jazeera</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="al-jazeera-2">Al Jazeera Arabic</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="al-jazeera-arabic">Al Jazeera (Arabic)</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="al-jazeera-arabic-1">Al Jazeera Arabic</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="al-jazeera-english-1">Al Jazeera English</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="al-jazeera-hd">Al Jazeera HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="al-jazeera-hd-1">Al Jazeera HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="alibi">U&amp;alibi</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="alibi-1">U&amp;alibi +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="alibi-hd">U&amp;alibi HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="allgaeu-tv">allgäu.tv</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="amazing-discoveries">Amazing Discoveries</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="andalucia-tv">Andalucia TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="animal-planet">Animal Planet</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="animal-planet-1">Animal Planet +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="animal-planet-1-1">Animal Planet +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="animal-planet-hd">Animal Planet HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="anixe">ANIXE+</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="anixe-hd">ANIXE HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="aragon-tv">Aragon TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="arang-arirang-tv-korea-world-network">Arirang</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="ard-alpha">ARD-alpha</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="ard-alpha-hd">ARD-alpha HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="arirang-tv-hd">Arirang TV HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="arise-news">Arise News</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="arte">ARTE</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="arte-hd">ARTE HD</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="asharq-news">Asharq News</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="asharq-news-hd">Asharq News HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="astrotv">AstroTV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="augsburg-tv-hd">Augsburg.tv HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="ayozat-tv">Ayozat TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="b4u-movies">B4U Movies</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="b4u-music">B4U Music</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="baby-tv">Baby TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="baden-tv">Baden TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bayerisches-fernsehen-nord-hd">Bayerisches Fernsehen Nord HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bayerisches-fernsehen-sued-hd">Bayerisches Fernsehen Süd HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="baywatch-1">Baywatch</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="baywatch-2">Baywatch</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc1">BBC1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc1-northern-ireland">BBC1 (Northern Ireland)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc1-scotland">BBC1 (Scotland)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc1-south">BBC1 (South)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc1-wales">BBC1 (Wales)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc2-england">BBC2 (England)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc3-england-hd-vm">BBC3 England HD (VM)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc3-northern-ireland-hd-vm">BBC3 Northern Ireland HD (VM)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc3-scotland-hd-vm">BBC3 Scotland HD (VM)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc3-wales-hd-vm">BBC3 Wales HD (VM)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-1-northern-ireland-hd-vm-custom">BBC One Northern Ireland HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-1-scotland-hd-vm-custom">BBC One Scotland HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-1-wales-hd-vm-custom">BBC One Wales HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-1ondon-hd-vm-custom-l">BBC One London HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-2-england-hd-vm-custom">BBC 2 England HD (VM Custom)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-alba">BBC Alba</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-alba-1">BBC Alba</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-alba-2">BBC Alba</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-alba-hd">BBC Alba HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-four-england-split">BBC Four England Split</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-four-hd">BBC Four HD</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-london-hd">BBC ONE London HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-four-ni-split">BBC Four NI Split</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-four-scotland-split">BBC Four Scotland Split</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-four-wales-split">BBC Four Wales Split</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-news-hd">BBC News HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-cambridgeshire">BBC One Cambridgeshire</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-channel-islands">BBC One Channel Islands</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-channel-islands-hd">BBC One Channel Islands HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-east">BBC One East</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-east-hd">BBC One East HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-east-midlands">BBC One E Midlands</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-east-midlands-hd">BBC One East Midlands HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-east-midlands-hd-vm">BBC One East Midlands HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-east-west-hd-vm">BBC One East West HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-hd">BBC One HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-hd-northern-ireland">BBC One N Ireland HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-hd-northern-ireland-1">BBC One Northern Ireland HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-hd-scotland">BBC One Scotland HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-hd-scotland-1">BBC One Scotland HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-hd-wales">BBC One Wales HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-hd-wales-1">BBC One Wales HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-hdondon-l">BBC One England HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-north-east-cumbria">BBC One N East</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-north-east-cumbria-hd">BBC One North East &amp; Cumbria HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-north-east-cumbria-hd-vm">BBC One North East &amp; Cumbria HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-north-west">BBC One N West</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-north-west-hd">BBC One North West HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-north-west-hd-vm">BBC One North West HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-northern-ireland">BBC One N Ireland</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-oxford-hd-vm">BBC One Oxford HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-oxfordshire">BBC One Oxfordshire</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-oxfordshire-hd">BBC One Oxfordshire HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-scotland">BBC One Scotland</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-south">BBC One South</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-south-east">BBC One S East HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-south-east-hd">BBC One South East HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-south-east-hd-vm">BBC One South East HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-south-east-out-of-region-basildon-vm">BBC One South East Out of Region Basildon</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-south-east-out-of-region-croydon-crawley-vm">BBC One South East Out of Region Croydon &amp; Crawley</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-south-hd">BBC One South HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-south-hd-vm">BBC One South HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-south-west">BBC One S West</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-south-west-hd">BBC One South West HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-south-west-hd-vm">BBC One South West HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-wales">BBC One Wales</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-west">BBC One West</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-west-hd">BBC One West HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-west-hd-vm">BBC One West HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-west-midlands">BBC One W Midlands</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-west-midlands-hd">BBC One West Midlands HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-west-midlands-hd-vm">BBC One West Midlands HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-yorkshire">BBC One Yorkshire</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-yorkshire-hd">BBC One Yorkshire HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-yorkshire-hd-vm">BBC One Yorkshire HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-yorkshireincolnshire-hd-l">BBC One Yorkshire &amp; Lincolnshire HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-yorksincs-hd-vm-l">BBC One Yorks &amp; Lincs HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-one-yorksincs-l">BBC One Yorks &amp; Lincs</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-oneondon-hd-vm-l">BBC One London HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-oneondon-l">BBC One London</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-parliament-hd">BBC Parliament HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-parliament-hd-vm">BBC Parliament HD (VM)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-red-button-2">BBC Red Button 2</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-red-button-3">BBC Red Button 3</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-red-button-4">BBC Red Button 4</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-red-button-5">BBC Red Button 5</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-red-button-6">BBC Red Button 6</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-red-button-hd">BBC Red Button HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-red-button-hd-1">BBC Red Button HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-scotland">BBC Scotland</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-scotland-hd">BBC Scotland HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-scotland-hd-scotland">BBC Scotland HD (Scotland)</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-three-hd">BBC Three HD</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-two-hd">BBC Two HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-two-hd-national-england">BBC Two HD (National England)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-two-hd-national-england-for-scotland">BBC Two HD (National England for Scotland)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-two-ni-hd">BBC Two NI HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-two-northern-ireland">BBC Two N Ireland</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-two-northern-ireland-hd">BBC Two (Northern Ireland) HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-two-wales">BBC Two Wales</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-two-wales-hd">BBC Two Wales HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-two-wales-hd-1">BBC Two (Wales) HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bbc-world-news-hd">BBC News Europe HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="best-direct">Best Direct</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bibel-tv">Bibel TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bibel-tv-hd">Bibel TV HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="birmingham-tv">Birmingham TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="blaze">BLAZE</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="blaze-1-freeview">Blaze +1 (Freeview)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="blaze-2">Blaze</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="blaze-freeview">Blaze (Freeview)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bloomberg-tv-hd">Bloomberg TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="boomerang">Boomerang HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="boomerang-1">Boomerang +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="boomerang-1-1">Boomerang +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="boomerang-hd">Boomerang HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="boomerang-uk">Boomerang UK</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="box-hits">4Music</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="box-nation">Box Nation</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="br-fernsehen-nord">BR Fernsehen Nord</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="br-fernsehen-sued">BR Fernsehen Süd</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bristol-tv">Bristol TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="british-muslim-tv">British Muslim TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bt-sport-1">TNT Sports 1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bt-sport-1-hd">TNT Sports 1 HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bt-sport-2">TNT Sports 2</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bt-sport-2-hd">TNT Sports 2 HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bt-sport-3">TNT Sports 3</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bt-sport-3-hd">TNT Sports 3 HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bt-sport-4k-hidden-content">BT Sport 4K Hidden Content</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bt-sport-box-office-2">TNT SPORTS BOX OFFICE 2 HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bt-sport-box-office-hd">TNT SPORTS BOX OFFICE 1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bt-sport-box-office-hd-1">TNT SPORTS BOX OFFICE 1 (ROI)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bt-sport-espn">TNT Sports 4</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bt-sport-espn-hd">TNT Sports 4 HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bt-sport-extra-1">TNT Sports 5</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bt-sport-extra-1-1">BT Sport Extra 1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bt-sport-extra-1-hd">TNT Sports 5 HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bt-sport-extra-2">TNT Sports 6</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bt-sport-extra-2-hd">TNT Sports 6 HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bt-sport-extra-3">TNT Sports 7</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bt-sport-extra-3-hd">TNT Sports 7 HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bt-sport-extra-4">TNT Sports 8</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bt-sport-extra-4-hd">TNT Sports 8 HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bt-sport-extra-5">TNT Sports 9</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bt-sport-extra-5-hd">TNT Sports 9 HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bt-sport-extra-6">TNT Sports 10</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bt-sport-extra-6-hd">TNT Sports 10 HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bt-sport-hd-hidden">BT SPORT HD HIDDEN</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bt-sport-uhd-4k">TNT Sports UHD 4K</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bt-sport-ultimate-pop-up">BT SPORT ULTIMATE POP UP</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="bt-sport-ultimate-uhd">TNT Sports Ultimate UHD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="canal-24h">Canal 24H</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="canal-extremadura">Canal Extremadura</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="cardiff-tv">Cardiff TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="cartoon-network">Cartoon Network</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="cartoon-network-1">Cartoon Network +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="cartoon-network-1-1">Cartoon Network +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="cartoon-network-hd">Cartoon Network HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="cartoon-network-uk">Cartoon Network UK</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="cartoon-network-uk-hd">Cartoon Network UK HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="cartoonito">Cartoonito HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="cartoonito-1">Cartoonito</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="cbbc-hd">CBBC HD</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="cbeebies-hd">CBeebies HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="cbs-drama">True Crime Xtra</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="cbs-justice">Legend</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="cbs-reality">True Crime</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="cbs-reality-1">True Crime +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="celebration-tv">Celebration TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="cgtn-documentary">CGTN Documentary HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="cgtn-francais">CGTN Français</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="challenge">Challenge</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="channel21">Channel21</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="channel-4-1-1">Channel 4 +1</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="channel-4-hd">Channel 4 HD</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="channel-5-hd">Channel 5 HD</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="create-craft">Create &amp; Craft</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="drama-1">Drama +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="channel-4-midlands">Channel 4 (Midlands)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="channel-4-midlands-p1-vm">Channel 4 (Midlands((P1)(VM)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="channel-4-ni-p1-vm">Channel 4 (NI)(P1)(VM)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="channel-4-ni-vm">Channel 4 (NI)(VM)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="channel-4-north">Channel 4 (North)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="channel-4-north-p1-vm">Channel 4 (North)(P1)(VM)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="channel-4-s-e-wales-p1-vm">Channel 4 (S/E/Wales)(P1)(VM)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="channel-4-scot-p1-vm">Channel 4 (Scot)(P1)(VM)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="channel-4-scotland">Channel 4 (Scotland)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="channel-4-south-east">Channel 4 South &amp; East</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="channel-4-south-east-1">Channel 4 South &amp; East</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="channel-4-vodogo-l">Channel 4 VoD Logo</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="channel-5-hd">5 HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="channel-5-vodogo-l">Channel 5 VoD Logo</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="channel-5ondon-audio-desc-l">5 (London Audio Desc)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="channel-7">Channel 7</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="channel-21-hd">Channel 21 HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="channel-44">Channel 44</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="channel-s">Channel S</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="channels-24">Channels 24</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="chart-show-retro">That&apos;s Dance</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="children-s-itv">Children&apos;s ITV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="chstv">CHSTV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="classic-hits">That&apos;s Christmas</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="classic-hits-1">That&apos;s Christmas (Freeview)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="clubland">Clubland</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="cnbc">CNBC</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="cnbc-hd">CNBC HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="cnn">CNN International</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="cnn-international">CNN HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="cnn-international-2">CNN International</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="cnn-international-hd">CNN International HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="colors">Colors</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="colors-cineplex">Colors Cineplex</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="colors-gujarati">Colors Gujarati</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="colors-hd">Colors HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="colors-rishtey">Colors Rishtey</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="comedy-central">Comedy Central UK</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="comedy-central-1">Comedy Central UK +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="comedy-central-2">Comedy Central</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="comedy-central-austria">Comedy Central (Austria)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="comedy-central-extra">Comedy Central Extra UK</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="comedy-central-hd">Comedy Central UK HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="court-tv">Court TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="craft-extra">Craft Extra (Sky)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="create-and-craft-1">Create and Craft</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="create-craft-hd">Create &amp; Craft HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="crime-and-investigation-network">Crime &amp; Investigation</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="crime-and-investigation-network-1">Crime and Investigation Network</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="crime-investigation-1">Crime + Investigation +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="crime-investigation-network">Crime &amp; Investigation Network</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="crime-investigation-network-1">Crime &amp; Investigation +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="crime-investigation-network-hd">Crime &amp; Investigation HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="cruise1st-tv">Cruise1st.tv</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="cruise1st-tv-1">Cruise1st TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="ctc">CTC</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="cubavision-internacional">Cubavisión Internacional</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="dangal">Music India</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="das-erste">Das Erste</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="das-erste-hd">Das Erste HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="dave">U&amp;Dave</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="dave-hd">U&amp;Dave HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="dave-ja-vu">U&amp;DaveJaVu</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="daystar">Daystar</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="daystar-hd">Daystar HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="dazn-women-s-football">DAZN Women&apos;s Football</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="deal-masters">Deal Masters</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="deal-or-no-deal">Deal or no Deal</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="deal-or-no-deal-tivo">Deal or No Deal (TiVo)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="deen-tv">Deen TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="deutsches-musik-fernsehen">DMF</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="die-neue-zeit-tv">Die neue Zeit TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="discovery-channel-1">Discovery Channel</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="discovery-channel-1-1">Discovery Channel +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="discovery-channel-hd">Discovery HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="discovery-history">Discovery History</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="discovery-history-1">Discovery History +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="discovery-history-1-1">Discovery History +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="discovery-science">Discovery Science</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="discovery-science-1">Discovery Science +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="discovery-science-1-1">Discovery Science +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="discovery-turbo">Discovery Turbo</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="discovery-turbo-1">Discovery Turbo +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="disney-channel-2">Disney Channel</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="dmax-1">DMAX +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="dmax-1-1">DMAX +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="dmax-2">DMAX</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="dmax-austria">DMAX Austria</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="drama">U&amp;Drama HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="drama-1">U&amp;Drama+1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="drama-2">U&amp;Drama</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="dunamis-tv">Dunamis TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="dunya-news">Dunya News</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="e4-1">E4 +1</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="e4-extra">E4 Extra</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="earthxtv-1">EarthxTV</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="failarmy-1">FailArmy</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="e4-hd">E4 HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="earth-x-tv-europe">EarthxTV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="eden">U&amp;Eden</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="eden-1">U&amp;Eden+1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="eden-hd">U&amp;Eden HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="eden-hd-1">U&amp;Eden HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="equi8">Genius Trend</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="euronews">euronews</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="euronews-1">euronews</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="euronews-2">euronews</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="euronews-3">euronews</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="eurosport-1">Eurosport 1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="eurosport-1-1">Eurosport 1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="eurosport-1-hd">British Eurosport HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="eurosport-1-hd-1">Eurosport 1 HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="eurosport-1-vm-custom">Eurosport 1 (VM Custom)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="eurosport-2">Eurosport 2</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="eurosport-2-hd">Eurosport 2 HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="eurosport-2-vm-custom">Eurosport 2 (VM Custom)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="ewtn">Eternal Word Television Network</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="ewtn-katholisches-fernsehen">EWTN Katholisches Fernsehen</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="extreme">Extreme</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="extreme-channel">Extreme Channel</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="failarmy">FailArmy</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="faith-uk">Faith UK</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="fashion-4k-uhd">Fashion 4K</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="fear-factor">Fear Factor</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="film4-1">Film4 +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="film4-hd">Film4 HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="folx-tv-hd">Folx TV HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="food-network-1">Food Network +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="food-network-3">Food Network</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="foodxp">Foodxp</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="france-24-arabic">France 24 Arabic</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="france-24-english">France 24 English</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="france-24-english-hd">France 24 English HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="france-24-hd">France 24 HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="franken-fernsehen-hd">Franken Fernsehen HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="free-sports">Viaplay Xtra</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="freenet-shopping">Freenet Shopping</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="freesports-hd">Viaplay Xtra HD</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="freeview-information">Freeview Information</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="galicia-tv-europa">Galicia TV Europa</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="gb-news-1">GB News</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="gb-news-vm">GB News VM</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="gems-tv">Gems TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="geniusplustv">GeniusPlusTV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="geo-entertainment">GEO Entertainment</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="geo-news">Geo News</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="geo-tv">GEO TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="ginx-tv-hd">GINX TV HD</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="god">God</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="great-action">Great! Action</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="great-movies">GREAT! movies</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="great-movies-1-freeview">GREAT! movies +1 (Freeview)</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="great-romance">GREAT! Romance</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="great-tv">GREAT! tv</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="great-tv-1">Great TV +1</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv1-1">ITV1 +1</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv1-hd-london">ITV1 London HD</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv1-london">ITV1 London</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="gold">U&amp;GOLD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="gold-1">U&amp;GOLD +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="gold-hd">U&amp;GOLD HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="gold-vm-test">Gold VM Test</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="good-news-tv">Good News TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="great-british-menu">Great British Menu</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="great-british-menu-tivo">Great British Menu (TiVo)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="great-movies-vm">Great Movies (VM)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="great-real">Tiny Pop SD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="great-real-1">Tiny Pop +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="handystar">Handystar</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="haunttv">HauntTV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="haunttv-tivo">HauntTV (TiVo)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="healthtv">HealthTV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="heart">Heart</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="hgtv-1-uk">HGTV +1 (UK)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="hi-impact-tv">Hi-Impact TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="high-street-tv-2">High Street TV 2</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="high-street-tv-3">High Street TV 3</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="high-street-tv-4">Ideal World</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="high-street-tv-5">High Street TV 4</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="history-hit-tivo">History Hit (TiVo)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="history-hunters">History Hunters</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="hobby-maker-hd">Hobby Maker HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="hobby-maker-hd-1">Hobby Maker HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="hochanda">Shop Extra</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="home-and-garden-tv">Home &amp; Garden TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="homes-under-the-hammer">Homes Under the Hammer</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="homes-under-the-hammer-tivo">Homes Under The Hammer (TiVo)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="horror-channel">Legend Xtra</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="horror-channel-1">Legend Xtra +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="hse24">HSE</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="hse24-extra">HSE EXTRA</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="hse24-extra-hd">HSE EXTRA HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="hse24-hd">HSE HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="hse24-trend">HSE TREND</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="hum-europe">HUM Europe</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="hum-europe-1">HUM Europe</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="hum-masala-europe">HUM Masala (Europe)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="i24-news">i24 News</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="id">ID</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="id-1">ID +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="ideal-world">Ideal World</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="india-today">India Today</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="inside-crime-uk">Inside Crime</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="inside-crime-uk-tivo">Inside Crime UK (TiVo)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="inspiration-tv">Inspiration TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="investigation-discovery">Investigation Discovery</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="ion-tv">iON TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="iqra-bangla">IQRA BANGLA</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="iqra-tv">IQRA TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="iran-international-hd">Iran International HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="islam-channel">Islam Channel</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="islam-channel-2">Islam Channel</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="islam-channel-urdu">Islam Channel Urdu</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="islam-tv">Islam TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv1-anglia">ITV1 Anglia</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv1-anglia-east-1">ITV1 (Anglia East)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv1-anglia-west-1">ITV1 (Anglia West)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv1-border">ITV1 Border</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv1-border-scotland">ITV1 Border (Scotland)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv1-border-scotland-hd">ITV1 Border (Scotland) HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv1-central">ITV1 Central</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv1-central-east">ITV1 (Central East)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv1-central-plus-1-hour">ITV1 Central (Plus 1 Hour)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv1-central-south">ITV1 (Central South)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv1-central-west">ITV1 (Central West)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv1-channel-islands">ITV1 Channel Islands</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv1-granada">ITV1 Granada</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv1-granada-border-1">ITV1 Granada Border +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv1-granada-hd">ITV1 (Granada) HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv1-hd-central-west-and-wales">ITV1 HD (Central, West and Wales)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv1-hd-granada-yorkshire-border">ITV1 HD (Granada, Yorkshire, Border)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv1-hd-meridian-anglia">ITV1 Meridian, Anglia HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv1-hd-meridian-vm-custom">ITV1 HD Meridian (VM Custom)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv1-hd-wales">ITV1 HD (Wales)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv1-hdondon-l">ITV1 London HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv1-meridian-south">ITV1 (Meridian South)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv1-meridian-south-east">ITV1 (Meridian South East)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv1-meridian-south-east-1">ITV1 (Meridian South East)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv1-south-meridian">ITV1 S Meridian</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv1-tyne-tees">ITV1 Tyne Tees</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv1-tyne-tees-south">ITV1 (Tyne Tees South)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv1-wales">ITV1 (Wales)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv1-wales-1">ITV1 Wales West S West +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv1-west">ITV1 (West)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv1-westcountry">ITV1 Westcountry</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv1-yorkshire">ITV1 Yorkshire</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv1-yorkshire-east-1">ITV1 (Yorkshire East)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv1ondon-1-l">ITV1 (London)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv1ondon-2-l">ITV1 (London)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv1ondon-hd-vm-custom-l">ITV1 London HD (VM Custom)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv1ondon-l">ITV1 London</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv2-1">ITV2 +1</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv3-1-freeview">ITV3 +1 (Freeview)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv2-hd">ITV2 HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv2-hd-1">ITV2 HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv3-1">ITV3 +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv3-freeview-1">ITV3 +1 (Freeview)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv3-hd">ITV3 HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv3-hd-1">ITV3 HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv4-1">ITV4 +1</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv4-1-freeview">ITV4 +1 (Freeview)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv4-hd">ITV4 HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv4-hd-1">ITV4 HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv-1">ITV1 +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv-1-south-east">ITV1 S East +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv-1-west-country">ITV +1 (West Country)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv-anglia-east-hd">ITV Anglia East HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv-anglia-west-hd">ITV Anglia West HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv-audio-desc">ITV Audio Desc</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv-be-hd">ITV Be HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv-border-england-hd">ITV Border (England) HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv-central-east-hd">ITV Central East HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv-central-west-hd">ITV Central West HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv-granada-hd">ITV Granada HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv-meridan-south-hd">ITV Meridian South HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv-meridian-north-hd">ITV Meridian North HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv-meridian-south-east-hd">ITV Meridian South East HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv-tyne-tees-hd">ITV Tyne Tees HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv-vodogo-l">ITV VoD Logo</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv-west-hd">ITV West HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv-west-hd-1">ITV West HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv-westcountry-hd">ITV West Country HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv-yorkshire-east-hd">ITV Yorkshire East HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itv-yorkshire-west-hd">ITV Yorkshire West HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itvbe-1">ITVBe +1</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itvbe-1-freeview">ITVBe +1 (Freeview)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="itvbe-hd">ITVBe HD</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="jewellery-maker-freeview">Jewellery Maker (Freeview)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="juwelo-hd">Juwelo HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="juwelo-tv">Juwelo TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="kabel-eins">kabel eins</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="kabel-eins-1">kabel eins</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="kabel-eins-austria">kabel eins austria</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="kabel-eins-doku">Kabel eins Doku</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="kabel-eins-doku-1">kabel eins Doku</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="kanshi-tv">Kanshi TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="kerrang">Kerrang!</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="ketchup-tv">Ketchup TV</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="legend">Legend</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="legend-xtra">Legend Xtra</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="kika">KiKA</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="kika-hd">KiKA HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="kmtv">KMTV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="ktv">KTV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="la-tienda-en-casa">La Tienda en Casa</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="latesttv-brighton">LatestTV (Brighton)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="lci-hd">LCI HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="lcp-hd">LCP HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="leeds-tv">Leeds TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="lfc">LFC</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="lfc-tv-hd">LFC TV HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="liverpool-football-club-tv">Liverpool Football Club TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="liverpool-tv">Liverpool TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="londonive-l">London TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="m6-boutique-co-hd">M6 Boutique &amp; Co HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="magic">Magic</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="main-tv-hd">main.tv HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="manchester-united-television">MUTV (Man Utd)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="manchester-united-television-hd">Manchester United Television HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="matv-national">MATV NATIONAL</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="mbc">MBC</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="mdr-sachsen">MDR Sachsen</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="mdr-sachsen-anhalt">MDR Sachsen-Anhalt</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="mdr-sachsen-anhalt-hd">MDR Sachsen-Anhalt HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="mdr-sachsen-hd">MDR Sachsen HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="mdr-thueringen">MDR Thüringen</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="mdr-thueringen-hd">MDR Thüringen HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="mediashop-neuheiten">MediaShop - Neuheiten</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="meintv-shop">MeinTV Shop</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="melodie-tv">Melodie TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="more4-1">More4 +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="more4-1-1">More4 +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="more-4-hd">More 4 HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="movies-24">Movies 24</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="movies-24-1">Movies 24+</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="mtv">MTV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="mtv-80s-uk-vm">MTV 80s UK (VM)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="mtv-base">MTV 90s UK</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="mtv-classic">MTV 80s UK</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="mtv-deutschland">MTV Deutschland</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="mtv-hd">MTV HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="mtv-hits">MTV Hits</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="mtv-music">MTV Music</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="mtv-music-2">MTV Music</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="mtve">MTV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="mtvive-hd-1-l">MTV Live HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="mtvive-hd-l">MTV Live HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="muenchen-tv-hd">München TV HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="mystery-tv">Mystery TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="mystery-tv-tivo">Mystery TV (TiVo)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="n24-doku">N24 Doku</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="n24-doku-austria">N24 Doku Austria</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="n-tv">n-tv</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="national-geographic">National Geographic</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="national-geographic-1">National Geographic +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="national-geographic-hd">National Geographic HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="national-geographic-hd-1">National Geographic HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="national-geographic-wild">National Geographic Wild</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="national-geographic-wild-hd">National Geographic Wild HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="national-geographic-wild-hd-1">National Geographic Wild HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="ndr-fernsehen-hh">NDR Fernsehen HH</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="ndr-fernsehen-hh-hd">NDR Fernsehen HH HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="ndr-fernsehen-mv">NDR Fernsehen MV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="ndr-fernsehen-mv-hd">NDR Fernsehen MV HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="ndr-fernsehen-nds">NDR Fernsehen NDS</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="ndr-fernsehen-nds-hd">NDR Fernsehen NDS HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="ndr-fernsehen-sh">NDR Fernsehen SH</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="ndr-fernsehen-sh-hd">NDR Fernsehen SH HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="ndtv-good-times">NDTV Good Times</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="new-tang-dynasty-tv">New Tang Dynasty TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="new-vision-tv">New Vision TV</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="newsmax">Newsmax</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="newsmax-tv">Newsmax TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="nextup-comedyive-tivo-l">NextUp Comedy Live (TiVo)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="nextupive-comedy-l">NextUp LIVE Comedy</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="nhk-world-europe">NHK World Europe</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="nhk-world-hd">NHK World HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="nhk-world-japan">NHK World Japan</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="nick-jr">Nick Jr.</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="nick-jr-1">Nick Jr. +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="nick-jr-hd">Nick Jr. HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="nick-jr-too">Nick Jr. Too</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="nick-junior">Nick Junior</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="nick-replay">Nick Replay</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="nickelodeon">Nickelodeon</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="nickelodeon-1">Nickelodeon +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="nickelodeon-2">Nickelodeon</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="nickelodeon-austria">Nickelodeon Austria</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="nickelodeon-hd">Nickelodeon HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="nickelodeon-hd-1">Nickelodeon HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="nicktoons">Nicktoons</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="niederbayern-tv-deggendorf-straubing">Niederbayern TV Deggendorf / Straubing</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="niederbayern-tv-passau">Niederbayern TV Passau</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="niederbayern-tvandshut-l">Niederbayern TV Landshut</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="nitro">Nitro</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="nitro-austria">Nitro Austria</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="northern-visions-belfast">Northern Visions Belfast</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="nosey">Nosey</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="nosey-2">Nosey</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="nottstv">NottsTV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="now-70s">Now 70s</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="now-80s">Now 80s</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="now-80s-1">Now 80s</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="now-90-s-uk">Now Rock</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="now-90s-00s">NOW 90s &amp; 00s</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="now-90s-00s-1">NOW 90s &amp; 00s</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="now-rock-vm">Now Rock (VM)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="ntv">NTV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="oberfranken-tv-hd">Oberfranken TV HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="oberpfalz-tv-hd">Oberpfalz TV HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="oe24-tv-hd">OE24 TV HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="one">one</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="one-hd">one HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="orf-2-europa">ORF 2 Europa</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="orf-2-wien">ORF 2 Wien</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="orf-eins">ORF 1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="paramount-network">5 Action</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="paramount-network-hd">5 Action</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="pbs">PBS America</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="pbs-america-freeview">PBS America (Freeview)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="pcne-chinese-news-entertainment">PCNE</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="pearl-tv">Pearl.tv</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="pearl-tv-hd">Pearl.tv HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="phoenix">PHOENIX</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="phoenix-hd">PHOENIX HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="pick-tv">Sky Mix</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="pick-tv-1">Sky Mix +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="planet-knowledge">Planet Knowledge</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="plutotv-tivo">PlutoTV (TiVo)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="pop-1">POP +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="pop-2">Pop</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="pop-max">Pop Max</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="pop-max-1">Pop Max +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="pop-max-freeview">Pop Max (Freeview)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="premier-sports-2-hd">Premier Sports 2 HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="premier-sports-tv-hd">Premier Sports 1 HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="prime-video">Prime Video</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="prosieben">ProSieben</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="prosieben-1">ProSieben</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="prosieben-austria">ProSieben Austria</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="prosieben-maxx">ProSieben MAXX</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="prosieben-maxx-austria">ProSieben MAXX Austria</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="ptc-punjabi">PTC Punjabi</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="qello-concerts-by-stingray">Qello Concerts By Stingray</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="quest-1">Quest +1</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="qvc-1">QVC</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="quest-1-1">Quest +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="quest-hd">Quest HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="quest-hd-1">Quest HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="quest-red-1">Quest Red +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="quest-red-2">Quest Red</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="qvc">QVC</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="qvc-beauty-1">QVC Beauty</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="qvc-european">QVC</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="qvc-extra">QVC Extra</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="qvc-hd">QVC HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="qvc-hd-1">QVC HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="qvc-hd-2">QVC HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="qvc-style">QVC Style</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="qvc-style-1">QVC Style</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="qvc-style-hd">QVC Style HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="qvc-style-hd-1">QVC Style HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="qvc-uhd-germany">QVC UHD (Germany)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="qvc-uk">QVC</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="qvc-zwei">QVC Zwei</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="qvc-zwei-hd">QVC Zwei HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="racing-tv">Racing TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="racing-tv-hd">Racing TV HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="radio-bremen">RADIO BREMEN</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="radio-bremen-hd">Radio Bremen HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="rai-news-24-hd">Rai News 24 HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="rbb-berlin-fernsehen">RBB Berlin Fernsehen</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="rbb-berlin-fernsehen-hd">RBB Berlin Fernsehen HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="rbb-brandenburg-fernsehen">RBB Brandenburg Fernsehen</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="rbb-brandenburg-hd">RBB Brandenburg HD</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="real-crime">Real Crime</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="real-wild">Real Wild</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="real-wild-tivo">Real Wild (TiVo)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="record-europa">Record Europa</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="regio-tv-schwaben-hd">Regio TV Schwaben HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="regional-fernsehen-oberbayern-hd">Regional Fernsehen Oberbayern HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="republic-bharat">Republic Bharat</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="rewind-tv">Rewind TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="rheinmaintv">rheinmainTV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="ric-tv">RiC</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="rok">ROK</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="rt-hd">RT HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="rte1-network">RTÉ1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="rte-2">RTÉ2</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="rte-2-hd">RTÉ 2 HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="rtl">RTL</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="rtl-1">RTL</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="rtl-2">RTL</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="rtl-bremen-niedersachsen">RTL Bremen/Niedersachsen</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="rtl-plus">RTLup</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="rtl-schleswig-holstein">RTL Schleswig-Holstein</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="rtl-west">RTL West</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="rtlzwei">RTLZWEI</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="rtlzwei-1">RTLZWEI</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="rtlzwei-2">RTLZWEI</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="s4c">S4C</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="s4c-hd">S4C HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="s4c-hd-england-scotland-ni">S4C HD (England, Scotland, NI)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="s4c-hd-wales">S4C HD (Wales)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sab-tv">SAB TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sab-tv-1">SAB TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="samaa">Samaa</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="samaa-tv">Samaa TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sanskar-tv">Sanskar TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sat-1">Sat.1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sat-1-1">Sat.1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sat-1-bayern">Sat.1 Bayern</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sat-1-gold">Sat.1 Gold</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sat-1-gold-oesterreich">Sat.1 Gold Österreich</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sat-1-hamburg-schleswig-holstein">Sat.1 Hamburg &amp; Schleswig-Holstein</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sat-1-hessen-rheinland-pfalz">SAT.1 Rheinland-Pfalz &amp; Hessen</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sat-1-niedersachsen-bremen">Sat.1 Niedersachsen/Bremen</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sat-1-nrw">Sat.1 NRW</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sat-1-oesterreich">Sat.1 Österreich</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="schau-tv-hd">KURIER TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="seen-on-tv-hd">Seen On TV HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="servustv">Servus TV AT</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="set-max">Sony MAX</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="set-max-hd">Sony TV Max HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sheffieldive-l">Sheffield Live</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="shopping-quarter">Shopping Quarter</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sixx">sixx</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sixx-austria">sixx Austria</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-1">Sky One</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-1-1">Sky Showcase +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-2">Sky Replay</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-artist-of-the-year-1">Sky Artist of the Year</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-arts-hd">Sky Arts HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-atlantic">Sky Atlantic</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-atlantic-1">Sky Atlantic +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-atlantic-hd">Sky Atlantic HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-cinema-action">Sky Cinema Action</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-cinema-action-hd">Sky Cinema Action HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-cinema-animation">Sky Cinema Animation</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-cinema-animation-hd">Sky Cinema Animation HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-cinema-comedy">Sky Cinema Comedy</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-cinema-comedy-hd">Sky Cinema Comedy HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-cinema-drama">Sky Cinema Drama</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-cinema-drama-hd">Sky Cinema Drama HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-cinema-family">Sky Cinema Family</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-cinema-family-hd">Sky Cinema Family HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-cinema-greats">Sky Cinema Greats</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-cinema-greats-hd">Sky Cinema Greats HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-cinema-hits">Sky Cinema Hits</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-cinema-hits-hd">Sky Cinema Hits HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-cinema-premiere">Sky Cinema Premiere</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-cinema-premiere-hd">Sky Cinema Premiere HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-cinema-premiere-hd-1">Sky Cinema Premiere HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-cinema-sci-fi-horror">Sky Cinema Sci Fi &amp; Horror</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-cinema-sci-fi-horror-hd">Sky Cinema Sci Fi &amp; Horror HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-cinema-select">Sky Cinema Select</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-cinema-select-hd">Sky Cinema Select HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-cinema-thriller">Sky Cinema Thriller</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-cinema-thriller-hd">Sky Cinema Thriller HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-comedy">Sky Comedy</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-comedy-hd">Sky Comedy HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-comedy-hd-virgin-custom">Sky Comedy HD (Virgin Custom)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-crime">Sky Crime</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-crime-1">Sky Crime +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-crime-2">Sky Crime</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-crime-hd">Sky Crime HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-documentaries">Sky Documentaries</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-documentaries-hd">Sky Documentaries HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-history">Sky History</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-history-1">Sky History +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-history-1-1">Sky History +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-history-2">Sky History 2</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-history-2-hd">Sky History 2 HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-history-hd">Sky History HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-history-hd-1">Sky History HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-intro">Sky Intro</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-kids">Sky Kids</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-kids-1">Sky Kids</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-max-hd">Sky Max HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-max-hd-vm">Sky Max HD (VM)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-max-sd">Sky Max SD</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-mix">Sky Mix</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-mix-hd">Sky Mix HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-mix-hd-1">Sky Mix HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-nature">Sky Nature</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-nature-1">Sky Nature</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-nature-hd">Sky Nature HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-nature-hd-1">Sky Nature HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-news-arabia">Sky News Arabia</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-news-hd">Sky News HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-news-hd-1">Sky News HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-news-hd-2-vm">Sky News HD 2 (VM)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-news-hd-3-vm">Sky News HD 3 (VM)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-news-hd-4-vm">Sky News HD 4 (VM)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-news-hd-5-vm">Sky News HD 5 (VM)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-news-hd-6-vm">Sky News HD 6 (VM)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-news-hd-vm-test">Sky News HD VM Test</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-one-hd">Sky One HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-sport-news">Sky Sport News</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-sports-action">Sky Sports Action</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-sports-action-hd">Sky Sports Action HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-sports-action-hd-1">Sky Sports Action HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-sports-arena">Sky Sports+</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-sports-arena-1">Sky Sports+</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-sports-arena-hd">Sky Sports+ HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-sports-box-office-hd">Sky Sports Box Office HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-sports-classics-1">Sky Sports Classics</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-sports-cricket">Sky Sports Cricket</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-sports-cricket-hd">Sky Sports Cricket HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-sports-f1">Sky Sports F1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-sports-f1-hd">Sky Sports F1 HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-sports-f1-uhd">Sky Sports F1 UHD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-sports-football">Sky Sports Football</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-sports-football-1">Sky Sports Football</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-sports-football-hd">Sky Sports Football HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-sports-golf">Sky Sports Golf</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-sports-golf-1">Sky Sports Golf</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-sports-golf-hd">Sky Sports Golf HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-sports-golf-hd-1">Sky Sports Golf HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-sports-main-event">Sky Sports Main Event</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-sports-main-event-hd">Sky Sports Main Event HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-sports-main-event-uhd">Sky Sports Main Event UHD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-sports-mix">Sky Sports Mix</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-sports-mix-hd">Sky Sports Mix HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-sports-news">Sky Sports News</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-sports-news-hd">Sky Sports News HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-sports-news-hd-1">Sky Sport News HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-sports-news-hd-2">Sky Sports News HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-sports-premiereague-hd-2-l">Sky Sports Premier League HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-sports-premiereague-hd-l">Sky Sports Premier League HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-sports-premiereague-l">Sky Sports Premier League</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-sports-racing">Sky Sports Racing</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-sports-racing-hd">Sky Sports Racing HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-sports-stories-1">Sky Sports Stories</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-sports-tennis-hd">Sky Sports Tennis HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-sports-tennis-hd-1">Sky Sports Tennis HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-sports-tennis-sd">Sky Sports Tennis SD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-sports-vault-1">Sky Sports Vault</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-witness">Sky Witness</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-witness-1">Sky Witness +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sky-witness-hd">Sky Witness HD</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="smile-tv3">Smile TV3</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="smithsonian-channel-hd">Smithsonian Channel HD</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sonlife-broadcasting-network">SonLife Broadcasting Network</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="talk-tv-hd">Talk TV HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sonnenklar-tv">sonnenklar.TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sonnenklar-tv-hd">sonnenklar.TV HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sony-channel">GREAT! tv</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sony-channel-1">Great TV +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sony-channel-2">Sony Channel</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sony-entertainment-television-asia">Sony TV Asia</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sony-entertainment-television-asia-hd">Sony TV Asia HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sony-max">Sony Max</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sony-max-2-hd">Sony Max 2 HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sony-max-hd">SONY MAX HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sony-movies">GREAT! movies</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sony-movies-1">Great Movies +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sony-movies-action">Great Movies Action (VM)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sony-movies-action-1">Great! Action</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sony-movies-action-1-1">Great! Action +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sony-movies-classic">GREAT! Romance</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sony-movies-classic-1">GREAT! Romance+1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sport1">SPORT1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sports-channel-network">Sports Channel Network</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sr-fernsehen">SR Fernsehen</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="sr-fernsehen-hd">SR Fernsehen HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="star-bharat">Utsav Bharat</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="star-gold-hd">Utsav Gold HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="star-plus">STAR Plus</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="star-plus-hd">Utsav Plus HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="star-plus-hd-1">Utsav Plus HD VM</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="stv">STV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="stv-1">STV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="stv-1-1">STV +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="stv-ad">STV AD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="stv-central-east">STV Central East</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="stv-central-east-hd">STV Central East HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="stv-central-west">STV Central West</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="stv-central-west-hd">STV Central West HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="stv-hd">STV HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="stv-north-1">STV North +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="stv-north-dundee-hd">STV North Dundee HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="super-rtl">Super RTL</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="super-rtl-oesterreich">Super RTL Österreich</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="swr-fernsehen-bw">SWR Fernsehen BW</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="swr-fernsehen-bw-hd">SWR Fernsehen BW HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="swr-fernsehen-rp">SWR Fernsehen RP</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="swr-fernsehen-rp-hd">SWR Fernsehen RP HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="syfy-universal">Sky Sci-Fi</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="syfy-universal-hd">Sky Sci-Fi HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="tagesschau24">tagesschau24</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="tagesschau24-hd">tagesschau24 HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="talk-tv-hd">Talk HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="talk-tv-vm">Talk [VM]</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="talking-pictures">Talking Pictures</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="tastemade-str">Tastemade</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="tastemade-tivo">Tastemade (TiVo)</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="tcc">TCC</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="thats-60s">That&apos;s 60s</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="thats-90s">That&apos;s 90s</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="thats-christmas">That&apos;s Christmas</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="thats-tv">That&apos;s TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="teesside-tv">Teesside TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="tele-5">Tele 5</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="tele-maroc">Télé Maroc</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="telesur">TeleSur</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="tg4">TG4</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="tg4-hd">TG4 HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="that-s-70s">That&apos;s TV 2</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="that-s-80s">Thats Melody</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="that-s-90s">That&apos;s Fabulous</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="that-s-cambridge-tv">That&apos;s TV (Cambridgeshire)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="that-s-manchester">That&apos;s Manchester</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="that-s-memories">That&apos;s TV 3</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="that-s-swansea-bay-tv">That&apos;s TV (South Wales)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="that-s-tv">That&apos;s TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="that-s-tv-east">That&apos;s TV (East)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="that-s-tv-gold">That&apos;s TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="that-s-tv-humber">That&apos;s TV (Humber)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="that-s-tv-scotland">That&apos;s TV (Scotland)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="the-box">The Box</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="the-jewellery-channel-hd">The Jewellery Channel HD</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="the-pet-collective">The Pet Collective</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="the-vault">The Vault</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="timeline">History Hit</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="tiny-pop">DNU Tiny Pop</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="tiny-pop-1">Tiny Pop +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="tiny-pop-2">Tiny Pop</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="tiny-pop-freeview">Tiny Pop (Freeview)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="tlc">TLC</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="tlc-1">TLC +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="tlc-2">TLC</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="tlc-hd">TLC HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="tnt-sports-uhd-4k">TNT Sports UHD 4K</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="together-tv-1">Together TV +1</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="true-crime-3">True Crime</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="true-crime-xtra">True Crime Xtra</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="toggo-plus">Toggo Plus</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="trace-sport-stars">Trace Sport Stars</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="trace-urban">Trace Urban</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="travelxp-europe">Travelxp Europe</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="travelxp-europe-hd">Travelxp Europe HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="trt-world">TRT World</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="trt-world-1">TRT World</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="trt-world-hd">TRT World HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="turner-classic-movies">TCM</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="tv5-monde">TV5 Monde (FBSM)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="tv5-monde-europe">TV5 Monde Europe</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="tv-cruise-channel">TV Cruise Channel</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="tv-mainfranken-hd">TV Mainfranken HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="tv-one">TV One</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="tv-trwam-1">TV Trwam</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="tv-warehouse">TV Warehouse</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="tv-warehouse-1">TV Warehouse</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="tva-ostbayern-hd">TVA Ostbayern HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="tvc-news">TVC News</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="tve-internacional">TVE Internacional</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="tyne-wear-tv">Tyne &amp; Wear TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="uktv-play-full-throttle">U&amp;Transport</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="uktv-play-heroes">U&amp;Real Heroes</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="uktv-play-uncovered">U&amp;The Past</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="uktv-playaughs-l">U&amp;Laughs</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="ulster-tv">Ulster TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="utsav-bharat-vm">Utsav Bharat VM</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="utsav-gold-sd">Utsav Gold SD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="utsav-plus-sd">Utsav Plus SD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="utv-1">UTV +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="utv-hd">UTV HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="venus-tv">Siraj TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="vevo">VeVo</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="vision-tv">Vision TV</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="w">W</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="vm-kids">VM Kids</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="vm-music">VM Music</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="vm-showcase">VM Showcase</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="vm-what-s-on">VM What&apos;s On</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="vox">VOX</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="vox-1">VOX</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="vox-2">VOX</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="voxup">VOXup</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="w">U&amp;W</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="w-1">U&amp;W+1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="w-hd">U&amp;W HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="wdr-aachen">WDR Aachen</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="wdr-bielefeld">WDR Bielefeld</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="wdr-bonn">WDR Bonn</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="wdr-dortmund">WDR Dortmund</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="wdr-duesseldorf">WDR Düsseldorf</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="wdr-duisburg">WDR Duisburg</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="wdr-essen">WDR Essen</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="wdr-koeln">WDR Köln</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="wdr-koeln-hd">WDR Köln HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="wdr-muenster">WDR Münster</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="wdr-siegen">WDR Siegen</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="wdr-wuppertal">WDR Wuppertal</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="welt">Welt</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="welt-der-wunder">Welt der Wunder</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="wicked-tuna">Wicked Tuna</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="wildearth">WildEarth</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="wildearth-hd">WildEarth HD</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="wion-hd">WION HD</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="yesterday1-freeview">Yesterday+1 (Freeview)</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="zee-world">Zee World</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="wion">WION</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="wion-hd-uk">WION HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="wipeout-xtra">Wipeout Xtra (TiVo)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="yesterday">U&amp;Yesterday HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="yesterday-1">U&amp;Yesterday+1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="yesterday-1-1">U&amp;Yesterday+1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="yesterday-1-freeview">U&amp;Yesterday+1 (Freeview)</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="yesterday-2">U&amp;Yesterday</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="yesterday-hd">U&amp;Yesterday HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="zdf-1">ZDF</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="zdf-hd">ZDF HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="zdfinfo">ZDFinfo</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="zdfinfo-hd">ZDFinfo HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="zdfneo">ZDFneo</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="zdfneo-hd">ZDFneo HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="zee-cinema-1">Zee Cinema</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="zee-cinema-hd">Zee Cinema HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="zee-punjabi">Zee Punjabi</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="zee-punjabi-1">Zee Punjabi</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="zee-tv">Zee TV HD</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="zee-tv-1">ZEE TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="" site_id="zenlife-by-stingray">ZenLIFE by Stingray</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="4seven.uk" site_id="4seven">4Seven</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="5Action.uk" site_id="5-action-1">5 Action</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="5SELECT.uk" site_id="5select">5SELECT</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="5USA.uk" site_id="5usa">5USA</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="AlJazeeraEnglish.qa" site_id="al-jazeera-english">Al Jazeera English</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="AlJazeera.qa@English" site_id="al-jazeera-english">Al Jazeera English</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="AriseNews.uk" site_id="arise">ARISE</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="Babestation.uk" site_id="babestation-1">Babestation</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="BBCFour.uk" site_id="bbc-four">BBC Four</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="BBCNews.uk" site_id="bbc-news">BBC News</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="BBCOneLondon.uk" site_id="bbc-one-london">BBC One London</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="BBCParliament.uk" site_id="bbc-parliament">BBC Parliament</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="BBCRedButton1.uk" site_id="bbc-red-button-1">BBC Red Button 1</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="BBCThree.uk" site_id="bbc-three">BBC Three</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="BBCTwo.uk" site_id="bbc-two">BBC Two</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="CBBC.uk" site_id="cbbc">CBBC</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="CBeebies.uk" site_id="cbeebies">CBeebies</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="Challenge.uk" site_id="challenge-tv">Challenge TV</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="Challenge.uk" site_id="challenge-tv">Challenge</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="Channel4.uk" site_id="channel-4">Channel 4</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="Channel4Plus1.uk" site_id="channel-4-1">Channel 4 +1</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="Channel5.uk" site_id="channel-5">Channel 5</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="Channel5Plus1.uk" site_id="channel-5-1">Channel 5+1</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="Dave.uk" site_id="dave">Dave</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="Davejavu.uk" site_id="dave-ja-vu">Dave Ja Vu</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="Channel4.uk@Plus1" site_id="channel-4-1">Channel 4 +1</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="Channel5.uk" site_id="channel-5">5</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="Channel5.uk@Plus1" site_id="channel-5-1">Channel 5+1</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="DMAX.uk" site_id="dmax">DMAX</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="Drama.uk" site_id="drama">Drama</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="E4.uk" site_id="e4">E4</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="Film4.uk" site_id="film4">Film4</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="FoodNetwork.uk" site_id="food-network">Food Network</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="GBNews.uk" site_id="gb-news">GB News</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="GBNews.uk" site_id="gb-news">GB News HD</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="HGTV.uk" site_id="hgtv">HGTV</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="IdealWorldTV.uk" site_id="ideal-world-freeview">Ideal World (Freeview)</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="ITV2.uk" site_id="itv2">ITV2</channel>
@@ -106,9 +1063,7 @@
   <channel site="tv24.co.uk" lang="en" xmltv_id="ITV4.uk" site_id="itv4">ITV4</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="ITVBe.uk" site_id="itv-be">ITV BE</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="KissTV.uk" site_id="kiss">Kiss</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="LondonLive.uk" site_id="london-live">London Live</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="More4.uk" site_id="more-4">More 4</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="Pop.uk" site_id="pop">Pop</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="Quest.uk" site_id="quest">Quest</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="QuestRed.uk" site_id="quest-red">Quest Red</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="Really.uk" site_id="really-uktv">Really</channel>
@@ -117,6 +1072,4 @@
   <channel site="tv24.co.uk" lang="en" xmltv_id="TalkingPicturesTV.uk" site_id="talking-pictures-tv">Talking Pictures TV</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="TBNUK.uk" site_id="tbn-uk">TBN UK</channel>
   <channel site="tv24.co.uk" lang="en" xmltv_id="TogetherTV.uk" site_id="together">Together</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="XpandedTV.uk" site_id="xxxpanded-tv">xxXpanded TV</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="Yesterday.uk" site_id="yesterday">Yesterday</channel>
 </channels>

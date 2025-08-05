@@ -1,18 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
+  <channel site="programtv.onet.pl" lang="cs" xmltv_id="CT1.cz" site_id="ct-1-241">CT 1</channel>
+  <channel site="programtv.onet.pl" lang="cs" xmltv_id="CT2.cz" site_id="ct-2-243">CT 2</channel>
+  <channel site="programtv.onet.pl" lang="cs" xmltv_id="TVNova.cz" site_id="nova-331">Nova</channel>
+  <channel site="programtv.onet.pl" lang="de" xmltv_id="13thStreetUniversal.de" site_id="13th-street-250">13th Street</channel>
   <channel site="programtv.onet.pl" lang="de" xmltv_id="3sat.de" site_id="3sat-248">3SAT</channel>
   <channel site="programtv.onet.pl" lang="de" xmltv_id="ARDalpha.de" site_id="ard-alpha-252">ARD-alpha</channel>
+  <channel site="programtv.onet.pl" lang="de" xmltv_id="ATV.at" site_id="atv-251">ATV</channel>
   <channel site="programtv.onet.pl" lang="de" xmltv_id="BeateUhseTV.de" site_id="beate-uhse-tv-256">Beate-Uhse.TV</channel>
+  <channel site="programtv.onet.pl" lang="de" xmltv_id="BibelTV.de" site_id="bibel-tv-266">Bibel TV</channel>
   <channel site="programtv.onet.pl" lang="de" xmltv_id="DasErste.de" site_id="das-erste-350">Das Erste</channel>
-  <channel site="programtv.onet.pl" lang="de" xmltv_id="DeutschesMusikFernsehen.de" site_id="deutsches-musik-fernsehen-119">Deutsches Musik Fernsehen</channel>
+  <channel site="programtv.onet.pl" lang="de" xmltv_id="DMF.de" site_id="deutsches-musik-fernsehen-119">Deutsches Musik Fernsehen</channel>
   <channel site="programtv.onet.pl" lang="de" xmltv_id="DiscoveryChannel.de" site_id="discovery-channel-niem-358">Discovery Channel (niem.)</channel>
-  <channel site="programtv.onet.pl" lang="de" xmltv_id="Eurosport1.de" site_id="eurosport-niem-366">Eurosport 1 (niem.)</channel>
+  <channel site="programtv.onet.pl" lang="de" xmltv_id="DMAX.de" site_id="dmax-428">DMAX</channel>
+  <channel site="programtv.onet.pl" lang="de" xmltv_id="EroX.nl@HD" site_id="erox-hd-520">Erox HD</channel>
+  <channel site="programtv.onet.pl" lang="de" xmltv_id="EroXXX.nl@HD" site_id="eroxxx-hd-512">Eroxxx HD</channel>
+  <channel site="programtv.onet.pl" lang="de" xmltv_id="Eurosport1.fr@Germany" site_id="eurosport-niem-366">Eurosport 1 (niem.)</channel>
   <channel site="programtv.onet.pl" lang="de" xmltv_id="Heimatkanal.de" site_id="heimatkanal-372">Heimatkanal</channel>
   <channel site="programtv.onet.pl" lang="de" xmltv_id="History.de" site_id="history-hd-niem-458">HISTORY HD (niem.)</channel>
+  <channel site="programtv.onet.pl" lang="de" xmltv_id="hrfernsehen.de" site_id="hr-374">HR</channel>
+  <channel site="programtv.onet.pl" lang="de" xmltv_id="kabeleins.de" site_id="kabel-eins-376">Kabel Eins</channel>
   <channel site="programtv.onet.pl" lang="de" xmltv_id="KiKA.de" site_id="ki-ka-377">KI.KA</channel>
+  <channel site="programtv.onet.pl" lang="de" xmltv_id="Motorvision.de" site_id="motorvision-341">Motorvision</channel>
   <channel site="programtv.onet.pl" lang="de" xmltv_id="MTV.de" site_id="mtv-germany-382">MTV Germany</channel>
   <channel site="programtv.onet.pl" lang="de" xmltv_id="MunchenTV.de" site_id="muenchen-tv-486">muenchen.tv</channel>
   <channel site="programtv.onet.pl" lang="de" xmltv_id="Nitro.de" site_id="rtl-nitro-545">Nitro</channel>
+  <channel site="programtv.onet.pl" lang="de" xmltv_id="ntv.de" site_id="n-tv-388">n-tv</channel>
   <channel site="programtv.onet.pl" lang="de" xmltv_id="One.de" site_id="einsfestival-363">ONE</channel>
   <channel site="programtv.onet.pl" lang="de" xmltv_id="ORF1.at" site_id="orf-1-390">ORF 1</channel>
   <channel site="programtv.onet.pl" lang="de" xmltv_id="ORF2.at" site_id="orf-2-393">ORF 2</channel>
@@ -20,7 +33,9 @@
   <channel site="programtv.onet.pl" lang="de" xmltv_id="ProSieben.de" site_id="pro-7-395">PRO 7</channel>
   <channel site="programtv.onet.pl" lang="de" xmltv_id="QVC.de" site_id="qvc-397">QVC</channel>
   <channel site="programtv.onet.pl" lang="de" xmltv_id="rbbFernsehenBerlin.de" site_id="rbb-466">RBB</channel>
+  <channel site="programtv.onet.pl" lang="de" xmltv_id="RedlightHD.nl" site_id="redlight-hd-498">Redlight HD</channel>
   <channel site="programtv.onet.pl" lang="de" xmltv_id="RTL.de" site_id="rtl-401">RTL</channel>
+  <channel site="programtv.onet.pl" lang="de" xmltv_id="RTLSuper.de" site_id="super-rtl-400">Super RTL</channel>
   <channel site="programtv.onet.pl" lang="de" xmltv_id="RTLZwei.de" site_id="rtl-2-399">RTLZWEI</channel>
   <channel site="programtv.onet.pl" lang="de" xmltv_id="SAT1.de" site_id="sat-1-404">SAT.1</channel>
   <channel site="programtv.onet.pl" lang="de" xmltv_id="sixx.de" site_id="sixx-447">sixx</channel>
@@ -28,33 +43,41 @@
   <channel site="programtv.onet.pl" lang="de" xmltv_id="SkyCinemaBestOf.de" site_id="sky-hits-365">Sky Hits</channel>
   <channel site="programtv.onet.pl" lang="de" xmltv_id="SkyCinemaFun.de" site_id="sky-comedy-348">Sky Comedy</channel>
   <channel site="programtv.onet.pl" lang="de" xmltv_id="SkyCinemaSpecial.de" site_id="sky-nostalgie-421">Sky Cinema Special</channel>
+  <channel site="programtv.onet.pl" lang="de" xmltv_id="SkyCinemaUno.it@Plus24" site_id="sky-cinema-24-369">Sky Cinema + 24</channel>
   <channel site="programtv.onet.pl" lang="de" xmltv_id="SkyKrimi.de" site_id="sky-krimi-422">Sky Krimi</channel>
+  <channel site="programtv.onet.pl" lang="de" xmltv_id="SkySportAustria1.at" site_id="sky-sport-austria-444">Sky Sport Austria</channel>
+  <channel site="programtv.onet.pl" lang="de" xmltv_id="SpiegelGeschichte.de" site_id="spiegel-geschichte-379">Spiegel Geschichte</channel>
+  <channel site="programtv.onet.pl" lang="de" xmltv_id="Sport1.de" site_id="sport-1-362">Sport 1</channel>
+  <channel site="programtv.onet.pl" lang="de" xmltv_id="SRF1.ch" site_id="srf-1-406">SRF 1</channel>
+  <channel site="programtv.onet.pl" lang="de" xmltv_id="SRFzwei.ch" site_id="srf-zwei-407">SRF Zwei</channel>
   <channel site="programtv.onet.pl" lang="de" xmltv_id="SYFY.de" site_id="syfy-402">Syfy</channel>
+  <channel site="programtv.onet.pl" lang="de" xmltv_id="TELE5.de" site_id="tele-5-niem-448">Tele 5 (niem.)</channel>
+  <channel site="programtv.onet.pl" lang="de" xmltv_id="VividTouch.uk" site_id="vivid-touch-636">Vivid Touch</channel>
+  <channel site="programtv.onet.pl" lang="de" xmltv_id="VOX.de" site_id="vox-418">VOX</channel>
   <channel site="programtv.onet.pl" lang="de" xmltv_id="WELT.de" site_id="n-24-384">WELT</channel>
   <channel site="programtv.onet.pl" lang="de" xmltv_id="ZDF.de" site_id="zdf-417">ZDF</channel>
   <channel site="programtv.onet.pl" lang="de" xmltv_id="ZDFinfo.de" site_id="zdf-info-430">ZDF Info</channel>
   <channel site="programtv.onet.pl" lang="en" xmltv_id="360TuneBox.nl" site_id="360tunebox-302">360TuneBox</channel>
   <channel site="programtv.onet.pl" lang="en" xmltv_id="AdultChannel.uk" site_id="adult-channel-265">Adult Channel</channel>
-  <channel site="programtv.onet.pl" lang="en" xmltv_id="AlJazeeraEnglish.qa" site_id="al-jazeera-hd-609">Al Jazeera HD</channel>
+  <channel site="programtv.onet.pl" lang="en" xmltv_id="AlJazeera.qa@English" site_id="al-jazeera-hd-609">Al Jazeera HD</channel>
   <channel site="programtv.onet.pl" lang="en" xmltv_id="ArirangWorld.kr" site_id="arirang-tv-30">Arirang TV</channel>
-  <channel site="programtv.onet.pl" lang="en" xmltv_id="BBCNewsEurope.uk" site_id="bbc-world-news-254">BBC News</channel>
-  <channel site="programtv.onet.pl" lang="en" xmltv_id="BloombergTVEurope.uk" site_id="bloomberg-ang-245">Bloomberg (ang.)</channel>
+  <channel site="programtv.onet.pl" lang="en" xmltv_id="BBCNews.uk@Europe" site_id="bbc-world-news-254">BBC News</channel>
+  <channel site="programtv.onet.pl" lang="en" xmltv_id="BloombergTV.us@Europe" site_id="bloomberg-ang-245">Bloomberg (ang.)</channel>
   <channel site="programtv.onet.pl" lang="en" xmltv_id="BlueHustler.nl" site_id="blue-hustler-280">Blue Hustler</channel>
   <channel site="programtv.onet.pl" lang="en" xmltv_id="BrazzersTVEurope.us" site_id="brazzers-tv-europe-279">Brazzers TV Europe</channel>
+  <channel site="programtv.onet.pl" lang="en" xmltv_id="ClubMTVEurope.uk" site_id="mtv-dance-481">Club MTV</channel>
   <channel site="programtv.onet.pl" lang="en" xmltv_id="CNBCEurope.uk" site_id="cnbc-247">CNBC</channel>
-  <channel site="programtv.onet.pl" lang="en" xmltv_id="CNNInternationalEurope.us" site_id="cnn-258">CNN</channel>
-  <channel site="programtv.onet.pl" lang="fr" xmltv_id="DorcelTV.nl" site_id="dorcel-tv-507">Dorcel TV</channel>
-  <channel site="programtv.onet.pl" lang="fr" xmltv_id="DorcelXXX.nl" site_id="dorcel-xxx-506">Dorcel XXX</channel>
-  <channel site="programtv.onet.pl" lang="en" xmltv_id="DWDeutsch.de" site_id="dw-364">DW</channel>
+  <channel site="programtv.onet.pl" lang="en" xmltv_id="CNNInternational.us@MENA" site_id="cnn-258">CNN</channel>
+  <channel site="programtv.onet.pl" lang="en" xmltv_id="DW.de@Deutsch" site_id="dw-364">DW</channel>
   <channel site="programtv.onet.pl" lang="en" xmltv_id="EnglishClubTV.uk" site_id="english-club-tv-148">English Club TV</channel>
-  <channel site="programtv.onet.pl" lang="de" xmltv_id="EroXHD.nl" site_id="erox-hd-520">Erox HD</channel>
-  <channel site="programtv.onet.pl" lang="de" xmltv_id="EroXXXHD.nl" site_id="eroxxx-hd-512">Eroxxx HD</channel>
   <channel site="programtv.onet.pl" lang="en" xmltv_id="EuronewsEnglish.fr" site_id="euronews-367">Euronews</channel>
-  <channel site="programtv.onet.pl" lang="en" xmltv_id="EWTNEurope.us" site_id="ewtn-207">EWTN</channel>
+  <channel site="programtv.onet.pl" lang="en" xmltv_id="EWTNPoland.pl" site_id="ewtn-207">EWTN</channel>
   <channel site="programtv.onet.pl" lang="en" xmltv_id="FashionTVEurope.fr" site_id="fashion-tv-233">Fashion TV</channel>
   <channel site="programtv.onet.pl" lang="en" xmltv_id="FastFunBox.nl" site_id="fast-funbox-hd-104">Fast&amp;FunBox HD</channel>
-  <channel site="programtv.onet.pl" lang="en" xmltv_id="France24English.fr" site_id="france-24-en-70">France 24 - EN</channel>
+  <channel site="programtv.onet.pl" lang="en" xmltv_id="France24.fr@English" site_id="france-24-en-70">France 24 - EN</channel>
+  <channel site="programtv.onet.pl" lang="en" xmltv_id="FREEDOM.ua" site_id="uatv-549">Freedom</channel>
   <channel site="programtv.onet.pl" lang="en" xmltv_id="FunBoxUHD.nl" site_id="funbox-4k-605">FunBox UHD</channel>
+  <channel site="programtv.onet.pl" lang="en" xmltv_id="GINXTV.uk" site_id="ginx-tv-503">Ginx eSports TV</channel>
   <channel site="programtv.onet.pl" lang="en" xmltv_id="GODTV.uk" site_id="god-tv-683">God TV</channel>
   <channel site="programtv.onet.pl" lang="en" xmltv_id="HustlerHD.nl" site_id="hustler-hd-138">Hustler HD</channel>
   <channel site="programtv.onet.pl" lang="en" xmltv_id="HustlerTVEurope.nl" site_id="hustler-tv-107">Hustler TV</channel>
@@ -70,30 +93,40 @@
   <channel site="programtv.onet.pl" lang="en" xmltv_id="PlayboyTVEurope.us" site_id="playboy-tv-482">Playboy TV</channel>
   <channel site="programtv.onet.pl" lang="en" xmltv_id="PrivateTV.nl" site_id="private-tv-351">Private TV HD</channel>
   <channel site="programtv.onet.pl" lang="en" xmltv_id="RealityKingsTV.us" site_id="reality-kings-tv-223">Reality Kings TV</channel>
-  <channel site="programtv.onet.pl" lang="de" xmltv_id="RedlightHD.nl" site_id="redlight-hd-498">Redlight HD</channel>
   <channel site="programtv.onet.pl" lang="en" xmltv_id="SBNTVInternational.us" site_id="sbn-630">SBN</channel>
   <channel site="programtv.onet.pl" lang="en" xmltv_id="SkyNewsInternational.uk" site_id="sky-news-340">Sky News</channel>
+  <channel site="programtv.onet.pl" lang="en" xmltv_id="StingrayClassica.ca" site_id="classica-259">Stingray Classica</channel>
+  <channel site="programtv.onet.pl" lang="en" xmltv_id="StingrayCMusic.ca" site_id="c-music-tv-260">Stingray CMusic</channel>
+  <channel site="programtv.onet.pl" lang="en" xmltv_id="StingrayDJAZZ.ca" site_id="djazz-tv-196">Stingray DJAZZ</channel>
+  <channel site="programtv.onet.pl" lang="en" xmltv_id="StingrayiConcerts.ca" site_id="stingray-iconcert-601">Stingray iConcerts</channel>
   <channel site="programtv.onet.pl" lang="en" xmltv_id="VividREDHD.us" site_id="vivid-red-hd-627">Vivid RED HD</channel>
-  <channel site="programtv.onet.pl" lang="de" xmltv_id="VividTouch.uk" site_id="vivid-touch-636">Vivid Touch</channel>
+  <channel site="programtv.onet.pl" lang="es" xmltv_id="TVEInternacionalEuropeAsia.es" site_id="tve-330">TVE</channel>
   <channel site="programtv.onet.pl" lang="fr" xmltv_id="arte.fr" site_id="arte-253">Arte</channel>
+  <channel site="programtv.onet.pl" lang="fr" xmltv_id="DorcelTV.nl" site_id="dorcel-tv-507">Dorcel TV</channel>
+  <channel site="programtv.onet.pl" lang="fr" xmltv_id="DorcelXXX.nl" site_id="dorcel-xxx-506">Dorcel XXX</channel>
   <channel site="programtv.onet.pl" lang="fr" xmltv_id="France2.fr" site_id="france-2-pl-329">France 2 - PL</channel>
-  <channel site="programtv.onet.pl" lang="fr" xmltv_id="France24French.fr" site_id="france-24-491">France 24</channel>
+  <channel site="programtv.onet.pl" lang="fr" xmltv_id="France24.fr@French" site_id="france-24-491">France 24</channel>
+  <channel site="programtv.onet.pl" lang="fr" xmltv_id="M6.fr" site_id="m-6-215">M 6</channel>
+  <channel site="programtv.onet.pl" lang="fr" xmltv_id="RTS1.ch" site_id="rts-un-410">RTS Un</channel>
+  <channel site="programtv.onet.pl" lang="fr" xmltv_id="RTS2.ch" site_id="rts-deux-411">RTS Deux</channel>
+  <channel site="programtv.onet.pl" lang="fr" xmltv_id="TV5MondeEurope.fr" site_id="tv-5-monde-europe-412">TV 5 Monde Europe</channel>
+  <channel site="programtv.onet.pl" lang="it" xmltv_id="Rai1.it" site_id="rai-1-338">RAI 1</channel>
+  <channel site="programtv.onet.pl" lang="it" xmltv_id="Rai2.it" site_id="rai-2-336">RAI 2</channel>
+  <channel site="programtv.onet.pl" lang="it" xmltv_id="RTL1025TV.it" site_id="rtl-102-5-43">RTL 102.5</channel>
+  <channel site="programtv.onet.pl" lang="nl" xmltv_id="" site_id="belgia-tv1-268">Belgia - TV1</channel>
   <channel site="programtv.onet.pl" lang="nl" xmltv_id="NPO1.nl" site_id="npo-1-385">NPO 1</channel>
   <channel site="programtv.onet.pl" lang="nl" xmltv_id="NPO2.nl" site_id="npo-2-505">NPO 2</channel>
   <channel site="programtv.onet.pl" lang="nl" xmltv_id="NPO3.nl" site_id="npo-3-387">NPO 3</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="13-ulica-hd-509">13 Ulica HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="2x2-604">2x2</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="2x2-hd-613">2x2 HD</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="4fun-hits-283">4FUN KIDS</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="13-tv-312">13.tv</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="13-ulica-hd-509">13 Ulica HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="360tunebox-hd-304">360TuneBox HD</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="4fun-hits-283">4FUN KIDS</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="active-family-hd-301">Active Family HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="adventure-hd-305">Adventure HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="al-jazeera-31">Al Jazeera</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="ale-kino-hd-262">Ale kino+ HD</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="alfa-tvp">Alfa TVP</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="animal-planet-niem-264">Animal Planet (niem.)</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="antena">Antena</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="arte-hd-290">Arte HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="axn-hd-286">AXN HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="axn-spin-hd-292">AXN Spin HD</channel>
@@ -115,14 +148,13 @@
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="canal-sport-hd-12">CANAL+ Sport HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="cartoon-network-hd-310">Cartoon Network HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="cartoon-network-tnt-313">Cartoon Network/Warner TV</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="cbs-europa-317">CBS Europa</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="cbs-europa-hd-309">CBS Europa HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="ci-polsat-hd-640">CI Polsat HD</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="cinemax2-hd-56">Cinemax2 HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="cinemax-hd-57">Cinemax HD</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="cinemax2-hd-56">Cinemax2 HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="classica-hd-281">Stingray Classica HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="clubbing-tv-689">Clubbing TV</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="comedy-central-family-61">Polsat Comedy Central Extra</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="comedy-central-family-hd-612">Polsat Comedy Central Extra HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="comedy-central-hd-60">Comedy Central HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="current-time">Current Time</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="current-time-hd">Current Time HD</channel>
@@ -138,7 +170,7 @@
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="discovery-turbo-xtra-hd-189">DTX HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="disney-channel-hd-216">Disney Channel HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="dizi-692">DIZI</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="dlaciebie-tv-442">dlaCiebie.tv</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="dlaCiebietv.pl" site_id="dlaciebie-tv-442">dlaCiebie.tv</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="docubox-167">DocuBox</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="domo-hd-437">CANAL+ DOMO HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="dorcel-tv-hd-660">Dorcel TV HD</channel>
@@ -146,10 +178,8 @@
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="dr-1-359">DR 1</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="dr-2-361">DR 2</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="ducktv-hd-151">ducktv HD</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="e-entertainment-hd-169">E! Entertainment HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="e-sport-555">E-SPORT</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="e-sport-hd-556">E-SPORT HD</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="echo-24-687">Echo 24</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="eleven-extra-hd-534">Eleven Sports 3 HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="eleven-hd-227">Eleven Sports 1 HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="eleven-hd-sports-228">Eleven Sports 2 HD</channel>
@@ -172,7 +202,6 @@
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="fighttime">FightTime</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="filmax">FILMAX</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="filmbox-arthouse-hd-190">FilmBox Arthouse HD</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="filmbox-premium-85">FilmBox Premium HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="fokus-tv-hd-47">Fokus TV HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="food-network-hd-240">Food Network HD - EN</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="fox-comedy-hd-405">FX Comedy HD</channel>
@@ -183,9 +212,8 @@
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="goldstar-tv-371">Goldstar TV</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="golf-channel-hd-554">Golf Channel HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="h2-hd-205">HISTORY2 HD</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="hbo2-hd-27">HBO2 HD</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="hbo-3-hd-28">HBO3 HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="hbo-hd-26">HBO HD</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="hbo2-hd-27">HBO2 HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="hgtv-hd-558">HGTV HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="history-hd-92">HISTORY HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="hse-24-457">GM24</channel>
@@ -198,12 +226,10 @@
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="kuchnia-hd-434">CANAL+ KUCHNIA HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="kus-kus">Kus Kus</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="kvartal-tv">Kvartal TV</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="lubelska-tv-210">New TV</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="mdr-381">MDR</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="metro-hd-536">METRO HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="mgm-hd-68">AMC HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="minimini-hd-435">MiniMini+ HD</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="mixtape">MIXTAPE</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="motowizja-hd-194">Motowizja HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="mtv-europe-118">MTV Europe</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="mtv-polska-hd-557">MTV Polska HD</channel>
@@ -217,7 +243,6 @@
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="national-geographic-channel-hd-34">National Geographic HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="nautical-channel-hd-626">Nautical Channel HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="ndr-383">NDR</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="news24">News24</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="nick-488">NICK</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="nick-jr-hd-662">Nick Jr. HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="nicktoons-hd-631">Nicktoons HD</channel>
@@ -231,7 +256,6 @@
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="nuta-tv-hd-213">Nuta.TV HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="ontv-137">ONTV</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="ontv-hd-161">ONTV HD</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="planete-hd-432">Planete+ HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="polonia-1-328">Polonia 1</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="polsat-2-hd-218">Polsat 2 HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="polsat-caf-hd-219">Polsat Café HD</channel>
@@ -274,201 +298,166 @@
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="stingray-djazz-hd-619">Stingray DJAZZ HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="stingray-iconcerts-hd-681">Stingray iConcerts HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="stopklatka-hd-186">STOPKLATKA HD</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="studiomed-tv-688">StudioMED TV</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="sundance-channel-hd-392">Sundance TV HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="super-polsat-hd-560">Super Polsat HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="super-tv-690">XTREME TV</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="superstacja-hd-550">Wydarzenia 24 HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="swr-408">SWR</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tbn-polska-hd-621">TBN Polska HD</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="teennick">TeenNick</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tele-5-hd-147">Tele 5 HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="teletoon-hd-438">teleTOON+ HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="telewizja-pomerania-41">Telewizja Pomerania</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tlc-hd-163">TLC HD</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tnt-hd-220">Warner TV HD</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="top-kids-225">Top Kids</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="top-kids-hd-224">Top Kids HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="top-kids-jr-685">JUNIOR MUSIC</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="top-kids-jr-hd-664">JUNIOR MUSIC HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="toya-467">TOYA</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="travel-channel-hd-152">Travel Channel HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="ttv-33">TTV HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tv-4-hd-222">TV 4 HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tv-6-hd-561">TV 6 HD</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tv-asta-495">TV ASTA</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tv-asta-hd-552">TV ASTA HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tv-berlin-414">TV.Berlin</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tv-okazje-hd-633">TV Okazje HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tv-puls-hd-197">TV Puls HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tv-regio-679">TV Regio</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tv-regionalna-lubin-166">TV Regionalna Lubin</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVRegionalnaLubin.pl" site_id="tv-regionalna-lubin-166">TV Regionalna Lubin</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tv-republika-hd-16">TV Republika HD</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tvn-7-hd-142">TVN 7 HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tvn-24-biznes-i-swiat-hd-537">TVN24 BiS HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tvn-24-hd-158">TVN 24 HD</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tvn-7-hd-142">TVN 7 HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tvn-fabula-hd-37">TVN Fabuła HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tvn-hd-98">TVN HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tvn-style-hd-141">TVN Style HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tvn-turbo-hd-143">TVN Turbo HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tvp-1-hd-380">TVP 1 HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tvp-2-hd-145">TVP 2 HD</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tvp-3-bialystok-5">TVP 3 Białystok</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tvp-3-bydgoszcz-378">TVP 3 Bydgoszcz</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tvp-3-gdansk-386">TVP 3 Gdańsk</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tvp-3-gorzow-wielkopolski-342">TVP 3 Gorzów Wielkopolski</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tvp-3-katowice-394">TVP 3 Katowice</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tvp-3-kielce-475">TVP 3 Kielce</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tvp-3-krakow-403">TVP 3 Kraków</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tvp-3-lodz-416">TVP 3 Łódź</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tvp-3-lublin-409">TVP 3 Lublin</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tvp-3-olsztyn-339">TVP 3 Olsztyn</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tvp-3-opole-335">TVP 3 Opole</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tvp-3-poznan-425">TVP 3 Poznań</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tvp-3-rzeszow-433">TVP 3 Rzeszów</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tvp-3-szczecin-440">TVP 3 Szczecin</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tvp-3-warszawa-446">TVP 3 Warszawa</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tvp-3-wroclaw-454">TVP 3 Wrocław</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tvp-dokument">TVP Dokument</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tvp-info-hd-525">TVP Info HD</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tvp-kobieta">TVP Kobieta</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tvp-kultura-hd-680">TVP Kultura HD</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tvp-nauka">TVP Nauka</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tvp-sport-hd-39">TVP Sport HD</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tvp-wilno">TVP Wilno</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tvr-hd-170">HOME TV HD</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tvregionalna-pl-622">tvregionalna.pl</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tvs-hd-109">TVS HD</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="tvt-500">TVT</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="twoja-telewizja-morska-490">Twoja Telewizja Morska</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="twoja-tv-514">Twoja.TV</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="ukraina-1">Ukraina 1</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="ukraina-2">Ukraina 2</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="ultra-tv-4k-669">ULTRA TV 4K</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="water-planet-hd-156">Water Planet HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="wdr-420">WDR</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="wp-hd-533">WP HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="wpolsce-pl-hd-637">wPolsce.pl HD</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="wtk-492">WTK</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="xsport">XSport</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="zdf-hd-136">ZDF HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="zoom-tv-hd-527">ZOOM TV HD</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="13tv.pl" site_id="13-tv-312">13.tv</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="13Ulica.pl" site_id="13-ulica-316">13 Ulica</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="4FunDance.pl" site_id="4fun-fit-dance-244">4FUN DANCE</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="4FunTV.pl" site_id="4fun-tv-269">4FUN.TV</channel>
-  <channel site="programtv.onet.pl" lang="de" xmltv_id="13thStreetUniversal.de" site_id="13th-street-250">13th Street</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="13Ulica.pl" site_id="13-ulica-316">13 Ulica</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="ActiveFamily.pl" site_id="active-family-300">Active Family</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="AdventureTV.pl" site_id="adventure-303">Adventure</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="AleKinoPlus.pl" site_id="ale-kino-319">Ale kino+</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="AMC.pl" site_id="mgm-333">AMC</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="AlfaTVP.pl" site_id="alfa-tvp">Alfa TVP</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="AMCEurope.uk@Poland" site_id="mgm-333">AMC</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="AnimalPlanet.pl" site_id="animal-planet-hd-284">Animal Planet HD</channel>
-  <channel site="programtv.onet.pl" lang="de" xmltv_id="ATV.at" site_id="atv-251">ATV</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="AntenaHD.pl" site_id="antena">Antena</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="AXNBlack.us" site_id="axn-black-271">AXN Black</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="AXNEurope.gr" site_id="axn-249">AXN</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="AXNSpin.gr" site_id="axn-spin-294">AXN Spin</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="" site_id="axn-249">AXN</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="AXNSpin.hu@Greece" site_id="axn-spin-294">AXN Spin</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="AXNWhite.us" site_id="axn-white-272">AXN White</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="BabyTV.uk" site_id="baby-tv-285">Baby TV</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="BBCBrit.pl" site_id="bbc-brit-275">BBC Brit</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="BBCEarth.pl" site_id="bbc-earth-274">BBC Earth</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="BBCFirst.pl" site_id="bbc-hd-261">BBC First</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="BBCLifestyle.pl" site_id="bbc-lifestyle-277">BBC Lifestyle</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="BBCBrit.uk@Poland" site_id="bbc-brit-275">BBC Brit</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="BBCEarth.uk@Poland" site_id="bbc-earth-274">BBC Earth</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="BBCFirst.uk@Poland" site_id="bbc-hd-261">BBC First</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="BBCLifestyle.uk@Poland" site_id="bbc-lifestyle-277">BBC Lifestyle</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="BelsatTV.pl" site_id="belsat-tv-289">Belsat TV</channel>
-  <channel site="programtv.onet.pl" lang="de" xmltv_id="BibelTV.de" site_id="bibel-tv-266">Bibel TV</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="BollywoodHD.ru" site_id="bollywood-hd-530">Bollywood HD</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="Boomerang.pl" site_id="boomerang-270">Cartoonito</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="Bollywood.ru@HD" site_id="bollywood-hd-530">Bollywood HD</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="CartoonitoCEE.uk@Poland" site_id="boomerang-270">Cartoonito</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="CanalPlus1.pl" site_id="canal-1-295">CANAL+ 1</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="CanalPlus4KUltraHD.pl" site_id="canal-4k-ultra-hd-638">CANAL+ 4K Ultra HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="CanalPlusDokument.pl" site_id="canal-discovery-307">CANAL+ DOKUMENT</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="CanalPlusDomo.pl" site_id="domo-106">CANAL+ DOMO</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="CanalPlusFamily.pl" site_id="canal-family-296">CANAL+ Family</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="CanalPlusFamily.fr@Poland" site_id="canal-family-296">CANAL+ Family</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="CanalPlusFilm.pl" site_id="canal-film-320">CANAL+ Film</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="CanalPlusKuchnia.pl" site_id="kuchnia-489">CANAL+ KUCHNIA</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="CanalPlusPremium.pl" site_id="canal-246">CANAL+ PREMIUM</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="CanalPlusSeriale.pl" site_id="canal-seriale-293">CANAL+ Seriale</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="CanalPlusSport.pl" site_id="canal-sport-14">CANAL+ Sport</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="CanalPlusSport2.pl" site_id="canal-sport-2-15">CANAL+ Sport 2</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="CanalPlusSport3.pl" site_id="canal-sport-3-674">CANAL+ Sport 3</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="CanalPlusSport4.pl" site_id="canal-sport-4-675">CANAL+ Sport 4</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="CanalPlusSport.pl" site_id="canal-sport-14">CANAL+ Sport</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="CartoonNetwork.pl" site_id="cartoon-network-273">Cartoon Network</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="CartoonNetworkCEE.uk@Poland" site_id="cartoon-network-273">Cartoon Network</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="CBeebies.pl" site_id="bbc-cbeebies-2">BBC CBeebies</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="CBSEuropa.uk" site_id="cbs-europa-317">CBS Europa</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="CBSReality.pl" site_id="cbs-reality-318">CBS Reality</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="Cinemax2CentralEuropeHD.hu" site_id="cinemax2-58">Cinemax2</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="CinemaxCentralEuropeHD.hu" site_id="cinemax-59">Cinemax</channel>
-  <channel site="programtv.onet.pl" lang="en" xmltv_id="ClubMTVEurope.uk" site_id="mtv-dance-481">Club MTV</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="Cinemax2CentralEurope.hu@HD" site_id="cinemax2-58">Cinemax2</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="CinemaxCentralEurope.hu@HD" site_id="cinemax-59">Cinemax</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="ComedyCentral.pl" site_id="comedy-central-63">Comedy Central</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="CrimePlusInvestigationPolsat.pl" site_id="ci-polsat-257">CI Polsat</channel>
-  <channel site="programtv.onet.pl" lang="cs" xmltv_id="CT1.cz" site_id="ct-1-241">CT 1</channel>
-  <channel site="programtv.onet.pl" lang="cs" xmltv_id="CT2.cz" site_id="ct-2-243">CT 2</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="DaVinci.pl" site_id="da-vinci-learning-83">Da Vinci</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="DiscoPoloMusic.pl" site_id="disco-polo-music-191">Disco Polo Music</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="DiscoveryChannel.pl" site_id="discovery-channel-202">Discovery Channel</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="DiscoveryHistoria.pl" site_id="discovery-historia-54">Discovery Historia</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="DiscoveryLife.pl" site_id="discovery-life-187">Discovery Life</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="DiscoveryScience.pl" site_id="discovery-science-53">Discovery Science</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="DiscoveryScienceEurope.uk@Poland" site_id="discovery-science-53">Discovery Science</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="DisneyChannel.pl" site_id="disney-channel-478">Disney Channel</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="DisneyChannel.tr" site_id="disney-junior-469">Disney Junior</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="DisneyJunior.pl" site_id="disney-junior-469">Disney Junior</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="DisneyXD.pl" site_id="disney-xd-235">Disney XD</channel>
-  <channel site="programtv.onet.pl" lang="de" xmltv_id="DMAX.de" site_id="dmax-428">DMAX</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="DocuBox.nl" site_id="docubox-hd-175">DocuBox HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="DTX.pl" site_id="discovery-turbo-xtra-239">DTX</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="ducktv.sk" site_id="ducktv-94">ducktv</channel>
-  <channel site="programtv.onet.pl" lang="nl" xmltv_id="Een.be" site_id="belgia-tv1-268">Belgia - TV1</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="Echo24.pl" site_id="echo-24-687">Echo 24</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="EEurope.nl" site_id="e-entertainment-73">E! Entertainment</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="E.pl@HD" site_id="e-entertainment-hd-169">E! Entertainment HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="ElevenSports1.pl" site_id="eleven-208">Eleven Sports 1</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="ElevenSports2.pl" site_id="eleven-sports-212">Eleven Sports 2</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="ElevenSports3.pl" site_id="eleven-extra-531">Eleven Sports 3</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="ElevenSports4.pl" site_id="eleven-sports-4-607">Eleven Sports 4</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="EpicDrama.se" site_id="epic-drama-610">Epic Drama</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="EpicDrama.uk@Sweden" site_id="epic-drama-610">Epic Drama</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="EskaRockTV.pl" site_id="hip-hop-tv-511">Eska Rock TV</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="EskaTV.pl" site_id="eska-tv-114">Eska TV</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="EskaTVExtra.pl" site_id="eska-tv-extra-597">Eska TV Extra</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="Eurosport1.pl" site_id="eurosport-1-93">Eurosport 1</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="Eurosport2.pl" site_id="eurosport-2-76">Eurosport 2</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="Eurosport1.fr@Poland" site_id="eurosport-1-93">Eurosport 1</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="Eurosport2.fr@Poland" site_id="eurosport-2-76">Eurosport 2</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="ExtremeSportsChannelPolska.pl" site_id="extreme-sports-channel-231">Extreme Channel</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="FashionBox.nl" site_id="fashionbox-hd-171">FashionBox HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="FightBox.nl" site_id="fightbox-hd-453">FightBox HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="FightKlub.pl" site_id="fightklub-78">Fightklub</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="FilmBoxAction.nl" site_id="filmbox-action-451">FilmBox Action</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="FilmBoxArthouse.nl" site_id="filmbox-arthouse-183">FilmBox Arthouse</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="FilmBoxExtra.pl" site_id="filmbox-extra-hd-86">FilmBox Extra HD</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="FilmBoxExtra.nl@Poland" site_id="filmbox-extra-hd-86">FilmBox Extra HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="FilmBoxFamily.nl" site_id="filmbox-family-103">FilmBox Family</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="FilmBoxPremium.nl@PolandHD" site_id="filmbox-premium-85">FilmBox Premium HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="FokusTV.pl" site_id="fokus-tv-46">Fokus TV</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="FolxMusicTelevision.de" site_id="folx-tv-206">Folx TV</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="FoodNetwork.pl" site_id="polsat-food-157">Food Network</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="Fox.pl" site_id="fox-127">FX</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="FoxComedy.pl" site_id="fox-comedy-75">FX Comedy</channel>
-  <channel site="programtv.onet.pl" lang="en" xmltv_id="FREEDOM.ua" site_id="uatv-549">Freedom</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="Gametoon.nl" site_id="gametoon-hd-602">Gametoon HD</channel>
-  <channel site="programtv.onet.pl" lang="en" xmltv_id="GINXEsportsTV.uk" site_id="ginx-tv-503">Ginx eSports TV</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="GolfChannel.pl" site_id="golf-channel-553">Golf Channel</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="HBO.pl" site_id="hbo-23">HBO</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="HBO2.pl" site_id="hbo2-24">HBO2</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="HBO3.pl" site_id="hbo-3-25">HBO3</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="HBO.pl" site_id="hbo-23">HBO</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="HBO3.pl@HD" site_id="hbo-3-hd-28">HBO3 HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="HGTV.pl" site_id="tvn-meteo-active-79">HGTV</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="History2.pl" site_id="h2-203">HISTORY2</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="History.pl" site_id="history-91">HISTORY</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="History2.pl" site_id="h2-203">HISTORY2</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="HomeTV.pl" site_id="tvr-132">HOME TV</channel>
-  <channel site="programtv.onet.pl" lang="de" xmltv_id="hrfernsehen.de" site_id="hr-374">HR</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="InvestigationDiscovery.pl" site_id="id-117">ID</channel>
-  <channel site="programtv.onet.pl" lang="de" xmltv_id="kabeleins.de" site_id="kabel-eins-376">Kabel Eins</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="JuniorMusic.pl@HD" site_id="top-kids-jr-hd-664">JUNIOR MUSIC HD</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="KabaretTV.pl" site_id="kabaret-tv">Kabaret TV</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="KinoPolska.pl" site_id="kino-polska-324">Kino Polska</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="KinoPolskaMuzyka.pl" site_id="kino-polska-muzyka-426">Kino Polska Muzyka</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="KinoTV.pl" site_id="filmbox-84">Kino TV</channel>
-  <channel site="programtv.onet.pl" lang="fr" xmltv_id="M6.fr" site_id="m-6-215">M 6</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="MCMTop.fr" site_id="mcm-top-459">MCM Top</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="Metro.pl" site_id="metro-535">METRO</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="MezzoLive.fr" site_id="mezzo-live-hd-398">Mezzo Live HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="MiniMiniPlus.pl" site_id="minimini-236">MiniMini+</channel>
-  <channel site="programtv.onet.pl" lang="de" xmltv_id="Motorvision.de" site_id="motorvision-341">Motorvision</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="MixtapeTV.pl" site_id="mixtape">MIXTAPE</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="Motowizja.pl" site_id="motowizja-178">Motowizja</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="MTV00s.uk" site_id="vh1-9">MTV 00s</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="MTV.pl" site_id="mtv-polska-7">MTV Polska</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="MTV00s.uk" site_id="vh1-9">MTV 00s</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="MusicBoxUkraine.ua" site_id="music-box-538">Music Box</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="MyZenTV.fr" site_id="myzen-tv-hd-396">MyZen.tv HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="NatGeoPeople.pl" site_id="nat-geo-people-625">Nat Geo People</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="NationalGeographic.pl" site_id="national-geographic-channel-32">National Geographic</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="NationalGeographicWild.pl" site_id="nat-geo-wild-77">National Geographic Wild</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="News24.pl" site_id="news24">News24</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="NewTV.pl" site_id="lubelska-tv-210">New TV</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="Nickelodeon.pl" site_id="nickelodeon-42">Nickelodeon</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="NickJr.pl" site_id="nick-jr-45">Nick Jr.</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="NickMusic.us" site_id="viva-polska-10">NickMusic</channel>
@@ -476,22 +465,24 @@
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="NovelaTV.pl" site_id="novela-tv-461">Novela tv</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="NowaTV.pl" site_id="nowa-tv-528">Nowa TV</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="NSportPlus.pl" site_id="nsport-19">CANAL+ Sport 5</channel>
-  <channel site="programtv.onet.pl" lang="de" xmltv_id="ntv.de" site_id="n-tv-388">n-tv</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="NutaTV.pl" site_id="nuta-tv-214">Nuta.TV</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="ParamountNetwork.pl" site_id="paramount-channel-hd-65">Paramount Network</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="PlanetePlus.fr" site_id="planete-349">Planete+</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="PlanetePlus.pl" site_id="planete-349">Planete+</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="PlanetePlus.pl@HD" site_id="planete-hd-432">Planete+ HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="PoloTV.pl" site_id="polo-tv-135">Polo TV</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="Polsat.pl" site_id="polsat-38">Polsat</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="Polsat1.pl" site_id="polsat-1-36">Polsat 1</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="Polsat2.pl" site_id="polsat-2-327">Polsat 2</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="Polsat.pl" site_id="polsat-38">Polsat</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="PolsatCafe.pl" site_id="polsat-caf-110">Polsat Café</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="PolsatComedyCentralExtra.pl" site_id="comedy-central-family-61">Polsat Comedy Central Extra</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="PolsatComedyCentralExtra.pl@HD" site_id="comedy-central-family-hd-612">Polsat Comedy Central Extra HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="PolsatDoku.pl" site_id="polsat-doku-548">Polsat Doku</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="PolsatFilm.pl" site_id="polsat-film-123">Polsat Film</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="PolsatGames.pl" site_id="polsat-games-653">Polsat Games</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="PolsatJimJam.pl" site_id="polsat-jimjam-89">Polsat JimJam</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="PolsatMusic.pl" site_id="polsat-music-564">Polsat Music</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="PolsatNews2.pl" site_id="polsat-news-2-471">Polsat News 2</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="PolsatNews.pl" site_id="polsat-news-100">Polsat News</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="PolsatNews2.pl" site_id="polsat-news-2-471">Polsat News 2</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="PolsatPlay.pl" site_id="polsat-play-21">Polsat Play</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="PolsatRodzina.pl" site_id="polsat-rodzina-651">Polsat Rodzina</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="PolsatSeriale.pl" site_id="polsat-romans-173">Polsat Seriale</channel>
@@ -510,83 +501,93 @@
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="PolsatViasatNature.pl" site_id="polsat-viasat-nature-413">Polsat Viasat Nature HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="PowerTV.pl" site_id="power-tv-176">Power TV</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="Puls2.pl" site_id="puls-2-439">PULS 2</channel>
-  <channel site="programtv.onet.pl" lang="it" xmltv_id="Rai1.it" site_id="rai-1-338">RAI 1</channel>
-  <channel site="programtv.onet.pl" lang="it" xmltv_id="Rai2.it" site_id="rai-2-336">RAI 2</channel>
-  <channel site="programtv.onet.pl" lang="pt" xmltv_id="RecordTVEuropa.pt" site_id="record-tv-64">Record TV</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="RedCarpetTV.pl" site_id="etv-473">Red Carpet TV</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="Relax.cz" site_id="tv-relax-496">TV Relax</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="RFMTV.fr" site_id="rfm-tv-95">RFM TV</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="RheinMainTV.de" site_id="rheinmaintv-468">rheinmaintv</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="RomanceTV.pl" site_id="romance-tv-129">Romance TV</channel>
-  <channel site="programtv.onet.pl" lang="it" xmltv_id="RTL1025TV.it" site_id="rtl-102-5-43">RTL 102.5</channel>
-  <channel site="programtv.onet.pl" lang="de" xmltv_id="RTLSuper.de" site_id="super-rtl-400">Super RTL</channel>
-  <channel site="programtv.onet.pl" lang="fr" xmltv_id="RTS1.ch" site_id="rts-un-410">RTS Un</channel>
-  <channel site="programtv.onet.pl" lang="fr" xmltv_id="RTS2.ch" site_id="rts-deux-411">RTS Deux</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="SciFi.pl" site_id="scifi-universal-20">SCI FI</channel>
-  <channel site="programtv.onet.pl" lang="de" xmltv_id="SkyCinemaUnoPlus24.it" site_id="sky-cinema-24-369">Sky Cinema + 24</channel>
-  <channel site="programtv.onet.pl" lang="de" xmltv_id="SkySportAustria1.at" site_id="sky-sport-austria-444">Sky Sport Austria</channel>
-  <channel site="programtv.onet.pl" lang="de" xmltv_id="SpiegelGeschichte.de" site_id="spiegel-geschichte-379">Spiegel Geschichte</channel>
-  <channel site="programtv.onet.pl" lang="de" xmltv_id="Sport1.de" site_id="sport-1-362">Sport 1</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="SportKlub.pl" site_id="sportklub-29">Sportklub</channel>
-  <channel site="programtv.onet.pl" lang="de" xmltv_id="SRF1.ch" site_id="srf-1-406">SRF 1</channel>
-  <channel site="programtv.onet.pl" lang="de" xmltv_id="SRFzwei.ch" site_id="srf-zwei-407">SRF Zwei</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="StarsTV.pl" site_id="stars-tv-149">STARS.TV</channel>
-  <channel site="programtv.onet.pl" lang="en" xmltv_id="StingrayClassica.ca" site_id="classica-259">Stingray Classica</channel>
-  <channel site="programtv.onet.pl" lang="en" xmltv_id="StingrayCMusic.ca" site_id="c-music-tv-260">Stingray CMusic</channel>
-  <channel site="programtv.onet.pl" lang="en" xmltv_id="StingrayDJAZZ.ca" site_id="djazz-tv-196">Stingray DJAZZ</channel>
-  <channel site="programtv.onet.pl" lang="en" xmltv_id="StingrayiConcerts.ca" site_id="stingray-iconcert-601">Stingray iConcerts</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="StingrayJuicebox.ca" site_id="stingray-juicebox-hd-655">Stingray Juicebox HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="StingrayLoud.ca" site_id="stingray-loud-hd-654">Stingray Loud HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="StingrayRetro.ca" site_id="stingray-retro-668">Stingray Retro</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="StopklatkaTV.pl" site_id="stopklatka-tv-185">STOPKLATKA</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="StudioMedTV.pl" site_id="studiomed-tv-688">StudioMED TV</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="SundanceTV.pl" site_id="sundance-channel-237">Sundance TV</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="SuperPolsat.pl" site_id="super-polsat-541">Super Polsat</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="Superstacja.pl" site_id="superstacja-69">Wydarzenia 24</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="TBNPolska.pl" site_id="tbn-polska-598">TBN Polska</channel>
-  <channel site="programtv.onet.pl" lang="de" xmltv_id="TELE5.de" site_id="tele-5-niem-448">Tele 5 (niem.)</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="TeenNick.pl" site_id="teennick">TeenNick</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="Tele5.pl" site_id="tele-5-352">Tele 5</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="TeletoonPlus.fr" site_id="teletoon-232">teleTOON+</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="TeletoonPlus.pl" site_id="teletoon-232">teleTOON+</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="TLC.pl" site_id="tlc-238">TLC</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="TNT.pl" site_id="tnt-72">Warner TV</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="TopKids.pl" site_id="top-kids-225">Top Kids</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="TopKids.pl@HD" site_id="top-kids-hd-224">Top Kids HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="TravelChannel.pl" site_id="travel-channel-201">Travel Channel</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="Travelxp4KEurope.in" site_id="travelxp-4k-659">Travelxp 4K</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="Travelxp.in" site_id="travelxp-hd-656">Travelxp HD</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="Travelxp4KEurope.in" site_id="travelxp-4k-659">Travelxp 4K</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="TTV.pl" site_id="ttv-624">TTV</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="TV4.pl" site_id="tv-4-360">TV 4</channel>
-  <channel site="programtv.onet.pl" lang="fr" xmltv_id="TV5MondeEurope.fr" site_id="tv-5-monde-europe-412">TV 5 Monde Europe</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="TV6.pl" site_id="tv-6-429">TV 6</channel>
-  <channel site="programtv.onet.pl" lang="es" xmltv_id="TVEInternacionalEuropeAsia.es" site_id="tve-330">TVE</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVN7.pl" site_id="tvn-7-326">TVN 7</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVASTA.pl" site_id="tv-asta-495">TV ASTA</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVASTA.pl@HD" site_id="tv-asta-hd-552">TV ASTA HD</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVN.pl" site_id="tvn-357">TVN</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVN24.pl" site_id="tvn-24-347">TVN 24</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVN24BiS.pl" site_id="tvn-24-biznes-i-swiat-6">TVN24 BiS</channel>
-  <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVN.pl" site_id="tvn-357">TVN</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVN7.pl" site_id="tvn-7-326">TVN 7</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVNFabula.pl" site_id="tvn-fabula-4">TVN Fabuła</channel>
-  <channel site="programtv.onet.pl" lang="cs" xmltv_id="TVNova.cz" site_id="nova-331">Nova</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVNStyle.pl" site_id="tvn-style-472">TVN Style</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVNTurbo.pl" site_id="tvn-turbo-346">TVN Turbo</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVOkazje.pl" site_id="tvo-600">TV Okazje</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVP1.pl" site_id="tvp-1-321">TVP 1</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVP2.pl" site_id="tvp-2-323">TVP 2</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVP3Bialystok.pl" site_id="tvp-3-bialystok-5">TVP 3 Białystok</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVP3Bydgoszcz.pl" site_id="tvp-3-bydgoszcz-378">TVP 3 Bydgoszcz</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVP3Gdansk.pl" site_id="tvp-3-gdansk-386">TVP 3 Gdańsk</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVP3GorzowWielkopolski.pl" site_id="tvp-3-gorzow-wielkopolski-342">TVP 3 Gorzów Wielkopolski</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVP3Katowice.pl" site_id="tvp-3-katowice-394">TVP 3 Katowice</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVP3Kielce.pl" site_id="tvp-3-kielce-475">TVP 3 Kielce</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVP3Krakow.pl" site_id="tvp-3-krakow-403">TVP 3 Kraków</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVP3Lodz.pl" site_id="tvp-3-lodz-416">TVP 3 Łódź</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVP3Lublin.pl" site_id="tvp-3-lublin-409">TVP 3 Lublin</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVP3Olsztyn.pl" site_id="tvp-3-olsztyn-339">TVP 3 Olsztyn</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVP3Opole.pl" site_id="tvp-3-opole-335">TVP 3 Opole</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVP3Poznan.pl" site_id="tvp-3-poznan-425">TVP 3 Poznań</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVP3Rzeszow.pl" site_id="tvp-3-rzeszow-433">TVP 3 Rzeszów</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVP3Szczecin.pl" site_id="tvp-3-szczecin-440">TVP 3 Szczecin</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVP3Warszawa.pl" site_id="tvp-3-172">TVP 3</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVP3Warszawa.pl" site_id="tvp-3-warszawa-446">TVP 3 Warszawa</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVP3Wroclaw.pl" site_id="tvp-3-wroclaw-454">TVP 3 Wrocław</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVPABC.pl" site_id="tvp-abc-182">TVP ABC</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVPDokument.pl" site_id="tvp-dokument">TVP Dokument</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVPHD.pl" site_id="tvp-hd-101">TVP HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVPHistoria.pl" site_id="tvp-historia-74">TVP Historia</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVPInfo.pl" site_id="tvp-info-462">TVP Info</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVPKobieta.pl" site_id="tvp-kobieta">TVP Kobieta</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVPKultura.pl" site_id="tvp-kultura-477">TVP Kultura</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVPNauka.pl" site_id="tvp-nauka">TVP Nauka</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVPPolonia.pl" site_id="tvp-polonia-325">TVP Polonia</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVPRozrywka.pl" site_id="tvp-rozrywka-159">TVP Rozrywka</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVPSeriale.pl" site_id="tvp-seriale-130">TVP Seriale</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVPSport.pl" site_id="tvp-sport-40">TVP Sport</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVPuls.pl" site_id="tv-puls-332">TV Puls</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVPWilno.pl" site_id="tvp-wilno">TVP Wilno</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVPWorld.pl" site_id="tvp-world">TVP World</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="tvregionalnapl.pl" site_id="tvregionalna-pl-622">tvregionalna.pl</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVRepublika.pl" site_id="tv-republika-18">TV Republika</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVS.pl" site_id="tvs-90">TVS</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVT.pl" site_id="tvt-500">TVT</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="TVTrwam.pl" site_id="tv-trwam-108">TV Trwam</channel>
-  <channel site="programtv.onet.pl" lang="de" xmltv_id="VOX.de" site_id="vox-418">VOX</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="UltraTV4K.pl" site_id="ultra-tv-4k-669">ULTRA TV 4K</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="VOXMusicTV.pl" site_id="vox-music-tv-193">VOX Music TV</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="WarnerTV.pl" site_id="tnt-72">Warner TV</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="WarnerTV.pl@HD" site_id="tnt-hd-220">Warner TV HD</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="WaterPlanet.pl" site_id="water-planet-415">Water Planet</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="WDR1Live.de" site_id="einslive-427">EinsLive</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="WPolscePL.pl" site_id="wpolsce-pl-635">wPolsce.pl</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="WPTV.pl" site_id="wp-532">WP</channel>
+  <channel site="programtv.onet.pl" lang="pl" xmltv_id="WTK.pl" site_id="wtk-492">WTK</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="ZoomTV.pl" site_id="zoom-tv-526">ZOOM TV</channel>
+  <channel site="programtv.onet.pl" lang="pt" xmltv_id="RecordTVEuropa.pt" site_id="record-tv-64">Record TV</channel>
 </channels>

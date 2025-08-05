@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?><tv date="20221020">
+<channel id="Channel1.us"><display-name>Channel 1</display-name><url>https://example.com</url></channel>
+<channel id="Channel3.us"><display-name>Channel 3</display-name><icon src="https://upload.wikimedia.org/wikipedia/commons/6/64/6%27eren_2015.png"/><url>https://example.com</url></channel>
+<programme start="20221019043000 +0000" stop="20221019071000 +0000" channel="Channel1.us"><title lang="fr">Programme1 (example.com)</title></programme>
+<programme start="20221020043000 +0000" stop="20221020071000 +0000" channel="Channel1.us"><title lang="fr">Programme1 (example.com)</title></programme>
+<programme start="20221019043100 +0000" stop="20221019071000 +0000" channel="Channel3.us"><title lang="it">Program1 (example.com)</title></programme>
+<programme start="20221020043100 +0000" stop="20221020071000 +0000" channel="Channel3.us"><title lang="it">Program1 (example.com)</title></programme>
+</tv>

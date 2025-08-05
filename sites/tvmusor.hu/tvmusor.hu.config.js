@@ -1,11 +1,11 @@
 const axios = require('axios')
 const dayjs = require('dayjs')
-const _ = require('lodash')
+const uniqBy = require('lodash.uniqby')
 
 module.exports = {
   site: 'tvmusor.hu',
   days: 2,
-  url: 'http://www.tvmusor.hu/a/get-events/',
+  url: 'https://tvmusor.borsonline.hu/a/get-events/',
   request: {
     method: 'POST',
     headers: {
@@ -48,7 +48,7 @@ module.exports = {
   },
   async channels() {
     const data = await axios
-      .get('http://www.tvmusor.hu/most/')
+      .get('https://tvmusor.borsonline.hu/most/')
       .then(r => r.data)
       .catch(console.log)
 
@@ -67,7 +67,7 @@ module.exports = {
 }
 
 function parseImage(item) {
-  return item.z ? `http://www.tvmusor.hu/images/events/408/${item.z}` : null
+  return item.z ? `https://tvmusor.borsonline.hu/images/events/408/${item.z}` : null
 }
 
 function parseItems(content, channel, date) {
@@ -77,5 +77,5 @@ function parseItems(content, channel, date) {
   const blockId = `${channel.site_id}_${date.format('YYYY-MM-DD')}`
   if (!Array.isArray(blocks[blockId])) return []
 
-  return _.uniqBy(_.uniqBy(blocks[blockId], 'e'), 'b')
+  return uniqBy(uniqBy(blocks[blockId], a => a.e), b => b.b)
 }

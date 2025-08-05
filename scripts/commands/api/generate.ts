@@ -1,16 +1,9 @@
-import { Logger, Storage, Collection } from '@freearhey/core'
-import { ChannelsParser } from '../../core'
-import path from 'path'
+import { Logger, Collection, Storage } from '@freearhey/core'
 import { SITES_DIR, API_DIR } from '../../constants'
-import { Channel } from 'epg-grabber'
-
-type OutputItem = {
-  channel: string | null
-  site: string
-  site_id: string
-  site_name: string
-  lang: string
-}
+import { GuideChannel } from '../../models'
+import { ChannelsParser } from '../../core'
+import epgGrabber from 'epg-grabber'
+import path from 'path'
 
 async function main() {
   const logger = new Logger()
@@ -19,27 +12,24 @@ async function main() {
 
   logger.info('loading channels...')
   const sitesStorage = new Storage(SITES_DIR)
-  const parser = new ChannelsParser({ storage: sitesStorage })
+  const parser = new ChannelsParser({
+    storage: sitesStorage
+  })
 
-  let files: string[] = []
-  files = await sitesStorage.list('**/*.channels.xml')
+  const files: string[] = await sitesStorage.list('**/*.channels.xml')
 
-  let parsedChannels = new Collection()
+  const channels = new Collection()
   for (const filepath of files) {
-    parsedChannels = parsedChannels.concat(await parser.parse(filepath))
+    const channelList = await parser.parse(filepath)
+
+    channelList.channels.forEach((data: epgGrabber.Channel) => {
+      channels.add(new GuideChannel(data))
+    })
   }
 
-  logger.info(`  found ${parsedChannels.count()} channel(s)`)
+  logger.info(`found ${channels.count()} channel(s)`)
 
-  const output = parsedChannels.map((channel: Channel): OutputItem => {
-    return {
-      channel: channel.xmltv_id || null,
-      site: channel.site || '',
-      site_id: channel.site_id || '',
-      site_name: channel.name,
-      lang: channel.lang || ''
-    }
-  })
+  const output = channels.map((channel: GuideChannel) => channel.toJSON())
 
   const apiStorage = new Storage(API_DIR)
   const outputFilename = 'guides.json'

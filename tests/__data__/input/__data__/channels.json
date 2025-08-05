@@ -1,0 +1,61 @@
+[
+  {
+    "id": "Bravo.us",
+    "name": "Bravo",
+    "network": null,
+    "country": "US",
+    "subdivision": null,
+    "city": null,
+    "categories": [],
+    "is_nsfw": false,
+    "closed": "2020-01-01",
+    "replaced_by": "R6.co"
+  },
+  {
+    "id": "Bravos.us",
+    "name": "Bravos",
+    "network": null,
+    "country": "US",
+    "subdivision": null,
+    "city": null,
+    "categories": [],
+    "is_nsfw": false
+  },
+  {
+    "id": "CNNInternational.us",
+    "name": "CNN International",
+    "alt_names": ["CNN", "CNN Int"],
+    "network": null,
+    "country": "US",
+    "subdivision": null,
+    "city": null,
+    "categories": [
+      "news"
+    ],
+    "is_nsfw": false
+  },
+  {
+    "id": "MNetMovies2.za",
+    "name": "M-Net Movies 2",
+    "network": null,
+    "country": "ZA",
+    "subdivision": null,
+    "city": null,
+    "categories": [],
+    "is_nsfw": false
+  },
+  {"id":"6eren.dk","name":"6'eren","alt_names":[],"network":null,"owners":["Warner Bros. Discovery EMEA"],"country":"DK","subdivision":null,"city":null,"broadcast_area":["c/DK"],"languages":["dan"],"categories":[],"is_nsfw":false,"launched":"2009-01-01","closed":null,"replaced_by":null,"website":"http://www.6-eren.dk/"},
+  {"id":"BBCNews.uk","name":"BBC News","alt_names":[],"network":null,"owners":[],"country":"UK","subdivision":null,"city":null,"broadcast_area":["c/UK"],"languages":["eng"],"categories":["news"],"is_nsfw":false,"launched":null,"closed":null,"replaced_by":null,"website":"http://news.bbc.co.uk/"},
+  {
+    "id": "CNN.us",
+    "name": "CNN",
+    "network": null,
+    "country": "US",
+    "subdivision": null,
+    "city": null,
+    "categories": [],
+    "is_nsfw": false
+  },
+  {"id":"Channel2.us","name":"Channel 2 [API]","alt_names":[],"network":null,"owners":[],"country":"UK","subdivision":null,"city":null,"broadcast_area":["c/US"],"languages":["eng"],"categories":[],"is_nsfw":false,"launched":null,"closed":null,"replaced_by":null,"website":""},
+  {"id":"Channel3.us","name":"Channel 3 [API]","alt_names":[],"network":null,"owners":[],"country":"UK","subdivision":null,"city":null,"broadcast_area":["c/US"],"languages":["eng"],"categories":[],"is_nsfw":false,"launched":null,"closed":null,"replaced_by":null,"website":""}
+]

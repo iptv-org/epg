@@ -40,7 +40,7 @@ module.exports = {
   },
   async channels() {
     const data = await axios
-      .get(`https://contenthub-api.eco.astro.com.my/channel/all.json`)
+      .get('https://contenthub-api.eco.astro.com.my/channel/all.json')
       .then(r => r.data)
       .catch(console.log)
 
@@ -85,7 +85,7 @@ function parseItems(content, date) {
     const schedules = data.response.schedule
 
     return schedules[date.format('YYYY-MM-DD')] || []
-  } catch (e) {
+  } catch {
     return []
   }
 }

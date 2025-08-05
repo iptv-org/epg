@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<channels>
+  <channel site="example.com" lang="en" xmltv_id="Channel1.us" site_id="140">Custom Channel 1</channel>
+  <channel site="example.com" lang="en" xmltv_id="Channel2.us" site_id="142" logo="https://i.imgur.com/qmRnD0M.png">Custom Channel 2</channel>
+  <channel site="example.com" lang="fr" xmltv_id="Channel1.us" site_id="140">Channel 1</channel>
+  <channel site="example2.com" lang="en" xmltv_id="Channel3.us@Wrong" site_id="150">Channel 3</channel>
+  <channel site="example2.com" lang="en" xmltv_id="Channel4.us@HD" site_id="152">Channel 4</channel>
+  <channel site="example2.com" lang="fr" xmltv_id="Channel1.us" site_id="140">Channel 1</channel>
+</channels>

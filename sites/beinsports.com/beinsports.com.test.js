@@ -1,6 +1,4 @@
 const { parser, url } = require('./beinsports.com.config.js')
-const fs = require('fs')
-const path = require('path')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')

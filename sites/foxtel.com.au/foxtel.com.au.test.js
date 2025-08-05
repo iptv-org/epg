@@ -22,7 +22,7 @@ it('can generate valid url', () => {
 it('can generate valid request headers', () => {
   expect(request.headers).toMatchObject({
     'Accept-Language': 'en-US,en;',
-    Cookie: 'AAMC_foxtel_0=REGION|6'
+    Cookie: 'AAMC_foxtel_0=REGION|7'
   })
 })
 

@@ -1,4 +1,3 @@
-const axios = require('axios')
 const dayjs = require('dayjs')
 
 module.exports = {

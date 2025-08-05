@@ -1,8 +1,10 @@
+const axios = require('axios')
 const cheerio = require('cheerio')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
+const uniqBy = require('lodash.uniqby')
 
 dayjs.extend(utc)
 dayjs.extend(timezone)
@@ -45,9 +47,6 @@ module.exports = {
     return programs
   },
   async channels({ country }) {
-    const axios = require('axios')
-    const _ = require('lodash')
-
     const providers = {
       au: ['o', 'a'],
       ca: [
@@ -132,7 +131,7 @@ module.exports = {
           const $ = cheerio.load(data)
           $('.channelname').each((i, el) => {
             let name = $(el).find('center > a:eq(1)').text()
-            name = name.replace(/\-\-/gi, '-')
+            name = name.replace(/--/gi, '-')
             const url = $(el).find('center > a:eq(1)').attr('href')
             if (!url) return
             const [, number, slug] = url.match(/\/(\d+)\/(.*)\.html$/)
@@ -147,7 +146,7 @@ module.exports = {
       }
     }
 
-    return _.uniqBy(channels, 'site_id')
+    return uniqBy(channels, 'site_id')
   }
 }
 

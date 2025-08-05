@@ -15,8 +15,11 @@ const channel = {
   xmltv_id: 'HGTV.uk'
 }
 
-axios.get.mockImplementation((url, opts) => {
-  if (url === 'https://api.youview.tv/metadata/linear/v2/schedule/by-servicelocator?serviceLocator=dvb%3A%2F%2F233a..6d60&interval=2023-12-13T12Z/PT12H') {
+axios.get.mockImplementation(url => {
+  if (
+    url ===
+    'https://api.youview.tv/metadata/linear/v2/schedule/by-servicelocator?serviceLocator=dvb%3A%2F%2F233a..6d60&interval=2023-12-13T12Z/PT12H'
+  ) {
     return Promise.resolve({
       data: JSON.parse(fs.readFileSync(path.resolve(__dirname, '__data__/data1.json')))
     })
@@ -33,12 +36,11 @@ it('can generate valid url', () => {
 
 it('can parse response', async () => {
   const content = fs.readFileSync(path.resolve(__dirname, '__data__/data.json'))
-  const result = (await parser({ content, channel, date }))
-    .map(p => {
-      p.start = p.start.toJSON()
-      p.stop = p.stop.toJSON()
-      return p
-    })
+  const result = (await parser({ content, channel, date })).map(p => {
+    p.start = p.start.toJSON()
+    p.stop = p.stop.toJSON()
+    return p
+  })
 
   expect(result).toMatchObject([
     {

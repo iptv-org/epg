@@ -39,7 +39,7 @@ function parseItems(content) {
   let data
   try {
     data = JSON.parse(content)
-  } catch (error) {
+  } catch {
     return []
   }
   if (!data || !Array.isArray(data)) return []

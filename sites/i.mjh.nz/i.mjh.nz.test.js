@@ -29,10 +29,10 @@ it('can parse response', () => {
     start: '2023-06-23T07:14:32.000Z',
     stop: '2023-06-23T09:09:36.000Z',
     title: 'Killers Within',
-    date: ['20180101'],
+    date: '20180101',
     description:
       'With her son being held captive by a criminal gang, police officer Amanda Doyle, together with her ex-husband and three unlikely allies, takes part in a desperate plot to hold a wealthy banker and his family to ransom. But this is no ordinary family.',
-    icon: ['https://provider-static.plex.tv/epg/images/thumbnails/darkmatter-tv-fallback.jpg'],
+    icon: 'https://provider-static.plex.tv/epg/images/thumbnails/darkmatter-tv-fallback.jpg',
     categories: ['Movie']
   })
 })

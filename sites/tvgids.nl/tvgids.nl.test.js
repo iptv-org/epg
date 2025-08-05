@@ -7,14 +7,16 @@ const customParseFormat = require('dayjs/plugin/customParseFormat')
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
-const date = dayjs.utc('2023-06-13', 'YYYY-MM-DD').startOf('d')
+const date = dayjs.utc('2025-01-19', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: 'npo1',
   xmltv_id: 'NPO1.nl'
 }
 
 it('can generate valid url', () => {
-  expect(url({ date, channel })).toBe('https://www.tvgids.nl/gids/13-06-2023/npo1')
+  jest.useFakeTimers().setSystemTime(new Date('2025-01-17'))
+
+  expect(url({ date, channel })).toBe('https://www.tvgids.nl/gids/19-01-2025/npo1')
 })
 
 it('can generate valid url for today', () => {
@@ -32,16 +34,16 @@ it('can parse response', () => {
   })
 
   expect(results[0]).toMatchObject({
-    start: '2023-06-12T21:57:00.000Z',
-    stop: '2023-06-12T22:58:00.000Z',
+    start: '2025-01-18T22:57:00.000Z',
+    stop: '2025-01-18T23:58:00.000Z',
     title: 'Op1',
     image: 'https://tvgidsassets.nl/v301/upload/o/carrousel/op1-451542641.jpg',
     description: "Talkshow met wisselende presentatieduo's, live vanuit Amsterdam."
   })
 
   expect(results[61]).toMatchObject({
-    start: '2023-06-14T00:18:00.000Z',
-    stop: '2023-06-14T00:48:00.000Z',
+    start: '2025-01-20T01:18:00.000Z',
+    stop: '2025-01-20T01:48:00.000Z',
     title: 'NOS Journaal',
     image: 'https://tvgidsassets.nl/v301/upload/n/carrousel/nos-journaal-452818771.jpg',
     description:
