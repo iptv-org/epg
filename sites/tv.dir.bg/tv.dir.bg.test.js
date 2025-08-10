@@ -1,54 +1,50 @@
 const { parser, url } = require('./tv.dir.bg.config.js')
+const fs = require('fs')
+const path = require('path')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
-const date = dayjs.utc('2022-01-20', 'YYYY-MM-DD').startOf('d')
+const date = dayjs.utc('2025-06-30', 'YYYY-MM-DD').startOf('d')
 const channel = {
-  site_id: '12',
+  site_id: '61',
   xmltv_id: 'BTV.bg'
 }
 
 it('can generate valid url', () => {
-  expect(url({ channel, date })).toBe('https://tv.dir.bg/tv_channel.php?id=12&dd=20.01')
+  expect(url).toBe('https://tv.dir.bg/load/programs')
 })
 
 it('can parse response', () => {
-  const content =
-    '<!DOCTYPE html><html><head></head><body><div class="container" id="news"><div class="row"><div class="col-sm-12 col-md-5"><ul id="events"><li><i></i> <div class="progress"> <div class="progress-bar progress-bar-striped active" role="progressbar" style="width:99%"> </div></div></li><li><a href="tv_show_info.php?id"="10"><i>06.00</i>„<b>Тази сутрин</b>” - информационно предаване с водещи Златимир Йочеви Биляна Гавазова</a></li><li><i>15.00</i>„Доктор Чудо” - сериал, еп.71</li><li><a href="tv_show_info.php?id"="1601"><i>05.30</i>„<b>Лице в лице</b>” /п./ </a></li></ul></div></div></div></body></html>'
-  const result = parser({ content, date }).map(p => {
+  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'))
+  const results = parser({ content, date }).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
     return p
   })
 
-  expect(result).toMatchObject([
-    {
-      start: '2022-01-20T04:00:00.000Z',
-      stop: '2022-01-20T13:00:00.000Z',
-      title: '„Тази сутрин” - информационно предаване с водещи Златимир Йочеви Биляна Гавазова'
-    },
-    {
-      start: '2022-01-20T13:00:00.000Z',
-      stop: '2022-01-21T03:30:00.000Z',
-      title: '„Доктор Чудо” - сериал, еп.71'
-    },
-    {
-      start: '2022-01-21T03:30:00.000Z',
-      stop: '2022-01-21T04:00:00.000Z',
-      title: '„Лице в лице” /п./'
-    }
-  ])
+ expect(results.length).toBe(63)
+
+ expect(results[0]).toMatchObject({
+  start: '2025-06-30T03:00:00.000Z',
+  stop: '2025-06-30T03:30:00.000Z',
+  title: 'Светът на здравето'
+ })
+
+ expect(results[62]).toMatchObject({
+  start: '2025-07-01T02:00:00.000Z',
+  stop: '2025-07-01T02:30:00.000Z',
+  title: 'Убийства в Рая , сезон 1 , епизод 7'
+ })
 })
 
 it('can handle empty guide', () => {
   const result = parser({
     date,
     channel,
-    content:
-      '<!DOCTYPE html><html><head></head><body><div class="container" id="news"><div class="row"><div class="col-sm-12 col-md-5"><ul id="events"></ul></div></div></div></body></html>'
+    content: fs.readFileSync(path.resolve(__dirname, '__data__/no_content.json'))
   })
   expect(result).toMatchObject([])
 })

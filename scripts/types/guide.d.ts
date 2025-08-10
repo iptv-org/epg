@@ -1,4 +1,4 @@
-export type GuideData = {
+export interface GuideData {
   channel: string
   feed: string
   site: string

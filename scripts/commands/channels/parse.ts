@@ -12,7 +12,7 @@ program
   .option('-o, --output <output>', 'Output file')
   .parse(process.argv)
 
-type ParseOptions = {
+interface ParseOptions {
   config: string
   set?: string
   output?: string
@@ -43,9 +43,7 @@ async function main() {
     channelList = await parser.parse(outputFilepath)
   }
 
-  const args: {
-    [key: string]: string
-  } = {}
+  const args: Record<string, string> = {}
 
   if (Array.isArray(options.set)) {
     options.set.forEach((arg: string) => {

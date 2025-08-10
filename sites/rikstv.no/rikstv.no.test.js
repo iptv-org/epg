@@ -1,4 +1,6 @@
 const { parser, url } = require('./rikstv.no.config.js')
+const fs = require('fs')
+const path = require('path')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -22,23 +24,7 @@ describe('rikstv.no Module Tests', () => {
   })
 
   it('can parse response', () => {
-    const content = JSON.stringify([
-      {
-        seriesName: 'Vakre og ville Oman',
-        name: 'Vakre og ville Oman',
-        description:
-          'Oman er eit arabisk skattkammer av unike habitat og variert dyreliv. Rev, kvalhai, reptil og skjelpadder er blant skapningane du finn her.',
-        season: 1,
-        episode: 1,
-        genres: ['Dokumentar', 'Fakta', 'Natur'],
-        actors: ['Gergana Muskalla'],
-        director: 'Stefania Muller',
-        imagePackUri: 'https://imageservice.rikstv.no/hash/EC206C374F42287C0BDF850A7D3CB4D3.jpg',
-        broadcastedTime: '2025-01-13T23:00:00Z',
-        broadcastedTimeEnd: '2025-01-13T23:55:00Z'
-      }
-    ])
-
+    const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'))
     const result = parser({ content }).map(p => {
       p.start = dayjs(p.start).toISOString()
       p.stop = dayjs(p.stop).toISOString()

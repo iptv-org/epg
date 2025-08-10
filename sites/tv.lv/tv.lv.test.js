@@ -48,8 +48,7 @@ it('can parse response', () => {
 
 it('can handle empty guide', () => {
   const results = parser({
-    content:
-      '{"schedule":{"programme":[],"dayName":"Sestdiena","date":"30.11.2024"},"diff":368,"nextDate":"01-12-2024","previousDate":"29-11-2024","current_timestamp":1701194084}'
+    content: fs.readFileSync(path.resolve(__dirname, '__data__/no_content.json'))
   })
   expect(results).toMatchObject([])
 })

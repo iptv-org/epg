@@ -1,7 +1,7 @@
 import { Dictionary } from '@freearhey/core'
 import { SiteConfig, Channel } from 'epg-grabber'
 
-export type QueueItem = {
+export interface QueueItem {
   channel: Channel
   date: string
   config: SiteConfig
