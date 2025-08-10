@@ -7,12 +7,12 @@ enum StatusCode {
   OK = 'ok'
 }
 
-type Status = {
+interface Status {
   code: StatusCode
   emoji: string
 }
 
-type SiteProps = {
+interface SiteProps {
   domain: string
   totalChannels?: number
   markedChannels?: number

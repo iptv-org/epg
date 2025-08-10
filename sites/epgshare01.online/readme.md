@@ -107,19 +107,19 @@ https://epgshare01.online/epgshare01/
 Windows (Command Prompt):
 
 ```sh
-SET "NODE_OPTIONS=--max-old-space-size=5000" && npm run grab --- --channels=sites/epgshare01.online/epgshare01.online_<TAG>.channels.xml
+SET "NODE_OPTIONS=--max-old-space-size=6000" && npm run grab --- --channels=sites/epgshare01.online/epgshare01.online_<TAG>.channels.xml
 ```
 
 Windows (PowerShell):
 
 ```sh
-$env:NODE_OPTIONS="--max-old-space-size=5000"; npm run grab --- --channels=sites/epgshare01.online/epgshare01.online_<TAG>.channels.xml
+$env:NODE_OPTIONS="--max-old-space-size=6000"; npm run grab --- --channels=sites/epgshare01.online/epgshare01.online_<TAG>.channels.xml
 ```
 
 Linux and macOS:
 
 ```sh
-NODE_OPTIONS=--max-old-space-size=5000 npm run grab --- --channels=sites/epgshare01.online/epgshare01.online_<TAG>.channels.xml
+NODE_OPTIONS=--max-old-space-size=6000 npm run grab --- --channels=sites/epgshare01.online/epgshare01.online_<TAG>.channels.xml
 ```
 
 ### Update channel list

@@ -1,12 +1,8 @@
 import { execSync } from 'child_process'
 import fs from 'fs-extra'
-import os from 'os'
 import { pathToFileURL } from 'node:url'
 
-let ENV_VAR = 'SITES_DIR=tests/__data__/output/sites'
-if (os.platform() === 'win32') {
-  ENV_VAR = 'SET "SITES_DIR=tests/__data__/output/sites" &&'
-}
+const ENV_VAR = 'cross-env SITES_DIR=tests/__data__/output/sites'
 
 beforeEach(() => {
   fs.emptyDirSync('tests/__data__/output')

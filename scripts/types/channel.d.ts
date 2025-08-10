@@ -1,6 +1,6 @@
 import { Collection } from '@freearhey/core'
 
-export type ChannelData = {
+export interface ChannelData {
   id: string
   name: string
   alt_names: string[]
@@ -15,10 +15,9 @@ export type ChannelData = {
   closed: string
   replaced_by: string
   website: string
-  logo: string
 }
 
-export type ChannelSearchableData = {
+export interface ChannelSearchableData {
   id: string
   name: string
   altNames: string[]

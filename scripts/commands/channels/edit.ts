@@ -1,20 +1,20 @@
 import { Storage, Collection, Logger, Dictionary } from '@freearhey/core'
+import type { DataProcessorData } from '../../types/dataProcessor'
+import type { DataLoaderData } from '../../types/dataLoader'
+import { ChannelSearchableData } from '../../types/channel'
+import { Channel, ChannelList, Feed } from '../../models'
+import { DataProcessor, DataLoader } from '../../core'
 import { select, input } from '@inquirer/prompts'
-import { ChannelsParser, XML } from '../../core'
-import { Channel, Feed } from '../../models'
+import { ChannelsParser } from '../../core'
 import { DATA_DIR } from '../../constants'
 import nodeCleanup from 'node-cleanup'
+import sjs from '@freearhey/search-js'
+import epgGrabber from 'epg-grabber'
 import { Command } from 'commander'
 import readline from 'readline'
-import sjs from '@freearhey/search-js'
-import { DataProcessor, DataLoader } from '../../core'
-import type { DataLoaderData } from '../../types/dataLoader'
-import type { DataProcessorData } from '../../types/dataProcessor'
-import epgGrabber from 'epg-grabber'
-import { ChannelSearchableData } from '../../types/channel'
 
-type ChoiceValue = { type: string; value?: Feed | Channel }
-type Choice = { name: string; short?: string; value: ChoiceValue; default?: boolean }
+interface ChoiceValue { type: string; value?: Feed | Channel }
+interface Choice { name: string; short?: string; value: ChoiceValue; default?: boolean }
 
 if (process.platform === 'win32') {
   readline
@@ -34,11 +34,11 @@ program.argument('<filepath>', 'Path to *.channels.xml file to edit').parse(proc
 const filepath = program.args[0]
 const logger = new Logger()
 const storage = new Storage()
-let parsedChannels = new Collection()
+let channelList = new ChannelList({ channels: [] })
 
 main(filepath)
 nodeCleanup(() => {
-  save(filepath)
+  save(filepath, channelList)
 })
 
 export default async function main(filepath: string) {
@@ -51,18 +51,18 @@ export default async function main(filepath: string) {
   const dataStorage = new Storage(DATA_DIR)
   const loader = new DataLoader({ storage: dataStorage })
   const data: DataLoaderData = await loader.load()
-  const { feedsGroupedByChannelId, channels, channelsKeyById }: DataProcessorData =
+  const { channels, channelsKeyById, feedsGroupedByChannelId }: DataProcessorData =
     processor.process(data)
 
   logger.info('loading channels...')
   const parser = new ChannelsParser({ storage })
-  parsedChannels = await parser.parse(filepath)
-  const parsedChannelsWithoutId = parsedChannels.filter(
+  channelList = await parser.parse(filepath)
+  const parsedChannelsWithoutId = channelList.channels.filter(
     (channel: epgGrabber.Channel) => !channel.xmltv_id
   )
 
   logger.info(
-    `found ${parsedChannels.count()} channels (including ${parsedChannelsWithoutId.count()} without ID)`
+    `found ${channelList.channels.count()} channels (including ${parsedChannelsWithoutId.count()} without ID)`
   )
 
   logger.info('creating search index...')
@@ -73,10 +73,10 @@ export default async function main(filepath: string) {
 
   logger.info('starting...\n')
 
-  for (const parsedChannel of parsedChannelsWithoutId.all()) {
+  for (const channel of parsedChannelsWithoutId.all()) {
     try {
-      parsedChannel.xmltv_id = await selectChannel(
-        parsedChannel,
+      channel.xmltv_id = await selectChannel(
+        channel,
         searchIndex,
         feedsGroupedByChannelId,
         channelsKeyById
@@ -124,8 +124,8 @@ async function selectChannel(
     case 'channel': {
       const selectedChannel = selected.value
       if (!selectedChannel) return ''
-      const selectedFeedId = await selectFeed(selectedChannel.id, feedsGroupedByChannelId)
-      if (selectedFeedId === '-') return selectedChannel.id
+      const selectedFeedId = await selectFeed(selectedChannel.id || '', feedsGroupedByChannelId)
+      if (selectedFeedId === '-') return selectedChannel.id || ''
       return [selectedChannel.id, selectedFeedId].join('@')
     }
   }
@@ -153,7 +153,7 @@ async function selectFeed(channelId: string, feedsGroupedByChannelId: Dictionary
     case 'feed':
       const selectedFeed = selected.value
       if (!selectedFeed) return ''
-      return selectedFeed.id
+      return selectedFeed.id || ''
   }
 
   return ''
@@ -205,10 +205,9 @@ function getFeedChoises(feeds: Collection): Choice[] {
   return choises
 }
 
-function save(filepath: string) {
+function save(filepath: string, channelList: ChannelList) {
   if (!storage.existsSync(filepath)) return
-  const xml = new XML(parsedChannels)
-  storage.saveSync(filepath, xml.toString())
+  storage.saveSync(filepath, channelList.toString())
   logger.info(`\nFile '${filepath}' successfully saved`)
 }
 

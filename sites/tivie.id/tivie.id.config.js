@@ -72,11 +72,18 @@ module.exports = {
           const img = $('#main-content > div > div:nth-child(1) img')
           const info = $('#main-content > div > div:nth-child(2)')
           const title = parseText(info.find('h2:nth-child(2)'))
-          if (!queue.i.title.startsWith(title)) {
+          if (!queue.i.title.startsWith(title) && !queue.i.title.startsWith('LIVE ')) {
             queue.i.subTitle = parseText(info.find('h2:nth-child(2)'))
           }
-          queue.i.description = parseText(info.find('div[class=""]:nth-child(4)'))
-          queue.i.date = parseText(info.find('h2:nth-child(3)'))
+          const desc1 = parseText(info.find('div[class=""]:nth-child(3)'))
+          const desc2 = parseText(info.find('div[class=""]:nth-child(4)'))
+          if (desc2 == '') {
+            queue.i.description = desc1.replace('TiViE.id | ', '')
+          } else {
+            queue.i.description = desc2.replace('TiViE.id | ', '')
+            queue.i.date = parseText(info.find('h2:nth-child(3)'))
+          }
+          queue.i.categories = parseText(info.find('div[class=""]:nth-child(1)')).split(', ')
           queue.i.image = img.length ? img.attr('src') : null
         })
       }

@@ -2,7 +2,6 @@ const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
-const { upperCase } = require('lodash')
 
 let X_CSRFTOKEN
 let Cookie
@@ -56,7 +55,7 @@ module.exports = {
         directors: parseDirectors(item),
         producers: parseProducers(item),
         adapters: parseAdapters(item),
-        country: upperCase(item.country),
+        country: item.country?.toUpperCase(),
         date: item.producedate,
         urls: parseUrls(item)
       })

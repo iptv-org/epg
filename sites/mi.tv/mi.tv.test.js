@@ -1,4 +1,6 @@
 const { parser, url } = require('./mi.tv.config.js')
+const fs = require('fs')
+const path = require('path')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -10,8 +12,6 @@ const channel = {
   site_id: 'ar#24-7-canal-de-noticias',
   xmltv_id: '247CanaldeNoticias.ar'
 }
-const content =
-  '<div id="listings"> <div class="channel-info"> <img src="https://cdn.mitvstatic.com/channels/ar_24-7-canal-de-noticias_m.png" alt="Programación 24/7 Canal de Noticias" title="24/7 Canal de Noticias" width="75" height="75"/> <h1>Programación 24/7 Canal de Noticias <span>Miércoles 24 de noviembre</span></h1> </div><ul class="broadcasts time24"> <li> <a href="/ar/programas/trasnoche-de-24-7" class="program-link"> <div class="image-parent"> <div class="image" style=" background-image: url(\'https://cdn.mitvstatic.com/programs/fallback_other_l_m.jpg\'); " ></div></div><div class="content"> <span class="time">03:00</span> <h2>Trasnoche de 24/7</h2> <span class="sub-title">Interés general</span> <p class="synopsis">Lo más visto de la semana en nuestra pantalla.</p></div></a> </li><li class="native"> <div id="div-gpt-ad-1586617865827-0"></div></li><li> <a href="/ar/programas/noticiero-central-segunda-edicion" class="program-link"> <div class="image-parent"> <div class="image" style=" background-image: url(\'https://cdn.mitvstatic.com/programs/fallback_other_l_m.jpg\'); " ></div></div><div class="content"> <span class="time">23:00</span> <h2>Noticiero central - Segunda edición</h2> <span class="sub-title">Noticiero</span> <p class="synopsis"> Cerramos el día con un completo resumen de los temas más relevantes con columnistas y análisis especiales para terminar el día. </p></div></a> </li><li> <a href="/ar/programas/plus-energetico" class="program-link"> <div class="image-parent"> <div class="image" style=" background-image: url(\'https://cdn.mitvstatic.com/programs/fallback_other_l_m.jpg\'); " ></div></div><div class="content"> <span class="time">01:00</span> <h2>Plus energético</h2> <span class="sub-title">Cultural</span> <p class="synopsis"> La energía tiene mucho para mostrar. Este programa reúne a las principales empresas y protagonistas de la actividad que esta revolucionando la región. </p></div></a> </li></ul></div>'
 
 it('can generate valid url', () => {
   expect(url({ channel, date })).toBe(
@@ -20,6 +20,7 @@ it('can generate valid url', () => {
 })
 
 it('can parse response', () => {
+  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.html'), 'utf8')
   const result = parser({ content, date }).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
@@ -60,7 +61,7 @@ it('can handle empty guide', () => {
   const result = parser({
     date,
     channel,
-    content: '<!DOCTYPE html><html><head></head><body></body></html>'
+    content: ''
   })
   expect(result).toMatchObject([])
 })
