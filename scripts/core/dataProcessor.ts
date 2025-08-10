@@ -3,8 +3,7 @@ import { DataLoaderData } from '../types/dataLoader'
 import { Collection } from '@freearhey/core'
 
 export class DataProcessor {
-  constructor() {}
-
+  
   process(data: DataLoaderData) {
     let channels = new Collection(data.channels).map(data => new Channel(data))
     const channelsKeyById = channels.keyBy((channel: Channel) => channel.id)

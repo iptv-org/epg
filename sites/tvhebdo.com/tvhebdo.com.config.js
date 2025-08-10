@@ -1,6 +1,7 @@
 const cheerio = require('cheerio')
 const axios = require('axios')
 const { DateTime } = require('luxon')
+const uniqBy = require('lodash.uniqby')
 
 module.exports = {
   site: 'tvhebdo.com',
@@ -34,7 +35,6 @@ module.exports = {
     return programs
   },
   async channels() {
-    const _ = require('lodash')
 
     let items = []
     const offsets = [
@@ -72,7 +72,7 @@ module.exports = {
       })
     })
 
-    return _.uniqBy(channels, 'site_id')
+    return uniqBy(channels, x => x.site_id)
   }
 }
 
