@@ -6,6 +6,7 @@ ENV CRON_SCHEDULE="0 0 * * *"
 ENV GZIP=false
 ENV MAX_CONNECTIONS=1
 ENV DAYS=
+ENV RUN_AT_STARTUP=true
 RUN apk update \
     && apk upgrade --available \
     && apk add curl git tzdata bash \
