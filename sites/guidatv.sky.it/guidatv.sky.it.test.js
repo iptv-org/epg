@@ -1,6 +1,7 @@
-const { parser, url } = require('./guidatv.sky.it.config.js')
+const { parser, url, channels } = require('./guidatv.sky.it.config.js')
 const fs = require('fs')
 const path = require('path')
+const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -49,4 +50,24 @@ it('can handle empty guide', () => {
     content: fs.readFileSync(path.resolve(__dirname, '__data__/no_content.json'))
   })
   expect(result).toMatchObject([])
+})
+
+it('can parse channel list', async () => {
+  const mockResponse = fs.readFileSync(path.join(__dirname, '__data__', 'data.json'), 'utf8')
+  axios.get = jest.fn().mockResolvedValue({ data: JSON.parse(mockResponse) })
+  const results = await channels()
+
+  expect(results.length).toBe(154)
+  expect(results[0]).toMatchObject({
+    site_id: 'DTH#9115',
+    name: 'Sky Uno',
+    lang: 'it',
+    xmltv_id: 'SkyUno.it',
+  })
+  expect(results[29]).toMatchObject({
+    site_id: 'DTH#9094',
+    name: 'Sky Sport24',
+    lang: 'it',
+    xmltv_id: 'SkySport24.it',
+  })
 })
