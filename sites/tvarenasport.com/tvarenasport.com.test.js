@@ -11,7 +11,7 @@ dayjs.extend(utc)
 const date = dayjs.utc('2025-07-30', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: 'a1p',
-  xmltv_id: 'ArenaSportPremium1.rs'
+  xmltv_id: 'ArenaSport1Premium.rs'
 }
 
 it('can generate valid url', () => {

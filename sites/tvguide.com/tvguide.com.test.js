@@ -13,14 +13,14 @@ jest.mock('axios')
 const date = dayjs.utc('2025-07-29', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: '9200004683',
-  xmltv_id: 'NatGeoWild.us'
+  xmltv_id: 'NationalGeographicWild.us@East'
 }
 
 it('can generate valid url', async () => {
   axios.get.mockImplementation(url => {
     if (url === 'https://www.tvguide.com/listings/') {
       return Promise.resolve({
-        data: 'html_apiKey=DI9elXhZ3bU6ujsA2gXEKOANyncXGUGc&...'
+        data: fs.readFileSync(path.join(__dirname, '__data__', 'content.html'), 'utf8')
       })
     }
     throw new Error(`Unexpected URL: ${url}`)
@@ -33,7 +33,7 @@ it('can generate valid url', async () => {
 })
 
 it('can parse response', async () => {
-  const content = JSON.parse(fs.readFileSync(path.resolve(__dirname, '__data__/content.json'), 'utf-8'))
+  const content = JSON.parse(fs.readFileSync(path.join(__dirname, '__data__', 'content.json'), 'utf-8'))
 
   axios.get.mockImplementation(url => {
     if (
@@ -41,7 +41,7 @@ it('can parse response', async () => {
       'https://backend.tvguide.com/tvschedules/tvguide/programdetails/9000058285/web'
     ) {
       return Promise.resolve({
-        data: JSON.parse(fs.readFileSync(path.resolve(__dirname, '__data__/program.json')))
+        data: JSON.parse(fs.readFileSync(path.join(__dirname, '__data__', 'program.json')))
       })
     } else {
       return Promise.resolve({ data: '' })
@@ -72,7 +72,7 @@ it('can handle empty guide', async () => {
   const results = await parser({
     date,
     channel,
-    content: fs.readFileSync(path.resolve(__dirname, '__data__/no-content.json'))
+    content: fs.readFileSync(path.join(__dirname, '__data__', 'no-content.json'))
   })
   expect(results).toMatchObject([])
 })

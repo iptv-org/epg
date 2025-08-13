@@ -44,7 +44,7 @@ module.exports = {
         lang: 'it',
         site_id: `DTH#${ch.id}`,
         name: ch.name,
-        xmltv_id: ch.name.replace(/ |HD|\+1/g, '') + num + '.it' + feeds, 
+        xmltv_id: ch.name.replace(/ |HD|\+1|\+24/g, '') + num + '.it' + feeds, 
       }
     })
     return channels
