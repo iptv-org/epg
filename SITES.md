@@ -16,7 +16,6 @@
     <tr><td><a href="sites/antennaeurope.gr">antennaeurope.gr</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/antennapacific.gr">antennapacific.gr</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/antennasatellite.gr">antennasatellite.gr</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/arianaafgtv.com">arianaafgtv.com</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/arianatelevision.com">arianatelevision.com</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/arirang.com">arirang.com</a></td><td align="right">3</td><td align="right">3</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/artonline.tv">artonline.tv</a></td><td align="right">5</td><td align="right">5</td><td align="center">🟢</td><td></td></tr>
@@ -28,7 +27,7 @@
     <tr><td><a href="sites/canalplus.com">canalplus.com</a></td><td align="right">11720</td><td align="right">212</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/cgates.lt">cgates.lt</a></td><td align="right">102</td><td align="right">61</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/chada.ma">chada.ma</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/chaines-tv.orange.fr">chaines-tv.orange.fr</a></td><td align="right">295</td><td align="right">146</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/chaines-tv.orange.fr">chaines-tv.orange.fr</a></td><td align="right">345</td><td align="right">344</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/clickthecity.com">clickthecity.com</a></td><td align="right">32</td><td align="right">30</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/content.astro.com.my">content.astro.com.my</a></td><td align="right">157</td><td align="right">112</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/cosmotetv.gr">cosmotetv.gr</a></td><td align="right">108</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
@@ -180,7 +179,7 @@
     <tr><td><a href="sites/tv-spored.siol.net">tv-spored.siol.net</a></td><td align="right">312</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv.blue.ch">tv.blue.ch</a></td><td align="right">1030</td><td align="right">565</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv.cctv.com">tv.cctv.com</a></td><td align="right">94</td><td align="right">88</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/tv.dir.bg">tv.dir.bg</a></td><td align="right">111</td><td align="right">93</td><td align="center">🔴</td><td>https://github.com/iptv-org/epg/issues/2779</td></tr>
+    <tr><td><a href="sites/tv.dir.bg">tv.dir.bg</a></td><td align="right">100</td><td align="right">91</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv.lv">tv.lv</a></td><td align="right">137</td><td align="right">49</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv.magenta.at">tv.magenta.at</a></td><td align="right">307</td><td align="right">228</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv.mail.ru">tv.mail.ru</a></td><td align="right">664</td><td align="right">643</td><td align="center">🟢</td><td></td></tr>
@@ -192,7 +191,7 @@
     <tr><td><a href="sites/tv.yandex.ru">tv.yandex.ru</a></td><td align="right">97</td><td align="right">67</td><td align="center">🔴</td><td>https://github.com/iptv-org/epg/issues/2803</td></tr>
     <tr><td><a href="sites/tv24.co.uk">tv24.co.uk</a></td><td align="right">1072</td><td align="right">39</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv24.se">tv24.se</a></td><td align="right">326</td><td align="right">157</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/tv2go.t-2.net">tv2go.t-2.net</a></td><td align="right">335</td><td align="right">254</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/tv2go.t-2.net">tv2go.t-2.net</a></td><td align="right">335</td><td align="right">253</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tvarenasport.com">tvarenasport.com</a></td><td align="right">14</td><td align="right">12</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tvarenasport.hr">tvarenasport.hr</a></td><td align="right">10</td><td align="right">10</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tvcesoir.fr">tvcesoir.fr</a></td><td align="right">135</td><td align="right">133</td><td align="center">🟢</td><td></td></tr>
@@ -237,6 +236,6 @@
     <tr><td><a href="sites/zap2it.com">zap2it.com</a></td><td align="right">595</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/ziggogo.tv">ziggogo.tv</a></td><td align="right">152</td><td align="right">130</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/znbc.co.zm">znbc.co.zm</a></td><td align="right">4</td><td align="right">4</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/zuragt.mn">zuragt.mn</a></td><td align="right">36</td><td align="right">25</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/zuragt.mn">zuragt.mn</a></td><td align="right">34</td><td align="right">27</td><td align="center">🟢</td><td></td></tr>
   </tbody>
 </table>
