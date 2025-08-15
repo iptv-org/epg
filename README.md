@@ -201,6 +201,7 @@ iptv-org/epg
 | DAYS            | Number of days for which the guide will be loaded (defaults to the value from the site config)                     |
 | TIMEOUT         | Timeout for each request in milliseconds (default: 0)                                                              |
 | DELAY           | Delay between request in milliseconds (default: 0)                                                                 |
+| RUN_AT_STARTUP  | Run grab on container startup (default: true)                                                                 |
 
 ## Database
 
