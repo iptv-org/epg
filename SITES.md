@@ -28,6 +28,7 @@
     <tr><td><a href="sites/cgates.lt">cgates.lt</a></td><td align="right">102</td><td align="right">61</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/chada.ma">chada.ma</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/chaines-tv.orange.fr">chaines-tv.orange.fr</a></td><td align="right">345</td><td align="right">344</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/claro.com.br">claro.com.br</a></td><td align="right">273</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/clickthecity.com">clickthecity.com</a></td><td align="right">32</td><td align="right">30</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/content.astro.com.my">content.astro.com.my</a></td><td align="right">157</td><td align="right">112</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/cosmotetv.gr">cosmotetv.gr</a></td><td align="right">108</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
@@ -138,6 +139,7 @@
     <tr><td><a href="sites/reportv.com.ar">reportv.com.ar</a></td><td align="right">163</td><td align="right">97</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/rikstv.no">rikstv.no</a></td><td align="right">80</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/rotana.net">rotana.net</a></td><td align="right">32</td><td align="right">28</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/roya-tv.com">roya-tv.com</a></td><td align="right">10</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/rtb.gov.bn">rtb.gov.bn</a></td><td align="right">3</td><td align="right">3</td><td align="center">🔴</td><td>https://github.com/iptv-org/epg/issues/2257</td></tr>
     <tr><td><a href="sites/rthk.hk">rthk.hk</a></td><td align="right">8</td><td align="right">8</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/rtmklik.rtm.gov.my">rtmklik.rtm.gov.my</a></td><td align="right">8</td><td align="right">6</td><td align="center">🟢</td><td></td></tr>
@@ -178,6 +180,7 @@
     <tr><td><a href="sites/tv-programme.telecablesat.fr">tv-programme.telecablesat.fr</a></td><td align="right">268</td><td align="right">250</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv-spored.siol.net">tv-spored.siol.net</a></td><td align="right">312</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv.blue.ch">tv.blue.ch</a></td><td align="right">1030</td><td align="right">565</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/tv.boxbg.net">tv.boxbg.net</a></td><td align="right">83</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv.cctv.com">tv.cctv.com</a></td><td align="right">94</td><td align="right">88</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv.dir.bg">tv.dir.bg</a></td><td align="right">100</td><td align="right">91</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv.lv">tv.lv</a></td><td align="right">137</td><td align="right">49</td><td align="center">🟢</td><td></td></tr>
