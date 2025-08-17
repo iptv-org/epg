@@ -33,7 +33,7 @@ module.exports = {
 
     return programs
   },
-  async channels({ country = 'no' }) {
+  async channels({ country }) {
     const axios = require('axios')
     const date = dayjs().format('YYYY-MM-DD')
 
