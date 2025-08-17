@@ -41,8 +41,10 @@ module.exports = {
     const data = res.data
     if (!data || !Array.isArray(data.channels)) return []
 
+    const lang = country === 'dk' ? 'da' : country
+
     return data.channels.map(item => ({
-      lang: country,
+      lang: lang,
       site_id: `${country}#${item.id}`,
       name: item.name
     }))
