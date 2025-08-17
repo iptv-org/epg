@@ -142,8 +142,8 @@ module.exports = {
 
     response.d.forEach(item => {
       channels.push({
-        channel: item.ChannelFullName,
         site_id: `${item.ContentChannelID}#${item.ChannelName.replace(/&/g, '&amp;')}`,
+        name: item.ChannelFullName,
         logo: item.ImageUrl,
         lang: 'es'
       })
