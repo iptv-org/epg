@@ -1,0 +1,78 @@
+{
+  "data": {
+    "item": {
+      "id": 9000058285,
+      "name": "Secrets of the Zoo: North Carolina",
+      "isSportsEvent": false,
+      "tvRating": "TV-14",
+      "categoryId": 5,
+      "subCategoryId": 0,
+      "episodeNumber": 1,
+      "mcoId": 1000990897,
+      "title": "Secrets of the Zoo: North Carolina",
+      "type": "show",
+      "slug": "secrets-of-the-zoo-north-carolina",
+      "typeId": 1,
+      "images": [
+        {
+          "id": "2-e5b17322185dd95f066a2de47efd8a12",
+          "provider": "2",
+          "imageType": {
+            "typeId": 1,
+            "typeName": "showcard",
+            "providerTypeName": "showcard"
+          },
+          "bucketType": "catalog",
+          "bucketPath": "/provider/2/13/2-e5b17322185dd95f066a2de47efd8a12.jpg",
+          "filename": "",
+          "width": 3840,
+          "height": 2160
+        },
+        {
+          "id": "2-59b2fd193bc035d4f2d4d3f2a68629d3",
+          "provider": "2",
+          "imageType": {
+            "typeId": 2,
+            "typeName": "poster art",
+            "providerTypeName": "poster art"
+          },
+          "bucketType": "catalog",
+          "bucketPath": "/provider/2/2/2-59b2fd193bc035d4f2d4d3f2a68629d3.jpg",
+          "filename": "",
+          "width": 2000,
+          "height": 3000
+        }
+      ],
+      "genres": [
+        {
+          "id": 14,
+          "name": "Reality",
+          "genres": [
+            "Reality-TV"
+          ]
+        }
+      ],
+      "metacriticSummary": null,
+      "video": null,
+      "parentId": 1000990897,
+      "description": "Chimps living at the North Carolina Zoo, a zoo located in the center of North Carolina that serves as the world's largest natural habitat zoo, as well as one of two state-supported zoos, are cared for",
+      "rating": null,
+      "episodeTitle": "Chimp Off the Old Block",
+      "releaseYear": 2020,
+      "seoUrl": null,
+      "episodeAirDate": "/Date(1604102400000)/",
+      "seasonNumber": 1,
+      "duration": null
+    }
+  },
+  "links": {
+    "self": {
+      "href": "https://backend.tvguide.com/tvschedules/tvguide/programdetails/9000058285/web"
+    }
+  },
+  "meta": {
+    "componentName": null,
+    "componentDisplayName": null,
+    "componentType": null
+  }
+}
