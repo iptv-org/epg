@@ -52,13 +52,21 @@ async function main() {
     })
   }
 
-  let parsedChannels = config.channels(args)
+  let parsedChannels: epgGrabber.Channel[] | Promise<epgGrabber.Channel[]> = []
+
+  if (!config.channels || typeof config.channels !== 'function') {
+    logger.error(`Config file '${options.config}' does not export a channels(...) function`)
+    return
+  }
+
+  parsedChannels = config.channels(args)
+
   if (isPromise(parsedChannels)) {
     parsedChannels = await parsedChannels
   }
-  parsedChannels = parsedChannels.map((channel: epgGrabber.Channel) => {
-    channel.site = config.site
 
+  parsedChannels = (parsedChannels as epgGrabber.Channel[]).map((channel: epgGrabber.Channel) => {
+    channel.site = config.site
     return channel
   })
 

@@ -43,9 +43,6 @@ module.exports = {
     })
 
     return programs
-  },
-  channels() {
-    return []
   }
 }
 
