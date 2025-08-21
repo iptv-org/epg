@@ -27,14 +27,23 @@ module.exports = {
     const data = await axios
       .get('https://epg.112114.xyz/pp.xml')
       .then(r => r.data)
-      .catch(console.log)
-    const { channels } = parser.parse(data)
+      .catch(e => { console.log(e); return null })
+    if (!data) return []
 
-    return channels.map(channel => ({
-      lang: 'zh',
-      site_id: channel.id,
-      name: channel.displayName[0].value
-    }))
+    const { channels = [] } = parser.parse(data)
+
+    const seen = new Set()
+    return channels
+      .filter(ch => {
+        if (seen.has(ch.id)) return false
+        seen.add(ch.id)
+        return true
+      })
+      .map(channel => ({
+        lang: 'zh',
+        site_id: channel.id,
+        name: channel.displayName?.[0]?.value || ''
+      }))
   }
 }
 
