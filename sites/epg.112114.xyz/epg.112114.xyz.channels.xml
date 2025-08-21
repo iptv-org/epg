@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="4K综艺">4K综艺</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="4K健身">4K健身</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="4K宝贝">4K宝贝</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="4K时尚">4K时尚</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="4K演唱会">4K演唱会</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="4K电影">4K电影</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="4K电视剧">4K电视剧</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="4K纪实">4K纪实</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="4K美食">4K美食</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="1905环球经典">1905环球经典</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="BTV体育">BTV体育</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="BTV影视">BTV影视</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="BRTVArtsChannel.cn" site_id="BTV文艺">BTV文艺</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="BTV新闻">BTV新闻</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="BTV生活">BTV生活</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="BTV科教">BTV科教</channel>
@@ -13,6 +19,7 @@
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="CCTV2">CCTV2</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="CCTV3">CCTV3</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="CCTV4">CCTV4</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="CCTV4K">CCTV4K</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="CCTV4K">CCTV4K</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="CCTV4欧洲">CCTV4欧洲</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="CCTV4美洲">CCTV4美洲</channel>
@@ -59,58 +66,33 @@
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="CINEMAX热门影院">CINEMAX热门影院</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="CMC北美">CMC北美</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="CMC香港">CMC香港</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="DALIAN1">DALIAN1</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="DALIAN2">DALIAN2</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="DALIAN4">DALIAN4</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="CNC中文">CNC中文</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="CNC英文">CNC英文</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="DONGFANG1">DONGFANG1</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="DOX4K">DOX4K</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="FZTV1">FZTV1</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="GTV游戏竞技">GTV游戏竞技</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="HBHGTV1">HBHGTV1</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="HBHGTV2">HBHGTV2</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="HBHSTV1">HBHSTV1</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="HBJZTV1">HBJZTV1</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="HBJZTV2">HBJZTV2</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="HBO">HBO</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="HBO原创巨献">HBO原创巨献</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="HBO强档巨献">HBO强档巨献</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="HBO溫馨家庭">HBO溫馨家庭</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="HBSYTV1">HBSYTV1</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="HBSYTV2">HBSYTV2</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="HBSYTV3">HBSYTV3</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="HBSZTV1">HBSZTV1</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="HBSZTV2">HBSZTV2</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="HBWHTV2">HBWHTV2</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="HBWHTV3">HBWHTV3</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="HBWHTV7">HBWHTV7</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="HBXGTV1">HBXGTV1</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="HBXGTV2">HBXGTV2</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="HBXYTV1">HBXYTV1</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="HBXYTV2">HBXYTV2</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="HBYCSXTV1">HBYCSXTV1</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="HBYCSXTV2">HBYCSXTV2</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="HISTORY">HISTORY</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="HNXTTV1">HNXTTV1</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="HNZKTV1">HNZKTV1</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="HNZKTV2">HNZKTV2</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="HNZKTV3">HNZKTV3</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="HNZKTV4">HNZKTV4</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="HOY76">HOY76</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="HOY77">HOY77</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="HOY78">HOY78</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="HUASHU-JCYS">HUASHU-JCYS</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="HUASHU-TSJL">HUASHU-TSJL</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="HUBEI1">HUBEI1</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="HUBEI2">HUBEI2</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="HUBEI3">HUBEI3</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="HUBEI4">HUBEI4</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="HUBEI5">HUBEI5</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="HUBEI6">HUBEI6</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="HUBEI7">HUBEI7</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="HUBEI9">HUBEI9</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="HRBTV1">HRBTV1</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="HZTV1">HZTV1</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="HZTV2">HZTV2</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="IPTV5+">IPTV5+</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="IPTV6+">IPTV6+</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="IPTV少儿动画">IPTV少儿动画</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="IPTV热播剧场">IPTV热播剧场</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="IPTV经典电影">IPTV经典电影</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="IPTV魅力时尚">IPTV魅力时尚</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="JINHUATV1">JINHUATV1</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="KFTV1">KFTV1</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="LSTIME电影台">LSTIME电影台</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="newtv中国功夫">NEWTV中国功夫</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="newtv军事评论">NEWTV军事评论</channel>
@@ -134,14 +116,6 @@
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="newtv超级电视剧">NEWTV超级电视剧</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="newtv超级综艺">NEWTV超级综艺</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="newtv金牌综艺">NEWTV金牌综艺</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="NOW剧集台">NOW剧集台</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="NOW华剧台">NOW华剧台</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="NOW影视点播站">NOW影视点播站</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="NOW新闻台">NOW新闻台</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="NOW爆谷台">NOW爆谷台</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="NOW爆谷星影台">NOW爆谷星影台</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="NOW直播台">NOW直播台</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="NOW财经台">NOW财经台</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="POPC">POPC</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="QHTV1">QHTV1</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="RTHK31">RTHK31</channel>
@@ -157,23 +131,21 @@
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="SCTV7">SCTV7</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="SCTV8">SCTV8</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="SCTV9">SCTV9</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="SITV14">SITV14</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="SKYNEWS">SKYNEWS</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="SONYMAX">SONYMAX</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="SONYSAB">SONYSAB</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="SXJZTV1">SXJZTV1</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="SXJZTV2">SXJZTV2</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="TATV1">TATV1</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="TATV2">TATV2</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="TATV3">TATV3</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="TATV4">TATV4</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="TVB PLUS">TVB PLUS</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="TVBS新闻">TVBS新闻</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="TVB剧场">TVB剧场</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="TVB星河">TVB星河</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="VIUTVSIX">VIUTVSIX</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="XINYANG1">XINYANG1</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="XSJZTV1">XSJZTV1</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="Y+影院">Y+影院</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="ZHTV-1">ZHTV-1</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="ZHTV-2">ZHTV-2</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="三沙卫视">三沙卫视</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="三门峡1新闻综合">三门峡1新闻综合</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="三门峡2公共">三门峡2公共</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="上海">上海</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="上海教育">上海教育</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="上海教育台">上海教育台</channel>
@@ -191,8 +163,7 @@
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="东方影视">东方影视</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="东方电影">东方电影</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="东方财经">东方财经</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="东森亚洲卫视">东森亚洲卫视</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="东森亚洲新闻台">东森亚洲新闻台</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="东森新闻">东森新闻</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="东莞新闻">东莞新闻</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="东莞生活资讯">东莞生活资讯</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="中华特产">中华特产</channel>
@@ -205,29 +176,27 @@
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="中国教育3台">中国教育3台</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="中国教育4台">中国教育4台</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="中国教育一套">中国教育一套</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="中天亚洲台">中天亚洲台</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="中天新闻台">中天新闻台</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="中央台–珠江">中央台–珠江</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="中学生">中学生</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="中山公共">中山公共</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="中山教育">中山教育</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="中山综合">中山综合</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="中视">中视</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="中视新闻台">中视新闻台</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="之江纪录">之江纪录</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="乌鲁木齐都市">乌鲁木齐都市</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="乐山新闻综合">乐山新闻综合</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="乐游">乐游</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="书画">书画</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="云上电影院">云上电影院</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="云南公共">云南公共</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="云南卫视">云南卫视</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="云南娱乐">云南娱乐</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="云南少儿">云南少儿</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="云南康旅">云南康旅</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="云南影视">云南影视</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="云南生活">云南生活</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="云南都市">云南都市</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="亚洲剧台">亚洲剧台</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="亚洲新闻台">亚洲新闻台</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="亚洲新闻">亚洲新闻</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="亚洲电影">亚洲电影</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="京视剧场">京视剧场</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="仙游电视">仙游电视</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="优优宝贝">优优宝贝</channel>
@@ -237,6 +206,7 @@
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="佛山影视">佛山影视</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="佛山综合">佛山综合</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="佛山顺德">佛山顺德</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="信阳1综合">信阳1综合</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="先锋乒羽">先锋乒羽</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="全民热练">全民热练</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="六安公共">六安公共</channel>
@@ -246,7 +216,6 @@
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="兰州公共">兰州公共</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="兰州文旅">兰州文旅</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="兰州新闻综合">兰州新闻综合</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="兰州生活经济">兰州生活经济</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="兵器科技">兵器科技</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="兵团卫视">兵团卫视</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="内蒙古农牧">内蒙古农牧</channel>
@@ -260,17 +229,15 @@
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="军旅剧场">军旅剧场</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="农业致富">农业致富</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="农林卫视">农林卫视</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="冬奥纪实">冬奥纪实</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="凤凰中文">凤凰中文</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="凤凰卫视中文台">凤凰卫视中文台</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="凤凰卫视资讯台">凤凰卫视资讯台</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="凤凰卫视香港台">凤凰卫视香港台</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="凤凰资讯">凤凰资讯</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="凤凰香港">凤凰香港</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="力量影院">力量影院</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="动作电影">动作电影</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="动漫秀场">动漫秀场</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="动物星球">动物星球</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="劲爆体育">劲爆体育</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="北京IPTV4K超清">北京IPTV4K超清</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="北京体育休闲">北京体育休闲</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="北京卫视">北京卫视</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="北京国际">北京国际</channel>
@@ -289,8 +256,9 @@
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="北海公共">北海公共</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="北海新闻综合">北海新闻综合</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="北海经济科教">北海经济科教</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="十堰新闻综合">十堰新闻综合</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="十堰经济旅游">十堰经济旅游</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="千禧经典台">千禧经典台</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="半岛英语">半岛英语</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="华视">华视</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="华语剧台">华语剧台</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="南京信息">南京信息</channel>
@@ -305,16 +273,17 @@
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="南京电视台">南京电视台</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="南充科教">南充科教</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="南充综合">南充综合</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="南国都市4K">南国都市4K</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="南方卫视">南方卫视</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="南方少儿">南方少儿</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="南方影视">南方影视</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="南方经济">南方经济</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="南方综艺">南方综艺</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="南昌公共">南昌公共</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="南昌新闻综合">南昌新闻综合</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="南昌资讯">南昌资讯</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="南昌都市">南昌都市</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="南通新闻综合">南通新闻综合</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="南阳3科教">南阳3科教</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="卡酷动画">卡酷动画</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="卡酷少儿">卡酷少儿</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="卫生健康">卫生健康</channel>
@@ -332,7 +301,6 @@
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="台州文化生活">台州文化生活</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="台州新闻综合">台州新闻综合</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="台视">台视</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="吉林公共新闻">吉林公共新闻</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="吉林卫视">吉林卫视</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="吉林市公共">吉林市公共</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="吉林市新闻">吉林市新闻</channel>
@@ -345,14 +313,19 @@
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="吉视乡村">吉视乡村</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="吉视影视">吉视影视</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="吉视生活">吉视生活</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="吉视综艺文化">吉视综艺文化</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="吉视都市">吉视都市</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="吴江新闻综合">吴江新闻综合</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="周口1新闻综合">周口1新闻综合</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="周口2公共">周口2公共</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="呼和浩特影视">呼和浩特影视</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="呼和浩特综合">呼和浩特综合</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="呼和浩特都市">呼和浩特都市</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="咪咕综合体育">咪咕综合体育</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="咪咕足球">咪咕足球</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="哈哈炫动">哈哈炫动</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="哈萨克语新闻综合">哈萨克语新闻综合</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="哈萨克语综艺">哈萨克语综艺</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="哒啵电竞">哒啵电竞</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="哒啵赛事">哒啵赛事</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="嘉佳卡通">嘉佳卡通</channel>
@@ -366,14 +339,10 @@
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="四川经济">四川经济</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="四海钓鱼">四海钓鱼</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="国学">国学</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="国家地理高清">国家地理高清</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="外汇理财">外汇理财</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="大庆新闻综合">大庆新闻综合</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="大湾区卫视">大湾区卫视</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="大湾区卫视海外版">大湾区卫视海外版</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="大连文体">大连文体</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="大连新闻综合">大连新闻综合</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="大连生活">大连生活</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="天元围棋">天元围棋</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="天映CM+">天映CM+</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="天映印度尼西亚">天映印度尼西亚</channel>
@@ -398,7 +367,10 @@
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="央广健康">央广健康</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="央视台球">央视台球</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="央视文化精品">央视文化精品</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="央视精品">央视精品</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="女性时尚">女性时尚</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="孝感新闻综合">孝感新闻综合</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="孝感生活">孝感生活</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="宁夏公共">宁夏公共</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="宁夏卫视">宁夏卫视</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="宁夏少儿">宁夏少儿</channel>
@@ -409,7 +381,6 @@
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="安徽公共">安徽公共</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="安徽农业科教">安徽农业科教</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="安徽卫视">安徽卫视</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="安徽国际">安徽国际</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="安徽影视">安徽影视</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="安徽科教">安徽科教</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="安徽经济生活">安徽经济生活</channel>
@@ -417,6 +388,8 @@
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="安徽综艺">安徽综艺</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="安徽综艺体育">安徽综艺体育</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="宜宾新闻综合">宜宾新闻综合</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="宜昌旅游生活">宜昌旅游生活</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="宜昌综合">宜昌综合</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="宜春新闻综合">宜春新闻综合</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="客家生活">客家生活</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="家庭剧场">家庭剧场</channel>
@@ -435,20 +408,21 @@
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="山东生活">山东生活</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="山东综艺">山东综艺</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="山东齐鲁">山东齐鲁</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="山西公共">山西公共</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="山西卫视">山西卫视</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="山西影视">山西影视</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="山西文体生活">山西文体生活</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="山西社会与法治">山西社会与法治</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="山西经济">山西经济</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="山西经济与科技">山西经济与科技</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="岭南戏曲">岭南戏曲</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="峨嵋电影">峨嵋电影</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="峨眉电影">峨眉电影</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="崇左综合">崇左综合</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="常州公共">常州公共</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="常州新闻">常州新闻</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="常州生活">常州生活</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="常州综合">常州综合</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="常州都市">常州都市</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="平顶山1新闻综合">平顶山1新闻综合</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="平顶山3公共">平顶山3公共</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="幼儿教育">幼儿教育</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="广东体育">广东体育</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="广东公共">广东公共</channel>
@@ -468,6 +442,7 @@
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="广州新闻">广州新闻</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="广州法治">广州法治</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="广州竞赛">广州竞赛</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="广州综合">广州综合</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="广州综合台">广州综合台</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="广西卫视">广西卫视</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="广西国际">广西国际</channel>
@@ -479,7 +454,7 @@
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="延边1台">延边1台</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="延边2台">延边2台</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="延边卫视">延边卫视</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="开封综合-开封新闻综合-开封新闻综合-河南开封综合-开封1新闻综合">开封综合-开封新闻综合-开封新闻综合-河南开封综合-开封1新闻综合</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="开封1新闻综合">开封1新闻综合</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="弈坛春秋">弈坛春秋</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="徐州文艺影视">徐州文艺影视</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="徐州新闻综合">徐州新闻综合</channel>
@@ -497,26 +472,29 @@
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="成龙作品集">成龙作品集</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="揭阳生活">揭阳生活</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="揭阳综合">揭阳综合</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="摄影">摄影</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="攀枝花新闻综合">攀枝花新闻综合</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="收藏天下">收藏天下</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="文物宝库">文物宝库</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="新余公共">新余公共</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="新余新闻综合">新余新闻综合</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="新动漫">新动漫</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="新乡3影视">新乡3影视</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="新乡4生活">新乡4生活</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="新片放映厅">新片放映厅</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="新疆体育健康">新疆体育健康</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="新疆卫视">新疆卫视</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="新疆少儿">新疆少儿</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="新疆汉语影视">新疆汉语影视</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="新疆汉语经济">新疆汉语经济</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="新疆汉语综艺">新疆汉语综艺</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="新视觉">新视觉</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="旅游卫视">旅游卫视</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="无线新闻">无线新闻</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="无锡娱乐">无锡娱乐</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="无锡新闻综合">无锡新闻综合</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="无锡生活">无锡生活</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="无锡电视娱乐">无锡电视娱乐</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="无锡电视生活">无锡电视生活</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="无锡电视经济">无锡电视经济</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="无锡经济">无锡经济</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="无锡都市资讯">无锡都市资讯</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="日照新闻综合">日照新闻综合</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="日照科教">日照科教</channel>
@@ -529,7 +507,6 @@
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="星光影院">星光影院</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="星空卫视">星空卫视</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="星空购物">星空购物</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="曼联电视">曼联电视</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="来宾综合">来宾综合</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="杭州导视">杭州导视</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="杭州影视">杭州影视</channel>
@@ -540,31 +517,36 @@
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="杭州西湖明珠">杭州西湖明珠</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="杭州青少体育">杭州青少体育</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="松原综合">松原综合</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="柳州公共">柳州公共</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="柳州新闻综合">柳州新闻综合</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="柳州科教">柳州科教</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="梅州-1">梅州-1</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="梨园">梨园</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="欢乐剧场">欢乐剧场</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="欢笑剧场">欢笑剧场</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="欧美影院">欧美影院</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="欧美电影">欧美电影</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="歌手2024">歌手2024</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="武术世界">武术世界</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="武汉外语">武汉外语</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="武汉少儿">武汉少儿</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="武汉教育">武汉教育</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="武汉教育电视台">武汉教育电视台</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="武汉文体">武汉文体</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="武汉新闻综合">武汉新闻综合</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="武汉电视剧">武汉电视剧</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="武汉科技生活">武汉科技生活</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="武汉科教生活">武汉科教生活</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="武汉经济">武汉经济</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="民视">民视</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="民视新闻台">民视新闻台</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="求索动物">求索动物</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="求索生活">求索生活</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="求索生活">求索生活</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="求索科学">求索科学</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="求索纪录">求索纪录</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="求索纪录">求索纪录</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="求索记录">求索记录</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="汉语体育健康">汉语体育健康</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="汉语经济生活">汉语经济生活</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="汉语综艺">汉语综艺</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="汕头文旅体育">汕头文旅体育</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="汕头新闻综合">汕头新闻综合</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="汕头经济生活">汕头经济生活</channel>
@@ -579,13 +561,11 @@
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="江苏城市">江苏城市</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="江苏影视">江苏影视</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="江苏教育">江苏教育</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="江苏教育电视台">江苏教育电视台</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="江苏新闻">江苏新闻</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="江苏综艺">江苏综艺</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="江西公共农业">江西公共农业</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="江西卫视">江西卫视</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="江西少儿">江西少儿</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="江西影视旅游">江西影视旅游</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="江西新闻">江西新闻</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="江西移动">江西移动</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="江西经济生活">江西经济生活</channel>
@@ -594,9 +574,12 @@
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="江门综合">江门综合</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="汽摩">汽摩</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="沈阳新闻">沈阳新闻</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="河北三农">河北三农</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="河北公共">河北公共</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="河北农民">河北农民</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="河北卫视">河北卫视</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="河北少儿科教">河北少儿科教</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="河北影视">河北影视</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="河北影视剧">河北影视剧</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="河北文旅公共">河北文旅公共</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="河北经济">河北经济</channel>
@@ -613,8 +596,6 @@
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="河南都市">河南都市</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="河源公共">河源公共</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="法治天地">法治天地</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="泰州一套">泰州一套</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="泰州三套">泰州三套</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="泸州新闻综合">泸州新闻综合</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="济南综合">济南综合</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="济南鲁中">济南鲁中</channel>
@@ -623,10 +604,12 @@
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="浙江卫视">浙江卫视</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="浙江国际">浙江国际</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="浙江少儿">浙江少儿</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="浙江影视">浙江影视</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="浙江教科影视">浙江教科影视</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="浙江教育">浙江教育</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="浙江数码时代">浙江数码时代</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="浙江新闻">浙江新闻</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="浙江民生">浙江民生</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="浙江民生休闲">浙江民生休闲</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="浙江经济生活">浙江经济生活</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="浙江经视">浙江经视</channel>
@@ -637,7 +620,13 @@
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="海南文旅">海南文旅</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="海南新闻">海南新闻</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="海南自贸">海南自贸</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="海外剧场">海外剧场</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="海峡卫视">海峡卫视</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="淘BABY">淘BABY</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="淘剧场">淘剧场</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="淘娱乐">淘娱乐</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="淘电影">淘电影</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="淮南公共">淮南公共</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="淮南新闻综合">淮南新闻综合</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="深圳体育健康">深圳体育健康</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="深圳卫视">深圳卫视</channel>
@@ -649,7 +638,6 @@
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="深圳财经生活">深圳财经生活</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="深圳都市">深圳都市</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="深视体育健康">深视体育健康</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="清远公共">清远公共</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="清远新闻综合">清远新闻综合</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="游戏风云">游戏风云</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="湖北公共·新闻">湖北公共·新闻</channel>
@@ -666,7 +654,6 @@
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="湖南卫视国际">湖南卫视国际</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="湖南国际">湖南国际</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="湖南娱乐">湖南娱乐</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="湖南教育">湖南教育</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="湖南爱晚">湖南爱晚</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="湖南电影">湖南电影</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="湖南电视剧">湖南电视剧</channel>
@@ -674,14 +661,12 @@
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="湖南都市">湖南都市</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="湛江公共">湛江公共</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="湛江综合">湛江综合</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="滨州民生">滨州民生</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="滨州综合">滨州综合</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="漳州新闻">漳州新闻</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="潮妈辣婆">潮妈辣婆</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="潮安综合">潮安综合</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="潮州民生">潮州民生</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="潮州综合">潮州综合</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="澜湄国际">澜湄国际</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="澳亚卫视">澳亚卫视</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="澳视体育">澳视体育</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="澳视卫星">澳视卫星</channel>
@@ -691,11 +676,11 @@
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="澳视资讯">澳视资讯</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="炫舞未来">炫舞未来</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="热播精选">热播精选</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="爱大剧">爱大剧</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="爱情喜剧">爱情喜剧</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="爱看导视">爱看导视</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="玉林公共">玉林公共</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="玉林新闻综合">玉林新闻综合</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="环宇电影">环宇电影</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="环球奇观">环球奇观</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="环球旅游">环球旅游</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="环球经典">环球经典</channel>
@@ -711,11 +696,11 @@
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="甘肃少儿">甘肃少儿</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="甘肃文化影视">甘肃文化影视</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="甘肃科教">甘肃科教</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="甘肃经济">甘肃经济</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="生态环境">生态环境</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="生活时尚">生活时尚</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="电视指南">电视指南</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="电竞天堂">电竞天堂</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="留学世界">留学世界</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="百姓健康">百姓健康</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="百色综合">百色综合</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="眉山综合">眉山综合</channel>
@@ -730,7 +715,6 @@
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="石家庄生活">石家庄生活</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="石家庄都市">石家庄都市</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="福州1-新闻">福州1-新闻</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="福州2套-影视">福州2套-影视</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="福州3-生活">福州3-生活</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="福建体育">福建体育</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="福建公共">福建公共</channel>
@@ -756,7 +740,6 @@
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="纪实科教">纪实科教</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="纬来体育台">纬来体育台</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="纬来戏剧台">纬来戏剧台</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="纬来日本台">纬来日本台</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="纬来电影台">纬来电影台</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="纬来精彩台">纬来精彩台</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="纬来综合台">纬来综合台</channel>
@@ -765,7 +748,10 @@
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="绍兴公共">绍兴公共</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="绍兴文化影视">绍兴文化影视</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="绍兴新闻综合">绍兴新闻综合</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="经典剧场">经典剧场</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="经济科教">经济科教</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="维吾尔语新闻综合">维吾尔语新闻综合</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="维吾尔语经济生活">维吾尔语经济生活</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="绵阳影视科技">绵阳影视科技</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="绵阳新闻综合">绵阳新闻综合</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="综合体育">综合体育</channel>
@@ -784,10 +770,15 @@
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="茂名公共">茂名公共</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="茂名综合">茂名综合</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="茶">茶</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="荆门科教文旅">荆门科教文旅</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="莆田一套">莆田一套</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="莆田二套">莆田二套</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="萌宠TV">萌宠TV</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="蒙语卫视">蒙语卫视</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="藏语卫视">藏语卫视</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="襄阳公共">襄阳公共</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="襄阳经济生活">襄阳经济生活</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="襄阳综合">襄阳综合</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="西宁生活">西宁生活</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="西宁综合">西宁综合</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="西安丝路">西安丝路</channel>
@@ -801,14 +792,14 @@
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="西藏卫视">西藏卫视</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="西藏影视文化">西藏影视文化</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="西藏藏语卫视">西藏藏语卫视</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="证券资讯">证券资讯</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="许昌1新闻综合">许昌1新闻综合</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="象视界">象视界</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="财富天下">财富天下</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="贵州公共">贵州公共</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="贵州卫视">贵州卫视</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="贵州大众生活">贵州大众生活</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="贵州乡村生态">贵州乡村生态</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="贵州影视文艺">贵州影视文艺</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="贵州法制">贵州法制</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="贵州科教">贵州科教</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="贵州科教健康">贵州科教健康</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="贵阳生活">贵阳生活</channel>
@@ -843,6 +834,8 @@
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="郑州生活">郑州生活</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="都市剧场">都市剧场</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="重广融媒">重广融媒</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="重庆党员教育">重庆党员教育</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="重庆农村">重庆农村</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="重庆卫视">重庆卫视</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="重庆国际">重庆国际</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="重庆娱乐">重庆娱乐</channel>
@@ -855,7 +848,6 @@
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="重庆时尚生活">重庆时尚生活</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="重庆生活资讯">重庆生活资讯</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="重庆社会与法">重庆社会与法</channel>
-  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="重庆科教">重庆科教</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="重庆移动">重庆移动</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="重庆红叶">重庆红叶</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="重庆红岩文化">重庆红岩文化</channel>
@@ -880,17 +872,32 @@
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="长春汽车">长春汽车</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="长春经济">长春经济</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="长春综合">长春综合</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="长沙影视">长沙影视</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="长沙政法">长沙政法</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="防城港公共">防城港公共</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="防城港新闻综合">防城港新闻综合</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="阳江1">阳江1</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="阳江2">阳江2</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="阳江-1">阳江-1</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="阳江-2">阳江-2</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="陕西一套">陕西一套</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="陕西七套">陕西七套</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="陕西三套">陕西三套</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="陕西二套">陕西二套</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="陕西五套">陕西五套</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="陕西体育休闲">陕西体育休闲</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="陕西八套">陕西八套</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="陕西六套">陕西六套</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="陕西农林卫视">陕西农林卫视</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="陕西卫视">陕西卫视</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="陕西四套">陕西四套</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="陕西影视">陕西影视</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="陕西新闻资讯">陕西新闻资讯</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="陕西秦腔">陕西秦腔</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="陕西都市青春">陕西都市青春</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="陕西银龄">陕西银龄</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="随州农村">随州农村</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="随州综合">随州综合</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="青岛tv1">青岛TV1</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="青岛tv2">青岛TV2</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="青岛tv3">青岛TV3</channel>
@@ -913,11 +920,18 @@
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="风云剧场">风云剧场</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="风云足球">风云足球</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="风云音乐">风云音乐</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="香港卫视">香港卫视</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="驻马店3科教">驻马店3科教</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="高尔夫网球">高尔夫网球</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="高清大片">高清大片</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="魅力潇湘">魅力潇湘</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="魅力足球">魅力足球</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="黄冈新闻综合">黄冈新闻综合</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="黄冈生活">黄冈生活</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="黄河卫视">黄河卫视</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="黄河电视台">黄河电视台</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="黄石新闻综合">黄石新闻综合</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="黄石都市">黄石都市</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="黑莓动画">黑莓动画</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="黑莓电影">黑莓电影</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="黑龙江农业科教">黑龙江农业科教</channel>
@@ -930,4 +944,5 @@
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="黑龙江都市">黑龙江都市</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="龙岩综合">龙岩综合</channel>
   <channel site="epg.112114.xyz" lang="zh" xmltv_id="" site_id="龙祥时代">龙祥时代</channel>
+  <channel site="epg.112114.xyz" lang="zh" xmltv_id="BRTVArtsChannel.cn" site_id="BTV文艺">BTV文艺</channel>
 </channels>
