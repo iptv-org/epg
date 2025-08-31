@@ -1,39 +1,30 @@
+const axios = require('axios')
+const AxiosMockAdapter = require('axios-mock-adapter')
 const dayjs = require('dayjs')
-const doFetch = require('@ntlab/sfetch')
 const debug = require('debug')('site:tv.yandex.ru')
 
-doFetch.setDebugger(debug).setMaxWorker(10)
-
+const responses = {}, caches = {}
 // enable to fetch guide description but its take a longer time
 const detailedGuide = true
+const browserCloseDelay = 10000
+const requestDoneDelay = 1000
+const activityWaitDelay = 2000
+const loopDelay = 100
+const headless = true
 
-// update this data by heading to https://tv.yandex.ru and change the values accordingly
-const cookies = {
-  i: 'eIUfSP+/mzQWXcH+Cuz8o1vY+D2K8fhBd6Sj0xvbPZeO4l3cY+BvMp8fFIuM17l6UE1Z5+R2a18lP00ex9iYVJ+VT+c=',
-  spravka:
-    'dD0xNzM0MjA0NjM4O2k9MTI1LjE2NC4xNDkuMjAwO0Q9QTVCQ0IyOTI5RDQxNkU5NkEyOTcwMTNDMzZGMDAzNjRDNTFFNDM4QkE2Q0IyOTJDRjhCOTZDRDIzODdBQzk2MzRFRDc5QTk2Qjc2OEI1MUY5MTM5M0QzNkY3OEQ2OUY3OTUwNkQ3RjBCOEJGOEJDMjAwMTQ0RDUwRkFCMDNEQzJFMDI2OEI5OTk5OUJBNEFERUYwOEQ1MjUwQTE0QTI3RDU1MEQwM0U0O3U9MTczNDIwNDYzODUyNDYyNzg1NDtoPTIxNTc0ZTc2MDQ1ZjcwMDBkYmY0NTVkM2Q2ZWMyM2Y1',
-  yandexuid: '1197179041732383499',
-  yashr: '4682342911732383504',
-  yuidss: '1197179041732383499',
-  user_display: 824
-}
-const headers = {
-  'User-Agent':
-    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0'
-}
-const caches = {}
+const mock = new AxiosMockAdapter(axios)
+mock.onGet(/.*/).reply(config => {
+  delete config.signal
+  return puppeteerAdapter(config)
+})
+
+let browser, page, autocloseBrowser = false, browserCloseHandled = false
 
 module.exports = {
   site: 'tv.yandex.ru',
   days: 2,
   url({ date }) {
     return getUrl(date)
-  },
-  request: {
-    cache: {
-      ttl: 3600000 // 1 hour
-    },
-    headers: getHeaders()
   },
   async parser({ content, date, channel }) {
     const programs = []
@@ -54,7 +45,7 @@ module.exports = {
             event => event.channelFamilyId == channel.site_id && date.isSame(event.start, 'day')
           )
           .forEach(event => {
-            if (events.indexOf(event.id) < 0) {
+            if (!events.includes(event.id)) {
               events.push(event.id)
               programs.push({
                 title: event.title,
@@ -67,15 +58,24 @@ module.exports = {
           })
       })
     }
+    if (!autocloseBrowser) {
+      doCloseBrowserWhenIdle()
+    }
 
     return programs
   },
   async channels() {
     const channels = []
     const included = []
+    autocloseBrowser = true
+    await axios
+      .get(getUrl(dayjs()))
+      .then(response => response.data)
+      .catch(console.error)
+
     const schedules = await fetchSchedules({ date: dayjs() })
     schedules.forEach(schedule => {
-      if (schedule.channel && included.indexOf(schedule.channel.familyId) < 0) {
+      if (schedule.channel && !included.includes(schedule.channel.familyId)) {
         included.push(schedule.channel.familyId)
         channels.push({
           lang: 'ru',
@@ -89,7 +89,26 @@ module.exports = {
   }
 }
 
-async function fetchSchedules({ date, content = null }) {
+async function fetchSchedules({ date, content }) {
+  const schedules = []
+  if (Object.entries(responses).length === 0) {
+    if (content) {
+      const s = await fetchSchedulesUrls({ date, content })
+      schedules.push(...s)
+    }
+  } else {
+    for (const [url, data] of Object.entries(responses)) {
+      if (url.includes(`date=${date.format('YYYY-MM-DD')}`)) {
+        const [q, s] = parseContent(data.data, date)
+        schedules.push(...s)
+      }
+    }
+  }
+
+  return schedules
+}
+
+async function fetchSchedulesUrls({ date, content }) {
   const schedules = []
   const queues = []
   const fetches = []
@@ -97,23 +116,20 @@ async function fetchSchedules({ date, content = null }) {
 
   let mainApi
   // parse content as schedules and add to queue if more requests is needed
-  const f = (src, res, headers) => {
+  const f = (src, res) => {
     if (src) {
       fetches.push(src)
-    }
-    if (headers) {
-      parseCookies(headers)
     }
     const [q, s] = parseContent(res, date)
     if (!mainApi) {
       mainApi = true
       if (caches.region) {
-        queues.push(getQueue(getUrl(date, caches.region), src))
+        queues.push(getUrl(date, caches.region))
       }
     }
     for (const url of q) {
       if (fetches.indexOf(url) < 0) {
-        queues.push(getQueue(url, src))
+        queues.push(url)
       }
     }
     schedules.push(...s)
@@ -122,10 +138,18 @@ async function fetchSchedules({ date, content = null }) {
   if (content) {
     f(url, content)
   } else {
-    queues.push(getQueue(url, 'https://tv.yandex.ru/'))
+    queues.push(url)
   }
   // fetch all queues
-  await doFetch(queues, f)
+  while (queues.length) {
+    const url = queues.shift()
+    await axios
+      .get(url)
+      .then(response => {
+        f(url, response.data)
+      })
+      .catch(console.error)
+  }
 
   return schedules
 }
@@ -138,46 +162,42 @@ async function fetchPrograms({ schedules, date, channel }) {
       queues.push(
         ...schedule.events
           .filter(event => date.isSame(event.start, 'day'))
-          .map(event => getQueue(getUrl(null, caches.region, null, event), 'https://tv.yandex.ru/'))
+          .map(event => getUrl(null, caches.region, null, { ...event, programCoId: event?.program?.coId }))
       )
     })
-  await doFetch(queues, (queue, res, headers) => {
-    if (headers) {
-      parseCookies(headers)
-    }
-    // is it a program?
-    if (res?.program) {
-      let updated = false
-      schedules.forEach(schedule => {
-        schedule.events.forEach(event => {
-          if (event.channelFamilyId === res.channelFamilyId && event.id === res.id) {
-            Object.assign(event, res)
-            updated = true
-            return true
-          }
-        })
-        if (updated) {
-          return true
+  for (const queue of queues) {
+    await axios
+      .get(queue)
+      .then(res => {
+        const data = res.data
+        // is it a program?
+        if (data?.program) {
+          let updated = false
+          schedules.forEach(schedule => {
+            schedule.events.forEach(event => {
+              if (event.channelFamilyId === data.channelFamilyId && event.id === data.id) {
+                Object.assign(event, data)
+                updated = true
+                return true
+              }
+            })
+            if (updated) {
+              return true
+            }
+          })
         }
       })
-    }
-  })
+      .catch(console.error)
+  }
 }
 
-function parseContent(content, date, checkOnly = false) {
+function parseContent(content, date, check = false) {
   const queues = []
   const schedules = []
   let valid = false
   if (content) {
     if (Buffer.isBuffer(content)) {
       content = content.toString()
-    }
-    // got captcha, its look like our cookies has expired
-    if (
-      content?.type === 'captcha' ||
-      (typeof content === 'string' && content.match(/SmartCaptcha/))
-    ) {
-      throw new Error('Got captcha, please goto https://tv.yandex.ru and update cookies!')
     }
     if (typeof content === 'object') {
       let items
@@ -202,54 +222,18 @@ function parseContent(content, date, checkOnly = false) {
     } else {
       // prepare headers for next http request
       const [, region] = content.match(/region: '(\d+)'/i) || [null, null]
-      const [, initialSk] = content.match(/window.__INITIAL_SK__ = (.*);/i) || [null, null]
-      const [, sessionId] = content.match(/window.__USER_SESSION_ID__ = "(.*)";/i) || [null, null]
-      const tvSk = initialSk ? JSON.parse(initialSk) : {}
       if (region) {
         caches.region = region
-      }
-      if (tvSk.key) {
-        headers['X-Tv-Sk'] = tvSk.key
-      }
-      if (sessionId) {
-        headers['X-User-Session-Id'] = sessionId
-      }
-      if (checkOnly && region && tvSk.key && sessionId) {
         valid = true
       }
     }
   }
 
-  return checkOnly ? valid : [queues, schedules]
-}
-
-function parseCookies(headers) {
-  if (Array.isArray(headers['set-cookie'])) {
-    headers['set-cookie'].forEach(cookie => {
-      const [key, value] = cookie.split('; ')[0].split('=')
-      if (cookies[key] !== value) {
-        cookies[key] = value
-        debug(`Update cookie ${key}=${value}`)
-      }
-    })
-  }
+  return check ? valid : [queues, schedules]
 }
 
 function getSchedules(schedules) {
   return schedules.filter(schedule => schedule.events.length)
-}
-
-function getHeaders(data = {}) {
-  return Object.assign(
-    {},
-    headers,
-    {
-      Cookie: Object.keys(cookies)
-        .map(cookie => `${cookie}=${cookies[cookie]}`)
-        .join('; ')
-    },
-    data
-  )
 }
 
 function getUrl(date, region = null, page = null, event = null) {
@@ -261,7 +245,7 @@ function getUrl(date, region = null, page = null, event = null) {
     url += `${url.endsWith('/') ? '' : '/'}main/chunk?page=${page.id}`
   }
   if (event && event.id !== undefined) {
-    url += `${url.endsWith('/') ? '' : '/'}event?eventId=${event.id}&programCoId=`
+    url += `${url.endsWith('/') ? '' : '/'}event?eventId=${event.id}&programCoId=${event.programCoId ?? ''}`
   }
   if (date) {
     url += `${url.indexOf('?') < 0 ? '?' : '&'}date=${date.format('YYYY-MM-DD')}${
@@ -274,22 +258,193 @@ function getUrl(date, region = null, page = null, event = null) {
   if (page && page.id !== undefined && page.limit !== undefined) {
     url += `${url.indexOf('?') < 0 ? '?' : '&'}limit=${page.limit}`
   }
+
   return url
 }
 
-function getQueue(url, referer) {
-  const data = {
-    Origin: 'https://tv.yandex.ru'
+async function puppeteerAdapter(config) {
+  if (responses[config.url] === undefined) {
+    debug('Fetching', config.url, 'using Puppeteer...')
+    if (browser === undefined) {
+      const puppeteer = require('puppeteer')
+      browser = await puppeteer.launch({ headless })
+    }
+    const pages = await browser.pages()
+    page = pages.length ? pages[0] : await browser.newPage()
+    const apiRegex = /tv\.yandex\.ru\/api\//
+    if (!config.url.match(apiRegex)) {
+      await puppeterFetch(config.url, apiRegex)
+    } else {
+      await puppeteerXhr(config.url)
+    }
+    if (autocloseBrowser) {
+      await closeBrowser()
+    }
+    debug('Done', config.url)
   }
-  if (referer) {
-    data['Referer'] = referer
+
+  return responses[config.url]
+}
+
+async function puppeterFetch(url, re) {
+  // catch page activity such as request or response
+  if (page._monitored === undefined) {
+    page._monitored = true
+    page._requests = []
+    page._finished = []
+    await page.setRequestInterception(true)
+    page.on('request', interceptor => {
+      page._treq = new Date().getTime()
+      const url = interceptor.url()
+      if (url.match(re) && !page._requests.includes(url) && !page._finished.includes(url)) {
+        page._requests.push(url)
+      }
+      interceptor.continue()
+    })
+    page.on('response', async (res) => {
+      page._tres = new Date().getTime()
+      const url = res.url()
+      if (url.match(re)) {
+        debug('Api', url)
+        if (!page._finished.includes(url)) {
+          page._finished.push(url)
+        }
+        if (page._requests.indexOf(url) >= 0) {
+          page._requests.splice(page._requests.indexOf(url), 1)
+        }
+        await cacheResponse(url, res)
+      }
+    })
   }
-  if (url.indexOf('api') > 0) {
-    data['X-Requested-With'] = 'XMLHttpRequest'
+  // open url
+  const res = await page.goto(url, { waitUntil: 'load' })
+  // simulate page scroll to retrieve all data
+  debug('Start scrolling page!')
+  await page.evaluate(() => {
+    let height
+    const f = () => {
+      const h = document.body.scrollHeight
+      if (height === undefined || height < h) {
+        height = h
+      }
+      if (window.scrollY < height - 1 && window._noscroll === undefined) {
+        window.scrollBy(0, window.innerHeight)
+        setTimeout(f, 100)
+        if (window._scrolled === undefined) {
+          setTimeout(() => {
+            window._scrolled = true
+          }, 3000)
+        }
+      }
+    }
+    f()
+  })
+  // wait for all api request to be completed
+  await new Promise((resolve, reject) => {
+    const f = () => {
+      let tmo
+      page.evaluate(() => window._scrolled)
+        .then(scrolled => {
+          let done = scrolled && page._requests.length === 0
+          if (done) {
+            const t = new Date().getTime()
+            if (t - page._treq < activityWaitDelay || t - page._tres < activityWaitDelay) {
+              done = false
+            }
+          }
+          if (done) {
+            tmo = setTimeout(() => {
+              debug('No more api request!')
+              resolve()
+            }, requestDoneDelay)
+          } else {
+            if (tmo) {
+              clearTimeout(tmo)
+              tmo = null
+            }
+            setTimeout(f, loopDelay)
+          }
+        })
+    }
+    f()
+  })
+  await page.evaluate(() => {
+    window._noscroll = true
+  })
+  await cacheResponse(url, res)
+}
+
+async function puppeteerXhr(url) {
+  // perform fetch
+  await page.evaluate(url => {
+    return fetch(url, {
+      headers: {
+        'Accept': 'application/json',
+        'X-Requested-With': 'XMLHttpRequest',
+        'X-Tv-Sk': window.__INITIAL_SK__.key,
+        'X-User-Session-Id': window.__USER_SESSION_ID__,
+      }
+    })
+  }, url)
+  // wait for response to arrive
+  await new Promise((resolve, reject) => {
+    const f = () => {
+      if (responses[url]) {
+        resolve()
+      } else {
+        setTimeout(f, loopDelay)
+      }
+    }
+    f()
+  })
+}
+
+async function cacheResponse(url, res) {
+  const status = res.status()
+  const headers = res.headers()
+  let data
+  if (status >= 200 && status < 400) {
+    data = Buffer.from(await res.content())
   }
-  const headers = getHeaders(data)
-  return {
-    url,
-    params: { headers }
+  if (data && headers['content-type'] && headers['content-type'].match(/application\/json/)) {
+    data = JSON.parse(data)
+  }
+  responses[url] = {headers, status, data}
+}
+
+async function closeBrowser() {
+  if (browser) {
+    await browser.close()
+    browser = undefined
+  }
+}
+
+function doCloseBrowserWhenIdle() {
+  if (browser && !browserCloseHandled) {
+    browserCloseHandled = true
+    const f = async () => {
+      let lastTime
+      const pages = await browser.pages()
+      for (const page of pages) {
+        if (page._treq && (lastTime === undefined || page._treq > lastTime)) {
+          lastTime = page._treq
+        }
+        if (page._tres && (lastTime === undefined || page._tres > lastTime)) {
+          lastTime = page._tres
+        }
+      }
+      if (lastTime !== undefined) {
+        const deltaTime = (new Date().getTime()) - lastTime
+        if (deltaTime > browserCloseDelay) {
+          debug(`Auto closing browser, last activity was ${new Date(lastTime)}...`)
+          await closeBrowser()
+        } else {
+          setTimeout(f, loopDelay)
+        }
+      } else {
+        setTimeout(f, loopDelay)
+      }
+    }
+    f()
   }
 }

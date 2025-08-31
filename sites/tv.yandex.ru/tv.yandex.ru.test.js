@@ -50,18 +50,6 @@ it('can generate valid url', () => {
   expect(url({ date })).toBe('https://tv.yandex.ru/?date=2023-11-26&grid=all&period=all-day')
 })
 
-it('can generate valid request headers', () => {
-  expect(request.headers).toMatchObject({
-    Cookie:
-      'i=eIUfSP+/mzQWXcH+Cuz8o1vY+D2K8fhBd6Sj0xvbPZeO4l3cY+BvMp8fFIuM17l6UE1Z5+R2a18lP00ex9iYVJ+VT+c=; ' +
-      'spravka=dD0xNzM0MjA0NjM4O2k9MTI1LjE2NC4xNDkuMjAwO0Q9QTVCQ0IyOTI5RDQxNkU5NkEyOTcwMTNDMzZGMDAzNjRDNTFFNDM4QkE2Q0IyOTJDRjhCOTZDRDIzODdBQzk2MzRFRDc5QTk2Qjc2OEI1MUY5MTM5M0QzNkY3OEQ2OUY3OTUwNkQ3RjBCOEJGOEJDMjAwMTQ0RDUwRkFCMDNEQzJFMDI2OEI5OTk5OUJBNEFERUYwOEQ1MjUwQTE0QTI3RDU1MEQwM0U0O3U9MTczNDIwNDYzODUyNDYyNzg1NDtoPTIxNTc0ZTc2MDQ1ZjcwMDBkYmY0NTVkM2Q2ZWMyM2Y1; ' +
-      'yandexuid=1197179041732383499; ' +
-      'yashr=4682342911732383504; ' +
-      'yuidss=1197179041732383499; ' +
-      'user_display=824'
-  })
-})
-
 it('can parse response', async () => {
   const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.html'))
   const result = (await parser({ content, date, channel })).map(p => {
