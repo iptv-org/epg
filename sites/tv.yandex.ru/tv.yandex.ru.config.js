@@ -99,7 +99,7 @@ async function fetchSchedules({ date, content }) {
   } else {
     for (const [url, data] of Object.entries(responses)) {
       if (url.includes(`date=${date.format('YYYY-MM-DD')}`)) {
-        const [q, s] = parseContent(data.data, date)
+        const [, s] = parseContent(data.data, date)
         schedules.push(...s)
       }
     }
@@ -321,6 +321,7 @@ async function puppeterFetch(url, re) {
   // simulate page scroll to retrieve all data
   debug('Start scrolling page!')
   await page.evaluate(() => {
+    /* eslint-disable */
     let height
     const f = () => {
       const h = document.body.scrollHeight
@@ -338,12 +339,15 @@ async function puppeterFetch(url, re) {
       }
     }
     f()
+    /* eslint-enable */
   })
   // wait for all api request to be completed
-  await new Promise((resolve, reject) => {
+  await new Promise(resolve => {
     const f = () => {
       let tmo
+      /* eslint-disable */
       page.evaluate(() => window._scrolled)
+      /* eslint-enable */
         .then(scrolled => {
           let done = scrolled && page._requests.length === 0
           if (done) {
@@ -369,7 +373,9 @@ async function puppeterFetch(url, re) {
     f()
   })
   await page.evaluate(() => {
+    /* eslint-disable */
     window._noscroll = true
+    /* eslint-enable */
   })
   await cacheResponse(url, res)
 }
@@ -377,6 +383,7 @@ async function puppeterFetch(url, re) {
 async function puppeteerXhr(url) {
   // perform fetch
   await page.evaluate(url => {
+    /* eslint-disable */
     return fetch(url, {
       headers: {
         'Accept': 'application/json',
@@ -385,9 +392,10 @@ async function puppeteerXhr(url) {
         'X-User-Session-Id': window.__USER_SESSION_ID__,
       }
     })
+    /* eslint-enable */
   }, url)
   // wait for response to arrive
-  await new Promise((resolve, reject) => {
+  await new Promise(resolve => {
     const f = () => {
       if (responses[url]) {
         resolve()

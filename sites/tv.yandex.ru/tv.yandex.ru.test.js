@@ -1,4 +1,4 @@
-const { parser, url, request } = require('./tv.yandex.ru.config.js')
+const { parser, url } = require('./tv.yandex.ru.config.js')
 const fs = require('fs')
 const path = require('path')
 const axios = require('axios')
