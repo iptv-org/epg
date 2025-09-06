@@ -25,8 +25,8 @@ it('can parse response', () => {
 
   expect(result).toMatchObject([
     {
-      start: '2023-11-10T21:00:00.000Z',
-      stop: '2023-11-10T21:30:00.000Z',
+      start: '2023-11-11T00:00:00.000Z',
+      stop: '2023-11-11T00:30:00.000Z',
       title: "Menassaatona Fi Osboo'",
       description:
         "The presenter reviews the most prominent episodes of news programs produced by the channel's team on a weekly basis, which include the most important global updates and developments at all levels."
