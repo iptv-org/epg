@@ -24,8 +24,8 @@ module.exports = {
         description: item.description,
         session: item.seasonNumber,
         episode: item.episodeNumber,
-        start: item.actualFrom,
-        stop: item.actualTo
+        start: dayjs.tz(item.actualFrom, 'UTC').toISOString(),
+        stop: dayjs.tz(item.actualTo, 'UTC').toISOString()
       }
     })
 
