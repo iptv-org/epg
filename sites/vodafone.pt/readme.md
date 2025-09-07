@@ -3,17 +3,17 @@
 ### Download the guide
 
 ```sh
-npm run grab --- --site=meo.pt
+npm run grab --- --site=vodafone.pt
 ```
 
 ### Update channel list
 
 ```sh
-npm run channels:parse --- --config=./sites/meo.pt/meo.pt.config.js --output=./sites/meo.pt/meo.pt.channels.xml
+npm run channels:parse --- --config=./sites/vodafone.pt/vodafone.pt.config.js --output=./sites/vodafone.pt/vodafone.pt.channels.xml
 ```
 
 ### Test
 
 ```sh
-npm test --- meo.pt
+npm test --- vodafone.pt
 ```
