@@ -9,12 +9,20 @@ dayjs.extend(utc)
 
 const date = dayjs.utc('2021-11-17', 'YYYY-MM-DD').startOf('d')
 const channel = {
-  site_id: '0148',
+  site_id: 'se#0148',
   xmltv_id: 'SVT1.se'
 }
 
 it('can generate valid url', () => {
-  expect(url({ date, channel })).toBe('https://cs-vcb.allente.no/epg/events?date=2021-11-17')
+  if (channel.site_id.split('#')[0] !== 'se') {
+    expect(url({ channel, date })).toBe('https://cs-vcb.allente.se/epg/events?date=2021-11-17')
+  } else if (channel.site_id.split('#')[0] === 'fi') {
+    expect(url({ channel, date })).toBe('https://cs-vcb.allente.fi/epg/events?date=2021-11-17')
+  } else if (channel.site_id.split('#')[0] === 'no') {
+    expect(url({ channel, date })).toBe('https://cs-vcb.allente.no/epg/events?date=2021-11-17')
+  } else if (channel.site_id.split('#')[0] === 'dk') {
+    expect(url({ channel, date })).toBe('https://cs-vcb.allente.dk/epg/events?date=2021-11-17')
+  }
 })
 
 it('can parse response', () => {

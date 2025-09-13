@@ -9,23 +9,29 @@ let session
 module.exports = {
   site: 'epg.telemach.ba',
   days: 3,
-  url({ channel, date }) {
+  url({ channel, date, country }) {
+    const communityId = country === 'ba' ? 12 : country === 'me' ? 5 : 12
+    const languageId = country === 'ba' ? 59 : country === 'me' ? 10001 : 59
+
     return `https://api-web.ug-be.cdn.united.cloud/v1/public/events/epg?fromTime=${date.format(
       'YYYY-MM-DDTHH:mm:ss-00:00'
     )}&toTime=${date
       .add(1, 'days')
       .subtract(1, 's')
-      .format('YYYY-MM-DDTHH:mm:ss-00:00')}&communityId=12&languageId=59&cid=${channel.site_id}`
+      .format('YYYY-MM-DDTHH:mm:ss-00:00')}&communityId=${communityId}&languageId=${languageId}&cid=${channel.site_id}`
   },
   request: {
-    async headers() {
+    async headers({ country } = {}) {
       if (!session) {
-        session = await loadSessionDetails()
-        if (!session || !session.access_token) return null
+      session = await loadSessionDetails()
+      if (!session || !session.access_token) return null
       }
 
+      const referer = country === 'me' ? 'https://epg.telemach.me/' : 'https://epg.telemach.ba/'
+
       return {
-        Authorization: `Bearer ${session.access_token}`
+      Authorization: `Bearer ${session.access_token}`,
+      Referer: referer
       }
     }
   },
@@ -54,27 +60,43 @@ module.exports = {
       return []
     }
   },
-  async channels() {
-    const session = await loadSessionDetails()
-    if (!session || !session.access_token) return null
+  async channels({ country }) {
+    const communityID = country === 'ba' ? 12 : country === 'me' ? 5 : 12
+    const languageID = country === 'ba' ? 59 : country === 'me' ? 10001 : 59
+    const lang = country === 'ba' ? 'hr' : country === 'me' ? 'bs' : ''
+
+    const tokenSession = await loadSessionDetails()
+    if (!tokenSession || !tokenSession.access_token) return null
 
     const data = await axios
       .get(
-        'https://api-web.ug-be.cdn.united.cloud/v1/public/channels?channelType=TV&communityId=12&languageId=59&imageSize=L',
+        `https://api-web.ug-be.cdn.united.cloud/v1/public/channels?channelType=TV&communityId=${communityID}&languageId=${languageID}&imageSize=L`,
         {
           headers: {
-            Authorization: `Bearer ${session.access_token}`
+            Authorization: `Bearer ${tokenSession.access_token}`
           }
         }
       )
       .then(r => r.data)
-      .catch(console.error)
+      .catch(err => {
+        console.error(err)
+        return null
+      })
 
-    return data.map(item => ({
-      lang: 'hr',
-      site_id: item.id,
-      name: item.name
-    }))
+    if (!Array.isArray(data)) return []
+
+    return data
+      .map(item => ({
+        lang,
+        site_id: item.id,
+        name: item.name
+      }))
+      .sort((a, b) => {
+        const ai = Number(a.site_id)
+        const bi = Number(b.site_id)
+        if (!Number.isFinite(ai) || !Number.isFinite(bi)) return String(a.site_id).localeCompare(String(b.site_id))
+        return ai - bi
+      })
   }
 }
 
@@ -84,17 +106,20 @@ function parseImage(item) {
   return Array.isArray(item?.images) && item.images[0] ? `${baseURL}${item.images[0].path}` : null
 }
 
-function loadSessionDetails() {
-  return axios
-    .post(
-      'https://api-web.ug-be.cdn.united.cloud/oauth/token?grant_type=client_credentials',
-      {},
-      {
-        headers: {
-          Authorization: `Basic ${BASIC_TOKEN}`
+async function loadSessionDetails() {
+  try {
+    const r = await axios
+      .post(
+        'https://api-web.ug-be.cdn.united.cloud/oauth/token?grant_type=client_credentials',
+        {},
+        {
+          headers: {
+            Authorization: `Basic ${BASIC_TOKEN}`
+          }
         }
-      }
-    )
-    .then(r => r.data)
-    .catch(console.log)
+      )
+    return r.data
+  } catch (message) {
+    return console.log(message)
+  }
 }
