@@ -3,15 +3,19 @@ const axios = require('axios')
 
 const API_ENDPOINT = 'https://cdn.pt.vtv.vodafone.com/epg'
 
+const headers = {
+  Origin: 'https://www.vodafone.pt',
+  Referer: 'https://www.vodafone.pt/',
+  'User-Agent': 'Mozilla/5.0 (compatible; tv_grab_pt_vodafone)',
+  Accept: 'application/json, text/javascript, */*; q=0.01',
+  'Accept-Language': 'pt-PT,pt;q=0.9,en;q=0.8'
+}
+
 module.exports = {
   site: 'vodafone.pt',
   days: 2,
-  headers: {
-    Origin: 'https://www.vodafone.pt',
-    Referer: 'https://www.vodafone.pt/',
-    'User-Agent': 'Mozilla/5.0 (compatible; tv_grab_pt_vodafone)',
-    Accept: 'application/json, text/javascript, */*; q=0.01',
-    'Accept-Language': 'pt-PT,pt;q=0.9,en;q=0.8'
+  request: {
+    headers
   },
   url: function ({ channel, date }) {
     const datetime = DateTime.fromJSDate(date.toDate()).setZone('Europe/Lisbon')
@@ -22,16 +26,19 @@ module.exports = {
   async parser({ content, date, channel }) {
     let programs = []
     let items = parseItems(content)
-    if (!items.length) return programs
+    if (items.length === 0) return programs
+    
     const datetime = DateTime.fromJSDate(date.toDate()).setZone('Europe/Lisbon')
     const formattedMonth = datetime.month < 10 ? `0${datetime.month}` : datetime.month
     const formattedDay = datetime.day < 10 ? `0${datetime.day}` : datetime.day
-    // map all periods of time to promises in order to get a full schedule in one row
+    
+    // Fetch the remaining 3 periods to get a full day schedule
     const promises = [
-      axios.get(`${API_ENDPOINT}${channel.site_id}/${date.year()}/${formattedMonth}/${formattedDay}/06-12`, { headers: this.headers }),
-      axios.get(`${API_ENDPOINT}${channel.site_id}/${date.year()}/${formattedMonth}/${formattedDay}/12-18`, { headers: this.headers }),
-      axios.get(`${API_ENDPOINT}${channel.site_id}/${date.year()}/${formattedMonth}/${formattedDay}/18-24`, { headers: this.headers })
+      axios.get(`${API_ENDPOINT}/${channel.site_id}/${date.year()}/${formattedMonth}/${formattedDay}/06-12`, { headers }),
+      axios.get(`${API_ENDPOINT}/${channel.site_id}/${date.year()}/${formattedMonth}/${formattedDay}/12-18`, { headers }),
+      axios.get(`${API_ENDPOINT}/${channel.site_id}/${date.year()}/${formattedMonth}/${formattedDay}/18-00`, { headers })
     ]
+    
     await Promise.allSettled(promises).then(results => {
       results.forEach(r => {
         if (r.status === 'fulfilled') {
@@ -39,8 +46,9 @@ module.exports = {
         }
       })
     })
+    
     for (let item of items) {
-      if (!item.startDate || !item.endDate) return
+      if (!item.startDate || !item.endDate) continue
       let start = DateTime.fromSeconds(item.startDate, { zone: 'UTC' }).toUTC()
       let stop = DateTime.fromSeconds(item.endDate, { zone: 'UTC' }).toUTC()
       if (stop < start) {
