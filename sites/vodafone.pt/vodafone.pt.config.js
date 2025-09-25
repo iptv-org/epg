@@ -15,8 +15,7 @@ module.exports = {
   },
   url: function ({ channel, date }) {
     const datetime = DateTime.fromJSDate(date.toDate()).setZone('Europe/Lisbon')
-    const month = datetime.month
-    const formattedMonth = month < 10 ? `0${month}` : month
+    const formattedMonth = datetime.month < 10 ? `0${datetime.month}` : datetime.month
     const formattedDay = datetime.day < 10 ? `0${datetime.day}` : datetime.day
     return `${API_ENDPOINT}/${channel.site_id}/${date.year()}/${formattedMonth}/${formattedDay}/00-06`
   },
@@ -25,8 +24,7 @@ module.exports = {
     let items = parseItems(content)
     if (!items.length) return programs
     const datetime = DateTime.fromJSDate(date.toDate()).setZone('Europe/Lisbon')
-    const month = datetime.month
-    const formattedMonth = month < 10 ? `0${month}` : month
+    const formattedMonth = datetime.month < 10 ? `0${datetime.month}` : datetime.month
     const formattedDay = datetime.day < 10 ? `0${datetime.day}` : datetime.day
     // map all periods of time to promises in order to get a full schedule in one row
     const promises = [
