@@ -43,21 +43,26 @@ module.exports = {
   },
   async channels({ lang }) {
     const axios = require('axios')
-    const data = await axios
-      .get(`https://elcinema.com/${lang}/tvguide/`, {
+    let data = ''
+    try {
+      const res = await axios.get(`https://elcinema.com/${lang}/tvguide/`, {
         headers: headers
       })
-      .then(r => r.data)
-      .catch(console.log)
+      data = res && res.data ? res.data : ''
+    } catch (err) {
+      console.log(err)
+      return []
+    }
 
     const $ = cheerio.load(data)
 
     return $('.tv-line')
-      .map((i, el) => {
+      .map((_, el) => {
         const link = $(el).find('.channel > div > div.hide-for-small-only > a')
         const name = $(link).text()
-        const href = $(link).attr('href')
-        const [, site_id] = href.match(/\/(\d+)\/$/)
+        const href = $(link).attr('href') || ''
+        const match = href.match(/\/(\d+)\/$/)
+        const site_id = match ? match[1] : null
 
         return {
           lang,
