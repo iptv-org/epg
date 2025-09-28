@@ -1,3 +1,5 @@
+process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
+const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
@@ -51,6 +53,95 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels() {
+    let channels = []
+    const cookies = await axios.get('https://www.directv.com.uy/guia/guia.aspx', {
+      headers: {
+        Accept:
+          'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
+        'Accept-Encoding': 'gzip, deflate, br, zstd',
+        'Accept-Language': 'es-419,es;q=0.9',
+        'Cache-Control': 'no-cache',
+        Connection: 'keep-alive',
+        Host: 'www.directv.com.ar',
+        Pragma: 'no-cache',
+        Referer: 'https://www.google.com/',
+        'Sec-Fetch-Dest': 'document',
+        'Sec-Fetch-Mode': 'navigate',
+        'Sec-Fetch-Site': 'same-origin',
+        'Sec-Fetch-User': '?1',
+        'Sec-GPC': 1,
+        'Upgrade-Insecure-Requests': 1,
+        'User-Agent':
+          'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36',
+        'sec-ch-ua': '"Not;A=Brand";v="99", "Brave";v="139", "Chromium";v="139"',
+        'sec-ch-ua-mobile': '?0',
+        'sec-ch-ua-platform': '"Windows"'
+      }
+    })
+    const cookieHeader = cookies.headers['set-cookie']
+      .map(cookie => cookie.split(';')[0])
+      .join('; ')
+
+    const date = dayjs().tz('America/Montevideo')
+
+    const response = await axios
+      .post(
+        'https://www.directv.com.uy/guia/guia.aspx/GetProgramming',
+        {
+          filterParam: {
+            day: date.date(),
+            time: date.hour(),
+            minute: 0,
+            month: date.month() + 1,
+            year: date.year(),
+            offSetValue: 0,
+            homeScreenFilter: '',
+            filtersScreenFilters: [''],
+            isHd: ''
+          }
+        },
+        {
+          headers: {
+            Accept: '*/*',
+            'Accept-Encoding': 'gzip, deflate, br, zstd',
+            'Accept-Language': 'es-419,es;q=0.9',
+            'Cache-Control': 'no-cache',
+            Connection: 'keep-alive',
+            'Content-Type': 'application/json; charset=UTF-8',
+            Cookie: cookieHeader,
+            Host: 'www.directv.com.ar',
+            Origin: 'https://www.directv.com.uy',
+            Pragma: 'no-cache',
+            Referer: 'https://www.directv.com.uy/guia/guia.aspx',
+            'Sec-Fetch-Dest': 'empty',
+            'Sec-Fetch-Mode': 'cors',
+            'Sec-Fetch-Site': 'same-origin',
+            'Sec-GPC': 1,
+            'User-Agent':
+              'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36',
+            'X-Requested-With': 'XMLHttpRequest',
+            'sec-ch-ua': '"Not;A=Brand";v="99", "Brave";v="139", "Chromium";v="139"',
+            'sec-ch-ua-mobile': '?0',
+            'sec-ch-ua-platform': '"Windows"',
+            uzlc: true
+          }
+        }
+      )
+      .then(r => r.data)
+      .catch(console.log)
+
+    response.d.forEach(item => {
+      channels.push({
+        site_id: `${item.ContentChannelID}#${item.ChannelName.replace(/&/g, '&amp;')}`,
+        name: item.ChannelFullName,
+        logo: item.ImageUrl,
+        lang: 'es'
+      })
+    })
+
+    return channels
   }
 }
 

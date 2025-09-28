@@ -18,6 +18,8 @@
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#7mateSydney.au">7mate Sydney</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#7Melbourne.au">7 Melbourne</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#7Perth.au">7 Perth</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#7plusFetch.au">7plus Fetch</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#7plusShowcaseFetch.au">7plus Showcase Fetch</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#7Sydney.au">7 Sydney</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#7TWOAdelaide.au">7TWO Adelaide</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#7TWOBrisbane.au">7TWO Brisbane</channel>
@@ -72,8 +74,6 @@
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#10PeachSydney.au">10 Peach Sydney</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#10Perth.au">10 Perth</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#10Sydney.au">10 Sydney</channel>
-  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#AandE.au">AandE</channel>
-  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#AandEplus2.au">AandE +2</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#ABCAdelaide.au">ABC Adelaide</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#ABCBrisbane.au">ABC Brisbane</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#ABCEntertainsAdelaide.au">ABC Entertains Adelaide</channel>
@@ -89,6 +89,13 @@
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#ABCFamilyPerth.au">ABC TV Family Perth</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#ABCFamilySydney.au">ABC Family Sydney</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#ABCHobart.au">ABC Hobart</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#ABCiviewFetch.au">ABC iview Fetch</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#ABCJazzAdelaide.au">ABC Jazz Adelaide</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#ABCJazzBrisbane.au">ABC Jazz Brisbane</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#ABCJazzHobart.au">ABC Jazz Hobart</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#ABCJazzMelbourne.au">ABC Jazz Melbourne</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#ABCJazzPerth.au">ABC Jazz Perth</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#ABCJazzSydney.au">ABC Jazz Sydney</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#ABCKidsAdelaide.au">ABC Kids Adelaide</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#ABCKidsBrisbane.au">ABC Kids Brisbane</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#ABCKidsHobart.au">ABC Kids Hobart</channel>
@@ -104,72 +111,88 @@
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#ABCNewsSydney.au">ABC News Sydney</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#ABCPerth.au">ABC Perth</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#ABCSydney.au">ABC Sydney</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#ActionHollywoodMovies.au">Action Hollywood Movies</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#AlJazeera.au">Al Jazeera</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#AnimalPlanet.au">Animal Planet</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#AntennaPacific.au">Antenna Pacific</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#Arena.au">Arena</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#Arenaplus2.au">Arena +2</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#Aurora.au">Aurora</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#AussieClassics.au">Aussie Classics</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#BabyTV.au">BabyTV</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#BBCBrit.au">BBC Brit</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#BBCDrama.au">BBC Drama</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#BBCEarth.au">BBC Earth</channel>
-  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#BBCFirst.au">BBC First</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#BBCNews.au">BBC News</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#BBCUKTV.au">BBC UKTV</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#BBCUKTVplus2.au">BBC UKTV +2</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#beINSports1.au">beIN Sports 1</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#beINSports2.au">beIN Sports 2</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#beINSports3.au">beIN Sports 3</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#beINSportsXtra.au">beIN Sports Xtra</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#BloombergTelevision.au">Bloomberg Television</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#Boomerang.au">Boomerang</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#BoxSets.au">BoxSets</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#British.au">British</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#BritishCinema.au">British Cinema</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#Britishplus2.au">British +2</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#CartoonNetwork.au">Cartoon Network</channel>
-  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#Cbeebies.au">Cbeebies</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#CGTN.au">CGTN</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#CGTNDocumentary.au">CGTN Documentary</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#ChannelNewsAsia.au">Channel NewsAsia</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#Classics.au">Classics</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#Classicsplus2.au">Classics +2</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#ClubMTV.au">Club MTV</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#CMT.au">CMT</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#CNBC.au">CNBC</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#CNNInternational.au">CNN International</channel>
-  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#CrimeplusInvestigation.au">Crime + Investigation</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#Comedy.au">Comedy</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#Comedyplus2.au">Comedy +2</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#Crime.au">Crime</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#Crimeplus2.au">Crime +2</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#Curiosity.au">Curiosity</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#Daystar.au">Daystar</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#DiscoveryChannel.au">Discovery Channel</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#Discoveryplus2.au">Discovery +2</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#DiscoveryTurbo.au">Discovery Turbo</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#DiscoveryTurboplus2.au">Discovery Turbo +2</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#DocPlay.au">DocPlay</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#DoubleJAdelaide.au">Double J Adelaide</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#DoubleJBrisbane.au">Double J Brisbane</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#DoubleJHobart.au">Double J Hobart</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#DoubleJMelbourne.au">Double J Melbourne</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#DoubleJPerth.au">Double J Perth</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#DoubleJSydney.au">Double J Sydney</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#DreamWorks.au">DreamWorks</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#Entertain.au">Entertain</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#ESPN2.au">ESPN2</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#ESPN.au">ESPN</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#Euronews.au">Euronews</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#EXPO.au">EXPO</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FailArmy.au">Fail Army</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#Famous.au">Famous</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FashionTV.au">Fashion TV</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FetchNowShowing.au">Fetch Now Showing</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FoodNetwork.au">Food Network</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FOX8.au">FOX8</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FOX8plus2.au">FOX8 +2</channel>
-  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FOXArena.au">FOX Arena</channel>
-  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FOXArenaplus2.au">FOX Arena +2</channel>
-  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FOXClassics.au">FOX Classics</channel>
-  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FOXClassicsplus2.au">FOX Classics +2</channel>
-  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FOXComedy.au">FOX Comedy</channel>
-  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FOXComedyplus2.au">FOX Comedy +2</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FoxCricket.alt.au">Fox Cricket</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FoxCricket.au">Fox Cricket</channel>
-  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FOXCrime.au">FOX Crime</channel>
-  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FOXCrimeplus2.au">FOX Crime +2</channel>
-  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FOXDocos.au">FOX Docos</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FoxFooty.alt.au">Fox Footy</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FoxFooty.au">Fox Footy</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FoxLeague.alt.au">Fox League</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FoxLeague.au">Fox League</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FOXNewsChannel.au">FOX News Channel</channel>
-  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FOXSciFi.au">FOX Sci Fi</channel>
-  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FOXSciFiplus2.au">FOX Sci Fi +2</channel>
-  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FOXShowcase.au">FOX Showcase</channel>
-  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FOXShowcaseplus2.au">FOX Showcase +2</channel>
-  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FOXSleuth.au">FOX Sleuth</channel>
-  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FOXSleuthplus2.au">FOX Sleuth +2</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FoxSports503.alt.au">Fox Sports 503</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FoxSports503.au">Fox Sports 503</channel>
-  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FoxSports505.alt.au">Fox Sports 505</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FoxSports505.au">Fox Sports 505</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FoxSports505alt.au">Fox Sports 505</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FoxSports506.alt.au">Fox Sports 506</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FoxSports506.au">Fox Sports 506</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FoxSportsMore.alt.au">Fox Sports More</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FoxSportsMore.au">Fox Sports More</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FoxSportsNews.au">Fox Sports News</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FoxSportsUltraHD.alt.au">Fox Sports Ultra HD</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FoxSportsUltraHD.au">Fox Sports Ultra HD</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FoxtelMoviesAction.au">Foxtel Movies Action</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FoxtelMoviesActionplus2.au">Foxtel Movies Action +2</channel>
@@ -182,22 +205,44 @@
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FoxtelMoviesPremiere.au">Foxtel Movies Premiere</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FoxtelMoviesPremiereplus2.au">Foxtel Movies Premiere +2</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FoxtelMoviesRomance.au">Foxtel Movies Romance</channel>
-  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FoxtelMoviesThriller.au">Foxtel Movies Thriller</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FoxtelMoviesUltraHD.au">Foxtel Movies Ultra HD</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FoxtelOne.au">Foxtel One</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FoxtelOneplus2.au">Foxtel One +2</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FRANCE24.au">FRANCE 24</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FreetoWatch.au">Free to Watch</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#FuelTV.au">Fuel TV</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#GBNews.au">GB News</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#gecko.au">gecko</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#GhostHunters.au">Ghost Hunters</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#GOOD.au">GOOD.</channel>
-  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#History.au">History</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#GustoTV.au">Gusto TV</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#HauntTV.au">Haunt TV</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#HGTV.au">HGTV</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#HistoryandWarfareNow.au">History and Warfare Now</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#Homeful.au">Homeful</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#InFAST.au">InFAST</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#InTrouble.au">InTrouble</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#InvestigationDiscovery.au">Investigation Discovery</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#InWonder.au">InWonder</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#LifeStyle.au">LifeStyle</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#LifeStyleFood.au">LifeStyle Food</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#LifeStyleFoodplus2.au">LifeStyle Food +2</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#LifeStyleHome.au">LifeStyle Home</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#LifeStyleplus2.au">LifeStyle +2</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#LifetimeMovieNetwork.au">Lifetime Movie Network</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#LoveNature.au">Love Nature</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#LovePets.au">Love Pets</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#Moviesphere.au">Moviesphere</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#MovieStoreAVC.au">Movie Store AVC</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#MSNBC.au">MSNBC</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#MTV00s.au">MTV 00s</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#MTV80s.au">MTV 80s</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#MTV90s.au">MTV 90s</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#MTV.au">MTV</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#MTVHits.au">MTV Hits</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#Mythbusters.au">Mythbusters</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#MyZenTV.au">My Zen TV</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#NatureTime.au">Nature Time</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#NHKWorldJapan.au">NHK World Japan</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#NickelodeonAdelaide.au">Nickelodeon Adelaide</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#NickelodeonBrisbane.au">Nickelodeon Brisbane</channel>
@@ -205,6 +250,7 @@
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#NickelodeonMelbourne.au">Nickelodeon Melbourne</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#NickelodeonPerth.au">Nickelodeon Perth</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#NickelodeonSydney.au">Nickelodeon Sydney</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#NickJr.au">Nick Jr</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#NickMusic.au">Nick Music</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#NITVAdelaide.au">NITV Adelaide</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#NITVBrisbane.au">NITV Brisbane</channel>
@@ -212,8 +258,17 @@
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#NITVMelbourne.au">NITV Melbourne</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#NITVPerth.au">NITV Perth</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#NITVSydney.au">NITV Sydney</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#Nosey.au">Nosey</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#Now70's.au">Now 70&apos;s</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#Now80's.au">Now 80&apos;s</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#NowRock.au">Now Rock</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#OutdoorChannel.au">Outdoor Channel</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#Oxygen.au">Oxygen</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#PeopleAreAwesome.au">People Are Awesome</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#Racingcom.au">Racing.com</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#RAIITALIA.au">RAI ITALIA</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#RealCrime.au">Real Crime</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#RealHistory.au">Real History</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#RealLife.au">Real Life</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#RealLifeplus2.au">Real Life +2</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#SBS World Watch">SBS World Watch</channel>
@@ -227,6 +282,7 @@
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#SBSFoodSydney.au">SBS Food Sydney</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#SBSHobart.au">SBS Hobart</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#SBSMelbourne.au">SBS Melbourne</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#SBSOnDemandFetch.au">SBS On Demand Fetch</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#SBSPerth.au">SBS Perth</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#SBSSydney.au">SBS Sydney</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#SBSVicelandAdelaide.au">SBS Viceland Adelaide</channel>
@@ -246,6 +302,8 @@
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#SBSWorldWatchHobart.au">SBS World Watch Hobart</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#SBSWorldWatchMelbourne.au">SBS World Watch Melbourne</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#SBSWorldWatchPerth.au">SBS World Watch Perth</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#Showcase.au">Showcase</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#Showcaseplus2.au">Showcase +2</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#SkyNews.au">Sky News Australia</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#SkyNewsExtra.au">Sky News Australia Extra</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#SkyNewsUK.au">Sky News UK</channel>
@@ -254,10 +312,16 @@
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#SkyThoroughbredCentral.au">Sky Thoroughbred Central</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#SkyWeather.au">Sky Weather Australia</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#SonLife.au">SonLife</channel>
-  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#TBNInspire.au">TBN Inspire</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#StingrayCMusic.au">Stingray CMusic</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#ThePetCollective.au">The Pet Collective</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#TimesNow.au">Times Now</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#TLC.au">TLC</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#TLCplus2.au">TLC +2</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#TravelChannel.au">Travel Channel</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#TrueCrimeNow.au">True Crime Now</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#TVSN.au">TVSN</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#UniversalTV.au">Universal TV</channel>
-  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#WWEChannel.au">WWE Channel Australia</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#WickedTuna.au">Wicked Tuna</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#you.tv.au">you.tv</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="" site_id="AU1#ZooMoo.au">ZooMoo</channel>
 </channels>
