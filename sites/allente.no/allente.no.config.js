@@ -8,8 +8,9 @@ module.exports = {
       ttl: 60 * 60 * 1000 // 1 hour
     }
   },
-  url({ date }) {
-    return `https://cs-vcb.allente.no/epg/events?date=${date.format('YYYY-MM-DD')}`
+  url({ channel, date }) {
+    const country = channel.site_id.split('#')[0]
+    return `https://cs-vcb.allente.${country}/epg/events?date=${date.format('YYYY-MM-DD')}`
   },
   parser({ content, channel }) {
     let programs = []
@@ -32,27 +33,29 @@ module.exports = {
 
     return programs
   },
-  async channels() {
+  async channels({ country }) {
     const axios = require('axios')
-    const data = await axios
-      .get(`https://cs-vcb.allente.no/epg/events?date=${dayjs().format('YYYY-MM-DD')}`)
-      .then(r => r.data)
-      .catch(console.log)
+    const date = dayjs().format('YYYY-MM-DD')
 
-    return data.channels.map(item => {
-      return {
-        lang: 'no',
-        site_id: item.id,
-        name: item.name
-      }
-    })
+    const res = await axios.get(`https://cs-vcb.allente.${country}/epg/events?date=${date}`)
+    const data = res.data
+    if (!data || !Array.isArray(data.channels)) return []
+
+    const lang = country === 'dk' ? 'da' : country
+
+    return data.channels.map(item => ({
+      lang: lang,
+      site_id: `${country}#${item.id}`,
+      name: item.name
+    }))
   }
 }
 
 function parseItems(content, channel) {
   const data = JSON.parse(content)
   if (!data || !Array.isArray(data.channels)) return []
-  const channelData = data.channels.find(i => i.id === channel.site_id)
+  const channelId = (channel.site_id || '').split('#')[1] || channel.site_id
+  const channelData = data.channels.find(i => i.id === channelId)
 
   return channelData && Array.isArray(channelData.events) ? channelData.events : []
 }

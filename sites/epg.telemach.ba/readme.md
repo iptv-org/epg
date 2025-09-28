@@ -10,8 +10,10 @@ npm run grab --- --site=epg.telemach.ba
 
 ### Update channel list
 
+Available countries : ba/me
+
 ```sh
-npm run channels:parse --- --config=./sites/epg.telemach.ba/epg.telemach.ba.config.js --output=./sites/epg.telemach.ba/epg.telemach.ba.channels.xml
+npm run channels:parse --- --config=./sites/epg.telemach.ba/epg.telemach.ba.config.js --output=./sites/epg.telemach.ba/epg.telemach.ba_<COUNTRY>.channels.xml --set=country:<COUNTRY>
 ```
 
 ### Test

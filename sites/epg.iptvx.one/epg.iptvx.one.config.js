@@ -1,7 +1,7 @@
 const axios = require('axios')
 const iconv = require('iconv-lite')
 const parser = require('epg-parser')
-const { ungzip } = require('pako')
+const pako = require('pako')
 
 let cachedContent
 
@@ -53,7 +53,7 @@ function parseItems(buffer, channel, date) {
   if (!buffer) return []
 
   if (!cachedContent) {
-    const content = ungzip(buffer)
+    const content = pako.ungzip(buffer)
     const encoded = iconv.decode(content, 'utf8')
     cachedContent = parser.parse(encoded)
   }
