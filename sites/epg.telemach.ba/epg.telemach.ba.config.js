@@ -18,20 +18,22 @@ module.exports = {
     )}&toTime=${date
       .add(1, 'days')
       .subtract(1, 's')
-      .format('YYYY-MM-DDTHH:mm:ss-00:00')}&communityId=${communityId}&languageId=${languageId}&cid=${channel.site_id}`
+      .format(
+        'YYYY-MM-DDTHH:mm:ss-00:00'
+      )}&communityId=${communityId}&languageId=${languageId}&cid=${channel.site_id}`
   },
   request: {
     async headers({ country } = {}) {
       if (!session) {
-      session = await loadSessionDetails()
-      if (!session || !session.access_token) return null
+        session = await loadSessionDetails()
+        if (!session || !session.access_token) return null
       }
 
       const referer = country === 'me' ? 'https://epg.telemach.me/' : 'https://epg.telemach.ba/'
 
       return {
-      Authorization: `Bearer ${session.access_token}`,
-      Referer: referer
+        Authorization: `Bearer ${session.access_token}`,
+        Referer: referer
       }
     }
   },
@@ -94,7 +96,8 @@ module.exports = {
       .sort((a, b) => {
         const ai = Number(a.site_id)
         const bi = Number(b.site_id)
-        if (!Number.isFinite(ai) || !Number.isFinite(bi)) return String(a.site_id).localeCompare(String(b.site_id))
+        if (!Number.isFinite(ai) || !Number.isFinite(bi))
+          return String(a.site_id).localeCompare(String(b.site_id))
         return ai - bi
       })
   }
@@ -108,16 +111,15 @@ function parseImage(item) {
 
 async function loadSessionDetails() {
   try {
-    const r = await axios
-      .post(
-        'https://api-web.ug-be.cdn.united.cloud/oauth/token?grant_type=client_credentials',
-        {},
-        {
-          headers: {
-            Authorization: `Basic ${BASIC_TOKEN}`
-          }
+    const r = await axios.post(
+      'https://api-web.ug-be.cdn.united.cloud/oauth/token?grant_type=client_credentials',
+      {},
+      {
+        headers: {
+          Authorization: `Basic ${BASIC_TOKEN}`
         }
-      )
+      }
+    )
     return r.data
   } catch (message) {
     return console.log(message)

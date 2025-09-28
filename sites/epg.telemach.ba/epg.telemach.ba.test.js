@@ -36,7 +36,7 @@ const channel = {
 }
 
 it('can generate valid url', async () => {
-  const result = url({ date, channel, country : 'ba' })
+  const result = url({ date, channel, country: 'ba' })
 
   expect(result).toBe(
     'https://api-web.ug-be.cdn.united.cloud/v1/public/events/epg?fromTime=2025-01-20T00:00:00-00:00&toTime=2025-01-20T23:59:59-00:00&communityId=12&languageId=59&cid=1607'

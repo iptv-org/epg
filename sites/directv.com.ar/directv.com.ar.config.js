@@ -73,7 +73,8 @@ module.exports = {
     let channels = []
     const cookies = await axios.get('https://www.directv.com.ar/guia/guia.aspx', {
       headers: {
-        Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
+        Accept:
+          'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
         'Accept-Encoding': 'gzip, deflate, br, zstd',
         'Accept-Language': 'es-419,es;q=0.9',
         'Cache-Control': 'no-cache',
@@ -87,56 +88,62 @@ module.exports = {
         'Sec-Fetch-User': '?1',
         'Sec-GPC': 1,
         'Upgrade-Insecure-Requests': 1,
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36',
+        'User-Agent':
+          'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36',
         'sec-ch-ua': '"Not;A=Brand";v="99", "Brave";v="139", "Chromium";v="139"',
         'sec-ch-ua-mobile': '?0',
         'sec-ch-ua-platform': '"Windows"'
-    }})
-    const cookieHeader = cookies.headers['set-cookie'].map(cookie => cookie.split(';')[0]).join('; ')
+      }
+    })
+    const cookieHeader = cookies.headers['set-cookie']
+      .map(cookie => cookie.split(';')[0])
+      .join('; ')
 
     const date = dayjs().tz('America/Argentina/Buenos_Aires')
 
-    const response = await axios.post(
-      'https://www.directv.com.ar/guia/guia.aspx/GetProgramming',
-      {
-        filterParam: {
-          day: date.date(),
-          time: date.hour(),
-          minute: 0,
-          month: date.month() + 1,
-          year: date.year(),
-          offSetValue: 0,
-          homeScreenFilter: '',
-          filtersScreenFilters: [''],
-          isHd: ''
+    const response = await axios
+      .post(
+        'https://www.directv.com.ar/guia/guia.aspx/GetProgramming',
+        {
+          filterParam: {
+            day: date.date(),
+            time: date.hour(),
+            minute: 0,
+            month: date.month() + 1,
+            year: date.year(),
+            offSetValue: 0,
+            homeScreenFilter: '',
+            filtersScreenFilters: [''],
+            isHd: ''
+          }
+        },
+        {
+          headers: {
+            Accept: '*/*',
+            'Accept-Encoding': 'gzip, deflate, br, zstd',
+            'Accept-Language': 'es-419,es;q=0.9',
+            'Cache-Control': 'no-cache',
+            Connection: 'keep-alive',
+            'Content-Type': 'application/json; charset=UTF-8',
+            Cookie: cookieHeader,
+            Host: 'www.directv.com.ar',
+            Origin: 'https://www.directv.com.ar',
+            Pragma: 'no-cache',
+            Referer: 'https://www.directv.com.ar/guia/guia.aspx',
+            'Sec-Fetch-Dest': 'empty',
+            'Sec-Fetch-Mode': 'cors',
+            'Sec-Fetch-Site': 'same-origin',
+            'Sec-GPC': 1,
+            'User-Agent':
+              'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36',
+            'X-Requested-With': 'XMLHttpRequest',
+            'sec-ch-ua': '"Not;A=Brand";v="99", "Brave";v="139", "Chromium";v="139"',
+            'sec-ch-ua-mobile': '?0',
+            'sec-ch-ua-platform': '"Windows"',
+            uzlc: true
+          }
         }
-      },
-      {
-      headers: {
-        Accept: '*/*',
-        'Accept-Encoding': 'gzip, deflate, br, zstd',
-        'Accept-Language': 'es-419,es;q=0.9',
-        'Cache-Control': 'no-cache',
-        Connection: 'keep-alive',
-        'Content-Type': 'application/json; charset=UTF-8',
-        Cookie: cookieHeader,
-        Host: 'www.directv.com.ar',
-        Origin: 'https://www.directv.com.ar',
-        Pragma: 'no-cache',
-        Referer: 'https://www.directv.com.ar/guia/guia.aspx',
-        'Sec-Fetch-Dest': 'empty',
-        'Sec-Fetch-Mode': 'cors',
-        'Sec-Fetch-Site': 'same-origin',
-        'Sec-GPC': 1,
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36',
-        'X-Requested-With': 'XMLHttpRequest',
-        'sec-ch-ua': '"Not;A=Brand";v="99", "Brave";v="139", "Chromium";v="139"',
-        'sec-ch-ua-mobile': '?0',
-        'sec-ch-ua-platform': '"Windows"',
-        'uzlc': true,
-      }
-      }
-    )
+      )
       .then(r => r.data)
       .catch(console.log)
 

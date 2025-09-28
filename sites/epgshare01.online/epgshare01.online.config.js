@@ -56,7 +56,8 @@ module.exports = {
           curTag = 'displayName'
           curText = ''
           // capture possible lang attribute (xml:lang or lang)
-          current._lang = node.attributes['xml:lang'] || node.attributes['xml:Lang'] || node.attributes.lang
+          current._lang =
+            node.attributes['xml:lang'] || node.attributes['xml:Lang'] || node.attributes.lang
         }
       })
 
@@ -85,15 +86,14 @@ module.exports = {
       })
 
       await new Promise((resolve, reject) => {
-        res.data
-          .pipe(zlib.createGunzip())
-          .pipe(parserStream)
-          .on('end', resolve)
-          .on('error', reject)
+        res.data.pipe(zlib.createGunzip()).pipe(parserStream).on('end', resolve).on('error', reject)
       })
 
       return channels.map(channel => {
-        const displayName = (channel.displayName && channel.displayName[0]) || { lang: 'en', value: channel.id }
+        const displayName = (channel.displayName && channel.displayName[0]) || {
+          lang: 'en',
+          value: channel.id
+        }
         return {
           lang: displayName.lang || 'en',
           site_id: `${tag}#${channel.id}`,

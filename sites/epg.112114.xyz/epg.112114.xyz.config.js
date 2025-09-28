@@ -27,7 +27,10 @@ module.exports = {
     const data = await axios
       .get('https://epg.112114.xyz/pp.xml')
       .then(r => r.data)
-      .catch(e => { console.log(e); return null })
+      .catch(e => {
+        console.log(e)
+        return null
+      })
     if (!data) return []
 
     const { channels = [] } = parser.parse(data)

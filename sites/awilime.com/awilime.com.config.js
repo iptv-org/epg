@@ -10,7 +10,8 @@ module.exports = {
   },
   request: {
     headers: {
-      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36'
+      'User-Agent':
+        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36'
     }
   },
   parser({ content, date }) {
@@ -39,7 +40,12 @@ module.exports = {
   },
   async channels() {
     const html = await axios
-      .get('https://www.awilime.com/tv/napi_musor', { headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36' } })
+      .get('https://www.awilime.com/tv/napi_musor', {
+        headers: {
+          'User-Agent':
+            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36'
+        }
+      })
       .then(r => r.data)
       .catch(console.log)
     const $ = cheerio.load(html)
