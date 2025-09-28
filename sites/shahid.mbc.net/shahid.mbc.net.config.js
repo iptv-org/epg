@@ -22,8 +22,10 @@ module.exports = {
       return {
         title: item.title,
         description: item.description,
-        session: item.seasonNumber,
+        image: parseImage(item),
+        season: item.seasonNumber,
         episode: item.episodeNumber,
+        category: item.genres,
         start: dayjs.tz(item.actualFrom, 'UTC').toISOString(),
         stop: dayjs.tz(item.actualTo, 'UTC').toISOString()
       }
@@ -80,4 +82,23 @@ function parseItems(content, channel) {
   }
 
   return items
+}
+
+function parseImage(item) {
+  // image may have params such as width that needs to be substituted or removed for it load
+  return removeParameters(item.productPoster)
+}
+
+function removeParameters(url) {
+  if (url) {
+    try {
+      const urlObj = new URL(url)
+      urlObj.search = ''
+      urlObj.hash = ''
+      return urlObj.toString()
+    } catch {
+      return null
+    }
+  }
+  return url
 }
