@@ -24,8 +24,8 @@ module.exports = {
         description: item.description,
         session: item.seasonNumber,
         episode: item.episodeNumber,
-        start: dayjs.tz(item.actualFrom, 'Asia/Riyadh').toISOString(),
-        stop: dayjs.tz(item.actualTo, 'Asia/Riyadh').toISOString()
+        start: dayjs.tz(item.actualFrom, 'UTC').toISOString(),
+        stop: dayjs.tz(item.actualTo, 'UTC').toISOString()
       }
     })
 
@@ -34,24 +34,28 @@ module.exports = {
   async channels({ lang = 'en' }) {
     const axios = require('axios')
     const items = []
-    let page = 0
-    while (true) {
-      const result = await axios
-        .get(
-          `https://api2.shahid.net/proxy/v2.1/product/filter?filter=%7B"pageNumber":${page},"pageSize":100,"productType":"LIVESTREAM","productSubType":"LIVE_CHANNEL"%7D&country=SA&language=${lang}&Accept-Language=${lang}`
-        )
-        .then(response => response.data)
-        .catch(console.error)
-      if (result.productList) {
-        items.push(...result.productList.products)
-        if (result.productList.hasMore) {
-          page++
-          continue
+    const countryCodes = ['EG', 'SA', 'US']
+    for (let country of countryCodes) {
+      let page = 0
+      while (true) {
+        const result = await axios
+          .get(
+            `https://api2.shahid.net/proxy/v2.1/product/filter?filter=%7B"pageNumber":${page},"pageSize":100,"productType":"LIVESTREAM","productSubType":"LIVE_CHANNEL"%7D&country=${country}&language=${lang}&Accept-Language=${lang}`
+          )
+          .then(response => response.data)
+          .catch(console.error)
+        if (result.productList) {
+          items.push(...result.productList.products)
+          if (result.productList.hasMore) {
+            page++
+            continue
+          }
         }
+        break
       }
-      break
     }
-    const channels = items.map(channel => {
+    const uniqueItems = Array.from(new Map(items.map(item => [item.id, item])).values())
+    const channels = uniqueItems.map(channel => {
       return {
         lang,
         site_id: channel.id,
