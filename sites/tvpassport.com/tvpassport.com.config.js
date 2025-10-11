@@ -34,7 +34,7 @@ module.exports = {
       const stop = start.add(duration, 'm')
       let title = parseTitle($item)
       let subtitle = parseSubTitle($item)
-      if (title === 'Movie') {
+      if (title === 'Movie' || title === 'Cinéma') {
         title = subtitle
         subtitle = null
       }
