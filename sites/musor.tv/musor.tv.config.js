@@ -3,6 +3,7 @@ const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
+const uniqBy = require('lodash.uniqby')
 
 dayjs.extend(utc)
 dayjs.extend(customParseFormat)
@@ -49,38 +50,42 @@ module.exports = {
 
     const $ = cheerio.load(html)
     const channels = $('body > div.big_content > div > nav > table > tbody > tr > td > a').toArray()
-    return channels
-      .map(item => {
-        const $item = $(item)
-        const url = $item.attr('href')
-        if (!url.startsWith('//musor.tv/mai/tvmusor/')) return null
-        const site_id = url.replace('//musor.tv/mai/tvmusor/', '')
-        return {
-          lang: 'hu',
-          site_id,
-          name: $item.text()
-        }
-      })
-      .filter(i => i)
+
+    return uniqBy(
+      channels
+        .map(item => {
+          const $item = $(item)
+          const url = $item.attr('href')
+          if (!url.startsWith('//musor.tv/mai/tvmusor/')) return null
+          const site_id = url.replace('//musor.tv/mai/tvmusor/', '')
+          return {
+            lang: 'hu',
+            site_id,
+            name: $item.text()
+          }
+        })
+        .filter(i => i),
+      'site_id'
+    )
   }
 }
 
 function parseImage($item) {
-  const imgSrc = $item.find('div.smartpe_screenshot > img').attr('src')
+  const imgSrc = $item.find('div.progentry_screenshot > img').attr('src')
 
   return imgSrc ? `https:${imgSrc}` : null
 }
 
 function parseTitle($item) {
-  return $item.find('div:nth-child(2) > div > h3 > a').text().trim()
+  return $item.find('h3 > a').text().trim()
 }
 
 function parseDescription($item) {
-  return $item.find('div:nth-child(5) > div > div').text().trim()
+  return $item.find('div.progentrylong').text().trim()
 }
 
 function parseStart($item) {
-  let datetime = $item.find('div:nth-child(1) > div > div > div > div > time').attr('content')
+  let datetime = $item.find('time').attr('content')
   if (!datetime) return null
 
   return dayjs.utc(datetime.replace('GMT', 'T'), 'YYYY-MM-DDTHH:mm:ss')
@@ -89,5 +94,5 @@ function parseStart($item) {
 function parseItems(content) {
   const $ = cheerio.load(content)
 
-  return [$, $('div.multicolumndayprogarea > div.smartpe_progentry').toArray()]
+  return [$, $('div.progarea > div.progentry > div.progentry_internal').toArray()]
 }
