@@ -5,7 +5,7 @@ interface ExecError {
   stdout: string
 }
 
-const ENV_VAR = 'cross-env DATA_DIR=tests/__data__/input/__data__'
+const ENV_VAR = 'cross-env DATA_DIR=tests/__data__/input/data'
 
 describe('channels:validate', () => {
   it('will show a message if the file contains a duplicate', () => {
