@@ -29,8 +29,7 @@ jobs:
       - name: install dependencies
         run: npm install
       - name: check *.channels.xml
-        run: |
-          npm run channels:lint
+        run: npm run channels:lint
       - name: update sites.md
         run: npm run sites:update
       - run: git status
