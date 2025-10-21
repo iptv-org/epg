@@ -26,7 +26,7 @@ After that open the [Console](https://en.wikipedia.org/wiki/Windows_Console) (or
 git clone --depth 1 -b master https://github.com/iptv-org/epg.git
 ```
 
-Then navigate to the downloaded `epg` folder:
+This will copy all the code from the repository to your computer into the `epg` folder. After that, we just need to go to the folder we created:
 
 ```sh
 cd epg
@@ -76,7 +76,7 @@ By default, the guide for each channel is downloaded one by one, but you can cha
 npm run grab --- --site=example.com --maxConnections=10
 ```
 
-But be aware that under heavy load, some sites may start return an error or completely block your access.
+But be aware that under heavy load some sites may start return an error or completely block your access.
 
 ### Use custom channel list
 
@@ -98,7 +98,7 @@ npm run grab --- --channels=path/to/custom.channels.xml
 
 ### Run on schedule
 
-If you want to download guides on a schedule, you can use [cron](https://en.wikipedia.org/wiki/Cron) or any other task scheduler. Currently, we use a tool called `chronos` for this purpose.
+If you want to download guides on a schedule, you can use [cron](https://en.wikipedia.org/wiki/Cron) or any other task scheduler. Currently, we use a tool called [chronos](https://github.com/freearhey/chronos) for this purpose.
 
 To start it, you only need to specify the necessary `grab` command and [cron expression](https://crontab.guru/):
 
@@ -188,7 +188,7 @@ docker run \
 -e DAYS=14 \
 -e TIMEOUT=5 \
 -e DELAY=2 \
-iptv-org/epg
+ghcr.io/iptv-org/epg:master
 ```
 
 | Variable        | Description                                                                                                        |
