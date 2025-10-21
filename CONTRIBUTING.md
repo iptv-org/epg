@@ -20,17 +20,17 @@ Make sure that the desired channel is not already in the list. If it is not, sim
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
   ...
-  <channel site="SITE" lang="LANGUAGE_CODE" xmltv_id="CHANNEL_ID" site_id="SITE_ID">CHANNEL_NAME</channel>
+  <channel site="SITE" site_id="SITE_ID" lang="LANGUAGE_CODE" xmltv_id="STREAM_ID">CHANNEL_NAME</channel>
 </channels>
 ```
 
-| Attribute     | Description                                                                                                                                   | Example       |
-| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ------------- |
-| SITE          | Site domain name.                                                                                                                             | `example.com` |
-| LANGUAGE_CODE | Language of the guide ([ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) code).                                              | `en`          |
-| CHANNEL_ID    | ID of the channel. Full list of supported channels with corresponding ID could be found on [iptv-org.github.io](https://iptv-org.github.io/). | `HBO.us@East` |
-| SITE_ID       | Unique ID of the channel used in the source.                                                                                                  | `hbo`         |
-| CHANNEL_NAME  | Name of the channel used in the source.                                                                                                       | `HBO East`    |
+| Attribute     | Description                                                                                                                                                                                             | Example       |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- |
+| SITE          | Site domain name.                                                                                                                                                                                       | `example.com` |
+| SITE_ID       | Unique ID of the channel used in the source.                                                                                                                                                            | `hbo`         |
+| LANGUAGE_CODE | Language of the guide ([ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) code).                                                                                                        | `en`          |
+| STREAM_ID     | ID of the stream (`<CHANNEL_ID>@<FEED_ID>`) for which the guide is intended. Full list of supported channels with corresponding ID could be found on [iptv-org.github.io](https://iptv-org.github.io/). | `HBO.us@East` |
+| CHANNEL_NAME  | Name of the channel used in the source.                                                                                                                                                                 | `HBO East`    |
 
 After that just [commit](https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/about-commits) all changes and send a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
 
