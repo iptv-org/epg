@@ -1,10 +1,8 @@
-import { ChannelsParser, DataLoader, DataProcessor } from '../../core'
-import { DataProcessorData } from '../../types/dataProcessor'
-import { Storage, Dictionary, File } from '@freearhey/core'
-import { DataLoaderData } from '../../types/dataLoader'
-import { ChannelList } from '../../models'
-import { DATA_DIR } from '../../constants'
-import epgGrabber from 'epg-grabber'
+import { Collection, Dictionary } from '@freearhey/core'
+import { Storage, File } from '@freearhey/storage-js'
+import epgGrabber, { EPGGrabber } from 'epg-grabber'
+import { loadData, data } from '../../api'
+import { Channel } from '../../models'
 import { program } from 'commander'
 import chalk from 'chalk'
 import langs from 'langs'
@@ -14,21 +12,15 @@ program.argument('[filepath...]', 'Path to *.channels.xml files to validate').pa
 interface ValidationError {
   type: 'duplicate' | 'wrong_channel_id' | 'wrong_feed_id' | 'wrong_lang'
   name: string
-  lang?: string
-  xmltv_id?: string
-  site_id?: string
-  logo?: string
+  lang: string | null
+  xmltv_id: string | null
+  site_id: string | null
+  logo: string | null
 }
 
 async function main() {
-  const processor = new DataProcessor()
-  const dataStorage = new Storage(DATA_DIR)
-  const loader = new DataLoader({ storage: dataStorage })
-  const data: DataLoaderData = await loader.load()
-  const { channelsKeyById, feedsKeyByStreamId }: DataProcessorData = processor.process(data)
-  const parser = new ChannelsParser({
-    storage: new Storage()
-  })
+  await loadData()
+  const { channelsKeyById, feedsKeyByStreamId } = data
 
   let totalFiles = 0
   let totalErrors = 0
@@ -40,21 +32,25 @@ async function main() {
     const file = new File(filepath)
     if (file.extension() !== 'xml') continue
 
-    const channelList: ChannelList = await parser.parse(filepath)
+    const xml = await storage.load(filepath)
+    const parsedChannels = EPGGrabber.parseChannelsXML(xml)
+    const channelList = new Collection(parsedChannels).map(
+      (channel: epgGrabber.Channel) => new Channel(channel.toObject())
+    )
 
     const bufferBySiteId = new Dictionary()
     const errors: ValidationError[] = []
-    channelList.channels.forEach((channel: epgGrabber.Channel) => {
+    channelList.forEach((channel: Channel) => {
       const bufferId: string = channel.site_id
       if (bufferBySiteId.missing(bufferId)) {
         bufferBySiteId.set(bufferId, true)
       } else {
-        errors.push({ type: 'duplicate', ...channel })
+        errors.push({ type: 'duplicate', ...channel.toObject() })
         totalErrors++
       }
 
       if (!langs.where('1', channel.lang ?? '')) {
-        errors.push({ type: 'wrong_lang', ...channel })
+        errors.push({ type: 'wrong_lang', ...channel.toObject() })
         totalErrors++
       }
 
@@ -63,14 +59,14 @@ async function main() {
 
       const foundChannel = channelsKeyById.get(channelId)
       if (!foundChannel) {
-        errors.push({ type: 'wrong_channel_id', ...channel })
+        errors.push({ type: 'wrong_channel_id', ...channel.toObject() })
         totalWarnings++
       }
 
       if (feedId) {
         const foundFeed = feedsKeyByStreamId.get(channel.xmltv_id)
         if (!foundFeed) {
-          errors.push({ type: 'wrong_feed_id', ...channel })
+          errors.push({ type: 'wrong_feed_id', ...channel.toObject() })
           totalWarnings++
         }
       }

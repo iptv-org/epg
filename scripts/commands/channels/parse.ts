@@ -1,9 +1,20 @@
-import { Logger, File, Storage } from '@freearhey/core'
-import { ChannelsParser } from '../../core'
-import { ChannelList } from '../../models'
+import { Storage, File } from '@freearhey/storage-js'
+import { Collection, Logger } from '@freearhey/core'
+import epgGrabber, { EPGGrabber } from 'epg-grabber'
+import { generateChannelsXML } from '../../core'
 import { pathToFileURL } from 'node:url'
-import epgGrabber from 'epg-grabber'
+import { Channel } from '../../models'
 import { Command } from 'commander'
+
+interface SiteConfigChannelData {
+  xmltv_id: string
+  name: string
+  site_id: string
+  lang?: string
+  logo?: string
+  url?: string
+  lcn?: string
+}
 
 const program = new Command()
 program
@@ -32,16 +43,10 @@ async function main() {
 
   const storage = new Storage()
   const logger = new Logger()
-  const parser = new ChannelsParser({ storage })
   const file = new File(options.config)
   const dir = file.dirname()
   const config = (await import(pathToFileURL(options.config).toString())).default
   const outputFilepath = options.output || `${dir}/${config.site}.channels.xml`
-
-  let channelList = new ChannelList({ channels: [] })
-  if (await storage.exists(outputFilepath)) {
-    channelList = await parser.parse(outputFilepath)
-  }
 
   const args: Record<string, string> = {}
 
@@ -52,21 +57,43 @@ async function main() {
     })
   }
 
-  let parsedChannels = config.channels(args)
-  if (isPromise(parsedChannels)) {
-    parsedChannels = await parsedChannels
+  let channelsFromXML = new Collection<Channel>()
+  if (await storage.exists(outputFilepath)) {
+    const xml = await storage.load(outputFilepath)
+    const parsedChannels = EPGGrabber.parseChannelsXML(xml)
+    channelsFromXML = new Collection(parsedChannels).map(
+      (channel: epgGrabber.Channel) => new Channel(channel.toObject())
+    )
   }
-  parsedChannels = parsedChannels.map((channel: epgGrabber.Channel) => {
-    channel.site = config.site
 
-    return channel
-  })
+  let configChannels = config.channels(args)
+  if (isPromise(configChannels)) {
+    configChannels = await configChannels
+  }
 
-  const newChannelList = new ChannelList({ channels: [] })
-  parsedChannels.forEach((channel: epgGrabber.Channel) => {
+  const channelsFromConfig = new Collection<SiteConfigChannelData>(configChannels).map(
+    (data: SiteConfigChannelData) => {
+      return new Channel({
+        xmltv_id: data.xmltv_id,
+        name: data.name,
+        site_id: data.site_id,
+        lang: data.lang || null,
+        logo: data.logo || null,
+        url: data.url || null,
+        lcn: data.lcn || null,
+        site: config.site,
+        index: -1
+      })
+    }
+  )
+
+  const newChannelList = new Collection<Channel>()
+  channelsFromConfig.forEach((channel: Channel) => {
     if (!channel.site_id) return
 
-    const found: epgGrabber.Channel | undefined = channelList.get(channel.site_id)
+    const found: Channel | undefined = channelsFromXML.find(
+      (_channel: Channel) => _channel.site_id == channel.site_id
+    )
 
     if (found) {
       channel.xmltv_id = found.xmltv_id
@@ -76,9 +103,15 @@ async function main() {
     newChannelList.add(channel)
   })
 
-  newChannelList.sort()
+  newChannelList.sortBy([
+    (channel: Channel) => channel.lang || '_',
+    (channel: Channel) => (channel.xmltv_id ? channel.xmltv_id.toLowerCase() : '0'),
+    (channel: Channel) => channel.site_id
+  ])
 
-  await storage.save(outputFilepath, newChannelList.toString())
+  const xml = generateChannelsXML(newChannelList)
+
+  await storage.save(outputFilepath, xml)
 
   logger.info(`File '${outputFilepath}' successfully saved`)
 }
