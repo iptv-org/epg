@@ -8,6 +8,12 @@ module.exports = {
   url({ channel, date }) {
     return `https://www.awilime.com/tv/napi_musor/${channel.site_id}/${date.format('YYYY_MM_DD')}`
   },
+  request: {
+    headers: {
+      'User-Agent':
+        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36'
+    }
+  },
   parser({ content, date }) {
     const programs = []
     const items = parseItems(content)
@@ -34,7 +40,12 @@ module.exports = {
   },
   async channels() {
     const html = await axios
-      .get('https://www.awilime.com/tv/napi_musor')
+      .get('https://www.awilime.com/tv/napi_musor', {
+        headers: {
+          'User-Agent':
+            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36'
+        }
+      })
       .then(r => r.data)
       .catch(console.log)
     const $ = cheerio.load(html)
