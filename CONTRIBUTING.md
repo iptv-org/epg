@@ -427,6 +427,7 @@ To run scripts use the `npm run <script-name>` command.
 - `api:generate`: generates a JSON file with all channels for the [iptv-org/api](https://github.com/iptv-org/api) repository.
 - `channels:lint`: сhecks the channel lists for syntax errors.
 - `channels:parse`: generates a list of channels based on the site configuration.
+- `channels:parse`: formats `*.channels.xml` files. The process involves removing invalid `xmltv_id`, adding missing Feed ID, and sorting the list.
 - `channels:edit`: utility for quick channels mapping.
 - `channels:validate`: checks the description of channels for errors.
 - `sites:init`: creates a new site config from the template.
