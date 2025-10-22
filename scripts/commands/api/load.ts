@@ -1,8 +1,8 @@
-import { DATA_DIR } from '../../constants'
-import { Storage } from '@freearhey/core'
-import { DataLoader } from '../../core'
+import { DATA_DIR } from '../../constants.js'
+import { DataLoader } from '../../core/dataLoader.js'
 
 async function main() {
+  const { Storage } = await import('@freearhey/storage-js')
   const storage = new Storage(DATA_DIR)
   const loader = new DataLoader({ storage })
 

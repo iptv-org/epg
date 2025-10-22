@@ -1,6 +1,6 @@
 import chalk from 'chalk'
 import { program } from 'commander'
-import { Storage, File } from '@freearhey/core'
+import { Storage, File } from '@freearhey/storage-js'
 import { XmlDocument, XsdValidator, XmlValidateError, ErrorDetail } from 'libxml2-wasm'
 
 const xsd = `<?xml version="1.0" encoding="UTF-8"?>
