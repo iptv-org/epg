@@ -1,5 +1,11 @@
 const axios = require('axios')
 const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const tz = require('dayjs/plugin/timezone')
+const timezone = 'Asia/Kolkata'
+
+dayjs.extend(utc)
+dayjs.extend(tz)
 
 let authToken
 
@@ -54,6 +60,7 @@ module.exports = {
     const queue = Array.from(Array(totalPages).keys()).map(i => {
       const data = new FormData()
       data.append('pageNum', i + 1)
+      data.append('date', dayjs.tz(dayjs(), timezone).format('DD/MM/YYYY'))
 
       return {
         method: 'post',
@@ -143,7 +150,9 @@ async function fetchToken() {
         'sec-fetch-mode': 'cors',
         'sec-fetch-site': 'same-origin',
         'x-requested-with': 'XMLHttpRequest',
-        Referer: 'https://www.dishtv.in/channel-guide.html'
+        Referer: 'https://www.dishtv.in/channel-guide.html',
+        'User-Agent':
+          'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
       }
     })
     .then(r => r.data)
@@ -155,6 +164,7 @@ async function fetchToken() {
 async function fetchPages() {
   const formData = new FormData()
   formData.append('pageNum', 1)
+  formData.append('date', dayjs.tz(dayjs(), timezone).format('DD/MM/YYYY'))
 
   const data = await axios
     .post('https://www.dishtv.in/services/epg/channels', formData, {

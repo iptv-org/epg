@@ -1,0 +1,549 @@
+{
+	"result": {
+		"objectType": "KalturaAssetListResponse",
+		"totalCount": 2,
+		"objects": [
+			{
+				"objectType": "KalturaProgramAsset",
+				"createDate": 1758758403,
+				"description": "Jorge Gabriel e Sónia Araújo dão-lhe as boas vindas à Praça da Alegria! Porque sabemos que gosta da nossa companhia, oferecemos boa disposição até à hora de almoço! De segunda a sexta-feira, a Praça da Alegria leva até si a melhor música, as últimas tendências da moda e conselhos úteis.",
+				"endDate": 1758715145,
+				"externalId": "588376035_imi:110_88376035",
+				"id": 201100899,
+				"images": [
+					{
+						"objectType": "KalturaMediaImage",
+						"id": "3001e4d3e5ef4fbdb702160fef74eea6",
+						"imageTypeId": 93,
+						"imageTypeName": "cc",
+						"ratio": "cc",
+						"url": "https://3038.images-vfp2.ott.kaltura.com/Service.svc/GetImage/p/3038/entry_id/3001e4d3e5ef4fbdb702160fef74eea6/version/0",
+						"version": 0
+					},
+					{
+						"objectType": "KalturaMediaImage",
+						"id": "5c46aaaa49014c9c9c7dca2d1886031b",
+						"imageTypeId": 91,
+						"imageTypeName": "bg",
+						"ratio": "bg",
+						"url": "https://3038.images-vfp2.ott.kaltura.com/Service.svc/GetImage/p/3038/entry_id/5c46aaaa49014c9c9c7dca2d1886031b/version/0",
+						"version": 0
+					}
+				],
+				"indexStatus": "Ok",
+				"metas": {
+					"onAir start time": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "09/24/2025 08:58:04"
+					},
+					"onAir end time": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "09/24/2025 11:59:05"
+					},
+					"channel ID": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "110"
+					},
+					"display duration": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "PT03H01M01S"
+					},
+					"actual duration": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "PT03H01M01S"
+					},
+					"sign language available": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "true"
+					},
+					"series ID": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "23284266"
+					},
+					"unifiedSeriesID": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "23284266"
+					},
+					"season ID": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "23284266_1"
+					},
+					"season number": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "1"
+					},
+					"year": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "2025"
+					},
+					"episode name": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "qua 24-set, 10:00"
+					},
+					"program unique ID": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "588376035"
+					},
+					"catchupInHome": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "yes"
+					},
+					"catchupOutOfHome": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "yes"
+					},
+					"startOver": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "yes"
+					},
+					"allowRecording": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "yes"
+					},
+					"downloadable": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "yes"
+					},
+					"liveTVOutOfHome": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "yes"
+					},
+					"timeShifting": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "yes"
+					}
+				},
+				"name": "Praça da Alegria",
+				"relatedEntities": {},
+				"startDate": 1758704284,
+				"tags": {
+					"genre": {
+						"objectType": "KalturaMultilingualStringValueArray",
+						"objects": [
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "Talk Show"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "Entretenimento"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "Série"
+							}
+						]
+					},
+					"genre_desc": {
+						"objectType": "KalturaMultilingualStringValueArray",
+						"objects": [
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "3300"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "BF02"
+							}
+						]
+					},
+					"actors": {
+						"objectType": "KalturaMultilingualStringValueArray",
+						"objects": [
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "Jorge Gabriel"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "Sónia Araújo"
+							}
+						]
+					},
+					"parental Rating": {
+						"objectType": "KalturaMultilingualStringValueArray",
+						"objects": [
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "0"
+							}
+						]
+					},
+					"country of production": {
+						"objectType": "KalturaMultilingualStringValueArray",
+						"objects": [
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "PT"
+							}
+						]
+					},
+					"contentTags": {
+						"objectType": "KalturaMultilingualStringValueArray",
+						"objects": [
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "g_rec=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "g_cu_rb=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "s_restart=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "s_catchup=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "s_npvr=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_en=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_live=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_live_ooh=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_restart=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_restart_ooh=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_catchup=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_catchup_ooh=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_npvr=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_npvr_ooh=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "w_en=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "w_live=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "w_restart=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "w_catchup=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "w_npvr=1"
+							}
+						]
+					}
+				},
+				"type": 0,
+				"updateDate": 1758758403,
+				"enableCatchUp": true,
+				"enableCdvr": false,
+				"crid": "588376035",
+				"epgChannelId": 3028,
+				"epgId": "588376035_imi:110_88376035",
+				"externalOfferIds": "",
+				"linearAssetId": 636403,
+				"relatedMediaId": 0,
+				"enableStartOver": true,
+				"enableTrickPlay": false
+			},
+			{
+				"objectType": "KalturaProgramAsset",
+				"createDate": 1758758403,
+				"description": "Todos os dias, às 13 horas, a sua hora de almoço é completada com a atualização das notícias que marcam a atualidade nacional e mundial, desde a política, a economia, a sociedade e o desporto. Reportagens no local, entrevistas em direto e sempre a isenção e o respeito pela verdade.[S]",
+				"endDate": 1758720514,
+				"externalId": "588376037_imi:110_88376037",
+				"id": 201100900,
+				"images": [
+					{
+						"objectType": "KalturaMediaImage",
+						"id": "b0b25552f0144f1782381c7fa6d56d72",
+						"imageTypeId": 93,
+						"imageTypeName": "cc",
+						"ratio": "cc",
+						"url": "https://3038.images-vfp2.ott.kaltura.com/Service.svc/GetImage/p/3038/entry_id/b0b25552f0144f1782381c7fa6d56d72/version/0",
+						"version": 0
+					},
+					{
+						"objectType": "KalturaMediaImage",
+						"id": "d49334a417d945cf8f651cfb044cda6e",
+						"imageTypeId": 91,
+						"imageTypeName": "bg",
+						"ratio": "bg",
+						"url": "https://3038.images-vfp2.ott.kaltura.com/Service.svc/GetImage/p/3038/entry_id/d49334a417d945cf8f651cfb044cda6e/version/0",
+						"version": 0
+					}
+				],
+				"indexStatus": "Ok",
+				"metas": {
+					"onAir start time": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "09/24/2025 11:59:05"
+					},
+					"onAir end time": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "09/24/2025 13:28:34"
+					},
+					"channel ID": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "110"
+					},
+					"display duration": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "PT01H29M29S"
+					},
+					"actual duration": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "PT01H29M29S"
+					},
+					"sign language available": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "true"
+					},
+					"series ID": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "23319459"
+					},
+					"unifiedSeriesID": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "23319459"
+					},
+					"season ID": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "23319459_1"
+					},
+					"season number": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "1"
+					},
+					"year": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "2025"
+					},
+					"episode name": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "qua 24-set, 12:59"
+					},
+					"program unique ID": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "588376037"
+					},
+					"catchupInHome": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "yes"
+					},
+					"catchupOutOfHome": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "yes"
+					},
+					"startOver": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "yes"
+					},
+					"allowRecording": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "yes"
+					},
+					"downloadable": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "yes"
+					},
+					"liveTVOutOfHome": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "yes"
+					},
+					"timeShifting": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "yes"
+					}
+				},
+				"name": "Jornal da Tarde",
+				"relatedEntities": {},
+				"startDate": 1758715145,
+				"tags": {
+					"genre": {
+						"objectType": "KalturaMultilingualStringValueArray",
+						"objects": [
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "Notícias"
+							}
+						]
+					},
+					"genre_desc": {
+						"objectType": "KalturaMultilingualStringValueArray",
+						"objects": [
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "2000"
+							}
+						]
+					},
+					"actors": {
+						"objectType": "KalturaMultilingualStringValueArray",
+						"objects": [
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "Carlos Daniel"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "Hélder Silva"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "Sandra Fernandes Pereira"
+							}
+						]
+					},
+					"subtitles available": {
+						"objectType": "KalturaMultilingualStringValueArray",
+						"objects": [
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "POR"
+							}
+						]
+					},
+					"parental Rating": {
+						"objectType": "KalturaMultilingualStringValueArray",
+						"objects": [
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "0"
+							}
+						]
+					},
+					"country of production": {
+						"objectType": "KalturaMultilingualStringValueArray",
+						"objects": [
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "PT"
+							}
+						]
+					},
+					"contentTags": {
+						"objectType": "KalturaMultilingualStringValueArray",
+						"objects": [
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "g_rec=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "g_cu_rb=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "s_restart=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "s_catchup=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "s_npvr=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_en=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_live=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_live_ooh=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_restart=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_restart_ooh=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_catchup=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_catchup_ooh=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_npvr=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_npvr_ooh=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "w_en=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "w_live=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "w_restart=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "w_catchup=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "w_npvr=1"
+							}
+						]
+					}
+				},
+				"type": 0,
+				"updateDate": 1758758403,
+				"enableCatchUp": true,
+				"enableCdvr": false,
+				"crid": "588376037",
+				"epgChannelId": 3028,
+				"epgId": "588376037_imi:110_88376037",
+				"externalOfferIds": "",
+				"linearAssetId": 636403,
+				"relatedMediaId": 0,
+				"enableStartOver": true,
+				"enableTrickPlay": false
+			}
+		]
+	}
+}
