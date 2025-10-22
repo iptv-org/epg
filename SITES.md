@@ -7,60 +7,57 @@
   <tbody>
     <tr><td><a href="sites/9tv.co.il">9tv.co.il</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/abc.net.au">abc.net.au</a></td><td align="right">548</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/allente.dk">allente.dk</a></td><td align="right">74</td><td align="right">43</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/allente.fi">allente.fi</a></td><td align="right">71</td><td align="right">24</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/allente.no">allente.no</a></td><td align="right">84</td><td align="right">52</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/allente.se">allente.se</a></td><td align="right">92</td><td align="right">91</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/allente.no">allente.no</a></td><td align="right">319</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/andorradifusio.ad">andorradifusio.ad</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/anteltv.com.uy">anteltv.com.uy</a></td><td align="right">53</td><td align="right">47</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/anteltv.com.uy">anteltv.com.uy</a></td><td align="right">54</td><td align="right">46</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/antennaeurope.gr">antennaeurope.gr</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/antennapacific.gr">antennapacific.gr</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/antennasatellite.gr">antennasatellite.gr</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/arianatelevision.com">arianatelevision.com</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/arirang.com">arirang.com</a></td><td align="right">3</td><td align="right">3</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/artonline.tv">artonline.tv</a></td><td align="right">5</td><td align="right">5</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/awilime.com">awilime.com</a></td><td align="right">111</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/bein.com">bein.com</a></td><td align="right">160</td><td align="right">160</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/beinsports.com">beinsports.com</a></td><td align="right">104</td><td align="right">81</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/awilime.com">awilime.com</a></td><td align="right">110</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/bein.com">bein.com</a></td><td align="right">134</td><td align="right">134</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/beinsports.com">beinsports.com</a></td><td align="right">130</td><td align="right">81</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/berrymedia.co.kr">berrymedia.co.kr</a></td><td align="right">5</td><td align="right">5</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/cableplus.com.uy">cableplus.com.uy</a></td><td align="right">171</td><td align="right">47</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/canalplus.com">canalplus.com</a></td><td align="right">11720</td><td align="right">212</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/cgates.lt">cgates.lt</a></td><td align="right">102</td><td align="right">61</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/cableplus.com.uy">cableplus.com.uy</a></td><td align="right">171</td><td align="right">45</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/canalplus.com">canalplus.com</a></td><td align="right">13118</td><td align="right">180</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/cgates.lt">cgates.lt</a></td><td align="right">47</td><td align="right">30</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/chada.ma">chada.ma</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/chaines-tv.orange.fr">chaines-tv.orange.fr</a></td><td align="right">345</td><td align="right">344</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/chaines-tv.orange.fr">chaines-tv.orange.fr</a></td><td align="right">373</td><td align="right">341</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/claro.com.br">claro.com.br</a></td><td align="right">273</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/clickthecity.com">clickthecity.com</a></td><td align="right">32</td><td align="right">30</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/content.astro.com.my">content.astro.com.my</a></td><td align="right">157</td><td align="right">112</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/cosmotetv.gr">cosmotetv.gr</a></td><td align="right">108</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/content.astro.com.my">content.astro.com.my</a></td><td align="right">149</td><td align="right">95</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/cosmotetv.gr">cosmotetv.gr</a></td><td align="right">109</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/ctc.ru">ctc.ru</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/cubmu.com">cubmu.com</a></td><td align="right">174</td><td align="right">122</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/cyta.com.cy">cyta.com.cy</a></td><td align="right">116</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/dens.tv">dens.tv</a></td><td align="right">67</td><td align="right">64</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/cubmu.com">cubmu.com</a></td><td align="right">140</td><td align="right">108</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/cyta.com.cy">cyta.com.cy</a></td><td align="right">119</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/dens.tv">dens.tv</a></td><td align="right">54</td><td align="right">50</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/derana.lk">derana.lk</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/digea.gr">digea.gr</a></td><td align="right">92</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/digiturk.com.tr">digiturk.com.tr</a></td><td align="right">108</td><td align="right">107</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/digea.gr">digea.gr</a></td><td align="right">88</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/digiturk.com.tr">digiturk.com.tr</a></td><td align="right">115</td><td align="right">104</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/directv.com">directv.com</a></td><td align="right">1043</td><td align="right">696</td><td align="center">🔴</td><td>https://github.com/iptv-org/epg/issues/2284</td></tr>
-    <tr><td><a href="sites/directv.com.ar">directv.com.ar</a></td><td align="right">412</td><td align="right">229</td><td align="center">🔴</td><td>https://github.com/iptv-org/epg/issues/2339</td></tr>
-    <tr><td><a href="sites/directv.com.uy">directv.com.uy</a></td><td align="right">143</td><td align="right">142</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/dishtv.in">dishtv.in</a></td><td align="right">448</td><td align="right">89</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/dna.fi">dna.fi</a></td><td align="right">122</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/dsmart.com.tr">dsmart.com.tr</a></td><td align="right">104</td><td align="right">90</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/dstv.com">dstv.com</a></td><td align="right">6983</td><td align="right">181</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/directv.com.ar">directv.com.ar</a></td><td align="right">371</td><td align="right">0</td><td align="center">🔴</td><td>https://github.com/iptv-org/epg/issues/2339</td></tr>
+    <tr><td><a href="sites/directv.com.uy">directv.com.uy</a></td><td align="right">374</td><td align="right">61</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/dishtv.in">dishtv.in</a></td><td align="right">434</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/dna.fi">dna.fi</a></td><td align="right">123</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/dsmart.com.tr">dsmart.com.tr</a></td><td align="right">100</td><td align="right">79</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/dstv.com">dstv.com</a></td><td align="right">2979</td><td align="right">80</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/dtv8.net">dtv8.net</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/elcinema.com">elcinema.com</a></td><td align="right">262</td><td align="right">226</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/elcinema.com">elcinema.com</a></td><td align="right">198</td><td align="right">198</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/ena.skylifetv.co.kr">ena.skylifetv.co.kr</a></td><td align="right">6</td><td align="right">6</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/energeek.cl">energeek.cl</a></td><td align="right">6</td><td align="right">2</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/entertainment.ie">entertainment.ie</a></td><td align="right">109</td><td align="right">95</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/epg.112114.xyz">epg.112114.xyz</a></td><td align="right">930</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/epg.iptvx.one">epg.iptvx.one</a></td><td align="right">2862</td><td align="right">747</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/epg.telemach.ba">epg.telemach.ba</a></td><td align="right">259</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/epg.telemach.me">epg.telemach.me</a></td><td align="right">216</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/entertainment.ie">entertainment.ie</a></td><td align="right">105</td><td align="right">80</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/epg.112114.xyz">epg.112114.xyz</a></td><td align="right">942</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/epg.iptvx.one">epg.iptvx.one</a></td><td align="right">3329</td><td align="right">743</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/epg.telemach.ba">epg.telemach.ba</a></td><td align="right">476</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/epgmaster.com">epgmaster.com</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/epgshare01.online">epgshare01.online</a></td><td align="right">20971</td><td align="right">17</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/epgshare01.online">epgshare01.online</a></td><td align="right">20706</td><td align="right">17</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/firstmedia.com">firstmedia.com</a></td><td align="right">116</td><td align="right">101</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/foxsports.com.au">foxsports.com.au</a></td><td align="right">7</td><td align="right">7</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/foxtel.com.au">foxtel.com.au</a></td><td align="right">99</td><td align="right">61</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/freetv.tv">freetv.tv</a></td><td align="right">7</td><td align="right">7</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/freeview.co.uk">freeview.co.uk</a></td><td align="right">171</td><td align="right">100</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/freeview.co.uk">freeview.co.uk</a></td><td align="right">167</td><td align="right">103</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/frikanalen.no">frikanalen.no</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/galamtv.kz">galamtv.kz</a></td><td align="right">27</td><td align="right">22</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/gatotv.com">gatotv.com</a></td><td align="right">475</td><td align="right">362</td><td align="center">🟢</td><td></td></tr>
@@ -68,13 +65,13 @@
     <tr><td><a href="sites/gigatv.3bbtv.co.th">gigatv.3bbtv.co.th</a></td><td align="right">79</td><td align="right">38</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/guiadetv.com">guiadetv.com</a></td><td align="right">124</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/guida.tv">guida.tv</a></td><td align="right">88</td><td align="right">88</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/guidatv.sky.it">guidatv.sky.it</a></td><td align="right">168</td><td align="right">153</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/guidatv.sky.it">guidatv.sky.it</a></td><td align="right">154</td><td align="right">154</td><td align="center">🟢</td><td>https://github.com/iptv-org/epg/issues/2849</td></tr>
     <tr><td><a href="sites/guidetnt.com">guidetnt.com</a></td><td align="right">69</td><td align="right">69</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/horizon.tv">horizon.tv</a></td><td align="right">184</td><td align="right">172</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/hoy.tv">hoy.tv</a></td><td align="right">3</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/i.mjh.nz">i.mjh.nz</a></td><td align="right">6458</td><td align="right">1489</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/i24news.tv">i24news.tv</a></td><td align="right">4</td><td align="right">3</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/iltalehti.fi">iltalehti.fi</a></td><td align="right">142</td><td align="right">44</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/iltalehti.fi">iltalehti.fi</a></td><td align="right">142</td><td align="right">44</td><td align="center">🟢</td><td>https://github.com/iptv-org/epg/issues/2870</td></tr>
     <tr><td><a href="sites/indihometv.com">indihometv.com</a></td><td align="right">130</td><td align="right">124</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/ionplustv.com">ionplustv.com</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/ipko.tv">ipko.tv</a></td><td align="right">194</td><td align="right">152</td><td align="center">🟢</td><td></td></tr>
@@ -92,15 +89,15 @@
     <tr><td><a href="sites/mediaklikk.hu">mediaklikk.hu</a></td><td align="right">8</td><td align="right">8</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/mediasetinfinity.mediaset.it">mediasetinfinity.mediaset.it</a></td><td align="right">13</td><td align="right">13</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/melita.com">melita.com</a></td><td align="right">127</td><td align="right">111</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/meo.pt">meo.pt</a></td><td align="right">216</td><td align="right">192</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/meo.pt">meo.pt</a></td><td align="right">217</td><td align="right">192</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/meuguia.tv">meuguia.tv</a></td><td align="right">102</td><td align="right">97</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/mewatch.sg">mewatch.sg</a></td><td align="right">25</td><td align="right">24</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/mi.tv">mi.tv</a></td><td align="right">2084</td><td align="right">620</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/mncvision.id">mncvision.id</a></td><td align="right">276</td><td align="right">223</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/mncvision.id">mncvision.id</a></td><td align="right">276</td><td align="right">223</td><td align="center">🟢</td><td>https://github.com/iptv-org/epg/issues/2848</td></tr>
     <tr><td><a href="sites/moji.id">moji.id</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/mojmaxtv.hrvatskitelekom.hr">mojmaxtv.hrvatskitelekom.hr</a></td><td align="right">243</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/mon-programme-tv.be">mon-programme-tv.be</a></td><td align="right">111</td><td align="right">95</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/movistarplus.es">movistarplus.es</a></td><td align="right">178</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/movistarplus.es">movistarplus.es</a></td><td align="right">178</td><td align="right">0</td><td align="center">🟢</td><td>https://github.com/iptv-org/epg/issues/2865</td></tr>
     <tr><td><a href="sites/mtel.ba">mtel.ba</a></td><td align="right">501</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/mts.rs">mts.rs</a></td><td align="right">457</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/mujtvprogram.cz">mujtvprogram.cz</a></td><td align="right">216</td><td align="right">202</td><td align="center">🟢</td><td></td></tr>
@@ -111,7 +108,7 @@
     <tr><td><a href="sites/neo.io">neo.io</a></td><td align="right">337</td><td align="right">241</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/nhkworldpremium.com">nhkworldpremium.com</a></td><td align="right">2</td><td align="right">2</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/nhl.com">nhl.com</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/nostv.pt">nostv.pt</a></td><td align="right">168</td><td align="right">155</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/nostv.pt">nostv.pt</a></td><td align="right">169</td><td align="right">155</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/novacyprus.com">novacyprus.com</a></td><td align="right">29</td><td align="right">24</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/novasports.gr">novasports.gr</a></td><td align="right">16</td><td align="right">16</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/nowplayer.now.com">nowplayer.now.com</a></td><td align="right">288</td><td align="right">229</td><td align="center">🟢</td><td></td></tr>
@@ -121,6 +118,7 @@
     <tr><td><a href="sites/opto.sic.pt">opto.sic.pt</a></td><td align="right">4</td><td align="right">4</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/orangetv.orange.es">orangetv.orange.es</a></td><td align="right">168</td><td align="right">165</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/osn.com">osn.com</a></td><td align="right">118</td><td align="right">98</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/passie.nl">passie.nl</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/pbsguam.org">pbsguam.org</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/pickx.be">pickx.be</a></td><td align="right">404</td><td align="right">391</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/player.ee.co.uk">player.ee.co.uk</a></td><td align="right">241</td><td align="right">206</td><td align="center">🟢</td><td></td></tr>
@@ -138,21 +136,21 @@
     <tr><td><a href="sites/reportv.com.ar">reportv.com.ar</a></td><td align="right">163</td><td align="right">97</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/rikstv.no">rikstv.no</a></td><td align="right">80</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/rotana.net">rotana.net</a></td><td align="right">32</td><td align="right">28</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/rtb.gov.bn">rtb.gov.bn</a></td><td align="right">3</td><td align="right">3</td><td align="center">🔴</td><td>https://github.com/iptv-org/epg/issues/2257</td></tr>
+    <tr><td><a href="sites/roya-tv.com">roya-tv.com</a></td><td align="right">10</td><td align="right">8</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/rthk.hk">rthk.hk</a></td><td align="right">8</td><td align="right">8</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/rtmklik.rtm.gov.my">rtmklik.rtm.gov.my</a></td><td align="right">8</td><td align="right">6</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/rtp.pt">rtp.pt</a></td><td align="right">10</td><td align="right">10</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/ruv.is">ruv.is</a></td><td align="right">2</td><td align="right">2</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/s.mxtv.jp">s.mxtv.jp</a></td><td align="right">2</td><td align="right">2</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/sat.tv">sat.tv</a></td><td align="right">30308</td><td align="right">249</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/shahid.mbc.net">shahid.mbc.net</a></td><td align="right">231</td><td align="right">165</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/shahid.mbc.net">shahid.mbc.net</a></td><td align="right">225</td><td align="right">183</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/siba.com.co">siba.com.co</a></td><td align="right">98</td><td align="right">96</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/singtel.com">singtel.com</a></td><td align="right">155</td><td align="right">113</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/sjonvarp.is">sjonvarp.is</a></td><td align="right">13</td><td align="right">13</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/sky.co.nz">sky.co.nz</a></td><td align="right">111</td><td align="right">93</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/sky.com">sky.com</a></td><td align="right">559</td><td align="right">458</td><td align="center">🟡</td><td>https://github.com/iptv-org/epg/issues/2763</td></tr>
     <tr><td><a href="sites/sky.de">sky.de</a></td><td align="right">75</td><td align="right">75</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/skylife.co.kr">skylife.co.kr</a></td><td align="right">251</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/skylife.co.kr">skylife.co.kr</a></td><td align="right">251</td><td align="right">0</td><td align="center">🔴</td><td>https://github.com/iptv-org/epg/issues/2845</td></tr>
     <tr><td><a href="sites/skyperfectv.co.jp">skyperfectv.co.jp</a></td><td align="right">137</td><td align="right">130</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/snrt.ma">snrt.ma</a></td><td align="right">11</td><td align="right">7</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/sporttv.pt">sporttv.pt</a></td><td align="right">9</td><td align="right">8</td><td align="center">🟢</td><td></td></tr>
@@ -178,6 +176,7 @@
     <tr><td><a href="sites/tv-programme.telecablesat.fr">tv-programme.telecablesat.fr</a></td><td align="right">268</td><td align="right">250</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv-spored.siol.net">tv-spored.siol.net</a></td><td align="right">312</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv.blue.ch">tv.blue.ch</a></td><td align="right">1030</td><td align="right">565</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/tv.boxbg.net">tv.boxbg.net</a></td><td align="right">83</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv.cctv.com">tv.cctv.com</a></td><td align="right">94</td><td align="right">88</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv.dir.bg">tv.dir.bg</a></td><td align="right">100</td><td align="right">91</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv.lv">tv.lv</a></td><td align="right">137</td><td align="right">49</td><td align="center">🟢</td><td></td></tr>
@@ -192,12 +191,12 @@
     <tr><td><a href="sites/tv24.co.uk">tv24.co.uk</a></td><td align="right">1072</td><td align="right">39</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv24.se">tv24.se</a></td><td align="right">326</td><td align="right">157</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv2go.t-2.net">tv2go.t-2.net</a></td><td align="right">335</td><td align="right">253</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/tvarenasport.com">tvarenasport.com</a></td><td align="right">14</td><td align="right">12</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/tvarenasport.com">tvarenasport.com</a></td><td align="right">18</td><td align="right">18</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tvarenasport.hr">tvarenasport.hr</a></td><td align="right">10</td><td align="right">10</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tvcesoir.fr">tvcesoir.fr</a></td><td align="right">135</td><td align="right">133</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tvcubana.icrt.cu">tvcubana.icrt.cu</a></td><td align="right">10</td><td align="right">10</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tvgids.nl">tvgids.nl</a></td><td align="right">115</td><td align="right">90</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/tvguide.com">tvguide.com</a></td><td align="right">153</td><td align="right">149</td><td align="center">🟡</td><td>https://github.com/iptv-org/epg/issues/2644</td></tr>
+    <tr><td><a href="sites/tvguide.com">tvguide.com</a></td><td align="right">153</td><td align="right">153</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tvguide.myjcom.jp">tvguide.myjcom.jp</a></td><td align="right">145</td><td align="right">140</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tvhebdo.com">tvhebdo.com</a></td><td align="right">317</td><td align="right">215</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tvheute.at">tvheute.at</a></td><td align="right">53</td><td align="right">53</td><td align="center">🟢</td><td></td></tr>
@@ -209,9 +208,9 @@
     <tr><td><a href="sites/tvmi.mt">tvmi.mt</a></td><td align="right">3</td><td align="right">3</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tvmusor.hu">tvmusor.hu</a></td><td align="right">99</td><td align="right">67</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tvmustra.hu">tvmustra.hu</a></td><td align="right">188</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/tvpassport.com">tvpassport.com</a></td><td align="right">19287</td><td align="right">2509</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/tvpassport.com">tvpassport.com</a></td><td align="right">19287</td><td align="right">2509</td><td align="center">🟢</td><td>https://github.com/iptv-org/epg/issues/2883</td></tr>
     <tr><td><a href="sites/tvplus.com.tr">tvplus.com.tr</a></td><td align="right">150</td><td align="right">144</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/tvprofil.com">tvprofil.com</a></td><td align="right">5836</td><td align="right">455</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/tvprofil.com">tvprofil.com</a></td><td align="right">9091</td><td align="right">408</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tvtv.us">tvtv.us</a></td><td align="right">2299</td><td align="right">2255</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/v3.myafn.dodmedia.osd.mil">v3.myafn.dodmedia.osd.mil</a></td><td align="right">8</td><td align="right">8</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/vidio.com">vidio.com</a></td><td align="right">57</td><td align="right">52</td><td align="center">🟢</td><td></td></tr>
@@ -219,6 +218,7 @@
     <tr><td><a href="sites/virgintvgo.virginmedia.com">virgintvgo.virginmedia.com</a></td><td align="right">238</td><td align="right">195</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/visionplus.id">visionplus.id</a></td><td align="right">250</td><td align="right">226</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/vivoplay.com.br">vivoplay.com.br</a></td><td align="right">389</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/vodafone.pt">vodafone.pt</a></td><td align="right">147</td><td align="right">135</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/vtm.be">vtm.be</a></td><td align="right">7</td><td align="right">6</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/walesi.com.fj">walesi.com.fj</a></td><td align="right">9</td><td align="right">8</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/watch.sportsnet.ca">watch.sportsnet.ca</a></td><td align="right">8</td><td align="right">8</td><td align="center">🟢</td><td></td></tr>

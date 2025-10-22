@@ -146,16 +146,16 @@ npm install
 
 ## Docker
 
-### Build an image
+### Pull an image
 
 ```sh
-docker build -t iptv-org/epg --no-cache .
+docker pull ghcr.io/iptv-org/epg:master
 ```
 
 ### Create and run container
 
 ```sh
-docker run -p 3000:3000 -v /path/to/channels.xml:/epg/channels.xml iptv-org/epg
+docker run -p 3000:3000 -v /path/to/channels.xml:/epg/channels.xml ghcr.io/iptv-org/epg:master
 ```
 
 By default, the guide will be downloaded every day at 00:00 UTC and saved to the `/epg/public/guide.xml` file inside the container.
@@ -201,6 +201,7 @@ iptv-org/epg
 | DAYS            | Number of days for which the guide will be loaded (defaults to the value from the site config)                     |
 | TIMEOUT         | Timeout for each request in milliseconds (default: 0)                                                              |
 | DELAY           | Delay between request in milliseconds (default: 0)                                                                 |
+| RUN_AT_STARTUP  | Run grab on container startup (default: true)                                                                      |
 
 ## Database
 

@@ -28,7 +28,7 @@ module.exports = {
 
     return programs
   },
-  async channels({ lang = 'id' }) {
+  async channels({ lang }) {
     const axios = require('axios')
     const cheerio = require('cheerio')
     const result = await axios
