@@ -2,13 +2,15 @@ const dayjs = require('dayjs')
 
 module.exports = {
   site: 'www3.nhk.or.jp',
-  output: 'www3.nhk.or.jp.guide.xml',
   days: 5,
   lang: 'en',
   delay: 5000,
 
   url: function ({ date }) {
-    return `https://masterpl.hls.nhkworld.jp/epg/w/${date.toISOString().slice(0, 10).replace(/-/g, '')}.json`
+    return `https://masterpl.hls.nhkworld.jp/epg/w/${date
+      .toISOString()
+      .slice(0, 10)
+      .replace(/-/g, '')}.json`
   },
 
   request: {
