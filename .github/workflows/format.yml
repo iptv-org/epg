@@ -24,11 +24,6 @@ jobs:
         with:
           node-version: 22
           cache: 'npm'
-      - name: Setup .npmrc for GitHub Packages
-        run: |
-          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> .npmrc
-          echo "@iptv-org:registry=https://npm.pkg.github.com/" >> .npmrc
-          echo "always-auth=true" >> .npmrc
       - name: Install dependencies
         run: npm install
       - name: Format *.channels.xml files
@@ -38,7 +33,7 @@ jobs:
         run: |
           git fetch origin master:master
           CHANNELS_ANY_CHANGED=false
-          CHANNELS_ALL_CHANGED_FILES=$(git diff --name-only master --  sites/**/*.channels.xml | tr '\n' ' ')
+          CHANNELS_ALL_CHANGED_FILES=$(git diff --diff-filter=ACMRT --name-only master --  sites/**/*.channels.xml | tr '\n' ' ')
           if [ -n "${CHANNELS_ALL_CHANGED_FILES}" ]; then
             CHANNELS_ANY_CHANGED=true
           fi
