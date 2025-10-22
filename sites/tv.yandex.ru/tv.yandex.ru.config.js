@@ -3,7 +3,8 @@ const AxiosMockAdapter = require('axios-mock-adapter')
 const dayjs = require('dayjs')
 const debug = require('debug')('site:tv.yandex.ru')
 
-const responses = {}, caches = {}
+const responses = {},
+  caches = {}
 // enable to fetch guide description but its take a longer time
 const detailedGuide = true
 const browserCloseDelay = 10000
@@ -18,7 +19,10 @@ mock.onGet(/.*/).reply(config => {
   return puppeteerAdapter(config)
 })
 
-let browser, page, autocloseBrowser = false, browserCloseHandled = false
+let browser,
+  page,
+  autocloseBrowser = false,
+  browserCloseHandled = false
 
 module.exports = {
   site: 'tv.yandex.ru',
@@ -162,7 +166,9 @@ async function fetchPrograms({ schedules, date, channel }) {
       queues.push(
         ...schedule.events
           .filter(event => date.isSame(event.start, 'day'))
-          .map(event => getUrl(null, caches.region, null, { ...event, programCoId: event?.program?.coId }))
+          .map(event =>
+            getUrl(null, caches.region, null, { ...event, programCoId: event?.program?.coId })
+          )
       )
     })
   for (const queue of queues) {
@@ -245,7 +251,9 @@ function getUrl(date, region = null, page = null, event = null) {
     url += `${url.endsWith('/') ? '' : '/'}main/chunk?page=${page.id}`
   }
   if (event && event.id !== undefined) {
-    url += `${url.endsWith('/') ? '' : '/'}event?eventId=${event.id}&programCoId=${event.programCoId ?? ''}`
+    url += `${url.endsWith('/') ? '' : '/'}event?eventId=${event.id}&programCoId=${
+      event.programCoId ?? ''
+    }`
   }
   if (date) {
     url += `${url.indexOf('?') < 0 ? '?' : '&'}date=${date.format('YYYY-MM-DD')}${
@@ -301,7 +309,7 @@ async function puppeterFetch(url, re) {
       }
       interceptor.continue()
     })
-    page.on('response', async (res) => {
+    page.on('response', async res => {
       page._tres = new Date().getTime()
       const url = res.url()
       if (url.match(re)) {
@@ -346,8 +354,9 @@ async function puppeterFetch(url, re) {
     const f = () => {
       let tmo
       /* eslint-disable */
-      page.evaluate(() => window._scrolled)
-      /* eslint-enable */
+      page
+        .evaluate(() => window._scrolled)
+        /* eslint-enable */
         .then(scrolled => {
           let done = scrolled && page._requests.length === 0
           if (done) {
@@ -386,10 +395,10 @@ async function puppeteerXhr(url) {
     /* eslint-disable */
     return fetch(url, {
       headers: {
-        'Accept': 'application/json',
+        Accept: 'application/json',
         'X-Requested-With': 'XMLHttpRequest',
         'X-Tv-Sk': window.__INITIAL_SK__.key,
-        'X-User-Session-Id': window.__USER_SESSION_ID__,
+        'X-User-Session-Id': window.__USER_SESSION_ID__
       }
     })
     /* eslint-enable */
@@ -417,7 +426,7 @@ async function cacheResponse(url, res) {
   if (data && headers['content-type'] && headers['content-type'].match(/application\/json/)) {
     data = JSON.parse(data)
   }
-  responses[url] = {headers, status, data}
+  responses[url] = { headers, status, data }
 }
 
 async function closeBrowser() {
@@ -442,7 +451,7 @@ function doCloseBrowserWhenIdle() {
         }
       }
       if (lastTime !== undefined) {
-        const deltaTime = (new Date().getTime()) - lastTime
+        const deltaTime = new Date().getTime() - lastTime
         if (deltaTime > browserCloseDelay) {
           debug(`Auto closing browser, last activity was ${new Date(lastTime)}...`)
           await closeBrowser()
