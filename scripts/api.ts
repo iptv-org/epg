@@ -80,8 +80,8 @@ async function downloadData() {
 
   const dataManager = new sdk.DataManager({ dataDir: DATA_DIR })
 
-  let requests: Promise<unknown>[] = []
-  for (let basename of files) {
+  const requests: Promise<unknown>[] = []
+  for (const basename of files) {
     const filename = `${basename}.json`
     const progressBar = multiBar.create(0, 0, { filename })
     const request = dataManager.downloadFileToDisk(basename, {
