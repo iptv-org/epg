@@ -1,9 +1,10 @@
-const cheerio = require('cheerio')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const doFetch = require('@ntlab/sfetch')
 const debug = require('debug')('site:sky.com')
 const sortBy = require('lodash.sortby')
+const path = require('path')
+const fs = require('fs/promises')
 
 dayjs.extend(utc)
 
@@ -50,20 +51,39 @@ module.exports = {
     return programs
   },
   async channels() {
-    const channels = {}
-    const queues = [{ t: 'r', url: 'https://www.sky.com/tv-guide' }]
-    await doFetch(queues, (queue, res) => {
-      // process regions
-      if (queue.t === 'r') {
-        const $ = cheerio.load(res)
-        const initialData = JSON.parse(decodeURIComponent($('#initialData').text()))
-        initialData.state.epgData.regions.forEach(region => {
-          queues.push({
-            t: 'c',
-            url: `https://awk.epgsky.com/hawk/linear/services/${region.bouquet}/${region.subBouquet}`
-          })
-        })
+    const dataPath = path.join(__dirname, '__data__', 'content.json')
+    let regions = []
+
+    try {
+      const raw = await fs.readFile(dataPath, 'utf8')
+      const payload = JSON.parse(raw)
+      if (Array.isArray(payload.regions)) {
+        regions = payload.regions
       }
+    } catch (err) {
+      debug('Failed to read regions from %s: %o', dataPath, err)
+      throw err
+    }
+
+    if (regions.length === 0) {
+      debug('No regions defined in %s', dataPath)
+      return []
+    }
+
+    const uniqueRegions = new Map()
+    regions.forEach(region => {
+      if (!region || region.bouquet === undefined || region.subBouquet === undefined) return
+      const key = `${region.bouquet}-${region.subBouquet}`
+      if (!uniqueRegions.has(key)) uniqueRegions.set(key, region)
+    })
+
+    const channels = {}
+    const queues = Array.from(uniqueRegions.values()).map(region => ({
+      t: 'c',
+      url: `https://awk.epgsky.com/hawk/linear/services/${region.bouquet}/${region.subBouquet}`
+    }))
+
+    await doFetch(queues, (queue, res) => {
       // process channels
       if (queue.t === 'c') {
         if (Array.isArray(res.services)) {
