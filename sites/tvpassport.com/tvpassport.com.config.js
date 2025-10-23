@@ -5,6 +5,7 @@ const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
 const doFetch = require('@ntlab/sfetch')
+const FRENCH_CHANNELS = require('./__data__/frenchChannels.js')
 
 dayjs.extend(utc)
 dayjs.extend(timezone)
@@ -90,9 +91,10 @@ module.exports = {
       const $channelPage = cheerio.load(res)
       const title = $channelPage('meta[property="og:title"]').attr('content')
       const name = title.replace('TV Schedule for ', '')
+      const lang = FRENCH_CHANNELS.has(site_id) ? 'fr' : 'en'
 
       channels.push({
-        lang: 'en',
+        lang,
         site_id,
         name
       })
