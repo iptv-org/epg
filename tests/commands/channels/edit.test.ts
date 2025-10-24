@@ -1,7 +1,7 @@
 import { execSync } from 'child_process'
 import fs from 'fs-extra'
 
-const ENV_VAR = 'cross-env DATA_DIR=tests/__data__/input/__data__'
+const ENV_VAR = 'cross-env DATA_DIR=tests/__data__/input/data'
 
 beforeEach(() => {
   fs.emptyDirSync('tests/__data__/output')

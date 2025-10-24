@@ -1,52 +1,42 @@
-interface Column {
-  name: string
-  nowrap?: boolean
-  align?: string
-  colspan?: number
-}
-
-type DataItem = {
-  value: string
-  nowrap?: boolean
-  align?: string
-  colspan?: number
-}[]
+import { HTMLTableColumn, HTMLTableDataItem, HTMLTableRow } from '../types/htmlTable'
+import { Collection } from '@freearhey/core'
+import { EOL } from '../constants'
 
 export class HTMLTable {
-  data: DataItem[]
-  columns: Column[]
+  rows: Collection<HTMLTableRow>
+  columns: Collection<HTMLTableColumn>
 
-  constructor(data: DataItem[], columns: Column[]) {
-    this.data = data
+  constructor(rows: Collection<HTMLTableRow>, columns: Collection<HTMLTableColumn>) {
+    this.rows = rows
     this.columns = columns
   }
 
   toString() {
-    let output = '<table>\r\n'
+    let output = `<table>${EOL}`
 
-    output += '  <thead>\r\n    <tr>'
-    for (const column of this.columns) {
+    output += `  <thead>${EOL}    <tr>`
+    this.columns.forEach((column: HTMLTableColumn) => {
       const nowrap = column.nowrap ? ' nowrap' : ''
       const align = column.align ? ` align="${column.align}"` : ''
       const colspan = column.colspan ? ` colspan="${column.colspan}"` : ''
 
       output += `<th${align}${nowrap}${colspan}>${column.name}</th>`
-    }
-    output += '</tr>\r\n  </thead>\r\n'
+    })
+    output += `</tr>${EOL}  </thead>${EOL}`
 
-    output += '  <tbody>\r\n'
-    for (const row of this.data) {
+    output += `  <tbody>${EOL}`
+    this.rows.forEach((row: HTMLTableRow) => {
       output += '    <tr>'
-      for (const item of row) {
+      row.forEach((item: HTMLTableDataItem) => {
         const nowrap = item.nowrap ? ' nowrap' : ''
         const align = item.align ? ` align="${item.align}"` : ''
         const colspan = item.colspan ? ` colspan="${item.colspan}"` : ''
 
         output += `<td${align}${nowrap}${colspan}>${item.value}</td>`
-      }
-      output += '</tr>\r\n'
-    }
-    output += '  </tbody>\r\n'
+      })
+      output += `</tr>${EOL}`
+    })
+    output += `  </tbody>${EOL}`
 
     output += '</table>'
 

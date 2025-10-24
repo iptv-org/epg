@@ -1,9 +1,9 @@
-import { Logger, Collection } from '@freearhey/core'
-import { Storage } from '@freearhey/storage-js'
+import { ChannelGuideObject } from '../../types/channel'
 import { SITES_DIR, API_DIR } from '../../constants'
-import { GuideChannel } from '../../models'
-import { ChannelsParser } from '../../core'
-import epgGrabber from 'epg-grabber'
+import { Logger, Collection } from '@freearhey/core'
+import epgGrabber, { EPGGrabber } from 'epg-grabber'
+import { Storage } from '@freearhey/storage-js'
+import { Channel } from '../../models'
 import path from 'path'
 
 async function main() {
@@ -13,24 +13,25 @@ async function main() {
 
   logger.info('loading channels...')
   const sitesStorage = new Storage(SITES_DIR)
-  const parser = new ChannelsParser({
-    storage: sitesStorage
-  })
 
   const files: string[] = await sitesStorage.list('**/*.channels.xml')
 
-  const channels = new Collection()
+  const channels = new Collection<Channel>()
   for (const filepath of files) {
-    const channelList = await parser.parse(filepath)
+    const xml = await sitesStorage.load(filepath)
+    const parsedChannels = EPGGrabber.parseChannelsXML(xml)
+    const channelsFromXML = new Collection(parsedChannels).map(
+      (channel: epgGrabber.Channel) => new Channel(channel.toObject())
+    )
 
-    channelList.channels.forEach((data: epgGrabber.Channel) => {
-      channels.add(new GuideChannel(data))
+    channelsFromXML.forEach((channel: Channel) => {
+      channels.add(channel)
     })
   }
 
   logger.info(`found ${channels.count()} channel(s)`)
 
-  const output = channels.map((channel: GuideChannel) => channel.toJSON())
+  const output = channels.map<ChannelGuideObject>((channel: Channel) => channel.getGuideObject())
 
   const apiStorage = new Storage(API_DIR)
   const outputFilename = 'guides.json'
