@@ -1,5 +1,6 @@
 import { IssueLoader, HTMLTable, ChannelsParser } from '../../core'
-import { Logger, Storage, Collection } from '@freearhey/core'
+import { Logger, Collection } from '@freearhey/core'
+import { Storage } from '@freearhey/storage-js'
 import { ChannelList, Issue, Site } from '../../models'
 import { SITES_DIR, ROOT_DIR } from '../../constants'
 import { Channel } from 'epg-grabber'

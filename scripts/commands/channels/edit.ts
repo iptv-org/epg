@@ -1,4 +1,5 @@
-import { Storage, Collection, Logger, Dictionary } from '@freearhey/core'
+import { Collection, Logger, Dictionary } from '@freearhey/core'
+import { Storage } from '@freearhey/storage-js'
 import type { DataProcessorData } from '../../types/dataProcessor'
 import type { DataLoaderData } from '../../types/dataLoader'
 import { ChannelSearchableData } from '../../types/channel'

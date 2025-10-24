@@ -1,4 +1,5 @@
-import { Logger, File, Storage } from '@freearhey/core'
+import { Logger } from '@freearhey/core'
+import { Storage, File } from '@freearhey/storage-js'
 import { ChannelsParser } from '../../core'
 import { ChannelList } from '../../models'
 import { pathToFileURL } from 'node:url'

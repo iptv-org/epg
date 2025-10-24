@@ -1,6 +1,6 @@
 import type { DataLoaderProps, DataLoaderData } from '../types/dataLoader'
 import cliProgress, { MultiBar } from 'cli-progress'
-import { Storage } from '@freearhey/core'
+import { Storage } from '@freearhey/storage-js'
 import { ApiClient } from './apiClient'
 import numeral from 'numeral'
 

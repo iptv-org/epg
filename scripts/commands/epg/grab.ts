@@ -1,4 +1,5 @@
-import { Logger, Timer, Storage, Collection } from '@freearhey/core'
+import { Logger, Timer, Collection } from '@freearhey/core'
+import { Storage } from '@freearhey/storage-js'
 import { QueueCreator, Job, ChannelsParser } from '../../core'
 import { Option, program } from 'commander'
 import { SITES_DIR } from '../../constants'

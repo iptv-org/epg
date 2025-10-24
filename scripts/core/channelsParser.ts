@@ -1,5 +1,5 @@
-import { parseChannels } from 'epg-grabber'
-import { Storage } from '@freearhey/core'
+import { EPGGrabber } from 'epg-grabber'
+import { Storage } from '@freearhey/storage-js'
 import { ChannelList } from '../models'
 
 interface ChannelsParserProps {
@@ -15,7 +15,7 @@ export class ChannelsParser {
 
   async parse(filepath: string): Promise<ChannelList> {
     const content = await this.storage.load(filepath)
-    const parsed = parseChannels(content)
+    const parsed = EPGGrabber.parseChannelsXML(content)
 
     return new ChannelList({ channels: parsed })
   }

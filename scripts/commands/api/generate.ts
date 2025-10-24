@@ -1,4 +1,5 @@
-import { Logger, Collection, Storage } from '@freearhey/core'
+import { Logger, Collection } from '@freearhey/core'
+import { Storage } from '@freearhey/storage-js'
 import { SITES_DIR, API_DIR } from '../../constants'
 import { GuideChannel } from '../../models'
 import { ChannelsParser } from '../../core'

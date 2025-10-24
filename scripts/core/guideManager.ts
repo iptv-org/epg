@@ -1,4 +1,5 @@
-import { Collection, Logger, Zip, Storage, StringTemplate } from '@freearhey/core'
+import { Collection, Logger, Zip, StringTemplate } from '@freearhey/core'
+import { Storage } from '@freearhey/storage-js'
 import epgGrabber from 'epg-grabber'
 import { OptionValues } from 'commander'
 import { Channel, Feed, Guide } from '../models'

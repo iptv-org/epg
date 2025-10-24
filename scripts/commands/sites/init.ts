@@ -1,4 +1,5 @@
-import { Logger, Storage } from '@freearhey/core'
+import { Logger } from '@freearhey/core'
+import { Storage } from '@freearhey/storage-js'
 import { SITES_DIR } from '../../constants'
 import { pathToFileURL } from 'node:url'
 import { program } from 'commander'

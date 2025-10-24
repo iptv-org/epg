@@ -32,7 +32,7 @@
     ],
     "testTimeout": 10000,
     "transformIgnorePatterns": [
-      "<rootDir>/node_modules/(?!parse-duration/.*|@freearhey/core/.*|glob/.*|srcset/.*|balanced-match/.*|minimatch/.*)"
+      "<rootDir>/node_modules/(?!parse-duration/.*|glob/.*|srcset/.*|balanced-match/.*|minimatch/.*)"
     ]
   },
   "dependencies": {
@@ -42,6 +42,7 @@
     "@freearhey/chronos": "^0.0.1",
     "@freearhey/core": "^0.14.3",
     "@freearhey/search-js": "^0.2.0",
+    "@freearhey/storage-js": "^0.2.0",
     "@ntlab/sfetch": "^1.2.0",
     "@octokit/core": "^7.0.5",
     "@octokit/plugin-paginate-rest": "^13.2.1",
@@ -118,8 +119,5 @@
     "unzipit": "^1.4.3",
     "uuid": "^13.0.0",
     "wildcard-match": "^5.1.4"
-  },
-  "devDependencies": {
-    "@freearhey/storage-js": "^0.2.0"
   }
 }
