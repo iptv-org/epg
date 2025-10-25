@@ -109,7 +109,7 @@ async function main() {
     channelsFromXML = channelsFromXML.filter((channel: Channel) => {
       if (!options.lang) return true
 
-      return options.lang.includes(channel.lang)
+      return channel.lang ? options.lang.includes(channel.lang) : false
     })
   }
 
