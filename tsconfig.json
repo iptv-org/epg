@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "strict": true,
-    "module": "commonjs",
+    "module": "nodenext",
     "moduleResolution": "nodenext",
     "target": "es2022",
     "esModuleInterop": true,
