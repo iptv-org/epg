@@ -1,12 +1,23 @@
 const { parser, url } = require('./tv.trueid.net.config.js')
 const fs = require('fs')
 const path = require('path')
+const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
 
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
+
+jest.mock('axios')
+
+axios.get.mockImplementation(url => {
+  if (url === 'https://tv.trueid.net/th-en') {
+    return Promise.resolve({
+      data: fs.readFileSync(path.join(__dirname, '__data__', 'build.html')).toString()
+    })
+  }
+})
 
 const date = dayjs.utc('2023-12-11').startOf('d')
 const channel = {
@@ -17,10 +28,10 @@ const channel = {
 const channelTh = Object.assign({}, channel, { lang: 'th' })
 const data = fs.readFileSync(path.resolve(__dirname, '__data__/data.json'))
 
-it('can generate valid url', () => {
-  const result = url({ channel, date })
+it('can generate valid url', async () => {
+  const result = await url({ channel, date })
   expect(result).toBe(
-    'https://tv.trueid.net/_next/data/1380644e0f1fb6b14c82894a0c682d147e015c9d/th-en.json?channelSlug=true-movie-hits&path=true-movie-hits'
+    'https://tv.trueid.net/_next/data/4c31e530f27f66770c8fe3e3f9cc46eccfa89720/th-en.json?channelSlug=true-movie-hits&path=true-movie-hits'
   )
 })
 
