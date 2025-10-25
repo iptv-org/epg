@@ -1,5 +1,5 @@
 import * as epgGrabber from 'epg-grabber'
-import _ from 'lodash'
+import merge from 'lodash.merge'
 
 const _default = {
   days: 1,
@@ -66,6 +66,6 @@ export class SiteConfig {
     this.output = config.output || _default.output
     this.logo = config.logo || _default.logo
 
-    this.request = _.merge(_default.request, config.request)
+    this.request = merge(_default.request, config.request)
   }
 }
