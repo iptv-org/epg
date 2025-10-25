@@ -7,36 +7,36 @@ enum StatusCode {
   OK = 'ok'
 }
 
-interface Status {
+export interface Status {
   code: StatusCode
   emoji: string
 }
 
-interface SiteProps {
+export interface SiteData {
   domain: string
   totalChannels?: number
   markedChannels?: number
-  issues: Collection
+  issues: Collection<Issue>
 }
 
 export class Site {
   domain: string
   totalChannels: number
   markedChannels: number
-  issues: Collection
+  issues: Collection<Issue>
 
-  constructor({ domain, totalChannels = 0, markedChannels = 0, issues }: SiteProps) {
-    this.domain = domain
-    this.totalChannels = totalChannels
-    this.markedChannels = markedChannels
-    this.issues = issues
+  constructor(data: SiteData) {
+    this.domain = data.domain
+    this.totalChannels = data.totalChannels || 0
+    this.markedChannels = data.markedChannels || 0
+    this.issues = data.issues
   }
 
   getStatus(): Status {
     const issuesWithStatusDown = this.issues.filter((issue: Issue) =>
       issue.labels.find(label => label === 'status:down')
     )
-    if (issuesWithStatusDown.notEmpty())
+    if (issuesWithStatusDown.isNotEmpty())
       return {
         code: StatusCode.DOWN,
         emoji: '🔴'
@@ -45,7 +45,7 @@ export class Site {
     const issuesWithStatusWarning = this.issues.filter((issue: Issue) =>
       issue.labels.find(label => label === 'status:warning')
     )
-    if (issuesWithStatusWarning.notEmpty())
+    if (issuesWithStatusWarning.isNotEmpty())
       return {
         code: StatusCode.WARNING,
         emoji: '🟡'
@@ -57,7 +57,7 @@ export class Site {
     }
   }
 
-  getIssues(): Collection {
+  getIssueUrls(): Collection<string> {
     return this.issues.map((issue: Issue) => issue.getURL())
   }
 }

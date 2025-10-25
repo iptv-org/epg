@@ -7,3 +7,4 @@ export const DOT_SITES_DIR = process.env.DOT_SITES_DIR || './.sites'
 export const TESTING = process.env.NODE_ENV === 'test' ? true : false
 export const OWNER = 'iptv-org'
 export const REPO = 'epg'
+export const EOL = '\r\n'
