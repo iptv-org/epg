@@ -31,7 +31,6 @@ jobs:
       - name: Get list of changed *.channels.xml files
         id: files
         run: |
-          git fetch origin master:master
           CHANNELS_ANY_CHANGED=false
           CHANNELS_ALL_CHANGED_FILES=$(git diff --diff-filter=ACMRT --name-only master --  sites/**/*.channels.xml | tr '\n' ' ')
           if [ -n "${CHANNELS_ALL_CHANGED_FILES}" ]; then
