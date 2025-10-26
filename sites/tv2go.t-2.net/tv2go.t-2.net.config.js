@@ -1,13 +1,13 @@
 const axios = require('axios')
 const dayjs = require('dayjs')
-const md5 = require('./jquery.md5')
+const crypto = require('crypto')
 
 const API = {
   locale: 'sl-SI',
-  version: '9.4',
+  version: '10.8',
   format: 'json',
-  uuid: '464830403846070',
-  token: '6dace810-55d5-11e3-949a-0800200c9a66'
+  uuid: '7971845803564301055', // from application
+  token: 'f8cce4e4-3ccc-486d-ac02-73cf231e3a2b' // from application
 }
 
 const config = {
@@ -120,7 +120,7 @@ function parseItems(content) {
 function generateHash(data, endpoint) {
   const salt = `${API.token}${API.version}${API.format}${API.uuid}`
 
-  return md5(salt + endpoint + JSON.stringify(data))
+  return crypto.createHash('md5').update(salt + endpoint + JSON.stringify(data)).digest('hex')
 }
 
 module.exports = config
