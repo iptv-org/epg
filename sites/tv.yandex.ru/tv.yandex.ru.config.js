@@ -274,8 +274,13 @@ async function puppeteerAdapter(config) {
   if (responses[config.url] === undefined) {
     debug('Fetching', config.url, 'using Puppeteer...')
     if (browser === undefined) {
+      const fs = require('fs')
+      const path = require('path')
       const puppeteer = require('puppeteer')
-      browser = await puppeteer.launch({ headless })
+      const pptrcfg = path.resolve(path.join(__dirname, '..', '..', 'puppeteer.launch.json'))
+      const opts = fs.existsSync(pptrcfg) ? JSON.parse(fs.readFileSync(pptrcfg)) :
+        { headless }
+      browser = await puppeteer.launch(opts)
     }
     const pages = await browser.pages()
     page = pages.length ? pages[0] : await browser.newPage()
