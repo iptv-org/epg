@@ -34,6 +34,11 @@ module.exports = {
     const programs = []
     const events = []
 
+    // prevent browser early close
+    if (!autocloseBrowser && browser !== undefined) {
+      browser._lastActivity = new Date().getTime()
+    }
+
     if (content && parseContent(content, date, true)) {
       const cacheid = date.format('YYYY-MM-DD')
       if (!caches[cacheid]) {
@@ -445,20 +450,19 @@ function doCloseBrowserWhenIdle() {
   if (browser && !browserCloseHandled) {
     browserCloseHandled = true
     const f = async () => {
-      let lastTime
       const pages = await browser.pages()
       for (const page of pages) {
-        if (page._treq && (lastTime === undefined || page._treq > lastTime)) {
-          lastTime = page._treq
+        if (page._treq && (browser._lastActivity === undefined || page._treq > browser._lastActivity)) {
+          browser._lastActivity = page._treq
         }
-        if (page._tres && (lastTime === undefined || page._tres > lastTime)) {
-          lastTime = page._tres
+        if (page._tres && (browser._lastActivity === undefined || page._tres > browser._lastActivity)) {
+          browser._lastActivity = page._tres
         }
       }
-      if (lastTime !== undefined) {
-        const deltaTime = new Date().getTime() - lastTime
+      if (browser._lastActivity !== undefined) {
+        const deltaTime = new Date().getTime() - browser._lastActivity
         if (deltaTime > browserCloseDelay) {
-          debug(`Auto closing browser, last activity was ${new Date(lastTime)}...`)
+          debug(`Auto closing browser, last activity was ${new Date(browser._lastActivity)}...`)
           await closeBrowser()
         } else {
           setTimeout(f, loopDelay)
