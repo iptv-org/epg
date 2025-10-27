@@ -133,12 +133,13 @@ async function main() {
 
     siteConfig.filepath = channel.getConfigPath()
 
-    if (options.timeout !== undefined) {
+    if (typeof options.timeout === 'number') {
       siteConfig.request = { ...siteConfig.request, ...{ timeout: options.timeout } }
     }
-    if (options.delay !== undefined) siteConfig.delay = options.delay
-    if (options.curl !== undefined) siteConfig.curl = options.curl
-    if (options.proxy !== undefined) {
+    if (typeof options.days === 'number') siteConfig.days = options.days
+    if (typeof options.delay === 'number') siteConfig.delay = options.delay
+    if (typeof options.curl === 'boolean') siteConfig.curl = options.curl
+    if (typeof options.proxy === 'string') {
       const proxy = parseProxy(options.proxy)
 
       if (
@@ -158,9 +159,8 @@ async function main() {
 
     if (!channel.xmltv_id) channel.xmltv_id = channel.site_id
 
-    const days = options.days || siteConfig.days || 1
     const currDate = dayjs.utc(process.env.CURR_DATE || new Date().toISOString())
-    const dates = Array.from({ length: days }, (_, day) => currDate.add(day, 'd'))
+    const dates = Array.from({ length: siteConfig.days }, (_, day) => currDate.add(day, 'd'))
 
     dates.forEach((date: Dayjs) => {
       const key = `${channel.site}:${channel.lang}:${channel.xmltv_id}:${date.toJSON()}`
