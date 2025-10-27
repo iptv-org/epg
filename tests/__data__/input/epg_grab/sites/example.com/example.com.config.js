@@ -7,7 +7,7 @@ module.exports = {
   url: 'https://example.com',
   parser({ channel, date }) {
     if (channel.xmltv_id === 'Channel2.us') return []
-    else if (channel.xmltv_id === 'Channel1.us' && channel.lang === 'fr') {
+    else if (channel.lang === 'fr') {
       return [
         {
           title: 'Programme1 (example.com)',

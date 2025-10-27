@@ -15,7 +15,7 @@ const channel = {
 
 it('can generate valid url', () => {
   expect(url({ date, channel })).toBe(
-    'https://tv2go.t-2.net/Catherine/api/9.4/json/464830403846070/d79cf4dc84f2131689f426956b8d40de/client/tv/getEpg'
+    'https://tv2go.t-2.net/Catherine/api/10.8/json/7971845803564301055/c82189625b4689c4dec55a452741a012/client/tv/getEpg'
   )
 })
 

@@ -1,20 +1,25 @@
-import { Storage, Collection, Logger, Dictionary } from '@freearhey/core'
-import type { DataProcessorData } from '../../types/dataProcessor'
-import type { DataLoaderData } from '../../types/dataLoader'
-import { ChannelSearchableData } from '../../types/channel'
-import { Channel, ChannelList, Feed } from '../../models'
-import { DataProcessor, DataLoader } from '../../core'
+import { loadData, data, searchChannels } from '../../api'
+import epgGrabber, { EPGGrabber } from 'epg-grabber'
+import { Collection, Logger } from '@freearhey/core'
 import { select, input } from '@inquirer/prompts'
-import { ChannelsParser } from '../../core'
-import { DATA_DIR } from '../../constants'
+import { generateChannelsXML } from '../../core'
+import { Storage } from '@freearhey/storage-js'
+import { Channel } from '../../models'
 import nodeCleanup from 'node-cleanup'
-import sjs from '@freearhey/search-js'
-import epgGrabber from 'epg-grabber'
+import * as sdk from '@iptv-org/sdk'
 import { Command } from 'commander'
 import readline from 'readline'
 
-interface ChoiceValue { type: string; value?: Feed | Channel }
-interface Choice { name: string; short?: string; value: ChoiceValue; default?: boolean }
+interface ChoiceValue {
+  type: string
+  value?: sdk.Models.Feed | sdk.Models.Channel
+}
+interface Choice {
+  name: string
+  short?: string
+  value: ChoiceValue
+  default?: boolean
+}
 
 if (process.platform === 'win32') {
   readline
@@ -34,11 +39,11 @@ program.argument('<filepath>', 'Path to *.channels.xml file to edit').parse(proc
 const filepath = program.args[0]
 const logger = new Logger()
 const storage = new Storage()
-let channelList = new ChannelList({ channels: [] })
+let channelsFromXML = new Collection<Channel>()
 
 main(filepath)
 nodeCleanup(() => {
-  save(filepath, channelList)
+  save(filepath, channelsFromXML)
 })
 
 export default async function main(filepath: string) {
@@ -47,67 +52,46 @@ export default async function main(filepath: string) {
   }
 
   logger.info('loading data from api...')
-  const processor = new DataProcessor()
-  const dataStorage = new Storage(DATA_DIR)
-  const loader = new DataLoader({ storage: dataStorage })
-  const data: DataLoaderData = await loader.load()
-  const { channels, channelsKeyById, feedsGroupedByChannelId }: DataProcessorData =
-    processor.process(data)
+  await loadData()
 
   logger.info('loading channels...')
-  const parser = new ChannelsParser({ storage })
-  channelList = await parser.parse(filepath)
-  const parsedChannelsWithoutId = channelList.channels.filter(
-    (channel: epgGrabber.Channel) => !channel.xmltv_id
+  const xml = await storage.load(filepath)
+  const parsedChannels = EPGGrabber.parseChannelsXML(xml)
+  channelsFromXML = new Collection(parsedChannels).map(
+    (channel: epgGrabber.Channel) => new Channel(channel.toObject())
   )
+  const channelsFromXMLWithoutId = channelsFromXML.filter((channel: Channel) => !channel.xmltv_id)
 
   logger.info(
-    `found ${channelList.channels.count()} channels (including ${parsedChannelsWithoutId.count()} without ID)`
+    `found ${channelsFromXML.count()} channels (including ${channelsFromXMLWithoutId.count()} without ID)`
   )
 
-  logger.info('creating search index...')
-  const items = channels.map((channel: Channel) => channel.getSearchable()).all()
-  const searchIndex = sjs.createIndex(items, {
-    searchable: ['name', 'altNames', 'guideNames', 'streamNames', 'feedFullNames']
-  })
+  logger.info('starting...')
+  console.log()
 
-  logger.info('starting...\n')
-
-  for (const channel of parsedChannelsWithoutId.all()) {
+  for (const channel of channelsFromXMLWithoutId.all()) {
     try {
-      channel.xmltv_id = await selectChannel(
-        channel,
-        searchIndex,
-        feedsGroupedByChannelId,
-        channelsKeyById
-      )
-    } catch (err) {
-      logger.info(err.message)
+      channel.xmltv_id = await selectChannel(channel)
+    } catch {
       break
     }
   }
 
-  parsedChannelsWithoutId.forEach((channel: epgGrabber.Channel) => {
+  channelsFromXMLWithoutId.forEach((channel: epgGrabber.Channel) => {
     if (channel.xmltv_id === '-') {
       channel.xmltv_id = ''
     }
   })
 }
 
-async function selectChannel(
-  channel: epgGrabber.Channel,
-  searchIndex,
-  feedsGroupedByChannelId: Dictionary,
-  channelsKeyById: Dictionary
-): Promise<string> {
+async function selectChannel(channel: epgGrabber.Channel): Promise<string> {
   const query = escapeRegex(channel.name)
-  const similarChannels = searchIndex
-    .search(query)
-    .map((item: ChannelSearchableData) => channelsKeyById.get(item.id))
+  const similarChannels = searchChannels(query)
+  const choices = getChoicesForChannel(similarChannels).all()
 
   const selected: ChoiceValue = await select({
     message: `Select channel ID for "${channel.name}" (${channel.site_id}):`,
-    choices: getChannelChoises(new Collection(similarChannels)),
+    choices,
     pageSize: 10
   })
 
@@ -117,14 +101,14 @@ async function selectChannel(
     case 'type': {
       const typedChannelId = await input({ message: '  Channel ID:' })
       if (!typedChannelId) return ''
-      const selectedFeedId = await selectFeed(typedChannelId, feedsGroupedByChannelId)
+      const selectedFeedId = await selectFeed(typedChannelId)
       if (selectedFeedId === '-') return typedChannelId
       return [typedChannelId, selectedFeedId].join('@')
     }
     case 'channel': {
       const selectedChannel = selected.value
       if (!selectedChannel) return ''
-      const selectedFeedId = await selectFeed(selectedChannel.id || '', feedsGroupedByChannelId)
+      const selectedFeedId = await selectFeed(selectedChannel.id || '')
       if (selectedFeedId === '-') return selectedChannel.id || ''
       return [selectedChannel.id, selectedFeedId].join('@')
     }
@@ -133,11 +117,9 @@ async function selectChannel(
   return ''
 }
 
-async function selectFeed(channelId: string, feedsGroupedByChannelId: Dictionary): Promise<string> {
-  const channelFeeds = feedsGroupedByChannelId.has(channelId)
-    ? new Collection(feedsGroupedByChannelId.get(channelId))
-    : new Collection()
-  const choices = getFeedChoises(channelFeeds)
+async function selectFeed(channelId: string): Promise<string> {
+  const channelFeeds = new Collection(data.feedsGroupedByChannelId.get(channelId))
+  const choices = getChoicesForFeed(channelFeeds).all()
 
   const selected: ChoiceValue = await select({
     message: `Select feed ID for "${channelId}":`,
@@ -159,13 +141,13 @@ async function selectFeed(channelId: string, feedsGroupedByChannelId: Dictionary
   return ''
 }
 
-function getChannelChoises(channels: Collection): Choice[] {
-  const choises: Choice[] = []
+function getChoicesForChannel(channels: Collection<sdk.Models.Channel>): Collection<Choice> {
+  const choices = new Collection<Choice>()
 
-  channels.forEach((channel: Channel) => {
-    const names = new Collection([channel.name, ...channel.getAltNames().all()]).uniq().join(', ')
+  channels.forEach((channel: sdk.Models.Channel) => {
+    const names = new Collection([channel.name, ...channel.alt_names]).uniq().join(', ')
 
-    choises.push({
+    choices.add({
       value: {
         type: 'channel',
         value: channel
@@ -175,40 +157,42 @@ function getChannelChoises(channels: Collection): Choice[] {
     })
   })
 
-  choises.push({ name: 'Type...', value: { type: 'type' } })
-  choises.push({ name: 'Skip', value: { type: 'skip' } })
+  choices.add({ name: 'Type...', value: { type: 'type' } })
+  choices.add({ name: 'Skip', value: { type: 'skip' } })
 
-  return choises
+  return choices
 }
 
-function getFeedChoises(feeds: Collection): Choice[] {
-  const choises: Choice[] = []
+function getChoicesForFeed(feeds: Collection<sdk.Models.Feed>): Collection<Choice> {
+  const choices = new Collection<Choice>()
 
-  feeds.forEach((feed: Feed) => {
+  feeds.forEach((feed: sdk.Models.Feed) => {
     let name = `${feed.id} (${feed.name})`
-    if (feed.isMain) name += ' [main]'
+    if (feed.is_main) name += ' [main]'
 
-    choises.push({
+    choices.add({
       value: {
         type: 'feed',
         value: feed
       },
-      default: feed.isMain,
+      default: feed.is_main,
       name,
       short: feed.id
     })
   })
 
-  choises.push({ name: 'Type...', value: { type: 'type' } })
-  choises.push({ name: 'Skip', value: { type: 'skip' } })
+  choices.add({ name: 'Type...', value: { type: 'type' } })
+  choices.add({ name: 'Skip', value: { type: 'skip' } })
 
-  return choises
+  return choices
 }
 
-function save(filepath: string, channelList: ChannelList) {
+function save(filepath: string, channelsFromXML: Collection<Channel>) {
   if (!storage.existsSync(filepath)) return
-  storage.saveSync(filepath, channelList.toString())
-  logger.info(`\nFile '${filepath}' successfully saved`)
+  const xml = generateChannelsXML(channelsFromXML)
+  storage.saveSync(filepath, xml)
+  console.log()
+  logger.info(`File '${filepath}' successfully saved`)
 }
 
 function escapeRegex(string: string) {

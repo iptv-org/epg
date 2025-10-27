@@ -131,7 +131,7 @@
     <tr><td><a href="sites/programme-tv.net">programme-tv.net</a></td><td align="right">295</td><td align="right">197</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/programme-tv.vini.pf">programme-tv.vini.pf</a></td><td align="right">58</td><td align="right">2</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/programme.tvb.com">programme.tvb.com</a></td><td align="right">8</td><td align="right">6</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/programtv.onet.pl">programtv.onet.pl</a></td><td align="right">590</td><td align="right">362</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/programtv.onet.pl">programtv.onet.pl</a></td><td align="right">590</td><td align="right">362</td><td align="center">🟢</td><td>https://github.com/iptv-org/epg/issues/2899</td></tr>
     <tr><td><a href="sites/raiplay.it">raiplay.it</a></td><td align="right">17</td><td align="right">13</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/reportv.com.ar">reportv.com.ar</a></td><td align="right">163</td><td align="right">97</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/rikstv.no">rikstv.no</a></td><td align="right">80</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
@@ -186,11 +186,11 @@
     <tr><td><a href="sites/tv.nu">tv.nu</a></td><td align="right">199</td><td align="right">180</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv.post.lu">tv.post.lu</a></td><td align="right">332</td><td align="right">242</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv.sfr.fr">tv.sfr.fr</a></td><td align="right">489</td><td align="right">456</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/tv.trueid.net">tv.trueid.net</a></td><td align="right">266</td><td align="right">74</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/tv.trueid.net">tv.trueid.net</a></td><td align="right">246</td><td align="right">36</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv.yandex.ru">tv.yandex.ru</a></td><td align="right">97</td><td align="right">67</td><td align="center">🔴</td><td>https://github.com/iptv-org/epg/issues/2803</td></tr>
     <tr><td><a href="sites/tv24.co.uk">tv24.co.uk</a></td><td align="right">1072</td><td align="right">39</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv24.se">tv24.se</a></td><td align="right">326</td><td align="right">157</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/tv2go.t-2.net">tv2go.t-2.net</a></td><td align="right">335</td><td align="right">253</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/tv2go.t-2.net">tv2go.t-2.net</a></td><td align="right">342</td><td align="right">235</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tvarenasport.com">tvarenasport.com</a></td><td align="right">18</td><td align="right">18</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tvarenasport.hr">tvarenasport.hr</a></td><td align="right">10</td><td align="right">10</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tvcesoir.fr">tvcesoir.fr</a></td><td align="right">135</td><td align="right">133</td><td align="center">🟢</td><td></td></tr>
