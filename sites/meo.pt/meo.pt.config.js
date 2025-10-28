@@ -20,21 +20,50 @@ module.exports = {
       }
     }
   },
-  parser({ content }) {
+  async parser({ content }) {
+    const axios = require('axios')
     let programs = []
     const items = parseItems(content)
-    items.forEach(item => {
+    if (!items.length) return programs
+
+    // simple per-run in-memory cache
+    const detailsCache = new Map()
+
+    for (const item of items) {
       const start = parseStart(item)
       let stop = parseStop(item)
       if (stop < start) {
         stop = stop.plus({ days: 1 })
       }
-      programs.push({
-        title: item.name,
+
+      let description = ''
+      let image = ''
+
+      const programID = item.uniqueId || item.programID || null
+      if (programID) {
+        let details = detailsCache.get(programID)
+        if (!details) {
+          details = await fetchProgramDetails(programID, axios).catch(() => null)
+          if (details) detailsCache.set(programID, details)
+        }
+        if (details) {
+          description = details.description || description
+          image = details.image || image
+        }
+      }
+
+      const prog = {
+        title: item.name || 'Sem título',
         start,
         stop
-      })
-    })
+      }
+      if (description) prog.description = description
+      if (image) {
+        prog.icon = { src: image }
+        prog.image = image
+      }
+      programs.push(prog)
+    }
 
     return programs
   },
@@ -48,6 +77,8 @@ module.exports = {
       })
       .then(r => r.data)
       .catch(console.log)
+
+    // channel logo at data.d.channels.logo
 
     return data.d.channels
       .map(item => {
@@ -79,4 +110,73 @@ function parseItems(content) {
   const programs = data?.d?.channels?.[0]?.programs
 
   return Array.isArray(programs) ? programs : []
+}
+
+async function fetchProgramDetails(programID, axiosInstance) {
+  try {
+    const response = await axiosInstance.post(
+      'https://authservice.apps.meo.pt/Services/GridTv/GridTvMng.svc/getProgramDetails',
+      {
+        service: 'programdetail',
+        programID: String(programID),
+        accountID: ''
+      },
+      {
+        headers: {
+          Origin: 'https://www.meo.pt',
+          'User-Agent': 'Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; en-US Trident/4.0)'
+        },
+        timeout: 10000
+      }
+    )
+
+    //console.log(response.data)
+    //output:
+    //{
+    //  d: {
+    //    date: '27-10-2025',
+    //    startTime: '07:30',
+    //    endTime: '08:00',
+    //    channelNum: 262,
+    //    channelName: 'Euronews (A)',
+    //    channelSigla: 'EURNA',
+    //    channelLogo: 'https://www.meo.pt/PublishingImages/canais/euronews-a-meo-logo.webp',
+    //    channelFriendlyUrlName: 'Euronews_a',
+    //    channelMoreInfo: { Label: '', Link: '' },
+    //    progId: 22132185,
+    //    uniqueId: 41262380,
+    //    progName: 'Wake up Europe',
+    //    progImageM: 'http://services.online.meo.pt/Data/2013/11/programs/media/image/22132185/M',
+    //    progImageL: 'http://services.online.meo.pt/Data/2013/11/programs/media/image/22132185/L',
+    //    progImageXL: 'http://services.online.meo.pt/Data/2013/11/programs/media/image/22132185/XL',
+    //    isAdultContent: false,
+    //    description: "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+    //    onlineLnk: 'https://meogo.meo.pt/ver?programa=22132185',
+    //    timeTable: [],
+    //    recordType: -1,
+    //    recordingDefinitionID: '00000000-0000-0000-0000-000000000000',
+    //    recordingprogramID: '00000000-0000-0000-0000-000000000000',
+    //    seriesID: '609494288',
+    //    hardPadEndSeconds: -1,
+    //    keepUntil: -1,
+    //    airTime: -1,
+    //    showTime: -1
+    //  }
+    //}
+
+    const data = response.data
+    // Response structure has program data directly in data.d
+    const program = data?.d
+    if (!program || typeof program !== 'object') return null
+
+    // Try different image sizes in order of preference (XL > L > M)
+    const image =
+      program.progImageXL || program.progImageL || program.progImageM || null
+    const description = program.description || null
+
+    return { description, image }
+  } catch (err) {
+    // Silent fail returning null so parser continues
+    return null
+  }
 }
