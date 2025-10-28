@@ -141,7 +141,6 @@ async function fetchProgramDetails(programID, axiosInstance) {
     if (program.progName && program.channelSigla) {
       const encodedTitle = encodeURIComponent(program.progName)
       image = `https://proxycache.online.meo.pt/eemstb/ImageHandler.ashx?evTitle=${encodedTitle}&chCallLetter=${program.channelSigla}&profile=16_9&width=600`
-      console.log(image)
     }
     
     const description = program.description || null
