@@ -39,7 +39,7 @@ module.exports = {
       let description = ''
       let image = ''
 
-      const programID = item.uniqueId || item.programID || null
+      const programID = item.uniqueId || null
       if (programID) {
         let details = detailsCache.get(programID)
         if (!details) {
@@ -72,7 +72,8 @@ module.exports = {
     const data = await axios
       .post('https://authservice.apps.meo.pt/Services/GridTv/GridTvMng.svc/getGridAnon', null, {
         headers: {
-          Origin: 'https://www.meo.pt'
+          Origin: 'https://www.meo.pt',
+          'User-Agent': 'Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; en-US Trident/4.0)'
         }
       })
       .then(r => r.data)
@@ -135,10 +136,14 @@ async function fetchProgramDetails(programID, axiosInstance) {
     const program = data?.d
     if (!program || typeof program !== 'object') return null
 
-    // Try different image sizes in order of preference (XL > L > M)
-    const imageUrl =
-      program.progImageXL || program.progImageL || program.progImageM || null
-    const image = imageUrl ? `${imageUrl}.png` : null
+    // Build image URL using MEO's image handler
+    let image = null
+    if (program.progName && program.channelSigla) {
+      const encodedTitle = encodeURIComponent(program.progName)
+      image = `https://proxycache.online.meo.pt/eemstb/ImageHandler.ashx?evTitle=${encodedTitle}&chCallLetter=${program.channelSigla}&profile=16_9&width=600`
+      console.log(image)
+    }
+    
     const description = program.description || null
 
     return { description, image }
