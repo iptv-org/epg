@@ -130,52 +130,19 @@ async function fetchProgramDetails(programID, axiosInstance) {
       }
     )
 
-    //console.log(response.data)
-    //output:
-    //{
-    //  d: {
-    //    date: '27-10-2025',
-    //    startTime: '07:30',
-    //    endTime: '08:00',
-    //    channelNum: 262,
-    //    channelName: 'Euronews (A)',
-    //    channelSigla: 'EURNA',
-    //    channelLogo: 'https://www.meo.pt/PublishingImages/canais/euronews-a-meo-logo.webp',
-    //    channelFriendlyUrlName: 'Euronews_a',
-    //    channelMoreInfo: { Label: '', Link: '' },
-    //    progId: 22132185,
-    //    uniqueId: 41262380,
-    //    progName: 'Wake up Europe',
-    //    progImageM: 'http://services.online.meo.pt/Data/2013/11/programs/media/image/22132185/M',
-    //    progImageL: 'http://services.online.meo.pt/Data/2013/11/programs/media/image/22132185/L',
-    //    progImageXL: 'http://services.online.meo.pt/Data/2013/11/programs/media/image/22132185/XL',
-    //    isAdultContent: false,
-    //    description: "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
-    //    onlineLnk: 'https://meogo.meo.pt/ver?programa=22132185',
-    //    timeTable: [],
-    //    recordType: -1,
-    //    recordingDefinitionID: '00000000-0000-0000-0000-000000000000',
-    //    recordingprogramID: '00000000-0000-0000-0000-000000000000',
-    //    seriesID: '609494288',
-    //    hardPadEndSeconds: -1,
-    //    keepUntil: -1,
-    //    airTime: -1,
-    //    showTime: -1
-    //  }
-    //}
-
     const data = response.data
     // Response structure has program data directly in data.d
     const program = data?.d
     if (!program || typeof program !== 'object') return null
 
     // Try different image sizes in order of preference (XL > L > M)
-    const image =
+    const imageUrl =
       program.progImageXL || program.progImageL || program.progImageM || null
+    const image = imageUrl ? `${imageUrl}.png` : null
     const description = program.description || null
 
     return { description, image }
-  } catch (err) {
+  } catch {
     // Silent fail returning null so parser continues
     return null
   }
