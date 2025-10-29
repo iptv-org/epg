@@ -1,15 +1,19 @@
 import { Logger, Timer, Collection, Template } from '@freearhey/core'
 import epgGrabber, { EPGGrabber, EPGGrabberMock } from 'epg-grabber'
-import { loadJs, parseProxy, SiteConfig, Queue } from '../../core'
+import { CurlBody } from 'curl-generator/dist/bodies/body'
+import { loadJs, parseProxy, Queue } from '../../core'
 import { Channel, Guide, Program } from '../../models'
 import { SocksProxyAgent } from 'socks-proxy-agent'
+import defaultConfig from '../../default.config'
 import { PromisyClass, TaskQueue } from 'cwait'
 import { Storage } from '@freearhey/storage-js'
+import { CurlGenerator } from 'curl-generator'
 import { QueueItem } from '../../types/queue'
 import { Option, program } from 'commander'
 import { SITES_DIR } from '../../constants'
 import { data, loadData } from '../../api'
 import dayjs, { Dayjs } from 'dayjs'
+import merge from 'lodash.merge'
 import path from 'path'
 
 program
@@ -53,6 +57,7 @@ program
       .env('GZIP')
   )
   .addOption(new Option('--curl', 'Display each request as CURL').default(false).env('CURL'))
+  .addOption(new Option('--debug', 'Enable debug mode').default(false).env('DEBUG'))
   .parse()
 
 interface GrabOptions {
@@ -61,6 +66,7 @@ interface GrabOptions {
   output: string
   gzip: boolean
   curl: boolean
+  debug: boolean
   maxConnections: number
   timeout?: number
   delay?: number
@@ -72,25 +78,87 @@ interface GrabOptions {
 const options: GrabOptions = program.opts()
 
 async function main() {
-  if (!options.site && !options.channels)
+  if (typeof options.site !== 'string' && typeof options.channels !== 'string')
     throw new Error('One of the arguments must be presented: `--site` or `--channels`')
 
-  const logger = new Logger()
+  const LOG_LEVELS = { info: 3, debug: 4 }
+  const logger = new Logger({ level: options.debug ? LOG_LEVELS['debug'] : LOG_LEVELS['info'] })
 
   logger.info('starting...')
+  let config: epgGrabber.Types.SiteConfig = defaultConfig
 
-  logger.info('config:')
-  logger.tree(options)
+  if (typeof options.timeout === 'number')
+    config = merge(config, { request: { timeout: options.timeout } })
+  if (options.proxy !== undefined) {
+    const proxy = parseProxy(options.proxy)
+    if (
+      proxy.protocol &&
+      ['socks', 'socks5', 'socks5h', 'socks4', 'socks4a'].includes(String(proxy.protocol))
+    ) {
+      const socksProxyAgent = new SocksProxyAgent(options.proxy)
+      config = merge(config, {
+        request: { httpAgent: socksProxyAgent, httpsAgent: socksProxyAgent }
+      })
+    } else {
+      config = merge(config, { request: { proxy } })
+    }
+  }
+
+  if (typeof options.output === 'string') config.output = options.output
+  if (typeof options.days === 'number') config.days = options.days
+  if (typeof options.delay === 'number') config.delay = options.delay
+  if (typeof options.maxConnections === 'number') config.maxConnections = options.maxConnections
+  if (typeof options.curl === 'boolean') config.curl = options.curl
+  if (typeof options.gzip === 'boolean') config.gzip = options.gzip
+
+  const grabber =
+    process.env.NODE_ENV === 'test' ? new EPGGrabberMock(config) : new EPGGrabber(config)
+
+  const globalConfig = grabber.globalConfig
+
+  logger.debug(`config: ${JSON.stringify(globalConfig, null, 2)}`)
+
+  grabber.client.instance.interceptors.request.use(
+    request => {
+      if (globalConfig.curl) {
+        type AllowedMethods =
+          | 'GET'
+          | 'get'
+          | 'POST'
+          | 'post'
+          | 'PUT'
+          | 'put'
+          | 'PATCH'
+          | 'patch'
+          | 'DELETE'
+          | 'delete'
+
+        const url = request.url || ''
+        const method = request.method ? (request.method as AllowedMethods) : 'GET'
+        const headers = request.headers
+          ? (request.headers.toJSON() as Record<string, string>)
+          : undefined
+        const body = request.data ? (request.data as CurlBody) : undefined
+
+        const curl = CurlGenerator({ url, method, headers, body })
+
+        console.log(curl)
+      }
+
+      return request
+    },
+    error => Promise.reject(error)
+  )
 
   logger.info('loading channels...')
   const storage = new Storage()
 
   let files: string[] = []
-  if (options.site) {
+  if (typeof options.site === 'string') {
     let pattern = path.join(SITES_DIR, options.site, '*.channels.xml')
     pattern = pattern.replace(/\\/g, '/')
     files = await storage.list(pattern)
-  } else if (options.channels) {
+  } else if (typeof options.channels === 'string') {
     files = await storage.list(options.channels)
   }
 
@@ -105,7 +173,7 @@ async function main() {
     channelsFromXML.concat(_channelsFromXML)
   }
 
-  if (options.lang) {
+  if (typeof options.lang === 'string') {
     channelsFromXML = channelsFromXML.filter((channel: Channel) => {
       if (!options.lang) return true
 
@@ -119,7 +187,6 @@ async function main() {
   await loadData()
 
   logger.info('creating queue...')
-
   let index = 0
   const queue = new Queue()
 
@@ -127,40 +194,13 @@ async function main() {
     channel.index = index++
     if (!channel.site || !channel.site_id || !channel.name) continue
 
-    const configObject = await loadJs(channel.getConfigPath())
-
-    const siteConfig = new SiteConfig(configObject)
-
-    siteConfig.filepath = channel.getConfigPath()
-
-    if (typeof options.timeout === 'number') {
-      siteConfig.request = { ...siteConfig.request, ...{ timeout: options.timeout } }
-    }
-    if (typeof options.days === 'number') siteConfig.days = options.days
-    if (typeof options.delay === 'number') siteConfig.delay = options.delay
-    if (typeof options.curl === 'boolean') siteConfig.curl = options.curl
-    if (typeof options.proxy === 'string') {
-      const proxy = parseProxy(options.proxy)
-
-      if (
-        proxy.protocol &&
-        ['socks', 'socks5', 'socks5h', 'socks4', 'socks4a'].includes(String(proxy.protocol))
-      ) {
-        const socksProxyAgent = new SocksProxyAgent(options.proxy)
-
-        siteConfig.request = {
-          ...siteConfig.request,
-          ...{ httpAgent: socksProxyAgent, httpsAgent: socksProxyAgent }
-        }
-      } else {
-        siteConfig.request = { ...siteConfig.request, ...{ proxy } }
-      }
-    }
+    const config = await loadJs(channel.getConfigPath())
+    const days: number = config.days || globalConfig.days
 
     if (!channel.xmltv_id) channel.xmltv_id = channel.site_id
 
     const currDate = dayjs.utc(process.env.CURR_DATE || new Date().toISOString())
-    const dates = Array.from({ length: siteConfig.days }, (_, day) => currDate.add(day, 'd'))
+    const dates = Array.from({ length: days }, (_, day) => currDate.add(day, 'd'))
 
     dates.forEach((date: Dayjs) => {
       const key = `${channel.site}:${channel.lang}:${channel.xmltv_id}:${date.toJSON()}`
@@ -168,13 +208,11 @@ async function main() {
       queue.add(key, {
         channel,
         date,
-        siteConfig,
+        config,
         error: null
       })
     })
   }
-
-  const grabber = process.env.NODE_ENV === 'test' ? new EPGGrabberMock() : new EPGGrabber()
 
   const taskQueue = new TaskQueue(Promise as PromisyClass, options.maxConnections)
 
@@ -188,10 +226,10 @@ async function main() {
 
   const requests = queueItems.map(
     taskQueue.wrap(async (queueItem: QueueItem) => {
-      const { channel, siteConfig, date } = queueItem
+      const { channel, config, date } = queueItem
 
       if (!channel.logo) {
-        if (siteConfig.logo) {
+        if (config.logo) {
           channel.logo = await grabber.loadLogo(channel, date)
         } else {
           channel.logo = getLogoForChannel(channel)
@@ -203,7 +241,7 @@ async function main() {
       const channelPrograms = await grabber.grab(
         channel,
         date,
-        siteConfig,
+        config,
         (context: epgGrabber.Types.GrabCallbackContext, error: Error | null) => {
           logger.info(
             `  [${i}/${total}] ${context.channel.site} (${context.channel.lang}) - ${
@@ -235,23 +273,18 @@ async function main() {
 
   const pathTemplate = new Template(options.output)
 
-  const channelsGroupedByKey = channels
-    .sortBy([(channel: Channel) => channel.index, (channel: Channel) => channel.xmltv_id])
-    .uniqBy((channel: Channel) => `${channel.xmltv_id}:${channel.site}:${channel.lang}`)
-    .groupBy((channel: Channel) => {
-      return pathTemplate.format({ lang: channel.lang || 'en', site: channel.site || '' })
-    })
+  const channelsGroupedByKey = channels.groupBy((channel: Channel) => {
+    return pathTemplate.format({ lang: channel.lang || 'en', site: channel.site || '' })
+  })
 
-  const programsGroupedByKey = programs
-    .sortBy([(program: Program) => program.channel, (program: Program) => program.start])
-    .groupBy((program: Program) => {
-      const lang =
-        program.titles && program.titles.length && program.titles[0].lang
-          ? program.titles[0].lang
-          : 'en'
+  const programsGroupedByKey = programs.groupBy((program: Program) => {
+    const lang =
+      program.titles && program.titles.length && program.titles[0].lang
+        ? program.titles[0].lang
+        : 'en'
 
-      return pathTemplate.format({ lang, site: program.site || '' })
-    })
+    return pathTemplate.format({ lang, site: program.site || '' })
+  })
 
   for (const groupKey of channelsGroupedByKey.keys()) {
     const groupChannels = new Collection(channelsGroupedByKey.get(groupKey))
