@@ -12,6 +12,8 @@ import { data, loadData } from '../../api'
 import dayjs, { Dayjs } from 'dayjs'
 import path from 'path'
 
+const numArg = (value: string) => parseInt(value)
+
 program
   .addOption(new Option('-s, --site <name>', 'Name of the site to parse'))
   .addOption(
@@ -25,12 +27,12 @@ program
   .addOption(
     new Option('-t, --timeout <milliseconds>', 'Override the default timeout for each request')
       .env('TIMEOUT')
-      .argParser(parseInt)
+      .argParser(numArg)
   )
   .addOption(
     new Option('-d, --delay <milliseconds>', 'Override the default delay between request')
       .env('DELAY')
-      .argParser(parseInt)
+      .argParser(numArg)
   )
   .addOption(new Option('-x, --proxy <url>', 'Use the specified proxy').env('PROXY'))
   .addOption(
@@ -38,13 +40,13 @@ program
       '--days <days>',
       'Override the number of days for which the program will be loaded (defaults to the value from the site config)'
     )
-      .argParser(parseInt)
+      .argParser(numArg)
       .env('DAYS')
   )
   .addOption(
     new Option('--maxConnections <number>', 'Limit on the number of concurrent requests')
       .default(1)
-      .argParser(parseInt)
+      .argParser(numArg)
       .env('MAX_CONNECTIONS')
   )
   .addOption(
