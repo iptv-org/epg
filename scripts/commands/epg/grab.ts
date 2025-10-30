@@ -1,7 +1,7 @@
 import { Logger, Timer, Collection, Template } from '@freearhey/core'
 import epgGrabber, { EPGGrabber, EPGGrabberMock } from 'epg-grabber'
+import { loadJs, parseProxy, Queue, parseNumber } from '../../core'
 import { CurlBody } from 'curl-generator/dist/bodies/body'
-import { loadJs, parseProxy, Queue } from '../../core'
 import { Channel, Guide, Program } from '../../models'
 import { SocksProxyAgent } from 'socks-proxy-agent'
 import defaultConfig from '../../default.config'
@@ -29,12 +29,12 @@ program
   .addOption(
     new Option('-t, --timeout <milliseconds>', 'Override the default timeout for each request')
       .env('TIMEOUT')
-      .argParser(parseInt)
+      .argParser(parseNumber)
   )
   .addOption(
     new Option('-d, --delay <milliseconds>', 'Override the default delay between request')
       .env('DELAY')
-      .argParser(parseInt)
+      .argParser(parseNumber)
   )
   .addOption(new Option('-x, --proxy <url>', 'Use the specified proxy').env('PROXY'))
   .addOption(
@@ -42,13 +42,13 @@ program
       '--days <days>',
       'Override the number of days for which the program will be loaded (defaults to the value from the site config)'
     )
-      .argParser(parseInt)
+      .argParser(parseNumber)
       .env('DAYS')
   )
   .addOption(
     new Option('--maxConnections <number>', 'Limit on the number of concurrent requests')
       .default(1)
-      .argParser(parseInt)
+      .argParser(parseNumber)
       .env('MAX_CONNECTIONS')
   )
   .addOption(
