@@ -104,3 +104,7 @@ export async function loadIssues(props?: { labels: string[] | string }) {
 
   return new Collection(issues).map(data => new Issue(data))
 }
+
+export function parseNumber(value: string): number {
+  return parseInt(value)
+}
