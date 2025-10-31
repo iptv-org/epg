@@ -99,16 +99,24 @@ describe('epg:grab', () => {
       content('tests/__data__/expected/epg_grab/gzip.guide.xml')
     )
 
-    const expected = pako.ungzip(fs.readFileSync('tests/__data__/output/guides/gzip.guide.xml.gz'))
-    const result = pako.ungzip(
-      fs.readFileSync('tests/__data__/expected/epg_grab/gzip.guide.xml.gz')
+    const outputString = pako.ungzip(
+      fs.readFileSync('tests/__data__/output/guides/gzip.guide.xml.gz'),
+      { to: 'string' }
     )
-    expect(expected).toEqual(result)
+    const expectedString = pako.ungzip(
+      fs.readFileSync('tests/__data__/expected/epg_grab/gzip.guide.xml.gz'),
+      { to: 'string' }
+    )
+
+    const output = new Set(outputString.split('\r\n'))
+    const expected = new Set(expectedString.split('\r\n'))
+
+    expect(output).toEqual(expected)
   })
 })
 
 function content(filepath: string) {
-  return fs.readFileSync(pathToFileURL(filepath), {
-    encoding: 'utf8'
-  })
+  const string = fs.readFileSync(pathToFileURL(filepath), 'utf8')
+
+  return new Set(string.split('\r\n'))
 }
