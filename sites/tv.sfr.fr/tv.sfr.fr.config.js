@@ -24,6 +24,7 @@ module.exports = {
         subTitle: item.subTitle || null,
         category: item.genre,
         description: item.longSynopsis,
+        icon: getIconURL(item.images),
         images: item.images.map(img => img.url),
         season: item.seasonNumber || null,
         episode: item.episodeNumber || null
@@ -62,4 +63,13 @@ function parseItems(content, channel) {
   } catch {
     return []
   }
+}
+
+function getIconURL(images) {
+  let icon = images.find(icon => icon.type === 'landscape' && icon.withTitle === true ) ||
+             images.find(icon => icon.type === 'landscape' ) ||
+             images[0]
+  
+  if (icon)
+    return icon.url
 }
