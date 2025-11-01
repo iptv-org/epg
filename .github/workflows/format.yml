@@ -48,11 +48,11 @@ jobs:
           git config user.name "iptv-bot[bot]"
           git config user.email "84861620+iptv-bot[bot]@users.noreply.github.com"
       - name: Commit changed *.channels.xml files 
-        if: steps.files_after.outputs.channels_any_changed == 'true'
+        if: steps.files.outputs.channels_any_changed == 'true'
         run: |
           git add streams
           git status
           git commit -m "[Bot] Format *.channels.xml files" -m "Committed by [iptv-bot](https://github.com/apps/iptv-bot) via [format](https://github.com/iptv-org/epg/actions/runs/${{ github.run_id }}) workflow." --no-verify
       - name: Push all changes to the repository
-        if: ${{ !env.ACT && github.ref == 'refs/heads/master' && steps.files_after.outputs.channels_any_changed == 'true' }}
+        if: ${{ !env.ACT && github.ref == 'refs/heads/master' && steps.files.outputs.channels_any_changed == 'true' }}
         run: git push
