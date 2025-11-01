@@ -24,7 +24,7 @@ program
       'Path to *.channels.xml file (required if the "--site" attribute is not specified)'
     )
   )
-  .addOption(new Option('-o, --output <path>', 'Path to output file').default('guide.xml'))
+  .addOption(new Option('-o, --output <path>', 'Path to output file'))
   .addOption(new Option('-l, --lang <codes>', 'Filter channels by languages (ISO 639-1 codes)'))
   .addOption(
     new Option('-t, --timeout <milliseconds>', 'Override the default timeout for each request')
@@ -47,27 +47,22 @@ program
   )
   .addOption(
     new Option('--maxConnections <number>', 'Limit on the number of concurrent requests')
-      .default(1)
       .argParser(parseNumber)
       .env('MAX_CONNECTIONS')
   )
-  .addOption(
-    new Option('--gzip', 'Create a compressed version of the guide as well')
-      .default(false)
-      .env('GZIP')
-  )
-  .addOption(new Option('--curl', 'Display each request as CURL').default(false).env('CURL'))
-  .addOption(new Option('--debug', 'Enable debug mode').default(false).env('DEBUG'))
+  .addOption(new Option('--gzip', 'Create a compressed version of the guide as well').env('GZIP'))
+  .addOption(new Option('--curl', 'Display each request as CURL').env('CURL'))
+  .addOption(new Option('--debug', 'Enable debug mode').env('DEBUG'))
   .parse()
 
 interface GrabOptions {
   site?: string
   channels?: string
-  output: string
-  gzip: boolean
-  curl: boolean
-  debug: boolean
-  maxConnections: number
+  output?: string
+  gzip?: boolean
+  curl?: boolean
+  debug?: boolean
+  maxConnections?: number
   timeout?: number
   delay?: number
   lang?: string
@@ -85,10 +80,10 @@ async function main() {
   const logger = new Logger({ level: options.debug ? LOG_LEVELS['debug'] : LOG_LEVELS['info'] })
 
   logger.info('starting...')
-  let config: epgGrabber.Types.SiteConfig = defaultConfig
+  let globalConfig: epgGrabber.Types.SiteConfig = {}
 
   if (typeof options.timeout === 'number')
-    config = merge(config, { request: { timeout: options.timeout } })
+    globalConfig = merge(globalConfig, { request: { timeout: options.timeout } })
   if (options.proxy !== undefined) {
     const proxy = parseProxy(options.proxy)
     if (
@@ -96,31 +91,36 @@ async function main() {
       ['socks', 'socks5', 'socks5h', 'socks4', 'socks4a'].includes(String(proxy.protocol))
     ) {
       const socksProxyAgent = new SocksProxyAgent(options.proxy)
-      config = merge(config, {
+      globalConfig = merge(globalConfig, {
         request: { httpAgent: socksProxyAgent, httpsAgent: socksProxyAgent }
       })
     } else {
-      config = merge(config, { request: { proxy } })
+      globalConfig = merge(globalConfig, { request: { proxy } })
     }
   }
 
-  if (typeof options.output === 'string') config.output = options.output
-  if (typeof options.days === 'number') config.days = options.days
-  if (typeof options.delay === 'number') config.delay = options.delay
-  if (typeof options.maxConnections === 'number') config.maxConnections = options.maxConnections
-  if (typeof options.curl === 'boolean') config.curl = options.curl
-  if (typeof options.gzip === 'boolean') config.gzip = options.gzip
-
-  const grabber =
-    process.env.NODE_ENV === 'test' ? new EPGGrabberMock(config) : new EPGGrabber(config)
-
-  const globalConfig = grabber.globalConfig
+  if (typeof options.output === 'string') globalConfig.output = options.output
+  if (typeof options.days === 'number') globalConfig.days = options.days
+  if (typeof options.delay === 'number') globalConfig.delay = options.delay
+  if (typeof options.maxConnections === 'number')
+    globalConfig.maxConnections = options.maxConnections
+  if (typeof options.curl === 'boolean') globalConfig.curl = options.curl
+  if (typeof options.gzip === 'boolean') globalConfig.gzip = options.gzip
+  if (typeof options.debug === 'boolean') globalConfig.debug = options.debug
 
   logger.debug(`config: ${JSON.stringify(globalConfig, null, 2)}`)
 
+  const grabber =
+    process.env.NODE_ENV === 'test'
+      ? new EPGGrabberMock(globalConfig)
+      : new EPGGrabber(globalConfig)
+
   grabber.client.instance.interceptors.request.use(
     request => {
-      if (globalConfig.curl) {
+      logger.debug(`request: ${JSON.stringify(request, null, 2)}`)
+
+      const curl = globalConfig.curl || defaultConfig.curl
+      if (curl) {
         type AllowedMethods =
           | 'GET'
           | 'get'
@@ -194,11 +194,12 @@ async function main() {
     channel.index = index++
     if (!channel.site || !channel.site_id || !channel.name) continue
 
-    const config = await loadJs(channel.getConfigPath())
-    const days: number = config.days || globalConfig.days
+    let config = await loadJs(channel.getConfigPath())
+    config = merge(defaultConfig, config)
 
     if (!channel.xmltv_id) channel.xmltv_id = channel.site_id
 
+    const days = globalConfig.days || config.days
     const currDate = dayjs.utc(process.env.CURR_DATE || new Date().toISOString())
     const dates = Array.from({ length: days }, (_, day) => currDate.add(day, 'd'))
 
@@ -214,7 +215,9 @@ async function main() {
     })
   }
 
-  const taskQueue = new TaskQueue(Promise as PromisyClass, options.maxConnections)
+  const maxConnections = globalConfig.maxConnections || defaultConfig.maxConnections
+
+  const taskQueue = new TaskQueue(Promise as PromisyClass, maxConnections)
 
   const queueItems = queue.getItems()
 
@@ -271,11 +274,15 @@ async function main() {
 
   await Promise.all(requests.all())
 
-  const pathTemplate = new Template(options.output)
+  const output = globalConfig.output || defaultConfig.output
 
-  const channelsGroupedByKey = channels.groupBy((channel: Channel) => {
-    return pathTemplate.format({ lang: channel.lang || 'en', site: channel.site || '' })
-  })
+  const pathTemplate = new Template(output)
+
+  const channelsGroupedByKey = channels
+    .uniqBy((channel: Channel) => `${channel.xmltv_id}:${channel.site}:${channel.lang}`)
+    .groupBy((channel: Channel) => {
+      return pathTemplate.format({ lang: channel.lang || 'en', site: channel.site || '' })
+    })
 
   const programsGroupedByKey = programs.groupBy((program: Program) => {
     const lang =
@@ -286,12 +293,14 @@ async function main() {
     return pathTemplate.format({ lang, site: program.site || '' })
   })
 
+  const gzip = globalConfig.gzip || defaultConfig.gzip
+
   for (const groupKey of channelsGroupedByKey.keys()) {
     const groupChannels = new Collection(channelsGroupedByKey.get(groupKey))
     const groupPrograms = new Collection(programsGroupedByKey.get(groupKey))
     const guide = new Guide({
       filepath: groupKey,
-      gzip: options.gzip,
+      gzip,
       channels: groupChannels,
       programs: groupPrograms
     })
