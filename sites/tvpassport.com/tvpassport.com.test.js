@@ -1,4 +1,4 @@
-const { parser, url, request } = require('./tvpassport.com.config.js')
+const { parser, url } = require('./tvpassport.com.config.js')
 const fs = require('fs')
 const path = require('path')
 const dayjs = require('dayjs')
@@ -17,12 +17,6 @@ it('can generate valid url', () => {
   expect(url({ channel, date })).toBe(
     'https://www.tvpassport.com/tv-listings/stations/youtoo-america-network/5463/2022-10-04'
   )
-})
-
-it('can generate valid request headers', () => {
-  expect(request.headers).toMatchObject({
-    Cookie: 'cisession=e49ff13191d6875887193cae9e324b44ef85768d;'
-  })
 })
 
 it('can parse response', () => {

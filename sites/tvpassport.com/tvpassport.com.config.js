@@ -19,10 +19,12 @@ module.exports = {
       'YYYY-MM-DD'
     )}`
   },
-  request: {
-    timeout: 30000,
-    headers: {
-      Cookie: 'cisession=e49ff13191d6875887193cae9e324b44ef85768d;'
+  async request() {
+    return {
+      timeout: 30000,
+      headers: {
+        Cookie: await getCookie()
+      }
     }
   },
   parser: function ({ content }) {
@@ -104,6 +106,14 @@ module.exports = {
 
     return channels
   }
+}
+
+async function getCookie() {
+  const res = await axios.get('https://www.tvpassport.com/tv-listings')
+  const setCookie = res.headers['set-cookie']
+  if (!setCookie || setCookie.length === 0) return ''
+  const cookies = setCookie.map(cookie => cookie.split(';')[0])
+  return cookies.join('; ')
 }
 
 function parseDescription($item) {
