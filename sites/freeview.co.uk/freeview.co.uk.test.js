@@ -4,8 +4,10 @@ const path = require('path')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
+const axios = require('axios')
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
+jest.mock('axios')
 
 const date = dayjs.utc('2025-01-16', 'YYYY-MM-DD').startOf('d')
 const channel = {
@@ -19,9 +21,17 @@ it('can generate valid url', () => {
   )
 })
 
-it('can parse response', () => {
-  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'))
-  let results = parser({ content, channel })
+it('can parse response', async () => {
+  axios.get.mockImplementation(requestUrl => {
+    if (requestUrl.includes('https://www.freeview.co.uk/api/program?pid=')) {
+      return Promise.resolve({data: {data: {programs: [{}]}}})
+    } else {
+      return Promise.resolve({data: {}})
+    }
+  })
+
+  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'), 'utf8')
+  let results = await parser({ content, channel })
   results = results.map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
@@ -45,8 +55,8 @@ it('can parse response', () => {
   })
 })
 
-it('can handle empty guide', () => {
-  const results = parser({
+it('can handle empty guide', async () => {
+  const results = await parser({
     content: '[]',
     channel
   })
