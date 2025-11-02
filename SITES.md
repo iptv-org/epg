@@ -208,7 +208,7 @@
     <tr><td><a href="sites/tvmi.mt">tvmi.mt</a></td><td align="right">3</td><td align="right">3</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tvmusor.hu">tvmusor.hu</a></td><td align="right">99</td><td align="right">67</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tvmustra.hu">tvmustra.hu</a></td><td align="right">188</td><td align="right">0</td><td align="center">🟢</td><td>https://github.com/iptv-org/epg/issues/2903</td></tr>
-    <tr><td><a href="sites/tvpassport.com">tvpassport.com</a></td><td align="right">19287</td><td align="right">2509</td><td align="center">🟢</td><td>https://github.com/iptv-org/epg/issues/2883</td></tr>
+    <tr><td><a href="sites/tvpassport.com">tvpassport.com</a></td><td align="right">19287</td><td align="right">2509</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tvplus.com.tr">tvplus.com.tr</a></td><td align="right">150</td><td align="right">144</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tvprofil.com">tvprofil.com</a></td><td align="right">9091</td><td align="right">408</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tvtv.us">tvtv.us</a></td><td align="right">2299</td><td align="right">2255</td><td align="center">🟢</td><td></td></tr>
@@ -224,7 +224,7 @@
     <tr><td><a href="sites/watch.sportsnet.ca">watch.sportsnet.ca</a></td><td align="right">8</td><td align="right">8</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/watchyour.tv">watchyour.tv</a></td><td align="right">40</td><td align="right">24</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/wavve.com">wavve.com</a></td><td align="right">77</td><td align="right">76</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/web.magentatv.de">web.magentatv.de</a></td><td align="right">348</td><td align="right">247</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/web.magentatv.de">web.magentatv.de</a></td><td align="right">348</td><td align="right">247</td><td align="center">🟢</td><td>https://github.com/iptv-org/epg/issues/2917</td></tr>
     <tr><td><a href="sites/webtv.delta.nl">webtv.delta.nl</a></td><td align="right">247</td><td align="right">218</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/winplay.co">winplay.co</a></td><td align="right">2</td><td align="right">2</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/worldfishingnetwork.com">worldfishingnetwork.com</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
@@ -234,7 +234,7 @@
     <tr><td><a href="sites/yes.co.il">yes.co.il</a></td><td align="right">174</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/zap.co.ao">zap.co.ao</a></td><td align="right">114</td><td align="right">64</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/zap2it.com">zap2it.com</a></td><td align="right">595</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/ziggogo.tv">ziggogo.tv</a></td><td align="right">152</td><td align="right">130</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/ziggogo.tv">ziggogo.tv</a></td><td align="right">156</td><td align="right">150</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/znbc.co.zm">znbc.co.zm</a></td><td align="right">4</td><td align="right">4</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/zuragt.mn">zuragt.mn</a></td><td align="right">34</td><td align="right">27</td><td align="center">🟢</td><td></td></tr>
   </tbody>
