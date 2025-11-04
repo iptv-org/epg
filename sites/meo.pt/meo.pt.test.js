@@ -7,6 +7,10 @@ const customParseFormat = require('dayjs/plugin/customParseFormat')
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
+const axios = require('axios')
+
+jest.mock('axios')
+
 const date = dayjs.utc('2022-12-02', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: 'RTPM',
@@ -39,9 +43,13 @@ it('can generate valid request method', () => {
   })
 })
 
-it('can parse response', () => {
+it('can parse response', async () => {
   const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'))
-  let results = parser({ content }).map(p => {
+
+  axios.post.mockResolvedValue({ data: {} })
+
+  let results = await parser({ content })
+  results = results.map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
     return p
@@ -54,7 +62,7 @@ it('can parse response', () => {
   })
 })
 
-it('can handle empty guide', () => {
-  const result = parser({ content: '', channel, date })
+it('can handle empty guide', async () => {
+  const result = await parser({ content: '', channel, date })
   expect(result).toMatchObject([])
 })
