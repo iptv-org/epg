@@ -1,6 +1,6 @@
 import { Logger, Timer, Collection, Template } from '@freearhey/core'
 import epgGrabber, { EPGGrabber, EPGGrabberMock } from 'epg-grabber'
-import { loadJs, parseProxy, Queue, parseNumber } from '../../core'
+import { loadJs, parseProxy, parseNumber } from '../../core'
 import { CurlBody } from 'curl-generator/dist/bodies/body'
 import { Channel, Guide, Program } from '../../models'
 import { SocksProxyAgent } from 'socks-proxy-agent'
@@ -187,9 +187,9 @@ async function main() {
   await loadData()
 
   logger.info('creating queue...')
-  let index = 0
-  const queue = new Queue()
+  const queue = new Collection<QueueItem>()
 
+  let index = 0
   for (const channel of channelsFromXML.all()) {
     channel.index = index++
     if (!channel.site || !channel.site_id || !channel.name) continue
@@ -204,12 +204,10 @@ async function main() {
     const dates = Array.from({ length: days }, (_, day) => currDate.add(day, 'd'))
 
     dates.forEach((date: Dayjs) => {
-      const key = `${channel.site}:${channel.lang}:${channel.xmltv_id}:${date.toJSON()}`
-      if (queue.has(key)) return
-      queue.add(key, {
+      queue.add({
         channel,
         date,
-        config,
+        config: { ...config },
         error: null
       })
     })
@@ -219,15 +217,13 @@ async function main() {
 
   const taskQueue = new TaskQueue(Promise as PromisyClass, maxConnections)
 
-  const queueItems = queue.getItems()
-
   const channels = new Collection<Channel>()
   const programs = new Collection<Program>()
 
   let i = 1
-  const total = queueItems.count()
+  const total = queue.count()
 
-  const requests = queueItems.map(
+  const requests = queue.map(
     taskQueue.wrap(async (queueItem: QueueItem) => {
       const { channel, config, date } = queueItem
 
