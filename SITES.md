@@ -224,7 +224,7 @@
     <tr><td><a href="sites/watch.sportsnet.ca">watch.sportsnet.ca</a></td><td align="right">8</td><td align="right">8</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/watchyour.tv">watchyour.tv</a></td><td align="right">40</td><td align="right">24</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/wavve.com">wavve.com</a></td><td align="right">77</td><td align="right">76</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/web.magentatv.de">web.magentatv.de</a></td><td align="right">348</td><td align="right">247</td><td align="center">🟢</td><td>https://github.com/iptv-org/epg/issues/2917</td></tr>
+    <tr><td><a href="sites/web.magentatv.de">web.magentatv.de</a></td><td align="right">348</td><td align="right">247</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/webtv.delta.nl">webtv.delta.nl</a></td><td align="right">247</td><td align="right">218</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/winplay.co">winplay.co</a></td><td align="right">2</td><td align="right">2</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/worldfishingnetwork.com">worldfishingnetwork.com</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
