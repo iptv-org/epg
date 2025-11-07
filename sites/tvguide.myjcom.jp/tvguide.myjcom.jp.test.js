@@ -17,7 +17,7 @@ const content = fs.readFileSync(path.resolve(__dirname, './__data__/content.json
 
 it('can generate valid url', () => {
   const result = url({ date, channel })
-  expect(result).toBe('https://tvguide.myjcom.jp/api/getEpgInfo/?channels=120_200_4_20220114')
+  expect(result).toBe('https://tvguide.myjcom.jp/api/getEpgInfo/?channels=120_200_4_20220114&rectime=&rec4k=')
 })
 
 it('can parse response', () => {
