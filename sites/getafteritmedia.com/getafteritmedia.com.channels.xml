@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="getafteritmedia.com" lang="en" xmltv_id="REVN.us@Central" site_id="1722195092">REV'N Central</channel>
-  <channel site="getafteritmedia.com" lang="en" xmltv_id="REVN.us@Eastern" site_id="380697915">REV'N Eastern</channel>
-  <channel site="getafteritmedia.com" lang="en" xmltv_id="REVN.us@Mountain" site_id="1014453176">REV'N Mountain</channel>
-  <channel site="getafteritmedia.com" lang="en" xmltv_id="REVN.us@Pacific" site_id="589261086">REV'N Pacific</channel>
-  <channel site="getafteritmedia.com" lang="en" xmltv_id="REVN.us@Web" site_id="494637005">REV'N Web Feed</channel>
+  <channel site="getafteritmedia.com" site_id="380697915" lang="en" xmltv_id="REVN.us@Eastern">REV&apos;N Eastern</channel>
+  <channel site="getafteritmedia.com" site_id="494637005" lang="en" xmltv_id="REVN.us@Web">REV&apos;N Web Feed</channel>
+  <channel site="getafteritmedia.com" site_id="589261086" lang="en" xmltv_id="REVN.us@Pacific">REV&apos;N Pacific</channel>
+  <channel site="getafteritmedia.com" site_id="1014453176" lang="en" xmltv_id="REVN.us@Mountain">REV&apos;N Mountain</channel>
+  <channel site="getafteritmedia.com" site_id="1722195092" lang="en" xmltv_id="REVN.us@Central">REV&apos;N Central</channel>
 </channels>

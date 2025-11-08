@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="raiplay.it" lang="it" xmltv_id="" site_id="raiplay">RAIPLAY</channel>
-  <channel site="raiplay.it" lang="it" xmltv_id="" site_id="raiplay-2">RAIPLAY 2</channel>
-  <channel site="raiplay.it" lang="it" xmltv_id="" site_id="raiplay-3">RAIPLAY 3</channel>
-  <channel site="raiplay.it" lang="it" xmltv_id="" site_id="rai-radio-2">RAI RADIO 2</channel>
-  <channel site="raiplay.it" lang="it" xmltv_id="Rai1.it" site_id="rai-1">RAI 1</channel>
-  <channel site="raiplay.it" lang="it" xmltv_id="Rai2.it" site_id="rai-2">RAI 2</channel>
-  <channel site="raiplay.it" lang="it" xmltv_id="Rai3.it" site_id="rai-3">RAI 3</channel>
-  <channel site="raiplay.it" lang="it" xmltv_id="Rai4.it" site_id="rai-4">RAI 4</channel>
-  <channel site="raiplay.it" lang="it" xmltv_id="Rai5.it" site_id="rai-5">RAI 5</channel>
-  <channel site="raiplay.it" lang="it" xmltv_id="RaiGulp.it" site_id="rai-gulp">RAI GULP</channel>
-  <channel site="raiplay.it" lang="it" xmltv_id="RaiMovie.it" site_id="rai-movie">RAI MOVIE</channel>
-  <channel site="raiplay.it" lang="it" xmltv_id="RaiNews24.it" site_id="rai-news-24">RAI NEWS 24</channel>
-  <channel site="raiplay.it" lang="it" xmltv_id="RaiPremium.it" site_id="rai-premium">RAI PREMIUM</channel>
-  <channel site="raiplay.it" lang="it" xmltv_id="RaiScuola.it" site_id="rai-scuola">RAI SCUOLA</channel>
-  <channel site="raiplay.it" lang="it" xmltv_id="RaiSport.it" site_id="rai-sport">RAI SPORT</channel>
-  <channel site="raiplay.it" lang="it" xmltv_id="RaiStoria.it" site_id="rai-storia">RAI STORIA</channel>
-  <channel site="raiplay.it" lang="it" xmltv_id="RaiYoyo.it" site_id="rai-yoyo">RAI YOYO</channel>
+  <channel site="raiplay.it" site_id="rai-1" lang="it" xmltv_id="Rai1.it@SD">RAI 1</channel>
+  <channel site="raiplay.it" site_id="rai-2" lang="it" xmltv_id="Rai2.it@SD">RAI 2</channel>
+  <channel site="raiplay.it" site_id="rai-3" lang="it" xmltv_id="Rai3.it@HD">RAI 3</channel>
+  <channel site="raiplay.it" site_id="rai-4" lang="it" xmltv_id="Rai4.it@SD">RAI 4</channel>
+  <channel site="raiplay.it" site_id="rai-5" lang="it" xmltv_id="Rai5.it@SD">RAI 5</channel>
+  <channel site="raiplay.it" site_id="rai-gulp" lang="it" xmltv_id="RaiGulp.it@SD">RAI GULP</channel>
+  <channel site="raiplay.it" site_id="rai-movie" lang="it" xmltv_id="RaiMovie.it@SD">RAI MOVIE</channel>
+  <channel site="raiplay.it" site_id="rai-news-24" lang="it" xmltv_id="RaiNews24.it@SD">RAI NEWS 24</channel>
+  <channel site="raiplay.it" site_id="rai-premium" lang="it" xmltv_id="RaiPremium.it@SD">RAI PREMIUM</channel>
+  <channel site="raiplay.it" site_id="rai-radio-2" lang="it" xmltv_id="">RAI RADIO 2</channel>
+  <channel site="raiplay.it" site_id="rai-scuola" lang="it" xmltv_id="RaiScuola.it@SD">RAI SCUOLA</channel>
+  <channel site="raiplay.it" site_id="rai-sport" lang="it" xmltv_id="RaiSport.it@SD">RAI SPORT</channel>
+  <channel site="raiplay.it" site_id="rai-storia" lang="it" xmltv_id="RaiStoria.it@SD">RAI STORIA</channel>
+  <channel site="raiplay.it" site_id="rai-yoyo" lang="it" xmltv_id="RaiYoyo.it@SD">RAI YOYO</channel>
+  <channel site="raiplay.it" site_id="raiplay" lang="it" xmltv_id="">RAIPLAY</channel>
+  <channel site="raiplay.it" site_id="raiplay-2" lang="it" xmltv_id="">RAIPLAY 2</channel>
+  <channel site="raiplay.it" site_id="raiplay-3" lang="it" xmltv_id="">RAIPLAY 3</channel>
 </channels>

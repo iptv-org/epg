@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="tvcubana.icrt.cu" lang="es" xmltv_id="CanalCaribe.cu" site_id="caribe">Canal Caribe</channel>
-  <channel site="tvcubana.icrt.cu" lang="es" xmltv_id="CanalClave.cu" site_id="clave">Canal Clave</channel>
-  <channel site="tvcubana.icrt.cu" lang="es" xmltv_id="CanalEducativo.cu" site_id="edu">Canal Educativo</channel>
-  <channel site="tvcubana.icrt.cu" lang="es" xmltv_id="CanalEducativo2.cu" site_id="edu2">Canal Educativo 2</channel>
-  <channel site="tvcubana.icrt.cu" lang="es" xmltv_id="CanalHabana.cu" site_id="chabana">Canal Habana</channel>
-  <channel site="tvcubana.icrt.cu" lang="es" xmltv_id="Cubavision.cu" site_id="cv">Cubavisión</channel>
-  <channel site="tvcubana.icrt.cu" lang="es" xmltv_id="CubavisionInternacional.cu" site_id="cvi">Cubavisión Internacional</channel>
-  <channel site="tvcubana.icrt.cu" lang="es" xmltv_id="CubavisionPlus.cu" site_id="cvplus">Cubavisión Plus</channel>
-  <channel site="tvcubana.icrt.cu" lang="es" xmltv_id="Multivision.cu" site_id="mv">Multivisión</channel>
-  <channel site="tvcubana.icrt.cu" lang="es" xmltv_id="TeleRebelde.cu" site_id="tr">Tele Rebelde</channel>
+  <channel site="tvcubana.icrt.cu" site_id="caribe" lang="es" xmltv_id="CanalCaribe.cu@SD">Canal Caribe</channel>
+  <channel site="tvcubana.icrt.cu" site_id="chabana" lang="es" xmltv_id="CanalHabana.cu@SD">Canal Habana</channel>
+  <channel site="tvcubana.icrt.cu" site_id="clave" lang="es" xmltv_id="CanalClave.cu@SD">Canal Clave</channel>
+  <channel site="tvcubana.icrt.cu" site_id="cv" lang="es" xmltv_id="Cubavision.cu@SD">Cubavisión</channel>
+  <channel site="tvcubana.icrt.cu" site_id="cvi" lang="es" xmltv_id="CubavisionInternacional.cu@SD">Cubavisión Internacional</channel>
+  <channel site="tvcubana.icrt.cu" site_id="cvplus" lang="es" xmltv_id="CubavisionPlus.cu@SD">Cubavisión Plus</channel>
+  <channel site="tvcubana.icrt.cu" site_id="edu" lang="es" xmltv_id="CanalEducativo.cu@SD">Canal Educativo</channel>
+  <channel site="tvcubana.icrt.cu" site_id="edu2" lang="es" xmltv_id="CanalEducativo2.cu@SD">Canal Educativo 2</channel>
+  <channel site="tvcubana.icrt.cu" site_id="mv" lang="es" xmltv_id="Multivision.cu@SD">Multivisión</channel>
+  <channel site="tvcubana.icrt.cu" site_id="tr" lang="es" xmltv_id="TeleRebelde.cu@SD">Tele Rebelde</channel>
 </channels>

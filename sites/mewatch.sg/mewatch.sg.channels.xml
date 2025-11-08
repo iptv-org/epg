@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="mewatch.sg" lang="en" xmltv_id="" site_id="98201">SPL02</channel>
-  <channel site="mewatch.sg" lang="en" xmltv_id="AnimaxAsia.sg" site_id="242030">Animax</channel>
-  <channel site="mewatch.sg" lang="en" xmltv_id="Channel5.sg" site_id="97098">Channel 5</channel>
-  <channel site="mewatch.sg" lang="en" xmltv_id="Channel8.sg" site_id="97104">Channel 8</channel>
-  <channel site="mewatch.sg" lang="en" xmltv_id="ChannelU.sg" site_id="97129">Channel U</channel>
-  <channel site="mewatch.sg" lang="en" xmltv_id="CinemaWorld.my" site_id="382872">CinemaWorld</channel>
-  <channel site="mewatch.sg" lang="en" xmltv_id="CinemaxAsia.sg" site_id="97155">Cinemax</channel>
-  <channel site="mewatch.sg" lang="en" xmltv_id="CNA.sg" site_id="97072">CNA</channel>
-  <channel site="mewatch.sg" lang="en" xmltv_id="GlobalTrekker.sg" site_id="158961">Global Trekker</channel>
-  <channel site="mewatch.sg" lang="en" xmltv_id="HBOAsia.sg" site_id="97137">HBO</channel>
-  <channel site="mewatch.sg" lang="en" xmltv_id="HBOFamilyAsia.sg" site_id="97147">HBO Family</channel>
-  <channel site="mewatch.sg" lang="en" xmltv_id="HBOHitsAsia.sg" site_id="97140">HBO Hits</channel>
-  <channel site="mewatch.sg" lang="en" xmltv_id="HBOSignatureAsia.sg" site_id="97146">HBO Signature</channel>
-  <channel site="mewatch.sg" lang="en" xmltv_id="meWATCHLIVE1.sg" site_id="97073">LIVE 1</channel>
-  <channel site="mewatch.sg" lang="en" xmltv_id="meWATCHLIVE2.sg" site_id="97078">LIVE 2</channel>
-  <channel site="mewatch.sg" lang="en" xmltv_id="Now70s.uk" site_id="158964">NOW 70s</channel>
-  <channel site="mewatch.sg" lang="en" xmltv_id="Now80s.uk" site_id="158965">NOW 80s</channel>
-  <channel site="mewatch.sg" lang="en" xmltv_id="NOWRock.uk" site_id="158963">NOW Rock</channel>
-  <channel site="mewatch.sg" lang="en" xmltv_id="oktolidays.sg" site_id="186574">oktolidays</channel>
-  <channel site="mewatch.sg" lang="en" xmltv_id="ROCKAction.sg" site_id="227349">ROCK Action</channel>
-  <channel site="mewatch.sg" lang="en" xmltv_id="ROCKEntertainment.sg" site_id="227348">ROCK Entertainment</channel>
-  <channel site="mewatch.sg" lang="en" xmltv_id="SPLCH01.sg" site_id="98200">SPL01</channel>
-  <channel site="mewatch.sg" lang="en" xmltv_id="Suria.sg" site_id="97084">Suria</channel>
-  <channel site="mewatch.sg" lang="en" xmltv_id="TraceUrban.fr" site_id="158962">TRACE Urban</channel>
-  <channel site="mewatch.sg" lang="en" xmltv_id="Vasantham.sg" site_id="97096">Vasantham</channel>
+  <channel site="mewatch.sg" site_id="97072" lang="en" xmltv_id="CNA.sg@SD">CNA</channel>
+  <channel site="mewatch.sg" site_id="97073" lang="en" xmltv_id="meWATCHLIVE1.sg@SD">LIVE 1</channel>
+  <channel site="mewatch.sg" site_id="97078" lang="en" xmltv_id="meWATCHLIVE2.sg@SD">LIVE 2</channel>
+  <channel site="mewatch.sg" site_id="97084" lang="en" xmltv_id="Suria.sg@SD">Suria</channel>
+  <channel site="mewatch.sg" site_id="97096" lang="en" xmltv_id="Vasantham.sg@SD">Vasantham</channel>
+  <channel site="mewatch.sg" site_id="97098" lang="en" xmltv_id="Channel5.sg@SD">Channel 5</channel>
+  <channel site="mewatch.sg" site_id="97104" lang="en" xmltv_id="Channel8.sg@SD">Channel 8</channel>
+  <channel site="mewatch.sg" site_id="97129" lang="en" xmltv_id="ChannelU.sg@SD">Channel U</channel>
+  <channel site="mewatch.sg" site_id="97137" lang="en" xmltv_id="HBOAsia.sg@Vietnam">HBO</channel>
+  <channel site="mewatch.sg" site_id="97140" lang="en" xmltv_id="HBOHitsAsia.sg@SD">HBO Hits</channel>
+  <channel site="mewatch.sg" site_id="97146" lang="en" xmltv_id="HBOSignatureAsia.sg@SD">HBO Signature</channel>
+  <channel site="mewatch.sg" site_id="97147" lang="en" xmltv_id="HBOFamilyAsia.sg@SD">HBO Family</channel>
+  <channel site="mewatch.sg" site_id="97155" lang="en" xmltv_id="CinemaxAsia.sg@SD">Cinemax</channel>
+  <channel site="mewatch.sg" site_id="98200" lang="en" xmltv_id="SPLCH01.sg@SD">SPL01</channel>
+  <channel site="mewatch.sg" site_id="98201" lang="en" xmltv_id="">SPL02</channel>
+  <channel site="mewatch.sg" site_id="158961" lang="en" xmltv_id="GlobalTrekker.sg@SD">Global Trekker</channel>
+  <channel site="mewatch.sg" site_id="158962" lang="en" xmltv_id="TraceUrban.fr@SD">TRACE Urban</channel>
+  <channel site="mewatch.sg" site_id="158963" lang="en" xmltv_id="NOWRock.uk@SD">NOW Rock</channel>
+  <channel site="mewatch.sg" site_id="158964" lang="en" xmltv_id="Now70s.uk@SD">NOW 70s</channel>
+  <channel site="mewatch.sg" site_id="158965" lang="en" xmltv_id="Now80s.uk@SD">NOW 80s</channel>
+  <channel site="mewatch.sg" site_id="186574" lang="en" xmltv_id="oktolidays.sg@SD">oktolidays</channel>
+  <channel site="mewatch.sg" site_id="227348" lang="en" xmltv_id="ROCKEntertainment.sg@SD">ROCK Entertainment</channel>
+  <channel site="mewatch.sg" site_id="227349" lang="en" xmltv_id="ROCKAction.sg@SD">ROCK Action</channel>
+  <channel site="mewatch.sg" site_id="242030" lang="en" xmltv_id="AnimaxAsia.sg@SD">Animax</channel>
+  <channel site="mewatch.sg" site_id="382872" lang="en" xmltv_id="CinemaWorld.my@SD">CinemaWorld</channel>
 </channels>

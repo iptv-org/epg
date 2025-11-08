@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="i24news.tv" lang="ar" xmltv_id="i24NEWSArabic.il" site_id="ar">I24NEWS عربى</channel>
-  <channel site="i24news.tv" lang="en" xmltv_id="i24NEWSEnglishUSA.il" site_id="en">I24NEWS English (USA)</channel>
-  <channel site="i24news.tv" lang="fr" xmltv_id="i24NEWSFrench.il" site_id="fr">I24NEWS Français</channel>
-  <channel site="i24news.tv" lang="he" xmltv_id="" site_id="he">I24NEWS עברית</channel>
+  <channel site="i24news.tv" site_id="ar" lang="ar" xmltv_id="i24NEWSArabic.il@SD">I24NEWS عربى</channel>
+  <channel site="i24news.tv" site_id="en" lang="en" xmltv_id="i24NEWSEnglishUSA.il@SD">I24NEWS English (USA)</channel>
+  <channel site="i24news.tv" site_id="fr" lang="fr" xmltv_id="i24NEWSFrench.il@SD">I24NEWS Français</channel>
+  <channel site="i24news.tv" site_id="he" lang="he" xmltv_id="">I24NEWS עברית</channel>
 </channels>

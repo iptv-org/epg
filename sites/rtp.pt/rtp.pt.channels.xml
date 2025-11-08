@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="rtp.pt" lang="pt" xmltv_id="RTP1.pt" site_id="lis#1">RTP1</channel>
-  <channel site="rtp.pt" lang="pt" xmltv_id="RTP2.pt" site_id="lis#8">RTP2</channel>
-  <channel site="rtp.pt" lang="pt" xmltv_id="RTPNoticias.pt" site_id="lis#7">RTP Noticias</channel>
-  <channel site="rtp.pt" lang="pt" xmltv_id="RTPAcores.pt" site_id="lis#3">RTP Açores</channel>
-  <channel site="rtp.pt" lang="pt" xmltv_id="RTPAfrica.pt" site_id="lis#6">RTP África</channel>
-  <channel site="rtp.pt" lang="pt" xmltv_id="RTPiAmerica.pt" site_id="rja#5">RTP Internacional América</channel>
-  <channel site="rtp.pt" lang="pt" xmltv_id="RTPiAsia.pt" site_id="per#5">RTP Internacional Ásia</channel>
-  <channel site="rtp.pt" lang="pt" xmltv_id="RTPInternacional.pt" site_id="lis#5">RTP Internacional</channel>
-  <channel site="rtp.pt" lang="pt" xmltv_id="RTPMadeira.pt" site_id="lis#4">RTP Madeira</channel>
-  <channel site="rtp.pt" lang="pt" xmltv_id="RTPMemoria.pt" site_id="lis#9">RTP Memória</channel>
+  <channel site="rtp.pt" site_id="lis#1" lang="pt" xmltv_id="RTP1.pt@SD">RTP1</channel>
+  <channel site="rtp.pt" site_id="lis#3" lang="pt" xmltv_id="RTPAcores.pt@SD">RTP Açores</channel>
+  <channel site="rtp.pt" site_id="lis#4" lang="pt" xmltv_id="RTPMadeira.pt@SD">RTP Madeira</channel>
+  <channel site="rtp.pt" site_id="lis#5" lang="pt" xmltv_id="RTPInternacional.pt@SD">RTP Internacional</channel>
+  <channel site="rtp.pt" site_id="lis#6" lang="pt" xmltv_id="RTPAfrica.pt@SD">RTP África</channel>
+  <channel site="rtp.pt" site_id="lis#7" lang="pt" xmltv_id="RTPNoticias.pt@HD">RTP Noticias</channel>
+  <channel site="rtp.pt" site_id="lis#8" lang="pt" xmltv_id="RTP2.pt@SD">RTP2</channel>
+  <channel site="rtp.pt" site_id="lis#9" lang="pt" xmltv_id="RTPMemoria.pt@SD">RTP Memória</channel>
+  <channel site="rtp.pt" site_id="per#5" lang="pt" xmltv_id="RTPiAsia.pt@SD">RTP Internacional Ásia</channel>
+  <channel site="rtp.pt" site_id="rja#5" lang="pt" xmltv_id="RTPiAmerica.pt@SD">RTP Internacional América</channel>
 </channels>

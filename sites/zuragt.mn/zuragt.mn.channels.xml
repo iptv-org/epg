@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="zuragt.mn" lang="mn" xmltv_id="" site_id="mnb-ger-bl">MNB Гэр Бүл</channel>
-  <channel site="zuragt.mn" lang="mn" xmltv_id="MNBMongoliinMedee.mn" site_id="mongolyn-medee">Mонголын Мэдээ</channel>
-  <channel site="zuragt.mn" lang="mn" xmltv_id="ParliamentTV.mn" site_id="parlament-televiz">Парламент телевиз</channel>
-  <channel site="zuragt.mn" lang="mn" xmltv_id="" site_id="premier sports 1">Premier Sports 1</channel>
-  <channel site="zuragt.mn" lang="mn" xmltv_id="" site_id="premier sports 2">Premier Sports 2</channel>
-  <channel site="zuragt.mn" lang="mn" xmltv_id="" site_id="premier sports 3">Premier Sports 3</channel>
-  <channel site="zuragt.mn" lang="mn" xmltv_id="" site_id="premier sports 4">Premier sports 4</channel>
-  <channel site="zuragt.mn" lang="mn" xmltv_id="" site_id="premier sports 5">Premier sports 5</channel>
-  <channel site="zuragt.mn" lang="mn" xmltv_id="" site_id="tv7">TV7</channel>
-  <channel site="zuragt.mn" lang="mn" xmltv_id="AsianBox.mn" site_id="asianbox">AsianBox</channel>
-  <channel site="zuragt.mn" lang="mn" xmltv_id="BloombergTVMongolia.mn" site_id="Bloomberg_TV_Mongolia">Bloomberg TV MGL</channel>
-  <channel site="zuragt.mn" lang="mn" xmltv_id="C1.mn" site_id="c1">C1</channel>
-  <channel site="zuragt.mn" lang="mn" xmltv_id="CentralTV.mn" site_id="central_tv">Central TV</channel>
-  <channel site="zuragt.mn" lang="mn" xmltv_id="DreamTV.mn" site_id="dream">Dream</channel>
-  <channel site="zuragt.mn" lang="mn" xmltv_id="EcoTV.mn" site_id="eco_suvag">Eco Channel</channel>
-  <channel site="zuragt.mn" lang="mn" xmltv_id="EdutainmentTV.mn" site_id="bolovsrol">Боловсрол ТВ</channel>
-  <channel site="zuragt.mn" lang="mn" xmltv_id="ETV.mn" site_id="etv">ETV HD</channel>
-  <channel site="zuragt.mn" lang="mn" xmltv_id="MNB.mn" site_id="mnb">МҮОНТ</channel>
-  <channel site="zuragt.mn" lang="mn" xmltv_id="MNBSport.mn" site_id="mnb-sport">MNB Sport</channel>
-  <channel site="zuragt.mn" lang="mn" xmltv_id="MongolianNewsChannel.mn" site_id="mnc">MNC</channel>
-  <channel site="zuragt.mn" lang="mn" xmltv_id="MongolTV.mn" site_id="mongol_tv">Монгол ТВ</channel>
-  <channel site="zuragt.mn" lang="mn" xmltv_id="MovieBox.mn" site_id="moviebox">MovieBox</channel>
-  <channel site="zuragt.mn" lang="mn" xmltv_id="NTN.mn" site_id="ntn">NTN</channel>
-  <channel site="zuragt.mn" lang="mn" xmltv_id="NTV.mn" site_id="ntv">NTV</channel>
-  <channel site="zuragt.mn" lang="mn" xmltv_id="SBN.mn" site_id="sbn">SBN</channel>
-  <channel site="zuragt.mn" lang="mn" xmltv_id="StarTV.mn" site_id="star-tv">Star TV</channel>
-  <channel site="zuragt.mn" lang="mn" xmltv_id="SuldTV.mn" site_id="suld_tv_mongolia">Сүлд ТВ</channel>
-  <channel site="zuragt.mn" lang="mn" xmltv_id="TenGerTV.mn" site_id="tenger">TenGer</channel>
-  <channel site="zuragt.mn" lang="mn" xmltv_id="TMTV.mn" site_id="tm">TM</channel>
-  <channel site="zuragt.mn" lang="mn" xmltv_id="TV5.mn" site_id="tv5">TV5</channel>
-  <channel site="zuragt.mn" lang="mn" xmltv_id="TV8.mn" site_id="tv8">TV8</channel>
-  <channel site="zuragt.mn" lang="mn" xmltv_id="TV9.mn" site_id="tv9">TV9</channel>
-  <channel site="zuragt.mn" lang="mn" xmltv_id="TV25.mn" site_id="mn25">MN25</channel>
-  <channel site="zuragt.mn" lang="mn" xmltv_id="UBS.mn" site_id="ubs-1">UBS-1</channel>
+  <channel site="zuragt.mn" site_id="asianbox" lang="mn" xmltv_id="AsianBox.mn@SD">AsianBox</channel>
+  <channel site="zuragt.mn" site_id="Bloomberg_TV_Mongolia" lang="mn" xmltv_id="BloombergTVMongolia.mn@SD">Bloomberg TV MGL</channel>
+  <channel site="zuragt.mn" site_id="bolovsrol" lang="mn" xmltv_id="EdutainmentTV.mn@SD">Боловсрол ТВ</channel>
+  <channel site="zuragt.mn" site_id="c1" lang="mn" xmltv_id="C1.mn@SD">C1</channel>
+  <channel site="zuragt.mn" site_id="central_tv" lang="mn" xmltv_id="CentralTV.mn@SD">Central TV</channel>
+  <channel site="zuragt.mn" site_id="dream" lang="mn" xmltv_id="DreamTV.mn@SD">Dream</channel>
+  <channel site="zuragt.mn" site_id="eco_suvag" lang="mn" xmltv_id="EcoTV.mn@SD">Eco Channel</channel>
+  <channel site="zuragt.mn" site_id="etv" lang="mn" xmltv_id="ETV.mn@SD">ETV HD</channel>
+  <channel site="zuragt.mn" site_id="mn25" lang="mn" xmltv_id="TV25.mn@SD">MN25</channel>
+  <channel site="zuragt.mn" site_id="mnb" lang="mn" xmltv_id="MNB.mn@SD">МҮОНТ</channel>
+  <channel site="zuragt.mn" site_id="mnb-ger-bl" lang="mn" xmltv_id="">MNB Гэр Бүл</channel>
+  <channel site="zuragt.mn" site_id="mnb-sport" lang="mn" xmltv_id="MNBSport.mn@SD">MNB Sport</channel>
+  <channel site="zuragt.mn" site_id="mnc" lang="mn" xmltv_id="MongolianNewsChannel.mn@SD">MNC</channel>
+  <channel site="zuragt.mn" site_id="mongol_tv" lang="mn" xmltv_id="MongolTV.mn@SD">Монгол ТВ</channel>
+  <channel site="zuragt.mn" site_id="mongolyn-medee" lang="mn" xmltv_id="MNBMongoliinMedee.mn@SD">Mонголын Мэдээ</channel>
+  <channel site="zuragt.mn" site_id="moviebox" lang="mn" xmltv_id="MovieBox.mn@SD">MovieBox</channel>
+  <channel site="zuragt.mn" site_id="ntn" lang="mn" xmltv_id="NTN.mn@SD">NTN</channel>
+  <channel site="zuragt.mn" site_id="ntv" lang="mn" xmltv_id="NTV.mn@SD">NTV</channel>
+  <channel site="zuragt.mn" site_id="parlament-televiz" lang="mn" xmltv_id="ParliamentTV.mn@SD">Парламент телевиз</channel>
+  <channel site="zuragt.mn" site_id="premier sports 1" lang="mn" xmltv_id="">Premier Sports 1</channel>
+  <channel site="zuragt.mn" site_id="premier sports 2" lang="mn" xmltv_id="">Premier Sports 2</channel>
+  <channel site="zuragt.mn" site_id="premier sports 3" lang="mn" xmltv_id="">Premier Sports 3</channel>
+  <channel site="zuragt.mn" site_id="premier sports 4" lang="mn" xmltv_id="">Premier sports 4</channel>
+  <channel site="zuragt.mn" site_id="premier sports 5" lang="mn" xmltv_id="">Premier sports 5</channel>
+  <channel site="zuragt.mn" site_id="sbn" lang="mn" xmltv_id="SBN.mn@SD">SBN</channel>
+  <channel site="zuragt.mn" site_id="star-tv" lang="mn" xmltv_id="StarTV.mn@SD">Star TV</channel>
+  <channel site="zuragt.mn" site_id="suld_tv_mongolia" lang="mn" xmltv_id="SuldTV.mn@SD">Сүлд ТВ</channel>
+  <channel site="zuragt.mn" site_id="tenger" lang="mn" xmltv_id="TenGerTV.mn@SD">TenGer</channel>
+  <channel site="zuragt.mn" site_id="tm" lang="mn" xmltv_id="TMTV.mn@SD">TM</channel>
+  <channel site="zuragt.mn" site_id="tv5" lang="mn" xmltv_id="TV5.mn@SD">TV5</channel>
+  <channel site="zuragt.mn" site_id="tv7" lang="mn" xmltv_id="">TV7</channel>
+  <channel site="zuragt.mn" site_id="tv8" lang="mn" xmltv_id="TV8.mn@SD">TV8</channel>
+  <channel site="zuragt.mn" site_id="tv9" lang="mn" xmltv_id="TV9.mn@SD">TV9</channel>
+  <channel site="zuragt.mn" site_id="ubs-1" lang="mn" xmltv_id="UBS.mn@SD">UBS-1</channel>
 </channels>

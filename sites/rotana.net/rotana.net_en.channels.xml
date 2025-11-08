@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="rotana.net" lang="en" xmltv_id="" site_id="432">Rotana HD</channel>
-  <channel site="rotana.net" lang="en" xmltv_id="" site_id="433">Rotana Cinema France</channel>
-  <channel site="rotana.net" lang="en" xmltv_id="AlResalah.sa" site_id="446">Al Resalah</channel>
-  <channel site="rotana.net" lang="en" xmltv_id="LBC.sa" site_id="434">LBC</channel>
-  <channel site="rotana.net" lang="en" xmltv_id="MPlusHD.sa" site_id="445">M+ HD</channel>
-  <channel site="rotana.net" lang="en" xmltv_id="RotanaAflam.sa" site_id="440">Rotana Aflam</channel>
-  <channel site="rotana.net" lang="en" xmltv_id="RotanaAmerica.sa" site_id="442">Rotana USA</channel>
-  <channel site="rotana.net" lang="en" xmltv_id="RotanaCinemaEgypt.eg" site_id="439">Rotana Cinema Masr</channel>
-  <channel site="rotana.net" lang="en" xmltv_id="RotanaCinemaKSA.sa" site_id="431">Rotana Cinema KSA</channel>
-  <channel site="rotana.net" lang="en" xmltv_id="RotanaClassic.sa" site_id="438">Rotana Classic</channel>
-  <channel site="rotana.net" lang="en" xmltv_id="RotanaClip.sa" site_id="443">Rotana Clip</channel>
-  <channel site="rotana.net" lang="en" xmltv_id="RotanaComedy.sa" site_id="437">Rotana Comedy</channel>
-  <channel site="rotana.net" lang="en" xmltv_id="RotanaDrama.sa" site_id="436">Rotana Drama</channel>
-  <channel site="rotana.net" lang="en" xmltv_id="RotanaKhalijia.sa" site_id="435">Rotana Khalijea HD</channel>
-  <channel site="rotana.net" lang="en" xmltv_id="RotanaKids.sa" site_id="441">Rotana Kids</channel>
-  <channel site="rotana.net" lang="en" xmltv_id="RotanaMusic.sa" site_id="444">Rotana Music</channel>
+  <channel site="rotana.net" site_id="431" lang="en" xmltv_id="RotanaCinemaKSA.sa@SD">Rotana Cinema KSA</channel>
+  <channel site="rotana.net" site_id="432" lang="en" xmltv_id="">Rotana HD</channel>
+  <channel site="rotana.net" site_id="433" lang="en" xmltv_id="">Rotana Cinema France</channel>
+  <channel site="rotana.net" site_id="434" lang="en" xmltv_id="LBC.sa@SD">LBC</channel>
+  <channel site="rotana.net" site_id="435" lang="en" xmltv_id="RotanaKhalijia.sa@SD">Rotana Khalijea HD</channel>
+  <channel site="rotana.net" site_id="436" lang="en" xmltv_id="RotanaDrama.sa@SD">Rotana Drama</channel>
+  <channel site="rotana.net" site_id="437" lang="en" xmltv_id="RotanaComedy.sa@SD">Rotana Comedy</channel>
+  <channel site="rotana.net" site_id="438" lang="en" xmltv_id="RotanaClassic.sa@SD">Rotana Classic</channel>
+  <channel site="rotana.net" site_id="439" lang="en" xmltv_id="RotanaCinemaEgypt.eg@SD">Rotana Cinema Masr</channel>
+  <channel site="rotana.net" site_id="440" lang="en" xmltv_id="RotanaAflam.sa@SD">Rotana Aflam</channel>
+  <channel site="rotana.net" site_id="441" lang="en" xmltv_id="RotanaKids.sa@SD">Rotana Kids</channel>
+  <channel site="rotana.net" site_id="442" lang="en" xmltv_id="RotanaAmerica.sa@SD">Rotana USA</channel>
+  <channel site="rotana.net" site_id="443" lang="en" xmltv_id="RotanaClip.sa@SD">Rotana Clip</channel>
+  <channel site="rotana.net" site_id="444" lang="en" xmltv_id="RotanaMusic.sa@SD">Rotana Music</channel>
+  <channel site="rotana.net" site_id="445" lang="en" xmltv_id="">M+ HD</channel>
+  <channel site="rotana.net" site_id="446" lang="en" xmltv_id="AlResalah.sa@SD">Al Resalah</channel>
 </channels>

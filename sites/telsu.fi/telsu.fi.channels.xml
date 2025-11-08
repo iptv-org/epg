@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="telsu.fi" lang="fi" xmltv_id="" site_id="mtv_ava">AVA</channel>
-  <channel site="telsu.fi" lang="fi" xmltv_id="Eveo.fi" site_id="eveo">Eveo</channel>
-  <channel site="telsu.fi" lang="fi" xmltv_id="Frii.fi" site_id="frii">Frii</channel>
-  <channel site="telsu.fi" lang="fi" xmltv_id="Hero.fi" site_id="hero">Hero</channel>
-  <channel site="telsu.fi" lang="fi" xmltv_id="Jim.fi" site_id="jim">Jim</channel>
-  <channel site="telsu.fi" lang="fi" xmltv_id="Kutonen.fi" site_id="kutonen">Kutonen</channel>
-  <channel site="telsu.fi" lang="fi" xmltv_id="Liv.fi" site_id="liv">Liv</channel>
-  <channel site="telsu.fi" lang="fi" xmltv_id="MTV3.fi" site_id="mtv3">MTV3</channel>
-  <channel site="telsu.fi" lang="fi" xmltv_id="NationalGeographic.fi" site_id="nationalgeo">National Geographic Channel</channel>
-  <channel site="telsu.fi" lang="fi" xmltv_id="Nelonen.fi" site_id="nelonen">Nelonen</channel>
-  <channel site="telsu.fi" lang="fi" xmltv_id="STARChannel.fi" site_id="star">STAR Channel</channel>
-  <channel site="telsu.fi" lang="fi" xmltv_id="" site_id="subtv">Sub</channel>
-  <channel site="telsu.fi" lang="fi" xmltv_id="TLC.fi" site_id="tlc">TLC</channel>
-  <channel site="telsu.fi" lang="fi" xmltv_id="TV5.fi" site_id="viisi">TV5</channel>
-  <channel site="telsu.fi" lang="fi" xmltv_id="YleTeemaFem.fi" site_id="ylefem">Yle Teema &amp; Fem</channel>
-  <channel site="telsu.fi" lang="fi" xmltv_id="YleTV1.fi" site_id="yle1">Yle TV1</channel>
-  <channel site="telsu.fi" lang="fi" xmltv_id="YleTV2.fi" site_id="yle2">Yle TV2</channel>
+  <channel site="telsu.fi" site_id="eveo" lang="fi" xmltv_id="Eveo.fi@SD">Eveo</channel>
+  <channel site="telsu.fi" site_id="frii" lang="fi" xmltv_id="Frii.fi@SD">Frii</channel>
+  <channel site="telsu.fi" site_id="hero" lang="fi" xmltv_id="Hero.fi@SD">Hero</channel>
+  <channel site="telsu.fi" site_id="jim" lang="fi" xmltv_id="Jim.fi@SD">Jim</channel>
+  <channel site="telsu.fi" site_id="kutonen" lang="fi" xmltv_id="Kutonen.fi@SD">Kutonen</channel>
+  <channel site="telsu.fi" site_id="liv" lang="fi" xmltv_id="Liv.fi@SD">Liv</channel>
+  <channel site="telsu.fi" site_id="mtv3" lang="fi" xmltv_id="MTV3.fi@SD">MTV3</channel>
+  <channel site="telsu.fi" site_id="mtv_ava" lang="fi" xmltv_id="">AVA</channel>
+  <channel site="telsu.fi" site_id="nationalgeo" lang="fi" xmltv_id="NationalGeographic.fi@SD">National Geographic Channel</channel>
+  <channel site="telsu.fi" site_id="nelonen" lang="fi" xmltv_id="Nelonen.fi@SD">Nelonen</channel>
+  <channel site="telsu.fi" site_id="star" lang="fi" xmltv_id="STARChannel.fi@SD">STAR Channel</channel>
+  <channel site="telsu.fi" site_id="subtv" lang="fi" xmltv_id="">Sub</channel>
+  <channel site="telsu.fi" site_id="tlc" lang="fi" xmltv_id="TLC.fi@SD">TLC</channel>
+  <channel site="telsu.fi" site_id="viisi" lang="fi" xmltv_id="TV5.fi@SD">TV5</channel>
+  <channel site="telsu.fi" site_id="yle1" lang="fi" xmltv_id="YleTV1.fi@SD">Yle TV1</channel>
+  <channel site="telsu.fi" site_id="yle2" lang="fi" xmltv_id="YleTV2.fi@SD">Yle TV2</channel>
+  <channel site="telsu.fi" site_id="ylefem" lang="fi" xmltv_id="YleTeemaFem.fi@SD">Yle Teema &amp; Fem</channel>
 </channels>
