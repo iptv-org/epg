@@ -15,7 +15,7 @@ module.exports = {
   request: {
     headers: {
       Cookie: 'AD_NAV=1; area_id=108;',
-      'User-Agent': USER_AGENTS[Math.floor(Math.random() * USER_AGENTS.length)]
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0 WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36'
     }
   },
   url: function ({ date, channel }) {
