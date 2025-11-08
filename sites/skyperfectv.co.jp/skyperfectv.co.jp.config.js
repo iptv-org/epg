@@ -25,15 +25,11 @@ const exported = {
   logo: function ({ channel }) {
     return `https://www.skyperfectv.co.jp/library/common/img/channel/icon/basic/m_${channel.site_id.toLowerCase()}.gif`
   },
-  // Specific function that permits to gather NSFW channels (needs confirmation)
-  async fetchSchedule({ date, channel }) {
-    const url = exported.url({ date, channel })
-    const response = await axios.get(url, {
-      headers: {
-        Cookie: 'adult_auth=true'
-      }
-    })
-    return response.data
+  request: {
+    headers: {
+      Cookie: 'adult_auth=true',
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    }
   },
   parser({ content, date }) {
     const $ = cheerio.load(content)
