@@ -80,10 +80,10 @@ async function main() {
   const logger = new Logger({ level: options.debug ? LOG_LEVELS['debug'] : LOG_LEVELS['info'] })
 
   logger.info('starting...')
-  let globalConfig: epgGrabber.Types.SiteConfig = {}
+  const globalConfig: epgGrabber.Types.SiteConfig = {}
 
   if (typeof options.timeout === 'number')
-    globalConfig = merge(globalConfig, { request: { timeout: options.timeout } })
+    merge(globalConfig, { request: { timeout: options.timeout } })
   if (options.proxy !== undefined) {
     const proxy = parseProxy(options.proxy)
     if (
@@ -91,11 +91,11 @@ async function main() {
       ['socks', 'socks5', 'socks5h', 'socks4', 'socks4a'].includes(String(proxy.protocol))
     ) {
       const socksProxyAgent = new SocksProxyAgent(options.proxy)
-      globalConfig = merge(globalConfig, {
+      merge(globalConfig, {
         request: { httpAgent: socksProxyAgent, httpsAgent: socksProxyAgent }
       })
     } else {
-      globalConfig = merge(globalConfig, { request: { proxy } })
+      merge(globalConfig, { request: { proxy } })
     }
   }
 
@@ -194,8 +194,7 @@ async function main() {
     channel.index = index++
     if (!channel.site || !channel.site_id || !channel.name) continue
 
-    let config = await loadJs(channel.getConfigPath())
-    config = merge(defaultConfig, config)
+    const config = merge({}, defaultConfig, await loadJs(channel.getConfigPath()))
 
     if (!channel.xmltv_id) channel.xmltv_id = channel.site_id
 
