@@ -52,7 +52,7 @@
     <tr><td><a href="sites/epg.iptvx.one">epg.iptvx.one</a></td><td align="right">3329</td><td align="right">729</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/epg.telemach.ba">epg.telemach.ba</a></td><td align="right">476</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/epgmaster.com">epgmaster.com</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/epgshare01.online">epgshare01.online</a></td><td align="right">20706</td><td align="right">15</td><td align="center">🟢</td><td>https://github.com/iptv-org/epg/issues/2929</td></tr>
+    <tr><td><a href="sites/epgshare01.online">epgshare01.online</a></td><td align="right">20706</td><td align="right">15</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/firstmedia.com">firstmedia.com</a></td><td align="right">116</td><td align="right">97</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/foxsports.com.au">foxsports.com.au</a></td><td align="right">7</td><td align="right">7</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/foxtel.com.au">foxtel.com.au</a></td><td align="right">99</td><td align="right">60</td><td align="center">🟢</td><td></td></tr>
