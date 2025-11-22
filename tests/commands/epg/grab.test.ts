@@ -69,7 +69,7 @@ describe('epg:grab', () => {
   })
 
   it('can grab epg using custom channels list', () => {
-    const cmd = `${ENV_VAR} npm run grab --- --channels=tests/__data__/input/epg_grab/custom.channels.xml --output=tests/__data__/output/guides/custom_channels.guide.xml `
+    const cmd = `${ENV_VAR} npm run grab --- --channels=tests/__data__/input/epg_grab/custom.channels.xml --output=tests/__data__/output/guides/custom_channels.guide.xml --days=2`
     const stdout = execSync(cmd, { encoding: 'utf8' })
     if (process.env.DEBUG === 'true') console.log(cmd, stdout)
 
@@ -79,7 +79,7 @@ describe('epg:grab', () => {
   })
 
   it('can grab epg with multiple channels.xml files', () => {
-    const cmd = `${ENV_VAR} npm run grab --- --channels=tests/__data__/input/epg_grab/sites/**/*.channels.xml --output=tests/__data__/output/guides/multiple_channels.guide.xml`
+    const cmd = `${ENV_VAR} npm run grab --- --channels=tests/__data__/input/epg_grab/sites/**/*.channels.xml --output=tests/__data__/output/guides/multiple_channels.guide.xml --days=2`
     const stdout = execSync(cmd, { encoding: 'utf8' })
     if (process.env.DEBUG === 'true') console.log(cmd, stdout)
 
