@@ -279,14 +279,16 @@ async function main() {
       return pathTemplate.format({ lang: channel.lang || 'en', site: channel.site || '' })
     })
 
-  const programsGroupedByKey = programs.groupBy((program: Program) => {
-    const lang =
-      program.titles && program.titles.length && program.titles[0].lang
-        ? program.titles[0].lang
-        : 'en'
+  const programsGroupedByKey = programs
+    .sortBy([(program: Program) => program.channel, (program: Program) => program.start])
+    .groupBy((program: Program) => {
+      const lang =
+        program.titles && program.titles.length && program.titles[0].lang
+          ? program.titles[0].lang
+          : 'en'
 
-    return pathTemplate.format({ lang, site: program.site || '' })
-  })
+      return pathTemplate.format({ lang, site: program.site || '' })
+    })
 
   const gzip = globalConfig.gzip || defaultConfig.gzip
 
