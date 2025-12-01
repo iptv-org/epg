@@ -45,8 +45,8 @@ module.exports = {
         icon: parseIcon(item),
         image: parseImage(item),
         episode: parseEpisode(item),
-        start: dayjs(item.start),
-        stop: dayjs(item.stop)
+        start: dayjs.tz(item.start, timezone),
+        stop: dayjs.tz(item.stop, timezone)
       })
     })
 
