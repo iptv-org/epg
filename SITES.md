@@ -132,7 +132,7 @@
     <tr><td><a href="sites/programme-tv.net">programme-tv.net</a></td><td align="right">295</td><td align="right">196</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/programme-tv.vini.pf">programme-tv.vini.pf</a></td><td align="right">58</td><td align="right">2</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/programme.tvb.com">programme.tvb.com</a></td><td align="right">8</td><td align="right">6</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/programtv.onet.pl">programtv.onet.pl</a></td><td align="right">590</td><td align="right">356</td><td align="center">🟢</td><td>https://github.com/iptv-org/epg/issues/2899</td></tr>
+    <tr><td><a href="sites/programtv.onet.pl">programtv.onet.pl</a></td><td align="right">590</td><td align="right">356</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/raiplay.it">raiplay.it</a></td><td align="right">17</td><td align="right">13</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/reportv.com.ar">reportv.com.ar</a></td><td align="right">163</td><td align="right">95</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/rikstv.no">rikstv.no</a></td><td align="right">80</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
