@@ -39,7 +39,7 @@
     <tr><td><a href="sites/directv.com">directv.com</a></td><td align="right">1043</td><td align="right">640</td><td align="center">🔴</td><td>https://github.com/iptv-org/epg/issues/2284</td></tr>
     <tr><td><a href="sites/directv.com.ar">directv.com.ar</a></td><td align="right">371</td><td align="right">0</td><td align="center">🔴</td><td>https://github.com/iptv-org/epg/issues/2339</td></tr>
     <tr><td><a href="sites/directv.com.uy">directv.com.uy</a></td><td align="right">374</td><td align="right">59</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/dishtv.in">dishtv.in</a></td><td align="right">434</td><td align="right">326</td><td align="center">🟢</td><td>https://github.com/iptv-org/epg/issues/2937</td></tr>
+    <tr><td><a href="sites/dishtv.in">dishtv.in</a></td><td align="right">434</td><td align="right">326</td><td align="center">🟡</td><td>https://github.com/iptv-org/epg/issues/2937</td></tr>
     <tr><td><a href="sites/dna.fi">dna.fi</a></td><td align="right">123</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/dsmart.com.tr">dsmart.com.tr</a></td><td align="right">100</td><td align="right">76</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/dstv.com">dstv.com</a></td><td align="right">2979</td><td align="right">80</td><td align="center">🟢</td><td></td></tr>
