@@ -76,8 +76,8 @@ it('can parse response', () => {
 
   expect(results.length).toBe(16)
   expect(results[0]).toMatchObject({
-    start: '2025-01-26T00:30:00.000Z',
-    stop: '2025-01-26T02:05:00.000Z',
+    start: '2025-01-25T19:00:00.000Z',
+    stop: '2025-01-25T20:35:00.000Z',
     title: [
       { lang: 'en', value: 'Train to Busan 2: Peninsula' },
       { lang: 'hi', value: 'ट्रेन टू बुसान 2: पेनीनसुला' },
