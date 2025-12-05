@@ -39,7 +39,7 @@
     <tr><td><a href="sites/directv.com">directv.com</a></td><td align="right">1043</td><td align="right">640</td><td align="center">🔴</td><td>https://github.com/iptv-org/epg/issues/2284</td></tr>
     <tr><td><a href="sites/directv.com.ar">directv.com.ar</a></td><td align="right">371</td><td align="right">0</td><td align="center">🔴</td><td>https://github.com/iptv-org/epg/issues/2339</td></tr>
     <tr><td><a href="sites/directv.com.uy">directv.com.uy</a></td><td align="right">374</td><td align="right">59</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/dishtv.in">dishtv.in</a></td><td align="right">434</td><td align="right">326</td><td align="center">🟡</td><td>https://github.com/iptv-org/epg/issues/2937</td></tr>
+    <tr><td><a href="sites/dishtv.in">dishtv.in</a></td><td align="right">434</td><td align="right">326</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/dna.fi">dna.fi</a></td><td align="right">123</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/dsmart.com.tr">dsmart.com.tr</a></td><td align="right">100</td><td align="right">76</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/dstv.com">dstv.com</a></td><td align="right">2979</td><td align="right">80</td><td align="center">🟢</td><td></td></tr>
@@ -72,7 +72,7 @@
     <tr><td><a href="sites/i.mjh.nz">i.mjh.nz</a></td><td align="right">6458</td><td align="right">1464</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/i24news.tv">i24news.tv</a></td><td align="right">4</td><td align="right">3</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/iltalehti.fi">iltalehti.fi</a></td><td align="right">142</td><td align="right">44</td><td align="center">🔴</td><td>https://github.com/iptv-org/epg/issues/2870</td></tr>
-    <tr><td><a href="sites/indihometv.com">indihometv.com</a></td><td align="right">130</td><td align="right">121</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/indihometv.com">indihometv.com</a></td><td align="right">127</td><td align="right">119</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/ionplustv.com">ionplustv.com</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/ipko.tv">ipko.tv</a></td><td align="right">194</td><td align="right">151</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/jiotv.com">jiotv.com</a></td><td align="right">1094</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
