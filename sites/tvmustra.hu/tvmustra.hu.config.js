@@ -74,5 +74,5 @@ function parseStart($item, date) {
 function parseItems(content) {
   const $ = cheerio.load(content)
 
-  return $('#epg-container > div:nth-child(4) > div.col-6_sor3 > div.showtime').toArray()
+  return $('#epg-container > div:nth-child(3) > div.col-6_sor3 > div.showtime').toArray()
 }
