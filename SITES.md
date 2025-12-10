@@ -116,7 +116,7 @@
     <tr><td><a href="sites/nzxmltv.com">nzxmltv.com</a></td><td align="right">532</td><td align="right">118</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/ontvtonight.com">ontvtonight.com</a></td><td align="right">5177</td><td align="right">528</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/opto.sic.pt">opto.sic.pt</a></td><td align="right">4</td><td align="right">4</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/orangetv.orange.es">orangetv.orange.es</a></td><td align="right">168</td><td align="right">162</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/orangetv.orange.es">orangetv.orange.es</a></td><td align="right">168</td><td align="right">162</td><td align="center">🟢</td><td>https://github.com/iptv-org/epg/issues/2949</td></tr>
     <tr><td><a href="sites/osn.com">osn.com</a></td><td align="right">118</td><td align="right">98</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/passie.nl">passie.nl</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/pbsguam.org">pbsguam.org</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
