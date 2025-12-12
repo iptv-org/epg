@@ -59,7 +59,7 @@ Options:
                                 not specified)
   -o, --output <path>           Path to output file (default: "guide.xml")
   -l, --lang <codes>            Allows you to restrict downloading to channels in specified languages only (example: "en,id")
-  -t, --timeout <milliseconds>  Timeout for each request in milliseconds (default: 0)
+  -t, --timeout <milliseconds>  Timeout for each request in milliseconds (default: 30000)
   -d, --delay <milliseconds>    Delay between request in milliseconds (default: 0)
   -x, --proxy <url>             Use the specified proxy (example: "socks5://username:password@127.0.0.1:1234")
   --days <days>                 Number of days for which the program will be loaded (defaults to the value from the site config)
@@ -199,7 +199,7 @@ ghcr.io/iptv-org/epg:master
 | CURL            | Display each request as CURL (default: false)                                                                      |
 | PROXY           | Use the specified proxy                                                                                            |
 | DAYS            | Number of days for which the guide will be loaded (defaults to the value from the site config)                     |
-| TIMEOUT         | Timeout for each request in milliseconds (default: 0)                                                              |
+| TIMEOUT         | Timeout for each request in milliseconds (default: 30000)                                                          |
 | DELAY           | Delay between request in milliseconds (default: 0)                                                                 |
 | RUN_AT_STARTUP  | Run grab on container startup (default: true)                                                                      |
 
@@ -236,3 +236,4 @@ And thank you to everyone who has already contributed!
 ## License
 
 [![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](LICENSE)
+
