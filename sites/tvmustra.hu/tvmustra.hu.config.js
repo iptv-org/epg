@@ -24,9 +24,10 @@ module.exports = {
         prev.stop = start
       }
       const stop = start.plus({ minute: 30 })
+      const title = parseTitle($item)
 
       programs.push({
-        title: parseTitle($item),
+        title,
         start,
         stop
       })
@@ -60,11 +61,11 @@ module.exports = {
 }
 
 function parseTitle($item) {
-  return $item('.musor_lista_cim, .musor_lista_cim2').text().trim()
+  return $item('div[class^="musor_lista_cim"]').first().text().trim()
 }
 
 function parseStart($item, date) {
-  const time = $item('.musor_lista_idopont, .musor_lista_idopont2').text().trim()
+  const time = $item('div[class^="musor_lista_idopont"]').first().text().trim()
 
   return DateTime.fromFormat(`${date.format('YYYY-MM-DD')} ${time}`, 'yyyy-MM-dd HH:mm', {
     zone: 'Europe/Budapest'
@@ -74,5 +75,5 @@ function parseStart($item, date) {
 function parseItems(content) {
   const $ = cheerio.load(content)
 
-  return $('#epg-container > div:nth-child(3) > div.col-6_sor3 > div.showtime').toArray()
+  return $('div[data-page="channel"][data-show]').toArray()
 }
