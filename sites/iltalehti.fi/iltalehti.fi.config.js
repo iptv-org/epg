@@ -63,7 +63,7 @@ module.exports = {
 }
 
 function getImage(item) {
-  const image = item.images.find(i => i.type === 'default' && i.sizeTag === '612x382')
+  const image = item.images.find(i => i.sizeTag === '612x382')
 
   return image ? image.url : null
 }
