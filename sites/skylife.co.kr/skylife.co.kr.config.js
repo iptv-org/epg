@@ -8,12 +8,17 @@ dayjs.extend(utc)
 dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
+dayjs.tz.setDefault('Asia/Seoul')
+
 module.exports = {
   site: 'skylife.co.kr',
   days: 2,
   request: {
     cache: {
       ttl: 60 * 60 * 1000 // 1 hour
+    },
+    headers: {
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36'
     }
   },
   url({ date }) {
