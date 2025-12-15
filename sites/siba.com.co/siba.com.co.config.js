@@ -1,5 +1,7 @@
 const dayjs = require('dayjs')
+const axios = require('axios')
 
+// Geo to Colombia
 module.exports = {
   site: 'siba.com.co',
   days: 2,
@@ -11,7 +13,7 @@ module.exports = {
     },
     data({ channel, date }) {
       const params = new URLSearchParams()
-      params.append('servicio', '10')
+      params.append('servicio', '9')
       params.append('ini', date.unix())
       params.append('end', date.add(1, 'd').unix())
       params.append('chn', channel.site_id)
@@ -31,6 +33,24 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels() {
+    const data = await axios
+      .post('http://devportal.siba.com.co/index.php?action=grilla', 'servicio=9', {
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
+        }
+      })
+      .then(r => r.data)
+      .catch(console.log)
+
+    return data.list.map(item => {
+      return {
+        lang: 'es',
+        site_id: item.id,
+        name: item.nom
+      }
+    })
   }
 }
 

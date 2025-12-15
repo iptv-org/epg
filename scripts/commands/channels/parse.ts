@@ -66,54 +66,60 @@ async function main() {
     )
   }
 
-  let configChannels = config.channels(args)
-  if (isPromise(configChannels)) {
-    configChannels = await configChannels
-  }
+  // Verify if "channels" exists in the configuration before parsing
+  if (!config.channels) {
+    logger.error('No "channels" property found in the config file.')
+    return
+  } else {
+    let configChannels = config.channels(args)
 
-  const channelsFromConfig = new Collection<SiteConfigChannelData>(configChannels).map(
-    (data: SiteConfigChannelData) => {
-      return new Channel({
-        xmltv_id: data.xmltv_id,
-        name: data.name,
-        site_id: data.site_id,
-        lang: data.lang || null,
-        logo: data.logo || null,
-        url: data.url || null,
-        lcn: data.lcn || null,
-        site: config.site,
-        index: -1
-      })
+    if (isPromise(configChannels)) {
+      configChannels = await configChannels
     }
-  )
 
-  const newChannelList = new Collection<Channel>()
-  channelsFromConfig.forEach((channel: Channel) => {
-    if (!channel.site_id) return
-
-    const found: Channel | undefined = channelsFromXML.find(
-      (_channel: Channel) => _channel.site_id == channel.site_id
+    const channelsFromConfig = new Collection<SiteConfigChannelData>(configChannels).map(
+      (data: SiteConfigChannelData) => {
+        return new Channel({
+          xmltv_id: data.xmltv_id,
+          name: data.name,
+          site_id: data.site_id,
+          lang: data.lang || null,
+          logo: data.logo || null,
+          url: data.url || null,
+          lcn: data.lcn || null,
+          site: config.site,
+          index: -1
+        })
+      }
     )
+    const newChannelList = new Collection<Channel>()
+    channelsFromConfig.forEach((channel: Channel) => {
+      if (!channel.site_id) return
 
-    if (found) {
-      channel.xmltv_id = found.xmltv_id
-      channel.lang = found.lang
+      const found: Channel | undefined = channelsFromXML.find(
+        (_channel: Channel) => _channel.site_id == channel.site_id
+      )
+
+      if (found) {
+        channel.xmltv_id = found.xmltv_id
+        channel.lang = found.lang
+      }
+
+      newChannelList.add(channel)
+    })
+
+    newChannelList.sortBy([
+      (channel: Channel) => channel.lang || '_',
+      (channel: Channel) => (channel.xmltv_id ? channel.xmltv_id.toLowerCase() : '0'),
+      (channel: Channel) => channel.site_id
+    ])
+
+    const xml = generateChannelsXML(newChannelList)
+
+    await storage.save(outputFilepath, xml)
+
+    logger.info(`File '${outputFilepath}' successfully saved`)
     }
-
-    newChannelList.add(channel)
-  })
-
-  newChannelList.sortBy([
-    (channel: Channel) => channel.lang || '_',
-    (channel: Channel) => (channel.xmltv_id ? channel.xmltv_id.toLowerCase() : '0'),
-    (channel: Channel) => channel.site_id
-  ])
-
-  const xml = generateChannelsXML(newChannelList)
-
-  await storage.save(outputFilepath, xml)
-
-  logger.info(`File '${outputFilepath}' successfully saved`)
 }
 
 main()
