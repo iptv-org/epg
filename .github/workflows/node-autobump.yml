@@ -1,0 +1,146 @@
+name: Update Default Node Version
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: update-node-image
+  cancel-in-progress: true
+
+jobs:
+  update:
+    name: Check and Bump NODE_VERSION
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Step 1 — Current version from Dockerfile
+        id: current
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo ""
+          echo "🔎  Reading current version from Dockerfile..."
+          echo ""
+          current_tag=$(sed -n 's/^ARG NODE_VERSION=\(.*\)$/\1/p' docker/Dockerfile)
+          if [[ -z "$current_tag" ]]; then
+            echo "❌  Could not find current NODE_VERSION in docker/Dockerfile" >&2
+            exit 1
+          fi
+          semver_prefix=$(echo "$current_tag" | cut -d'-' -f1)
+          if [[ "$semver_prefix" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            current_major=${semver_prefix%%.*}
+          else
+            current_major=$(echo "$current_tag" | sed -n 's/^\([0-9][0-9]*\).*$/\1/p')
+          fi
+          echo "current_tag=$current_tag" >> "$GITHUB_OUTPUT"
+          echo "current_major=$current_major" >> "$GITHUB_OUTPUT"
+          echo "✅  Current tag:   $current_tag"
+          echo "✅  Current major: ${current_major:-N/A}"
+          echo ""
+
+      - name: Step 2 — Latest Node major from Distroless
+        id: latest
+        shell: bash
+        env:
+          UA: NodeImageUpdater (+github.com/${{ github.repository }})
+        run: |
+          set -euo pipefail
+          echo ""
+          echo "🌐  Fetching latest distroless Node major..."
+          echo ""
+          readme_url="https://raw.githubusercontent.com/GoogleContainerTools/distroless/main/README.md"
+          content="$(curl -fsSL -H "User-Agent: $UA" --retry 3 --retry-delay 2 --retry-connrefused --retry-all-errors "$readme_url")"
+          latest_major="$(printf '%s\n' "$content" \
+            | grep -Eo 'nodejs[0-9]+-debian[0-9]+' \
+            | sed -E 's/^nodejs([0-9]+)-.*/\1/' \
+            | sort -n | uniq | tail -1)"
+          if [[ -z "${latest_major:-}" ]]; then
+            echo "❌  Failed to parse latest Node major from Distroless README" >&2
+            exit 1
+          fi
+          echo "latest_major=$latest_major" >> "$GITHUB_OUTPUT"
+          echo "✅  Latest distroless Node major: $latest_major"
+          echo ""
+
+      - name: Step 3 — Update Dockerfile if newer
+        id: update
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo ""
+          echo "🧮  Comparing versions and updating if needed..."
+          echo ""
+          file="docker/Dockerfile"
+          current_major='${{ steps.current.outputs.current_major }}'
+          latest_major='${{ steps.latest.outputs.latest_major }}'
+          updated="false"
+
+          if [[ "$current_major" =~ ^[0-9]+$ && "$latest_major" =~ ^[0-9]+$ && $latest_major -gt $current_major ]]; then
+            echo "✏️  Updating $file to Node $latest_major"
+
+            # Normalize line endings, just in case:
+            sed -i.bak 's/\r$//' "$file" || true
+
+            # 1) ARG NODE_VERSION=<MAJOR>
+            sed -i.bak -E 's/^(ARG[[:space:]]+NODE_VERSION=).*/\1'"$latest_major"'/' "$file"
+
+            # 2) FROM node:${NODE_VERSION:-<N>}-alpine AS builder
+            sed -i.bak -E 's|^(FROM[[:space:]]+node:\$\{NODE_VERSION:-)[0-9]+(\}-alpine[[:space:]]+AS[[:space:]]+builder)$|\1'"$latest_major"'\2|' "$file"
+
+            # 3) FROM gcr.io/distroless/nodejs${NODE_VERSION:-<N>} AS runner
+            sed -i.bak -E 's|^(FROM[[:space:]]+gcr\.io/distroless/nodejs\$\{NODE_VERSION:-)[0-9]+(\}[[:space:]]+AS[[:space:]]+runner)$|\1'"$latest_major"'\2|' "$file"
+
+            rm -f "${file}.bak"
+            updated="true"
+            echo "updated=true" >> "$GITHUB_OUTPUT"
+            echo "new_value=$latest_major" >> "$GITHUB_OUTPUT"
+          fi
+
+          if [[ "${updated}" != "true" ]]; then
+            echo "ℹ️  No update needed"
+            echo "updated=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Step 4 — Commit and push
+        if: steps.update.outputs.updated == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docker/Dockerfile
+          git commit -m "chore(docker): bump NODE_VERSION and FROM defaults to ${{ steps.update.outputs.new_value }} (distroless)"
+          git push
+
+      - name: Step 5 — Trigger Docker Build via workflow_dispatch
+        if: steps.update.outputs.updated == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh workflow run docker-build.yml --ref master
+
+      - name: Summary
+        if: always()
+        shell: bash
+        run: |
+          {
+            if [[ "${{ steps.update.outputs.updated }}" == "true" ]]; then
+              echo "## ✅  Updated to Node ${{ steps.update.outputs.new_value }} and refreshed FROM defaults." 
+              echo "##🧱  Push triggers your Docker build workflow."
+              echo ""
+            else
+              echo "## ℹ️  Node base image already up-to-date -> Node v${{steps.current.outputs.current_major}}."
+              echo ""
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
