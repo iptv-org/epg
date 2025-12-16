@@ -146,16 +146,47 @@ npm install
 
 ## Docker
 
-### Pull an image
+### Use Docker image from GHCR
+
+```yaml
+services:
+  iptv-org-epg:
+    image: ghcr.io/knylbyte/iptv-org/epg:latest
+    container_name: epg
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./data/public:/epg/public
+      # If you want to use your own channel list instead of SITE,
+      # create a local ./channels.xml and activate the line below.
+      # - ./channels.xml:/epg/sites/channels.xml:ro
+    environment:
+      TZ: America/Chicago          # time zone for correct scheduling
+      CRON_SCHEDULE: "0 2 * * *"   # daily 2:00 a.m.
+      PORT: 3000                   # port for web server
+      RUN_AT_STARTUP: "true"       # execute once directly at startup
+      MAX_CONNECTIONS: 1           # performance/output options (supported by the grabber)
+      GZIP: "false"                # additionally generate guide.xml.gz if "true"
+      ALL_SITES: false             # fetch all sites, filtered by language
+      CLANG: >-
+        en
+        es
+```
+
+See also `docker-compose.yml` file.
+
+### Build an image
 
 ```sh
-docker pull ghcr.io/iptv-org/epg:master
+docker build -f docker/Dockerfile -t iptv-org/epg --no-cache .                             <- ARM64 and AMD64
+docker build -f docker/Dockerfile -t iptv-org/epg --no-cache --build-arg NODE_VERSION=22 . <- ARMv7
 ```
 
 ### Create and run container
 
 ```sh
-docker run -p 3000:3000 -v /path/to/channels.xml:/epg/channels.xml ghcr.io/iptv-org/epg:master
+docker run -p 3000:3000 -v /path/to/channels.xml:/epg/sites/channels.xml iptv-org/epg
 ```
 
 By default, the guide will be downloaded every day at 00:00 UTC and saved to the `/epg/public/guide.xml` file inside the container.
@@ -179,29 +210,61 @@ To fine-tune the execution, you can pass environment variables to the container 
 ```sh
 docker run \
 -p 5000:3000 \
--v /path/to/channels.xml:/epg/channels.xml \
+-v /path/to/channels.xml:/epg/sites/channels.xml \
 -e CRON_SCHEDULE="0 0,12 * * *" \
+-e PORT=3000 \
 -e MAX_CONNECTIONS=10 \
+-e SITE='["example.com", "epg.io"]' \
+-e ALL_SITES=true \
+-e CLANG='["en", "es"]' \
 -e GZIP=true \
 -e CURL=true \
 -e PROXY="socks5://127.0.0.1:1234" \
 -e DAYS=14 \
 -e TIMEOUT=5 \
 -e DELAY=2 \
-ghcr.io/iptv-org/epg:master
+iptv-org/epg
 ```
 
 | Variable        | Description                                                                                                        |
 | --------------- | ------------------------------------------------------------------------------------------------------------------ |
 | CRON_SCHEDULE   | A [cron expression](https://crontab.guru/) describing the schedule of the guide loadings (default: "0 0 \* \* \*") |
+| PORT            | Port on which the web server listens (default: 3000)                                                               |
 | MAX_CONNECTIONS | Limit on the number of concurrent requests (default: 1)                                                            |
+| SITE            | Specific website(s) from SITES.md (default: empty)                                                                 |
+| ALL_SITES       | Fetches all sites by merging all site channel lists under `/epg/sites` (default: false)                            |
+| CLANG           | Language filter (ISO 639-1 codes, e.g., "en,es") (default: undefined)                                              |
 | GZIP            | Boolean value indicating whether to create a compressed version of the guide (default: false)                      |
 | CURL            | Display each request as CURL (default: false)                                                                      |
 | PROXY           | Use the specified proxy                                                                                            |
 | DAYS            | Number of days for which the guide will be loaded (defaults to the value from the site config)                     |
-| TIMEOUT         | Timeout for each request in milliseconds (default: 30000)                                                          |
+| TIMEOUT         | Timeout for each request in milliseconds (default: 0)                                                              |
 | DELAY           | Delay between request in milliseconds (default: 0)                                                                 |
 | RUN_AT_STARTUP  | Run grab on container startup (default: true)                                                                      |
+
+#### Channel Source Resolution (Workflow)
+The container decides which channel list to use in this order:
+
+```python
+if SITE is set:
+    → use the built-in site channel lists for the given site(s)
+else if ALL_SITES is truthy:
+    → merge all site channel lists under /epg/sites and optionally filter by language
+else:
+    → use /epg/sites/channels.xml from your bind mount
+```
+
+#### Accepted formats
+- **SITE** (single env var):
+  - Single site:
+    - `-e SITE=web.magentatv.de`
+  - Comma-separated list:
+    - `-e SITE=web.magentatv.de,sky.de`
+  - JSON array:
+    - `-e SITE='["web.magentatv.de","sky.de"]'`
+- **ALL_SITES**: boolean flag (enables fetching all site channel lists under `/epg/sites`).
+  - Precedence: SITE overrides ALL_SITES.
+  - **Note**: ALL_SITES can be very large and take longer to fetch/process.
 
 ## Database
 
@@ -236,4 +299,3 @@ And thank you to everyone who has already contributed!
 ## License
 
 [![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](LICENSE)
-
