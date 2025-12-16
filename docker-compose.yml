@@ -1,0 +1,33 @@
+services:
+  iptv-org-epg:
+    image: ghcr.io/knylbyte/iptv-org/epg:latest
+    container_name: epg
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./data/public:/epg/public
+      # If you want to use your own channel list instead of SITE,
+      # create a local ./channels.xml and activate the line below.
+      # - ./channels.xml:/epg/sites/channels.xml:ro
+    environment:
+      TZ: America/Chicago          # time zone for correct scheduling
+      CRON_SCHEDULE: "0 2 * * *"   # daily 2:00 a.m.
+      PORT: 3000                   # port for web server
+      RUN_AT_STARTUP: true.        # execute once directly at startup
+      MAX_CONNECTIONS: 1           # performance/output options (supported by the grabber)
+      GZIP: "false"                # additionally generate guide.xml.gz if "true"
+      # DAYS: 2                     # overwrite number of days
+      # TIMEOUT: "10000"            # request-Timeout (ms)
+      # DELAY: "500"                # delay between requests (ms)
+      # PROXY: "http://user:pass@host:port"
+      # CURL: "true"                # output requests as curl
+      # ALL_SITES: true             # itterates through all directories inside sites folder and filtered by CLANG (see below)
+
+      #Select source: Either SITE (preferred) or channels.xml (see Volume above)
+      # SITE: |                     # folder name in ./sites/<site>/*.channels.xml
+      #  "example.com"
+      #  "epg.io"
+      # CLANG: |                    # language filter (ISO 639-1 codes, e.g., "en,es")
+      #  "en"
+      #  "ar"
