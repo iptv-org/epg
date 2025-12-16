@@ -151,7 +151,7 @@ npm install
 ```yaml
 services:
   iptv-org-epg:
-    image: ghcr.io/knylbyte/iptv-org/epg:latest
+    image: ghcr.io/iptv-org/epg:latest
     container_name: epg
     restart: unless-stopped
     ports:
@@ -223,9 +223,8 @@ docker run \
 -e DAYS=14 \
 -e TIMEOUT=5 \
 -e DELAY=2 \
-iptv-org/epg
+ghcr.io/iptv-org/epg:latest
 ```
-
 | Variable        | Description                                                                                                        |
 | --------------- | ------------------------------------------------------------------------------------------------------------------ |
 | CRON_SCHEDULE   | A [cron expression](https://crontab.guru/) describing the schedule of the guide loadings (default: "0 0 \* \* \*") |
@@ -257,11 +256,11 @@ else:
 #### Accepted formats
 - **SITE** (single env var):
   - Single site:
-    - `-e SITE=web.magentatv.de`
+    - `-e SITE=artonline.tv`
   - Comma-separated list:
-    - `-e SITE=web.magentatv.de,sky.de`
+    - `-e SITE=bein.com,sky.de`
   - JSON array:
-    - `-e SITE='["web.magentatv.de","sky.de"]'`
+    - `-e SITE='["bein.com","sky.de"]'`
 - **ALL_SITES**: boolean flag (enables fetching all site channel lists under `/epg/sites`).
   - Precedence: SITE overrides ALL_SITES.
   - **Note**: ALL_SITES can be very large and take longer to fetch/process.
