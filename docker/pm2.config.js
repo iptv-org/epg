@@ -1,19 +1,21 @@
 // docker/pm2.config.js
-// Distroless-ready PM2 config (no npm/npx at runtime) with list support in SITE and CLANG.
+// Distroless-friendly PM2 config (no shell / npm / npx at runtime).
+// Supports list parsing for SITE and CLANG (JSON array or delimiter-separated string).
 //
-// Multi-site behavior (final):
-// - If SITE has > 1 entries: sequentially grab each site to /public/<site>/guide.xml, then stream-merge them into /public/guide.xml.
-// - If SITE has exactly 1 entry: run ONE grab with --site <the-one-site> -> /public/guide.xml.
-// - If SITE is empty: fallback to channels.xml or (if ALL_SITES) iterate all site directories under /sites and merge.
+// Modes:
+// - SITE has > 1 entries: grab each site to /epg/public/<site>/guide.xml, then merge into /epg/public/guide.xml.
+// - SITE has exactly 1 entry: run a single grab with `--site <site>` to /epg/public/guide.xml.
+// - SITE is empty:
+//   - if ALL_SITES is truthy: discover sites under /epg/sites (directories that contain a top-level `*.channels.xml`),
+//     then run the same multi-site flow (per-site guides + merged /epg/public/guide.xml).
+//   - else: use the mounted channels list at /epg/sites/channels.xml (grab with `--channels sites/channels.xml`).
 //
 // Precedence:
 // - If SITE length >= 1, it ALWAYS takes precedence; ALL_SITES is ignored.
 //
 // Notes:
-// - No extra runtime deps; combination uses plain Node stdlib.
-// - We only scan under /epg/sites/<site>/ (recursive).
-// - Combined cache: /tmp/tmp.channels.xml + /tmp/tmp.channels.meta.json
-// - IMPORTANT: We sanitize env for child process (remove GZIP/CURL) so only CLI flags control these booleans.
+// - `EPG_ROOT` can override the default root (/epg) for local testing.
+// - We pass env-derived settings as CLI flags and sanitize the child env (remove GZIP/CURL) so `grab.ts` is controlled by flags only.
 
 const fs = require('fs');
 const path = require('path');
@@ -95,7 +97,7 @@ const CLANG_LIST = parseListFromSingleKey('CLANG');
 const LANG_CSV   = CLANG_LIST.length ? CLANG_LIST.join(',') : undefined;
 
 // --- build grab args ---
-// Only use CLI flags; do NOT rely on env in the child process.
+// Only use CLI flags; do not rely on env in the child process.
 const buildGrabArgs = ({ site, useChannelsXml, combined = false, output }) => {
   const args = [];
 
@@ -282,6 +284,7 @@ function discoverSitesOnDisk() {
     return [];
   }
 
+  // We treat a directory as a "site" if it contains at least one `*.channels.xml` file at its top level.
   const sites = [];
   for (const ent of entries) {
     if (!ent.isDirectory()) continue;
