@@ -15,7 +15,7 @@ const channel = { site_id: 'stod2', xmltv_id: 'Stod2.is' }
 
 it('can generate valid url', () => {
   const generatedUrl = url({ date, channel })
-  expect(generatedUrl).toBe('https://api.stod2.is/dagskra/api/stod2/2025-01-03')
+  expect(generatedUrl).toBe('https://www.syn.is/api/epg/stod2/2025-01-03')
 })
 
 it('can parse response', () => {

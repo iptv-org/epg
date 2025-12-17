@@ -5,7 +5,7 @@ const axios = require('axios')
 dayjs.extend(utc)
 
 module.exports = {
-  site: 'stod2.is',
+  site: 'syn.is',
   days: 7,
   request: {
     cache: {
@@ -13,7 +13,7 @@ module.exports = {
     }
   },
   url({ channel, date }) {
-    return `https://api.stod2.is/dagskra/api/${channel.site_id}/${date.format('YYYY-MM-DD')}`
+    return `https://www.syn.is/api/epg/${channel.site_id}/${date.format('YYYY-MM-DD')}`
   },
   parser: function ({ content }) {
     let data
@@ -48,7 +48,7 @@ module.exports = {
   },
   async channels() {
     try {
-      const response = await axios.get('https://api.stod2.is/dagskra/api')
+      const response = await axios.get('https://www.syn.is/api/epg/')
       if (!response.data || !Array.isArray(response.data)) {
         console.error('Error: No channels data found')
         return []
