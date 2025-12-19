@@ -6,7 +6,8 @@ on:
     - cron: "0 0 * * *"
 
 permissions:
-  contents: write
+  contents: read
+  actions: write
 
 concurrency:
   group: update-alpine-version
@@ -116,3 +117,4 @@ jobs:
               echo ""
             fi
           } >> "$GITHUB_STEP_SUMMARY"
+
