@@ -95,7 +95,7 @@ export async function loadIssues(props?: { labels: string[] | string }) {
       repo: REPO,
       per_page: 100,
       labels,
-      state: 'open',
+      status: 'open',
       headers: {
         'X-GitHub-Api-Version': '2022-11-28'
       }
