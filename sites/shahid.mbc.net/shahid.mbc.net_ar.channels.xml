@@ -1,79 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="shahid.mbc.net" site_id="387238" lang="ar" xmltv_id="MBC1.ae@SD">MBC1</channel>
-  <channel site="shahid.mbc.net" site_id="387248" lang="ar" xmltv_id="MBC1Egypt.eg@HD">MBC1</channel>
-  <channel site="shahid.mbc.net" site_id="387251" lang="ar" xmltv_id="MBCDrama.ae@SD">MBC Drama</channel>
-  <channel site="shahid.mbc.net" site_id="387286" lang="ar" xmltv_id="Alarabiya.ae@SD">العربية</channel>
-  <channel site="shahid.mbc.net" site_id="387288" lang="ar" xmltv_id="AlHadath.sa@SD">الحدث</channel>
-  <channel site="shahid.mbc.net" site_id="387290" lang="ar" xmltv_id="MBCMasr.eg@SD">MBC Masr</channel>
-  <channel site="shahid.mbc.net" site_id="387293" lang="ar" xmltv_id="MBCMasr2.eg@SD">MBC Masr2</channel>
-  <channel site="shahid.mbc.net" site_id="387294" lang="ar" xmltv_id="MBCIraq.iq@SD">MBC Iraq</channel>
-  <channel site="shahid.mbc.net" site_id="387296" lang="ar" xmltv_id="MBCPlusDrama.sa@SD">MBC Plus Drama</channel>
-  <channel site="shahid.mbc.net" site_id="387937" lang="ar" xmltv_id="MBC5.ae@SD">MBC5</channel>
-  <channel site="shahid.mbc.net" site_id="388566" lang="ar" xmltv_id="PanoramaFM.sa@SD">Panorama FM</channel>
-  <channel site="shahid.mbc.net" site_id="388567" lang="ar" xmltv_id="MBCFM.ae@SD">MBC FM</channel>
-  <channel site="shahid.mbc.net" site_id="400917" lang="ar" xmltv_id="MBC2.ae@SD">MBC2</channel>
-  <channel site="shahid.mbc.net" site_id="400919" lang="ar" xmltv_id="MBC4.ae@SD">MBC4</channel>
-  <channel site="shahid.mbc.net" site_id="400921" lang="ar" xmltv_id="MBCAction.ae@SD">MBC Action</channel>
-  <channel site="shahid.mbc.net" site_id="400924" lang="ar" xmltv_id="MBCMax.ae@SD">MBC MAX</channel>
-  <channel site="shahid.mbc.net" site_id="409385" lang="ar" xmltv_id="MBC3.ae@SD">MBC3</channel>
-  <channel site="shahid.mbc.net" site_id="409387" lang="ar" xmltv_id="MBCBollywood.ae@SD">MBC Bollywood</channel>
-  <channel site="shahid.mbc.net" site_id="409390" lang="ar" xmltv_id="SpacetoonArabic.ae@SD">Spacetoon</channel>
-  <channel site="shahid.mbc.net" site_id="414449" lang="ar" xmltv_id="Wanasah.ae@SD">وناسه</channel>
-  <channel site="shahid.mbc.net" site_id="418308" lang="ar" xmltv_id="MBCPersia.ae@SD">MBC Persia</channel>
-  <channel site="shahid.mbc.net" site_id="816764" lang="ar" xmltv_id="MBC1USA.us@SD">MBC1</channel>
-  <channel site="shahid.mbc.net" site_id="816771" lang="ar" xmltv_id="MBC3USA.us@SD">MBC3</channel>
-  <channel site="shahid.mbc.net" site_id="816776" lang="ar" xmltv_id="MBCMasrUSA.us@SD">MBC Masr</channel>
-  <channel site="shahid.mbc.net" site_id="816781" lang="ar" xmltv_id="MBCDramaUSA.us@SD">MBC Drama</channel>
-  <channel site="shahid.mbc.net" site_id="862837" lang="ar" xmltv_id="AsharqNews.sa@SD">الشرق</channel>
-  <channel site="shahid.mbc.net" site_id="900303" lang="ar" xmltv_id="SSC1.sa@HD">SSC1 HD</channel>
-  <channel site="shahid.mbc.net" site_id="946938" lang="ar" xmltv_id="AlSaudiya.sa@SD">السعودية</channel>
-  <channel site="shahid.mbc.net" site_id="946940" lang="ar" xmltv_id="SBC.sa@SD">SBC</channel>
-  <channel site="shahid.mbc.net" site_id="946942" lang="ar" xmltv_id="AlSunnahAlNabawiyahTV.sa@SD">السنة النبوية</channel>
-  <channel site="shahid.mbc.net" site_id="946945" lang="ar" xmltv_id="ThikrayatTV.sa@SD">ذكريات</channel>
-  <channel site="shahid.mbc.net" site_id="946946" lang="ar" xmltv_id="AlQuranAlKareemTV.sa@SD">القرآن الكريم</channel>
-  <channel site="shahid.mbc.net" site_id="946948" lang="ar" xmltv_id="AlEkhbariya.sa@SD">الإخبارية</channel>
-  <channel site="shahid.mbc.net" site_id="948832" lang="ar" xmltv_id="SSC2.sa@SD">SSC2 HD</channel>
-  <channel site="shahid.mbc.net" site_id="948833" lang="ar" xmltv_id="SSC3.sa@SD">SSC3 HD</channel>
-  <channel site="shahid.mbc.net" site_id="948835" lang="ar" xmltv_id="SSC4.sa@HD">SSC4 HD</channel>
-  <channel site="shahid.mbc.net" site_id="948838" lang="ar" xmltv_id="SSC5.sa@SD">SSC5 HD</channel>
-  <channel site="shahid.mbc.net" site_id="948841" lang="ar" xmltv_id="SSCExtra1.sa@SD">SSC Extra 1 HD</channel>
-  <channel site="shahid.mbc.net" site_id="948843" lang="ar" xmltv_id="SSCExtra2.sa@SD">SSC Extra 2 HD</channel>
-  <channel site="shahid.mbc.net" site_id="948845" lang="ar" xmltv_id="SSCExtra3.sa@SD">SSC Extra 3 HD</channel>
   <channel site="shahid.mbc.net" site_id="951783" lang="ar" xmltv_id="">BIG TIME</channel>
-  <channel site="shahid.mbc.net" site_id="955107" lang="ar" xmltv_id="SSCNews.sa@HD">SSC News</channel>
-  <channel site="shahid.mbc.net" site_id="963330" lang="ar" xmltv_id="">Top Chef Channel</channel>
   <channel site="shahid.mbc.net" site_id="963543" lang="ar" xmltv_id="">قناة طاش</channel>
   <channel site="shahid.mbc.net" site_id="969745" lang="ar" xmltv_id="">ناصر القصبي</channel>
-  <channel site="shahid.mbc.net" site_id="975435" lang="ar" xmltv_id="BabAlHara.sa@SD">قناة باب الحارة</channel>
   <channel site="shahid.mbc.net" site_id="976272" lang="ar" xmltv_id="">قناة الكبير أوي</channel>
   <channel site="shahid.mbc.net" site_id="977946" lang="ar" xmltv_id="">قناة العاصوف</channel>
   <channel site="shahid.mbc.net" site_id="983124" lang="ar" xmltv_id="">قناة مسرح مصر</channel>
+  <channel site="shahid.mbc.net" site_id="992538" lang="ar" xmltv_id="">قناة اللعبة</channel>
+  <channel site="shahid.mbc.net" site_id="1005232" lang="ar" xmltv_id="">قناة سيلفي</channel>
+  <channel site="shahid.mbc.net" site_id="49922714770529" lang="ar" xmltv_id="">الصحراء</channel>
+  <channel site="shahid.mbc.net" site_id="49923086870104" lang="ar" xmltv_id="">قناة سكة سفر</channel>
+  <channel site="shahid.mbc.net" site_id="49923434082342" lang="ar" xmltv_id="">قناة الحصن</channel>
+  <channel site="shahid.mbc.net" site_id="49923446898171" lang="ar" xmltv_id="">FIFA+</channel>
+  <channel site="shahid.mbc.net" site_id="49923562606153" lang="ar" xmltv_id="">حكايات دفعة</channel>
   <channel site="shahid.mbc.net" site_id="986014" lang="ar" xmltv_id="AbdulmajeedAbdullah.sa@SD">عبدالمجيد عبدالله</channel>
-  <channel site="shahid.mbc.net" site_id="986024" lang="ar" xmltv_id="RashidAlMajed.sa@SD">راشد الماجد</channel>
+  <channel site="shahid.mbc.net" site_id="989622" lang="ar" xmltv_id="Aflam.sa@SD">أفلام</channel>
+  <channel site="shahid.mbc.net" site_id="387286" lang="ar" xmltv_id="Alarabiya.ae@SD">العربية</channel>
+  <channel site="shahid.mbc.net" site_id="1003218" lang="ar" xmltv_id="AlArabiyaBusiness.ae@SD">العربية Business</channel>
+  <channel site="shahid.mbc.net" site_id="49923569816895" lang="ar" xmltv_id="AlArabiyaEnglish.sa@SD">AL Arabiya English</channel>
+  <channel site="shahid.mbc.net" site_id="946948" lang="ar" xmltv_id="AlEkhbariya.sa@SD">الإخبارية</channel>
+  <channel site="shahid.mbc.net" site_id="387288" lang="ar" xmltv_id="AlHadath.sa@SD">الحدث</channel>
+  <channel site="shahid.mbc.net" site_id="1029746" lang="ar" xmltv_id="AlkhuzamaRadio.sa@SD">إذاعة خزامى</channel>
+  <channel site="shahid.mbc.net" site_id="946946" lang="ar" xmltv_id="AlQuranAlKareemTV.sa@SD">القرآن الكريم</channel>
+  <channel site="shahid.mbc.net" site_id="946938" lang="ar" xmltv_id="AlSaudiya.sa@SD">السعودية</channel>
+  <channel site="shahid.mbc.net" site_id="999927" lang="ar" xmltv_id="AlSaudiyaAlaan.sa@SD">السعودية الآن</channel>
+  <channel site="shahid.mbc.net" site_id="946942" lang="ar" xmltv_id="AlSunnahAlNabawiyahTV.sa@SD">السنة النبوية</channel>
+  <channel site="shahid.mbc.net" site_id="49923561727230" lang="ar" xmltv_id="Anime.sa@SD">إنمي</channel>
+  <channel site="shahid.mbc.net" site_id="1001845" lang="ar" xmltv_id="AsharqDiscovery.sa@SD">الشرق ديسكفري</channel>
+  <channel site="shahid.mbc.net" site_id="997605" lang="ar" xmltv_id="AsharqDocumentary.sa@SD">Asharq Documentary</channel>
+  <channel site="shahid.mbc.net" site_id="862837" lang="ar" xmltv_id="AsharqNews.sa@SD">الشرق</channel>
+  <channel site="shahid.mbc.net" site_id="975435" lang="ar" xmltv_id="BabAlHara.sa@SD">قناة باب الحارة</channel>
+  <channel site="shahid.mbc.net" site_id="49922904934759" lang="ar" xmltv_id="BigTimePlus.sa@SD">Big Time Plus</channel>
+  <channel site="shahid.mbc.net" site_id="49923172215352" lang="ar" xmltv_id="Fairuz.sa@HD">فيروز</channel>
+  <channel site="shahid.mbc.net" site_id="49922763891977" lang="ar" xmltv_id="MajidAlMohandis.sa@SD">ماجد المهندس</channel>
+  <channel site="shahid.mbc.net" site_id="988045" lang="ar" xmltv_id="Maraya.sa@HD">قناة مرايا</channel>
+  <channel site="shahid.mbc.net" site_id="387238" lang="ar" xmltv_id="MBC1.ae@SD">MBC1</channel>
+  <channel site="shahid.mbc.net" site_id="816764" lang="ar" xmltv_id="MBC1USA.us@SD">MBC1</channel>
+  <channel site="shahid.mbc.net" site_id="400917" lang="ar" xmltv_id="MBC2.ae@SD">MBC2</channel>
+  <channel site="shahid.mbc.net" site_id="409385" lang="ar" xmltv_id="MBC3.ae@SD">MBC3</channel>
+  <channel site="shahid.mbc.net" site_id="816771" lang="ar" xmltv_id="MBC3USA.us@SD">MBC3</channel>
+  <channel site="shahid.mbc.net" site_id="400919" lang="ar" xmltv_id="MBC4.ae@SD">MBC4</channel>
+  <channel site="shahid.mbc.net" site_id="387937" lang="ar" xmltv_id="MBC5.ae@SD">MBC5</channel>
+  <channel site="shahid.mbc.net" site_id="400921" lang="ar" xmltv_id="MBCAction.ae@SD">MBC Action</channel>
+  <channel site="shahid.mbc.net" site_id="409387" lang="ar" xmltv_id="MBCBollywood.ae@SD">MBC Bollywood</channel>
+  <channel site="shahid.mbc.net" site_id="387251" lang="ar" xmltv_id="MBCDrama.ae@SD">MBC Drama</channel>
+  <channel site="shahid.mbc.net" site_id="816781" lang="ar" xmltv_id="MBCDramaUSA.us@SD">MBC Drama</channel>
+  <channel site="shahid.mbc.net" site_id="388567" lang="ar" xmltv_id="MBCFM.ae@SD">MBC FM</channel>
+  <channel site="shahid.mbc.net" site_id="387294" lang="ar" xmltv_id="MBCIraq.iq@SD">MBC Iraq</channel>
+  <channel site="shahid.mbc.net" site_id="387293" lang="ar" xmltv_id="MBCMasr2.eg@SD">MBC Masr2</channel>
+  <channel site="shahid.mbc.net" site_id="387290" lang="ar" xmltv_id="MBCMasr.eg@SD">MBC Masr</channel>
+  <channel site="shahid.mbc.net" site_id="49923122575716" lang="ar" xmltv_id="MBCMasrDrama.sa@SD">مصر دراما</channel>
+  <channel site="shahid.mbc.net" site_id="816776" lang="ar" xmltv_id="MBCMasrUSA.us@SD">MBC Masr</channel>
+  <channel site="shahid.mbc.net" site_id="400924" lang="ar" xmltv_id="MBCMax.ae@SD">MBC MAX</channel>
+  <channel site="shahid.mbc.net" site_id="418308" lang="ar" xmltv_id="MBCPersia.ae@SD">MBC Persia</channel>
+  <channel site="shahid.mbc.net" site_id="387296" lang="ar" xmltv_id="MBCPlusDrama.sa@SD">MBC Plus Drama</channel>
+  <channel site="shahid.mbc.net" site_id="986346" lang="ar" xmltv_id="MohammedAbdo.sa@SD">محمد عبده</channel>
   <channel site="shahid.mbc.net" site_id="986064" lang="ar" xmltv_id="MoviesAction.sa@SD">Movies Action</channel>
   <channel site="shahid.mbc.net" site_id="986069" lang="ar" xmltv_id="MoviesThriller.sa@SD">Movies Thriller</channel>
-  <channel site="shahid.mbc.net" site_id="986346" lang="ar" xmltv_id="MohammedAbdo.sa@SD">محمد عبده</channel>
-  <channel site="shahid.mbc.net" site_id="988045" lang="ar" xmltv_id="Maraya.sa@HD">قناة مرايا</channel>
-  <channel site="shahid.mbc.net" site_id="989622" lang="ar" xmltv_id="Aflam.sa@SD">أفلام</channel>
-  <channel site="shahid.mbc.net" site_id="992538" lang="ar" xmltv_id="">قناة اللعبة</channel>
-  <channel site="shahid.mbc.net" site_id="995495" lang="ar" xmltv_id="SaudiThaqafiyaTV.sa@SD">الثقافية</channel>
-  <channel site="shahid.mbc.net" site_id="997605" lang="ar" xmltv_id="AsharqDocumentary.sa@SD">Asharq Documentary</channel>
-  <channel site="shahid.mbc.net" site_id="999927" lang="ar" xmltv_id="AlSaudiyaAlaan.sa@SD">السعودية الآن</channel>
-  <channel site="shahid.mbc.net" site_id="1001845" lang="ar" xmltv_id="AsharqDiscovery.sa@SD">الشرق ديسكفري</channel>
-  <channel site="shahid.mbc.net" site_id="1003218" lang="ar" xmltv_id="AlArabiyaBusiness.ae@SD">العربية Business</channel>
-  <channel site="shahid.mbc.net" site_id="1005232" lang="ar" xmltv_id="">قناة سيلفي</channel>
-  <channel site="shahid.mbc.net" site_id="1029746" lang="ar" xmltv_id="AlkhuzamaRadio.sa@SD">إذاعة خزامى</channel>
-  <channel site="shahid.mbc.net" site_id="49922661692898" lang="ar" xmltv_id="">Red Bull TV</channel>
-  <channel site="shahid.mbc.net" site_id="49922763510387" lang="ar" xmltv_id="Tarab.sa@SD">طرب</channel>
-  <channel site="shahid.mbc.net" site_id="49922763891977" lang="ar" xmltv_id="MajidAlMohandis.sa@SD">ماجد المهندس</channel>
-  <channel site="shahid.mbc.net" site_id="49922904934759" lang="ar" xmltv_id="BigTimePlus.sa@SD">Big Time Plus</channel>
-  <channel site="shahid.mbc.net" site_id="49923086870104" lang="ar" xmltv_id="">قناة سكة سفر</channel>
-  <channel site="shahid.mbc.net" site_id="49923122575716" lang="ar" xmltv_id="MBCMasrDrama.sa@SD">مصر دراما</channel>
-  <channel site="shahid.mbc.net" site_id="49923172117967" lang="ar" xmltv_id="RabehSaqer.sa@HD">رابح صقر</channel>
-  <channel site="shahid.mbc.net" site_id="49923172215352" lang="ar" xmltv_id="Fairuz.sa@HD">فيروز</channel>
-  <channel site="shahid.mbc.net" site_id="49923305758250" lang="ar" xmltv_id="">قناة البودكاسترز</channel>
-  <channel site="shahid.mbc.net" site_id="49923434082342" lang="ar" xmltv_id="">قناة الحصن</channel>
-  <channel site="shahid.mbc.net" site_id="49923449483061" lang="ar" xmltv_id="">حكايات بعد الفصل</channel>
   <channel site="shahid.mbc.net" site_id="49923518527492" lang="ar" xmltv_id="MTV.lb@SD">MTV Lebanon</channel>
+  <channel site="shahid.mbc.net" site_id="388566" lang="ar" xmltv_id="PanoramaFM.sa@SD">Panorama FM</channel>
+  <channel site="shahid.mbc.net" site_id="49923172117967" lang="ar" xmltv_id="RabehSaqer.sa@HD">رابح صقر</channel>
+  <channel site="shahid.mbc.net" site_id="986024" lang="ar" xmltv_id="RashidAlMajed.sa@SD">راشد الماجد</channel>
+  <channel site="shahid.mbc.net" site_id="995495" lang="ar" xmltv_id="SaudiThaqafiyaTV.sa@SD">الثقافية</channel>
+  <channel site="shahid.mbc.net" site_id="946940" lang="ar" xmltv_id="SBC.sa@SD">SBC</channel>
+  <channel site="shahid.mbc.net" site_id="409390" lang="ar" xmltv_id="SpacetoonArabic.ae@SD">Spacetoon</channel>
+  <channel site="shahid.mbc.net" site_id="49923522151062" lang="ar" xmltv_id="SpookyNights.sa@SD">Spooky Nights</channel>
+  <channel site="shahid.mbc.net" site_id="49922763510387" lang="ar" xmltv_id="Tarab.sa@SD">طرب</channel>
+  <channel site="shahid.mbc.net" site_id="946945" lang="ar" xmltv_id="ThikrayatTV.sa@SD">ذكريات</channel>
+  <channel site="shahid.mbc.net" site_id="414449" lang="ar" xmltv_id="Wanasah.ae@SD">وناسه</channel>
 </channels>
