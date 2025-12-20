@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="sky.de" site_id="928" lang="de" xmltv_id="">Sky Sport Austria 8 HD</channel>
-  <channel site="sky.de" site_id="951" lang="de" xmltv_id="">Nicktoons</channel>
-  <channel site="sky.de" site_id="1032" lang="de" xmltv_id="">SPORTDIGITAL FUSSBALL</channel>
-  <channel site="sky.de" site_id="1205" lang="de" xmltv_id="">Sky Cinema Action HD</channel>
-  <channel site="sky.de" site_id="1206" lang="de" xmltv_id="">Sky Cinema Family HD</channel>
-  <channel site="sky.de" site_id="1207" lang="de" xmltv_id="">Sky Cinema Premiere HD</channel>
-  <channel site="sky.de" site_id="1208" lang="de" xmltv_id="">Sky Cinema Classics HD</channel>
-  <channel site="sky.de" site_id="1209" lang="de" xmltv_id="">Sky Cinema Highlights HD</channel>
-  <channel site="sky.de" site_id="1221" lang="de" xmltv_id="">NatGeo HD</channel>
-  <channel site="sky.de" site_id="1222" lang="de" xmltv_id="">NatGeo Wild HD</channel>
   <channel site="sky.de" site_id="116" lang="de" xmltv_id="13thStreetUniversal.de@HD">13th Street HD</channel>
   <channel site="sky.de" site_id="690" lang="de" xmltv_id="BeateUhseTV.de@HD">Beate Uhse HD</channel>
   <channel site="sky.de" site_id="761" lang="de" xmltv_id="CartoonitoCEE.uk@Germany">Cartoonito</channel>
@@ -21,9 +11,17 @@
   <channel site="sky.de" site_id="86" lang="de" xmltv_id="History.de@HD">HISTORY Channel HD</channel>
   <channel site="sky.de" site_id="452" lang="de" xmltv_id="Jukebox.de@SD">Jukebox</channel>
   <channel site="sky.de" site_id="52" lang="de" xmltv_id="Motorvision.de@SD">Motorvision+</channel>
+  <channel site="sky.de" site_id="1221" lang="de" xmltv_id="NationalGeographic.de@HD">NatGeo HD</channel>
+  <channel site="sky.de" site_id="1222" lang="de" xmltv_id="NationalGeographicWild.de@HD">NatGeo Wild HD</channel>
   <channel site="sky.de" site_id="783" lang="de" xmltv_id="NickJr.de@SD">Nick Jr.</channel>
+  <channel site="sky.de" site_id="951" lang="de" xmltv_id="Nicktoons.de">Nicktoons</channel>
   <channel site="sky.de" site_id="16" lang="de" xmltv_id="RomanceTV.de@HD">Romance TV HD</channel>
   <channel site="sky.de" site_id="2" lang="de" xmltv_id="SkyAtlantic.de@HD">Sky Atlantic HD</channel>
+  <channel site="sky.de" site_id="1205" lang="de" xmltv_id="SkyCinemaAction.de@HD">Sky Cinema Action HD</channel>
+  <channel site="sky.de" site_id="1209" lang="de" xmltv_id="SkyCinemaBestOf.de@HD">Sky Cinema Highlights HD</channel>
+  <channel site="sky.de" site_id="1208" lang="de" xmltv_id="SkyCinemaClassics.de">Sky Cinema Classics HD</channel>
+  <channel site="sky.de" site_id="1206" lang="de" xmltv_id="SkyCinemaFamily.de@HD">Sky Cinema Family HD</channel>
+  <channel site="sky.de" site_id="1207" lang="de" xmltv_id="SkyCinemaPremieren.de@HD">Sky Cinema Premiere HD</channel>
   <channel site="sky.de" site_id="855" lang="de" xmltv_id="SkyCrime.de@HD">Sky Crime HD</channel>
   <channel site="sky.de" site_id="876" lang="de" xmltv_id="SkyDocumentaries.de@HD">Sky Documentaries HD</channel>
   <channel site="sky.de" site_id="753" lang="de" xmltv_id="SkyKrimi.de@HD">Sky Krimi HD</channel>
@@ -49,6 +47,7 @@
   <channel site="sky.de" site_id="883" lang="de" xmltv_id="SkySportAustria5.at@HD">Sky Sport Austria 5 HD</channel>
   <channel site="sky.de" site_id="884" lang="de" xmltv_id="SkySportAustria6.at@HD">Sky Sport Austria 6 HD</channel>
   <channel site="sky.de" site_id="885" lang="de" xmltv_id="SkySportAustria7.at@HD">Sky Sport Austria 7 HD</channel>
+  <channel site="sky.de" site_id="928" lang="de" xmltv_id="SkySportAustria8.at@HD">Sky Sport Austria 8 HD</channel>
   <channel site="sky.de" site_id="119" lang="de" xmltv_id="SkySportBundesliga1.de@HD">Sky Sport Bundesliga 1 HD</channel>
   <channel site="sky.de" site_id="120" lang="de" xmltv_id="SkySportBundesliga2.de@HD">Sky Sport Bundesliga 2 HD</channel>
   <channel site="sky.de" site_id="121" lang="de" xmltv_id="SkySportBundesliga3.de@HD">Sky Sport Bundesliga 3 HD</channel>
@@ -68,6 +67,7 @@
   <channel site="sky.de" site_id="1000" lang="de" xmltv_id="SkySportPremierLeague.de@HD">Sky Sport Premier League HD</channel>
   <channel site="sky.de" site_id="1012" lang="de" xmltv_id="SkySportTennis.de@HD">Sky Sport Tennis HD</channel>
   <channel site="sky.de" site_id="1014" lang="de" xmltv_id="SkySportTopEvent.de@HD">Sky Sport Top Event HD</channel>
+  <channel site="sky.de" site_id="1032" lang="de" xmltv_id="SportdigitalFUSSBALL.de">SPORTDIGITAL FUSSBALL</channel>
   <channel site="sky.de" site_id="115" lang="de" xmltv_id="SYFY.de@HD">SYFY HD</channel>
   <channel site="sky.de" site_id="172" lang="de" xmltv_id="UniversalTV.de@HD">Universal TV HD</channel>
   <channel site="sky.de" site_id="522" lang="de" xmltv_id="WarnerTVComedy.de@HD">Warner TV Comedy HD</channel>
