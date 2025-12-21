@@ -1,6 +1,6 @@
 services:
   iptv-org-epg:
-    image: ghcr.io/knylbyte/iptv-org/epg:latest
+    image: ghcr.io/iptv-org/epg:latest
     container_name: epg
     restart: unless-stopped
     ports:
@@ -18,10 +18,10 @@ services:
       MAX_CONNECTIONS: 1           # performance/output options (supported by the grabber)
       GZIP: false                  # additionally generate guide.xml.gz if "true"
       # DAYS: 2                     # overwrite number of days
-      # TIMEOUT: 10000.             # request-Timeout (ms)
+      # TIMEOUT: 10000              # request-Timeout (ms)
       # DELAY: 500                  # delay between requests (ms)
       # PROXY: "http://user:pass@host:port"
-      # CURL: true.                 # output requests as curl
+      # CURL: true                  # output requests as curl
       # ALL_SITES: true             # itterates through all directories inside sites folder and filtered by CLANG (see below)
 
       #Select source: Either SITE (preferred) or channels.xml (see Volume above)
