@@ -32,7 +32,7 @@ jobs:
           echo ""
           echo "🔎  Reading current version from Dockerfile..."
           echo ""
-          current_tag=$(sed -n 's/^ARG NODE_VERSION=\(.*\)$/\1/p' docker/Dockerfile)
+          current_tag=$(sed -n 's/^ARG[[:space:]]\+NODE_VERSION=\(.*\)$/\1/p' docker/Dockerfile | tr -d '\r' | head -n1)
           if [[ -z "$current_tag" ]]; then
             echo "❌  Could not find current NODE_VERSION in docker/Dockerfile" >&2
             exit 1
@@ -94,12 +94,6 @@ jobs:
 
             # 1) ARG NODE_VERSION=<MAJOR>
             sed -i.bak -E 's/^(ARG[[:space:]]+NODE_VERSION=).*/\1'"$latest_major"'/' "$file"
-
-            # 2) FROM node:${NODE_VERSION:-<N>}-alpine AS builder
-            sed -i.bak -E 's|^(FROM[[:space:]]+node:\$\{NODE_VERSION:-)[0-9]+(\}-alpine[[:space:]]+AS[[:space:]]+builder)$|\1'"$latest_major"'\2|' "$file"
-
-            # 3) FROM gcr.io/distroless/nodejs${NODE_VERSION:-<N>} AS runner
-            sed -i.bak -E 's|^(FROM[[:space:]]+gcr\.io/distroless/nodejs\$\{NODE_VERSION:-)[0-9]+(\}[[:space:]]+AS[[:space:]]+runner)$|\1'"$latest_major"'\2|' "$file"
 
             rm -f "${file}.bak"
             updated="true"

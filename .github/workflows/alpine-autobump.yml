@@ -6,7 +6,7 @@ on:
     - cron: "0 0 * * *"
 
 permissions:
-  contents: read
+  contents: write
   actions: write
 
 concurrency:
@@ -28,7 +28,7 @@ jobs:
         run: |
           set -euo pipefail
           file="docker/Dockerfile"
-          current="$(sed -n 's/^ARG ALPINE_VERSION=\(.*\)$/\1/p' "$file" | head -1)"
+          current="$(sed -n 's/^ARG[[:space:]]\+ALPINE_VERSION=\(.*\)$/\1/p' "$file" | tr -d '\r' | head -n1)"
           if [[ -z "${current:-}" ]]; then
             echo "❌  ARG ALPINE_VERSION not found in $file" >&2
             exit 1
@@ -76,9 +76,6 @@ jobs:
 
           # 1) ARG ALPINE_VERSION=<latest>
           sed -i.bak -E 's/^(ARG[[:space:]]+ALPINE_VERSION=).*/\1'"$latest"'/' "$file"
-
-          # 2) FROM alpine:${ALPINE_VERSION:-<fallback>}
-          sed -i.bak -E 's|^(FROM[[:space:]]+alpine:\$\{ALPINE_VERSION:-)[0-9.]+(\})|\1'"$latest"'\2|' "$file"
 
           rm -f "${file}.bak"
           echo "updated=true" >> "$GITHUB_OUTPUT"
