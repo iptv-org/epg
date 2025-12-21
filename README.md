@@ -231,7 +231,7 @@ ghcr.io/iptv-org/epg:latest
 | PORT            | Port on which the web server listens (default: 3000)                                                               |
 | MAX_CONNECTIONS | Limit on the number of concurrent requests (default: 1)                                                            |
 | SITE            | Specific website(s) from SITES.md (default: empty)                                                                 |
-| ALL_SITES       | Fetches all sites by merging all site channel lists under `/epg/sites` (default: false)                            |
+| ALL_SITES       | Fetches all sites by iterates and merging all site channel lists under `/epg/sites` (default: false)               |
 | CLANG           | Language filter (ISO 639-1 codes, e.g., "en,es") (default: undefined)                                              |
 | GZIP            | Boolean value indicating whether to create a compressed version of the guide (default: false)                      |
 | CURL            | Display each request as CURL (default: false)                                                                      |
