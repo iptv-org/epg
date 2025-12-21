@@ -237,7 +237,7 @@ ghcr.io/iptv-org/epg:latest
 | CURL            | Display each request as CURL (default: false)                                                                      |
 | PROXY           | Use the specified proxy                                                                                            |
 | DAYS            | Number of days for which the guide will be loaded (defaults to the value from the site config)                     |
-| TIMEOUT         | Timeout for each request in milliseconds (default: 0)                                                              |
+| TIMEOUT         | Timeout for each request in milliseconds (default: 30000)                                                          |
 | DELAY           | Delay between request in milliseconds (default: 0)                                                                 |
 | RUN_AT_STARTUP  | Run grab on container startup (default: true)                                                                      |
 
