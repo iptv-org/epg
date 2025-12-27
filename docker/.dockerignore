@@ -1,0 +1,21 @@
+# Exclude files and dirs not needed for the image build context
+.git
+.github
+.husky
+.vscode
+node_modules
+npm-debug.log*
+yarn.lock
+pnpm-lock.yaml
+dist
+build
+coverage
+temp
+.api
+guides
+tests
+Dockerfile.old
+*.local
+*.log
+
+# Keep required runtime dirs: scripts, sites, public (created in image)
