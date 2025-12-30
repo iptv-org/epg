@@ -70,7 +70,7 @@
     <tr><td><a href="sites/guidetnt.com">guidetnt.com</a></td><td align="right">69</td><td align="right">68</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/horizon.tv">horizon.tv</a></td><td align="right">184</td><td align="right">172</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/hoy.tv">hoy.tv</a></td><td align="right">3</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/i.mjh.nz">i.mjh.nz</a></td><td align="right">6458</td><td align="right">1464</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/i.mjh.nz">i.mjh.nz</a></td><td align="right">6464</td><td align="right">1470</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/i24news.tv">i24news.tv</a></td><td align="right">4</td><td align="right">3</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/iltalehti.fi">iltalehti.fi</a></td><td align="right">147</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/indihometv.com">indihometv.com</a></td><td align="right">126</td><td align="right">120</td><td align="center">🟢</td><td></td></tr>
