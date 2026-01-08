@@ -80,7 +80,9 @@ export async function loadJs(filepath: string) {
 
 export async function loadIssues(props?: { labels: string[] | string }) {
   const CustomOctokit = Octokit.plugin(paginateRest, restEndpointMethods)
-  const octokit = new CustomOctokit()
+  const octokit = new CustomOctokit({
+    auth: process.env.GH_TOKEN
+  })
 
   let labels = ''
   if (props && props.labels) {

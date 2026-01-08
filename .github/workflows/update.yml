@@ -32,6 +32,8 @@ jobs:
         run: npm run channels:lint
       - name: update sites.md
         run: npm run sites:update
+        env:
+          GH_TOKEN: ${{ steps.create-app-token.outputs.token }}
       - run: git status
       - name: commit changes to sites.md
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
