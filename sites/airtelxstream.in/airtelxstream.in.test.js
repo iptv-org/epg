@@ -41,7 +41,6 @@ it('can parse response', () => {
 })
 
 it('can handle empty guide', () => {
-
   const results = parser({ content: '{"programGuide": {}}' })
   expect(results).toMatchObject([])
 })
