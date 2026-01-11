@@ -50,6 +50,11 @@ program
       .argParser(parseNumber)
       .env('MAX_CONNECTIONS')
   )
+  .addOption(
+    new Option('--retries <number>', 'Limit on the number of retries requests default: 0')
+      .argParser(parseNumber)
+      .env('MAX_RETRIES')
+  )
   .addOption(new Option('--gzip', 'Create a compressed version of the guide as well').env('GZIP'))
   .addOption(new Option('--curl', 'Display each request as CURL').env('CURL'))
   .addOption(new Option('--debug', 'Enable debug mode').env('DEBUG'))
@@ -63,6 +68,7 @@ interface GrabOptions {
   curl?: boolean
   debug?: boolean
   maxConnections?: number
+  retries?: number
   timeout?: number
   delay?: number
   lang?: string
@@ -187,6 +193,7 @@ async function main() {
   await loadData()
 
   logger.info('creating queue...')
+  logger.info(`max retries per request: ${options.retries || 1}`)
   const queue = new Collection<QueueItem>()
 
   let index = 0
@@ -236,23 +243,36 @@ async function main() {
 
       channels.add(channel)
 
-      const channelPrograms = await grabber.grab(
-        channel,
-        date,
-        config,
-        (context: epgGrabber.Types.GrabCallbackContext, error: Error | null) => {
-          logger.info(
-            `  [${i}/${total}] ${context.channel.site} (${context.channel.lang}) - ${
-              context.channel.xmltv_id
-            } - ${context.date.format('MMM D, YYYY')} (${context.programs.length} programs)`
-          )
-          if (i < total) i++
+      let channelPrograms: epgGrabber.Program[] = []
+      let hasError = false
 
-          if (error) {
-            logger.info(`    ERR: ${error.message}`)
+      for (let attempt = 0; attempt <= (options.retries || 0); attempt++) {
+        channelPrograms = await grabber.grab(
+          channel,
+          date,
+          config,
+          (context: epgGrabber.Types.GrabCallbackContext, error: Error | null) => {
+            hasError = false
+
+            logger.info(
+              `  [${i}/${total}] (attempt: ${attempt + 1}/${options.retries || 1}) ${
+                context.channel.site
+              } (${context.channel.lang}) - ${context.channel.xmltv_id} - ${context.date.format(
+                'MMM D, YYYY'
+              )} (${context.programs.length} programs)`
+            )
+
+            if (i < total) i++
+
+            if (error) {
+              hasError = true
+              logger.info(`    ERR: ${error.message}`)
+            }
           }
-        }
-      )
+        )
+
+        if (!hasError) break
+      }
 
       const _programs = new Collection<epgGrabber.Program>(channelPrograms).map<Program>(
         program => new Program(program.toObject())
