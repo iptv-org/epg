@@ -7,6 +7,7 @@
   <tbody>
     <tr><td><a href="sites/9tv.co.il">9tv.co.il</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/abc.net.au">abc.net.au</a></td><td align="right">548</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/airtelxstream.in">airtelxstream.in</a></td><td align="right">967</td><td align="right">668</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/allente.no">allente.no</a></td><td align="right">319</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/andorradifusio.ad">andorradifusio.ad</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/anteltv.com.uy">anteltv.com.uy</a></td><td align="right">54</td><td align="right">46</td><td align="center">🟢</td><td></td></tr>
