@@ -1,0 +1,182 @@
+name: Update Runtime Tool Versions
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: update-runtime-tools
+  cancel-in-progress: true
+
+jobs:
+  update:
+    name: Check and Bump PM2/SERVE/TSX/CHRONOS
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node (for npm view)
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'lts/*'
+
+      - name: Step 1 — Read current versions from Dockerfile
+        id: current
+        shell: bash
+        run: |
+          set -euo pipefail
+          file="docker/Dockerfile"
+
+          # read current ARG values (strip possible CR from CRLF files)
+          current_pm2=$(sed -n 's/^ARG[[:space:]]\+PM2_VER=\(.*\)$/\1/p' "$file" | tr -d '\r' | head -n1)
+          current_serve=$(sed -n 's/^ARG[[:space:]]\+SERVE_VER=\(.*\)$/\1/p' "$file" | tr -d '\r' | head -n1)
+          current_tsx=$(sed -n 's/^ARG[[:space:]]\+TSX_VER=\(.*\)$/\1/p' "$file" | tr -d '\r' | head -n1)
+          current_chronos=$(sed -n 's/^ARG[[:space:]]\+CHRONOS_VER=\(.*\)$/\1/p' "$file" | tr -d '\r' | head -n1)
+
+          if [[ -z "${current_pm2}" || -z "${current_serve}" || -z "${current_tsx}" || -z "${current_chronos}" ]]; then
+            echo "❌  Could not read one or more ARGs from $file" >&2
+            exit 1
+          fi
+
+          echo "pm2=${current_pm2}" >> "$GITHUB_OUTPUT"
+          echo "serve=${current_serve}" >> "$GITHUB_OUTPUT"
+          echo "tsx=${current_tsx}" >> "$GITHUB_OUTPUT"
+          echo "chronos=${current_chronos}" >> "$GITHUB_OUTPUT"
+
+          echo "✅  Current versions:"
+          echo "    PM2_VER=${current_pm2}"
+          echo "    SERVE_VER=${current_serve}"
+          echo "    TSX_VER=${current_tsx}"
+          echo "    CHRONOS_VER=${current_chronos}"
+
+      - name: Step 2 — Get latest versions from npm
+        id: latest
+        shell: bash
+        run: |
+          set -euo pipefail
+          latest_pm2=$(npm view pm2 version)
+          latest_serve=$(npm view serve version)
+          latest_tsx=$(npm view tsx version)
+          latest_chronos=$(npm view @freearhey/chronos version)
+
+          if [[ -z "${latest_pm2}" || -z "${latest_serve}" || -z "${latest_tsx}" || -z "${latest_chronos}" ]]; then
+            echo "❌  Failed to read one or more latest versions from npm" >&2
+            exit 1
+          fi
+
+          echo "pm2=${latest_pm2}" >> "$GITHUB_OUTPUT"
+          echo "serve=${latest_serve}" >> "$GITHUB_OUTPUT"
+          echo "tsx=${latest_tsx}" >> "$GITHUB_OUTPUT"
+          echo "chronos=${latest_chronos}" >> "$GITHUB_OUTPUT"
+
+          echo "✅  Latest versions on npm:"
+          echo "    pm2=${latest_pm2}"
+          echo "    serve=${latest_serve}"
+          echo "    tsx=${latest_tsx}"
+          echo "    @freearhey/chronos=${latest_chronos}"
+
+      - name: Step 3 — Update Dockerfile if newer
+        id: update
+        shell: bash
+        run: |
+          set -euo pipefail
+          file="docker/Dockerfile"
+          updated="false"
+          changes=()
+
+          cur_pm2='${{ steps.current.outputs.pm2 }}'
+          cur_serve='${{ steps.current.outputs.serve }}'
+          cur_tsx='${{ steps.current.outputs.tsx }}'
+          cur_chronos='${{ steps.current.outputs.chronos }}'
+
+          lat_pm2='${{ steps.latest.outputs.pm2 }}'
+          lat_serve='${{ steps.latest.outputs.serve }}'
+          lat_tsx='${{ steps.latest.outputs.tsx }}'
+          lat_chronos='${{ steps.latest.outputs.chronos }}'
+
+          bump_arg () {
+            local key="$1" ; local new="$2"
+            sed -i.bak -E "s/^(ARG[[:space:]]+${key}=).*/\1${new}/" "$file"
+          }
+
+          if [[ "$lat_pm2" != "$cur_pm2" ]]; then
+            bump_arg "PM2_VER" "$lat_pm2"
+            changes+=("PM2_VER: ${cur_pm2} → ${lat_pm2}")
+            updated="true"
+          fi
+          if [[ "$lat_serve" != "$cur_serve" ]]; then
+            bump_arg "SERVE_VER" "$lat_serve"
+            changes+=("SERVE_VER: ${cur_serve} → ${lat_serve}")
+            updated="true"
+          fi
+          if [[ "$lat_tsx" != "$cur_tsx" ]]; then
+            bump_arg "TSX_VER" "$lat_tsx"
+            changes+=("TSX_VER: ${cur_tsx} → ${lat_tsx}")
+            updated="true"
+          fi
+          if [[ "$lat_chronos" != "$cur_chronos" ]]; then
+            bump_arg "CHRONOS_VER" "$lat_chronos"
+            changes+=("CHRONOS_VER: ${cur_chronos} → ${lat_chronos}")
+            updated="true"
+          fi
+
+          rm -f "${file}.bak" || true
+
+          if [[ "$updated" == "true" ]]; then
+            echo "updated=true" >> "$GITHUB_OUTPUT"
+            {
+              echo "changes<<__CHANGES__"
+              printf '%s\n' "${changes[@]}"
+              echo "__CHANGES__"
+            } >> "$GITHUB_OUTPUT"
+            printf "✏️  Updated:\n%s\n" "$(printf '%s\n' "${changes[@]}")"
+          else
+            echo "updated=false" >> "$GITHUB_OUTPUT"
+            echo "ℹ️  No updates needed."
+          fi
+
+
+      - name: Step 4 — Commit and push
+        if: steps.update.outputs.updated == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docker/Dockerfile
+          printf 'chore(docker): bump runtime tools\n\n%s\n' "${{ steps.update.outputs.changes }}" | git commit -F -
+          git push
+
+      - name: Step 5 — Trigger Docker Build via workflow_dispatch
+        if: steps.update.outputs.updated == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh workflow run docker-build.yml --ref master
+
+      - name: Summary
+        if: always()
+        shell: bash
+        run: |
+          {
+            if [[ "${{ steps.update.outputs.updated }}" == "true" ]]; then
+              echo "## ✅ Updated runtime tool versions"
+              echo "##🧱  Push triggers your Docker build workflow."
+              echo ""
+              echo '```'
+              printf '%s\n' "${{ steps.update.outputs.changes }}"
+              echo '```'
+            else
+              echo "## ℹ️ Runtime tool versions already up-to-date."
+              echo ""
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
