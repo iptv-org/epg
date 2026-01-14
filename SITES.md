@@ -105,7 +105,7 @@
     <tr><td><a href="sites/mujtvprogram.cz">mujtvprogram.cz</a></td><td align="right">216</td><td align="right">202</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/musor.tv">musor.tv</a></td><td align="right">181</td><td align="right">142</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/mysky.com.ph">mysky.com.ph</a></td><td align="right">115</td><td align="right">43</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/mytelly.co.uk">mytelly.co.uk</a></td><td align="right">488</td><td align="right">387</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/mytelly.co.uk">mytelly.co.uk</a></td><td align="right">488</td><td align="right">387</td><td align="center">🟢</td><td>https://github.com/iptv-org/epg/issues/2985</td></tr>
     <tr><td><a href="sites/mytvsuper.com">mytvsuper.com</a></td><td align="right">108</td><td align="right">99</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/neo.io">neo.io</a></td><td align="right">337</td><td align="right">230</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/nhkworldpremium.com">nhkworldpremium.com</a></td><td align="right">2</td><td align="right">2</td><td align="center">🟢</td><td></td></tr>
