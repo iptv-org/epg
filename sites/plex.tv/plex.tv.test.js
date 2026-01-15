@@ -11,7 +11,7 @@ jest.mock('axios')
 
 const date = dayjs.utc('2023-02-05', 'YYYY-MM-DD').startOf('d')
 const channel = {
-  site_id: '5e20b730f2f8d5003d739db7-5eea605674085f0040ddc7a6',
+  site_id: '5eea605674085f0040ddc7a6',
   xmltv_id: 'DarkMatterTV.us'
 }
 
@@ -53,4 +53,42 @@ it('can handle empty guide', () => {
   const results = parser({ content })
 
   expect(results).toMatchObject([])
+})
+
+it('can parse channel list', async () => {
+  const axios = require('axios')
+  axios.get.mockResolvedValue({
+    data: {
+      MediaContainer: {
+        Channel: [
+          {
+            title: 'The World Poker Tour',
+            gridKey: '5f6b8e7900b0950040d0f2b2',
+            id: '5e20b730f2f8d5003d739db7-5f6b8e7900b0950040d0f2b2',
+            thumb: 'https://provider-static.plex.tv/epg/cms/production/c40e4f88-6f5c-4f2a-8d54-e6812e25771c/wpt_logo.png',
+            Media: [
+              {
+                Part: [
+                  {
+                    key: '/library/parts/5e20b730f2f8d5003d739db7-5f6b8e7900b0950040d0f2b2.m3u8'
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  })
+
+  const { channels } = require('./plex.tv.config.js')
+  const results = await channels({ token: 'TEST_TOKEN' })
+
+  expect(results[0]).toMatchObject({
+    lang: 'en',
+    site_id: '5f6b8e7900b0950040d0f2b2',
+    name: 'The World Poker Tour',
+    // logo: 'https://provider-static.plex.tv/epg/cms/production/c40e4f88-6f5c-4f2a-8d54-e6812e25771c/wpt_logo.png',
+    // url: 'https://epg.provider.plex.tv/library/parts/5e20b730f2f8d5003d739db7-5f6b8e7900b0950040d0f2b2.m3u8?X-Plex-Token=TEST_TOKEN'
+  })
 })
