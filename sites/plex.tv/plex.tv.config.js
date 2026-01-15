@@ -20,10 +20,13 @@ module.exports = {
     const items = parseItems(content)
     for (let item of items) {
       programs.push({
-        title: item.title,
+        title: item.grandparentTitle || item.title,
+        subTitle: (item.grandparentTitle && item.title !== item.grandparentTitle) ? item.title : null,
         description: item.summary,
         categories: parseCategories(item),
-        image: item.art,
+        season: item.parentIndex || null,
+        episode: item.index || null,
+        image: item.thumb || item.grandparentThumb || null,
         start: parseStart(item),
         stop: parseStop(item)
       })
