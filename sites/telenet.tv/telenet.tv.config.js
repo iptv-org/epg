@@ -22,25 +22,19 @@ module.exports = {
     if (!items.length) return programs
     const promises = [
       axios.get(
-        `${API_STATIC_ENDPOINT}/${channel.lang}/events/segments/${date
-          .add(6, 'h')
-          .format('YYYYMMDDHHmmss')}`,
+        `${API_STATIC_ENDPOINT}/${channel.lang}/events/segments/${date.format('YYYYMMDD')}060000`,
         {
           responseType: 'arraybuffer'
         }
       ),
       axios.get(
-        `${API_STATIC_ENDPOINT}/${channel.lang}/events/segments/${date
-          .add(12, 'h')
-          .format('YYYYMMDDHHmmss')}`,
+        `${API_STATIC_ENDPOINT}/${channel.lang}/events/segments/${date.format('YYYYMMDD')}120000`,
         {
           responseType: 'arraybuffer'
         }
       ),
       axios.get(
-        `${API_STATIC_ENDPOINT}/${channel.lang}/events/segments/${date
-          .add(18, 'h')
-          .format('YYYYMMDDHHmmss')}`,
+        `${API_STATIC_ENDPOINT}/${channel.lang}/events/segments/${date.format('YYYYMMDD')}180000`,
         {
           responseType: 'arraybuffer'
         }
