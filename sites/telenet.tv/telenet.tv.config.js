@@ -63,6 +63,7 @@ module.exports = {
       const detail = await loadProgramDetails(item, channel)
       programs.push({
         title: item.title,
+        subTitle: detail.episodeName,
         icon: parseIcon(item),
         description: detail.longDescription,
         category: detail.genres,
