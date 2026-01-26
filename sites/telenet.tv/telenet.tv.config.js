@@ -14,7 +14,7 @@ module.exports = {
     }
   },
   url: function ({ date, channel }) {
-    return `${API_STATIC_ENDPOINT}/${channel.lang}/events/segments/${date.format('YYYYMMDDHHmmss')}`
+    return `${API_STATIC_ENDPOINT}/${channel.lang}/events/segments/${date.format('YYYYMMDD')}000000`
   },
   async parser({ content, channel, date }) {
     let programs = []
