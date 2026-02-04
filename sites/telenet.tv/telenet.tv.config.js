@@ -14,7 +14,7 @@ module.exports = {
     }
   },
   url: function ({ date, channel }) {
-    return `${API_STATIC_ENDPOINT}/${channel.lang}/events/segments/${date.format('YYYYMMDDHHmmss')}`
+    return `${API_STATIC_ENDPOINT}/${channel.lang}/events/segments/${date.format('YYYYMMDD')}000000`
   },
   async parser({ content, channel, date }) {
     let programs = []
@@ -22,25 +22,19 @@ module.exports = {
     if (!items.length) return programs
     const promises = [
       axios.get(
-        `${API_STATIC_ENDPOINT}/${channel.lang}/events/segments/${date
-          .add(6, 'h')
-          .format('YYYYMMDDHHmmss')}`,
+        `${API_STATIC_ENDPOINT}/${channel.lang}/events/segments/${date.format('YYYYMMDD')}060000`,
         {
           responseType: 'arraybuffer'
         }
       ),
       axios.get(
-        `${API_STATIC_ENDPOINT}/${channel.lang}/events/segments/${date
-          .add(12, 'h')
-          .format('YYYYMMDDHHmmss')}`,
+        `${API_STATIC_ENDPOINT}/${channel.lang}/events/segments/${date.format('YYYYMMDD')}120000`,
         {
           responseType: 'arraybuffer'
         }
       ),
       axios.get(
-        `${API_STATIC_ENDPOINT}/${channel.lang}/events/segments/${date
-          .add(18, 'h')
-          .format('YYYYMMDDHHmmss')}`,
+        `${API_STATIC_ENDPOINT}/${channel.lang}/events/segments/${date.format('YYYYMMDD')}180000`,
         {
           responseType: 'arraybuffer'
         }
@@ -63,6 +57,7 @@ module.exports = {
       const detail = await loadProgramDetails(item, channel)
       programs.push({
         title: item.title,
+        subTitle: detail.episodeName,
         icon: parseIcon(item),
         description: detail.longDescription,
         category: detail.genres,
