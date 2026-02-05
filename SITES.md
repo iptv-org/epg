@@ -146,7 +146,7 @@
     <tr><td><a href="sites/ruv.is">ruv.is</a></td><td align="right">2</td><td align="right">2</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/s.mxtv.jp">s.mxtv.jp</a></td><td align="right">2</td><td align="right">2</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/sat.tv">sat.tv</a></td><td align="right">30308</td><td align="right">249</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/shahid.mbc.net">shahid.mbc.net</a></td><td align="right">206</td><td align="right">167</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/shahid.mbc.net">shahid.mbc.net</a></td><td align="right">207</td><td align="right">168</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/siba.com.co">siba.com.co</a></td><td align="right">98</td><td align="right">95</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/singtel.com">singtel.com</a></td><td align="right">155</td><td align="right">113</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/sjonvarp.is">sjonvarp.is</a></td><td align="right">13</td><td align="right">13</td><td align="center">🟢</td><td></td></tr>
