@@ -22,7 +22,7 @@
     <tr><td><a href="sites/beinsports.com">beinsports.com</a></td><td align="right">130</td><td align="right">81</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/berrymedia.co.kr">berrymedia.co.kr</a></td><td align="right">5</td><td align="right">5</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/cableplus.com.uy">cableplus.com.uy</a></td><td align="right">171</td><td align="right">44</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/canalplus.com">canalplus.com</a></td><td align="right">13118</td><td align="right">179</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/canalplus.com">canalplus.com</a></td><td align="right">13118</td><td align="right">179</td><td align="center">🟢</td><td>https://github.com/iptv-org/epg/issues/3002</td></tr>
     <tr><td><a href="sites/cgates.lt">cgates.lt</a></td><td align="right">47</td><td align="right">29</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/chada.ma">chada.ma</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/chaines-tv.orange.fr">chaines-tv.orange.fr</a></td><td align="right">373</td><td align="right">328</td><td align="center">🟢</td><td></td></tr>
