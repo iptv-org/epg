@@ -230,7 +230,7 @@
     <tr><td><a href="sites/wavve.com">wavve.com</a></td><td align="right">77</td><td align="right">76</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/web.magentatv.de">web.magentatv.de</a></td><td align="right">348</td><td align="right">226</td><td align="center">🟢</td><td>https://github.com/iptv-org/epg/issues/2966</td></tr>
     <tr><td><a href="sites/webtv.delta.nl">webtv.delta.nl</a></td><td align="right">247</td><td align="right">204</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/winplay.co">winplay.co</a></td><td align="right">2</td><td align="right">2</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/winplay.co">winplay.co</a></td><td align="right">2</td><td align="right">2</td><td align="center">🟢</td><td>https://github.com/iptv-org/epg/issues/3003</td></tr>
     <tr><td><a href="sites/worldfishingnetwork.com">worldfishingnetwork.com</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/www3.nhk.or.jp">www3.nhk.or.jp</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/xem.kplus.vn">xem.kplus.vn</a></td><td align="right">77</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
