@@ -407,6 +407,27 @@ This way, you can map channels by simply selecting the proper ID from the list:
 
 Once complete, [commit](https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/about-commits) all changes and send a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
 
+### How to add my server to the GUIDES.md?
+
+To do this, you just need to place the `worker.json` file in a public directory on your server.
+
+<details>
+<summary>worker.json</summary>
+<br>
+
+```json
+{
+  "channels": "path/to/channels.xml",
+  "guide": "path/to/guide.xml"
+}
+```
+
+</details>
+
+And then add server domain or IP address to the [workers.txt](workers.txt) file.
+
+Once your request is approved, it will automatically be added to the [GUIDES.md](GUIDES.md).
+
 ## Project Structure
 
 - `.github/`
@@ -417,8 +438,10 @@ Once complete, [commit](https://docs.github.com/en/pull-requests/committing-chan
 - `sites/`: contains configurations, channel lists and tests for all sites.
 - `tests/`: contains tests to check the scripts.
 - `CONTRIBUTING.md`: file you are currently reading.
+- `GUIDES.md`: list of all available guides and their current status.
 - `README.md`: project description displayed on the home page.
 - `SITES.md`: list of all supported sites and their current status.
+- `workers.txt`: list of all available community workers.
 
 ## Scripts
 
@@ -439,6 +462,7 @@ To run scripts use the `npm run <script-name>` command.
 - `channels:validate`: checks the description of channels for errors.
 - `sites:init`: creates a new site config from the template.
 - `sites:update`: updates the list of sites and their status in [SITES.md](SITES.md).
+- `guides:update`: updates the list of guides and their status in [GUIDES.md](GUIDES.md).
 - `grab`: downloads a program from a specified source.
 - `serve`: starts the [web server](https://github.com/vercel/serve).
 - `lint`: сhecks the scripts for syntax errors.
