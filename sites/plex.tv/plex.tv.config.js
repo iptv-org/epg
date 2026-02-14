@@ -12,19 +12,21 @@ module.exports = {
     }
   },
   url: function ({ channel, date }) {
-    const [, channelGridKey] = channel.site_id.split('-')
-
-    return `${API_ENDPOINT}/grid?channelGridKey=${channelGridKey}&date=${date.format('YYYY-MM-DD')}`
+    
+    return `${API_ENDPOINT}/grid?channelGridKey=${channel.site_id}&date=${date.format('YYYY-MM-DD')}`
   },
   parser({ content }) {
     const programs = []
     const items = parseItems(content)
     for (let item of items) {
       programs.push({
-        title: item.title,
+        title: item.grandparentTitle || item.title,
+        subTitle: (item.grandparentTitle && item.title !== item.grandparentTitle) ? item.title : null,
         description: item.summary,
         categories: parseCategories(item),
-        image: item.art,
+        season: item.parentIndex || null,
+        episode: item.index || null,
+        image: item.thumb || item.grandparentThumb || null,
         start: parseStart(item),
         stop: parseStop(item)
       })
@@ -41,8 +43,10 @@ module.exports = {
     return data.MediaContainer.Channel.map(c => {
       return {
         lang: 'en',
-        site_id: c.id,
-        name: c.title
+        site_id: c.gridKey,
+        name: c.title,
+        //  logo: c.thumb || null,
+        //  url: c.Media?.[0]?.Part?.[0]?.key ? `${API_ENDPOINT}${c.Media?.[0]?.Part?.[0]?.key}?X-Plex-Token=${token}` : null
       }
     })
   }
