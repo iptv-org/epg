@@ -28,20 +28,17 @@ it('can parse response', () => {
     return p
   })
 
-  const image = 'https://mage.stream.nos.pt/mage/v1/Images?sourceUri=http://vip.pam.local.internal/PAM.Images/Store/8329ed1aec5d4c0faa2056972256ff9f&profile=ott_1_452x340&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI'
-
   expect(results[0]).toMatchObject({
-    start: '2023-12-11T16:30:00.000Z',
-    stop: '2023-12-11T17:00:00.000Z',
-    title: 'Village Vets',
-    description:
-      'A história de dois melhores amigos veterinários e o seu extraordinário trabalho na Austrália.',
-    season: 1,
-    episode: 12,
+    start: '2026-01-23T22:39:00.000Z',
+    stop: '2026-01-24T00:23:00.000Z',
+    title: 'Em Casa d\'Amália',
+    description: 'Que mais poderíamos pedir para o regresso deste programa, do que receber um dos poetas de Amália? Manuel Alegre, autor do icónico "Trova do Vento que Passa", estará connosco. A este raro momento, juntam-se também ilustres convidados: Paulo de Carvalho e o seu filho Agir, Rita Guerra e André Amaro...',
+    season: 9,
+    episode: 15,
     icon: {
-      src: image
+      src: 'https://mage.stream.nos.pt/mage/v1/Images?sourceUri=http://vip.pam.local.internal/PAM.Images/Store/901d96a8f1534749b076212c296d821e&profile=ott_1_452x340&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI'
     },
-    image
+    image: 'https://mage.stream.nos.pt/mage/v1/Images?sourceUri=http://vip.pam.local.internal/PAM.Images/Store/901d96a8f1534749b076212c296d821e&profile=ott_1_452x340&client_id=xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI'
   })
 })
 
