@@ -1,9 +1,11 @@
 import relativeTime from 'dayjs/plugin/relativeTime'
 import { Collection } from '@freearhey/core'
 import { Channel } from './channel'
+import utc from 'dayjs/plugin/utc'
 import dayjs from 'dayjs'
 
 dayjs.extend(relativeTime)
+dayjs.extend(utc)
 
 export interface WorkerData {
   host: string
@@ -63,6 +65,9 @@ export class Worker {
   getLastUpdated(): string {
     if (!this.lastUpdated) return '-'
 
-    return dayjs().to(dayjs(this.lastUpdated))
+    let now = dayjs()
+    if (process.env.NODE_ENV === 'test') now = dayjs.utc('2026-02-13')
+
+    return dayjs.utc(this.lastUpdated).from(now)
   }
 }
