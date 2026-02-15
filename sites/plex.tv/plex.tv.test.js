@@ -44,7 +44,7 @@ it('can parse response', () => {
     rating: 'TV-PG',
     season: 8,
     episode: 13,
-    date: '2015-02-15'
+    date: '2015-02-15T00:00:00Z'
   })
 
   // Testing another item: "Riders on the Storm"

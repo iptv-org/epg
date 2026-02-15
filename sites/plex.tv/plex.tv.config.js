@@ -25,7 +25,7 @@ module.exports = {
         subTitle: (item.grandparentTitle && item.title !== item.grandparentTitle) ? item.title : null,
         description: item.summary,
         rating: item.contentRating || null,
-        date: item.originallyAvailableAt ? dayjs(item.originallyAvailableAt).format('YYYY-MM-DD') : (item.year || null),
+        date: item.originallyAvailableAt || item.year || null,
         categories: parseCategories(item),
         season: item.parentIndex || null,
         episode: item.index || null,
