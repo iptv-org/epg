@@ -8,7 +8,8 @@ module.exports = {
   days: 2,
   request: {
     headers: {
-      'x-plex-provider-version': '5.1'
+      'x-plex-provider-version': '7.2',
+      'Accept': 'application/json'
     }
   },
   url: function ({ channel, date }) {
@@ -23,6 +24,8 @@ module.exports = {
         title: item.grandparentTitle || item.title,
         subTitle: (item.grandparentTitle && item.title !== item.grandparentTitle) ? item.title : null,
         description: item.summary,
+        rating: item.contentRating || null,
+        date: item.originallyAvailableAt ? dayjs(item.originallyAvailableAt).format('YYYY-MM-DD') : (item.year || null),
         categories: parseCategories(item),
         season: item.parentIndex || null,
         episode: item.index || null,

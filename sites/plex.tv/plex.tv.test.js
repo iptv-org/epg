@@ -12,7 +12,7 @@ jest.mock('axios')
 const date = dayjs.utc('2023-02-05', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: '5eea605674085f0040ddc7a6',
-  xmltv_id: 'DarkMatterTV.us'
+  xmltv_id: 'Heartland.ca'
 }
 
 it('can generate valid url', () => {
@@ -23,7 +23,7 @@ it('can generate valid url', () => {
 
 it('can generate valid request headers', () => {
   expect(request.headers).toMatchObject({
-    'x-plex-provider-version': '5.1'
+    'x-plex-provider-version': '7.2' // Updated to match config.js
   })
 })
 
@@ -36,25 +36,30 @@ it('can parse response', () => {
     return p
   })
 
+  // Testing first item: "Cowgirls Don’t Cry"
   expect(results[0]).toMatchObject({
-    title: 'The Nanny',
-    subTitle: "Yetta's Lettas", 
-    description: expect.stringContaining('Maxwell battles an old rival'),
-    image: expect.stringContaining('http')
+    title: 'Heartland',
+    subTitle: 'Cowgirls Don’t Cry',
+    description: expect.stringContaining('Tim ouvre une école de rodéo'),
+    rating: 'TV-PG',
+    season: 8,
+    episode: 13,
+    date: '2015-02-15'
   })
 
+  // Testing another item: "Riders on the Storm"
   expect(results[1]).toMatchObject({
-    title: 'The Nanny',
-    subTitle: 'The Baby Shower',
-    description: expect.stringContaining('A psychic predicts that Maxwell'),
-    season: 6,
-    episode: 20,
-    image: expect.stringContaining('17nyw13tvyrd61fd9cimazndar.png')
+    title: 'Heartland',
+    subTitle: 'Riders on the Storm',
+    description: expect.stringContaining('Amy et Ty aident le neveu de Scott'),
+    season: 8,
+    episode: 14,
+    image: expect.stringContaining('Heartland_landscape.jpg')
   })
 })
 
 it('can handle empty guide', () => {
-  const content = fs.readFileSync(path.resolve(__dirname, '__data__/no_content.json'))
+  const content = JSON.stringify({ MediaContainer: { Metadata: [] } })
   const results = parser({ content })
 
   expect(results).toMatchObject([])
@@ -67,19 +72,9 @@ it('can parse channel list', async () => {
       MediaContainer: {
         Channel: [
           {
-            title: 'The World Poker Tour',
-            gridKey: '5f6b8e7900b0950040d0f2b2',
-            id: '5e20b730f2f8d5003d739db7-5f6b8e7900b0950040d0f2b2',
-            thumb: 'https://provider-static.plex.tv/epg/cms/production/c40e4f88-6f5c-4f2a-8d54-e6812e25771c/wpt_logo.png',
-            Media: [
-              {
-                Part: [
-                  {
-                    key: '/library/parts/5e20b730f2f8d5003d739db7-5f6b8e7900b0950040d0f2b2.m3u8'
-                  }
-                ]
-              }
-            ]
+            title: 'Heartland TV',
+            gridKey: 'heartland-key',
+            id: '12345'
           }
         ]
       }
@@ -91,9 +86,7 @@ it('can parse channel list', async () => {
 
   expect(results[0]).toMatchObject({
     lang: 'en',
-    site_id: '5f6b8e7900b0950040d0f2b2',
-    name: 'The World Poker Tour',
-    // logo: 'https://provider-static.plex.tv/epg/cms/production/c40e4f88-6f5c-4f2a-8d54-e6812e25771c/wpt_logo.png',
-    // url: 'https://epg.provider.plex.tv/library/parts/5e20b730f2f8d5003d739db7-5f6b8e7900b0950040d0f2b2.m3u8?X-Plex-Token=TEST_TOKEN'
+    site_id: 'heartland-key',
+    name: 'Heartland TV'
   })
 })
