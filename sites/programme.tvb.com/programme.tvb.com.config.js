@@ -1,5 +1,4 @@
 const dayjs = require('dayjs')
-const cheerio = require('cheerio')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -8,57 +7,86 @@ dayjs.extend(utc)
 dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
+const tz = 'Asia/Hong_Kong'
+
 module.exports = {
   site: 'programme.tvb.com',
   days: 2,
-  url: function ({ channel, date }) {
-    return `https://programme.tvb.com/ajax.php?action=channellist&code=${
-      channel.site_id
-    }&date=${date.format('YYYY-MM-DD')}`
+  url({ channel, date, time = null }) {
+    return `https://programme.tvb.com/api/schedule?input_date=${date.format(
+      'YYYYMMDD'
+    )}&network_code=${channel.site_id}&_t=${time ? time : parseInt(Date.now() / 1000)}`
   },
-  parser: function ({ content, date }) {
-    let programs = []
-    const items = parseItems(content)
-    items.forEach(item => {
-      const prev = programs[programs.length - 1]
-      const $item = cheerio.load(item)
-      let start = parseStart($item, date)
-      if (prev) {
-        if (start.isBefore(prev.start)) {
-          start = start.add(1, 'd')
-          date = date.add(1, 'd')
+  parser({ content, channel, date }) {
+    const programs = []
+    const data = content ? JSON.parse(content) : {}
+    if (Array.isArray(data.data?.list)) {
+      for (const d of data.data.list) {
+        if (Array.isArray(d.schedules)) {
+          const schedules = d.schedules.filter(s => s.network_code === channel.site_id)
+          schedules.forEach((s, i) => {
+            const start = dayjs.tz(s.event_datetime, 'YYYY-MM-DD HH:mm:ss', tz)
+            let stop
+            if (i < schedules.length - 1) {
+              stop = dayjs.tz(schedules[i + 1].event_datetime, 'YYYY-MM-DD HH:mm:ss', tz)
+            } else {
+              stop = date.add(1, 'd')
+            }
+            programs.push({
+              title: channel.lang === 'en' ? s.en_programme_title : s.programme_title,
+              description: channel.lang === 'en' ? s.en_synopsis : s.synopsis,
+              start,
+              stop
+            })
+          })
         }
-        prev.stop = start
       }
-      const stop = start.add(30, 'm')
-      programs.push({
-        title: parseTitle($item),
-        description: parseDescription($item),
-        start,
-        stop
-      })
-    })
+    }
 
     return programs
+  },
+  async channels({ lang = 'en' }) {
+    const channels = []
+    const axios = require('axios')
+    const base = 'https://programme.tvb.com'
+    const queues = [base]
+    while (true) {
+      if (queues.length) {
+        const url = queues.shift()
+        const content = await axios
+          .get(url)
+          .then(response => response.data)
+          .catch(console.error)
+        if (content) {
+          const assets = content.match(/assets\/index\.([a-z0-9]+)\.js/g)
+          if (assets) {
+            queues.push(...assets.map(a => base + '/' + a))
+          } else {
+            const metadata = content.match(/e=(\[(.*?)\])/)
+            if (metadata) {
+              const infos = eval(metadata[1])
+              if (Array.isArray(infos)) {
+                infos
+                  .filter(a => a.code.length)
+                  .map(a => {
+                    channels.push({
+                      lang,
+                      site_id: a.code,
+                      name: lang === 'en' ? a.nameEn : a.name
+                    })
+                  })
+                break
+              }
+            }
+          }
+          if (queues.length) {
+            continue
+          }
+        }
+      }
+      break
+    }
+
+    return channels
   }
-}
-
-function parseTitle($item) {
-  return $item('.ftit').text().trim()
-}
-
-function parseDescription($item) {
-  return $item('.full').text().trim()
-}
-
-function parseStart($item, date) {
-  const time = $item('.time').text()
-
-  return dayjs.tz(`${date.format('YYYY-MM-DD')} ${time}`, 'YYYY-MM-DD hh:mmA', 'Asia/Hong_Kong')
-}
-
-function parseItems(content) {
-  const $ = cheerio.load(content)
-
-  return $('ul > li.item').toArray()
 }

@@ -1,0 +1,58 @@
+name: format
+on:
+  workflow_dispatch:
+  # schedule:
+  #   - cron: "0 12 * * *"
+permissions:
+  packages: read
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: tibdex/github-app-token@v1.8.2
+        if: ${{ !env.ACT }}
+        id: create-app-token
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
+      - uses: actions/checkout@v4
+        if: ${{ !env.ACT }}
+        with:
+          token: ${{ steps.create-app-token.outputs.token }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm install
+      - name: Format *.channels.xml files
+        run: npm run channels:format
+      - name: Get list of changed *.channels.xml files
+        id: files
+        run: |
+          CHANNELS_ANY_CHANGED=false
+          CHANNELS_ALL_CHANGED_FILES=$(git diff --diff-filter=ACMRT --name-only master --  sites/**/*.channels.xml | tr '\n' ' ')
+          if [ -n "${CHANNELS_ALL_CHANGED_FILES}" ]; then
+            CHANNELS_ANY_CHANGED=true
+          fi
+          echo "channels_all_changed_files=$CHANNELS_ALL_CHANGED_FILES" >> "$GITHUB_OUTPUT"
+          echo "channels_any_changed=$CHANNELS_ANY_CHANGED" >> "$GITHUB_OUTPUT"
+      - name: Check changed *.channels.xml files
+        if: steps.files.outputs.channels_any_changed == 'true'
+        run: |
+          npm run channels:lint -- ${{ steps.files.outputs.channels_all_changed_files }}
+          npm run channels:validate -- ${{ steps.files.outputs.channels_all_changed_files }}
+      - name: Setup git
+        run: |
+          git config user.name "iptv-bot[bot]"
+          git config user.email "84861620+iptv-bot[bot]@users.noreply.github.com"
+      - name: Commit changed *.channels.xml files 
+        if: steps.files.outputs.channels_any_changed == 'true'
+        run: |
+          git add sites
+          git status
+          git commit -m "[Bot] Format *.channels.xml files" -m "Committed by [iptv-bot](https://github.com/apps/iptv-bot) via [format](https://github.com/iptv-org/epg/actions/runs/${{ github.run_id }}) workflow." --no-verify
+      - name: Push all changes to the repository
+        if: ${{ !env.ACT && github.ref == 'refs/heads/master' && steps.files.outputs.channels_any_changed == 'true' }}
+        run: git push

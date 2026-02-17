@@ -8,18 +8,20 @@ dayjs.extend(utc)
 dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
+const tz = 'Asia/Jakarta'
+
 module.exports = {
   site: 'indihometv.com',
-  days: 1,
+  days: 2,
   url({ channel }) {
     return `https://www.indihometv.com/livetv/${channel.site_id}`
   },
   parser({ content, date }) {
     const programs = []
-    const items = parseItems(content, date)
+    const [$, items] = parseItems(content, date)
     items.forEach(item => {
       const prev = programs[programs.length - 1]
-      const $item = cheerio.load(item)
+      const $item = $(item)
       let start = parseStart($item, date)
       if (prev && start.isBefore(prev.start)) {
         start = start.add(1, 'd')
@@ -64,27 +66,27 @@ module.exports = {
 }
 
 function parseStart($item, date) {
-  const timeString = $item('p').text()
+  const timeString = $item.find('p').text()
   const [, start] = timeString.match(/(\d{2}:\d{2}) -/) || [null, null]
   const dateString = `${date.format('YYYY-MM-DD')} ${start}`
 
-  return dayjs.tz(dateString, 'YYYY-MM-DD HH:mm', 'Asia/Jakarta')
+  return dayjs.tz(dateString, 'YYYY-MM-DD HH:mm', tz)
 }
 
 function parseStop($item, date) {
-  const timeString = $item('p').text()
+  const timeString = $item.find('p').text()
   const [, stop] = timeString.match(/- (\d{2}:\d{2})/) || [null, null]
   const dateString = `${date.format('YYYY-MM-DD')} ${stop}`
 
-  return dayjs.tz(dateString, 'YYYY-MM-DD HH:mm', 'Asia/Jakarta')
+  return dayjs.tz(dateString, 'YYYY-MM-DD HH:mm', tz)
 }
 
 function parseTitle($item) {
-  return $item('b').text()
+  return $item.find('b').text()
 }
 
 function parseItems(content, date) {
   const $ = cheerio.load(content)
 
-  return $(`#pills-${date.format('YYYY-MM-DD')} .schedule-item`).toArray()
+  return [$, $(`#pills-${date.format('YYYY-MM-DD')} .schedule-item`).toArray()]
 }

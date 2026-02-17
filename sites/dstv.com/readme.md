@@ -54,17 +54,17 @@
 ### Download the guide
 
 ```sh
-npm run grab -- --channels=sites/dstv.com/dstv.com_<COUNTRY_CODE>.channels.xml
+npm run grab --- --channels=sites/dstv.com/dstv.com_<COUNTRY_CODE>.channels.xml
 ```
 
 ### Update channel list
 
 ```sh
-npm run channels:parse -- --config=./sites/dstv.com/dstv.com.config.js --output=./sites/dstv.com/dstv.com_<COUNTRY_CODE>.channels.xml --set=country:<COUNTRY_CODE>
+npm run channels:parse --- --config=./sites/dstv.com/dstv.com.config.js --output=./sites/dstv.com/dstv.com_<COUNTRY_CODE>.channels.xml --set=country:<COUNTRY_CODE>
 ```
 
 ### Test
 
 ```sh
-npm test -- dstv.com
+npm test --- dstv.com
 ```

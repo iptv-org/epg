@@ -60,7 +60,8 @@ it('can parse response for ZA', async () => {
     title: 'UFC FN HL: Nzechukwu v Cutelaba',
     description:
       "'UFC Fight Night Highlights - Heavyweight Bout: Kennedy Nzechukwu vs Ion Cutelaba'. From The UFC APEX Center - Las Vegas, USA.",
-    icon: 'https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/img/271546_UFC Fight Night.png',
+    image:
+      'https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/img/271546_UFC Fight Night.png',
     category: ['All Sport', 'Mixed Martial Arts']
   })
 })
@@ -91,7 +92,8 @@ it('can parse response for NG', async () => {
     title: 'UFC FN HL: Nzechukwu v Cutelaba',
     description:
       "'UFC Fight Night Highlights - Heavyweight Bout: Kennedy Nzechukwu vs Ion Cutelaba'. From The UFC APEX Center - Las Vegas, USA.",
-    icon: 'https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/img/271546_UFC Fight Night.png',
+    image:
+      'https://03mcdecdnimagerepository.blob.core.windows.net/epguideimage/img/271546_UFC Fight Night.png',
     category: ['All Sport', 'Mixed Martial Arts']
   })
 })

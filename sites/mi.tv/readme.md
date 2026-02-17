@@ -16,17 +16,17 @@
 ### Download the guide
 
 ```sh
-npm run grab -- --channels=sites/mi.tv/mi.tv_<COUNTRY_CODE>.channels.xml
+npm run grab --- --channels=sites/mi.tv/mi.tv_<COUNTRY_CODE>.channels.xml
 ```
 
 ### Update channel list
 
 ```sh
-npm run channels:parse -- --config=./sites/mi.tv/mi.tv.config.js --output=./sites/mi.tv/mi.tv_<COUNTRY_CODE>.channels.xml --set=country:<COUNTRY_CODE>
+npm run channels:parse --- --config=./sites/mi.tv/mi.tv.config.js --output=./sites/mi.tv/mi.tv_<COUNTRY_CODE>.channels.xml --set=country:<COUNTRY_CODE>
 ```
 
 ### Test
 
 ```sh
-npm test -- mi.tv
+npm test --- mi.tv
 ```

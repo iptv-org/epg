@@ -9,13 +9,13 @@ https://www.bein.com/en/tv-guide/ (English)
 Arabic:
 
 ```sh
-npm run grab -- --site=bein.com --lang=ar
+npm run grab --- --site=bein.com --lang=ar
 ```
 
 English:
 
 ```sh
-npm run grab -- --site=bein.com --lang=en
+npm run grab --- --site=bein.com --lang=en
 ```
 
 ### Update channel list
@@ -23,17 +23,17 @@ npm run grab -- --site=bein.com --lang=en
 Arabic:
 
 ```sh
-npm run channels:parse -- --config=./sites/bein.com/bein.com.config.js --output=./sites/bein.com/bein.com_ar.channels.xml --set=lang:ar
+npm run channels:parse --- --config=./sites/bein.com/bein.com.config.js --output=./sites/bein.com/bein.com_ar.channels.xml --set=lang:ar
 ```
 
 English:
 
 ```sh
-npm run channels:parse -- --config=./sites/bein.com/bein.com.config.js --output=./sites/bein.com/bein.com_en.channels.xml --set=lang:en
+npm run channels:parse --- --config=./sites/bein.com/bein.com.config.js --output=./sites/bein.com/bein.com_en.channels.xml --set=lang:en
 ```
 
 ### Test
 
 ```sh
-npm test -- bein.com
+npm test --- bein.com
 ```

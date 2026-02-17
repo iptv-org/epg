@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="tvarenasport.com" lang="sr" xmltv_id="ArenaSport1Premium.rs" site_id="5710">Arena Sport Premium 1 Serbia</channel>
-  <channel site="tvarenasport.com" lang="sr" xmltv_id="ArenaSport1.rs" site_id="380">Arena Sport 1 Serbia</channel>
-  <channel site="tvarenasport.com" lang="sr" xmltv_id="ArenaSport1x2.rs" site_id="5347">Arena Sport 1x2 Serbia</channel>
-  <channel site="tvarenasport.com" lang="sr" xmltv_id="ArenaSport2Premium.rs" site_id="5711">Arena Sport Premium 2 Serbia</channel>
-  <channel site="tvarenasport.com" lang="sr" xmltv_id="ArenaSport2.rs" site_id="381">Arena Sport 2 Serbia</channel>
-  <channel site="tvarenasport.com" lang="sr" xmltv_id="ArenaSport3Premium.rs" site_id="5712">Arena Sport Premium 3 Serbia</channel>
-  <channel site="tvarenasport.com" lang="sr" xmltv_id="ArenaSport3.rs" site_id="382">Arena Sport 3 Serbia</channel>
-  <channel site="tvarenasport.com" lang="sr" xmltv_id="ArenaSport4.rs" site_id="383">Arena Sport 4 Serbia</channel>
-  <channel site="tvarenasport.com" lang="sr" xmltv_id="ArenaSport5.rs" site_id="384">Arena Sport 5 Serbia</channel>
-  <channel site="tvarenasport.com" lang="sr" xmltv_id="ArenaSport6.rs" site_id="5594">Arena Sport 6 Serbia</channel>
-  <channel site="tvarenasport.com" lang="sr" xmltv_id="ArenaSport7.rs" site_id="5595">Arena Sport 7 Serbia</channel>
-  <channel site="tvarenasport.com" lang="sr" xmltv_id="ArenaSport8.rs" site_id="5596">Arena Sport 8 Serbia</channel>
+  <channel site="tvarenasport.com" site_id="01" lang="sr" logo="https://www.tvarenasport.com/files/img/icons/chanel-01.png" xmltv_id="ArenaSport1.rs@SD">Arena Sport 1 Serbia</channel>
+  <channel site="tvarenasport.com" site_id="1x2" lang="sr" logo="https://www.tvarenasport.com/files/img/icons/chanel-1x2.png" xmltv_id="ArenaSport1x2.rs@SD">Arena Sport 1x2 Serbia</channel>
+  <channel site="tvarenasport.com" site_id="02" lang="sr" logo="https://www.tvarenasport.com/files/img/icons/chanel-02.png" xmltv_id="ArenaSport2.rs@SD">Arena Sport 2 Serbia</channel>
+  <channel site="tvarenasport.com" site_id="03" lang="sr" logo="https://www.tvarenasport.com/files/img/icons/chanel-03.png" xmltv_id="ArenaSport3.rs@SD">Arena Sport 3 Serbia</channel>
+  <channel site="tvarenasport.com" site_id="04" lang="sr" logo="https://www.tvarenasport.com/files/img/icons/chanel-04.png" xmltv_id="ArenaSport4.rs@SD">Arena Sport 4 Serbia</channel>
+  <channel site="tvarenasport.com" site_id="05" lang="sr" logo="https://www.tvarenasport.com/files/img/icons/chanel-05.png" xmltv_id="ArenaSport5.rs@SD">Arena Sport 5 Serbia</channel>
+  <channel site="tvarenasport.com" site_id="06" lang="sr" logo="https://www.tvarenasport.com/files/img/icons/chanel-06.png" xmltv_id="ArenaSport6.rs@SD">Arena Sport 6 Serbia</channel>
+  <channel site="tvarenasport.com" site_id="07" lang="sr" logo="https://www.tvarenasport.com/files/img/icons/chanel-07.png" xmltv_id="ArenaSport7.rs@SD">Arena Sport 7 Serbia</channel>
+  <channel site="tvarenasport.com" site_id="08" lang="sr" logo="https://www.tvarenasport.com/files/img/icons/chanel-08.png" xmltv_id="ArenaSport8.rs@SD">Arena Sport 8 Serbia</channel>
+  <channel site="tvarenasport.com" site_id="09" lang="sr" logo="https://www.tvarenasport.com/files/img/icons/chanel-09.png" xmltv_id="ArenaSport9.rs@SD">Arena Sport 9 Serbia</channel>
+  <channel site="tvarenasport.com" site_id="10" lang="sr" logo="https://www.tvarenasport.com/files/img/icons/chanel-10.png" xmltv_id="ArenaSport10.rs@SD">Arena Sport 10 Serbia</channel>
+  <channel site="tvarenasport.com" site_id="a1p" lang="sr" logo="https://www.tvarenasport.com/files/img/icons/chanel-a1p.png" xmltv_id="ArenaSport1Premium.rs@SD">Arena Sport 1 Premium Serbia</channel>
+  <channel site="tvarenasport.com" site_id="a2p" lang="sr" logo="https://www.tvarenasport.com/files/img/icons/chanel-a2p.png" xmltv_id="ArenaSport2Premium.rs@SD">Arena Sport 2 Premium Serbia</channel>
+  <channel site="tvarenasport.com" site_id="a3p" lang="sr" logo="https://www.tvarenasport.com/files/img/icons/chanel-a3p.png" xmltv_id="ArenaSport3Premium.rs@SD">Arena Sport 3 Premium Serbia</channel>
+  <channel site="tvarenasport.com" site_id="a4p" lang="sr" logo="https://www.tvarenasport.com/files/img/icons/chanel-a4p.png" xmltv_id="ArenaSport4Premium.rs@SD">Arena Sport 4 Premium Serbia</channel>
+  <channel site="tvarenasport.com" site_id="a-adrenalin" lang="sr" logo="https://www.tvarenasport.com/files/img/icons/chanel-a-adrenalin.png" xmltv_id="ArenaSportAdrenalin.rs@SD">Arena Sport Adrenalin Serbia</channel>
+  <channel site="tvarenasport.com" site_id="a-tenis" lang="sr" logo="https://www.tvarenasport.com/files/img/icons/chanel-a-tenis.png" xmltv_id="ArenaSportTenis.rs@SD">Arena Sport Tenis Serbia</channel>
+  <channel site="tvarenasport.com" site_id="aa5p" lang="sr" logo="https://www.tvarenasport.com/files/img/icons/chanel-aa5p.png" xmltv_id="ArenaSport5Premium.rs@SD">Arena Sport 5 Premium Serbia</channel>
 </channels>

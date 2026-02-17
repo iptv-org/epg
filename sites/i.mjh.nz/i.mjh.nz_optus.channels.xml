@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="i.mjh.nz" lang="en" xmltv_id="" site_id="Optus/epg#os1">Optus Sport 1</channel>
-  <channel site="i.mjh.nz" lang="en" xmltv_id="" site_id="Optus/epg#os11">Premier League Channel</channel>
-  <channel site="i.mjh.nz" lang="en" xmltv_id="" site_id="Optus/epg#os12">LALIGA Channel</channel>
+  <channel site="i.mjh.nz" site_id="Optus/epg#os1" lang="en" xmltv_id="">Optus Sport 1</channel>
+  <channel site="i.mjh.nz" site_id="Optus/epg#os11" lang="en" xmltv_id="">Premier League Channel</channel>
+  <channel site="i.mjh.nz" site_id="Optus/epg#os12" lang="en" xmltv_id="">LALIGA Channel</channel>
 </channels>

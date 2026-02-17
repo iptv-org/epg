@@ -11,9 +11,7 @@ module.exports = {
   site: 'i24news.tv',
   days: 2,
   url: function ({ channel }) {
-    const [lang, region] = channel.site_id.split('#')
-
-    return `https://api.i24news.tv/v2/${lang}/schedules/${region}`
+    return `https://api.i24news.tv/v2/${channel.site_id}/schedules`
   },
   parser: function ({ content, date }) {
     let programs = []
@@ -23,7 +21,7 @@ module.exports = {
       programs.push({
         title: item.show.title,
         description: item.show.body,
-        icon: parseIcon(item),
+        image: parseImage(item),
         start: parseStart(item, date),
         stop: parseStop(item, date)
       })
@@ -33,7 +31,7 @@ module.exports = {
   }
 }
 
-function parseIcon(item) {
+function parseImage(item) {
   return item.show.image ? item.show.image.href : null
 }
 

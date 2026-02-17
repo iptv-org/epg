@@ -1,58 +1,105 @@
 const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const doFetch = require('@ntlab/sfetch')
+const debug = require('debug')('site:sky.com')
+const sortBy = require('lodash.sortby')
+const path = require('path')
+const fs = require('fs/promises')
+
+dayjs.extend(utc)
+
+doFetch.setDebugger(debug)
 
 module.exports = {
   site: 'sky.com',
   days: 2,
-  url: function ({ date, channel }) {
-    return `https://epgservices.sky.com/5.2.2/api/2.0/channel/json/${
+  url({ date, channel }) {
+    return `https://awk.epgsky.com/hawk/linear/schedule/${date.format('YYYYMMDD')}/${
       channel.site_id
-    }/${date.unix()}/86400/4`
+    }`
   },
-  parser: function ({ content, channel }) {
+  parser({ content, channel, date }) {
     const programs = []
-    const items = parseItems(content, channel)
-
-    items.forEach(item => {
-      programs.push({
-        title: item.t,
-        description: item.d,
-        start: dayjs.unix(item.s),
-        stop: dayjs.unix(item.s + item.m[1]),
-        icon: item.img ? `http://epgstatic.sky.com/epgdata/1.0/paimage/46/1/${item.img}` : null
-      })
-    })
+    if (content) {
+      const items = JSON.parse(content) || null
+      if (Array.isArray(items.schedule)) {
+        items.schedule
+          .filter(schedule => schedule.sid === channel.site_id)
+          .forEach(schedule => {
+            if (Array.isArray(schedule.events)) {
+              sortBy(schedule.events, p => p.st).forEach(event => {
+                const start = dayjs.utc(event.st * 1000)
+                if (start.isSame(date, 'd')) {
+                  const image = `https://images.metadata.sky.com/pd-image/${event.programmeuuid}/16-9/640`
+                  programs.push({
+                    title: event.t,
+                    description: event.sy,
+                    season: event.seasonnumber,
+                    episode: event.episodenumber,
+                    start,
+                    stop: start.add(event.d, 's'),
+                    icon: image,
+                    image
+                  })
+                }
+              })
+            }
+          })
+      }
+    }
 
     return programs
   },
   async channels() {
-    const axios = require('axios')
-    const cheerio = require('cheerio')
+    const dataPath = path.join(__dirname, '__data__', 'content.json')
+    let regions = []
 
-    const data = await axios
-      .get(`https://www.sky.com/tv-guide/`)
-      .then(r => r.data)
-      .catch(console.log)
+    try {
+      const raw = await fs.readFile(dataPath, 'utf8')
+      const payload = JSON.parse(raw)
+      if (Array.isArray(payload.regions)) {
+        regions = payload.regions
+      }
+    } catch (err) {
+      debug('Failed to read regions from %s: %o', dataPath, err)
+      throw err
+    }
 
-    let channels = []
+    if (regions.length === 0) {
+      debug('No regions defined in %s', dataPath)
+      return []
+    }
 
-    const $ = cheerio.load(data)
-    let initialData = $('#initialData').text()
-    initialData = JSON.parse(decodeURIComponent(initialData))
-
-    initialData.state.epgData.channelsForRegion.forEach(item => {
-      channels.push({
-        lang: 'en',
-        site_id: item.sid,
-        name: item.t
-      })
+    const uniqueRegions = new Map()
+    regions.forEach(region => {
+      if (!region || region.bouquet === undefined || region.subBouquet === undefined) return
+      const key = `${region.bouquet}-${region.subBouquet}`
+      if (!uniqueRegions.has(key)) uniqueRegions.set(key, region)
     })
 
-    return channels
+    const channels = {}
+    const queues = Array.from(uniqueRegions.values()).map(region => ({
+      t: 'c',
+      url: `https://awk.epgsky.com/hawk/linear/services/${region.bouquet}/${region.subBouquet}`
+    }))
+
+    await doFetch(queues, (queue, res) => {
+      // process channels
+      if (queue.t === 'c') {
+        if (Array.isArray(res.services)) {
+          for (const ch of res.services) {
+            if (channels[ch.sid] === undefined) {
+              channels[ch.sid] = {
+                lang: 'en',
+                site_id: ch.sid,
+                name: ch.t
+              }
+            }
+          }
+        }
+      }
+    })
+
+    return Object.values(channels)
   }
-}
-
-function parseItems(content, channel) {
-  const data = JSON.parse(content)
-
-  return data && data.listings ? data.listings[channel.site_id] : []
 }

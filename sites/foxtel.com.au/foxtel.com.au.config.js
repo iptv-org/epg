@@ -13,7 +13,8 @@ module.exports = {
   request: {
     headers: {
       'Accept-Language': 'en-US,en;',
-      Cookie: 'AAMC_foxtel_0=REGION|6'
+      Cookie: 'AAMC_foxtel_0=REGION|7',
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
     }
   },
   parser: function ({ content, date }) {
@@ -34,7 +35,7 @@ module.exports = {
       programs.push({
         title: parseTitle($item),
         sub_title: parseSubTitle($item),
-        icon: parseIcon($item),
+        image: parseImage($item),
         rating: parseRating($item),
         season: parseSeason($item),
         episode: parseEpisode($item),
@@ -87,7 +88,7 @@ function parseEpisode($item) {
   return episode ? parseInt(episode) : null
 }
 
-function parseIcon($item) {
+function parseImage($item) {
   return $item('.epg-event-thumbnail > img').attr('src')
 }
 
@@ -117,9 +118,9 @@ function parseRating($item) {
 
   return rating
     ? {
-        system: 'ACB',
-        value: rating
-      }
+      system: 'ACB',
+      value: rating
+    }
     : null
 }
 

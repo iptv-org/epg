@@ -3,8 +3,10 @@ const { DateTime } = require('luxon')
 module.exports = {
   site: 'turksatkablo.com.tr',
   days: 2,
-  url: function ({ date }) {
-    return `https://www.turksatkablo.com.tr/userUpload/EPG/y.json?_=${date.valueOf()}`
+  url({ date }) {
+    const dayOfMonth = date.format('DD') // Get the current day of the month (01-31)
+
+    return `https://www.turksatkablo.com.tr/userUpload/EPG/${dayOfMonth}.json?_=${date.valueOf()}`
   },
   request: {
     timeout: 60000,
@@ -38,8 +40,11 @@ module.exports = {
   },
   async channels() {
     const axios = require('axios')
+    const dayjs = require('dayjs')
+    const dayOfMonth = dayjs().format('DD')
+
     const data = await axios
-      .get('https://www.turksatkablo.com.tr/userUpload/EPG/y.json')
+      .get(`https://www.turksatkablo.com.tr/userUpload/EPG/${dayOfMonth}.json`)
       .then(r => r.data)
       .catch(console.log)
 
@@ -73,7 +78,7 @@ function parseItems(content, channel) {
   let parsed
   try {
     parsed = JSON.parse(content)
-  } catch (error) {
+  } catch {
     return []
   }
   if (!parsed || !parsed.k) return []

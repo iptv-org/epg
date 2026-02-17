@@ -13,7 +13,9 @@ module.exports = {
   site: 'artonline.tv',
   days: 2,
   url: function ({ channel }) {
-    return `https://www.artonline.tv/Home/Tvlist${channel.site_id}`
+    const [, site_id] = channel.site_id.split('#')
+
+    return `https://www.artonline.tv/Home/Tvlist${site_id}`
   },
   request: {
     method: 'POST',
@@ -33,14 +35,14 @@ module.exports = {
     if (!content) return programs
     const items = JSON.parse(content)
     items.forEach(item => {
-      const icon = parseIcon(item)
+      const image = parseImage(item)
       const start = parseStart(item)
       const duration = parseDuration(item)
       const stop = start.add(duration, 's')
       programs.push({
         title: item.title,
         description: item.description,
-        icon,
+        image,
         start,
         stop
       })
@@ -63,6 +65,6 @@ function parseDuration(item) {
   return parseInt(HH) * 3600 + parseInt(mm) * 60 + parseInt(ss)
 }
 
-function parseIcon(item) {
+function parseImage(item) {
   return item.thumbnail ? `https://www.artonline.tv${item.thumbnail}` : null
 }

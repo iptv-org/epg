@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="rthk.hk" lang="en" xmltv_id="RTHKTV31.hk" site_id="31">TV 31</channel>
-  <channel site="rthk.hk" lang="en" xmltv_id="RTHKTV32.hk" site_id="32">TV 32</channel>
-  <channel site="rthk.hk" lang="en" xmltv_id="RTHKTV33.hk" site_id="33">TV 33</channel>
-  <channel site="rthk.hk" lang="en" xmltv_id="RTHKTV34.hk" site_id="34">TV 34</channel>
+  <channel site="rthk.hk" site_id="31" lang="en" xmltv_id="RTHKTV31.hk@SD">TV 31</channel>
+  <channel site="rthk.hk" site_id="32" lang="en" xmltv_id="RTHKTV32.hk@SD">TV 32</channel>
+  <channel site="rthk.hk" site_id="33" lang="en" xmltv_id="RTHKTV33.hk@SD">TV 33</channel>
+  <channel site="rthk.hk" site_id="34" lang="en" xmltv_id="RTHKTV34.hk@SD">TV 34</channel>
 </channels>

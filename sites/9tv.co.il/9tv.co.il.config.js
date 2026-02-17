@@ -27,7 +27,7 @@ module.exports = {
       const stop = start.add(1, 'h')
       programs.push({
         title: parseTitle($item),
-        icon: parseIcon($item),
+        image: parseImage($item),
         description: parseDescription($item),
         start,
         stop
@@ -44,7 +44,7 @@ function parseStart($item, date) {
   return dayjs.tz(`${date.format('YYYY-MM-DD')} ${time}`, 'YYYY-MM-DD HH:mm', 'Asia/Jerusalem')
 }
 
-function parseIcon($item) {
+function parseImage($item) {
   const backgroundImage = $item('a > div.guide_info_group > div.guide_info_pict').css(
     'background-image'
   )

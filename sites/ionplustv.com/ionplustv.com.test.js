@@ -29,7 +29,8 @@ it('can parse response', () => {
     stop: '2022-11-08T11:00:00.000Z',
     title: 'All For Nothing?',
     sub_title: '226 : Randy & Sarita Vs. Jean-marcel & Melodie',
-    icon: 'https://ionplustv.com/static/programs/shows/all-for-nothing/show-banner-all-for-nothing-5ab162f2d8ee6-897aca6d7d9a7d4e2026ca3b592d8b2a047238fa.png',
+    image:
+      'https://ionplustv.com/static/programs/shows/all-for-nothing/show-banner-all-for-nothing-5ab162f2d8ee6-897aca6d7d9a7d4e2026ca3b592d8b2a047238fa.png',
     rating: {
       system: 'MPA',
       value: 'TV-PG+L'

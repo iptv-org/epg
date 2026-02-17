@@ -11,10 +11,16 @@ dayjs.extend(customParseFormat)
 module.exports = {
   site: 'tvguide.myjcom.jp',
   days: 2,
+  lang: 'ja',
+  request: {
+    headers: {
+      Cookie: 'AD_NAV=1; area_id=108;',
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0 WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36'
+    }
+  },
   url: function ({ date, channel }) {
     const id = `${channel.site_id}_${date.format('YYYYMMDD')}`
-
-    return `https://tvguide.myjcom.jp/api/getEpgInfo/?channels=${id}`
+    return `https://tvguide.myjcom.jp/api/getEpgInfo/?channels=${id}&rectime=&rec4k=`
   },
   parser: function ({ content, channel, date }) {
     let programs = []
@@ -24,7 +30,7 @@ module.exports = {
         title: item.title,
         description: item.commentary,
         category: parseCategory(item),
-        icon: parseIcon(item),
+        image: parseImage(item),
         start: parseStart(item),
         stop: parseStop(item)
       })
@@ -70,7 +76,7 @@ module.exports = {
   }
 }
 
-function parseIcon(item) {
+function parseImage(item) {
   return item.imgPath ? `https://tvguide.myjcom.jp${item.imgPath}` : null
 }
 

@@ -7,7 +7,7 @@ const customParseFormat = require('dayjs/plugin/customParseFormat')
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
-const date = dayjs.utc('2023-01-12', 'YYYY-MM-DD').startOf('d')
+const date = dayjs.utc('2025-07-29', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: 'bg/tv-programa#24kitchen-bg',
   xmltv_id: '24KitchenBulgaria.bg'
@@ -15,13 +15,14 @@ const channel = {
 
 it('can generate valid url', () => {
   expect(url({ channel, date })).toBe(
-    'https://tvprofil.com/bg/tv-programa/program/?datum=2023-01-12&kanal=24kitchen-bg&callback=cb&b51=818933'
+    'https://tvprofil.com/bg/tv-programa/program/?datum=2025-07-29&kanal=24kitchen-bg&callback=tvprogramit48&b48=827670'
   )
 })
 
 it('can generate valid request headers', () => {
   expect(request.headers).toMatchObject({
-    'x-requested-with': 'XMLHttpRequest'
+    'x-requested-with': 'XMLHttpRequest',
+    'referer': 'https://tvprofil.com/tvprogram/',
   })
 })
 
@@ -34,9 +35,9 @@ it('can parse response', () => {
   })
 
   expect(results[0]).toMatchObject({
-    title: 'Мексиканска кухня с Пати 10, еп. 9',
-    start: '2023-01-12T04:00:00.000Z',
-    stop: '2023-01-12T04:30:00.000Z'
+    title: 'Save with Jamie 1, ep. 2',
+    start: '2025-07-29T05:00:00.000Z',
+    stop: '2025-07-29T06:00:00.000Z'
   })
 })
 

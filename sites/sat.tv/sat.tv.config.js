@@ -7,7 +7,7 @@ const customParseFormat = require('dayjs/plugin/customParseFormat')
 dayjs.extend(utc)
 dayjs.extend(customParseFormat)
 
-const API_ENDPOINT = 'https://sat.tv/wp-content/themes/twentytwenty-child/ajax_chaines.php'
+const API_ENDPOINT = 'https://www.sat.tv/wp-content/themes/twentytwenty-child/ajax_chaines.php'
 
 module.exports = {
   site: 'sat.tv',
@@ -49,7 +49,7 @@ module.exports = {
       programs.push({
         title: parseTitle($item),
         description: parseDescription($item),
-        icon: parseIcon($item),
+        image: parseImage($item),
         start,
         stop
       })
@@ -114,7 +114,7 @@ module.exports = {
       const $ = cheerio.load(data)
       $('.main-container-channels-events > .container-channel-events').each((i, el) => {
         const name = $(el).find('.channel-title').text().trim()
-        const channelId = name.replace(/\s\&\s/gi, ' &amp; ')
+        const channelId = name.replace(/\s&\s/gi, ' &amp; ')
 
         if (!name) return
 
@@ -130,7 +130,7 @@ module.exports = {
   }
 }
 
-function parseIcon($item) {
+function parseImage($item) {
   const src = $item('.event-logo img:not(.no-img)').attr('src')
 
   return src ? `https://sat.tv${src}` : null

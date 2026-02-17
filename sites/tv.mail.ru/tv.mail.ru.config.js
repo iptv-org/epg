@@ -1,5 +1,6 @@
 const { DateTime } = require('luxon')
 const axios = require('axios')
+const uniqBy = require('lodash.uniqby')
 
 module.exports = {
   site: 'tv.mail.ru',
@@ -35,8 +36,6 @@ module.exports = {
     return programs
   },
   async channels() {
-    const _ = require('lodash')
-
     const regions = [5506, 1096, 1125, 285]
 
     let channels = []
@@ -64,13 +63,13 @@ module.exports = {
       }
     }
 
-    return _.uniqBy(channels, 'site_id')
+    return uniqBy(channels, 'site_id')
   }
 }
 
 async function getTotalPageCount(region) {
   const data = await axios
-    .get(`https://tv.mail.ru/ajax/channel/list/`, {
+    .get('https://tv.mail.ru/ajax/channel/list/', {
       params: { page: 0 },
       headers: {
         cookie: `s=fver=0|geo=${region};`

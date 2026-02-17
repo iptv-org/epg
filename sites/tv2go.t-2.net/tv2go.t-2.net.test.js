@@ -1,5 +1,7 @@
 const { parser, url, request } = require('./tv2go.t-2.net.config.js')
 const dayjs = require('dayjs')
+const fs = require('fs')
+const path = require('path')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
 dayjs.extend(customParseFormat)
@@ -13,7 +15,7 @@ const channel = {
 
 it('can generate valid url', () => {
   expect(url({ date, channel })).toBe(
-    'https://tv2go.t-2.net/Catherine/api/9.4/json/464830403846070/d79cf4dc84f2131689f426956b8d40de/client/tv/getEpg'
+    'https://tv2go.t-2.net/Catherine/api/10.8/json/7971845803564301055/c82189625b4689c4dec55a452741a012/client/tv/getEpg'
   )
 })
 
@@ -36,8 +38,7 @@ it('can generate valid request data', () => {
 })
 
 it('can parse response', () => {
-  const content =
-    '{"entries":[{"channelId":1000259,"startTimestamp":"1637283000000","endTimestamp":"1637284500000","name":"Dnevnik Slovencev v Italiji","nameSingleLine":"Dnevnik Slovencev v Italiji","description":"Informativni","images":[{"url":"/static/media/img/epg/max_crop/EPG_IMG_2927405.jpg","width":1008,"height":720,"averageColor":[143,147,161]}],"show":{"id":51991133,"title":"Dnevnik Slovencev v Italiji","originalTitle":"Dnevnik Slovencev v Italiji","shortDescription":"Dnevnik Slovencev v Italiji je informativna oddaja, v kateri novinarji poročajo predvsem o dnevnih dogodkih med Slovenci v Italiji.","longDescription":"Pomembno ogledalo vsakdana, v katerem opozarjajo na težave, s katerimi se soočajo, predstavljajo pa tudi pestro kulturno, športno in družbeno življenje slovenske narodne skupnosti. V oddajo so vključene tudi novice iz matične domovine.","type":{"id":10,"name":"Show"},"productionFrom":"1609502400000","countries":[{"id":"SI","name":"Slovenija"}],"languages":[{"languageId":2,"name":"Slovenščina"}],"genres":[{"id":1000002,"name":"Informativni"}]}}]}'
+  const content = fs.readFileSync(path.join(__dirname, '__data__', 'content.json'), 'utf8')
   const result = parser({ content, channel }).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
@@ -52,7 +53,7 @@ it('can parse response', () => {
       category: ['Informativni'],
       description:
         'Dnevnik Slovencev v Italiji je informativna oddaja, v kateri novinarji poročajo predvsem o dnevnih dogodkih med Slovenci v Italiji.',
-      icon: 'https://tv2go.t-2.net/static/media/img/epg/max_crop/EPG_IMG_2927405.jpg'
+      image: 'https://tv2go.t-2.net/static/media/img/epg/max_crop/EPG_IMG_2927405.jpg'
     }
   ])
 })

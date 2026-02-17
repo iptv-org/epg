@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="mediagenie.co.kr" lang="ko" xmltv_id="CHING.kr" site_id="CHING">CHING</channel>
-  <channel site="mediagenie.co.kr" lang="ko" xmltv_id="ENADRAMA.kr" site_id="ENA_DRAMA">ENA DRAMA</channel>
-  <channel site="mediagenie.co.kr" lang="ko" xmltv_id="ENASTORY.kr" site_id="ENA_STORY">ENA STORY</channel>
-  <channel site="mediagenie.co.kr" lang="ko" xmltv_id="Healthmedi.kr" site_id="Healthmedi">Healthmedi</channel>
-  <channel site="mediagenie.co.kr" lang="ko" xmltv_id="ONT.kr" site_id="ONT">ONT</channel>
+  <channel site="mediagenie.co.kr" site_id="CHING" lang="ko" xmltv_id="CHING.kr@SD">CHING</channel>
+  <channel site="mediagenie.co.kr" site_id="ENA_DRAMA" lang="ko" xmltv_id="ENADRAMA.kr@SD">ENA DRAMA</channel>
+  <channel site="mediagenie.co.kr" site_id="ENA_STORY" lang="ko" xmltv_id="ENASTORY.kr@SD">ENA STORY</channel>
+  <channel site="mediagenie.co.kr" site_id="Healthmedi" lang="ko" xmltv_id="">Healthmedi</channel>
+  <channel site="mediagenie.co.kr" site_id="ONT" lang="ko" xmltv_id="ONT.kr@SD">ONT</channel>
 </channels>

@@ -9,9 +9,15 @@ dayjs.extend(customParseFormat)
 dayjs.extend(timezone)
 dayjs.extend(utc)
 
+const headers = {
+  'User-Agent':
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 OPR/115.0.0.0'
+}
+
 module.exports = {
   site: 'elcinema.com',
   days: 2,
+  request: { headers },
   url({ channel }) {
     const lang = channel.lang === 'en' ? 'en/' : '/'
 
@@ -28,7 +34,7 @@ module.exports = {
         title: parseTitle(item),
         description: parseDescription(item),
         category: parseCategory(item),
-        icon: parseIcon(item),
+        image: parseImage(item),
         start,
         stop
       })
@@ -38,19 +44,26 @@ module.exports = {
   },
   async channels({ lang }) {
     const axios = require('axios')
-    const data = await axios
-      .get(`https://elcinema.com/${lang}/tvguide/`)
-      .then(r => r.data)
-      .catch(console.log)
+    let data = ''
+    try {
+      const res = await axios.get(`https://elcinema.com/${lang}/tvguide/`, {
+        headers: headers
+      })
+      data = res && res.data ? res.data : ''
+    } catch (err) {
+      console.log(err)
+      return []
+    }
 
     const $ = cheerio.load(data)
 
     return $('.tv-line')
-      .map((i, el) => {
+      .map((_, el) => {
         const link = $(el).find('.channel > div > div.hide-for-small-only > a')
         const name = $(link).text()
-        const href = $(link).attr('href')
-        const [, site_id] = href.match(/\/(\d+)\/$/)
+        const href = $(link).attr('href') || ''
+        const match = href.match(/\/(\d+)\/$/)
+        const site_id = match ? match[1] : null
 
         return {
           lang,
@@ -62,7 +75,7 @@ module.exports = {
   }
 }
 
-function parseIcon(item) {
+function parseImage(item) {
   const $ = cheerio.load(item)
   const imgSrc =
     $('.row > div.columns.small-3.large-1 > a > img').data('src') ||

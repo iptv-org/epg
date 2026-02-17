@@ -16,11 +16,13 @@
 | Equatorial Guinea        | `gp` | https://www.canalplus.com/gp/programme-tv/ |
 | France                   | `fr` | https://www.canalplus.com/programme-tv/    |
 | French Guiana            | `gf` | https://www.canalplus.com/gf/programme-tv/ |
+| French Polynesia         | `pf` | https://www.canalplus.com/pf/programme-tv/ |
 | Gabon                    | `ga` | https://www.canalplus.com/ga/programme-tv/ |
 | Gambia                   | `gm` | https://www.canalplus.com/gm/programme-tv/ |
 | Ghana                    | `gh` | https://www.canalplus.com/gh/programme-tv/ |
 | Guinea-Bissau            | `gw` | https://www.canalplus.com/gw/programme-tv/ |
 | Guinea                   | `gn` | https://www.canalplus.com/gn/programme-tv/ |
+| Haiti                    | `ht` | https://www.canalplus.com/ht/programme-tv/ |
 | Ivory Coast              | `ci` | https://www.canalplus.com/ci/programme-tv/ |
 | Madagascar               | `mg` | https://www.canalplus.com/mg/programme-tv/ |
 | Mali                     | `ml` | https://www.canalplus.com/ml/programme-tv/ |
@@ -44,17 +46,17 @@
 ### Download the guide
 
 ```sh
-npm run grab -- --channels=sites/canalplus.com/canalplus.com_<COUNTRY_CODE>.channels.xml
+npm run grab --- --channels=sites/canalplus.com/canalplus.com_<COUNTRY_CODE>.channels.xml
 ```
 
 ### Update channel list
 
 ```sh
-npm run channels:parse -- --config=./sites/canalplus.com/canalplus.com.config.js --output=./sites/canalplus.com/canalplus.com_<COUNTRY_CODE>.channels.xml --set=country:<COUNTRY_CODE>
+npm run channels:parse --- --config=./sites/canalplus.com/canalplus.com.config.js --output=./sites/canalplus.com/canalplus.com_<COUNTRY_CODE>.channels.xml --set=country:<COUNTRY_CODE>
 ```
 
 ### Test
 
 ```sh
-npm test -- canalplus.com
+npm test --- canalplus.com
 ```

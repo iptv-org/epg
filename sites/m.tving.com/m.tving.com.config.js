@@ -30,7 +30,7 @@ module.exports = {
         actors: item.program.actor,
         start: parseStart(item),
         stop: parseStop(item),
-        icon: parseIcon(item)
+        image: parseImage(item)
       })
     })
 
@@ -63,7 +63,7 @@ module.exports = {
   }
 }
 
-function parseIcon(item) {
+function parseImage(item) {
   return item.program.image.length ? `https://image.tving.com${item.program.image[0].url}` : null
 }
 

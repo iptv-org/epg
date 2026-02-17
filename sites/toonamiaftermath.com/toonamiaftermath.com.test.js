@@ -51,7 +51,7 @@ it('can parse response', () => {
     stop: '2022-11-29T17:20:54.031Z',
     title: 'X-Men',
     sub_title: 'Reunion (Part 1)',
-    icon: 'https://i.imgur.com/ZSZ0x1m.gif'
+    image: 'https://i.imgur.com/ZSZ0x1m.gif'
   })
 })
 

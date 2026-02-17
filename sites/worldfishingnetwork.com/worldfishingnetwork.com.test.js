@@ -29,7 +29,7 @@ it('can parse response', () => {
     sub_title: 'Challenge Cup Sudden Death Round 2',
     description:
       'Nine anglers race to a target weight on Lake Wylie in the Lucas Oil Challenge Cup, presented by B&W Trailer Hitches, Rock Hill, South Carolina. Only four will move on to the Championship Round.',
-    icon: 'https://content.osgnetworks.tv/shows/major-league-fishing-thumbnail.jpg'
+    image: 'https://content.osgnetworks.tv/shows/major-league-fishing-thumbnail.jpg'
   })
 
   expect(results[41]).toMatchObject({
@@ -39,7 +39,7 @@ it('can parse response', () => {
     sub_title: 'Flint Wilderness Walleye',
     description:
       'Mark Romanack and Bryan Darland fish walleye on Klotz Lake in the famed Flint Wilderness of Ontario',
-    icon: 'https://content.osgnetworks.tv/shows/fishin-411-thumbnail.jpg'
+    image: 'https://content.osgnetworks.tv/shows/fishin-411-thumbnail.jpg'
   })
 })
 

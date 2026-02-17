@@ -1,4 +1,6 @@
 const { parser, url, request } = require('./nowplayer.now.com.config.js')
+const fs = require('fs')
+const path = require('path')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -32,8 +34,7 @@ it('can generate valid request headers', () => {
 })
 
 it('can parse response', () => {
-  const content =
-    '[[{"key":"key_202111174524739","vimProgramId":"202111174524739","name":"ViuTVsix Station Closing","start":1637690400000,"end":1637715600000,"date":"20211124","startTime":"02:00AM","endTime":"09:00AM","duration":420,"recordable":false,"restartTv":false,"npvrProg":false,"npvrStartTime":0,"npvrEndTime":0,"cid":"viutvsix station closing","cc":"","isInWatchlist":false}]]'
+  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'))
   const result = parser({ content }).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()

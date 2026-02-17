@@ -3,6 +3,7 @@ const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
+const uniqBy = require('lodash.uniqby')
 
 dayjs.extend(utc)
 dayjs.extend(timezone)
@@ -35,7 +36,7 @@ module.exports = {
       programs.push({
         title: item.Title,
         description: parseDescription(details),
-        icon: parseIcon(details),
+        image: parseImage(details),
         category: parseCategory(details),
         start: parseTime(item.StartTime, channel),
         stop: parseTime(item.EndTime, channel)
@@ -45,8 +46,7 @@ module.exports = {
     return programs
   },
   async channels({ country }) {
-    const _ = require('lodash')
-
+    
     const countries = {
       ao: 'ago',
       bj: 'ben',
@@ -114,7 +114,7 @@ module.exports = {
       })
     })
 
-    return _.uniqBy(channels, 'site_id')
+    return uniqBy(channels, 'site_id')
   }
 }
 
@@ -178,7 +178,7 @@ function parseDescription(details) {
   return details ? details.Synopsis : null
 }
 
-function parseIcon(details) {
+function parseImage(details) {
   return details ? details.ThumbnailUri : null
 }
 

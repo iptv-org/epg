@@ -47,7 +47,7 @@ module.exports = {
 
       const data = await axios
         .post(
-          `https://services.mujtvprogram.cz/tvprogram2services/services/tvchannellist_mobile.php`,
+          'https://services.mujtvprogram.cz/tvprogram2services/services/tvchannellist_mobile.php',
           params,
           {
             headers: {
@@ -86,7 +86,7 @@ function parseItems(content) {
     if (!data) return []
     const programmes = data['tv-program-programmes'].programme
     return programmes && Array.isArray(programmes) ? programmes : []
-  } catch (err) {
+  } catch {
     return []
   }
 }

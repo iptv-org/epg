@@ -1,45 +1,53 @@
 const { parser, url } = require('./tvarenasport.hr.config.js')
+const fs = require('fs')
+const path = require('path')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
+
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
-const date = dayjs.utc('2021-11-17', 'YYYY-MM-DD').startOf('d')
+const date = dayjs.utc('2024-12-07', 'YYYY-MM-DD').startOf('d')
 const channel = {
-  site_id: '380',
-  xmltv_id: 'ArenaSport1Croatia.hr'
+  site_id: '01',
+  xmltv_id: 'ArenaSport1.hr'
 }
 
 it('can generate valid url', () => {
-  expect(url({ channel, date })).toBe('https://www.tvarenasport.hr/api/schedule?date=17-11-2021')
+  expect(url).toBe('https://tvarenaprogram.com/live/v2/hr')
 })
 
 it('can parse response', () => {
-  const content =
-    '{"items":[{"id":6104,"title":"NAJAVA PROGRAMA","start":"2021-11-16T23:00:00Z","end":"2021-11-17T23:00:00Z","sport":"Najava programa","league":"NAJAVA PROGRAMA","group":"1294","isLive":false,"doNotMiss":false,"domain":"cro"},{"id":6000,"title":" DIJON - UNICAJA","start":"2021-11-16T23:30:00Z","end":"2021-11-17T01:00:00Z","sport":"Košarka","league":" LIGA PRVAKA","group":"380","isLive":false,"doNotMiss":false,"domain":"cro"}]}'
-  const result = parser({ channel, content }).map(p => {
+  const content = fs.readFileSync(path.join(__dirname, '__data__', 'content.html'))
+  const result = parser({ channel, date, content }).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
     return p
   })
 
-  expect(result).toMatchObject([
-    {
-      start: '2021-11-16T23:30:00.000Z',
-      stop: '2021-11-17T01:00:00.000Z',
-      title: 'DIJON - UNICAJA',
-      category: 'Košarka',
-      description: 'LIGA PRVAKA'
-    }
-  ])
+  expect(result.length).toBe(15)
+  expect(result[0]).toMatchObject({
+    start: '2024-12-07T00:00:00.000Z',
+    stop: '2024-12-07T00:30:00.000Z',
+    title: 'MAGAZIN',
+    description: 'NBA ACTION',
+    category: 'Košarka'
+  })
+  expect(result[4]).toMatchObject({
+    start: '2024-12-07T06:00:00.000Z',
+    stop: '2024-12-07T07:30:00.000Z',
+    title: 'EHF LIGA PRVAKA',
+    description: 'DINAMO BUKUREŠT - PSG',
+    category: 'Rukomet'
+  })
 })
 
 it('can handle empty guide', () => {
   const result = parser({
     date,
     channel,
-    content: '{"channels":[]}'
+    content: ''
   })
   expect(result).toMatchObject([])
 })

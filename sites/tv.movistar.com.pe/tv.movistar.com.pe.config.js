@@ -16,7 +16,7 @@ module.exports = {
       programs.push({
         title: item.Title,
         description: item.Description,
-        icon: parseIcon(item),
+        image: parseImage(item),
         start: parseTime(item.Start),
         stop: parseTime(item.End)
       })
@@ -42,7 +42,7 @@ module.exports = {
   }
 }
 
-function parseIcon(item) {
+function parseImage(item) {
   return item.Images?.VideoFrame?.[0]?.Url
 }
 

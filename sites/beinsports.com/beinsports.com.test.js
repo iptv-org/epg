@@ -17,10 +17,8 @@ it('can generate valid url', () => {
   )
 })
 
-const content =
-  '{"count":1,"rows":[{"data":{"eventId":"2028126","eventDate":"2023-10-21T10:30:00","utcEventDate":"2023-10-20T23:30:00","duration":"90","programId":"106230","programTypeId":"5","title":"ATP 500"},"duration":5400000,"title":"Tokyo Day 5 QF 2","startDate":"2023-10-20T23:30:00.000Z","endDate":"2023-10-21T01:00:00.000Z","description":"Exclusive coverage of the 2023 ATP Tour on beIN SPORTS","channelId":"164C0EDA-EBCE-4AA6-9DDA-D603E0948B9F"}]}'
-
 it('can parse response', () => {
+  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'))
   const result = parser({ content, channel, date }).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()

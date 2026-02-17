@@ -22,7 +22,7 @@ it('can generate valid url', () => {
 it('can generate valid request headers', () => {
   expect(request.headers).toMatchObject({
     'Accept-Language': 'en-US,en;',
-    Cookie: 'AAMC_foxtel_0=REGION|6'
+    Cookie: 'AAMC_foxtel_0=REGION|7'
   })
 })
 
@@ -41,7 +41,8 @@ it('can parse response', () => {
     stop: '2022-11-07T13:30:00.000Z',
     title: 'The Equalizer',
     sub_title: 'Glory',
-    icon: 'https://images1.resources.foxtel.com.au/store2/mount1/16/3/69e0v.jpg?maxheight=90&limit=91aa1c7a2c485aeeba0706941f79f111adb35830',
+    image:
+      'https://images1.resources.foxtel.com.au/store2/mount1/16/3/69e0v.jpg?maxheight=90&limit=91aa1c7a2c485aeeba0706941f79f111adb35830',
     rating: {
       system: 'ACB',
       value: 'M'

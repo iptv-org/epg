@@ -1,0 +1,1396 @@
+<!doctype html>
+<html data-bs-theme="light" prefix="og: https://ogp.me/ns#" lang="fi">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <!--<link href="/assets/bootstrap-5.2.1-dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">-->
+    <!-- <link href="/assets/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" referrerpolicy="no-referrer"> -->
+    <!--<link href="/assets/bootstrap-5.3.0-dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">-->
+    <link
+      href="/assets/bootstrap-5.3.3-dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="/assets/bootstrap-icons-1.9.1/bootstrap-icons.css"> -->
+    <style>
+      .channel-logo {
+        max-height: 32px;
+        height: 32px;
+      }
+
+      #channel-logo-bloomberg {
+        height: 30px !important;
+      }
+
+      #channel-logo-euronews,
+      #channel-logo-eurosport-1,
+      #channel-logo-eurosport-2 {
+        height: 19px !important;
+      }
+
+      #channel-logo-trt-world {
+        height: 21px !important;
+      }
+
+      #channel-logo-liiga-1,
+      #channel-logo-liiga-2,
+      #channel-logo-liiga-3,
+      #channel-logo-liiga-4,
+      #channel-logo-liiga-5,
+      #channel-logo-liiga-6,
+      #channel-logo-liiga-7,
+      #channel-logo-liiga-tv,
+      #channel-logo-liiga-uhd,
+      #channel-logo-sf-kanalen {
+        height: 24px !important;
+      }
+
+      #channel-logo-himlen-tv7,
+      #channel-logo-france-2,
+      #channel-logo-france-5,
+      #channel-logo-dom-kino {
+        height: 25px !important;
+      }
+
+      .bg-digita {
+        --bs-bg-opacity: 1;
+        background-color: #fac302 !important;
+      }
+      .bg-telia {
+        --bs-bg-opacity: 1;
+        background-color: #9602de !important;
+      }
+      .bg-elisa {
+        --bs-bg-opacity: 1;
+        background-color: #2315b5 !important;
+      }
+      .bg-dna {
+        --bs-bg-opacity: 1;
+        background-color: #ed1e83 !important;
+      }
+      .bg-lounea {
+        --bs-bg-opacity: 1;
+        background-color: #2fb1a3 !important;
+      }
+
+      .hidden-broadcast {
+        visibility: collapse; /* Firefox */
+        display: none; /* Safari, Chrome */
+      }
+    </style>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#c92128" />
+    <meta name="apple-mobile-web-app-title" content="TVkaista" />
+    <meta name="application-name" content="TVkaista" />
+    <meta name="msapplication-TileColor" content="#00aba9" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <meta property="og:site_name" content="TVkaista" />
+
+    <!-- Meta tags -->
+    <meta property="og:url" href="https://www.tvkaista.org/yle-tv1/2025-03-03" />
+    <link rel="canonical" href="https://www.tvkaista.org/yle-tv1/2025-03-03" />
+    <meta name="robots" content="noindex" />
+
+    <link rel="dns-prefetch" href="https://solmu.tvkaista.net/" />
+    <link rel="dns-prefetch" href="https://pisto.tvkaista.net/" />
+    <link rel="dns-prefetch" href="https://hirtto.tvkaista.net/" />
+    <link rel="dns-prefetch" href="https://live-fi.tvkaista.net/" />
+    <link rel="dns-prefetch" href="https://www.tvkaista.net/" />
+    <link rel="dns-prefetch" href="https://xmltv.tvkaista.net/" />
+
+    <link rel="dns-prefetch" href="https://areena.yle.fi/" />
+    <link rel="dns-prefetch" href="https://www.ruutu.fi/" />
+
+    <script src="/assets/bowser-2.11.0/es5.js"></script>
+    <script>
+      const browser = bowser.getParser(window.navigator.userAgent)
+    </script>
+
+    <script
+      defer
+      src="https://www.tvkaista.org/assets/joni2.js"
+      data-domain="tvkaista.org"
+      data-api="https://www.tvkaista.org/api/joni"
+    ></script>
+    <script>
+      window.plausible =
+        window.plausible ||
+        function () {
+          ;(window.plausible.q = window.plausible.q || []).push(arguments)
+        }
+    </script>
+
+    <!-- Custom head -->
+    <link
+      rel="stylesheet"
+      href="/assets/bootstrap-datepicker-1.9.0-dist/css/bootstrap-datepicker3.css"
+    />
+    <!-- <style>
+                /* .datepicker td, .datepicker th {
+          width: 1.5em;
+          height: 1.5em;
+        } */
+      </style> -->
+
+    <title>TVkaista - Yle TV1 (2025-03-03)</title>
+  </head>
+  <body>
+    <div class="container py-3 d-print-none">
+      <header>
+        <div class="d-flex flex-column flex-md-row align-items-center pb-3 border-bottom">
+          <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+            <img
+              src="/assets/logo.svg"
+              width="86.829268292683"
+              height="32"
+              aria-label="TVkaista"
+              alt="TVkaista"
+            />
+          </a>
+
+          <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+            <a class="me-3 py-2 text-dark text-decoration-none" href="/">TV-opas (Ilmaiskanavat)</a>
+            <a class="me-3 py-2 text-dark text-decoration-none" href="/maksukanavat/"
+              >TV-opas (Maksukanavat)</a
+            >
+            <a class="me-3 py-2 text-dark text-decoration-none" href="/suorat/">Suorat</a>
+          </nav>
+        </div>
+      </header>
+    </div>
+    <!-- Begin page content -->
+    <main class="flex-shrink-0">
+      <div class="container-xl">
+        <div class="row">
+          <div class="col-auto">
+            <h1>Yle TV1</h1>
+          </div>
+          <!-- Live button -->
+          <div class="col ps-0">
+            <div class="text-end">
+              <!-- <li class="list-group-item"> -->
+
+              <a
+                class="btn btn-secondary ms-1 d-print-none"
+                role="button"
+                id="livebtn-yle-tv1"
+                rel="noreferrer"
+                href="https://areena.yle.fi/suorat"
+              >
+                Suora
+                <svg
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-box-arrow-up-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"
+                  /></svg
+                ><!-- <i aria-hidden="true" class="bi bi-box-arrow-up-right"></i> -->
+                <!-- TITLE: areena.yle.fi -->
+              </a>
+
+              <!-- </li> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="d-grid gap-2 d-md-block pb-3 d-print-none">
+          <div class="row">
+            <div class="col-auto pe-0">
+              <a rel="prev" class="btn btn-primary" href="/yle-tv1/2025-03-02"> &lt; </a>
+            </div>
+
+            <div class="col-auto px-1">
+              <div class="input-group date" id="datepicker" data-provide="datepicker">
+                <input type="text" class="form-control" />
+                <div class="input-group-addon input-group-text">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-calendar"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <noscript>
+                <button type="button" class="btn btn-link text-decoration-none text-black" disabled>
+                  2025-03-03
+                </button>
+                <style>
+                  #datepicker {
+                    visibility: hidden !important;
+                    width: 0 !important;
+                    height: 0 !important;
+                  }
+                </style>
+              </noscript>
+            </div>
+
+            <div class="col-auto px-0">
+              <a rel="next" class="btn btn-primary" href="/yle-tv1/2025-03-04"> &gt; </a>
+            </div>
+
+            <div class="col-auto pe-0">
+              <a class="btn btn-primary" href="/yle-tv1/2025-02-28">Eilen</a>
+              <a class="btn btn-primary" href="/yle-tv1/">Tänään</a>
+              <a class="btn btn-primary" href="/yle-tv1/2025-03-02">Huomenna</a>
+            </div>
+          </div>
+        </div>
+
+        <img
+          alt="Yle TV1"
+          class="channel-logo img-fluid d-print-none"
+          src="/assets/channelpics/wikipedia_yle-tv1_edited.svg"
+        />
+
+        <ul class="list-group list-group-flush">
+          <li class="px-1 py-0 list-group-item broadcast upcoming-broadcast">
+            <div class="d-flex flex-row bd-highlight">
+              <div class="bd-highlight me-2">23:05-00:02</div>
+              <!--  -->
+              <div
+                class="bd-highlight flex-fill"
+                data-bs-toggle="collapse"
+                href="#collapse-190042386818263816281742672375878916867"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse-190042386818263816281742672375878916867"
+              >
+                <span class=""> Sodan silpoma elämä </span>
+                <!-- Season/Episode -->
+                <!-- Age limit -->
+              </div>
+              <div class="bd-highlight"></div>
+            </div>
+
+            <div class="collapse" id="collapse-190042386818263816281742672375878916867">
+              <p class="mb-0">
+                Oleh Stahanov haavoittui vakavasti Itä-Ukrainan rintamalla. Miten elämä rakennetaan
+                uudelleen, kun toipuminen vaatii selviytymistä niin fyysisistä vammoista kuin
+                henkisestä taakastakin? Ohjaus: Viivi Berghem (Suomi 2024)
+              </p>
+            </div>
+          </li>
+
+          <li class="px-1 py-0 list-group-item broadcast upcoming-broadcast">
+            <div class="d-flex flex-row bd-highlight">
+              <div class="bd-highlight me-2">00:02-04:00</div>
+              <!--  -->
+              <div
+                class="bd-highlight flex-fill"
+                data-bs-toggle="collapse"
+                href="#collapse-198253293725515220415443755591289948422"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse-198253293725515220415443755591289948422"
+              >
+                <span class=""> Uutisikkuna </span>
+                <!-- Season/Episode -->
+                <!-- Age limit -->
+              </div>
+              <div class="bd-highlight"></div>
+            </div>
+
+            <div class="collapse" id="collapse-198253293725515220415443755591289948422">
+              <p class="mb-0"></p>
+            </div>
+          </li>
+
+          <li class="px-1 py-0 list-group-item broadcast upcoming-broadcast">
+            <div class="d-flex flex-row bd-highlight">
+              <div class="bd-highlight me-2">04:00-06:25</div>
+              <!--  -->
+              <div
+                class="bd-highlight flex-fill"
+                data-bs-toggle="collapse"
+                href="#collapse-20360756651424542661209987452982781212"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse-20360756651424542661209987452982781212"
+              >
+                <span class=""> Uutisikkuna </span>
+                <!-- Season/Episode -->
+                <!-- Age limit -->
+              </div>
+              <div class="bd-highlight"></div>
+            </div>
+
+            <div class="collapse" id="collapse-20360756651424542661209987452982781212">
+              <p class="mb-0"></p>
+            </div>
+          </li>
+
+          <li class="px-1 py-0 list-group-item broadcast upcoming-broadcast">
+            <div class="d-flex flex-row bd-highlight">
+              <div class="bd-highlight me-2">06:25-09:30</div>
+              <!--  -->
+              <div
+                class="bd-highlight flex-fill"
+                data-bs-toggle="collapse"
+                href="#collapse-179588966021111594413312728201222339720"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse-179588966021111594413312728201222339720"
+              >
+                <span class=""> Ylen aamu </span>
+                <!-- Season/Episode -->
+                <!-- Age limit -->
+              </div>
+              <div class="bd-highlight"></div>
+            </div>
+
+            <div class="collapse" id="collapse-179588966021111594413312728201222339720">
+              <p class="mb-0">
+                6.39 Britannian Eurooppa-kokouksen anti 6.44 Euroopan puolustus 7.09 Kansanedustajat
+                talouskasvusta 7.39 Oscar-gaalan anti 7.44 Jälkihiki 8.24 Tampereen veronmaksajat
+                karkaavat muualle 8.50 Kuka oli Reidar Särestöniemi?
+              </p>
+            </div>
+          </li>
+
+          <li class="px-1 py-0 list-group-item broadcast upcoming-broadcast">
+            <div class="d-flex flex-row bd-highlight">
+              <div class="bd-highlight me-2">09:30-10:00</div>
+              <!--  -->
+              <div
+                class="bd-highlight flex-fill"
+                data-bs-toggle="collapse"
+                href="#collapse-1919200083159258206516301968391601993275"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse-1919200083159258206516301968391601993275"
+              >
+                <span class=""> Puoli seitsemän </span>
+                <!-- Season/Episode -->
+                <!-- Age limit -->
+              </div>
+              <div class="bd-highlight"></div>
+            </div>
+
+            <div class="collapse" id="collapse-1919200083159258206516301968391601993275">
+              <p class="mb-0">
+                Suuri Sohvis-spesiaali! Puoli Seitsemän juhlistaa 10 vuotta täyttävää
+                Sohvaperunat-ohjelmaa! Vieraana studiossa Juhani, OP vierailee Soilen ja Jorman
+                luona. Juontajina Anniina Valtonen ja Olli-Pekka Kursi.
+              </p>
+            </div>
+          </li>
+
+          <li class="px-1 py-0 list-group-item broadcast upcoming-broadcast">
+            <div class="d-flex flex-row bd-highlight">
+              <div class="bd-highlight me-2">10:00-10:52</div>
+              <!-- series/la promesa - salaisuuksien kartano/S01E03 -->
+              <div
+                class="bd-highlight flex-fill"
+                data-bs-toggle="collapse"
+                href="#collapse-70977968817225315128158376542654843"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse-70977968817225315128158376542654843"
+              >
+                <span class=""> La Promesa - Salaisuuksien kartano </span>
+                <!-- Season/Episode -->
+                <span class="text-secondary"> S01E03 </span>
+                <!-- Age limit -->
+                <span class="text-secondary">
+                  <!--(12)-->
+                  <img width="16" height="16" src="/assets/agelimits/fi-12.svg" alt="(12)" />
+                </span>
+              </div>
+              <div class="bd-highlight"></div>
+            </div>
+
+            <div class="collapse" id="collapse-70977968817225315128158376542654843">
+              <p class="mb-0">
+                Kausi 1, 3/122. Päätöksen vaikeus. Jimena pääsee lennolle Manuelin kanssa tämän
+                tunnustettua ensin lentokilpailuun osallistumisensa. Johtaako lento näiden kahden
+                lähentymiseen? Onko mysteerikokin henkilöllisy
+              </p>
+
+              <span class="badge rounded-pill bg-primary">Sarja</span>
+            </div>
+          </li>
+
+          <li class="px-1 py-0 list-group-item broadcast upcoming-broadcast">
+            <div class="d-flex flex-row bd-highlight">
+              <div class="bd-highlight me-2">10:52-11:00</div>
+              <!--  -->
+              <div
+                class="bd-highlight flex-fill"
+                data-bs-toggle="collapse"
+                href="#collapse-1728452722128809361417669382001269632950"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse-1728452722128809361417669382001269632950"
+              >
+                <span class=""> Tuntemani talvi </span>
+                <!-- Season/Episode -->
+                <!-- Age limit -->
+              </div>
+              <div class="bd-highlight"></div>
+            </div>
+
+            <div class="collapse" id="collapse-1728452722128809361417669382001269632950">
+              <p class="mb-0">
+                Tuntemani talvi on luontokuvaajan Riku Karjalaisen visuaalinen tarina Suomen
+                kylmästä ja lumisesta talvesta, joka on muuttumassa.
+              </p>
+            </div>
+          </li>
+
+          <li class="px-1 py-0 list-group-item broadcast upcoming-broadcast">
+            <div class="d-flex flex-row bd-highlight">
+              <div class="bd-highlight me-2">11:00-11:56</div>
+              <!--  -->
+              <div
+                class="bd-highlight flex-fill"
+                data-bs-toggle="collapse"
+                href="#collapse-7178879219316563469743796131081834077"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse-7178879219316563469743796131081834077"
+              >
+                <span class=""> Jumalanpalvelus </span>
+                <!-- Season/Episode -->
+                <!-- Age limit -->
+              </div>
+              <div class="bd-highlight"></div>
+            </div>
+
+            <div class="collapse" id="collapse-7178879219316563469743796131081834077">
+              <p class="mb-0">
+                Rippikoulumessu Oulun Karjasillan kirkossa. Liturgina Pekka Mustakallio, saarna Iida
+                Glumoff. Musiikista vastaavat kanttori Riitta Piippo, Madetojan musiikkilukion
+                tyttökuoro sekä orkesteri Viventi. Uusinta, es.19.2.2023
+              </p>
+            </div>
+          </li>
+
+          <li class="px-1 py-0 list-group-item broadcast upcoming-broadcast">
+            <div class="d-flex flex-row bd-highlight">
+              <div class="bd-highlight me-2">11:56-12:00</div>
+              <!--  -->
+              <div
+                class="bd-highlight flex-fill"
+                data-bs-toggle="collapse"
+                href="#collapse-1626554992165298716416785467611230692147"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse-1626554992165298716416785467611230692147"
+              >
+                <span class=""> Yhteisvastuu 2025: Onni </span>
+                <!-- Season/Episode -->
+                <!-- Age limit -->
+              </div>
+              <div class="bd-highlight"></div>
+            </div>
+
+            <div class="collapse" id="collapse-1626554992165298716416785467611230692147">
+              <p class="mb-0">
+                Mun oma porukka. Monelle nuorelle on epäselvää, mitä tekisi isona. Myös ihmissuhteet
+                ja kouluun liittyvät kysymykset herättävät epävarmuutta. Ryhmä partiolaisia
+                kokoontuu metsämajalle yhdessäolon ja vertaistuen merkeissä
+              </p>
+            </div>
+          </li>
+
+          <li class="px-1 py-0 list-group-item broadcast upcoming-broadcast">
+            <div class="d-flex flex-row bd-highlight">
+              <div class="bd-highlight me-2">12:00-12:20</div>
+              <!-- series/rakkaat lapset/S02E03 -->
+              <div
+                class="bd-highlight flex-fill"
+                data-bs-toggle="collapse"
+                href="#collapse-187484531435170519616845441231624681754"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse-187484531435170519616845441231624681754"
+              >
+                <span class=""> Rakkaat lapset </span>
+                <!-- Season/Episode -->
+                <span class="text-secondary"> S02E03 </span>
+                <!-- Age limit -->
+              </div>
+              <div class="bd-highlight"></div>
+            </div>
+
+            <div class="collapse" id="collapse-187484531435170519616845441231624681754">
+              <p class="mb-0">
+                Kausi 2, 3/8 Rakkauden taimitalkoot. Regina on kutsunut koko suvun viettämään
+                rakkauden taimitalkoita. Muppe valmentaa Nooraa pyytämään anteeksi
+                somepäivityksiään. Edvin aloittaa kartanolla massiivisen lohikoskihankkeen.
+              </p>
+
+              <span class="badge rounded-pill bg-primary">Sarja</span>
+            </div>
+          </li>
+
+          <li class="px-1 py-0 list-group-item broadcast upcoming-broadcast">
+            <div class="d-flex flex-row bd-highlight">
+              <div class="bd-highlight me-2">12:20-12:35</div>
+              <!--  -->
+              <div
+                class="bd-highlight flex-fill"
+                data-bs-toggle="collapse"
+                href="#collapse-1185649057802096031190808930105424678"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse-1185649057802096031190808930105424678"
+              >
+                <span class=""> Kunnanjohtaja </span>
+                <!-- Season/Episode -->
+                <!-- Age limit -->
+                <span class="text-secondary">
+                  <!--(S)-->
+                  <img width="16" height="16" src="/assets/agelimits/fi-S.svg" alt="(S)" />
+                </span>
+              </div>
+              <div class="bd-highlight"></div>
+            </div>
+
+            <div class="collapse" id="collapse-1185649057802096031190808930105424678">
+              <p class="mb-0">
+                Lyhytelokuva kunnanjohtaja Koskisesta, jonka on vaikean paikan edessä: pienen
+                Juupion kunnan asukkaat vanhenevat ja taloudellinen tilanne on heikko. Tarvitaan
+                ihme pelastamaan Juupio. N: Sulevi Peltola. O: Zaida Bergroth (U)
+              </p>
+            </div>
+          </li>
+
+          <li class="px-1 py-0 list-group-item broadcast upcoming-broadcast">
+            <div class="d-flex flex-row bd-highlight">
+              <div class="bd-highlight me-2">12:35-13:20</div>
+              <!-- series/midsomerin murhat/S24E01 -->
+              <div
+                class="bd-highlight flex-fill"
+                data-bs-toggle="collapse"
+                href="#collapse-5174245295225961336606216541397370579"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse-5174245295225961336606216541397370579"
+              >
+                <span class=""> Midsomerin murhat </span>
+                <!-- Season/Episode -->
+                <span class="text-secondary"> S24E01 </span>
+                <!-- Age limit -->
+                <span class="text-secondary">
+                  <!--(12)-->
+                  <img width="16" height="16" src="/assets/agelimits/fi-12.svg" alt="(12)" />
+                </span>
+              </div>
+              <div class="bd-highlight"></div>
+            </div>
+
+            <div class="collapse" id="collapse-5174245295225961336606216541397370579">
+              <p class="mb-0">
+                Kausi 24, 1/8. Paholaisen tekosia 1/2. Vuosisatoja vanhan kartanon isäntä on
+                kuollut, jälkeen jää vain riitaisa sisarusparvi ja syviä kaunoja. Kartanon
+                omistuksesta sukeutuu riita, joka päätyy traagisesti. (U)
+              </p>
+
+              <span class="badge rounded-pill bg-primary">Sarja</span>
+            </div>
+          </li>
+
+          <li class="px-1 py-0 list-group-item broadcast upcoming-broadcast">
+            <div class="d-flex flex-row bd-highlight">
+              <div class="bd-highlight me-2">13:20-14:55</div>
+              <!--  -->
+              <div
+                class="bd-highlight flex-fill"
+                data-bs-toggle="collapse"
+                href="#collapse-7575095341033322412569702241372389944"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse-7575095341033322412569702241372389944"
+              >
+                <span class=""> Maija löytää sävelen </span>
+                <!-- Season/Episode -->
+                <!-- Age limit -->
+                <span class="text-secondary">
+                  <!--(S)-->
+                  <img width="16" height="16" src="/assets/agelimits/fi-S.svg" alt="(S)" />
+                </span>
+              </div>
+              <div class="bd-highlight"></div>
+            </div>
+
+            <div class="collapse" id="collapse-7575095341033322412569702241372389944">
+              <p class="mb-0">
+                Musiikkikomedia työläiskorttelin tytöstä, joka pääsee herrasväelle piiaksi ja
+                rakastuu talon nuoreen herraan. O: Matti Kassila. N: Leena Häkinen, Martti
+                Katajisto, Rakel Laakso, Arvo Lehesmaa. (1950) (Mv) (U)
+              </p>
+            </div>
+          </li>
+
+          <li class="px-1 py-0 list-group-item broadcast upcoming-broadcast">
+            <div class="d-flex flex-row bd-highlight">
+              <div class="bd-highlight me-2">14:55-15:50</div>
+              <!--  -->
+              <div
+                class="bd-highlight flex-fill"
+                data-bs-toggle="collapse"
+                href="#collapse-1149032390204029325321445313262093926769"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse-1149032390204029325321445313262093926769"
+              >
+                <span class=""> Prisma: Elämää Parkinsonin taudin kanssa </span>
+                <!-- Season/Episode -->
+                <!-- Age limit -->
+              </div>
+              <div class="bd-highlight"></div>
+            </div>
+
+            <div class="collapse" id="collapse-1149032390204029325321445313262093926769">
+              <p class="mb-0">
+                Ohjelmassa seurataan kolmea Parkinsonin tautia sairastavaa henkilöä ja kuullaan
+                asiantuntijoita. Millaista on elää taudin kanssa, mitkä ovat keinot oireiden
+                lievittämiseksi ja miten viivyttää taudin etenemis
+              </p>
+            </div>
+          </li>
+
+          <li class="px-1 py-0 list-group-item broadcast upcoming-broadcast">
+            <div class="d-flex flex-row bd-highlight">
+              <div class="bd-highlight me-2">15:50-16:35</div>
+              <!--  -->
+              <div
+                class="bd-highlight flex-fill"
+                data-bs-toggle="collapse"
+                href="#collapse-162349249160278544265131364723663212"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse-162349249160278544265131364723663212"
+              >
+                <span class=""> Yle Uutiset Sunnuntai </span>
+                <!-- Season/Episode -->
+                <!-- Age limit -->
+              </div>
+              <div class="bd-highlight"></div>
+            </div>
+
+            <div class="collapse" id="collapse-162349249160278544265131364723663212">
+              <p class="mb-0">
+                Sunnuntaissa mm. asiaa Tanskan kuningasparin valtiovierailusta, uskosta ja
+                uskonnollisuudesta pääsiäisen ajan lähestyessä ja pian Erikois-Emman saavan
+                sanoittajan Chrisse Johanssonin haastattelu. Juontajana Ilkka Lahti.
+              </p>
+            </div>
+          </li>
+
+          <li class="px-1 py-0 list-group-item broadcast upcoming-broadcast">
+            <div class="d-flex flex-row bd-highlight">
+              <div class="bd-highlight me-2">16:35-16:40</div>
+              <!--  -->
+              <div
+                class="bd-highlight flex-fill"
+                data-bs-toggle="collapse"
+                href="#collapse-218782152120263621419386092791475230834"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse-218782152120263621419386092791475230834"
+              >
+                <span class=""> Yle Uutiset selkosuomeksi </span>
+                <!-- Season/Episode -->
+                <!-- Age limit -->
+              </div>
+              <div class="bd-highlight"></div>
+            </div>
+
+            <div class="collapse" id="collapse-218782152120263621419386092791475230834">
+              <p class="mb-0"></p>
+            </div>
+          </li>
+
+          <li class="px-1 py-0 list-group-item broadcast upcoming-broadcast">
+            <div class="d-flex flex-row bd-highlight">
+              <div class="bd-highlight me-2">16:40-16:45</div>
+              <!--  -->
+              <div
+                class="bd-highlight flex-fill"
+                data-bs-toggle="collapse"
+                href="#collapse-7607982661691277197154162261958067428"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse-7607982661691277197154162261958067428"
+              >
+                <span class=""> Yle Oddasat </span>
+                <!-- Season/Episode -->
+                <!-- Age limit -->
+              </div>
+              <div class="bd-highlight"></div>
+            </div>
+
+            <div class="collapse" id="collapse-7607982661691277197154162261958067428">
+              <p class="mb-0">Saamenkieliset tv-uutiset. Tekstitetty suomeksi.</p>
+            </div>
+          </li>
+
+          <li class="px-1 py-0 list-group-item broadcast upcoming-broadcast">
+            <div class="d-flex flex-row bd-highlight">
+              <div class="bd-highlight me-2">16:45-16:50</div>
+              <!--  -->
+              <div
+                class="bd-highlight flex-fill"
+                data-bs-toggle="collapse"
+                href="#collapse-9383964824035956079785071821956192222"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse-9383964824035956079785071821956192222"
+              >
+                <span class=""> Novosti Yle </span>
+                <!-- Season/Episode -->
+                <!-- Age limit -->
+              </div>
+              <div class="bd-highlight"></div>
+            </div>
+
+            <div class="collapse" id="collapse-9383964824035956079785071821956192222">
+              <p class="mb-0"></p>
+            </div>
+          </li>
+
+          <li class="px-1 py-0 list-group-item broadcast upcoming-broadcast">
+            <div class="d-flex flex-row bd-highlight">
+              <div class="bd-highlight me-2">16:50-16:55</div>
+              <!--  -->
+              <div
+                class="bd-highlight flex-fill"
+                data-bs-toggle="collapse"
+                href="#collapse-12955565731339388515399592204228395942"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse-12955565731339388515399592204228395942"
+              >
+                <span class=""> Yle Uutiset viittomakielellä </span>
+                <!-- Season/Episode -->
+                <!-- Age limit -->
+              </div>
+              <div class="bd-highlight"></div>
+            </div>
+
+            <div class="collapse" id="collapse-12955565731339388515399592204228395942">
+              <p class="mb-0"></p>
+            </div>
+          </li>
+
+          <li class="px-1 py-0 list-group-item broadcast upcoming-broadcast">
+            <div class="d-flex flex-row bd-highlight">
+              <div class="bd-highlight me-2">16:55-17:00</div>
+              <!--  -->
+              <div
+                class="bd-highlight flex-fill"
+                data-bs-toggle="collapse"
+                href="#collapse-10536327871496520685484544740949508512"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse-10536327871496520685484544740949508512"
+              >
+                <span class=""> Yle Uutiset alueeltasi </span>
+                <!-- Season/Episode -->
+                <!-- Age limit -->
+              </div>
+              <div class="bd-highlight"></div>
+            </div>
+
+            <div class="collapse" id="collapse-10536327871496520685484544740949508512">
+              <p class="mb-0">Uutisia alueeltasi</p>
+            </div>
+          </li>
+
+          <li class="px-1 py-0 list-group-item broadcast upcoming-broadcast">
+            <div class="d-flex flex-row bd-highlight">
+              <div class="bd-highlight me-2">17:00-17:10</div>
+              <!--  -->
+              <div
+                class="bd-highlight flex-fill"
+                data-bs-toggle="collapse"
+                href="#collapse-1425111327328759931976033403757796311"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse-1425111327328759931976033403757796311"
+              >
+                <span class=""> Yle Uutiset 17.00 </span>
+                <!-- Season/Episode -->
+                <!-- Age limit -->
+              </div>
+              <div class="bd-highlight"></div>
+            </div>
+
+            <div class="collapse" id="collapse-1425111327328759931976033403757796311">
+              <p class="mb-0"></p>
+            </div>
+          </li>
+
+          <li class="px-1 py-0 list-group-item broadcast upcoming-broadcast">
+            <div class="d-flex flex-row bd-highlight">
+              <div class="bd-highlight me-2">17:10-17:57</div>
+              <!-- series/midsomerin murhat/S24E02 -->
+              <div
+                class="bd-highlight flex-fill"
+                data-bs-toggle="collapse"
+                href="#collapse-2027070401132628727880189901302574693"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse-2027070401132628727880189901302574693"
+              >
+                <span class=""> Midsomerin murhat </span>
+                <!-- Season/Episode -->
+                <span class="text-secondary"> S24E02 </span>
+                <!-- Age limit -->
+                <span class="text-secondary">
+                  <!--(12)-->
+                  <img width="16" height="16" src="/assets/agelimits/fi-12.svg" alt="(12)" />
+                </span>
+              </div>
+              <div class="bd-highlight"></div>
+            </div>
+
+            <div class="collapse" id="collapse-2027070401132628727880189901302574693">
+              <p class="mb-0">
+                Kausi 24, 2/8. Paholaisen tekosia 2/2. Kuolema korjaa satoa sisarusparven ympäriltä.
+                Jos ihmisellä on vain tämä yksi elämä, miten sen voi käyttää kaikkein viisaimmin?
+                Aina on tehty virheitä joita ei mikään korjaa. (U)
+              </p>
+
+              <span class="badge rounded-pill bg-primary">Sarja</span>
+            </div>
+          </li>
+
+          <li class="px-1 py-0 list-group-item broadcast upcoming-broadcast">
+            <div class="d-flex flex-row bd-highlight">
+              <div class="bd-highlight me-2">17:57-18:00</div>
+              <!--  -->
+              <div
+                class="bd-highlight flex-fill"
+                data-bs-toggle="collapse"
+                href="#collapse-21270891829359442841141288638653941619"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse-21270891829359442841141288638653941619"
+              >
+                <span class=""> Pieni suuri maailma </span>
+                <!-- Season/Episode -->
+                <!-- Age limit -->
+              </div>
+              <div class="bd-highlight"></div>
+            </div>
+
+            <div class="collapse" id="collapse-21270891829359442841141288638653941619">
+              <p class="mb-0">
+                2/20. Tshernobylin suojavyöhyke. Maisemia maailmalta pieninä paketteina.
+              </p>
+            </div>
+          </li>
+
+          <li class="px-1 py-0 list-group-item broadcast upcoming-broadcast">
+            <div class="d-flex flex-row bd-highlight">
+              <div class="bd-highlight me-2">18:00-18:21</div>
+              <!--  -->
+              <div
+                class="bd-highlight flex-fill"
+                data-bs-toggle="collapse"
+                href="#collapse-118707383938634459516188292431351772183"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse-118707383938634459516188292431351772183"
+              >
+                <span class=""> Yle Uutiset 18.00 </span>
+                <!-- Season/Episode -->
+                <!-- Age limit -->
+              </div>
+              <div class="bd-highlight"></div>
+            </div>
+
+            <div class="collapse" id="collapse-118707383938634459516188292431351772183">
+              <p class="mb-0"></p>
+            </div>
+          </li>
+
+          <li class="px-1 py-0 list-group-item broadcast upcoming-broadcast">
+            <div class="d-flex flex-row bd-highlight">
+              <div class="bd-highlight me-2">18:21-18:23</div>
+              <!--  -->
+              <div
+                class="bd-highlight flex-fill"
+                data-bs-toggle="collapse"
+                href="#collapse-6270886671992838854303114155509902889"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse-6270886671992838854303114155509902889"
+              >
+                <span class=""> Puoli7 tänään </span>
+                <!-- Season/Episode -->
+                <!-- Age limit -->
+              </div>
+              <div class="bd-highlight"></div>
+            </div>
+
+            <div class="collapse" id="collapse-6270886671992838854303114155509902889">
+              <p class="mb-0"></p>
+            </div>
+          </li>
+
+          <li class="px-1 py-0 list-group-item broadcast upcoming-broadcast">
+            <div class="d-flex flex-row bd-highlight">
+              <div class="bd-highlight me-2">18:23-18:30</div>
+              <!--  -->
+              <div
+                class="bd-highlight flex-fill"
+                data-bs-toggle="collapse"
+                href="#collapse-1213223731168498679210457439331358371941"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse-1213223731168498679210457439331358371941"
+              >
+                <span class=""> Yle Uutiset alueeltasi </span>
+                <!-- Season/Episode -->
+                <!-- Age limit -->
+              </div>
+              <div class="bd-highlight"></div>
+            </div>
+
+            <div class="collapse" id="collapse-1213223731168498679210457439331358371941">
+              <p class="mb-0">Uutisia alueeltasi</p>
+            </div>
+          </li>
+
+          <li class="px-1 py-0 list-group-item broadcast upcoming-broadcast">
+            <div class="d-flex flex-row bd-highlight">
+              <div class="bd-highlight me-2">18:30-19:00</div>
+              <!--  -->
+              <div
+                class="bd-highlight flex-fill"
+                data-bs-toggle="collapse"
+                href="#collapse-12418606801273429334719466461480611087"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse-12418606801273429334719466461480611087"
+              >
+                <span class=""> Puoli seitsemän </span>
+                <!-- Season/Episode -->
+                <!-- Age limit -->
+              </div>
+              <div class="bd-highlight"></div>
+            </div>
+
+            <div class="collapse" id="collapse-12418606801273429334719466461480611087">
+              <p class="mb-0">
+                Näyttelijä Satu Silvo on kirjaimellisesti jännän äärellä: hän esiintyy Stephen
+                Kingin klassikkotrilleri Piinassa. Toista pääosaa näytelmässä vetää Silvon mies
+                Reidar Palmgren. Juontajina Ella Kanninen ja Mikko Kekäläinen.
+              </p>
+            </div>
+          </li>
+
+          <li class="px-1 py-0 list-group-item broadcast upcoming-broadcast">
+            <div class="d-flex flex-row bd-highlight">
+              <div class="bd-highlight me-2">19:00-19:30</div>
+              <!-- series/kieksi/S01E06 -->
+              <div
+                class="bd-highlight flex-fill"
+                data-bs-toggle="collapse"
+                href="#collapse-53022109716886534642087065894213919479"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse-53022109716886534642087065894213919479"
+              >
+                <span class=""> Kieksi </span>
+                <!-- Season/Episode -->
+                <span class="text-secondary"> S01E06 </span>
+                <!-- Age limit -->
+              </div>
+              <div class="bd-highlight"></div>
+            </div>
+
+            <div class="collapse" id="collapse-53022109716886534642087065894213919479">
+              <p class="mb-0">
+                Kausi 1, 6/6. Incel-ilmiö. Incel on lyhenne, joka tarkoittaa tahdonvastaista
+                selibaattia. Kieksi yrittää ymmärtää mitä Incel-ilmiö pitää sisällään ja keitä
+                inceleiksi mielletyt henkilöt ovat?
+              </p>
+
+              <span class="badge rounded-pill bg-primary">Sarja</span>
+            </div>
+          </li>
+
+          <li class="px-1 py-0 list-group-item broadcast upcoming-broadcast">
+            <div class="d-flex flex-row bd-highlight">
+              <div class="bd-highlight me-2">19:30-20:00</div>
+              <!--  -->
+              <div
+                class="bd-highlight flex-fill"
+                data-bs-toggle="collapse"
+                href="#collapse-2505555633588270446828448012008749672"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse-2505555633588270446828448012008749672"
+              >
+                <span class=""> Linna </span>
+                <!-- Season/Episode -->
+                <!-- Age limit -->
+              </div>
+              <div class="bd-highlight"></div>
+            </div>
+
+            <div class="collapse" id="collapse-2505555633588270446828448012008749672">
+              <p class="mb-0">
+                8/8. Tuomionsa aikana Lilja näkee vankien lähtevän ja palaavan takaisin. Mirellan
+                vankilareissu jää tällä kertaa lyhyeksi. Linda saa päätöksen siirrosta Vanajalle.
+                Vankilanjohtaja Tuomo palaa vanhan vankilan käytäville. (U)
+              </p>
+            </div>
+          </li>
+
+          <li class="px-1 py-0 list-group-item broadcast upcoming-broadcast">
+            <div class="d-flex flex-row bd-highlight">
+              <div class="bd-highlight me-2">20:00-20:29</div>
+              <!--  -->
+              <div
+                class="bd-highlight flex-fill"
+                data-bs-toggle="collapse"
+                href="#collapse-11480318720853649669965454591343508228"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse-11480318720853649669965454591343508228"
+              >
+                <span class=""> MOT </span>
+                <!-- Season/Episode -->
+                <!-- Age limit -->
+              </div>
+              <div class="bd-highlight"></div>
+            </div>
+
+            <div class="collapse" id="collapse-11480318720853649669965454591343508228">
+              <p class="mb-0">
+                MOT tutki varjolaivaston omistuksia. Jäljet johtivat luksushotelliin Dubaissa.
+                Tapasimme myös konsultteja, jotka kertoivat kuinka omistuksia voi piilottaa ja
+                rahoja liikutella ilman pelkoa viranomaisista.
+              </p>
+            </div>
+          </li>
+
+          <li class="px-1 py-0 list-group-item broadcast upcoming-broadcast">
+            <div class="d-flex flex-row bd-highlight">
+              <div class="bd-highlight me-2">20:29-20:55</div>
+              <!--  -->
+              <div
+                class="bd-highlight flex-fill"
+                data-bs-toggle="collapse"
+                href="#collapse-101167834684889971967708135203317357"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse-101167834684889971967708135203317357"
+              >
+                <span class=""> Yle Uutiset 20.30 </span>
+                <!-- Season/Episode -->
+                <!-- Age limit -->
+              </div>
+              <div class="bd-highlight"></div>
+            </div>
+
+            <div class="collapse" id="collapse-101167834684889971967708135203317357">
+              <p class="mb-0"></p>
+            </div>
+          </li>
+
+          <li class="px-1 py-0 list-group-item broadcast upcoming-broadcast">
+            <div class="d-flex flex-row bd-highlight">
+              <div class="bd-highlight me-2">20:55-21:00</div>
+              <!--  -->
+              <div
+                class="bd-highlight flex-fill"
+                data-bs-toggle="collapse"
+                href="#collapse-1502427529152223839215375195521019002073"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse-1502427529152223839215375195521019002073"
+              >
+                <span class=""> Urheiluruutu </span>
+                <!-- Season/Episode -->
+                <!-- Age limit -->
+              </div>
+              <div class="bd-highlight"></div>
+            </div>
+
+            <div class="collapse" id="collapse-1502427529152223839215375195521019002073">
+              <p class="mb-0"></p>
+            </div>
+          </li>
+
+          <li class="px-1 py-0 list-group-item broadcast upcoming-broadcast">
+            <div class="d-flex flex-row bd-highlight">
+              <div class="bd-highlight me-2">21:00-21:45</div>
+              <!--  -->
+              <div
+                class="bd-highlight flex-fill"
+                data-bs-toggle="collapse"
+                href="#collapse-714518394971539177787402441047968234"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse-714518394971539177787402441047968234"
+              >
+                <span class=""> A-studio </span>
+                <!-- Season/Episode -->
+                <!-- Age limit -->
+              </div>
+              <div class="bd-highlight"></div>
+            </div>
+
+            <div class="collapse" id="collapse-714518394971539177787402441047968234">
+              <p class="mb-0">
+                Risto Murron työryhmä on esitellyt odotetut lääkkeensä talouden kasvuun. Nouseeko
+                Suomi kasvuriihen ehdotuksilla? Juontajana Annika Damström.
+              </p>
+            </div>
+          </li>
+
+          <li class="px-1 py-0 list-group-item broadcast upcoming-broadcast">
+            <div class="d-flex flex-row bd-highlight">
+              <div class="bd-highlight me-2">21:45-21:49</div>
+              <!--  -->
+              <div
+                class="bd-highlight flex-fill"
+                data-bs-toggle="collapse"
+                href="#collapse-6797948884682036091801853301886922315"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse-6797948884682036091801853301886922315"
+              >
+                <span class=""> Yle Uutiset </span>
+                <!-- Season/Episode -->
+                <!-- Age limit -->
+              </div>
+              <div class="bd-highlight"></div>
+            </div>
+
+            <div class="collapse" id="collapse-6797948884682036091801853301886922315">
+              <p class="mb-0"></p>
+            </div>
+          </li>
+
+          <li class="px-1 py-0 list-group-item broadcast upcoming-broadcast">
+            <div class="d-flex flex-row bd-highlight">
+              <div class="bd-highlight me-2">21:49-21:53</div>
+              <!--  -->
+              <div
+                class="bd-highlight flex-fill"
+                data-bs-toggle="collapse"
+                href="#collapse-674514747759716927679533247788785285"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse-674514747759716927679533247788785285"
+              >
+                <span class=""> Urheiluruutu </span>
+                <!-- Season/Episode -->
+                <!-- Age limit -->
+              </div>
+              <div class="bd-highlight"></div>
+            </div>
+
+            <div class="collapse" id="collapse-674514747759716927679533247788785285">
+              <p class="mb-0"></p>
+            </div>
+          </li>
+
+          <li class="px-1 py-0 list-group-item broadcast upcoming-broadcast">
+            <div class="d-flex flex-row bd-highlight">
+              <div class="bd-highlight me-2">21:53-22:00</div>
+              <!--  -->
+              <div
+                class="bd-highlight flex-fill"
+                data-bs-toggle="collapse"
+                href="#collapse-4819876737347237701572295993824028495"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse-4819876737347237701572295993824028495"
+              >
+                <span class=""> Yle Uutiset Uutis-Suomi </span>
+                <!-- Season/Episode -->
+                <!-- Age limit -->
+              </div>
+              <div class="bd-highlight"></div>
+            </div>
+
+            <div class="collapse" id="collapse-4819876737347237701572295993824028495">
+              <p class="mb-0">Kiinnostavia uutisia eri puolelta Suomea</p>
+            </div>
+          </li>
+
+          <li class="px-1 py-0 list-group-item broadcast upcoming-broadcast">
+            <div class="d-flex flex-row bd-highlight">
+              <div class="bd-highlight me-2">22:00-23:00</div>
+              <!--  -->
+              <div
+                class="bd-highlight flex-fill"
+                data-bs-toggle="collapse"
+                href="#collapse-5014287334220298064911055741987491126"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse-5014287334220298064911055741987491126"
+              >
+                <span class=""> Viides käsky </span>
+                <!-- Season/Episode -->
+                <!-- Age limit -->
+                <span class="text-secondary">
+                  <!--(12)-->
+                  <img width="16" height="16" src="/assets/agelimits/fi-12.svg" alt="(12)" />
+                </span>
+              </div>
+              <div class="bd-highlight"></div>
+            </div>
+
+            <div class="collapse" id="collapse-5014287334220298064911055741987491126">
+              <p class="mb-0">
+                2/4. Jäähyväiset. Kun rakastettu opettaja lasketaan haudan lepoon, muistosanat
+                lausuu Ben. Testamentin luennan jälkeen selviää, kuinka antelias vanha mies oli
+                ollut. Yksin jäänyt Ben ryhtyy piirittämään uutta kohdetta. (U)
+              </p>
+            </div>
+          </li>
+
+          <li class="px-1 py-0 list-group-item broadcast upcoming-broadcast">
+            <div class="d-flex flex-row bd-highlight">
+              <div class="bd-highlight me-2">23:00-23:15</div>
+              <!--  -->
+              <div
+                class="bd-highlight flex-fill"
+                data-bs-toggle="collapse"
+                href="#collapse-33232608517816894901488798239539532309"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse-33232608517816894901488798239539532309"
+              >
+                <span class=""> Oddasat </span>
+                <!-- Season/Episode -->
+                <!-- Age limit -->
+              </div>
+              <div class="bd-highlight"></div>
+            </div>
+
+            <div class="collapse" id="collapse-33232608517816894901488798239539532309">
+              <p class="mb-0">Saamenkieliset tv-uutiset. Tekstitetty suomeksi ja ruotsiksi.</p>
+            </div>
+          </li>
+
+          <li class="px-1 py-0 list-group-item broadcast upcoming-broadcast">
+            <div class="d-flex flex-row bd-highlight">
+              <div class="bd-highlight me-2">23:15-00:11</div>
+              <!--  -->
+              <div
+                class="bd-highlight flex-fill"
+                data-bs-toggle="collapse"
+                href="#collapse-2001227434213507322629510527468865395"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse-2001227434213507322629510527468865395"
+              >
+                <span class=""> Unelma työstä </span>
+                <!-- Season/Episode -->
+                <!-- Age limit -->
+              </div>
+              <div class="bd-highlight"></div>
+            </div>
+
+            <div class="collapse" id="collapse-2001227434213507322629510527468865395">
+              <p class="mb-0">
+                Noin miljoona suomalaista on joko työttömänä tai työskentelee osa- tai
+                määräaikaisessa työsuhteessa. Dokumentissa tarinansa kertoo entinen työministeri,
+                loppuun palanut oikeustieteen tohtori, akateeminen pätkätyöläinen ja nuori teatte
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <!--<script src="/assets/bootstrap-5.2.1-dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>-->
+    <!--<script src="/assets/bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+    <!--<script src="/assets/bootstrap-5.3.0-dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>-->
+    <!--<script src="/assets/bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>-->
+    <script
+      src="/assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom head -->
+    <script src="/assets/jquery-3.6.3.min.js"></script>
+    <script src="/assets/bootstrap-datepicker-1.9.0-dist/js/bootstrap-datepicker.js"></script>
+    <script src="/assets/bootstrap-datepicker-1.9.0-dist/locales/bootstrap-datepicker.fi.min.js"></script>
+
+    <script>
+      $('#datepicker')
+        .datepicker({
+          language: 'fi',
+          // dateFormat: "yyyy-mm-dd",
+
+          weekStart: 1,
+          daysOfWeekHighlighted: '6,0',
+
+          maxViewMode: 2,
+          calendarWeeks: true,
+          todayHighlight: true,
+
+          autoclose: false,
+
+          maxViewMode: 'days', // TODO: temporarily
+
+          startDate: new Date(2023, 01 - 1, 01)
+        })
+        .on('changeDate', function (e) {
+          // `e` here contains the extra attributes
+          console.log(e)
+          if (e.type === 'changeDate') {
+            var year = e.date.getFullYear().toString()
+            var month = e.date.getMonth() + 1
+            var day = e.date.getDate().toString()
+
+            if (month.toString().length != 2) {
+              month = '0' + month
+            }
+            if (day.toString().length != 2) {
+              day = '0' + day
+            }
+
+            console.log(year, month, day)
+
+            if (day == '03' && month == '03' && year == '2025') {
+              console.log('Got request to redirect to current date')
+            } else {
+              window.location = '/yle-tv1/' + year + '-' + month + '-' + day
+            }
+          }
+        })
+      $('#datepicker').datepicker('setDate', new Date(2025, 03 - 1, 03))
+    </script>
+  </body>
+</html>

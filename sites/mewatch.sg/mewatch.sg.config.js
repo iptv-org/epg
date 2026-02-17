@@ -1,12 +1,23 @@
 const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
+const customParseFormat = require('dayjs/plugin/customParseFormat')
+
+dayjs.extend(utc)
+dayjs.extend(timezone)
+dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'mewatch.sg',
   days: 2,
   url: function ({ channel, date }) {
-    return `https://cdn.mewatch.sg/api/schedules?channels=${channel.site_id}&date=${date.format(
+    const utcDate = date.isUTC() ? date.tz(dayjs.tz.guess(), true).utc() : date.utc()
+
+    return `https://cdn.mewatch.sg/api/schedules?channels=${channel.site_id}&date=${utcDate.format(
       'YYYY-MM-DD'
-    )}&duration=24&ff=idp,ldp,rpt,cd&hour=21&intersect=true&lang=en&segments=all`
+    )}&duration=24&ff=idp,ldp,rpt,cd&hour=${utcDate.format(
+      'HH'
+    )}&intersect=true&lang=en&segments=all`
   },
   parser: function ({ content, channel }) {
     let programs = []
@@ -16,7 +27,7 @@ module.exports = {
       programs.push({
         title: info.title,
         description: info.description,
-        icon: info.images.tile,
+        image: info.images.tile,
         episode: info.episodeNumber,
         season: info.seasonNumber,
         start: parseStart(item),
@@ -31,7 +42,7 @@ module.exports = {
     const axios = require('axios')
     const cheerio = require('cheerio')
     const data = await axios
-      .get(`https://www.mewatch.sg/channel-guide`)
+      .get('https://www.mewatch.sg/channel-guide')
       .then(r => r.data)
       .catch(console.log)
 
@@ -40,7 +51,11 @@ module.exports = {
     $('#side-nav > div > div > div > nav:nth-child(1) > ul > li > ul > li').each((i, el) => {
       const name = $(el).find('a > span').text()
       const url = $(el).find('a').attr('href')
-      const [, site_id] = url.match(/\/(\d+)\?player-fullscreen/)
+      const [, site_id = null] = url.match(/\/(\d+)\?player-fullscreen/) ?? []
+
+      if (!site_id) {
+        return
+      }
 
       channels.push({
         lang: 'en',

@@ -35,7 +35,7 @@ module.exports = {
         title: item.titreP,
         description: item.desc,
         category: item.categorieP,
-        icon: item.srcP,
+        image: item.srcP,
         start: dayjs.unix(item.timestampDeb),
         stop: dayjs.unix(item.timestampFin)
       })
@@ -51,7 +51,7 @@ module.exports = {
 
     return data.programmes.map(item => {
       const site_id = item.url.replace('/', '')
-      const name = site_id.replace(/\-/gi, ' ')
+      const name = site_id.replace(/-/gi, ' ')
 
       return {
         lang: 'fr',

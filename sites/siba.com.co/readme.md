@@ -5,11 +5,11 @@ https://web.siba.com.co/
 ### Download the guide
 
 ```sh
-npm run grab -- --site=siba.com.co
+npm run grab --- --site=siba.com.co
 ```
 
 ### Test
 
 ```sh
-npm test -- siba.com.co
+npm test --- siba.com.co
 ```

@@ -1,5 +1,14 @@
 const axios = require('axios')
 const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
+const customParseFormat = require('dayjs/plugin/customParseFormat')
+
+dayjs.extend(utc)
+dayjs.extend(timezone)
+dayjs.extend(customParseFormat)
+
+dayjs.tz.setDefault('Europe/Helsinki')
 
 module.exports = {
   site: 'iltalehti.fi',
@@ -11,19 +20,20 @@ module.exports = {
   },
   url: function ({ channel, date }) {
     const [group] = channel.site_id.split('#')
-
-    return `https://telkku.com/api/channel-groups/default_builtin_channelgroup${group}/offering?startTime=00%3A00%3A00.000&duration=PT24H&inclusionPolicy=IncludeOngoingAlso&limit=1000&tvDate=${date.format(
-      'YYYY-MM-DD'
-    )}&view=PublicationDetails`
+    const start = encodeURIComponent(date.format('YYYY-MM-DDTHH:mm:ssZ'))
+    const end = encodeURIComponent(date.add(1, 'day').format('YYYY-MM-DDTHH:mm:ssZ'))
+    return `https://il-telkku-api.prod.il.fi/v1/channel-groups/${group}/offering?startTime=${start}&endTime=${end}`
   },
   parser: function ({ content, channel }) {
     let programs = []
     const items = getItems(content, channel)
     items.forEach(item => {
       programs.push({
-        title: item.title,
+        title: item.programName,
         description: item.description,
-        icon: getIcon(item),
+        episode: item.episodeNumber || null,
+        season: item.seasonNumber || null,
+        image: getImage(item),
         start: getStart(item),
         stop: getStop(item)
       })
@@ -33,7 +43,7 @@ module.exports = {
   },
   async channels() {
     const data = await axios
-      .get('https://telkku.com/api/channel-groups')
+      .get('https://il-telkku-api.prod.il.fi/v1/channel-groups')
       .then(r => r.data)
       .catch(console.log)
 
@@ -52,8 +62,8 @@ module.exports = {
   }
 }
 
-function getIcon(item) {
-  const image = item.images.find(i => i.type === 'default' && i.sizeTag === '1200x630')
+function getImage(item) {
+  const image = item.images.find(i => i.sizeTag === '612x382')
 
   return image ? image.url : null
 }
@@ -69,9 +79,26 @@ function getStop(item) {
 function getItems(content, channel) {
   const [, channelId] = channel.site_id.split('#')
   const data = JSON.parse(content)
-  if (!data || !data.response || !Array.isArray(data.response.publicationsByChannel)) return []
-  const channelData = data.response.publicationsByChannel.find(i => i.channel.id === channelId)
-  if (!channelData || !Array.isArray(channelData.publications)) return []
+  
+  if (!data || !Array.isArray(data.response)) return []
 
-  return channelData.publications
+  const responseData = data.response
+  
+  let channelData = null
+  for (const item of responseData) {
+    if (item.channelId === channelId) {
+      channelData = item
+      break
+    }
+  }
+  if (!channelData || !channelData.programs || typeof channelData.programs !== 'object') return []
+  
+  const programs = []
+  Object.values(channelData.programs).forEach(timeSlot => {
+    if (Array.isArray(timeSlot)) {
+      programs.push(...timeSlot)
+    }
+  })
+  
+  return programs
 }

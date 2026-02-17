@@ -7,8 +7,8 @@ const API_ENDPOINT = 'https://tv-at-prod.yo-digital.com/at-bifrost'
 const headers = {
   'Device-Id': crypto.randomUUID(),
   app_key: 'CTnKA63ruKM0JM1doxAXwwyQLLmQiEiy',
-  app_version: '02.0.830',
-  'X-User-Agent': 'web|web|Firefox-120|02.0.830|1',
+  app_version: '02.0.1260',
+  'X-User-Agent': 'web|web|Firefox-120|02.0.1260|1',
   'x-request-tracking-id': crypto.randomUUID()
 }
 
@@ -61,7 +61,7 @@ module.exports = {
         description: parseDescription(detail),
         date: parseDate(item),
         category: parseCategory(item),
-        icon: detail.poster_image_url,
+        image: detail.poster_image_url,
         actors: parseRoles(detail, 'Schauspieler'),
         directors: parseRoles(detail, 'Regisseur'),
         producers: parseRoles(detail, 'Produzent'),

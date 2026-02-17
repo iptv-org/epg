@@ -30,7 +30,7 @@ module.exports = {
       programs.push({
         title: parseTitle($item),
         description: parseDescription($item),
-        icon: parseIcon($item),
+        image: parseImage($item),
         start,
         stop
       })
@@ -62,14 +62,16 @@ module.exports = {
 }
 
 function parseTitle($item) {
-  return $item('td:nth-child(4) > div > div > a > span,td:nth-child(3) > div > div > span,td:nth-child(3) > div > div > a > span').text()
+  return $item(
+    'td:nth-child(4) > div > div > a > span,td:nth-child(3) > div > div > span,td:nth-child(3) > div > div > a > span'
+  ).text()
 }
 
 function parseDescription($item) {
   return $item('td:nth-child(4) > div').clone().children().remove().end().text().trim()
 }
 
-function parseIcon($item) {
+function parseImage($item) {
   return $item('td:nth-child(3) > a > img').attr('src')
 }
 

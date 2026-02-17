@@ -1,119 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="" site_id="ard">ARD</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="" site_id="bbc1">BBC 1</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="" site_id="bbc2">BBC 2</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="" site_id="bbc4">BBC 4</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="" site_id="Cartoonito">Cartoonito</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="" site_id="discoveryscience">Discovery Science</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="" site_id="eentertainment">E! Entertainment</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="" site_id="euronews">Euronews</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="" site_id="nh">NH</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="" site_id="paramountnetwork">Paramount Network</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="" site_id="rtl">RTL</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="" site_id="sat1">Sat 1</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="" site_id="starchannel">STAR Channel</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="" site_id="vrt1">VRT 1</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="" site_id="wdr">WDR Fernsehen</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="3sat.de" site_id="3sat">3Sat</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="24Kitchen.nl" site_id="24kitchen">24Kitchen</channel>
-  <channel site="tvgids.nl" lang="en" xmltv_id="AlJazeeraEnglish.qa" site_id="aljazeera">Al Jazeera Engels</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="AnimalPlanet.nl" site_id="animalplanet">Animal Planet</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="arte.fr" site_id="arte">ARTE</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="AT5.nl" site_id="at5">AT5</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="BBCEntertainment.uk" site_id="bbce">BBC Entertainment</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="BBCFirstBenelux.uk" site_id="bbcfirst">BBC First</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="BBCNewsEurope.uk" site_id="bbcworld">BBC World</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="BeleefKPN.nl" site_id="kpnpresenteert">Beleef KPN</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="BVN.nl" site_id="bvn">BVN</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="Canvas.be" site_id="canvas">VRT Canvas</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="CartoonNetwork.nl" site_id="cartoonnetwork">Cartoon Network</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="CBSReality.nl" site_id="cbsreality">CBS Reality</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="CNBCEurope.uk" site_id="cnbc">CNBC</channel>
-  <channel site="tvgids.nl" lang="en" xmltv_id="CNNInternationalEurope.us" site_id="cnn">CNN</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="ComedyCentral.nl" site_id="comedycentral">Comedy Central</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="CrimePlusInvestigationBenelux.uk" site_id="crimeinvestigation">Crime + Investigation</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="DiscoveryChannel.nl" site_id="discovery">Discovery</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="DisneyChannel.nl" site_id="disneychannel">Disney Channel</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="DisneyXD.nl" site_id="disneyxd">Disney XD</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="ESPN2.nl" site_id="espn2">ESPN 2</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="ESPN3.nl" site_id="espn3">ESPN 3</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="ESPN4.nl" site_id="espn4">ESPN 4</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="ESPN.nl" site_id="espn">ESPN 1</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="Eurosport1.nl" site_id="eurosport1">Eurosport 1</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="Eurosport2.nl" site_id="eurosport2">Eurosport 2</channel>
-  <channel site="tvgids.nl" lang="en" xmltv_id="ExtremeSportsChannel.nl" site_id="extsports">Extreme Sports Channel</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="Film1Action.nl" site_id="film1action">Film1 Action</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="Film1Drama.nl" site_id="film1drama">Film1 Drama</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="Film1Family.nl" site_id="film1family">Film1 Family</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="Film1Premiere.nl" site_id="film1premiere">Film 1 Premiere</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="FilmBox.nl" site_id="filmboxnl">Filmbox.nl</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="History.nl" site_id="history">HISTORY</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="INPLUS.nl" site_id="inplus">INPLUS</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="InvestigationDiscovery.nl" site_id="id">Investigation Discovery</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="Ketnet.be" site_id="ketnet">VRT Ketnet</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="L1TV.nl" site_id="l1tv">L1 TV</channel>
-  <channel site="tvgids.nl" lang="fr" xmltv_id="LaUne.be" site_id="rtbfla1">RTBF La 1</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="LoveNature.ca" site_id="lovenature">Love Nature</channel>
-  <channel site="tvgids.nl" lang="fr" xmltv_id="Mezzo.fr" site_id="mezzo">Mezzo</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="MTV.nl" site_id="mtv">MTV</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="NationalGeographic.nl" site_id="ngc">National Geographic</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="NationalGeographicWild.nl" site_id="natgeowild">Nat Geo Wild</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="NDRFernsehenInternational.de" site_id="ndr">NDR Fernsehen</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="NET5.nl" site_id="net5">NET 5</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="Nickelodeon.nl" site_id="nickelodeon">Nickelodeon</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="NickJr.nl" site_id="nickjr">Nick Jr.</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="NPO1.nl" site_id="npo1">NPO 1</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="NPO1extra.nl" site_id="npo1extra">NPO 1 extra</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="NPO2.nl" site_id="npo2">NPO 2</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="NPO2extra.nl" site_id="npo2extra">NPO 2 extra</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="NPO3.nl" site_id="npo3">NPO 3</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="NPOPolitiekenNieuws.nl" site_id="npopolitiek">NPO Politiek</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="OmroepBrabant.nl" site_id="brabant">Omroep Brabant</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="OmroepFlevoland.nl" site_id="flevoland">Omroep Flevoland</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="OmroepGelderland.nl" site_id="gelderland">Omroep Gelderland</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="OmroepZeeland.nl" site_id="zeeland">Omroep Zeeland</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="OmropFryslan.nl" site_id="omropfryslan">Omrop Fryslân</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="ONS.nl" site_id="ons">ONS</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="OUTtv.nl" site_id="outtv">OUTtv</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="PebbleTV.nl" site_id="pebbletv">Pebble TV</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="Play4.be" site_id="play4">Play4</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="ProSieben.de" site_id="pro7">PRO 7</channel>
-  <channel site="tvgids.nl" lang="it" xmltv_id="Rai1.it" site_id="raiuno">Rai Uno</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="RTL4.nl" site_id="rtl4">RTL 4</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="RTL5.nl" site_id="rtl5">RTL 5</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="RTL7.nl" site_id="rtl7">RTL 7</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="RTL8.nl" site_id="rtl8">RTL 8</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="RTLCrime.nl" site_id="rtlcrime">RTL Crime</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="RTLLounge.nl" site_id="rtllounge">RTL Lounge</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="RTLTelekids.nl" site_id="rtltelekids">RTL Telekids</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="RTLZ.nl" site_id="rtlz">RTL Z</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="RTVDrenthe.nl" site_id="drenthe">RTV Drenthe</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="RTVOost.nl" site_id="rtvoost">RTV Oost</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="RTVRijnmond.nl" site_id="rtvrijnmond">RTV Rijnmond</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="RTVUtrecht.nl" site_id="rtvutrecht">RTV Utrecht</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="SBS6.nl" site_id="sbs6">SBS 6</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="SBS9.nl" site_id="sbs9">SBS 9</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="ShortsTV.uk" site_id="shortstv">ShortsTV</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="StingrayClassica.ca" site_id="stingrayclassica">Stingray Classica</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="Tipik.be" site_id="rtbfla2">RTBF La 2</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="TLC.nl" site_id="tlc">TLC</channel>
-  <channel site="tvgids.nl" lang="tr" xmltv_id="TRTWorld.tr" site_id="trt">TRT World</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="TV5MondeEurope.fr" site_id="tv5">TV5MONDE</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="TV538.nl" site_id="tv538">TV 538</channel>
-  <channel site="tvgids.nl" lang="es" xmltv_id="TVEInternacionalEuropeAsia.es" site_id="tve">TV E</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="TVNoord.nl" site_id="noord">TV Noord</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="TVOrange.nl" site_id="oranjetv">Oranje TV</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="TVWest.nl" site_id="rtvwest">RTV West</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="Veronica.nl" site_id="veronica">Veronica</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="VeronicaDisneyXD.nl" site_id="veronicadisneyxd">Veronica/Disney XD</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="XITE.nl" site_id="xite">XITE</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="ZDF.de" site_id="zdf">ZDF</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="ZiggoSport.nl" site_id="ziggosport">Ziggo Sport</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="ZiggoSportDocu.nl" site_id="ziggosportdocu">Ziggo Sport Docu</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="ZiggoSportGolf.nl" site_id="ziggosportgolf">Ziggo Sport Golf</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="ZiggoSportRacing.nl" site_id="ziggosportracing">Ziggo Sport Racing</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="ZiggoSportSelect.nl" site_id="ziggosportselect">Ziggo Sport Select</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="ZiggoSportTennis.nl" site_id="ziggosporttennis">Ziggo Sport Tennis</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="ZiggoSportVoetbal.nl" site_id="ziggosportvoetbal">Ziggo Sport Voetbal</channel>
+  <channel site="tvgids.nl" site_id="3sat" lang="nl" xmltv_id="3sat.de@SD">3Sat</channel>
+  <channel site="tvgids.nl" site_id="24kitchen" lang="nl" xmltv_id="24Kitchen.us@Netherlands">24Kitchen</channel>
+  <channel site="tvgids.nl" site_id="aljazeera" lang="en" xmltv_id="AlJazeera.qa@English">Al Jazeera Engels</channel>
+  <channel site="tvgids.nl" site_id="animalplanet" lang="nl" xmltv_id="AnimalPlanet.nl@SD">Animal Planet</channel>
+  <channel site="tvgids.nl" site_id="ard" lang="nl" xmltv_id="">ARD</channel>
+  <channel site="tvgids.nl" site_id="arte" lang="nl" xmltv_id="arte.fr@SD">ARTE</channel>
+  <channel site="tvgids.nl" site_id="at5" lang="nl" xmltv_id="AT5.nl@SD">AT5</channel>
+  <channel site="tvgids.nl" site_id="bbc1" lang="nl" xmltv_id="">BBC 1</channel>
+  <channel site="tvgids.nl" site_id="bbc2" lang="nl" xmltv_id="">BBC 2</channel>
+  <channel site="tvgids.nl" site_id="bbc4" lang="nl" xmltv_id="">BBC 4</channel>
+  <channel site="tvgids.nl" site_id="bbcfirst" lang="nl" xmltv_id="BBCFirst.uk@Benelux">BBC First</channel>
+  <channel site="tvgids.nl" site_id="bbcnews" lang="nl" xmltv_id="">BBC News</channel>
+  <channel site="tvgids.nl" site_id="brabant" lang="nl" xmltv_id="OmroepBrabant.nl@SD">Omroep Brabant</channel>
+  <channel site="tvgids.nl" site_id="bvn" lang="nl" xmltv_id="BVN.nl@SD">BVN</channel>
+  <channel site="tvgids.nl" site_id="canalplusaction" lang="nl" xmltv_id="">Canal+ Action</channel>
+  <channel site="tvgids.nl" site_id="canvas" lang="nl" xmltv_id="">VRT Canvas</channel>
+  <channel site="tvgids.nl" site_id="Cartoonito" lang="nl" xmltv_id="">Cartoonito</channel>
+  <channel site="tvgids.nl" site_id="cartoonnetwork" lang="nl" xmltv_id="CartoonNetworkWesternEurope.uk@Netherlands">Cartoon Network</channel>
+  <channel site="tvgids.nl" site_id="cbsreality" lang="nl" xmltv_id="CBSReality.nl@SD">CBS Reality</channel>
+  <channel site="tvgids.nl" site_id="cnbc" lang="nl" xmltv_id="CNBCEurope.uk@SD">CNBC</channel>
+  <channel site="tvgids.nl" site_id="cnn" lang="en" xmltv_id="CNNInternational.us@MENA">CNN</channel>
+  <channel site="tvgids.nl" site_id="comedycentral" lang="nl" xmltv_id="ComedyCentral.nl@SD">Comedy Central</channel>
+  <channel site="tvgids.nl" site_id="crimeinvestigation" lang="nl" xmltv_id="CrimePlusInvestigationBenelux.uk@SD">Crime + Investigation</channel>
+  <channel site="tvgids.nl" site_id="discovery" lang="nl" xmltv_id="DiscoveryChannel.nl@SD">Discovery</channel>
+  <channel site="tvgids.nl" site_id="discoveryscience" lang="nl" xmltv_id="">Discovery Science</channel>
+  <channel site="tvgids.nl" site_id="disneychannel" lang="nl" xmltv_id="DisneyChannel.nl@SD">Disney Channel</channel>
+  <channel site="tvgids.nl" site_id="disneyxd" lang="nl" xmltv_id="DisneyXD.nl@SD">Disney XD</channel>
+  <channel site="tvgids.nl" site_id="drenthe" lang="nl" xmltv_id="RTVDrenthe.nl@SD">RTV Drenthe</channel>
+  <channel site="tvgids.nl" site_id="eentertainment" lang="nl" xmltv_id="">E! Entertainment</channel>
+  <channel site="tvgids.nl" site_id="espn" lang="nl" xmltv_id="ESPN.nl@HD">ESPN 1</channel>
+  <channel site="tvgids.nl" site_id="espn2" lang="nl" xmltv_id="ESPN2.nl@HD">ESPN 2</channel>
+  <channel site="tvgids.nl" site_id="espn3" lang="nl" xmltv_id="ESPN3.nl@HD">ESPN 3</channel>
+  <channel site="tvgids.nl" site_id="espn4" lang="nl" xmltv_id="ESPN4.nl@HD">ESPN 4</channel>
+  <channel site="tvgids.nl" site_id="euronews" lang="nl" xmltv_id="">Euronews</channel>
+  <channel site="tvgids.nl" site_id="eurosport1" lang="nl" xmltv_id="Eurosport1.fr@Netherlands">Eurosport 1</channel>
+  <channel site="tvgids.nl" site_id="eurosport2" lang="nl" xmltv_id="Eurosport2.fr@Netherlands">Eurosport 2</channel>
+  <channel site="tvgids.nl" site_id="extsports" lang="en" xmltv_id="ExtremeSportsChannel.nl@SD">Extreme Sports Channel</channel>
+  <channel site="tvgids.nl" site_id="film1action" lang="nl" xmltv_id="Film1Action.nl@SD">Film1 Action</channel>
+  <channel site="tvgids.nl" site_id="film1drama" lang="nl" xmltv_id="Film1Drama.nl@SD">Film1 Drama</channel>
+  <channel site="tvgids.nl" site_id="film1family" lang="nl" xmltv_id="Film1Family.nl@SD">Film1 Family</channel>
+  <channel site="tvgids.nl" site_id="film1premiere" lang="nl" xmltv_id="Film1Premiere.nl@SD">Film 1 Premiere</channel>
+  <channel site="tvgids.nl" site_id="filmboxnl" lang="nl" xmltv_id="FilmBox.nl@Netherlands">Filmbox.nl</channel>
+  <channel site="tvgids.nl" site_id="flevoland" lang="nl" xmltv_id="OmroepFlevoland.nl@SD">Omroep Flevoland</channel>
+  <channel site="tvgids.nl" site_id="gelderland" lang="nl" xmltv_id="OmroepGelderland.nl@SD">Omroep Gelderland</channel>
+  <channel site="tvgids.nl" site_id="hgtv" lang="nl" xmltv_id="">HGTV</channel>
+  <channel site="tvgids.nl" site_id="history" lang="nl" xmltv_id="History.nl@SD">HISTORY</channel>
+  <channel site="tvgids.nl" site_id="id" lang="nl" xmltv_id="InvestigationDiscovery.nl@SD">Investigation Discovery</channel>
+  <channel site="tvgids.nl" site_id="inplus" lang="nl" xmltv_id="INPLUS.nl@SD">INPLUS</channel>
+  <channel site="tvgids.nl" site_id="ketnet" lang="nl" xmltv_id="Ketnet.be@SD">Ketnet</channel>
+  <channel site="tvgids.nl" site_id="l1tv" lang="nl" xmltv_id="L1TV.nl@SD">L1 TV</channel>
+  <channel site="tvgids.nl" site_id="lovenature" lang="nl" xmltv_id="LoveNature.ca@SD">Love Nature</channel>
+  <channel site="tvgids.nl" site_id="mezzo" lang="fr" xmltv_id="Mezzo.fr@SD">Mezzo</channel>
+  <channel site="tvgids.nl" site_id="mtv" lang="nl" xmltv_id="MTV.nl@SD">MTV</channel>
+  <channel site="tvgids.nl" site_id="natgeowild" lang="nl" xmltv_id="NationalGeographicWild.nl@SD">Nat Geo Wild</channel>
+  <channel site="tvgids.nl" site_id="ndr" lang="nl" xmltv_id="NDRFernsehenInternational.de@SD">NDR Fernsehen</channel>
+  <channel site="tvgids.nl" site_id="net5" lang="nl" xmltv_id="NET5.nl@SD">NET 5</channel>
+  <channel site="tvgids.nl" site_id="ngc" lang="nl" xmltv_id="NationalGeographic.nl@SD">National Geographic</channel>
+  <channel site="tvgids.nl" site_id="nh" lang="nl" xmltv_id="">NH</channel>
+  <channel site="tvgids.nl" site_id="nickelodeon" lang="nl" xmltv_id="Nickelodeon.nl@SD">Nickelodeon</channel>
+  <channel site="tvgids.nl" site_id="nickjr" lang="nl" xmltv_id="NickJr.nl@SD">Nick Jr.</channel>
+  <channel site="tvgids.nl" site_id="noord" lang="nl" xmltv_id="">TV Noord</channel>
+  <channel site="tvgids.nl" site_id="npo1" lang="nl" xmltv_id="NPO1.nl@SD">NPO 1</channel>
+  <channel site="tvgids.nl" site_id="npo1extra" lang="nl" xmltv_id="NPO1extra.nl@SD">NPO 1 extra</channel>
+  <channel site="tvgids.nl" site_id="npo2" lang="nl" xmltv_id="NPO2.nl@SD">NPO 2</channel>
+  <channel site="tvgids.nl" site_id="npo2extra" lang="nl" xmltv_id="NPO2extra.nl@SD">NPO 2 extra</channel>
+  <channel site="tvgids.nl" site_id="npo3" lang="nl" xmltv_id="NPO3.nl@SD">NPO 3</channel>
+  <channel site="tvgids.nl" site_id="npopolitiek" lang="nl" xmltv_id="NPOPolitiekenNieuws.nl@SD">NPO Politiek</channel>
+  <channel site="tvgids.nl" site_id="omropfryslan" lang="nl" xmltv_id="OmropFryslan.nl@SD">Omrop Fryslân</channel>
+  <channel site="tvgids.nl" site_id="ons" lang="nl" xmltv_id="ONS.nl@SD">ONS</channel>
+  <channel site="tvgids.nl" site_id="oranjetv" lang="nl" xmltv_id="">Oranje TV</channel>
+  <channel site="tvgids.nl" site_id="outtv" lang="nl" xmltv_id="OUTtv.nl@SD">OUTtv</channel>
+  <channel site="tvgids.nl" site_id="paramountnetwork" lang="nl" xmltv_id="">Paramount Network</channel>
+  <channel site="tvgids.nl" site_id="pebbletv" lang="nl" xmltv_id="PebbleTV.nl@SD">Pebble TV</channel>
+  <channel site="tvgids.nl" site_id="play4" lang="nl" xmltv_id="Play4.be@SD">Play4</channel>
+  <channel site="tvgids.nl" site_id="pro7" lang="nl" xmltv_id="ProSieben.de@SD">PRO 7</channel>
+  <channel site="tvgids.nl" site_id="raiuno" lang="it" xmltv_id="Rai1.it@SD">Rai Uno</channel>
+  <channel site="tvgids.nl" site_id="rtbfla1" lang="fr" xmltv_id="LaUne.be@SD">RTBF La 1</channel>
+  <channel site="tvgids.nl" site_id="rtbfla2" lang="nl" xmltv_id="Tipik.be@SD">RTBF Tipik</channel>
+  <channel site="tvgids.nl" site_id="rtl" lang="nl" xmltv_id="">RTL</channel>
+  <channel site="tvgids.nl" site_id="rtl4" lang="nl" xmltv_id="RTL4.nl@SD">RTL 4</channel>
+  <channel site="tvgids.nl" site_id="rtl5" lang="nl" xmltv_id="RTL5.nl@SD">RTL 5</channel>
+  <channel site="tvgids.nl" site_id="rtl7" lang="nl" xmltv_id="RTL7.nl@SD">RTL 7</channel>
+  <channel site="tvgids.nl" site_id="rtl8" lang="nl" xmltv_id="RTL8.nl@SD">RTL 8</channel>
+  <channel site="tvgids.nl" site_id="rtlcrime" lang="nl" xmltv_id="RTLCrime.nl@SD">RTL Crime</channel>
+  <channel site="tvgids.nl" site_id="rtllounge" lang="nl" xmltv_id="RTLLounge.nl@SD">RTL Lounge</channel>
+  <channel site="tvgids.nl" site_id="rtltelekids" lang="nl" xmltv_id="RTLTelekids.nl@SD">RTL Telekids</channel>
+  <channel site="tvgids.nl" site_id="rtlz" lang="nl" xmltv_id="RTLZ.nl@SD">RTL Z</channel>
+  <channel site="tvgids.nl" site_id="rtvoost" lang="nl" xmltv_id="RTVOost.nl@SD">RTV Oost</channel>
+  <channel site="tvgids.nl" site_id="rtvrijnmond" lang="nl" xmltv_id="RTVRijnmond.nl@SD">RTV Rijnmond</channel>
+  <channel site="tvgids.nl" site_id="rtvutrecht" lang="nl" xmltv_id="RTVUtrecht.nl@SD">RTV Utrecht</channel>
+  <channel site="tvgids.nl" site_id="rtvwest" lang="nl" xmltv_id="">RTV West</channel>
+  <channel site="tvgids.nl" site_id="sat1" lang="nl" xmltv_id="">Sat 1</channel>
+  <channel site="tvgids.nl" site_id="sbs6" lang="nl" xmltv_id="SBS6.nl@SD">SBS 6</channel>
+  <channel site="tvgids.nl" site_id="shortstv" lang="nl" xmltv_id="ShortsTV.uk@SD">ShortsTV</channel>
+  <channel site="tvgids.nl" site_id="starchannel" lang="nl" xmltv_id="">STAR Channel</channel>
+  <channel site="tvgids.nl" site_id="stingrayclassica" lang="nl" xmltv_id="StingrayClassica.ca@SD">Stingray Classica</channel>
+  <channel site="tvgids.nl" site_id="tlc" lang="nl" xmltv_id="TLC.nl@SD">TLC</channel>
+  <channel site="tvgids.nl" site_id="trt" lang="tr" xmltv_id="TRTWorld.tr@SD">TRT World</channel>
+  <channel site="tvgids.nl" site_id="tv5" lang="nl" xmltv_id="TV5MondeEurope.fr@SD">TV5MONDE</channel>
+  <channel site="tvgids.nl" site_id="tv538" lang="nl" xmltv_id="TV538.nl@SD">TV 538</channel>
+  <channel site="tvgids.nl" site_id="tve" lang="es" xmltv_id="TVEInternacionalEuropeAsia.es@SD">TV E</channel>
+  <channel site="tvgids.nl" site_id="veronica" lang="nl" xmltv_id="">Veronica</channel>
+  <channel site="tvgids.nl" site_id="veronicadisneyxd" lang="nl" xmltv_id="">Veronica/Disney XD</channel>
+  <channel site="tvgids.nl" site_id="viaplaytv" lang="nl" xmltv_id="">Viaplay TV</channel>
+  <channel site="tvgids.nl" site_id="vrt1" lang="nl" xmltv_id="">VRT 1</channel>
+  <channel site="tvgids.nl" site_id="wdr" lang="nl" xmltv_id="">WDR Fernsehen</channel>
+  <channel site="tvgids.nl" site_id="xite" lang="nl" xmltv_id="XITE.nl@SD">XITE</channel>
+  <channel site="tvgids.nl" site_id="zdf" lang="nl" xmltv_id="ZDF.de@SD">ZDF</channel>
+  <channel site="tvgids.nl" site_id="zeeland" lang="nl" xmltv_id="OmroepZeeland.nl@SD">Omroep Zeeland</channel>
+  <channel site="tvgids.nl" site_id="ziggosport" lang="nl" xmltv_id="ZiggoSport.nl@HD">Ziggo Sport</channel>
+  <channel site="tvgids.nl" site_id="ziggosport2" lang="nl" xmltv_id="">Ziggo Sport 2</channel>
+  <channel site="tvgids.nl" site_id="ziggosport3" lang="nl" xmltv_id="">Ziggo Sport 3</channel>
+  <channel site="tvgids.nl" site_id="ziggosport4" lang="nl" xmltv_id="">Ziggo Sport 4</channel>
+  <channel site="tvgids.nl" site_id="ziggosport5" lang="nl" xmltv_id="">Ziggo Sport 5</channel>
+  <channel site="tvgids.nl" site_id="ziggosport6" lang="nl" xmltv_id="">Ziggo Sport 6</channel>
 </channels>

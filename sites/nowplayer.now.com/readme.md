@@ -7,13 +7,13 @@ https://nowplayer.now.com/tvguide
 Chinese:
 
 ```sh
-npm run grab -- --site=nowplayer.now.com  --lang=zh
+npm run grab --- --site=nowplayer.now.com  --lang=zh
 ```
 
 English:
 
 ```sh
-npm run grab -- --site=nowplayer.now.com  --lang=en
+npm run grab --- --site=nowplayer.now.com  --lang=en
 ```
 
 ### Update channel list
@@ -21,17 +21,17 @@ npm run grab -- --site=nowplayer.now.com  --lang=en
 Chinese:
 
 ```sh
-npm run channels:parse -- --config=./sites/nowplayer.now.com/nowplayer.now.com.config.js --output=./sites/nowplayer.now.com/nowplayer.now.com_zh.channels.xml --set=lang:zh
+npm run channels:parse --- --config=./sites/nowplayer.now.com/nowplayer.now.com.config.js --output=./sites/nowplayer.now.com/nowplayer.now.com_zh.channels.xml --set=lang:zh
 ```
 
 English:
 
 ```sh
-npm run channels:parse -- --config=./sites/nowplayer.now.com/nowplayer.now.com.config.js --output=./sites/nowplayer.now.com/nowplayer.now.com_en.channels.xml --set=lang:en
+npm run channels:parse --- --config=./sites/nowplayer.now.com/nowplayer.now.com.config.js --output=./sites/nowplayer.now.com/nowplayer.now.com_en.channels.xml --set=lang:en
 ```
 
 ### Test
 
 ```sh
-npm test -- nowplayer.now.com
+npm test --- nowplayer.now.com
 ```

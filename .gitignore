@@ -1,5 +1,10 @@
 /node_modules/
 /temp/
 /channels.xml
+/custom.xml
 /guide.xml
 /guide.xml.gz
+.secrets
+
+# macOS
+.DS_Store

@@ -5,11 +5,11 @@ https://www.arianatelevision.com/program-schedule/
 ### Download the guide
 
 ```sh
-npm run grab -- --site=arianatelevision.com
+npm run grab --- --site=arianatelevision.com
 ```
 
 ### Test
 
 ```sh
-npm test -- arianatelevision.com
+npm test --- arianatelevision.com
 ```

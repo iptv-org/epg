@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="tvmi.mt" lang="mt" xmltv_id="TVM.mt" site_id="2">TVM</channel>
-  <channel site="tvmi.mt" lang="mt" xmltv_id="TVMnewsPlus.mt" site_id="3">TVMnews+</channel>
-  <channel site="tvmi.mt" lang="mt" xmltv_id="TVMsportPlus.mt" site_id="4">TVMsport+</channel>
+  <channel site="tvmi.mt" site_id="2" lang="mt" xmltv_id="TVM.mt@SD">TVM</channel>
+  <channel site="tvmi.mt" site_id="3" lang="mt" xmltv_id="TVMnewsPlus.mt@SD">TVMnews+</channel>
+  <channel site="tvmi.mt" site_id="4" lang="mt" xmltv_id="TVMsportPlus.mt@SD">TVMsport+</channel>
 </channels>

@@ -48,7 +48,7 @@ it('can parse response', async () => {
     start: '2022-08-26T04:00:00.000Z',
     stop: '2022-08-26T07:10:00.000Z',
     title: 'Morgonstudion',
-    icon: 'https://jrsy.tmsimg.com/assets/p14436175_i_h9_ad.jpg',
+    image: 'https://jrsy.tmsimg.com/assets/p14436175_i_h9_ad.jpg',
     description:
       'Dagens viktigaste nyheter och analyser med ständiga uppdateringar. Vi sänder direkt inrikes- och utrikesnyheter inklusive sport, kultur och nöje. Dessutom intervjuer med aktuella gäster. Nyhetssammanfattningar varje kvart med start kl 06.00.',
     actors: ['Carolina Neurath', 'Karin Magnusson', 'Pelle Nilsson', 'Ted Wigren']
@@ -58,7 +58,7 @@ it('can parse response', async () => {
     start: '2022-08-27T05:20:00.000Z',
     stop: '2022-08-27T05:50:00.000Z',
     title: 'Uppdrag granskning',
-    icon: 'https://jrsy.tmsimg.com/assets/p22818697_e_h9_aa.jpg',
+    image: 'https://jrsy.tmsimg.com/assets/p22818697_e_h9_aa.jpg',
     description:
       'När samtliga sex män frias för ännu en skjutning växer vreden inom polisen. Ökningen av skjutningar i Sverige ligger i topp i Europa - och nu är våldsspiralen på väg mot ett nattsvart rekord. Hur blev Sverige landet där mördare går fria?',
     actors: ['Karin Mattisson', 'Ali Fegan'],

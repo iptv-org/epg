@@ -9,13 +9,13 @@ https://www.mytvsuper.com/en/epg/ (English)
 Chinese:
 
 ```sh
-npm run grab -- --site=mytvsuper.com --lang=zh
+npm run grab --- --site=mytvsuper.com --lang=zh
 ```
 
 English:
 
 ```sh
-npm run grab -- --site=mytvsuper.com --lang=en
+npm run grab --- --site=mytvsuper.com --lang=en
 ```
 
 ### Update channel list
@@ -23,17 +23,17 @@ npm run grab -- --site=mytvsuper.com --lang=en
 Chinese:
 
 ```sh
-npm run channels:parse -- --config=./sites/mytvsuper.com/mytvsuper.com.config.js --output=./sites/mytvsuper.com/mytvsuper.com_zh.channels.xml --set=lang:zh
+npm run channels:parse --- --config=./sites/mytvsuper.com/mytvsuper.com.config.js --output=./sites/mytvsuper.com/mytvsuper.com_zh.channels.xml --set=lang:zh
 ```
 
 English:
 
 ```sh
-npm run channels:parse -- --config=./sites/mytvsuper.com/mytvsuper.com.config.js --output=./sites/mytvsuper.com/mytvsuper.com_en.channels.xml --set=lang:en
+npm run channels:parse --- --config=./sites/mytvsuper.com/mytvsuper.com.config.js --output=./sites/mytvsuper.com/mytvsuper.com_en.channels.xml --set=lang:en
 ```
 
 ### Test
 
 ```sh
-npm test -- mytvsuper.com
+npm test --- mytvsuper.com
 ```

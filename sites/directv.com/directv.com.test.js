@@ -56,7 +56,7 @@ it('can parse response', done => {
           description:
             'Kay (Tommy Lee Jones) and Jay (Will Smith) reunite to provide our best line of defense against a seductress who levels the toughest challenge yet to the MIBs mission statement: protecting the earth from the scum of the universe. While investigating a routine crime, Jay uncovers a plot masterminded by Serleena (Boyle), a Kylothian monster who disguises herself as a lingerie model. When Serleena takes the MIB building hostage, there is only one person Jay can turn to -- his former MIB partner.',
           date: '2002',
-          icon: 'https://www.directv.com/db_photos/movies/AllPhotosAPGI/29160/29160_aa.jpg',
+          image: 'https://www.directv.com/db_photos/movies/AllPhotosAPGI/29160/29160_aa.jpg',
           category: ['Comedy', 'Movies Anywhere', 'Action/Adventure', 'Science Fiction'],
           rating: {
             system: 'MPA',
@@ -69,7 +69,8 @@ it('can parse response', done => {
           title: 'South Park',
           sub_title: 'Goth Kids 3: Dawn of the Posers',
           description: 'The goth kids are sent to a camp for troubled children.',
-          icon: 'https://www.directv.com/db_photos/showcards/v5/AllPhotos/184338/p184338_b_v5_aa.jpg',
+          image:
+            'https://www.directv.com/db_photos/showcards/v5/AllPhotos/184338/p184338_b_v5_aa.jpg',
           category: ['Series', 'Animation', 'Comedy'],
           season: 17,
           episode: 4,

@@ -49,7 +49,8 @@ it('can parse response', () => {
     title: 'A hegyi doktor - I. évad',
     description:
       'Maxl iskolatársának, Vroninak az anyja egy autóbalesetben meghal. A 20 éves testvér, Vinzenz magához szeretné venni a lányt, ám a gyámüggyel problémái akadnak, ezért megpróbálja elszöktetni.(Eredeti hang digitálisan.)',
-    icon: 'https://mediaklikk.hu/wp-content/uploads/sites/4/2019/10/A-hegyi-doktor-I-évad-e1571318391226-150x150.jpg'
+    image:
+      'https://mediaklikk.hu/wp-content/uploads/sites/4/2019/10/A-hegyi-doktor-I-évad-e1571318391226-150x150.jpg'
   })
 
   expect(results[56]).toMatchObject({

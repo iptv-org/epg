@@ -5,7 +5,7 @@ const customParseFormat = require('dayjs/plugin/customParseFormat')
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
-const date = dayjs.utc('2022-04-10', 'YYYY-MM-DD').startOf('d')
+const date = dayjs.utc('2024-12-10', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: '1023102509',
   xmltv_id: 'ZeeOneAfrica.za'
@@ -13,29 +13,30 @@ const channel = {
 
 it('can generate valid url', () => {
   expect(url({ channel, date })).toBe(
-    'https://www.startimestv.com/channeldetail/1023102509/2022-04-10.html'
+    'https://www.startimestv.com/channeldetail/1023102509/2024-12-10.html'
   )
 })
 
 it('can parse response', () => {
-  const content =
-    '<!DOCTYPE html><html> <body> <div id="body" class="page"> <div class="block"> <div class="channel"> <div class="content"> <div class="tv_gui"> <div class="list"> <div class="inner wap-list"> <div class="box" style="width:157.6px"> <div class="in"> <h3>Guddan S2 E77</h3> <div class="t">00:00-01:00</div><p>Vickrant is overjoyed to see Akshat in pain and not knowing what to do.</p></div><div class="mask"> <h4>00:00-01:00 Guddan S2 E77</h4> <p>Vickrant is overjoyed to see Akshat in pain and not knowing what to do.</p></div></div></div></div></div></div></div></div></div></body></html>'
+  const fs = require('fs')
+  const path = require('path')
+  const content = fs.readFileSync(path.join(__dirname, '__data__', 'content.html'))
   const result = parser({ content, date }).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
     return p
   })
 
-  expect(result).toMatchObject([
-    {
-      start: '2022-04-10T00:00:00.000Z',
-      stop: '2022-04-10T01:00:00.000Z',
-      title: 'Guddan S2 E77',
-      season: 2,
-      episode: 77,
-      description: 'Vickrant is overjoyed to see Akshat in pain and not knowing what to do.'
-    }
-  ])
+  expect(result.length).toBe(22)
+  expect(result[0]).toMatchObject({
+    start: '2024-12-10T00:00:00.000Z',
+    stop: '2024-12-10T01:00:00.000Z',
+    title: 'Deserted S1 E37',
+    description:
+      'Tora approaches Tubri for help, but she expresses her helplessness in seeking assistance from Arjun. Meanwhile, other family members are caught in the crossfire, trying to navigate their own positions within the household.',
+    season: 1,
+    episode: 37
+  })
 })
 
 it('can handle empty guide', () => {

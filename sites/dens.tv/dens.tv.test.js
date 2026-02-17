@@ -6,11 +6,13 @@ const utc = require('dayjs/plugin/utc')
 
 dayjs.extend(utc)
 
-const date = dayjs.utc('2023-11-10').startOf('d')
-const channel = { site_id: '6', xmltv_id: 'MetroTV.id', lang: 'id' }
+const date = dayjs.utc('2024-11-24').startOf('d')
+const channel = { site_id: '38', xmltv_id: 'AniplusAsia.sg', lang: 'id' }
 
 it('can generate valid url', () => {
-  expect(url({ channel, date })).toBe('https://www.dens.tv/tvpage_octo/epgchannel2/2023-11-10/6')
+  expect(url({ channel, date })).toBe(
+    'https://www.dens.tv/api/dens3/tv/TvChannels/listEpgByDate?date=2024-11-24&id_channel=38&app_type=10'
+  )
 })
 
 it('can parse response', () => {
@@ -22,18 +24,21 @@ it('can parse response', () => {
     return p
   })
 
-  expect(results.length).toBe(26)
+  expect(results.length).toBe(2)
 
   expect(results[0]).toMatchObject({
-    start: '2023-11-09T17:00:00.000Z',
-    stop: '2023-11-09T17:05:00.000Z',
-    title: 'Follow Up'
+    start: '2024-11-23T17:00:00.000Z',
+    stop: '2024-11-23T17:30:00.000Z',
+    title: 'Migi & Dali Episode 2',
+    episode: 2
   })
 
-  expect(results[12]).toMatchObject({
-    start: '2023-11-10T04:05:00.000Z',
-    stop: '2023-11-10T06:05:00.000Z',
-    title: 'Metro Siang'
+  expect(results[1]).toMatchObject({
+    start: '2024-11-23T19:30:00.000Z',
+    stop: '2024-11-23T20:00:00.000Z',
+    title: 'Attack on Titan Season 3 Episode 7',
+    season: 3,
+    episode: 7
   })
 })
 

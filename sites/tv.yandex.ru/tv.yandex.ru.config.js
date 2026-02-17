@@ -1,20 +1,25 @@
 const dayjs = require('dayjs')
+const doFetch = require('@ntlab/sfetch')
 const debug = require('debug')('site:tv.yandex.ru')
+
+doFetch.setDebugger(debug).setMaxWorker(10)
 
 // enable to fetch guide description but its take a longer time
 const detailedGuide = true
 
 // update this data by heading to https://tv.yandex.ru and change the values accordingly
 const cookies = {
-  cycada: '3w11iWu+2+o6iIIiI/S1/k9lFIb6y+G6SW6hsbLoPJg=',
-  i: '0nUBW1d6GpFmpLRIuHYGulEA4alIC2j4WS+WYGcusydL7lcrG9loWX8qrFEBOqg54KZxGwCVaZhZ1THYgoIo0T69iCY=',
-  spravka: 'dD0xNzAxMjI3MTk1O2k9MzYuODQuOTguMTcxO0Q9Njk4NDQwRkRDODk5QUEzMDJCNzI5NTJBMTM4RTY2ODNEMzQyNkM1MjI5QTkyNDI3NUJGMzMzQUJEMUZFQjMyQzczM0I2QzE0QTRDQkJFODY5Nzk0MjhGNkEzQjQ5NDJBMzcxQzIzMjE3RTRENkVDOUU1NEE1RDVFNDg0RUQ1RTI3OUNGNzlCMEYzNzUyMDcyNDhGQkVCNkIyMDg5NTMwMzc1QkZEQTlGNEU7dT0xNzAxMjI3MTk1NDg5NDIyODkzO2g9OTRmN2FiNTMxZmJjNDg5MjM4ZDk4Y2ZkN2E0ZmY0YmI=',
-  yandexuid: '7536067781700842414',
-  yashr: '7271154091700842416',
-  user_display: 696
+  i: 'eIUfSP+/mzQWXcH+Cuz8o1vY+D2K8fhBd6Sj0xvbPZeO4l3cY+BvMp8fFIuM17l6UE1Z5+R2a18lP00ex9iYVJ+VT+c=',
+  spravka:
+    'dD0xNzM0MjA0NjM4O2k9MTI1LjE2NC4xNDkuMjAwO0Q9QTVCQ0IyOTI5RDQxNkU5NkEyOTcwMTNDMzZGMDAzNjRDNTFFNDM4QkE2Q0IyOTJDRjhCOTZDRDIzODdBQzk2MzRFRDc5QTk2Qjc2OEI1MUY5MTM5M0QzNkY3OEQ2OUY3OTUwNkQ3RjBCOEJGOEJDMjAwMTQ0RDUwRkFCMDNEQzJFMDI2OEI5OTk5OUJBNEFERUYwOEQ1MjUwQTE0QTI3RDU1MEQwM0U0O3U9MTczNDIwNDYzODUyNDYyNzg1NDtoPTIxNTc0ZTc2MDQ1ZjcwMDBkYmY0NTVkM2Q2ZWMyM2Y1',
+  yandexuid: '1197179041732383499',
+  yashr: '4682342911732383504',
+  yuidss: '1197179041732383499',
+  user_display: 824
 }
 const headers = {
-  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 OPR/104.0.0.0',
+  'User-Agent':
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0'
 }
 const caches = {}
 
@@ -45,7 +50,9 @@ module.exports = {
       }
       caches[cacheid].forEach(schedule => {
         schedule.events
-          .filter(event => event.channelFamilyId == channel.site_id && date.isSame(event.start, 'day'))
+          .filter(
+            event => event.channelFamilyId == channel.site_id && date.isSame(event.start, 'day')
+          )
           .forEach(event => {
             if (events.indexOf(event.id) < 0) {
               events.push(event.id)
@@ -85,29 +92,40 @@ module.exports = {
 async function fetchSchedules({ date, content = null }) {
   const schedules = []
   const queues = []
+  const fetches = []
   const url = getUrl(date)
 
   let mainApi
   // parse content as schedules and add to queue if more requests is needed
-  const f = data => {
-    const [q, s] = parseContent(data, date)
+  const f = (src, res, headers) => {
+    if (src) {
+      fetches.push(src)
+    }
+    if (headers) {
+      parseCookies(headers)
+    }
+    const [q, s] = parseContent(res, date)
     if (!mainApi) {
       mainApi = true
       if (caches.region) {
-        queues.push(`https://tv.yandex.ru/api/${caches.region}?date=${date.format('YYYY-MM-DD')}&grid=all&period=all-day`)
+        queues.push(getQueue(getUrl(date, caches.region), src))
       }
     }
-    queues.push(...q)
+    for (const url of q) {
+      if (fetches.indexOf(url) < 0) {
+        queues.push(getQueue(url, src))
+      }
+    }
     schedules.push(...s)
   }
   // is main html already fetched?
   if (content) {
-    f(content)
+    f(url, content)
   } else {
-    queues.push(url)
+    queues.push(getQueue(url, 'https://tv.yandex.ru/'))
   }
   // fetch all queues
-  await doFetch(queues, url, f)
+  await doFetch(queues, f)
 
   return schedules
 }
@@ -120,17 +138,20 @@ async function fetchPrograms({ schedules, date, channel }) {
       queues.push(
         ...schedule.events
           .filter(event => date.isSame(event.start, 'day'))
-          .map(event => `https://tv.yandex.ru/api/${caches.region}/event?eventId=${event.id}&programCoId=`)
+          .map(event => getQueue(getUrl(null, caches.region, null, event), 'https://tv.yandex.ru/'))
       )
     })
-  await doFetch(queues, getUrl(date), content => {
+  await doFetch(queues, (queue, res, headers) => {
+    if (headers) {
+      parseCookies(headers)
+    }
     // is it a program?
-    if (content?.program) {
+    if (res?.program) {
       let updated = false
       schedules.forEach(schedule => {
         schedule.events.forEach(event => {
-          if (event.channelFamilyId === content.channelFamilyId && event.id === content.id) {
-            Object.assign(event, content)
+          if (event.channelFamilyId === res.channelFamilyId && event.id === res.id) {
+            Object.assign(event, res)
             updated = true
             return true
           }
@@ -143,32 +164,6 @@ async function fetchPrograms({ schedules, date, channel }) {
   })
 }
 
-async function doFetch(queues, referer, cb) {
-  const axios = require('axios')
-  while (true) {
-    if (!queues.length) {
-      break
-    }
-    const url = queues.shift()
-    debug(`Fetching ${url}`)
-    const data = url.indexOf('api') > 0 ? {
-      'Referer': referer,
-      'Origin': 'https://tv.yandex.ru',
-      'X-Requested-With': 'XMLHttpRequest'
-    } : {}
-    const params = { headers: getHeaders(data) }
-    const content = await axios
-      .get(url, params)
-      .then(response => {
-        parseCookies(response.headers)
-        return response.data
-      })
-      .catch(err => console.error(err.message))
-
-    cb(content)
-  }
-}
-
 function parseContent(content, date, checkOnly = false) {
   const queues = []
   const schedules = []
@@ -178,7 +173,10 @@ function parseContent(content, date, checkOnly = false) {
       content = content.toString()
     }
     // got captcha, its look like our cookies has expired
-    if (content?.type === 'captcha' || (typeof content === 'string' && content.match(/SmartCaptcha/))) {
+    if (
+      content?.type === 'captcha' ||
+      (typeof content === 'string' && content.match(/SmartCaptcha/))
+    ) {
       throw new Error('Got captcha, please goto https://tv.yandex.ru and update cookies!')
     }
     if (typeof content === 'object') {
@@ -186,7 +184,7 @@ function parseContent(content, date, checkOnly = false) {
       if (content.schedule) {
         // fetch next request based on schedule map
         if (Array.isArray(content.schedule.scheduleMap)) {
-          queues.push(...content.schedule.scheduleMap.map(m => `https://tv.yandex.ru/api/${caches.region}/main/chunk?page=${m.id}&date=${date.format('YYYY-MM-DD')}&period=all-day&offset=${m.offset}&limit=${m.limit}`))
+          queues.push(...content.schedule.scheduleMap.map(m => getUrl(date, caches.region, m)))
         }
         // find some schedules?
         if (Array.isArray(content.schedule.schedules)) {
@@ -217,37 +215,81 @@ function parseContent(content, date, checkOnly = false) {
         headers['X-User-Session-Id'] = sessionId
       }
       if (checkOnly && region && tvSk.key && sessionId) {
-        valid = true;
+        valid = true
       }
     }
   }
 
-  return checkOnly ? valid :  [queues, schedules]
+  return checkOnly ? valid : [queues, schedules]
 }
 
 function parseCookies(headers) {
   if (Array.isArray(headers['set-cookie'])) {
-    headers['set-cookie']
-      .forEach(cookie => {
-        const [key, value] = cookie.split('; ')[0].split('=')
-        if (cookies[key] !== value) {
-          cookies[key] = value
-          debug(`Update cookie ${key}=${value}`)
-        }
-      })
+    headers['set-cookie'].forEach(cookie => {
+      const [key, value] = cookie.split('; ')[0].split('=')
+      if (cookies[key] !== value) {
+        cookies[key] = value
+        debug(`Update cookie ${key}=${value}`)
+      }
+    })
   }
 }
 
 function getSchedules(schedules) {
-  return schedules.filter(schedule => schedule.events.length);
+  return schedules.filter(schedule => schedule.events.length)
 }
 
 function getHeaders(data = {}) {
-  return Object.assign({}, headers, {
-    'Cookie': Object.keys(cookies).map(cookie => `${cookie}=${cookies[cookie]}`).join('; ')
-  }, data)
+  return Object.assign(
+    {},
+    headers,
+    {
+      Cookie: Object.keys(cookies)
+        .map(cookie => `${cookie}=${cookies[cookie]}`)
+        .join('; ')
+    },
+    data
+  )
 }
 
-function getUrl(date) {
-  return `https://tv.yandex.ru/?date=${date.format('YYYY-MM-DD')}&grid=all&period=all-day`
+function getUrl(date, region = null, page = null, event = null) {
+  let url = 'https://tv.yandex.ru/'
+  if (region) {
+    url += `api/${region}`
+  }
+  if (page && page.id !== undefined) {
+    url += `${url.endsWith('/') ? '' : '/'}main/chunk?page=${page.id}`
+  }
+  if (event && event.id !== undefined) {
+    url += `${url.endsWith('/') ? '' : '/'}event?eventId=${event.id}&programCoId=`
+  }
+  if (date) {
+    url += `${url.indexOf('?') < 0 ? '?' : '&'}date=${date.format('YYYY-MM-DD')}${
+      !page ? '&grid=all' : ''
+    }&period=all-day`
+  }
+  if (page && page.id !== undefined && page.offset !== undefined) {
+    url += `${url.indexOf('?') < 0 ? '?' : '&'}offset=${page.offset}`
+  }
+  if (page && page.id !== undefined && page.limit !== undefined) {
+    url += `${url.indexOf('?') < 0 ? '?' : '&'}limit=${page.limit}`
+  }
+  return url
+}
+
+function getQueue(url, referer) {
+  const data = {
+    Origin: 'https://tv.yandex.ru'
+  }
+  if (referer) {
+    data['Referer'] = referer
+  }
+  if (url.indexOf('api') > 0) {
+    data['X-Requested-With'] = 'XMLHttpRequest'
+  }
+  const headers = getHeaders(data)
+  return {
+    url,
+    params: { headers }
+  }
 }

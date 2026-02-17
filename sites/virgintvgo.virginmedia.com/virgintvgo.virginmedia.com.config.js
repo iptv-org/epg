@@ -1,117 +1,114 @@
-const axios = require('axios')
 const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const doFetch = require('@ntlab/sfetch')
+const debug = require('debug')('site:virgintvgo.virginmedia.com')
 
-const API_ENDPOINT = 'https://prod.oesp.virginmedia.com/oesp/v4/GB/eng/web'
+dayjs.extend(utc)
+
+doFetch.setDebugger(debug)
+
+const detailedGuide = true
 
 module.exports = {
   site: 'virgintvgo.virginmedia.com',
   days: 2,
   request: {
     cache: {
-      ttl: 60 * 60 * 1000 // 1 hour
+      ttl: 24 * 60 * 60 * 1000 // 1 day
     }
   },
-  url: function ({ date }) {
-    return `${API_ENDPOINT}/programschedules/${date.format('YYYYMMDD')}/1`
+  url({ date, segment = 0 }) {
+    return `https://staticqbr-prod-gb.gnp.cloud.virgintvgo.virginmedia.com/eng/web/epg-service-lite/gb/en/events/segments/${date.format(
+      'YYYYMMDD'
+    )}${segment.toString().padStart(2, '0')}0000`
   },
   async parser({ content, channel, date }) {
-    let programs = []
-    let items = parseItems(content, channel)
-    if (!items.length) return programs
-    const d = date.format('YYYYMMDD')
-    const promises = [
-      axios.get(`${API_ENDPOINT}/programschedules/${d}/2`),
-      axios.get(`${API_ENDPOINT}/programschedules/${d}/3`),
-      axios.get(`${API_ENDPOINT}/programschedules/${d}/4`)
-    ]
-    await Promise.allSettled(promises)
-      .then(results => {
-        results.forEach(r => {
-          if (r.status === 'fulfilled') {
-            items = items.concat(parseItems(r.value.data, channel))
+    const programs = []
+    if (content) {
+      const items = typeof content === 'string' ? JSON.parse(content) : content
+      if (Array.isArray(items.entries)) {
+        // fetch other segments
+        const queues = [
+          module.exports.url({ date, segment: 6 }),
+          module.exports.url({ date, segment: 12 }),
+          module.exports.url({ date, segment: 18 })
+        ]
+        await doFetch(queues, (url, res) => {
+          if (Array.isArray(res.entries)) {
+            items.entries.push(...res.entries)
           }
         })
-      })
-      .catch(console.error)
-    // items.forEach(item => {
-    for (let item of items) {
-      const detail = await loadProgramDetails(item)
-      programs.push({
-        title: item.t,
-        description: parseDescription(detail),
-        category: parseCategory(detail),
-        season: parseSeason(detail),
-        episode: parseEpisode(detail),
-        start: parseStart(item),
-        stop: parseStop(item)
-      })
+        items.entries
+          .filter(item => item.channelId === channel.site_id)
+          .forEach(item => {
+            if (Array.isArray(item.events)) {
+              if (detailedGuide) {
+                queues.push(
+                  ...item.events.map(
+                    event =>
+                      `https://spark-prod-gb.gnp.cloud.virgintvgo.virginmedia.com/eng/web/linear-service/v2/replayEvent/${event.id}?returnLinearContent=true&forceLinearResponse=true&language=en`
+                  )
+                )
+              } else {
+                item.events.forEach(event => {
+                  programs.push({
+                    title: event.title,
+                    start: dayjs.utc(event.startTime * 1000),
+                    stop: dayjs.utc(event.endTime * 1000)
+                  })
+                })
+              }
+            }
+          })
+        // fetch detailed guide
+        if (queues.length) {
+          await doFetch(queues, (url, res) => {
+            programs.push({
+              title: res.title,
+              subTitle: res.episodeName,
+              description: res.longDescription ? res.longDescription : res.shortDescription,
+              category: res.genres,
+              season: res.seasonNumber,
+              episode: res.episodeNumber,
+              country: res.countryOfOrigin,
+              actor: res.actors,
+              director: res.directors,
+              producer: res.producers,
+              date: res.productionDate,
+              start: dayjs.utc(res.startTime * 1000),
+              stop: dayjs.utc(res.endTime * 1000)
+            })
+          })
+        }
+      }
     }
-    //)
 
     return programs
   },
   async channels() {
-    const data = await axios
-      .get(`${API_ENDPOINT}/channels`)
+    const channels = []
+    const axios = require('axios')
+    const res = await axios
+      .get(
+        'https://spark-prod-gb.gnp.cloud.virgintvgo.virginmedia.com/eng/web/linear-service/v2/channels?cityId=40980&language=en&productClass=Orion-DASH&platform=web'
+      )
       .then(r => r.data)
-      .catch(console.log)
+      .catch(console.error)
 
-    return data.channels.map(item => {
-      return {
-        lang: 'en',
-        site_id: item.id.replace('lgi-gb-prodobo-master:40980-', ''),
-        name: item.title
-      }
-    })
+    if (Array.isArray(res)) {
+      channels.push(
+        ...res
+          .filter(item => !item.isHidden)
+          .map(item => {
+            return {
+              lang: 'en',
+              site_id: item.id,
+              name: item.name
+            }
+          })
+      )
+    }
+
+    return channels
   }
-}
-
-async function loadProgramDetails(item) {
-  if (!item.i) return {}
-  const url = `${API_ENDPOINT}/listings/${item.i}`
-  const data = await axios
-    .get(url)
-    .then(r => r.data)
-    .catch(console.log)
-  return data || {}
-}
-
-function parseStart(item) {
-  return dayjs(item.s)
-}
-
-function parseStop(item) {
-  return dayjs(item.e)
-}
-
-function parseItems(content, channel) {
-  const data = typeof content === 'string' ? JSON.parse(content) : content
-  if (!data || !Array.isArray(data.entries)) return []
-  const entity = data.entries.find(e => e.o === `lgi-gb-prodobo-master:${channel.site_id}`)
-
-  return entity ? entity.l : []
-}
-
-function parseDescription(detail) {
-  return detail.program.longDescription || null
-}
-
-function parseCategory(detail) {
-  let categories = []
-  detail.program.categories.forEach(category => {
-    categories.push(category.title)
-  })
-  return categories
-}
-
-function parseSeason(detail) {
-  if (!detail.program.seriesNumber) return null
-  if (String(detail.program.seriesNumber).length > 2) return null
-  return detail.program.seriesNumber
-}
-
-function parseEpisode(detail) {
-  if (!detail.program.seriesEpisodeNumber) return null
-  if (String(detail.program.seriesEpisodeNumber).length > 3) return null
-  return detail.program.seriesEpisodeNumber
 }

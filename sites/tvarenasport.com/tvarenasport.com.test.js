@@ -1,45 +1,50 @@
 const { parser, url } = require('./tvarenasport.com.config.js')
+const fs = require('fs')
+const path = require('path')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
+
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
-const date = dayjs.utc('2021-11-17', 'YYYY-MM-DD').startOf('d')
+const date = dayjs.utc('2025-07-30', 'YYYY-MM-DD').startOf('d')
 const channel = {
-  site_id: '380',
-  xmltv_id: 'ArenaSport1.rs'
+  site_id: 'a1p',
+  xmltv_id: 'ArenaSport1Premium.rs'
 }
 
 it('can generate valid url', () => {
-  expect(url({ channel, date })).toBe('https://www.tvarenasport.com/api/schedule?date=17-11-2021')
+  expect(url).toBe('https://www.tvarenasport.com/tv-scheme')
 })
 
 it('can parse response', () => {
-  const content =
-    '{"items":[{"id":2857,"title":"Crvena zvezda mts - Partizan NIS","start":"2021-11-16T23:30:00Z","end":"2021-11-17T01:30:00Z","sport":"ABA LIGA","league":"Ko\u0161arka","group":"380","isLive":false,"doNotMiss":false,"domain":"srb"},{"id":3155,"title":"Sao Paulo - Flamengo","start":"2021-11-17T00:00:00Z","end":"2021-11-17T02:00:00Z","sport":"BRAZILSKA LIGA","league":"Fudbal","group":"381","isLive":false,"doNotMiss":false,"domain":"srb"}]}'
-  const result = parser({ channel, content }).map(p => {
+  const content = fs.readFileSync(path.join(__dirname, '__data__', 'content.html'))
+  const result = parser({ content, channel, date }).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
     return p
   })
 
-  expect(result).toMatchObject([
-    {
-      start: '2021-11-16T23:30:00.000Z',
-      stop: '2021-11-17T01:30:00.000Z',
-      title: 'Crvena zvezda mts - Partizan NIS',
-      category: 'Ko\u0161arka',
-      description: 'ABA LIGA'
-    }
-  ])
+  expect(result.length).toBe(13)
+  expect(result[4]).toMatchObject({
+    start: '2025-07-30T08:00:00.000Z',
+    stop: '2025-07-30T09:00:00.000Z',
+    title: 'UEFA LIGA ŠAMPIONA: Liga Šampiona: Pregled sezone',
+    category: 'Fudbal'
+  })
+  expect(result[6]).toMatchObject({
+    start: '2025-07-30T11:00:00.000Z',
+    stop: '2025-07-30T13:00:00.000Z',
+    title: '(Uživo) PRIJATELJSKE UTAKMICE: K League - Newcastle Utd'
+  })
 })
 
 it('can handle empty guide', () => {
   const result = parser({
     date,
     channel,
-    content: '{"channels":[]}'
+    content: ''
   })
   expect(result).toMatchObject([])
 })

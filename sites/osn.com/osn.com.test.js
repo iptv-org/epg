@@ -1,15 +1,17 @@
-const { parser, url, request } = require('./osn.com.config.js')
+const { parser, url, request } = require('./osn.com.config')
+const fs = require('fs')
+const path = require('path')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
+
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
-const date = dayjs.utc('2021-10-24', 'YYYY-MM-DD').startOf('d')
-const channelAR = { site_id: 'AAN', xmltv_id: 'AlAanTV.ae', lang: 'ar' }
-const channelEN = { site_id: 'AAN', xmltv_id: 'AlAanTV.ae', lang: 'en' }
-const content =
-  '[{"IsPlaying":"0","Durationtime":null,"StartMinute":0,"EndMinute":0,"EmptyDivWidth":1152,"TotalDivWidth":576,"IsTodayDate":false,"IsLastRow":false,"StartDateTime":"24 Oct 2021, 22:00","EndDateTime":"\\/Date(-62135596800000)\\/","Title":"Al Aan TV","Arab_Title":"تلفزيون الآن","GenreEnglishName":null,"GenreArabicName":null,"ChannelNumber":140,"ChannelCode":"AAN","Duration":"\\/Date(-62135596800000)\\/","Showtime":"\\/Date(-62135596800000)\\/","EpisodeId":738257,"ProgramType":null,"EPGUNIQID":"AAN202110271800738257"}]'
+const date = dayjs.utc('2024-11-27', 'YYYY-MM-DD').startOf('d')
+const channelAR = { site_id: 'FTF', xmltv_id: 'Fatafeat.ae', lang: 'ar' }
+const channelEN = { site_id: 'FTF', xmltv_id: 'Fatafeat.ae', lang: 'en' }
+const content = fs.readFileSync(path.join(__dirname, '__data__', 'content.json'))
 
 it('can generate valid request headers', () => {
   const result = request.headers({ channel: channelAR, date })
@@ -21,32 +23,36 @@ it('can generate valid request headers', () => {
 it('can generate valid url', () => {
   const result = url({ channel: channelAR, date })
   expect(result).toBe(
-    'https://www.osn.com/api/TVScheduleWebService.asmx/GetTVChannelsProgramTimeTable?newDate=10%2F24%2F2021&selectedCountry=AE&channelCode=AAN&isMobile=false&hoursForMobile=0'
+    'https://www.osn.com/api/TVScheduleWebService.asmx/time?dt=11%2F27%2F2024&co=AE&ch=FTF&mo=false&hr=0'
   )
 })
 
 it('can parse response (ar)', () => {
-  const result = parser({ date, channel: channelAR, content })
-  expect(result).toMatchObject([
-    {
-      start: 'Sun, 24 Oct 2021 18:00:00 GMT',
-      stop: 'Sun, 24 Oct 2021 20:00:00 GMT',
-      title: 'تلفزيون الآن',
-      category: null
-    }
-  ])
+  const result = parser({ date, channel: channelAR, content }).map(a => {
+    a.start = a.start.toJSON()
+    a.stop = a.stop.toJSON()
+    return a
+  })
+  expect(result.length).toBe(29)
+  expect(result[1]).toMatchObject({
+    start: '2024-11-26T20:50:00.000Z',
+    stop: '2024-11-26T21:45:00.000Z',
+    title: 'بيت الحلويات: الحلقة 3'
+  })
 })
 
 it('can parse response (en)', () => {
-  const result = parser({ date, channel: channelEN, content })
-  expect(result).toMatchObject([
-    {
-      start: 'Sun, 24 Oct 2021 18:00:00 GMT',
-      stop: 'Sun, 24 Oct 2021 20:00:00 GMT',
-      title: 'Al Aan TV',
-      category: null
-    }
-  ])
+  const result = parser({ date, channel: channelEN, content }).map(a => {
+    a.start = a.start.toJSON()
+    a.stop = a.stop.toJSON()
+    return a
+  })
+  expect(result.length).toBe(29)
+  expect(result[1]).toMatchObject({
+    start: '2024-11-26T20:50:00.000Z',
+    stop: '2024-11-26T21:45:00.000Z',
+    title: 'House Of Desserts: Episode 3'
+  })
 })
 
 it('can handle empty guide', () => {

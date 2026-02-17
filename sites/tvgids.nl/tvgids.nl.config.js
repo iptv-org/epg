@@ -32,7 +32,7 @@ module.exports = {
       programs.push({
         title: parseTitle($item),
         description: parseDescription($item),
-        icon: parseIcon($item),
+        image: parseImage($item),
         start,
         stop
       })
@@ -68,7 +68,7 @@ function parseDescription($item) {
   return $item('.program__text').text().trim()
 }
 
-function parseIcon($item) {
+function parseImage($item) {
   return $item('.program__thumbnail').data('src')
 }
 
