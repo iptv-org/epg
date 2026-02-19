@@ -18,37 +18,28 @@ const channel = {
 }
 
 it('can generate valid url', () => {
-  expect(url).toBe(
-    'https://authservice.apps.meo.pt/Services/GridTv/GridTvMng.svc/getProgramsFromChannels'
+  expect(url({ channel, date })).toBe(
+    'https://meogouser.apps.meo.pt/Services/GridTv/GridTv.svc/GetLiveChannelProgramsByDate?callLetter=RTPM&date=2022-12-02&userAgent=IPTV_OFR_GTV'
   )
 })
 
 it('can generate valid request method', () => {
-  expect(request.method).toBe('POST')
+  expect(request.method).toBe('GET')
 })
 
 it('can generate valid request headers', () => {
   expect(request.headers).toMatchObject({
-    Origin: 'https://www.meo.pt'
-  })
-})
-
-it('can generate valid request method', () => {
-  expect(request.data({ channel, date })).toMatchObject({
-    service: 'channelsguide',
-    channels: ['RTPM'],
-    dateStart: '2022-12-02T00:00:00-00:00',
-    dateEnd: '2022-12-03T00:00:00-00:00',
-    accountID: ''
+    'origin': 'https://www.meo.pt',
+    'user-agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36'
   })
 })
 
 it('can parse response', async () => {
-  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'))
+  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'), 'utf-8')
 
-  axios.post.mockResolvedValue({ data: {} })
+  axios.get.mockResolvedValue({ data: {} })
 
-  let results = await parser({ content })
+  let results = await parser({ content, channel })
   results = results.map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
@@ -56,9 +47,13 @@ it('can parse response', async () => {
   })
 
   expect(results[0]).toMatchObject({
-    start: '2022-12-01T23:35:00.000Z',
-    stop: '2022-12-02T00:17:00.000Z',
-    title: 'Walker, O Ranger Do Texas T6 - Ep. 14'
+    start: '2026-01-22T23:40:00.000Z',
+    stop: '2026-01-23T00:04:00.000Z',
+    title: 'Barman - Ep. 4',
+    description: "'Barman' é uma série de comédia dramática sobre um jovem comediante que começa a trabalhar como Barman porque precisa de arranjar dinheiro depressa, pelo caminho é obrigado a lidar com a vida noturna e conciliar duas realidades diferentes.",
+    icon: {
+      src: 'https://proxycache.online.meo.pt/eemstb/ImageHandler.ashx?evTitle=Barman%20-%20Ep.%204&chCallLetter=RTPM&profile=16_9&width=600'
+    }
   })
 })
 
