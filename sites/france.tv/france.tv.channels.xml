@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<channels>
+  <channel site="france.tv" site_id="arte" lang="fr" xmltv_id="arte.fr@HD">Arte</channel>
+  <channel site="france.tv" site_id="france-2" lang="fr" xmltv_id="France2.fr@HD">France 2</channel>
+  <channel site="france.tv" site_id="france-3" lang="fr" xmltv_id="France3.fr@HD">France 3</channel>
+  <channel site="france.tv" site_id="france-4" lang="fr" xmltv_id="France4.fr@HD">France 4</channel>
+  <channel site="france.tv" site_id="france-5" lang="fr" xmltv_id="France5.fr@HD">France 5</channel>
+  <channel site="france.tv" site_id="france-24" lang="fr" xmltv_id="France24.fr@HD">France 24</channel>
+  <channel site="france.tv" site_id="france-info" lang="fr" xmltv_id="FranceInfo.fr@HD">franceinfo:</channel>
+  <channel site="france.tv" site_id="lcp-public-senat" lang="fr" xmltv_id="LCPPublicSenat.fr@HD">LCP Public Sénat</channel>
+  <channel site="france.tv" site_id="mieux" lang="fr" xmltv_id="">Mieux</channel>
+  <channel site="france.tv" site_id="tv5-monde" lang="fr" xmltv_id="TV5Monde.fr@HD">TV5 Monde</channel>
+  <channel site="france.tv" site_id="sport" lang="fr" xmltv_id="">France.tv Sport</channel>
+  <channel site="france.tv" site_id="docs" lang="fr" xmltv_id="">France.tv Docs</channel>
+  <channel site="france.tv" site_id="series" lang="fr" xmltv_id="">France.tv Séries</channel>
+  <channel site="france.tv" site_id="ina" lang="fr" xmltv_id="">INA</channel>
+  <!--Channel below is for specific events, won't be used a lot-->
+  <channel site="france.tv" site_id="francetv" lang="fr" xmltv_id="">France.tv</channel>
+</channels>
