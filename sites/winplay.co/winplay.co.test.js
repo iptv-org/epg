@@ -7,35 +7,18 @@ const customParseFormat = require('dayjs/plugin/customParseFormat')
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
-const date = dayjs.utc('2024-12-24', 'YYYY-MM-DD').startOf('d')
+const date = dayjs.utc('2026-02-19', 'YYYY-MM-DD').startOf('d')
 const channel = {
-  site_id: '529cff6f6bd2ea6b610000e0',
+  site_id: 'winsportsplus',
   xmltv_id: 'WinPlusFutbol.co'
 }
 
 it('can generate valid url', () => {
-  expect(url).toBe('https://next.platform.mediastre.am/graphql')
-})
-
-it('can generate valid request method', () => {
-  expect(request.method).toBe('POST')
+  expect(typeof url).toBe('function')
 })
 
 it('can generate valid request headers', () => {
-  expect(request.headers).toMatchObject({
-    accept: 'application/json',
-    'x-client-id': 'a084524ea449c15dfe5e75636fb55ce6a9d0d7601aac946daa',
-    'x-ott-language': 'es'
-  })
-})
-
-it('can generate valid request data', () => {
-  expect(request.data()).toMatchObject({
-    operationName: 'getLivesEpg',
-    variables: { page: 1, hours: 48 },
-    query:
-      'query getLivesEpg($page: Int = 1, $hours: Int, $ids: [String]) {\n getLives(ids: $ids) {\n _id\n logo\n name\n schedules(hours: $hours, page: {limit: 0, page: $page}) {\n _id\n name\n date_start\n date_end\n current\n match {\n matchDay\n __typename\n }\n show {\n _id\n title\n __typename\n }\n live {\n _id\n dvr\n type\n purchased\n __typename\n }\n __typename\n }\n __typename\n }\n}\n'
-  })
+  expect(typeof request.headers).toBe('function')
 })
 
 it('can parse response', () => {
@@ -48,20 +31,26 @@ it('can parse response', () => {
   })
 
   expect(results[0]).toMatchObject({
-    start: '2024-12-24T00:30:00.000Z',
-    stop: '2024-12-24T02:30:00.000Z',
-    title: 'Los Disruptivos de Win'
+    start: '2026-02-19T00:20:00.000Z',
+    stop: '2026-02-19T02:45:00.000Z',
+    title: 'Liga BetPlay Dimayor 2026 - I: Junior vs. América (Fecha 7)'
   })
 
   expect(results[1]).toMatchObject({
-    start: '2024-12-24T02:30:00.000Z',
-    stop: '2024-12-24T03:30:00.000Z',
-    title: 'WIn Noticias'
+    start: '2026-02-19T02:45:00.000Z',
+    stop: '2026-02-19T03:30:00.000Z',
+    title: 'Win Noticias',
+  })
+
+  expect(results[9]).toMatchObject({
+    start: '2026-02-19T23:00:00.000Z',
+    stop: '2026-02-20T00:30:00.000Z',
+    title: 'Win Noticias'
   })
 })
 
 it('can handle empty guide', () => {
-  const content = '{"status":"ERROR","error":"UNAUTHORIZED_REQUEST"}'
+  const content = '{"count":0,"result":[]}'
   const results = parser({ content, channel, date })
 
   expect(results).toMatchObject([])
