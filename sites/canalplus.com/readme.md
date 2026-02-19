@@ -3,7 +3,7 @@
 | Country                  | Code | URL                                        |
 | ------------------------ | ---- | ------------------------------------------ |
 | Andorra                  | `ad` | https://www.canalplus.com/ad/programme-tv/ |
-| Benign                   | `bj` | https://www.canalplus.com/bj/programme-tv/ |
+| Benin                    | `bj` | https://www.canalplus.com/bj/programme-tv/ |
 | Burkina Faso             | `bf` | https://www.canalplus.com/bf/programme-tv/ |
 | Burundi                  | `bi` | https://www.canalplus.com/bi/programme-tv/ |
 | Cabo Verde               | `cv` | https://www.canalplus.com/cv/programme-tv/ |
