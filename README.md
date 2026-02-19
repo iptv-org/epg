@@ -8,7 +8,7 @@ Tools for downloading the EPG (Electronic Program Guide) for thousands of TV cha
 - 🚀 [Usage](#usage)
 - 💫 [Update](#update)
 - 🐋 [Docker](#docker)
-- 📺 [Playlists](#playlists)
+- 📅 [Guides](#guides)
 - 🗄 [Database](#database)
 - 👨‍💻 [API](#api)
 - 📚 [Resources](#resources)
@@ -155,7 +155,7 @@ docker pull ghcr.io/iptv-org/epg:master
 ### Create and run container
 
 ```sh
-docker run -p 3000:3000 -v /path/to/channels.xml:/epg/channels.xml ghcr.io/iptv-org/epg:master
+docker run -p 3000:3000 -v /path/to/channels.xml:/epg/public/channels.xml ghcr.io/iptv-org/epg:master
 ```
 
 By default, the guide will be downloaded every day at 00:00 UTC and saved to the `/epg/public/guide.xml` file inside the container.
@@ -179,7 +179,7 @@ To fine-tune the execution, you can pass environment variables to the container 
 ```sh
 docker run \
 -p 5000:3000 \
--v /path/to/channels.xml:/epg/channels.xml \
+-v /path/to/channels.xml:/epg/public/channels.xml \
 -e CRON_SCHEDULE="0 0,12 * * *" \
 -e MAX_CONNECTIONS=10 \
 -e GZIP=true \
@@ -202,6 +202,10 @@ ghcr.io/iptv-org/epg:master
 | TIMEOUT         | Timeout for each request in milliseconds (default: 30000)                                                          |
 | DELAY           | Delay between request in milliseconds (default: 0)                                                                 |
 | RUN_AT_STARTUP  | Run grab on container startup (default: true)                                                                      |
+
+## Guides
+
+Any user can share the guides they have created with the rest of the community. A complete list of these guides and their current status can be found in the [GUIDES.md](GUIDES.md) file.
 
 ## Database
 
@@ -236,4 +240,3 @@ And thank you to everyone who has already contributed!
 ## License
 
 [![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](LICENSE)
-
