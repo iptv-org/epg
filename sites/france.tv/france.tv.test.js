@@ -1,4 +1,5 @@
 const { parser, url } = require('./france.tv.config.js')
+const axios = require('axios')
 const fs = require('fs')
 const path = require('path')
 const dayjs = require('dayjs')
@@ -7,19 +8,22 @@ const customParseFormat = require('dayjs/plugin/customParseFormat')
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
+jest.mock('axios')
+
 const date = dayjs.utc('2026-02-19', 'YYYY-MM-DD').startOf('d')
 const channel = {
-  site_id: 'france2',
+  site_id: 'france-2',
   xmltv_id: 'France2.fr@HD'
 }
 
 it('can generate valid url', () => {
-  expect(url({ channel, date })).toBe('https://www.france.tv/api/epg/videos/?date=2026-02-19&channel=france2')
+  expect(url({ channel, date })).toBe('https://www.france.tv/api/epg/videos/?date=2026-02-19&channel=france-2')
 })
 
-it('can parse response', () => {
+it('can parse response', async () => {
+  axios.get.mockResolvedValue({ data: [] })
   const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'))
-  const results = parser({ content, date }).map(p => {
+  const results = (await parser({ content, date, channel })).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
     return p
@@ -42,8 +46,9 @@ it('can parse response', () => {
   })
 })
 
-it('can handle empty guide', () => {
-  const results = parser({ content: [], date })
+it('can handle empty guide', async () => {
+  axios.get.mockResolvedValue({ data: [] })
+  const results = await parser({ content: [], date, channel })
 
   expect(results).toMatchObject([])
 })
