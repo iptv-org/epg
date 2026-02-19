@@ -19,7 +19,7 @@ const apps = [
     watch: false,
     autorestart: true
   }
-];
+]
 
 if (process.env.RUN_AT_STARTUP === 'true') {
   apps.push({
@@ -29,7 +29,7 @@ if (process.env.RUN_AT_STARTUP === 'true') {
     autorestart: false,
     watch: false,
     max_restarts: 1
-  });
+  })
 }
 
-module.exports = { apps };
+module.exports = { apps }
