@@ -12,7 +12,17 @@ module.exports = {
   url({ channel, date }) {
     return `https://ottcache.dof6.com/movistarplus/webplayer/OTT/epg?from=${date.format('YYYY-MM-DDTHH:mm:ss')}&span=1&channel=${channel.site_id}&version=8&mdrm=true&tlsstream=true&demarcation=18`
   },
-  async parser({ content }) {
+  request: {
+    headers: {
+      'User-Agent':
+        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+      Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+      'Accept-Language': 'es-ES,es;q=0.9,en;q=0.8',
+      Referer: 'https://www.movistarplus.es/programacion-tv'
+    },
+    maxRedirects: 5
+  },
+  async parser({ content, date }) {
     let programs = []
     let items = await parseItems(content)
     if (!items.length) return programs
