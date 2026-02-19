@@ -22,7 +22,7 @@ module.exports = {
     },
     maxRedirects: 5
   },
-  async parser({ content, date }) {
+  async parser({ content }) {
     let programs = []
     let items = await parseItems(content)
     if (!items.length) return programs
