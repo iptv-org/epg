@@ -48,17 +48,33 @@ module.exports = {
   },
   async channels() {
     try {
-      const response = await axios.get('https://www.syn.is/api/epg/')
+      const response = await axios.get('https://www.syn.is/api/epg?type=schedule')
       if (!response.data || !Array.isArray(response.data)) {
         console.error('Error: No channels data found')
         return []
       }
-      return response.data.map(item => {
-        return {
-          lang: 'is',
-          site_id: item
-        }
-      })
+
+      const channels = await Promise.all(
+        response.data.map(async item => {
+          try {
+            const { data: channelData } = await axios.get(`https://www.syn.is/api/epg/${item}`)
+            if (!channelData?.[0]?.midill_heiti) {
+              console.error(`Error: No name found for channel ${item}`)
+              return null
+            }
+            return {
+              lang: 'is',
+              site_id: item,
+              name: channelData[0].midill_heiti
+            }
+          } catch (error) {
+            console.error(`Error fetching channel name for ${item}:`, error)
+            return null
+          }
+        })
+      )
+
+      return channels.filter(Boolean)
     } catch (error) {
       console.error('Error fetching channels:', error)
       return []
