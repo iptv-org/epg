@@ -119,7 +119,7 @@ async function main() {
     await storage.save(outputFilepath, xml)
 
     logger.info(`File '${outputFilepath}' successfully saved`)
-    }
+  }
 }
 
 main()
