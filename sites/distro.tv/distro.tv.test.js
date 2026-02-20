@@ -10,14 +10,14 @@ dayjs.extend(utc)
 const axios = require('axios')
 jest.mock('axios')
 
-const date = dayjs.utc('2026-02-10', 'YYYY-MM-DD').startOf('d')
+const date = dayjs.utc().add(1, 'd').startOf('d')
 const channel = {
   site_id: '45143'
 }
 
 it('can generate valid url', () => {
   expect(url({ channel, date })).toBe(
-    'https://tv.jsrdn.com/epg/query.php?range=now,48h&id=45143,'
+    'https://tv.jsrdn.com/epg/query.php?range=24h,48h&id=45143,'
   )
 })
 

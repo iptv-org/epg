@@ -14,14 +14,24 @@ dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'distro.tv',
-  days: 2,
+  days: 3,
   request: {
-    headers: HEADERS
+    headers: HEADERS,
+    timeout: 60000
   },
-  url({ channel }) {
-    const days = module.exports.days || 2
-    const hours = days * 24
-    return `https://tv.jsrdn.com/epg/query.php?range=now,${hours}h&id=${channel.site_id},`
+  url({ channel, date }) {
+    const diff = date.diff(dayjs.utc().startOf('d'), 'd')
+    let range
+
+    if (diff <= 0) {
+      range = 'now,24h'
+    } else {
+      const start = diff * 24
+      const end = (diff + 1) * 24
+      range = `${start}h,${end}h`
+    }
+
+    return `https://tv.jsrdn.com/epg/query.php?range=${range}&id=${channel.site_id},`
   },
   parser({ content, channel }) {
     if (!content || !channel) return []
