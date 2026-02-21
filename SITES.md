@@ -42,6 +42,7 @@
     <tr><td><a href="sites/directv.com.ar">directv.com.ar</a></td><td align="right">371</td><td align="right">0</td><td align="center">🔴</td><td>https://github.com/iptv-org/epg/issues/2339</td></tr>
     <tr><td><a href="sites/directv.com.uy">directv.com.uy</a></td><td align="right">374</td><td align="right">59</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/dishtv.in">dishtv.in</a></td><td align="right">434</td><td align="right">326</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/distro.tv">distro.tv</a></td><td align="right">315</td><td align="right">123</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/dna.fi">dna.fi</a></td><td align="right">123</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/dsmart.com.tr">dsmart.com.tr</a></td><td align="right">100</td><td align="right">76</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/dstv.com">dstv.com</a></td><td align="right">2979</td><td align="right">80</td><td align="center">🟢</td><td></td></tr>
@@ -138,7 +139,7 @@
     <tr><td><a href="sites/raiplay.it">raiplay.it</a></td><td align="right">17</td><td align="right">13</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/reportv.com.ar">reportv.com.ar</a></td><td align="right">163</td><td align="right">95</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/rikstv.no">rikstv.no</a></td><td align="right">80</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/rotana.net">rotana.net</a></td><td align="right">32</td><td align="right">26</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/rotana.net">rotana.net</a></td><td align="right">32</td><td align="right">26</td><td align="center">🟢</td><td>https://github.com/iptv-org/epg/issues/3018</td></tr>
     <tr><td><a href="sites/roya-tv.com">roya-tv.com</a></td><td align="right">10</td><td align="right">8</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/rthk.hk">rthk.hk</a></td><td align="right">8</td><td align="right">8</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/rtmklik.rtm.gov.my">rtmklik.rtm.gov.my</a></td><td align="right">8</td><td align="right">6</td><td align="center">🟢</td><td></td></tr>
