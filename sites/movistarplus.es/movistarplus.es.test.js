@@ -9,7 +9,7 @@ dayjs.extend(utc)
 const axios = require('axios')
 jest.mock('axios')
 
-const date = dayjs.utc('2025-05-30', 'YYYY-MM-DD').startOf('d')
+const date = dayjs.utc('2026-02-09', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: 'sexta',
   xmltv_id: 'LaSexta.es'
@@ -17,32 +17,31 @@ const channel = {
 
 it('can generate valid url', () => {
   expect(url({ channel, date })).toBe(
-    'https://www.movistarplus.es/programacion-tv/sexta/2025-05-30'
+    'https://ottcache.dof6.com/movistarplus/webplayer/OTT/epg?from=2026-02-09T00:00:00&span=1&channel=sexta&version=8&mdrm=true&tlsstream=true&demarcation=18'
   )
 })
 
 it('can parse response', async () => {
-  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.html'))
+  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'), 'utf8')
 
+  // Ficha for both results
   axios.get.mockImplementation(url => {
     if (
       url ===
-      'https://www.movistarplus.es/entretenimiento/venta-prime-t1/ficha?tipo=E&id=3414523'
+      'https://ottcache.dof6.com/movistarplus/webplayer/contents/63188242/details?mediaType=FOTOV&profile=OTT&mode=U7D2&channels=SEXTA&version=8&tlsStream=true&mdrm=true&catalog=catchup&showNonRated=true'
     ) {
       return Promise.resolve({
-        data: fs.readFileSync(path.resolve(__dirname, '__data__/program1.html'))
+        data: JSON.parse(fs.readFileSync(path.resolve(__dirname, '__data__/ficha.json'), 'utf8'))
       })
     } else if (
-      url ===
-      'https://www.movistarplus.es/deportes/programa/pokerstars-casino-1/ficha?tipo=E&id=2057641'
+      url === 'https://ottcache.dof6.com/movistarplus/webplayer/contents/63182873/details?mediaType=FOTOV&profile=OTT&mode=VODREJILLA&channels=SEXTA&version=8&tlsStream=true&mdrm=true&catalog=events&showNonRated=true'
     ) {
       return Promise.resolve({
-        data: fs.readFileSync(path.resolve(__dirname, '__data__/program2.html'))
+        data: JSON.parse(fs.readFileSync(path.resolve(__dirname, '__data__/ficha2.json'), 'utf8'))
       })
-    } else {
-      return Promise.resolve({ data: '' })
     }
   })
+  
 
   let results = await parser({ content, date })
   results = results.map(p => {
@@ -51,20 +50,18 @@ it('can parse response', async () => {
     return p
   })
 
-  expect(results.length).toBe(23)
+  expect(results.length).toBe(21)
   expect(results[0]).toMatchObject({
-    start: '2025-05-30T03:15:00.000Z',
-    stop: '2025-05-30T04:25:00.000Z',
-    title: 'Venta Prime',
-	description:
-	  'Espacio de televenta.'
+    start: '2026-02-08T21:45:00.000Z',
+    stop: '2026-02-09T00:30:00.000Z',
+    title: 'Especial ARV elecciones Aragón',
+	  description: 'Antonio García Ferreras y Ana Pastor analizan y debaten sobre el recuento y los resultados que arrojen las urnas con analistas como Lluís Orriols, Antonio Maestre, Ignacio Escolar, Pilar Velasco, Santiago Martínez Vares y Pablo Montesinos.'
   })
   expect(results[19]).toMatchObject({
-    start: '2025-05-31T00:45:00.000Z',
-    stop: '2025-05-31T01:25:00.000Z',
-    title: 'Pokerstars casino',
-	description:
-	  'El programa trae cada día toda la emoción de su ruleta en vivo, Spin & Win, una versión exclusiva del clásico juego de casino.'
+    start: '2026-02-09T20:30:00.000Z',
+    stop: '2026-02-09T22:00:00.000Z',
+    title: 'El intermedio',
+	  description: 'El Gran Wyoming, con la ayuda de sus colaboradores, analiza en clave de humor las noticias más importantes del día. El sello inconfundible del cómico sirve para completar la información desde un punto de vista más distendido e irónico.'
   })
 })
 

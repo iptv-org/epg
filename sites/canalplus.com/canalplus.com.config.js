@@ -4,27 +4,42 @@ const utc = require('dayjs/plugin/utc')
 
 dayjs.extend(utc)
 
+const globalHeaders = {
+  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+  'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,/;q=0.8',
+  'Accept-Language': 'fr-FR,fr;q=0.6',
+  'Accept-Encoding': 'gzip, deflate, br',
+  'Pragma': 'no-cache',
+  'Priority': 'u=0, i',
+  'Sec-CH-UA': '"Not:A-Brand";v="99", "Brave";v="145", "Chromium";v="145"',
+  'sec-ch-ua-mobile': '?0',
+  'sec-ch-ua-platform': '"Windows"',
+  'sec-fetch-dest': 'document',
+  'sec-fetch-mode': 'navigate',
+  'sec-fetch-site': 'none',
+  'sec-fetch-user': '?1',
+  'sec-gpc': '1',
+  'upgrade-insecure-requests': '1'
+}
+
+let canalToken = null
+
 module.exports = {
   site: 'canalplus.com',
   days: 2,
   url: async function ({ channel, date }) {
+    if(canalToken === null) canalToken = await parseToken()
+
     const [region, site_id] = channel.site_id.split('#')
-
-    const baseUrl =
-      region === 'pl'
-        ? 'https://www.canalplus.com/pl/program-tv/'
-        : `https://www.canalplus.com/${region}/programme-tv/`
-
-    const data = await axios
-      .get(baseUrl)
-      .then(r => r.data.toString())
-      .catch(err => console.log(err))
-
-    const token = parseToken(data)
     const path = region === 'pl' ? 'mycanalint' : 'mycanal'
     const diff = date.diff(dayjs.utc().startOf('d'), 'd')
 
-    return `https://hodor.canalplus.pro/api/v2/${path}/channels/${token}/${site_id}/broadcasts/day/${diff}`
+    return `https://hodor.canalplus.pro/api/v2/${path}/channels/${canalToken}/${site_id}/broadcasts/day/${diff}`
+  },
+  request:{
+    headers() {
+      return globalHeaders
+    }
   },
   async parser({ content }) {
     let programs = []
@@ -70,6 +85,7 @@ module.exports = {
       cv: 'cpafr/cv',
       dj: 'cpafr/dj',
       fr: 'cpfra',
+      it: 'tiita',
       ga: 'cpafr/ga',
       gf: 'cpant/gf',
       gh: 'cpafr/gh',
@@ -80,6 +96,7 @@ module.exports = {
       ht: 'cpant/ht',
       mf: 'cpant/mf',
       mg: 'cpafr/mg',
+      mg_alt: 'cpmdg',
       ml: 'cpafr/ml',
       mq: 'cpant/mq',
       mr: 'cpafr/mr',
@@ -95,7 +112,7 @@ module.exports = {
       td: 'cpafr/td',
       tg: 'cpafr/tg',
       wf: 'cpncl/wf',
-      yt: 'cpreu/yt'
+      yt: 'cpreu/yt',
     }
 
     let channels = []
@@ -122,10 +139,22 @@ module.exports = {
   }
 }
 
-function parseToken(data) {
-  const [, token] = data.match(/"token":"([^"]+)/) || [null, null]
+async function parseToken(country) {
+  let path
+  if(country === 'pl') {
+    path = 'mycanalint'
+  } else {
+    path = 'mycanal'
+  }
+  const tokenData = await axios.get(
+    `https://hodor.canalplus.pro/api/v2/${path}/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control`,
+    {
+      headers: globalHeaders,
+      timeout: 5000
+    }).then(r => r.data).catch(console.error)
 
-  return token
+  canalToken = tokenData.token
+  return tokenData.token
 }
 
 function parseStart(item) {
@@ -150,7 +179,7 @@ async function loadProgramDetails(item) {
   if (!item.onClick || !item.onClick.URLPage) return {}
 
   return await axios
-    .get(item.onClick.URLPage)
+    .get(item.onClick.URLPage, { headers: globalHeaders })
     .then(r => r.data)
     .catch(console.error)
 }

@@ -5,7 +5,7 @@ const axios = require('axios')
 dayjs.extend(utc)
 
 module.exports = {
-  site: 'stod2.is',
+  site: 'syn.is',
   days: 7,
   request: {
     cache: {
@@ -13,7 +13,7 @@ module.exports = {
     }
   },
   url({ channel, date }) {
-    return `https://api.stod2.is/dagskra/api/${channel.site_id}/${date.format('YYYY-MM-DD')}`
+    return `https://www.syn.is/api/epg/${channel.site_id}/${date.format('YYYY-MM-DD')}`
   },
   parser: function ({ content }) {
     let data
@@ -48,17 +48,33 @@ module.exports = {
   },
   async channels() {
     try {
-      const response = await axios.get('https://api.stod2.is/dagskra/api')
+      const response = await axios.get('https://www.syn.is/api/epg?type=schedule')
       if (!response.data || !Array.isArray(response.data)) {
         console.error('Error: No channels data found')
         return []
       }
-      return response.data.map(item => {
-        return {
-          lang: 'is',
-          site_id: item
-        }
-      })
+
+      const channels = await Promise.all(
+        response.data.map(async item => {
+          try {
+            const { data: channelData } = await axios.get(`https://www.syn.is/api/epg/${item}`)
+            if (!channelData?.[0]?.midill_heiti) {
+              console.error(`Error: No name found for channel ${item}`)
+              return null
+            }
+            return {
+              lang: 'is',
+              site_id: item,
+              name: channelData[0].midill_heiti
+            }
+          } catch (error) {
+            console.error(`Error fetching channel name for ${item}:`, error)
+            return null
+          }
+        })
+      )
+
+      return channels.filter(Boolean)
     } catch (error) {
       console.error('Error fetching channels:', error)
       return []
