@@ -36,24 +36,11 @@ jobs:
       - name: commit changes to sites.md
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
         run: |
-          FILE=SITES.md
-          CHANGED=$(git diff ${FILE})
+          SITE=SITES.md
+          CHANGED=$(git diff ${SITE})
           if [ -n "${CHANGED}" ]; then
-            git add ${FILE}
-            git commit -m "[Bot] Update ${FILE}" -m "Committed by [iptv-bot](https://github.com/apps/iptv-bot) via [update](https://github.com/iptv-org/epg/actions/runs/${{ github.run_id }}) workflow." --no-verify
-            git push
-          fi
-      - name: update guides.md
-        run: npm run guides:update
-      - run: git status
-      - name: commit changes to guides.md
-        if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
-        run: |
-          FILE=GUIDES.md
-          CHANGED=$(git diff ${FILE})
-          if [ -n "${CHANGED}" ]; then
-            git add ${FILE}
-            git commit -m "[Bot] Update ${FILE}" -m "Committed by [iptv-bot](https://github.com/apps/iptv-bot) via [update](https://github.com/iptv-org/epg/actions/runs/${{ github.run_id }}) workflow." --no-verify
+            git add ${SITE}
+            git commit -m "[Bot] Update ${SITE}" -m "Committed by [iptv-bot](https://github.com/apps/iptv-bot) via [update](https://github.com/iptv-org/epg/actions/runs/${{ github.run_id }}) workflow." --no-verify
             git push
           fi
       - name: generate .api/guides.json
