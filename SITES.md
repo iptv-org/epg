@@ -139,7 +139,7 @@
     <tr><td><a href="sites/raiplay.it">raiplay.it</a></td><td align="right">17</td><td align="right">13</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/reportv.com.ar">reportv.com.ar</a></td><td align="right">163</td><td align="right">95</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/rikstv.no">rikstv.no</a></td><td align="right">80</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/rotana.net">rotana.net</a></td><td align="right">32</td><td align="right">26</td><td align="center">🟢</td><td>https://github.com/iptv-org/epg/issues/3018</td></tr>
+    <tr><td><a href="sites/rotana.net">rotana.net</a></td><td align="right">32</td><td align="right">26</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/roya-tv.com">roya-tv.com</a></td><td align="right">10</td><td align="right">8</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/rthk.hk">rthk.hk</a></td><td align="right">8</td><td align="right">8</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/rtmklik.rtm.gov.my">rtmklik.rtm.gov.my</a></td><td align="right">8</td><td align="right">6</td><td align="center">🟢</td><td></td></tr>
