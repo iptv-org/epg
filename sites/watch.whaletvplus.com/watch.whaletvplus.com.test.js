@@ -17,13 +17,11 @@ const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json')
 
 it('can generate valid url', () => {
   const channel = { site_id: '878765717599035555' }
-  const start = date.valueOf()
-  const end = date.add(1, 'day').valueOf()
   
   const generatedUrl = url({ channel, date })
   
   expect(generatedUrl).toBe(
-    `https://rlaxx.zeasn.tv/livetv/api/device/browser/v1/epg?channelIds=878765717599035555&startTime=${start}&endTime=${end}`
+    'https://rlaxx.zeasn.tv/livetv/api/device/browser/v1/epg?channelIds=878765717599035555&startTime=1767830400000&endTime=1767916800000'
   )
 })
 
