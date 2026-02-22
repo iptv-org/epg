@@ -28,6 +28,20 @@ it('can generate valid url', () => {
 })
 
 it('can parse response', async () => {
+  axios.get.mockImplementation((url) => {
+    if (url.includes('auth/access')) {
+      return Promise.resolve({
+        data: { data: { token: 'mock_token' } }
+      })
+    }
+    if (url.includes('epg/detail')) {
+      return Promise.resolve({
+        data: { data: { prgDesc: 'Test Description' } }
+      })
+    }
+    return Promise.resolve({ data: {} })
+  })
+
   const json = JSON.parse(content)
   const firstChannel = json.data && json.data.length > 0 ? json.data[0] : null
   const validSiteId = firstChannel ? firstChannel.chlId : '878765717599035555'
@@ -99,4 +113,22 @@ it('can parse channel list', async () => {
     site_id: expect.any(String),
     lang: expect.any(String)
   })
+})
+
+it('can parse token', async () => {
+  jest.resetModules()
+  const { request } = require('./watch.whaletvplus.com.config.js')
+  const axios = require('axios')
+
+  axios.get.mockImplementation((url) => {
+    if (url.includes('auth/access')) {
+      return Promise.resolve({
+        data: { data: { token: 'test_token' } }
+      })
+    }
+    return Promise.resolve({ data: {} })
+  })
+
+  const headers = await request.headers()
+  expect(headers.token).toBe('test_token')
 })

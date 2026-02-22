@@ -8,7 +8,6 @@ const HEADERS = {
   'Origin': 'https://watch.whaletvplus.com'
 }
 const apiToken = '4ef13b5f3d2744e3b0a569feb8dde298'
-const LOGO_BASE = 'https://d3b6luslimvglo.cloudfront.net/images/79/rlaxximages/channels-rescaled/icon-white/'
 
 let authTokenPromise = null
 
@@ -70,6 +69,10 @@ module.exports = {
           program.episode = detail.episodeNumber || null
           program.sub_title = detail.prgTitle || detail.seriesTitle || null
 
+          if (program.title === program.sub_title) {
+            program.sub_title = null
+          }
+
           if (detail.images && Array.isArray(detail.images)) {
             const bestImg = detail.images.find((i) => i.pimgWidth === '1920') || detail.images[0]
             if (bestImg) program.image = bestImg.pimgUrl
@@ -106,7 +109,7 @@ module.exports = {
           lang: (ch.chlLangCode ? ch.chlLangCode.split('-')[0] : 'en'),
           site_id: ch.chlId,
           name: ch.chlName,
-          logo: ch.imageIdentifier ? `${LOGO_BASE}${ch.imageIdentifier}_white.png` : null
+          // logo: ch.imageIdentifier ? `https://d3b6luslimvglo.cloudfront.net/images/79/rlaxximages/channels-rescaled/icon-white/${ch.imageIdentifier}_white.png` : null
         })
       }
     }
