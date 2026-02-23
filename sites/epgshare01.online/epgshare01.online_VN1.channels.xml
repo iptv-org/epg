@@ -1,97 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="epgshare01.online" site_id="VN1#AFC.vn" lang="vi" xmltv_id="">AFC</channel>
-  <channel site="epgshare01.online" site_id="VN1#Asian.Food.Network.HD.vn" lang="vi" xmltv_id="">Asian Food Network HD</channel>
-  <channel site="epgshare01.online" site_id="VN1#AXN.vn" lang="vi" xmltv_id="">AXN</channel>
-  <channel site="epgshare01.online" site_id="VN1#BBC.earth.vn" lang="vi" xmltv_id="">BBC earth</channel>
-  <channel site="epgshare01.online" site_id="VN1#BBC.Lifestyle.vn" lang="vi" xmltv_id="">BBC Lifestyle</channel>
-  <channel site="epgshare01.online" site_id="VN1#BBC.World.News.vn" lang="vi" xmltv_id="">BBC World News</channel>
-  <channel site="epgshare01.online" site_id="VN1#Bloomberg.vn" lang="vi" xmltv_id="">Bloomberg</channel>
-  <channel site="epgshare01.online" site_id="VN1#Boomerang.vn" lang="vi" xmltv_id="">Boomerang</channel>
-  <channel site="epgshare01.online" site_id="VN1#CARTOON.NETWORK.vn" lang="vi" xmltv_id="">CARTOON NETWORK</channel>
-  <channel site="epgshare01.online" site_id="VN1#Cartoon.Network.vn" lang="vi" xmltv_id="">Cartoon Network</channel>
-  <channel site="epgshare01.online" site_id="VN1#Cinema.World.vn" lang="vi" xmltv_id="">Cinema World</channel>
-  <channel site="epgshare01.online" site_id="VN1#Cinemax.vn" lang="vi" xmltv_id="">Cinemax</channel>
-  <channel site="epgshare01.online" site_id="VN1#CTV.-.CÀ.MAU.vn" lang="vi" xmltv_id="">CTV - CÀ MAU</channel>
-  <channel site="epgshare01.online" site_id="VN1#Da.Vinci.vn" lang="vi" xmltv_id="">Da Vinci</channel>
-  <channel site="epgshare01.online" site_id="VN1#Discovery.Asia.vn" lang="vi" xmltv_id="">Discovery Asia</channel>
-  <channel site="epgshare01.online" site_id="VN1#DISCOVERY.CHANNEL.vn" lang="vi" xmltv_id="">DISCOVERY CHANNEL</channel>
-  <channel site="epgshare01.online" site_id="VN1#Discovery.vn" lang="vi" xmltv_id="">Discovery</channel>
-  <channel site="epgshare01.online" site_id="VN1#DISNEY.JUNIOR.vn" lang="vi" xmltv_id="">DISNEY JUNIOR</channel>
-  <channel site="epgshare01.online" site_id="VN1#DISNEY.vn" lang="vi" xmltv_id="">DISNEY</channel>
-  <channel site="epgshare01.online" site_id="VN1#FOX.SPORTS.PLUS.HD.vn" lang="vi" xmltv_id="">FOX SPORTS PLUS HD</channel>
-  <channel site="epgshare01.online" site_id="VN1#FRANCE.24.vn" lang="vi" xmltv_id="">FRANCE 24</channel>
-  <channel site="epgshare01.online" site_id="VN1#HBO.HD.vn" lang="vi" xmltv_id="">HBO HD</channel>
-  <channel site="epgshare01.online" site_id="VN1#HBO.vn" lang="vi" xmltv_id="">HBO</channel>
-  <channel site="epgshare01.online" site_id="VN1#HITS.SD.vn" lang="vi" xmltv_id="">HITS SD</channel>
-  <channel site="epgshare01.online" site_id="VN1#HTV1.vn" lang="vi" xmltv_id="">HTV1</channel>
-  <channel site="epgshare01.online" site_id="VN1#HTV2.vn" lang="vi" xmltv_id="">HTV2</channel>
-  <channel site="epgshare01.online" site_id="VN1#HTV3.vn" lang="vi" xmltv_id="">HTV3</channel>
+  <channel site="epgshare01.online" site_id="VN1#801.vn" lang="vi" xmltv_id="">801</channel>
+  <channel site="epgshare01.online" site_id="VN1#802.vn" lang="vi" xmltv_id="">802</channel>
+  <channel site="epgshare01.online" site_id="VN1#803.vn" lang="vi" xmltv_id="">803</channel>
+  <channel site="epgshare01.online" site_id="VN1#804.vn" lang="vi" xmltv_id="">804</channel>
+  <channel site="epgshare01.online" site_id="VN1#ABC.Australia.vn" lang="vi" xmltv_id="">ABC Australia</channel>
+  <channel site="epgshare01.online" site_id="VN1#An.Giang.1.vn" lang="vi" xmltv_id="">An Giang 1</channel>
+  <channel site="epgshare01.online" site_id="VN1#An.Giang.2.vn" lang="vi" xmltv_id="">An Giang 2</channel>
+  <channel site="epgshare01.online" site_id="VN1#Animal.Plannet.HD.vn" lang="vi" xmltv_id="">Animal Plannet HD</channel>
+  <channel site="epgshare01.online" site_id="VN1#ANTV.vn" lang="vi" xmltv_id="">ANTV</channel>
+  <channel site="epgshare01.online" site_id="VN1#Arirang.vn" lang="vi" xmltv_id="">Arirang</channel>
+  <channel site="epgshare01.online" site_id="VN1#Asian.Food.Network.(HD).vn" lang="vi" xmltv_id="">Asian Food Network (HD)</channel>
+  <channel site="epgshare01.online" site_id="VN1#AXN.HD.vn" lang="vi" xmltv_id="">AXN HD</channel>
+  <channel site="epgshare01.online" site_id="VN1#Bắc.Ninh.vn" lang="vi" xmltv_id="">Bắc Ninh</channel>
+  <channel site="epgshare01.online" site_id="VN1#Box.Hits.(HD).vn" lang="vi" xmltv_id="">Box Hits (HD)</channel>
+  <channel site="epgshare01.online" site_id="VN1#BTV6.-.Shopping.24h.vn" lang="vi" xmltv_id="">BTV6 - Shopping 24h</channel>
+  <channel site="epgshare01.online" site_id="VN1#BTV9.-.An.Viên.TV.vn" lang="vi" xmltv_id="">BTV9 - An Viên TV</channel>
+  <channel site="epgshare01.online" site_id="VN1#Cà.Mau.vn" lang="vi" xmltv_id="">Cà Mau</channel>
+  <channel site="epgshare01.online" site_id="VN1#Cần.Thơ.TV1.vn" lang="vi" xmltv_id="">Cần Thơ TV1</channel>
+  <channel site="epgshare01.online" site_id="VN1#Cần.Thơ.TV2.vn" lang="vi" xmltv_id="">Cần Thơ TV2</channel>
+  <channel site="epgshare01.online" site_id="VN1#Cần.Thơ.TV3.vn" lang="vi" xmltv_id="">Cần Thơ TV3</channel>
+  <channel site="epgshare01.online" site_id="VN1#Cao.Bằng.TV.vn" lang="vi" xmltv_id="">Cao Bằng TV</channel>
+  <channel site="epgshare01.online" site_id="VN1#CartoonNetwork.HD.vn" lang="vi" xmltv_id="">CartoonNetwork HD</channel>
+  <channel site="epgshare01.online" site_id="VN1#Channel.News.Asia.HD.vn" lang="vi" xmltv_id="">Channel News Asia HD</channel>
+  <channel site="epgshare01.online" site_id="VN1#CINEMAWORLD.HD.vn" lang="vi" xmltv_id="">CINEMAWORLD HD</channel>
+  <channel site="epgshare01.online" site_id="VN1#CNBC.vn" lang="vi" xmltv_id="">CNBC</channel>
+  <channel site="epgshare01.online" site_id="VN1#CNN.HD.vn" lang="vi" xmltv_id="">CNN HD</channel>
+  <channel site="epgshare01.online" site_id="VN1#Đà.Nẵng.1.vn" lang="vi" xmltv_id="">Đà Nẵng 1</channel>
+  <channel site="epgshare01.online" site_id="VN1#Đà.Nẵng.2.vn" lang="vi" xmltv_id="">Đà Nẵng 2</channel>
+  <channel site="epgshare01.online" site_id="VN1#DakLak.TV.vn" lang="vi" xmltv_id="">DakLak TV</channel>
+  <channel site="epgshare01.online" site_id="VN1#DaVinci.HD.vn" lang="vi" xmltv_id="">DaVinci HD</channel>
+  <channel site="epgshare01.online" site_id="VN1#Điện.Biên.TV.vn" lang="vi" xmltv_id="">Điện Biên TV</channel>
+  <channel site="epgshare01.online" site_id="VN1#Discovery(HD).vn" lang="vi" xmltv_id="">Discovery(HD)</channel>
+  <channel site="epgshare01.online" site_id="VN1#DMAX.(HD).vn" lang="vi" xmltv_id="">DMAX (HD)</channel>
+  <channel site="epgshare01.online" site_id="VN1#Đồng.Nai.1.HD.vn" lang="vi" xmltv_id="">Đồng Nai 1 HD</channel>
+  <channel site="epgshare01.online" site_id="VN1#Đồng.Nai.2.vn" lang="vi" xmltv_id="">Đồng Nai 2</channel>
+  <channel site="epgshare01.online" site_id="VN1#Đồng.Tháp.TV1.vn" lang="vi" xmltv_id="">Đồng Tháp TV1</channel>
+  <channel site="epgshare01.online" site_id="VN1#Đồng.Tháp.TV2.vn" lang="vi" xmltv_id="">Đồng Tháp TV2</channel>
+  <channel site="epgshare01.online" site_id="VN1#DreamWorks.(HD).vn" lang="vi" xmltv_id="">DreamWorks (HD)</channel>
+  <channel site="epgshare01.online" site_id="VN1#DW-HD.vn" lang="vi" xmltv_id="">DW-HD</channel>
+  <channel site="epgshare01.online" site_id="VN1#France24.vn" lang="vi" xmltv_id="">France24</channel>
+  <channel site="epgshare01.online" site_id="VN1#FTV(HD).vn" lang="vi" xmltv_id="">FTV(HD)</channel>
+  <channel site="epgshare01.online" site_id="VN1#Gia.Lai.TV.vn" lang="vi" xmltv_id="">Gia Lai TV</channel>
+  <channel site="epgshare01.online" site_id="VN1#Hà.Nội.1 .HD.vn" lang="vi" xmltv_id="">Hà Nội 1  HD</channel>
+  <channel site="epgshare01.online" site_id="VN1#Hà.Nội.2.HD.vn" lang="vi" xmltv_id="">Hà Nội 2 HD</channel>
+  <channel site="epgshare01.online" site_id="VN1#Hà.Tĩnh.TV.HD.vn" lang="vi" xmltv_id="">Hà Tĩnh TV HD</channel>
+  <channel site="epgshare01.online" site_id="VN1#Hải.Phòng.TV.HD.vn" lang="vi" xmltv_id="">Hải Phòng TV HD</channel>
+  <channel site="epgshare01.online" site_id="VN1#Hollywood.Classic.vn" lang="vi" xmltv_id="">Hollywood Classic</channel>
+  <channel site="epgshare01.online" site_id="VN1#HTV1.HD.vn" lang="vi" xmltv_id="">HTV1 HD</channel>
+  <channel site="epgshare01.online" site_id="VN1#HTV2.HD.vn" lang="vi" xmltv_id="">HTV2 HD</channel>
+  <channel site="epgshare01.online" site_id="VN1#HTV3.HD.vn" lang="vi" xmltv_id="">HTV3 HD</channel>
   <channel site="epgshare01.online" site_id="VN1#HTV7.HD.vn" lang="vi" xmltv_id="">HTV7 HD</channel>
   <channel site="epgshare01.online" site_id="VN1#HTV9.HD.vn" lang="vi" xmltv_id="">HTV9 HD</channel>
-  <channel site="epgshare01.online" site_id="VN1#HTV.Key.vn" lang="vi" xmltv_id="">HTV Key</channel>
+  <channel site="epgshare01.online" site_id="VN1#HTV.Key.(HD).vn" lang="vi" xmltv_id="">HTV Key (HD)</channel>
+  <channel site="epgshare01.online" site_id="VN1#HTV.Phụ.Nữ.(HD).vn" lang="vi" xmltv_id="">HTV Phụ Nữ (HD)</channel>
   <channel site="epgshare01.online" site_id="VN1#HTV.Thể.thao.vn" lang="vi" xmltv_id="">HTV Thể thao</channel>
-  <channel site="epgshare01.online" site_id="VN1#HTVC.-.Ca.nhạc.vn" lang="vi" xmltv_id="">HTVC - Ca nhạc</channel>
-  <channel site="epgshare01.online" site_id="VN1#HTVC.+..HD.vn" lang="vi" xmltv_id="">HTVC + HD</channel>
-  <channel site="epgshare01.online" site_id="VN1#HTVC.DU.LỊCH.&amp;.CUỘC.SỐNG.vn" lang="vi" xmltv_id="">HTVC DU LỊCH &amp;amp; CUỘC SỐNG</channel>
-  <channel site="epgshare01.online" site_id="VN1#HTVC.Gia.Đình.vn" lang="vi" xmltv_id="">HTVC Gia Đình</channel>
-  <channel site="epgshare01.online" site_id="VN1#HTVC.Phim.vn" lang="vi" xmltv_id="">HTVC Phim</channel>
-  <channel site="epgshare01.online" site_id="VN1#HTVC.Phụ.Nữ.vn" lang="vi" xmltv_id="">HTVC Phụ Nữ</channel>
-  <channel site="epgshare01.online" site_id="VN1#HTVC.Thuần.Việt.HD.(Phim.Việt).vn" lang="vi" xmltv_id="">HTVC Thuần Việt HD (Phim Việt)</channel>
-  <channel site="epgshare01.online" site_id="VN1#HTVC.Thuần.Việt.vn" lang="vi" xmltv_id="">HTVC Thuần Việt</channel>
-  <channel site="epgshare01.online" site_id="VN1#K+1.HD.vn" lang="vi" xmltv_id="">K+1 HD</channel>
-  <channel site="epgshare01.online" site_id="VN1#K+NS.HD.vn" lang="vi" xmltv_id="">K+NS HD</channel>
-  <channel site="epgshare01.online" site_id="VN1#K+PC.HD.vn" lang="vi" xmltv_id="">K+PC HD</channel>
-  <channel site="epgshare01.online" site_id="VN1#K+PM.HD.vn" lang="vi" xmltv_id="">K+PM HD</channel>
-  <channel site="epgshare01.online" site_id="VN1#KBS.WORLD.vn" lang="vi" xmltv_id="">KBS WORLD</channel>
+  <channel site="epgshare01.online" site_id="VN1#HTV.Thuần.Việt.HD.vn" lang="vi" xmltv_id="">HTV Thuần Việt HD</channel>
+  <channel site="epgshare01.online" site_id="VN1#HTVC.Ca.Nhạc.(HD).vn" lang="vi" xmltv_id="">HTVC Ca Nhạc (HD)</channel>
+  <channel site="epgshare01.online" site_id="VN1#HTVC.Du.Lịch.Cuộc.Sống.(HD).vn" lang="vi" xmltv_id="">HTVC Du Lịch Cuộc Sống (HD)</channel>
+  <channel site="epgshare01.online" site_id="VN1#HTVC.Gia.Đình.(HD).vn" lang="vi" xmltv_id="">HTVC Gia Đình (HD)</channel>
+  <channel site="epgshare01.online" site_id="VN1#HTVC.Phim.HD.vn" lang="vi" xmltv_id="">HTVC Phim HD</channel>
+  <channel site="epgshare01.online" site_id="VN1#HTVC.Plus.HD.vn" lang="vi" xmltv_id="">HTVC Plus HD</channel>
+  <channel site="epgshare01.online" site_id="VN1#Huế.TV.vn" lang="vi" xmltv_id="">Huế TV</channel>
+  <channel site="epgshare01.online" site_id="VN1#Hưng.Yên.TV.HD.vn" lang="vi" xmltv_id="">Hưng Yên TV HD</channel>
   <channel site="epgshare01.online" site_id="VN1#KBS.World.vn" lang="vi" xmltv_id="">KBS World</channel>
-  <channel site="epgshare01.online" site_id="VN1#KG.-.KIÊN.GIANG.vn" lang="vi" xmltv_id="">KG - KIÊN GIANG</channel>
-  <channel site="epgshare01.online" site_id="VN1#LA34.-.LONG.AN.vn" lang="vi" xmltv_id="">LA34 - LONG AN</channel>
-  <channel site="epgshare01.online" site_id="VN1#MTV.Vietnam.vn" lang="vi" xmltv_id="">MTV Vietnam</channel>
-  <channel site="epgshare01.online" site_id="VN1#MTV.vn" lang="vi" xmltv_id="">MTV</channel>
-  <channel site="epgshare01.online" site_id="VN1#NAT.GEO.WILD.HD.vn" lang="vi" xmltv_id="">NAT GEO WILD HD</channel>
-  <channel site="epgshare01.online" site_id="VN1#NGC.HD.vn" lang="vi" xmltv_id="">NGC HD</channel>
-  <channel site="epgshare01.online" site_id="VN1#NGC.vn" lang="vi" xmltv_id="">NGC</channel>
-  <channel site="epgshare01.online" site_id="VN1#NHK.WORLD.JAPAN.vn" lang="vi" xmltv_id="">NHK WORLD JAPAN</channel>
-  <channel site="epgshare01.online" site_id="VN1#ON.Football.vn" lang="vi" xmltv_id="">ON Football</channel>
-  <channel site="epgshare01.online" site_id="VN1#On.Sports.News.vn" lang="vi" xmltv_id="">On Sports News</channel>
-  <channel site="epgshare01.online" site_id="VN1#ON.SPORTS.vn" lang="vi" xmltv_id="">ON SPORTS</channel>
-  <channel site="epgshare01.online" site_id="VN1#QTV1.vn" lang="vi" xmltv_id="">QTV1</channel>
-  <channel site="epgshare01.online" site_id="VN1#THVL1.-.TH.VĨNH.LONG.1.vn" lang="vi" xmltv_id="">THVL1 - TH VĨNH LONG 1</channel>
-  <channel site="epgshare01.online" site_id="VN1#THVL2.-.TH.VĨNH.LONG.2.vn" lang="vi" xmltv_id="">THVL2 - TH VĨNH LONG 2</channel>
-  <channel site="epgshare01.online" site_id="VN1#THVL2.vn" lang="vi" xmltv_id="">THVL2</channel>
-  <channel site="epgshare01.online" site_id="VN1#TLC.(Travel.&amp;.living).vn" lang="vi" xmltv_id="">TLC (Travel &amp;amp; living)</channel>
+  <channel site="epgshare01.online" site_id="VN1#Khánh.Hòa.1.vn" lang="vi" xmltv_id="">Khánh Hòa 1</channel>
+  <channel site="epgshare01.online" site_id="VN1#Khánh.Hòa.vn" lang="vi" xmltv_id="">Khánh Hòa</channel>
+  <channel site="epgshare01.online" site_id="VN1#Lai.Châu.TV.vn" lang="vi" xmltv_id="">Lai Châu TV</channel>
+  <channel site="epgshare01.online" site_id="VN1#Lâm.Đồng.TV1.vn" lang="vi" xmltv_id="">Lâm Đồng TV1</channel>
+  <channel site="epgshare01.online" site_id="VN1#Lâm.Đồng.TV2.vn" lang="vi" xmltv_id="">Lâm Đồng TV2</channel>
+  <channel site="epgshare01.online" site_id="VN1#Lâm.Đồng.TV3.vn" lang="vi" xmltv_id="">Lâm Đồng TV3</channel>
+  <channel site="epgshare01.online" site_id="VN1#Lạng.Sơn.TV.HD.vn" lang="vi" xmltv_id="">Lạng Sơn TV HD</channel>
+  <channel site="epgshare01.online" site_id="VN1#Lào.Cai.TV.vn" lang="vi" xmltv_id="">Lào Cai TV</channel>
+  <channel site="epgshare01.online" site_id="VN1#Music.Box.(HD).vn" lang="vi" xmltv_id="">Music Box (HD)</channel>
+  <channel site="epgshare01.online" site_id="VN1#Nghệ.An.(HD).vn" lang="vi" xmltv_id="">Nghệ An (HD)</channel>
+  <channel site="epgshare01.online" site_id="VN1#NHK.World.Japan.HD.vn" lang="vi" xmltv_id="">NHK World Japan HD</channel>
+  <channel site="epgshare01.online" site_id="VN1#Ninh.Bình.TV.vn" lang="vi" xmltv_id="">Ninh Bình TV</channel>
+  <channel site="epgshare01.online" site_id="VN1#ON.Bibi.HD.vn" lang="vi" xmltv_id="">ON Bibi HD</channel>
+  <channel site="epgshare01.online" site_id="VN1#ON.Cine.HD.vn" lang="vi" xmltv_id="">ON Cine HD</channel>
+  <channel site="epgshare01.online" site_id="VN1#ON.E.Channel.vn" lang="vi" xmltv_id="">ON E Channel</channel>
+  <channel site="epgshare01.online" site_id="VN1#ON.Football.(HD).vn" lang="vi" xmltv_id="">ON Football (HD)</channel>
+  <channel site="epgshare01.online" site_id="VN1#ON.Golf.vn" lang="vi" xmltv_id="">ON Golf</channel>
+  <channel site="epgshare01.online" site_id="VN1#ON.InfoTV.HD.vn" lang="vi" xmltv_id="">ON InfoTV HD</channel>
+  <channel site="epgshare01.online" site_id="VN1#ON.Kids.(HD).vn" lang="vi" xmltv_id="">ON Kids (HD)</channel>
+  <channel site="epgshare01.online" site_id="VN1#ON.Life.(HD).vn" lang="vi" xmltv_id="">ON Life (HD)</channel>
+  <channel site="epgshare01.online" site_id="VN1#ON.MOVIES.(HD).vn" lang="vi" xmltv_id="">ON MOVIES (HD)</channel>
+  <channel site="epgshare01.online" site_id="VN1#ON.MUSIC.HD.vn" lang="vi" xmltv_id="">ON MUSIC HD</channel>
+  <channel site="epgshare01.online" site_id="VN1#ON.O2TV.HD.vn" lang="vi" xmltv_id="">ON O2TV HD</channel>
+  <channel site="epgshare01.online" site_id="VN1#ON.Phim.Việt.HD.vn" lang="vi" xmltv_id="">ON Phim Việt HD</channel>
+  <channel site="epgshare01.online" site_id="VN1#On.Sports+.HD.vn" lang="vi" xmltv_id="">On Sports+ HD</channel>
+  <channel site="epgshare01.online" site_id="VN1#ON.Sports.(HD).vn" lang="vi" xmltv_id="">ON Sports (HD)</channel>
+  <channel site="epgshare01.online" site_id="VN1#ON.Sports.News.vn" lang="vi" xmltv_id="">ON Sports News</channel>
+  <channel site="epgshare01.online" site_id="VN1#ON.Style.TV.HD.vn" lang="vi" xmltv_id="">ON Style TV HD</channel>
+  <channel site="epgshare01.online" site_id="VN1#ON.Trending.HD.vn" lang="vi" xmltv_id="">ON Trending HD</channel>
+  <channel site="epgshare01.online" site_id="VN1#ON.Vfamily.HD.vn" lang="vi" xmltv_id="">ON Vfamily HD</channel>
+  <channel site="epgshare01.online" site_id="VN1#ON.Vie.Dramas.vn" lang="vi" xmltv_id="">ON Vie Dramas</channel>
+  <channel site="epgshare01.online" site_id="VN1#ON.Vie.Giải.trí.vn" lang="vi" xmltv_id="">ON Vie Giải trí</channel>
+  <channel site="epgshare01.online" site_id="VN1#Outdoor.HD.vn" lang="vi" xmltv_id="">Outdoor HD</channel>
+  <channel site="epgshare01.online" site_id="VN1#Phú.Thọ.TV.(HD).vn" lang="vi" xmltv_id="">Phú Thọ TV (HD)</channel>
+  <channel site="epgshare01.online" site_id="VN1#QPVN.(HD).vn" lang="vi" xmltv_id="">QPVN (HD)</channel>
+  <channel site="epgshare01.online" site_id="VN1#Quảng.Ninh1.(QTV1).HD.vn" lang="vi" xmltv_id="">Quảng Ninh1 (QTV1) HD</channel>
+  <channel site="epgshare01.online" site_id="VN1#Quảng.Ninh3.(QTV3).HD.vn" lang="vi" xmltv_id="">Quảng Ninh3 (QTV3) HD</channel>
+  <channel site="epgshare01.online" site_id="VN1#Quảng.Trị.HD.vn" lang="vi" xmltv_id="">Quảng Trị HD</channel>
+  <channel site="epgshare01.online" site_id="VN1#QuangNgaiTV1.vn" lang="vi" xmltv_id="">QuangNgaiTV1</channel>
+  <channel site="epgshare01.online" site_id="VN1#QuangNgaiTV2.vn" lang="vi" xmltv_id="">QuangNgaiTV2</channel>
+  <channel site="epgshare01.online" site_id="VN1#SCTV1.vn" lang="vi" xmltv_id="">SCTV1</channel>
+  <channel site="epgshare01.online" site_id="VN1#SCTV2.vn" lang="vi" xmltv_id="">SCTV2</channel>
+  <channel site="epgshare01.online" site_id="VN1#SCTV3.vn" lang="vi" xmltv_id="">SCTV3</channel>
+  <channel site="epgshare01.online" site_id="VN1#SCTV4.vn" lang="vi" xmltv_id="">SCTV4</channel>
+  <channel site="epgshare01.online" site_id="VN1#SCTV6.vn" lang="vi" xmltv_id="">SCTV6</channel>
+  <channel site="epgshare01.online" site_id="VN1#SCTV7.vn" lang="vi" xmltv_id="">SCTV7</channel>
+  <channel site="epgshare01.online" site_id="VN1#SCTV8.vn" lang="vi" xmltv_id="">SCTV8</channel>
+  <channel site="epgshare01.online" site_id="VN1#SCTV9.vn" lang="vi" xmltv_id="">SCTV9</channel>
+  <channel site="epgshare01.online" site_id="VN1#SCTV11.vn" lang="vi" xmltv_id="">SCTV11</channel>
+  <channel site="epgshare01.online" site_id="VN1#SCTV12.vn" lang="vi" xmltv_id="">SCTV12</channel>
+  <channel site="epgshare01.online" site_id="VN1#SCTV13.vn" lang="vi" xmltv_id="">SCTV13</channel>
+  <channel site="epgshare01.online" site_id="VN1#SCTV15.-.SSportT2.vn" lang="vi" xmltv_id="">SCTV15 - SSportT2</channel>
+  <channel site="epgshare01.online" site_id="VN1#SCTV17.-.Ssport.vn" lang="vi" xmltv_id="">SCTV17 - Ssport</channel>
+  <channel site="epgshare01.online" site_id="VN1#SCTV18.vn" lang="vi" xmltv_id="">SCTV18</channel>
+  <channel site="epgshare01.online" site_id="VN1#SCTV19.vn" lang="vi" xmltv_id="">SCTV19</channel>
+  <channel site="epgshare01.online" site_id="VN1#SCTV20.vn" lang="vi" xmltv_id="">SCTV20</channel>
+  <channel site="epgshare01.online" site_id="VN1#SCTV21.vn" lang="vi" xmltv_id="">SCTV21</channel>
+  <channel site="epgshare01.online" site_id="VN1#SCTV.22.-.SSportT1.vn" lang="vi" xmltv_id="">SCTV 22 - SSportT1</channel>
+  <channel site="epgshare01.online" site_id="VN1#SCTV.-.Phim.Tổng.hợp.vn" lang="vi" xmltv_id="">SCTV - Phim Tổng hợp</channel>
+  <channel site="epgshare01.online" site_id="VN1#Sơn.La.TV.vn" lang="vi" xmltv_id="">Sơn La TV</channel>
+  <channel site="epgshare01.online" site_id="VN1#SPOTV2.(HD).vn" lang="vi" xmltv_id="">SPOTV2 (HD)</channel>
+  <channel site="epgshare01.online" site_id="VN1#SPOTV.(HD).vn" lang="vi" xmltv_id="">SPOTV (HD)</channel>
+  <channel site="epgshare01.online" site_id="VN1#Tây.Ninh.TV.vn" lang="vi" xmltv_id="">Tây Ninh TV</channel>
+  <channel site="epgshare01.online" site_id="VN1#Thái.Nguyên.vn" lang="vi" xmltv_id="">Thái Nguyên</channel>
+  <channel site="epgshare01.online" site_id="VN1#Thanh.Hóa.TV.HD.vn" lang="vi" xmltv_id="">Thanh Hóa TV HD</channel>
+  <channel site="epgshare01.online" site_id="VN1#THP3.vn" lang="vi" xmltv_id="">THP3</channel>
+  <channel site="epgshare01.online" site_id="VN1#TLC.HD.vn" lang="vi" xmltv_id="">TLC HD</channel>
+  <channel site="epgshare01.online" site_id="VN1#Tuyên.Quang.TV.vn" lang="vi" xmltv_id="">Tuyên Quang TV</channel>
   <channel site="epgshare01.online" site_id="VN1#TV5.MONDE.vn" lang="vi" xmltv_id="">TV5 MONDE</channel>
-  <channel site="epgshare01.online" site_id="VN1#VTC1.vn" lang="vi" xmltv_id="">VTC1</channel>
-  <channel site="epgshare01.online" site_id="VN1#VTC2.vn" lang="vi" xmltv_id="">VTC2</channel>
-  <channel site="epgshare01.online" site_id="VN1#VTC3.vn" lang="vi" xmltv_id="">VTC3</channel>
-  <channel site="epgshare01.online" site_id="VN1#VTC4.vn" lang="vi" xmltv_id="">VTC4</channel>
-  <channel site="epgshare01.online" site_id="VN1#VTC5.vn" lang="vi" xmltv_id="">VTC5</channel>
-  <channel site="epgshare01.online" site_id="VN1#VTC6.vn" lang="vi" xmltv_id="">VTC6</channel>
-  <channel site="epgshare01.online" site_id="VN1#VTC7-TODAY.TV.vn" lang="vi" xmltv_id="">VTC7-TODAY TV</channel>
-  <channel site="epgshare01.online" site_id="VN1#VTC7.-.TODAY.TV.vn" lang="vi" xmltv_id="">VTC7 - TODAY TV</channel>
-  <channel site="epgshare01.online" site_id="VN1#VTC7.vn" lang="vi" xmltv_id="">VTC7</channel>
-  <channel site="epgshare01.online" site_id="VN1#VTC8.vn" lang="vi" xmltv_id="">VTC8</channel>
-  <channel site="epgshare01.online" site_id="VN1#VTC9.vn" lang="vi" xmltv_id="">VTC9</channel>
-  <channel site="epgshare01.online" site_id="VN1#VTC10.vn" lang="vi" xmltv_id="">VTC10</channel>
-  <channel site="epgshare01.online" site_id="VN1#VTC11.vn" lang="vi" xmltv_id="">VTC11</channel>
-  <channel site="epgshare01.online" site_id="VN1#VTC12.vn" lang="vi" xmltv_id="">VTC12</channel>
-  <channel site="epgshare01.online" site_id="VN1#VTC13.vn" lang="vi" xmltv_id="">VTC13</channel>
-  <channel site="epgshare01.online" site_id="VN1#VTC14.vn" lang="vi" xmltv_id="">VTC14</channel>
-  <channel site="epgshare01.online" site_id="VN1#VTC16.vn" lang="vi" xmltv_id="">VTC16</channel>
+  <channel site="epgshare01.online" site_id="VN1#Vietnam.Today.vn" lang="vi" xmltv_id="">Vietnam Today</channel>
+  <channel site="epgshare01.online" site_id="VN1#Vĩnh.Long.1.HD.vn" lang="vi" xmltv_id="">Vĩnh Long 1 HD</channel>
+  <channel site="epgshare01.online" site_id="VN1#Vĩnh.Long.2.HD.vn" lang="vi" xmltv_id="">Vĩnh Long 2 HD</channel>
+  <channel site="epgshare01.online" site_id="VN1#Vĩnh.Long.3.HD.vn" lang="vi" xmltv_id="">Vĩnh Long 3 HD</channel>
+  <channel site="epgshare01.online" site_id="VN1#Vĩnh.Long.4.HD.vn" lang="vi" xmltv_id="">Vĩnh Long 4 HD</channel>
+  <channel site="epgshare01.online" site_id="VN1#Vĩnh.Long.5.vn" lang="vi" xmltv_id="">Vĩnh Long 5</channel>
+  <channel site="epgshare01.online" site_id="VN1#VTV1.HD.vn" lang="vi" xmltv_id="">VTV1 HD</channel>
   <channel site="epgshare01.online" site_id="VN1#VTV2.HD.vn" lang="vi" xmltv_id="">VTV2 HD</channel>
-  <channel site="epgshare01.online" site_id="VN1#VTV2.vn" lang="vi" xmltv_id="">VTV2</channel>
   <channel site="epgshare01.online" site_id="VN1#VTV3.HD.vn" lang="vi" xmltv_id="">VTV3 HD</channel>
-  <channel site="epgshare01.online" site_id="VN1#VTV4.vn" lang="vi" xmltv_id="">VTV4</channel>
-  <channel site="epgshare01.online" site_id="VN1#VTV5.vn" lang="vi" xmltv_id="">VTV5</channel>
-  <channel site="epgshare01.online" site_id="VN1#VTV6.HD.vn" lang="vi" xmltv_id="">VTV6 HD</channel>
-  <channel site="epgshare01.online" site_id="VN1#VTV7.vn" lang="vi" xmltv_id="">VTV7</channel>
-  <channel site="epgshare01.online" site_id="VN1#VTV8.vn" lang="vi" xmltv_id="">VTV8</channel>
+  <channel site="epgshare01.online" site_id="VN1#VTV4.HD.vn" lang="vi" xmltv_id="">VTV4 HD</channel>
+  <channel site="epgshare01.online" site_id="VN1#VTV5.HD.vn" lang="vi" xmltv_id="">VTV5 HD</channel>
+  <channel site="epgshare01.online" site_id="VN1#VTV5.Tây.Nam.Bộ.(HD).vn" lang="vi" xmltv_id="">VTV5 Tây Nam Bộ (HD)</channel>
+  <channel site="epgshare01.online" site_id="VN1#VTV5.Tây.Nguyên.(HD).vn" lang="vi" xmltv_id="">VTV5 Tây Nguyên (HD)</channel>
+  <channel site="epgshare01.online" site_id="VN1#VTV7.HD.vn" lang="vi" xmltv_id="">VTV7 HD</channel>
+  <channel site="epgshare01.online" site_id="VN1#VTV8.HD.vn" lang="vi" xmltv_id="">VTV8 HD</channel>
   <channel site="epgshare01.online" site_id="VN1#VTV9.HD.vn" lang="vi" xmltv_id="">VTV9 HD</channel>
-  <channel site="epgshare01.online" site_id="VN1#VTVCab1-GIAITRITV.vn" lang="vi" xmltv_id="">VTVCab1-GIAITRITV</channel>
-  <channel site="epgshare01.online" site_id="VN1#VTVCab3-THETHAO.TV.vn" lang="vi" xmltv_id="">VTVCab3-THETHAO TV</channel>
-  <channel site="epgshare01.online" site_id="VN1#VTVCab16-BONGDA.TV.vn" lang="vi" xmltv_id="">VTVCab16-BONGDA TV</channel>
-  <channel site="epgshare01.online" site_id="VN1#VTVCAB17.-.YEAH.1.TV.vn" lang="vi" xmltv_id="">VTVCAB17 - YEAH 1 TV</channel>
-  <channel site="epgshare01.online" site_id="VN1#Warner.TV.HD.vn" lang="vi" xmltv_id="">Warner TV HD</channel>
-  <channel site="epgshare01.online" site_id="VN1#YOU.TV.vn" lang="vi" xmltv_id="">YOU TV</channel>
+  <channel site="epgshare01.online" site_id="VN1#VTV.Cần.Thơ.vn" lang="vi" xmltv_id="">VTV Cần Thơ</channel>
+  <channel site="epgshare01.online" site_id="VN1#Warner.HD.vn" lang="vi" xmltv_id="">Warner HD</channel>
+  <channel site="epgshare01.online" site_id="VN1#Woman.vn" lang="vi" xmltv_id="">Woman</channel>
 </channels>
