@@ -1,0 +1,117 @@
+name: Update Default Alpine Version
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: update-alpine-version
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Step 1 - Read current ALPINE_VERSION
+        id: current
+        shell: bash
+        run: |
+          set -euo pipefail
+          file="docker/Dockerfile"
+          current="$(sed -n 's/^ARG[[:space:]]\+ALPINE_VERSION=\(.*\)$/\1/p' "$file" | tr -d '\r' | head -n1)"
+          if [[ -z "${current:-}" ]]; then
+            echo "❌  ARG ALPINE_VERSION not found in $file" >&2
+            exit 1
+          fi
+          echo "current=$current" >> "$GITHUB_OUTPUT"
+          echo "Current: $current"
+
+      - name: Step 2 - Fetch latest Alpine (latest-stable)
+        id: latest
+        shell: bash
+        env:
+          UA: AlpineVersionUpdater (+github.com/${{ github.repository }})
+        run: |
+          set -euo pipefail
+          url="https://dl-cdn.alpinelinux.org/alpine/latest-stable/releases/x86_64/"
+          html="$(curl -fsSL -H "User-Agent: $UA" --retry 3 --retry-delay 2 --retry-connrefused --retry-all-errors "$url")"
+          latest="$(printf '%s' "$html" \
+            | grep -Eo 'alpine-(standard|netboot)-[0-9]+\.[0-9]+(\.[0-9]+)?-x86_64\.(iso|tar\.gz)' \
+            | sed -E 's/.*-([0-9]+\.[0-9]+(\.[0-9]+)?)-.*/\1/' \
+            | sort -V | tail -1)"
+          if [[ -z "${latest:-}" ]]; then
+            echo "❌  Could not determine latest Alpine version" >&2
+            exit 1
+          fi
+          echo "latest=$latest" >> "$GITHUB_OUTPUT"
+          echo "Latest: $latest"
+
+      - name: Step 3 - Update Dockerfile if newer
+        id: update
+        shell: bash
+        run: |
+          set -euo pipefail
+          file="docker/Dockerfile"
+          current='${{ steps.current.outputs.current }}'
+          latest='${{ steps.latest.outputs.latest }}'
+
+          newest="$(printf '%s\n%s\n' "$current" "$latest" | sort -V | tail -1)"
+          if [[ "$newest" == "$current" ]]; then
+            echo "updated=false" >> "$GITHUB_OUTPUT"
+            echo "No update needed."
+            exit 0
+          fi
+
+          echo "Updating $file to Alpine $latest"
+
+          # 1) ARG ALPINE_VERSION=<latest>
+          sed -i.bak -E 's/^(ARG[[:space:]]+ALPINE_VERSION=).*/\1'"$latest"'/' "$file"
+
+          rm -f "${file}.bak"
+          echo "updated=true" >> "$GITHUB_OUTPUT"
+          echo "new_value=$latest" >> "$GITHUB_OUTPUT"
+
+      - name: Step 4 - Commit and push
+        if: steps.update.outputs.updated == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docker/Dockerfile
+          git commit -m "chore(docker): bump ALPINE_VERSION to ${{ steps.update.outputs.new_value }}"
+          git push
+
+      - name: Step 5 — Trigger Docker Build via workflow_dispatch
+        if: steps.update.outputs.updated == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh workflow run docker-build.yml --ref master
+
+
+      - name: Summary
+        if: always()
+        shell: bash
+        run: |
+          {
+            if [[ "${{ steps.update.outputs.updated }}" == "true" ]]; then
+              echo "## ✅ Updated to Alpine ${{ steps.update.outputs.new_value }}."
+              echo "##🧱  Push triggers your Docker build workflow."
+              echo ""
+            else
+              echo "## ℹ️ Already up to date -> Alpine v${{ steps.current.outputs.current }}"
+              echo ""
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
+
