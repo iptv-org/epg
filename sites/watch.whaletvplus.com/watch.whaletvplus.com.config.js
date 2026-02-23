@@ -107,13 +107,14 @@ module.exports = {
         uniqueChannels.set(ch.chlId, {
           lang: (ch.chlLangCode ? ch.chlLangCode.split('-')[0] : 'en'),
           site_id: ch.chlId,
-          name: ch.chlName,
+          name: ch.chlName.trim(),
+          short_title: ch.chlShortTitle,
           // logo: ch.imageIdentifier ? `https://d3b6luslimvglo.cloudfront.net/images/79/rlaxximages/channels-rescaled/icon-white/${ch.imageIdentifier}_white.png` : null
         })
       }
     }
 
-    return Array.from(uniqueChannels.values())
+    return handleDuplicateNames(Array.from(uniqueChannels.values()))
   }
 }
 
@@ -164,4 +165,24 @@ async function fetchProgramDetail(programId) {
   } catch {
     return null
   }
+}
+
+function handleDuplicateNames(channels) {
+  const counts = {}
+  channels.forEach(ch => counts[ch.name] = (counts[ch.name] || 0) + 1)
+
+  channels.forEach(ch => {
+    if (counts[ch.name] > 1) {
+      let suffix = ch.short_title && ch.short_title.split('_').slice(1).join('_')
+      if (suffix) {
+        if (suffix.startsWith('en-') && suffix.length > 3) suffix = suffix.slice(3)
+        ch.name += ` (${suffix.replace(/-/g, '/').toUpperCase()})`
+      } else if (ch.lang) {
+        ch.name += ` (${ch.lang.toUpperCase()})`
+      }
+    }
+    delete ch.short_title
+  })
+
+  return channels
 }
