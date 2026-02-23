@@ -15,37 +15,42 @@ module.exports = {
   url({ channel, date }) {
     return `https://www.syn.is/api/epg/${channel.site_id}/${date.format('YYYY-MM-DD')}`
   },
-  parser: function ({ content }) {
-    let data
-    try {
-      data = JSON.parse(content)
-    } catch (error) {
-      console.error('Error parsing JSON:', error)
-      return []
-    }
+  parser: function ({ content, date }) {
+      let data
+      try {
+        data = JSON.parse(content)
+      } catch (error) {
+        console.error('Error parsing JSON:', error)
+        return []
+      }
 
-    const programs = []
+      if (!Array.isArray(data)) return []
 
-    if (data && Array.isArray(data)) {
-      data.forEach(item => {
-        if (!item) return
-        const start = dayjs.utc(item.upphaf)
-        const stop = start.add(item.slott, 'm')
+      const programs = []
 
-        programs.push({
-          title: item.isltitill,
-          sub_title: item.undirtitill,
-          description: item.lysing,
-          actors: item.adalhlutverk,
-          directors: item.leikstjori,
-          start,
-          stop
+      data
+        .filter(item => item?.upphaf)
+        .forEach(item => {
+          const start = dayjs.utc(item.upphaf)
+
+          if (start.format('YYYY-MM-DD') === date.format('YYYY-MM-DD')) {
+            programs.push({
+              title: item.isltitill,
+              sub_title: item.undirtitill,
+              description: item.lysing,
+              category: item.flokkur,
+              season: item.seria,
+              episode: item.thattur,
+              actors: item.adalhlutverk,
+              directors: item.leikstjori,
+              start,
+              stop: start.add(item.slott, 'm')
+            })
+          }
         })
-      })
-    }
 
-    return programs
-  },
+      return programs
+    },
   async channels() {
     try {
       const response = await axios.get('https://www.syn.is/api/epg?type=schedule')

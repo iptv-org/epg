@@ -20,7 +20,7 @@ it('can generate valid url', () => {
 
 it('can parse response', () => {
   const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'))
-  const result = parser({ content }).map(p => {
+  const result = parser({ content, date }).map(p => {
     p.start = p.start.toISOString()
     p.stop = p.stop.toISOString()
     return p
@@ -41,6 +41,6 @@ it('can parse response', () => {
 })
 
 it('can handle empty guide', () => {
-  const result = parser({ content: '[]' })
+  const result = parser({ content: '[]', date })
   expect(result).toMatchObject([])
 })
