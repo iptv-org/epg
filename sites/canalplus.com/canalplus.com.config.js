@@ -4,6 +4,52 @@ const utc = require('dayjs/plugin/utc')
 
 dayjs.extend(utc)
 
+const paths = {
+    ad: 'cpfra/ad',
+    au: 'cpncl/au',
+    bf: 'cpafr/bf',
+    bi: 'cpafr/bi',
+    bj: 'cpafr/bj',
+    bl: 'cpant/bl',
+    cd: 'cpafr/cd',
+    cf: 'cpafr/cf',
+    cg: 'cpafr/cg',
+    ch: 'cpche',
+    ci: 'cpafr/ci',
+    cm: 'cpafr/cm',
+    cv: 'cpafr/cv',
+    dj: 'cpafr/dj',
+    fr: 'cpfra',
+    ga: 'cpafr/ga',
+    gf: 'cpant/gf',
+    gh: 'cpafr/gh',
+    gm: 'cpafr/gm',
+    gn: 'cpafr/gn',
+    gp: 'cpafr/gp',
+    gw: 'cpafr/gw',
+    ht: 'cpant/ht',
+    mc: 'cpfra/mc',
+    mf: 'cpant/mf',
+    mg: 'cpafr/mg',
+    mg_alt: 'cpmdg',
+    ml: 'cpafr/ml',
+    mq: 'cpant/mq',
+    mr: 'cpafr/mr',
+    mu: 'cpmus/mu',
+    nc: 'cpncl/nc',
+    ne: 'cpafr/ne',
+    pf: 'cppyf/pf',
+    pl: 'cppol',
+    re: 'cpreu/re',
+    rw: 'cpafr/rw',
+    sl: 'cpafr/sl',
+    sn: 'cpafr/sn',
+    td: 'cpafr/td',
+    tg: 'cpafr/tg',
+    wf: 'cpncl/wf',
+    yt: 'cpreu/yt',
+}
+
 const globalHeaders = {
   'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,/;q=0.8',
@@ -69,50 +115,6 @@ module.exports = {
     return programs
   },
   async channels({ country }) {
-    const paths = {
-      ad: 'cpafr/ad',
-      bf: 'cpafr/bf',
-      bi: 'cpafr/bi',
-      bj: 'cpafr/bj',
-      bl: 'cpant/bl',
-      cd: 'cpafr/cd',
-      cf: 'cpafr/cf',
-      cg: 'cpafr/cg',
-      ch: 'cpche',
-      ci: 'cpafr/ci',
-      cm: 'cpafr/cm',
-      cv: 'cpafr/cv',
-      dj: 'cpafr/dj',
-      fr: 'cpfra',
-      it: 'tiita',
-      ga: 'cpafr/ga',
-      gf: 'cpant/gf',
-      gh: 'cpafr/gh',
-      gm: 'cpafr/gm',
-      gn: 'cpafr/gn',
-      gp: 'cpafr/gp',
-      gw: 'cpafr/gw',
-      ht: 'cpant/ht',
-      mf: 'cpant/mf',
-      mg: 'cpafr/mg',
-      mg_alt: 'cpmdg',
-      ml: 'cpafr/ml',
-      mq: 'cpant/mq',
-      mr: 'cpafr/mr',
-      mu: 'cpmus/mu',
-      nc: 'cpncl/nc',
-      ne: 'cpafr/ne',
-      pf: 'cppyf/pf',
-      pl: 'cppol',
-      re: 'cpreu/re',
-      rw: 'cpafr/rw',
-      sl: 'cpafr/sl',
-      sn: 'cpafr/sn',
-      td: 'cpafr/td',
-      tg: 'cpafr/tg',
-      wf: 'cpncl/wf',
-      yt: 'cpreu/yt',
-    }
 
     let channels = []
     const path = paths[country]
@@ -141,57 +143,25 @@ module.exports = {
 async function parseToken(country) {
   // three different ways. for France, query hodor w/ path mycanal
   // for Poland, query hodor w/ path mycanalint
-  // for other countries, query the webpage and wait for tokenCMS to popup in the cookies.
   let url
+  if (country !== 'fr' && country !== 'pl') {
+    // Should work for overseas territories
+    const path = paths[country]
+    const offerZone = path.split('/')[0]
+    const offerLocation = path.split('/')[1]
+    const data = await axios.get(`https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control&offerZone=${offerZone}&offerLocation=${offerLocation}`, { headers: globalHeaders }
+    ).then(r => r.data).catch(console.error)
+    return data.token
+  }
   switch(country) {
+    // Canal + France
     case 'fr':
       url = 'https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control'
       break
+    // Canal + International (Poland)
     case 'pl':
       url = 'https://hodor.canalplus.pro/api/v2/mycanalint/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control'
       break
-    case 'it':
-        url = 'https://hodor.prod.front.tim.cptech.pro/api/v2/timvision/authenticate.json/webapp/6.0'
-        break
-    case 'ad':
-    case 'bf':
-    case 'bi':
-    case 'bj':
-    case 'bl':
-    case 'cd':
-    case 'cf':
-    case 'cg':
-    case 'ci':
-    case 'cm':
-    case 'cv':
-    case 'dj':
-    case 'ga':
-    case 'gf':
-    case 'gh':
-    case 'gm':
-    case 'gn':
-    case 'gp':
-    case 'gw':
-    case 'ht':
-    case 'mf':
-    case 'mg':
-    case 'mg_alt':
-    case 'ml':
-    case 'mq':
-    case 'mr':
-    case 'mu':
-    case 'nc':
-    case 'ne':
-    case 'pf':
-    case 're':
-    case 'rw':
-    case 'sl':
-    case 'sn':
-    case 'td':
-    case 'tg':
-    case 'wf':
-    case 'yt':
-      url = `https://hodor.canalplus.pro/api/v2/oneshopafr/authenticate.json/webapp/2.0?language=fr&offerLocation=${country.toUpperCase()}&offerZone=cpafr&v=1`
   }
   const tokenData = await axios.get(
     `${url}`,
