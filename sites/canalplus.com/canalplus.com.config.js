@@ -28,9 +28,8 @@ module.exports = {
   site: 'canalplus.com',
   days: 2,
   url: async function ({ channel, date }) {
-    if(canalToken === null) canalToken = await parseToken()
-
     const [region, site_id] = channel.site_id.split('#')
+    if(canalToken === null) canalToken = await parseToken(region || 'fr')
     const path = region === 'pl' ? 'mycanalint' : 'mycanal'
     const diff = date.diff(dayjs.utc().startOf('d'), 'd')
 
@@ -140,14 +139,62 @@ module.exports = {
 }
 
 async function parseToken(country) {
-  let path
-  if(country === 'pl') {
-    path = 'mycanalint'
-  } else {
-    path = 'mycanal'
+  // three different ways. for France, query hodor w/ path mycanal
+  // for Poland, query hodor w/ path mycanalint
+  // for other countries, query the webpage and wait for tokenCMS to popup in the cookies.
+  let url
+  switch(country) {
+    case 'fr':
+      url = 'https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control'
+      break
+    case 'pl':
+      url = 'https://hodor.canalplus.pro/api/v2/mycanalint/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control'
+      break
+    case 'it':
+        url = 'https://hodor.prod.front.tim.cptech.pro/api/v2/timvision/authenticate.json/webapp/6.0'
+        break
+    case 'ad':
+    case 'bf':
+    case 'bi':
+    case 'bj':
+    case 'bl':
+    case 'cd':
+    case 'cf':
+    case 'cg':
+    case 'ci':
+    case 'cm':
+    case 'cv':
+    case 'dj':
+    case 'ga':
+    case 'gf':
+    case 'gh':
+    case 'gm':
+    case 'gn':
+    case 'gp':
+    case 'gw':
+    case 'ht':
+    case 'mf':
+    case 'mg':
+    case 'mg_alt':
+    case 'ml':
+    case 'mq':
+    case 'mr':
+    case 'mu':
+    case 'nc':
+    case 'ne':
+    case 'pf':
+    case 're':
+    case 'rw':
+    case 'sl':
+    case 'sn':
+    case 'td':
+    case 'tg':
+    case 'wf':
+    case 'yt':
+      url = `https://hodor.canalplus.pro/api/v2/oneshopafr/authenticate.json/webapp/2.0?language=fr&offerLocation=${country.toUpperCase()}&offerZone=cpafr&v=1`
   }
   const tokenData = await axios.get(
-    `https://hodor.canalplus.pro/api/v2/${path}/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control`,
+    `${url}`,
     {
       headers: globalHeaders,
       timeout: 5000
