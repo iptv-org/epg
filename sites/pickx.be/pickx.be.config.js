@@ -34,7 +34,7 @@ module.exports = {
             ? item.program.translatedCategory[channel.lang]
             : item.program.category.split('.')[1],
           image: item.program.posterFileName
-            ? `https://experience-cache.proximustv.be/posterserver/poster/EPG/w-166_h-110/${item.program.posterFileName}`
+            ? `https://experience-cache.cdi.streaming.proximustv.be/posterserver/poster/EPG/${item.program.posterFileName}`
             : null,
           season: item.program.seasonNumber,
           episode: item.program.episodeNumber,
