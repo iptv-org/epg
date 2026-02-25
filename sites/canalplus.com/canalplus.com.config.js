@@ -15,10 +15,12 @@ const paths = {
     cf: 'cpafr/cf',
     cg: 'cpafr/cg',
     ch: 'cpche',
+    ch_de: 'cpchd',
     ci: 'cpafr/ci',
     cm: 'cpafr/cm',
     cv: 'cpafr/cv',
     dj: 'cpafr/dj',
+    et: 'cpeth/et',
     fr: 'cpfra',
     ga: 'cpafr/ga',
     gf: 'cpant/gf',
@@ -28,10 +30,10 @@ const paths = {
     gp: 'cpafr/gp',
     gw: 'cpafr/gw',
     ht: 'cpant/ht',
+    km: 'cpafr/km',
     mc: 'cpfra/mc',
     mf: 'cpant/mf',
-    //mg: 'cpafr/mg', doesn't seem to be used nowadays, follow-up cpmdg/mg
-    mg_alt: 'cpmdg/mg',
+    mg: 'cpmdg/mg',
     ml: 'cpafr/ml',
     mq: 'cpant/mq',
     mr: 'cpafr/mr',
@@ -141,7 +143,7 @@ module.exports = {
 }
 
 async function parseToken(country) {
-  // three different ways. for France, query hodor w/ path mycanal
+  // for France, query hodor w/ path mycanal
   // for Poland, query hodor w/ path mycanalint
   let url
   if (country !== 'fr' && country !== 'pl') {
