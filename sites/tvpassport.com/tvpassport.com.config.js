@@ -133,11 +133,11 @@ function parseTitle($item) {
 }
 
 function parseSubTitle($item) {
-  return $item('*').data('episodetitle').toString() || null
+  return $item('*').data('episodetitle')?.toString() || null
 }
 
 function parseYear($item) {
-  return $item('*').data('year').toString() || null
+  return $item('*').data('year')?.toString() || null
 }
 
 function parseCategory($item) {
@@ -200,3 +200,4 @@ function parseCurrentTimezone(content) {
 
   return $('#timezone_selector').val()
 }
+
