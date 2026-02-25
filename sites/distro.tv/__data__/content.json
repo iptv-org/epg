@@ -1,0 +1,734 @@
+{
+    "version": "1.0",
+    "env": {
+        "st": "2026-02-10 10:24:59"
+    },
+    "epg": {
+        "45143": {
+    "title": "Euronews",
+    "description": "Europe’s leading international news channel. Its mission is to empower people to form their own opinion. Euronews is impartial with a diversity of viewpoints.",
+    "slots": [
+        {
+            "title": "News",
+            "description": "The leading news stories of the moment.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-10 10:17:05",
+            "end": "2026-02-10 10:30:00"
+        },
+        {
+            "title": "Euronews Now",
+            "description": "Breaking News. In depth analysis on the biggest stories making headlines in Europe and across the world.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-10 10:30:00",
+            "end": "2026-02-10 10:46:00"
+        },
+        {
+            "title": "News",
+            "description": "The leading news stories of the moment.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-10 10:46:00",
+            "end": "2026-02-10 11:00:00"
+        },
+        {
+            "title": "Euronews Now",
+            "description": "Breaking News. In depth analysis on the biggest stories making headlines in Europe and across the world.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-10 11:00:00",
+            "end": "2026-02-10 11:30:05"
+        },
+        {
+            "title": "Euronews Now",
+            "description": "Breaking News. In depth analysis on the biggest stories making headlines in Europe and across the world.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-10 11:30:05",
+            "end": "2026-02-10 12:15:30"
+        },
+        {
+            "title": "Euronews Now",
+            "description": "Breaking News. In depth analysis on the biggest stories making headlines in Europe and across the world.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-10 12:15:30",
+            "end": "2026-02-10 13:00:00"
+        },
+        {
+            "title": "Euronews Now",
+            "description": "Breaking News. In depth analysis on the biggest stories making headlines in Europe and across the world.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-10 13:00:00",
+            "end": "2026-02-10 13:30:05"
+        },
+        {
+            "title": "Euronews Now",
+            "description": "Breaking News. In depth analysis on the biggest stories making headlines in Europe and across the world.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-10 13:30:05",
+            "end": "2026-02-10 14:15:30"
+        },
+        {
+            "title": "Euronews Now",
+            "description": "Breaking News. In depth analysis on the biggest stories making headlines in Europe and across the world.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-10 14:15:30",
+            "end": "2026-02-10 14:45:55"
+        },
+        {
+            "title": "News",
+            "description": "The leading news stories of the moment.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-10 14:45:55",
+            "end": "2026-02-10 15:00:00"
+        },
+        {
+            "title": "The European debrief",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-10 15:00:00",
+            "end": "2026-02-10 15:18:40"
+        },
+        {
+            "title": "News",
+            "description": "The leading news stories of the moment.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-10 15:18:40",
+            "end": "2026-02-10 15:30:00"
+        },
+        {
+            "title": "The European debrief",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-10 15:30:00",
+            "end": "2026-02-10 16:00:00"
+        },
+        {
+            "title": "The European debrief",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-10 16:00:00",
+            "end": "2026-02-10 16:30:05"
+        },
+        {
+            "title": "The European debrief",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-10 16:30:05",
+            "end": "2026-02-10 17:15:30"
+        },
+        {
+            "title": "The European debrief",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-10 17:15:30",
+            "end": "2026-02-10 18:00:00"
+        },
+        {
+            "title": "The European debrief",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-10 18:00:00",
+            "end": "2026-02-10 18:30:05"
+        },
+        {
+            "title": "The European debrief",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-10 18:30:05",
+            "end": "2026-02-10 19:14:30"
+        },
+        {
+            "title": "The European debrief",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-10 19:14:30",
+            "end": "2026-02-10 19:30:55"
+        },
+        {
+            "title": "News",
+            "description": "The leading news stories of the moment.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-10 19:30:55",
+            "end": "2026-02-10 19:45:00"
+        },
+        {
+            "title": "The European debrief",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-10 19:45:00",
+            "end": "2026-02-10 20:15:30"
+        },
+        {
+            "title": "The European debrief",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-10 20:15:30",
+            "end": "2026-02-10 21:00:00"
+        },
+        {
+            "title": "The European debrief",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-10 21:00:00",
+            "end": "2026-02-10 21:31:15"
+        },
+        {
+            "title": "News",
+            "description": "The leading news stories of the moment.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-10 21:31:15",
+            "end": "2026-02-10 22:00:00"
+        },
+        {
+            "title": "The European debrief",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-10 22:00:00",
+            "end": "2026-02-10 22:30:05"
+        },
+        {
+            "title": "The European debrief",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-10 22:30:05",
+            "end": "2026-02-10 23:15:30"
+        },
+        {
+            "title": "The European debrief",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-10 23:15:30",
+            "end": "2026-02-11 00:00:00"
+        },
+        {
+            "title": "The European debrief",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-11 00:00:00",
+            "end": "2026-02-11 00:30:05"
+        },
+        {
+            "title": "The European debrief",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-11 00:30:05",
+            "end": "2026-02-11 01:15:30"
+        },
+        {
+            "title": "The European debrief",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-11 01:15:30",
+            "end": "2026-02-11 02:00:00"
+        },
+        {
+            "title": "The European debrief",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-11 02:00:00",
+            "end": "2026-02-11 02:30:05"
+        },
+        {
+            "title": "The European debrief",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-11 02:30:05",
+            "end": "2026-02-11 03:15:30"
+        },
+        {
+            "title": "The European debrief",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-11 03:15:30",
+            "end": "2026-02-11 04:00:00"
+        },
+        {
+            "title": "The European debrief",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-11 04:00:00",
+            "end": "2026-02-11 04:30:05"
+        },
+        {
+            "title": "The European debrief",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-11 04:30:05",
+            "end": "2026-02-11 05:00:00"
+        },
+        {
+            "title": "Wake up Europe",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-11 05:00:00",
+            "end": "2026-02-11 05:30:05"
+        },
+        {
+            "title": "Wake up Europe",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-11 05:30:05",
+            "end": "2026-02-11 06:15:30"
+        },
+        {
+            "title": "Wake up Europe",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-11 06:15:30",
+            "end": "2026-02-11 07:00:00"
+        },
+        {
+            "title": "News",
+            "description": "The leading news stories of the moment.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-11 07:00:00",
+            "end": "2026-02-11 07:30:00"
+        },
+        {
+            "title": "Wake up Europe",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-11 07:30:00",
+            "end": "2026-02-11 08:00:00"
+        },
+        {
+            "title": "News",
+            "description": "The leading news stories of the moment.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-11 08:00:00",
+            "end": "2026-02-11 08:30:00"
+        },
+        {
+            "title": "Wake up Europe",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-11 08:30:00",
+            "end": "2026-02-11 09:00:00"
+        },
+        {
+            "title": "News",
+            "description": "The leading news stories of the moment.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-11 09:00:00",
+            "end": "2026-02-11 09:30:00"
+        },
+        {
+            "title": "Euronews Now",
+            "description": "Breaking News. In depth analysis on the biggest stories making headlines in Europe and across the world.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-11 09:30:00",
+            "end": "2026-02-11 10:00:00"
+        },
+        {
+            "title": "Euronews Now",
+            "description": "Breaking News. In depth analysis on the biggest stories making headlines in Europe and across the world.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-11 10:00:00",
+            "end": "2026-02-11 10:31:15"
+        },
+        {
+            "title": "News",
+            "description": "The leading news stories of the moment.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-11 10:31:15",
+            "end": "2026-02-11 11:00:00"
+        },
+        {
+            "title": "Euronews Now",
+            "description": "Breaking News. In depth analysis on the biggest stories making headlines in Europe and across the world.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-11 11:00:00",
+            "end": "2026-02-11 11:30:05"
+        },
+        {
+            "title": "Euronews Now",
+            "description": "Breaking News. In depth analysis on the biggest stories making headlines in Europe and across the world.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-11 11:30:05",
+            "end": "2026-02-11 11:46:30"
+        },
+        {
+            "title": "News",
+            "description": "The leading news stories of the moment.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-11 11:46:30",
+            "end": "2026-02-11 12:00:00"
+        },
+        {
+            "title": "Euronews Now",
+            "description": "Breaking News. In depth analysis on the biggest stories making headlines in Europe and across the world.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-11 12:00:00",
+            "end": "2026-02-11 12:30:05"
+        },
+        {
+            "title": "Euronews Now",
+            "description": "Breaking News. In depth analysis on the biggest stories making headlines in Europe and across the world.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-11 12:30:05",
+            "end": "2026-02-11 13:15:30"
+        },
+        {
+            "title": "Euronews Now",
+            "description": "Breaking News. In depth analysis on the biggest stories making headlines in Europe and across the world.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-11 13:15:30",
+            "end": "2026-02-11 14:00:00"
+        },
+        {
+            "title": "Euronews Now",
+            "description": "Breaking News. In depth analysis on the biggest stories making headlines in Europe and across the world.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-11 14:00:00",
+            "end": "2026-02-11 14:31:00"
+        },
+        {
+            "title": "News",
+            "description": "The leading news stories of the moment.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-11 14:31:00",
+            "end": "2026-02-11 15:00:00"
+        },
+        {
+            "title": "The European debrief",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-11 15:00:00",
+            "end": "2026-02-11 15:30:00"
+        },
+        {
+            "title": "The European debrief",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-11 15:30:00",
+            "end": "2026-02-11 16:00:00"
+        },
+        {
+            "title": "The European debrief",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-11 16:00:00",
+            "end": "2026-02-11 16:30:05"
+        },
+        {
+            "title": "The European debrief",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-11 16:30:05",
+            "end": "2026-02-11 17:15:30"
+        },
+        {
+            "title": "The European debrief",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-11 17:15:30",
+            "end": "2026-02-11 17:48:25"
+        },
+        {
+            "title": "News",
+            "description": "The leading news stories of the moment.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-11 17:48:25",
+            "end": "2026-02-11 18:00:00"
+        },
+        {
+            "title": "The European debrief",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-11 18:00:00",
+            "end": "2026-02-11 18:30:05"
+        },
+        {
+            "title": "The European debrief",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-11 18:30:05",
+            "end": "2026-02-11 19:14:30"
+        },
+        {
+            "title": "The European debrief",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-11 19:14:30",
+            "end": "2026-02-11 19:30:51"
+        },
+        {
+            "title": "News",
+            "description": "The leading news stories of the moment.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-11 19:30:51",
+            "end": "2026-02-11 20:00:00"
+        },
+        {
+            "title": "The European debrief",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-11 20:00:00",
+            "end": "2026-02-11 20:30:05"
+        },
+        {
+            "title": "The European debrief",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-11 20:30:05",
+            "end": "2026-02-11 21:15:30"
+        },
+        {
+            "title": "The European debrief",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-11 21:15:30",
+            "end": "2026-02-11 22:00:00"
+        },
+        {
+            "title": "The European debrief",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-11 22:00:00",
+            "end": "2026-02-11 22:29:55"
+        },
+        {
+            "title": "News",
+            "description": "The leading news stories of the moment.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-11 22:29:55",
+            "end": "2026-02-11 23:00:00"
+        },
+        {
+            "title": "The European debrief",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-11 23:00:00",
+            "end": "2026-02-11 23:30:05"
+        },
+        {
+            "title": "The European debrief",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-11 23:30:05",
+            "end": "2026-02-11 23:46:15"
+        },
+        {
+            "title": "News",
+            "description": "The leading news stories of the moment.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-11 23:46:15",
+            "end": "2026-02-12 00:00:00"
+        },
+        {
+            "title": "The European debrief",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-12 00:00:00",
+            "end": "2026-02-12 00:31:30"
+        },
+        {
+            "title": "News",
+            "description": "The leading news stories of the moment.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-12 00:31:30",
+            "end": "2026-02-12 01:00:00"
+        },
+        {
+            "title": "The European debrief",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-12 01:00:00",
+            "end": "2026-02-12 01:30:05"
+        },
+        {
+            "title": "The European debrief",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-12 01:30:05",
+            "end": "2026-02-12 02:14:30"
+        },
+        {
+            "title": "The European debrief",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-12 02:14:30",
+            "end": "2026-02-12 03:00:00"
+        },
+        {
+            "title": "The European debrief",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-12 03:00:00",
+            "end": "2026-02-12 03:30:05"
+        },
+        {
+            "title": "The European debrief",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-12 03:30:05",
+            "end": "2026-02-12 04:15:30"
+        },
+        {
+            "title": "The European debrief",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-12 04:15:30",
+            "end": "2026-02-12 05:00:00"
+        },
+        {
+            "title": "Wake up Europe",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-12 05:00:00",
+            "end": "2026-02-12 05:30:05"
+        },
+        {
+            "title": "Wake up Europe",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-12 05:30:05",
+            "end": "2026-02-12 06:15:30"
+        },
+        {
+            "title": "Wake up Europe",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-12 06:15:30",
+            "end": "2026-02-12 07:00:00"
+        },
+        {
+            "title": "News",
+            "description": "The leading news stories of the moment.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-12 07:00:00",
+            "end": "2026-02-12 07:30:00"
+        },
+        {
+            "title": "Wake up Europe",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-12 07:30:00",
+            "end": "2026-02-12 08:00:00"
+        },
+        {
+            "title": "News",
+            "description": "The leading news stories of the moment.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-12 08:00:00",
+            "end": "2026-02-12 08:30:00"
+        },
+        {
+            "title": "Wake up Europe",
+            "description": "Live headlines,breaking news, analysis and interviews from Europe's News Centre.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-12 08:30:00",
+            "end": "2026-02-12 09:00:00"
+        },
+        {
+            "title": "News",
+            "description": "The leading news stories of the moment.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-12 09:00:00",
+            "end": "2026-02-12 09:30:00"
+        },
+        {
+            "title": "Euronews Now",
+            "description": "Breaking News. In depth analysis on the biggest stories making headlines in Europe and across the world.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-12 09:30:00",
+            "end": "2026-02-12 10:00:00"
+        },
+        {
+            "title": "Euronews Now",
+            "description": "Breaking News. In depth analysis on the biggest stories making headlines in Europe and across the world.",
+            "rating": null,
+            "img_thumbh": null,
+            "start": "2026-02-12 10:00:00",
+            "end": "2026-02-12 10:30:00"
+        }
+    ]
+}
+    }
+}
