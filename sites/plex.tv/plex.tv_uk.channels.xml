@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="plex.tv" site_id="6245efe9f137de43897ea1ae" lang="de" xmltv_id="">Euronews Deutsch</channel>
+  <channel site="plex.tv" site_id="6245efe9f137de43897ea1ae" lang="de" xmltv_id="EuronewsGerman.fr@SD">Euronews Deutsch</channel>
   <channel site="plex.tv" site_id="686450561407335ea0f95542" lang="en" xmltv_id="">A Haunting</channel>
   <channel site="plex.tv" site_id="6533e433bd43e1c8b1865156" lang="en" xmltv_id="AdventureEarth.de@SD">Adventure Earth</channel>
+  <channel site="plex.tv" site_id="697144cdbde579fb71262405" lang="en" xmltv_id="">All My Children</channel>
   <channel site="plex.tv" site_id="671ab65359ad9a223f0a5dc3" lang="en" xmltv_id="AmericanCrimeChannel.pl@Poland">American Crime Channel</channel>
   <channel site="plex.tv" site_id="68db63942be6c4ceb7947b98" lang="en" xmltv_id="Andromeda.us@UK">Andromeda</channel>
   <channel site="plex.tv" site_id="67f99e35bf750bd4ca333ddf" lang="en" xmltv_id="AntiquesRoadTrip.us@SD">Antiques Road Trip</channel>
@@ -21,15 +22,14 @@
   <channel site="plex.tv" site_id="66c3d509d263903b4c6d9920" lang="en" xmltv_id="">DEAL MASTERS</channel>
   <channel site="plex.tv" site_id="66855a2a714fe577eb7db920" lang="en" xmltv_id="DealorNoDeal.us@SD">Deal Or No Deal</channel>
   <channel site="plex.tv" site_id="693ca84258076a970420f58f" lang="en" xmltv_id="">Demand Drama</channel>
-  <channel site="plex.tv" site_id="614e286b2bac097ffd6fd6ab" lang="en" xmltv_id="">Documentary+</channel>
+  <channel site="plex.tv" site_id="614e286b2bac097ffd6fd6ab" lang="en" xmltv_id="DocumentaryPlus.us@International">Documentary+</channel>
   <channel site="plex.tv" site_id="6920db3650fe592fd6d5b7d5" lang="en" xmltv_id="">Dragons’ Den</channel>
-  <channel site="plex.tv" site_id="6216723e2c2627c068e73ad4" lang="en" xmltv_id="DungeonTV.us@SD">Dungeon TV</channel>
   <channel site="plex.tv" site_id="618ab2f275913b296fbe56dd" lang="en" xmltv_id="">Eddie&apos;s Wonderland</channel>
   <channel site="plex.tv" site_id="66a2db3d94b6a49cb5054d79" lang="en" xmltv_id="">Escape to the Country</channel>
   <channel site="plex.tv" site_id="6888e66c57acf2ceb6121ea8" lang="en" xmltv_id="">Evidence of Evil</channel>
   <channel site="plex.tv" site_id="5f170d62b898490041b4936e" lang="en" xmltv_id="FailArmy.us@UK">FailArmy</channel>
   <channel site="plex.tv" site_id="66628c68346b86608532dbcf" lang="en" xmltv_id="FIFAPlus.uk@English">FIFA+</channel>
-  <channel site="plex.tv" site_id="65ec577b07060fb76a3916bf" lang="en" xmltv_id="">FilmRise Anime</channel>
+  <channel site="plex.tv" site_id="65ec577b07060fb76a3916bf" lang="en" xmltv_id="FilmRiseAnime.us@SD">FilmRise Anime</channel>
   <channel site="plex.tv" site_id="65e9d0ad8fe4ef7053c3c86b" lang="en" xmltv_id="FilmRiseFreeMovies.us@SD">FilmRise Free Movies</channel>
   <channel site="plex.tv" site_id="65e9d0ad8fe4ef7053c3c86e" lang="en" xmltv_id="">FilmRise Free Series</channel>
   <channel site="plex.tv" site_id="62ffc5cfa6cad6f2991745c2" lang="en" xmltv_id="FUELTV.at@SD">FUEL TV</channel>
@@ -40,7 +40,7 @@
   <channel site="plex.tv" site_id="68645d7719cc2e163e38d163" lang="en" xmltv_id="">Gone Fishing</channel>
   <channel site="plex.tv" site_id="60a9d105d162b9002d05a60c" lang="en" xmltv_id="GoUSATV.us@SD">GoUSA TV</channel>
   <channel site="plex.tv" site_id="664e9d95e8824b0c34762787" lang="en" xmltv_id="GREATmovies.uk@UK">GREAT! movies</channel>
-  <channel site="plex.tv" site_id="66743f1cc79bcedcc731019f" lang="en" xmltv_id="">Great! Mystery</channel>
+  <channel site="plex.tv" site_id="66743f1cc79bcedcc731019f" lang="en" xmltv_id="GREATmystery.uk@SD">Great! Mystery</channel>
   <channel site="plex.tv" site_id="6648d6f0a16b3a50177f4dc0" lang="en" xmltv_id="GREATromance.uk@UK">GREAT! romance</channel>
   <channel site="plex.tv" site_id="65847c56d60830ce4d4f303a" lang="en" xmltv_id="">Hardcore Pawn</channel>
   <channel site="plex.tv" site_id="682dfd3947a628d2f56948cc" lang="en" xmltv_id="HauntTV.us@SD">HauntTV</channel>
@@ -53,6 +53,7 @@
   <channel site="plex.tv" site_id="66c3d1abd263903b4c6d991e" lang="en" xmltv_id="InsideCrime.us@UK">INSIDE CRIME</channel>
   <channel site="plex.tv" site_id="691622b73aa533a147c9a049" lang="en" xmltv_id="">Inside Outside</channel>
   <channel site="plex.tv" site_id="64d7923c950759afa2523eef" lang="en" xmltv_id="IronChef.us@UK">Iron Chef</channel>
+  <channel site="plex.tv" site_id="67c2496d45ae99120c071588" lang="en" xmltv_id="">Life Down Under</channel>
   <channel site="plex.tv" site_id="666e1bc2d91d13cb4c8cbb6f" lang="en" xmltv_id="">Life+Style</channel>
   <channel site="plex.tv" site_id="682dfe1b47a628d2f56948ce" lang="en" xmltv_id="">Love Pets</channel>
   <channel site="plex.tv" site_id="650b5ea1b2413c46bf584d84" lang="en" xmltv_id="">MagellanTV Wildest</channel>
@@ -61,7 +62,7 @@
   <channel site="plex.tv" site_id="692719bf5d6063fc5b96b699" lang="en" xmltv_id="MostHaunted.us@UK">Most Haunted</channel>
   <channel site="plex.tv" site_id="606cbf167e9765002c2a6131" lang="en" xmltv_id="MovieSphere.us@SD">MOVIESPHERE</channel>
   <channel site="plex.tv" site_id="68db66b2475aa6420c85f22a" lang="en" xmltv_id="MutantX.us@UK">Mutant X</channel>
-  <channel site="plex.tv" site_id="66c3cd45d263903b4c6d991c" lang="en" xmltv_id="">MYSTERY TV</channel>
+  <channel site="plex.tv" site_id="66c3cd45d263903b4c6d991c" lang="en" xmltv_id="MysteryTV.us@UK">MYSTERY TV</channel>
   <channel site="plex.tv" site_id="65cd278697fb4731f54ecae5" lang="en" xmltv_id="Mythbusters.us@UK">Mythbusters</channel>
   <channel site="plex.tv" site_id="6448b4e8af92c31f4a190c25" lang="en" xmltv_id="">MyTime Movie Network</channel>
   <channel site="plex.tv" site_id="66bfb2e6144c201b8b61c10f" lang="en" xmltv_id="NewsWorld.pl@FAST">NewsWorld</channel>
@@ -71,10 +72,10 @@
   <channel site="plex.tv" site_id="66469eecdad45e1759c1c06b" lang="en" xmltv_id="">PBS Science</channel>
   <channel site="plex.tv" site_id="66fbfc8ebde73c589ab2af40" lang="en" xmltv_id="">PLL Network</channel>
   <channel site="plex.tv" site_id="671ab1dc79fce66281154344" lang="en" xmltv_id="">Pointless</channel>
-  <channel site="plex.tv" site_id="664e9f11e8824b0c34762789" lang="en" xmltv_id="">POP</channel>
+  <channel site="plex.tv" site_id="664e9f11e8824b0c34762789" lang="en" xmltv_id="Pop.uk@SD">POP</channel>
   <channel site="plex.tv" site_id="665e48c419c3bb1f606d86ab" lang="en" xmltv_id="PopUp.uk@SD">POP UP</channel>
   <channel site="plex.tv" site_id="64e44123200cd2f67473e0d8" lang="en" xmltv_id="">Popflix</channel>
-  <channel site="plex.tv" site_id="62d7f68fb19cbf65dc7bef7c" lang="en" xmltv_id="">Qello Concerts</channel>
+  <channel site="plex.tv" site_id="62d7f68fb19cbf65dc7bef7c" lang="en" xmltv_id="QelloConcertsbyStingray.ca@SD">Qello Concerts</channel>
   <channel site="plex.tv" site_id="5f90ebc726350a002d40b136" lang="en" xmltv_id="RACERInternational.pl@FAST">RACER International</channel>
   <channel site="plex.tv" site_id="636d9edc4ea1109a7d205a72" lang="en" xmltv_id="">Real Crime</channel>
   <channel site="plex.tv" site_id="68893b831b1a8359c63cf6ee" lang="en" xmltv_id="">Real Crime Uncovered</channel>
@@ -85,6 +86,7 @@
   <channel site="plex.tv" site_id="5f12332eeca6a20040b328e5" lang="en" xmltv_id="SKWAD.us@SD">SKWAD</channel>
   <channel site="plex.tv" site_id="639b8d803f4612cc150a5721" lang="en" xmltv_id="">Smurf TV</channel>
   <channel site="plex.tv" site_id="693cb60258076a970420f595" lang="en" xmltv_id="">So... Real</channel>
+  <channel site="plex.tv" site_id="69864df9f937c5afe5a060d6" lang="en" xmltv_id="">soap</channel>
   <channel site="plex.tv" site_id="692111d750fe592fd6d5b7da" lang="en" xmltv_id="">Sony One | Action Hits</channel>
   <channel site="plex.tv" site_id="6920d9db5028288613484a78" lang="en" xmltv_id="">Sony One | Comedy Hits</channel>
   <channel site="plex.tv" site_id="6920e0045cbe620c1f9b6bad" lang="en" xmltv_id="">Sony One | Comedy TV</channel>
@@ -93,7 +95,7 @@
   <channel site="plex.tv" site_id="673d2839d2bcb259fd6b29b0" lang="en" xmltv_id="">Sparkle Movies - Light &amp; Love</channel>
   <channel site="plex.tv" site_id="68645e804051ba2be659baac" lang="en" xmltv_id="">Stars Central</channel>
   <channel site="plex.tv" site_id="62d7f6904d0067dd4d60d0de" lang="en" xmltv_id="StingrayKaraoke.ca@SD">Stingray Karaoke</channel>
-  <channel site="plex.tv" site_id="62fbf36c1567211fdb82e920" lang="en" xmltv_id="">Stingray Naturescape</channel>
+  <channel site="plex.tv" site_id="62fbf36c1567211fdb82e920" lang="en" xmltv_id="StingrayNaturescape.ca@SD">Stingray Naturescape</channel>
   <channel site="plex.tv" site_id="65e89d8b982674772f6f1a55" lang="en" xmltv_id="">Survivorman on Plex</channel>
   <channel site="plex.tv" site_id="66311c41707bae70101ec755" lang="en" xmltv_id="Tastemade.us@UK">Tastemade</channel>
   <channel site="plex.tv" site_id="5f123330eca6a20040b328e8" lang="en" xmltv_id="TGJunior.us@SD">TG Junior</channel>
@@ -103,7 +105,7 @@
   <channel site="plex.tv" site_id="69012169563fefa22b294af0" lang="en" xmltv_id="">Timber Kings</channel>
   <channel site="plex.tv" site_id="664e9fade8824b0c3476278b" lang="en" xmltv_id="TinyPop.uk@SD">Tiny Pop</channel>
   <channel site="plex.tv" site_id="66be8cd4871131188099527e" lang="en" xmltv_id="">TRACE UK</channel>
-  <channel site="plex.tv" site_id="64e43b37200cd2f67473e0d4" lang="en" xmltv_id="">True Crime Now</channel>
+  <channel site="plex.tv" site_id="64e43b37200cd2f67473e0d4" lang="en" xmltv_id="TrueCrimeNow.us@SD">True Crime Now</channel>
   <channel site="plex.tv" site_id="6888e72c053adc1e3a34e40e" lang="en" xmltv_id="TrueCrime.uk@SD">True Crime UK</channel>
   <channel site="plex.tv" site_id="66ccae1a78822c7edc4b6df1" lang="en" xmltv_id="">UFC</channel>
   <channel site="plex.tv" site_id="67f45ef989089d917e1b1634" lang="en" xmltv_id="Unbeaten.us@SD">Unbeaten</channel>
@@ -115,13 +117,15 @@
   <channel site="plex.tv" site_id="6920d8b950fe592fd6d5b7d1" lang="en" xmltv_id="">Who Wants to Be a Millionaire</channel>
   <channel site="plex.tv" site_id="66c3d38a0c96eae5ef9a7cd4" lang="en" xmltv_id="">WORLD WAR TV</channel>
   <channel site="plex.tv" site_id="621670feab2095ca85353ad4" lang="en" xmltv_id="XFCTV.us@SD">XFC TV</channel>
-  <channel site="plex.tv" site_id="68965bb7e4a79cd0c3f845d8" lang="en" xmltv_id="">XITE Hits</channel>
+  <channel site="plex.tv" site_id="68965bb7e4a79cd0c3f845d8" lang="en" xmltv_id="XITEHits.nl@UK">XITE Hits</channel>
   <channel site="plex.tv" site_id="64b1da0f46d96b0c91bb1a40" lang="en" xmltv_id="">Yu-Gi-Oh!</channel>
   <channel site="plex.tv" site_id="66fd3e25216b603e031725fe" lang="en" xmltv_id="">ZenLIFE by Stingray</channel>
-  <channel site="plex.tv" site_id="60089d97f682a3002c34829d" lang="es" xmltv_id="">Euronews Español</channel>
+  <channel site="plex.tv" site_id="60089d97f682a3002c34829d" lang="es" xmltv_id="EuronewsSpanish.fr@SD">Euronews Español</channel>
   <channel site="plex.tv" site_id="5eea605574085f0040ddc794" lang="es" xmltv_id="ToonGoggles.us@SD">Toon Goggles</channel>
   <channel site="plex.tv" site_id="6245f06793b402a3d1097787" lang="fr" xmltv_id="AfricanewsFrench.fr@SD">Euronews Français</channel>
   <channel site="plex.tv" site_id="68b74890b5b437bf872b6b72" lang="fr" xmltv_id="">TV5MONDE Chefs</channel>
-  <channel site="plex.tv" site_id="6245f13093b402a3d1097789" lang="it" xmltv_id="">Euronews Italiano</channel>
+  <channel site="plex.tv" site_id="68a799722895f21006e758e4" lang="fr" xmltv_id="TV5MondeInfo.fr@SD">TV5MONDE Info</channel>
+  <channel site="plex.tv" site_id="68b74a235dc5413c905efd62" lang="fr" xmltv_id="">TV5MONDE Voyage</channel>
+  <channel site="plex.tv" site_id="6245f13093b402a3d1097789" lang="it" xmltv_id="EuronewsItalian.fr@SD">Euronews Italiano</channel>
   <channel site="plex.tv" site_id="6245cd154f27f4e9c76d67e9" lang="pt" xmltv_id="EuronewsPortuguese.fr@SD">Euronews Portuguese</channel>
 </channels>
