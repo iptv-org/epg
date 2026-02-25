@@ -30,8 +30,8 @@ const paths = {
     ht: 'cpant/ht',
     mc: 'cpfra/mc',
     mf: 'cpant/mf',
-    mg: 'cpafr/mg',
-    mg_alt: 'cpmdg',
+    //mg: 'cpafr/mg', doesn't seem to be used nowadays, follow-up cpmdg/mg
+    mg_alt: 'cpmdg/mg',
     ml: 'cpafr/ml',
     mq: 'cpant/mq',
     mr: 'cpafr/mr',
