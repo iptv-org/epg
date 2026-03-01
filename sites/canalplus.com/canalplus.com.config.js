@@ -70,18 +70,18 @@ const globalHeaders = {
   'upgrade-insecure-requests': '1'
 }
 
-let canalToken = null
+let canalToken = {}
 
 module.exports = {
   site: 'canalplus.com',
   days: 2,
   url: async function ({ channel, date }) {
     const [region, site_id] = channel.site_id.split('#')
-    if(canalToken === null) canalToken = await parseToken(region || 'fr')
+    if(!canalToken[region]) canalToken[region] = await parseToken(region || 'fr')
     const path = region === 'pl' ? 'mycanalint' : 'mycanal'
     const diff = date.diff(dayjs.utc().startOf('d'), 'd')
 
-    return `https://hodor.canalplus.pro/api/v2/${path}/channels/${canalToken}/${site_id}/broadcasts/day/${diff}`
+    return `https://hodor.canalplus.pro/api/v2/${path}/channels/${canalToken[region].token}/${site_id}/broadcasts/day/${diff}`
   },
   request:{
     headers() {
@@ -153,7 +153,7 @@ async function parseToken(country) {
     const offerLocation = path.split('/')[1]
     const data = await axios.get(`https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control&offerZone=${offerZone}&offerLocation=${offerLocation}`, { headers: globalHeaders }
     ).then(r => r.data).catch(console.error)
-    return data.token
+    return { country: country, token: data.token }
   }
   switch(country) {
     // Canal + France
@@ -172,7 +172,7 @@ async function parseToken(country) {
       timeout: 5000
     }).then(r => r.data).catch(console.error)
 
-  canalToken = tokenData.token
+  canalToken = { country: country, token: tokenData.token }
   return tokenData.token
 }
 
