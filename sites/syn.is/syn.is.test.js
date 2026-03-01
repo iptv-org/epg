@@ -1,4 +1,4 @@
-const { parser, url } = require('./stod2.is.config.js')
+const { parser, url } = require('./syn.is.config.js')
 const fs = require('fs')
 const path = require('path')
 const dayjs = require('dayjs')
@@ -11,16 +11,16 @@ dayjs.extend(customParseFormat)
 dayjs.extend(timezone)
 
 const date = dayjs.utc('2025-01-03', 'YYYY-MM-DD').startOf('day')
-const channel = { site_id: 'stod2', xmltv_id: 'Stod2.is' }
+const channel = { site_id: 'syn', xmltv_id: 'Syn.is' }
 
 it('can generate valid url', () => {
   const generatedUrl = url({ date, channel })
-  expect(generatedUrl).toBe('https://api.stod2.is/dagskra/api/stod2/2025-01-03')
+  expect(generatedUrl).toBe('https://www.syn.is/api/epg/syn/2025-01-03')
 })
 
 it('can parse response', () => {
   const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'))
-  const result = parser({ content }).map(p => {
+  const result = parser({ content, date }).map(p => {
     p.start = p.start.toISOString()
     p.stop = p.stop.toISOString()
     return p
@@ -41,6 +41,6 @@ it('can parse response', () => {
 })
 
 it('can handle empty guide', () => {
-  const result = parser({ content: '[]' })
+  const result = parser({ content: '[]', date })
   expect(result).toMatchObject([])
 })

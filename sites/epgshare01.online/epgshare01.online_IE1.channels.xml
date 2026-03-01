@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
   <channel site="epgshare01.online" site_id="IE1#98FM.ie" lang="en" xmltv_id="">98FM</channel>
-  <channel site="epgshare01.online" site_id="IE1#Alibi.ie" lang="en" xmltv_id="">Alibi</channel>
-  <channel site="epgshare01.online" site_id="IE1#Animal.Planet.ie" lang="en" xmltv_id="">Animal Planet</channel>
+  <channel site="epgshare01.online" site_id="IE1#Animal.Planet.HD.ie" lang="en" xmltv_id="">Animal Planet HD</channel>
   <channel site="epgshare01.online" site_id="IE1#B2B.Dummy.Dog.ie" lang="en" xmltv_id="">B2B Dummy Dog</channel>
   <channel site="epgshare01.online" site_id="IE1#BBC1.HD.ie" lang="en" xmltv_id="">BBC1 HD</channel>
   <channel site="epgshare01.online" site_id="IE1#BBC.5Live.Extra.ie" lang="en" xmltv_id="">BBC 5Live Extra</channel>
@@ -19,6 +18,7 @@
   <channel site="epgshare01.online" site_id="IE1#BBC.Radio.Ulster.ie" lang="en" xmltv_id="">BBC Radio Ulster</channel>
   <channel site="epgshare01.online" site_id="IE1#BBC.TWO.HD.ie" lang="en" xmltv_id="">BBC TWO HD</channel>
   <channel site="epgshare01.online" site_id="IE1#BBC.World.Svce.ie" lang="en" xmltv_id="">BBC World Svce</channel>
+  <channel site="epgshare01.online" site_id="IE1#Blaze.ie" lang="en" xmltv_id="">Blaze</channel>
   <channel site="epgshare01.online" site_id="IE1#Bloomberg.ie" lang="en" xmltv_id="">Bloomberg</channel>
   <channel site="epgshare01.online" site_id="IE1#Boomerang.ie" lang="en" xmltv_id="">Boomerang</channel>
   <channel site="epgshare01.online" site_id="IE1#Cartoon.Network.ie" lang="en" xmltv_id="">Cartoon Network</channel>
@@ -36,14 +36,14 @@
   <channel site="epgshare01.online" site_id="IE1#Comedy.Extra.ie" lang="en" xmltv_id="">Comedy Extra</channel>
   <channel site="epgshare01.online" site_id="IE1#Comedy.HD.ie" lang="en" xmltv_id="">Comedy HD</channel>
   <channel site="epgshare01.online" site_id="IE1#Comedy.ie" lang="en" xmltv_id="">Comedy</channel>
-  <channel site="epgshare01.online" site_id="IE1#Crime.&amp;.Investigation.HD.ie" lang="en" xmltv_id="">Crime &amp;amp; Investigation HD</channel>
+  <channel site="epgshare01.online" site_id="IE1#Crime.&amp;.Investigation.HD.ie" lang="en" xmltv_id="">Crime &amp; Investigation HD</channel>
   <channel site="epgshare01.online" site_id="IE1#Cula4.HD.ie" lang="en" xmltv_id="">Cula4 HD</channel>
   <channel site="epgshare01.online" site_id="IE1#DCTV.ie" lang="en" xmltv_id="">DCTV</channel>
   <channel site="epgshare01.online" site_id="IE1#Disc.Channel.+1.ie" lang="en" xmltv_id="">Disc Channel +1</channel>
   <channel site="epgshare01.online" site_id="IE1#Discovery.HD.ie" lang="en" xmltv_id="">Discovery HD</channel>
   <channel site="epgshare01.online" site_id="IE1#Discovery.History.ie" lang="en" xmltv_id="">Discovery History</channel>
   <channel site="epgshare01.online" site_id="IE1#Discovery.ie" lang="en" xmltv_id="">Discovery</channel>
-  <channel site="epgshare01.online" site_id="IE1#Discovery.Quest.ie" lang="en" xmltv_id="">Discovery Quest</channel>
+  <channel site="epgshare01.online" site_id="IE1#Discovery.Quest.HD.ie" lang="en" xmltv_id="">Discovery Quest HD</channel>
   <channel site="epgshare01.online" site_id="IE1#Discovery.Science.ie" lang="en" xmltv_id="">Discovery Science</channel>
   <channel site="epgshare01.online" site_id="IE1#Discovery.Turbo.ie" lang="en" xmltv_id="">Discovery Turbo</channel>
   <channel site="epgshare01.online" site_id="IE1#DMAX.ie" lang="en" xmltv_id="">DMAX</channel>
@@ -52,8 +52,6 @@
   <channel site="epgshare01.online" site_id="IE1#E4.HD.ie" lang="en" xmltv_id="">E4 HD</channel>
   <channel site="epgshare01.online" site_id="IE1#E4.ie" lang="en" xmltv_id="">E4</channel>
   <channel site="epgshare01.online" site_id="IE1#Euronews.ie" lang="en" xmltv_id="">Euronews</channel>
-  <channel site="epgshare01.online" site_id="IE1#Eurosport.2.HD.ie" lang="en" xmltv_id="">Eurosport 2 HD</channel>
-  <channel site="epgshare01.online" site_id="IE1#Eurosport.HD.ie" lang="en" xmltv_id="">Eurosport HD</channel>
   <channel site="epgshare01.online" site_id="IE1#EWTN.ie" lang="en" xmltv_id="">EWTN</channel>
   <channel site="epgshare01.online" site_id="IE1#Fashion.TV.ie" lang="en" xmltv_id="">Fashion TV</channel>
   <channel site="epgshare01.online" site_id="IE1#Film4.HD.ie" lang="en" xmltv_id="">Film4 HD</channel>
@@ -61,8 +59,6 @@
   <channel site="epgshare01.online" site_id="IE1#FILMFOUR.+1.ie" lang="en" xmltv_id="">FILMFOUR +1</channel>
   <channel site="epgshare01.online" site_id="IE1#FM104.ie" lang="en" xmltv_id="">FM104</channel>
   <channel site="epgshare01.online" site_id="IE1#Food.Network.ie" lang="en" xmltv_id="">Food Network</channel>
-  <channel site="epgshare01.online" site_id="IE1#G.O.L.D..+1.ie" lang="en" xmltv_id="">G.O.L.D. +1</channel>
-  <channel site="epgshare01.online" site_id="IE1#G.O.L.D..ie" lang="en" xmltv_id="">G.O.L.D.</channel>
   <channel site="epgshare01.online" site_id="IE1#Galway.Bay.FM.ie" lang="en" xmltv_id="">Galway Bay FM</channel>
   <channel site="epgshare01.online" site_id="IE1#HGTV.ie" lang="en" xmltv_id="">HGTV</channel>
   <channel site="epgshare01.online" site_id="IE1#ID.ie" lang="en" xmltv_id="">ID</channel>
@@ -100,6 +96,28 @@
   <channel site="epgshare01.online" site_id="IE1#Racing.UK.ie" lang="en" xmltv_id="">Racing UK</channel>
   <channel site="epgshare01.online" site_id="IE1#Radio.Nova.ie" lang="en" xmltv_id="">Radio Nova</channel>
   <channel site="epgshare01.online" site_id="IE1#Really.ie" lang="en" xmltv_id="">Really</channel>
+  <channel site="epgshare01.online" site_id="IE1#Red.Button.Sky.Sports.Action.HD.ie" lang="en" xmltv_id="">Red Button Sky Sports Action HD</channel>
+  <channel site="epgshare01.online" site_id="IE1#Red.Button.Sky.Sports.Action.ie" lang="en" xmltv_id="">Red Button Sky Sports Action</channel>
+  <channel site="epgshare01.online" site_id="IE1#Red.Button.Sky.Sports.Cricket.HD.ie" lang="en" xmltv_id="">Red Button Sky Sports Cricket HD</channel>
+  <channel site="epgshare01.online" site_id="IE1#Red.Button.Sky.Sports.Cricket.ie" lang="en" xmltv_id="">Red Button Sky Sports Cricket</channel>
+  <channel site="epgshare01.online" site_id="IE1#Red.Button.Sky.Sports.F1.HD.ie" lang="en" xmltv_id="">Red Button Sky Sports F1 HD</channel>
+  <channel site="epgshare01.online" site_id="IE1#Red.Button.Sky.Sports.F1.ie" lang="en" xmltv_id="">Red Button Sky Sports F1</channel>
+  <channel site="epgshare01.online" site_id="IE1#Red.Button.Sky.Sports.Football.HD.ie" lang="en" xmltv_id="">Red Button Sky Sports Football HD</channel>
+  <channel site="epgshare01.online" site_id="IE1#Red.Button.Sky.Sports.Football.ie" lang="en" xmltv_id="">Red Button Sky Sports Football</channel>
+  <channel site="epgshare01.online" site_id="IE1#Red.Button.Sky.Sports.Golf.HD.ie" lang="en" xmltv_id="">Red Button Sky Sports Golf HD</channel>
+  <channel site="epgshare01.online" site_id="IE1#Red.Button.Sky.Sports.Golf.ie" lang="en" xmltv_id="">Red Button Sky Sports Golf</channel>
+  <channel site="epgshare01.online" site_id="IE1#Red.Button.Sky.Sports.Main.Event.HD.ie" lang="en" xmltv_id="">Red Button Sky Sports Main Event HD</channel>
+  <channel site="epgshare01.online" site_id="IE1#Red.Button.Sky.Sports.Main.Event.ie" lang="en" xmltv_id="">Red Button Sky Sports Main Event</channel>
+  <channel site="epgshare01.online" site_id="IE1#Red.Button.Sky.Sports.Mix.HD.ie" lang="en" xmltv_id="">Red Button Sky Sports Mix HD</channel>
+  <channel site="epgshare01.online" site_id="IE1#Red.Button.Sky.Sports.Mix.ie" lang="en" xmltv_id="">Red Button Sky Sports Mix</channel>
+  <channel site="epgshare01.online" site_id="IE1#Red.Button.Sky.Sports.News.HD.ie" lang="en" xmltv_id="">Red Button Sky Sports News HD</channel>
+  <channel site="epgshare01.online" site_id="IE1#Red.Button.Sky.Sports.News.ie" lang="en" xmltv_id="">Red Button Sky Sports News</channel>
+  <channel site="epgshare01.online" site_id="IE1#Red.Button.Sky.Sports.Plus.HD.ie" lang="en" xmltv_id="">Red Button Sky Sports Plus HD</channel>
+  <channel site="epgshare01.online" site_id="IE1#Red.Button.Sky.Sports.Plus.ie" lang="en" xmltv_id="">Red Button Sky Sports Plus</channel>
+  <channel site="epgshare01.online" site_id="IE1#Red.Button.Sky.Sports.Premier.League.HD.ie" lang="en" xmltv_id="">Red Button Sky Sports Premier League HD</channel>
+  <channel site="epgshare01.online" site_id="IE1#Red.Button.Sky.Sports.Premier.League.ie" lang="en" xmltv_id="">Red Button Sky Sports Premier League</channel>
+  <channel site="epgshare01.online" site_id="IE1#Red.Button.Sky.Sports.Tennis.HD.ie" lang="en" xmltv_id="">Red Button Sky Sports Tennis HD</channel>
+  <channel site="epgshare01.online" site_id="IE1#Red.Button.Sky.Sports.Tennis.ie" lang="en" xmltv_id="">Red Button Sky Sports Tennis</channel>
   <channel site="epgshare01.online" site_id="IE1#RTE2.+1.ie" lang="en" xmltv_id="">RTE2 +1</channel>
   <channel site="epgshare01.online" site_id="IE1#RTE.2.FM.ie" lang="en" xmltv_id="">RTE 2 FM</channel>
   <channel site="epgshare01.online" site_id="IE1#RTE.2XM.ie" lang="en" xmltv_id="">RTE 2XM</channel>
@@ -144,7 +162,7 @@
   <channel site="epgshare01.online" site_id="IE1#Sky.Horror.ie" lang="en" xmltv_id="">Sky Horror</channel>
   <channel site="epgshare01.online" site_id="IE1#SKY.Max.HD.ie" lang="en" xmltv_id="">SKY Max HD</channel>
   <channel site="epgshare01.online" site_id="IE1#SKY.Max.ie" lang="en" xmltv_id="">SKY Max</channel>
-  <channel site="epgshare01.online" site_id="IE1#Sky.Mix.ie" lang="en" xmltv_id="">Sky Mix</channel>
+  <channel site="epgshare01.online" site_id="IE1#Sky.Mix.HD.ie" lang="en" xmltv_id="">Sky Mix HD</channel>
   <channel site="epgshare01.online" site_id="IE1#Sky.Nature.HD.ie" lang="en" xmltv_id="">Sky Nature HD</channel>
   <channel site="epgshare01.online" site_id="IE1#Sky.Nature.ie" lang="en" xmltv_id="">Sky Nature</channel>
   <channel site="epgshare01.online" site_id="IE1#Sky.News.HD.ie" lang="en" xmltv_id="">Sky News HD</channel>
@@ -178,7 +196,9 @@
   <channel site="epgshare01.online" site_id="IE1#Sky.Sports.Plus.ie" lang="en" xmltv_id="">Sky Sports Plus</channel>
   <channel site="epgshare01.online" site_id="IE1#Sky.Sports.Premier.League.HD.ie" lang="en" xmltv_id="">Sky Sports Premier League HD</channel>
   <channel site="epgshare01.online" site_id="IE1#Sky.Sports.Premier.League.ie" lang="en" xmltv_id="">Sky Sports Premier League</channel>
-  <channel site="epgshare01.online" site_id="IE1#Sky.Sports.Racing.ie" lang="en" xmltv_id="">Sky Sports Racing</channel>
+  <channel site="epgshare01.online" site_id="IE1#Sky.Sports.Racing.HD.ie" lang="en" xmltv_id="">Sky Sports Racing HD</channel>
+  <channel site="epgshare01.online" site_id="IE1#Sky.Sports.Tennis.HD.ie" lang="en" xmltv_id="">Sky Sports Tennis HD</channel>
+  <channel site="epgshare01.online" site_id="IE1#Sky.Sports.Tennis.ie" lang="en" xmltv_id="">Sky Sports Tennis</channel>
   <channel site="epgshare01.online" site_id="IE1#Sky.Thriller.HD.ie" lang="en" xmltv_id="">Sky Thriller HD</channel>
   <channel site="epgshare01.online" site_id="IE1#Sky.Thriller.ie" lang="en" xmltv_id="">Sky Thriller</channel>
   <channel site="epgshare01.online" site_id="IE1#Sky.Witness.+1.ie" lang="en" xmltv_id="">Sky Witness +1</channel>
@@ -189,7 +209,7 @@
   <channel site="epgshare01.online" site_id="IE1#TG4+1.HD.ie" lang="en" xmltv_id="">TG4+1 HD</channel>
   <channel site="epgshare01.online" site_id="IE1#TG4.HD.ie" lang="en" xmltv_id="">TG4 HD</channel>
   <channel site="epgshare01.online" site_id="IE1#The.God.Channel.ie" lang="en" xmltv_id="">The God Channel</channel>
-  <channel site="epgshare01.online" site_id="IE1#TLC.ie" lang="en" xmltv_id="">TLC</channel>
+  <channel site="epgshare01.online" site_id="IE1#TLC.HD.ie" lang="en" xmltv_id="">TLC HD</channel>
   <channel site="epgshare01.online" site_id="IE1#TNT.Sports.1.HD.ie" lang="en" xmltv_id="">TNT Sports 1 HD</channel>
   <channel site="epgshare01.online" site_id="IE1#TNT.Sports.1.ie" lang="en" xmltv_id="">TNT Sports 1</channel>
   <channel site="epgshare01.online" site_id="IE1#TNT.Sports.2.HD.ie" lang="en" xmltv_id="">TNT Sports 2 HD</channel>
@@ -203,9 +223,12 @@
   <channel site="epgshare01.online" site_id="IE1#True.Crime.ie" lang="en" xmltv_id="">True Crime</channel>
   <channel site="epgshare01.online" site_id="IE1#True.Crime.Xtra.ie" lang="en" xmltv_id="">True Crime Xtra</channel>
   <channel site="epgshare01.online" site_id="IE1#TV5.ie" lang="en" xmltv_id="">TV5</channel>
-  <channel site="epgshare01.online" site_id="IE1#U&amp;Dave.ie" lang="en" xmltv_id="">U&amp;amp;Dave</channel>
-  <channel site="epgshare01.online" site_id="IE1#U&amp;Drama.ie" lang="en" xmltv_id="">U&amp;amp;Drama</channel>
-  <channel site="epgshare01.online" site_id="IE1#U&amp;W.ie" lang="en" xmltv_id="">U&amp;amp;W</channel>
+  <channel site="epgshare01.online" site_id="IE1#U&amp;Alibi.ie" lang="en" xmltv_id="">U&amp;Alibi</channel>
+  <channel site="epgshare01.online" site_id="IE1#U&amp;Dave.ie" lang="en" xmltv_id="">U&amp;Dave</channel>
+  <channel site="epgshare01.online" site_id="IE1#U&amp;Drama.ie" lang="en" xmltv_id="">U&amp;Drama</channel>
+  <channel site="epgshare01.online" site_id="IE1#U&amp;Gold.+1.ie" lang="en" xmltv_id="">U&amp;Gold +1</channel>
+  <channel site="epgshare01.online" site_id="IE1#U&amp;Gold.ie" lang="en" xmltv_id="">U&amp;Gold</channel>
+  <channel site="epgshare01.online" site_id="IE1#U&amp;W.ie" lang="en" xmltv_id="">U&amp;W</channel>
   <channel site="epgshare01.online" site_id="IE1#UTV.HD.ie" lang="en" xmltv_id="">UTV HD</channel>
   <channel site="epgshare01.online" site_id="IE1#Virgin.Media.Extra.1.ie" lang="en" xmltv_id="">Virgin Media Extra 1</channel>
   <channel site="epgshare01.online" site_id="IE1#Virgin.Media.Extra.2.ie" lang="en" xmltv_id="">Virgin Media Extra 2</channel>

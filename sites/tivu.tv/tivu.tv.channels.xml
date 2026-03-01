@@ -1,72 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="tivu.tv" site_id="2" lang="it" xmltv_id="BBCNews.uk@Europe">BBC World News</channel>
-  <channel site="tivu.tv" site_id="3" lang="it" xmltv_id="BloombergTV.us@Europe">Bloomberg European TV</channel>
-  <channel site="tivu.tv" site_id="28" lang="it" xmltv_id="RaiYoyo.it@SD">Rai yoyo</channel>
-  <channel site="tivu.tv" site_id="31" lang="it" xmltv_id="Rai3.it@HD">Rai 3</channel>
-  <channel site="tivu.tv" site_id="53" lang="it" xmltv_id="EuronewsItalian.fr@SD">Euronews Italian</channel>
-  <channel site="tivu.tv" site_id="62" lang="it" xmltv_id="Rai1.it@SD">Rai 1</channel>
-  <channel site="tivu.tv" site_id="72" lang="it" xmltv_id="AlJazeera.qa@English">Al Jazeera</channel>
-  <channel site="tivu.tv" site_id="81" lang="it" xmltv_id="TV2000.it@SD">TV2000</channel>
-  <channel site="tivu.tv" site_id="93" lang="it" xmltv_id="">Arte HD</channel>
-  <channel site="tivu.tv" site_id="95" lang="it" xmltv_id="RaiGulp.it@SD">Rai Gulp</channel>
-  <channel site="tivu.tv" site_id="99" lang="it" xmltv_id="Rai5.it@SD">Rai 5</channel>
-  <channel site="tivu.tv" site_id="104" lang="it" xmltv_id="20.it@SD">20 Mediaset</channel>
-  <channel site="tivu.tv" site_id="105" lang="it" xmltv_id="RaiNews24.it@SD">Rai News 24</channel>
-  <channel site="tivu.tv" site_id="106" lang="it" xmltv_id="Iris.it@SD">Iris</channel>
-  <channel site="tivu.tv" site_id="112" lang="it" xmltv_id="Mezzo.fr@SD">MEZZO</channel>
-  <channel site="tivu.tv" site_id="114" lang="it" xmltv_id="Rai2.it@SD">Rai 2</channel>
-  <channel site="tivu.tv" site_id="119" lang="it" xmltv_id="Rai4.it@SD">Rai 4</channel>
-  <channel site="tivu.tv" site_id="120" lang="it" xmltv_id="RaiMovie.it@SD">Rai Movie</channel>
-  <channel site="tivu.tv" site_id="123" lang="it" xmltv_id="RadioItaliaTV.it@SD">Radio Italia TV</channel>
-  <channel site="tivu.tv" site_id="128" lang="it" xmltv_id="RTL1025TV.it@SD">RTL 102.5</channel>
-  <channel site="tivu.tv" site_id="136" lang="it" xmltv_id="France24.fr@English">France 24 HD (in English)</channel>
-  <channel site="tivu.tv" site_id="137" lang="it" xmltv_id="France24.fr@French">France 24 HD (en Français)</channel>
-  <channel site="tivu.tv" site_id="138" lang="it" xmltv_id="KBSWorld.kr@SD">KBS HD</channel>
-  <channel site="tivu.tv" site_id="139" lang="it" xmltv_id="Canale5.it@SD">Canale 5</channel>
-  <channel site="tivu.tv" site_id="140" lang="it" xmltv_id="Italia1.it@SD">Italia 1</channel>
-  <channel site="tivu.tv" site_id="141" lang="it" xmltv_id="Rete4.it@SD">Rete 4</channel>
-  <channel site="tivu.tv" site_id="149" lang="it" xmltv_id="MediasetExtra.it@SD">Mediaset EXTRA</channel>
-  <channel site="tivu.tv" site_id="150" lang="it" xmltv_id="RDSSocialTV.it@SD">RDS Social TV</channel>
-  <channel site="tivu.tv" site_id="169" lang="it" xmltv_id="NHKWorldJapan.jp@SD">NHK WORLD-JAPAN</channel>
-  <channel site="tivu.tv" site_id="172" lang="it" xmltv_id="Giallo.it@SD">GIALLO</channel>
-  <channel site="tivu.tv" site_id="173" lang="it" xmltv_id="MotorTrend.it@SD">Motor Trend</channel>
-  <channel site="tivu.tv" site_id="174" lang="it" xmltv_id="Nove.it@SD">NOVE</channel>
-  <channel site="tivu.tv" site_id="177" lang="it" xmltv_id="Cine34.it@SD">Cine34</channel>
-  <channel site="tivu.tv" site_id="178" lang="it" xmltv_id="FashionTVEurope.fr@SD">Fashion TV</channel>
-  <channel site="tivu.tv" site_id="179" lang="it" xmltv_id="">Museum</channel>
-  <channel site="tivu.tv" site_id="180" lang="it" xmltv_id="MyZenTV4K.fr@SD">MyZen TV</channel>
-  <channel site="tivu.tv" site_id="181" lang="it" xmltv_id="NASATVUHD.us@SD">NASA</channel>
-  <channel site="tivu.tv" site_id="182" lang="it" xmltv_id="RaiSport.it@HD">Rai Sport</channel>
-  <channel site="tivu.tv" site_id="183" lang="it" xmltv_id="">Travel XP</channel>
-  <channel site="tivu.tv" site_id="184" lang="it" xmltv_id="QVC.it@SD">QVC</channel>
-  <channel site="tivu.tv" site_id="185" lang="it" xmltv_id="EQUtv.it@SD">UNIQtv HD</channel>
-  <channel site="tivu.tv" site_id="186" lang="it" xmltv_id="RadioMonteCarloTV.it@SD">RMC</channel>
-  <channel site="tivu.tv" site_id="187" lang="it" xmltv_id="Cielo.it@SD">cielo</channel>
-  <channel site="tivu.tv" site_id="188" lang="it" xmltv_id="TV8.it@SD">TV8</channel>
-  <channel site="tivu.tv" site_id="194" lang="it" xmltv_id="">CNBC</channel>
-  <channel site="tivu.tv" site_id="200" lang="it" xmltv_id="RaiStoria.it@SD">Rai Storia</channel>
-  <channel site="tivu.tv" site_id="202" lang="it" xmltv_id="Boing.it@SD">Boing</channel>
-  <channel site="tivu.tv" site_id="203" lang="it" xmltv_id="Cartoonito.it@SD">Cartoonito</channel>
-  <channel site="tivu.tv" site_id="204" lang="it" xmltv_id="Focus.it@SD">Focus</channel>
-  <channel site="tivu.tv" site_id="205" lang="it" xmltv_id="La5.it@SD">La 5</channel>
-  <channel site="tivu.tv" site_id="206" lang="it" xmltv_id="LA7d.it@SD">LA7d</channel>
-  <channel site="tivu.tv" site_id="207" lang="it" xmltv_id="Italia2.it@SD">Mediaset ITALIA DUE</channel>
-  <channel site="tivu.tv" site_id="208" lang="it" xmltv_id="TGCom24.it@SD">TgCom24</channel>
-  <channel site="tivu.tv" site_id="209" lang="it" xmltv_id="TopCrime.it@SD">Topcrime</channel>
-  <channel site="tivu.tv" site_id="210" lang="it" xmltv_id="HGTV.it@SD">HGTV</channel>
-  <channel site="tivu.tv" site_id="211" lang="it" xmltv_id="LA7.it@SD">LA7</channel>
-  <channel site="tivu.tv" site_id="212" lang="it" xmltv_id="TRMh24.it@SD">TRM h24</channel>
-  <channel site="tivu.tv" site_id="213" lang="it" xmltv_id="">Horse TV</channel>
-  <channel site="tivu.tv" site_id="214" lang="it" xmltv_id="Super.it@SD">Super!</channel>
-  <channel site="tivu.tv" site_id="219" lang="it" xmltv_id="VH1.it@SD">VH1</channel>
-  <channel site="tivu.tv" site_id="222" lang="it" xmltv_id="FoodNetwork.it@SD">Food Network</channel>
-  <channel site="tivu.tv" site_id="223" lang="it" xmltv_id="Frisbee.it@SD">frisbee</channel>
-  <channel site="tivu.tv" site_id="224" lang="it" xmltv_id="K2.it@SD">K2</channel>
-  <channel site="tivu.tv" site_id="225" lang="it" xmltv_id="DMAX.it@SD">DMAX</channel>
-  <channel site="tivu.tv" site_id="226" lang="it" xmltv_id="Twentyseven.it@SD">27</channel>
-  <channel site="tivu.tv" site_id="227" lang="it" xmltv_id="RealTime.it@SD">Real Time</channel>
-  <channel site="tivu.tv" site_id="229" lang="it" xmltv_id="WarnerTV.it@SD">Warner TV Italy</channel>
-  <channel site="tivu.tv" site_id="231" lang="it" xmltv_id="ZonaDAZN2.it@SD">Zona DAZN 2</channel>
-  <channel site="tivu.tv" site_id="232" lang="it" xmltv_id="ZonaDAZN.it@SD">Zona DAZN</channel>
+  <channel site="tivu.tv" site_id="5" lang="it" logo="https://services.tivulaguida.it/uploads/channel/a6b9c3b759485b80a3dc00b4b3b93e1d90fef0c0.png" xmltv_id="">Canale 5</channel>
+  <channel site="tivu.tv" site_id="6" lang="it" logo="https://services.tivulaguida.it/uploads/channel/16fb1ac9c0382b4ce19718d4a6ea5aa5e5a141b0.png" xmltv_id="">Italia 1</channel>
+  <channel site="tivu.tv" site_id="11" lang="it" logo="https://services.tivulaguida.it/uploads/channel/48843f14ba4fd29c803614b26102b73e7e2ba8b8.png" xmltv_id="">Iris HD</channel>
+  <channel site="tivu.tv" site_id="16" lang="it" logo="https://services.tivulaguida.it/uploads/channel/273e85ff3cddfa6396ffec3b87fb0b06c2d5f9dd.png" xmltv_id="">TV2000 HD</channel>
+  <channel site="tivu.tv" site_id="17" lang="it" logo="https://services.tivulaguida.it/uploads/channel/7936e4433244cda72edae01e137e5ec0b691581c.png" xmltv_id="">LA7CINEMA</channel>
+  <channel site="tivu.tv" site_id="18" lang="it" logo="https://services.tivulaguida.it/uploads/channel/la5.png" xmltv_id="">La 5 HD</channel>
+  <channel site="tivu.tv" site_id="19" lang="it" logo="https://services.tivulaguida.it/uploads/channel/a1add1159f8dfa51d8a10c84e661d19165ed64e5.png" xmltv_id="">Real time HD</channel>
+  <channel site="tivu.tv" site_id="23" lang="it" logo="https://services.tivulaguida.it/uploads/channel/fb60fc98ecf17b8746f14a6495a1d8a68d6e8a14.jpeg" xmltv_id="">Italia 2 HD</channel>
+  <channel site="tivu.tv" site_id="24" lang="it" logo="https://services.tivulaguida.it/uploads/channel/mediaset_extra.png" xmltv_id="">Mediaset Extra HD</channel>
+  <channel site="tivu.tv" site_id="25" lang="it" logo="https://services.tivulaguida.it/uploads/channel/top_crime.png" xmltv_id="">Top crime HD</channel>
+  <channel site="tivu.tv" site_id="29" lang="it" logo="https://services.tivulaguida.it/uploads/channel/033bbea90c53686938bc6a755ea31ff7767eceae.png" xmltv_id="">Boing</channel>
+  <channel site="tivu.tv" site_id="32" lang="it" logo="https://services.tivulaguida.it/uploads/channel/686e4fbef1e455f8b84898fe5bcb20ac254cbe52.png" xmltv_id="">DMAX HD</channel>
+  <channel site="tivu.tv" site_id="37" lang="it" logo="https://services.tivulaguida.it/uploads/channel/24805aab941005bf1d4a4c59e70871a3e6e16b93.png" xmltv_id="">France 24 HD English</channel>
+  <channel site="tivu.tv" site_id="38" lang="it" logo="https://services.tivulaguida.it/uploads/channel/54d01b3f720c5fd7aac6b51fbba3319e388837ec.png" xmltv_id="">BBC News</channel>
+  <channel site="tivu.tv" site_id="39" lang="it" logo="https://services.tivulaguida.it/uploads/channel/bloomberg.png" xmltv_id="">Bloomberg European</channel>
+  <channel site="tivu.tv" site_id="42" lang="it" logo="https://services.tivulaguida.it/uploads/channel/dd39d13edc5e24dc57f355ab6030ec85ba4ad945.png" xmltv_id="">Rai 1 HD</channel>
+  <channel site="tivu.tv" site_id="43" lang="it" logo="https://services.tivulaguida.it/uploads/channel/0746c01a220d0e3d20f541937156c09f3d136b2c.png" xmltv_id="">Rai 2 HD</channel>
+  <channel site="tivu.tv" site_id="44" lang="it" logo="https://services.tivulaguida.it/uploads/channel/9f27aa32c4301822fd6dd46132c9634c76b71d01.png" xmltv_id="">Rai 3 HD</channel>
+  <channel site="tivu.tv" site_id="67" lang="it" logo="https://services.tivulaguida.it/uploads/channel/96b4cb4088a72529f6e72a815cb942c1fc856b0b.png" xmltv_id="">K2</channel>
+  <channel site="tivu.tv" site_id="68" lang="it" logo="https://services.tivulaguida.it/uploads/channel/c9eab6ebd6b93309462eca86dea20d2aac703bfc.png" xmltv_id="">FRISBEE</channel>
+  <channel site="tivu.tv" site_id="71" lang="it" logo="https://services.tivulaguida.it/uploads/channel/b0862d4a841e029cfdeb01869d6b35e6ef33bb70.jpeg" xmltv_id="">Al Jazeera english channel</channel>
+  <channel site="tivu.tv" site_id="84" lang="it" logo="https://services.tivulaguida.it/uploads/channel/cabf5d902ffbab265c07dfc8a8837a884349fff9.png" xmltv_id="">Cartoonito</channel>
+  <channel site="tivu.tv" site_id="88" lang="it" logo="https://services.tivulaguida.it/uploads/channel/13bdd18bf42616c2f823eaaeb825d703a33f3986.png" xmltv_id="">Rai Sport HD</channel>
+  <channel site="tivu.tv" site_id="89" lang="it" logo="https://services.tivulaguida.it/uploads/channel/d5e5a53e8ffb3fbc18d9dfec39689d51aec963e9.png" xmltv_id="">Rai 4 HD</channel>
+  <channel site="tivu.tv" site_id="107" lang="it" logo="https://services.tivulaguida.it/uploads/channel/ddd13b05c2eb5e6c432d2dd8f3f787a923a0b0aa.png" xmltv_id="">Rai Premium HD</channel>
+  <channel site="tivu.tv" site_id="108" lang="it" logo="https://services.tivulaguida.it/uploads/channel/d45900b26cc3b7b88ff157bfdf098afd8f77b37b.png" xmltv_id="">Al Jazeera English HD</channel>
+  <channel site="tivu.tv" site_id="111" lang="it" logo="https://services.tivulaguida.it/uploads/channel/869c001e9a8d745e8772c91a43aeb2224eadd3be.png" xmltv_id="">Euronews italian</channel>
+  <channel site="tivu.tv" site_id="115" lang="it" logo="https://services.tivulaguida.it/uploads/channel/835474f384eb7598094c4b43677351937916c266.png" xmltv_id="">ARTE HD</channel>
+  <channel site="tivu.tv" site_id="118" lang="it" logo="https://services.tivulaguida.it/uploads/channel/6bd76b2568e7f92a708b179e96807ce7f662cba9.png" xmltv_id="">TGCOM24 HD</channel>
+  <channel site="tivu.tv" site_id="129" lang="it" logo="https://services.tivulaguida.it/uploads/channel/686304f617a5021b847e8a9b7dea0451fde3c2d6.png" xmltv_id="">Euronews HD</channel>
+  <channel site="tivu.tv" site_id="130" lang="it" logo="https://services.tivulaguida.it/uploads/channel/0f9bccc2d8a320151ac559b5de479473817bee1a.png" xmltv_id="">QVC HD</channel>
+  <channel site="tivu.tv" site_id="131" lang="it" logo="https://services.tivulaguida.it/uploads/channel/534af24c8782837b4aeb2789b3d23867b4acc275.png" xmltv_id="">Rai News 24 HD</channel>
+  <channel site="tivu.tv" site_id="132" lang="it" logo="https://services.tivulaguida.it/uploads/channel/d64ec22ee34568009cb050c3e438ee405834c923.png" xmltv_id="">Rai storia HD</channel>
+  <channel site="tivu.tv" site_id="133" lang="it" logo="https://services.tivulaguida.it/uploads/channel/88dc0b5b4f74887752be14453029ad29ff02d671.png" xmltv_id="">Rai gulp HD</channel>
+  <channel site="tivu.tv" site_id="134" lang="it" logo="https://services.tivulaguida.it/uploads/channel/22cbf89692166bc869d79fd9465360fbfcbe95d2.png" xmltv_id="">Rai Yoyo HD</channel>
+  <channel site="tivu.tv" site_id="135" lang="it" logo="https://services.tivulaguida.it/uploads/channel/953727db7b13b68dda54c6c7310c762802981ad1.png" xmltv_id="">Rai scuola HD</channel>
+  <channel site="tivu.tv" site_id="142" lang="it" logo="https://services.tivulaguida.it/uploads/channel/91085b40485e64bf58571a9604a395f09c119356.png" xmltv_id="">KBS World</channel>
+  <channel site="tivu.tv" site_id="145" lang="it" logo="https://services.tivulaguida.it/uploads/channel/5dde1367a07f86dc9ff8a537da5c17ab8cc1ec07.png" xmltv_id="">Canale 5 HD</channel>
+  <channel site="tivu.tv" site_id="148" lang="it" logo="https://services.tivulaguida.it/uploads/channel/af4240f05ef9add7f796895fd119ed6bf9fd4fea.png" xmltv_id="">Italia 1 HD</channel>
+  <channel site="tivu.tv" site_id="155" lang="it" logo="https://services.tivulaguida.it/uploads/channel/afed8f6c259534031ac7e62f5f282862caf1ecb2.png" xmltv_id="">Rete 4 HD</channel>
+  <channel site="tivu.tv" site_id="157" lang="it" logo="https://services.tivulaguida.it/uploads/channel/c086cacf841db7caa42d7014391700e9dd9e8d85.png" xmltv_id="">RTL 102.5 TV</channel>
+  <channel site="tivu.tv" site_id="230" lang="it" logo="https://services.tivulaguida.it/uploads/channel/2e66a269b228c9f4f6379edfa2e419e0958df7d4.png" xmltv_id="">Radio Italia Live</channel>
+  <channel site="tivu.tv" site_id="247" lang="it" logo="https://services.tivulaguida.it/uploads/channel/5236821ad401f8a2bc283f96938e4b1c92ab6c4e.png" xmltv_id="">France 24 HD (en Français)</channel>
+  <channel site="tivu.tv" site_id="249" lang="it" logo="https://services.tivulaguida.it/uploads/channel/8be1c5798899fb9f9f9e41655361788f1f3560cf.png" xmltv_id="">20 Mediaset HD</channel>
+  <channel site="tivu.tv" site_id="253" lang="it" logo="https://services.tivulaguida.it/uploads/channel/4f3f92910c04f1860913e21cff1bb9bcfa12fd50.png" xmltv_id="">Focus HD</channel>
+  <channel site="tivu.tv" site_id="255" lang="it" logo="https://services.tivulaguida.it/uploads/channel/86497fa91313aeed8328eb5084fed5ab9b09f30f.png" xmltv_id="">RDS social TV</channel>
+  <channel site="tivu.tv" site_id="256" lang="it" logo="https://services.tivulaguida.it/uploads/channel/3f9fdbc37dd784555cacebd51acda99cabc572a2.png" xmltv_id="">Rai 4K</channel>
+  <channel site="tivu.tv" site_id="259" lang="it" logo="https://services.tivulaguida.it/uploads/channel/8615b4f769eb71cc703f412eca2caaf379a95dcb.png" xmltv_id="">Giallo HD</channel>
+  <channel site="tivu.tv" site_id="262" lang="it" logo="https://services.tivulaguida.it/uploads/channel/98f7bc0c6c6cb9b9320017d30c1fa9fd010f6d5d.png" xmltv_id="">Discovery Turbo</channel>
+  <channel site="tivu.tv" site_id="263" lang="it" logo="https://services.tivulaguida.it/uploads/channel/e9435365a7819c40e428014040994eceeece5f47.png" xmltv_id="">Food Network HD</channel>
+  <channel site="tivu.tv" site_id="266" lang="it" logo="https://services.tivulaguida.it/uploads/channel/5c9eee850e6fc5e989a944a67abff2c7fcd1573e.png" xmltv_id="">NHK HD</channel>
+  <channel site="tivu.tv" site_id="270" lang="it" logo="https://services.tivulaguida.it/uploads/channel/0e46e95d2204a50de1cb4714922f4df01fff920d.png" xmltv_id="">MyZenTV 4K</channel>
+  <channel site="tivu.tv" site_id="271" lang="it" logo="https://services.tivulaguida.it/uploads/channel/65865603ce99d6791b328b4d346c019d4e438bb6.png" xmltv_id="">Museum 4K</channel>
+  <channel site="tivu.tv" site_id="272" lang="it" logo="https://services.tivulaguida.it/uploads/channel/c4678a3fc2fea96cc7eda824585993df8acbd603.png" xmltv_id="">Boing Plus</channel>
+  <channel site="tivu.tv" site_id="273" lang="it" logo="https://services.tivulaguida.it/uploads/channel/08f1deb7aa1b566817174fde164ee21b3d409b3e.png" xmltv_id="">CIne 34 HD</channel>
+  <channel site="tivu.tv" site_id="276" lang="it" logo="https://services.tivulaguida.it/uploads/channel/f36613e722d91526edb7f2a7fbc6f48446190fb6.png" xmltv_id="">Travelxp</channel>
+  <channel site="tivu.tv" site_id="277" lang="it" logo="https://services.tivulaguida.it/uploads/channel/4ea0e49571010195ed125191439649999ee8e231.png" xmltv_id="">EQU</channel>
+  <channel site="tivu.tv" site_id="278" lang="it" logo="https://services.tivulaguida.it/uploads/channel/c605464a453134e56f5df8316ffc228c476aa0f3.png" xmltv_id="">Radio Monte Carlo</channel>
+  <channel site="tivu.tv" site_id="279" lang="it" logo="https://services.tivulaguida.it/uploads/channel/b4879a78670aa64de3fbb0010ade8b85d2654dac.png" xmltv_id="">TV8 HD</channel>
+  <channel site="tivu.tv" site_id="280" lang="it" logo="https://services.tivulaguida.it/uploads/channel/443ff8a73f650bd1ac9aca73887b198d39d7ce78.png" xmltv_id="">Cielo HD</channel>
+  <channel site="tivu.tv" site_id="287" lang="it" logo="https://services.tivulaguida.it/uploads/channel/45e9daf7597069fdc10484c2c6d446b23736378f.png" xmltv_id="">HGTV ITALY HD</channel>
+  <channel site="tivu.tv" site_id="288" lang="it" logo="https://services.tivulaguida.it/uploads/channel/f1c6b5bd5277a36fc411fdcb88f489183cfc9741.png" xmltv_id="">TRM h24</channel>
+  <channel site="tivu.tv" site_id="289" lang="it" logo="https://services.tivulaguida.it/uploads/channel/d82f4217d11cdce903e371e4a4c54908469eeca5.png" xmltv_id="">HORSE TV HD</channel>
+  <channel site="tivu.tv" site_id="292" lang="it" logo="https://services.tivulaguida.it/uploads/channel/63024aa63dc88492c73097446ef0b70344de5390.png" xmltv_id="">27 Twentyseven HD</channel>
+  <channel site="tivu.tv" site_id="293" lang="it" logo="https://services.tivulaguida.it/uploads/channel/fe92d39c71119c74259b0b916933350143fbe731.png" xmltv_id="">MARCOPOLO TRAVEL TV</channel>
+  <channel site="tivu.tv" site_id="294" lang="it" logo="https://services.tivulaguida.it/uploads/channel/4e8959ab8b6075724228c52d05da7ba17008b0c6.png" xmltv_id="">DISCOVERY</channel>
+  <channel site="tivu.tv" site_id="295" lang="it" logo="https://services.tivulaguida.it/uploads/channel/2e4895e10989d66dbdc770c4f2d81ed9e40ebb2f.png" xmltv_id="">SOLOCALCIO</channel>
+  <channel site="tivu.tv" site_id="296" lang="it" logo="https://services.tivulaguida.it/uploads/channel/0fea1459e1fbc1d0ab8c0678e022c9643c67820c.png" xmltv_id="">RAI RADIO 2 VISUAL</channel>
+  <channel site="tivu.tv" site_id="299" lang="it" logo="https://services.tivulaguida.it/uploads/channel/ce128355c763accac1c684cff4c71e0bacab6104.png" xmltv_id="">WEDOTV MOVIES</channel>
+  <channel site="tivu.tv" site_id="308" lang="it" logo="https://services.tivulaguida.it/uploads/channel/4c9d90927b134deaccea81150731367e32497c6a.png" xmltv_id="">WEDOTV BIG STORIES</channel>
+  <channel site="tivu.tv" site_id="309" lang="it" logo="https://services.tivulaguida.it/uploads/channel/fd22f5bae586ee90f780465c1a714a724a159ceb.png" xmltv_id="">Daystar</channel>
+  <channel site="tivu.tv" site_id="104" lang="it" logo="https://services.tivulaguida.it/uploads/channel/1fdce26ec2a3b5c5a7cda805b49f11d073f6e29d.png" xmltv_id="20.it@SD">CNBC HD</channel>
+  <channel site="tivu.tv" site_id="136" lang="it" logo="https://services.tivulaguida.it/uploads/channel/bace5f5ecf515c5f85a9438d0e01bf9c8da627dd.png" xmltv_id="France24.fr@English">Radio Italia Tv HD</channel>
+  <channel site="tivu.tv" site_id="137" lang="it" logo="https://services.tivulaguida.it/uploads/channel/d4f264b4f5aaed7b3e812355e8aa02b13cff3cb5.png" xmltv_id="France24.fr@French">TRT World HD</channel>
+  <channel site="tivu.tv" site_id="106" lang="it" logo="https://services.tivulaguida.it/uploads/channel/fa764a71c0eabebb96d5cfc8cf527be7ee349a33.png" xmltv_id="Iris.it@SD">Rai Movie HD</channel>
+  <channel site="tivu.tv" site_id="140" lang="it" logo="https://services.tivulaguida.it/uploads/channel/67157ffdf0ab5d44caa204c813402aafbc788ed7.png" xmltv_id="Italia1.it@SD">NOVE HD</channel>
+  <channel site="tivu.tv" site_id="149" lang="it" logo="https://services.tivulaguida.it/uploads/channel/234998628c11b45f64787c3220ef839bc8a2150f.png" xmltv_id="MediasetExtra.it@SD">La7 HD</channel>
+  <channel site="tivu.tv" site_id="120" lang="it" logo="https://services.tivulaguida.it/uploads/channel/2a2bf070969a3e59065ac68e25b629df6c7d65f6.png" xmltv_id="RaiMovie.it@SD">Rai 5 HD</channel>
+  <channel site="tivu.tv" site_id="141" lang="it" logo="https://services.tivulaguida.it/uploads/channel/fa94faff70f63e65baf8a491591a2dc4db5f7ba5.png" xmltv_id="Rete4.it@SD">Super!</channel>
+  <channel site="tivu.tv" site_id="128" lang="it" logo="https://services.tivulaguida.it/uploads/channel/44292586620a2eab9f04289b10796a66876841cd.png" xmltv_id="RTL1025TV.it@SD">Mezzo</channel>
 </channels>
