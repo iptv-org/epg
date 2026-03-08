@@ -77,11 +77,15 @@ module.exports = {
   days: 2,
   url: async function ({ channel, date }) {
     const [region, site_id] = channel.site_id.split('#')
-    if(!canalToken[region]) canalToken[region] = await parseToken(region || 'fr')
-    const path = region === 'pl' ? 'mycanalint' : 'mycanal'
+    const currentRegion = region || 'fr'
+    if(!canalToken[currentRegion] || canalToken.lastRegion !== currentRegion) {
+      canalToken[currentRegion] = await parseToken(currentRegion)
+      canalToken.lastRegion = currentRegion
+    }
+    const path = currentRegion === 'pl' ? 'mycanalint' : 'mycanal'
     const diff = date.diff(dayjs.utc().startOf('d'), 'd')
 
-    return `https://hodor.canalplus.pro/api/v2/${path}/channels/${canalToken[region].token}/${site_id}/broadcasts/day/${diff}`
+    return `https://hodor.canalplus.pro/api/v2/${path}/channels/${canalToken[currentRegion].token}/${site_id}/broadcasts/day/${diff}`
   },
   request:{
     headers() {
