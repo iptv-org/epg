@@ -1,8 +1,26 @@
-- name: Publish to Cloudflare Pages
-  uses: cloudflare/pages-action@v1
-  with:
-    apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-    accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-    projectName: 'epg'  # Exakt dein Pages Project Name
-    directory: public
-    gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+name: Test EPG Deploy
+
+# Wichtig: Erlaubt den manuellen Start
+on:
+  workflow_dispatch:
+
+jobs:
+  test-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Create test file
+        run: |
+          mkdir -p public
+          echo "<h1>EPG Test erfolgreich</h1>" > public/index.html
+
+      - name: Publish to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: 'epg'  # Exakt dein Pages Project Name
+          directory: public
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
