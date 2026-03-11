@@ -12,14 +12,21 @@ jobs:
       - name: EPG herunterladen
         run: |
           mkdir -p public/epg/de
+          echo "📡 Lade EPG von open-epg.com..."
           curl -L -o public/epg/de/gesamt.xml "https://www.open-epg.com/files/germany1.xml"
-          echo "✅ EPG geladen"
+          echo "✅ EPG geladen: $(wc -l < public/epg/de/gesamt.xml) Zeilen"
       
-      - name: Deploy zu Cloudflare
-        uses: cloudflare/pages-action@v1
+      - name: Warten auf Cloudflare (10 Sekunden)
+        run: sleep 10
+      
+      - name: Zu Cloudflare deployen (mit Retry)
+        uses: nick-fields/retry@v2
         with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: "iptv-epg-data"
-          directory: public
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          timeout_minutes: 2
+          max_attempts: 3
+          retry_on: error
+          command: |
+            npx wrangler pages deploy public --project-name=iptv-epg-data --branch=main
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
