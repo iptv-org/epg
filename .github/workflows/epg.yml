@@ -1,26 +1,50 @@
-name: Test EPG Deploy
+name: EPG generieren
 
-# Wichtig: Erlaubt den manuellen Start
 on:
-  workflow_dispatch:
+  schedule:
+    # Täglich um 2:00 UTC
+    - cron: '0 2 * * *'
+  workflow_dispatch:  # Manueller Start
 
 jobs:
-  test-deploy:
+  generate-epg:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: 📦 Repository auschecken
         uses: actions/checkout@v3
-
-      - name: Create test file
+      
+      - name: 🔧 Node.js einrichten
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      
+      - name: 📡 EPG generieren
         run: |
-          mkdir -p public
-          echo "<h1>EPG Test erfolgreich</h1>" > public/index.html
-
-      - name: Publish to Cloudflare Pages
+          echo "🚀 Generiere EPG für Deutschland..."
+          
+          # Verzeichnis erstellen
+          mkdir -p public/epg/de
+          
+          # Hier kommt IHR EPG-Generierungs-Code rein!
+          # Z.B. mit iptv-org/epg Tool:
+          git clone --depth 1 https://github.com/iptv-org/epg.git
+          cd epg
+          npm install
+          npm run grab --- --site=ard.de --output=../public/epg/de/ard.de.xml --days=7
+          
+          cd ..
+          
+          # Index erstellen
+          cd public/epg/de
+          echo "{\"lastUpdate\":\"$(date -Iseconds)\",\"country\":\"Deutschland\",\"totalChannels\":1,\"channels\":[{\"channel\":\"ard.de\",\"file\":\"ard.de.xml\"}]}" > index.json
+          
+          echo "✅ EPG generiert"
+      
+      - name: 📤 Nach Cloudflare Pages deployen
         uses: cloudflare/pages-action@v1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: 'epg'  # Exakt dein Pages Project Name
+          projectName: "epg"  # Ihr Projektname
           directory: public
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
