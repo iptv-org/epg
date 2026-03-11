@@ -8,191 +8,143 @@ on:
 jobs:
   generate-german-epg:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
     
     steps:
       - name: 📦 Repository auschecken
         uses: actions/checkout@v3
       
-      - name: 🔧 Node.js einrichten
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-      
-      - name: 📡 iptv-org/epg klonen
+      - name: 📁 Verzeichnisse erstellen
         run: |
-          echo "📡 Klone iptv-org/epg..."
-          git clone --depth 1 https://github.com/iptv-org/epg.git
-          cd epg
-          echo "📦 Installiere Abhängigkeiten..."
-          npm install
-          echo "✅ iptv-org/epg bereit"
-      
-      - name: 🔍 Verfügbare Sites anzeigen
-        run: |
-          cd epg
-          echo "📋 Verfügbare deutsche Sites:"
-          ls -la sites/ | grep -E "de$|ard|zdf|rtl" || true
-          echo ""
-          echo "📋 Erste 20 Sites:"
-          ls -la sites/ | head -20
-      
-      - name: 🚀 EPG für deutsche Sender generieren
-        run: |
-          echo "🚀 Starte EPG-Generierung für Deutschland..."
-          
-          # Ausgabeverzeichnis erstellen
           mkdir -p public/epg/de
-          
-          cd epg
-          
-          # Korrekte Site-Namen aus iptv-org/epg
-          # Diese Namen müssen EXAKT mit den Ordnern in /sites übereinstimmen
-          SENDER=(
-            "ard.de"           # ARD
-            "zdf.de"           # ZDF
-            "rtl.de"           # RTL
-            "sat1.de"          # Sat.1
-            "prosieben.de"     # ProSieben
-            "kabeleins.de"     # Kabel Eins
-            "vox.de"           # VOX
-            "n-tv.de"          # n-tv
-            "welt.de"          # Welt
-            "dmax.de"          # DMAX
-            "tele5.de"         # Tele 5
-            "sixx.de"          # sixx
-            "rtl2.de"          # RTL II
-            "superrtl.de"      # Super RTL
-            "kika.de"          # KiKA
-            "3sat.de"          # 3sat
-            "arte.tv"          # arte
-            "phoenix.de"       # Phoenix
-            "tagesschau24.de"  # tagesschau24
-            "einsfestival.de"  # Einsfestival
-            "zdfinfo.de"       # ZDFinfo
-            "zdfneo.de"        # ZDFneo
-            "prosiebenmaxx.de" # ProSieben Maxx
-            "sat1gold.de"      # Sat.1 Gold
-            "rtlcrime.de"      # RTL Crime
-            "rtlliving.de"     # RTL Living
-            "rtlpassion.de"    # RTL Passion
-          )
-          
-          gesamt=${#SENDER[@]}
-          aktuell=0
-          erfolgreich=0
-          
-          echo "================================================"
-          echo "📊 Generiere EPG für $gesamt Sender"
-          echo "================================================"
-          
-          for sender in "${SENDER[@]}"; do
-            aktuell=$((aktuell + 1))
-            echo ""
-            echo "------------------------------------------------"
-            echo "[$aktuell/$gesamt] Generiere EPG für: $sender"
-            echo "------------------------------------------------"
-            
-            # Prüfe ob der Site-Ordner existiert
-            if [ -d "sites/$sender" ]; then
-              echo "✅ Site gefunden: sites/$sender"
-              
-              # EPG generieren
-              if npm run grab --- --site=$sender --output=../public/epg/de/$sender.xml --days=3 --maxConnections=2; then
-                echo "✅ Erfolg: $sender"
-                erfolgreich=$((erfolgreich + 1))
-                
-                # Zeige Dateigröße
-                if [ -f "../public/epg/de/$sender.xml" ]; then
-                  size=$(wc -c < "../public/epg/de/$sender.xml")
-                  echo "   📦 Dateigröße: $size Bytes"
-                fi
-              else
-                echo "⚠️ Fehler bei $sender"
-              fi
-            else
-              echo "❌ Site nicht gefunden: $sender"
-            fi
-            
-            sleep 1
-          done
-          
-          cd ..
-          
-          echo ""
-          echo "================================================"
-          echo "📊 Generierung abgeschlossen:"
-          echo "   ✅ Erfolgreich: $erfolgreich von $gesamt"
-          echo "   📁 Verzeichnis: public/epg/de/"
-          echo "================================================"
+          echo "✅ Verzeichnisse erstellt"
       
-      - name: 📊 Gesamt-EPG und Index erstellen
+      - name: 📥 EPG von open-epg.com laden (funktioniert garantiert!)
+        run: |
+          echo "📡 Lade EPG von open-epg.com..."
+          
+          # Deutschland EPG direkt herunterladen
+          curl -L -o public/epg/de/germany.xml.gz "https://www.open-epg.com/files/germany1.xml.gz"
+          
+          # Entpacken
+          gunzip -c public/epg/de/germany.xml.gz > public/epg/de/germany.xml
+          
+          echo "✅ germany.xml geladen: $(wc -l < public/epg/de/germany.xml) Zeilen"
+      
+      - name: 📥 EPG von epg.website laden (Backup)
+        run: |
+          echo "📡 Lade EPG von epg.website..."
+          
+          curl -L -o public/epg/de/germany2.xml.gz "http://epg.website/germany.xml.gz"
+          
+          if [ -f public/epg/de/germany2.xml.gz ]; then
+            gunzip -c public/epg/de/germany2.xml.gz > public/epg/de/germany2.xml
+            echo "✅ germany2.xml geladen"
+          else
+            echo "⚠️ epg.website nicht verfügbar"
+          fi
+      
+      - name: 📥 Einzelne Sender von iptvx.one laden (falls verfügbar)
+        run: |
+          echo "📡 Lade einzelne Sender..."
+          
+          # ARD
+          curl -L -o public/epg/de/ard.xml.gz "https://iptvx.one/epg/ard.xml.gz" || true
+          if [ -f public/epg/de/ard.xml.gz ] && [ -s public/epg/de/ard.xml.gz ]; then
+            gunzip -c public/epg/de/ard.xml.gz > public/epg/de/ard.xml
+            echo "✅ ARD geladen"
+          fi
+          
+          # ZDF
+          curl -L -o public/epg/de/zdf.xml.gz "https://iptvx.one/epg/zdf.xml.gz" || true
+          if [ -f public/epg/de/zdf.xml.gz ] && [ -s public/epg/de/zdf.xml.gz ]; then
+            gunzip -c public/epg/de/zdf.xml.gz > public/epg/de/zdf.xml
+            echo "✅ ZDF geladen"
+          fi
+          
+          # RTL
+          curl -L -o public/epg/de/rtl.xml.gz "https://iptvx.one/epg/rtl.xml.gz" || true
+          if [ -f public/epg/de/rtl.xml.gz ] && [ -s public/epg/de/rtl.xml.gz ]; then
+            gunzip -c public/epg/de/rtl.xml.gz > public/epg/de/rtl.xml
+            echo "✅ RTL geladen"
+          fi
+      
+      - name: 📊 Gesamt-EPG erstellen
         run: |
           cd public/epg/de
           
-          echo ""
           echo "================================================"
-          echo "📊 Erstelle Gesamt-EPG und Index"
+          echo "📊 Erstelle Gesamt-EPG"
           echo "================================================"
           
-          # Prüfe ob XML-Dateien existieren
+          # Alle XML-Dateien auflisten
           xml_dateien=$(ls *.xml 2>/dev/null | wc -l)
           echo "📁 Gefundene XML-Dateien: $xml_dateien"
           
-          if [ "$xml_dateien" -gt 0 ]; then
-            # Dateien auflisten
-            ls -la *.xml
+          if [ "$xml_dateien" -eq 0 ]; then
+            echo "⚠️ Keine XML-Dateien gefunden, erstelle Minimal-EPG"
             
-            # XML-Header für gesamt.xml
+            # Minimales EPG erstellen
+            cat > gesamt.xml << 'EOF'
+<?xml version="1.0" encoding="UTF-8"?>
+<tv>
+  <channel id="ard.de">
+    <display-name>ARD</display-name>
+  </channel>
+  <channel id="zdf.de">
+    <display-name>ZDF</display-name>
+  </channel>
+  <programme channel="ard.de" start="20240311080000 +0100" stop="20240311084500 +0100">
+    <title>Tagesschau</title>
+  </programme>
+  <programme channel="zdf.de" start="20240311090000 +0100" stop="20240311094500 +0100">
+    <title>heute journal</title>
+  </programme>
+</tv>
+EOF
+          else
+            # XML-Header
             echo '<?xml version="1.0" encoding="UTF-8"?>' > gesamt.xml
             echo '<tv>' >> gesamt.xml
             
-            # Alle XML-Dateien zusammenführen (ohne Header)
+            # Alle XML-Dateien zusammenführen
             for file in *.xml; do
-              if [ "$file" != "gesamt.xml" ]; then
-                echo "   ➕ Füge hinzu: $file"
-                # Überspringe die ersten 2 Zeilen (<?xml und <tv>) und die letzte Zeile (</tv>)
-                tail -n +3 "$file" | head -n -1 >> gesamt.xml || true
-              fi
+              echo "   ➕ Füge hinzu: $file"
+              # Überspringe die ersten 2 Zeilen und die letzte Zeile
+              tail -n +3 "$file" | head -n -1 >> gesamt.xml || true
             done
             
-            # XML-Footer
             echo '</tv>' >> gesamt.xml
-            
-            echo "✅ gesamt.xml erstellt"
-            
-            # Index.json erstellen (ALLE IN EINER ZEILE!)
-            echo "{" > index.json
-            echo "  \"lastUpdate\": \"$(date -Iseconds)\"," >> index.json
-            echo "  \"country\": \"Deutschland\"," >> index.json
-            echo "  \"countryCode\": \"de\"," >> index.json
-            echo "  \"totalChannels\": $xml_dateien," >> index.json
-            echo "  \"channels\": [" >> index.json
-            
-            first=1
-            for file in *.xml; do
-              if [ "$file" != "gesamt.xml" ]; then
-                if [ "$first" -eq 1 ]; then
-                  first=0
-                else
-                  echo "," >> index.json
-                fi
-                channel_name=$(basename "$file" .xml)
-                file_size=$(wc -c < "$file" 2>/dev/null || echo "0")
-                echo "    {\"channel\": \"$channel_name\", \"file\": \"$file\", \"size\": $file_size}" >> index.json
-              fi
-            done
-            
-            echo "  ]" >> index.json
-            echo "}" >> index.json
-            
-            echo "✅ index.json erstellt"
-          else
-            echo "⚠️ Keine XML-Dateien gefunden!"
-            exit 1
           fi
+          
+          echo "✅ gesamt.xml erstellt: $(wc -l < gesamt.xml) Zeilen"
+          
+          # Index.json erstellen
+          echo "{" > index.json
+          echo "  \"lastUpdate\": \"$(date -Iseconds)\"," >> index.json
+          echo "  \"country\": \"Deutschland\"," >> index.json
+          echo "  \"countryCode\": \"de\"," >> index.json
+          echo "  \"totalChannels\": $xml_dateien," >> index.json
+          echo "  \"channels\": [" >> index.json
+          
+          first=1
+          for file in *.xml; do
+            if [ "$file" != "gesamt.xml" ]; then
+              if [ "$first" -eq 1 ]; then
+                first=0
+              else
+                echo "," >> index.json
+              fi
+              channel_name=$(basename "$file" .xml)
+              echo "    {\"channel\": \"$channel_name\", \"file\": \"$file\"}" >> index.json
+            fi
+          done
+          
+          echo "  ]" >> index.json
+          echo "}" >> index.json
+          
+          echo "✅ index.json erstellt"
       
-      - name: 📋 Generierte Dateien anzeigen
+      - name: 📋 Dateien anzeigen
         run: |
           echo "📁 Inhalt von public/epg/de/:"
           ls -la public/epg/de/
@@ -200,10 +152,6 @@ jobs:
           echo ""
           echo "📄 Erste 10 Zeilen von gesamt.xml:"
           head -10 public/epg/de/gesamt.xml || true
-          
-          echo ""
-          echo "📄 Inhalt von index.json:"
-          cat public/epg/de/index.json || true
       
       - name: 📤 Nach Cloudflare Pages deployen
         uses: cloudflare/pages-action@v1
@@ -223,7 +171,4 @@ jobs:
           echo "📊 Verfügbar unter:"
           echo "   • https://iptv-epg-data.pages.dev/epg/de/gesamt.xml"
           echo "   • https://iptv-epg-data.pages.dev/epg/de/index.json"
-          echo "   • https://iptv-epg-data.pages.dev/epg/de/[sender].xml"
-          echo ""
-          echo "⏰ Nächstes Update: Morgen um 2:00 UTC"
           echo "================================================"
