@@ -7,52 +7,44 @@ jobs:
   generate-epg:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
       
-      - name: EPG für ALLE Länder erstellen
+      - name: EPG für alle Länder
         run: |
-          # Verzeichnis anlegen
+          # Verzeichnis
           mkdir -p public/epg
           
-          # 🌍 ALLE LÄNDER (ISO Codes)
-          COUNTRIES="de at ch fr it es pt nl be lu gb ie dk se no fi is pl cz sk hu ro bg rs hr si ba me mk al gr tr cy ee lv lt by ua md ru lu mt ad li gi gg im je us ca mx gt hn sv ni cr pa bz ar bo br cl co ec gy pe py sr uy ve dz ao bj bw bf bi cm cv cf td km cd cg ci dj eg gq er sz et ga gm gh gn gw ke ls lr ly mg mw ml mr mu ma mz na ne ng rw st sn sc sl so za ss sd tz tg tn ug zm zw af am az bh bd bt bn kh cn ge in id ir iq il jp jo kz kw kg la lb my mv mn mm np om pk ps ph qa sa sg kr lk sy tw tj th tl tr tm ae uz vn ye hk mo au fj ki mh fm nr nz pw pg ws sb to tv vu"
+          # Alle Länder
+          countries="de at ch fr it es pt nl be lu gb ie dk se no fi is pl cz sk hu ro bg rs hr si ba me mk al gr tr cy ee lv lt by ua md ru lu mt ad li gi gg im je us ca mx gt hn sv ni cr pa bz ar bo br cl co ec gy pe py sr uy ve dz ao bj bw bf bi cm cv cf td km cd cg ci dj eg gq er sz et ga gm gh gn gw ke ls lr ly mg mw ml mr mu ma mz na ne ng rw st sn sc sl so za ss sd tz tg tn ug zm zw af am az bh bd bt bn kh cn ge in id ir iq il jp jo kz kw kg la lb my mv mn mm np om pk ps ph qa sa sg kr lk sy tw tj th tl tr tm ae uz vn ye hk mo au fj ki mh fm nr nz pw pg ws sb to tv vu"
           
-          # Für jedes Land eine EPG-Datei
-          for country in $COUNTRIES; do
-            cat > public/epg/$country.xml << EOF
+          # EPG für jedes Land
+          for c in $countries; do
+            cat > public/epg/$c.xml << EOF
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="${country}1">
-    <display-name>${country^^} 1</display-name>
+  <channel id="$c.1">
+    <display-name>${c^^}</display-name>
   </channel>
-  <programme channel="${country}1" start="$(date -u +'%Y%m%d%H%M%S') +0000" stop="$(date -u -d '+1 hour' +'%Y%m%d%H%M%S') +0000">
-    <title>Programm ${country^^}</title>
+  <programme channel="$c.1" start="$(date -u +'%Y%m%d%H%M%S') +0000" stop="$(date -u -d '+1 hour' +'%Y%m%d%H%M%S') +0000">
+    <title>Programm</title>
   </programme>
 </tv>
 EOF
-            echo "✅ $country.xml"
           done
           
           # Index
-          cat > public/epg/index.json << EOF
-          {
-            "lastUpdate": "$(date -Iseconds)",
-            "countries": [
-          EOF
-          
+          echo "{\"lastUpdate\":\"$(date -Iseconds)\",\"countries\":[" > public/epg/index.json
           first=1
-          for country in $COUNTRIES; do
+          for c in $countries; do
             if [ $first -eq 1 ]; then first=0; else echo "," >> public/epg/index.json; fi
-            echo "    {\"code\":\"$country\",\"file\":\"$country.xml\"}" >> public/epg/index.json
+            echo "{\"code\":\"$c\"}" >> public/epg/index.json
           done
+          echo "]}" >> public/epg/index.json
           
-          echo "  ]" >> public/epg/index.json
-          echo "}" >> public/epg/index.json
-          
-          echo ""
-          echo "✅ EPG für $(echo $COUNTRIES | wc -w) Länder erstellt!"
+          ls -la public/epg/
       
-      - name: Nach Cloudflare Pages deployen
+      - name: Deploy
         uses: cloudflare/pages-action@v1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
