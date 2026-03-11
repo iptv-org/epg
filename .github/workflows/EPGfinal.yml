@@ -1,159 +1,21 @@
-name: EPG für Deutschland generieren
+name: EPG Deutschland
 
 on:
-  schedule:
-    - cron: '0 2 * * *'
   workflow_dispatch:
 
 jobs:
-  generate-german-epg:
+  generate:
     runs-on: ubuntu-latest
-    
     steps:
-      - name: 📦 Repository auschecken
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
       
-      - name: 📁 Verzeichnisse erstellen
+      - name: EPG herunterladen
         run: |
           mkdir -p public/epg/de
-          echo "✅ Verzeichnisse erstellt"
+          curl -L -o public/epg/de/gesamt.xml "https://www.open-epg.com/files/germany1.xml"
+          echo "✅ EPG geladen"
       
-      - name: 📥 EPG von open-epg.com laden (funktioniert garantiert!)
-        run: |
-          echo "📡 Lade EPG von open-epg.com..."
-          
-          # Deutschland EPG direkt herunterladen
-          curl -L -o public/epg/de/germany.xml.gz "https://www.open-epg.com/files/germany1.xml.gz"
-          
-          # Entpacken
-          gunzip -c public/epg/de/germany.xml.gz > public/epg/de/germany.xml
-          
-          echo "✅ germany.xml geladen: $(wc -l < public/epg/de/germany.xml) Zeilen"
-      
-      - name: 📥 EPG von epg.website laden (Backup)
-        run: |
-          echo "📡 Lade EPG von epg.website..."
-          
-          curl -L -o public/epg/de/germany2.xml.gz "http://epg.website/germany.xml.gz"
-          
-          if [ -f public/epg/de/germany2.xml.gz ]; then
-            gunzip -c public/epg/de/germany2.xml.gz > public/epg/de/germany2.xml
-            echo "✅ germany2.xml geladen"
-          else
-            echo "⚠️ epg.website nicht verfügbar"
-          fi
-      
-      - name: 📥 Einzelne Sender von iptvx.one laden (falls verfügbar)
-        run: |
-          echo "📡 Lade einzelne Sender..."
-          
-          # ARD
-          curl -L -o public/epg/de/ard.xml.gz "https://iptvx.one/epg/ard.xml.gz" || true
-          if [ -f public/epg/de/ard.xml.gz ] && [ -s public/epg/de/ard.xml.gz ]; then
-            gunzip -c public/epg/de/ard.xml.gz > public/epg/de/ard.xml
-            echo "✅ ARD geladen"
-          fi
-          
-          # ZDF
-          curl -L -o public/epg/de/zdf.xml.gz "https://iptvx.one/epg/zdf.xml.gz" || true
-          if [ -f public/epg/de/zdf.xml.gz ] && [ -s public/epg/de/zdf.xml.gz ]; then
-            gunzip -c public/epg/de/zdf.xml.gz > public/epg/de/zdf.xml
-            echo "✅ ZDF geladen"
-          fi
-          
-          # RTL
-          curl -L -o public/epg/de/rtl.xml.gz "https://iptvx.one/epg/rtl.xml.gz" || true
-          if [ -f public/epg/de/rtl.xml.gz ] && [ -s public/epg/de/rtl.xml.gz ]; then
-            gunzip -c public/epg/de/rtl.xml.gz > public/epg/de/rtl.xml
-            echo "✅ RTL geladen"
-          fi
-      
-      - name: 📊 Gesamt-EPG erstellen
-        run: |
-          cd public/epg/de
-          
-          echo "================================================"
-          echo "📊 Erstelle Gesamt-EPG"
-          echo "================================================"
-          
-          # Alle XML-Dateien auflisten
-          xml_dateien=$(ls *.xml 2>/dev/null | wc -l)
-          echo "📁 Gefundene XML-Dateien: $xml_dateien"
-          
-          if [ "$xml_dateien" -eq 0 ]; then
-            echo "⚠️ Keine XML-Dateien gefunden, erstelle Minimal-EPG"
-            
-            # Minimales EPG erstellen
-            cat > gesamt.xml << 'EOF'
-<?xml version="1.0" encoding="UTF-8"?>
-<tv>
-  <channel id="ard.de">
-    <display-name>ARD</display-name>
-  </channel>
-  <channel id="zdf.de">
-    <display-name>ZDF</display-name>
-  </channel>
-  <programme channel="ard.de" start="20240311080000 +0100" stop="20240311084500 +0100">
-    <title>Tagesschau</title>
-  </programme>
-  <programme channel="zdf.de" start="20240311090000 +0100" stop="20240311094500 +0100">
-    <title>heute journal</title>
-  </programme>
-</tv>
-EOF
-          else
-            # XML-Header
-            echo '<?xml version="1.0" encoding="UTF-8"?>' > gesamt.xml
-            echo '<tv>' >> gesamt.xml
-            
-            # Alle XML-Dateien zusammenführen
-            for file in *.xml; do
-              echo "   ➕ Füge hinzu: $file"
-              # Überspringe die ersten 2 Zeilen und die letzte Zeile
-              tail -n +3 "$file" | head -n -1 >> gesamt.xml || true
-            done
-            
-            echo '</tv>' >> gesamt.xml
-          fi
-          
-          echo "✅ gesamt.xml erstellt: $(wc -l < gesamt.xml) Zeilen"
-          
-          # Index.json erstellen
-          echo "{" > index.json
-          echo "  \"lastUpdate\": \"$(date -Iseconds)\"," >> index.json
-          echo "  \"country\": \"Deutschland\"," >> index.json
-          echo "  \"countryCode\": \"de\"," >> index.json
-          echo "  \"totalChannels\": $xml_dateien," >> index.json
-          echo "  \"channels\": [" >> index.json
-          
-          first=1
-          for file in *.xml; do
-            if [ "$file" != "gesamt.xml" ]; then
-              if [ "$first" -eq 1 ]; then
-                first=0
-              else
-                echo "," >> index.json
-              fi
-              channel_name=$(basename "$file" .xml)
-              echo "    {\"channel\": \"$channel_name\", \"file\": \"$file\"}" >> index.json
-            fi
-          done
-          
-          echo "  ]" >> index.json
-          echo "}" >> index.json
-          
-          echo "✅ index.json erstellt"
-      
-      - name: 📋 Dateien anzeigen
-        run: |
-          echo "📁 Inhalt von public/epg/de/:"
-          ls -la public/epg/de/
-          
-          echo ""
-          echo "📄 Erste 10 Zeilen von gesamt.xml:"
-          head -10 public/epg/de/gesamt.xml || true
-      
-      - name: 📤 Nach Cloudflare Pages deployen
+      - name: Deploy zu Cloudflare
         uses: cloudflare/pages-action@v1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -161,14 +23,3 @@ EOF
           projectName: "iptv-epg-data"
           directory: public
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-      
-      - name: ✅ Abschluss
-        run: |
-          echo ""
-          echo "================================================"
-          echo "✅ EPG-Update erfolgreich abgeschlossen!"
-          echo "================================================"
-          echo "📊 Verfügbar unter:"
-          echo "   • https://iptv-epg-data.pages.dev/epg/de/gesamt.xml"
-          echo "   • https://iptv-epg-data.pages.dev/epg/de/index.json"
-          echo "================================================"
