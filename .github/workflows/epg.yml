@@ -1,137 +1,24 @@
-name: EPG Weltweit generieren
+name: EPG Simple
 
 on:
-  schedule:
-    - cron: '0 2 * * *'
   workflow_dispatch:
 
 jobs:
-  generate-worldwide-epg:
+  build:
     runs-on: ubuntu-latest
-    timeout-minutes: 180
-    
     steps:
-      - name: 📦 Repository auschecken
+      - name: Checkout
         uses: actions/checkout@v3
       
-      - name: 🔧 Node.js einrichten
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-      
-      - name: 📡 iptv-org/epg klonen
+      - name: Create EPG files
         run: |
-          echo "📡 Klone iptv-org/epg..."
-          git clone --depth 1 https://github.com/iptv-org/epg.git
-          cd epg
-          echo "📦 Installiere Abhängigkeiten..."
-          npm install
-          echo "✅ iptv-org/epg bereit"
-      
-      - name: 🌍 EPG für ALLE Länder generieren
-        run: |
-          echo "🚀 Starte EPG-Generierung für ALLE Länder..."
-          
-          # Ausgabeverzeichnis erstellen
           mkdir -p public/epg
-          
-          cd epg
-          
-          # 📋 ALLE LÄNDER (folded multiline YAML)
-          ALL_COUNTRIES: >-
-            de at ch fr it es pt nl be lu gb ie dk se no fi is pl cz sk hu ro bg rs hr si ba me mk al gr tr cy ee lv lt by ua md ru mt ad li gi gg im je us ca mx gt hn sv ni cr pa bz ar bo br cl co ec gy pe py sr uy ve dz ao bj bw bf bi cm cv cf td km cd cg ci dj eg gq er sz et ga gm gh gn gw ke ls lr ly mg mw ml mr mu ma mz na ne ng rw st sn sc sl so za ss sd tz tg tn ug zm zw af am az bh bd bt bn kh cn ge in id ir iq il jp jo kz kw kg la lb my mv mn mm np om pk ps ph qa sa sg kr lk sy tw tj th tl tm ae uz vn ye hk mo au fj ki mh fm nr nz pw pg ws sb to tv vu
-          
-          IFS=' ' read -r -a COUNTRIES_ARRAY <<< "$ALL_COUNTRIES"
-          total=${#COUNTRIES_ARRAY[@]}
-          current=0
-          successful=0
-          
-          echo "================================================"
-          echo "📊 Generiere EPG für $total Länder"
-          echo "================================================"
-          
-          for country in "${COUNTRIES_ARRAY[@]}"; do
-            current=$((current + 1))
-            echo ""
-            echo "------------------------------------------------"
-            echo "[$current/$total] 🌍 Verarbeite: $country"
-            echo "------------------------------------------------"
-            
-            # EPG für dieses Land generieren
-            if npm run grab -- --site=$country --output=../public/epg/$country.xml --days=3 --maxConnections=5 --timeout=60000; then
-              echo "✅ Erfolg: $country"
-              successful=$((successful + 1))
-              
-              # Zeige Dateigröße
-              if [ -f ../public/epg/$country.xml ]; then
-                size=$(wc -c < ../public/epg/$country.xml)
-                programmes=$(grep -c "<programme" ../public/epg/$country.xml 2>/dev/null || echo "0")
-                echo "   📦 Größe: $size Bytes"
-                echo "   📺 Programme: $programmes"
-              fi
-            else
-              echo "⚠️ Fehler bei $country - erstelle Platzhalter"
-              
-              # Platzhalter-XML mit printf (YAML-sicher)
-              printf '<?xml version="1.0" encoding="UTF-8"?>
-<tv>
-  <channel id="%s">
-    <display-name>%s</display-name>
-  </channel>
-  <programme channel="%s" start="%s +0000" stop="%s +0000">
-    <title>EPG für %s</title>
-    <desc>Programmdaten werden in Kürze verfügbar sein.</desc>
-  </programme>
-</tv>
-' "$country" "${country^^}" "$country" "$(date -u +'%Y%m%d%H%M%S')" "$(date -u -d '+1 day' +'%Y%m%d%H%M%S')" "${country^^}" > ../public/epg/$country.xml
-              
-              echo "   📦 Platzhalter erstellt"
-            fi
-            
-            # Kleine Pause zwischen den Ländern
-            sleep 1
-          done
-          
-          cd ..
-          
-          echo ""
-          echo "================================================"
-          echo "📊 GENERIERUNG ABGESCHLOSSEN"
-          echo "================================================"
-          echo "   ✅ Erfolgreich: $successful von $total Ländern"
-          echo "================================================"
+          echo "Deutschland EPG" > public/epg/de.txt
+          echo "Italien EPG" > public/epg/it.txt
+          echo "Frankreich EPG" > public/epg/fr.txt
+          ls -la public/epg/
       
-      - name: 📊 Master-Index erstellen
-        run: |
-          cd public/epg
-          
-          # Alle XML-Dateien erfassen und JSON bauen
-          echo '{
-            "lastUpdate": "'$(date -Iseconds)'",
-            "totalCountries": '$(ls *.xml 2>/dev/null | wc -l)',
-            "countries": [' > master-index.json
-          
-          first=1
-          for file in *.xml; do
-            if [ "$first" -eq 1 ]; then
-              first=0
-            else
-              echo "," >> master-index.json
-            fi
-            
-            country=$(basename "$file" .xml)
-            size=$(wc -c < "$file")
-            programmes=$(grep -c "<programme" "$file" 2>/dev/null || echo "0")
-            
-            echo "    {\"code\":\"$country\",\"file\":\"$file\",\"size\":$size,\"programmes\":$programmes}" >> master-index.json
-          done
-          
-          echo '  ]
-          }' >> master-index.json
-          
-          echo "✅ master-index.json erstellt"
-      
-      - name: 📤 Nach Cloudflare Pages deployen
+      - name: Deploy to Cloudflare
         uses: cloudflare/pages-action@v1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
