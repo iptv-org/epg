@@ -28,122 +28,149 @@ jobs:
           npm install
           echo "✅ iptv-org/epg bereit"
       
-      - name: 🌍 EPG für 20 Länder generieren
+      - name: 🌍 EPG für ALLE Länder generieren
         run: |
-          echo "🚀 Starte EPG-Generierung..."
+          echo "🚀 Starte EPG-Generierung für ALLE Länder..."
+          
+          # Ausgabeverzeichnis erstellen
           mkdir -p public/epg
+          
           cd epg
           
-          # Länder mit ihren Sendern
-          COUNTRIES=(
-            "de|ard.de,zdf.de,rtl.de"
-            "at|orf.at"
-            "ch|srf.ch"
-            "fr|tf1.fr,france2.fr"
-            "it|rai.it,mediaset.it"
-            "es|rtve.es,antena3.com"
-            "pt|rtp.pt"
-            "gb|bbc.co.uk,itv.com"
-            "us|abc.com,nbc.com"
-            "ca|cbc.ca"
-            "nl|npo.nl"
-            "be|rtbf.be"
-            "se|svt.se"
-            "no|nrk.no"
-            "dk|dr.dk"
-            "fi|yle.fi"
-            "pl|tvn.pl"
-            "cz|ceskatelevize.cz"
-            "hu|mtva.hu"
-            "ru|rtr.ru"
-          )
+          # 📋 ALLE LÄNDER DER WELT (ISO 3166-1)
+          # Quelle: https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes
+          cat > ../country-list.txt << 'EOF'
+          # Europa
+          de at ch fr it es pt nl be lu gb ie dk se no fi is pl cz sk hu ro bg rs hr si ba me mk al gr tr cy ee lv lt by ua md ru lu mt ad li gi gg im je
           
-          for country_entry in "${COUNTRIES[@]}"; do
-            IFS='|' read -r country senders <<< "$country_entry"
-            
+          # Nordamerika
+          us ca mx gt hn sv ni cr pa bz
+          
+          # Südamerika
+          ar bo br cl co ec gy pe py sr uy ve
+          
+          # Afrika
+          dz ao bj bw bf bi cm cv cf td km cd cg ci dj eg gq er sz et ga gm gh gn gw ke ls lr ly mg mw ml mr mu ma mz na ne ng rw st sn sc sl so za ss sd tz tg tn ug zm zw
+          
+          # Asien
+          af am az bh bd bt bn kh cn ge in id ir iq il jp jo kz kw kg la lb my mv mn mm np om pk ps ph qa sa sg kr lk sy tw tj th tl tr tm ae uz vn ye hk mo
+          
+          # Ozeanien
+          au fj ki mh fm nr nz pw pg ws sb to tv vu
+          EOF
+          
+          # Liste aller Länder einlesen (Leerzeichen und Zeilenumbrüche ignorieren)
+          ALL_COUNTRIES=$(cat ../country-list.txt | grep -v "^#" | tr '\n' ' ' | tr -s ' ')
+          
+          # In Array konvertieren
+          COUNTRIES_ARRAY=($ALL_COUNTRIES)
+          total=${#COUNTRIES_ARRAY[@]}
+          current=0
+          successful=0
+          
+          echo "================================================"
+          echo "📊 Generiere EPG für $total Länder"
+          echo "================================================"
+          
+          for country in "${COUNTRIES_ARRAY[@]}"; do
+            current=$((current + 1))
             echo ""
-            echo "🌍 Generiere EPG für: $country"
+            echo "------------------------------------------------"
+            echo "[$current/$total] 🌍 Verarbeite: $country"
+            echo "------------------------------------------------"
             
-            temp_file="../public/epg/$country.tmp"
-            final_file="../public/epg/$country.xml"
-            
-            > "$temp_file"
-            
-            IFS=',' read -ra sender_list <<< "$senders"
-            for sender in "${sender_list[@]}"; do
-              echo "   📺 $sender"
-              if npm run grab --- --site=$sender --output=sender_temp.xml --days=3 --maxConnections=2 --timeout=30000; then
-                if [ -f sender_temp.xml ]; then
-                  grep -v "<?xml" sender_temp.xml | grep -v "</tv>" >> "$temp_file" || true
-                  rm sender_temp.xml
-                fi
+            # EPG für dieses Land generieren
+            if npm run grab --- --site=$country --output=../public/epg/$country.xml --days=3 --maxConnections=5 --timeout=60000; then
+              echo "✅ Erfolg: $country"
+              successful=$((successful + 1))
+              
+              # Zeige Dateigröße
+              if [ -f ../public/epg/$country.xml ]; then
+                size=$(wc -c < ../public/epg/$country.xml)
+                programmes=$(grep -c "<programme" ../public/epg/$country.xml 2>/dev/null || echo "0")
+                echo "   📦 Größe: $size Bytes"
+                echo "   📺 Programme: $programmes"
               fi
-            done
-            
-            if [ -s "$temp_file" ]; then
-              echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?><tv>" > "$final_file"
-              cat "$temp_file" >> "$final_file"
-              echo "</tv>" >> "$final_file"
-              rm "$temp_file"
-              echo "✅ $country: $(wc -c < $final_file) Bytes"
             else
-              # Platzhalter erstellen
-              cat > "$final_file" << EOF
+              echo "⚠️ Fehler bei $country - erstelle Platzhalter"
+              
+              # Platzhalter-XML erstellen
+              cat > ../public/epg/$country.xml << EOF
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="$country"><display-name>$country</display-name></channel>
+  <channel id="$country">
+    <display-name>${country^^}</display-name>
+  </channel>
   <programme channel="$country" start="$(date -u +'%Y%m%d%H%M%S') +0000" stop="$(date -u -d '+1 day' +'%Y%m%d%H%M%S') +0000">
-    <title>EPG für $country</title>
+    <title>EPG für ${country^^}</title>
+    <desc>Programmdaten werden in Kürze verfügbar sein.</desc>
   </programme>
 </tv>
 EOF
-              [ -f "$temp_file" ] && rm "$temp_file"
-              echo "⚠️ $country: Platzhalter"
+              echo "   📦 Platzhalter erstellt"
             fi
+            
+            # Kleine Pause zwischen den Ländern
             sleep 1
           done
           
           cd ..
+          
+          echo ""
+          echo "================================================"
+          echo "📊 GENERIERUNG ABGESCHLOSSEN"
+          echo "================================================"
+          echo "   ✅ Erfolgreich: $successful von $total Ländern"
+          echo "================================================"
       
-      - name: 🗑️ Temporäre Dateien löschen
-        run: |
-          rm -f public/epg/*.tmp
-          echo "✅ Temporäre Dateien gelöscht"
-      
-      - name: 📊 Index.json erstellen
+      - name: 📊 Master-Index erstellen
         run: |
           cd public/epg
           
-          echo "{" > index.json
-          echo "  \"lastUpdate\": \"$(date -Iseconds)\"," >> index.json
-          echo "  \"totalCountries\": $(ls *.xml | wc -l)," >> index.json
-          echo "  \"countries\": [" >> index.json
+          # Alle XML-Dateien erfassen
+          echo "{" > master-index.json
+          echo "  \"lastUpdate\": \"$(date -Iseconds)\"," >> master-index.json
+          echo "  \"totalCountries\": $(ls *.xml 2>/dev/null | wc -l)," >> master-index.json
+          echo "  \"countries\": [" >> master-index.json
           
           first=1
           for file in *.xml; do
             if [ "$first" -eq 1 ]; then
               first=0
             else
-              echo "," >> index.json
+              echo "," >> master-index.json
             fi
+            
             country=$(basename "$file" .xml)
             size=$(wc -c < "$file")
-            echo "    {\"code\":\"$country\",\"file\":\"$file\",\"size\":$size}" >> index.json
+            programmes=$(grep -c "<programme" "$file" 2>/dev/null || echo "0")
+            
+            echo "    {\"code\":\"$country\",\"file\":\"$file\",\"size\":$size,\"programmes\":$programmes}" >> master-index.json
           done
           
-          echo "  ]" >> index.json
-          echo "}" >> index.json
+          echo "  ]" >> master-index.json
+          echo "}" >> master-index.json
           
-          echo "✅ index.json mit $(ls *.xml | wc -l) Ländern erstellt"
+          echo "✅ master-index.json erstellt"
+          
+          # Zeige Top 10 Länder
+          echo ""
+          echo "📊 TOP 10 Länder nach Programmen:"
+          for file in *.xml; do
+            prog=$(grep -c "<programme" "$file" 2>/dev/null || echo "0")
+            echo "$prog $file"
+          done | sort -nr | head -10 | while read line; do
+            echo "   $line"
+          done
       
       - name: 📋 Dateien anzeigen
         run: |
-          echo "📁 Fertige EPG-Dateien:"
-          ls -la public/epg/*.xml | head -10
+          echo "📁 Generierte EPG-Dateien:"
+          ls -la public/epg/ | head -20
           
           echo ""
-          echo "📄 index.json:"
-          cat public/epg/index.json
+          echo "📄 master-index.json (Auszug):"
+          head -20 public/epg/master-index.json
       
       - name: 📤 Nach Cloudflare Pages deployen
         uses: cloudflare/pages-action@v1
@@ -153,3 +180,20 @@ EOF
           projectName: "epg"
           directory: public
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: ✅ Abschluss
+        run: |
+          cd public/epg
+          total=$(ls *.xml 2>/dev/null | wc -l)
+          
+          echo ""
+          echo "================================================"
+          echo "🌍 EPG WELTWEIT - ALLE LÄNDER"
+          echo "================================================"
+          echo "   ✅ $total Länder generiert"
+          echo "   📁 Verfügbar unter:"
+          echo "      • https://epg.pages.dev/epg/master-index.json"
+          echo "      • https://epg.pages.dev/epg/de.xml"
+          echo "      • https://epg.pages.dev/epg/us.xml"
+          echo "      • ... und alle anderen Länder"
+          echo "================================================"
