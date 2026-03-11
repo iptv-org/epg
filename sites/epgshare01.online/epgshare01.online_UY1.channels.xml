@@ -1,253 +1,524 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
   <channel site="epgshare01.online" site_id="UY1#26.TV.uy" lang="en" xmltv_id="">26 TV</channel>
-  <channel site="epgshare01.online" site_id="UY1#1000XHora.TV.uy" lang="es" xmltv_id="">1000XHora TV</channel>
-  <channel site="epgshare01.online" site_id="UY1#+DEPORTESUY.uy" lang="es" xmltv_id="">+DEPORTESUY</channel>
-  <channel site="epgshare01.online" site_id="UY1#A3CINE.uy" lang="en" xmltv_id="">A3CINE</channel>
-  <channel site="epgshare01.online" site_id="UY1#A24.uy" lang="en" xmltv_id="">A24</channel>
-  <channel site="epgshare01.online" site_id="UY1#A&amp;E.MUNDO.HD.uy" lang="en" xmltv_id="">A&amp;amp;E MUNDO HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#A&amp;E.MUNDO.uy" lang="en" xmltv_id="">A&amp;amp;E MUNDO</channel>
-  <channel site="epgshare01.online" site_id="UY1#A+V.uy" lang="en" xmltv_id="">A+V</channel>
-  <channel site="epgshare01.online" site_id="UY1#A.+.V.uy" lang="es" xmltv_id="">A + V</channel>
-  <channel site="epgshare01.online" site_id="UY1#Adu.Live.uy" lang="es" xmltv_id="">Adu Live</channel>
+  <channel site="epgshare01.online" site_id="UY1#[ADCOHOL].DMX.Adult.Contemporary.Holiday.uy" lang="en" xmltv_id="">[ADCOHOL] DMX Adult Contemporary Holiday</channel>
+  <channel site="epgshare01.online" site_id="UY1#[ADSLA].Adult.Swim.uy" lang="en" xmltv_id="">[ADSLA] Adult Swim</channel>
+  <channel site="epgshare01.online" site_id="UY1#[AEMX].A&amp;E.uy" lang="en" xmltv_id="">[AEMX] A&amp;E</channel>
+  <channel site="epgshare01.online" site_id="UY1#[ALATINA].AUDIO.DLA.LATINA.uy" lang="en" xmltv_id="">[ALATINA] AUDIO DLA LATINA</channel>
+  <channel site="epgshare01.online" site_id="UY1#[ALTERN].DMX:.Alternative.uy" lang="en" xmltv_id="">[ALTERN] DMX: Alternative</channel>
+  <channel site="epgshare01.online" site_id="UY1#[AMCMEX].AMC.uy" lang="en" xmltv_id="">[AMCMEX] AMC</channel>
+  <channel site="epgshare01.online" site_id="UY1#[AMETVA].América.TV.uy" lang="en" xmltv_id="">[AMETVA] América TV</channel>
+  <channel site="epgshare01.online" site_id="UY1#[AMSAT].América.Tv.uy" lang="en" xmltv_id="">[AMSAT] América Tv</channel>
+  <channel site="epgshare01.online" site_id="UY1#[ANIPL].Animal.Planet.uy" lang="en" xmltv_id="">[ANIPL] Animal Planet</channel>
+  <channel site="epgshare01.online" site_id="UY1#[ANT3I].Antena.3.Internacional.uy" lang="en" xmltv_id="">[ANT3I] Antena 3 Internacional</channel>
+  <channel site="epgshare01.online" site_id="UY1#[ATRESSD].Atreseries.uy" lang="en" xmltv_id="">[ATRESSD] Atreseries</channel>
+  <channel site="epgshare01.online" site_id="UY1#[AXNARG].AXN.uy" lang="en" xmltv_id="">[AXNARG] AXN</channel>
+  <channel site="epgshare01.online" site_id="UY1#[AXNHD].AXN.uy" lang="en" xmltv_id="">[AXNHD] AXN</channel>
+  <channel site="epgshare01.online" site_id="UY1#[BABYTVL].Baby.Tv.uy" lang="en" xmltv_id="">[BABYTVL] Baby Tv</channel>
+  <channel site="epgshare01.online" site_id="UY1#[BBCASP].BBC.News.uy" lang="en" xmltv_id="">[BBCASP] BBC News</channel>
+  <channel site="epgshare01.online" site_id="UY1#[BBCWDNA].BBC.News.(North.America).uy" lang="en" xmltv_id="">[BBCWDNA] BBC News (North America)</channel>
+  <channel site="epgshare01.online" site_id="UY1#[BLOOMI].Bloomberg.Tv.uy" lang="en" xmltv_id="">[BLOOMI] Bloomberg Tv</channel>
+  <channel site="epgshare01.online" site_id="UY1#[C5NARG].C5N.uy" lang="en" xmltv_id="">[C5NARG] C5N</channel>
+  <channel site="epgshare01.online" site_id="UY1#[CABLENO].CABLENOTICIAS.uy" lang="en" xmltv_id="">[CABLENO] CABLENOTICIAS</channel>
+  <channel site="epgshare01.online" site_id="UY1#[CABTELE].Telemundo.Internacional.uy" lang="en" xmltv_id="">[CABTELE] Telemundo Internacional</channel>
+  <channel site="epgshare01.online" site_id="UY1#[CALUZ].Canal.Luz.uy" lang="en" xmltv_id="">[CALUZ] Canal Luz</channel>
+  <channel site="epgshare01.online" site_id="UY1#[CAMPOTV].Campo.Rural.Tv.uy" lang="en" xmltv_id="">[CAMPOTV] Campo Rural Tv</channel>
+  <channel site="epgshare01.online" site_id="UY1#[CAN24].Canal.24.Horas.HD.uy" lang="en" xmltv_id="">[CAN24] Canal 24 Horas HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#[CAN26SD].Canal.26.uy" lang="en" xmltv_id="">[CAN26SD] Canal 26</channel>
+  <channel site="epgshare01.online" site_id="UY1#[CARA].Caracol.TV.Canal.1.uy" lang="en" xmltv_id="">[CARA] Caracol TV Canal 1</channel>
+  <channel site="epgshare01.online" site_id="UY1#[CARAI].CARACOL.INTERNATIONAL.uy" lang="en" xmltv_id="">[CARAI] CARACOL INTERNATIONAL</channel>
+  <channel site="epgshare01.online" site_id="UY1#[CARTOAM].Cartoonito.uy" lang="en" xmltv_id="">[CARTOAM] Cartoonito</channel>
+  <channel site="epgshare01.online" site_id="UY1#[CARTOM].Cartoonito.uy" lang="en" xmltv_id="">[CARTOM] Cartoonito</channel>
+  <channel site="epgshare01.online" site_id="UY1#[CCANAL].Cinecanal.uy" lang="en" xmltv_id="">[CCANAL] Cinecanal</channel>
+  <channel site="epgshare01.online" site_id="UY1#[CGTNE].CGTN.Español.uy" lang="en" xmltv_id="">[CGTNE] CGTN Español</channel>
+  <channel site="epgshare01.online" site_id="UY1#[CHATV].Chacra.TV.uy" lang="en" xmltv_id="">[CHATV] Chacra TV</channel>
+  <channel site="epgshare01.online" site_id="UY1#[CINL].Cine.Latino.uy" lang="en" xmltv_id="">[CINL] Cine Latino</channel>
+  <channel site="epgshare01.online" site_id="UY1#[CLASSRB].DMX:.Classic.R&amp;B.uy" lang="en" xmltv_id="">[CLASSRB] DMX: Classic R&amp;B</channel>
+  <channel site="epgshare01.online" site_id="UY1#[CLSINST].AUDIO.DLA.CLASICOS.INSTRUMENTALES.uy" lang="en" xmltv_id="">[CLSINST] AUDIO DLA CLASICOS INSTRUMENTALES</channel>
+  <channel site="epgshare01.online" site_id="UY1#[CNLDHE].Canal.DHE.uy" lang="en" xmltv_id="">[CNLDHE] Canal DHE</channel>
+  <channel site="epgshare01.online" site_id="UY1#[CNNCH].CNN.Chile.uy" lang="en" xmltv_id="">[CNNCH] CNN Chile</channel>
+  <channel site="epgshare01.online" site_id="UY1#[CNNL].CNN.En.Español.uy" lang="en" xmltv_id="">[CNNL] CNN En Español</channel>
+  <channel site="epgshare01.online" site_id="UY1#[CNUR].Union.Radio.Noticias.uy" lang="en" xmltv_id="">[CNUR] Union Radio Noticias</channel>
+  <channel site="epgshare01.online" site_id="UY1#[COMCELA].Comedy.Central.uy" lang="en" xmltv_id="">[COMCELA] Comedy Central</channel>
+  <channel site="epgshare01.online" site_id="UY1#[CRON].Cronica.TV.uy" lang="en" xmltv_id="">[CRON] Cronica TV</channel>
+  <channel site="epgshare01.online" site_id="UY1#[CRU].Canal.Rural.uy" lang="en" xmltv_id="">[CRU] Canal Rural</channel>
+  <channel site="epgshare01.online" site_id="UY1#[CTIEMPO].El.Tiempo.Televisión.uy" lang="en" xmltv_id="">[CTIEMPO] El Tiempo Televisión</channel>
+  <channel site="epgshare01.online" site_id="UY1#[CXB10].CANAL.10.uy" lang="en" xmltv_id="">[CXB10] CANAL 10</channel>
+  <channel site="epgshare01.online" site_id="UY1#[DEP1300].Deportiva.1300.uy" lang="en" xmltv_id="">[DEP1300] Deportiva 1300</channel>
+  <channel site="epgshare01.online" site_id="UY1#[DEPEL].De.Película.uy" lang="en" xmltv_id="">[DEPEL] De Película</channel>
+  <channel site="epgshare01.online" site_id="UY1#[DHEALM].Discovery.Home.&amp;.Health.uy" lang="en" xmltv_id="">[DHEALM] Discovery Home &amp; Health</channel>
+  <channel site="epgshare01.online" site_id="UY1#[DISCCH].Discovery.Channel.uy" lang="en" xmltv_id="">[DISCCH] Discovery Channel</channel>
+  <channel site="epgshare01.online" site_id="UY1#[DISNJMX].Disney.Junior.uy" lang="en" xmltv_id="">[DISNJMX] Disney Junior</channel>
+  <channel site="epgshare01.online" site_id="UY1#[DISNLS].Disney.Channel.uy" lang="en" xmltv_id="">[DISNLS] Disney Channel</channel>
+  <channel site="epgshare01.online" site_id="UY1#[DKNLAEH].Discovery.Kids.uy" lang="en" xmltv_id="">[DKNLAEH] Discovery Kids</channel>
+  <channel site="epgshare01.online" site_id="UY1#[DKNLM].Discovery.Kids.uy" lang="en" xmltv_id="">[DKNLM] Discovery Kids</channel>
+  <channel site="epgshare01.online" site_id="UY1#[DLADANC].AUDIO.DLA.DANCE.uy" lang="en" xmltv_id="">[DLADANC] AUDIO DLA DANCE</channel>
+  <channel site="epgshare01.online" site_id="UY1#[DLAHOTH].AUDIO.DLA.HOT.HITS.uy" lang="en" xmltv_id="">[DLAHOTH] AUDIO DLA HOT HITS</channel>
+  <channel site="epgshare01.online" site_id="UY1#[DLALOVE].AUDIO.DLA.LOVE.MUSIC.uy" lang="en" xmltv_id="">[DLALOVE] AUDIO DLA LOVE MUSIC</channel>
+  <channel site="epgshare01.online" site_id="UY1#[DLAMEX].AUDIO.DLA.REGIONAL.MEXICAN.uy" lang="en" xmltv_id="">[DLAMEX] AUDIO DLA REGIONAL MEXICAN</channel>
+  <channel site="epgshare01.online" site_id="UY1#[DLASALS].AUDIO.DLA.SALSA.uy" lang="en" xmltv_id="">[DLASALS] AUDIO DLA SALSA</channel>
+  <channel site="epgshare01.online" site_id="UY1#[DSTRESP].Daystar.Español.uy" lang="en" xmltv_id="">[DSTRESP] Daystar Español</channel>
+  <channel site="epgshare01.online" site_id="UY1#[DT2SPT].DirecTV2.Sports.uy" lang="en" xmltv_id="">[DT2SPT] DirecTV2 Sports</channel>
+  <channel site="epgshare01.online" site_id="UY1#[DTHLIHD].Discovery.Theater.HD.uy" lang="en" xmltv_id="">[DTHLIHD] Discovery Theater HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#[DTURBOL].Discovery.Turbo.uy" lang="en" xmltv_id="">[DTURBOL] Discovery Turbo</channel>
+  <channel site="epgshare01.online" site_id="UY1#[DTVGEN].DirecTV.Generic.uy" lang="en" xmltv_id="">[DTVGEN] DirecTV Generic</channel>
+  <channel site="epgshare01.online" site_id="UY1#[DWEUR].DW.uy" lang="en" xmltv_id="">[DWEUR] DW</channel>
+  <channel site="epgshare01.online" site_id="UY1#[DWLA].DW.en.español.uy" lang="en" xmltv_id="">[DWLA] DW en español</channel>
+  <channel site="epgshare01.online" site_id="UY1#[DWRLDHD].Discovery.World.uy" lang="en" xmltv_id="">[DWRLDHD] Discovery World</channel>
+  <channel site="epgshare01.online" site_id="UY1#[ENCU].Encuentro.uy" lang="en" xmltv_id="">[ENCU] Encuentro</channel>
+  <channel site="epgshare01.online" site_id="UY1#[ENLACE].ENLACE.TV.uy" lang="en" xmltv_id="">[ENLACE] ENLACE TV</channel>
+  <channel site="epgshare01.online" site_id="UY1#[EPN2HAA].ESPN2.Argentina.uy" lang="en" xmltv_id="">[EPN2HAA] ESPN2 Argentina</channel>
+  <channel site="epgshare01.online" site_id="UY1#[ESHUSTL].Hustler.TV.uy" lang="en" xmltv_id="">[ESHUSTL] Hustler TV</channel>
+  <channel site="epgshare01.online" site_id="UY1#[ESP2LS].ESPN.2.uy" lang="en" xmltv_id="">[ESP2LS] ESPN 2</channel>
+  <channel site="epgshare01.online" site_id="UY1#[ESP2ME].ESPN.2.uy" lang="en" xmltv_id="">[ESP2ME] ESPN 2</channel>
+  <channel site="epgshare01.online" site_id="UY1#[ESPN3].ESPN3.uy" lang="en" xmltv_id="">[ESPN3] ESPN3</channel>
+  <channel site="epgshare01.online" site_id="UY1#[ESPN5SD].ESPN.5.uy" lang="en" xmltv_id="">[ESPN5SD] ESPN 5</channel>
+  <channel site="epgshare01.online" site_id="UY1#[ESPN5SH].ESPN.5.uy" lang="en" xmltv_id="">[ESPN5SH] ESPN 5</channel>
+  <channel site="epgshare01.online" site_id="UY1#[ESPN6SD].ESPN.6.uy" lang="en" xmltv_id="">[ESPN6SD] ESPN 6</channel>
+  <channel site="epgshare01.online" site_id="UY1#[ESPN7SS].ESPN.7.uy" lang="en" xmltv_id="">[ESPN7SS] ESPN 7</channel>
+  <channel site="epgshare01.online" site_id="UY1#[ETVLN].E!.Entertainment.TV.uy" lang="en" xmltv_id="">[ETVLN] E! Entertainment TV</channel>
+  <channel site="epgshare01.online" site_id="UY1#[EUROPA].Europa.Europa.uy" lang="en" xmltv_id="">[EUROPA] Europa Europa</channel>
+  <channel site="epgshare01.online" site_id="UY1#[EWTNL].EWTN.Latin.America.uy" lang="en" xmltv_id="">[EWTNL] EWTN Latin America</channel>
+  <channel site="epgshare01.online" site_id="UY1#[EXITO70].Audio.DLA.Éxitos.de.los.70.uy" lang="en" xmltv_id="">[EXITO70] Audio DLA Éxitos de los 70</channel>
+  <channel site="epgshare01.online" site_id="UY1#[EXITO80].Audio.DLA.Éxitos.de.los.80.uy" lang="en" xmltv_id="">[EXITO80] Audio DLA Éxitos de los 80</channel>
+  <channel site="epgshare01.online" site_id="UY1#[EXITO90].Audio.DLA.Éxitos.de.los.90.uy" lang="en" xmltv_id="">[EXITO90] Audio DLA Éxitos de los 90</channel>
+  <channel site="epgshare01.online" site_id="UY1#[FABL].Film.&amp;.Arts.uy" lang="en" xmltv_id="">[FABL] Film &amp; Arts</channel>
+  <channel site="epgshare01.online" site_id="UY1#[FIGHTNO].Fight.Sports.uy" lang="en" xmltv_id="">[FIGHTNO] Fight Sports</channel>
+  <channel site="epgshare01.online" site_id="UY1#[FOODLA].Food.Network.uy" lang="en" xmltv_id="">[FOODLA] Food Network</channel>
+  <channel site="epgshare01.online" site_id="UY1#[FXL].FX.uy" lang="en" xmltv_id="">[FXL] FX</channel>
+  <channel site="epgshare01.online" site_id="UY1#[GLDENEH].Golden.uy" lang="en" xmltv_id="">[GLDENEH] Golden</channel>
+  <channel site="epgshare01.online" site_id="UY1#[GOLDEDG].Golden.Edge.uy" lang="en" xmltv_id="">[GOLDEDG] Golden Edge</channel>
+  <channel site="epgshare01.online" site_id="UY1#[GOLF].Golf.Channel.uy" lang="en" xmltv_id="">[GOLF] Golf Channel</channel>
+  <channel site="epgshare01.online" site_id="UY1#[GOLFLA].The.Golf.Channel.Latinoamerica.uy" lang="en" xmltv_id="">[GOLFLA] The Golf Channel Latinoamerica</channel>
+  <channel site="epgshare01.online" site_id="UY1#[GOLTVL].GolTV.Latin.America.uy" lang="en" xmltv_id="">[GOLTVL] GolTV Latin America</channel>
+  <channel site="epgshare01.online" site_id="UY1#[GOURMETN].El.Gourmet.uy" lang="en" xmltv_id="">[GOURMETN] El Gourmet</channel>
+  <channel site="epgshare01.online" site_id="UY1#[H2LAME].History.2.uy" lang="en" xmltv_id="">[H2LAME] History 2</channel>
+  <channel site="epgshare01.online" site_id="UY1#[HBO2EHD].HBO.2.uy" lang="en" xmltv_id="">[HBO2EHD] HBO 2</channel>
+  <channel site="epgshare01.online" site_id="UY1#[HBO2ENG].HBO.2.uy" lang="en" xmltv_id="">[HBO2ENG] HBO 2</channel>
+  <channel site="epgshare01.online" site_id="UY1#[HBO2LA].HBO.2.uy" lang="en" xmltv_id="">[HBO2LA] HBO 2</channel>
+  <channel site="epgshare01.online" site_id="UY1#[HBOFAME].HBO.Family.uy" lang="en" xmltv_id="">[HBOFAME] HBO Family</channel>
+  <channel site="epgshare01.online" site_id="UY1#[HBOL].HBO.uy" lang="en" xmltv_id="">[HBOL] HBO</channel>
+  <channel site="epgshare01.online" site_id="UY1#[HBOLAT].HBO.Latino.uy" lang="en" xmltv_id="">[HBOLAT] HBO Latino</channel>
+  <channel site="epgshare01.online" site_id="UY1#[HBOSLA].HBO.Signature.uy" lang="en" xmltv_id="">[HBOSLA] HBO Signature</channel>
+  <channel site="epgshare01.online" site_id="UY1#[HBOXMXE].HBO.Xtreme.uy" lang="en" xmltv_id="">[HBOXMXE] HBO Xtreme</channel>
+  <channel site="epgshare01.online" site_id="UY1#[HCLI].History.uy" lang="en" xmltv_id="">[HCLI] History</channel>
+  <channel site="epgshare01.online" site_id="UY1#[HGTVLAS].HGTV.uy" lang="en" xmltv_id="">[HGTVLAS] HGTV</channel>
+  <channel site="epgshare01.online" site_id="UY1#[HOLALA].¡HOLA!.TV.uy" lang="en" xmltv_id="">[HOLALA] ¡HOLA! TV</channel>
+  <channel site="epgshare01.online" site_id="UY1#[IDA].ID.uy" lang="en" xmltv_id="">[IDA] ID</channel>
+  <channel site="epgshare01.online" site_id="UY1#[IDLE].ID.uy" lang="en" xmltv_id="">[IDLE] ID</channel>
+  <channel site="epgshare01.online" site_id="UY1#[IDM].ID.uy" lang="en" xmltv_id="">[IDM] ID</channel>
+  <channel site="epgshare01.online" site_id="UY1#[IVCVENE].IVC.uy" lang="en" xmltv_id="">[IVCVENE] IVC</channel>
+  <channel site="epgshare01.online" site_id="UY1#[IVNETHD].IVC.Net.HD.uy" lang="en" xmltv_id="">[IVNETHD] IVC Net HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#[JAZZ].DMX:.Jazz.uy" lang="en" xmltv_id="">[JAZZ] DMX: Jazz</channel>
+  <channel site="epgshare01.online" site_id="UY1#[JZZVCL].DMX:.Jazz.Vocal.Blends.uy" lang="en" xmltv_id="">[JZZVCL] DMX: Jazz Vocal Blends</channel>
+  <channel site="epgshare01.online" site_id="UY1#[KZOAR].KZO.uy" lang="en" xmltv_id="">[KZOAR] KZO</channel>
+  <channel site="epgshare01.online" site_id="UY1#[LIFELC].Lifetime.uy" lang="en" xmltv_id="">[LIFELC] Lifetime</channel>
+  <channel site="epgshare01.online" site_id="UY1#[MASCHIC].Mas.Chic.uy" lang="en" xmltv_id="">[MASCHIC] Mas Chic</channel>
+  <channel site="epgshare01.online" site_id="UY1#[MIX750].DMX.Mix.750.uy" lang="en" xmltv_id="">[MIX750] DMX Mix 750</channel>
+  <channel site="epgshare01.online" site_id="UY1#[MONTTV].Canal.4.uy" lang="en" xmltv_id="">[MONTTV] Canal 4</channel>
+  <channel site="epgshare01.online" site_id="UY1#[MTOPHD].Music.Top.uy" lang="en" xmltv_id="">[MTOPHD] Music Top</channel>
+  <channel site="epgshare01.online" site_id="UY1#[MTVL].MTV.uy" lang="en" xmltv_id="">[MTVL] MTV</channel>
+  <channel site="epgshare01.online" site_id="UY1#[MUNMEX].HBO.Mundi.uy" lang="en" xmltv_id="">[MUNMEX] HBO Mundi</channel>
+  <channel site="epgshare01.online" site_id="UY1#[MUSICAM].AUDIO.DLA.MÚSICA.DE.LAS.AMÉRI.uy" lang="en" xmltv_id="">[MUSICAM] AUDIO DLA MÚSICA DE LAS AMÉRI</channel>
+  <channel site="epgshare01.online" site_id="UY1#[MUSTROP].AUDIO.DLA.MÚSICA.TROPICAL.uy" lang="en" xmltv_id="">[MUSTROP] AUDIO DLA MÚSICA TROPICAL</channel>
+  <channel site="epgshare01.online" site_id="UY1#[NACPSD].LN+.uy" lang="en" xmltv_id="">[NACPSD] LN+</channel>
+  <channel site="epgshare01.online" site_id="UY1#[NEWAGES].AUDIO.DLA.NEW.AGE.uy" lang="en" xmltv_id="">[NEWAGES] AUDIO DLA NEW AGE</channel>
+  <channel site="epgshare01.online" site_id="UY1#[NEWSMIX].DIRECTV.NEWS.MIX.uy" lang="en" xmltv_id="">[NEWSMIX] DIRECTV NEWS MIX</channel>
+  <channel site="epgshare01.online" site_id="UY1#[NGCARG].National.Geographic.uy" lang="en" xmltv_id="">[NGCARG] National Geographic</channel>
+  <channel site="epgshare01.online" site_id="UY1#[NGCLA].National.Geographic.uy" lang="en" xmltv_id="">[NGCLA] National Geographic</channel>
+  <channel site="epgshare01.online" site_id="UY1#[NHKL].NHK.TV.World.Premium.uy" lang="en" xmltv_id="">[NHKL] NHK TV World Premium</channel>
+  <channel site="epgshare01.online" site_id="UY1#[NICKJLM].Nick.Jr..uy" lang="en" xmltv_id="">[NICKJLM] Nick Jr.</channel>
+  <channel site="epgshare01.online" site_id="UY1#[NICKJMH].Nick.Jr..uy" lang="en" xmltv_id="">[NICKJMH] Nick Jr.</channel>
+  <channel site="epgshare01.online" site_id="UY1#[NIKL].Nick.uy" lang="en" xmltv_id="">[NIKL] Nick</channel>
+  <channel site="epgshare01.online" site_id="UY1#[NTN24].NTN24.uy" lang="en" xmltv_id="">[NTN24] NTN24</channel>
+  <channel site="epgshare01.online" site_id="UY1#[NUEVOPE].NUEVO.TIEMPO.uy" lang="en" xmltv_id="">[NUEVOPE] NUEVO TIEMPO</channel>
+  <channel site="epgshare01.online" site_id="UY1#[ONDTHS].OnDIRECTV.HD.(South).uy" lang="en" xmltv_id="">[ONDTHS] OnDIRECTV HD (South)</channel>
+  <channel site="epgshare01.online" site_id="UY1#[OPERADL].AUDIO.DLA.OPERA.uy" lang="en" xmltv_id="">[OPERADL] AUDIO DLA OPERA</channel>
+  <channel site="epgshare01.online" site_id="UY1#[ORBE21].Canal.Orbe.21.uy" lang="en" xmltv_id="">[ORBE21] Canal Orbe 21</channel>
+  <channel site="epgshare01.online" site_id="UY1#[ORQUEST].AUDIO.DLA.GRANDES.ORQUESTAS.uy" lang="en" xmltv_id="">[ORQUEST] AUDIO DLA GRANDES ORQUESTAS</channel>
+  <channel site="epgshare01.online" site_id="UY1#[PARAMNT].Paramount.Network.uy" lang="en" xmltv_id="">[PARAMNT] Paramount Network</channel>
+  <channel site="epgshare01.online" site_id="UY1#[PASNLA].Pasiones.TV.Latin.America.uy" lang="en" xmltv_id="">[PASNLA] Pasiones TV Latin America</channel>
+  <channel site="epgshare01.online" site_id="UY1#[PLAYL].Playboy.TV.Latin.America.uy" lang="en" xmltv_id="">[PLAYL] Playboy TV Latin America</channel>
+  <channel site="epgshare01.online" site_id="UY1#[POPLA].HBO.Pop.uy" lang="en" xmltv_id="">[POPLA] HBO Pop</channel>
+  <channel site="epgshare01.online" site_id="UY1#[POPLEH].HBO.Pop.uy" lang="en" xmltv_id="">[POPLEH] HBO Pop</channel>
+  <channel site="epgshare01.online" site_id="UY1#[POPMX].HBO.POP.uy" lang="en" xmltv_id="">[POPMX] HBO POP</channel>
+  <channel site="epgshare01.online" site_id="UY1#[PXSP].PX.Sports.uy" lang="en" xmltv_id="">[PXSP] PX Sports</channel>
+  <channel site="epgshare01.online" site_id="UY1#[QMMIHD].Quiero.Mi.Musica.en.Mi.Idioma.HD.uy" lang="en" xmltv_id="">[QMMIHD] Quiero Mi Musica en Mi Idioma HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#[RAIIS].Rai.Italia.uy" lang="en" xmltv_id="">[RAIIS] Rai Italia</channel>
+  <channel site="epgshare01.online" site_id="UY1#[RCARA].Radio.Caracol.uy" lang="en" xmltv_id="">[RCARA] Radio Caracol</channel>
+  <channel site="epgshare01.online" site_id="UY1#[RCKPESA].AUDIO.DLA.ROCK.PESADO.uy" lang="en" xmltv_id="">[RCKPESA] AUDIO DLA ROCK PESADO</channel>
+  <channel site="epgshare01.online" site_id="UY1#[RDISCO].DMX:.Riviera.Discotheque.uy" lang="en" xmltv_id="">[RDISCO] DMX: Riviera Discotheque</channel>
+  <channel site="epgshare01.online" site_id="UY1#[REDEGL].Globo.uy" lang="en" xmltv_id="">[REDEGL] Globo</channel>
+  <channel site="epgshare01.online" site_id="UY1#[REGTON].Audio.DLA.Reggaeton.uy" lang="en" xmltv_id="">[REGTON] Audio DLA Reggaeton</channel>
+  <channel site="epgshare01.online" site_id="UY1#[RFIRAD].RFI.uy" lang="en" xmltv_id="">[RFIRAD] RFI</channel>
+  <channel site="epgshare01.online" site_id="UY1#[RGTI2].Rede.Globo.INTL.2.uy" lang="en" xmltv_id="">[RGTI2] Rede Globo INTL 2</channel>
+  <channel site="epgshare01.online" site_id="UY1#[ROCKCLS].AUDIO.DLA.ROCK.CLÁSICO.uy" lang="en" xmltv_id="">[ROCKCLS] AUDIO DLA ROCK CLÁSICO</channel>
+  <channel site="epgshare01.online" site_id="UY1#[RTPI].RTPi.RadioTV.Portuguesa.Int’l.uy" lang="en" xmltv_id="">[RTPI] RTPi RadioTV Portuguesa Int’l</channel>
+  <channel site="epgshare01.online" site_id="UY1#[RURAL].Canal.Rural.uy" lang="en" xmltv_id="">[RURAL] Canal Rural</channel>
+  <channel site="epgshare01.online" site_id="UY1#[SCNN].SPAN.CNN.uy" lang="en" xmltv_id="">[SCNN] SPAN CNN</channel>
+  <channel site="epgshare01.online" site_id="UY1#[SETARGE].Canal.Sony.uy" lang="en" xmltv_id="">[SETARGE] Canal Sony</channel>
+  <channel site="epgshare01.online" site_id="UY1#[SFTHITS].DMX:.Soft.Hits.uy" lang="en" xmltv_id="">[SFTHITS] DMX: Soft Hits</channel>
+  <channel site="epgshare01.online" site_id="UY1#[SINFON].AUDIO.DLA.SINFONICA.uy" lang="en" xmltv_id="">[SINFON] AUDIO DLA SINFONICA</channel>
+  <channel site="epgshare01.online" site_id="UY1#[SINGERS].AUDIO.DLA.GREAT.STANDARDS.uy" lang="en" xmltv_id="">[SINGERS] AUDIO DLA GREAT STANDARDS</channel>
+  <channel site="epgshare01.online" site_id="UY1#[SONYHD].Sony.Movie.Channel.HD.uy" lang="en" xmltv_id="">[SONYHD] Sony Movie Channel HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#[SPACES].Space.uy" lang="en" xmltv_id="">[SPACES] Space</channel>
+  <channel site="epgshare01.online" site_id="UY1#[SPACMHD].Space.uy" lang="en" xmltv_id="">[SPACMHD] Space</channel>
+  <channel site="epgshare01.online" site_id="UY1#[SPOARHD].DSports.Argentina.HD.uy" lang="en" xmltv_id="">[SPOARHD] DSports Argentina HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#[SPOPLH].DSports.+.HD.uy" lang="en" xmltv_id="">[SPOPLH] DSports + HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#[STARG].Star.Channel.uy" lang="en" xmltv_id="">[STARG] Star Channel</channel>
+  <channel site="epgshare01.online" site_id="UY1#[STULM].Studio.Universal.uy" lang="en" xmltv_id="">[STULM] Studio Universal</channel>
+  <channel site="epgshare01.online" site_id="UY1#[TEFEI].Telefe.Internacional.uy" lang="en" xmltv_id="">[TEFEI] Telefe Internacional</channel>
+  <channel site="epgshare01.online" site_id="UY1#[TELED].TELEDOCE.uy" lang="en" xmltv_id="">[TELED] TELEDOCE</channel>
+  <channel site="epgshare01.online" site_id="UY1#[TLCLASP].TLC.uy" lang="en" xmltv_id="">[TLCLASP] TLC</channel>
+  <channel site="epgshare01.online" site_id="UY1#[TLNOVEL].TLNovelas.uy" lang="en" xmltv_id="">[TLNOVEL] TLNovelas</channel>
+  <channel site="epgshare01.online" site_id="UY1#[TNTLC].TNT.uy" lang="en" xmltv_id="">[TNTLC] TNT</channel>
+  <channel site="epgshare01.online" site_id="UY1#[TNTSER].TNT.Series.uy" lang="en" xmltv_id="">[TNTSER] TNT Series</channel>
+  <channel site="epgshare01.online" site_id="UY1#[TODONOT].TODO.NOTICIAS.uy" lang="en" xmltv_id="">[TODONOT] TODO NOTICIAS</channel>
+  <channel site="epgshare01.online" site_id="UY1#[TOONARG].Cartoon.Network.uy" lang="en" xmltv_id="">[TOONARG] Cartoon Network</channel>
+  <channel site="epgshare01.online" site_id="UY1#[TVCIUD].Tv.Ciudad.uy" lang="en" xmltv_id="">[TVCIUD] Tv Ciudad</channel>
+  <channel site="epgshare01.online" site_id="UY1#[TVN].TVN.uy" lang="en" xmltv_id="">[TVN] TVN</channel>
+  <channel site="epgshare01.online" site_id="UY1#[TVNI].TV.Chile.uy" lang="en" xmltv_id="">[TVNI] TV Chile</channel>
+  <channel site="epgshare01.online" site_id="UY1#[TVNUR].Televisión.Nacional.Uruguaya.uy" lang="en" xmltv_id="">[TVNUR] Televisión Nacional Uruguaya</channel>
+  <channel site="epgshare01.online" site_id="UY1#[TYC].TyC.Sports.uy" lang="en" xmltv_id="">[TYC] TyC Sports</channel>
+  <channel site="epgshare01.online" site_id="UY1#[UCLPLAY].UCL.TV.Unión.Continental.Latinoamérica.uy" lang="en" xmltv_id="">[UCLPLAY] UCL TV Unión Continental Latinoamérica</channel>
+  <channel site="epgshare01.online" site_id="UY1#[UNI].Univision.Network.uy" lang="en" xmltv_id="">[UNI] Univision Network</channel>
+  <channel site="epgshare01.online" site_id="UY1#[UNICI].Universal.Cinema.uy" lang="en" xmltv_id="">[UNICI] Universal Cinema</channel>
+  <channel site="epgshare01.online" site_id="UY1#[UNICIMH].Universal.Cinema.uy" lang="en" xmltv_id="">[UNICIMH] Universal Cinema</channel>
+  <channel site="epgshare01.online" site_id="UY1#[UNICO].Universal.Comedy.uy" lang="en" xmltv_id="">[UNICO] Universal Comedy</channel>
+  <channel site="epgshare01.online" site_id="UY1#[UNICR].Universal.Crime.uy" lang="en" xmltv_id="">[UNICR] Universal Crime</channel>
+  <channel site="epgshare01.online" site_id="UY1#[UNIPR].Universal.Premiere.uy" lang="en" xmltv_id="">[UNIPR] Universal Premiere</channel>
+  <channel site="epgshare01.online" site_id="UY1#[UNIPRMH].UNIPRMH.uy" lang="en" xmltv_id="">[UNIPRMH] UNIPRMH</channel>
+  <channel site="epgshare01.online" site_id="UY1#[UNIRE].Universal.Reality.uy" lang="en" xmltv_id="">[UNIRE] Universal Reality</channel>
+  <channel site="epgshare01.online" site_id="UY1#[UNTVAR].Universal.TV.uy" lang="en" xmltv_id="">[UNTVAR] Universal TV</channel>
+  <channel site="epgshare01.online" site_id="UY1#[UNTVM].Universal.TV.uy" lang="en" xmltv_id="">[UNTVM] Universal TV</channel>
+  <channel site="epgshare01.online" site_id="UY1#[USA].USA.Network.uy" lang="en" xmltv_id="">[USA] USA Network</channel>
+  <channel site="epgshare01.online" site_id="UY1#[VEPTV].Ve.Plus.uy" lang="en" xmltv_id="">[VEPTV] Ve Plus</channel>
+  <channel site="epgshare01.online" site_id="UY1#[VNUS].Venus.uy" lang="en" xmltv_id="">[VNUS] Venus</channel>
+  <channel site="epgshare01.online" site_id="UY1#[VTVMUR].VTV.PLUS.uy" lang="en" xmltv_id="">[VTVMUR] VTV PLUS</channel>
+  <channel site="epgshare01.online" site_id="UY1#[WOLEARG].Warner.Channel.uy" lang="en" xmltv_id="">[WOLEARG] Warner Channel</channel>
+  <channel site="epgshare01.online" site_id="UY1#[XEW].Las.Estrellas.uy" lang="en" xmltv_id="">[XEW] Las Estrellas</channel>
+  <channel site="epgshare01.online" site_id="UY1#[ZEE].Zee.TV.HD.uy" lang="en" xmltv_id="">[ZEE] Zee TV HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#[ZOOMOSH].ZooMoo.uy" lang="en" xmltv_id="">[ZOOMOSH] ZooMoo</channel>
   <channel site="epgshare01.online" site_id="UY1#AMC.HD.uy" lang="en" xmltv_id="">AMC HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#AMC.uy" lang="en" xmltv_id="">AMC</channel>
-  <channel site="epgshare01.online" site_id="UY1#AMERICA.2.uy" lang="en" xmltv_id="">AMERICA 2</channel>
   <channel site="epgshare01.online" site_id="UY1#ANIMAL.PLANET.HD.uy" lang="en" xmltv_id="">ANIMAL PLANET HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#ANIMAL.PLANET.uy" lang="en" xmltv_id="">ANIMAL PLANET</channel>
-  <channel site="epgshare01.online" site_id="UY1#ANPI.TV.uy" lang="es" xmltv_id="">ANPI TV</channel>
-  <channel site="epgshare01.online" site_id="UY1#Antel.Eventos.uy" lang="es" xmltv_id="">Antel Eventos</channel>
-  <channel site="epgshare01.online" site_id="UY1#ANTENA3.uy" lang="en" xmltv_id="">ANTENA3</channel>
-  <channel site="epgshare01.online" site_id="UY1#Artigas.Televisión.uy" lang="es" xmltv_id="">Artigas Televisión</channel>
-  <channel site="epgshare01.online" site_id="UY1#ASVAC_AntelTV.2.uy" lang="es" xmltv_id="">ASVAC_AntelTV 2</channel>
-  <channel site="epgshare01.online" site_id="UY1#ATRESERIES.HD.uy" lang="en" xmltv_id="">ATRESERIES HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#Auditorio.1.uy" lang="es" xmltv_id="">Auditorio 1</channel>
-  <channel site="epgshare01.online" site_id="UY1#Auditorio.2.uy" lang="es" xmltv_id="">Auditorio 2</channel>
   <channel site="epgshare01.online" site_id="UY1#AXN.HD.uy" lang="en" xmltv_id="">AXN HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#AXN.uy" lang="en" xmltv_id="">AXN</channel>
-  <channel site="epgshare01.online" site_id="UY1#BABY.TV.uy" lang="en" xmltv_id="">BABY TV</channel>
-  <channel site="epgshare01.online" site_id="UY1#BBC.WORLD.uy" lang="en" xmltv_id="">BBC WORLD</channel>
-  <channel site="epgshare01.online" site_id="UY1#BLOOMBERG.uy" lang="en" xmltv_id="">BLOOMBERG</channel>
-  <channel site="epgshare01.online" site_id="UY1#C5N.uy" lang="en" xmltv_id="">C5N</channel>
-  <channel site="epgshare01.online" site_id="UY1#Cámara.de.Representantes.uy" lang="es" xmltv_id="">Cámara de Representantes</channel>
-  <channel site="epgshare01.online" site_id="UY1#Cámara.de.Senadores.uy" lang="es" xmltv_id="">Cámara de Senadores</channel>
-  <channel site="epgshare01.online" site_id="UY1#Canal.2.HD.San.Carlos.uy" lang="es" xmltv_id="">Canal 2 HD San Carlos</channel>
-  <channel site="epgshare01.online" site_id="UY1#Canal.2.Lascano.uy" lang="es" xmltv_id="">Canal 2 Lascano</channel>
-  <channel site="epgshare01.online" site_id="UY1#Canal.2.Visión.Canaria.uy" lang="es" xmltv_id="">Canal 2 Visión Canaria</channel>
-  <channel site="epgshare01.online" site_id="UY1#Canal.4.Chuy.uy" lang="es" xmltv_id="">Canal 4 Chuy</channel>
-  <channel site="epgshare01.online" site_id="UY1#CANAL.4.HD.uy" lang="en" xmltv_id="">CANAL 4 HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#Canal.4.Juan.Lacaze.uy" lang="es" xmltv_id="">Canal 4 Juan Lacaze</channel>
-  <channel site="epgshare01.online" site_id="UY1#Canal.4.Paysandú.uy" lang="es" xmltv_id="">Canal 4 Paysandú</channel>
-  <channel site="epgshare01.online" site_id="UY1#Canal.4.Salto.uy" lang="es" xmltv_id="">Canal 4 Salto</channel>
-  <channel site="epgshare01.online" site_id="UY1#Canal.4.Tacuarembó.uy" lang="es" xmltv_id="">Canal 4 Tacuarembó</channel>
-  <channel site="epgshare01.online" site_id="UY1#CANAL.4.uy" lang="en" xmltv_id="">CANAL 4</channel>
-  <channel site="epgshare01.online" site_id="UY1#CANAL.5.HD.uy" lang="en" xmltv_id="">CANAL 5 HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#CANAL.5.uy" lang="en" xmltv_id="">CANAL 5</channel>
-  <channel site="epgshare01.online" site_id="UY1#Canal.5.uy" lang="es" xmltv_id="">Canal 5</channel>
-  <channel site="epgshare01.online" site_id="UY1#Canal.6.Durazno.uy" lang="es" xmltv_id="">Canal 6 Durazno</channel>
-  <channel site="epgshare01.online" site_id="UY1#Canal.7.Punta.uy" lang="es" xmltv_id="">Canal 7 Punta</channel>
-  <channel site="epgshare01.online" site_id="UY1#Canal.8.Artigas.uy" lang="es" xmltv_id="">Canal 8 Artigas</channel>
-  <channel site="epgshare01.online" site_id="UY1#Canal.8.Durazno.uy" lang="es" xmltv_id="">Canal 8 Durazno</channel>
-  <channel site="epgshare01.online" site_id="UY1#Canal.8.Rivera.uy" lang="es" xmltv_id="">Canal 8 Rivera</channel>
-  <channel site="epgshare01.online" site_id="UY1#Canal.8.Salto.uy" lang="es" xmltv_id="">Canal 8 Salto</channel>
-  <channel site="epgshare01.online" site_id="UY1#Canal.9.Telerocha.uy" lang="es" xmltv_id="">Canal 9 Telerocha</channel>
-  <channel site="epgshare01.online" site_id="UY1#CANAL.10.HD.uy" lang="es" xmltv_id="">CANAL 10 HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#CANAL.11.HD.uy" lang="es" xmltv_id="">CANAL 11 HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#Canal.11.Las.Piedras.uy" lang="es" xmltv_id="">Canal 11 Las Piedras</channel>
-  <channel site="epgshare01.online" site_id="UY1#Canal.11.Treinta.y.Tres.uy" lang="es" xmltv_id="">Canal 11 Treinta y Tres</channel>
-  <channel site="epgshare01.online" site_id="UY1#CANAL.12.HD.uy" lang="es" xmltv_id="">CANAL 12 HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#Canal.12.Melo.uy" lang="es" xmltv_id="">Canal 12 Melo</channel>
-  <channel site="epgshare01.online" site_id="UY1#CANAL.21.uy" lang="en" xmltv_id="">CANAL 21</channel>
-  <channel site="epgshare01.online" site_id="UY1#Canal.23.Florida.uy" lang="es" xmltv_id="">Canal 23 Florida</channel>
   <channel site="epgshare01.online" site_id="UY1#CANAL.24.HS.uy" lang="en" xmltv_id="">CANAL 24 HS</channel>
-  <channel site="epgshare01.online" site_id="UY1#Canal.26-Radio.y.Televisión.de.Aguascalientes.uy" lang="es" xmltv_id="">Canal 26-Radio y Televisión de Aguascalientes</channel>
-  <channel site="epgshare01.online" site_id="UY1#Canal.M.uy" lang="es" xmltv_id="">Canal M</channel>
   <channel site="epgshare01.online" site_id="UY1#CANAL.RURAL.uy" lang="en" xmltv_id="">CANAL RURAL</channel>
-  <channel site="epgshare01.online" site_id="UY1#Canal.UCL.uy" lang="es" xmltv_id="">Canal UCL</channel>
   <channel site="epgshare01.online" site_id="UY1#CANAL.VASCO.uy" lang="en" xmltv_id="">CANAL VASCO</channel>
-  <channel site="epgshare01.online" site_id="UY1#Cardinal.TV.uy" lang="es" xmltv_id="">Cardinal TV</channel>
   <channel site="epgshare01.online" site_id="UY1#CARTOON.NETWORK.HD.uy" lang="en" xmltv_id="">CARTOON NETWORK HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#CARTOON.NETWORK.uy" lang="en" xmltv_id="">CARTOON NETWORK</channel>
   <channel site="epgshare01.online" site_id="UY1#CARTOONITO.uy" lang="en" xmltv_id="">CARTOONITO</channel>
-  <channel site="epgshare01.online" site_id="UY1#CGTN.uy" lang="en" xmltv_id="">CGTN</channel>
-  <channel site="epgshare01.online" site_id="UY1#CHARRUA.TV.uy" lang="en" xmltv_id="">CHARRUA TV</channel>
   <channel site="epgshare01.online" site_id="UY1#CINECANAL.HD.uy" lang="en" xmltv_id="">CINECANAL HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#CINECANAL.uy" lang="en" xmltv_id="">CINECANAL</channel>
   <channel site="epgshare01.online" site_id="UY1#CINEMAX.HD.uy" lang="en" xmltv_id="">CINEMAX HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#CINEMAX.uy" lang="en" xmltv_id="">CINEMAX</channel>
-  <channel site="epgshare01.online" site_id="UY1#CLAN.uy" lang="en" xmltv_id="">CLAN</channel>
-  <channel site="epgshare01.online" site_id="UY1#CLAROSPORTS.uy" lang="en" xmltv_id="">CLAROSPORTS</channel>
-  <channel site="epgshare01.online" site_id="UY1#CNN.EN.ESPAÑOL.uy" lang="en" xmltv_id="">CNN EN ESPAÑOL</channel>
-  <channel site="epgshare01.online" site_id="UY1#CRONICA.TV.uy" lang="en" xmltv_id="">CRONICA TV</channel>
-  <channel site="epgshare01.online" site_id="UY1#DEUTSCHE.WELLE.uy" lang="en" xmltv_id="">DEUTSCHE WELLE</channel>
-  <channel site="epgshare01.online" site_id="UY1#DHE.uy" lang="en" xmltv_id="">DHE</channel>
-  <channel site="epgshare01.online" site_id="UY1#DISCOVERY.HD.THEATER.uy" lang="en" xmltv_id="">DISCOVERY HD THEATER</channel>
   <channel site="epgshare01.online" site_id="UY1#DISCOVERY.HD.uy" lang="en" xmltv_id="">DISCOVERY HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#DISCOVERY.HOME.AND.HEALTH.HD.uy" lang="en" xmltv_id="">DISCOVERY HOME AND HEALTH HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#DISCOVERY.HOME.AND.HEALTH.uy" lang="en" xmltv_id="">DISCOVERY HOME AND HEALTH</channel>
   <channel site="epgshare01.online" site_id="UY1#DISCOVERY.ID.HD.uy" lang="en" xmltv_id="">DISCOVERY ID HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#DISCOVERY.ID.uy" lang="en" xmltv_id="">DISCOVERY ID</channel>
   <channel site="epgshare01.online" site_id="UY1#DISCOVERY.KIDS.HD.uy" lang="en" xmltv_id="">DISCOVERY KIDS HD</channel>
   <channel site="epgshare01.online" site_id="UY1#DISCOVERY.KIDS.uy" lang="en" xmltv_id="">DISCOVERY KIDS</channel>
   <channel site="epgshare01.online" site_id="UY1#DISCOVERY.SCIENCE.HD.uy" lang="en" xmltv_id="">DISCOVERY SCIENCE HD</channel>
   <channel site="epgshare01.online" site_id="UY1#DISCOVERY.TLC.HD.uy" lang="en" xmltv_id="">DISCOVERY TLC HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#DISCOVERY.TLC.uy" lang="en" xmltv_id="">DISCOVERY TLC</channel>
   <channel site="epgshare01.online" site_id="UY1#DISCOVERY.TURBO.HD.uy" lang="en" xmltv_id="">DISCOVERY TURBO HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#DISCOVERY.uy" lang="en" xmltv_id="">DISCOVERY</channel>
   <channel site="epgshare01.online" site_id="UY1#DISCOVERY.WORLD.HD.uy" lang="en" xmltv_id="">DISCOVERY WORLD HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#DISNEY.HD.uy" lang="en" xmltv_id="">DISNEY HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#DISNEY.JR.uy" lang="en" xmltv_id="">DISNEY JR</channel>
   <channel site="epgshare01.online" site_id="UY1#DISNEY.uy" lang="en" xmltv_id="">DISNEY</channel>
-  <channel site="epgshare01.online" site_id="UY1#Durazno.TV.uy" lang="es" xmltv_id="">Durazno TV</channel>
-  <channel site="epgshare01.online" site_id="UY1#DW.(Español).uy" lang="es" xmltv_id="">DW (Español)</channel>
-  <channel site="epgshare01.online" site_id="UY1#El.Canal.de.la.Región.-.Noreste.Canelones.uy" lang="es" xmltv_id="">El Canal de la Región - Noreste Canelones</channel>
   <channel site="epgshare01.online" site_id="UY1#EL.GOURMET.HD.uy" lang="en" xmltv_id="">EL GOURMET HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#EL.GOURMET.uy" lang="en" xmltv_id="">EL GOURMET</channel>
   <channel site="epgshare01.online" site_id="UY1#ENTERTAINMENT.TELEVISION.uy" lang="en" xmltv_id="">ENTERTAINMENT TELEVISION</channel>
   <channel site="epgshare01.online" site_id="UY1#ESPN.2.HD.uy" lang="en" xmltv_id="">ESPN 2 HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#ESPN.2.uy" lang="en" xmltv_id="">ESPN 2</channel>
   <channel site="epgshare01.online" site_id="UY1#ESPN.3.HD.uy" lang="en" xmltv_id="">ESPN 3 HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#ESPN.3.uy" lang="en" xmltv_id="">ESPN 3</channel>
   <channel site="epgshare01.online" site_id="UY1#ESPN.4.HD.uy" lang="en" xmltv_id="">ESPN 4 HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#ESPN.4.uy" lang="en" xmltv_id="">ESPN 4</channel>
-  <channel site="epgshare01.online" site_id="UY1#ESPN.EXTRA.uy" lang="en" xmltv_id="">ESPN EXTRA</channel>
   <channel site="epgshare01.online" site_id="UY1#ESPN.HD.uy" lang="en" xmltv_id="">ESPN HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#ESPN.uy" lang="en" xmltv_id="">ESPN</channel>
   <channel site="epgshare01.online" site_id="UY1#EUROPA.EUROPA.HD.uy" lang="en" xmltv_id="">EUROPA EUROPA HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#EUROPA.EUROPA.uy" lang="en" xmltv_id="">EUROPA EUROPA</channel>
-  <channel site="epgshare01.online" site_id="UY1#Eventos.Latu.1.uy" lang="es" xmltv_id="">Eventos Latu 1</channel>
-  <channel site="epgshare01.online" site_id="UY1#Eventos.Latu.2.uy" lang="es" xmltv_id="">Eventos Latu 2</channel>
-  <channel site="epgshare01.online" site_id="UY1#Eventos.Latu.3.uy" lang="es" xmltv_id="">Eventos Latu 3</channel>
-  <channel site="epgshare01.online" site_id="UY1#EVENTOS.MONTECABLE.1.uy" lang="en" xmltv_id="">EVENTOS MONTECABLE 1</channel>
-  <channel site="epgshare01.online" site_id="UY1#EVENTOS.MONTECABLE.2.-.VTV.+.uy" lang="en" xmltv_id="">EVENTOS MONTECABLE 2 - VTV +</channel>
-  <channel site="epgshare01.online" site_id="UY1#EVENTOS.MONTECABLE.HD.2.uy" lang="en" xmltv_id="">EVENTOS MONTECABLE HD 2</channel>
-  <channel site="epgshare01.online" site_id="UY1#EVENTOS.MONTECABLE.HD.3.uy" lang="en" xmltv_id="">EVENTOS MONTECABLE HD 3</channel>
-  <channel site="epgshare01.online" site_id="UY1#EVENTOS.MONTECABLE.HD.uy" lang="en" xmltv_id="">EVENTOS MONTECABLE HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#Eventos.TV.uy" lang="es" xmltv_id="">Eventos TV</channel>
   <channel site="epgshare01.online" site_id="UY1#EWTN.uy" lang="en" xmltv_id="">EWTN</channel>
-  <channel site="epgshare01.online" site_id="UY1#FILM&amp;ARTS.HD.uy" lang="en" xmltv_id="">FILM&amp;amp;ARTS HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#FILM&amp;ARTS.uy" lang="en" xmltv_id="">FILM&amp;amp;ARTS</channel>
-  <channel site="epgshare01.online" site_id="UY1#Florida.Televisora.Color.HD.uy" lang="es" xmltv_id="">Florida Televisora Color HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#FOOD.NETWORK.uy" lang="en" xmltv_id="">FOOD NETWORK</channel>
-  <channel site="epgshare01.online" site_id="UY1#FOX.SPORTS.2.HD.uy" lang="en" xmltv_id="">FOX SPORTS 2 HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#FOX.SPORTS.2.uy" lang="en" xmltv_id="">FOX SPORTS 2</channel>
-  <channel site="epgshare01.online" site_id="UY1#FOX.SPORTS.3.HD.uy" lang="en" xmltv_id="">FOX SPORTS 3 HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#FOX.SPORTS.3.uy" lang="en" xmltv_id="">FOX SPORTS 3</channel>
-  <channel site="epgshare01.online" site_id="UY1#FRANCE.24.FRANCÉS.uy" lang="en" xmltv_id="">FRANCE 24 FRANCÉS</channel>
-  <channel site="epgshare01.online" site_id="UY1#FRANCE.24.uy" lang="en" xmltv_id="">FRANCE 24</channel>
-  <channel site="epgshare01.online" site_id="UY1#France.24.uy" lang="es" xmltv_id="">France 24</channel>
-  <channel site="epgshare01.online" site_id="UY1#FX.HD.uy" lang="en" xmltv_id="">FX HD</channel>
   <channel site="epgshare01.online" site_id="UY1#FX.uy" lang="en" xmltv_id="">FX</channel>
   <channel site="epgshare01.online" site_id="UY1#GALICIA.TV.uy" lang="en" xmltv_id="">GALICIA TV</channel>
-  <channel site="epgshare01.online" site_id="UY1#GLITZ.uy" lang="en" xmltv_id="">GLITZ</channel>
-  <channel site="epgshare01.online" site_id="UY1#GOL.TV.HD.(MONTECABLE)..uy" lang="en" xmltv_id="">GOL TV HD (MONTECABLE)</channel>
-  <channel site="epgshare01.online" site_id="UY1#GOL.TV.uy" lang="en" xmltv_id="">GOL TV</channel>
-  <channel site="epgshare01.online" site_id="UY1#GOLDEN.PLUS.uy" lang="en" xmltv_id="">GOLDEN PLUS</channel>
-  <channel site="epgshare01.online" site_id="UY1#GOLDEN.PREMIER.uy" lang="en" xmltv_id="">GOLDEN PREMIER</channel>
-  <channel site="epgshare01.online" site_id="UY1#H2.HD.uy" lang="en" xmltv_id="">H2 HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#HBO.2.uy" lang="en" xmltv_id="">HBO 2</channel>
   <channel site="epgshare01.online" site_id="UY1#HBO.FAMILY.HD.uy" lang="en" xmltv_id="">HBO FAMILY HD</channel>
   <channel site="epgshare01.online" site_id="UY1#HBO.HD.uy" lang="en" xmltv_id="">HBO HD</channel>
   <channel site="epgshare01.online" site_id="UY1#HBO.MUNDI.HD.uy" lang="en" xmltv_id="">HBO MUNDI HD</channel>
   <channel site="epgshare01.online" site_id="UY1#HBO.PLUS.HD.uy" lang="en" xmltv_id="">HBO PLUS HD</channel>
   <channel site="epgshare01.online" site_id="UY1#HBO.POP.HD.uy" lang="en" xmltv_id="">HBO POP HD</channel>
   <channel site="epgshare01.online" site_id="UY1#HBO.SIGNATURE.HD.uy" lang="en" xmltv_id="">HBO SIGNATURE HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#HBO.uy" lang="en" xmltv_id="">HBO</channel>
   <channel site="epgshare01.online" site_id="UY1#HBO.XTREME.HD.uy" lang="en" xmltv_id="">HBO XTREME HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#HGTV.uy" lang="en" xmltv_id="">HGTV</channel>
   <channel site="epgshare01.online" site_id="UY1#HISTORY.HD.uy" lang="en" xmltv_id="">HISTORY HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#HISTORY.uy" lang="en" xmltv_id="">HISTORY</channel>
   <channel site="epgshare01.online" site_id="UY1#HOLA.TV.HD.uy" lang="en" xmltv_id="">HOLA TV HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#HOLA.TV.uy" lang="en" xmltv_id="">HOLA TV</channel>
-  <channel site="epgshare01.online" site_id="UY1#I-SAT.uy" lang="en" xmltv_id="">I-SAT</channel>
-  <channel site="epgshare01.online" site_id="UY1#Inti.TV.uy" lang="es" xmltv_id="">Inti TV</channel>
-  <channel site="epgshare01.online" site_id="UY1#IVC.uy" lang="en" xmltv_id="">IVC</channel>
-  <channel site="epgshare01.online" site_id="UY1#LA.NACION.+.uy" lang="en" xmltv_id="">LA NACION +</channel>
-  <channel site="epgshare01.online" site_id="UY1#LA.RED.uy" lang="es" xmltv_id="">LA RED</channel>
-  <channel site="epgshare01.online" site_id="UY1#LAS.ESTRELLAS.uy" lang="en" xmltv_id="">LAS ESTRELLAS</channel>
-  <channel site="epgshare01.online" site_id="UY1#LATELE.HD.uy" lang="en" xmltv_id="">LATELE HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#LATELE.uy" lang="en" xmltv_id="">LATELE</channel>
-  <channel site="epgshare01.online" site_id="UY1#Latina.TV.Paysandú.uy" lang="es" xmltv_id="">Latina TV Paysandú</channel>
-  <channel site="epgshare01.online" site_id="UY1#LIFETIME.uy" lang="en" xmltv_id="">LIFETIME</channel>
-  <channel site="epgshare01.online" site_id="UY1#Maroñas.Entertainment.uy" lang="es" xmltv_id="">Maroñas Entertainment</channel>
-  <channel site="epgshare01.online" site_id="UY1#MAS.CHIC.uy" lang="en" xmltv_id="">MAS CHIC</channel>
-  <channel site="epgshare01.online" site_id="UY1#Mi.Móvil.TV.uy" lang="es" xmltv_id="">Mi Móvil TV</channel>
-  <channel site="epgshare01.online" site_id="UY1#MIEM.uy" lang="es" xmltv_id="">MIEM</channel>
-  <channel site="epgshare01.online" site_id="UY1#MTV.DANCE.uy" lang="en" xmltv_id="">MTV DANCE</channel>
-  <channel site="epgshare01.online" site_id="UY1#MTV.HD.uy" lang="en" xmltv_id="">MTV HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#MTV.HITS.uy" lang="en" xmltv_id="">MTV HITS</channel>
-  <channel site="epgshare01.online" site_id="UY1#MTV.uy" lang="en" xmltv_id="">MTV</channel>
-  <channel site="epgshare01.online" site_id="UY1#MUCHMUSIC.uy" lang="en" xmltv_id="">MUCHMUSIC</channel>
-  <channel site="epgshare01.online" site_id="UY1#NAT.GEO.HD.uy" lang="en" xmltv_id="">NAT GEO HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#NATIONAL.GEOGRAPHIC.uy" lang="en" xmltv_id="">NATIONAL GEOGRAPHIC</channel>
-  <channel site="epgshare01.online" site_id="UY1#NICK.JR.uy" lang="en" xmltv_id="">NICK JR</channel>
-  <channel site="epgshare01.online" site_id="UY1#NICKELODEON.uy" lang="en" xmltv_id="">NICKELODEON</channel>
-  <channel site="epgshare01.online" site_id="UY1#Pantalla.IMPO.uy" lang="es" xmltv_id="">Pantalla IMPO</channel>
-  <channel site="epgshare01.online" site_id="UY1#PARAMOUNT.uy" lang="en" xmltv_id="">PARAMOUNT</channel>
-  <channel site="epgshare01.online" site_id="UY1#PASIONES.uy" lang="en" xmltv_id="">PASIONES</channel>
-  <channel site="epgshare01.online" site_id="UY1#Plazacanal.Treinta.y.Tres.uy" lang="es" xmltv_id="">Plazacanal Treinta y Tres</channel>
-  <channel site="epgshare01.online" site_id="UY1#Promo.1.uy" lang="es" xmltv_id="">Promo 1</channel>
-  <channel site="epgshare01.online" site_id="UY1#Promo.2.uy" lang="es" xmltv_id="">Promo 2</channel>
-  <channel site="epgshare01.online" site_id="UY1#Promo.3.uy" lang="es" xmltv_id="">Promo 3</channel>
-  <channel site="epgshare01.online" site_id="UY1#Promo.4.uy" lang="es" xmltv_id="">Promo 4</channel>
-  <channel site="epgshare01.online" site_id="UY1#Prueba.Carga.CDS.uy" lang="es" xmltv_id="">Prueba Carga CDS</channel>
-  <channel site="epgshare01.online" site_id="UY1#RAI.uy" lang="en" xmltv_id="">RAI</channel>
-  <channel site="epgshare01.online" site_id="UY1#RDTV.24HS.uy" lang="es" xmltv_id="">RDTV 24HS</channel>
   <channel site="epgshare01.online" site_id="UY1#REDE.RECORD.uy" lang="en" xmltv_id="">REDE RECORD</channel>
-  <channel site="epgshare01.online" site_id="UY1#REDE.TV.uy" lang="en" xmltv_id="">REDE TV</channel>
-  <channel site="epgshare01.online" site_id="UY1#Rio.Uruguay.TV.uy" lang="es" xmltv_id="">Rio Uruguay TV</channel>
-  <channel site="epgshare01.online" site_id="UY1#SAETA.HD.uy" lang="en" xmltv_id="">SAETA HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#SAETA.uy" lang="en" xmltv_id="">SAETA</channel>
-  <channel site="epgshare01.online" site_id="UY1#Siemprecine.uy" lang="es" xmltv_id="">Siemprecine</channel>
   <channel site="epgshare01.online" site_id="UY1#SONY.HD.uy" lang="en" xmltv_id="">SONY HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#SONY.MOVIES.uy" lang="en" xmltv_id="">SONY MOVIES</channel>
-  <channel site="epgshare01.online" site_id="UY1#SONY.uy" lang="en" xmltv_id="">SONY</channel>
   <channel site="epgshare01.online" site_id="UY1#SPACE.HD.uy" lang="en" xmltv_id="">SPACE HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#SPACE.uy" lang="en" xmltv_id="">SPACE</channel>
-  <channel site="epgshare01.online" site_id="UY1#SPORTV.uy" lang="en" xmltv_id="">SPORTV</channel>
   <channel site="epgshare01.online" site_id="UY1#STAR.CHANNEL.HD.uy" lang="en" xmltv_id="">STAR CHANNEL HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#STAR.CHANNEL.uy" lang="en" xmltv_id="">STAR CHANNEL</channel>
-  <channel site="epgshare01.online" site_id="UY1#STAR.TVE.uy" lang="en" xmltv_id="">STAR TVE</channel>
   <channel site="epgshare01.online" site_id="UY1#STUDIO.UNIVERSAL.HD.uy" lang="en" xmltv_id="">STUDIO UNIVERSAL HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#STUDIO.UNIVERSAL.uy" lang="en" xmltv_id="">STUDIO UNIVERSAL</channel>
-  <channel site="epgshare01.online" site_id="UY1#SYFY.uy" lang="en" xmltv_id="">SYFY</channel>
   <channel site="epgshare01.online" site_id="UY1#TCM..uy" lang="en" xmltv_id="">TCM</channel>
-  <channel site="epgshare01.online" site_id="UY1#Tele.R.uy" lang="es" xmltv_id="">Tele R</channel>
-  <channel site="epgshare01.online" site_id="UY1#TELEDOCE.HD.uy" lang="es" xmltv_id="">TELEDOCE HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#TELEFE.INTERNACIONAL.uy" lang="en" xmltv_id="">TELEFE INTERNACIONAL</channel>
-  <channel site="epgshare01.online" site_id="UY1#TELEMUNDO.uy" lang="en" xmltv_id="">TELEMUNDO</channel>
-  <channel site="epgshare01.online" site_id="UY1#Telesur.uy" lang="es" xmltv_id="">Telesur</channel>
-  <channel site="epgshare01.online" site_id="UY1#TickAntel.En.Casa.1.uy" lang="es" xmltv_id="">TickAntel En Casa 1</channel>
-  <channel site="epgshare01.online" site_id="UY1#TickAntel.En.Casa.2.uy" lang="es" xmltv_id="">TickAntel En Casa 2</channel>
-  <channel site="epgshare01.online" site_id="UY1#TickAntel.En.Casa.3.uy" lang="es" xmltv_id="">TickAntel En Casa 3</channel>
   <channel site="epgshare01.online" site_id="UY1#TN.HD.uy" lang="en" xmltv_id="">TN HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#TN.uy" lang="en" xmltv_id="">TN</channel>
   <channel site="epgshare01.online" site_id="UY1#TNT.HD.uy" lang="en" xmltv_id="">TNT HD</channel>
   <channel site="epgshare01.online" site_id="UY1#TNT.SERIES.HD.uy" lang="en" xmltv_id="">TNT SERIES HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#TNT.uy" lang="en" xmltv_id="">TNT</channel>
-  <channel site="epgshare01.online" site_id="UY1#TOONCAST.uy" lang="en" xmltv_id="">TOONCAST</channel>
-  <channel site="epgshare01.online" site_id="UY1#TRU.TV.HD.uy" lang="en" xmltv_id="">TRU TV HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#TRU.TV.uy" lang="en" xmltv_id="">TRU TV</channel>
   <channel site="epgshare01.online" site_id="UY1#TV.5.uy" lang="en" xmltv_id="">TV 5</channel>
-  <channel site="epgshare01.online" site_id="UY1#TV.ABC.uy" lang="es" xmltv_id="">TV ABC</channel>
-  <channel site="epgshare01.online" site_id="UY1#TV.CIUDAD.uy" lang="en" xmltv_id="">TV CIUDAD</channel>
-  <channel site="epgshare01.online" site_id="UY1#TVE.uy" lang="en" xmltv_id="">TVE</channel>
-  <channel site="epgshare01.online" site_id="UY1#TVL.Pando.uy" lang="es" xmltv_id="">TVL Pando</channel>
-  <channel site="epgshare01.online" site_id="UY1#TVN.CHILE.uy" lang="en" xmltv_id="">TVN CHILE</channel>
   <channel site="epgshare01.online" site_id="UY1#TYC.SPORTS.HD.uy" lang="en" xmltv_id="">TYC SPORTS HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#TYC.SPORTS.uy" lang="en" xmltv_id="">TYC SPORTS</channel>
-  <channel site="epgshare01.online" site_id="UY1#UNIVERSAL.CHANNEL.HD.uy" lang="en" xmltv_id="">UNIVERSAL CHANNEL HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#UNIVERSAL.CHANNEL.uy" lang="en" xmltv_id="">UNIVERSAL CHANNEL</channel>
-  <channel site="epgshare01.online" site_id="UY1#UNIVERSAL.CINEMA.uy" lang="en" xmltv_id="">UNIVERSAL CINEMA</channel>
-  <channel site="epgshare01.online" site_id="UY1#UNIVERSAL.COMEDY.uy" lang="en" xmltv_id="">UNIVERSAL COMEDY</channel>
-  <channel site="epgshare01.online" site_id="UY1#UNIVERSAL.CRIME.uy" lang="en" xmltv_id="">UNIVERSAL CRIME</channel>
-  <channel site="epgshare01.online" site_id="UY1#UNIVERSAL.PREMIERE.uy" lang="en" xmltv_id="">UNIVERSAL PREMIERE</channel>
-  <channel site="epgshare01.online" site_id="UY1#UNIVERSAL.REALITY.uy" lang="en" xmltv_id="">UNIVERSAL REALITY</channel>
-  <channel site="epgshare01.online" site_id="UY1#Uruguay.Presidencia.uy" lang="es" xmltv_id="">Uruguay Presidencia</channel>
-  <channel site="epgshare01.online" site_id="UY1#VH1.CLASSIC.uy" lang="en" xmltv_id="">VH1 CLASSIC</channel>
-  <channel site="epgshare01.online" site_id="UY1#VTV.+.HD.uy" lang="en" xmltv_id="">VTV + HD</channel>
   <channel site="epgshare01.online" site_id="UY1#VTV.HD.uy" lang="en" xmltv_id="">VTV HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#VTV.uy" lang="en" xmltv_id="">VTV</channel>
   <channel site="epgshare01.online" site_id="UY1#WARNER.HD.uy" lang="en" xmltv_id="">WARNER HD</channel>
-  <channel site="epgshare01.online" site_id="UY1#WARNER.uy" lang="en" xmltv_id="">WARNER</channel>
+  <channel site="epgshare01.online" site_id="UY1#26.TV.HD..uy" lang="es" xmltv_id="">26 TV HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#+TELEVISIÓN.HD.uy" lang="es" xmltv_id="">+TELEVISIÓN HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#A3CINE..uy" lang="es" xmltv_id="">A3CINE</channel>
+  <channel site="epgshare01.online" site_id="UY1#A24..uy" lang="es" xmltv_id="">A24</channel>
+  <channel site="epgshare01.online" site_id="UY1#A24.HD.uy" lang="es" xmltv_id="">A24 HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#A&amp;E.MUNDO..uy" lang="es" xmltv_id="">A&amp;E MUNDO</channel>
+  <channel site="epgshare01.online" site_id="UY1#A&amp;E.MUNDO.HD..uy" lang="es" xmltv_id="">A&amp;E MUNDO HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#A.and.E.MUNDO.HD.uy" lang="es" xmltv_id="">A and E MUNDO HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#ADRENALINA.SPORTS.NETWORK.HD.uy" lang="es" xmltv_id="">ADRENALINA SPORTS NETWORK HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#ALLEGRO.HD..uy" lang="es" xmltv_id="">ALLEGRO HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#ALLEGRO.HD.uy" lang="es" xmltv_id="">ALLEGRO HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#AMC..uy" lang="es" xmltv_id="">AMC</channel>
+  <channel site="epgshare01.online" site_id="UY1#AMC.HD..uy" lang="es" xmltv_id="">AMC HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#AMERICA.2..uy" lang="es" xmltv_id="">AMERICA 2</channel>
+  <channel site="epgshare01.online" site_id="UY1#AMERICA.SPORTS.uy" lang="es" xmltv_id="">AMERICA SPORTS</channel>
+  <channel site="epgshare01.online" site_id="UY1#AMERICA.TV.uy" lang="es" xmltv_id="">AMERICA TV</channel>
+  <channel site="epgshare01.online" site_id="UY1#ANIMAL.PLANET..uy" lang="es" xmltv_id="">ANIMAL PLANET</channel>
+  <channel site="epgshare01.online" site_id="UY1#ANIMAL.PLANET.HD..uy" lang="es" xmltv_id="">ANIMAL PLANET HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#ANTENA3.HD..uy" lang="es" xmltv_id="">ANTENA3 HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#ASPEN.uy" lang="es" xmltv_id="">ASPEN</channel>
+  <channel site="epgshare01.online" site_id="UY1#ATRESERIES..uy" lang="es" xmltv_id="">ATRESERIES</channel>
+  <channel site="epgshare01.online" site_id="UY1#AXN..uy" lang="es" xmltv_id="">AXN</channel>
+  <channel site="epgshare01.online" site_id="UY1#AXN.HD..uy" lang="es" xmltv_id="">AXN HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#BABY.TV..uy" lang="es" xmltv_id="">BABY TV</channel>
+  <channel site="epgshare01.online" site_id="UY1#BBC.NEWS..uy" lang="es" xmltv_id="">BBC NEWS</channel>
+  <channel site="epgshare01.online" site_id="UY1#BBC.NEWS.HD..uy" lang="es" xmltv_id="">BBC NEWS HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#BLOOMBERG.HD.uy" lang="es" xmltv_id="">BLOOMBERG HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#C5N..uy" lang="es" xmltv_id="">C5N</channel>
+  <channel site="epgshare01.online" site_id="UY1#CAMPO.RURAL.TV.HD..uy" lang="es" xmltv_id="">CAMPO RURAL TV HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#CANAL.4.MONTECARLO..uy" lang="es" xmltv_id="">CANAL 4 MONTECARLO</channel>
+  <channel site="epgshare01.online" site_id="UY1#CANAL.5..uy" lang="es" xmltv_id="">CANAL 5</channel>
+  <channel site="epgshare01.online" site_id="UY1#CANAL.7.HD.uy" lang="es" xmltv_id="">CANAL 7 HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#CANAL.10.HD.uy" lang="es" xmltv_id="">CANAL 10 HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#CANAL.11.HD.uy" lang="es" xmltv_id="">CANAL 11 HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#CANAL.12.HD.uy" lang="es" xmltv_id="">CANAL 12 HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#CANAL.24.HS..uy" lang="es" xmltv_id="">CANAL 24 HS</channel>
+  <channel site="epgshare01.online" site_id="UY1#CANAL.33.uy" lang="es" xmltv_id="">CANAL 33</channel>
+  <channel site="epgshare01.online" site_id="UY1#CANAL.A.HD.uy" lang="es" xmltv_id="">CANAL A HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#CANAL.EVENTOS.32.uy" lang="es" xmltv_id="">CANAL EVENTOS 32</channel>
+  <channel site="epgshare01.online" site_id="UY1#CANAL.EVENTOS.1001.uy" lang="es" xmltv_id="">CANAL EVENTOS 1001</channel>
+  <channel site="epgshare01.online" site_id="UY1#CANAL.LUZ.uy" lang="es" xmltv_id="">CANAL LUZ</channel>
+  <channel site="epgshare01.online" site_id="UY1#CANAL.VASCO..uy" lang="es" xmltv_id="">CANAL VASCO</channel>
+  <channel site="epgshare01.online" site_id="UY1#CANAL.VASCO.HD..uy" lang="es" xmltv_id="">CANAL VASCO HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#CARTOON.NETWORK..uy" lang="es" xmltv_id="">CARTOON NETWORK</channel>
+  <channel site="epgshare01.online" site_id="UY1#CARTOON.NETWORK.HD..uy" lang="es" xmltv_id="">CARTOON NETWORK HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#CARTOONITO..uy" lang="es" xmltv_id="">CARTOONITO</channel>
+  <channel site="epgshare01.online" site_id="UY1#CINECANAL..uy" lang="es" xmltv_id="">CINECANAL</channel>
+  <channel site="epgshare01.online" site_id="UY1#CINECANAL.HD..uy" lang="es" xmltv_id="">CINECANAL HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#CINEMAX..uy" lang="es" xmltv_id="">CINEMAX</channel>
+  <channel site="epgshare01.online" site_id="UY1#CINEMAX.HD..uy" lang="es" xmltv_id="">CINEMAX HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#CIUDAD.MAGAZINE..uy" lang="es" xmltv_id="">CIUDAD MAGAZINE</channel>
+  <channel site="epgshare01.online" site_id="UY1#CIUDAD.MAGAZINE.HD..uy" lang="es" xmltv_id="">CIUDAD MAGAZINE HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#CLAROSPORTS..uy" lang="es" xmltv_id="">CLAROSPORTS</channel>
+  <channel site="epgshare01.online" site_id="UY1#CNN.EN.ESPAÑOL..uy" lang="es" xmltv_id="">CNN EN ESPAÑOL</channel>
+  <channel site="epgshare01.online" site_id="UY1#CNN.EN.ESPAÑOL.HD.uy" lang="es" xmltv_id="">CNN EN ESPAÑOL HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#CNN.HD.uy" lang="es" xmltv_id="">CNN HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#COMEDY.CENTRAL.HD.uy" lang="es" xmltv_id="">COMEDY CENTRAL HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#CONCERT.CHANNEL.HD.uy" lang="es" xmltv_id="">CONCERT CHANNEL HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#CRONICA.TV..uy" lang="es" xmltv_id="">CRONICA TV</channel>
+  <channel site="epgshare01.online" site_id="UY1#CRONICA.uy" lang="es" xmltv_id="">CRONICA</channel>
+  <channel site="epgshare01.online" site_id="UY1#DE.PELICULA.HD.uy" lang="es" xmltv_id="">DE PELICULA HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#DE.PELICULA.PLUS.HD.uy" lang="es" xmltv_id="">DE PELICULA PLUS HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#DEUTSCHE.WELLE.ESPAÑOL..uy" lang="es" xmltv_id="">DEUTSCHE WELLE ESPAÑOL</channel>
+  <channel site="epgshare01.online" site_id="UY1#DISCOVERY..uy" lang="es" xmltv_id="">DISCOVERY</channel>
+  <channel site="epgshare01.online" site_id="UY1#DISCOVERY.H.and.H.HD.uy" lang="es" xmltv_id="">DISCOVERY H and H HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#DISCOVERY.HD..uy" lang="es" xmltv_id="">DISCOVERY HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#DISCOVERY.HD.THEATER..uy" lang="es" xmltv_id="">DISCOVERY HD THEATER</channel>
+  <channel site="epgshare01.online" site_id="UY1#DISCOVERY.ID..uy" lang="es" xmltv_id="">DISCOVERY ID</channel>
+  <channel site="epgshare01.online" site_id="UY1#DISCOVERY.ID.HD..uy" lang="es" xmltv_id="">DISCOVERY ID HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#DISCOVERY.KIDS..uy" lang="es" xmltv_id="">DISCOVERY KIDS</channel>
+  <channel site="epgshare01.online" site_id="UY1#DISCOVERY.KIDS.HD..uy" lang="es" xmltv_id="">DISCOVERY KIDS HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#DISCOVERY.SCIENCE.HD..uy" lang="es" xmltv_id="">DISCOVERY SCIENCE HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#DISCOVERY.THEATER.HD.uy" lang="es" xmltv_id="">DISCOVERY THEATER HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#DISCOVERY.TLC.HD..uy" lang="es" xmltv_id="">DISCOVERY TLC HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#DISCOVERY.TURBO.HD..uy" lang="es" xmltv_id="">DISCOVERY TURBO HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#DISCOVERY.WORLD.HD..uy" lang="es" xmltv_id="">DISCOVERY WORLD HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#DISNEY..uy" lang="es" xmltv_id="">DISNEY</channel>
+  <channel site="epgshare01.online" site_id="UY1#DISNEY.HD..uy" lang="es" xmltv_id="">DISNEY HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#DISNEY.JR..uy" lang="es" xmltv_id="">DISNEY JR</channel>
+  <channel site="epgshare01.online" site_id="UY1#DISNEY.JR.HD.uy" lang="es" xmltv_id="">DISNEY JR HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#DISTRITO.COMEDIA.HD.uy" lang="es" xmltv_id="">DISTRITO COMEDIA HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#DW.ESPAÑOL.HD.uy" lang="es" xmltv_id="">DW ESPAÑOL HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#EL.GOURMET..uy" lang="es" xmltv_id="">EL GOURMET</channel>
+  <channel site="epgshare01.online" site_id="UY1#EL.GOURMET.HD..uy" lang="es" xmltv_id="">EL GOURMET HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#EL.TRECE.INTER.HD.uy" lang="es" xmltv_id="">EL TRECE INTER HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#ENCUENTRO.uy" lang="es" xmltv_id="">ENCUENTRO</channel>
+  <channel site="epgshare01.online" site_id="UY1#ENTERTAINMENT.TELEVISION..uy" lang="es" xmltv_id="">ENTERTAINMENT TELEVISION</channel>
+  <channel site="epgshare01.online" site_id="UY1#ESPN.2..uy" lang="es" xmltv_id="">ESPN 2</channel>
+  <channel site="epgshare01.online" site_id="UY1#ESPN.2.HD..uy" lang="es" xmltv_id="">ESPN 2 HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#ESPN.3..uy" lang="es" xmltv_id="">ESPN 3</channel>
+  <channel site="epgshare01.online" site_id="UY1#ESPN.3.HD..uy" lang="es" xmltv_id="">ESPN 3 HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#ESPN.4.HD..uy" lang="es" xmltv_id="">ESPN 4 HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#ESPN.5..uy" lang="es" xmltv_id="">ESPN 5</channel>
+  <channel site="epgshare01.online" site_id="UY1#ESPN.5.HD..uy" lang="es" xmltv_id="">ESPN 5 HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#ESPN.5.HD.uy" lang="es" xmltv_id="">ESPN 5 HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#ESPN.6..uy" lang="es" xmltv_id="">ESPN 6</channel>
+  <channel site="epgshare01.online" site_id="UY1#ESPN.6.HD..uy" lang="es" xmltv_id="">ESPN 6 HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#ESPN.6.HD.uy" lang="es" xmltv_id="">ESPN 6 HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#ESPN.7..uy" lang="es" xmltv_id="">ESPN 7</channel>
+  <channel site="epgshare01.online" site_id="UY1#ESPN.7.HD..uy" lang="es" xmltv_id="">ESPN 7 HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#ESPN.7.HD.uy" lang="es" xmltv_id="">ESPN 7 HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#ESPN..uy" lang="es" xmltv_id="">ESPN</channel>
+  <channel site="epgshare01.online" site_id="UY1#ESPN.HD..uy" lang="es" xmltv_id="">ESPN HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#EUROCHANNEL..uy" lang="es" xmltv_id="">EUROCHANNEL</channel>
+  <channel site="epgshare01.online" site_id="UY1#EUROCHANNEL.HD..uy" lang="es" xmltv_id="">EUROCHANNEL HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#EUROCHANNEL.HD.uy" lang="es" xmltv_id="">EUROCHANNEL HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#EUROPA.EUROPA..uy" lang="es" xmltv_id="">EUROPA EUROPA</channel>
+  <channel site="epgshare01.online" site_id="UY1#EVENTOS.4.HD..uy" lang="es" xmltv_id="">EVENTOS 4 HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#EVENTOS.DEPORTIVOS.2.HD.uy" lang="es" xmltv_id="">EVENTOS DEPORTIVOS 2 HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#EWTN..uy" lang="es" xmltv_id="">EWTN</channel>
+  <channel site="epgshare01.online" site_id="UY1#FILM&amp;ARTS..uy" lang="es" xmltv_id="">FILM&amp;ARTS</channel>
+  <channel site="epgshare01.online" site_id="UY1#FILM&amp;ARTS.HD..uy" lang="es" xmltv_id="">FILM&amp;ARTS HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#FILM.and.ARTS.HD.uy" lang="es" xmltv_id="">FILM and ARTS HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#FOOD.NETWORK..uy" lang="es" xmltv_id="">FOOD NETWORK</channel>
+  <channel site="epgshare01.online" site_id="UY1#FOOD.NETWORK.HD.uy" lang="es" xmltv_id="">FOOD NETWORK HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#FRANCE.24..uy" lang="es" xmltv_id="">FRANCE 24</channel>
+  <channel site="epgshare01.online" site_id="UY1#FRANCE.24.ESPAÑOL.HD.uy" lang="es" xmltv_id="">FRANCE 24 ESPAÑOL HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#FRANCE.24.INGLES.HD.uy" lang="es" xmltv_id="">FRANCE 24 INGLES HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#FX..uy" lang="es" xmltv_id="">FX</channel>
+  <channel site="epgshare01.online" site_id="UY1#FX.HD..uy" lang="es" xmltv_id="">FX HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#GALICIA.TV..uy" lang="es" xmltv_id="">GALICIA TV</channel>
+  <channel site="epgshare01.online" site_id="UY1#GOL.TV..uy" lang="es" xmltv_id="">GOL TV</channel>
+  <channel site="epgshare01.online" site_id="UY1#GOL.TV.HD.uy" lang="es" xmltv_id="">GOL TV HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#GOLDEN.EDGE.HD.uy" lang="es" xmltv_id="">GOLDEN EDGE HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#GOLDEN.HD.uy" lang="es" xmltv_id="">GOLDEN HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#GOLDEN.PLUS..uy" lang="es" xmltv_id="">GOLDEN PLUS</channel>
+  <channel site="epgshare01.online" site_id="UY1#GOLDEN.PLUS.HD.uy" lang="es" xmltv_id="">GOLDEN PLUS HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#GOLDEN.PREMIER.HD..uy" lang="es" xmltv_id="">GOLDEN PREMIER HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#H2..uy" lang="es" xmltv_id="">H2</channel>
+  <channel site="epgshare01.online" site_id="UY1#H2.HD..uy" lang="es" xmltv_id="">H2 HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#HBO.2.HD..uy" lang="es" xmltv_id="">HBO 2 HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#HBO.2.HD.uy" lang="es" xmltv_id="">HBO 2 HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#HBO..uy" lang="es" xmltv_id="">HBO</channel>
+  <channel site="epgshare01.online" site_id="UY1#HBO.FAMILY.HD..uy" lang="es" xmltv_id="">HBO FAMILY HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#HBO.HD..uy" lang="es" xmltv_id="">HBO HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#HBO.MUNDI.HD..uy" lang="es" xmltv_id="">HBO MUNDI HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#HBO.PLUS.HD..uy" lang="es" xmltv_id="">HBO PLUS HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#HBO.POP.HD..uy" lang="es" xmltv_id="">HBO POP HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#HBO.SIGNATURE.HD..uy" lang="es" xmltv_id="">HBO SIGNATURE HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#HBO.XTREME.HD..uy" lang="es" xmltv_id="">HBO XTREME HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#HGTV..uy" lang="es" xmltv_id="">HGTV</channel>
+  <channel site="epgshare01.online" site_id="UY1#HGTV.HD.uy" lang="es" xmltv_id="">HGTV HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#HISTORY.2.HD.uy" lang="es" xmltv_id="">HISTORY 2 HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#HISTORY..uy" lang="es" xmltv_id="">HISTORY</channel>
+  <channel site="epgshare01.online" site_id="UY1#HISTORY.HD..uy" lang="es" xmltv_id="">HISTORY HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#HOLA.TV..uy" lang="es" xmltv_id="">HOLA TV</channel>
+  <channel site="epgshare01.online" site_id="UY1#HOME.AND.HEALTH..uy" lang="es" xmltv_id="">HOME AND HEALTH</channel>
+  <channel site="epgshare01.online" site_id="UY1#HOME.AND.HEALTH.HD..uy" lang="es" xmltv_id="">HOME AND HEALTH HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#HTV.uy" lang="es" xmltv_id="">HTV</channel>
+  <channel site="epgshare01.online" site_id="UY1#KANAL.D.DRAMA..uy" lang="es" xmltv_id="">KANAL D DRAMA</channel>
+  <channel site="epgshare01.online" site_id="UY1#KANAL.D.HD.uy" lang="es" xmltv_id="">KANAL D HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#LA.NACION.HD.uy" lang="es" xmltv_id="">LA NACION HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#LA.RED.uy" lang="es" xmltv_id="">LA RED</channel>
+  <channel site="epgshare01.online" site_id="UY1#LAS.ESTRELLAS.HD..uy" lang="es" xmltv_id="">LAS ESTRELLAS HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#LAS.ESTRELLAS.HD.uy" lang="es" xmltv_id="">LAS ESTRELLAS HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#LIFETIME..uy" lang="es" xmltv_id="">LIFETIME</channel>
+  <channel site="epgshare01.online" site_id="UY1#LIFETIME.HD.uy" lang="es" xmltv_id="">LIFETIME HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#LN+..uy" lang="es" xmltv_id="">LN+</channel>
+  <channel site="epgshare01.online" site_id="UY1#MAGAZINE.HD.uy" lang="es" xmltv_id="">MAGAZINE HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#MAROÑAS.HD.uy" lang="es" xmltv_id="">MAROÑAS HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#MAS.CHIC..uy" lang="es" xmltv_id="">MAS CHIC</channel>
+  <channel site="epgshare01.online" site_id="UY1#MAS.CHIC.HD..uy" lang="es" xmltv_id="">MAS CHIC HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#MAS.CHIC.HD.uy" lang="es" xmltv_id="">MAS CHIC HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#MONTECARLO.HD.uy" lang="es" xmltv_id="">MONTECARLO HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#MTV.80S..uy" lang="es" xmltv_id="">MTV 80S</channel>
+  <channel site="epgshare01.online" site_id="UY1#MTV..uy" lang="es" xmltv_id="">MTV</channel>
+  <channel site="epgshare01.online" site_id="UY1#MTV.CLUB..uy" lang="es" xmltv_id="">MTV CLUB</channel>
+  <channel site="epgshare01.online" site_id="UY1#MTV.HD..uy" lang="es" xmltv_id="">MTV HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#MTV.HITS..uy" lang="es" xmltv_id="">MTV HITS</channel>
+  <channel site="epgshare01.online" site_id="UY1#NAT.GEO.HD..uy" lang="es" xmltv_id="">NAT GEO HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#NATGEO.HD.uy" lang="es" xmltv_id="">NATGEO HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#NATIONAL.GEOGRAPHIC..uy" lang="es" xmltv_id="">NATIONAL GEOGRAPHIC</channel>
+  <channel site="epgshare01.online" site_id="UY1#NICK.JR..uy" lang="es" xmltv_id="">NICK JR</channel>
+  <channel site="epgshare01.online" site_id="UY1#NICKELODEON..uy" lang="es" xmltv_id="">NICKELODEON</channel>
+  <channel site="epgshare01.online" site_id="UY1#NICKELODEON.HD.uy" lang="es" xmltv_id="">NICKELODEON HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#NS.EVENTOS.1..uy" lang="es" xmltv_id="">NS EVENTOS 1</channel>
+  <channel site="epgshare01.online" site_id="UY1#NS.EVENTOS.2..uy" lang="es" xmltv_id="">NS EVENTOS 2</channel>
+  <channel site="epgshare01.online" site_id="UY1#NS.EVENTOS.2.HD..uy" lang="es" xmltv_id="">NS EVENTOS 2 HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#NS.EVENTOS.3..uy" lang="es" xmltv_id="">NS EVENTOS 3</channel>
+  <channel site="epgshare01.online" site_id="UY1#NS.EVENTOS.3.HD..uy" lang="es" xmltv_id="">NS EVENTOS 3 HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#NS.EVENTOS.HD..uy" lang="es" xmltv_id="">NS EVENTOS HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#NUEVO.SIGLO.TV..uy" lang="es" xmltv_id="">NUEVO SIGLO TV</channel>
+  <channel site="epgshare01.online" site_id="UY1#NUEVO.SIGLO.TV.HD..uy" lang="es" xmltv_id="">NUEVO SIGLO TV HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#PARAMOUNT.NETWORK..uy" lang="es" xmltv_id="">PARAMOUNT NETWORK</channel>
+  <channel site="epgshare01.online" site_id="UY1#PARAMOUNT.NETWORK.HD..uy" lang="es" xmltv_id="">PARAMOUNT NETWORK HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#PENTHOUSE..uy" lang="es" xmltv_id="">PENTHOUSE</channel>
+  <channel site="epgshare01.online" site_id="UY1#PLAYBOY..uy" lang="es" xmltv_id="">PLAYBOY</channel>
+  <channel site="epgshare01.online" site_id="UY1#PLAYBOY.ETIQUETA.uy" lang="es" xmltv_id="">PLAYBOY ETIQUETA</channel>
+  <channel site="epgshare01.online" site_id="UY1#PLIM.PLIM..uy" lang="es" xmltv_id="">PLIM PLIM</channel>
+  <channel site="epgshare01.online" site_id="UY1#PLIM.PLIM.uy" lang="es" xmltv_id="">PLIM PLIM</channel>
+  <channel site="epgshare01.online" site_id="UY1#QUIERO..uy" lang="es" xmltv_id="">QUIERO</channel>
+  <channel site="epgshare01.online" site_id="UY1#QUIERO.HD.uy" lang="es" xmltv_id="">QUIERO HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#RAI..uy" lang="es" xmltv_id="">RAI</channel>
+  <channel site="epgshare01.online" site_id="UY1#RAI.HD.uy" lang="es" xmltv_id="">RAI HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#RECORD..uy" lang="es" xmltv_id="">RECORD</channel>
+  <channel site="epgshare01.online" site_id="UY1#REDE.TV..uy" lang="es" xmltv_id="">REDE TV</channel>
+  <channel site="epgshare01.online" site_id="UY1#REDE.TV.HD.uy" lang="es" xmltv_id="">REDE TV HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#SAETA..uy" lang="es" xmltv_id="">SAETA</channel>
+  <channel site="epgshare01.online" site_id="UY1#SEXTREME..uy" lang="es" xmltv_id="">SEXTREME</channel>
+  <channel site="epgshare01.online" site_id="UY1#SONY..uy" lang="es" xmltv_id="">SONY</channel>
+  <channel site="epgshare01.online" site_id="UY1#SONY.HD..uy" lang="es" xmltv_id="">SONY HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#SONY.MOVIES.HD..uy" lang="es" xmltv_id="">SONY MOVIES HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#SPACE..uy" lang="es" xmltv_id="">SPACE</channel>
+  <channel site="epgshare01.online" site_id="UY1#SPACE.HD..uy" lang="es" xmltv_id="">SPACE HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#STAR.CHANNEL..uy" lang="es" xmltv_id="">STAR CHANNEL</channel>
+  <channel site="epgshare01.online" site_id="UY1#STAR.CHANNEL.HD..uy" lang="es" xmltv_id="">STAR CHANNEL HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#STUDIO.UNIVERSAL..uy" lang="es" xmltv_id="">STUDIO UNIVERSAL</channel>
+  <channel site="epgshare01.online" site_id="UY1#STUDIO.UNIVERSAL.HD..uy" lang="es" xmltv_id="">STUDIO UNIVERSAL HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#TCM.uy" lang="es" xmltv_id="">TCM</channel>
+  <channel site="epgshare01.online" site_id="UY1#TELEDOCE..uy" lang="es" xmltv_id="">TELEDOCE</channel>
+  <channel site="epgshare01.online" site_id="UY1#TELEDOCE.HD..uy" lang="es" xmltv_id="">TELEDOCE HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#TELEFE.INTER..uy" lang="es" xmltv_id="">TELEFE INTER</channel>
+  <channel site="epgshare01.online" site_id="UY1#TELEFE.INTERNACIONAL.HD.uy" lang="es" xmltv_id="">TELEFE INTERNACIONAL HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#TELEHIT.HD.uy" lang="es" xmltv_id="">TELEHIT HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#TELEHIT.MÚSICA.HD.uy" lang="es" xmltv_id="">TELEHIT MÚSICA HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#TELEHIT.MÚSICA.PLUS.HD.uy" lang="es" xmltv_id="">TELEHIT MÚSICA PLUS HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#TELEMUNDO..uy" lang="es" xmltv_id="">TELEMUNDO</channel>
+  <channel site="epgshare01.online" site_id="UY1#TELEMUNDO.HD..uy" lang="es" xmltv_id="">TELEMUNDO HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#TELEMUNDO.HD.uy" lang="es" xmltv_id="">TELEMUNDO HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#TLC..uy" lang="es" xmltv_id="">TLC</channel>
+  <channel site="epgshare01.online" site_id="UY1#TLNOVELAS.HD.uy" lang="es" xmltv_id="">TLNOVELAS HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#TN..uy" lang="es" xmltv_id="">TN</channel>
+  <channel site="epgshare01.online" site_id="UY1#TN.HD..uy" lang="es" xmltv_id="">TN HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#TNT..uy" lang="es" xmltv_id="">TNT</channel>
+  <channel site="epgshare01.online" site_id="UY1#TNT.HD..uy" lang="es" xmltv_id="">TNT HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#TNT.NOVELAS..uy" lang="es" xmltv_id="">TNT NOVELAS</channel>
+  <channel site="epgshare01.online" site_id="UY1#TNT.NOVELAS.uy" lang="es" xmltv_id="">TNT NOVELAS</channel>
+  <channel site="epgshare01.online" site_id="UY1#TNT.SERIES..uy" lang="es" xmltv_id="">TNT SERIES</channel>
+  <channel site="epgshare01.online" site_id="UY1#TNT.SERIES.HD..uy" lang="es" xmltv_id="">TNT SERIES HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#TOONCAST..uy" lang="es" xmltv_id="">TOONCAST</channel>
+  <channel site="epgshare01.online" site_id="UY1#TOONCAST.HD.uy" lang="es" xmltv_id="">TOONCAST HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#TV.5.MONDE.HD..uy" lang="es" xmltv_id="">TV 5 MONDE HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#TV.CIUDAD..uy" lang="es" xmltv_id="">TV CIUDAD</channel>
+  <channel site="epgshare01.online" site_id="UY1#TV.CIUDAD.HD..uy" lang="es" xmltv_id="">TV CIUDAD HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#TV.GLOBO.HD..uy" lang="es" xmltv_id="">TV GLOBO HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#TV.NACIONAL.HD.uy" lang="es" xmltv_id="">TV NACIONAL HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#TV.PUBLICA.uy" lang="es" xmltv_id="">TV PUBLICA</channel>
+  <channel site="epgshare01.online" site_id="UY1#TVE..uy" lang="es" xmltv_id="">TVE</channel>
+  <channel site="epgshare01.online" site_id="UY1#TVE.HD..uy" lang="es" xmltv_id="">TVE HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#TVE.HD.uy" lang="es" xmltv_id="">TVE HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#TVN.CHILE..uy" lang="es" xmltv_id="">TVN CHILE</channel>
+  <channel site="epgshare01.online" site_id="UY1#TVN.CHILE.HD.uy" lang="es" xmltv_id="">TVN CHILE HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#TYC.SPORTS..uy" lang="es" xmltv_id="">TYC SPORTS</channel>
+  <channel site="epgshare01.online" site_id="UY1#TYC.SPORTS.HD..uy" lang="es" xmltv_id="">TYC SPORTS HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#UNIVERSAL.CHANNEL..uy" lang="es" xmltv_id="">UNIVERSAL CHANNEL</channel>
+  <channel site="epgshare01.online" site_id="UY1#UNIVERSAL.CHANNEL.HD..uy" lang="es" xmltv_id="">UNIVERSAL CHANNEL HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#UNIVERSAL.CINEMA.HD..uy" lang="es" xmltv_id="">UNIVERSAL CINEMA HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#UNIVERSAL.CINEMA.HD.uy" lang="es" xmltv_id="">UNIVERSAL CINEMA HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#UNIVERSAL.COMEDY.HD..uy" lang="es" xmltv_id="">UNIVERSAL COMEDY HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#UNIVERSAL.COMEDY.HD.uy" lang="es" xmltv_id="">UNIVERSAL COMEDY HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#UNIVERSAL.CRIME.HD..uy" lang="es" xmltv_id="">UNIVERSAL CRIME HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#UNIVERSAL.CRIME.HD.uy" lang="es" xmltv_id="">UNIVERSAL CRIME HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#UNIVERSAL.HD.uy" lang="es" xmltv_id="">UNIVERSAL HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#UNIVERSAL.PREMIERE.HD..uy" lang="es" xmltv_id="">UNIVERSAL PREMIERE HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#UNIVERSAL.PREMIERE.HD.uy" lang="es" xmltv_id="">UNIVERSAL PREMIERE HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#UNIVERSAL.REALITY.HD..uy" lang="es" xmltv_id="">UNIVERSAL REALITY HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#UNIVERSAL.REALITY.HD.uy" lang="es" xmltv_id="">UNIVERSAL REALITY HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#UNIVISION.HD.uy" lang="es" xmltv_id="">UNIVISION HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#USA.NETWORK..uy" lang="es" xmltv_id="">USA NETWORK</channel>
+  <channel site="epgshare01.online" site_id="UY1#USA.NETWORK.HD..uy" lang="es" xmltv_id="">USA NETWORK HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#USA.NETWORK.HD.uy" lang="es" xmltv_id="">USA NETWORK HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#VENUS..uy" lang="es" xmltv_id="">VENUS</channel>
+  <channel site="epgshare01.online" site_id="UY1#VENUS.ETIQUETA.uy" lang="es" xmltv_id="">VENUS ETIQUETA</channel>
+  <channel site="epgshare01.online" site_id="UY1#VTV+.HD.uy" lang="es" xmltv_id="">VTV+ HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#VTV..uy" lang="es" xmltv_id="">VTV</channel>
+  <channel site="epgshare01.online" site_id="UY1#VTV.HD..uy" lang="es" xmltv_id="">VTV HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#VTV.PLUS..uy" lang="es" xmltv_id="">VTV PLUS</channel>
+  <channel site="epgshare01.online" site_id="UY1#VTV.PLUS.HD..uy" lang="es" xmltv_id="">VTV PLUS HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#WARNER..uy" lang="es" xmltv_id="">WARNER</channel>
+  <channel site="epgshare01.online" site_id="UY1#WARNER.HD..uy" lang="es" xmltv_id="">WARNER HD</channel>
+  <channel site="epgshare01.online" site_id="UY1#WOOHOO.uy" lang="es" xmltv_id="">WOOHOO</channel>
 </channels>

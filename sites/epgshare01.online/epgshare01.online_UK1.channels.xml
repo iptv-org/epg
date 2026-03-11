@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="epgshare01.online" site_id="UK1#4Music.uk" lang="en" xmltv_id="">4Music</channel>
   <channel site="epgshare01.online" site_id="UK1#4seven.uk" lang="en" xmltv_id="">4seven</channel>
   <channel site="epgshare01.online" site_id="UK1#5.USA.uk" lang="en" xmltv_id="">5 USA</channel>
   <channel site="epgshare01.online" site_id="UK1#5ACTION.uk" lang="en" xmltv_id="">5ACTION</channel>
@@ -71,6 +70,10 @@
   <channel site="epgshare01.online" site_id="UK1#BBC.R.Scot..uk" lang="en" xmltv_id="">BBC R Scot.</channel>
   <channel site="epgshare01.online" site_id="UK1#BBC.R.Ulster.uk" lang="en" xmltv_id="">BBC R Ulster</channel>
   <channel site="epgshare01.online" site_id="UK1#BBC.R.Wales.uk" lang="en" xmltv_id="">BBC R Wales</channel>
+  <channel site="epgshare01.online" site_id="UK1#BBC.Radio.Bristol.94.9FM.uk" lang="en" xmltv_id="">BBC Radio Bristol 94.9FM</channel>
+  <channel site="epgshare01.online" site_id="UK1#BBC.Radio.Bristol.104.6FM.uk" lang="en" xmltv_id="">BBC Radio Bristol 104.6FM</channel>
+  <channel site="epgshare01.online" site_id="UK1#BBC.Radio.Bristol.DAB.uk" lang="en" xmltv_id="">BBC Radio Bristol DAB</channel>
+  <channel site="epgshare01.online" site_id="UK1#BBC.Radio.Sussex.uk" lang="en" xmltv_id="">BBC Radio Sussex</channel>
   <channel site="epgshare01.online" site_id="UK1#BBC.RB.1.HD.uk" lang="en" xmltv_id="">BBC RB 1 HD</channel>
   <channel site="epgshare01.online" site_id="UK1#BBC.RB.1.uk" lang="en" xmltv_id="">BBC RB 1</channel>
   <channel site="epgshare01.online" site_id="UK1#BBC.RLondon.uk" lang="en" xmltv_id="">BBC RLondon</channel>
@@ -101,7 +104,6 @@
   <channel site="epgshare01.online" site_id="UK1#Challenge.uk" lang="en" xmltv_id="">Challenge</channel>
   <channel site="epgshare01.online" site_id="UK1#Channel.4+1.uk" lang="en" xmltv_id="">Channel 4+1</channel>
   <channel site="epgshare01.online" site_id="UK1#Channel.4.HD.uk" lang="en" xmltv_id="">Channel 4 HD</channel>
-  <channel site="epgshare01.online" site_id="UK1#Channel.4.uk" lang="en" xmltv_id="">Channel 4</channel>
   <channel site="epgshare01.online" site_id="UK1#Channel.5+1.uk" lang="en" xmltv_id="">Channel 5+1</channel>
   <channel site="epgshare01.online" site_id="UK1#Channel.5.HD.uk" lang="en" xmltv_id="">Channel 5 HD</channel>
   <channel site="epgshare01.online" site_id="UK1#Channel.5.uk" lang="en" xmltv_id="">Channel 5</channel>
@@ -154,11 +156,6 @@
   <channel site="epgshare01.online" site_id="UK1#EasterEpicsHD.uk" lang="en" xmltv_id="">EasterEpicsHD</channel>
   <channel site="epgshare01.online" site_id="UK1#Eman.Channel.uk" lang="en" xmltv_id="">Eman Channel</channel>
   <channel site="epgshare01.online" site_id="UK1#Euronews.uk" lang="en" xmltv_id="">Euronews</channel>
-  <channel site="epgshare01.online" site_id="UK1#Eurosport.1.HD.uk" lang="en" xmltv_id="">Eurosport 1 HD</channel>
-  <channel site="epgshare01.online" site_id="UK1#Eurosport.2.HD.uk" lang="en" xmltv_id="">Eurosport 2 HD</channel>
-  <channel site="epgshare01.online" site_id="UK1#Eurosport.3.HD.uk" lang="en" xmltv_id="">Eurosport 3 HD</channel>
-  <channel site="epgshare01.online" site_id="UK1#Eurosport.4.HD.uk" lang="en" xmltv_id="">Eurosport 4 HD</channel>
-  <channel site="epgshare01.online" site_id="UK1#Eurosport.5.HD.uk" lang="en" xmltv_id="">Eurosport 5 HD</channel>
   <channel site="epgshare01.online" site_id="UK1#EWTN.Catholic.uk" lang="en" xmltv_id="">EWTN Catholic</channel>
   <channel site="epgshare01.online" site_id="UK1#Faith.UK.uk" lang="en" xmltv_id="">Faith UK</channel>
   <channel site="epgshare01.online" site_id="UK1#Faith.World.TV.uk" lang="en" xmltv_id="">Faith World TV</channel>
@@ -169,7 +166,6 @@
   <channel site="epgshare01.online" site_id="UK1#Foodxp.uk" lang="en" xmltv_id="">Foodxp</channel>
   <channel site="epgshare01.online" site_id="UK1#Forces.TV.uk" lang="en" xmltv_id="">Forces TV</channel>
   <channel site="epgshare01.online" site_id="UK1#FRANCE.24.HD.uk" lang="en" xmltv_id="">FRANCE 24 HD</channel>
-  <channel site="epgshare01.online" site_id="UK1#FreeSports.HD.uk" lang="en" xmltv_id="">FreeSports HD</channel>
   <channel site="epgshare01.online" site_id="UK1#G!.romance+1.uk" lang="en" xmltv_id="">G! romance+1</channel>
   <channel site="epgshare01.online" site_id="UK1#GB.News.HD.uk" lang="en" xmltv_id="">GB News HD</channel>
   <channel site="epgshare01.online" site_id="UK1#Gemporia.Craft.uk" lang="en" xmltv_id="">Gemporia Craft</channel>
@@ -187,10 +183,12 @@
   <channel site="epgshare01.online" site_id="UK1#GREAT!.tv+1.uk" lang="en" xmltv_id="">GREAT! tv+1</channel>
   <channel site="epgshare01.online" site_id="UK1#GREAT!.tv.uk" lang="en" xmltv_id="">GREAT! tv</channel>
   <channel site="epgshare01.online" site_id="UK1#GREAT!action+1.uk" lang="en" xmltv_id="">GREAT!action+1</channel>
+  <channel site="epgshare01.online" site_id="UK1#Greatest.Hits.Radio.(West.Sussex).uk" lang="en" xmltv_id="">Greatest Hits Radio (West Sussex)</channel>
   <channel site="epgshare01.online" site_id="UK1#Greatest.Hits.uk" lang="en" xmltv_id="">Greatest Hits</channel>
   <channel site="epgshare01.online" site_id="UK1#Heart.80s.uk" lang="en" xmltv_id="">Heart 80s</channel>
   <channel site="epgshare01.online" site_id="UK1#Heart.90s.uk" lang="en" xmltv_id="">Heart 90s</channel>
   <channel site="epgshare01.online" site_id="UK1#Heart.Dance.uk" lang="en" xmltv_id="">Heart Dance</channel>
+  <channel site="epgshare01.online" site_id="UK1#Heart.Sussex.uk" lang="en" xmltv_id="">Heart Sussex</channel>
   <channel site="epgshare01.online" site_id="UK1#Heart.uk" lang="en" xmltv_id="">Heart</channel>
   <channel site="epgshare01.online" site_id="UK1#HGTV+1.uk" lang="en" xmltv_id="">HGTV+1</channel>
   <channel site="epgshare01.online" site_id="UK1#HGTV.uk" lang="en" xmltv_id="">HGTV</channel>
@@ -223,15 +221,13 @@
   <channel site="epgshare01.online" site_id="UK1#ITV3.HD.uk" lang="en" xmltv_id="">ITV3 HD</channel>
   <channel site="epgshare01.online" site_id="UK1#ITV4+1.uk" lang="en" xmltv_id="">ITV4+1</channel>
   <channel site="epgshare01.online" site_id="UK1#ITV4.HD.uk" lang="en" xmltv_id="">ITV4 HD</channel>
-  <channel site="epgshare01.online" site_id="UK1#ITVBe.uk" lang="en" xmltv_id="">ITVBe</channel>
+  <channel site="epgshare01.online" site_id="UK1#ITV.Quiz.uk" lang="en" xmltv_id="">ITV Quiz</channel>
   <channel site="epgshare01.online" site_id="UK1#Jazz.FM.uk" lang="en" xmltv_id="">Jazz FM</channel>
   <channel site="epgshare01.online" site_id="UK1#JewelleryMaker.uk" lang="en" xmltv_id="">JewelleryMaker</channel>
-  <channel site="epgshare01.online" site_id="UK1#JML.Direct.uk" lang="en" xmltv_id="">JML Direct</channel>
   <channel site="epgshare01.online" site_id="UK1#Kanshi.TV.uk" lang="en" xmltv_id="">Kanshi TV</channel>
   <channel site="epgshare01.online" site_id="UK1#Kerrang!.uk" lang="en" xmltv_id="">Kerrang!</channel>
   <channel site="epgshare01.online" site_id="UK1#Khushkhabri.uk" lang="en" xmltv_id="">Khushkhabri</channel>
   <channel site="epgshare01.online" site_id="UK1#KICC.TV.uk" lang="en" xmltv_id="">KICC TV</channel>
-  <channel site="epgshare01.online" site_id="UK1#Kiss.TV.uk" lang="en" xmltv_id="">Kiss TV</channel>
   <channel site="epgshare01.online" site_id="UK1#KTV.uk" lang="en" xmltv_id="">KTV</channel>
   <channel site="epgshare01.online" site_id="UK1#LBC.News.uk" lang="en" xmltv_id="">LBC News</channel>
   <channel site="epgshare01.online" site_id="UK1#LBC.uk" lang="en" xmltv_id="">LBC</channel>
@@ -239,26 +235,19 @@
   <channel site="epgshare01.online" site_id="UK1#Legend.Xtra+1.uk" lang="en" xmltv_id="">Legend Xtra+1</channel>
   <channel site="epgshare01.online" site_id="UK1#Legend.Xtra.uk" lang="en" xmltv_id="">Legend Xtra</channel>
   <channel site="epgshare01.online" site_id="UK1#LFCTV.HD.uk" lang="en" xmltv_id="">LFCTV HD</channel>
-  <channel site="epgshare01.online" site_id="UK1#Lifetime.HD.uk" lang="en" xmltv_id="">Lifetime HD</channel>
   <channel site="epgshare01.online" site_id="UK1#Live.360.uk" lang="en" xmltv_id="">Live 360</channel>
   <channel site="epgshare01.online" site_id="UK1#London.Live.uk" lang="en" xmltv_id="">London Live</channel>
   <channel site="epgshare01.online" site_id="UK1#LoveWorld.HD.uk" lang="en" xmltv_id="">LoveWorld HD</channel>
   <channel site="epgshare01.online" site_id="UK1#Madani.Chnl.uk" lang="en" xmltv_id="">Madani Chnl</channel>
-  <channel site="epgshare01.online" site_id="UK1#Magic.uk" lang="en" xmltv_id="">Magic</channel>
   <channel site="epgshare01.online" site_id="UK1#MATV.National.uk" lang="en" xmltv_id="">MATV National</channel>
   <channel site="epgshare01.online" site_id="UK1#More4+1.uk" lang="en" xmltv_id="">More4+1</channel>
   <channel site="epgshare01.online" site_id="UK1#More4.HD.uk" lang="en" xmltv_id="">More4 HD</channel>
+  <channel site="epgshare01.online" site_id="UK1#More.Radio.Mid.Sussex.uk" lang="en" xmltv_id="">More Radio Mid Sussex</channel>
   <channel site="epgshare01.online" site_id="UK1#Movies24+.uk" lang="en" xmltv_id="">Movies24+</channel>
   <channel site="epgshare01.online" site_id="UK1#Movies24.uk" lang="en" xmltv_id="">Movies24</channel>
   <channel site="epgshare01.online" site_id="UK1#mta-muslim.tv.uk" lang="en" xmltv_id="">mta-muslim tv</channel>
   <channel site="epgshare01.online" site_id="UK1#MTV.80s.uk" lang="en" xmltv_id="">MTV 80s</channel>
-  <channel site="epgshare01.online" site_id="UK1#MTV.90s.uk" lang="en" xmltv_id="">MTV 90s</channel>
-  <channel site="epgshare01.online" site_id="UK1#MTV.BASE.uk" lang="en" xmltv_id="">MTV BASE</channel>
-  <channel site="epgshare01.online" site_id="UK1#MTV.Classic.uk" lang="en" xmltv_id="">MTV Classic</channel>
   <channel site="epgshare01.online" site_id="UK1#MTV.HD.uk" lang="en" xmltv_id="">MTV HD</channel>
-  <channel site="epgshare01.online" site_id="UK1#MTV.HITS.uk" lang="en" xmltv_id="">MTV HITS</channel>
-  <channel site="epgshare01.online" site_id="UK1#MTV.Live.HD.uk" lang="en" xmltv_id="">MTV Live HD</channel>
-  <channel site="epgshare01.online" site_id="UK1#MTV.MUSIC.uk" lang="en" xmltv_id="">MTV MUSIC</channel>
   <channel site="epgshare01.online" site_id="UK1#MUTV.HD.uk" lang="en" xmltv_id="">MUTV HD</channel>
   <channel site="epgshare01.online" site_id="UK1#Nat.Geo+1.uk" lang="en" xmltv_id="">Nat Geo+1</channel>
   <channel site="epgshare01.online" site_id="UK1#Nat.Geo.HD.uk" lang="en" xmltv_id="">Nat Geo HD</channel>
@@ -267,7 +256,6 @@
   <channel site="epgshare01.online" site_id="UK1#NBCNewsNowHD.uk" lang="en" xmltv_id="">NBCNewsNowHD</channel>
   <channel site="epgshare01.online" site_id="UK1#NDTV.24x7.uk" lang="en" xmltv_id="">NDTV 24x7</channel>
   <channel site="epgshare01.online" site_id="UK1#NEO.News.uk" lang="en" xmltv_id="">NEO News</channel>
-  <channel site="epgshare01.online" site_id="UK1#New.Media.HD.uk" lang="en" xmltv_id="">New Media HD</channel>
   <channel site="epgshare01.online" site_id="UK1#New.Vision.TV.uk" lang="en" xmltv_id="">New Vision TV</channel>
   <channel site="epgshare01.online" site_id="UK1#NHK.World.HD.uk" lang="en" xmltv_id="">NHK World HD</channel>
   <channel site="epgshare01.online" site_id="UK1#Nick.Jr+1.uk" lang="en" xmltv_id="">Nick Jr+1</channel>
@@ -328,9 +316,9 @@
   <channel site="epgshare01.online" site_id="UK1#Sky.Arts.HD.uk" lang="en" xmltv_id="">Sky Arts HD</channel>
   <channel site="epgshare01.online" site_id="UK1#Sky.Atlantic+1.uk" lang="en" xmltv_id="">Sky Atlantic+1</channel>
   <channel site="epgshare01.online" site_id="UK1#Sky.Atlantic.HD.uk" lang="en" xmltv_id="">Sky Atlantic HD</channel>
+  <channel site="epgshare01.online" site_id="UK1#Sky.Cinema.Comedy.uk" lang="en" xmltv_id="">Sky Cinema Comedy</channel>
   <channel site="epgshare01.online" site_id="UK1#Sky.Cinema.Hits.HD.uk" lang="en" xmltv_id="">Sky Cinema Hits HD</channel>
   <channel site="epgshare01.online" site_id="UK1#Sky.Cinema.Select.uk" lang="en" xmltv_id="">Sky Cinema Select</channel>
-  <channel site="epgshare01.online" site_id="UK1#Sky.Comedy.Cinema.uk" lang="en" xmltv_id="">Sky Comedy Cinema</channel>
   <channel site="epgshare01.online" site_id="UK1#Sky.Comedy.HD.uk" lang="en" xmltv_id="">Sky Comedy HD</channel>
   <channel site="epgshare01.online" site_id="UK1#Sky.Crime+1.uk" lang="en" xmltv_id="">Sky Crime+1</channel>
   <channel site="epgshare01.online" site_id="UK1#Sky.Crime.HD.uk" lang="en" xmltv_id="">Sky Crime HD</channel>
@@ -383,13 +371,11 @@
   <channel site="epgshare01.online" site_id="UK1#SkySp.Mix.HD.uk" lang="en" xmltv_id="">SkySp Mix HD</channel>
   <channel site="epgshare01.online" site_id="UK1#SkySp.News.HD.uk" lang="en" xmltv_id="">SkySp News HD</channel>
   <channel site="epgshare01.online" site_id="UK1#SkySp.PL.HD.uk" lang="en" xmltv_id="">SkySp PL HD</channel>
-  <channel site="epgshare01.online" site_id="UK1#SkySp.PL.uk" lang="en" xmltv_id="">SkySp PL</channel>
   <channel site="epgshare01.online" site_id="UK1#SkySp.Racing.HD.uk" lang="en" xmltv_id="">SkySp Racing HD</channel>
   <channel site="epgshare01.online" site_id="UK1#SkySp.Racing.uk" lang="en" xmltv_id="">SkySp Racing</channel>
   <channel site="epgshare01.online" site_id="UK1#SkySp.Tennis.HD.uk" lang="en" xmltv_id="">SkySp Tennis HD</channel>
   <channel site="epgshare01.online" site_id="UK1#SkySpBoxOff.uk" lang="en" xmltv_id="">SkySpBoxOff</channel>
   <channel site="epgshare01.online" site_id="UK1#SkySpCricket.HD.uk" lang="en" xmltv_id="">SkySpCricket HD</channel>
-  <channel site="epgshare01.online" site_id="UK1#SkySpMainEv.uk" lang="en" xmltv_id="">SkySpMainEv</channel>
   <channel site="epgshare01.online" site_id="UK1#SkySpMainEvHD.uk" lang="en" xmltv_id="">SkySpMainEvHD</channel>
   <channel site="epgshare01.online" site_id="UK1#SkyValentineHD.uk" lang="en" xmltv_id="">SkyValentineHD</channel>
   <channel site="epgshare01.online" site_id="UK1#Smooth.uk" lang="en" xmltv_id="">Smooth</channel>
@@ -408,19 +394,14 @@
   <channel site="epgshare01.online" site_id="UK1#STV.North.+1.uk" lang="en" xmltv_id="">STV North +1</channel>
   <channel site="epgshare01.online" site_id="UK1#STV.North.uk" lang="en" xmltv_id="">STV North</channel>
   <channel site="epgshare01.online" site_id="UK1#Sukh.Sagar.uk" lang="en" xmltv_id="">Sukh Sagar</channel>
-  <channel site="epgshare01.online" site_id="UK1#SYFY+1.uk" lang="en" xmltv_id="">SYFY+1</channel>
-  <channel site="epgshare01.online" site_id="UK1#SYFY.HD.uk" lang="en" xmltv_id="">SYFY HD</channel>
   <channel site="epgshare01.online" site_id="UK1#Takbeer.TV.uk" lang="en" xmltv_id="">Takbeer TV</channel>
   <channel site="epgshare01.online" site_id="UK1#TalkingPictures.uk" lang="en" xmltv_id="">TalkingPictures</channel>
   <channel site="epgshare01.online" site_id="UK1#talkSPORT.uk" lang="en" xmltv_id="">talkSPORT</channel>
   <channel site="epgshare01.online" site_id="UK1#TalkTV.HD.uk" lang="en" xmltv_id="">TalkTV HD</channel>
   <channel site="epgshare01.online" site_id="UK1#TBN.UK.uk" lang="en" xmltv_id="">TBN UK</channel>
   <channel site="epgshare01.online" site_id="UK1#TCM.Movies+1.uk" lang="en" xmltv_id="">TCM Movies+1</channel>
-  <channel site="epgshare01.online" site_id="UK1#TCM.Movies.uk" lang="en" xmltv_id="">TCM Movies</channel>
   <channel site="epgshare01.online" site_id="UK1#Television.X.uk" lang="en" xmltv_id="">Television X</channel>
-  <channel site="epgshare01.online" site_id="UK1#TG4.HD.uk" lang="en" xmltv_id="">TG4 HD</channel>
   <channel site="epgshare01.online" site_id="UK1#Thats.Dance.uk" lang="en" xmltv_id="">Thats Dance</channel>
-  <channel site="epgshare01.online" site_id="UK1#Thats.Fabulous.uk" lang="en" xmltv_id="">Thats Fabulous</channel>
   <channel site="epgshare01.online" site_id="UK1#Thats.Melody.uk" lang="en" xmltv_id="">Thats Melody</channel>
   <channel site="epgshare01.online" site_id="UK1#Thats.TV.2.uk" lang="en" xmltv_id="">Thats TV 2</channel>
   <channel site="epgshare01.online" site_id="UK1#Thats.TV.3.uk" lang="en" xmltv_id="">Thats TV 3</channel>
@@ -435,7 +416,6 @@
   <channel site="epgshare01.online" site_id="UK1#TLC+1.uk" lang="en" xmltv_id="">TLC+1</channel>
   <channel site="epgshare01.online" site_id="UK1#TLC.HD.uk" lang="en" xmltv_id="">TLC HD</channel>
   <channel site="epgshare01.online" site_id="UK1#TNT.Sport.BoxOffice.HD.uk" lang="en" xmltv_id="">TNT Sport BoxOffice HD</channel>
-  <channel site="epgshare01.online" site_id="UK1#TNT.Sport.Ultimate.uk" lang="en" xmltv_id="">TNT Sport Ultimate</channel>
   <channel site="epgshare01.online" site_id="UK1#TNT.Sports.1.HD.uk" lang="en" xmltv_id="">TNT Sports 1 HD</channel>
   <channel site="epgshare01.online" site_id="UK1#TNT.Sports.2.HD.uk" lang="en" xmltv_id="">TNT Sports 2 HD</channel>
   <channel site="epgshare01.online" site_id="UK1#TNT.Sports.3.HD.uk" lang="en" xmltv_id="">TNT Sports 3 HD</channel>
@@ -446,6 +426,9 @@
   <channel site="epgshare01.online" site_id="UK1#TNT.Sports.8.HD.uk" lang="en" xmltv_id="">TNT Sports 8 HD</channel>
   <channel site="epgshare01.online" site_id="UK1#TNT.Sports.9.HD.uk" lang="en" xmltv_id="">TNT Sports 9 HD</channel>
   <channel site="epgshare01.online" site_id="UK1#TNT.Sports.10.HD.uk" lang="en" xmltv_id="">TNT Sports 10 HD</channel>
+  <channel site="epgshare01.online" site_id="UK1#TNT.Sports.Box.Office.2.uk" lang="en" xmltv_id="">TNT Sports Box Office 2</channel>
+  <channel site="epgshare01.online" site_id="UK1#TNT.Sports.Box.Office.uk" lang="en" xmltv_id="">TNT Sports Box Office</channel>
+  <channel site="epgshare01.online" site_id="UK1#TNT.Sports.Ultimate.HD.uk" lang="en" xmltv_id="">TNT Sports Ultimate HD</channel>
   <channel site="epgshare01.online" site_id="UK1#TNT.Sports.Ultimate.uk" lang="en" xmltv_id="">TNT Sports Ultimate</channel>
   <channel site="epgshare01.online" site_id="UK1#TNTSBoxOff2HD.uk" lang="en" xmltv_id="">TNTSBoxOff2HD</channel>
   <channel site="epgshare01.online" site_id="UK1#Together.uk" lang="en" xmltv_id="">Together</channel>
@@ -476,7 +459,6 @@
   <channel site="epgshare01.online" site_id="UK1#U.and.W+1.uk" lang="en" xmltv_id="">U and W+1</channel>
   <channel site="epgshare01.online" site_id="UK1#U.and.W.HD.uk" lang="en" xmltv_id="">U and W HD</channel>
   <channel site="epgshare01.online" site_id="UK1#U.and.YESTERDAY+1.uk" lang="en" xmltv_id="">U and YESTERDAY+1</channel>
-  <channel site="epgshare01.online" site_id="UK1#U.and.Yesterday.Freeview.+1.uk" lang="en" xmltv_id="">U and Yesterday Freeview +1</channel>
   <channel site="epgshare01.online" site_id="UK1#U.and.YESTERDAY.uk" lang="en" xmltv_id="">U and YESTERDAY</channel>
   <channel site="epgshare01.online" site_id="UK1#Utsav.Bharat.uk" lang="en" xmltv_id="">Utsav Bharat</channel>
   <channel site="epgshare01.online" site_id="UK1#Utsav.Gold.HD.uk" lang="en" xmltv_id="">Utsav Gold HD</channel>

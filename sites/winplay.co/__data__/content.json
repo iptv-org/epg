@@ -1,622 +1,2249 @@
 {
-  "data": {
-    "getLives": [
-      {
-        "_id": "529cff6f6bd2ea6b610000e0",
-        "logo": "https://platform-static.cdn.mdstrm.com/player/logo/s-live-529cff6f6bd2ea6b610000e0.png?c=20241223",
-        "name": "Win+ Fútbol",
-        "schedules": [
-          {
-            "_id": "67633cf2cd9263fa4fde8fd2",
-            "name": "Mejores partidos 2024: América vs. Nacional",
-            "date_start": "2024-12-23T22:30:00.000Z",
-            "date_end": "2024-12-24T00:30:00.000Z",
-            "current": true,
-            "match": null,
-            "show": null,
-            "live": {
-              "_id": "529cff6f6bd2ea6b610000e0",
-              "dvr": true,
-              "type": "video",
-              "purchased": -1,
-              "__typename": "Live"
-            },
-            "__typename": "Schedule"
-          },
-          {
-            "_id": "67633d28a1137afadc036ae7",
-            "name": "Los Disruptivos de Win",
-            "date_start": "2024-12-24T00:30:00.000Z",
-            "date_end": "2024-12-24T02:30:00.000Z",
-            "current": false,
-            "match": null,
-            "show": null,
-            "live": {
-              "_id": "529cff6f6bd2ea6b610000e0",
-              "dvr": true,
-              "type": "video",
-              "purchased": -1,
-              "__typename": "Live"
-            },
-            "__typename": "Schedule"
-          },
-          {
-            "_id": "67633ecd895d155a3913f983",
-            "name": "WIn Noticias",
-            "date_start": "2024-12-24T02:30:00.000Z",
-            "date_end": "2024-12-24T03:30:00.000Z",
-            "current": false,
-            "match": null,
-            "show": null,
-            "live": {
-              "_id": "529cff6f6bd2ea6b610000e0",
-              "dvr": true,
-              "type": "video",
-              "purchased": -1,
-              "__typename": "Live"
-            },
-            "__typename": "Schedule"
-          },
-          {
-            "_id": "67633ef7a449f4fa09408d69",
-            "name": "Repetición Programación Win",
-            "date_start": "2024-12-24T03:30:00.000Z",
-            "date_end": "2024-12-24T14:00:00.000Z",
-            "current": false,
-            "match": null,
-            "show": null,
-            "live": {
-              "_id": "529cff6f6bd2ea6b610000e0",
-              "dvr": true,
-              "type": "video",
-              "purchased": -1,
-              "__typename": "Live"
-            },
-            "__typename": "Schedule"
-          },
-          {
-            "_id": "6763402d863cc2faffa72beb",
-            "name": "Repetición Copa Win Sports Masc Sub 15 (Final)",
-            "date_start": "2024-12-24T14:00:00.000Z",
-            "date_end": "2024-12-24T16:00:00.000Z",
-            "current": false,
-            "match": null,
-            "show": null,
-            "live": {
-              "_id": "529cff6f6bd2ea6b610000e0",
-              "dvr": true,
-              "type": "video",
-              "purchased": -1,
-              "__typename": "Live"
-            },
-            "__typename": "Schedule"
-          },
-          {
-            "_id": "6763404ef696ae58fdb91b9e",
-            "name": "Win Noticias",
-            "date_start": "2024-12-24T16:00:00.000Z",
-            "date_end": "2024-12-24T17:00:00.000Z",
-            "current": false,
-            "match": null,
-            "show": null,
-            "live": {
-              "_id": "529cff6f6bd2ea6b610000e0",
-              "dvr": true,
-              "type": "video",
-              "purchased": -1,
-              "__typename": "Live"
-            },
-            "__typename": "Schedule"
-          },
-          {
-            "_id": "6765cc4c6c5458ca73ebe46f",
-            "name": "Repetición Copa BetPlay Dimayor 2017",
-            "date_start": "2024-12-24T17:00:00.000Z",
-            "date_end": "2024-12-24T19:00:00.000Z",
-            "current": false,
-            "match": null,
-            "show": null,
-            "live": {
-              "_id": "529cff6f6bd2ea6b610000e0",
-              "dvr": true,
-              "type": "video",
-              "purchased": -1,
-              "__typename": "Live"
-            },
-            "__typename": "Schedule"
-          },
-          {
-            "_id": "6765cc681e8e2bc9c8b91b96",
-            "name": "Detrás de la Gloria",
-            "date_start": "2024-12-24T19:00:00.000Z",
-            "date_end": "2024-12-24T20:00:00.000Z",
-            "current": false,
-            "match": null,
-            "show": null,
-            "live": {
-              "_id": "529cff6f6bd2ea6b610000e0",
-              "dvr": true,
-              "type": "video",
-              "purchased": -1,
-              "__typename": "Live"
-            },
-            "__typename": "Schedule"
-          },
-          {
-            "_id": "6765cca85fbec49a96d9735d",
-            "name": "Repetición Torneo BetPlay Dimayor 2024-I (Final Ida)",
-            "date_start": "2024-12-24T20:00:00.000Z",
-            "date_end": "2024-12-24T22:00:00.000Z",
-            "current": false,
-            "match": null,
-            "show": null,
-            "live": {
-              "_id": "529cff6f6bd2ea6b610000e0",
-              "dvr": true,
-              "type": "video",
-              "purchased": -1,
-              "__typename": "Live"
-            },
-            "__typename": "Schedule"
-          },
-          {
-            "_id": "6765ccc8ef60d7ca50bf7f72",
-            "name": "Llaneros Campeón",
-            "date_start": "2024-12-24T22:00:00.000Z",
-            "date_end": "2024-12-24T23:00:00.000Z",
-            "current": false,
-            "match": null,
-            "show": null,
-            "live": {
-              "_id": "529cff6f6bd2ea6b610000e0",
-              "dvr": true,
-              "type": "video",
-              "purchased": -1,
-              "__typename": "Live"
-            },
-            "__typename": "Schedule"
-          },
-          {
-            "_id": "6765cd0d88e8c2fb6532ad9d",
-            "name": "Repetición Torneo BetPlay Dimayor 2024-I (Final Vuelta)",
-            "date_start": "2024-12-24T23:00:00.000Z",
-            "date_end": "2024-12-25T01:00:00.000Z",
-            "current": false,
-            "match": null,
-            "show": null,
-            "live": {
-              "_id": "529cff6f6bd2ea6b610000e0",
-              "dvr": true,
-              "type": "video",
-              "purchased": -1,
-              "__typename": "Live"
-            },
-            "__typename": "Schedule"
-          },
-          {
-            "_id": "6765cd3f7010a15941eee1f7",
-            "name": "Win Noticias",
-            "date_start": "2024-12-25T01:00:00.000Z",
-            "date_end": "2024-12-25T02:00:00.000Z",
-            "current": false,
-            "match": null,
-            "show": null,
-            "live": {
-              "_id": "529cff6f6bd2ea6b610000e0",
-              "dvr": true,
-              "type": "video",
-              "purchased": -1,
-              "__typename": "Live"
-            },
-            "__typename": "Schedule"
-          },
-          {
-            "_id": "6765cd73cf81e69c6f938fb7",
-            "name": "Repetición Programación Win",
-            "date_start": "2024-12-25T02:00:00.000Z",
-            "date_end": "2024-12-25T14:00:00.000Z",
-            "current": false,
-            "match": null,
-            "show": null,
-            "live": {
-              "_id": "529cff6f6bd2ea6b610000e0",
-              "dvr": true,
-              "type": "video",
-              "purchased": -1,
-              "__typename": "Live"
-            },
-            "__typename": "Schedule"
-          },
-          {
-            "_id": "6765cd9690f3e6c93ff24f88",
-            "name": "Repetición Copa Win Sports Fem Sub 13",
-            "date_start": "2024-12-25T14:00:00.000Z",
-            "date_end": "2024-12-25T16:00:00.000Z",
-            "current": false,
-            "match": null,
-            "show": null,
-            "live": {
-              "_id": "529cff6f6bd2ea6b610000e0",
-              "dvr": true,
-              "type": "video",
-              "purchased": -1,
-              "__typename": "Live"
-            },
-            "__typename": "Schedule"
-          },
-          {
-            "_id": "6765cdb9958caf9ad827b698",
-            "name": "Win Noticias",
-            "date_start": "2024-12-25T16:00:00.000Z",
-            "date_end": "2024-12-25T17:00:00.000Z",
-            "current": false,
-            "match": null,
-            "show": null,
-            "live": {
-              "_id": "529cff6f6bd2ea6b610000e0",
-              "dvr": true,
-              "type": "video",
-              "purchased": -1,
-              "__typename": "Live"
-            },
-            "__typename": "Schedule"
-          },
-          {
-            "_id": "6765cdde6c5458ca73ec0bb5",
-            "name": "Repetición Copa BetPlay Dimayor 2018",
-            "date_start": "2024-12-25T17:00:00.000Z",
-            "date_end": "2024-12-25T19:00:00.000Z",
-            "current": false,
-            "match": null,
-            "show": null,
-            "live": {
-              "_id": "529cff6f6bd2ea6b610000e0",
-              "dvr": true,
-              "type": "video",
-              "purchased": -1,
-              "__typename": "Live"
-            },
-            "__typename": "Schedule"
-          },
-          {
-            "_id": "6765cdf63ac862cf29b0948f",
-            "name": "Detrás de la Gloria",
-            "date_start": "2024-12-25T19:00:00.000Z",
-            "date_end": "2024-12-25T20:00:00.000Z",
-            "current": false,
-            "match": null,
-            "show": null,
-            "live": {
-              "_id": "529cff6f6bd2ea6b610000e0",
-              "dvr": true,
-              "type": "video",
-              "purchased": -1,
-              "__typename": "Live"
-            },
-            "__typename": "Schedule"
-          },
-          {
-            "_id": "6765ce19a449f4fa096d669f",
-            "name": "Liga BetPlay Dimayor 2024-I (Final Ida)",
-            "date_start": "2024-12-25T20:00:00.000Z",
-            "date_end": "2024-12-25T22:00:00.000Z",
-            "current": false,
-            "match": null,
-            "show": null,
-            "live": {
-              "_id": "529cff6f6bd2ea6b610000e0",
-              "dvr": true,
-              "type": "video",
-              "purchased": -1,
-              "__typename": "Live"
-            },
-            "__typename": "Schedule"
-          },
-          {
-            "_id": "6765ce3994a83798b6aaab0e",
-            "name": "Bucaramanga Campeón",
-            "date_start": "2024-12-25T22:00:00.000Z",
-            "date_end": "2024-12-25T23:00:00.000Z",
-            "current": false,
-            "match": null,
-            "show": null,
-            "live": {
-              "_id": "529cff6f6bd2ea6b610000e0",
-              "dvr": true,
-              "type": "video",
-              "purchased": -1,
-              "__typename": "Live"
-            },
-            "__typename": "Schedule"
-          }
-        ],
-        "__typename": "Live"
-      },
-      {
-        "_id": "5265a8f3af1ecb9d320000ee",
-        "logo": "https://platform-static.cdn.mdstrm.com/player/logo/s-live-5265a8f3af1ecb9d320000ee.png?c=20241223",
-        "name": "Win Sports",
-        "schedules": [
-          {
-            "_id": "6763030f777e099d5ee2869e",
-            "name": "Saque Largo",
-            "date_start": "2024-12-23T21:00:00.000Z",
-            "date_end": "2024-12-24T00:30:00.000Z",
-            "current": true,
-            "match": null,
-            "show": null,
-            "live": {
-              "_id": "5265a8f3af1ecb9d320000ee",
-              "dvr": true,
-              "type": "video",
-              "purchased": -1,
-              "__typename": "Live"
-            },
-            "__typename": "Schedule"
-          },
-          {
-            "_id": "6769957ef1d3bc4c15c374ad",
-            "name": "Repetición Liga BetPlay Dimayor 2024-II: Nacional vs Tolima (Final Vuelta)",
-            "date_start": "2024-12-24T00:30:00.000Z",
-            "date_end": "2024-12-24T02:30:00.000Z",
-            "current": false,
-            "match": null,
-            "show": null,
-            "live": {
-              "_id": "5265a8f3af1ecb9d320000ee",
-              "dvr": true,
-              "type": "video",
-              "purchased": -1,
-              "__typename": "Live"
-            },
-            "__typename": "Schedule"
-          },
-          {
-            "_id": "676995b4ce095c2598505dab",
-            "name": "Win Noticias",
-            "date_start": "2024-12-24T02:30:00.000Z",
-            "date_end": "2024-12-24T03:30:00.000Z",
-            "current": false,
-            "match": null,
-            "show": null,
-            "live": {
-              "_id": "5265a8f3af1ecb9d320000ee",
-              "dvr": true,
-              "type": "video",
-              "purchased": -1,
-              "__typename": "Live"
-            },
-            "__typename": "Schedule"
-          },
-          {
-            "_id": "67699621857fab2481285bb5",
-            "name": "Repetición Programación Win",
-            "date_start": "2024-12-24T03:30:00.000Z",
-            "date_end": "2024-12-24T14:00:00.000Z",
-            "current": false,
-            "match": null,
-            "show": null,
-            "live": {
-              "_id": "5265a8f3af1ecb9d320000ee",
-              "dvr": true,
-              "type": "video",
-              "purchased": -1,
-              "__typename": "Live"
-            },
-            "__typename": "Schedule"
-          },
-          {
-            "_id": "6769964e7d230225db2f0f78",
-            "name": "Repetición Evento 1995 - 2011",
-            "date_start": "2024-12-24T14:00:00.000Z",
-            "date_end": "2024-12-24T16:00:00.000Z",
-            "current": false,
-            "match": null,
-            "show": null,
-            "live": {
-              "_id": "5265a8f3af1ecb9d320000ee",
-              "dvr": true,
-              "type": "video",
-              "purchased": -1,
-              "__typename": "Live"
-            },
-            "__typename": "Schedule"
-          },
-          {
-            "_id": "67699689bd14cf50b8f0ec65",
-            "name": "Win Noticias",
-            "date_start": "2024-12-24T16:00:00.000Z",
-            "date_end": "2024-12-24T18:00:00.000Z",
-            "current": false,
-            "match": null,
-            "show": null,
-            "live": {
-              "_id": "5265a8f3af1ecb9d320000ee",
-              "dvr": true,
-              "type": "video",
-              "purchased": -1,
-              "__typename": "Live"
-            },
-            "__typename": "Schedule"
-          },
-          {
-            "_id": "676996b8c0036c5606f6b08f",
-            "name": "De Colección FPC",
-            "date_start": "2024-12-24T18:00:00.000Z",
-            "date_end": "2024-12-24T19:00:00.000Z",
-            "current": false,
-            "match": null,
-            "show": null,
-            "live": {
-              "_id": "5265a8f3af1ecb9d320000ee",
-              "dvr": true,
-              "type": "video",
-              "purchased": -1,
-              "__typename": "Live"
-            },
-            "__typename": "Schedule"
-          },
-          {
-            "_id": "676998e3857fab2481289303",
-            "name": "Mejor partido Colombia: Colombia vs. Gran Bretaña",
-            "date_start": "2024-12-24T19:00:00.000Z",
-            "date_end": "2024-12-24T21:00:00.000Z",
-            "current": false,
-            "match": null,
-            "show": null,
-            "live": {
-              "_id": "5265a8f3af1ecb9d320000ee",
-              "dvr": true,
-              "type": "video",
-              "purchased": -1,
-              "__typename": "Live"
-            },
-            "__typename": "Schedule"
-          },
-          {
-            "_id": "67699907149eb85649e1694b",
-            "name": "Mejor partido Colombia: Colombia vs. Italia",
-            "date_start": "2024-12-24T21:00:00.000Z",
-            "date_end": "2024-12-24T23:00:00.000Z",
-            "current": false,
-            "match": null,
-            "show": null,
-            "live": {
-              "_id": "5265a8f3af1ecb9d320000ee",
-              "dvr": true,
-              "type": "video",
-              "purchased": -1,
-              "__typename": "Live"
-            },
-            "__typename": "Schedule"
-          },
-          {
-            "_id": "6769993e07024c257874e517",
-            "name": "Creyentes: Siempre Adelante, ni un paso atrás",
-            "date_start": "2024-12-24T23:00:00.000Z",
-            "date_end": "2024-12-25T00:00:00.000Z",
-            "current": false,
-            "match": null,
-            "show": null,
-            "live": {
-              "_id": "5265a8f3af1ecb9d320000ee",
-              "dvr": true,
-              "type": "video",
-              "purchased": -1,
-              "__typename": "Live"
-            },
-            "__typename": "Schedule"
-          },
-          {
-            "_id": "676999729f609656290acf12",
-            "name": "Repetición Liga Betplay Dimayor 2024-I: Bucaramanga vs. Sata Fe",
-            "date_start": "2024-12-25T00:00:00.000Z",
-            "date_end": "2024-12-25T02:00:00.000Z",
-            "current": false,
-            "match": null,
-            "show": null,
-            "live": {
-              "_id": "5265a8f3af1ecb9d320000ee",
-              "dvr": true,
-              "type": "video",
-              "purchased": -1,
-              "__typename": "Live"
-            },
-            "__typename": "Schedule"
-          },
-          {
-            "_id": "676999918d38e9b76a940868",
-            "name": "Bucaramanga Campeón",
-            "date_start": "2024-12-25T02:00:00.000Z",
-            "date_end": "2024-12-25T03:00:00.000Z",
-            "current": false,
-            "match": null,
-            "show": null,
-            "live": {
-              "_id": "5265a8f3af1ecb9d320000ee",
-              "dvr": true,
-              "type": "video",
-              "purchased": -1,
-              "__typename": "Live"
-            },
-            "__typename": "Schedule"
-          },
-          {
-            "_id": "676999b5076f85b69b3593f5",
-            "name": "Repetición Programación Win",
-            "date_start": "2024-12-25T03:00:00.000Z",
-            "date_end": "2024-12-25T16:00:00.000Z",
-            "current": false,
-            "match": null,
-            "show": null,
-            "live": {
-              "_id": "5265a8f3af1ecb9d320000ee",
-              "dvr": true,
-              "type": "video",
-              "purchased": -1,
-              "__typename": "Live"
-            },
-            "__typename": "Schedule"
-          }
-        ],
-        "__typename": "Live"
-      },
-      {
-        "_id": "66bcd350d222a8a780862ec3",
-        "logo": "https://ott-assets.mdstrm.com/526590f532b8fca13200005c/66563a476780f218bb74c7cc/assets/Logo_Play.png",
-        "name": "Liga BetPlay de Baloncesto 2024 - II",
-        "schedules": [],
-        "__typename": "Live"
-      },
-      {
-        "_id": "64627247f7aaba0882296a20",
-        "logo": "https://ott-assets.mdstrm.com/526590f532b8fca13200005c/66563a476780f218bb74c7cc/assets/Logo_Play.png",
-        "name": "Señal Backup final Win básica",
-        "schedules": [],
-        "__typename": "Live"
-      },
-      {
-        "_id": "627c589eafdeb0082d4ea3de",
-        "logo": "https://ott-assets.mdstrm.com/526590f532b8fca13200005c/66563a476780f218bb74c7cc/assets/Logo_Play.png",
-        "name": "Rueda prensa FMS",
-        "schedules": [],
-        "__typename": "Live"
-      },
-      {
-        "_id": "61c3c92309dce808f216d778",
-        "logo": "https://ott-assets.mdstrm.com/526590f532b8fca13200005c/66563a476780f218bb74c7cc/assets/Logo_Play.png",
-        "name": "Liga BetPlay Dimayor 2024 - II: Pereira vs. Equidad",
-        "schedules": [],
-        "__typename": "Live"
-      },
-      {
-        "_id": "627c5650637d89088290fedf",
-        "logo": "https://ott-assets.mdstrm.com/526590f532b8fca13200005c/66563a476780f218bb74c7cc/assets/Logo_Play.png",
-        "name": "Premier 12",
-        "schedules": [],
-        "__typename": "Live"
-      },
-      {
-        "_id": "66195b77c7c13360bdaed72f",
-        "logo": "https://ott-assets.mdstrm.com/526590f532b8fca13200005c/66563a476780f218bb74c7cc/assets/Logo_Play.png",
-        "name": "Liga BetPlay de Baloncesto 2024 - II",
-        "schedules": [],
-        "__typename": "Live"
-      },
-      {
-        "_id": "662bd720450e3008a5f385d2",
-        "logo": "https://ott-assets.mdstrm.com/526590f532b8fca13200005c/66563a476780f218bb74c7cc/assets/Logo_Play.png",
-        "name": "Liga BetPlay Dimayor 2024 - II: Fortaleza vs. Águilas Doradas",
-        "schedules": [],
-        "__typename": "Live"
-      },
-      {
-        "_id": "66bcd3855e7418050351d810",
-        "logo": "https://ott-assets.mdstrm.com/526590f532b8fca13200005c/66563a476780f218bb74c7cc/assets/Logo_Play.png",
-        "name": "Liga BetPlay Dimayor 2024 - II: Alianza vs. Bucaramanga",
-        "schedules": [],
-        "__typename": "Live"
-      }
-    ]
-  }
+	"count": 3,
+	"result": [
+		{
+			"id": "67bc784f7bcf689920e621ec",
+			"content": {
+				"audioOnly": false,
+				"catchUpHours": 48,
+				"contentLists": [],
+				"clip": false,
+				"contentType": "BROADCAST",
+				"downloadable": {
+					"isDownloadable": false
+				},
+				"entitlementTypes": [
+					"media"
+				],
+				"epgId": "WINSPORTS_PLUS",
+				"externalId": "71ca6426-67fe-4941-b62a-67db824321fb",
+				"flights": [
+					{
+						"flights": [
+							{
+								"start": "2025-01-01T09:30:00.000Z",
+								"end": null
+							}
+						],
+						"network": "winsportslive"
+					}
+				],
+				"hasCatchUp": true,
+				"hd": false,
+				"id": "67bc784f7bcf689920e621ec",
+				"images": [
+					{
+						"url": "https://unity-img.tbxapis.com/v0/images/6a561d048728db7c786b53b0941d0dd9/content/67bc784f7bcf689920e621ec/b389db91b2792c6b7980f947e2c24b54/img.png",
+						"contentType": "image/png",
+						"type": "POSTER",
+						"size": {
+							"height": 1500,
+							"ratio": 0.6666666666666666,
+							"width": 1000
+						},
+						"created": "2025-11-25T17:15:38.146Z",
+						"updated": "2025-11-25T17:15:38.146Z"
+					},
+					{
+						"url": "https://unity-img.tbxapis.com/v0/images/6a561d048728db7c786b53b0941d0dd9/content/67bc784f7bcf689920e621ec/f5f751fcb1f465de70cc7cbbad09ebe1/img.png",
+						"contentType": "image/png",
+						"type": "THUMB",
+						"size": {
+							"height": 1080,
+							"ratio": 1.7777777777777777,
+							"width": 1920
+						},
+						"created": "2025-11-25T17:39:59.208Z",
+						"updated": "2025-11-25T17:39:59.208Z"
+					}
+				],
+				"isNew": false,
+				"live": true,
+				"networks": [
+					{
+						"name": "Win Sports Live",
+						"network": "winsportslive",
+						"embed": true
+					}
+				],
+				"participants": {
+					"authors": [],
+					"cast": [],
+					"director": [],
+					"writer": []
+				},
+				"playbackType": [],
+				"provider": "winsportslivecpix",
+				"ratingLevel": 2,
+				"ratings": [
+					"NR"
+				],
+				"replay": false,
+				"shortId": "4ct1be",
+				"tags": [],
+				"title": "Win+Fútbol",
+				"tracking": {
+					"bookmarks": true,
+					"events": true
+				},
+				"trailerConfig": {
+					"isTrailer": false
+				},
+				"urn": "urn:tve:winsportslive",
+				"viewCondition": "standard",
+				"subtitleTracks": [],
+				"encodings": [
+					"application/dash+xml",
+					"application/x-mpegURL"
+				],
+				"isCoppa": false,
+				"alternativeDescriptions": [],
+				"signalId": "winsportsplus",
+				"category": null,
+				"epg": [
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": {
+							"directors": [],
+							"cast": []
+						},
+						"ratings": [],
+						"images": [
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607027/B2607027/260219153005_Thumb_generico_WINPLAY.png",
+								"type": "THUMB",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607027/B2607027/260219153005_Thumb_generico_WINPLAY.png"
+							},
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607027/B2607027/260219153005_poster_generico_WINPLAY.png",
+								"type": "POSTER",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607027/B2607027/260219153005_poster_generico_WINPLAY.png"
+							}
+						],
+						"cid": "B2607027",
+						"programId": "B2607027",
+						"programName": "Repetición Medio Tiempo",
+						"externalId": "B2607027",
+						"title": "Repetición Medio Tiempo",
+						"description": "Repetición",
+						"contentType": "EPISODE",
+						"duration": 7200,
+						"tags": [],
+						"startTime": "2026-02-18T19:30:00.000Z",
+						"endTime": "2026-02-18T21:30:00.000Z",
+						"broadcastDate": {
+							"start": "2026-02-18T19:30:00.000Z",
+							"end": "2026-02-18T21:30:00.000Z"
+						},
+						"countries": [
+							"all"
+						],
+						"updated": "2026-02-19T15:30:05.405Z"
+					},
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": {
+							"directors": [],
+							"cast": []
+						},
+						"ratings": [],
+						"images": [
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607028/B2607028/260219153005_Thumb_generico_WINPLAY.png",
+								"type": "THUMB",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607028/B2607028/260219153005_Thumb_generico_WINPLAY.png"
+							},
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607028/B2607028/260219153005_poster_generico_WINPLAY.png",
+								"type": "POSTER",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607028/B2607028/260219153005_poster_generico_WINPLAY.png"
+							}
+						],
+						"cid": "B2607028",
+						"programId": "B2607028",
+						"programName": "Win Noticias",
+						"externalId": "B2607028",
+						"title": "Win Noticias",
+						"description": "Noticiero",
+						"contentType": "EPISODE",
+						"duration": 5400,
+						"tags": [],
+						"startTime": "2026-02-18T21:30:00.000Z",
+						"endTime": "2026-02-18T23:00:00.000Z",
+						"broadcastDate": {
+							"start": "2026-02-18T21:30:00.000Z",
+							"end": "2026-02-18T23:00:00.000Z"
+						},
+						"countries": [
+							"all"
+						],
+						"updated": "2026-02-19T15:30:05.405Z"
+					},
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": {
+							"directors": [],
+							"cast": []
+						},
+						"ratings": [],
+						"images": [
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607029/B2607029/260219153005_Thumb_generico_WINPLAY.png",
+								"type": "THUMB",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607029/B2607029/260219153005_Thumb_generico_WINPLAY.png"
+							},
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607029/B2607029/260219153005_poster_generico_WINPLAY.png",
+								"type": "POSTER",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607029/B2607029/260219153005_poster_generico_WINPLAY.png"
+							}
+						],
+						"cid": "B2607029",
+						"programId": "B2607029",
+						"programName": "Cavsulas",
+						"externalId": "B2607029",
+						"title": "Cavsulas",
+						"description": "Programa ",
+						"contentType": "EPISODE",
+						"duration": 1800,
+						"tags": [],
+						"startTime": "2026-02-18T23:00:00.000Z",
+						"endTime": "2026-02-18T23:30:00.000Z",
+						"broadcastDate": {
+							"start": "2026-02-18T23:00:00.000Z",
+							"end": "2026-02-18T23:30:00.000Z"
+						},
+						"countries": [
+							"all"
+						],
+						"updated": "2026-02-19T15:30:05.405Z"
+					},
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": {
+							"directors": [],
+							"cast": []
+						},
+						"ratings": [],
+						"images": [
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607030/B2607030/260219153005_Thumb_generico_WINPLAY.png",
+								"type": "THUMB",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607030/B2607030/260219153005_Thumb_generico_WINPLAY.png"
+							},
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607030/B2607030/260219153005_poster_generico_WINPLAY.png",
+								"type": "POSTER",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607030/B2607030/260219153005_poster_generico_WINPLAY.png"
+							}
+						],
+						"cid": "B2607030",
+						"programId": "B2607030",
+						"programName": "Previo",
+						"externalId": "B2607030",
+						"title": "Previo",
+						"description": "previo",
+						"contentType": "EPISODE",
+						"duration": 3000,
+						"tags": [],
+						"startTime": "2026-02-18T23:30:00.000Z",
+						"endTime": "2026-02-19T00:20:00.000Z",
+						"broadcastDate": {
+							"start": "2026-02-18T23:30:00.000Z",
+							"end": "2026-02-19T00:20:00.000Z"
+						},
+						"countries": [
+							"all"
+						],
+						"updated": "2026-02-19T15:30:05.405Z"
+					},
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": {
+							"directors": [],
+							"cast": []
+						},
+						"ratings": [],
+						"images": [
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607031/B2607031/260219153005_1920x1080__L-JUNIOR__R-AMERICA.png",
+								"type": "THUMB",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607031/B2607031/260219153005_1920x1080__L-JUNIOR__R-AMERICA.png"
+							},
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607031/B2607031/260219153005_1000x1500__L-JUNIOR__R-AMERICA.png",
+								"type": "POSTER",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607031/B2607031/260219153005_1000x1500__L-JUNIOR__R-AMERICA.png"
+							}
+						],
+						"cid": "B2607031",
+						"programId": "B2607031",
+						"programName": "Liga BetPlay Dimayor 2026 - I: Junior vs. América (Fecha 7)",
+						"externalId": "B2607031",
+						"title": "Liga BetPlay Dimayor 2026 - I: Junior vs. América (Fecha 7)",
+						"description": "Fecha 7",
+						"contentType": "EPISODE",
+						"duration": 8700,
+						"tags": [
+							"EVENTO FUTURO",
+							"PPV"
+						],
+						"startTime": "2026-02-19T00:20:00.000Z",
+						"endTime": "2026-02-19T02:45:00.000Z",
+						"broadcastDate": {
+							"start": "2026-02-19T00:20:00.000Z",
+							"end": "2026-02-19T02:45:00.000Z"
+						},
+						"countries": [
+							"all"
+						],
+						"price": {
+							"USD": 24.99,
+							"COP": 39999
+						},
+						"inheritedRules": [
+							"EPG",
+							"PPV"
+						],
+						"urn": "urn:ppv:3d009cac7b6d",
+						"updated": "2026-02-19T15:30:05.405Z"
+					},
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": {
+							"directors": [],
+							"cast": []
+						},
+						"ratings": [],
+						"images": [
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607032/B2607032/260219153005_Thumb_generico_WINPLAY.png",
+								"type": "THUMB",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607032/B2607032/260219153005_Thumb_generico_WINPLAY.png"
+							},
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607032/B2607032/260219153005_poster_generico_WINPLAY.png",
+								"type": "POSTER",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607032/B2607032/260219153005_poster_generico_WINPLAY.png"
+							}
+						],
+						"cid": "B2607032",
+						"programId": "B2607032",
+						"programName": "Win Noticias",
+						"externalId": "B2607032",
+						"title": "Win Noticias",
+						"description": "Noticiero",
+						"contentType": "EPISODE",
+						"duration": 2700,
+						"tags": [],
+						"startTime": "2026-02-19T02:45:00.000Z",
+						"endTime": "2026-02-19T03:30:00.000Z",
+						"broadcastDate": {
+							"start": "2026-02-19T02:45:00.000Z",
+							"end": "2026-02-19T03:30:00.000Z"
+						},
+						"countries": [
+							"all"
+						],
+						"updated": "2026-02-19T15:30:05.405Z"
+					},
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": {
+							"directors": [],
+							"cast": []
+						},
+						"ratings": [],
+						"images": [
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607033/B2607033/260219153005_Thumb_generico_WINPLAY.png",
+								"type": "THUMB",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607033/B2607033/260219153005_Thumb_generico_WINPLAY.png"
+							},
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607033/B2607033/260219153005_poster_generico_WINPLAY.png",
+								"type": "POSTER",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607033/B2607033/260219153005_poster_generico_WINPLAY.png"
+							}
+						],
+						"cid": "B2607033",
+						"programId": "B2607033",
+						"programName": "Repetición Programación Win",
+						"externalId": "B2607033",
+						"title": "Repetición Programación Win",
+						"description": "Repetición",
+						"contentType": "EPISODE",
+						"duration": 30600,
+						"tags": [],
+						"startTime": "2026-02-19T03:30:00.000Z",
+						"endTime": "2026-02-19T12:00:00.000Z",
+						"broadcastDate": {
+							"start": "2026-02-19T03:30:00.000Z",
+							"end": "2026-02-19T12:00:00.000Z"
+						},
+						"countries": [
+							"all"
+						],
+						"updated": "2026-02-19T15:30:05.405Z"
+					},
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": {
+							"directors": [],
+							"cast": []
+						},
+						"ratings": [],
+						"images": [
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607034/B2607034/260219153005_Thumb_generico_WINPLAY.png",
+								"type": "THUMB",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607034/B2607034/260219153005_Thumb_generico_WINPLAY.png"
+							},
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607034/B2607034/260219153005_poster_generico_WINPLAY.png",
+								"type": "POSTER",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607034/B2607034/260219153005_poster_generico_WINPLAY.png"
+							}
+						],
+						"cid": "B2607034",
+						"programId": "B2607034",
+						"programName": "Chiringuito de Jugones",
+						"externalId": "B2607034",
+						"title": "Chiringuito de Jugones",
+						"description": "Repetición",
+						"contentType": "EPISODE",
+						"duration": 7200,
+						"tags": [],
+						"startTime": "2026-02-19T12:00:00.000Z",
+						"endTime": "2026-02-19T14:00:00.000Z",
+						"broadcastDate": {
+							"start": "2026-02-19T12:00:00.000Z",
+							"end": "2026-02-19T14:00:00.000Z"
+						},
+						"countries": [
+							"all"
+						],
+						"updated": "2026-02-19T15:30:05.405Z"
+					},
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": {
+							"directors": [],
+							"cast": []
+						},
+						"ratings": [],
+						"images": [
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607035/B2607035/260219153005_Thumb_generico_WINPLAY.png",
+								"type": "THUMB",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607035/B2607035/260219153005_Thumb_generico_WINPLAY.png"
+							},
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607035/B2607035/260219153005_poster_generico_WINPLAY.png",
+								"type": "POSTER",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607035/B2607035/260219153005_poster_generico_WINPLAY.png"
+							}
+						],
+						"cid": "B2607035",
+						"programId": "B2607035",
+						"programName": "Win Noticias",
+						"externalId": "B2607035",
+						"title": "Win Noticias",
+						"description": "Repetición",
+						"contentType": "EPISODE",
+						"duration": 3600,
+						"tags": [],
+						"startTime": "2026-02-19T14:00:00.000Z",
+						"endTime": "2026-02-19T15:00:00.000Z",
+						"broadcastDate": {
+							"start": "2026-02-19T14:00:00.000Z",
+							"end": "2026-02-19T15:00:00.000Z"
+						},
+						"countries": [
+							"all"
+						],
+						"updated": "2026-02-19T15:30:05.405Z"
+					},
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": {
+							"directors": [],
+							"cast": []
+						},
+						"ratings": [],
+						"images": [
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607036/B2607036/260219153005_Thumb_generico_WINPLAY.png",
+								"type": "THUMB",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607036/B2607036/260219153005_Thumb_generico_WINPLAY.png"
+							},
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607036/B2607036/260219153005_poster_generico_WINPLAY.png",
+								"type": "POSTER",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607036/B2607036/260219153005_poster_generico_WINPLAY.png"
+							}
+						],
+						"cid": "B2607036",
+						"programId": "B2607036",
+						"programName": "Repetición Repetición Liga BetPlay Dimayor 2026 - I: Cali vs. Nacional (Fecha 7)",
+						"externalId": "B2607036",
+						"title": "Repetición Repetición Liga BetPlay Dimayor 2026 - I: Cali vs. Nacional (Fecha 7)",
+						"description": "Repetición",
+						"contentType": "EPISODE",
+						"duration": 7200,
+						"tags": [],
+						"startTime": "2026-02-19T15:00:00.000Z",
+						"endTime": "2026-02-19T17:00:00.000Z",
+						"broadcastDate": {
+							"start": "2026-02-19T15:00:00.000Z",
+							"end": "2026-02-19T17:00:00.000Z"
+						},
+						"countries": [
+							"all"
+						],
+						"updated": "2026-02-19T15:30:05.405Z"
+					},
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": {
+							"directors": [],
+							"cast": []
+						},
+						"ratings": [],
+						"images": [
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607037/B2607037/260219153005_Thumb_generico_WINPLAY.png",
+								"type": "THUMB",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607037/B2607037/260219153005_Thumb_generico_WINPLAY.png"
+							},
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607037/B2607037/260219153005_poster_generico_WINPLAY.png",
+								"type": "POSTER",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607037/B2607037/260219153005_poster_generico_WINPLAY.png"
+							}
+						],
+						"cid": "B2607037",
+						"programId": "B2607037",
+						"programName": "Repetición Liga BetPlay Dimayor 2026 - I: Junior vs. América (Fecha 7)",
+						"externalId": "B2607037",
+						"title": "Repetición Liga BetPlay Dimayor 2026 - I: Junior vs. América (Fecha 7)",
+						"description": "Repetición",
+						"contentType": "EPISODE",
+						"duration": 7200,
+						"tags": [],
+						"startTime": "2026-02-19T17:00:00.000Z",
+						"endTime": "2026-02-19T19:00:00.000Z",
+						"broadcastDate": {
+							"start": "2026-02-19T17:00:00.000Z",
+							"end": "2026-02-19T19:00:00.000Z"
+						},
+						"countries": [
+							"all"
+						],
+						"updated": "2026-02-19T15:30:05.405Z"
+					},
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": {
+							"directors": [],
+							"cast": []
+						},
+						"ratings": [],
+						"images": [
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607038/B2607038/260219153005_Thumb_generico_WINPLAY.png",
+								"type": "THUMB",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607038/B2607038/260219153005_Thumb_generico_WINPLAY.png"
+							},
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607038/B2607038/260219153005_poster_generico_WINPLAY.png",
+								"type": "POSTER",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607038/B2607038/260219153005_poster_generico_WINPLAY.png"
+							}
+						],
+						"cid": "B2607038",
+						"programId": "B2607038",
+						"programName": "Repetición Liga BetPlay Dimayor 2026 - I: Tolima vs. Once Caldas (Fecha 7)",
+						"externalId": "B2607038",
+						"title": "Repetición Liga BetPlay Dimayor 2026 - I: Tolima vs. Once Caldas (Fecha 7)",
+						"description": "Repetición",
+						"contentType": "EPISODE",
+						"duration": 7200,
+						"tags": [],
+						"startTime": "2026-02-19T19:00:00.000Z",
+						"endTime": "2026-02-19T21:00:00.000Z",
+						"broadcastDate": {
+							"start": "2026-02-19T19:00:00.000Z",
+							"end": "2026-02-19T21:00:00.000Z"
+						},
+						"countries": [
+							"all"
+						],
+						"updated": "2026-02-19T15:30:05.405Z"
+					},
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": {
+							"directors": [],
+							"cast": []
+						},
+						"ratings": [],
+						"images": [
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607039/B2607039/260219153005_Thumb_generico_WINPLAY.png",
+								"type": "THUMB",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607039/B2607039/260219153005_Thumb_generico_WINPLAY.png"
+							},
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607039/B2607039/260219153005_poster_generico_WINPLAY.png",
+								"type": "POSTER",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607039/B2607039/260219153005_poster_generico_WINPLAY.png"
+							}
+						],
+						"cid": "B2607039",
+						"programId": "B2607039",
+						"programName": "Repetición Medio Tiempo",
+						"externalId": "B2607039",
+						"title": "Repetición Medio Tiempo",
+						"description": "Repetición",
+						"contentType": "EPISODE",
+						"duration": 7200,
+						"tags": [],
+						"startTime": "2026-02-19T21:00:00.000Z",
+						"endTime": "2026-02-19T23:00:00.000Z",
+						"broadcastDate": {
+							"start": "2026-02-19T21:00:00.000Z",
+							"end": "2026-02-19T23:00:00.000Z"
+						},
+						"countries": [
+							"all"
+						],
+						"updated": "2026-02-19T15:30:05.405Z"
+					},
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": {
+							"directors": [],
+							"cast": []
+						},
+						"ratings": [],
+						"images": [
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607040/B2607040/260219153005_Thumb_generico_WINPLAY.png",
+								"type": "THUMB",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607040/B2607040/260219153005_Thumb_generico_WINPLAY.png"
+							},
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607040/B2607040/260219153005_poster_generico_WINPLAY.png",
+								"type": "POSTER",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607040/B2607040/260219153005_poster_generico_WINPLAY.png"
+							}
+						],
+						"cid": "B2607040",
+						"programId": "B2607040",
+						"programName": "Win Noticias",
+						"externalId": "B2607040",
+						"title": "Win Noticias",
+						"description": "Noticiero",
+						"contentType": "EPISODE",
+						"duration": 5400,
+						"tags": [],
+						"startTime": "2026-02-19T23:00:00.000Z",
+						"endTime": "2026-02-20T00:30:00.000Z",
+						"broadcastDate": {
+							"start": "2026-02-19T23:00:00.000Z",
+							"end": "2026-02-20T00:30:00.000Z"
+						},
+						"countries": [
+							"all"
+						],
+						"updated": "2026-02-19T15:30:05.405Z"
+					},
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": {
+							"directors": [],
+							"cast": []
+						},
+						"ratings": [],
+						"images": [
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607041/B2607041/260219153005_Thumb_generico_WINPLAY.png",
+								"type": "THUMB",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607041/B2607041/260219153005_Thumb_generico_WINPLAY.png"
+							},
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607041/B2607041/260219153005_poster_generico_WINPLAY.png",
+								"type": "POSTER",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607041/B2607041/260219153005_poster_generico_WINPLAY.png"
+							}
+						],
+						"cid": "B2607041",
+						"programId": "B2607041",
+						"programName": "Repetición Repetición Repetición Liga BetPlay Dimayor 2026 - I: Cali vs. Nacional (Fecha 7)",
+						"externalId": "B2607041",
+						"title": "Repetición Repetición Repetición Liga BetPlay Dimayor 2026 - I: Cali vs. Nacional (Fecha 7)",
+						"description": "Repetición",
+						"contentType": "EPISODE",
+						"duration": 7200,
+						"tags": [],
+						"startTime": "2026-02-20T00:30:00.000Z",
+						"endTime": "2026-02-20T02:30:00.000Z",
+						"broadcastDate": {
+							"start": "2026-02-20T00:30:00.000Z",
+							"end": "2026-02-20T02:30:00.000Z"
+						},
+						"countries": [
+							"all"
+						],
+						"updated": "2026-02-19T15:30:05.405Z"
+					},
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": {
+							"directors": [],
+							"cast": []
+						},
+						"ratings": [],
+						"images": [
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607042/B2607042/260219153005_Thumb_generico_WINPLAY.png",
+								"type": "THUMB",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607042/B2607042/260219153005_Thumb_generico_WINPLAY.png"
+							},
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607042/B2607042/260219153005_poster_generico_WINPLAY.png",
+								"type": "POSTER",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607042/B2607042/260219153005_poster_generico_WINPLAY.png"
+							}
+						],
+						"cid": "B2607042",
+						"programId": "B2607042",
+						"programName": "Win Noticias",
+						"externalId": "B2607042",
+						"title": "Win Noticias",
+						"description": "Noticiero",
+						"contentType": "EPISODE",
+						"duration": 3600,
+						"tags": [],
+						"startTime": "2026-02-20T02:30:00.000Z",
+						"endTime": "2026-02-20T03:30:00.000Z",
+						"broadcastDate": {
+							"start": "2026-02-20T02:30:00.000Z",
+							"end": "2026-02-20T03:30:00.000Z"
+						},
+						"countries": [
+							"all"
+						],
+						"updated": "2026-02-19T15:30:05.405Z"
+					},
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": {
+							"directors": [],
+							"cast": []
+						},
+						"ratings": [],
+						"images": [
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607043/B2607043/260219153005_Thumb_generico_WINPLAY.png",
+								"type": "THUMB",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607043/B2607043/260219153005_Thumb_generico_WINPLAY.png"
+							},
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607043/B2607043/260219153005_poster_generico_WINPLAY.png",
+								"type": "POSTER",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_PLUS/B2607043/B2607043/260219153005_poster_generico_WINPLAY.png"
+							}
+						],
+						"cid": "B2607043",
+						"programId": "B2607043",
+						"programName": "Repetición Programación Win",
+						"externalId": "B2607043",
+						"title": "Repetición Programación Win",
+						"description": "Repetición",
+						"contentType": "EPISODE",
+						"duration": 30600,
+						"tags": [],
+						"startTime": "2026-02-20T03:30:00.000Z",
+						"endTime": "2026-02-20T12:00:00.000Z",
+						"broadcastDate": {
+							"start": "2026-02-20T03:30:00.000Z",
+							"end": "2026-02-20T12:00:00.000Z"
+						},
+						"countries": [
+							"all"
+						],
+						"updated": "2026-02-19T15:30:05.405Z"
+					}
+				]
+			},
+			"schedule": {},
+			"images": []
+		},
+		{
+			"id": "692dc3d7ddd30f329e90a4cc",
+			"content": {
+				"audioOnly": false,
+				"catchUpHours": 48,
+				"contentLists": [],
+				"clip": false,
+				"contentType": "BROADCAST",
+				"downloadable": {
+					"isDownloadable": false
+				},
+				"entitlementTypes": [
+					"media"
+				],
+				"epgId": "WINSPORTS_WINSPORTS",
+				"externalId": "e51e4b3d-5192-4013-81c7-4ea1064d2712",
+				"flights": [
+					{
+						"flights": [
+							{
+								"start": "2025-11-04T12:00:00.000Z",
+								"end": null
+							}
+						],
+						"network": "winsportsaudio"
+					}
+				],
+				"hasCatchUp": true,
+				"hd": false,
+				"id": "692dc3d7ddd30f329e90a4cc",
+				"images": [
+					{
+						"url": "https://unity-img.tbxapis.com/v0/images/6a561d048728db7c786b53b0941d0dd9/content/692dc3d7ddd30f329e90a4cc/f5bace0fa71b5102b1f3dcfd4a6afb84/img.png",
+						"contentType": "image/png",
+						"type": "THUMB",
+						"size": {
+							"height": 1080,
+							"ratio": 1.7777777777777777,
+							"width": 1920
+						},
+						"created": "2025-12-01T17:48:39.891Z",
+						"updated": "2025-12-01T17:48:39.891Z"
+					},
+					{
+						"url": "https://unity-img.tbxapis.com/v0/images/6a561d048728db7c786b53b0941d0dd9/content/692dc3d7ddd30f329e90a4cc/c5d692f847bbfef978dcf77583a9ac5b/img.png",
+						"contentType": "image/png",
+						"type": "POSTER",
+						"size": {
+							"height": 1500,
+							"ratio": 0.6666666666666666,
+							"width": 1000
+						},
+						"created": "2025-12-01T17:48:39.877Z",
+						"updated": "2025-12-01T17:48:39.877Z"
+					}
+				],
+				"isNew": false,
+				"live": true,
+				"networks": [
+					{
+						"name": "Win Sports Live Audio",
+						"network": "winsportsaudio",
+						"embed": true
+					}
+				],
+				"participants": {
+					"authors": [],
+					"cast": [],
+					"director": [],
+					"writer": []
+				},
+				"playbackType": [],
+				"provider": "winsportslivecpix",
+				"ratingLevel": 2,
+				"ratings": [
+					"NR"
+				],
+				"replay": false,
+				"shortId": "zma226",
+				"tags": [],
+				"title": "Win Sports",
+				"tracking": {
+					"bookmarks": true,
+					"events": true
+				},
+				"trailerConfig": {
+					"isTrailer": false
+				},
+				"urn": "urn:tve:winsportsaudio",
+				"viewCondition": "standard",
+				"subtitleTracks": [],
+				"encodings": [
+					"application/dash+xml",
+					"application/x-mpegURL"
+				],
+				"isCoppa": false,
+				"alternativeDescriptions": [],
+				"signalId": "winsports",
+				"category": null,
+				"epg": [
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": [],
+						"ratings": [],
+						"images": [],
+						"title": "Win Noticias",
+						"description": "Informe con las noticias deportivas más recientes del día.",
+						"startTime": "2026-02-18T19:30:00.062Z",
+						"endTime": "2026-02-18T21:00:00.062Z",
+						"duration": 5400,
+						"broadcastDate": {
+							"start": "2026-02-18T19:30:00.062Z",
+							"end": "2026-02-18T21:00:00.062Z"
+						},
+						"cid": "_76d0d4988742c0aa4caf79ecf6646d25e86c999f",
+						"updated": "2026-02-19T15:31:05.476Z",
+						"contentType": ""
+					},
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": [],
+						"ratings": [],
+						"images": [],
+						"title": "Saque Largo",
+						"description": "Debate, análisis y comentarios sobre el fútbol colombiano",
+						"startTime": "2026-02-18T21:00:00.701Z",
+						"endTime": "2026-02-19T00:00:00.701Z",
+						"duration": 10800,
+						"broadcastDate": {
+							"start": "2026-02-18T21:00:00.701Z",
+							"end": "2026-02-19T00:00:00.701Z"
+						},
+						"cid": "_56e5cb0b3edcd58906cacfa350b86eb96fdd6d01",
+						"updated": "2026-02-19T15:31:05.476Z",
+						"contentType": ""
+					},
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": [],
+						"ratings": [],
+						"images": [],
+						"title": "Previo",
+						"description": "Antesala con datos, análisis y formaciones del partido próximo a iniciar.",
+						"startTime": "2026-02-19T00:00:00.256Z",
+						"endTime": "2026-02-19T00:30:00.256Z",
+						"duration": 1800,
+						"broadcastDate": {
+							"start": "2026-02-19T00:00:00.256Z",
+							"end": "2026-02-19T00:30:00.256Z"
+						},
+						"cid": "_a246750b0c48d33ab1ff17b45be236d9822a4efb",
+						"updated": "2026-02-19T15:31:05.476Z",
+						"contentType": ""
+					},
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": [],
+						"ratings": [],
+						"images": [],
+						"title": "Liga Betplay Dimayor 2026-I: Junior vs América de Cali",
+						"description": "Transmisión oficial del partido entre Junior y América por la Liga BetPlay.",
+						"startTime": "2026-02-19T00:30:00.514Z",
+						"endTime": "2026-02-19T02:30:00.514Z",
+						"duration": 7200,
+						"broadcastDate": {
+							"start": "2026-02-19T00:30:00.514Z",
+							"end": "2026-02-19T02:30:00.514Z"
+						},
+						"cid": "_4796841ef7488d2b279628cfaf89aa996d88f3d0",
+						"updated": "2026-02-19T15:31:05.476Z",
+						"contentType": ""
+					},
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": [],
+						"ratings": [],
+						"images": [],
+						"title": "Win Noticias",
+						"description": "Informe con las noticias deportivas más recientes del día.",
+						"startTime": "2026-02-19T02:30:00.900Z",
+						"endTime": "2026-02-19T03:30:00.900Z",
+						"duration": 3600,
+						"broadcastDate": {
+							"start": "2026-02-19T02:30:00.900Z",
+							"end": "2026-02-19T03:30:00.900Z"
+						},
+						"cid": "_89f58f1bddd8cfbf969482d8c66ae976771e4cb8",
+						"updated": "2026-02-19T15:31:05.476Z",
+						"contentType": ""
+					},
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": [],
+						"ratings": [],
+						"images": [],
+						"title": "Repeticion Programación Win",
+						"description": "Emisión repetida de contenidos y programas del canal.",
+						"startTime": "2026-02-19T03:30:00.254Z",
+						"endTime": "2026-02-19T11:00:00.000Z",
+						"duration": 27000,
+						"broadcastDate": {
+							"start": "2026-02-19T03:30:00.254Z",
+							"end": "2026-02-19T11:00:00.000Z"
+						},
+						"cid": "_0f43ace98c73f6a8d8e085ee576a758ea809b981",
+						"updated": "2026-02-19T15:31:05.476Z",
+						"contentType": ""
+					},
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": {
+							"directors": [],
+							"cast": []
+						},
+						"ratings": [],
+						"images": [
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_WINSPORTS/A2608001/A2608001/260219153105_Thumb_generico_WINPLAY.png",
+								"type": "THUMB",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_WINSPORTS/A2608001/A2608001/260219153105_Thumb_generico_WINPLAY.png"
+							},
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_WINSPORTS/A2608001/A2608001/260219153105_poster_generico_WINPLAY.png",
+								"type": "POSTER",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_WINSPORTS/A2608001/A2608001/260219153105_poster_generico_WINPLAY.png"
+							}
+						],
+						"cid": "A2608001",
+						"programId": "A2608001",
+						"programName": "Planeta fútbol",
+						"externalId": "A2608001",
+						"title": "Planeta fútbol",
+						"description": "Resumen con análisis y actualidad del fútbol nacional e internacional.",
+						"contentType": "EPISODE",
+						"duration": 7200,
+						"tags": [],
+						"startTime": "2026-02-19T11:00:00.000Z",
+						"endTime": "2026-02-19T13:00:00.000Z",
+						"broadcastDate": {
+							"start": "2026-02-19T11:00:00.000Z",
+							"end": "2026-02-19T13:00:00.000Z"
+						},
+						"countries": [
+							"all"
+						],
+						"updated": "2026-02-19T15:31:05.476Z"
+					},
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": {
+							"directors": [],
+							"cast": []
+						},
+						"ratings": [],
+						"images": [
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_WINSPORTS/A2608002/A2608002/260219153105_Thumb_generico_WINPLAY.png",
+								"type": "THUMB",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_WINSPORTS/A2608002/A2608002/260219153105_Thumb_generico_WINPLAY.png"
+							},
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_WINSPORTS/A2608002/A2608002/260219153105_poster_generico_WINPLAY.png",
+								"type": "POSTER",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_WINSPORTS/A2608002/A2608002/260219153105_poster_generico_WINPLAY.png"
+							}
+						],
+						"cid": "A2608002",
+						"programId": "A2608002",
+						"programName": "Despierta win",
+						"externalId": "A2608002",
+						"title": "Despierta win",
+						"description": "Magazine matutino con noticias deportivas, entrevistas y actualidad.",
+						"contentType": "EPISODE",
+						"duration": 16200,
+						"tags": [],
+						"startTime": "2026-02-19T13:00:00.000Z",
+						"endTime": "2026-02-19T17:30:00.000Z",
+						"broadcastDate": {
+							"start": "2026-02-19T13:00:00.000Z",
+							"end": "2026-02-19T17:30:00.000Z"
+						},
+						"countries": [
+							"all"
+						],
+						"updated": "2026-02-19T15:31:05.476Z"
+					},
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": {
+							"directors": [],
+							"cast": []
+						},
+						"ratings": [],
+						"images": [
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_WINSPORTS/A2608003/A2608003/260219153105_Thumb_generico_WINPLAY.png",
+								"type": "THUMB",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_WINSPORTS/A2608003/A2608003/260219153105_Thumb_generico_WINPLAY.png"
+							},
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_WINSPORTS/A2608003/A2608003/260219153105_poster_generico_WINPLAY.png",
+								"type": "POSTER",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_WINSPORTS/A2608003/A2608003/260219153105_poster_generico_WINPLAY.png"
+							}
+						],
+						"cid": "A2608003",
+						"programId": "A2608003",
+						"programName": "Medio tiempo",
+						"externalId": "A2608003",
+						"title": "Medio tiempo",
+						"description": "Balance breve con resultados, goles y momentos destacados de la jornada.",
+						"contentType": "EPISODE",
+						"duration": 7200,
+						"tags": [],
+						"startTime": "2026-02-19T17:30:00.000Z",
+						"endTime": "2026-02-19T19:30:00.000Z",
+						"broadcastDate": {
+							"start": "2026-02-19T17:30:00.000Z",
+							"end": "2026-02-19T19:30:00.000Z"
+						},
+						"countries": [
+							"all"
+						],
+						"updated": "2026-02-19T15:31:05.476Z"
+					},
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": {
+							"directors": [],
+							"cast": []
+						},
+						"ratings": [],
+						"images": [
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_WINSPORTS/A2608004/A2608004/260219153105_Thumb_generico_WINPLAY.png",
+								"type": "THUMB",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_WINSPORTS/A2608004/A2608004/260219153105_Thumb_generico_WINPLAY.png"
+							},
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_WINSPORTS/A2608004/A2608004/260219153105_poster_generico_WINPLAY.png",
+								"type": "POSTER",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_WINSPORTS/A2608004/A2608004/260219153105_poster_generico_WINPLAY.png"
+							}
+						],
+						"cid": "A2608004",
+						"programId": "A2608004",
+						"programName": "Win noticias",
+						"externalId": "A2608004",
+						"title": "Win noticias",
+						"description": "Informe con las noticias deportivas más recientes del día.",
+						"contentType": "EPISODE",
+						"duration": 5400,
+						"tags": [],
+						"startTime": "2026-02-19T19:30:00.000Z",
+						"endTime": "2026-02-19T21:00:00.000Z",
+						"broadcastDate": {
+							"start": "2026-02-19T19:30:00.000Z",
+							"end": "2026-02-19T21:00:00.000Z"
+						},
+						"countries": [
+							"all"
+						],
+						"updated": "2026-02-19T15:31:05.476Z"
+					},
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": {
+							"directors": [],
+							"cast": []
+						},
+						"ratings": [],
+						"images": [
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_WINSPORTS/A2608005/A2608005/260219153105_Thumb_generico_WINPLAY.png",
+								"type": "THUMB",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_WINSPORTS/A2608005/A2608005/260219153105_Thumb_generico_WINPLAY.png"
+							},
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_WINSPORTS/A2608005/A2608005/260219153105_poster_generico_WINPLAY.png",
+								"type": "POSTER",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_WINSPORTS/A2608005/A2608005/260219153105_poster_generico_WINPLAY.png"
+							}
+						],
+						"cid": "A2608005",
+						"programId": "A2608005",
+						"programName": "Saque largo",
+						"externalId": "A2608005",
+						"title": "Saque largo",
+						"description": "Debate, análisis y comentarios sobre el fútbol colombiano.",
+						"contentType": "EPISODE",
+						"duration": 5400,
+						"tags": [],
+						"startTime": "2026-02-19T21:00:00.000Z",
+						"endTime": "2026-02-19T22:30:00.000Z",
+						"broadcastDate": {
+							"start": "2026-02-19T21:00:00.000Z",
+							"end": "2026-02-19T22:30:00.000Z"
+						},
+						"countries": [
+							"all"
+						],
+						"updated": "2026-02-19T15:31:05.476Z"
+					},
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": {
+							"directors": [],
+							"cast": []
+						},
+						"ratings": [],
+						"images": [
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_WINSPORTS/A2608006/A2608006/260219153105_Thumb_generico_WINPLAY.png",
+								"type": "THUMB",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_WINSPORTS/A2608006/A2608006/260219153105_Thumb_generico_WINPLAY.png"
+							},
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_WINSPORTS/A2608006/A2608006/260219153105_poster_generico_WINPLAY.png",
+								"type": "POSTER",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_WINSPORTS/A2608006/A2608006/260219153105_poster_generico_WINPLAY.png"
+							}
+						],
+						"cid": "A2608006",
+						"programId": "A2608006",
+						"programName": "Brasileirao: Atl Paraense Vs Corinthians",
+						"externalId": "A2608006",
+						"title": "Brasileirao: Atl Paraense Vs Corinthians",
+						"description": "Partido del Brasileirao entre Atlético Paranaense y Corinthians.",
+						"contentType": "EPISODE",
+						"duration": 7200,
+						"tags": [],
+						"startTime": "2026-02-19T22:30:00.000Z",
+						"endTime": "2026-02-20T00:30:00.000Z",
+						"broadcastDate": {
+							"start": "2026-02-19T22:30:00.000Z",
+							"end": "2026-02-20T00:30:00.000Z"
+						},
+						"countries": [
+							"CO"
+						],
+						"updated": "2026-02-19T15:31:05.476Z"
+					},
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": {
+							"directors": [],
+							"cast": []
+						},
+						"ratings": [],
+						"images": [
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_WINSPORTS/A2608007/A2608007/260219153105_1920x1080__L-JUNIOR__R-AMERICA.png",
+								"type": "THUMB",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_WINSPORTS/A2608007/A2608007/260219153105_1920x1080__L-JUNIOR__R-AMERICA.png"
+							},
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_WINSPORTS/A2608007/A2608007/260219153105_1000x1500__L-JUNIOR__R-AMERICA.png",
+								"type": "POSTER",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_WINSPORTS/A2608007/A2608007/260219153105_1000x1500__L-JUNIOR__R-AMERICA.png"
+							}
+						],
+						"cid": "A2608007",
+						"programId": "A2608007",
+						"programName": "Repeticion Liga Betplay Dimayor 2026-I: Junior vs América de Cali",
+						"externalId": "A2608007",
+						"title": "Repeticion Liga Betplay Dimayor 2026-I: Junior vs América de Cali",
+						"description": "Reedición del encuentro entre Junior y América.",
+						"contentType": "EPISODE",
+						"duration": 7200,
+						"tags": [],
+						"startTime": "2026-02-20T00:30:00.000Z",
+						"endTime": "2026-02-20T02:30:00.000Z",
+						"broadcastDate": {
+							"start": "2026-02-20T00:30:00.000Z",
+							"end": "2026-02-20T02:30:00.000Z"
+						},
+						"countries": [
+							"all"
+						],
+						"updated": "2026-02-19T15:31:05.476Z"
+					},
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": {
+							"directors": [],
+							"cast": []
+						},
+						"ratings": [],
+						"images": [
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_WINSPORTS/A2608008/A2608008/260219153105_Thumb_generico_WINPLAY.png",
+								"type": "THUMB",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_WINSPORTS/A2608008/A2608008/260219153105_Thumb_generico_WINPLAY.png"
+							},
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_WINSPORTS/A2608008/A2608008/260219153105_poster_generico_WINPLAY.png",
+								"type": "POSTER",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_WINSPORTS/A2608008/A2608008/260219153105_poster_generico_WINPLAY.png"
+							}
+						],
+						"cid": "A2608008",
+						"programId": "A2608008",
+						"programName": "Win noticias",
+						"externalId": "A2608008",
+						"title": "Win noticias",
+						"description": "Informe con las noticias deportivas más recientes del día.",
+						"contentType": "EPISODE",
+						"duration": 3600,
+						"tags": [],
+						"startTime": "2026-02-20T02:30:00.000Z",
+						"endTime": "2026-02-20T03:30:00.000Z",
+						"broadcastDate": {
+							"start": "2026-02-20T02:30:00.000Z",
+							"end": "2026-02-20T03:30:00.000Z"
+						},
+						"countries": [
+							"all"
+						],
+						"updated": "2026-02-19T15:31:05.476Z"
+					},
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": [],
+						"ratings": [],
+						"images": [],
+						"title": "Repetición Programación Win",
+						"description": "Emisión repetida de contenidos y programas del canal.",
+						"startTime": "2026-02-20T03:30:00.600Z",
+						"endTime": "2026-02-20T11:00:00.000Z",
+						"duration": 27000,
+						"broadcastDate": {
+							"start": "2026-02-20T03:30:00.600Z",
+							"end": "2026-02-20T11:00:00.000Z"
+						},
+						"cid": "_2462ce5b3b934264e7d49a10220c1144f5e051f5",
+						"updated": "2026-02-19T15:31:05.476Z",
+						"contentType": ""
+					}
+				]
+			},
+			"schedule": {},
+			"images": []
+		},
+		{
+			"id": "692d9c0b09240116200bf4eb",
+			"content": {
+				"audioOnly": false,
+				"catchUpHours": 48,
+				"contentLists": [],
+				"clip": false,
+				"contentType": "BROADCAST",
+				"downloadable": {
+					"isDownloadable": false
+				},
+				"entitlementTypes": [
+					"media"
+				],
+				"epgId": "WINSPORTS_AUDIO",
+				"externalId": "3f787abe-d68e-4d4b-8738-d14a95ff0596",
+				"flights": [
+					{
+						"flights": [
+							{
+								"start": "2025-11-04T13:50:00.000Z",
+								"end": null
+							}
+						],
+						"network": "winsportsaudio"
+					}
+				],
+				"hasCatchUp": true,
+				"hd": false,
+				"id": "692d9c0b09240116200bf4eb",
+				"images": [
+					{
+						"url": "https://unity-img.tbxapis.com/v0/images/6a561d048728db7c786b53b0941d0dd9/content/692d9c0b09240116200bf4eb/3b77368563874b184ca70dc8382a1959/img.png",
+						"contentType": "image/png",
+						"type": "THUMB",
+						"size": {
+							"height": 1080,
+							"ratio": 1.7787037037037037,
+							"width": 1921
+						},
+						"created": "2025-12-01T17:48:11.932Z",
+						"updated": "2025-12-01T17:48:11.932Z"
+					},
+					{
+						"url": "https://unity-img.tbxapis.com/v0/images/6a561d048728db7c786b53b0941d0dd9/content/692d9c0b09240116200bf4eb/7fab71671b6433de9d5ac9d2b119c1f8/img.png",
+						"contentType": "image/png",
+						"type": "POSTER",
+						"size": {
+							"height": 1500,
+							"ratio": 0.6666666666666666,
+							"width": 1000
+						},
+						"created": "2025-12-01T17:48:11.929Z",
+						"updated": "2025-12-01T17:48:11.929Z"
+					}
+				],
+				"isNew": false,
+				"live": true,
+				"networks": [
+					{
+						"name": "Win Sports Live Audio",
+						"network": "winsportsaudio",
+						"embed": true
+					}
+				],
+				"participants": {
+					"authors": [],
+					"cast": [],
+					"director": [],
+					"writer": []
+				},
+				"playbackType": [],
+				"provider": "winsportslivecpix",
+				"ratingLevel": 2,
+				"ratings": [
+					"NR"
+				],
+				"replay": false,
+				"shortId": "l672wl",
+				"tags": [],
+				"title": "Win Lite",
+				"tracking": {
+					"bookmarks": true,
+					"events": true
+				},
+				"trailerConfig": {
+					"isTrailer": false
+				},
+				"urn": "urn:tve:winsportsaudio",
+				"viewCondition": "standard",
+				"subtitleTracks": [],
+				"encodings": [
+					"application/dash+xml",
+					"application/x-mpegURL"
+				],
+				"isCoppa": false,
+				"alternativeDescriptions": [],
+				"signalId": "winsportsplusaudio",
+				"category": null,
+				"epg": [
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": {
+							"directors": [],
+							"cast": []
+						},
+						"ratings": [],
+						"images": [
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607027/M2607027/260219211413_Thumb_generico_WINPLAY.png",
+								"type": "THUMB",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607027/M2607027/260219211413_Thumb_generico_WINPLAY.png"
+							},
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607027/M2607027/260219211413_poster_generico_WINPLAY.png",
+								"type": "POSTER",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607027/M2607027/260219211413_poster_generico_WINPLAY.png"
+							}
+						],
+						"cid": "M2607027",
+						"programId": "M2607027",
+						"programName": "Repetición Medio Tiempo",
+						"externalId": "M2607027",
+						"title": "Repetición Medio Tiempo",
+						"description": "Repetición",
+						"contentType": "EPISODE",
+						"duration": 7200,
+						"tags": [],
+						"startTime": "2026-02-18T19:30:00.000Z",
+						"endTime": "2026-02-18T21:30:00.000Z",
+						"broadcastDate": {
+							"start": "2026-02-18T19:30:00.000Z",
+							"end": "2026-02-18T21:30:00.000Z"
+						},
+						"countries": [
+							"all"
+						],
+						"updated": "2026-02-19T21:14:13.390Z"
+					},
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": {
+							"directors": [],
+							"cast": []
+						},
+						"ratings": [],
+						"images": [
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607028/M2607028/260219211413_Thumb_generico_WINPLAY.png",
+								"type": "THUMB",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607028/M2607028/260219211413_Thumb_generico_WINPLAY.png"
+							},
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607028/M2607028/260219211413_poster_generico_WINPLAY.png",
+								"type": "POSTER",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607028/M2607028/260219211413_poster_generico_WINPLAY.png"
+							}
+						],
+						"cid": "M2607028",
+						"programId": "M2607028",
+						"programName": "Win Noticias",
+						"externalId": "M2607028",
+						"title": "Win Noticias",
+						"description": "Noticiero",
+						"contentType": "EPISODE",
+						"duration": 5400,
+						"tags": [],
+						"startTime": "2026-02-18T21:30:00.000Z",
+						"endTime": "2026-02-18T23:00:00.000Z",
+						"broadcastDate": {
+							"start": "2026-02-18T21:30:00.000Z",
+							"end": "2026-02-18T23:00:00.000Z"
+						},
+						"countries": [
+							"all"
+						],
+						"updated": "2026-02-19T21:14:13.390Z"
+					},
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": {
+							"directors": [],
+							"cast": []
+						},
+						"ratings": [],
+						"images": [
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607029/M2607029/260219211413_Thumb_generico_WINPLAY.png",
+								"type": "THUMB",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607029/M2607029/260219211413_Thumb_generico_WINPLAY.png"
+							},
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607029/M2607029/260219211413_poster_generico_WINPLAY.png",
+								"type": "POSTER",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607029/M2607029/260219211413_poster_generico_WINPLAY.png"
+							}
+						],
+						"cid": "M2607029",
+						"programId": "M2607029",
+						"programName": "Cavsulas",
+						"externalId": "M2607029",
+						"title": "Cavsulas",
+						"description": "Programa ",
+						"contentType": "EPISODE",
+						"duration": 1800,
+						"tags": [],
+						"startTime": "2026-02-18T23:00:00.000Z",
+						"endTime": "2026-02-18T23:30:00.000Z",
+						"broadcastDate": {
+							"start": "2026-02-18T23:00:00.000Z",
+							"end": "2026-02-18T23:30:00.000Z"
+						},
+						"countries": [
+							"all"
+						],
+						"updated": "2026-02-19T21:14:13.390Z"
+					},
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": {
+							"directors": [],
+							"cast": []
+						},
+						"ratings": [],
+						"images": [
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607030/M2607030/260219211413_Thumb_generico_WINPLAY.png",
+								"type": "THUMB",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607030/M2607030/260219211413_Thumb_generico_WINPLAY.png"
+							},
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607030/M2607030/260219211413_poster_generico_WINPLAY.png",
+								"type": "POSTER",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607030/M2607030/260219211413_poster_generico_WINPLAY.png"
+							}
+						],
+						"cid": "M2607030",
+						"programId": "M2607030",
+						"programName": "Previo",
+						"externalId": "M2607030",
+						"title": "Previo",
+						"description": "previo",
+						"contentType": "EPISODE",
+						"duration": 3000,
+						"tags": [],
+						"startTime": "2026-02-18T23:30:00.000Z",
+						"endTime": "2026-02-19T00:20:00.000Z",
+						"broadcastDate": {
+							"start": "2026-02-18T23:30:00.000Z",
+							"end": "2026-02-19T00:20:00.000Z"
+						},
+						"countries": [
+							"all"
+						],
+						"updated": "2026-02-19T21:14:13.390Z"
+					},
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": {
+							"directors": [],
+							"cast": []
+						},
+						"ratings": [],
+						"images": [
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607031/M2607031/260219211413_1920x1080__L-JUNIOR__R-AMERICA.png",
+								"type": "THUMB",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607031/M2607031/260219211413_1920x1080__L-JUNIOR__R-AMERICA.png"
+							},
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607031/M2607031/260219211413_1000x1500__L-JUNIOR__R-AMERICA.png",
+								"type": "POSTER",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607031/M2607031/260219211413_1000x1500__L-JUNIOR__R-AMERICA.png"
+							}
+						],
+						"cid": "M2607031",
+						"programId": "M2607031",
+						"programName": "Liga BetPlay Dimayor 2026 - I: Junior vs. América (Fecha 7)",
+						"externalId": "M2607031",
+						"title": "Liga BetPlay Dimayor 2026 - I: Junior vs. América (Fecha 7)",
+						"description": "Fecha 7",
+						"contentType": "EPISODE",
+						"duration": 8700,
+						"tags": [],
+						"startTime": "2026-02-19T00:20:00.000Z",
+						"endTime": "2026-02-19T02:45:00.000Z",
+						"broadcastDate": {
+							"start": "2026-02-19T00:20:00.000Z",
+							"end": "2026-02-19T02:45:00.000Z"
+						},
+						"countries": [
+							"all"
+						],
+						"updated": "2026-02-19T21:14:13.390Z"
+					},
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": {
+							"directors": [],
+							"cast": []
+						},
+						"ratings": [],
+						"images": [
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607032/M2607032/260219211413_Thumb_generico_WINPLAY.png",
+								"type": "THUMB",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607032/M2607032/260219211413_Thumb_generico_WINPLAY.png"
+							},
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607032/M2607032/260219211413_poster_generico_WINPLAY.png",
+								"type": "POSTER",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607032/M2607032/260219211413_poster_generico_WINPLAY.png"
+							}
+						],
+						"cid": "M2607032",
+						"programId": "M2607032",
+						"programName": "Win Noticias",
+						"externalId": "M2607032",
+						"title": "Win Noticias",
+						"description": "Noticiero",
+						"contentType": "EPISODE",
+						"duration": 2700,
+						"tags": [],
+						"startTime": "2026-02-19T02:45:00.000Z",
+						"endTime": "2026-02-19T03:30:00.000Z",
+						"broadcastDate": {
+							"start": "2026-02-19T02:45:00.000Z",
+							"end": "2026-02-19T03:30:00.000Z"
+						},
+						"countries": [
+							"all"
+						],
+						"updated": "2026-02-19T21:14:13.390Z"
+					},
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": {
+							"directors": [],
+							"cast": []
+						},
+						"ratings": [],
+						"images": [
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607033/M2607033/260219211413_Thumb_generico_WINPLAY.png",
+								"type": "THUMB",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607033/M2607033/260219211413_Thumb_generico_WINPLAY.png"
+							},
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607033/M2607033/260219211413_poster_generico_WINPLAY.png",
+								"type": "POSTER",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607033/M2607033/260219211413_poster_generico_WINPLAY.png"
+							}
+						],
+						"cid": "M2607033",
+						"programId": "M2607033",
+						"programName": "Repetición Programación Win",
+						"externalId": "M2607033",
+						"title": "Repetición Programación Win",
+						"description": "Repetición",
+						"contentType": "EPISODE",
+						"duration": 30600,
+						"tags": [],
+						"startTime": "2026-02-19T03:30:00.000Z",
+						"endTime": "2026-02-19T12:00:00.000Z",
+						"broadcastDate": {
+							"start": "2026-02-19T03:30:00.000Z",
+							"end": "2026-02-19T12:00:00.000Z"
+						},
+						"countries": [
+							"all"
+						],
+						"updated": "2026-02-19T21:14:13.390Z"
+					},
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": {
+							"directors": [],
+							"cast": []
+						},
+						"ratings": [],
+						"images": [
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607034/M2607034/260219211413_Thumb_generico_WINPLAY.png",
+								"type": "THUMB",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607034/M2607034/260219211413_Thumb_generico_WINPLAY.png"
+							},
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607034/M2607034/260219211413_poster_generico_WINPLAY.png",
+								"type": "POSTER",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607034/M2607034/260219211413_poster_generico_WINPLAY.png"
+							}
+						],
+						"cid": "M2607034",
+						"programId": "M2607034",
+						"programName": "Chiringuito de Jugones",
+						"externalId": "M2607034",
+						"title": "Chiringuito de Jugones",
+						"description": "Repetición",
+						"contentType": "EPISODE",
+						"duration": 7200,
+						"tags": [],
+						"startTime": "2026-02-19T12:00:00.000Z",
+						"endTime": "2026-02-19T14:00:00.000Z",
+						"broadcastDate": {
+							"start": "2026-02-19T12:00:00.000Z",
+							"end": "2026-02-19T14:00:00.000Z"
+						},
+						"countries": [
+							"all"
+						],
+						"updated": "2026-02-19T21:14:13.390Z"
+					},
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": {
+							"directors": [],
+							"cast": []
+						},
+						"ratings": [],
+						"images": [
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607035/M2607035/260219211413_Thumb_generico_WINPLAY.png",
+								"type": "THUMB",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607035/M2607035/260219211413_Thumb_generico_WINPLAY.png"
+							},
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607035/M2607035/260219211413_poster_generico_WINPLAY.png",
+								"type": "POSTER",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607035/M2607035/260219211413_poster_generico_WINPLAY.png"
+							}
+						],
+						"cid": "M2607035",
+						"programId": "M2607035",
+						"programName": "Win Noticias",
+						"externalId": "M2607035",
+						"title": "Win Noticias",
+						"description": "Repetición",
+						"contentType": "EPISODE",
+						"duration": 3600,
+						"tags": [],
+						"startTime": "2026-02-19T14:00:00.000Z",
+						"endTime": "2026-02-19T15:00:00.000Z",
+						"broadcastDate": {
+							"start": "2026-02-19T14:00:00.000Z",
+							"end": "2026-02-19T15:00:00.000Z"
+						},
+						"countries": [
+							"all"
+						],
+						"updated": "2026-02-19T21:14:13.390Z"
+					},
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": {
+							"directors": [],
+							"cast": []
+						},
+						"ratings": [],
+						"images": [
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607036/M2607036/260219211413_Thumb_generico_WINPLAY.png",
+								"type": "THUMB",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607036/M2607036/260219211413_Thumb_generico_WINPLAY.png"
+							},
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607036/M2607036/260219211413_poster_generico_WINPLAY.png",
+								"type": "POSTER",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607036/M2607036/260219211413_poster_generico_WINPLAY.png"
+							}
+						],
+						"cid": "M2607036",
+						"programId": "M2607036",
+						"programName": "Repetición Repetición Liga BetPlay Dimayor 2026 - I: Cali vs. Nacional (Fecha 7)",
+						"externalId": "M2607036",
+						"title": "Repetición Repetición Liga BetPlay Dimayor 2026 - I: Cali vs. Nacional (Fecha 7)",
+						"description": "Repetición",
+						"contentType": "EPISODE",
+						"duration": 7200,
+						"tags": [],
+						"startTime": "2026-02-19T15:00:00.000Z",
+						"endTime": "2026-02-19T17:00:00.000Z",
+						"broadcastDate": {
+							"start": "2026-02-19T15:00:00.000Z",
+							"end": "2026-02-19T17:00:00.000Z"
+						},
+						"countries": [
+							"all"
+						],
+						"updated": "2026-02-19T21:14:13.390Z"
+					},
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": {
+							"directors": [],
+							"cast": []
+						},
+						"ratings": [],
+						"images": [
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607037/M2607037/260219211413_Thumb_generico_WINPLAY.png",
+								"type": "THUMB",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607037/M2607037/260219211413_Thumb_generico_WINPLAY.png"
+							},
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607037/M2607037/260219211413_poster_generico_WINPLAY.png",
+								"type": "POSTER",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607037/M2607037/260219211413_poster_generico_WINPLAY.png"
+							}
+						],
+						"cid": "M2607037",
+						"programId": "M2607037",
+						"programName": "Repetición Liga BetPlay Dimayor 2026 - I: Junior vs. América (Fecha 7)",
+						"externalId": "M2607037",
+						"title": "Repetición Liga BetPlay Dimayor 2026 - I: Junior vs. América (Fecha 7)",
+						"description": "Repetición",
+						"contentType": "EPISODE",
+						"duration": 7200,
+						"tags": [],
+						"startTime": "2026-02-19T17:00:00.000Z",
+						"endTime": "2026-02-19T19:00:00.000Z",
+						"broadcastDate": {
+							"start": "2026-02-19T17:00:00.000Z",
+							"end": "2026-02-19T19:00:00.000Z"
+						},
+						"countries": [
+							"all"
+						],
+						"updated": "2026-02-19T21:14:13.390Z"
+					},
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": {
+							"directors": [],
+							"cast": []
+						},
+						"ratings": [],
+						"images": [
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607038/M2607038/260219211413_Thumb_generico_WINPLAY.png",
+								"type": "THUMB",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607038/M2607038/260219211413_Thumb_generico_WINPLAY.png"
+							},
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607038/M2607038/260219211413_poster_generico_WINPLAY.png",
+								"type": "POSTER",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607038/M2607038/260219211413_poster_generico_WINPLAY.png"
+							}
+						],
+						"cid": "M2607038",
+						"programId": "M2607038",
+						"programName": "Repetición Liga BetPlay Dimayor 2026 - I: Tolima vs. Once Caldas (Fecha 7)",
+						"externalId": "M2607038",
+						"title": "Repetición Liga BetPlay Dimayor 2026 - I: Tolima vs. Once Caldas (Fecha 7)",
+						"description": "Repetición",
+						"contentType": "EPISODE",
+						"duration": 7200,
+						"tags": [],
+						"startTime": "2026-02-19T19:00:00.000Z",
+						"endTime": "2026-02-19T21:00:00.000Z",
+						"broadcastDate": {
+							"start": "2026-02-19T19:00:00.000Z",
+							"end": "2026-02-19T21:00:00.000Z"
+						},
+						"countries": [
+							"all"
+						],
+						"updated": "2026-02-19T21:14:13.390Z"
+					},
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": {
+							"directors": [],
+							"cast": []
+						},
+						"ratings": [],
+						"images": [
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607039/M2607039/260219211413_Thumb_generico_WINPLAY.png",
+								"type": "THUMB",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607039/M2607039/260219211413_Thumb_generico_WINPLAY.png"
+							},
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607039/M2607039/260219211413_poster_generico_WINPLAY.png",
+								"type": "POSTER",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607039/M2607039/260219211413_poster_generico_WINPLAY.png"
+							}
+						],
+						"cid": "M2607039",
+						"programId": "M2607039",
+						"programName": "Repetición Medio Tiempo",
+						"externalId": "M2607039",
+						"title": "Repetición Medio Tiempo",
+						"description": "Repetición",
+						"contentType": "EPISODE",
+						"duration": 7200,
+						"tags": [],
+						"startTime": "2026-02-19T21:00:00.000Z",
+						"endTime": "2026-02-19T23:00:00.000Z",
+						"broadcastDate": {
+							"start": "2026-02-19T21:00:00.000Z",
+							"end": "2026-02-19T23:00:00.000Z"
+						},
+						"countries": [
+							"all"
+						],
+						"updated": "2026-02-19T21:14:13.390Z"
+					},
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": {
+							"directors": [],
+							"cast": []
+						},
+						"ratings": [],
+						"images": [
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607040/M2607040/260219211413_Thumb_generico_WINPLAY.png",
+								"type": "THUMB",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607040/M2607040/260219211413_Thumb_generico_WINPLAY.png"
+							},
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607040/M2607040/260219211413_poster_generico_WINPLAY.png",
+								"type": "POSTER",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607040/M2607040/260219211413_poster_generico_WINPLAY.png"
+							}
+						],
+						"cid": "M2607040",
+						"programId": "M2607040",
+						"programName": "Win Noticias",
+						"externalId": "M2607040",
+						"title": "Win Noticias",
+						"description": "Noticiero",
+						"contentType": "EPISODE",
+						"duration": 5400,
+						"tags": [],
+						"startTime": "2026-02-19T23:00:00.000Z",
+						"endTime": "2026-02-20T00:30:00.000Z",
+						"broadcastDate": {
+							"start": "2026-02-19T23:00:00.000Z",
+							"end": "2026-02-20T00:30:00.000Z"
+						},
+						"countries": [
+							"all"
+						],
+						"updated": "2026-02-19T21:14:13.390Z"
+					},
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": {
+							"directors": [],
+							"cast": []
+						},
+						"ratings": [],
+						"images": [
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607041/M2607041/260219211413_Thumb_generico_WINPLAY.png",
+								"type": "THUMB",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607041/M2607041/260219211413_Thumb_generico_WINPLAY.png"
+							},
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607041/M2607041/260219211413_poster_generico_WINPLAY.png",
+								"type": "POSTER",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607041/M2607041/260219211413_poster_generico_WINPLAY.png"
+							}
+						],
+						"cid": "M2607041",
+						"programId": "M2607041",
+						"programName": "Repetición Repetición Repetición Liga BetPlay Dimayor 2026 - I: Cali vs. Nacional (Fecha 7)",
+						"externalId": "M2607041",
+						"title": "Repetición Repetición Repetición Liga BetPlay Dimayor 2026 - I: Cali vs. Nacional (Fecha 7)",
+						"description": "Repetición",
+						"contentType": "EPISODE",
+						"duration": 7200,
+						"tags": [],
+						"startTime": "2026-02-20T00:30:00.000Z",
+						"endTime": "2026-02-20T02:30:00.000Z",
+						"broadcastDate": {
+							"start": "2026-02-20T00:30:00.000Z",
+							"end": "2026-02-20T02:30:00.000Z"
+						},
+						"countries": [
+							"all"
+						],
+						"updated": "2026-02-19T21:14:13.390Z"
+					},
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": {
+							"directors": [],
+							"cast": []
+						},
+						"ratings": [],
+						"images": [
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607042/M2607042/260219211413_poster_generico_WINPLAY.png",
+								"type": "POSTER",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607042/M2607042/260219211413_poster_generico_WINPLAY.png"
+							}
+						],
+						"cid": "M2607042",
+						"programId": "M2607042",
+						"programName": "Win Noticias",
+						"externalId": "M2607042",
+						"title": "Win Noticias",
+						"description": "Noticiero",
+						"contentType": "EPISODE",
+						"duration": 3600,
+						"tags": [],
+						"startTime": "2026-02-20T02:30:00.000Z",
+						"endTime": "2026-02-20T03:30:00.000Z",
+						"broadcastDate": {
+							"start": "2026-02-20T02:30:00.000Z",
+							"end": "2026-02-20T03:30:00.000Z"
+						},
+						"countries": [
+							"all"
+						],
+						"updated": "2026-02-19T21:14:13.390Z"
+					},
+					{
+						"episode": null,
+						"season": null,
+						"genres": [],
+						"lang": "es",
+						"participants": {
+							"directors": [],
+							"cast": []
+						},
+						"ratings": [],
+						"images": [
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607043/M2607043/260219211413_Thumb_generico_WINPLAY.png",
+								"type": "THUMB",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607043/M2607043/260219211413_Thumb_generico_WINPLAY.png"
+							},
+							{
+								"url": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607043/M2607043/260219211413_poster_generico_WINPLAY.png",
+								"type": "POSTER",
+								"image": "https://unity-img.tbxapis.com/v0/epg/6a561d048728db7c786b53b0941d0dd9/WINSPORTS_AUDIO/M2607043/M2607043/260219211413_poster_generico_WINPLAY.png"
+							}
+						],
+						"cid": "M2607043",
+						"programId": "M2607043",
+						"programName": "Repetición Programación Win",
+						"externalId": "M2607043",
+						"title": "Repetición Programación Win",
+						"description": "Repetición",
+						"contentType": "EPISODE",
+						"duration": 30600,
+						"tags": [],
+						"startTime": "2026-02-20T03:30:00.000Z",
+						"endTime": "2026-02-20T12:00:00.000Z",
+						"broadcastDate": {
+							"start": "2026-02-20T03:30:00.000Z",
+							"end": "2026-02-20T12:00:00.000Z"
+						},
+						"countries": [
+							"all"
+						],
+						"updated": "2026-02-19T21:14:13.390Z"
+					}
+				]
+			},
+			"schedule": {},
+			"images": []
+		}
+	],
+	"page": {
+		"currentPage": 1,
+		"firstPage": 1,
+		"lastPage": 1,
+		"nextPage": null,
+		"previousPage": null,
+		"totalPages": 1,
+		"totalItems": 3,
+		"itemsPerPage": 20
+	},
+	"epgUrl": "https://unity.tbxapis.com/v0/epg/6761b6ab55adef022ee97d166a561d048728db7c786b53b0941d0dd9_frfr_0.json"
 }

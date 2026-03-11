@@ -16,9 +16,9 @@ const channel = {
 
 it('can generate valid url for today', done => {
   axios.get.mockImplementation(url => {
-    if (url === 'https://www.canalplus.com/bi/programme-tv/') {
+    if (url.includes('authenticate.json')) {
       return Promise.resolve({
-        data: fs.readFileSync(path.resolve(__dirname, '__data__/programme-tv.html'))
+        data: { token: 'f000c6f4ebf44647682b3a0fa66d7d99' }
       })
     } else {
       return Promise.resolve({ data: '' })
@@ -38,9 +38,9 @@ it('can generate valid url for today', done => {
 
 it('can generate valid url for tomorrow', done => {
   axios.get.mockImplementation(url => {
-    if (url === 'https://www.canalplus.com/bi/programme-tv/') {
+    if (url.includes('authenticate.json')) {
       return Promise.resolve({
-        data: fs.readFileSync(path.resolve(__dirname, '__data__/programme-tv.html'))
+        data: { token: 'f000c6f4ebf44647682b3a0fa66d7d99' }
       })
     } else {
       return Promise.resolve({ data: '' })

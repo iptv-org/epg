@@ -1,0 +1,378 @@
+{
+  "DatosAccesoAnonimo": {
+    "TipoEmision": "Pase",
+    "TipoComercial": "Subscripcion",
+    "TipoComercial2": {
+      "Tipo": "Subscripcion",
+      "Descripcion": null
+    },
+    "Freemium": false,
+    "TiposComerciales": [
+      {
+        "Tipo": "Subscripcion",
+        "Descripcion": null
+      }
+    ],
+    "Logos": [
+      {
+        "id": "default",
+        "state": null,
+        "uri": "https://estatico.emisiondof6.com/recorte/m-DPBLAN/wpmos/SEXTA"
+      },
+      {
+        "id": "default",
+        "state": "over",
+        "uri": "https://estatico.emisiondof6.com/recorte/m-DP/wpmos/SEXTA"
+      },
+      {
+        "id": "bg_dark",
+        "state": null,
+        "uri": "https://estatico.emisiondof6.com/recorte/m-DP/wpepg/SEXTA"
+      },
+      {
+        "id": "bg_light",
+        "state": null,
+        "uri": "https://estatico.emisiondof6.com/recorte/m-DPBLAN/wpepg/SEXTA"
+      },
+      {
+        "id": "nobox_dark",
+        "state": null,
+        "uri": "https://estatico.emisiondof6.com/recorte/m-NEONEGR/wpmarcaficha/SEXTA"
+      }
+    ],
+    "Precio": null,
+    "HoraInicio": "1770669060000",
+    "FechaFinPublicacion": null,
+    "FormatoVideo": null,
+    "FormatoAudio": null,
+    "VersionIdioma": null,
+    "HoraInicioSaltoCanal": "1770665460000",
+    "HoraFinSaltoCanal": "1770687060000",
+    "Subtitulos": [],
+    "Subtitulos2012": [],
+    "IndicadorSubtitulosSordos": null
+  },
+  "Id": 4236939,
+  "SerialId": 62244130,
+  "TipoContenido": "Episodio",
+  "CodSubTipoContenido": "E",
+  "SubTipoContenido": "episodio",
+  "SubTipoContedor": "temporada",
+  "TipoComercial": "Subscripcion",
+  "Titulo": "El intermedio (T20): Ep.624",
+  "catalogItemType": "LiveEpisode",
+  "TipoComercial2": {
+    "Tipo": "Subscripcion",
+    "Descripcion": null
+  },
+  "Contenedor": {
+    "Id": 901510,
+    "Path": "T-4105626|E-4236939",
+    "TituloSerie": "El intermedio",
+    "Temporada": "(T20)",
+    "Ficha": "https://ottcache.dof6.com/movistarplus/webplayer/contents/901510/details?mediaType=FOTOV&profile=OTT&mode=VODRU7D&channels=SEXTA&version=8&tlsStream=true&mdrm=true&showNonRated=true",
+    "Padre": "https://ottcache.dof6.com/movistarplus/webplayer/contents/4105626/details?mediaType=FOTOV&profile=OTT&mode=VODRU7D&version=8&tlsStream=true&mdrm=true&showNonRated=true"
+  },
+  "TituloEpisodio": "Episodio 624",
+  "TiposComerciales": [
+    {
+      "Tipo": "Subscripcion",
+      "Descripcion": null
+    }
+  ],
+  "NumeroEpisodio": "624",
+  "TituloEpisodioLargo": "T20 E624 \"Episodio 624\"",
+  "TituloVerLinea1": "El intermedio",
+  "TituloVerLinea2": "T20 E624",
+  "Directo": false,
+  "Estreno": false,
+  "TituloHorLinea1": "El intermedio",
+  "TituloHorLinea2": "T20 E624 \"Episodio 624\"",
+  "NivelMoral": {
+    "_id": "08",
+    "Id": "+12",
+    "Logo": "https://voddelivery.emisiondof6.com/images/logos/logos_nivelmoral/12.png"
+  },
+  "Lanzable": false,
+  "TituloSeguimiento": "T20 E624",
+  "Serie": {
+    "Id": 4105626,
+    "SeasonId": 4105626,
+    "TituloSerie": "El intermedio",
+    "Temporada": "(T20)",
+    "Ficha": "https://ottcache.dof6.com/movistarplus/webplayer/contents/4105626/details?mediaType=FOTOV&profile=OTT&mode=VODRU7D&version=8&tlsStream=true&mdrm=true&showNonRated=true",
+    "Descargable": false
+  },
+  "ratingLabels": [],
+  "IdSerie": 901510,
+  "Seguible": false,
+  "OrdenacionDescendente": false,
+  "Genero": {
+    "ComAntena": "Humor"
+  },
+  "Imagen": "https://estatico.emisiondof6.com/recorte/n/dispficha/MSEXTAP4236939",
+  "DisponibleVOD": false,
+  "Imagenes": [
+    {
+      "id": "default",
+      "uri": "https://estatico.emisiondof6.com/recorte/n/dispficha/MSEXTAP4236939"
+    },
+    {
+      "id": "horizontal",
+      "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogoh/MSEXTAT4236939"
+    },
+    {
+      "id": "watch2tgr-start",
+      "uri": "https://estatico.emisiondof6.com/recorte/n/vegtooltip/MSEXTAF4236939.jpg"
+    },
+    {
+      "id": "watch2tgr-end",
+      "uri": "https://estatico.emisiondof6.com/recorte/n/vegend/MSEXTAF4236939.jpg"
+    }
+  ],
+  "Competicion": {
+    "Fase": null,
+    "Jornada": null
+  },
+  "Descripcion": "El Gran Wyoming, con la ayuda de sus colaboradores, analiza en clave de humor las noticias más importantes del día. El sello inconfundible del cómico sirve para completar la información desde un punto de vista más distendido e irónico.",
+  "Sinopsis": "El Gran Wyoming, con la ayuda de sus colaboradores, analiza en clave de humor las noticias más importantes del día. El sello inconfundible del cómico sirve para completar la información desde un punto de vista más distendido e irónico.",
+  "Duracion": 93,
+  "Nacionalidad": "España",
+  "Anno": "2025",
+  "Actores": null,
+  "Directores": null,
+  "Descargable": false,
+  "Valoracion": {
+    "Valoracion": 3,
+    "Valoraciones": 30
+  },
+  "TituloNormalizado": "el-intermedio-t20/episodio-624",
+  "RutaNormalizada": "entretenimiento/el-intermedio-t20/episodio-624",
+  "Pases": [
+    {
+      "catalogItemType": "LiveEpisode",
+      "HoraInicio": "1770669060000",
+      "Duracion": 93,
+      "HoraInicioSaltoCanal": "1770665460000",
+      "Grabable": false,
+      "HoraFinSaltoCanal": "1770687060000",
+      "TemporadaGrabable": true,
+      "Canal": {
+        "CodCadenaTv": "SEXTA",
+        "Nombre": "La Sexta",
+        "Uid": 444099,
+        "CasId": "4526",
+        "ServiceUid": "717",
+        "ServiceUid2": "4526",
+        "ServiceId": 6,
+        "PuntoReproduccion": "https://lasexta-dash-movistarplus.emisiondof6.com/manifest.mpd",
+        "Logos": [
+          {
+            "id": "default",
+            "state": null,
+            "uri": "https://estatico.emisiondof6.com/recorte/m-DPBLAN/wpmos/SEXTA"
+          },
+          {
+            "id": "default",
+            "state": "over",
+            "uri": "https://estatico.emisiondof6.com/recorte/m-DP/wpmos/SEXTA"
+          },
+          {
+            "id": "bg_dark",
+            "state": null,
+            "uri": "https://estatico.emisiondof6.com/recorte/m-DP/wpepg/SEXTA"
+          },
+          {
+            "id": "bg_light",
+            "state": null,
+            "uri": "https://estatico.emisiondof6.com/recorte/m-DPBLAN/wpepg/SEXTA"
+          },
+          {
+            "id": "nobox_dark",
+            "state": null,
+            "uri": "https://estatico.emisiondof6.com/recorte/m-NEONEGR/wpmarcaficha/SEXTA"
+          }
+        ],
+        "Dial": 6,
+        "HomeZone": false,
+        "FormatoAudio": null,
+        "FormatoVideo": "HD",
+        "LogoTaquilla": null,
+        "Logo": "https://estatico.emisiondof6.com/recorte/m-DP/wpmos/SEXTA",
+        "HDR": false,
+        "EsVirtual": false,
+        "CDN": "tcdn",
+        "EsSatelite": false,
+        "QMWatermark": false,
+        "links": []
+      },
+      "Fase": null,
+      "CodEventoRejilla": null,
+      "ShowId": 63182873,
+      "SerialId": 62244130,
+      "tvProducts": [
+        "BOBFUT2",
+        "DIFUSION",
+        "DO0001",
+        "DO0002",
+        "DO0003",
+        "DO0004",
+        "FUSICE",
+        "MOVFAM",
+        "NDDEM2",
+        "NDDEMO",
+        "PAQINI",
+        "PR01H",
+        "PR01S",
+        "TRIDIS",
+        "TVBACH",
+        "TVBAFU",
+        "TVBALI",
+        "TVCOMU",
+        "UTX00",
+        "UTX0Y",
+        "UTX1H",
+        "UTX1I",
+        "UTX2A",
+        "UTX2C",
+        "UTX2J",
+        "UTX2N",
+        "UTX2P",
+        "UTX2Q",
+        "UTX2R",
+        "UTX32",
+        "UTX37",
+        "UTX38",
+        "UTX4I",
+        "UTX4N",
+        "UTX4P",
+        "UTX5M",
+        "UTX5V",
+        "UTX6C",
+        "UTX7T",
+        "UTX7U",
+        "UTX90",
+        "UTXAH",
+        "UTXC7",
+        "UTXC8",
+        "UTXCL",
+        "UTXCN",
+        "UTXCP",
+        "UTXD0",
+        "UTXD3",
+        "UTXHA",
+        "UTXHB",
+        "UTXHC",
+        "UTXHD",
+        "UTXIC",
+        "UTXIE",
+        "UTXIF",
+        "UTXIH",
+        "UTXII",
+        "UTXIR",
+        "UTXIS"
+      ],
+      "BlackOutU7D": false,
+      "links": [
+        {
+          "rel": "start-over",
+          "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182873&svc=startover",
+          "state": null
+        },
+        {
+          "rel": "catch-up",
+          "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182873&svc=cutv",
+          "state": null
+        },
+        {
+          "rel": "npvr",
+          "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182873&svc=npvr",
+          "state": null
+        }
+      ]
+    }
+  ],
+  "LenguajeSignos": false,
+  "Upselling": "PKS--1",
+  "audioDescription": {
+    "available": false,
+    "audios": []
+  },
+  "Trailers": [],
+  "Eventos": [],
+  "BingeWatchingAction": "none",
+  "StreamTag": false,
+  "VodItems": [],
+  "OpcionesFavoritos": [
+    {
+      "Id": 62244130,
+      "Family": "tv",
+      "Texto": "TEMPORADA"
+    }
+  ],
+  "links": [
+    {
+      "rel": "mas_info",
+      "href": "https://estatico.emisiondof6.com/ficha/el-intermedio-t20/episodio-624/?tipo=E&id=4236939"
+    },
+    {
+      "rel": "ver_ahora",
+      "href": "https://ver.movistarplus.es/ficha/el-intermedio-t20/episodio-624/?id=4236939"
+    },
+    {
+      "rel": "shows",
+      "href": "/movistarplus/contents/4236939/shows"
+    },
+    {
+      "rel": "alternate",
+      "href": "appmovistar://movistarplus.es/ficha?id=4236939&referrer=api",
+      "class": "entryPoint",
+      "hints": {
+        "devices": [
+          "android.cell",
+          "iphone",
+          "amazon.tv"
+        ]
+      }
+    },
+    {
+      "rel": "alternate",
+      "href": "https://wl.movistarplus.es/ficha/?id=4236939&referrer=api",
+      "class": "entryPoint",
+      "hints": {
+        "devices": [
+          "web"
+        ]
+      }
+    },
+    {
+      "rel": "alternate",
+      "href": "https://wl.movistarplus.es/play?id=4236939&referrer=api",
+      "class": "play",
+      "hints": {
+        "devices": [
+          "web"
+        ]
+      }
+    },
+    {
+      "rel": "untrack2",
+      "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/users/bookmarks/rec/63182873",
+      "hints": {
+        "allow": [
+          "DELETE"
+        ],
+        "auth-req": [
+          {
+            "scheme": "asmgr"
+          }
+        ]
+      }
+    },
+    {
+      "rel": "self",
+      "href": "https://ottcache.dof6.com/movistarplus/webplayer/contents/63182873/details?mediaType=FOTOV&profile=OTT&mode=VODREJILLA&channels=SEXTA&version=8&tlsStream=true&mdrm=true&catalog=events&showNonRated=true",
+      "id": 63182873
+    }
+  ]
+}
