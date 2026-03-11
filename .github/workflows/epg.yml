@@ -1,84 +1,48 @@
 name: EPG generieren
 
 on:
-  workflow_dispatch:  # Nur manuell
+  workflow_dispatch:
 
 jobs:
   generate-epg:
     runs-on: ubuntu-latest
     steps:
-      - name: 📦 Repository auschecken
+      - name: Repository auschecken
         uses: actions/checkout@v3
       
-      - name: 📁 EPG-Datei direkt erstellen
+      - name: EPG-Datei erstellen
         run: |
-          echo "🚀 Erstelle EPG-Datei..."
-          
-          # Verzeichnis anlegen
           mkdir -p public/epg/de
           
-          # XML-Datei mit echten Daten erstellen
+          # XML-Datei erstellen
           cat > public/epg/de/ard.de.xml << 'EOF'
-<?xml version="1.0" encoding="UTF-8"?>
-<tv>
-  <channel id="ard.de">
-    <display-name>ARD</display-name>
-    <display-name>Das Erste</display-name>
-  </channel>
-  
-  <programme channel="ard.de" start="20260311200000 +0100" stop="20260311201500 +0100">
-    <title>Tagesschau</title>
-    <desc>Die Nachrichten des Tages</desc>
-    <category>Nachrichten</category>
-  </programme>
-  
-  <programme channel="ard.de" start="20260311201500 +0100" stop="20260311204500 +0100">
-    <title>Brisant</title>
-    <desc>Das Boulevard-Magazin</desc>
-    <category>Unterhaltung</category>
-  </programme>
-  
-  <programme channel="ard.de" start="20260311204500 +0100" stop="20260311211500 +0100">
-    <title>Plusminus</title>
-    <desc>Wirtschaftsmagazin</desc>
-    <category>Wirtschaft</category>
-  </programme>
-  
-  <programme channel="ard.de" start="20260311211500 +0100" stop="20260311221500 +0100">
-    <title>Polizeiruf 110</title>
-    <desc>Tatort-Krimi</desc>
-    <category>Krimi</category>
-  </programme>
-</tv>
-EOF
-
-          echo "✅ XML-Datei erstellt"
+          <?xml version="1.0" encoding="UTF-8"?>
+          <tv>
+            <channel id="ard.de">
+              <display-name>ARD</display-name>
+            </channel>
+            <programme channel="ard.de" start="20260311200000 +0100" stop="20260311201500 +0100">
+              <title>Tagesschau</title>
+            </programme>
+          </tv>
+          EOF
           
           # Index.json erstellen
           cat > public/epg/de/index.json << 'EOF'
-{
-  "lastUpdate": "2026-03-11T20:00:00Z",
-  "country": "Deutschland",
-  "countryCode": "de",
-  "totalChannels": 1,
-  "channels": [
-    {
-      "channel": "ard.de",
-      "name": "ARD",
-      "file": "ard.de.xml"
-    }
-  ]
-}
-EOF
-
-          echo "✅ index.json erstellt"
-          
-          # Zeige die Dateien
-          echo ""
-          echo "📁 Erstellte Dateien:"
-          ls -la public/epg/de/
+          {
+            "lastUpdate": "2026-03-11T20:00:00Z",
+            "country": "Deutschland",
+            "totalChannels": 1,
+            "channels": [
+              {
+                "channel": "ard.de",
+                "file": "ard.de.xml"
+              }
+            ]
+          }
+          EOF
       
-      - name: 📤 Nach Cloudflare Pages deployen
+      - name: Nach Cloudflare Pages deployen
         uses: cloudflare/pages-action@v1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
