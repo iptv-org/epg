@@ -1,41 +1,95 @@
-name: EPG Weltweit
+name: EPG für Deutschland generieren
 
 on:
-  workflow_dispatch:
+  schedule:
+    # Läuft täglich um 2:00 Uhr UTC
+    - cron: '0 2 * * *'
+  workflow_dispatch:  # Manueller Start
 
 jobs:
-  generate-epg:
+  generate-german-epg:
     runs-on: ubuntu-latest
+    timeout-minutes: 60
+    
     steps:
-      - name: Repository auschecken
+      - name: 📦 Repository auschecken
         uses: actions/checkout@v3
       
-      - name: EPG für ALLE Länder erstellen
-        run: |
-          mkdir -p public/epg
-          
-          # Länderliste (nur 3 zum Testen!)
-          cat > public/epg/laender.txt << 'EOF'
-          de it fr
-          EOF
-          
-          # ERSTE XML-Datei für Deutschland
-          cat > public/epg/de.xml << 'EOF'
-          <?xml version="1.0" encoding="UTF-8"?>
-          <tv>
-            <channel id="de.1">
-              <display-name>DE 1</display-name>
-            </channel>
-          </tv>
-          EOF
-          
-          ls -la public/epg/
+      - name: 🔧 Node.js einrichten
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
       
-      - name: Nach Cloudflare Pages deployen
+      - name: 📡 iptv-org/epg klonen
+        run: |
+          echo "📡 Klone iptv-org/epg..."
+          git clone --depth 1 https://github.com/iptv-org/epg.git
+          cd epg
+          echo "📦 Installiere Abhängigkeiten..."
+          npm install
+          echo "✅ iptv-org/epg bereit"
+      
+      - name: 🚀 EPG für ARD testen
+        run: |
+          echo "🚀 Teste EPG-Generierung für ARD..."
+          
+          # Ausgabeverzeichnis erstellen
+          mkdir -p public/epg/de
+          
+          cd epg
+          
+          # Nur ARD testen
+          echo "Generiere EPG für ard.de..."
+          npm run grab --- --site=ard.de --output=../public/epg/de/ard.de.xml --days=1
+          
+          cd ..
+          
+          echo "✅ Test abgeschlossen"
+      
+      - name: 📊 Index-Datei erstellen
+        run: |
+          cd public/epg/de
+          
+          # Prüfe ob Datei existiert
+          if [ -f "ard.de.xml" ]; then
+            echo "✅ ard.de.xml gefunden"
+            
+            # Index.json erstellen (ALLE IN EINER ZEILE!)
+            echo "{\"lastUpdate\":\"$(date -Iseconds)\",\"country\":\"Deutschland\",\"countryCode\":\"de\",\"totalChannels\":1,\"channels\":[{\"channel\":\"ard.de\",\"file\":\"ard.de.xml\"}]}" > index.json
+            
+            echo "✅ index.json erstellt"
+          else
+            echo "⚠️ Keine XML-Datei gefunden"
+            exit 1
+          fi
+      
+      - name: 📋 Generierte Dateien anzeigen
+        run: |
+          echo "📁 Inhalt von public/epg/de/:"
+          ls -la public/epg/de/
+          
+          echo ""
+          echo "📄 Inhalt von index.json:"
+          cat public/epg/de/index.json
+      
+      - name: 📤 Nach Cloudflare Pages deployen
         uses: cloudflare/pages-action@v1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: "epg"
+          projectName: "iptv-epg-data"
           directory: public
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: ✅ Abschluss
+        run: |
+          echo ""
+          echo "================================================"
+          echo "✅ EPG-Test erfolgreich abgeschlossen!"
+          echo "================================================"
+          echo "📊 Verfügbar unter:"
+          echo "   • https://iptv-epg-data.pages.dev/epg/de/ard.de.xml"
+          echo "   • https://iptv-epg-data.pages.dev/epg/de/index.json"
+          echo ""
+          echo "⏰ Nächster Schritt: Auf alle Sender erweitern"
+          echo "================================================"
