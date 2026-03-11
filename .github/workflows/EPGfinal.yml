@@ -1,4 +1,4 @@
-name: EPG Final
+name: EPG Weltweit
 
 on:
   workflow_dispatch:
@@ -10,41 +10,65 @@ jobs:
       - name: Repository auschecken
         uses: actions/checkout@v3
       
-      - name: EPG-Dateien für alle Länder erstellen
+      - name: EPG XML-Dateien für alle Länder erstellen
         run: |
           # Verzeichnis anlegen
           mkdir -p public/epg
           
-          # Alle Ländercodes (Ihre bestehende Liste)
+          # Ländercodes (ISO 3166-1)
           COUNTRIES="de at ch fr it es pt nl be lu gb ie dk se no fi is pl cz sk hu ro bg rs hr si ba me mk al gr tr cy ee lv lt by ua md ru lu mt ad li gi gg im je us ca mx gt hn sv ni cr pa bz ar bo br cl co ec gy pe py sr uy ve dz ao bj bw bf bi cm cv cf td km cd cg ci dj eg gq er sz et ga gm gh gn gw ke ls lr ly mg mw ml mr mu ma mz na ne ng rw st sn sc sl so za ss sd tz tg tn ug zm zw af am az bh bd bt bn kh cn ge in id ir iq il jp jo kz kw kg la lb my mv mn mm np om pk ps ph qa sa sg kr lk sy tw tj th tl tr tm ae uz vn ye hk mo au fj ki mh fm nr nz pw pg ws sb to tv vu"
           
-          # Für jedes Land eine EPG-XML-Datei erstellen
+          # Für jedes Land eine XML-Datei mit EPG-Daten
           for country in $COUNTRIES; do
-            cat > public/epg/${country}.xml << EOF
+            cat > public/epg/$country.xml << EOF
 <?xml version="1.0" encoding="UTF-8"?>
-<tv>
-  <channel id="${country}1">
+<tv generator-info-name="EPG Generator">
+  <channel id="$country.sender1">
     <display-name>${country^^} 1</display-name>
+    <icon src="https://example.com/icon-$country.png" />
   </channel>
-  <programme channel="${country}1" start="$(date -u +'%Y%m%d%H%M%S') +0000" stop="$(date -u -d '+1 hour' +'%Y%m%d%H%M%S') +0000">
-    <title>Programm ${country^^}</title>
+  <channel id="$country.sender2">
+    <display-name>${country^^} 2</display-name>
+    <icon src="https://example.com/icon2-$country.png" />
+  </channel>
+  <programme channel="$country.sender1" start="$(date -u +'%Y%m%d%H%M%S') +0000" stop="$(date -u -d '+30 minutes' +'%Y%m%d%H%M%S') +0000">
+    <title>Nachrichten ${country^^}</title>
+    <desc>Aktuelle Nachrichten aus ${country^^}</desc>
+    <category>News</category>
+  </programme>
+  <programme channel="$country.sender1" start="$(date -u -d '+30 minutes' +'%Y%m%d%H%M%S') +0000" stop="$(date -u -d '+2 hours' +'%Y%m%d%H%M%S') +0000">
+    <title>Hauptprogramm</title>
+    <desc>Abendprogramm aus ${country^^}</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="$country.sender2" start="$(date -u +'%Y%m%d%H%M%S') +0000" stop="$(date -u -d '+45 minutes' +'%Y%m%d%H%M%S') +0000">
+    <title>Sport ${country^^}</title>
+    <desc>Aktuelle Sportberichte</desc>
+    <category>Sports</category>
   </programme>
 </tv>
 EOF
-            echo "✅ ${country}.xml erstellt"
+            echo "✅ $country.xml erstellt mit EPG-Daten"
           done
           
-          # Index-Datei für die Übersicht
+          # Index-Datei für Übersicht
           cat > public/epg/index.json << EOF
-          {
-            "lastUpdate": "$(date -Iseconds)",
-            "countries": [$(for c in $COUNTRIES; do echo -n "\"$c\","; done | sed 's/,$//')]
-          }
-          EOF
+{
+  "lastUpdate": "$(date -Iseconds)",
+  "totalCountries": $(echo $COUNTRIES | wc -w),
+  "countries": [
+EOF
+          first=1
+          for country in $COUNTRIES; do
+            if [ $first -eq 1 ]; then first=0; else echo "," >> public/epg/index.json; fi
+            echo "    {\"code\":\"$country\",\"file\":\"$country.xml\"}" >> public/epg/index.json
+          done
+          echo "  ]" >> public/epg/index.json
+          echo "}" >> public/epg/index.json
           
           echo ""
-          echo "📊 Erstellte Dateien im Überblick:"
-          ls -la public/epg/ | head -20
+          echo "✅ Fertig: $(echo $COUNTRIES | wc -w) XML-Dateien erstellt"
+          ls -la public/epg/ | head -10
       
       - name: Nach Cloudflare Pages deployen
         uses: cloudflare/pages-action@v1
