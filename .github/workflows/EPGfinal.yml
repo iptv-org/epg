@@ -1,0 +1,85 @@
+name: EPG FINAL
+
+on:
+  workflow_dispatch:
+
+jobs:
+  generate-epg:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v3
+      
+      - name: EPG für ALLE Länder erstellen
+        run: |
+          # Verzeichnis anlegen
+          mkdir -p public/epg
+          
+          # 🌍 ALLE LÄNDER DER WELT
+          cat > public/epg/laender.txt << 'EOF'
+          de at ch fr it es pt nl be lu gb ie dk se no fi is pl cz sk hu ro bg rs hr si ba me mk al gr tr cy ee lv lt by ua md ru lu mt ad li gi gg im je us ca mx gt hn sv ni cr pa bz ar bo br cl co ec gy pe py sr uy ve dz ao bj bw bf bi cm cv cf td km cd cg ci dj eg gq er sz et ga gm gh gn gw ke ls lr ly mg mw ml mr mu ma mz na ne ng rw st sn sc sl so za ss sd tz tg tn ug zm zw af am az bh bd bt bn kh cn ge in id ir iq il jp jo kz kw kg la lb my mv mn mm np om pk ps ph qa sa sg kr lk sy tw tj th tl tr tm ae uz vn ye hk mo au fj ki mh fm nr nz pw pg ws sb to tv vu
+          EOF
+          
+          # Ländercodes einlesen
+          COUNTRIES=$(cat public/epg/laender.txt)
+          
+          # Für jedes Land eine EPG-XML-Datei erstellen
+          for country in $COUNTRIES; do
+            cat > public/epg/$country.xml << EOF
+<?xml version="1.0" encoding="UTF-8"?>
+<tv>
+  <channel id="$country.1">
+    <display-name>${country^^} 1</display-name>
+  </channel>
+  <channel id="$country.2">
+    <display-name>${country^^} 2</display-name>
+  </channel>
+  <programme channel="$country.1" start="$(date -u +'%Y%m%d%H%M%S') +0000" stop="$(date -u -d '+1 hour' +'%Y%m%d%H%M%S') +0000">
+    <title>Programm 1</title>
+    <desc>Erstes Programm aus ${country^^}</desc>
+  </programme>
+  <programme channel="$country.2" start="$(date -u +'%Y%m%d%H%M%S') +0000" stop="$(date -u -d '+30 minutes' +'%Y%m%d%H%M%S') +0000">
+    <title>Programm 2</title>
+    <desc>Zweites Programm aus ${country^^}</desc>
+  </programme>
+</tv>
+EOF
+            echo "✅ $country.xml erstellt"
+          done
+          
+          # Index.json mit allen Ländern erstellen
+          cat > public/epg/index.json << EOF
+          {
+            "lastUpdate": "$(date -Iseconds)",
+            "totalCountries": $(echo $COUNTRIES | wc -w),
+            "countries": [
+          EOF
+          
+          first=1
+          for country in $COUNTRIES; do
+            if [ $first -eq 1 ]; then
+              first=0
+            else
+              echo "," >> public/epg/index.json
+            fi
+            echo "    {\"code\":\"$country\",\"file\":\"$country.xml\"}" >> public/epg/index.json
+          done
+          
+          echo "  ]" >> public/epg/index.json
+          echo "}" >> public/epg/index.json
+          
+          echo ""
+          echo "================================================"
+          echo "✅ EPG für $(echo $COUNTRIES | wc -w) Länder erstellt!"
+          echo "================================================"
+          echo "📁 Erste 5 Dateien:"
+          ls -la public/epg/ | head -10
+      
+      - name: Nach Cloudflare Pages deployen
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: "epg"
+          directory: public
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
