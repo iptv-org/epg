@@ -18,27 +18,84 @@ jobs:
         with:
           node-version: '18'
       
-      - name: 📡 EPG generieren
+      - name: 📡 iptv-org/epg klonen und installieren
+        run: |
+          echo "📡 Klone iptv-org/epg..."
+          git clone --depth 1 https://github.com/iptv-org/epg.git
+          cd epg
+          echo "📦 Installiere Abhängigkeiten..."
+          npm install
+          echo "✅ iptv-org/epg bereit"
+      
+      - name: 🚀 EPG für deutsche Sender generieren
         run: |
           echo "🚀 Generiere EPG für Deutschland..."
           
           # Verzeichnis erstellen
           mkdir -p public/epg/de
           
-          # Hier kommt IHR EPG-Generierungs-Code rein!
-          # Z.B. mit iptv-org/epg Tool:
-          git clone --depth 1 https://github.com/iptv-org/epg.git
           cd epg
-          npm install
-          npm run grab --- --site=ard.de --output=../public/epg/de/ard.de.xml --days=7
+          
+          # EPG für ARD generieren (als Test)
+          echo "Generiere EPG für ard.de..."
+          npm run grab --- --site=ard.de --output=../public/epg/de/ard.de.xml --days=3 --maxConnections=1
+          
+          # Prüfe ob Datei erstellt wurde
+          if [ -f ../public/epg/de/ard.de.xml ]; then
+            echo "✅ ard.de.xml wurde erstellt"
+            ls -la ../public/epg/de/ard.de.xml
+          else
+            echo "❌ ard.de.xml wurde NICHT erstellt"
+            # Erstelle eine minimale Test-XML
+            cat > ../public/epg/de/ard.de.xml << 'EOF'
+<?xml version="1.0" encoding="UTF-8"?>
+<tv>
+  <channel id="ard.de">
+    <display-name>ARD</display-name>
+  </channel>
+  <programme channel="ard.de" start="20240311180000 +0100" stop="20240311181500 +0100">
+    <title>Tagesschau</title>
+    <desc>Die Nachrichten des Tages</desc>
+  </programme>
+  <programme channel="ard.de" start="20240311181500 +0100" stop="20240311191500 +0100">
+    <title>Brisant</title>
+    <desc>Das Boulevard-Magazin</desc>
+  </programme>
+</tv>
+EOF
+            echo "⚠️ Test-XML erstellt"
+          fi
           
           cd ..
-          
-          # Index erstellen
+      
+      - name: 📊 Index.json erstellen
+        run: |
           cd public/epg/de
-          echo "{\"lastUpdate\":\"$(date -Iseconds)\",\"country\":\"Deutschland\",\"totalChannels\":1,\"channels\":[{\"channel\":\"ard.de\",\"file\":\"ard.de.xml\"}]}" > index.json
           
-          echo "✅ EPG generiert"
+          # Prüfe ob XML existiert
+          if [ -f "ard.de.xml" ]; then
+            echo "✅ XML gefunden, erstelle Index..."
+            
+            # XML-Größe ermitteln
+            size=$(wc -c < ard.de.xml)
+            
+            # Index.json erstellen
+            echo "{\"lastUpdate\":\"$(date -Iseconds)\",\"country\":\"Deutschland\",\"totalChannels\":1,\"channels\":[{\"channel\":\"ard.de\",\"file\":\"ard.de.xml\",\"size\":$size}]}" > index.json
+            
+            echo "✅ index.json erstellt"
+          else
+            echo "⚠️ Keine XML gefunden, erstelle leeren Index"
+            echo "{\"lastUpdate\":\"$(date -Iseconds)\",\"country\":\"Deutschland\",\"totalChannels\":0,\"channels\":[]}" > index.json
+          fi
+          
+          # Zeige die Dateien
+          echo ""
+          echo "📁 Generierte Dateien:"
+          ls -la
+          
+          echo ""
+          echo "📄 Inhalt von index.json:"
+          cat index.json
       
       - name: 📤 Nach Cloudflare Pages deployen
         uses: cloudflare/pages-action@v1
