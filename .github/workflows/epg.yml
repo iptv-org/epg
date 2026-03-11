@@ -1,52 +1,208 @@
-name: EPG generieren
+name: EPG Weltweit generieren
 
 on:
-  workflow_dispatch:
+  schedule:
+    # Täglich um 2:00 UTC
+    - cron: '0 2 * * *'
+  workflow_dispatch:  # Manueller Start
 
 jobs:
-  generate-epg:
+  generate-worldwide-epg:
     runs-on: ubuntu-latest
+    timeout-minutes: 180  # 3 Stunden für alle Länder
+    
     steps:
-      - name: Repository auschecken
+      - name: 📦 Repository auschecken
         uses: actions/checkout@v3
       
-      - name: EPG-Datei erstellen
+      - name: 🔧 Node.js einrichten
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      
+      - name: 📡 iptv-org/epg klonen
         run: |
-          mkdir -p public/epg/de
+          echo "📡 Klone iptv-org/epg..."
+          git clone --depth 1 https://github.com/iptv-org/epg.git
+          cd epg
+          echo "📦 Installiere Abhängigkeiten..."
+          npm install
+          echo "✅ iptv-org/epg bereit"
+      
+      - name: 🌍 EPG für ALLE Länder generieren
+        run: |
+          echo "🚀 Starte EPG-Generierung für ALLE Länder..."
           
-          # XML-Datei erstellen
-          cat > public/epg/de/ard.de.xml << 'EOF'
+          # Ausgabeverzeichnis erstellen
+          mkdir -p public/epg
+          
+          cd epg
+          
+          # ALLE Länder aus der iptv-org Datenbank
+          # Quelle: https://github.com/iptv-org/epg/tree/master/sites
+          LAENDER=(
+            # Westeuropa
+            "de" "at" "ch" "fr" "it" "es" "pt" "nl" "be" "lu" "gb" "ie"
+            "dk" "se" "no" "fi" "is"
+            
+            # Osteuropa
+            "pl" "cz" "sk" "hu" "ro" "bg" "rs" "hr" "si" "ba" "me" "mk" "al"
+            "gr" "tr" "cy" "ee" "lv" "lt" "by" "ua" "md" "ru"
+            
+            # Nordamerika
+            "us" "ca" "mx" "gt" "hn" "sv" "ni" "cr" "pa" "bz"
+            
+            # Südamerika
+            "ar" "bo" "br" "cl" "co" "ec" "gy" "pe" "py" "sr" "uy" "ve"
+            
+            # Afrika
+            "dz" "ao" "bj" "bw" "bf" "bi" "cm" "cv" "cf" "td" "km" "cd"
+            "cg" "ci" "dj" "eg" "gq" "er" "sz" "et" "ga" "gm" "gh" "gn"
+            "gw" "ke" "ls" "lr" "ly" "mg" "mw" "ml" "mr" "mu" "ma" "mz"
+            "na" "ne" "ng" "rw" "st" "sn" "sc" "sl" "so" "za" "ss" "sd"
+            "tz" "tg" "tn" "ug" "zm" "zw"
+            
+            # Asien
+            "af" "am" "az" "bh" "bd" "bt" "bn" "kh" "cn" "ge" "in" "id"
+            "ir" "iq" "il" "jp" "jo" "kz" "kw" "kg" "la" "lb" "my" "mv"
+            "mn" "mm" "np" "kp" "om" "pk" "ps" "ph" "qa" "sa" "sg" "kr"
+            "lk" "sy" "tw" "tj" "th" "tl" "tm" "ae" "uz" "vn" "ye"
+            
+            # Ozeanien
+            "au" "fj" "ki" "mh" "fm" "nr" "nz" "pw" "pg" "ws" "sb" "to" "tv" "vu"
+          )
+          
+          gesamt=${#LAENDER[@]}
+          aktuell=0
+          erfolgreich=0
+          
+          echo "================================================"
+          echo "📊 Generiere EPG für $gesamt Länder"
+          echo "================================================"
+          
+          # Für jedes Land EPG generieren
+          for land in "${LAENDER[@]}"; do
+            aktuell=$((aktuell + 1))
+            echo ""
+            echo "------------------------------------------------"
+            echo "[$aktuell/$gesamt] Generiere EPG für: $land"
+            echo "------------------------------------------------"
+            
+            # EPG für dieses Land generieren (alle verfügbaren Sender)
+            if npm run grab --- --site="$land" --output="../public/epg/$land.xml" --days=7 --maxConnections=5 --timeout=60000; then
+              echo "✅ Erfolg: $land"
+              erfolgreich=$((erfolgreich + 1))
+              
+              # Zeige Dateigröße
+              if [ -f "../public/epg/$land.xml" ]; then
+                size=$(wc -c < "../public/epg/$land.xml")
+                echo "   📦 Dateigröße: $size Bytes"
+                
+                # Zeige Anzahl der Programme
+                prog_count=$(grep -c "<programme" "../public/epg/$land.xml" 2>/dev/null || echo "0")
+                echo "   📺 Programme: $prog_count"
+              fi
+            else
+              echo "⚠️ Fehler bei $land - überspringe"
+            fi
+            
+            # Kleine Pause zwischen den Ländern
+            sleep 3
+          done
+          
+          cd ..
+          
+          echo ""
+          echo "================================================"
+          echo "📊 Generierung abgeschlossen:"
+          echo "   ✅ Erfolgreich: $erfolgreich von $gesamt Ländern"
+          echo "   📁 Verzeichnis: public/epg/"
+          echo "================================================"
+      
+      - name: 📊 Gesamt-EPG und Index erstellen
+        run: |
+          cd public/epg
+          
+          # Alle Länder-XMLs zu einer Gesamtdatei zusammenführen
+          echo "🔄 Erstelle weltweites Gesamt-EPG..."
+          
+          # XML-Header
+          cat > weltweit.xml << 'EOF'
           <?xml version="1.0" encoding="UTF-8"?>
-          <tv>
-            <channel id="ard.de">
-              <display-name>ARD</display-name>
-            </channel>
-            <programme channel="ard.de" start="20260311200000 +0100" stop="20260311201500 +0100">
-              <title>Tagesschau</title>
-            </programme>
-          </tv>
+          <tv generator-info-name="IPTV-EPG-Worldwide" generator-info-url="https://github.com/iptv-org/epg">
           EOF
           
-          # Index.json erstellen
-          cat > public/epg/de/index.json << 'EOF'
+          # Alle Länder-XMLs durchgehen
+          programme_gesamt=0
+          for file in *.xml; do
+            if [ "$file" != "weltweit.xml" ] && [ "$file" != "index.json" ]; then
+              echo "   ➕ Füge hinzu: $file"
+              # Extrahiere channel und programme (ohne Header/Footer)
+              grep -v "<?xml" "$file" | grep -v "</tv>" >> weltweit.xml || true
+              
+              prog_count=$(grep -c "<programme" "$file" 2>/dev/null || echo "0")
+              programme_gesamt=$((programme_gesamt + prog_count))
+            fi
+          done
+          
+          # XML-Footer
+          echo "</tv>" >> weltweit.xml
+          
+          echo "✅ weltweit.xml erstellt"
+          echo "   📺 Programme gesamt: $programme_gesamt"
+          
+          # Index.json für alle Länder erstellen
+          echo "🔄 Erstelle index.json..."
+          
+          cat > index.json << 'EOF'
           {
-            "lastUpdate": "2026-03-11T20:00:00Z",
-            "country": "Deutschland",
-            "totalChannels": 1,
-            "channels": [
-              {
-                "channel": "ard.de",
-                "file": "ard.de.xml"
-              }
+            "lastUpdate": "$(date -Iseconds)",
+            "totalCountries": $erfolgreich,
+            "totalProgrammes": $programme_gesamt,
+            "countries": [
+          EOF
+          
+          # Länder auflisten
+          first=1
+          for file in *.xml; do
+            if [ "$file" != "weltweit.xml" ] && [ "$file" != "index.json" ]; then
+              if [ "$first" -eq 1 ]; then
+                first=0
+              else
+                echo "," >> index.json
+              fi
+              land=$(basename "$file" .xml)
+              size=$(wc -c < "$file" 2>/dev/null || echo "0")
+              prog=$(grep -c "<programme" "$file" 2>/dev/null || echo "0")
+              echo "    {\"country\":\"$land\",\"file\":\"$file\",\"size\":$size,\"programmes\":$prog}" >> index.json
+            fi
+          done
+          
+          cat >> index.json << 'EOF'
+          
             ]
           }
           EOF
+          
+          echo "✅ index.json erstellt"
+          
+          # Zusammenfassung
+          echo ""
+          echo "================================================"
+          echo "📊 WELTWEITE EPG ZUSAMMENFASSUNG:"
+          echo "================================================"
+          echo "   📁 Verzeichnis: $(pwd)"
+          echo "   📄 weltweit.xml: $(wc -c < weltweit.xml) Bytes"
+          echo "   📺 Programme gesamt: $programme_gesamt"
+          echo "   🌍 Länder: $erfolgreich"
+          ls -la *.xml | head -20
+          echo "================================================"
       
-      - name: Nach Cloudflare Pages deployen
+      - name: 📤 Nach Cloudflare Pages deployen
         uses: cloudflare/pages-action@v1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: "epg"
+          projectName: "epg"  # Ihr Projektname
           directory: public
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
