@@ -2,7 +2,7 @@ name: EPG Weltweit generieren
 
 on:
   schedule:
-    - cron: '0 2 * * *'  # Täglich um 2 Uhr UTC
+    - cron: '0 2 * * *'
   workflow_dispatch:
 
 jobs:
@@ -28,17 +28,13 @@ jobs:
           npm install
           echo "✅ iptv-org/epg bereit"
       
-      - name: 🌍 EPG für TOP 20 Länder generieren
+      - name: 🌍 EPG für 20 Länder generieren
         run: |
-          echo "🚀 Starte EPG-Generierung für TOP 20 Länder..."
-          
-          # Ausgabeverzeichnis erstellen
+          echo "🚀 Starte EPG-Generierung..."
           mkdir -p public/epg
-          
           cd epg
           
-          # Liste der TOP 20 Länder mit ihren wichtigsten Sendern
-          # Format: land|sender1,sender2,sender3
+          # Länder mit ihren Sendern
           COUNTRIES=(
             "de|ard.de,zdf.de,rtl.de"
             "at|orf.at"
@@ -62,76 +58,65 @@ jobs:
             "ru|rtr.ru"
           )
           
-          # Für jedes Land EPG generieren
           for country_entry in "${COUNTRIES[@]}"; do
-            # Land und Sender trennen
             IFS='|' read -r country senders <<< "$country_entry"
             
             echo ""
-            echo "------------------------------------------------"
             echo "🌍 Generiere EPG für: $country"
-            echo "------------------------------------------------"
             
-            # Temporäre Datei für dieses Land
             temp_file="../public/epg/$country.tmp"
             final_file="../public/epg/$country.xml"
             
-            # Leere Datei erstellen
             > "$temp_file"
             
-            # Für jeden Sender EPG holen
             IFS=',' read -ra sender_list <<< "$senders"
             for sender in "${sender_list[@]}"; do
-              echo "   📺 Sender: $sender"
-              
-              # EPG für diesen Sender generieren
+              echo "   📺 $sender"
               if npm run grab --- --site=$sender --output=sender_temp.xml --days=3 --maxConnections=2 --timeout=30000; then
                 if [ -f sender_temp.xml ]; then
-                  # XML-Inhalt anhängen (ohne Header/Footer)
                   grep -v "<?xml" sender_temp.xml | grep -v "</tv>" >> "$temp_file" || true
                   rm sender_temp.xml
-                  echo "      ✅ Erfolg"
                 fi
-              else
-                echo "      ⚠️ Fehler - überspringe"
               fi
             done
             
-            # Finale XML erstellen
             if [ -s "$temp_file" ]; then
               echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?><tv>" > "$final_file"
               cat "$temp_file" >> "$final_file"
               echo "</tv>" >> "$final_file"
               rm "$temp_file"
-              
-              # Größe anzeigen
-              size=$(wc -c < "$final_file")
-              echo "✅ $country: $size Bytes"
+              echo "✅ $country: $(wc -c < $final_file) Bytes"
             else
-              # Platzhalter erstellen, falls keine Daten
-              echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?><tv>" > "$final_file"
-              echo "  <channel id=\"$country\"><display-name>$country</display-name></channel>" >> "$final_file"
-              echo "  <programme channel=\"$country\" start=\"$(date -u +'%Y%m%d%H%M%S') +0000\" stop=\"$(date -u -d '+1 day' +'%Y%m%d%H%M%S') +0000\">" >> "$final_file"
-              echo "    <title>EPG für $country</title>" >> "$final_file"
-              echo "  </programme>" >> "$final_file"
-              echo "</tv>" >> "$final_file"
-              echo "⚠️ $country: Platzhalter erstellt"
+              # Platzhalter erstellen
+              cat > "$final_file" << EOF
+<?xml version="1.0" encoding="UTF-8"?>
+<tv>
+  <channel id="$country"><display-name>$country</display-name></channel>
+  <programme channel="$country" start="$(date -u +'%Y%m%d%H%M%S') +0000" stop="$(date -u -d '+1 day' +'%Y%m%d%H%M%S') +0000">
+    <title>EPG für $country</title>
+  </programme>
+</tv>
+EOF
+              [ -f "$temp_file" ] && rm "$temp_file"
+              echo "⚠️ $country: Platzhalter"
             fi
-            
-            # Kurze Pause
-            sleep 2
+            sleep 1
           done
           
           cd ..
+      
+      - name: 🗑️ Temporäre Dateien löschen
+        run: |
+          rm -f public/epg/*.tmp
+          echo "✅ Temporäre Dateien gelöscht"
       
       - name: 📊 Index.json erstellen
         run: |
           cd public/epg
           
-          # JSON-Array für Länder erstellen
           echo "{" > index.json
           echo "  \"lastUpdate\": \"$(date -Iseconds)\"," >> index.json
-          echo "  \"totalCountries\": $(ls *.xml 2>/dev/null | wc -l)," >> index.json
+          echo "  \"totalCountries\": $(ls *.xml | wc -l)," >> index.json
           echo "  \"countries\": [" >> index.json
           
           first=1
@@ -149,13 +134,12 @@ jobs:
           echo "  ]" >> index.json
           echo "}" >> index.json
           
-          echo "✅ index.json erstellt"
-          echo "📊 Gefundene Länder: $(ls *.xml | wc -l)"
+          echo "✅ index.json mit $(ls *.xml | wc -l) Ländern erstellt"
       
       - name: 📋 Dateien anzeigen
         run: |
-          echo "📁 Generierte EPG-Dateien:"
-          ls -la public/epg/ | head -10
+          echo "📁 Fertige EPG-Dateien:"
+          ls -la public/epg/*.xml | head -10
           
           echo ""
           echo "📄 index.json:"
@@ -169,17 +153,3 @@ jobs:
           projectName: "epg"
           directory: public
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-      
-      - name: ✅ Abschluss
-        run: |
-          echo ""
-          echo "================================================"
-          echo "✅ EPG-Weltweit Update abgeschlossen!"
-          echo "================================================"
-          echo "📊 Verfügbar unter:"
-          echo "   • https://epg.pages.dev/epg/index.json"
-          echo "   • https://epg.pages.dev/epg/de.xml"
-          echo "   • https://epg.pages.dev/epg/it.xml"
-          echo "   • https://epg.pages.dev/epg/fr.xml"
-          echo "   • ... und 20+ weitere Länder"
-          echo "================================================"
