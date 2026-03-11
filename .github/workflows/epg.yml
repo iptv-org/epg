@@ -37,11 +37,11 @@ jobs:
           
           cd epg
           
-          # 📋 ALLE LÄNDER DER WELT - ALS EINE ZEILE (keine Zeilenumbrüche!)
-          ALL_COUNTRIES="de at ch fr it es pt nl be lu gb ie dk se no fi is pl cz sk hu ro bg rs hr si ba me mk al gr tr cy ee lv lt by ua md ru lu mt ad li gi gg im je us ca mx gt hn sv ni cr pa bz ar bo br cl co ec gy pe py sr uy ve dz ao bj bw bf bi cm cv cf td km cd cg ci dj eg gq er sz et ga gm gh gn gw ke ls lr ly mg mw ml mr mu ma mz na ne ng rw st sn sc sl so za ss sd tz tg tn ug zm zw af am az bh bd bt bn kh cn ge in id ir iq il jp jo kz kw kg la lb my mv mn mm np om pk ps ph qa sa sg kr lk sy tw tj th tl tr tm ae uz vn ye hk mo au fj ki mh fm nr nz pw pg ws sb to tv vu"
+          # 📋 ALLE LÄNDER (folded multiline YAML)
+          ALL_COUNTRIES: >-
+            de at ch fr it es pt nl be lu gb ie dk se no fi is pl cz sk hu ro bg rs hr si ba me mk al gr tr cy ee lv lt by ua md ru mt ad li gi gg im je us ca mx gt hn sv ni cr pa bz ar bo br cl co ec gy pe py sr uy ve dz ao bj bw bf bi cm cv cf td km cd cg ci dj eg gq er sz et ga gm gh gn gw ke ls lr ly mg mw ml mr mu ma mz na ne ng rw st sn sc sl so za ss sd tz tg tn ug zm zw af am az bh bd bt bn kh cn ge in id ir iq il jp jo kz kw kg la lb my mv mn mm np om pk ps ph qa sa sg kr lk sy tw tj th tl tm ae uz vn ye hk mo au fj ki mh fm nr nz pw pg ws sb to tv vu
           
-          # In Array konvertieren
-          COUNTRIES_ARRAY=($ALL_COUNTRIES)
+          IFS=' ' read -r -a COUNTRIES_ARRAY <<< "$ALL_COUNTRIES"
           total=${#COUNTRIES_ARRAY[@]}
           current=0
           successful=0
@@ -58,7 +58,7 @@ jobs:
             echo "------------------------------------------------"
             
             # EPG für dieses Land generieren
-            if npm run grab --- --site=$country --output=../public/epg/$country.xml --days=3 --maxConnections=5 --timeout=60000; then
+            if npm run grab -- --site=$country --output=../public/epg/$country.xml --days=3 --maxConnections=5 --timeout=60000; then
               echo "✅ Erfolg: $country"
               successful=$((successful + 1))
               
@@ -72,19 +72,19 @@ jobs:
             else
               echo "⚠️ Fehler bei $country - erstelle Platzhalter"
               
-              # Platzhalter-XML erstellen
-              cat > ../public/epg/$country.xml << 'EOF'
-<?xml version="1.0" encoding="UTF-8"?>
+              # Platzhalter-XML mit printf (YAML-sicher)
+              printf '<?xml version="1.0" encoding="UTF-8"?>
 <tv>
-  <channel id="'"$country"'">
-    <display-name>'"${country^^}"'</display-name>
+  <channel id="%s">
+    <display-name>%s</display-name>
   </channel>
-  <programme channel="'"$country"'" start="'"$(date -u +'%Y%m%d%H%M%S')"' +0000" stop="'"$(date -u -d '+1 day' +'%Y%m%d%H%M%S')"' +0000">
-    <title>EPG für '"${country^^}"'</title>
+  <programme channel="%s" start="%s +0000" stop="%s +0000">
+    <title>EPG für %s</title>
     <desc>Programmdaten werden in Kürze verfügbar sein.</desc>
   </programme>
 </tv>
-EOF
+' "$country" "${country^^}" "$country" "$(date -u +'%Y%m%d%H%M%S')" "$(date -u -d '+1 day' +'%Y%m%d%H%M%S')" "${country^^}" > ../public/epg/$country.xml
+              
               echo "   📦 Platzhalter erstellt"
             fi
             
@@ -105,13 +105,11 @@ EOF
         run: |
           cd public/epg
           
-          # Alle XML-Dateien erfassen
-          cat > master-index.json << EOF
-          {
-            "lastUpdate": "$(date -Iseconds)",
-            "totalCountries": $(ls *.xml 2>/dev/null | wc -l),
-            "countries": [
-          EOF
+          # Alle XML-Dateien erfassen und JSON bauen
+          echo '{
+            "lastUpdate": "'$(date -Iseconds)'",
+            "totalCountries": '$(ls *.xml 2>/dev/null | wc -l)',
+            "countries": [' > master-index.json
           
           first=1
           for file in *.xml; do
@@ -128,8 +126,8 @@ EOF
             echo "    {\"code\":\"$country\",\"file\":\"$file\",\"size\":$size,\"programmes\":$programmes}" >> master-index.json
           done
           
-          echo "  ]" >> master-index.json
-          echo "}" >> master-index.json
+          echo '  ]
+          }' >> master-index.json
           
           echo "✅ master-index.json erstellt"
       
