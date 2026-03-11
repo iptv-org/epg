@@ -1,4 +1,4 @@
-name: EPG Simple
+name: EPG Weltweit
 
 on:
   workflow_dispatch:
@@ -10,62 +10,92 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       
-      - name: EPG für 3 Länder generieren
+      - name: EPG für ALLE Länder generieren
         run: |
           mkdir -p public/epg
           
-          # Deutschland
-          cat > public/epg/de.xml << 'EOF'
-          <?xml version="1.0" encoding="UTF-8"?>
-          <tv>
-            <channel id="ard.de">
-              <display-name>ARD</display-name>
-            </channel>
-            <programme channel="ard.de" start="20240311200000 +0100" stop="20240311201500 +0100">
-              <title>Tagesschau</title>
-            </programme>
-          </tv>
-          EOF
+          # 🌍 ALLE LÄNDER mit Platzhalter-EPG
+          countries=(
+            "de|Deutschland"
+            "at|Österreich"
+            "ch|Schweiz"
+            "fr|Frankreich"
+            "it|Italien"
+            "es|Spanien"
+            "pt|Portugal"
+            "nl|Niederlande"
+            "be|Belgien"
+            "gb|Großbritannien"
+            "ie|Irland"
+            "dk|Dänemark"
+            "se|Schweden"
+            "no|Norwegen"
+            "fi|Finnland"
+            "pl|Polen"
+            "cz|Tschechien"
+            "hu|Ungarn"
+            "ro|Rumänien"
+            "bg|Bulgarien"
+            "gr|Griechenland"
+            "tr|Türkei"
+            "ru|Russland"
+            "ua|Ukraine"
+            "us|USA"
+            "ca|Kanada"
+            "mx|Mexiko"
+            "br|Brasilien"
+            "ar|Argentinien"
+            "jp|Japan"
+            "cn|China"
+            "in|Indien"
+            "au|Australien"
+            "nz|Neuseeland"
+            "za|Südafrika"
+          )
           
-          # Italien
-          cat > public/epg/it.xml << 'EOF'
-          <?xml version="1.0" encoding="UTF-8"?>
-          <tv>
-            <channel id="rai1.it">
-              <display-name>RAI 1</display-name>
-            </channel>
-            <programme channel="rai1.it" start="20240311200000 +0100" stop="20240311203500 +0100">
-              <title>TG1</title>
-            </programme>
-          </tv>
-          EOF
+          # Für jedes Land eine EPG-Datei erstellen
+          for entry in "${countries[@]}"; do
+            IFS='|' read -r code name <<< "$entry"
+            
+            cat > public/epg/$code.xml << EOF
+<?xml version="1.0" encoding="UTF-8"?>
+<tv>
+  <channel id="$code">
+    <display-name>$name</display-name>
+  </channel>
+  <programme channel="$code" start="$(date -u +'%Y%m%d%H%M%S') +0000" stop="$(date -u -d '+1 day' +'%Y%m%d%H%M%S') +0000">
+    <title>EPG für $name</title>
+    <desc>Programmdaten werden in Kürze verfügbar sein.</desc>
+  </programme>
+</tv>
+EOF
+            echo "✅ $code.xml erstellt"
+          done
           
-          # Frankreich
-          cat > public/epg/fr.xml << 'EOF'
-          <?xml version="1.0" encoding="UTF-8"?>
-          <tv>
-            <channel id="tf1.fr">
-              <display-name>TF1</display-name>
-            </channel>
-            <programme channel="tf1.fr" start="20240311200000 +0100" stop="20240311204500 +0100">
-              <title>Journal</title>
-            </programme>
-          </tv>
-          EOF
-          
-          # Index
-          cat > public/epg/index.json << 'EOF'
+          # Index.json erstellen
+          cat > public/epg/index.json << EOF
           {
-            "lastUpdate": "2024-03-11T20:00:00Z",
+            "lastUpdate": "$(date -Iseconds)",
+            "totalCountries": ${#countries[@]},
             "countries": [
-              {"code": "de", "name": "Deutschland", "file": "de.xml"},
-              {"code": "it", "name": "Italien", "file": "it.xml"},
-              {"code": "fr", "name": "Frankreich", "file": "fr.xml"}
-            ]
-          }
           EOF
           
-          echo "✅ EPG-Dateien erstellt:"
+          first=1
+          for entry in "${countries[@]}"; do
+            IFS='|' read -r code name <<< "$entry"
+            if [ "$first" -eq 1 ]; then
+              first=0
+            else
+              echo "," >> public/epg/index.json
+            fi
+            echo "    {\"code\":\"$code\",\"name\":\"$name\",\"file\":\"$code.xml\"}" >> public/epg/index.json
+          done
+          
+          echo "  ]" >> public/epg/index.json
+          echo "}" >> public/epg/index.json
+          
+          echo ""
+          echo "✅ ALLE ${#countries[@]} Länder erstellt!"
           ls -la public/epg/
       
       - name: Deploy to Cloudflare
