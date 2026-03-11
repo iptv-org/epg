@@ -1,8 +1,6 @@
 name: EPG Weltweit generieren
 
 on:
-  schedule:
-    - cron: '0 2 * * *'
   workflow_dispatch:
 
 jobs:
@@ -28,184 +26,50 @@ jobs:
           npm install
           echo "✅ iptv-org/epg bereit"
       
-      - name: 🌍 EPG für ALLE Länder mit echten Sendern generieren
+      - name: 🌍 EPG für Deutschland testen
         run: |
-          echo "🚀 Starte EPG-Generierung für ALLE Länder..."
+          echo "🚀 Teste EPG-Generierung für Deutschland..."
           
           # Ausgabeverzeichnis erstellen
           mkdir -p public/epg
           
           cd epg
           
-          # DEFINITION DER LÄNDER MIT IHREN TOP-SENDERN
-          # Für jedes Land die wichtigsten Sender
-          declare -A COUNTRY_CHANNELS
-          
-          # Deutschland
-          COUNTRY_CHANNELS["de"]="ard.de zdf.de rtl.de sat1.de prosieben.de"
-          # Italien
-          COUNTRY_CHANNELS["it"]="rai.it mediaset.it la7.it"
-          # Frankreich
-          COUNTRY_CHANNELS["fr"]="tf1.fr france2.fr france3.fr m6.fr"
-          # Großbritannien
-          COUNTRY_CHANNELS["gb"]="bbc.co.uk itv.com channel4.com"
-          # USA
-          COUNTRY_CHANNELS["us"]="abc.com nbc.com cbs.com fox.com"
-          # Spanien
-          COUNTRY_CHANNELS["es"]="rtve.es antena3.com telecinco.es"
-          # Österreich
-          COUNTRY_CHANNELS["at"]="orf.at"
-          # Schweiz
-          COUNTRY_CHANNELS["ch"]="srf.ch rts.ch rsi.ch"
-          # Niederlande
-          COUNTRY_CHANNELS["nl"]="npo.nl"
-          # Belgien
-          COUNTRY_CHANNELS["be"]="rtbf.be vrt.be"
-          # Portugal
-          COUNTRY_CHANNELS["pt"]="rtp.pt"
-          # Schweden
-          COUNTRY_CHANNELS["se"]="svt.se tv4.se"
-          # Norwegen
-          COUNTRY_CHANNELS["no"]="nrk.no tv2.no"
-          # Dänemark
-          COUNTRY_CHANNELS["dk"]="dr.dk tv2.dk"
-          # Finnland
-          COUNTRY_CHANNELS["fi"]="yle.fi mtv.fi"
-          # Polen
-          COUNTRY_CHANNELS["pl"]="tvn.pl polsat.pl"
-          # Tschechien
-          COUNTRY_CHANNELS["cz"]="ceskatelevize.cz nova.cz"
-          # Ungarn
-          COUNTRY_CHANNELS["hu"]="mtva.hu rtl.hu"
-          # Rumänien
-          COUNTRY_CHANNELS["ro"]="tvr.ro protv.ro"
-          # Bulgarien
-          COUNTRY_CHANNELS["bg"]="bnt.bg btv.bg"
-          # Griechenland
-          COUNTRY_CHANNELS["gr"]="ert.gr skai.gr"
-          # Türkei
-          COUNTRY_CHANNELS["tr"]="trt.net.tr atv.com.tr"
-          # Russland
-          COUNTRY_CHANNELS["ru"]="rtr.ru ntv.ru"
-          # Japan
-          COUNTRY_CHANNELS["jp"]="nhk.or.jp"
-          # China
-          COUNTRY_CHANNELS["cn"]="cctv.com"
-          # Indien
-          COUNTRY_CHANNELS["in"]="doordarshan.gov.in"
-          # Australien
-          COUNTRY_CHANNELS["au"]="abc.net.au sbs.com.au"
-          # Kanada
-          COUNTRY_CHANNELS["ca"]="cbc.ca ctv.ca"
-          # Mexiko
-          COUNTRY_CHANNELS["mx"]="televisa.com tvazteca.com"
-          # Brasilien
-          COUNTRY_CHANNELS["br"]="globo.com recordtv.com"
-          # Argentinien
-          COUNTRY_CHANNELS["ar"]="tvpublica.com.ar telefe.com"
-          # Südafrika
-          COUNTRY_CHANNELS["za"]="sabc.co.za"
-          
-          # Für alle anderen Länder: Fallback auf Ländercode
-          OTHER_COUNTRIES=(
-            "al" "am" "az" "ba" "bd" "bg" "bo" "by" "cl" "co"
-            "cr" "cu" "cy" "do" "ec" "ee" "eg" "ge" "gt" "hk"
-            "hn" "hr" "id" "ie" "il" "iq" "ir" "is" "jo" "ke"
-            "kg" "kh" "kr" "kw" "kz" "la" "lb" "lk" "lt" "lv"
-            "ly" "ma" "md" "me" "mk" "mm" "mn" "mt" "my" "ng"
-            "ni" "np" "nz" "om" "pa" "pe" "ph" "pk" "pr" "ps"
-            "py" "qa" "rs" "sa" "sg" "si" "sk" "sn" "sv" "sy"
-            "th" "tj" "tn" "tw" "tz" "ua" "ug" "uy" "uz" "ve"
-            "vn" "ye" "zw"
-          )
-          
-          # EPG für Länder mit definierten Sendern generieren
-          for country in "${!COUNTRY_CHANNELS[@]}"; do
-            echo ""
-            echo "------------------------------------------------"
-            echo "🌍 Generiere EPG für $country"
-            echo "------------------------------------------------"
-            
-            # Leere Datei für dieses Land erstellen
-            > ../public/epg/$country.xml
-            
-            # Für jeden Sender dieses Landes EPG holen
-            for channel in ${COUNTRY_CHANNELS[$country]}; do
-              echo "   📺 Sender: $channel"
-              if npm run grab --- --site=$channel --output=temp.xml --days=7 --maxConnections=2 --timeout=30000; then
-                if [ -f temp.xml ]; then
-                  # XML-Inhalt anhängen (ohne Header)
-                  grep -v "<?xml" temp.xml | grep -v "</tv>" >> ../public/epg/$country.xml || true
-                  rm temp.xml
-                fi
-              fi
-            done
-            
-            # XML-Datei fertigstellen
-            if [ -f ../public/epg/$country.xml ]; then
-              # Header und Footer hinzufügen
-              echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?><tv>" | cat - ../public/epg/$country.xml > temp && mv temp ../public/epg/$country.xml
-              echo "</tv>" >> ../public/epg/$country.xml
-              
-              # Größe prüfen
-              size=$(wc -c < ../public/epg/$country.xml)
-              echo "✅ $country: $size Bytes"
-            fi
-          done
-          
-          # Für alle anderen Länder Platzhalter erstellen
-          for country in "${OTHER_COUNTRIES[@]}"; do
-            echo ""
-            echo "------------------------------------------------"
-            echo "🌍 Erstelle Platzhalter für $country"
-            echo "------------------------------------------------"
-            
-            cat > ../public/epg/$country.xml << EOF
-<?xml version="1.0" encoding="UTF-8"?>
-<tv>
-  <channel id="$country">
-    <display-name>$country</display-name>
-  </channel>
-  <programme channel="$country" start="$(date -u +'%Y%m%d%H%M%S') +0000" stop="$(date -u -d '+1 day' +'%Y%m%d%H%M%S') +0000">
-    <title>EPG für $country in Vorbereitung</title>
-    <desc>Daten werden in Kürze verfügbar sein.</desc>
-  </programme>
-</tv>
-EOF
-            echo "✅ Platzhalter für $country erstellt"
-          done
+          # Nur ARD testen
+          echo "Generiere EPG für ard.de..."
+          npm run grab --- --site=ard.de --output=../public/epg/test-de.xml --days=1 --maxConnections=1
           
           cd ..
+          
+          echo "✅ Test abgeschlossen"
       
-      - name: 📊 Index.json erstellen
+      - name: 📊 Index-Datei erstellen
         run: |
           cd public/epg
           
-          # XML-Dateien zählen
-          xml_files=$(ls *.xml 2>/dev/null | wc -l)
+          # Prüfe ob Datei existiert
+          if [ -f "test-de.xml" ]; then
+            echo "✅ test-de.xml gefunden"
+            size=$(wc -c < test-de.xml)
+            
+            # Einfache Index.json erstellen
+            echo "{\"lastUpdate\":\"$(date -Iseconds)\",\"countries\":[{\"country\":\"de\",\"file\":\"test-de.xml\",\"size\":$size}]}" > index.json
+            
+            echo "✅ index.json erstellt"
+          else
+            echo "⚠️ Keine XML-Datei gefunden"
+            echo "{\"lastUpdate\":\"$(date -Iseconds)\",\"countries\":[]}" > index.json
+            exit 1
+          fi
+      
+      - name: 📋 Generierte Dateien anzeigen
+        run: |
+          echo "📁 Inhalt von public/epg/:"
+          ls -la public/epg/
           
-          # Index.json erstellen
-          echo "{" > index.json
-          echo "  \"lastUpdate\": \"$(date -Iseconds)\"," >> index.json
-          echo "  \"totalCountries\": $xml_files," >> index.json
-          echo "  \"countries\": [" >> index.json
-          
-          first=1
-          for file in *.xml; do
-            if [ "$first" -eq 1 ]; then
-              first=0
-            else
-              echo "," >> index.json
-            fi
-            country=$(basename "$file" .xml)
-            size=$(wc -c < "$file")
-            echo "    {\"country\":\"$country\",\"file\":\"$file\",\"size\":$size}" >> index.json
-          done
-          
-          echo "  ]" >> index.json
-          echo "}" >> index.json
-          
-          echo "✅ index.json erstellt mit $xml_files Ländern"
+          echo ""
+          echo "📄 Inhalt von index.json:"
+          cat public/epg/index.json
       
       - name: 📤 Nach Cloudflare Pages deployen
         uses: cloudflare/pages-action@v1
