@@ -37,7 +37,7 @@ jobs:
           
           cd epg-fork
           
-          # 🌍 ALLE LÄNDER aus dem iptv-org Repository
+          # 🌍 ALLE LÄNDER
           LAENDER=(
             "de" "at" "ch" "fr" "it" "es" "pt" "nl" "be" "lu"
             "gb" "ie" "dk" "se" "no" "fi" "pl" "cz" "sk" "hu"
@@ -76,12 +76,14 @@ jobs:
           echo "================================================"
           echo "📊 Generierung abgeschlossen:"
           echo "   ✅ Erfolgreich: $ERFOLGREICH von $GESAMT"
-          echo "   📁 Verzeichnis: public/epg/"
           echo "================================================"
       
       - name: 📊 Länderliste erstellen
         run: |
           cd public/epg
+          
+          # Leere Dateien löschen (0 Bytes)
+          find . -name "*.xml" -size 0 -delete
           
           # Liste aller generierten Länder
           ls *.xml 2>/dev/null | sed 's/\.xml$//' > laender.txt
@@ -153,115 +155,74 @@ jobs:
           echo "✅ Länderlisten erstellt"
           ls -la
       
-      - name: 📊 Statistiken erstellen (korrigiert)
+      - name: 📊 Einfache Statistiken erstellen
         run: |
           cd public/epg
           
-          # JSON manuell erstellen ohne Bash-Probleme
+          # Einfaches JSON ohne komplizierte Schleifen
           echo "{" > stats.json
           echo "  \"lastUpdate\": \"$(date -Iseconds)\"," >> stats.json
-          echo "  \"source\": \"iptv-org/epg Fork\"," >> stats.json
           echo "  \"totalCountries\": $(ls *.xml 2>/dev/null | wc -l)," >> stats.json
-          echo "  \"countries\": [" >> stats.json
+          echo "  \"files\": [" >> stats.json
           
-          # Dateien durchgehen
+          # Dateien auflisten (einfach)
           COUNTER=0
           for file in *.xml 2>/dev/null; do
             if [ -f "$file" ]; then
               if [ $COUNTER -gt 0 ]; then
                 echo "," >> stats.json
               fi
-              
-              LAND=$(basename "$file" .xml)
-              GROESSE=$(wc -c < "$file" | tr -d ' ')
-              PROGRAMME=$(grep -c "<programme" "$file" 2>/dev/null || echo "0")
-              
-              echo "    {" >> stats.json
-              echo "      \"country\": \"$LAND\"," >> stats.json
-              echo "      \"file\": \"$file\"," >> stats.json
-              echo "      \"size\": $GROESSE," >> stats.json
-              echo "      \"programmes\": $PROGRAMME" >> stats.json
-              echo -n "    }" >> stats.json
-              
+              echo "    \"$file\"" >> stats.json
               COUNTER=$((COUNTER + 1))
             fi
           done
           
-          echo "" >> stats.json
           echo "  ]" >> stats.json
           echo "}" >> stats.json
           
           echo "✅ stats.json erstellt"
-          cat stats.json | head -20
+          cat stats.json
       
-      - name: 📄 Index-Seite erstellen
+      - name: 📄 Einfache HTML-Seite erstellen
         run: |
           cd public/epg
           
           cat > index.html << 'EOF'
           <!DOCTYPE html>
-          <html lang="de">
+          <html>
           <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>📺 EPG aus iptv-org Fork</title>
+            <title>EPG Übersicht</title>
             <style>
-              body { font-family: sans-serif; max-width: 1200px; margin: 0 auto; padding: 20px; background: #0a0c10; color: #e6edf3; }
-              h1 { color: #58a6ff; border-bottom: 2px solid #30363d; padding-bottom: 10px; }
-              h2 { color: #8b949e; margin-top: 30px; }
-              .stats { background: #161b22; padding: 20px; border-radius: 10px; margin: 20px 0; }
-              table { width: 100%; border-collapse: collapse; background: #161b22; border-radius: 10px; }
-              th { background: #21262d; color: #8b949e; padding: 12px; text-align: left; }
-              td { padding: 10px 12px; border-bottom: 1px solid #30363d; }
-              a { color: #58a6ff; text-decoration: none; }
-              .footer { margin-top: 40px; color: #8b949e; text-align: center; }
+              body { font-family: sans-serif; margin: 20px; background: #111; color: #eee; }
+              h1 { color: #4CAF50; }
+              a { color: #4CAF50; }
+              li { margin: 5px 0; }
             </style>
           </head>
           <body>
             <h1>📺 EPG aus iptv-org Fork</h1>
+            <p>Letztes Update: $(date)</p>
             
-            <div class="stats" id="stats">
-              <p>Lade Statistiken...</p>
-            </div>
-
-            <h2>📁 Verfügbare EPG-Dateien</h2>
-            <table id="fileTable">
-              <thead>
-                <tr><th>Land</th><th>Datei</th><th>Größe</th><th>Programme</th></tr>
-              </thead>
-              <tbody id="fileList"></tbody>
-            </table>
-
-            <div class="footer">
-              <p>Generiert aus dem iptv-org/epg Fork • Tägliche Aktualisierung</p>
-            </div>
-
-            <script>
-              fetch('stats.json')
-                .then(r => r.json())
-                .then(stats => {
-                  let totalSize = 0;
-                  let html = '';
-                  
-                  stats.countries.forEach(c => {
-                    totalSize += c.size;
-                    html += `<tr><td>${c.country}</td><td><a href="${c.file}">${c.file}</a></td><td>${formatBytes(c.size)}</td><td>${c.programmes}</td></tr>`;
-                  });
-                  
-                  document.getElementById('fileList').innerHTML = html;
-                  document.getElementById('stats').innerHTML = `
-                    <p><strong>Letztes Update:</strong> ${new Date(stats.lastUpdate).toLocaleString()}</p>
-                    <p><strong>Länder:</strong> ${stats.totalCountries}</p>
-                    <p><strong>Gesamtgröße:</strong> ${formatBytes(totalSize)}</p>
-                  `;
-                });
-              
-              function formatBytes(b) { 
-                if(b==0) return '0 Bytes'; 
-                const i=Math.floor(Math.log(b)/Math.log(1024)); 
-                return parseFloat((b/Math.pow(1024,i)).toFixed(2))+' '+['Bytes','KB','MB','GB'][i]; 
-              }
-            </script>
+            <h2>📁 Verfügbare EPG-Dateien:</h2>
+            <ul>
+          EOF
+          
+          for file in *.xml 2>/dev/null; do
+            if [ -f "$file" ]; then
+              size=$(wc -c < "$file")
+              echo "              <li><a href=\"$file\">$file</a> ($size Bytes)</li>" >> index.html
+            fi
+          done
+          
+          cat >> index.html << 'EOF'
+            </ul>
+            
+            <h2>📋 Zusätzliche Dateien:</h2>
+            <ul>
+              <li><a href="laender.txt">laender.txt</a> - Liste aller Länder-Codes</li>
+              <li><a href="namen.txt">namen.txt</a> - Ländernamen mit Codes</li>
+              <li><a href="stats.json">stats.json</a> - Statistiken</li>
+            </ul>
           </body>
           </html>
           EOF
