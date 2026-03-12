@@ -14,10 +14,10 @@ jobs:
       - name: 📦 Repository auschecken
         uses: actions/checkout@v3
       
-      - name: 🔧 Node.js 22 einrichten (NEU!)
+      - name: 🔧 Node.js 22 einrichten
         uses: actions/setup-node@v3
         with:
-          node-version: '22'  # Wichtig: 22 statt 18!
+          node-version: '22'
       
       - name: 📡 iptv-org/epg klonen
         run: |
@@ -44,12 +44,12 @@ jobs:
             "rtl.de"
             "sat1.de"
             "prosieben.de"
-            "sky.de"  # Wurde im Diagnose gefunden
+            "sky.de"
           )
           
           for sender in "${SENDER[@]}"; do
             echo "Generiere $sender..."
-            npm run grab --- --site=$sender --output=../public/epg/de/$sender.xml --days=3 --maxConnections=5
+            npm run grab --- --site=$sender --output=../public/epg/de/$sender.xml --days=3 --maxConnections=5 || echo "⚠️ Fehler bei $sender"
             sleep 1
           done
           
@@ -59,7 +59,7 @@ jobs:
         run: |
           cd public/epg/de
           
-          # Prüfe ob Dateien existieren
+          # Prüfe ob XML-Dateien existieren
           if ls *.xml 1> /dev/null 2>&1; then
             echo "✅ XML-Dateien gefunden:"
             ls -la *.xml
@@ -68,23 +68,40 @@ jobs:
             cat *.xml > gesamt.xml
             echo "✅ gesamt.xml erstellt"
             
-            # Index erstellen
-            echo "{\"lastUpdate\":\"$(date -Iseconds)\",\"country\":\"Deutschland\",\"countryCode\":\"de\",\"totalChannels\":$(ls *.xml | grep -v gesamt.xml | wc -l)}" > index.json
+            # Index erstellen (korrigiertes JSON-Format)
+            TOTAL_CHANNELS=$(ls *.xml | grep -v gesamt.xml | wc -l)
+            cat > index.json << EOF
+{
+  "lastUpdate": "$(date -Iseconds)",
+  "country": "Deutschland",
+  "countryCode": "de",
+  "totalChannels": $TOTAL_CHANNELS
+}
+EOF
+            echo "✅ index.json erstellt"
           else
             echo "⚠️ Keine XML-Dateien – erstelle Platzhalter"
-            cat > gesamt.xml << EOF
+            cat > gesamt.xml << 'EOF'
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
   <channel id="ard.de">
     <display-name>ARD</display-name>
   </channel>
-  <programme channel="ard.de" start="$(date -u +'%Y%m%d%H%M%S') +0000" stop="$(date -u -d '+1 day' +'%Y%m%d%H%M%S') +0000">
+  <programme channel="ard.de" start="20240312000000 +0000" stop="20240312235959 +0000">
     <title>EPG wird geladen</title>
     <desc>Bitte später erneut versuchen</desc>
   </programme>
 </tv>
 EOF
-            echo "{\"lastUpdate\":\"$(date -Iseconds)\",\"country\":\"Deutschland\",\"countryCode\":\"de\",\"totalChannels\":0,\"status\":\"placeholder\"}" > index.json
+            cat > index.json << EOF
+{
+  "lastUpdate": "$(date -Iseconds)",
+  "country": "Deutschland",
+  "countryCode": "de",
+  "totalChannels": 0,
+  "status": "placeholder"
+}
+EOF
           fi
       
       - name: 📤 Nach Cloudflare Pages deployen
@@ -95,3 +112,14 @@ EOF
           projectName: "iptv-epg-data"
           directory: public
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: ✅ Abschluss
+        run: |
+          echo ""
+          echo "================================================"
+          echo "✅ Workflow abgeschlossen"
+          echo "================================================"
+          echo "📊 EPG verfügbar unter:"
+          echo "   https://iptv-epg-data.pages.dev/epg/de/gesamt.xml"
+          echo "   https://iptv-epg-data.pages.dev/epg/de/index.json"
+          echo "================================================"
