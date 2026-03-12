@@ -1,27 +1,95 @@
-name: EPG Weltweit
+name: EPG aus iptv-org Fork generieren
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '0 2 * * *'  # Täglich um 2:00 UTC
 
 jobs:
   generate-epg:
     runs-on: ubuntu-latest
+    timeout-minutes: 120  # 2 Stunden für alle Länder
+    
     steps:
-      - name: Repository auschecken
+      - name: 📦 iptv-org/epg Fork auschecken
         uses: actions/checkout@v3
+        with:
+          repository: ColomboEnterprise/epg
+          path: epg-fork
       
-      - name: EPG für ALLE Länder erstellen
+      - name: 🔧 Node.js einrichten
+        uses: actions/setup-node@v3
+        with:
+          node-version: '22'
+      
+      - name: 📦 Abhängigkeiten installieren
         run: |
-          # Verzeichnis anlegen
+          cd epg-fork
+          npm install
+          echo "✅ Abhängigkeiten installiert"
+      
+      - name: 🌍 EPG für ALLE Länder generieren
+        run: |
+          echo "🚀 Starte EPG-Generierung aus dem Fork..."
+          
+          # Ausgabeverzeichnis erstellen
           mkdir -p public/epg
           
-          # 🌍 Länderliste als TXT
-          cat > public/epg/laender.txt << 'EOF'
-          de at ch fr it es pt nl be lu gb ie dk se no fi is pl cz sk hu ro bg rs hr si ba me mk al gr tr cy ee lv lt by ua md ru lu mt ad li gi gg im je us ca mx gt hn sv ni cr pa bz ar bo br cl co ec gy pe py sr uy ve dz ao bj bw bf bi cm cv cf td km cd cg ci dj eg gq er sz et ga gm gh gn gw ke ls lr ly mg mw ml mr mu ma mz na ne ng rw st sn sc sl so za ss sd tz tg tn ug zm zw af am az bh bd bt bn kh cn ge in id ir iq il jp jo kz kw kg la lb my mv mn mm np om pk ps ph qa sa sg kr lk sy tw tj th tl tr tm ae uz vn ye hk mo au fj ki mh fm nr nz pw pg ws sb to tv vu
-          EOF
+          cd epg-fork
           
-          # Ländernamen für Anzeige
-          cat > public/epg/namen.txt << 'EOF'
+          # 🌍 ALLE LÄNDER aus dem iptv-org Repository
+          # Liste der Länder, für die EPG generiert werden soll
+          LAENDER=(
+            "de" "at" "ch" "fr" "it" "es" "pt" "nl" "be" "lu"
+            "gb" "ie" "dk" "se" "no" "fi" "pl" "cz" "sk" "hu"
+            "ro" "bg" "rs" "hr" "si" "ba" "me" "mk" "al" "gr"
+            "tr" "ee" "lv" "lt" "by" "ua" "md" "ru" "us" "ca"
+            "mx" "ar" "br" "cl" "co" "pe" "ve" "au" "nz" "jp"
+            "kr" "cn" "in" "id" "my" "sg" "th" "vn" "ph" "za"
+          )
+          
+          GESAMT=${#LAENDER[@]}
+          AKTUELL=0
+          ERFOLGREICH=0
+          
+          echo "================================================"
+          echo "📊 Generiere EPG für $GESAMT Länder"
+          echo "================================================"
+          
+          for land in "${LAENDER[@]}"; do
+            AKTUELL=$((AKTUELL + 1))
+            echo ""
+            echo "[$AKTUELL/$GESAMT] Generiere EPG für: $land"
+            
+            # EPG für dieses Land generieren
+            if npm run grab --- --site=$land --output=../public/epg/$land.xml --days=7 --maxConnections=3 --timeout=60000; then
+              echo "  ✅ $land erfolgreich"
+              ERFOLGREICH=$((ERFOLGREICH + 1))
+            else
+              echo "  ⚠️ $land fehlgeschlagen"
+            fi
+            
+            sleep 2
+          done
+          
+          cd ..
+          
+          echo ""
+          echo "================================================"
+          echo "📊 Generierung abgeschlossen:"
+          echo "   ✅ Erfolgreich: $ERFOLGREICH von $GESAMT"
+          echo "   📁 Verzeichnis: public/epg/"
+          echo "================================================"
+      
+      - name: 📊 Länderliste erstellen
+        run: |
+          cd public/epg
+          
+          # Liste aller generierten Länder
+          ls *.xml 2>/dev/null | sed 's/\.xml$//' > laender.txt
+          
+          # Ländernamen (manuell für die wichtigsten)
+          cat > namen.txt << 'EOF'
           Deutschland|de
           Österreich|at
           Schweiz|ch
@@ -38,7 +106,6 @@ jobs:
           Schweden|se
           Norwegen|no
           Finnland|fi
-          Island|is
           Polen|pl
           Tschechien|cz
           Slowakei|sk
@@ -54,7 +121,6 @@ jobs:
           Albanien|al
           Griechenland|gr
           Türkei|tr
-          Zypern|cy
           Estland|ee
           Lettland|lv
           Litauen|lt
@@ -62,193 +128,316 @@ jobs:
           Ukraine|ua
           Moldau|md
           Russland|ru
-          Malta|mt
-          Andorra|ad
-          Liechtenstein|li
-          Gibraltar|gi
-          Guernsey|gg
-          Isle of Man|im
-          Jersey|je
           USA|us
           Kanada|ca
           Mexiko|mx
-          Guatemala|gt
-          Honduras|hn
-          El Salvador|sv
-          Nicaragua|ni
-          Costa Rica|cr
-          Panama|pa
-          Belize|bz
           Argentinien|ar
-          Bolivien|bo
           Brasilien|br
           Chile|cl
           Kolumbien|co
-          Ecuador|ec
-          Guyana|gy
           Peru|pe
-          Paraguay|py
-          Suriname|sr
-          Uruguay|uy
           Venezuela|ve
-          Algerien|dz
-          Angola|ao
-          Benin|bj
-          Botswana|bw
-          Burkina Faso|bf
-          Burundi|bi
-          Kamerun|cm
-          Kap Verde|cv
-          Zentralafrika|cf
-          Tschad|td
-          Komoren|km
-          Kongo|cg
-          Kongo DR|cd
-          Elfenbeinküste|ci
-          Dschibuti|dj
-          Ägypten|eg
-          Äquatorialguinea|gq
-          Eritrea|er
-          Eswatini|sz
-          Äthiopien|et
-          Gabun|ga
-          Gambia|gm
-          Ghana|gh
-          Guinea|gn
-          Guinea-Bissau|gw
-          Kenia|ke
-          Lesotho|ls
-          Liberia|lr
-          Libyen|ly
-          Madagaskar|mg
-          Malawi|mw
-          Mali|ml
-          Mauretanien|mr
-          Mauritius|mu
-          Marokko|ma
-          Mosambik|mz
-          Namibia|na
-          Niger|ne
-          Nigeria|ng
-          Ruanda|rw
-          Sao Tome|st
-          Senegal|sn
-          Seychellen|sc
-          Sierra Leone|sl
-          Somalia|so
-          Südafrika|za
-          Südsudan|ss
-          Sudan|sd
-          Tansania|tz
-          Togo|tg
-          Tunesien|tn
-          Uganda|ug
-          Sambia|zm
-          Simbabwe|zw
-          Afghanistan|af
-          Armenien|am
-          Aserbaidschan|az
-          Bahrain|bh
-          Bangladesch|bd
-          Bhutan|bt
-          Brunei|bn
-          Kambodscha|kh
+          Australien|au
+          Neuseeland|nz
+          Japan|jp
+          Südkorea|kr
           China|cn
-          Georgien|ge
           Indien|in
           Indonesien|id
-          Iran|ir
-          Irak|iq
-          Israel|il
-          Japan|jp
-          Jordanien|jo
-          Kasachstan|kz
-          Kuwait|kw
-          Kirgisistan|kg
-          Laos|la
-          Libanon|lb
           Malaysia|my
-          Malediven|mv
-          Mongolei|mn
-          Myanmar|mm
-          Nepal|np
-          Oman|om
-          Pakistan|pk
-          Palästina|ps
-          Philippinen|ph
-          Katar|qa
-          Saudi-Arabien|sa
           Singapur|sg
-          Südkorea|kr
-          Sri Lanka|lk
-          Syrien|sy
-          Taiwan|tw
-          Tadschikistan|tj
           Thailand|th
-          Osttimor|tl
-          Turkmenistan|tm
-          Usbekistan|uz
           Vietnam|vn
-          Jemen|ye
-          Hongkong|hk
-          Macau|mo
-          Australien|au
-          Fidschi|fj
-          Kiribati|ki
-          Marshallinseln|mh
-          Mikronesien|fm
-          Nauru|nr
-          Neuseeland|nz
-          Palau|pw
-          Papua-Neuguinea|pg
-          Samoa|ws
-          Salomonen|sb
-          Tonga|to
-          Tuvalu|tv
-          Vanuatu|vu
+          Philippinen|ph
+          Südafrika|za
           EOF
           
-          echo "✅ Länderliste erstellt"
-          echo "📁 Verzeichnis: public/epg/"
-          ls -la public/epg/
+          echo "✅ Länderlisten erstellt"
       
-      - name: Index-Datei erstellen
+      - name: 📊 Statistiken erstellen
         run: |
           cd public/epg
+          
+          # EPG-Statistiken
+          cat > stats.json << EOF
+          {
+            "lastUpdate": "$(date -Iseconds)",
+            "source": "iptv-org/epg Fork",
+            "totalCountries": $(ls *.xml 2>/dev/null | wc -l),
+            "countries": [
+          EOF
+          
+          # Details zu jedem Land
+          first=1
+          for file in *.xml 2>/dev/null; do
+            if [ -f "$file" ]; then
+              if [ "$first" -eq 1 ]; then
+                first=0
+              else
+                echo "," >> stats.json
+              fi
+              land=$(basename "$file" .xml)
+              size=$(wc -c < "$file" | tr -d ' ')
+              programme=$(grep -c "<programme" "$file" 2>/dev/null || echo "0")
+              cat >> stats.json << EOF
+              {
+                "country": "$land",
+                "file": "$file",
+                "size": $size,
+                "programmes": $programme
+              }
+          EOF
+            fi
+          done
+          
+          cat >> stats.json << EOF
+        
+            ]
+          }
+          EOF
+          
+          echo "✅ stats.json erstellt"
+      
+      - name: 📄 Index-Seite erstellen
+        run: |
+          cd public/epg
+          
           cat > index.html << 'EOF'
           <!DOCTYPE html>
-          <html>
+          <html lang="de">
           <head>
-            <title>EPG Weltweit</title>
             <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>📺 EPG aus iptv-org Fork</title>
             <style>
-              body { font-family: sans-serif; margin: 40px; background: #111; color: #eee; }
-              h1 { color: #4CAF50; }
-              pre { background: #222; padding: 10px; border-radius: 5px; }
-              a { color: #4CAF50; }
+              body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+                background: #0a0c10;
+                color: #e6edf3;
+              }
+              h1 {
+                color: #58a6ff;
+                border-bottom: 2px solid #30363d;
+                padding-bottom: 10px;
+              }
+              h2 {
+                color: #8b949e;
+                margin-top: 30px;
+              }
+              .stats {
+                background: #161b22;
+                padding: 20px;
+                border-radius: 10px;
+                margin: 20px 0;
+                border: 1px solid #30363d;
+              }
+              .stats-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 15px;
+              }
+              .stat-card {
+                background: #21262d;
+                padding: 15px;
+                border-radius: 8px;
+                text-align: center;
+              }
+              .stat-number {
+                font-size: 2em;
+                font-weight: bold;
+                color: #58a6ff;
+              }
+              table {
+                width: 100%;
+                border-collapse: collapse;
+                background: #161b22;
+                border-radius: 10px;
+                overflow: hidden;
+              }
+              th {
+                background: #21262d;
+                color: #8b949e;
+                font-weight: normal;
+                padding: 12px;
+                text-align: left;
+              }
+              td {
+                padding: 10px 12px;
+                border-bottom: 1px solid #30363d;
+              }
+              a {
+                color: #58a6ff;
+                text-decoration: none;
+              }
+              a:hover {
+                text-decoration: underline;
+              }
+              .footer {
+                margin-top: 40px;
+                color: #8b949e;
+                text-align: center;
+                border-top: 1px solid #30363d;
+                padding-top: 20px;
+              }
             </style>
           </head>
           <body>
-            <h1>🌍 EPG Weltweit</h1>
-            <p>Diese Dateien werden täglich automatisch aktualisiert.</p>
-            <h2>📁 Verfügbare Dateien:</h2>
-            <pre>
-          <ul>
-            <li><a href="laender.txt">laender.txt</a> - Liste aller Länder-Codes</li>
-            <li><a href="namen.txt">namen.txt</a> - Ländernamen mit Codes</li>
-          </ul>
-            </pre>
-            <p><em>Letztes Update: $(date)</em></p>
+            <h1>📺 EPG aus iptv-org Fork</h1>
+            
+            <div class="stats">
+              <div class="stats-grid" id="stats">
+                <div class="stat-card">
+                  <div class="stat-number" id="totalCountries">-</div>
+                  <div>Länder mit EPG</div>
+                </div>
+                <div class="stat-card">
+                  <div class="stat-number" id="totalSize">-</div>
+                  <div>Gesamtgröße</div>
+                </div>
+                <div class="stat-card">
+                  <div class="stat-number" id="lastUpdate">-</div>
+                  <div>Letztes Update</div>
+                </div>
+              </div>
+            </div>
+
+            <h2>📁 Verfügbare EPG-Dateien</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Land</th>
+                  <th>Datei</th>
+                  <th>Größe</th>
+                  <th>Programme</th>
+                </tr>
+              </thead>
+              <tbody id="fileList">
+                <!-- Wird per JavaScript geladen -->
+              </tbody>
+            </table>
+
+            <h2>📋 Zusätzliche Dateien</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Datei</th>
+                  <th>Beschreibung</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="laender.txt">laender.txt</a></td>
+                  <td>Liste aller verfügbaren Länder-Codes</td>
+                </tr>
+                <tr>
+                  <td><a href="namen.txt">namen.txt</a></td>
+                  <td>Ländernamen mit Codes</td>
+                </tr>
+                <tr>
+                  <td><a href="stats.json">stats.json</a></td>
+                  <td>Detaillierte Statistiken im JSON-Format</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="footer">
+              <p>Generiert aus dem iptv-org/epg Fork • Tägliche Aktualisierung um 2:00 UTC</p>
+            </div>
+
+            <script>
+              async function loadData() {
+                try {
+                  const stats = await fetch('stats.json').then(r => r.json());
+                  
+                  document.getElementById('totalCountries').textContent = stats.totalCountries;
+                  document.getElementById('lastUpdate').textContent = new Date(stats.lastUpdate).toLocaleString('de-DE');
+                  
+                  let totalSize = 0;
+                  const fileList = document.getElementById('fileList');
+                  
+                  for (const country of stats.countries) {
+                    totalSize += country.size;
+                    
+                    const row = document.createElement('tr');
+                    let countryName = country.country;
+                    
+                    // Versuche Ländernamen zu laden
+                    try {
+                      const names = await fetch('namen.txt').then(r => r.text());
+                      const lines = names.split('\n');
+                      for (const line of lines) {
+                        const [name, code] = line.split('|');
+                        if (code === country.country) {
+                          countryName = name;
+                          break;
+                        }
+                      }
+                    } catch (e) {}
+                    
+                    row.innerHTML = `
+                      <td>${countryName}</td>
+                      <td><a href="${country.file}">${country.file}</a></td>
+                      <td>${formatBytes(country.size)}</td>
+                      <td>${country.programmes.toLocaleString()}</td>
+                    `;
+                    fileList.appendChild(row);
+                  }
+                  
+                  document.getElementById('totalSize').textContent = formatBytes(totalSize);
+                  
+                } catch (error) {
+                  console.error('Fehler:', error);
+                }
+              }
+              
+              function formatBytes(bytes) {
+                if (bytes === 0) return '0 Bytes';
+                const k = 1024;
+                const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+                const i = Math.floor(Math.log(bytes) / Math.log(k));
+                return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+              }
+              
+              loadData();
+            </script>
           </body>
           </html>
           EOF
+          
           echo "✅ index.html erstellt"
       
-      - name: Nach Cloudflare Pages deployen
+      - name: 📤 Nach Cloudflare Pages deployen
         uses: cloudflare/pages-action@v1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: "iptv-epg-data"  # Wichtig: Ihr Projektname!
+          projectName: "iptv-epg-data"
           directory: public
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: ✅ Abschluss
+        run: |
+          echo ""
+          echo "================================================"
+          echo "✅ EPG aus iptv-org Fork generiert!"
+          echo "================================================"
+          echo ""
+          echo "📊 Verfügbar unter:"
+          echo "   • https://iptv-epg-data.pages.dev/epg/index.html"
+          echo "   • https://iptv-epg-data.pages.dev/epg/laender.txt"
+          echo "   • https://iptv-epg-data.pages.dev/epg/namen.txt"
+          echo "   • https://iptv-epg-data.pages.dev/epg/stats.json"
+          echo ""
+          echo "📺 EPG für einzelne Länder:"
+          echo "   • https://iptv-epg-data.pages.dev/epg/de.xml"
+          echo "   • https://iptv-epg-data.pages.dev/epg/at.xml"
+          echo "   • https://iptv-epg-data.pages.dev/epg/ch.xml"
+          echo "   • https://iptv-epg-data.pages.dev/epg/fr.xml"
+          echo "   • https://iptv-epg-data.pages.dev/epg/it.xml"
+          echo "   • https://iptv-epg-data.pages.dev/epg/es.xml"
+          echo "   • https://iptv-epg-data.pages.dev/epg/gb.xml"
+          echo "   • https://iptv-epg-data.pages.dev/epg/us.xml"
+          echo "================================================"
