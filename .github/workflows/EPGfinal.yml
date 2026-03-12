@@ -1,95 +1,66 @@
-name: EPG für Deutschland generieren
+name: EPG Diagnose
 
 on:
-  schedule:
-    # Läuft täglich um 2:00 Uhr UTC
-    - cron: '0 2 * * *'
-  workflow_dispatch:  # Manueller Start
+  workflow_dispatch:  # Nur manuell starten
 
 jobs:
-  generate-german-epg:
+  diagnose:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
-    
     steps:
-      - name: 📦 Repository auschecken
-        uses: actions/checkout@v3
-      
-      - name: 🔧 Node.js einrichten
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-      
-      - name: 📡 iptv-org/epg klonen
+      - name: 🔍 System info
         run: |
-          echo "📡 Klone iptv-org/epg..."
+          echo "Node version:"
+          node --version
+          echo "npm version:"
+          npm --version
+          echo "OS:"
+          uname -a
+      
+      - name: 📡 EPG-Quellen testen
+        run: |
+          # Test 1: Ist iptv-org/epg erreichbar?
+          echo "Test 1: Klone iptv-org/epg..."
           git clone --depth 1 https://github.com/iptv-org/epg.git
           cd epg
-          echo "📦 Installiere Abhängigkeiten..."
           npm install
-          echo "✅ iptv-org/epg bereit"
-      
-      - name: 🚀 EPG für ARD testen
-        run: |
-          echo "🚀 Teste EPG-Generierung für ARD..."
           
-          # Ausgabeverzeichnis erstellen
-          mkdir -p public/epg/de
+          # Test 2: Welche Sites sind verfügbar?
+          echo ""
+          echo "Test 2: Verfügbare Sites für Deutschland:"
+          ls -la sites/ | grep -i "de\|ard\|zdf\|rtl" | head -10
           
-          cd epg
+          # Test 3: Versuche ARD mit minimalen Optionen
+          echo ""
+          echo "Test 3: Versuche ARD EPG (minimal)..."
+          mkdir -p ../public
+          npm run grab --- --site=ard.de --output=../public/ard-debug.xml --days=1 --maxConnections=1 --timeout=10000 || echo "⚠️ ARD fehlgeschlagen"
           
-          # Nur ARD testen
-          echo "Generiere EPG für ard.de..."
-          npm run grab --- --site=ard.de --output=../public/epg/de/ard.de.xml --days=1
+          # Test 4: Versuche allgemeine deutsche Quelle
+          echo ""
+          echo "Test 4: Versuche allgemeine deutsche Quelle..."
+          npm run grab --- --site=de --output=../public/de-debug.xml --days=1 --maxConnections=1 --timeout=10000 || echo "⚠️ DE fehlgeschlagen"
           
           cd ..
           
-          echo "✅ Test abgeschlossen"
-      
-      - name: 📊 Index-Datei erstellen
-        run: |
-          cd public/epg/de
+          # Test 5: Zeige Ergebnisse
+          echo ""
+          echo "Test 5: Generierte Dateien:"
+          ls -la public/ || echo "Keine Dateien in public/"
           
-          # Prüfe ob Datei existiert
-          if [ -f "ard.de.xml" ]; then
-            echo "✅ ard.de.xml gefunden"
-            
-            # Index.json erstellen (ALLE IN EINER ZEILE!)
-            echo "{\"lastUpdate\":\"$(date -Iseconds)\",\"country\":\"Deutschland\",\"countryCode\":\"de\",\"totalChannels\":1,\"channels\":[{\"channel\":\"ard.de\",\"file\":\"ard.de.xml\"}]}" > index.json
-            
-            echo "✅ index.json erstellt"
+          # Test 6: Zeige Logs falls vorhanden
+          echo ""
+          echo "Test 6: EPG Logs:"
+          if [ -f "epg/logs.txt" ]; then
+            cat epg/logs.txt
           else
-            echo "⚠️ Keine XML-Datei gefunden"
-            exit 1
+            echo "Keine Logs gefunden"
           fi
       
-      - name: 📋 Generierte Dateien anzeigen
-        run: |
-          echo "📁 Inhalt von public/epg/de/:"
-          ls -la public/epg/de/
-          
-          echo ""
-          echo "📄 Inhalt von index.json:"
-          cat public/epg/de/index.json
-      
-      - name: 📤 Nach Cloudflare Pages deployen
-        uses: cloudflare/pages-action@v1
+      - name: 📤 Ergebnisse hochladen
+        uses: actions/upload-artifact@v3
         with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: "iptv-epg-data"
-          directory: public
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-      
-      - name: ✅ Abschluss
-        run: |
-          echo ""
-          echo "================================================"
-          echo "✅ EPG-Test erfolgreich abgeschlossen!"
-          echo "================================================"
-          echo "📊 Verfügbar unter:"
-          echo "   • https://iptv-epg-data.pages.dev/epg/de/ard.de.xml"
-          echo "   • https://iptv-epg-data.pages.dev/epg/de/index.json"
-          echo ""
-          echo "⏰ Nächster Schritt: Auf alle Sender erweitern"
-          echo "================================================"
+          name: epg-diagnose-logs
+          path: |
+            public/
+            epg/logs.txt
+            epg/sites/
