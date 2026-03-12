@@ -3,12 +3,12 @@ name: EPG aus iptv-org Fork generieren
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 2 * * *'  # Täglich um 2:00 UTC
+    - cron: '0 2 * * *'
 
 jobs:
   generate-epg:
     runs-on: ubuntu-latest
-    timeout-minutes: 120  # 2 Stunden für alle Länder
+    timeout-minutes: 120
     
     steps:
       - name: 📦 iptv-org/epg Fork auschecken
@@ -38,7 +38,6 @@ jobs:
           cd epg-fork
           
           # 🌍 ALLE LÄNDER aus dem iptv-org Repository
-          # Liste der Länder, für die EPG generiert werden soll
           LAENDER=(
             "de" "at" "ch" "fr" "it" "es" "pt" "nl" "be" "lu"
             "gb" "ie" "dk" "se" "no" "fi" "pl" "cz" "sk" "hu"
@@ -61,7 +60,6 @@ jobs:
             echo ""
             echo "[$AKTUELL/$GESAMT] Generiere EPG für: $land"
             
-            # EPG für dieses Land generieren
             if npm run grab --- --site=$land --output=../public/epg/$land.xml --days=7 --maxConnections=3 --timeout=60000; then
               echo "  ✅ $land erfolgreich"
               ERFOLGREICH=$((ERFOLGREICH + 1))
@@ -88,7 +86,7 @@ jobs:
           # Liste aller generierten Länder
           ls *.xml 2>/dev/null | sed 's/\.xml$//' > laender.txt
           
-          # Ländernamen (manuell für die wichtigsten)
+          # Ländernamen
           cat > namen.txt << 'EOF'
           Deutschland|de
           Österreich|at
@@ -153,50 +151,48 @@ jobs:
           EOF
           
           echo "✅ Länderlisten erstellt"
+          ls -la
       
-      - name: 📊 Statistiken erstellen
+      - name: 📊 Statistiken erstellen (korrigiert)
         run: |
           cd public/epg
           
-          # EPG-Statistiken
-          cat > stats.json << EOF
-          {
-            "lastUpdate": "$(date -Iseconds)",
-            "source": "iptv-org/epg Fork",
-            "totalCountries": $(ls *.xml 2>/dev/null | wc -l),
-            "countries": [
-          EOF
+          # JSON manuell erstellen ohne Bash-Probleme
+          echo "{" > stats.json
+          echo "  \"lastUpdate\": \"$(date -Iseconds)\"," >> stats.json
+          echo "  \"source\": \"iptv-org/epg Fork\"," >> stats.json
+          echo "  \"totalCountries\": $(ls *.xml 2>/dev/null | wc -l)," >> stats.json
+          echo "  \"countries\": [" >> stats.json
           
-          # Details zu jedem Land
-          first=1
+          # Dateien durchgehen
+          COUNTER=0
           for file in *.xml 2>/dev/null; do
             if [ -f "$file" ]; then
-              if [ "$first" -eq 1 ]; then
-                first=0
-              else
+              if [ $COUNTER -gt 0 ]; then
                 echo "," >> stats.json
               fi
-              land=$(basename "$file" .xml)
-              size=$(wc -c < "$file" | tr -d ' ')
-              programme=$(grep -c "<programme" "$file" 2>/dev/null || echo "0")
-              cat >> stats.json << EOF
-              {
-                "country": "$land",
-                "file": "$file",
-                "size": $size,
-                "programmes": $programme
-              }
-          EOF
+              
+              LAND=$(basename "$file" .xml)
+              GROESSE=$(wc -c < "$file" | tr -d ' ')
+              PROGRAMME=$(grep -c "<programme" "$file" 2>/dev/null || echo "0")
+              
+              echo "    {" >> stats.json
+              echo "      \"country\": \"$LAND\"," >> stats.json
+              echo "      \"file\": \"$file\"," >> stats.json
+              echo "      \"size\": $GROESSE," >> stats.json
+              echo "      \"programmes\": $PROGRAMME" >> stats.json
+              echo -n "    }" >> stats.json
+              
+              COUNTER=$((COUNTER + 1))
             fi
           done
           
-          cat >> stats.json << EOF
-        
-            ]
-          }
-          EOF
+          echo "" >> stats.json
+          echo "  ]" >> stats.json
+          echo "}" >> stats.json
           
           echo "✅ stats.json erstellt"
+          cat stats.json | head -20
       
       - name: 📄 Index-Seite erstellen
         run: |
@@ -210,204 +206,68 @@ jobs:
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>📺 EPG aus iptv-org Fork</title>
             <style>
-              body {
-                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-                max-width: 1200px;
-                margin: 0 auto;
-                padding: 20px;
-                background: #0a0c10;
-                color: #e6edf3;
-              }
-              h1 {
-                color: #58a6ff;
-                border-bottom: 2px solid #30363d;
-                padding-bottom: 10px;
-              }
-              h2 {
-                color: #8b949e;
-                margin-top: 30px;
-              }
-              .stats {
-                background: #161b22;
-                padding: 20px;
-                border-radius: 10px;
-                margin: 20px 0;
-                border: 1px solid #30363d;
-              }
-              .stats-grid {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-                gap: 15px;
-              }
-              .stat-card {
-                background: #21262d;
-                padding: 15px;
-                border-radius: 8px;
-                text-align: center;
-              }
-              .stat-number {
-                font-size: 2em;
-                font-weight: bold;
-                color: #58a6ff;
-              }
-              table {
-                width: 100%;
-                border-collapse: collapse;
-                background: #161b22;
-                border-radius: 10px;
-                overflow: hidden;
-              }
-              th {
-                background: #21262d;
-                color: #8b949e;
-                font-weight: normal;
-                padding: 12px;
-                text-align: left;
-              }
-              td {
-                padding: 10px 12px;
-                border-bottom: 1px solid #30363d;
-              }
-              a {
-                color: #58a6ff;
-                text-decoration: none;
-              }
-              a:hover {
-                text-decoration: underline;
-              }
-              .footer {
-                margin-top: 40px;
-                color: #8b949e;
-                text-align: center;
-                border-top: 1px solid #30363d;
-                padding-top: 20px;
-              }
+              body { font-family: sans-serif; max-width: 1200px; margin: 0 auto; padding: 20px; background: #0a0c10; color: #e6edf3; }
+              h1 { color: #58a6ff; border-bottom: 2px solid #30363d; padding-bottom: 10px; }
+              h2 { color: #8b949e; margin-top: 30px; }
+              .stats { background: #161b22; padding: 20px; border-radius: 10px; margin: 20px 0; }
+              table { width: 100%; border-collapse: collapse; background: #161b22; border-radius: 10px; }
+              th { background: #21262d; color: #8b949e; padding: 12px; text-align: left; }
+              td { padding: 10px 12px; border-bottom: 1px solid #30363d; }
+              a { color: #58a6ff; text-decoration: none; }
+              .footer { margin-top: 40px; color: #8b949e; text-align: center; }
             </style>
           </head>
           <body>
             <h1>📺 EPG aus iptv-org Fork</h1>
             
-            <div class="stats">
-              <div class="stats-grid" id="stats">
-                <div class="stat-card">
-                  <div class="stat-number" id="totalCountries">-</div>
-                  <div>Länder mit EPG</div>
-                </div>
-                <div class="stat-card">
-                  <div class="stat-number" id="totalSize">-</div>
-                  <div>Gesamtgröße</div>
-                </div>
-                <div class="stat-card">
-                  <div class="stat-number" id="lastUpdate">-</div>
-                  <div>Letztes Update</div>
-                </div>
-              </div>
+            <div class="stats" id="stats">
+              <p>Lade Statistiken...</p>
             </div>
 
             <h2>📁 Verfügbare EPG-Dateien</h2>
-            <table>
+            <table id="fileTable">
               <thead>
-                <tr>
-                  <th>Land</th>
-                  <th>Datei</th>
-                  <th>Größe</th>
-                  <th>Programme</th>
-                </tr>
+                <tr><th>Land</th><th>Datei</th><th>Größe</th><th>Programme</th></tr>
               </thead>
-              <tbody id="fileList">
-                <!-- Wird per JavaScript geladen -->
-              </tbody>
-            </table>
-
-            <h2>📋 Zusätzliche Dateien</h2>
-            <table>
-              <thead>
-                <tr>
-                  <th>Datei</th>
-                  <th>Beschreibung</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><a href="laender.txt">laender.txt</a></td>
-                  <td>Liste aller verfügbaren Länder-Codes</td>
-                </tr>
-                <tr>
-                  <td><a href="namen.txt">namen.txt</a></td>
-                  <td>Ländernamen mit Codes</td>
-                </tr>
-                <tr>
-                  <td><a href="stats.json">stats.json</a></td>
-                  <td>Detaillierte Statistiken im JSON-Format</td>
-                </tr>
-              </tbody>
+              <tbody id="fileList"></tbody>
             </table>
 
             <div class="footer">
-              <p>Generiert aus dem iptv-org/epg Fork • Tägliche Aktualisierung um 2:00 UTC</p>
+              <p>Generiert aus dem iptv-org/epg Fork • Tägliche Aktualisierung</p>
             </div>
 
             <script>
-              async function loadData() {
-                try {
-                  const stats = await fetch('stats.json').then(r => r.json());
-                  
-                  document.getElementById('totalCountries').textContent = stats.totalCountries;
-                  document.getElementById('lastUpdate').textContent = new Date(stats.lastUpdate).toLocaleString('de-DE');
-                  
+              fetch('stats.json')
+                .then(r => r.json())
+                .then(stats => {
                   let totalSize = 0;
-                  const fileList = document.getElementById('fileList');
+                  let html = '';
                   
-                  for (const country of stats.countries) {
-                    totalSize += country.size;
-                    
-                    const row = document.createElement('tr');
-                    let countryName = country.country;
-                    
-                    // Versuche Ländernamen zu laden
-                    try {
-                      const names = await fetch('namen.txt').then(r => r.text());
-                      const lines = names.split('\n');
-                      for (const line of lines) {
-                        const [name, code] = line.split('|');
-                        if (code === country.country) {
-                          countryName = name;
-                          break;
-                        }
-                      }
-                    } catch (e) {}
-                    
-                    row.innerHTML = `
-                      <td>${countryName}</td>
-                      <td><a href="${country.file}">${country.file}</a></td>
-                      <td>${formatBytes(country.size)}</td>
-                      <td>${country.programmes.toLocaleString()}</td>
-                    `;
-                    fileList.appendChild(row);
-                  }
+                  stats.countries.forEach(c => {
+                    totalSize += c.size;
+                    html += `<tr><td>${c.country}</td><td><a href="${c.file}">${c.file}</a></td><td>${formatBytes(c.size)}</td><td>${c.programmes}</td></tr>`;
+                  });
                   
-                  document.getElementById('totalSize').textContent = formatBytes(totalSize);
-                  
-                } catch (error) {
-                  console.error('Fehler:', error);
-                }
-              }
+                  document.getElementById('fileList').innerHTML = html;
+                  document.getElementById('stats').innerHTML = `
+                    <p><strong>Letztes Update:</strong> ${new Date(stats.lastUpdate).toLocaleString()}</p>
+                    <p><strong>Länder:</strong> ${stats.totalCountries}</p>
+                    <p><strong>Gesamtgröße:</strong> ${formatBytes(totalSize)}</p>
+                  `;
+                });
               
-              function formatBytes(bytes) {
-                if (bytes === 0) return '0 Bytes';
-                const k = 1024;
-                const sizes = ['Bytes', 'KB', 'MB', 'GB'];
-                const i = Math.floor(Math.log(bytes) / Math.log(k));
-                return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+              function formatBytes(b) { 
+                if(b==0) return '0 Bytes'; 
+                const i=Math.floor(Math.log(b)/Math.log(1024)); 
+                return parseFloat((b/Math.pow(1024,i)).toFixed(2))+' '+['Bytes','KB','MB','GB'][i]; 
               }
-              
-              loadData();
             </script>
           </body>
           </html>
           EOF
           
           echo "✅ index.html erstellt"
+          ls -la
       
       - name: 📤 Nach Cloudflare Pages deployen
         uses: cloudflare/pages-action@v1
@@ -417,27 +277,3 @@ jobs:
           projectName: "iptv-epg-data"
           directory: public
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-      
-      - name: ✅ Abschluss
-        run: |
-          echo ""
-          echo "================================================"
-          echo "✅ EPG aus iptv-org Fork generiert!"
-          echo "================================================"
-          echo ""
-          echo "📊 Verfügbar unter:"
-          echo "   • https://iptv-epg-data.pages.dev/epg/index.html"
-          echo "   • https://iptv-epg-data.pages.dev/epg/laender.txt"
-          echo "   • https://iptv-epg-data.pages.dev/epg/namen.txt"
-          echo "   • https://iptv-epg-data.pages.dev/epg/stats.json"
-          echo ""
-          echo "📺 EPG für einzelne Länder:"
-          echo "   • https://iptv-epg-data.pages.dev/epg/de.xml"
-          echo "   • https://iptv-epg-data.pages.dev/epg/at.xml"
-          echo "   • https://iptv-epg-data.pages.dev/epg/ch.xml"
-          echo "   • https://iptv-epg-data.pages.dev/epg/fr.xml"
-          echo "   • https://iptv-epg-data.pages.dev/epg/it.xml"
-          echo "   • https://iptv-epg-data.pages.dev/epg/es.xml"
-          echo "   • https://iptv-epg-data.pages.dev/epg/gb.xml"
-          echo "   • https://iptv-epg-data.pages.dev/epg/us.xml"
-          echo "================================================"
