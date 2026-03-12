@@ -27,25 +27,33 @@ jobs:
           # Test 2: Welche Sites sind verfügbar?
           echo ""
           echo "Test 2: Verfügbare Sites für Deutschland:"
-          ls -la sites/ | grep -i "de\|ard\|zdf\|rtl" | head -10
+          ls -la sites/ | grep -i "de\|ard\|zdf\|rtl" | head -10 || echo "Keine deutschen Sites gefunden"
           
           # Test 3: Versuche ARD mit minimalen Optionen
           echo ""
           echo "Test 3: Versuche ARD EPG (minimal)..."
           mkdir -p ../public
-          npm run grab --- --site=ard.de --output=../public/ard-debug.xml --days=1 --maxConnections=1 --timeout=10000 || echo "⚠️ ARD fehlgeschlagen"
+          if npm run grab --- --site=ard.de --output=../public/ard-debug.xml --days=1 --maxConnections=1 --timeout=10000; then
+            echo "✅ ARD erfolgreich"
+          else
+            echo "⚠️ ARD fehlgeschlagen"
+          fi
           
           # Test 4: Versuche allgemeine deutsche Quelle
           echo ""
           echo "Test 4: Versuche allgemeine deutsche Quelle..."
-          npm run grab --- --site=de --output=../public/de-debug.xml --days=1 --maxConnections=1 --timeout=10000 || echo "⚠️ DE fehlgeschlagen"
+          if npm run grab --- --site=de --output=../public/de-debug.xml --days=1 --maxConnections=1 --timeout=10000; then
+            echo "✅ DE erfolgreich"
+          else
+            echo "⚠️ DE fehlgeschlagen"
+          fi
           
           cd ..
           
           # Test 5: Zeige Ergebnisse
           echo ""
           echo "Test 5: Generierte Dateien:"
-          ls -la public/ || echo "Keine Dateien in public/"
+          ls -la public/ || echo "❌ Keine Dateien in public/"
           
           # Test 6: Zeige Logs falls vorhanden
           echo ""
@@ -53,14 +61,27 @@ jobs:
           if [ -f "epg/logs.txt" ]; then
             cat epg/logs.txt
           else
-            echo "Keine Logs gefunden"
+            echo "ℹ️ Keine Logs gefunden"
           fi
       
-      - name: 📤 Ergebnisse hochladen
-        uses: actions/upload-artifact@v3
+      - name: 📤 Ergebnisse hochladen (v4)
+        uses: actions/upload-artifact@v4
         with:
           name: epg-diagnose-logs
           path: |
             public/
             epg/logs.txt
             epg/sites/
+          retention-days: 7
+          if-no-files-found: warn
+      
+      - name: 📋 Zusammenfassung
+        run: |
+          echo ""
+          echo "================================================"
+          echo "📊 Diagnose abgeschlossen"
+          echo "================================================"
+          echo "✅ Logs wurden als Artifact hochgeladen"
+          echo "📁 Sie können sie hier herunterladen:"
+          echo "   https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          echo "================================================"
