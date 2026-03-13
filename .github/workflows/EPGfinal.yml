@@ -32,18 +32,16 @@ jobs:
           else
             echo "⚠️ ARD fehlgeschlagen - erstelle Testdaten"
             cd ..
-            cat > public/epg/de/ard.de.xml << EOF
-<?xml version="1.0" encoding="UTF-8"?>
-<tv>
-  <channel id="ard.de">
-    <display-name>ARD</display-name>
-  </channel>
-  <programme channel="ard.de" start="20240313180000 +0100" stop="20240313184500 +0100">
-    <title>Tagesschau</title>
-    <desc>Die Nachrichten</desc>
-  </programme>
-</tv>
-EOF
+            echo '<?xml version="1.0" encoding="UTF-8"?>' > public/epg/de/ard.de.xml
+            echo '<tv>' >> public/epg/de/ard.de.xml
+            echo '  <channel id="ard.de">' >> public/epg/de/ard.de.xml
+            echo '    <display-name>ARD</display-name>' >> public/epg/de/ard.de.xml
+            echo '  </channel>' >> public/epg/de/ard.de.xml
+            echo '  <programme channel="ard.de" start="20240313180000 +0100" stop="20240313184500 +0100">' >> public/epg/de/ard.de.xml
+            echo '    <title>Tagesschau</title>' >> public/epg/de/ard.de.xml
+            echo '    <desc>Die Nachrichten</desc>' >> public/epg/de/ard.de.xml
+            echo '  </programme>' >> public/epg/de/ard.de.xml
+            echo '</tv>' >> public/epg/de/ard.de.xml
           fi
           cd ..
       
@@ -54,31 +52,27 @@ EOF
           # Prüfe ob Datei existiert
           if [ ! -f "ard.de.xml" ]; then
             echo "⚠️ Keine EPG-Datei gefunden - erstelle Testdaten"
-            cat > ard.de.xml << EOF
-<?xml version="1.0" encoding="UTF-8"?>
-<tv>
-  <channel id="ard.de">
-    <display-name>ARD</display-name>
-  </channel>
-</tv>
-EOF
+            echo '<?xml version="1.0" encoding="UTF-8"?>' > ard.de.xml
+            echo '<tv>' >> ard.de.xml
+            echo '  <channel id="ard.de">' >> ard.de.xml
+            echo '    <display-name>ARD</display-name>' >> ard.de.xml
+            echo '  </channel>' >> ard.de.xml
+            echo '</tv>' >> ard.de.xml
           fi
           
           # Kopie als gesamt.xml
           cp ard.de.xml gesamt.xml
           
           # Index.json erstellen
-          cat > index.json << EOF
-{
-  "lastUpdate": "$(date -Iseconds)",
-  "country": "Deutschland",
-  "countryCode": "de",
-  "totalChannels": 1,
-  "channels": [
-    {"channel": "ard.de", "file": "ard.de.xml"}
-  ]
-}
-EOF
+          echo "{" > index.json
+          echo '  "lastUpdate": "'$(date -Iseconds)'",' >> index.json
+          echo '  "country": "Deutschland",' >> index.json
+          echo '  "countryCode": "de",' >> index.json
+          echo '  "totalChannels": 1,' >> index.json
+          echo '  "channels": [' >> index.json
+          echo '    {"channel": "ard.de", "file": "ard.de.xml"}' >> index.json
+          echo '  ]' >> index.json
+          echo "}" >> index.json
           
           echo "✅ Dateien erstellt:"
           ls -la
