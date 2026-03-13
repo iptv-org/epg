@@ -2,19 +2,16 @@ name: EPG für 6 Länder generieren
 
 on:
   schedule:
-    # Läuft täglich um 2:00 Uhr UTC
     - cron: '0 2 * * *'
   workflow_dispatch:
 
 jobs:
   generate-epg:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
-    
     strategy:
       matrix:
         country: [de, it, es, fr, ar, br]
-      max-parallel: 2  # Maximal 2 Länder gleichzeitig
+      max-parallel: 2
     
     steps:
       - name: 📦 Repository auschecken
@@ -40,206 +37,206 @@ jobs:
           
           # Deutschland
           if [ "${{ matrix.country }}" = "de" ]; then
-            cat > epg-custom/de-channels.xml << 'EOF'
-            <?xml version="1.0" encoding="UTF-8"?>
-            <channels>
-              <!-- Öffentlich-rechtliche -->
-              <channel site="ard.de" lang="de" xmltv_id="DasErste.de" site_id="das-erste">Das Erste</channel>
-              <channel site="zdf.de" lang="de" xmltv_id="ZDF.de" site_id="zdf">ZDF</channel>
-              <channel site="3sat.de" lang="de" xmltv_id="3sat.de" site_id="3sat">3sat</channel>
-              <channel site="arte.tv" lang="de" xmltv_id="arte.tv" site_id="arte">arte</channel>
-              <channel site="kika.de" lang="de" xmltv_id="kika.de" site_id="kika">KiKA</channel>
-              <channel site="phoenix.de" lang="de" xmltv_id="phoenix.de" site_id="phoenix">phoenix</channel>
-              
-              <!-- ARD Regional -->
-              <channel site="br.de" lang="de" xmltv_id="BR.de" site_id="br-fernsehen">BR Fernsehen</channel>
-              <channel site="hr-fernsehen.de" lang="de" xmltv_id="hr-fernsehen.de" site_id="hr-fernsehen">hr-fernsehen</channel>
-              <channel site="mdr.de" lang="de" xmltv_id="MDR.de" site_id="mdr-fernsehen">MDR Fernsehen</channel>
-              <channel site="ndr.de" lang="de" xmltv_id="NDR.de" site_id="ndr-fernsehen">NDR Fernsehen</channel>
-              <channel site="rbb-online.de" lang="de" xmltv_id="rbb-online.de" site_id="rbb-fernsehen">rbb Fernsehen</channel>
-              <channel site="sr.de" lang="de" xmltv_id="SR.de" site_id="sr-fernsehen">SR Fernsehen</channel>
-              <channel site="swr.de" lang="de" xmltv_id="SWR.de" site_id="swr-fernsehen">SWR Fernsehen</channel>
-              <channel site="wdr.de" lang="de" xmltv_id="WDR.de" site_id="wdr-fernsehen">WDR Fernsehen</channel>
-              
-              <!-- Private Sender -->
-              <channel site="rtl.de" lang="de" xmltv_id="RTL.de" site_id="rtl">RTL</channel>
-              <channel site="rtl2.de" lang="de" xmltv_id="RTL2.de" site_id="rtl2">RTL2</channel>
-              <channel site="vox.de" lang="de" xmltv_id="VOX.de" site_id="vox">VOX</channel>
-              <channel site="ntv.de" lang="de" xmltv_id="n-tv.de" site_id="n-tv">n-tv</channel>
-              <channel site="welt.de" lang="de" xmltv_id="WELT.de" site_id="welt">WELT</channel>
-              <channel site="sat1.de" lang="de" xmltv_id="Sat1.de" site_id="sat1">SAT.1</channel>
-              <channel site="prosieben.de" lang="de" xmltv_id="ProSieben.de" site_id="prosieben">ProSieben</channel>
-              <channel site="kabeleins.de" lang="de" xmltv_id="kabel-eins.de" site_id="kabel-eins">kabel eins</channel>
-              <channel site="sixx.de" lang="de" xmltv_id="sixx.de" site_id="sixx">sixx</channel>
-              <channel site="dmax.de" lang="de" xmltv_id="DMAX.de" site_id="dmax">DMAX</channel>
-              <channel site="tele5.de" lang="de" xmltv_id="Tele5.de" site_id="tele-5">Tele 5</channel>
-            </channels>
-            EOF
+            cat > epg-custom/de-channels.xml <<'EOF'
+<?xml version="1.0" encoding="UTF-8"?>
+<channels>
+  <!-- Öffentlich-rechtliche -->
+  <channel site="ard.de" lang="de" xmltv_id="DasErste.de" site_id="das-erste">Das Erste</channel>
+  <channel site="zdf.de" lang="de" xmltv_id="ZDF.de" site_id="zdf">ZDF</channel>
+  <channel site="3sat.de" lang="de" xmltv_id="3sat.de" site_id="3sat">3sat</channel>
+  <channel site="arte.tv" lang="de" xmltv_id="arte.tv" site_id="arte">arte</channel>
+  <channel site="kika.de" lang="de" xmltv_id="kika.de" site_id="kika">KiKA</channel>
+  <channel site="phoenix.de" lang="de" xmltv_id="phoenix.de" site_id="phoenix">phoenix</channel>
+  
+  <!-- ARD Regional -->
+  <channel site="br.de" lang="de" xmltv_id="BR.de" site_id="br-fernsehen">BR Fernsehen</channel>
+  <channel site="hr-fernsehen.de" lang="de" xmltv_id="hr-fernsehen.de" site_id="hr-fernsehen">hr-fernsehen</channel>
+  <channel site="mdr.de" lang="de" xmltv_id="MDR.de" site_id="mdr-fernsehen">MDR Fernsehen</channel>
+  <channel site="ndr.de" lang="de" xmltv_id="NDR.de" site_id="ndr-fernsehen">NDR Fernsehen</channel>
+  <channel site="rbb-online.de" lang="de" xmltv_id="rbb-online.de" site_id="rbb-fernsehen">rbb Fernsehen</channel>
+  <channel site="sr.de" lang="de" xmltv_id="SR.de" site_id="sr-fernsehen">SR Fernsehen</channel>
+  <channel site="swr.de" lang="de" xmltv_id="SWR.de" site_id="swr-fernsehen">SWR Fernsehen</channel>
+  <channel site="wdr.de" lang="de" xmltv_id="WDR.de" site_id="wdr-fernsehen">WDR Fernsehen</channel>
+  
+  <!-- Private Sender -->
+  <channel site="rtl.de" lang="de" xmltv_id="RTL.de" site_id="rtl">RTL</channel>
+  <channel site="rtl2.de" lang="de" xmltv_id="RTL2.de" site_id="rtl2">RTL2</channel>
+  <channel site="vox.de" lang="de" xmltv_id="VOX.de" site_id="vox">VOX</channel>
+  <channel site="ntv.de" lang="de" xmltv_id="n-tv.de" site_id="n-tv">n-tv</channel>
+  <channel site="welt.de" lang="de" xmltv_id="WELT.de" site_id="welt">WELT</channel>
+  <channel site="sat1.de" lang="de" xmltv_id="Sat1.de" site_id="sat1">SAT.1</channel>
+  <channel site="prosieben.de" lang="de" xmltv_id="ProSieben.de" site_id="prosieben">ProSieben</channel>
+  <channel site="kabeleins.de" lang="de" xmltv_id="kabel-eins.de" site_id="kabel-eins">kabel eins</channel>
+  <channel site="sixx.de" lang="de" xmltv_id="sixx.de" site_id="sixx">sixx</channel>
+  <channel site="dmax.de" lang="de" xmltv_id="DMAX.de" site_id="dmax">DMAX</channel>
+  <channel site="tele5.de" lang="de" xmltv_id="Tele5.de" site_id="tele-5">Tele 5</channel>
+</channels>
+EOF
           fi
           
           # Italien
           if [ "${{ matrix.country }}" = "it" ]; then
-            cat > epg-custom/it-channels.xml << 'EOF'
-            <?xml version="1.0" encoding="UTF-8"?>
-            <channels>
-              <!-- RAI -->
-              <channel site="rai.it" lang="it" xmltv_id="Rai1.it" site_id="rai-1">Rai 1</channel>
-              <channel site="rai.it" lang="it" xmltv_id="Rai2.it" site_id="rai-2">Rai 2</channel>
-              <channel site="rai.it" lang="it" xmltv_id="Rai3.it" site_id="rai-3">Rai 3</channel>
-              <channel site="rai.it" lang="it" xmltv_id="Rai4.it" site_id="rai-4">Rai 4</channel>
-              <channel site="rai.it" lang="it" xmltv_id="Rai5.it" site_id="rai-5">Rai 5</channel>
-              <channel site="rai.it" lang="it" xmltv_id="RaiNews24.it" site_id="rai-news24">Rai News 24</channel>
-              <channel site="rai.it" lang="it" xmltv_id="RaiStoria.it" site_id="rai-storia">Rai Storia</channel>
-              <channel site="rai.it" lang="it" xmltv_id="RaiSport.it" site_id="rai-sport">Rai Sport</channel>
-              <channel site="rai.it" lang="it" xmltv_id="RaiGulp.it" site_id="rai-gulp">Rai Gulp</channel>
-              <channel site="rai.it" lang="it" xmltv_id="RaiYoyo.it" site_id="rai-yoyo">Rai Yoyo</channel>
-              
-              <!-- Mediaset -->
-              <channel site="mediaset.it" lang="it" xmltv_id="Canale5.it" site_id="canale-5">Canale 5</channel>
-              <channel site="mediaset.it" lang="it" xmltv_id="Italia1.it" site_id="italia-1">Italia 1</channel>
-              <channel site="mediaset.it" lang="it" xmltv_id="Rete4.it" site_id="rete-4">Rete 4</channel>
-              <channel site="mediaset.it" lang="it" xmltv_id="La5.it" site_id="la5">La5</channel>
-              <channel site="mediaset.it" lang="it" xmltv_id="Iris.it" site_id="iris">Iris</channel>
-              <channel site="mediaset.it" lang="it" xmltv_id="TopCrime.it" site_id="top-crime">Top Crime</channel>
-              <channel site="mediaset.it" lang="it" xmltv_id="MediasetExtra.it" site_id="mediaset-extra">Mediaset Extra</channel>
-              
-              <!-- Weitere -->
-              <channel site="la7.it" lang="it" xmltv_id="La7.it" site_id="la7">LA7</channel>
-              <channel site="la7.it" lang="it" xmltv_id="La7d.it" site_id="la7d">LA7d</channel>
-              <channel site="sky.it" lang="it" xmltv_id="SkyTG24.it" site_id="sky-tg24">Sky TG24</channel>
-              <channel site="sky.it" lang="it" xmltv_id="SkySport1.it" site_id="sky-sport-1">Sky Sport 1</channel>
-              <channel site="sky.it" lang="it" xmltv_id="SkySport2.it" site_id="sky-sport-2">Sky Sport 2</channel>
-              <channel site="sky.it" lang="it" xmltv_id="SkySport3.it" site_id="sky-sport-3">Sky Sport 3</channel>
-              <channel site="sky.it" lang="it" xmltv_id="SkyCalcio.it" site_id="sky-calcio">Sky Calcio</channel>
-            </channels>
-            EOF
+            cat > epg-custom/it-channels.xml <<'EOF'
+<?xml version="1.0" encoding="UTF-8"?>
+<channels>
+  <!-- RAI -->
+  <channel site="rai.it" lang="it" xmltv_id="Rai1.it" site_id="rai-1">Rai 1</channel>
+  <channel site="rai.it" lang="it" xmltv_id="Rai2.it" site_id="rai-2">Rai 2</channel>
+  <channel site="rai.it" lang="it" xmltv_id="Rai3.it" site_id="rai-3">Rai 3</channel>
+  <channel site="rai.it" lang="it" xmltv_id="Rai4.it" site_id="rai-4">Rai 4</channel>
+  <channel site="rai.it" lang="it" xmltv_id="Rai5.it" site_id="rai-5">Rai 5</channel>
+  <channel site="rai.it" lang="it" xmltv_id="RaiNews24.it" site_id="rai-news24">Rai News 24</channel>
+  <channel site="rai.it" lang="it" xmltv_id="RaiStoria.it" site_id="rai-storia">Rai Storia</channel>
+  <channel site="rai.it" lang="it" xmltv_id="RaiSport.it" site_id="rai-sport">Rai Sport</channel>
+  <channel site="rai.it" lang="it" xmltv_id="RaiGulp.it" site_id="rai-gulp">Rai Gulp</channel>
+  <channel site="rai.it" lang="it" xmltv_id="RaiYoyo.it" site_id="rai-yoyo">Rai Yoyo</channel>
+  
+  <!-- Mediaset -->
+  <channel site="mediaset.it" lang="it" xmltv_id="Canale5.it" site_id="canale-5">Canale 5</channel>
+  <channel site="mediaset.it" lang="it" xmltv_id="Italia1.it" site_id="italia-1">Italia 1</channel>
+  <channel site="mediaset.it" lang="it" xmltv_id="Rete4.it" site_id="rete-4">Rete 4</channel>
+  <channel site="mediaset.it" lang="it" xmltv_id="La5.it" site_id="la5">La5</channel>
+  <channel site="mediaset.it" lang="it" xmltv_id="Iris.it" site_id="iris">Iris</channel>
+  <channel site="mediaset.it" lang="it" xmltv_id="TopCrime.it" site_id="top-crime">Top Crime</channel>
+  <channel site="mediaset.it" lang="it" xmltv_id="MediasetExtra.it" site_id="mediaset-extra">Mediaset Extra</channel>
+  
+  <!-- Weitere -->
+  <channel site="la7.it" lang="it" xmltv_id="La7.it" site_id="la7">LA7</channel>
+  <channel site="la7.it" lang="it" xmltv_id="La7d.it" site_id="la7d">LA7d</channel>
+  <channel site="sky.it" lang="it" xmltv_id="SkyTG24.it" site_id="sky-tg24">Sky TG24</channel>
+  <channel site="sky.it" lang="it" xmltv_id="SkySport1.it" site_id="sky-sport-1">Sky Sport 1</channel>
+  <channel site="sky.it" lang="it" xmltv_id="SkySport2.it" site_id="sky-sport-2">Sky Sport 2</channel>
+  <channel site="sky.it" lang="it" xmltv_id="SkySport3.it" site_id="sky-sport-3">Sky Sport 3</channel>
+  <channel site="sky.it" lang="it" xmltv_id="SkyCalcio.it" site_id="sky-calcio">Sky Calcio</channel>
+</channels>
+EOF
           fi
           
           # Spanien
           if [ "${{ matrix.country }}" = "es" ]; then
-            cat > epg-custom/es-channels.xml << 'EOF'
-            <?xml version="1.0" encoding="UTF-8"?>
-            <channels>
-              <!-- RTVE -->
-              <channel site="rtve.es" lang="es" xmltv_id="La1.es" site_id="la-1">La 1</channel>
-              <channel site="rtve.es" lang="es" xmltv_id="La2.es" site_id="la-2">La 2</channel>
-              <channel site="rtve.es" lang="es" xmltv_id="Clan.es" site_id="clan">Clan</channel>
-              <channel site="rtve.es" lang="es" xmltv_id="24h.es" site_id="24h">24h</channel>
-              <channel site="rtve.es" lang="es" xmltv_id="Teledeporte.es" site_id="teledeporte">Teledeporte</channel>
-              
-              <!-- Atresmedia -->
-              <channel site="antena3.com" lang="es" xmltv_id="Antena3.es" site_id="antena-3">Antena 3</channel>
-              <channel site="lasexta.com" lang="es" xmltv_id="LaSexta.es" site_id="la-sexta">laSexta</channel>
-              <channel site="neox.atresmedia.com" lang="es" xmltv_id="Neox.es" site_id="neox">Neox</channel>
-              <channel site="nova.atresmedia.com" lang="es" xmltv_id="Nova.es" site_id="nova">Nova</channel>
-              <channel site="mega.atresmedia.com" lang="es" xmltv_id="Mega.es" site_id="mega">Mega</channel>
-              <channel site="atreseries.atresmedia.com" lang="es" xmltv_id="Atreseries.es" site_id="atreseries">Atreseries</channel>
-              
-              <!-- Mediaset España -->
-              <channel site="telecinco.es" lang="es" xmltv_id="Telecinco.es" site_id="telecinco">Telecinco</channel>
-              <channel site="cuatro.com" lang="es" xmltv_id="Cuatro.es" site_id="cuatro">Cuatro</channel>
-              <channel site="factoríadeficcion.com" lang="es" xmltv_id="FDF.es" site_id="fdf">FDF</channel>
-              <channel site="divinity.es" lang="es" xmltv_id="Divinity.es" site_id="divinity">Divinity</channel>
-              <channel site="energy.es" lang="es" xmltv_id="Energy.es" site_id="energy">Energy</channel>
-              <channel site="bemad.es" lang="es" xmltv_id="BeMad.es" site_id="be-mad">Be Mad</channel>
-            </channels>
-            EOF
+            cat > epg-custom/es-channels.xml <<'EOF'
+<?xml version="1.0" encoding="UTF-8"?>
+<channels>
+  <!-- RTVE -->
+  <channel site="rtve.es" lang="es" xmltv_id="La1.es" site_id="la-1">La 1</channel>
+  <channel site="rtve.es" lang="es" xmltv_id="La2.es" site_id="la-2">La 2</channel>
+  <channel site="rtve.es" lang="es" xmltv_id="Clan.es" site_id="clan">Clan</channel>
+  <channel site="rtve.es" lang="es" xmltv_id="24h.es" site_id="24h">24h</channel>
+  <channel site="rtve.es" lang="es" xmltv_id="Teledeporte.es" site_id="teledeporte">Teledeporte</channel>
+  
+  <!-- Atresmedia -->
+  <channel site="antena3.com" lang="es" xmltv_id="Antena3.es" site_id="antena-3">Antena 3</channel>
+  <channel site="lasexta.com" lang="es" xmltv_id="LaSexta.es" site_id="la-sexta">laSexta</channel>
+  <channel site="neox.atresmedia.com" lang="es" xmltv_id="Neox.es" site_id="neox">Neox</channel>
+  <channel site="nova.atresmedia.com" lang="es" xmltv_id="Nova.es" site_id="nova">Nova</channel>
+  <channel site="mega.atresmedia.com" lang="es" xmltv_id="Mega.es" site_id="mega">Mega</channel>
+  <channel site="atreseries.atresmedia.com" lang="es" xmltv_id="Atreseries.es" site_id="atreseries">Atreseries</channel>
+  
+  <!-- Mediaset España -->
+  <channel site="telecinco.es" lang="es" xmltv_id="Telecinco.es" site_id="telecinco">Telecinco</channel>
+  <channel site="cuatro.com" lang="es" xmltv_id="Cuatro.es" site_id="cuatro">Cuatro</channel>
+  <channel site="factoríadeficcion.com" lang="es" xmltv_id="FDF.es" site_id="fdf">FDF</channel>
+  <channel site="divinity.es" lang="es" xmltv_id="Divinity.es" site_id="divinity">Divinity</channel>
+  <channel site="energy.es" lang="es" xmltv_id="Energy.es" site_id="energy">Energy</channel>
+  <channel site="bemad.es" lang="es" xmltv_id="BeMad.es" site_id="be-mad">Be Mad</channel>
+</channels>
+EOF
           fi
           
           # Frankreich
           if [ "${{ matrix.country }}" = "fr" ]; then
-            cat > epg-custom/fr-channels.xml << 'EOF'
-            <?xml version="1.0" encoding="UTF-8"?>
-            <channels>
-              <!-- France Télévisions -->
-              <channel site="francetv.fr" lang="fr" xmltv_id="France2.fr" site_id="france-2">France 2</channel>
-              <channel site="francetv.fr" lang="fr" xmltv_id="France3.fr" site_id="france-3">France 3</channel>
-              <channel site="francetv.fr" lang="fr" xmltv_id="France4.fr" site_id="france-4">France 4</channel>
-              <channel site="francetv.fr" lang="fr" xmltv_id="France5.fr" site_id="france-5">France 5</channel>
-              <channel site="francetv.fr" lang="fr" xmltv_id="FranceInfo.fr" site_id="france-info">France Info</channel>
-              <channel site="francetv.fr" lang="fr" xmltv_id="OutreMer1ere.fr" site_id="la-1ere">La 1ère</channel>
-              
-              <!-- TF1 Group -->
-              <channel site="tf1.fr" lang="fr" xmltv_id="TF1.fr" site_id="tf1">TF1</channel>
-              <channel site="tfx.fr" lang="fr" xmltv_id="TFX.fr" site_id="tfx">TFX</channel>
-              <channel site="tmc.fr" lang="fr" xmltv_id="TMC.fr" site_id="tmc">TMC</channel>
-              
-              <!-- M6 Group -->
-              <channel site="m6.fr" lang="fr" xmltv_id="M6.fr" site_id="m6">M6</channel>
-              <channel site="6ter.fr" lang="fr" xmltv_id="6ter.fr" site_id="6ter">6ter</channel>
-              <channel site="gulli.fr" lang="fr" xmltv_id="Gulli.fr" site_id="gulli">Gulli</channel>
-              <channel site="w9.fr" lang="fr" xmltv_id="W9.fr" site_id="w9">W9</channel>
-              
-              <!-- Canal+ Group -->
-              <channel site="canalplus.com" lang="fr" xmltv_id="CanalPlus.fr" site_id="canal-plus">Canal+</channel>
-              <channel site="canalplus.com" lang="fr" xmltv_id="C8.fr" site_id="c8">C8</channel>
-              <channel site="canalplus.com" lang="fr" xmltv_id="CStar.fr" site_id="cstar">CStar</channel>
-              
-              <!-- Weitere -->
-              <channel site="bfmtv.com" lang="fr" xmltv_id="BFMTV.fr" site_id="bfmtv">BFM TV</channel>
-              <channel site="rmc.fr" lang="fr" xmltv_id="RMCStory.fr" site_id="rmc-story">RMC Story</channel>
-              <channel site="rmc.fr" lang="fr" xmltv_id="RMCDecouverte.fr" site_id="rmc-decouverte">RMC Découverte</channel>
-              <channel site="rmc.fr" lang="fr" xmltv_id="BFMBusiness.fr" site_id="bfm-business">BFM Business</channel>
-            </channels>
-            EOF
+            cat > epg-custom/fr-channels.xml <<'EOF'
+<?xml version="1.0" encoding="UTF-8"?>
+<channels>
+  <!-- France Télévisions -->
+  <channel site="francetv.fr" lang="fr" xmltv_id="France2.fr" site_id="france-2">France 2</channel>
+  <channel site="francetv.fr" lang="fr" xmltv_id="France3.fr" site_id="france-3">France 3</channel>
+  <channel site="francetv.fr" lang="fr" xmltv_id="France4.fr" site_id="france-4">France 4</channel>
+  <channel site="francetv.fr" lang="fr" xmltv_id="France5.fr" site_id="france-5">France 5</channel>
+  <channel site="francetv.fr" lang="fr" xmltv_id="FranceInfo.fr" site_id="france-info">France Info</channel>
+  <channel site="francetv.fr" lang="fr" xmltv_id="OutreMer1ere.fr" site_id="la-1ere">La 1ère</channel>
+  
+  <!-- TF1 Group -->
+  <channel site="tf1.fr" lang="fr" xmltv_id="TF1.fr" site_id="tf1">TF1</channel>
+  <channel site="tfx.fr" lang="fr" xmltv_id="TFX.fr" site_id="tfx">TFX</channel>
+  <channel site="tmc.fr" lang="fr" xmltv_id="TMC.fr" site_id="tmc">TMC</channel>
+  
+  <!-- M6 Group -->
+  <channel site="m6.fr" lang="fr" xmltv_id="M6.fr" site_id="m6">M6</channel>
+  <channel site="6ter.fr" lang="fr" xmltv_id="6ter.fr" site_id="6ter">6ter</channel>
+  <channel site="gulli.fr" lang="fr" xmltv_id="Gulli.fr" site_id="gulli">Gulli</channel>
+  <channel site="w9.fr" lang="fr" xmltv_id="W9.fr" site_id="w9">W9</channel>
+  
+  <!-- Canal+ Group -->
+  <channel site="canalplus.com" lang="fr" xmltv_id="CanalPlus.fr" site_id="canal-plus">Canal+</channel>
+  <channel site="canalplus.com" lang="fr" xmltv_id="C8.fr" site_id="c8">C8</channel>
+  <channel site="canalplus.com" lang="fr" xmltv_id="CStar.fr" site_id="cstar">CStar</channel>
+  
+  <!-- Weitere -->
+  <channel site="bfmtv.com" lang="fr" xmltv_id="BFMTV.fr" site_id="bfmtv">BFM TV</channel>
+  <channel site="rmc.fr" lang="fr" xmltv_id="RMCStory.fr" site_id="rmc-story">RMC Story</channel>
+  <channel site="rmc.fr" lang="fr" xmltv_id="RMCDecouverte.fr" site_id="rmc-decouverte">RMC Découverte</channel>
+  <channel site="rmc.fr" lang="fr" xmltv_id="BFMBusiness.fr" site_id="bfm-business">BFM Business</channel>
+</channels>
+EOF
           fi
           
           # Argentinien
           if [ "${{ matrix.country }}" = "ar" ]; then
-            cat > epg-custom/ar-channels.xml << 'EOF'
-            <?xml version="1.0" encoding="UTF-8"?>
-            <channels>
-              <!-- Öffentlich-rechtliche -->
-              <channel site="tvpublica.com.ar" lang="es" xmltv_id="TVPublica.ar" site_id="tv-publica">TV Pública</channel>
-              <channel site="encuentro.gov.ar" lang="es" xmltv_id="Encuentro.ar" site_id="encuentro">Encuentro</channel>
-              <channel site="pakapaka.gov.ar" lang="es" xmltv_id="Pakapaka.ar" site_id="pakapaka">Pakapaka</channel>
-              <channel site="depor.tv" lang="es" xmltv_id="DeporTV.ar" site_id="deportv">DeporTV</channel>
-              
-              <!-- Private Sender -->
-              <channel site="telefe.com" lang="es" xmltv_id="Telefe.ar" site_id="telefe">Telefe</channel>
-              <channel site="eltrece.tv" lang="es" xmltv_id="ElTrece.ar" site_id="eltrece">el trece</channel>
-              <channel site="americatv.com.ar" lang="es" xmltv_id="AmericaTV.ar" site_id="america">América TV</channel>
-              <channel site="canal9.com.ar" lang="es" xmltv_id="Canal9.ar" site_id="canal-9">Canal 9</channel>
-              <channel site="canal26.com.ar" lang="es" xmltv_id="Canal26.ar" site_id="canal-26">Canal 26</channel>
-              <channel site="cronica.com.ar" lang="es" xmltv_id="CronicaTV.ar" site_id="cronica">Crónica TV</channel>
-              <channel site="tn.com.ar" lang="es" xmltv_id="TN.ar" site_id="tn">Todo Noticias</channel>
-              <channel site="tycsports.com" lang="es" xmltv_id="TyCSports.ar" site_id="tyc-sports">TyC Sports</channel>
-              <channel site="espn.com.ar" lang="es" xmltv_id="ESPNArgentina.ar" site_id="espn-argentina">ESPN Argentina</channel>
-            </channels>
-            EOF
+            cat > epg-custom/ar-channels.xml <<'EOF'
+<?xml version="1.0" encoding="UTF-8"?>
+<channels>
+  <!-- Öffentlich-rechtliche -->
+  <channel site="tvpublica.com.ar" lang="es" xmltv_id="TVPublica.ar" site_id="tv-publica">TV Pública</channel>
+  <channel site="encuentro.gov.ar" lang="es" xmltv_id="Encuentro.ar" site_id="encuentro">Encuentro</channel>
+  <channel site="pakapaka.gov.ar" lang="es" xmltv_id="Pakapaka.ar" site_id="pakapaka">Pakapaka</channel>
+  <channel site="depor.tv" lang="es" xmltv_id="DeporTV.ar" site_id="deportv">DeporTV</channel>
+  
+  <!-- Private Sender -->
+  <channel site="telefe.com" lang="es" xmltv_id="Telefe.ar" site_id="telefe">Telefe</channel>
+  <channel site="eltrece.tv" lang="es" xmltv_id="ElTrece.ar" site_id="eltrece">el trece</channel>
+  <channel site="americatv.com.ar" lang="es" xmltv_id="AmericaTV.ar" site_id="america">América TV</channel>
+  <channel site="canal9.com.ar" lang="es" xmltv_id="Canal9.ar" site_id="canal-9">Canal 9</channel>
+  <channel site="canal26.com.ar" lang="es" xmltv_id="Canal26.ar" site_id="canal-26">Canal 26</channel>
+  <channel site="cronica.com.ar" lang="es" xmltv_id="CronicaTV.ar" site_id="cronica">Crónica TV</channel>
+  <channel site="tn.com.ar" lang="es" xmltv_id="TN.ar" site_id="tn">Todo Noticias</channel>
+  <channel site="tycsports.com" lang="es" xmltv_id="TyCSports.ar" site_id="tyc-sports">TyC Sports</channel>
+  <channel site="espn.com.ar" lang="es" xmltv_id="ESPNArgentina.ar" site_id="espn-argentina">ESPN Argentina</channel>
+</channels>
+EOF
           fi
           
           # Brasilien
           if [ "${{ matrix.country }}" = "br" ]; then
-            cat > epg-custom/br-channels.xml << 'EOF'
-            <?xml version="1.0" encoding="UTF-8"?>
-            <channels>
-              <!-- Rede Globo -->
-              <channel site="redeglobo.globo.com" lang="pt" xmltv_id="TVGlobo.br" site_id="tv-globo">TV Globo</channel>
-              <channel site="redeglobo.globo.com" lang="pt" xmltv_id="GloboNews.br" site_id="globo-news">GloboNews</channel>
-              <channel site="redeglobo.globo.com" lang="pt" xmltv_id="SporTV.br" site_id="sportv">SporTV</channel>
-              <channel site="redeglobo.globo.com" lang="pt" xmltv_id="GNT.br" site_id="gnt">GNT</channel>
-              <channel site="redeglobo.globo.com" lang="pt" xmltv_id="Multishow.br" site_id="multishow">Multishow</channel>
-              
-              <!-- Record -->
-              <channel site="recordtv.com.br" lang="pt" xmltv_id="RecordTV.br" site_id="record-tv">Record TV</channel>
-              <channel site="recordtv.com.br" lang="pt" xmltv_id="RecordNews.br" site_id="record-news">Record News</channel>
-              
-              <!-- SBT -->
-              <channel site="sbt.com.br" lang="pt" xmltv_id="SBT.br" site_id="sbt">SBT</channel>
-              
-              <!-- Band -->
-              <channel site="band.com.br" lang="pt" xmltv_id="Band.br" site_id="band">Band</channel>
-              <channel site="band.com.br" lang="pt" xmltv_id="BandNews.br" site_id="band-news">BandNews</channel>
-              <channel site="band.com.br" lang="pt" xmltv_id="BandSports.br" site_id="band-sports">BandSports</channel>
-              
-              <!-- Weitere -->
-              <channel site="cnnbrasil.com.br" lang="pt" xmltv_id="CNNBrasil.br" site_id="cnn-brasil">CNN Brasil</channel>
-              <channel site="jovempan.com.br" lang="pt" xmltv_id="JovemPan.br" site_id="jovem-pan">Jovem Pan</channel>
-              <channel site="cultura.gov.br" lang="pt" xmltv_id="TVCultura.br" site_id="tv-cultura">TV Cultura</channel>
-              <channel site="futura.org.br" lang="pt" xmltv_id="CanalFutura.br" site_id="canal-futura">Canal Futura</channel>
-            </channels>
-            EOF
+            cat > epg-custom/br-channels.xml <<'EOF'
+<?xml version="1.0" encoding="UTF-8"?>
+<channels>
+  <!-- Rede Globo -->
+  <channel site="redeglobo.globo.com" lang="pt" xmltv_id="TVGlobo.br" site_id="tv-globo">TV Globo</channel>
+  <channel site="redeglobo.globo.com" lang="pt" xmltv_id="GloboNews.br" site_id="globo-news">GloboNews</channel>
+  <channel site="redeglobo.globo.com" lang="pt" xmltv_id="SporTV.br" site_id="sportv">SporTV</channel>
+  <channel site="redeglobo.globo.com" lang="pt" xmltv_id="GNT.br" site_id="gnt">GNT</channel>
+  <channel site="redeglobo.globo.com" lang="pt" xmltv_id="Multishow.br" site_id="multishow">Multishow</channel>
+  
+  <!-- Record -->
+  <channel site="recordtv.com.br" lang="pt" xmltv_id="RecordTV.br" site_id="record-tv">Record TV</channel>
+  <channel site="recordtv.com.br" lang="pt" xmltv_id="RecordNews.br" site_id="record-news">Record News</channel>
+  
+  <!-- SBT -->
+  <channel site="sbt.com.br" lang="pt" xmltv_id="SBT.br" site_id="sbt">SBT</channel>
+  
+  <!-- Band -->
+  <channel site="band.com.br" lang="pt" xmltv_id="Band.br" site_id="band">Band</channel>
+  <channel site="band.com.br" lang="pt" xmltv_id="BandNews.br" site_id="band-news">BandNews</channel>
+  <channel site="band.com.br" lang="pt" xmltv_id="BandSports.br" site_id="band-sports">BandSports</channel>
+  
+  <!-- Weitere -->
+  <channel site="cnnbrasil.com.br" lang="pt" xmltv_id="CNNBrasil.br" site_id="cnn-brasil">CNN Brasil</channel>
+  <channel site="jovempan.com.br" lang="pt" xmltv_id="JovemPan.br" site_id="jovem-pan">Jovem Pan</channel>
+  <channel site="cultura.gov.br" lang="pt" xmltv_id="TVCultura.br" site_id="tv-cultura">TV Cultura</channel>
+  <channel site="futura.org.br" lang="pt" xmltv_id="CanalFutura.br" site_id="canal-futura">Canal Futura</channel>
+</channels>
+EOF
           fi
           
           echo "✅ Kanalliste für ${{ matrix.country }} erstellt"
@@ -248,13 +245,12 @@ jobs:
         run: |
           echo "🚀 Generiere EPG für ${{ matrix.country }}..."
           
-          # Ausgabeverzeichnis erstellen
           mkdir -p public/epg/${{ matrix.country }}
           
           cd epg
           
           # EPG mit eigener Kanalliste generieren
-          npm run grab --- --channels=../epg-custom/${{ matrix.country }}-channels.xml --output=../public/epg/${{ matrix.country }}/guide.xml --days=3 --maxConnections=5 --timeout=30000
+          npm run grab --- --channels=../epg-custom/${{ matrix.country }}-channels.xml --output=../public/epg/${{ matrix.country }}/guide.xml --days=3 --maxConnections=5 --timeout=30000 || echo "⚠️ Generierung fehlgeschlagen"
           
           cd ..
           
@@ -280,14 +276,14 @@ jobs:
             size=$(wc -c < guide.xml)
             
             cat > index.json << EOF
-            {
-              "country": "${{ matrix.country }}",
-              "lastUpdate": "$(date -Iseconds)",
-              "size": $size,
-              "channels": $channels,
-              "programmes": $programmes
-            }
-            EOF
+{
+  "country": "${{ matrix.country }}",
+  "lastUpdate": "$(date -Iseconds)",
+  "size": $size,
+  "channels": $channels,
+  "programmes": $programmes
+}
+EOF
             echo "✅ index.json für ${{ matrix.country }} erstellt"
           else
             echo "⚠️ Kein guide.xml für ${{ matrix.country }} gefunden"
@@ -302,7 +298,6 @@ jobs:
           directory: public
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
 
-  # Zusammenfassungs-Job
   summary:
     needs: generate-epg
     runs-on: ubuntu-latest
