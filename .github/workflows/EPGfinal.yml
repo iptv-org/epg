@@ -25,18 +25,20 @@ jobs:
       - name: 📁 Verzeichnisse erstellen
         run: |
           mkdir -p public/epg/${{ matrix.country }}
-          echo "✅ Verzeichnis public/epg/${{ matrix.country }} erstellt"
+          mkdir -p epg-custom
+          echo "✅ Verzeichnisse erstellt"
       
-      - name: 📥 iptv-org/epg installieren
+      - name: 📥 iptv-org/epg klonen
         run: |
-          echo "📡 Installiere iptv-org/epg..."
-          npm install -g iptv-epg-grabber
-          echo "✅ iptv-epg-grabber installiert"
+          echo "📡 Klone iptv-org/epg..."
+          git clone --depth 1 https://github.com/iptv-org/epg.git
+          cd epg
+          echo "📦 Installiere Abhängigkeiten..."
+          npm install
+          echo "✅ iptv-org/epg bereit"
       
       - name: 📝 Kanalliste für ${{ matrix.country }} erstellen
         run: |
-          mkdir -p epg-custom
-          
           # Deutschland
           if [ "${{ matrix.country }}" = "de" ]; then
             cat > epg-custom/de-channels.xml << 'EOF'
@@ -47,6 +49,13 @@ jobs:
               <channel site="rtl.de" lang="de" xmltv_id="RTL.de" site_id="rtl">RTL</channel>
               <channel site="sat1.de" lang="de" xmltv_id="Sat1.de" site_id="sat1">SAT.1</channel>
               <channel site="prosieben.de" lang="de" xmltv_id="ProSieben.de" site_id="prosieben">ProSieben</channel>
+              <channel site="vox.de" lang="de" xmltv_id="VOX.de" site_id="vox">VOX</channel>
+              <channel site="ntv.de" lang="de" xmltv_id="n-tv.de" site_id="n-tv">n-tv</channel>
+              <channel site="welt.de" lang="de" xmltv_id="WELT.de" site_id="welt">WELT</channel>
+              <channel site="3sat.de" lang="de" xmltv_id="3sat.de" site_id="3sat">3sat</channel>
+              <channel site="arte.tv" lang="de" xmltv_id="arte.tv" site_id="arte">arte</channel>
+              <channel site="kika.de" lang="de" xmltv_id="kika.de" site_id="kika">KiKA</channel>
+              <channel site="phoenix.de" lang="de" xmltv_id="phoenix.de" site_id="phoenix">phoenix</channel>
             </channels>
             EOF
           fi
@@ -60,6 +69,9 @@ jobs:
               <channel site="rai.it" lang="it" xmltv_id="Rai2.it" site_id="rai-2">Rai 2</channel>
               <channel site="rai.it" lang="it" xmltv_id="Rai3.it" site_id="rai-3">Rai 3</channel>
               <channel site="mediaset.it" lang="it" xmltv_id="Canale5.it" site_id="canale-5">Canale 5</channel>
+              <channel site="mediaset.it" lang="it" xmltv_id="Italia1.it" site_id="italia-1">Italia 1</channel>
+              <channel site="mediaset.it" lang="it" xmltv_id="Rete4.it" site_id="rete-4">Rete 4</channel>
+              <channel site="la7.it" lang="it" xmltv_id="La7.it" site_id="la7">LA7</channel>
             </channels>
             EOF
           fi
@@ -70,8 +82,11 @@ jobs:
             <?xml version="1.0" encoding="UTF-8"?>
             <channels>
               <channel site="rtve.es" lang="es" xmltv_id="La1.es" site_id="la-1">La 1</channel>
+              <channel site="rtve.es" lang="es" xmltv_id="La2.es" site_id="la-2">La 2</channel>
               <channel site="antena3.com" lang="es" xmltv_id="Antena3.es" site_id="antena-3">Antena 3</channel>
               <channel site="telecinco.es" lang="es" xmltv_id="Telecinco.es" site_id="telecinco">Telecinco</channel>
+              <channel site="cuatro.com" lang="es" xmltv_id="Cuatro.es" site_id="cuatro">Cuatro</channel>
+              <channel site="lasexta.com" lang="es" xmltv_id="LaSexta.es" site_id="la-sexta">laSexta</channel>
             </channels>
             EOF
           fi
@@ -82,8 +97,11 @@ jobs:
             <?xml version="1.0" encoding="UTF-8"?>
             <channels>
               <channel site="francetv.fr" lang="fr" xmltv_id="France2.fr" site_id="france-2">France 2</channel>
+              <channel site="francetv.fr" lang="fr" xmltv_id="France3.fr" site_id="france-3">France 3</channel>
               <channel site="tf1.fr" lang="fr" xmltv_id="TF1.fr" site_id="tf1">TF1</channel>
               <channel site="m6.fr" lang="fr" xmltv_id="M6.fr" site_id="m6">M6</channel>
+              <channel site="canalplus.com" lang="fr" xmltv_id="CanalPlus.fr" site_id="canal-plus">Canal+</channel>
+              <channel site="bfmtv.com" lang="fr" xmltv_id="BFMTV.fr" site_id="bfmtv">BFM TV</channel>
             </channels>
             EOF
           fi
@@ -96,6 +114,7 @@ jobs:
               <channel site="telefe.com" lang="es" xmltv_id="Telefe.ar" site_id="telefe">Telefe</channel>
               <channel site="eltrece.tv" lang="es" xmltv_id="ElTrece.ar" site_id="eltrece">el trece</channel>
               <channel site="tn.com.ar" lang="es" xmltv_id="TN.ar" site_id="tn">Todo Noticias</channel>
+              <channel site="tycsports.com" lang="es" xmltv_id="TyCSports.ar" site_id="tyc-sports">TyC Sports</channel>
             </channels>
             EOF
           fi
@@ -108,18 +127,25 @@ jobs:
               <channel site="redeglobo.globo.com" lang="pt" xmltv_id="TVGlobo.br" site_id="tv-globo">TV Globo</channel>
               <channel site="recordtv.com.br" lang="pt" xmltv_id="RecordTV.br" site_id="record-tv">Record TV</channel>
               <channel site="sbt.com.br" lang="pt" xmltv_id="SBT.br" site_id="sbt">SBT</channel>
+              <channel site="band.com.br" lang="pt" xmltv_id="Band.br" site_id="band">Band</channel>
+              <channel site="cnnbrasil.com.br" lang="pt" xmltv_id="CNNBrasil.br" site_id="cnn-brasil">CNN Brasil</channel>
             </channels>
             EOF
           fi
           
           echo "✅ Kanalliste für ${{ matrix.country }} erstellt"
+          ls -la epg-custom/
       
       - name: 🚀 EPG für ${{ matrix.country }} generieren
         run: |
           echo "🚀 Generiere EPG für ${{ matrix.country }}..."
           
-          # EPG mit iptv-epg-grabber generieren
-          npx iptv-epg-grabber --channels=epg-custom/${{ matrix.country }}-channels.xml --output=public/epg/${{ matrix.country }}/guide.xml --days=3 --timeout=30000 || echo "⚠️ Generierung fehlgeschlagen"
+          cd epg
+          
+          # EPG mit dem offiziellen iptv-org/epg Tool generieren
+          npm run grab --- --channels=../epg-custom/${{ matrix.country }}-channels.xml --output=../public/epg/${{ matrix.country }}/guide.xml --days=3 --maxConnections=5 --timeout=60000
+          
+          cd ..
           
           # Prüfen ob Datei erstellt wurde
           if [ -f public/epg/${{ matrix.country }}/guide.xml ]; then
@@ -136,20 +162,22 @@ jobs:
               </channel>
               <programme channel="placeholder" start="20250101000000 +0000" stop="20250101235959 +0000">
                 <title>EPG nicht verfügbar</title>
-                <desc>Für dieses Land konnten keine EPG-Daten generiert werden.</desc>
+                <desc>Der EPG-Generator konnte keine Daten laden.</desc>
               </programme>
             </tv>
             EOF
             echo "⚠️ Platzhalter-Datei erstellt"
           fi
       
-      - name: 📊 Index für ${{ matrix.country }} erstellen
+      - name: 📊 Statistiken für ${{ matrix.country }} prüfen
         run: |
           cd public/epg/${{ matrix.country }}
           
           programmes=$(grep -c "<programme" guide.xml || echo "0")
           channels=$(grep -c "<channel" guide.xml || echo "0")
           size=$(wc -c < guide.xml)
+          
+          echo "📊 ${{ matrix.country }}: $channels Kanäle, $programmes Programme, $size Bytes"
           
           cat > index.json << EOF
           {
@@ -162,7 +190,6 @@ jobs:
           EOF
           
           echo "✅ index.json für ${{ matrix.country }} erstellt"
-          echo "   📊 Kanäle: $channels, Programme: $programmes, Größe: $size Bytes"
       
       - name: 📤 Zu Cloudflare Pages deployen
         uses: cloudflare/pages-action@v1
