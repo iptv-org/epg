@@ -2,6 +2,8 @@ name: EPG 6 Länder
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '0 2 * * *'
 
 jobs:
   generate-epg:
@@ -10,16 +12,168 @@ jobs:
       - name: Repository auschecken
         uses: actions/checkout@v3
       
-      - name: EPG Dateien erstellen
+      - name: Node.js einrichten
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      
+      - name: iptv-org/epg installieren
         run: |
+          echo "📥 Klone iptv-org/epg..."
+          git clone --depth 1 https://github.com/iptv-org/epg.git
+          cd epg
+          echo "📦 Installiere Abhängigkeiten..."
+          npm install
+          echo "✅ iptv-org/epg bereit"
+      
+      - name: EPG für 6 Länder generieren
+        run: |
+          # Verzeichnis anlegen
           mkdir -p public/epg
-          echo "Deutschland" > public/epg/de.txt
-          echo "Italien" > public/epg/it.txt
-          echo "Spanien" > public/epg/es.txt
-          echo "Frankreich" > public/epg/fr.txt
-          echo "Argentinien" > public/epg/ar.txt
-          echo "Brasilien" > public/epg/br.txt
-          echo '{"countries":["de","it","es","fr","ar","br"]}' > public/epg/index.json
+          
+          echo ""
+          echo "========================================="
+          echo "🚀 Starte EPG-Generierung für 6 Länder"
+          echo "========================================="
+          
+          # Liste der Länder mit ihren Sites
+          # Format: "LÄNDERCODE:SITE"
+          LAENDER=(
+            "de:ard.de"
+            "it:rai.it"
+            "es:rtve.es"
+            "fr:francetv.fr"
+            "ar:telefe.com"
+            "br:redeglobo.globo.com"
+          )
+          
+          for eintrag in "${LAENDER[@]}"; do
+            # Ländercode und Site trennen
+            land="${eintrag%%:*}"
+            site="${eintrag#*:}"
+            
+            echo ""
+            echo "📡 Generiere EPG für $land ($site)..."
+            
+            cd epg
+            if npm run grab --- --site=$site --output=../public/epg/$land.xml --days=1 --maxConnections=1; then
+              echo "✅ $land erfolgreich"
+            else
+              echo "⚠️ $land fehlgeschlagen"
+            fi
+            cd ..
+          done
+          
+          echo ""
+          echo "========================================="
+          echo "🔍 Prüfe generierte Dateien..."
+          echo "========================================="
+          
+          # ========================================
+          # FALLBACK: Leere XML falls nichts generiert wurde
+          # ========================================
+          
+          for land in de it es fr ar br; do
+            if [ ! -f public/epg/$land.xml ]; then
+              echo "⚠️ Erstelle Platzhalter für $land"
+              cat > public/epg/$land.xml << 'EOF'
+<?xml version="1.0" encoding="UTF-8"?>
+<tv>
+  <channel id="placeholder">
+    <display-name>Keine EPG-Daten</display-name>
+  </channel>
+  <programme channel="placeholder" start="20250101000000 +0000" stop="20250101235959 +0000">
+    <title>EPG nicht verfügbar</title>
+    <desc>Der EPG-Generator konnte für dieses Land keine Daten laden.</desc>
+  </programme>
+</tv>
+EOF
+              echo "   ✅ Platzhalter für $land erstellt"
+            else
+              size=$(wc -c < public/epg/$land.xml)
+              programmes=$(grep -c "<programme" public/epg/$land.xml || echo "0")
+              echo "   ✅ $land.xml: $size Bytes, $programmes Programme"
+            fi
+          done
+          
+          # ========================================
+          # INDEX-DATEI MIT STATISTIKEN
+          # ========================================
+          
+          echo ""
+          echo "📊 Erstelle index.json mit Statistiken..."
+          
+          cat > public/epg/index.json << EOF
+{
+  "lastUpdate": "$(date -Iseconds)",
+  "countries": [
+    {
+      "code": "de",
+      "name": "Deutschland",
+      "flag": "🇩🇪",
+      "file": "de.xml",
+      "size": $(wc -c < public/epg/de.xml 2>/dev/null || echo 0),
+      "programmes": $(grep -c "<programme" public/epg/de.xml 2>/dev/null || echo 0)
+    },
+    {
+      "code": "it",
+      "name": "Italien",
+      "flag": "🇮🇹",
+      "file": "it.xml",
+      "size": $(wc -c < public/epg/it.xml 2>/dev/null || echo 0),
+      "programmes": $(grep -c "<programme" public/epg/it.xml 2>/dev/null || echo 0)
+    },
+    {
+      "code": "es",
+      "name": "Spanien",
+      "flag": "🇪🇸",
+      "file": "es.xml",
+      "size": $(wc -c < public/epg/es.xml 2>/dev/null || echo 0),
+      "programmes": $(grep -c "<programme" public/epg/es.xml 2>/dev/null || echo 0)
+    },
+    {
+      "code": "fr",
+      "name": "Frankreich",
+      "flag": "🇫🇷",
+      "file": "fr.xml",
+      "size": $(wc -c < public/epg/fr.xml 2>/dev/null || echo 0),
+      "programmes": $(grep -c "<programme" public/epg/fr.xml 2>/dev/null || echo 0)
+    },
+    {
+      "code": "ar",
+      "name": "Argentinien",
+      "flag": "🇦🇷",
+      "file": "ar.xml",
+      "size": $(wc -c < public/epg/ar.xml 2>/dev/null || echo 0),
+      "programmes": $(grep -c "<programme" public/epg/ar.xml 2>/dev/null || echo 0)
+    },
+    {
+      "code": "br",
+      "name": "Brasilien",
+      "flag": "🇧🇷",
+      "file": "br.xml",
+      "size": $(wc -c < public/epg/br.xml 2>/dev/null || echo 0),
+      "programmes": $(grep -c "<programme" public/epg/br.xml 2>/dev/null || echo 0)
+    }
+  ]
+}
+EOF
+          
+          echo "✅ index.json erstellt"
+          
+          # ========================================
+          # ZUSAMMENFASSUNG
+          # ========================================
+          
+          echo ""
+          echo "========================================="
+          echo "✅ EPG-Generierung abgeschlossen!"
+          echo "========================================="
+          echo ""
+          echo "📁 Generierte Dateien in public/epg/:"
+          ls -la public/epg/
+          echo ""
+          echo "========================================="
       
       - name: Nach Cloudflare Pages deployen
         uses: cloudflare/pages-action@v1
@@ -29,3 +183,21 @@ jobs:
           projectName: "iptv-epg-data"
           directory: public
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Deployment erfolgreich
+        run: |
+          echo ""
+          echo "========================================="
+          echo "✅ Deployment abgeschlossen!"
+          echo "========================================="
+          echo ""
+          echo "📊 EPG-Daten verfügbar unter:"
+          echo "   • Deutschland:  https://iptv-epg-data.pages.dev/epg/de.xml"
+          echo "   • Italien:      https://iptv-epg-data.pages.dev/epg/it.xml"
+          echo "   • Spanien:      https://iptv-epg-data.pages.dev/epg/es.xml"
+          echo "   • Frankreich:   https://iptv-epg-data.pages.dev/epg/fr.xml"
+          echo "   • Argentinien:  https://iptv-epg-data.pages.dev/epg/ar.xml"
+          echo "   • Brasilien:    https://iptv-epg-data.pages.dev/epg/br.xml"
+          echo ""
+          echo "📊 Index: https://iptv-epg-data.pages.dev/epg/index.json"
+          echo "========================================="
