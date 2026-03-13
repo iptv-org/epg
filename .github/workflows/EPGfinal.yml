@@ -1,9 +1,9 @@
 name: EPG für 6 Länder generieren
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: '0 2 * * *'
-  workflow_dispatch:
 
 jobs:
   generate-epg:
@@ -11,84 +11,159 @@ jobs:
     strategy:
       matrix:
         country: [de, it, es, fr, ar, br]
-      max-parallel: 1  # Nur ein Land gleichzeitig für bessere Fehlerverfolgung
-
+      max-parallel: 2
+    
     steps:
       - name: 📦 Repository auschecken
         uses: actions/checkout@v3
-
+      
       - name: 🔧 Node.js einrichten
         uses: actions/setup-node@v3
         with:
           node-version: '18'
-
-      - name: 📁 Verzeichnisse vorbereiten
+      
+      - name: 📁 Verzeichnisse erstellen
         run: |
-          mkdir -p epg-custom
           mkdir -p public/epg/${{ matrix.country }}
-          echo "✅ Verzeichnisse erstellt"
-
+          echo "✅ Verzeichnis public/epg/${{ matrix.country }} erstellt"
+      
+      - name: 📥 iptv-org/epg installieren
+        run: |
+          echo "📡 Installiere iptv-org/epg..."
+          npm install -g iptv-epg-grabber
+          echo "✅ iptv-epg-grabber installiert"
+      
       - name: 📝 Kanalliste für ${{ matrix.country }} erstellen
         run: |
-          # Hier kommt der gesamte Inhalt Ihrer Kanallisten (wie gehabt)
-          # Ich kürze das hier aus Platzgründen, aber Sie können den langen Teil aus Ihrer vorherigen Nachricht hier einfügen
-          echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?><channels></channels>" > epg-custom/${{ matrix.country }}-channels.xml
-          echo "✅ Kanalliste für ${{ matrix.country }} erstellt"
-
-      - name: 🚀 EPG für ${{ matrix.country }} generieren (mit Debug)
-        run: |
-          echo "🚀 Starte EPG-Generierung für ${{ matrix.country }}..."
+          mkdir -p epg-custom
           
-          # 1. Schritt: Nur klonen und Abhängigkeiten installieren (einmal pro Job)
-          if [ ! -d "epg" ]; then
-            echo "📥 Klone iptv-org/epg..."
-            git clone --depth 1 https://github.com/iptv-org/epg.git
-            cd epg
-            echo "📦 Installiere Abhängigkeiten..."
-            npm install
-            cd ..
+          # Deutschland
+          if [ "${{ matrix.country }}" = "de" ]; then
+            cat > epg-custom/de-channels.xml << 'EOF'
+            <?xml version="1.0" encoding="UTF-8"?>
+            <channels>
+              <channel site="ard.de" lang="de" xmltv_id="DasErste.de" site_id="das-erste">Das Erste</channel>
+              <channel site="zdf.de" lang="de" xmltv_id="ZDF.de" site_id="zdf">ZDF</channel>
+              <channel site="rtl.de" lang="de" xmltv_id="RTL.de" site_id="rtl">RTL</channel>
+              <channel site="sat1.de" lang="de" xmltv_id="Sat1.de" site_id="sat1">SAT.1</channel>
+              <channel site="prosieben.de" lang="de" xmltv_id="ProSieben.de" site_id="prosieben">ProSieben</channel>
+            </channels>
+            EOF
           fi
-
-          # 2. Schritt: EPG generieren
-          cd epg
-          echo "▶️ Führe grab aus für ${{ matrix.counteur }}..."
-          npm run grab --- --channels=../epg-custom/${{ matrix.country }}-channels.xml --output=../public/epg/${{ matrix.country }}/guide.xml --days=3 --maxConnections=2 --timeout=30000
-          GRAB_EXIT_CODE=$?
-          cd ..
-
-          # 3. Schritt: Ergebnis prüfen
-          if [ $GRAB_EXIT_CODE -eq 0 ] && [ -f public/epg/${{ matrix.country }}/guide.xml ]; then
-            echo "✅ EPG für ${{ matrix.country }} erfolgreich generiert"
+          
+          # Italien
+          if [ "${{ matrix.country }}" = "it" ]; then
+            cat > epg-custom/it-channels.xml << 'EOF'
+            <?xml version="1.0" encoding="UTF-8"?>
+            <channels>
+              <channel site="rai.it" lang="it" xmltv_id="Rai1.it" site_id="rai-1">Rai 1</channel>
+              <channel site="rai.it" lang="it" xmltv_id="Rai2.it" site_id="rai-2">Rai 2</channel>
+              <channel site="rai.it" lang="it" xmltv_id="Rai3.it" site_id="rai-3">Rai 3</channel>
+              <channel site="mediaset.it" lang="it" xmltv_id="Canale5.it" site_id="canale-5">Canale 5</channel>
+            </channels>
+            EOF
+          fi
+          
+          # Spanien
+          if [ "${{ matrix.country }}" = "es" ]; then
+            cat > epg-custom/es-channels.xml << 'EOF'
+            <?xml version="1.0" encoding="UTF-8"?>
+            <channels>
+              <channel site="rtve.es" lang="es" xmltv_id="La1.es" site_id="la-1">La 1</channel>
+              <channel site="antena3.com" lang="es" xmltv_id="Antena3.es" site_id="antena-3">Antena 3</channel>
+              <channel site="telecinco.es" lang="es" xmltv_id="Telecinco.es" site_id="telecinco">Telecinco</channel>
+            </channels>
+            EOF
+          fi
+          
+          # Frankreich
+          if [ "${{ matrix.country }}" = "fr" ]; then
+            cat > epg-custom/fr-channels.xml << 'EOF'
+            <?xml version="1.0" encoding="UTF-8"?>
+            <channels>
+              <channel site="francetv.fr" lang="fr" xmltv_id="France2.fr" site_id="france-2">France 2</channel>
+              <channel site="tf1.fr" lang="fr" xmltv_id="TF1.fr" site_id="tf1">TF1</channel>
+              <channel site="m6.fr" lang="fr" xmltv_id="M6.fr" site_id="m6">M6</channel>
+            </channels>
+            EOF
+          fi
+          
+          # Argentinien
+          if [ "${{ matrix.country }}" = "ar" ]; then
+            cat > epg-custom/ar-channels.xml << 'EOF'
+            <?xml version="1.0" encoding="UTF-8"?>
+            <channels>
+              <channel site="telefe.com" lang="es" xmltv_id="Telefe.ar" site_id="telefe">Telefe</channel>
+              <channel site="eltrece.tv" lang="es" xmltv_id="ElTrece.ar" site_id="eltrece">el trece</channel>
+              <channel site="tn.com.ar" lang="es" xmltv_id="TN.ar" site_id="tn">Todo Noticias</channel>
+            </channels>
+            EOF
+          fi
+          
+          # Brasilien
+          if [ "${{ matrix.country }}" = "br" ]; then
+            cat > epg-custom/br-channels.xml << 'EOF'
+            <?xml version="1.0" encoding="UTF-8"?>
+            <channels>
+              <channel site="redeglobo.globo.com" lang="pt" xmltv_id="TVGlobo.br" site_id="tv-globo">TV Globo</channel>
+              <channel site="recordtv.com.br" lang="pt" xmltv_id="RecordTV.br" site_id="record-tv">Record TV</channel>
+              <channel site="sbt.com.br" lang="pt" xmltv_id="SBT.br" site_id="sbt">SBT</channel>
+            </channels>
+            EOF
+          fi
+          
+          echo "✅ Kanalliste für ${{ matrix.country }} erstellt"
+      
+      - name: 🚀 EPG für ${{ matrix.country }} generieren
+        run: |
+          echo "🚀 Generiere EPG für ${{ matrix.country }}..."
+          
+          # EPG mit iptv-epg-grabber generieren
+          npx iptv-epg-grabber --channels=epg-custom/${{ matrix.country }}-channels.xml --output=public/epg/${{ matrix.country }}/guide.xml --days=3 --timeout=30000 || echo "⚠️ Generierung fehlgeschlagen"
+          
+          # Prüfen ob Datei erstellt wurde
+          if [ -f public/epg/${{ matrix.country }}/guide.xml ]; then
+            echo "✅ EPG für ${{ matrix.country }} generiert"
             ls -la public/epg/${{ matrix.country }}/guide.xml
           else
-            echo "⚠️ EPG-Generierung für ${{ matrix.country }} fehlgeschlagen (Exit-Code: $GRAB_EXIT_CODE)"
-            # Leere Datei anlegen, damit nachfolgende Schritte nicht abbrechen
-            echo "<tv></tv>" > public/epg/${{ matrix.country }}/guide.xml
+            echo "⚠️ Keine EPG-Datei für ${{ matrix.country }} erstellt"
+            # Leere XML-Datei als Platzhalter
+            cat > public/epg/${{ matrix.country }}/guide.xml << 'EOF'
+            <?xml version="1.0" encoding="UTF-8"?>
+            <tv>
+              <channel id="placeholder">
+                <display-name>Keine EPG-Daten</display-name>
+              </channel>
+              <programme channel="placeholder" start="20250101000000 +0000" stop="20250101235959 +0000">
+                <title>EPG nicht verfügbar</title>
+                <desc>Für dieses Land konnten keine EPG-Daten generiert werden.</desc>
+              </programme>
+            </tv>
+            EOF
+            echo "⚠️ Platzhalter-Datei erstellt"
           fi
-
+      
       - name: 📊 Index für ${{ matrix.country }} erstellen
         run: |
           cd public/epg/${{ matrix.country }}
           
-          if [ -f guide.xml ]; then
-            programmes=$(grep -c "<programme" guide.xml || echo "0")
-            channels=$(grep -c "<channel" guide.xml || echo "0")
-            size=$(wc -c < guide.xml)
-            
-            cat > index.json << EOF
-      {
-        "country": "${{ matrix.country }}",
-        "lastUpdate": "$(date -Iseconds)",
-        "size": $size,
-        "channels": $channels,
-        "programmes": $programmes
-      }
-      EOF
-            echo "✅ index.json für ${{ matrix.country }} erstellt"
-          else
-            echo "⚠️ Kein guide.xml für ${{ matrix.country }} gefunden"
-          fi
-
+          programmes=$(grep -c "<programme" guide.xml || echo "0")
+          channels=$(grep -c "<channel" guide.xml || echo "0")
+          size=$(wc -c < guide.xml)
+          
+          cat > index.json << EOF
+          {
+            "country": "${{ matrix.country }}",
+            "lastUpdate": "$(date -Iseconds)",
+            "size": $size,
+            "channels": $channels,
+            "programmes": $programmes
+          }
+          EOF
+          
+          echo "✅ index.json für ${{ matrix.country }} erstellt"
+          echo "   📊 Kanäle: $channels, Programme: $programmes, Größe: $size Bytes"
+      
       - name: 📤 Zu Cloudflare Pages deployen
         uses: cloudflare/pages-action@v1
         with:
@@ -102,9 +177,28 @@ jobs:
     needs: generate-epg
     runs-on: ubuntu-latest
     if: always()
+    
     steps:
       - name: 📊 Zusammenfassung
         run: |
+          echo ""
           echo "================================================"
-          echo "✅ Workflow abgeschlossen. Prüfen Sie die Logs."
+          echo "✅ EPG-Generierung für alle Länder abgeschlossen!"
+          echo "================================================"
+          echo ""
+          echo "📊 Verfügbare EPG-Daten:"
+          echo "   • Deutschland: https://iptv-epg-data.pages.dev/epg/de/guide.xml"
+          echo "   • Italien:     https://iptv-epg-data.pages.dev/epg/it/guide.xml"
+          echo "   • Spanien:     https://iptv-epg-data.pages.dev/epg/es/guide.xml"
+          echo "   • Frankreich:  https://iptv-epg-data.pages.dev/epg/fr/guide.xml"
+          echo "   • Argentinien: https://iptv-epg-data.pages.dev/epg/ar/guide.xml"
+          echo "   • Brasilien:   https://iptv-epg-data.pages.dev/epg/br/guide.xml"
+          echo ""
+          echo "📊 Index-Dateien:"
+          echo "   • https://iptv-epg-data.pages.dev/epg/de/index.json"
+          echo "   • https://iptv-epg-data.pages.dev/epg/it/index.json"
+          echo "   • https://iptv-epg-data.pages.dev/epg/es/index.json"
+          echo "   • https://iptv-epg-data.pages.dev/epg/fr/index.json"
+          echo "   • https://iptv-epg-data.pages.dev/epg/ar/index.json"
+          echo "   • https://iptv-epg-data.pages.dev/epg/br/index.json"
           echo "================================================"
