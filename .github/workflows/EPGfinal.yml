@@ -2,75 +2,111 @@ name: EPG für Deutschland generieren
 
 on:
   schedule:
-    # Läuft täglich um 2:00 Uhr UTC
     - cron: '0 2 * * *'
-  workflow_dispatch:  # Manueller Start
+  workflow_dispatch:
 
 jobs:
   generate-german-epg:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
     
     steps:
       - name: 📦 Repository auschecken
         uses: actions/checkout@v3
       
-      - name: 🔧 Node.js einrichten
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-      
-      - name: 📡 iptv-org/epg klonen
+      - name: 📁 Verzeichnis erstellen
         run: |
-          echo "📡 Klone iptv-org/epg..."
-          git clone --depth 1 https://github.com/iptv-org/epg.git
-          cd epg
-          echo "📦 Installiere Abhängigkeiten..."
-          npm install
-          echo "✅ iptv-org/epg bereit"
-      
-      - name: 🚀 EPG für ARD testen
-        run: |
-          echo "🚀 Teste EPG-Generierung für ARD..."
-          
-          # Ausgabeverzeichnis erstellen
           mkdir -p public/epg/de
-          
-          cd epg
-          
-          # Nur ARD testen
-          echo "Generiere EPG für ard.de..."
-          npm run grab --- --site=ard.de --output=../public/epg/de/ard.de.xml --days=1
-          
-          cd ..
-          
-          echo "✅ Test abgeschlossen"
+          echo "✅ Verzeichnis public/epg/de erstellt"
       
-      - name: 📊 Index-Datei erstellen
+      - name: 📥 EPG von iptv-org direkt herunterladen
+        run: |
+          echo "📡 Lade EPG für deutsche Sender..."
+          
+          # Liste der deutschen Sender mit direkten EPG-URLs
+          # Quelle: https://github.com/iptv-org/epg/tree/master/guides
+          
+          # ARD
+          curl -L -o public/epg/de/ard.de.xml "https://epg.iptvx.one/guides/de/ard.iptv-org.xml" || echo "⚠️ ARD fehlgeschlagen"
+          
+          # ZDF
+          curl -L -o public/epg/de/zdf.de.xml "https://epg.iptvx.one/guides/de/zdf.iptv-org.xml" || echo "⚠️ ZDF fehlgeschlagen"
+          
+          # RTL
+          curl -L -o public/epg/de/rtl.de.xml "https://epg.iptvx.one/guides/de/rtl.iptv-org.xml" || echo "⚠️ RTL fehlgeschlagen"
+          
+          # Sat.1
+          curl -L -o public/epg/de/sat1.de.xml "https://epg.iptvx.one/guides/de/sat1.iptv-org.xml" || echo "⚠️ Sat.1 fehlgeschlagen"
+          
+          # ProSieben
+          curl -L -o public/epg/de/prosieben.de.xml "https://epg.iptvx.one/guides/de/prosieben.iptv-org.xml" || echo "⚠️ ProSieben fehlgeschlagen"
+          
+          # VOX
+          curl -L -o public/epg/de/vox.de.xml "https://epg.iptvx.one/guides/de/vox.iptv-org.xml" || echo "⚠️ VOX fehlgeschlagen"
+          
+          # n-tv
+          curl -L -o public/epg/de/ntv.de.xml "https://epg.iptvx.one/guides/de/ntv.iptv-org.xml" || echo "⚠️ n-tv fehlgeschlagen"
+          
+          # Welt
+          curl -L -o public/epg/de/welt.de.xml "https://epg.iptvx.one/guides/de/welt.iptv-org.xml" || echo "⚠️ Welt fehlgeschlagen"
+          
+          echo "✅ Downloads abgeschlossen"
+      
+      - name: 📊 Prüfe heruntergeladene Dateien
+        run: |
+          cd public/epg/de
+          echo "📁 Gefundene Dateien:"
+          ls -la *.xml 2>/dev/null || echo "⚠️ Keine XML-Dateien gefunden"
+          
+          # Zeige Dateigrößen
+          for file in *.xml; do
+            if [ -f "$file" ]; then
+              size=$(wc -c < "$file")
+              echo "   📄 $file: $size Bytes"
+            fi
+          done
+      
+      - name: 📊 Erstelle index.json
         run: |
           cd public/epg/de
           
-          # Prüfe ob Datei existiert
-          if [ -f "ard.de.xml" ]; then
-            echo "✅ ard.de.xml gefunden"
+          # Zähle XML-Dateien
+          count=$(ls *.xml 2>/dev/null | wc -l)
+          
+          if [ "$count" -gt 0 ]; then
+            echo "✅ $count XML-Dateien gefunden"
             
-            # Index.json erstellen (ALLE IN EINER ZEILE!)
-            echo "{\"lastUpdate\":\"$(date -Iseconds)\",\"country\":\"Deutschland\",\"countryCode\":\"de\",\"totalChannels\":1,\"channels\":[{\"channel\":\"ard.de\",\"file\":\"ard.de.xml\"}]}" > index.json
+            # JSON manuell erstellen (ohne echo-Probleme)
+            echo "{" > index.json
+            echo "  \"lastUpdate\": \"$(date -Iseconds)\"," >> index.json
+            echo "  \"country\": \"Deutschland\"," >> index.json
+            echo "  \"countryCode\": \"de\"," >> index.json
+            echo "  \"totalChannels\": $count," >> index.json
+            echo "  \"channels\": [" >> index.json
+            
+            # Channels auflisten
+            first=1
+            for file in *.xml; do
+              if [ "$first" -eq 1 ]; then
+                first=0
+              else
+                echo "," >> index.json
+              fi
+              channel=$(basename "$file" .xml)
+              size=$(wc -c < "$file")
+              echo "    {\"channel\": \"$channel\", \"file\": \"$file\", \"size\": $size}" >> index.json
+            done
+            
+            echo "  ]" >> index.json
+            echo "}" >> index.json
             
             echo "✅ index.json erstellt"
+            echo ""
+            echo "📄 Inhalt von index.json:"
+            cat index.json
           else
-            echo "⚠️ Keine XML-Datei gefunden"
+            echo "⚠️ Keine XML-Dateien zum Erstellen von index.json"
             exit 1
           fi
-      
-      - name: 📋 Generierte Dateien anzeigen
-        run: |
-          echo "📁 Inhalt von public/epg/de/:"
-          ls -la public/epg/de/
-          
-          echo ""
-          echo "📄 Inhalt von index.json:"
-          cat public/epg/de/index.json
       
       - name: 📤 Nach Cloudflare Pages deployen
         uses: cloudflare/pages-action@v1
@@ -85,11 +121,12 @@ jobs:
         run: |
           echo ""
           echo "================================================"
-          echo "✅ EPG-Test erfolgreich abgeschlossen!"
+          echo "✅ EPG-Update erfolgreich abgeschlossen!"
           echo "================================================"
           echo "📊 Verfügbar unter:"
-          echo "   • https://iptv-epg-data.pages.dev/epg/de/ard.de.xml"
           echo "   • https://iptv-epg-data.pages.dev/epg/de/index.json"
+          echo "   • https://iptv-epg-data.pages.dev/epg/de/[sender].xml"
           echo ""
-          echo "⏰ Nächster Schritt: Auf alle Sender erweitern"
+          echo "📊 Generierte Sender:"
+          ls -1 public/epg/de/*.xml 2>/dev/null | sed 's/.*\///' || echo "   Keine"
           echo "================================================"
