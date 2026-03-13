@@ -1,5 +1,5 @@
 name: Create combined EPG and index
-  run: |
+  run: 
     cd public/epg/de
     
     # XML-Header für gesamt.xml
