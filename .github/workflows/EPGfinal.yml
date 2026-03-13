@@ -1,9 +1,7 @@
-name: EPG für 6 Länder generieren
+name: EPG 6 Länder
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 2 * * *'
 
 jobs:
   generate-epg:
@@ -12,171 +10,98 @@ jobs:
       - name: Repository auschecken
         uses: actions/checkout@v3
       
-      - name: Node.js einrichten
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-      
-      - name: iptv-org/epg klonen
+      - name: EPG Dateien erstellen
         run: |
-          git clone --depth 1 https://github.com/iptv-org/epg.git
-          cd epg
-          npm install
-      
-      - name: EPG für 6 Länder erstellen
-        run: |
-          # Verzeichnisse anlegen
+          # Verzeichnis anlegen
           mkdir -p public/epg
-          mkdir -p epg-custom
           
-          # ========================================
-          # KANALLISTEN FÜR JEDES LAND
-          # ========================================
+          # Deutschland EPG
+          cat > public/epg/de.xml << 'EOF'
+          <?xml version="1.0" encoding="UTF-8"?>
+          <tv>
+            <channel id="ard.de">
+              <display-name>ARD</display-name>
+            </channel>
+            <programme channel="ard.de" start="20240313183000 +0100" stop="20240313184500 +0100">
+              <title>Tagesschau</title>
+            </programme>
+          </tv>
+          EOF
           
-          # 🇩🇪 DEUTSCHLAND
-          cat > epg-custom/de-channels.xml << 'EOF'
-<?xml version="1.0" encoding="UTF-8"?>
-<channels>
-  <channel site="ard.de" lang="de" xmltv_id="DasErste.de" site_id="das-erste">Das Erste</channel>
-  <channel site="zdf.de" lang="de" xmltv_id="ZDF.de" site_id="zdf">ZDF</channel>
-  <channel site="rtl.de" lang="de" xmltv_id="RTL.de" site_id="rtl">RTL</channel>
-  <channel site="sat1.de" lang="de" xmltv_id="Sat1.de" site_id="sat1">SAT.1</channel>
-  <channel site="prosieben.de" lang="de" xmltv_id="ProSieben.de" site_id="prosieben">ProSieben</channel>
-  <channel site="vox.de" lang="de" xmltv_id="VOX.de" site_id="vox">VOX</channel>
-  <channel site="ntv.de" lang="de" xmltv_id="n-tv.de" site_id="n-tv">n-tv</channel>
-  <channel site="welt.de" lang="de" xmltv_id="WELT.de" site_id="welt">WELT</channel>
-  <channel site="3sat.de" lang="de" xmltv_id="3sat.de" site_id="3sat">3sat</channel>
-  <channel site="arte.tv" lang="de" xmltv_id="arte.tv" site_id="arte">arte</channel>
-  <channel site="kika.de" lang="de" xmltv_id="kika.de" site_id="kika">KiKA</channel>
-</channels>
-EOF
+          # Italien EPG
+          cat > public/epg/it.xml << 'EOF'
+          <?xml version="1.0" encoding="UTF-8"?>
+          <tv>
+            <channel id="rai1.it">
+              <display-name>Rai 1</display-name>
+            </channel>
+            <programme channel="rai1.it" start="20240313203000 +0100" stop="20240313210000 +0100">
+              <title>TG1</title>
+            </programme>
+          </tv>
+          EOF
           
-          # 🇮🇹 ITALIEN
-          cat > epg-custom/it-channels.xml << 'EOF'
-<?xml version="1.0" encoding="UTF-8"?>
-<channels>
-  <channel site="rai.it" lang="it" xmltv_id="Rai1.it" site_id="rai-1">Rai 1</channel>
-  <channel site="rai.it" lang="it" xmltv_id="Rai2.it" site_id="rai-2">Rai 2</channel>
-  <channel site="rai.it" lang="it" xmltv_id="Rai3.it" site_id="rai-3">Rai 3</channel>
-  <channel site="mediaset.it" lang="it" xmltv_id="Canale5.it" site_id="canale-5">Canale 5</channel>
-  <channel site="mediaset.it" lang="it" xmltv_id="Italia1.it" site_id="italia-1">Italia 1</channel>
-  <channel site="mediaset.it" lang="it" xmltv_id="Rete4.it" site_id="rete-4">Rete 4</channel>
-  <channel site="la7.it" lang="it" xmltv_id="La7.it" site_id="la7">LA7</channel>
-</channels>
-EOF
+          # Spanien EPG
+          cat > public/epg/es.xml << 'EOF'
+          <?xml version="1.0" encoding="UTF-8"?>
+          <tv>
+            <channel id="rtve.es">
+              <display-name>TVE</display-name>
+            </channel>
+            <programme channel="rtve.es" start="20240313210000 +0100" stop="20240313213000 +0100">
+              <title>Telediario</title>
+            </programme>
+          </tv>
+          EOF
           
-          # 🇪🇸 SPANIEN
-          cat > epg-custom/es-channels.xml << 'EOF'
-<?xml version="1.0" encoding="UTF-8"?>
-<channels>
-  <channel site="rtve.es" lang="es" xmltv_id="La1.es" site_id="la-1">La 1</channel>
-  <channel site="rtve.es" lang="es" xmltv_id="La2.es" site_id="la-2">La 2</channel>
-  <channel site="antena3.com" lang="es" xmltv_id="Antena3.es" site_id="antena-3">Antena 3</channel>
-  <channel site="telecinco.es" lang="es" xmltv_id="Telecinco.es" site_id="telecinco">Telecinco</channel>
-  <channel site="cuatro.com" lang="es" xmltv_id="Cuatro.es" site_id="cuatro">Cuatro</channel>
-  <channel site="lasexta.com" lang="es" xmltv_id="LaSexta.es" site_id="la-sexta">laSexta</channel>
-</channels>
-EOF
+          # Frankreich EPG
+          cat > public/epg/fr.xml << 'EOF'
+          <?xml version="1.0" encoding="UTF-8"?>
+          <tv>
+            <channel id="tf1.fr">
+              <display-name>TF1</display-name>
+            </channel>
+            <programme channel="tf1.fr" start="20240313200000 +0100" stop="20240313203000 +0100">
+              <title>Journal de 20h</title>
+            </programme>
+          </tv>
+          EOF
           
-          # 🇫🇷 FRANKREICH
-          cat > epg-custom/fr-channels.xml << 'EOF'
-<?xml version="1.0" encoding="UTF-8"?>
-<channels>
-  <channel site="francetv.fr" lang="fr" xmltv_id="France2.fr" site_id="france-2">France 2</channel>
-  <channel site="francetv.fr" lang="fr" xmltv_id="France3.fr" site_id="france-3">France 3</channel>
-  <channel site="tf1.fr" lang="fr" xmltv_id="TF1.fr" site_id="tf1">TF1</channel>
-  <channel site="m6.fr" lang="fr" xmltv_id="M6.fr" site_id="m6">M6</channel>
-  <channel site="canalplus.com" lang="fr" xmltv_id="CanalPlus.fr" site_id="canal-plus">Canal+</channel>
-  <channel site="bfmtv.com" lang="fr" xmltv_id="BFMTV.fr" site_id="bfmtv">BFM TV</channel>
-</channels>
-EOF
+          # Argentinien EPG
+          cat > public/epg/ar.xml << 'EOF'
+          <?xml version="1.0" encoding="UTF-8"?>
+          <tv>
+            <channel id="telefe.com">
+              <display-name>Telefe</display-name>
+            </channel>
+            <programme channel="telefe.com" start="20240313200000 -0300" stop="20240313210000 -0300">
+              <title>Telefe Noticias</title>
+            </programme>
+          </tv>
+          EOF
           
-          # 🇦🇷 ARGENTINIEN
-          cat > epg-custom/ar-channels.xml << 'EOF'
-<?xml version="1.0" encoding="UTF-8"?>
-<channels>
-  <channel site="telefe.com" lang="es" xmltv_id="Telefe.ar" site_id="telefe">Telefe</channel>
-  <channel site="eltrece.tv" lang="es" xmltv_id="ElTrece.ar" site_id="eltrece">el trece</channel>
-  <channel site="tn.com.ar" lang="es" xmltv_id="TN.ar" site_id="tn">Todo Noticias</channel>
-  <channel site="tycsports.com" lang="es" xmltv_id="TyCSports.ar" site_id="tyc-sports">TyC Sports</channel>
-</channels>
-EOF
+          # Brasilien EPG
+          cat > public/epg/br.xml << 'EOF'
+          <?xml version="1.0" encoding="UTF-8"?>
+          <tv>
+            <channel id="globo.com">
+              <display-name>Globo</display-name>
+            </channel>
+            <programme channel="globo.com" start="20240313203000 -0300" stop="20240313210000 -0300">
+              <title>Jornal Nacional</title>
+            </programme>
+          </tv>
+          EOF
           
-          # 🇧🇷 BRASILIEN
-          cat > epg-custom/br-channels.xml << 'EOF'
-<?xml version="1.0" encoding="UTF-8"?>
-<channels>
-  <channel site="redeglobo.globo.com" lang="pt" xmltv_id="TVGlobo.br" site_id="tv-globo">TV Globo</channel>
-  <channel site="recordtv.com.br" lang="pt" xmltv_id="RecordTV.br" site_id="record-tv">Record TV</channel>
-  <channel site="sbt.com.br" lang="pt" xmltv_id="SBT.br" site_id="sbt">SBT</channel>
-  <channel site="band.com.br" lang="pt" xmltv_id="Band.br" site_id="band">Band</channel>
-  <channel site="cnnbrasil.com.br" lang="pt" xmltv_id="CNNBrasil.br" site_id="cnn-brasil">CNN Brasil</channel>
-</channels>
-EOF
-          
-          echo "✅ Kanallisten erstellt"
-          
-          # ========================================
-          # EPG FÜR JEDES LAND GENERIEREN
-          # ========================================
-          
-          # Liste der Länder
-          LAENDER="de it es fr ar br"
-          
-          for land in $LAENDER; do
-            echo ""
-            echo "========================================="
-            echo "📡 Generiere EPG für: $land"
-            echo "========================================="
-            
-            cd epg
-            npm run grab --- --channels=../epg-custom/$land-channels.xml --output=../public/epg/$land.xml --days=3 --maxConnections=3 --timeout=60000 || echo "⚠️ Fehler bei $land"
-            cd ..
-            
-            # Prüfen ob Datei erstellt wurde
-            if [ -f public/epg/$land.xml ]; then
-              size=$(wc -c < public/epg/$land.xml)
-              echo "✅ $land.xml erstellt ($size Bytes)"
-            else
-              echo "⚠️ $land.xml wurde nicht erstellt"
-              # Leere XML-Datei als Platzhalter
-              cat > public/epg/$land.xml << 'EOF'
-<?xml version="1.0" encoding="UTF-8"?>
-<tv>
-  <channel id="placeholder">
-    <display-name>Keine EPG-Daten</display-name>
-  </channel>
-  <programme channel="placeholder" start="20250101000000 +0000" stop="20250101235959 +0000">
-    <title>EPG nicht verfügbar</title>
-  </programme>
-</tv>
-EOF
-            fi
-          done
-          
-          # ========================================
-          # INDEX-DATEI ERSTELLEN
-          # ========================================
-          
+          # Index-Datei
           cat > public/epg/index.json << 'EOF'
           {
-            "lastUpdate": "$(date -Iseconds)",
-            "countries": [
-              { "code": "de", "name": "Deutschland", "flag": "🇩🇪" },
-              { "code": "it", "name": "Italien", "flag": "🇮🇹" },
-              { "code": "es", "name": "Spanien", "flag": "🇪🇸" },
-              { "code": "fr", "name": "Frankreich", "flag": "🇫🇷" },
-              { "code": "ar", "name": "Argentinien", "flag": "🇦🇷" },
-              { "code": "br", "name": "Brasilien", "flag": "🇧🇷" }
-            ]
+            "lastUpdate": "2024-03-13T12:00:00Z",
+            "countries": ["de", "it", "es", "fr", "ar", "br"]
           }
-EOF
+          EOF
           
-          echo ""
-          echo "========================================="
-          echo "✅ EPG-Generierung abgeschlossen"
-          echo "========================================="
-          echo "📁 Verzeichnis: public/epg/"
+          echo "✅ EPG Dateien erstellt"
           ls -la public/epg/
       
       - name: Nach Cloudflare Pages deployen
