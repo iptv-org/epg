@@ -16,7 +16,7 @@ jobs:
           mkdir -p public/epg
           
           # 🇩🇪 DEUTSCHLAND - Kanalliste
-          cat > public/epg/de.txt << 'EOF'
+          cat > public/epg/de.txt <<'EOF'
 ard.de
 zdf.de
 rtl.de
@@ -32,7 +32,7 @@ phoenix.de
 EOF
 
           # 🇮🇹 ITALIEN - Kanalliste
-          cat > public/epg/it.txt << 'EOF'
+          cat > public/epg/it.txt <<'EOF'
 rai.it
 mediaset.it
 la7.it
@@ -40,7 +40,7 @@ sky.it
 EOF
 
           # 🇪🇸 SPANIEN - Kanalliste
-          cat > public/epg/es.txt << 'EOF'
+          cat > public/epg/es.txt <<'EOF'
 rtve.es
 antena3.com
 telecinco.es
@@ -49,7 +49,7 @@ lasexta.com
 EOF
 
           # 🇫🇷 FRANKREICH - Kanalliste
-          cat > public/epg/fr.txt << 'EOF'
+          cat > public/epg/fr.txt <<'EOF'
 francetv.fr
 tf1.fr
 m6.fr
@@ -58,7 +58,7 @@ bfmtv.com
 EOF
 
           # 🇦🇷 ARGENTINIEN - Kanalliste
-          cat > public/epg/ar.txt << 'EOF'
+          cat > public/epg/ar.txt <<'EOF'
 telefe.com
 eltrece.tv
 tn.com.ar
@@ -66,7 +66,7 @@ tycsports.com
 EOF
 
           # 🇧🇷 BRASILIEN - Kanalliste
-          cat > public/epg/br.txt << 'EOF'
+          cat > public/epg/br.txt <<'EOF'
 redeglobo.globo.com
 recordtv.com.br
 sbt.com.br
@@ -75,7 +75,7 @@ cnnbrasil.com.br
 EOF
 
           # Ländernamen für Anzeige
-          cat > public/epg/namen.txt << 'EOF'
+          cat > public/epg/namen.txt <<'EOF'
 Deutschland|de
 Italien|it
 Spanien|es
@@ -85,7 +85,7 @@ Brasilien|br
 EOF
 
           # Index-Datei
-          cat > public/epg/index.json << 'EOF'
+          cat > public/epg/index.json <<'EOF'
 {
   "lastUpdate": "$(date -Iseconds)",
   "countries": [
