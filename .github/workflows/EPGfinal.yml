@@ -44,41 +44,37 @@ jobs:
               echo "✅ $sprache erfolgreich"
             else
               echo "⚠️ $sprache fehlgeschlagen"
-              # Leeres XML als Platzhalter
               cd ..
-              cat > public/epg/$sprache.xml << EOF
-<?xml version="1.0" encoding="UTF-8"?>
-<tv>
-  <channel id="placeholder">
-    <display-name>Keine EPG-Daten</display-name>
-  </channel>
-  <programme channel="placeholder" start="20240101000000 +0000" stop="20240101235959 +0000">
-    <title>EPG nicht verfügbar</title>
-  </programme>
-</tv>
-EOF
+              # Leeres XML als Platzhalter - OHNE << EOF PROBLEME!
+              echo '<?xml version="1.0" encoding="UTF-8"?>' > public/epg/$sprache.xml
+              echo '<tv>' >> public/epg/$sprache.xml
+              echo '  <channel id="placeholder">' >> public/epg/$sprache.xml
+              echo '    <display-name>Keine EPG-Daten</display-name>' >> public/epg/$sprache.xml
+              echo '  </channel>' >> public/epg/$sprache.xml
+              echo '  <programme channel="placeholder" start="20240101000000 +0000" stop="20240101235959 +0000">' >> public/epg/$sprache.xml
+              echo '    <title>EPG nicht verfügbar</title>' >> public/epg/$sprache.xml
+              echo '  </programme>' >> public/epg/$sprache.xml
+              echo '</tv>' >> public/epg/$sprache.xml
             fi
             cd ..
           done
           
           # Index-Datei erstellen
-          cat > public/epg/index.json << EOF
-{
-  "lastUpdate": "$(date -Iseconds)",
-  "languages": [
-    { "code": "de", "name": "Deutsch", "flag": "🇩🇪" },
-    { "code": "en", "name": "English", "flag": "🇬🇧" },
-    { "code": "fr", "name": "Français", "flag": "🇫🇷" },
-    { "code": "it", "name": "Italiano", "flag": "🇮🇹" },
-    { "code": "es", "name": "Español", "flag": "🇪🇸" },
-    { "code": "pt", "name": "Português", "flag": "🇵🇹" },
-    { "code": "ru", "name": "Русский", "flag": "🇷🇺" },
-    { "code": "ar", "name": "العربية", "flag": "🇸🇦" },
-    { "code": "zh", "name": "中文", "flag": "🇨🇳" },
-    { "code": "ja", "name": "日本語", "flag": "🇯🇵" }
-  ]
-}
-EOF
+          echo "{" > public/epg/index.json
+          echo '  "lastUpdate": "'$(date -Iseconds)'",' >> public/epg/index.json
+          echo '  "languages": [' >> public/epg/index.json
+          echo '    { "code": "de", "name": "Deutsch", "flag": "🇩🇪" },' >> public/epg/index.json
+          echo '    { "code": "en", "name": "English", "flag": "🇬🇧" },' >> public/epg/index.json
+          echo '    { "code": "fr", "name": "Français", "flag": "🇫🇷" },' >> public/epg/index.json
+          echo '    { "code": "it", "name": "Italiano", "flag": "🇮🇹" },' >> public/epg/index.json
+          echo '    { "code": "es", "name": "Español", "flag": "🇪🇸" },' >> public/epg/index.json
+          echo '    { "code": "pt", "name": "Português", "flag": "🇵🇹" },' >> public/epg/index.json
+          echo '    { "code": "ru", "name": "Русский", "flag": "🇷🇺" },' >> public/epg/index.json
+          echo '    { "code": "ar", "name": "العربية", "flag": "🇸🇦" },' >> public/epg/index.json
+          echo '    { "code": "zh", "name": "中文", "flag": "🇨🇳" },' >> public/epg/index.json
+          echo '    { "code": "ja", "name": "日本語", "flag": "🇯🇵" }' >> public/epg/index.json
+          echo '  ]' >> public/epg/index.json
+          echo '}' >> public/epg/index.json
           
           echo ""
           echo "========================================="
@@ -94,4 +90,3 @@ EOF
           projectName: "iptv-epg-data"
           directory: public
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-        
