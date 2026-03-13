@@ -1,4 +1,4 @@
-- name: Create combined EPG and index
+name: Create combined EPG and index
   run: |
     cd public/epg/de
     
