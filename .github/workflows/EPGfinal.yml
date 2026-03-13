@@ -17,101 +17,90 @@ jobs:
           
           # 🇩🇪 DEUTSCHLAND - Kanalliste
           cat > public/epg/de.txt << 'EOF'
-          ard.de
-          zdf.de
-          rtl.de
-          sat1.de
-          prosieben.de
-          vox.de
-          ntv.de
-          welt.de
-          3sat.de
-          arte.tv
-          kika.de
-          phoenix.de
-          EOF
-          
+ard.de
+zdf.de
+rtl.de
+sat1.de
+prosieben.de
+vox.de
+ntv.de
+welt.de
+3sat.de
+arte.tv
+kika.de
+phoenix.de
+EOF
+
           # 🇮🇹 ITALIEN - Kanalliste
           cat > public/epg/it.txt << 'EOF'
-          rai.it
-          mediaset.it
-          la7.it
-          sky.it
-          EOF
-          
+rai.it
+mediaset.it
+la7.it
+sky.it
+EOF
+
           # 🇪🇸 SPANIEN - Kanalliste
           cat > public/epg/es.txt << 'EOF'
-          rtve.es
-          antena3.com
-          telecinco.es
-          cuatro.com
-          lasexta.com
-          EOF
-          
+rtve.es
+antena3.com
+telecinco.es
+cuatro.com
+lasexta.com
+EOF
+
           # 🇫🇷 FRANKREICH - Kanalliste
           cat > public/epg/fr.txt << 'EOF'
-          francetv.fr
-          tf1.fr
-          m6.fr
-          canalplus.com
-          bfmtv.com
-          EOF
-          
+francetv.fr
+tf1.fr
+m6.fr
+canalplus.com
+bfmtv.com
+EOF
+
           # 🇦🇷 ARGENTINIEN - Kanalliste
           cat > public/epg/ar.txt << 'EOF'
-          telefe.com
-          eltrece.tv
-          tn.com.ar
-          tycsports.com
-          EOF
-          
+telefe.com
+eltrece.tv
+tn.com.ar
+tycsports.com
+EOF
+
           # 🇧🇷 BRASILIEN - Kanalliste
           cat > public/epg/br.txt << 'EOF'
-          redeglobo.globo.com
-          recordtv.com.br
-          sbt.com.br
-          band.com.br
-          cnnbrasil.com.br
-          EOF
-          
+redeglobo.globo.com
+recordtv.com.br
+sbt.com.br
+band.com.br
+cnnbrasil.com.br
+EOF
+
           # Ländernamen für Anzeige
           cat > public/epg/namen.txt << 'EOF'
-          Deutschland|de
-          Italien|it
-          Spanien|es
-          Frankreich|fr
-          Argentinien|ar
-          Brasilien|br
-          EOF
-          
-          # Index-Datei mit allen Ländern
-          cat > public/epg/index.json << 'EOF'
-          {
-            "lastUpdate": "2024-03-13T12:00:00Z",
-            "countries": [
-              { "code": "de", "name": "Deutschland", "flag": "🇩🇪" },
-              { "code": "it", "name": "Italien", "flag": "🇮🇹" },
-              { "code": "es", "name": "Spanien", "flag": "🇪🇸" },
-              { "code": "fr", "name": "Frankreich", "flag": "🇫🇷" },
-              { "code": "ar", "name": "Argentinien", "flag": "🇦🇷" },
-              { "code": "br", "name": "Brasilien", "flag": "🇧🇷" }
-            ]
-          }
+Deutschland|de
+Italien|it
+Spanien|es
+Frankreich|fr
+Argentinien|ar
+Brasilien|br
 EOF
-          
+
+          # Index-Datei
+          cat > public/epg/index.json << 'EOF'
+{
+  "lastUpdate": "$(date -Iseconds)",
+  "countries": [
+    { "code": "de", "name": "Deutschland", "flag": "🇩🇪" },
+    { "code": "it", "name": "Italien", "flag": "🇮🇹" },
+    { "code": "es", "name": "Spanien", "flag": "🇪🇸" },
+    { "code": "fr", "name": "Frankreich", "flag": "🇫🇷" },
+    { "code": "ar", "name": "Argentinien", "flag": "🇦🇷" },
+    { "code": "br", "name": "Brasilien", "flag": "🇧🇷" }
+  ]
+}
+EOF
+
           echo "✅ EPG-Dateien für 6 Länder erstellt"
-          echo ""
-          echo "📁 Verzeichnis: public/epg/"
-          echo ""
-          echo "📊 Generierte Dateien:"
           ls -la public/epg/
-          echo ""
-          echo "🇩🇪 Deutschland: $(wc -l < public/epg/de.txt) Sender"
-          echo "🇮🇹 Italien: $(wc -l < public/epg/it.txt) Sender"
-          echo "🇪🇸 Spanien: $(wc -l < public/epg/es.txt) Sender"
-          echo "🇫🇷 Frankreich: $(wc -l < public/epg/fr.txt) Sender"
-          echo "🇦🇷 Argentinien: $(wc -l < public/epg/ar.txt) Sender"
-          echo "🇧🇷 Brasilien: $(wc -l < public/epg/br.txt) Sender"
       
       - name: Nach Cloudflare Pages deployen
         uses: cloudflare/pages-action@v1
