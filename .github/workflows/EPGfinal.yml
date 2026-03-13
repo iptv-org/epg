@@ -32,7 +32,7 @@ jobs:
           else
             echo "⚠️ ARD fehlgeschlagen - erstelle Testdaten"
             cd ..
-            cat > public/epg/de/ard.de.xml << 'EOF'
+            cat > public/epg/de/ard.de.xml << EOF
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
   <channel id="ard.de">
@@ -54,7 +54,7 @@ EOF
           # Prüfe ob Datei existiert
           if [ ! -f "ard.de.xml" ]; then
             echo "⚠️ Keine EPG-Datei gefunden - erstelle Testdaten"
-            cat > ard.de.xml << 'EOF'
+            cat > ard.de.xml << EOF
 <?xml version="1.0" encoding="UTF-8"?>
 <tv>
   <channel id="ard.de">
