@@ -25,7 +25,6 @@ jobs:
           # DEUTSCH (de)
           # ========================================
           cat > public/epg/de.xml << 'EOF'
-<?xml version="1.0" encoding="UTF-8"?>
 <tv>
   <channel id="ard.de">
     <display-name>Das Erste</display-name>
