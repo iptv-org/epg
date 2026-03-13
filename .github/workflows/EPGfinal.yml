@@ -1,6 +1,8 @@
 name: EPG Deutschland
 
 on:
+  schedule:
+    - cron: '0 2 * * *'
   workflow_dispatch:
 
 jobs:
@@ -14,12 +16,34 @@ jobs:
         with:
           node-version: '18'
       
-      - name: Generate EPG
+      - name: Clone iptv-org/epg
+        run: |
+          git clone --depth 1 https://github.com/iptv-org/epg.git
+          cd epg
+          npm install
+      
+      - name: Generate EPG for ARD
         run: |
           mkdir -p public/epg/de
-          echo '{"lastUpdate":"2024-01-01","country":"Deutschland","totalChannels":1,"channels":[{"channel":"ard.de","file":"ard.de.xml"}]}' > public/epg/de/index.json
-          echo '<?xml version="1.0"?><tv><channel id="ard.de"><display-name>ARD</display-name></channel></tv>' > public/epg/de/ard.de.xml
-          echo '<?xml version="1.0"?><tv><channel id="ard.de"><display-name>ARD</display-name></channel></tv>' > public/epg/de/gesamt.xml
+          cd epg
+          npm run grab --- --site=ard.de --output=../public/epg/de/ard.de.xml --days=1
+          cd ..
+      
+      - name: Create index.json
+        run: |
+          cd public/epg/de
+          echo "{" > index.json
+          echo "  \"lastUpdate\": \"$(date -Iseconds)\"," >> index.json
+          echo "  \"country\": \"Deutschland\"," >> index.json
+          echo "  \"countryCode\": \"de\"," >> index.json
+          echo "  \"totalChannels\": 1," >> index.json
+          echo "  \"channels\": [" >> index.json
+          echo "    {\"channel\": \"ard.de\", \"file\": \"ard.de.xml\"}" >> index.json
+          echo "  ]" >> index.json
+          echo "}" >> index.json
+          
+          # Kopie als gesamt.xml
+          cp ard.de.xml gesamt.xml
       
       - name: Deploy to Cloudflare
         uses: cloudflare/pages-action@v1
