@@ -77,9 +77,9 @@ EOF
           cd ..
           echo "✅ Generierung abgeschlossen"
       
-      - name: 📊 Gesamt-EPG und Index erstellen
+      - name: 📊 Gesamt-EPG erstellen
         run: |
-          echo "📊 Erstelle gesamt.xml und index.json..."
+          echo "📊 Erstelle gesamt.xml..."
           cd public/epg/de
           
           # XML-Header für gesamt.xml
@@ -96,28 +96,40 @@ EOF
           done
           
           echo '</tv>' >> gesamt.xml
+          echo "✅ gesamt.xml erstellt: $(wc -l < gesamt.xml) Zeilen"
+      
+      - name: 📊 Index.json erstellen
+        run: |
+          echo "📊 Erstelle index.json..."
+          cd public/epg/de
           
           # Anzahl der echten Channel-Dateien zählen
           channel_count=$(ls *.xml | grep -v "gesamt.xml" | wc -l)
           
-          # Index.json erstellen (als mehrzeiligen String)
-          cat > index.json << EOF
-{
-  "lastUpdate": "$(date -Iseconds)",
-  "country": "Deutschland",
-  "countryCode": "de",
-  "totalChannels": $channel_count,
-  "channels": [
-$(for file in *.xml; do
-  if [ "$file" != "gesamt.xml" ] && [ -f "$file" ]; then
-    echo "    {\"channel\": \"$(basename "$file" .xml)\", \"file\": \"$file\"},"
-  fi
-done | sed '$ s/,//')
-  ]
-}
-EOF
+          # Index.json als einfachen String erstellen (kein EOF)
+          echo "{" > index.json
+          echo "  \"lastUpdate\": \"$(date -Iseconds)\"," >> index.json
+          echo "  \"country\": \"Deutschland\"," >> index.json
+          echo "  \"countryCode\": \"de\"," >> index.json
+          echo "  \"totalChannels\": $channel_count," >> index.json
+          echo "  \"channels\": [" >> index.json
           
-          echo "✅ gesamt.xml erstellt: $(wc -l < gesamt.xml) Zeilen"
+          first=1
+          for file in *.xml; do
+            if [ "$file" != "gesamt.xml" ] && [ -f "$file" ]; then
+              if [ $first -eq 1 ]; then
+                first=0
+              else
+                echo "," >> index.json
+              fi
+              channel=$(basename "$file" .xml)
+              echo "    {\"channel\": \"$channel\", \"file\": \"$file\"}" >> index.json
+            fi
+          done
+          
+          echo "  ]" >> index.json
+          echo "}" >> index.json
+          
           echo "✅ index.json erstellt mit $channel_count Kanälen"
           echo ""
           echo "📁 Generierte Dateien:"
