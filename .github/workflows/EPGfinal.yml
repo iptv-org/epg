@@ -1,9 +1,9 @@
-name: EPG Weltweit
+name: EPG Automatisch von iptv-org
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 2 * * *'
+    - cron: '0 2 * * *'  # Täglich um 2 Uhr
 
 jobs:
   generate-epg:
@@ -12,141 +12,190 @@ jobs:
       - name: Repository auschecken
         uses: actions/checkout@v3
       
-      - name: EPG Dateien erstellen
+      - name: Node.js einrichten
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      
+      - name: iptv-org/epg installieren
         run: |
-          # Verzeichnis anlegen
-          mkdir -p public/epg
+          git clone --depth 1 https://github.com/iptv-org/epg.git
+          cd epg
+          npm install
+      
+      - name: EPG für 6 Länder generieren (iptv-org)
+        run: |
+          # Verzeichnisstruktur für die App anlegen
+          mkdir -p public/epg/de
+          mkdir -p public/epg/it
+          mkdir -p public/epg/es
+          mkdir -p public/epg/fr
+          mkdir -p public/epg/ar
+          mkdir -p public/epg/br
           
           echo "========================================="
-          echo "📡 Erstelle EPG-XML für 10 Sprachen"
+          echo "📡 Generiere EPG mit iptv-org für 6 Länder"
           echo "========================================="
           
           # ========================================
-          # DEUTSCH (de)
+          # DEUTSCHLAND - Mit echten EPG-Daten
           # ========================================
-          echo '<?xml version="1.0" encoding="UTF-8"?>' > public/epg/de.xml
-          echo '<tv>' >> public/epg/de.xml
-          echo '  <channel id="ard.de">' >> public/epg/de.xml
-          echo '    <display-name>Das Erste</display-name>' >> public/epg/de.xml
-          echo '  </channel>' >> public/epg/de.xml
-          echo '  <channel id="zdf.de">' >> public/epg/de.xml
-          echo '    <display-name>ZDF</display-name>' >> public/epg/de.xml
-          echo '  </channel>' >> public/epg/de.xml
-          echo '  <channel id="rtl.de">' >> public/epg/de.xml
-          echo '    <display-name>RTL</display-name>' >> public/epg/de.xml
-          echo '  </channel>' >> public/epg/de.xml
-          echo '  <channel id="sat1.de">' >> public/epg/de.xml
-          echo '    <display-name>SAT.1</display-name>' >> public/epg/de.xml
-          echo '  </channel>' >> public/epg/de.xml
-          echo '  <channel id="prosieben.de">' >> public/epg/de.xml
-          echo '    <display-name>ProSieben</display-name>' >> public/epg/de.xml
-          echo '  </channel>' >> public/epg/de.xml
-          echo '  <programme channel="ard.de" start="20240313183000 +0100" stop="20240313184500 +0100">' >> public/epg/de.xml
-          echo '    <title>Tagesschau</title>' >> public/epg/de.xml
-          echo '  </programme>' >> public/epg/de.xml
-          echo '  <programme channel="zdf.de" start="20240313190000 +0100" stop="20240313191500 +0100">' >> public/epg/de.xml
-          echo '    <title>heute</title>' >> public/epg/de.xml
-          echo '  </programme>' >> public/epg/de.xml
-          echo '  <programme channel="rtl.de" start="20240313200000 +0100" stop="20240313203000 +0100">' >> public/epg/de.xml
-          echo '    <title>RTL Aktuell</title>' >> public/epg/de.xml
-          echo '  </programme>' >> public/epg/de.xml
-          echo '</tv>' >> public/epg/de.xml
+          echo ""
+          echo "📡 Generiere EPG für Deutschland..."
+          cd epg
+          npm run grab --- --site=ard.de --output=../public/epg/de/ard.de.xml --days=3 --maxConnections=2 || echo "⚠️ ARD fehlgeschlagen"
+          npm run grab --- --site=zdf.de --output=../public/epg/de/zdf.de.xml --days=3 --maxConnections=2 || echo "⚠️ ZDF fehlgeschlagen"
+          npm run grab --- --site=rtl.de --output=../public/epg/de/rtl.de.xml --days=3 --maxConnections=2 || echo "⚠️ RTL fehlgeschlagen"
+          npm run grab --- --site=sat1.de --output=../public/epg/de/sat1.de.xml --days=3 --maxConnections=2 || echo "⚠️ Sat.1 fehlgeschlagen"
+          npm run grab --- --site=prosieben.de --output=../public/epg/de/prosieben.de.xml --days=3 --maxConnections=2 || echo "⚠️ ProSieben fehlgeschlagen"
+          cd ..
           
           # ========================================
-          # ENGLISCH (en)
+          # ITALIEN
           # ========================================
-          echo '<?xml version="1.0" encoding="UTF-8"?>' > public/epg/en.xml
-          echo '<tv>' >> public/epg/en.xml
-          echo '  <channel id="bbc.co.uk">' >> public/epg/en.xml
-          echo '    <display-name>BBC One</display-name>' >> public/epg/en.xml
-          echo '  </channel>' >> public/epg/en.xml
-          echo '  <channel id="itv.com">' >> public/epg/en.xml
-          echo '    <display-name>ITV</display-name>' >> public/epg/en.xml
-          echo '  </channel>' >> public/epg/en.xml
-          echo '  <programme channel="bbc.co.uk" start="20240313180000 +0000" stop="20240313183000 +0000">' >> public/epg/en.xml
-          echo '    <title>BBC News at Six</title>' >> public/epg/en.xml
-          echo '  </programme>' >> public/epg/en.xml
-          echo '  <programme channel="itv.com" start="20240313183000 +0000" stop="20240313200000 +0000">' >> public/epg/en.xml
-          echo '    <title>ITV Evening News</title>' >> public/epg/en.xml
-          echo '  </programme>' >> public/epg/en.xml
-          echo '</tv>' >> public/epg/en.xml
+          echo ""
+          echo "📡 Generiere EPG für Italien..."
+          cd epg
+          npm run grab --- --site=rai.it --output=../public/epg/it/rai.it.xml --days=3 --maxConnections=2 || echo "⚠️ RAI fehlgeschlagen"
+          npm run grab --- --site=mediaset.it --output=../public/epg/it/mediaset.it.xml --days=3 --maxConnections=2 || echo "⚠️ Mediaset fehlgeschlagen"
+          npm run grab --- --site=la7.it --output=../public/epg/it/la7.it.xml --days=3 --maxConnections=2 || echo "⚠️ LA7 fehlgeschlagen"
+          cd ..
           
           # ========================================
-          # FRANZÖSISCH (fr)
+          # SPANIEN
           # ========================================
-          echo '<?xml version="1.0" encoding="UTF-8"?>' > public/epg/fr.xml
-          echo '<tv>' >> public/epg/fr.xml
-          echo '  <channel id="tf1.fr">' >> public/epg/fr.xml
-          echo '    <display-name>TF1</display-name>' >> public/epg/fr.xml
-          echo '  </channel>' >> public/epg/fr.xml
-          echo '  <channel id="france2.fr">' >> public/epg/fr.xml
-          echo '    <display-name>France 2</display-name>' >> public/epg/fr.xml
-          echo '  </channel>' >> public/epg/fr.xml
-          echo '  <programme channel="tf1.fr" start="20240313200000 +0100" stop="20240313203000 +0100">' >> public/epg/fr.xml
-          echo '    <title>Journal de 20h</title>' >> public/epg/fr.xml
-          echo '  </programme>' >> public/epg/fr.xml
-          echo '  <programme channel="france2.fr" start="20240313203000 +0100" stop="20240313210000 +0100">' >> public/epg/fr.xml
-          echo '    <title>Envoyé Spécial</title>' >> public/epg/fr.xml
-          echo '  </programme>' >> public/epg/fr.xml
-          echo '</tv>' >> public/epg/fr.xml
+          echo ""
+          echo "📡 Generiere EPG für Spanien..."
+          cd epg
+          npm run grab --- --site=rtve.es --output=../public/epg/es/rtve.es.xml --days=3 --maxConnections=2 || echo "⚠️ RTVE fehlgeschlagen"
+          npm run grab --- --site=antena3.com --output=../public/epg/es/antena3.com.xml --days=3 --maxConnections=2 || echo "⚠️ Antena 3 fehlgeschlagen"
+          npm run grab --- --site=telecinco.es --output=../public/epg/es/telecinco.es.xml --days=3 --maxConnections=2 || echo "⚠️ Telecinco fehlgeschlagen"
+          cd ..
           
           # ========================================
-          # ITALIENISCH (it)
+          # FRANKREICH
           # ========================================
-          echo '<?xml version="1.0" encoding="UTF-8"?>' > public/epg/it.xml
-          echo '<tv>' >> public/epg/it.xml
-          echo '  <channel id="rai1.it">' >> public/epg/it.xml
-          echo '    <display-name>Rai 1</display-name>' >> public/epg/it.xml
-          echo '  </channel>' >> public/epg/it.xml
-          echo '  <channel id="canale5.it">' >> public/epg/it.xml
-          echo '    <display-name>Canale 5</display-name>' >> public/epg/it.xml
-          echo '  </channel>' >> public/epg/it.xml
-          echo '  <programme channel="rai1.it" start="20240313203000 +0100" stop="20240313210000 +0100">' >> public/epg/it.xml
-          echo '    <title>TG1</title>' >> public/epg/it.xml
-          echo '  </programme>' >> public/epg/it.xml
-          echo '  <programme channel="canale5.it" start="20240313210000 +0100" stop="20240313213000 +0100">' >> public/epg/it.xml
-          echo '    <title>Striscia la notizia</title>' >> public/epg/it.xml
-          echo '  </programme>' >> public/epg/it.xml
-          echo '</tv>' >> public/epg/it.xml
+          echo ""
+          echo "📡 Generiere EPG für Frankreich..."
+          cd epg
+          npm run grab --- --site=francetv.fr --output=../public/epg/fr/francetv.fr.xml --days=3 --maxConnections=2 || echo "⚠️ France TV fehlgeschlagen"
+          npm run grab --- --site=tf1.fr --output=../public/epg/fr/tf1.fr.xml --days=3 --maxConnections=2 || echo "⚠️ TF1 fehlgeschlagen"
+          npm run grab --- --site=m6.fr --output=../public/epg/fr/m6.fr.xml --days=3 --maxConnections=2 || echo "⚠️ M6 fehlgeschlagen"
+          cd ..
           
           # ========================================
-          # SPANISCH (es)
+          # ARGENTINIEN
           # ========================================
-          echo '<?xml version="1.0" encoding="UTF-8"?>' > public/epg/es.xml
-          echo '<tv>' >> public/epg/es.xml
-          echo '  <channel id="rtve.es">' >> public/epg/es.xml
-          echo '    <display-name>La 1</display-name>' >> public/epg/es.xml
-          echo '  </channel>' >> public/epg/es.xml
-          echo '  <channel id="antena3.es">' >> public/epg/es.xml
-          echo '    <display-name>Antena 3</display-name>' >> public/epg/es.xml
-          echo '  </channel>' >> public/epg/es.xml
-          echo '  <programme channel="rtve.es" start="20240313210000 +0100" stop="20240313213000 +0100">' >> public/epg/es.xml
-          echo '    <title>Telediario</title>' >> public/epg/es.xml
-          echo '  </programme>' >> public/epg/es.xml
-          echo '  <programme channel="antena3.es" start="20240313213000 +0100" stop="20240313220000 +0100">' >> public/epg/es.xml
-          echo '    <title>Antena 3 Noticias</title>' >> public/epg/es.xml
-          echo '  </programme>' >> public/epg/es.xml
-          echo '</tv>' >> public/epg/es.xml
+          echo ""
+          echo "📡 Generiere EPG für Argentinien..."
+          cd epg
+          npm run grab --- --site=telefe.com --output=../public/epg/ar/telefe.com.xml --days=3 --maxConnections=2 || echo "⚠️ Telefe fehlgeschlagen"
+          npm run grab --- --site=eltrece.tv --output=../public/epg/ar/eltrece.tv.xml --days=3 --maxConnections=2 || echo "⚠️ El Trece fehlgeschlagen"
+          npm run grab --- --site=tn.com.ar --output=../public/epg/ar/tn.com.ar.xml --days=3 --maxConnections=2 || echo "⚠️ TN fehlgeschlagen"
+          cd ..
           
           # ========================================
-          # INDEX-DATEI
+          # BRASILIEN
           # ========================================
-          echo '{' > public/epg/index.json
-          echo '  "lastUpdate": "'$(date -Iseconds)'",' >> public/epg/index.json
-          echo '  "languages": [' >> public/epg/index.json
-          echo '    { "code": "de", "name": "Deutsch", "flag": "🇩🇪", "channels": 5 },' >> public/epg/index.json
-          echo '    { "code": "en", "name": "English", "flag": "🇬🇧", "channels": 2 },' >> public/epg/index.json
-          echo '    { "code": "fr", "name": "Français", "flag": "🇫🇷", "channels": 2 },' >> public/epg/index.json
-          echo '    { "code": "it", "name": "Italiano", "flag": "🇮🇹", "channels": 2 },' >> public/epg/index.json
-          echo '    { "code": "es", "name": "Español", "flag": "🇪🇸", "channels": 2 }' >> public/epg/index.json
-          echo '  ]' >> public/epg/index.json
-          echo '}' >> public/epg/index.json
+          echo ""
+          echo "📡 Generiere EPG für Brasilien..."
+          cd epg
+          npm run grab --- --site=redeglobo.globo.com --output=../public/epg/br/redeglobo.globo.com.xml --days=3 --maxConnections=2 || echo "⚠️ Globo fehlgeschlagen"
+          npm run grab --- --site=recordtv.com.br --output=../public/epg/br/recordtv.com.br.xml --days=3 --maxConnections=2 || echo "⚠️ Record fehlgeschlagen"
+          npm run grab --- --site=sbt.com.br --output=../public/epg/br/sbt.com.br.xml --days=3 --maxConnections=2 || echo "⚠️ SBT fehlgeschlagen"
+          cd ..
           
           echo ""
           echo "========================================="
-          echo "✅ EPG-Dateien erfolgreich erstellt!"
+          echo "🔍 Erstelle Index für die App..."
           echo "========================================="
-          ls -la public/epg/
+          
+          # ========================================
+          # INDEX.JSON für die App (genau wie in deiner EPGService)
+          # ========================================
+          cat > public/epg/index.json << EOF
+{
+  "lastUpdate": "$(date -Iseconds)",
+  "countries": [
+    {
+      "code": "de",
+      "name": "Deutschland",
+      "flag": "🇩🇪",
+      "channels": [
+        { "id": "ard.de", "name": "ARD", "file": "ard.de.xml" },
+        { "id": "zdf.de", "name": "ZDF", "file": "zdf.de.xml" },
+        { "id": "rtl.de", "name": "RTL", "file": "rtl.de.xml" },
+        { "id": "sat1.de", "name": "SAT.1", "file": "sat1.de.xml" },
+        { "id": "prosieben.de", "name": "ProSieben", "file": "prosieben.de.xml" }
+      ]
+    },
+    {
+      "code": "it",
+      "name": "Italien",
+      "flag": "🇮🇹",
+      "channels": [
+        { "id": "rai.it", "name": "RAI", "file": "rai.it.xml" },
+        { "id": "mediaset.it", "name": "Mediaset", "file": "mediaset.it.xml" },
+        { "id": "la7.it", "name": "LA7", "file": "la7.it.xml" }
+      ]
+    },
+    {
+      "code": "es",
+      "name": "Spanien",
+      "flag": "🇪🇸",
+      "channels": [
+        { "id": "rtve.es", "name": "RTVE", "file": "rtve.es.xml" },
+        { "id": "antena3.com", "name": "Antena 3", "file": "antena3.com.xml" },
+        { "id": "telecinco.es", "name": "Telecinco", "file": "telecinco.es.xml" }
+      ]
+    },
+    {
+      "code": "fr",
+      "name": "Frankreich",
+      "flag": "🇫🇷",
+      "channels": [
+        { "id": "francetv.fr", "name": "France TV", "file": "francetv.fr.xml" },
+        { "id": "tf1.fr", "name": "TF1", "file": "tf1.fr.xml" },
+        { "id": "m6.fr", "name": "M6", "file": "m6.fr.xml" }
+      ]
+    },
+    {
+      "code": "ar",
+      "name": "Argentinien",
+      "flag": "🇦🇷",
+      "channels": [
+        { "id": "telefe.com", "name": "Telefe", "file": "telefe.com.xml" },
+        { "id": "eltrece.tv", "name": "El Trece", "file": "eltrece.tv.xml" },
+        { "id": "tn.com.ar", "name": "TN", "file": "tn.com.ar.xml" }
+      ]
+    },
+    {
+      "code": "br",
+      "name": "Brasilien",
+      "flag": "🇧🇷",
+      "channels": [
+        { "id": "redeglobo.globo.com", "name": "Globo", "file": "redeglobo.globo.com.xml" },
+        { "id": "recordtv.com.br", "name": "Record", "file": "recordtv.com.br.xml" },
+        { "id": "sbt.com.br", "name": "SBT", "file": "sbt.com.br.xml" }
+      ]
+    }
+  ]
+}
+EOF
+          
+          # ========================================
+          # ZUSAMMENFASSUNG
+          # ========================================
+          echo ""
+          echo "========================================="
+          echo "✅ EPG-Generierung abgeschlossen!"
+          echo "========================================="
+          echo ""
+          echo "📁 Generierte Dateien:"
+          ls -la public/epg/*/
+          echo ""
+          echo "📊 Index für die App: public/epg/index.json"
+          echo "========================================="
       
       - name: Nach Cloudflare Pages deployen
         uses: cloudflare/pages-action@v1
