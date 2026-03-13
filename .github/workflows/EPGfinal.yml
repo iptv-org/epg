@@ -1,196 +1,50 @@
-name: EPG Automatisch von iptv-org
-
-on:
-  workflow_dispatch:
-  schedule:
-    - cron: '0 2 * * *'
-
-jobs:
-  generate-epg:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Repository auschecken
-        uses: actions/checkout@v3
-      
-      - name: Node.js einrichten
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-      
-      - name: iptv-org/epg installieren
-        run: |
-          git clone --depth 1 https://github.com/iptv-org/epg.git
-          cd epg
-          npm install
-      
-      - name: EPG für 6 Länder generieren
-        run: |
-          # Verzeichnisstruktur anlegen
-          mkdir -p public/epg/de
-          mkdir -p public/epg/it
-          mkdir -p public/epg/es
-          mkdir -p public/epg/fr
-          mkdir -p public/epg/ar
-          mkdir -p public/epg/br
-          
-          echo "========================================="
-          echo "📡 Generiere EPG für 6 Länder"
-          echo "========================================="
-          
-          # ========================================
-          # DEUTSCHLAND
-          # ========================================
-          echo ""
-          echo "📡 Deutschland..."
-          cd epg
-          npm run grab --- --site=ard.de --output=../public/epg/de/ard.de.xml --days=3 --maxConnections=2 || true
-          npm run grab --- --site=zdf.de --output=../public/epg/de/zdf.de.xml --days=3 --maxConnections=2 || true
-          npm run grab --- --site=rtl.de --output=../public/epg/de/rtl.de.xml --days=3 --maxConnections=2 || true
-          cd ..
-          
-          # ========================================
-          # ITALIEN
-          # ========================================
-          echo ""
-          echo "📡 Italien..."
-          cd epg
-          npm run grab --- --site=rai.it --output=../public/epg/it/rai.it.xml --days=3 --maxConnections=2 || true
-          npm run grab --- --site=mediaset.it --output=../public/epg/it/mediaset.it.xml --days=3 --maxConnections=2 || true
-          cd ..
-          
-          # ========================================
-          # SPANIEN
-          # ========================================
-          echo ""
-          echo "📡 Spanien..."
-          cd epg
-          npm run grab --- --site=rtve.es --output=../public/epg/es/rtve.es.xml --days=3 --maxConnections=2 || true
-          npm run grab --- --site=antena3.com --output=../public/epg/es/antena3.com.xml --days=3 --maxConnections=2 || true
-          cd ..
-          
-          # ========================================
-          # FRANKREICH
-          # ========================================
-          echo ""
-          echo "📡 Frankreich..."
-          cd epg
-          npm run grab --- --site=francetv.fr --output=../public/epg/fr/francetv.fr.xml --days=3 --maxConnections=2 || true
-          npm run grab --- --site=tf1.fr --output=../public/epg/fr/tf1.fr.xml --days=3 --maxConnections=2 || true
-          cd ..
-          
-          # ========================================
-          # ARGENTINIEN
-          # ========================================
-          echo ""
-          echo "📡 Argentinien..."
-          cd epg
-          npm run grab --- --site=telefe.com --output=../public/epg/ar/telefe.com.xml --days=3 --maxConnections=2 || true
-          npm run grab --- --site=eltrece.tv --output=../public/epg/ar/eltrece.tv.xml --days=3 --maxConnections=2 || true
-          cd ..
-          
-          # ========================================
-          # BRASILIEN
-          # ========================================
-          echo ""
-          echo "📡 Brasilien..."
-          cd epg
-          npm run grab --- --site=redeglobo.globo.com --output=../public/epg/br/redeglobo.globo.com.xml --days=3 --maxConnections=2 || true
-          npm run grab --- --site=recordtv.com.br --output=../public/epg/br/recordtv.com.br.xml --days=3 --maxConnections=2 || true
-          cd ..
-          
-          echo ""
-          echo "========================================="
-          echo "📊 Erstelle index.json für die App"
-          echo "========================================="
-          
-          # ========================================
-          # INDEX.JSON (OHNE EOF!)
-          # ========================================
-          echo "{" > public/epg/index.json
-          echo '  "lastUpdate": "'$(date -Iseconds)'",' >> public/epg/index.json
-          echo '  "countries": [' >> public/epg/index.json
-          
-          # Deutschland
-          echo '    {' >> public/epg/index.json
-          echo '      "code": "de",' >> public/epg/index.json
-          echo '      "name": "Deutschland",' >> public/epg/index.json
-          echo '      "flag": "🇩🇪",' >> public/epg/index.json
-          echo '      "channels": [' >> public/epg/index.json
-          echo '        { "id": "ard.de", "name": "ARD", "file": "ard.de.xml" },' >> public/epg/index.json
-          echo '        { "id": "zdf.de", "name": "ZDF", "file": "zdf.de.xml" },' >> public/epg/index.json
-          echo '        { "id": "rtl.de", "name": "RTL", "file": "rtl.de.xml" }' >> public/epg/index.json
-          echo '      ]' >> public/epg/index.json
-          echo '    },' >> public/epg/index.json
-          
-          # Italien
-          echo '    {' >> public/epg/index.json
-          echo '      "code": "it",' >> public/epg/index.json
-          echo '      "name": "Italien",' >> public/epg/index.json
-          echo '      "flag": "🇮🇹",' >> public/epg/index.json
-          echo '      "channels": [' >> public/epg/index.json
-          echo '        { "id": "rai.it", "name": "RAI", "file": "rai.it.xml" },' >> public/epg/index.json
-          echo '        { "id": "mediaset.it", "name": "Mediaset", "file": "mediaset.it.xml" }' >> public/epg/index.json
-          echo '      ]' >> public/epg/index.json
-          echo '    },' >> public/epg/index.json
-          
-          # Spanien
-          echo '    {' >> public/epg/index.json
-          echo '      "code": "es",' >> public/epg/index.json
-          echo '      "name": "Spanien",' >> public/epg/index.json
-          echo '      "flag": "🇪🇸",' >> public/epg/index.json
-          echo '      "channels": [' >> public/epg/index.json
-          echo '        { "id": "rtve.es", "name": "RTVE", "file": "rtve.es.xml" },' >> public/epg/index.json
-          echo '        { "id": "antena3.com", "name": "Antena 3", "file": "antena3.com.xml" }' >> public/epg/index.json
-          echo '      ]' >> public/epg/index.json
-          echo '    },' >> public/epg/index.json
-          
-          # Frankreich
-          echo '    {' >> public/epg/index.json
-          echo '      "code": "fr",' >> public/epg/index.json
-          echo '      "name": "Frankreich",' >> public/epg/index.json
-          echo '      "flag": "🇫🇷",' >> public/epg/index.json
-          echo '      "channels": [' >> public/epg/index.json
-          echo '        { "id": "francetv.fr", "name": "France TV", "file": "francetv.fr.xml" },' >> public/epg/index.json
-          echo '        { "id": "tf1.fr", "name": "TF1", "file": "tf1.fr.xml" }' >> public/epg/index.json
-          echo '      ]' >> public/epg/index.json
-          echo '    },' >> public/epg/index.json
-          
-          # Argentinien
-          echo '    {' >> public/epg/index.json
-          echo '      "code": "ar",' >> public/epg/index.json
-          echo '      "name": "Argentinien",' >> public/epg/index.json
-          echo '      "flag": "🇦🇷",' >> public/epg/index.json
-          echo '      "channels": [' >> public/epg/index.json
-          echo '        { "id": "telefe.com", "name": "Telefe", "file": "telefe.com.xml" },' >> public/epg/index.json
-          echo '        { "id": "eltrece.tv", "name": "El Trece", "file": "eltrece.tv.xml" }' >> public/epg/index.json
-          echo '      ]' >> public/epg/index.json
-          echo '    },' >> public/epg/index.json
-          
-          # Brasilien
-          echo '    {' >> public/epg/index.json
-          echo '      "code": "br",' >> public/epg/index.json
-          echo '      "name": "Brasilien",' >> public/epg/index.json
-          echo '      "flag": "🇧🇷",' >> public/epg/index.json
-          echo '      "channels": [' >> public/epg/index.json
-          echo '        { "id": "redeglobo.globo.com", "name": "Globo", "file": "redeglobo.globo.com.xml" },' >> public/epg/index.json
-          echo '        { "id": "recordtv.com.br", "name": "Record", "file": "recordtv.com.br.xml" }' >> public/epg/index.json
-          echo '      ]' >> public/epg/index.json
-          echo '    }' >> public/epg/index.json
-          
-          echo '  ]' >> public/epg/index.json
-          echo '}' >> public/epg/index.json
-          
-          echo ""
-          echo "========================================="
-          echo "✅ EPG-Generierung abgeschlossen!"
-          echo "========================================="
-          ls -la public/epg/*/
-      
-      - name: Nach Cloudflare Pages deployen
-        uses: cloudflare/pages-action@v1
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: "iptv-epg-data"
-          directory: public
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+- name: Create combined EPG and index
+  run: |
+    cd public/epg/de
+    
+    # XML-Header für gesamt.xml
+    echo '<?xml version="1.0" encoding="UTF-8"?>' > gesamt.xml
+    echo '<tv>' >> gesamt.xml
+    
+    # Alle XML-Dateien zusammenführen (außer gesamt.xml selbst)
+    for file in *.xml; do
+      if [ "$file" != "gesamt.xml" ]; then
+        echo "➕ Füge hinzu: $file"
+        # Extrahiere Inhalt ohne XML-Header und ohne Footer
+        sed '1d' "$file" | sed '$d' >> gesamt.xml || true
+      fi
+    done
+    
+    echo '</tv>' >> gesamt.xml
+    
+    # Anzahl der echten Channel-Dateien zählen
+    channel_count=$(ls *.xml | grep -v "gesamt.xml" | wc -l)
+    
+    # Index.json erstellen (KORRIGIERT)
+    echo "{" > index.json
+    echo "  \"lastUpdate\": \"$(date -Iseconds)\"," >> index.json
+    echo "  \"country\": \"Deutschland\"," >> index.json
+    echo "  \"countryCode\": \"de\"," >> index.json
+    echo "  \"totalChannels\": $channel_count," >> index.json
+    echo "  \"channels\": [" >> index.json
+    
+    first=1
+    for file in *.xml; do
+      if [ "$file" != "gesamt.xml" ]; then
+        if [ $first -eq 1 ]; then
+          first=0
+        else
+          echo "," >> index.json
+        fi
+        channel=$(basename "$file" .xml)
+        echo "    {\"channel\": \"$channel\", \"file\": \"$file\"}" >> index.json
+      fi
+    done
+    
+    echo "" >> index.json
+    echo "  ]" >> index.json
+    echo "}" >> index.json
+    
+    echo "✅ gesamt.xml und index.json erstellt"
+    echo "📊 Gefundene Channels: $channel_count"
+    ls -la *.xml
