@@ -18,52 +18,97 @@ jobs:
           mkdir -p public/epg/de
           echo "✅ Verzeichnis public/epg/de erstellt"
       
-      - name: 📥 EPG von iptv-org direkt herunterladen
+      - name: 📥 EPG für ALLE deutschen Sender laden
         run: |
-          echo "📡 Lade EPG für deutsche Sender..."
+          echo "📡 Lade EPG für ALLE deutschen Sender..."
+          echo ""
           
-          # Liste der deutschen Sender mit direkten EPG-URLs
-          # Quelle: https://github.com/iptv-org/epg/tree/master/guides
-          
-          # ARD
-          curl -L -o public/epg/de/ard.de.xml "https://epg.iptvx.one/guides/de/ard.iptv-org.xml" || echo "⚠️ ARD fehlgeschlagen"
-          
-          # ZDF
+          # === ÖFFENTLICH-RECHTLICHE (ARD, ZDF, etc.) ===
+          echo "📺 Öffentlich-rechtliche Sender..."
+          curl -L -o public/epg/de/daserste.de.xml "https://epg.iptvx.one/guides/de/daserste.iptv-org.xml" || echo "⚠️ Das Erste fehlgeschlagen"
           curl -L -o public/epg/de/zdf.de.xml "https://epg.iptvx.one/guides/de/zdf.iptv-org.xml" || echo "⚠️ ZDF fehlgeschlagen"
+          curl -L -o public/epg/de/3sat.de.xml "https://epg.iptvx.one/guides/de/3sat.iptv-org.xml" || echo "⚠️ 3sat fehlgeschlagen"
+          curl -L -o public/epg/de/arte.tv.xml "https://epg.iptvx.one/guides/de/arte.iptv-org.xml" || echo "⚠️ arte fehlgeschlagen"
+          curl -L -o public/epg/de/phoenix.de.xml "https://epg.iptvx.one/guides/de/phoenix.iptv-org.xml" || echo "⚠️ phoenix fehlgeschlagen"
+          curl -L -o public/epg/de/kika.de.xml "https://epg.iptvx.one/guides/de/kika.iptv-org.xml" || echo "⚠️ KiKA fehlgeschlagen"
           
-          # RTL
+          # === ARD-Regional ===
+          echo "📺 ARD-Regional..."
+          curl -L -o public/epg/de/br.de.xml "https://epg.iptvx.one/guides/de/br.iptv-org.xml" || echo "⚠️ BR fehlgeschlagen"
+          curl -L -o public/epg/de/hr-fernsehen.de.xml "https://epg.iptvx.one/guides/de/hr.iptv-org.xml" || echo "⚠️ HR fehlgeschlagen"
+          curl -L -o public/epg/de/mdr.de.xml "https://epg.iptvx.one/guides/de/mdr.iptv-org.xml" || echo "⚠️ MDR fehlgeschlagen"
+          curl -L -o public/epg/de/ndr.de.xml "https://epg.iptvx.one/guides/de/ndr.iptv-org.xml" || echo "⚠️ NDR fehlgeschlagen"
+          curl -L -o public/epg/de/rbb-online.de.xml "https://epg.iptvx.one/guides/de/rbb.iptv-org.xml" || echo "⚠️ RBB fehlgeschlagen"
+          curl -L -o public/epg/de/sr.de.xml "https://epg.iptvx.one/guides/de/sr.iptv-org.xml" || echo "⚠️ SR fehlgeschlagen"
+          curl -L -o public/epg/de/swr.de.xml "https://epg.iptvx.one/guides/de/swr.iptv-org.xml" || echo "⚠️ SWR fehlgeschlagen"
+          curl -L -o public/epg/de/wdr.de.xml "https://epg.iptvx.one/guides/de/wdr.iptv-org.xml" || echo "⚠️ WDR fehlgeschlagen"
+          
+          # === ZDF-Sparten ===
+          echo "📺 ZDF-Sparten..."
+          curl -L -o public/epg/de/zdfinfo.de.xml "https://epg.iptvx.one/guides/de/zdfinfo.iptv-org.xml" || echo "⚠️ ZDFinfo fehlgeschlagen"
+          curl -L -o public/epg/de/zdfneo.de.xml "https://epg.iptvx.one/guides/de/zdfneo.iptv-org.xml" || echo "⚠️ ZDFneo fehlgeschlagen"
+          
+          # === ARD-Sparten ===
+          echo "📺 ARD-Sparten..."
+          curl -L -o public/epg/de/tagesschau24.de.xml "https://epg.iptvx.one/guides/de/tagesschau24.iptv-org.xml" || echo "⚠️ tagesschau24 fehlgeschlagen"
+          curl -L -o public/epg/de/einsfestival.de.xml "https://epg.iptvx.one/guides/de/einsfestival.iptv-org.xml" || echo "⚠️ EinsFestival fehlgeschlagen"
+          curl -L -o public/epg/de/einsplus.de.xml "https://epg.iptvx.one/guides/de/einsplus.iptv-org.xml" || echo "⚠️ EinsPlus fehlgeschlagen"
+          
+          # === PRIVATE SENDER (RTL Group) ===
+          echo "📺 RTL Group..."
           curl -L -o public/epg/de/rtl.de.xml "https://epg.iptvx.one/guides/de/rtl.iptv-org.xml" || echo "⚠️ RTL fehlgeschlagen"
-          
-          # Sat.1
-          curl -L -o public/epg/de/sat1.de.xml "https://epg.iptvx.one/guides/de/sat1.iptv-org.xml" || echo "⚠️ Sat.1 fehlgeschlagen"
-          
-          # ProSieben
-          curl -L -o public/epg/de/prosieben.de.xml "https://epg.iptvx.one/guides/de/prosieben.iptv-org.xml" || echo "⚠️ ProSieben fehlgeschlagen"
-          
-          # VOX
+          curl -L -o public/epg/de/rtl2.de.xml "https://epg.iptvx.one/guides/de/rtl2.iptv-org.xml" || echo "⚠️ RTL2 fehlgeschlagen"
+          curl -L -o public/epg/de/superrtl.de.xml "https://epg.iptvx.one/guides/de/superrtl.iptv-org.xml" || echo "⚠️ Super RTL fehlgeschlagen"
           curl -L -o public/epg/de/vox.de.xml "https://epg.iptvx.one/guides/de/vox.iptv-org.xml" || echo "⚠️ VOX fehlgeschlagen"
-          
-          # n-tv
           curl -L -o public/epg/de/ntv.de.xml "https://epg.iptvx.one/guides/de/ntv.iptv-org.xml" || echo "⚠️ n-tv fehlgeschlagen"
+          curl -L -o public/epg/de/rtl-crime.de.xml "https://epg.iptvx.one/guides/de/rtl-crime.iptv-org.xml" || echo "⚠️ RTL Crime fehlgeschlagen"
+          curl -L -o public/epg/de/rtl-living.de.xml "https://epg.iptvx.one/guides/de/rtl-living.iptv-org.xml" || echo "⚠️ RTL Living fehlgeschlagen"
+          curl -L -o public/epg/de/rtl-passion.de.xml "https://epg.iptvx.one/guides/de/rtl-passion.iptv-org.xml" || echo "⚠️ RTL Passion fehlgeschlagen"
+          curl -L -o public/epg/de/geo-television.de.xml "https://epg.iptvx.one/guides/de/geo-television.iptv-org.xml" || echo "⚠️ GEO Television fehlgeschlagen"
           
-          # Welt
-          curl -L -o public/epg/de/welt.de.xml "https://epg.iptvx.one/guides/de/welt.iptv-org.xml" || echo "⚠️ Welt fehlgeschlagen"
+          # === PRIVATE SENDER (ProSiebenSat.1) ===
+          echo "📺 ProSiebenSat.1 Group..."
+          curl -L -o public/epg/de/sat1.de.xml "https://epg.iptvx.one/guides/de/sat1.iptv-org.xml" || echo "⚠️ Sat.1 fehlgeschlagen"
+          curl -L -o public/epg/de/prosieben.de.xml "https://epg.iptvx.one/guides/de/prosieben.iptv-org.xml" || echo "⚠️ ProSieben fehlgeschlagen"
+          curl -L -o public/epg/de/kabeleins.de.xml "https://epg.iptvx.one/guides/de/kabeleins.iptv-org.xml" || echo "⚠️ kabel eins fehlgeschlagen"
+          curl -L -o public/epg/de/sixx.de.xml "https://epg.iptvx.one/guides/de/sixx.iptv-org.xml" || echo "⚠️ sixx fehlgeschlagen"
+          curl -L -o public/epg/de/sat1-gold.de.xml "https://epg.iptvx.one/guides/de/sat1-gold.iptv-org.xml" || echo "⚠️ Sat.1 Gold fehlgeschlagen"
+          curl -L -o public/epg/de/prosieben-maxx.de.xml "https://epg.iptvx.one/guides/de/prosieben-maxx.iptv-org.xml" || echo "⚠️ ProSieben MAXX fehlgeschlagen"
+          curl -L -o public/epg/de/kabel-eins-doku.de.xml "https://epg.iptvx.one/guides/de/kabel-eins-doku.iptv-org.xml" || echo "⚠️ kabel eins Doku fehlgeschlagen"
           
+          # === WEITERE PRIVATE SENDER ===
+          echo "📺 Weitere private Sender..."
+          curl -L -o public/epg/de/welt.de.xml "https://epg.iptvx.one/guides/de/welt.iptv-org.xml" || echo "⚠️ WELT fehlgeschlagen"
+          curl -L -o public/epg/de/dmax.de.xml "https://epg.iptvx.one/guides/de/dmax.iptv-org.xml" || echo "⚠️ DMAX fehlgeschlagen"
+          curl -L -o public/epg/de/tele5.de.xml "https://epg.iptvx.one/guides/de/tele5.iptv-org.xml" || echo "⚠️ Tele 5 fehlgeschlagen"
+          curl -L -o public/epg/de/df1.de.xml "https://epg.iptvx.one/guides/de/df1.iptv-org.xml" || echo "⚠️ DF1 fehlgeschlagen"
+          curl -L -o public/epg/de/sport1.de.xml "https://epg.iptvx.one/guides/de/sport1.iptv-org.xml" || echo "⚠️ Sport1 fehlgeschlagen"
+          curl -L -o public/epg/de/eurosport1.de.xml "https://epg.iptvx.one/guides/de/eurosport1.iptv-org.xml" || echo "⚠️ Eurosport 1 fehlgeschlagen"
+          curl -L -o public/epg/de/eurosport2.de.xml "https://epg.iptvx.one/guides/de/eurosport2.iptv-org.xml" || echo "⚠️ Eurosport 2 fehlgeschlagen"
+          
+          # === NACHRICHTEN & DOKUMENTATION ===
+          echo "📺 Nachrichten & Dokumentation..."
+          curl -L -o public/epg/de/n24-doku.de.xml "https://epg.iptvx.one/guides/de/n24-doku.iptv-org.xml" || echo "⚠️ N24 Doku fehlgeschlagen"
+          curl -L -o public/epg/de/phoenix.de.xml "https://epg.iptvx.one/guides/de/phoenix.iptv-org.xml" || echo "⚠️ phoenix (erneut) fehlgeschlagen"
+          
+          # === KINDERSENDER ===
+          echo "📺 Kindersender..."
+          curl -L -o public/epg/de/nick.de.xml "https://epg.iptvx.one/guides/de/nick.iptv-org.xml" || echo "⚠️ Nickelodeon fehlgeschlagen"
+          curl -L -o public/epg/de/nicktoons.de.xml "https://epg.iptvx.one/guides/de/nicktoons.iptv-org.xml" || echo "⚠️ Nicktoons fehlgeschlagen"
+          curl -L -o public/epg/de/disney-channel.de.xml "https://epg.iptvx.one/guides/de/disney-channel.iptv-org.xml" || echo "⚠️ Disney Channel fehlgeschlagen"
+          
+          echo ""
           echo "✅ Downloads abgeschlossen"
       
       - name: 📊 Prüfe heruntergeladene Dateien
         run: |
           cd public/epg/de
           echo "📁 Gefundene Dateien:"
-          ls -la *.xml 2>/dev/null || echo "⚠️ Keine XML-Dateien gefunden"
+          ls -la *.xml | sort
           
-          # Zeige Dateigrößen
-          for file in *.xml; do
-            if [ -f "$file" ]; then
-              size=$(wc -c < "$file")
-              echo "   📄 $file: $size Bytes"
-            fi
-          done
+          count=$(ls *.xml 2>/dev/null | wc -l)
+          echo ""
+          echo "📊 Insgesamt: $count Sender"
       
       - name: 📊 Erstelle index.json
         run: |
@@ -75,7 +120,7 @@ jobs:
           if [ "$count" -gt 0 ]; then
             echo "✅ $count XML-Dateien gefunden"
             
-            # JSON manuell erstellen (ohne echo-Probleme)
+            # JSON erstellen
             echo "{" > index.json
             echo "  \"lastUpdate\": \"$(date -Iseconds)\"," >> index.json
             echo "  \"country\": \"Deutschland\"," >> index.json
@@ -83,9 +128,9 @@ jobs:
             echo "  \"totalChannels\": $count," >> index.json
             echo "  \"channels\": [" >> index.json
             
-            # Channels auflisten
+            # Channels alphabetisch sortiert auflisten
             first=1
-            for file in *.xml; do
+            for file in $(ls *.xml | sort); do
               if [ "$first" -eq 1 ]; then
                 first=0
               else
@@ -101,8 +146,8 @@ jobs:
             
             echo "✅ index.json erstellt"
             echo ""
-            echo "📄 Inhalt von index.json:"
-            cat index.json
+            echo "📄 Erste 10 Zeilen von index.json:"
+            head -10 index.json
           else
             echo "⚠️ Keine XML-Dateien zum Erstellen von index.json"
             exit 1
@@ -119,14 +164,21 @@ jobs:
       
       - name: ✅ Abschluss
         run: |
+          cd public/epg/de
+          count=$(ls *.xml 2>/dev/null | wc -l)
+          
           echo ""
           echo "================================================"
           echo "✅ EPG-Update erfolgreich abgeschlossen!"
           echo "================================================"
+          echo "📊 Generierte Sender: $count"
+          echo ""
+          echo "📺 Senderliste:"
+          ls -1 *.xml | sed 's/\.xml$//' | sort | while read sender; do
+            echo "   • $sender"
+          done
+          echo ""
           echo "📊 Verfügbar unter:"
           echo "   • https://iptv-epg-data.pages.dev/epg/de/index.json"
           echo "   • https://iptv-epg-data.pages.dev/epg/de/[sender].xml"
-          echo ""
-          echo "📊 Generierte Sender:"
-          ls -1 public/epg/de/*.xml 2>/dev/null | sed 's/.*\///' || echo "   Keine"
           echo "================================================"
