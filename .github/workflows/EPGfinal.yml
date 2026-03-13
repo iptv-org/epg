@@ -3,7 +3,7 @@ name: EPG Automatisch von iptv-org
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 2 * * *'  # Täglich um 2 Uhr
+    - cron: '0 2 * * *'
 
 jobs:
   generate-epg:
@@ -23,9 +23,9 @@ jobs:
           cd epg
           npm install
       
-      - name: EPG für 6 Länder generieren (iptv-org)
+      - name: EPG für 6 Länder generieren
         run: |
-          # Verzeichnisstruktur für die App anlegen
+          # Verzeichnisstruktur anlegen
           mkdir -p public/epg/de
           mkdir -p public/epg/it
           mkdir -p public/epg/es
@@ -34,168 +34,157 @@ jobs:
           mkdir -p public/epg/br
           
           echo "========================================="
-          echo "📡 Generiere EPG mit iptv-org für 6 Länder"
+          echo "📡 Generiere EPG für 6 Länder"
           echo "========================================="
           
           # ========================================
-          # DEUTSCHLAND - Mit echten EPG-Daten
+          # DEUTSCHLAND
           # ========================================
           echo ""
-          echo "📡 Generiere EPG für Deutschland..."
+          echo "📡 Deutschland..."
           cd epg
-          npm run grab --- --site=ard.de --output=../public/epg/de/ard.de.xml --days=3 --maxConnections=2 || echo "⚠️ ARD fehlgeschlagen"
-          npm run grab --- --site=zdf.de --output=../public/epg/de/zdf.de.xml --days=3 --maxConnections=2 || echo "⚠️ ZDF fehlgeschlagen"
-          npm run grab --- --site=rtl.de --output=../public/epg/de/rtl.de.xml --days=3 --maxConnections=2 || echo "⚠️ RTL fehlgeschlagen"
-          npm run grab --- --site=sat1.de --output=../public/epg/de/sat1.de.xml --days=3 --maxConnections=2 || echo "⚠️ Sat.1 fehlgeschlagen"
-          npm run grab --- --site=prosieben.de --output=../public/epg/de/prosieben.de.xml --days=3 --maxConnections=2 || echo "⚠️ ProSieben fehlgeschlagen"
+          npm run grab --- --site=ard.de --output=../public/epg/de/ard.de.xml --days=3 --maxConnections=2 || true
+          npm run grab --- --site=zdf.de --output=../public/epg/de/zdf.de.xml --days=3 --maxConnections=2 || true
+          npm run grab --- --site=rtl.de --output=../public/epg/de/rtl.de.xml --days=3 --maxConnections=2 || true
           cd ..
           
           # ========================================
           # ITALIEN
           # ========================================
           echo ""
-          echo "📡 Generiere EPG für Italien..."
+          echo "📡 Italien..."
           cd epg
-          npm run grab --- --site=rai.it --output=../public/epg/it/rai.it.xml --days=3 --maxConnections=2 || echo "⚠️ RAI fehlgeschlagen"
-          npm run grab --- --site=mediaset.it --output=../public/epg/it/mediaset.it.xml --days=3 --maxConnections=2 || echo "⚠️ Mediaset fehlgeschlagen"
-          npm run grab --- --site=la7.it --output=../public/epg/it/la7.it.xml --days=3 --maxConnections=2 || echo "⚠️ LA7 fehlgeschlagen"
+          npm run grab --- --site=rai.it --output=../public/epg/it/rai.it.xml --days=3 --maxConnections=2 || true
+          npm run grab --- --site=mediaset.it --output=../public/epg/it/mediaset.it.xml --days=3 --maxConnections=2 || true
           cd ..
           
           # ========================================
           # SPANIEN
           # ========================================
           echo ""
-          echo "📡 Generiere EPG für Spanien..."
+          echo "📡 Spanien..."
           cd epg
-          npm run grab --- --site=rtve.es --output=../public/epg/es/rtve.es.xml --days=3 --maxConnections=2 || echo "⚠️ RTVE fehlgeschlagen"
-          npm run grab --- --site=antena3.com --output=../public/epg/es/antena3.com.xml --days=3 --maxConnections=2 || echo "⚠️ Antena 3 fehlgeschlagen"
-          npm run grab --- --site=telecinco.es --output=../public/epg/es/telecinco.es.xml --days=3 --maxConnections=2 || echo "⚠️ Telecinco fehlgeschlagen"
+          npm run grab --- --site=rtve.es --output=../public/epg/es/rtve.es.xml --days=3 --maxConnections=2 || true
+          npm run grab --- --site=antena3.com --output=../public/epg/es/antena3.com.xml --days=3 --maxConnections=2 || true
           cd ..
           
           # ========================================
           # FRANKREICH
           # ========================================
           echo ""
-          echo "📡 Generiere EPG für Frankreich..."
+          echo "📡 Frankreich..."
           cd epg
-          npm run grab --- --site=francetv.fr --output=../public/epg/fr/francetv.fr.xml --days=3 --maxConnections=2 || echo "⚠️ France TV fehlgeschlagen"
-          npm run grab --- --site=tf1.fr --output=../public/epg/fr/tf1.fr.xml --days=3 --maxConnections=2 || echo "⚠️ TF1 fehlgeschlagen"
-          npm run grab --- --site=m6.fr --output=../public/epg/fr/m6.fr.xml --days=3 --maxConnections=2 || echo "⚠️ M6 fehlgeschlagen"
+          npm run grab --- --site=francetv.fr --output=../public/epg/fr/francetv.fr.xml --days=3 --maxConnections=2 || true
+          npm run grab --- --site=tf1.fr --output=../public/epg/fr/tf1.fr.xml --days=3 --maxConnections=2 || true
           cd ..
           
           # ========================================
           # ARGENTINIEN
           # ========================================
           echo ""
-          echo "📡 Generiere EPG für Argentinien..."
+          echo "📡 Argentinien..."
           cd epg
-          npm run grab --- --site=telefe.com --output=../public/epg/ar/telefe.com.xml --days=3 --maxConnections=2 || echo "⚠️ Telefe fehlgeschlagen"
-          npm run grab --- --site=eltrece.tv --output=../public/epg/ar/eltrece.tv.xml --days=3 --maxConnections=2 || echo "⚠️ El Trece fehlgeschlagen"
-          npm run grab --- --site=tn.com.ar --output=../public/epg/ar/tn.com.ar.xml --days=3 --maxConnections=2 || echo "⚠️ TN fehlgeschlagen"
+          npm run grab --- --site=telefe.com --output=../public/epg/ar/telefe.com.xml --days=3 --maxConnections=2 || true
+          npm run grab --- --site=eltrece.tv --output=../public/epg/ar/eltrece.tv.xml --days=3 --maxConnections=2 || true
           cd ..
           
           # ========================================
           # BRASILIEN
           # ========================================
           echo ""
-          echo "📡 Generiere EPG für Brasilien..."
+          echo "📡 Brasilien..."
           cd epg
-          npm run grab --- --site=redeglobo.globo.com --output=../public/epg/br/redeglobo.globo.com.xml --days=3 --maxConnections=2 || echo "⚠️ Globo fehlgeschlagen"
-          npm run grab --- --site=recordtv.com.br --output=../public/epg/br/recordtv.com.br.xml --days=3 --maxConnections=2 || echo "⚠️ Record fehlgeschlagen"
-          npm run grab --- --site=sbt.com.br --output=../public/epg/br/sbt.com.br.xml --days=3 --maxConnections=2 || echo "⚠️ SBT fehlgeschlagen"
+          npm run grab --- --site=redeglobo.globo.com --output=../public/epg/br/redeglobo.globo.com.xml --days=3 --maxConnections=2 || true
+          npm run grab --- --site=recordtv.com.br --output=../public/epg/br/recordtv.com.br.xml --days=3 --maxConnections=2 || true
           cd ..
           
           echo ""
           echo "========================================="
-          echo "🔍 Erstelle Index für die App..."
+          echo "📊 Erstelle index.json für die App"
           echo "========================================="
           
           # ========================================
-          # INDEX.JSON für die App (genau wie in deiner EPGService)
+          # INDEX.JSON (OHNE EOF!)
           # ========================================
-          cat > public/epg/index.json << EOF
-{
-  "lastUpdate": "$(date -Iseconds)",
-  "countries": [
-    {
-      "code": "de",
-      "name": "Deutschland",
-      "flag": "🇩🇪",
-      "channels": [
-        { "id": "ard.de", "name": "ARD", "file": "ard.de.xml" },
-        { "id": "zdf.de", "name": "ZDF", "file": "zdf.de.xml" },
-        { "id": "rtl.de", "name": "RTL", "file": "rtl.de.xml" },
-        { "id": "sat1.de", "name": "SAT.1", "file": "sat1.de.xml" },
-        { "id": "prosieben.de", "name": "ProSieben", "file": "prosieben.de.xml" }
-      ]
-    },
-    {
-      "code": "it",
-      "name": "Italien",
-      "flag": "🇮🇹",
-      "channels": [
-        { "id": "rai.it", "name": "RAI", "file": "rai.it.xml" },
-        { "id": "mediaset.it", "name": "Mediaset", "file": "mediaset.it.xml" },
-        { "id": "la7.it", "name": "LA7", "file": "la7.it.xml" }
-      ]
-    },
-    {
-      "code": "es",
-      "name": "Spanien",
-      "flag": "🇪🇸",
-      "channels": [
-        { "id": "rtve.es", "name": "RTVE", "file": "rtve.es.xml" },
-        { "id": "antena3.com", "name": "Antena 3", "file": "antena3.com.xml" },
-        { "id": "telecinco.es", "name": "Telecinco", "file": "telecinco.es.xml" }
-      ]
-    },
-    {
-      "code": "fr",
-      "name": "Frankreich",
-      "flag": "🇫🇷",
-      "channels": [
-        { "id": "francetv.fr", "name": "France TV", "file": "francetv.fr.xml" },
-        { "id": "tf1.fr", "name": "TF1", "file": "tf1.fr.xml" },
-        { "id": "m6.fr", "name": "M6", "file": "m6.fr.xml" }
-      ]
-    },
-    {
-      "code": "ar",
-      "name": "Argentinien",
-      "flag": "🇦🇷",
-      "channels": [
-        { "id": "telefe.com", "name": "Telefe", "file": "telefe.com.xml" },
-        { "id": "eltrece.tv", "name": "El Trece", "file": "eltrece.tv.xml" },
-        { "id": "tn.com.ar", "name": "TN", "file": "tn.com.ar.xml" }
-      ]
-    },
-    {
-      "code": "br",
-      "name": "Brasilien",
-      "flag": "🇧🇷",
-      "channels": [
-        { "id": "redeglobo.globo.com", "name": "Globo", "file": "redeglobo.globo.com.xml" },
-        { "id": "recordtv.com.br", "name": "Record", "file": "recordtv.com.br.xml" },
-        { "id": "sbt.com.br", "name": "SBT", "file": "sbt.com.br.xml" }
-      ]
-    }
-  ]
-}
-EOF
+          echo "{" > public/epg/index.json
+          echo '  "lastUpdate": "'$(date -Iseconds)'",' >> public/epg/index.json
+          echo '  "countries": [' >> public/epg/index.json
           
-          # ========================================
-          # ZUSAMMENFASSUNG
-          # ========================================
+          # Deutschland
+          echo '    {' >> public/epg/index.json
+          echo '      "code": "de",' >> public/epg/index.json
+          echo '      "name": "Deutschland",' >> public/epg/index.json
+          echo '      "flag": "🇩🇪",' >> public/epg/index.json
+          echo '      "channels": [' >> public/epg/index.json
+          echo '        { "id": "ard.de", "name": "ARD", "file": "ard.de.xml" },' >> public/epg/index.json
+          echo '        { "id": "zdf.de", "name": "ZDF", "file": "zdf.de.xml" },' >> public/epg/index.json
+          echo '        { "id": "rtl.de", "name": "RTL", "file": "rtl.de.xml" }' >> public/epg/index.json
+          echo '      ]' >> public/epg/index.json
+          echo '    },' >> public/epg/index.json
+          
+          # Italien
+          echo '    {' >> public/epg/index.json
+          echo '      "code": "it",' >> public/epg/index.json
+          echo '      "name": "Italien",' >> public/epg/index.json
+          echo '      "flag": "🇮🇹",' >> public/epg/index.json
+          echo '      "channels": [' >> public/epg/index.json
+          echo '        { "id": "rai.it", "name": "RAI", "file": "rai.it.xml" },' >> public/epg/index.json
+          echo '        { "id": "mediaset.it", "name": "Mediaset", "file": "mediaset.it.xml" }' >> public/epg/index.json
+          echo '      ]' >> public/epg/index.json
+          echo '    },' >> public/epg/index.json
+          
+          # Spanien
+          echo '    {' >> public/epg/index.json
+          echo '      "code": "es",' >> public/epg/index.json
+          echo '      "name": "Spanien",' >> public/epg/index.json
+          echo '      "flag": "🇪🇸",' >> public/epg/index.json
+          echo '      "channels": [' >> public/epg/index.json
+          echo '        { "id": "rtve.es", "name": "RTVE", "file": "rtve.es.xml" },' >> public/epg/index.json
+          echo '        { "id": "antena3.com", "name": "Antena 3", "file": "antena3.com.xml" }' >> public/epg/index.json
+          echo '      ]' >> public/epg/index.json
+          echo '    },' >> public/epg/index.json
+          
+          # Frankreich
+          echo '    {' >> public/epg/index.json
+          echo '      "code": "fr",' >> public/epg/index.json
+          echo '      "name": "Frankreich",' >> public/epg/index.json
+          echo '      "flag": "🇫🇷",' >> public/epg/index.json
+          echo '      "channels": [' >> public/epg/index.json
+          echo '        { "id": "francetv.fr", "name": "France TV", "file": "francetv.fr.xml" },' >> public/epg/index.json
+          echo '        { "id": "tf1.fr", "name": "TF1", "file": "tf1.fr.xml" }' >> public/epg/index.json
+          echo '      ]' >> public/epg/index.json
+          echo '    },' >> public/epg/index.json
+          
+          # Argentinien
+          echo '    {' >> public/epg/index.json
+          echo '      "code": "ar",' >> public/epg/index.json
+          echo '      "name": "Argentinien",' >> public/epg/index.json
+          echo '      "flag": "🇦🇷",' >> public/epg/index.json
+          echo '      "channels": [' >> public/epg/index.json
+          echo '        { "id": "telefe.com", "name": "Telefe", "file": "telefe.com.xml" },' >> public/epg/index.json
+          echo '        { "id": "eltrece.tv", "name": "El Trece", "file": "eltrece.tv.xml" }' >> public/epg/index.json
+          echo '      ]' >> public/epg/index.json
+          echo '    },' >> public/epg/index.json
+          
+          # Brasilien
+          echo '    {' >> public/epg/index.json
+          echo '      "code": "br",' >> public/epg/index.json
+          echo '      "name": "Brasilien",' >> public/epg/index.json
+          echo '      "flag": "🇧🇷",' >> public/epg/index.json
+          echo '      "channels": [' >> public/epg/index.json
+          echo '        { "id": "redeglobo.globo.com", "name": "Globo", "file": "redeglobo.globo.com.xml" },' >> public/epg/index.json
+          echo '        { "id": "recordtv.com.br", "name": "Record", "file": "recordtv.com.br.xml" }' >> public/epg/index.json
+          echo '      ]' >> public/epg/index.json
+          echo '    }' >> public/epg/index.json
+          
+          echo '  ]' >> public/epg/index.json
+          echo '}' >> public/epg/index.json
+          
           echo ""
           echo "========================================="
           echo "✅ EPG-Generierung abgeschlossen!"
           echo "========================================="
-          echo ""
-          echo "📁 Generierte Dateien:"
           ls -la public/epg/*/
-          echo ""
-          echo "📊 Index für die App: public/epg/index.json"
-          echo "========================================="
       
       - name: Nach Cloudflare Pages deployen
         uses: cloudflare/pages-action@v1
