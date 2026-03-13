@@ -1,4 +1,4 @@
-name: EPG Weltweit (Täglich)
+name: EPG Weltweit
 
 on:
   workflow_dispatch:
@@ -23,118 +23,59 @@ jobs:
           cd epg
           npm install
       
-      - name: EPG für ALLE Sprachen generieren
+      - name: EPG für alle Sprachen generieren
         run: |
           # Verzeichnis anlegen
           mkdir -p public/epg
           
           echo "========================================="
-          echo "🚀 Starte EPG-Generierung für ALLE Sprachen"
+          echo "📡 Generiere EPG für 10 Sprachen"
           echo "========================================="
           
-          # 🇩🇪 DEUTSCH
-          echo ""
-          echo "📡 [1/10] Generiere EPG für Deutsch (de)..."
-          cd epg
-          npm run grab --- --lang=de --output=../public/epg/de.xml --days=7 --maxConnections=5 || echo "⚠️ Deutsch fehlgeschlagen"
-          cd ..
+          # Liste aller Sprachen
+          sprachen="de en fr it es pt ru ar zh ja"
           
-          # 🇬🇧 ENGLISCH
-          echo ""
-          echo "📡 [2/10] Generiere EPG für Englisch (en)..."
-          cd epg
-          npm run grab --- --lang=en --output=../public/epg/en.xml --days=7 --maxConnections=5 || echo "⚠️ Englisch fehlgeschlagen"
-          cd ..
-          
-          # 🇫🇷 FRANZÖSISCH
-          echo ""
-          echo "📡 [3/10] Generiere EPG für Französisch (fr)..."
-          cd epg
-          npm run grab --- --lang=fr --output=../public/epg/fr.xml --days=7 --maxConnections=5 || echo "⚠️ Französisch fehlgeschlagen"
-          cd ..
-          
-          # 🇮🇹 ITALIENISCH
-          echo ""
-          echo "📡 [4/10] Generiere EPG für Italienisch (it)..."
-          cd epg
-          npm run grab --- --lang=it --output=../public/epg/it.xml --days=7 --maxConnections=5 || echo "⚠️ Italienisch fehlgeschlagen"
-          cd ..
-          
-          # 🇪🇸 SPANISCH
-          echo ""
-          echo "📡 [5/10] Generiere EPG für Spanisch (es)..."
-          cd epg
-          npm run grab --- --lang=es --output=../public/epg/es.xml --days=7 --maxConnections=5 || echo "⚠️ Spanisch fehlgeschlagen"
-          cd ..
-          
-          # 🇵🇹 PORTUGIESISCH
-          echo ""
-          echo "📡 [6/10] Generiere EPG für Portugiesisch (pt)..."
-          cd epg
-          npm run grab --- --lang=pt --output=../public/epg/pt.xml --days=7 --maxConnections=5 || echo "⚠️ Portugiesisch fehlgeschlagen"
-          cd ..
-          
-          # 🇷🇺 RUSSISCH
-          echo ""
-          echo "📡 [7/10] Generiere EPG für Russisch (ru)..."
-          cd epg
-          npm run grab --- --lang=ru --output=../public/epg/ru.xml --days=7 --maxConnections=5 || echo "⚠️ Russisch fehlgeschlagen"
-          cd ..
-          
-          # 🇦🇪 ARABISCH
-          echo ""
-          echo "📡 [8/10] Generiere EPG für Arabisch (ar)..."
-          cd epg
-          npm run grab --- --lang=ar --output=../public/epg/ar.xml --days=7 --maxConnections=5 || echo "⚠️ Arabisch fehlgeschlagen"
-          cd ..
-          
-          # 🇨🇳 CHINESISCH
-          echo ""
-          echo "📡 [9/10] Generiere EPG für Chinesisch (zh)..."
-          cd epg
-          npm run grab --- --lang=zh --output=../public/epg/zh.xml --days=7 --maxConnections=5 || echo "⚠️ Chinesisch fehlgeschlagen"
-          cd ..
-          
-          # 🇯🇵 JAPANISCH
-          echo ""
-          echo "📡 [10/10] Generiere EPG für Japanisch (ja)..."
-          cd epg
-          npm run grab --- --lang=ja --output=../public/epg/ja.xml --days=7 --maxConnections=5 || echo "⚠️ Japanisch fehlgeschlagen"
-          cd ..
-          
-          echo ""
-          echo "========================================="
-          echo "🔍 Prüfe generierte Dateien..."
-          echo "========================================="
-          
-          # Prüfe jede Sprache
-          for sprache in de en fr it es pt ru ar zh ja; do
-            if [ ! -f public/epg/$sprache.xml ] || [ ! -s public/epg/$sprache.xml ]; then
-              echo "⚠️ $sprache.xml fehlt oder ist leer"
+          for sprache in $sprachen; do
+            echo ""
+            echo "📡 [$sprache] Generiere EPG..."
+            
+            cd epg
+            if npm run grab --- --lang=$sprache --output=../public/epg/$sprache.xml --days=3 --maxConnections=2; then
+              echo "✅ $sprache erfolgreich"
             else
-              size=$(wc -c < public/epg/$sprache.xml)
-              programmes=$(grep -c "<programme" public/epg/$sprache.xml || echo "0")
-              channels=$(grep -c "<channel" public/epg/$sprache.xml || echo "0")
-              echo "✅ $sprache.xml: $channels Kanäle, $programmes Programme, $size Bytes"
+              echo "⚠️ $sprache fehlgeschlagen"
+              # Leeres XML als Platzhalter
+              cd ..
+              cat > public/epg/$sprache.xml << EOF
+<?xml version="1.0" encoding="UTF-8"?>
+<tv>
+  <channel id="placeholder">
+    <display-name>Keine EPG-Daten</display-name>
+  </channel>
+  <programme channel="placeholder" start="20240101000000 +0000" stop="20240101235959 +0000">
+    <title>EPG nicht verfügbar</title>
+  </programme>
+</tv>
+EOF
             fi
+            cd ..
           done
           
-          # Erstelle index.json
-          cat > public/epg/index.json <<EOF
+          # Index-Datei erstellen
+          cat > public/epg/index.json << EOF
 {
   "lastUpdate": "$(date -Iseconds)",
-  "totalLanguages": 10,
   "languages": [
-    { "code": "de", "name": "Deutsch", "flag": "🇩🇪", "file": "de.xml" },
-    { "code": "en", "name": "English", "flag": "🇬🇧", "file": "en.xml" },
-    { "code": "fr", "name": "Français", "flag": "🇫🇷", "file": "fr.xml" },
-    { "code": "it", "name": "Italiano", "flag": "🇮🇹", "file": "it.xml" },
-    { "code": "es", "name": "Español", "flag": "🇪🇸", "file": "es.xml" },
-    { "code": "pt", "name": "Português", "flag": "🇵🇹", "file": "pt.xml" },
-    { "code": "ru", "name": "Русский", "flag": "🇷🇺", "file": "ru.xml" },
-    { "code": "ar", "name": "العربية", "flag": "🇸🇦", "file": "ar.xml" },
-    { "code": "zh", "name": "中文", "flag": "🇨🇳", "file": "zh.xml" },
-    { "code": "ja", "name": "日本語", "flag": "🇯🇵", "file": "ja.xml" }
+    { "code": "de", "name": "Deutsch", "flag": "🇩🇪" },
+    { "code": "en", "name": "English", "flag": "🇬🇧" },
+    { "code": "fr", "name": "Français", "flag": "🇫🇷" },
+    { "code": "it", "name": "Italiano", "flag": "🇮🇹" },
+    { "code": "es", "name": "Español", "flag": "🇪🇸" },
+    { "code": "pt", "name": "Português", "flag": "🇵🇹" },
+    { "code": "ru", "name": "Русский", "flag": "🇷🇺" },
+    { "code": "ar", "name": "العربية", "flag": "🇸🇦" },
+    { "code": "zh", "name": "中文", "flag": "🇨🇳" },
+    { "code": "ja", "name": "日本語", "flag": "🇯🇵" }
   ]
 }
 EOF
@@ -153,3 +94,4 @@ EOF
           projectName: "iptv-epg-data"
           directory: public
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+        
