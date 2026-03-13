@@ -2,8 +2,6 @@ name: EPG 6 Länder
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 2 * * *'
 
 jobs:
   generate-epg:
@@ -12,202 +10,108 @@ jobs:
       - name: Repository auschecken
         uses: actions/checkout@v3
       
-      - name: EPG Dateien erstellen (mit echten Daten)
+      - name: EPG für 6 Länder erstellen
         run: |
           # Verzeichnis anlegen
           mkdir -p public/epg
           
+          # 🇩🇪 DEUTSCHLAND - Kanalliste
+          cat > public/epg/de.txt << 'EOF'
+          ard.de
+          zdf.de
+          rtl.de
+          sat1.de
+          prosieben.de
+          vox.de
+          ntv.de
+          welt.de
+          3sat.de
+          arte.tv
+          kika.de
+          phoenix.de
+          EOF
+          
+          # 🇮🇹 ITALIEN - Kanalliste
+          cat > public/epg/it.txt << 'EOF'
+          rai.it
+          mediaset.it
+          la7.it
+          sky.it
+          EOF
+          
+          # 🇪🇸 SPANIEN - Kanalliste
+          cat > public/epg/es.txt << 'EOF'
+          rtve.es
+          antena3.com
+          telecinco.es
+          cuatro.com
+          lasexta.com
+          EOF
+          
+          # 🇫🇷 FRANKREICH - Kanalliste
+          cat > public/epg/fr.txt << 'EOF'
+          francetv.fr
+          tf1.fr
+          m6.fr
+          canalplus.com
+          bfmtv.com
+          EOF
+          
+          # 🇦🇷 ARGENTINIEN - Kanalliste
+          cat > public/epg/ar.txt << 'EOF'
+          telefe.com
+          eltrece.tv
+          tn.com.ar
+          tycsports.com
+          EOF
+          
+          # 🇧🇷 BRASILIEN - Kanalliste
+          cat > public/epg/br.txt << 'EOF'
+          redeglobo.globo.com
+          recordtv.com.br
+          sbt.com.br
+          band.com.br
+          cnnbrasil.com.br
+          EOF
+          
+          # Ländernamen für Anzeige
+          cat > public/epg/namen.txt << 'EOF'
+          Deutschland|de
+          Italien|it
+          Spanien|es
+          Frankreich|fr
+          Argentinien|ar
+          Brasilien|br
+          EOF
+          
+          # Index-Datei mit allen Ländern
+          cat > public/epg/index.json << 'EOF'
+          {
+            "lastUpdate": "2024-03-13T12:00:00Z",
+            "countries": [
+              { "code": "de", "name": "Deutschland", "flag": "🇩🇪" },
+              { "code": "it", "name": "Italien", "flag": "🇮🇹" },
+              { "code": "es", "name": "Spanien", "flag": "🇪🇸" },
+              { "code": "fr", "name": "Frankreich", "flag": "🇫🇷" },
+              { "code": "ar", "name": "Argentinien", "flag": "🇦🇷" },
+              { "code": "br", "name": "Brasilien", "flag": "🇧🇷" }
+            ]
+          }
+EOF
+          
+          echo "✅ EPG-Dateien für 6 Länder erstellt"
           echo ""
-          echo "========================================="
-          echo "📡 Erstelle EPG-Dateien für 6 Länder"
-          echo "========================================="
-          
-          # ========================================
-          # DEUTSCHLAND - Mit echten Programmen
-          # ========================================
-          cat > public/epg/de.xml << 'EOF'
-<?xml version="1.0" encoding="UTF-8"?>
-<tv>
-  <channel id="DasErste.de">
-    <display-name>Das Erste</display-name>
-  </channel>
-  <channel id="ZDF.de">
-    <display-name>ZDF</display-name>
-  </channel>
-  <programme channel="DasErste.de" start="20250313170000 +0100" stop="20250313171500 +0100">
-    <title>Tagesschau</title>
-    <desc>Die Nachrichten des Tages</desc>
-  </programme>
-  <programme channel="DasErste.de" start="20250313171500 +0100" stop="20250313180000 +0100">
-    <title>Brisant</title>
-    <desc>Das Magazin</desc>
-  </programme>
-  <programme channel="ZDF.de" start="20250313170000 +0100" stop="20250313171500 +0100">
-    <title>heute</title>
-    <desc>Die Nachrichten</desc>
-  </programme>
-  <programme channel="ZDF.de" start="20250313171500 +0100" stop="20250313180000 +0100">
-    <title>Wetter</title>
-    <desc>Der Wetterbericht</desc>
-  </programme>
-</tv>
-EOF
-          
-          # ========================================
-          # ITALIEN
-          # ========================================
-          cat > public/epg/it.xml << 'EOF'
-<?xml version="1.0" encoding="UTF-8"?>
-<tv>
-  <channel id="Rai1.it">
-    <display-name>Rai 1</display-name>
-  </channel>
-  <channel id="Canale5.it">
-    <display-name>Canale 5</display-name>
-  </channel>
-  <programme channel="Rai1.it" start="20250313193000 +0100" stop="20250313200000 +0100">
-    <title>TG1</title>
-    <desc>Telegiornale</desc>
-  </programme>
-  <programme channel="Canale5.it" start="20250313200000 +0100" stop="20250313210000 +0100">
-    <title>Striscia la notizia</title>
-    <desc>Satirico</desc>
-  </programme>
-</tv>
-EOF
-          
-          # ========================================
-          # SPANIEN
-          # ========================================
-          cat > public/epg/es.xml << 'EOF'
-<?xml version="1.0" encoding="UTF-8"?>
-<tv>
-  <channel id="La1.es">
-    <display-name>La 1</display-name>
-  </channel>
-  <channel id="Antena3.es">
-    <display-name>Antena 3</display-name>
-  </channel>
-  <programme channel="La1.es" start="20250313210000 +0100" stop="20250313213000 +0100">
-    <title>Telediario</title>
-    <desc>Informativo</desc>
-  </programme>
-  <programme channel="Antena3.es" start="20250313213000 +0100" stop="20250313220000 +0100">
-    <title>Antena 3 Noticias</title>
-    <desc>Informativo</desc>
-  </programme>
-</tv>
-EOF
-          
-          # ========================================
-          # FRANKREICH
-          # ========================================
-          cat > public/epg/fr.xml << 'EOF'
-<?xml version="1.0" encoding="UTF-8"?>
-<tv>
-  <channel id="France2.fr">
-    <display-name>France 2</display-name>
-  </channel>
-  <channel id="TF1.fr">
-    <display-name>TF1</display-name>
-  </channel>
-  <programme channel="France2.fr" start="20250313200000 +0100" stop="20250313203000 +0100">
-    <title>Journal de 20h</title>
-    <desc>Le journal</desc>
-  </programme>
-  <programme channel="TF1.fr" start="20250313203000 +0100" stop="20250313210000 +0100">
-    <title>Reportages</title>
-    <desc>Magazine</desc>
-  </programme>
-</tv>
-EOF
-          
-          # ========================================
-          # ARGENTINIEN
-          # ========================================
-          cat > public/epg/ar.xml << 'EOF'
-<?xml version="1.0" encoding="UTF-8"?>
-<tv>
-  <channel id="Telefe.ar">
-    <display-name>Telefe</display-name>
-  </channel>
-  <channel id="TN.ar">
-    <display-name>Todo Noticias</display-name>
-  </channel>
-  <programme channel="Telefe.ar" start="20250313200000 -0300" stop="20250313210000 -0300">
-    <title>Telefe Noticias</title>
-    <desc>Noticiero</desc>
-  </programme>
-  <programme channel="TN.ar" start="20250313210000 -0300" stop="20250313220000 -0300">
-    <title>TN de Noche</title>
-    <desc>Informativo</desc>
-  </programme>
-</tv>
-EOF
-          
-          # ========================================
-          # BRASILIEN
-          # ========================================
-          cat > public/epg/br.xml << 'EOF'
-<?xml version="1.0" encoding="UTF-8"?>
-<tv>
-  <channel id="Globo.br">
-    <display-name>TV Globo</display-name>
-  </channel>
-  <channel id="Record.br">
-    <display-name>Record TV</display-name>
-  </channel>
-  <programme channel="Globo.br" start="20250313203000 -0300" stop="20250313210000 -0300">
-    <title>Jornal Nacional</title>
-    <desc>Telejornal</desc>
-  </programme>
-  <programme channel="Record.br" start="20250313210000 -0300" stop="20250313220000 -0300">
-    <title>Jornal da Record</title>
-    <desc>Telejornal</desc>
-  </programme>
-</tv>
-EOF
-          
-          # ========================================
-          # INDEX-DATEI
-          # ========================================
-          
-          echo "📊 Erstelle index.json..."
-          
-          cat > public/epg/index.json << EOF
-{
-  "lastUpdate": "$(date -Iseconds)",
-  "countries": [
-    { "code": "de", "name": "Deutschland", "flag": "🇩🇪", "file": "de.xml", "size": $(wc -c < public/epg/de.xml) },
-    { "code": "it", "name": "Italien", "flag": "🇮🇹", "file": "it.xml", "size": $(wc -c < public/epg/it.xml) },
-    { "code": "es", "name": "Spanien", "flag": "🇪🇸", "file": "es.xml", "size": $(wc -c < public/epg/es.xml) },
-    { "code": "fr", "name": "Frankreich", "flag": "🇫🇷", "file": "fr.xml", "size": $(wc -c < public/epg/fr.xml) },
-    { "code": "ar", "name": "Argentinien", "flag": "🇦🇷", "file": "ar.xml", "size": $(wc -c < public/epg/ar.xml) },
-    { "code": "br", "name": "Brasilien", "flag": "🇧🇷", "file": "br.xml", "size": $(wc -c < public/epg/br.xml) }
-  ]
-}
-EOF
-          
-          echo "✅ index.json erstellt"
-          
-          # ========================================
-          # ZUSAMMENFASSUNG
-          # ========================================
-          
+          echo "📁 Verzeichnis: public/epg/"
           echo ""
-          echo "========================================="
-          echo "✅ EPG-Dateien erfolgreich erstellt!"
-          echo "========================================="
-          echo ""
-          echo "📁 Generierte Dateien in public/epg/:"
+          echo "📊 Generierte Dateien:"
           ls -la public/epg/
           echo ""
-          echo "📊 Statistik:"
-          for land in de it es fr ar br; do
-            size=$(wc -c < public/epg/$land.xml)
-            echo "   • $land.xml: $size Bytes"
-          done
-          echo "========================================="
+          echo "🇩🇪 Deutschland: $(wc -l < public/epg/de.txt) Sender"
+          echo "🇮🇹 Italien: $(wc -l < public/epg/it.txt) Sender"
+          echo "🇪🇸 Spanien: $(wc -l < public/epg/es.txt) Sender"
+          echo "🇫🇷 Frankreich: $(wc -l < public/epg/fr.txt) Sender"
+          echo "🇦🇷 Argentinien: $(wc -l < public/epg/ar.txt) Sender"
+          echo "🇧🇷 Brasilien: $(wc -l < public/epg/br.txt) Sender"
       
       - name: Nach Cloudflare Pages deployen
         uses: cloudflare/pages-action@v1
