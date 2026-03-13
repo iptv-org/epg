@@ -1,234 +1,76 @@
-name: EPG aus iptv-org Fork generieren
+name: EPG für Deutschland generieren
 
 on:
-  workflow_dispatch:
   schedule:
+    # Läuft täglich um 2:00 Uhr UTC
     - cron: '0 2 * * *'
+  workflow_dispatch:  # Manueller Start
 
 jobs:
-  generate-epg:
+  generate-german-epg:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 60
     
     steps:
-      - name: 📦 iptv-org/epg Fork auschecken
+      - name: 📦 Repository auschecken
         uses: actions/checkout@v3
-        with:
-          repository: ColomboEnterprise/epg
-          path: epg-fork
       
       - name: 🔧 Node.js einrichten
         uses: actions/setup-node@v3
         with:
-          node-version: '22'
+          node-version: '18'
       
-      - name: 📦 Abhängigkeiten installieren
+      - name: 📡 iptv-org/epg klonen
         run: |
-          cd epg-fork
+          echo "📡 Klone iptv-org/epg..."
+          git clone --depth 1 https://github.com/iptv-org/epg.git
+          cd epg
+          echo "📦 Installiere Abhängigkeiten..."
           npm install
-          echo "✅ Abhängigkeiten installiert"
+          echo "✅ iptv-org/epg bereit"
       
-      - name: 🌍 EPG für ALLE Länder generieren
+      - name: 🚀 EPG für ARD testen
         run: |
-          echo "🚀 Starte EPG-Generierung aus dem Fork..."
+          echo "🚀 Teste EPG-Generierung für ARD..."
           
           # Ausgabeverzeichnis erstellen
-          mkdir -p public/epg
+          mkdir -p public/epg/de
           
-          cd epg-fork
+          cd epg
           
-          # 🌍 ALLE LÄNDER
-          LAENDER=(
-            "de" "at" "ch" "fr" "it" "es" "pt" "nl" "be" "lu"
-            "gb" "ie" "dk" "se" "no" "fi" "pl" "cz" "sk" "hu"
-            "ro" "bg" "rs" "hr" "si" "ba" "me" "mk" "al" "gr"
-            "tr" "ee" "lv" "lt" "by" "ua" "md" "ru" "us" "ca"
-            "mx" "ar" "br" "cl" "co" "pe" "ve" "au" "nz" "jp"
-            "kr" "cn" "in" "id" "my" "sg" "th" "vn" "ph" "za"
-          )
-          
-          GESAMT=${#LAENDER[@]}
-          AKTUELL=0
-          ERFOLGREICH=0
-          
-          echo "================================================"
-          echo "📊 Generiere EPG für $GESAMT Länder"
-          echo "================================================"
-          
-          for land in "${LAENDER[@]}"; do
-            AKTUELL=$((AKTUELL + 1))
-            echo ""
-            echo "[$AKTUELL/$GESAMT] Generiere EPG für: $land"
-            
-            if npm run grab --- --site=$land --output=../public/epg/$land.xml --days=7 --maxConnections=3 --timeout=60000; then
-              echo "  ✅ $land erfolgreich"
-              ERFOLGREICH=$((ERFOLGREICH + 1))
-            else
-              echo "  ⚠️ $land fehlgeschlagen"
-            fi
-            
-            sleep 2
-          done
+          # Nur ARD testen
+          echo "Generiere EPG für ard.de..."
+          npm run grab --- --site=ard.de --output=../public/epg/de/ard.de.xml --days=1
           
           cd ..
           
+          echo "✅ Test abgeschlossen"
+      
+      - name: 📊 Index-Datei erstellen
+        run: |
+          cd public/epg/de
+          
+          # Prüfe ob Datei existiert
+          if [ -f "ard.de.xml" ]; then
+            echo "✅ ard.de.xml gefunden"
+            
+            # Index.json erstellen (ALLE IN EINER ZEILE!)
+            echo "{\"lastUpdate\":\"$(date -Iseconds)\",\"country\":\"Deutschland\",\"countryCode\":\"de\",\"totalChannels\":1,\"channels\":[{\"channel\":\"ard.de\",\"file\":\"ard.de.xml\"}]}" > index.json
+            
+            echo "✅ index.json erstellt"
+          else
+            echo "⚠️ Keine XML-Datei gefunden"
+            exit 1
+          fi
+      
+      - name: 📋 Generierte Dateien anzeigen
+        run: |
+          echo "📁 Inhalt von public/epg/de/:"
+          ls -la public/epg/de/
+          
           echo ""
-          echo "================================================"
-          echo "📊 Generierung abgeschlossen:"
-          echo "   ✅ Erfolgreich: $ERFOLGREICH von $GESAMT"
-          echo "================================================"
-      
-      - name: 📊 Länderliste erstellen
-        run: |
-          cd public/epg
-          
-          # Leere Dateien löschen (0 Bytes)
-          find . -name "*.xml" -size 0 -delete
-          
-          # Liste aller generierten Länder
-          ls *.xml 2>/dev/null | sed 's/\.xml$//' > laender.txt
-          
-          # Ländernamen
-          cat > namen.txt << 'EOF'
-          Deutschland|de
-          Österreich|at
-          Schweiz|ch
-          Frankreich|fr
-          Italien|it
-          Spanien|es
-          Portugal|pt
-          Niederlande|nl
-          Belgien|be
-          Luxemburg|lu
-          Großbritannien|gb
-          Irland|ie
-          Dänemark|dk
-          Schweden|se
-          Norwegen|no
-          Finnland|fi
-          Polen|pl
-          Tschechien|cz
-          Slowakei|sk
-          Ungarn|hu
-          Rumänien|ro
-          Bulgarien|bg
-          Serbien|rs
-          Kroatien|hr
-          Slowenien|si
-          Bosnien|ba
-          Montenegro|me
-          Nordmazedonien|mk
-          Albanien|al
-          Griechenland|gr
-          Türkei|tr
-          Estland|ee
-          Lettland|lv
-          Litauen|lt
-          Belarus|by
-          Ukraine|ua
-          Moldau|md
-          Russland|ru
-          USA|us
-          Kanada|ca
-          Mexiko|mx
-          Argentinien|ar
-          Brasilien|br
-          Chile|cl
-          Kolumbien|co
-          Peru|pe
-          Venezuela|ve
-          Australien|au
-          Neuseeland|nz
-          Japan|jp
-          Südkorea|kr
-          China|cn
-          Indien|in
-          Indonesien|id
-          Malaysia|my
-          Singapur|sg
-          Thailand|th
-          Vietnam|vn
-          Philippinen|ph
-          Südafrika|za
-          EOF
-          
-          echo "✅ Länderlisten erstellt"
-          ls -la
-      
-      - name: 📊 Einfache Statistiken erstellen
-        run: |
-          cd public/epg
-          
-          # Einfaches JSON ohne komplizierte Schleifen
-          echo "{" > stats.json
-          echo "  \"lastUpdate\": \"$(date -Iseconds)\"," >> stats.json
-          echo "  \"totalCountries\": $(ls *.xml 2>/dev/null | wc -l)," >> stats.json
-          echo "  \"files\": [" >> stats.json
-          
-          # Dateien auflisten (einfach)
-          COUNTER=0
-          for file in *.xml 2>/dev/null; do
-            if [ -f "$file" ]; then
-              if [ $COUNTER -gt 0 ]; then
-                echo "," >> stats.json
-              fi
-              echo "    \"$file\"" >> stats.json
-              COUNTER=$((COUNTER + 1))
-            fi
-          done
-          
-          echo "  ]" >> stats.json
-          echo "}" >> stats.json
-          
-          echo "✅ stats.json erstellt"
-          cat stats.json
-      
-      - name: 📄 Einfache HTML-Seite erstellen
-        run: |
-          cd public/epg
-          
-          cat > index.html << 'EOF'
-          <!DOCTYPE html>
-          <html>
-          <head>
-            <title>EPG Übersicht</title>
-            <style>
-              body { font-family: sans-serif; margin: 20px; background: #111; color: #eee; }
-              h1 { color: #4CAF50; }
-              a { color: #4CAF50; }
-              li { margin: 5px 0; }
-            </style>
-          </head>
-          <body>
-            <h1>📺 EPG aus iptv-org Fork</h1>
-            <p>Letztes Update: $(date)</p>
-            
-            <h2>📁 Verfügbare EPG-Dateien:</h2>
-            <ul>
-          EOF
-          
-          for file in *.xml 2>/dev/null; do
-            if [ -f "$file" ]; then
-              size=$(wc -c < "$file")
-              echo "              <li><a href=\"$file\">$file</a> ($size Bytes)</li>" >> index.html
-            fi
-          done
-          
-          cat >> index.html << 'EOF'
-            </ul>
-            
-            <h2>📋 Zusätzliche Dateien:</h2>
-            <ul>
-              <li><a href="laender.txt">laender.txt</a> - Liste aller Länder-Codes</li>
-              <li><a href="namen.txt">namen.txt</a> - Ländernamen mit Codes</li>
-              <li><a href="stats.json">stats.json</a> - Statistiken</li>
-            </ul>
-          </body>
-          </html>
-          EOF
-          
-          echo "✅ index.html erstellt"
-          ls -la
+          echo "📄 Inhalt von index.json:"
+          cat public/epg/de/index.json
       
       - name: 📤 Nach Cloudflare Pages deployen
         uses: cloudflare/pages-action@v1
@@ -238,3 +80,16 @@ jobs:
           projectName: "iptv-epg-data"
           directory: public
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: ✅ Abschluss
+        run: |
+          echo ""
+          echo "================================================"
+          echo "✅ EPG-Test erfolgreich abgeschlossen!"
+          echo "================================================"
+          echo "📊 Verfügbar unter:"
+          echo "   • https://iptv-epg-data.pages.dev/epg/de/ard.de.xml"
+          echo "   • https://iptv-epg-data.pages.dev/epg/de/index.json"
+          echo ""
+          echo "⏰ Nächster Schritt: Auf alle Sender erweitern"
+          echo "================================================"
