@@ -28,6 +28,12 @@ jobs:
           npm install
           echo "✅ iptv-org/epg bereit"
       
+      - name: 🔍 Verfügbare Sites prüfen
+        run: |
+          cd epg
+          echo "📋 Verfügbare Sites:"
+          ls -la sites/ | grep -E "pluto|sky|magentatv" || echo "Keine passenden Sites gefunden"
+      
       - name: 🚀 EPG für deutsche Sender generieren
         run: |
           echo "🚀 Starte EPG-Generierung für Deutschland..."
@@ -53,7 +59,7 @@ jobs:
             if [ -d "sites/$sender" ]; then
               echo "✅ Site gefunden: $sender"
               
-              # EPG generieren - NUR 3 TAGE
+              # EPG generieren
               npm run grab --- --site=$sender --output=../public/epg/de/${sender}.xml --days=3 --maxConnections=2 --timeout=60000
               
               # Prüfe Ergebnis
@@ -61,43 +67,10 @@ jobs:
                 size=$(wc -c < "../public/epg/de/${sender}.xml")
                 echo "📦 XML: ${sender}.xml ($size Bytes)"
                 
-                # In kleinere Teile aufteilen (pro Tag)
-                echo "🔄 Teile EPG in Tagesdateien auf..."
-                
-                # Extrahiere Programme pro Tag
-                for day in 0 1 2; do
-                  date=$(date -u -d "+$day day" +"%Y%m%d")
-                  output_file="../public/epg/de/${sender}_day${day}.xml"
-                  
-                  # XML-Header
-                  echo '<?xml version="1.0" encoding="UTF-8"?>' > "$output_file"
-                  echo '<tv>' >> "$output_file"
-                  
-                  # Extrahiere Channel Info
-                  grep -A5 "<channel" "../public/epg/de/${sender}.xml" | head -6 >> "$output_file" 2>/dev/null || true
-                  
-                  # Extrahiere Programme für diesen Tag
-                  grep -E "<programme.*start=\"$date[0-9]*" "../public/epg/de/${sender}.xml" >> "$output_file" 2>/dev/null || true
-                  
-                  # XML-Footer
-                  echo '</tv>' >> "$output_file"
-                  
-                  # Prüfe ob Datei nicht leer ist
-                  if [ -s "$output_file" ]; then
-                    # Komprimiere
-                    gzip -f "$output_file"
-                    day_size=$(wc -c < "${output_file}.gz")
-                    echo "   📦 Tag $day: ${day_size} Bytes"
-                  else
-                    rm -f "$output_file"
-                    echo "   ⚠️ Tag $day: keine Daten"
-                  fi
-                done
-                
-                # Gesamtdatei komprimieren
+                # XML komprimieren
                 gzip -f "../public/epg/de/${sender}.xml"
-                total_size=$(wc -c < "../public/epg/de/${sender}.xml.gz")
-                echo "📦 Gesamt (gz): ${sender}.xml.gz ($total_size Bytes)"
+                gz_size=$(wc -c < "../public/epg/de/${sender}.xml.gz")
+                echo "📦 Komprimiert: ${sender}.xml.gz ($gz_size Bytes)"
                 
               else
                 echo "❌ Keine Datei erstellt für $sender"
@@ -115,14 +88,11 @@ jobs:
         run: |
           cd public/epg/de
           
-          echo "📊 Erstelle index.json mit allen gefundenen Dateien..."
-          
-          # JSON manuell erstellen
+          echo "📊 Erstelle index.json..."
           echo "{" > index.json
           echo "  \"lastUpdate\": \"$(date -Iseconds)\"," >> index.json
           echo "  \"country\": \"Deutschland\"," >> index.json
           echo "  \"countryCode\": \"de\"," >> index.json
-          echo "  \"totalChannels\": 0," >> index.json
           echo "  \"channels\": [" >> index.json
           
           first=1
@@ -134,43 +104,20 @@ jobs:
                 echo "," >> index.json
               fi
               
-              # Channel-Namen ohne _day0, _day1, etc.
-              channel=$(basename "$file" .xml.gz | sed 's/_[^_]*$//')
+              channel=$(basename "$file" .xml.gz)
               size=$(wc -c < "$file")
               
               echo "    {\"channel\": \"$channel\", \"file\": \"$file\", \"size\": $size}" >> index.json
-              
-              echo "   📁 $file ($size Bytes) -> Channel: $channel"
+              echo "   ✅ $channel.xml.gz ($size Bytes)"
             fi
           done
-          
-          # Wenn keine .gz Dateien, versuche .xml
-          if [ $first -eq 1 ]; then
-            for file in *.xml; do
-              if [ -f "$file" ]; then
-                if [ $first -eq 1 ]; then
-                  first=0
-                else
-                  echo "," >> index.json
-                fi
-                
-                channel=$(basename "$file" .xml | sed 's/_[^_]*$//')
-                size=$(wc -c < "$file")
-                
-                echo "    {\"channel\": \"$channel\", \"file\": \"$file\", \"size\": $size}" >> index.json
-                
-                echo "   📁 $file ($size Bytes) -> Channel: $channel"
-              fi
-            done
-          fi
-          
-          # Update totalChannels
-          sed -i "s/\"totalChannels\": 0/\"totalChannels\": $first/" index.json
           
           echo "  ]" >> index.json
           echo "}" >> index.json
           
-          echo "✅ index.json erstellt"
+          echo "totalChannels: $first" >> index-stats.txt
+          
+          echo "✅ index.json erstellt:"
           cat index.json
       
       - name: 📤 Nach Cloudflare Pages deployen
