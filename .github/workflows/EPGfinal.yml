@@ -17,7 +17,7 @@ jobs:
       - name: 🔧 Node.js einrichten
         uses: actions/setup-node@v3
         with:
-          node-version: '20'  # Wichtig: Auf Node 20 erhöhen!
+          node-version: '20'
       
       - name: 📡 iptv-org/epg klonen
         run: |
@@ -28,11 +28,12 @@ jobs:
           npm install
           echo "✅ iptv-org/epg bereit"
       
-      - name: 🔍 Verfügbare Sites anzeigen
+      - name: 🔍 Verfügbare Sites filtern
         run: |
           cd epg
-          echo "📋 Alle deutschen Sites:"
-          ls -la sites/ | grep -E "de$|tv$" || echo "Keine Sites gefunden"
+          echo "📋 Verfügbare deutsche Sites:"
+          ls -la sites/ | grep -E "de$|tv$" | awk '{print $9}' > ../deutsche-sites.txt
+          cat ../deutsche-sites.txt
       
       - name: 🚀 EPG für deutsche Sender generieren
         run: |
@@ -41,23 +42,14 @@ jobs:
           mkdir -p public/epg/de
           cd epg
           
-          # KORREKTE Senderliste
+          # TATSÄCHLICH verfügbare Sites aus dem Repository
           SENDER=(
-            "ard.de"
-            "zdf.de"
-            "rtl.de"
-            "sat1.de"
-            "prosieben.de"
-            "kabeleins.de"
-            "vox.de"
-            "ntv.de"        # Korrigiert: ohne Bindestrich
-            "welt.de"
-            "rtl2.de"
-            "superrtl.de"
-            "kika.de"
-            "3sat.de"
-            "arte.tv"
-            "phoenix.de"
+            "sky.de"                    # Sky Deutschland
+            "web.magentatv.de"          # MagentaTV
+            "pluto.tv"                   # Pluto TV (deutsch)
+            "plex.tv"                     # Plex (deutsch)
+            "arte.tv"                     # arte (funktioniert!)
+            "zdf.de"                      # Versuchen wir trotzdem
           )
           
           for sender in "${SENDER[@]}"; do
@@ -78,6 +70,12 @@ jobs:
                 size=$(wc -c < "../public/epg/de/${sender}.xml")
                 programme_count=$(grep -c "<programme" "../public/epg/de/${sender}.xml" || echo "0")
                 echo "📦 Datei: ${sender}.xml ($size Bytes, $programme_count Programme)"
+                
+                # Wenn keine Programme, zeige die Datei
+                if [ "$programme_count" -eq 0 ]; then
+                  echo "⚠️ Keine Programme, zeige Inhalt:"
+                  head -20 "../public/epg/de/${sender}.xml"
+                fi
               else
                 echo "❌ Keine Datei erstellt für $sender"
               fi
