@@ -8,7 +8,6 @@ import { Channel } from '../../models'
 import nodeCleanup from 'node-cleanup'
 import * as sdk from '@iptv-org/sdk'
 import { Command } from 'commander'
-import readline from 'readline'
 
 interface ChoiceValue {
   type: string
@@ -19,17 +18,6 @@ interface Choice {
   short?: string
   value: ChoiceValue
   default?: boolean
-}
-
-if (process.platform === 'win32') {
-  readline
-    .createInterface({
-      input: process.stdin,
-      output: process.stdout
-    })
-    .on('SIGINT', function () {
-      process.emit('SIGINT')
-    })
 }
 
 const program = new Command()
@@ -44,6 +32,7 @@ let channelsFromXML = new Collection<Channel>()
 main(filepath)
 nodeCleanup(() => {
   save(filepath, channelsFromXML)
+  if (process.platform === 'win32') process.kill(0)
 })
 
 export default async function main(filepath: string) {
