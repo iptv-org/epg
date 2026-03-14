@@ -128,13 +128,13 @@ jobs:
           echo ""
           echo "📊 Erstelle index.json..."
           
-          cat > index.json << EOF
+          cat > index.json << 'EOF'
 {
-  "lastUpdate": "$(date -Iseconds)",
+  "lastUpdate": "'$(date -Iseconds)'",
   "country": "Deutschland",
   "countryCode": "de",
-  "totalChannels": $total_dateien,
-  "totalProgrammes": $total_programme,
+  "totalChannels": '$total_dateien',
+  "totalProgrammes": '$total_programme',
   "channels": [
 EOF
           
@@ -152,7 +152,7 @@ EOF
             fi
           done
           
-          cat >> index.json << EOF
+          cat >> index.json << 'EOF'
   
   ]
 }
