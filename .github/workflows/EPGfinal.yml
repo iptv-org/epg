@@ -17,7 +17,7 @@ jobs:
       - name: 🔧 Node.js einrichten
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: '20'  # Wichtig: Auf Node 20 erhöhen!
       
       - name: 📡 iptv-org/epg klonen
         run: |
@@ -31,19 +31,17 @@ jobs:
       - name: 🔍 Verfügbare Sites anzeigen
         run: |
           cd epg
-          echo "📋 Verfügbare deutsche Sites:"
-          ls -la sites/ | grep -E "ard|zdf|rtl|prosieben|sat1" || echo "Keine deutschen Sites gefunden"
+          echo "📋 Alle deutschen Sites:"
+          ls -la sites/ | grep -E "de$|tv$" || echo "Keine Sites gefunden"
       
       - name: 🚀 EPG für deutsche Sender generieren
         run: |
           echo "🚀 Starte EPG-Generierung für Deutschland..."
           
-          # Ausgabeverzeichnis erstellen
           mkdir -p public/epg/de
-          
           cd epg
           
-          # Senderliste
+          # KORREKTE Senderliste
           SENDER=(
             "ard.de"
             "zdf.de"
@@ -52,8 +50,14 @@ jobs:
             "prosieben.de"
             "kabeleins.de"
             "vox.de"
-            "ntv.de"
+            "ntv.de"        # Korrigiert: ohne Bindestrich
             "welt.de"
+            "rtl2.de"
+            "superrtl.de"
+            "kika.de"
+            "3sat.de"
+            "arte.tv"
+            "phoenix.de"
           )
           
           for sender in "${SENDER[@]}"; do
@@ -62,17 +66,23 @@ jobs:
             echo "📡 Generiere EPG für: $sender"
             echo "================================================"
             
-            # EPG generieren
-            npm run grab --- --site=$sender --output=../public/epg/de/${sender}.xml --days=3 --maxConnections=1 --timeout=60000
-            
-            # Prüfe Ergebnis
-            if [ -f "../public/epg/de/${sender}.xml" ]; then
-              size=$(wc -c < "../public/epg/de/${sender}.xml")
-              echo "📦 Datei erstellt: ${sender}.xml ($size Bytes)"
-              programme_count=$(grep -c "<programme" "../public/epg/de/${sender}.xml" || echo "0")
-              echo "📺 Anzahl Programme: $programme_count"
+            # Prüfe ob Site existiert
+            if [ -d "sites/$sender" ]; then
+              echo "✅ Site gefunden: $sender"
+              
+              # EPG generieren
+              npm run grab --- --site=$sender --output=../public/epg/de/${sender}.xml --days=3 --maxConnections=2 --timeout=60000
+              
+              # Prüfe Ergebnis
+              if [ -f "../public/epg/de/${sender}.xml" ]; then
+                size=$(wc -c < "../public/epg/de/${sender}.xml")
+                programme_count=$(grep -c "<programme" "../public/epg/de/${sender}.xml" || echo "0")
+                echo "📦 Datei: ${sender}.xml ($size Bytes, $programme_count Programme)"
+              else
+                echo "❌ Keine Datei erstellt für $sender"
+              fi
             else
-              echo "❌ Fehler: Keine Datei erstellt für $sender"
+              echo "❌ Site nicht gefunden: $sender"
             fi
             
             sleep 2
@@ -80,27 +90,14 @@ jobs:
           
           cd ..
       
-      - name: 📊 Index-Datei erstellen
+      - name: 📊 Index erstellen
         run: |
           cd public/epg/de
           
-          total_dateien=$(ls *.xml 2>/dev/null | wc -l)
-          total_programme=0
-          
-          for file in *.xml; do
-            if [ -f "$file" ]; then
-              prog=$(grep -c "<programme" "$file" || echo "0")
-              total_programme=$((total_programme + prog))
-            fi
-          done
-          
-          # JSON manuell erstellen (ohne Here-Document)
           echo "{" > index.json
           echo "  \"lastUpdate\": \"$(date -Iseconds)\"," >> index.json
           echo "  \"country\": \"Deutschland\"," >> index.json
           echo "  \"countryCode\": \"de\"," >> index.json
-          echo "  \"totalChannels\": $total_dateien," >> index.json
-          echo "  \"totalProgrammes\": $total_programme," >> index.json
           echo "  \"channels\": [" >> index.json
           
           first=1
