@@ -24,8 +24,8 @@ module.exports = {
         subTitle: item.subTitle || null,
         category: item.genre,
         description: item.longSynopsis,
-        icon: getIconURL(item.images),
-        images: item.images.map(img => img.url),
+        icon: item.images? getIconURL(item.images) : null,
+        images: item.images? item.images.map(img => img.url) : null,
         season: item.seasonNumber || null,
         episode: item.episodeNumber || null
       })
