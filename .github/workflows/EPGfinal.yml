@@ -43,7 +43,7 @@ jobs:
           
           cd epg
           
-          # Verbesserte Senderliste mit korrekten Site-Namen
+          # Senderliste
           SENDER=(
             "ard.de"
             "zdf.de"
@@ -62,32 +62,15 @@ jobs:
             echo "📡 Generiere EPG für: $sender"
             echo "================================================"
             
-            # Prüfe ob Site existiert
-            if [ -d "sites/$sender" ]; then
-              echo "✅ Site $sender gefunden"
-            else
-              echo "⚠️ Site $sender nicht gefunden, versuche trotzdem..."
-            fi
-            
-            # EPG generieren mit ausführlicher Ausgabe
+            # EPG generieren
             npm run grab --- --site=$sender --output=../public/epg/de/${sender}.xml --days=3 --maxConnections=1 --timeout=60000
             
             # Prüfe Ergebnis
             if [ -f "../public/epg/de/${sender}.xml" ]; then
               size=$(wc -c < "../public/epg/de/${sender}.xml")
               echo "📦 Datei erstellt: ${sender}.xml ($size Bytes)"
-              
-              # Zeige die ersten Zeilen der XML
-              echo "📄 XML-Vorschau (erste 10 Zeilen):"
-              head -10 "../public/epg/de/${sender}.xml"
-              
-              # Prüfe ob Programme enthalten sind
               programme_count=$(grep -c "<programme" "../public/epg/de/${sender}.xml" || echo "0")
               echo "📺 Anzahl Programme: $programme_count"
-              
-              if [ "$programme_count" -eq 0 ]; then
-                echo "⚠️ Keine Programme gefunden!"
-              fi
             else
               echo "❌ Fehler: Keine Datei erstellt für $sender"
             fi
@@ -97,50 +80,32 @@ jobs:
           
           cd ..
       
-      - name: 📊 Gesamtstatistik
+      - name: 📊 Index-Datei erstellen
         run: |
           cd public/epg/de
           
-          echo ""
-          echo "================================================"
-          echo "📊 Gesamtstatistik"
-          echo "================================================"
-          
-          total_dateien=0
+          total_dateien=$(ls *.xml 2>/dev/null | wc -l)
           total_programme=0
           
           for file in *.xml; do
             if [ -f "$file" ]; then
-              programme=$(grep -c "<programme" "$file" || echo "0")
-              size=$(wc -c < "$file")
-              echo "📄 $file: $programme Programme, $size Bytes"
-              total_dateien=$((total_dateien + 1))
-              total_programme=$((total_programme + programme))
+              prog=$(grep -c "<programme" "$file" || echo "0")
+              total_programme=$((total_programme + prog))
             fi
           done
           
-          echo "----------------------------------------"
-          echo "📊 Zusammenfassung:"
-          echo "   📁 Dateien: $total_dateien"
-          echo "   📺 Programme insgesamt: $total_programme"
-          
-          # Index.json erstellen
-          echo ""
-          echo "📊 Erstelle index.json..."
-          
-          cat > index.json << 'EOF'
-{
-  "lastUpdate": "'$(date -Iseconds)'",
-  "country": "Deutschland",
-  "countryCode": "de",
-  "totalChannels": '$total_dateien',
-  "totalProgrammes": '$total_programme',
-  "channels": [
-EOF
+          # JSON manuell erstellen (ohne Here-Document)
+          echo "{" > index.json
+          echo "  \"lastUpdate\": \"$(date -Iseconds)\"," >> index.json
+          echo "  \"country\": \"Deutschland\"," >> index.json
+          echo "  \"countryCode\": \"de\"," >> index.json
+          echo "  \"totalChannels\": $total_dateien," >> index.json
+          echo "  \"totalProgrammes\": $total_programme," >> index.json
+          echo "  \"channels\": [" >> index.json
           
           first=1
           for file in *.xml; do
-            if [ -f "$file" ] && [ "$file" != "gesamt.xml" ]; then
+            if [ -f "$file" ]; then
               if [ $first -eq 1 ]; then
                 first=0
               else
@@ -152,14 +117,11 @@ EOF
             fi
           done
           
-          cat >> index.json << 'EOF'
-  
-  ]
-}
-EOF
+          echo "  ]" >> index.json
+          echo "}" >> index.json
           
           echo "✅ index.json erstellt"
-          echo "================================================"
+          cat index.json
       
       - name: 📤 Nach Cloudflare Pages deployen
         uses: cloudflare/pages-action@v1
