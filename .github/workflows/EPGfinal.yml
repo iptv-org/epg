@@ -28,28 +28,20 @@ jobs:
           npm install
           echo "✅ iptv-org/epg bereit"
       
-      - name: 🔍 Verfügbare Sites filtern
-        run: |
-          cd epg
-          echo "📋 Verfügbare deutsche Sites:"
-          ls -la sites/ | grep -E "de$|tv$" | awk '{print $9}' > ../deutsche-sites.txt
-          cat ../deutsche-sites.txt
-      
-      - name: 🚀 EPG für deutsche Sender generieren
+      - name: 🚀 EPG für deutsche Sender generieren (mit GZIP)
         run: |
           echo "🚀 Starte EPG-Generierung für Deutschland..."
           
           mkdir -p public/epg/de
           cd epg
           
-          # TATSÄCHLICH verfügbare Sites aus dem Repository
+          # Liste der verfügbaren deutschen Sites
           SENDER=(
-            "sky.de"                    # Sky Deutschland
-            "web.magentatv.de"          # MagentaTV
-            "pluto.tv"                   # Pluto TV (deutsch)
-            "plex.tv"                     # Plex (deutsch)
-            "arte.tv"                     # arte (funktioniert!)
-            "zdf.de"                      # Versuchen wir trotzdem
+            "sky.de"
+            "web.magentatv.de"
+            "pluto.tv"
+            "arte.tv"
+            "zdf.de"
           )
           
           for sender in "${SENDER[@]}"; do
@@ -58,24 +50,17 @@ jobs:
             echo "📡 Generiere EPG für: $sender"
             echo "================================================"
             
-            # Prüfe ob Site existiert
             if [ -d "sites/$sender" ]; then
               echo "✅ Site gefunden: $sender"
               
-              # EPG generieren
-              npm run grab --- --site=$sender --output=../public/epg/de/${sender}.xml --days=3 --maxConnections=2 --timeout=60000
+              # EPG generieren mit --gzip Flag
+              npm run grab --- --site=$sender --output=../public/epg/de/${sender}.xml.gz --days=3 --gzip --maxConnections=2 --timeout=60000
               
               # Prüfe Ergebnis
-              if [ -f "../public/epg/de/${sender}.xml" ]; then
-                size=$(wc -c < "../public/epg/de/${sender}.xml")
-                programme_count=$(grep -c "<programme" "../public/epg/de/${sender}.xml" || echo "0")
-                echo "📦 Datei: ${sender}.xml ($size Bytes, $programme_count Programme)"
-                
-                # Wenn keine Programme, zeige die Datei
-                if [ "$programme_count" -eq 0 ]; then
-                  echo "⚠️ Keine Programme, zeige Inhalt:"
-                  head -20 "../public/epg/de/${sender}.xml"
-                fi
+              if [ -f "../public/epg/de/${sender}.xml.gz" ]; then
+                size=$(wc -c < "../public/epg/de/${sender}.xml.gz")
+                original_size=$(zcat "../public/epg/de/${sender}.xml.gz" 2>/dev/null | wc -c || echo "?")
+                echo "📦 Datei: ${sender}.xml.gz ($size Bytes komprimiert, original ~$original_size Bytes)"
               else
                 echo "❌ Keine Datei erstellt für $sender"
               fi
@@ -99,16 +84,16 @@ jobs:
           echo "  \"channels\": [" >> index.json
           
           first=1
-          for file in *.xml; do
+          for file in *.xml.gz; do
             if [ -f "$file" ]; then
               if [ $first -eq 1 ]; then
                 first=0
               else
                 echo "," >> index.json
               fi
-              channel=$(basename "$file" .xml)
-              prog=$(grep -c "<programme" "$file" || echo "0")
-              echo "    {\"channel\": \"$channel\", \"file\": \"$file\", \"programmes\": $prog}" >> index.json
+              channel=$(basename "$file" .xml.gz)
+              size=$(wc -c < "$file")
+              echo "    {\"channel\": \"$channel\", \"file\": \"$file\", \"size\": $size}" >> index.json
             fi
           done
           
