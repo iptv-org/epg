@@ -28,7 +28,7 @@ jobs:
           npm install
           echo "✅ iptv-org/epg bereit"
       
-      - name: 🚀 EPG für deutsche Sender generieren (mit GZIP)
+      - name: 🚀 EPG für deutsche Sender generieren (reduziert)
         run: |
           echo "🚀 Starte EPG-Generierung für Deutschland..."
           
@@ -41,7 +41,6 @@ jobs:
             "web.magentatv.de"
             "pluto.tv"
             "arte.tv"
-            "zdf.de"
           )
           
           for sender in "${SENDER[@]}"; do
@@ -53,14 +52,46 @@ jobs:
             if [ -d "sites/$sender" ]; then
               echo "✅ Site gefunden: $sender"
               
-              # EPG generieren mit --gzip Flag
-              npm run grab --- --site=$sender --output=../public/epg/de/${sender}.xml.gz --days=3 --gzip --maxConnections=2 --timeout=60000
+              # EPG generieren - NUR 3 TAGE
+              npm run grab --- --site=$sender --output=../public/epg/de/${sender}.xml --days=3 --maxConnections=2 --timeout=60000
               
               # Prüfe Ergebnis
-              if [ -f "../public/epg/de/${sender}.xml.gz" ]; then
-                size=$(wc -c < "../public/epg/de/${sender}.xml.gz")
-                original_size=$(zcat "../public/epg/de/${sender}.xml.gz" 2>/dev/null | wc -c || echo "?")
-                echo "📦 Datei: ${sender}.xml.gz ($size Bytes komprimiert, original ~$original_size Bytes)"
+              if [ -f "../public/epg/de/${sender}.xml" ]; then
+                size=$(wc -c < "../public/epg/de/${sender}.xml")
+                echo "📦 XML: ${sender}.xml ($size Bytes)"
+                
+                # In kleinere Teile aufteilen (pro Tag)
+                echo "🔄 Teile EPG in Tagesdateien auf..."
+                
+                # Extrahiere Programme pro Tag
+                for day in 0 1 2; do
+                  date=$(date -u -d "+$day day" +"%Y%m%d")
+                  output_file="../public/epg/de/${sender}_day${day}.xml"
+                  
+                  # XML-Header
+                  echo '<?xml version="1.0" encoding="UTF-8"?>' > "$output_file"
+                  echo '<tv>' >> "$output_file"
+                  
+                  # Extrahiere Channel Info
+                  grep -A5 "<channel" "../public/epg/de/${sender}.xml" | head -6 >> "$output_file"
+                  
+                  # Extrahiere Programme für diesen Tag
+                  grep -E "<programme.*start=\"$date[0-9]*" "../public/epg/de/${sender}.xml" >> "$output_file"
+                  
+                  # XML-Footer
+                  echo '</tv>' >> "$output_file"
+                  
+                  # Komprimiere
+                  gzip -f "$output_file"
+                  day_size=$(wc -c < "${output_file}.gz")
+                  echo "   📦 Tag $day: ${day_size} Bytes"
+                done
+                
+                # Gesamtdatei komprimieren
+                gzip -f "../public/epg/de/${sender}.xml"
+                total_size=$(wc -c < "../public/epg/de/${sender}.xml.gz")
+                echo "📦 Gesamt (gz): ${sender}.xml.gz ($total_size Bytes)"
+                
               else
                 echo "❌ Keine Datei erstellt für $sender"
               fi
@@ -85,7 +116,7 @@ jobs:
           
           first=1
           for file in *.xml.gz; do
-            if [ -f "$file" ]; then
+            if [ -f "$file" ] && [[ ! "$file" =~ _day[0-2]\.xml\.gz$ ]]; then
               if [ $first -eq 1 ]; then
                 first=0
               else
