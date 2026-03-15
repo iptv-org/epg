@@ -1,9 +1,34 @@
 const dayjs = require('dayjs')
 const cheerio = require('cheerio')
+const fs = require('fs')
+const path = require('path')
+const { EPGGrabber } = require('epg-grabber')
 
 module.exports = {
   site: 'sporttv.pt',
+  channels: async () => {
+    const channelsPath = path.resolve(__dirname, 'sporttv.pt.channels.xml')
+
+    if (!fs.existsSync(channelsPath)) {
+      console.warn(`Channels file not found: ${channelsPath}. Returning empty list.`)
+      return []
+    }
+
+    const xml = fs.readFileSync(channelsPath, 'utf8')
+    const parsed = EPGGrabber.parseChannelsXML(xml)
+
+    return parsed.map(channel => ({
+      xmltv_id: channel.xmltv_id,
+      name: channel.name,
+      site_id: channel.site_id,
+      lang: channel.lang,
+      logo: channel.logo,
+      url: channel.url,
+      lcn: channel.lcn
+    }))
+  },
   days: 2,
+
   url: 'https://www.sporttv.pt/guia',
   parser({ content, date, channel }) {
     let programs = []
