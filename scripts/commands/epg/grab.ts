@@ -18,10 +18,9 @@ import path from 'path'
 
 program
   .addOption(
-    new Option(
-      '-s, --sites <names>',
-      'A comma-separated list of the site names to parse'
-    ).argParser(parseList)
+    new Option('-s, --sites <names>', 'A comma-separated list of the sites to parse').argParser(
+      parseList
+    )
   )
   .addOption(
     new Option(
