@@ -8,7 +8,9 @@ https://watch.plex.tv/live-tv
 npm run grab --- --site=plex.tv
 ```
 
-### Update channel list
+### Update channel list (varies according to IP address/region)
+
+Each channel appears in only one `xml` file to avoid overlaps. Global channels are grouped in `*_all.channels.xml`.
 
 ```sh
 npm run channels:parse --- --config=./sites/plex.tv/plex.tv.config.js --output=./sites/plex.tv/plex.tv.channels.xml --set=token:YOUR_PLEX_TOKEN
