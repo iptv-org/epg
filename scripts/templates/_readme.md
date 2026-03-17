@@ -5,7 +5,7 @@ https://<DOMAIN>
 ### Download the guide
 
 ```sh
-npm run grab --- --site=<DOMAIN>
+npm run grab --- --sites=<DOMAIN>
 ```
 
 ### Update channel list
