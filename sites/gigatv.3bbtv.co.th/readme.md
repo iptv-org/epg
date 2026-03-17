@@ -5,7 +5,7 @@ https://gigatv.3bbtv.co.th/epg
 ### Download the guide
 
 ```sh
-npm run grab --- --site=gigatv.3bbtv.co.th
+npm run grab --- --sites=gigatv.3bbtv.co.th
 ```
 
 ### Update channel list

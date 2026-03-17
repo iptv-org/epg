@@ -5,7 +5,7 @@ https://epg.telemach.ba/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=epg.telemach.ba
+npm run grab --- --sites=epg.telemach.ba
 ```
 
 ### Update channel list

@@ -3,7 +3,7 @@
 ### Download the guide
 
 ```sh
-npm run grab --- --site=vodafone.pt
+npm run grab --- --sites=vodafone.pt
 ```
 
 ### Update channel list

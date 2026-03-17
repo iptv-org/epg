@@ -5,7 +5,7 @@ https://xem.kplus.vn/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=xem.kplus.vn
+npm run grab --- --sites=xem.kplus.vn
 ```
 
 ### Update channel list

@@ -5,7 +5,7 @@ https://tv.blue.ch/tv-guide
 ### Download the guide
 
 ```sh
-npm run grab --- --site=tv.blue.ch
+npm run grab --- --sites=tv.blue.ch
 ```
 
 ### Update channel list

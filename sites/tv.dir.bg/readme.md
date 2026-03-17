@@ -5,7 +5,7 @@ https://tv.dir.bg/programata.php
 ### Download the guide
 
 ```sh
-npm run grab --- --site=tv.dir.bg
+npm run grab --- --sites=tv.dir.bg
 ```
 
 ### Update channel list

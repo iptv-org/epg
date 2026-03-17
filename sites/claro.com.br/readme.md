@@ -5,7 +5,7 @@ https://www.claro.com.br/tv-por-assinatura/programacao/grade
 ### Download the guide
 
 ```sh
-npm run grab --- --site=claro.com.br
+npm run grab --- --sites=claro.com.br
 ```
 
 ### Update channel list

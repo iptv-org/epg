@@ -9,13 +9,13 @@ https://rotana.net/en/streams (English)
 Arabic:
 
 ```sh
-npm run grab --- --site=rotana.net --lang=ar
+npm run grab --- --sites=rotana.net --lang=ar
 ```
 
 English:
 
 ```sh
-npm run grab --- --site=rotana.net --lang=en
+npm run grab --- --sites=rotana.net --lang=en
 ```
 
 ### Update channel list

@@ -5,7 +5,7 @@ https://www.energeek.cl/programacion/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=energeek.cl
+npm run grab --- --sites=energeek.cl
 ```
 
 ### Test

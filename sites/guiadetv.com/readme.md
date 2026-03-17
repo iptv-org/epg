@@ -5,7 +5,7 @@ https://www.guiadetv.com/programacao/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=guiadetv.com
+npm run grab --- --sites=guiadetv.com
 ```
 
 ### Update channel list

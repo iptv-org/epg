@@ -5,7 +5,7 @@ https://tv-spored.siol.net/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=tv-spored.siol.net
+npm run grab --- --sites=tv-spored.siol.net
 ```
 
 ### Update channel list

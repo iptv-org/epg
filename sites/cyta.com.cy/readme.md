@@ -5,7 +5,7 @@ https://epg.cyta.com.cy/tv-guide/el
 ### Download the guide
 
 ```sh
-npm run grab --- --site=cyta.com.cy
+npm run grab --- --sites=cyta.com.cy
 ```
 
 ### Update channel list

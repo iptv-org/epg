@@ -5,7 +5,7 @@ https://tvprofil.com/tvprogram/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=tvprofil.com
+npm run grab --- --sites=tvprofil.com
 ```
 
 ### Update channel list

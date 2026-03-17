@@ -5,7 +5,7 @@ https://www.mujtvprogram.cz/ _[Geo-blocked]_
 ### Download the guide
 
 ```sh
-npm run grab --- --site=mujtvprogram.cz
+npm run grab --- --sites=mujtvprogram.cz
 ```
 
 ### Update channel list

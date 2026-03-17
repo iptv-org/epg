@@ -5,7 +5,7 @@ https://tvguide.myjcom.jp/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=tvguide.myjcom.jp
+npm run grab --- --sites=tvguide.myjcom.jp
 ```
 
 ### Update channel list

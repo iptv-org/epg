@@ -5,7 +5,7 @@ https://www.cgates.lt/televizija/tv-programa-savaitei/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=cgates.lt
+npm run grab --- --sites=cgates.lt
 ```
 
 ### Update channel list

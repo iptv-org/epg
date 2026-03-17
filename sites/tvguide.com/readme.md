@@ -5,7 +5,7 @@ https://www.tvguide.com/listings/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=tvguide.com
+npm run grab --- --sites=tvguide.com
 ```
 
 ### Update channel list

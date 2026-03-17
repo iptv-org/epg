@@ -5,7 +5,7 @@ https://www.virginmediatelevision.ie/tv-guide
 ### Download the guide
 
 ```sh
-npm run grab --- --site=virginmediatelevision.ie
+npm run grab --- --sites=virginmediatelevision.ie
 ```
 
 ### Test

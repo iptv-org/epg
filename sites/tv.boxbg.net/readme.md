@@ -5,7 +5,7 @@ https://tv.boxbg.net
 ### Download the guide
 
 ```sh
-npm run grab --- --site=tv.boxbg.net
+npm run grab --- --sites=tv.boxbg.net
 ```
 
 ### Update channel list

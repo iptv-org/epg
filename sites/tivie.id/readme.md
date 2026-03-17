@@ -5,7 +5,7 @@ https://tivie.id
 ### Download the guide
 
 ```sh
-npm run grab --- --site=tivie.id
+npm run grab --- --sites=tivie.id
 ```
 
 ### Update channel list

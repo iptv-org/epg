@@ -30,7 +30,7 @@ export DEBUG="site:tv.yandex.ru"
 ### Download the guide
 
 ```sh
-npm run grab --- --site=tv.yandex.ru
+npm run grab --- --sites=tv.yandex.ru
 ```
 
 ### Update channel list

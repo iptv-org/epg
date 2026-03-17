@@ -5,7 +5,7 @@ https://www.sky.com/tv-guide
 ### Download the guide
 
 ```sh
-npm run grab --- --site=sky.com
+npm run grab --- --sites=sky.com
 ```
 
 ### Update channel list

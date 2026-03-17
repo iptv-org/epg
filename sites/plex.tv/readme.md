@@ -5,7 +5,7 @@ https://watch.plex.tv/live-tv
 ### Download the guide
 
 ```sh
-npm run grab --- --site=plex.tv
+npm run grab --- --sites=plex.tv
 ```
 
 ### Update channel list

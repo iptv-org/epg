@@ -5,7 +5,7 @@ https://www.programme-tv.net/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=programme-tv.net
+npm run grab --- --sites=programme-tv.net
 ```
 
 ### Update channel list
