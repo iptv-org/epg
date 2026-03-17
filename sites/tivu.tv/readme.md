@@ -5,7 +5,7 @@ https://www.tivu.tv/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=tivu.tv
+npm run grab --- --sites=tivu.tv
 ```
 
 ### Update channel list

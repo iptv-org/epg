@@ -5,7 +5,7 @@ https://player.ee.co.uk/#/livetv/schedule
 ### Download the guide
 
 ```sh
-npm run grab --- --site=player.ee.co.uk
+npm run grab --- --sites=player.ee.co.uk
 ```
 
 ### Test

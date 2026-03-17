@@ -5,7 +5,7 @@ https://www.novasports.gr/tv-program/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=novasports.gr
+npm run grab --- --sites=novasports.gr
 ```
 
 ### Update channel list

@@ -5,7 +5,7 @@ https://www.toonamiaftermath.com/schedule
 ### Download the guide
 
 ```sh
-npm run grab --- --site=toonamiaftermath.com
+npm run grab --- --sites=toonamiaftermath.com
 ```
 
 ### Test

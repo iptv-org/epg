@@ -5,7 +5,7 @@ https://tvmusor.hu/schedule/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=tvmusor.hu
+npm run grab --- --sites=tvmusor.hu
 ```
 
 ### Update channel list

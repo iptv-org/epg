@@ -9,13 +9,13 @@ https://www.mytvsuper.com/en/epg/ (English)
 Chinese:
 
 ```sh
-npm run grab --- --site=mytvsuper.com --lang=zh
+npm run grab --- --sites=mytvsuper.com --lang=zh
 ```
 
 English:
 
 ```sh
-npm run grab --- --site=mytvsuper.com --lang=en
+npm run grab --- --sites=mytvsuper.com --lang=en
 ```
 
 ### Update channel list

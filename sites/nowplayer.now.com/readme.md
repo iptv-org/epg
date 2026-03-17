@@ -7,13 +7,13 @@ https://nowplayer.now.com/tvguide
 Chinese:
 
 ```sh
-npm run grab --- --site=nowplayer.now.com  --lang=zh
+npm run grab --- --sites=nowplayer.now.com  --lang=zh
 ```
 
 English:
 
 ```sh
-npm run grab --- --site=nowplayer.now.com  --lang=en
+npm run grab --- --sites=nowplayer.now.com  --lang=en
 ```
 
 ### Update channel list

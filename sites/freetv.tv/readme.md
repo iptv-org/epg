@@ -5,7 +5,7 @@ https://freetv.tv/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=freetv.tv
+npm run grab --- --sites=freetv.tv
 ```
 
 ### Update channel list

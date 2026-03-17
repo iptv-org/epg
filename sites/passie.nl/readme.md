@@ -5,7 +5,7 @@ https://passie.nl/tvgids.php
 ### Download the guide
 
 ```sh
-npm run grab --- --site=passie.nl
+npm run grab --- --sites=passie.nl
 ```
 
 ### Test

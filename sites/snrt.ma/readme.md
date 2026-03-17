@@ -5,7 +5,7 @@ https://www.snrt.ma/ar/node/1208
 ### Download the guide
 
 ```sh
-npm run grab --- --site=snrt.ma
+npm run grab --- --sites=snrt.ma
 ```
 
 ### Update channel list
