@@ -47,7 +47,7 @@ module.exports = {
       // Construct image URL using the same logic as before if possible
       if (item.Title && channel.site_id) {
         const encodedTitle = encodeURIComponent(item.Title)
-        const image = `https://cdn-er-images.online.meo.pt/eemstb/ImageHandler.ashx?chCallLetter=${channel.site_id}&progTitle=${encodedTitle}&profile=16_9&profileFallback=false&noFallback=true&appSource=PC_CHROME_PWA&width=600&csf`
+        const image = `https://cdn-er-images.online.meo.pt/eemstb/ImageHandler.ashx?chCallLetter=${channel.site_id}&progTitle=${encodedTitle}&profile=16_9&profileFallback=false&noFallback=true&appSource=PC_CHROME_PWA&width=1920&csf`
         prog.icon = { src: image }
         prog.image = image
       }
