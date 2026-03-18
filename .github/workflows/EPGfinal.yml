@@ -1,126 +1,316 @@
-name: EPG für Deutschland generieren
+name: EPG pro Land generieren
 
 on:
   schedule:
-    - cron: '0 2 * * *'
+    - cron: '0 3 * * *'   # Täglich 3:00 UTC
   workflow_dispatch:
+    inputs:
+      country_code:
+        description: 'Ländercode (z.B. de, us, gb) oder "all" für alle'
+        required: false
+        default: 'de'
+      days:
+        description: 'Anzahl Tage (1-7)'
+        required: false
+        default: '3'
+
+env:
+  MAX_CONNECTIONS: 3
+  TIMEOUT: 60000
 
 jobs:
-  generate-german-epg:
+  # ─── Job 1: Welche Länder sollen generiert werden? ───────────────────
+  prepare:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
-    
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
     steps:
-      - name: 📦 Repository auschecken
-        uses: actions/checkout@v3
-      
-      - name: 🔧 Node.js einrichten
-        uses: actions/setup-node@v3
+      - id: set-matrix
+        run: |
+          INPUT="${{ github.event.inputs.country_code || 'de' }}"
+          
+          if [ "$INPUT" = "all" ]; then
+            # Alle unterstützten Länder — in kleinen Batches damit Pages-Limit nicht überschritten wird
+            COUNTRIES='["de","gb","us","fr","it","es","nl","at","ch","pl","ru","tr","br","mx","ar","au","jp","kr","cn","in","sa","ae","eg","ng","za","se","no","dk","fi","pt","gr","ro","cz","hu","ua","be","ie"]'
+          else
+            # Einzelnes Land oder kommagetrennte Liste
+            COUNTRIES=$(echo "$INPUT" | python3 -c "
+import sys, json
+raw = sys.stdin.read().strip()
+codes = [c.strip().lower() for c in raw.split(',')]
+print(json.dumps(codes))
+")
+          fi
+          
+          echo "matrix={\"country\":$COUNTRIES}" >> $GITHUB_OUTPUT
+          echo "Generiere EPG für: $COUNTRIES"
+
+  # ─── Job 2: Pro Land ein paralleler Job ──────────────────────────────
+  generate:
+    needs: prepare
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      matrix: ${{ fromJson(needs.prepare.outputs.matrix) }}
+      max-parallel: 4       # Nicht alle gleichzeitig → GitHub-Limit
+      fail-fast: false      # Ein fehlgeschlagenes Land stoppt nicht die anderen
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: Node.js einrichten
+        uses: actions/setup-node@v4
         with:
           node-version: '20'
-      
-      - name: 📡 iptv-org/epg klonen
+          cache: 'npm'
+
+      - name: iptv-org/epg klonen (shallow)
         run: |
-          echo "📡 Klone iptv-org/epg..."
-          git clone --depth 1 https://github.com/iptv-org/epg.git
+          git clone --depth 1 --filter=blob:none --sparse \
+            https://github.com/iptv-org/epg.git
           cd epg
-          echo "📦 Installiere Abhängigkeiten..."
-          npm install
-          echo "✅ iptv-org/epg bereit"
-      
-      - name: 🔍 Verfügbare Sites prüfen
+          # Nur Sites für dieses Land auschecken
+          git sparse-checkout set sites scripts package.json package-lock.json
+          npm ci --prefer-offline
+
+      - name: Sites für ${{ matrix.country }} ermitteln
+        id: find-sites
         run: |
-          cd epg
-          echo "📋 Verfügbare Sites:"
-          ls -la sites/ | grep -E "pluto|sky|magentatv" || echo "Keine passenden Sites gefunden"
-      
-      - name: 🚀 EPG für deutsche Sender generieren
-        run: |
-          echo "🚀 Starte EPG-Generierung für Deutschland..."
+          CC="${{ matrix.country }}"
           
-          # Ausgabeverzeichnis erstellen
-          mkdir -p public/epg/de
+          # Suche Sites die zum Ländercode passen
+          SITES=$(cd epg && ls sites/ | grep -E "\.${CC}$|\.${CC}\.|${CC}\.tv|${CC}\.com" 2>/dev/null | head -5 || echo "")
           
-          cd epg
+          # Fallback: bekannte Sites pro Land
+          case "$CC" in
+            de) SITES="${SITES} sky.de web.magentatv.de pluto.tv.de zattoo.com.de" ;;
+            gb) SITES="${SITES} sky.co.uk virginmedia.com bbc.co.uk" ;;
+            us) SITES="${SITES} pluto.tv.us directv.com fubo.tv" ;;
+            fr) SITES="${SITES} canalplus.fr sfr.fr" ;;
+            it) SITES="${SITES} sky.it mediaset.it rai.it" ;;
+            es) SITES="${SITES} movistar.es vodafone.es" ;;
+            nl) SITES="${SITES} npo.nl kpn.com.nl" ;;
+            at) SITES="${SITES} simpletv.at" ;;
+            *) SITES="${SITES}" ;;
+          esac
           
-          # Liste der verfügbaren deutschen Sites
-          SENDER=(
-            "pluto.tv"
-            "sky.de"
-            "web.magentatv.de"
-          )
-          
-          for sender in "${SENDER[@]}"; do
-            echo ""
-            echo "================================================"
-            echo "📡 Generiere EPG für: $sender"
-            echo "================================================"
-            
-            if [ -d "sites/$sender" ]; then
-              echo "✅ Site gefunden: $sender"
-              
-              # EPG generieren
-              npm run grab --- --site=$sender --output=../public/epg/de/${sender}.xml --days=3 --maxConnections=2 --timeout=60000
-              
-              # Prüfe Ergebnis
-              if [ -f "../public/epg/de/${sender}.xml" ]; then
-                size=$(wc -c < "../public/epg/de/${sender}.xml")
-                echo "📦 XML: ${sender}.xml ($size Bytes)"
-                
-                # XML komprimieren
-                gzip -f "../public/epg/de/${sender}.xml"
-                gz_size=$(wc -c < "../public/epg/de/${sender}.xml.gz")
-                echo "📦 Komprimiert: ${sender}.xml.gz ($gz_size Bytes)"
-                
-              else
-                echo "❌ Keine Datei erstellt für $sender"
-              fi
+          # Nur Sites die wirklich existieren
+          VALID_SITES=""
+          for site in $SITES; do
+            site=$(echo $site | xargs)  # trim
+            [ -z "$site" ] && continue
+            if [ -d "epg/sites/$site" ]; then
+              VALID_SITES="$VALID_SITES $site"
+              echo "✅ Gefunden: $site"
             else
-              echo "❌ Site nicht gefunden: $sender"
+              echo "⏭️  Nicht verfügbar: $site"
+            fi
+          done
+          
+          echo "sites=$VALID_SITES" >> $GITHUB_OUTPUT
+          
+          if [ -z "$VALID_SITES" ]; then
+            echo "⚠️ Keine Sites für $CC gefunden"
+          fi
+
+      - name: EPG generieren für ${{ matrix.country }}
+        run: |
+          CC="${{ matrix.country }}"
+          SITES="${{ steps.find-sites.outputs.sites }}"
+          DAYS="${{ github.event.inputs.days || '3' }}"
+          
+          mkdir -p "output/epg/$CC"
+          
+          if [ -z "$SITES" ]; then
+            echo "Keine Sites → leere Metadaten erstellen"
+            echo '{"country":"'$CC'","channels":[],"generated":"'$(date -Iseconds)'"}' \
+              > "output/epg/$CC/index.json"
+            exit 0
+          fi
+          
+          for site in $SITES; do
+            echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+            echo "📡 Site: $site"
+            
+            cd epg
+            
+            # EPG für heute + N Tage grabben
+            timeout 600 npm run grab -- \
+              --site="$site" \
+              --output="../output/epg/$CC/${site}.xml" \
+              --days="$DAYS" \
+              --maxConnections=$MAX_CONNECTIONS \
+              --timeout=$TIMEOUT \
+              2>&1 | tail -20 || echo "⚠️ Timeout/Fehler bei $site"
+            
+            cd ..
+            
+            # XML komprimieren falls vorhanden
+            if [ -f "output/epg/$CC/${site}.xml" ]; then
+              gzip -9 -f "output/epg/$CC/${site}.xml"
+              SIZE=$(wc -c < "output/epg/$CC/${site}.xml.gz")
+              echo "📦 ${site}.xml.gz: ${SIZE} Bytes"
             fi
             
-            sleep 2
+            sleep 3  # Rate-limiting
           done
-          
-          cd ..
-      
-      - name: 📊 Index erstellen
+
+      - name: EPG-Dateien nach Sendern aufteilen
         run: |
-          cd public/epg/de
+          CC="${{ matrix.country }}"
           
-          echo "📊 Erstelle index.json..."
-          echo "{" > index.json
-          echo "  \"lastUpdate\": \"$(date -Iseconds)\"," >> index.json
-          echo "  \"country\": \"Deutschland\"," >> index.json
-          echo "  \"countryCode\": \"de\"," >> index.json
-          echo "  \"channels\": [" >> index.json
+          # Große XML.gz aufteilen: pro Sender eine eigene Datei
+          # Das ermöglicht on-demand Laden in der App
+          python3 << 'PYEOF'
+          import os, gzip, re, json
+          from xml.etree import ElementTree as ET
           
-          first=1
-          for file in *.xml.gz; do
-            if [ -f "$file" ]; then
-              if [ $first -eq 1 ]; then
-                first=0
-              else
-                echo "," >> index.json
-              fi
+          cc = os.environ.get('CC', '${{ matrix.country }}')
+          base = f"output/epg/{cc}"
+          
+          all_channels = {}
+          all_programs = {}
+          
+          for fname in os.listdir(base):
+              if not fname.endswith('.xml.gz'):
+                  continue
+              fpath = os.path.join(base, fname)
+              try:
+                  with gzip.open(fpath, 'rb') as f:
+                      tree = ET.parse(f)
+                  root = tree.getroot()
+                  
+                  for ch in root.findall('channel'):
+                      cid = ch.get('id', '')
+                      if cid:
+                          all_channels[cid] = ET.tostring(ch, encoding='unicode')
+                  
+                  for prog in root.findall('programme'):
+                      cid = prog.get('channel', '')
+                      if cid not in all_programs:
+                          all_programs[cid] = []
+                      all_programs[cid].append(ET.tostring(prog, encoding='unicode'))
+                          
+              except Exception as e:
+                  print(f"Fehler in {fname}: {e}")
+          
+          # Index erstellen
+          index = {
+              "country": cc,
+              "generated": "",
+              "channels": []
+          }
+          
+          import subprocess
+          result = subprocess.run(['date', '-Iseconds'], capture_output=True, text=True)
+          index["generated"] = result.stdout.strip()
+          
+          # Pro Sender eine komprimierte XML-Datei
+          os.makedirs(f"{base}/channels", exist_ok=True)
+          
+          for cid, ch_xml in all_channels.items():
+              progs = all_programs.get(cid, [])
+              if not progs:
+                  continue
               
-              channel=$(basename "$file" .xml.gz)
-              size=$(wc -c < "$file")
+              # Dateiname: channel-id bereinigen
+              safe_id = re.sub(r'[^a-zA-Z0-9._-]', '_', cid)
               
-              echo "    {\"channel\": \"$channel\", \"file\": \"$file\", \"size\": $size}" >> index.json
-              echo "   ✅ $channel.xml.gz ($size Bytes)"
-            fi
+              xml_content = f'''<?xml version="1.0" encoding="UTF-8"?>
+          <tv>
+          {ch_xml}
+          {"".join(progs)}
+          </tv>'''
+              
+              out_path = f"{base}/channels/{safe_id}.xml.gz"
+              with gzip.open(out_path, 'wt', encoding='utf-8', compresslevel=9) as f:
+                  f.write(xml_content)
+              
+              size = os.path.getsize(out_path)
+              index["channels"].append({
+                  "id": cid,
+                  "file": f"channels/{safe_id}.xml.gz",
+                  "programs": len(progs),
+                  "size": size
+              })
+          
+          # Index speichern
+          with open(f"{base}/index.json", 'w') as f:
+              json.dump(index, f, ensure_ascii=False)
+          
+          print(f"✅ {cc}: {len(index['channels'])} Sender, Index gespeichert")
+          PYEOF
+        env:
+          CC: ${{ matrix.country }}
+
+      - name: Artefakt hochladen
+        uses: actions/upload-artifact@v4
+        with:
+          name: epg-${{ matrix.country }}
+          path: output/epg/${{ matrix.country }}/
+          retention-days: 1
+          if-no-files-found: warn
+
+  # ─── Job 3: Alle Artefakte zusammenführen + zu Cloudflare deployen ───
+  deploy:
+    needs: generate
+    runs-on: ubuntu-latest
+    if: always()   # Auch wenn einzelne Länder fehlschlugen
+
+    steps:
+      - name: Alle EPG-Artefakte herunterladen
+        uses: actions/download-artifact@v4
+        with:
+          pattern: epg-*
+          path: public/epg/
+          merge-multiple: false
+
+      - name: Verzeichnisstruktur anzeigen
+        run: |
+          echo "📁 Struktur:"
+          find public/epg -name "index.json" | while read f; do
+            cc=$(dirname $f | xargs basename)
+            channels=$(python3 -c "import json; d=json.load(open('$f')); print(len(d.get('channels',[])))" 2>/dev/null || echo "?")
+            echo "  🌍 $cc: $channels Sender"
           done
           
-          echo "  ]" >> index.json
-          echo "}" >> index.json
+          TOTAL=$(find public/epg -name "*.xml.gz" | wc -l)
+          SIZE=$(du -sh public/epg 2>/dev/null | cut -f1)
+          echo ""
+          echo "📊 Gesamt: $TOTAL Dateien, $SIZE"
+
+      - name: Globalen Index erstellen
+        run: |
+          python3 << 'PYEOF'
+          import os, json
           
-          echo "totalChannels: $first" >> index-stats.txt
+          global_index = {"countries": [], "generated": ""}
           
-          echo "✅ index.json erstellt:"
-          cat index.json
-      
-      - name: 📤 Nach Cloudflare Pages deployen
+          import subprocess
+          global_index["generated"] = subprocess.run(
+              ['date', '-Iseconds'], capture_output=True, text=True
+          ).stdout.strip()
+          
+          epg_base = "public/epg"
+          for cc in sorted(os.listdir(epg_base)):
+              idx_path = os.path.join(epg_base, cc, "index.json")
+              if os.path.exists(idx_path):
+                  with open(idx_path) as f:
+                      data = json.load(f)
+                  global_index["countries"].append({
+                      "code": cc,
+                      "channels": len(data.get("channels", [])),
+                      "generated": data.get("generated", "")
+                  })
+          
+          with open(f"{epg_base}/index.json", 'w') as f:
+              json.dump(global_index, f, ensure_ascii=False, indent=2)
+          
+          print(f"✅ Globaler Index: {len(global_index['countries'])} Länder")
+          PYEOF
+
+      - name: Zu Cloudflare Pages deployen
         uses: cloudflare/pages-action@v1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
