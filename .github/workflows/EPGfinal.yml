@@ -17,12 +17,13 @@ on:
 env:
   MAX_CONNECTIONS: 3
   TIMEOUT: 60000
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   # ─── Job 1: Welche Länder sollen generiert werden? ───────────────────
   prepare:
     runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
     steps:
@@ -44,6 +45,8 @@ jobs:
     needs: prepare
     runs-on: ubuntu-latest
     timeout-minutes: 45
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
     strategy:
       matrix: ${{ fromJson(needs.prepare.outputs.matrix) }}
       max-parallel: 4       # Nicht alle gleichzeitig → GitHub-Limit
@@ -247,7 +250,9 @@ jobs:
   deploy:
     needs: generate
     runs-on: ubuntu-latest
-    if: always()   # Auch wenn einzelne Länder fehlschlugen
+    if: always()
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
 
     steps:
       - name: Alle EPG-Artefakte herunterladen
@@ -313,11 +318,20 @@ jobs:
           print(f"✅ Globaler Index: {len(global_index['countries'])} Länder")
           PYEOF
 
-      - name: Zu Cloudflare Pages deployen
-        uses: cloudflare/pages-action@v1
+      - name: Node.js für Wrangler einrichten
+        uses: actions/setup-node@v5
         with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: "iptv-epg-data"
-          directory: public
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          node-version: '22'
+
+      - name: Wrangler installieren
+        run: npm install -g wrangler
+
+      - name: Zu Cloudflare Pages deployen
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          wrangler pages deploy public \
+            --project-name="iptv-epg-data" \
+            --commit-dirty=true \
+            --branch=main
