@@ -28,22 +28,15 @@ jobs:
       - id: set-matrix
         run: |
           INPUT="${{ github.event.inputs.country_code || 'de' }}"
-          
           if [ "$INPUT" = "all" ]; then
-            # Alle unterstützten Länder — in kleinen Batches damit Pages-Limit nicht überschritten wird
-            COUNTRIES='["de","gb","us","fr","it","es","nl","at","ch","pl","ru","tr","br","mx","ar","au","jp","kr","cn","in","sa","ae","eg","ng","za","se","no","dk","fi","pt","gr","ro","cz","hu","ua","be","ie"]'
+            COUNTRIES=de,gb,us,fr,it,es,nl,at,ch,pl,ru,tr,br,mx,ar,au,jp,kr,cn,in,sa,ae,eg,ng,za,se,no,dk,fi,pt,gr,ro,cz,hu,ua,be,ie
           else
-            # Einzelnes Land oder kommagetrennte Liste
-            COUNTRIES=$(echo "$INPUT" | python3 -c "
-import sys, json
-raw = sys.stdin.read().strip()
-codes = [c.strip().lower() for c in raw.split(',')]
-print(json.dumps(codes))
-")
+            COUNTRIES=$INPUT
           fi
-          
-          echo "matrix={\"country\":$COUNTRIES}" >> $GITHUB_OUTPUT
-          echo "Generiere EPG für: $COUNTRIES"
+          # Kommaliste in JSON-Array umwandeln
+          JSON=$(echo $COUNTRIES | tr ',' '\n' | sed 's/^/"/;s/$/"/' | tr '\n' ',' | sed 's/,$//' | sed 's/^/[/;s/$/]/')
+          echo "matrix={"country":$JSON}" >> $GITHUB_OUTPUT
+          echo "Generiere EPG für: $JSON"
 
   # ─── Job 2: Pro Land ein paralleler Job ──────────────────────────────
   generate:
