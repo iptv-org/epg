@@ -27,6 +27,9 @@ jobs:
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
     steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v5
+        
       - id: set-matrix
         run: |
           INPUT="${{ github.event.inputs.country_code || 'de' }}"
@@ -37,7 +40,7 @@ jobs:
           fi
           # Kommaliste in JSON-Array umwandeln
           JSON=$(echo $COUNTRIES | tr ',' '\n' | sed 's/^/"/;s/$/"/' | tr '\n' ',' | sed 's/,$//' | sed 's/^/[/;s/$/]/')
-          echo "matrix={"country":$JSON}" >> $GITHUB_OUTPUT
+          echo "matrix={\"country\":$JSON}" >> $GITHUB_OUTPUT
           echo "Generiere EPG für: $JSON"
 
   # ─── Job 2: Pro Land ein paralleler Job ──────────────────────────────
@@ -255,6 +258,9 @@ jobs:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
 
     steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v5
+
       - name: Alle EPG-Artefakte herunterladen
         uses: actions/download-artifact@v5
         with:
@@ -267,56 +273,68 @@ jobs:
           mkdir -p public/epg
           # download-artifact legt Unterordner an: artifacts/epg-de/
           for dir in artifacts/epg-*/; do
-            cc=$(basename "$dir" | sed 's/epg-//')
-            echo "Verschiebe $dir → public/epg/$cc/"
-            mv "$dir" "public/epg/$cc"
+            if [ -d "$dir" ]; then
+              cc=$(basename "$dir" | sed 's/epg-//')
+              echo "Verschiebe $dir → public/epg/$cc/"
+              mv "$dir" "public/epg/$cc"
+            fi
           done
           echo "Struktur:"
-          ls public/epg/
+          ls -la public/epg/
 
       - name: Verzeichnisstruktur anzeigen
         run: |
           echo "📁 Struktur:"
-          find public/epg -name "index.json" | while read f; do
-            cc=$(dirname $f | xargs basename)
-            channels=$(python3 -c "import json; d=json.load(open('$f')); print(len(d.get('channels',[])))" 2>/dev/null || echo "?")
-            echo "  🌍 $cc: $channels Sender"
-          done
-          
-          TOTAL=$(find public/epg -name "*.xml.gz" | wc -l)
-          SIZE=$(du -sh public/epg 2>/dev/null | cut -f1)
-          echo ""
-          echo "📊 Gesamt: $TOTAL Dateien, $SIZE"
+          if [ -d "public/epg" ]; then
+            find public/epg -name "index.json" | while read f; do
+              cc=$(dirname $f | xargs basename)
+              channels=$(python3 -c "import json; d=json.load(open('$f')); print(len(d.get('channels',[])))" 2>/dev/null || echo "?")
+              echo "  🌍 $cc: $channels Sender"
+            done
+            
+            TOTAL=$(find public/epg -name "*.xml.gz" 2>/dev/null | wc -l)
+            SIZE=$(du -sh public/epg 2>/dev/null | cut -f1)
+            echo ""
+            echo "📊 Gesamt: $TOTAL Dateien, $SIZE"
+          else
+            echo "⚠️ public/epg Verzeichnis nicht gefunden"
+          fi
 
       - name: Globalen Index erstellen
         run: |
-          python3 << 'PYEOF'
-          import os, json
-          
-          global_index = {"countries": [], "generated": ""}
-          
-          import subprocess
-          global_index["generated"] = subprocess.run(
-              ['date', '-Iseconds'], capture_output=True, text=True
-          ).stdout.strip()
-          
-          epg_base = "public/epg"
-          for cc in sorted(os.listdir(epg_base)):
-              idx_path = os.path.join(epg_base, cc, "index.json")
-              if os.path.exists(idx_path):
-                  with open(idx_path) as f:
-                      data = json.load(f)
-                  global_index["countries"].append({
-                      "code": cc,
-                      "channels": len(data.get("channels", [])),
-                      "generated": data.get("generated", "")
-                  })
-          
-          with open(f"{epg_base}/index.json", 'w') as f:
-              json.dump(global_index, f, ensure_ascii=False, indent=2)
-          
-          print(f"✅ Globaler Index: {len(global_index['countries'])} Länder")
-          PYEOF
+          if [ -d "public/epg" ]; then
+            python3 << 'PYEOF'
+            import os, json, subprocess
+            
+            global_index = {"countries": [], "generated": ""}
+            
+            global_index["generated"] = subprocess.run(
+                ['date', '-Iseconds'], capture_output=True, text=True
+            ).stdout.strip()
+            
+            epg_base = "public/epg"
+            if os.path.exists(epg_base):
+              for cc in sorted(os.listdir(epg_base)):
+                  idx_path = os.path.join(epg_base, cc, "index.json")
+                  if os.path.exists(idx_path):
+                      with open(idx_path) as f:
+                          data = json.load(f)
+                      global_index["countries"].append({
+                          "code": cc,
+                          "channels": len(data.get("channels", [])),
+                          "generated": data.get("generated", "")
+                      })
+              
+              with open(f"{epg_base}/index.json", 'w') as f:
+                  json.dump(global_index, f, ensure_ascii=False, indent=2)
+              
+              print(f"✅ Globaler Index: {len(global_index['countries'])} Länder")
+            else:
+              print("⚠️ public/epg Verzeichnis nicht gefunden")
+            PYEOF
+          else
+            echo "⚠️ public/epg existiert nicht, überspringe Index-Erstellung"
+          fi
 
       - name: Node.js für Wrangler einrichten
         uses: actions/setup-node@v5
@@ -331,7 +349,14 @@ jobs:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: |
-          wrangler pages deploy public \
-            --project-name="iptv-epg-data" \
-            --commit-dirty=true \
-            --branch=main
+          if [ -d "public/epg" ] && [ "$(ls -A public/epg)" ]; then
+            echo "🚀 Deploye zu Cloudflare Pages..."
+            wrangler pages deploy public \
+              --project-name="iptv-epg-data" \
+              --commit-dirty=true \
+              --branch=main \
+              --production
+          else
+            echo "⚠️ public/epg ist leer oder existiert nicht - überspringe Deployment"
+            exit 0
+          fi
