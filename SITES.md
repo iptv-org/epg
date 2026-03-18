@@ -126,8 +126,8 @@
     <tr><td><a href="sites/pickx.be">pickx.be</a></td><td align="right">404</td><td align="right">375</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/player.ee.co.uk">player.ee.co.uk</a></td><td align="right">241</td><td align="right">198</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/playtv.unifi.com.my">playtv.unifi.com.my</a></td><td align="right">66</td><td align="right">61</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/plex.tv">plex.tv</a></td><td align="right">170</td><td align="right">119</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/pluto.tv">pluto.tv</a></td><td align="right">3302</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/plex.tv">plex.tv</a></td><td align="right">1287</td><td align="right">512</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/pluto.tv">pluto.tv</a></td><td align="right">3041</td><td align="right">415</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/port.hu">port.hu</a></td><td align="right">151</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/programacion-tv.elpais.com">programacion-tv.elpais.com</a></td><td align="right">195</td><td align="right">101</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/programacion.tcc.com.uy">programacion.tcc.com.uy</a></td><td align="right">149</td><td align="right">55</td><td align="center">🟢</td><td></td></tr>
