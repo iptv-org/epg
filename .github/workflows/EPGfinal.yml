@@ -34,7 +34,7 @@ jobs:
         run: |
           INPUT="${{ github.event.inputs.country_code || 'de' }}"
           if [ "$INPUT" = "all" ]; then
-            COUNTRIES=de,gb,us,fr,it,es,nl,at,ch,pl,ru,tr,br,mx,ar,au,jp,kr,cn,in,sa,ae,eg,ng,za,se,no,dk,fi,pt,gr,ro,cz,hu,ua,be,ie
+            COUNTRIES="de,gb,us,fr,it,es,nl,at,ch,pl,ru,tr,br,mx,ar,au,jp,kr,cn,in,sa,ae,eg,ng,za,se,no,dk,fi,pt,gr,ro,cz,hu,ua,be,ie"
           else
             COUNTRIES=$INPUT
           fi
@@ -160,84 +160,84 @@ jobs:
           # Große XML.gz aufteilen: pro Sender eine eigene Datei
           # Das ermöglicht on-demand Laden in der App
           python3 << 'PYEOF'
-          import os, gzip, re, json
-          from xml.etree import ElementTree as ET
-          
-          cc = os.environ.get('CC', '${{ matrix.country }}')
-          base = f"output/epg/{cc}"
-          
-          all_channels = {}
-          all_programs = {}
-          
-          for fname in os.listdir(base):
-              if not fname.endswith('.xml.gz'):
-                  continue
-              fpath = os.path.join(base, fname)
-              try:
-                  with gzip.open(fpath, 'rb') as f:
-                      tree = ET.parse(f)
-                  root = tree.getroot()
-                  
-                  for ch in root.findall('channel'):
-                      cid = ch.get('id', '')
-                      if cid:
-                          all_channels[cid] = ET.tostring(ch, encoding='unicode')
-                  
-                  for prog in root.findall('programme'):
-                      cid = prog.get('channel', '')
-                      if cid not in all_programs:
-                          all_programs[cid] = []
-                      all_programs[cid].append(ET.tostring(prog, encoding='unicode'))
-                          
-              except Exception as e:
-                  print(f"Fehler in {fname}: {e}")
-          
-          # Index erstellen
-          index = {
-              "country": cc,
-              "generated": "",
-              "channels": []
-          }
-          
-          import subprocess
-          result = subprocess.run(['date', '-Iseconds'], capture_output=True, text=True)
-          index["generated"] = result.stdout.strip()
-          
-          # Pro Sender eine komprimierte XML-Datei
-          os.makedirs(f"{base}/channels", exist_ok=True)
-          
-          for cid, ch_xml in all_channels.items():
-              progs = all_programs.get(cid, [])
-              if not progs:
-                  continue
-              
-              # Dateiname: channel-id bereinigen
-              safe_id = re.sub(r'[^a-zA-Z0-9._-]', '_', cid)
-              
-              xml_content = f'''<?xml version="1.0" encoding="UTF-8"?>
-          <tv>
-          {ch_xml}
-          {"".join(progs)}
-          </tv>'''
-              
-              out_path = f"{base}/channels/{safe_id}.xml.gz"
-              with gzip.open(out_path, 'wt', encoding='utf-8', compresslevel=9) as f:
-                  f.write(xml_content)
-              
-              size = os.path.getsize(out_path)
-              index["channels"].append({
-                  "id": cid,
-                  "file": f"channels/{safe_id}.xml.gz",
-                  "programs": len(progs),
-                  "size": size
-              })
-          
-          # Index speichern
-          with open(f"{base}/index.json", 'w') as f:
-              json.dump(index, f, ensure_ascii=False)
-          
-          print(f"✅ {cc}: {len(index['channels'])} Sender, Index gespeichert")
-          PYEOF
+import os, gzip, re, json
+from xml.etree import ElementTree as ET
+
+cc = os.environ.get('CC', '${{ matrix.country }}')
+base = f"output/epg/{cc}"
+
+all_channels = {}
+all_programs = {}
+
+for fname in os.listdir(base):
+    if not fname.endswith('.xml.gz'):
+        continue
+    fpath = os.path.join(base, fname)
+    try:
+        with gzip.open(fpath, 'rb') as f:
+            tree = ET.parse(f)
+        root = tree.getroot()
+        
+        for ch in root.findall('channel'):
+            cid = ch.get('id', '')
+            if cid:
+                all_channels[cid] = ET.tostring(ch, encoding='unicode')
+        
+        for prog in root.findall('programme'):
+            cid = prog.get('channel', '')
+            if cid not in all_programs:
+                all_programs[cid] = []
+            all_programs[cid].append(ET.tostring(prog, encoding='unicode'))
+                
+    except Exception as e:
+        print(f"Fehler in {fname}: {e}")
+
+# Index erstellen
+index = {
+    "country": cc,
+    "generated": "",
+    "channels": []
+}
+
+import subprocess
+result = subprocess.run(['date', '-Iseconds'], capture_output=True, text=True)
+index["generated"] = result.stdout.strip()
+
+# Pro Sender eine komprimierte XML-Datei
+os.makedirs(f"{base}/channels", exist_ok=True)
+
+for cid, ch_xml in all_channels.items():
+    progs = all_programs.get(cid, [])
+    if not progs:
+        continue
+    
+    # Dateiname: channel-id bereinigen
+    safe_id = re.sub(r'[^a-zA-Z0-9._-]', '_', cid)
+    
+    xml_content = f'''<?xml version="1.0" encoding="UTF-8"?>
+<tv>
+{ch_xml}
+{''.join(progs)}
+</tv>'''
+    
+    out_path = f"{base}/channels/{safe_id}.xml.gz"
+    with gzip.open(out_path, 'wt', encoding='utf-8', compresslevel=9) as f:
+        f.write(xml_content)
+    
+    size = os.path.getsize(out_path)
+    index["channels"].append({
+        "id": cid,
+        "file": f"channels/{safe_id}.xml.gz",
+        "programs": len(progs),
+        "size": size
+    })
+
+# Index speichern
+with open(f"{base}/index.json", 'w') as f:
+    json.dump(index, f, ensure_ascii=False)
+
+print(f"✅ {cc}: {len(index['channels'])} Sender, Index gespeichert")
+PYEOF
         env:
           CC: ${{ matrix.country }}
 
@@ -303,35 +303,35 @@ jobs:
       - name: Globalen Index erstellen
         run: |
           if [ -d "public/epg" ]; then
-            python3 << 'PYEOF'
-            import os, json, subprocess
-            
-            global_index = {"countries": [], "generated": ""}
-            
-            global_index["generated"] = subprocess.run(
-                ['date', '-Iseconds'], capture_output=True, text=True
-            ).stdout.strip()
-            
-            epg_base = "public/epg"
-            if os.path.exists(epg_base):
-              for cc in sorted(os.listdir(epg_base)):
-                  idx_path = os.path.join(epg_base, cc, "index.json")
-                  if os.path.exists(idx_path):
-                      with open(idx_path) as f:
-                          data = json.load(f)
-                      global_index["countries"].append({
-                          "code": cc,
-                          "channels": len(data.get("channels", [])),
-                          "generated": data.get("generated", "")
-                      })
-              
-              with open(f"{epg_base}/index.json", 'w') as f:
-                  json.dump(global_index, f, ensure_ascii=False, indent=2)
-              
-              print(f"✅ Globaler Index: {len(global_index['countries'])} Länder")
-            else:
-              print("⚠️ public/epg Verzeichnis nicht gefunden")
-            PYEOF
+            python3 << 'EOF'
+import os, json, subprocess
+
+global_index = {"countries": [], "generated": ""}
+
+global_index["generated"] = subprocess.run(
+    ['date', '-Iseconds'], capture_output=True, text=True
+).stdout.strip()
+
+epg_base = "public/epg"
+if os.path.exists(epg_base):
+    for cc in sorted(os.listdir(epg_base)):
+        idx_path = os.path.join(epg_base, cc, "index.json")
+        if os.path.exists(idx_path):
+            with open(idx_path) as f:
+                data = json.load(f)
+            global_index["countries"].append({
+                "code": cc,
+                "channels": len(data.get("channels", [])),
+                "generated": data.get("generated", "")
+            })
+    
+    with open(f"{epg_base}/index.json", 'w') as f:
+        json.dump(global_index, f, ensure_ascii=False, indent=2)
+    
+    print(f"✅ Globaler Index: {len(global_index['countries'])} Länder")
+else:
+    print("⚠️ public/epg Verzeichnis nicht gefunden")
+EOF
           else
             echo "⚠️ public/epg existiert nicht, überspringe Index-Erstellung"
           fi
