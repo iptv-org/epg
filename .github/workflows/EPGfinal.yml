@@ -17,6 +17,7 @@ on:
 env:
   MAX_CONNECTIONS: 3
   TIMEOUT: 60000
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   # ─── Job 1: Welche Länder sollen generiert werden? ───────────────────
@@ -50,22 +51,19 @@ jobs:
 
     steps:
       - name: Repository auschecken
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Node.js einrichten
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
-          node-version: '20'
+          node-version: '22'
           cache: 'npm'
 
-      - name: iptv-org/epg klonen (shallow)
+      - name: iptv-org/epg klonen
         run: |
-          git clone --depth 1 --filter=blob:none --sparse \
-            https://github.com/iptv-org/epg.git
+          git clone --depth 1 https://github.com/iptv-org/epg.git
           cd epg
-          # Nur Sites für dieses Land auschecken
-          git sparse-checkout set sites scripts package.json package-lock.json
-          npm ci --prefer-offline
+          npm install
 
       - name: Sites für ${{ matrix.country }} ermitteln
         id: find-sites
@@ -238,7 +236,7 @@ jobs:
           CC: ${{ matrix.country }}
 
       - name: Artefakt hochladen
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: epg-${{ matrix.country }}
           path: output/epg/${{ matrix.country }}/
@@ -253,11 +251,23 @@ jobs:
 
     steps:
       - name: Alle EPG-Artefakte herunterladen
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           pattern: epg-*
-          path: public/epg/
+          path: artifacts/
           merge-multiple: false
+
+      - name: Artefakte in public/epg/ verschieben
+        run: |
+          mkdir -p public/epg
+          # download-artifact legt Unterordner an: artifacts/epg-de/
+          for dir in artifacts/epg-*/; do
+            cc=$(basename "$dir" | sed 's/epg-//')
+            echo "Verschiebe $dir → public/epg/$cc/"
+            mv "$dir" "public/epg/$cc"
+          done
+          echo "Struktur:"
+          ls public/epg/
 
       - name: Verzeichnisstruktur anzeigen
         run: |
