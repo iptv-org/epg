@@ -188,9 +188,8 @@ jobs:
           if [ -d "public/epg" ] && [ "$(ls -A public/epg 2>/dev/null)" ]; then
             wrangler pages deploy public \
               --project-name="iptv-epg-data" \
-              --commit-dirty=true \
               --branch=main \
-              --production
+              --commit-dirty=true
           else
             echo "⚠️ Nichts zu deployen"
           fi
