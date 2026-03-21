@@ -5,18 +5,16 @@ module.exports = {
   site: 'rts.ch',
   days: 2,
 
-  url({ date }) {
-    return `https://www.rts.ch/play/v3/api/rts/production/tv-program-guide?date=${date.format('YYYY-MM-DD')}`
+  url({ channel, date }) {
+    return `https://il.srgssr.ch/integrationlayer/2.0/rts/programGuide/tv/byDate/${date.format('YYYY-MM-DD')}?reduced=false&channelId=${channel.site_id}`
   },
 
-  parser({ content, channel }) {
+  parser({ content }) {
     try {
-      const { data } = JSON.parse(content)
+      const { programGuide } = JSON.parse(content)
+      if (!programGuide?.[0]?.programList) return []
 
-      const channelData = data.find(entry => entry.channel.id === channel.site_id)
-      if (!channelData || !Array.isArray(channelData.programList)) return []
-
-      return channelData.programList.map(program => ({
+      return programGuide[0].programList.map(program => ({
         title:       program.title || '',
         subTitle:    program.subtitle || undefined,
         description: program.description || program.show?.description || undefined,
@@ -32,10 +30,10 @@ module.exports = {
 
   async channels() {
     const today = dayjs().format('YYYY-MM-DD')
-    const { data: body } = await axios.get(
+    const { data } = await axios.get(
       `https://www.rts.ch/play/v3/api/rts/production/tv-program-guide?date=${today}`
     )
-    return body.data.map(entry => ({
+    return data.data.map(entry => ({
       site_id: entry.channel.id,
       name:    entry.channel.title,
       lang:    'fr',

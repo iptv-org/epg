@@ -5,78 +5,75 @@ const customParseFormat = require('dayjs/plugin/customParseFormat')
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
-const date = dayjs.utc('2026-03-20', 'YYYY-MM-DD').startOf('d')
-const channel = { site_id: '143932a79bb5a123a646b68b1d1188d7ae493e5b', name: 'RTS 1', lang: 'fr' }
+const date = dayjs.utc('2026-03-21', 'YYYY-MM-DD').startOf('d')
+const channel = { site_id: '5d332a26e06d08eec8ad385d566187df72955623', name: 'RTS Info', lang: 'fr' }
 
 it('can generate valid url', () => {
   expect(url({ channel, date })).toBe(
-    'https://www.rts.ch/play/v3/api/rts/production/tv-program-guide?date=2026-03-20'
+    'https://il.srgssr.ch/integrationlayer/2.0/rts/programGuide/tv/byDate/2026-03-21?reduced=false&channelId=5d332a26e06d08eec8ad385d566187df72955623'
   )
 })
 
 it('can parse response', () => {
   const content = JSON.stringify({
-    data: [
+    programGuide: [
       {
-        channel: { id: '143932a79bb5a123a646b68b1d1188d7ae493e5b', title: 'RTS 1' },
+        channel: { id: '5d332a26e06d08eec8ad385d566187df72955623', title: 'RTS Info' },
         programList: [
           {
-            title: '19h30',
-            startTime: '2026-03-20T19:30:00+01:00',
-            endTime: '2026-03-20T20:01:00+01:00',
-            imageUrl: 'https://kingfisher.rts.ch/res/img/cdns3/sherlock/urn:orphea-image:1035156',
+            title: "L'essentiel de l'actualité",
+            startTime: '2026-03-21T07:00:00+01:00',
+            endTime: '2026-03-21T19:00:00+01:00',
+            imageUrl: 'https://kingfisher.rts.ch/res/img/cdns3/sherlock/urn:orphea-image:1043433',
             genre: 'Actualité',
-            description: 'Le journal du soir.',
           },
           {
-            title: 'Météo',
-            startTime: '2026-03-20T20:00:00+01:00',
-            endTime: '2026-03-20T20:03:00+01:00',
-            imageUrl: 'https://kingfisher.rts.ch/res/img/cdns3/sherlock/urn:orphea-image:400670',
+            title: 'Forum',
+            startTime: '2026-03-21T19:00:00+01:00',
+            endTime: '2026-03-21T20:00:00+01:00',
+            imageUrl: 'https://kingfisher.rts.ch/res/img/cdns3/sherlock/urn:orphea-image:1831387',
             genre: 'Actualité',
+            description: 'Le magazine du soir.',
           },
         ],
       },
     ],
   })
 
-  const results = parser({ content, channel })
+  const results = parser({ content })
 
   expect(results[0]).toMatchObject({
-    title: '19h30',
-    start: '2026-03-20T18:30:00.000Z',
-    stop: '2026-03-20T19:01:00.000Z',
-    description: 'Le journal du soir.',
+    title: "L'essentiel de l'actualité",
+    start: '2026-03-21T06:00:00.000Z',
+    stop: '2026-03-21T18:00:00.000Z',
     category: 'Actualité',
-    icon: { src: 'https://kingfisher.rts.ch/res/img/cdns3/sherlock/urn:orphea-image:1035156' },
+    icon: { src: 'https://kingfisher.rts.ch/res/img/cdns3/sherlock/urn:orphea-image:1043433' },
   })
   expect(results[1]).toMatchObject({
-    title: 'Météo',
-    start: '2026-03-20T19:00:00.000Z',
-    stop: '2026-03-20T19:03:00.000Z',
+    title: 'Forum',
+    start: '2026-03-21T18:00:00.000Z',
+    stop: '2026-03-21T19:00:00.000Z',
+    description: 'Le magazine du soir.',
   })
 })
 
-it('can handle channel not found in response', () => {
+it('can handle empty programList', () => {
   const content = JSON.stringify({
-    data: [
-      {
-        channel: { id: 'some-other-channel-id', title: 'Other' },
-        programList: [{ title: 'Show', startTime: '2026-03-20T10:00:00+01:00', endTime: '2026-03-20T11:00:00+01:00' }],
-      },
+    programGuide: [
+      { channel: { id: '5d332a26e06d08eec8ad385d566187df72955623', title: 'RTS Info' }, programList: [] },
     ],
   })
 
-  const results = parser({ content, channel })
+  const results = parser({ content })
   expect(results).toMatchObject([])
 })
 
 it('can handle empty guide', () => {
-  const results = parser({ content: '', channel })
+  const results = parser({ content: '' })
   expect(results).toMatchObject([])
 })
 
 it('can handle malformed JSON', () => {
-  const results = parser({ content: 'not-json', channel })
+  const results = parser({ content: 'not-json' })
   expect(results).toMatchObject([])
 })
