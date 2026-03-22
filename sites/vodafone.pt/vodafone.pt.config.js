@@ -1,16 +1,5 @@
 const { DateTime } = require('luxon')
 const axios = require('axios')
-const fs = require('fs')
-const path = require('path')
-
-let EPGGrabber
-
-async function getEPGGrabber() {
-  if (!EPGGrabber) {
-    EPGGrabber = (await import('epg-grabber')).EPGGrabber
-  }
-  return EPGGrabber
-}
 
 const API_ENDPOINT = 'https://cdn.pt.vtv.vodafone.com/epg'
 
@@ -24,28 +13,6 @@ const headers = {
 
 module.exports = {
   site: 'vodafone.pt',
-  channels: async () => {
-    const channelsPath = path.resolve(__dirname, 'vodafone.pt.channels.xml')
-
-    if (!fs.existsSync(channelsPath)) {
-      console.warn(`Channels file not found: ${channelsPath}. Returning empty list.`)
-      return []
-    }
-
-    const xml = fs.readFileSync(channelsPath, 'utf8')
-    const grabber = await getEPGGrabber()
-    const parsed = grabber.parseChannelsXML(xml)
-
-    return parsed.map(channel => ({
-      xmltv_id: channel.xmltv_id,
-      name: channel.name,
-      site_id: channel.site_id,
-      lang: channel.lang,
-      logo: channel.logo,
-      url: channel.url,
-      lcn: channel.lcn
-    }))
-  },
   days: 2,
   request: {
     headers
