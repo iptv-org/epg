@@ -4,7 +4,15 @@ const timezone = require('dayjs/plugin/timezone')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
 const fs = require('fs')
 const path = require('path')
-const { EPGGrabber } = require('epg-grabber')
+
+let EPGGrabber
+
+async function getEPGGrabber() {
+  if (!EPGGrabber) {
+    EPGGrabber = (await import('epg-grabber')).EPGGrabber
+  }
+  return EPGGrabber
+}
 
 dayjs.extend(utc)
 dayjs.extend(timezone)
@@ -26,8 +34,9 @@ module.exports = {
       return []
     }
 
+    const grabber = await getEPGGrabber()
     const xml = fs.readFileSync(channelsPath, 'utf8')
-    const parsed = EPGGrabber.parseChannelsXML(xml)
+    const parsed = grabber.parseChannelsXML(xml)
 
     return parsed.map(channel => ({
       xmltv_id: channel.xmltv_id,

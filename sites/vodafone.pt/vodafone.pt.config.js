@@ -2,7 +2,15 @@ const { DateTime } = require('luxon')
 const axios = require('axios')
 const fs = require('fs')
 const path = require('path')
-const { EPGGrabber } = require('epg-grabber')
+
+let EPGGrabber
+
+async function getEPGGrabber() {
+  if (!EPGGrabber) {
+    EPGGrabber = (await import('epg-grabber')).EPGGrabber
+  }
+  return EPGGrabber
+}
 
 const API_ENDPOINT = 'https://cdn.pt.vtv.vodafone.com/epg'
 
@@ -25,7 +33,8 @@ module.exports = {
     }
 
     const xml = fs.readFileSync(channelsPath, 'utf8')
-    const parsed = EPGGrabber.parseChannelsXML(xml)
+    const grabber = await getEPGGrabber()
+    const parsed = grabber.parseChannelsXML(xml)
 
     return parsed.map(channel => ({
       xmltv_id: channel.xmltv_id,
