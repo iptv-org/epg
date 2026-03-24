@@ -5,12 +5,27 @@ const customParseFormat = require('dayjs/plugin/customParseFormat')
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
-const date = dayjs.utc('2026-03-21', 'YYYY-MM-DD').startOf('d')
-const channel = { site_id: '5d332a26e06d08eec8ad385d566187df72955623', name: 'RTS Info', lang: 'fr' }
+const date = dayjs.utc('2026-03-23', 'YYYY-MM-DD').startOf('d')
 
-it('can generate valid url', () => {
-  expect(url({ channel, date })).toBe(
-    'https://il.srgssr.ch/integrationlayer/2.0/rts/programGuide/tv/byDate/2026-03-21?reduced=false&channelId=5d332a26e06d08eec8ad385d566187df72955623'
+const rtsChannel = { site_id: 'RTS|5d332a26e06d08eec8ad385d566187df72955623', name: 'RTS Info', lang: 'fr' }
+const srfChannel = { site_id: 'SRF|23FFBE1B-65CE-4188-ADD2-C724186C2C9F', name: 'SRF 1', lang: 'de' }
+const rsiChannel = { site_id: 'RSI|la1', name: 'La 1', lang: 'it' }
+
+it('can generate valid url for RTS channel', () => {
+  expect(url({ channel: rtsChannel, date })).toBe(
+    'https://il.srgssr.ch/integrationlayer/2.0/rts/programGuide/tv/byDate/2026-03-23?reduced=false&channelId=5d332a26e06d08eec8ad385d566187df72955623'
+  )
+})
+
+it('can generate valid url for SRF channel', () => {
+  expect(url({ channel: srfChannel, date })).toBe(
+    'https://il.srgssr.ch/integrationlayer/2.0/srf/programGuide/tv/byDate/2026-03-23?reduced=false&channelId=23FFBE1B-65CE-4188-ADD2-C724186C2C9F'
+  )
+})
+
+it('can generate valid url for RSI channel', () => {
+  expect(url({ channel: rsiChannel, date })).toBe(
+    'https://il.srgssr.ch/integrationlayer/2.0/rsi/programGuide/tv/byDate/2026-03-23?reduced=false&channelId=la1'
   )
 })
 
@@ -18,22 +33,23 @@ it('can parse response', () => {
   const content = JSON.stringify({
     programGuide: [
       {
-        channel: { id: '5d332a26e06d08eec8ad385d566187df72955623', title: 'RTS Info' },
+        channel: { id: '23FFBE1B-65CE-4188-ADD2-C724186C2C9F', vendor: 'SRF', title: 'SRF 1' },
         programList: [
           {
-            title: "L'essentiel de l'actualité",
-            startTime: '2026-03-21T07:00:00+01:00',
-            endTime: '2026-03-21T19:00:00+01:00',
-            imageUrl: 'https://kingfisher.rts.ch/res/img/cdns3/sherlock/urn:orphea-image:1043433',
-            genre: 'Actualité',
+            title: 'Tagesschau',
+            startTime: '2026-03-23T19:30:00+01:00',
+            endTime: '2026-03-23T19:55:00+01:00',
+            imageUrl: 'https://www.srf.ch/programm/tv/image/redirect/abc123.jpg',
+            genre: 'Nachrichten',
+            subtitle: 'Hauptausgabe',
           },
           {
-            title: 'Forum',
-            startTime: '2026-03-21T19:00:00+01:00',
-            endTime: '2026-03-21T20:00:00+01:00',
-            imageUrl: 'https://kingfisher.rts.ch/res/img/cdns3/sherlock/urn:orphea-image:1831387',
-            genre: 'Actualité',
-            description: 'Le magazine du soir.',
+            title: 'Meteo',
+            startTime: '2026-03-23T19:55:00+01:00',
+            endTime: '2026-03-23T20:10:00+01:00',
+            imageUrl: 'https://www.srf.ch/programm/tv/image/redirect/def456.jpg',
+            genre: 'Nachrichten',
+            description: 'Das Wetter für die Schweiz.',
           },
         ],
       },
@@ -43,24 +59,25 @@ it('can parse response', () => {
   const results = parser({ content })
 
   expect(results[0]).toMatchObject({
-    title: "L'essentiel de l'actualité",
-    start: '2026-03-21T06:00:00.000Z',
-    stop: '2026-03-21T18:00:00.000Z',
-    category: 'Actualité',
-    icon: { src: 'https://kingfisher.rts.ch/res/img/cdns3/sherlock/urn:orphea-image:1043433' },
+    title: 'Tagesschau',
+    subTitle: 'Hauptausgabe',
+    start: '2026-03-23T18:30:00.000Z',
+    stop: '2026-03-23T18:55:00.000Z',
+    category: 'Nachrichten',
+    icon: { src: 'https://www.srf.ch/programm/tv/image/redirect/abc123.jpg' },
   })
   expect(results[1]).toMatchObject({
-    title: 'Forum',
-    start: '2026-03-21T18:00:00.000Z',
-    stop: '2026-03-21T19:00:00.000Z',
-    description: 'Le magazine du soir.',
+    title: 'Meteo',
+    start: '2026-03-23T18:55:00.000Z',
+    stop: '2026-03-23T19:10:00.000Z',
+    description: 'Das Wetter für die Schweiz.',
   })
 })
 
 it('can handle empty programList', () => {
   const content = JSON.stringify({
     programGuide: [
-      { channel: { id: '5d332a26e06d08eec8ad385d566187df72955623', title: 'RTS Info' }, programList: [] },
+      { channel: { id: 'la1', vendor: 'RSI', title: 'La 1' }, programList: [] },
     ],
   })
 
