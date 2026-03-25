@@ -7,13 +7,13 @@ https://cubmu.com/live-tv _[Geo-restricted]_
 Indonesian:
 
 ```sh
-npm run grab --- --site=cubmu.com --lang=id
+npm run grab --- --sites=cubmu.com --lang=id
 ```
 
 English:
 
 ```sh
-npm run grab --- --site=cubmu.com --lang=en
+npm run grab --- --sites=cubmu.com --lang=en
 ```
 
 ### Update channel list

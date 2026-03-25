@@ -5,7 +5,7 @@ https://galamtv.kz/channels/now
 ### Download the guide
 
 ```sh
-npm run grab --- --site=galamtv.kz
+npm run grab --- --sites=galamtv.kz
 ```
 
 ### Update channel list

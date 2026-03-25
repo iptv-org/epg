@@ -5,7 +5,7 @@ https://www.magticom.ge/ka/tv/ip-tv/tv-guide
 ### Download the guide
 
 ```sh
-npm run grab --- --site=magticom.ge
+npm run grab --- --sites=magticom.ge
 ```
 
 ### Update channel list

@@ -5,7 +5,7 @@ https://www.antennaeurope.gr/el/tvguide.html
 ### Download the guide
 
 ```sh
-npm run grab --- --site=antennaeurope.gr
+npm run grab --- --sites=antennaeurope.gr
 ```
 
 ### Test

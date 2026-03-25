@@ -5,7 +5,7 @@ https://www.yes.co.il/content/tv/broadcast
 ### Download the guide
 
 ```sh
-npm run grab --- --site=yes.co.il
+npm run grab --- --sites=yes.co.il
 ```
 
 ### Update channel list

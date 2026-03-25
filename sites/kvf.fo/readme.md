@@ -5,7 +5,7 @@ https://kvf.fo/nskra/sv
 ### Download the guide
 
 ```sh
-npm run grab --- --site=kvf.fo
+npm run grab --- --sites=kvf.fo
 ```
 
 ### Test

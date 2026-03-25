@@ -5,7 +5,7 @@ https://www.novacyprus.com/en/node/32742
 ### Download the guide
 
 ```sh
-npm run grab --- --site=novacyprus.com
+npm run grab --- --sites=novacyprus.com
 ```
 
 ### Update channel list

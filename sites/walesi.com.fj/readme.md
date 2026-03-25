@@ -5,7 +5,7 @@ https://www.walesi.com.fj/channel-guide/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=walesi.com.fj
+npm run grab --- --sites=walesi.com.fj
 ```
 
 ### Update channel list

@@ -5,7 +5,7 @@ https://www.mon-programme-tv.be/mon-programme-television.html
 ### Download the guide
 
 ```sh
-npm run grab --- --site=mon-programme-tv.be
+npm run grab --- --sites=mon-programme-tv.be
 ```
 
 ### Update channel list

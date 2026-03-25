@@ -5,7 +5,7 @@ https://www.tvkaista.org/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=tvkaista.org
+npm run grab --- --sites=tvkaista.org
 ```
 
 ### Update channel list

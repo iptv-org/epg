@@ -5,7 +5,7 @@ https://cableplus.com.uy/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=cableplus.com.uy
+npm run grab --- --sites=cableplus.com.uy
 ```
 
 ### Update channel list

@@ -5,7 +5,7 @@ https://www.cosmotetv.gr/portal/program
 ### Download the guide
 
 ```sh
-npm run grab --- --site=cosmotetv.gr
+npm run grab --- --sites=cosmotetv.gr
 ```
 
 ### Update channel list

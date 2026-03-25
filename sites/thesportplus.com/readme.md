@@ -7,7 +7,7 @@ Europe: https://www.thesportplus.com/schedule_euro.php
 ### Download the guide
 
 ```sh
-npm run grab --- --site=thesportplus.com
+npm run grab --- --sites=thesportplus.com
 ```
 
 ### Test

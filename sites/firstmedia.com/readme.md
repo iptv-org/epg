@@ -5,7 +5,7 @@ https://www.firstmedia.com/product/tv-guide
 ### Download the guide
 
 ```sh
-npm run grab --- --site=firstmedia.com
+npm run grab --- --sites=firstmedia.com
 ```
 
 ### Update channel list

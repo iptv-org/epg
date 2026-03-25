@@ -7,19 +7,19 @@ https://epg.iptvx.one/
 Windows (Command Prompt):
 
 ```sh
-SET "NODE_OPTIONS=--max-old-space-size=5000" && npm run grab --- --site=epg.iptvx.one
+SET "NODE_OPTIONS=--max-old-space-size=5000" && npm run grab --- --sites=epg.iptvx.one
 ```
 
 Windows (PowerShell):
 
 ```sh
-$env:NODE_OPTIONS="--max-old-space-size=5000"; npm run grab --- --site=epg.iptvx.one
+$env:NODE_OPTIONS="--max-old-space-size=5000"; npm run grab --- --sites=epg.iptvx.one
 ```
 
 Linux and macOS:
 
 ```sh
-NODE_OPTIONS=--max-old-space-size=5000 npm run grab --- --site=epg.iptvx.one
+NODE_OPTIONS=--max-old-space-size=5000 npm run grab --- --sites=epg.iptvx.one
 ```
 
 ### Update channel list

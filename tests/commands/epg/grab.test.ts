@@ -13,7 +13,7 @@ beforeEach(() => {
 
 describe('epg:grab', () => {
   it('can grab epg by site name', () => {
-    const cmd = `${ENV_VAR} npm run grab --- --site=example.com --output="${path.resolve(
+    const cmd = `${ENV_VAR} npm run grab --- --sites=example.com --output="${path.resolve(
       'tests/__data__/output/guides/base.guide.xml'
     )}"`
     const stdout = execSync(cmd, { encoding: 'utf8' })
@@ -25,7 +25,7 @@ describe('epg:grab', () => {
   })
 
   it('can grab epg with curl option', () => {
-    const cmd = `${ENV_VAR} npm run grab --- --site=example.com --curl --output="${path.resolve(
+    const cmd = `${ENV_VAR} npm run grab --- --sites=example.com --curl --output="${path.resolve(
       'tests/__data__/output/guides/curl.guide.xml'
     )}"`
     const stdout = execSync(cmd, { encoding: 'utf8' })

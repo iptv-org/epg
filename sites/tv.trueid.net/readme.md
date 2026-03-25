@@ -9,13 +9,13 @@ https://tv.trueid.net/
 Thai:
 
 ```sh
-npm run grab --- --site=tv.trueid.net --lang=th
+npm run grab --- --sites=tv.trueid.net --lang=th
 ```
 
 English:
 
 ```sh
-npm run grab --- --site=tv.trueid.net --lang=en
+npm run grab --- --sites=tv.trueid.net --lang=en
 ```
 
 ### Update channel list

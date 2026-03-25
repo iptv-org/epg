@@ -5,7 +5,7 @@ https://tapdmv.com/Schedule/index.html
 ### Download the guide
 
 ```sh
-npm run grab --- --site=tapdmv.com
+npm run grab --- --sites=tapdmv.com
 ```
 
 ### Update channel list
