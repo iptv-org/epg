@@ -76,8 +76,11 @@ module.exports = {
     for (let item of queue) {
       const data = await axios(item)
         .then(r => r.data)
-        .catch(console.error)
+        .catch(err => {
+          console.error(`Error fetching page ${item.data.get('pageNum')}: ${err.message}`)
+        })
 
+      if (!data) continue
       data.programDetailsByChannel.forEach(channel => {
         channels.push({
           lang: 'en',

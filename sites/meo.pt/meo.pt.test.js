@@ -52,7 +52,7 @@ it('can parse response', async () => {
     title: 'Barman - Ep. 4',
     description: "'Barman' é uma série de comédia dramática sobre um jovem comediante que começa a trabalhar como Barman porque precisa de arranjar dinheiro depressa, pelo caminho é obrigado a lidar com a vida noturna e conciliar duas realidades diferentes.",
     icon: {
-      src: 'https://proxycache.online.meo.pt/eemstb/ImageHandler.ashx?evTitle=Barman%20-%20Ep.%204&chCallLetter=RTPM&profile=16_9&width=600'
+      src: 'https://cdn-er-images.online.meo.pt/eemstb/ImageHandler.ashx?chCallLetter=RTPM&progTitle=Barman%20-%20Ep.%204&profile=16_9&profileFallback=false&noFallback=true&appSource=PC_CHROME_PWA&width=1920&csf'
     }
   })
 })
