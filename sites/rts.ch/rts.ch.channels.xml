@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="rts.ch" site_id="RTS|143932a79bb5a123a646b68b1d1188d7ae493e5b" lang="fr" xmltv_id="RTS1.ch">RTS 1</channel>
-  <channel site="rts.ch" site_id="RTS|d7dfff28deee44e1d3c49a3d37d36d492b29671b" lang="fr" xmltv_id="RTS2.ch">RTS 2</channel>
-  <channel site="rts.ch" site_id="RTS|5d332a26e06d08eec8ad385d566187df72955623" lang="fr" xmltv_id="RTSInfo.ch">RTS Info</channel>
-  <channel site="rts.ch" site_id="SRF|23FFBE1B-65CE-4188-ADD2-C724186C2C9F" lang="de" xmltv_id="SRF1.ch">SRF 1</channel>
-  <channel site="rts.ch" site_id="SRF|E4D5AD08-C1E8-46A3-BB58-4875051D60D2" lang="de" xmltv_id="SRFzwei.ch">SRF zwei</channel>
-  <channel site="rts.ch" site_id="SRF|34c2819e-e715-43d7-9026-40a443152a97" lang="de" xmltv_id="SRFinfo.ch">SRF info</channel>
-  <channel site="rts.ch" site_id="RSI|la1" lang="it" xmltv_id="RSILa1.ch">La 1</channel>
-  <channel site="rts.ch" site_id="RSI|la2" lang="it" xmltv_id="RSILa2.ch">La 2</channel>
+  <channel site="rts.ch" site_id="143932a79bb5a123a646b68b1d1188d7ae493e5b" lang="fr" xmltv_id="RTS1.ch@SD">RTS 1</channel>
+  <channel site="rts.ch" site_id="d7dfff28deee44e1d3c49a3d37d36d492b29671b" lang="fr" xmltv_id="RTS2.ch@SD">RTS 2</channel>
+  <channel site="rts.ch" site_id="5d332a26e06d08eec8ad385d566187df72955623" lang="fr" xmltv_id="RTSInfo.ch@SD">RTS Info</channel>
 </channels>
