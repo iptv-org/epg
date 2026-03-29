@@ -14,6 +14,7 @@
     <tr><td><a href="sites/antennaeurope.gr">antennaeurope.gr</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/antennapacific.gr">antennapacific.gr</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/antennasatellite.gr">antennasatellite.gr</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/app.tvufop.com.br">app.tvufop.com.br</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/arianatelevision.com">arianatelevision.com</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/arirang.com">arirang.com</a></td><td align="right">3</td><td align="right">3</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/artonline.tv">artonline.tv</a></td><td align="right">5</td><td align="right">5</td><td align="center">🟢</td><td></td></tr>
