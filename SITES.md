@@ -124,7 +124,7 @@
     <tr><td><a href="sites/passie.nl">passie.nl</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/pbsguam.org">pbsguam.org</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/pickx.be">pickx.be</a></td><td align="right">404</td><td align="right">375</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/player.ee.co.uk">player.ee.co.uk</a></td><td align="right">241</td><td align="right">198</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/player.ee.co.uk">player.ee.co.uk</a></td><td align="right">241</td><td align="right">198</td><td align="center">🟢</td><td>https://github.com/iptv-org/epg/issues/3050</td></tr>
     <tr><td><a href="sites/playtv.unifi.com.my">playtv.unifi.com.my</a></td><td align="right">66</td><td align="right">61</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/plex.tv">plex.tv</a></td><td align="right">1287</td><td align="right">512</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/pluto.tv">pluto.tv</a></td><td align="right">3041</td><td align="right">415</td><td align="center">🟢</td><td></td></tr>
@@ -199,7 +199,7 @@
     <tr><td><a href="sites/tvarenasport.hr">tvarenasport.hr</a></td><td align="right">10</td><td align="right">10</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tvcesoir.fr">tvcesoir.fr</a></td><td align="right">135</td><td align="right">132</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tvcubana.icrt.cu">tvcubana.icrt.cu</a></td><td align="right">10</td><td align="right">10</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/tvgids.nl">tvgids.nl</a></td><td align="right">115</td><td align="right">85</td><td align="center">🟢</td><td>https://github.com/iptv-org/epg/issues/3048</td></tr>
+    <tr><td><a href="sites/tvgids.nl">tvgids.nl</a></td><td align="right">115</td><td align="right">101</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tvguide.com">tvguide.com</a></td><td align="right">153</td><td align="right">153</td><td align="center">🟢</td><td>https://github.com/iptv-org/epg/issues/2967</td></tr>
     <tr><td><a href="sites/tvguide.myjcom.jp">tvguide.myjcom.jp</a></td><td align="right">134</td><td align="right">128</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tvhebdo.com">tvhebdo.com</a></td><td align="right">317</td><td align="right">213</td><td align="center">🟢</td><td></td></tr>
