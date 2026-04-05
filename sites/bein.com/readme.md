@@ -9,13 +9,13 @@ https://www.bein.com/en/tv-guide/ (English)
 Arabic:
 
 ```sh
-npm run grab --- --site=bein.com --lang=ar
+npm run grab --- --sites=bein.com --lang=ar
 ```
 
 English:
 
 ```sh
-npm run grab --- --site=bein.com --lang=en
+npm run grab --- --sites=bein.com --lang=en
 ```
 
 ### Update channel list

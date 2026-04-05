@@ -7,19 +7,19 @@ https://m.tv.sms.cz/
 Windows (Command Prompt):
 
 ```sh
-SET "NODE_OPTIONS=--tls-cipher-list=DEFAULT@SECLEVEL=0" && npm run grab --- --site=m.tv.sms.cz
+SET "NODE_OPTIONS=--tls-cipher-list=DEFAULT@SECLEVEL=0" && npm run grab --- --sites=m.tv.sms.cz
 ```
 
 Windows (PowerShell):
 
 ```sh
-$env:NODE_OPTIONS="--tls-cipher-list=DEFAULT@SECLEVEL=0"; npm run grab --- --site=m.tv.sms.cz
+$env:NODE_OPTIONS="--tls-cipher-list=DEFAULT@SECLEVEL=0"; npm run grab --- --sites=m.tv.sms.cz
 ```
 
 Linux and macOS:
 
 ```sh
-NODE_OPTIONS='--tls-cipher-list=DEFAULT@SECLEVEL=0' npm run grab --- --site=m.tv.sms.cz
+NODE_OPTIONS='--tls-cipher-list=DEFAULT@SECLEVEL=0' npm run grab --- --sites=m.tv.sms.cz
 ```
 
 ### Update channel list

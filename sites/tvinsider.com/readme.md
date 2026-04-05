@@ -5,7 +5,7 @@ https://www.tvinsider.com/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=tvinsider.com
+npm run grab --- --sites=tvinsider.com
 ```
 
 ### Update channel list

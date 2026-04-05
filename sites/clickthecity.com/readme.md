@@ -5,7 +5,7 @@ https://www.clickthecity.com/tv/schedules/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=clickthecity.com
+npm run grab --- --sites=clickthecity.com
 ```
 
 ### Update channel list

@@ -5,7 +5,7 @@ https://www.sky.de/tvguide-7599
 ### Download the guide
 
 ```sh
-npm run grab --- --site=sky.de
+npm run grab --- --sites=sky.de
 ```
 
 ### Update channel list

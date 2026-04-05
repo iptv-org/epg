@@ -5,7 +5,7 @@ https://www.mysky.com.ph/metromanila/tv-schedules
 ### Download the guide
 
 ```sh
-npm run grab --- --site=mysky.com.ph
+npm run grab --- --sites=mysky.com.ph
 ```
 
 ### Update channel list

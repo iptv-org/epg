@@ -5,7 +5,7 @@ https://www.indihometv.com/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=indihometv.com
+npm run grab --- --sites=indihometv.com
 ```
 
 **NOTE:** Requests from some regions may return a "Connection timeout" error (https://check-host.net/check-report/13a843e2ke22).

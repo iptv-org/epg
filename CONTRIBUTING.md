@@ -343,7 +343,7 @@ https://example.com
 ### Download the guide
 
 ```sh
-npm run grab --- --site=example.com
+npm run grab --- --sites=example.com
 ```
 
 ### Test

@@ -7,13 +7,13 @@ https://www.visionplus.id/channel
 Indonesian:
 
 ```sh
-npm run grab --- --site=visionplus.id --lang=id
+npm run grab --- --sites=visionplus.id --lang=id
 ```
 
 English:
 
 ```sh
-npm run grab --- --site=visionplus.id --lang=en
+npm run grab --- --sites=visionplus.id --lang=en
 ```
 
 ### Update channel list

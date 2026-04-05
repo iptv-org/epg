@@ -7,13 +7,13 @@ https://www.programme.tvb.com/
 English:
 
 ```sh
-npm run grab --- --site=programme.tvb.com --lang=en
+npm run grab --- --sites=programme.tvb.com --lang=en
 ```
 
 Chinese:
 
 ```sh
-npm run grab --- --site=programme.tvb.com --lang=zh
+npm run grab --- --sites=programme.tvb.com --lang=zh
 ```
 
 ### Update channel list

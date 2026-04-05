@@ -3,7 +3,7 @@
 ### Download the guide
 
 ```sh
-npm run grab --- --site=pluto.tv
+npm run grab --- --sites=pluto.tv
 ```
 
 ### Test

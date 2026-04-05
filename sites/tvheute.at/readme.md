@@ -5,7 +5,7 @@ https://tvheute.at/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=tvheute.at
+npm run grab --- --sites=tvheute.at
 ```
 
 ### Update channel list

@@ -5,7 +5,7 @@ https://programme-tv.vini.pf/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=programme-tv.vini.pf
+npm run grab --- --sites=programme-tv.vini.pf
 ```
 
 ### Update channel list

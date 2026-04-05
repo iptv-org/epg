@@ -5,7 +5,7 @@ https://vtm.be/tv-gids
 ### Download the guide
 
 ```sh
-npm run grab --- --site=vtm.be
+npm run grab --- --sites=vtm.be
 ```
 
 ### Test

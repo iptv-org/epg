@@ -5,7 +5,7 @@ https://www.tvmustra.hu/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=tvmustra.hu
+npm run grab --- --sites=tvmustra.hu
 ```
 
 ### Update channel list

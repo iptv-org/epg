@@ -5,7 +5,7 @@ https://www.movistarplus.es/programacion-tv
 ### Download the guide
 
 ```sh
-npm run grab --- --site=movistarplus.es
+npm run grab --- --sites=movistarplus.es
 ```
 
 ### Update channel list
