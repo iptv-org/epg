@@ -32,7 +32,6 @@ let channelsFromXML = new Collection<Channel>()
 main(filepath)
 nodeCleanup(() => {
   save(filepath, channelsFromXML)
-  if (process.platform === 'win32') process.kill(0)
 })
 
 export default async function main(filepath: string) {
