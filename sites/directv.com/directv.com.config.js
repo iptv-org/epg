@@ -1,40 +1,58 @@
-const cheerio = require('cheerio')
 const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 
 dayjs.extend(utc)
 
+let token = null
+async function getToken() {
+  if (token) return token
+  token = await fetchToken()
+  return token
+}
+
+async function fetchToken() {
+  return axios
+    .post('https://api.cld.dtvce.com/authn-tokengo/v3/v2/tokens?client_id=DTVE_DFW_WEB_Chrome_G', { headers: 
+        { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36' } 
+      })
+    .then(r => r.data)
+    .then(d => d.access_token)
+    .catch(console.err)
+}
+
 module.exports = {
   site: 'directv.com',
   days: 2,
-  request: {
-    cache: {
-      ttl: 60 * 60 * 1000 // 1 hour
-    },
-    headers: {
-      'Accept-Language': 'en-US,en;q=0.5',
-      Connection: 'keep-alive'
+  request: async function() {
+    return {
+      cache: {
+        ttl: 60 * 60 * 1000 // 1 hour
+      },
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
+        Authorization: `Bearer ${token}`,
+      }
     }
   },
-  url({ date, channel }) {
-    const [channelId, childId] = channel.site_id.split('#')
-    return `https://www.directv.com/json/channelschedule?channels=${channelId}&startTime=${date.format()}&hours=24&chId=${childId}`
+  async url({ date, channel }) {
+    await getToken()
+    return `https://api.cld.dtvce.com/discovery/edge/schedule/v1/service/schedule?startTime=${date.format('YYYY-MM-DDT00:00:00')}&endTime=${date.add(24, 'hour').format('YYYY-MM-DDT00:00:00')}&channelIds=${channel.site_id}&include4K=false&is4Kcompatible=false&includeTVOD=true`
   },
   async parser({ content, channel }) {
+    console.log(content)
     const programs = []
     const items = parseItems(content, channel)
     for (let item of items) {
       if (item.programID === '-1') continue
-      const detail = await loadProgramDetail(item.programID)
       const start = parseStart(item)
       const stop = start.add(item.duration, 'm')
       programs.push({
         title: item.title,
         sub_title: item.episodeTitle,
-        description: parseDescription(detail),
+        description: parseDescription(item),
         rating: parseRating(item),
-        date: parseYear(detail),
+        date: parseYear(item),
         category: item.subcategoryList,
         season: item.seasonNumber,
         episode: item.episodeNumber,
@@ -47,42 +65,43 @@ module.exports = {
     return programs
   },
   async channels() {
-    const codes = [10001]
+    // alternate https://www.directv.com/dtvassets/dtv/dev/uf/CHLUP/chnlListingPageData.json
+    // though i don't think you could fetch the schedule from the API with this
 
     let channels = []
-    for (let code of codes) {
-      const html = await axios
-        .get('https://www.directv.com/guide', {
-          headers: {
-            cookie: `dtve-prospect-zip=${code}`
-          }
-        })
-        .then(r => r.data)
-        .catch(console.log)
-
-      const $ = cheerio.load(html)
-      const script = $('#dtvClientData').html()
-      const [, json] = script.match(/var dtvClientData = (.*);/) || [null, null]
-      const data = JSON.parse(json)
-
-      data.guideData.channels.forEach(item => {
-        channels.push({
-          lang: 'en',
-          site_id: item.chNum,
-          name: item.chName
-        })
+    const html = await axios
+      .get('https://api.cld.dtvce.com/discovery/metadata/channel/v5/service/allchannels?sort=OrdCh%253DASC', {
+        headers: {
+          Authorization: `Bearer ${await getToken()}`,
+          'Accept-Language': 'en-US,en;q=0.5',
+          Connection: 'keep-alive'
+        }
       })
-    }
+      .then(r => r.data)
+      .catch(console.log)
+
+      const data = html?.channelInfoList
+
+      if (data && Array.isArray(data)) {
+        data.forEach(item => {
+          channels.push({
+          lang: 'en',
+          site_id: item.resourceId,
+          name: item.channelName,
+          icon: item.imageList && item.imageList.length > 0 ? item.imageList[0].imageUrl : null
+          })
+        })
+      }
 
     return channels
   }
 }
 
-function parseDescription(detail) {
-  return detail ? detail.description : null
+function parseDescription(item) {
+  return item ? item.description : null
 }
-function parseYear(detail) {
-  return detail ? detail.releaseYear : null
+function parseYear(item) {
+  return item ? item.releaseYear : null
 }
 function parseRating(item) {
   return item.rating
@@ -93,14 +112,7 @@ function parseRating(item) {
     : null
 }
 function parseImage(item) {
-  return item.primaryImageUrl ? `https://www.directv.com${item.primaryImageUrl}` : null
-}
-function loadProgramDetail(programID) {
-  return axios
-    .get(`https://www.directv.com/json/program/flip/${programID}`)
-    .then(r => r.data)
-    .then(d => d.programDetail)
-    .catch(console.err)
+  return item.images?.length > 0 ? item.images[0].defaultImageUrl : null
 }
 
 function parseStart(item) {
@@ -108,11 +120,15 @@ function parseStart(item) {
 }
 
 function parseItems(content, channel) {
-  const data = JSON.parse(content)
-  if (!data) return []
-  if (!Array.isArray(data.schedule)) return []
+  try {
+    const data = JSON.parse(content)
+    if (!data) return []
+    if (!Array.isArray(data.schedules)) return []
 
-  const [, childId] = channel.site_id.split('#')
-  const channelData = data.schedule.find(i => i.chId == childId)
-  return channelData.schedules && Array.isArray(channelData.schedules) ? channelData.schedules : []
+    const channelData = data.schedules.find(i => i.channelId === channel.site_id)
+    return channelData?.contents && Array.isArray(channelData.contents) ? channelData.contents : []
+  } catch (error) {
+    console.error('Error parsing content:', error)
+    return []
+  }
 }

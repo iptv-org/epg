@@ -84,8 +84,9 @@ module.exports = {
     }
     const path = currentRegion === 'pl' ? 'mycanalint' : 'mycanal'
     const diff = date.diff(dayjs.utc().startOf('d'), 'd')
+    const token = canalToken[currentRegion]?.token
 
-    return `https://hodor.canalplus.pro/api/v2/${path}/channels/${canalToken[currentRegion].token}/${site_id}/broadcasts/day/${diff}`
+    return `https://hodor.canalplus.pro/api/v2/${path}/channels/${token}/${site_id}/broadcasts/day/${diff}`
   },
   request:{
     headers() {
@@ -157,7 +158,7 @@ async function parseToken(country) {
     const offerLocation = path.split('/')[1]
     const data = await axios.get(`https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control&offerZone=${offerZone}&offerLocation=${offerLocation}`, { headers: globalHeaders }
     ).then(r => r.data).catch(console.error)
-    return { country: country, token: data.token }
+    return { country: country, token: data?.token }
   }
   switch(country) {
     // Canal + France
@@ -176,8 +177,8 @@ async function parseToken(country) {
       timeout: 5000
     }).then(r => r.data).catch(console.error)
 
-  canalToken = { country: country, token: tokenData.token }
-  return tokenData.token
+  canalToken = { country: country, token: tokenData?.token }
+  return tokenData?.token
 }
 
 function parseStart(item) {
