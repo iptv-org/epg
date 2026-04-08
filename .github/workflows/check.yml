@@ -44,7 +44,7 @@ jobs:
           cache: 'npm'
       - name: Install dependencies
         if: steps.files.outputs.any_changed == 'true'
-        run: SKIP_POSTINSTALL=1 npm install
+        run: npm install --ignore-scripts
       - name: Check changed js-files
         if: steps.files.outputs.js_any_changed == 'true'
         run: npx eslint ${{ steps.files.outputs.js_all_changed_files }}

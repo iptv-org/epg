@@ -17,15 +17,12 @@
     "grab": "tsx scripts/commands/epg/grab.ts",
     "lint": "npx eslint \"{scripts,tests,sites}/**/*.{ts,mts,js}\"",
     "test": "cross-env TZ=Pacific/Nauru npx jest --runInBand",
-    "postinstall": "skip-postinstall || npm run api:load",
+    "postinstall": "npm --ignore-scripts || npm run api:load",
     "prepare": "husky"
   },
   "private": true,
   "license": "UNLICENSED",
   "jest": {
-    "setupFiles": [
-      "<rootDir>/node_modules/jest-offline"
-    ],
     "transform": {
       "^.+\\.(ts|js)$": "@swc/jest"
     },
@@ -39,7 +36,6 @@
     ]
   },
   "dependencies": {
-    "@alex_neo/jest-expect-message": "^1.0.5",
     "@eslint/eslintrc": "^3.3.5",
     "@eslint/js": "^9.39.4",
     "@freearhey/chronos": "^0.0.1",
@@ -89,7 +85,6 @@
     "iconv-lite": "^0.7.2",
     "inquirer": "^13.4.1",
     "jest": "^30.3.0",
-    "jest-offline": "^1.0.1",
     "langs": "^2.0.0",
     "libxml2-wasm": "^0.7.1",
     "lodash.merge": "^4.6.2",
@@ -97,24 +92,19 @@
     "lodash.sortby": "^4.7.0",
     "lodash.startcase": "^4.4.0",
     "lodash.uniqby": "^4.7.0",
-    "nedb-promises": "^6.2.3",
     "p-limit": "^7.3.0",
     "pako": "^2.1.0",
     "parse-duration": "^2.1.6",
     "pm2": "^6.0.14",
     "run-script-os": "^1.1.6",
     "serve": "^14.2.6",
-    "skip-postinstall": "^1.0.0",
     "socks-proxy-agent": "^10.0.0",
     "srcset": "^5.0.3",
     "table2array": "^0.0.2",
     "tabletojson": "^4.1.9",
     "tough-cookie": "^6.0.1",
-    "transliteration": "^2.6.1",
     "tsx": "^4.21.0",
     "typescript": "^6.0.2",
-    "unzipit": "^2.0.1",
-    "uuid": "^13.0.0",
-    "wildcard-match": "^5.1.4"
+    "uuid": "^13.0.0"
   }
 }
