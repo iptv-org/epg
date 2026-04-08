@@ -16,6 +16,7 @@ const tz = {
 module.exports = {
   site: 'rtp.pt',
   days: 2,
+
   url({ channel, date }) {
     let [region, channelCode] = channel.site_id.split('#')
     return `https://www.rtp.pt/EPG/json/rtp-channels-page/list-grid/tv/${channelCode}/${date.format(

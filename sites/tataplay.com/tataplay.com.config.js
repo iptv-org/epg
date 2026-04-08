@@ -17,10 +17,9 @@ module.exports = {
       Origin: 'https://watch.tataplay.com',
       Referer: 'https://watch.tataplay.com/',
       'User-Agent':
-        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
       'content-type': 'application/json',
-      locale: 'ENG',
-      platform: 'web'
+      locale: 'ENG'
     },
     data({ channel }) {
       return { id: channel.site_id }
@@ -53,22 +52,21 @@ module.exports = {
       Origin: 'https://watch.tataplay.com',
       Referer: 'https://watch.tataplay.com/',
       'User-Agent':
-        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
       'content-type': 'application/json',
-      locale: 'ENG',
-      platform: 'web'
+      locale: 'ENG'
     }
 
-    const baseUrl = 'https://tm.tapi.videoready.tv/portal-search/pub/api/v1/channels/schedule'
-    const initialUrl = `${baseUrl}?date=&languageFilters=&genreFilters=&limit=20&offset=0`
+    const baseUrl = 'https://tm.tapi.videoready.tv/portal-search/pub/api/v1/channels'
+    const initialUrl = `${baseUrl}?limit=1000&offset=0`
     const initialResponse = await axios.get(initialUrl, { headers })
     const total = initialResponse.data?.data?.total || 0
     const channels = []
 
-    for (let offset = 0; offset < total; offset += 20) {
-      const url = `${baseUrl}?date=&languageFilters=&genreFilters=&limit=20&offset=${offset}`
+    for (let offset = 0; offset < total; offset += 1000) {
+      const url = `${baseUrl}?limit=1000&offset=${offset}`
       const response = await axios.get(url, { headers })
-      const page = response.data?.data?.channelList || []
+      const page = response.data?.data?.list || []
       channels.push(...page)
     }
 

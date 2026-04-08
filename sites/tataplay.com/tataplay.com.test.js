@@ -51,7 +51,7 @@ it('can parse channel list', async () => {
     data: {
       data: {
         total: 2,
-        channelList: [
+        list: [
           {
             id: '1001',
             title: 'Star Plus',

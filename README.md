@@ -8,7 +8,7 @@ Tools for downloading the EPG (Electronic Program Guide) for thousands of TV cha
 - 🚀 [Usage](#usage)
 - 💫 [Update](#update)
 - 🐋 [Docker](#docker)
-- 📺 [Playlists](#playlists)
+- 📅 [Guides](#guides)
 - 🗄 [Database](#database)
 - 👨‍💻 [API](#api)
 - 📚 [Resources](#resources)
@@ -59,7 +59,7 @@ Options:
                                 not specified)
   -o, --output <path>           Path to output file (default: "guide.xml")
   -l, --lang <codes>            Allows you to restrict downloading to channels in specified languages only (example: "en,id")
-  -t, --timeout <milliseconds>  Timeout for each request in milliseconds (default: 0)
+  -t, --timeout <milliseconds>  Timeout for each request in milliseconds (default: 30000)
   -d, --delay <milliseconds>    Delay between request in milliseconds (default: 0)
   -x, --proxy <url>             Use the specified proxy (example: "socks5://username:password@127.0.0.1:1234")
   --days <days>                 Number of days for which the program will be loaded (defaults to the value from the site config)
@@ -155,7 +155,7 @@ docker pull ghcr.io/iptv-org/epg:master
 ### Create and run container
 
 ```sh
-docker run -p 3000:3000 -v /path/to/channels.xml:/epg/channels.xml ghcr.io/iptv-org/epg:master
+docker run -p 3000:3000 -v /path/to/channels.xml:/epg/public/channels.xml ghcr.io/iptv-org/epg:master
 ```
 
 By default, the guide will be downloaded every day at 00:00 UTC and saved to the `/epg/public/guide.xml` file inside the container.
@@ -179,7 +179,7 @@ To fine-tune the execution, you can pass environment variables to the container 
 ```sh
 docker run \
 -p 5000:3000 \
--v /path/to/channels.xml:/epg/channels.xml \
+-v /path/to/channels.xml:/epg/public/channels.xml \
 -e CRON_SCHEDULE="0 0,12 * * *" \
 -e MAX_CONNECTIONS=10 \
 -e GZIP=true \
@@ -199,9 +199,13 @@ ghcr.io/iptv-org/epg:master
 | CURL            | Display each request as CURL (default: false)                                                                      |
 | PROXY           | Use the specified proxy                                                                                            |
 | DAYS            | Number of days for which the guide will be loaded (defaults to the value from the site config)                     |
-| TIMEOUT         | Timeout for each request in milliseconds (default: 0)                                                              |
+| TIMEOUT         | Timeout for each request in milliseconds (default: 30000)                                                          |
 | DELAY           | Delay between request in milliseconds (default: 0)                                                                 |
 | RUN_AT_STARTUP  | Run grab on container startup (default: true)                                                                      |
+
+## Guides
+
+Any user can share the guides they have created with the rest of the community. A complete list of these guides and their current status can be found in the [GUIDES.md](GUIDES.md) file.
 
 ## Database
 

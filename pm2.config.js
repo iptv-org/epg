@@ -1,8 +1,8 @@
 const grab = process.env.SITE
-  ? `npm run grab -- --site=${process.env.SITE} ${process.env.CLANG ? `--lang=${process.env.CLANG}` : ''
-  } --output=public/guide.xml`
-  : 'npm run grab -- --channels=channels.xml --output=public/guide.xml'
-
+  ? `npm run grab -- --site=${process.env.SITE} ${
+      process.env.CLANG ? `--lang=${process.env.CLANG}` : ''
+    } --output=public/guide.xml`
+  : 'npm run grab -- --channels=public/channels.xml --output=public/guide.xml'
 
 const apps = [
   {
@@ -19,7 +19,7 @@ const apps = [
     watch: false,
     autorestart: true
   }
-];
+]
 
 if (process.env.RUN_AT_STARTUP === 'true') {
   apps.push({
@@ -29,7 +29,7 @@ if (process.env.RUN_AT_STARTUP === 'true') {
     autorestart: false,
     watch: false,
     max_restarts: 1
-  });
+  })
 }
 
-module.exports = { apps };
+module.exports = { apps }
