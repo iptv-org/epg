@@ -17,7 +17,7 @@
     "grab": "tsx scripts/commands/epg/grab.ts",
     "lint": "npx eslint \"{scripts,tests,sites}/**/*.{ts,mts,js}\"",
     "test": "cross-env TZ=Pacific/Nauru npx jest --runInBand",
-    "postinstall": "npm --ignore-scripts || npm run api:load",
+    "postinstall": "npm run api:load",
     "prepare": "husky"
   },
   "private": true,
