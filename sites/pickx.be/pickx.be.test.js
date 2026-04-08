@@ -69,7 +69,7 @@ it('can parse response', () => {
     description: 'Le journal de vivre ici.',
     category: 'Info',
     image:
-      'https://experience-cache.proximustv.be/posterserver/poster/EPG/w-166_h-110/250_250_4B990CC58066A7B2A660AFA0BDDE5C41.jpg'
+      'https://experience-cache.cdi.streaming.proximustv.be/posterserver/poster/EPG/250_250_4B990CC58066A7B2A660AFA0BDDE5C41.jpg'
   })
 })
 
