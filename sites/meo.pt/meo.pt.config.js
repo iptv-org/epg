@@ -97,14 +97,6 @@ module.exports = {
   }
 }
 
-function parseStart(item) {
-  return dayjs.tz(`${item.date} ${item.timeIni}`, 'D-M-YYYY HH:mm', 'Europe/Lisbon').utc()
-}
-
-function parseStop(item) {
-  return dayjs.tz(`${item.date} ${item.timeEnd}`, 'D-M-YYYY HH:mm', 'Europe/Lisbon').utc()
-}
-
 function parseItems(content) {
   if (!content) return []
   try {
