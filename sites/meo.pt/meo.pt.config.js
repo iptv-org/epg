@@ -1,4 +1,8 @@
-const { DateTime } = require('luxon')
+const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
+dayjs.extend(utc)
+dayjs.extend(timezone)
 
 module.exports = {
   site: 'meo.pt',
@@ -33,7 +37,7 @@ module.exports = {
       const start = parseStart(item)
       let stop = parseStop(item)
       if (stop < start) {
-        stop = stop.plus({ days: 1 })
+        stop = stop.add(1, 'day')
       }
 
       let description = ''
@@ -94,15 +98,11 @@ module.exports = {
 }
 
 function parseStart(item) {
-  return DateTime.fromFormat(`${item.date} ${item.timeIni}`, 'd-M-yyyy HH:mm', {
-    zone: 'Europe/Lisbon'
-  }).toUTC()
+  return dayjs.tz(`${item.date} ${item.timeIni}`, 'D-M-YYYY HH:mm', 'Europe/Lisbon').utc()
 }
 
 function parseStop(item) {
-  return DateTime.fromFormat(`${item.date} ${item.timeEnd}`, 'd-M-yyyy HH:mm', {
-    zone: 'Europe/Lisbon'
-  }).toUTC()
+  return dayjs.tz(`${item.date} ${item.timeEnd}`, 'D-M-YYYY HH:mm', 'Europe/Lisbon').utc()
 }
 
 function parseItems(content) {

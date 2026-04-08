@@ -1,6 +1,10 @@
 const axios = require('axios')
 const cheerio = require('cheerio')
-const { DateTime } = require('luxon')
+const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
+dayjs.extend(utc)
+dayjs.extend(timezone)
 
 module.exports = {
   site: 'entertainment.ie',
@@ -19,10 +23,10 @@ module.exports = {
       let start = parseStart($item, date)
       if (!start) return
       if (prev && start < prev.start) {
-        start = start.plus({ days: 1 })
+        start = start.add(1, 'day')
       }
       const duration = parseDuration($item)
-      const stop = start.plus({ minutes: duration })
+      const stop = start.add(duration, 'minute')
       programs.push({
         title: parseTitle($item),
         description: parseDescription($item),
@@ -77,9 +81,7 @@ function parseStart($item, date) {
   let [, time] = d ? d.split(', ') : [null, null]
 
   return time
-    ? DateTime.fromFormat(`${date.format('YYYY-MM-DD')} ${time}`, 'yyyy-MM-dd HH:mm', {
-        zone: 'UTC'
-      }).toUTC()
+    ? dayjs.tz(`${date.format('YYYY-MM-DD')} ${time}`, 'YYYY-MM-DD HH:mm', 'UTC').utc()
     : null
 }
 

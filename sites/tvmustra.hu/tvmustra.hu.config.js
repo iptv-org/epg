@@ -1,6 +1,10 @@
 const cheerio = require('cheerio')
 const axios = require('axios')
-const { DateTime } = require('luxon')
+const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
+dayjs.extend(utc)
+dayjs.extend(timezone)
 
 module.exports = {
   site: 'tvmustra.hu',
@@ -18,12 +22,12 @@ module.exports = {
       if (!start) return
       if (prev) {
         if (start < prev.start) {
-          start = start.plus({ days: 1 })
-          date = date.add(1, 'd')
+          start = start.add(1, 'day')
+          date = date.add(1, 'day')
         }
         prev.stop = start
       }
-      const stop = start.plus({ minute: 30 })
+      const stop = start.add(30, 'minute')
 
       programs.push({
         title: parseTitle($item),
@@ -66,9 +70,7 @@ function parseTitle($item) {
 function parseStart($item, date) {
   const time = $item('.musor_lista_idopont, .musor_lista_idopont2').text().trim()
 
-  return DateTime.fromFormat(`${date.format('YYYY-MM-DD')} ${time}`, 'yyyy-MM-dd HH:mm', {
-    zone: 'Europe/Budapest'
-  }).toUTC()
+  return dayjs.tz(`${date.format('YYYY-MM-DD')} ${time}`, 'YYYY-MM-DD HH:mm', 'Europe/Budapest').utc()
 }
 
 function parseItems(content) {

@@ -5,7 +5,6 @@ import { select, input } from '@inquirer/prompts'
 import { generateChannelsXML } from '../../core'
 import { Storage } from '@freearhey/storage-js'
 import { Channel } from '../../models'
-import nodeCleanup from 'node-cleanup'
 import * as sdk from '@iptv-org/sdk'
 import { Command } from 'commander'
 import readline from 'readline'
@@ -42,8 +41,14 @@ const storage = new Storage()
 let channelsFromXML = new Collection<Channel>()
 
 main(filepath)
-nodeCleanup(() => {
+process.on('SIGINT', () => {
   save(filepath, channelsFromXML)
+  process.exit(0)
+})
+
+process.on('SIGTERM', () => {
+  save(filepath, channelsFromXML)
+  process.exit(0)
 })
 
 export default async function main(filepath: string) {
