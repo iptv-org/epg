@@ -17,5 +17,5 @@ npm run channels:parse --- --config=./sites/tv.movistar.co/tv.movistar.co.config
 ### Test
 
 ```sh
-npm test --- tv.movistar.co
+npm test --- tv.movistar.co/
 ```
