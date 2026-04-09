@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="plex.tv" site_id="63894c1965b848bf2c8a7800" lang="en" xmltv_id="">5-Minute Crafts</channel>
-  <channel site="plex.tv" site_id="66f6b947515e742745f5ca34" lang="en" xmltv_id="">21 Jump Street</channel>
   <channel site="plex.tv" site_id="63eecb32ac23d1ee072087cb" lang="en" xmltv_id="">123GO!</channel>
+  <channel site="plex.tv" site_id="66f6b947515e742745f5ca34" lang="en" xmltv_id="">21 Jump Street</channel>
+  <channel site="plex.tv" site_id="63894c1965b848bf2c8a7800" lang="en" xmltv_id="">5-Minute Crafts</channel>
   <channel site="plex.tv" site_id="66be944f8711311880995280" lang="en" xmltv_id="">Action Hollywood Movies</channel>
   <channel site="plex.tv" site_id="60e737a4ebef9d002c4d0a0c" lang="en" xmltv_id="AfroLandTV.us@SD">AfroLandTV</channel>
   <channel site="plex.tv" site_id="62efbb8652f7d73061eec498" lang="en" xmltv_id="StingrayAlternative.ca@SD">Alternative</channel>
@@ -34,7 +34,7 @@
   <channel site="plex.tv" site_id="605a309dc5acdc002c7a20aa" lang="en" xmltv_id="FTFSports.us@SD">FTF Sports</channel>
   <channel site="plex.tv" site_id="5eea605474085f0040ddc76d" lang="en" xmltv_id="GlewedTV.us@SD">Glewed TV</channel>
   <channel site="plex.tv" site_id="5fd115bdb7ef8d002dcf1820" lang="en" xmltv_id="HardKnocks.ca@SD">Hard Knocks</channel>
-  <channel site="plex.tv" site_id="62ee7ae2271f393d2d9f709e" lang="en" xmltv_id="">Hip-Hop/R&amp;B</channel>
+  <channel site="plex.tv" site_id="62ee7ae2271f393d2d9f709e" lang="en" xmltv_id="StingrayHipHopRB.ca@SD">Hip-Hop/R&amp;B</channel>
   <channel site="plex.tv" site_id="61aaa014784a2161d3caf7fd" lang="en" xmltv_id="StingrayHitList.ca@SD">Hit List</channel>
   <channel site="plex.tv" site_id="6582a1316b91be4547aa153c" lang="en" xmltv_id="">Hot Ones</channel>
   <channel site="plex.tv" site_id="5fd115b7b7ef8d002dcf1814" lang="en" xmltv_id="HumorMill.us@SD">Humor Mill</channel>
@@ -57,16 +57,15 @@
   <channel site="plex.tv" site_id="68b9f5a3d60e5dd29263c7ac" lang="en" xmltv_id="">NEW KFOOD</channel>
   <channel site="plex.tv" site_id="5fb81660b7ad2d002dcb7335" lang="en" xmltv_id="Newsmax2.us@SD">Newsmax2</channel>
   <channel site="plex.tv" site_id="60aeb5cd87f9b1002ce12323" lang="en" xmltv_id="NHRATV.us@SD">NHRA TV</channel>
-  <channel site="plex.tv" site_id="5f0ff262d71dcb00449ec015" lang="en" xmltv_id="">Nosey</channel>
+  <channel site="plex.tv" site_id="5f0ff262d71dcb00449ec015" lang="en" xmltv_id="Nosey.us@US">Nosey</channel>
   <channel site="plex.tv" site_id="62f13eeded056a1db9ef3d54" lang="en" xmltv_id="StingrayNothinBut90s.ca@SD">Nothin&apos; But 90s</channel>
   <channel site="plex.tv" site_id="6578e7b5eef129f30fb38df7" lang="en" xmltv_id="">Operation Repo</channel>
-  <channel site="plex.tv" site_id="646c0dfbfb58444e4e1e262d" lang="en" xmltv_id="">Pac-12 Insider</channel>
+  <channel site="plex.tv" site_id="646c0dfbfb58444e4e1e262d" lang="en" xmltv_id="Pac12Insider.us@SD">Pac-12 Insider</channel>
   <channel site="plex.tv" site_id="5f0ff263d71dcb00449ec021" lang="en" xmltv_id="PeopleAreAwesome.us@SD">People are Awesome</channel>
   <channel site="plex.tv" site_id="643f0ecd76de2b4015ae6c01" lang="en" xmltv_id="PFLMMA.pl@SD">PFL MMA</channel>
   <channel site="plex.tv" site_id="60afc726623f2f002c5bb49f" lang="en" xmltv_id="">Poker Night TV</channel>
   <channel site="plex.tv" site_id="64ac687b4192b4e1bab96279" lang="en" xmltv_id="PokerGo.us@UK">PokerGO</channel>
   <channel site="plex.tv" site_id="62ee7992271f393d2d9f709c" lang="en" xmltv_id="StingrayPopAdult.ca@SD">Pop Adult</channel>
-  <channel site="plex.tv" site_id="5ef11487d33ab9004048a1d6" lang="en" xmltv_id="PopstarTV.us@SD">Popstar! TV</channel>
   <channel site="plex.tv" site_id="656fb850cb7e8e6a9bc3f36e" lang="en" xmltv_id="PopularScience.us@SD">Popular Science</channel>
   <channel site="plex.tv" site_id="69814bbff871095eafc65925" lang="en" xmltv_id="PowerNationTV.us@SD">Powernation</channel>
   <channel site="plex.tv" site_id="63628eb88e4b18ca22f897dc" lang="en" xmltv_id="PursuitUP.us@SD">PursuitUP</channel>
@@ -86,7 +85,7 @@
   <channel site="plex.tv" site_id="654eb862dde2222e8ba551f1" lang="en" xmltv_id="">Stingray Holidayscapes</channel>
   <channel site="plex.tv" site_id="61aa9e73784a2161d3caf7f9" lang="en" xmltv_id="StingrayHotCountry.ca@SD">Stingray Hot Country</channel>
   <channel site="plex.tv" site_id="61aaa17a784a2161d3caf801" lang="en" xmltv_id="StingraySoulStorm.ca@SD">Stingray Soul Storm</channel>
-  <channel site="plex.tv" site_id="644b13a3a1c0a5b2024c8403" lang="en" xmltv_id="">Strongman Champions</channel>
+  <channel site="plex.tv" site_id="644b13a3a1c0a5b2024c8403" lang="en" xmltv_id="StrongmanChampionsLeague.pl@SD">Strongman Champions</channel>
   <channel site="plex.tv" site_id="656fbbd6dbcce28c3a41741b" lang="en" xmltv_id="">Surf Cinema</channel>
   <channel site="plex.tv" site_id="62ab5aabbb869dd0df6a3487" lang="en" xmltv_id="TED.us@SD">TED</channel>
   <channel site="plex.tv" site_id="6761f91555e174e95ccc4e4c" lang="en" xmltv_id="">Tennis+</channel>
@@ -101,7 +100,7 @@
   <channel site="plex.tv" site_id="5eea71d65252710041e0ccbc" lang="en" xmltv_id="TheReuters60.pl@FAST">The Reuters 60</channel>
   <channel site="plex.tv" site_id="62f11395586633e88e3a3274" lang="en" xmltv_id="StingrayTheSpa.ca@SD">The Spa</channel>
   <channel site="plex.tv" site_id="68e0371d8bbd79d66c631ab2" lang="en" xmltv_id="">The Wiggles</channel>
-  <channel site="plex.tv" site_id="62ee6eae271f393d2d9f7096" lang="en" xmltv_id="">Today&apos;s K-Pop</channel>
+  <channel site="plex.tv" site_id="62ee6eae271f393d2d9f7096" lang="en" xmltv_id="StingrayTodaysKPop.ca@SD">Today&apos;s K-Pop</channel>
   <channel site="plex.tv" site_id="61d738b5a7b7c7f703418514" lang="en" xmltv_id="TrailersFromHell.us@SD">Trailers From Hell</channel>
   <channel site="plex.tv" site_id="614398a08f30fa61e0da7c97" lang="en" xmltv_id="TrueHistory.us@SD">True History</channel>
   <channel site="plex.tv" site_id="60df3e18541143002f3b8607" lang="en" xmltv_id="USATODAY.us@SD">USA TODAY</channel>
@@ -111,7 +110,7 @@
   <channel site="plex.tv" site_id="60d4edddb2fdec002c141135" lang="en" xmltv_id="WildEarth.za@SD">WildEarth</channel>
   <channel site="plex.tv" site_id="608a2c722957c9002c6a617b" lang="en" xmltv_id="Wired2FishTV.us@SD">Wired2Fish</channel>
   <channel site="plex.tv" site_id="630fa9e577ec3866def38fa2" lang="en" xmltv_id="WomensSportsNetwork.us@SD">Women&apos;s Sports Network</channel>
-  <channel site="plex.tv" site_id="68b9f334fc12601028c5651e" lang="en" xmltv_id="">World Billiards TV</channel>
+  <channel site="plex.tv" site_id="68b9f334fc12601028c5651e" lang="en" xmltv_id="WorldBilliards.pl@SD">World Billiards TV</channel>
   <channel site="plex.tv" site_id="652875586425fdb1f32d2169" lang="en" xmltv_id="">World Surf League 24/7</channel>
   <channel site="plex.tv" site_id="62ee72cc271f393d2d9f7098" lang="en" xmltv_id="StingrayY2K.ca@SD">Y2K</channel>
   <channel site="plex.tv" site_id="5f170f01b898490041b49dd1" lang="en" xmltv_id="YahooFinance.us@SD">Yahoo Finance</channel>
@@ -122,7 +121,7 @@
   <channel site="plex.tv" site_id="64a355697d24564fba37bab8" lang="es" xmltv_id="">Ideas En 5 Minutos</channel>
   <channel site="plex.tv" site_id="688d3402a6fe30698ab42007" lang="es" xmltv_id="ITVDeportes.mx@SD">ITV Deportes</channel>
   <channel site="plex.tv" site_id="67a1a8ef2358ef4dd5c3018e" lang="es" xmltv_id="">Lucha Plus</channel>
-  <channel site="plex.tv" site_id="6154a863e3e4d9577f96b31a" lang="es" xmltv_id="">Nosey Escándalos</channel>
+  <channel site="plex.tv" site_id="6154a863e3e4d9577f96b31a" lang="es" xmltv_id="NoseyEscandalos.us@SD">Nosey Escándalos</channel>
   <channel site="plex.tv" site_id="64d4e82ac5d4668c9cb7b5df" lang="es" xmltv_id="Novelisima.us@SD">Novelisima</channel>
   <channel site="plex.tv" site_id="67db3546d66f778a752f7eaa" lang="es" xmltv_id="">PeliMex</channel>
   <channel site="plex.tv" site_id="639ba57d3f4612cc150a5723" lang="es" xmltv_id="">Pitufo TV</channel>
