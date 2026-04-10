@@ -1,4 +1,8 @@
-const { DateTime } = require('luxon')
+const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
+dayjs.extend(utc)
+dayjs.extend(timezone)
 
 module.exports = {
   site: 'meo.pt',
@@ -31,8 +35,8 @@ module.exports = {
     if (!items.length) return programs
 
     for (const item of items) {
-      const start = DateTime.fromISO(item.StartDate, { zone: 'Europe/Lisbon' }).toUTC()
-      const stop = DateTime.fromISO(item.EndDate, { zone: 'Europe/Lisbon' }).toUTC()
+      const start = dayjs.tz(item.StartDate, 'Europe/Lisbon').utc()
+      const stop = dayjs.tz(item.EndDate, 'Europe/Lisbon').utc()
 
       const prog = {
         title: item.Title || 'Sem título',

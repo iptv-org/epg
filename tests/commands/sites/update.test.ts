@@ -24,5 +24,9 @@ function content(filepath: string) {
     encoding: 'utf8'
   })
 
-  return JSON.stringify(data)
+  return JSON.stringify(normalizeLineEndings(data))
+}
+
+function normalizeLineEndings(data: string) {
+  return data.replace(/\r\n/g, '\n').replace(/\r/g, '\n')
 }

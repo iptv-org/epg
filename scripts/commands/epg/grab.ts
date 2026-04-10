@@ -5,7 +5,7 @@ import { CurlBody } from 'curl-generator/dist/bodies/body'
 import { Channel, Guide, Program } from '../../models'
 import { SocksProxyAgent } from 'socks-proxy-agent'
 import defaultConfig from '../../default.config'
-import { PromisyClass, TaskQueue } from 'cwait'
+import pLimit from 'p-limit'
 import { Storage } from '@freearhey/storage-js'
 import { CurlGenerator } from 'curl-generator'
 import { QueueItem } from '../../types/queue'
@@ -213,8 +213,7 @@ async function main() {
   }
 
   const maxConnections = globalConfig.maxConnections || defaultConfig.maxConnections
-
-  const taskQueue = new TaskQueue(Promise as PromisyClass, maxConnections)
+  const limit = pLimit(maxConnections)
 
   const channels = new Collection<Channel>()
   const programs = new Collection<Program>()
@@ -222,8 +221,12 @@ async function main() {
   let i = 1
   const total = queue.count()
 
-  const requests = queue.map(
-    taskQueue.wrap(async (queueItem: QueueItem) => {
+  logger.info('run:')
+  const timer = new Timer()
+  timer.start()
+
+  const requests = queue.all().map((queueItem: QueueItem) =>
+    limit(async () => {
       const { channel, config, date } = queueItem
 
       if (!channel.logo) {
@@ -262,12 +265,7 @@ async function main() {
     })
   )
 
-  logger.info('run:')
-
-  const timer = new Timer()
-  timer.start()
-
-  await Promise.all(requests.all())
+  await Promise.all(requests)
 
   const output = globalConfig.output || defaultConfig.output
 
