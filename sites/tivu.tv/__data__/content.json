@@ -1,0 +1,2464 @@
+{
+  "events": [
+    {
+      "id": 50367415,
+      "date_start": "25-02-2026 06:00",
+      "date_end": "25-02-2026 06:28",
+      "duration": 28,
+      "program": {
+        "id": 50367751,
+        "title": "1mattina News",
+        "description": "Maria Soave e Tiberio Timperi ci raccontano le notizie del giorno e l'attualità in tempo reale: dai fatti italiani a ciò che accade nel resto del mondo, dalla cronaca allo sport, dalla cultura allo spettacolo, grazie a ospiti in studio, collegamenti con gli inviati del Tg1 e i corrispondenti Rai e con interviste a grandi personaggi e protagonisti della cronaca.",
+        "url_poster": "https://www.raiplay.it/resizegd/640x-/dl/img/2025/09/05/1757079141048_2048x1152.jpg",
+        "url_web": "/dirette/rai1",
+        "url_live": "http://www.rai.tv/dl/RaiTV/dirette/PublishingBlock-64203784-70f7-4b53-9d21-b14693850195.html",
+        "categories": [
+          {
+            "id": 12,
+            "name": "Varie",
+            "slug": "varie"
+          }
+        ],
+        "genres": []
+      },
+      "channel": {
+        "id": 42,
+        "name": "Rai 1 HD",
+        "description": "Canale 1 tivùsat\r\nCanale 1 DTT",
+        "editor": "RAI",
+        "icon": "uploads/channel/dd39d13edc5e24dc57f355ab6030ec85ba4ad945.png",
+        "icon2x": "uploads/channel/d64e56641cfdf2ec1d343cf331286073a409c8cb.png",
+        "icon3x": "uploads/channel/6bd671462cda55ac3b011e5acc561e391ccc3761.png",
+        "iconMono": "uploads/channel/ed002807c483978a337342bf06ca06432dd3ae10.png",
+        "locatorsSat": "dvb://13e.1450.d49,dvb://13e.3070.d49",
+        "locatorsDtt": "dvb://217c.d5.641,dvb://217c.71.44d,dvb://217c.8f.4e3",
+        "is_dtt": true,
+        "is_sat": true,
+        "channel_dtt": 1,
+        "channel_sat": 1,
+        "channel_catchup": 1000,
+        "is_catchup": false,
+        "is_hd": true,
+        "is_primary_sat": false,
+        "is_primary_dtt": false,
+        "channel_father": {
+          "id": 1,
+          "name": "Rai 1",
+          "editor": "RAI",
+          "icon": "uploads/channel/f39e198eb18f479198c8f2687614c9c83fae6b50.png",
+          "icon2x": "uploads/channel/e5ed9c3a28e5f5ae50fa0a368ee1e1c550ba50ce.png",
+          "iconMono": "uploads/channel/6975d36901670f2fed967ca5b7523a506ab8caad.png",
+          "locatorsSat": "",
+          "locatorsDtt": "dvb://13e.1.d49,dvb://13e.4000.d49,dvb://13e.4800.d49,dvb://13e.5000.d49,dvb://13e.5800.d49,dvb://13e.6000.d49,dvb://13e.6800.d49,dvb://13e.7000.d49,dvb://13e.7800.d49,dvb://13e.8800.d49,dvb://13e.9000.d49,dvb://13e.9800.d49,dvb://13e.a000.d49",
+          "is_dtt": false,
+          "is_sat": true,
+          "channel_dtt": 0,
+          "channel_sat": 101,
+          "channel_catchup": 1,
+          "is_catchup": false,
+          "is_hd": false,
+          "is_primary_sat": false,
+          "is_primary_dtt": false
+        }
+      },
+      "images": [
+        {
+          "url": "https://www.raiplay.it/resizegd/640x-/dl/img/2025/09/05/1757079141048_2048x1152.jpg",
+          "size": "640x360",
+          "dimension": "53465",
+          "tag": "medium",
+          "priority": 0
+        }
+      ]
+    },
+    {
+      "id": 50367416,
+      "date_start": "25-02-2026 06:28",
+      "date_end": "25-02-2026 06:30",
+      "duration": 2,
+      "program": {
+        "id": 50367752,
+        "title": "CCISS - Viaggiare informati",
+        "description": "Previsioni sulla viabilità CCISS Viaggiare informati",
+        "url_poster": "https://www.raiplay.it/resizegd/640x-/dl/img/2025/11/21/1763723047284_RaiMobilita2048x1152.png",
+        "url_web": "/dirette/rai1",
+        "url_live": "http://www.rai.tv/dl/RaiTV/dirette/PublishingBlock-64203784-70f7-4b53-9d21-b14693850195.html",
+        "categories": [
+          {
+            "id": 12,
+            "name": "Varie",
+            "slug": "varie"
+          }
+        ],
+        "genres": []
+      },
+      "channel": {
+        "id": 42,
+        "name": "Rai 1 HD",
+        "description": "Canale 1 tivùsat\r\nCanale 1 DTT",
+        "editor": "RAI",
+        "icon": "uploads/channel/dd39d13edc5e24dc57f355ab6030ec85ba4ad945.png",
+        "icon2x": "uploads/channel/d64e56641cfdf2ec1d343cf331286073a409c8cb.png",
+        "icon3x": "uploads/channel/6bd671462cda55ac3b011e5acc561e391ccc3761.png",
+        "iconMono": "uploads/channel/ed002807c483978a337342bf06ca06432dd3ae10.png",
+        "locatorsSat": "dvb://13e.1450.d49,dvb://13e.3070.d49",
+        "locatorsDtt": "dvb://217c.d5.641,dvb://217c.71.44d,dvb://217c.8f.4e3",
+        "is_dtt": true,
+        "is_sat": true,
+        "channel_dtt": 1,
+        "channel_sat": 1,
+        "channel_catchup": 1000,
+        "is_catchup": false,
+        "is_hd": true,
+        "is_primary_sat": false,
+        "is_primary_dtt": false,
+        "channel_father": {
+          "id": 1,
+          "name": "Rai 1",
+          "editor": "RAI",
+          "icon": "uploads/channel/f39e198eb18f479198c8f2687614c9c83fae6b50.png",
+          "icon2x": "uploads/channel/e5ed9c3a28e5f5ae50fa0a368ee1e1c550ba50ce.png",
+          "iconMono": "uploads/channel/6975d36901670f2fed967ca5b7523a506ab8caad.png",
+          "locatorsSat": "",
+          "locatorsDtt": "dvb://13e.1.d49,dvb://13e.4000.d49,dvb://13e.4800.d49,dvb://13e.5000.d49,dvb://13e.5800.d49,dvb://13e.6000.d49,dvb://13e.6800.d49,dvb://13e.7000.d49,dvb://13e.7800.d49,dvb://13e.8800.d49,dvb://13e.9000.d49,dvb://13e.9800.d49,dvb://13e.a000.d49",
+          "is_dtt": false,
+          "is_sat": true,
+          "channel_dtt": 0,
+          "channel_sat": 101,
+          "channel_catchup": 1,
+          "is_catchup": false,
+          "is_hd": false,
+          "is_primary_sat": false,
+          "is_primary_dtt": false
+        }
+      },
+      "images": [
+        {
+          "url": "https://www.raiplay.it/resizegd/640x-/dl/img/2025/11/21/1763723047284_RaiMobilita2048x1152.png",
+          "size": "640x360",
+          "dimension": "10570",
+          "tag": "medium",
+          "priority": 0
+        }
+      ]
+    },
+    {
+      "id": 50367417,
+      "date_start": "25-02-2026 06:30",
+      "date_end": "25-02-2026 06:33",
+      "duration": 3,
+      "program": {
+        "id": 50367753,
+        "title": "Tg1",
+        "description": "",
+        "url_poster": "https://www.raiplay.it/resizegd/640x-/dl/img/2025/12/16/1765885004911_2048x1152.jpg",
+        "url_web": "/dirette/rai1",
+        "url_live": "http://www.rai.tv/dl/RaiTV/dirette/PublishingBlock-64203784-70f7-4b53-9d21-b14693850195.html",
+        "categories": [
+          {
+            "id": 12,
+            "name": "Varie",
+            "slug": "varie"
+          }
+        ],
+        "genres": []
+      },
+      "channel": {
+        "id": 42,
+        "name": "Rai 1 HD",
+        "description": "Canale 1 tivùsat\r\nCanale 1 DTT",
+        "editor": "RAI",
+        "icon": "uploads/channel/dd39d13edc5e24dc57f355ab6030ec85ba4ad945.png",
+        "icon2x": "uploads/channel/d64e56641cfdf2ec1d343cf331286073a409c8cb.png",
+        "icon3x": "uploads/channel/6bd671462cda55ac3b011e5acc561e391ccc3761.png",
+        "iconMono": "uploads/channel/ed002807c483978a337342bf06ca06432dd3ae10.png",
+        "locatorsSat": "dvb://13e.1450.d49,dvb://13e.3070.d49",
+        "locatorsDtt": "dvb://217c.d5.641,dvb://217c.71.44d,dvb://217c.8f.4e3",
+        "is_dtt": true,
+        "is_sat": true,
+        "channel_dtt": 1,
+        "channel_sat": 1,
+        "channel_catchup": 1000,
+        "is_catchup": false,
+        "is_hd": true,
+        "is_primary_sat": false,
+        "is_primary_dtt": false,
+        "channel_father": {
+          "id": 1,
+          "name": "Rai 1",
+          "editor": "RAI",
+          "icon": "uploads/channel/f39e198eb18f479198c8f2687614c9c83fae6b50.png",
+          "icon2x": "uploads/channel/e5ed9c3a28e5f5ae50fa0a368ee1e1c550ba50ce.png",
+          "iconMono": "uploads/channel/6975d36901670f2fed967ca5b7523a506ab8caad.png",
+          "locatorsSat": "",
+          "locatorsDtt": "dvb://13e.1.d49,dvb://13e.4000.d49,dvb://13e.4800.d49,dvb://13e.5000.d49,dvb://13e.5800.d49,dvb://13e.6000.d49,dvb://13e.6800.d49,dvb://13e.7000.d49,dvb://13e.7800.d49,dvb://13e.8800.d49,dvb://13e.9000.d49,dvb://13e.9800.d49,dvb://13e.a000.d49",
+          "is_dtt": false,
+          "is_sat": true,
+          "channel_dtt": 0,
+          "channel_sat": 101,
+          "channel_catchup": 1,
+          "is_catchup": false,
+          "is_hd": false,
+          "is_primary_sat": false,
+          "is_primary_dtt": false
+        }
+      },
+      "images": [
+        {
+          "url": "https://www.raiplay.it/resizegd/640x-/dl/img/2025/12/16/1765885004911_2048x1152.jpg",
+          "size": "640x360",
+          "dimension": "86114",
+          "tag": "medium",
+          "priority": 0
+        }
+      ]
+    },
+    {
+      "id": 50367418,
+      "date_start": "25-02-2026 06:33",
+      "date_end": "25-02-2026 06:58",
+      "duration": 25,
+      "program": {
+        "id": 50367754,
+        "title": "1mattina News",
+        "description": "Maria Soave e Tiberio Timperi ci raccontano le notizie del giorno e l'attualità in tempo reale: dai fatti italiani a ciò che accade nel resto del mondo, dalla cronaca allo sport, dalla cultura allo spettacolo, grazie a ospiti in studio, collegamenti con gli inviati del Tg1 e i corrispondenti Rai e con interviste a grandi personaggi e protagonisti della cronaca.",
+        "url_poster": "https://www.raiplay.it/resizegd/640x-/dl/img/2025/09/05/1757079141048_2048x1152.jpg",
+        "url_web": "/dirette/rai1",
+        "url_live": "http://www.rai.tv/dl/RaiTV/dirette/PublishingBlock-64203784-70f7-4b53-9d21-b14693850195.html",
+        "categories": [
+          {
+            "id": 12,
+            "name": "Varie",
+            "slug": "varie"
+          }
+        ],
+        "genres": []
+      },
+      "channel": {
+        "id": 42,
+        "name": "Rai 1 HD",
+        "description": "Canale 1 tivùsat\r\nCanale 1 DTT",
+        "editor": "RAI",
+        "icon": "uploads/channel/dd39d13edc5e24dc57f355ab6030ec85ba4ad945.png",
+        "icon2x": "uploads/channel/d64e56641cfdf2ec1d343cf331286073a409c8cb.png",
+        "icon3x": "uploads/channel/6bd671462cda55ac3b011e5acc561e391ccc3761.png",
+        "iconMono": "uploads/channel/ed002807c483978a337342bf06ca06432dd3ae10.png",
+        "locatorsSat": "dvb://13e.1450.d49,dvb://13e.3070.d49",
+        "locatorsDtt": "dvb://217c.d5.641,dvb://217c.71.44d,dvb://217c.8f.4e3",
+        "is_dtt": true,
+        "is_sat": true,
+        "channel_dtt": 1,
+        "channel_sat": 1,
+        "channel_catchup": 1000,
+        "is_catchup": false,
+        "is_hd": true,
+        "is_primary_sat": false,
+        "is_primary_dtt": false,
+        "channel_father": {
+          "id": 1,
+          "name": "Rai 1",
+          "editor": "RAI",
+          "icon": "uploads/channel/f39e198eb18f479198c8f2687614c9c83fae6b50.png",
+          "icon2x": "uploads/channel/e5ed9c3a28e5f5ae50fa0a368ee1e1c550ba50ce.png",
+          "iconMono": "uploads/channel/6975d36901670f2fed967ca5b7523a506ab8caad.png",
+          "locatorsSat": "",
+          "locatorsDtt": "dvb://13e.1.d49,dvb://13e.4000.d49,dvb://13e.4800.d49,dvb://13e.5000.d49,dvb://13e.5800.d49,dvb://13e.6000.d49,dvb://13e.6800.d49,dvb://13e.7000.d49,dvb://13e.7800.d49,dvb://13e.8800.d49,dvb://13e.9000.d49,dvb://13e.9800.d49,dvb://13e.a000.d49",
+          "is_dtt": false,
+          "is_sat": true,
+          "channel_dtt": 0,
+          "channel_sat": 101,
+          "channel_catchup": 1,
+          "is_catchup": false,
+          "is_hd": false,
+          "is_primary_sat": false,
+          "is_primary_dtt": false
+        }
+      },
+      "images": [
+        {
+          "url": "https://www.raiplay.it/resizegd/640x-/dl/img/2025/09/05/1757079141048_2048x1152.jpg",
+          "size": "640x360",
+          "dimension": "53465",
+          "tag": "medium",
+          "priority": 0
+        }
+      ]
+    },
+    {
+      "id": 50367419,
+      "date_start": "25-02-2026 06:58",
+      "date_end": "25-02-2026 07:00",
+      "duration": 2,
+      "program": {
+        "id": 50367755,
+        "title": "Che tempo fa",
+        "description": "",
+        "url_poster": "https://www.raiplay.it/resizegd/640x-/dl/img/2025/11/20/1763645586214_RaiMeteo2048x1152.png",
+        "url_web": "/dirette/rai1",
+        "url_live": "http://www.rai.tv/dl/RaiTV/dirette/PublishingBlock-64203784-70f7-4b53-9d21-b14693850195.html",
+        "categories": [
+          {
+            "id": 12,
+            "name": "Varie",
+            "slug": "varie"
+          }
+        ],
+        "genres": []
+      },
+      "channel": {
+        "id": 42,
+        "name": "Rai 1 HD",
+        "description": "Canale 1 tivùsat\r\nCanale 1 DTT",
+        "editor": "RAI",
+        "icon": "uploads/channel/dd39d13edc5e24dc57f355ab6030ec85ba4ad945.png",
+        "icon2x": "uploads/channel/d64e56641cfdf2ec1d343cf331286073a409c8cb.png",
+        "icon3x": "uploads/channel/6bd671462cda55ac3b011e5acc561e391ccc3761.png",
+        "iconMono": "uploads/channel/ed002807c483978a337342bf06ca06432dd3ae10.png",
+        "locatorsSat": "dvb://13e.1450.d49,dvb://13e.3070.d49",
+        "locatorsDtt": "dvb://217c.d5.641,dvb://217c.71.44d,dvb://217c.8f.4e3",
+        "is_dtt": true,
+        "is_sat": true,
+        "channel_dtt": 1,
+        "channel_sat": 1,
+        "channel_catchup": 1000,
+        "is_catchup": false,
+        "is_hd": true,
+        "is_primary_sat": false,
+        "is_primary_dtt": false,
+        "channel_father": {
+          "id": 1,
+          "name": "Rai 1",
+          "editor": "RAI",
+          "icon": "uploads/channel/f39e198eb18f479198c8f2687614c9c83fae6b50.png",
+          "icon2x": "uploads/channel/e5ed9c3a28e5f5ae50fa0a368ee1e1c550ba50ce.png",
+          "iconMono": "uploads/channel/6975d36901670f2fed967ca5b7523a506ab8caad.png",
+          "locatorsSat": "",
+          "locatorsDtt": "dvb://13e.1.d49,dvb://13e.4000.d49,dvb://13e.4800.d49,dvb://13e.5000.d49,dvb://13e.5800.d49,dvb://13e.6000.d49,dvb://13e.6800.d49,dvb://13e.7000.d49,dvb://13e.7800.d49,dvb://13e.8800.d49,dvb://13e.9000.d49,dvb://13e.9800.d49,dvb://13e.a000.d49",
+          "is_dtt": false,
+          "is_sat": true,
+          "channel_dtt": 0,
+          "channel_sat": 101,
+          "channel_catchup": 1,
+          "is_catchup": false,
+          "is_hd": false,
+          "is_primary_sat": false,
+          "is_primary_dtt": false
+        }
+      },
+      "images": [
+        {
+          "url": "https://www.raiplay.it/resizegd/640x-/dl/img/2025/11/20/1763645586214_RaiMeteo2048x1152.png",
+          "size": "640x360",
+          "dimension": "12235",
+          "tag": "medium",
+          "priority": 0
+        }
+      ]
+    },
+    {
+      "id": 50367420,
+      "date_start": "25-02-2026 07:00",
+      "date_end": "25-02-2026 07:10",
+      "duration": 10,
+      "program": {
+        "id": 50367756,
+        "title": "Tg1",
+        "description": "",
+        "url_poster": "https://www.raiplay.it/resizegd/640x-/dl/img/2025/12/16/1765885004911_2048x1152.jpg",
+        "url_web": "/dirette/rai1",
+        "url_live": "http://www.rai.tv/dl/RaiTV/dirette/PublishingBlock-64203784-70f7-4b53-9d21-b14693850195.html",
+        "categories": [
+          {
+            "id": 12,
+            "name": "Varie",
+            "slug": "varie"
+          }
+        ],
+        "genres": []
+      },
+      "channel": {
+        "id": 42,
+        "name": "Rai 1 HD",
+        "description": "Canale 1 tivùsat\r\nCanale 1 DTT",
+        "editor": "RAI",
+        "icon": "uploads/channel/dd39d13edc5e24dc57f355ab6030ec85ba4ad945.png",
+        "icon2x": "uploads/channel/d64e56641cfdf2ec1d343cf331286073a409c8cb.png",
+        "icon3x": "uploads/channel/6bd671462cda55ac3b011e5acc561e391ccc3761.png",
+        "iconMono": "uploads/channel/ed002807c483978a337342bf06ca06432dd3ae10.png",
+        "locatorsSat": "dvb://13e.1450.d49,dvb://13e.3070.d49",
+        "locatorsDtt": "dvb://217c.d5.641,dvb://217c.71.44d,dvb://217c.8f.4e3",
+        "is_dtt": true,
+        "is_sat": true,
+        "channel_dtt": 1,
+        "channel_sat": 1,
+        "channel_catchup": 1000,
+        "is_catchup": false,
+        "is_hd": true,
+        "is_primary_sat": false,
+        "is_primary_dtt": false,
+        "channel_father": {
+          "id": 1,
+          "name": "Rai 1",
+          "editor": "RAI",
+          "icon": "uploads/channel/f39e198eb18f479198c8f2687614c9c83fae6b50.png",
+          "icon2x": "uploads/channel/e5ed9c3a28e5f5ae50fa0a368ee1e1c550ba50ce.png",
+          "iconMono": "uploads/channel/6975d36901670f2fed967ca5b7523a506ab8caad.png",
+          "locatorsSat": "",
+          "locatorsDtt": "dvb://13e.1.d49,dvb://13e.4000.d49,dvb://13e.4800.d49,dvb://13e.5000.d49,dvb://13e.5800.d49,dvb://13e.6000.d49,dvb://13e.6800.d49,dvb://13e.7000.d49,dvb://13e.7800.d49,dvb://13e.8800.d49,dvb://13e.9000.d49,dvb://13e.9800.d49,dvb://13e.a000.d49",
+          "is_dtt": false,
+          "is_sat": true,
+          "channel_dtt": 0,
+          "channel_sat": 101,
+          "channel_catchup": 1,
+          "is_catchup": false,
+          "is_hd": false,
+          "is_primary_sat": false,
+          "is_primary_dtt": false
+        }
+      },
+      "images": [
+        {
+          "url": "https://www.raiplay.it/resizegd/640x-/dl/img/2025/12/16/1765885004911_2048x1152.jpg",
+          "size": "640x360",
+          "dimension": "86114",
+          "tag": "medium",
+          "priority": 0
+        }
+      ]
+    },
+    {
+      "id": 50367421,
+      "date_start": "25-02-2026 07:10",
+      "date_end": "25-02-2026 08:00",
+      "duration": 50,
+      "program": {
+        "id": 50367757,
+        "title": "1mattina News",
+        "description": "Maria Soave e Tiberio Timperi ci raccontano le notizie del giorno e l'attualità in tempo reale: dai fatti italiani a ciò che accade nel resto del mondo, dalla cronaca allo sport, dalla cultura allo spettacolo, grazie a ospiti in studio, collegamenti con gli inviati del Tg1 e i corrispondenti Rai e con interviste a grandi personaggi e protagonisti della cronaca.",
+        "url_poster": "https://www.raiplay.it/resizegd/640x-/dl/img/2025/09/05/1757079141048_2048x1152.jpg",
+        "url_web": "/dirette/rai1",
+        "url_live": "http://www.rai.tv/dl/RaiTV/dirette/PublishingBlock-64203784-70f7-4b53-9d21-b14693850195.html",
+        "categories": [
+          {
+            "id": 12,
+            "name": "Varie",
+            "slug": "varie"
+          }
+        ],
+        "genres": []
+      },
+      "channel": {
+        "id": 42,
+        "name": "Rai 1 HD",
+        "description": "Canale 1 tivùsat\r\nCanale 1 DTT",
+        "editor": "RAI",
+        "icon": "uploads/channel/dd39d13edc5e24dc57f355ab6030ec85ba4ad945.png",
+        "icon2x": "uploads/channel/d64e56641cfdf2ec1d343cf331286073a409c8cb.png",
+        "icon3x": "uploads/channel/6bd671462cda55ac3b011e5acc561e391ccc3761.png",
+        "iconMono": "uploads/channel/ed002807c483978a337342bf06ca06432dd3ae10.png",
+        "locatorsSat": "dvb://13e.1450.d49,dvb://13e.3070.d49",
+        "locatorsDtt": "dvb://217c.d5.641,dvb://217c.71.44d,dvb://217c.8f.4e3",
+        "is_dtt": true,
+        "is_sat": true,
+        "channel_dtt": 1,
+        "channel_sat": 1,
+        "channel_catchup": 1000,
+        "is_catchup": false,
+        "is_hd": true,
+        "is_primary_sat": false,
+        "is_primary_dtt": false,
+        "channel_father": {
+          "id": 1,
+          "name": "Rai 1",
+          "editor": "RAI",
+          "icon": "uploads/channel/f39e198eb18f479198c8f2687614c9c83fae6b50.png",
+          "icon2x": "uploads/channel/e5ed9c3a28e5f5ae50fa0a368ee1e1c550ba50ce.png",
+          "iconMono": "uploads/channel/6975d36901670f2fed967ca5b7523a506ab8caad.png",
+          "locatorsSat": "",
+          "locatorsDtt": "dvb://13e.1.d49,dvb://13e.4000.d49,dvb://13e.4800.d49,dvb://13e.5000.d49,dvb://13e.5800.d49,dvb://13e.6000.d49,dvb://13e.6800.d49,dvb://13e.7000.d49,dvb://13e.7800.d49,dvb://13e.8800.d49,dvb://13e.9000.d49,dvb://13e.9800.d49,dvb://13e.a000.d49",
+          "is_dtt": false,
+          "is_sat": true,
+          "channel_dtt": 0,
+          "channel_sat": 101,
+          "channel_catchup": 1,
+          "is_catchup": false,
+          "is_hd": false,
+          "is_primary_sat": false,
+          "is_primary_dtt": false
+        }
+      },
+      "images": [
+        {
+          "url": "https://www.raiplay.it/resizegd/640x-/dl/img/2025/09/05/1757079141048_2048x1152.jpg",
+          "size": "640x360",
+          "dimension": "53465",
+          "tag": "medium",
+          "priority": 0
+        }
+      ]
+    },
+    {
+      "id": 50367422,
+      "date_start": "25-02-2026 08:00",
+      "date_end": "25-02-2026 08:30",
+      "duration": 30,
+      "program": {
+        "id": 50367758,
+        "title": "Tg1",
+        "description": "",
+        "url_poster": "https://www.raiplay.it/resizegd/640x-/dl/img/2025/12/16/1765885004911_2048x1152.jpg",
+        "url_web": "/dirette/rai1",
+        "url_live": "http://www.rai.tv/dl/RaiTV/dirette/PublishingBlock-64203784-70f7-4b53-9d21-b14693850195.html",
+        "categories": [
+          {
+            "id": 12,
+            "name": "Varie",
+            "slug": "varie"
+          }
+        ],
+        "genres": []
+      },
+      "channel": {
+        "id": 42,
+        "name": "Rai 1 HD",
+        "description": "Canale 1 tivùsat\r\nCanale 1 DTT",
+        "editor": "RAI",
+        "icon": "uploads/channel/dd39d13edc5e24dc57f355ab6030ec85ba4ad945.png",
+        "icon2x": "uploads/channel/d64e56641cfdf2ec1d343cf331286073a409c8cb.png",
+        "icon3x": "uploads/channel/6bd671462cda55ac3b011e5acc561e391ccc3761.png",
+        "iconMono": "uploads/channel/ed002807c483978a337342bf06ca06432dd3ae10.png",
+        "locatorsSat": "dvb://13e.1450.d49,dvb://13e.3070.d49",
+        "locatorsDtt": "dvb://217c.d5.641,dvb://217c.71.44d,dvb://217c.8f.4e3",
+        "is_dtt": true,
+        "is_sat": true,
+        "channel_dtt": 1,
+        "channel_sat": 1,
+        "channel_catchup": 1000,
+        "is_catchup": false,
+        "is_hd": true,
+        "is_primary_sat": false,
+        "is_primary_dtt": false,
+        "channel_father": {
+          "id": 1,
+          "name": "Rai 1",
+          "editor": "RAI",
+          "icon": "uploads/channel/f39e198eb18f479198c8f2687614c9c83fae6b50.png",
+          "icon2x": "uploads/channel/e5ed9c3a28e5f5ae50fa0a368ee1e1c550ba50ce.png",
+          "iconMono": "uploads/channel/6975d36901670f2fed967ca5b7523a506ab8caad.png",
+          "locatorsSat": "",
+          "locatorsDtt": "dvb://13e.1.d49,dvb://13e.4000.d49,dvb://13e.4800.d49,dvb://13e.5000.d49,dvb://13e.5800.d49,dvb://13e.6000.d49,dvb://13e.6800.d49,dvb://13e.7000.d49,dvb://13e.7800.d49,dvb://13e.8800.d49,dvb://13e.9000.d49,dvb://13e.9800.d49,dvb://13e.a000.d49",
+          "is_dtt": false,
+          "is_sat": true,
+          "channel_dtt": 0,
+          "channel_sat": 101,
+          "channel_catchup": 1,
+          "is_catchup": false,
+          "is_hd": false,
+          "is_primary_sat": false,
+          "is_primary_dtt": false
+        }
+      },
+      "images": [
+        {
+          "url": "https://www.raiplay.it/resizegd/640x-/dl/img/2025/12/16/1765885004911_2048x1152.jpg",
+          "size": "640x360",
+          "dimension": "86114",
+          "tag": "medium",
+          "priority": 0
+        }
+      ]
+    },
+    {
+      "id": 50367423,
+      "date_start": "25-02-2026 08:30",
+      "date_end": "25-02-2026 08:35",
+      "duration": 5,
+      "program": {
+        "id": 50367759,
+        "title": "Che tempo fa",
+        "description": "",
+        "url_poster": "https://www.raiplay.it/resizegd/640x-/dl/img/2025/11/20/1763645586214_RaiMeteo2048x1152.png",
+        "url_web": "/dirette/rai1",
+        "url_live": "http://www.rai.tv/dl/RaiTV/dirette/PublishingBlock-64203784-70f7-4b53-9d21-b14693850195.html",
+        "categories": [
+          {
+            "id": 12,
+            "name": "Varie",
+            "slug": "varie"
+          }
+        ],
+        "genres": []
+      },
+      "channel": {
+        "id": 42,
+        "name": "Rai 1 HD",
+        "description": "Canale 1 tivùsat\r\nCanale 1 DTT",
+        "editor": "RAI",
+        "icon": "uploads/channel/dd39d13edc5e24dc57f355ab6030ec85ba4ad945.png",
+        "icon2x": "uploads/channel/d64e56641cfdf2ec1d343cf331286073a409c8cb.png",
+        "icon3x": "uploads/channel/6bd671462cda55ac3b011e5acc561e391ccc3761.png",
+        "iconMono": "uploads/channel/ed002807c483978a337342bf06ca06432dd3ae10.png",
+        "locatorsSat": "dvb://13e.1450.d49,dvb://13e.3070.d49",
+        "locatorsDtt": "dvb://217c.d5.641,dvb://217c.71.44d,dvb://217c.8f.4e3",
+        "is_dtt": true,
+        "is_sat": true,
+        "channel_dtt": 1,
+        "channel_sat": 1,
+        "channel_catchup": 1000,
+        "is_catchup": false,
+        "is_hd": true,
+        "is_primary_sat": false,
+        "is_primary_dtt": false,
+        "channel_father": {
+          "id": 1,
+          "name": "Rai 1",
+          "editor": "RAI",
+          "icon": "uploads/channel/f39e198eb18f479198c8f2687614c9c83fae6b50.png",
+          "icon2x": "uploads/channel/e5ed9c3a28e5f5ae50fa0a368ee1e1c550ba50ce.png",
+          "iconMono": "uploads/channel/6975d36901670f2fed967ca5b7523a506ab8caad.png",
+          "locatorsSat": "",
+          "locatorsDtt": "dvb://13e.1.d49,dvb://13e.4000.d49,dvb://13e.4800.d49,dvb://13e.5000.d49,dvb://13e.5800.d49,dvb://13e.6000.d49,dvb://13e.6800.d49,dvb://13e.7000.d49,dvb://13e.7800.d49,dvb://13e.8800.d49,dvb://13e.9000.d49,dvb://13e.9800.d49,dvb://13e.a000.d49",
+          "is_dtt": false,
+          "is_sat": true,
+          "channel_dtt": 0,
+          "channel_sat": 101,
+          "channel_catchup": 1,
+          "is_catchup": false,
+          "is_hd": false,
+          "is_primary_sat": false,
+          "is_primary_dtt": false
+        }
+      },
+      "images": [
+        {
+          "url": "https://www.raiplay.it/resizegd/640x-/dl/img/2025/11/20/1763645586214_RaiMeteo2048x1152.png",
+          "size": "640x360",
+          "dimension": "12235",
+          "tag": "medium",
+          "priority": 0
+        }
+      ]
+    },
+    {
+      "id": 50367424,
+      "date_start": "25-02-2026 08:35",
+      "date_end": "25-02-2026 08:55",
+      "duration": 20,
+      "program": {
+        "id": 50367760,
+        "title": "Unomattina",
+        "description": "Daniela Ferolla e Massimiliano Ossini guidano il racconto della realtà con un taglio di maggiore approfondimento, dai temi più caldi come il lavoro, l'occupazione, l'economia e i consumi, fino alla salute, agli stili di vita, alla provincia italiana, all'ambiente e alla sostenibilità, grazie agli ospiti in studio, ai filmati e ai collegamenti in diretta.",
+        "url_poster": "https://www.raiplay.it/resizegd/640x-/dl/img/2023/09/08/1694187267544_2048x1152.jpg",
+        "url_web": "/dirette/rai1",
+        "url_live": "http://www.rai.tv/dl/RaiTV/dirette/PublishingBlock-64203784-70f7-4b53-9d21-b14693850195.html",
+        "categories": [
+          {
+            "id": 12,
+            "name": "Varie",
+            "slug": "varie"
+          }
+        ],
+        "genres": []
+      },
+      "channel": {
+        "id": 42,
+        "name": "Rai 1 HD",
+        "description": "Canale 1 tivùsat\r\nCanale 1 DTT",
+        "editor": "RAI",
+        "icon": "uploads/channel/dd39d13edc5e24dc57f355ab6030ec85ba4ad945.png",
+        "icon2x": "uploads/channel/d64e56641cfdf2ec1d343cf331286073a409c8cb.png",
+        "icon3x": "uploads/channel/6bd671462cda55ac3b011e5acc561e391ccc3761.png",
+        "iconMono": "uploads/channel/ed002807c483978a337342bf06ca06432dd3ae10.png",
+        "locatorsSat": "dvb://13e.1450.d49,dvb://13e.3070.d49",
+        "locatorsDtt": "dvb://217c.d5.641,dvb://217c.71.44d,dvb://217c.8f.4e3",
+        "is_dtt": true,
+        "is_sat": true,
+        "channel_dtt": 1,
+        "channel_sat": 1,
+        "channel_catchup": 1000,
+        "is_catchup": false,
+        "is_hd": true,
+        "is_primary_sat": false,
+        "is_primary_dtt": false,
+        "channel_father": {
+          "id": 1,
+          "name": "Rai 1",
+          "editor": "RAI",
+          "icon": "uploads/channel/f39e198eb18f479198c8f2687614c9c83fae6b50.png",
+          "icon2x": "uploads/channel/e5ed9c3a28e5f5ae50fa0a368ee1e1c550ba50ce.png",
+          "iconMono": "uploads/channel/6975d36901670f2fed967ca5b7523a506ab8caad.png",
+          "locatorsSat": "",
+          "locatorsDtt": "dvb://13e.1.d49,dvb://13e.4000.d49,dvb://13e.4800.d49,dvb://13e.5000.d49,dvb://13e.5800.d49,dvb://13e.6000.d49,dvb://13e.6800.d49,dvb://13e.7000.d49,dvb://13e.7800.d49,dvb://13e.8800.d49,dvb://13e.9000.d49,dvb://13e.9800.d49,dvb://13e.a000.d49",
+          "is_dtt": false,
+          "is_sat": true,
+          "channel_dtt": 0,
+          "channel_sat": 101,
+          "channel_catchup": 1,
+          "is_catchup": false,
+          "is_hd": false,
+          "is_primary_sat": false,
+          "is_primary_dtt": false
+        }
+      },
+      "images": [
+        {
+          "url": "https://www.raiplay.it/resizegd/640x-/dl/img/2023/09/08/1694187267544_2048x1152.jpg",
+          "size": "640x360",
+          "dimension": "37961",
+          "tag": "medium",
+          "priority": 0
+        }
+      ]
+    },
+    {
+      "id": 50367425,
+      "date_start": "25-02-2026 08:55",
+      "date_end": "25-02-2026 09:00",
+      "duration": 5,
+      "program": {
+        "id": 50367761,
+        "title": "Tg Parlamento",
+        "description": "",
+        "url_poster": "https://www.raiplay.it/resizegd/640x-/dl/img/2021/07/20/1626761017898_TG_Parlamento_2048x1152.jpg",
+        "url_web": "/dirette/rai1",
+        "url_live": "http://www.rai.tv/dl/RaiTV/dirette/PublishingBlock-64203784-70f7-4b53-9d21-b14693850195.html",
+        "categories": [
+          {
+            "id": 12,
+            "name": "Varie",
+            "slug": "varie"
+          }
+        ],
+        "genres": []
+      },
+      "channel": {
+        "id": 42,
+        "name": "Rai 1 HD",
+        "description": "Canale 1 tivùsat\r\nCanale 1 DTT",
+        "editor": "RAI",
+        "icon": "uploads/channel/dd39d13edc5e24dc57f355ab6030ec85ba4ad945.png",
+        "icon2x": "uploads/channel/d64e56641cfdf2ec1d343cf331286073a409c8cb.png",
+        "icon3x": "uploads/channel/6bd671462cda55ac3b011e5acc561e391ccc3761.png",
+        "iconMono": "uploads/channel/ed002807c483978a337342bf06ca06432dd3ae10.png",
+        "locatorsSat": "dvb://13e.1450.d49,dvb://13e.3070.d49",
+        "locatorsDtt": "dvb://217c.d5.641,dvb://217c.71.44d,dvb://217c.8f.4e3",
+        "is_dtt": true,
+        "is_sat": true,
+        "channel_dtt": 1,
+        "channel_sat": 1,
+        "channel_catchup": 1000,
+        "is_catchup": false,
+        "is_hd": true,
+        "is_primary_sat": false,
+        "is_primary_dtt": false,
+        "channel_father": {
+          "id": 1,
+          "name": "Rai 1",
+          "editor": "RAI",
+          "icon": "uploads/channel/f39e198eb18f479198c8f2687614c9c83fae6b50.png",
+          "icon2x": "uploads/channel/e5ed9c3a28e5f5ae50fa0a368ee1e1c550ba50ce.png",
+          "iconMono": "uploads/channel/6975d36901670f2fed967ca5b7523a506ab8caad.png",
+          "locatorsSat": "",
+          "locatorsDtt": "dvb://13e.1.d49,dvb://13e.4000.d49,dvb://13e.4800.d49,dvb://13e.5000.d49,dvb://13e.5800.d49,dvb://13e.6000.d49,dvb://13e.6800.d49,dvb://13e.7000.d49,dvb://13e.7800.d49,dvb://13e.8800.d49,dvb://13e.9000.d49,dvb://13e.9800.d49,dvb://13e.a000.d49",
+          "is_dtt": false,
+          "is_sat": true,
+          "channel_dtt": 0,
+          "channel_sat": 101,
+          "channel_catchup": 1,
+          "is_catchup": false,
+          "is_hd": false,
+          "is_primary_sat": false,
+          "is_primary_dtt": false
+        }
+      },
+      "images": [
+        {
+          "url": "https://www.raiplay.it/resizegd/640x-/dl/img/2021/07/20/1626761017898_TG_Parlamento_2048x1152.jpg",
+          "size": "640x360",
+          "dimension": "99251",
+          "tag": "medium",
+          "priority": 0
+        }
+      ]
+    },
+    {
+      "id": 50367426,
+      "date_start": "25-02-2026 09:00",
+      "date_end": "25-02-2026 09:03",
+      "duration": 3,
+      "program": {
+        "id": 50367762,
+        "title": "TG1 LIS",
+        "description": "",
+        "url_poster": "https://www.raiplay.it/resizegd/640x-/dl/img/2023/03/31/1680272500388_TG1_LIS_per_RaiPlay_ORIZZONTALE.jpg",
+        "url_web": "/dirette/rai1",
+        "url_live": "http://www.rai.tv/dl/RaiTV/dirette/PublishingBlock-64203784-70f7-4b53-9d21-b14693850195.html",
+        "categories": [
+          {
+            "id": 12,
+            "name": "Varie",
+            "slug": "varie"
+          }
+        ],
+        "genres": []
+      },
+      "channel": {
+        "id": 42,
+        "name": "Rai 1 HD",
+        "description": "Canale 1 tivùsat\r\nCanale 1 DTT",
+        "editor": "RAI",
+        "icon": "uploads/channel/dd39d13edc5e24dc57f355ab6030ec85ba4ad945.png",
+        "icon2x": "uploads/channel/d64e56641cfdf2ec1d343cf331286073a409c8cb.png",
+        "icon3x": "uploads/channel/6bd671462cda55ac3b011e5acc561e391ccc3761.png",
+        "iconMono": "uploads/channel/ed002807c483978a337342bf06ca06432dd3ae10.png",
+        "locatorsSat": "dvb://13e.1450.d49,dvb://13e.3070.d49",
+        "locatorsDtt": "dvb://217c.d5.641,dvb://217c.71.44d,dvb://217c.8f.4e3",
+        "is_dtt": true,
+        "is_sat": true,
+        "channel_dtt": 1,
+        "channel_sat": 1,
+        "channel_catchup": 1000,
+        "is_catchup": false,
+        "is_hd": true,
+        "is_primary_sat": false,
+        "is_primary_dtt": false,
+        "channel_father": {
+          "id": 1,
+          "name": "Rai 1",
+          "editor": "RAI",
+          "icon": "uploads/channel/f39e198eb18f479198c8f2687614c9c83fae6b50.png",
+          "icon2x": "uploads/channel/e5ed9c3a28e5f5ae50fa0a368ee1e1c550ba50ce.png",
+          "iconMono": "uploads/channel/6975d36901670f2fed967ca5b7523a506ab8caad.png",
+          "locatorsSat": "",
+          "locatorsDtt": "dvb://13e.1.d49,dvb://13e.4000.d49,dvb://13e.4800.d49,dvb://13e.5000.d49,dvb://13e.5800.d49,dvb://13e.6000.d49,dvb://13e.6800.d49,dvb://13e.7000.d49,dvb://13e.7800.d49,dvb://13e.8800.d49,dvb://13e.9000.d49,dvb://13e.9800.d49,dvb://13e.a000.d49",
+          "is_dtt": false,
+          "is_sat": true,
+          "channel_dtt": 0,
+          "channel_sat": 101,
+          "channel_catchup": 1,
+          "is_catchup": false,
+          "is_hd": false,
+          "is_primary_sat": false,
+          "is_primary_dtt": false
+        }
+      },
+      "images": [
+        {
+          "url": "https://www.raiplay.it/resizegd/640x-/dl/img/2023/03/31/1680272500388_TG1_LIS_per_RaiPlay_ORIZZONTALE.jpg",
+          "size": "640x360",
+          "dimension": "55826",
+          "tag": "medium",
+          "priority": 0
+        }
+      ]
+    },
+    {
+      "id": 50367427,
+      "date_start": "25-02-2026 09:03",
+      "date_end": "25-02-2026 09:40",
+      "duration": 37,
+      "program": {
+        "id": 50367763,
+        "title": "Unomattina",
+        "description": "Daniela Ferolla e Massimiliano Ossini guidano il racconto della realtà con un taglio di maggiore approfondimento, dai temi più caldi come il lavoro, l'occupazione, l'economia e i consumi, fino alla salute, agli stili di vita, alla provincia italiana, all'ambiente e alla sostenibilità, grazie agli ospiti in studio, ai filmati e ai collegamenti in diretta.",
+        "url_poster": "https://www.raiplay.it/resizegd/640x-/dl/img/2023/09/08/1694187267544_2048x1152.jpg",
+        "url_web": "/dirette/rai1",
+        "url_live": "http://www.rai.tv/dl/RaiTV/dirette/PublishingBlock-64203784-70f7-4b53-9d21-b14693850195.html",
+        "categories": [
+          {
+            "id": 12,
+            "name": "Varie",
+            "slug": "varie"
+          }
+        ],
+        "genres": []
+      },
+      "channel": {
+        "id": 42,
+        "name": "Rai 1 HD",
+        "description": "Canale 1 tivùsat\r\nCanale 1 DTT",
+        "editor": "RAI",
+        "icon": "uploads/channel/dd39d13edc5e24dc57f355ab6030ec85ba4ad945.png",
+        "icon2x": "uploads/channel/d64e56641cfdf2ec1d343cf331286073a409c8cb.png",
+        "icon3x": "uploads/channel/6bd671462cda55ac3b011e5acc561e391ccc3761.png",
+        "iconMono": "uploads/channel/ed002807c483978a337342bf06ca06432dd3ae10.png",
+        "locatorsSat": "dvb://13e.1450.d49,dvb://13e.3070.d49",
+        "locatorsDtt": "dvb://217c.d5.641,dvb://217c.71.44d,dvb://217c.8f.4e3",
+        "is_dtt": true,
+        "is_sat": true,
+        "channel_dtt": 1,
+        "channel_sat": 1,
+        "channel_catchup": 1000,
+        "is_catchup": false,
+        "is_hd": true,
+        "is_primary_sat": false,
+        "is_primary_dtt": false,
+        "channel_father": {
+          "id": 1,
+          "name": "Rai 1",
+          "editor": "RAI",
+          "icon": "uploads/channel/f39e198eb18f479198c8f2687614c9c83fae6b50.png",
+          "icon2x": "uploads/channel/e5ed9c3a28e5f5ae50fa0a368ee1e1c550ba50ce.png",
+          "iconMono": "uploads/channel/6975d36901670f2fed967ca5b7523a506ab8caad.png",
+          "locatorsSat": "",
+          "locatorsDtt": "dvb://13e.1.d49,dvb://13e.4000.d49,dvb://13e.4800.d49,dvb://13e.5000.d49,dvb://13e.5800.d49,dvb://13e.6000.d49,dvb://13e.6800.d49,dvb://13e.7000.d49,dvb://13e.7800.d49,dvb://13e.8800.d49,dvb://13e.9000.d49,dvb://13e.9800.d49,dvb://13e.a000.d49",
+          "is_dtt": false,
+          "is_sat": true,
+          "channel_dtt": 0,
+          "channel_sat": 101,
+          "channel_catchup": 1,
+          "is_catchup": false,
+          "is_hd": false,
+          "is_primary_sat": false,
+          "is_primary_dtt": false
+        }
+      },
+      "images": [
+        {
+          "url": "https://www.raiplay.it/resizegd/640x-/dl/img/2023/09/08/1694187267544_2048x1152.jpg",
+          "size": "640x360",
+          "dimension": "37961",
+          "tag": "medium",
+          "priority": 0
+        }
+      ]
+    },
+    {
+      "id": 50367428,
+      "date_start": "25-02-2026 09:40",
+      "date_end": "25-02-2026 09:42",
+      "duration": 2,
+      "program": {
+        "id": 50367764,
+        "title": "Meteo verde",
+        "description": "Aggiornamento alle previsioni meteo del weekend",
+        "url_poster": "https://www.raiplay.it/resizegd/640x-/dl/img/2025/11/20/1763645586214_RaiMeteo2048x1152.png",
+        "url_web": "/dirette/rai1",
+        "url_live": "http://www.rai.tv/dl/RaiTV/dirette/PublishingBlock-64203784-70f7-4b53-9d21-b14693850195.html",
+        "categories": [
+          {
+            "id": 12,
+            "name": "Varie",
+            "slug": "varie"
+          }
+        ],
+        "genres": []
+      },
+      "channel": {
+        "id": 42,
+        "name": "Rai 1 HD",
+        "description": "Canale 1 tivùsat\r\nCanale 1 DTT",
+        "editor": "RAI",
+        "icon": "uploads/channel/dd39d13edc5e24dc57f355ab6030ec85ba4ad945.png",
+        "icon2x": "uploads/channel/d64e56641cfdf2ec1d343cf331286073a409c8cb.png",
+        "icon3x": "uploads/channel/6bd671462cda55ac3b011e5acc561e391ccc3761.png",
+        "iconMono": "uploads/channel/ed002807c483978a337342bf06ca06432dd3ae10.png",
+        "locatorsSat": "dvb://13e.1450.d49,dvb://13e.3070.d49",
+        "locatorsDtt": "dvb://217c.d5.641,dvb://217c.71.44d,dvb://217c.8f.4e3",
+        "is_dtt": true,
+        "is_sat": true,
+        "channel_dtt": 1,
+        "channel_sat": 1,
+        "channel_catchup": 1000,
+        "is_catchup": false,
+        "is_hd": true,
+        "is_primary_sat": false,
+        "is_primary_dtt": false,
+        "channel_father": {
+          "id": 1,
+          "name": "Rai 1",
+          "editor": "RAI",
+          "icon": "uploads/channel/f39e198eb18f479198c8f2687614c9c83fae6b50.png",
+          "icon2x": "uploads/channel/e5ed9c3a28e5f5ae50fa0a368ee1e1c550ba50ce.png",
+          "iconMono": "uploads/channel/6975d36901670f2fed967ca5b7523a506ab8caad.png",
+          "locatorsSat": "",
+          "locatorsDtt": "dvb://13e.1.d49,dvb://13e.4000.d49,dvb://13e.4800.d49,dvb://13e.5000.d49,dvb://13e.5800.d49,dvb://13e.6000.d49,dvb://13e.6800.d49,dvb://13e.7000.d49,dvb://13e.7800.d49,dvb://13e.8800.d49,dvb://13e.9000.d49,dvb://13e.9800.d49,dvb://13e.a000.d49",
+          "is_dtt": false,
+          "is_sat": true,
+          "channel_dtt": 0,
+          "channel_sat": 101,
+          "channel_catchup": 1,
+          "is_catchup": false,
+          "is_hd": false,
+          "is_primary_sat": false,
+          "is_primary_dtt": false
+        }
+      },
+      "images": [
+        {
+          "url": "https://www.raiplay.it/resizegd/640x-/dl/img/2025/11/20/1763645586214_RaiMeteo2048x1152.png",
+          "size": "640x360",
+          "dimension": "12235",
+          "tag": "medium",
+          "priority": 0
+        }
+      ]
+    },
+    {
+      "id": 50367429,
+      "date_start": "25-02-2026 09:42",
+      "date_end": "25-02-2026 09:50",
+      "duration": 8,
+      "program": {
+        "id": 50367765,
+        "title": "Unomattina",
+        "description": "Daniela Ferolla e Massimiliano Ossini guidano il racconto della realtà con un taglio di maggiore approfondimento, dai temi più caldi come il lavoro, l'occupazione, l'economia e i consumi, fino alla salute, agli stili di vita, alla provincia italiana, all'ambiente e alla sostenibilità, grazie agli ospiti in studio, ai filmati e ai collegamenti in diretta.",
+        "url_poster": "https://www.raiplay.it/resizegd/640x-/dl/img/2023/09/08/1694187267544_2048x1152.jpg",
+        "url_web": "/dirette/rai1",
+        "url_live": "http://www.rai.tv/dl/RaiTV/dirette/PublishingBlock-64203784-70f7-4b53-9d21-b14693850195.html",
+        "categories": [
+          {
+            "id": 12,
+            "name": "Varie",
+            "slug": "varie"
+          }
+        ],
+        "genres": []
+      },
+      "channel": {
+        "id": 42,
+        "name": "Rai 1 HD",
+        "description": "Canale 1 tivùsat\r\nCanale 1 DTT",
+        "editor": "RAI",
+        "icon": "uploads/channel/dd39d13edc5e24dc57f355ab6030ec85ba4ad945.png",
+        "icon2x": "uploads/channel/d64e56641cfdf2ec1d343cf331286073a409c8cb.png",
+        "icon3x": "uploads/channel/6bd671462cda55ac3b011e5acc561e391ccc3761.png",
+        "iconMono": "uploads/channel/ed002807c483978a337342bf06ca06432dd3ae10.png",
+        "locatorsSat": "dvb://13e.1450.d49,dvb://13e.3070.d49",
+        "locatorsDtt": "dvb://217c.d5.641,dvb://217c.71.44d,dvb://217c.8f.4e3",
+        "is_dtt": true,
+        "is_sat": true,
+        "channel_dtt": 1,
+        "channel_sat": 1,
+        "channel_catchup": 1000,
+        "is_catchup": false,
+        "is_hd": true,
+        "is_primary_sat": false,
+        "is_primary_dtt": false,
+        "channel_father": {
+          "id": 1,
+          "name": "Rai 1",
+          "editor": "RAI",
+          "icon": "uploads/channel/f39e198eb18f479198c8f2687614c9c83fae6b50.png",
+          "icon2x": "uploads/channel/e5ed9c3a28e5f5ae50fa0a368ee1e1c550ba50ce.png",
+          "iconMono": "uploads/channel/6975d36901670f2fed967ca5b7523a506ab8caad.png",
+          "locatorsSat": "",
+          "locatorsDtt": "dvb://13e.1.d49,dvb://13e.4000.d49,dvb://13e.4800.d49,dvb://13e.5000.d49,dvb://13e.5800.d49,dvb://13e.6000.d49,dvb://13e.6800.d49,dvb://13e.7000.d49,dvb://13e.7800.d49,dvb://13e.8800.d49,dvb://13e.9000.d49,dvb://13e.9800.d49,dvb://13e.a000.d49",
+          "is_dtt": false,
+          "is_sat": true,
+          "channel_dtt": 0,
+          "channel_sat": 101,
+          "channel_catchup": 1,
+          "is_catchup": false,
+          "is_hd": false,
+          "is_primary_sat": false,
+          "is_primary_dtt": false
+        }
+      },
+      "images": [
+        {
+          "url": "https://www.raiplay.it/resizegd/640x-/dl/img/2023/09/08/1694187267544_2048x1152.jpg",
+          "size": "640x360",
+          "dimension": "37961",
+          "tag": "medium",
+          "priority": 0
+        }
+      ]
+    },
+    {
+      "id": 50367430,
+      "date_start": "25-02-2026 09:50",
+      "date_end": "25-02-2026 11:55",
+      "duration": 125,
+      "program": {
+        "id": 50367766,
+        "title": "Storie italiane",
+        "description": "Eleonora Daniele approfondisce i temi di stretta attualità e i principali casi di cronaca con i protagonisti che raccontano in prima persona le loro esperienze.",
+        "url_poster": "https://www.raiplay.it/resizegd/640x-/dl/img/2025/09/08/1757312584333_2048x1152.jpg",
+        "url_web": "/dirette/rai1",
+        "url_live": "http://www.rai.tv/dl/RaiTV/dirette/PublishingBlock-64203784-70f7-4b53-9d21-b14693850195.html",
+        "categories": [
+          {
+            "id": 12,
+            "name": "Varie",
+            "slug": "varie"
+          }
+        ],
+        "genres": []
+      },
+      "channel": {
+        "id": 42,
+        "name": "Rai 1 HD",
+        "description": "Canale 1 tivùsat\r\nCanale 1 DTT",
+        "editor": "RAI",
+        "icon": "uploads/channel/dd39d13edc5e24dc57f355ab6030ec85ba4ad945.png",
+        "icon2x": "uploads/channel/d64e56641cfdf2ec1d343cf331286073a409c8cb.png",
+        "icon3x": "uploads/channel/6bd671462cda55ac3b011e5acc561e391ccc3761.png",
+        "iconMono": "uploads/channel/ed002807c483978a337342bf06ca06432dd3ae10.png",
+        "locatorsSat": "dvb://13e.1450.d49,dvb://13e.3070.d49",
+        "locatorsDtt": "dvb://217c.d5.641,dvb://217c.71.44d,dvb://217c.8f.4e3",
+        "is_dtt": true,
+        "is_sat": true,
+        "channel_dtt": 1,
+        "channel_sat": 1,
+        "channel_catchup": 1000,
+        "is_catchup": false,
+        "is_hd": true,
+        "is_primary_sat": false,
+        "is_primary_dtt": false,
+        "channel_father": {
+          "id": 1,
+          "name": "Rai 1",
+          "editor": "RAI",
+          "icon": "uploads/channel/f39e198eb18f479198c8f2687614c9c83fae6b50.png",
+          "icon2x": "uploads/channel/e5ed9c3a28e5f5ae50fa0a368ee1e1c550ba50ce.png",
+          "iconMono": "uploads/channel/6975d36901670f2fed967ca5b7523a506ab8caad.png",
+          "locatorsSat": "",
+          "locatorsDtt": "dvb://13e.1.d49,dvb://13e.4000.d49,dvb://13e.4800.d49,dvb://13e.5000.d49,dvb://13e.5800.d49,dvb://13e.6000.d49,dvb://13e.6800.d49,dvb://13e.7000.d49,dvb://13e.7800.d49,dvb://13e.8800.d49,dvb://13e.9000.d49,dvb://13e.9800.d49,dvb://13e.a000.d49",
+          "is_dtt": false,
+          "is_sat": true,
+          "channel_dtt": 0,
+          "channel_sat": 101,
+          "channel_catchup": 1,
+          "is_catchup": false,
+          "is_hd": false,
+          "is_primary_sat": false,
+          "is_primary_dtt": false
+        }
+      },
+      "images": [
+        {
+          "url": "https://www.raiplay.it/resizegd/640x-/dl/img/2025/09/08/1757312584333_2048x1152.jpg",
+          "size": "640x360",
+          "dimension": "70074",
+          "tag": "medium",
+          "priority": 0
+        }
+      ]
+    },
+    {
+      "id": 50367431,
+      "date_start": "25-02-2026 11:55",
+      "date_end": "25-02-2026 13:30",
+      "duration": 95,
+      "program": {
+        "id": 50367767,
+        "title": "È sempre mezzogiorno!",
+        "description": "Antonella Clerici conduce lo show quotidiano che usa la cucina come contesto in cui parlare di attualità con gli ospiti fissi del programma e per giocare con il pubblico a casa.",
+        "url_poster": "https://www.raiplay.it/resizegd/640x-/dl/img/2023/09/08/1694191835702_2048x1152.jpg",
+        "url_web": "/dirette/rai1",
+        "url_live": "http://www.rai.tv/dl/RaiTV/dirette/PublishingBlock-64203784-70f7-4b53-9d21-b14693850195.html",
+        "categories": [
+          {
+            "id": 12,
+            "name": "Varie",
+            "slug": "varie"
+          }
+        ],
+        "genres": [
+          {
+            "id": 21,
+            "name": "Varietà",
+            "slug": "varieta"
+          }
+        ]
+      },
+      "channel": {
+        "id": 42,
+        "name": "Rai 1 HD",
+        "description": "Canale 1 tivùsat\r\nCanale 1 DTT",
+        "editor": "RAI",
+        "icon": "uploads/channel/dd39d13edc5e24dc57f355ab6030ec85ba4ad945.png",
+        "icon2x": "uploads/channel/d64e56641cfdf2ec1d343cf331286073a409c8cb.png",
+        "icon3x": "uploads/channel/6bd671462cda55ac3b011e5acc561e391ccc3761.png",
+        "iconMono": "uploads/channel/ed002807c483978a337342bf06ca06432dd3ae10.png",
+        "locatorsSat": "dvb://13e.1450.d49,dvb://13e.3070.d49",
+        "locatorsDtt": "dvb://217c.d5.641,dvb://217c.71.44d,dvb://217c.8f.4e3",
+        "is_dtt": true,
+        "is_sat": true,
+        "channel_dtt": 1,
+        "channel_sat": 1,
+        "channel_catchup": 1000,
+        "is_catchup": false,
+        "is_hd": true,
+        "is_primary_sat": false,
+        "is_primary_dtt": false,
+        "channel_father": {
+          "id": 1,
+          "name": "Rai 1",
+          "editor": "RAI",
+          "icon": "uploads/channel/f39e198eb18f479198c8f2687614c9c83fae6b50.png",
+          "icon2x": "uploads/channel/e5ed9c3a28e5f5ae50fa0a368ee1e1c550ba50ce.png",
+          "iconMono": "uploads/channel/6975d36901670f2fed967ca5b7523a506ab8caad.png",
+          "locatorsSat": "",
+          "locatorsDtt": "dvb://13e.1.d49,dvb://13e.4000.d49,dvb://13e.4800.d49,dvb://13e.5000.d49,dvb://13e.5800.d49,dvb://13e.6000.d49,dvb://13e.6800.d49,dvb://13e.7000.d49,dvb://13e.7800.d49,dvb://13e.8800.d49,dvb://13e.9000.d49,dvb://13e.9800.d49,dvb://13e.a000.d49",
+          "is_dtt": false,
+          "is_sat": true,
+          "channel_dtt": 0,
+          "channel_sat": 101,
+          "channel_catchup": 1,
+          "is_catchup": false,
+          "is_hd": false,
+          "is_primary_sat": false,
+          "is_primary_dtt": false
+        }
+      },
+      "images": [
+        {
+          "url": "https://www.raiplay.it/resizegd/640x-/dl/img/2023/09/08/1694191835702_2048x1152.jpg",
+          "size": "640x360",
+          "dimension": "62351",
+          "tag": "medium",
+          "priority": 0
+        }
+      ]
+    },
+    {
+      "id": 50367432,
+      "date_start": "25-02-2026 13:30",
+      "date_end": "25-02-2026 14:05",
+      "duration": 35,
+      "program": {
+        "id": 50367768,
+        "title": "Tg1",
+        "description": "",
+        "url_poster": "https://www.raiplay.it/resizegd/640x-/dl/img/2025/12/16/1765885004911_2048x1152.jpg",
+        "url_web": "/dirette/rai1",
+        "url_live": "http://www.rai.tv/dl/RaiTV/dirette/PublishingBlock-64203784-70f7-4b53-9d21-b14693850195.html",
+        "categories": [
+          {
+            "id": 12,
+            "name": "Varie",
+            "slug": "varie"
+          }
+        ],
+        "genres": []
+      },
+      "channel": {
+        "id": 42,
+        "name": "Rai 1 HD",
+        "description": "Canale 1 tivùsat\r\nCanale 1 DTT",
+        "editor": "RAI",
+        "icon": "uploads/channel/dd39d13edc5e24dc57f355ab6030ec85ba4ad945.png",
+        "icon2x": "uploads/channel/d64e56641cfdf2ec1d343cf331286073a409c8cb.png",
+        "icon3x": "uploads/channel/6bd671462cda55ac3b011e5acc561e391ccc3761.png",
+        "iconMono": "uploads/channel/ed002807c483978a337342bf06ca06432dd3ae10.png",
+        "locatorsSat": "dvb://13e.1450.d49,dvb://13e.3070.d49",
+        "locatorsDtt": "dvb://217c.d5.641,dvb://217c.71.44d,dvb://217c.8f.4e3",
+        "is_dtt": true,
+        "is_sat": true,
+        "channel_dtt": 1,
+        "channel_sat": 1,
+        "channel_catchup": 1000,
+        "is_catchup": false,
+        "is_hd": true,
+        "is_primary_sat": false,
+        "is_primary_dtt": false,
+        "channel_father": {
+          "id": 1,
+          "name": "Rai 1",
+          "editor": "RAI",
+          "icon": "uploads/channel/f39e198eb18f479198c8f2687614c9c83fae6b50.png",
+          "icon2x": "uploads/channel/e5ed9c3a28e5f5ae50fa0a368ee1e1c550ba50ce.png",
+          "iconMono": "uploads/channel/6975d36901670f2fed967ca5b7523a506ab8caad.png",
+          "locatorsSat": "",
+          "locatorsDtt": "dvb://13e.1.d49,dvb://13e.4000.d49,dvb://13e.4800.d49,dvb://13e.5000.d49,dvb://13e.5800.d49,dvb://13e.6000.d49,dvb://13e.6800.d49,dvb://13e.7000.d49,dvb://13e.7800.d49,dvb://13e.8800.d49,dvb://13e.9000.d49,dvb://13e.9800.d49,dvb://13e.a000.d49",
+          "is_dtt": false,
+          "is_sat": true,
+          "channel_dtt": 0,
+          "channel_sat": 101,
+          "channel_catchup": 1,
+          "is_catchup": false,
+          "is_hd": false,
+          "is_primary_sat": false,
+          "is_primary_dtt": false
+        }
+      },
+      "images": [
+        {
+          "url": "https://www.raiplay.it/resizegd/640x-/dl/img/2025/12/16/1765885004911_2048x1152.jpg",
+          "size": "640x360",
+          "dimension": "86114",
+          "tag": "medium",
+          "priority": 0
+        }
+      ]
+    },
+    {
+      "id": 50367433,
+      "date_start": "25-02-2026 14:05",
+      "date_end": "25-02-2026 16:00",
+      "duration": 115,
+      "program": {
+        "id": 50367769,
+        "title": "La volta buona",
+        "description": "Caterina Balivo ci racconta le notizie di costume e accoglie i suoi ospiti tra vecchi ricordi che li legano al mondo dello spettacolo e della musica, amori, amicizie e vita in famiglia.",
+        "url_poster": "https://www.raiplay.it/resizegd/640x-/dl/img/2025/09/30/1759235351353_2048x1152.jpg",
+        "url_web": "/dirette/rai1",
+        "url_live": "http://www.rai.tv/dl/RaiTV/dirette/PublishingBlock-64203784-70f7-4b53-9d21-b14693850195.html",
+        "categories": [
+          {
+            "id": 12,
+            "name": "Varie",
+            "slug": "varie"
+          }
+        ],
+        "genres": []
+      },
+      "channel": {
+        "id": 42,
+        "name": "Rai 1 HD",
+        "description": "Canale 1 tivùsat\r\nCanale 1 DTT",
+        "editor": "RAI",
+        "icon": "uploads/channel/dd39d13edc5e24dc57f355ab6030ec85ba4ad945.png",
+        "icon2x": "uploads/channel/d64e56641cfdf2ec1d343cf331286073a409c8cb.png",
+        "icon3x": "uploads/channel/6bd671462cda55ac3b011e5acc561e391ccc3761.png",
+        "iconMono": "uploads/channel/ed002807c483978a337342bf06ca06432dd3ae10.png",
+        "locatorsSat": "dvb://13e.1450.d49,dvb://13e.3070.d49",
+        "locatorsDtt": "dvb://217c.d5.641,dvb://217c.71.44d,dvb://217c.8f.4e3",
+        "is_dtt": true,
+        "is_sat": true,
+        "channel_dtt": 1,
+        "channel_sat": 1,
+        "channel_catchup": 1000,
+        "is_catchup": false,
+        "is_hd": true,
+        "is_primary_sat": false,
+        "is_primary_dtt": false,
+        "channel_father": {
+          "id": 1,
+          "name": "Rai 1",
+          "editor": "RAI",
+          "icon": "uploads/channel/f39e198eb18f479198c8f2687614c9c83fae6b50.png",
+          "icon2x": "uploads/channel/e5ed9c3a28e5f5ae50fa0a368ee1e1c550ba50ce.png",
+          "iconMono": "uploads/channel/6975d36901670f2fed967ca5b7523a506ab8caad.png",
+          "locatorsSat": "",
+          "locatorsDtt": "dvb://13e.1.d49,dvb://13e.4000.d49,dvb://13e.4800.d49,dvb://13e.5000.d49,dvb://13e.5800.d49,dvb://13e.6000.d49,dvb://13e.6800.d49,dvb://13e.7000.d49,dvb://13e.7800.d49,dvb://13e.8800.d49,dvb://13e.9000.d49,dvb://13e.9800.d49,dvb://13e.a000.d49",
+          "is_dtt": false,
+          "is_sat": true,
+          "channel_dtt": 0,
+          "channel_sat": 101,
+          "channel_catchup": 1,
+          "is_catchup": false,
+          "is_hd": false,
+          "is_primary_sat": false,
+          "is_primary_dtt": false
+        }
+      },
+      "images": [
+        {
+          "url": "https://www.raiplay.it/resizegd/640x-/dl/img/2025/09/30/1759235351353_2048x1152.jpg",
+          "size": "640x360",
+          "dimension": "99879",
+          "tag": "medium",
+          "priority": 0
+        }
+      ]
+    },
+    {
+      "id": 50367434,
+      "date_start": "25-02-2026 16:00",
+      "date_end": "25-02-2026 16:10",
+      "duration": 10,
+      "program": {
+        "id": 50367770,
+        "title": "Tg1",
+        "description": "",
+        "url_poster": "https://www.raiplay.it/resizegd/640x-/dl/img/2025/12/16/1765885004911_2048x1152.jpg",
+        "url_web": "/dirette/rai1",
+        "url_live": "http://www.rai.tv/dl/RaiTV/dirette/PublishingBlock-64203784-70f7-4b53-9d21-b14693850195.html",
+        "categories": [
+          {
+            "id": 12,
+            "name": "Varie",
+            "slug": "varie"
+          }
+        ],
+        "genres": []
+      },
+      "channel": {
+        "id": 42,
+        "name": "Rai 1 HD",
+        "description": "Canale 1 tivùsat\r\nCanale 1 DTT",
+        "editor": "RAI",
+        "icon": "uploads/channel/dd39d13edc5e24dc57f355ab6030ec85ba4ad945.png",
+        "icon2x": "uploads/channel/d64e56641cfdf2ec1d343cf331286073a409c8cb.png",
+        "icon3x": "uploads/channel/6bd671462cda55ac3b011e5acc561e391ccc3761.png",
+        "iconMono": "uploads/channel/ed002807c483978a337342bf06ca06432dd3ae10.png",
+        "locatorsSat": "dvb://13e.1450.d49,dvb://13e.3070.d49",
+        "locatorsDtt": "dvb://217c.d5.641,dvb://217c.71.44d,dvb://217c.8f.4e3",
+        "is_dtt": true,
+        "is_sat": true,
+        "channel_dtt": 1,
+        "channel_sat": 1,
+        "channel_catchup": 1000,
+        "is_catchup": false,
+        "is_hd": true,
+        "is_primary_sat": false,
+        "is_primary_dtt": false,
+        "channel_father": {
+          "id": 1,
+          "name": "Rai 1",
+          "editor": "RAI",
+          "icon": "uploads/channel/f39e198eb18f479198c8f2687614c9c83fae6b50.png",
+          "icon2x": "uploads/channel/e5ed9c3a28e5f5ae50fa0a368ee1e1c550ba50ce.png",
+          "iconMono": "uploads/channel/6975d36901670f2fed967ca5b7523a506ab8caad.png",
+          "locatorsSat": "",
+          "locatorsDtt": "dvb://13e.1.d49,dvb://13e.4000.d49,dvb://13e.4800.d49,dvb://13e.5000.d49,dvb://13e.5800.d49,dvb://13e.6000.d49,dvb://13e.6800.d49,dvb://13e.7000.d49,dvb://13e.7800.d49,dvb://13e.8800.d49,dvb://13e.9000.d49,dvb://13e.9800.d49,dvb://13e.a000.d49",
+          "is_dtt": false,
+          "is_sat": true,
+          "channel_dtt": 0,
+          "channel_sat": 101,
+          "channel_catchup": 1,
+          "is_catchup": false,
+          "is_hd": false,
+          "is_primary_sat": false,
+          "is_primary_dtt": false
+        }
+      },
+      "images": [
+        {
+          "url": "https://www.raiplay.it/resizegd/640x-/dl/img/2025/12/16/1765885004911_2048x1152.jpg",
+          "size": "640x360",
+          "dimension": "86114",
+          "tag": "medium",
+          "priority": 0
+        }
+      ]
+    },
+    {
+      "id": 50367435,
+      "date_start": "25-02-2026 16:10",
+      "date_end": "25-02-2026 16:55",
+      "duration": 45,
+      "program": {
+        "id": 50367771,
+        "title": "Il paradiso delle signore",
+        "description": "Mimmo non può essere presente in Caffetteria e Concetta è costretta, ancora una volta, a fare fronte all'emergenza. Irene deve decidere se accettare l'invito di Cesare o guardare Sanremo con le amiche, mentre Botteri ha una doppia sorpresa per Delia.",
+        "url_poster": "https://www.raiplay.it/resizegd/640x-/dl/img/2024/12/02/1733146164349_2048x1152.jpg",
+        "url_web": "/dirette/rai1",
+        "url_live": "http://www.rai.tv/dl/RaiTV/dirette/PublishingBlock-64203784-70f7-4b53-9d21-b14693850195.html",
+        "categories": [
+          {
+            "id": 1,
+            "name": "Fiction",
+            "slug": "fiction",
+            "icon": "uploads/category/fiction.png",
+            "icon2x": "uploads/category/fiction@2x.png",
+            "icon3x": "uploads/category/7fb064ee39657fb0b11cf2b0d4979e5f551c6457.png"
+          }
+        ],
+        "genres": [
+          {
+            "id": 4,
+            "name": "Soap opera",
+            "slug": "soap-opera"
+          }
+        ]
+      },
+      "channel": {
+        "id": 42,
+        "name": "Rai 1 HD",
+        "description": "Canale 1 tivùsat\r\nCanale 1 DTT",
+        "editor": "RAI",
+        "icon": "uploads/channel/dd39d13edc5e24dc57f355ab6030ec85ba4ad945.png",
+        "icon2x": "uploads/channel/d64e56641cfdf2ec1d343cf331286073a409c8cb.png",
+        "icon3x": "uploads/channel/6bd671462cda55ac3b011e5acc561e391ccc3761.png",
+        "iconMono": "uploads/channel/ed002807c483978a337342bf06ca06432dd3ae10.png",
+        "locatorsSat": "dvb://13e.1450.d49,dvb://13e.3070.d49",
+        "locatorsDtt": "dvb://217c.d5.641,dvb://217c.71.44d,dvb://217c.8f.4e3",
+        "is_dtt": true,
+        "is_sat": true,
+        "channel_dtt": 1,
+        "channel_sat": 1,
+        "channel_catchup": 1000,
+        "is_catchup": false,
+        "is_hd": true,
+        "is_primary_sat": false,
+        "is_primary_dtt": false,
+        "channel_father": {
+          "id": 1,
+          "name": "Rai 1",
+          "editor": "RAI",
+          "icon": "uploads/channel/f39e198eb18f479198c8f2687614c9c83fae6b50.png",
+          "icon2x": "uploads/channel/e5ed9c3a28e5f5ae50fa0a368ee1e1c550ba50ce.png",
+          "iconMono": "uploads/channel/6975d36901670f2fed967ca5b7523a506ab8caad.png",
+          "locatorsSat": "",
+          "locatorsDtt": "dvb://13e.1.d49,dvb://13e.4000.d49,dvb://13e.4800.d49,dvb://13e.5000.d49,dvb://13e.5800.d49,dvb://13e.6000.d49,dvb://13e.6800.d49,dvb://13e.7000.d49,dvb://13e.7800.d49,dvb://13e.8800.d49,dvb://13e.9000.d49,dvb://13e.9800.d49,dvb://13e.a000.d49",
+          "is_dtt": false,
+          "is_sat": true,
+          "channel_dtt": 0,
+          "channel_sat": 101,
+          "channel_catchup": 1,
+          "is_catchup": false,
+          "is_hd": false,
+          "is_primary_sat": false,
+          "is_primary_dtt": false
+        }
+      },
+      "images": [
+        {
+          "url": "https://www.raiplay.it/resizegd/640x-/dl/img/2024/12/02/1733146164349_2048x1152.jpg",
+          "size": "640x360",
+          "dimension": "57342",
+          "tag": "medium",
+          "priority": 0
+        }
+      ]
+    },
+    {
+      "id": 50367436,
+      "date_start": "25-02-2026 16:55",
+      "date_end": "25-02-2026 18:36",
+      "duration": 101,
+      "program": {
+        "id": 50367772,
+        "title": "Vita in diretta",
+        "description": "Alberto Matano conduce il programma pomeridiano di attualità, cronaca e spettacolo, con collegamenti in diretta sul territorio attraverso inviati, esperti e ospiti in studio.",
+        "url_poster": "https://www.raiplay.it/resizegd/640x-/dl/img/2025/09/09/1757418631996_2048x1152.jpg",
+        "url_web": "/dirette/rai1",
+        "url_live": "http://www.rai.tv/dl/RaiTV/dirette/PublishingBlock-64203784-70f7-4b53-9d21-b14693850195.html",
+        "categories": [
+          {
+            "id": 12,
+            "name": "Varie",
+            "slug": "varie"
+          }
+        ],
+        "genres": []
+      },
+      "channel": {
+        "id": 42,
+        "name": "Rai 1 HD",
+        "description": "Canale 1 tivùsat\r\nCanale 1 DTT",
+        "editor": "RAI",
+        "icon": "uploads/channel/dd39d13edc5e24dc57f355ab6030ec85ba4ad945.png",
+        "icon2x": "uploads/channel/d64e56641cfdf2ec1d343cf331286073a409c8cb.png",
+        "icon3x": "uploads/channel/6bd671462cda55ac3b011e5acc561e391ccc3761.png",
+        "iconMono": "uploads/channel/ed002807c483978a337342bf06ca06432dd3ae10.png",
+        "locatorsSat": "dvb://13e.1450.d49,dvb://13e.3070.d49",
+        "locatorsDtt": "dvb://217c.d5.641,dvb://217c.71.44d,dvb://217c.8f.4e3",
+        "is_dtt": true,
+        "is_sat": true,
+        "channel_dtt": 1,
+        "channel_sat": 1,
+        "channel_catchup": 1000,
+        "is_catchup": false,
+        "is_hd": true,
+        "is_primary_sat": false,
+        "is_primary_dtt": false,
+        "channel_father": {
+          "id": 1,
+          "name": "Rai 1",
+          "editor": "RAI",
+          "icon": "uploads/channel/f39e198eb18f479198c8f2687614c9c83fae6b50.png",
+          "icon2x": "uploads/channel/e5ed9c3a28e5f5ae50fa0a368ee1e1c550ba50ce.png",
+          "iconMono": "uploads/channel/6975d36901670f2fed967ca5b7523a506ab8caad.png",
+          "locatorsSat": "",
+          "locatorsDtt": "dvb://13e.1.d49,dvb://13e.4000.d49,dvb://13e.4800.d49,dvb://13e.5000.d49,dvb://13e.5800.d49,dvb://13e.6000.d49,dvb://13e.6800.d49,dvb://13e.7000.d49,dvb://13e.7800.d49,dvb://13e.8800.d49,dvb://13e.9000.d49,dvb://13e.9800.d49,dvb://13e.a000.d49",
+          "is_dtt": false,
+          "is_sat": true,
+          "channel_dtt": 0,
+          "channel_sat": 101,
+          "channel_catchup": 1,
+          "is_catchup": false,
+          "is_hd": false,
+          "is_primary_sat": false,
+          "is_primary_dtt": false
+        }
+      },
+      "images": [
+        {
+          "url": "https://www.raiplay.it/resizegd/640x-/dl/img/2025/09/09/1757418631996_2048x1152.jpg",
+          "size": "640x360",
+          "dimension": "28656",
+          "tag": "medium",
+          "priority": 0
+        }
+      ]
+    },
+    {
+      "id": 50367437,
+      "date_start": "25-02-2026 18:36",
+      "date_end": "25-02-2026 18:40",
+      "duration": 4,
+      "program": {
+        "id": 50367773,
+        "title": "Che tempo fa",
+        "description": "",
+        "url_poster": "https://www.raiplay.it/resizegd/640x-/dl/img/2025/11/20/1763645586214_RaiMeteo2048x1152.png",
+        "url_web": "/dirette/rai1",
+        "url_live": "http://www.rai.tv/dl/RaiTV/dirette/PublishingBlock-64203784-70f7-4b53-9d21-b14693850195.html",
+        "categories": [
+          {
+            "id": 12,
+            "name": "Varie",
+            "slug": "varie"
+          }
+        ],
+        "genres": []
+      },
+      "channel": {
+        "id": 42,
+        "name": "Rai 1 HD",
+        "description": "Canale 1 tivùsat\r\nCanale 1 DTT",
+        "editor": "RAI",
+        "icon": "uploads/channel/dd39d13edc5e24dc57f355ab6030ec85ba4ad945.png",
+        "icon2x": "uploads/channel/d64e56641cfdf2ec1d343cf331286073a409c8cb.png",
+        "icon3x": "uploads/channel/6bd671462cda55ac3b011e5acc561e391ccc3761.png",
+        "iconMono": "uploads/channel/ed002807c483978a337342bf06ca06432dd3ae10.png",
+        "locatorsSat": "dvb://13e.1450.d49,dvb://13e.3070.d49",
+        "locatorsDtt": "dvb://217c.d5.641,dvb://217c.71.44d,dvb://217c.8f.4e3",
+        "is_dtt": true,
+        "is_sat": true,
+        "channel_dtt": 1,
+        "channel_sat": 1,
+        "channel_catchup": 1000,
+        "is_catchup": false,
+        "is_hd": true,
+        "is_primary_sat": false,
+        "is_primary_dtt": false,
+        "channel_father": {
+          "id": 1,
+          "name": "Rai 1",
+          "editor": "RAI",
+          "icon": "uploads/channel/f39e198eb18f479198c8f2687614c9c83fae6b50.png",
+          "icon2x": "uploads/channel/e5ed9c3a28e5f5ae50fa0a368ee1e1c550ba50ce.png",
+          "iconMono": "uploads/channel/6975d36901670f2fed967ca5b7523a506ab8caad.png",
+          "locatorsSat": "",
+          "locatorsDtt": "dvb://13e.1.d49,dvb://13e.4000.d49,dvb://13e.4800.d49,dvb://13e.5000.d49,dvb://13e.5800.d49,dvb://13e.6000.d49,dvb://13e.6800.d49,dvb://13e.7000.d49,dvb://13e.7800.d49,dvb://13e.8800.d49,dvb://13e.9000.d49,dvb://13e.9800.d49,dvb://13e.a000.d49",
+          "is_dtt": false,
+          "is_sat": true,
+          "channel_dtt": 0,
+          "channel_sat": 101,
+          "channel_catchup": 1,
+          "is_catchup": false,
+          "is_hd": false,
+          "is_primary_sat": false,
+          "is_primary_dtt": false
+        }
+      },
+      "images": [
+        {
+          "url": "https://www.raiplay.it/resizegd/640x-/dl/img/2025/11/20/1763645586214_RaiMeteo2048x1152.png",
+          "size": "640x360",
+          "dimension": "12235",
+          "tag": "medium",
+          "priority": 0
+        }
+      ]
+    },
+    {
+      "id": 50367438,
+      "date_start": "25-02-2026 18:40",
+      "date_end": "25-02-2026 20:00",
+      "duration": 80,
+      "program": {
+        "id": 50367774,
+        "title": "L'Eredità",
+        "description": "Marco Liorni conduce il gioco a quiz in cui 6 concorrenti più il campione si sfidano in 6 diversi giochi ad eliminazione, fino ad arrivare alla ''Ghigliottina'', in cui il finalista deve indovinare una parola attraverso 5 indizi in 60 secondi di tempo.",
+        "url_poster": "https://www.raiplay.it/resizegd/640x-/dl/img/2024/01/01/1704147154085_2048x1152%207.jpg",
+        "url_web": "/dirette/rai1",
+        "url_live": "http://www.rai.tv/dl/RaiTV/dirette/PublishingBlock-64203784-70f7-4b53-9d21-b14693850195.html",
+        "categories": [
+          {
+            "id": 12,
+            "name": "Varie",
+            "slug": "varie"
+          }
+        ],
+        "genres": []
+      },
+      "channel": {
+        "id": 42,
+        "name": "Rai 1 HD",
+        "description": "Canale 1 tivùsat\r\nCanale 1 DTT",
+        "editor": "RAI",
+        "icon": "uploads/channel/dd39d13edc5e24dc57f355ab6030ec85ba4ad945.png",
+        "icon2x": "uploads/channel/d64e56641cfdf2ec1d343cf331286073a409c8cb.png",
+        "icon3x": "uploads/channel/6bd671462cda55ac3b011e5acc561e391ccc3761.png",
+        "iconMono": "uploads/channel/ed002807c483978a337342bf06ca06432dd3ae10.png",
+        "locatorsSat": "dvb://13e.1450.d49,dvb://13e.3070.d49",
+        "locatorsDtt": "dvb://217c.d5.641,dvb://217c.71.44d,dvb://217c.8f.4e3",
+        "is_dtt": true,
+        "is_sat": true,
+        "channel_dtt": 1,
+        "channel_sat": 1,
+        "channel_catchup": 1000,
+        "is_catchup": false,
+        "is_hd": true,
+        "is_primary_sat": false,
+        "is_primary_dtt": false,
+        "channel_father": {
+          "id": 1,
+          "name": "Rai 1",
+          "editor": "RAI",
+          "icon": "uploads/channel/f39e198eb18f479198c8f2687614c9c83fae6b50.png",
+          "icon2x": "uploads/channel/e5ed9c3a28e5f5ae50fa0a368ee1e1c550ba50ce.png",
+          "iconMono": "uploads/channel/6975d36901670f2fed967ca5b7523a506ab8caad.png",
+          "locatorsSat": "",
+          "locatorsDtt": "dvb://13e.1.d49,dvb://13e.4000.d49,dvb://13e.4800.d49,dvb://13e.5000.d49,dvb://13e.5800.d49,dvb://13e.6000.d49,dvb://13e.6800.d49,dvb://13e.7000.d49,dvb://13e.7800.d49,dvb://13e.8800.d49,dvb://13e.9000.d49,dvb://13e.9800.d49,dvb://13e.a000.d49",
+          "is_dtt": false,
+          "is_sat": true,
+          "channel_dtt": 0,
+          "channel_sat": 101,
+          "channel_catchup": 1,
+          "is_catchup": false,
+          "is_hd": false,
+          "is_primary_sat": false,
+          "is_primary_dtt": false
+        }
+      },
+      "images": [
+        {
+          "url": "https://www.raiplay.it/resizegd/640x-/dl/img/2024/01/01/1704147154085_2048x1152%207.jpg",
+          "size": "100x100",
+          "dimension": "0",
+          "tag": "thumbnail",
+          "priority": 0
+        }
+      ]
+    },
+    {
+      "id": 50367439,
+      "date_start": "25-02-2026 20:00",
+      "date_end": "25-02-2026 20:30",
+      "duration": 30,
+      "program": {
+        "id": 50367775,
+        "title": "Tg1",
+        "description": "",
+        "url_poster": "https://www.raiplay.it/resizegd/640x-/dl/img/2025/12/16/1765885004911_2048x1152.jpg",
+        "url_web": "/dirette/rai1",
+        "url_live": "http://www.rai.tv/dl/RaiTV/dirette/PublishingBlock-64203784-70f7-4b53-9d21-b14693850195.html",
+        "categories": [
+          {
+            "id": 12,
+            "name": "Varie",
+            "slug": "varie"
+          }
+        ],
+        "genres": []
+      },
+      "channel": {
+        "id": 42,
+        "name": "Rai 1 HD",
+        "description": "Canale 1 tivùsat\r\nCanale 1 DTT",
+        "editor": "RAI",
+        "icon": "uploads/channel/dd39d13edc5e24dc57f355ab6030ec85ba4ad945.png",
+        "icon2x": "uploads/channel/d64e56641cfdf2ec1d343cf331286073a409c8cb.png",
+        "icon3x": "uploads/channel/6bd671462cda55ac3b011e5acc561e391ccc3761.png",
+        "iconMono": "uploads/channel/ed002807c483978a337342bf06ca06432dd3ae10.png",
+        "locatorsSat": "dvb://13e.1450.d49,dvb://13e.3070.d49",
+        "locatorsDtt": "dvb://217c.d5.641,dvb://217c.71.44d,dvb://217c.8f.4e3",
+        "is_dtt": true,
+        "is_sat": true,
+        "channel_dtt": 1,
+        "channel_sat": 1,
+        "channel_catchup": 1000,
+        "is_catchup": false,
+        "is_hd": true,
+        "is_primary_sat": false,
+        "is_primary_dtt": false,
+        "channel_father": {
+          "id": 1,
+          "name": "Rai 1",
+          "editor": "RAI",
+          "icon": "uploads/channel/f39e198eb18f479198c8f2687614c9c83fae6b50.png",
+          "icon2x": "uploads/channel/e5ed9c3a28e5f5ae50fa0a368ee1e1c550ba50ce.png",
+          "iconMono": "uploads/channel/6975d36901670f2fed967ca5b7523a506ab8caad.png",
+          "locatorsSat": "",
+          "locatorsDtt": "dvb://13e.1.d49,dvb://13e.4000.d49,dvb://13e.4800.d49,dvb://13e.5000.d49,dvb://13e.5800.d49,dvb://13e.6000.d49,dvb://13e.6800.d49,dvb://13e.7000.d49,dvb://13e.7800.d49,dvb://13e.8800.d49,dvb://13e.9000.d49,dvb://13e.9800.d49,dvb://13e.a000.d49",
+          "is_dtt": false,
+          "is_sat": true,
+          "channel_dtt": 0,
+          "channel_sat": 101,
+          "channel_catchup": 1,
+          "is_catchup": false,
+          "is_hd": false,
+          "is_primary_sat": false,
+          "is_primary_dtt": false
+        }
+      },
+      "images": [
+        {
+          "url": "https://www.raiplay.it/resizegd/640x-/dl/img/2025/12/16/1765885004911_2048x1152.jpg",
+          "size": "640x360",
+          "dimension": "86114",
+          "tag": "medium",
+          "priority": 0
+        }
+      ]
+    },
+    {
+      "id": 50367440,
+      "date_start": "25-02-2026 20:30",
+      "date_end": "25-02-2026 20:40",
+      "duration": 10,
+      "program": {
+        "id": 50367776,
+        "title": "PrimaFestival",
+        "description": "Ema Stokholma, Carolina Rey e Manola Moslehi raccontano il Festival di Sanremo tra interviste, curiosità, anteprime e collegamenti da un Glass Box fronte Ariston.",
+        "url_poster": "https://www.raiplay.it/resizegd/640x-/dl/img/2026/02/15/1771172032635_2048x1152.jpg",
+        "url_web": "/dirette/rai1",
+        "url_live": "http://www.rai.tv/dl/RaiTV/dirette/PublishingBlock-64203784-70f7-4b53-9d21-b14693850195.html",
+        "categories": [
+          {
+            "id": 12,
+            "name": "Varie",
+            "slug": "varie"
+          }
+        ],
+        "genres": [
+          {
+            "id": 21,
+            "name": "Varietà",
+            "slug": "varieta"
+          }
+        ]
+      },
+      "channel": {
+        "id": 42,
+        "name": "Rai 1 HD",
+        "description": "Canale 1 tivùsat\r\nCanale 1 DTT",
+        "editor": "RAI",
+        "icon": "uploads/channel/dd39d13edc5e24dc57f355ab6030ec85ba4ad945.png",
+        "icon2x": "uploads/channel/d64e56641cfdf2ec1d343cf331286073a409c8cb.png",
+        "icon3x": "uploads/channel/6bd671462cda55ac3b011e5acc561e391ccc3761.png",
+        "iconMono": "uploads/channel/ed002807c483978a337342bf06ca06432dd3ae10.png",
+        "locatorsSat": "dvb://13e.1450.d49,dvb://13e.3070.d49",
+        "locatorsDtt": "dvb://217c.d5.641,dvb://217c.71.44d,dvb://217c.8f.4e3",
+        "is_dtt": true,
+        "is_sat": true,
+        "channel_dtt": 1,
+        "channel_sat": 1,
+        "channel_catchup": 1000,
+        "is_catchup": false,
+        "is_hd": true,
+        "is_primary_sat": false,
+        "is_primary_dtt": false,
+        "channel_father": {
+          "id": 1,
+          "name": "Rai 1",
+          "editor": "RAI",
+          "icon": "uploads/channel/f39e198eb18f479198c8f2687614c9c83fae6b50.png",
+          "icon2x": "uploads/channel/e5ed9c3a28e5f5ae50fa0a368ee1e1c550ba50ce.png",
+          "iconMono": "uploads/channel/6975d36901670f2fed967ca5b7523a506ab8caad.png",
+          "locatorsSat": "",
+          "locatorsDtt": "dvb://13e.1.d49,dvb://13e.4000.d49,dvb://13e.4800.d49,dvb://13e.5000.d49,dvb://13e.5800.d49,dvb://13e.6000.d49,dvb://13e.6800.d49,dvb://13e.7000.d49,dvb://13e.7800.d49,dvb://13e.8800.d49,dvb://13e.9000.d49,dvb://13e.9800.d49,dvb://13e.a000.d49",
+          "is_dtt": false,
+          "is_sat": true,
+          "channel_dtt": 0,
+          "channel_sat": 101,
+          "channel_catchup": 1,
+          "is_catchup": false,
+          "is_hd": false,
+          "is_primary_sat": false,
+          "is_primary_dtt": false
+        }
+      },
+      "images": [
+        {
+          "url": "https://www.raiplay.it/resizegd/640x-/dl/img/2026/02/15/1771172032635_2048x1152.jpg",
+          "size": "640x360",
+          "dimension": "39677",
+          "tag": "medium",
+          "priority": 0
+        }
+      ]
+    },
+    {
+      "id": 50367441,
+      "date_start": "25-02-2026 20:40",
+      "date_end": "25-02-2026 23:55",
+      "event_start": 191,
+      "duration": 195,
+      "program": {
+        "id": 50367777,
+        "title": "Festival di Sanremo",
+        "description": "Carlo Conti, affiancato da Laura Pausini, Pilar Fogliati, Achille Lauro e Lillo Petrolo, conduce la seconda serata del Festival di Sanremo. Ospiti della serata le campionesse olimpiche Lisa Vittozzi e Francesca Lollobrigida e Fausto Leali.",
+        "url_poster": "https://www.raiplay.it/resizegd/640x-/dl/img/2026/02/23/1771850079054_2048x1152%207.jpg",
+        "url_web": "/dirette/rai1",
+        "url_live": "http://www.rai.tv/dl/RaiTV/dirette/PublishingBlock-64203784-70f7-4b53-9d21-b14693850195.html",
+        "categories": [
+          {
+            "id": 12,
+            "name": "Varie",
+            "slug": "varie"
+          }
+        ],
+        "genres": [
+          {
+            "id": 41,
+            "name": "Musica",
+            "slug": "musica"
+          }
+        ]
+      },
+      "channel": {
+        "id": 42,
+        "name": "Rai 1 HD",
+        "description": "Canale 1 tivùsat\r\nCanale 1 DTT",
+        "editor": "RAI",
+        "icon": "uploads/channel/dd39d13edc5e24dc57f355ab6030ec85ba4ad945.png",
+        "icon2x": "uploads/channel/d64e56641cfdf2ec1d343cf331286073a409c8cb.png",
+        "icon3x": "uploads/channel/6bd671462cda55ac3b011e5acc561e391ccc3761.png",
+        "iconMono": "uploads/channel/ed002807c483978a337342bf06ca06432dd3ae10.png",
+        "locatorsSat": "dvb://13e.1450.d49,dvb://13e.3070.d49",
+        "locatorsDtt": "dvb://217c.d5.641,dvb://217c.71.44d,dvb://217c.8f.4e3",
+        "is_dtt": true,
+        "is_sat": true,
+        "channel_dtt": 1,
+        "channel_sat": 1,
+        "channel_catchup": 1000,
+        "is_catchup": false,
+        "is_hd": true,
+        "is_primary_sat": false,
+        "is_primary_dtt": false,
+        "channel_father": {
+          "id": 1,
+          "name": "Rai 1",
+          "editor": "RAI",
+          "icon": "uploads/channel/f39e198eb18f479198c8f2687614c9c83fae6b50.png",
+          "icon2x": "uploads/channel/e5ed9c3a28e5f5ae50fa0a368ee1e1c550ba50ce.png",
+          "iconMono": "uploads/channel/6975d36901670f2fed967ca5b7523a506ab8caad.png",
+          "locatorsSat": "",
+          "locatorsDtt": "dvb://13e.1.d49,dvb://13e.4000.d49,dvb://13e.4800.d49,dvb://13e.5000.d49,dvb://13e.5800.d49,dvb://13e.6000.d49,dvb://13e.6800.d49,dvb://13e.7000.d49,dvb://13e.7800.d49,dvb://13e.8800.d49,dvb://13e.9000.d49,dvb://13e.9800.d49,dvb://13e.a000.d49",
+          "is_dtt": false,
+          "is_sat": true,
+          "channel_dtt": 0,
+          "channel_sat": 101,
+          "channel_catchup": 1,
+          "is_catchup": false,
+          "is_hd": false,
+          "is_primary_sat": false,
+          "is_primary_dtt": false
+        }
+      },
+      "images": [
+        {
+          "url": "https://www.raiplay.it/resizegd/640x-/dl/img/2026/02/23/1771850079054_2048x1152%207.jpg",
+          "size": "100x100",
+          "dimension": "0",
+          "tag": "thumbnail",
+          "priority": 0
+        }
+      ]
+    },
+    {
+      "id": 50367442,
+      "date_start": "25-02-2026 23:55",
+      "date_end": "25-02-2026 23:56",
+      "duration": 1,
+      "program": {
+        "id": 50367778,
+        "title": "Tg1",
+        "description": "",
+        "url_poster": "https://www.raiplay.it/resizegd/640x-/dl/img/2025/12/16/1765885004911_2048x1152.jpg",
+        "url_web": "/dirette/rai1",
+        "url_live": "http://www.rai.tv/dl/RaiTV/dirette/PublishingBlock-64203784-70f7-4b53-9d21-b14693850195.html",
+        "categories": [
+          {
+            "id": 12,
+            "name": "Varie",
+            "slug": "varie"
+          }
+        ],
+        "genres": []
+      },
+      "channel": {
+        "id": 42,
+        "name": "Rai 1 HD",
+        "description": "Canale 1 tivùsat\r\nCanale 1 DTT",
+        "editor": "RAI",
+        "icon": "uploads/channel/dd39d13edc5e24dc57f355ab6030ec85ba4ad945.png",
+        "icon2x": "uploads/channel/d64e56641cfdf2ec1d343cf331286073a409c8cb.png",
+        "icon3x": "uploads/channel/6bd671462cda55ac3b011e5acc561e391ccc3761.png",
+        "iconMono": "uploads/channel/ed002807c483978a337342bf06ca06432dd3ae10.png",
+        "locatorsSat": "dvb://13e.1450.d49,dvb://13e.3070.d49",
+        "locatorsDtt": "dvb://217c.d5.641,dvb://217c.71.44d,dvb://217c.8f.4e3",
+        "is_dtt": true,
+        "is_sat": true,
+        "channel_dtt": 1,
+        "channel_sat": 1,
+        "channel_catchup": 1000,
+        "is_catchup": false,
+        "is_hd": true,
+        "is_primary_sat": false,
+        "is_primary_dtt": false,
+        "channel_father": {
+          "id": 1,
+          "name": "Rai 1",
+          "editor": "RAI",
+          "icon": "uploads/channel/f39e198eb18f479198c8f2687614c9c83fae6b50.png",
+          "icon2x": "uploads/channel/e5ed9c3a28e5f5ae50fa0a368ee1e1c550ba50ce.png",
+          "iconMono": "uploads/channel/6975d36901670f2fed967ca5b7523a506ab8caad.png",
+          "locatorsSat": "",
+          "locatorsDtt": "dvb://13e.1.d49,dvb://13e.4000.d49,dvb://13e.4800.d49,dvb://13e.5000.d49,dvb://13e.5800.d49,dvb://13e.6000.d49,dvb://13e.6800.d49,dvb://13e.7000.d49,dvb://13e.7800.d49,dvb://13e.8800.d49,dvb://13e.9000.d49,dvb://13e.9800.d49,dvb://13e.a000.d49",
+          "is_dtt": false,
+          "is_sat": true,
+          "channel_dtt": 0,
+          "channel_sat": 101,
+          "channel_catchup": 1,
+          "is_catchup": false,
+          "is_hd": false,
+          "is_primary_sat": false,
+          "is_primary_dtt": false
+        }
+      },
+      "images": [
+        {
+          "url": "https://www.raiplay.it/resizegd/640x-/dl/img/2025/12/16/1765885004911_2048x1152.jpg",
+          "size": "640x360",
+          "dimension": "86114",
+          "tag": "medium",
+          "priority": 0
+        }
+      ]
+    },
+    {
+      "id": 50367443,
+      "date_start": "25-02-2026 23:56",
+      "date_end": "26-02-2026 01:15",
+      "duration": 79,
+      "program": {
+        "id": 50367779,
+        "title": "Festival di Sanremo",
+        "description": "Carlo Conti, affiancato da Laura Pausini, Pilar Fogliati, Achille Lauro e Lillo Petrolo, conduce la seconda serata del Festival di Sanremo. Ospiti della serata le campionesse olimpiche Lisa Vittozzi e Francesca Lollobrigida e Fausto Leali.",
+        "url_poster": "https://www.raiplay.it/resizegd/640x-/dl/img/2026/02/23/1771850079054_2048x1152%207.jpg",
+        "url_web": "/dirette/rai1",
+        "url_live": "http://www.rai.tv/dl/RaiTV/dirette/PublishingBlock-64203784-70f7-4b53-9d21-b14693850195.html",
+        "categories": [
+          {
+            "id": 12,
+            "name": "Varie",
+            "slug": "varie"
+          }
+        ],
+        "genres": [
+          {
+            "id": 41,
+            "name": "Musica",
+            "slug": "musica"
+          }
+        ]
+      },
+      "channel": {
+        "id": 42,
+        "name": "Rai 1 HD",
+        "description": "Canale 1 tivùsat\r\nCanale 1 DTT",
+        "editor": "RAI",
+        "icon": "uploads/channel/dd39d13edc5e24dc57f355ab6030ec85ba4ad945.png",
+        "icon2x": "uploads/channel/d64e56641cfdf2ec1d343cf331286073a409c8cb.png",
+        "icon3x": "uploads/channel/6bd671462cda55ac3b011e5acc561e391ccc3761.png",
+        "iconMono": "uploads/channel/ed002807c483978a337342bf06ca06432dd3ae10.png",
+        "locatorsSat": "dvb://13e.1450.d49,dvb://13e.3070.d49",
+        "locatorsDtt": "dvb://217c.d5.641,dvb://217c.71.44d,dvb://217c.8f.4e3",
+        "is_dtt": true,
+        "is_sat": true,
+        "channel_dtt": 1,
+        "channel_sat": 1,
+        "channel_catchup": 1000,
+        "is_catchup": false,
+        "is_hd": true,
+        "is_primary_sat": false,
+        "is_primary_dtt": false,
+        "channel_father": {
+          "id": 1,
+          "name": "Rai 1",
+          "editor": "RAI",
+          "icon": "uploads/channel/f39e198eb18f479198c8f2687614c9c83fae6b50.png",
+          "icon2x": "uploads/channel/e5ed9c3a28e5f5ae50fa0a368ee1e1c550ba50ce.png",
+          "iconMono": "uploads/channel/6975d36901670f2fed967ca5b7523a506ab8caad.png",
+          "locatorsSat": "",
+          "locatorsDtt": "dvb://13e.1.d49,dvb://13e.4000.d49,dvb://13e.4800.d49,dvb://13e.5000.d49,dvb://13e.5800.d49,dvb://13e.6000.d49,dvb://13e.6800.d49,dvb://13e.7000.d49,dvb://13e.7800.d49,dvb://13e.8800.d49,dvb://13e.9000.d49,dvb://13e.9800.d49,dvb://13e.a000.d49",
+          "is_dtt": false,
+          "is_sat": true,
+          "channel_dtt": 0,
+          "channel_sat": 101,
+          "channel_catchup": 1,
+          "is_catchup": false,
+          "is_hd": false,
+          "is_primary_sat": false,
+          "is_primary_dtt": false
+        }
+      },
+      "images": [
+        {
+          "url": "https://www.raiplay.it/resizegd/640x-/dl/img/2026/02/23/1771850079054_2048x1152%207.jpg",
+          "size": "100x100",
+          "dimension": "0",
+          "tag": "thumbnail",
+          "priority": 0
+        }
+      ]
+    },
+    {
+      "id": 50367444,
+      "date_start": "26-02-2026 01:15",
+      "date_end": "26-02-2026 02:20",
+      "duration": 65,
+      "program": {
+        "id": 50367780,
+        "title": "DopoFestival",
+        "description": "Nicola Savino, in compagnia di Aurora Leone, Federico Basso e il maestro Enrico Cremonesi, incontra i protagonisti del Festival di Sanremo, con ospiti speciali, commenti a caldo, curiosità e highlights della serata.",
+        "url_poster": "https://www.raiplay.it/resizegd/640x-/dl/img/2026/02/18/1771402500470_2048x1152.jpg",
+        "url_web": "/dirette/rai1",
+        "url_live": "http://www.rai.tv/dl/RaiTV/dirette/PublishingBlock-64203784-70f7-4b53-9d21-b14693850195.html",
+        "categories": [
+          {
+            "id": 12,
+            "name": "Varie",
+            "slug": "varie"
+          }
+        ],
+        "genres": [
+          {
+            "id": 21,
+            "name": "Varietà",
+            "slug": "varieta"
+          }
+        ]
+      },
+      "channel": {
+        "id": 42,
+        "name": "Rai 1 HD",
+        "description": "Canale 1 tivùsat\r\nCanale 1 DTT",
+        "editor": "RAI",
+        "icon": "uploads/channel/dd39d13edc5e24dc57f355ab6030ec85ba4ad945.png",
+        "icon2x": "uploads/channel/d64e56641cfdf2ec1d343cf331286073a409c8cb.png",
+        "icon3x": "uploads/channel/6bd671462cda55ac3b011e5acc561e391ccc3761.png",
+        "iconMono": "uploads/channel/ed002807c483978a337342bf06ca06432dd3ae10.png",
+        "locatorsSat": "dvb://13e.1450.d49,dvb://13e.3070.d49",
+        "locatorsDtt": "dvb://217c.d5.641,dvb://217c.71.44d,dvb://217c.8f.4e3",
+        "is_dtt": true,
+        "is_sat": true,
+        "channel_dtt": 1,
+        "channel_sat": 1,
+        "channel_catchup": 1000,
+        "is_catchup": false,
+        "is_hd": true,
+        "is_primary_sat": false,
+        "is_primary_dtt": false,
+        "channel_father": {
+          "id": 1,
+          "name": "Rai 1",
+          "editor": "RAI",
+          "icon": "uploads/channel/f39e198eb18f479198c8f2687614c9c83fae6b50.png",
+          "icon2x": "uploads/channel/e5ed9c3a28e5f5ae50fa0a368ee1e1c550ba50ce.png",
+          "iconMono": "uploads/channel/6975d36901670f2fed967ca5b7523a506ab8caad.png",
+          "locatorsSat": "",
+          "locatorsDtt": "dvb://13e.1.d49,dvb://13e.4000.d49,dvb://13e.4800.d49,dvb://13e.5000.d49,dvb://13e.5800.d49,dvb://13e.6000.d49,dvb://13e.6800.d49,dvb://13e.7000.d49,dvb://13e.7800.d49,dvb://13e.8800.d49,dvb://13e.9000.d49,dvb://13e.9800.d49,dvb://13e.a000.d49",
+          "is_dtt": false,
+          "is_sat": true,
+          "channel_dtt": 0,
+          "channel_sat": 101,
+          "channel_catchup": 1,
+          "is_catchup": false,
+          "is_hd": false,
+          "is_primary_sat": false,
+          "is_primary_dtt": false
+        }
+      },
+      "images": [
+        {
+          "url": "https://www.raiplay.it/resizegd/640x-/dl/img/2026/02/18/1771402500470_2048x1152.jpg",
+          "size": "640x360",
+          "dimension": "54262",
+          "tag": "medium",
+          "priority": 0
+        }
+      ]
+    },
+    {
+      "id": 50367445,
+      "date_start": "26-02-2026 02:20",
+      "date_end": "26-02-2026 02:25",
+      "duration": 5,
+      "program": {
+        "id": 50367781,
+        "title": "Che tempo fa",
+        "description": "",
+        "url_poster": "https://www.raiplay.it/resizegd/640x-/dl/img/2025/11/20/1763645586214_RaiMeteo2048x1152.png",
+        "url_web": "/dirette/rai1",
+        "url_live": "http://www.rai.tv/dl/RaiTV/dirette/PublishingBlock-64203784-70f7-4b53-9d21-b14693850195.html",
+        "categories": [
+          {
+            "id": 12,
+            "name": "Varie",
+            "slug": "varie"
+          }
+        ],
+        "genres": []
+      },
+      "channel": {
+        "id": 42,
+        "name": "Rai 1 HD",
+        "description": "Canale 1 tivùsat\r\nCanale 1 DTT",
+        "editor": "RAI",
+        "icon": "uploads/channel/dd39d13edc5e24dc57f355ab6030ec85ba4ad945.png",
+        "icon2x": "uploads/channel/d64e56641cfdf2ec1d343cf331286073a409c8cb.png",
+        "icon3x": "uploads/channel/6bd671462cda55ac3b011e5acc561e391ccc3761.png",
+        "iconMono": "uploads/channel/ed002807c483978a337342bf06ca06432dd3ae10.png",
+        "locatorsSat": "dvb://13e.1450.d49,dvb://13e.3070.d49",
+        "locatorsDtt": "dvb://217c.d5.641,dvb://217c.71.44d,dvb://217c.8f.4e3",
+        "is_dtt": true,
+        "is_sat": true,
+        "channel_dtt": 1,
+        "channel_sat": 1,
+        "channel_catchup": 1000,
+        "is_catchup": false,
+        "is_hd": true,
+        "is_primary_sat": false,
+        "is_primary_dtt": false,
+        "channel_father": {
+          "id": 1,
+          "name": "Rai 1",
+          "editor": "RAI",
+          "icon": "uploads/channel/f39e198eb18f479198c8f2687614c9c83fae6b50.png",
+          "icon2x": "uploads/channel/e5ed9c3a28e5f5ae50fa0a368ee1e1c550ba50ce.png",
+          "iconMono": "uploads/channel/6975d36901670f2fed967ca5b7523a506ab8caad.png",
+          "locatorsSat": "",
+          "locatorsDtt": "dvb://13e.1.d49,dvb://13e.4000.d49,dvb://13e.4800.d49,dvb://13e.5000.d49,dvb://13e.5800.d49,dvb://13e.6000.d49,dvb://13e.6800.d49,dvb://13e.7000.d49,dvb://13e.7800.d49,dvb://13e.8800.d49,dvb://13e.9000.d49,dvb://13e.9800.d49,dvb://13e.a000.d49",
+          "is_dtt": false,
+          "is_sat": true,
+          "channel_dtt": 0,
+          "channel_sat": 101,
+          "channel_catchup": 1,
+          "is_catchup": false,
+          "is_hd": false,
+          "is_primary_sat": false,
+          "is_primary_dtt": false
+        }
+      },
+      "images": [
+        {
+          "url": "https://www.raiplay.it/resizegd/640x-/dl/img/2025/11/20/1763645586214_RaiMeteo2048x1152.png",
+          "size": "640x360",
+          "dimension": "12235",
+          "tag": "medium",
+          "priority": 0
+        }
+      ]
+    },
+    {
+      "id": 50367446,
+      "date_start": "26-02-2026 02:25",
+      "date_end": "26-02-2026 03:40",
+      "duration": 75,
+      "program": {
+        "id": 50367782,
+        "title": "L'Eredità",
+        "description": "Marco Liorni conduce il gioco a quiz in cui 6 concorrenti più il campione si sfidano in 6 diversi giochi ad eliminazione, fino ad arrivare alla ''Ghigliottina'', in cui il finalista deve indovinare una parola attraverso 5 indizi in 60 secondi di tempo.",
+        "url_poster": "https://www.raiplay.it/resizegd/640x-/dl/img/2024/01/01/1704147154085_2048x1152%207.jpg",
+        "url_web": "/dirette/rai1",
+        "url_live": "http://www.rai.tv/dl/RaiTV/dirette/PublishingBlock-64203784-70f7-4b53-9d21-b14693850195.html",
+        "categories": [
+          {
+            "id": 12,
+            "name": "Varie",
+            "slug": "varie"
+          }
+        ],
+        "genres": []
+      },
+      "channel": {
+        "id": 42,
+        "name": "Rai 1 HD",
+        "description": "Canale 1 tivùsat\r\nCanale 1 DTT",
+        "editor": "RAI",
+        "icon": "uploads/channel/dd39d13edc5e24dc57f355ab6030ec85ba4ad945.png",
+        "icon2x": "uploads/channel/d64e56641cfdf2ec1d343cf331286073a409c8cb.png",
+        "icon3x": "uploads/channel/6bd671462cda55ac3b011e5acc561e391ccc3761.png",
+        "iconMono": "uploads/channel/ed002807c483978a337342bf06ca06432dd3ae10.png",
+        "locatorsSat": "dvb://13e.1450.d49,dvb://13e.3070.d49",
+        "locatorsDtt": "dvb://217c.d5.641,dvb://217c.71.44d,dvb://217c.8f.4e3",
+        "is_dtt": true,
+        "is_sat": true,
+        "channel_dtt": 1,
+        "channel_sat": 1,
+        "channel_catchup": 1000,
+        "is_catchup": false,
+        "is_hd": true,
+        "is_primary_sat": false,
+        "is_primary_dtt": false,
+        "channel_father": {
+          "id": 1,
+          "name": "Rai 1",
+          "editor": "RAI",
+          "icon": "uploads/channel/f39e198eb18f479198c8f2687614c9c83fae6b50.png",
+          "icon2x": "uploads/channel/e5ed9c3a28e5f5ae50fa0a368ee1e1c550ba50ce.png",
+          "iconMono": "uploads/channel/6975d36901670f2fed967ca5b7523a506ab8caad.png",
+          "locatorsSat": "",
+          "locatorsDtt": "dvb://13e.1.d49,dvb://13e.4000.d49,dvb://13e.4800.d49,dvb://13e.5000.d49,dvb://13e.5800.d49,dvb://13e.6000.d49,dvb://13e.6800.d49,dvb://13e.7000.d49,dvb://13e.7800.d49,dvb://13e.8800.d49,dvb://13e.9000.d49,dvb://13e.9800.d49,dvb://13e.a000.d49",
+          "is_dtt": false,
+          "is_sat": true,
+          "channel_dtt": 0,
+          "channel_sat": 101,
+          "channel_catchup": 1,
+          "is_catchup": false,
+          "is_hd": false,
+          "is_primary_sat": false,
+          "is_primary_dtt": false
+        }
+      },
+      "images": [
+        {
+          "url": "https://www.raiplay.it/resizegd/640x-/dl/img/2024/01/01/1704147154085_2048x1152%207.jpg",
+          "size": "100x100",
+          "dimension": "0",
+          "tag": "thumbnail",
+          "priority": 0
+        }
+      ]
+    },
+    {
+      "id": 50367447,
+      "date_start": "26-02-2026 03:40",
+      "date_end": "26-02-2026 04:50",
+      "duration": 70,
+      "program": {
+        "id": 50367783,
+        "title": "DopoFestival",
+        "description": "Nicola Savino, in compagnia di Aurora Leone, Federico Basso e il maestro Enrico Cremonesi, incontra i protagonisti del Festival di Sanremo, con ospiti speciali, commenti a caldo, curiosità e highlights della serata.",
+        "url_poster": "https://www.raiplay.it/resizegd/640x-/dl/img/2026/02/18/1771402500470_2048x1152.jpg",
+        "url_web": "/dirette/rai1",
+        "url_live": "http://www.rai.tv/dl/RaiTV/dirette/PublishingBlock-64203784-70f7-4b53-9d21-b14693850195.html",
+        "categories": [
+          {
+            "id": 12,
+            "name": "Varie",
+            "slug": "varie"
+          }
+        ],
+        "genres": [
+          {
+            "id": 21,
+            "name": "Varietà",
+            "slug": "varieta"
+          }
+        ]
+      },
+      "channel": {
+        "id": 42,
+        "name": "Rai 1 HD",
+        "description": "Canale 1 tivùsat\r\nCanale 1 DTT",
+        "editor": "RAI",
+        "icon": "uploads/channel/dd39d13edc5e24dc57f355ab6030ec85ba4ad945.png",
+        "icon2x": "uploads/channel/d64e56641cfdf2ec1d343cf331286073a409c8cb.png",
+        "icon3x": "uploads/channel/6bd671462cda55ac3b011e5acc561e391ccc3761.png",
+        "iconMono": "uploads/channel/ed002807c483978a337342bf06ca06432dd3ae10.png",
+        "locatorsSat": "dvb://13e.1450.d49,dvb://13e.3070.d49",
+        "locatorsDtt": "dvb://217c.d5.641,dvb://217c.71.44d,dvb://217c.8f.4e3",
+        "is_dtt": true,
+        "is_sat": true,
+        "channel_dtt": 1,
+        "channel_sat": 1,
+        "channel_catchup": 1000,
+        "is_catchup": false,
+        "is_hd": true,
+        "is_primary_sat": false,
+        "is_primary_dtt": false,
+        "channel_father": {
+          "id": 1,
+          "name": "Rai 1",
+          "editor": "RAI",
+          "icon": "uploads/channel/f39e198eb18f479198c8f2687614c9c83fae6b50.png",
+          "icon2x": "uploads/channel/e5ed9c3a28e5f5ae50fa0a368ee1e1c550ba50ce.png",
+          "iconMono": "uploads/channel/6975d36901670f2fed967ca5b7523a506ab8caad.png",
+          "locatorsSat": "",
+          "locatorsDtt": "dvb://13e.1.d49,dvb://13e.4000.d49,dvb://13e.4800.d49,dvb://13e.5000.d49,dvb://13e.5800.d49,dvb://13e.6000.d49,dvb://13e.6800.d49,dvb://13e.7000.d49,dvb://13e.7800.d49,dvb://13e.8800.d49,dvb://13e.9000.d49,dvb://13e.9800.d49,dvb://13e.a000.d49",
+          "is_dtt": false,
+          "is_sat": true,
+          "channel_dtt": 0,
+          "channel_sat": 101,
+          "channel_catchup": 1,
+          "is_catchup": false,
+          "is_hd": false,
+          "is_primary_sat": false,
+          "is_primary_dtt": false
+        }
+      },
+      "images": [
+        {
+          "url": "https://www.raiplay.it/resizegd/640x-/dl/img/2026/02/18/1771402500470_2048x1152.jpg",
+          "size": "640x360",
+          "dimension": "54262",
+          "tag": "medium",
+          "priority": 0
+        }
+      ]
+    },
+    {
+      "id": 50367448,
+      "date_start": "26-02-2026 04:50",
+      "date_end": "26-02-2026 06:00",
+      "duration": 70,
+      "program": {
+        "id": 50367784,
+        "title": "RaiNews",
+        "description": "",
+        "url_poster": "https://www.raiplay.it/resizegd/640x-/dl/img/2025/12/16/1765898348700_2048x1152.jpg",
+        "url_web": "/dirette/rai1",
+        "url_live": "http://www.rai.tv/dl/RaiTV/dirette/PublishingBlock-64203784-70f7-4b53-9d21-b14693850195.html",
+        "categories": [
+          {
+            "id": 12,
+            "name": "Varie",
+            "slug": "varie"
+          }
+        ],
+        "genres": []
+      },
+      "channel": {
+        "id": 42,
+        "name": "Rai 1 HD",
+        "description": "Canale 1 tivùsat\r\nCanale 1 DTT",
+        "editor": "RAI",
+        "icon": "uploads/channel/dd39d13edc5e24dc57f355ab6030ec85ba4ad945.png",
+        "icon2x": "uploads/channel/d64e56641cfdf2ec1d343cf331286073a409c8cb.png",
+        "icon3x": "uploads/channel/6bd671462cda55ac3b011e5acc561e391ccc3761.png",
+        "iconMono": "uploads/channel/ed002807c483978a337342bf06ca06432dd3ae10.png",
+        "locatorsSat": "dvb://13e.1450.d49,dvb://13e.3070.d49",
+        "locatorsDtt": "dvb://217c.d5.641,dvb://217c.71.44d,dvb://217c.8f.4e3",
+        "is_dtt": true,
+        "is_sat": true,
+        "channel_dtt": 1,
+        "channel_sat": 1,
+        "channel_catchup": 1000,
+        "is_catchup": false,
+        "is_hd": true,
+        "is_primary_sat": false,
+        "is_primary_dtt": false,
+        "channel_father": {
+          "id": 1,
+          "name": "Rai 1",
+          "editor": "RAI",
+          "icon": "uploads/channel/f39e198eb18f479198c8f2687614c9c83fae6b50.png",
+          "icon2x": "uploads/channel/e5ed9c3a28e5f5ae50fa0a368ee1e1c550ba50ce.png",
+          "iconMono": "uploads/channel/6975d36901670f2fed967ca5b7523a506ab8caad.png",
+          "locatorsSat": "",
+          "locatorsDtt": "dvb://13e.1.d49,dvb://13e.4000.d49,dvb://13e.4800.d49,dvb://13e.5000.d49,dvb://13e.5800.d49,dvb://13e.6000.d49,dvb://13e.6800.d49,dvb://13e.7000.d49,dvb://13e.7800.d49,dvb://13e.8800.d49,dvb://13e.9000.d49,dvb://13e.9800.d49,dvb://13e.a000.d49",
+          "is_dtt": false,
+          "is_sat": true,
+          "channel_dtt": 0,
+          "channel_sat": 101,
+          "channel_catchup": 1,
+          "is_catchup": false,
+          "is_hd": false,
+          "is_primary_sat": false,
+          "is_primary_dtt": false
+        }
+      },
+      "images": [
+        {
+          "url": "https://www.raiplay.it/resizegd/640x-/dl/img/2025/12/16/1765898348700_2048x1152.jpg",
+          "size": "640x360",
+          "dimension": "92558",
+          "tag": "medium",
+          "priority": 0
+        }
+      ]
+    }
+  ]
+}

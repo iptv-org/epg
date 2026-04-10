@@ -66,10 +66,11 @@ function parseItems(content, channel) {
 }
 
 function getIconURL(images) {
-  let icon = images.find(icon => icon.type === 'landscape' && icon.withTitle === true ) ||
-             images.find(icon => icon.type === 'landscape' ) ||
+  if (!images || !Array.isArray(images)) return null
+  
+  let icon = images.find(img => img.type === 'landscape' && img.withTitle === true) ||
+             images.find(img => img.type === 'landscape') ||
              images[0]
   
-  if (icon)
-    return icon.url
+  return icon?.url || null
 }

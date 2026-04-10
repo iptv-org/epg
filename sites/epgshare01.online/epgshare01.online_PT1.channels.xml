@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
+  <channel site="epgshare01.online" site_id="PT1#RTP.Internacional.pt" lang="en" xmltv_id="">RTP Internacional</channel>
+  <channel site="epgshare01.online" site_id="PT1#SIC.Internacional.pt" lang="en" xmltv_id="">SIC Internacional</channel>
+  <channel site="epgshare01.online" site_id="PT1#TVI.Internacional.pt" lang="en" xmltv_id="">TVI Internacional</channel>
+  <channel site="epgshare01.online" site_id="PT1#Canal.Punto.2.Puerto.Rico.pt" lang="es" xmltv_id="">Canal Punto 2 Puerto Rico</channel>
+  <channel site="epgshare01.online" site_id="PT1#Canal.WAPA.2.Deportes.pt" lang="es" xmltv_id="">Canal WAPA 2 Deportes</channel>
   <channel site="epgshare01.online" site_id="PT1#1+1.pt" lang="pt" xmltv_id="">1+1</channel>
   <channel site="epgshare01.online" site_id="PT1#24Kitchen.HD.pt" lang="pt" xmltv_id="">24Kitchen HD</channel>
   <channel site="epgshare01.online" site_id="PT1#A.Bola.TV.HD.pt" lang="pt" xmltv_id="">A Bola TV HD</channel>
@@ -27,9 +32,7 @@
   <channel site="epgshare01.online" site_id="PT1#Canal.Hollywood.HD.pt" lang="pt" xmltv_id="">Canal Hollywood HD</channel>
   <channel site="epgshare01.online" site_id="PT1#Canal.NOS.HD.pt" lang="pt" xmltv_id="">Canal NOS HD</channel>
   <channel site="epgshare01.online" site_id="PT1#Canal.Panda.HD.pt" lang="pt" xmltv_id="">Canal Panda HD</channel>
-  <channel site="epgshare01.online" site_id="PT1#Canal.Punto.2.Puerto.Rico.pt" lang="es" xmltv_id="">Canal Punto 2 Puerto Rico</channel>
   <channel site="epgshare01.online" site_id="PT1#Canal.Q.pt" lang="pt" xmltv_id="">Canal Q</channel>
-  <channel site="epgshare01.online" site_id="PT1#Canal.WAPA.2.Deportes.pt" lang="es" xmltv_id="">Canal WAPA 2 Deportes</channel>
   <channel site="epgshare01.online" site_id="PT1#Canção.Nova.pt" lang="pt" xmltv_id="">Canção Nova</channel>
   <channel site="epgshare01.online" site_id="PT1#Cartoon.Network.HD.pt" lang="pt" xmltv_id="">Cartoon Network HD</channel>
   <channel site="epgshare01.online" site_id="PT1#Casa.e.Cozinha.HD.pt" lang="pt" xmltv_id="">Casa e Cozinha HD</channel>
@@ -65,9 +68,11 @@
   <channel site="epgshare01.online" site_id="PT1#Fuel.TV.HD.pt" lang="pt" xmltv_id="">Fuel TV HD</channel>
   <channel site="epgshare01.online" site_id="PT1#Globo.HD.pt" lang="pt" xmltv_id="">Globo HD</channel>
   <channel site="epgshare01.online" site_id="PT1#Globo.News.pt" lang="pt" xmltv_id="">Globo News</channel>
+  <channel site="epgshare01.online" site_id="PT1#HGTV.pt" lang="pt" xmltv_id="">HGTV</channel>
   <channel site="epgshare01.online" site_id="PT1#Horse.TV.pt" lang="pt" xmltv_id="">Horse TV</channel>
   <channel site="epgshare01.online" site_id="PT1#ID.Investigation.Discovery.pt" lang="pt" xmltv_id="">ID Investigation Discovery</channel>
   <channel site="epgshare01.online" site_id="PT1#KBS.World.HD.pt" lang="pt" xmltv_id="">KBS World HD</channel>
+  <channel site="epgshare01.online" site_id="PT1#Kuriakos.Cine.pt" lang="pt" xmltv_id="">Kuriakos Cine</channel>
   <channel site="epgshare01.online" site_id="PT1#Kuriakos.TV.pt" lang="pt" xmltv_id="">Kuriakos TV</channel>
   <channel site="epgshare01.online" site_id="PT1#Localvisão.TV.HD.pt" lang="pt" xmltv_id="">Localvisão TV HD</channel>
   <channel site="epgshare01.online" site_id="PT1#M6.pt" lang="pt" xmltv_id="">M6</channel>
@@ -106,20 +111,23 @@
   <channel site="epgshare01.online" site_id="PT1#RTP.3.HD.pt" lang="pt" xmltv_id="">RTP 3 HD</channel>
   <channel site="epgshare01.online" site_id="PT1#RTP.Açores.pt" lang="pt" xmltv_id="">RTP Açores</channel>
   <channel site="epgshare01.online" site_id="PT1#RTP.África.pt" lang="pt" xmltv_id="">RTP África</channel>
-  <channel site="epgshare01.online" site_id="PT1#RTP.Internacional.pt" lang="en" xmltv_id="">RTP Internacional</channel>
   <channel site="epgshare01.online" site_id="PT1#RTP.Madeira.pt" lang="pt" xmltv_id="">RTP Madeira</channel>
   <channel site="epgshare01.online" site_id="PT1#RTP.Memória.pt" lang="pt" xmltv_id="">RTP Memória</channel>
   <channel site="epgshare01.online" site_id="PT1#RTR.Planeta.pt" lang="pt" xmltv_id="">RTR Planeta</channel>
   <channel site="epgshare01.online" site_id="PT1#Russia.Today.pt" lang="pt" xmltv_id="">Russia Today</channel>
   <channel site="epgshare01.online" site_id="PT1#S+.HD.pt" lang="pt" xmltv_id="">S+ HD</channel>
   <channel site="epgshare01.online" site_id="PT1#SET.Asia.pt" lang="pt" xmltv_id="">SET Asia</channel>
+  <channel site="epgshare01.online" site_id="PT1#SIC.Alta.Definição.pt" lang="pt" xmltv_id="">SIC Alta Definição</channel>
   <channel site="epgshare01.online" site_id="PT1#SIC.Caras.HD.pt" lang="pt" xmltv_id="">SIC Caras HD</channel>
   <channel site="epgshare01.online" site_id="PT1#SIC.HD.pt" lang="pt" xmltv_id="">SIC HD</channel>
-  <channel site="epgshare01.online" site_id="PT1#SIC.Internacional.pt" lang="en" xmltv_id="">SIC Internacional</channel>
   <channel site="epgshare01.online" site_id="PT1#SIC.K.HD.pt" lang="pt" xmltv_id="">SIC K HD</channel>
   <channel site="epgshare01.online" site_id="PT1#SIC.Mulher.HD.pt" lang="pt" xmltv_id="">SIC Mulher HD</channel>
   <channel site="epgshare01.online" site_id="PT1#SIC.Notícias.HD.pt" lang="pt" xmltv_id="">SIC Notícias HD</channel>
+  <channel site="epgshare01.online" site_id="PT1#SIC.Notícias.pt" lang="pt" xmltv_id="">SIC Notícias</channel>
+  <channel site="epgshare01.online" site_id="PT1#SIC.Novelas.pt" lang="pt" xmltv_id="">SIC Novelas</channel>
+  <channel site="epgshare01.online" site_id="PT1#SIC.pt" lang="pt" xmltv_id="">SIC</channel>
   <channel site="epgshare01.online" site_id="PT1#SIC.Radical.HD.pt" lang="pt" xmltv_id="">SIC Radical HD</channel>
+  <channel site="epgshare01.online" site_id="PT1#SIC.Replay.pt" lang="pt" xmltv_id="">SIC Replay</channel>
   <channel site="epgshare01.online" site_id="PT1#Sky.News.pt" lang="pt" xmltv_id="">Sky News</channel>
   <channel site="epgshare01.online" site_id="PT1#SPORT.TV1.HD.pt" lang="pt" xmltv_id="">SPORT TV1 HD</channel>
   <channel site="epgshare01.online" site_id="PT1#SPORT.TV2.HD.pt" lang="pt" xmltv_id="">SPORT TV2 HD</channel>
@@ -150,6 +158,7 @@
   <channel site="epgshare01.online" site_id="PT1#Travel.Channel.HD.pt" lang="pt" xmltv_id="">Travel Channel HD</channel>
   <channel site="epgshare01.online" site_id="PT1#TV5.Monde.pt" lang="pt" xmltv_id="">TV5 Monde</channel>
   <channel site="epgshare01.online" site_id="PT1#TV.Galicia.pt" lang="pt" xmltv_id="">TV Galicia</channel>
+  <channel site="epgshare01.online" site_id="PT1#TV.Zimbo.pt" lang="pt" xmltv_id="">TV Zimbo</channel>
   <channel site="epgshare01.online" site_id="PT1#TVCine.ACTION.HD.pt" lang="pt" xmltv_id="">TVCine ACTION HD</channel>
   <channel site="epgshare01.online" site_id="PT1#TVCine.EDITION.HD.pt" lang="pt" xmltv_id="">TVCine EDITION HD</channel>
   <channel site="epgshare01.online" site_id="PT1#TVCine.EMOTION.HD.pt" lang="pt" xmltv_id="">TVCine EMOTION HD</channel>
@@ -159,7 +168,6 @@
   <channel site="epgshare01.online" site_id="PT1#tvi.africa.pt" lang="pt" xmltv_id="">tvi africa</channel>
   <channel site="epgshare01.online" site_id="PT1#tvi.ficcao.pt" lang="pt" xmltv_id="">tvi ficcao</channel>
   <channel site="epgshare01.online" site_id="PT1#TVI.HD.pt" lang="pt" xmltv_id="">TVI HD</channel>
-  <channel site="epgshare01.online" site_id="PT1#TVI.Internacional.pt" lang="en" xmltv_id="">TVI Internacional</channel>
   <channel site="epgshare01.online" site_id="PT1#tvi.internacional.pt" lang="pt" xmltv_id="">tvi internacional</channel>
   <channel site="epgshare01.online" site_id="PT1#TVI.Reality.HD.pt" lang="pt" xmltv_id="">TVI Reality HD</channel>
   <channel site="epgshare01.online" site_id="PT1#tvi.reality.pt" lang="pt" xmltv_id="">tvi reality</channel>
