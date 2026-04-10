@@ -31,9 +31,15 @@ it('can create new site config from template', () => {
 })
 
 function content(filepath: string) {
-  return fs.readFileSync(pathToFileURL(filepath), {
-    encoding: 'utf8'
-  })
+  return normalizeLineEndings(
+    fs.readFileSync(pathToFileURL(filepath), {
+      encoding: 'utf8'
+    })
+  )
+}
+
+function normalizeLineEndings(data: string) {
+  return data.replace(/\r\n/g, '\n').replace(/\r/g, '\n')
 }
 
 function exists(filepath: string) {

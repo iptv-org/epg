@@ -1,5 +1,9 @@
-const { DateTime } = require('luxon')
 const axios = require('axios')
+const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
+dayjs.extend(utc)
+dayjs.extend(timezone)
 
 module.exports = {
   site: 'zap.co.ao',
@@ -18,8 +22,8 @@ module.exports = {
         title: item.programName,
         description: item.programDescription,
         category: item.categoryName,
-        start: DateTime.fromSeconds(item.utcBeginDate).toUTC(),
-        stop: DateTime.fromSeconds(item.utcEndDate).toUTC()
+        start: dayjs.unix(item.utcBeginDate).utc(),
+        stop: dayjs.unix(item.utcEndDate).utc()
       })
     })
 
