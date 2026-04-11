@@ -11,7 +11,7 @@ RUN apk update \
     && npm install pm2 -g \
     && mkdir $(echo "${WORKDIR}") -p \
     && cd $WORKDIR \
-    && git clone --depth 1 -b $(echo "${GIT_BRANCH} ${GIT_REPO}") . \
+    && git clone --depth 1 -b $(echo "${GIT_BRANCH}") $(echo "${GIT_REPO}") . \
     && npm install \
     && mkdir /public
 RUN apk del git curl \
