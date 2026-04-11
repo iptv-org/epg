@@ -1,6 +1,10 @@
 const cheerio = require('cheerio')
 const axios = require('axios')
-const { DateTime } = require('luxon')
+const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
+dayjs.extend(utc)
+dayjs.extend(timezone)
 
 module.exports = {
   site: 'clickthecity.com',
@@ -17,7 +21,7 @@ module.exports = {
       const params = new URLSearchParams()
       params.append(
         'optDate',
-        DateTime.fromMillis(date.valueOf()).setZone('Asia/Manila').toFormat('yyyy-MM-dd')
+        dayjs(date.valueOf()).tz('Asia/Manila').format('YYYY-MM-DD')
       )
       params.append('optTime', '00:00:00')
 
@@ -33,7 +37,7 @@ module.exports = {
       let stop = parseStop($item, date)
       if (!start || !stop) return
       if (start > stop) {
-        stop = stop.plus({ days: 1 })
+        stop = stop.add(1, 'day')
       }
 
       programs.push({
@@ -77,7 +81,7 @@ function parseStart($item, date) {
   if (!time) return null
   time = `${date.format('YYYY-MM-DD')} ${time.replace('%3A', ':').replace('+', ' ')}`
 
-  return DateTime.fromFormat(time, 'yyyy-MM-dd h:mm a', { zone: 'Asia/Manila' }).toUTC()
+  return dayjs.tz(time, 'YYYY-MM-DD h:mm A', 'Asia/Manila').utc()
 }
 
 function parseStop($item, date) {
@@ -86,7 +90,7 @@ function parseStop($item, date) {
   if (!time) return null
   time = `${date.format('YYYY-MM-DD')} ${time.replace('%3A', ':').replace('+', ' ')}`
 
-  return DateTime.fromFormat(time, 'yyyy-MM-dd h:mm a', { zone: 'Asia/Manila' }).toUTC()
+  return dayjs.tz(time, 'YYYY-MM-DD h:mm A', 'Asia/Manila').utc()
 }
 
 function parseItems(content) {

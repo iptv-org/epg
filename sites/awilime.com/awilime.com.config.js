@@ -1,6 +1,10 @@
 const cheerio = require('cheerio')
 const axios = require('axios')
-const { DateTime } = require('luxon')
+const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
+dayjs.extend(utc)
+dayjs.extend(timezone)
 
 module.exports = {
   site: 'awilime.com',
@@ -25,7 +29,7 @@ module.exports = {
       if (prev) {
         prev.stop = start
       }
-      const stop = start.plus({ minute: 30 })
+      const stop = start.add(30, 'minute')
 
       programs.push({
         title: parseTitle($item),
@@ -87,7 +91,7 @@ function parseStart($item, date) {
   if (!time || !/^\d/.test(time)) return null
   time = `${date.format('YYYY-MM-DD')} ${time}`
 
-  return DateTime.fromFormat(time, 'yyyy-MM-dd HH:mm', { zone: 'Europe/Budapest' }).toUTC()
+  return dayjs.tz(time, 'YYYY-MM-DD HH:mm', 'Europe/Budapest').utc()
 }
 
 function parseItems(content) {

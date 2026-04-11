@@ -1,4 +1,3 @@
-const MockDate = require('mockdate')
 const { parser, url } = require('./programtv.onet.pl.config.js')
 const fs = require('fs')
 const path = require('path')
@@ -14,20 +13,26 @@ const channel = {
   xmltv_id: '13thStreet.de'
 }
 
+beforeEach(() => {
+  jest.useFakeTimers()
+})
+
+afterEach(() => {
+  jest.useRealTimers()
+})
+
 it('can generate valid url', () => {
-  MockDate.set(dayjs.utc('2021-11-24', 'YYYY-MM-DD').startOf('d'))
+  jest.setSystemTime(dayjs.utc('2021-11-24', 'YYYY-MM-DD').startOf('d').valueOf())
   expect(url({ channel, date })).toBe(
     'https://programtv.onet.pl/program-tv/13th-street-250?dzien=0'
   )
-  MockDate.reset()
 })
 
 it('can generate valid url for next day', () => {
-  MockDate.set(dayjs.utc('2021-11-23', 'YYYY-MM-DD').startOf('d'))
+  jest.setSystemTime(dayjs.utc('2021-11-23', 'YYYY-MM-DD').startOf('d').valueOf())
   expect(url({ channel, date })).toBe(
     'https://programtv.onet.pl/program-tv/13th-street-250?dzien=1'
   )
-  MockDate.reset()
 })
 
 it('can parse response', () => {

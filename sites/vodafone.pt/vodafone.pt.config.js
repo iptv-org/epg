@@ -1,5 +1,9 @@
-const { DateTime } = require('luxon')
 const axios = require('axios')
+const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
+dayjs.extend(utc)
+dayjs.extend(timezone)
 
 const API_ENDPOINT = 'https://cdn.pt.vtv.vodafone.com/epg'
 
@@ -18,25 +22,25 @@ module.exports = {
     headers
   },
   url: function ({ channel, date }) {
-    const datetime = DateTime.fromJSDate(date.toDate()).setZone('Europe/Lisbon')
-    const formattedMonth = datetime.month < 10 ? `0${datetime.month}` : datetime.month
-    const formattedDay = datetime.day < 10 ? `0${datetime.day}` : datetime.day
-    return `${API_ENDPOINT}/${channel.site_id}/${date.year()}/${formattedMonth}/${formattedDay}/00-06`
+    const datetime = dayjs(date.toDate()).tz('Europe/Lisbon')
+    const formattedMonth = datetime.month() + 1 < 10 ? `0${datetime.month() + 1}` : datetime.month() + 1
+    const formattedDay = datetime.date() < 10 ? `0${datetime.date()}` : datetime.date()
+    return `${API_ENDPOINT}/${channel.site_id}/${datetime.year()}/${formattedMonth}/${formattedDay}/00-06`
   },
   async parser({ content, date, channel }) {
     let programs = []
     let items = parseItems(content)
     if (items.length === 0) return programs
     
-    const datetime = DateTime.fromJSDate(date.toDate()).setZone('Europe/Lisbon')
-    const formattedMonth = datetime.month < 10 ? `0${datetime.month}` : datetime.month
-    const formattedDay = datetime.day < 10 ? `0${datetime.day}` : datetime.day
+    const datetime = dayjs(date.toDate()).tz('Europe/Lisbon')
+    const formattedMonth = datetime.month() + 1 < 10 ? `0${datetime.month() + 1}` : datetime.month() + 1
+    const formattedDay = datetime.date() < 10 ? `0${datetime.date()}` : datetime.date()
     
     // Fetch the remaining 3 periods to get a full day schedule
     const promises = [
-      axios.get(`${API_ENDPOINT}/${channel.site_id}/${date.year()}/${formattedMonth}/${formattedDay}/06-12`, { headers }),
-      axios.get(`${API_ENDPOINT}/${channel.site_id}/${date.year()}/${formattedMonth}/${formattedDay}/12-18`, { headers }),
-      axios.get(`${API_ENDPOINT}/${channel.site_id}/${date.year()}/${formattedMonth}/${formattedDay}/18-00`, { headers })
+      axios.get(`${API_ENDPOINT}/${channel.site_id}/${datetime.year()}/${formattedMonth}/${formattedDay}/06-12`, { headers }),
+      axios.get(`${API_ENDPOINT}/${channel.site_id}/${datetime.year()}/${formattedMonth}/${formattedDay}/12-18`, { headers }),
+      axios.get(`${API_ENDPOINT}/${channel.site_id}/${datetime.year()}/${formattedMonth}/${formattedDay}/18-00`, { headers })
     ]
     
     await Promise.allSettled(promises).then(results => {
@@ -49,10 +53,10 @@ module.exports = {
     
     for (let item of items) {
       if (!item.startDate || !item.endDate) continue
-      let start = DateTime.fromSeconds(item.startDate, { zone: 'UTC' }).toUTC()
-      let stop = DateTime.fromSeconds(item.endDate, { zone: 'UTC' }).toUTC()
+      let start = dayjs.unix(item.startDate).utc()
+      let stop = dayjs.unix(item.endDate).utc()
       if (stop < start) {
-        stop = stop.plus({ days: 1 })
+        stop = stop.add(1, 'day')
       }
       const prog = {
         title: item.name || 'Sem título',

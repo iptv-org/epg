@@ -2,7 +2,11 @@ const axios = require('axios')
 const cheerio = require('cheerio')
 const url = require('url')
 const path = require('path')
-const { DateTime } = require('luxon')
+const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
+dayjs.extend(utc)
+dayjs.extend(timezone)
 
 module.exports = {
   site: 'gatotv.com',
@@ -13,18 +17,18 @@ module.exports = {
   parser({ content, date }) {
     let programs = []
     const items = parseItems(content)
-    date = date.subtract(1, 'd')
+    date = date.subtract(1, 'day')
     items.forEach((item, i) => {
       const $item = cheerio.load(item)
       let start = parseStart($item, date)
-      if (i === 0 && start.hour >= 5) {
-        start = start.plus({ days: 1 })
-        date = date.add(1, 'd')
+      if (i === 0 && start.hour() >= 5) {
+        start = start.add(1, 'day')
+        date = date.add(1, 'day')
       }
       let stop = parseStop($item, date)
       if (stop < start) {
-        stop = stop.plus({ days: 1 })
-        date = date.add(1, 'd')
+        stop = stop.add(1, 'day')
+        date = date.add(1, 'day')
       }
 
       programs.push({
@@ -78,17 +82,13 @@ function parseImage($item) {
 function parseStart($item, date) {
   const time = $item('td:nth-child(1) > div > time').attr('datetime')
 
-  return DateTime.fromFormat(`${date.format('YYYY-MM-DD')} ${time}`, 'yyyy-MM-dd HH:mm', {
-    zone: 'EST'
-  }).toUTC()
+  return dayjs.tz(`${date.format('YYYY-MM-DD')} ${time}`, 'YYYY-MM-DD HH:mm', 'EST').utc()
 }
 
 function parseStop($item, date) {
   const time = $item('td:nth-child(2) > div > time').attr('datetime')
 
-  return DateTime.fromFormat(`${date.format('YYYY-MM-DD')} ${time}`, 'yyyy-MM-dd HH:mm', {
-    zone: 'EST'
-  }).toUTC()
+  return dayjs.tz(`${date.format('YYYY-MM-DD')} ${time}`, 'YYYY-MM-DD HH:mm', 'EST').utc()
 }
 
 function parseItems(content) {

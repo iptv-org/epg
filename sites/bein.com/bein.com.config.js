@@ -1,7 +1,10 @@
 const axios = require('axios')
 const dayjs = require('dayjs')
 const cheerio = require('cheerio')
-const { DateTime } = require('luxon')
+const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
+dayjs.extend(utc)
+dayjs.extend(timezone)
 
 module.exports = {
   site: 'bein.com',
@@ -24,7 +27,7 @@ module.exports = {
   parser: function ({ content, channel, date }) {
     let programs = []
     const items = parseItems(content, channel)
-    date = DateTime.fromMillis(date.valueOf()).minus({ days: 1 })
+    date = dayjs(date.valueOf()).subtract(1, 'day')
     items.forEach(item => {
       const $item = cheerio.load(item)
       const title = parseTitle($item)
@@ -34,14 +37,14 @@ module.exports = {
       let start = parseTime($item, date)
       if (prev) {
         if (start < prev.start) {
-          start = start.plus({ days: 1 })
-          date = date.plus({ days: 1 })
+          start = start.add(1, 'day')
+          date = date.add(1, 'day')
         }
         prev.stop = start
       }
       let stop = parseTime($item, start)
       if (stop < start) {
-        stop = stop.plus({ days: 1 })
+        stop = stop.add(1, 'day')
       }
       programs.push({
         title,
@@ -97,9 +100,9 @@ function parseTime($item, date) {
     .text()
     .match(/^(\d{2}:\d{2})/) || [null, null]
   if (!time) return null
-  time = `${date.toFormat('yyyy-MM-dd')} ${time}`
+  time = `${date.format('YYYY-MM-DD')} ${time}`
 
-  return DateTime.fromFormat(time, 'yyyy-MM-dd HH:mm', { zone: 'Asia/Qatar' }).toUTC()
+  return dayjs.tz(time, 'YYYY-MM-DD HH:mm', 'Asia/Qatar').utc()
 }
 
 function parseItems(content, channel) {
