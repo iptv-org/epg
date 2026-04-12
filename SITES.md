@@ -19,6 +19,7 @@
     <tr><td><a href="sites/arirang.com">arirang.com</a></td><td align="right">3</td><td align="right">3</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/artonline.tv">artonline.tv</a></td><td align="right">5</td><td align="right">5</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/awilime.com">awilime.com</a></td><td align="right">110</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/ayn.om">ayn.om</a></td><td align="right">4</td><td align="right">4</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/bein.com">bein.com</a></td><td align="right">134</td><td align="right">134</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/beinsports.com">beinsports.com</a></td><td align="right">130</td><td align="right">81</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/berrymedia.co.kr">berrymedia.co.kr</a></td><td align="right">5</td><td align="right">5</td><td align="center">🟢</td><td></td></tr>
@@ -67,6 +68,7 @@
     <tr><td><a href="sites/gatotv.com">gatotv.com</a></td><td align="right">475</td><td align="right">360</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/getafteritmedia.com">getafteritmedia.com</a></td><td align="right">5</td><td align="right">5</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/gigatv.3bbtv.co.th">gigatv.3bbtv.co.th</a></td><td align="right">79</td><td align="right">37</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/go3.ee">go3.ee</a></td><td align="right">147</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/guiadetv.com">guiadetv.com</a></td><td align="right">124</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/guida.tv">guida.tv</a></td><td align="right">88</td><td align="right">86</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/guidatv.sky.it">guidatv.sky.it</a></td><td align="right">154</td><td align="right">154</td><td align="center">🟢</td><td></td></tr>
@@ -188,6 +190,7 @@
     <tr><td><a href="sites/tv.lv">tv.lv</a></td><td align="right">137</td><td align="right">49</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv.magenta.at">tv.magenta.at</a></td><td align="right">307</td><td align="right">219</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv.mail.ru">tv.mail.ru</a></td><td align="right">664</td><td align="right">632</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/tv.movistar.co">tv.movistar.co</a></td><td align="right">97</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv.movistar.com.pe">tv.movistar.com.pe</a></td><td align="right">262</td><td align="right">31</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv.nu">tv.nu</a></td><td align="right">199</td><td align="right">180</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv.post.lu">tv.post.lu</a></td><td align="right">332</td><td align="right">241</td><td align="center">🟢</td><td></td></tr>
