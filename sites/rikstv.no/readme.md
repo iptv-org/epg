@@ -5,7 +5,7 @@ https://play.rikstv.no/tv-guide
 ### Download the guide
 
 ```sh
-npm run grab --- --site=rikstv.no
+npm run grab --- --sites=rikstv.no
 ```
 
 ### Update channel list

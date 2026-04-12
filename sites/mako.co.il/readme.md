@@ -5,7 +5,7 @@ https://www.mako.co.il/tv-tv-schedule
 ### Download the guide
 
 ```sh
-npm run grab --- --site=mako.co.il
+npm run grab --- --sites=mako.co.il
 ```
 
 ### Test

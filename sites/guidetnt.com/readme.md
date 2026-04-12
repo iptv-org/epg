@@ -5,7 +5,7 @@ https://www.guidetnt.com/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=guidetnt.com
+npm run grab --- --sites=guidetnt.com
 ```
 
 ### Update channel list

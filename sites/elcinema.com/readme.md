@@ -9,13 +9,13 @@ https://elcinema.com/en/tvguide/ (English)
 Arabic:
 
 ```sh
-npm run grab --- --site=elcinema.com --lang=ar
+npm run grab --- --sites=elcinema.com --lang=ar
 ```
 
 English:
 
 ```sh
-npm run grab --- --site=elcinema.com --lang=en
+npm run grab --- --sites=elcinema.com --lang=en
 ```
 
 ### Update channel list

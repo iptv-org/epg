@@ -5,7 +5,7 @@ https://chaines-tv.orange.fr/programme-tv
 ### Download the guide
 
 ```sh
-npm run grab --- --site=chaines-tv.orange.fr
+npm run grab --- --sites=chaines-tv.orange.fr
 ```
 
 ### Update channel list

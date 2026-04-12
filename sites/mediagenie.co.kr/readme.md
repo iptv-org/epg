@@ -5,7 +5,7 @@ https://mediagenie.co.kr/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=mediagenie.co.kr
+npm run grab --- --sites=mediagenie.co.kr
 ```
 
 ### Test

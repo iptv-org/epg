@@ -5,7 +5,7 @@ https://stod2.is/dagskra/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=stod2.is
+npm run grab --- --sites=stod2.is
 ```
 
 ### Update channel list

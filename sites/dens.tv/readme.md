@@ -5,7 +5,7 @@ https://www.dens.tv/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=dens.tv
+npm run grab --- --sites=dens.tv
 ```
 
 ### Update channel list

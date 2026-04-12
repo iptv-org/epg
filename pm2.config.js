@@ -1,5 +1,5 @@
-const grab = process.env.SITE
-  ? `npm run grab -- --site=${process.env.SITE} ${
+const grab = process.env.SITES
+  ? `npm run grab -- --sites=${process.env.SITES} ${
       process.env.CLANG ? `--lang=${process.env.CLANG}` : ''
     } --output=public/guide.xml`
   : 'npm run grab -- --channels=public/channels.xml --output=public/guide.xml'

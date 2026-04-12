@@ -5,7 +5,7 @@ https://www.freeview.co.uk/tv-guide
 ### Download the guide
 
 ```sh
-npm run grab --- --site=freeview.co.uk
+npm run grab --- --sites=freeview.co.uk
 ```
 
 ### Update channel list

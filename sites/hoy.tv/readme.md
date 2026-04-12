@@ -5,7 +5,7 @@ https://hoy.tv/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=hoy.tv
+npm run grab --- --sites=hoy.tv
 ```
 
 ### Update channel list

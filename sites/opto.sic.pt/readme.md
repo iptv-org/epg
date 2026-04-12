@@ -5,7 +5,7 @@ https://opto.sic.pt/guia-tv
 ### Download the guide
 
 ```sh
-npm run grab --- --site=opto.sic.pt
+npm run grab --- --sites=opto.sic.pt
 ```
 
 ### Update channel list

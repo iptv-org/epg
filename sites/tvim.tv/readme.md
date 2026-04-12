@@ -5,7 +5,7 @@ https://www.tvim.tv/tv-guide/on-tvim
 ### Download the guide
 
 ```sh
-npm run grab --- --site=tvim.tv
+npm run grab --- --sites=tvim.tv
 ```
 
 ### Update channel list

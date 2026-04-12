@@ -5,7 +5,7 @@ https://www.tvgids.nl/gids/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=tvgids.nl
+npm run grab --- --sites=tvgids.nl
 ```
 
 ### Update channel list

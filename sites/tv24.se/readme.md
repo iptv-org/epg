@@ -5,7 +5,7 @@ https://tv24.se/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=tv24.se
+npm run grab --- --sites=tv24.se
 ```
 
 ### Update channel list

@@ -5,7 +5,7 @@ https://tv2go.t-2.net/tv/epg/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=tv2go.t-2.net
+npm run grab --- --sites=tv2go.t-2.net
 ```
 
 ### Update channel list
