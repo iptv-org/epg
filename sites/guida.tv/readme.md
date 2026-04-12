@@ -5,7 +5,7 @@ https://www.guida.tv/programmi-tv/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=guida.tv
+npm run grab --- --sites=guida.tv
 ```
 
 ### Update channel list

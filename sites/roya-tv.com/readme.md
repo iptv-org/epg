@@ -5,7 +5,7 @@ https://en.roya.tv/live-stream
 ### Download the guide
 
 ```sh
-npm run grab --- --site=roya-tv.com
+npm run grab --- --sites=roya-tv.com
 ```
 
 ### Update channel list

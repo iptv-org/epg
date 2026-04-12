@@ -5,7 +5,7 @@ https://www.dna.fi/viihde/dna-viihde/tvopas
 ### Download the guide
 
 ```sh
-npm run grab --- --site=dna.fi
+npm run grab --- --sites=dna.fi
 ```
 
 ### Update channel list

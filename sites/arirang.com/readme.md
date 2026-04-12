@@ -5,7 +5,7 @@ https://arirang.com/schedule
 ### Download the guide
 
 ```sh
-npm run grab --- --site=arirang.com
+npm run grab --- --sites=arirang.com
 ```
 
 ### Test

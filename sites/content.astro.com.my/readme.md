@@ -5,7 +5,7 @@ https://content.astro.com.my/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=content.astro.com.my
+npm run grab --- --sites=content.astro.com.my
 ```
 
 ### Update channel list

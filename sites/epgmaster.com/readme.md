@@ -5,7 +5,7 @@ https://epgmaster.com
 ### Download the guide
 
 ```sh
-npm run grab --- --site=epgmaster.com
+npm run grab --- --sites=epgmaster.com
 ```
 
 ### Test

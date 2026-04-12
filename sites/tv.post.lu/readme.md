@@ -5,7 +5,7 @@ https://tv.post.lu/en/tv-programme/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=tv.post.lu
+npm run grab --- --sites=tv.post.lu
 ```
 
 ### Update channel list

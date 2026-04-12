@@ -5,7 +5,7 @@ https://www.telenet.tv/nl/epg/initial
 ### Download the guide
 
 ```sh
-npm run grab --- --site=telenet.tv
+npm run grab --- --sites=telenet.tv
 ```
 
 ### Update channel list

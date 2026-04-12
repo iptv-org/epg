@@ -5,7 +5,7 @@ https://www.teleboy.ch/programm
 ### Download the guide
 
 ```sh
-npm run grab --- --site=teleboy.ch
+npm run grab --- --sites=teleboy.ch
 ```
 
 ### Update channel list

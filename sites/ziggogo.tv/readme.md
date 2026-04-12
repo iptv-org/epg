@@ -5,7 +5,7 @@ https://www.ziggogo.tv/nl/epg/initial
 ### Download the guide
 
 ```sh
-npm run grab --- --site=ziggogo.tv
+npm run grab --- --sites=ziggogo.tv
 ```
 
 ### Update channel list

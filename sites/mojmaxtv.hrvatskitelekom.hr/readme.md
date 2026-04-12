@@ -5,7 +5,7 @@ https://mojmaxtv.hrvatskitelekom.hr/epg
 ### Download the guide
 
 ```sh
-npm run grab --- --site=mojmaxtv.hrvatskitelekom.hr
+npm run grab --- --sites=mojmaxtv.hrvatskitelekom.hr
 ```
 
 ### Update channel list

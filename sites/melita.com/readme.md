@@ -5,7 +5,7 @@ https://www.melita.com/tv-schedule/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=melita.com
+npm run grab --- --sites=melita.com
 ```
 
 ### Update channel list

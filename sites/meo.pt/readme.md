@@ -5,7 +5,7 @@ https://www.meo.pt/tv/canais-programacao/guia-tv
 ### Download the guide
 
 ```sh
-npm run grab --- --site=meo.pt
+npm run grab --- --sites=meo.pt
 ```
 
 ### Update channel list

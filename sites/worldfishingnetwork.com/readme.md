@@ -5,7 +5,7 @@ https://www.worldfishingnetwork.com/schedule/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=worldfishingnetwork.com
+npm run grab --- --sites=worldfishingnetwork.com
 ```
 
 ### Test
