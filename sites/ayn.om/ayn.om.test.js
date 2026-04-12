@@ -16,7 +16,7 @@ it('can generate valid url', () => {
 })
 
 it('can parse response for today', () => {
-  jest.useFakeTimers().setSystemTime(new Date('2026-04-08'))
+  jest.useFakeTimers().setSystemTime(new Date('2026-04-08').getTime())
   const date = dayjs.utc('2026-04-08', 'YYYY-MM-DD').startOf('d')
   const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.html'))
 
