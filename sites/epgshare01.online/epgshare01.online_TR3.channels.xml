@@ -1,111 +1,283 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
+  <channel site="epgshare01.online" site_id="TR3#24.HD.tr" lang="tr" xmltv_id="">24 HD</channel>
   <channel site="epgshare01.online" site_id="TR3#24.tr" lang="tr" xmltv_id="">24</channel>
+  <channel site="epgshare01.online" site_id="TR3#90’.LAR.tr" lang="tr" xmltv_id="">90’ LAR</channel>
+  <channel site="epgshare01.online" site_id="TR3#360.HD.tr" lang="tr" xmltv_id="">360 HD</channel>
   <channel site="epgshare01.online" site_id="TR3#360.tr" lang="tr" xmltv_id="">360</channel>
-  <channel site="epgshare01.online" site_id="TR3#a2.tr" lang="tr" xmltv_id="">a2</channel>
-  <channel site="epgshare01.online" site_id="TR3#a.Haber.tr" lang="tr" xmltv_id="">a Haber</channel>
-  <channel site="epgshare01.online" site_id="TR3#a.News.tr" lang="tr" xmltv_id="">a News</channel>
-  <channel site="epgshare01.online" site_id="TR3#A.Para.tr" lang="tr" xmltv_id="">A Para</channel>
-  <channel site="epgshare01.online" site_id="TR3#a.Spor.tr" lang="tr" xmltv_id="">a Spor</channel>
+  <channel site="epgshare01.online" site_id="TR3#A2.HD.tr" lang="tr" xmltv_id="">A2 HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#A2.tr" lang="tr" xmltv_id="">A2</channel>
+  <channel site="epgshare01.online" site_id="TR3#A.HABER.HD.tr" lang="tr" xmltv_id="">A HABER HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#A.HABER.tr" lang="tr" xmltv_id="">A HABER</channel>
+  <channel site="epgshare01.online" site_id="TR3#A.NEWS.HD.tr" lang="tr" xmltv_id="">A NEWS HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#A.PARA.HD.tr" lang="tr" xmltv_id="">A PARA HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#A.PARA.tr" lang="tr" xmltv_id="">A PARA</channel>
+  <channel site="epgshare01.online" site_id="TR3#A.SPOR.HD.tr" lang="tr" xmltv_id="">A SPOR HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#A.SPOR.tr" lang="tr" xmltv_id="">A SPOR</channel>
+  <channel site="epgshare01.online" site_id="TR3#AKİT.TV.HD.tr" lang="tr" xmltv_id="">AKİT TV HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#AKİT.TV.tr" lang="tr" xmltv_id="">AKİT TV</channel>
+  <channel site="epgshare01.online" site_id="TR3#AKUSTİK.tr" lang="tr" xmltv_id="">AKUSTİK</channel>
+  <channel site="epgshare01.online" site_id="TR3#AL.JAZEERA.ARABIC.HD.tr" lang="tr" xmltv_id="">AL JAZEERA ARABIC HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#AL.JAZEERA.ARABIC.tr" lang="tr" xmltv_id="">AL JAZEERA ARABIC</channel>
+  <channel site="epgshare01.online" site_id="TR3#AL.JAZEERA.ENGLISH.tr" lang="tr" xmltv_id="">AL JAZEERA ENGLISH</channel>
+  <channel site="epgshare01.online" site_id="TR3#AL.JAZEERA.INTERNATIONAL.tr" lang="tr" xmltv_id="">AL JAZEERA INTERNATIONAL</channel>
+  <channel site="epgshare01.online" site_id="TR3#AL.SUNNAH.tr" lang="tr" xmltv_id="">AL SUNNAH</channel>
+  <channel site="epgshare01.online" site_id="TR3#ANEWS.tr" lang="tr" xmltv_id="">ANEWS</channel>
+  <channel site="epgshare01.online" site_id="TR3#ARABESK.tr" lang="tr" xmltv_id="">ARABESK</channel>
+  <channel site="epgshare01.online" site_id="TR3#AS.TV.tr" lang="tr" xmltv_id="">AS TV</channel>
+  <channel site="epgshare01.online" site_id="TR3#ATV.HD.tr" lang="tr" xmltv_id="">ATV HD</channel>
   <channel site="epgshare01.online" site_id="TR3#ATV.tr" lang="tr" xmltv_id="">ATV</channel>
-  <channel site="epgshare01.online" site_id="TR3#Baby.TV.tr" lang="tr" xmltv_id="">Baby TV</channel>
-  <channel site="epgshare01.online" site_id="TR3#BBC.Earth.tr" lang="tr" xmltv_id="">BBC Earth</channel>
-  <channel site="epgshare01.online" site_id="TR3#BBC.World.News.tr" lang="tr" xmltv_id="">BBC World News</channel>
-  <channel site="epgshare01.online" site_id="TR3#Beyaz.TV.tr" lang="tr" xmltv_id="">Beyaz TV</channel>
-  <channel site="epgshare01.online" site_id="TR3#Bloomberg.HT.tr" lang="tr" xmltv_id="">Bloomberg HT</channel>
-  <channel site="epgshare01.online" site_id="TR3#CAROUSEL.TV.tr" lang="tr" xmltv_id="">CAROUSEL TV</channel>
-  <channel site="epgshare01.online" site_id="TR3#Cartoon.Network.tr" lang="tr" xmltv_id="">Cartoon Network</channel>
+  <channel site="epgshare01.online" site_id="TR3#BABYTV.tr" lang="tr" xmltv_id="">BABYTV</channel>
+  <channel site="epgshare01.online" site_id="TR3#BBC.EARTH.tr" lang="tr" xmltv_id="">BBC EARTH</channel>
+  <channel site="epgshare01.online" site_id="TR3#BBC.FIRST.tr" lang="tr" xmltv_id="">BBC FIRST</channel>
+  <channel site="epgshare01.online" site_id="TR3#BBC.News.tr" lang="tr" xmltv_id="">BBC News</channel>
+  <channel site="epgshare01.online" site_id="TR3#BBC.NEWS.tr" lang="tr" xmltv_id="">BBC NEWS</channel>
+  <channel site="epgshare01.online" site_id="TR3#BENGÜTÜRK.tr" lang="tr" xmltv_id="">BENGÜTÜRK</channel>
+  <channel site="epgshare01.online" site_id="TR3#BENİM.KANALIM.tr" lang="tr" xmltv_id="">BENİM KANALIM</channel>
+  <channel site="epgshare01.online" site_id="TR3#BEYAZ.TV.HD.tr" lang="tr" xmltv_id="">BEYAZ TV HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#BEYAZ.TV.tr" lang="tr" xmltv_id="">BEYAZ TV</channel>
+  <channel site="epgshare01.online" site_id="TR3#Bi.Kanal.tr" lang="tr" xmltv_id="">Bi Kanal</channel>
+  <channel site="epgshare01.online" site_id="TR3#BİZİM.EV.TV.tr" lang="tr" xmltv_id="">BİZİM EV TV</channel>
+  <channel site="epgshare01.online" site_id="TR3#BLOOMBERG.HT.HD.tr" lang="tr" xmltv_id="">BLOOMBERG HT HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#BLOOMBERG.HT.tr" lang="tr" xmltv_id="">BLOOMBERG HT</channel>
+  <channel site="epgshare01.online" site_id="TR3#Bloomberg.tr" lang="tr" xmltv_id="">Bloomberg</channel>
+  <channel site="epgshare01.online" site_id="TR3#BLOOMBERG.tr" lang="tr" xmltv_id="">BLOOMBERG</channel>
+  <channel site="epgshare01.online" site_id="TR3#BLUES.tr" lang="tr" xmltv_id="">BLUES</channel>
+  <channel site="epgshare01.online" site_id="TR3#BluTV.Play.1.tr" lang="tr" xmltv_id="">BluTV Play 1</channel>
+  <channel site="epgshare01.online" site_id="TR3#BluTV.Play.2.tr" lang="tr" xmltv_id="">BluTV Play 2</channel>
+  <channel site="epgshare01.online" site_id="TR3#BRT.1.HD.tr" lang="tr" xmltv_id="">BRT 1 HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#BRT.2.HD.tr" lang="tr" xmltv_id="">BRT 2 HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#ÇALIŞIRKEN.tr" lang="tr" xmltv_id="">ÇALIŞIRKEN</channel>
+  <channel site="epgshare01.online" site_id="TR3#CARTOON.NETWORK.tr" lang="tr" xmltv_id="">CARTOON NETWORK</channel>
   <channel site="epgshare01.online" site_id="TR3#CARTOONITO.tr" lang="tr" xmltv_id="">CARTOONITO</channel>
+  <channel site="epgshare01.online" site_id="TR3#ÇİFTÇİ.TV.tr" lang="tr" xmltv_id="">ÇİFTÇİ TV</channel>
+  <channel site="epgshare01.online" site_id="TR3#CNBC-E.tr" lang="tr" xmltv_id="">CNBC-E</channel>
+  <channel site="epgshare01.online" site_id="TR3#CNBC-e.tr" lang="tr" xmltv_id="">CNBC-e</channel>
+  <channel site="epgshare01.online" site_id="TR3#CNBC.tr" lang="tr" xmltv_id="">CNBC</channel>
   <channel site="epgshare01.online" site_id="TR3#CNN.International.tr" lang="tr" xmltv_id="">CNN International</channel>
-  <channel site="epgshare01.online" site_id="TR3#Da.Vinci.Learning.tr" lang="tr" xmltv_id="">Da Vinci Learning</channel>
-  <channel site="epgshare01.online" site_id="TR3#Discovery.Science.tr" lang="tr" xmltv_id="">Discovery Science</channel>
-  <channel site="epgshare01.online" site_id="TR3#Discovery.tr" lang="tr" xmltv_id="">Discovery</channel>
-  <channel site="epgshare01.online" site_id="TR3#Disney.Junior.tr" lang="tr" xmltv_id="">Disney Junior</channel>
-  <channel site="epgshare01.online" site_id="TR3#Diyanet.Tv.tr" lang="tr" xmltv_id="">Diyanet Tv</channel>
-  <channel site="epgshare01.online" site_id="TR3#Dizi.Smart.Max.tr" lang="tr" xmltv_id="">Dizi Smart Max</channel>
-  <channel site="epgshare01.online" site_id="TR3#Dizi.Smart.Premium.tr" lang="tr" xmltv_id="">Dizi Smart Premium</channel>
+  <channel site="epgshare01.online" site_id="TR3#CNN.INTERNATIONAL.tr" lang="tr" xmltv_id="">CNN INTERNATIONAL</channel>
+  <channel site="epgshare01.online" site_id="TR3#CNN.TÜRK.HD.tr" lang="tr" xmltv_id="">CNN TÜRK HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#CNN.TÜRK.tr" lang="tr" xmltv_id="">CNN TÜRK</channel>
+  <channel site="epgshare01.online" site_id="TR3#COSMO.SPORTS.tr" lang="tr" xmltv_id="">COSMO SPORTS</channel>
+  <channel site="epgshare01.online" site_id="TR3#DA.VINCI.HD.tr" lang="tr" xmltv_id="">DA VINCI HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#DA.VINCI.tr" lang="tr" xmltv_id="">DA VINCI</channel>
+  <channel site="epgshare01.online" site_id="TR3#DEUTSCHE.WELLE.ENGLISH.tr" lang="tr" xmltv_id="">DEUTSCHE WELLE ENGLISH</channel>
+  <channel site="epgshare01.online" site_id="TR3#DEUTSCHE.WELLE.tr" lang="tr" xmltv_id="">DEUTSCHE WELLE</channel>
+  <channel site="epgshare01.online" site_id="TR3#DİNİ.MUSİKİ.tr" lang="tr" xmltv_id="">DİNİ MUSİKİ</channel>
+  <channel site="epgshare01.online" site_id="TR3#DISCOVERY.CHANNEL.HD.tr" lang="tr" xmltv_id="">DISCOVERY CHANNEL HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#DISCOVERY.CHANNEL.tr" lang="tr" xmltv_id="">DISCOVERY CHANNEL</channel>
+  <channel site="epgshare01.online" site_id="TR3#DISNEY.JUNIOR.tr" lang="tr" xmltv_id="">DISNEY JUNIOR</channel>
+  <channel site="epgshare01.online" site_id="TR3#DİYANET.TV.tr" lang="tr" xmltv_id="">DİYANET TV</channel>
+  <channel site="epgshare01.online" site_id="TR3#DMAX.HD.tr" lang="tr" xmltv_id="">DMAX HD</channel>
   <channel site="epgshare01.online" site_id="TR3#DMAX.tr" lang="tr" xmltv_id="">DMAX</channel>
-  <channel site="epgshare01.online" site_id="TR3#DocuBox.tr" lang="tr" xmltv_id="">DocuBox</channel>
-  <channel site="epgshare01.online" site_id="TR3#Dream.Türk.tr" lang="tr" xmltv_id="">Dream Türk</channel>
-  <channel site="epgshare01.online" site_id="TR3#Dream.Tv.tr" lang="tr" xmltv_id="">Dream Tv</channel>
-  <channel site="epgshare01.online" site_id="TR3#Ekotürk.tr" lang="tr" xmltv_id="">Ekotürk</channel>
+  <channel site="epgshare01.online" site_id="TR3#DREAM.TÜRK.tr" lang="tr" xmltv_id="">DREAM TÜRK</channel>
+  <channel site="epgshare01.online" site_id="TR3#DREAM.TÜRK.TV.tr" lang="tr" xmltv_id="">DREAM TÜRK TV</channel>
+  <channel site="epgshare01.online" site_id="TR3#DUCK.TV.HD.tr" lang="tr" xmltv_id="">DUCK TV HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#Ekol.Sports.tr" lang="tr" xmltv_id="">Ekol Sports</channel>
+  <channel site="epgshare01.online" site_id="TR3#EKOL.SPORTS.tr" lang="tr" xmltv_id="">EKOL SPORTS</channel>
+  <channel site="epgshare01.online" site_id="TR3#EKOL.TV.tr" lang="tr" xmltv_id="">EKOL TV</channel>
+  <channel site="epgshare01.online" site_id="TR3#EKOTÜRK.HD.tr" lang="tr" xmltv_id="">EKOTÜRK HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#EKOTÜRK.tr" lang="tr" xmltv_id="">EKOTÜRK</channel>
+  <channel site="epgshare01.online" site_id="TR3#ENGLISH.CLUB.TV.tr" lang="tr" xmltv_id="">ENGLISH CLUB TV</channel>
   <channel site="epgshare01.online" site_id="TR3#EPIC.DRAMA.tr" lang="tr" xmltv_id="">EPIC DRAMA</channel>
-  <channel site="epgshare01.online" site_id="TR3#Euro.D.tr" lang="tr" xmltv_id="">Euro D</channel>
-  <channel site="epgshare01.online" site_id="TR3#Eurosport.2.tr" lang="tr" xmltv_id="">Eurosport 2</channel>
-  <channel site="epgshare01.online" site_id="TR3#Eurosport.tr" lang="tr" xmltv_id="">Eurosport</channel>
-  <channel site="epgshare01.online" site_id="TR3#Fashion.TV.tr" lang="tr" xmltv_id="">Fashion TV</channel>
-  <channel site="epgshare01.online" site_id="TR3#Fast.&amp;.Fun.tr" lang="tr" xmltv_id="">Fast &amp;amp; Fun</channel>
-  <channel site="epgshare01.online" site_id="TR3#FightBox.tr" lang="tr" xmltv_id="">FightBox</channel>
-  <channel site="epgshare01.online" site_id="TR3#FilmBox.tr" lang="tr" xmltv_id="">FilmBox</channel>
-  <channel site="epgshare01.online" site_id="TR3#Flash.Haber.tr" lang="tr" xmltv_id="">Flash Haber</channel>
-  <channel site="epgshare01.online" site_id="TR3#FOX.tr" lang="tr" xmltv_id="">FOX</channel>
+  <channel site="epgshare01.online" site_id="TR3#EURONEWS.tr" lang="tr" xmltv_id="">EURONEWS</channel>
+  <channel site="epgshare01.online" site_id="TR3#EUROSPORT.1.HD.tr" lang="tr" xmltv_id="">EUROSPORT 1 HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#EUROSPORT.1.tr" lang="tr" xmltv_id="">EUROSPORT 1</channel>
+  <channel site="epgshare01.online" site_id="TR3#EUROSPORT.2.HD.tr" lang="tr" xmltv_id="">EUROSPORT 2 HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#EUROSPORT.2.tr" lang="tr" xmltv_id="">EUROSPORT 2</channel>
+  <channel site="epgshare01.online" site_id="TR3#FB.TV.tr" lang="tr" xmltv_id="">FB TV</channel>
+  <channel site="epgshare01.online" site_id="TR3#FIGHT.NETWORK.tr" lang="tr" xmltv_id="">FIGHT NETWORK</channel>
+  <channel site="epgshare01.online" site_id="TR3#FİLM.MÜZİKLERİ.tr" lang="tr" xmltv_id="">FİLM MÜZİKLERİ</channel>
+  <channel site="epgshare01.online" site_id="TR3#FILM.SCREEN.tr" lang="tr" xmltv_id="">FILM SCREEN</channel>
+  <channel site="epgshare01.online" site_id="TR3#FLASH.HABER.tr" lang="tr" xmltv_id="">FLASH HABER</channel>
+  <channel site="epgshare01.online" site_id="TR3#FLASH.HABER.TV.tr" lang="tr" xmltv_id="">FLASH HABER TV</channel>
+  <channel site="epgshare01.online" site_id="TR3#FM.TV.tr" lang="tr" xmltv_id="">FM TV</channel>
+  <channel site="epgshare01.online" site_id="TR3#FRANCE.24.ARABIC.tr" lang="tr" xmltv_id="">FRANCE 24 ARABIC</channel>
+  <channel site="epgshare01.online" site_id="TR3#FRANCE.24.ENGLISH.tr" lang="tr" xmltv_id="">FRANCE 24 ENGLISH</channel>
+  <channel site="epgshare01.online" site_id="TR3#FRANCE.24.tr" lang="tr" xmltv_id="">FRANCE 24</channel>
+  <channel site="epgshare01.online" site_id="TR3#FX.HD.tr" lang="tr" xmltv_id="">FX HD</channel>
   <channel site="epgshare01.online" site_id="TR3#FX.tr" lang="tr" xmltv_id="">FX</channel>
-  <channel site="epgshare01.online" site_id="TR3#Haber.Global.tr" lang="tr" xmltv_id="">Haber Global</channel>
-  <channel site="epgshare01.online" site_id="TR3#Haber.Türk.tr" lang="tr" xmltv_id="">Haber Türk</channel>
+  <channel site="epgshare01.online" site_id="TR3#GZT.TV.tr" lang="tr" xmltv_id="">GZT TV</channel>
+  <channel site="epgshare01.online" site_id="TR3#HABER.GLOBAL.HD.tr" lang="tr" xmltv_id="">HABER GLOBAL HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#HABER.GLOBAL.tr" lang="tr" xmltv_id="">HABER GLOBAL</channel>
+  <channel site="epgshare01.online" site_id="TR3#HABERTÜRK.HD.tr" lang="tr" xmltv_id="">HABERTÜRK HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#HABERTÜRK.tr" lang="tr" xmltv_id="">HABERTÜRK</channel>
   <channel site="epgshare01.online" site_id="TR3#HABİTAT.TV.tr" lang="tr" xmltv_id="">HABİTAT TV</channel>
-  <channel site="epgshare01.online" site_id="TR3#History.Channel.tr" lang="tr" xmltv_id="">History Channel</channel>
-  <channel site="epgshare01.online" site_id="TR3#Insight.TV.tr" lang="tr" xmltv_id="">Insight TV</channel>
-  <channel site="epgshare01.online" site_id="TR3#Kanal.7.tr" lang="tr" xmltv_id="">Kanal 7</channel>
-  <channel site="epgshare01.online" site_id="TR3#Kanal.D.tr" lang="tr" xmltv_id="">Kanal D</channel>
-  <channel site="epgshare01.online" site_id="TR3#Lider.Haber.tr" lang="tr" xmltv_id="">Lider Haber</channel>
-  <channel site="epgshare01.online" site_id="TR3#Love.Nature.tr" lang="tr" xmltv_id="">Love Nature</channel>
-  <channel site="epgshare01.online" site_id="TR3#Minika.Çocuk.tr" lang="tr" xmltv_id="">Minika Çocuk</channel>
-  <channel site="epgshare01.online" site_id="TR3#Minika.GO.tr" lang="tr" xmltv_id="">Minika GO</channel>
-  <channel site="epgshare01.online" site_id="TR3#MovieSmart.Classic.tr" lang="tr" xmltv_id="">MovieSmart Classic</channel>
-  <channel site="epgshare01.online" site_id="TR3#MovieSmart.Türk.tr" lang="tr" xmltv_id="">MovieSmart Türk</channel>
-  <channel site="epgshare01.online" site_id="TR3#National.Geographic.tr" lang="tr" xmltv_id="">National Geographic</channel>
-  <channel site="epgshare01.online" site_id="TR3#National.Geographic.WILD.tr" lang="tr" xmltv_id="">National Geographic WILD</channel>
-  <channel site="epgshare01.online" site_id="TR3#Nature.Escape.tr" lang="tr" xmltv_id="">Nature Escape</channel>
-  <channel site="epgshare01.online" site_id="TR3#NBA.TV.tr" lang="tr" xmltv_id="">NBA TV</channel>
+  <channel site="epgshare01.online" site_id="TR3#HALK.TV.tr" lang="tr" xmltv_id="">HALK TV</channel>
+  <channel site="epgshare01.online" site_id="TR3#HT.SPOR.HD.tr" lang="tr" xmltv_id="">HT SPOR HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#HT.SPOR.tr" lang="tr" xmltv_id="">HT SPOR</channel>
+  <channel site="epgshare01.online" site_id="TR3#ID.tr" lang="tr" xmltv_id="">ID</channel>
+  <channel site="epgshare01.online" site_id="TR3#JAZZ.tr" lang="tr" xmltv_id="">JAZZ</channel>
+  <channel site="epgshare01.online" site_id="TR3#KADIRGA.TV.tr" lang="tr" xmltv_id="">KADIRGA TV</channel>
+  <channel site="epgshare01.online" site_id="TR3#KANAL.7.HD.tr" lang="tr" xmltv_id="">KANAL 7 HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#KANAL.7.tr" lang="tr" xmltv_id="">KANAL 7</channel>
+  <channel site="epgshare01.online" site_id="TR3#KANAL.23.tr" lang="tr" xmltv_id="">KANAL 23</channel>
+  <channel site="epgshare01.online" site_id="TR3#KANAL.26.tr" lang="tr" xmltv_id="">KANAL 26</channel>
+  <channel site="epgshare01.online" site_id="TR3#KANAL.33.tr" lang="tr" xmltv_id="">KANAL 33</channel>
+  <channel site="epgshare01.online" site_id="TR3#KANAL.D.HD.tr" lang="tr" xmltv_id="">KANAL D HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#KANAL.D.tr" lang="tr" xmltv_id="">KANAL D</channel>
+  <channel site="epgshare01.online" site_id="TR3#KANAL.T.tr" lang="tr" xmltv_id="">KANAL T</channel>
+  <channel site="epgshare01.online" site_id="TR3#KANAL.V.tr" lang="tr" xmltv_id="">KANAL V</channel>
+  <channel site="epgshare01.online" site_id="TR3#KIBRIS.ADA.TV.tr" lang="tr" xmltv_id="">KIBRIS ADA TV</channel>
+  <channel site="epgshare01.online" site_id="TR3#KIBRIS.GENC.TV.tr" lang="tr" xmltv_id="">KIBRIS GENC TV</channel>
+  <channel site="epgshare01.online" site_id="TR3#KIBRIS.TV.tr" lang="tr" xmltv_id="">KIBRIS TV</channel>
+  <channel site="epgshare01.online" site_id="TR3#KLASİK.MÜZİK.tr" lang="tr" xmltv_id="">KLASİK MÜZİK</channel>
+  <channel site="epgshare01.online" site_id="TR3#KON.TV.tr" lang="tr" xmltv_id="">KON TV</channel>
+  <channel site="epgshare01.online" site_id="TR3#KONTV.HD.tr" lang="tr" xmltv_id="">KONTV HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#KRT.TV.tr" lang="tr" xmltv_id="">KRT TV</channel>
+  <channel site="epgshare01.online" site_id="TR3#LALEGÜL.tr" lang="tr" xmltv_id="">LALEGÜL</channel>
+  <channel site="epgshare01.online" site_id="TR3#LOUNGE.tr" lang="tr" xmltv_id="">LOUNGE</channel>
+  <channel site="epgshare01.online" site_id="TR3#LOVE.NATURE.HD.tr" lang="tr" xmltv_id="">LOVE NATURE HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#LOVE.NATURE.tr" lang="tr" xmltv_id="">LOVE NATURE</channel>
+  <channel site="epgshare01.online" site_id="TR3#MELTEM.TV.tr" lang="tr" xmltv_id="">MELTEM TV</channel>
+  <channel site="epgshare01.online" site_id="TR3#MİNİKA.ÇOCUK.tr" lang="tr" xmltv_id="">MİNİKA ÇOCUK</channel>
+  <channel site="epgshare01.online" site_id="TR3#MİNİKA.GO.tr" lang="tr" xmltv_id="">MİNİKA GO</channel>
+  <channel site="epgshare01.online" site_id="TR3#MOONBUG.KIDS.TV.tr" lang="tr" xmltv_id="">MOONBUG KIDS TV</channel>
+  <channel site="epgshare01.online" site_id="TR3#MOONBUG.tr" lang="tr" xmltv_id="">MOONBUG</channel>
+  <channel site="epgshare01.online" site_id="TR3#MUTLU.tr" lang="tr" xmltv_id="">MUTLU</channel>
+  <channel site="epgshare01.online" site_id="TR3#NATIONAL.GEOGRAPHIC.HD.tr" lang="tr" xmltv_id="">NATIONAL GEOGRAPHIC HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#NATIONAL.GEOGRAPHIC.tr" lang="tr" xmltv_id="">NATIONAL GEOGRAPHIC</channel>
+  <channel site="epgshare01.online" site_id="TR3#NATIONAL.GEOGRAPHIC.WILD.HD.tr" lang="tr" xmltv_id="">NATIONAL GEOGRAPHIC WILD HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#NATIONAL.GEOGRAPHIC.WILD.tr" lang="tr" xmltv_id="">NATIONAL GEOGRAPHIC WILD</channel>
+  <channel site="epgshare01.online" site_id="TR3#NHK.WORLD-JAPAN.tr" lang="tr" xmltv_id="">NHK WORLD-JAPAN</channel>
+  <channel site="epgshare01.online" site_id="TR3#Nick.JR.tr" lang="tr" xmltv_id="">Nick JR</channel>
+  <channel site="epgshare01.online" site_id="TR3#NICK.JR.tr" lang="tr" xmltv_id="">NICK JR</channel>
+  <channel site="epgshare01.online" site_id="TR3#NICKELODEON.tr" lang="tr" xmltv_id="">NICKELODEON</channel>
   <channel site="epgshare01.online" site_id="TR3#NICKTOONS.tr" lang="tr" xmltv_id="">NICKTOONS</channel>
   <channel site="epgshare01.online" site_id="TR3#NOW.tr" lang="tr" xmltv_id="">NOW</channel>
+  <channel site="epgshare01.online" site_id="TR3#NR1.DAMAR.HD.tr" lang="tr" xmltv_id="">NR1 DAMAR HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#NTV.HD.tr" lang="tr" xmltv_id="">NTV HD</channel>
   <channel site="epgshare01.online" site_id="TR3#NTV.tr" lang="tr" xmltv_id="">NTV</channel>
+  <channel site="epgshare01.online" site_id="TR3#NUMBER1.TURK.HD.tr" lang="tr" xmltv_id="">NUMBER1 TURK HD</channel>
   <channel site="epgshare01.online" site_id="TR3#NUMBER1.TÜRK.tr" lang="tr" xmltv_id="">NUMBER1 TÜRK</channel>
+  <channel site="epgshare01.online" site_id="TR3#NUMBER1.TV.HD.tr" lang="tr" xmltv_id="">NUMBER1 TV HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#OLDIES.tr" lang="tr" xmltv_id="">OLDIES</channel>
+  <channel site="epgshare01.online" site_id="TR3#ON6.tr" lang="tr" xmltv_id="">ON6</channel>
+  <channel site="epgshare01.online" site_id="TR3#POWER.TURK.HD.tr" lang="tr" xmltv_id="">POWER TURK HD</channel>
   <channel site="epgshare01.online" site_id="TR3#POWER.TÜRK.tr" lang="tr" xmltv_id="">POWER TÜRK</channel>
+  <channel site="epgshare01.online" site_id="TR3#POWER.TV.HD.tr" lang="tr" xmltv_id="">POWER TV HD</channel>
   <channel site="epgshare01.online" site_id="TR3#POWER.TV.tr" lang="tr" xmltv_id="">POWER TV</channel>
-  <channel site="epgshare01.online" site_id="TR3#Show.TV.tr" lang="tr" xmltv_id="">Show TV</channel>
-  <channel site="epgshare01.online" site_id="TR3#Sinema.TV.2.tr" lang="tr" xmltv_id="">Sinema TV 2</channel>
-  <channel site="epgshare01.online" site_id="TR3#Sinema.TV.1001.tr" lang="tr" xmltv_id="">Sinema TV 1001</channel>
-  <channel site="epgshare01.online" site_id="TR3#Sinema.TV.1002.tr" lang="tr" xmltv_id="">Sinema TV 1002</channel>
-  <channel site="epgshare01.online" site_id="TR3#Sinema.TV.Aile.2.tr" lang="tr" xmltv_id="">Sinema TV Aile 2</channel>
-  <channel site="epgshare01.online" site_id="TR3#Sinema.TV.Aile.tr" lang="tr" xmltv_id="">Sinema TV Aile</channel>
-  <channel site="epgshare01.online" site_id="TR3#Sinema.TV.Aksiyon.2.tr" lang="tr" xmltv_id="">Sinema TV Aksiyon 2</channel>
-  <channel site="epgshare01.online" site_id="TR3#Sinema.TV.Aksiyon.tr" lang="tr" xmltv_id="">Sinema TV Aksiyon</channel>
-  <channel site="epgshare01.online" site_id="TR3#Sinema.TV.Comedy.2.tr" lang="tr" xmltv_id="">Sinema TV Comedy 2</channel>
-  <channel site="epgshare01.online" site_id="TR3#Sinema.TV.Comedy.tr" lang="tr" xmltv_id="">Sinema TV Comedy</channel>
-  <channel site="epgshare01.online" site_id="TR3#Sinema.TV.tr" lang="tr" xmltv_id="">Sinema TV</channel>
-  <channel site="epgshare01.online" site_id="TR3#SPOR.SMART.2.tr" lang="tr" xmltv_id="">SPOR SMART 2</channel>
-  <channel site="epgshare01.online" site_id="TR3#Spor.Smart.tr" lang="tr" xmltv_id="">Spor Smart</channel>
-  <channel site="epgshare01.online" site_id="TR3#Star.tr" lang="tr" xmltv_id="">Star</channel>
-  <channel site="epgshare01.online" site_id="TR3#SZC.tr" lang="tr" xmltv_id="">SZC</channel>
-  <channel site="epgshare01.online" site_id="TR3#teve2.tr" lang="tr" xmltv_id="">teve2</channel>
-  <channel site="epgshare01.online" site_id="TR3#TGRT.EU.tr" lang="tr" xmltv_id="">TGRT EU</channel>
-  <channel site="epgshare01.online" site_id="TR3#TGRT.Haber.tr" lang="tr" xmltv_id="">TGRT Haber</channel>
+  <channel site="epgshare01.online" site_id="TR3#RETRO.tr" lang="tr" xmltv_id="">RETRO</channel>
+  <channel site="epgshare01.online" site_id="TR3#RT.ARABIC.tr" lang="tr" xmltv_id="">RT ARABIC</channel>
+  <channel site="epgshare01.online" site_id="TR3#S.SPORT.2.tr" lang="tr" xmltv_id="">S SPORT 2</channel>
+  <channel site="epgshare01.online" site_id="TR3#S.SPORT.tr" lang="tr" xmltv_id="">S SPORT</channel>
+  <channel site="epgshare01.online" site_id="TR3#SAUDI.QURAN.tr" lang="tr" xmltv_id="">SAUDI QURAN</channel>
+  <channel site="epgshare01.online" site_id="TR3#SEMERKAND.HD.tr" lang="tr" xmltv_id="">SEMERKAND HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#SEMERKAND.TV.tr" lang="tr" xmltv_id="">SEMERKAND TV</channel>
+  <channel site="epgshare01.online" site_id="TR3#SHOW.TV.HD.tr" lang="tr" xmltv_id="">SHOW TV HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#SHOW.TV.tr" lang="tr" xmltv_id="">SHOW TV</channel>
+  <channel site="epgshare01.online" site_id="TR3#SİNEMA.2.tr" lang="tr" xmltv_id="">SİNEMA 2</channel>
+  <channel site="epgshare01.online" site_id="TR3#SİNEMA.1001.tr" lang="tr" xmltv_id="">SİNEMA 1001</channel>
+  <channel site="epgshare01.online" site_id="TR3#SİNEMA.1002.HD.tr" lang="tr" xmltv_id="">SİNEMA 1002 HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#SİNEMA.1002.tr" lang="tr" xmltv_id="">SİNEMA 1002</channel>
+  <channel site="epgshare01.online" site_id="TR3#SİNEMA.AİLE.2.HD.tr" lang="tr" xmltv_id="">SİNEMA AİLE 2 HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#SİNEMA.AİLE.2.tr" lang="tr" xmltv_id="">SİNEMA AİLE 2</channel>
+  <channel site="epgshare01.online" site_id="TR3#SİNEMA.AİLE.HD.tr" lang="tr" xmltv_id="">SİNEMA AİLE HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#SİNEMA.AİLE.tr" lang="tr" xmltv_id="">SİNEMA AİLE</channel>
+  <channel site="epgshare01.online" site_id="TR3#SİNEMA.AKSİYON.2.HD.tr" lang="tr" xmltv_id="">SİNEMA AKSİYON 2 HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#SİNEMA.AKSİYON.2.tr" lang="tr" xmltv_id="">SİNEMA AKSİYON 2</channel>
+  <channel site="epgshare01.online" site_id="TR3#SİNEMA.AKSİYON.tr" lang="tr" xmltv_id="">SİNEMA AKSİYON</channel>
+  <channel site="epgshare01.online" site_id="TR3#SİNEMA.KOMEDİ.2.tr" lang="tr" xmltv_id="">SİNEMA KOMEDİ 2</channel>
+  <channel site="epgshare01.online" site_id="TR3#SİNEMA.KOMEDİ.HD.tr" lang="tr" xmltv_id="">SİNEMA KOMEDİ HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#SİNEMA.KOMEDİ.tr" lang="tr" xmltv_id="">SİNEMA KOMEDİ</channel>
+  <channel site="epgshare01.online" site_id="TR3#SİNEMA.TV.2.HD.tr" lang="tr" xmltv_id="">SİNEMA TV 2 HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#SİNEMA.TV.1001.HD.tr" lang="tr" xmltv_id="">SİNEMA TV 1001 HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#SİNEMA.TV.AKSİYON.HD.tr" lang="tr" xmltv_id="">SİNEMA TV AKSİYON HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#SİNEMA.TV.HD.tr" lang="tr" xmltv_id="">SİNEMA TV HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#SİNEMA.TV.tr" lang="tr" xmltv_id="">SİNEMA TV</channel>
+  <channel site="epgshare01.online" site_id="TR3#SİNEMA.YERLİ.2.HD.tr" lang="tr" xmltv_id="">SİNEMA YERLİ 2 HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#SİNEMA.YERLİ.2.tr" lang="tr" xmltv_id="">SİNEMA YERLİ 2</channel>
+  <channel site="epgshare01.online" site_id="TR3#SİNEMA.YERLİ.HD.tr" lang="tr" xmltv_id="">SİNEMA YERLİ HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#SİNEMA.YERLİ.tr" lang="tr" xmltv_id="">SİNEMA YERLİ</channel>
+  <channel site="epgshare01.online" site_id="TR3#SKY.NEWS.ARABIA.tr" lang="tr" xmltv_id="">SKY NEWS ARABIA</channel>
+  <channel site="epgshare01.online" site_id="TR3#ŞÖMİNE.PLUS.tr" lang="tr" xmltv_id="">ŞÖMİNE PLUS</channel>
+  <channel site="epgshare01.online" site_id="TR3#SÖZCÜ.TV.tr" lang="tr" xmltv_id="">SÖZCÜ TV</channel>
+  <channel site="epgshare01.online" site_id="TR3#SPACETOON.tr" lang="tr" xmltv_id="">SPACETOON</channel>
+  <channel site="epgshare01.online" site_id="TR3#SPORTS.TV.HD.tr" lang="tr" xmltv_id="">SPORTS TV HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#STAR.TV.HD.tr" lang="tr" xmltv_id="">STAR TV HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#STAR.TV.tr" lang="tr" xmltv_id="">STAR TV</channel>
+  <channel site="epgshare01.online" site_id="TR3#SZC.TV.tr" lang="tr" xmltv_id="">SZC TV</channel>
+  <channel site="epgshare01.online" site_id="TR3#tabii.spor.tr" lang="tr" xmltv_id="">tabii spor</channel>
+  <channel site="epgshare01.online" site_id="TR3#tabii.TV.tr" lang="tr" xmltv_id="">tabii TV</channel>
+  <channel site="epgshare01.online" site_id="TR3#TARIH.TV.tr" lang="tr" xmltv_id="">TARIH TV</channel>
+  <channel site="epgshare01.online" site_id="TR3#TARİH.TV.tr" lang="tr" xmltv_id="">TARİH TV</channel>
+  <channel site="epgshare01.online" site_id="TR3#TARIM.TV.tr" lang="tr" xmltv_id="">TARIM TV</channel>
+  <channel site="epgshare01.online" site_id="TR3#TAŞ.PLAK.tr" lang="tr" xmltv_id="">TAŞ PLAK</channel>
+  <channel site="epgshare01.online" site_id="TR3#TELE1.tr" lang="tr" xmltv_id="">TELE1</channel>
+  <channel site="epgshare01.online" site_id="TR3#TELE.1.tr" lang="tr" xmltv_id="">TELE 1</channel>
+  <channel site="epgshare01.online" site_id="TR3#TEVE2.HD.tr" lang="tr" xmltv_id="">TEVE2 HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#TGRT.HABER.HD.tr" lang="tr" xmltv_id="">TGRT HABER HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#TGRT.HABER.tr" lang="tr" xmltv_id="">TGRT HABER</channel>
+  <channel site="epgshare01.online" site_id="TR3#TİVİ6.tr" lang="tr" xmltv_id="">TİVİ6</channel>
+  <channel site="epgshare01.online" site_id="TR3#TİVİ.6.tr" lang="tr" xmltv_id="">TİVİ 6</channel>
+  <channel site="epgshare01.online" site_id="TR3#TİVİBU.ÇOCUK.tr" lang="tr" xmltv_id="">TİVİBU ÇOCUK</channel>
   <channel site="epgshare01.online" site_id="TR3#TİVİBU.SPOR.1.tr" lang="tr" xmltv_id="">TİVİBU SPOR 1</channel>
   <channel site="epgshare01.online" site_id="TR3#TİVİBU.SPOR.2.tr" lang="tr" xmltv_id="">TİVİBU SPOR 2</channel>
   <channel site="epgshare01.online" site_id="TR3#TİVİBU.SPOR.3.tr" lang="tr" xmltv_id="">TİVİBU SPOR 3</channel>
   <channel site="epgshare01.online" site_id="TR3#TİVİBU.SPOR.4.tr" lang="tr" xmltv_id="">TİVİBU SPOR 4</channel>
   <channel site="epgshare01.online" site_id="TR3#TİVİBU.SPOR.tr" lang="tr" xmltv_id="">TİVİBU SPOR</channel>
-  <channel site="epgshare01.online" site_id="TR3#TİVİLIFE.tr" lang="tr" xmltv_id="">TİVİLIFE</channel>
+  <channel site="epgshare01.online" site_id="TR3#TİVİBU.TANITIM.tr" lang="tr" xmltv_id="">TİVİBU TANITIM</channel>
   <channel site="epgshare01.online" site_id="TR3#TLC.tr" lang="tr" xmltv_id="">TLC</channel>
+  <channel site="epgshare01.online" site_id="TR3#TMB.TV.tr" lang="tr" xmltv_id="">TMB TV</channel>
+  <channel site="epgshare01.online" site_id="TR3#TRT1.HD.tr" lang="tr" xmltv_id="">TRT1 HD</channel>
   <channel site="epgshare01.online" site_id="TR3#TRT.1.tr" lang="tr" xmltv_id="">TRT 1</channel>
-  <channel site="epgshare01.online" site_id="TR3#trt.2.tr" lang="tr" xmltv_id="">trt 2</channel>
-  <channel site="epgshare01.online" site_id="TR3#TRT.3.Spor.tr" lang="tr" xmltv_id="">TRT 3 Spor</channel>
-  <channel site="epgshare01.online" site_id="TR3#TRT.4K.tr" lang="tr" xmltv_id="">TRT 4K</channel>
-  <channel site="epgshare01.online" site_id="TR3#TRT.Belgesel.tr" lang="tr" xmltv_id="">TRT Belgesel</channel>
-  <channel site="epgshare01.online" site_id="TR3#TRT.Çocuk.tr" lang="tr" xmltv_id="">TRT Çocuk</channel>
-  <channel site="epgshare01.online" site_id="TR3#TRT.Haber.tr" lang="tr" xmltv_id="">TRT Haber</channel>
-  <channel site="epgshare01.online" site_id="TR3#TRT.Müzik.tr" lang="tr" xmltv_id="">TRT Müzik</channel>
-  <channel site="epgshare01.online" site_id="TR3#TRT.Spor.tr" lang="tr" xmltv_id="">TRT Spor</channel>
-  <channel site="epgshare01.online" site_id="TR3#Trt.Spor.Yıldız.tr" lang="tr" xmltv_id="">Trt Spor Yıldız</channel>
-  <channel site="epgshare01.online" site_id="TR3#TRT.Türk.tr" lang="tr" xmltv_id="">TRT Türk</channel>
+  <channel site="epgshare01.online" site_id="TR3#TRT.2.HD.tr" lang="tr" xmltv_id="">TRT 2 HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#TRT.2.tr" lang="tr" xmltv_id="">TRT 2</channel>
+  <channel site="epgshare01.online" site_id="TR3#TRT.3.SPOR.tr" lang="tr" xmltv_id="">TRT 3 SPOR</channel>
+  <channel site="epgshare01.online" site_id="TR3#TRT.3.tr" lang="tr" xmltv_id="">TRT 3</channel>
+  <channel site="epgshare01.online" site_id="TR3#TRT.ARABI.tr" lang="tr" xmltv_id="">TRT ARABI</channel>
+  <channel site="epgshare01.online" site_id="TR3#TRT.AVAZ.tr" lang="tr" xmltv_id="">TRT AVAZ</channel>
+  <channel site="epgshare01.online" site_id="TR3#TRT.BELGESEL.HD.tr" lang="tr" xmltv_id="">TRT BELGESEL HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#TRT.BELGESEL.tr" lang="tr" xmltv_id="">TRT BELGESEL</channel>
+  <channel site="epgshare01.online" site_id="TR3#TRT.ÇOCUK.HD.tr" lang="tr" xmltv_id="">TRT ÇOCUK HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#TRT.ÇOCUK.tr" lang="tr" xmltv_id="">TRT ÇOCUK</channel>
+  <channel site="epgshare01.online" site_id="TR3#TRT.DIYANET.COCUK.tr" lang="tr" xmltv_id="">TRT DIYANET COCUK</channel>
+  <channel site="epgshare01.online" site_id="TR3#TRT.DİYANET.ÇOCUK.tr" lang="tr" xmltv_id="">TRT DİYANET ÇOCUK</channel>
+  <channel site="epgshare01.online" site_id="TR3#TRT.EBA.tr" lang="tr" xmltv_id="">TRT EBA</channel>
+  <channel site="epgshare01.online" site_id="TR3#TRT.EL.ARABIA.tr" lang="tr" xmltv_id="">TRT EL ARABIA</channel>
+  <channel site="epgshare01.online" site_id="TR3#TRT.GENÇ.tr" lang="tr" xmltv_id="">TRT GENÇ</channel>
+  <channel site="epgshare01.online" site_id="TR3#TRT.HABER.HD.tr" lang="tr" xmltv_id="">TRT HABER HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#TRT.HABER.tr" lang="tr" xmltv_id="">TRT HABER</channel>
+  <channel site="epgshare01.online" site_id="TR3#TRT.KURDİ.tr" lang="tr" xmltv_id="">TRT KURDİ</channel>
+  <channel site="epgshare01.online" site_id="TR3#TRT.MÜZİK.tr" lang="tr" xmltv_id="">TRT MÜZİK</channel>
+  <channel site="epgshare01.online" site_id="TR3#TRT.SPOR.HD.tr" lang="tr" xmltv_id="">TRT SPOR HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#TRT.SPOR.tr" lang="tr" xmltv_id="">TRT SPOR</channel>
+  <channel site="epgshare01.online" site_id="TR3#TRT.SPOR.YILDIZ.tr" lang="tr" xmltv_id="">TRT SPOR YILDIZ</channel>
+  <channel site="epgshare01.online" site_id="TR3#TRT.TÜRK.tr" lang="tr" xmltv_id="">TRT TÜRK</channel>
+  <channel site="epgshare01.online" site_id="TR3#TRT.World.HD.tr" lang="tr" xmltv_id="">TRT World HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#TRT.WORLD.tr" lang="tr" xmltv_id="">TRT WORLD</channel>
+  <channel site="epgshare01.online" site_id="TR3#TÜRK.HALK.MÜZİĞİ.tr" lang="tr" xmltv_id="">TÜRK HALK MÜZİĞİ</channel>
+  <channel site="epgshare01.online" site_id="TR3#TÜRK.SANAT.MÜZİĞİ.tr" lang="tr" xmltv_id="">TÜRK SANAT MÜZİĞİ</channel>
+  <channel site="epgshare01.online" site_id="TR3#TÜRKÇE.POP.tr" lang="tr" xmltv_id="">TÜRKÇE POP</channel>
+  <channel site="epgshare01.online" site_id="TR3#TÜRKÇE.SLOW.tr" lang="tr" xmltv_id="">TÜRKÇE SLOW</channel>
+  <channel site="epgshare01.online" site_id="TR3#TURKHABER.tr" lang="tr" xmltv_id="">TURKHABER</channel>
+  <channel site="epgshare01.online" site_id="TR3#TÜRKHABER.TV.tr" lang="tr" xmltv_id="">TÜRKHABER TV</channel>
+  <channel site="epgshare01.online" site_id="TR3#TV2.tr" lang="tr" xmltv_id="">TV2</channel>
   <channel site="epgshare01.online" site_id="TR3#TV4.tr" lang="tr" xmltv_id="">TV4</channel>
+  <channel site="epgshare01.online" site_id="TR3#TV5.MONDE.tr" lang="tr" xmltv_id="">TV5 MONDE</channel>
+  <channel site="epgshare01.online" site_id="TR3#TV5.tr" lang="tr" xmltv_id="">TV5</channel>
+  <channel site="epgshare01.online" site_id="TR3#TV8,5.HD.tr" lang="tr" xmltv_id="">TV8,5 HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#TV8.HD.tr" lang="tr" xmltv_id="">TV8 HD</channel>
   <channel site="epgshare01.online" site_id="TR3#TV8.tr" lang="tr" xmltv_id="">TV8</channel>
+  <channel site="epgshare01.online" site_id="TR3#TV100.tr" lang="tr" xmltv_id="">TV100</channel>
+  <channel site="epgshare01.online" site_id="TR3#TV+.Info.tr" lang="tr" xmltv_id="">TV+ Info</channel>
+  <channel site="epgshare01.online" site_id="TR3#TV.4.tr" lang="tr" xmltv_id="">TV 4</channel>
+  <channel site="epgshare01.online" site_id="TR3#TV.5.tr" lang="tr" xmltv_id="">TV 5</channel>
   <channel site="epgshare01.online" site_id="TR3#TV.8,5.tr" lang="tr" xmltv_id="">TV 8,5</channel>
-  <channel site="epgshare01.online" site_id="TR3#Tv.100.tr" lang="tr" xmltv_id="">Tv 100</channel>
-  <channel site="epgshare01.online" site_id="TR3#TV.Net.tr" lang="tr" xmltv_id="">TV Net</channel>
-  <channel site="epgshare01.online" site_id="TR3#Ülke.TV.tr" lang="tr" xmltv_id="">Ülke TV</channel>
-  <channel site="epgshare01.online" site_id="TR3#Vav.Tv.tr" lang="tr" xmltv_id="">Vav Tv</channel>
-  <channel site="epgshare01.online" site_id="TR3#Viasat.History.tr" lang="tr" xmltv_id="">Viasat History</channel>
+  <channel site="epgshare01.online" site_id="TR3#TV.100.tr" lang="tr" xmltv_id="">TV 100</channel>
+  <channel site="epgshare01.online" site_id="TR3#TVNET.HD.tr" lang="tr" xmltv_id="">TVNET HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#TVNET.tr" lang="tr" xmltv_id="">TVNET</channel>
+  <channel site="epgshare01.online" site_id="TR3#TYT.TÜRK.tr" lang="tr" xmltv_id="">TYT TÜRK</channel>
+  <channel site="epgshare01.online" site_id="TR3#ÜLKE.TV.HD.tr" lang="tr" xmltv_id="">ÜLKE TV HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#ÜLKE.TV.tr" lang="tr" xmltv_id="">ÜLKE TV</channel>
+  <channel site="epgshare01.online" site_id="TR3#ULUSAL.1.tr" lang="tr" xmltv_id="">ULUSAL 1</channel>
+  <channel site="epgshare01.online" site_id="TR3#ULUSAL.KANAL.tr" lang="tr" xmltv_id="">ULUSAL KANAL</channel>
+  <channel site="epgshare01.online" site_id="TR3#VAV.TV.tr" lang="tr" xmltv_id="">VAV TV</channel>
+  <channel site="epgshare01.online" site_id="TR3#VIASAT.EXPLORE.tr" lang="tr" xmltv_id="">VIASAT EXPLORE</channel>
+  <channel site="epgshare01.online" site_id="TR3#VIASAT.HISTORY.HD.tr" lang="tr" xmltv_id="">VIASAT HISTORY HD</channel>
+  <channel site="epgshare01.online" site_id="TR3#VIASAT.HISTORY.tr" lang="tr" xmltv_id="">VIASAT HISTORY</channel>
   <channel site="epgshare01.online" site_id="TR3#W-SPORT.tr" lang="tr" xmltv_id="">W-SPORT</channel>
+  <channel site="epgshare01.online" site_id="TR3#YABANCI.POP.tr" lang="tr" xmltv_id="">YABANCI POP</channel>
+  <channel site="epgshare01.online" site_id="TR3#YABANCI.ROCK.tr" lang="tr" xmltv_id="">YABANCI ROCK</channel>
+  <channel site="epgshare01.online" site_id="TR3#YABANCI.SLOW.tr" lang="tr" xmltv_id="">YABANCI SLOW</channel>
 </channels>

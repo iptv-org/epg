@@ -1,0 +1,452 @@
+{
+	"currentPage": {
+		"displayTemplate": "detailPage",
+		"displayName": "Illusions perdues",
+		"path": "/cinema/illusions-perdues/h/17230453_50001"
+	},
+	"meta": {
+		"title": "Illusions perdues",
+		"description": "Pendant la Restauration, Lucien de Rubempré, jeune provincial d'Angoulême, se rêve poète. Il débarque à Paris en quête de gloire. Il a le soutien de Louise de Bargeton, une aristocrate qui croit en son talent. Pour gagner sa vie, Lucien trouve un emploi dans le journal dirigé par le peu scrupuleux Etienne Lousteau..."
+	},
+	"tracking": {
+		"omniture": {
+			"channel": "myCANAL",
+			"prop4": "myCANAL - Prog",
+			"prop5": "myCANAL - Prog - Fiche",
+			"prop6": "myCANAL - Prog - Fiche - Cinema",
+			"prop7": "myCANAL - Prog - Fiche - Cinema - Illusions perdues",
+			"pageName": "myCANAL - Prog - Fiche - Cinema - Illusions perdues",
+			"prop10": "Contenu",
+			"prop11": "DRM",
+			"content_protection": "DRM",
+			"prop12": "Consumer",
+			"eVar39": "17230453_50001",
+			"prop19": "CANAL+",
+			"prop32": "notInOffer",
+			"prop36": "Cinema",
+			"prop35": "Film Drame",
+			"content_title": "Illusions perdues",
+			"page_level_1": "Prog",
+			"page_level_2": "Fiche",
+			"page_level_3": "Cinema",
+			"page_level_4": "Illusions perdues",
+			"page_name": "myCANAL - Prog - Fiche - Cinema - Illusions perdues",
+			"page_title": "Illusions perdues",
+			"page_display_title": "Illusions perdues",
+			"user_profile": "Consumer",
+			"content_id": "17230453_50001",
+			"content_in_offer": "notInOffer",
+			"genre": "Cinema",
+			"subgenre": "Film Drame",
+			"channel_name": "CANAL+"
+		},
+		"dataLayer": {
+			"page_level_1": "Prog",
+			"page_level_2": "Fiche",
+			"page_level_3": "Cinema",
+			"page_level_4": "Illusions perdues",
+			"page_name": "myCANAL - Prog - Fiche - Cinema - Illusions perdues",
+			"page_title": "Illusions perdues",
+			"page_display_title": "Illusions perdues",
+			"user_profile": "Consumer",
+			"content_id": "17230453_50001",
+			"content_in_offer": "notInOffer",
+			"genre": "Cinema",
+			"subgenre": "Film Drame",
+			"channel_name": "CANAL+",
+			"content_title": "Illusions perdues",
+			"content_protection": "DRM"
+		}
+	},
+	"detail": {
+		"informations": {
+			"type": "VoD",
+			"contentID": "17230453_50001",
+			"idRevision": "17230453_50001",
+			"title": "Illusions perdues",
+			"URLImage": "https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/filters:quality({imageQualityPercentage})/img-hapi.canalplus.pro:80/ServiceImage/ImageID/107356485",
+			"URLLogoChannel": "https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/filters:quality({imageQualityPercentage})/img-hapi.canalplus.pro:80/ServiceImage/ImageID/68603655",
+			"altLogoChannel": "CANAL+",
+			"summary": "Pendant la Restauration, Lucien de Rubempré, jeune provincial d'Angoulême, se rêve poète. Il débarque à Paris en quête de gloire. Il a le soutien de Louise de Bargeton, une aristocrate qui croit en son talent. Pour gagner sa vie, Lucien trouve un emploi dans le journal dirigé par le peu scrupuleux Etienne Lousteau...",
+			"isTVoD": false,
+			"audioLanguage": "VF",
+			"subtitle": "Film Drame",
+			"uploadDate": 1671673200000,
+			"noPub": true,
+			"editorialTitle": "Film Drame, France, 2021, 2h24",
+			"sharingURL": "https://mycan.al/cinema/illusions-perdues/h/17230453_50001",
+			"formats": {
+				"video": [
+					"UHD",
+					"HD"
+				],
+				"audio": [
+					"DOLBY 5.1",
+					"STEREO"
+				]
+			},
+			"URLVitrine": "https://hodor.canalplus.pro/api/v2/mycanal/highlight/da2291af3b10e9900d1c55e1a65d3388/objectType/unit/17230453_50001.json?previousPageName=myCANAL%20-%20Prog%20-%20Fiche%20-%20Cinema&adult=false&context_page_title=Content%20-%20See%20also%20-%20Illusions%20perdues&omitTracking=true",
+			"closedCaptioning": true,
+			"consumptionPlatform": "HAPI",
+			"trailer": false,
+			"teasers": [
+				{
+					"URLMedias": "https://static.canal-plus.net/ba/17230453_50001.mp4",
+					"default": true
+				}
+			],
+			"personnalities": [
+				{
+					"prefix": "De :",
+					"personnalitiesList": [
+						{
+							"title": "Xavier Giannoli",
+							"onClick": {
+								"displayName": "Xavier Giannoli",
+								"displayTemplate": "contentGrid",
+								"URLPage": "https://hodor.canalplus.pro/api/v2/mycanal/contentGrid/da2291af3b10e9900d1c55e1a65d3388/12307.json?objectType=person&dsp=detailPage",
+								"path": "/personne/xavier-giannoli/12307"
+							}
+						}
+					]
+				},
+				{
+					"prefix": "Avec :",
+					"personnalitiesList": [
+						{
+							"title": "Benjamin Voisin",
+							"onClick": {
+								"displayName": "Benjamin Voisin",
+								"displayTemplate": "contentGrid",
+								"URLPage": "https://hodor.canalplus.pro/api/v2/mycanal/contentGrid/da2291af3b10e9900d1c55e1a65d3388/339366.json?objectType=person&dsp=detailPage",
+								"path": "/personne/benjamin-voisin/339366"
+							}
+						},
+						{
+							"title": "Cécile de France",
+							"onClick": {
+								"displayName": "Cécile de France",
+								"displayTemplate": "contentGrid",
+								"URLPage": "https://hodor.canalplus.pro/api/v2/mycanal/contentGrid/da2291af3b10e9900d1c55e1a65d3388/31634.json?objectType=person&dsp=detailPage",
+								"path": "/personne/cecile-de-france/31634"
+							}
+						},
+						{
+							"title": "Vincent Lacoste",
+							"onClick": {
+								"displayName": "Vincent Lacoste",
+								"displayTemplate": "contentGrid",
+								"URLPage": "https://hodor.canalplus.pro/api/v2/mycanal/contentGrid/da2291af3b10e9900d1c55e1a65d3388/3554.json?objectType=person&dsp=detailPage",
+								"path": "/personne/vincent-lacoste/3554"
+							}
+						},
+						{
+							"title": "Xavier Dolan",
+							"onClick": {
+								"displayName": "Xavier Dolan",
+								"displayTemplate": "contentGrid",
+								"URLPage": "https://hodor.canalplus.pro/api/v2/mycanal/contentGrid/da2291af3b10e9900d1c55e1a65d3388/29821.json?objectType=person&dsp=detailPage",
+								"path": "/personne/xavier-dolan/29821"
+							}
+						},
+						{
+							"title": "Gérard Depardieu",
+							"onClick": {
+								"displayName": "Gérard Depardieu",
+								"displayTemplate": "contentGrid",
+								"URLPage": "https://hodor.canalplus.pro/api/v2/mycanal/contentGrid/da2291af3b10e9900d1c55e1a65d3388/2033.json?objectType=person&dsp=detailPage",
+								"path": "/personne/gerard-depardieu/2033"
+							}
+						},
+						{
+							"title": "Salomé Dewaels",
+							"onClick": {
+								"displayName": "Salomé Dewaels",
+								"displayTemplate": "contentGrid",
+								"URLPage": "https://hodor.canalplus.pro/api/v2/mycanal/contentGrid/da2291af3b10e9900d1c55e1a65d3388/306041.json?objectType=person&dsp=detailPage",
+								"path": "/personne/salome-dewaels/306041"
+							}
+						},
+						{
+							"title": "Jeanne Balibar",
+							"onClick": {
+								"displayName": "Jeanne Balibar",
+								"displayTemplate": "contentGrid",
+								"URLPage": "https://hodor.canalplus.pro/api/v2/mycanal/contentGrid/da2291af3b10e9900d1c55e1a65d3388/2349.json?objectType=person&dsp=detailPage",
+								"path": "/personne/jeanne-balibar/2349"
+							}
+						},
+						{
+							"title": "Louis-Do de Lencquesaing",
+							"onClick": {
+								"displayName": "Louis-Do de Lencquesaing",
+								"displayTemplate": "contentGrid",
+								"URLPage": "https://hodor.canalplus.pro/api/v2/mycanal/contentGrid/da2291af3b10e9900d1c55e1a65d3388/134975.json?objectType=person&dsp=detailPage",
+								"path": "/personne/louis-do-de-lencquesaing/134975"
+							}
+						},
+						{
+							"title": "Alexis Barbosa",
+							"onClick": {
+								"displayName": "Alexis Barbosa",
+								"displayTemplate": "contentGrid",
+								"URLPage": "https://hodor.canalplus.pro/api/v2/mycanal/contentGrid/da2291af3b10e9900d1c55e1a65d3388/553741.json?objectType=person&dsp=detailPage",
+								"path": "/personne/alexis-barbosa/553741"
+							}
+						},
+						{
+							"title": "Jean-François Stévenin",
+							"onClick": {
+								"displayName": "Jean-François Stévenin",
+								"displayTemplate": "contentGrid",
+								"URLPage": "https://hodor.canalplus.pro/api/v2/mycanal/contentGrid/da2291af3b10e9900d1c55e1a65d3388/578.json?objectType=person&dsp=detailPage",
+								"path": "/personne/jean-francois-stevenin/578"
+							}
+						},
+						{
+							"title": "André Marcon",
+							"onClick": {
+								"displayName": "André Marcon",
+								"displayTemplate": "contentGrid",
+								"URLPage": "https://hodor.canalplus.pro/api/v2/mycanal/contentGrid/da2291af3b10e9900d1c55e1a65d3388/3647.json?objectType=person&dsp=detailPage",
+								"path": "/personne/andre-marcon/3647"
+							}
+						},
+						{
+							"title": "Marie Cornillon",
+							"onClick": {
+								"displayName": "Marie Cornillon",
+								"displayTemplate": "contentGrid",
+								"URLPage": "https://hodor.canalplus.pro/api/v2/mycanal/contentGrid/da2291af3b10e9900d1c55e1a65d3388/553722.json?objectType=person&dsp=detailPage",
+								"path": "/personne/marie-cornillon/553722"
+							}
+						}
+					]
+				},
+				{
+					"prefix": "Scénario :",
+					"personnalitiesList": [
+						{
+							"title": "Xavier Giannoli",
+							"onClick": {
+								"displayName": "Xavier Giannoli",
+								"displayTemplate": "contentGrid",
+								"URLPage": "https://hodor.canalplus.pro/api/v2/mycanal/contentGrid/da2291af3b10e9900d1c55e1a65d3388/12307.json?objectType=person&dsp=detailPage",
+								"path": "/personne/xavier-giannoli/12307"
+							}
+						}
+					]
+				}
+			],
+			"reviews": [
+				{
+					"name": "Allociné Presse",
+					"displayRating": true,
+					"stars": {
+						"type": "allocine",
+						"value": 4
+					}
+				},
+				{
+					"name": "Allociné Spectateur",
+					"displayRating": true,
+					"stars": {
+						"type": "allocine",
+						"value": 4.5
+					}
+				},
+				{
+					"name": "Télérama",
+					"displayRating": true,
+					"review": "L’ascension et la chute du célèbre Lucien de Rubempré, petit poète venu tenter sa chance à Paris. Avec cette adaptation de l’œuvre phare de Balzac, Xavier Giannoli signe une fresque flamboyante et cruelle, qui tend un miroir grimaçant à notre époque.",
+					"stars": {
+						"type": "telerama",
+						"value": 3
+					}
+				},
+				{
+					"name": "Télécâble Sat",
+					"displayRating": true,
+					"review": "Récompensée par sept césars, une adaptation aussi somptueuse que moderne du roman de Balzac. L'écriture est ciselée, l'interprétation parfaite, la réalisation affûtée.",
+					"stars": {
+						"type": "telecable",
+						"value": 4
+					}
+				}
+			],
+			"recommendationTags": [
+				{
+					"label": "Adaptations de textes classiques",
+					"onClick": {
+						"displayTemplate": "contentGrid",
+						"displayName": "Adaptations de textes classiques",
+						"URLPage": "https://hodor.canalplus.pro/api/v2/mycanal/tag/da2291af3b10e9900d1c55e1a65d3388/id/100000014?dsp=detailPage",
+						"path": "/tag/100000014/adaptations-de-textes-classiques"
+					}
+				},
+				{
+					"label": "Journalisme",
+					"onClick": {
+						"displayTemplate": "contentGrid",
+						"displayName": "Journalisme",
+						"URLPage": "https://hodor.canalplus.pro/api/v2/mycanal/tag/da2291af3b10e9900d1c55e1a65d3388/id/100000455?dsp=detailPage",
+						"path": "/tag/100000455/journalisme"
+					}
+				},
+				{
+					"label": "Luxe",
+					"onClick": {
+						"displayTemplate": "contentGrid",
+						"displayName": "Luxe",
+						"URLPage": "https://hodor.canalplus.pro/api/v2/mycanal/tag/da2291af3b10e9900d1c55e1a65d3388/id/100000484?dsp=detailPage",
+						"path": "/tag/100000484/luxe"
+					}
+				},
+				{
+					"label": "Réputation",
+					"onClick": {
+						"displayTemplate": "contentGrid",
+						"displayName": "Réputation",
+						"URLPage": "https://hodor.canalplus.pro/api/v2/mycanal/tag/da2291af3b10e9900d1c55e1a65d3388/id/100000661?dsp=detailPage",
+						"path": "/tag/100000661/reputation"
+					}
+				},
+				{
+					"label": "Écrivains",
+					"onClick": {
+						"displayTemplate": "contentGrid",
+						"displayName": "Écrivains",
+						"URLPage": "https://hodor.canalplus.pro/api/v2/mycanal/tag/da2291af3b10e9900d1c55e1a65d3388/id/100000252?dsp=detailPage",
+						"path": "/tag/100000252/ecrivains"
+					}
+				},
+				{
+					"label": "Déceptions amoureuses",
+					"onClick": {
+						"displayTemplate": "contentGrid",
+						"displayName": "Déceptions amoureuses",
+						"URLPage": "https://hodor.canalplus.pro/api/v2/mycanal/tag/da2291af3b10e9900d1c55e1a65d3388/id/100000211?dsp=detailPage",
+						"path": "/tag/100000211/deceptions-amoureuses"
+					}
+				},
+				{
+					"label": "Attirance ou sentiments",
+					"onClick": {
+						"displayTemplate": "contentGrid",
+						"displayName": "Attirance ou sentiments",
+						"URLPage": "https://hodor.canalplus.pro/api/v2/mycanal/tag/da2291af3b10e9900d1c55e1a65d3388/id/100000077?dsp=detailPage",
+						"path": "/tag/100000077/attirance-ou-sentiments"
+					}
+				},
+				{
+					"label": "Subtil",
+					"onClick": {
+						"displayTemplate": "contentGrid",
+						"displayName": "Subtil",
+						"URLPage": "https://hodor.canalplus.pro/api/v2/mycanal/tag/da2291af3b10e9900d1c55e1a65d3388/id/100000762?dsp=detailPage",
+						"path": "/tag/100000762/subtil"
+					}
+				},
+				{
+					"label": "Glamour",
+					"onClick": {
+						"displayTemplate": "contentGrid",
+						"displayName": "Glamour",
+						"URLPage": "https://hodor.canalplus.pro/api/v2/mycanal/tag/da2291af3b10e9900d1c55e1a65d3388/id/100000364?dsp=detailPage",
+						"path": "/tag/100000364/glamour"
+					}
+				}
+			],
+			"parentalRatings": [
+				{
+					"value": "2",
+					"authority": "CSA"
+				}
+			],
+			"duration": "8640000",
+			"productionYear": "2021",
+			"contentAvailability": {
+				"isInCatalog": true,
+				"isInOffer": false,
+				"availabilities": {
+					"download": {
+						"consumptionPlatform": "HAPI",
+						"isAvailable": true,
+						"isInOffer": false,
+						"URLMedias": "https://hodor.canalplus.pro/api/v2/mycanal/me/getMediaUrl/{tokenCMS}/okapi/17230453_50001.json",
+						"availabilityEndDate": 1677797940000
+					},
+					"stream": {
+						"consumptionPlatform": "HAPI",
+						"isAvailable": true,
+						"isInOffer": false,
+						"label": "Dispo. jusqu'au 02/03/2023",
+						"URLMedias": "https://hodor.canalplus.pro/api/v2/mycanal/me/getMediaUrl/{tokenCMS}/okapi/17230453_50001.json"
+					},
+					"live": {
+						"isInOffer": false,
+						"isAvailable": true
+					}
+				}
+			}
+		}
+	},
+	"perso": [
+		{
+			"platform": "HAPI"
+		}
+	],
+	"associatedContents": [
+		{
+			"title": "En plus",
+			"context": {
+				"contextType": "associatedContent",
+				"contextDetail": "mycanal-prog-fiche-cinema-illusions_perdues-creplay_chaine_cplus_illusions_perdues-en_plus",
+				"context_type": "associatedContent",
+				"context_page_title": "Prog - Fiche - Cinema - Illusions perdues",
+				"context_list_id": "creplay_chaine_cplus_illusions_perdues",
+				"context_list_title": "En plus",
+				"context_list_type": "contentRow",
+				"context_list_position": 1
+			},
+			"contentID": "creplay_chaine_cplus_illusions_perdues",
+			"contents": [
+				{
+					"contentID": "19644697_50001",
+					"URLImage": "https://thumb.canalplus.pro/http/unsafe/{resolutionXY}/filters:quality({imageQualityPercentage})/img-hapi.canalplus.pro:80/ServiceImage/ImageID/107282238",
+					"parentalRatings": [
+						{
+							"value": "1",
+							"authority": "CSA"
+						}
+					],
+					"title": "Intro : Illusions perdues",
+					"subtitle": "Illusions perdues",
+					"contentAvailability": {
+						"isInCatalog": true,
+						"isInOffer": true,
+						"availabilities": {
+							"download": {
+								"consumptionPlatform": "HAPI",
+								"isAvailable": true,
+								"isInOffer": false,
+								"URLMedias": "https://hodor.canalplus.pro/api/v2/mycanal/me/getMediaUrl/{tokenCMS}/okapi/19644697_50001.json",
+								"availabilityEndDate": 1679785140000
+							},
+							"stream": {
+								"consumptionPlatform": "HAPI",
+								"isAvailable": true,
+								"isInOffer": true,
+								"URLMedias": "https://hodor.canalplus.pro/api/v2/mycanal/me/getMediaUrl/{tokenCMS}/okapi/19644697_50001.json"
+							},
+							"live": {
+								"isInOffer": false,
+								"isAvailable": false
+							}
+						}
+					}
+				}
+			]
+		}
+	]
+}
