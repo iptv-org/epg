@@ -5,7 +5,7 @@ https://sky.co.nz/ _[Geo-Blocked]_
 ### Download the guide
 
 ```sh
-npm run grab --- --site=sky.co.nz
+npm run grab --- --sites=sky.co.nz
 ```
 
 ### Update channel list

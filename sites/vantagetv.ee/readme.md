@@ -5,7 +5,7 @@ https://vantagetv.ee/epg.xml
 ### Download the guide
 
 ```sh
-npm run grab --- --site=vantagetv.ee
+npm run grab --- --sites=vantagetv.ee
 ```
 
 ### Test

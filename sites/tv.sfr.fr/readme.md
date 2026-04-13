@@ -5,7 +5,7 @@ https://tv.sfr.fr/programme-tv
 ### Download the guide
 
 ```sh
-npm run grab --- --site=tv.sfr.fr
+npm run grab --- --sites=tv.sfr.fr
 ```
 
 ### Update channel list

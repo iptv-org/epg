@@ -5,7 +5,7 @@ https://www.superguidatv.it/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=superguidatv.it
+npm run grab --- --sites=superguidatv.it
 ```
 
 ### Update channel list

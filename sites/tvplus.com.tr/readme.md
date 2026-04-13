@@ -5,7 +5,7 @@ https://tvplus.com.tr/canli-tv/yayin-akisi
 ### Download the guide
 
 ```sh
-npm run grab --- --site=tvplus.com.tr
+npm run grab --- --sites=tvplus.com.tr
 ```
 
 ### Update channel list

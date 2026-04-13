@@ -7,13 +7,13 @@ https://www.mncvision.id/schedule/table
 Indonesian:
 
 ```sh
-npm run grab --- --site=mncvision.id --lang=id
+npm run grab --- --sites=mncvision.id --lang=id
 ```
 
 English:
 
 ```sh
-npm run grab --- --site=mncvision.id --lang=en
+npm run grab --- --sites=mncvision.id --lang=en
 ```
 
 ### Update channel list

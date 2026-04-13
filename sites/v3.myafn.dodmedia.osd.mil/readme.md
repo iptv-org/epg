@@ -5,7 +5,7 @@ https://v3.myafn.dodmedia.osd.mil/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=v3.myafn.dodmedia.osd.mil
+npm run grab --- --sites=v3.myafn.dodmedia.osd.mil
 ```
 
 ### Update channel list

@@ -29,6 +29,7 @@
   <channel site="tv.sfr.fr" site_id="2011" lang="fr" xmltv_id="">+ d&apos;Afrique</channel>
   <channel site="tv.sfr.fr" site_id="2168" lang="fr" xmltv_id="">Boomerang Anglais</channel>
   <channel site="tv.sfr.fr" site_id="2169" lang="fr" xmltv_id="">TCM Anglais</channel>
+  <channel site="tv.sfr.fr" site_id="2181" lang="fr" xmltv_id="">Drive In Movie Channel</channel>
   <channel site="tv.sfr.fr" site_id="2183" lang="fr" xmltv_id="">Bip TV</channel>
   <channel site="tv.sfr.fr" site_id="2218" lang="fr" xmltv_id="">LBC Sat</channel>
   <channel site="tv.sfr.fr" site_id="2313" lang="fr" xmltv_id="">RTP Noticias</channel>
@@ -54,6 +55,7 @@
   <channel site="tv.sfr.fr" site_id="4003" lang="fr" xmltv_id="">Lang Lab</channel>
   <channel site="tv.sfr.fr" site_id="4004" lang="fr" xmltv_id="">Lingo Toons</channel>
   <channel site="tv.sfr.fr" site_id="4012" lang="fr" xmltv_id="">France 2 UHD</channel>
+  <channel site="tv.sfr.fr" site_id="4064" lang="fr" xmltv_id="">Ciné Western+</channel>
   <channel site="tv.sfr.fr" site_id="4068" lang="fr" xmltv_id="">CANAL+LIVE 1</channel>
   <channel site="tv.sfr.fr" site_id="4069" lang="fr" xmltv_id="">CANAL+LIVE 2</channel>
   <channel site="tv.sfr.fr" site_id="4070" lang="fr" xmltv_id="">CANAL+LIVE 3</channel>
@@ -215,7 +217,7 @@
   <channel site="tv.sfr.fr" site_id="3597" lang="fr" xmltv_id="DreamWorks.fr@SD">DREAMWORKS</channel>
   <channel site="tv.sfr.fr" site_id="589" lang="fr" xmltv_id="DubaiTV.ae@SD">Dubaï TV</channel>
   <channel site="tv.sfr.fr" site_id="61" lang="fr" xmltv_id="DW.de@Deutsch">DW-TV</channel>
-  <channel site="tv.sfr.fr" site_id="405" lang="fr" xmltv_id="E.fr@SD">E! Entertainment</channel>
+  <channel site="tv.sfr.fr" site_id="405" lang="fr" xmltv_id="E.fr@SD">Bravo</channel>
   <channel site="tv.sfr.fr" site_id="2832" lang="fr" xmltv_id="EchoroukNews.dz@SD">Echorouk News</channel>
   <channel site="tv.sfr.fr" site_id="1550" lang="fr" xmltv_id="EchoroukTV.dz@SD">Echorouk TV</channel>
   <channel site="tv.sfr.fr" site_id="2957" lang="fr" xmltv_id="ElBiladTV.dz@SD">El Bilad TV</channel>
@@ -326,7 +328,7 @@
   <channel site="tv.sfr.fr" site_id="907" lang="fr" xmltv_id="MezzoLive.fr@SD">Mezzo Live</channel>
   <channel site="tv.sfr.fr" site_id="2353" lang="fr" xmltv_id="MGGTV.fr@SD">MGG TV</channel>
   <channel site="tv.sfr.fr" site_id="1700" lang="fr" xmltv_id="MosaikCristal.fr@SD">Mosaik Cristal</channel>
-  <channel site="tv.sfr.fr" site_id="1045" lang="fr" xmltv_id="MoselleTV.fr@SD">vià Mirabelle</channel>
+  <channel site="tv.sfr.fr" site_id="1045" lang="fr" xmltv_id="MoselleTV.fr@SD">Moselle TV</channel>
   <channel site="tv.sfr.fr" site_id="3810" lang="fr" xmltv_id="MPlus.sa@SD">Rotana M+</channel>
   <channel site="tv.sfr.fr" site_id="128" lang="fr" xmltv_id="MTV.fr@SD">MTV</channel>
   <channel site="tv.sfr.fr" site_id="1072" lang="fr" xmltv_id="MuseumTVFrench.fr@SD">MUSEUM TV</channel>
@@ -361,8 +363,6 @@
   <channel site="tv.sfr.fr" site_id="2050" lang="fr" xmltv_id="PortoCanal.pt@SD">Porto Canal</channel>
   <channel site="tv.sfr.fr" site_id="558" lang="fr" xmltv_id="PrivateTV.nl@SD">Private TV</channel>
   <channel site="tv.sfr.fr" site_id="964" lang="fr" xmltv_id="ProSieben.de@SD">Pro Sieben</channel>
-  <channel site="tv.sfr.fr" site_id="992" lang="fr" xmltv_id="PublicSenat2424.fr@SD">LCP-AN 24/24</channel>
-  <channel site="tv.sfr.fr" site_id="2013" lang="fr" xmltv_id="PublicSenat2424.fr@SD">Public Sénat 24/24</channel>
   <channel site="tv.sfr.fr" site_id="3771" lang="fr" xmltv_id="PuissanceTV.fr@SD">Puissance TV</channel>
   <channel site="tv.sfr.fr" site_id="3970" lang="fr" xmltv_id="PULAAGU.sn@SD">Pulaagu</channel>
   <channel site="tv.sfr.fr" site_id="156" lang="fr" xmltv_id="Rai1.it@SD">Rai Uno</channel>
@@ -396,7 +396,7 @@
   <channel site="tv.sfr.fr" site_id="166" lang="fr" xmltv_id="RTL.de@SD">RTL Television</channel>
   <channel site="tv.sfr.fr" site_id="1854" lang="fr" xmltv_id="RTLSuper.de@SD">Super RTL</channel>
   <channel site="tv.sfr.fr" site_id="966" lang="fr" xmltv_id="RTLZwei.de@SD">RTL2</channel>
-  <channel site="tv.sfr.fr" site_id="169" lang="fr" xmltv_id="RTPInternacional.pt@SD">RTPI</channel>
+  <channel site="tv.sfr.fr" site_id="169" lang="fr" xmltv_id="RTPMundo.pt@SD">RTPI</channel>
   <channel site="tv.sfr.fr" site_id="847" lang="fr" xmltv_id="RTS.ec@SD">RTS 1</channel>
   <channel site="tv.sfr.fr" site_id="2299" lang="fr" xmltv_id="SamiraTV.dz@SD">Samira TV</channel>
   <channel site="tv.sfr.fr" site_id="366" lang="fr" xmltv_id="SAT1.de@SD">Sat 1</channel>
@@ -415,7 +415,7 @@
   <channel site="tv.sfr.fr" site_id="2837" lang="fr" xmltv_id="SportenFrance.fr@SD">Sport en France</channel>
   <channel site="tv.sfr.fr" site_id="2908" lang="fr" xmltv_id="SunuYeuf.sn@SD">SUNU YEUF</channel>
   <channel site="tv.sfr.fr" site_id="182" lang="fr" xmltv_id="SWRFernsehenHD.de@SD">SWR</channel>
-  <channel site="tv.sfr.fr" site_id="479" lang="fr" xmltv_id="Syfy.fr@SD">Syfy</channel>
+  <channel site="tv.sfr.fr" site_id="479" lang="fr" xmltv_id="Syfy.fr@SD">SciFi</channel>
   <channel site="tv.sfr.fr" site_id="4141" lang="fr" xmltv_id="SyriaTV.sy@SD">Syria TV</channel>
   <channel site="tv.sfr.fr" site_id="4139" lang="fr" xmltv_id="T18.fr@HD">T18</channel>
   <channel site="tv.sfr.fr" site_id="185" lang="fr" xmltv_id="TCMCinema.fr@SD">TCM Cinéma</channel>
@@ -489,8 +489,6 @@
   <channel site="tv.sfr.fr" site_id="2334" lang="fr" xmltv_id="WarnerTV.fr@SD">WARNER TV</channel>
   <channel site="tv.sfr.fr" site_id="2040" lang="fr" xmltv_id="WarnerTVNext.fr@SD">Warner TV Next</channel>
   <channel site="tv.sfr.fr" site_id="1726" lang="fr" xmltv_id="WELT.de@SD">WELT</channel>
-  <channel site="tv.sfr.fr" site_id="809" lang="fr" xmltv_id="Weo.fr@SD">Wéo TV, La voix du nord</channel>
-  <channel site="tv.sfr.fr" site_id="3778" lang="fr" xmltv_id="WeoPicardie.fr@SD">Wéo Picardie</channel>
   <channel site="tv.sfr.fr" site_id="218" lang="fr" xmltv_id="XXL.fr@SD">XXL</channel>
   <channel site="tv.sfr.fr" site_id="219" lang="fr" xmltv_id="ZDF.de@SD">ZDF</channel>
   <channel site="tv.sfr.fr" site_id="526" lang="fr" xmltv_id="ZeeTV.in@SD">Zee TV</channel>

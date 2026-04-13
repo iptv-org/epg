@@ -55,7 +55,7 @@ module.exports = {
     return programs.filter(p => p.title && p.start.isValid() && p.stop.isValid())
   },
   async channels() {
-    const { data } = await axios.get('https://tv.jsrdn.com/tv_v5/getfeed.php?type=live', {
+    const { data } = await axios.get('https://tv.jsrdn.com/tv_v5/getfeed.php?type=live&geo=QQ', {
       headers: HEADERS
     })
 

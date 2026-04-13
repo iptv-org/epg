@@ -5,7 +5,7 @@ https://webtv.sk/archive
 ### Download the guide
 
 ```sh
-npm run grab --- --site=webtv.sk
+npm run grab --- --sites=webtv.sk
 ```
 
 ### Update channel list

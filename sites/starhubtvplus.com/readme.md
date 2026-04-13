@@ -7,13 +7,13 @@ https://www.starhubtvplus.com/
 English:
 
 ```sh
-npm run grab --- --site=starhubtvplus.com --lang=en
+npm run grab --- --sites=starhubtvplus.com --lang=en
 ```
 
 Chinese:
 
 ```sh
-npm run grab --- --site=starhubtvplus.com --lang=zh
+npm run grab --- --sites=starhubtvplus.com --lang=zh
 ```
 
 ### Update channel list

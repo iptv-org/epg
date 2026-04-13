@@ -3,11 +3,13 @@ const fs = require('fs')
 const path = require('path')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
+dayjs.extend(timezone)
 
-jest.useFakeTimers().setSystemTime(new Date('2025-01-15'))
+jest.useFakeTimers().setSystemTime(dayjs.utc('2025-01-15').valueOf())
 
 const date = dayjs.utc('2025-01-17', 'YYYY-MM-DD').startOf('d')
 const channel = {

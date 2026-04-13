@@ -5,7 +5,7 @@ https://www.pickx.be/fr/television/programme-tv
 ### Download the guide
 
 ```sh
-npm run grab --- --site=pickx.be
+npm run grab --- --sites=pickx.be
 ```
 
 ### Update channel list

@@ -5,7 +5,7 @@ https://epg.112114.xyz/pp.xml
 ### Download the guide
 
 ```sh
-npm run grab --- --site=epg.112114.xyz
+npm run grab --- --sites=epg.112114.xyz
 ```
 
 ### Update channel list

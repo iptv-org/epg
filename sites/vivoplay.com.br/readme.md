@@ -5,7 +5,7 @@ https://www.vivoplay.com.br/tv-guide/epg
 ### Download the guide
 
 ```sh
-npm run grab --- --site=vivoplay.com.br
+npm run grab --- --sites=vivoplay.com.br
 ```
 
 ### Update channel list

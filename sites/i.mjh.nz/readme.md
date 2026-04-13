@@ -11,7 +11,6 @@
 | Kayo            | `kayo`        | https://i.mjh.nz/Kayo          |
 | MeTV            | `metv`        | https://i.mjh.nz/MeTV          |
 | New Zealand     | `nz`          | https://i.mjh.nz/nz            |
-| Optus           | `optus`       | https://i.mjh.nz/Optus         |
 | PBS             | `pbs`         | https://i.mjh.nz/PBS           |
 | Plex            | `plex`        | https://i.mjh.nz/Plex          |
 | Pluto TV        | `pluto`       | https://i.mjh.nz/PlutoTV       |
@@ -20,7 +19,6 @@
 | Singtel         | `singtel`     | https://i.mjh.nz/Singtel       |
 | SkyGo           | `skygo`       | https://i.mjh.nz/SkyGo         |
 | Sky Sport Now   | `skysportnow` | https://i.mjh.nz/SkySportNow   |
-| STIRR           | `stirr`       | https://i.mjh.nz/Stirr         |
 
 | Provider | Code |
 

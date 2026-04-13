@@ -5,7 +5,7 @@ https://tataplay.com
 ### Download the guide
 
 ```sh
-npm run grab --- --site=tataplay.com
+npm run grab --- --sites=tataplay.com
 ```
 
 ### Update channel list

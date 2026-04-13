@@ -1,6 +1,10 @@
-const { DateTime } = require('luxon')
+const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
 const axios = require('axios')
 const uniqBy = require('lodash.uniqby')
+dayjs.extend(utc)
+dayjs.extend(timezone)
 
 module.exports = {
   site: 'tv.mail.ru',
@@ -19,12 +23,12 @@ module.exports = {
       let start = parseStart(item, date)
       if (prev) {
         if (start < prev.start) {
-          start = start.plus({ days: 1 })
-          date = date.add(1, 'd')
+          start = start.add(1, 'day')
+          date = date.add(1, 'day')
         }
         prev.stop = start
       }
-      const stop = start.plus({ hours: 1 })
+      const stop = start.add(1, 'hour')
       programs.push({
         title: item.name,
         category: parseCategory(item),
@@ -84,7 +88,7 @@ async function getTotalPageCount(region) {
 function parseStart(item, date) {
   const dateString = `${date.format('YYYY-MM-DD')} ${item.start}`
 
-  return DateTime.fromFormat(dateString, 'yyyy-MM-dd HH:mm', { zone: 'Europe/Moscow' }).toUTC()
+  return dayjs.tz(dateString, 'YYYY-MM-DD HH:mm', 'Europe/Moscow').utc()
 }
 
 function parseCategory(item) {
