@@ -5,7 +5,7 @@ https://pbsguam.org/calendar/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=pbsguam.org
+npm run grab --- --sites=pbsguam.org
 ```
 
 **NOTE:** The program is only available Thursday through Sunday.

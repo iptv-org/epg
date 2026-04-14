@@ -5,7 +5,7 @@ https://web.magentatv.de/tv-guide
 ### Download the guide
 
 ```sh
-npm run grab --- --site=web.magentatv.de
+npm run grab --- --sites=web.magentatv.de
 ```
 
 ### Update channel list

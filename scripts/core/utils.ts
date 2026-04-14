@@ -110,3 +110,7 @@ export async function loadIssues(props?: { labels: string[] | string }) {
 export function parseNumber(value: string): number {
   return parseInt(value)
 }
+
+export function parseList(value: string): string[] {
+  return value.split(',')
+}

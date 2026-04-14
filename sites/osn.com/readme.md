@@ -7,13 +7,13 @@ https://osn.com/ _[Geo-blocked]_
 Arabic:
 
 ```sh
-npm run grab --- --site=osn.com --lang=ar
+npm run grab --- --sites=osn.com --lang=ar
 ```
 
 English:
 
 ```sh
-npm run grab --- --site=osn.com --lang=en
+npm run grab --- --sites=osn.com --lang=en
 ```
 
 ### Update channel list

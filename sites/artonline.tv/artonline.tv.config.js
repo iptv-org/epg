@@ -34,6 +34,7 @@ module.exports = {
     const programs = []
     if (!content) return programs
     const items = JSON.parse(content)
+    if (!Array.isArray(items)) return programs
     items.forEach(item => {
       const image = parseImage(item)
       const start = parseStart(item)
@@ -60,9 +61,9 @@ function parseStart(item) {
 }
 
 function parseDuration(item) {
-  const [, HH, mm, ss] = item.duration.match(/(\d+):(\d+):(\d+)/)
+  const [, HH, mm, ss] = item.duration.match(/(\d+):(\d+)(?::(\d+))?/)
 
-  return parseInt(HH) * 3600 + parseInt(mm) * 60 + parseInt(ss)
+  return parseInt(HH) * 3600 + parseInt(mm) * 60 + parseInt(ss || 0)
 }
 
 function parseImage(item) {

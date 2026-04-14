@@ -5,7 +5,7 @@ https://startimestv.com/tv_guide.html
 ### Download the guide
 
 ```sh
-npm run grab --- --site=startimestv.com
+npm run grab --- --sites=startimestv.com
 ```
 
 ### Update channel list

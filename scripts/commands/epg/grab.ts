@@ -1,11 +1,11 @@
+import { loadJs, parseProxy, parseNumber, parseList } from '../../core'
 import { Logger, Timer, Collection, Template } from '@freearhey/core'
 import epgGrabber, { EPGGrabber, EPGGrabberMock } from 'epg-grabber'
-import { loadJs, parseProxy, parseNumber } from '../../core'
 import { CurlBody } from 'curl-generator/dist/bodies/body'
 import { Channel, Guide, Program } from '../../models'
 import { SocksProxyAgent } from 'socks-proxy-agent'
 import defaultConfig from '../../default.config'
-import { PromisyClass, TaskQueue } from 'cwait'
+import pLimit from 'p-limit'
 import { Storage } from '@freearhey/storage-js'
 import { CurlGenerator } from 'curl-generator'
 import { QueueItem } from '../../types/queue'
@@ -17,11 +17,15 @@ import merge from 'lodash.merge'
 import path from 'path'
 
 program
-  .addOption(new Option('-s, --site <name>', 'Name of the site to parse'))
+  .addOption(
+    new Option('-s, --sites <names>', 'A comma-separated list of the sites to parse').argParser(
+      parseList
+    )
+  )
   .addOption(
     new Option(
       '-c, --channels <path>',
-      'Path to *.channels.xml file (required if the "--site" attribute is not specified)'
+      'Path to *.channels.xml file (required if the "--sites" attribute is not specified)'
     )
   )
   .addOption(new Option('-o, --output <path>', 'Path to output file'))
@@ -56,7 +60,7 @@ program
   .parse()
 
 interface GrabOptions {
-  site?: string
+  sites?: string[]
   channels?: string
   output?: string
   gzip?: boolean
@@ -73,8 +77,8 @@ interface GrabOptions {
 const options: GrabOptions = program.opts()
 
 async function main() {
-  if (typeof options.site !== 'string' && typeof options.channels !== 'string')
-    throw new Error('One of the arguments must be presented: `--site` or `--channels`')
+  if (!Array.isArray(options.sites) && typeof options.channels !== 'string')
+    throw new Error('One of the arguments must be presented: `--sites` or `--channels`')
 
   const LOG_LEVELS = { info: 3, debug: 4 }
   const logger = new Logger({ level: options.debug ? LOG_LEVELS['debug'] : LOG_LEVELS['info'] })
@@ -154,10 +158,15 @@ async function main() {
   const storage = new Storage()
 
   let files: string[] = []
-  if (typeof options.site === 'string') {
-    let pattern = path.join(SITES_DIR, options.site, '*.channels.xml')
-    pattern = pattern.replace(/\\/g, '/')
-    files = await storage.list(pattern)
+  if (Array.isArray(options.sites)) {
+    for (const site of options.sites) {
+      let pattern = path.join(SITES_DIR, site, '*.channels.xml')
+      pattern = pattern.replace(/\\/g, '/')
+      const foundFiles = await storage.list(pattern)
+      foundFiles.forEach((filepath: string) => {
+        files.push(filepath)
+      })
+    }
   } else if (typeof options.channels === 'string') {
     files = await storage.list(options.channels)
   }
@@ -213,8 +222,7 @@ async function main() {
   }
 
   const maxConnections = globalConfig.maxConnections || defaultConfig.maxConnections
-
-  const taskQueue = new TaskQueue(Promise as PromisyClass, maxConnections)
+  const limit = pLimit(maxConnections)
 
   const channels = new Collection<Channel>()
   const programs = new Collection<Program>()
@@ -222,8 +230,12 @@ async function main() {
   let i = 1
   const total = queue.count()
 
-  const requests = queue.map(
-    taskQueue.wrap(async (queueItem: QueueItem) => {
+  logger.info('run:')
+  const timer = new Timer()
+  timer.start()
+
+  const requests = queue.all().map((queueItem: QueueItem) =>
+    limit(async () => {
       const { channel, config, date } = queueItem
 
       if (!channel.logo) {
@@ -262,12 +274,7 @@ async function main() {
     })
   )
 
-  logger.info('run:')
-
-  const timer = new Timer()
-  timer.start()
-
-  await Promise.all(requests.all())
+  await Promise.all(requests)
 
   const output = globalConfig.output || defaultConfig.output
 

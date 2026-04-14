@@ -5,7 +5,7 @@ https://musor.tv/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=musor.tv
+npm run grab --- --sites=musor.tv
 ```
 
 ### Update channel list

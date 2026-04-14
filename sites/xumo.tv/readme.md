@@ -5,7 +5,7 @@ https://www.xumo.tv/ _[Geo-blocked]_
 ### Download the guide
 
 ```sh
-npm run grab --- --site=xumo.tv
+npm run grab --- --sites=xumo.tv
 ```
 
 ### Update channel list

@@ -5,7 +5,7 @@ https://orangetv.orange.es/epg
 ### Download the guide
 
 ```sh
-npm run grab --- --site=orangetv.orange.es
+npm run grab --- --sites=orangetv.orange.es
 ```
 
 ### Update channel list

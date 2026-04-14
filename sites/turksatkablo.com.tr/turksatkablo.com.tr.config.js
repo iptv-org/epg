@@ -1,4 +1,8 @@
-const { DateTime } = require('luxon')
+const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
+dayjs.extend(utc)
+dayjs.extend(timezone)
 
 module.exports = {
   site: 'turksatkablo.com.tr',
@@ -21,13 +25,13 @@ module.exports = {
       const prev = programs[programs.length - 1]
       let start = parseStart(item, date)
       if (prev && start < prev.start) {
-        start = start.plus({ days: 1 })
-        date = date.add(1, 'd')
+        start = start.add(1, 'day')
+        date = date.add(1, 'day')
       }
       let stop = parseStop(item, date)
       if (prev && stop < start) {
-        stop = stop.plus({ days: 1 })
-        date = date.add(1, 'd')
+        stop = stop.add(1, 'day')
+        date = date.add(1, 'day')
       }
       programs.push({
         title: item.b,
@@ -65,13 +69,13 @@ module.exports = {
 function parseStart(item, date) {
   const time = `${date.format('YYYY-MM-DD')} ${item.c}`
 
-  return DateTime.fromFormat(time, 'yyyy-MM-dd HH:mm', { zone: 'Europe/Istanbul' }).toUTC()
+  return dayjs.tz(time, 'YYYY-MM-DD HH:mm', 'Europe/Istanbul').utc()
 }
 
 function parseStop(item, date) {
   const time = `${date.format('YYYY-MM-DD')} ${item.d}`
 
-  return DateTime.fromFormat(time, 'yyyy-MM-dd HH:mm', { zone: 'Europe/Istanbul' }).toUTC()
+  return dayjs.tz(time, 'YYYY-MM-DD HH:mm', 'Europe/Istanbul').utc()
 }
 
 function parseItems(content, channel) {

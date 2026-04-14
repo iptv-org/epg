@@ -5,7 +5,7 @@ https://www.antennasatellite.gr/el/tvguide.html
 ### Download the guide
 
 ```sh
-npm run grab --- --site=antennasatellite.gr
+npm run grab --- --sites=antennasatellite.gr
 ```
 
 ### Test

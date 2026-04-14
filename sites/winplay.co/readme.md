@@ -5,7 +5,7 @@ https://winplay.co/epg
 ### Download the guide
 
 ```sh
-npm run grab --- --site=winplay.co
+npm run grab --- --sites=winplay.co
 ```
 
 ### Test

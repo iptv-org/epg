@@ -5,7 +5,7 @@ https://anteltv.com.uy/envivo
 ### Download the guide
 
 ```sh
-npm run grab --- --site=anteltv.com.uy
+npm run grab --- --sites=anteltv.com.uy
 ```
 
 ### Update channel list
