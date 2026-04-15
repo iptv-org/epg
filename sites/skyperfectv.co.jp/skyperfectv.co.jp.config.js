@@ -78,26 +78,44 @@ const exported = {
     return programs
   },
   async channels() {
+    const normalizeText = str => (str || '').replace(/\s+/g, ' ').trim()
+
+    const getChannelIdFromHref = href => {
+      const m = (href || '').match(/channel:([^/]+)\//i)
+      return m ? normalizeText(m[1]) : ''
+    }
+
     const pageParser = (content, type) => {
       // type: "basic" | "premium"
-      // Returns an array of channel objects
-
       const $ = cheerio.load(content)
-      const channels = []
+      const map = new Map()
 
-      $('.p-channel').each((index, element) => {
-        const site_id = `${type}_${$(element).find('.p-channel__id').text()}`
-        const name = $(element).find('.p-channel__name').text()
-        channels.push({ site_id, name, lang: 'ja' })
+      $('.p-channel').each((_, element) => {
+        const $el = $(element)
+
+        const href = $el.find('a.p-channel__link').attr('href') || $el.find('a').first().attr('href')
+        const idFromDom = normalizeText($el.find('.p-channel__id').first().text())
+        const id = idFromDom || getChannelIdFromHref(href)
+
+        const name = normalizeText($el.find('.p-channel__name').first().text())
+
+        if (!id || !name) return
+
+        const site_id = `${type}_${id}`
+        if (!map.has(site_id)) {
+          map.set(site_id, { site_id, name, lang: 'ja' })
+        }
       })
 
-      return channels
+      return Array.from(map.values())
     }
 
     const getChannels = async type => {
       const response = await axios.get(`https://www.skyperfectv.co.jp/program/schedule/${type}/`, {
         headers: {
-          Cookie: 'adult_auth=true;'
+          Cookie: 'adult_auth=true;',
+          'User-Agent':
+            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
         }
       })
       return pageParser(response.data, type)
@@ -106,8 +124,7 @@ const exported = {
     const fetchAllChannels = async () => {
       const basicChannels = await getChannels('basic')
       const premiumChannels = await getChannels('premium')
-      const results = [...basicChannels, ...premiumChannels]
-      return results
+      return [...basicChannels, ...premiumChannels]
     }
 
     return await fetchAllChannels()
