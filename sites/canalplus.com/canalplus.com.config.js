@@ -4,122 +4,39 @@ const utc = require('dayjs/plugin/utc')
 
 dayjs.extend(utc)
 
-const paths = {
-  ad: { zone: 'cpfra',  location: 'ad' },
-  au: { zone: 'cpncl',  location: 'au' },
-  bf: { zone: 'cpafr',  location: 'bf' },
-  bi: { zone: 'cpafr',  location: 'bi' },
-  bj: { zone: 'cpafr',  location: 'bj' },
-  bl: { zone: 'cpant',  location: 'bl' },
-  cd: { zone: 'cpafr',  location: 'cd' },
-  cf: { zone: 'cpafr',  location: 'cf' },
-  cg: { zone: 'cpafr',  location: 'cg' },
-  ch: { zone: 'cpche',  location: null },
-  ch_de: { zone: 'cpchd', location: null },
-  ci: { zone: 'cpafr',  location: 'ci' },
-  cm: { zone: 'cpafr',  location: 'cm' },
-  cv: { zone: 'cpafr',  location: 'cv' },
-  dj: { zone: 'cpafr',  location: 'dj' },
-  et: { zone: 'cpeth',  location: 'et' },
-  fr: { zone: null,     location: null },
-  ga: { zone: 'cpafr',  location: 'ga' },
-  gf: { zone: 'cpant',  location: 'gf' },
-  gh: { zone: 'cpafr',  location: 'gh' },
-  gm: { zone: 'cpafr',  location: 'gm' },
-  gn: { zone: 'cpafr',  location: 'gn' },
-  gp: { zone: 'cpafr',  location: 'gp' },
-  gw: { zone: 'cpafr',  location: 'gw' },
-  ht: { zone: 'cpant',  location: 'ht' },
-  km: { zone: 'cpafr',  location: 'km' },
-  mc: { zone: 'cpfra',  location: 'mc' },
-  mf: { zone: 'cpant',  location: 'mf' },
-  mg: { zone: 'cpmdg',  location: 'mg' },
-  ml: { zone: 'cpafr',  location: 'ml' },
-  mq: { zone: 'cpant',  location: 'mq' },
-  mr: { zone: 'cpafr',  location: 'mr' },
-  mu: { zone: 'cpmus',  location: 'mu' },
-  nc: { zone: 'cpncl',  location: 'nc' },
-  ne: { zone: 'cpafr',  location: 'ne' },
-  pf: { zone: 'cppyf',  location: 'pf' },
-  pl: { zone: null,     location: null },
-  re: { zone: 'cpreu',  location: 're' },
-  rw: { zone: 'cpafr',  location: 'rw' },
-  sl: { zone: 'cpafr',  location: 'sl' },
-  sn: { zone: 'cpafr',  location: 'sn' },
-  td: { zone: 'cpafr',  location: 'td' },
-  tg: { zone: 'cpafr',  location: 'tg' },
-  wf: { zone: 'cpncl',  location: 'wf' },
-  yt: { zone: 'cpreu',  location: 'yt' },
-}
-
-const globalHeaders = {
-  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
-  'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,/;q=0.8',
-  'Accept-Language': 'fr-FR,fr;q=0.6',
-  'Accept-Encoding': 'gzip, deflate, br',
-  'Pragma': 'no-cache',
-  'Priority': 'u=0, i',
-  'Sec-CH-UA': '"Not:A-Brand";v="99", "Brave";v="145", "Chromium";v="145"',
-  'sec-ch-ua-mobile': '?0',
-  'sec-ch-ua-platform': '"Windows"',
-  'sec-fetch-dest': 'document',
-  'sec-fetch-mode': 'navigate',
-  'sec-fetch-site': 'none',
-  'sec-fetch-user': '?1',
-  'sec-gpc': '1',
-  'upgrade-insecure-requests': '1'
-}
-
-// Per-region token caching to avoid multiple concurrent calls and redundant token fetches
-const tokenCache = {}
-const tokenPending = {}
-
-// ARCOM (ex-CSA) internal ratings mapping (https://www.arcom.fr/se-documenter/ressources-pedagogiques/protection-des-mineurs)
-// values are negative to be sorted before other ratings if any
-const CSA_RATING_MAP = { '2': '-10', '3': '-12', '4': '-16', '5': '-18' }
-
 module.exports = {
   site: 'canalplus.com',
   days: 2,
   url: async function ({ channel, date }) {
     const [region, site_id] = channel.site_id.split('#')
-    const currentRegion = region || 'fr'
 
-    if (!tokenCache[currentRegion]) {
-      // Prevents concurrent calls from same region
-      if (!tokenPending[currentRegion]) {
-        tokenPending[currentRegion] = parseToken(currentRegion).then(result => {
-          tokenCache[currentRegion] = result
-          if (Object.prototype.hasOwnProperty.call(tokenPending, currentRegion)) {
-            tokenPending[currentRegion] = undefined
-          }
-          return result
-        })
-      }
-      await tokenPending[currentRegion]
-    }
+    const baseUrl =
+      region === 'pl'
+        ? 'https://www.canalplus.com/pl/program-tv/'
+        : `https://www.canalplus.com/${region}/programme-tv/`
 
-    const path = currentRegion === 'pl' ? 'mycanalint' : 'mycanal'
+    const data = await axios
+      .get(baseUrl)
+      .then(r => r.data.toString())
+      .catch(err => console.log(err))
+
+    const token = parseToken(data)
+    const path = region === 'pl' ? 'mycanalint' : 'mycanal'
     const diff = date.diff(dayjs.utc().startOf('d'), 'd')
-    const token = tokenCache[currentRegion]?.token
 
     return `https://hodor.canalplus.pro/api/v2/${path}/channels/${token}/${site_id}/broadcasts/day/${diff}`
   },
-  request: {
-    headers() {
-      return globalHeaders
-    }
-  },
   async parser({ content }) {
+    let programs = []
     const items = parseItems(content)
-
-    // Parallel loading of all program details
-    const detailsArray = await Promise.all(items.map(loadProgramDetails))
-
-    const programs = items.map((item, i) => {
-      const info = parseInfo(detailsArray[i])
+    for (let item of items) {
+      const prev = programs[programs.length - 1]
+      const details = await loadProgramDetails(item)
+      const info = parseInfo(details)
       const start = parseStart(item)
-      return {
+      if (prev) prev.stop = start
+      const stop = start.add(1, 'h')
+      programs.push({
         title: item.title,
         description: parseDescription(info),
         image: parseImage(info),
@@ -131,83 +48,109 @@ module.exports = {
         date: parseDate(info),
         rating: parseRating(info),
         start,
-        stop: null
-      }
-    })
-
-    // Sort programs by start time and set stop time of each program to the start time of the next one
-    for (let i = 0; i < programs.length - 1; i++) {
-      programs[i].stop = programs[i + 1].start
-    }
-
-    // Last program: fallback +1h if there is no next program
-    const last = programs[programs.length - 1]
-    if (last && last.start) {
-      last.stop = last.start.add(1, 'h')
+        stop
+      })
     }
 
     return programs
   },
   async channels({ country }) {
-    const { zone, location } = paths[country] || {}
-    const pathSegment = location ? `${zone}/${location}` : zone || country
-    const url = `https://secure-webtv-static.canal-plus.com/metadata/${pathSegment}/all/v2.2/globalchannels.json`
+    const paths = {
+      ad: 'cpafr/ad',
+      bf: 'cpafr/bf',
+      bi: 'cpafr/bi',
+      bj: 'cpafr/bj',
+      bl: 'cpant/bl',
+      cd: 'cpafr/cd',
+      cf: 'cpafr/cf',
+      cg: 'cpafr/cg',
+      ch: 'cpche',
+      ci: 'cpafr/ci',
+      cm: 'cpafr/cm',
+      cv: 'cpafr/cv',
+      dj: 'cpafr/dj',
+      fr: 'cpfra',
+      ga: 'cpafr/ga',
+      gf: 'cpant/gf',
+      gh: 'cpafr/gh',
+      gm: 'cpafr/gm',
+      gn: 'cpafr/gn',
+      gp: 'cpafr/gp',
+      gw: 'cpafr/gw',
+      ht: 'cpant/ht',
+      mf: 'cpant/mf',
+      mg: 'cpafr/mg',
+      ml: 'cpafr/ml',
+      mq: 'cpant/mq',
+      mr: 'cpafr/mr',
+      mu: 'cpmus/mu',
+      nc: 'cpncl/nc',
+      ne: 'cpafr/ne',
+      pf: 'cppyf/pf',
+      pl: 'cppol',
+      re: 'cpreu/re',
+      rw: 'cpafr/rw',
+      sl: 'cpafr/sl',
+      sn: 'cpafr/sn',
+      td: 'cpafr/td',
+      tg: 'cpafr/tg',
+      wf: 'cpncl/wf',
+      yt: 'cpreu/yt'
+    }
 
+    let channels = []
+    const path = paths[country]
+    const url = `https://secure-webtv-static.canal-plus.com/metadata/${path}/all/v2.2/globalchannels.json`
     const data = await axios
       .get(url)
       .then(r => r.data)
       .catch(console.log)
 
-    return data.channels
-      .filter(channel => channel.name !== '.')
-      .map(channel => ({
+    data.channels.forEach(channel => {
+      const site_id = country === 'fr' ? `#${channel.id}` : `${country}#${channel.id}`
+
+      if (channel.name === '.') return
+
+      channels.push({
         lang: 'fr',
-        site_id: country === 'fr' ? `#${channel.id}` : `${country}#${channel.id}`,
+        site_id,
         name: channel.name
-      }))
+      })
+    })
+
+    return channels
   }
 }
 
-async function parseToken(country) {
-  const { zone, location } = paths[country] || {}
+function parseToken(data) {
+  const [, token] = data.match(/"token":"([^"]+)/) || [null, null]
 
-  let url
-  if (country === 'fr') {
-    url = 'https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control'
-  } else if (country === 'pl') {
-    url = 'https://hodor.canalplus.pro/api/v2/mycanalint/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control'
-  } else {
-    url = `https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control&offerZone=${zone}&offerLocation=${location}`
-  }
-
-  const data = await axios
-    .get(url, { headers: globalHeaders, timeout: 5000 })
-    .then(r => r.data)
-    .catch(console.error)
-
-  return { country, token: data?.token }
+  return token
 }
 
 function parseStart(item) {
-  return item?.startTime ? dayjs(item.startTime) : null
+  return item && item.startTime ? dayjs(item.startTime) : null
 }
 
 function parseImage(info) {
-  return info?.URLImage ?? null
+  return info ? info.URLImage : null
 }
 
 function parseDescription(info) {
-  return info?.summary ?? null
+  return info ? info.summary : null
 }
 
 function parseInfo(data) {
-  return data?.detail?.informations ?? null
+  if (!data || !data.detail || !data.detail.informations) return null
+
+  return data.detail.informations
 }
 
 async function loadProgramDetails(item) {
-  if (!item?.onClick?.URLPage) return {}
-  return axios
-    .get(item.onClick.URLPage, { headers: globalHeaders })
+  if (!item.onClick || !item.onClick.URLPage) return {}
+
+  return await axios
+    .get(item.onClick.URLPage)
     .then(r => r.data)
     .catch(console.error)
 }
@@ -215,26 +158,40 @@ async function loadProgramDetails(item) {
 function parseItems(content) {
   const data = JSON.parse(content)
   if (!data || !Array.isArray(data.timeSlices)) return []
-  return data.timeSlices.flatMap(s => s.contents)
+
+  return data.timeSlices.reduce((acc, curr) => {
+    acc = acc.concat(curr.contents)
+    return acc
+  }, [])
 }
 
 function parseCast(info, type) {
-  if (!info?.personnalities) return []
-  const group = info.personnalities.find(i => i.prefix === type)
-  if (!group) return []
-  return group.personnalitiesList.map(p => p.title)
+  let people = []
+  if (info && info.personnalities) {
+    const personnalities = info.personnalities.find(i => i.prefix == type)
+    if (!personnalities) return people
+    for (let person of personnalities.personnalitiesList) {
+      people.push(person.title)
+    }
+  }
+  return people
 }
 
 function parseDate(info) {
-  return info?.productionYear ?? null
+  return info && info.productionYear ? info.productionYear : null
 }
 
 function parseRating(info) {
-  if (!info?.parentalRatings) return null
-  const rating = info.parentalRatings.find(i => i.authority === 'CSA')
-  if (!rating || Array.isArray(rating) || rating.value === '1') return null
+  if (!info || !info.parentalRatings) return null
+  let rating = info.parentalRatings.find(i => i.authority === 'CSA')
+  if (!rating || Array.isArray(rating)) return null
+  if (rating.value === '1') return null
+  if (rating.value === '2') rating.value = '-10'
+  if (rating.value === '3') rating.value = '-12'
+  if (rating.value === '4') rating.value = '-16'
+  if (rating.value === '5') rating.value = '-18'
   return {
     system: rating.authority,
-    value: CSA_RATING_MAP[rating.value] ?? rating.value
+    value: rating.value
   }
 }
