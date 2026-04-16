@@ -95,11 +95,16 @@ const exported = {
 
         const href = $el.find('a.p-channel__link').attr('href') || $el.find('a').first().attr('href')
         const idFromDom = normalizeText($el.find('.p-channel__id').first().text())
-        const id = idFromDom || getChannelIdFromHref(href)
+        let id = idFromDom || getChannelIdFromHref(href)
 
         const name = normalizeText($el.find('.p-channel__name').first().text())
 
+        // Premium channels have an additional "Ch." added, which needs to be removed in order for it to work.
         if (!id || !name) return
+
+        if (type === 'premium') {
+          id = id.replace(/^Ch\.\s*/i, '')
+        }
 
         const site_id = `${type}_${id}`
         if (!map.has(site_id)) {
