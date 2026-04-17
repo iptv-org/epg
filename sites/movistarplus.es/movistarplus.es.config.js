@@ -1,17 +1,16 @@
 const axios = require('axios')
-const cheerio = require('cheerio')
 const dayjs = require('dayjs')
-const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
-
+const utc = require('dayjs/plugin/utc')
 dayjs.extend(utc)
 dayjs.extend(timezone)
+dayjs.tz.setDefault('Europe/Madrid')
 
 module.exports = {
   site: 'movistarplus.es',
   days: 2,
   url({ channel, date }) {
-    return `https://www.movistarplus.es/programacion-tv/${channel.site_id}/${date.format('YYYY-MM-DD')}`
+    return `https://ottcache.dof6.com/movistarplus/webplayer/OTT/epg?from=${date.format('YYYY-MM-DDTHH:mm:ss')}&span=1&channel=${channel.site_id}&version=8&mdrm=true&tlsstream=true&demarcation=18`
   },
   request: {
     headers: {
@@ -23,122 +22,82 @@ module.exports = {
     },
     maxRedirects: 5
   },
-  async parser({ content, date }) {
+  async parser({ content }) {
     let programs = []
-    const $ = cheerio.load(content)
+    let items = await parseItems(content)
+    if (!items.length) return programs
 
-    const programDivs = $('div[id^="ele-"]').toArray()
-
-    for (let i = 0; i < programDivs.length; i++) {
-      const el = $(programDivs[i])
-
-      const title = el.find('li.title').text().trim()
-      if (!title) continue
-
-      const timeText = el.find('li.time').text().trim()
-      if (!timeText) continue
-
-      const [hours, minutes] = timeText.split(':').map(h => parseInt(h, 10))
-
-      // Parse time in Spain timezone (Europe/Madrid)
-      let startDate = dayjs.tz(
-        `${date.format('YYYY-MM-DD')} ${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}`,
-        'YYYY-MM-DD HH:mm',
-        'Europe/Madrid'
-      )
-
-      // If the time is in early morning (before 5 AM), it's the next day
-      if (hours < 5) {
-        startDate = startDate.add(1, 'day')
-      }
-
-      // Calculate end time from next program's start time
-      let endDate
-      if (i < programDivs.length - 1) {
-        const nextEl = $(programDivs[i + 1])
-        const nextTimeText = nextEl.find('li.time').text().trim()
-        if (nextTimeText) {
-          const [nextHours, nextMinutes] = nextTimeText.split(':').map(h => parseInt(h, 10))
-          endDate = dayjs.tz(
-            `${date.format('YYYY-MM-DD')} ${nextHours.toString().padStart(2, '0')}:${nextMinutes.toString().padStart(2, '0')}`,
-            'YYYY-MM-DD HH:mm',
-            'Europe/Madrid'
-          )
-
-          // If the next time is in early morning (before 5 AM), it's the next day
-          if (nextHours < 5) {
-            endDate = endDate.add(1, 'day')
-          }
-
-          // If end time is still before or same as start time, add another day
-          if (endDate.isBefore(startDate) || endDate.isSame(startDate)) {
-            endDate = endDate.add(1, 'day')
-          }
-        }
-      }
-
-      // If no end time, use start of next day
-      if (!endDate) {
-        endDate = startDate.add(1, 'day').startOf('day')
-      }
-
-      const programLink = el.find('a').attr('href')
-      let description = null
-
-      if (programLink) {
-        description = await getProgramDescription(programLink).catch(() => null)
-      }
-
+    items.forEach(el => {
       programs.push({
-        title,
-        description,
-        start: startDate,
-        stop: endDate
+          title: el.title,
+          description: el.description,
+          season: el.season,
+          episode: el.episode,
+          start: el.start,
+          stop: el.stop
+        })
       })
-    }
-
     return programs
+
   },
   async channels() {
-    const html = await axios
-      .get('https://www.movistarplus.es/programacion-tv', {
-        headers: {
-          'User-Agent':
-            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-          Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
-        }
-      })
+    const json = await axios
+      .get('https://ottcache.dof6.com/movistarplus/webplayer/OTT/contents/channels?mdrm=true&tlsstream=true&demarcation=18&version=8')
       .then(r => r.data)
       .catch(console.log)
 
-    const $ = cheerio.load(html)
-    let scheme = $('script:contains(ItemList)').html()
-    scheme = JSON.parse(scheme)
-
-    return scheme.itemListElement.map(el => {
-      const urlParts = el.item.url.split('/')
-      const site_id = urlParts.pop().toLowerCase()
-
+    // Load JSON, CodCadenaTv is the closest to the old MVSTR site ch. ID
+    return json.map(channel => {
       return {
         lang: 'es',
-        name: el.item.name,
-        site_id
+        site_id: channel.CodCadenaTv,
+        name: channel.Nombre,
+        logo: channel.Logo ? channel.Logos[0].url : null
       }
     })
   }
 }
 
-async function getProgramDescription(programUrl) {
-  const response = await axios.get(programUrl, {
-    headers: {
-      'User-Agent':
-        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-      Referer: 'https://www.movistarplus.es/programacion-tv/'
-    }
-  })
-
-  const $ = cheerio.load(response.data)
-  const description = $('.show-content .text p').first().text().trim() || null
-
-  return description
+async function parseItems(content) {
+  try {
+    const data = JSON.parse(content)
+    const programs = Array.isArray(data) ? data : [data]
+    return await Promise.all(programs.map(async (json) => {
+      const start = dayjs.utc(Number(json?.FechaHoraInicio))
+      const stop = dayjs.utc(Number(json?.FechaHoraFin))
+      const ficha = json?.Ficha || null
+      if (!ficha) {
+        return {
+          title: json?.Titulo || '',
+          description: json?.Resena || '',
+          start,
+          stop
+        }
+      } else {
+        try {
+          const fichaJson = await axios.get(ficha).then(r => r.data)
+          return {
+            title: json?.Titulo || fichaJson?.Titulo || '',
+            description: fichaJson?.Descripcion || json?.Resena || '',
+            actors: fichaJson?.Actores || [],
+            directors: fichaJson?.Directores || [],
+            classification: fichaJson?.Clasificacion || '',
+            season: fichaJson?.Temporada || null,
+            episode: fichaJson?.NumeroEpisodio || null,
+            start,
+            stop
+          }
+        } catch {
+          return {
+            title: json?.Titulo || '',
+            description: json?.Resena || '',
+            start,
+            stop
+          }
+        }
+      }
+    }))
+  } catch {
+    return []
+  }
 }

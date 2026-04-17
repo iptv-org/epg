@@ -35,7 +35,7 @@ module.exports = {
   },
   parser({ content, channel }) {
     if (!content || !channel) return []
-    let programs = []
+    let programs
     try {
       const data = JSON.parse(content)
       if (!data.epg || !data.epg[channel.site_id] || !Array.isArray(data.epg[channel.site_id].slots)) {
