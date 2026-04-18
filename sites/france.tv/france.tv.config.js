@@ -98,8 +98,29 @@ module.exports = {
 
     return programs
   },
-  channels() {
-    return 'Website provides no proper channel list, channels must be added manually'
+  async channels() {
+    try {
+      const response = await axios.get('https://www.france.tv/chaines/')
+      const data = response.data || ''
+      const channels = []
+
+      const channelRegex =
+        /<button[^>]+aria-controls="[^"]*content-([a-z0-9-]+)"[\s\S]*?<title>([^<]+)<\/title>/gi
+
+      let match
+      while ((match = channelRegex.exec(data)) !== null) {
+        channels.push({
+          lang: 'fr',
+          site_id: match[1],
+          name: match[2].trim()
+        })
+      }
+
+      return [...new Map(channels.map(channel => [channel.site_id, channel])).values()]
+    } catch (error) {
+      console.error('Failed to fetch channels list:', error.message)
+      return []
+    }
   }
 }
 
