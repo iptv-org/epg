@@ -34,14 +34,14 @@ it('can parse response', async () => {
         data: JSON.parse(fs.readFileSync(path.resolve(__dirname, '__data__/ficha.json'), 'utf8'))
       })
     } else if (
-      url === 'https://ottcache.dof6.com/movistarplus/webplayer/contents/63182873/details?mediaType=FOTOV&profile=OTT&mode=VODREJILLA&channels=SEXTA&version=8&tlsStream=true&mdrm=true&catalog=events&showNonRated=true'
+      url ===
+      'https://ottcache.dof6.com/movistarplus/webplayer/contents/63182873/details?mediaType=FOTOV&profile=OTT&mode=VODREJILLA&channels=SEXTA&version=8&tlsStream=true&mdrm=true&catalog=events&showNonRated=true'
     ) {
       return Promise.resolve({
         data: JSON.parse(fs.readFileSync(path.resolve(__dirname, '__data__/ficha2.json'), 'utf8'))
       })
     }
   })
-  
 
   let results = await parser({ content, date })
   results = results.map(p => {
@@ -55,21 +55,26 @@ it('can parse response', async () => {
     start: '2026-02-08T21:45:00.000Z',
     stop: '2026-02-09T00:30:00.000Z',
     title: 'Especial ARV elecciones Aragón',
-	  description: 'Antonio García Ferreras y Ana Pastor analizan y debaten sobre el recuento y los resultados que arrojen las urnas con analistas como Lluís Orriols, Antonio Maestre, Ignacio Escolar, Pilar Velasco, Santiago Martínez Vares y Pablo Montesinos.'
+    description:
+      'Antonio García Ferreras y Ana Pastor analizan y debaten sobre el recuento y los resultados que arrojen las urnas con analistas como Lluís Orriols, Antonio Maestre, Ignacio Escolar, Pilar Velasco, Santiago Martínez Vares y Pablo Montesinos.',
+    icon: 'https://estatico.emisiondof6.com/recorte/n/dispficha/MSEXTAP4235944',
+    images: ['https://estatico.emisiondof6.com/recorte/n/vegend/MSEXTAF4235944.jpg']
   })
   expect(results[19]).toMatchObject({
     start: '2026-02-09T20:30:00.000Z',
     stop: '2026-02-09T22:00:00.000Z',
     title: 'El intermedio',
-	  description: 'El Gran Wyoming, con la ayuda de sus colaboradores, analiza en clave de humor las noticias más importantes del día. El sello inconfundible del cómico sirve para completar la información desde un punto de vista más distendido e irónico.'
+    description:
+      'El Gran Wyoming, con la ayuda de sus colaboradores, analiza en clave de humor las noticias más importantes del día. El sello inconfundible del cómico sirve para completar la información desde un punto de vista más distendido e irónico.',
+    icon: 'https://estatico.emisiondof6.com/recorte/n/dispficha/MSEXTAP4236939',
+    images: ['https://estatico.emisiondof6.com/recorte/n/vegend/MSEXTAF4236939.jpg']
   })
 })
-
 
 it('can handle empty guide', async () => {
   const results = await parser({
     date,
-	channel,
+    channel,
     content: '[]'
   })
 
