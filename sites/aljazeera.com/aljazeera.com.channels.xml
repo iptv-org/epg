@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="aljazeera.com" site_id="aja" lang="ar" xmltv_id="AlJazeera.qa@Arabic">Al Jazeera Arabic</channel>
-  <channel site="aljazeera.com" site_id="aje" lang="en" xmltv_id="AlJazeera.qa@English">Al Jazeera English</channel>
+  <channel site="aljazeera.com" site_id="aja#aj2" lang="ar" xmltv_id="AlJazeera2.qa@HD">Al Jazeera 2</channel>
+  <channel site="aljazeera.com" site_id="aja#" lang="ar" xmltv_id="AlJazeera.qa@Arabic">Al Jazeera Arabic</channel>
+  <channel site="aljazeera.com" site_id="aje#" lang="en" xmltv_id="AlJazeera.qa@English">Al Jazeera English</channel>
 </channels>
