@@ -9,12 +9,22 @@ module.exports = {
   site: 'aljazeera.com',
   days: 2,
   url({ channel }) {
-    return `https://www.aljazeera.com/graphql?wp-site=${channel.site_id}&operationName=ArchipelagoSchedulePageQuery&variables=%7B%22postName%22%3A%22schedule%22%2C%22preview%22%3A%22%22%7D`
+    const [site_id, suffix] = channel.site_id.split('#')
+    const postName = suffix ? `schedule-${suffix}` : 'schedule'
+    const variables = JSON.stringify({
+      postName,
+      preview: ''
+    })
+    const extensions = JSON.stringify({})
+
+    return `https://www.aljazeera.com/graphql?wp-site=${site_id}&operationName=ArchipelagoSchedulePageQuery&variables=${variables}&extensions=${extensions}`
   },
   request: {
     headers({ channel }) {
+      const [site_id] = channel.site_id.split('#')
+
       return {
-        'wp-site': channel.site_id
+        'wp-site': site_id
       }
     }
   },
@@ -36,8 +46,9 @@ module.exports = {
   },
   channels() {
     return [
-      { site_id: 'aje', lang: 'en', xmltv_id: 'AlJazeera.qa@English', name: 'Al Jazeera English' },
-      { site_id: 'aja', lang: 'ar', xmltv_id: 'AlJazeera.qa@Arabic', name: 'Al Jazeera Arabic' }
+      { site_id: 'aje#', lang: 'en', xmltv_id: 'AlJazeera.qa@English', name: 'Al Jazeera English' },
+      { site_id: 'aja#', lang: 'ar', xmltv_id: 'AlJazeera.qa@Arabic', name: 'Al Jazeera Arabic' },
+      { site_id: 'aja#aj2', lang: 'ar', xmltv_id: 'AlJazeera2.qa@HD', name: 'Al Jazeera 2' }
     ]
   }
 }
