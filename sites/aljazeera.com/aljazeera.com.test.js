@@ -8,11 +8,11 @@ dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
 const date = dayjs.utc('2026-04-22', 'YYYY-MM-DD').startOf('d')
-const channel = { site_id: 'aje' }
+const channel = { site_id: 'aje#' }
 
 it('can generate valid url', () => {
   expect(url({ channel })).toBe(
-    'https://www.aljazeera.com/graphql?wp-site=aje&operationName=ArchipelagoSchedulePageQuery&variables=%7B%22postName%22%3A%22schedule%22%2C%22preview%22%3A%22%22%7D'
+    'https://www.aljazeera.com/graphql?wp-site=aje&operationName=ArchipelagoSchedulePageQuery&variables={"postName":"schedule","preview":""}&extensions={}'
   )
 })
 
