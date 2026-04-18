@@ -82,7 +82,6 @@
     <tr><td><a href="sites/ionplustv.com">ionplustv.com</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/ipko.tv">ipko.tv</a></td><td align="right">194</td><td align="right">151</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/jiotv.com">jiotv.com</a></td><td align="right">1094</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/kan.org.il">kan.org.il</a></td><td align="right">3</td><td align="right">3</td><td align="center">🔴</td><td>https://github.com/iptv-org/epg/issues/2273</td></tr>
     <tr><td><a href="sites/knr.gl">knr.gl</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/kvf.fo">kvf.fo</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/m.tv.sms.cz">m.tv.sms.cz</a></td><td align="right">1027</td><td align="right">449</td><td align="center">🟢</td><td></td></tr>
