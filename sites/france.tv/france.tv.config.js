@@ -84,19 +84,22 @@ module.exports = {
       const fullTitle = (item.content.titleLeading ? item.content.titleLeading + (title ? ' - ' : '') : '') + title
 
       programs.push({
-      title: fullTitle,
-      description: item.content.description,
-      image: getImageUrl(item),
-      icon: getImageUrl(item),
-      start,
-      stop,
-      season: season,
-      episode: episode,
-      rating: item.content.csa
+        title: fullTitle,
+        description: item.content.description,
+        image: getImageUrl(item),
+        icon: getImageUrl(item),
+        start,
+        stop,
+        season: season,
+        episode: episode,
+        rating: item.content.csa
       })
     })
 
     return programs
+  },
+  channels() {
+    return 'Website provides no proper channel list, channels must be added manually'
   }
 }
 
