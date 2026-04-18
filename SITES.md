@@ -41,7 +41,7 @@
     <tr><td><a href="sites/digea.gr">digea.gr</a></td><td align="right">88</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/digiturk.com.tr">digiturk.com.tr</a></td><td align="right">112</td><td align="right">91</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/directv.com">directv.com</a></td><td align="right">1043</td><td align="right">640</td><td align="center">🔴</td><td>https://github.com/iptv-org/epg/issues/3001, https://github.com/iptv-org/epg/issues/2284</td></tr>
-    <tr><td><a href="sites/directv.com.ar">directv.com.ar</a></td><td align="right">371</td><td align="right">0</td><td align="center">🔴</td><td>https://github.com/iptv-org/epg/issues/2339</td></tr>
+    <tr><td><a href="sites/directv.com.ar">directv.com.ar</a></td><td align="right">371</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/directv.com.uy">directv.com.uy</a></td><td align="right">374</td><td align="right">59</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/dishtv.in">dishtv.in</a></td><td align="right">603</td><td align="right">548</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/distro.tv">distro.tv</a></td><td align="right">336</td><td align="right">125</td><td align="center">🟢</td><td></td></tr>
