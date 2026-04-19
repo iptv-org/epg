@@ -31,9 +31,11 @@ module.exports = {
       let start = parseStart($item)
       if (prev) prev.stop = start
       const stop = start.add(30, 'm')
+      const details = parseDetails($item)
       programs.push({
         title: parseTitle($item),
-        description: parseDescription($item),
+        subTitle: details.subTitle,
+        description: details.description,
         image: parseImage($item),
         start,
         stop
@@ -80,8 +82,20 @@ function parseTitle($item) {
   return $item.find('h3 > a').text().trim()
 }
 
-function parseDescription($item) {
-  return $item.find('div.progentrylong').text().trim()
+function parseDetails($item) {
+  const details = $item.find('div.progentrylong').html().split('<br>').filter(Boolean)
+
+  if (details.length === 1)
+    return {
+      description: details[0]
+    }
+
+  const [subTitle, description] = details
+
+  return {
+    subTitle,
+    description
+  }
 }
 
 function parseStart($item) {
