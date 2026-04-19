@@ -11,7 +11,7 @@ dayjs.extend(utc)
 const date = dayjs.utc('2025-10-11', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: 'MAGYAR_MOZI_TV',
-  xmltv_id: 'MagyarMoziTV.hu',
+  xmltv_id: 'MagyarMoziTV.hu'
 }
 
 it('can generate valid url', () => {
@@ -36,14 +36,17 @@ it('can parse response', () => {
     start: '2025-10-10T23:05:00.000Z',
     stop: '2025-10-11T00:50:00.000Z',
     title: 'A 25. év - Három rohadék rockcsempész (Tankcsapda road movie)',
-    description: 'Lévai Balázs több mint egy éven át forgatott a Tankcsapdával.'
+    subTitle: '19/3.',
+    description:
+      '2006-ban a Harsányi Levente és Korda György alkotta páros volt az egyik legnépszerűbb zenés tévéműsor házigazdája. A műsorban klasszikus nagy slágerek versenyeznek közkedvelt művészek előadásában a nézők szavazataiért.'
   })
 
   expect(results[1]).toMatchObject({
     start: '2025-10-11T00:50:00.000Z',
     stop: '2025-10-11T01:45:00.000Z',
     title: 'Megbélyegzetten - 1968',
-    description: 'Néhány tinédzser diák, egy csalinak szánt újságcikk nyomán levelet írt Ausztriába 1968-ban.'
+    description:
+      'Néhány tinédzser diák, egy csalinak szánt újságcikk nyomán levelet írt Ausztriába 1968-ban.'
   })
 })
 
