@@ -234,7 +234,7 @@
     <tr><td><a href="sites/watch.whaletvplus.com">watch.whaletvplus.com</a></td><td align="right">364</td><td align="right">166</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/watchyour.tv">watchyour.tv</a></td><td align="right">40</td><td align="right">24</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/wavve.com">wavve.com</a></td><td align="right">77</td><td align="right">76</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/web.magentatv.de">web.magentatv.de</a></td><td align="right">337</td><td align="right">216</td><td align="center">🟢</td><td>https://github.com/iptv-org/epg/issues/2966</td></tr>
+    <tr><td><a href="sites/web.magentatv.de">web.magentatv.de</a></td><td align="right">337</td><td align="right">216</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/webtv.delta.nl">webtv.delta.nl</a></td><td align="right">247</td><td align="right">204</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/webtv.sk">webtv.sk</a></td><td align="right">186</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/winplay.co">winplay.co</a></td><td align="right">3</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
