@@ -1,5 +1,6 @@
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
 const doFetch = require('@ntlab/sfetch')
 const debug = require('debug')('site:sky.com')
 const sortBy = require('lodash.sortby')
@@ -7,6 +8,7 @@ const path = require('path')
 const fs = require('fs/promises')
 
 dayjs.extend(utc)
+dayjs.extend(timezone)
 
 doFetch.setDebugger(debug)
 
@@ -29,7 +31,7 @@ module.exports = {
             if (Array.isArray(schedule.events)) {
               sortBy(schedule.events, p => p.st).forEach(event => {
                 const start = dayjs.utc(event.st * 1000)
-                if (start.isSame(date, 'd')) {
+                if (start.isSame(date.tz('Europe/London'), 'd')) {
                   const image = `https://images.metadata.sky.com/pd-image/${event.programmeuuid}/16-9/640`
                   programs.push({
                     title: event.t,
