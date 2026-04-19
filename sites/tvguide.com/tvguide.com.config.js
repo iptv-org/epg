@@ -100,16 +100,7 @@ module.exports = {
   async channels() {
     const channels = []
     try {
-      const data = await axios
-        .get(await this.url({}), {
-          headers,
-          proxy: {
-            protocol: 'http',
-            host: '127.0.0.1',
-            port: 1086
-          }
-        })
-        .then(r => r.data)
+      const data = await axios.get(await this.url({}), { headers }).then(r => r.data)
       data.data.items.forEach(item => {
         const name = item.fullName.replace(/Channel|Schedule/g, '').trim()
         channels.push({
