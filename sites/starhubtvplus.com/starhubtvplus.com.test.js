@@ -33,8 +33,8 @@ it('can parse response', async () => {
     {
       start: '2024-12-03T17:25:00.000Z',
       stop: '2024-12-03T18:20:00.000Z',
-      title: 'Northern Rexposure',
-      subTitle: 'Hudson & Rex (Season 5)',
+      title: 'Hudson & Rex (Season 5)',
+      subTitle: 'Northern Rexposure',
       description:
         "When Jesse's sister contacts him for help, he, Sarah and Rex head to Northern Ontario and find themselves in the middle of a deadly situation.",
       category: ['Drama'],
