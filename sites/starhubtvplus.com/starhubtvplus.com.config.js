@@ -46,8 +46,8 @@ module.exports = {
 
     return programs.map(item => {
       return {
-        title: item.title,
-        subTitle: item.serie_title,
+        title: item.serie_title || item.title,
+        subTitle: (item.serie_title && item.title && item.serie_title !== item.title) ? item.title : null,
         description: item.description,
         category: item.genres,
         image: item.pictures?.map(img => img.url),
