@@ -1,5 +1,5 @@
 import { Collection } from '@freearhey/core'
-import { Issue } from './'
+import { Channel, Issue } from './'
 
 enum StatusCode {
   DOWN = 'down',
@@ -14,21 +14,18 @@ export interface Status {
 
 export interface SiteData {
   domain: string
-  totalChannels?: number
-  markedChannels?: number
+  channels?: Collection<Channel>
   issues: Collection<Issue>
 }
 
 export class Site {
   domain: string
-  totalChannels: number
-  markedChannels: number
+  channels: Collection<Channel>
   issues: Collection<Issue>
 
   constructor(data: SiteData) {
     this.domain = data.domain
-    this.totalChannels = data.totalChannels || 0
-    this.markedChannels = data.markedChannels || 0
+    this.channels = new Collection()
     this.issues = data.issues
   }
 
