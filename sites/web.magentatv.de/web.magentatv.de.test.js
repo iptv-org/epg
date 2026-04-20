@@ -27,7 +27,7 @@ axios.request.mockImplementation(req => {
           'JSESSIONID=2147EBA9C59BCDC33822CFD2764E5C0B; Path=/EPG/; HttpOnly; SameSite=None; Secure',
           'CSESSIONID=1CF187ABCA12ED1B01ADF84C691048ED; Path=/EPG/; Secure; HttpOnly; SameSite=None',
           'CSRFSESSION=ea2329ba213271192bffd77c2fa276086a8e828c1a4ee379; Path=/EPG/; SameSite=None; Secure'
-        ] 
+        ]
       },
       data: {
         csrfToken: '6f678415702493d2c28813747c413aa05c87d8f87ecf05fe'
@@ -94,6 +94,7 @@ it('can parse response', () => {
         'Die besten Big-Wave-Surfer werden bei ihrer Suche nach der nächsten großen Welle begleitet.',
       image:
         'http://ngiss.t-online.de/cm1s/media/gracenote/2/4/p24832950_e_h9_aa_2023-06-22T10_12_01.jpg',
+      icon: 'http://ngiss.t-online.de/cm1s/media/gracenote/2/4/p24832950_e_h9_aa_2023-06-22T10_12_01.jpg',
       category: ['Sport']
     },
     {
@@ -106,6 +107,8 @@ it('can parse response', () => {
       season: '7',
       episode: '5',
       image:
+        'http://ngiss.t-online.de/cm1s/media/gracenote/1/0/p10262968_e_h9_ah_2021-10-20T07_16_16.jpg',
+      icon:
         'http://ngiss.t-online.de/cm1s/media/gracenote/1/0/p10262968_e_h9_ah_2021-10-20T07_16_16.jpg',
       category: ['Sitcom'],
       directors: ['Mark Cendrowski'],
