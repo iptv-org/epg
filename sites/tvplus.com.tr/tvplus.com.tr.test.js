@@ -14,29 +14,36 @@ jest.mock('axios')
 const date = dayjs.utc('2026-04-22', 'YYYY-MM-DD').startOf('d')
 const channel = { site_id: '32' }
 
-axios.get.mockImplementation(url => {
-  if (url === 'https://tvplus.com.tr/canli-tv/yayin-akisi') {
+axios.post.mockImplementation(url => {
+  if (url === 'https://izmaottvsc14.tvplus.com.tr:33207/EPG/JSON/Authenticate') {
     return Promise.resolve({
-      data: fs.readFileSync(path.join(__dirname, '__data__', 'build.html')).toString()
+      headers: {
+        'set-cookie': [
+          'XSESSIONID=05DIPYMD4BHOKRQCZTHF8F5GHMMBCNJ6; Domain=izmaottvsc14.tvplus.com.tr; Path=/; Secure; HttpOnly',
+          'JSESSIONID=05DIPYMD4BHOKRQCZTHF8F5GHMMBCNJ6; Domain=izmaottvsc14.tvplus.com.tr; Path=/; HttpOnly'
+        ]
+      }
     })
   }
 })
 
-it('can generate valid url', async () => {
+it('can generate valid url', () => {
   expect(url).toBe('https://izmaottvsc14.tvplus.com.tr:33207/EPG/JSON/PlayBillList')
 })
 
-it('can generate valid request method', async () => {
+it('can generate valid request method', () => {
   expect(request.method).toBe('POST')
 })
 
 it('can generate valid request headers', async () => {
-  expect(request.headers).toMatchObject({
-    cookie: 'JSESSIONID=05DH3LSUA0W04YMLSYEWK3TRYY1QMBMY;'
+  const headers = await request.headers()
+  expect(headers).toMatchObject({
+    cookie:
+      'XSESSIONID=05DIPYMD4BHOKRQCZTHF8F5GHMMBCNJ6; Domain=izmaottvsc14.tvplus.com.tr; Path=/; Secure; HttpOnly;JSESSIONID=05DIPYMD4BHOKRQCZTHF8F5GHMMBCNJ6; Domain=izmaottvsc14.tvplus.com.tr; Path=/; HttpOnly'
   })
 })
 
-it('can generate valid request data', async () => {
+it('can generate valid request data', () => {
   expect(request.data({ channel, date })).toMatchObject({
     type: '2',
     channelid: '32',
