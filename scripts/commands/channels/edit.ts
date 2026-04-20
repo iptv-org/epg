@@ -70,6 +70,7 @@ export default async function main(filepath: string) {
       channel.xmltv_id = ''
     }
   })
+  save(filepath, channelsFromXML)
 }
 
 async function selectChannel(channel: epgGrabber.Channel): Promise<string> {
