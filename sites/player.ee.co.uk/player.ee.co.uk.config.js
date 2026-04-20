@@ -65,14 +65,7 @@ module.exports = {
   },
   async channels() {
     const token =
-      'eyJkaXNjb3ZlcnlVc2VyR3JvdXBzIjpbIkFMTFVTRVJTIiwiYWxsIiwiaHR0cDovL3JlZmRhd' +
-      'GEueW91dmlldy5jb20vbXBlZzdjcy9Zb3VWaWV3QXBwbGljYXRpb25QbGF5ZXJDUy8yMDIxLT' +
-      'A5LTEwI2FuZHJvaWRfcnVudGltZS1wcm9maWxlMSIsInRhZzpidC5jb20sMjAxOC0wNy0xMTp' +
-      '1c2VyZ3JvdXAjR0JSLWJ0X25vd1RWX211bHRpY2FzdCIsInRhZzpidC5jb20sMjAyMS0xMC0y' +
-      'NTp1c2VyZ3JvdXAjR0JSLWJ0X2V1cm9zcG9ydCJdLCJyZWdpb25zIjpbIkFMTFJFR0lPTlMiL' +
-      'CJHQlIiLCJHQlItRU5HIiwiR0JSLUVORy1sb25kb24iLCJhbGwiXSwic3Vic2V0IjoiMy41Lj' +
-      'EvYW5kcm9pZF9ydW50aW1lLXByb2ZpbGUxL0JST0FEQ0FTVF9JUC9HQlItYnRfYnJvYWRiYW5' +
-      'kIiwic3Vic2V0cyI6WyIvLy8iLCIvL0JST0FEQ0FTVF9JUC8iLCIzLjUvLy8iXX0='
+      'eJx0kF1r2zAUhv_L6a0VfbRuF98lbTCB0ha7LYwRgiydZgLZMkdSMjP234e7bmMrvRFCOs_LeZ_vYAh1QnujE0IFSqhLJi6YElCAddGEI9L0FJFqCnmMUH2B1e3tU7tpWihAew8FfE1prDgnfLE66cUU8tHhaWFCz_sRD1cm8s8hPzs8rcbRO6OTC8OD1xPSdcuVUJKJJZPiTA-WgrN7ykNyPbKRwovzKKGApA9Vl-bMQgn5iYkrJmWVI9JhXuysXjesS_shnB6f9332yRkd0_-gkkwKpsr3IGYKcQyUYFcAfjM-W7Qt0tEZ3NrX3styqS4vSjlPEB5cGH7raDb19v5uFlKvm18n29zVf2_Mh8GG4c3YroAYMplZOO8mdgxGd9lrmlhC6iMUEHMXMUEF54tyIflHYvi6uV_dXK_ax_32gb9V6Sho2-nB_sl53ZNzDgXwf5H55cPw-fd8Uc7g7sfPAAAA__-Un7J1'
     const extensions = [
       'LinearCategoriesExtension',
       'LogicalChannelNumberExtension',
@@ -91,7 +84,7 @@ module.exports = {
 
     return (
       result?.items
-        .filter(channel => channel.contentTypes.indexOf('tv') >= 0)
+        .filter(channel => channel.mediaType === 'audio_and_video')
         .map(channel => {
           return {
             lang: 'en',
