@@ -49,6 +49,17 @@ it('can parse response', () => {
     icon: 'https://images.metadata.sky.com/pd-image/e9521ccc-bdcc-4075-9c2e-bc835247148b/16-9/640',
     image: 'https://images.metadata.sky.com/pd-image/e9521ccc-bdcc-4075-9c2e-bc835247148b/16-9/640'
   })
+  expect(result[30]).toMatchObject({
+    start: '2024-12-14T23:00:00.000Z',
+    stop: '2024-12-15T01:00:00.000Z',
+    title: 'American Godfathers: The Five Families',
+    description:
+      "Rise of the New Dons: Follow the conflict between the families' old guard and a new generation of younger, American-born mobsters willing to defy their authority. (S1, ep 2)",
+    season: 1,
+    episode: 2,
+    icon: 'https://images.metadata.sky.com/pd-image/4e38c66b-c2ae-3669-a7ff-e7588743e7ac/16-9/640',
+    image: 'https://images.metadata.sky.com/pd-image/4e38c66b-c2ae-3669-a7ff-e7588743e7ac/16-9/640'
+  })
 })
 
 it('can handle empty guide', () => {
