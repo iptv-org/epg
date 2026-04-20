@@ -24,12 +24,25 @@ module.exports = {
     const items = parseItems(content, channel)
     items.forEach(item => {
       const info = item.item
+      
+      let title = info.title || ''
+      let subTitle = info.episodeTitle || null
+
+      if (subTitle && title.includes(` - ${subTitle}`)) {
+        title = title.replace(` - ${subTitle}`, '')
+      }
+
+      if (title === subTitle) {
+        subTitle = null
+      }
+
       programs.push({
-        title: info.title,
-        description: info.description,
-        image: info.images.tile,
-        episode: info.episodeNumber,
-        season: info.seasonNumber,
+        title,
+        subTitle,
+        description: info.description || null,
+        image: info.images?.tile || null,
+        episode: info.episodeNumber || null,
+        season: info.seasonNumber || null,
         start: parseStart(item),
         stop: parseStop(item),
         rating: parseRating(info)
@@ -40,29 +53,40 @@ module.exports = {
   },
   async channels() {
     const axios = require('axios')
-    const cheerio = require('cheerio')
-    const data = await axios
-      .get('https://www.mewatch.sg/channel-guide')
-      .then(r => r.data)
-      .catch(console.log)
-
+    const LIST_ID = '239614'
     let channels = []
-    const $ = cheerio.load(data)
-    $('#side-nav > div > div > div > nav:nth-child(1) > ul > li > ul > li').each((i, el) => {
-      const name = $(el).find('a > span').text()
-      const url = $(el).find('a').attr('href')
-      const [, site_id = null] = url.match(/\/(\d+)\?player-fullscreen/) ?? []
+    let page = 1
+    let hasNextPage = true
 
-      if (!site_id) {
-        return
+    while (hasNextPage) {
+      const url = `https://cdn.mewatch.sg/api/lists/${LIST_ID}?page=${page}&page_size=100&segments=all`
+      
+      try {
+        const r = await axios.get(url)
+        const data = r.data
+
+        if (data && Array.isArray(data.items)) {
+          data.items.forEach(item => {
+            if (item.type === 'channel' || item.itemType === 'channel') {
+              channels.push({
+                lang: 'en',
+                name: item.title,
+                site_id: item.id
+              })
+            }
+          })
+        }
+
+        if (data.paging && data.paging.next) {
+          page++
+        } else {
+          hasNextPage = false
+        }
+      } catch (error) {
+        console.error(`Error fetching page ${page}:`, error.message)
+        hasNextPage = false
       }
-
-      channels.push({
-        lang: 'en',
-        name,
-        site_id
-      })
-    })
+    }
 
     return channels
   }
