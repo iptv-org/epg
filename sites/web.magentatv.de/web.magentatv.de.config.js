@@ -46,6 +46,7 @@ module.exports = {
         title: item.name,
         description: item.introduce,
         image: parseImage(item),
+        icon: parseImage(item),
         category: parseCategory(item),
         start: parseStart(item),
         stop: parseStop(item),
@@ -176,7 +177,7 @@ async function fetchCookieAndToken() {
         T: 'Windows_chrome_118'
       },
       method: 'POST',
-      data: '{"terminalid":"00:00:00:00:00:00","mac":"00:00:00:00:00:00","terminaltype":"WEBTV","utcEnable":1,"timezone":"Etc/GMT0","userType":3,"terminalvendor":"Unknown"}',
+      data: '{"terminalid":"00:00:00:00:00:00","mac":"00:00:00:00:00:00","terminaltype":"WEBTV","utcEnable":1,"timezone":"Etc/GMT0","userType":3,"terminalvendor":"Unknown"}'
     })
 
     // Extract the cookies specified in cookiesToExtract
@@ -200,8 +201,7 @@ async function fetchCookieAndToken() {
 
     X_CSRFTOKEN = response.data.csrfToken
     Cookie = extractedCookies.join(' ')
-
-  } catch(error) {
+  } catch (error) {
     console.error(error)
   }
 }
