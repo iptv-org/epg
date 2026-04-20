@@ -17,29 +17,19 @@ const channel = {
 }
 
 it('can generate valid url', async () => {
-  axios.get.mockImplementation(url => {
-    if (url === 'https://www.tvguide.com/listings/') {
-      return Promise.resolve({
-        data: fs.readFileSync(path.join(__dirname, '__data__', 'content.html'), 'utf8')
-      })
-    }
-    throw new Error(`Unexpected URL: ${url}`)
-  })
-
   const result = await url({ date })
   expect(result).toBe(
-    'https://backend.tvguide.com/tvschedules/tvguide/9100001138/web?start=1753747200&duration=240&apiKey=DI9elXhZ3bU6ujsA2gXEKOANyncXGUGc'
+    'https://backend.tvguide.com/tvschedules/tvguide/9100001138/web?start=1753747200&duration=240'
   )
 })
 
 it('can parse response', async () => {
-  const content = JSON.parse(fs.readFileSync(path.join(__dirname, '__data__', 'content.json'), 'utf-8'))
+  const content = JSON.parse(
+    fs.readFileSync(path.join(__dirname, '__data__', 'content.json'), 'utf-8')
+  )
 
   axios.get.mockImplementation(url => {
-    if (
-      url ===
-      'https://backend.tvguide.com/tvschedules/tvguide/programdetails/9000058285/web'
-    ) {
+    if (url === 'https://backend.tvguide.com/tvschedules/tvguide/programdetails/9000058285/web') {
       return Promise.resolve({
         data: JSON.parse(fs.readFileSync(path.join(__dirname, '__data__', 'program.json')))
       })
@@ -61,10 +51,10 @@ it('can parse response', async () => {
     title: 'Secrets of the Zoo: North Carolina',
     sub_title: 'Chimp Off the Old Block',
     description:
-      'Chimps living at the North Carolina Zoo, a zoo located in the center of North Carolina that serves as the world\'s largest natural habitat zoo, as well as one of two state-supported zoos, are cared for',
+      "Chimps living at the North Carolina Zoo, a zoo located in the center of North Carolina that serves as the world's largest natural habitat zoo, as well as one of two state-supported zoos, are cared for",
     categories: ['Reality'],
     season: 1,
-    episode: 1,
+    episode: 1
   })
 })
 
