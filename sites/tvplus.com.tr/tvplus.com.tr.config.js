@@ -1,3 +1,4 @@
+const axios = require('axios')
 const dayjs = require('dayjs')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
 
@@ -9,8 +10,22 @@ module.exports = {
   url: 'https://izmaottvsc14.tvplus.com.tr:33207/EPG/JSON/PlayBillList',
   request: {
     method: 'POST',
-    headers: {
-      cookie: 'JSESSIONID=05DH3LSUA0W04YMLSYEWK3TRYY1QMBMY;'
+    async headers() {
+      const response = await axios
+        .post('https://izmaottvsc14.tvplus.com.tr:33207/EPG/JSON/Authenticate', {
+          terminaltype: 'webtv',
+          terminalvendor:
+            '5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36',
+          osversion: 'Win32',
+          userType: '3',
+          utcEnable: '1',
+          timezone: 'Europe/Istanbul'
+        })
+        .catch(console.error)
+
+      return {
+        cookie: response.headers['set-cookie'].join(';')
+      }
     },
     data({ channel, date }) {
       return {
