@@ -5,13 +5,10 @@ const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
 const doFetch = require('../../scripts/core/multifetch')
-const debug = require('debug')('site:tivie.id')
 
 dayjs.extend(utc)
 dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
-
-doFetch.setDebugger(debug)
 
 const tz = 'Asia/Jakarta'
 

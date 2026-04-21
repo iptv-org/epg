@@ -1,11 +1,8 @@
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const doFetch = require('../../scripts/core/multifetch')
-const debug = require('debug')('site:virgintvgo.virginmedia.com')
 
 dayjs.extend(utc)
-
-doFetch.setDebugger(debug)
 
 const detailedGuide = true
 
