@@ -1,4 +1,4 @@
-const { parser, url } = require('./ontvtonight.com.config.js')
+const { parser, url, request } = require('./ontvtonight.com.config.js')
 const fs = require('fs')
 const path = require('path')
 const dayjs = require('dayjs')
@@ -17,6 +17,13 @@ it('can generate valid url', () => {
   expect(url({ channel, date })).toBe(
     'https://www.ontvtonight.com/au/guide/listings/channel/1692/7two.html?dt=2021-11-25'
   )
+})
+
+it('can generate valid request headers', () => {
+  expect(request.headers).toMatchObject({
+    'user-agent':
+      'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36'
+  })
 })
 
 it('can parse response', () => {

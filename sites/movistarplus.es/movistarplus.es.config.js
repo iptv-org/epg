@@ -29,20 +29,23 @@ module.exports = {
 
     items.forEach(el => {
       programs.push({
-          title: el.title,
-          description: el.description,
-          season: el.season,
-          episode: el.episode,
-          start: el.start,
-          stop: el.stop
-        })
+        title: el.title,
+        description: el.description,
+        icon: el.icon,
+        images: el.images,
+        season: el.season,
+        episode: el.episode,
+        start: el.start,
+        stop: el.stop
       })
+    })
     return programs
-
   },
   async channels() {
     const json = await axios
-      .get('https://ottcache.dof6.com/movistarplus/webplayer/OTT/contents/channels?mdrm=true&tlsstream=true&demarcation=18&version=8')
+      .get(
+        'https://ottcache.dof6.com/movistarplus/webplayer/OTT/contents/channels?mdrm=true&tlsstream=true&demarcation=18&version=8'
+      )
       .then(r => r.data)
       .catch(console.log)
 
@@ -58,45 +61,57 @@ module.exports = {
   }
 }
 
+function parseImages(images) {
+  return images.filter(image => image.id === 'watch2tgr-end').map(image => image.uri)
+}
+
 async function parseItems(content) {
   try {
     const data = JSON.parse(content)
     const programs = Array.isArray(data) ? data : [data]
-    return await Promise.all(programs.map(async (json) => {
-      const start = dayjs.utc(Number(json?.FechaHoraInicio))
-      const stop = dayjs.utc(Number(json?.FechaHoraFin))
-      const ficha = json?.Ficha || null
-      if (!ficha) {
-        return {
-          title: json?.Titulo || '',
-          description: json?.Resena || '',
-          start,
-          stop
-        }
-      } else {
-        try {
-          const fichaJson = await axios.get(ficha).then(r => r.data)
-          return {
-            title: json?.Titulo || fichaJson?.Titulo || '',
-            description: fichaJson?.Descripcion || json?.Resena || '',
-            actors: fichaJson?.Actores || [],
-            directors: fichaJson?.Directores || [],
-            classification: fichaJson?.Clasificacion || '',
-            season: fichaJson?.Temporada || null,
-            episode: fichaJson?.NumeroEpisodio || null,
-            start,
-            stop
-          }
-        } catch {
+    return await Promise.all(
+      programs.map(async json => {
+        const start = dayjs.utc(Number(json?.FechaHoraInicio))
+        const stop = dayjs.utc(Number(json?.FechaHoraFin))
+        const ficha = json?.Ficha || null
+        if (!ficha) {
           return {
             title: json?.Titulo || '',
             description: json?.Resena || '',
+            icon: json?.Imagen || '',
+            images: json.Imagenes ? parseImages(json.Imagenes) : [],
             start,
             stop
           }
+        } else {
+          try {
+            const fichaJson = await axios.get(ficha).then(r => r.data)
+            return {
+              title: json?.Titulo || fichaJson?.Titulo || '',
+              description: fichaJson?.Descripcion || json?.Resena || '',
+              icon: fichaJson?.Imagen || '',
+              images: fichaJson.Imagenes ? parseImages(fichaJson.Imagenes) : [],
+              actors: fichaJson?.Actores || [],
+              directors: fichaJson?.Directores || [],
+              classification: fichaJson?.Clasificacion || '',
+              season: fichaJson?.Temporada || null,
+              episode: fichaJson?.NumeroEpisodio || null,
+              start,
+              stop
+            }
+          } catch {
+            return {
+              title: json?.Titulo || '',
+              description: json?.Resena || '',
+              icon: json?.Imagen || '',
+              images: json.Imagenes ? parseImages(json.Imagenes) : [],
+              start,
+              stop
+            }
+          }
         }
-      }
-    }))
+      })
+    )
   } catch {
     return []
   }
