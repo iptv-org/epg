@@ -2,7 +2,7 @@ const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
 const duration = require('dayjs/plugin/duration')
-const doFetch = require('@ntlab/sfetch')
+const doFetch = require('../../scripts/core/multifetch')
 const debug = require('debug')('site:dsmart.com.tr')
 
 dayjs.extend(utc)

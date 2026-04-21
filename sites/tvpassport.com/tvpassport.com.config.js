@@ -4,7 +4,7 @@ const cheerio = require('cheerio')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
-const doFetch = require('@ntlab/sfetch')
+const doFetch = require('../../scripts/core/multifetch')
 const FRENCH_CHANNELS = require('./__data__/frenchChannels.js')
 
 dayjs.extend(utc)

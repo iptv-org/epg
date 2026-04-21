@@ -1,4 +1,4 @@
-const doFetch = require('@ntlab/sfetch')
+const doFetch = require('../../scripts/core/multifetch')
 const axios = require('axios')
 const dayjs = require('dayjs')
 const crypto = require('crypto')

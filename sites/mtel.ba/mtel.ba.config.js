@@ -1,4 +1,4 @@
-const doFetch = require('@ntlab/sfetch')
+const doFetch = require('../../scripts/core/multifetch')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')

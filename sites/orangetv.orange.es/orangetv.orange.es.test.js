@@ -20,11 +20,11 @@ const channel = {
 axios.get.mockImplementation(url => {
   const result = {}
   const urls = {
-    'https://epg.orangetv.orange.es/epg/Smartphone_Android/1_PRO/20250112_8h_1.json':
+    'https://epg.orangetv.orange.es/epg/SmartTV_Android/1_PRO/20250112_8h_1.json':
       'data1.json',
-    'https://epg.orangetv.orange.es/epg/Smartphone_Android/1_PRO/20250112_8h_2.json':
+    'https://epg.orangetv.orange.es/epg/SmartTV_Android/1_PRO/20250112_8h_2.json':
       'data2.json',
-    'https://epg.orangetv.orange.es/epg/Smartphone_Android/1_PRO/20250112_8h_3.json':
+    'https://epg.orangetv.orange.es/epg/SmartTV_Android/1_PRO/20250112_8h_3.json':
       'data3.json',
   }
   if (urls[url] !== undefined) {
@@ -39,7 +39,7 @@ axios.get.mockImplementation(url => {
 
 it('can generate valid url', () => {
   expect(url({ date })).toBe(
-    'https://epg.orangetv.orange.es/epg/Smartphone_Android/1_PRO/20250112_8h_1.json'
+    'https://epg.orangetv.orange.es/epg/SmartTV_Android/1_PRO/20250112_8h_1.json'
   )
 })
 

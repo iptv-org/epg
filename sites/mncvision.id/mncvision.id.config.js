@@ -4,7 +4,7 @@ const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
-const doFetch = require('@ntlab/sfetch')
+const doFetch = require('../../scripts/core/multifetch')
 const debug = require('debug')('site:mncvision.id')
 
 dayjs.extend(utc)
@@ -150,10 +150,14 @@ async function parseItems(content, date, cookies) {
 function loadLangCookies(channel) {
   const url = `https://www.mncvision.id/language_switcher/setlang/${languages[channel.lang]}/`
 
-  return axios
-    .get(url, { timeout })
-    .then(r => parseCookies(r.headers))
-    .catch(error => console.error(error.message))
+  return new Promise(resolve => {
+    doFetch([{ url, method: 'get' }], (queue, data, headers) => {
+      resolve(parseCookies(headers))
+    }).catch(error => {
+      console.error(error.message)
+      resolve(null)
+    })
+  })
 }
 
 function parseCookies(headers) {

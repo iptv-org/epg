@@ -4,7 +4,7 @@ const dayjs = require('dayjs')
 const timezone = require('dayjs/plugin/timezone')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
-const doFetch = require('@ntlab/sfetch')
+const doFetch = require('../../scripts/core/multifetch')
 const debug = require('debug')('site:rotana.net')
 
 dayjs.extend(timezone)
