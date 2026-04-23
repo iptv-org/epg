@@ -144,7 +144,7 @@ async function getAuthToken() {
       throw new Error('apiToken invalid or expired. Please update config.')
     } catch (error) {
       authTokenPromise = null
-      throw new Error(error.message)
+      throw new Error(error.message, { cause: error })
     }
   })()
 

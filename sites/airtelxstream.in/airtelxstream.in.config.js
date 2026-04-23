@@ -24,7 +24,7 @@ module.exports = {
   },
 
   parser({ content }) {
-    let programs = []
+    let programs
     
     try {
         const parsed = JSON.parse(content)

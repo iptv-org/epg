@@ -1,6 +1,5 @@
 const axios = require('axios')
 const cheerio = require('cheerio')
-const url = require('url')
 const path = require('path')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
@@ -44,24 +43,36 @@ module.exports = {
   },
   async channels() {
     const data = await axios
-      .get('https://www.gatotv.com/guia_tv/completa')
+      .get('https://www.gatotv.com/canales_de_tv')
       .then(response => response.data)
       .catch(console.log)
 
     const $ = cheerio.load(data)
-    const items = $('.tbl_EPG_row,.tbl_EPG_rowAlternate').toArray()
+    const items = $('table.tbl_tv_guide tr.tbl_EPG_row, table.tbl_tv_guide tr.tbl_EPG_rowAlternate').toArray()
 
-    return items.map(item => {
-      const $item = cheerio.load(item)
-      const link = $item('td:nth-child(1) > div:nth-child(2) > a:nth-child(3)').attr('href')
-      const parsed = url.parse(link)
+    return items
+      .map(item => {
+        const $item = cheerio.load(item)
+        const link = $item('a[href*="/canal/"]').first().attr('href')
+        if (!link) return null
 
-      return {
-        lang: 'es',
-        site_id: path.basename(parsed.pathname),
-        name: $item('td:nth-child(1) > div:nth-child(2) > a:nth-child(3)').text()
-      }
-    })
+        let pathname
+        try {
+          pathname = new URL(link, 'https://www.gatotv.com').pathname
+        } catch {
+          return null
+        }
+
+        const name = $item('td:nth-child(2) a').text().trim() || $item('a[href*="/canal/"]').last().text().trim()
+        if (!name) return null
+
+        return {
+          lang: 'es',
+          site_id: path.basename(pathname),
+          name
+        }
+      })
+      .filter(Boolean)
   }
 }
 

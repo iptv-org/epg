@@ -3,17 +3,10 @@ const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
-const doFetch = require('@ntlab/sfetch')
-const debug = require('debug')('site:mytelly.co.uk')
 
 dayjs.extend(utc)
 dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
-
-doFetch.setDebugger(debug)
-
-const detailedGuide = true
-const tz = 'Europe/London'
 
 module.exports = {
   site: 'mytelly.co.uk',
@@ -32,94 +25,35 @@ module.exports = {
   async parser({ content, date }) {
     const programs = []
 
-    if (content) {
-      const queues = []
-      const $ = cheerio.load(content)
-
-      $('table.table > tbody > tr')
-        .toArray()
-        .forEach(el => {
-          const td = $(el).find('td:eq(1)')
-          const title = td.find('h5 a')
-          if (detailedGuide) {
-            queues.push({ url: title.attr('href'), params: module.exports.request })
-          } else {
-            const subtitle = td.find('h6')
-            const time = $(el).find('td:eq(0)')
-            let start = parseTime(date, time.text().trim())
-            const prev = programs[programs.length - 1]
-            if (prev) {
-              if (start.isBefore(prev.start)) {
-                start = start.add(1, 'd')
-                date = date.add(1, 'd')
-              }
-              prev.stop = start
-            }
-            const stop = start.add(30, 'm')
-            programs.push({
-              title: parseText(title),
-              subTitle: parseText(subtitle),
-              start,
-              stop
-            })
-          }
-        })
-
-      if (queues.length) {
-        await doFetch(queues, (url, res) => {
-          const $ = cheerio.load(res)
-          const time = $('center > h5 > b').text()
-          const title = parseText($('.inner-heading.sub h2'))
-          const subTitle = parseText($('.tab-pane > h5 > strong'))
-          const description = parseText($('.tab-pane > .tvbody > p'))
-          const image = $('.program-media-image img').attr('src')
-          const category = $('.schedule-attributes-genres span')
-            .toArray()
-            .map(el => $(el).text())
-          const casts = $('.single-cast-head:not([id])')
-            .toArray()
-            .map(el => {
-              const cast = { name: parseText($(el).find('a')) }
-              const [, role] = $(el)
-                .text()
-                .match(/\((.*)\)/) || [null, null]
-              if (role) {
-                cast.role = role
-              }
-              return cast
-            })
-          const [start, stop] = parseStartStop(date, time)
-          let season, episode
-          if (subTitle) {
-            const [, ses, epi] = subTitle.match(/Season (\d+), Episode (\d+)/) || [null, null]
-            if (ses) {
-              season = parseInt(ses)
-            }
-            if (epi) {
-              episode = parseInt(epi)
-            }
-          }
-          programs.push({
-            title,
-            subTitle,
-            description,
-            image,
-            category,
-            season,
-            episode,
-            actor: casts.filter(c => c.role === 'Actor').map(c => c.name),
-            director: casts.filter(c => c.role === 'Director').map(c => c.name),
-            presenter: casts.filter(c => c.role === 'Presenter').map(c => c.name),
-            start,
-            stop
-          })
-        })
+    const items = parseItems(content)
+    items.forEach(item => {
+      const $item = cheerio.load(item)
+      const td = $item('td:eq(1)')
+      const title = td.find('h5 a')
+      const subtitle = td.find('h6')
+      const time = $item('td:eq(0)')
+      let start = parseTime(date, time.text().trim())
+      const prev = programs[programs.length - 1]
+      if (prev) {
+        if (start.isBefore(prev.start)) {
+          start = start.add(1, 'd')
+          date = date.add(1, 'd')
+        }
+        prev.stop = start
       }
-    }
+      const stop = start.add(30, 'm')
+      programs.push({
+        title: parseText(title),
+        subTitle: parseText(subtitle),
+        start,
+        stop
+      })
+    })
 
     return programs
   },
   async channels() {
+    const doFetch = require('@ntlab/sfetch')
     const channels = {}
     const queues = [{ t: 'p', url: 'https://www.mytelly.co.uk/getform', params: this.request }]
     await doFetch(queues, (queue, res) => {
@@ -182,19 +116,14 @@ module.exports = {
   }
 }
 
-function parseStartStop(date, time) {
-  const [s, e] = time.split(' - ')
-  const start = parseTime(date, s)
-  let stop = parseTime(date, e)
-  if (stop.isBefore(start)) {
-    stop = stop.add(1, 'd')
-  }
+function parseItems(content) {
+  const $ = cheerio.load(content)
 
-  return [start, stop]
+  return $('table.table > tbody > tr').toArray()
 }
 
 function parseTime(date, time) {
-  return dayjs.tz(`${date.format('YYYY-MM-DD')} ${time}`, 'YYYY-MM-DD H:mm a', tz)
+  return dayjs.tz(`${date.format('YYYY-MM-DD')} ${time}`, 'YYYY-MM-DD H:mm a', 'Europe/London')
 }
 
 function parseText($item) {
