@@ -29,7 +29,7 @@
     <tr><td><a href="sites/cgates.lt">cgates.lt</a></td><td align="right">47</td><td align="right">29</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/chada.ma">chada.ma</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/chaines-tv.orange.fr">chaines-tv.orange.fr</a></td><td align="right">397</td><td align="right">327</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/claro.com.br">claro.com.br</a></td><td align="right">273</td><td align="right">0</td><td align="center">🟢</td><td>https://github.com/iptv-org/epg/issues/2988</td></tr>
+    <tr><td><a href="sites/claro.com.br">claro.com.br</a></td><td align="right">273</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/clarotvmais.com.br">clarotvmais.com.br</a></td><td align="right">158</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/clickthecity.com">clickthecity.com</a></td><td align="right">32</td><td align="right">30</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/content.astro.com.my">content.astro.com.my</a></td><td align="right">149</td><td align="right">93</td><td align="center">🟢</td><td></td></tr>
