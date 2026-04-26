@@ -17,7 +17,7 @@
   <channel site="freeview.co.uk" site_id="64257#6784" lang="en" xmltv_id="">BBC Radio 2</channel>
   <channel site="freeview.co.uk" site_id="64257#6848" lang="en" xmltv_id="">BBC Radio 3</channel>
   <channel site="freeview.co.uk" site_id="64257#6912" lang="en" xmltv_id="">BBC Radio 4</channel>
-  <channel site="freeview.co.uk" site_id="64257#8700" lang="en" xmltv_id="">That&apos;s TV 3</channel>
+  <channel site="freeview.co.uk" site_id="64257#8700" lang="en" xmltv_id="">That&apos;s 20th Century</channel>
   <channel site="freeview.co.uk" site_id="64257#15016" lang="en" xmltv_id="">Sonlife</channel>
   <channel site="freeview.co.uk" site_id="64257#15064" lang="en" xmltv_id="">On Demand 365</channel>
   <channel site="freeview.co.uk" site_id="64257#15448" lang="en" xmltv_id="">Channelbox</channel>
@@ -120,8 +120,9 @@
   <channel site="freeview.co.uk" site_id="64377#30337" lang="en" xmltv_id="">That&apos;s Oldies MCR</channel>
   <channel site="freeview.co.uk" site_id="64377#30401" lang="en" xmltv_id="">That&apos;s TV 2 MCR</channel>
   <channel site="freeview.co.uk" site_id="64377#30465" lang="en" xmltv_id="">TV Warehouse+1</channel>
-  <channel site="freeview.co.uk" site_id="64377#30657" lang="en" xmltv_id="">That&apos;s TV 3 MCR</channel>
-  <channel site="freeview.co.uk" site_id="64377#30721" lang="en" xmltv_id="">That&apos;s Classics MCR</channel>
+  <channel site="freeview.co.uk" site_id="64377#30657" lang="en" xmltv_id="">That&apos;s 20th Century MCR</channel>
+  <channel site="freeview.co.uk" site_id="64377#30721" lang="en" xmltv_id="">That&apos;s Classics</channel>
+  <channel site="freeview.co.uk" site_id="64377#30785" lang="en" xmltv_id="">That&apos;s Entertainment</channel>
   <channel site="freeview.co.uk" site_id="64377#32843" lang="en" xmltv_id="">That&apos;s TV</channel>
   <channel site="freeview.co.uk" site_id="64378#32840" lang="en" xmltv_id="">Liverpool TV</channel>
   <channel site="freeview.co.uk" site_id="64379#32845" lang="en" xmltv_id="">That&apos;s TV</channel>
@@ -165,8 +166,8 @@
   <channel site="freeview.co.uk" site_id="64257#16278" lang="en" xmltv_id="AlJazeera.qa@English">Al Jazeera English</channel>
   <channel site="freeview.co.uk" site_id="64257#34304" lang="en" xmltv_id="AsharqNews.sa@SD">ASHARQ NEWS</channel>
   <channel site="freeview.co.uk" site_id="64392#4860" lang="en" xmltv_id="BBCAlba.uk@SD">BBC ALBA</channel>
-  <channel site="freeview.co.uk" site_id="64257#18048" lang="en" xmltv_id="BBCFour.uk@HD">BBC FOUR HD</channel>
   <channel site="freeview.co.uk" site_id="64257#4544" lang="en" xmltv_id="BBCFour.uk@UK">BBC FOUR</channel>
+  <channel site="freeview.co.uk" site_id="64257#18048" lang="en" xmltv_id="BBCFour.uk@UKHD">BBC FOUR HD</channel>
   <channel site="freeview.co.uk" site_id="64257#4352" lang="en" xmltv_id="BBCNews.uk">BBC NEWS</channel>
   <channel site="freeview.co.uk" site_id="64334#4174" lang="en" xmltv_id="BBCOne.uk@ChannelIslands">BBC ONE CI</channel>
   <channel site="freeview.co.uk" site_id="64334#17550" lang="en" xmltv_id="BBCOne.uk@ChannelIslandsHD">BBC ONE CI HD</channel>
@@ -225,9 +226,9 @@
   <channel site="freeview.co.uk" site_id="64257#18176" lang="en" xmltv_id="CBeebies.uk@HD">CBeebies HD</channel>
   <channel site="freeview.co.uk" site_id="64257#4672" lang="en" xmltv_id="CBeebies.uk@SD">CBeebies</channel>
   <channel site="freeview.co.uk" site_id="64257#22226" lang="en" xmltv_id="Challenge.uk@SD">Challenge</channel>
-  <channel site="freeview.co.uk" site_id="64257#17664" lang="en" xmltv_id="Channel4.uk@HD">Channel 4 HD</channel>
-  <channel site="freeview.co.uk" site_id="64257#8452" lang="en" xmltv_id="Channel4.uk@Plus1">Channel 4+1</channel>
   <channel site="freeview.co.uk" site_id="64257#8384" lang="en" xmltv_id="Channel4.uk@UK">Channel 4</channel>
+  <channel site="freeview.co.uk" site_id="64257#17664" lang="en" xmltv_id="Channel4.uk@UKHD">Channel 4 HD</channel>
+  <channel site="freeview.co.uk" site_id="64257#8452" lang="en" xmltv_id="Channel4.uk@UKPlus1">Channel 4+1</channel>
   <channel site="freeview.co.uk" site_id="64257#17728" lang="en" xmltv_id="Channel5.uk@HD">5 HD</channel>
   <channel site="freeview.co.uk" site_id="64257#13024" lang="en" xmltv_id="Channel5.uk@Plus1">5 +1</channel>
   <channel site="freeview.co.uk" site_id="64257#8500" lang="en" xmltv_id="Channel5.uk@SD">5</channel>
@@ -255,7 +256,7 @@
   <channel site="freeview.co.uk" site_id="64312#8258" lang="en" xmltv_id="ITV1.uk@Anglia">ITV1</channel>
   <channel site="freeview.co.uk" site_id="64304#8357" lang="en" xmltv_id="ITV1.uk@AngliaPlus1">ITV1+1</channel>
   <channel site="freeview.co.uk" site_id="64384#8260" lang="en" xmltv_id="ITV1.uk@BorderEngland">ITV1 Border England</channel>
-  <channel site="freeview.co.uk" site_id="64384#8360" lang="en" xmltv_id="ITV1.uk@BorderEnglandPlus1">ITV1+1</channel>
+  <channel site="freeview.co.uk" site_id="64384#8360" lang="en" xmltv_id="ITV1.uk@BorderPlus1">ITV1+1</channel>
   <channel site="freeview.co.uk" site_id="64392#8259" lang="en" xmltv_id="ITV1.uk@BorderScotland">ITV1 Border Scotland</channel>
   <channel site="freeview.co.uk" site_id="64392#17659" lang="en" xmltv_id="ITV1.uk@BorderScotlandHD">ITV1 HD</channel>
   <channel site="freeview.co.uk" site_id="64336#8262" lang="en" xmltv_id="ITV1.uk@Central">ITV1</channel>
@@ -266,14 +267,14 @@
   <channel site="freeview.co.uk" site_id="64376#8267" lang="en" xmltv_id="ITV1.uk@Granada">ITV1</channel>
   <channel site="freeview.co.uk" site_id="64376#17608" lang="en" xmltv_id="ITV1.uk@GranadaHD">ITV1 HD</channel>
   <channel site="freeview.co.uk" site_id="64376#8367" lang="en" xmltv_id="ITV1.uk@GranadaPlus1">ITV1+1</channel>
-  <channel site="freeview.co.uk" site_id="64257#17604" lang="en" xmltv_id="ITV1.uk@HD">ITV1 HD</channel>
   <channel site="freeview.co.uk" site_id="64257#8261" lang="en" xmltv_id="ITV1.uk@London">ITV1</channel>
+  <channel site="freeview.co.uk" site_id="64257#17604" lang="en" xmltv_id="ITV1.uk@LondonHD">ITV1 HD</channel>
+  <channel site="freeview.co.uk" site_id="64257#8361" lang="en" xmltv_id="ITV1.uk@LondonPlus1">ITV1+1</channel>
   <channel site="freeview.co.uk" site_id="64272#8270" lang="en" xmltv_id="ITV1.uk@Meridian">ITV1</channel>
   <channel site="freeview.co.uk" site_id="64280#8272" lang="en" xmltv_id="ITV1.uk@Meridian">ITV1</channel>
   <channel site="freeview.co.uk" site_id="64289#8271" lang="en" xmltv_id="ITV1.uk@Meridian">ITV1</channel>
   <channel site="freeview.co.uk" site_id="64272#17603" lang="en" xmltv_id="ITV1.uk@MeridianHD">ITV1 HD</channel>
   <channel site="freeview.co.uk" site_id="64272#8370" lang="en" xmltv_id="ITV1.uk@MeridianPlus1">ITV1+1</channel>
-  <channel site="freeview.co.uk" site_id="64257#8361" lang="en" xmltv_id="ITV1.uk@Plus1">ITV1+1</channel>
   <channel site="freeview.co.uk" site_id="64368#8274" lang="en" xmltv_id="ITV1.uk@TyneTees">ITV1</channel>
   <channel site="freeview.co.uk" site_id="64368#8374" lang="en" xmltv_id="ITV1.uk@TyneTeesPlus1">ITV1+1</channel>
   <channel site="freeview.co.uk" site_id="64416#8269" lang="en" xmltv_id="ITV1.uk@Wales">ITV1 Wales</channel>
@@ -304,10 +305,9 @@
   <channel site="freeview.co.uk" site_id="64257#16328" lang="en" xmltv_id="NewsmaxTV.us">Newsmax</channel>
   <channel site="freeview.co.uk" site_id="64257#16322" lang="en" xmltv_id="NHKWorldJapan.jp">NHK WORLD</channel>
   <channel site="freeview.co.uk" site_id="64257#27968" lang="en" xmltv_id="PBSAmerica.uk@SD">PBS America</channel>
-  <channel site="freeview.co.uk" site_id="64257#16272" lang="en" xmltv_id="PopMax.uk@SD">POP</channel>
+  <channel site="freeview.co.uk" site_id="64257#16272" lang="en" xmltv_id="Pop.uk@SD">POP</channel>
   <channel site="freeview.co.uk" site_id="64257#27424" lang="en" xmltv_id="PopUp.uk@SD">POP UP</channel>
-  <channel site="freeview.co.uk" site_id="64257#23808" lang="en" xmltv_id="Quest.uk@Plus1">QUEST+1</channel>
-  <channel site="freeview.co.uk" site_id="64265#34752" lang="en" xmltv_id="Quest.uk@Plus1">QUEST+1</channel>
+  <channel site="freeview.co.uk" site_id="64257#34752" lang="en" xmltv_id="Quest.uk@Plus1">QUEST+1</channel>
   <channel site="freeview.co.uk" site_id="64257#27328" lang="en" xmltv_id="Quest.uk@SD">QUEST</channel>
   <channel site="freeview.co.uk" site_id="64257#23744" lang="en" xmltv_id="QuestRed.uk@SD">Quest Red</channel>
   <channel site="freeview.co.uk" site_id="64257#14416" lang="en" xmltv_id="QVC2.uk@SD">QVC2</channel>
@@ -351,5 +351,5 @@
   <channel site="freeview.co.uk" site_id="64424#8276" lang="en" xmltv_id="UTV.uk@SD">UTV</channel>
   <channel site="freeview.co.uk" site_id="64257#12298" lang="en" xmltv_id="UW.uk@SD">U&amp;W</channel>
   <channel site="freeview.co.uk" site_id="64257#25792" lang="en" xmltv_id="UYesterday.uk@SD">U&amp;Yesterday</channel>
-  <channel site="freeview.co.uk" site_id="64257#14464" lang="en" xmltv_id="WildEarth.uk@SD">WildEarth</channel>
+  <channel site="freeview.co.uk" site_id="64257#14464" lang="en" xmltv_id="WildEarth.za@SD">WildEarth</channel>
 </channels>
