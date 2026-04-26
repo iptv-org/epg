@@ -1,3 +1,4 @@
+const axios = require('axios')
 const dayjs = require('dayjs')
 const timezone = require('dayjs/plugin/timezone')
 const utc = require('dayjs/plugin/utc')
@@ -5,78 +6,72 @@ const utc = require('dayjs/plugin/utc')
 dayjs.extend(timezone)
 dayjs.extend(utc)
 
+const tz = 'Asia/Jakarta'
+const dateFormat = 'YYYY-MM-DD HH:mm:ss'
+const headers = {
+  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
+  'Origin': 'https://cubmu.com',
+  'Referer': 'https://cubmu.com/',
+}
+let runtimeConfig, accessToken
+
 module.exports = {
   site: 'cubmu.com',
   days: 2,
   url({ channel, date }) {
-    return `https://servicebuss.transvision.co.id/v2/cms/getEPGData?app_id=cubmu&tvs_platform_id=standalone&schedule_date=${date.format(
+    return `https://servicebuss.transvision.co.id/global/v2/epg/programs?channel_id=${
+      channel.site_id
+    }&schedule_date=${date.format(
       'YYYY-MM-DD'
-    )}&channel_id=${channel.site_id}`
+    )}`
+  },
+  request: {
+    async headers() {
+      await fetchAccessToken()
+
+      return {
+        Authorization: `Bearer ${accessToken}`,
+        ...headers,
+      }
+    }
   },
   parser({ content, channel }) {
     const programs = []
-    const items = parseItems(content)
-    items.forEach(item => {
-      programs.push({
-        title: parseTitle(item),
-        description: parseDescription(item, channel.lang),
-        episode: parseEpisode(item),
-        start: parseStart(item).toISOString(),
-        stop: parseStop(item).toISOString()
+    if (content && typeof content === 'string') {
+      content = JSON.parse(content)
+    }
+    if (Array.isArray(content?.data)) {
+      content.data.forEach(item => {
+        programs.push({
+          title: item.program_name,
+          start: dayjs.tz(item.schedule_start_time, dateFormat, tz),
+          stop: dayjs.tz(item.schedule_end_time, dateFormat, tz),
+        })
       })
-    })
+    }
 
     return programs
   },
-  async channels({ lang }) {
-    const axios = require('axios')
-    const cheerio = require('cheerio')
+  async channels({ lang = 'id' }) {
+    const now = dayjs()
+    await fetchAccessToken()
     const result = await axios
-      .get('https://cubmu.com/live-tv')
-      .then(response => response.data)
-      .catch(console.error)
-
-    const $ = cheerio.load(result)
-
-    // retrieve service api data
-    const config = JSON.parse($('#__NEXT_DATA__').text()).runtimeConfig || {}
-
-    const options = {
-      headers: {
-        Origin: 'https://cubmu.com',
-        Referer: 'https://cubmu.com/live-tv'
-      }
-    }
-    // login to service bus
-    await axios
-      .post(
-        `https://servicebuss.transvision.co.id/tvs/login/external?email=${config.email}&password=${config.password}&deviceId=${config.deviceId}&deviceType=${config.deviceType}&deviceModel=${config.deviceModel}&deviceToken=&serial=&platformId=${config.platformId}`,
-        options
-      )
-      .then(response => response.data)
-      .catch(console.error)
-    // list channels
-    const subscribedChannels = await axios
-      .post(
-        `https://servicebuss.transvision.co.id/tvs/subscribe_product/list?platformId=${config.platformId}`,
-        options
-      )
-      .then(response => response.data)
-      .catch(console.error)
+      .get(`https://servicebuss.transvision.co.id/global/v2/master-channels?platform_id=1&page=1&per_page=100&schedule_date=${now.format('YYYY-MM-DD')}`, {
+        headers: {
+          Authorization: `Bearer ${accessToken}`,
+          ...headers,
+        }
+      })
+      .then(r => r.data)
+      .catch(err => console.error(err.message))
 
     const channels = []
-    const included = []
-    if (Array.isArray(subscribedChannels.channelPackageList)) {
-      subscribedChannels.channelPackageList.forEach(pkg => {
-        pkg.channelList.forEach(channel => {
-          if (included.indexOf(channel.id) < 0) {
-            included.push(channel.id)
-            channels.push({
-              lang,
-              site_id: channel.id,
-              name: channel.name
-            })
-          }
+    if (Array.isArray(result?.data?.items)) {
+      result.data.items.forEach(channel => {
+        channels.push({
+          lang,
+          site_id: channel.channel_id,
+          name: channel.channel_name,
         })
       })
     }
@@ -85,30 +80,65 @@ module.exports = {
   }
 }
 
-function parseItems(content) {
-  return content ? JSON.parse(content.trim()).result || [] : []
+async function fetchRuntimeConfig() {
+  if (!runtimeConfig) {
+    const cheerio = require('cheerio')
+    const url = 'https://cubmu.com/'
+    const result = await axios
+      .get(url)
+      .then(r => r.data)
+      .catch(err => console.error(err.message))
+
+      const $ = cheerio.load(result)
+
+    runtimeConfig = JSON.parse($('#__NEXT_DATA__').text()).runtimeConfig || {}
+  }
 }
 
-function parseTitle(item) {
-  return item.scehedule_title
-}
+async function fetchAccessToken() {
+  if (!runtimeConfig) {
+    await fetchRuntimeConfig()
+  }
+  const url = 'https://servicebuss.transvision.co.id/global/v3/auth/redirect-login'
+  if (!accessToken) {
+    // extracted from https://cubmu.com/_next/static/chunks/pages/_app-ac49656f9b4eac2d.js
+    const f = t => {
+      let e = t,
+        r = 'xx',
+        n = Math.round(+new Date / 1e3),
+        i = ''.concat(e, '{SPLITTER}').concat(n)
+      return [0, 1].map(() => {
+        i = ''.concat(r).concat(btoa(i))
+      }), i
+    }
+    const payload = {
+      app_id: 'cubmu',
+      device: {
+        device_brand: 'Web Browser',
+        device_id: 'web_browser',
+        device_type: 'Opera',
+        firebase_id: 'NOT_ALLOWED',
+        notes: 'Web Browser-V2.1',
+      },
+      email_or_phone: runtimeConfig?.emailMaster,
+      password: f(runtimeConfig?.passwordMaster),
+      tvs_platform_id: 'standalone',
+    }
+    const result = await axios
+      .post(url, payload, {
+        headers: {
+          ...headers,
+          'Content-Type': 'application/json',
+        }
+      })
+      .then(r => r.data)
+      .catch(err => console.error(err.message))
 
-function parseDescription(item, lang = 'id') {
-  return lang === 'id' ? item.schedule_json.primarySynopsis : item.schedule_json.secondarySynopsis
-}
-
-function parseEpisode(item) {
-  return item.schedule_json.episodeName
-}
-
-function parseStart(item) {
-  return dayjs.tz(item.schedule_date, 'YYYY-MM-DD HH:mm:ss', 'Asia/Jakarta')
-}
-
-function parseStop(item) {
-  return dayjs.tz(
-    [item.schedule_date.split(' ')[0], item.schedule_end_time].join(' '),
-    'YYYY-MM-DD HH:mm:ss',
-    'Asia/Jakarta'
-  )
+    if (result?.data?.access_token) {
+      accessToken = result.data.access_token
+    }
+  }
+  if (!accessToken) {
+    throw new Error(`Unable to fetch access token from ${url}!`);
+  }
 }
