@@ -62,7 +62,7 @@ module.exports = {
 
   async channels() {
     try {
-      const url = `https://catalogapi.zee5.com/v1/channel?page=1&page_size=500`
+      const url = 'https://catalogapi.zee5.com/v1/channel?page=1&page_size=500'
       const response = await axios.get(url)
       const items = response.data.items || []
 
