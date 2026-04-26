@@ -1,6 +1,6 @@
 # zee5.com
 
-https://zee5.com
+https://zee5.com/tvguide
 
 ### Download the guide
 
