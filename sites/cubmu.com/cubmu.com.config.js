@@ -35,7 +35,7 @@ module.exports = {
       }
     }
   },
-  parser({ content, channel }) {
+  parser({ content }) {
     const programs = []
     if (content && typeof content === 'string') {
       content = JSON.parse(content)
@@ -139,6 +139,6 @@ async function fetchAccessToken() {
     }
   }
   if (!accessToken) {
-    throw new Error(`Unable to fetch access token from ${url}!`);
+    throw new Error(`Unable to fetch access token from ${url}!`)
   }
 }
