@@ -64,7 +64,7 @@
     <tr><td><a href="sites/foxtel.com.au">foxtel.com.au</a></td><td align="right">99</td><td align="right">60</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/france.tv">france.tv</a></td><td align="right">15</td><td align="right">8</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/freetv.tv">freetv.tv</a></td><td align="right">7</td><td align="right">7</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/freeview.co.uk">freeview.co.uk</a></td><td align="right">352</td><td align="right">198</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/freeview.co.uk">freeview.co.uk</a></td><td align="right">352</td><td align="right">197</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/frikanalen.no">frikanalen.no</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/galamtv.kz">galamtv.kz</a></td><td align="right">27</td><td align="right">22</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/gatotv.com">gatotv.com</a></td><td align="right">1925</td><td align="right">342</td><td align="center">🟢</td><td></td></tr>
@@ -143,7 +143,7 @@
     <tr><td><a href="sites/reportv.com.ar">reportv.com.ar</a></td><td align="right">163</td><td align="right">95</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/rikstv.no">rikstv.no</a></td><td align="right">80</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/rotana.net">rotana.net</a></td><td align="right">32</td><td align="right">26</td><td align="center">🔴</td><td>https://github.com/iptv-org/epg/issues/3018</td></tr>
-    <tr><td><a href="sites/roya-tv.com">roya-tv.com</a></td><td align="right">10</td><td align="right">8</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/roya-tv.com">roya-tv.com</a></td><td align="right">10</td><td align="right">8</td><td align="center">🟢</td><td>https://github.com/iptv-org/epg/issues/3108</td></tr>
     <tr><td><a href="sites/rthk.hk">rthk.hk</a></td><td align="right">8</td><td align="right">8</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/rtmklik.rtm.gov.my">rtmklik.rtm.gov.my</a></td><td align="right">8</td><td align="right">6</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/rtp.pt">rtp.pt</a></td><td align="right">10</td><td align="right">10</td><td align="center">🟢</td><td></td></tr>
