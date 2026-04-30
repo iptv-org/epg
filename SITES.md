@@ -35,7 +35,7 @@
     <tr><td><a href="sites/content.astro.com.my">content.astro.com.my</a></td><td align="right">149</td><td align="right">93</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/cosmotetv.gr">cosmotetv.gr</a></td><td align="right">109</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/ctc.ru">ctc.ru</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/cubmu.com">cubmu.com</a></td><td align="right">140</td><td align="right">104</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/cubmu.com">cubmu.com</a></td><td align="right">76</td><td align="right">62</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/cyta.com.cy">cyta.com.cy</a></td><td align="right">117</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/dens.tv">dens.tv</a></td><td align="right">54</td><td align="right">48</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/derana.lk">derana.lk</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
@@ -59,12 +59,11 @@
     <tr><td><a href="sites/epg.telemach.ba">epg.telemach.ba</a></td><td align="right">476</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/epgmaster.com">epgmaster.com</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/epgshare01.online">epgshare01.online</a></td><td align="right">20706</td><td align="right">15</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/firstmedia.com">firstmedia.com</a></td><td align="right">116</td><td align="right">97</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/foxsports.com.au">foxsports.com.au</a></td><td align="right">7</td><td align="right">7</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/foxtel.com.au">foxtel.com.au</a></td><td align="right">99</td><td align="right">60</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/france.tv">france.tv</a></td><td align="right">15</td><td align="right">8</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/freetv.tv">freetv.tv</a></td><td align="right">7</td><td align="right">7</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/freeview.co.uk">freeview.co.uk</a></td><td align="right">352</td><td align="right">197</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/freeview.co.uk">freeview.co.uk</a></td><td align="right">352</td><td align="right">241</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/frikanalen.no">frikanalen.no</a></td><td align="right">1</td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/galamtv.kz">galamtv.kz</a></td><td align="right">27</td><td align="right">22</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/gatotv.com">gatotv.com</a></td><td align="right">1925</td><td align="right">342</td><td align="center">🟢</td><td></td></tr>
@@ -246,6 +245,7 @@
     <tr><td><a href="sites/yes.co.il">yes.co.il</a></td><td align="right">174</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/zap.co.ao">zap.co.ao</a></td><td align="right">114</td><td align="right">63</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/zap2it.com">zap2it.com</a></td><td align="right">595</td><td align="right">0</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/zee5.com">zee5.com</a></td><td align="right">115</td><td align="right">105</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/ziggogo.tv">ziggogo.tv</a></td><td align="right">156</td><td align="right">150</td><td align="center">🟡</td><td>https://github.com/iptv-org/epg/issues/2977, https://github.com/iptv-org/epg/issues/2976</td></tr>
     <tr><td><a href="sites/znbc.co.zm">znbc.co.zm</a></td><td align="right">4</td><td align="right">4</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/zuragt.mn">zuragt.mn</a></td><td align="right">34</td><td align="right">27</td><td align="center">🟢</td><td></td></tr>
