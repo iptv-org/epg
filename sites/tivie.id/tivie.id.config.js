@@ -68,23 +68,28 @@ module.exports = {
         })
       if (queues.length) {
         await doFetch(queues, (queue, res) => {
-          const $ = cheerio.load(res)
-          const img = $('#main-content > div > div:nth-child(1) img')
-          const info = $('#main-content > div > div:nth-child(2)')
-          const title = parseText(info.find('h2:nth-child(2)'))
-          if (!queue.i.title.startsWith(title) && !queue.i.title.startsWith('LIVE ')) {
-            queue.i.subTitle = parseText(info.find('h2:nth-child(2)'))
+          if (res) {
+            const $ = cheerio.load(res)
+            const info = $('#main-content > div > div:nth-child(2)')
+            // program description
+            const desc = info.find('div[class=""] > p')
+            if (desc.length) {
+              desc.find('.hidden')
+                .toArray()
+                .forEach(el => $(el).remove())
+              queue.i.description = parseText(desc)
+            }
+            // program categories
+            const cat = info.find('div[class=""] > a')
+            if (cat.length) {
+              queue.i.categories = parseText(cat).split(', ')
+            }
+            // program image
+            const img = $('#main-content > div > div:nth-child(1) img')
+            if (img.length) {
+              queue.i.image = img.attr('src')
+            }
           }
-          const desc1 = parseText(info.find('div[class=""]:nth-child(3)'))
-          const desc2 = parseText(info.find('div[class=""]:nth-child(4)'))
-          if (desc2 == '') {
-            queue.i.description = desc1.replace('TiViE.id | ', '')
-          } else {
-            queue.i.description = desc2.replace('TiViE.id | ', '')
-            queue.i.date = parseText(info.find('h2:nth-child(3)'))
-          }
-          queue.i.categories = parseText(info.find('div[class=""]:nth-child(1)')).split(', ')
-          queue.i.image = img.length ? img.attr('src') : null
         })
       }
       // fill start-stop
@@ -118,7 +123,7 @@ module.exports = {
       const url = $item.attr('href')
       return {
         lang,
-        site_id: url.substr(url.lastIndexOf('/') + 1),
+        site_id: url.substr(url.lastIndexOf('/') + 1, url.lastIndexOf('?') - url.lastIndexOf('/') - 1),
         name: $item.find('strong').text()
       }
     })
@@ -130,8 +135,8 @@ module.exports = {
 function parseText($item) {
   let text = $item.text().replace(/\t/g, '').replace(/\n/g, ' ').trim()
   while (true) {
-    if (text.match(/\s\s/)) {
-      text = text.replace(/\s\s/g, ' ')
+    if (text.match(/\s{2,}/)) {
+      text = text.replace(/\s{2,}/g, ' ')
       continue
     }
     break
