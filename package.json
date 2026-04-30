@@ -92,5 +92,8 @@
     "typescript-eslint": "^8.59.0",
     "uuid": "^14.0.0",
     "xml-js-v2": "^2.1.1"
+  },
+  "overrides": {
+    "glob": "^13.0.6"
   }
 }
