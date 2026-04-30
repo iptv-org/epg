@@ -1,25 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="visionplus.id" site_id="00000000000000000008" lang="en" xmltv_id="">SCTV</channel>
-  <channel site="visionplus.id" site_id="00000000000000000009" lang="en" xmltv_id="">Indosiar</channel>
-  <channel site="visionplus.id" site_id="00000000000000000016" lang="en" xmltv_id="">TVRI</channel>
-  <channel site="visionplus.id" site_id="00000000000000000019" lang="en" xmltv_id="">Moji</channel>
-  <channel site="visionplus.id" site_id="00000000000000000020" lang="en" xmltv_id="">Mentari TV</channel>
-  <channel site="visionplus.id" site_id="00000000000000000054" lang="en" xmltv_id="">Studio Universal</channel>
-  <channel site="visionplus.id" site_id="00000000000000000057" lang="en" xmltv_id="">Moonbug</channel>
-  <channel site="visionplus.id" site_id="00000000000000000068" lang="en" xmltv_id="">HITS Now</channel>
-  <channel site="visionplus.id" site_id="00000000000000000069" lang="en" xmltv_id="">Formosa</channel>
-  <channel site="visionplus.id" site_id="00000000000000000070" lang="en" xmltv_id="">Sanlih</channel>
   <channel site="visionplus.id" site_id="00000000000000000089" lang="en" xmltv_id="">Hanacaraka TV</channel>
-  <channel site="visionplus.id" site_id="00000000000000000114" lang="en" xmltv_id="">Sportstars 3</channel>
-  <channel site="visionplus.id" site_id="00000000000000000123" lang="en" xmltv_id="">beIN SPORTS 2</channel>
-  <channel site="visionplus.id" site_id="00000000000000000125" lang="en" xmltv_id="">beIN SPORTS 4</channel>
-  <channel site="visionplus.id" site_id="00000000000000000126" lang="en" xmltv_id="">beIN SPORTS 5</channel>
   <channel site="visionplus.id" site_id="00000000000000000201" lang="en" xmltv_id="">RCTI World</channel>
   <channel site="visionplus.id" site_id="00000000000000000202" lang="en" xmltv_id="">GTV World</channel>
   <channel site="visionplus.id" site_id="00000000000000000203" lang="en" xmltv_id="">MNCTV World</channel>
   <channel site="visionplus.id" site_id="00000000000000000204" lang="en" xmltv_id="">Drama World</channel>
-  <channel site="visionplus.id" site_id="00000000000000000205" lang="en" xmltv_id="">Sportstars 4</channel>
   <channel site="visionplus.id" site_id="00000000000000001002" lang="en" xmltv_id="">V+ LIVE</channel>
   <channel site="visionplus.id" site_id="00000000000000001008" lang="en" xmltv_id="">R+ LIVE</channel>
   <channel site="visionplus.id" site_id="00000000000000001010" lang="en" xmltv_id="">V+ LIVE 2</channel>
@@ -44,7 +29,10 @@
   <channel site="visionplus.id" site_id="00000000000000000102" lang="en" xmltv_id="BBCEarth.uk@Asia">BBC Earth</channel>
   <channel site="visionplus.id" site_id="00000000000000000130" lang="en" xmltv_id="BBCNews.uk@AsiaPacific">BBC World news</channel>
   <channel site="visionplus.id" site_id="00000000000000000122" lang="en" xmltv_id="beINSports1.qa@Indonesia">beIN SPORTS</channel>
+  <channel site="visionplus.id" site_id="00000000000000000123" lang="en" xmltv_id="beINSports2.qa@MENA">beIN SPORTS 2</channel>
   <channel site="visionplus.id" site_id="00000000000000000124" lang="en" xmltv_id="beINSports3.qa@Indonesia">beIN SPORTS 3</channel>
+  <channel site="visionplus.id" site_id="00000000000000000125" lang="en" xmltv_id="beINSports4.qa@MENA">beIN SPORTS 4</channel>
+  <channel site="visionplus.id" site_id="00000000000000000126" lang="en" xmltv_id="beINSports5.qa@MENA">beIN SPORTS 5</channel>
   <channel site="visionplus.id" site_id="00000000000000000133" lang="en" xmltv_id="BloombergTV.us@Asia">Bloomberg</channel>
   <channel site="visionplus.id" site_id="00000000000000000015" lang="en" xmltv_id="BTV.id@SD">BTV</channel>
   <channel site="visionplus.id" site_id="00000000000000000058" lang="en" xmltv_id="CBeebies.uk@SD">Cbeebies</channel>
@@ -75,6 +63,7 @@
   <channel site="visionplus.id" site_id="00000000000000000121" lang="en" xmltv_id="FightSports.us@SD">Fight Sports</channel>
   <channel site="visionplus.id" site_id="00000000000000000132" lang="en" xmltv_id="FoxNewsChannel.us@SD">FOX News</channel>
   <channel site="visionplus.id" site_id="00000000000000000147" lang="en" xmltv_id="France24.fr@English">France 24</channel>
+  <channel site="visionplus.id" site_id="00000000000000000069" lang="en" xmltv_id="FTV.tw@SD">Formosa</channel>
   <channel site="visionplus.id" site_id="00000000000000000049" lang="en" xmltv_id="Galaxy.id@SD">GALAXY</channel>
   <channel site="visionplus.id" site_id="00000000000000000048" lang="en" xmltv_id="GalaxyPremium.id@SD">GALAXY PREMIUM</channel>
   <channel site="visionplus.id" site_id="00000000000000000103" lang="en" xmltv_id="GlobalTrekker.sg@SD">Global Trekker</channel>
@@ -82,9 +71,11 @@
   <channel site="visionplus.id" site_id="00000000000000000104" lang="en" xmltv_id="HistoryAsia.us@SD">History</channel>
   <channel site="visionplus.id" site_id="00000000000000000077" lang="en" xmltv_id="HITS.sg@SD">Hits</channel>
   <channel site="visionplus.id" site_id="00000000000000000042" lang="en" xmltv_id="HITSMovies.sg@SD">Hits Movies</channel>
+  <channel site="visionplus.id" site_id="00000000000000000068" lang="en" xmltv_id="HITSNOW.sg@SD">HITS Now</channel>
   <channel site="visionplus.id" site_id="00000000000000000160" lang="en" xmltv_id="HunanTV.cn@SD">Hunan TV</channel>
   <channel site="visionplus.id" site_id="00000000000000000134" lang="en" xmltv_id="IDXChannel.id@SD">IDX</channel>
   <channel site="visionplus.id" site_id="00000000000000000050" lang="en" xmltv_id="IMC.id@SD">IMC (Indonesia Movie Channel)</channel>
+  <channel site="visionplus.id" site_id="00000000000000000009" lang="en" xmltv_id="Indosiar.id@SD">Indosiar</channel>
   <channel site="visionplus.id" site_id="00000000000000000004" lang="en" xmltv_id="iNews.id@SD">iNews</channel>
   <channel site="visionplus.id" site_id="00000000000000000025" lang="en" xmltv_id="JakTV.id@SD">JAK TV</channel>
   <channel site="visionplus.id" site_id="00000000000000000161" lang="en" xmltv_id="JiangsuTV.cn@SD">Jiangsu TV</channel>
@@ -95,8 +86,11 @@
   <channel site="visionplus.id" site_id="00000000000000000138" lang="en" xmltv_id="Life.id@SD">LIFE</channel>
   <channel site="visionplus.id" site_id="00000000000000000080" lang="en" xmltv_id="LifetimeAsia.us@SD">Lifetime</channel>
   <channel site="visionplus.id" site_id="00000000000000000105" lang="en" xmltv_id="LoveNature.ca@SD">Love Nature</channel>
+  <channel site="visionplus.id" site_id="00000000000000000020" lang="en" xmltv_id="MentariTV.id@SD">Mentari TV</channel>
   <channel site="visionplus.id" site_id="00000000000000000014" lang="en" xmltv_id="MetroTV.id@SD">Metro TV</channel>
   <channel site="visionplus.id" site_id="00000000000000000002" lang="en" xmltv_id="MNCTV.id@SD">MNCTV</channel>
+  <channel site="visionplus.id" site_id="00000000000000000019" lang="en" xmltv_id="Moji.id@SD">Moji</channel>
+  <channel site="visionplus.id" site_id="00000000000000000057" lang="en" xmltv_id="MoonbugKids.uk@SD">Moonbug</channel>
   <channel site="visionplus.id" site_id="00000000000000000142" lang="en" xmltv_id="MusicTV.id@SD">Music TV</channel>
   <channel site="visionplus.id" site_id="00000000000000000137" lang="en" xmltv_id="MuslimTV.id@SD">Muslim TV</channel>
   <channel site="visionplus.id" site_id="00000000000000000023" lang="en" xmltv_id="NET.id@SD">MDTV</channel>
@@ -113,12 +107,17 @@
   <channel site="visionplus.id" site_id="00000000000000000092" lang="en" xmltv_id="ROCKEntertainment.sg@SD">Rock Entertainment</channel>
   <channel site="visionplus.id" site_id="00000000000000000093" lang="en" xmltv_id="ROCKExtreme.sg@SD">Rock Action</channel>
   <channel site="visionplus.id" site_id="00000000000000000150" lang="en" xmltv_id="RT.ru@SD">RT</channel>
+  <channel site="visionplus.id" site_id="00000000000000000008" lang="en" xmltv_id="SCTV.id@SD">SCTV</channel>
+  <channel site="visionplus.id" site_id="00000000000000000070" lang="en" xmltv_id="SETTaiwan.tw@SD">Sanlih</channel>
   <channel site="visionplus.id" site_id="00000000000000000005" lang="en" xmltv_id="SindoNewsTV.id@SD">SindoNews</channel>
   <channel site="visionplus.id" site_id="00000000000000000115" lang="en" xmltv_id="SoccerChannel.id@SD">Soccer Channel</channel>
   <channel site="visionplus.id" site_id="00000000000000000113" lang="en" xmltv_id="Sportstars2.id@SD">Sportstars 2</channel>
+  <channel site="visionplus.id" site_id="00000000000000000114" lang="en" xmltv_id="Sportstars3.id@SD">Sportstars 3</channel>
+  <channel site="visionplus.id" site_id="00000000000000000205" lang="en" xmltv_id="Sportstars3.id@SD">Sportstars 4</channel>
   <channel site="visionplus.id" site_id="00000000000000000112" lang="en" xmltv_id="Sportstars.id@SD">Sportstars</channel>
   <channel site="visionplus.id" site_id="00000000000000000120" lang="en" xmltv_id="SPOTV2.id@SD">SpoTV 2</channel>
   <channel site="visionplus.id" site_id="00000000000000000119" lang="en" xmltv_id="SPOTV.id@SD">SpoTV 1</channel>
+  <channel site="visionplus.id" site_id="00000000000000000054" lang="en" xmltv_id="StudioUniversalLatinAmerica.us@Brazil">Studio Universal</channel>
   <channel site="visionplus.id" site_id="00000000000000000041" lang="en" xmltv_id="Thrill.hk@SD">Thrill</channel>
   <channel site="visionplus.id" site_id="00000000000000000007" lang="en" xmltv_id="Trans7.id@SD">Trans 7</channel>
   <channel site="visionplus.id" site_id="00000000000000000006" lang="en" xmltv_id="TransTV.id@SD">Trans TV</channel>
@@ -129,6 +128,7 @@
   <channel site="visionplus.id" site_id="00000000000000000073" lang="en" xmltv_id="tvNAsia.hk@SD">TVN</channel>
   <channel site="visionplus.id" site_id="00000000000000000046" lang="en" xmltv_id="tvNMoviesAsia.hk@SD">TVN Movies</channel>
   <channel site="visionplus.id" site_id="00000000000000000012" lang="en" xmltv_id="tvOne.id@SD">TVOne</channel>
+  <channel site="visionplus.id" site_id="00000000000000000016" lang="en" xmltv_id="TVRI.id@SD">TVRI</channel>
   <channel site="visionplus.id" site_id="00000000000000000087" lang="en" xmltv_id="VisionPrime.id@SD">Vision Prime</channel>
   <channel site="visionplus.id" site_id="00000000000000000158" lang="en" xmltv_id="XingKongChina.cn@SD">Xing kong TV</channel>
   <channel site="visionplus.id" site_id="00000000000000000047" lang="en" xmltv_id="ZeeBioskop.id@SD">Zee Bioskop</channel>
