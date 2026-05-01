@@ -11,7 +11,7 @@ dayjs.extend(utc)
 
 jest.mock('axios')
 
-const date = dayjs.utc('2024-12-31').startOf('d')
+const date = dayjs.utc('2026-04-29').startOf('d')
 const channel = {
   site_id: 'axn',
   xmltv_id: 'AXN.id',
@@ -20,8 +20,8 @@ const channel = {
 
 axios.get.mockImplementation(url => {
   const urls = {
-    'https://tivie.id/film/white-house-down-nwzDnwz9nAv6': 'program01.html',
-    'https://tivie.id/program/hudson-rex-s6-e14-nwzDnwvBmQr9': 'program02.html'
+    'https://tivie.id/program/the-hunting-party-e3-nwzDnwrCmAnB?utm_source=tivie&utm_medium=referral&utm_campaign=channel_detail&utm_content=button': 'program01.html',
+    'https://tivie.id/program/the-rookie-s7-e6-nwzDnwv6mwzC?utm_source=tivie&utm_medium=referral&utm_campaign=channel_detail&utm_content=button': 'program02.html'
   }
   let data = ''
   if (urls[url] !== undefined) {
@@ -31,7 +31,7 @@ axios.get.mockImplementation(url => {
 })
 
 it('can generate valid url', () => {
-  expect(url({ channel, date })).toBe('https://tivie.id/channel/axn/20241231')
+  expect(url({ channel, date })).toBe('https://tivie.id/channel/axn/20260429')
 })
 
 it('can parse response', async () => {
@@ -42,26 +42,30 @@ it('can parse response', async () => {
     return p
   })
 
-  expect(results.length).toBe(27)
+  expect(results.length).toBe(28)
   expect(results[0]).toMatchObject({
-    start: '2024-12-30T17:00:00.000Z',
-    stop: '2024-12-30T17:05:00.000Z',
-    title: 'White House Down',
+    start: '2026-04-28T17:00:00.000Z',
+    stop: '2026-04-28T17:25:00.000Z',
+    title: 'The Hunting Party S1, Ep. 3',
     description:
-      'Saat melakukan tur di Gedung Putih bersama putrinya yang masih kecil, seorang perwira polisi beraksi untuk melindungi anaknya dan presiden dari sekelompok penjajah paramiliter bersenjata lengkap.',
+      'Di pedalaman Montana, tim memburu seorang pembunuh berantai nan kejam bernama Lowe yang terobsesi dengan kawanan serigala.',
     image:
-      'https://i0.wp.com/is3.cloudhost.id/tivie/poster/2023/09/65116c78791c2-1695640694.jpg?resize=480,270'
+      'https://i0.wp.com/is3.cloudhost.id/tivie/poster/2025/10/68e9d54962c8f-1760154953.jpg?resize=480,270',
+    categories: ['Serial'],
+    season: 1,
+    episode: 3
   })
   expect(results[2]).toMatchObject({
-    start: '2024-12-30T18:00:00.000Z',
-    stop: '2024-12-30T18:55:00.000Z',
-    title: 'Hudson & Rex S6, Ep. 14',
+    start: '2026-04-28T18:20:00.000Z',
+    stop: '2026-04-28T19:15:00.000Z',
+    title: 'The Rookie S7, Ep. 6',
     description:
-      'Saat guru musik Jesse terbunuh di studio rekamannya, Charlie dan Rex menghubungkan kejahatan tersebut dengan pembunuhan yang tampaknya tak ada hubungannya.',
+      'Grey memberi Tim dan Lucy suatu tugas yang tak menyenangkan, sementara John dan Celina melacak keberadaan seorang gadis yang menghilang. Beberapa hubungan asmara berakhir di suatu acara amal.',
     image:
-      'https://i0.wp.com/is3.cloudhost.id/tivie/poster/2024/07/668b7ced47b25-1720417517.jpg?resize=480,270',
-    season: 6,
-    episode: 14
+      'https://i0.wp.com/is3.cloudhost.id/tivie/poster/2025/01/677a9f2fb4b5f-1736089391.jpg?resize=480,270',
+    categories: ['Serial'],
+    season: 7,
+    episode: 6
   })
 })
 
