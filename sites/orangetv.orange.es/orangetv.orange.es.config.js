@@ -1,13 +1,10 @@
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
-const doFetch = require('@ntlab/sfetch')
-const debug = require('debug')('site:orangetv.orange.es')
+const doFetch = require('../../scripts/core/multifetch')
 
 dayjs.extend(utc)
 
-doFetch.setDebugger(debug)
-
-const API_PROGRAM_ENDPOINT = 'https://epg.orangetv.orange.es/epg/Smartphone_Android/1_PRO'
+const API_PROGRAM_ENDPOINT = 'https://epg.orangetv.orange.es/epg/SmartTV_Android/1_PRO'
 const API_CHANNEL_ENDPOINT =
   'https://pc.orangetv.orange.es/pc/api/rtv/v1/GetChannelList?bouquet_id=1&model_external_id=PC&filter_unsupported_channels=false&client=json'
 const API_IMAGE_ENDPOINT = 'https://pc.orangetv.orange.es/pc/api/rtv/v1/images'

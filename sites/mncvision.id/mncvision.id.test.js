@@ -1,10 +1,10 @@
 const { parser, url, request } = require('./mncvision.id.config.js')
 const fs = require('fs')
 const path = require('path')
-const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
+const multifetch = require('../../scripts/core/multifetch')
 
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
@@ -28,38 +28,34 @@ const englishHeaders = {
   ]
 }
 
-axios.get.mockImplementation((url, opts) => {
-  if (url === 'https://www.mncvision.id/language_switcher/setlang/indonesia/') {
-    return Promise.resolve({
-      headers: indonesiaHeaders
-    })
-  }
-  if (url === 'https://www.mncvision.id/language_switcher/setlang/english/') {
-    return Promise.resolve({
-      headers: englishHeaders
-    })
-  }
-  if (
-    url === 'https://www.mncvision.id/schedule/detail/20231119001500154/Blue-Bloods-S13-Ep-19/1'
-  ) {
-    const getCookie = headers => {
-      if (Array.isArray(headers['set-cookie'])) {
-        return headers['set-cookie'][0].split('; ')[0]
-      }
-    }
-    if (opts.headers['Cookie'] === getCookie(indonesiaHeaders)) {
-      return Promise.resolve({
-        data: fs.readFileSync(path.resolve(__dirname, '__data__/program_id.html'))
-      })
-    }
-    if (opts.headers['Cookie'] === getCookie(englishHeaders)) {
-      return Promise.resolve({
-        data: fs.readFileSync(path.resolve(__dirname, '__data__/program_en.html'))
-      })
+beforeEach(() => {
+  const getCookie = headers => {
+    if (Array.isArray(headers['set-cookie'])) {
+      return headers['set-cookie'][0].split('; ')[0]
     }
   }
 
-  return Promise.resolve({ data: '' })
+  multifetch.setMocks({
+    'https://www.mncvision.id/language_switcher/setlang/indonesia/': () => ({
+      headers: indonesiaHeaders
+    }),
+    'https://www.mncvision.id/language_switcher/setlang/english/': () => ({
+      headers: englishHeaders
+    }),
+    'https://www.mncvision.id/schedule/detail/20231119001500154/Blue-Bloods-S13-Ep-19/1': (url, config) => {
+      if (config?.headers?.['Cookie'] === getCookie(indonesiaHeaders)) {
+        return { data: fs.readFileSync(path.resolve(__dirname, '__data__/program_id.html'), 'utf8'), status: 200 }
+      }
+      if (config?.headers?.['Cookie'] === getCookie(englishHeaders)) {
+        return { data: fs.readFileSync(path.resolve(__dirname, '__data__/program_en.html'), 'utf8'), status: 200 }
+      }
+      return { data: '', status: 404 }
+    }
+  })
+})
+
+afterEach(() => {
+  multifetch.clearMocks()
 })
 
 it('can generate valid url', () => {

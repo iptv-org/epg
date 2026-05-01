@@ -2,13 +2,11 @@ const cheerio = require('cheerio')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
-const doFetch = require('@ntlab/sfetch')
-const debug = require('debug')('site:startimestv.com')
+const doFetch = require('../../scripts/core/multifetch')
 
 dayjs.extend(utc)
 dayjs.extend(customParseFormat)
 
-doFetch.setDebugger(debug).setMaxWorker(5)
 
 module.exports = {
   site: 'startimestv.com',
