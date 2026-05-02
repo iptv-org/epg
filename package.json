@@ -72,7 +72,7 @@
     "csv-parser": "^3.2.0",
     "curl-generator": "^0.5.0",
     "dayjs": "^1.11.20",
-    "epg-grabber": "^0.46.1",
+    "epg-grabber": "^0.46.2",
     "epg-parser": "^0.5.0",
     "eslint": "^10.2.1",
     "eslint-config-prettier": "^10.1.8",
@@ -102,7 +102,12 @@
     "tough-cookie": "^6.0.1",
     "tsx": "^4.21.0",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.58.2",
-    "uuid": "^13.0.0"
+    "typescript-eslint": "^8.58.2"
+  },
+  "overrides": {
+    "esbuild": "0.23.1"
+  },
+  "engines": {
+    "node": ">=20.20.0"
   }
 }
