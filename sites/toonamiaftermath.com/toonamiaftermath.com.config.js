@@ -1,19 +1,26 @@
-process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0'
-
 const dayjs = require('dayjs')
 const axios = require('axios')
+const https = require('https')
+const path = require('path')
+const fs = require('fs')
 
 const API_ENDPOINT = 'https://api.toonamiaftermath.com'
 
-module.exports = {
+const config = {
   site: 'toonamiaftermath.com',
   days: 3,
+  request: {
+    httpsAgent: new https.Agent({
+      ca: fs.readFileSync(path.resolve(__dirname, '__data__/certificate.pem'))
+    })
+  },
   async url({ channel, date }) {
     const playlists = await axios
       .get(
         `${API_ENDPOINT}/playlists?scheduleName=${channel.site_id}&startDate=${date
           .add(1, 'd')
-          .toJSON()}&thisWeek=true&weekStartDay=monday`
+          .toJSON()}&thisWeek=true&weekStartDay=monday`,
+        config.request
       )
       .then(r => r.data)
       .catch(console.error)
@@ -58,3 +65,5 @@ function parseEpisode(item) {
 function parseImage(item) {
   return item && item.info && item.info.image ? item.info.image : null
 }
+
+module.exports = config
