@@ -64,7 +64,8 @@ Options:
   -x, --proxy <url>             Use the specified proxy (example: "socks5://username:password@127.0.0.1:1234")
   --days <days>                 Number of days for which the program will be loaded (defaults to the value from the site config)
   --maxConnections <number>     Number of concurrent requests (default: 1)
-  --gzip                        Specifies whether or not to create a compressed version of the guide (default: false)
+  --gzip [path]                 Specifies whether or not to create a compressed version of the guide (default: false)
+  --json [path]                 Specifies whether or not to create a JSON version of the guide (default: false)
   --curl                        Display each request as CURL (default: false)
 ```
 
@@ -197,11 +198,13 @@ docker run \
 -e CRON_SCHEDULE="0 0,12 * * *" \
 -e MAX_CONNECTIONS=10 \
 -e GZIP=true \
+-e JSON=true \
 -e CURL=true \
 -e PROXY="socks5://127.0.0.1:1234" \
 -e DAYS=14 \
 -e TIMEOUT=5 \
 -e DELAY=2 \
+-e RUN_AT_STARTUP=true \
 ghcr.io/iptv-org/epg:master
 ```
 
@@ -210,6 +213,7 @@ ghcr.io/iptv-org/epg:master
 | CRON_SCHEDULE   | A [cron expression](https://crontab.guru/) describing the schedule of the guide loadings (default: "0 0 \* \* \*") |
 | MAX_CONNECTIONS | Limit on the number of concurrent requests (default: 1)                                                            |
 | GZIP            | Boolean value indicating whether to create a compressed version of the guide (default: false)                      |
+| JSON            | Boolean value indicating whether to create a JSON version of the guide (default: false)                            |
 | CURL            | Display each request as CURL (default: false)                                                                      |
 | PROXY           | Use the specified proxy                                                                                            |
 | DAYS            | Number of days for which the guide will be loaded (defaults to the value from the site config)                     |

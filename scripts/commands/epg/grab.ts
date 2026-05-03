@@ -54,7 +54,10 @@ program
       .argParser(parseNumber)
       .env('MAX_CONNECTIONS')
   )
-  .addOption(new Option('--gzip', 'Create a compressed version of the guide as well').env('GZIP'))
+  .addOption(
+    new Option('--gzip [path]', 'Create a compressed version of the guide as well').env('GZIP')
+  )
+  .addOption(new Option('--json [path]', 'Create a JSON version of the guide as well').env('JSON'))
   .addOption(new Option('--curl', 'Display each request as CURL').env('CURL'))
   .addOption(new Option('--debug', 'Enable debug mode').env('DEBUG'))
   .parse()
@@ -63,7 +66,8 @@ interface GrabOptions {
   sites?: string[]
   channels?: string
   output?: string
-  gzip?: boolean
+  gzip?: boolean | string
+  json?: boolean | string
   curl?: boolean
   debug?: boolean
   maxConnections?: number
@@ -109,7 +113,10 @@ async function main() {
   if (typeof options.maxConnections === 'number')
     globalConfig.maxConnections = options.maxConnections
   if (typeof options.curl === 'boolean') globalConfig.curl = options.curl
-  if (typeof options.gzip === 'boolean') globalConfig.gzip = options.gzip
+  if (typeof options.gzip === 'boolean' || typeof options.gzip === 'string')
+    globalConfig.gzip = options.gzip
+  if (typeof options.json === 'boolean' || typeof options.json === 'string')
+    globalConfig.json = options.json
   if (typeof options.debug === 'boolean') globalConfig.debug = options.debug
 
   logger.debug(`config: ${JSON.stringify(globalConfig, null, 2)}`)
@@ -298,6 +305,7 @@ async function main() {
     })
 
   const gzip = globalConfig.gzip || defaultConfig.gzip
+  const json = globalConfig.json || defaultConfig.json
 
   for (const groupKey of channelsGroupedByKey.keys()) {
     const groupChannels = new Collection(channelsGroupedByKey.get(groupKey))
@@ -305,6 +313,7 @@ async function main() {
     const guide = new Guide({
       filepath: groupKey,
       gzip,
+      json,
       channels: groupChannels,
       programs: groupPrograms
     })
