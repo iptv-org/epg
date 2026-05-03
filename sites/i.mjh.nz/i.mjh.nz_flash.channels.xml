@@ -1,37 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="i.mjh.nz" site_id="Flash/epg#afp" lang="en" xmltv_id="">AFP</channel>
-  <channel site="i.mjh.nz" site_id="Flash/epg#al-jazeera" lang="en" xmltv_id="">Al Jazeera</channel>
-  <channel site="i.mjh.nz" site_id="Flash/epg#ausbiz" lang="en" xmltv_id="">Ausbiz</channel>
-  <channel site="i.mjh.nz" site_id="Flash/epg#bbc-world-news" lang="en" xmltv_id="">BBC News</channel>
-  <channel site="i.mjh.nz" site_id="Flash/epg#bloomberg" lang="en" xmltv_id="">Bloomberg Television</channel>
-  <channel site="i.mjh.nz" site_id="Flash/epg#cgtn" lang="en" xmltv_id="">CGTN</channel>
-  <channel site="i.mjh.nz" site_id="Flash/epg#channel-news-asia" lang="en" xmltv_id="">CNA</channel>
-  <channel site="i.mjh.nz" site_id="Flash/epg#cnbc" lang="en" xmltv_id="">CNBC</channel>
-  <channel site="i.mjh.nz" site_id="Flash/epg#cnn" lang="en" xmltv_id="">CNN</channel>
-  <channel site="i.mjh.nz" site_id="Flash/epg#et-now" lang="en" xmltv_id="">ET Now</channel>
-  <channel site="i.mjh.nz" site_id="Flash/epg#fox-news" lang="en" xmltv_id="">Fox News</channel>
-  <channel site="i.mjh.nz" site_id="Flash/epg#fox-sports-news" lang="en" xmltv_id="">Fox Sports News</channel>
-  <channel site="i.mjh.nz" site_id="Flash/epg#france24" lang="en" xmltv_id="">France24</channel>
-  <channel site="i.mjh.nz" site_id="Flash/epg#gb-news" lang="en" xmltv_id="">GB News</channel>
-  <channel site="i.mjh.nz" site_id="Flash/epg#i24-news" lang="en" xmltv_id="">i24 News</channel>
-  <channel site="i.mjh.nz" site_id="Flash/epg#ign" lang="en" xmltv_id="">IGN</channel>
-  <channel site="i.mjh.nz" site_id="Flash/epg#msnbc" lang="en" xmltv_id="">MSNBC</channel>
-  <channel site="i.mjh.nz" site_id="Flash/epg#nbc-news-now" lang="en" xmltv_id="">NBC News Now</channel>
-  <channel site="i.mjh.nz" site_id="Flash/epg#news-com-au" lang="en" xmltv_id="">News.com.au</channel>
-  <channel site="i.mjh.nz" site_id="Flash/epg#newsmax" lang="en" xmltv_id="">Newsmax</channel>
-  <channel site="i.mjh.nz" site_id="Flash/epg#nhk-world" lang="en" xmltv_id="">NHK World</channel>
-  <channel site="i.mjh.nz" site_id="Flash/epg#quicktake" lang="en" xmltv_id="">Bloomberg Originals</channel>
-  <channel site="i.mjh.nz" site_id="Flash/epg#rea" lang="en" xmltv_id="">realestate.com.au</channel>
-  <channel site="i.mjh.nz" site_id="Flash/epg#sbs" lang="en" xmltv_id="">SBS</channel>
-  <channel site="i.mjh.nz" site_id="Flash/epg#sea" lang="en" xmltv_id="">SEA Today</channel>
-  <channel site="i.mjh.nz" site_id="Flash/epg#sky-news-australia" lang="en" xmltv_id="">Sky News Australia</channel>
-  <channel site="i.mjh.nz" site_id="Flash/epg#sky-news-extra" lang="en" xmltv_id="">Sky News Extra</channel>
-  <channel site="i.mjh.nz" site_id="Flash/epg#sky-news-uk" lang="en" xmltv_id="">Sky News UK</channel>
-  <channel site="i.mjh.nz" site_id="Flash/epg#sky-news-weather" lang="en" xmltv_id="">Sky News Weather</channel>
-  <channel site="i.mjh.nz" site_id="Flash/epg#ticker-news" lang="en" xmltv_id="">Ticker News</channel>
-  <channel site="i.mjh.nz" site_id="Flash/epg#times-now" lang="en" xmltv_id="">Times Now</channel>
-  <channel site="i.mjh.nz" site_id="Flash/epg#trt" lang="en" xmltv_id="">TRT</channel>
-  <channel site="i.mjh.nz" site_id="Flash/epg#usa-today" lang="en" xmltv_id="">USA Today</channel>
+  <channel site="i.mjh.nz" site_id="Flash/epg#al-jazeera" lang="en" xmltv_id="AlJazeera.qa@English">Al Jazeera</channel>
+  <channel site="i.mjh.nz" site_id="Flash/epg#ausbiz" lang="en" xmltv_id="AusbizTV.au@SD">Ausbiz</channel>
+  <channel site="i.mjh.nz" site_id="Flash/epg#bloomberg" lang="en" xmltv_id="BloombergTV.us@Australia">Bloomberg Television</channel>
+  <channel site="i.mjh.nz" site_id="Flash/epg#cgtn" lang="en" xmltv_id="CGTN.cn@SD">CGTN</channel>
+  <channel site="i.mjh.nz" site_id="Flash/epg#channel-news-asia" lang="en" xmltv_id="CNA.sg@SD">CNA</channel>
+  <channel site="i.mjh.nz" site_id="Flash/epg#cnbc" lang="en" xmltv_id="CNBCAustralia.au@SD">CNBC</channel>
+  <channel site="i.mjh.nz" site_id="Flash/epg#cnn" lang="en" xmltv_id="CNN.us@SD">CNN</channel>
+  <channel site="i.mjh.nz" site_id="Flash/epg#et-now" lang="en" xmltv_id="ETNow.in@SD">ET Now</channel>
+  <channel site="i.mjh.nz" site_id="Flash/epg#fox-news" lang="en" xmltv_id="FoxNewsChannel.us@SD">Fox News</channel>
+  <channel site="i.mjh.nz" site_id="Flash/epg#fox-sports-news" lang="en" xmltv_id="FoxSportsNews.au@SD">Fox Sports News</channel>
+  <channel site="i.mjh.nz" site_id="Flash/epg#france24" lang="en" xmltv_id="France24.fr@English">France24</channel>
+  <channel site="i.mjh.nz" site_id="Flash/epg#gb-news" lang="en" xmltv_id="GBNews.uk@SD">GB News</channel>
+  <channel site="i.mjh.nz" site_id="Flash/epg#i24-news" lang="en" xmltv_id="i24NEWSEnglishWorld.il@SD">i24 News</channel>
+  <channel site="i.mjh.nz" site_id="Flash/epg#msnbc" lang="en" xmltv_id="MSNOW.us@SD">MSNBC</channel>
+  <channel site="i.mjh.nz" site_id="Flash/epg#nbc-news-now" lang="en" xmltv_id="NBCNewsNOW.us@SD">NBC News Now</channel>
+  <channel site="i.mjh.nz" site_id="Flash/epg#nhk-world" lang="en" xmltv_id="NHKWorldJapan.jp@SD">NHK World</channel>
+  <channel site="i.mjh.nz" site_id="Flash/epg#quicktake" lang="en" xmltv_id="BloombergOriginals.us@SD">Bloomberg Originals</channel>
+  <channel site="i.mjh.nz" site_id="Flash/epg#sky-news-australia" lang="en" xmltv_id="SkyNewsAustralia.au@SD">Sky News Australia</channel>
+  <channel site="i.mjh.nz" site_id="Flash/epg#sky-news-extra" lang="en" xmltv_id="SkyNewsExtra.au@SD">Sky News Extra</channel>
+  <channel site="i.mjh.nz" site_id="Flash/epg#sky-news-uk" lang="en" xmltv_id="SkyNews.uk@SD">Sky News UK</channel>
+  <channel site="i.mjh.nz" site_id="Flash/epg#sky-news-weather" lang="en" xmltv_id="SkyNewsWeather.uk@SD">Sky News Weather</channel>
+  <channel site="i.mjh.nz" site_id="Flash/epg#ticker-news" lang="en" xmltv_id="tickerNews.au@SD">Ticker News</channel>
+  <channel site="i.mjh.nz" site_id="Flash/epg#times-now" lang="en" xmltv_id="TimesNow.in@SD">Times Now</channel>
+  <channel site="i.mjh.nz" site_id="Flash/epg#trt" lang="en" xmltv_id="TRTWorld.tr@SD">TRT</channel>
+  <channel site="i.mjh.nz" site_id="Flash/epg#usa-today" lang="en" xmltv_id="USATODAY.us@SD">USA Today</channel>
   <channel site="i.mjh.nz" site_id="Flash/epg#wall-street-journal" lang="en" xmltv_id="">WSJ</channel>
 </channels>

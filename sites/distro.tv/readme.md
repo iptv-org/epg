@@ -5,7 +5,7 @@ https://distro.tv
 ### Download the guide
 
 ```sh
-npm run grab --- --site=distro.tv
+npm run grab --- --sites=distro.tv
 ```
 
 ### Update channel list (varies based on region/IP)

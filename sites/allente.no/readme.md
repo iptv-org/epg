@@ -12,7 +12,7 @@ se = Sweden
 ### Download the guide
 
 ```sh
-npm run grab --- --site=allente.no
+npm run grab --- --sites=allente.no
 ```
 
 ### Update channel list

@@ -9,13 +9,13 @@ https://nhkworldpremium.com/ja/schedules (Japanese)
 English:
 
 ```sh
-npm run grab --- --site=nhkworldpremium.com --lang=en
+npm run grab --- --sites=nhkworldpremium.com --lang=en
 ```
 
 Japanese:
 
 ```sh
-npm run grab --- --site=nhkworldpremium.com --lang=ja
+npm run grab --- --sites=nhkworldpremium.com --lang=ja
 ```
 
 ### Test

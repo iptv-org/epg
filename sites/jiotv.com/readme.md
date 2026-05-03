@@ -5,7 +5,7 @@ https://www.jiotv.com/tv-guide
 ### Download the guide
 
 ```sh
-npm run grab --- --site=jiotv.com
+npm run grab --- --sites=jiotv.com
 ```
 
 ### Update channel list

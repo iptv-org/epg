@@ -5,7 +5,7 @@ https://www.mytelly.co.uk/tv-guide/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=mytelly.co.uk
+npm run grab --- --sites=mytelly.co.uk
 ```
 
 ### Update channel list

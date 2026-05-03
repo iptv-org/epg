@@ -43,7 +43,7 @@ npm install
 To start the download of the guide, select one of the supported sites from [SITES.md](SITES.md) file and paste its name into the command below:
 
 ```sh
-npm run grab --- --site=example.com
+npm run grab --- --sites=example.com
 ```
 
 Then run it and wait for the guide to finish downloading. When finished, a new `guide.xml` file will appear in the current directory.
@@ -54,7 +54,7 @@ You can also customize the behavior of the script using this options:
 Usage: npm run grab --- [options]
 
 Options:
-  -s, --site <name>             Name of the site to parse
+  -s, --sites <names>           A comma-separated list of the sites to parse
   -c, --channels <path>         Path to *.channels.xml file (required if the "--site" attribute is
                                 not specified)
   -o, --output <path>           Path to output file (default: "guide.xml")
@@ -68,12 +68,26 @@ Options:
   --curl                        Display each request as CURL (default: false)
 ```
 
+### Downloading from multiple sites at once
+
+To do this, simply list the site names separated by commas:
+
+```sh
+npm run grab --- --sites=example1.com,example2.com
+```
+
+To avoid mixing guides from different sites into a single output file, we can also automatically split the output into separate files based on the site name:
+
+```sh
+npm run grab --- --sites=example1.com,example2.com --output=guides/{site}.xml
+```
+
 ### Parallel downloading
 
 By default, the guide for each channel is downloaded one by one, but you can change this behavior by increasing the number of simultaneous requests using the `--maxConnections` attribute:
 
 ```sh
-npm run grab --- --site=example.com --maxConnections=10
+npm run grab --- --sites=example.com --maxConnections=10
 ```
 
 But be aware that under heavy load some sites may start return an error or completely block your access.
@@ -103,7 +117,7 @@ If you want to download guides on a schedule, you can use [cron](https://en.wiki
 To start it, you only need to specify the necessary `grab` command and [cron expression](https://crontab.guru/):
 
 ```sh
-npx chronos --execute="npm run grab --- --site=example.com" --pattern="0 0,12 * * *" --log
+npx chronos --execute="npm run grab --- --sites=example.com" --pattern="0 0,12 * * *" --log
 ```
 
 For more info go to [chronos](https://github.com/freearhey/chronos) documentation.

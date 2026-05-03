@@ -5,7 +5,7 @@ https://telkussa.fi/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=telkussa.fi
+npm run grab --- --sites=telkussa.fi
 ```
 
 ### Update channel list

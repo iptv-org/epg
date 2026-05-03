@@ -3,7 +3,7 @@
 ### Download the guide
 
 ```sh
-npm run grab --- --site=zap2it.com
+npm run grab --- --sites=zap2it.com
 ```
 
 ### Test

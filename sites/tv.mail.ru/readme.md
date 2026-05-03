@@ -5,7 +5,7 @@ https://tv.mail.ru/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=tv.mail.ru
+npm run grab --- --sites=tv.mail.ru
 ```
 
 ### Update channel list

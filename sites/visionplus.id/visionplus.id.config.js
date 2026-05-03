@@ -36,7 +36,7 @@ module.exports = {
           programs.push({
             title,
             description: ev.con && ev.con.loc ? ev.con.loc[0].syn : null,
-            categories: ev.con ? ev.con.categories : null,
+            categories: ev.con ? parseCategories(ev.con.categories) : null,
             season: season ? parseInt(season) : season,
             episode: episode ? parseInt(episode) : episode,
             start: dayjs(ev.sta),
@@ -52,7 +52,9 @@ module.exports = {
     const result = []
     const axios = require('axios')
     const json = await axios
-      .get(`https://www.visionplus.id/managetv/tvinfo/channels/get?language=${languages[lang]}`)
+      .get(`https://www.visionplus.id/managetv/tvinfo/channels/get?language=${
+        languages[lang]
+      }&partition=IndonesiaPartition&region=Indonesia`)
       .then(response => response.data)
       .catch(console.error)
 
@@ -68,4 +70,23 @@ module.exports = {
 
     return result
   }
+}
+
+function parseCategories(categories) {
+  if (Array.isArray(categories)) {
+    const f = s => (s.match(/\//g) || []).length
+    const cat = [...categories]
+      .sort((a, b) => f(a) - f(b))
+      .map(a => a.split('/'))
+    categories = []
+    for (const a of cat) {
+      for (const b of a) {
+        if (!categories.includes(b)) {
+          categories.push(b)
+        }
+      }
+    }
+  }
+
+  return categories
 }

@@ -11,19 +11,19 @@ https://shahid.mbc.net/fr/livestream (French)
 Arabic:
 
 ```sh
-npm run grab --- --site=shahid.mbc.net --lang=ar
+npm run grab --- --sites=shahid.mbc.net --lang=ar
 ```
 
 English:
 
 ```sh
-npm run grab --- --site=shahid.mbc.net --lang=en
+npm run grab --- --sites=shahid.mbc.net --lang=en
 ```
 
 French:
 
 ```sh
-npm run grab --- --site=shahid.mbc.net --lang=fr
+npm run grab --- --sites=shahid.mbc.net --lang=fr
 ```
 
 ### Update channel list

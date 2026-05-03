@@ -5,7 +5,7 @@ https://dtv8.net/tv-listings/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=dtv8.net
+npm run grab --- --sites=dtv8.net
 ```
 
 ### Test

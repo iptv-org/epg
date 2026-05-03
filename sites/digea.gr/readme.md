@@ -5,7 +5,7 @@ https://www.digea.gr/el/tileoptikoi-stathmoi/ilektronikos-odigos-programmatos
 ### Download the guide
 
 ```sh
-npm run grab --- --site=digea.gr
+npm run grab --- --sites=digea.gr
 ```
 
 ### Update channel list

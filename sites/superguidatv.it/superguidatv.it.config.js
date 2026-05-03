@@ -1,12 +1,16 @@
 const cheerio = require('cheerio')
 const axios = require('axios')
-const { DateTime } = require('luxon')
+const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
+dayjs.extend(utc)
+dayjs.extend(timezone)
 
 module.exports = {
   site: 'superguidatv.it',
   days: 3,
   url({ channel, date }) {
-    let diff = date.diff(DateTime.now().toUTC().startOf('day'), 'd')
+    let diff = date.diff(dayjs().utc().startOf('day'), 'd')
     let day = {
       0: 'oggi',
       1: 'domani',
@@ -24,12 +28,12 @@ module.exports = {
       let start = parseStart($item, date)
       if (prev) {
         if (start < prev.start) {
-          start = start.plus({ days: 1 })
-          date = date.add(1, 'd')
+          start = start.add(1, 'day')
+          date = date.add(1, 'day')
         }
         prev.stop = start
       }
-      const stop = start.plus({ minutes: 30 })
+      const stop = start.add(30, 'minute')
       programs.push({
         title: parseTitle($item),
         category: parseCategory($item),
@@ -92,9 +96,7 @@ function parseStart($item, date) {
     .text()
     .trim()
 
-  return DateTime.fromFormat(`${date.format('YYYY-MM-DD')} ${hours}`, 'yyyy-MM-dd HH:mm', {
-    zone: 'Europe/Rome'
-  }).toUTC()
+  return dayjs.tz(`${date.format('YYYY-MM-DD')} ${hours}`, 'YYYY-MM-DD HH:mm', 'Europe/Rome').utc()
 }
 
 function parseTitle($item) {

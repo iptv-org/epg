@@ -5,7 +5,7 @@ https://tvi.iol.pt/guiatv
 ### Download the guide
 
 ```sh
-npm run grab --- --site=tvi.iol.pt
+npm run grab --- --sites=tvi.iol.pt
 ```
 
 ### Test

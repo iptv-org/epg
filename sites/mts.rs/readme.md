@@ -5,7 +5,7 @@ https://mts.rs/tv-vodic/epg
 ### Download the guide
 
 ```sh
-npm run grab --- --site=mts.rs
+npm run grab --- --sites=mts.rs
 ```
 
 ### Update channel list

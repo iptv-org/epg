@@ -1,4 +1,8 @@
-const { DateTime } = require('luxon')
+const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
+dayjs.extend(utc)
+dayjs.extend(timezone)
 
 module.exports = {
   site: 'meo.pt',
@@ -31,8 +35,8 @@ module.exports = {
     if (!items.length) return programs
 
     for (const item of items) {
-      const start = DateTime.fromISO(item.StartDate, { zone: 'Europe/Lisbon' }).toUTC()
-      const stop = DateTime.fromISO(item.EndDate, { zone: 'Europe/Lisbon' }).toUTC()
+      const start = dayjs.tz(item.StartDate, 'Europe/Lisbon').utc()
+      const stop = dayjs.tz(item.EndDate, 'Europe/Lisbon').utc()
 
       const prog = {
         title: item.Title || 'Sem título',
@@ -47,7 +51,7 @@ module.exports = {
       // Construct image URL using the same logic as before if possible
       if (item.Title && channel.site_id) {
         const encodedTitle = encodeURIComponent(item.Title)
-        const image = `https://proxycache.online.meo.pt/eemstb/ImageHandler.ashx?evTitle=${encodedTitle}&chCallLetter=${channel.site_id}&profile=16_9&width=600`
+        const image = `https://cdn-er-images.online.meo.pt/eemstb/ImageHandler.ashx?chCallLetter=${channel.site_id}&progTitle=${encodedTitle}&profile=16_9&profileFallback=false&noFallback=true&appSource=PC_CHROME_PWA&width=1920&csf`
         prog.icon = { src: image }
         prog.image = image
       }

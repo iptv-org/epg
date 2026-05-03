@@ -35,7 +35,7 @@ module.exports = {
   },
   parser({ content, channel }) {
     if (!content || !channel) return []
-    let programs = []
+    let programs
     try {
       const data = JSON.parse(content)
       if (!data.epg || !data.epg[channel.site_id] || !Array.isArray(data.epg[channel.site_id].slots)) {
@@ -55,7 +55,7 @@ module.exports = {
     return programs.filter(p => p.title && p.start.isValid() && p.stop.isValid())
   },
   async channels() {
-    const { data } = await axios.get('https://tv.jsrdn.com/tv_v5/getfeed.php?type=live', {
+    const { data } = await axios.get('https://tv.jsrdn.com/tv_v5/getfeed.php?type=live&geo=QQ', {
       headers: HEADERS
     })
 

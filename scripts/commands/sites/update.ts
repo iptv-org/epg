@@ -40,8 +40,7 @@ async function main() {
         (channel: epgGrabber.Channel) => new Channel(channel.toObject())
       )
 
-      site.totalChannels += channels.count()
-      site.markedChannels += channels.filter((channel: Channel) => channel.xmltv_id).count()
+      site.channels = site.channels.concat(channels)
     }
 
     sites.add(site)
@@ -53,8 +52,13 @@ async function main() {
     rows.add(
       new Collection<HTMLTableDataItem>([
         { value: `<a href="sites/${site.domain}">${site.domain}</a>` },
-        { value: site.totalChannels.toString(), align: 'right' },
-        { value: site.markedChannels.toString(), align: 'right' },
+        {
+          value: site.channels
+            .uniqBy((channel: Channel) => channel.site_id)
+            .count()
+            .toString(),
+          align: 'right'
+        },
         { value: site.getStatus().emoji, align: 'center' },
         { value: site.getIssueUrls().all().join(', ') }
       ])
@@ -66,7 +70,7 @@ async function main() {
     rows,
     new Collection<HTMLTableColumn>([
       { name: 'Site', align: 'left' },
-      { name: 'Channels<br>(total / with xmltv-id)', colspan: 2, align: 'left' },
+      { name: 'Channels', align: 'left' },
       { name: 'Status', align: 'left' },
       { name: 'Notes', align: 'left' }
     ])

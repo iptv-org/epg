@@ -29,10 +29,11 @@ module.exports = {
   },
   parser: function ({ content }) {
     let programs = []
+    const currentTimezone = parseCurrentTimezone(content)
     const items = parseItems(content)
     for (let item of items) {
       const $item = cheerio.load(item)
-      const start = parseStart($item)
+      const start = parseStart($item, currentTimezone)
       const duration = parseDuration($item)
       const stop = start.add(duration, 'm')
       let title = parseTitle($item)
@@ -132,11 +133,11 @@ function parseTitle($item) {
 }
 
 function parseSubTitle($item) {
-  return $item('*').data('episodetitle').toString() || null
+  return $item('*').data('episodetitle')?.toString() || null
 }
 
 function parseYear($item) {
-  return $item('*').data('year').toString() || null
+  return $item('*').data('year')?.toString() || null
 }
 
 function parseCategory($item) {
@@ -174,10 +175,10 @@ function parseRating($item) {
     : null
 }
 
-function parseStart($item) {
+function parseStart($item, currentTimezone) {
   const time = $item('*').data('st')
 
-  return dayjs.tz(time, 'YYYY-MM-DD HH:mm:ss', 'America/New_York')
+  return dayjs.tz(time, 'YYYY-MM-DD HH:mm:ss', currentTimezone)
 }
 
 function parseDuration($item) {
@@ -192,3 +193,11 @@ function parseItems(content) {
 
   return $('.station-listings .list-group-item').toArray()
 }
+
+function parseCurrentTimezone(content) {
+  if (!content) return 'America/New_York'
+  const $ = cheerio.load(content)
+
+  return $('#timezone_selector').val()
+}
+

@@ -5,7 +5,7 @@ https://www.turksatkablo.com.tr/yayin-akisi.aspx
 ### Download the guide
 
 ```sh
-npm run grab --- --site=turksatkablo.com.tr
+npm run grab --- --sites=turksatkablo.com.tr
 ```
 
 ### Update channel list

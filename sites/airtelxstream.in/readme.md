@@ -5,7 +5,7 @@ https://airtelxstream.in
 ### Download the guide
 
 ```sh
-npm run grab --- --site=airtelxstream.in
+npm run grab --- --sites=airtelxstream.in
 ```
 
 ### Update channel list

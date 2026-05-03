@@ -14,7 +14,7 @@ const channel = {
 }
 
 it('can generate valid url', () => {
-  jest.useFakeTimers().setSystemTime(new Date('2025-01-17'))
+  jest.useFakeTimers().setSystemTime(dayjs('2025-01-17').valueOf())
 
   expect(url({ date, channel })).toBe('https://www.tvgids.nl/gids/19-01-2025/npo1')
 })

@@ -5,7 +5,7 @@ https://tv-programme.telecablesat.fr/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=tv-programme.telecablesat.fr
+npm run grab --- --sites=tv-programme.telecablesat.fr
 ```
 
 ### Update channel list

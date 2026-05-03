@@ -1,0 +1,5025 @@
+[
+  {
+    "CodEventoRejilla": 164951929,
+    "ShowId": 63188242,
+    "Id": 4235944,
+    "TipoContenido": "Episodio",
+    "CodSubTipoContenido": null,
+    "SubTipoContenido": null,
+    "TipoComercial": "Subscripcion",
+    "TipoEmision": null,
+    "Ficha": "https://ottcache.dof6.com/movistarplus/webplayer/contents/63188242/details?mediaType=FOTOV&profile=OTT&mode=U7D2&channels=SEXTA&version=8&tlsStream=true&mdrm=true&catalog=catchup&showNonRated=true",
+    "TipoComercial2": {
+      "Tipo": "Subscripcion",
+      "Descripcion": null
+    },
+    "links": [
+      {
+        "rel": "details",
+        "href": "https://ottcache.dof6.com/movistarplus/webplayer/contents/63188242/details?mediaType=FOTOV&profile=OTT&mode=U7D2&channels=SEXTA&version=8&tlsStream=true&mdrm=true&catalog=catchup&showNonRated=true",
+        "id": 63188242
+      },
+      {
+        "rel": "start-over",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63188242&svc=startover",
+        "state": null
+      },
+      {
+        "rel": "catch-up",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63188242&svc=cutv",
+        "state": null
+      },
+      {
+        "rel": "npvr",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63188242&svc=npvr",
+        "state": null
+      },
+      {
+        "rel": "alternate",
+        "href": "appmovistar://movistarplus.es/ficha?id=4235944&referrer=api",
+        "class": "entryPoint",
+        "hints": {
+          "devices": [
+            "android.cell",
+            "iphone",
+            "amazon.tv"
+          ]
+        }
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wl.movistarplus.es/ficha/?id=4235944&referrer=api",
+        "class": "entryPoint",
+        "hints": {
+          "devices": [
+            "web"
+          ]
+        }
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wl.movistarplus.es/play?id=4235944&referrer=api",
+        "class": "play",
+        "hints": {
+          "devices": [
+            "web"
+          ]
+        }
+      }
+    ],
+    "TiposComerciales": [],
+    "ContenedorRef": null,
+    "Directo": false,
+    "Grabable": false,
+    "Titulo": "Especial ARV elecciones Aragón",
+    "Estreno": true,
+    "LenguajeSignos": false,
+    "Nacionalidad": "España",
+    "Lanzable": false,
+    "Duracion": 165,
+    "DuracionEnSegundos": 9900,
+    "GeneroComAntena": "Política",
+    "Imagen": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT4235944",
+    "Imagenes": [
+      {
+        "id": "default",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT4235944"
+      },
+      {
+        "id": "vertical",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT4235944"
+      },
+      {
+        "id": "horizontal",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogoh/MSEXTAT4235944"
+      },
+      {
+        "id": "watch2tgr-start",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/vegtooltip/MSEXTAT4235944.jpg"
+      },
+      {
+        "id": "watch2tgr-end",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/vegend/MSEXTAT4235944.jpg"
+      }
+    ],
+    "TituloSerie": "Especial ARV elecciones Aragón",
+    "Temporada": "(T2026)",
+    "SerialId": 63188236,
+    "TituloEpisodio": "Ep. 1 \"El análisis\"",
+    "TituloVerLinea1": "Especial ARV elecciones Aragón",
+    "TituloVerLinea2": null,
+    "TituloHorLinea1": "Especial ARV elecciones Aragón",
+    "TituloHorLinea2": "T2026 E1 \"El análisis\"",
+    "TituloAccesible": "Especial ARV elecciones Aragón",
+    "Valoracion": null,
+    "TituloNormalizado": "especial-arv-elecciones-aragon",
+    "RutaNormalizada": null,
+    "FechaHoraInicio": "1770587100000",
+    "FechaHoraFin": "1770597000000",
+    "FechaEmision": "2026-02-08",
+    "DuracionParrilla": 90,
+    "DuracionParrillaEnSegundos": 5400,
+    "FormatoVideo": 1,
+    "Disponible": true,
+    "Canal": {
+      "CodCadenaTv": "SEXTA",
+      "Nombre": "La Sexta",
+      "Uid": 444099,
+      "CasId": "4526",
+      "ServiceUid": "717",
+      "ServiceUid2": "4526",
+      "ServiceId": 6,
+      "PuntoReproduccion": "https://lasexta-dash-movistarplus.emisiondof6.com/manifest.mpd",
+      "Logos": [
+        {
+          "id": "default",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DPBLAN/wpmos/SEXTA"
+        },
+        {
+          "id": "default",
+          "state": "over",
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DP/wpmos/SEXTA"
+        },
+        {
+          "id": "bg_dark",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DP/wpepg/SEXTA"
+        },
+        {
+          "id": "bg_light",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DPBLAN/wpepg/SEXTA"
+        },
+        {
+          "id": "nobox_dark",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-NEONEGR/wpmarcaficha/SEXTA"
+        }
+      ],
+      "Dial": 6,
+      "HomeZone": false,
+      "FormatoAudio": null,
+      "FormatoVideo": "HD",
+      "LogoTaquilla": null,
+      "tvProducts": [
+        "BOBFUT2",
+        "DIFUSION",
+        "DO0001",
+        "DO0002",
+        "DO0003",
+        "DO0004",
+        "FUSICE",
+        "MOVFAM",
+        "NDDEM2",
+        "NDDEMO",
+        "PAQINI",
+        "PR01H",
+        "PR01S",
+        "TRIDIS",
+        "TVBACH",
+        "TVBAFU",
+        "TVBALI",
+        "TVCOMU",
+        "UTX00",
+        "UTX0Y",
+        "UTX1H",
+        "UTX1I",
+        "UTX2A",
+        "UTX2C",
+        "UTX2J",
+        "UTX2N",
+        "UTX2P",
+        "UTX2Q",
+        "UTX2R",
+        "UTX32",
+        "UTX37",
+        "UTX38",
+        "UTX4I",
+        "UTX4N",
+        "UTX4P",
+        "UTX5M",
+        "UTX5V",
+        "UTX6C",
+        "UTX7T",
+        "UTX7U",
+        "UTX90",
+        "UTXAH",
+        "UTXC7",
+        "UTXC8",
+        "UTXCL",
+        "UTXCN",
+        "UTXCP",
+        "UTXD0",
+        "UTXD3",
+        "UTXHA",
+        "UTXHB",
+        "UTXHC",
+        "UTXHD",
+        "UTXIC",
+        "UTXIE",
+        "UTXIF",
+        "UTXIH",
+        "UTXII",
+        "UTXIR",
+        "UTXIS"
+      ],
+      "Logo": "https://estatico.emisiondof6.com/recorte/m-DP/wpmos/SEXTA",
+      "HDR": false,
+      "EsVirtual": false,
+      "CDN": "tcdn",
+      "EsSatelite": false,
+      "QMWatermark": false,
+      "Upselling": "PKS--1",
+      "links": []
+    },
+    "BingeWatchingAction": "none",
+    "Seguible": false
+  },
+  {
+    "CodEventoRejilla": 164951931,
+    "ShowId": 63188243,
+    "Id": 856413,
+    "TipoContenido": "Individual",
+    "CodSubTipoContenido": null,
+    "SubTipoContenido": null,
+    "TipoComercial": "Subscripcion",
+    "TipoEmision": null,
+    "Ficha": "https://ottcache.dof6.com/movistarplus/webplayer/contents/63188243/details?mediaType=FOTOV&profile=OTT&mode=U7D2&channels=SEXTA&version=8&tlsStream=true&mdrm=true&catalog=catchup&showNonRated=true",
+    "TipoComercial2": {
+      "Tipo": "Subscripcion",
+      "Descripcion": null
+    },
+    "links": [
+      {
+        "rel": "details",
+        "href": "https://ottcache.dof6.com/movistarplus/webplayer/contents/63188243/details?mediaType=FOTOV&profile=OTT&mode=U7D2&channels=SEXTA&version=8&tlsStream=true&mdrm=true&catalog=catchup&showNonRated=true",
+        "id": 63188243
+      },
+      {
+        "rel": "start-over",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63188243&svc=startover",
+        "state": null
+      },
+      {
+        "rel": "catch-up",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63188243&svc=cutv",
+        "state": null
+      },
+      {
+        "rel": "npvr",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63188243&svc=npvr",
+        "state": null
+      },
+      {
+        "rel": "alternate",
+        "href": "appmovistar://movistarplus.es/ficha?id=856413&referrer=api",
+        "class": "entryPoint",
+        "hints": {
+          "devices": [
+            "android.cell",
+            "iphone",
+            "amazon.tv"
+          ]
+        }
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wl.movistarplus.es/ficha/?id=856413&referrer=api",
+        "class": "entryPoint",
+        "hints": {
+          "devices": [
+            "web"
+          ]
+        }
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wl.movistarplus.es/play?id=856413&referrer=api",
+        "class": "play",
+        "hints": {
+          "devices": [
+            "web"
+          ]
+        }
+      }
+    ],
+    "TiposComerciales": [],
+    "ContenedorRef": null,
+    "Directo": false,
+    "Grabable": false,
+    "Titulo": "Ella no es un ángel",
+    "Estreno": false,
+    "LenguajeSignos": false,
+    "Nacionalidad": "EE.UU",
+    "Lanzable": false,
+    "NivelMoral": {
+      "_id": "08",
+      "Id": "+12",
+      "Logo": "https://voddelivery.emisiondof6.com/images/logos/logos_nivelmoral/12.png"
+    },
+    "Duracion": 80,
+    "DuracionEnSegundos": 4800,
+    "GeneroComAntena": "Cine TV drama",
+    "Imagen": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT856413",
+    "Imagenes": [
+      {
+        "id": "default",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT856413"
+      },
+      {
+        "id": "vertical",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT856413"
+      },
+      {
+        "id": "horizontal",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogoh/MSEXTAT856413"
+      },
+      {
+        "id": "watch2tgr-start",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/vegtooltip/MSEXTAT856413.jpg"
+      },
+      {
+        "id": "watch2tgr-end",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/vegend/MSEXTAT856413.jpg"
+      }
+    ],
+    "TituloSerie": null,
+    "Temporada": null,
+    "TituloVerLinea1": "Ella no es un ángel",
+    "TituloVerLinea2": null,
+    "TituloHorLinea1": "Ella no es un ángel",
+    "TituloAccesible": "Ella no es un ángel",
+    "Valoracion": null,
+    "TituloNormalizado": "ella-no-es-un-angel",
+    "RutaNormalizada": null,
+    "FechaHoraInicio": "1770597000000",
+    "FechaHoraFin": "1770601800000",
+    "FechaEmision": "2026-02-08",
+    "DuracionParrilla": 80,
+    "DuracionParrillaEnSegundos": 4800,
+    "FormatoVideo": 1,
+    "Disponible": true,
+    "Canal": {
+      "CodCadenaTv": "SEXTA",
+      "Nombre": "La Sexta",
+      "Uid": 444099,
+      "CasId": "4526",
+      "ServiceUid": "717",
+      "ServiceUid2": "4526",
+      "ServiceId": 6,
+      "PuntoReproduccion": "https://lasexta-dash-movistarplus.emisiondof6.com/manifest.mpd",
+      "Logos": [
+        {
+          "id": "default",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DPBLAN/wpmos/SEXTA"
+        },
+        {
+          "id": "default",
+          "state": "over",
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DP/wpmos/SEXTA"
+        },
+        {
+          "id": "bg_dark",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DP/wpepg/SEXTA"
+        },
+        {
+          "id": "bg_light",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DPBLAN/wpepg/SEXTA"
+        },
+        {
+          "id": "nobox_dark",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-NEONEGR/wpmarcaficha/SEXTA"
+        }
+      ],
+      "Dial": 6,
+      "HomeZone": false,
+      "FormatoAudio": null,
+      "FormatoVideo": "HD",
+      "LogoTaquilla": null,
+      "tvProducts": [
+        "BOBFUT2",
+        "DIFUSION",
+        "DO0001",
+        "DO0002",
+        "DO0003",
+        "DO0004",
+        "FUSICE",
+        "MOVFAM",
+        "NDDEM2",
+        "NDDEMO",
+        "PAQINI",
+        "PR01H",
+        "PR01S",
+        "TRIDIS",
+        "TVBACH",
+        "TVBAFU",
+        "TVBALI",
+        "TVCOMU",
+        "UTX00",
+        "UTX0Y",
+        "UTX1H",
+        "UTX1I",
+        "UTX2A",
+        "UTX2C",
+        "UTX2J",
+        "UTX2N",
+        "UTX2P",
+        "UTX2Q",
+        "UTX2R",
+        "UTX32",
+        "UTX37",
+        "UTX38",
+        "UTX4I",
+        "UTX4N",
+        "UTX4P",
+        "UTX5M",
+        "UTX5V",
+        "UTX6C",
+        "UTX7T",
+        "UTX7U",
+        "UTX90",
+        "UTXAH",
+        "UTXC7",
+        "UTXC8",
+        "UTXCL",
+        "UTXCN",
+        "UTXCP",
+        "UTXD0",
+        "UTXD3",
+        "UTXHA",
+        "UTXHB",
+        "UTXHC",
+        "UTXHD",
+        "UTXIC",
+        "UTXIE",
+        "UTXIF",
+        "UTXIH",
+        "UTXII",
+        "UTXIR",
+        "UTXIS"
+      ],
+      "Logo": "https://estatico.emisiondof6.com/recorte/m-DP/wpmos/SEXTA",
+      "HDR": false,
+      "EsVirtual": false,
+      "CDN": "tcdn",
+      "EsSatelite": false,
+      "QMWatermark": false,
+      "Upselling": "PKS--1",
+      "links": []
+    },
+    "BingeWatchingAction": "none",
+    "Seguible": false
+  },
+  {
+    "CodEventoRejilla": 164951933,
+    "ShowId": 63178178,
+    "Id": 2057641,
+    "TipoContenido": "Episodio",
+    "CodSubTipoContenido": null,
+    "SubTipoContenido": null,
+    "TipoComercial": "Subscripcion",
+    "TipoEmision": null,
+    "Ficha": "https://ottcache.dof6.com/movistarplus/webplayer/contents/63178178/details?mediaType=FOTOV&profile=OTT&mode=U7D2&channels=SEXTA&version=8&tlsStream=true&mdrm=true&catalog=catchup&showNonRated=true",
+    "TipoComercial2": {
+      "Tipo": "Subscripcion",
+      "Descripcion": null
+    },
+    "links": [
+      {
+        "rel": "details",
+        "href": "https://ottcache.dof6.com/movistarplus/webplayer/contents/63178178/details?mediaType=FOTOV&profile=OTT&mode=U7D2&channels=SEXTA&version=8&tlsStream=true&mdrm=true&catalog=catchup&showNonRated=true",
+        "id": 63178178
+      },
+      {
+        "rel": "start-over",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63178178&svc=startover",
+        "state": null
+      },
+      {
+        "rel": "catch-up",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63178178&svc=cutv",
+        "state": null
+      },
+      {
+        "rel": "npvr",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63178178&svc=npvr",
+        "state": null
+      },
+      {
+        "rel": "alternate",
+        "href": "appmovistar://movistarplus.es/ficha?id=2057641&referrer=api",
+        "class": "entryPoint",
+        "hints": {
+          "devices": [
+            "android.cell",
+            "iphone",
+            "amazon.tv"
+          ]
+        }
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wl.movistarplus.es/ficha/?id=2057641&referrer=api",
+        "class": "entryPoint",
+        "hints": {
+          "devices": [
+            "web"
+          ]
+        }
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wl.movistarplus.es/play?id=2057641&referrer=api",
+        "class": "play",
+        "hints": {
+          "devices": [
+            "web"
+          ]
+        }
+      }
+    ],
+    "TiposComerciales": [],
+    "ContenedorRef": null,
+    "Directo": false,
+    "Grabable": false,
+    "Titulo": "Pokerstars casino",
+    "Estreno": false,
+    "LenguajeSignos": false,
+    "Nacionalidad": "España",
+    "Lanzable": false,
+    "NivelMoral": {
+      "_id": "03",
+      "Id": "+18",
+      "Logo": "https://voddelivery.emisiondof6.com/images/logos/logos_nivelmoral/18.png"
+    },
+    "Duracion": 40,
+    "DuracionEnSegundos": 2400,
+    "GeneroComAntena": "Programa deportes",
+    "Imagen": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT2057641",
+    "Imagenes": [
+      {
+        "id": "default",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT2057641"
+      },
+      {
+        "id": "vertical",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT2057641"
+      },
+      {
+        "id": "horizontal",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogoh/MSEXTAT2057641"
+      },
+      {
+        "id": "watch2tgr-start",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/vegtooltip/MSEXTAT2057641.jpg"
+      },
+      {
+        "id": "watch2tgr-end",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/vegend/MSEXTAT2057641.jpg"
+      }
+    ],
+    "TituloSerie": "Pokerstars casino",
+    "Temporada": "(T1)",
+    "TituloEpisodio": "Pokerstars casino",
+    "TituloVerLinea1": "Pokerstars casino",
+    "TituloVerLinea2": null,
+    "TituloHorLinea1": "Pokerstars casino",
+    "TituloHorLinea2": "T1 Pokerstars casino",
+    "TituloAccesible": "Pokerstars casino",
+    "Valoracion": null,
+    "TituloNormalizado": "pokerstars-casino",
+    "RutaNormalizada": null,
+    "FechaHoraInicio": "1770601800000",
+    "FechaHoraFin": "1770604200000",
+    "FechaEmision": "2026-02-08",
+    "DuracionParrilla": 40,
+    "DuracionParrillaEnSegundos": 2400,
+    "FormatoVideo": 1,
+    "Disponible": true,
+    "Canal": {
+      "CodCadenaTv": "SEXTA",
+      "Nombre": "La Sexta",
+      "Uid": 444099,
+      "CasId": "4526",
+      "ServiceUid": "717",
+      "ServiceUid2": "4526",
+      "ServiceId": 6,
+      "PuntoReproduccion": "https://lasexta-dash-movistarplus.emisiondof6.com/manifest.mpd",
+      "Logos": [
+        {
+          "id": "default",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DPBLAN/wpmos/SEXTA"
+        },
+        {
+          "id": "default",
+          "state": "over",
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DP/wpmos/SEXTA"
+        },
+        {
+          "id": "bg_dark",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DP/wpepg/SEXTA"
+        },
+        {
+          "id": "bg_light",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DPBLAN/wpepg/SEXTA"
+        },
+        {
+          "id": "nobox_dark",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-NEONEGR/wpmarcaficha/SEXTA"
+        }
+      ],
+      "Dial": 6,
+      "HomeZone": false,
+      "FormatoAudio": null,
+      "FormatoVideo": "HD",
+      "LogoTaquilla": null,
+      "tvProducts": [
+        "BOBFUT2",
+        "DIFUSION",
+        "DO0001",
+        "DO0002",
+        "DO0003",
+        "DO0004",
+        "FUSICE",
+        "MOVFAM",
+        "NDDEM2",
+        "NDDEMO",
+        "PAQINI",
+        "PR01H",
+        "PR01S",
+        "TRIDIS",
+        "TVBACH",
+        "TVBAFU",
+        "TVBALI",
+        "TVCOMU",
+        "UTX00",
+        "UTX0Y",
+        "UTX1H",
+        "UTX1I",
+        "UTX2A",
+        "UTX2C",
+        "UTX2J",
+        "UTX2N",
+        "UTX2P",
+        "UTX2Q",
+        "UTX2R",
+        "UTX32",
+        "UTX37",
+        "UTX38",
+        "UTX4I",
+        "UTX4N",
+        "UTX4P",
+        "UTX5M",
+        "UTX5V",
+        "UTX6C",
+        "UTX7T",
+        "UTX7U",
+        "UTX90",
+        "UTXAH",
+        "UTXC7",
+        "UTXC8",
+        "UTXCL",
+        "UTXCN",
+        "UTXCP",
+        "UTXD0",
+        "UTXD3",
+        "UTXHA",
+        "UTXHB",
+        "UTXHC",
+        "UTXHD",
+        "UTXIC",
+        "UTXIE",
+        "UTXIF",
+        "UTXIH",
+        "UTXII",
+        "UTXIR",
+        "UTXIS"
+      ],
+      "Logo": "https://estatico.emisiondof6.com/recorte/m-DP/wpmos/SEXTA",
+      "HDR": false,
+      "EsVirtual": false,
+      "CDN": "tcdn",
+      "EsSatelite": false,
+      "QMWatermark": false,
+      "Upselling": "PKS--1",
+      "links": []
+    },
+    "BingeWatchingAction": "none",
+    "Seguible": false
+  },
+  {
+    "CodEventoRejilla": 164951935,
+    "ShowId": 63188244,
+    "Id": 4190011,
+    "TipoContenido": "Episodio",
+    "CodSubTipoContenido": null,
+    "SubTipoContenido": null,
+    "TipoComercial": "Subscripcion",
+    "TipoEmision": null,
+    "Ficha": "https://ottcache.dof6.com/movistarplus/webplayer/contents/63188244/details?mediaType=FOTOV&profile=OTT&mode=U7D2&channels=SEXTA&version=8&tlsStream=true&mdrm=true&catalog=catchup&showNonRated=true",
+    "TipoComercial2": {
+      "Tipo": "Subscripcion",
+      "Descripcion": null
+    },
+    "links": [
+      {
+        "rel": "details",
+        "href": "https://ottcache.dof6.com/movistarplus/webplayer/contents/63188244/details?mediaType=FOTOV&profile=OTT&mode=U7D2&channels=SEXTA&version=8&tlsStream=true&mdrm=true&catalog=catchup&showNonRated=true",
+        "id": 63188244
+      },
+      {
+        "rel": "start-over",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63188244&svc=startover",
+        "state": null
+      },
+      {
+        "rel": "catch-up",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63188244&svc=cutv",
+        "state": null
+      },
+      {
+        "rel": "npvr",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63188244&svc=npvr",
+        "state": null
+      },
+      {
+        "rel": "alternate",
+        "href": "appmovistar://movistarplus.es/ficha?id=4190011&referrer=api",
+        "class": "entryPoint",
+        "hints": {
+          "devices": [
+            "android.cell",
+            "iphone",
+            "amazon.tv"
+          ]
+        }
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wl.movistarplus.es/ficha/?id=4190011&referrer=api",
+        "class": "entryPoint",
+        "hints": {
+          "devices": [
+            "web"
+          ]
+        }
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wl.movistarplus.es/play?id=4190011&referrer=api",
+        "class": "play",
+        "hints": {
+          "devices": [
+            "web"
+          ]
+        }
+      }
+    ],
+    "TiposComerciales": [],
+    "ContenedorRef": null,
+    "Directo": false,
+    "Grabable": false,
+    "Titulo": "La Noche de Casino Pause & Play",
+    "Estreno": false,
+    "LenguajeSignos": false,
+    "Nacionalidad": "España",
+    "Lanzable": false,
+    "NivelMoral": {
+      "_id": "03",
+      "Id": "+18",
+      "Logo": "https://voddelivery.emisiondof6.com/images/logos/logos_nivelmoral/18.png"
+    },
+    "Duracion": 15,
+    "DuracionEnSegundos": 900,
+    "GeneroComAntena": "Programa deportes",
+    "Imagen": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT4190011",
+    "Imagenes": [
+      {
+        "id": "default",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT4190011"
+      },
+      {
+        "id": "vertical",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT4190011"
+      },
+      {
+        "id": "horizontal",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogoh/MSEXTAT4190011"
+      },
+      {
+        "id": "watch2tgr-start",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/vegtooltip/MSEXTAT4190011.jpg"
+      },
+      {
+        "id": "watch2tgr-end",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/vegend/MSEXTAT4190011.jpg"
+      }
+    ],
+    "TituloSerie": "La Noche de Casino Pause & Play",
+    "Temporada": "(T2025)",
+    "TituloEpisodio": "La Noche de Casino Pause & Play",
+    "TituloVerLinea1": "La Noche de Casino Pause & Play",
+    "TituloVerLinea2": null,
+    "TituloHorLinea1": "La Noche de Casino Pause & Play",
+    "TituloHorLinea2": "T2025 La Noche de Casino Pause & Play",
+    "TituloAccesible": "La Noche de Casino Pause & Play",
+    "Valoracion": null,
+    "TituloNormalizado": "la-noche-de-casino-pause-play",
+    "RutaNormalizada": null,
+    "FechaHoraInicio": "1770604200000",
+    "FechaHoraFin": "1770605100000",
+    "FechaEmision": "2026-02-08",
+    "DuracionParrilla": 15,
+    "DuracionParrillaEnSegundos": 900,
+    "FormatoVideo": 1,
+    "Disponible": true,
+    "Canal": {
+      "CodCadenaTv": "SEXTA",
+      "Nombre": "La Sexta",
+      "Uid": 444099,
+      "CasId": "4526",
+      "ServiceUid": "717",
+      "ServiceUid2": "4526",
+      "ServiceId": 6,
+      "PuntoReproduccion": "https://lasexta-dash-movistarplus.emisiondof6.com/manifest.mpd",
+      "Logos": [
+        {
+          "id": "default",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DPBLAN/wpmos/SEXTA"
+        },
+        {
+          "id": "default",
+          "state": "over",
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DP/wpmos/SEXTA"
+        },
+        {
+          "id": "bg_dark",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DP/wpepg/SEXTA"
+        },
+        {
+          "id": "bg_light",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DPBLAN/wpepg/SEXTA"
+        },
+        {
+          "id": "nobox_dark",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-NEONEGR/wpmarcaficha/SEXTA"
+        }
+      ],
+      "Dial": 6,
+      "HomeZone": false,
+      "FormatoAudio": null,
+      "FormatoVideo": "HD",
+      "LogoTaquilla": null,
+      "tvProducts": [
+        "BOBFUT2",
+        "DIFUSION",
+        "DO0001",
+        "DO0002",
+        "DO0003",
+        "DO0004",
+        "FUSICE",
+        "MOVFAM",
+        "NDDEM2",
+        "NDDEMO",
+        "PAQINI",
+        "PR01H",
+        "PR01S",
+        "TRIDIS",
+        "TVBACH",
+        "TVBAFU",
+        "TVBALI",
+        "TVCOMU",
+        "UTX00",
+        "UTX0Y",
+        "UTX1H",
+        "UTX1I",
+        "UTX2A",
+        "UTX2C",
+        "UTX2J",
+        "UTX2N",
+        "UTX2P",
+        "UTX2Q",
+        "UTX2R",
+        "UTX32",
+        "UTX37",
+        "UTX38",
+        "UTX4I",
+        "UTX4N",
+        "UTX4P",
+        "UTX5M",
+        "UTX5V",
+        "UTX6C",
+        "UTX7T",
+        "UTX7U",
+        "UTX90",
+        "UTXAH",
+        "UTXC7",
+        "UTXC8",
+        "UTXCL",
+        "UTXCN",
+        "UTXCP",
+        "UTXD0",
+        "UTXD3",
+        "UTXHA",
+        "UTXHB",
+        "UTXHC",
+        "UTXHD",
+        "UTXIC",
+        "UTXIE",
+        "UTXIF",
+        "UTXIH",
+        "UTXII",
+        "UTXIR",
+        "UTXIS"
+      ],
+      "Logo": "https://estatico.emisiondof6.com/recorte/m-DP/wpmos/SEXTA",
+      "HDR": false,
+      "EsVirtual": false,
+      "CDN": "tcdn",
+      "EsSatelite": false,
+      "QMWatermark": false,
+      "Upselling": "PKS--1",
+      "links": []
+    },
+    "BingeWatchingAction": "none",
+    "Seguible": false
+  },
+  {
+    "CodEventoRejilla": 164951937,
+    "ShowId": 63178180,
+    "Id": 1254041,
+    "TipoContenido": "Episodio",
+    "CodSubTipoContenido": null,
+    "SubTipoContenido": null,
+    "TipoComercial": "Subscripcion",
+    "TipoEmision": null,
+    "Ficha": "https://ottcache.dof6.com/movistarplus/webplayer/contents/63178180/details?mediaType=FOTOV&profile=OTT&mode=U7D2&channels=SEXTA&version=8&tlsStream=true&mdrm=true&catalog=catchup&showNonRated=true",
+    "TipoComercial2": {
+      "Tipo": "Subscripcion",
+      "Descripcion": null
+    },
+    "links": [
+      {
+        "rel": "details",
+        "href": "https://ottcache.dof6.com/movistarplus/webplayer/contents/63178180/details?mediaType=FOTOV&profile=OTT&mode=U7D2&channels=SEXTA&version=8&tlsStream=true&mdrm=true&catalog=catchup&showNonRated=true",
+        "id": 63178180
+      },
+      {
+        "rel": "start-over",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63178180&svc=startover",
+        "state": null
+      },
+      {
+        "rel": "catch-up",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63178180&svc=cutv",
+        "state": null
+      },
+      {
+        "rel": "npvr",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63178180&svc=npvr",
+        "state": null
+      },
+      {
+        "rel": "alternate",
+        "href": "appmovistar://movistarplus.es/ficha?id=1254041&referrer=api",
+        "class": "entryPoint",
+        "hints": {
+          "devices": [
+            "android.cell",
+            "iphone",
+            "amazon.tv"
+          ]
+        }
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wl.movistarplus.es/ficha/?id=1254041&referrer=api",
+        "class": "entryPoint",
+        "hints": {
+          "devices": [
+            "web"
+          ]
+        }
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wl.movistarplus.es/play?id=1254041&referrer=api",
+        "class": "play",
+        "hints": {
+          "devices": [
+            "web"
+          ]
+        }
+      }
+    ],
+    "TiposComerciales": [],
+    "ContenedorRef": null,
+    "Directo": false,
+    "Grabable": false,
+    "Titulo": "Galería del coleccionista",
+    "Estreno": false,
+    "LenguajeSignos": false,
+    "Nacionalidad": "España",
+    "Lanzable": false,
+    "NivelMoral": {
+      "_id": "01",
+      "Id": "TP",
+      "Logo": "https://voddelivery.emisiondof6.com/images/logos/logos_nivelmoral/tp.png"
+    },
+    "Duracion": 60,
+    "DuracionEnSegundos": 3600,
+    "GeneroComAntena": "Televenta",
+    "Imagen": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT1254041",
+    "Imagenes": [
+      {
+        "id": "default",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT1254041"
+      },
+      {
+        "id": "vertical",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT1254041"
+      },
+      {
+        "id": "horizontal",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogoh/MSEXTAT1254041"
+      },
+      {
+        "id": "watch2tgr-start",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/vegtooltip/MSEXTAT1254041.jpg"
+      },
+      {
+        "id": "watch2tgr-end",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/vegend/MSEXTAT1254041.jpg"
+      }
+    ],
+    "TituloSerie": "Galería del coleccionista",
+    "Temporada": null,
+    "TituloEpisodio": "Galería del coleccionista",
+    "TituloVerLinea1": "Galería del coleccionista",
+    "TituloVerLinea2": null,
+    "TituloHorLinea1": "Galería del coleccionista",
+    "TituloAccesible": "Galería del coleccionista",
+    "Valoracion": null,
+    "TituloNormalizado": "galeria-del-coleccionista",
+    "RutaNormalizada": null,
+    "FechaHoraInicio": "1770605100000",
+    "FechaHoraFin": "1770608700000",
+    "FechaEmision": "2026-02-08",
+    "DuracionParrilla": 60,
+    "DuracionParrillaEnSegundos": 3600,
+    "FormatoVideo": 1,
+    "Disponible": true,
+    "Canal": {
+      "CodCadenaTv": "SEXTA",
+      "Nombre": "La Sexta",
+      "Uid": 444099,
+      "CasId": "4526",
+      "ServiceUid": "717",
+      "ServiceUid2": "4526",
+      "ServiceId": 6,
+      "PuntoReproduccion": "https://lasexta-dash-movistarplus.emisiondof6.com/manifest.mpd",
+      "Logos": [
+        {
+          "id": "default",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DPBLAN/wpmos/SEXTA"
+        },
+        {
+          "id": "default",
+          "state": "over",
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DP/wpmos/SEXTA"
+        },
+        {
+          "id": "bg_dark",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DP/wpepg/SEXTA"
+        },
+        {
+          "id": "bg_light",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DPBLAN/wpepg/SEXTA"
+        },
+        {
+          "id": "nobox_dark",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-NEONEGR/wpmarcaficha/SEXTA"
+        }
+      ],
+      "Dial": 6,
+      "HomeZone": false,
+      "FormatoAudio": null,
+      "FormatoVideo": "HD",
+      "LogoTaquilla": null,
+      "tvProducts": [
+        "BOBFUT2",
+        "DIFUSION",
+        "DO0001",
+        "DO0002",
+        "DO0003",
+        "DO0004",
+        "FUSICE",
+        "MOVFAM",
+        "NDDEM2",
+        "NDDEMO",
+        "PAQINI",
+        "PR01H",
+        "PR01S",
+        "TRIDIS",
+        "TVBACH",
+        "TVBAFU",
+        "TVBALI",
+        "TVCOMU",
+        "UTX00",
+        "UTX0Y",
+        "UTX1H",
+        "UTX1I",
+        "UTX2A",
+        "UTX2C",
+        "UTX2J",
+        "UTX2N",
+        "UTX2P",
+        "UTX2Q",
+        "UTX2R",
+        "UTX32",
+        "UTX37",
+        "UTX38",
+        "UTX4I",
+        "UTX4N",
+        "UTX4P",
+        "UTX5M",
+        "UTX5V",
+        "UTX6C",
+        "UTX7T",
+        "UTX7U",
+        "UTX90",
+        "UTXAH",
+        "UTXC7",
+        "UTXC8",
+        "UTXCL",
+        "UTXCN",
+        "UTXCP",
+        "UTXD0",
+        "UTXD3",
+        "UTXHA",
+        "UTXHB",
+        "UTXHC",
+        "UTXHD",
+        "UTXIC",
+        "UTXIE",
+        "UTXIF",
+        "UTXIH",
+        "UTXII",
+        "UTXIR",
+        "UTXIS"
+      ],
+      "Logo": "https://estatico.emisiondof6.com/recorte/m-DP/wpmos/SEXTA",
+      "HDR": false,
+      "EsVirtual": false,
+      "CDN": "tcdn",
+      "EsSatelite": false,
+      "QMWatermark": false,
+      "Upselling": "PKS--1",
+      "links": []
+    },
+    "BingeWatchingAction": "none",
+    "Seguible": false
+  },
+  {
+    "CodEventoRejilla": 164951939,
+    "ShowId": 63178181,
+    "Id": 3414523,
+    "TipoContenido": "Episodio",
+    "CodSubTipoContenido": null,
+    "SubTipoContenido": null,
+    "TipoComercial": "Subscripcion",
+    "TipoEmision": null,
+    "Ficha": "https://ottcache.dof6.com/movistarplus/webplayer/contents/63178181/details?mediaType=FOTOV&profile=OTT&mode=U7D2&channels=SEXTA&version=8&tlsStream=true&mdrm=true&catalog=catchup&showNonRated=true",
+    "TipoComercial2": {
+      "Tipo": "Subscripcion",
+      "Descripcion": null
+    },
+    "links": [
+      {
+        "rel": "details",
+        "href": "https://ottcache.dof6.com/movistarplus/webplayer/contents/63178181/details?mediaType=FOTOV&profile=OTT&mode=U7D2&channels=SEXTA&version=8&tlsStream=true&mdrm=true&catalog=catchup&showNonRated=true",
+        "id": 63178181
+      },
+      {
+        "rel": "start-over",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63178181&svc=startover",
+        "state": null
+      },
+      {
+        "rel": "catch-up",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63178181&svc=cutv",
+        "state": null
+      },
+      {
+        "rel": "npvr",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63178181&svc=npvr",
+        "state": null
+      },
+      {
+        "rel": "alternate",
+        "href": "appmovistar://movistarplus.es/ficha?id=3414523&referrer=api",
+        "class": "entryPoint",
+        "hints": {
+          "devices": [
+            "android.cell",
+            "iphone",
+            "amazon.tv"
+          ]
+        }
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wl.movistarplus.es/ficha/?id=3414523&referrer=api",
+        "class": "entryPoint",
+        "hints": {
+          "devices": [
+            "web"
+          ]
+        }
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wl.movistarplus.es/play?id=3414523&referrer=api",
+        "class": "play",
+        "hints": {
+          "devices": [
+            "web"
+          ]
+        }
+      }
+    ],
+    "TiposComerciales": [],
+    "ContenedorRef": null,
+    "Directo": false,
+    "Grabable": false,
+    "Titulo": "Venta Prime",
+    "Estreno": false,
+    "LenguajeSignos": false,
+    "Nacionalidad": null,
+    "Lanzable": false,
+    "NivelMoral": {
+      "_id": "01",
+      "Id": "TP",
+      "Logo": "https://voddelivery.emisiondof6.com/images/logos/logos_nivelmoral/tp.png"
+    },
+    "Duracion": 120,
+    "DuracionEnSegundos": 7200,
+    "GeneroComAntena": "Televenta",
+    "Imagen": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT3414523",
+    "Imagenes": [
+      {
+        "id": "default",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT3414523"
+      },
+      {
+        "id": "vertical",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT3414523"
+      },
+      {
+        "id": "horizontal",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogoh/MSEXTAT3414523"
+      },
+      {
+        "id": "watch2tgr-start",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/vegtooltip/MSEXTAT3414523.jpg"
+      },
+      {
+        "id": "watch2tgr-end",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/vegend/MSEXTAT3414523.jpg"
+      }
+    ],
+    "TituloSerie": "Venta Prime",
+    "Temporada": "(T1)",
+    "TituloEpisodio": "Venta Prime",
+    "TituloVerLinea1": "Venta Prime",
+    "TituloVerLinea2": null,
+    "TituloHorLinea1": "Venta Prime",
+    "TituloHorLinea2": "T1 Venta Prime",
+    "TituloAccesible": "Venta Prime",
+    "Valoracion": null,
+    "TituloNormalizado": "venta-prime",
+    "RutaNormalizada": null,
+    "FechaHoraInicio": "1770608700000",
+    "FechaHoraFin": "1770615900000",
+    "FechaEmision": "2026-02-08",
+    "DuracionParrilla": 120,
+    "DuracionParrillaEnSegundos": 7200,
+    "FormatoVideo": 1,
+    "Disponible": true,
+    "Canal": {
+      "CodCadenaTv": "SEXTA",
+      "Nombre": "La Sexta",
+      "Uid": 444099,
+      "CasId": "4526",
+      "ServiceUid": "717",
+      "ServiceUid2": "4526",
+      "ServiceId": 6,
+      "PuntoReproduccion": "https://lasexta-dash-movistarplus.emisiondof6.com/manifest.mpd",
+      "Logos": [
+        {
+          "id": "default",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DPBLAN/wpmos/SEXTA"
+        },
+        {
+          "id": "default",
+          "state": "over",
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DP/wpmos/SEXTA"
+        },
+        {
+          "id": "bg_dark",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DP/wpepg/SEXTA"
+        },
+        {
+          "id": "bg_light",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DPBLAN/wpepg/SEXTA"
+        },
+        {
+          "id": "nobox_dark",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-NEONEGR/wpmarcaficha/SEXTA"
+        }
+      ],
+      "Dial": 6,
+      "HomeZone": false,
+      "FormatoAudio": null,
+      "FormatoVideo": "HD",
+      "LogoTaquilla": null,
+      "tvProducts": [
+        "BOBFUT2",
+        "DIFUSION",
+        "DO0001",
+        "DO0002",
+        "DO0003",
+        "DO0004",
+        "FUSICE",
+        "MOVFAM",
+        "NDDEM2",
+        "NDDEMO",
+        "PAQINI",
+        "PR01H",
+        "PR01S",
+        "TRIDIS",
+        "TVBACH",
+        "TVBAFU",
+        "TVBALI",
+        "TVCOMU",
+        "UTX00",
+        "UTX0Y",
+        "UTX1H",
+        "UTX1I",
+        "UTX2A",
+        "UTX2C",
+        "UTX2J",
+        "UTX2N",
+        "UTX2P",
+        "UTX2Q",
+        "UTX2R",
+        "UTX32",
+        "UTX37",
+        "UTX38",
+        "UTX4I",
+        "UTX4N",
+        "UTX4P",
+        "UTX5M",
+        "UTX5V",
+        "UTX6C",
+        "UTX7T",
+        "UTX7U",
+        "UTX90",
+        "UTXAH",
+        "UTXC7",
+        "UTXC8",
+        "UTXCL",
+        "UTXCN",
+        "UTXCP",
+        "UTXD0",
+        "UTXD3",
+        "UTXHA",
+        "UTXHB",
+        "UTXHC",
+        "UTXHD",
+        "UTXIC",
+        "UTXIE",
+        "UTXIF",
+        "UTXIH",
+        "UTXII",
+        "UTXIR",
+        "UTXIS"
+      ],
+      "Logo": "https://estatico.emisiondof6.com/recorte/m-DP/wpmos/SEXTA",
+      "HDR": false,
+      "EsVirtual": false,
+      "CDN": "tcdn",
+      "EsSatelite": false,
+      "QMWatermark": false,
+      "Upselling": "PKS--1",
+      "links": []
+    },
+    "BingeWatchingAction": "none",
+    "Seguible": false
+  },
+  {
+    "CodEventoRejilla": 164939514,
+    "ShowId": 63182860,
+    "Id": 4123461,
+    "TipoContenido": "Episodio",
+    "CodSubTipoContenido": null,
+    "SubTipoContenido": null,
+    "TipoComercial": "Subscripcion",
+    "TipoEmision": null,
+    "Ficha": "https://ottcache.dof6.com/movistarplus/webplayer/contents/63182860/details?mediaType=FOTOV&profile=OTT&mode=U7D2&channels=SEXTA&version=8&tlsStream=true&mdrm=true&catalog=catchup&showNonRated=true",
+    "TipoComercial2": {
+      "Tipo": "Subscripcion",
+      "Descripcion": null
+    },
+    "links": [
+      {
+        "rel": "details",
+        "href": "https://ottcache.dof6.com/movistarplus/webplayer/contents/63182860/details?mediaType=FOTOV&profile=OTT&mode=U7D2&channels=SEXTA&version=8&tlsStream=true&mdrm=true&catalog=catchup&showNonRated=true",
+        "id": 63182860
+      },
+      {
+        "rel": "start-over",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182860&svc=startover",
+        "state": null
+      },
+      {
+        "rel": "catch-up",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182860&svc=cutv",
+        "state": null
+      },
+      {
+        "rel": "npvr",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182860&svc=npvr",
+        "state": null
+      },
+      {
+        "rel": "alternate",
+        "href": "appmovistar://movistarplus.es/ficha?id=4123461&referrer=api",
+        "class": "entryPoint",
+        "hints": {
+          "devices": [
+            "android.cell",
+            "iphone",
+            "amazon.tv"
+          ]
+        }
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wl.movistarplus.es/ficha/?id=4123461&referrer=api",
+        "class": "entryPoint",
+        "hints": {
+          "devices": [
+            "web"
+          ]
+        }
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wl.movistarplus.es/play?id=4123461&referrer=api",
+        "class": "play",
+        "hints": {
+          "devices": [
+            "web"
+          ]
+        }
+      }
+    ],
+    "TiposComerciales": [],
+    "ContenedorRef": null,
+    "Directo": false,
+    "Grabable": false,
+    "Titulo": "Remescar cosmética al instante",
+    "Estreno": false,
+    "LenguajeSignos": false,
+    "Nacionalidad": null,
+    "Lanzable": false,
+    "NivelMoral": {
+      "_id": "08",
+      "Id": "+12",
+      "Logo": "https://voddelivery.emisiondof6.com/images/logos/logos_nivelmoral/12.png"
+    },
+    "Duracion": 15,
+    "DuracionEnSegundos": 900,
+    "GeneroComAntena": "Televenta",
+    "Imagen": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT4123461",
+    "Imagenes": [
+      {
+        "id": "default",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT4123461"
+      },
+      {
+        "id": "vertical",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT4123461"
+      },
+      {
+        "id": "horizontal",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogoh/MSEXTAT4123461"
+      },
+      {
+        "id": "watch2tgr-start",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/vegtooltip/MSEXTAT4123461.jpg"
+      },
+      {
+        "id": "watch2tgr-end",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/vegend/MSEXTAT4123461.jpg"
+      }
+    ],
+    "TituloSerie": "Remescar cosmética al instante",
+    "Temporada": "(T1)",
+    "SerialId": 56792871,
+    "TituloEpisodio": "\"Episodio 19\"",
+    "TituloVerLinea1": "Remescar cosmética al instante",
+    "TituloVerLinea2": null,
+    "TituloHorLinea1": "Remescar cosmética al instante",
+    "TituloHorLinea2": "T1 \"Episodio 19\"",
+    "TituloAccesible": "Remescar cosmética al instante",
+    "Valoracion": null,
+    "TituloNormalizado": "remescar-cosmetica-al-instante",
+    "RutaNormalizada": null,
+    "FechaHoraInicio": "1770615900000",
+    "FechaHoraFin": "1770616800000",
+    "FechaEmision": "2026-02-09",
+    "DuracionParrilla": 15,
+    "DuracionParrillaEnSegundos": 900,
+    "FormatoVideo": 1,
+    "Disponible": true,
+    "Canal": {
+      "CodCadenaTv": "SEXTA",
+      "Nombre": "La Sexta",
+      "Uid": 444099,
+      "CasId": "4526",
+      "ServiceUid": "717",
+      "ServiceUid2": "4526",
+      "ServiceId": 6,
+      "PuntoReproduccion": "https://lasexta-dash-movistarplus.emisiondof6.com/manifest.mpd",
+      "Logos": [
+        {
+          "id": "default",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DPBLAN/wpmos/SEXTA"
+        },
+        {
+          "id": "default",
+          "state": "over",
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DP/wpmos/SEXTA"
+        },
+        {
+          "id": "bg_dark",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DP/wpepg/SEXTA"
+        },
+        {
+          "id": "bg_light",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DPBLAN/wpepg/SEXTA"
+        },
+        {
+          "id": "nobox_dark",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-NEONEGR/wpmarcaficha/SEXTA"
+        }
+      ],
+      "Dial": 6,
+      "HomeZone": false,
+      "FormatoAudio": null,
+      "FormatoVideo": "HD",
+      "LogoTaquilla": null,
+      "tvProducts": [
+        "BOBFUT2",
+        "DIFUSION",
+        "DO0001",
+        "DO0002",
+        "DO0003",
+        "DO0004",
+        "FUSICE",
+        "MOVFAM",
+        "NDDEM2",
+        "NDDEMO",
+        "PAQINI",
+        "PR01H",
+        "PR01S",
+        "TRIDIS",
+        "TVBACH",
+        "TVBAFU",
+        "TVBALI",
+        "TVCOMU",
+        "UTX00",
+        "UTX0Y",
+        "UTX1H",
+        "UTX1I",
+        "UTX2A",
+        "UTX2C",
+        "UTX2J",
+        "UTX2N",
+        "UTX2P",
+        "UTX2Q",
+        "UTX2R",
+        "UTX32",
+        "UTX37",
+        "UTX38",
+        "UTX4I",
+        "UTX4N",
+        "UTX4P",
+        "UTX5M",
+        "UTX5V",
+        "UTX6C",
+        "UTX7T",
+        "UTX7U",
+        "UTX90",
+        "UTXAH",
+        "UTXC7",
+        "UTXC8",
+        "UTXCL",
+        "UTXCN",
+        "UTXCP",
+        "UTXD0",
+        "UTXD3",
+        "UTXHA",
+        "UTXHB",
+        "UTXHC",
+        "UTXHD",
+        "UTXIC",
+        "UTXIE",
+        "UTXIF",
+        "UTXIH",
+        "UTXII",
+        "UTXIR",
+        "UTXIS"
+      ],
+      "Logo": "https://estatico.emisiondof6.com/recorte/m-DP/wpmos/SEXTA",
+      "HDR": false,
+      "EsVirtual": false,
+      "CDN": "tcdn",
+      "EsSatelite": false,
+      "QMWatermark": false,
+      "Upselling": "PKS--1",
+      "links": []
+    },
+    "BingeWatchingAction": "none",
+    "Seguible": false
+  },
+  {
+    "CodEventoRejilla": 164939516,
+    "ShowId": 63182861,
+    "Id": 4236919,
+    "TipoContenido": "Episodio",
+    "CodSubTipoContenido": null,
+    "SubTipoContenido": null,
+    "TipoComercial": "Subscripcion",
+    "TipoEmision": null,
+    "Ficha": "https://ottcache.dof6.com/movistarplus/webplayer/contents/63182861/details?mediaType=FOTOV&profile=OTT&mode=U7D2&channels=SEXTA&version=8&tlsStream=true&mdrm=true&catalog=catchup&showNonRated=true",
+    "TipoComercial2": {
+      "Tipo": "Subscripcion",
+      "Descripcion": null
+    },
+    "links": [
+      {
+        "rel": "details",
+        "href": "https://ottcache.dof6.com/movistarplus/webplayer/contents/63182861/details?mediaType=FOTOV&profile=OTT&mode=U7D2&channels=SEXTA&version=8&tlsStream=true&mdrm=true&catalog=catchup&showNonRated=true",
+        "id": 63182861
+      },
+      {
+        "rel": "start-over",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182861&svc=startover",
+        "state": null
+      },
+      {
+        "rel": "catch-up",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182861&svc=cutv",
+        "state": null
+      },
+      {
+        "rel": "npvr",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182861&svc=npvr",
+        "state": null
+      },
+      {
+        "rel": "alternate",
+        "href": "appmovistar://movistarplus.es/ficha?id=4236919&referrer=api",
+        "class": "entryPoint",
+        "hints": {
+          "devices": [
+            "android.cell",
+            "iphone",
+            "amazon.tv"
+          ]
+        }
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wl.movistarplus.es/ficha/?id=4236919&referrer=api",
+        "class": "entryPoint",
+        "hints": {
+          "devices": [
+            "web"
+          ]
+        }
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wl.movistarplus.es/play?id=4236919&referrer=api",
+        "class": "play",
+        "hints": {
+          "devices": [
+            "web"
+          ]
+        }
+      }
+    ],
+    "TiposComerciales": [],
+    "ContenedorRef": null,
+    "Directo": false,
+    "Grabable": false,
+    "Titulo": "Previo Aruser@s",
+    "Estreno": true,
+    "LenguajeSignos": false,
+    "Nacionalidad": "España",
+    "Lanzable": false,
+    "NivelMoral": {
+      "_id": "06",
+      "Id": "+7",
+      "Logo": "https://voddelivery.emisiondof6.com/images/logos/logos_nivelmoral/7.png"
+    },
+    "Duracion": 120,
+    "DuracionEnSegundos": 7200,
+    "GeneroComAntena": "Humor",
+    "Imagen": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT4236919",
+    "Imagenes": [
+      {
+        "id": "default",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT4236919"
+      },
+      {
+        "id": "vertical",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT4236919"
+      },
+      {
+        "id": "horizontal",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogoh/MSEXTAT4236919"
+      },
+      {
+        "id": "watch2tgr-start",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/vegtooltip/MSEXTAT4236919.jpg"
+      },
+      {
+        "id": "watch2tgr-end",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/vegend/MSEXTAT4236919.jpg"
+      }
+    ],
+    "TituloSerie": "Previo Aruser@s",
+    "Temporada": "(T8)",
+    "SerialId": 62209576,
+    "TituloEpisodio": "\"Episodio 1590\"",
+    "TituloVerLinea1": "Previo Aruser@s",
+    "TituloVerLinea2": null,
+    "TituloHorLinea1": "Previo Aruser@s",
+    "TituloHorLinea2": "T8 \"Episodio 1590\"",
+    "TituloAccesible": "Previo Aruser@s",
+    "Valoracion": null,
+    "TituloNormalizado": "previo-aruser-s",
+    "RutaNormalizada": null,
+    "FechaHoraInicio": "1770616800000",
+    "FechaHoraFin": "1770624000000",
+    "FechaEmision": "2026-02-09",
+    "DuracionParrilla": 120,
+    "DuracionParrillaEnSegundos": 7200,
+    "FormatoVideo": 1,
+    "Disponible": true,
+    "Canal": {
+      "CodCadenaTv": "SEXTA",
+      "Nombre": "La Sexta",
+      "Uid": 444099,
+      "CasId": "4526",
+      "ServiceUid": "717",
+      "ServiceUid2": "4526",
+      "ServiceId": 6,
+      "PuntoReproduccion": "https://lasexta-dash-movistarplus.emisiondof6.com/manifest.mpd",
+      "Logos": [
+        {
+          "id": "default",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DPBLAN/wpmos/SEXTA"
+        },
+        {
+          "id": "default",
+          "state": "over",
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DP/wpmos/SEXTA"
+        },
+        {
+          "id": "bg_dark",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DP/wpepg/SEXTA"
+        },
+        {
+          "id": "bg_light",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DPBLAN/wpepg/SEXTA"
+        },
+        {
+          "id": "nobox_dark",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-NEONEGR/wpmarcaficha/SEXTA"
+        }
+      ],
+      "Dial": 6,
+      "HomeZone": false,
+      "FormatoAudio": null,
+      "FormatoVideo": "HD",
+      "LogoTaquilla": null,
+      "tvProducts": [
+        "BOBFUT2",
+        "DIFUSION",
+        "DO0001",
+        "DO0002",
+        "DO0003",
+        "DO0004",
+        "FUSICE",
+        "MOVFAM",
+        "NDDEM2",
+        "NDDEMO",
+        "PAQINI",
+        "PR01H",
+        "PR01S",
+        "TRIDIS",
+        "TVBACH",
+        "TVBAFU",
+        "TVBALI",
+        "TVCOMU",
+        "UTX00",
+        "UTX0Y",
+        "UTX1H",
+        "UTX1I",
+        "UTX2A",
+        "UTX2C",
+        "UTX2J",
+        "UTX2N",
+        "UTX2P",
+        "UTX2Q",
+        "UTX2R",
+        "UTX32",
+        "UTX37",
+        "UTX38",
+        "UTX4I",
+        "UTX4N",
+        "UTX4P",
+        "UTX5M",
+        "UTX5V",
+        "UTX6C",
+        "UTX7T",
+        "UTX7U",
+        "UTX90",
+        "UTXAH",
+        "UTXC7",
+        "UTXC8",
+        "UTXCL",
+        "UTXCN",
+        "UTXCP",
+        "UTXD0",
+        "UTXD3",
+        "UTXHA",
+        "UTXHB",
+        "UTXHC",
+        "UTXHD",
+        "UTXIC",
+        "UTXIE",
+        "UTXIF",
+        "UTXIH",
+        "UTXII",
+        "UTXIR",
+        "UTXIS"
+      ],
+      "Logo": "https://estatico.emisiondof6.com/recorte/m-DP/wpmos/SEXTA",
+      "HDR": false,
+      "EsVirtual": false,
+      "CDN": "tcdn",
+      "EsSatelite": false,
+      "QMWatermark": false,
+      "Upselling": "PKS--1",
+      "links": []
+    },
+    "BingeWatchingAction": "none",
+    "Seguible": false
+  },
+  {
+    "CodEventoRejilla": 164939518,
+    "ShowId": 63182862,
+    "Id": 4236909,
+    "TipoContenido": "Episodio",
+    "CodSubTipoContenido": null,
+    "SubTipoContenido": null,
+    "TipoComercial": "Subscripcion",
+    "TipoEmision": null,
+    "Ficha": "https://ottcache.dof6.com/movistarplus/webplayer/contents/63182862/details?mediaType=FOTOV&profile=OTT&mode=U7D2&channels=SEXTA&version=8&tlsStream=true&mdrm=true&catalog=catchup&showNonRated=true",
+    "TipoComercial2": {
+      "Tipo": "Subscripcion",
+      "Descripcion": null
+    },
+    "links": [
+      {
+        "rel": "details",
+        "href": "https://ottcache.dof6.com/movistarplus/webplayer/contents/63182862/details?mediaType=FOTOV&profile=OTT&mode=U7D2&channels=SEXTA&version=8&tlsStream=true&mdrm=true&catalog=catchup&showNonRated=true",
+        "id": 63182862
+      },
+      {
+        "rel": "start-over",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182862&svc=startover",
+        "state": null
+      },
+      {
+        "rel": "catch-up",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182862&svc=cutv",
+        "state": null
+      },
+      {
+        "rel": "npvr",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182862&svc=npvr",
+        "state": null
+      },
+      {
+        "rel": "alternate",
+        "href": "appmovistar://movistarplus.es/ficha?id=4236909&referrer=api",
+        "class": "entryPoint",
+        "hints": {
+          "devices": [
+            "android.cell",
+            "iphone",
+            "amazon.tv"
+          ]
+        }
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wl.movistarplus.es/ficha/?id=4236909&referrer=api",
+        "class": "entryPoint",
+        "hints": {
+          "devices": [
+            "web"
+          ]
+        }
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wl.movistarplus.es/play?id=4236909&referrer=api",
+        "class": "play",
+        "hints": {
+          "devices": [
+            "web"
+          ]
+        }
+      }
+    ],
+    "TiposComerciales": [],
+    "ContenedorRef": null,
+    "Directo": false,
+    "Grabable": false,
+    "Titulo": "Aruser@s",
+    "Estreno": true,
+    "LenguajeSignos": false,
+    "Nacionalidad": "España",
+    "Lanzable": false,
+    "NivelMoral": {
+      "_id": "09",
+      "Id": "+16",
+      "Logo": "https://voddelivery.emisiondof6.com/images/logos/logos_nivelmoral/16.png"
+    },
+    "Duracion": 120,
+    "DuracionEnSegundos": 7200,
+    "GeneroComAntena": "Humor",
+    "Imagen": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT4236909",
+    "Imagenes": [
+      {
+        "id": "default",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT4236909"
+      },
+      {
+        "id": "vertical",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT4236909"
+      },
+      {
+        "id": "horizontal",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogoh/MSEXTAT4236909"
+      },
+      {
+        "id": "watch2tgr-start",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/vegtooltip/MSEXTAT4236909.jpg"
+      },
+      {
+        "id": "watch2tgr-end",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/vegend/MSEXTAT4236909.jpg"
+      }
+    ],
+    "TituloSerie": "Aruser@s",
+    "Temporada": "(T8)",
+    "SerialId": 62209577,
+    "TituloEpisodio": "\"Episodio 1590\"",
+    "TituloVerLinea1": "Aruser@s",
+    "TituloVerLinea2": null,
+    "TituloHorLinea1": "Aruser@s",
+    "TituloHorLinea2": "T8 \"Episodio 1590\"",
+    "TituloAccesible": "Aruser@s",
+    "Valoracion": null,
+    "TituloNormalizado": "aruser-s",
+    "RutaNormalizada": null,
+    "FechaHoraInicio": "1770624000000",
+    "FechaHoraFin": "1770631200000",
+    "FechaEmision": "2026-02-09",
+    "DuracionParrilla": 120,
+    "DuracionParrillaEnSegundos": 7200,
+    "FormatoVideo": 1,
+    "Disponible": true,
+    "Canal": {
+      "CodCadenaTv": "SEXTA",
+      "Nombre": "La Sexta",
+      "Uid": 444099,
+      "CasId": "4526",
+      "ServiceUid": "717",
+      "ServiceUid2": "4526",
+      "ServiceId": 6,
+      "PuntoReproduccion": "https://lasexta-dash-movistarplus.emisiondof6.com/manifest.mpd",
+      "Logos": [
+        {
+          "id": "default",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DPBLAN/wpmos/SEXTA"
+        },
+        {
+          "id": "default",
+          "state": "over",
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DP/wpmos/SEXTA"
+        },
+        {
+          "id": "bg_dark",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DP/wpepg/SEXTA"
+        },
+        {
+          "id": "bg_light",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DPBLAN/wpepg/SEXTA"
+        },
+        {
+          "id": "nobox_dark",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-NEONEGR/wpmarcaficha/SEXTA"
+        }
+      ],
+      "Dial": 6,
+      "HomeZone": false,
+      "FormatoAudio": null,
+      "FormatoVideo": "HD",
+      "LogoTaquilla": null,
+      "tvProducts": [
+        "BOBFUT2",
+        "DIFUSION",
+        "DO0001",
+        "DO0002",
+        "DO0003",
+        "DO0004",
+        "FUSICE",
+        "MOVFAM",
+        "NDDEM2",
+        "NDDEMO",
+        "PAQINI",
+        "PR01H",
+        "PR01S",
+        "TRIDIS",
+        "TVBACH",
+        "TVBAFU",
+        "TVBALI",
+        "TVCOMU",
+        "UTX00",
+        "UTX0Y",
+        "UTX1H",
+        "UTX1I",
+        "UTX2A",
+        "UTX2C",
+        "UTX2J",
+        "UTX2N",
+        "UTX2P",
+        "UTX2Q",
+        "UTX2R",
+        "UTX32",
+        "UTX37",
+        "UTX38",
+        "UTX4I",
+        "UTX4N",
+        "UTX4P",
+        "UTX5M",
+        "UTX5V",
+        "UTX6C",
+        "UTX7T",
+        "UTX7U",
+        "UTX90",
+        "UTXAH",
+        "UTXC7",
+        "UTXC8",
+        "UTXCL",
+        "UTXCN",
+        "UTXCP",
+        "UTXD0",
+        "UTXD3",
+        "UTXHA",
+        "UTXHB",
+        "UTXHC",
+        "UTXHD",
+        "UTXIC",
+        "UTXIE",
+        "UTXIF",
+        "UTXIH",
+        "UTXII",
+        "UTXIR",
+        "UTXIS"
+      ],
+      "Logo": "https://estatico.emisiondof6.com/recorte/m-DP/wpmos/SEXTA",
+      "HDR": false,
+      "EsVirtual": false,
+      "CDN": "tcdn",
+      "EsSatelite": false,
+      "QMWatermark": false,
+      "Upselling": "PKS--1",
+      "links": []
+    },
+    "BingeWatchingAction": "none",
+    "Seguible": false
+  },
+  {
+    "CodEventoRejilla": 164939520,
+    "ShowId": 63182863,
+    "Id": 4236899,
+    "TipoContenido": "Episodio",
+    "CodSubTipoContenido": null,
+    "SubTipoContenido": null,
+    "TipoComercial": "Subscripcion",
+    "TipoEmision": null,
+    "Ficha": "https://ottcache.dof6.com/movistarplus/webplayer/contents/63182863/details?mediaType=FOTOV&profile=OTT&mode=U7D2&channels=SEXTA&version=8&tlsStream=true&mdrm=true&catalog=catchup&showNonRated=true",
+    "TipoComercial2": {
+      "Tipo": "Subscripcion",
+      "Descripcion": null
+    },
+    "links": [
+      {
+        "rel": "details",
+        "href": "https://ottcache.dof6.com/movistarplus/webplayer/contents/63182863/details?mediaType=FOTOV&profile=OTT&mode=U7D2&channels=SEXTA&version=8&tlsStream=true&mdrm=true&catalog=catchup&showNonRated=true",
+        "id": 63182863
+      },
+      {
+        "rel": "start-over",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182863&svc=startover",
+        "state": null
+      },
+      {
+        "rel": "catch-up",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182863&svc=cutv",
+        "state": null
+      },
+      {
+        "rel": "npvr",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182863&svc=npvr",
+        "state": null
+      },
+      {
+        "rel": "alternate",
+        "href": "appmovistar://movistarplus.es/ficha?id=4236899&referrer=api",
+        "class": "entryPoint",
+        "hints": {
+          "devices": [
+            "android.cell",
+            "iphone",
+            "amazon.tv"
+          ]
+        }
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wl.movistarplus.es/ficha/?id=4236899&referrer=api",
+        "class": "entryPoint",
+        "hints": {
+          "devices": [
+            "web"
+          ]
+        }
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wl.movistarplus.es/play?id=4236899&referrer=api",
+        "class": "play",
+        "hints": {
+          "devices": [
+            "web"
+          ]
+        }
+      }
+    ],
+    "TiposComerciales": [],
+    "ContenedorRef": null,
+    "Directo": false,
+    "Grabable": false,
+    "Titulo": "Al rojo vivo",
+    "Estreno": true,
+    "LenguajeSignos": false,
+    "Nacionalidad": "España",
+    "Lanzable": false,
+    "NivelMoral": {
+      "_id": "09",
+      "Id": "+16",
+      "Logo": "https://voddelivery.emisiondof6.com/images/logos/logos_nivelmoral/16.png"
+    },
+    "Duracion": 190,
+    "DuracionEnSegundos": 11400,
+    "GeneroComAntena": "Debate",
+    "Imagen": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT4236899",
+    "Imagenes": [
+      {
+        "id": "default",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT4236899"
+      },
+      {
+        "id": "vertical",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT4236899"
+      },
+      {
+        "id": "horizontal",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogoh/MSEXTAT4236899"
+      },
+      {
+        "id": "watch2tgr-start",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/vegtooltip/MSEXTAT4236899.jpg"
+      },
+      {
+        "id": "watch2tgr-end",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/vegend/MSEXTAT4236899.jpg"
+      }
+    ],
+    "TituloSerie": "Al rojo vivo",
+    "Temporada": "(T25/26)",
+    "SerialId": 62209578,
+    "TituloEpisodio": "\"Episodio 3780\"",
+    "TituloVerLinea1": "Al rojo vivo",
+    "TituloVerLinea2": null,
+    "TituloHorLinea1": "Al rojo vivo",
+    "TituloHorLinea2": "T25/26 \"Episodio 3780\"",
+    "TituloAccesible": "Al rojo vivo",
+    "Valoracion": null,
+    "TituloNormalizado": "al-rojo-vivo",
+    "RutaNormalizada": null,
+    "FechaHoraInicio": "1770631200000",
+    "FechaHoraFin": "1770642600000",
+    "FechaEmision": "2026-02-09",
+    "DuracionParrilla": 190,
+    "DuracionParrillaEnSegundos": 11400,
+    "FormatoVideo": 1,
+    "Disponible": true,
+    "Canal": {
+      "CodCadenaTv": "SEXTA",
+      "Nombre": "La Sexta",
+      "Uid": 444099,
+      "CasId": "4526",
+      "ServiceUid": "717",
+      "ServiceUid2": "4526",
+      "ServiceId": 6,
+      "PuntoReproduccion": "https://lasexta-dash-movistarplus.emisiondof6.com/manifest.mpd",
+      "Logos": [
+        {
+          "id": "default",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DPBLAN/wpmos/SEXTA"
+        },
+        {
+          "id": "default",
+          "state": "over",
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DP/wpmos/SEXTA"
+        },
+        {
+          "id": "bg_dark",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DP/wpepg/SEXTA"
+        },
+        {
+          "id": "bg_light",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DPBLAN/wpepg/SEXTA"
+        },
+        {
+          "id": "nobox_dark",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-NEONEGR/wpmarcaficha/SEXTA"
+        }
+      ],
+      "Dial": 6,
+      "HomeZone": false,
+      "FormatoAudio": null,
+      "FormatoVideo": "HD",
+      "LogoTaquilla": null,
+      "tvProducts": [
+        "BOBFUT2",
+        "DIFUSION",
+        "DO0001",
+        "DO0002",
+        "DO0003",
+        "DO0004",
+        "FUSICE",
+        "MOVFAM",
+        "NDDEM2",
+        "NDDEMO",
+        "PAQINI",
+        "PR01H",
+        "PR01S",
+        "TRIDIS",
+        "TVBACH",
+        "TVBAFU",
+        "TVBALI",
+        "TVCOMU",
+        "UTX00",
+        "UTX0Y",
+        "UTX1H",
+        "UTX1I",
+        "UTX2A",
+        "UTX2C",
+        "UTX2J",
+        "UTX2N",
+        "UTX2P",
+        "UTX2Q",
+        "UTX2R",
+        "UTX32",
+        "UTX37",
+        "UTX38",
+        "UTX4I",
+        "UTX4N",
+        "UTX4P",
+        "UTX5M",
+        "UTX5V",
+        "UTX6C",
+        "UTX7T",
+        "UTX7U",
+        "UTX90",
+        "UTXAH",
+        "UTXC7",
+        "UTXC8",
+        "UTXCL",
+        "UTXCN",
+        "UTXCP",
+        "UTXD0",
+        "UTXD3",
+        "UTXHA",
+        "UTXHB",
+        "UTXHC",
+        "UTXHD",
+        "UTXIC",
+        "UTXIE",
+        "UTXIF",
+        "UTXIH",
+        "UTXII",
+        "UTXIR",
+        "UTXIS"
+      ],
+      "Logo": "https://estatico.emisiondof6.com/recorte/m-DP/wpmos/SEXTA",
+      "HDR": false,
+      "EsVirtual": false,
+      "CDN": "tcdn",
+      "EsSatelite": false,
+      "QMWatermark": false,
+      "Upselling": "PKS--1",
+      "links": []
+    },
+    "BingeWatchingAction": "none",
+    "Seguible": false
+  },
+  {
+    "CodEventoRejilla": 164939522,
+    "ShowId": 63182864,
+    "Id": 575379,
+    "TipoContenido": "Episodio",
+    "CodSubTipoContenido": null,
+    "SubTipoContenido": null,
+    "TipoComercial": "Subscripcion",
+    "TipoEmision": null,
+    "Ficha": "https://ottcache.dof6.com/movistarplus/webplayer/contents/63182864/details?mediaType=FOTOV&profile=OTT&mode=U7D2&channels=SEXTA&version=8&tlsStream=true&mdrm=true&catalog=catchup&showNonRated=true",
+    "TipoComercial2": {
+      "Tipo": "Subscripcion",
+      "Descripcion": null
+    },
+    "links": [
+      {
+        "rel": "details",
+        "href": "https://ottcache.dof6.com/movistarplus/webplayer/contents/63182864/details?mediaType=FOTOV&profile=OTT&mode=U7D2&channels=SEXTA&version=8&tlsStream=true&mdrm=true&catalog=catchup&showNonRated=true",
+        "id": 63182864
+      },
+      {
+        "rel": "start-over",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182864&svc=startover",
+        "state": null
+      },
+      {
+        "rel": "catch-up",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182864&svc=cutv",
+        "state": null
+      },
+      {
+        "rel": "npvr",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182864&svc=npvr",
+        "state": null
+      },
+      {
+        "rel": "alternate",
+        "href": "appmovistar://movistarplus.es/ficha?id=575379&referrer=api",
+        "class": "entryPoint",
+        "hints": {
+          "devices": [
+            "android.cell",
+            "iphone",
+            "amazon.tv"
+          ]
+        }
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wl.movistarplus.es/ficha/?id=575379&referrer=api",
+        "class": "entryPoint",
+        "hints": {
+          "devices": [
+            "web"
+          ]
+        }
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wl.movistarplus.es/play?id=575379&referrer=api",
+        "class": "play",
+        "hints": {
+          "devices": [
+            "web"
+          ]
+        }
+      }
+    ],
+    "TiposComerciales": [],
+    "ContenedorRef": null,
+    "Directo": false,
+    "Grabable": false,
+    "Titulo": "laSexta Noticias",
+    "Estreno": false,
+    "LenguajeSignos": false,
+    "Nacionalidad": "España",
+    "Lanzable": false,
+    "Duracion": 60,
+    "DuracionEnSegundos": 3600,
+    "GeneroComAntena": "Informativo",
+    "Imagen": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT575379",
+    "Imagenes": [
+      {
+        "id": "default",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT575379"
+      },
+      {
+        "id": "vertical",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT575379"
+      },
+      {
+        "id": "horizontal",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogoh/MSEXTAT575379"
+      },
+      {
+        "id": "watch2tgr-start",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/vegtooltip/MSEXTAT575379.jpg"
+      },
+      {
+        "id": "watch2tgr-end",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/vegend/MSEXTAT575379.jpg"
+      }
+    ],
+    "TituloSerie": "laSexta Noticias",
+    "Temporada": null,
+    "TituloEpisodio": "laSexta Noticias",
+    "TituloVerLinea1": "laSexta Noticias",
+    "TituloVerLinea2": null,
+    "TituloHorLinea1": "laSexta Noticias",
+    "TituloAccesible": "laSexta Noticias",
+    "Valoracion": null,
+    "TituloNormalizado": "lasexta-noticias",
+    "RutaNormalizada": null,
+    "FechaHoraInicio": "1770642600000",
+    "FechaHoraFin": "1770646200000",
+    "FechaEmision": "2026-02-09",
+    "DuracionParrilla": 60,
+    "DuracionParrillaEnSegundos": 3600,
+    "FormatoVideo": 1,
+    "Disponible": true,
+    "Canal": {
+      "CodCadenaTv": "SEXTA",
+      "Nombre": "La Sexta",
+      "Uid": 444099,
+      "CasId": "4526",
+      "ServiceUid": "717",
+      "ServiceUid2": "4526",
+      "ServiceId": 6,
+      "PuntoReproduccion": "https://lasexta-dash-movistarplus.emisiondof6.com/manifest.mpd",
+      "Logos": [
+        {
+          "id": "default",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DPBLAN/wpmos/SEXTA"
+        },
+        {
+          "id": "default",
+          "state": "over",
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DP/wpmos/SEXTA"
+        },
+        {
+          "id": "bg_dark",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DP/wpepg/SEXTA"
+        },
+        {
+          "id": "bg_light",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DPBLAN/wpepg/SEXTA"
+        },
+        {
+          "id": "nobox_dark",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-NEONEGR/wpmarcaficha/SEXTA"
+        }
+      ],
+      "Dial": 6,
+      "HomeZone": false,
+      "FormatoAudio": null,
+      "FormatoVideo": "HD",
+      "LogoTaquilla": null,
+      "tvProducts": [
+        "BOBFUT2",
+        "DIFUSION",
+        "DO0001",
+        "DO0002",
+        "DO0003",
+        "DO0004",
+        "FUSICE",
+        "MOVFAM",
+        "NDDEM2",
+        "NDDEMO",
+        "PAQINI",
+        "PR01H",
+        "PR01S",
+        "TRIDIS",
+        "TVBACH",
+        "TVBAFU",
+        "TVBALI",
+        "TVCOMU",
+        "UTX00",
+        "UTX0Y",
+        "UTX1H",
+        "UTX1I",
+        "UTX2A",
+        "UTX2C",
+        "UTX2J",
+        "UTX2N",
+        "UTX2P",
+        "UTX2Q",
+        "UTX2R",
+        "UTX32",
+        "UTX37",
+        "UTX38",
+        "UTX4I",
+        "UTX4N",
+        "UTX4P",
+        "UTX5M",
+        "UTX5V",
+        "UTX6C",
+        "UTX7T",
+        "UTX7U",
+        "UTX90",
+        "UTXAH",
+        "UTXC7",
+        "UTXC8",
+        "UTXCL",
+        "UTXCN",
+        "UTXCP",
+        "UTXD0",
+        "UTXD3",
+        "UTXHA",
+        "UTXHB",
+        "UTXHC",
+        "UTXHD",
+        "UTXIC",
+        "UTXIE",
+        "UTXIF",
+        "UTXIH",
+        "UTXII",
+        "UTXIR",
+        "UTXIS"
+      ],
+      "Logo": "https://estatico.emisiondof6.com/recorte/m-DP/wpmos/SEXTA",
+      "HDR": false,
+      "EsVirtual": false,
+      "CDN": "tcdn",
+      "EsSatelite": false,
+      "QMWatermark": false,
+      "Upselling": "PKS--1",
+      "links": []
+    },
+    "BingeWatchingAction": "none",
+    "Seguible": false
+  },
+  {
+    "CodEventoRejilla": 164939524,
+    "ShowId": 63182865,
+    "Id": 1088969,
+    "TipoContenido": "Episodio",
+    "CodSubTipoContenido": null,
+    "SubTipoContenido": null,
+    "TipoComercial": "Subscripcion",
+    "TipoEmision": null,
+    "Ficha": "https://ottcache.dof6.com/movistarplus/webplayer/contents/63182865/details?mediaType=FOTOV&profile=OTT&mode=U7D2&channels=SEXTA&version=8&tlsStream=true&mdrm=true&catalog=catchup&showNonRated=true",
+    "TipoComercial2": {
+      "Tipo": "Subscripcion",
+      "Descripcion": null
+    },
+    "links": [
+      {
+        "rel": "details",
+        "href": "https://ottcache.dof6.com/movistarplus/webplayer/contents/63182865/details?mediaType=FOTOV&profile=OTT&mode=U7D2&channels=SEXTA&version=8&tlsStream=true&mdrm=true&catalog=catchup&showNonRated=true",
+        "id": 63182865
+      },
+      {
+        "rel": "start-over",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182865&svc=startover",
+        "state": null
+      },
+      {
+        "rel": "catch-up",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182865&svc=cutv",
+        "state": null
+      },
+      {
+        "rel": "npvr",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182865&svc=npvr",
+        "state": null
+      },
+      {
+        "rel": "alternate",
+        "href": "appmovistar://movistarplus.es/ficha?id=1088969&referrer=api",
+        "class": "entryPoint",
+        "hints": {
+          "devices": [
+            "android.cell",
+            "iphone",
+            "amazon.tv"
+          ]
+        }
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wl.movistarplus.es/ficha/?id=1088969&referrer=api",
+        "class": "entryPoint",
+        "hints": {
+          "devices": [
+            "web"
+          ]
+        }
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wl.movistarplus.es/play?id=1088969&referrer=api",
+        "class": "play",
+        "hints": {
+          "devices": [
+            "web"
+          ]
+        }
+      }
+    ],
+    "TiposComerciales": [],
+    "ContenedorRef": null,
+    "Directo": false,
+    "Grabable": false,
+    "Titulo": "Jugones",
+    "Estreno": false,
+    "LenguajeSignos": false,
+    "Nacionalidad": "España",
+    "Lanzable": false,
+    "Duracion": 20,
+    "DuracionEnSegundos": 1200,
+    "GeneroComAntena": "Programa deportes",
+    "Imagen": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT1088969",
+    "Imagenes": [
+      {
+        "id": "default",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT1088969"
+      },
+      {
+        "id": "vertical",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT1088969"
+      },
+      {
+        "id": "horizontal",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogoh/MSEXTAT1088969"
+      },
+      {
+        "id": "watch2tgr-start",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/vegtooltip/MSEXTAT1088969.jpg"
+      },
+      {
+        "id": "watch2tgr-end",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/vegend/MSEXTAT1088969.jpg"
+      }
+    ],
+    "TituloSerie": "Jugones",
+    "Temporada": null,
+    "TituloEpisodio": "Jugones",
+    "TituloVerLinea1": "Jugones",
+    "TituloVerLinea2": null,
+    "TituloHorLinea1": "Jugones",
+    "TituloAccesible": "Jugones",
+    "Valoracion": null,
+    "TituloNormalizado": "jugones",
+    "RutaNormalizada": null,
+    "FechaHoraInicio": "1770646200000",
+    "FechaHoraFin": "1770647400000",
+    "FechaEmision": "2026-02-09",
+    "DuracionParrilla": 20,
+    "DuracionParrillaEnSegundos": 1200,
+    "FormatoVideo": 1,
+    "Disponible": true,
+    "Canal": {
+      "CodCadenaTv": "SEXTA",
+      "Nombre": "La Sexta",
+      "Uid": 444099,
+      "CasId": "4526",
+      "ServiceUid": "717",
+      "ServiceUid2": "4526",
+      "ServiceId": 6,
+      "PuntoReproduccion": "https://lasexta-dash-movistarplus.emisiondof6.com/manifest.mpd",
+      "Logos": [
+        {
+          "id": "default",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DPBLAN/wpmos/SEXTA"
+        },
+        {
+          "id": "default",
+          "state": "over",
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DP/wpmos/SEXTA"
+        },
+        {
+          "id": "bg_dark",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DP/wpepg/SEXTA"
+        },
+        {
+          "id": "bg_light",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DPBLAN/wpepg/SEXTA"
+        },
+        {
+          "id": "nobox_dark",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-NEONEGR/wpmarcaficha/SEXTA"
+        }
+      ],
+      "Dial": 6,
+      "HomeZone": false,
+      "FormatoAudio": null,
+      "FormatoVideo": "HD",
+      "LogoTaquilla": null,
+      "tvProducts": [
+        "BOBFUT2",
+        "DIFUSION",
+        "DO0001",
+        "DO0002",
+        "DO0003",
+        "DO0004",
+        "FUSICE",
+        "MOVFAM",
+        "NDDEM2",
+        "NDDEMO",
+        "PAQINI",
+        "PR01H",
+        "PR01S",
+        "TRIDIS",
+        "TVBACH",
+        "TVBAFU",
+        "TVBALI",
+        "TVCOMU",
+        "UTX00",
+        "UTX0Y",
+        "UTX1H",
+        "UTX1I",
+        "UTX2A",
+        "UTX2C",
+        "UTX2J",
+        "UTX2N",
+        "UTX2P",
+        "UTX2Q",
+        "UTX2R",
+        "UTX32",
+        "UTX37",
+        "UTX38",
+        "UTX4I",
+        "UTX4N",
+        "UTX4P",
+        "UTX5M",
+        "UTX5V",
+        "UTX6C",
+        "UTX7T",
+        "UTX7U",
+        "UTX90",
+        "UTXAH",
+        "UTXC7",
+        "UTXC8",
+        "UTXCL",
+        "UTXCN",
+        "UTXCP",
+        "UTXD0",
+        "UTXD3",
+        "UTXHA",
+        "UTXHB",
+        "UTXHC",
+        "UTXHD",
+        "UTXIC",
+        "UTXIE",
+        "UTXIF",
+        "UTXIH",
+        "UTXII",
+        "UTXIR",
+        "UTXIS"
+      ],
+      "Logo": "https://estatico.emisiondof6.com/recorte/m-DP/wpmos/SEXTA",
+      "HDR": false,
+      "EsVirtual": false,
+      "CDN": "tcdn",
+      "EsSatelite": false,
+      "QMWatermark": false,
+      "Upselling": "PKS--1",
+      "links": []
+    },
+    "BingeWatchingAction": "none",
+    "Seguible": false
+  },
+  {
+    "CodEventoRejilla": 164939526,
+    "ShowId": 63182866,
+    "Id": 985259,
+    "TipoContenido": "Episodio",
+    "CodSubTipoContenido": null,
+    "SubTipoContenido": null,
+    "TipoComercial": "Subscripcion",
+    "TipoEmision": null,
+    "Ficha": "https://ottcache.dof6.com/movistarplus/webplayer/contents/63182866/details?mediaType=FOTOV&profile=OTT&mode=U7D2&channels=SEXTA&version=8&tlsStream=true&mdrm=true&catalog=catchup&showNonRated=true",
+    "TipoComercial2": {
+      "Tipo": "Subscripcion",
+      "Descripcion": null
+    },
+    "links": [
+      {
+        "rel": "details",
+        "href": "https://ottcache.dof6.com/movistarplus/webplayer/contents/63182866/details?mediaType=FOTOV&profile=OTT&mode=U7D2&channels=SEXTA&version=8&tlsStream=true&mdrm=true&catalog=catchup&showNonRated=true",
+        "id": 63182866
+      },
+      {
+        "rel": "start-over",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182866&svc=startover",
+        "state": null
+      },
+      {
+        "rel": "catch-up",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182866&svc=cutv",
+        "state": null
+      },
+      {
+        "rel": "npvr",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182866&svc=npvr",
+        "state": null
+      },
+      {
+        "rel": "alternate",
+        "href": "appmovistar://movistarplus.es/ficha?id=985259&referrer=api",
+        "class": "entryPoint",
+        "hints": {
+          "devices": [
+            "android.cell",
+            "iphone",
+            "amazon.tv"
+          ]
+        }
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wl.movistarplus.es/ficha/?id=985259&referrer=api",
+        "class": "entryPoint",
+        "hints": {
+          "devices": [
+            "web"
+          ]
+        }
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wl.movistarplus.es/play?id=985259&referrer=api",
+        "class": "play",
+        "hints": {
+          "devices": [
+            "web"
+          ]
+        }
+      }
+    ],
+    "TiposComerciales": [],
+    "ContenedorRef": null,
+    "Directo": false,
+    "Grabable": false,
+    "Titulo": "laSexta Meteo",
+    "Estreno": false,
+    "LenguajeSignos": false,
+    "Nacionalidad": "España",
+    "Lanzable": false,
+    "Duracion": 15,
+    "DuracionEnSegundos": 900,
+    "GeneroComAntena": "Meteorología",
+    "Imagen": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT985259",
+    "Imagenes": [
+      {
+        "id": "default",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT985259"
+      },
+      {
+        "id": "vertical",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT985259"
+      },
+      {
+        "id": "horizontal",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogoh/MSEXTAT985259"
+      },
+      {
+        "id": "watch2tgr-start",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/vegtooltip/MSEXTAT985259.jpg"
+      },
+      {
+        "id": "watch2tgr-end",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/vegend/MSEXTAT985259.jpg"
+      }
+    ],
+    "TituloSerie": "laSexta Meteo",
+    "Temporada": null,
+    "TituloEpisodio": "laSexta Meteo",
+    "TituloVerLinea1": "laSexta Meteo",
+    "TituloVerLinea2": null,
+    "TituloHorLinea1": "laSexta Meteo",
+    "TituloAccesible": "laSexta Meteo",
+    "Valoracion": null,
+    "TituloNormalizado": "lasexta-meteo",
+    "RutaNormalizada": null,
+    "FechaHoraInicio": "1770647400000",
+    "FechaHoraFin": "1770648300000",
+    "FechaEmision": "2026-02-09",
+    "DuracionParrilla": 15,
+    "DuracionParrillaEnSegundos": 900,
+    "FormatoVideo": 1,
+    "Disponible": true,
+    "Canal": {
+      "CodCadenaTv": "SEXTA",
+      "Nombre": "La Sexta",
+      "Uid": 444099,
+      "CasId": "4526",
+      "ServiceUid": "717",
+      "ServiceUid2": "4526",
+      "ServiceId": 6,
+      "PuntoReproduccion": "https://lasexta-dash-movistarplus.emisiondof6.com/manifest.mpd",
+      "Logos": [
+        {
+          "id": "default",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DPBLAN/wpmos/SEXTA"
+        },
+        {
+          "id": "default",
+          "state": "over",
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DP/wpmos/SEXTA"
+        },
+        {
+          "id": "bg_dark",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DP/wpepg/SEXTA"
+        },
+        {
+          "id": "bg_light",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DPBLAN/wpepg/SEXTA"
+        },
+        {
+          "id": "nobox_dark",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-NEONEGR/wpmarcaficha/SEXTA"
+        }
+      ],
+      "Dial": 6,
+      "HomeZone": false,
+      "FormatoAudio": null,
+      "FormatoVideo": "HD",
+      "LogoTaquilla": null,
+      "tvProducts": [
+        "BOBFUT2",
+        "DIFUSION",
+        "DO0001",
+        "DO0002",
+        "DO0003",
+        "DO0004",
+        "FUSICE",
+        "MOVFAM",
+        "NDDEM2",
+        "NDDEMO",
+        "PAQINI",
+        "PR01H",
+        "PR01S",
+        "TRIDIS",
+        "TVBACH",
+        "TVBAFU",
+        "TVBALI",
+        "TVCOMU",
+        "UTX00",
+        "UTX0Y",
+        "UTX1H",
+        "UTX1I",
+        "UTX2A",
+        "UTX2C",
+        "UTX2J",
+        "UTX2N",
+        "UTX2P",
+        "UTX2Q",
+        "UTX2R",
+        "UTX32",
+        "UTX37",
+        "UTX38",
+        "UTX4I",
+        "UTX4N",
+        "UTX4P",
+        "UTX5M",
+        "UTX5V",
+        "UTX6C",
+        "UTX7T",
+        "UTX7U",
+        "UTX90",
+        "UTXAH",
+        "UTXC7",
+        "UTXC8",
+        "UTXCL",
+        "UTXCN",
+        "UTXCP",
+        "UTXD0",
+        "UTXD3",
+        "UTXHA",
+        "UTXHB",
+        "UTXHC",
+        "UTXHD",
+        "UTXIC",
+        "UTXIE",
+        "UTXIF",
+        "UTXIH",
+        "UTXII",
+        "UTXIR",
+        "UTXIS"
+      ],
+      "Logo": "https://estatico.emisiondof6.com/recorte/m-DP/wpmos/SEXTA",
+      "HDR": false,
+      "EsVirtual": false,
+      "CDN": "tcdn",
+      "EsSatelite": false,
+      "QMWatermark": false,
+      "Upselling": "PKS--1",
+      "links": []
+    },
+    "BingeWatchingAction": "none",
+    "Seguible": false
+  },
+  {
+    "CodEventoRejilla": 164939528,
+    "ShowId": 63182867,
+    "Id": 4236941,
+    "TipoContenido": "Episodio",
+    "CodSubTipoContenido": null,
+    "SubTipoContenido": null,
+    "TipoComercial": "Subscripcion",
+    "TipoEmision": null,
+    "Ficha": "https://ottcache.dof6.com/movistarplus/webplayer/contents/63182867/details?mediaType=FOTOV&profile=OTT&mode=U7D2&channels=SEXTA&version=8&tlsStream=true&mdrm=true&catalog=catchup&showNonRated=true",
+    "TipoComercial2": {
+      "Tipo": "Subscripcion",
+      "Descripcion": null
+    },
+    "links": [
+      {
+        "rel": "details",
+        "href": "https://ottcache.dof6.com/movistarplus/webplayer/contents/63182867/details?mediaType=FOTOV&profile=OTT&mode=U7D2&channels=SEXTA&version=8&tlsStream=true&mdrm=true&catalog=catchup&showNonRated=true",
+        "id": 63182867
+      },
+      {
+        "rel": "start-over",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182867&svc=startover",
+        "state": null
+      },
+      {
+        "rel": "catch-up",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182867&svc=cutv",
+        "state": null
+      },
+      {
+        "rel": "npvr",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182867&svc=npvr",
+        "state": null
+      },
+      {
+        "rel": "alternate",
+        "href": "appmovistar://movistarplus.es/ficha?id=4236941&referrer=api",
+        "class": "entryPoint",
+        "hints": {
+          "devices": [
+            "android.cell",
+            "iphone",
+            "amazon.tv"
+          ]
+        }
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wl.movistarplus.es/ficha/?id=4236941&referrer=api",
+        "class": "entryPoint",
+        "hints": {
+          "devices": [
+            "web"
+          ]
+        }
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wl.movistarplus.es/play?id=4236941&referrer=api",
+        "class": "play",
+        "hints": {
+          "devices": [
+            "web"
+          ]
+        }
+      }
+    ],
+    "TiposComerciales": [],
+    "ContenedorRef": null,
+    "Directo": false,
+    "Grabable": false,
+    "Titulo": "Zapeando",
+    "Estreno": true,
+    "LenguajeSignos": false,
+    "Nacionalidad": "España",
+    "Lanzable": false,
+    "NivelMoral": {
+      "_id": "09",
+      "Id": "+16",
+      "Logo": "https://voddelivery.emisiondof6.com/images/logos/logos_nivelmoral/16.png"
+    },
+    "Duracion": 90,
+    "DuracionEnSegundos": 5400,
+    "GeneroComAntena": "Humor",
+    "Imagen": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT4236941",
+    "Imagenes": [
+      {
+        "id": "default",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT4236941"
+      },
+      {
+        "id": "vertical",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT4236941"
+      },
+      {
+        "id": "horizontal",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogoh/MSEXTAT4236941"
+      },
+      {
+        "id": "watch2tgr-start",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/vegtooltip/MSEXTAT4236941.jpg"
+      },
+      {
+        "id": "watch2tgr-end",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/vegend/MSEXTAT4236941.jpg"
+      }
+    ],
+    "TituloSerie": "Zapeando",
+    "Temporada": "(T25/26)",
+    "SerialId": 62209579,
+    "TituloEpisodio": "\"Episodio 3036\"",
+    "TituloVerLinea1": "Zapeando",
+    "TituloVerLinea2": null,
+    "TituloHorLinea1": "Zapeando",
+    "TituloHorLinea2": "T25/26 \"Episodio 3036\"",
+    "TituloAccesible": "Zapeando",
+    "Valoracion": null,
+    "TituloNormalizado": "zapeando",
+    "RutaNormalizada": null,
+    "FechaHoraInicio": "1770648300000",
+    "FechaHoraFin": "1770653700000",
+    "FechaEmision": "2026-02-09",
+    "DuracionParrilla": 90,
+    "DuracionParrillaEnSegundos": 5400,
+    "FormatoVideo": 1,
+    "Disponible": true,
+    "Canal": {
+      "CodCadenaTv": "SEXTA",
+      "Nombre": "La Sexta",
+      "Uid": 444099,
+      "CasId": "4526",
+      "ServiceUid": "717",
+      "ServiceUid2": "4526",
+      "ServiceId": 6,
+      "PuntoReproduccion": "https://lasexta-dash-movistarplus.emisiondof6.com/manifest.mpd",
+      "Logos": [
+        {
+          "id": "default",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DPBLAN/wpmos/SEXTA"
+        },
+        {
+          "id": "default",
+          "state": "over",
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DP/wpmos/SEXTA"
+        },
+        {
+          "id": "bg_dark",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DP/wpepg/SEXTA"
+        },
+        {
+          "id": "bg_light",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DPBLAN/wpepg/SEXTA"
+        },
+        {
+          "id": "nobox_dark",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-NEONEGR/wpmarcaficha/SEXTA"
+        }
+      ],
+      "Dial": 6,
+      "HomeZone": false,
+      "FormatoAudio": null,
+      "FormatoVideo": "HD",
+      "LogoTaquilla": null,
+      "tvProducts": [
+        "BOBFUT2",
+        "DIFUSION",
+        "DO0001",
+        "DO0002",
+        "DO0003",
+        "DO0004",
+        "FUSICE",
+        "MOVFAM",
+        "NDDEM2",
+        "NDDEMO",
+        "PAQINI",
+        "PR01H",
+        "PR01S",
+        "TRIDIS",
+        "TVBACH",
+        "TVBAFU",
+        "TVBALI",
+        "TVCOMU",
+        "UTX00",
+        "UTX0Y",
+        "UTX1H",
+        "UTX1I",
+        "UTX2A",
+        "UTX2C",
+        "UTX2J",
+        "UTX2N",
+        "UTX2P",
+        "UTX2Q",
+        "UTX2R",
+        "UTX32",
+        "UTX37",
+        "UTX38",
+        "UTX4I",
+        "UTX4N",
+        "UTX4P",
+        "UTX5M",
+        "UTX5V",
+        "UTX6C",
+        "UTX7T",
+        "UTX7U",
+        "UTX90",
+        "UTXAH",
+        "UTXC7",
+        "UTXC8",
+        "UTXCL",
+        "UTXCN",
+        "UTXCP",
+        "UTXD0",
+        "UTXD3",
+        "UTXHA",
+        "UTXHB",
+        "UTXHC",
+        "UTXHD",
+        "UTXIC",
+        "UTXIE",
+        "UTXIF",
+        "UTXIH",
+        "UTXII",
+        "UTXIR",
+        "UTXIS"
+      ],
+      "Logo": "https://estatico.emisiondof6.com/recorte/m-DP/wpmos/SEXTA",
+      "HDR": false,
+      "EsVirtual": false,
+      "CDN": "tcdn",
+      "EsSatelite": false,
+      "QMWatermark": false,
+      "Upselling": "PKS--1",
+      "links": []
+    },
+    "BingeWatchingAction": "none",
+    "Seguible": false
+  },
+  {
+    "CodEventoRejilla": 164939530,
+    "ShowId": 63182868,
+    "Id": 4236929,
+    "TipoContenido": "Episodio",
+    "CodSubTipoContenido": null,
+    "SubTipoContenido": null,
+    "TipoComercial": "Subscripcion",
+    "TipoEmision": null,
+    "Ficha": "https://ottcache.dof6.com/movistarplus/webplayer/contents/63182868/details?mediaType=FOTOV&profile=OTT&mode=U7D2&channels=SEXTA&version=8&tlsStream=true&mdrm=true&catalog=catchup&showNonRated=true",
+    "TipoComercial2": {
+      "Tipo": "Subscripcion",
+      "Descripcion": null
+    },
+    "links": [
+      {
+        "rel": "details",
+        "href": "https://ottcache.dof6.com/movistarplus/webplayer/contents/63182868/details?mediaType=FOTOV&profile=OTT&mode=U7D2&channels=SEXTA&version=8&tlsStream=true&mdrm=true&catalog=catchup&showNonRated=true",
+        "id": 63182868
+      },
+      {
+        "rel": "start-over",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182868&svc=startover",
+        "state": null
+      },
+      {
+        "rel": "catch-up",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182868&svc=cutv",
+        "state": null
+      },
+      {
+        "rel": "npvr",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182868&svc=npvr",
+        "state": null
+      },
+      {
+        "rel": "alternate",
+        "href": "appmovistar://movistarplus.es/ficha?id=4236929&referrer=api",
+        "class": "entryPoint",
+        "hints": {
+          "devices": [
+            "android.cell",
+            "iphone",
+            "amazon.tv"
+          ]
+        }
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wl.movistarplus.es/ficha/?id=4236929&referrer=api",
+        "class": "entryPoint",
+        "hints": {
+          "devices": [
+            "web"
+          ]
+        }
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wl.movistarplus.es/play?id=4236929&referrer=api",
+        "class": "play",
+        "hints": {
+          "devices": [
+            "web"
+          ]
+        }
+      }
+    ],
+    "TiposComerciales": [],
+    "ContenedorRef": null,
+    "Directo": false,
+    "Grabable": false,
+    "Titulo": "Más vale tarde",
+    "Estreno": true,
+    "LenguajeSignos": false,
+    "Nacionalidad": "España",
+    "Lanzable": false,
+    "NivelMoral": {
+      "_id": "09",
+      "Id": "+16",
+      "Logo": "https://voddelivery.emisiondof6.com/images/logos/logos_nivelmoral/16.png"
+    },
+    "Duracion": 166,
+    "DuracionEnSegundos": 9960,
+    "GeneroComAntena": "Informativo",
+    "Imagen": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT4236929",
+    "Imagenes": [
+      {
+        "id": "default",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT4236929"
+      },
+      {
+        "id": "vertical",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT4236929"
+      },
+      {
+        "id": "horizontal",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogoh/MSEXTAT4236929"
+      },
+      {
+        "id": "watch2tgr-start",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/vegtooltip/MSEXTAT4236929.jpg"
+      },
+      {
+        "id": "watch2tgr-end",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/vegend/MSEXTAT4236929.jpg"
+      }
+    ],
+    "TituloSerie": "Más vale tarde",
+    "Temporada": "(T25/26)",
+    "SerialId": 62209580,
+    "TituloEpisodio": "\"Episodio 835\"",
+    "TituloVerLinea1": "Más vale tarde",
+    "TituloVerLinea2": null,
+    "TituloHorLinea1": "Más vale tarde",
+    "TituloHorLinea2": "T25/26 \"Episodio 835\"",
+    "TituloAccesible": "Más vale tarde",
+    "Valoracion": null,
+    "TituloNormalizado": "mas-vale-tarde",
+    "RutaNormalizada": null,
+    "FechaHoraInicio": "1770653700000",
+    "FechaHoraFin": "1770663660000",
+    "FechaEmision": "2026-02-09",
+    "DuracionParrilla": 166,
+    "DuracionParrillaEnSegundos": 9960,
+    "FormatoVideo": 1,
+    "Disponible": true,
+    "Canal": {
+      "CodCadenaTv": "SEXTA",
+      "Nombre": "La Sexta",
+      "Uid": 444099,
+      "CasId": "4526",
+      "ServiceUid": "717",
+      "ServiceUid2": "4526",
+      "ServiceId": 6,
+      "PuntoReproduccion": "https://lasexta-dash-movistarplus.emisiondof6.com/manifest.mpd",
+      "Logos": [
+        {
+          "id": "default",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DPBLAN/wpmos/SEXTA"
+        },
+        {
+          "id": "default",
+          "state": "over",
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DP/wpmos/SEXTA"
+        },
+        {
+          "id": "bg_dark",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DP/wpepg/SEXTA"
+        },
+        {
+          "id": "bg_light",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DPBLAN/wpepg/SEXTA"
+        },
+        {
+          "id": "nobox_dark",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-NEONEGR/wpmarcaficha/SEXTA"
+        }
+      ],
+      "Dial": 6,
+      "HomeZone": false,
+      "FormatoAudio": null,
+      "FormatoVideo": "HD",
+      "LogoTaquilla": null,
+      "tvProducts": [
+        "BOBFUT2",
+        "DIFUSION",
+        "DO0001",
+        "DO0002",
+        "DO0003",
+        "DO0004",
+        "FUSICE",
+        "MOVFAM",
+        "NDDEM2",
+        "NDDEMO",
+        "PAQINI",
+        "PR01H",
+        "PR01S",
+        "TRIDIS",
+        "TVBACH",
+        "TVBAFU",
+        "TVBALI",
+        "TVCOMU",
+        "UTX00",
+        "UTX0Y",
+        "UTX1H",
+        "UTX1I",
+        "UTX2A",
+        "UTX2C",
+        "UTX2J",
+        "UTX2N",
+        "UTX2P",
+        "UTX2Q",
+        "UTX2R",
+        "UTX32",
+        "UTX37",
+        "UTX38",
+        "UTX4I",
+        "UTX4N",
+        "UTX4P",
+        "UTX5M",
+        "UTX5V",
+        "UTX6C",
+        "UTX7T",
+        "UTX7U",
+        "UTX90",
+        "UTXAH",
+        "UTXC7",
+        "UTXC8",
+        "UTXCL",
+        "UTXCN",
+        "UTXCP",
+        "UTXD0",
+        "UTXD3",
+        "UTXHA",
+        "UTXHB",
+        "UTXHC",
+        "UTXHD",
+        "UTXIC",
+        "UTXIE",
+        "UTXIF",
+        "UTXIH",
+        "UTXII",
+        "UTXIR",
+        "UTXIS"
+      ],
+      "Logo": "https://estatico.emisiondof6.com/recorte/m-DP/wpmos/SEXTA",
+      "HDR": false,
+      "EsVirtual": false,
+      "CDN": "tcdn",
+      "EsSatelite": false,
+      "QMWatermark": false,
+      "Upselling": "PKS--1",
+      "links": []
+    },
+    "BingeWatchingAction": "none",
+    "Seguible": false
+  },
+  {
+    "CodEventoRejilla": 164939532,
+    "ShowId": 63182869,
+    "Id": 1105278,
+    "TipoContenido": "Episodio",
+    "CodSubTipoContenido": null,
+    "SubTipoContenido": null,
+    "TipoComercial": "Subscripcion",
+    "TipoEmision": null,
+    "Ficha": "https://ottcache.dof6.com/movistarplus/webplayer/contents/63182869/details?mediaType=FOTOV&profile=OTT&mode=VODREJILLA&channels=SEXTA&version=8&tlsStream=true&mdrm=true&catalog=events&showNonRated=true",
+    "TipoComercial2": {
+      "Tipo": "Subscripcion",
+      "Descripcion": null
+    },
+    "links": [
+      {
+        "rel": "details",
+        "href": "https://ottcache.dof6.com/movistarplus/webplayer/contents/63182869/details?mediaType=FOTOV&profile=OTT&mode=VODREJILLA&channels=SEXTA&version=8&tlsStream=true&mdrm=true&catalog=events&showNonRated=true",
+        "id": 63182869
+      },
+      {
+        "rel": "start-over",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182869&svc=startover",
+        "state": null
+      },
+      {
+        "rel": "catch-up",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182869&svc=cutv",
+        "state": null
+      },
+      {
+        "rel": "npvr",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182869&svc=npvr",
+        "state": null
+      },
+      {
+        "rel": "alternate",
+        "href": "appmovistar://movistarplus.es/ficha?id=1105278&referrer=api",
+        "class": "entryPoint",
+        "hints": {
+          "devices": [
+            "android.cell",
+            "iphone",
+            "amazon.tv"
+          ]
+        }
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wl.movistarplus.es/ficha/?id=1105278&referrer=api",
+        "class": "entryPoint",
+        "hints": {
+          "devices": [
+            "web"
+          ]
+        }
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wl.movistarplus.es/play?id=1105278&referrer=api",
+        "class": "play",
+        "hints": {
+          "devices": [
+            "web"
+          ]
+        }
+      }
+    ],
+    "TiposComerciales": [],
+    "ContenedorRef": null,
+    "Directo": false,
+    "Grabable": true,
+    "Titulo": "laSexta Noticias",
+    "Estreno": false,
+    "LenguajeSignos": false,
+    "Nacionalidad": "España",
+    "Lanzable": false,
+    "Duracion": 59,
+    "DuracionEnSegundos": 3540,
+    "GeneroComAntena": "Informativo",
+    "Imagen": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT1105278",
+    "Imagenes": [
+      {
+        "id": "default",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT1105278"
+      },
+      {
+        "id": "vertical",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT1105278"
+      },
+      {
+        "id": "horizontal",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogoh/MSEXTAT1105278"
+      },
+      {
+        "id": "watch2tgr-start",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/vegtooltip/MSEXTAT1105278.jpg"
+      },
+      {
+        "id": "watch2tgr-end",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/vegend/MSEXTAT1105278.jpg"
+      }
+    ],
+    "TituloSerie": "laSexta Noticias",
+    "Temporada": null,
+    "TituloEpisodio": "laSexta Noticias",
+    "TituloVerLinea1": "laSexta Noticias",
+    "TituloVerLinea2": null,
+    "TituloHorLinea1": "laSexta Noticias",
+    "TituloAccesible": "laSexta Noticias",
+    "Valoracion": null,
+    "TituloNormalizado": "lasexta-noticias",
+    "RutaNormalizada": null,
+    "FechaHoraInicio": "1770663660000",
+    "FechaHoraFin": "1770667200000",
+    "FechaEmision": "2026-02-09",
+    "DuracionParrilla": 59,
+    "DuracionParrillaEnSegundos": 3540,
+    "FormatoVideo": 1,
+    "Disponible": true,
+    "DisponibleVOD": false,
+    "Canal": {
+      "CodCadenaTv": "SEXTA",
+      "Nombre": "La Sexta",
+      "Uid": 444099,
+      "CasId": "4526",
+      "ServiceUid": "717",
+      "ServiceUid2": "4526",
+      "ServiceId": 6,
+      "PuntoReproduccion": "https://lasexta-dash-movistarplus.emisiondof6.com/manifest.mpd",
+      "Logos": [
+        {
+          "id": "default",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DPBLAN/wpmos/SEXTA"
+        },
+        {
+          "id": "default",
+          "state": "over",
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DP/wpmos/SEXTA"
+        },
+        {
+          "id": "bg_dark",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DP/wpepg/SEXTA"
+        },
+        {
+          "id": "bg_light",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DPBLAN/wpepg/SEXTA"
+        },
+        {
+          "id": "nobox_dark",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-NEONEGR/wpmarcaficha/SEXTA"
+        }
+      ],
+      "Dial": 6,
+      "HomeZone": false,
+      "FormatoAudio": null,
+      "FormatoVideo": "HD",
+      "LogoTaquilla": null,
+      "tvProducts": [
+        "BOBFUT2",
+        "DIFUSION",
+        "DO0001",
+        "DO0002",
+        "DO0003",
+        "DO0004",
+        "FUSICE",
+        "MOVFAM",
+        "NDDEM2",
+        "NDDEMO",
+        "PAQINI",
+        "PR01H",
+        "PR01S",
+        "TRIDIS",
+        "TVBACH",
+        "TVBAFU",
+        "TVBALI",
+        "TVCOMU",
+        "UTX00",
+        "UTX0Y",
+        "UTX1H",
+        "UTX1I",
+        "UTX2A",
+        "UTX2C",
+        "UTX2J",
+        "UTX2N",
+        "UTX2P",
+        "UTX2Q",
+        "UTX2R",
+        "UTX32",
+        "UTX37",
+        "UTX38",
+        "UTX4I",
+        "UTX4N",
+        "UTX4P",
+        "UTX5M",
+        "UTX5V",
+        "UTX6C",
+        "UTX7T",
+        "UTX7U",
+        "UTX90",
+        "UTXAH",
+        "UTXC7",
+        "UTXC8",
+        "UTXCL",
+        "UTXCN",
+        "UTXCP",
+        "UTXD0",
+        "UTXD3",
+        "UTXHA",
+        "UTXHB",
+        "UTXHC",
+        "UTXHD",
+        "UTXIC",
+        "UTXIE",
+        "UTXIF",
+        "UTXIH",
+        "UTXII",
+        "UTXIR",
+        "UTXIS"
+      ],
+      "Logo": "https://estatico.emisiondof6.com/recorte/m-DP/wpmos/SEXTA",
+      "HDR": false,
+      "EsVirtual": false,
+      "CDN": "tcdn",
+      "EsSatelite": false,
+      "QMWatermark": false,
+      "Upselling": "PKS--1",
+      "links": []
+    },
+    "BingeWatchingAction": "none",
+    "Seguible": false
+  },
+  {
+    "CodEventoRejilla": 164939534,
+    "ShowId": 63182870,
+    "Id": 3214008,
+    "TipoContenido": "Episodio",
+    "CodSubTipoContenido": null,
+    "SubTipoContenido": null,
+    "TipoComercial": "Subscripcion",
+    "TipoEmision": null,
+    "Ficha": "https://ottcache.dof6.com/movistarplus/webplayer/contents/63182870/details?mediaType=FOTOV&profile=OTT&mode=VODREJILLA&channels=SEXTA&version=8&tlsStream=true&mdrm=true&catalog=events&showNonRated=true",
+    "TipoComercial2": {
+      "Tipo": "Subscripcion",
+      "Descripcion": null
+    },
+    "links": [
+      {
+        "rel": "details",
+        "href": "https://ottcache.dof6.com/movistarplus/webplayer/contents/63182870/details?mediaType=FOTOV&profile=OTT&mode=VODREJILLA&channels=SEXTA&version=8&tlsStream=true&mdrm=true&catalog=events&showNonRated=true",
+        "id": 63182870
+      },
+      {
+        "rel": "start-over",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182870&svc=startover",
+        "state": null
+      },
+      {
+        "rel": "catch-up",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182870&svc=cutv",
+        "state": null
+      },
+      {
+        "rel": "npvr",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182870&svc=npvr",
+        "state": null
+      },
+      {
+        "rel": "alternate",
+        "href": "appmovistar://movistarplus.es/ficha?id=3214008&referrer=api",
+        "class": "entryPoint",
+        "hints": {
+          "devices": [
+            "android.cell",
+            "iphone",
+            "amazon.tv"
+          ]
+        }
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wl.movistarplus.es/ficha/?id=3214008&referrer=api",
+        "class": "entryPoint",
+        "hints": {
+          "devices": [
+            "web"
+          ]
+        }
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wl.movistarplus.es/play?id=3214008&referrer=api",
+        "class": "play",
+        "hints": {
+          "devices": [
+            "web"
+          ]
+        }
+      }
+    ],
+    "TiposComerciales": [],
+    "ContenedorRef": null,
+    "Directo": false,
+    "Grabable": true,
+    "Titulo": "laSexta Clave",
+    "Estreno": false,
+    "LenguajeSignos": false,
+    "Nacionalidad": "España",
+    "Lanzable": false,
+    "Duracion": 20,
+    "DuracionEnSegundos": 1200,
+    "GeneroComAntena": "Informativo",
+    "Imagen": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT3214008",
+    "Imagenes": [
+      {
+        "id": "default",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT3214008"
+      },
+      {
+        "id": "vertical",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT3214008"
+      },
+      {
+        "id": "horizontal",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogoh/MSEXTAT3214008"
+      },
+      {
+        "id": "watch2tgr-start",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/vegtooltip/MSEXTAT3214008.jpg"
+      },
+      {
+        "id": "watch2tgr-end",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/vegend/MSEXTAT3214008.jpg"
+      }
+    ],
+    "TituloSerie": "laSexta Clave",
+    "Temporada": null,
+    "TituloEpisodio": "laSexta Clave",
+    "TituloVerLinea1": "laSexta Clave",
+    "TituloVerLinea2": null,
+    "TituloHorLinea1": "laSexta Clave",
+    "TituloAccesible": "laSexta Clave",
+    "Valoracion": null,
+    "TituloNormalizado": "lasexta-clave",
+    "RutaNormalizada": null,
+    "FechaHoraInicio": "1770667200000",
+    "FechaHoraFin": "1770668400000",
+    "FechaEmision": "2026-02-09",
+    "DuracionParrilla": 20,
+    "DuracionParrillaEnSegundos": 1200,
+    "FormatoVideo": 1,
+    "Disponible": true,
+    "DisponibleVOD": false,
+    "Canal": {
+      "CodCadenaTv": "SEXTA",
+      "Nombre": "La Sexta",
+      "Uid": 444099,
+      "CasId": "4526",
+      "ServiceUid": "717",
+      "ServiceUid2": "4526",
+      "ServiceId": 6,
+      "PuntoReproduccion": "https://lasexta-dash-movistarplus.emisiondof6.com/manifest.mpd",
+      "Logos": [
+        {
+          "id": "default",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DPBLAN/wpmos/SEXTA"
+        },
+        {
+          "id": "default",
+          "state": "over",
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DP/wpmos/SEXTA"
+        },
+        {
+          "id": "bg_dark",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DP/wpepg/SEXTA"
+        },
+        {
+          "id": "bg_light",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DPBLAN/wpepg/SEXTA"
+        },
+        {
+          "id": "nobox_dark",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-NEONEGR/wpmarcaficha/SEXTA"
+        }
+      ],
+      "Dial": 6,
+      "HomeZone": false,
+      "FormatoAudio": null,
+      "FormatoVideo": "HD",
+      "LogoTaquilla": null,
+      "tvProducts": [
+        "BOBFUT2",
+        "DIFUSION",
+        "DO0001",
+        "DO0002",
+        "DO0003",
+        "DO0004",
+        "FUSICE",
+        "MOVFAM",
+        "NDDEM2",
+        "NDDEMO",
+        "PAQINI",
+        "PR01H",
+        "PR01S",
+        "TRIDIS",
+        "TVBACH",
+        "TVBAFU",
+        "TVBALI",
+        "TVCOMU",
+        "UTX00",
+        "UTX0Y",
+        "UTX1H",
+        "UTX1I",
+        "UTX2A",
+        "UTX2C",
+        "UTX2J",
+        "UTX2N",
+        "UTX2P",
+        "UTX2Q",
+        "UTX2R",
+        "UTX32",
+        "UTX37",
+        "UTX38",
+        "UTX4I",
+        "UTX4N",
+        "UTX4P",
+        "UTX5M",
+        "UTX5V",
+        "UTX6C",
+        "UTX7T",
+        "UTX7U",
+        "UTX90",
+        "UTXAH",
+        "UTXC7",
+        "UTXC8",
+        "UTXCL",
+        "UTXCN",
+        "UTXCP",
+        "UTXD0",
+        "UTXD3",
+        "UTXHA",
+        "UTXHB",
+        "UTXHC",
+        "UTXHD",
+        "UTXIC",
+        "UTXIE",
+        "UTXIF",
+        "UTXIH",
+        "UTXII",
+        "UTXIR",
+        "UTXIS"
+      ],
+      "Logo": "https://estatico.emisiondof6.com/recorte/m-DP/wpmos/SEXTA",
+      "HDR": false,
+      "EsVirtual": false,
+      "CDN": "tcdn",
+      "EsSatelite": false,
+      "QMWatermark": false,
+      "Upselling": "PKS--1",
+      "links": []
+    },
+    "BingeWatchingAction": "none",
+    "Seguible": false
+  },
+  {
+    "CodEventoRejilla": 164939536,
+    "ShowId": 63182871,
+    "Id": 985259,
+    "TipoContenido": "Episodio",
+    "CodSubTipoContenido": null,
+    "SubTipoContenido": null,
+    "TipoComercial": "Subscripcion",
+    "TipoEmision": null,
+    "Ficha": "https://ottcache.dof6.com/movistarplus/webplayer/contents/63182871/details?mediaType=FOTOV&profile=OTT&mode=VODREJILLA&channels=SEXTA&version=8&tlsStream=true&mdrm=true&catalog=events&showNonRated=true",
+    "TipoComercial2": {
+      "Tipo": "Subscripcion",
+      "Descripcion": null
+    },
+    "links": [
+      {
+        "rel": "details",
+        "href": "https://ottcache.dof6.com/movistarplus/webplayer/contents/63182871/details?mediaType=FOTOV&profile=OTT&mode=VODREJILLA&channels=SEXTA&version=8&tlsStream=true&mdrm=true&catalog=events&showNonRated=true",
+        "id": 63182871
+      },
+      {
+        "rel": "start-over",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182871&svc=startover",
+        "state": null
+      },
+      {
+        "rel": "catch-up",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182871&svc=cutv",
+        "state": null
+      },
+      {
+        "rel": "npvr",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182871&svc=npvr",
+        "state": null
+      },
+      {
+        "rel": "alternate",
+        "href": "appmovistar://movistarplus.es/ficha?id=985259&referrer=api",
+        "class": "entryPoint",
+        "hints": {
+          "devices": [
+            "android.cell",
+            "iphone",
+            "amazon.tv"
+          ]
+        }
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wl.movistarplus.es/ficha/?id=985259&referrer=api",
+        "class": "entryPoint",
+        "hints": {
+          "devices": [
+            "web"
+          ]
+        }
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wl.movistarplus.es/play?id=985259&referrer=api",
+        "class": "play",
+        "hints": {
+          "devices": [
+            "web"
+          ]
+        }
+      }
+    ],
+    "TiposComerciales": [],
+    "ContenedorRef": null,
+    "Directo": false,
+    "Grabable": true,
+    "Titulo": "laSexta Meteo",
+    "Estreno": false,
+    "LenguajeSignos": false,
+    "Nacionalidad": "España",
+    "Lanzable": false,
+    "Duracion": 5,
+    "DuracionEnSegundos": 300,
+    "GeneroComAntena": "Meteorología",
+    "Imagen": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT985259",
+    "Imagenes": [
+      {
+        "id": "default",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT985259"
+      },
+      {
+        "id": "vertical",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT985259"
+      },
+      {
+        "id": "horizontal",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogoh/MSEXTAT985259"
+      },
+      {
+        "id": "watch2tgr-start",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/vegtooltip/MSEXTAT985259.jpg"
+      },
+      {
+        "id": "watch2tgr-end",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/vegend/MSEXTAT985259.jpg"
+      }
+    ],
+    "TituloSerie": "laSexta Meteo",
+    "Temporada": null,
+    "TituloEpisodio": "laSexta Meteo",
+    "TituloVerLinea1": "laSexta Meteo",
+    "TituloVerLinea2": null,
+    "TituloHorLinea1": "laSexta Meteo",
+    "TituloAccesible": "laSexta Meteo",
+    "Valoracion": null,
+    "TituloNormalizado": "lasexta-meteo",
+    "RutaNormalizada": null,
+    "FechaHoraInicio": "1770668400000",
+    "FechaHoraFin": "1770668700000",
+    "FechaEmision": "2026-02-09",
+    "DuracionParrilla": 5,
+    "DuracionParrillaEnSegundos": 300,
+    "FormatoVideo": 1,
+    "Disponible": true,
+    "DisponibleVOD": false,
+    "Canal": {
+      "CodCadenaTv": "SEXTA",
+      "Nombre": "La Sexta",
+      "Uid": 444099,
+      "CasId": "4526",
+      "ServiceUid": "717",
+      "ServiceUid2": "4526",
+      "ServiceId": 6,
+      "PuntoReproduccion": "https://lasexta-dash-movistarplus.emisiondof6.com/manifest.mpd",
+      "Logos": [
+        {
+          "id": "default",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DPBLAN/wpmos/SEXTA"
+        },
+        {
+          "id": "default",
+          "state": "over",
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DP/wpmos/SEXTA"
+        },
+        {
+          "id": "bg_dark",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DP/wpepg/SEXTA"
+        },
+        {
+          "id": "bg_light",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DPBLAN/wpepg/SEXTA"
+        },
+        {
+          "id": "nobox_dark",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-NEONEGR/wpmarcaficha/SEXTA"
+        }
+      ],
+      "Dial": 6,
+      "HomeZone": false,
+      "FormatoAudio": null,
+      "FormatoVideo": "HD",
+      "LogoTaquilla": null,
+      "tvProducts": [
+        "BOBFUT2",
+        "DIFUSION",
+        "DO0001",
+        "DO0002",
+        "DO0003",
+        "DO0004",
+        "FUSICE",
+        "MOVFAM",
+        "NDDEM2",
+        "NDDEMO",
+        "PAQINI",
+        "PR01H",
+        "PR01S",
+        "TRIDIS",
+        "TVBACH",
+        "TVBAFU",
+        "TVBALI",
+        "TVCOMU",
+        "UTX00",
+        "UTX0Y",
+        "UTX1H",
+        "UTX1I",
+        "UTX2A",
+        "UTX2C",
+        "UTX2J",
+        "UTX2N",
+        "UTX2P",
+        "UTX2Q",
+        "UTX2R",
+        "UTX32",
+        "UTX37",
+        "UTX38",
+        "UTX4I",
+        "UTX4N",
+        "UTX4P",
+        "UTX5M",
+        "UTX5V",
+        "UTX6C",
+        "UTX7T",
+        "UTX7U",
+        "UTX90",
+        "UTXAH",
+        "UTXC7",
+        "UTXC8",
+        "UTXCL",
+        "UTXCN",
+        "UTXCP",
+        "UTXD0",
+        "UTXD3",
+        "UTXHA",
+        "UTXHB",
+        "UTXHC",
+        "UTXHD",
+        "UTXIC",
+        "UTXIE",
+        "UTXIF",
+        "UTXIH",
+        "UTXII",
+        "UTXIR",
+        "UTXIS"
+      ],
+      "Logo": "https://estatico.emisiondof6.com/recorte/m-DP/wpmos/SEXTA",
+      "HDR": false,
+      "EsVirtual": false,
+      "CDN": "tcdn",
+      "EsSatelite": false,
+      "QMWatermark": false,
+      "Upselling": "PKS--1",
+      "links": []
+    },
+    "BingeWatchingAction": "none",
+    "Seguible": false
+  },
+  {
+    "CodEventoRejilla": 164939538,
+    "ShowId": 63182872,
+    "Id": 764081,
+    "TipoContenido": "Episodio",
+    "CodSubTipoContenido": null,
+    "SubTipoContenido": null,
+    "TipoComercial": "Subscripcion",
+    "TipoEmision": null,
+    "Ficha": "https://ottcache.dof6.com/movistarplus/webplayer/contents/63182872/details?mediaType=FOTOV&profile=OTT&mode=VODREJILLA&channels=SEXTA&version=8&tlsStream=true&mdrm=true&catalog=events&showNonRated=true",
+    "TipoComercial2": {
+      "Tipo": "Subscripcion",
+      "Descripcion": null
+    },
+    "links": [
+      {
+        "rel": "details",
+        "href": "https://ottcache.dof6.com/movistarplus/webplayer/contents/63182872/details?mediaType=FOTOV&profile=OTT&mode=VODREJILLA&channels=SEXTA&version=8&tlsStream=true&mdrm=true&catalog=events&showNonRated=true",
+        "id": 63182872
+      },
+      {
+        "rel": "start-over",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182872&svc=startover",
+        "state": null
+      },
+      {
+        "rel": "catch-up",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182872&svc=cutv",
+        "state": null
+      },
+      {
+        "rel": "npvr",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182872&svc=npvr",
+        "state": null
+      },
+      {
+        "rel": "alternate",
+        "href": "appmovistar://movistarplus.es/ficha?id=764081&referrer=api",
+        "class": "entryPoint",
+        "hints": {
+          "devices": [
+            "android.cell",
+            "iphone",
+            "amazon.tv"
+          ]
+        }
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wl.movistarplus.es/ficha/?id=764081&referrer=api",
+        "class": "entryPoint",
+        "hints": {
+          "devices": [
+            "web"
+          ]
+        }
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wl.movistarplus.es/play?id=764081&referrer=api",
+        "class": "play",
+        "hints": {
+          "devices": [
+            "web"
+          ]
+        }
+      }
+    ],
+    "TiposComerciales": [],
+    "ContenedorRef": null,
+    "Directo": false,
+    "Grabable": true,
+    "Titulo": "laSexta Deportes",
+    "Estreno": false,
+    "LenguajeSignos": false,
+    "Nacionalidad": "España",
+    "Lanzable": false,
+    "Duracion": 5,
+    "DuracionEnSegundos": 300,
+    "GeneroComAntena": "Deportes",
+    "Imagen": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT764081",
+    "Imagenes": [
+      {
+        "id": "default",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT764081"
+      },
+      {
+        "id": "vertical",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT764081"
+      },
+      {
+        "id": "horizontal",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogoh/MSEXTAT764081"
+      },
+      {
+        "id": "watch2tgr-start",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/vegtooltip/MSEXTAT764081.jpg"
+      },
+      {
+        "id": "watch2tgr-end",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/vegend/MSEXTAT764081.jpg"
+      }
+    ],
+    "TituloSerie": "laSexta Deportes",
+    "Temporada": null,
+    "TituloEpisodio": "laSexta Deportes",
+    "TituloVerLinea1": "laSexta Deportes",
+    "TituloVerLinea2": null,
+    "TituloHorLinea1": "laSexta Deportes",
+    "TituloAccesible": "laSexta Deportes",
+    "Valoracion": null,
+    "TituloNormalizado": "lasexta-deportes",
+    "RutaNormalizada": null,
+    "FechaHoraInicio": "1770668700000",
+    "FechaHoraFin": "1770669000000",
+    "FechaEmision": "2026-02-09",
+    "DuracionParrilla": 5,
+    "DuracionParrillaEnSegundos": 300,
+    "FormatoVideo": 1,
+    "Disponible": true,
+    "DisponibleVOD": false,
+    "Canal": {
+      "CodCadenaTv": "SEXTA",
+      "Nombre": "La Sexta",
+      "Uid": 444099,
+      "CasId": "4526",
+      "ServiceUid": "717",
+      "ServiceUid2": "4526",
+      "ServiceId": 6,
+      "PuntoReproduccion": "https://lasexta-dash-movistarplus.emisiondof6.com/manifest.mpd",
+      "Logos": [
+        {
+          "id": "default",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DPBLAN/wpmos/SEXTA"
+        },
+        {
+          "id": "default",
+          "state": "over",
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DP/wpmos/SEXTA"
+        },
+        {
+          "id": "bg_dark",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DP/wpepg/SEXTA"
+        },
+        {
+          "id": "bg_light",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DPBLAN/wpepg/SEXTA"
+        },
+        {
+          "id": "nobox_dark",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-NEONEGR/wpmarcaficha/SEXTA"
+        }
+      ],
+      "Dial": 6,
+      "HomeZone": false,
+      "FormatoAudio": null,
+      "FormatoVideo": "HD",
+      "LogoTaquilla": null,
+      "tvProducts": [
+        "BOBFUT2",
+        "DIFUSION",
+        "DO0001",
+        "DO0002",
+        "DO0003",
+        "DO0004",
+        "FUSICE",
+        "MOVFAM",
+        "NDDEM2",
+        "NDDEMO",
+        "PAQINI",
+        "PR01H",
+        "PR01S",
+        "TRIDIS",
+        "TVBACH",
+        "TVBAFU",
+        "TVBALI",
+        "TVCOMU",
+        "UTX00",
+        "UTX0Y",
+        "UTX1H",
+        "UTX1I",
+        "UTX2A",
+        "UTX2C",
+        "UTX2J",
+        "UTX2N",
+        "UTX2P",
+        "UTX2Q",
+        "UTX2R",
+        "UTX32",
+        "UTX37",
+        "UTX38",
+        "UTX4I",
+        "UTX4N",
+        "UTX4P",
+        "UTX5M",
+        "UTX5V",
+        "UTX6C",
+        "UTX7T",
+        "UTX7U",
+        "UTX90",
+        "UTXAH",
+        "UTXC7",
+        "UTXC8",
+        "UTXCL",
+        "UTXCN",
+        "UTXCP",
+        "UTXD0",
+        "UTXD3",
+        "UTXHA",
+        "UTXHB",
+        "UTXHC",
+        "UTXHD",
+        "UTXIC",
+        "UTXIE",
+        "UTXIF",
+        "UTXIH",
+        "UTXII",
+        "UTXIR",
+        "UTXIS"
+      ],
+      "Logo": "https://estatico.emisiondof6.com/recorte/m-DP/wpmos/SEXTA",
+      "HDR": false,
+      "EsVirtual": false,
+      "CDN": "tcdn",
+      "EsSatelite": false,
+      "QMWatermark": false,
+      "Upselling": "PKS--1",
+      "links": []
+    },
+    "BingeWatchingAction": "none",
+    "Seguible": false
+  },
+  {
+    "CodEventoRejilla": 164939540,
+    "ShowId": 63182873,
+    "Id": 4236939,
+    "TipoContenido": "Episodio",
+    "CodSubTipoContenido": null,
+    "SubTipoContenido": null,
+    "TipoComercial": "Subscripcion",
+    "TipoEmision": null,
+    "Ficha": "https://ottcache.dof6.com/movistarplus/webplayer/contents/63182873/details?mediaType=FOTOV&profile=OTT&mode=VODREJILLA&channels=SEXTA&version=8&tlsStream=true&mdrm=true&catalog=events&showNonRated=true",
+    "TipoComercial2": {
+      "Tipo": "Subscripcion",
+      "Descripcion": null
+    },
+    "links": [
+      {
+        "rel": "details",
+        "href": "https://ottcache.dof6.com/movistarplus/webplayer/contents/63182873/details?mediaType=FOTOV&profile=OTT&mode=VODREJILLA&channels=SEXTA&version=8&tlsStream=true&mdrm=true&catalog=events&showNonRated=true",
+        "id": 63182873
+      },
+      {
+        "rel": "start-over",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182873&svc=startover",
+        "state": null
+      },
+      {
+        "rel": "catch-up",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182873&svc=cutv",
+        "state": null
+      },
+      {
+        "rel": "npvr",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182873&svc=npvr",
+        "state": null
+      },
+      {
+        "rel": "alternate",
+        "href": "appmovistar://movistarplus.es/ficha?id=4236939&referrer=api",
+        "class": "entryPoint",
+        "hints": {
+          "devices": [
+            "android.cell",
+            "iphone",
+            "amazon.tv"
+          ]
+        }
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wl.movistarplus.es/ficha/?id=4236939&referrer=api",
+        "class": "entryPoint",
+        "hints": {
+          "devices": [
+            "web"
+          ]
+        }
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wl.movistarplus.es/play?id=4236939&referrer=api",
+        "class": "play",
+        "hints": {
+          "devices": [
+            "web"
+          ]
+        }
+      }
+    ],
+    "TiposComerciales": [],
+    "ContenedorRef": null,
+    "Directo": false,
+    "Grabable": true,
+    "Titulo": "El intermedio",
+    "Estreno": true,
+    "LenguajeSignos": false,
+    "Nacionalidad": "España",
+    "Lanzable": false,
+    "NivelMoral": {
+      "_id": "08",
+      "Id": "+12",
+      "Logo": "https://voddelivery.emisiondof6.com/images/logos/logos_nivelmoral/12.png"
+    },
+    "Duracion": 90,
+    "DuracionEnSegundos": 5400,
+    "GeneroComAntena": "Humor",
+    "Imagen": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT4236939",
+    "Imagenes": [
+      {
+        "id": "default",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT4236939"
+      },
+      {
+        "id": "vertical",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT4236939"
+      },
+      {
+        "id": "horizontal",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogoh/MSEXTAT4236939"
+      },
+      {
+        "id": "watch2tgr-start",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/vegtooltip/MSEXTAT4236939.jpg"
+      },
+      {
+        "id": "watch2tgr-end",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/vegend/MSEXTAT4236939.jpg"
+      }
+    ],
+    "TituloSerie": "El intermedio",
+    "Temporada": "(T20)",
+    "SerialId": 62244130,
+    "TituloEpisodio": "\"Episodio 624\"",
+    "TituloVerLinea1": "El intermedio",
+    "TituloVerLinea2": null,
+    "TituloHorLinea1": "El intermedio",
+    "TituloHorLinea2": "T20 \"Episodio 624\"",
+    "TituloAccesible": "El intermedio",
+    "Valoracion": null,
+    "TituloNormalizado": "el-intermedio",
+    "RutaNormalizada": null,
+    "FechaHoraInicio": "1770669000000",
+    "FechaHoraFin": "1770674400000",
+    "FechaEmision": "2026-02-09",
+    "DuracionParrilla": 90,
+    "DuracionParrillaEnSegundos": 5400,
+    "FormatoVideo": 1,
+    "Disponible": true,
+    "DisponibleVOD": false,
+    "Canal": {
+      "CodCadenaTv": "SEXTA",
+      "Nombre": "La Sexta",
+      "Uid": 444099,
+      "CasId": "4526",
+      "ServiceUid": "717",
+      "ServiceUid2": "4526",
+      "ServiceId": 6,
+      "PuntoReproduccion": "https://lasexta-dash-movistarplus.emisiondof6.com/manifest.mpd",
+      "Logos": [
+        {
+          "id": "default",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DPBLAN/wpmos/SEXTA"
+        },
+        {
+          "id": "default",
+          "state": "over",
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DP/wpmos/SEXTA"
+        },
+        {
+          "id": "bg_dark",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DP/wpepg/SEXTA"
+        },
+        {
+          "id": "bg_light",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DPBLAN/wpepg/SEXTA"
+        },
+        {
+          "id": "nobox_dark",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-NEONEGR/wpmarcaficha/SEXTA"
+        }
+      ],
+      "Dial": 6,
+      "HomeZone": false,
+      "FormatoAudio": null,
+      "FormatoVideo": "HD",
+      "LogoTaquilla": null,
+      "tvProducts": [
+        "BOBFUT2",
+        "DIFUSION",
+        "DO0001",
+        "DO0002",
+        "DO0003",
+        "DO0004",
+        "FUSICE",
+        "MOVFAM",
+        "NDDEM2",
+        "NDDEMO",
+        "PAQINI",
+        "PR01H",
+        "PR01S",
+        "TRIDIS",
+        "TVBACH",
+        "TVBAFU",
+        "TVBALI",
+        "TVCOMU",
+        "UTX00",
+        "UTX0Y",
+        "UTX1H",
+        "UTX1I",
+        "UTX2A",
+        "UTX2C",
+        "UTX2J",
+        "UTX2N",
+        "UTX2P",
+        "UTX2Q",
+        "UTX2R",
+        "UTX32",
+        "UTX37",
+        "UTX38",
+        "UTX4I",
+        "UTX4N",
+        "UTX4P",
+        "UTX5M",
+        "UTX5V",
+        "UTX6C",
+        "UTX7T",
+        "UTX7U",
+        "UTX90",
+        "UTXAH",
+        "UTXC7",
+        "UTXC8",
+        "UTXCL",
+        "UTXCN",
+        "UTXCP",
+        "UTXD0",
+        "UTXD3",
+        "UTXHA",
+        "UTXHB",
+        "UTXHC",
+        "UTXHD",
+        "UTXIC",
+        "UTXIE",
+        "UTXIF",
+        "UTXIH",
+        "UTXII",
+        "UTXIR",
+        "UTXIS"
+      ],
+      "Logo": "https://estatico.emisiondof6.com/recorte/m-DP/wpmos/SEXTA",
+      "HDR": false,
+      "EsVirtual": false,
+      "CDN": "tcdn",
+      "EsSatelite": false,
+      "QMWatermark": false,
+      "Upselling": "PKS--1",
+      "links": []
+    },
+    "BingeWatchingAction": "none",
+    "Seguible": false
+  },
+  {
+    "CodEventoRejilla": 164939542,
+    "ShowId": 63182874,
+    "Id": 369485,
+    "TipoContenido": "Individual",
+    "CodSubTipoContenido": null,
+    "SubTipoContenido": null,
+    "TipoComercial": "Subscripcion",
+    "TipoEmision": null,
+    "Ficha": "https://ottcache.dof6.com/movistarplus/webplayer/contents/63182874/details?mediaType=FOTOV&profile=OTT&mode=VODREJILLA&channels=SEXTA&version=8&tlsStream=true&mdrm=true&catalog=events&showNonRated=true",
+    "TipoComercial2": {
+      "Tipo": "Subscripcion",
+      "Descripcion": null
+    },
+    "links": [
+      {
+        "rel": "details",
+        "href": "https://ottcache.dof6.com/movistarplus/webplayer/contents/63182874/details?mediaType=FOTOV&profile=OTT&mode=VODREJILLA&channels=SEXTA&version=8&tlsStream=true&mdrm=true&catalog=events&showNonRated=true",
+        "id": 63182874
+      },
+      {
+        "rel": "start-over",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182874&svc=startover",
+        "state": null
+      },
+      {
+        "rel": "catch-up",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182874&svc=cutv",
+        "state": null
+      },
+      {
+        "rel": "npvr",
+        "href": "https://grmovistar.imagenio.telefonica.net/asfe/rest/tvMediaURLs?tvProgram.id=63182874&svc=npvr",
+        "state": null
+      },
+      {
+        "rel": "alternate",
+        "href": "appmovistar://movistarplus.es/ficha?id=369485&referrer=api",
+        "class": "entryPoint",
+        "hints": {
+          "devices": [
+            "android.cell",
+            "iphone",
+            "amazon.tv"
+          ]
+        }
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wl.movistarplus.es/ficha/?id=369485&referrer=api",
+        "class": "entryPoint",
+        "hints": {
+          "devices": [
+            "web"
+          ]
+        }
+      },
+      {
+        "rel": "alternate",
+        "href": "https://wl.movistarplus.es/play?id=369485&referrer=api",
+        "class": "play",
+        "hints": {
+          "devices": [
+            "web"
+          ]
+        }
+      }
+    ],
+    "TiposComerciales": [],
+    "ContenedorRef": null,
+    "Directo": false,
+    "Grabable": true,
+    "Titulo": "Diablo",
+    "Estreno": false,
+    "LenguajeSignos": false,
+    "Nacionalidad": "Alemania y EE.UU",
+    "Lanzable": false,
+    "NivelMoral": {
+      "_id": "03",
+      "Id": "+18",
+      "Logo": "https://voddelivery.emisiondof6.com/images/logos/logos_nivelmoral/18.png"
+    },
+    "Duracion": 135,
+    "DuracionEnSegundos": 8100,
+    "GeneroComAntena": "Acción",
+    "Imagen": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT369485",
+    "Imagenes": [
+      {
+        "id": "default",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT369485"
+      },
+      {
+        "id": "vertical",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogov/MSEXTAT369485"
+      },
+      {
+        "id": "horizontal",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/ywcatalogoh/MSEXTAT369485"
+      },
+      {
+        "id": "watch2tgr-start",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/vegtooltip/MSEXTAT369485.jpg"
+      },
+      {
+        "id": "watch2tgr-end",
+        "uri": "https://estatico.emisiondof6.com/recorte/n/vegend/MSEXTAT369485.jpg"
+      }
+    ],
+    "TituloSerie": null,
+    "Temporada": null,
+    "TituloVerLinea1": "Diablo",
+    "TituloVerLinea2": null,
+    "TituloHorLinea1": "Diablo",
+    "TituloAccesible": "Diablo",
+    "Valoracion": null,
+    "TituloNormalizado": "diablo",
+    "RutaNormalizada": null,
+    "FechaHoraInicio": "1770674400000",
+    "FechaHoraFin": "1770682500000",
+    "FechaEmision": "2026-02-09",
+    "DuracionParrilla": 60,
+    "DuracionParrillaEnSegundos": 3600,
+    "FormatoVideo": 1,
+    "Disponible": true,
+    "DisponibleVOD": false,
+    "Canal": {
+      "CodCadenaTv": "SEXTA",
+      "Nombre": "La Sexta",
+      "Uid": 444099,
+      "CasId": "4526",
+      "ServiceUid": "717",
+      "ServiceUid2": "4526",
+      "ServiceId": 6,
+      "PuntoReproduccion": "https://lasexta-dash-movistarplus.emisiondof6.com/manifest.mpd",
+      "Logos": [
+        {
+          "id": "default",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DPBLAN/wpmos/SEXTA"
+        },
+        {
+          "id": "default",
+          "state": "over",
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DP/wpmos/SEXTA"
+        },
+        {
+          "id": "bg_dark",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DP/wpepg/SEXTA"
+        },
+        {
+          "id": "bg_light",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-DPBLAN/wpepg/SEXTA"
+        },
+        {
+          "id": "nobox_dark",
+          "state": null,
+          "uri": "https://estatico.emisiondof6.com/recorte/m-NEONEGR/wpmarcaficha/SEXTA"
+        }
+      ],
+      "Dial": 6,
+      "HomeZone": false,
+      "FormatoAudio": null,
+      "FormatoVideo": "HD",
+      "LogoTaquilla": null,
+      "tvProducts": [
+        "BOBFUT2",
+        "DIFUSION",
+        "DO0001",
+        "DO0002",
+        "DO0003",
+        "DO0004",
+        "FUSICE",
+        "MOVFAM",
+        "NDDEM2",
+        "NDDEMO",
+        "PAQINI",
+        "PR01H",
+        "PR01S",
+        "TRIDIS",
+        "TVBACH",
+        "TVBAFU",
+        "TVBALI",
+        "TVCOMU",
+        "UTX00",
+        "UTX0Y",
+        "UTX1H",
+        "UTX1I",
+        "UTX2A",
+        "UTX2C",
+        "UTX2J",
+        "UTX2N",
+        "UTX2P",
+        "UTX2Q",
+        "UTX2R",
+        "UTX32",
+        "UTX37",
+        "UTX38",
+        "UTX4I",
+        "UTX4N",
+        "UTX4P",
+        "UTX5M",
+        "UTX5V",
+        "UTX6C",
+        "UTX7T",
+        "UTX7U",
+        "UTX90",
+        "UTXAH",
+        "UTXC7",
+        "UTXC8",
+        "UTXCL",
+        "UTXCN",
+        "UTXCP",
+        "UTXD0",
+        "UTXD3",
+        "UTXHA",
+        "UTXHB",
+        "UTXHC",
+        "UTXHD",
+        "UTXIC",
+        "UTXIE",
+        "UTXIF",
+        "UTXIH",
+        "UTXII",
+        "UTXIR",
+        "UTXIS"
+      ],
+      "Logo": "https://estatico.emisiondof6.com/recorte/m-DP/wpmos/SEXTA",
+      "HDR": false,
+      "EsVirtual": false,
+      "CDN": "tcdn",
+      "EsSatelite": false,
+      "QMWatermark": false,
+      "Upselling": "PKS--1",
+      "links": []
+    },
+    "BingeWatchingAction": "none",
+    "Seguible": false
+  }
+]

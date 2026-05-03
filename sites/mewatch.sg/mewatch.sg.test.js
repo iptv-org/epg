@@ -9,13 +9,13 @@ dayjs.extend(utc)
 
 const date = dayjs.utc('2022-06-11', 'YYYY-MM-DD').startOf('d')
 const channel = {
-  site_id: '97098',
-  xmltv_id: 'Channel5Singapore.sg'
+  site_id: '571922',
+  xmltv_id: 'AnimaxAsia.sg@SD'
 }
 
 it('can generate valid url', () => {
   expect(url({ channel, date })).toBe(
-    'https://cdn.mewatch.sg/api/schedules?channels=97098&date=2022-06-10&duration=24&ff=idp,ldp,rpt,cd&hour=12&intersect=true&lang=en&segments=all'
+    'https://cdn.mewatch.sg/api/schedules?channels=571922&date=2022-06-10&duration=24&ff=idp,ldp,rpt,cd&hour=12&intersect=true&lang=en&segments=all'
   )
 })
 
@@ -27,23 +27,20 @@ it('can parse response', () => {
     return p
   })
 
-  expect(result).toMatchObject([
-    {
-      start: '2022-06-11T21:00:00.000Z',
-      stop: '2022-06-11T21:30:00.000Z',
-      title: 'Open Homes S3 - EP 2',
-      description:
-        'Mike heads down to the Sydney beaches to visit a beachside renovation with all the bells and whistles, we see a kitchen tip and recipe anyone can do at home. We finish up in the prestigious Byron bay to visit a multi million dollar award winning home.',
-      image:
-        "https://production.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='jpg'&Quality=85&ImageId='4853697'&EntityType='LinearSchedule'&EntityId='788a7dd9-9b12-446f-91b4-c8ac9fec95e5'&Width=1280&Height=720&device=web_browser&subscriptions=Anonymous&segmentationTags=all",
-      episode: 2,
-      season: 3,
-      rating: {
-        system: 'IMDA',
-        value: 'G'
-      }
-    }
-  ])
+  expect(result.length).toBe(45)
+  expect(result[0]).toMatchObject({
+    title: 'Tsukimichi -Moonlit Fantasy- Season 2',
+    subTitle: 'Why Am I A Teacher?!',
+    description:
+      'After arriving in Rotsgard, Makoto and Shiki gather info for their new store but soon help a girl named Luria in trouble.',
+    image:
+      "https://prod98.togglestatic.com/shain/v1/dataservice/ResizeImage/$value?Format='jpg'&Quality=85&ImageId='13651065'&EntityType='LinearSchedule'&EntityId='fdb1a2e4-efe5-41dd-8560-84d4c3f50459'&Width=1280&Height=720",
+    episode: 4,
+    season: null,
+    start: '2026-04-19T00:00:00.000Z',
+    stop: '2026-04-19T00:30:00.000Z',
+    rating: { system: 'IMDA', value: 'PG13' }
+  })
 })
 
 it('can handle empty guide', () => {

@@ -36,18 +36,25 @@ module.exports = {
     return programs
   },
   async channels() {
-    const networkId = '64257' // Great London
     const startTimestamp = dayjs.utc().startOf('d').unix()
-    const data = await axios
-      .get(`https://www.freeview.co.uk/api/tv-guide?nid=${networkId}&start=${startTimestamp}`)
-      .then(r => r.data)
-      .catch(console.log)
+    let channels = []
+    for (let networkId = 64257; networkId <= 64425; networkId++) { // loop through all valid networkIds starting from 64257 (Greater London) to 64425 (Belfast) to ensure we can get all the channels available on freeview
+      console.log(networkId)
+      const data = await axios
+        .get(`https://www.freeview.co.uk/api/tv-guide?nid=${networkId}&start=${startTimestamp}`)
+        .then(r => r.data)
+        .catch(console.log)
 
-    return data.data.programs.map(item => ({
-      lang: 'en',
-      site_id: `${networkId}#${item.service_id}`,
-      name: item.title
-    }))
+      channels = channels.concat(data.data.programs.map(item => ({
+        lang: 'en',
+        site_id: `${networkId}#${item.service_id}`,
+        name: item.title
+      })))
+    }
+    const uniqueServiceIds = Array.from(new Set(channels.map(c => c.site_id.split('#')[1])))
+    return uniqueServiceIds.map(serviceId => {
+      return channels.find(c => c.site_id.split('#')[1] === serviceId)
+    })
   }
 }
 

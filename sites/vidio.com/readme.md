@@ -5,7 +5,7 @@ https://www.vidio.com/schedule/tv
 ### Download the guide
 
 ```sh
-npm run grab --- --site=vidio.com
+npm run grab --- --sites=vidio.com
 ```
 
 ### Update channel list
