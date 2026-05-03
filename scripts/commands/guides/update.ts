@@ -61,7 +61,10 @@ async function main() {
     }
 
     worker.channelsPath = workerJson.channels
-    worker.guidePath = workerJson.guide
+    worker.guideXmlPath =
+      typeof workerJson.guide === 'string' ? workerJson.guide : workerJson?.guide?.xml
+    worker.guideGzipPath = workerJson?.guide?.gzip
+    worker.guideJsonPath = workerJson?.guide?.json
 
     if (!worker.channelsPath) {
       worker.status = 'MISSING_CHANNELS_PATH'
@@ -69,8 +72,8 @@ async function main() {
       continue
     }
 
-    if (!worker.guidePath) {
-      worker.status = 'MISSING_GUIDE_PATH'
+    if (!worker.guideXmlPath) {
+      worker.status = 'MISSING_GUIDE_XML_PATH'
       logger.error('The "guide" property is missing from the workers config')
       continue
     }
@@ -91,7 +94,7 @@ async function main() {
     )
 
     const guideXml = await client
-      .get(worker.guidePath)
+      .get(worker.guideXmlPath)
       .then(res => res.data)
       .catch(err => {
         worker.status = err.status
@@ -109,6 +112,7 @@ async function main() {
   logger.info('creating guides table...')
   const rows = new Collection<HTMLTableRow>()
   workers.forEach((worker: Worker) => {
+    const links = worker.getLinks()
     rows.add(
       new Collection<HTMLTableDataItem>([
         { value: worker.host },
@@ -116,10 +120,9 @@ async function main() {
         { value: worker.getChannelsCount().toString(), align: 'right' },
         { value: worker.getLastUpdated(), align: 'left' },
         {
-          value:
-            worker.status === 'OK'
-              ? `<a href="${worker.getChannelsUrl()}">${worker.channelsPath}</a><br><a href="${worker.getGuideUrl()}">${worker.guidePath}</a>`
-              : ''
+          value: links.length
+            ? links.map(link => `<a href="${link.url}">${link.label}</a>`).join(' | ')
+            : '-'
         }
       ])
     )

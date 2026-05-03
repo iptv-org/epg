@@ -14,7 +14,9 @@ export interface WorkerData {
 export class Worker {
   host: string
   channelsPath?: string
-  guidePath?: string
+  guideXmlPath?: string
+  guideGzipPath?: string
+  guideJsonPath?: string
   channels?: Collection<Channel>
   status?: string
   lastUpdated?: string
@@ -41,10 +43,26 @@ export class Worker {
     return url.href
   }
 
-  getGuideUrl(): string {
-    if (!this.guidePath) return ''
+  getGuideXmlUrl(): string {
+    if (!this.guideXmlPath) return ''
 
-    const url = new URL(this.guidePath, this.getBaseUrl())
+    const url = new URL(this.guideXmlPath, this.getBaseUrl())
+
+    return url.href
+  }
+
+  getGuideGzipUrl(): string {
+    if (!this.guideGzipPath) return ''
+
+    const url = new URL(this.guideGzipPath, this.getBaseUrl())
+
+    return url.href
+  }
+
+  getGuideJsonUrl(): string {
+    if (!this.guideJsonPath) return ''
+
+    const url = new URL(this.guideJsonPath, this.getBaseUrl())
 
     return url.href
   }
@@ -69,5 +87,26 @@ export class Worker {
     if (process.env.NODE_ENV === 'test') now = dayjs.utc('2026-02-13')
 
     return dayjs.utc(this.lastUpdated).from(now)
+  }
+
+  getLinks(): { url: string; label: string }[] {
+    const links = []
+
+    if (this.guideXmlPath) {
+      const url = new URL(this.guideXmlPath, this.getBaseUrl())
+      links.push({ url: url.href, label: 'XML' })
+    }
+
+    if (this.guideGzipPath) {
+      const url = new URL(this.guideGzipPath, this.getBaseUrl())
+      links.push({ url: url.href, label: 'GZIP' })
+    }
+
+    if (this.guideJsonPath) {
+      const url = new URL(this.guideJsonPath, this.getBaseUrl())
+      links.push({ url: url.href, label: 'JSON' })
+    }
+
+    return links
   }
 }

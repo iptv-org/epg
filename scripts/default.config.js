@@ -5,6 +5,7 @@ export default {
   maxConnections: 1,
   curl: false,
   gzip: false,
+  json: false,
   debug: false,
   request: {
     maxContentLength: 5242880,
