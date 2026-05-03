@@ -1,0 +1,52 @@
+name: Sync Fork mit iptv-org/epg
+
+on:
+  schedule:
+    # Täglich um 2 Uhr morgens ausführen
+    - cron: '0 2 * * *'
+  workflow_dispatch:  # Manuell auslösbar
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout eigenen Fork
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+          
+      - name: Original-Repository als upstream hinzufügen
+        run: |
+          git remote add upstream https://github.com/iptv-org/epg.git
+          git fetch upstream
+          
+      - name: Auf master Branch wechseln
+        run: git checkout master
+          
+      - name: Upstream mergen (ohne Konflikte automatisch lösen)
+        run: |
+          git merge upstream/master --no-edit --allow-unrelated-histories || true
+          
+      - name: Konflikte automatisch lösen (behalte unsere Workflows)
+        run: |
+          # Bei Konflikten in .github/workflows/ unsere Version behalten
+          if git diff --name-only --diff-filter=U | grep -q "^.github/workflows/"; then
+            echo "⚠️ Konflikte in Workflow-Dateien - behalte lokale Version"
+            git checkout --ours .github/workflows/* 2>/dev/null || true
+            git add .github/workflows/
+          fi
+          
+          # Alle anderen Konflikte: upstream Version bevorzugen
+          if git diff --name-only --diff-filter=U | grep -v "^.github/workflows/" | grep -q .; then
+            echo "📥 Übernehme upstream Änderungen für andere Dateien"
+            git checkout --theirs -- . 2>/dev/null || true
+            git add .
+          fi
+          
+          # Merge abschließen
+          git commit -m "Auto-Sync: Merge upstream/master" || echo "Keine Änderungen zu committen"
+          
+      - name: Zurück zu GitHub pushen
+        run: git push origin master
