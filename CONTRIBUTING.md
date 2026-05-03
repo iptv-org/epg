@@ -422,6 +422,19 @@ To do this, you just need to place the `worker.json` file in a public directory 
 }
 ```
 
+If you generate a guide in multiple formats, you can specify the paths to all the files as follows:
+
+```json
+{
+  "channels": "path/to/channels.xml",
+  "guide": {
+    "xml": "path/to/guide.xml",
+    "gzip": "path/to/guide.xml.gz",
+    "json": "path/to/guide.json"
+  }
+}
+```
+
 </details>
 
 And then add server domain or IP address to the [workers.txt](workers.txt) file.
