@@ -467,7 +467,6 @@ To run scripts use the `npm run <script-name>` command.
 - `act:check`: allows to test the [check](https://github.com/iptv-org/iptv/blob/master/.github/workflows/check.yml) workflow locally. Depends on [nektos/act](https://github.com/nektos/act).
 - `act:update`: allows to test the [update](https://github.com/iptv-org/iptv/blob/master/.github/workflows/update.yml) workflow locally. Depends on [nektos/act](https://github.com/nektos/act).
 - `api:load`: downloads the latest channels data from the [iptv-org/api](https://github.com/iptv-org/api).
-- `api:generate`: generates a JSON file with all channels for the [iptv-org/api](https://github.com/iptv-org/api) repository.
 - `channels:lint`: сhecks the channel lists for syntax errors.
 - `channels:parse`: generates a list of channels based on the site configuration.
 - `channels:format`: formats `*.channels.xml` files. The process involves removing invalid `xmltv_id`, adding missing Feed ID, and sorting the list.
@@ -476,6 +475,8 @@ To run scripts use the `npm run <script-name>` command.
 - `sites:init`: creates a new site config from the template.
 - `sites:update`: updates the list of sites and their status in [SITES.md](SITES.md).
 - `guides:update`: updates the list of guides and their status in [GUIDES.md](GUIDES.md).
+- `guides:export`: exports a list of all guides in JSON format for the [iptv-org/api](https://github.com/iptv-org/api) repository.
+- `workers:load`: loads a list of all workers and their configurations.
 - `grab`: downloads a program from a specified source.
 - `serve`: starts the [web server](https://github.com/vercel/serve).
 - `lint`: сhecks the scripts for syntax errors.
