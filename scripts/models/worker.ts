@@ -1,5 +1,6 @@
 import relativeTime from 'dayjs/plugin/relativeTime'
 import { Collection } from '@freearhey/core'
+import * as epgGrabber from 'epg-grabber'
 import { Channel } from './channel'
 import utc from 'dayjs/plugin/utc'
 import dayjs from 'dayjs'
@@ -7,22 +8,79 @@ import dayjs from 'dayjs'
 dayjs.extend(relativeTime)
 dayjs.extend(utc)
 
+export interface WorkerGuideSource {
+  host: string
+  format: string
+  url: string
+}
+
 export interface WorkerData {
   host: string
+  channelsPath?: string
+  channels?: epgGrabber.Types.ChannelData[]
+  guideXmlPath?: string
+  guideGzipPath?: string
+  guideJsonPath?: string
+  status?: string
+  lastUpdated?: string
 }
 
 export class Worker {
   host: string
   channelsPath?: string
+  channels?: Collection<Channel>
   guideXmlPath?: string
   guideGzipPath?: string
   guideJsonPath?: string
-  channels?: Collection<Channel>
   status?: string
   lastUpdated?: string
 
   constructor(data: WorkerData) {
     this.host = data.host
+
+    this.update(data)
+  }
+
+  update(data: Partial<WorkerData>): this {
+    if (data.host) this.host = data.host
+    if (data.channelsPath) this.channelsPath = data.channelsPath
+    if (data.guideXmlPath) this.guideXmlPath = data.guideXmlPath
+    if (data.guideGzipPath) this.guideGzipPath = data.guideGzipPath
+    if (data.guideJsonPath) this.guideJsonPath = data.guideJsonPath
+    if (data.status) this.status = data.status
+    if (data.lastUpdated) this.lastUpdated = data.lastUpdated
+
+    if (data.channels) {
+      const channelInstances = data.channels.map(c => new Channel(c))
+      this.channels = new Collection(channelInstances)
+    }
+
+    return this
+  }
+
+  setChannelsPath(path: string): this {
+    this.channelsPath = path
+    return this
+  }
+
+  setGuideXmlPath(path: string): this {
+    this.guideXmlPath = path
+    return this
+  }
+
+  setGuideGzipPath(path: string): this {
+    this.guideGzipPath = path
+    return this
+  }
+
+  setGuideJsonPath(path: string): this {
+    this.guideJsonPath = path
+    return this
+  }
+
+  setStatus(status: string): this {
+    this.status = status
+    return this
   }
 
   getBaseUrl(): string {
@@ -83,30 +141,42 @@ export class Worker {
   getLastUpdated(): string {
     if (!this.lastUpdated) return '-'
 
-    let now = dayjs()
-    if (process.env.NODE_ENV === 'test') now = dayjs.utc('2026-02-13')
+    const now = dayjs.utc(process.env.CURR_DATE || new Date().toISOString())
 
     return dayjs.utc(this.lastUpdated).from(now)
   }
 
-  getLinks(): { url: string; label: string }[] {
-    const links = []
+  getGuideSources(): WorkerGuideSource[] {
+    const sources = []
 
     if (this.guideXmlPath) {
       const url = new URL(this.guideXmlPath, this.getBaseUrl())
-      links.push({ url: url.href, label: 'XML' })
+      sources.push({ host: this.host, url: url.href, format: 'XML' })
     }
 
     if (this.guideGzipPath) {
       const url = new URL(this.guideGzipPath, this.getBaseUrl())
-      links.push({ url: url.href, label: 'GZIP' })
+      sources.push({ host: this.host, url: url.href, format: 'GZIP' })
     }
 
     if (this.guideJsonPath) {
       const url = new URL(this.guideJsonPath, this.getBaseUrl())
-      links.push({ url: url.href, label: 'JSON' })
+      sources.push({ host: this.host, url: url.href, format: 'JSON' })
     }
 
-    return links
+    return sources
+  }
+
+  toJSON(): WorkerData {
+    return {
+      host: this.host,
+      channelsPath: this.channelsPath,
+      channels: this.channels ? this.channels.map(c => c.toObject()).all() : [],
+      guideXmlPath: this.guideXmlPath,
+      guideGzipPath: this.guideGzipPath,
+      guideJsonPath: this.guideJsonPath,
+      status: this.status,
+      lastUpdated: this.lastUpdated
+    }
   }
 }

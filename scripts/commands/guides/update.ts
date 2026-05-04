@@ -1,118 +1,26 @@
 import { HTMLTableRow, HTMLTableDataItem, HTMLTableColumn } from '../../types/htmlTable'
-import epgGrabber, { EPGGrabber } from 'epg-grabber'
-import AxiosMockAdapter from 'axios-mock-adapter'
+import { Worker, WorkerData, WorkerGuideSource } from '../../models'
+import { DATA_DIR, ROOT_DIR } from '../../constants'
 import { Storage } from '@freearhey/storage-js'
-import { Channel, Worker } from '../../models'
 import { Collection } from '@freearhey/core'
-import { ROOT_DIR } from '../../constants'
 import { Logger } from '@freearhey/core'
 import { HTMLTable } from '../../core'
-import epgParser from 'epg-parser'
-import axios from 'axios'
 
 async function main() {
   const logger = new Logger({ level: process.env.NODE_ENV === 'test' ? -999 : 3 })
-  const rootStorage = new Storage(ROOT_DIR)
-  const workers = new Map<string, Worker>()
+  const dataStorage = new Storage(DATA_DIR)
 
-  logger.info('loading workers.txt...')
-  const workersTxt = await rootStorage.load('workers.txt')
+  logger.info('loading workers.json...')
+  const workers = await dataStorage.json('workers.json')
 
-  workersTxt.split('\r\n').forEach((host: string) => {
-    if (!host) return
-
-    const worker = new Worker({ host })
-
-    workers.set(host, worker)
-  })
-
-  for (const worker of workers.values()) {
-    logger.info(`processing "${worker.host}"...`)
-
-    const client = axios.create({
-      baseURL: worker.getBaseUrl(),
-      timeout: 60000
-    })
-
-    if (process.env.NODE_ENV === 'test') {
-      const mock = new AxiosMockAdapter(client)
-      if (worker.host === 'example.com') {
-        mock.onGet('worker.json').reply(404)
-      } else {
-        const testStorage = new Storage('tests/__data__/input/guides_update')
-        mock.onGet('worker.json').reply(200, await testStorage.load('worker.json'))
-        mock.onGet('channels.xml').reply(200, await testStorage.load('channels.xml'))
-        mock.onGet('guide.xml').reply(200, await testStorage.load('guide.xml'))
-      }
-    }
-
-    const workerJson = await client
-      .get('worker.json')
-      .then(res => res.data)
-      .catch(err => {
-        worker.status = err.status
-        logger.error(err.message)
-      })
-
-    if (!workerJson) {
-      worker.status = 'MISSING_WORKER_CONFIG'
-      logger.error('Unable to load "workers.json"')
-      continue
-    }
-
-    worker.channelsPath = workerJson.channels
-    worker.guideXmlPath =
-      typeof workerJson.guide === 'string' ? workerJson.guide : workerJson?.guide?.xml
-    worker.guideGzipPath = workerJson?.guide?.gzip
-    worker.guideJsonPath = workerJson?.guide?.json
-
-    if (!worker.channelsPath) {
-      worker.status = 'MISSING_CHANNELS_PATH'
-      logger.error('The "channels" property is missing from the workers config')
-      continue
-    }
-
-    if (!worker.guideXmlPath) {
-      worker.status = 'MISSING_GUIDE_XML_PATH'
-      logger.error('The "guide" property is missing from the workers config')
-      continue
-    }
-
-    const channelsXml = await client
-      .get(worker.channelsPath)
-      .then(res => res.data)
-      .catch(err => {
-        worker.status = err.status
-        logger.error(err.message)
-      })
-
-    if (!channelsXml) continue
-
-    const parsedChannels = EPGGrabber.parseChannelsXML(channelsXml)
-    worker.channels = new Collection(parsedChannels).map(
-      (channel: epgGrabber.Channel) => new Channel(channel.toObject())
-    )
-
-    const guideXml = await client
-      .get(worker.guideXmlPath)
-      .then(res => res.data)
-      .catch(err => {
-        worker.status = err.status
-        logger.error(err.message)
-      })
-
-    if (!guideXml) continue
-
-    const parsedGuide = epgParser.parse(guideXml)
-    worker.lastUpdated = parsedGuide.date
-
-    worker.status = 'OK'
-  }
+  if (!Array.isArray(workers)) return
 
   logger.info('creating guides table...')
   const rows = new Collection<HTMLTableRow>()
-  workers.forEach((worker: Worker) => {
-    const links = worker.getLinks()
+  workers.forEach((data: WorkerData) => {
+    const worker = new Worker(data)
+
+    const sources = worker.getGuideSources()
     rows.add(
       new Collection<HTMLTableDataItem>([
         { value: worker.host },
@@ -120,8 +28,10 @@ async function main() {
         { value: worker.getChannelsCount().toString(), align: 'right' },
         { value: worker.getLastUpdated(), align: 'left' },
         {
-          value: links.length
-            ? links.map(link => `<a href="${link.url}">${link.label}</a>`).join(' | ')
+          value: sources.length
+            ? sources
+                .map((source: WorkerGuideSource) => `<a href="${source.url}">${source.format}</a>`)
+                .join(' | ')
             : '-'
         }
       ])
@@ -129,6 +39,7 @@ async function main() {
   })
 
   logger.info('updating guides.md...')
+  const rootStorage = new Storage(ROOT_DIR)
   const table = new HTMLTable(
     rows,
     new Collection<HTMLTableColumn>([
