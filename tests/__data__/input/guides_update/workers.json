@@ -1,0 +1,29 @@
+[
+  {
+    "host": "example.com",
+    "channels": [],
+    "status": "MISSING_WORKER_CONFIG"
+  },
+  {
+    "host": "worker-9dd4.onrender.com",
+    "channelsPath": "channels.xml",
+    "channels": [
+      {
+        "xmltv_id": "ANT1Europe.gr@SD",
+        "name": "ANT1 Europe",
+        "site": "antennaeurope.gr",
+        "site_id": "#",
+        "lang": "el",
+        "logo": null,
+        "url": null,
+        "lcn": null,
+        "index": 0
+      }
+    ],
+    "guideXmlPath": "guide.xml",
+    "guideGzipPath": "guide.xml.gz",
+    "guideJsonPath": "guide.json",
+    "status": "OK",
+    "lastUpdated": "2022-10-03T00:00:00.000Z"
+  }
+]
