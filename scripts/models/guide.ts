@@ -38,8 +38,9 @@ export class Guide {
 
   toString() {
     const currDate = dayjs.utc(process.env.CURR_DATE || new Date().toISOString())
+    const headers = { date: currDate.format('YYYYMMDD') }
 
-    return EPGGrabber.generateXMLTV(this.channels.all(), this.programs.all(), currDate)
+    return EPGGrabber.generateXMLTV(this.channels.all(), this.programs.all(), headers)
   }
 
   async save({ logger }: { logger: Logger }) {
@@ -63,9 +64,11 @@ export class Guide {
       const filename = path.basename(this.filepath).split('.')[0]
       const jsonFilepath =
         typeof this.json === 'string' ? this.json : path.join(dir, `${filename}.json`)
+      const currDate = dayjs.utc(process.env.CURR_DATE || new Date().toISOString())
+      const headers = { date: currDate.format('YYYYMMDD') }
       const channels = this.channels.map((channel: Channel) => channel.toObject()).all()
       const programs = this.programs.map((program: Program) => program.toObject()).all()
-      const json = JSON.stringify({ channels, programs })
+      const json = JSON.stringify({ ...headers, channels, programs })
       logger.info(`  saving to "${jsonFilepath}"...`)
       await storage.save(jsonFilepath, json)
     }
