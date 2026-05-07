@@ -1,5 +1,3 @@
-process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
-
 const customParseFormat = require('dayjs/plugin/customParseFormat')
 const timezone = require('dayjs/plugin/timezone')
 const utc = require('dayjs/plugin/utc')

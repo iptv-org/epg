@@ -30,7 +30,10 @@ module.exports = {
       })
     })
 
-    programs = sortBy(uniqBy(programs, p => p.start), p => p.start.valueOf())
+    programs = sortBy(
+      uniqBy(programs, p => p.start),
+      p => p.start.valueOf()
+    )
 
     return programs
   },
@@ -45,7 +48,7 @@ module.exports = {
 
     const $ = cheerio.load(data)
     $('#channel-group-all > div > div').each((i, el) => {
-      const site_id = $(el).find('input').attr('value').replace('&', '&amp;')
+      const site_id = $(el).find('input').attr('value').replace(/&/g, '&amp;')
       const label = $(el).text().trim()
       const svgTitle = $(el).find('svg').attr('alt')
       const name = (label || svgTitle || '').replace(site_id, '').trim()
