@@ -80,7 +80,7 @@
     <tr><td><a href="sites/i24news.tv">i24news.tv</a></td><td align="right">4</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/iltalehti.fi">iltalehti.fi</a></td><td align="right">147</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/ionplustv.com">ionplustv.com</a></td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/ipko.tv">ipko.tv</a></td><td align="right">194</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/ipko.tv">ipko.tv</a></td><td align="right">201</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/jiotv.com">jiotv.com</a></td><td align="right">1094</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/knr.gl">knr.gl</a></td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/kvf.fo">kvf.fo</a></td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
@@ -89,6 +89,7 @@
     <tr><td><a href="sites/magticom.ge">magticom.ge</a></td><td align="right">240</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/mako.co.il">mako.co.il</a></td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/makrodigitaltelevision.com">makrodigitaltelevision.com</a></td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/maxstream.tv">maxstream.tv</a></td><td align="right">129</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/maxtvgo.mk">maxtvgo.mk</a></td><td align="right">110</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/mediagenie.co.kr">mediagenie.co.kr</a></td><td align="right">5</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/mediaklikk.hu">mediaklikk.hu</a></td><td align="right">8</td><td align="center">🟢</td><td></td></tr>
