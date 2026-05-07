@@ -42,6 +42,7 @@ it('can parse response', () => {
     title: 'FBI: Most Wanted S4, Ep 18',
     description:
       'After two agents from the Bureau of Land Management go missing while executing a land seizure warrant in Wyoming, the Fugitive Task Force heads west to track them down in an unwelcoming county.',
+    categories: ['Series', 'Thriller'],
     season: 4,
     episode: 18
   })
@@ -60,6 +61,7 @@ it('can parse response', () => {
     title: 'FBI: Most Wanted S4, Ep 18',
     description:
       'Satgas Buronan pergi ke wilayah barat untuk melacak keberadaan dua petugas Biro Pengelolaan Lahan yang menghilang saat menjalankan perintah penyitaan lahan di negara bagian yang tak ramah, Wyoming.',
+    categories: ['Series', 'Thriller'],
     season: 4,
     episode: 18
   })

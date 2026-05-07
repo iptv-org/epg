@@ -1,6 +1,6 @@
 # claro.com.br
 
-https://www.claro.com.br/tv-por-assinatura/programacao/grade
+https://www.claro.com.br/tv-por-assinatura/programacao/grade _[Geo-blocked]_
 
 ### Download the guide
 

@@ -19,7 +19,7 @@ module.exports = {
     )}.json`
   },
   parser({ content, channel }) {
-    let programs = []
+    const programs = []
     const items = parseItems(content, channel)
     items.forEach(item => {
       const start = dayjs.tz(item.startDateTime, 'Asia/Singapore')
@@ -36,6 +36,7 @@ module.exports = {
     return programs
   },
   async channels() {
+    const channels = {}
     const axios = require('axios')
     const cheerio = require('cheerio')
 
@@ -45,16 +46,19 @@ module.exports = {
       .catch(console.log)
 
     const $ = cheerio.load(data)
-    let datamodel = $('ux-tv-channel-epg').attr('datamodel')
-    datamodel = JSON.parse(datamodel)
+    const datamodel = JSON.parse($('ux-tv-channel-epg').attr('datamodel'))
 
-    return datamodel.tvChannelLists.map(item => {
-      return {
-        lang: 'en',
-        site_id: item.epgChannelId,
-        name: item.title.trim()
+    datamodel?.tvChannelLists.forEach(item => {
+      if (channels[item.epgChannelId] === undefined) {
+        channels[item.epgChannelId] = {
+          lang: 'en',
+          site_id: item.epgChannelId,
+          name: item.title.trim()
+        }
       }
     })
+
+    return Object.values(channels)
   }
 }
 
