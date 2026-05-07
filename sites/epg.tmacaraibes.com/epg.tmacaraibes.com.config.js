@@ -4,7 +4,7 @@ module.exports = {
   site: 'epg.tmacaraibes.com',
   days: 2,
   url: 'https://epg.tmacaraibes.com/Epg/xmltv.xml',
-  parser: function ({ content, channel, date }) {
+  parser({ content, channel, date }) {
     let programs = []
     const items = parseItems(content, channel, date)
     items.forEach(item => {
