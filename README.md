@@ -55,7 +55,7 @@ Usage: npm run grab --- [options]
 
 Options:
   -s, --sites <names>           A comma-separated list of the sites to parse
-  -c, --channels <path>         Path to *.channels.xml file (required if the "--site" attribute is
+  -c, --channels <path>         Path to *.channels.xml file (required if the "--sites" attribute is
                                 not specified)
   -o, --output <path>           Path to output file (default: "guide.xml")
   -l, --lang <codes>            Allows you to restrict downloading to channels in specified languages only (example: "en,id")
