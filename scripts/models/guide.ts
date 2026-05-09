@@ -13,20 +13,23 @@ interface GuideData {
   channels: Collection<Channel>
   programs: Collection<Program>
   filepath: string
-  gzip: boolean
+  gzip: boolean | string
+  json: boolean | string
 }
 
 export class Guide {
   channels: Collection<Channel>
   programs: Collection<Program>
   filepath: string
-  gzip: boolean
+  gzip: boolean | string
+  json: boolean | string
 
   constructor(data: GuideData) {
     this.channels = data.channels
     this.programs = data.programs
     this.filepath = data.filepath
     this.gzip = data.gzip || false
+    this.json = data.json || false
   }
 
   addChannel(channel: Channel) {
@@ -35,8 +38,9 @@ export class Guide {
 
   toString() {
     const currDate = dayjs.utc(process.env.CURR_DATE || new Date().toISOString())
+    const headers = { date: currDate.format('YYYYMMDD') }
 
-    return EPGGrabber.generateXMLTV(this.channels.all(), this.programs.all(), currDate)
+    return EPGGrabber.generateXMLTV(this.channels.all(), this.programs.all(), headers)
   }
 
   async save({ logger }: { logger: Logger }) {
@@ -50,10 +54,23 @@ export class Guide {
 
     if (this.gzip) {
       const compressed = pako.gzip(xmltv)
-      const gzFilepath = `${this.filepath}.gz`
+      const gzFilepath = typeof this.gzip === 'string' ? this.gzip : `${this.filepath}.gz`
       const gzFilename = path.basename(gzFilepath)
       logger.info(`  saving to "${gzFilepath}"...`)
       await storage.save(gzFilename, compressed)
+    }
+
+    if (this.json) {
+      const filename = path.basename(this.filepath).split('.')[0]
+      const jsonFilepath =
+        typeof this.json === 'string' ? this.json : path.join(dir, `${filename}.json`)
+      const currDate = dayjs.utc(process.env.CURR_DATE || new Date().toISOString())
+      const headers = { date: currDate.format('YYYYMMDD') }
+      const channels = this.channels.map((channel: Channel) => channel.toObject()).all()
+      const programs = this.programs.map((program: Program) => program.toObject()).all()
+      const json = JSON.stringify({ ...headers, channels, programs })
+      logger.info(`  saving to "${jsonFilepath}"...`)
+      await storage.save(jsonFilepath, json)
     }
   }
 }
