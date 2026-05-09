@@ -37,13 +37,13 @@ module.exports = {
         name: 'BSテレ東',
         site_id: 'bs-tv-tokyo',
         lang: 'ja',
-        xmltv_id: 'BSTVTokyo.jp'
+        xmltv_id: 'BSTVTokyo.jp@SD'
       },
       {
         name: 'BSテレ東 4K',
         site_id: 'bs-tv-tokyo-4k',
         lang: 'ja',
-        xmltv_id: 'BSTVTokyo4K.jp'
+        xmltv_id: 'BSTVTokyo4K.jp@SD'
       }
     ]
   }
