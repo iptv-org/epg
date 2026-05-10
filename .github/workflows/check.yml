@@ -40,7 +40,7 @@ jobs:
       - uses: actions/setup-node@v4
         if: steps.files.outputs.any_changed == 'true'
         with:
-          node-version: 22
+          node-version: 24
           cache: 'npm'
       - name: Install dependencies
         if: steps.files.outputs.any_changed == 'true'
