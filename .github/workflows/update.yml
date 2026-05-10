@@ -45,6 +45,8 @@ jobs:
             git commit -m "[Bot] Update ${FILE}" -m "Committed by [iptv-bot](https://github.com/apps/iptv-bot) via [update](https://github.com/iptv-org/epg/actions/runs/${{ github.run_id }}) workflow." --no-verify
             git push
           fi
+      - name: load workers
+        run: npm run workers:load
       - name: update guides.md
         run: npm run guides:update
       - run: git status
@@ -59,7 +61,7 @@ jobs:
             git push
           fi
       - name: generate .api/guides.json
-        run: npm run api:generate
+        run: npm run guides:export
       - run: git status
       - name: move .api/guides.json to iptv-org/api
         uses: JamesIves/github-pages-deploy-action@4.1.1

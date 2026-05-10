@@ -14,6 +14,7 @@ dayjs.extend(customParseFormat)
 doFetch.setDebugger(debug)
 
 const tz = 'Asia/Jakarta'
+let $
 
 module.exports = {
   site: 'tivie.id',
@@ -24,7 +25,7 @@ module.exports = {
   async parser({ content, date }) {
     const programs = []
     if (content) {
-      const $ = cheerio.load(content)
+      $ = cheerio.load(content)
       const items = $('ul[x-data] > li[id*="event-"] > div.w-full')
         .toArray()
         .map(item => {
@@ -37,10 +38,11 @@ module.exports = {
           }
           if (detail.length) {
             const subtitle = detail.find('div')
-            p.title = parseText(subtitle.length ? subtitle : detail)
+            p.title = parseText(subtitle.length ? prune(subtitle, '.sr-only') :
+              prune(detail, '.sr-only'))
             p.url = detail.attr('href')
           } else {
-            p.title = parseText(info)
+            p.title = parseText(prune(info, '.sr-only'))
           }
           if (p.title) {
             const [, , season, episode] = p.title.match(/( S(\d+))?, Ep\. (\d+)/) || [
@@ -69,20 +71,17 @@ module.exports = {
       if (queues.length) {
         await doFetch(queues, (queue, res) => {
           if (res) {
-            const $ = cheerio.load(res)
+            $ = cheerio.load(res)
             const info = $('#main-content > div > div:nth-child(2)')
             // program description
             const desc = info.find('div[class=""] > p')
             if (desc.length) {
-              desc.find('.hidden')
-                .toArray()
-                .forEach(el => $(el).remove())
-              queue.i.description = parseText(desc)
+              queue.i.description = parseText(prune(desc, '.hidden'))
             }
             // program categories
             const cat = info.find('div[class=""] > a')
             if (cat.length) {
-              queue.i.categories = parseText(cat).split(', ')
+              queue.i.categories = cat.toArray().map(el => parseText($(el)))
             }
             // program image
             const img = $('#main-content > div > div:nth-child(1) img')
@@ -133,14 +132,18 @@ module.exports = {
 }
 
 function parseText($item) {
-  let text = $item.text().replace(/\t/g, '').replace(/\n/g, ' ').trim()
-  while (true) {
-    if (text.match(/\s{2,}/)) {
-      text = text.replace(/\s{2,}/g, ' ')
-      continue
-    }
-    break
-  }
+  return $item.text()
+    .replace(/\t/g, '')
+    .replace(/\n/g, ' ')
+    .replace(/\s{2,}/g, ' ')
+    .trim()
+}
 
-  return text
+function prune($item, selector) {
+  if ($) {
+    $item.find(selector)
+      .toArray()
+      .forEach(el => $(el).remove())
+  }
+  return $item
 }
