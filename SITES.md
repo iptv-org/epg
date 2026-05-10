@@ -57,6 +57,7 @@
     <tr><td><a href="sites/epg.112114.xyz">epg.112114.xyz</a></td><td align="right">942</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/epg.iptvx.one">epg.iptvx.one</a></td><td align="right">3329</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/epg.telemach.ba">epg.telemach.ba</a></td><td align="right">364</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/epg.tmacaraibes.com">epg.tmacaraibes.com</a></td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/epgmaster.com">epgmaster.com</a></td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/epgshare01.online">epgshare01.online</a></td><td align="right">20706</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/foxsports.com.au">foxsports.com.au</a></td><td align="right">7</td><td align="center">🟢</td><td></td></tr>
@@ -239,7 +240,9 @@
     <tr><td><a href="sites/webtv.sk">webtv.sk</a></td><td align="right">186</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/winplay.co">winplay.co</a></td><td align="right">3</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/worldfishingnetwork.com">worldfishingnetwork.com</a></td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/www.tv-tokyo.co.jp">www.tv-tokyo.co.jp</a></td><td align="right">2</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/www3.nhk.or.jp">www3.nhk.or.jp</a></td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/x1co.com.br">x1co.com.br</a></td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/xem.kplus.vn">xem.kplus.vn</a></td><td align="right">77</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/xumo.tv">xumo.tv</a></td><td align="right">415</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/yes.co.il">yes.co.il</a></td><td align="right">174</td><td align="center">🟢</td><td></td></tr>
