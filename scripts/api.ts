@@ -27,7 +27,7 @@ async function loadData() {
   data.feedsGroupedByChannelId = feeds.groupBy((feed: sdk.Models.Feed) => feed.channel)
 
   const searchableData = channels.map((channel: sdk.Models.Channel) => channel.getSearchable())
-  searchIndex = sdk.SearchEngine.createIndex<sdk.Types.ChannelSearchableData>(searchableData)
+  searchIndex = sdk.SearchEngine.createIndex<sdk.Types.ChannelSearchableData>(searchableData.all())
 }
 
 async function downloadData() {
