@@ -211,8 +211,8 @@ describe('epg:grab', () => {
     )
 
     const xmlProgrammeCount = (xml.match(/<programme /g) || []).length
-    expect(xmlProgrammeCount).toBe(38)
-    expect(json.programs).toHaveLength(38)
+    expect(xmlProgrammeCount).toBe(39)
+    expect(json.programs).toHaveLength(39)
 
     const enPrograms = json.programs.filter((program: any) => program.channel === 'GapLong.us')
     expect(enPrograms).toHaveLength(8)
@@ -223,11 +223,11 @@ describe('epg:grab', () => {
     ).toEqual([
       [1666224000000, 1666238400000],
       [1666238400000, 1666240200000],
-      [1666249800000, 1666264200000],
-      [1666264200000, 1666278600000],
-      [1666278600000, 1666293000000],
-      [1666293000000, 1666307400000],
-      [1666307400000, 1666310400000]
+      [1666249800000, 1666252800000],
+      [1666252800000, 1666267200000],
+      [1666267200000, 1666281600000],
+      [1666281600000, 1666296000000],
+      [1666296000000, 1666310400000]
     ])
 
     const frPrograms = json.programs.filter((program: any) => program.channel === 'GapEmpty.fr')
@@ -235,19 +235,20 @@ describe('epg:grab', () => {
     expect(frPrograms.every((program: any) => program.titles[0].value === 'Pause')).toBe(true)
 
     const itPrograms = json.programs.filter((program: any) => program.channel === 'GapMiddle.it')
-    expect(itPrograms).toHaveLength(9)
+    expect(itPrograms).toHaveLength(10)
     expect(
       itPrograms
         .filter((program: any) => program.titles[0].value === 'Pausa')
         .map((program: any) => [program.start, program.stop])
     ).toEqual([
       [1666224000000, 1666227600000],
-      [1666231200000, 1666242000000],
-      [1666245600000, 1666260000000],
-      [1666260000000, 1666274400000],
-      [1666274400000, 1666288800000],
-      [1666288800000, 1666303200000],
-      [1666303200000, 1666310400000]
+      [1666231200000, 1666238400000],
+      [1666238400000, 1666242000000],
+      [1666245600000, 1666252800000],
+      [1666252800000, 1666267200000],
+      [1666267200000, 1666281600000],
+      [1666281600000, 1666296000000],
+      [1666296000000, 1666310400000]
     ])
 
     const dePrograms = json.programs.filter((program: any) => program.channel === 'GapOverlap.de')
@@ -258,11 +259,11 @@ describe('epg:grab', () => {
         .map((program: any) => [program.start, program.stop])
     ).toEqual([
       [1666224000000, 1666227600000],
-      [1666245600000, 1666260000000],
-      [1666260000000, 1666274400000],
-      [1666274400000, 1666288800000],
-      [1666288800000, 1666303200000],
-      [1666303200000, 1666310400000]
+      [1666245600000, 1666252800000],
+      [1666252800000, 1666267200000],
+      [1666267200000, 1666281600000],
+      [1666281600000, 1666296000000],
+      [1666296000000, 1666310400000]
     ])
 
     const esPrograms = json.programs.filter((program: any) => program.channel === 'GapError.es')

@@ -523,7 +523,11 @@ function appendGapPrograms({
   let cursor = start
 
   while (cursor < stop) {
-    const chunkStop = Math.min(cursor + MAX_GAP_DURATION_MS, stop)
+    const dayStart = dayjs.utc(cursor).startOf('day').valueOf()
+    const nextBoundary =
+      dayStart + Math.ceil((cursor - dayStart) / MAX_GAP_DURATION_MS) * MAX_GAP_DURATION_MS
+    const alignedStop = nextBoundary > cursor ? nextBoundary : cursor + MAX_GAP_DURATION_MS
+    const chunkStop = Math.min(alignedStop, stop)
     gapPrograms.push(
       new Program({
         site,
