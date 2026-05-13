@@ -38,9 +38,8 @@ export class Guide {
 
   toString() {
     const currDate = dayjs.utc(process.env.CURR_DATE || new Date().toISOString())
-    const headers = { date: currDate.format('YYYYMMDD') }
 
-    return EPGGrabber.generateXMLTV(this.channels.all(), this.programs.all(), headers)
+    return EPGGrabber.generateXMLTV(this.channels.all(), this.programs.all(), currDate)
   }
 
   async save({ logger }: { logger: Logger }) {
